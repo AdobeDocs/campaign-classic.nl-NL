@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ce2a1a55e244180a4e62d6f3b5a5ed5bb8aff6e
+source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
 
 ---
 
@@ -28,10 +28,11 @@ In de volgende sectie vindt u een overzicht van de configuratie die is vereist v
 
 >[!NOTE]
 >
->Alle technische aanbevelingen met betrekking tot het efficiënt verzenden en ontvangen van berichten door een Adobe Campagne-platform zijn beschikbaar in de Technische Nota **van de Leverbaarheid** .
->
->Sommige configuraties kunnen alleen door Adobe worden uitgevoerd voor implementaties die worden gehost door Adobe. Bijvoorbeeld, om tot de server en de dossiers van de instantieconfiguratie toegang te hebben. Meer over de verschillende plaatsingen leren, verwijs naar de [Hosting modelsectie](../../installation/using/hosting-models.md) of naar [dit artikel](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).\
->Raadpleeg de [gids](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) Aan de slag die de concepten en de beste werkwijzen met betrekking tot leverbaarheid presenteert.
+>Sommige configuraties kunnen alleen door Adobe worden uitgevoerd voor implementaties die worden gehost door Adobe. Bijvoorbeeld, om tot de server en de dossiers van de instantieconfiguratie toegang te hebben. Meer over de verschillende plaatsingen leren, verwijs naar de [Hosting modelsectie](../../installation/using/hosting-models.md) of naar [dit artikel](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+
+Raadpleeg deze [sectie](../../delivery/using/about-deliverability.md)voor meer informatie over de concepten en beste praktijken met betrekking tot de leverbaarheid.
+
+Alle technische aanbevelingen met betrekking tot het efficiënt verzenden en ontvangen van berichten door een Adobe Campagneplatform zijn beschikbaar in deze [sectie](../../delivery/using/technical-recommendations.md).
 
 ## Exploitatiebeginsel {#operating-principle}
 
@@ -139,7 +140,7 @@ Door gebrek, luistert de statistiekserver op haven 7777. Deze poort kan worden g
 
 MX-regels (Mail eXchanger) zijn de regels die de communicatie tussen een verzendende server en een ontvangende server beheren.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Voor ontvangen of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, worden de regels van de **[!UICONTROL MX management]** leveringsproductie niet meer gebruikt. Verbeterde MTA gebruikt zijn eigen MX regels die het toestaan om uw productie door domein aan te passen die op uw eigen historische e-mailreputatie wordt gebaseerd, en op real time terugkoppelen die uit de domeinen komt waar u e-mails verzendt.
 >
