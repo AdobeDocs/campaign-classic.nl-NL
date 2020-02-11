@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4869eb41f942a89c48bc213913c44b70ae777bfc
+source-git-commit: 5b9c57b3cba0e8c24300396c2abac613f6e1193a
 
 ---
 
@@ -31,9 +31,10 @@ Hiervoor worden .eml-bestanden die overeenkomen met de verzonden e-mails, overge
 ## Aanbevelingen en beperkingen {#recommendations-and-limitations}
 
 * De functie voor archivering van e-mail is optioneel. Controleer uw licentieovereenkomst.
-* Neem voor gehoste en hybride architecturen contact op met uw accountmanager om deze te activeren. Voor installaties op locatie volgt u de onderstaande richtlijnen. Zie de secties E-mailarchivering [activeren (op locatie)](#activating-email-archiving--on-premise-) en E-mailadres van BCC [configureren (op locatie)](#configuring-the-bcc-email-address--on-premise-) .
-* Zodra e-mail BCC wordt gevormd, zorg ervoor de eigenschap in het leveringsmalplaatje of in de levering door de **[!UICONTROL Archive emails]** optie wordt toegelaten. Zie [deze sectie](../../delivery/using/sending-messages.md#archiving-emails)voor meer informatie.
+* Voor **gehoste en hybride architecturen** neemt u contact op met uw accountmanager om deze te activeren. Het BCC-adres van uw keuze moet worden opgegeven aan het Adobe-team dat het voor u zal configureren.
+* Voor **on-premise installaties**, volg de richtlijnen hieronder om het te activeren - zie het [Activating email archiving (op gebouw)](#activating-email-archiving--on-premise-) en het [Vormen van BCC e-mailadres (op gebouw)](#configuring-the-bcc-email-address--on-premise-) secties.
 * U kunt slechts één BCC-e-mailadres gebruiken.
+* Zodra e-mail BCC wordt gevormd, zorg ervoor de eigenschap in het leveringsmalplaatje of in de levering door de **[!UICONTROL Archive emails]** optie wordt toegelaten. Zie [deze sectie](../../delivery/using/sending-messages.md#archiving-emails)voor meer informatie.
 * Er wordt alleen rekening gehouden met e-mailberichten die zijn verzonden, maar met bedragen.
 * Het e-mailarchiveringssysteem is gewijzigd met Adobe Campaign 17.2 (build 8795). Als u al gebruikmaakte van e-mailarchivering, moet u handmatig een upgrade uitvoeren naar het nieuwe e-mailarchiveringssysteem (BCC). Zie de sectie [Bijgewerkt e-mailarchiveringssysteem (BCC)](#updated-email-archiving-system--bcc-) voor meer informatie.
 
