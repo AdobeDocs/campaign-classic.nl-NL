@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3a4eb0cf49b81d720fa3925d48cd250e0c3fde32
+source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
 
 ---
 
@@ -78,7 +78,7 @@ DKIM komt uit een combinatie DomainKeys, Yahoo! en Cisco identificeerde de authe
 
 DKIM heeft **DomainKeys** -verificatie vervangen.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Voor gehoste of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, wordt de e-mailauthentificatie DKIM ondertekend door Verbeterde MTA. DKIM-signing door de native Campagne MTA zal binnen de **[!UICONTROL Domain management]** lijst als deel van de Verbeterde verbetering MTA worden uitgezet.
 >
