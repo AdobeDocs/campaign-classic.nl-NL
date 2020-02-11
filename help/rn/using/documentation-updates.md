@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f7f59e2341d7b68b8b28869efc5bfb04cd5ba14
+source-git-commit: c7521a076418d8f162d241cd883d10b1ed543d35
 
 ---
 
@@ -25,6 +25,10 @@ Meer informatie over alle nieuwste updates voor de documentatie van Adobe Campai
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates voor elke release van Adobe Campaign Classic.
 
 U kunt ook de opmerkingen bij de release [Adobe Campaign Classic raadplegen](../../rn/using/latest-release.md).
+
+## februari 2020 {#february-2020}
+
+AMP for Email wordt nu ondersteund door drie e-mailproviders (Gmail, Outlook en Mail.ru). De sectie waarin wordt beschreven hoe u interactieve inhoud met AMP definieert, is bijgewerkt. [Meer informatie](../../delivery/using/defining-interactive-content.md)
 
 ## januari 2020 {#january-2020}
 
