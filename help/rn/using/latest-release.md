@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e795cd352aed2f2fc51bf52342d611913265d590
+source-git-commit: 03cba38dc2c9e10396feddc38cca6a6073e932d5
 
 ---
 
@@ -41,7 +41,16 @@ source-git-commit: e795cd352aed2f2fc51bf52342d611913265d590
 
 Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032) om de **laatste stabiele build** (GA) weer te geven.
 
-## ![](assets/blue2.png) Release 19.2 - build 9080 {#release-19-2-build-9080}
+## ![](assets/orange2.png) Release 19.2.2 - build 9081 {#release-19-2-2-build-9081}
+
+Februari 07, 2020_
+
+**Verbeteringen**
+
+* Probleem met regressie verholpen als gevolg van de implementatie van SSL-certificering, waardoor de gebruikersverbinding op de Windows-server is mislukt. (NEO-20629)
+* Probleem verholpen waarbij een onjuist versietnummer in het menu **Info** werd weergegeven.
+
+## ![](assets/orange2.png) Release 19.2 - build 9080 {#release-19-2-build-9080}
 
 _2 december 2019_
 
