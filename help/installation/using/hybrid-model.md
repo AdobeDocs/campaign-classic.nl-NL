@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 63d0551c0c036cb54ebea4e6cc4dc1f6566cf976
 
 ---
 
@@ -30,7 +30,7 @@ Hier volgen de installatie- en configuratiestappen die van toepassing zijn op hy
 * Pakketten installeren: Zie deze [sectie](../../installation/using/installing-campaign-standard-packages.md).
 * Leverbaarheid: configureren van [MX-regels](../../installation/using/email-deliverability.md#mx-configuration) en [e-mailindelingen](../../installation/using/email-deliverability.md#managing-email-formats). Lees voor meer informatie over de gereedschappen en de aanbevolen procedures voor [de levering de gids](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) Aan de slag en [gedetailleerde documentatie](../../delivery/using/about-deliverability.md).
 * Campagneopties configureren: Zie deze [sectie](../../installation/using/configuring-campaign-options.md).
-* Een externe database configureren (FDA): Zie deze [sectie](../../platform/using/accessing-an-external-database.md).
+* Een externe database configureren (FDA): Zie deze [sectie](../../platform/using/about-fda.md).
 * CRM-connectors configureren: Zie deze [sectie](../../platform/using/crm-connectors.md).
 * Raadpleeg deze [sectie](../../installation/using/mid-sourcing-deployment.md)voor meer informatie over implementatiebeginselen voor midsourcing.
 
