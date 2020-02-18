@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 14690ab1435f291679e643ee4240ae9df7e86356
+source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ---
 
@@ -111,7 +111,7 @@ source-git-commit: 14690ab1435f291679e643ee4240ae9df7e86356
     <ul> 
      <li> <p>Recht op toegang: Hiermee kan de betrokkene een kopie ontvangen van zijn/haar persoonlijke gegevens die zijn vastgelegd door gegevenscontrollers, waaronder mogelijk gegevens die zijn opgeslagen in Adobe Campaign.</p> </li> 
      <li> <p>Rechts om te verwijderen: geeft de betrokkene het recht om zijn/haar persoonlijke gegevens die door gegevenscontrollers zijn vastgelegd, te laten wissen, mogelijk met inbegrip van gegevens die in Adobe Campaign zijn opgeslagen.</p> </li> 
-    </ul> Raadpleeg de <a href="https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html">gedetailleerde documentatie</a>voor meer informatie.<br /> </td> 
+    </ul> Raadpleeg de <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">gedetailleerde documentatie</a>voor meer informatie.<br /> </td> 
   </tr> 
   <tr> 
    <td> Actieve profielen<br /> </td> 
@@ -119,7 +119,7 @@ source-git-commit: 14690ab1435f291679e643ee4240ae9df7e86356
   </tr> 
   <tr> 
    <td> Verbetering Android-pushconnector<br /> </td> 
-   <td> <p>De Android-connector is verbeterd en biedt nu ondersteuning voor een hogere doorvoer. </p> <p>Raadpleeg de <a href="../../delivery/using/setting-up-mobile-app-channel.md#android-connectors">gedetailleerde documentatie</a>voor meer informatie.</p> </td> 
+   <td> <p>De Android-connector is verbeterd en biedt nu ondersteuning voor een hogere doorvoer. </p> <p>Raadpleeg de <a href="../../delivery/using/configuring-the-mobile-application.md">gedetailleerde documentatie</a>voor meer informatie.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -141,7 +141,7 @@ source-git-commit: 14690ab1435f291679e643ee4240ae9df7e86356
 * Er is een nieuwe modus beschikbaar voor het importeren van pakketten via de opdrachtregel, zodat ronde afhankelijkheden mogelijk zijn (niet aanbevolen voor grote pakketten). Zie de sectie &#39;Technische ontwikkelingen&#39; voor meer informatie. (NEO-8979)
 * Verbeterde prestaties voor een grote hoeveelheid gegevens die in Teradata worden geladen en verholpen een probleem waardoor de juiste waarde van de gegevens die in het logbestand zijn verwerkt, niet kon worden weergegeven. (NEO-10429)
 * Het importeren van soorten publiek vanuit Audience Manager werkt nu met gesplitste bestanden. Eerder werd alleen het laatste bestand van het segment geïmporteerd door de technische workflow van importSharedAudience. (NEO-10156)
-* In Windows is het standaardinstallatiepad van de Campagneserver gewijzigd. Wanneer u de installatie van de 64-bits versie start, is het standaardinstallatiepad nu: **C:Program FilesAdobeAdobe Campaign Classic v7** in plaats van **C:Program Files (x86) AdobeAdobe Campaign Classic v7**
+* In Windows is het standaardinstallatiepad van de Campagneserver gewijzigd. Wanneer u de installatie van de 64-bits versie start, is het standaardinstallatiepad nu: **C:\Program Files\Adobe\Adobe Campaign Classic v7** in plaats van **C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**
 * De standaard MX regels zijn verbeterd om meer domeinen te omvatten en productie te optimaliseren.
 * Afgedwongen toegangsbeperkingen voor de SOAP-aanroep van de implementatiewizard (xtk:serverOptions#SaveOptions).
 * De verouderde bibliotheek weka.jar is verwijderd en de OpenSSL-bibliotheek is bijgewerkt voor optimalisatie van de beveiliging.
