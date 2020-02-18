@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ed5390b4f620c3cddaf9b856f3354dc5f06f4d98
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -26,7 +26,7 @@ De Campagne van Adobe verstrekt verscheidene schakelaars die u toestaan om met e
 
 Deze schakelaars zijn:
 
-* De Schakelaar FDA (**Federated Data Access**) laat u toe om Campagne met één of meerdere externe gegevensbestanden aan te sluiten en informatie te verwerken die in hen wordt opgeslagen zonder uw gegevens van de Campagne te beïnvloeden. [Meer](../../platform/using/accessing-an-external-database.md)informatie.
+* De Schakelaar FDA (**Federated Data Access**) laat u toe om Campagne met één of meerdere externe gegevensbestanden aan te sluiten en informatie te verwerken die in hen wordt opgeslagen zonder uw gegevens van de Campagne te beïnvloeden. [Meer](../../platform/using/about-fda.md)informatie.
 * Met CRM-connectors kunt u gegevens uitwisselen tussen Adobe Campaign en uw CRM-oplossing via speciale workflowactiviteiten. [Meer](../../platform/using/crm-connectors.md)informatie.
 * Met Analytics Data Connectors (voorheen **Adobe Genesis**) kunt u gegevens delen tussen Adobe Campaign en Adobe Analytics. [Meer](../../platform/using/adobe-analytics-data-connector.md)informatie.
 
