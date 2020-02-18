@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -49,7 +49,7 @@ Pas de volgende procedure toe om de tabel **nms:ontvanger** schema ontvanger uit
 
    In dit voorbeeld wordt een geïndexeerd veld (**getrouwheid**) toegevoegd en wordt het **locatie** -element (dat al bestond in het schema **nms:ontvanger** ) aangevuld met een opgesomd veld (**gebied**).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Vergeet niet het kenmerk **extendedSchema** toe te voegen om naar het extensieschema te verwijzen.
 
