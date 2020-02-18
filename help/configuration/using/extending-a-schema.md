@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
 
 # Een schema uitbreiden{#extending-a-schema}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Sommige ingebouwde schema&#39;s mogen niet worden uitgebreid: voornamelijk die waarvoor de volgende instellingen zijn gedefinieerd:\
 >**dataSource=&quot;file&quot;** en **mappingType=&quot;xmlFile&quot;**.\
@@ -38,7 +38,7 @@ Er zijn twee methoden om een bestaand schema uit te breiden:
 
    Een extensieschema heeft geen eigen schema: het schema dat met het bronschema wordt gegenereerd, wordt ingevuld met de velden van het extensieschema.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >U kunt de ingebouwde schema&#39;s van de toepassing niet wijzigen, maar eerder het mechanisme van de schemauitbreiding. Anders worden gewijzigde schema&#39;s niet bijgewerkt op het moment van toekomstige upgrades van de toepassing. Dit kan leiden tot storingen in het gebruik van Adobe Campaign.
 
@@ -66,7 +66,7 @@ Er zijn twee methoden om een bestaand schema uit te breiden:
 
    Het **kenmerk** memberToop het veld vult het schema in waarin het wordt gedeclareerd.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Voor de wijzigingen die in aanmerking moeten worden genomen, moet u schema&#39;s opnieuw genereren. Raadpleeg voor meer informatie de sectie [Regenererende schema&#39;s](../../configuration/using/regenerating-schemas.md) .\
 >Als de wijzigingen van invloed zijn op de structuur van de database, moet u een update uitvoeren. Raadpleeg voor meer informatie de sectie [De databasestructuur](../../configuration/using/updating-the-database-structure.md) bijwerken.
