@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -72,7 +72,7 @@ Het hoofddoel van een levering kan ook worden gedefinieerd in de doelworkflow: i
 
 De handleiding [Automating with workflows](../../workflow/using/executing-a-workflow.md#architecture) bevat een gedetailleerde beschrijving van de werking van de workflowmodule.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >In dezelfde campagne kunt u niet meer dan 28 workflows instellen. Buiten deze limiet zijn extra workflows niet zichtbaar in de interface en kunnen fouten genereren.
 
@@ -233,7 +233,7 @@ Door gebrek, is de configuratie van de controlegroep die op het campagneniveau w
    ![](assets/s_ncs_user_edit_op_target_del.png)
 
 1. Klik op het **[!UICONTROL Control group]** tabblad en selecteer **[!UICONTROL Enable and edit control group configuration]**.
-1. Klik **[!UICONTROL Edit...]** om de controlegroep te vormen
+1. Klik **[!UICONTROL Edit...]** om de controlegroep te vormen.
 
 De configuratieprocedure wordt voorgesteld in het [Uithalen van de controlegroep van het belangrijkste doel](#extracting-the-control-group-from-the-main-target) en het [Toevoegen van een bevolking](#adding-a-population).
 
@@ -353,7 +353,7 @@ Met de uitname van het bestand worden twee bewerkingen gestart: begrotingsbereke
 
 U kunt verschillende documenten aan een campagne koppelen: rapport, foto, webpagina, diagram, enz. Deze documenten kunnen elke gewenste indeling hebben (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, enzovoort). Zie Documenten [](#adding-documents)toevoegen als u documenten aan een campagne wilt koppelen.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Deze modus is gereserveerd voor kleine documenten.
 
