@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -304,7 +304,7 @@ U kunt in het bronschema de naam van de opeenvolging specificeren die met het **
 
 Van ACC 18.10, is **XtkNewId** niet meer de standaardwaarde voor de opeenvolging in de uit-van-de-doosschema&#39;s. U kunt nu schema bouwen of bestaand schema met een specifieke opeenvolging uitbreiden.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Wanneer het creëren van een nieuw schema of tijdens een schemauitbreiding, moet u de zelfde primaire zeer belangrijke opeenvolgingswaarde (@pkSequence) voor het volledige schema houden.
 
@@ -346,7 +346,7 @@ Het gegenereerde schema:
 
 Naast de definitie van de sleutel en zijn index, is een numeriek gebied genoemd &quot;id&quot;toegevoegd aan het uitgebreide schema om de auto-geproduceerde primaire sleutel te bevatten.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Bij het maken van de tabel wordt automatisch een record met de primaire sleutel ingesteld op 0 ingevoegd. Deze record wordt gebruikt om buitenste verbindingen te voorkomen, die niet effectief zijn op volumetabellen. Door gebrek, worden alle buitenlandse sleutels geïnitialiseerd met waarde 0 zodat een resultaat altijd kan zijn teruggekeerd op de verbinding wanneer het gegevenspunt niet bevolkt is.
 
@@ -373,7 +373,7 @@ Voor join-relaties met gebruik van Federated Database Access:
 * ![](assets/join_fda_11.png) : Kardinaliteit 1-1
 * ![](assets/join_fda_1m.png) : Kardinaliteit 1-N
 
-Raadpleeg [Toegang tot een externe database](../../platform/using/accessing-an-external-database.md)voor meer informatie over FDA-tabellen.
+Raadpleeg [Toegang tot een externe database](../../platform/using/about-fda.md)voor meer informatie over FDA-tabellen.
 
 Een koppeling moet worden gedeclareerd in het schema met de externe sleutel van de tabel die is gekoppeld via het hoofdelement:
 
