@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: c4e6a9273c920c9d125ec3fb18a0628109475a4e
 
 ---
 
@@ -30,7 +30,7 @@ Klik op de naam van de rapporten om deze weer te geven. De volgende rapporten zi
 
 ![](assets/s_ncs_user_report_global_list.png)
 
->[!CAUTION]
+>[!NOTE]
 >
 >In deze sectie worden alleen de rapporten weergegeven die betrekking hebben op leveringen.
 
@@ -104,7 +104,7 @@ De volgende indicatoren worden gebruikt:
    >
    >Deze indicator heeft alleen betrekking op leveringen op mobiele kanalen. Zie [deze sectie](../../delivery/using/sms-channel.md)voor meer informatie.
 
-   U kunt elke regel van de waardetabel openen door op het symbool [+] te klikken. Voor elk fouttype kunt u de indeling van foutberichten per domein weergeven.
+   U kunt elke regel van de waardetabel openen door op het `[+]` symbool te klikken. Voor elk fouttype kunt u de indeling van foutberichten per domein weergeven.
 
    ![](assets/s_ncs_user_errors_report_detail.png)
 
