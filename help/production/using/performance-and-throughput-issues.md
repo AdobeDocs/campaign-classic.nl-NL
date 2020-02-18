@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
 
 ---
 
@@ -57,7 +57,7 @@ Hier volgt een lijst met artikelen die betrekking hebben op de aanbevolen werkwi
 
 * MTA en MTAChild processen en geheugen: de **mta** module verspreidt berichten aan zijn **mtachild** modules. Elk **mtachild** bereidt berichten voor alvorens om een vergunning van de statistiekserver te verzoeken, en hen te verzenden. Raadpleeg deze [pagina](../../installation/using/email-deliverability.md) voor meer informatie.
 * TLS-configuratie: het wereldwijd inschakelen van TLS wordt afgeraden omdat dit de doorvoer kan verminderen. In plaats daarvan moeten de TLS-instellingen per domein, beheerd door het leveringsteam, worden afgestemd op de behoeften. Raadpleeg deze [pagina](../../installation/using/email-deliverability.md#mx-configuration) voor meer informatie.
-* DKIM: Om het veiligheidsniveau van DKIM te verzekeren, is 1024b de Beste praktijken geadviseerde encryptiegrootte. De lagere sleutels DKIM zullen niet als geldig door de meerderheid van toegangsleveranciers worden beschouwd. Zie deze [pagina](../../delivery/using/technical-recommendations.md#domainkeys-identified-mail--dkim-) en dit [technische artikel](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
+* DKIM: Om het veiligheidsniveau van DKIM te verzekeren, is 1024b de Beste praktijken geadviseerde encryptiegrootte. De lagere sleutels DKIM zullen niet als geldig door de meerderheid van toegangsleveranciers worden beschouwd. Zie deze [pagina](../../delivery/using/technical-recommendations.md#dkim) en dit [technische artikel](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
 
 ## Leverbaarheidsproblemen {#deliverability-issues}
 
@@ -66,7 +66,7 @@ Hier volgt een lijst met best practices en artikelen met betrekking tot de te le
 * IP-reputatie: als de IP reputatie niet goed genoeg is, zal er een effect op prestaties zijn. De module **Leverbaarheidscontrole** biedt verschillende tools om de prestaties van uw platform bij te houden. Zie deze [pagina](../../delivery/using/technical-monitoring.md).
 * Opwarmen IP: IP warm-up wordt uitgevoerd door het leveringsteam. Dit houdt in dat het aantal e-mails over een periode van een paar weken geleidelijk wordt verhoogd via nieuwe IP&#39;s.
 * Instellen IP-affiniteit: Een onjuiste IP affiniteitopstelling kan de e-mail volledig tegenhouden (onjuiste exploitant/affiniteitsnaam in configuratie) of de productie (klein aantal IPs in de affiniteit) verminderen. Zie deze [pagina](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* E-mailformaat: De e-mailgrootte speelt een belangrijke rol in productie. De aanbevolen maximale e-mailgrootte is 60 kB. Zie deze [pagina](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Controleer in het rapport [Leveringsdoorvoer](../../reporting/using/reports-on-deliveries.md#delivery-throughput) het aantal bytes dat per uur is overgedragen.
+* E-mailformaat: De e-mailgrootte speelt een belangrijke rol in productie. De aanbevolen maximale e-mailgrootte is 60 kB. Zie deze [pagina](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Controleer in het rapport [Leveringsdoorvoer](../../reporting/using/delivery-reports.md#delivery-throughput) het aantal bytes dat per uur is overgedragen.
 * Groot aantal ongeldige ontvangers: wanneer er een groot aantal ongeldige ontvangers is, kan het effect op de productie hebben. De MTA blijft het verzenden van e-mails naar ongeldige ontvangers opnieuw proberen. Controleer of de database goed wordt onderhouden.
 * Hoeveelheid personalisatie: als een levering in &quot;Personalisatie lopend&quot;blijft, controleer JavaScript die in verpersoonlijkingsblokken wordt gebruikt.
 
