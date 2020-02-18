@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7f03e1fbb94bbd5b00fa0094a0b5e9be45629ec7
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -30,7 +30,7 @@ Wanneer een gebruiker op de tab van een Facebook-toepassing klikt, wordt deze we
 
 ![](assets/social_webapp_fb_000.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Volg de configuratiestappen die worden beschreven in [Een Facebook-toepassing](../../social/using/creating-a-facebook-application.md)maken.
 
@@ -44,7 +44,7 @@ Hier worden de volgende voorbeelden gegeven van webtoepassingen van het type Fac
 * Instellingen doorsturen naar een Facebook-toepassing. Zie [Hoe kan ik instellingen doorsturen naar een Facebook-toepassing?](#how-to-forward-settings-to-a-facebook-application-).
 * Hoe verkrijgt u ventilatorgegevens. Zie [Hoe te om ventilatorgegevens te verwerven?](#how-to-acquire-fan-data-).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Deze eenvoudige gebruiksgevallen worden gegeven als voorbeelden om de functionaliteit van Facebook-webtoepassingen te illustreren.
 
@@ -97,7 +97,7 @@ Controleer of het tabblad van de toepassing **App01** wordt weergegeven op uw Fa
 
 ## Hoe kan ik instellingen doorsturen naar een Facebook-toepassing? {#how-to-forward-settings-to-a-facebook-application-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Volg de configuratiestappen die zijn beschreven in [Een Facebook-toepassing](../../social/using/creating-a-facebook-application.md)maken.
 
