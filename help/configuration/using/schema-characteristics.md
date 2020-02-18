@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -28,7 +28,7 @@ De kenmerken van een schema dat verwijzingen een bestaande lijst zijn als volgt:
 * De namen van tabellen en kolommen moeten expliciet worden vermeld.
 * Indexen moeten worden gedeclareerd.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Verwijder geen velden uit de standaardtabel voor ontvangers, zelfs niet als deze geen nut hebben. Dit kan gedragsfouten in de Adobe Campagne-database veroorzaken.
 
