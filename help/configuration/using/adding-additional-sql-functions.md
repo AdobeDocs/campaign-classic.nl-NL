@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -30,7 +30,7 @@ Dit mechanisme kan ook worden gebruikt als u een recente of ongewone SQL-functie
 
 Zodra deze functies zijn toegevoegd, zullen zij in de uitdrukkingsredacteur enkel als andere vooraf bepaalde functies verschijnen.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >SQL de functievraag in de console wordt niet meer van nature verzonden naar de server. Het hier beschreven mechanisme wordt daarom **de enige manier om op de ongeplande SQL functieserver te roepen** .
 
@@ -40,7 +40,7 @@ De toe te voegen functie(s) bevinden zich in een **&quot;pakket&quot; bestand in
 
 Als u de toepassing vanuit de console wilt installeren, selecteert u de **opties voor het pakket** Tools/Advanced/Import in het menu, daarna de instructies in de wizard Importeren **[!UICONTROL Install from file]** en volgt u deze.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Waarschuwing: zelfs als de lijst met geïmporteerde functies direct in de functie-editor wordt weergegeven, zijn ze pas bruikbaar als de Adobe-campagne opnieuw is gestart.
 
@@ -92,7 +92,7 @@ De functie(s) die moet worden toegevoegd, vindt u in het bestand **** &quot;pack
      name="window"          ( label="Windowing functions" )
    ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Zorg ervoor dat u het kenmerk @label invult: dit is de naam die wordt weergegeven in de lijst met beschikbare functies. Als u niets invoert, heeft de groep geen naam. Als u echter een andere naam invoert dan de bestaande naam, verandert de naam van de hele groep.
 
