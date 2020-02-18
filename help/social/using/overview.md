@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dcefad5aade740c8f5e5a7a7f6602b4ee0bf5f8d
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: dcefad5aade740c8f5e5a7a7f6602b4ee0bf5f8d
 
 Met Social Marketing kunt u leveringen verzenden naar uw verschillende Facebook-pagina&#39;s en Twitter-accounts, in tegenstelling tot profielen voor ontvangers. Op Facebook wordt de inhoud van de levering weergegeven in de vorm van publicaties op paginamuren en ook in de nieuwsfeed van alle fans. Op Twitter wordt de inhoud van de levering weergegeven als tweets en wordt deze weergegeven op de homepage van de volgers van de account. U kunt ook directe berichten verzenden naar de accounthandlers die u verzamelt.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Adobe Campaign vraagt of u de servicevoorwaarden van Facebook en Twitter met betrekking tot het verzenden van berichten naleeft.
 >
