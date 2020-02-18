@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 31f30db6eaf1fee43f9f757124e3fa8ed1d0075f
 
 ---
 
@@ -95,7 +95,7 @@ Voer de volgende stappen uit om de externe AEM-account te configureren:
 
 ### Filteren van AEM-bronnen configureren {#configure-aem-resources-filtering}
 
-De optie **AEMResourceTypeFilter **wordt gebruikt om typen bronnen van de Manager van de Ervaring te filtreren die in de Campagne van Adobe kunnen worden gebruikt. Op deze manier kan Adobe Campaign Experience Manager-inhoud ophalen die speciaal is ontworpen om alleen in Adobe Campaign te worden gebruikt.
+De optie **AEMResourceTypeFilter** wordt gebruikt om typen bronnen van Experience Manager te filteren die in de Campagne van Adobe kunnen worden gebruikt. Op deze manier kan Adobe Campaign Experience Manager-inhoud ophalen die speciaal is ontworpen om alleen in Adobe Campaign te worden gebruikt.
 
 Controleren of de **[!UICONTROL AEMResourceTypeFilter]** optie is geconfigureerd:
 
@@ -122,7 +122,7 @@ Voer de onderstaande stappen uit om de configuratie te starten in Adobe Experien
 
 1. Configureer de **replicatie** om van de AEM-ontwerpinstantie naar de AEM-publicatieinstantie te repliceren.
 
-   Raadpleeg de [documentatie](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/replication.html)van Adobe Experience Manager voor meer informatie over het configureren van replicatie.
+   Raadpleeg de [documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html)van Adobe Experience Manager voor meer informatie over het configureren van replicatie.
 
 1. Installeer de integratie **FeaturePack** op uw auteursinstantie dan repliceer de installatie op uw het publiceren instantie. (Alleen voor AEM-versies 5.6.1 en 6.0).
 
@@ -130,9 +130,9 @@ Voer de onderstaande stappen uit om de configuratie te starten in Adobe Experien
 
 1. Sluit Adobe Experience Manager aan op Adobe Campagne door een speciale **Cloud Service** te configureren.
 
-   Raadpleeg de [documentatie](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) van Adobe Experience Manager voor informatie over het tot stand brengen van een verbinding tussen beide oplossingen via Cloud Services.
+   Raadpleeg de [documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) van Adobe Experience Manager voor informatie over het tot stand brengen van een verbinding tussen beide oplossingen via Cloud Services.
 
 1. Configureer de **Externalzer-service**.
 
-   Raadpleeg de [documentatie](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/externalizer.html)van Adobe Experience Manager voor meer informatie over het configureren ervan.
+   Raadpleeg de [documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html)van Adobe Experience Manager voor meer informatie over het configureren ervan.
 
