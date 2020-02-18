@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -55,7 +55,7 @@ Deze twee gegevens moeten worden samengevoegd met de id van de bijgehouden pagin
 tagid=<identifier>|<type>|<foldername>
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Vergeet niet de waarde van de **tagid** -parameter te coderen wanneer deze wordt gebruikt als een URL-parameter.
 
