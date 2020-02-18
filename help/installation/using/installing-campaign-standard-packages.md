@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f5062117b5cefbdd2570018f6803f114c14a3fae
+source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
 
 ---
 
@@ -210,7 +210,7 @@ De volgende tabel bevat een lijst met alle standaardpakketten met hun beschrijvi
    <td> Inbox Rendering (IR)<br /> </td> 
    <td> Hiermee kunt u een voorvertoning weergeven van het bericht dat is verzonden in de verschillende contexten waarin het kan worden ontvangen en de compatibiliteit van grote desktops en toepassingen controleren. U hebt een Litmus-account nodig.<br /> </td> 
    <td> Marketing<br /> </td> 
-   <td> Optioneel, <a href="../../delivery/using/about-deliverability.md#inbox-rendering">Meer informatie</a> </td> 
+   <td> Optioneel, <a href="../../delivery/using/inbox-rendering.md">Meer informatie</a> </td> 
   </tr> 
   <tr> 
    <td> Centrale/lokale Marketing (Distributed Marketing)<br /> </td> 
@@ -250,9 +250,9 @@ De volgende tabel bevat een lijst met alle standaardpakketten met hun beschrijvi
   </tr> 
   <tr> 
    <td> Privacy Data Protection-verordening<br /> </td> 
-   <td> Bevat extra functionaliteit om projecten te helpen GDPR volgzaam in de Klassiek van de Campagne worden.<br /> </td> 
+   <td> Bevat extra functionaliteit om met uw naleving van de Privacy in Classic van de Campagne te helpen.<br /> </td> 
    <td> Alles</td> 
-   <td> <a href="https://helpx.adobe.com/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html">Meer informatie</a> </td> 
+   <td> <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">Meer informatie</a> </td> 
   </tr> 
   <tr> 
    <td> Overschakelen naar middelmatig bronnen <br /> </td> 
