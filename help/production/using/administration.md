@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ---
 
@@ -37,6 +37,10 @@ De volgende opdrachten worden gebruikt om de Adobe Campagne-service handmatig te
 
    * **/etc/init.d/nlserver6 start**
    * **/etc/init.d/nlserver6 stop**
+
+>[!NOTE]
+>
+>Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl start nlserver** / **systemctl stop nlserver**
 
 Hier volgt een lijst met de gebruikelijke beheeropdrachten die in Linux (als **Adobe-campagne**) toegankelijk zijn:
 
@@ -76,24 +80,22 @@ Hier volgt een lijst met de gebruikelijke beheeropdrachten die in Linux (als **A
    **nlserver start web opnieuw**
 
    >[!NOTE]
-
-   >* Als de instantie niet is opgegeven, wordt de instantie &#39;default&#39; gebruikt.
-   >    
-   >    
+   > 
+   >    * Als de instantie niet is opgegeven, wordt de instantie &#39;default&#39; gebruikt.
    >    * In het geval van een noodsituatie, gebruik de **-directe** optie om een onmiddellijke halt toe te roepen aan het proces (gelijkwaardig aan het bevel van Unix **doden -9**).
-   * Gebruik de optie **-noconsole** om ervoor te zorgen dat de gestarte module niets op de console zal tonen. Zijn logboeken zullen aan de schijf via de **syslogd** module worden geschreven.
-   * Gebruik de **-uitgebreide** optie om extra informatie over procesacties te tonen.
-
-
+   >    * Gebruik de optie **-noconsole** om ervoor te zorgen dat de gestarte module niets op de console zal tonen. Zijn logboeken zullen aan de schijf via de **syslogd** module worden geschreven.
+   >    * Gebruik de **-uitgebreide** optie om extra informatie over procesacties te tonen.
+      >    
+      >      
       Voorbeeld:
-
-
+      >    
+      >      
       **webbreedbeeldscherm opnieuw opstarten vanaf de server**
-
-
+      >    
+      >      
       **nlserver start mta@myinstance -verbose**
-
-
+      >    
+      >      
       Met deze optie voegt u aanvullende logbestanden toe. We raden u aan om de processen opnieuw te starten zonder de optie **-verbose** zodra u de gewenste informatie hebt gevonden, om overbelasting van logbestanden te voorkomen.
 
 
@@ -110,5 +112,6 @@ Hier volgt een lijst met de gebruikelijke beheeropdrachten die in Linux (als **A
    **nlserver config-reload**
 
    >[!NOTE]
-   Sommige configuratieveranderingen worden niet dynamisch in aanmerking genomen; Adobe Campaign moet worden afgesloten en vervolgens opnieuw worden gestart.
+   >
+   >Sommige configuratieveranderingen worden niet dynamisch in aanmerking genomen; Adobe Campaign moet worden afgesloten en vervolgens opnieuw worden gestart.
 
