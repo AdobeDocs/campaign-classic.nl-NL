@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 463d2d60e8776fc0414fdb8c91dbf257e119d823
+source-git-commit: afe286211c21f4fc178ffb5f9f30baed96ebfeab
 
 ---
 
@@ -45,7 +45,7 @@ Een subset maken:
 
    Het proces is het zelfde als voor een **Vraag**-type activiteit.
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >U kunt de gegevens filteren in maximaal twee externe databases (FDA).
 
@@ -59,7 +59,7 @@ Een subset maken:
 
    ![](assets/s_user_segmentation_partage_add.png)
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >Als de **[!UICONTROL Enable overlapping of output populations]** optie niet is ingeschakeld, worden subsets gemaakt in de volgorde van de tabbladen. Gebruik de pijlen in de rechterbovensectie van dit venster om ze te verplaatsen. Als de eerste subset bijvoorbeeld 70% van de oorspronkelijke populatie herstelt, past de volgende subset zijn selectiecriteria alleen toe op de resterende 30%, enzovoort.
 
@@ -135,7 +135,7 @@ Voor een voorbeeld van de **[!UICONTROL Local approval]** activiteit met een dis
 
 ![](assets/s_user_segmentation_partage_wz6.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Als u deze functie wilt gebruiken, moet u de module Distributed Marketing aanschaffen. Dit is een optie Campagne. Controleer uw licentieovereenkomst.
 
@@ -200,7 +200,7 @@ Met de sjabloon voor gegevensdistributie kunt u het aantal records beperken aan 
 
       In het geval van een eenvoudige beperking door gegevensgroepering zonder lokale goedkeuring, te hoeven u niet om het **[!UICONTROL Group or operator]** gebied in te gaan.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Controleer of de juiste rechten aan de exploitanten zijn toegekend.
 
