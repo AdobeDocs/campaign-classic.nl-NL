@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 954018e1016fc924064bd795066f80704499f6a7
 
 ---
 
@@ -417,7 +417,7 @@ De naam van de operator en de aanmelding moeten eerder zijn geconfigureerd in de
 
 #### /nl/jsp/monitor.jsp {#nl-jsp-monitor-jsp}
 
-Dit is een test om te controleren of een exploitant tot de server van de Campagne van Adobe via een Web-pagina kan toegang hebben; dezelfde webpagina als de pagina die via de menu&#39;s van de clientconsole wordt geopend. We raden u aan om dit onderdeel op te nemen in uw bewakingstools (Tivoli, Nagios, enz.).
+Dit is een test om te controleren of een exploitant tot de server van de Campagne van Adobe via een Web-pagina kan toegang hebben; dezelfde webpagina als de pagina die via de menu&#39;s van de clientconsole wordt geopend. U kunt deze pagina vanuit uw bewakingstools bellen (Tivoli, Nagios, enz.).
 
 ![](assets/ncs_monitoring_web.png)
 
