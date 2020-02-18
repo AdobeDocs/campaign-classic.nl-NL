@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -33,8 +33,7 @@ U kunt de structuur van het gegenereerde schema vervolgens controleren op de tab
 >[!NOTE]
 >
 >Als u het opnieuw genereren van alle schema&#39;s moet forceren, bijvoorbeeld om bepaalde afhankelijkheidsproblemen in de omgekeerde koppelingen op te lossen, kunt u de volgende opdracht starten vanaf de toepassingsserver van Adobe Campagne:
-
+>
 >**nlserver config -postupgrade -instance:`&lt;instance_name>&#39; -force**
-
+>
 >Vervolgens moet u de toepassingsserver van Adobe Campaign opnieuw starten en de verbinding met de clientconsole verbreken of opnieuw tot stand brengen.
-
