@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 305906f001203f1922266ab370fcc942458f9e8d
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -26,7 +26,7 @@ Er zijn enkele verbeteringen doorgevoerd in Adobe Campaign v7 om de beveiliging 
 
 Als u vanaf een 6.10-platform migreert en uw clientconsole ouder is dan de 8104-build, moet u deze bijwerken. Als dit niet gebeurt voordat u gaat migreren, wordt u gevraagd om uw clientconsole bij te werken wanneer u opnieuw verbinding maakt. Klik **[!UICONTROL Yes]**.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Als u de update afwijst, kunt u geen verbinding maken.
 
