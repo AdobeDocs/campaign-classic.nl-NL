@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -31,4 +31,4 @@ Met meerdere activiteiten kunt u werken met gegevens uit een externe database:
 * Verrijking
 * Gegevens laden
 
-Het gebruik van de FDA-optie is afhankelijk van uw Adobe-licentie voor campagnes. Het configureren van deze optie en de aanbevolen werkwijzen en beperkingen die aan het gebruik ervan zijn gekoppeld, worden in deze [sectie](../../platform/using/accessing-an-external-database.md)beschreven.
+Het gebruik van de FDA-optie is afhankelijk van uw Adobe-licentie voor campagnes. Het configureren van deze optie en de aanbevolen werkwijzen en beperkingen die aan het gebruik ervan zijn gekoppeld, worden in deze [sectie](../../platform/using/about-fda.md)beschreven.
