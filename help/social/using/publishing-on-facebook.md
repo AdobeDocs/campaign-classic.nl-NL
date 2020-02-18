@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -78,7 +78,7 @@ Het is echter ook mogelijk om de publieksfilters te gebruiken die door Facebook 
 * **[!UICONTROL Cities]**
 * **[!UICONTROL Languages]**
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Wees voorzichtig met deze functie. In leveringsrapporten zal de **[!UICONTROL Number of fans]** indicator geen rekening houden met deze filters van Facebook.
 >
@@ -115,7 +115,7 @@ Een levering van het statustype met een koppeling kan tekst, afbeeldingen en een
 
 Voer de verschillende velden in:
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Alle URL&#39;s moeten beginnen met **&quot;http://&quot;** of **&quot;https://&quot;**.
 
@@ -136,7 +136,7 @@ Voer de verschillende velden in:
 
 1. Voer in het **[!UICONTROL Image]** veld de URL in van de afbeelding die links van de publicatie wordt weergegeven.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Facebook kan de afbeelding alleen uploaden als deze op een openbare website wordt gehost.
 
