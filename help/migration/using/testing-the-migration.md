@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4f8a13e3788b99ff4214e00dec1f88fdef0cb964
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -49,7 +49,7 @@ U moet over een test-/ontwikkelomgeving beschikken om migratietests uit te voere
 
 1. Als de migratie van de ontwikkelomgeving succesvol is, kunt u de productieomgeving migreren.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Vanwege wijzigingen in de gegevensstructuur is het niet mogelijk gegevenspakketten te importeren en te exporteren tussen een v5-platform en een v7-platform.
 
