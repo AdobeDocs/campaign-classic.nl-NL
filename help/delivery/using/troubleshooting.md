@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
 
 ---
 
@@ -37,4 +37,4 @@ HTTP/2-connector: u moet communicatie aan en van de volgende servers toestaan:
 
 >[!NOTE]
 >
->Voor meer informatie over de twee schakelaars, verwijs naar [Verbindingen](../../delivery/using/setting-up-mobile-app-channel.md#connectors).
+>Voor meer informatie over de twee schakelaars, verwijs naar het [Vormen van de mobiele toepassing in de Campagne](../../delivery/using/configuring-the-mobile-application.md)van Adobe.
