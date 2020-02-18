@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -68,4 +68,4 @@ Pas de volgende stappen toe om het bijbehorende schema te maken:
 
 Met de optie **Federated Data Access - FDA** hebt u toegang tot de gegevens die in een externe database zijn opgeslagen.
 
-De configuratie die op de schema&#39;s moet worden gedragen om tot gegevens in een extern gegevensbestand toegang te hebben is gedetailleerd in [deze pagina](../../platform/using/accessing-an-external-database.md#creating-the-data-schema).
+De configuratie die op de schema&#39;s moet worden gedragen om tot gegevens in een extern gegevensbestand toegang te hebben is gedetailleerd in [deze pagina](../../platform/using/creating-data-schema.md).
