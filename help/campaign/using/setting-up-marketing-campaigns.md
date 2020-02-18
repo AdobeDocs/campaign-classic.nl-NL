@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -148,14 +148,14 @@ U kunt de wizard voor het maken van plannen gebruiken om alle uitvoeringsdatums 
 
 De configuratiewijze van het uitvoeringsprogramma valt samen met het **[!UICONTROL Scheduler]** voorwerp van het Werkschema. Zie [deze sectie](../../workflow/using/executing-a-workflow.md#architecture)voor meer informatie.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >De het programmaconfiguratie van de uitvoering moet zorgvuldig worden uitgevoerd om het overbelasten van het gegevensbestand te vermijden. Met terugkerende campagnes worden de workflow(en) van de sjabloon gedupliceerd, afhankelijk van het opgegeven schema. De implementatie van te frequente workflowcreatie kan de werking van de database belemmeren.
 
 1. Geef een waarde op in het **[!UICONTROL Create in advance for]** veld om de corresponderende workflows voor de aangegeven periode te maken.
 1. Maak het werkstroomsjabloon dat moet worden gebruikt in campagnes op basis van deze sjabloon, met de doelparameters en een of meer generieke leveringen.
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >Deze workflow moet worden opgeslagen als een terugkerende werkstroomsjabloon. Hiervoor bewerkt u de workfloweigenschappen en selecteert u de **[!UICONTROL Recurring workflow template]** optie op het **[!UICONTROL Execution]** tabblad.
 
@@ -174,7 +174,7 @@ Pas de volgende procedure toe om de terugkerende campagne te maken en de workflo
 
    Voor elke regel kunt u de volgende aanvullende opties toevoegen:
 
-   * **[!UICONTROL To be approved]** : Hiermee kunt u goedkeuringsaanvragen voor levering afdwingen in de workflow
+   * **[!UICONTROL To be approved]** : Hiermee kunt u de goedkeuringsaanvragen voor levering afdwingen in de workflow.
    * **[!UICONTROL To be started]** : Hiermee kunt u de workflow starten wanneer de begindatum is bereikt.
    In het **[!UICONTROL Create in advance for]** veld kunt u alle workflows maken die de ingevoerde periode beslaan.
 
@@ -211,7 +211,7 @@ Een periodieke campagne is een campagne die op een specifiek malplaatje wordt ge
 
 1. Voer de eigenschappen van de sjabloon in.
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >De exploitant aan wie het malplaatje wordt toegewezen moet de aangewezen rechten hebben om campagnes in het geselecteerde programma tot stand te brengen.
 
@@ -227,7 +227,7 @@ Een periodieke campagne is een campagne die op een specifiek malplaatje wordt ge
 
    ![](assets/s_ncs_user_op_template_period_planning_add.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >De periodieke campagnemalplaatjes creëren nieuwe campagnes volgens het hierboven bepaalde programma. Daarom moet deze bewerking zorgvuldig worden uitgevoerd om overbelasting van de Adobe Campaign-database te voorkomen.
 
