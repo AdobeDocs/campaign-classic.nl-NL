@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
+source-git-commit: 7aa381654805798fcdd24f588160bed15e037a2b
 
 ---
 
@@ -59,7 +59,7 @@ Met de campagne kunt u goedkeuringsprocessen instellen voor de belangrijkste sta
 
 De Campagne van Adobe verstrekt de Federated optie van de Toegang van Gegevens (FDA) om informatie te verwerken die in één of meerdere externe gegevensbestanden wordt opgeslagen: u hebt toegang tot externe gegevens zonder de structuur van Adobe Campagne-gegevens te wijzigen.
 
-[Klik hier voor meer](../../platform/using/accessing-an-external-database.md)informatie.
+[Klik hier voor meer](../../platform/using/connecting-to-database.md)informatie.
 
 ## Met welke externe databases kan ik een campagne verbinden? {#which-external-databases-can-i-connect-campaign-to-}
 
