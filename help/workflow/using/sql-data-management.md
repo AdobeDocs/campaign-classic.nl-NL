@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -28,7 +28,7 @@ Met de activiteit **SQL-gegevensbeheer** kunt u uw eigen SQL-scripts schrijven o
 
 Voordat u de activiteit configureert, moet u controleren of aan de volgende voorwaarden is voldaan:
 
-* De activiteit is beschikbaar voor verre slechts gegevensbronnen. Het pakket **[!UICONTROL FDA]** (Federated Data Access) moet daarom op uw exemplaar worden geïnstalleerd (zie [deze sectie](../../platform/using/accessing-an-external-database.md)).
+* De activiteit is beschikbaar voor verre slechts gegevensbronnen. Het pakket **[!UICONTROL FDA]** (Federated Data Access) moet daarom op uw exemplaar worden geïnstalleerd (zie [deze sectie](../../platform/using/about-fda.md)).
 * Het uitgaande schema moet in het gegevensbestand bestaan en met een gegevensbestand FDA (voor meer op gegevensschema&#39;s, verwijs naar [deze sectie](../../configuration/using/about-schema-reference.md)) worden verbonden.
 * De exploitant die het werkschema uitvoert moet het **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** genoemde recht hebben. Raadpleeg [deze sectie](../../platform/using/access-management.md#named-rights)voor meer informatie over benoemde rechten.
 
