@@ -1,6 +1,6 @@
 ---
 title: Laatste release
-description: Opmerkingen bij de release Campagne Classic 19.2
+description: Laatste release
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -13,14 +13,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e091bab4032a0fe8292ea65100627fefab2a5e30
+source-git-commit: 78c94268723e172b4a4e3c3a965877978b075b82
 
 ---
 
 
 # Laatste release{#latest-release}
 
-[Upgrade](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) maken| [Release](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) van het regelpaneel| [Documentatie-updates](../../rn/using/documentation-updates.md) | [Eerdere versies](../../rn/using/release--19-1.md) | [Verouderde kenmerken](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+[Upgrade](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) maken| [Release](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) van het regelpaneel| [Documentatie-updates](../../rn/using/documentation-updates.md) | [Eerdere versies](../../rn/using/release--19-2.md) | [Verouderde kenmerken](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
 <table> 
  <tbody> 
@@ -41,34 +41,23 @@ source-git-commit: e091bab4032a0fe8292ea65100627fefab2a5e30
 
 Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032) om de **laatste stabiele build** (GA) weer te geven.
 
-## ![](assets/blue-2.png) Release 19.2.3 - build 9081 {#release-19-2-3-build-9081}
+## ![](assets/blue-2.png) Release 20.1 - build 9122 {#release-20-1-build-XXXX}
 
-_7 februari 2020_
-
-**Verbeteringen**
-
-* Probleem met regressie verholpen als gevolg van de implementatie van SSL-certificering, waardoor de gebruikersverbinding op de Windows-server is mislukt. (NEO-20629)
-* Probleem verholpen waarbij een onjuist versietnummer in het menu **Info** werd weergegeven.
-
-## ![](assets/orange-2.png) Release 19.2 - build 9080 {#release-19-2-build-9080}
-
-_2 december 2019_
+_17 februari 2020_
 
 **Wat is nieuw?**
 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>California Consumer Privacy Act (CCPA)</strong><br /> </th> 
+   <th> <strong>Snowflake FDA-connector</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>CCPA is de nieuwe privacywet van de staat Californië die de vereisten inzake gegevensbescherming harmoniseert en moderniseert die van kracht worden op 1 januari 2020. CCPA is op de klanten van de Campagne van Adobe van toepassing die gegevens voor de Onderwerpen van Gegevens in Californië verblijven.</p>
-    <p>Naast de privacy mogelijkheden reeds beschikbaar (met inbegrip van toestemmingsbeheer, montages van het gegevensbehoud, en gebruikersrollen), helpt de Campagne van Adobe uw bereidheid voor CCPA vergemakkelijken:</p>
-    <ul>
-      <li>Recht op toegang en recht op verwijdering: We benutten de capaciteiten die voor GDPR zijn toegevoegd. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">Meer informatie</a></li>
-      <li>U kunt bijhouden of een consument heeft gekozen voor de verkoop van persoonlijke gegevens. Hiervoor moet u de tabel Profielen uitbreiden en een <strong>Uitschakelen voor het veld CCPA</strong> toevoegen. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">Meer informatie</a></li></td> 
+   <td> <p>Sneeuwvlok is een volledig beheerd wolkendepot dat is gebouwd om op zowel opslag als compute niveau te schrapen. Met deze nieuwe aansluiting kan Adobe Campaign nu de kracht van Snowflake benutten om Big Data Segmentation uit te voeren. Deze connector is beschikbaar voor alle klanten, ook voor klanten die worden gehost door Adobe.</p>
+    <p>Raadpleeg de <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">gedetailleerde documentatie</a>voor meer informatie.</p>
+   </td> 
   </tr> 
  </tbody> 
 </table>
@@ -76,110 +65,146 @@ _2 december 2019_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Live bewaking van workflow</strong><br /> </th> 
+   <th> <strong>Verbeteringen voor Hadoop FDA-aansluiting</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>U kunt nu de uitvoeringsstatus van alle workflows op uw exemplaar controleren met behulp van vooraf gedefinieerde weergaven.</p>
-   <p>Raadpleeg de <a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status">gedetailleerde documentatie</a>voor meer informatie.</p></td> 
-  </tr> 
- </tbody> 
-</table>
-
-
-<table> 
- <thead> 
-  <tr> 
-   <th> <strong>Interactieve inhoud met AMP</strong><br /> </th> 
-  </tr> 
- </thead> 
- <tbody> 
-  <tr> 
-<td> <p>Met Adobe Campaign kunt u de nieuwe interactieve <a href="https://amp.dev/about/email/">AMP uitproberen voor de indeling E-mail</a> . Hiermee kunnen marketers AMP-componenten in berichten opnemen om de e-mailervaring te verbeteren met rijke, dynamische en interactieve inhoud die rechtstreeks in het bericht zelf kan worden geactiveerd.</p>
-   <p>Dit vermogen wordt vrijgegeven als openbare bèta.</p>
-   <p>Raadpleeg de <a href="../../delivery/using/defining-interactive-content.md">gedetailleerde documentatie</a> en de <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">zelfstudie-video</a>voor meer informatie.</p><br /></td> 
-  </tr> 
- </tbody> 
-</table>
-
-
-<table> 
- <thead> 
-  <tr> 
-   <th> <strong>Beveiligd SMS-bericht (TLS)</strong><br /> </th> 
-  </tr> 
- </thead> 
- <tbody> 
-  <tr> 
-<td> <p>Beveiligd SMS wordt nu ondersteund via de uitgebreide algemene SMPP-connector. Hierdoor is een gecodeerde verbinding met de provider mogelijk.</p> <p><strong>Waarschuwing</strong> Voor deze functie is een bijgewerkt certificaat op alle servers vereist. Ongeldige, ingetrokken of verlopen certificaten genereren fouten die de algemene mogelijkheden voor het verzenden van SMS beïnvloeden.</p><p>Raadpleeg de <a href="https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html">gedetailleerde documentatie</a>voor meer informatie. </p> </td> 
+   <td> <p>De Hadoop FDA Connector is verbeterd om zowel Hadoop 3.0 als Cloudera te ondersteunen.</p>
+    <p>Raadpleeg de <a href="../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3">gedetailleerde documentatie</a>voor meer informatie.</p>
+   </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Verbeterde beveiliging**
 
-* Oplossing voor kwetsbaarheden met betrekking tot scripts die verwijzen naar andere sites in de Campagne-interface: validatie van invoergegevens en codering van uitvoer. (NEO-16810)
-* Oplossing voor een beveiligingsprobleem met profielautorisatie dat toegang tot onbevoegde gegevens mogelijk maakt door het beleid voor aanmeldingsbeperkingen te versterken. (NEO-14445)
+* Verbeterde veiligheid in rapportconfiguratie om tegen klikjacking te beschermen. Dit geldt voor nieuwe verslagen. Voor oude rapporten moet u deze opnieuw publiceren om wijzigingen toe te passen. (NEO-13282)
+
+* Los een klein geheugenprobleem in cryptString op. (NEO-20071)
+
+* Verbeterde controle JSP om een interne IP bekendmaking te bevestigen. (NEO-16821)
+
+* Probleem verholpen waarbij gegevens over stacktracering konden worden weergegeven aan gebruikers die geen beheerder zijn. (NEO-12388)
+
+* Verbeterd beheer van gegevens uit vorige sessies in cache. (NEO-17039)
+
+* Probleem verholpen waardoor het bestand logins.log geen succesvolle aanmeldingspogingen kon opnemen via IMS. (NEO-11004)
 
 **Verbeteringen**
 
-* Geheugenverbruik optimaliseren voor pushmeldingen.
-* Voor optimalisatie van prestaties en opslag is de verwerking van het bestand **logins.log** verbeterd. Het bestand wordt nu in meerdere bestanden gesplitst, elke dag met maximaal 365 bestanden. [Meer informatie](../../production/using/log-files.md)
-* De externe rekening van CRM van de Dynamica van Microsoft kan nu worden gevormd gebruikend wachtwoordgeloofsbrieven (wachtwoord + gebruikersbenaming) of certificaat (privé sleutel). [Meer informatie](../../platform/using/external-accounts.md#microsoft-dynamics-crm-external-account)
-* Er zijn enkele verbeteringen toegevoegd aan de Hadoop FDA-connector om de betrouwbaarheid te verbeteren
-* Er is een specifieke hulplijn toegevoegd om schijfruimte te controleren voordat u openbare bronnen op de server kunt uploaden.
-* Er zijn nieuwe [campagneopties](../../installation/using/configuring-campaign-options.md) toegevoegd:
-   * Met de **configuratieoptie WdbcKillSessionPolicy** kunt u het **gedrag Onvoorwaardelijk stoppen** op alle workflows en PostSQL-databasequery&#39;s toepassen.
-   * Met de optie **NmsOperation_DeliveryPreparationWindow** kunt u het aantal dagen definiëren waarboven leveringen met een inconsistente status worden uitgesloten van het aantal actieve leveringen.
-   * Met de optie **WdbcOptions_TempDbName** kunt u een afzonderlijke database configureren voor het werken van tabellen op Microsoft SQL Server. Hierdoor worden back-ups en replicatie geoptimaliseerd. [Meer informatie](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
-   * De optie **XtkCleanup_NoStats** is verbeterd voor PostgreSQL om het gedrag van de stap van de opslagoptimalisering van het gegevensbestand schoonmaakwerkschema beter te controleren. [Meer informatie](../../production/using/database-cleanup-workflow.md#statistics-update)
-* Er is een afsluitmechanisme voor de account toegevoegd aan de API **voor aanmelding()** . Het verhindert verdere login pogingen na een bepaald aantal opeenvolgende ontbroken login pogingen binnen een gespecificeerd tijdsbestek.
-* Een nieuwe optie van de **Maximum de runtime** van de verpersoonlijking in de leveringseigenschappen staat u toe om een onderbreking voor de verpersoonlijkingsruntime te bepalen, om de verpersoonlijkingsfase te verhinderen te lang te lopen. [Meer informatie](../../delivery/using/personalization-fields.md#timing-out-personalization)
-* De optie **FTP-protocol** is toegevoegd zodat u een proxyconfiguratie kunt gebruiken voor SFTP-verbindingen. [Meer informatie](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)
-* Nieuwe ondersteuning van proxytoegang tot een externe SFTP-server voor on-premise omgevingen.
-* Er is een specifieke hulplijn toegevoegd om te voorkomen dat pakketten worden geïnstalleerd die niet compatibel zijn met de instantie Campagne. [Meer informatie](../../installation/using/installing-campaign-standard-packages.md)
+* iOS 13 wordt nu ondersteund door de HTTP2-connector.
 
-_Verouderde systemen_
+* Verbeterd quarantainebeheer en opschoning van de tabellen die worden gebruikt door de functie voor pushmeldingen (nms:address en nms:appSubscriptionRcp). Voor iOS (alleen HTTP2-connector) worden uitgeschakelde tokens nu op dezelfde manier verwerkt als voor Android. De markering voor uitschakelen is nu ingesteld in de tabel NmsAppSubscriptionRcp. [Meer informatie](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-De volgende systemen zijn nu [verouderd](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) voor Classic-implementaties voor campagnes:
-* Apache 2.2
-* Centos 6
+* Er is een nieuwe optie toegevoegd aan de **JavaScript-code** en de activiteiten in de workflow voor **geavanceerde JavaScript-code** om een time-outperiode te definiëren. Hierdoor wordt voorkomen dat de uitvoeringsfase van javascript te lang wordt uitgevoerd. Als de time-outperiode verstreken is, wordt de workflow gestopt. De standaardtime-out is 1 uur. [Meer informatie](../../workflow/using/sql-code-and-javascript-code.md)
 
-Zorg ervoor dat u beschikt over ondersteunde versies van alle systemen die in de nieuwste matrix voor campagnecompatibiliteit worden vermeld. [Meer informatie](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+* De leveringsanalyse wordt nu gestopt wanneer geen passende affiniteit op de midsourcingserver wordt gevonden, met het overeenkomstige foutenmelding die wordt getoond.
 
-_Campagne Mobile SDK_
+* Database-failover voor Postgres wordt nu ondersteund: Wanneer de databaseserver vastloopt en opnieuw wordt opgestart, maakt Campagne nu automatisch opnieuw verbinding met de server.
 
-De build 1.0.26 van de iOS SDK is nu beschikbaar. In deze nieuwe build hebben we de ondersteuning van iOS 13 toegevoegd. Deze nieuwe versie ondersteunt nu meldingsprioriteit en het nieuwe beheerproces voor registratietoken voor iOS 13-pushberichten. Als u toepassingen uitvoert op een eerdere versie van de SDK, moet u de toepassingen opnieuw compileren met de nieuwe SDK. Neem contact op met de klantenservice van Adobe om de SDK te verkrijgen.
+* De **weergave In afwachting** van starten is toegevoegd aan het knooppunt Beheer > Audit > Workflows Status. Dit staat u toe om alle werkschema&#39;s op uw instantie te controleren die om door het **operationMgt** proces wachten te zijn begonnen. Deze weergave wordt geleverd met het marketingpakket. [Meer informatie](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+
+**Overige wijzigingen**
+
+* In Linux gebruikt het opstarten van de netwerkservice nu een systeemeenheid in plaats van het script /etc/init.d/nlserver6. De migratie naar het nieuwe opstartschema wordt automatisch uitgevoerd wanneer u het 20.1-pakket installeert. /etc/init.d/nlserver6 wordt nog verstrekt maar voor het in wisselwerking staan met de nlserver dienst (begin, nieuw begin, einde, enz.), adviseren wij dat u het systeembevel direct gebruikt.
+
+* De meest verbruikende douanetabellen zijn bewogen van de **xtkNewId** opeenvolging aan specifieke opeenvolgingen. [Meer informatie](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+
+* Verbeterde queryprestaties die kunnen worden beïnvloed door onnodige databaseverbindingen.
+
+* Verbeterde prestaties van de wizard Database bijwerken.
+
+* Het beheer van de databaserecord is verbeterd.
+
+* De robuustheid van de verbindingspool is verbeterd, die onverwachte verbindingsmislukkingen kan verhinderen te vaak te gebeuren.
+
+* De regels voor de validatie van e-mailadressen voor het verzenden van een adres naar quarantaine in het geval van een elektronische fout zijn verbeterd. [Meer informatie](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
+
+* Voor Debian gebruikt Campaign nu PCRE-bibliotheken van het systeem wanneer deze beschikbaar zijn.
+
+* De campagne staat nu het gebruik van een recentere systeemODBC bibliotheek toe.
+
+* Er is een time-out toegevoegd aan het LINE-servlet wanneer een verbinding wordt geopend om een rijke afbeelding te laden. Als het laden van de afbeelding te veel tijd in beslag neemt, stopt de servlet de verbinding om een knelpunt te voorkomen.
 
 **Patches**
 
-* Correctie van de consolebotsing die kon voorkomen wanneer het toevoegen van een lege verbonden lijst in de het werkschemaactiviteit van de **Laden van Gegevens (RDBMS)** . (NEO-12213)
-* Probleem verholpen dat ertoe kon leiden dat bepaalde berichten niet werden verwerkt door de server voor middeluitgaven. (NEO-12395)
-* Probleem verholpen in de workflow voor het opschonen van databases bij gebruik van de optie voor het weergeven van query&#39;s met metagegevens. (NEO-12399)
-* Probleem opgelost dat invloed had op de leveringsanalyse met typologieregel, waaronder ne.jp domain. (NEO-12609)
-* Probleem verholpen met betrekking tot SMS over TLS-updates die een restrictiever certificaatbeleid impliceerden. Deze updates kunnen leiden tot een verbindingsfout tussen marketing- en midsourcingservers in het geval van een verouderd certificaat. (NEO-17698)
-* Probleem verholpen met het gebruik van de knop Verbinding **** testen op een externe account in een omgeving voor midsourcing met vault-verificatie. (NEO-12722)
-* Probleem verholpen bij query&#39;s waarbij gebruik werd gemaakt van datumfuncties met een FDA Hadoop-verbinding. (NEO-12847)
-* Probleem verholpen bij het vervangen van een afbeelding in de e-maileditor. (NEO-13098)
-* Probleem verholpen waarbij na de upgrade fouten konden optreden in mappen die waren verwijderd of verplaatst naar een andere locatie. (NEO-13118)
-* Probleem verholpen met betrekking tot de weergave van afbeeldingen bij gebruik van de optie **Afbeelding definiëren per schermgrootte** van apparaat bij LIJNEN-berichten. (NEO-13228)
-* Probleem met voorbereiding van levering verholpen waarbij de optie Dubbel adres **uitsluiten tijdens levering** is uitgeschakeld. (NEO-13240)
-* Probleem verholpen in workflows wanneer de activiteit **Bestandsoverdracht** wordt gebruikt om bestanden te downloaden met de optie Bronbestanden **verwijderen na overdracht** , met een naam die een spatieteken bevat. (NEO-13411)
-* Probleem verholpen waarbij Tomcat-cache werd opgeschoond en dit tot geheugenproblemen kon leiden. (NEO-13456)
-* Probleem verholpen bij het installeren van de **Controle van de aanbiedingsmotor met het ingebouwde pakket van de uitvoeringsinstantie** op een bestaande controleinstantie die in Microsoft SQL 2017 loopt. (NEO-13539)
-* Correctie van het storten van de console die kon voorkomen wanneer het unchecking van bijgehouden URLs in een e-mail, van het **Inhoud** tabel van de Tekst. (NEO-13545)
-* Probleem verholpen met codering van Chinese afzendernaam. (NEO-13837)
-* Oplossing voor een fout die kan optreden bij het weergeven van enquêteresolutiegegevens in de Verkenner. (NEO-14590)
-* Probleem verholpen dat tot een discrepantie tussen de indeling van het leveringslogboek en de quarantainetabel kon leiden. (NEO-16547)
-* Probleem verholpen met DKIM-sleutels die niet in e-mailberichten waren ingesloten. (NEO-16804)
-* Probleem verholpen waarbij de onjuiste foutcode werd weergegeven toen een ongeldig sessietoken werd gebruikt in de context van API-aanroepen om gebeurtenissen te activeren. De foutcode was &#39;HTTP 200 OK&#39; in plaats van &#39;HTTP 403 Verboden&#39;. (NEO-16826)
-* Probleem verholpen bij het weergeven van leveringsrapporten via webtoegang. (NEO-17015)
-* Probleem verholpen met een IMS-verificatie bij aanmelding bij Adobe Campaign. (NEO-17312)
-* Probleem verholpen waarbij werd voorkomen dat in quarantaine geplaatste e-mails werden verwijderd tijdens het privacybeheerproces. (NEO-17314)
-* Problemen met de doorvoer verholpen na upgrade naar 9031 met SQL-database. (NEO-1758)
-* Probleem verholpen dat invloed had op de CRM-connector met Salesforce. (NEO-17712)
-* Probleem met time-out verholpen bij het importeren van gegevens uit een externe SFTP. (NEO-19723)
-* Probleem verholpen bij toegang tot voorspellende modellen. (NEO-19713)
-* Probleem verholpen dat invloed had op willekeurige steekproeven in de **gesplitste** werkstroomactiviteit met de Hadoop FDA-database. (NEO-16636)
+* Probleem verholpen met versleuteling van accountsleutels bij gebruik van de Hadoop-connector.
 
+* Probleem met regressie verholpen als gevolg van de implementatie van SSL-certificering, waardoor de gebruikersverbinding op de Windows-server is mislukt. (NEO-20629)
+
+* Probleem verholpen met incrementele queryactiviteit in het geval van negatieve workflow-id&#39;s. (NEO-1979)
+
+* Probleem met codering verholpen bij het uitvoeren van query&#39;s via de Netezza FDA-connector. (NEO-19594)
+
+* Probleem verholpen dat tot een fout leidde bij het gebruik van de POST-methode in de gebeurtenisactiviteit van de **webdownloadworkflow** .
+
+* Probleem opgelost met het genereren van voorstellen. (NEO-18176)
+
+* Probleem met weergave van voettekst verholpen bij gebruik van de sjabloon voor het verkrijgen van een webformulier.
+
+* Probleem verholpen bij het parseren van de URL&#39;s in de inhoud van doorlopende leveringen die ertoe konden leiden dat ze vastliepen. (NEO-16910)
+
+* Probleem verholpen waarbij de velden **Start** en **End** niet werden berekend tijdens het maken van een nieuwe campagne.
+
+* Probleem verholpen met de workflowactiviteit **Bestanden downloaden** bij gebruik van een URL.
+
+* Probleem verholpen bij het voorvertonen van een geïmporteerde lijst in een queryactiviteit van een rapport. (NEO-13119)
+
+* Probleem verholpen waarbij een verouderde afbeelding werd weergegeven wanneer u in de e-maileditor het aanpassingsblok **Powered by Campaign** (Aangedreven door campagne) selecteerde.
+
+* De netwerkcommunicatie tussen de client en de server is verbeterd.
+
+* Probleem verholpen waarbij te veel workflows in dezelfde campagne werden gemaakt. U kunt nu niet meer dan 28 workflows maken. Er wordt een waarschuwing weergegeven.
+
+* Probleem verholpen bij gebruik van de optie **A voor het afstemmen van kolommen** in een **Uniewerkstroomactiviteit** .
+
+* Probleem verholpen waarbij de console vastloopt die kan optreden wanneer een beschadigde verrijkingslijst in een workflow wordt gebruikt. (NEO-18096)
+
+* Oplossing voor diverse problemen met het vastlopen van de console die in workflows konden optreden (NEO-18010, NEO-18032)
+
+* Probleem verholpen waarbij een workflowactiviteit voor een **extern signaal** ook kon worden uitgevoerd als deze was uitgeschakeld. (NEO-17524)
+
+* Probleem verholpen bij het maken van een nieuw schema.
+
+* Probleem met bijhouden bij het verzenden van SMS-berichten is opgelost. (NEO-19595)
+
+* Probleem verholpen waarbij een onjuist doelaantal werd weergegeven in leveringsindicatoren.
+
+* Probleem verholpen waarbij onjuiste percentages werden weergegeven bij het genereren van een beschrijvend rapport via een workflowactiviteit. (NEO-14314)
+
+* Probleem verholpen waarbij verschillende nummers werden weergegeven in het rapport met de leveringstijd. (NEO-11783)
+
+* Probleem verholpen waardoor de traceringsindicatoren voor transactionele berichten niet konden worden bijgewerkt door de workflow voor bijhouden. (NEO-1770)
+
+* Oplossing voor een regressieprobleem dat ertoe leidde dat het webproces vastliep en opnieuw opstartte wanneer een aanvraag voor een aanbieding werd ingediend via SOAP. (NEO-19482)
+
+* Probleem verholpen waarbij gegevens niet konden worden geüpload naar openbare bronnen als de uploadmap een externe gedeelde locatie was. (NEO-19361)
+
+* Probleem opgelost waarbij het publiek voor **importeren uit de technische workflow van Adobe Experience Cloud** voortdurend faalde. (NEO-18463)
+
+* Probleem verholpen waarbij leveringen niet konden worden verzonden wanneer sjablonen werden gebruikt die vanuit Experience Manager waren geïmporteerd. (NEO-17540)
+
+* Probleem verholpen dat optrad na de upgrade naar versie 9032 en waardoor de instantie geen verbinding kon maken met de FTP-server via het SSL-protocol. (NEO-20498)
+
+* Oplossing van een probleem dat optrad bij het verwijderen, invoegen of bijwerken van een grote hoeveelheid gegevens met de **activiteit Gegevens** bijwerken in een workflow met een FDA-schema als doeldimensie. (NEO-13280)
+
+* Probleem verholpen waarbij e-mailberichten niet konden worden verzonden wanneer de instructie &#39;if&#39; buiten de `body` tag werd gebruikt.
+
+* Probleem verholpen die optrad tijdens het weergeven van de spiegelpagina vanuit de leveringslogboeken van een verzonden bericht. (NEO-17976)
+
+* Probleem verholpen waardoor de **koppeling naar het aanpassingsblok van de spiegel** niet kon worden weergegeven op het tabblad **Tekstinhoud** nadat op HTML **in een levering** importeren was geklikt. (NEO-17568)
+
+* Het foutbericht dat wordt weergegeven wanneer u op een koppeling naar een verlopen spiegelpagina klikt, is verduidelijkt. (NEO-17340)
+
+* Probleem verholpen waardoor sommige knoppen niet konden worden gebruikt in het scherm voor het maken van **gegevensdistributie** .
+
+* Probleem verholpen dat optrad bij het plannen van een leveringsactiviteit in een instantie met Asia/Kolkata als tijdzone. (NEO-2001)
+
+* Er wordt nu een fout weergegeven wanneer een levering een probleem met de affiniteitsconfiguratie heeft.
+
+* Probleem verholpen waarbij een onjuist versietnummer in het menu **Info** werd weergegeven.
+
+* Probleem verholpen die optrad tijdens het bijwerken van de verpletterende account vanuit de eigenschappen van een terugkerende levering in een workflow. (NEO-18684)
+
+* Probleem verholpen dat optrad wanneer verbinding werd gemaakt met de instantie via de omleidingsmodule, waardoor de verbinding niet goed kon worden schoongemaakt zodra deze was gesloten.
