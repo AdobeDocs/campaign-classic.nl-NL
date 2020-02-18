@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -100,7 +100,7 @@ De volgende configuratie is het zelfde als voor een e-maillevering. Zie [deze se
 >
 >In het **[!UICONTROL Tweet]** leveringsmalplaatje, wordt het volgen toegelaten door gebrek.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >We kunnen het verschil niet zien tussen robots die tweets analyseren en gebruikers die klikken.
 
@@ -134,7 +134,7 @@ Met de **[!UICONTROL Synchronize Twitter accounts]** workflow (zie [Synchronizin
 
 ![](assets/social_twitter_visitors_001.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >De workflow kan alleen de lijst met Twitter-volgers herstellen als het **[!UICONTROL Synchronize Twitter accounts]** selectievakje is ingeschakeld in het scherm Bewerken van de service die aan de account is gekoppeld. Raadpleeg voor meer informatie: Schrijftoegang [delegeren naar Adobe-campagne](../../social/using/configuring-publishing-on-twitter.md#delegating-write-access-to-adobe-campaign).
 
@@ -181,7 +181,7 @@ Selecteer de volgers aan wie u uw directe bericht wilt verzenden.
 
    * Selecteer deze optie **[!UICONTROL Twitter subscribers]** om een rechtstreeks bericht naar alle accountwolders te verzenden.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >U kunt niet meer dan 250 berichten per dag verzenden. Als uw Twitter-account meer dan 250 volgers heeft, raden we u ten zeerste aan om uw account in golven te leveren. Dit omvat hetzelfde proces als e-mailleveringen. Zie [deze sectie](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
 
