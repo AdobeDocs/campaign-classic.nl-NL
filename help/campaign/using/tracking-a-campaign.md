@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -51,7 +51,7 @@ Deze informatie wordt ook aangeboden in de **[!UICONTROL Campaign orders]** weer
 
 De centrale operator kan de volgorde bewerken. Er zijn twee manieren om dit te doen:
 
-1. De exploitant kan de ordenaam klikken om het uit te geven: dit toont het ordendetail.
+1. De exploitant kan de ordenaam klikken om het uit te geven: hier worden de gegevens van de bestelling weergegeven .
 
    ![](assets/mkg_dist_catalog_op_command_edit1.png)
 
