@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: aa0eb7acfb5d3b622475544735aed37d6beea892
 
 ---
 
@@ -28,11 +28,11 @@ De Neobank-site wil op zijn website een aanbieding weergeven die gericht is op o
 
 Om deze interactie op te zetten, gaan we:
 
-1. [Maak een anonieme omgeving](#creating-an-anonymous-environment).
-1. [Maak anonieme aanbiedingsruimten](#creating-anonymous-offer-spaces).
-1. [Maak een aanbiedingscategorie en een thema.](#creating-an-offer-category-and-a-theme).
-1. [Anonieme aanbiedingen maken.](#creating-anonymous-offers).
-1. [Configureer de webaanbiedingsruimten op de website](#configure-the-web-offer-space-on-the-website).
+1. [Een anonieme omgeving maken](#creating-an-anonymous-environment)
+1. [Anonieme aanbiedingsruimten maken](#creating-anonymous-offer-spaces)
+1. [Een aanbiedingscategorie en een thema maken](#creating-an-offer-category-and-a-theme)
+1. [Anonieme voorstellen maken.](#creating-anonymous-offers)
+1. [Webaanbiedingsruimten op de website configureren](#configure-the-web-offer-space-on-the-website)
 
 ### Een anonieme omgeving maken {#creating-an-anonymous-environment}
 
@@ -64,7 +64,7 @@ U krijgt een boomstructuur met uw nieuwe omgeving:
    * Titel
    * HTML-inhoud
    * URL afbeelding
-   * Doel-URL.
+   * Doel-URL
    ![](assets/offer_inbound_anonymous_example_030.png)
 
 1. Bewerk de HTML-renderfunctie, bijvoorbeeld als volgt:
