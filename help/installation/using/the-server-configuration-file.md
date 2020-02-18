@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9d7cbe5f2407deb8fd2e00a60bf9e3789101e6ff
+source-git-commit: 09fa3751d94fd71a68470174dd0b4a48d94d3f44
 
 ---
 
@@ -1555,6 +1555,12 @@ Hier zijn de verschillende parameters van de **mta** knoop. Dit is de configurat
    <td> Indien niet gedefinieerd, wordt de laatste versie gebruikt. <br /> </td> 
   </tr> 
   <tr> 
+   <td> useMomentum<br /> </td> 
+   <td> Indien ingesteld op "true", gebruikt uw instantie de <a href="https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html" target="_blank">Enhanced MTA</a>.<br /> </td> 
+   <td> Boolean<br /> </td> 
+   <td> <br /> </td>b 
+  </tr>
+  <tr> 
    <td> verifyMode<br /> </td> 
    <td> Verificatiemodus: activeert de controlemodus (geen fysieke transmissie van berichten); gebruikt voor simulatie en tests).<br /> </td> 
    <td> Boolean<br /> </td> 
@@ -1571,7 +1577,7 @@ Hier zijn de verschillende parameters van de **mta** knoop. Dit is de configurat
    <td> Veld X-Mailer: waarde van veld 'X-Mailer' in SMTP-mailheader.<br /> </td> 
    <td> String<br /> </td> 
    <td> 'nlserver, Build $(PRODUCT_VERSION)'<br /> </td> 
-  </tr> 
+  </tr>  
  </tbody> 
 </table>
 
