@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -171,7 +171,7 @@ De volgorde waarin `<attribute>` elementen in een database worden gedefinieerd, 
 * **userEnum (tekenreeks)**: ontvangt de interne naam van een &quot;open&quot; opsomming. De waarden van de opsomming kunnen door de gebruiker in de interface worden bepaald.
 * **visibleIf (string)**: Hiermee definieert u een voorwaarde in de vorm van een XTK-expressie om het kenmerk weer te geven of te verbergen.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Het kenmerk is verborgen, maar de gegevens ervan zijn toegankelijk.
 
