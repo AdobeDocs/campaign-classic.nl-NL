@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 58b69ae83d0ff2bece26cb3ff0604cd92e3c20f4
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -90,7 +90,7 @@ Voorbeelden:
 
 Het **xpath** -kenmerk verwijst naar het veld in het schema dat u wilt indexeren.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Het is belangrijk om te herinneren dat de SQL de prestatiewinst van de vraaglees die door indexen wordt verstrekt ook met een prestatieshit bij het schrijven van verslagen komt. De indexen moeten daarom met voorzichtigheid worden gebruikt.
 
@@ -112,7 +112,7 @@ Voorbeeld:
 
 In dit voorbeeld, in plaats van het laten van het **@automatische attribuut een standaard primaire sleutel tot stand brengen genoemd &quot;id&quot;specificeren wij onze eigen primaire sleutel &quot;huishoudenId&quot;** .
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Wanneer het creëren van een nieuw schema of tijdens een schemauitbreiding, moet u de zelfde primaire zeer belangrijke opeenvolgingswaarde (@pkSequence) voor het volledige schema houden.
 
@@ -171,7 +171,7 @@ Voorbeeld van een XML-veld dat ook is opgeslagen in een SQL-veld en dat een **@d
 <attribute name="secondaryEmail" label="Secondary email address" length="100" xml="true" sql="true" dataPolicy="email" />
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Hoewel de meeste kenmerken volgens een 1-1-cardinaliteit aan een fysiek veld van de database zijn gekoppeld, is dit niet het geval voor de XML-velden of de berekende velden.\
 >Een XML-veld wordt opgeslagen in een memoveld (&quot;mData&quot;) van de tabel.\
