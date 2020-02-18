@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
 
@@ -64,7 +64,7 @@ Ga naar **[!UICONTROL Static elements>Link]** om een hypertekstkoppeling toe te 
 ![](assets/s_ncs_admin_survey_add_link.png)
 
 * De inhoud **[!UICONTROL Label]** is de inhoud van de hypertekstkoppeling zoals deze wordt weergegeven op de formulierpagina.
-* Het **[!UICONTROL URL]** is het gewenste adres, bijvoorbeeld: [https://www.adobe.com](https://www.adobe.com) voor een website of [mailto:info@adobe.com](mailto:info@adobe.com) voor het verzenden van een bericht.
+* Het **[!UICONTROL URL]** is het gewenste adres, bijvoorbeeld: [https://www.adobe.com](https://www.adobe.com) voor een website of [info@adobe.com](mailto:info@adobe.com) voor het verzenden van een bericht.
 * In het **[!UICONTROL Window]** veld kunt u de weergavemodus voor de koppeling selecteren in het geval van een site. U kunt de koppeling openen in een nieuw venster, in het huidige venster of in een ander venster.
 * U kunt een ToolTip toevoegen, zoals hieronder getoond:
 
