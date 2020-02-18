@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
+source-git-commit: b2222b2997105801164f930428c7b05ae7d11336
 
 ---
 
@@ -86,7 +86,7 @@ Eigenschappen voor webformulieren worden in [deze pagina](../../web/using/about-
 
 ## Aanvullende instellingen definiëren {#defining-additional-settings}
 
-Op het **[!UICONTROL Settings]** tabblad kunt u aanvullende instellingen voor het rapport maken: deze montages zullen in URL tijdens de vraag worden overgegaan.
+Op het **[!UICONTROL Parameters]** tabblad kunt u aanvullende instellingen voor het rapport maken: deze montages zullen in URL tijdens de vraag worden overgegaan.
 
 Eigenschappen voor webformulieren worden in [deze pagina](../../web/using/about-web-forms.md)nader beschreven.
 
@@ -110,6 +110,14 @@ Een nieuwe instelling maken:
    De gegevens worden direct op het niveau van de entiteit teruggevorderd: **ctx/ontvanger/@account**.
 
    Met de **[!UICONTROL Variable]** optie kunt u een variabele maken of selecteren die als parameter van de URL wordt doorgegeven en die in de filters kan worden gebruikt.
+
+Met **[!UICONTROL Response HTTP headers]** deze optie kunt u voorkomen dat wordt geklikt wanneer de rapportpagina wordt opgenomen in een HTML-pagina die iframe gebruikt. U kunt klikken vermijden door het **[!UICONTROL X-Frame-options header]** gedrag te kiezen:
+
+* **[!UICONTROL None]**: Het verslag heeft niets **[!UICONTROL X-Frame-options header]**.
+* **[!UICONTROL Same as origin]**: Standaard ingesteld voor nieuwe rapporten en opnieuw gepubliceerde rapporten. De hostname zal het zelfde als URL van het rapport zijn.
+* **[!UICONTROL Deny]**: Het rapport kan niet worden opgenomen in een HTML-pagina die iframe gebruikt.
+
+![](assets/s_ncs_advuser_report_properties_09c.png)
 
 ## Variabelen toevoegen {#adding-variables}
 
