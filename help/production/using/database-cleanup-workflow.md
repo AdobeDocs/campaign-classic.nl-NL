@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d5813af76e3cad16d9094a19509dcb855e36c01f
+source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ---
 
@@ -152,13 +152,13 @@ Met deze taak worden alle leveringen verwijderd of gerecycleerd.
 
       waarbij **$(l)** de identificatiecode van de levering is.
 
-   * In de lijsten van het leveringslogboek (**NmsBroadlogXxx**), massa-schrappingen worden uitgevoerd in partijen van 10.000 verslagen.
-   * In de lijsten van het aanbiedingsvoorstel (**NmsPropositionXxx**), worden massa-schrappingen uitgevoerd in partijen van 10.000 verslagen.
-   * In de het volgen logboeklijsten (**NmsTrackinglogXxx**), massa-schrappingen worden uitgevoerd in partijen van 5.000 verslagen.
-   * In de leverfragmenttabel (**NmsDeliveryPart**) worden massa-deletions uitgevoerd in batches van 5.000 records. Deze lijst bevat verpersoonlijkingsinformatie over de resterende te leveren berichten.
-   * In de tabel met gegevensfragmenten op de spiegelpagina (**NmsMirrorPageInfo**) worden massaverwijderingen uitgevoerd in batches van 5.000 records. Deze lijst bevat verpersoonlijkingsinformatie over alle berichten die voor het produceren van spiegelpagina&#39;s worden gebruikt.
-   * In de zoektabel met spiegelpagina&#39;s (**NmsMirrorPageSearch**) worden massaverwijderingen uitgevoerd in batches van 5.000 records. Deze lijst is een onderzoeksindex die toegang tot verpersoonlijkingsinformatie verleent die in de **lijst NmsMirrorPageInfo** wordt opgeslagen.
-   * In de logtabel van het batchproces (**XtkJobLog**) worden massaverwijderingen uitgevoerd in batches van 5.000 records. Deze tabel bevat het logboek met te verwijderen leveringen.
+   * In de lijsten van het leveringslogboek (**NmsBroadlogXxx**), massa-schrappingen worden uitgevoerd in partijen van 20.000 verslagen.
+   * In de lijsten van het aanbiedingsvoorstel (**NmsPropositionXxx**), worden massa-schrappingen uitgevoerd in partijen van 20.000 verslagen.
+   * In de het volgen logboeklijsten (**NmsTrackinglogXxx**), massa-schrappingen worden uitgevoerd in partijen van 20.000 verslagen.
+   * In de leverfragmenttabel (**NmsDeliveryPart**) worden massa-deletions uitgevoerd in batches van 500.000 records. Deze lijst bevat verpersoonlijkingsinformatie over de resterende te leveren berichten.
+   * In de tabel met gegevensfragmenten op de spiegelpagina (**NmsMirrorPageInfo**) worden massaverwijderingen uitgevoerd in batches van 20.000 records voor verlopen leveringsonderdelen en voor voltooide of geannuleerde onderdelen. Deze lijst bevat verpersoonlijkingsinformatie over alle berichten die voor het produceren van spiegelpagina&#39;s worden gebruikt.
+   * In de zoektabel voor de spiegelpagina (**NmsMirrorPageSearch**) worden massaverwijderingen uitgevoerd in batches van 20.000 records. Deze lijst is een onderzoeksindex die toegang tot verpersoonlijkingsinformatie verleent die in de **lijst NmsMirrorPageInfo** wordt opgeslagen.
+   * In de logtabel van het batchproces (**XtkJobLog**) worden massaverwijderingen uitgevoerd in batches van 20.000 records. Deze tabel bevat het logboek met te verwijderen leveringen.
    * In de URL-tabel voor levering (**NmsTrackingUrl**) wordt de volgende query gebruikt:
 
       ```
@@ -576,6 +576,26 @@ Deze taak zuivert wezen simulatietabellen (die niet meer aan een aanbiedingssimu
    DROP TABLE wkSimu_456831_aggr
    ```
 
+### Reiniging van audittrail {#cleanup-of-audit-trail}
+
+De volgende query wordt gebruikt:
+
+```
+DELETE FROM XtkAudit WHERE tsChanged < $(tsDate)
+```
+
+waarbij **$(tsDate)** de huidige serverdatum is vanaf welke de periode die voor de optie **XtkCleanup_AuditTrailPurgeDelay** is gedefinieerd, wordt afgebroken.
+
+### Opschonen van Nmsaddress {#cleanup-of-nmsaddress}
+
+De volgende query wordt gebruikt:
+
+```
+DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WHERE iStatus=STATUS_QUARANTINE AND tsLastModified < $(NmsCleanup_AppSubscriptionRcpPurgeDelay + 5d) AND iType IN (MESSAGETYPE_IOS, MESSAGETYPE_ANDROID ) LIMIT 5000)
+```
+
+Met deze query worden alle items verwijderd die betrekking hebben op iOS en Android.
+
 ### Statistieken bijwerken en optimaliseren van opslag {#statistics-update}
 
 Met de optie **XtkCleanup_NoStats** kunt u het gedrag van de stap voor opslagoptimalisatie van de opschoonworkflow bepalen.
@@ -590,13 +610,15 @@ Als de waarde van de optie 2 is, zal dit de opslaganalyse op uitgebreide wijze (
 
 Met deze taak verwijdert u alle abonnementen die betrekking hebben op verwijderde services of mobiele toepassingen.
 
-1. Om de lijst van breedbandschema&#39;s terug te krijgen, wordt de volgende vraag gebruikt:
+Om de lijst van breedbandschema&#39;s terug te krijgen, wordt de volgende vraag gebruikt:
 
-   ```
-   SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL
-   ```
+```
+SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL
+```
 
-1. De taak herstelt dan de namen van de lijsten verbonden aan de **appSubscription** verbinding en schrapt deze lijsten.
+De taak herstelt dan de namen van de lijsten verbonden aan de **appSubscription** verbinding en schrapt deze lijsten.
+
+Deze opschoonworkflow verwijdert ook alle items waarvoor de functie is uitgeschakeld = 1 die niet zijn bijgewerkt sinds de tijd die is ingesteld in de optie **NmsCleanup_AppSubscriptionRcpPurgeDelay** .
 
 ### Sessiegegevens wissen {#cleansing-session-information}
 
@@ -613,13 +635,3 @@ Deze taak schoonmaakt de gebeurtenissen die op de uitvoeringsinstanties en de ge
 ### Reacties {#cleansing-reactions}
 
 Deze taak maakt een einde aan de reacties (tabel **NmsRemaMatchRcp**) waarin de hypothesen zelf zijn verwijderd.
-
-### Reiniging van audittrail {#cleanup-of-audit-trail}
-
-De volgende query wordt gebruikt:
-
-```
-DELETE FROM XtkAudit WHERE tsChanged < $(tsDate)
-```
-
-waarbij **$(tsDate)** de huidige serverdatum is vanaf welke de periode die voor de optie **XtkCleanup_AuditTrailPurgeDelay** is gedefinieerd, wordt afgebroken.
