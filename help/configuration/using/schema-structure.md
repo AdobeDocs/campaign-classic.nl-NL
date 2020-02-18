@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -123,7 +123,7 @@ De volgende regels moeten in acht worden genomen:
 
 * Elk **`<element>`** en **`<attribute>`** moet door naam via het **naamattribuut** worden geïdentificeerd.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >De naam van het element moet beknopt zijn, bij voorkeur in het Engels, en alleen geoorloofde tekens bevatten in overeenstemming met de XML-naamgevingsregels.
 
