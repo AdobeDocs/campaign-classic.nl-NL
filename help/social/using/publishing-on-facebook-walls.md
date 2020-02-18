@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -59,7 +59,7 @@ Als u wilt dat Adobe Campaign op de wanden van uw pagina&#39;s kan publiceren, m
 1. Meld u aan bij het Facebook-account waarmee u pagina&#39;s beheert.
 1. Voer het volgende adres in uw browser in: [https://developers.facebook.com/apps](https://developers.facebook.com/apps).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Afhankelijk van het type account dat u hebt, kunnen een of meer machtigingen nodig zijn.
    >
@@ -87,7 +87,7 @@ Als u schrijftoegang tot Adobe Campaign wilt delegeren om op de wanden van uw pa
 
 Voor deze stap hebt u toegang nodig tot zowel uw Adobe Campaign-console als een internetbrowser die u hebt aangemeld bij de Facebook-account die u gebruikt voor paginabeheer:
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >De Adobe Campaign-operator moet beheerrechten hebben om deze configuratie uit te voeren.
 
@@ -107,7 +107,7 @@ Voor deze stap hebt u toegang nodig tot zowel uw Adobe Campaign-console als een 
 
    ![](assets/social_facebook_external_account_006.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >U mag in geen geval de onveilige URL gebruiken.
 
