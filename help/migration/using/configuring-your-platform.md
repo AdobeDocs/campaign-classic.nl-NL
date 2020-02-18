@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 40391fbea53757decb48fd937f5e74e8ba6fb207
 
 ---
 
@@ -45,8 +45,6 @@ Bij het migreren naar Adobe Campaign v7 moeten de volgende elementen zijn geconf
    Raadpleeg de sectie [Tijdzones](../../migration/using/general-configurations.md#time-zones) als u de modus Meerdere tijdzones wilt gebruiken.
 
    Als u Oracle als een database gebruikt, moet u controleren of de Oracle-tijdzonebestanden correct zijn gesynchroniseerd tussen de toepassingsserver en de databaseserver. Raadpleeg de sectie [Oracle](../../migration/using/general-configurations.md#oracle) voor meer informatie.
-
-   Daarnaast moet u tijdens een migratie vanaf een v.5.11-platform in MySQL aanvullende configuraties uitvoeren. Raadpleeg de sectie [MySQL](../../migration/using/specific-configurations-in-v5-11.md#mysql) voor meer informatie.
 
 * Beveiligingszones
 
