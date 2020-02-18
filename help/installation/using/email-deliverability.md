@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
+source-git-commit: 21d808695bfde2fb3220964c066558ad30952443
 
 ---
 
@@ -28,7 +28,8 @@ In de volgende sectie vindt u een overzicht van de configuratie die is vereist v
 
 >[!NOTE]
 >
->Sommige configuraties kunnen alleen door Adobe worden uitgevoerd voor implementaties die worden gehost door Adobe. Bijvoorbeeld, om tot de server en de dossiers van de instantieconfiguratie toegang te hebben. Meer over de verschillende plaatsingen leren, verwijs naar de [Hosting modelsectie](../../installation/using/hosting-models.md) of naar [dit artikel](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>Sommige configuraties kunnen alleen door Adobe worden uitgevoerd voor implementaties die worden gehost door Adobe. Bijvoorbeeld, om tot de server en de dossiers van de instantieconfiguratie toegang te hebben. Meer over de verschillende plaatsingen leren, verwijs naar de [Hosting modelsectie](../../installation/using/hosting-models.md) of naar [dit artikel](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).\
+>Raadpleeg de [gids](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) Aan de slag die de concepten en de beste werkwijzen met betrekking tot leverbaarheid presenteert.
 
 Raadpleeg deze [sectie](../../delivery/using/about-deliverability.md)voor meer informatie over de concepten en beste praktijken met betrekking tot de leverbaarheid.
 
@@ -379,19 +380,24 @@ De parameters zijn als volgt:
 
 * **adres**: dit is het IP adres van de MTA gastheermachine die moet worden gebruikt.
 * **heloHost**: dit herkenningsteken vertegenwoordigt het IP adres aangezien het door de server SMTP zal worden gezien.
+
 * **publicId**: deze informatie is nuttig wanneer een IP adres door verscheidene **mtas** van de Campagne van Adobe achter een NATIONAAL router wordt gedeeld. De statistiekserver gebruikt deze id om verbinding te onthouden en statistieken tussen dit uitgangspunt en de doelserver te verzenden.
 * **gewicht**: Hiermee kunt u de relatieve gebruiksfrequentie van het adres definiëren. Standaard hebben alle adressen een dikte gelijk aan 1.
 
-   In het vorige voorbeeld, met normale voorwaarden, zullen de adressen als volgt worden verdeeld:
+>[!NOTE]
+>
+>In het serverConf.xml- dossier, moet u verifiëren dat één IP aan één enkele helohost met een uniek herkenningsteken (public_id) beantwoordt. Het kan niet aan veelvoudige helohosts worden in kaart gebracht, wat in leveringsvertragende kwesties zou kunnen resulteren.
 
-   * &quot;1&quot;: 5 / (5+5+1) = 45%
-   * &quot;2&quot;: 5 / (5+5+1) = 45%
-   * &quot;3&quot;: 1 / (5+5+1) = 10%
-   Als, bijvoorbeeld, het eerste adres niet voor een bepaalde MX kan worden gebruikt, zullen de berichten als volgt worden verzonden:
+In het vorige voorbeeld, met normale voorwaarden, zullen de adressen als volgt worden verdeeld:
 
-   * &quot;2&quot;: 5 / (5+1) = 83%
-   * &quot;3&quot;: 1 / (5+1) = 17%
+    * &quot;1&quot;: 5 / (5+5+1) = 45%
+    * &quot;2&quot;: 5 / (5+5+1) = 45%
+    * &quot;3&quot;: 1 / (5+5+1) = 10%
 
+Als, bijvoorbeeld, het eerste adres niet voor een bepaalde MX kan worden gebruikt, zullen de berichten als volgt worden verzonden:
+
+    * &quot;2&quot;: 5 / (5+1) = 83%
+    * &quot;3&quot;: 1 / (5+1) = 17%
 
 * **includeDomains**: Hiermee kunt u dit IP-adres reserveren voor e-mailberichten die tot een bepaald domein behoren. Dit is een lijst met maskers die een of meer jokertekens (&#39;*&#39;) kunnen bevatten. Als het attribuut niet wordt gespecificeerd, kunnen alle domeinen dit IP adres gebruiken.
 
