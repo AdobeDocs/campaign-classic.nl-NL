@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -30,7 +30,7 @@ Er zijn drie beschikbare wijzen het volgen van het Web: **&quot;Sessiespatiërin
 
 Elke modus heeft specifieke kenmerken. De &quot;permanente&quot;het volgen van het Web wijze omvat de kenmerken van de &quot;zitting&quot;Web het volgen wijze, terwijl de &quot;anonieme&quot;wijze de kenmerken van &quot;permanent&quot;en &quot;zitting&quot;wijzen omvat.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >De &quot;anonieme&quot;wijze van het Web het volgen wordt toegelaten door gebrek als het &quot;Leads&quot;pakket wordt toegelaten. In alle andere gevallen, wordt de &quot;zitting&quot;Web het volgen wijze toegelaten door gebrek.
 >
