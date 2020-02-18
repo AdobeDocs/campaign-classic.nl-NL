@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
 
 ---
 
@@ -64,11 +64,10 @@ Hier maken we bijvoorbeeld een workflow voor het verzenden van een e-mail of een
 1. Voeg en vorm een **[!UICONTROL Wait]** activiteit toe opdat de ontvangers niet teveel leveringen in één keer ontvangen.
 1. Voeg een **[!UICONTROL Split]** activiteit toe om abonnees van een mobiele iOS- of Android-toepassing te verdelen.
 
-   Selecteer een service voor elk besturingssysteem. Raadpleeg deze [pagina](../../delivery/using/setting-up-mobile-app-channel.md#creating-the-service-and-collecting-subscriptions)voor meer informatie over het maken van services.
+   Selecteer een service voor elk besturingssysteem. Raadpleeg deze [pagina](../../delivery/using/configuring-the-mobile-application.md)voor meer informatie over het maken van services.
 
    ![](assets/cross_channel_delivery_4.png)
 
 1. Selecteer en configureer een levering van een mobiele toepassing voor elk besturingssysteem.
 
    ![](assets/cross_channel_delivery_5.png)
-
