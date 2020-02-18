@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 681e6ec5fc9ed8c7e46af04f0ed62927b30e1b2e
+source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 681e6ec5fc9ed8c7e46af04f0ed62927b30e1b2e
 Ga aan de slag met Adobe Campagne door onze intuïtieve stapsgewijze handleidingen te raadplegen.
 
 * [E-mailinhoud bewerken met Adobe Experience Manager](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/aem.html): Leer de basisbeginselen om aan de slag te gaan met de integratie tussen Adobe Campaign en Experience Manager.
-* [Algemene gegevensbeschermingsverordening](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html): Ontdek wat Adobe Campagne Classic biedt om u te helpen met uw GDPR-compatibiliteit wanneer u onze service gebruikt.
+* [Privacybeheer](https://helpx.adobe.com/campaign/kb/acc-privacy.html): Ontdek wat Adobe Campaign Classic biedt om u te helpen aan uw privacyvereisten te voldoen wanneer u onze service gebruikt.
 * [Dynamische inhoud in een e-mail](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/target.html)integreren: ontdekt de grondbeginselen om met de integratie tussen de Klassieke Campagne en de Norm van het Doel te beginnen.
 * [Te leveren items beheren](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html): Lees meer over de concepten en aanbevolen procedures met betrekking tot de te leveren items en de gereedschappen die door Adobe Campagne Classic worden aangeboden om het verzenden van uw leveringen te optimaliseren.
 * [Aanbevolen werkwijzen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)voor levering: Leer meer over de beste praktijken met betrekking tot leveringsontwerp en het verzenden met de Klassiek van de Campagne van Adobe.
