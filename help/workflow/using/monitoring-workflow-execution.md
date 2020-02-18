@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e04eb83a7c2e29f8d3ea6458dd3f0e780dfb9c3
+source-git-commit: 202f571f5c348ca4ab617821cd1ec24cefa8c504
 
 ---
 
@@ -259,26 +259,23 @@ Workflowtoezichthouders worden op de hoogte gesteld. De maker en laatste gebruik
 
 ## Workflows filteren op basis van hun status{#filtering-workflows-status}
 
-Met de klassieke interface van Campagne kunt u de uitvoeringsstatus van alle workflows op uw instantie controleren met behulp van vooraf gedefinieerde **weergaven**. U opent deze weergaven door het knooppunt **Beheer**/**Audit**/**Workflows Status** te openen.
+Met de klassieke interface van Campagne kunt u de uitvoeringsstatus van alle workflows op uw instantie controleren met behulp van vooraf gedefinieerde **weergaven**. Open het knooppunt **[!UICONTROL Administration]**/**[!UICONTROL Audit]**/**[!UICONTROL Workflows Status]** om deze weergaven te openen.
 
 De volgende weergaven zijn beschikbaar:
 
-* **Running**: geeft alle actieve workflows weer.
-* **Gepauzeerd**: geeft alle gepauzeerde workflows weer.
-* **Mislukt**: geeft alle mislukte workflows weer.
-
-<!--Start Pending: lists all workflows that are waiting to be started by the operationMgt process.-->
+* **[!UICONTROL Running]**: geeft een overzicht van alle actieve workflows.
+* **[!UICONTROL Paused]**: geeft een overzicht van alle gepauzeerde workflows.
+* **[!UICONTROL Failed]**: geeft alle mislukte workflows weer.
+* **[!UICONTROL Start Pending]**: maakt een lijst van alle werkschema&#39;s die wachten om door het operationMgt proces te worden begonnen. Deze weergave is alleen beschikbaar bij het pakket **Marketingcampagnes**(zie Standaardpakketten [voor campagne](../../installation/using/installing-campaign-standard-packages.md)installeren).
 
 ![](assets/workflow-monitoring-views.png)
 
-<!--The Start Pending view is available with the Marketing campaigns package only. See Installing Campaign standard packages../../installation/using/installing-campaign-standard-packages.md.-->
-
-Deze weergaven zijn standaard toegankelijk in de map **Audit**. U kunt ze echter wel opnieuw maken op de locatie die u kiest in de mappenstructuur. Op deze manier zijn ze beschikbaar voor standaardgebruikers zonder beheerrechten.
+Deze weergaven zijn standaard toegankelijk in de **[!UICONTROL Audit]** map. U kunt ze echter wel opnieuw maken op de locatie die u kiest in de mappenstructuur. Op deze manier zijn ze beschikbaar voor standaardgebruikers zonder beheerrechten.
 
 Dit doet u als volgt:
 
 1. Klik met de rechtermuisknop op de map waaraan u de weergave wilt toevoegen.
-1. Selecteer in **Nieuwe map**/**Beheer** toevoegen de weergave die u wilt toevoegen.
+1. Selecteer in **[!UICONTROL Add new folder]**/**[!UICONTROL Administration]** de weergave die u wilt toevoegen.
 1. Zodra de omslag aan de boom wordt toegevoegd, zorg ervoor u het als mening vormt, zodat het alle werkschema&#39;s, ongeacht hun oorsprongomslag toont.Voor meer op hoe te om meningen te vormen, verwijs naar [deze sectie](../../platform/using/access-management.md#adding-folders-and-creating-views).
 
 Naast deze weergaven kunt u ook mappen met filters instellen waarmee u de lijst met workflows kunt filteren op basis van hun uitvoeringsstatus. Dit doet u als volgt:
@@ -293,6 +290,3 @@ Raadpleeg de volgende secties voor meer informatie:
 
 * [Geavanceerde filters maken](../../platform/using/creating-filters.md#creating-an-advanced-filter)
 * [Filters opslaan](../../platform/using/creating-filters.md#saving-a-filter)
-
-<!-- need to check if pending status filter will be implemented or not in january release, note, Additionally to these views, a prefedefined filter is available in workflow-type folders. It allows you to display in the list workflows that are waiting to be started by the operationMgt process only.This filter is available with the Marketing campaigns package only. See Installing Campaign standard packages../../installation/using/installing-campaign-standard-packages.md.-->
-
