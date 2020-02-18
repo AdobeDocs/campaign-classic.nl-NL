@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5130802f3723311bcd09e21fc405d298923dd20e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -79,7 +79,7 @@ Een gegevensschema wordt geïdentificeerd door zijn naam en zijn namespace.
 
 Met een naamruimte kunt u een set schema&#39;s groeperen op interessegebied. Bijvoorbeeld, wordt **concentraat** namespace gebruikt voor klant-specifieke configuratie (**klanten**).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Standaard moet de naam van de naamruimte beknopt zijn en alleen toegestane tekens bevatten, in overeenstemming met XML-naamgevingsregels.
 >
