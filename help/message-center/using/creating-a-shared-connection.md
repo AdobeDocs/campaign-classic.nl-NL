@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ---
 
@@ -75,11 +75,15 @@ Voer de volgende stappen uit om een uitvoerinstantie van het type externe accoun
 
    De inzameling van gegevens komt of via de dienst van het Web voor die HTTP/HTTPS toegang, of via de Federated Module van de Toegang van Gegevens (FDA) gebruikt.
 
+   >[!NOTE]
+   >
+   >Houd er rekening mee dat bij gebruik van FDA via HTTP alleen uitvoeringsinstanties met een Postgres-database worden ondersteund. MSSQL- of Oracle-databases worden niet ondersteund.
+
    De tweede methode wordt geadviseerd als de controleinstantie directe toegang tot het gegevensbestand van de uitvoeringsinstanties heeft. Als niet, kies de de diensttoegang van het Web. De FDA rekening om te specificeren valt met de verbinding aan de gegevensbestanden van de diverse uitvoeringsinstanties die op de controleinstantie worden gecreeerd.
 
    ![](assets/messagecenter_create_extaccount_008.png)
 
-   Raadpleeg [Toegang tot een externe database](../../platform/using/accessing-an-external-database.md)voor meer informatie over FDA (Federated Data Access).
+   Raadpleeg [Toegang tot een externe database](../../platform/using/about-fda.md)voor meer informatie over FDA (Federated Data Access).
 
 1. Klik **[!UICONTROL Test the connection]** om ervoor te zorgen de controleinstantie en de uitvoeringsinstantie omhoog worden verbonden.
 
