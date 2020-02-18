@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
+source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
 
 ---
 
@@ -108,6 +108,10 @@ Als u Adobe Campagne wilt stoppen, gebruikt u een van de volgende opdrachten:
       /etc/init.d/nlserver6 stop
       ```
 
+      >[!NOTE]
+      >
+      >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl stop nlserver**
+
    * In Windows:
 
       ```
@@ -127,6 +131,11 @@ Op dezelfde manier kunt u een van de volgende opdrachten gebruiken om Adobe Camp
 * Als u toegang hebt tot de hoofdmap of beheerder:
 
    * In Linux: /etc/init.d/nlserver6 start
+
+      >[!NOTE]
+      >
+      >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl start nlserver**
+
    * In Windows: netwerkbeginserver6
 
 * Anders in het Adobe Campaign-account: **nlserver watchdog -svc -noconsole**
