@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -392,7 +392,7 @@ Wanneer een vraag wordt geconstrueerd, worden de &quot;gebonden&quot;waarden ver
 
 Als u wilt voorkomen dat een parameter wordt gebonden, moet het kenmerk &quot;noSqlBind&quot; worden gevuld met de waarde &quot;true&quot;.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Als de vraag &quot;orde-door&quot;of &quot;groep-door&quot;instructies omvat, zullen de gegevensbestandmotoren niet waarden kunnen &quot;binden&quot;. U moet het @noSqlBind= &quot;waar&quot;attribuut op &quot;selecteren&quot;en/of &quot;waar&quot;instructies van de vraag plaatsen.
 
