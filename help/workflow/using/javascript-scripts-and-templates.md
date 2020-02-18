@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 463d2d60e8776fc0414fdb8c91dbf257e119d823
+source-git-commit: 80b500653f5cfe216b32db045974b18d85838d9a
 
 ---
 
@@ -74,11 +74,11 @@ De variabelen zijn de vrije eigenschappen van de objecten **[!UICONTROL instance
 
 ### Instantievariabelen {#instance-variables}
 
-De instantievariabelen (**[!UICONTROL instance.vars.xxx]**) zijn vergelijkbaar met algemene variabelen: Ze worden door alle activiteiten gedeeld.
+De instantievariabelen (**[!UICONTROL instance.vars.xxx]**) zijn vergelijkbaar met algemene variabelen.  Ze worden door alle activiteiten gedeeld.
 
 ### Taakvariabelen {#task-variables}
 
-De taakvariabelen (**[!UICONTROL task.vars.xxx]**) zijn vergelijkbaar met lokale variabelen: Ze worden alleen gebruikt door de huidige taak. Deze variabelen worden gebruikt door permanente activiteiten om gegevens te bewaren en worden soms gebruikt om gegevens tussen de verschillende manuscripten van een zelfde activiteit uit te wisselen.
+De taakvariabelen (**[!UICONTROL task.vars.xxx]**) zijn vergelijkbaar met lokale variabelen.  Ze worden alleen gebruikt door de huidige taak. Deze variabelen worden gebruikt door permanente activiteiten om gegevens te bewaren en worden soms gebruikt om gegevens tussen de verschillende manuscripten van een zelfde activiteit uit te wisselen.
 
 ### Gebeurtenisvariabelen {#event-variables}
 
