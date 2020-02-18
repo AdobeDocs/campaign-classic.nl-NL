@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -38,7 +38,7 @@ Adobe Campagne gebruikt een globale variabele &quot;Nms_DefaultRcpSchema&quot;aa
 
 Als u een nieuw formulier maakt, kunt u de gegevens van de externe tabel met ontvangers weergeven en bewerken.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >De naam van het formulier moet gelijk zijn aan de naam van het schema waarop het betrekking heeft.
 
