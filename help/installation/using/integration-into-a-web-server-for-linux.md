@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: abddb3cdfcee9e41cab2e7e662d5bfd5d53d6f7e
+source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
 
 ---
 
@@ -64,12 +64,6 @@ Voer de volgende stappen uit:
    ```
 
 1. Maak het bestand **nlsrv.load** in **/etc/apache2/mods-available** en voeg de volgende inhoud in:
-
-   In Debian 7:
-
-   ```
-   LoadModule requesthandler22_module /usr/local/[INSTALL]/nl6/lib/libnlsrvmod.so
-   ```
 
    In het Debian 8:
 
@@ -147,63 +141,47 @@ Voer de volgende stappen uit:
    userdir
    ```
 
-Opmerkingen maken over de functies die aan gedeactiveerde modules zijn gekoppeld:
-
-    &quot;
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    DirectoryIndexIndexOptionsAddIconByEncodingAddIconByTypeAddIconDefaultIconNameHeaderNameIndexIgnoreLanguagePriorityForceLanguagePriority
-    &quot;
-
-1. Maak een specifiek configuratiebestand voor Adobe Campagne in de `/etc/httpd/conf.d/` map.
-
-Bijvoorbeeld `CampaignApache.conf`.
-
-1. Voeg voor **RHEL6** de volgende instructies toe aan het bestand:
+   Opmerkingen maken over de functies die aan gedeactiveerde modules zijn gekoppeld:
 
    ```
-   LoadModule requesthandler22_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
+   DirectoryIndex
+   IndexOptions    
+   AddIconByEncoding    
+   AddIconByType    
+   AddIcon    
+   DefaultIcon    
+   ReadmeName    
+   HeaderName    
+   IndexIgnore    
+   LanguagePriority    
+   ForceLanguagePriority
+   ```
+
+1. Maak een specifiek configuratiebestand voor Adobe Campagne in de `/etc/httpd/conf.d/` map. Bijvoorbeeld `CampaignApache.conf`
+
+1. Voeg voor **RHEL7** de volgende instructies toe aan het bestand:
+
+   ```
+   LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
    Include /usr/local/neolane/nl6/tomcat-7/conf/apache_neolane.conf
    ```
 
-Voeg voor **RHEL7** de volgende instructies toe aan het bestand:
+1. Voor **RHEL7**:
 
-LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.soInclude /usr/local/neolane/nl6/tomcat-7/conf/apache_neolane.conf
+   Voeg het `/etc/systemd/system/httpd.service` bestand toe met de volgende inhoud:
 
-1. Voor **RHEL6**:
+   ```
+   .include /usr/lib/systemd/system/httpd.service
+   
+   [Service]
+   Environment=USERPATH=/usr/local/neolane LD_LIBRARY_PATH=/usr/local/neolane/nl6/lib
+   ```
 
-Voeg de volgende instructies in het `/etc/sysconfig/httpd` bestand toe:
+   Werk de module bij die door systeem wordt gebruikt:
 
-    &quot;
-    #Neolane/Adobe Campaign
-    Configuration if [ &quot;$LD_LIBRARY_PATH&quot; != &quot;&quot; ]; en exporteer vervolgens LD_LIBRARY_PATH=&quot;/usr/local/neolane/nl6/lib:$LD_LIBRARY_PATH&quot;; else export LD_LIBRARY_PATH=/usr/local/neolane/nl6/lib;
-    fiexport USERPATH=/usr/local/neolane
-    &quot;
-
-Voor **RHEL7**:
-
-Voeg het `/etc/systemd/system/httpd.service` bestand toe met de volgende inhoud:
-
-    &quot;
-    .include /usr/lib/systemd/system/httpd.service
-    
-    [Service]
-    Environment=USERPATH=/usr/local/neolane LD_LIBRARY_PATH=/usr/local/neolane/nl6/lib
-    &quot;
-
-Werk de module bij die door systeem wordt gebruikt:
-
-    &quot;
-    systemctl daemon-reload
-    &quot;
+   ```
+   systemctl daemon-reload
+   ```
 
 1. Voeg vervolgens Adobe Campagne-operatoren toe aan de groep Apache-operatoren en vice versa door de opdracht uit te voeren:
 
@@ -211,23 +189,17 @@ Werk de module bij die door systeem wordt gebruikt:
    usermod -a -G neolane apache
    usermod -a -G apache neolane
    ```
-Welke groepsnamen moeten worden gebruikt, is afhankelijk van de manier waarop Apache is geconfigureerd.
+
+   Welke groepsnamen moeten worden gebruikt, is afhankelijk van de manier waarop Apache is geconfigureerd.
 
 1. Voer Apache en de Adobe Campaign-server uit.
 
-Voor RHEL6:
+   Voor RHEL7:
 
-    &quot;
-    /etc/init.d/httpd start
-    /etc/init.d/nlserver start
-    &quot;
-
-Voor RHEL7:
-
-    &quot;
-    systemctl start
-    httpdsystemctl start nlserver
-    &quot;
+   ```
+   systemctl start httpd
+   systemctl start nlserver
+   ```
 
 ## De server van het Web lanceren en de configuratie testen{#launching-the-web-server-and-testing-the-configuration}
 
@@ -277,4 +249,4 @@ De volgende informatie wordt weergegeven:
 Connection closed by foreign host.
 ````
 
-U kunt de URL ook aanvragen [`http://<computer>`](http://machine/r/test) vanuit een webbrowser.
+U kunt de URL ook aanvragen [`https://<computer>`](https://machine/r/test) vanuit een webbrowser.
