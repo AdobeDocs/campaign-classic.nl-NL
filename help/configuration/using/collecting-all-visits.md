@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -28,7 +28,7 @@ U kunt uw platform echter zodanig configureren dat alle bezoeken aan pagina&#39;
 
 Een gebruiker die aan het platform wordt bekend is een ontvanger die reeds door een levering is gericht en die in een ontvangen bericht minstens eens heeft geklikt. Er wordt een permanent cookie gebruikt om deze ontvanger te identificeren.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Het Adobe Campagne-platform is niet bedoeld om als hulpmiddel voor het bijhouden van websites te worden gebruikt buiten de context van het bezoeken van de site na een klik in een bericht. Wanneer deze optie is ingeschakeld, kan dit leiden tot een zeer hoog gebruik van bronnen op de computers die uw servers hosten (omleiding, toepassing en database). U wordt aangeraden ervoor te zorgen dat uw hardwarearchitectuur dit laden ondersteunt en te voorkomen dat webtrackingtags worden geplaatst op de meest bezochte pagina&#39;s, zoals de homepage.
 
