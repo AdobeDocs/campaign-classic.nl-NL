@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -28,7 +28,7 @@ De toepassingsserver van de Campagne van Adobe werd ontworpen voor openheid en g
 
 Adobe Campagne-API&#39;s worden gebruikt in JavaScript binnen de toepassing en in SOAP buiten de toepassing. Ze vormen een bibliotheek van algemene functies die kunnen worden verrijkt. Zie [SOAP-methoden](../../configuration/using/implementing-soap-methods.md)implementeren voor meer informatie.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Het aantal geoorloofde Vraag van de Motor varieert per dag op uw vergunningscontract. Raadpleeg [deze pagina](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html)voor meer informatie.\
 >In [deze specifieke documentatie](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)vindt u een lijst met alle API&#39;s, inclusief de volledige beschrijving ervan.
@@ -154,7 +154,7 @@ Het `<soap-env:fault>` element in het lichaam van het bericht van de ZEEP wordt 
 
 Het succes of de mislukking van de de dienstaanroeping wordt geïdentificeerd wanneer het `<faultcode>` element wordt geverifieerd.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Alle Adobe Campagne-webservices verwerken fouten. Daarom wordt sterk geadviseerd om elke vraag te testen om teruggekeerde fouten te behandelen.
 
