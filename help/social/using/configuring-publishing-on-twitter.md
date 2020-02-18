@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -90,7 +90,7 @@ Voor deze stap hebt u gelijktijdig toegang tot uw Adobe Campagne-console en een 
 
    ![](assets/social_twitter_service_009.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >De naam **[!UICONTROL Internal name]** van de service moet gelijk zijn aan de naam van de Twitter-account. Pas de volgende stappen hieronder toe om ervoor te zorgen dat er geen invoerfouten zijn.
 
@@ -124,7 +124,7 @@ De **[!UICONTROL Twitter account Synchronization]** workflow synchroniseert Twit
 
 ## Twitter-accounts synchroniseren {#synchronizing-twitter-accounts}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Als u wilt dat de lijst met Twitter-abonnees door de workflow wordt hersteld, moet u het **[!UICONTROL Twitter account synchronization]** vakje inschakelen in de sectie Bewerken van de service die aan de account is gekoppeld. Raadpleeg voor meer informatie het [delegeren van schrijftoegang tot Adobe Campagne](#delegating-write-access-to-adobe-campaign).
 
