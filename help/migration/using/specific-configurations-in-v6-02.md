@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -46,7 +46,7 @@ Als u deze webtoepassingen hebt gewijzigd en deze wilt blijven gebruiken in v7, 
 
 ## Gebruikersvriendelijkheid: Homepage en navigatie {#user-friendliness--home-page-and-navigation}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Als u v6.02-webtoepassingen van het overzichtstype wilt blijven gebruiken, moet u de optie **allowSQLInjection** activeren in uw verschillende beveiligingszones voordat de upgrade wordt uitgevoerd. Raadpleeg [webtoepassingen](#web-applications).
 
