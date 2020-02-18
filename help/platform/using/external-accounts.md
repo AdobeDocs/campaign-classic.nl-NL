@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6ae45cbd87fc0152fc654202e03501fc8d2abd06
+source-git-commit: e7df1f73dd454f826096ce4d5fe430e10fe407ad
 
 ---
 
@@ -113,8 +113,8 @@ De volgende kanalen kunnen worden gevormd:
 * [Bureau](../../delivery/using/other-channels.md)
 * [Facebook](../../social/using/publishing-on-facebook-walls.md#delegating-write-access-to-adobe-campaign)
 * [Twitter](../../social/using/configuring-publishing-on-twitter.md)
-* [iOS-kanaal](../../delivery/using/setting-up-mobile-app-channel.md#ios-connectors)
-* [Android-kanaal](../../delivery/using/setting-up-mobile-app-channel.md#android-connectors)
+* [iOS-kanaal](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-ios)
+* [Android-kanaal](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-android)
 
 ## Externe FTP-account {#ftp-external-account}
 
@@ -154,10 +154,9 @@ De Campagne van Adobe verstrekt verscheidene schakelaars die u toestaan om met e
 
 De volgende verbindingstypen kunnen worden geconfigureerd:
 
-* Oracle. Raadpleeg deze [pagina](../../platform/using/accessing-an-external-database.md#configure-access-to-oracle)voor meer informatie.
-* MySQL. Raadpleeg deze [pagina](../../platform/using/accessing-an-external-database.md#configure-access-to-mysql)om toegang tot MYSQL te configureren.
-* Netezza. Raadpleeg deze [pagina](../../platform/using/accessing-an-external-database.md#configure-access-to-netezza)voor meer informatie.
-* SAP HANA. Raadpleeg deze [pagina](../../platform/using/accessing-an-external-database.md#configure-access-to-sap-hanaa)voor meer informatie.
+* Oracle. Raadpleeg deze [pagina](../../platform/using/specific-configuration-database.md#configure-access-to-oracle)voor meer informatie.
+* Netezza. Raadpleeg deze [pagina](../../platform/using/specific-configuration-database.md#configure-access-to-netezza)voor meer informatie.
+* SAP HANA. Raadpleeg deze [pagina](../../platform/using/specific-configuration-database.md#configure-access-to-sap-hana)voor meer informatie.
 * InfiniDB
 * Microsoft SQL-server
 * AsterData
@@ -168,9 +167,33 @@ De volgende verbindingstypen kunnen worden geconfigureerd:
 * ODBC (Sybase ASE, Sybase IQ)
 * HTTP-relais naar externe database
 
+### Sneeuwvlokken externe account {#snowflake-external-account}
+
+Met de externe **Snowflake** -account kunt u uw Campagne-instantie verbinden met uw externe Snowflake-database. Voor meer informatie over hoe te om Klassiek van de Campagne met Sneeuwvlok te vormen, verwijs naar deze [pagina](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
+
+Als u deze externe account wilt configureren voor gebruik met Adobe Campaign, moet u de volgende gegevens opgeven:
+
+* **[!UICONTROL Server]**
+
+       URL van de Snowflake-server.
+   
+* **[!UICONTROL Account]**
+
+       Naam van de gebruiker.
+   
+* **[!UICONTROL Password]**
+
+       Wachtwoord voor gebruikersaccount.
+   
+* **[!UICONTROL Database]**
+
+       Naam van de database.
+   
+![](assets/snowflake.png)
+
 ### Externe rekening met teragegevens {#teradata-external-account}
 
-Met de externe **account van de Teradata** kunt u uw Campagne-instantie verbinden met uw externe database van Teradata. Raadpleeg deze [pagina](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html) of deze [sectie](../../platform/using/accessing-an-external-database.md#configure-access-to-teradata)voor meer informatie over het configureren van Campagne Classic met Teradata.
+Met de externe **account van de Teradata** kunt u uw Campagne-instantie verbinden met uw externe database van Teradata. Raadpleeg deze [pagina](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html) of deze [sectie](../../platform/using/specific-configuration-database.md#configure-access-to-teradata)voor meer informatie over het configureren van Campagne Classic met Teradata.
 
 ![](assets/ext_account_19.png)
 
@@ -198,11 +221,11 @@ Als u deze externe account wilt configureren voor gebruik met Adobe Campaign, mo
 
 * **[!UICONTROL Options]**
 
-   Opties die via metagegevens moeten worden doorgegeven
+   Opties die door Teradata moeten worden doorgegeven.
 
 * **[!UICONTROL Timezone]**
 
-   Tijdzone ingesteld in metagegevens
+   Tijdzone ingesteld in metagegevens.
 
 ![](assets/ext_account_20.png)
 
@@ -244,7 +267,7 @@ Voor elke Facebook-toepassing moet u een **[!UICONTROL Facebook Connect]** type 
 
 * **[!UICONTROL Application secret]**
 
-   Toepassingsgeheim van uw Facebook-toepassing
+   App-geheim van uw Facebook-toepassing.
 
 Als u de host kiest in deze instantiemodus, moet de URL van het beveiligde canvas worden geplakt in het veld **Facebook-webgames (https)** op Facebook
 
@@ -290,11 +313,11 @@ Als u met een Adobe-id verbinding wilt maken met de Adobe Campaign-console, moet
 
 * **[!UICONTROL IMS client secret]**
 
-   Credentials van uw IMS-clientgeheim
+   Credentials van het geheim van de IMS-client.
 
 * **[!UICONTROL Callback server]**
 
-   Toegang tot URL van uw Adobe Campaign-exemplaar
+   Open de URL van uw Adobe Campagne-instantie.
 
 * **[!UICONTROL IMS organization ID]**
 
@@ -408,7 +431,7 @@ Met de **[!UICONTROL Azure]** externe account wordt een verbinding met een gedee
 
 ## Externe rekening {#hadoop-external-account}
 
-Met de **[!UICONTROL Hadoop]** externe account wordt een verbinding met een gedeelde externe database mogelijk gemaakt, zolang deze verbinding actief is, kunt u de database openen via Adobe Campaign. Voor meer informatie over hoe te om toegang tot Hadoop te vormen, verwijs naar deze [sectie](../../platform/using/accessing-an-external-database.md#configure-access-to-hadoop).
+Met de **[!UICONTROL Hadoop]** externe account wordt een verbinding met een gedeelde externe database mogelijk gemaakt, zolang deze verbinding actief is, kunt u de database openen via Adobe Campaign. Voor meer informatie over hoe te om toegang tot Hadoop te vormen, verwijs naar deze [sectie](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop).
 
 ![](assets/ext_account_16.png)
 
