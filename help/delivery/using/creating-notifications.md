@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6d503847787f2a8e0c4efdef0fa2f5769ea6035b
+source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
 
 ---
 
@@ -59,7 +59,7 @@ Begin door een nieuwe levering te maken.
    >De modus **Silent Push** is beschikbaar in iOS 7. Hierdoor kan een &quot;stille&quot; melding naar een mobiele toepassing worden verzonden. De gebruiker wordt niet op de hoogte gebracht van de aankomst van de melding. Deze wordt rechtstreeks naar de toepassing overgedragen.
 
 1. Voer in het **[!UICONTROL Title]** veld het label in van de titel die u in het bericht wilt weergeven. Deze wordt alleen weergegeven in de lijst met meldingen die beschikbaar zijn in het meldingscentrum. In dit veld kunt u de waarde definiëren van de parameter **title** van de payload van de iOS-melding.
-1. Als u de HTTP/2-connector gebruikt, kunt u een ondertitel (waarde van de **ondertitelingsparameter** van de iOS-berichtlading) toevoegen. Raadpleeg de sectie [Connectors](../../delivery/using/setting-up-mobile-app-channel.md#connectors) .
+1. Als u de HTTP/2-connector gebruikt, kunt u een ondertitel (waarde van de **ondertitelingsparameter** van de iOS-berichtlading) toevoegen. Raadpleeg de sectie Mobiele toepassing [configureren in de Adobe-campagne](../../delivery/using/configuring-the-mobile-application.md) .
 1. Voer vervolgens de code **[!UICONTROL Message]** en de **[!UICONTROL Value of the badge]** code in op basis van het gekozen berichttype.
 
    ![](assets/nmac_delivery_ios_5.png)
@@ -77,13 +77,13 @@ Begin door een nieuwe levering te maken.
 
    >[!NOTE]
    >
-   >Geluiden moeten in de toepassing worden opgenomen en worden gedefinieerd wanneer de service wordt gemaakt. Zie [Toepassingsgeluiden](../../delivery/using/setting-up-mobile-app-channel.md#application-sounds).
+   >Geluiden moeten in de toepassing worden opgenomen en worden gedefinieerd wanneer de service wordt gemaakt. Zie Externe account [van iOS](../../delivery/using/configuring-the-mobile-application.md#configuring-external-account-ios)configureren.
 
 1. Voer in het **[!UICONTROL Application variables]** veld de waarde van elke variabele in. Met toepassingsvariabelen kunt u berichtgedrag definiëren: U kunt bijvoorbeeld een specifiek toepassingsscherm configureren dat moet worden weergegeven wanneer de gebruiker het bericht activeert.
 
    >[!NOTE]
    >
-   >Toepassingsvariabelen moeten worden gedefinieerd in de code van de mobiele toepassing en moeten worden ingevoerd tijdens het maken van de service. Raadpleeg voor meer informatie: [Algemene informatie](../../delivery/using/setting-up-mobile-app-channel.md#general-information).
+   >Toepassingsvariabelen moeten worden gedefinieerd in de code van de mobiele toepassing en moeten worden ingevoerd tijdens het maken van de service. Raadpleeg voor meer informatie: Een mobiele toepassing [configureren in Adobe Campagne](../../delivery/using/configuring-the-mobile-application.md).
 
 1. Zodra het bericht wordt gevormd, klik het **[!UICONTROL Preview]** lusje aan voorproef het bericht.
 
@@ -129,7 +129,7 @@ Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Ra
 
    >[!NOTE]
    >
-   >Toepassingsvariabelen moeten worden gedefinieerd in de code van de mobiele toepassing en moeten worden ingevoerd tijdens het maken van de service. Raadpleeg voor meer informatie: [Algemene informatie](../../delivery/using/setting-up-mobile-app-channel.md#general-information).
+   >Toepassingsvariabelen moeten worden gedefinieerd in de code van de mobiele toepassing en moeten worden ingevoerd tijdens het maken van de service. Raadpleeg voor meer informatie: Een mobiele toepassing [configureren in Adobe Campagne](../../delivery/using/configuring-the-mobile-application.md).
 
 1. Zodra het bericht wordt gevormd, klik het **[!UICONTROL Preview]** lusje aan voorproef het bericht.
 
