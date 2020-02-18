@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62553344f557206443fa2de0499df42d8b771e21
+source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
 
 ---
 
@@ -30,7 +30,7 @@ Deze databases worden RBL&#39;s (Real-Time Blackgat Lists) genoemd en ze worden 
 * Op senderdomein: maakt een lijst van afzenderdomeinen (volledig domein van het stuiterende postadres) die spam verzenden of verkeerd gevormd.
 * Op webdomein: geeft een lijst weer van de domeinen (domeinen op hoog niveau zoals geregistreerd met de registrars) die in URLs van de verbindingen en beelden worden gevonden bevat in spaminhoud. In de Campagne van Adobe, is het domein dat in overweging moet worden genomen over het algemeen het adres dat voor het volgen wordt gebruikt.
 
-Hieronder volgt een lijst van de meest gebruikte RBL&#39;s. Voor een uitgebreidere lijst kunt u naar [https://www.declude.com/Articles.asp?ID=97](https://www.declude.com/Articles.asp?ID=97) of [https://www.dnsstuff.com/](https://www.dnsstuff.com/) (&quot;IP Tools&quot; sectie, &quot;Spam Database Lookup&quot; formulier) verwijzen.
+Hieronder volgt een lijst van de meest gebruikte RBL&#39;s. Voor een uitgebreidere lijst kunt u naar [https://www.dnsstuff.com/](https://tools.dnsstuff.com/) (&quot;Opzoeken via zwarte lijst van spam&quot;-formulier) gaan.
 
 * **Spamhaus**
 
