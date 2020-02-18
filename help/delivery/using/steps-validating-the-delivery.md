@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -82,7 +82,7 @@ Op dit tabblad hebt u toegang tot de volgende opties:
 
 * **[!UICONTROL Label and code of the delivery]** : de opties voor deze sectie van het scherm worden gebruikt om de waarden van deze velden tijdens de fase van de leveringsanalyse te berekenen. In het **[!UICONTROL Calculate the execution folder during the delivery analysis]** veld wordt de naam berekend van de map die deze leveringsactie tijdens de analysefase zal bevatten.
 * **[!UICONTROL Approval mode]** : in dit veld kunt u het type goedkeuring voor levering selecteren. De goedkeuringsmodi worden weergegeven in [validatieproces met typologieën](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
-* **[!UICONTROL Prepare the personalization data with a workflow]** : met deze optie kunt u de aanpassingsgegevens in uw levering voorbereiden in een automatische workflow. Het staat toe om de prestaties van de leveringsanalyse hoogst te verbeteren wanneer een hoop gegevens worden verwerkt, vooral als de verpersoonlijkingsgegevens uit een externe lijst door FDA komen. Raadpleeg de sectie [Access an external database (FDA)](../../platform/using/accessing-an-external-database.md#optimizing-email-personalization-with-external-data) .
+* **[!UICONTROL Prepare the personalization data with a workflow]** : met deze optie kunt u de aanpassingsgegevens in uw levering voorbereiden in een automatische workflow. Het staat toe om de prestaties van de leveringsanalyse hoogst te verbeteren wanneer een hoop gegevens worden verwerkt, vooral als de verpersoonlijkingsgegevens uit een externe lijst door FDA komen. Raadpleeg de sectie [Access an external database (FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data) .
 * **[!UICONTROL Start job in a detached process]** : Met deze optie kunt u de afleveringsanalyse in een afzonderlijk proces starten. De analysefunctie gebruikt standaard het serverproces voor de Adobe Campagne-toepassing (webserver). Als u deze optie selecteert, zorgt u ervoor dat de analyse ook wordt voltooid wanneer de toepassingsserver uitvalt.
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : deze optie voegt de SQL vraaglogboeken aan het leveringsdagboek tijdens de analysefase toe.
 * **[!UICONTROL Ignore personalization scripts during sending]** : Met deze optie kunt u de interpretatie van JavaScript-instructies in HTML-inhoud omzeilen. Ze worden op dezelfde manier weergegeven als in de geleverde inhoud. Deze richtlijnen worden geïntroduceerd met de tag **&lt;%=** ).
