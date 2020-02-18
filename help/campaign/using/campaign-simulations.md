@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -78,11 +78,11 @@ Voer de volgende stappen uit om een simulatie te maken:
 
    ![](assets/simu_campaign_opti_edit_scope_save.png)
 
-   Indien nodig kunt u een dynamische voorwaarde gebruiken via de **[!UICONTROL Edit the dynamic condition...]** koppeling
+   Indien nodig kunt u een dynamische voorwaarde gebruiken via de **[!UICONTROL Edit the dynamic condition...]** koppeling.
 
    Klik **[!UICONTROL Save]** om deze configuratie goed te keuren.
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >Alleen leveringen waarvan het doel is berekend, worden in aanmerking genomen bij de berekening van de simulaties (statussen: **Doel (klaar** of **klaar voor levering**).
 
@@ -215,13 +215,13 @@ In het onderstaande voorbeeld willen we een extra rapportas maken op basis van d
 
    * **[!UICONTROL Generate target overlap statistics]** laat u alle overlappende statistieken in het simulatierapport terugkrijgen. Overlappingen zijn ontvangers die zijn aangewezen in ten minste twee leveringen binnen één simulatie.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Als u deze optie selecteert, neemt de uitvoeringstijd van de simulatie aanzienlijk toe.
 
    * **[!UICONTROL Keep the simulation work table]** Hiermee kunt u simulatietraces behouden.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Voor het automatisch opslaan van deze tabellen is een aanzienlijke opslagcapaciteit vereist: zorg ervoor dat de database groot genoeg is.
 
