@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8ad1a83d40f5a841b01aaeb17fe271b44f2480dd
+source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
 
 ---
 
@@ -53,15 +53,13 @@ Als u Adobe Campaign in Linux wilt installeren, moet u over de vereiste biblioth
 
 * U moet **versie 0.9.8** of **1.0** van OpenSSL hebben.
 
-   Voor RHEL 7- en CentOS 6-distributies is versie 1.0 van OpenSSL vereist.
+   Voor RHEL 7-distributies is versie 1.0 van OpenSSL vereist.
 
 * Als u Adobe Campaign wilt gebruiken, moet de **libicu** -bibliotheek zijn geïnstalleerd.
 
    De volgende versies van **libicu** worden ondersteund (32-bits of 64-bits):
 
-   * RHEL 6, SLES, CentOS 6: libicu4.2
    * RHEL 7, CentOS 7: libicu50
-   * Debian 7: libicu48
    * Debian 8: libicu52
    * Debian 9: libicu57
    Als u Adobe Campaign wilt gebruiken, moet de bibliotheek libc-ares zijn geïnstalleerd. Voer bij RHEL/CentOS de volgende opdracht uit:
