@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -38,7 +38,7 @@ Er zijn drie mogelijke invoegmodi:
 
    Klik hiertoe op de **[!UICONTROL Import seed templates...]** koppeling en selecteer de map met de adressjablonen. Voor meer op dit, verwijs naar het [Creëren van zaadadresmalplaatjes](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates).
 
-   Indien nodig kunt u dubbelklikken op een koppeling of op de **[!UICONTROL Detail...]** knop om de inhoud van elk adres aan te passen.
+   Indien nodig, zodra zij worden toegevoegd, kunt u hen tweemaal klikken of de **[!UICONTROL Detail...]** knoop klikken om de inhoud van elk adres aan te passen.
 
 1. Creërend een voorwaarde om dynamisch de controleadressen te selecteren die moeten worden opgenomen.
 
