@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -53,7 +53,7 @@ U kunt de waarden van deze parameters tonen door de volgende logboeklijst (van e
 
 In de serverconfiguratie, kunt u het maximumaantal karakters bepalen waarmee voor uw Web het volgen parameters moet worden rekening gehouden.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Als u het maximumaantal tekens verhoogt waarmee rekening moet worden gehouden, kan dit van invloed zijn op de webprestaties van uw platform.
 
@@ -76,15 +76,25 @@ Wanneer de configuratie is gewijzigd, moet u:
 
 * Stop de webserver die als host fungeert voor de omleidingsmodule (Apache, IIS, enz.),
 * Stop de Adobe Campaign-server: **netstop nlserver6** in Windows, **/etc/init.d/nlserver6 stop** in Linux;
+
+   >[!NOTE]
+   >
+   >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl stop nlserver**
+
 * Verwijder in Linux de gedeelde geheugensegmenten met behulp van de **IPcrm** -opdracht.
 * Start de Adobe Campagne-server opnieuw: **Net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux,
+
+   >[!NOTE]
+   >
+   >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl start nlserver**
+
 * Start de webserver opnieuw.
 
 **Voorbeeld**: rekening houdend met de configuratie onder Linux.
 
 ```
-adobe@selma:~$ /etc/init.d/nlserver6 stop
-adobe@selma:~$ /etc/init.d/apache stop
+adobe@selma:~$ systemctl stop nlserver
+adobe@selma:~$ systemctl stop apache2
 adobe@selma:~$ ipcs shm
 
 ------ Shared Memory Segments --------
@@ -100,8 +110,8 @@ key        msqid      owner      perms      used-bytes   messages
 
 adobe@selma:~$ ipcrm shm 2097153                             
 1 resource(s) deleted
-adobe@selma:~$ /etc/init.d/nlserver6 start
-adobe@selma:~$ /etc/init.d/apache start
+adobe@selma:~$ systemctl start nlserver
+adobe@selma:~$ systemctl start apache2
 ```
 
 >[!NOTE]
