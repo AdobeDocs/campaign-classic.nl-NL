@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
 
 ---
 
@@ -26,9 +26,9 @@ In deze sectie worden de stappen beschreven die moeten worden uitgevoerd in Adob
 
 U moet de volgende handelingen vooraf uitvoeren in Adobe Target:
 
-* Maak een of meer [omleidingsvoorstellen](https://marketing.adobe.com/resources/help/en_US/tnt/help/t_Creating_a_Redirect_Offer.html), waarin u de URL moet opgeven van de afbeelding die u wilt gebruiken.
+* Maak een of meer [omleidingsvoorstellen](https://docs.adobe.com/help/en/target/using/experiences/offers/offer-redirect.html), waarin u de URL moet opgeven van de afbeelding die u wilt gebruiken.
 * Maak een of meer [soorten publiek](https://marketing.adobe.com/resources/help/en_US/target/target/t_create-audience.html)om het doel van uw activiteit te definiëren.
-* Maak een [op formulieren gebaseerde ervaringscomposer](https://marketing.adobe.com/resources/help/en_US/tnt/help/t_Creating_an_A_B_Test.html) -activiteit, waarin u een rawbox moet selecteren en verschillende ervaringen moet opgeven, afhankelijk van het aantal nieuwe richtingsaanbiedingen. Voor elke ervaring moet u een van de nieuwe richtingsvoorstellen selecteren.
+* Maak een [op formulieren gebaseerde ervaringscomposer](https://docs.adobe.com/content/help/en/target/using/activities/abtest/create/test-create-ab.html) -activiteit, waarin u een rawbox moet selecteren en verschillende ervaringen moet opgeven, afhankelijk van het aantal nieuwe richtingsaanbiedingen. Voor elke ervaring moet u een van de nieuwe richtingsvoorstellen selecteren.
 
    Om deze ervaringen op te geven, kunt u segmenten maken met behulp van informatie uit Adobe Campaign. Als u gegevens uit Adobe Campaign wilt gebruiken in de selectieregels van de aanbieding, moet u de gegevens opgeven in het keuzemenu van Adobe Target.
 
