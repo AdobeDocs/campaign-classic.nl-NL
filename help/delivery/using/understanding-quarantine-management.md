@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 16e7266a101b4abea3271c32fcc403e7d7fbaa2d
 
 ---
 
@@ -116,15 +116,23 @@ Adobe Campagne beheert quarantaine volgens het type van leveringsmislukking en d
 
 * **Genegeerde fout**: genegeerde fouten sturen geen adres naar quarantaine.
 * **Harde fout**: het desbetreffende e-mailadres wordt onmiddellijk naar quarantaine verzonden.
-* **Zachte fout**: de zachte fouten verzenden onmiddellijk geen adres naar quarantaine, maar zij verhogen een foutenteller. Wanneer de foutenteller de grensdrempel bereikt, gaat het adres in quarantaine. In de standaardconfiguratie is de drempel ingesteld op vijf fouten, waarbij twee fouten significant zijn als ze zich op een afstand van minstens 24 uur bevinden. Het adres wordt in quarantaine geplaatst bij de zesde fout. De drempelwaarde voor de foutteller kan worden gewijzigd. Raadpleeg voor meer informatie [Retries na tijdelijke mislukking](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)van levering.
-
-   Wanneer een levering succesvol na opnieuw probeert, wordt de foutenteller van het adres dat voorafgaand aan die quarantined was opnieuw geïnitialiseerd. De adresstatus verandert in **Geldig** en wordt verwijderd uit de lijst van quarantines na twee dagen door de **Opschoonworkflow** van het Gegevensbestand.
+* **Zachte fout**: de zachte fouten verzenden onmiddellijk geen adres naar quarantaine, maar zij verhogen een foutenteller. Zie [Foutenbeheer](#soft-error-management)voor meer informatie.
 
 Als een gebruiker een e-mailbericht kwalificeert als een spam (**feedbacklus**), wordt het bericht automatisch doorgestuurd naar een technische mailbox die door Adobe wordt beheerd. Het e-mailadres van de gebruiker wordt vervolgens automatisch naar quarantaine verzonden.
 
 In de lijst van quarantined adressen, wijst het **[!UICONTROL Error reason]** gebied erop waarom het geselecteerde adres in quarantaine werd geplaatst. Quarantaine in Adobe Campaign is hoofdlettergevoelig. Importeer e-mailadressen in kleine letters, zodat ze later niet opnieuw worden toegewezen.
 
 ![](assets/tech_quarant_error_reasons.png)
+
+### Beheer van zachte fouten {#soft-error-management}
+
+In tegenstelling tot harde fouten, verzenden de zachte fouten onmiddellijk geen adres naar quarantaine, maar zij verhogen in plaats daarvan een foutenteller.
+
+* Wanneer de foutenteller de grensdrempel bereikt, dan gaat het adres in quarantaine.
+* In de standaardconfiguratie is de drempel ingesteld op vijf fouten, waarbij twee fouten significant zijn als ze zich op een afstand van minstens 24 uur bevinden. Het adres wordt in quarantaine geplaatst bij de zesde fout.
+* De drempelwaarde voor de foutteller kan worden gewijzigd. Raadpleeg voor meer informatie [Retries na tijdelijke mislukking](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)van levering.
+
+De foutenteller wordt opnieuw geïnitialiseerd als de laatste significante fout meer dan 10 dagen geleden voorkwam. De adresstatus verandert dan in **Geldig** en het wordt geschrapt van de lijst van quarantines door het de schoonmaakbeurt **van het** Gegevensbestand werkschema.
 
 ## Push notification quarantines {#push-notification-quarantines}
 
