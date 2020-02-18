@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -103,7 +103,7 @@ Door gebrek, zijn de ingebouwde schema&#39;s slechts toegankelijk met SCHRIJVEN 
 * xtk:tekenreeksen
 * xtk:xslt
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >LEES- en SCHRIJFmachtigingen voor het schema **xtk:sessionInfo** zijn alleen toegankelijk voor de interne account van een Adobe Campagne-instantie.
 
