@@ -5,7 +5,7 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
+source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ---
 
@@ -17,6 +17,7 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
 + Opmerkingen bij de release {#release-notes}
    + [Laatste release](rn/using/latest-release.md)
    + Eerdere versies {#previous-releases}
+      + [Release 19.2](rn/using/release--19-2.md)
       + [Release 19.1](rn/using/release--19-1.md)
       + [Release 18.10](rn/using/release--18-10.md)
       + [Release 18.6](rn/using/release--18-6.md)
@@ -64,9 +65,17 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
       + [Werken met gegevenspakketten](platform/using/working-with-data-packages.md)
       + [Opsommingen beheren](platform/using/managing-enumerations.md)
       + [Externe rekeningen](platform/using/external-accounts.md)
+   + Toegang tot een externe database (FDA){#accessing-external-database}
+      + [FDA](platform/using/about-fda.md)
+      + [Specifieke configuraties per databasetype](platform/using/specific-configuration-database.md)
+      + [Toegangsrechten externe database](platform/using/remote-database-access-rights.md)
+      + [Verbinding maken met de database](platform/using/connecting-to-database.md)
+      + [Het gegevensschema maken](platform/using/creating-data-schema.md)
+      + [Gegevenstoewijzing definiëren](platform/using/defining-data-mapping.md)
+      + [Aanvullende opties](platform/using/additional-options.md)
+      + [Gegevens uit een externe database gebruiken in een workflow](platform/using/data-external-database-workflow.md)
    + Aansluitingen {#connectors}
       + [Informatie over connectors](platform/using/about-connectors.md)
-      + [Een externe database openen](platform/using/accessing-an-external-database.md)
       + [CRM-connectors](platform/using/crm-connectors.md)
       + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
 + Berichten verzenden {#sending-messages}
@@ -92,7 +101,8 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
       + [LINE-kanaal](delivery/using/line-channel.md)
    + Pushmeldingen verzenden {#sending-push-notifications}
       + [Mobiel toepassingskanaal](delivery/using/about-mobile-app-channel.md)
-      + [Mobiel app-kanaal instellen](delivery/using/setting-up-mobile-app-channel.md)
+      + [Campagne SDK integreren in de mobiele toepassing](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
+      + [De mobiele toepassing configureren in Adobe Campagne](delivery/using/configuring-the-mobile-application.md)
       + [Meldingen maken](delivery/using/creating-notifications.md)
       + [Problemen oplossen](delivery/using/troubleshooting.md)
    + Direct mail verzenden {#sending-direct-mail}
@@ -213,7 +223,7 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
    + Populaties analyseren {#analyzing-populations}
       + [Informatie over beschrijvende analyse](reporting/using/about-descriptive-analysis.md)
       + [De wizard voor beschrijvende analyse gebruiken](reporting/using/using-the-descriptive-analysis-wizard.md)
-      + [Een analyserapport gebruiken](reporting/using/processing-a-report.md)
+      + [Een rapport verwerken](reporting/using/processing-a-report.md)
       + [Gebruik hoofdletters](reporting/using/use-cases.md)
    + Nieuwe rapporten maken {#creating-new-reports}
       + [Over het maken van rapporten in Campagne](reporting/using/about-reports-creation-in-campaign.md)
@@ -427,7 +437,7 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
       + [Marketing Resources (MRM)](workflow/using/marketing-resources--mrm-.md)
       + [Sociale marketing](workflow/using/social-marketing.md)
       + [Integratie met Adobe Experience Cloud-oplossingen](workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
-      + [Algemene verordening inzake gegevensbescherming (GDPR)](workflow/using/general-data-protection-regulation--gdpr-.md)
+      + [Privacy Data Protection-verordening](workflow/using/general-data-protection-regulation--gdpr-.md)
       + [Overschakelen naar middelmatige sourcing](workflow/using/transfer-to-mid-sourcing.md)
       + [Middelsourcingsplatform](workflow/using/mid-sourcing-platform.md)
 + Aanbiedingen beheren {#managing-offers}
