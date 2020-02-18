@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -26,9 +26,9 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 De migratiestappen in Linux zijn als volgt:
 
-1. Stopservices: zie [Servicestop](#service-stop);
-1. Sla de database op: zie [Back-up maken van de database en de bestaande installatie](#back-up-the-database-and-the-existing-installation);
-1. Verwijder vorige Adobe Campagne versiepakketten: zie [Installatie van pakketten](#uninstalling-adobe-campaign-previous-version-packages)van eerdere versies voor Adobe Campagne ongedaan maken.
+1. Stopservices: zie [Servicestop](#service-stop).
+1. Sla de database op: zie [Een back-up maken van de database en de bestaande installatie](#back-up-the-database-and-the-existing-installation).
+1. Verwijder vorige Adobe Campagne versiepakketten: Zie [Adobe Campagne-pakketten van vorige versies](#uninstalling-adobe-campaign-previous-version-packages)verwijderen.
 1. Het platform migreren: raadpleeg [Adobe Campagne v7](#deploying-adobe-campaign-v7)implementeren.
 1. Herstart service: verwijzen naar [herstartservices](#re-starting-services).
 
@@ -90,7 +90,7 @@ De procedure is afhankelijk van de vorige versie van uw Adobe-campagne.
    mv nl5 nl5.back
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >We raden u uit voorzorg aan de map **nl5.back** te comprimeren en op een andere beveiligde locatie dan de server op te slaan.
 
@@ -125,7 +125,7 @@ De procedure is afhankelijk van de vorige versie van uw Adobe-campagne.
    mv nl6 nl6.back
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >We raden u uit voorzorg aan de map **nl6.back** te comprimeren en op een andere beveiligde locatie dan de server op te slaan.
 
@@ -160,7 +160,7 @@ De procedure is afhankelijk van de vorige versie van uw Adobe-campagne.
    mv nl6 nl6.back
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >We raden u uit voorzorg aan de map **nl6.back** te comprimeren en op een andere beveiligde locatie dan de server op te slaan.
 
@@ -264,15 +264,15 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
    * In **Debian**:
 
       ```
-      dpkg -i nlserver6-v7-XXXX-linux-2.6-intel.deb
+      dpkg -i nlserver6-XXXX-linux-2.6-intel.deb
       ```
 
    * In **rode hoed**:
 
       ```
-      rpm -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
+      rpm -Uvh nlserver6-XXXX-0.x86_64.rpm
       ```
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >U moet de pakketten met succes installeren alvorens aan de volgende stap te gaan.
 
@@ -308,13 +308,13 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
 1. Meld u aan als **hoofdmap** en bereid de instantie voor met de volgende opdrachten:
 
    ```
-   /etc/init.d/nlserver6-v7 start   
-   Starting nlserver6-v7: [  OK  ]
+   /etc/init.d/nlserver6 start   
+   Starting nlserver6: [  OK  ]
    ```
 
    ```
-   /etc/init.d/nlserver6-v7 stop
-   Stopping nlserver6-v7: [  OK  ]
+   /etc/init.d/nlserver6 stop
+   Stopping nlserver6: [  OK  ]
    ```
 
    >[!NOTE]
@@ -323,7 +323,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
 
 1. Ga naar de back-upmap **nl5.back** en kopieer (overschrijf) de configuratiebestanden en submappen van elke instantie. Meld u aan als **neolaan** en voer de volgende opdracht uit:
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Kopieer voor de eerste onderstaande opdracht het bestand **config-default.xml** niet.
 
@@ -348,7 +348,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
    <trackinglogd autoStart="true"/>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Als de **gevolgde logd** dienst niet op de volgende server is begonnen, zal geen het volgen informatie door:sturen.
 
@@ -365,7 +365,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
    nlserver config -timezone:<time zone> -postupgrade -instance:<instance name>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >U moet specificeren welke tijdzone als verwijzing tijdens postupgrade (gebruikend de **-timezone** optie) te gebruiken. In dit geval gebruiken we de tijdzone Europa/Parijs **-tijdzone: &quot;Europa/Parijs&quot;**.
 
@@ -373,7 +373,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
    >
    >We raden u ten zeerste aan uw basis te upgraden naar &quot;multi timezone&quot;. Raadpleeg de sectie [Tijdzones](../../migration/using/general-configurations.md#time-zones) voor meer informatie over tijdzoneopties.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Start Adobe Campagne-services nog niet: In Apache moeten nog wijzigingen worden aangebracht.
 
@@ -391,15 +391,15 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
    * In **Debian**:
 
       ```
-      dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
+      dpkg -i nlserver6-XXXX-amd64_debX.deb
       ```
 
    * In **rode hoed**:
 
       ```
-      rpm -Uvh nlserver6-v7-XXXX-x86_64_rhX.rpm
+      rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
       ```
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >U moet de pakketten met succes installeren alvorens aan de volgende stap te gaan.
 
@@ -423,7 +423,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
    <trackinglogd autoStart="true"/>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Als de **gevolgde logd** dienst niet op de volgende server is begonnen, zal geen het volgen informatie door:sturen.
 
@@ -469,15 +469,15 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
    * In **Debian**:
 
       ```
-      dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
+      dpkg -i nlserver6-XXXX-amd64_debX.deb
       ```
 
    * In **rode hoed**:
 
       ```
-      rpm -Uvh nlserver6-v7-XXXX-x86_64_rhX.rpm
+      rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
       ```
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >U moet de pakketten met succes installeren alvorens aan de volgende stap te gaan.
 
@@ -563,13 +563,6 @@ In dit stadium moet Apache worden stopgezet. Zie: [Servicestop](#service-stop).
    * In **rode hoed**:
 
       Ga naar de map **/usr/local/apache2/conf** , bewerk het bestand **http.conf** en vervang **nl5** door **nl6** in de volgende regels.
-
-      In **RHEL 6/Debian 7**:
-
-      ```
-      LoadModule requesthandler22_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
-      Include /usr/local/neolane/nl6/tomcat-6/conf/apache_neolane.conf
-      ```
 
       In **RHEL 7/Debian 8**:
 
