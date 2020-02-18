@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -37,7 +37,7 @@ In v6.02 was de modus &quot;multi-time zone&quot; alleen beschikbaar voor Postgr
 
 Als u de TIMESTAMP-modus met TIMEZONE wilt gebruiken, moet u ook de optie **-userTimestamptz:1** toevoegen aan de opdrachtregel na de upgrade.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Als de parameter **-usetimestamptz:1** wordt gebruikt met een incompatibele gegevensbestandmotor, zal uw gegevensbestand worden bedorven en u zult een steun van uw gegevensbestand moeten herstellen en het bevel hierboven opnieuw uitvoeren.
 
@@ -87,7 +87,7 @@ Controleren of beide zijden zich in dezelfde tijdzone bevinden:
 
 ### Beveiligingszones {#security-zones}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om veiligheidsredenen is het Adobe Campagne-platform niet meer standaard toegankelijk: u moet de veiligheidsstreken vormen, en daarom exploitantIP adressen verzamelen.
 
@@ -107,7 +107,7 @@ In v7 moet de **interne** en **beheerder** operatorverbinding met een wachtwoord
 nlserver config -internalpassword
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Het **interne** wachtwoord moet voor alle volgende servers identiek zijn. Zie [deze sectie](../../installation/using/campaign-server-configuration.md#internal-identifier) en [deze sectie](../../platform/using/access-management.md#about-permissions)voor meer informatie.
 
@@ -170,7 +170,7 @@ Nieuwe koppeling met de verbindingspagina:
 /nl/jsp/logon.jsp?login=<trusted login>&action=submit&target=/view/recipientOverview
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Als u een exploitant gebruikt verbonden aan een vertrouwd op IP masker, controleer dat het de minimumrechten heeft en dat het in een veiligheidsstreek op **sessionTokenOnly** wijze is.
 
@@ -178,7 +178,7 @@ Nieuwe koppeling met de verbindingspagina:
 
 Onbekende SQL-functieaanroepen worden niet meer automatisch naar de server verzonden. Momenteel, moeten alle SQL functies aan het schema **xtk:funcList** worden toegevoegd (voor meer op dit, verwijs naar [deze sectie](../../configuration/using/adding-additional-sql-functions.md)). Tijdens het migreren wordt tijdens de postupgrade een optie toegevoegd waarmee u compatibiliteit met oude niet-gedeclareerde SQL-functies kunt behouden. Als u deze functies wilt blijven gebruiken, controleert u of de optie **XtkPassUnknownSQLFunctionsToRDBMS** op het niveau van de **[!UICONTROL Administration > Platform > Options]** node is gedefinieerd.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >We raden u ten zeerste aan deze optie niet te gebruiken vanwege de beveiligingsrisico&#39;s die erin worden geïntroduceerd.
 
@@ -460,7 +460,7 @@ Er zijn drie manieren om een conflict op te lossen:
 * **[!UICONTROL Accept the new version]**: wordt aangeraden als de bronnen van Adobe Campaign niet door de gebruiker zijn gewijzigd.
 * **[!UICONTROL Keep the current version]**: betekent dat de bijwerking wordt afgewezen.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    Als u deze resolutiemodus selecteert, loopt u het risico dat de patches in de nieuwe versie verloren gaan. Daarom wordt ten zeerste aanbevolen deze optie niet te gebruiken of alleen voor professionele marktdeelnemers te reserveren.
 
 Ga als volgt te werk als u het conflict handmatig wilt oplossen:
@@ -506,7 +506,7 @@ $(XTK_INSTALL_DIR)/tomcat-7/lib/el-api.jar
 
 In v7 is de inhoud van het aanbod verplaatst. In v6.02 bevond de inhoud zich in elk weergaveschema (**nms:emailOfferView**). In v7 bevindt de inhoud zich nu in het aanbiedingsschema. Na de postupgrade is de inhoud daarom niet zichtbaar in de interface. Na postupgrade moet u de aanbiedingsinhoud opnieuw maken of een script ontwikkelen dat de inhoud automatisch van het presentatieschema naar het aanbiedingsschema verplaatst.
 
->[!CAUTION]
+>[!IMPORTANT]
 Als sommige leveringen die geconfigureerde aanbiedingen gebruiken na de migratie moeten worden verzonden, moet u al deze leveringen in v7 verwijderen en opnieuw maken. Als u dat niet kunt, wordt een &quot;verenigbaarheidswijze&quot;aangeboden. Deze modus wordt niet aanbevolen omdat u niet van alle nieuwe functies in Interaction v7 kunt profiteren. Dit is een overgangsmodus waarmee u lopende campagnes kunt voltooien vóór de daadwerkelijke 6.1-migratie. Neem contact met ons op voor meer informatie over deze modus.
 
 Een voorbeeld van een bewegingsscript (**interactionTo610_full_XX.js**) is beschikbaar in de map **Migration** in de map Adobe Campagne v7. In dit bestand ziet u een voorbeeld van een script voor een client dat gebruikmaakt van één e-mailrepresentatie per aanbieding (de **[!UICONTROL htmlSource]** velden en **[!UICONTROL textSource]** velden). De inhoud in de tabel **NmsEmailOfferView** is verplaatst naar de tabel met aanbiedingen.
