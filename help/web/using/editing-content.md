@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
 
@@ -135,13 +135,14 @@ U kunt alleen aanpassingsblokken en velden invoegen in tekstblokken.
 >Voor elk type verbinding, kunt u de openingswijze vormen: Selecteer het doelvenster in de vervolgkeuzelijst **Doel** . Deze waarde komt overeen met de **`<target>`** HTML-tag.
 >
 >De lijst van beschikbare **streefcijfers** is als volgt:
-
+>
 >* Overige (IFrame)
 >* Bovenste venster (_boven)
-* Bovenliggend venster (_bovenliggend)
-* Nieuw venster (_leeg)
-* Huidig venster (_zelf)
-* Standaardbrowsergedrag
+>* Bovenliggend venster (_bovenliggend)
+>* Nieuw venster (_leeg)
+>* Huidig venster (_zelf)
+>* Standaardbrowsergedrag
+>
 
 
 
@@ -170,7 +171,8 @@ Met de **koppeling die een handelingsoptie** definieert, kunt u een handeling co
 ![](assets/dce_toolbar_imgblock_action.png)
 
 >[!NOTE]
-De beschikbare handelingen worden beschreven in de sectie Een handeling [toevoegen aan een knop](#adding-an-action-to-a-button) .
+>
+>De beschikbare handelingen worden beschreven in de sectie Een handeling [toevoegen aan een knop](#adding-an-action-to-a-button) .
 
 ### Een koppeling verwijderen {#delete-a-link}
 
@@ -180,7 +182,8 @@ Wanneer een koppeling is ingevoegd, bevat de werkbalk twee nieuwe pictogrammen: 
 * **[!UICONTROL Break the link]** Hiermee kunt u na bevestiging de koppeling en alle bijbehorende parameters verwijderen.
 
 >[!NOTE]
-Als de koppeling wordt verwijderd, blijft de inhoud behouden.
+>
+>Als de koppeling wordt verwijderd, blijft de inhoud behouden.
 
 ## Lettertypekenmerken wijzigen {#changing-font-attributes}
 
@@ -202,8 +205,10 @@ De beschikbare opties zijn als volgt:
 * **Kleurpictogram** tekst wijzigen: Hiermee kunt u de tekstkleur van het geselecteerde blok of alleen de geselecteerde tekst wijzigen (`<span style="color: #CODE">`)
 
 >[!NOTE]
-* **Pictogram Verwijderen** : Hiermee verwijdert u het blok en alle inhoud ervan.
-
+>
+>* **Pictogram Verwijderen** : Hiermee verwijdert u het blok en alle inhoud ervan.
+   >
+   >
 * **Pictogram Dupliceren** : dupliceert het blok evenals alle stijlen met betrekking tot het blok.
 
 
@@ -223,7 +228,8 @@ Voor compatibiliteit met de DCE moeten animaties **van het type** &quot;Flash&qu
 ```
 
 >[!CAUTION]
-Externe bestanden in een **scripttag** van de HTML-pagina mogen niet worden aangeroepen. Deze bestanden worden niet geïmporteerd op de Adobe Campagne-server.
+>
+>Externe bestanden in een **scripttag** van de HTML-pagina mogen niet worden aangeroepen. Deze bestanden worden niet geïmporteerd op de Adobe Campagne-server.
 
 ### Een afbeelding toevoegen, verwijderen of dupliceren {#adding---deleting---duplicating-an-image}
 
@@ -240,7 +246,8 @@ Met het pictogram **Verwijderen** verwijdert u de ![]() tag met de afbeelding.
 Met het pictogram **Dupliceren** dupliceert u de ![]() tag en de inhoud ervan.
 
 >[!CAUTION]
-Wanneer u een afbeelding dupliceert, worden de id&#39;s voor de nieuwe afbeelding verwijderd.
+>
+>Wanneer u een afbeelding dupliceert, worden de id&#39;s voor de nieuwe afbeelding verwijderd.
 
 ### Afbeeldingseigenschappen bewerken {#editing-image-properties}
 
