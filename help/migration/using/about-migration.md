@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f460c79a763c6a207656c54351a4c685f2a78a03
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -28,11 +28,10 @@ Het migratieproces moet met de nodige voorzichtigheid worden uitgevoerd, de gevo
 
 De migratie moet vooraf op de ontwikkelomgeving worden getest om ervoor te zorgen dat deze zonder fouten en zonder fouten goed functioneert. Het migreren van de productieomgeving mag pas plaatsvinden als de gemigreerde ontwikkelomgeving volledig is goedgekeurd.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Voordat u de migratie start, moet u deze handleiding **in zijn geheel** lezen.
 
 >[!NOTE]
 >
 >De nieuwe functies en evoluties voor Adobe Campagne v7 worden gedetailleerd in [deze pagina](https://docs.campaign.adobe.com/doc/AC/en/RN.html).
-
