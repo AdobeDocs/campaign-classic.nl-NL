@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 12f4237c34560257901ae210d4e22a7d152a795d
+source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 ---
 
@@ -128,7 +128,7 @@ source-git-commit: 12f4237c34560257901ae210d4e22a7d152a795d
      <li> <p>Stil meldingen bijhouden in iOS </p> </li> 
      <li> <p>Feedback op registratieaanroepen in iOS implementeren</p> </li> 
      <li> <p>De voorbereidingssnelheid voor iOS-levering verbeteren</p> </li> 
-    </ul> <p>Als onderdeel van GCM-afschrijving door Google staat Android V2-connector nu alleen verbindingen met de FCM-server toe.</p><p>Raadpleeg de <a href="../../delivery/using/setting-up-mobile-app-channel.md#integrating-campaign-sdk-into-the-mobile-application">gedetailleerde documentatie</a>voor meer informatie. De handmatige upgrade naar FCM vindt u in dit <a href="https://helpx.adobe.com/campaign/kb/migrate-to-fcm.html">artikel</a>. </p> </td> 
+    </ul> <p>Als onderdeel van GCM-afschrijving door Google staat Android V2-connector nu alleen verbindingen met de FCM-server toe.</p><p>Raadpleeg de <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">gedetailleerde documentatie</a>voor meer informatie. De handmatige upgrade naar FCM vindt u in dit <a href="https://helpx.adobe.com/campaign/kb/migrate-to-fcm.html">artikel</a>. </p> </td> 
   </tr> 
   <tr> 
    <td> SQL-gegevensbeheer<br /> </td> 
