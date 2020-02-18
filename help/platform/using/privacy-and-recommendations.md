@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ed5390b4f620c3cddaf9b856f3354dc5f06f4d98
+source-git-commit: 33bf5c5a08613cf88eaace91b85a76157cac7ba1
 
 ---
 
@@ -24,13 +24,21 @@ source-git-commit: ed5390b4f620c3cddaf9b856f3354dc5f06f4d98
 
 ## Over privacy en toestemming {#about-privacy-and-consent}
 
-Adobe Campaign is een krachtig hulpmiddel voor het verzamelen en verwerken van zeer grote hoeveelheden gegevens, waaronder persoonlijke gegevens. We moedigen alle gebruikers van Adobe Campaign aan om binnen de wetgeving te werken (DPA, CAN-SPAM, Europese richtlijn over privacy en elektronische communicatie, Europese GDPR, enz.), verantwoord en ethisch gebruik te maken van persoonlijke informatie en af te zien van het verzenden van ongevraagde e-mail, pushberichten en SMS-berichten (&quot;spam&quot;). Wij zijn sterk van mening dat de beginselen van het op de markt brengen van machtigingen de waarde en loyaliteit van de levensduur van de klant bevorderen en daarom verbieden wij het gebruik van Adobe Campaign om ongewenste berichten te verzenden.
+Adobe Campaign is een krachtig hulpmiddel voor het verzamelen en verwerken van zeer grote hoeveelheden gegevens, waaronder persoonlijke gegevens. We moedigen alle gebruikers van Adobe Campaign aan om binnen de wetgeving te werken (DPA, CAN-SPAM, Europese richtlijn over privacy en elektronische communicatie, Europese GDPR, CCPA, enz.), op verantwoorde en ethische wijze gebruik te maken van persoonlijke informatie en af te zien van het verzenden van ongevraagde e-mail, pushberichten en SMS-berichten (&quot;spam&quot;). Wij zijn sterk van mening dat de beginselen van het op de markt brengen van machtigingen de waarde en loyaliteit van de levensduur van de klant bevorderen en daarom verbieden wij het gebruik van Adobe Campaign om ongewenste berichten te verzenden.
 
 Raadpleeg de privacy [van](https://www.adobe.com/privacy/marketing-cloud.html)Adobe Experience Cloud voor meer informatie.
 
-De Campagne van Adobe verstrekt de hulpmiddelen en de functionaliteit, evenals beste praktijken, om u met uw naleving van GDPR te helpen wanneer het gebruiken van onze dienst. Raadpleeg [dit document](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html).
-
 Neem de tijd om door checklist [van de](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html) Veiligheid en van de Privacy te gaan om de belangrijkste elementen te leren om betreffende veiligheid en privacy te controleren.
+
+## Privacybeheer {#privacy-management}
+
+GDPR (General Data Protection Regulation) is de privacywet van de Europese Unie (EU) die de vereisten inzake gegevensbescherming harmoniseert en moderniseert. GDPR is van toepassing op klanten van de Campagne van Adobe die gegevens voor de Onderwerpen van Gegevens in de EU houden.
+
+CCPA (California Consumer Privacy Act) biedt inwoners van Californië nieuwe rechten met betrekking tot hun persoonlijke gegevens en legt verantwoordelijkheden op het gebied van gegevensbescherming op aan bepaalde entiteiten die zaken doen in Californië.
+
+Naast toestemmingsbeheer, de montages van het gegevensbehoud, en het rechtenbeheer, verstrekken wij, in onze rol als Bewerker van Gegevens, extra mogelijkheden om uw bereidheid als Controlemechanisme van Gegevens voor bepaalde verzoeken van de Privacy te helpen vergemakkelijken.
+
+In dit [artikel](https://helpx.adobe.com/campaign/kb/acc-privacy.html)leert u hoe u met Adobe Campaign de verschillende functies van de privacysleutel kunt beheren: Recht op toegang, recht om te worden vergeten, toestemming, gegevensbewaring en gebruikersrollen. U zult ook beste praktijken vinden, om u met uw naleving van de Privacy te helpen wanneer het gebruiken van onze dienst.
 
 ## Cookies en trackingmogelijkheden {#cookies-and-tracking-capabilities}
 
