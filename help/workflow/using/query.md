@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
+source-git-commit: f8cf2f72dcf2ab48a42faf7931ca831b6431548d
 
 ---
 
@@ -25,10 +25,11 @@ source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
 ## Een query maken {#creating-a-query}
 
 Met een query kunt u een doel selecteren op basis van criteria. U kunt een segmentcode aan het vraagresultaat associëren en extra gegevens opnemen in het.
+Voor meer informatie over vraagsteekproeven, verwijs naar deze [deze sectie](../../workflow/using/querying-recipient-table.md).
 
 >[!NOTE]
 >
->De steekproeven van de vraag worden voorgesteld in [deze sectie](../../workflow/using/querying-recipient-table.md).
+>Query-activiteiten zijn niet compatibel met CLOB-velden wanneer u Oracle gebruikt.
 
 ![](assets/s_user_segmentation_wizard_9.png)
 
@@ -112,7 +113,7 @@ Een verzameling gegevens toevoegen die verband houden met een doelgroep:
 
    * Als één enkel element van de inzameling met de het filtreren voorwaarden voor deze inzameling samenvalt, selecteer **[!UICONTROL Single row]** op het **[!UICONTROL Data collected]** gebied.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Deze wijze optimaliseert de SQL vraag die dankzij een directe verbinding op de inzamelingselementen wordt geproduceerd.
       >
