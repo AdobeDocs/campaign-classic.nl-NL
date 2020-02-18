@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 30803bde7be6073895fcea4b6c70655a27111f55
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -64,7 +64,7 @@ In het bovenstaande bericht is het onderwerp van het bericht bijvoorbeeld gepers
 
 >[!CAUTION]
 >
->Om privacyredenen raden we aan HTTPS te gebruiken voor alle externe bronnen.
+>Om privacyredenen raden we u aan HTTPS te gebruiken voor alle externe bronnen.
 
 De inhoud van het bericht wordt bepaald in de lagere sectie van het venster van de leveringsconfiguratie.
 
