@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -43,7 +43,7 @@ Bedrijfs-API is specifiek voor elk type object. Zij hebben een effect op:
 
 In deze sectie wordt het gebruik van de services &quot;Abonneren&quot;, &quot;Unsubscribe&quot; en &quot;VerzendenLevering&quot; beschreven.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >[De documentatie](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html) van JSAPI van de campagne bevat extra informatie over de vraag van de ZEEP en het gebruiken van Javascript in de Campagne van Adobe, evenals een volledige verwijzing naar alle methodes en functies die in de toepassing worden gebruikt.
 
