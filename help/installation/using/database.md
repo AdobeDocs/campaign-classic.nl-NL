@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 28614a6b0c45deef17d9b3275a16e65bdff4538b
+source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
 
 ---
 
@@ -32,13 +32,12 @@ Controleer ook de sectie van de de toegangslagen [van het](../../installation/us
 
 De native client moet op de Adobe Campagne-toepassingsservers zijn geïnstalleerd.
 
-U kunt controleren op de inheemse cliënt op de server via het ODBC bestuurdersconfiguratiescherm, onder **SQL Inheemse Cliënt** (voor de cliënten van de Server 2005 van Microsoft SQL), of **SQL Inheemse Cliënt 10.0** van de Server 10.0 (voor de cliënten van de Server 2008 en 2008 R2), of **SQL Inheemse Cliënt van de Server 111** (voor Microsoft SQL Server 2012-clients).
+U kunt controleren op de inheemse cliënt op de server via het ODBC bestuurdersconfiguratiescherm, onder **SQL Server Native Cliënt 10.0** (voor de cliënten van de Server 2008 van Microsoft SQL en 2008 R2), of **SQL Server Native Cliënt 11.0** (voor de Server 2012 van Microsoft SQL, 201 6 en 2017 clients).
 
 De volgende toegang DLLs moet aanwezig zijn:
 
-* **sqlncli.dll** voor Microsoft SQL Server 2005-client,
 * **sqlncli10.dll** voor de cliënten van de Server 2008 van Microsoft SQL en 2008 R2,
-* **sqlncli11.dll** voor Microsoft SQL Server 2012-client.
+* **sqlncli11.dll** voor Microsoft SQL Server 2012, 2014, 2016 en 2017 clients.
 
    Toegang-DLL&#39;s vindt u op de Microsoft-website.
 
