@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 93a19c765e8d3de0fcbc29e27202fcbd2da6d32f
+source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
 
 ---
 
@@ -221,8 +221,8 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
    <td> Geldige tekens voor een e-mailadres.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span><br /> </td> 
-   <td> Staat een maximumperiode (die in uren wordt uitgedrukt) toe om het aantal uitzendingen te beperken wordt teruggekregen telkens als het synchronisatiewerkschema wordt uitgevoerd. Zie <a href="../../platform/using/accessing-an-external-database.md#cloud-messaging---fda-synchronization">deze sectie</a>.<br /> </td> 
+   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span><br /> </td>
+   <td> Staat een maximumperiode (die in uren wordt uitgedrukt) toe om het aantal uitzendingen te beperken wordt teruggekregen telkens als het synchronisatiewerkschema wordt uitgevoerd.</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span><br /> </td> 
