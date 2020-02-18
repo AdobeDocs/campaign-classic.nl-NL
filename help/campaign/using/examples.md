@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -29,8 +29,6 @@ De **Op de interface van het vormtype** Web impliceert het gebruiken van een toe
 >[!NOTE]
 >
 >API&#39;s worden beschreven in een speciaal document, waartoe de toegang afhankelijk is van uw contract. Zie [API](../../configuration/using/about-web-services.md).
-
->[!NOTE]
 >
 >De webtoepassing die in dit voorbeeld wordt gebruikt, is geen webtoepassing die bij Adobe Campaign van de verkeerde kant op komt. Om een vorm in een campagne te gebruiken, moet u de specifieke toepassing van het Web tot stand brengen.
 
@@ -159,7 +157,7 @@ Zodra de controles zijn goedgekeurd, kan de campagne automatisch beginnen.
 
    * de inhoud van het bericht die naar de lokale entiteiten in de kennisgeving zal worden verzonden;
    * de goedkeuringsherinnering;
-   * de verwachte verwerking van de campagne
+   * de verwachte verwerking van de campagne.
    ![](assets/mkg_dist_use_case_target_valid7.png)
 
 1. Sla uw record op.
