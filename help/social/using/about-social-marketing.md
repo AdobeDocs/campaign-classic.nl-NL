@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dcefad5aade740c8f5e5a7a7f6602b4ee0bf5f8d
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -35,7 +35,7 @@ Met de toepassing **Sociale netwerken** beheren (Social Marketing) voor het behe
 
    Met Adobe Campaign Social Marketing kunt u ook eenvoudig nieuwe contactpersonen aanschaffen via Facebook: Neem contact op met gebruikers en vraag hen of zij hun profielgegevens willen delen. Als ze het programma accepteren, worden de gegevens automatisch hersteld in Adobe Campaign. Hiermee kunt u doelgerichte campagnes voeren en, indien mogelijk, kanaalstrategieën implementeren.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Facebook en Twitter brengen regelmatig wijzigingen aan in hun schermen en processen. Dit document wordt dienovereenkomstig bijgewerkt.
 >
