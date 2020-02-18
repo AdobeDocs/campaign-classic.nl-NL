@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e1bd878c45576932e085b579f91eb72f5d36d6fd
+source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
 
 ---
 
@@ -47,6 +47,6 @@ Dit deel bevat informatie over technische werkstromen die betrekking hebben op d
 * [Marketing Resources (MRM)](../../workflow/using/marketing-resources--mrm-.md)
 * [Sociale marketing](../../workflow/using/social-marketing.md)
 * [Integratie met Adobe Experience Cloud-oplossingen](../../workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
-* [Algemene verordening inzake gegevensbescherming (GDPR)](../../workflow/using/general-data-protection-regulation--gdpr-.md)
+* [Privacy Data Protection-verordening](../../workflow/using/general-data-protection-regulation--gdpr-.md)
 * [Overschakelen naar middelmatige sourcing](../../workflow/using/transfer-to-mid-sourcing.md)
 * [Middelsourcingsplatform](../../workflow/using/mid-sourcing-platform.md)
