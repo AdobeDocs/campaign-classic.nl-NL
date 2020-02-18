@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: aa941e4f8803f65ce9d5f7567206b1fcc20a6dc6
 
 ---
 
 
-# Algemene verordening inzake gegevensbescherming (GDPR){#general-data-protection-regulation-gdpr}
+# Privacy Data Protection-verordening{#general-data-protection-regulation-gdpr}
 
-De hieronder beschreven workflows worden standaard geïnstalleerd met de module **General Data Protection Regulation (GDPR)** . Raadpleeg deze [sectie](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html)voor meer informatie over deze module.
+De hieronder beschreven workflows worden standaard geïnstalleerd met de module **Privacy Data Protection Regulation** . Raadpleeg dit [artikel](https://helpx.adobe.com/campaign/kb/acc-privacy.html)voor meer informatie over deze module.
 
 <table> 
  <tbody> 
