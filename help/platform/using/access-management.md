@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3946d97e786423bf831d17e486186660db403709
+source-git-commit: 63d0551c0c036cb54ebea4e6cc4dc1f6566cf976
 
 ---
 
@@ -103,7 +103,7 @@ Nadat het profiel van de operator is gemaakt, kunt u de gegevens ervan toevoegen
 
 >[!NOTE]
 >
->In het **[!UICONTROL Session timeout]** veld kunt u de vertraging vóór de FDA-sessietime-out aanpassen. Raadpleeg voor meer informatie [over Federated Data Access](../../platform/using/accessing-an-external-database.md#about-federated-data-access).
+>In het **[!UICONTROL Session timeout]** veld kunt u de vertraging vóór de FDA-sessietime-out aanpassen. Raadpleeg voor meer informatie [over Federated Data Access](../../platform/using/about-fda.md).
 
 ### Tijdzone van de operator {#time-zone-of-the-operator}
 
