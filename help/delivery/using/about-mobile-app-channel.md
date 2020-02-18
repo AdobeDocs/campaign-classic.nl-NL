@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c581f22261af7e083f6bd47e603d17d2d71e7ce6
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -22,9 +22,11 @@ source-git-commit: c581f22261af7e083f6bd47e603d17d2d71e7ce6
 
 >[!CAUTION]
 >
->In dit document wordt beschreven hoe u uw mobiele toepassing kunt integreren met het Adobe Campaign-platform. De klasse biedt geen informatie over hoe de mobiele toepassing moet worden gemaakt of hoe deze moet worden geconfigureerd voor het beheer van meldingen. Raadpleeg de officiële documentatie van Apple ([https://developer.apple.com/](https://developer.apple.com/)) en Android ([https://developer.android.com/index.html](https://developer.android.com/index.html)) voor meer informatie hierover.
+>In dit document wordt beschreven hoe u uw mobiele toepassing kunt integreren met het Adobe Campaign-platform. De klasse biedt geen informatie over hoe de mobiele toepassing moet worden gemaakt of hoe deze moet worden geconfigureerd voor het beheer van meldingen. Raadpleeg de officiële Apple- [documentatie](https://developer.apple.com/) en de Android- [documentatie](https://developer.android.com/index.html)voor meer informatie hierover.
 
-In de onderstaande secties vindt u informatie die specifiek is voor het mobiele toepassingskanaal. Raadpleeg[deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md)voor algemene informatie over het maken van een levering.
+In de onderstaande secties vindt u informatie die specifiek is voor het mobiele toepassingskanaal.
+
+ Raadpleeg[deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md)voor algemene informatie over het maken van een levering.
 
 Met het **Mobile App Channel** kunt u het Adobe Campagne-platform gebruiken om gepersonaliseerde meldingen naar iOS- en Android-terminals te verzenden via apps. Er zijn twee leveringskanalen beschikbaar:
 
@@ -51,10 +53,61 @@ U kunt het toepassingsgedrag bepalen voor wanneer de gebruiker het bericht activ
 
 >[!CAUTION]
 >
->* U moet ervoor zorgen dat de meldingen die naar een mobiele toepassing worden verzonden, voldoen aan de voorwaarden en vereisten die door Apple (Apple Push Notification Service) en Google (Google Cloud Messaging) zijn opgegeven.
+>* U moet ervoor zorgen dat de meldingen die naar een mobiele toepassing worden verzonden, voldoen aan de voorwaarden en vereisten die door Apple (Apple Push Notification Service) en Google (Firebase Cloud Messaging) zijn opgegeven.
 >* Waarschuwing: in sommige landen vereist de wet dat u de gebruikers informeert over uw verzamelde datatype mobiele toepassingen en het doel van hun verwerking . U moet de wetgeving controleren.
 
 
 Met de **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt)-workflow worden abonnementen op mobiele apparaten bijgewerkt. Raadpleeg de handleiding [Workflows voor](../../workflow/using/mobile-app-channel.md)meer informatie over deze workflow.
 
-Adobe Campaign is compatibel met zowel binaire als HTTP/2-APNS. Voor meer details over de configuratiestappen, verwijs naar de sectie van [Verbindingen](../../delivery/using/setting-up-mobile-app-channel.md#connectors) .
+Adobe Campaign is compatibel met zowel binaire als HTTP/2-APNS. Raadpleeg de sectie Een mobiele toepassing [configureren in Adobe Campagne](../../delivery/using/configuring-the-mobile-application.md) voor meer informatie over de configuratiestappen.
+
+## Gegevenspad {#data-path}
+
+In de volgende schema&#39;s worden de stappen beschreven waarmee een mobiele toepassing gegevens kan uitwisselen met Adobe Campaign. Dit proces omvat drie entiteiten:
+
+* de mobiele toepassing
+* de kennisgevingsdienst: APNS (Apple Push Notification Service) voor Apple en FCM (Firebase Cloud Messaging) voor Android
+* Adobe-campagne
+
+De drie belangrijkste stappen van het kennisgevingsproces zijn: registratie van de toepassing in Adobe Campaign (abonnementsinzameling), leveringen en tracering.
+
+### Stap 1: Abonnementsverzameling {#step-1--subscription-collection}
+
+De mobiele toepassing wordt door de gebruiker gedownload van de App Store of van Google Play. Deze toepassing bevat de verbindingsinstellingen (iOS-certificaat en de projectsleutel voor Android) en de integratietoets. De eerste keer dat de toepassing wordt geopend (afhankelijk van de configuratie), kan de gebruiker worden gevraagd registratiegegevens in te voeren (@userKey: e-mail- of accountnummer bijvoorbeeld). Tegelijkertijd vraagt de toepassing de meldingsservice om een bericht-id (push-id) te verzamelen. Al deze gegevens (verbindingsinstellingen, integratiesleutel, bericht-id, userKey) worden naar Adobe Campagne verzonden.
+
+![](assets/nmac_register_view.png)
+
+### Stap 2: Aflevering {#step-2--delivery}
+
+Marketers richten zich op toepassingsabonnees. Het leveringsproces verzendt de verbindingsmontages naar de berichtdienst (iOS certificaat en projectsleutel voor Android), bericht identiteitskaart (duw identiteitskaart) en de inhoud van het bericht. De kennisgevingsdienst stuurt meldingen naar de beoogde terminals.
+
+De volgende informatie is beschikbaar in de Campagne van Adobe:
+
+* Alleen Android: aantal apparaten dat de melding heeft weergegeven (afbeeldingen)
+* Android en iOS: aantal klikken op het bericht
+
+![](assets/nmac_delivery_view.png)
+
+De Adobe Campaign-server moet contact kunnen opnemen met de APNS-server op de volgende poorten:
+
+* 2195 (verzenden) en 2186 (feedbackservice) voor binaire iOS-connector
+* 443 voor iOS HTTP/2-connector
+
+Om te controleren dat het correct werkt, gebruik de volgende bevelen:
+
+* Voor tests:
+
+   ```
+   telnet gateway.sandbox.push.apple.com
+   ```
+
+* In productie:
+
+   ```
+   telnet gateway.push.apple.com
+   ```
+
+Als een binaire iOS-connector wordt gebruikt, moeten de MTA en de webserver contact kunnen opnemen met de APNS op poort 2195 (verzenden), moet de workflowserver contact kunnen opnemen met de APNS op poort 2196 (feedbackservice).
+
+Als een iOS HTTP/2-connector wordt gebruikt, moeten de MTA-, webserver- en workflowserver contact kunnen opnemen met de APNS op poort 443.
+
