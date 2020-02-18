@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f46b499e4b81cf500baa84cf683a6e0273f802a7
+source-git-commit: 9a1db0fbced3550621c5520656a34344128ee13f
 
 ---
 
@@ -74,58 +74,3 @@ Adobe houdt rekening met het Systeem van de Naam van het Domein (DNS) voor e-mai
 
 [Klik hier voor meer](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html)informatie.
 
-Als Admin-gebruiker kunt u via het Configuratiescherm volledige domeindelegatie naar Adobe instellen. [Lees meer](https://docs.adobe.com/content/help/en/control-panel/using/subdomains-and-certificates/subdomains-branding.html).
-
-## 10 Hoe krijg je e-mails in de postbus van de ontvanger? {#how-to-get-emails-in-the-recipient-s-inbox-}
-
-Lees uit [Stel de e-mailleverbaarheid](https://helpx.adobe.com/campaign/kb/acc-deliverability.html) in om de concepten en aanbevolen procedures met betrekking tot de te leveren items en de gereedschappen voor het optimaliseren van het verzenden van e-mails te leren.
-
-## Meer als dit {#more-faq}
-
-Lees meer algemene vragen over specifieke onderwerpen.
-
-<table>
-<tr>
-<td>
-        <a href="../../platform/using/faq-key-concepts.md"><img alt="voorwaarden" src="assets/icon_start.png"/></a>
-        <div><a href="../../platform/using/faq-key-concepts.md"><strong>Belangrijkste concepten</strong></a></div>
-        <em>Algemene veelgestelde vragen</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-audiences.md"><img alt="voorwaarden" src="assets/icon_audience.png"/></a>
-        <div><a href="../../platform/using/faq-audiences.md"><strong>Ontvangers</strong></a></div>
-        <em>Veelgestelde vragen over soorten publiek</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-designing.md"><img alt="voorwaarden" src="assets/icon_content.png"/></a>
-        <div><a href="../../platform/using/faq-designing.md"><strong>Ontwerp</strong></a></div>
-        <em>Veelgestelde vragen over berichtenontwerp</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-messages.md"><img alt="voorwaarden" src="assets/icon_delivery.png"/></a>
-        <div><a href="../../platform/using/faq-messages.md"><strong>Verzenden</strong></a></div>
-        <br/><em>Berichttest en veelgestelde vragen verzenden</em>
-    </td>
-</tr>
-<tr>
-    <td>
-        <a href="../../platform/using/faq-workflows.md"><img alt="voorwaarden" src="assets/icon_process.png"/></a>
-        <div><a href="../../platform/using/faq-workflows.md"><strong>Workflows</strong></a></div>
-        <em>Veelgestelde vragen over procesautomatisering</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-reporting.md"><img alt="voorwaarden" src="assets/icon_report.png"/></a>
-        <div><a href="../../platform/using/faq-reporting.md"><strong>Rapportage</strong></a></div>
-        <em>Veelgestelde vragen over campagnerapporten</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-campaign-config.md"><img alt="voorwaarden" src="assets/icon_config.png"/></a>
-        <div><a href="../../platform/using/faq-campaign-config.md"><strong>Configuratie</strong></a></div>
-        <em>Veelgestelde vragen over instance-instellingen</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-developers.md"><img alt="voorwaarden" src="assets/icon_server.png"/></a>
-        <div><a href="../../platform/using/faq-developers.md"><strong>Ontwikkeling</strong></a></div>
-        <br/><em>Veelgestelde vragen over ontwikkelaars</em>
-    </td>
-    </tr></table>
