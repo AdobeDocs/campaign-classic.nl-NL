@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
 
 Deze methode bestaat uit het verzenden van een HTTP-aanroep naar de omleidingsserver door een **`<img>`** HTML-tag in te voegen in de HTML-broncode van de webpagina die u wilt bijhouden.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Deze methode gebruikt de cookies die door de webbrowser worden verzonden om de ontvanger te identificeren en is niet 100% betrouwbaar.
 
