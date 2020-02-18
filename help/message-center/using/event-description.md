@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a11a73b0679c0a65dc10f71869bf2a6c6efc008
+source-git-commit: 7c57fb0f2d9867b5ea96185c1984e0b1baeb056a
 
 ---
 
@@ -116,7 +116,7 @@ De **`<rtevent>`** en **`<batchevent>`** elementen hebben een set kenmerken en e
 
 De verplichte kenmerken van de elementen **`<rtevent>`** en **`<batchevent>`** elementen zijn @type en @email. De waarde van @type moet gelijk zijn aan de gespecificeerde lijstwaarde die wordt bepaald wanneer het vormen van de uitvoeringsinstantie. Met deze waarde kunt u de sjabloon definiëren die tijdens de levering aan de inhoud van de gebeurtenis moet worden gekoppeld.
 
-`<rtevent>  configuration example: </rtevent>`
+`<rtevent> configuration example:`
 
 ```
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
