@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8b3ab02d1fd90c3f14314508a8fa7d99df82436c
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -105,7 +105,7 @@ Hiervoor voert u de volgende stappen uit:
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >De Campagne van Adobe steunt veelvoudige ontvankelijke schema&#39;s, die als richtingsschema&#39;s worden bekend, verbonden aan de zelfde brede en/of trackinglogschema&#39;s. Dit kan anders leiden tot anomalieën in de afstemming van gegevens achteraf. Raadpleeg de pagina [Aanbeveling en beperkingen](../../configuration/using/about-custom-recipient-table.md) voor meer informatie hierover.
 
