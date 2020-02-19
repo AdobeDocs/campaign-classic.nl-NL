@@ -128,29 +128,29 @@ In dit voorbeeld wordt een instantievariabele gebruikt om dynamisch het gesplits
 
 1. Neem de workflow van het vorige voorbeeld en vervang het script van de **JavaScript Code** -activiteit door het volgende script:
 
-   ```
-   instance.vars.foo = "bar1"
-   vars.foo = "bar2"
-   task.vars.foo = "bar3"
-   ```
+    ```
+    instance.vars.foo = "bar1"
+    vars.foo = "bar2"
+    task.vars.foo = "bar3"
+    ```
 
 1. Voeg het volgende manuscript aan het initialisatiescript van de activiteit van het **Eind** toe:
 
-   ```
-   logInfo("instance.vars.foo = " + instance.vars.foo)
-   logInfo("vars.foo = " + vars.foo)
-   logInfo("task.vars.foo = " + task.vars.foo)
-   ```
+    ```
+    logInfo("instance.vars.foo = " + instance.vars.foo)
+    logInfo("vars.foo = " + vars.foo)
+    logInfo("task.vars.foo = " + task.vars.foo)
+    ```
 
 1. Begin het werkschema, en bekijk dan het logboek.
 
-   ```
-   Workflow finished
-   task.vars.foo = undefined
-   vars.foo = bar2
-   instance.vars.foo = bar1
-   Starting workflow (operator 'admin')
-   ```
+    ```
+    Workflow finished
+    task.vars.foo = undefined
+    vars.foo = bar2
+    instance.vars.foo = bar1
+    Starting workflow (operator 'admin')
+    ```
 
 In dit voorbeeld wordt getoond dat de activiteit na **JavaScript-code** de instantievariabelen en gebeurtenisvariabelen benadert, maar dat de taakvariabelen van buitenaf niet toegankelijk zijn (&#39;undefined&#39;).
 
