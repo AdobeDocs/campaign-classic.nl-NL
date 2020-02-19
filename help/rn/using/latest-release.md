@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 78c94268723e172b4a4e3c3a965877978b075b82
+source-git-commit: 1206b2dcee8a4b0e95a005e47b947b00388e7e43
 
 ---
 
@@ -56,7 +56,7 @@ _17 februari 2020_
  <tbody> 
   <tr> 
    <td> <p>Sneeuwvlok is een volledig beheerd wolkendepot dat is gebouwd om op zowel opslag als compute niveau te schrapen. Met deze nieuwe aansluiting kan Adobe Campaign nu de kracht van Snowflake benutten om Big Data Segmentation uit te voeren. Deze connector is beschikbaar voor alle klanten, ook voor klanten die worden gehost door Adobe.</p>
-    <p>Raadpleeg de <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">gedetailleerde documentatie</a>voor meer informatie.</p>
+    <p>Raadpleeg voor meer informatie de <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">gedetailleerde documentatie</a> en <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html.">zelfstudievideo</a>.</p>
    </td> 
   </tr> 
  </tbody> 
