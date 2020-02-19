@@ -169,6 +169,7 @@ Als algemene regel geldt dat u de corresponderende clientlaag in de externe data
    /etc/init.d/nlserver6 stop
    /etc/init.d/nlserver6 start
    ```
+
 1. In Campaign Classic configureert u uw Snowflake externe account in Campaign Classic. Maak het **[!UICONTROL Explorer]** menu los van het **[!UICONTROL Administration]** menu.
 
 1. Ontgrendel het **[!UICONTROL Platform]** menu en klik **[!UICONTROL External accounts]**.
