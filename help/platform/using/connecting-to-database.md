@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4969c5e56f1911b3abfd770ca4f8f5ed25784a52
+source-git-commit: cb081f893b7da13cda5892409b063b8781e93b2a
 
 ---
 
@@ -26,7 +26,7 @@ Als u een verbinding met de externe database wilt inschakelen, moet u de verbind
 
 >[!CAUTION]
 >
->De gebruiker van de Campagne van Adobe heeft specifieke rechten voor het externe gegevensbestand en de de toepassingsserver van de Campagne van Adobe nodig om gegevens van een externe gegevensbestand te verwerken. Voor meer op dit, verwijs naar de [Verre sectie van de de toegangsrechten](#remote-database-access-rights) van het gegevensbestandtoegang.
+>De gebruiker van de Campagne van Adobe heeft specifieke rechten voor het externe gegevensbestand en de de toepassingsserver van de Campagne van Adobe nodig om gegevens van een externe gegevensbestand te verwerken. Voor meer op dit, verwijs naar de [Verre sectie van de de toegangsrechten](../../platform/using/remote-database-access-rights.md) van het gegevensbestandtoegang.
 >
 >Om storingen te voorkomen, moeten operatoren die toegang krijgen tot externe, gedeelde gegevens werken vanuit aparte ruimten.
 
@@ -38,7 +38,7 @@ Als u een verbinding met een gedeelde externe database wilt inschakelen, zolang 
 1. Klik op de **[!UICONTROL New]** knop en selecteer het **[!UICONTROL External database]** type.
 1. Definieer de **[!UICONTROL Connection]** parameters van de externe database.
 
-   Voor verbindingen met een **ODBC** typedatabase moet het **[!UICONTROL Server]** veld de naam van de ODBC-gegevensbron bevatten en niet de servernaam. Bovendien kunnen bepaalde aanvullende configuraties noodzakelijk zijn, afhankelijk van de gebruikte databanken. Raadpleeg de sectie [Specifieke configuraties per databasetype](#specific-configurations-by-database-type) .
+   Voor verbindingen met een **ODBC** typedatabase moet het **[!UICONTROL Server]** veld de naam van de ODBC-gegevensbron bevatten en niet de servernaam. Bovendien kunnen bepaalde aanvullende configuraties noodzakelijk zijn, afhankelijk van de gebruikte databanken. Raadpleeg de sectie [Specifieke configuraties per databasetype](../../platform/using/specific-configuration-database.md) .
 
 1. Nadat de parameters zijn ingevoerd, klikt u op de **[!UICONTROL Test the connection]** knop om deze goed te keuren.
 
