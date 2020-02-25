@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
 
 ---
 
@@ -28,7 +28,7 @@ Een voorwaarde is een JavaScript-expressie die moet worden geëvalueerd op &#39;
 
 ![](assets/edit_test.png)
 
-Raadpleeg de [JSAPI-documentatie](http://docs.campaign.adobe.com/doc/AC/en/jsapi/p-1.html)voor meer informatie over alle extra JavaScript-functies en SOAP-methoden van de toepassingsserver die toegankelijk zijn via workflow JavaScript.
+Raadpleeg de [JSAPI-documentatie](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)voor meer informatie over alle extra JavaScript-functies en SOAP-methoden van de toepassingsserver die toegankelijk zijn via workflow JavaScript.
 
 U kunt variabelen ook rechtstreeks vanuit deze editor invoegen.
 
