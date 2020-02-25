@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -61,7 +61,7 @@ Als u een **ORA 01805** -fout krijgt tijdens de postupgrade, betekent dit dat de
 
 1. Zorg ervoor dat de tijdzonebestanden op beide servers identiek zijn.
 
-Ga voor meer informatie naar: [https://download.oracle.com/docs/cd/E11882_01/server.112/e10729/ch4datetime.htm](http://download.oracle.com/docs/cd/E11882_01/server.112/e10729/ch4datetime.htm).
+Ga voor meer informatie naar: [https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004).
 
 Een onjuiste uitlijning van de tijdzone tussen client en server kan ook enige vertraging veroorzaken. Daarom raden we aan om dezelfde versie van Oracle-bibliotheek aan client- en serverzijde te gebruiken. Beide tijdzones moeten hetzelfde zijn.
 
