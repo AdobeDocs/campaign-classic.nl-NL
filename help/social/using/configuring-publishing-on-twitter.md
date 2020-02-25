@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -35,7 +35,7 @@ Als u wilt dat Adobe Campaign tweets kan verzenden naar uw Twitter-accounts, moe
 
 Maak eerst een of meer Twitter-accounts waarnaar u uw tweets wilt verzenden.
 
-Ga naar [http://twitter.com](http://twitter.com)om een Twitter-account te maken.
+Ga naar [https://twitter.com](https://twitter.com)om een Twitter-account te maken.
 
 ## Een testaccount maken op Twitter {#creating-a-test-account-on-twitter}
 
