@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ce2a1a55e244180a4e62d6f3b5a5ed5bb8aff6e
+source-git-commit: b7fa53a0463c5752a5fe4d11262dbf7b8ad77144
 
 ---
 
@@ -28,7 +28,7 @@ Om tot de beschrijving van elke lijst toegang te hebben, ga naar **[!UICONTROL A
 
 ![](assets/data-model_documentation-tab.png)
 
-Raadpleeg dit [document](https://final-docs.campaign.adobe.com/doc/AC/en/technicalResources/_Datamodel_Description_of_the_main_tables.html)voor meer informatie over de standaardbeschrijving van het klassieke gegevensmodel van de campagne.
+Raadpleeg dit [document voor meer informatie over de standaardbeschrijving van het klassieke gegevensmodel van de campagne](https://final-docs.campaign.adobe.com/doc/AC/en/technicalResources/_Datamodel_Description_of_the_main_tables.html).
 
 De fysieke en logische structuur van de gegevens die in de toepassing worden overgedragen, wordt in XML beschreven. Het voert een grammatica specifiek voor de Campagne van Adobe uit, genoemd een schema. Lees deze [sectie](../../configuration/using/about-schema-reference.md)voor meer informatie over Adobe Campagne-schema&#39;s.
 
