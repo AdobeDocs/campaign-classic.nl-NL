@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 994ec35e37a1c26e83a8dd2ae31f6594cadd4c45
+source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ---
 
@@ -106,7 +106,7 @@ Leer hoe u uw leveringen kunt bijhouden en het gedrag van de ontvangers [op deze
 
 Adobe Campagne wordt geleverd met een reeks rapporten om uw leveringen te controleren en uw berichten te volgen.
 
-[Klik hier voor meer informatie over ingebouwde rapporten](../../reporting/using/reports-on-deliveries.md#delivery-reports).
+[Klik hier voor meer informatie over ingebouwde rapporten](../../reporting/using/delivery-reports.md).
 
 ### Hoe kwalificeert en beheert de Campagne van Adobe quarantaineadressen? {#how-does-adobe-campaign-qualify-and-manage-quarantine-addresses-}
 
