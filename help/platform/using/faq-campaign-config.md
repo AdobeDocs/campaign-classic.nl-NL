@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7aa381654805798fcdd24f588160bed15e037a2b
+source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
 
 ---
 
@@ -45,7 +45,7 @@ Als deskundige gebruiker, kunt u het volgen mogelijkheden op uw instantie van de
 
 ## Hoe te om e-mailleverbaarheid te vormen? {#how-to-configure-email-deliverability-}
 
-Naast de gids [over de](http://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html)draagbaarheid waarmee u aan de slag gaat, leest u de sectie over de configuratie van de e-mailleverbaarheid voor meer informatie over de manier waarop u uw exemplaar kunt configureren om de capaciteit voor het leveren van campagnes te maximaliseren.
+Naast de gids [over de](https://docs.adobe.com/content/help/en/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html)draagbaarheid waarmee u aan de slag gaat, leest u de sectie over de configuratie van de e-mailleverbaarheid voor meer informatie over de manier waarop u uw exemplaar kunt configureren om de capaciteit voor het leveren van campagnes te maximaliseren.
 
 [Klik hier voor meer](../../installation/using/email-deliverability.md)informatie.
 
