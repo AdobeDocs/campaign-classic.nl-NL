@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
 
 ---
 
@@ -26,7 +26,7 @@ De zaadadressen worden gebruikt aan doelontvangers die niet de bepaalde doelcrit
 
 Een van de belangrijkste redenen om ze te gebruiken is de bescherming **van** je mailinglijst. Door zaadadressen in te voegen in uw mailinglijst kunt u zien of het door een derde wordt gebruikt, aangezien de zaadadressen het bevat de leveringen ontvangen die naar uw postingslijst worden verzonden.
 
-Bovendien laten de zaadadressen u **voorproef en test de leveringenverpersoonlijking en het teruggeven** alvorens zij, door hen proefdrukken te verzenden (zie het [Gebruiken van zaadadressen als proef](../../delivery/using/steps-validating-the-delivery.md#using-seed-addresses-as-proof)).
+Bovendien laten de zaadadressen u **voorproef en test de leveringenverpersoonlijking en het teruggeven** alvorens zij, door hen proefdrukken te verzenden (zie het [Gebruiken van zaadadressen als proef](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof)).
 
 De zaadadreseigenschap heeft de volgende voordelen:
 
