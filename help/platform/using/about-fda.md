@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
+source-git-commit: 47fd157e369ddf6c67f0b2b467799cecc6e5a822
 
 ---
 
@@ -35,11 +35,11 @@ Met de optie FDA kunt u uw gegevensmodel uitbreiden in een database van derden. 
 
 Als u deze functionaliteit wilt gebruiken, moet u:
 
-1. Een externe database hebben die compatibel is met de Adobe Campagne FDA-module. De lijst met databasesystemen en compatibele versies wordt gedetailleerd weergegeven in de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html). Gebruikers moeten ook over de [benodigde machtigingen](#remote-database-access-rights) beschikken in Adobe Campaign en in de externe database.
-1. [Installeer de stuurprogramma](#specific-configurations-by-database-type) &#39;s die overeenkomen met uw database op de Adobe Campaign-server.
-1. [Maak en configureer een extern account](#connecting-to-the-database) waarmee u de verbinding tussen Adobe Campagne en de externe database tot stand kunt brengen. Raadpleeg deze [pagina](../../platform/using/external-accounts.md)voor meer informatie over beschikbare externe accounts.
-1. [Maak het schema](#creating-the-data-schema) van de externe database in Adobe Campaign. Hierdoor kunt u de gegevensstructuur van de externe database herkennen.
-1. Uiteindelijk, [creeer een nieuwe doelafbeelding](#defining-data-mapping) van het eerder gecreeerd schema, in het geval waar de ontvangers van uw leveringen uit het externe gegevensbestand komen. Dit brengt bepaalde beperkingen met zich mee, met name wat betreft de personalisering van de leveringen.
+1. Een externe database hebben die compatibel is met de Adobe Campagne FDA-module. De lijst met databasesystemen en compatibele versies wordt gedetailleerd weergegeven in de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html). Gebruikers moeten ook over de [benodigde machtigingen](../../platform/using/remote-database-access-rights.md) beschikken in Adobe Campaign en in de externe database.
+1. [Installeer de stuurprogramma](../../platform/using/specific-configuration-database.md) &#39;s die overeenkomen met uw database op de Adobe Campaign-server.
+1. [Maak en configureer een extern account](../../platform/using/connecting-to-database.md) waarmee u de verbinding tussen Adobe Campagne en de externe database tot stand kunt brengen. Raadpleeg deze [pagina](../../platform/using/external-accounts.md)voor meer informatie over beschikbare externe accounts.
+1. [Maak het schema](../../platform/using/creating-data-schema.md) van de externe database in Adobe Campaign. Hierdoor kunt u de gegevensstructuur van de externe database herkennen.
+1. Uiteindelijk, [creeer een nieuwe doelafbeelding](../../platform/using/defining-data-mapping.md) van het eerder gecreeerd schema, in het geval waar de ontvangers van uw leveringen uit het externe gegevensbestand komen. Dit brengt bepaalde beperkingen met zich mee, met name wat betreft de personalisering van de leveringen.
 
 Zodra het gegevensschema wordt gecreeerd, kunnen de gegevens in de werkschema&#39;s van de Campagne van Adobe worden verwerkt. Zie [deze sectie](../../workflow/using/executing-a-workflow.md#architecture)voor meer informatie.
 
