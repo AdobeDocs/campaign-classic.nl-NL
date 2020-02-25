@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -38,7 +38,7 @@ Met een **terugkerende levering** kunt u elke keer dat de activiteit wordt uitge
 
 Als u dit soort activiteiten bijvoorbeeld eens per maand uitvoert, krijgt u na een jaar 12 leveringen.
 
-De terugkomende leveringen worden gecreeerd binnen werkschema&#39;s via de [Terugkomende leveringsactiviteit](../../workflow/using/recurring-delivery.md). Een voorbeeld van deze activiteit die wordt gebruikt wordt getoond in deze sectie: Een terugkerende levering [maken in een doelworkflow](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-recurring-delivery-in-a-targeting-workflow).
+De terugkomende leveringen worden gecreeerd binnen werkschema&#39;s via de [Terugkomende leveringsactiviteit](../../workflow/using/recurring-delivery.md). Een voorbeeld van deze activiteit die wordt gebruikt wordt getoond in deze sectie: Een terugkerende levering [maken in een doelworkflow](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
 ## Doorlopende levering {#continuous-delivery}
 
