@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
 
 ---
 
 
 # Communicatiekanalen{#communication-channels}
 
-Met de Campagne van Adobe, kunt u kanaalcampagnes met inbegrip van e-mail, SMS, LIJNberichten, Push berichten en directe berichten verzenden, en hun doeltreffendheid meten gebruikend diverse specifieke [rapporten](../../reporting/using/reports-on-deliveries.md#accessing-existing-reports). Deze berichten worden ontworpen en verzonden door leveringen, en kunnen voor elke ontvanger worden gepersonaliseerd.
+Met de Campagne van Adobe, kunt u kanaalcampagnes met inbegrip van e-mail, SMS, LIJNberichten, Push berichten en directe berichten verzenden, en hun doeltreffendheid meten gebruikend diverse specifieke [rapporten](../../reporting/using/delivery-reports.md). Deze berichten worden ontworpen en verzonden door leveringen, en kunnen voor elke ontvanger worden gepersonaliseerd.
 
 De kernfuncties omvatten het richten, het bepalen en het personaliseren van berichten, de uitvoering van mededelingen, en de bijbehorende operationele rapporten. Het belangrijkste functionele toegangspunt is de leveringstovenaar. Dit toegangspunt leidt tot verschillende mogelijkheden die door Adobe Campaign worden gedekt.
 
