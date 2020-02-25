@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8b836ca3179b85877ec917a3bf28c94dbbac7772
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -36,7 +36,7 @@ Dit doet u als volgt:
 
 Het configuratieproces voor deze activiteit is gelijkaardig aan dat van het creëren van een leveringsmalplaatje in termen van de beschikbare opties. Zie deze [sectie](../../delivery/using/about-templates.md)voor meer informatie.
 
-Zie deze [sectie](../../campaign/using/marketing-campaign-deliveries.md#creating-a-recurring-delivery-in-a-targeting-workflow)voor een voorbeeld van deze activiteit die wordt gebruikt.
+Zie deze [sectie](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow)voor een voorbeeld van deze activiteit die wordt gebruikt.
 
 >[!NOTE]
 >
