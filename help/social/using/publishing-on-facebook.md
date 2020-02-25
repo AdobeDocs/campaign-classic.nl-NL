@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -159,7 +159,7 @@ Voer de verschillende velden in:
 
 1. Voer in het **[!UICONTROL Status]** veld de tekst in die onder de naam van de pagina wordt weergegeven.
 1. Voer in het **[!UICONTROL Name]** veld de titel van de publicatie in.
-1. Voer in het **[!UICONTROL Video code]** veld de code in van de YouTube-video. Voor de koppeling &#39;http://www.youtube.com/watch?v=abc123456&#39;&#39; is de videocode &#39;abc123456&#39;.
+1. Voer in het **[!UICONTROL Video code]** veld de code in van de YouTube-video. Voor de koppeling &#39;https://www.youtube.com/watch?v=abc123456&#39;&#39; is de videocode &#39;abc123456&#39;.
 1. Voer in het **[!UICONTROL Caption]** veld de tekst in die aan het einde van de publicatie wordt weergegeven.
 1. Ga naar het **[!UICONTROL Description]** gebied en ga de tekst in die onder de titel moet worden getoond.
 
