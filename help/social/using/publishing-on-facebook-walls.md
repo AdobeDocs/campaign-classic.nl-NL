@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ---
 
@@ -42,7 +42,7 @@ Begin door een Facebook-account en meerdere pagina&#39;s te maken: deze zullen w
 
 ## Een testpagina voor Facebook maken {#creating-a-test-facebook-page}
 
-We raden u aan een persoonlijke Facebook-pagina te maken voor het afleveren van proefdrukken (raadpleeg voor meer informatie de [proefdruk](#sending-the-proof)verzenden).
+We raden u aan een persoonlijke Facebook-pagina te maken voor het afleveren van proefdrukken (raadpleeg voor meer informatie de [proefdruk](../../social/using/publishing-on-facebook.md#sending-the-proof)verzenden).
 
 1. Meld u aan bij het Facebook-account waarmee u uw pagina&#39;s beheert.
 1. Maak een nieuwe Facebook-pagina.
