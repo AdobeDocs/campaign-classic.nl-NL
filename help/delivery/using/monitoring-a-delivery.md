@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
 
 ---
 
@@ -92,11 +92,11 @@ Van uw leveringsdashboard, wilt u de verwerkte berichten en leveringslogboeken c
 Sommige indicatoren of status kunnen onjuist of niet bijgewerkt zijn, dit kan met de volgende oplossingen worden opgelost:
 
 * Als uw leveringsstatus onjuist is, controleer dat alle noodzakelijke goedkeuringen voor deze levering zijn gedaan of de **[!UICONTROL operationMgt]** en **[!UICONTROL deliveryMgt]** werkschema&#39;s zonder fouten lopen. Dit kan ook zijn toe te schrijven aan de levering gebruikend een affiniteit die niet op de verzendende instantie wordt gevormd.
-* Als uw leveringsindicatoren nog bij nul zijn en als u op een midsourcingconfiguratie bent, controleer het **[!UICONTROL Mid-sourcing (delivery counters)]** technische werkschema. Start het als de status niet is ingesteld **[!UICONTROL Started]**. Vervolgens kunt u proberen de indicatoren opnieuw te berekenen door met de rechtermuisknop op de relevante levering in de Adobe Campagneverkenner te klikken en **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** te selecteren. Raadpleeg deze [sectie](../../reporting/using/reports-on-deliveries.md#tracking-indicators)voor meer informatie over trackingindicatoren.
-* Als uw leveringsteller niet overeenkomt met uw levering, probeert u de indicatoren opnieuw te berekenen door met de rechtermuisknop op de desbetreffende levering te klikken in de Adobe Campagneverkenner en **[!UICONTROL Actions]** > te selecteren **[!UICONTROL Recompute delivery and tracking indicators]** om opnieuw te synchroniseren. Raadpleeg deze [sectie](../../reporting/using/reports-on-deliveries.md#tracking-indicators)voor meer informatie over trackingindicatoren.
+* Als uw leveringsindicatoren nog bij nul zijn en als u op een midsourcingconfiguratie bent, controleer het **[!UICONTROL Mid-sourcing (delivery counters)]** technische werkschema. Start het als de status niet is ingesteld **[!UICONTROL Started]**. Vervolgens kunt u proberen de indicatoren opnieuw te berekenen door met de rechtermuisknop op de relevante levering in de Adobe Campagneverkenner te klikken en **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** te selecteren. Raadpleeg deze [sectie](../../reporting/using/delivery-reports.md#tracking-indicators)voor meer informatie over trackingindicatoren.
+* Als uw leveringsteller niet overeenkomt met uw levering, probeert u de indicatoren opnieuw te berekenen door met de rechtermuisknop op de desbetreffende levering te klikken in de Adobe Campagneverkenner en **[!UICONTROL Actions]** > te selecteren **[!UICONTROL Recompute delivery and tracking indicators]** om opnieuw te synchroniseren. Raadpleeg deze [sectie](../../reporting/using/delivery-reports.md#tracking-indicators)voor meer informatie over trackingindicatoren.
 * Als uw leveringsteller niet bijgewerkt is voor midsourcingimplementaties, controleert u of de **[!UICONTROL Mid-Sourcing (Delivery counters)]** technische workflow actief is. Raadpleeg deze [pagina](../../installation/using/mid-sourcing-deployment.md)voor meer informatie.
 
-U kunt uw leveringen ook bijhouden met verschillende rapporten via het leveringsdashboard. Zie deze [sectie](../../reporting/using/reports-on-deliveries.md#accessing-existing-reports)voor meer informatie.
+U kunt uw leveringen ook bijhouden met verschillende rapporten via het leveringsdashboard. Zie deze [sectie](../../reporting/using/delivery-reports.md)voor meer informatie.
 
 ## Prestatieproblemen {#performance-issues}
 
@@ -118,7 +118,7 @@ Nadat je op de **[!UICONTROL Send]** button hebt geklikt, lijkt het langer te du
 * Uw levering is mogelijk te groot om snel te worden verwerkt, dit kan gebeuren met een hoge mate van personalisatie in JavaScript of als uw levering meer dan 60 kbytes weegt. Raadpleeg de best practices [van Adobe Campagne](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) Delivery voor meer informatie over de richtlijnen voor inhoud.
 * Throttling zou binnen de Campagne MTA van Adobe kunnen voorgekomen zijn. Dit wordt veroorzaakt door:
 
-   * Berichten gepend (**[!UICONTROL quotas met]** bericht): er is voldaan aan de quota die zijn aangegeven in de declaratieve MX-regels die in de campagne zijn vastgesteld. Raadpleeg [deze pagina](../../delivery/using/technical-recommendations.md#quota-met)voor meer informatie over dit bericht. Raadpleeg [deze pagina](../../delivery/using/technical-recommendations.md#mx-rules)voor meer informatie over MX-regels.
+   * Berichten gepend (**[!UICONTROL quotas met]** bericht): er is voldaan aan de quota die zijn aangegeven in de declaratieve MX-regels die in de campagne zijn vastgesteld. Raadpleeg [deze pagina](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ)voor meer informatie over dit bericht. Raadpleeg [deze pagina](../../delivery/using/technical-recommendations.md#mx-rules)voor meer informatie over MX-regels.
    * Berichten gepend (**[!UICONTROL dynamic flow control]** bericht): Campagne MTA heeft fouten ontmoet toen het proberen om berichten voor bepaalde ISP te leveren die een vertraging veroorzaakt om te grote van een foutendichtheid te vermijden en zo het onder ogen zien van potentiële zwarte lijst.
 
 * Door een systeemprobleem kunnen servers niet met elkaar communiceren: dit kan het hele verzendingsproces vertragen . Controleer de servers om ervoor te zorgen dat er geen geheugen of middelkwesties zijn die Campagne in het proces kunnen beïnvloeden om de verpersoonlijkingsgegevens bijvoorbeeld te krijgen.
