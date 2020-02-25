@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 
 ---
 
@@ -125,7 +125,7 @@ In het volgende voorbeeld voegen we **mediaURl** en **mediaExt** toe om uitgebre
 
 1. Klik **[!UICONTROL Next]** om de ontwikkeltoepassing te configureren.
 
-1. Zorg ervoor dat dit ook **[!UICONTROL Integration key]** is gedefinieerd in de Adobe-campagne en in de toepassingscode via de SDK. Raadpleeg voor meer informatie: Campagne SDK [integreren in de mobiele toepassing](#integrating-campaign-sdk-into-the-mobile-application). Met deze integratietoets, die specifiek is voor elke toepassing, kunt u de mobiele toepassing koppelen aan het Adobe Campagne-platform.
+1. Zorg ervoor dat dit ook **[!UICONTROL Integration key]** is gedefinieerd in de Adobe-campagne en in de toepassingscode via de SDK. Raadpleeg voor meer informatie: Campagne SDK [integreren in de mobiele toepassing](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md). Met deze integratietoets, die specifiek is voor elke toepassing, kunt u de mobiele toepassing koppelen aan het Adobe Campagne-platform.
 
    >[!NOTE]
    >
@@ -256,7 +256,7 @@ Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
 1. Voer een **[!UICONTROL Label]** waarde in.
 
-1. Zorg ervoor dat dit ook **[!UICONTROL Integration key]** is gedefinieerd in de Adobe-campagne en in de toepassingscode via de SDK. Raadpleeg voor meer informatie: Campagne SDK [integreren in de mobiele toepassing](#integrating-campaign-sdk-into-the-mobile-application).
+1. Zorg ervoor dat dit ook **[!UICONTROL Integration key]** is gedefinieerd in de Adobe-campagne en in de toepassingscode via de SDK. Raadpleeg voor meer informatie: Campagne SDK [integreren in de mobiele toepassing](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
 
    >[!NOTE]
    >
@@ -280,7 +280,7 @@ Standaard slaat Adobe Campagne een sleutel op in het veld **[!UICONTROL User ide
 1. Definieer de toewijzing op het **[!UICONTROL Subscription parameters]** tabblad.
    >[!CAUTION]
    >
-   >Zorg ervoor dat de configuratienamen op het **[!UICONTROL Subscription parameters]** tabblad gelijk zijn aan die in de code van de mobiele toepassing. Raadpleeg de [Integrating Campaign SDK in de sectie over mobiele toepassingen](#integrating-campaign-sdk-into-the-mobile-application) .
+   >Zorg ervoor dat de configuratienamen op het **[!UICONTROL Subscription parameters]** tabblad gelijk zijn aan die in de code van de mobiele toepassing. Raadpleeg de [Integrating Campaign SDK in de sectie over mobiele toepassingen](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) .
 
 ### Stap 4: Android-berichten maken {#creating-android-delivery}
 
