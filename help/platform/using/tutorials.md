@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -56,4 +56,4 @@ Bekijk onze &#39;Hoe kan ik&#39;-video&#39;s om de belangrijkste functies van Ad
 * [Zaden en proefdrukken beheren in een e-mail](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/managing-seed-and-proofs.html): Meer informatie over het toevoegen van zaden en proefdrukken aan een bestaande e-mail in Adobe Campaign.
 * [Integratie](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/integrating/dynamics365-integration.html)van Adobe Campaign en Microsoft Dynamics 365: Leer hoe te om de Campagne van Adobe en de Dynamica van Microsoft te verbinden en te synchroniseren door de verbindingsmogelijkheden van CRM.
 
-Naast deze korte en gedetailleerde video&#39;s kunt u ook [trainingscursussen](https://training.adobe.com/training/courses.html) en [presentatievideo](https://www.adobe.com/training/video.html) &#39;s op onze website vinden.
+Naast deze korte en gedetailleerde video&#39;s kunt u ook [trainingscursussen](https://learning.adobe.com/catalog.html) en [presentatievideo](https://www.adobe.com/training/video.html) &#39;s op onze website vinden.
