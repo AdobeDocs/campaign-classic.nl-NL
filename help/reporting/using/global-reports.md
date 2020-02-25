@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c4e6a9273c920c9d125ec3fb18a0628109475a4e
+source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
 
 ---
 
@@ -39,12 +39,12 @@ Klik op de naam van de rapporten om deze weer te geven. De volgende rapporten zi
 * **[!UICONTROL Sharing to social networks]** : Zie [Delen naar sociale netwerken](#sharing-to-social-networks).
 * **[!UICONTROL Statistics on sharing activities]** : zie [Statistieken over het delen van activiteiten](#statistics-on-sharing-activities).
 * **[!UICONTROL Operating systems]** : zie [Besturingssystemen](#operating-systems).
-* **[!UICONTROL URLs and click streams]** : verwijst naar [URLs en klikt stromen](#urls-and-click-streams).
-* **[!UICONTROL Tracking indicators]** : zie [Trackingindicatoren](#tracking-indicators).
+* **[!UICONTROL URLs and click streams]** : verwijst naar [URLs en klikt stromen](../../reporting/using/delivery-reports.md#urls-and-click-streams).
+* **[!UICONTROL Tracking indicators]** : zie [Trackingindicatoren](../../reporting/using/delivery-reports.md#tracking-indicators).
 * **[!UICONTROL Non-deliverables and bounces]** : verwijzen naar [Niet te leveren items en stuitingen](#non-deliverables-and-bounces).
 * **[!UICONTROL User activities]** : zie [Gebruikersactiviteiten](#user-activities).
 * **[!UICONTROL Subscription tracking]** : Raadpleeg [Abonnementsbeheer](#subscription-tracking).
-* **[!UICONTROL Delivery summary]** : raadpleeg het overzicht [van de](#delivery-summary)levering.
+* **[!UICONTROL Delivery summary]** : raadpleeg het overzicht [van de](../../reporting/using/delivery-reports.md#delivery-summary)levering.
 * **[!UICONTROL Delivery statistics]** : zie [Leveringsstatistieken](#delivery-statistics).
 * **[!UICONTROL Breakdown of opens]** : Zie [Uitsplitsing van openen](#breakdown-of-opens).
 
@@ -64,7 +64,7 @@ Dit rapport toont de uitsplitsing van opent, klikt en transacties per half uur, 
 
 De volgende opties zijn beschikbaar:
 
-* **[!UICONTROL Opens]** : Het totale aantal geopende berichten. E-mails in tekstindeling worden niet in aanmerking genomen. Voor meer informatie over het volgen opent, verwijs naar het [Volgen opent](#tracking-opens-).
+* **[!UICONTROL Opens]** : Het totale aantal geopende berichten. E-mails in tekstindeling worden niet in aanmerking genomen. Voor meer informatie over het volgen opent, verwijs naar het [Volgen opent](../../reporting/using/indicator-calculation.md#tracking-opens-).
 * **[!UICONTROL Clicks]** : Het totale aantal klikken op koppelingen in leveringen. Er wordt geen rekening gehouden met klikken op abonnementkoppelingen en spiegelpagina&#39;s.
 * **[!UICONTROL Transactions]** : Het totale aantal transacties nadat een bericht is ontvangen. Om een transactie in aanmerking te nemen, moet een webtrackingtag van het transactietype in de overeenkomstige Web-pagina worden opgenomen. Webtracking-configuratie wordt in [deze sectie](../../configuration/using/about-web-tracking.md)weergegeven.
 
@@ -302,7 +302,7 @@ De volgende indicatoren worden gebruikt:
 
 In dit rapport wordt de uitsplitsing van de openingen per besturingssysteem, apparaat en browser voor de betrokken periode weergegeven. Voor elke categorie worden twee grafieken gebruikt. De eerste toont statistieken betreffende opent op een computer en mobiele apparaten. In het tweede voorbeeld worden alleen statistieken weergegeven over het openen op mobiele apparaten.
 
-Het aantal openingen komt overeen met het totale aantal geopende berichten. E-mails met tekstopmaak worden niet geteld. Voor meer informatie over het Volgen opent opent, verwijs naar het [Volgen opent](#tracking-opens-) sectie.
+Het aantal openingen komt overeen met het totale aantal geopende berichten. E-mails met tekstopmaak worden niet geteld. Voor meer informatie over het Volgen opent opent, verwijs naar het [Volgen opent](../../reporting/using/indicator-calculation.md#tracking-opens-) sectie.
 
 ![](assets/dlv_useragent_report.png)
 
