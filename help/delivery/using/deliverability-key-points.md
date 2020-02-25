@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb1f5acabbd976a92219424c14813b7783b56f38
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -61,7 +61,7 @@ ISPs heeft gewoonlijk een duidelijk middel om een ontvangen bericht als spam te 
 
 ## Verzenden naar honingsteunadressen {#honeypot-addresses}
 
-ISPs en andere organisaties (verwijs naar http://www.projecthoneypot.org/) maken gebruik van brievenbussen die niet aan fysieke personen beantwoorden maar eenvoudig worden gecreeerd om spammers te bedriegen. Deze zogenaamde &quot;honingpot&quot;-adressen worden op het web gepubliceerd om door spambots te worden verzameld en aldus illegale afzenders te vangen. Het gebruik van een dubbele opt-in-mechanisme sluit het toevoegen van dit adres aan een lijst uit. Wanneer u een lijst van derden gebruikt, moet u zeker zijn van de methoden die door de onderhoudsleider worden gebruikt.
+ISPs en andere organisaties (verwijs naar https://www.projecthoneypot.org/) maken gebruik van brievenbussen die niet aan fysieke personen beantwoorden maar eenvoudig worden gecreeerd om spammers te bedriegen. Deze zogenaamde &quot;honingpot&quot;-adressen worden op het web gepubliceerd om door spambots te worden verzameld en aldus illegale afzenders te vangen. Het gebruik van een dubbele opt-in-mechanisme sluit het toevoegen van dit adres aan een lijst uit. Wanneer u een lijst van derden gebruikt, moet u zeker zijn van de methoden die door de onderhoudsleider worden gebruikt.
 
 ## De inhoud van het bericht aanpassen {#message-content}
 
