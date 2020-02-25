@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -376,7 +376,7 @@ U kunt een uploadveld toevoegen aan een pagina. Deze functionaliteit kan bijvoor
 
 Als u een uploadveld wilt invoegen in een formulierpagina, selecteert u het **[!UICONTROL Advanced controls > File...]** menu op de werkbalk van de pagina-editor.
 
-De geüploade bestanden worden standaard opgeslagen in bronbestanden die via het **[!UICONTROL Resources > Online > Public resources]** menu toegankelijk zijn. U kunt een script gebruiken om dit gedrag te wijzigen. Dit script kan de functies gebruiken die zijn gedefinieerd in de JSAPI-documentatie [van](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)Campagne, inclusief de functies die betrekking hebben op het manipuleren van bestanden.
+De geüploade bestanden worden standaard opgeslagen in bronbestanden die via het **[!UICONTROL Resources > Online > Public resources]** menu toegankelijk zijn. U kunt een script gebruiken om dit gedrag te wijzigen. Dit script kan de functies gebruiken die zijn gedefinieerd in de JSAPI-documentatie [van](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)Campagne, inclusief de functies die betrekking hebben op het manipuleren van bestanden.
 
 U kunt de koppeling naar deze bestanden opslaan in een lokale variabele of in een databaseveld. U kunt bijvoorbeeld het ontvangende schema uitbreiden om een koppeling naar op een bestand gebaseerde bronnen toe te voegen.
 
