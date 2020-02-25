@@ -15,25 +15,24 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 21d808695bfde2fb3220964c066558ad30952443
+source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
 
 ---
 
 
-# E-maillevering{#email-deliverability}
+# Technische e-mailconfiguraties{#email-deliverability}
 
 ## Overzicht {#overview}
 
-In de volgende sectie vindt u een overzicht van de configuratie die is vereist voor het besturen van de uitvoer van Adobe Campaign-instanties bij het afspelen van berichten.
+In het volgende gedeelte vindt u een overzicht van de configuratie die is vereist voor het beheren van de uitvoer van Adobe Campaign-instanties bij het verzenden van e-mails.
 
 >[!NOTE]
 >
->Sommige configuraties kunnen alleen door Adobe worden uitgevoerd voor implementaties die worden gehost door Adobe. Bijvoorbeeld, om tot de server en de dossiers van de instantieconfiguratie toegang te hebben. Meer over de verschillende plaatsingen leren, verwijs naar de [Hosting modelsectie](../../installation/using/hosting-models.md) of naar [dit artikel](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).\
->Raadpleeg de [gids](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) Aan de slag die de concepten en de beste werkwijzen met betrekking tot leverbaarheid presenteert.
+>Sommige configuraties kunnen alleen door Adobe worden uitgevoerd voor implementaties die door Adobe worden gehost, bijvoorbeeld voor toegang tot de server- en instantieconfiguratiebestanden. Meer over de verschillende plaatsingen leren, verwijs naar de [Hosting modelsectie](../../installation/using/hosting-models.md) of naar [dit artikel](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
 
 Raadpleeg deze [sectie](../../delivery/using/about-deliverability.md)voor meer informatie over de concepten en beste praktijken met betrekking tot de leverbaarheid.
 
-Alle technische aanbevelingen met betrekking tot het efficiënt verzenden en ontvangen van berichten door een Adobe Campagneplatform zijn beschikbaar in deze [sectie](../../delivery/using/technical-recommendations.md).
+Alle technische aanbevelingen met betrekking tot het efficiënt verzenden en ontvangen van e-mails door een Adobe Campagneplatform zijn beschikbaar in deze [sectie](../../delivery/using/technical-recommendations.md).
 
 ## Exploitatiebeginsel {#operating-principle}
 
