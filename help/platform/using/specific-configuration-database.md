@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
+source-git-commit: 47fd157e369ddf6c67f0b2b467799cecc6e5a822
 
 ---
 
@@ -169,7 +169,6 @@ Als algemene regel geldt dat u de corresponderende clientlaag in de externe data
    /etc/init.d/nlserver6 stop
    /etc/init.d/nlserver6 start
    ```
-
 1. In Campaign Classic configureert u uw Snowflake externe account in Campaign Classic. Maak het **[!UICONTROL Explorer]** menu los van het **[!UICONTROL Administration]** menu.
 
 1. Ontgrendel het **[!UICONTROL Platform]** menu en klik **[!UICONTROL External accounts]**.
@@ -393,7 +392,7 @@ Raadpleeg dit [artikel](https://helpx.adobe.com/campaign/kb/access-hadoop-2.html
    User/Password: admin/<your password here>
    ```
 
-1. Maak de externe account van Hadoop, zoals wordt beschreven in de sectie [Een gedeelde verbinding](#creating-a-shared-connection) maken.
+1. Maak de externe account van Hadoop, zoals wordt beschreven in de sectie [Een gedeelde verbinding](../../message-center/using/creating-a-shared-connection.md) maken.
 
 ### Voor Linux {#for-linux}
 
@@ -448,7 +447,7 @@ Raadpleeg dit [artikel](https://helpx.adobe.com/campaign/kb/access-hadoop-2.html
    >
    >De parameter **UseNativeQuery** is hier erg belangrijk. De campagne is Hive-bewust en zal niet correct werken tenzij UseNativeQuery wordt geplaatst. Doorgaans herschrijft het stuurprogramma of de SQL-connector van Hive query&#39;s en wordt de kolomvolgorde gewijzigd.
 
-   De authenticatie-instelling is afhankelijk van de Hive/Hadoop-configuratie. Bijvoorbeeld, voor HD Insight, gebruik AuthMech=6 voor gebruiker/wachtwoordauthentificatie, zoals [hier](http://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm)beschreven.
+   De authenticatie-instelling is afhankelijk van de Hive/Hadoop-configuratie. Bijvoorbeeld, voor HD Insight, gebruik AuthMech=6 voor gebruiker/wachtwoordauthentificatie, zoals [hier](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm)beschreven.
 
 1. Exporteer de variabelen.
 
@@ -480,7 +479,7 @@ Raadpleeg dit [artikel](https://helpx.adobe.com/campaign/kb/access-hadoop-2.html
    isql vorac -v
    ```
 
-1. Maak de externe account van Hadoop, zoals wordt beschreven in de sectie [Een gedeelde verbinding](#creating-a-shared-connection) maken.
+1. Maak de externe account van Hadoop, zoals wordt beschreven in de sectie [Een gedeelde verbinding](../../message-center/using/creating-a-shared-connection.md) maken.
 
 ## Toegang tot Netezza configureren {#configure-access-to-netezza}
 
@@ -529,7 +528,7 @@ Als u verbinding maakt met een externe Netezza-database in FDA, hebt u hieronder
    * **ODBCINI**: locatie van het bestand odbc.ini (bijvoorbeeld /etc/odbc.ini).
    * **NZ_ODBC_INI_PATH**: locatie van het bestand odbc.ini. Netezza vereist ook deze tweede variabele voor het gebruiken van het odbc.ini- dossier.
 
-1. Maak de externe Netezza-account, zoals wordt beschreven in het gedeelte [Een gedeelde verbinding](#creating-a-shared-connection) maken.
+1. Maak de externe Netezza-account, zoals wordt beschreven in het gedeelte [Een gedeelde verbinding](../../message-center/using/creating-a-shared-connection.md) maken.
 
 >[!NOTE]
 >
@@ -625,7 +624,7 @@ Als u verbinding maakt met een externe Sybase-IQ-database in FDA, hebt u hierond
    * Als u een bestand customer.sh gebruikt om het pad te declareren: Voeg het pad /opt/sybase/IQ-16_0/lib64 toe voor de variabele LD_LIBRARY_PATH.
    * Gebruik anders een Unix-opdracht.
 
-1. Maak een nieuwe externe FDA-account, zoals wordt beschreven in de sectie [Een gedeelde verbinding](#creating-a-shared-connection) maken. Voor Sybase IQ komt de servernaam overeen met de ODBC-verbinding (`<server_alias>`) die is gedefinieerd in stap 5. Het is niet noodzakelijkerwijs de naam van de server zelf.
+1. Maak een nieuwe externe FDA-account, zoals wordt beschreven in de sectie [Een gedeelde verbinding](../../message-center/using/creating-a-shared-connection.md) maken. Voor Sybase IQ komt de servernaam overeen met de ODBC-verbinding (`<server_alias>`) die is gedefinieerd in stap 5. Het is niet noodzakelijkerwijs de naam van de server zelf.
 
 >[!NOTE]
 >
@@ -635,7 +634,7 @@ Als u verbinding maakt met een externe Sybase-IQ-database in FDA, hebt u hierond
 
 Als u verbinding wilt maken met een externe database met Teradata in FDA, hebt u bepaalde aanvullende configuraties op de Adobe Campagneserver nodig. Raadpleeg dit [artikel](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html)voor meer informatie over het configureren van uw Teradata-database.
 
-1. Installeer het [ODBC-stuurprogramma voor Teradata](http://downloads.teradata.com/download/connectivity/odbc-driver/linux).
+1. Installeer het [ODBC-stuurprogramma voor Teradata](https://downloads.teradata.com/download/connectivity/odbc-driver/linux).
 
    Het bestaat uit drie pakketten die in de volgende volgorde op Red Hat (of CentOS)/Suse kunnen worden geïnstalleerd:
 
@@ -712,4 +711,4 @@ Als u verbinding maakt met een externe SAP HANA-database in FDA, hebt u bepaalde
    * **LD_LIBRARY_PATH**: Het zou de verbinding aan uw cliënt van SAP Hana (/usr/sap/hdbclient/libodbcHDB.so) door gebrek moeten omvatten.
    * **ODBCINI**: locatie van het bestand odbc.ini (bijvoorbeeld /etc/odbc.ini).
 
-1. Maak de externe SAP Hana-account, zoals wordt beschreven in de sectie [Een gedeelde verbinding](#creating-a-shared-connection) maken.
+1. Maak de externe SAP Hana-account, zoals wordt beschreven in de sectie [Een gedeelde verbinding](../../message-center/using/creating-a-shared-connection.md) maken.
