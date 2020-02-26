@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7c4e4c7d7433f782f810fdc2ecdeeedacd72b6c6
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -52,6 +52,6 @@ Met een wizard kunt u de frequentie en de geldigheidsperiode van de activiteit d
 
    ![](assets/s_user_segmentation_scheduler5.png)
 
-Het gebruiken van een planneractiviteit kan tot verscheidene uitvoeringen van een werkschema leiden die tezelfdertijd lopen. Bijvoorbeeld, kunt u een planner hebben die de werkschemauitvoering elk uur teweegbrengt, maar soms neemt de uitvoering van het volledige werkschema meer dan een uur. U kunt de uitvoering overslaan als de workflow al wordt uitgevoerd. Raadpleeg [deze pagina](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-execution)voor meer informatie over het voorkomen van gelijktijdige uitvoering van een workflow.
+Het gebruiken van een planneractiviteit kan tot verscheidene uitvoeringen van een werkschema leiden die tezelfdertijd lopen. Bijvoorbeeld, kunt u een planner hebben die de werkschemauitvoering elk uur teweegbrengt, maar soms neemt de uitvoering van het volledige werkschema meer dan een uur. U kunt de uitvoering overslaan als de workflow al wordt uitgevoerd. Raadpleeg [deze pagina](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions)voor meer informatie over het voorkomen van gelijktijdige uitvoering van een workflow.
 
 De overgang kan enkele uren later worden geactiveerd als de workflow een taak op lange termijn, zoals importeren, zou uitvoeren of als de wfserver-module een tijd zou zijn gestopt. In dit geval, kan het noodzakelijk zijn om de uitvoering van de taak te beperken die door de planner tot een bepaalde tijdwaaier wordt geactiveerd.
