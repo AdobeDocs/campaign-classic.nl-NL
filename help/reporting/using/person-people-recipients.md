@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
 
 ---
 
@@ -32,7 +32,7 @@ Met dit voorbeeld krijgt u inzicht in het verschil tussen een persoon/persoon en
 
 >[!NOTE]
 >
->Deze indicatoren worden in het **[!UICONTROL Tracking indicators]** verslag gebruikt. Zie [Trackingindicatoren](#tracking-indicators)voor meer informatie.
+>Deze indicatoren worden in het **[!UICONTROL Tracking indicators]** verslag gebruikt. Zie [Trackingindicatoren](../../reporting/using/delivery-reports.md#tracking-indicators)voor meer informatie.
 
 Er worden drie koppelingen toegevoegd aan een levering. Het wordt verzonden naar 4 ontvangers:
 
