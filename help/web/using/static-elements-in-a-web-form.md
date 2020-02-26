@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -35,7 +35,7 @@ De volgende veldtypen zijn beschikbaar:
 
    >[!NOTE]
    >
-   >Aan de serverzijde kan het script de functies gebruiken die zijn gedefinieerd in de [Campagne JSAPI-documentatie](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html).
+   >Aan de serverzijde kan het script de functies gebruiken die zijn gedefinieerd in de [Campagne JSAPI-documentatie](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
 ## HTML-inhoud invoegen {#inserting-html-content}
 
