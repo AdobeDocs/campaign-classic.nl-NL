@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -63,7 +63,7 @@ Dit type van configuratie kan een groot aantal ontvangers (500.000 tot 1.000.000
 
 ### De toepassingsserver installeren {#installing-the-application-server}
 
-Voer de stappen uit om een zelfstandige instantie van de Adobe Campagne-toepassingsserver te installeren tot de database is gemaakt (stap 12). Zie [Installeren en configureren (enkele computer)](#installing-and-configuring--single-machine-).
+Voer de stappen uit om een zelfstandige instantie van de Adobe Campagne-toepassingsserver te installeren tot de database is gemaakt (stap 12). Zie [Installeren en configureren (enkele computer)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
 Aangezien de computer geen volgende server is, neem niet de integratie met de server van het Web in rekening.
 
