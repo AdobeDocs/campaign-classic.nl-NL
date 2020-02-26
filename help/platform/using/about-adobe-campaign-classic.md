@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ed5390b4f620c3cddaf9b856f3354dc5f06f4d98
+source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
 
 ---
 
@@ -62,7 +62,7 @@ Trek de aandacht van uw klanten en verbeter reactiesnelheden dankzij de geavance
 
 ### Analyse en rapportage {#analysis-and-reporting}
 
-Met Adobe Campaign kunt u het gedrag van uw klanten volgen en interpreteren door hun gegevens en profielen geleidelijk te verrijken. Met de rapportage- en analyseprogramma&#39;s kunt u profiteren van elke nieuwe campagne, uw marketinginitiatieven beter richten en hun impact en rendement op investeringen optimaliseren. Raadpleeg [deze pagina](../../reporting/using/reports-on-deliveries.md#accessing-existing-reports) voor meer informatie.
+Met Adobe Campaign kunt u het gedrag van uw klanten volgen en interpreteren door hun gegevens en profielen geleidelijk te verrijken. Met de rapportage- en analyseprogramma&#39;s kunt u profiteren van elke nieuwe campagne, uw marketinginitiatieven beter richten en hun impact en rendement op investeringen optimaliseren. Raadpleeg [deze pagina](../../reporting/using/delivery-reports.md) voor meer informatie.
 
 ### Adobe Experience Cloud-integratie {#adobe-experience-cloud-integrations}
 
