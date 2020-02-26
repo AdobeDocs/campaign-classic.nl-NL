@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cc6f0f2989977c5a199dbfd413c6a2bac4628545
+source-git-commit: 230ff1a8453cf512b7da828cdcdd49edca59331c
 
 ---
 
@@ -25,6 +25,20 @@ Meer informatie over alle nieuwste updates voor de documentatie van Adobe Campai
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates voor elke release van Adobe Campaign Classic.
 
 U kunt ook de opmerkingen bij de release [Adobe Campaign Classic raadplegen](../../rn/using/latest-release.md).
+
+## februari 2020 {#february-2020}
+
+Er is nu een nieuwe sectie beschikbaar met de aanbevolen procedures en aanbevelingen voor het ontwerpen van het gegevensmodel van de Adobe-campagne. [Meer informatie](../../configuration/using/data-model-best-practices.md)
+
+De sectie &quot;E-maillevering&quot; heet nu gewijzigd in &quot;Configuraties van technische e-mail&quot;. [Meer informatie](../../installation/using/email-deliverability.md)
+
+Het document met veelgestelde vragen over de aflevering is bijgewerkt met meer informatie over het foutbericht &#39;met quota&#39;s beantwoord&#39;. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ)
+
+AMP for Email wordt nu ondersteund door drie e-mailproviders (Gmail, Outlook en Mail.ru). De sectie waarin wordt beschreven hoe u interactieve inhoud met AMP definieert, is bijgewerkt. [Meer informatie](../../delivery/using/defining-interactive-content.md)
+
+De sectie E-mailarchivering is verduidelijkt. [Meer informatie](../../installation/using/email-archiving.md#recommendations-and-limitations)
+
+
 
 ## 20.1 - 17/02/2020{#release-20-1}
 
@@ -67,12 +81,6 @@ Er is een beperking toegevoegd bij het gebruik van een queryactiviteit in een wo
 Er is een nieuwe sectie toegevoegd waarin de verbeterde regels voor de validatie van e-mailadressen worden beschreven voor het verzenden van een adres naar quarantaine in geval van een soft error. [Meer informatie](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
 De parameter van het configuratiedossier die erop wijst dat een instantie Verbeterde MTA of niet gebruikt is nu gedocumenteerd. [Meer informatie](../../installation/using/the-server-configuration-file.md#mta)
-
-## februari 2020 {#february-2020}
-
-AMP for Email wordt nu ondersteund door drie e-mailproviders (Gmail, Outlook en Mail.ru). De sectie waarin wordt beschreven hoe u interactieve inhoud met AMP definieert, is bijgewerkt. [Meer informatie](../../delivery/using/defining-interactive-content.md)
-
-De sectie E-mailarchivering is verduidelijkt. [Meer informatie](../../installation/using/email-archiving.md#recommendations-and-limitations)
 
 ## januari 2020 {#january-2020}
 
