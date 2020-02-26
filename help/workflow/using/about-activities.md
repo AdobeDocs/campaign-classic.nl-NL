@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 71662675e347e5f5b289afa03e2898e6ce0ecaa9
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -26,7 +26,7 @@ In deze sectie worden alle beschikbare activiteiten beschreven. Afhankelijk van 
 
 Workflowactiviteiten worden gegroepeerd op categorie. Er zijn vier tabbladen tegelijk beschikbaar.
 
-In de campagneworkflows wordt het **[!UICONTROL Events]** tabblad vervangen door het **[!UICONTROL Deliveries]** tabblad. De activiteiten op dit tabblad worden beschreven in de sectie [Actie-activiteiten](#action-activities) .
+In de campagneworkflows wordt het **[!UICONTROL Events]** tabblad vervangen door het **[!UICONTROL Deliveries]** tabblad. De activiteiten op dit tabblad worden beschreven in de sectie [Actie-activiteiten](../../workflow/using/about-action-activities.md) .
 
 ![](assets/wf-activity-tabs.png)
 
