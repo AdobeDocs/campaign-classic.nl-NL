@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
+source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
 
 ---
 
@@ -72,7 +72,7 @@ Begin door een nieuwe levering te maken.
    >
    >**[!UICONTROL Badge]** en **[!UICONTROL Alert and badge]** typemeldingen kunt u de waarde van de badge wijzigen (het nummer boven het logo van de mobiele toepassing). Als u de badge wilt vernieuwen, hoeft u alleen 0 als waarde in te voeren. Als het veld leeg is, verandert de waarde van de badge niet.
 
-1. Met **[!UICONTROL Action button]** de optie kunt u een label definiëren voor de actieknop die wordt weergegeven in de waarschuwingsberichten (veld **action_loc_key** van de payload). Als uw iOS-toepassing landinstellbare tekenreeksen beheert (**Localizable.strings**), voert u de bijbehorende sleutel in dit veld in. Als uw toepassing geen landinstellbare tekst beheert, voert u het label in dat u wilt zien op de actieknop. Raadpleeg de documentatie [van](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.md#//apple_ref/doc/uid/TP40008194-CH10-SW1) Apple voor meer informatie over landinstellbare tekenreeksen.
+1. Met **[!UICONTROL Action button]** de optie kunt u een label definiëren voor de actieknop die wordt weergegeven in de waarschuwingsberichten (veld **action_loc_key** van de payload). Als uw iOS-toepassing landinstellbare tekenreeksen beheert (**Localizable.strings**), voert u de bijbehorende sleutel in dit veld in. Als uw toepassing geen landinstellbare tekst beheert, voert u het label in dat u wilt zien op de actieknop. Raadpleeg de documentatie [van](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) Apple voor meer informatie over landinstellbare tekenreeksen.
 1. Selecteer in het **[!UICONTROL Play a sound]** veld het geluid dat door de mobiele terminal moet worden afgespeeld wanneer het bericht wordt ontvangen.
 
    >[!NOTE]
