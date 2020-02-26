@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 994ec35e37a1c26e83a8dd2ae31f6594cadd4c45
+source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ---
 
@@ -106,7 +106,7 @@ Met de Adobe Campagne Digital Content Editor kunt u een openingspagina ontwerpen
 
 ## Hoe kan ik leveringen volgen? {#how-can-i-track-deliveries-}
 
-U kunt leveringen volgen die met de Klassiek van de Campagne door specifieke [leveringsrapporten](../../reporting/using/reports-on-deliveries.md#delivery-reports) worden verzonden en dan uw leveringen controleren.
+U kunt leveringen volgen die met de Klassiek van de Campagne door specifieke [leveringsrapporten](../../reporting/using/delivery-reports.md) worden verzonden en dan uw leveringen controleren.
 
 Meer informatie over beheer van bijhouden in Campagne vindt u op [deze pagina](https://helpx.adobe.com/campaign/kb/acc-tracking.html).
 
