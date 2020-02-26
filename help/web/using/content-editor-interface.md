@@ -16,7 +16,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -29,7 +29,7 @@ Het DCE-bewerkingsvenster is onderverdeeld in drie verschillende secties. Hierme
 
 ![](assets/dce_decoupe_window_nb.png)
 
-1. De **bovenste** sectie is een weergavegebied voor berichten aan de gebruiker. Deze berichten wijzen op het statuut van de de toepassingsstatus van het Web of de levering die evenals waarschuwingen en foutenmeldingen met betrekking tot de inhoud wordt gecreeerd. Raadpleeg de status van [HTML-inhoud voor meer informatie](#html-content-statuses).
+1. De **bovenste** sectie is een weergavegebied voor berichten aan de gebruiker. Deze berichten wijzen op het statuut van de de toepassingsstatus van het Web of de levering die evenals waarschuwingen en foutenmeldingen met betrekking tot de inhoud wordt gecreeerd. Raadpleeg de status van [HTML-inhoud voor meer informatie](../../web/using/content-editing-best-practices.md#html-content-statuses).
 1. De sectie **links** van het venster is het gebied voor het bewerken van inhoud. Vanuit dit gebied kan de gebruiker rechtstreeks met de inhoud communiceren via de pop-upwerkbalk: voegt een koppeling in een afbeelding in, wijzigt het lettertype, verwijdert een veld, enzovoort. Zie Formulieren [](../../web/using/editing-content.md#editing-forms)bewerken voor meer informatie.
 1. De sectie **rechts** van het venster is het gebied van het bedieningspaneel. In dit gebied worden de verschillende opties voor de editor gegroepeerd, met name de opties voor het configureren van de paginakop en de algemene opties voor een blok: Voeg een rand toe, verbind een gegevensbestandgebied met een inputstreek, toegang Web-pagina eigenschappen, enz. Raadpleeg de secties [Algemene opties](#global-options) en Inhoud [](../../web/using/editing-content.md) bewerken voor meer informatie.
 
