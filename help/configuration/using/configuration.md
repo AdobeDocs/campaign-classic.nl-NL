@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -96,7 +96,7 @@ De opdrachten worden in dezelfde volgorde weergegeven als in het XML-document.
 
 Met een opdrachtscheidingsteken kunt u een scheidingsbalk tussen opdrachten weergeven. Deze wordt aangegeven met de **&#39;-&#39;** waarde in het opdrachtlabel.
 
-De facultatieve aanwezigheid van de **`<soapcall>`** markering met zijn inputparameters bepaalt de vraag van een methode van de ZEEP die moet worden uitgevoerd. Raadpleeg de documentatie [van](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)Campagne JSAPI voor meer informatie over de SOAP API.
+De facultatieve aanwezigheid van de **`<soapcall>`** markering met zijn inputparameters bepaalt de vraag van een methode van de ZEEP die moet worden uitgevoerd. Raadpleeg de documentatie [van](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)Campagne JSAPI voor meer informatie over de SOAP API.
 
 De formuliercontext kan via de **`<enter>`** tag worden bijgewerkt bij de initialisatie. Raadpleeg de documentatie bij invoerformulieren voor meer informatie over deze tag.
 
@@ -269,7 +269,7 @@ De opdrachten worden in dezelfde volgorde weergegeven als in het XML-document.
 
 Met een opdrachtscheidingsteken kunt u een scheidingsbalk tussen opdrachten weergeven. Deze wordt aangegeven met de **&#39;-&#39;** waarde in het opdrachtlabel.
 
-De facultatieve aanwezigheid van de **`<soapcall>`** markering met zijn inputparameters bepaalt de vraag van een methode van de ZEEP die moet worden uitgevoerd. Raadpleeg de documentatie [van](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)Campagne JSAPI voor meer informatie over SOAP API&#39;s.
+De facultatieve aanwezigheid van de **`<soapcall>`** markering met zijn inputparameters bepaalt de vraag van een methode van de ZEEP die moet worden uitgevoerd. Raadpleeg de documentatie [van](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)Campagne JSAPI voor meer informatie over SOAP API&#39;s.
 
 De formuliercontext kan worden bijgewerkt bij initialisatie via de **`<enter>`** tag. Raadpleeg de documentatie bij het invoerformulier voor meer informatie over deze tag.
 
