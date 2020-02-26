@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: b74ea9a6b079bbe88ed17a79e532bd8ce6ce13ae
 
 ---
 
@@ -35,19 +35,19 @@ U kunt de uitvoering van leveringen bijhouden via verschillende rapporten die to
 
    Standaard zijn de volgende rapporten beschikbaar:
 
-   * **[!UICONTROL Delivery throughput]** : Raadpleeg de [leveringstijd](#delivery-throughput).
-   * **[!UICONTROL Sharing to social networks]** : Zie [Delen naar sociale netwerken](#sharing-to-social-networks).
-   * **[!UICONTROL Statistics on sharing activities]** : zie [Statistieken over het delen van activiteiten](#statistics-on-sharing-activities).
+   * **[!UICONTROL Delivery throughput]** : Raadpleeg de [leveringstijd](../../reporting/using/global-reports.md#delivery-throughput).
+   * **[!UICONTROL Sharing to social networks]** : Zie [Delen naar sociale netwerken](../../reporting/using/global-reports.md#sharing-to-social-networks).
+   * **[!UICONTROL Statistics on sharing activities]** : zie [Statistieken over het delen van activiteiten](../../reporting/using/global-reports.md#statistics-on-sharing-activities).
    * **[!UICONTROL Hot clicks]** : zie [Hete kliks](#hot-clicks).
    * **[!UICONTROL Tracking statistics]** : verwijzen naar [volgstatistieken](#tracking-statistics)
    * **[!UICONTROL URLs and click streams]** : verwijst naar [URLs en klikt stromen](#urls-and-click-streams).
    * **[!UICONTROL Tracking indicators]** : zie [Trackingindicatoren](#tracking-indicators).
-   * **[!UICONTROL Non-deliverables and bounces]** : verwijzen naar [Niet te leveren items en stuitingen](#non-deliverables-and-bounces).
-   * **[!UICONTROL User activities]** : zie [Gebruikersactiviteiten](#user-activities).
+   * **[!UICONTROL Non-deliverables and bounces]** : verwijzen naar [Niet te leveren items en stuitingen](../../reporting/using/global-reports.md#non-deliverables-and-bounces).
+   * **[!UICONTROL User activities]** : zie [Gebruikersactiviteiten](../../reporting/using/global-reports.md#user-activities).
    * **[!UICONTROL Delivery summary]** : raadpleeg het overzicht [van de](#delivery-summary)levering.
-   * **[!UICONTROL Subscription tracking]** : Raadpleeg [Abonnementsbeheer](#subscription-tracking).
-   * **[!UICONTROL Delivery statistics]** : zie [Leveringsstatistieken](#delivery-statistics).
-   * **[!UICONTROL Breakdown of opens]** : Zie [Uitsplitsing van openen](#breakdown-of-opens).
+   * **[!UICONTROL Subscription tracking]** : Raadpleeg [Abonnementsbeheer](../../reporting/using/global-reports.md#subscription-tracking).
+   * **[!UICONTROL Delivery statistics]** : zie [Leveringsstatistieken](../../reporting/using/global-reports.md#delivery-statistics).
+   * **[!UICONTROL Breakdown of opens]** : Zie [Uitsplitsing van openen](../../reporting/using/global-reports.md#breakdown-of-opens).
 
 ## Traceringsindicatoren {#tracking-indicators}
 
@@ -55,7 +55,7 @@ Dit rapport combineert de belangrijkste indicatoren voor het volgen van het gedr
 
 >[!NOTE]
 >
->Waarden die worden berekend op basis van berichten die worden geopend, zijn altijd schattingen, vanwege de foutmarge die is gekoppeld aan e-mails in tekstindeling. In de **[!UICONTROL Distinct opens/Sum of opens for the population reached]** indicatoren wordt met deze foutenmarge rekening gehouden. Voor meer informatie over het volgen opent, verwijs naar het [Volgen opent](#tracking-opens-).
+>Waarden die worden berekend op basis van berichten die worden geopend, zijn altijd schattingen, vanwege de foutmarge die is gekoppeld aan e-mails in tekstindeling. In de **[!UICONTROL Distinct opens/Sum of opens for the population reached]** indicatoren wordt met deze foutenmarge rekening gehouden. Voor meer informatie over het volgen opent, verwijs naar het [Volgen opent](../../reporting/using/indicator-calculation.md#tracking-opens-).
 
 ![](assets/s_ncs_user_tracking_synth_report.png)
 
@@ -78,7 +78,7 @@ Dit rapport combineert de belangrijkste indicatoren voor het volgen van het gedr
 
    >[!NOTE]
    >
-   >Zie [Doelpersonen / ontvangers](#targeted-persons---recipients)voor meer informatie over het verschil tussen verschillende personen en beoogde ontvangers.
+   >Zie [Doelpersonen / ontvangers](../../reporting/using/indicator-calculation.md#targeted-persons---recipients)voor meer informatie over het verschil tussen verschillende personen en beoogde ontvangers.
 
 **[!UICONTROL 3. Open and click-through rate]**
 
@@ -121,7 +121,7 @@ Deze waardetabel toont de uitsplitsing van leveringen, opent, klikt en ruwe reac
 
 **[!UICONTROL 6. Sharing activities to email and social networks]**
 
-Deze sectie toont het aantal berichten die op elk sociaal netwerk worden gedeeld. Raadpleeg [Delen naar sociale netwerken](#sharing-to-social-networks)voor meer informatie.
+Deze sectie toont het aantal berichten die op elk sociaal netwerk worden gedeeld. Raadpleeg [Delen naar sociale netwerken](../../reporting/using/global-reports.md#sharing-to-social-networks)voor meer informatie.
 
 ## URL&#39;s en klik op streams {#urls-and-click-streams}
 
@@ -137,7 +137,7 @@ De volgende tarieven worden getoond in de hogere sectie van het rapport:
 
    >[!NOTE]
    >
-   >Voor meer informatie over het volgen opent, verwijs naar het [Volgen opent](#tracking-opens-).
+   >Voor meer informatie over het volgen opent, verwijs naar het [Volgen opent](../../reporting/using/indicator-calculation.md#tracking-opens-).
 
 * **[!UICONTROL Distinct clicks]** : Aantal verschillende personen dat ten minste één keer heeft geklikt (met uitzondering van de koppeling zonder abonnement en de spiegel) in een levering. De getoonde snelheid wordt berekend op basis van het aantal berichten dat met succes is afgeleverd.
 * **[!UICONTROL Cumulated clicks]** : Het totale aantal klikken door beoogde ontvangers (exclusief koppeling zonder abonnement en spiegel). Het getoonde tarief wordt berekend gebaseerd op het aantal berichten met succes door:sturen.
@@ -199,6 +199,6 @@ Hiermee kunt u de marketingeffecten van de levering volgen. U kunt configureren 
 
 Dit rapport bevat een tabel met waarden en een Pareto-grafiek met de tijd die nodig is voor de levering om de maximale efficiëntie te bereiken. De volgende indicatoren worden gebruikt:
 
-* **[!UICONTROL Opens]** : Schatting van de tijd die nodig is om een percentage van het totale aantal geopende berichten te bereiken. E-mails in tekstindeling worden niet in aanmerking genomen. Voor meer informatie over het volgen opent, verwijs naar het [Volgen opent](#tracking-opens-).
+* **[!UICONTROL Opens]** : Schatting van de tijd die nodig is om een percentage van het totale aantal geopende berichten te bereiken. E-mails in tekstindeling worden niet in aanmerking genomen. Voor meer informatie over het volgen opent, verwijs naar het [Volgen opent](../../reporting/using/indicator-calculation.md#tracking-opens-).
 * **[!UICONTROL Clicks]** : Schatting van de tijd die nodig is om een percentage van het totale aantal geregistreerde klikken te bereiken. Klikken op de opt-out-koppeling en de spiegelpagina worden niet in aanmerking genomen.
 * **[!UICONTROL Transactions]** : Tijd die nodig is om een percentage van het totale aantal transacties na ontvangst van berichten te bereiken. Om een transactie in aanmerking te nemen, moet een webtrackingtag van het transactietype in de overeenkomstige Web-pagina worden opgenomen. Webtracking-configuratie wordt in [deze sectie](../../configuration/using/about-web-tracking.md)weergegeven.
