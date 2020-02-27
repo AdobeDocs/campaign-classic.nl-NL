@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 80b500653f5cfe216b32db045974b18d85838d9a
+source-git-commit: 9d36192a768fd0162f2301a5fe0437074d0fda58
 
 ---
 
@@ -114,7 +114,9 @@ In dit voorbeeld wordt een instantievariabele gebruikt om dynamisch het gesplits
 
 1. Definieer een JS-voorwaarde in de sectie Initialisatiescript op het tabblad Geavanceerd van de activiteit Splitsen. De voorwaarde JS selecteert het willekeurige steekproefpercentage van de eerste overgang die uit de Gesplitste activiteit komt en werkt het aan een waarde bij die door de eerder gecreeerd instantievariabele wordt geplaatst.
 
-   ```activity.transitions.extractOutput[0].limiter.percent = instance.vars.segmentpercent;```
+   ```
+   activity.transitions.extractOutput[0].limiter.percent = instance.vars.segmentpercent;
+   ```
 
    ![](assets/js_ex3.png)
 
@@ -128,29 +130,29 @@ In dit voorbeeld wordt een instantievariabele gebruikt om dynamisch het gesplits
 
 1. Neem de workflow van het vorige voorbeeld en vervang het script van de **JavaScript Code** -activiteit door het volgende script:
 
-    ```
-    instance.vars.foo = "bar1"
-    vars.foo = "bar2"
-    task.vars.foo = "bar3"
-    ```
+   ```
+   instance.vars.foo = "bar1"
+   vars.foo = "bar2"
+   task.vars.foo = "bar3"
+   ```
 
 1. Voeg het volgende manuscript aan het initialisatiescript van de activiteit van het **Eind** toe:
 
-    ```
-    logInfo("instance.vars.foo = " + instance.vars.foo)
-    logInfo("vars.foo = " + vars.foo)
-    logInfo("task.vars.foo = " + task.vars.foo)
-    ```
+   ```
+   logInfo("instance.vars.foo = " + instance.vars.foo)
+   logInfo("vars.foo = " + vars.foo)
+   logInfo("task.vars.foo = " + task.vars.foo)
+   ```
 
 1. Begin het werkschema, en bekijk dan het logboek.
 
-    ```
-    Workflow finished
-    task.vars.foo = undefined
-    vars.foo = bar2
-    instance.vars.foo = bar1
-    Starting workflow (operator 'admin')
-    ```
+   ```
+   Workflow finished
+   task.vars.foo = undefined
+   vars.foo = bar2
+   instance.vars.foo = bar1
+   Starting workflow (operator 'admin')
+   ```
 
 In dit voorbeeld wordt getoond dat de activiteit na **JavaScript-code** de instantievariabelen en gebeurtenisvariabelen benadert, maar dat de taakvariabelen van buitenaf niet toegankelijk zijn (&#39;undefined&#39;).
 
