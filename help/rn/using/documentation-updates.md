@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 230ff1a8453cf512b7da828cdcdd49edca59331c
+source-git-commit: 7082ff9c8ce18f12734831bc4f00c9a1b71376b3
 
 ---
 
@@ -25,6 +25,10 @@ Meer informatie over alle nieuwste updates voor de documentatie van Adobe Campai
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates voor elke release van Adobe Campaign Classic.
 
 U kunt ook de opmerkingen bij de release [Adobe Campaign Classic raadplegen](../../rn/using/latest-release.md).
+
+## maart 2020 {#march-2020}
+
+De pagina met best practices voor het gegevensmodel is bijgewerkt met nieuwe secties, waaronder [reeksen](../../configuration/using/data-model-best-practices.md#sequences), [prestaties](../../configuration/using/data-model-best-practices.md#performance) en [grote tabellen](../../configuration/using/data-model-best-practices.md#large-tables). [Meer informatie](../../configuration/using/data-model-best-practices.md)
 
 ## februari 2020 {#february-2020}
 
