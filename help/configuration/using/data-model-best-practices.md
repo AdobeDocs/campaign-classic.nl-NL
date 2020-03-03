@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a8bfeaecc8a4832cac96f479ea1a0b11cd73c1e8
+source-git-commit: ad3aedeb18cfce809f959ccb62cb27928877c9d2
 
 ---
 
@@ -68,7 +68,7 @@ Als u wilt bepalen of een kenmerk al dan niet nodig is in Adobe Campaign, vraagt
 
 Als er niet in een van deze elementen valt, hebt u dit kenmerk waarschijnlijk niet nodig in Adobe Campaign.
 
-## Keuze van gegevenstypen {#data-types}
+### Keuze van gegevenstypen {#data-types}
 
 Volg de onderstaande aanbevolen procedures om gegevens in te stellen in Adobe Campagne voor een goede architectuur en goede prestaties van uw systeem.
 
@@ -78,6 +78,28 @@ Volg de onderstaande aanbevolen procedures om gegevens in te stellen in Adobe Ca
 * Het type **XML** is een goede manier om te voorkomen dat u te veel velden maakt. Maar het neemt ook schijfruimte op aangezien het een kolom CLOB in het gegevensbestand gebruikt. Het kan ook tot complexe SQL vragen leiden en prestaties kunnen beïnvloeden.
 * De lengte voor een **tekenreeksveld** moet altijd met de kolom worden gedefinieerd. Standaard is de maximumlengte in Adobe Campaign 255, maar Adobe raadt u aan het veld korter te houden als u al weet dat de grootte een kortere lengte niet overschrijdt.
 * Een veld dat korter is in Adobe Campaign is dan in het bronsysteem, is acceptabel als u zeker weet dat de grootte in het bronsysteem is overschat en niet wordt bereikt. Dit kan een kortere tekenreeks of een kleiner geheel getal in Adobe Campagne betekenen.
+
+### Keuze van velden {#choice-of-fields}
+
+Een veld moet in een tabel worden opgeslagen als het een doel of een doel voor personalisatie heeft. Met andere woorden, als een veld niet wordt gebruikt om een gepersonaliseerde e-mail te verzenden of als criterium wordt gebruikt in een query, neemt het schijfruimte in beslag terwijl het nutteloos is.
+
+Voor hybride en op-gebouw instanties, behandelt FDA (Federated Data Access, een facultatieve eigenschap die om tot externe gegevens) toegang te hebben de behoefte om een gebied &quot;op-de&quot;tijdens een campagneproces toe te voegen. U hoeft niet alles te importeren als u FDA hebt. Voor meer op dit, zie [over Federated Toegang](../../platform/using/about-fda.md)van Gegevens.
+
+### Keuze van sleutels {#choice-of-keys}
+
+Naast de **automatische controle** die door gebrek in de meeste lijsten wordt bepaald, zou u moeten overwegen wat logische of bedrijfssleutels (rekeningsaantal, cliëntaantal, etc.) toe te voegen. Het kan later worden gebruikt voor invoer/verzoening of gegevenspakketten. Zie [Id&#39;s](#identifiers)voor meer informatie hierover.
+
+Efficiënte toetsen zijn essentieel voor de prestaties. Numerieke gegevenstypen verdienen altijd de voorkeur als toetsen voor tabellen.
+
+Voor het gegevensbestand SQLServer, kon u het gebruiken van &quot;gegroepeerde index&quot;overwegen als de prestaties nodig zijn. Omdat Adobe dit niet afhandelt, moet u het maken in SQL.
+
+### Speciale tabelruimten {#dedicated-tablespaces}
+
+Met het kenmerk tabelruimte in het schema kunt u een specifieke tabelruimte voor een tabel opgeven.
+
+Met de installatiewizard kunt u objecten opslaan op type (gegevens, tijdelijk en index).
+
+Speciale tabelruimten zijn beter voor partitionering, beveiligingsregels en bieden vloeiend en flexibel beheer, betere optimalisatie en prestaties.
 
 ## Id&#39;s {#identifiers}
 
@@ -201,6 +223,8 @@ Er zijn een paar oplossingen om de behoefte aan verslagen in de Campagne van Ado
 * Exporteer de gegevens in een gegevensopslagruimte buiten de Adobe-campagne.
 * Genereer geaggregeerde waarden die minder ruimte gebruiken en toch voldoende zijn voor uw marketingactiviteiten. U hebt bijvoorbeeld niet de volledige transactiegeschiedenis van klanten in Adobe Campaign nodig om de laatste aankopen bij te houden.
 
+U kunt het kenmerk &quot;deleteStatus&quot; in een schema declareren. Het is efficiënter om het verslag te merken zoals geschrapt, dan de schrapping in de schoonmaakbeurt uit te stellen taak.
+
 ## Prestaties {#performance}
 
 Volg onderstaande aanbevolen procedures om te zorgen voor betere prestaties op elk gewenst moment.
@@ -222,9 +246,11 @@ Volg onderstaande aanbevolen procedures om te zorgen voor betere prestaties op e
 * Het is goed om alle essentiële gebieden in één lijst te hebben omdat het het voor gebruikers gemakkelijker maakt om vragen te bouwen. Soms is het ook handig om bepaalde velden te dupliceren naar andere tabellen als u samenvoeging kunt voorkomen.
 * Bepaalde ingebouwde functies kunnen niet verwijzen naar een-op-een-relatie, zoals de formule en levering van de Afweging van aanbiedingen.
 
-### Grote tabellen {#large-tables}
+## Grote tabellen {#large-tables}
 
-Hieronder vindt u een aantal aanbevolen procedures voor het ontwerpen van uw gegevensmodel met behulp van grote tabellen en complexe verbindingen.
+Adobe Campaign is afhankelijk van externe databasemotoren. Afhankelijk van de leverancier, kan het optimaliseren van prestaties voor grotere lijsten een specifiek ontwerp vereisen.
+
+Hieronder vindt u een aantal aanbevolen procedures die moeten worden gevolgd bij het ontwerpen van uw gegevensmodel met behulp van grote tabellen en complexe verbindingen.
 
 * Wanneer het gebruiken van extra douane ontvankelijke lijsten, zorg ervoor u een specifieke logboeklijst voor elke leveringsafbeelding hebt.
 * Verminder het aantal kolommen, met name door de kolommen te identificeren die niet worden gebruikt.
@@ -232,4 +258,36 @@ Hieronder vindt u een aantal aanbevolen procedures voor het ontwerpen van uw geg
 * Voor verbindingssleutels, gebruik altijd numerieke gegevens eerder dan karakterkoorden.
 * Verminder zoveel u de diepte van logboekbehoud kunt. Als u een diepere geschiedenis nodig hebt, kunt u berekeningen samenvoegen en/of aangepaste logboektabellen verwerken om de grotere geschiedenis op te slaan.
 
-Voor gedetailleerdere beste praktijken op hoe te om het gegevensbestandontwerp voor grotere volumes te optimaliseren, zie de Beste praktijken [van het Model van Gegevens van de](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html)Campagne Classic.
+### Grootte van tabellen {#size-of-tables}
+
+De tabelgrootte is een combinatie van het aantal records en het aantal kolommen per record. Beide kunnen de prestaties van vragen beïnvloeden.
+
+* Een **kleine** tabel is vergelijkbaar met de leveringstabel.
+* Een tabel van **gemiddelde grootte** is hetzelfde als de grootte van de tabel Ontvanger. Het heeft één verslag per klant.
+* Een **grote** tabel lijkt op de grote logtabel. Het heeft vele verslagen per klant.
+Bijvoorbeeld, als uw gegevensbestand 10 miljoen ontvangers bevat, bevat de Grote logboeklijst ongeveer 100 tot 200 miljoen berichten, en de lijst van de Levering bevat een paar duizend verslagen.
+
+Voor PostgreSQL, zou een rij 8 KB moeten niet overschrijden om [TOAST](https://wiki.postgresql.org/wiki/TOAST) mechanisme te vermijden. Probeer daarom om het aantal kolommen en de grootte van elke rij zo veel mogelijk te verminderen om optimale prestaties van het systeem (geheugen en cpu) te bewaren.
+
+Het aantal rijen heeft ook invloed op de prestaties. De Adobe Campagne-database is niet ontworpen voor het opslaan van historische gegevens die niet actief worden gebruikt voor het maken van doelen of een persoonlijke voorkeur. Dit is een operationele database.
+
+Om prestatieskwestie te verhinderen met betrekking tot het hoge aantal rijen, slechts de noodzakelijke verslagen in het gegevensbestand houden. Alle andere records moeten worden geëxporteerd naar een extern gegevenspakhuis en uit de operationele database van Adobe Campagne worden verwijderd.
+
+Hier volgen enkele tips en trucs voor de grootte van tabellen:
+
+* Ontwerp grote tabellen met minder velden en meer numerieke gegevens.
+* Gebruik geen groot aantal kolommen (bijv. Int64) om kleine aantallen zoals booleaanse waarden op te slaan.
+* Verwijder niet-gebruikte kolommen uit de tabeldefinitie.
+* Bewaar geen historische of inactieve gegevens in uw Adobe Campagne-database (exporteren en opschonen).
+
+Hier volgt een voorbeeld:
+
+![](assets/transaction-table-example.png)
+
+In dit voorbeeld:
+* De tabellen *Transacties* en *Transactie-item* zijn groot: meer dan 10 miljoen.
+* De tabellen *Product* en *Winkel* zijn kleiner: minder dan 10.000.
+* Het etiket en de referentie van het product zijn in de *producttabel* opgenomen.
+* De tabel *Transactie-item* heeft alleen een koppeling naar de tabel *Product* . Deze tabel is numeriek.
+
+<!--For more detailed best practices on how to optimize the database design for larger volumes, see [Campaign Classic Data model Best practices](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html).-->
