@@ -24,7 +24,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Release 18.4](rn/using/release--18-4.md)
 + Aan de slag {#getting-started}
    + Beginnen met Adobe-campagne {#starting-with-adobe-campaign}
-      + [Info over Adobe Campagne Classic](platform/using/about-adobe-campaign-classic.md)
+      + [Informatie over Adobe Campagne Classic](platform/using/about-adobe-campaign-classic.md)
       + [Privacy en aanbevelingen](platform/using/privacy-and-recommendations.md)
       + [Adobe-campagne starten](platform/using/launching-adobe-campaign.md)
       + [De werkruimte Adobe Campagne](platform/using/adobe-campaign-workspace.md)
