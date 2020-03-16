@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: defbe3793be531eeb5c7aab913607ff094a624c7
+source-git-commit: 1d08730421c598873e272f305a819e3fb4509d90
 
 ---
 
@@ -41,11 +41,13 @@ source-git-commit: defbe3793be531eeb5c7aab913607ff094a624c7
 
 De **laatste stabiele build** is 9032 (205c981c3). Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## Release 20.1.2 - build 9123 {#release-20-1-2-build-9123}
+## ![](assets/blue_2.png) Release 20.1.2 - build 9123 {#release-20-1-2-build-9123}
 
-* Probleem verholpen waarbij implementatie van versies op de Red Hat 7-server werd voorkomen. (NEO-2332)
+_13 maart 2020_
 
-## ![](assets/blue_2.png) Release 20.1 - build 9122 {#release-20-1-build-9122}
+* Probleem verholpen waarbij implementatie van versies op Red Hat 7-servers werd voorkomen. (NEO-2332)
+
+## ![](assets/orange_2.png) Release 20.1 - build 9122 {#release-20-1-build-9122}
 
 _17 februari 2020_
 
