@@ -1,6 +1,6 @@
 ---
-title: Laatste versie
-description: Laatste versie
+title: Laatste release
+description: Laatste release
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -13,14 +13,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
+source-git-commit: defbe3793be531eeb5c7aab913607ff094a624c7
 
 ---
 
 
-# Laatste versie{#latest-release}
+# Laatste release{#latest-release}
 
-[Upgrade](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) maken| [Door het bedieningspaneel afgegeven](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) gegevens| [Bijwerken](../../rn/using/documentation-updates.md) documentatie| [Eerdere introducties](../../rn/using/release--19-2.md) | [Afgekeurde kenmerken](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+[Upgrade](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) maken| [Release](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) van het regelpaneel| [Documentatie-updates](../../rn/using/documentation-updates.md) | [Eerdere versies](../../rn/using/release--19-2.md) | [Verouderde kenmerken](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
 <table> 
  <tbody> 
@@ -28,20 +28,24 @@ source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
    <td><img src="assets/green3.png"/><strong>Algemene beschikbaarheid</strong></td>
    <td><img src="assets/blue3.png"/><strong>Releasekandidaat</strong></td> 
    <td><img src="assets/orange3.png"/><strong>Niet meer beschikbaar</strong></td> 
-   <td><img src="assets/red3.png"/><strong>Afgekeurd</strong></td> 
+   <td><img src="assets/red3.png"/><strong>Vervangen</strong></td> 
   </tr> 
    <tr> 
-   <td>De nieuwste stabiele build beschikbaar. Gebouw gevalideerd in productie.<br> </td>
-   <td>Bouw bevestigd door Adobe. Wachten op het testen van de productie.<br> </td>
-   <td>De nieuwere bouw beschikbaar met insectenmoeilijke situaties. Update is vereist.<br> </td>
-   <td>Bevat bekende regressies. Update is verplicht.<br> </td>
+   <td>Nieuwste stabiele build beschikbaar. Build gevalideerd in productie.<br> </td>
+   <td>Build gevalideerd door Adobe. Wachten op proefdrukken van de productie.<br> </td>
+   <td>Nieuwere build beschikbaar met foutoplossingen. Bijwerken is vereist.<br> </td>
+   <td>Bevat bekende regressies. Bijwerken is verplicht.<br> </td>
   </tr> 
  </tbody> 
 </table>
 
 De **laatste stabiele build** is 9032 (205c981c3). Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/blue_2.png) Versie 20.1 - Bouwstijl 9122 {#release-20-1-build-9122}
+## Release 20.1.2 - build 9123 {#release-20-1-2-build-9123}
+
+* Probleem verholpen waarbij implementatie van versies op de Red Hat 7-server werd voorkomen. (NEO-2332)
+
+## ![](assets/blue_2.png) Release 20.1 - build 9122 {#release-20-1-build-9122}
 
 _17 februari 2020_
 
@@ -55,8 +59,8 @@ _17 februari 2020_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Snowflake is een volledig beheerd cloud-gegevenspakhuis dat is gebouwd om geschaald uit te breiden op zowel opslagniveau als computerniveau. Met deze nieuwe schakelaar, kan de Campagne van Adobe hefboomwerking de macht van Snowflake nu om de Grote Segmentatie van Gegevens uit te voeren. Deze schakelaar is beschikbaar aan alle klanten, met inbegrip van die door Adobe worden ontvangen.</p>
-    <p>Voor meer informatie, verwijs naar de <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">gedetailleerde documentatie</a> en de <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">zelfstudie video</a>.</p>
+   <td> <p>Sneeuwvlok is een volledig beheerd wolkendepot dat is gebouwd om op zowel opslag als compute niveau te schrapen. Met deze nieuwe aansluiting kan Adobe Campaign nu de kracht van Snowflake benutten om Big Data Segmentation uit te voeren. Deze connector is beschikbaar voor alle klanten, ook voor klanten die worden gehost door Adobe.</p>
+    <p>Raadpleeg voor meer informatie de <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">gedetailleerde documentatie</a> en <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">zelfstudievideo</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -65,146 +69,146 @@ _17 februari 2020_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Verbeteringen van de Hadoop FDA-connector</strong><br /> </th> 
+   <th> <strong>Verbeteringen voor Hadoop FDA-aansluiting</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>De Hadoop FDA-connector is verbeterd om zowel Hadoop 3.0 als Cloudera te ondersteunen.</p>
-    <p>Voor meer informatie, verwijs naar de <a href="../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3">gedetailleerde documentatie</a>.</p>
+   <td> <p>De Hadoop FDA Connector is verbeterd om zowel Hadoop 3.0 als Cloudera te ondersteunen.</p>
+    <p>Raadpleeg de <a href="../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3">gedetailleerde documentatie</a>voor meer informatie.</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-**Beveiligingsverbeteringen**
+**Verbeterde beveiliging**
 
-* Verbeterde veiligheid in rapportconfiguratie om tegen klikjacking te beschermen. Dit geldt voor nieuwe verslagen. Voor oude rapporten, moet u hen opnieuw publiceren om veranderingen toe te passen. (NEO-13282)
+* Verbeterde veiligheid in rapportconfiguratie om tegen klikjacking te beschermen. Dit geldt voor nieuwe verslagen. Voor oude rapporten moet u deze opnieuw publiceren om wijzigingen toe te passen. (NEO-13282)
 
-* Bevestig een kleine geheugenkwestie in cryptString. (NEO-20071)
+* Los een klein geheugenprobleem in cryptString op. (NEO-20071)
 
-* Verbeterde monitorJSP om een interne IP openbaarmaking te bevestigen. (NEO-16821)
+* Verbeterde controle JSP om een interne IP bekendmaking te bevestigen. (NEO-16821)
 
-* Vast een kwestie waar de informatie van het stapelspoor aan niet admingebruikers kon worden getoond. (NEO-12388)
+* Probleem verholpen waarbij gegevens over stacktracering konden worden weergegeven aan gebruikers die geen beheerder zijn. (NEO-12388)
 
-* Verbeterde het beheer van caching gegevens van vorige zittingen. (NEO-17039)
+* Verbeterd beheer van gegevens uit vorige sessies in cache. (NEO-17039)
 
-* Vaste een kwestie die logins.log dossier verhinderde succesvolle login pogingen door IMS te registreren. (NEO-11004)
+* Probleem verholpen waardoor het bestand logins.log geen succesvolle aanmeldingspogingen kon opnemen via IMS. (NEO-11004)
 
 **Verbeteringen**
 
-* iOS 13 wordt nu gesteund met de schakelaar van HTTP2.
+* iOS 13 wordt nu ondersteund door de HTTP2-connector.
 
-* Verbeterd quarantainebeheer en opruiming van de lijsten die door de functie van het push-bericht worden gebruikt (nms:adres en nms:appSubscriptionRcp). Voor iOS (de schakelaar van HTTP2 slechts), worden de gehandicapte tekenen nu behandeld op de zelfde manier zoals voor Android. Maak vlag onbruikbaar is nu geplaatst in de lijst NmsAppSubscriptionRcp. [Meer informatie](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
+* Verbeterd quarantainebeheer en opschoning van de tabellen die worden gebruikt door de functie voor pushmeldingen (nms:address en nms:appSubscriptionRcp). Voor iOS (alleen HTTP2-connector) worden uitgeschakelde tokens nu op dezelfde manier verwerkt als voor Android. De markering voor uitschakelen is nu ingesteld in de tabel NmsAppSubscriptionRcp. [Meer informatie](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-* Een nieuwe optie is toegevoegd in de code **** JavaScript en de activiteiten van het de codewerkschema van **Geavanceerde JavaScript** om een onderbrekingsperiode te bepalen. Dit verhindert de uitvoeringsfase javascript te lang te lopen. Als de time-out periode verstrijkt, wordt de workflow gestopt. De standaardonderbreking is 1 uur. [Meer informatie](../../workflow/using/sql-code-and-javascript-code.md)
+* Er is een nieuwe optie toegevoegd aan de **JavaScript-code** en de activiteiten in de workflow voor **geavanceerde JavaScript-code** om een time-outperiode te definiëren. Hierdoor wordt voorkomen dat de uitvoeringsfase van javascript te lang wordt uitgevoerd. Als de time-outperiode verstreken is, wordt de workflow gestopt. De standaardtime-out is 1 uur. [Meer informatie](../../workflow/using/sql-code-and-javascript-code.md)
 
-* De leveringsanalyse wordt nu tegengehouden wanneer geen passende affiniteit op de midsourcing server wordt gevonden, met de overeenkomstige foutenmelding die wordt getoond.
+* De leveringsanalyse wordt nu gestopt wanneer geen passende affiniteit op de midsourcingserver wordt gevonden, met het overeenkomstige foutenmelding die wordt getoond.
 
-* Database-failover voor Postgres wordt nu ondersteund: wanneer de gegevensbestandserver neerstortt en opnieuw begint, verbindt de Campagne nu automatisch opnieuw met het.
+* Database-failover voor Postgres wordt nu ondersteund: Wanneer de databaseserver vastloopt en opnieuw wordt opgestart, maakt Campagne nu automatisch opnieuw verbinding met de server.
 
-* De **Begin Hangende** mening is toegevoegd aan de knoop van de Status van het Beleid > van de Controle > van de Werkschema&#39;s. Dit staat u toe om alle werkschema&#39;s op uw instantie te controleren die wachten om door het **operationMgt** proces worden begonnen. Deze mening komt met het pakket van de campagnes van de Marketing. [Meer informatie](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+* De **weergave In afwachting** van starten is toegevoegd aan het knooppunt Beheer > Audit > Workflows Status. Dit staat u toe om alle werkschema&#39;s op uw instantie te controleren die om door het **operationMgt** proces wachten te zijn begonnen. Deze weergave wordt geleverd met het marketingpakket. [Meer informatie](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
-**Overige mutaties**
+**Overige wijzigingen**
 
-* Voor Linux, gebruikt het opstarten van de nlserver dienst nu een systeemeenheid in plaats van het /etc/init.d/nlserver6 manuscript. De migratie naar de nieuwe startregeling wordt automatisch uitgevoerd wanneer u het 20.1 pakket installeert. /etc/init.d/nlserver6 wordt nog verstrekt maar voor het in wisselwerking staan met de nlserver dienst (begin, nieuw begin, einde, enz.), adviseren wij dat u het systeembevel direct gebruikt.
+* In Linux gebruikt het opstarten van de netwerkservice nu een systeemeenheid in plaats van het script /etc/init.d/nlserver6. De migratie naar het nieuwe opstartschema wordt automatisch uitgevoerd wanneer u het 20.1-pakket installeert. /etc/init.d/nlserver6 wordt nog verstrekt maar voor het in wisselwerking staan met de nlserver dienst (begin, nieuw begin, einde, enz.), adviseren wij dat u het systeembevel direct gebruikt.
 
-* De meest verbruikende douanetabellen zijn bewogen van de opeenvolging **xtkNewId** aan specifieke opeenvolgingen. [Meer informatie](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* De meest verbruikende douanetabellen zijn bewogen van de **xtkNewId** opeenvolging aan specifieke opeenvolgingen. [Meer informatie](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 
-* Verbeterde vraagprestaties die door onnodige gegevensbestandverbindingen zouden kunnen worden beïnvloed.
+* Verbeterde queryprestaties die kunnen worden beïnvloed door onnodige databaseverbindingen.
 
-* Verbeterde de prestaties van de tovenaar van de gegevensbestandupdate.
+* Verbeterde prestaties van de wizard Database bijwerken.
 
-* Het beheer van het gegevensbestandverslag werd verbeterd.
+* Het beheer van de databaserecord is verbeterd.
 
 * De robuustheid van de verbindingspool is verbeterd, die onverwachte verbindingsmislukkingen kan verhinderen te vaak te gebeuren.
 
-* De regels van de e-mailadrestatie om een adres naar quarantaine te verzenden in het geval van een zachte fout zijn verbeterd. [Meer informatie](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
+* De regels voor de validatie van e-mailadressen voor het verzenden van een adres naar quarantaine in het geval van een elektronische fout zijn verbeterd. [Meer informatie](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
-* Voor Debian, gebruikt de Campagne nu systeemPCRE bibliotheken wanneer zij beschikbaar zijn.
+* Voor Debian gebruikt Campaign nu PCRE-bibliotheken van het systeem wanneer deze beschikbaar zijn.
 
-* De campagne staat nu het gebruik van een recentere bibliotheek van systeemODBC toe.
+* De campagne staat nu het gebruik van een recentere systeemODBC bibliotheek toe.
 
-* Een onderbreking is toegevoegd aan de server van de LIJN wanneer het openen van een verbinding om een rijk beeld te laden. Als het beeld te veel tijd vergt te laden, houdt servlet de verbinding tegen om een knelpunt te vermijden.
+* Er is een time-out toegevoegd aan het LINE-servlet wanneer een verbinding wordt geopend om een rijke afbeelding te laden. Als het laden van de afbeelding te veel tijd in beslag neemt, stopt de servlet de verbinding om een knelpunt te voorkomen.
 
 **Patches**
 
-* Vast een kwestie van de rekeningssleutel van de rekening wanneer het gebruiken van de schakelaar van Hadoop.
+* Probleem verholpen met versleuteling van accountsleutels bij gebruik van de Hadoop-connector.
 
-* Vast een regressiekwestie toe te schrijven aan de implementatie van SSL certificatie die de gebruikersverbinding om op de server van Vensters veroorzaakte te ontbreken. (NEO-20629)
+* Probleem met regressie verholpen als gevolg van de implementatie van SSL-certificering, waardoor de gebruikersverbinding op de Windows-server is mislukt. (NEO-20629)
 
-* Vaste een kwestie met de stijgende vraagactiviteit in het geval van negatieve werkschema IDs. (NEO-19779)
+* Probleem verholpen met incrementele queryactiviteit in het geval van negatieve workflow-id&#39;s. (NEO-1979)
 
-* Vast een het coderen kwestie wanneer het runnen van vragen via de schakelaar van Netezza FDA. (NEO-19594)
+* Probleem met codering verholpen bij het uitvoeren van query&#39;s via de Netezza FDA-connector. (NEO-19594)
 
-* Vaste een kwestie die tot een fout leidde toen het gebruiken van de POST methode in de het werkschemagebeurtenisactiviteit van de Download van het **Web** .
+* Probleem verholpen dat tot een fout leidde bij het gebruik van de POST-methode in de gebeurtenisactiviteit van de **webdownloadworkflow** .
 
-* Vaste een kwestie met de generatie van het voorstel. (NEO-18176)
+* Probleem opgelost met het genereren van voorstellen. (NEO-18176)
 
-* Vast een kwestie van de footer vertoning wanneer het gebruiken van het malplaatje van de de vormvorm van het verwervingsWeb.
+* Probleem met weergave van voettekst verholpen bij gebruik van de sjabloon voor het verkrijgen van een webformulier.
 
-* Vaste een kwestie wanneer het ontleden van URLs in de inhoud van ononderbroken leveringen die hen konden veroorzaken om te botsen. (NEO-16910)
+* Probleem verholpen bij het parseren van de URL&#39;s in de inhoud van doorlopende leveringen die ertoe konden leiden dat ze vastliepen. (NEO-16910)
 
-* Vast een kwestie met de gebieden van het **Begin** en van het **Eind** die niet worden gegevens verwerkt wanneer het creëren van een nieuwe campagne.
+* Probleem verholpen waarbij de velden **Start** en **End** niet werden berekend tijdens het maken van een nieuwe campagne.
 
-* Vaste een kwestie met het werkschemaactiviteit van de Download van het **Dossier** wanneer het gebruiken van een URL.
+* Probleem verholpen met de workflowactiviteit **Bestanden downloaden** bij gebruik van een URL.
 
-* Vast een kwestie wanneer het previewing van een ingevoerde lijst in een vraagactiviteit van een rapport. (NEO-13119)
+* Probleem verholpen bij het voorvertonen van een geïmporteerde lijst in een queryactiviteit van een rapport. (NEO-13119)
 
-* Vaste een kwestie die een verouderd beeld toen het selecteren van het **Powered by Campaign** verpersoonlijkingsblok in de e-mailredacteur toonde.
+* Probleem verholpen waarbij een verouderde afbeelding werd weergegeven wanneer u in de e-maileditor het aanpassingsblok **Powered by Campaign** (Aangedreven door campagne) selecteerde.
 
-* De netwerkcommunicatie tussen de cliënt en de server is verbeterd.
+* De netwerkcommunicatie tussen de client en de server is verbeterd.
 
-* Vast een kwestie wanneer teveel werkschema&#39;s in de zelfde campagne worden gecreeerd. Nu, kunt u niet meer dan 28 werkschema&#39;s tot stand brengen. Er wordt een waarschuwing weergegeven.
+* Probleem verholpen waarbij te veel workflows in dezelfde campagne werden gemaakt. U kunt nu niet meer dan 28 workflows maken. Er wordt een waarschuwing weergegeven.
 
-* Vaste een kwestie wanneer het gebruiken van de **A selectie van kolommen** verzoeningsoptie in een **Uniewerkschemaactiviteit** .
+* Probleem verholpen bij gebruik van de optie **A voor het afstemmen van kolommen** in een **Uniewerkstroomactiviteit** .
 
-* Vaste een kwestie van de consoleneerstorting die kon voorkomen wanneer het gebruiken van een bedorven verrijkingslijst in een werkschema. (NEO-18096)
+* Probleem verholpen waarbij de console vastloopt die kan optreden wanneer een beschadigde verrijkingslijst in een workflow wordt gebruikt. (NEO-18096)
 
-* Vaste diverse kwesties van de consoleneerstorting die in werkschema&#39;s konden voorkomen (NEO-18010, NEO-18032)
+* Oplossing voor diverse problemen met het vastlopen van de console die in workflows konden optreden (NEO-18010, NEO-18032)
 
-* Vaste een kwestie die de uitvoering van een **Externe activiteit van het signaalwerkschema** toeliet zelfs toen het onbruikbaar werd gemaakt. (NEO-17524)
+* Probleem verholpen waarbij een workflowactiviteit voor een **extern signaal** ook kon worden uitgevoerd als deze was uitgeschakeld. (NEO-17524)
 
-* Vaste een kwestie wanneer het creëren van een nieuw schema.
+* Probleem verholpen bij het maken van een nieuw schema.
 
-* Vast een volgende kwestie wanneer het verzenden van de berichten van SMS. (NEO-19595)
+* Probleem met bijhouden bij het verzenden van SMS-berichten is opgelost. (NEO-19595)
 
-* Vaste een kwestie die onjuist gericht publieksaantal in leveringsindicatoren toonde.
+* Probleem verholpen waarbij een onjuist doelaantal werd weergegeven in leveringsindicatoren.
 
-* Vaste een kwestie die onjuiste percentages toen het produceren van een beschrijvend rapport via een werkschemaactiviteit toonde. (NEO-14314)
+* Probleem verholpen waarbij onjuiste percentages werden weergegeven bij het genereren van een beschrijvend rapport via een workflowactiviteit. (NEO-14314)
 
-* Vast een kwestie die het rapport van de leveringsproductie maakte toont verschillende aantallen wanneer de parameter van de tijdmening. (NEO-11783)
+* Probleem verholpen waarbij verschillende nummers werden weergegeven in het rapport met de leveringstijd. (NEO-11783)
 
-* Vaste een kwestie die de transactionele berichten het volgen indicatoren verhinderde door het Volgende werkschema worden bijgewerkt. (NEO-17770)
+* Probleem verholpen waardoor de trackingindicatoren voor transactionele berichten niet konden worden bijgewerkt in de workflow voor bijhouden. (NEO-1770)
 
-* Vaste een regressiekwestie die het Webproces om veroorzaakte te botsen en opnieuw te beginnen wanneer het verzoeken van om een aanbieding door ZEEP. (NEO-19482)
+* Oplossing voor een regressieprobleem dat ertoe leidde dat het webproces vastliep en opnieuw opstartte wanneer een aanvraag voor een aanbieding werd ingediend via SOAP. (NEO-19482)
 
-* Vaste een kwestie die verhinderde gegevens aan openbare middelen te uploaden als uploadde folder een verre gedeelde plaats was. (NEO-19361)
+* Probleem verholpen waarbij gegevens niet konden worden geüpload naar openbare bronnen als de uploadmap een externe gedeelde locatie was. (NEO-19361)
 
-* Vaste een kwestie die het **publiek van de Invoer van de Technische werkschema tp van de Wolk** van de Ervaring van Adobe constant veroorzaakte ontbreken. (NEO-18463)
+* Probleem opgelost waarbij het publiek voor **importeren uit de technische workflow van Adobe Experience Cloud** voortdurend faalde. (NEO-18463)
 
-* Vaste een kwestie die leveringen verhinderde worden verzonden wanneer het gebruiken van malplaatjes die van de Manager van de Ervaring worden ingevoerd. (NEO-17540)
+* Probleem verholpen waarbij leveringen niet konden worden verzonden wanneer sjablonen werden gebruikt die vanuit Experience Manager waren geïmporteerd. (NEO-17540)
 
-* Vaste een kwestie die na bevordering voorkwam om 9032 te bouwen en de instantie te verhinderen met de server van FTP over SSL protocol te verbinden. (NEO-20498)
+* Probleem verholpen dat optrad na de upgrade naar versie 9032 en waardoor de instantie geen verbinding kon maken met de FTP-server via het SSL-protocol. (NEO-20498)
 
-* Vaste een kwestie die voorkwam toen het schrappen van, het opnemen van of het bijwerken van een grote hoeveelheid gegevens met de de gegevensactiviteit van de **Update** in een werkschema gebruikend een schema FDA als het richten dimensie. (NEO-13280)
+* Oplossing van een probleem dat optrad bij het verwijderen, invoegen of bijwerken van een grote hoeveelheid gegevens met de **activiteit Gegevens** bijwerken in een workflow met een FDA-schema als doeldimensie. (NEO-13280)
 
-* Vast een kwestie aan die e-mails verhinderde worden verzonden wanneer het gebruiken van de &quot;als&quot;verklaring buiten de `body` markering.
+* Probleem verholpen waarbij e-mailberichten niet konden worden verzonden wanneer de instructie &#39;if&#39; buiten de `body` tag werd gebruikt.
 
-* Vaste een kwestie die voorkwam toen het proberen om de spiegelpagina van de leveringslogboeken van een verzonden bericht te tonen. (NEO-17976)
+* Probleem verholpen die optrad tijdens het weergeven van de spiegelpagina vanuit de leveringslogboeken van een verzonden bericht. (NEO-17976)
 
-* Vaste een kwestie die de **Verbinding aan het verpersoonlijkingsblok van de spiegelpagina** verhinderde in het de inhoudslusje van de **Tekst** na het klikken van HTML **van de** Invoer in een levering wordt getoond. (NEO-17568)
+* Probleem verholpen waardoor de **koppeling naar het aanpassingsblok van de spiegel** niet kon worden weergegeven op het tabblad **Tekstinhoud** nadat op HTML **in een levering** importeren was geklikt. (NEO-17568)
 
-* De foutenmelding die wanneer het klikken van een verbinding aan een spiegelpagina wordt getoond die is verlopen duidelijk. (NEO-17340)
+* Het foutbericht dat wordt weergegeven wanneer u op een koppeling naar een verlopen spiegelpagina klikt, is verduidelijkt. (NEO-17340)
 
-* Vaste een kwestie die sommige knopen in het de verwezenlijkingsscherm van de distributie **van** Gegevens verhinderde worden gebruikt.
+* Probleem verholpen waardoor sommige knoppen niet konden worden gebruikt in het scherm voor het maken van **gegevensdistributie** .
 
-* Vaste een kwestie die toen het plannen van een leveringsactiviteit in een geval met Azië/Kolkata als tijdzone voorkwam. (NEO-2001)
+* Probleem verholpen dat optrad bij het plannen van een leveringsactiviteit in een instantie met Asia/Kolkata als tijdzone. (NEO-2001)
 
-* Een fout wordt nu getoond wanneer een levering een kwestie van de affiniteitsconfiguratie heeft.
+* Er wordt nu een fout weergegeven wanneer een levering een probleem met de affiniteitsconfiguratie heeft.
 
-* Vaste een kwestie die een onjuist aantal van de versiemarkering in het **ongeveer** menu toonde.
+* Probleem verholpen waarbij een onjuist versietnummer in het menu **Info** werd weergegeven.
 
-* Vaste een kwestie die voorkwam toen het proberen om de verpletterende rekening van de eigenschappen van een terugkomende levering in een werkschema bij te werken. (NEO-18684)
+* Probleem verholpen die optrad tijdens het bijwerken van de verpletterende account vanuit de eigenschappen van een terugkerende levering in een workflow. (NEO-18684)
 
-* Vaste een kwestie die toen het verbinden met de instantie door de omleidingsmodule voorkwam, die de verbinding verhinderde behoorlijk te worden schoongemaakt zodra gesloten.
+* Probleem verholpen dat optrad wanneer verbinding werd gemaakt met de instantie via de omleidingsmodule, waardoor de verbinding niet goed kon worden schoongemaakt zodra deze was gesloten.
