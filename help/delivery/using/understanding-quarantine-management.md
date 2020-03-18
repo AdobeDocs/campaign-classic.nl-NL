@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 16e7266a101b4abea3271c32fcc403e7d7fbaa2d
+source-git-commit: 527d2dd2296d18c8ca26745b9f87d65c6fdf480a
 
 ---
 
@@ -103,7 +103,7 @@ Als u een adres uit quarantaine moet verwijderen, verander zijn status manueel i
 
 ![](assets/tech_quarant_error_status.png)
 
-Als u de status wijzigt in **[!UICONTROL Whitelisted]**, wordt het adres systematisch geactiveerd, zelfs als een fout optreedt.
+Als u de status wijzigt in **[!UICONTROL Whitelisted]**, wordt het adres systematisch geactiveerd, zelfs als er een fout optreedt.
 
 >[!CAUTION]
 De adressen op de zwarte lijst worden niet betrokken bij het quarantainesysteem en zijn niet gericht, zelfs als u de status van het adres verandert.
@@ -129,7 +129,7 @@ In de lijst van quarantined adressen, wijst het **[!UICONTROL Error reason]** ge
 In tegenstelling tot harde fouten, verzenden de zachte fouten onmiddellijk geen adres naar quarantaine, maar zij verhogen in plaats daarvan een foutenteller.
 
 * Wanneer de foutenteller de grensdrempel bereikt, dan gaat het adres in quarantaine.
-* In de standaardconfiguratie is de drempel ingesteld op vijf fouten, waarbij twee fouten significant zijn als ze zich op een afstand van minstens 24 uur bevinden. Het adres wordt in quarantaine geplaatst bij de zesde fout.
+* In de standaardconfiguratie is de drempel ingesteld op vijf fouten, waarbij twee fouten significant zijn als ze zich op een afstand van minstens 24 uur bevinden. Het adres wordt in quarantaine geplaatst bij de vijfde fout.
 * De drempelwaarde voor de foutteller kan worden gewijzigd. Raadpleeg voor meer informatie [Retries na tijdelijke mislukking](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)van levering.
 
 De foutenteller wordt opnieuw geïnitialiseerd als de laatste significante fout meer dan 10 dagen geleden voorkwam. De adresstatus verandert dan in **Geldig** en het wordt geschrapt van de lijst van quarantines door het de schoonmaakbeurt **van het** Gegevensbestand werkschema.
@@ -148,7 +148,7 @@ Voor elk bericht ontvangt Adobe Campaign de synchrone en asynchrone fouten van d
 
 * Problemen met de lengte van de lading: niet opnieuw proberen, de oorzaak van de fout is **[!UICONTROL Unreachable]**.
 * Problemen met certificaatvervaldatum: niet opnieuw proberen, de oorzaak van de fout is **[!UICONTROL Unreachable]**.
-* Verbinding verloren tijdens levering: opnieuw uitgevoerd, de oorzaak van de fout is **[!UICONTROL Unreachable]**.
+* Verbinding verloren tijdens levering: opnieuw uitgevoerd, de reden van de fout is **[!UICONTROL Unreachable]**.
 * Uitgave serviceconfiguratie (ongeldig certificaat, ongeldig certificaatwachtwoord, geen certificaat): niet opnieuw proberen, de oorzaak van de fout is **[!UICONTROL Unreachable]**.
 
 De APNS-server waarschuwt Adobe Campaign asynchroon dat een apparaattoken niet is geregistreerd (wanneer de mobiele toepassing door de gebruiker is verwijderd). De **[!UICONTROL mobileAppOptOutMgt]** workflow wordt elke 6 uur uitgevoerd om contact op te nemen met de APNS-feedbackservices om de **AppSubscriptionRcp** -tabel bij te werken. Voor alle gedeactiveerde tokens, wordt het gebied **Uitgeschakeld** geplaatst aan **Waar** en het abonnement verbonden aan dat apparatenteken zal automatisch van toekomstige leveringen worden uitgesloten.
@@ -236,7 +236,7 @@ Als APNS synchroon een &quot;niet-geregistreerde&quot; status voor een bericht r
   <tr> 
    <td> APNS-bericht afgewezen: alle andere fouten<br /> </td> 
    <td> Mislukt<br /> </td> 
-   <td> De oorzaak van de fout-afwijzing komt voor in het foutbericht<br /> </td> 
+   <td> De oorzaak van de foutafstoting komt voor in het foutbericht<br /> </td> 
    <td> Zacht<br /> </td> 
    <td> Geweigerd<br /> </td> 
    <td> Nee<br /> </td> 
@@ -432,13 +432,13 @@ SR Generic DELIVRD 000|#MESSAGE#
 
    ![](assets/tech_quarant_error_regex.png)
 
-   **Standaard extraheert de regex de** status: veld zoals gedefinieerd in het **aanhangsel B** van de **SMPP 3.4-specificatie**.
+   Standaard extraheert de regex de **status:** veld zoals gedefinieerd in het **aanhangsel B** van de **SMPP 3.4-specificatie**.
 
 * Het vierde deel (**000** in dit voorbeeld) van het foutbericht komt overeen met de foutcode die uit de SR is geëxtraheerd met behulp van het extractieoverzicht van de foutcode dat in de externe SMS-account is gedefinieerd.
 
    Deze regex wordt opgegeven op het **[!UICONTROL SMSC specificities]** tabblad van de externe account. Zie [deze pagina](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
-   **Standaard extraheert de regex de** err: veld zoals gedefinieerd in het **aanhangsel B** van de **SMPP 3.4-specificatie**.
+   Standaard extraheert de regex de **err:** veld zoals gedefinieerd in het **aanhangsel B** van de **SMPP 3.4-specificatie**.
 
 * Alles wat na het pijlsymbool (|) komt wordt slechts getoond in de **[!UICONTROL First text]** kolom van de **[!UICONTROL Delivery log qualification]** lijst. Deze inhoud wordt altijd vervangen door **#MESSAGE#** nadat het bericht is genormaliseerd. Dit proces voorkomt het hebben van veelvoudige ingangen voor gelijkaardige fouten en is het zelfde als voor e-mail. Zie [Bounce mail-kwalificatie](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)voor meer informatie.
 
