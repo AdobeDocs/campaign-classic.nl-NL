@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c2c53041d8a19a491b8ec4da12a8a0ced25cf9a
+source-git-commit: ceb5b2fdcd0dfca28412534ed3417367026f71d0
 
 ---
 
@@ -31,7 +31,6 @@ Voorbeeld van gebeurtenisgegevens:
 Om transactionele overseinengebeurtenissen te verwerken, moeten de volgende stappen worden toegepast:
 
 1. Gebeurtenisverzameling,
-1. De verrijking van de gebeurtenis voorafgaand aan wordt overgebracht naar een berichtmalplaatje (als u de verrijkingsoptie beschikbaar voor de module van het de transactieoverseinen van de Campagne verwierf),
 1. Gebeurtenisoverdracht naar een berichtsjabloon,
 1. Verrijking van gebeurtenissen met personalisatiegegevens,
 1. Uitvoering van de levering,
