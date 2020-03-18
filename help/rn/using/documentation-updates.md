@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7082ff9c8ce18f12734831bc4f00c9a1b71376b3
+source-git-commit: 2de7987a0e5089a9023c0cf3b4c6c61a758a5e5f
 
 ---
 
@@ -29,6 +29,8 @@ U kunt ook de opmerkingen bij de release [Adobe Campaign Classic raadplegen](../
 ## maart 2020 {#march-2020}
 
 De pagina met best practices voor het gegevensmodel is bijgewerkt met nieuwe secties, waaronder [reeksen](../../configuration/using/data-model-best-practices.md#sequences), [prestaties](../../configuration/using/data-model-best-practices.md#performance) en [grote tabellen](../../configuration/using/data-model-best-practices.md#large-tables). [Meer informatie](../../configuration/using/data-model-best-practices.md)
+
+Er is nu een nieuwe sectie beschikbaar met een beschrijving van het vooraf gedefinieerde gegevensmodel van de Adobe-campagne en de interactie van tabellen buiten de box. [Meer informatie](../../configuration/using/data-model-description.md)
 
 ## februari 2020 {#february-2020}
 
@@ -144,7 +146,7 @@ De voorbeelden voor API-aanroepen die een **HttpServletRequest** met aanmeldings
 
 Een aanbeveling voor **sqlDefault** attribuut in schemadefinitie is toegevoegd. [Lees meer](../../configuration/using/elements-and-attributes.md#attribute-description).
 
-In de handleiding **Integrating with Adobe Experience Cloud** wordt nu verwezen naar de integratie tussen Adobe Campagne en Adobe Real-time Customer Data Platform. [Lees meer](../../integrations/using/about-campaign-integrations.md).
+In de handleiding **Integrating with Adobe Experience Cloud** wordt nu verwezen naar de integratie tussen Adobe Campaign en Adobe Real-time Customer Data Platform. [Lees meer](../../integrations/using/about-campaign-integrations.md).
 
 ## november 2019 {#november-2019}
 
@@ -172,7 +174,7 @@ Er is een nieuwe pagina met best practices voor de gegevensverbinding van Adobe 
 
 De gids Aan de slag met best practices voor levering is verplaatst en bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/delivery-best-practices.html)
 
-Er is een aanbeveling toegevoegd aan de documentatie van het SMS-kanaal om problemen te voorkomen bij het gebruik van meerdere externe accounts die de uitgebreide algemene SMPP-connector gebruiken met dezelfde provider. [Meer informatie](../../delivery/using/sms-channel.md#automatic-reply)
+Er is een aanbeveling toegevoegd aan de documentatie van het SMS-kanaal om problemen te voorkomen bij het gebruik van meerdere externe accounts die de uitgebreide algemene SMPP-connector gebruiken met dezelfde leverancieraccount. [Meer informatie](../../delivery/using/sms-channel.md#automatic-reply)
 
 Er is informatie toegevoegd aan de documentatie bij de planningsactiviteit over hoe u gelijktijdige uitvoering van een workflow kunt voorkomen. [Meer informatie](../../workflow/using/scheduler.md)
 
@@ -506,7 +508,7 @@ Toegevoegde informatie over productiegrenzen wanneer vestiging een relais SMTP. 
 
 De [documentatieset](https://helpx.adobe.com/support/campaign/classic.html) van Adobe Campaign Classic is gereorganiseerd voor een verbeterde bruikbaarheid.
 
-Er is een nieuwe sectie Lesbestanden toegevoegd om de toegang tot de belangrijkste Help-materialen, Hoe kan ik-onderwerpen, voorbeelden en video&#39;s voor campagnes te vergemakkelijken. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Tutorials.html)
+Er is een nieuwe sectie met zelfstudies toegevoegd om de toegang tot de belangrijkste Help-materialen, Hoe kan ik-onderwerpen, voorbeelden en video&#39;s voor campagnes te vergemakkelijken. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Tutorials.html)
 
 Er is een nieuwe sectie toegevoegd die u helpt bij het controleren van uw leveringsstatus, maar ook van mogelijke fouten en het oplossen van deze fouten. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Monitoring_a_delivery.html)
 
