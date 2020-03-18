@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
+source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
 >
 >MTA geeft voorrang aan verwerking van de transactionele berichten over om het even welke andere levering.
 
-Voor de uitvoeringsinstantie, zodra de verrijkingsstadia volledig zijn en een leveringsmalplaatje met de gebeurtenis verbonden is, wordt de levering verzonden. Alle leveringen worden gegroepeerd in de **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** map.
+Op de uitvoeringsinstantie wordt de levering verzonden zodra het verrijkingsstadium is voltooid en een leveringssjabloon aan de gebeurtenis is gekoppeld. Alle leveringen worden gegroepeerd in de **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** map.
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
