@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad3aedeb18cfce809f959ccb62cb27928877c9d2
+source-git-commit: 1336bf7ab9cce7f2ffe7d4ffa5e119851e946885
 
 ---
 
@@ -30,7 +30,7 @@ Lees deze [documentatie](../../configuration/using/about-schema-reference.md) om
 
 Het Adobe Campagne-systeem is bijzonder flexibel en kan worden uitgebreid tot na de initiële implementatie. Hoewel de mogelijkheden oneindig zijn, is het echter van essentieel belang om verstandige beslissingen te nemen en sterke fundamenten te leggen voor het ontwerpen van uw gegevensmodel.
 
-In dit document worden veelgebruikte praktijkvoorbeelden en tips en trucs beschreven voor het op de juiste wijze maken van uw Adobe-campagne.
+In dit document worden veelgebruikte praktijkvoorbeelden en tips en trucs gegeven voor het op de juiste wijze maken van uw Adobe-campagne.
 
 ## Gegevensmodelarchitectuur {#data-model-architecture}
 
@@ -46,11 +46,11 @@ Deze klantgerichte benadering wordt getoond in de grafiek hieronder. De grijze t
 
 Om tot de beschrijving van elke lijst toegang te hebben, ga naar **[!UICONTROL Admin > Configuration > Data schemas]**, selecteer een middel van de lijst en klik de **[!UICONTROL Documentation]** tabel.
 
-Het standaardgegevensmodel van de Campagne van Adobe wordt voorgesteld in dit [document](https://final-docs.campaign.adobe.com/doc/AC/en/technicalResources/_Datamodel_Description_of_the_main_tables.html).
+Het standaardgegevensmodel van de Campagne van Adobe wordt voorgesteld in dit [document](../../configuration/using/data-model-description.md).
 
 >[!NOTE]
 >
->Met Adobe Campaign Classic kunt u een aangepaste klantentabel maken. In de meeste gevallen wordt echter aanbevolen de standaard [ontvangertabel](../../configuration/using/default-recipient-table.md) te gebruiken, die al vooraf gebouwde aanvullende tabellen en functies bevat.
+>Met Adobe Campaign Classic kunt u een aangepaste klantentabel maken. In de meeste gevallen wordt echter aanbevolen de standaard [ontvangertabel](../../configuration/using/about-data-model.md#default-recipient-table) te gebruiken, die al vooraf gebouwde aanvullende tabellen en functies bevat.
 
 ### Gegevens voor Adobe-campagne {#data-for-campaign}
 
@@ -147,7 +147,7 @@ Een klant die jaarlijks 6 miljard e-mails met een bewaartermijn van 180 dagen vo
 
 Wanneer een aangepaste tabel wordt gemaakt in Adobe Campaign met een primaire sleutel als een autoPK, moet er systematisch een aangepaste, toegewijde reeks aan die tabel worden gekoppeld.
 
-Een aangepaste reeks heeft standaard waarden tussen +1.000 en +2.1BB. Technisch gezien is het mogelijk om een volledig bereik van 4BB te krijgen door negatieve id&#39;s toe te staan. Dit moet met zorg worden gebruikt en er zal één id verloren gaan bij het oversteken van negatieve naar positieve getallen: record 0 wordt doorgaans genegeerd door Adobe Campaign Classic in gegenereerde SQL-query&#39;s.
+Een aangepaste reeks heeft standaard waarden tussen +1.000 en +2.1BB. Technisch gezien is het mogelijk om een volledig bereik van 4BB te krijgen door negatieve id&#39;s toe te staan. Dit moet met zorg worden gebruikt en er zal één id verloren gaan bij het oversteken van negatieve naar positieve getallen: record 0 wordt doorgaans genegeerd door Adobe Campagne Classic in gegenereerde SQL-query&#39;s.
 
 **Verwante onderwerpen:**
 * Zie dit **document** voor meer informatie over de functie voor automatisch genereren [van](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html)reeksen.
@@ -262,14 +262,14 @@ Hieronder vindt u een aantal aanbevolen procedures die moeten worden gevolgd bij
 
 De tabelgrootte is een combinatie van het aantal records en het aantal kolommen per record. Beide kunnen de prestaties van vragen beïnvloeden.
 
-* Een **kleine** tabel is vergelijkbaar met de leveringstabel.
+* Een **kleine tabel** is vergelijkbaar met de leveringstabel.
 * Een tabel van **gemiddelde grootte** is hetzelfde als de grootte van de tabel Ontvanger. Het heeft één verslag per klant.
 * Een **grote** tabel lijkt op de grote logtabel. Het heeft vele verslagen per klant.
 Bijvoorbeeld, als uw gegevensbestand 10 miljoen ontvangers bevat, bevat de Grote logboeklijst ongeveer 100 tot 200 miljoen berichten, en de lijst van de Levering bevat een paar duizend verslagen.
 
 Voor PostgreSQL, zou een rij 8 KB moeten niet overschrijden om [TOAST](https://wiki.postgresql.org/wiki/TOAST) mechanisme te vermijden. Probeer daarom om het aantal kolommen en de grootte van elke rij zo veel mogelijk te verminderen om optimale prestaties van het systeem (geheugen en cpu) te bewaren.
 
-Het aantal rijen heeft ook invloed op de prestaties. De Adobe Campagne-database is niet ontworpen voor het opslaan van historische gegevens die niet actief worden gebruikt voor het maken van doelen of een persoonlijke voorkeur. Dit is een operationele database.
+Het aantal rijen heeft ook invloed op de prestaties. De Adobe Campagne-database is niet ontworpen voor het opslaan van historische gegevens die niet actief worden gebruikt voor het maken van doelen of persoonlijke instellingen. Dit is een operationele database.
 
 Om prestatieskwestie te verhinderen met betrekking tot het hoge aantal rijen, slechts de noodzakelijke verslagen in het gegevensbestand houden. Alle andere records moeten worden geëxporteerd naar een extern gegevenspakhuis en uit de operationele database van Adobe Campagne worden verwijderd.
 
@@ -285,7 +285,7 @@ Hier volgt een voorbeeld:
 ![](assets/transaction-table-example.png)
 
 In dit voorbeeld:
-* De tabellen *Transacties* en *Transactie-item* zijn groot: meer dan 10 miljoen.
+* De tabellen *Transactie* en *Transactie-item* zijn groot: meer dan 10 miljoen.
 * De tabellen *Product* en *Winkel* zijn kleiner: minder dan 10.000.
 * Het etiket en de referentie van het product zijn in de *producttabel* opgenomen.
 * De tabel *Transactie-item* heeft alleen een koppeling naar de tabel *Product* . Deze tabel is numeriek.
