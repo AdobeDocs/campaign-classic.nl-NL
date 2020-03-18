@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
+source-git-commit: becdffadaaaa40359b61a6ad786b9fd8ebecc6e9
 
 ---
 
@@ -67,15 +67,19 @@ In de volgende stappen wordt de configuratie van de gegevensconnector beschreven
 
    ![](assets/adobe_genesis_install_013.png)
 
-1. Selecteer op het **[!UICONTROL Admin]** tabblad de optie **[!UICONTROL Data Connectors]**.
+1. From the **[!UICONTROL Admin]** tab, select **[!UICONTROL Data Connectors]**.
 
+   U hebt de volgende bevoegdheden voor Analytics-hulpprogramma&#39;s nodig om toegang te krijgen tot het **[!UICONTROL Data Connectors]** menu. Raadpleeg deze [pagina voor meer informatie](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/analytics-tools.html)
+   * Integraties (maken)
+   * Integraties (update)
+   * Integraties (verwijderen)
    ![](assets/adobe_genesis_install_002.png)
 
 1. Selecteer in de lijst met partners **[!UICONTROL Neolane - Enterprise Marketing Platform]**.
 
    ![](assets/adobe_genesis_install_014.png)
 
-1. Klik in het **[!UICONTROL Add integration]** dialoogvenster op **[!UICONTROL Activate]**.
+1. In the **[!UICONTROL Add integration]** dialog, click **[!UICONTROL Activate]**.
 1. Controleer **[!UICONTROL I accept these terms and conditions]** en selecteer **[!UICONTROL Report suite]** verbonden aan deze integratie en ga het schakelaaretiket in.
 
    Klik wanneer u klaar bent **[!UICONTROL Create and configure this integration]**.
@@ -87,6 +91,7 @@ In de volgende stappen wordt de configuratie van de gegevensconnector beschreven
    ![](assets/adobe_genesis_install_005.png)
 
 1. Geef de id&#39;s op die nodig zijn om de impact van de e-mailcampagne te meten, d.w.z. de interne naam van de campagne (cid) en de tabel-id voor iNmsBroadlog (bid). Geef ook de indicatoren op voor gebeurtenissen die moeten worden verzameld.
+Zorg ervoor dat de foto&#39;s van het type Numeriek **[!UICONTROL Events]** zijn, anders verschijnen ze niet in het keuzemenu.
 
    ![](assets/adobe_genesis_install_006.png)
 
