@@ -15,16 +15,16 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7c57fb0f2d9867b5ea96185c1984e0b1baeb056a
+source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
 
 ---
 
 
 # Beschrijving van gebeurtenis{#event-description}
 
-## Informatie over datamodel voor transactiemeldingen {#about-transactional-messaging-datamodel}
+## Over het gegevensmodel voor transactieberichten {#about-transactional-messaging-datamodel}
 
-Het transactionele overseinen baseert zich op het datamodel van de Campagne, en gebruikt twee extra afzonderlijke lijsten. Deze tabellen, **NmsRtEvent** en **NmsBatchEvent**, bevatten dezelfde velden en laten u gebeurtenissen in real time aan de ene kant beheren en gebeurtenissen in batch aan de andere kant.
+Transactieberichten zijn afhankelijk van het gegevensmodel van de Campagne van Adobe, en gebruiken twee extra afzonderlijke lijsten. Deze [tabellen](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** en **NmsBatchEvent**, bevatten dezelfde velden en laten u gebeurtenissen in real time aan de ene kant en gebeurtenissen in batch aan de andere kant beheren.
 
 ## SOAP-methoden {#soap-methods}
 
