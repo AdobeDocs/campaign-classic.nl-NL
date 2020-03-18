@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d2758b5e81d1720a4f01a610e51c4a33995d88d1
+source-git-commit: ae44e38e9d05478e8ebfacb1e063cdfd5d7ff30c
 
 ---
 
@@ -52,4 +52,4 @@ In het algemeen zijn de volgende rechten noodzakelijk:
 
 >[!NOTE]
 >
->De gegevensbestandbeheerder moet deze rechten met de rechten aanpassen specifiek voor elke gegevensbestandmotor. Raadpleeg de specifieke rechten [van](https://docs.campaign.adobe.com/doc/AC6.1/en/technicalResources/technicalResources.html)RDBMS voor meer informatie.
+>De gegevensbestandbeheerder moet deze rechten met de rechten aanpassen specifiek voor elke gegevensbestandmotor. Raadpleeg de specifieke rechten [van](https://docs.adobe.com/content/help/en/campaign-classic/using/assets/fda_rdbms_rights.pdf)RDBMS voor meer informatie.
