@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 63d0551c0c036cb54ebea4e6cc4dc1f6566cf976
+source-git-commit: 92f4047628eca0fc1d71aded0329720c094463bd
 
 ---
 
@@ -32,7 +32,7 @@ Met Adobe Campaign kunt u de rechten definiëren en beheren die aan de verschill
 
 De machtigingen zijn van toepassing op operatorprofielen of groepen operatoren.
 
-De instructies worden uitgevoerd met veiligheidsparameters die zijn gekoppeld aan de verbindingsmodus van de operator met Adobe Campaign. Raadpleeg [deze pagina](../../installation/using/configuring-campaign-server.md#defining-security-zones)voor meer informatie.
+De instructies worden uitgevoerd met veiligheidsparameters die zijn gekoppeld aan de verbindingsmodus van de operator met Adobe Campaign. For more on this, refer to [this page](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
 Er zijn twee soorten toestemmingen u aan een gebruiker kunt verlenen:
 
@@ -129,7 +129,7 @@ Met de **[!UICONTROL Edit the access parameters...]** koppeling hebt u toegang t
 
 * Met de **[!UICONTROL Disable account]** optie kunt u de account van de operator uitschakelen: hij heeft geen toegang meer tot Adobe Campaign.
 * Met de **[!UICONTROL Forbid access from the rich client]** optie kunt u het gebruik van Adobe Campaign beperken tot [webtoegang](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) of via API&#39;s: toegang tot de Adobe Campaign-clientconsole is niet meer beschikbaar.
-* Het is mogelijk om een veiligheidszone aan de exploitant te verbinden. Raadpleeg [deze pagina](../../installation/using/configuring-campaign-server.md#defining-security-zones)voor meer informatie.
+* Het is mogelijk om een veiligheidszone aan de exploitant te verbinden. For more on this, refer to [this page](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 * U kunt een vertrouwd IP masker ook bepalen gebruikend de aangewezen verbinding.
 
    De operator kan verbinding maken met Adobe Campaign zonder een wachtwoord in te voeren als het IP-adres in deze lijst staat.
@@ -287,26 +287,45 @@ Standaard stelt Adobe Campaign een aantal benoemde rechten voor waarmee u de mac
 
 Deze rechten zijn als volgt:
 
-* ADMINISTRATIE: Algemeen beheerrecht toegepast op alle mappen op de console.
-* GOEDKEURINGSINDIENING: Recht om revisoren toe te wijzen.
-* CENTRAAL: Recht op centraal beheer (Distributed Marketing).
-* MAP VERWIJDEREN: Rechts om mappen te verwijderen.
-* MAPPEN BEWERKEN: Rechts om mapeigenschappen te wijzigen: naam, label, bijbehorende afbeelding, enz.
-* EXPORTEREN: Recht op het exporteren van gegevens.
-* TOEGANG TOT BESTANDEN: Recht om toegang voor dossiers via een manuscript te lezen en te schrijven.
-* IMPORTEREN: Recht op het importeren van generieke gegevens.
-* MAPPEN INVOEGEN: Recht om omslagen op te nemen.
-* LOKAAL: Recht op lokaal beheer (Distributed Marketing).
-* SAMENVOEGEN: Recht om verslagen samen te voegen.
-* LEVERINGEN VOORBEREIDEN: Recht om de leveringsanalyse te creëren, uit te geven en te beginnen.
-* RECHTS VAN PRIVACYGEGEVENS: Recht om privacygegevens te verzamelen en te schrappen. Raadpleeg deze [pagina](https://helpx.adobe.com/campaign/kb/acc-privacy.html)voor meer informatie.
-* UITVOERING PROGRAMMA: Recht om externe programma&#39;s uit te voeren.
-* ONTVANGER IMPORTEREN: Recht om ontvangers in te voeren.
-* UITVOERING SQL-SCRIPT: Recht om SQL manuscripten op het gegevensbestand uit te voeren.
-* AFLEVERINGEN STARTEN: Recht om eerder geanalyseerde leveringen goed te keuren.
-* ACTIVITEIT VOOR SQL-GEGEVENSBEHEER GEBRUIKEN: Recht om uw eigen SQL manuscripten te schrijven gebruikend de SQL activiteit van het Beheer van Gegevens, om het werklijsten tot stand te brengen en te bevolken (zie [deze sectie](../../workflow/using/sql-data-management.md)).
-* WORKFLOW: Recht om werkschema&#39;s te gebruiken.
-* WEBAPP: Recht om Webtoepassingen te gebruiken.
+* **[!UICONTROL ADMINISTRATION]**: Operatoren met het **[!UICONTROL ADMINISTRATION]** recht hebben volledige toegang tot de instantie. Beheerders kunnen elk object, zoals workflow, levering, scripts, enzovoort, uitvoeren, maken, bewerken of verwijderen.
+
+* **[!UICONTROL APPROVAL ADMINISTRATION]**: U kunt meerdere goedkeuringsstappen instellen in workflows en leveringen om ervoor te zorgen dat de huidige status is goedgekeurd door een toegewezen operator of groep. Gebruikers met de **[!UICONTROL APPROVAL ADMINISTRATION]** rechterstatus kunnen goedkeuringsstappen instellen en ook een exploitant of groep van bedieners toewijzen die deze stappen moeten goedkeuren.
+
+* **[!UICONTROL CENTRAL]**: Recht op centraal beheer (Distributed Marketing).
+
+* **[!UICONTROL DELETE FOLDER]**: Rechts om mappen te verwijderen. Met dit recht kunnen gebruikers mappen verwijderen uit de verkennerweergave.
+
+* **[!UICONTROL EDIT FOLDERS]**: Recht om omslageigenschappen zoals interne naam, etiket, bijbehorende beeld, subomslagorde te veranderen, etc.
+
+* **[!UICONTROL EXPORT]**: Gebruikers kunnen gegevens uit hun Adobe Campagne-instanties exporteren naar een bestand op een server of lokale computer met behulp van de **[!UICONTROL EXPORT]** workflowactiviteit.
+
+* **[!UICONTROL FILES ACCESS]**: Recht om toegang voor dossiers te lezen en te schrijven via een manuscript dat in de **[!UICONTROL JavaScript]** werkschemaactiviteit kan worden geschreven om dossiers op een server te lezen/te schrijven.
+
+* **[!UICONTROL IMPORT]**: Recht op het importeren van generieke gegevens. **[!UICONTROL IMPORT]** kunt u gegevens in een andere tabel importeren, terwijl u **[!UICONTROL RECIPIENT IMPORT]** rechts alleen in de ontvangende tabel kunt importeren.
+
+* **[!UICONTROL INSERT FOLDERS]**: Recht om omslagen op te nemen. Gebruikers met de **[!UICONTROL INSERT FOLDERS]** rechtermuisknop kunnen nieuwe mappen maken in de mappenstructuur in de weergave Verkenner.
+
+* **[!UICONTROL LOCAL]**: Recht op lokaal beheer (Distributed Marketing).
+
+* **[!UICONTROL MERGE]**: Rechts om de geselecteerde records samen te voegen tot één record. Als ontvangers bestaan als duplicaten, staat het **[!UICONTROL MERGE]** recht gebruiker toe om de duplicaten te selecteren en hen samen te voegen in een primaire ontvanger.
+
+* **[!UICONTROL PREPARE DELIVERIES]**: Recht om een levering te maken, te bewerken en op te slaan. Gebruikers met het **[!UICONTROL PREPARE DELIVERIES]** recht kunnen ook het analyseproces voor de levering starten.
+
+* **[!UICONTROL PRIVACY DATA RIGHT]**: Recht om privacygegevens te verzamelen en te schrappen. Raadpleeg deze [pagina](https://helpx.adobe.com/campaign/kb/acc-privacy.html)voor meer informatie.
+
+* **[!UICONTROL PROGRAM EXECUTION]**: Recht om bevelen in diverse programmeertalen uit te voeren.
+
+* **[!UICONTROL RECIPIENT IMPORT]**: Recht om ontvangers in te voeren. Gebruikers met **[!UICONTROL RECIPIENT IMPORT]** rechts kunnen een lokaal bestand importeren in de tabel met ontvangers.
+
+* **[!UICONTROL SQL SCRIPT EXECUTION]** Recht om het even welk SQL bevel direct op het gegevensbestand uit te voeren.
+
+* **[!UICONTROL START DELIVERIES]**: Recht om eerder geanalyseerde leveringen goed te keuren. Na de afleveringsanalyse wordt de levering onderbroken in verschillende goedkeuringsstappen en moet deze worden goedgekeurd om te worden hervat. Gebruikers met **[!UICONTROL START DELIVERIES]** recht mogen leveringen goedkeuren.
+
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Recht om uw eigen SQL manuscripten te schrijven gebruikend de SQL activiteit van het Beheer van Gegevens, om het werklijsten tot stand te brengen en te bevolken (zie [deze sectie](../../workflow/using/sql-data-management.md)).
+
+* **[!UICONTROL WORKFLOW]**: Recht om werkstromen uit te voeren. Zonder dit recht kunnen gebruikers geen workflows starten, stoppen of opnieuw starten.
+
+* **[!UICONTROL WEBAPP]**: Recht om Webtoepassingen te gebruiken.
 
 >[!NOTE]
 >
