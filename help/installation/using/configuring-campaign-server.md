@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
+source-git-commit: 7db84fc951234cb6257d8e41615ba7fc5b2c6f77
 
 ---
 
@@ -24,7 +24,11 @@ source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
 
 In de onderstaande sectie vindt u informatie over configuraties aan de serverzijde die kunnen worden uitgevoerd om aan uw behoeften en uw specifieke omgeving te voldoen.
 
-Deze configuraties moeten alleen door beheerders worden uitgevoerd en voor **hostmodellen op locatie** . Voor **gehoste** implementaties kunnen instellingen aan de serverzijde alleen door Adobe worden geconfigureerd. Sommige instellingen kunnen echter worden ingesteld in het Configuratiescherm (bijvoorbeeld voor IP-wittekst of URL-machtigingen).
+>[!IMPORTANT]
+>
+>Deze configuraties moeten alleen door beheerders worden uitgevoerd en voor **hostmodellen op locatie** .
+>
+>Voor **gehoste** implementaties kunnen instellingen aan de serverzijde alleen door Adobe worden geconfigureerd. Sommige instellingen kunnen echter worden ingesteld in het Configuratiescherm (bijvoorbeeld voor IP-wittekst of URL-machtigingen).
 
 Raadpleeg de volgende secties voor meer informatie:
 
@@ -109,7 +113,7 @@ Alle rechten die een zone definiëren, zijn als volgt:
 * **sessionTokenOnly**: het beveiligingstoken is niet vereist in de verbindings-URL
 * **showErrors**: fouten aan de serverzijde worden doorgestuurd en weergegeven
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >In een zonedefinitie, vermindert elk attribuut met de **ware** waarde veiligheid.
 
@@ -153,7 +157,7 @@ De **volmachtsparameter** kan in een **subNetwork** element worden gebruikt om v
 
 Wanneer naar een proxy wordt verwezen en een verbinding via deze proxy wordt ingeschakeld (zichtbaar via de HTTP X-Forwarded-For-header), is de geverifieerde zone die van de clients van de proxy en niet die van de proxy.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Als een volmacht wordt gevormd en het mogelijk is om het (of het als niet bestaat) met voeten te treden, zal het IP adres dat zal worden getest kunnen worden vervalst.
 >
@@ -281,7 +285,7 @@ In dit geval, worden deze parameters geplaatst door de server SMTP in de **`<rel
 <relay address="192.0.0.3" port="25"/>
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Deze werkende wijze impliceert ernstige beperkingen op leveringen, aangezien het de productie wegens de intrinsieke prestaties van de relaisserver (latentie, bandbreedte...) kan zeer verminderen. Bovendien zal de capaciteit om synchrone leveringsfouten (die door het analyseren van verkeer SMTP worden ontdekt) te kwalificeren beperkt zijn, en het verzenden zal niet mogelijk zijn als de relaisserver niet beschikbaar is.
 
@@ -297,7 +301,7 @@ Raadpleeg ook optimalisatie voor verzending [via e-mail](../../installation/usin
 
 ### Het leiden van uitgaand verkeer SMTP met affiniteiten {#managing-outbound-smtp-traffic-with-affinities}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >De affiniteitsconfiguratie moet van de ene server op de andere coherent zijn. We raden u aan contact op te nemen met Adobe voor de configuratie van affiniteit, aangezien configuratiewijzigingen moeten worden gerepliceerd op alle toepassingsservers waarop de MTA wordt uitgevoerd.
 
@@ -307,7 +311,7 @@ Hiervoor voert u de volgende stappen uit:
 
 1. Voer de affiniteiten in de **`<ipaffinity>`** sectie van het bestand **serverConf.xml** in.
 
-   **Een affiniteit kan verschillende namen hebben: om ze te scheiden, gebruik de**; teken.
+   Een affiniteit kan verschillende namen hebben: om ze te scheiden, gebruik de **;** teken.
 
    Voorbeeld:
 
@@ -363,7 +367,7 @@ Er zijn drie modi voor verbindingsbeveiliging:
 </urlPermission>
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Standaard gebruikt de client van nieuwe klanten de **blokkeermodus**. Als ze een nieuwe URL moeten toestaan, moeten ze contact opnemen met hun beheerder om de URL te whitelist.
 >
@@ -444,11 +448,11 @@ ruby
 sh
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Deze lijst is niet limitatief.
 
-In de **exec** knoop van het dossier van de serverconfiguratie, moet u het eerder gecreeerd dossier in het **blacklistFile** attribuut van verwijzingen voorzien.
+In het **exec** knooppunt van het serverconfiguratiebestand moet u verwijzen naar het eerder gemaakte bestand in het kenmerk **blacklistFile** .
 
 **Alleen** voor Linux: in het dossier van de serverconfiguratie, adviseren wij dat u een gebruiker specificeert die aan het uitvoeren van externe bevelen wordt gewijd om uw veiligheidsconfiguratie te verbeteren. Deze gebruiker wordt geplaatst in de **exec** knoop van het configuratiedossier. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
@@ -466,7 +470,7 @@ Bijvoorbeeld:
 
 Deze gebruiker moet worden toegevoegd aan de vervolgkeuzelijst van de Adobe Campagneoperator &#39;neolane&#39;.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Gebruik geen aangepast sudo. Er moet een standaardsudo op het systeem worden geïnstalleerd.
 
@@ -581,7 +585,7 @@ Hiervoor gaat u naar het bestand **serverConf.xml** in de **conf** -opslagruimte
 
 Elk in dit bestand geconfigureerd proces heeft een **processRestartTime** -kenmerk. U kunt de waarde van dit kenmerk wijzigen om de opstarttijd van elk proces aan te passen aan uw wensen.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Verwijder dit kenmerk niet. Elke dag moeten alle processen opnieuw worden opgestart.
 
@@ -597,7 +601,7 @@ Als u de mogelijke indelingen wilt beperken, moet u de kenmerkwaarde vervangen d
 
 Bijvoorbeeld: **uploadWhiteList=&quot;.*.png,.Met *.jpg&quot;** kunt u PNG- en JPG-indelingen uploaden naar de server. Er worden geen andere indelingen geaccepteerd.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >In Internet Explorer moet het volledige bestandspad worden gecontroleerd door de reguliere expressie.
 
