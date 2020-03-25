@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2de7987a0e5089a9023c0cf3b4c6c61a758a5e5f
+source-git-commit: 295dcd0ac302194df5e202ccabb579f006ed5651
 
 ---
 
@@ -32,6 +32,14 @@ De pagina met best practices voor het gegevensmodel is bijgewerkt met nieuwe sec
 
 Er is nu een nieuwe sectie beschikbaar met een beschrijving van het vooraf gedefinieerde gegevensmodel van de Adobe-campagne en de interactie van tabellen buiten de box. [Meer informatie](../../configuration/using/data-model-description.md)
 
+Er zijn extra bronnen toegevoegd aan de pagina &quot;Documentstartpagina&quot;. [Meer informatie](../../campaign-classic-home.md)
+
+Er is een gebruiksscenario toegevoegd voor het integreren van een dynamische aanbieding van Adobe Target in een e-mailbericht in Adobe Campaign. [Meer informatie](../../integrations/using/inserting-a-dynamic-image.md)
+
+Er is nu een nieuwe sectie beschikbaar met de verschillende talen die beschikbaar zijn in Adobe Campaign. [Meer informatie](../../platform/using/adobe-campaign-workspace.md#languages)
+
+De pagina van het Toegangsbeheer is bijgewerkt met meer informatie over Benoemde rechten. [Meer informatie](../../platform/using/access-management.md#named-rights)
+
 ## februari 2020 {#february-2020}
 
 Er is nu een nieuwe sectie beschikbaar met de aanbevolen procedures en aanbevelingen voor het ontwerpen van het gegevensmodel van de Adobe-campagne. [Meer informatie](../../configuration/using/data-model-best-practices.md)
@@ -43,8 +51,6 @@ Het document met veelgestelde vragen over de aflevering is bijgewerkt met meer i
 AMP for Email wordt nu ondersteund door drie e-mailproviders (Gmail, Outlook en Mail.ru). De sectie waarin wordt beschreven hoe u interactieve inhoud met AMP definieert, is bijgewerkt. [Meer informatie](../../delivery/using/defining-interactive-content.md)
 
 De sectie E-mailarchivering is verduidelijkt. [Meer informatie](../../installation/using/email-archiving.md#recommendations-and-limitations)
-
-
 
 ## 20.1 - 17/02/2020{#release-20-1}
 
