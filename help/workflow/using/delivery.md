@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 366d2149933fa68dfec2a732d1014e1875709cff
 
 ---
 
@@ -34,7 +34,7 @@ Om het te vormen, geef de activiteit uit en ga de leveringsopties in.
 
    * Akte op de levering in de binnenkomende overgang wordt gespecificeerd die. Selecteer hiertoe de eerste optie van de **[!UICONTROL Delivery]** sectie van het venster.
 
-      Deze optie kan worden gebruikt wanneer een vorige werkstroomactiviteit reeds tot stand heeft gebracht of de levering gespecificeerd. Dit kan, zoals in het onderstaande voorbeeld, door een activiteit van het zelfde type worden gedaan die een uitgaande overgang heeft geproduceerd.
+      Deze optie kan worden gebruikt wanneer een vorige werkstroomactiviteit reeds heeft gecreeerd of de levering gespecificeerd. Dit kan, zoals in het onderstaande voorbeeld, door een activiteit van het zelfde type worden gedaan die een uitgaande overgang heeft geproduceerd.
 
       In het volgende voorbeeld wordt de levering voor het eerst gemaakt. De populatie en de inhoud worden later gedefinieerd. Daarna, wordt de informatie voor deze drie elementen opnieuw ingegaan in een nieuwe leveringsactiviteit gebruikend de binnenkomende overgang zodat dit kan worden verzonden.
 
@@ -52,7 +52,7 @@ Om het te vormen, geef de activiteit uit en ga de leveringsopties in.
 
       Nadat u de leveringsactie hebt geselecteerd, kunt u de inhoud weergeven door op het **[!UICONTROL Edit link]** pictogram te klikken.
 
-   * Maak een script om de levering te berekenen. U doet dit door de **[!UICONTROL Calculated by a script]** optie te selecteren en het script in te voeren. U kunt een invoervenster openen door op de **[!UICONTROL Edit...]** optie te klikken. In het volgende voorbeeld wordt de id van de levering hersteld:
+   * Maak een script om de levering te berekenen. U doet dit door de **[!UICONTROL Computed by a script]** optie te selecteren en het script in te voeren. U kunt een invoervenster openen door op de **[!UICONTROL Edit...]** optie te klikken. In het volgende voorbeeld wordt de id van de levering hersteld:
 
       ![](assets/diffusion_edit_3.png)
 
