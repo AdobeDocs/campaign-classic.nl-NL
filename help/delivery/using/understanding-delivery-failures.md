@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ba750d51d31d7783a3fdc5ef6b0bcf4a863c69d4
+source-git-commit: 5e34e49d66f5d943951cd5d9a11d45df9af544ba
 
 ---
 
@@ -300,7 +300,7 @@ De standaardregels zijn als volgt:
 
    * U kunt kiezen al dan niet om bepaalde identificatienormen en encryptiesleutels te activeren om de domeinnaam, zoals identiteitskaart **van de** Afzender, **Domeinsleutels**, **DKIM**, en **S/MIME** te controleren.
    * **SMTP-relais**: laat u het IP adres en de haven van een relaisserver voor een bepaald domein vormen. Zie [deze sectie](../../installation/using/configuring-campaign-server.md#smtp-relay)voor meer informatie.
-   Als uw berichten in Vooruitzichten als **[!UICONTROL on behalf of]** met een verschillende domeinnaam worden getoond, zorg ervoor u uw e-mails met identiteitskaart **van de** Afzender niet ondertekent, die de merkgebonden standaard van de e-mailauthentificatie van Microsoft verouderd is. Als de **[!UICONTROL Sender ID]** optie is ingeschakeld, schakelt u het desbetreffende vakje uit en neemt u contact op met de ondersteuning van Adobe Campagne. De leverbaarheid wordt niet beïnvloed.
+   Als uw berichten in Vooruitzichten met **[!UICONTROL on behalf of]** in het afzenderadres worden getoond, zorg ervoor u niet uw e-mails met identiteitskaart **van de** Afzender ondertekent, die de verouderde merkgebonden standaard van de e-mailauthentificatie van Microsoft is. Als de **[!UICONTROL Sender ID]** optie is ingeschakeld, schakelt u het desbetreffende vakje uit en neemt u contact op met de ondersteuning van Adobe Campagne. De leverbaarheid wordt niet beïnvloed.
 
    >[!NOTE]
    >
