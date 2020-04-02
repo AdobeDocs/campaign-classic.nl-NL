@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ae44e38e9d05478e8ebfacb1e063cdfd5d7ff30c
+source-git-commit: 17eed4f4ead8ce4f424d4fb2681269e888229692
 
 ---
 
@@ -50,6 +50,34 @@ In het algemeen zijn de volgende rechten noodzakelijk:
 * **EXPLAIN** (aanbevolen): voor het toezicht op prestaties in geval van problemen;
 * **SCHRIJF Gegevens** (afhankelijk van het integratiescenario).
 
->[!NOTE]
->
->De gegevensbestandbeheerder moet deze rechten met de rechten aanpassen specifiek voor elke gegevensbestandmotor. Raadpleeg de specifieke rechten [van](https://docs.adobe.com/content/help/en/campaign-classic/using/assets/fda_rdbms_rights.pdf)RDBMS voor meer informatie.
+De gegevensbestandbeheerder moet deze rechten met de rechten aanpassen specifiek voor elke gegevensbestandmotor. Raadpleeg de onderstaande sectie voor meer informatie.
+
+## FDA-rechten {#fda-rights}
+
+|   | Sneeuwvlok | Opnieuw | Oracle | SQLServer | PostgreSQL | MySQL |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **Verbinding maken met externe database** | GEBRUIK OP WAARSCHUWING EN GEBRUIK OP DATABASE-privileges | Een gebruiker maken die is gekoppeld aan de AWS-account | SESSIEBEVOEGDHEID MAKEN | machtiging CONNECT | CONNECT-bevoegdheid | Een gebruiker maken die is gekoppeld aan een externe host die ALLE PRIVILEGES heeft |
+| **Tabellen maken** | TABEL MAKEN OP SCHEMA-voorrecht | BEVOEGDHEID MAKEN | TABELvoorrecht MAKEN | TABEL MAKEN, machtiging | BEVOEGDHEID MAKEN | BEVOEGDHEID MAKEN |
+| **Indexen maken** | N.v.t. | BEVOEGDHEID MAKEN | INDEX OF CREEER OM HET EVEN WELKE INDEXBEVOEGDHEID | ALTER-machtiging | BEVOEGDHEID MAKEN | INDEX-bevoegdheid |
+| **Functies maken** | FUNCTIE MAKEN OP SCHEMA-voorrecht | GEBRUIK OP TAALvoorrecht om externe pythonuscripts aan te roepen | PROCEDURE MAKEN OF EEN PROCESBEVOEGDHEID MAKEN | FUNCTIE MAKEN, machtiging | USAGE-bevoegdheid | ROUTINE-bevoegdheden MAKEN |
+| **Procedures maken** | PROCEDURE INSTELLEN VOOR HET BEVOEGDHEID VAN HET SCHEMA | GEBRUIK OP TAALvoorrecht om externe pythonuscripts aan te roepen | PROCEDURE MAKEN OF EEN PROCESBEVOEGDHEID MAKEN | TOESTEMMING VOOR PROCEDURE MAKEN | USAGE-bevoegdheid (procedures zijn functies) | ROUTINE-bevoegdheden MAKEN |
+| **Objecten verwijderen (tabellen, indexen, functies, procedures)** | Het object in eigendom hebben | Het object in eigendom of supergebruiker zijn | WILLEKEURIGE &lt;-object > bevoegdheid VERWIJDEREN | ALTER-machtiging | Tabel: eigenaar van de tabelindex: het bezit van de indexfunctie: de functie bezitten | DROP-voorrecht |
+| **Uitvoeringen controleren** | BEVOEGDHEID MONITOR voor het vereiste object | Geen bevoegdheid vereist om de opdracht EXPLAIN te gebruiken | INSERT en SELECT privilege en vereiste bevoegdheid om de instructie uit te voeren waarvoor het EXPLAIN-PLAN is gebaseerd op | SHOWPLAN-machtiging | Geen bevoegdheid vereist om instructie EXPLAIN te gebruiken | SELECT, bevoegdheid |
+| **Gegevens schrijven** | INSERT- en/of UPDATE-bevoegdheden (afhankelijk van schrijfbewerking) | Rechten INVOEGEN en BIJWERKEN | TABELrechten INVOEGEN en BIJWERKEN of INVOEGEN en BIJWERKEN | Machtigingen INVOEGEN en BIJWERKEN | Rechten INVOEGEN en BIJWERKEN | Rechten INVOEGEN en BIJWERKEN |
+| **Gegevens in tabellen laden** | WERKGEBIED MAKEN OP SCHEMA, SELECTEREN en INVOEGEN in de rechten voor de doeltabel | SELECTEREN EN INVOEGEN, rechten | SELECTEREN EN INVOEGEN, rechten | BULKBEWERKINGEN INVOEGEN, BEHEREN en TABELmachtigingen WIJZIGEN | SELECTEREN EN INVOEGEN, rechten | BESTANDSBEVOEGDHEID |
+| **Toegang tot clientgegevens** | SELECTEREN OP (TOEKOMSTIGE) TABLE(S)- OF WEERGAVEBEVOEGDHEDEN | SELECT, bevoegdheid | SELECTEER OF SELECTEER EEN TABELBEVOEGDHEID | machtiging SELECTEREN | SELECT, bevoegdheid | SELECT, bevoegdheid |
+| **Toegang tot metagegevens** | SELECTEER INFORMATIE_SCHEMA-SCHEMA-voorrecht | SELECT, bevoegdheid | Geen bevoegdheid vereist voor gebruik van DESCRIBE-instructie | machtiging DEFINITIE WEERGEVEN | Geen bevoegdheid vereist voor het gebruik van de opdracht &quot;\d table&quot; | SELECT, bevoegdheid |
+
+|   | DB2 UDB | TeraData | InfiniDB | Sybase IQ / Sybase ASE | Netezza | Groenblauw | AsterData |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **Verbinding maken met externe database** | CONNECT-instantie | CONNECT-bevoegdheid | Een gebruiker maken die is gekoppeld aan een externe host die ALLE PRIVILEGES heeft | Geen toestemming vereist om de instructie CONNECT te gebruiken | Geen bevoegdheid vereist | CONNECT-bevoegdheid | CONNECT-bevoegdheid |
+| **Tabellen maken** | CREATETAB-instantie | CREATE TABLE or TABLE, trefwoord | BEVOEGDHEID MAKEN | RESOURCE Authority en CREATE permission | TABLE-bevoegdheid | BEVOEGDHEID MAKEN | BEVOEGDHEID MAKEN |
+| **Indexen maken** | INDEX-bevoegdheid | INDEX- of INDEX-trefwoord MAKEN | INDEX-bevoegdheid | RESOURCE Authority en CREATE permission | INDEX-bevoegdheid | BEVOEGDHEID MAKEN | BEVOEGDHEID MAKEN |
+| **Functies maken** | IMPLICIT_SCHEMA-autoriteit of CREATEIN-voorrecht | trefwoord FUNCTIE OF FUNCTIE MAKEN | ROUTINE-bevoegdheden MAKEN | RESOURCE-instantie of DBA-instantie voor Java-functies | FUNCTIE, voorrecht | USAGE-bevoegdheid | FUNCTIE-bevoegdheden MAKEN |
+| **Procedures maken** | IMPLICIT_SCHEMA-autoriteit of CREATEIN-voorrecht | PROCEDURE OF PROCEStrefwoord MAKEN | ROUTINE-bevoegdheden MAKEN | BRONNEN | PROCESBEVOEGDHEID | USAGE-bevoegdheid | FUNCTIE-bevoegdheden MAKEN |
+| **Objecten verwijderen (tabellen, indexen, functies, procedures)** | DROPIN-bevoegdheid of -BEHEER of -bevoegdheid voor het bezit van het object | DROP &lt; object > of objectgerelateerd trefwoord | DROP-voorrecht | Eigenaar van het object of de DBA-instantie | DROP-voorrecht | Het object in eigendom hebben | Het object in eigendom hebben |
+| **Uitvoeringen controleren** | EXPLAIN-instantie | Geen bevoegdheid vereist om instructie EXPLAIN te gebruiken | SELECT, bevoegdheid | Alleen een systeembeheerder kan sp_showplan uitvoeren | Geen bevoegdheid vereist om instructie EXPLAIN te gebruiken | Geen bevoegdheid vereist om instructie EXPLAIN te gebruiken | Geen bevoegdheid vereist om instructie EXPLAIN te gebruiken |
+| **Gegevens schrijven** | Rechten of DATAACCESS-instantie INVOEGEN en bijwerken | Rechten INVOEGEN en BIJWERKEN | Rechten INVOEGEN en BIJWERKEN | Machtigingen INVOEGEN en BIJWERKEN | Rechten INVOEGEN en BIJWERKEN | Rechten INVOEGEN en BIJWERKEN | Rechten INVOEGEN en BIJWERKEN |
+| **Gegevens in tabellen laden** | LAADINSTANTIE | U kunt privileges SELECTEREN en INVOEGEN om respectievelijk KOPIËREN NAAR en KOPIËREN UIT instructies te gebruiken | BESTANDSBEVOEGDHEID | Ben de eigenaar van de lijst of ALTER toestemming. Afhankelijk van - gl optie, zou de LIJST van de Lading slechts kunnen worden uitgevoerd als de gebruiker de gezag DBA heeft | SELECTEREN EN INVOEGEN, rechten | SELECTEREN EN INVOEGEN, rechten | SELECTEREN EN INVOEGEN, rechten |
+| **Toegang tot clientgegevens** | Rechten of DATAACCESS-instantie INVOEGEN/BIJWERKEN | SELECT, bevoegdheid | SELECT, bevoegdheid | machtiging SELECTEREN | SELECT, bevoegdheid | SELECT, bevoegdheid | SELECT, bevoegdheid |
+| **Toegang tot metagegevens** | Geen toestemming vereist om de verklaring van DESCRIBE te gebruiken | Toon bevoegdheid | SELECT, bevoegdheid | Geen toestemming vereist om de instructie DESCRIBE te gebruiken | Geen bevoegdheid vereist voor het gebruik van de opdracht &quot;\d table&quot; | Geen bevoegdheid vereist voor het gebruik van de opdracht &quot;\d table&quot; | Geen bevoegdheid vereist om SHOW-opdracht te gebruiken |
