@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 295dcd0ac302194df5e202ccabb579f006ed5651
+source-git-commit: 11aab98507be594bde79e21c9a5e8ae0b2e8fe36
 
 ---
 
@@ -26,9 +26,19 @@ Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates
 
 U kunt ook de opmerkingen bij de release [Adobe Campaign Classic raadplegen](../../rn/using/latest-release.md).
 
+## april 2020 {#april-2020}
+
+De tabel met FDA-rechten is verplaatst naar de documentatie van Accessing an external database (FDA). [Meer informatie](../../platform/using/remote-database-access-rights.md)
+
+De veelgestelde vragen zijn bijgewerkt met tips over het wissen van zachte en harde cache. [Meer informatie](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)
+
+De sectie met best practices voor gegevensmodellen is verbeterd met aanvullende informatie over indexen. [Meer informatie](../../configuration/using/data-model-best-practices.md#indexes)
+
+De sectie waarin het vooraf gedefinieerde gegevensmodel van de campagne van Adobe wordt beschreven, is bijgewerkt met meer informatie over elke tabel buiten de box en met koppelingen naar de relevante modules. [Meer informatie](../../configuration/using/data-model-description.md)
+
 ## maart 2020 {#march-2020}
 
-De pagina met best practices voor het gegevensmodel is bijgewerkt met nieuwe secties, waaronder [reeksen](../../configuration/using/data-model-best-practices.md#sequences), [prestaties](../../configuration/using/data-model-best-practices.md#performance) en [grote tabellen](../../configuration/using/data-model-best-practices.md#large-tables). [Meer informatie](../../configuration/using/data-model-best-practices.md)
+De pagina met best practices voor gegevensmodellen is bijgewerkt met nieuwe secties, waaronder [reeksen](../../configuration/using/data-model-best-practices.md#sequences), [prestaties](../../configuration/using/data-model-best-practices.md#performance) en [grote tabellen](../../configuration/using/data-model-best-practices.md#large-tables). [Meer informatie](../../configuration/using/data-model-best-practices.md)
 
 Er is nu een nieuwe sectie beschikbaar met een beschrijving van het vooraf gedefinieerde gegevensmodel van de Adobe-campagne en de interactie van tabellen buiten de box. [Meer informatie](../../configuration/using/data-model-description.md)
 
