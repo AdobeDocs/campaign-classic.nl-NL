@@ -5,7 +5,7 @@ solution: Campaign Classic
 title: Adobe Campaign Classic-productdocumentatie
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 234fffd42829a37a705a9472fe23053c8b8ab03d
+source-git-commit: 53e250cb24d5386e6e9e5d85b52d5eb689b2914c
 
 ---
 
@@ -75,7 +75,7 @@ source-git-commit: 234fffd42829a37a705a9472fe23053c8b8ab03d
 |---|---|
 | [Opmerkingen bij de release](/help/rn/using/latest-release.md) | [Lijst met foutberichten](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
 | [Hoe kan ik-video&#39;s](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [Klassiek gegevensmodel campagne](configuration/using/about-data-model.md) |
-| [Compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) | [JSAPI-documentatie](configuration/using/about-web-services.md) |
+| [Compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) | [JSAPI-documentatie](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [Aan de slag met Campagne Classic](platform/using/about-adobe-campaign-classic.md) | [Implementatiehandleiding](https://helpx.adobe.com/campaign/kb/acc-implementation.html) |
 | [Gold Standard-upgrade](https://helpx.adobe.com/campaign/kb/gold-standard.html) | [Handleiding voor bijhouden](https://helpx.adobe.com/campaign/kb/acc-tracking.html) |
 | [Verouderde en verwijderde functies](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) | [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/campaign/kb/acc-security.html) |
