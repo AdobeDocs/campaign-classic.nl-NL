@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 828c95aaa4b1d0d9507129edb164ddf978c363c1
+source-git-commit: 707e16e9e493e175c70af606bf4568a9127cedb2
 
 ---
 
@@ -40,7 +40,7 @@ In het volgende diagram ziet u de verbindingen tussen de belangrijkste bedrijfst
 
 ![](assets/data-model_simplified-diagram.png)
 
-Het vooraf gedefinieerde Adobe Campagne-gegevensmodel bevat de volgende hoofdtabellen.
+Het vooraf gedefinieerde Adobe Campagne-gegevensmodel bevat de onderstaande hoofdtabellen.
 
 ### NmsRecipient {#NmsRecipient}
 
@@ -108,11 +108,15 @@ De structuur wordt beheerd door de velden iParentId en iChildCount. Het veld sFu
 
 ## Aflevering en tekstspatiëring {#delivery-and-tracking}
 
+Deze reeks lijsten is verbonden met de module van de **Levering** , die toestaat om leveringen en uiteindelijke kwesties te controleren die wanneer de berichten worden verzonden worden ontmoet. Zie [Leveringen](../../delivery/using/monitoring-a-delivery.md)controleren voor meer informatie. Zie [Trackingberichten](../../delivery/using/about-message-tracking.md)voor meer informatie over bijhouden.
+
 ![](assets/data-model_delivery.png)
 
 **NmsBroadLogMsg**: Deze tabel komt overeen met het schema **nms:wideLogMsg** . Het is een uitbreiding van de lijst van het leveringslogboek.
 
 ## Campagnebeheer {#campaign-management}
+
+Deze reeks lijsten is verbonden met de module van de **Marketing campagnes** , die toestaat om mededelingen en marketing campagnes te bepalen, te optimaliseren, uit te voeren en te analyseren. Zie [Informatie over marketingcampagnes](../../campaign/using/designing-marketing-campaigns.md)voor meer informatie.
 
 ![](assets/data-model_campaign.png)
 
@@ -128,6 +132,8 @@ De structuur wordt beheerd door de velden iParentId en iChildCount. Het veld sFu
 
 ## Communicatieconsistentie {#communication-consistency}
 
+Deze reeks lijsten is verbonden met de module van de Optimalisering **van de** Campagne, die toestaat om het verzenden van leveringen te controleren, te filtreren en te controleren. Zie [Informatie over campagnetypologieën](../../campaign/using/about-campaign-typologies.md)voor meer informatie.
+
 ![](assets/data-model_typology.png)
 
 * **NmsTypologyRule**: Deze tabel komt overeen met het schema **nms:typologyRule** . Het bevat de regels die van toepassing zijn op leveringen afhankelijk van typologieën.
@@ -137,6 +143,8 @@ De structuur wordt beheerd door de velden iParentId en iChildCount. Het veld sFu
 * **NmsVolumeConsumed**: Deze tabel komt overeen met het schema **nms:volumeConsumed** . Het bevat alle verbruikslijnen van de capaciteitsregels.
 
 ## Responsbeheer {#response-management}
+
+Deze reeks lijsten is verbonden met de module van de Manager **van de** Reactie, die toestaat om het succes en de rentabiliteit van marketing campagnes te meten of voorstellen voor alle communicatie kanalen aan te bieden. Zie [Informatie over responsbeheer](../../campaign/using/about-response-manager.md)voor meer informatie.
 
 ![](assets/data-model_response.png)
 
@@ -196,6 +204,8 @@ Het bevat een overzicht van de reactie van een individu op een bepaalde hypothes
 
 ## Simulatie en levering {#simulation-and-delivery}
 
+Deze reeks lijsten is verbonden met de module van de **Simulatie** , die toestaat om de distributie van aanbiedingen te testen die tot een categorie of een milieu behoren alvorens uw voorstel naar ontvangers te verzenden. Zie [Informatie over simulatie](../../interaction/using/about-offers-simulation.md)van aanbiedingen voor meer informatie.
+
 ![](assets/data-model_simulation.png)
 
 * **NmsSimulation**: Deze tabel komt overeen met het **nms:simulatieschema** . Het is een simulatie voor een reeks leveringen of aanbiedingen voor een bepaalde populatie.
@@ -203,6 +213,8 @@ Het bevat een overzicht van de reactie van een individu op een bepaalde hypothes
 * **NmsOfferSimulationRel**: Deze tabel komt overeen met het schema **nms:offerSimulationRel** . Hiermee kunt u een simulatie koppelen aan een aanbieding.
 
 ## Interactiemodule {#interaction-module}
+
+Deze reeks lijsten is verbonden aan de module van de **Interactie** , die toestaat om in echt - tijd tijdens een interactie met een bepaald contact te antwoorden door hen één of verscheidene aangepaste aanbiedingen te maken. Zie [Interactie en aanbiedingsbeheer](../../interaction/using/interaction-and-offer-management.md)voor meer informatie.
 
 * **NmsOffer**: Deze tabel komt overeen met het schema **nms:aanbieding** . Het bevat de definitie van elk marketingaanbod.
 * **NmsPropositionRcp**: Deze tabel komt overeen met het schema **nms:propositionRcp** . Het bevat het kanaallogboek van marketingvoorstellen die naar elk individu worden verzonden. De record wordt gemaakt wanneer een voorstel wordt voorbereid of daadwerkelijk aan een individu wordt gedaan.
@@ -213,6 +225,8 @@ Het bevat een overzicht van de reactie van een individu op een bepaalde hypothes
 * **NmsOfferEnv**: Deze tabel komt overeen met de **nms:offerEnv**. Het bevat de aanbiedingsomgevingen.
 
 ## Module Berichtencentrum {#message-center-module}
+
+De volgende reeks lijsten is verbonden met de module van het **Transactioneel overseinen** (Centrum van het Bericht), die toestaat om individuele en unieke die mededelingen te beheren aan een gebruiker worden verzonden en van gebeurtenissen worden geproduceerd die van informatiesystemen worden teweeggebracht. Voor meer op dit, zie [Ongeveer transactioneel overseinen](../../message-center/using/about-transactional-messaging.md).
 
 ### NmsRtEvent {#NmsRtEvent}
 
@@ -226,15 +240,19 @@ Deze tabel komt overeen met het schema **nms:rtEvent** . Het bevat een definitie
 
 Deze tabel komt overeen met het schema **nms:batchEvent** . Het bevat de definitie van gebeurtenissen op batch.
 
-## Module Microsites {#microsites-module}
+<!--## Microsites Module {#microsites-module}
+
+This set of tables is linked to the **Web applications** functionality, which allows to create and publish dynamic and interactive web applications with data from the database and content adapted to the rights of the connected user. For more on this, see [About web applications](../../web/using/about-web-applications.md).
 
 ![](assets/data-model_microsites.png)
 
-* **NmsTrackingUrl**: Deze tabel komt overeen met het **nms:trackingUrl** -schema.
+* **NmsTrackingUrl**: This table matches the **nms:trackingUrl** schema.
 
-* **NmsPurl**: Deze tabel komt overeen met het schema **nms:purl** .
+* **NmsPurl**: This table matches the **nms:purl** schema.-->
 
 ## NMAC-module {#nmac-module}
+
+Deze set tabellen is gekoppeld aan het **Mobile App Channel**, waarmee gepersonaliseerde meldingen naar iOS- en Android-terminals kunnen worden verzonden via apps. Zie [Informatie over het mobiele toepassingskanaal](../../delivery/using/about-mobile-app-channel.md)voor meer informatie.
 
 * **NmsMobileApp**: Deze tabel komt overeen met het schema **nms:mobileApp** . Het bevat de mobiele toepassingen die zijn gedefinieerd in Adobe Campaign.
 * **NmsAppSubscription**: Deze tabel komt overeen met het schema **nms:appSubscription** . Het bevat de abonneeinformatie betreffende één of meerdere toepassingen.
@@ -244,6 +262,8 @@ Deze tabel komt overeen met het schema **nms:batchEvent** . Het bevat de definit
 * **NmsBroadLogAppSubRcp**: Deze tabel komt overeen met het schema **nms:wideLogAppSubRcp** .
 
 ## Module voor sociale marketing {#social-marketing-module}
+
+Deze set tabellen is gekoppeld aan de module **Sociale netwerken** beheren, waarmee u via Facebook en Twitter kunt communiceren met klanten en vooruitzichten. Zie [Sociale marketing](../../social/using/about-social-marketing.md)voor meer informatie.
 
 ![](assets/data-model_social.png)
 
