@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
+source-git-commit: efef031d9c662daac6634ff7cc0d05d9d512443b
 
 ---
 
@@ -108,7 +108,7 @@ De volgende tabel bevat een lijst met alle standaardpakketten met hun beschrijvi
    <td> Sociale netwerken (sociale marketing) <br /> </td> 
    <td> Synchroniseert Adobe Campaign met Twitter en Facebook.<br /> </td> 
    <td> Alles</td> 
-   <td> <a href="../../social/using/starting-workflows.md">Meer informatie</a> </td> 
+   <td> <a href="../../social/using/about-social-marketing.md">Meer informatie</a> </td> 
   </tr> 
   <tr> 
    <td> Transactionaal berichtenbeheer (Berichtcentrum - Controle)<br /> </td> 
