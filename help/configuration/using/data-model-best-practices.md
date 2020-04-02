@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1336bf7ab9cce7f2ffe7d4ffa5e119851e946885
+source-git-commit: 239272386b709f81d1e6898a68b9b3552ddeb9b7
 
 ---
 
@@ -171,6 +171,41 @@ Houd echter rekening met het volgende:
 * Native indexen niet uit tabellen buiten de box verwijderen.
 
 <!--When you are performing an initial import with very high volumes of data insert in Adobe Campaign database, it is recommended to run that import without custom indexes at first. It will allow to accelerate the insertion process. Once you’ve completed this important import, it is possible to enable the index(es).-->
+
+### Voorbeeld
+
+Het beheren van indexen kan zeer complex worden, daarom is het belangrijk om te begrijpen hoe zij werken. Om deze ingewikkeldheid te illustreren, nemen een basisvoorbeeld zoals het zoeken ontvangers door op de voornaam en achternaam te filtreren. Dit doet u als volgt:
+1. Ga naar de map met alle ontvangers in de database. Zie Profielen [](../../platform/using/managing-profiles.md)beheren voor meer informatie.
+1. Klik met de rechtermuisknop op het **[!UICONTROL First name]** veld.
+1. Selecteer **[!UICONTROL Filter on this field]**.
+
+   ![](assets/data-model-index-example.png)
+
+1. Herhaal deze bewerking voor het **[!UICONTROL Last name]** veld.
+
+De twee bijbehorende filters worden boven op het scherm toegevoegd.
+
+![](assets/data-model-index-search.png)
+
+U kunt nu zoekfilters toepassen op de velden **[!UICONTROL First name]** **[!UICONTROL Last name]** en op basis van de verschillende filtervoorwaarden.
+
+Nu kunt u indexen toevoegen om het zoeken op deze filters te versnellen. Maar welke indexen moeten worden gebruikt?
+
+>[!NOTE]
+>
+>Dit voorbeeld is van toepassing op gehoste klanten die een PostSQL-database gebruiken.
+
+In de volgende tabel wordt aangegeven in welke gevallen de drie hieronder beschreven indexen al dan niet worden gebruikt op basis van het toegangspatroon dat in de eerste kolom wordt weergegeven.
+
+| Zoekcriteria | Index 1 (Voornaam + Achternaam) | Index 2 (alleen voornaam) | Index 3 (alleen achternaam) | Opmerkingen |
+|--- |--- |--- |--- |--- |
+| Voornaam is gelijk aan &quot;Johnny&quot; | Gebruikt | Gebruikt | Niet gebruikt | Aangezien de voornaam zich op de eerste positie op index 1 bevindt, wordt deze toch gebruikt: er hoeft geen criterium aan de achternaam te worden toegevoegd . |
+| Voornaam is gelijk aan &quot;Johnny&quot; EN Achternaam is gelijk aan &quot;Smith&quot; | Gebruikt | Niet gebruikt | Niet gebruikt | Aangezien beide attributen in de zelfde vraag worden gezocht, slechts zal de index die beide attributen combineert worden gebruikt. |
+| Achternaam is gelijk aan &quot;Smith&quot; | Niet gebruikt | Niet gebruikt | Gebruikt | Er wordt rekening gehouden met de volgorde van de kenmerken in de index. Als u deze volgorde niet aanpast, wordt de index mogelijk niet gebruikt. |
+| Voornaam begint met &quot;Joh&quot; | Gebruikt | Gebruikt | Niet gebruikt | Met &#39;Links zoeken&#39; worden indexen ingeschakeld. |
+| Voornaam eindigt met &#39;nny&#39; | Niet gebruikt | Niet gebruikt | Niet gebruikt | Met de optie &quot;Rechts zoeken&quot; worden indexen uitgeschakeld en wordt een volledige scan uitgevoerd. Bepaalde specifieke indextypen kunnen dit gebruik van hoofdletters en kleine letters afhandelen, maar zijn niet standaard beschikbaar in Adobe Campagne. |
+| Voornaam bevat &quot;John&quot; | Niet gebruikt | Niet gebruikt | Niet gebruikt | Dit is een combinatie van &#39;links&#39;- en &#39;rechts&#39;-zoekopdrachten. Wegens het laatste, zal het indexen onbruikbaar maken en een volledige aftasten zal worden uitgevoerd. |
+| Voornaam is gelijk aan &quot;john&quot; | Niet gebruikt | Niet gebruikt | Niet gebruikt | Indexen zijn hoofdlettergevoelig. Als u deze niet hoofdlettergevoelig wilt maken, moet u een specifieke index maken die een SQL-functie bevat, zoals &quot;upper(firstname)&quot;. U moet hetzelfde doen met andere gegevenstransformaties, zoals &quot;unaccent(firstname)&quot;. |
 
 ## Koppelingen en kardinaliteit {#links-and-cardinality}
 
