@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1f5217fb45d2ffcb73ad4ec7d32ba6bd7ddbc15
+source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
 
 ---
 
@@ -74,13 +74,7 @@ _13 augustus 2019_
 
 ## Release 19.1.4 - build 9032{#release-19-1-4-build-9032}
 
-![](assets/green_2.png) 3 **april 2020**: nieuwe build (9032-...e8b36257e) die de volgende oplossing bevat:
-
-* We introduceren een handtekeningmechanisme voor het bijhouden van koppelingen in e-mailberichten om mogelijk kwaadwillig gebruik (phishing) te voorkomen. Dit beschermt tegen het herschrijven van volgparameters die een URL kunnen omvatten die wordt gebruikt om de gebruiker om te leiden. Dit mechanisme is momenteel standaard uitgeschakeld. Neem contact op met de klantenservice als u dit wilt activeren.
-
-* Er is een aanvullende beveiliging toegevoegd om te voorkomen dat onjuist gevormde URL&#39;s die zijn gegenereerd vanuit eerdere builds, worden omgeleid of dat het handtekeningmechanisme is uitgeschakeld. Neem contact op met de klantenservice als u deze nodig hebt.
-
-![](assets/orange_2.png) 5 **maart 2020**: nieuwe build (9032-...205c981c3) die de volgende oplossing bevat:
+![](assets/green_2.png) 5 **maart 2020**: nieuwe build (9032-...205c981c3) die de volgende oplossing bevat:
 
 * Probleem met externe accounts met FTP via SSL opgelost. (NEO-20498)
 
