@@ -1,11 +1,11 @@
 ---
 audience: end-user
-user-guide-title: Adobe Campaign Classic Help
+user-guide-title: Help bij Adobe Campagne Classic
 index: y
 product: adobe campaign
-sub-product: adobe campaign classic
+sub-product: adobe campagne classic
 translation-type: tm+mt
-source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
+source-git-commit: ce5513c2af9b522919c038e25557634b11e8e3cb
 
 ---
 
@@ -385,17 +385,22 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [Binnenkomende e-mails](workflow/using/inbound-emails.md)
       + [Binnenkomende SMS](workflow/using/inbound-sms.md)
    + Gebruik hoofdletters {#use-cases}
-      + [De lokale goedkeuringsactiviteit gebruiken](workflow/using/using-the-local-approval-activity.md)
-      + [Een rapport naar een lijst verzenden](workflow/using/sending-a-report-to-a-list.md)
-      + [Workflows controleren](workflow/using/supervising-workflows.md)
-      + [Gegevensupdates coördineren](workflow/using/coordinating-data-updates.md)
-      + [Een overzichtslijst maken](workflow/using/creating-a-summary-list.md)
-      + [Gegevens worden verrijkt](workflow/using/enriching-data.md)
-      + [A/B-tests](workflow/using/a-b-testing.md)
-      + [Werken met aggregaten](workflow/using/using-aggregates.md)
-      + [Een verjaardagsbericht verzenden](workflow/using/sending-a-birthday-email.md)
-      + [Inhoud van levering laden](workflow/using/loading-delivery-content.md)
-      + [Workflow voor levering tussen kanalen](workflow/using/cross-channel-delivery-workflow.md)
+      + Leveringen {#deliveries}
+         + [De lokale goedkeuringsactiviteit gebruiken](workflow/using/using-the-local-approval-activity.md)
+         + [A/B-tests](workflow/using/a-b-testing.md)
+         + [Een verjaardagsbericht verzenden](workflow/using/sending-a-birthday-email.md)
+         + [Inhoud van levering laden](workflow/using/loading-delivery-content.md)
+         + [Workflow voor levering tussen kanalen](workflow/using/cross-channel-delivery-workflow.md)
+         + [E-mailverrijking met aangepaste datumvelden](workflow/using/email-enrichment-with-custom-date-fields.md)
+      + Toezicht {#monitoring}
+         + [Een rapport naar een lijst verzenden](workflow/using/sending-a-report-to-a-list.md)
+         + [Workflows controleren](workflow/using/supervising-workflows.md)
+         + [Persoonlijke waarschuwingen verzenden aan operatoren](workflow/using/sending-personalized-alerts-to-operators.md)
+      + Gegevensbeheer {#data-management}
+         + [Gegevensupdates coördineren](workflow/using/coordinating-data-updates.md)
+         + [Een overzichtslijst maken](workflow/using/creating-a-summary-list.md)
+         + [Gegevens worden verrijkt](workflow/using/enriching-data.md)
+         + [Werken met aggregaten](workflow/using/using-aggregates.md)
       + Query&#39;s ontwerpen {#designing-queries}
          + [De tabel met ontvangers opvragen](workflow/using/querying-recipient-table.md)
          + [Leveringsgegevens opvragen](workflow/using/querying-delivery-information.md)
@@ -405,8 +410,6 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
          + [Een berekend veld voor een opsommingstype toevoegen](workflow/using/adding-enumeration-type-calculated-field.md)
          + [Een filter maken](workflow/using/creating-a-filter.md)
          + [Gedupliceerde ontvangers filteren](workflow/using/filtering-duplicated-recipients.md)
-      + [Persoonlijke waarschuwingen verzenden aan operatoren](workflow/using/sending-personalized-alerts-to-operators.md)
-      + [E-mailverrijking met aangepaste datumvelden](workflow/using/email-enrichment-with-custom-date-fields.md)
    + Workflows controleren {#monitoring-workflows}
       + [Uitvoering van controlewerkstroom](workflow/using/monitoring-workflow-execution.md)
       + [Technische workflows controleren](workflow/using/monitoring-technical-workflows.md)
