@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 707e16e9e493e175c70af606bf4568a9127cedb2
+source-git-commit: 4406e11e33e14136ea43fc3cc5a92e0d1c466100
 
 ---
 
@@ -73,6 +73,8 @@ De NmsRcpGrpRel-relatietabel bevat alleen de twee velden die overeenkomen met de
 ### NmsService {#NmsService}
 
 Deze tabel komt overeen met het **nms:service** -schema.
+
+In de Campagne van Adobe, kunt u abonnementen tot stand brengen en beheren aan informatiediensten (onderwerpen). De lijst NmsService slaat de definitie van de informatiediensten (onderwerpen) op die u uw ontvangers aanbiedt om aan (een nieuwsbrief bijvoorbeeld) in te schrijven.
 
 De diensten zijn entiteiten die aan groepen (statische ontvankelijke groeperingen) gelijkaardig zijn, behalve dat zij meer informatie verspreiden en gemakkelijke beheer van abonnementen en abonnementen via vormen toelaten.
 
