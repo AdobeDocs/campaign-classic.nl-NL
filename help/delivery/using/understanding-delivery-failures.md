@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5e34e49d66f5d943951cd5d9a11d45df9af544ba
+source-git-commit: e5a2ef47108c6779a744197638e2de9d1072cfe3
 
 ---
 
@@ -102,7 +102,7 @@ De mogelijke oorzaken van een mislukking van de levering zijn:
   </tr> 
   <tr> 
    <td> Fout genegeerd </td> 
-   <td> Geen fout </td> 
+   <td> Genegeerd </td> 
    <td> 25 </td> 
    <td> Het adres is gewhitelisteerd. De fout wordt daarom genegeerd en er wordt een e-mail verzonden.<br /> </td> 
   </tr> 
@@ -238,25 +238,28 @@ Stuitberichten kunnen de volgende kwalificatiestatus hebben:
 
 * **[!UICONTROL To qualify]** : de stuiterende post kon niet worden gekwalificeerd. De kwalificatie moet aan het leveringsteam worden toegewezen om efficiënte platformleverantie te waarborgen. Zolang het niet gekwalificeerd is, wordt de stuiterende post niet gebruikt om de lijst van e-mailbeheerregels te verrijken.
 * **[!UICONTROL Keep]** : de stuiterende post werd gekwalificeerd en zal door het **Vernieuwen voor leverbaarheidswerkschema** worden gebruikt om met bestaande e-mailbeheersregels te worden vergeleken en de lijst te verrijken.
-* **[!UICONTROL Ignore]** : de stuiterende post werd gekwalificeerd maar zal niet door het **Refresh voor leverbaarheidswerkschema** worden gebruikt. Het wordt niet naar clientinstanties verzonden.
+* **[!UICONTROL Ignore]** : de stuiterende post wordt genegeerd door de Campagne MTA, betekenend dat deze stuit nooit het adres van de ontvanger zal veroorzaken om in quarantined te zijn. Het wordt niet gebruikt door de workflow **Vernieuwen voor** levering en het wordt niet naar exemplaren van de client verzonden.
 
 ![](assets/deliverability_qualif_status.png)
 
-Voor gehoste of hybride installaties, als u aan Verbeterde MTA hebt bevorderd:
-
-* De stuiterende kwalificaties in de **[!UICONTROL Delivery log qualification]** tabel worden niet meer gebruikt voor synchrone foutberichten voor leveringsfouten. Verbeterde MTA bepaalt het stuittype en de kwalificatie, en stuurt die informatie terug naar Campagne.
-
+>[!NOTE]
+>
+>Voor gehoste of hybride installaties, als u aan Verbeterde MTA hebt bevorderd:
+>
+>* De stuiterende kwalificaties in de **[!UICONTROL Delivery log qualification]** tabel worden niet meer gebruikt voor synchrone foutberichten voor leveringsfouten. Verbeterde MTA bepaalt het stuittype en de kwalificatie, en stuurt die informatie terug naar Campagne.
+   >
+   >
 * De asynchrone stuitingen worden nog gekwalificeerd door het inMail proces door de **[!UICONTROL Inbound email]** regels. Zie de regels voor [e-](#email-management-rules)mailbeheer voor meer informatie.
-
+   >
+   >
 * Voor instanties die de verbeterde MTA zonder **Webhooks/EFS** gebruiken, zullen de **[!UICONTROL Inbound email]** regels ook worden gebruikt om de synchrone stuiterende e-mails te verwerken die uit Verbeterde MTA komen, gebruikend het zelfde e-mailadres zoals voor asynchrone stuiterende e-mails.
-
+>
+>
 Raadpleeg dit [document](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagne.
 
 ### E-mailbeheerregels {#email-management-rules}
 
 E-mailregels zijn toegankelijk via het **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** knooppunt. De regels voor e-mailbeheer worden weergegeven in het onderste gedeelte van het venster.
-
-Deze regels bevatten de lijst met tekenreeksen die door externe servers kunnen worden geretourneerd en waarmee u de fout (**Hard**, **Zacht** of **Genegeerd**) kunt kwalificeren.
 
 ![](assets/tech_quarant_rules.png)
 
@@ -264,67 +267,61 @@ Deze regels bevatten de lijst met tekenreeksen die door externe servers kunnen w
 >
 >De standaardparameters van het platform worden gevormd in de plaatsingstovenaar. Zie [deze sectie](../../installation/using/deploying-an-instance.md)voor meer informatie.
 
-De standaardregels zijn als volgt:
-
-* **Binnenkomende e-mail**
-
-   Wanneer een e-mail mislukt, retourneert de externe server een stuiterend bericht naar het adres dat is opgegeven in de platformparameters.
-
-   De Campagne van Adobe vergelijkt de inhoud van elke stuiterende post met de koorden in de lijst van regels, en wijst het dan toe één van de drie foutentypes.
-
-   De gebruiker kan zijn eigen regels tot stand brengen.
-
-   >[!IMPORTANT]
-   >
-   >Wanneer u een pakket importeert en gegevens bijwerkt via de workflow **Vernieuwen voor** levering, worden de door de gebruiker gemaakte regels overschreven.
-
-   Zie [deze sectie](#bounce-mail-qualification)voor meer informatie over stuiterende mailkwalificatie.
-
-   >[!NOTE]
-   >
-   >Voor ontvangen of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, worden de **[!UICONTROL Inbound email]** regels niet meer gebruikt voor synchrone de foutenmeldingen van de leveringsmislukking. Zie [deze sectie](#bounce-mail-qualification)voor meer informatie.
-   >
-   >Raadpleeg dit [document](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagne.
-
-* **Domeinbeheer**
-
-   De het overseinenserver van de Campagne van Adobe past regels toe specifiek voor de domeinen, en toen de regels voor het algemene geval dat door een asterisk in de lijst van regels wordt vertegenwoordigd.
-
-   De regels voor de Hotmail- en MSN-domeinen zijn standaard beschikbaar in Adobe Campagne.
-
-   Klik op het **[!UICONTROL Detail]** pictogram om de configuratie van de regel te openen.
-
-   ![](assets/tech_quarant_domain_rules_02.png)
-
-   De **parameters** SMTP handelen als filters die voor een blokkerende regel worden toegepast.
-
-   * U kunt kiezen al dan niet om bepaalde identificatienormen en encryptiesleutels te activeren om de domeinnaam, zoals identiteitskaart **van de** Afzender, **Domeinsleutels**, **DKIM**, en **S/MIME** te controleren.
-   * **SMTP-relais**: laat u het IP adres en de haven van een relaisserver voor een bepaald domein vormen. Zie [deze sectie](../../installation/using/configuring-campaign-server.md#smtp-relay)voor meer informatie.
-   Als uw berichten in Vooruitzichten met **[!UICONTROL on behalf of]** in het afzenderadres worden getoond, zorg ervoor u niet uw e-mails met identiteitskaart **van de** Afzender ondertekent, die de verouderde merkgebonden standaard van de e-mailauthentificatie van Microsoft is. Als de **[!UICONTROL Sender ID]** optie is ingeschakeld, schakelt u het desbetreffende vakje uit en neemt u contact op met de ondersteuning van Adobe Campagne. De leverbaarheid wordt niet beïnvloed.
-
-   >[!NOTE]
-   >
-   >Voor ontvangen of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, worden de **[!UICONTROL Domain management]** regels niet meer gebruikt. **DKIM (DomainKeys Identified Mail)** e-mailverificatie wordt ondertekend door de Enhanced MTA voor alle berichten met alle domeinen. Het ondertekent niet met identiteitskaart **van de** Afzender, **DomainKeys**, of **S/MIME** tenzij anders gespecificeerd op het Verbeterde niveau MTA.
-   >
-   >Raadpleeg dit [document](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagne.
-
-* **MX-beheer**
-
-   * De MX beheersregels worden gebruikt om de stroom van uitgaande e-mails voor een specifiek domein te regelen. Ze nemen een monster van de stuiterende berichten en blokkeren het verzenden, indien van toepassing.
-
-   * De het overseinenserver van de Campagne van Adobe past regels toe specifiek voor de domeinen, en toen de regels voor het algemene geval dat door een asterisk in de lijst van regels wordt vertegenwoordigd.
-
-   * Om MX beheersregels te vormen, plaats eenvoudig een drempel en selecteer bepaalde parameters SMTP. Een **drempel** is een grens die als foutenpercentage wordt berekend waarvoorbij alle berichten naar een specifiek domein worden geblokkeerd. In het algemeen geldt dat het verzenden van e-mails voor minimaal 300 berichten drie uur wordt geblokkeerd als het foutenpercentage 90% bereikt.
-   For more on MX management, refer to [this section](../../installation/using/email-deliverability.md#mx-configuration).
-
-   >[!NOTE]
-   >
-   >Voor ontvangen of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, worden de regels van de **[!UICONTROL MX management]** leveringsproductie niet meer gebruikt. Verbeterde MTA gebruikt zijn eigen MX regels die het toestaan om uw productie door domein aan te passen die op uw eigen historische e-mailreputatie wordt gebaseerd, en op real time terugkoppelen die uit de domeinen komt waar u e-mails verzendt.
-   >
-   >Raadpleeg dit [document](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagne.
+De standaardregels zijn als volgt.
 
 >[!IMPORTANT]
 >
 >* De leveringsserver (MTA) moet opnieuw worden begonnen als de parameters zijn veranderd.
 >* De wijziging of invoering van beheerregels is alleen voor professionele gebruikers.
 
+
+#### Binnenkomende e-mail {#inbound-email}
+
+Deze regels bevatten de lijst met tekenreeksen die door externe servers kunnen worden geretourneerd en waarmee u de fout (**Hard**, **Zacht** of **Genegeerd**) kunt kwalificeren.
+
+Wanneer een e-mail mislukt, retourneert de externe server een stuiterend bericht naar het adres dat is opgegeven in de platformparameters. De Campagne van Adobe vergelijkt de inhoud van elke stuiterende post met de koorden in de lijst van regels, en wijst het dan één van de drie [foutentypes](#delivery-failure-types-and-reasons)toe.
+
+>[!NOTE]
+>
+>De gebruiker kan zijn eigen regels tot stand brengen. Wanneer u een pakket importeert en gegevens bijwerkt via de workflow **Vernieuwen voor** levering, worden de door de gebruiker gemaakte regels overschreven.
+
+Zie [deze sectie](#bounce-mail-qualification)voor meer informatie over stuiterende mailkwalificatie.
+
+>[!IMPORTANT]
+>
+>Voor ontvangen of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, en als uw instantie **Webhooks/EFS** functionaliteit heeft, worden de **[!UICONTROL Inbound email]** regels niet meer gebruikt voor synchrone de foutenmeldingen van de leveringsmislukking. Zie [deze sectie](#bounce-mail-qualification)voor meer informatie.
+>
+>Raadpleeg dit [document](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagne.
+
+#### Domeinbeheer {#domain-management}
+
+De Adobe Campagne Messaging-server past één **domeinbeheerregel** toe op alle domeinen.
+
+<!--![](assets/tech_quarant_domain_rules_02.png)-->
+
+* U kunt kiezen al dan niet om bepaalde identificatienormen en encryptiesleutels te activeren om de domeinnaam, zoals identiteitskaart **van de** Afzender, **Domeinsleutels**, **DKIM**, en **S/MIME** te controleren.
+* De **SMTP relaisparameters** laten u het IP adres en de haven van een relaisserver voor een bepaald domein vormen. Zie [deze sectie](../../installation/using/configuring-campaign-server.md#smtp-relay)voor meer informatie.
+
+Als uw berichten in Vooruitzichten met **[!UICONTROL on behalf of]** in het afzenderadres worden getoond, zorg ervoor u niet uw e-mails met identiteitskaart **van de** Afzender ondertekent, die de verouderde merkgebonden standaard van de e-mailauthentificatie van Microsoft is. Als de **[!UICONTROL Sender ID]** optie is ingeschakeld, schakelt u het desbetreffende vakje uit en neemt u contact op met de ondersteuning van Adobe Campagne. De leverbaarheid wordt niet beïnvloed.
+
+>[!IMPORTANT]
+>
+>Voor ontvangen of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, worden de **[!UICONTROL Domain management]** regels niet meer gebruikt. **DKIM (DomainKeys Identified Mail)** e-mailverificatie wordt ondertekend door de Enhanced MTA voor alle berichten met alle domeinen. Het ondertekent niet met identiteitskaart **van de** Afzender, **DomainKeys**, of **S/MIME** tenzij anders gespecificeerd op het Verbeterde niveau MTA.
+>
+>Raadpleeg dit [document](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagne.
+
+#### MX-beheer {#mx-management}
+
+* De MX beheersregels worden gebruikt om de stroom van uitgaande e-mails voor een specifiek domein te regelen. Ze nemen een monster van de stuiterende berichten en blokkeren het verzenden, indien van toepassing.
+
+* De het overseinenserver van de Campagne van Adobe past regels toe specifiek voor de domeinen, en toen de regels voor het algemene geval dat door een asterisk in de lijst van regels wordt vertegenwoordigd.
+
+* Om MX beheersregels te vormen, plaats eenvoudig een drempel en selecteer bepaalde parameters SMTP. Een **drempel** is een grens die als foutenpercentage wordt berekend waarvoorbij alle berichten naar een specifiek domein worden geblokkeerd. In het algemeen geldt dat het verzenden van e-mails voor minimaal 300 berichten drie uur wordt geblokkeerd als het foutenpercentage 90% bereikt.
+
+For more on MX management, refer to [this section](../../installation/using/email-deliverability.md#mx-configuration).
+
+>[!IMPORTANT]
+>
+>Voor ontvangen of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, worden de regels van de **[!UICONTROL MX management]** leveringsproductie niet meer gebruikt. Verbeterde MTA gebruikt zijn eigen MX regels die het toestaan om uw productie door domein aan te passen die op uw eigen historische e-mailreputatie wordt gebaseerd, en op real time terugkoppelen die uit de domeinen komt waar u e-mails verzendt.
+>
+>Raadpleeg dit [document](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagne.
