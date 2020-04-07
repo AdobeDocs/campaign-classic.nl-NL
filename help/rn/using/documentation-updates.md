@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 11aab98507be594bde79e21c9a5e8ae0b2e8fe36
+source-git-commit: 75f195a11170b4213f930deed886f8bf5b0817bc
 
 ---
 
@@ -35,6 +35,10 @@ De veelgestelde vragen zijn bijgewerkt met tips over het wissen van zachte en ha
 De sectie met best practices voor gegevensmodellen is verbeterd met aanvullende informatie over indexen. [Meer informatie](../../configuration/using/data-model-best-practices.md#indexes)
 
 De sectie waarin het vooraf gedefinieerde gegevensmodel van de campagne van Adobe wordt beschreven, is bijgewerkt met meer informatie over elke tabel buiten de box en met koppelingen naar de relevante modules. [Meer informatie](../../configuration/using/data-model-description.md)
+
+Gebruiksgevallen uit de gids &quot;Automatiseren met workflows&quot; zijn ingedeeld in thematische onderdelen. [Meer informatie](../../workflow/using/using-the-local-approval-activity.md)
+
+De secties [Bounce Mail Qualification](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) en [Email Management Rules](../../delivery/using/understanding-delivery-failures.md#email-management-rules) zijn uitgebreid met bijgewerkte informatie.
 
 ## maart 2020 {#march-2020}
 
