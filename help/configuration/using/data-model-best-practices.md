@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 239272386b709f81d1e6898a68b9b3552ddeb9b7
+source-git-commit: 8c71f54b68558178171fa30601aebf5e638db37f
 
 ---
 
@@ -141,7 +141,11 @@ Er zijn twee typen reeksen:
 * **Gedeeld**: meerdere tabellen zouden hun id uit dezelfde reeks kiezen . Dit betekent dat als id &#39;X&#39; door één tabel wordt gebruikt, geen andere tabel die dezelfde reeks deelt, een record met die id &#39;X&#39; heeft. **XtkNewId** is de standaard gedeelde reeks die beschikbaar is in Adobe Campaign.
 * **Specifiek**: maar één tafel haalt zijn id uit de reeks . De reeksnaam bevat gewoonlijk de tabelnaam.
 
-De reeks bestaat uit een geheel 32-bits waarde, met een eindig maximum aantal beschikbare waarden: 2,14 miljard. Nadat de maximumwaarde is bereikt, gaat de reeks terug naar 0 om id&#39;s te recyclen. Als de oude gegevens niet zijn gewist, is het resultaat een unieke-sleutelfout, die een blokkering wordt voor de gezondheid en het gebruik van het platform. Adobe Campagne zou geen communicatie kunnen verzenden (wanneer het leveringstabel beïnvloedt) en de prestaties zouden zeer worden beïnvloed.
+>[!IMPORTANT]
+>
+>De reeks bestaat uit een geheel 32-bits waarde, met een eindig maximum aantal beschikbare waarden: 2,14 miljard. Nadat de maximumwaarde is bereikt, gaat de reeks terug naar 0 om id&#39;s te recyclen.
+>
+>Als de oude gegevens niet zijn gewist, is het resultaat een unieke-sleutelfout, die een blokkering wordt voor de gezondheid en het gebruik van het platform. Adobe Campagne zou geen communicatie kunnen verzenden (wanneer het leveringstabel beïnvloedt) en de prestaties zouden zeer worden beïnvloed.
 
 Een klant die jaarlijks 6 miljard e-mails met een bewaartermijn van 180 dagen voor zijn logboeken verzendt, zou daarom in 4 maanden niet meer in de tijd zijn. Om een dergelijke uitdaging te voorkomen, moet u de instellingen voor leegmaken aanpassen aan uw volumes. Zie [deze sectie](#data-retention)voor meer informatie.
 
