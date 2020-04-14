@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
+source-git-commit: 05831dbcf2450600a9f2f91f87c4440d7e599c9d
 
 ---
 
@@ -30,7 +30,7 @@ Met het **[!UICONTROL Administration / Platform / Options]** knooppunt kunt u de
 
 Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kunnen handmatig worden toegevoegd wanneer dat nodig is. Welke opties beschikbaar zijn, is afhankelijk van de pakketten die bij de instantie worden geïnstalleerd.
 
-##  Aflevering {#delivery}
+## Aflevering {#delivery}
 
 <table> 
  <thead> 
@@ -222,7 +222,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span><br /> </td>
-   <td> Staat een maximumperiode (die in uren wordt uitgedrukt) toe om het aantal uitzendingen te beperken wordt teruggekregen telkens als het synchronisatiewerkschema wordt uitgevoerd.</a>.<br /> </td> 
+   <td> Staat een maximumperiode (die in uren wordt uitgedrukt) toe om te worden gespecificeerd het aantal uitzendingen te beperken die telkens als het synchronisatiewerkschema wordt uitgevoerd worden teruggekregen.</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span><br /> </td> 
@@ -233,7 +233,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
    <td><p> Hiermee kunt u toestaan dat de exploitant die verantwoordelijk is voor de levering de verzending bevestigt, als een specifieke exploitant of groep exploitanten is aangewezen voor het starten van een levering in de eigendommen van de levering.</p><p> Hiervoor activeert u de optie door "1" als waarde in te voeren. Voer 0 in om deze optie te deactiveren.</p><p> Het proces voor bevestiging verzenden werkt dan als standaard: alleen de exploitant of groep van exploitanten die voor de verzending zijn aangewezen in de leveringseigenschappen (of een beheerder) kan de verzending bevestigen en uitvoeren. Zie <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">deze sectie</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsMTA_Alert_Vertraging</span><br /> </td> 
+   <td> <span class="uicontrol">NMSMTA_Alert_Vertraging</span><br /> </td> 
    <td> Aangepaste vertraging (in minuten) waarna een levering wordt beschouwd als 'vertraagd', de standaardwaarde is 30 minuten.<br /> </td> 
   </tr> 
   <tr> 
@@ -440,8 +440,8 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
    <td> <span class="uicontrol">MC_EnrichmentCustomJs</span><br /> </td> 
    <td> JavaScript-bibliotheek die moet worden gepersonaliseerd voor het verrijken van gebeurtenissen. Moet de uitvoering van deze twee functies bevatten:<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol"></span> enrichRtEvents(aiEventId);: Verrijkt en slaat gebeurtenissen in het gegevensbestand op (waar <span class="uicontrol">aiEventId</span> aan de verwerkte lijst van gebeurtenissen in real time beantwoordt).</p> </li> 
-     <li> <p> <span class="uicontrol"></span> enrichBatchEvents(aiEventId);: Verrijkt en slaat gebeurtenissen in het gegevensbestand op (waar <span class="uicontrol">aiEventId</span> aan de lijst van identiteitskaart verwerkte partijgebeurtenissen beantwoordt).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichRtEvents(aiEventId);</span> : Verrijkt en slaat gebeurtenissen in het gegevensbestand op (waar <span class="uicontrol">aiEventId</span> aan de verwerkte lijst van gebeurtenissen in real time beantwoordt).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichBatchEvents(aiEventId);</span> : Verrijkt en slaat gebeurtenissen in het gegevensbestand op (waar <span class="uicontrol">aiEventId</span> aan de lijst van identiteitskaart verwerkte partijgebeurtenissen beantwoordt).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -452,8 +452,8 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
    <td> <span class="uicontrol">MC_RoutingCustomJs</span><br /> </td> 
    <td> JavaScript-bibliotheek die gepersonaliseerd moet worden voor het routeren van gebeurtenissen. Moet de uitvoering van deze twee functies bevatten:<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol"></span> dispatchRtEvent(iEventId);: retourneert de interne naam van het transactiemelding die is geselecteerd om de real-time gebeurtenis te verwerken (waarbij <span class="uicontrol">iEventId</span> overeenkomt met de id van de real-time gebeurtenis die is verwerkt).</p> </li> 
-     <li> <p> <span class="uicontrol"></span> dispatchBatchEvent(iEventId);: retourneert de interne naam van het transactiemelding dat is geselecteerd om de batchgebeurtenis te verwerken (waarbij <span class="uicontrol">iEventId</span> overeenkomt met de id van de batchgebeurtenis die is verwerkt).</p> </li> 
+     <li> <p> <span class="uicontrol">dispatchRtEvent(iEventId);</span> : retourneert de interne naam van het transactiemelding die is geselecteerd om de real-time gebeurtenis te verwerken (waarbij <span class="uicontrol">iEventId</span> overeenkomt met de id van de real-time gebeurtenis die is verwerkt).</p> </li> 
+     <li> <p> <span class="uicontrol">dispatchBatchEvent(iEventId);</span> : retourneert de interne naam van het transactiemelding dat is geselecteerd om de batchgebeurtenis te verwerken (waarbij <span class="uicontrol">iEventId</span> overeenkomt met de id van de batchgebeurtenis die is verwerkt).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -576,7 +576,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_PropositionPurgeDelay</span><br /> </td> 
-   <td><p> Hiermee kunt u de vertraging definiëren waarna voorstellingen uit de database worden verwijderd.</p><p> Deze optie wordt automatisch gecreeerd zodra de vertraging binnen de interface wordt gewijzigd. Als u de waarde in de lijst met opties wijzigt, moet deze worden uitgedrukt in seconden.</p><br /> </td> 
+   <td><p> Hier kunt u de vertraging definiëren waarna voorstellingen uit de database worden verwijderd.</p><p> Deze optie wordt automatisch gecreeerd zodra de vertraging binnen de interface wordt gewijzigd. Als u de waarde in de lijst met opties wijzigt, moet deze worden uitgedrukt in seconden.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_QuarantineMailboxFull</span><br /> </td> 
@@ -635,7 +635,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span><br /> </td> 
-   <td> Staat u toe om een afzonderlijk gegevensbestand voor het werken van lijsten op de Server van Microsoft te vormen SQL. Hierdoor worden back-ups en replicatie geoptimaliseerd. <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)">Meer</a> informatie <br /> </td> 
+   <td> Staat u toe om een afzonderlijk gegevensbestand voor het werken van lijsten op de Server van Microsoft te vormen SQL, om steunen en replicatie te optimaliseren. De optie komt overeen met de naam van de tijdelijke database: Indien opgegeven, worden werktabellen in deze database geschreven. Voorbeeld: 'tempdb.dbo.' (de naam moet eindigen met een punt).</desc> <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Meer</a> informatie <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span><br /> </td> 
@@ -670,7 +670,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
    <td> <span class="uicontrol">NlMigration_KeepFolderStructure</span><br /> </td> 
    <td> Tijdens migratie wordt de boomstructuur automatisch opnieuw ingedeeld op basis van de nieuwe versienormen.<br /> Met deze optie kunt u de automatische migratie van de boomstructuur uitschakelen. Als u het gebruikt, moet u na migratie verouderde mappen verwijderen, de nieuwe mappen toevoegen en alle noodzakelijke controles uitvoeren.<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol"></span> Gegevenstype:Geheel</p> </li> 
+     <li> <p> <span class="uicontrol">Gegevenstype:</span> Geheel</p> </li> 
      <li> <p> <span class="uicontrol">Waarde (tekst)</span> : 1 </p> </li> 
     </ul> Deze optie mag alleen worden gebruikt als de uit-de-box navigatieboom te veel wijzigingen heeft ondergaan.<br /> Zie <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">deze sectie</a>voor meer informatie.<br /> </td> 
   </tr> 
@@ -680,7 +680,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">PostUpgradeLastError</span><br /> </td> 
-   <td> <br /> Informatie over de fout die is opgetreden in de Postupgrade, volgens de onderstaande syntaxis: <strong>{Build number}:{mode: pre/post/...}:{The 'lessThan'/'greaterOrEquelThan' where error occurred + substep}</strong> </td> 
+   <td> Informatie over de fout die is opgetreden in de Postupgrade, volgens de onderstaande syntaxis:<br /> <strong>{Build number}:{mode: pre/post/...}:{The 'lessThan'/'greaterOrEquelThan' where error occurred + substep}</strong> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkCleanup_NoStats</span><br /> </td> 
@@ -717,11 +717,11 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span><br /> </td> 
-   <td>  Adobe Target-server gebruikt voor de integratie. Deze optie is standaard al geselecteerd. Deze waarde komt overeen met de Adobe Target Domain Server, gevolgd door de waarde /m2. Bijvoorbeeld: tt.omtrdc.net/m2.<br /> Zie <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">deze sectie</a>.<br /> </td> 
+   <td> Adobe Target-server gebruikt voor de integratie. Deze optie is standaard al geselecteerd. Deze waarde komt overeen met de Adobe Target Domain Server, gevolgd door de waarde /m2. Bijvoorbeeld: tt.omtrdc.net/m2.<br /> Zie <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">deze sectie</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span><br /> </td> 
-   <td>  Naam van Adobe Target-organisatie. Deze waarde komt overeen met de naam van de Adobe Target-client.<br /> Zie <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">deze sectie</a>.<br /> </td> 
+   <td> Naam van Adobe Target-organisatie. Deze waarde komt overeen met de naam van de Adobe Target-client.<br /> Zie <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">deze sectie</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span><br /> </td> 
@@ -934,7 +934,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLoad_AppLogin</span><br /> </td> 
-   <td> Aanmelden bij de toepassing om contact op te nemen met de server voor verschillende zoekopdrachten.<br /> </td> 
+   <td> Meld u aan bij de toepassing om contact op te nemen met de server voor verschillende zoekopdrachten.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLoad_AppPassword</span><br /> </td> 
