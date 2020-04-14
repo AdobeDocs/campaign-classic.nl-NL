@@ -12,7 +12,7 @@ discoiquuid: null
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 10419ee0fb466bddd05ab67087ccdbfdda1e48c8
+source-git-commit: 79f8cc179fcbf9d537a1cc889b268a43202d7369
 
 ---
 
@@ -52,8 +52,8 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    <tr> 
    <td>Javascript SDK-beveiliging<br></td>
    <td>decryptString<br></td>
-   <td><p>Om veiligheidsredenen is de decryptString API niet meer standaard beschikbaar voor nieuwe installaties.</p> 
-   <p>In de context van een postupgrade naar 18.6 (en hoger), wordt deze API niet meer geactiveerd en is deze vervangen door de decryptPassword functie.</p><br> </td>
+   <td><p>Om veiligheidsredenen is de <em>decryptString</em> -API niet meer standaard beschikbaar voor nieuwe installaties.</p> 
+   <p>In de context van een postupgrade naar 18.6 (en hoger), wordt deze API niet meer geactiveerd en is deze vervangen door de functie <em>decryptPassword</em> .</p><br> </td>
   </tr> 
  </tbody> 
 </table>
@@ -125,7 +125,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
    <tr> 
    <td>Campagne-APIs-documentatie - jsapi.chm-bestand<br></td>
    <td>Klassieke API's voor campagnes zijn nu beschikbaar in een speciale pagina. Als u het bestand jsapi.chm gebruikte, moet u nu naar <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">de nieuwe onlineversie</a>verwijzen.</td>
-   <td>&lt;19.1</td>
+   <td>19.1</td>
   </tr> 
   <tr> 
    <td>Campagnestructuur - Predictieve marketing</td>
