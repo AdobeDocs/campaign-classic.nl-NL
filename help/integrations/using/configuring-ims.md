@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
 
 ---
 
@@ -26,12 +26,12 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 De integratie met de IMS gebruiken:
 
-* U moet beschikken over een Adobe Marketing Cloud-organisatie en IMS-id&#39;s (die worden geleverd wanneer u voor het eerst verbinding maakt met de Adobe Marketing Cloud).
-* U moet gebruikers toevoegen in de marketingcloud. Raadpleeg de volgende pagina voor meer informatie: [https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html).
+* U moet beschikken over een Adobe Experience Cloud-organisatie en IMS-id&#39;s (die worden geleverd wanneer u voor het eerst verbinding maakt met de Adobe Experience Cloud).
+* U moet gebruikers toevoegen in de Experience Cloud. For more on this, refer to [this page](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 >[!NOTE]
 >
->Zorg ervoor dat uw gebruikers zijn gekoppeld aan de Adobe Marketing Cloud-groepen die worden gesynchroniseerd met Adobe Campaign. Zie De externe account [](#configuring-the-external-account)configureren.
+>Zorg ervoor dat uw gebruikers zijn gekoppeld aan de Adobe Experience Cloud-groepen die worden gesynchroniseerd met Adobe Campaign. Zie De externe account [](#configuring-the-external-account)configureren.
 
 ## De console bijwerken {#updating-the-console}
 
@@ -55,7 +55,7 @@ Configureer de externe account voor de **Adobe Experience Cloud** in **[!UICONTR
 
 Voer de volgende gegevens in:
 
-* Verbindingsgegevens voor de gebruikte IMS-server (id en geheim). Deze informatie wordt geleverd door ondersteuning van Adobe. Raadpleeg de [veelgestelde vragen voor Adobe Experience Cloud-beheerders](https://marketing.adobe.com/resources/help/en_US/mcloud/faq.html)voor meer informatie.
+* Verbindingsgegevens voor de gebruikte IMS-server (id en geheim). Deze informatie wordt geleverd door ondersteuning van Adobe. Raadpleeg de [veelgestelde vragen voor Adobe Experience Cloud-beheerders](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html)voor meer informatie.
 
    Het **[!UICONTROL Callback server]** adres moet in **https** worden gespecificeerd. Dit veld komt overeen met de toegangs-URL van uw Adobe Campagne-instantie.
 
