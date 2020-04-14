@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: aa0eb7acfb5d3b622475544735aed37d6beea892
+source-git-commit: 7c117c549b02cf24b97dc1330e703b711ba14129
 
 ---
 
@@ -100,7 +100,7 @@ U krijgt een boomstructuur met uw nieuwe omgeving:
 ### Anonieme aanbiedingen maken {#creating-anonymous-offers}
 
 1. Ga naar de rubriek die je zojuist hebt gemaakt.
-1. Klik **[!UICONTROL New]**.
+1. Klik op **[!UICONTROL New]**.
 
    ![](assets/offer_inbound_anonymous_example_013.png)
 
@@ -122,7 +122,7 @@ U krijgt een boomstructuur met uw nieuwe omgeving:
 
    >[!NOTE]
    >
-   >U kunt selecteren **[!UICONTROL Content definitions]** om de lijst van elementen te tonen die voor de Webruimte worden vereist.
+   >U kunt selecteren **[!UICONTROL Content definitions]** om de lijst met elementen weer te geven die nodig zijn voor de webruimte.
 
    ![](assets/offer_inbound_anonymous_example_017.png)
 
@@ -310,7 +310,7 @@ In dit voorbeeld vindt de identificatie van de contactpersoon plaats via het e-m
 
    ![](assets/offer_inbound_fallback_example_044.png)
 
-1. Klik op het **[!UICONTROL Target identification]** tabblad op **[!UICONTROL Add]**.
+1. In the **[!UICONTROL Target identification]** tab, click **[!UICONTROL Add]**.
 
    ![](assets/offer_inbound_fallback_example_046.png)
 
