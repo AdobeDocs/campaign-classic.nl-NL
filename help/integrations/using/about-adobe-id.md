@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
 
 ---
 
@@ -29,9 +29,17 @@ Campagnegebruikers kunnen verbinding maken met de Adobe Campagne-console met hun
 * Beveiligd beleid voor wachtwoordbeheer.
 * Gebruik van Federated ID-accounts (externe ID-provider).
 
-Voor meer informatie over de verschillende typen Adobe-id&#39;s raadpleegt u: [https://helpx.adobe.com/en/enterprise/help/identity.html](https://helpx.adobe.com/en/enterprise/help/identity.html)
+Met het identiteitsbeheersysteem van Adobe kunnen beheerders de toegang van gebruikers tot toepassingen en services maken en beheren. Raadpleeg [deze pagina](https://helpx.adobe.com/enterprise/using/identity.html)voor meer informatie over de verschillende typen Adobe-id&#39;s.
 
 >[!CAUTION]
 >
->De IMS-implementatie is strikt voorbehouden aan de technische beheerders van Adobe. De IMS-implementatie is een complex proces dat enige tijd kan vergen.
+>De IMS-implementatie is strikt voorbehouden aan de technische beheerders van Adobe. De implementatie van de IMS is een complex proces dat lang kan duren.
+
+## Verwante onderwerpen
+
+| Nuttige pagina&#39;s | Aanvullende bronnen |
+|---|---|
+| [IMS configureren](../../integrations/using/configuring-ims.md) | [Veelgestelde vragen over Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) |
+| [IMS implementeren](../../integrations/using/implementing-ims.md) | [Toegangsbeheer](../../platform/using/access-management.md) |
+| [IMS-probleemoplossing](../../integrations/using/ims-troubleshooting.md) | [Campagnepakketten installeren](../../installation/using/installing-campaign-standard-packages.md) |
 
