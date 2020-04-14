@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1afd6ad61db2062ee804c8a2add56a21578ef19
+source-git-commit: ad4a40053b25bbf8de81e074e135ef4944f0b427
 
 ---
 
@@ -30,4 +30,14 @@ U kunt een aanbiedingscatalogus tot stand brengen die met binnenkomende en uitga
 
 Met interactie kunt u een catalogus met aanbiedingen maken en beheren en de regels en toepassingsthema&#39;s configureren die aan deze aanbiedingen zijn gekoppeld. Afhankelijk van het gekozen kanaal kan de inhoud van de aanbieding worden gepersonaliseerd dankzij verschillende renderfuncties. Tot slot kunt u de simulatiemodule gebruiken om het effect van een aanbiedingspresentatie te berekenen.
 
-Bekijk deze video om uzelf vertrouwd te maken met de interactiefunctie en de terminologieën die worden gebruikt in Campagne Interaction: Overzicht [van de interactie tussen](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com)Adobe-campagnes.
+![](assets/Offermgt2.png)
+
+Bekijk deze video om uzelf vertrouwd te maken met de interactiefunctie en de terminologieën die worden gebruikt in Campagne Interaction: Overzicht [van de interactie tussen](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)Adobe-campagnes.
+
+## Verwante onderwerpen
+
+| Nuttige pagina&#39;s | Aanvullende bronnen |
+|---|---|
+| [Interactie-implementatiestappen](../../interaction/using/implementation-steps.md) | [Distributie van testaanbiedingen](../../interaction/using/about-offers-simulation.md) |
+| [Live/Design-omgevingen](../../interaction/using/live-design-environments.md) | [Een voorstel toevoegen in een e-mail](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
+| [Aanbiedingsruimten maken](../../interaction/using/creating-offer-spaces.md) | [Hoofdlettergebruik: een aanbieding toevoegen aan een website](../../interaction/using/offers-on-an-inbound-channel.md) |
