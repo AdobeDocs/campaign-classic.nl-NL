@@ -5,7 +5,7 @@ solution: Campaign Classic
 title: Adobe Campaign Classic-productdocumentatie
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 53e250cb24d5386e6e9e5d85b52d5eb689b2914c
+source-git-commit: ffaa4d4442448f9d30c4a1ef41b8bd73363088e0
 
 ---
 
@@ -16,11 +16,9 @@ source-git-commit: 53e250cb24d5386e6e9e5d85b52d5eb689b2914c
 
 ## Nieuwe functies
 
-* **[Privacybeheer](https://helpx.adobe.com/campaign/kb/campaign-privacy.html)**<br/>Leer hoe u met Adobe Campaign voldoet aan uw privacyvereisten.
+* **[Privacy Compliance](https://helpx.adobe.com/campaign/kb/campaign-privacy.html)**<br/> Learn how Adobe Campaign you with your Privacy compliance
 
-* **[Handleiding voor](https://helpx.adobe.com/campaign/kb/acc-tracking.html)**<br/>bijhouden Begrijp de mogelijkheden voor bijhouden in Campagne
-
-* **[Handleiding voor onderhoud](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)**<br/>Leer hoe u uw Campagne-instantie en -processen kunt controleren
+* **[Traceringsmogelijkheden](https://helpx.adobe.com/campaign/kb/acc-tracking.html)**<br/> Begrijp traceringsmogelijkheden in Campagne
 
 * **[Interactieve inhoud met AMP](delivery/using/defining-interactive-content.md)**<br/>Leer hoe u dynamische e-mails kunt verzenden met de nieuwe[AMP for Email](https://amp.dev/about/email/)-indeling
 
@@ -74,9 +72,9 @@ source-git-commit: 53e250cb24d5386e6e9e5d85b52d5eb689b2914c
 | Nuttige pagina&#39;s | Bronnen voor ontwikkelaars |
 |---|---|
 | [Opmerkingen bij de release](/help/rn/using/latest-release.md) | [Lijst met foutberichten](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
-| [Hoe kan ik-video&#39;s](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [Klassiek gegevensmodel campagne](configuration/using/about-data-model.md) |
-| [Compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) | [JSAPI-documentatie](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
+| [Hoe kan ik-video&#39;s](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [Campagne gegevensmodel](configuration/using/about-data-model.md) |
+| [Compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) | [Campagne JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [Aan de slag met Campagne Classic](platform/using/about-adobe-campaign-classic.md) | [Implementatiehandleiding](https://helpx.adobe.com/campaign/kb/acc-implementation.html) |
 | [Gold Standard-upgrade](https://helpx.adobe.com/campaign/kb/gold-standard.html) | [Handleiding voor bijhouden](https://helpx.adobe.com/campaign/kb/acc-tracking.html) |
 | [Verouderde en verwijderde functies](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) | [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/campaign/kb/acc-security.html) |
-| [Documentatie van het regelpaneel](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html) | [Technische noten](https://helpx.adobe.com/campaign/kb/article-list.html) |
+| [Campagne](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html) | [Bewaking van beste praktijken](https://helpx.adobe.com/campaign/kb/acc-maintenance.html) |
