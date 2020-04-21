@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 09fa3751d94fd71a68470174dd0b4a48d94d3f44
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -243,7 +243,7 @@ Hier zijn de verschillende parameters van de **dataStore** knoop. Hier worden de
    <td> workingDirectory<br /> </td> 
    <td> XPath van de werkmap.<br /> </td> 
    <td> String<br /> </td> 
-   <td> workingDirectory :XPath van de werkmap. Standaard: '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/workspace/'<br /> </td> 
+   <td> workingDirectory : XPath van de werkmap. Standaard: '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/workspace/'<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -305,7 +305,7 @@ Configureer de verbindingsinstellingen in het knooppunt **dataStore > dataSource
    <th> Parameter </th> 
    <th> Beschrijving </th> 
    <th> Type </th> 
-   <th> Standaardwaarde<br /> </th> 
+   <th> Default value<br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -517,7 +517,7 @@ Zie deze [sectie](../../installation/using/configuring-campaign-server.md)voor m
  <tbody> 
   <tr> 
    <td> localDomain<br /> </td> 
-   <td> Domeinnaam: standaarddomeinnaam. Gebruikt door het bevel van de HELO SMTP. Gebruikt standaard de netwerkparameters van de eerste netwerkinterface die in Windows is gedeclareerd; of parseert file/etc/resolv.conf onder Linux (domein of onderzoeksingang). <br /> </td> 
+   <td> Domeinnaam: standaarddomeinnaam. Gebruikt door het bevel van de HELO SMTP. Gebruikt standaard de netwerkparameters van de eerste netwerkinterface die in Windows is gedeclareerd; of parseert de file/etc/resolv.conf onder Linux (domein of zoekingang). <br /> </td> 
    <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1556,7 +1556,7 @@ Hier zijn de verschillende parameters van de **mta** knoop. Dit is de configurat
   </tr> 
   <tr> 
    <td> useMomentum<br /> </td> 
-   <td> Indien ingesteld op "true", gebruikt uw instantie de <a href="https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html" target="_blank">Enhanced MTA</a>.<br /> </td> 
+   <td> Indien ingesteld op "true", gebruikt uw instantie de <a href="https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html" target="_blank">Enhanced MTA</a>.<br /> </td> 
    <td> Boolean<br /> </td> 
    <td> <br /> </td>b 
   </tr>
