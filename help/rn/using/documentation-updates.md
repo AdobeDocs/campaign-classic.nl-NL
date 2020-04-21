@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 75f195a11170b4213f930deed886f8bf5b0817bc
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -39,6 +39,8 @@ De sectie waarin het vooraf gedefinieerde gegevensmodel van de campagne van Adob
 Gebruiksgevallen uit de gids &quot;Automatiseren met workflows&quot; zijn ingedeeld in thematische onderdelen. [Meer informatie](../../workflow/using/using-the-local-approval-activity.md)
 
 De secties [Bounce Mail Qualification](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) en [Email Management Rules](../../delivery/using/understanding-delivery-failures.md#email-management-rules) zijn uitgebreid met bijgewerkte informatie.
+
+Het Adobe Campaign Enhanced MTA-artikel is bijgewerkt. Het is nu alleen van toepassing op Campaign Classic. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-acc-campaign-enhanced-mta.html)
 
 ## maart 2020 {#march-2020}
 
@@ -114,7 +116,7 @@ De sectie Aflevering is verplaatst, gereorganiseerd en verbeterd met bijgewerkte
 
 Er is nu een nieuwe sectie beschikbaar waarin de grondbeginselen van het klassieke gegevensmodel van de campagne van Adobe worden beschreven en waarin wordt beschreven hoe u toegang krijgt tot de beschrijving van elke tabel. [Meer informatie](../../configuration/using/about-data-model.md)
 
-Het Adobe Campaign Enhanced MTA-artikel is bijgewerkt met meer gedetailleerde informatie over het installeren van een specifiek Typologisch pakket op instanties die niet de vereiste verbeterde MTA-headers aan elk bericht toevoegen. [Meer informatie](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html#impacts)
+Het Adobe Campaign Enhanced MTA-artikel is bijgewerkt met meer gedetailleerde informatie over het installeren van een specifiek Typologisch pakket op instanties die niet de vereiste verbeterde MTA-headers aan elk bericht toevoegen. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html#impacts)
 
 De gebruiksgevallen met betrekking tot vraagontwerp zijn gereorganiseerd in afzonderlijke secties. [Meer informatie](../../workflow/using/querying-recipient-table.md)
 
@@ -152,7 +154,7 @@ Beveiligd SMS-bericht (TLS) - Meer [informatie](https://helpx.adobe.com/campaign
 
 **Overige documentatie-updates die bij de release worden geleverd**
 
-De uitgebreide documentatie van MTA van de Campagne van Adobe is nu beschikbaar. [Meer informatie](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)
+De uitgebreide documentatie van MTA van de Campagne van Adobe is nu beschikbaar. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 Er is een nieuwe sectie toegevoegd over het oplossen van problemen met een workflow die in de status &quot;Zo snel mogelijk starten&quot; blijft in een campagne. Meer[informatie](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
