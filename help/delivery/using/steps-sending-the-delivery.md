@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -184,7 +184,7 @@ Door gebrek, zijn vijf herpogingen gepland voor de eerste dag van de levering me
 >
 >Voor gehoste of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, worden de retry montages in de levering niet meer gebruikt door Campagne. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
 >
->Alle gevolgen worden beschreven in het document [Verbeterde MTA](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html) van de Campagne van Adobe.
+>Alle gevolgen worden beschreven in het document [Verbeterde MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) van de Campagne van Adobe.
 
 
 ## Geldigheidsduur definiëren {#defining-validity-period}
@@ -205,4 +205,4 @@ Wanneer de levering is gestart, kunnen de berichten (en eventuele nieuwe poginge
 >
 >Voor gehoste of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, zal het plaatsen in uw levering van de Campagne slechts worden gebruikt als reeks aan **[!UICONTROL Delivery duration]** 3.5 **** dagen of minder. Als u een waarde definieert die hoger is dan 3,5 dagen, wordt hiermee geen rekening gehouden.
 >
->Alle gevolgen worden beschreven in het document [Verbeterde MTA](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html) van de Campagne van Adobe.
+>Alle gevolgen worden beschreven in het document [Verbeterde MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) van de Campagne van Adobe.
