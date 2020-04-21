@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -38,4 +38,4 @@ Deze soort kan in de eigenschappen van het berichtmalplaatje worden veranderd zo
 
 >[!NOTE]
 >
->Voor gehoste of hybride installaties, als u tot Verbeterde MTA hebt bevorderd, kunnen alle transactionele berichten ook met de Verbeterde MTA van de Campagne van Adobe voor betere leverability, productie, en stuitbehandeling worden verzonden. Alle effecten zijn gelijk aan die voor standaardmarketingberichten en worden beschreven in het document [Adobe Campagne Enhanced MTA](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html) .
+>Voor gehoste of hybride installaties, als u tot Verbeterde MTA hebt bevorderd, kunnen alle transactionele berichten ook met de Verbeterde MTA van de Campagne van Adobe voor betere leverability, productie, en stuitbehandeling worden verzonden. Alle effecten zijn gelijk aan die voor standaardmarketingberichten en worden beschreven in het document [Adobe Campagne Enhanced MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) .
