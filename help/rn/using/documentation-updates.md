@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: c8910fdfd07bd835d456baca29710ea927ad20e5
 
 ---
 
@@ -40,7 +40,7 @@ Gebruiksgevallen uit de gids &quot;Automatiseren met workflows&quot; zijn ingede
 
 De secties [Bounce Mail Qualification](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) en [Email Management Rules](../../delivery/using/understanding-delivery-failures.md#email-management-rules) zijn uitgebreid met bijgewerkte informatie.
 
-Het Adobe Campaign Enhanced MTA-artikel is bijgewerkt. Het is nu alleen van toepassing op Campaign Classic. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-acc-campaign-enhanced-mta.html)
+Het Adobe Campaign Enhanced MTA-artikel is bijgewerkt. Het is nu alleen van toepassing op Campaign Classic. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 ## maart 2020 {#march-2020}
 
