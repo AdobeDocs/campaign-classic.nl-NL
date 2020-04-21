@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -90,4 +90,4 @@ U kunt de tijdgroef kiezen waarvoor de productie wordt berekend. Selecteer hiert
 >
 >Voor gehoste of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, zal de **[!UICONTROL Delivery throughput]** pagina niet meer de productie aan uw e-mailontvangers tonen. Het zal de productiesnelheid voor het relais van uw berichten van Campagne over aan Verbeterde MTA tonen.
 >
->Raadpleeg dit [document](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagne.
+>Raadpleeg dit [document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagne.
