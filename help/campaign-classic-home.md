@@ -5,7 +5,7 @@ solution: Campaign Classic
 title: Adobe Campaign Classic-productdocumentatie
 topic: Premium
 translation-type: tm+mt
-source-git-commit: ffaa4d4442448f9d30c4a1ef41b8bd73363088e0
+source-git-commit: 12c38d8ccf198b59ce93ee4155940612637b2856
 
 ---
 
@@ -15,6 +15,8 @@ source-git-commit: ffaa4d4442448f9d30c4a1ef41b8bd73363088e0
 ![](platform/using/assets/do-not-localize/banner_acc_doc.jpg)
 
 ## Nieuwe functies
+
+* **[Krijg de Veelgestelde vragen van de Toegang van de Steun](https://helpx.adobe.com/campaign/kb/ac-support.html)**</br>, beste praktijken, hulpmiddelen, en verbind met de deskundigen van de Campagne en het team van de Zorg van de Klant
 
 * **[Privacy Compliance](https://helpx.adobe.com/campaign/kb/campaign-privacy.html)**<br/> Learn how Adobe Campaign you with your Privacy compliance
 
