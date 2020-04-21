@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -144,7 +144,7 @@ MX-regels (Mail eXchanger) zijn de regels die de communicatie tussen een verzend
 >
 >Voor ontvangen of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, worden de regels van de **[!UICONTROL MX management]** leveringsproductie niet meer gebruikt. Verbeterde MTA gebruikt zijn eigen MX regels die het toestaan om uw productie door domein aan te passen die op uw eigen historische e-mailreputatie wordt gebaseerd, en op real time terugkoppelen die uit de domeinen komt waar u e-mails verzendt.
 >
->Raadpleeg dit [document](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagne.
+>Raadpleeg dit [document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagne.
 
 Deze regels worden automatisch elke ochtend om 6AM (servertijd) opnieuw geladen om de cliëntinstantie regelmatig te leveren.
 
