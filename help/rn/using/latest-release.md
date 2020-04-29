@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8d6e3118dc498096283d54713725071e0906aba3
+source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
 
 ---
 
@@ -25,10 +25,10 @@ source-git-commit: 8d6e3118dc498096283d54713725071e0906aba3
 <table> 
  <tbody> 
   <tr> 
-   <td><img src="assets/green3.png"/><strong>Algemene beschikbaarheid</strong></td>
-   <td><img src="assets/blue3.png"/><strong>Releasekandidaat</strong></td> 
-   <td><img src="assets/orange3.png"/><strong>Niet meer beschikbaar</strong></td> 
-   <td><img src="assets/red3.png"/><strong>Vervangen</strong></td> 
+   <td><img src="assets/do-not-localize/green3.png"/><strong>Algemene beschikbaarheid</strong></td>
+   <td><img src="assets/do-not-localize/blue3.png"/><strong>Releasekandidaat</strong></td> 
+   <td><img src="assets/do-not-localize/orange3.png"/><strong>Niet meer beschikbaar</strong></td> 
+   <td><img src="assets/do-not-localize/red3.png"/><strong>Vervangen</strong></td> 
   </tr> 
    <tr> 
    <td>Nieuwste stabiele build beschikbaar. Build gevalideerd in productie.<br> </td>
@@ -39,15 +39,15 @@ source-git-commit: 8d6e3118dc498096283d54713725071e0906aba3
  </tbody> 
 </table>
 
-De **laatste stabiele build** is 9032 (205c981c3). Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+De **laatste stabiele build** is 9032 (3a9dc9c). Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/blue_2.png) Release 20.1.2 - build 9123 {#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/blue_2.png) Release 20.1.2 - build 9123 {#release-20-1-2-build-9123}
 
 _13 maart 2020_
 
 * Probleem verholpen waarbij implementatie van versies op Red Hat 7-servers werd voorkomen. (NEO-2332)
 
-## ![](assets/orange_2.png) Release 20.1 - build 9122 {#release-20-1-build-9122}
+## ![](assets/do-not-localize/orange_2.png) Release 20.1 - build 9122 {#release-20-1-build-9122}
 
 _17 februari 2020_
 
@@ -183,7 +183,7 @@ _17 februari 2020_
 
 * Probleem verholpen waardoor de trackingindicatoren voor transactionele berichten niet konden worden bijgewerkt in de workflow voor bijhouden. (NEO-1770)
 
-* Oplossing voor een regressieprobleem dat ertoe leidde dat het webproces vastliep en opnieuw opstartte wanneer een aanvraag voor een aanbieding werd ingediend via SOAP. (NEO-19482)
+* Oplossing voor een regressieprobleem dat ertoe leidde dat het webproces vastliep en opnieuw opstartte bij het aanvragen van een aanbieding via SOAP. (NEO-19482)
 
 * Probleem verholpen waarbij gegevens niet konden worden geüpload naar openbare bronnen als de uploadmap een externe gedeelde locatie was. (NEO-19361)
 
