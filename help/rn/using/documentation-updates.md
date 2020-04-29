@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c8910fdfd07bd835d456baca29710ea927ad20e5
+source-git-commit: 0b3622bb0ac95eff61e2d96332e67623dffa68be
 
 ---
 
@@ -134,7 +134,7 @@ Er is een voorbeeld toegevoegd van het gebruik van een instantievariabele in een
 
 De optie &quot;WdbcOptions_TempDbName&quot; is toegevoegd aan de lijst met campagneopties. [Meer informatie](../../installation/using/configuring-campaign-options.md)
 
-De FDA-matrixpagina is [hier](/help/rn/using/assets/fda_rdbms_rights.pdf)geplaatst.
+De FDA-matrixpagina is [hier](../../platform/using/remote-database-access-rights.md)geplaatst.
 
 De pagina Matrix voor toegangsrechten is [hier](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf)geplaatst.
 
