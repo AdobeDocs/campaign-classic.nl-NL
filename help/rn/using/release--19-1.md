@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
+source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
 
 ---
 
@@ -27,10 +27,10 @@ source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
 <table> 
  <tbody> 
   <tr> 
-   <td><img src="assets/green3.png"/><strong>Algemene beschikbaarheid</strong></td>
-   <td><img src="assets/blue3.png"/><strong>Releasekandidaat</strong></td> 
-   <td><img src="assets/orange3.png"/><strong>Niet meer beschikbaar</strong></td> 
-   <td><img src="assets/red3.png"/><strong>Vervangen</strong></td> 
+   <td><img src="assets/do-not-localize/green3.png"/><strong>Algemene beschikbaarheid</strong></td>
+   <td><img src="assets/do-not-localize/blue3.png"/><strong>Releasekandidaat</strong></td> 
+   <td><img src="assets/do-not-localize/orange3.png"/><strong>Niet meer beschikbaar</strong></td> 
+   <td><img src="assets/do-not-localize/red3.png"/><strong>Vervangen</strong></td> 
   </tr> 
    <tr> 
    <td>Nieuwste stabiele build beschikbaar. Build gevalideerd in productie.<br> </td>
@@ -41,9 +41,9 @@ source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
  </tbody> 
 </table>
 
-De **laatste stabiele build** is 9032 (205c981c3). Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+De **laatste stabiele build** is 9032 (3a9dc9c). Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/orange_2.png) Release 19.1.6 - build 9035 {#release-19-1-6-build-9035}
+## ![](assets/do-not-localize/orange_2.png) Release 19.1.6 - build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
@@ -59,7 +59,7 @@ _3 oktober 2019_
 * Probleem verholpen dat ertoe kon leiden dat bepaalde berichten niet werden verwerkt door de server voor middeluitgaven. (NEO-12395)
 * Probleem verholpen waardoor de SQL-gegevensbeheeractiviteit niet volledig kon worden gebruikt (het genoemde recht SQL-gegevensbeheer ontbreekt).
 
-## ![](assets/orange_2.png) Release 19.1.5 - build 9033{#release-19-1-5-build-9033}
+## ![](assets/do-not-localize/orange_2.png) Release 19.1.5 - build 9033{#release-19-1-5-build-9033}
 
 _13 augustus 2019_
 
@@ -74,31 +74,35 @@ _13 augustus 2019_
 
 ## Release 19.1.4 - build 9032{#release-19-1-4-build-9032}
 
-![](assets/green_2.png) 5 **maart 2020**: nieuwe build (9032-...205c981c3) die de volgende oplossing bevat:
+![](assets/do-not-localize/green_2.png) 29 **april 2020**: new build (9032@3a9dc9c), die de volgende oplossing bevat:
+
+* Verbeterde beveiliging voor het bijhouden van koppelingen in e-mail. Dit is standaard ingeschakeld voor alle klanten. Er is een extra, verbeterde beveiligingsfunctie beschikbaar die kan worden ingeschakeld door de klantenservice te bereiken. Meer informatie over de functie en de stappen die niet-gehoste klanten moeten uitvoeren, vindt u in de checklist [voor](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)beveiliging en privacy.
+* Probleem verholpen waarbij afbeeldingen niet konden worden weergegeven bij levering op regel. (NEO-23207)
+
+![](assets/do-not-localize/orange_2.png) 5 **maart 2020**: new build (9032@19f73c5), die de volgende oplossing bevat:
 
 * Probleem met externe accounts met FTP via SSL opgelost. (NEO-20498)
 
-![](assets/orange_2.png) 17 **december 2019**: nieuwe build (9032-...9d34fb17e) die de volgende oplossing bevat:
+![](assets/do-not-localize/orange_2.png) 17 **december 2019**: new build (9032@d6b8062), die de volgende oplossing bevat:
 
-* Probleem met bijhouden van gegevens op de volgende communicatiekanalen verholpen: mobiele (SMS, MMS), push (iOS, Android) en sociale netwerken (Facebook, Twitter).
-(NEO-19595)
+* Probleem met bijhouden van gegevens op de volgende communicatiekanalen verholpen: mobiele (SMS, MMS), push (iOS, Android) en sociale netwerken (Facebook, Twitter). (NEO-19595)
 
-![](assets/orange_2.png) 11 **december 2019**: nieuwe build (9032-...e28b428b7), die de volgende oplossing bevat:
+![](assets/do-not-localize/orange_2.png) 11 **december 2019**: new build (9032@bc4a935), die de volgende oplossing bevat:
 
 * Oplossing voor een prestatieprobleem bij het verzenden van berichten met een MSSQL-database. (NEO-1758)
 
-![](assets/orange_2.png) 20 **november 2019**: nieuwe build (9032-...3468c7bb5) die de volgende oplossingen bevat:
+![](assets/do-not-localize/orange_2.png) 20 **november 2019**: new build (9032@3468c7b) met de volgende oplossingen:
 
 * Oplossing voor een aanmeldingsprobleem via IMS-verificatie. (NEO-17312)
 * Probleem verholpen bij het weergeven van cumulatieve rapporten over meerdere leveringen. (NEO-18165)
 * Probleem verholpen waarbij de webserver vastliep of kon blokkeren.
 
-![](assets/orange_2.png) 19 **september 2019**: nieuwe build (9032-...lmoe ( 805c93 ) , waarin de volgende correcties zijn opgenomen :
+![](assets/do-not-localize/orange_2.png) 19 **september 2019**: new build (9032@cee805c) met de volgende oplossingen:
 
 * Probleem verholpen bij gebruik van de CRM-connector voor Salesforce. (NEO-17712)
 * Probleem verholpen met een index die prestatieproblemen kan veroorzaken bij het verzenden van transactieberichten.
 
-![](assets/orange_2.png) 13 **augustus 2019**: eerste 19.1.4-build met de volgende oplossingen:
+![](assets/do-not-localize/orange_2.png) 13 **augustus 2019**: eerste 19.1.4-build met de volgende oplossingen:
 
 * Oplossing voor een probleem met de planneractiviteit die ongewenste foutberichten tijdens de configuratie van de wizard genereerde. Update van NEO-11662 wordt teruggedraaid. (NEO-17097)
 * Oplossing voor een regressie veroorzaakt door NEO-12727 die ertoe zou kunnen leiden dat werkstromen worden gestopt wanneer een testactiviteit tweemaal werd uitgevoerd. (NEO-16835)
@@ -106,7 +110,7 @@ _13 augustus 2019_
 * Probleem verholpen met de DKIM-sleutel die niet meer in e-mails was ingesloten, waardoor problemen met de te leveren items ontstonden. (NEO-16804)
 * Verschillende problemen met workflowplanning zijn opgelost. De werkschema&#39;s werden gepland om één keer per dag te worden uitgevoerd zonder rekening te houden met de plannerconfiguratie. (NEO-16619, NEO-16426)
 
-## ![](assets/orange_2.png) Release 19.1.2 - build 9029{#release-19-1-2-build-9029}
+## ![](assets/do-not-localize/orange_2.png) Release 19.1.2 - build 9029{#release-19-1-2-build-9029}
 
 _21 juni 2019_
 
@@ -122,7 +126,7 @@ _21 juni 2019_
 * Wij staan nu de schrapping van dummy verslagen toe die in de Dynamica van Microsoft tijdens het invoeren werkschema worden gecreeerd.
 * Verbeterde machtigingen om het pakket met de beveiligingszone uit te voeren wanneer u een interne account gebruikt.
 
-## ![](assets/orange_2.png) Release 19.1 - build 9026{#release-19-1-build-9026}
+## ![](assets/do-not-localize/orange_2.png) Release 19.1 - build 9026{#release-19-1-build-9026}
 
 _30 mei 2019_
 
