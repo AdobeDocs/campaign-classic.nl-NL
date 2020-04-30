@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ab6ce2fbe1ea9e2b2498c87471ad7813a082ebe6
+source-git-commit: 4b42a4bb0a95b2a46187c996d069846a8c3941bf
 
 ---
 
@@ -78,6 +78,17 @@ _13 augustus 2019_
 
 * Verbeterde beveiliging voor het bijhouden van koppelingen in e-mail. Dit is standaard ingeschakeld voor alle klanten. Er is een extra, verbeterde beveiligingsfunctie beschikbaar die kan worden ingeschakeld door de klantenservice te bereiken. Meer informatie over de functie en de stappen die niet-gehoste klanten moeten uitvoeren, vindt u in de checklist [voor](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)beveiliging en privacy.
 * Probleem verholpen waarbij afbeeldingen niet konden worden weergegeven bij levering op regel. (NEO-23207)
+* Probleem verholpen met de **bestandsoverdrachtactiviteit** waardoor verificatie op basis van SFTP-sleutels niet kon werken op Debian 9. (NEO-23183)
+* Probleem verholpen die invloed kan hebben op pushberichten wanneer deze op een hoge frequentie worden verzonden. (NEO-20516)
+* Probleem verholpen in responsbeheer voor aanbiedingen die tot een vastlopen van de webserver kan leiden. (NEO-19482)
+* Correctie van een fout in het beheer van LibreOffice waardoor u rapporten niet kon exporteren. (NEO-20982)
+* Probleem verholpen dat een fout veroorzaakte bij het upgraden van een groot aantal workflows met behulp van een enquêteactiviteit.
+* Verbeterd LibreOffice-beheer om fouten in de voorvertoning van e-mail met .odt-bestanden te voorkomen.
+* Verbeterd beheer van Apache-verbinding om latentie op webservice te voorkomen.
+* De weergave van versietag (7 cijfers) in het menu **Info** is verbeterd.
+* Oplossing voor een regressie in lijstbeheer waardoor aanbiedingen niet konden worden gepubliceerd.
+* Oplossing voor een regressie die ertoe leidde dat de opschoonworkflow vastliep.
+* Oplossing voor een kleine regressie in de logboeken van de opschoonworkflow.
 
 ![](assets/do-not-localize/orange_2.png) 5 **maart 2020**: new build (9032@19f73c5), die de volgende oplossing bevat:
 
@@ -104,7 +115,7 @@ _13 augustus 2019_
 
 ![](assets/do-not-localize/orange_2.png) 13 **augustus 2019**: eerste 19.1.4-build met de volgende oplossingen:
 
-* Oplossing voor een probleem met de planneractiviteit die ongewenste foutberichten tijdens de configuratie van de wizard genereerde. Update van NEO-11662 wordt teruggedraaid. (NEO-17097)
+* Oplossing voor een probleem met de planneractiviteit die ongewenste foutberichten tijdens de configuratie van de wizard genereerde. Bijwerken vanuit NEO-11662 wordt ongedaan gemaakt. (NEO-17097)
 * Oplossing voor een regressie veroorzaakt door NEO-12727 die ertoe zou kunnen leiden dat werkstromen worden gestopt wanneer een testactiviteit tweemaal werd uitgevoerd. (NEO-16835)
 * Probleem verholpen waarbij een onjuiste HTTP-code werd geretourneerd (HTTP 200 OK in plaats van HTTP 403 Verboden) wanneer een ongeldig of verlopen sessietoken werd gebruikt in API-aanroepen. (NEO-16826)
 * Probleem verholpen met de DKIM-sleutel die niet meer in e-mails was ingesloten, waardoor problemen met de te leveren items ontstonden. (NEO-16804)
