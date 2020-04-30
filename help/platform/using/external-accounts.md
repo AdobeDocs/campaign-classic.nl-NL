@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7df1f73dd454f826096ce4d5fe430e10fe407ad
+source-git-commit: 090ec1f9b30c8548075493757b814a8bb40bea30
 
 ---
 
@@ -64,7 +64,7 @@ Externe accounts worden gebruikt door technische processen, zoals technische wor
 
    De noodzakelijke informatie wordt gewoonlijk verstrekt door de leverancier van de server u met verbindt.
 
-1. Klik **[!UICONTROL Save]**.
+1. Klik op **[!UICONTROL Save]**.
 
 De externe account wordt gemaakt en toegevoegd aan de lijst met externe accounts. Het is nu beschikbaar voor uw gegevens/dossier overdrachten of het verpletteren van configuraties in werkschemaactiviteiten en leveringseigenschappen.
 
@@ -377,7 +377,7 @@ Met het **[!UICONTROL AEM (AEM instance)]** externe account kunt u de inhoud van
 
    Wachtwoord waarmee u verbinding maakt met de ontwerpinstantie van Adobe Experience Manager.
 
-Zie deze [sectie](../../integrations/using/about-adobe-experience-manager.md)voor meer informatie.
+For more on this, refer to this [section](../../integrations/using/about-adobe-experience-manager.md).
 
 ## Amazon Simple Storage Service (S3) externe account {#amazon-simple-storage-service--s3--external-account}
 
@@ -511,7 +511,6 @@ Met **[!UICONTROL Web API]** plaatsingstype en **[!UICONTROL Certificate]** auth
 
 * **[!UICONTROL Custom Key identifier]**
 
-
 * **[!UICONTROL Key ID]**
 
 * **[!UICONTROL Client identifier]**
@@ -530,7 +529,7 @@ Met het **[!UICONTROL Oracle on demand]** externe account kunt u Oracle-gegevens
 
 ![](assets/ext_account_18.png)
 
-Als u de externe Oracle-account op aanvraag wilt configureren voor gebruik met Adobe Campaign, moet u de volgende gegevens opgeven:
+Als u het externe Oracle-account op aanvraag wilt configureren voor gebruik met Adobe Campaign, moet u de volgende gegevens opgeven:
 
 * **[!UICONTROL Account]**
 
@@ -564,11 +563,11 @@ Als u de externe account van Salesforce CRM wilt configureren voor gebruik met A
 
 * **[!UICONTROL Client identifier]**
 
-   Raadpleeg deze [pagina](https://help.salesforce.com/articleView?id=000205876&type=1)om te weten waar u uw client-id kunt vinden.
+   Raadpleeg deze [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1)om te weten waar u uw client-id kunt vinden.
 
 * **[!UICONTROL Security token]**
 
-   Als u wilt weten waar u uw beveiligingstoken vindt, raadpleegt u deze [pagina](https://help.salesforce.com/articleView?id=000205876&type=1).
+   Als u wilt weten waar u uw beveiligingstoken vindt, raadpleegt u deze [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL API version]**
 
