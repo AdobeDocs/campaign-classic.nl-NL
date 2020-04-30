@@ -5,7 +5,7 @@ index: y
 product: adobe campaign
 sub-product: adobe campagne classic
 translation-type: tm+mt
-source-git-commit: ffaa4d4442448f9d30c4a1ef41b8bd73363088e0
+source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 
 ---
 
@@ -286,34 +286,34 @@ source-git-commit: ffaa4d4442448f9d30c4a1ef41b8bd73363088e0
 + Integreren met Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Over de integratie van campagnes](integrations/using/about-campaign-integrations.md)
    + Delen van publiek {#audience-sharing}
-      + [Soorten publiek delen met Adobe Experience Cloud](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+      + [Soorten publiek delen met [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [Aanvraag indienen bij Adobe](integrations/using/submitting-request-to-adobe.md)
-      + [Integratie van gedeelde soorten publiek configureren in Adobe-campagne](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+      + [Integratie van gedeelde soorten publiek configureren in [!DNL Adobe-campagne]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [Problemen oplossen](integrations/using/troubleshooting.md)
       + [Soorten publiek importeren en exporteren](integrations/using/importing-and-exporting-audiences.md)
    + Elementen delen {#asset-sharing}
-      + [Elementen delen met Adobe Experience Cloud](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
-      + [Toegang tot elementen configureren](integrations/using/configuring-access-to-assets.md)
+      + [Elementen delen met [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
+      + [Toegang tot [!DNL Assets] configureren](integrations/using/configuring-access-to-assets.md)
       + [Gedeeld element invoegen](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
-      + [Over Adobe Experience Manager](integrations/using/about-adobe-experience-manager.md)
+      + [Info over [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Integratie configureren](integrations/using/configuring-the-integration.md)
-      + [Een nieuwsbrief voor Experience Manager maken](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Een nieuwsbrief [!DNL Experience Manager] maken](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe-doel {#adobe-target}
-      + [Integreren met Adobe Target](integrations/using/integrating-with-adobe-target.md)
-      + [Integratie met Adobe Target configureren](integrations/using/configuring-the-integration-with-adobe-target.md)
+      + [Integreren met [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
+      + [Integratie configureren met [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Een dynamische afbeelding invoegen](integrations/using/inserting-a-dynamic-image.md)
    + Verbinding maken via een Adobe-id {#connecting-via-an-adobe-id}
-      + [Informatie over Adobe-id](integrations/using/about-adobe-id.md)
-      + [IMS configureren](integrations/using/configuring-ims.md)
-      + [IMS implementeren](integrations/using/implementing-ims.md)
+      + [Info over [!DNL Adobe-id]](integrations/using/about-adobe-id.md)
+      + [[!DNL IMS] configureren](integrations/using/configuring-ims.md)
+      + [[!DNL IMS] implementeren](integrations/using/implementing-ims.md)
       + [IMS-problemen oplossen](integrations/using/ims-troubleshooting.md)
    + ACS-connector {#acs-connector}
-      + [ACS-verbindingsbeginselen en gegevenscyclus](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [[!DNL ACS Connector] beginselen en gegevenscyclus](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Profielen synchroniseren](integrations/using/synchronizing-profiles.md)
       + [Synchroniseren van publiek](integrations/using/synchronizing-audiences.md)
       + [Webtoepassingen synchroniseren](integrations/using/synchronizing-web-applications.md)
-      + [Het oplossen van problemen de Schakelaar ACS](integrations/using/troubleshooting-the-acs-connector.md)
+      + [Problemen met de [!DNL ACS Connector] oplossen](integrations/using/troubleshooting-the-acs-connector.md)
 + Automatiseren met workflows {#automating-with-workflows}
    + Inleiding {#introduction}
       + [Workflows](workflow/using/about-workflows.md)
