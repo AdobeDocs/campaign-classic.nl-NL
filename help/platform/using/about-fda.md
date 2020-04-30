@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 47fd157e369ddf6c67f0b2b467799cecc6e5a822
+source-git-commit: 9d22af2a2e25cb0dd83759096139996372f60c33
 
 ---
 
@@ -32,7 +32,6 @@ Adobe Campaign biedt de optie **Federated Data Access** (FDA) om gegevens te ver
 
 Met de optie FDA kunt u uw gegevensmodel uitbreiden in een database van derden. Het zal automatisch de structuur van de gerichte lijsten ontdekken en gegevens van de SQL bronnen gebruiken.
 
-
 Als u deze functionaliteit wilt gebruiken, moet u:
 
 1. Een externe database hebben die compatibel is met de Adobe Campagne FDA-module. De lijst met databasesystemen en compatibele versies wordt gedetailleerd weergegeven in de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html). Gebruikers moeten ook over de [benodigde machtigingen](../../platform/using/remote-database-access-rights.md) beschikken in Adobe Campaign en in de externe database.
@@ -41,7 +40,7 @@ Als u deze functionaliteit wilt gebruiken, moet u:
 1. [Maak het schema](../../platform/using/creating-data-schema.md) van de externe database in Adobe Campaign. Hierdoor kunt u de gegevensstructuur van de externe database herkennen.
 1. Uiteindelijk, [creeer een nieuwe doelafbeelding](../../platform/using/defining-data-mapping.md) van het eerder gecreeerd schema, in het geval waar de ontvangers van uw leveringen uit het externe gegevensbestand komen. Dit brengt bepaalde beperkingen met zich mee, met name wat betreft de personalisering van de leveringen.
 
-Zodra het gegevensschema wordt gecreeerd, kunnen de gegevens in de werkschema&#39;s van de Campagne van Adobe worden verwerkt. Zie [deze sectie](../../workflow/using/executing-a-workflow.md#architecture)voor meer informatie.
+Zodra het gegevensschema wordt gecreeerd, kunnen de gegevens in de werkschema&#39;s van de Campagne van Adobe worden verwerkt. For more on this, refer to [this section](../../workflow/using/accessing-an-external-database--fda-.md).
 
 ## Beste praktijken en aanbevelingen {#best-practices-and-recommendations}
 
