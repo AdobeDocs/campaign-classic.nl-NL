@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f081df28691acf45dcc62757466d15d39753fa85
+source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 
 ---
 
@@ -148,14 +148,13 @@ Als algemene regel geldt dat u de corresponderende clientlaag in de externe data
 
 >[!NOTE]
 >
->Sneeuwvlokaansluiting is beschikbaar voor gehoste en on-premise implementaties. Raadpleeg deze [pagina](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)voor meer informatie.
+>[!DNL Snowflake] de schakelaar is beschikbaar voor ontvangen en on-premise plaatsingen. For more on this, refer to [this article](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
 
 ![](assets/snowflake_3.png)
 
 ### Sneeuwvlok op CentOS {#snowflake-centos}
 
-1. Download de ODBC-stuurprogramma&#39;s voor Snowflake. Drivers voor Snowflake vindt u [hier](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/snowflake-odbc-2.20.2.x86_64.rpm).
-
+1. Download de ODBC-stuurprogramma&#39;s voor [!DNL Snowflake]. [Klik hier](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/snowflake-odbc-2.20.2.x86_64.rpm) om te beginnen met downloaden.
 1. Vervolgens moet u de ODBC-stuurprogramma&#39;s op CentOs installeren met de volgende opdracht:
 
    ```
@@ -170,48 +169,38 @@ Als algemene regel geldt dat u de corresponderende clientlaag in de externe data
    /etc/init.d/nlserver6 start
    ```
 
-1. In Campaign Classic configureert u uw Snowflake externe account in Campaign Classic. Maak het **[!UICONTROL Explorer]** menu los van het **[!UICONTROL Administration]** menu.
+1. In Campaign Classic kunt u uw [!DNL Snowflake] externe account vervolgens configureren. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
-1. Ontgrendel het **[!UICONTROL Platform]** menu en klik **[!UICONTROL External accounts]**.
+1. Selecteer de ingebouwde **[!UICONTROL Snowflake]** externe account.
 
-1. Selecteer de externe **[!UICONTROL Snowflake]** account die buiten het vak valt.
+1. Configureer de **[!UICONTROL Snowflake]** externe account. Geef de volgende instellingen op:
 
-1. De **[!UICONTROL Snowflake]** externe account configureren:
+   * **[!UICONTROL Server]**: URL van de [!DNL Snowflake] server
 
-   * **[!UICONTROL Server]**
+   * **[!UICONTROL Account]**: Naam van de gebruiker
 
-      URL van de Snowflake-server.
+   * **[!UICONTROL Password]**: Wachtwoord gebruikersaccount
 
-   * **[!UICONTROL Account]**
-
-      Naam van de gebruiker.
-
-   * **[!UICONTROL Password]**
-
-      Wachtwoord voor gebruikersaccount.
-
-   * **[!UICONTROL Database]**
-
-      Naam van de database.
+   * **[!UICONTROL Database]**: Naam van de database
    ![](assets/snowflake.png)
 
-1. Klik op het **[!UICONTROL Parameters]** tabblad en vervolgens op de **[!UICONTROL Deploy function]** knop om functies te maken.
+1. Klik op het **[!UICONTROL Parameters]** tabblad en vervolgens op de **[!UICONTROL Deploy functions]** knop om functies te maken.
 
    ![](assets/snowflake_2.png)
 
 De connector ondersteunt de volgende opties:
 
-| Option | Waarde | Beschrijving |
-|---|---|---|
-| werkschema |  | Databaseschema dat moet worden gebruikt voor werktabellen |
-| entrepot |  | Naam van het standaardentrepot aan gebruik. De standaardinstelling van de gebruiker wordt hierdoor genegeerd. |
-| TimeZoneName |  | Door gebrek leeg, zo betekent het dat de systeemtijdzone van de Klassieke toepassingsserver van de Campagne wordt gebruikt. De optie kan worden gebruikt om de TIMEZONE-sessieparameter te forceren. <br>Raadpleeg deze [pagina](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)voor meer informatie. |
-| WeekStart | 0, 1-7 | Standaard ingesteld op 0. (WEEK_START sessieparameter) <br>Raadpleeg deze [pagina](https://docs.snowflake.net/manuals/sql-reference/parameters.html#week-start)voor meer informatie. |
-| UseCachedResult | TRUE/FALSE | Standaard ingesteld op TRUE. Deze optie kan worden gebruikt om Snowflake caching resultaten (USE_CACHED_RESULTS zittingsparameter) onbruikbaar te maken <br>Voor meer op dit, verwijs naar deze [pagina](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
+| Option | Beschrijving |
+|---|---|
+| werkschema | Databaseschema dat moet worden gebruikt voor werktabellen |
+| entrepot | Naam van het standaardentrepot aan gebruik. De standaardinstelling van de gebruiker wordt hierdoor genegeerd. |
+| TimeZoneName | Door gebrek leeg, zo betekent het dat de systeemtijdzone van de Klassieke toepassingsserver van de Campagne wordt gebruikt. De optie kan worden gebruikt om de TIMEZONE-sessieparameter te forceren. <br>Raadpleeg [deze pagina](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)voor meer informatie. |
+| WeekStart | WEEK_START, sessieparameter. Standaard ingesteld op 0. <br>Raadpleeg [deze pagina](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start)voor meer informatie. |
+| UseCachedResult | USE_CACHED_RESULTS sessieparameter. Standaard ingesteld op TRUE. U kunt deze optie gebruiken om de resultaten van Sneeuwvlokken in cache uit te schakelen. <br>Raadpleeg [deze pagina](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)voor meer informatie. |
 
 ### Sneeuwvlok op Debian {#snowflake-debian}
 
-1. Download de ODBC-stuurprogramma&#39;s voor Snowflake. Drivers voor Snowflake vindt u [hier](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html).
+1. Download de ODBC-stuurprogramma&#39;s voor [!DNL Snowflake]. [Klik hier](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) om te downloaden.
 
 1. Vervolgens moet u de ODBC-stuurprogramma&#39;s op Debian installeren met de volgende opdracht:
 
@@ -227,97 +216,77 @@ De connector ondersteunt de volgende opties:
    systemctl start nlserver.service
    ```
 
-1. In Campaign Classic configureert u uw Snowflake externe account in Campaign Classic. Maak het **[!UICONTROL Explorer]** menu los van het **[!UICONTROL Administration]** menu.
+1. In Campaign Classic kunt u uw [!DNL Snowflake] externe account vervolgens configureren. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
-1. Ontgrendel het **[!UICONTROL Platform]** menu en klik **[!UICONTROL External accounts]**.
+1. Selecteer de ingebouwde **[!UICONTROL Snowflake]** externe account.
 
-1. Selecteer de externe **[!UICONTROL Snowflake]** account die buiten het vak valt.
+1. Om de **[!UICONTROL Snowflake]** externe rekening te vormen, moet u specificeren:
 
-1. De **[!UICONTROL Snowflake]** externe account configureren:
+   * **[!UICONTROL Server]**: URL van de [!DNL Snowflake] server
 
-   * **[!UICONTROL Server]**
+   * **[!UICONTROL Account]**: Naam van de gebruiker
 
-      URL van de Snowflake-server.
+   * **[!UICONTROL Password]**: Wachtwoord gebruikersaccount
 
-   * **[!UICONTROL Account]**
-
-      Naam van de gebruiker.
-
-   * **[!UICONTROL Password]**
-
-      Wachtwoord voor gebruikersaccount.
-
-   * **[!UICONTROL Database]**
-
-      Naam van de database
+   * **[!UICONTROL Database]**: Naam van de database
    ![](assets/snowflake.png)
 
-1. Klik op het **[!UICONTROL Parameters]** tabblad en vervolgens op de **[!UICONTROL Deploy function]** knop om functies te maken.
+1. Klik op het **[!UICONTROL Parameters]** tabblad en vervolgens op de **[!UICONTROL Deploy functions]** knop om functies te maken.
 
    ![](assets/snowflake_2.png)
 
 De connector ondersteunt de volgende opties:
 
-| Option | Waarde | Beschrijving |
-|---|---|---|
-| werkschema |   | Databaseschema dat moet worden gebruikt voor werktabellen |
-| entrepot |   | Naam van het standaardentrepot aan gebruik. De standaardinstelling van de gebruiker wordt hierdoor genegeerd. |
-| TimeZoneName |   | Door gebrek leeg, zo betekent het dat de systeemtijdzone van de Klassieke toepassingsserver van de Campagne wordt gebruikt. De optie kan worden gebruikt om de TIMEZONE-sessieparameter te forceren. <br>Raadpleeg deze [pagina](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)voor meer informatie. |
-| WeekStart | 0, 1-7 | Standaard ingesteld op 0. (WEEK_START sessieparameter) <br>Raadpleeg deze [pagina](https://docs.snowflake.net/manuals/sql-reference/parameters.html#week-start)voor meer informatie. |
-| UseCachedResult | TRUE/FALSE | Standaard ingesteld op TRUE. Deze optie kan worden gebruikt om Snowflake caching resultaten (USE_CACHED_RESULTS zittingsparameter) onbruikbaar te maken <br>Voor meer op dit, verwijs naar deze [pagina](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
+| Option | Beschrijving |
+|---|---|
+| werkschema | Databaseschema dat moet worden gebruikt voor werktabellen |
+| entrepot | Naam van het standaardentrepot aan gebruik. De standaardinstelling van de gebruiker wordt hierdoor genegeerd. |
+| TimeZoneName | Door gebrek leeg, zo betekent het dat de systeemtijdzone van de Klassieke toepassingsserver van de Campagne wordt gebruikt. De optie kan worden gebruikt om de TIMEZONE-sessieparameter te forceren. <br>Raadpleeg [deze pagina](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)voor meer informatie. |
+| WeekStart | WEEK_START, sessieparameter. Standaard ingesteld op 0.  <br>Raadpleeg [deze pagina](https://docs.snowflake.net/manuals/sql-reference/parameters.html#week-start)voor meer informatie. |
+| UseCachedResult | USE_CACHED_RESULTS sessieparameter. Standaard ingesteld op TRUE. U kunt deze optie gebruiken om de resultaten van Sneeuwvlokken in cache uit te schakelen. <br>Raadpleeg [deze pagina](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)voor meer informatie. |
 
 ### Sneeuwvlok in Windows {#snowflake-windows}
 
-1. Download het [ODBC-stuurprogramma voor Windows](https://docs.snowflake.net/manuals/user-guide/odbc-download.html). U hebt beheerdersrechten nodig om het stuurprogramma te installeren. Raadpleeg deze [pagina voor meer informatie](https://docs.snowflake.net/manuals/user-guide/admin-user-management.html)
+1. Download het [ODBC-stuurprogramma voor Windows](https://docs.snowflake.net/manuals/user-guide/odbc-download.html). U hebt beheerdersrechten nodig om het stuurprogramma te installeren. For more on this, refer to [this page](https://docs.snowflake.net/manuals/user-guide/admin-user-management.html)
 
-1. Configureer het ODBC-stuurprogramma. Raadpleeg deze [pagina voor meer informatie](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver)
+1. Configureer het ODBC-stuurprogramma. For more on this, refer to [this page](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver)
 
-1. Nadat het ODBC-stuurprogramma is geïnstalleerd en geconfigureerd, moet u uw Snowflake externe account configureren in Campaign Classic. Maak het **[!UICONTROL Explorer]** menu los van het **[!UICONTROL Administration]** menu.
+1. In Campaign Classic kunt u uw [!DNL Snowflake] externe account vervolgens configureren. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
-1. Ontgrendel het **[!UICONTROL Platform]** menu en klik **[!UICONTROL External accounts]**.
+1. Selecteer de ingebouwde **[!UICONTROL Snowflake]** externe account.
 
-1. Selecteer de externe **[!UICONTROL Snowflake]** account die buiten het vak valt.
+1. Om de **[!UICONTROL Snowflake]** externe rekening te vormen, moet u specificeren:
 
-1. De **[!UICONTROL Snowflake]** externe account configureren:
+   * **[!UICONTROL Server]**: URL van de [!DNL Snowflake] server
 
-   * **[!UICONTROL Server]**
+   * **[!UICONTROL Account]**: Naam van de gebruiker
 
-      URL van de Snowflake-server.
+   * **[!UICONTROL Password]**: Wachtwoord gebruikersaccount
 
-   * **[!UICONTROL Account]**
-
-      Naam van de gebruiker.
-
-   * **[!UICONTROL Password]**
-
-      Wachtwoord voor gebruikersaccount.
-
-   * **[!UICONTROL Database]**
-
-      Naam van de database
+   * **[!UICONTROL Database]**: Naam van de database
    ![](assets/snowflake.png)
 
-1. Klik op het **[!UICONTROL Parameters]** tabblad en vervolgens op de **[!UICONTROL Deploy function]** knop om functies te maken.
+1. Klik op het **[!UICONTROL Parameters]** tabblad en vervolgens op de **[!UICONTROL Deploy functions]** knop om functies te maken.
 
    ![](assets/snowflake_2.png)
 
 De connector ondersteunt de volgende opties:
 
-| Option | Waarde | Beschrijving |
+| Option | Beschrijving |
 |---|---|---|
-| werkschema |   | Databaseschema dat moet worden gebruikt voor werktabellen |
-| entrepot |   | Naam van het standaardentrepot aan gebruik. De standaardinstelling van de gebruiker wordt hierdoor genegeerd. |
-| TimeZoneName |   | Door gebrek leeg, zo betekent het dat de systeemtijdzone van de Klassieke toepassingsserver van de Campagne wordt gebruikt. De optie kan worden gebruikt om de TIMEZONE-sessieparameter te forceren. <br>Raadpleeg deze [pagina](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)voor meer informatie. |
-| WeekStart | 0, 1-7 | Standaard ingesteld op 0. (WEEK_START sessieparameter) <br>Raadpleeg deze [pagina](https://docs.snowflake.net/manuals/sql-reference/parameters.html#week-start)voor meer informatie. |
-| UseCachedResult | TRUE/FALSE | Standaard ingesteld op TRUE. Deze optie kan worden gebruikt om Snowflake caching resultaten (USE_CACHED_RESULTS zittingsparameter) onbruikbaar te maken <br>Voor meer op dit, verwijs naar deze [pagina](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
+| werkschema | Databaseschema dat moet worden gebruikt voor werktabellen |
+| entrepot | Naam van het standaardentrepot aan gebruik. De standaardinstelling van de gebruiker wordt hierdoor genegeerd. |
+| TimeZoneName | Door gebrek leeg, zo betekent het dat de systeemtijdzone van de Klassieke toepassingsserver van de Campagne wordt gebruikt. De optie kan worden gebruikt om de TIMEZONE-sessieparameter te forceren. <br>Raadpleeg [deze pagina](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)voor meer informatie. |
+| WeekStart | WEEK_START, sessieparameter. Standaard ingesteld op 0. <br>Raadpleeg [deze pagina](https://docs.snowflake.net/manuals/sql-reference/parameters.html#week-start)voor meer informatie. |
+| UseCachedResult | Standaard ingesteld op TRUE. Deze optie kan worden gebruikt om Snowflake caching resultaten (USE_CACHED_RESULTS zittingsparameter) onbruikbaar te maken <br>Voor meer op dit, verwijs naar [deze pagina](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
 
 ## Toegang tot Hadoop 3.0 configureren {#configure-access-to-hadoop-3}
 
 Als u verbinding wilt maken met een externe database in Hadoop in FDA, hebt u de volgende configuraties op de Adobe Campaign-server nodig. Deze configuratie is zowel voor Windows als voor Linux beschikbaar.
 
-1. Download de ODBC-stuurprogramma&#39;s voor Hadoop, afhankelijk van uw OS-versie. Drivers vindt u op deze [pagina](https://www.cloudera.com/downloads.html).
+1. Download de ODBC-stuurprogramma&#39;s voor Hadoop, afhankelijk van uw OS-versie. Drivers vindt u op [deze pagina](https://www.cloudera.com/downloads.html).
 
-1. Vervolgens moet u de ODBC-stuurprogramma&#39;s installeren en een DSN maken voor uw Hive-verbinding. Instructie vindt u [hier](https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-5/Cloudera-ODBC-Driver-for-Apache-Hive-Install-Guide.pdf)
+1. Vervolgens moet u de ODBC-stuurprogramma&#39;s installeren en een DSN maken voor uw Hive-verbinding. Instructies vindt u op [deze pagina](https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-5/Cloudera-ODBC-Driver-for-Apache-Hive-Install-Guide.pdf)
 
 1. Nadat u de ODBC-stuurprogramma&#39;s hebt gedownload en geïnstalleerd, moet u Campaign Classic opnieuw starten. Voer hiertoe de volgende opdracht uit:
 
@@ -326,37 +295,23 @@ Als u verbinding wilt maken met een externe database in Hadoop in FDA, hebt u de
    systemctl start nlserver.service
    ```
 
-1. In Campaign Classic configureert u uw externe account voor Hadoop in Campaign Classic. Maak het **[!UICONTROL Explorer]** menu los van het **[!UICONTROL Administration]** menu.
-
-1. Ontgrendel het **[!UICONTROL Platform]** menu en klik **[!UICONTROL External accounts]**.
+1. In Campaign Classic kunt u vervolgens uw Snowflake externe account configureren. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Klik **[!UICONTROL Create]** en selecteer **[!UICONTROL External database]** als Accounttype.
 
-1. De **[!UICONTROL  Hadoop]** externe account configureren:
+1. Als u de **[!UICONTROL  Hadoop]** externe account wilt configureren, moet u opgeven:
 
-   * **[!UICONTROL Type]**
+   * **[!UICONTROL Type]**: ODBC (Sybase ASE, Sybase IQ)
 
-      ODBC (Sybase ASE, Sybase IQ)
+   * **[!UICONTROL Server]**: Naam van de DNS
 
-   * **[!UICONTROL Server]**
+   * **[!UICONTROL Account]**: Naam van de gebruiker
 
-      Naam van de DNS.
+   * **[!UICONTROL Password]**: Wachtwoord gebruikersaccount
 
-   * **[!UICONTROL Account]**
+   * **[!UICONTROL Database]**: Naam van de database als deze niet is opgegeven in DSN. Deze kan leeg worden gelaten, indien opgegeven in de DSN
 
-      Naam van de gebruiker.
-
-   * **[!UICONTROL Password]**
-
-      Wachtwoord voor gebruikersaccount.
-
-   * **[!UICONTROL Database]**
-
-      Naam van de database als deze niet is opgegeven in DSN. Deze kan leeg blijven als dit in de DSN is opgegeven.
-
-   * **[!UICONTROL Time zone]**
-
-      Tijdzone van server
+   * **[!UICONTROL Time zone]**: Tijdzone van server
    ![](assets/hadoop3.png)
 
 De schakelaar steunt de volgende opties ODBC:
@@ -377,8 +332,6 @@ De aansluiting ondersteunt ook de volgende opties voor Hive:
 
 ## Toegang tot Hadoop 2.1 configureren {#configure-access-to-hadoop}
 
-Raadpleeg dit [artikel](https://helpx.adobe.com/campaign/kb/access-hadoop-2.html)voor meer informatie over het configureren van de externe database van Hadoop in FDA.
-
 ### Voor Windows {#for-windows}
 
 1. Installeer ODBC- en [Azure HD Insight](https://www.microsoft.com/en-us/download/details.aspx?id=40886) -stuurprogramma&#39;s voor Windows.
@@ -393,7 +346,7 @@ Raadpleeg dit [artikel](https://helpx.adobe.com/campaign/kb/access-hadoop-2.html
    User/Password: admin/<your password here>
    ```
 
-1. Maak de externe account van Hadoop, zoals wordt beschreven in de sectie [Een gedeelde verbinding](../../message-center/using/creating-a-shared-connection.md) maken.
+1. Maak de externe account van Hadoop, zoals beschreven in [deze pagina](../../platform/using/external-accounts.md#hadoop-external-account) sectie.
 
 ### Voor Linux {#for-linux}
 
@@ -480,7 +433,7 @@ Raadpleeg dit [artikel](https://helpx.adobe.com/campaign/kb/access-hadoop-2.html
    isql vorac -v
    ```
 
-1. Maak de externe account van Hadoop, zoals wordt beschreven in de sectie [Een gedeelde verbinding](../../message-center/using/creating-a-shared-connection.md) maken.
+1. Maak de externe account van Hadoop, zoals beschreven in [deze pagina](../../platform/using/external-accounts.md#hadoop-external-account) sectie.
 
 ## Toegang tot Netezza configureren {#configure-access-to-netezza}
 
@@ -529,7 +482,21 @@ Als u verbinding maakt met een externe Netezza-database in FDA, hebt u hieronder
    * **ODBCINI**: locatie van het bestand odbc.ini (bijvoorbeeld /etc/odbc.ini).
    * **NZ_ODBC_INI_PATH**: locatie van het bestand odbc.ini. Netezza vereist ook deze tweede variabele voor het gebruiken van het odbc.ini- dossier.
 
-1. Maak de externe Netezza-account, zoals wordt beschreven in het gedeelte [Een gedeelde verbinding](../../message-center/using/creating-a-shared-connection.md) maken.
+1. In Campaign Classic, kunt u uw externe rekening van Netezza dan vormen. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+
+1. Click **[!UICONTROL New]** and select **[!UICONTROL External database]** as **[!UICONTROL Type]**.
+
+1. Om de **[!UICONTROL Netezza]** externe rekening te vormen, moet u specificeren:
+
+   * **[!UICONTROL Type]**: Netezza
+
+   * **[!UICONTROL Server]**: URL van de Netezza-server
+
+   * **[!UICONTROL Account]**: Naam van de gebruiker
+
+   * **[!UICONTROL Password]**: Wachtwoord gebruikersaccount
+
+   * **[!UICONTROL Database]**: Naam van de database
 
 >[!NOTE]
 >
@@ -625,7 +592,21 @@ Als u verbinding maakt met een externe Sybase-IQ-database in FDA, hebt u hierond
    * Als u een bestand customer.sh gebruikt om het pad te declareren: Voeg het pad /opt/sybase/IQ-16_0/lib64 toe voor de variabele LD_LIBRARY_PATH.
    * Gebruik anders een Unix-opdracht.
 
-1. Maak een nieuwe externe FDA-account, zoals wordt beschreven in de sectie [Een gedeelde verbinding](../../message-center/using/creating-a-shared-connection.md) maken. Voor Sybase IQ komt de servernaam overeen met de ODBC-verbinding (`<server_alias>`) die is gedefinieerd in stap 5. Het is niet noodzakelijkerwijs de naam van de server zelf.
+1. In Campaign Classic, kunt u uw externe rekening van Sybase IQ dan vormen. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+
+1. Click **[!UICONTROL New]** and select **[!UICONTROL External database]** as **[!UICONTROL Type]**.
+
+1. Om de **[!UICONTROL Sybase IQ]** externe rekening te vormen, moet u specificeren:
+
+   * **[!UICONTROL Type]**: ODBC (Sybase ASE, Sybase IQ)
+
+   * **[!UICONTROL Server]**: Komt overeen met de ODBC-verbinding (`<server_alias>`) die is gedefinieerd in stap 5. Niet noodzakelijkerwijs de naam van de server zelf.
+
+   * **[!UICONTROL Account]**: Naam van de gebruiker
+
+   * **[!UICONTROL Password]**: Wachtwoord gebruikersaccount
+
+   * **[!UICONTROL Database]**: Naam van de database
 
 >[!NOTE]
 >
@@ -674,7 +655,23 @@ Als u verbinding wilt maken met een externe database met Teradata in FDA, hebt u
    * **ODBCINI**: locatie van het bestand odbc.ini (bijvoorbeeld /etc/odbc.ini).
    * **NLSPATH**: locatie van het bestand opermsgs.cat (/opt/teradata/client/15.10/msg/opermsgs.cat)
 
-## Toegang tot SAP HANA configureren {#configure-access-to-sap-hana}
+1. In Campaign Classic kunt u vervolgens uw externe account voor metagegevens configureren. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+
+1. Click **[!UICONTROL New]** and select **[!UICONTROL External database]** as **[!UICONTROL Type]**.
+
+1. Om de **[!UICONTROL Teradata]** externe rekening te vormen, moet u specificeren:
+
+   * **[!UICONTROL Type]**: TeraData
+
+   * **[!UICONTROL Server]**: URL van de Teradata-server
+
+   * **[!UICONTROL Account]**: Naam van de gebruiker
+
+   * **[!UICONTROL Password]**: Wachtwoord gebruikersaccount
+
+   * **[!UICONTROL Database]**: Naam van de database
+
+## Toegang tot SAP-HANA configureren {#configure-access-to-sap-hana}
 
 Als u verbinding maakt met een externe SAP HANA-database in FDA, hebt u bepaalde aanvullende configuraties op de Adobe Campagneserver nodig:
 
@@ -712,4 +709,16 @@ Als u verbinding maakt met een externe SAP HANA-database in FDA, hebt u bepaalde
    * **LD_LIBRARY_PATH**: Het zou de verbinding aan uw cliënt van SAP Hana (/usr/sap/hdbclient/libodbcHDB.so) door gebrek moeten omvatten.
    * **ODBCINI**: locatie van het bestand odbc.ini (bijvoorbeeld /etc/odbc.ini).
 
-1. Maak de externe SAP Hana-account, zoals wordt beschreven in de sectie [Een gedeelde verbinding](../../message-center/using/creating-a-shared-connection.md) maken.
+1. In Campaign Classic, kunt u uw externe rekening van SAP Hana dan vormen. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+
+1. Click **[!UICONTROL New]** and select **[!UICONTROL External database]** as **[!UICONTROL Type]**.
+
+1. Om de **[!UICONTROL SAP Hana]** externe rekening te vormen, moet u specificeren:
+
+   * **[!UICONTROL Type]**: SAP Hana
+
+   * **[!UICONTROL Server]**: URL van de SAP Hana-server
+
+   * **[!UICONTROL Account]**: Naam van de gebruiker
+
+   * **[!UICONTROL Password]**: Wachtwoord gebruikersaccount
