@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: a2cb740fe9b71435f602b738bd270fd3a0954901
 
 ---
 
@@ -100,7 +100,7 @@ De volgorde waarin `<attribute>` elementen in een database worden gedefinieerd, 
    * gedeeld: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
    Er zijn twee typen kenmerkvelden: eenvoudige oà¹-velden, waar één enkele waarde is toegestaan op de karakteristieken, en o à¹ multiple choice velden, waar de eigenschap is gekoppeld aan een collectie element dat meerdere waarden kan bevatten.
 
-   Wanneer een kenmerk in een schema wordt bepaald, moet dit schema een hoofdsleutel hebben die op één enkel gebied wordt gebaseerd (de samengestelde sleutels zijn niet geoorloofd).
+   Wanneer een eigenschap in een schema wordt bepaald, moet dit schema een belangrijkste sleutel hebben die op één enkel gebied wordt gebaseerd (de samengestelde sleutels zijn niet geoorloofd).
 
 * **featureDate (boolean)**: kenmerk gekoppeld aan het veld &quot;@feature&quot;-kenmerken. Als de waarde &quot;true&quot; is, kunt u erachter komen wanneer de waarde voor het laatst is bijgewerkt.
 * **img (tekenreeks)**: Hiermee kunt u een pad definiëren voor een afbeelding die is gekoppeld aan een veld (naamruimte + naam van afbeelding) (bijvoorbeeld: img=&quot;cus:mypicture.jpg&quot;). De afbeelding moet fysiek naar de toepassingsserver worden geïmporteerd.
@@ -113,7 +113,7 @@ De volgorde waarin `<attribute>` elementen in een database worden gedefinieerd, 
 
    * &quot;i&quot;: voor het type &#39;integer&#39;.
    * &quot;d&quot;: prefix voor het type &#39;double&#39;.
-   * &quot;s&quot;: voorvoegsel voor het tekenreekstype.
+   * &quot;s&quot;: voor het type tekenreeks.
    * &quot;ts&quot;: voorvoegsel voor het type &#39;date&#39;.
    Als u de naam van het veld in de tabel volledig wilt definiëren, gebruikt u de optie &quot;@sqlname&quot; bij het definiëren van een kenmerk.
 
@@ -130,7 +130,7 @@ De volgorde waarin `<attribute>` elementen in een database worden gedefinieerd, 
 * **sqlDefault (tekenreeks)**: Met dit kenmerk kunt u de standaardwaarde definiëren waarmee rekening wordt gehouden bij het bijwerken van de database als het kenmerk @notNull is geactiveerd. Als dit attribuut na de attributenverwezenlijking wordt toegevoegd, zal het schemagedrag niet veranderen zelfs voor de nieuwe verslagen. Als u het schema wilt wijzigen en de waarde voor nieuwe records wilt bijwerken, moet u het kenmerk verwijderen en opnieuw maken.
 * **sqlname (tekenreeks)**: van het veld tijdens het maken van de tabel. Als @sqlname niet wordt gespecificeerd, wordt de waarde van het &quot;@name&quot;attribuut gebruikt door gebrek. Wanneer het schema in het gegevensbestand wordt geschreven, worden de prefixen automatisch toegevoegd afhankelijk van het type van gebied.
 * **sjabloon (tekenreeks)**: dit attribuut bepaalt een verwijzing naar een `<attribute>` element dat door verscheidene schema&#39;s wordt gedeeld. De definitie wordt automatisch gekopieerd naar het huidige schema.
-* **translateDefault (tekenreeks)**: Als een kenmerk &quot;@default&quot; wordt gevonden, kunt u met het kenmerk &quot;@translateDefault&quot; een expressie opnieuw definiëren die overeenkomt met de expressie die is gedefinieerd in @default, die moet worden verzameld met het gereedschap Vertalen (intern gebruik).
+* **translateDefault (tekenreeks)**: Als een kenmerk &quot;@default&quot; wordt gevonden, kunt u met het kenmerk &quot;@translateDefault&quot; een expressie opnieuw definiëren die overeenkomt met de expressie die in @default is gedefinieerd, en die worden verzameld met het gereedschap Vertalen (intern gebruik).
 * **translateExpr (tekenreeks)**: Als er een kenmerk &quot;@expr&quot; aanwezig is, kunt u met het kenmerk &quot;@translateExpr&quot; een expressie opnieuw definiëren die overeenkomt met de expressie die is gedefinieerd in @expr, die moet worden verzameld met het gereedschap Vertalen (intern gebruik).
 * **type (MNTOKEN)**: veldtype.
 
@@ -160,7 +160,7 @@ De volgorde waarin `<attribute>` elementen in een database worden gedefinieerd, 
    * procent
    * primarykey
    * kort
-   *  string
+   * string
    * tijd
    * timespan
    * uuid
@@ -404,7 +404,7 @@ CREATE INDEX DocNewSchemaUser_myIndex ON DocNewSchemaUser(sEmail, sPhone);
 
 ### Inhoudsmodel {#content-model-4}
 
-element:==(attribute| compute string| debindex| Standaard| element| Help| Verbinden| Sleutel| sysFilter| vertaaldStandaard)
+element:==(attribute | compute string | debindex | Standaard | element | Help | Verbinden | Sleutel | sysFilter | vertaaldStandaard)
 
 ### Attributen {#attributes-4}
 
@@ -486,7 +486,7 @@ Adobe Campagne bevat vier typen `<element>` elementen:
    * gedeeld: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
    Er zijn twee typen kenmerkvelden: eenvoudige velden waar één waarde is toegestaan op het kenmerk, en meerkeuzevelden, waar het kenmerk is gekoppeld aan een verzamelingselement dat meerdere waarden kan bevatten.
 
-   Wanneer een kenmerk in een schema wordt bepaald, moet dit schema een hoofdsleutel hebben die op één enkel gebied wordt gebaseerd (de samengestelde sleutels zijn niet geoorloofd).
+   Wanneer een eigenschap in een schema wordt bepaald, moet dit schema een belangrijkste sleutel hebben die op één enkel gebied wordt gebaseerd (de samengestelde sleutels zijn niet geoorloofd).
 
 * **featureDate (boolean)**: kenmerk gekoppeld aan het veld &quot;@feature&quot;-kenmerken. Als de waarde &quot;true&quot; is, kunt u erachter komen wanneer de waarde voor het laatst is bijgewerkt.
 * **filterPath (tekenreeks)**: this attribute receive an Xpath and lets you define a filter on a field.
@@ -515,7 +515,7 @@ Adobe Campagne bevat vier typen `<element>` elementen:
 
    * &quot;i&quot;: voor het type &#39;integer&#39;.
    * &quot;d&quot;: prefix voor het type &#39;double&#39;.
-   * &quot;s&quot;: voorvoegsel voor het tekenreekstype.
+   * &quot;s&quot;: voor het type tekenreeks.
    * &quot;ts&quot;: voorvoegsel voor het type &#39;date&#39;.
    Om de naam van de lijst op een autonome manier te bepalen, moet u het &quot;@sqltable&quot;attribuut in de definitie van het belangrijkste schemaelement gebruiken.
 
@@ -552,7 +552,7 @@ Adobe Campagne bevat vier typen `<element>` elementen:
 * **tableSpaceIndex (tekenreeks)**: Met dit kenmerk kunt u een nieuwe tabelruimte voor indexopslag voor een tabel opgeven (geldig op het hoofdniveau `<element>`).
 * **doel (MNTOKEN)**: ontvangt de naam van het doelschema wanneer u een koppeling tussen tabellen maakt. Dit kenmerk is alleen actief voor elementen van het type &quot;link&quot;.
 * **sjabloon (tekenreeks)**: dit attribuut bepaalt een verwijzing naar een `<element>` element dat door verscheidene schema&#39;s wordt gedeeld. De definitie wordt automatisch gekopieerd naar het huidige schema.
-* **translateDefault (tekenreeks)**: Als een kenmerk &quot;@default&quot; wordt gevonden, kunt u met het kenmerk &quot;@translateDefault&quot; een expressie opnieuw definiëren die overeenkomt met de expressie die is gedefinieerd in @default, die moet worden verzameld met het gereedschap Vertalen (intern gebruik).
+* **translateDefault (tekenreeks)**: Als een kenmerk &quot;@default&quot; wordt gevonden, kunt u met het kenmerk &quot;@translateDefault&quot; een expressie opnieuw definiëren die overeenkomt met de expressie die in @default is gedefinieerd, en die worden verzameld met het gereedschap Vertalen (intern gebruik).
 * **translateExpr (tekenreeks)**: Als een kenmerk &quot;@expr&quot; wordt gevonden, kunt u met het kenmerk &quot;@translateExpr&quot; een expressie opnieuw definiëren die overeenkomt met de expressie die is gedefinieerd in &quot;@expr&quot; en die wordt verzameld met het gereedschap Vertalen (intern gebruik).
 * **type (MNTOKEN)**: Hiermee definieert u het type gegevens dat in het element wordt opgeslagen.
 
@@ -580,7 +580,7 @@ Adobe Campagne bevat vier typen `<element>` elementen:
    * procent
    * primarykey
    * kort
-   *  string
+   * string
    * tijd
    * timespan
    * uuid
@@ -652,7 +652,7 @@ Opsommingen worden gedefinieerd aan het begin van een schema (voordat het hoofde
    * procent
    * primarykey
    * kort
-   *  string
+   * string
    * tijd
    * timespan
    * uuid
@@ -810,7 +810,7 @@ Een tabel moet minstens één sleutel hebben.
 
 ### Gebruik en gebruikscontext {#use-and-context-of-use-6}
 
-Normaliter worden toetsen gedeclareerd na het hoofdelement van het schema en de indexen.
+Normaliter worden sleutels gedeclareerd na het hoofdelement van het schema en de indexen.
 
 Een sleutel wordt een samengestelde sleutel genoemd als het verscheidene gebieden (d.w.z. verscheidene `<keyfield>` kinderen) omvat. Gebruik geen samengestelde sleutel om een primaire sleutel te definiëren.
 
@@ -889,7 +889,7 @@ Selectie van het veld &#39;sName&#39; in een index met een Xpath-bewerking voor 
 
 ### Inhoudsmodel {#content-model-10}
 
-methode:==( help:| Parameters)
+methode:==( help: | Parameters)
 
 ### Attributen {#attributes-10}
 
@@ -1048,7 +1048,7 @@ Met dit element kunt u een parameter definiëren voor het aanroepen van een SOAP
    * procent
    * primarykey
    * kort
-   *  string
+   * string
    * tijd
    * timespan
    * uuid
@@ -1104,7 +1104,7 @@ Geen
 
 ### Inhoudsmodel {#content-model-14}
 
-srcSchema:==(kenmerk| gemaaktDoor| Gegevens| element| opsomming| Help| interface| Methode| gewijzigdDoor)
+srcSchema:==(kenmerk | gemaaktDoor | Gegevens | element | opsomming | Help | interface | Methode | gewijzigdDoor)
 
 ### Attributen {#attributes-14}
 
