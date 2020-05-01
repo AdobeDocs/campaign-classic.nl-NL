@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: a2cb740fe9b71435f602b738bd270fd3a0954901
 
 ---
 
@@ -99,11 +99,11 @@ In de Adobe Campagne-database moeten alle e-mailadressen als volgt worden gemaak
 
 Hier kunt u de geoorloofde tekens (&#39;gegevensbeleid&#39;) definiëren in het e-mailveld van de database. Tekens die niet in de lijst staan, worden verboden en daarom geweigerd wanneer gegevens in de database worden ingevoerd via de interface, via een webformulier en ook wanneer gegevens worden geïmporteerd.
 
-Er zijn twee lijsten beschikbaar: Alleen **** Europees of alleen **** VS. Indien nodig kunnen andere tekens worden toegevoegd.
+Er zijn twee lijsten beschikbaar: **Alleen** Europees of alleen **** VS. Indien nodig kunnen andere tekens worden toegevoegd.
 
 ### Leveringsparameters {#delivery-parameters}
 
-**De** geavanceerde parameters... de verbinding laat u toe om tot leveringsopties, parameters toegang te hebben verbonden aan retry en quarantines.
+De **geavanceerde parameters...** de verbinding laat u toe om tot leveringsopties, parameters toegang te hebben verbonden aan retry en quarantines.
 
 ![](assets/s_ncs_install_deployment_wiz_05.png)
 
@@ -168,7 +168,7 @@ Onverwerkte steunkleuren worden niet weergegeven in de interface van Adobe Campa
 
 In de volgende stap kunt u tracering voor de instantie configureren. De instantie moet worden gedeclareerd en geregistreerd bij de volgende server(s).
 
-Deze stap wordt alleen aangeboden als de opties **E-mailkanaal** en **Bijhouden** zijn geselecteerd op de eerste pagina van de implementatiewizard. Zie [Algemene parameters](#general-parameters).
+Deze stap wordt alleen aangeboden als de opties **E-mailkanaal** en **Tekstspatiëring** zijn geselecteerd op de eerste pagina van de implementatiewizard. Zie [Algemene parameters](#general-parameters).
 
 Raadpleeg [dit document](../../configuration/using/about-web-tracking.md)voor gedetailleerde informatie over webtracering (modus Tekstspatiëring, tags maken en invoegen...).
 
@@ -288,7 +288,7 @@ In de vervolgkeuzelijst **Prioriteit** : Selecteer &quot;Normaal&quot;, &quot;Ho
 
 ### Geavanceerde parameters {#advanced-parameters}
 
-**De** geavanceerde parameters... Via de koppeling hebt u toegang tot de opties voor opnieuw proberen en quarantaine.
+De **geavanceerde parameters...** Via de koppeling hebt u toegang tot de opties voor opnieuw proberen en quarantaine.
 
 ![](assets/s_ncs_install_deployment_wiz_13.png)
 
@@ -348,7 +348,7 @@ Voor deze stap, moet u ingaan:
 1. De modus voor beelddetectie in een levering. Raadpleeg het gedeelte [Afbeeldingsdetectie](#delivery-image-detection) van levering voor meer informatie.
 1. Publicatieopties Raadpleeg de sectie [Publicatiemodi](#publication-modes) voor meer informatie.
 
-De openbare middelen zijn toegankelijk via het **Beheer > Middelen > Online > de knoop van Openbare middelen** van de Boom van de Campagne van Adobe. Ze worden verzameld in een bibliotheek en kunnen worden opgenomen in e-mails, maar ook worden gebruikt in campagnes of taken en in inhoudsbeheer.
+De openbare middelen zijn toegankelijk via het **Beleid > Middelen > Online > de knoop van Openbare middelen** van de Boom van de Campagne van Adobe. Ze worden verzameld in een bibliotheek en kunnen worden opgenomen in e-mails, maar ook worden gebruikt in campagnes of taken en in inhoudsbeheer.
 
 ![](assets/install_pub_resources_view.png)
 
@@ -424,7 +424,7 @@ Voor afbeeldingen moeten deze worden gekopieerd van de map &quot;images&quot; di
 
 In het geval van publicatie op een Adobe Campaign-server zonder handmatig publicatiescript worden de afbeeldingen van een levering standaard opgeslagen in het `$(XTK_INSTALL_DIR)/var/res/img/ directory`bestand. De bijbehorende URL is: **`https://server/res/img`**.
 
-`XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)`. De bijbehorende URL is als volgt: **`https://server/res/instance`** waarbij de instantie de naam van de instantie tracking is.
+`XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)`. De bijbehorende URL is als volgt: **`https://server/res/instance`** waarbij instantie de naam van de instantie tracking is.
 
 >[!NOTE]
 >
