@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
+source-git-commit: 4fbc576ba65c44d91ac87ea2967fac3b0a88a040
 
 ---
 
@@ -234,19 +234,19 @@ U zou moeten verkrijgen:
 Trying 127.0.0.1...
 Connected to localhost.localdomain.
 Escape character is '^]'.
-````
+```
 
 Voer vervolgens het volgende in:
 
 ```
 GET /r/test
-````
+```
 
 De volgende informatie wordt weergegeven:
 
 ```
 <redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='' localHost='XXXX'/>
 Connection closed by foreign host.
-````
+```
 
 U kunt de URL ook aanvragen [`https://<computer>`](https://machine/r/test) vanuit een webbrowser.
