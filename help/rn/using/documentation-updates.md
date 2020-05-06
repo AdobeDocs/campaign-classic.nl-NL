@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0b3622bb0ac95eff61e2d96332e67623dffa68be
+source-git-commit: 9091059b1d8431a84eb93f104dbd8e8833cb94a7
+workflow-type: tm+mt
+source-wordcount: '6488'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +28,15 @@ Meer informatie over alle nieuwste updates voor de documentatie van Adobe Campai
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates voor elke release van Adobe Campaign Classic.
 
 U kunt ook de opmerkingen bij de release [Adobe Campaign Classic raadplegen](../../rn/using/latest-release.md).
+
+## mei 2020 {#may-2020}
+
+De sectie Te leveren items controleren is verplaatst en gereorganiseerd. [Meer informatie](../../delivery/using/monitoring-deliverability.md)
+
+De sectie voor het oplossen van problemen met betrekking tot levering is verplaatst en bijgewerkt. [Meer informatie](../../delivery/using/deliverability-faq.md)
+
+De sectie Een nieuw platform starten is uitgebreid. [Meer informatie](../../delivery/using/starting-new-platform.md)
+
 
 ## april 2020 {#april-2020}
 
@@ -156,7 +168,7 @@ Beveiligd SMS-bericht (TLS) - Meer [informatie](https://helpx.adobe.com/campaign
 
 De uitgebreide documentatie van MTA van de Campagne van Adobe is nu beschikbaar. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
-Er is een nieuwe sectie toegevoegd over het oplossen van problemen met een workflow die in de status &quot;Zo snel mogelijk starten&quot; blijft in een campagne. Meer[informatie](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
+Er is een nieuwe sectie toegevoegd over het oplossen van problemen met een workflow die in de status &quot;Zo snel mogelijk starten&quot; blijft in een campagne. [Meer informatie](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
 De nieuwe opties &quot;NmsOperation_DeliveryPreparationWindow&quot; en &quot;WdbcKillSessionPolicy&quot; zijn toegevoegd aan de lijst met campagneopties. [Meer informatie](../../installation/using/configuring-campaign-options.md)
 
@@ -168,7 +180,7 @@ De voorbeelden voor API-aanroepen die een **HttpServletRequest** met aanmeldings
 
 Een aanbeveling voor **sqlDefault** attribuut in schemadefinitie is toegevoegd. [Lees meer](../../configuration/using/elements-and-attributes.md#attribute-description).
 
-In de handleiding **Integrating with Adobe Experience Cloud** wordt nu verwezen naar de integratie tussen Adobe Campaign en Adobe Real-time Customer Data Platform. [Lees meer](../../integrations/using/about-campaign-integrations.md).
+In de handleiding **Integrating with Adobe Experience Cloud** wordt nu verwezen naar de integratie tussen Adobe Campagne en Adobe Real-time Customer Data Platform. [Lees meer](../../integrations/using/about-campaign-integrations.md).
 
 ## november 2019 {#november-2019}
 
@@ -279,7 +291,7 @@ Informatie toegevoegd over het factureringsrapport.
 Bijgewerkte documentatie over de Gedeelde publieksintegratie.
 [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Configuring_shared_audiences_integration_in_Adobe_Campaign.html)
 
-De volgende technologieën zijn bijgewerkt: Verbindingsprotocol van [SMS en montages](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) en [Reeks autogeneratie](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+De volgende technologieën zijn bijgewerkt: [Verbindingsprotocol van SMS en montages](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) en de [Reeks autogeneratie](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
 De sectie Technische workflows is bijgewerkt. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/WKF_Technical_workflows_About_technical_workflows.html)
 
@@ -311,7 +323,7 @@ De sectie [E-mailarchivering](https://docs.campaign.adobe.com/doc/AC/en/INS_Addi
 
 Er is een gebruiksgeval toegevoegd aan de handleiding Automating with Workflows: Persoonlijke waarschuwingen verzenden aan operatoren. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Sending_personalized_alerts_to_operators.html)
 
-De sectie &#39;Migreren naar een nieuwe versie&#39; is bijgewerkt. In de documentatie worden nu alleen de stappen beschreven voor een migratie van een oudere versie naar Adobe Campagne Classic v7, omdat migratie naar Adobe Campaign v6.11 niet meer mogelijk is. Meer [informatie](https://docs.campaign.adobe.com/doc/AC/en/MIG_Migration_overview_About_migration.html)
+De sectie &#39;Migreren naar een nieuwe versie&#39; is bijgewerkt. In de documentatie worden nu alleen de stappen beschreven voor een migratie van een oudere versie naar Adobe Campagne Classic v7, omdat migratie naar Adobe Campaign v6.11 niet meer mogelijk is. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/MIG_Migration_overview_About_migration.html)
 
 De sectie &quot;Retries after a delivery temporary failure&quot; is verduidelijkt. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_delivery_failures.html#Retries_after_a_delivery_temporary_failure)
 
