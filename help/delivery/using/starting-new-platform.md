@@ -13,25 +13,37 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 68756f920fbc8658cff552615adbf023b4c5e3aa
+source-git-commit: a1192bc804e752d13af869da66ba0505c077ed19
+workflow-type: tm+mt
+source-wordcount: '489'
+ht-degree: 0%
 
 ---
 
 
 # Een nieuw platform starten {#starting-new-platform}
 
-Het handhaven van uw domein en IP adresreputatie is essentieel. Hieronder vindt u een advies voor het instellen van een nieuw platform.
+Het handhaven van uw domein en IP adresreputatie is essentieel wanneer vestiging een nieuw platform.
 
-Het beginnen om e-mails op een nieuw platform te verzenden is een gevoelige stap omdat het platform geen geschiedenis van gebruik en geen reputatie heeft (wanneer de verzendende IPs nooit voor dit doel zijn gebruikt). ISPs is natuurlijk verdacht van IP adressen die nooit zijn gebruikt om e-mail te verzenden en die plotseling beginnen grote volumes van e-mailverkeer te verzenden. In feite, gebruiken spammers over het algemeen &quot;onbekende&quot;IP adressen (d.w.z. adressen die nooit op de zwarte lijst zijn gezet) om het grootste mogelijke aantal berichten vóór opsporing te verzenden.
+* Het verzenden van e-mails is een gevoelige stap omdat het platform geen geschiedenis van gebruik heeft en, wanneer de verzendende IP&#39;s nooit voor dit doel zijn gebruikt, geen reputatie.
 
-Je kunt niet verwachten dat je aan het begin van de productiefase een operationele snelheid bereikt in termen van productie. Bovendien zou u niet moeten proberen om berichten aan dit tarief te verzenden aangezien het ISPs zou kunnen leiden om de verzendende adressen te blokkeren en de rest van de aanloopfase ernstig te compromitteren.
+* ISPs is natuurlijk verdacht van IP adressen die nooit zijn gebruikt om e-mail te verzenden en die plotseling beginnen grote volumes van e-mailverkeer te verzenden. Spammers gebruiken doorgaans &quot;onbekende&quot; IP-adressen (adressen die nog nooit op de zwarte lijst staan) om het grootst mogelijke aantal berichten vóór detectie te verzenden.
 
-Het beginnen van een platform gebeurt vaak wanneer het gebruiken van een lijst van adressen voor het eerst en die niet volledig gekwalificeerd kunnen zijn. Als u naar ongeldige adressen verzendt of naar honeypot-adressen, zal dit bijdragen aan het verminderen van de reputatie van het platform. Als u een lijst van ongeldige adressen hebt, is het in uw beste belang om het in de quarantainetabel (**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**) in te voeren alvorens voor het eerst te verzenden. Als, allen het zelfde, u wenst om de ongeldige adressen opnieuw te kwalificeren, is het verreweg verkieslijk om dit te doen zodra de reputatie van het platform en beetje door beetje wordt gevestigd om het gebruik van slechte adressen in tijd &quot;te &quot;verwateren&quot;.
+* Je kunt niet verwachten dat je aan het begin van de productiefase een operationele snelheid bereikt in termen van productie. Bovendien zou u niet moeten proberen om berichten aan dit tarief te verzenden aangezien het ISPs zou kunnen leiden om de verzendende adressen te blokkeren en de rest van de aanloopfase ernstig te compromitteren.
 
-Een overzicht geven van de beginselen die bij het opstarten moeten worden gevolgd:
+Hieronder staan de belangrijkste beginselen die moeten worden gevolgd bij het opstarten van een nieuw platform:
 
-* Ongeldige adressen importeren in de quarantainetabel (als u deze informatie hebt)
-* De doorvoersnelheid beperken (technische instelling: beperking van het aantal tapijten)
-* De verzonden volumes geleidelijk verhogen: Wijs niet de volledige database vanaf het allereerste begin aan, maar voeg een extra fractie van de lijst toe telkens wanneer u verzendt; dit zou u moeten toelaten om het volume bij elke stap te verhogen terwijl het verminderen van het algemene tarief van ongeldige adressen
-* Regelmatig verzenden: Tot op zekere hoogte is het beter regelmatig kleine opnamen te sturen dan sporadisch grote campagnes
-* Nauwe aandacht besteden aan de leveringsrapporten: hoge foutenindicatoren kunnen betekenen een technische instelling slecht gevormd is.
+* Als u deze informatie hebt, **importeert u ongeldige adressen in de quarantainetabel**.
+Het beginnen van een platform gebeurt vaak wanneer het gebruiken van een lijst van adressen voor het eerst en die niet volledig gekwalificeerd kunnen zijn. Als u naar ongeldige adressen of naar honingpotadressen verzendt, zal dit tot het verminderen van de reputatie van het platform bijdragen.
+
+   * Als u een lijst van ongeldige adressen hebt, is het in uw beste belang om het in de quarantainetabel (beschikbaar door het **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** menu) in te voeren alvorens voor het eerst te verzenden.
+   * Als, allen het zelfde, u wenst om de ongeldige adressen opnieuw te kwalificeren, is het verreweg verkieslijk om dit te doen zodra de reputatie van het platform en beetje door beetje wordt gevestigd om het gebruik van slechte adressen in tijd &quot;te &quot;verwateren&quot;.
+   Voor meer op dit, zie het [Optimaliseren van uw levering door quarantines](../../delivery/using/understanding-quarantine-management.md#optimizing-your-delivery-through-quarantines).
+* **Beperk de productiesnelheid** door het aantal tapes te beperken. Neem voor meer informatie over het aanpassen van deze technische instelling contact op met de beheerder van de Adobe-campagne.
+* **De verzonden** volumes progressief verhogen om te voorkomen dat ze als spam worden gemarkeerd. Wijs niet de hele database vanaf het begin aan, maar voeg een extra fractie van de lijst toe telkens als u de gegevens verzendt. Dit zou u moeten toelaten om het volume bij elke stap te verhogen terwijl het verminderen van het algemene tarief van ongeldige adressen. U kunt golven gebruiken om een vloeiende ontwikkeling van de opstartfase te garanderen. Zie [Verzenden met meerdere golven](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)voor meer informatie.
+* **Verzend regelmatig**. In zekere zin is het beter om regelmatig kleine opnamen te sturen in plaats van sporadisch grote campagnes.
+* **Let goed op de leveringsrapporten**. De hoge foutenindicatoren kunnen betekenen een technisch plaatsen slecht gevormd is. Zie [Levering](../../delivery/using/monitoring-a-delivery.md)controleren voor meer informatie.
+
+**Verwante onderwerpen**:
+* [Verhoog uw e-mailreputatie met opwarming van IP](https://helpx.adobe.com/campaign/kb/increase-email-rep-ip-warming.html)
+* [Alles over spamovervullingen](https://helpx.adobe.com/campaign/kb/spam-traps.html)
