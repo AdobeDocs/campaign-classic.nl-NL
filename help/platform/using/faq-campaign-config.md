@@ -14,7 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c5a9823b2feb6e2f721a2ad15dc08c1abe672054
+source-git-commit: 928c2d944bb9709b54a41b07e8828646f2601cb9
+workflow-type: tm+mt
+source-wordcount: '759'
+ht-degree: 0%
 
 ---
 
@@ -45,9 +48,9 @@ Als deskundige gebruiker, kunt u het volgen mogelijkheden op uw instantie van de
 
 ## Hoe te om e-mailleverbaarheid te vormen? {#how-to-configure-email-deliverability-}
 
-Naast de gids [over de](https://docs.adobe.com/content/help/en/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html)draagbaarheid waarmee u aan de slag gaat, leest u de sectie over de configuratie van de e-mailleverbaarheid voor meer informatie over de manier waarop u uw exemplaar kunt configureren om de capaciteit voor het leveren van campagnes te maximaliseren.
+Naast de sectie van de configuratie [van de](../../delivery/using/about-deliverability.md#configuration) Leverbaarheid, lees de leverbaarheid technische aanbevelingen om te begrijpen hoe te om uw instantie te vormen om Campagne te maximaliseren leverend mogelijkheden.
 
-[Klik hier voor meer](../../installation/using/email-deliverability.md)informatie.
+[Klik hier voor meer](../../delivery/using/technical-recommendations.md)informatie.
 
 ## Hoe kan ik inhoudsgoedkeuring implementeren? {#how-can-i-implement-content-approval-}
 
@@ -105,7 +108,7 @@ Als u problemen hebt, zoals de nieuwe logo&#39;s die correct worden gereflecteer
 
 1. Verwijder deze XML-bestanden en de bijbehorende mappen.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Verwijder het bestand nlclient_cnx.xml niet.
 
