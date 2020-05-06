@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: edb99a13d8b2f39f991e8ceb6718291d92504242
+source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+workflow-type: tm+mt
+source-wordcount: '980'
+ht-degree: 0%
 
 ---
 
@@ -28,11 +31,11 @@ source-git-commit: edb99a13d8b2f39f991e8ceb6718291d92504242
 
 ## Overzicht {#overview}
 
-SpamAssassin is software die is ontworpen om ongewenste e-mails te filteren. In combinatie met deze software, kan de Campagne van Adobe een score aan e-mail toewijzen en bepalen of een bericht waarschijnlijk als ongewenst zal worden beschouwd alvorens de levering wordt gelanceerd. Hiervoor moet SpamAssassin op de toepassingsserver(s) van Adobe Campaign zijn geïnstalleerd en geconfigureerd en is een aantal aanvullende Perl-modules vereist om te werken.
+SpamAssassin is software die is ontworpen om ongewenste e-mails te filteren. In combinatie met deze software kan Adobe Campaign een score toewijzen aan e-mailberichten en bepalen of een bericht waarschijnlijk ongewenst wordt geacht voordat de levering wordt gestart. Hiervoor moet SpamAssassin op de toepassingsserver(s) van Adobe Campaign zijn geïnstalleerd en geconfigureerd en is een aantal aanvullende Perl-modules vereist om te werken.
 
 De plaatsing en de integratie van SpamAssassin zoals die in dit hoofdstuk wordt beschreven zijn gebaseerd op standaardsoftwareinstallatie, zoals filtreren en het scoren regels, die die door SpamAssassin zonder enige veranderingen of optimalisaties worden verstrekt. De attributie van de score en de berichtkwalificatie zijn uitsluitend gebaseerd op de configuratie van opties SpamAssassin en op het filtreren regels. De beheerders van het netwerk zijn verantwoordelijk voor het aanpassen van hen aan de behoeften van hun bedrijf.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >De kwalificatie van e-mails als ongewenst door SpamAssassin is volledig gebaseerd op filtreer- en scoreregels.
 >
@@ -66,7 +69,7 @@ Voer de volgende stappen uit als u SpamAssassin in Windows wilt installeren en c
 
    Als een Vensters Shell verschijnt en blijft voor een paar seconden worden getoond, wacht tot de installatie en de update zijn gebeëindigd, dan klik **binnengaan**.
 
-   Als de Vensters Shell niet verschijnt of niet alvorens onmiddellijk verdwijnt getoond, deze stappen volgen, tweemaal klikken het **portableShell.bat** dossier om een Vensters Shell te tonen en te controleren dat de weg van Shell aan de omslag beantwoordt waarin het **spammurin.zip** - dossier is unzipped. Als dit niet het geval is, toegang het gebruikend het **cd** bevel.
+   Als de Vensters Shell niet verschijnt of niet alvorens onmiddellijk verdwijnt getoond, deze stappen volgen, tweemaal klikken het **portableShell.bat** dossier om een Vensters Shell te tonen en te controleren dat de weg van Shell aan de omslag beantwoordt waarin het **spammurin.zip** dossier is unzipped. Als dit niet het geval is, toegang het gebruikend het **cd** bevel.
 
    Voer **run_me.bat** in en klik vervolgens op **Enter** om het installatie- en updateproces te starten. De bewerking retourneert een van de volgende waarden om het resultaat van de update aan te geven.
 
@@ -128,7 +131,7 @@ Voer de volgende stappen uit als u SpamAssassin in Windows wilt installeren en c
 
    De inhoud van deze test-e-mail activeert 1.000 punten die door SpamAssassin zijn toegewezen. Dit betekent dat het als ongewenst is gedetecteerd en dat de integratie in Adobe Campaign is gelukt en volledig functioneel is.
 
-1. Het filtreren en het scoren van SpamAssassin van de update
+1. Het filtreren en het scoring regels van SpamAssassin bijwerken
 
    Voor een eerste update van het filtreren en het schrapen van regels, begin **portableShell.bat** en stel het volgende bevel in werking:
 
