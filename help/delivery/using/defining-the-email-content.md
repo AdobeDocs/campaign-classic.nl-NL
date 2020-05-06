@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+workflow-type: tm+mt
+source-wordcount: '2800'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +41,7 @@ Raadpleeg de sectie [Over personalisatie](../../delivery/using/about-personaliza
 >* Adobe Campagne controleert de syntaxis van e-mailadressen ingegaan.
 
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >In de context van de controles die door de Leveranciers van de Toegang van Internet (ISPs) worden uitgevoerd om ongevraagde e-mail (spam) te bestrijden, adviseert Adobe het creëren van e-mailrekeningen die aan de adressen beantwoorden die voor leveringen en antwoorden worden gespecificeerd. Vraag de beheerder van het berichtensysteem om advies.
 
@@ -46,7 +49,7 @@ Raadpleeg de sectie [Over personalisatie](../../delivery/using/about-personaliza
 
 Het onderwerp van het bericht wordt gevormd op het overeenkomstige gebied. U kunt het rechtstreeks in het veld invoeren of op de **[!UICONTROL Subject]** koppeling klikken om een script in te voeren. Met de koppeling voor personalisatie kunt u databasevelden in het onderwerp invoegen.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Het onderwerp van het bericht is verplicht.
 
@@ -62,7 +65,7 @@ In het bovenstaande bericht is het onderwerp van het bericht bijvoorbeeld gepers
 
 ## Berichtinhoud {#message-content}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om privacyredenen raden we u aan HTTPS te gebruiken voor alle externe bronnen.
 
@@ -74,7 +77,7 @@ Berichten worden standaard in HTML- of tekstindeling verzonden, afhankelijk van 
 
    Als u de [Digital Content Editor](../../web/using/about-campaign-html-editor.md) (DCE) gebruikt, raadpleegt u [Een inhoudssjabloon](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content)selecteren.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >De HTML-inhoud moet vooraf worden gemaakt en vervolgens worden geïmporteerd in Adobe Campaign. De HTML-editor is niet ontworpen voor het maken van inhoud.
 
@@ -128,7 +131,7 @@ Selecteer de indeling van de e-mail in de onderste sectie van het venster:
 
    Het bericht bevat beide indelingen: tekst en HTML. Het formaat dat op ontvangst wordt getoond hangt van de configuratie van de postsoftware van de ontvanger (multipart-alternatief) af.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Deze optie omvat beide versies van het document. Het heeft daarom invloed op de leveringstarieven, omdat de berichtgrootte groter is.
 
@@ -169,7 +172,7 @@ Afbeeldingen kunnen:
 
 * Een middel dat wordt gedeeld met Adobe Experience Cloud. Zie [deze sectie](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Als u afbeeldingen in de e-mailberichten wilt opnemen met de wizard voor levering, moet de Adobe Campagne-instantie zo zijn geconfigureerd dat het beheer van openbare bronnen is ingeschakeld. Deze procedure kan van de plaatsingstovenaar worden uitgevoerd. Raadpleeg de [volgende sectie](../../installation/using/deploying-an-instance.md) voor meer informatie over de configuratie.
 
@@ -194,7 +197,7 @@ Wanneer u HTML-inhoud met opgenomen afbeeldingen opent in de wizard voor leverin
 
 ![](assets/s_ncs_user_email_del_img_local.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >De toegangspaden voor afbeeldingen worden gewijzigd tijdens het handmatig uploaden of tijdens het verzenden van berichten.
 
@@ -360,7 +363,7 @@ Als u op het **[!UICONTROL Preview]** tabblad van het venster voor het bewerken 
 
 Naast de diagnose van de voorvertoning wordt een tweede controle uitgevoerd bij de verzending van een bewijs of een levering: tijdens de analyse wordt een specifieke typologieregel **[!UICONTROL Deco-mail check]** opgestart .
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Deze typologieregel wordt alleen uitgevoerd als ten minste een van de ontvangers is geconfigureerd voor het ontvangen van e-mails in **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** of **[!UICONTROL Decoration Mail (KDDI AU)]** -indeling.
 
@@ -397,6 +400,6 @@ Wanneer de indelingen in Adobe Campagne dynamisch worden beheerd volgens het dom
 
 Het berichtcontact zal correct voor de gebruikers op Japanse mobiele telefoons, enkel zoals voor de standaardontvangers tonen.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
->Let erop dat u de speciale functies respecteert die aan elke Japanse e-mailindeling (Deco-mail, Decoration Mail en Decoration Mail) zijn gekoppeld. Zie [deze sectie](#limitations-and-recommendations)voor meer informatie over beperkingen.
+>Let erop dat u de speciale functies respecteert die aan elke Japanse e-mailindeling (Deco-mail, Decoration Mail en Decoration Mail) zijn gekoppeld. For more information on limitations, refer to [this section](#limitations-and-recommendations).
