@@ -13,14 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
+source-git-commit: e329ee546a3990850daeb7a46ee9de77fd075ff1
+workflow-type: tm+mt
+source-wordcount: '1411'
+ht-degree: 0%
 
 ---
 
 
 # Laatste release{#latest-release}
 
-[Upgrade](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) maken| [Release](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) van het regelpaneel| [Documentatie-updates](../../rn/using/documentation-updates.md) | [Eerdere versies](../../rn/using/release--19-2.md) | [Verouderde kenmerken](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+[Upgrade maken](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Release van het regelpaneel](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Documentatie-updates](../../rn/using/documentation-updates.md) | [Eerdere introducties](../../rn/using/release--19-2.md) | [Verouderde kenmerken](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
 <table> 
  <tbody> 
@@ -41,7 +44,13 @@ source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
 
 De **laatste stabiele build** is 9032 (3a9dc9c). Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/do-not-localize/blue_2.png) Release 20.1.2 - build 9123 {#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/blue_2.png) Release 20.1.3 - build 9124 {#release-20-1-3-build-9124}
+
+_6 mei 2020_
+
+* Probleem verholpen met de **bestandsoverdrachtactiviteit** waardoor verificatie op basis van SFTP-sleutels niet kon werken op Debian 9. (NEO-23183)
+
+## ![](assets/do-not-localize/orange_2.png) Release 20.1.2 - build 9123 {#release-20-1-2-build-9123}
 
 _13 maart 2020_
 
