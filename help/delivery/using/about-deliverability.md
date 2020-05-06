@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 68756f920fbc8658cff552615adbf023b4c5e3aa
+source-git-commit: c687c8ad19560d4181c2db52a91e096cceea705e
+workflow-type: tm+mt
+source-wordcount: '460'
+ht-degree: 0%
 
 ---
 
@@ -47,4 +50,4 @@ Wat is precies e-mailleverbaarheid? En hoe kunnen marketeers de leveringspercent
 
 De e-mailleverbaarheid verwijst naar de reeks kenmerken die bepalen of een bericht zijn bestemming, via een persoonlijk e-mailadres, binnen een korte tijd, en met de verwachte kwaliteit in termen van inhoud en formaat kan bereiken. Deze kenmerken vallen in vier hoofdcategorieën: gegevenskwaliteit, bericht en inhoud, verzendende infrastructuur, en reputatie. Samen vormen ze de basis voor een succesvol e-mailprogramma. In dit overzicht worden de vier basisprincipes van het succes van e-maillevering beschreven en worden de beste praktijken geboden voor het bereiken van de Postvak IN en het aansturen van meer inkomsten uit marketingprogramma&#39;s voor e-mail.
 
-![](assets/deliverability_overview_2.png)
+<!--![](assets/deliverability_overview_2.png)-->
