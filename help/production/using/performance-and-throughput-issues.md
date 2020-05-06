@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
+source-git-commit: d80e3d47b06b7a03974d9cfdd465861b3c5bcf81
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +39,7 @@ Het raadplegende team kan ontvangen klanten een hulpmiddel verstrekken dat u toe
 * Controleer de tabellen die het maximale bloat hebben. Als deze tabellen vaak worden gebruikt, moeten ze worden opgevuld.
 * Door databaseblokkering kunnen e-mails niet meer worden verzonden.
 
-Adobe Campaign beschikt ook over een [programma](../../production/using/monitoring-processes.md#manual-monitoring) om het CPU- en RAM-verbruik te controleren. Gebruik dit hulpmiddel en bekijk specifieke indicatoren zoals: **Geheugen**, **Wisselend Geheugen**, **Schijf**, **Actieve Processen**. Als de waarden te hoog zijn, kunt u proberen het aantal werkstromen te verminderen of werkschema&#39;s plannen om op verschillende tijden te beginnen.
+Adobe Campaign beschikt ook over een [programma](../../production/using/monitoring-processes.md#manual-monitoring) om het CPU- en RAM-verbruik te controleren. Gebruik dit hulpmiddel en bekijk specifieke indicatoren zoals: **Geheugen**, **Geheugen** wisselen, **Schijf**, **Actieve Processen**. Als de waarden te hoog zijn, kunt u proberen het aantal werkstromen te verminderen of werkschema&#39;s plannen om op verschillende tijden te beginnen.
 
 ## Databaseprestaties {#database-performances}
 
@@ -49,7 +52,7 @@ Meestal zijn prestatieproblemen gekoppeld aan databaseonderhoud. Hier volgen de 
 
 >[!NOTE]
 >
->Zie deze sectie voor meer informatie: Prestaties van [databases](../../production/using/database-performances.md).
+>Zie deze sectie voor meer informatie: [Databaseprestaties](../../production/using/database-performances.md).
 
 ## Toepassingsconfiguratie {#application-configuration}
 
@@ -63,7 +66,7 @@ Hier volgt een lijst met artikelen die betrekking hebben op de aanbevolen werkwi
 
 Hier volgt een lijst met best practices en artikelen met betrekking tot de te leveren items:
 
-* IP-reputatie: als de IP reputatie niet goed genoeg is, zal er een effect op prestaties zijn. De module **Leverbaarheidscontrole** biedt verschillende tools om de prestaties van uw platform bij te houden. Zie deze [pagina](../../delivery/using/technical-monitoring.md).
+* IP-reputatie: als de IP reputatie niet goed genoeg is, zal er een effect op prestaties zijn. De module **Leverbaarheidscontrole** biedt verschillende tools om de prestaties van uw platform bij te houden. Zie deze [pagina](../../delivery/using/monitoring-deliverability.md).
 * Opwarmen IP: IP warm-up wordt uitgevoerd door het leveringsteam. Dit houdt in dat het aantal e-mails over een periode van een paar weken geleidelijk wordt verhoogd via nieuwe IP&#39;s.
 * Instellen IP-affiniteit: Een onjuiste IP affiniteitopstelling kan de e-mail volledig tegenhouden (onjuiste exploitant/affiniteitsnaam in configuratie) of de productie (klein aantal IPs in de affiniteit) verminderen. Zie deze [pagina](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
 * E-mailformaat: De e-mailgrootte speelt een belangrijke rol in productie. De aanbevolen maximale e-mailgrootte is 60 kB. Zie deze [pagina](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Controleer in het rapport [Leveringsdoorvoer](../../reporting/using/delivery-reports.md#delivery-throughput) het aantal bytes dat per uur is overgedragen.
