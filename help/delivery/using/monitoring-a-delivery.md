@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
+source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+workflow-type: tm+mt
+source-wordcount: '2602'
+ht-degree: 0%
 
 ---
 
@@ -24,12 +27,12 @@ source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
 
 Het **leveringsdashboard** is essentieel om uw leveringen en eventuele problemen te controleren die tijdens het verzenden van berichten worden ondervonden.
 
-**Verwante onderwerpen**
+**Verwante onderwerpen:**
 
 * [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
 * [Werken met quarantainebeheer](../../delivery/using/understanding-quarantine-management.md)
-* [Best practices voor levering](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
-* [Aan de slag: Te leveren items beheren](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html)
+* [Best practices voor levering](https://helpx.adobe.com/campaign/kb/delivery-best-practices.html)
+* [Te leveren items beheren](../../delivery/using/about-deliverability.md)
 
 ## Delivery dashboard {#delivery-dashboard}
 
@@ -43,7 +46,7 @@ De tabinhoud kan niet meer worden gewijzigd nadat de levering is verzonden.
 
 Het **[!UICONTROL Summary]** tabblad bevat de kenmerken van de levering: leveringsstatus, gebruikt kanaal, informatie over de afzender, onderwerp, informatie over uitvoering. Raadpleeg voor meer informatie het [aantal verzonden](#number-of-messages-sent)berichten.
 
-Met de **[!UICONTROL reports]** koppeling kunt u een set rapporten bekijken over de leveringsactie: algemeen leveringsrapport, gedetailleerd rapport, leveringsrapport, verspreiding van mislukte berichten, openingsfrequentie, klikken en transacties, enz. De inhoud van dit lusje kan volgens uw vereisten worden gevormd. Zie [deze sectie](../../reporting/using/delivery-reports.md)voor meer informatie.
+Met de **[!UICONTROL reports]** koppeling kunt u een set rapporten bekijken over de leveringsactie: algemeen leveringsrapport, gedetailleerd rapport, leveringsrapport, verspreiding van mislukte berichten, openingsfrequentie, klikken en transacties, enz. De inhoud van dit lusje kan volgens uw vereisten worden gevormd. For more information, refer to [this section](../../reporting/using/delivery-reports.md).
 
 ### Leveringslogboeken en geschiedenis {#delivery-logs-and-history}
 
@@ -96,7 +99,7 @@ Sommige indicatoren of status kunnen onjuist of niet bijgewerkt zijn, dit kan me
 * Als uw leveringsteller niet overeenkomt met uw levering, probeert u de indicatoren opnieuw te berekenen door met de rechtermuisknop op de desbetreffende levering te klikken in de Adobe Campagneverkenner en **[!UICONTROL Actions]** > te selecteren **[!UICONTROL Recompute delivery and tracking indicators]** om opnieuw te synchroniseren. Raadpleeg deze [sectie](../../reporting/using/delivery-reports.md#tracking-indicators)voor meer informatie over trackingindicatoren.
 * Als uw leveringsteller niet bijgewerkt is voor midsourcingimplementaties, controleert u of de **[!UICONTROL Mid-Sourcing (Delivery counters)]** technische workflow actief is. Raadpleeg deze [pagina](../../installation/using/mid-sourcing-deployment.md)voor meer informatie.
 
-U kunt uw leveringen ook bijhouden met verschillende rapporten via het leveringsdashboard. Zie deze [sectie](../../reporting/using/delivery-reports.md)voor meer informatie.
+U kunt uw leveringen ook bijhouden met verschillende rapporten via het leveringsdashboard. For more on this, refer to this [section](../../reporting/using/delivery-reports.md).
 
 ## Prestatieproblemen {#performance-issues}
 
@@ -108,13 +111,13 @@ Als de leveringsprestaties slecht zijn, kunt u controleren:
 * **Het doel van de levering**: Het verbod op leveringsprestaties wordt beïnvloed door zachte stuiterfouten, die worden afgehandeld volgens de configuratie voor opnieuw proberen. Hoe groter het aantal fouten, hoe meer pogingen nodig zijn.
 * **De totale platformbelasting**: Wanneer meerdere grote leveringen worden verzonden, kan dit gevolgen hebben voor het hele platform. U kunt IP reputatie en leveringsproblemen ook controleren. Raadpleeg voor meer informatie de handleiding [over de beste praktijken bij de](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) uitvoering van Adobe Campagne en [deze pagina](../../delivery/using/about-deliverability.md).
 
-Het onderhoud van platforms en databases kan ook van invloed zijn op de verzendprestaties van de levering. Raadpleeg [deze pagina](../../production/using/database-performances.md)voor meer informatie.
+Het onderhoud van platforms en databases kan ook van invloed zijn op de verzendprestaties van de levering. For more on this, refer to [this page](../../production/using/database-performances.md).
 
 ### Trage leveringen {#slow-deliveries}
 
 Nadat je op de **[!UICONTROL Send]** button hebt geklikt, lijkt het langer te duren voordat je levering is uitgevoerd. Dit kan worden veroorzaakt door verschillende elementen:
 
-* Sommige e-mailproviders hebben uw IP-adressen mogelijk op de zwarte lijst gezet. In dit geval, controleer uw uitzendingen en raadpleeg [dit begonnen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) worden.
+* Sommige e-mailproviders hebben uw IP-adressen mogelijk op de zwarte lijst gezet. In dit geval, controleer uw uitzendingen en raadpleeg [dit aan de slag](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) .
 * Uw levering is mogelijk te groot om snel te worden verwerkt, dit kan gebeuren met een hoge mate van personalisatie in JavaScript of als uw levering meer dan 60 kbytes weegt. Raadpleeg de best practices [van Adobe Campagne](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) Delivery voor meer informatie over de richtlijnen voor inhoud.
 * Throttling zou binnen de Campagne MTA van Adobe kunnen voorgekomen zijn. Dit wordt veroorzaakt door:
 
@@ -232,7 +235,7 @@ Als de levering niet wordt verzonden en de status van de levering blijft behoude
    >
    >Vervangen `<INSTANCENAME>` door de naam van uw instantie (productie, ontwikkeling, enz.). De instantienaam wordt geïdentificeerd via de configuratiebestanden: `[path of application]nl6/conf/config-<INSTANCENAME>.xml`
 
-* De levering kan een affiniteit gebruiken die niet op de verzendende server wordt gevormd. In dit geval, controleer de configuratie van het verkeersbeheer (IP affiniteit) en gebruik het **[!UICONTROL Managing affinities with IP addresses]** gebied om leveringen aan MTA te verbinden die de affiniteit beheert. Zie [deze rubriek](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)voor meer informatie over affiniteiten.
+* De levering kan een affiniteit gebruiken die niet op de verzendende server wordt gevormd. In dit geval, controleer de configuratie van het verkeersbeheer (IP affiniteit) en gebruik het **[!UICONTROL Managing affinities with IP addresses]** gebied om leveringen aan MTA te verbinden die de affiniteit beheert. For more information on affinities, refer to [this section](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 * Wanneer de voorbereiding van de levering in behandeling is, kunnen er te veel campagnes lopen, die de statusupdate van de levering blokkeerden. Om dit op te lossen, ga naar **[!UICONTROL Options]** en verhoog de waarde van **[!UICONTROL NmsOperation_LimitConcurrency]** (gebrek is 10). Voer niet meer campagnes uit dan de waarde die aan deze specifieke optie is toegewezen.
 
 ### Mislukte status {#failed-status}
@@ -241,11 +244,11 @@ Als de status van een e-maillevering is **[!UICONTROL Failed]**, kan deze worden
 
 De logboeken van de levering zijn zeer belangrijk om te leren waarom een levering ontbrak. Hier zijn mogelijke fouten die u van leveringslogboeken kunt ontdekken:
 
-* Als de ontvankelijke berichten met een &quot;Onbereikbare&quot;fout die ontbreken verklaart: Fout bij **compileren van script &#39;content htmlContent&#39; regel X: is`[table]`niet gedefinieerd. JavaScript: fout terwijl het evalueren van manuscript &#39;content htmlContent**, is de oorzaak van deze kwestie bijna altijd een verpersoonlijking binnen HTML die op een lijst of een gebied probeert te roepen dat niet is bepaald of in kaart gebracht in het stroomopwaartse richten of in de het doelafbeelding van de levering.
+* Als de ontvankelijke berichten met een &quot;Onbereikbare&quot;fout die ontbreken verklaart: **Fout bij compileren van script &#39;content htmlContent&#39; regel X:`[table]`is niet gedefinieerd. JavaScript: fout terwijl het evalueren van manuscript &#39;content htmlContent**, is de oorzaak van deze kwestie bijna altijd een verpersoonlijking binnen HTML die op een lijst of een gebied probeert te roepen dat niet is bepaald of in kaart gebracht in het stroomopwaartse richten of in de het doelafbeelding van de levering.
 
    Om dit te verbeteren, moeten de werkschema en leveringsinhoud worden herzien om specifiek te bepalen welke verpersoonlijking probeert om de lijst in kwestie te roepen en of de lijst of niet kan worden in kaart gebracht. Van daar, of het verwijderen van de vraag aan deze lijst in HTML of het bevestigen van de afbeelding aan de levering zou de weg aan resolutie zijn.
 
-* In het midsourcingimplementatiemodel kan het volgende bericht worden weergegeven in de leveringslogboeken: **Fout tijdens het aanroepen van methode &#39;AppendDeliveryPart&#39; op de server voor midsourcing: &#39;Communicatiefout met de server: Controleer of deze correct is geconfigureerd. Code HTTP 408 &#39;Service tijdelijk niet beschikbaar&#39;**.
+* In het midsourcingimplementatiemodel kan het volgende bericht worden weergegeven in de leveringslogboeken: **Fout tijdens het aanroepen van methode &#39;AppendDeliveryPart&#39; op de server voor medio-sourcing: &#39;Communicatiefout met de server: Controleer of deze correct is geconfigureerd. Code HTTP 408 &#39;Service tijdelijk niet beschikbaar&#39;**.
 
    De oorzaak hangt samen met prestatieproblemen. Het betekent dat de marketinginstantie te veel tijd besteedt aan het samenstellen van gegevens voordat ze deze naar de server voor midsourcing verzenden.
 
@@ -253,11 +256,11 @@ De logboeken van de levering zijn zeer belangrijk om te leren waarom een leverin
 
    U moet ook alle werkstromen met een geplande activiteit opnieuw beginnen, en alle werkschema&#39;s in ontbroken status. Zie [deze sectie](../../workflow/using/scheduler.md).
 
-* Wanneer een levering mislukt, kan de volgende fout in de leveringslogboeken verschijnen: **DLV-XXXX Het aantal voorbereid bericht (123) is groter dan het aantal te verzenden berichten (111). Neem contact op met de technische ondersteuning.**
+* Wanneer een levering mislukt, kan de volgende fout in de leveringslogboeken verschijnen: **DLV-XXXX het aantal voorbereid bericht (123) is groter dan het aantal te verzenden berichten (111). Neem contact op met de technische ondersteuning.**
 
    Gewoonlijk betekent deze fout dat er een verpersoonlijkingsgebied of een blok binnen e-mail is dat meer dan één waarden voor de ontvanger heeft. Er wordt een verpersoonlijkingsblok gebruikt en het haalt meer dan één record op voor een bepaalde ontvanger.
 
-   Om dit op te lossen, controleer de gebruikte verpersoonlijkingsgegevens, en controleer dan het doel voor ontvangers die meer dan één ingang voor om het even welk van die gebieden hebben. U kunt een **[!UICONTROL Deduplication]** activiteit in het richten werkschema vóór de leveringsactiviteit ook gebruiken om te controleren er slechts één verpersoonlijkingsgebied tegelijkertijd is. Raadpleeg [deze pagina](../../workflow/using/deduplication.md)voor meer informatie over deduplicatie.
+   Om dit op te lossen, controleer de gebruikte verpersoonlijkingsgegevens, en controleer dan het doel voor ontvangers die meer dan één ingang voor om het even welk van die gebieden hebben. U kunt ook een **[!UICONTROL Deduplication]** activiteit in het richten werkschema voorafgaand aan de leveringsactiviteit gebruiken om te controleren er slechts één verpersoonlijkingsgebied tegelijkertijd is. Raadpleeg [deze pagina](../../workflow/using/deduplication.md)voor meer informatie over deduplicatie.
 
 * Sommige levering kan mislukken met een &quot;Onbereikbare&quot;fout die verklaart: &quot;Binnenkomende e-mailstuit (regel &#39;Auto_responses&#39; komt overeen met deze stuit). Dit betekent dat de levering is gelukt, maar dat Adobe Campagne een automatisch antwoord van de ontvanger heeft ontvangen (bijvoorbeeld een antwoord &quot;Buiten-kantoor&quot;) dat overeenkwam met de regels voor inkomende e-mail &quot;Auto_responses&quot;. Het e-mailbericht waarin automatisch wordt gereageerd, wordt genegeerd door Adobe Campaign en het adres van de ontvanger wordt niet verzonden naar quarantines.
 
@@ -274,8 +277,8 @@ U kunt tot leveringen van de leveringslijst, via de **[!UICONTROL Campaign Manag
 Standaard bevat de lijst met leveringen de namen en statussen van de leveringen die in het geselecteerde knooppunt zijn gemaakt. Het toont ook het aantal berichten om te verzenden, te verwerken en met succes te verzenden.
 
 * Het aantal ontvangers **[!UICONTROL Messages to send]** komt overeen met het aantal ontvangers dat na analyse en vóór levering wordt gevaccineerd.
-* Het aantal berichten in de **[!UICONTROL success]** kolom komt overeen met het aantal berichten dat door de server wordt verzonden en door de ontvangers wordt ontvangen.
-* Het aantal **[!UICONTROL processed]** berichten komt overeen met het aantal ontvangen berichten plus het aantal berichten met fouten.
+* Het aantal berichten in de **[!UICONTROL Success]** kolom komt overeen met het aantal berichten dat door de server wordt verzonden en door de ontvangers wordt ontvangen.
+* Het aantal **[!UICONTROL Processed]** berichten komt overeen met het aantal ontvangen berichten plus het aantal berichten met fouten.
 
 Het leveringsdashboard laat u het aantal verzonden berichten volgen.
 
