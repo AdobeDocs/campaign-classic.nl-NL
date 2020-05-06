@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: 5f73f6bc4cbc00c1b4e2f2a75e27a3056b517006
+workflow-type: tm+mt
+source-wordcount: '2433'
+ht-degree: 0%
 
 ---
 
@@ -78,12 +81,6 @@ DKIM komt uit een combinatie DomainKeys, Yahoo! en Cisco identificeerde de authe
 
 DKIM heeft **DomainKeys** -verificatie vervangen.
 
->[!IMPORTANT]
->
->Voor gehoste of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, wordt de e-mailauthentificatie DKIM ondertekend door Verbeterde MTA. DKIM-signing door de native Campagne MTA zal binnen de **[!UICONTROL Domain management]** lijst als deel van de Verbeterde verbetering MTA worden uitgezet.
->
->Raadpleeg dit [document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagne.
-
 Voor het gebruik van DKIM zijn enkele voorwaarden vereist:
 
 * **Beveiliging**: encryptie is een zeer belangrijk element van DKIM en om het veiligheidsniveau van DKIM sinds het voorjaar 2013 te verzekeren, is 1024b de Beste praktijken geadviseerde encryptiegrootte. De lagere sleutels DKIM zullen niet als geldig door de meerderheid van toegangsleveranciers worden beschouwd.
@@ -92,10 +89,14 @@ Voor het gebruik van DKIM zijn enkele voorwaarden vereist:
 
 >[!NOTE]
 >
->* Als u DomainKeys voor uw instantie van de Campagne van Adobe hebt gevormd, moet u enkel **dkim** in de domein behandelende regels selecteren. Indien niet, volg de zelfde configuratiestappen (privé/openbare sleutel) zoals voor DomainKeys.
+>* Als u DomainKeys voor uw instantie van de Campagne van Adobe hebt gevormd, moet u enkel **dkim** in de regels [van het](../../delivery/using/understanding-delivery-failures.md#domain-management)Domeinbeheer selecteren. Indien niet, volg de zelfde configuratiestappen (privé/openbare sleutel) zoals voor DomainKeys.
 >* Het is niet noodzakelijk om zowel DomainKeys als DKIM voor het zelfde domein toe te laten aangezien DKIM een betere versie van DomainKeys is.
 >* De volgende domeinen valideren momenteel DKIM: AOL, Gmail.
 
+
+>[!IMPORTANT]
+>
+>Voor ontvangen of hybride installaties, als u aan [Verbeterde MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)hebt bevorderd, wordt het e-mailauthentificeren DKIM gedaan door Verbeterde MTA voor alle berichten met alle domeinen.
 
 ### DMARC {#dmarc}
 
