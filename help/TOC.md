@@ -5,7 +5,10 @@ index: y
 product: adobe campaign
 sub-product: adobe campagne classic
 translation-type: tm+mt
-source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
+source-git-commit: 2ba9efa49f26559786641ff5e1caa9c481f770b2
+workflow-type: tm+mt
+source-wordcount: '2077'
+ht-degree: 0%
 
 ---
 
@@ -151,12 +154,13 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
       + [Een nieuw platform starten](delivery/using/starting-new-platform.md)
       + [Inhoud van controleberichten](delivery/using/control-message-content.md)
       + [Verbeter uw reputatie](delivery/using/improve-reputation.md)
-      + [Aanbevolen werkwijzen opnieuw inschakelen](delivery/using/re-engagement-best-practices.md)
       + [Technische aanbevelingen](delivery/using/technical-recommendations.md)
-      + [Technische controle](delivery/using/technical-monitoring.md)
+      + [Leverbaarheid controleren](delivery/using/monitoring-deliverability.md)
       + [Inbox rendering](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
+      + [Aanbevolen werkwijzen opnieuw inschakelen](delivery/using/re-engagement-best-practices.md)
       + [Databases met zwarte lijsten](delivery/using/blacklisting-databases.md)
+      + [Problemen oplossen](delivery/using/deliverability-faq.md)
    + Module voor inhoudsbeheer {#content-management}
       + [Over inhoudsbeheer](delivery/using/about-content-management.md)
       + [Middelen en beginselen voor inhoudsbeheer](delivery/using/content-manager-resources-and-principles.md)
@@ -554,26 +558,26 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
       + [Informatie over hybride en gehoste modellen](installation/using/about-hybrid-and-hosted-models.md)
       + [Hybride model](installation/using/hybrid-model.md)
       + [Gehoste model](installation/using/hosted-model.md)
-   + Vereisten en aanbevelingen {#prerequisites-and-recommendations-}
+   + Vereisten en aanbevelingen  {#prerequisites-and-recommendations-}
       + [Voordat u begint](installation/using/before-starting.md)
       + [Database](installation/using/database.md)
       + [Toepassingsserver](installation/using/application-server.md)
       + [Berichtenserver](installation/using/messaging-server.md)
       + [Netwerkconfiguratie](installation/using/network-configuration.md)
-   + Implementatietypen {#deployment-types-}
+   + Implementatietypen  {#deployment-types-}
       + [Informatie over implementatietypen](installation/using/about-deployment-types.md)
       + [Standalone-implementatie](installation/using/standalone-deployment.md)
       + [Standaardimplementatie](installation/using/standard-deployment.md)
       + [Implementatie in ondernemingen](installation/using/enterprise-deployment.md)
       + [Implementatie van midsourcing](installation/using/mid-sourcing-deployment.md)
       + [Power Booster en Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + Campagne installeren in Windows {#installing-campaign-in-windows-}
+   + Campagne installeren in Windows  {#installing-campaign-in-windows-}
       + [Vereisten voor installatie van campagne in Windows](installation/using/prerequisites-of-campaign-installation-in-windows.md)
       + [De server installeren](installation/using/installing-the-server.md)
       + [Integratie in een webserver voor Windows](installation/using/integration-into-a-web-server-for-windows.md)
       + [Beschikbaarheid van clientconsole voor Windows](installation/using/client-console-availability-for-windows.md)
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
-   + Campagne installeren in Linux {#installing-campaign-in-linux-}
+   + Campagne installeren in Linux  {#installing-campaign-in-linux-}
       + [Vereisten voor installatie van campagne in Linux](installation/using/prerequisites-of-campaign-installation-in-linux.md)
       + [Pakketten installeren met Linux](installation/using/installing-packages-with-linux.md)
       + [Integratie in een webserver voor Linux](installation/using/integration-into-a-web-server-for-linux.md)
