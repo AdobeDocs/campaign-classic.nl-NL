@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9091059b1d8431a84eb93f104dbd8e8833cb94a7
+source-git-commit: 2e82605eda5bccd2e5604614acd4cb7d646822fc
 workflow-type: tm+mt
-source-wordcount: '6488'
+source-wordcount: '6502'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,7 @@ De sectie voor het oplossen van problemen met betrekking tot levering is verplaa
 
 De sectie Een nieuw platform starten is uitgebreid. [Meer informatie](../../delivery/using/starting-new-platform.md)
 
+De sectie E-mailberichten over transacties verzenden met bijlagen is verplaatst en bijgewerkt. [Meer informatie](../../message-center/using/transactional-email-with-attachments.md)
 
 ## april 2020 {#april-2020}
 
