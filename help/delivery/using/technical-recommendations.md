@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f73f6bc4cbc00c1b4e2f2a75e27a3056b517006
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2432'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ MX-regels (Mail eXchanger) zijn de regels die de communicatie tussen een verzend
 
 Meer bepaald, worden zij gebruikt om de snelheid te controleren waarbij de Campagne MTA (de Agent van de Overdracht van het Bericht) e-mail naar elk individueel e-maildomein of ISP (b.v. hotmail.com, comcast.net) verzendt. Deze regels zijn typisch gebaseerd op grenzen die door ISPs worden gepubliceerd (bijvoorbeeld omvatten niet meer dan 20 berichten per elke verbinding SMTP).
 
-Raadpleeg de [desbetreffende sectie](../../installation/using/email-deliverability.md#mx-configuration)voor meer informatie over MX-beheer.
+For more on MX management, refer to [this section](../../installation/using/email-deliverability.md#mx-configuration).
 
 ### TLS {#tls}
 
