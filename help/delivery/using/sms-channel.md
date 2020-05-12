@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6e587747be546860c0a485b44aee79d396f25cec
+source-git-commit: 9773e8ae39133968e4e167d11715c123e00d22c2
+workflow-type: tm+mt
+source-wordcount: '3227'
+ht-degree: 0%
 
 ---
 
@@ -106,7 +109,7 @@ Hiervoor voert u de volgende stappen uit:
 
    ![](assets/extended_smpp_transliteration.png)
 
-   Zie [deze sectie](#about-character-transliteration)voor meer informatie.
+   For more on this, refer to [this section](#about-character-transliteration).
 
 1. Op het **[!UICONTROL Throughput and delays]** lusje, kunt u de maximumproductie van uitgaande berichten (&quot;MT&quot;, Mobiel geëindigd) in MT per seconde specificeren. Als u &quot;0&quot;op het overeenkomstige gebied ingaat, zal de productie onbeperkt zijn.
 
@@ -114,7 +117,7 @@ Hiervoor voert u de volgende stappen uit:
 
 1. Op het **[!UICONTROL Mapping of encodings]** tabblad kunt u coderingen definiëren.
 
-   Zie [deze sectie](#about-text-encodings)voor meer informatie.
+   For more on this, refer to [this section](#about-text-encodings).
 
 1. Op het **[!UICONTROL SMSC specificities]** tabblad is de **[!UICONTROL Send full phone number]** optie standaard uitgeschakeld. Laat het niet toe als u het protocol wilt respecteren SMPP en slechts cijfers naar de server van de leverancier van SMS (SMSC) overbrengen.
 
@@ -124,7 +127,7 @@ Hiervoor voert u de volgende stappen uit:
 
 1. Als u een **[!UICONTROL Extended generic SMPP]** schakelaar vormt, kunt u opstelling automatische antwoorden.
 
-   Zie [deze sectie](#automatic-reply)voor meer informatie.
+   For more on this, refer to [this section](#automatic-reply).
 
 ### Informatie over tekentransliteratie {#about-character-transliteration}
 
@@ -135,7 +138,7 @@ Vertaling bestaat erin een teken van een SMS door een ander te vervangen wanneer
 * Als de vertaling is **[!UICONTROL authorized]**, wordt elk karakter dat niet in aanmerking wordt genomen vervangen door een GSM karakter wanneer het bericht wordt verzonden. De letter &quot;ë&quot; wordt bijvoorbeeld vervangen door &quot;e&quot;. Het bericht is daarom enigszins gewijzigd, maar de tekenlimiet blijft ongewijzigd.
 * Wanneer transliteratie is **[!UICONTROL not authorized]**, wordt elk bericht dat karakters bevat die niet in aanmerking worden genomen verzonden in binair formaat (Unicode): alle tekens worden daarom naar behoren verzonden. De SMS-berichten met Unicode zijn echter beperkt tot 70 tekens (of 67 tekens per SMS voor berichten die in meerdere delen worden verzonden). Als het maximumaantal tekens wordt overschreden, worden verschillende berichten verzonden, wat extra kosten kan veroorzaken.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Als u personalisatievelden invoegt in de inhoud van uw SMS-bericht, worden mogelijk tekens ingevoegd waarmee de GSM-codering geen rekening houdt.
 
@@ -328,7 +331,7 @@ CR: Enter
 
 Wanneer u een SMS-bericht verzendt, kan Adobe Campaign een of meer tekstcoderingen gebruiken. Elke codering heeft een eigen specifieke tekenset en bepaalt het aantal tekens dat in een SMS-bericht past.
 
-Wanneer u een nieuwe externe account voor levering via SMPP voor mobiele apparaten configureert, kunt u deze definiëren **[!UICONTROL Mapping of encodings]** op het **[!UICONTROL Mobile]** tabblad: in het **[!UICONTROL data_coding]** veld kan Adobe Campaign meedelen welke codering wordt gebruikt voor het SMSC.
+Wanneer u een nieuwe externe account voor levering via SMPP voor mobiele apparaten configureert, kunt u deze account definiëren **[!UICONTROL Mapping of encodings]** op het **[!UICONTROL Mobile]** tabblad: in het **[!UICONTROL data_coding]** veld kan Adobe Campaign meedelen welke codering wordt gebruikt voor het SMSC.
 
 >[!NOTE]
 >
@@ -343,7 +346,7 @@ U kunt **data_codings** verklaren en het coderen dwingen indien nodig: Hiervoor 
 
 * Wanneer u de coderingen definieert die u wilt gebruiken en de gekoppelde **[!UICONTROL data_coding]** veldwaarden, probeert Adobe Campagne de eerste codering in de lijst te gebruiken. Als de eerste codering niet mogelijk blijkt, volgt u de volgende code.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >De volgorde van de verklaringen is belangrijk: U wordt aangeraden de lijst in oplopende volgorde **van kosten** te plaatsen om de coderingen te bevorderen, zodat u in elk SMS-bericht zoveel mogelijk tekens kunt plaatsen.
 >
@@ -401,7 +404,7 @@ In het onderstaande voorbeeld maken we een sjabloon voor het verzenden van beric
 
    ![](assets/s_user_mobile_template_change_02.png)
 
-1. Klik **[!UICONTROL Properties]**.
+1. Klik op **[!UICONTROL Properties]**.
 1. Op het **[!UICONTROL General]** lusje, selecteer een verpletterende wijze die aan een externe rekening beantwoordt die u, bijvoorbeeld **[!UICONTROL NetSize mobile delivery]** vormde.
 
    ![](assets/s_user_mobile_template_change_03.png)
@@ -427,7 +430,7 @@ Volg onderstaande stappen om een nieuwe SMS-levering te maken:
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. Identificeer uw levering met een etiket, code, en beschrijving. Zie [deze sectie](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery)voor meer informatie.
+1. Identificeer uw levering met een etiket, code, en beschrijving. For more on this, refer to [this section](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
 1. Klik **[!UICONTROL Continue]** om deze informatie te bevestigen en het venster van de berichtconfiguratie te tonen.
 
 ## De SMS-inhoud definiëren {#defining-the-sms-content}
@@ -491,7 +494,7 @@ De volgende opties zijn beschikbaar:
    <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Controleer de wet in je land met betrekking tot het bewerken van namen van afzenders. Vraag de operator ook of deze functionaliteit wordt aangeboden.
 
@@ -547,7 +550,7 @@ Het InSMS-schema bevat relevante informatie over inkomende SMS. Een beschrijving
 * **gemaakt**: de datum waarop het inkomende bericht in de Campagne van Adobe werd opgenomen.
 * **TextAccount**: Externe account voor Adobe Campaign.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >De volgende velden zijn specifiek voor NetSize.
    >
@@ -571,7 +574,7 @@ Als ontvangers bijvoorbeeld het trefwoord STOP verzenden, ontvangen ze automatis
 
 De afzendernaam voor dit type van bericht is een korte code gewoonlijk wordt gebruikt om leveringen te verzenden.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >De volgende gedetailleerde procedure is slechts geldig voor schakelaars SMPP, behalve de uitgebreide generische schakelaar SMPP. Raadpleeg voor meer informatie de sectie Externe [SMPP-account](#creating-an-smpp-external-account) maken.
 >
@@ -618,7 +621,7 @@ De afzendernaam voor dit type van bericht is een korte code gewoonlijk wordt geb
 
 1. Kopieer dit bestand naar de map **conf** in Adobe Campaign, op dezelfde plaats als de webserver.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Dit soort automatische berichten houden geen geschiedenis bij. Daarom worden ze niet weergegeven in het [leveringsdashboard](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
 >
