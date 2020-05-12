@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 833907c7a7b84b94a00b131738c73ff54a744a40
+source-git-commit: f4ecdab4c17a6ba8deb3b98079f57bb7a9adf4a0
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 833907c7a7b84b94a00b131738c73ff54a744a40
 
 Transactioneel overseinen (het Centrum van het Bericht) is een module van de Campagne die voor het beheren van trekkerberichten wordt ontworpen. Deze berichten worden geproduceerd van gebeurtenissen die van informatiesystemen teweeggebracht worden, en kunnen zijn: factuur, bevestiging van bestelling, bevestiging van verzending, wijziging van wachtwoord, kennisgeving van onbeschikbaarheid van product, rekeningoverzicht of het maken van websiteaccount, bijvoorbeeld.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Voor Transactioneel overseinen is een specifieke licentie vereist. Controleer uw licentieovereenkomst.
 
