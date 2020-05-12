@@ -13,15 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c687c8ad19560d4181c2db52a91e096cceea705e
+source-git-commit: e6617614ae22b73c6783f9775f441e5e25ae19e3
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
 
 
 # Over leverbaarbaarheid{#about-deliverability}
+
+**De leverbaarheid** bestaat uit het meten van het succes van uw campagnes die uw ontvangers&#39; inbox bereiken zonder te stuiteren, of als spam worden gemerkt.
 
 Adobe Campaign biedt een aantal tools om de prestaties van uw platform bij te houden. In dit gedeelte worden ook de belangrijkste beginselen beschreven waarmee u rekening moet houden bij het beheren en optimaliseren van de leverbaarbaarheid.
 
