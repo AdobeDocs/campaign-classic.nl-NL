@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+workflow-type: tm+mt
+source-wordcount: '2434'
+ht-degree: 0%
 
 ---
 
@@ -255,7 +258,7 @@ Stuitberichten kunnen de volgende kwalificatiestatus hebben:
 * Voor instanties die de verbeterde MTA zonder **Webhooks/EFS** gebruiken, zullen de **[!UICONTROL Inbound email]** regels ook worden gebruikt om de synchrone stuiterende e-mails te verwerken die uit Verbeterde MTA komen, gebruikend het zelfde e-mailadres zoals voor asynchrone stuiterende e-mails.
 >
 >
-Raadpleeg dit [document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagne.
+Raadpleeg [dit document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagnes.
 
 ### E-mailbeheerregels {#email-management-rules}
 
@@ -291,7 +294,7 @@ Zie [deze sectie](#bounce-mail-qualification)voor meer informatie over stuiteren
 >
 >Voor ontvangen of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, en als uw instantie **Webhooks/EFS** functionaliteit heeft, worden de **[!UICONTROL Inbound email]** regels niet meer gebruikt voor synchrone de foutenmeldingen van de leveringsmislukking. Zie [deze sectie](#bounce-mail-qualification)voor meer informatie.
 >
->Raadpleeg dit [document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagne.
+>Raadpleeg [dit document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagnes.
 
 #### Domeinbeheer {#domain-management}
 
@@ -308,7 +311,7 @@ Als uw berichten in Vooruitzichten met **[!UICONTROL on behalf of]** in het afze
 >
 >Voor ontvangen of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, worden de **[!UICONTROL Domain management]** regels niet meer gebruikt. **DKIM (DomainKeys Identified Mail)** e-mailverificatie wordt ondertekend door de Enhanced MTA voor alle berichten met alle domeinen. Het ondertekent niet met identiteitskaart **van de** Afzender, **DomainKeys**, of **S/MIME** tenzij anders gespecificeerd op het Verbeterde niveau MTA.
 >
->Raadpleeg dit [document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagne.
+>Raadpleeg [dit document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagnes.
 
 #### MX-beheer {#mx-management}
 
@@ -324,4 +327,4 @@ For more on MX management, refer to [this section](../../installation/using/emai
 >
 >Voor ontvangen of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, worden de regels van de **[!UICONTROL MX management]** leveringsproductie niet meer gebruikt. Verbeterde MTA gebruikt zijn eigen MX regels die het toestaan om uw productie door domein aan te passen die op uw eigen historische e-mailreputatie wordt gebaseerd, en op real time terugkoppelen die uit de domeinen komt waar u e-mails verzendt.
 >
->Raadpleeg dit [document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagne.
+>Raadpleeg [dit document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagnes.
