@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+workflow-type: tm+mt
+source-wordcount: '764'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ Adobe Campaign biedt de volgende leveringskanalen:
 1. **Mobiel kanaal**: Met leveringen op mobiele kanalen kunt u persoonlijke SMS- of LINE-berichten naar de doelgroep sturen. Zie [SMS-kanaal](../../delivery/using/sms-channel.md).
 1. **Mobiel toepassingskanaal**: Met levering voor mobiele apps kunt u meldingen verzenden naar iOS- en Android-systemen. Raadpleeg het hoofdstuk over het kanaal [van de](../../delivery/using/about-mobile-app-channel.md) mobiele app.
 
-   Andere kanalen worden beschreven in [deze pagina](../../delivery/using/other-channels.md).
+   Andere kanalen worden beschreven op [deze pagina](../../delivery/using/other-channels.md).
 
    >[!NOTE]
    >
@@ -60,7 +63,7 @@ Het [e-mailkanaal](../../delivery/using/about-email-channel.md) is een van de ke
 
 U kunt verschillende typen e-mailberichten verzenden:
 
-* E-mails met één verzending: e-mails die u één keer naar een bepaald doel kunt verzenden. Deze worden gewoonlijk gebruikt om een specifieke inhoud te promoten die maar één keer wordt voorbereid en verzonden (nieuwsbrief, promotionele e-mail, enz.).
+* E-mails met één verzending: e-mails die u één keer naar een bepaald doel kunt verzenden. Deze worden gewoonlijk gebruikt om een specifieke inhoud te promoten die maar één keer wordt voorbereid en verzonden (nieuwsbrief, promotiemail, enz.).
 * E-mails terugsturen: in een campagne regelmatig dezelfde e-mail sturen en elk bericht en de bijbehorende verslagen samenvoegen. Dezelfde e-mail wordt verzonden, maar doorgaans naar een ander doel, op basis van het in aanmerking komende doel voor de dag van de verzending. Een veelvoorkomend voorbeeld is een e-mailbericht voor verjaardagen. Raadpleeg [Terugkerende leveringen](../../workflow/using/recurring-delivery.md)voor meer informatie hierover.
 * Transactiee-mails: Eenvoudige e-mailberichten die worden geactiveerd op basis van het gedrag van uw klanten. Zie [Transactioneel overseinen](../../message-center/using/about-transactional-messaging.md).
 
