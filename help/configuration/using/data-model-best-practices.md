@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8c71f54b68558178171fa30601aebf5e638db37f
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+workflow-type: tm+mt
+source-wordcount: '3997'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ In dit document worden belangrijke aanbevelingen beschreven tijdens het ontwerpe
 
 Raadpleeg de sectie Klassieke [gegevensmodel](../../configuration/using/about-data-model.md) van Campagne voor een beter begrip van geïntegreerde tabellen en hun interactie.
 
-Lees deze [documentatie](../../configuration/using/about-schema-reference.md) om met de schema&#39;s van de Campagne aan de slag te gaan. Leer hoe u extensieschema&#39;s configureert om het conceptuele gegevensmodel van de Adobe Campaign-database uit te breiden in dit [document](../../configuration/using/about-schema-edition.md).
+Lees [deze documentatie](../../configuration/using/about-schema-reference.md) om aan de slag te gaan met campagnereschema&#39;s. Leer hoe u extensieschema&#39;s configureert om het conceptuele gegevensmodel van de Adobe Campagne-database uit te breiden in [dit document](../../configuration/using/about-schema-edition.md).
 
 ## Overzicht {#overview}
 
@@ -46,7 +49,7 @@ Deze klantgerichte benadering wordt getoond in de grafiek hieronder. De grijze t
 
 Om tot de beschrijving van elke lijst toegang te hebben, ga naar **[!UICONTROL Admin > Configuration > Data schemas]**, selecteer een middel van de lijst en klik de **[!UICONTROL Documentation]** tabel.
 
-Het standaardgegevensmodel van de Campagne van Adobe wordt voorgesteld in dit [document](../../configuration/using/data-model-description.md).
+Het standaardgegevensmodel van de Campagne van Adobe wordt voorgesteld in [dit document](../../configuration/using/data-model-description.md).
 
 >[!NOTE]
 >
@@ -154,8 +157,8 @@ Wanneer een aangepaste tabel wordt gemaakt in Adobe Campaign met een primaire sl
 Een aangepaste reeks heeft standaard waarden tussen +1.000 en +2.1BB. Technisch gezien is het mogelijk om een volledig bereik van 4BB te krijgen door negatieve id&#39;s toe te staan. Dit moet met zorg worden gebruikt en er zal één id verloren gaan bij het oversteken van negatieve naar positieve getallen: record 0 wordt doorgaans genegeerd door Adobe Campagne Classic in gegenereerde SQL-query&#39;s.
 
 **Verwante onderwerpen:**
-* Zie dit **document** voor meer informatie over de functie voor automatisch genereren [van](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html)reeksen.
-* Kijk naar deze [video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)voor meer informatie over de uitputting van reeksen.
+* Zie **dit document** voor meer informatie over de functie voor automatisch genereren [](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html)van reeksen.
+* Kijk naar [deze video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)voor meer informatie over de uitputting van reeksen.
 
 ## Indexen {#indexes}
 
