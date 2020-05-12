@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+workflow-type: tm+mt
+source-wordcount: '2980'
+ht-degree: 0%
 
 ---
 
@@ -293,7 +296,7 @@ De volgende parameters beschikbaar voor elke regel zijn:
 
    * **[!UICONTROL Default configuration]**: Dit is de algemene configuratie die is opgegeven in het configuratiebestand serverConf.xml dat wordt toegepast.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Het wordt niet aanbevolen de standaardconfiguratie te wijzigen.
 
@@ -327,7 +330,7 @@ Als de **[!UICONTROL Image inclusion]** optie is ingeschakeld, worden deze recht
 
 Deze optie wordt vooral gebruikt door de Japanse markt voor **Deco-mail**, **Decore Mail** of **Decoration Mail**. Raadpleeg [dit document](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles)voor meer informatie.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Als u afbeeldingen in een e-mail invoegt, neemt de grootte aanzienlijk toe.
 
@@ -355,7 +358,7 @@ Als u de statistische server op dezelfde computer wilt gebruiken, moet u ten min
  <mta statServerAddress="localhost">
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Als dit veld niet wordt gevuld, wordt de **mta** niet gestart.
 
