@@ -13,18 +13,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 4582ea496fff35c5b586049b8daa379464bd78fc
+workflow-type: tm+mt
+source-wordcount: '574'
+ht-degree: 0%
 
 ---
 
 
 # Belangrijkste punten voor de aflevering{#deliverability-key-points}
 
-De leverbaarheid bestaat uit het meten van het succes van uw campagnes die uw ontvangers&#39; inbox zonder stuitend bereiken, of als spam worden gemerkt.
-
 We raden u aan de onderstaande aanbevolen werkwijzen te gebruiken om de leverbaarheid van uw e-mailberichten voor Adobe Campagne te optimaliseren. De leveringsproblemen zijn over het algemeen verbonden met maatregelen van bescherming tegen spam die door de dienstverleners van Internet en de beheerders van de postserver worden uitgevoerd.
 
-De e-mailleverbaarheid verwijst naar de reeks kenmerken die bepalen of een bericht zijn bestemming, via een persoonlijk e-mailadres, binnen een korte tijd, en met de verwachte kwaliteit in termen van inhoud en formaat kan bereiken.
+**De e-mailleverbaarheid** verwijst naar de reeks kenmerken die bepalen of een bericht zijn bestemming kan bereiken, via een persoonlijk e-mailadres, binnen een korte tijd, en met de verwachte kwaliteit in termen van inhoud en formaat.
 
 Deze kenmerken vallen in vier hoofdcategorieën:
 * Gegevenskwaliteit
@@ -34,7 +35,7 @@ Deze kenmerken vallen in vier hoofdcategorieën:
 
 Samen vormen ze de basis voor een succesvol e-mailprogramma.
 
-Het percentage te leveren items is het aantal verzonden e-mailberichten dat is bezorgd aan de ontvangers.
+Het **leveringspercentage** is het aantal verzonden e-mailberichten dat is bezorgd aan de ontvangers.
 
 Het percentage te leveren producten hangt af van een groot aantal factoren, met name:
 * Correcte configuratie van uw instanties
@@ -45,7 +46,7 @@ Het percentage te leveren producten hangt af van een groot aantal factoren, met 
 * Berichtverificatie (SPF, DKIM, DMARC)
 * Afzender
 
-Hier volgt een lijst met de belangrijkste punten die moeten worden gecontroleerd om te zorgen voor goede prestaties.
+Hieronder ziet u een lijst met de belangrijkste punten die moeten worden gecontroleerd om te zorgen voor goede prestaties.
 
 ## Netwerkconfiguratie controleren {#network-configuration}
 
@@ -61,7 +62,7 @@ ISPs heeft gewoonlijk een duidelijk middel om een ontvangen bericht als spam te 
 
 ## Verzenden naar honingsteunadressen {#honeypot-addresses}
 
-ISPs en andere organisaties (verwijs naar https://www.projecthoneypot.org/) maken gebruik van brievenbussen die niet aan fysieke personen beantwoorden maar eenvoudig worden gecreeerd om spammers te bedriegen. Deze zogenaamde &quot;honingpot&quot;-adressen worden op het web gepubliceerd om door spambots te worden verzameld en aldus illegale afzenders te vangen. Het gebruik van een dubbele opt-in-mechanisme sluit het toevoegen van dit adres aan een lijst uit. Wanneer u een lijst van derden gebruikt, moet u zeker zijn van de methoden die door de onderhoudsleider worden gebruikt.
+ISP&#39;s en andere organisaties (zie de website van de [Projecthoningpoort](https://www.projecthoneypot.org/) ) maken gebruik van postvakken die niet overeenkomen met fysieke personen maar die zijn gemaakt om spammers te bedriegen. Deze zogenaamde &quot;honingpot&quot;-adressen worden op het web gepubliceerd om door spambots te worden verzameld en aldus illegale afzenders te vangen. Het gebruik van een dubbele opt-in-mechanisme sluit het toevoegen van dit adres aan een lijst uit. Wanneer u een lijst van derden gebruikt, moet u zeker zijn van de methoden die door de onderhoudsleider worden gebruikt.
 
 ## De inhoud van het bericht aanpassen {#message-content}
 
