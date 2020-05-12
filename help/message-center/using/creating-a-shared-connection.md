@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
+source-git-commit: f4ecdab4c17a6ba8deb3b98079f57bb7a9adf4a0
+workflow-type: tm+mt
+source-wordcount: '1002'
+ht-degree: 0%
 
 ---
 
 
 # Een gedeelde verbinding maken{#creating-a-shared-connection}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* De uitbreidingen van het schema die op de schema&#39;s worden gemaakt door de technische werkschema [&#39;s van het Centrum van het](../../message-center/using/technical-workflows.md) Bericht op of controle of uitvoeringsinstanties worden gebruikt moeten op de andere instanties worden gedupliceerd die door de transactionele overseinenmodule van de Campagne van Adobe worden gebruikt.
 >* De bedieningsinstantie en de uitvoeringsinstantie(s) moeten op verschillende computers zijn geïnstalleerd. Ze kunnen niet dezelfde Campagne-instantie delen.
@@ -97,7 +100,7 @@ Voer de volgende stappen uit om een uitvoerinstantie van het type externe accoun
 
 Opdat de controleinstantie met de uitvoeringsinstantie kan verbinden zonder het moeten een wachtwoord geven, ga eenvoudig het IP adres van de controleinstantie in de de toegangsrechtensectie van het Centrum van het **Bericht** in. Lege wachtwoorden zijn echter standaard niet toegestaan.
 
-Als u een leeg wachtwoord wilt gebruiken, gaat u naar de uitvoeringsinstanties en definieert u een beveiligingszone die is beperkt tot het IP-adres van het informatiesysteem dat de gebeurtenissen levert. Deze veiligheidszone moet lege wachtwoorden toestaan en `<identifier> / <password>` typeverbindingen goedkeuren. Zie [deze sectie](../../installation/using/configuring-campaign-server.md#defining-security-zones)voor meer informatie.
+Als u een leeg wachtwoord wilt gebruiken, gaat u naar de uitvoeringsinstanties en definieert u een beveiligingszone die is beperkt tot het IP-adres van het informatiesysteem dat de gebeurtenissen levert. Deze veiligheidszone moet lege wachtwoorden toestaan en `<identifier> / <password>` typeverbindingen goedkeuren. For more on this, refer to [this section](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
 >[!NOTE]
 >
@@ -146,13 +149,13 @@ Om verscheidene controleinstanties te gebruiken, moet deze configuratie op ALLE 
 
    ![](assets/messagecenter_multi_control_3.png)
 
-1. Maak de **operatoren mc1** en **mc2** door de standaardoperator **mc**(Message Center) te dupliceren. Raadpleeg [deze sectie](../../platform/using/access-management.md#operators)voor meer informatie over het maken van operatoren.
+1. Maak de **operatoren mc1** en **mc2** door de standaardoperator **mc**(Message Center) te dupliceren. For more on creating operators, refer to [this section](../../platform/using/access-management.md#operators).
 
    ![](assets/messagecenter_multi_control_4.png)
 
    >[!NOTE]
    >
-   >**mc1** - en **mc2** -operatoren moeten **[!UICONTROL Message Center execution]** rechten hebben en kunnen geen toegang hebben tot de Adobe Campaign-clientconsole. Een exploitant moet altijd met een veiligheidsstreek verbonden zijn. Zie [deze sectie](../../installation/using/configuring-campaign-server.md#defining-security-zones)voor meer informatie.
+   >**mc1** - en **mc2** -operatoren moeten **[!UICONTROL Message Center execution]** rechten hebben en kunnen geen toegang hebben tot de Adobe Campaign-clientconsole. Een exploitant moet altijd met een veiligheidsstreek verbonden zijn. For more on this, refer to [this section](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
 1. Voor elke exploitant, controleer het **[!UICONTROL Restrict to information found in sub-folders of]** vakje, en selecteer de relevante omslag (**Omslag 1** voor de exploitant **mc1** en **Omslag 2** voor de exploitant **mc2** ).
 
