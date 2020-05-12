@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a30c4a2d31c3f674ac4a7bb4827a6951b36014ab
+source-git-commit: 74e1a883088d347cb1aab05d76b630c912411fc4
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,14 @@ U kunt ook de volgende gereedschappen gebruiken:
 
 * Het **[!UICONTROL Delivery throughput]** rapport geeft u een overzicht van de productie van het volledige platform voor een bepaalde periode. Zie [deze sectie](../../reporting/using/global-reports.md#delivery-throughput)voor meer informatie.
 * Het **[!UICONTROL Technical deliverability monitoring]** rapport bevat een aantal kwaliteitsindicatoren voor de prestaties van uw platform. Zie [deze sectie](#technical-deliverability-monitoring)voor meer informatie.
-* Het [leveringsdashboard](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) geeft u toegang tot het overzicht [van de](../../delivery/using/monitoring-a-delivery.md#delivery-summary)Levering, de [leveringslogboeken en geschiedenis](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) en de [het Volgen logboeken](../../delivery/using/monitoring-a-delivery.md#tracking-logs). Zij tonen de details van het verzenden, die doel is uitgesloten en waarom, evenals de het volgen informatie zoals opent en klikt. <!--For more on this, see [Monitoring a delivery](../../delivery/using/monitoring-a-delivery.md).-->
-* U kunt ook controleren hoeveel berichten u wilt verzenden, verwerken en verzenden. Zie [deze sectie voor meer informatie](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent)
-   <!--[SpamAssassin](../../installation/using/configuring-spamassassin.md)?-->
+* Elke levering produceert een rapport van uitzendingsstatistieken voor de verschillende dienstverleners van Internet (ISPs). Het toont sommige gegevenskwaliteit en reputatie metriek die uw leverbaarheid, met inbegrip van de volgende aantallen kunnen beïnvloeden:
+   * **[!UICONTROL Hard bounces]** de gegevenskwaliteit aangeven. Dit getal moet lager zijn dan 2%.
+   * **[!UICONTROL Soft bounces]** duidt op reputatie. Dit aantal zou niet hoger moeten zijn dan 10% voor om het even welke bepaalde ISP.
+   Zie de sectie [Leveringsstatistieken](../../reporting/using/global-reports.md#delivery-statistics) voor meer informatie.
+* Meer in het algemeen biedt het [leveringsdashboard](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) u toegang tot:
+   * de [leveringssamenvatting](../../delivery/using/monitoring-a-delivery.md#delivery-summary), waarin de bijzonderheden van de verzending en het [aantal te verzenden, te verwerken en met succes te verzenden berichten](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent) worden vermeld;
+   * de [leveringslogboeken en de geschiedenis](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history), waaruit blijkt welk doel is uitgesloten en waarom;
+   * de [volgende logboeken](../../delivery/using/monitoring-a-delivery.md#tracking-logs), die volgende informatie zoals opent tonen en klikt.
 
 ## Monitoringrichtsnoeren {#monitoring-guidelines}
 
