@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a2cb740fe9b71435f602b738bd270fd3a0954901
+source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+workflow-type: tm+mt
+source-wordcount: '3055'
+ht-degree: 0%
 
 ---
 
@@ -160,7 +163,7 @@ Onverwerkte steunkleuren worden niet weergegeven in de interface van Adobe Campa
 * **[!UICONTROL Address for errors]** : Vul dit gebied in om aan een derdeadres slechts de foutenmeldingen over te brengen die het inMail proces niet in aanmerking kwam.
 * **[!UICONTROL SMTP server]** : Server die wordt gebruikt om onverwerkte e-mails over bounce te verzenden.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Adobe raadt u alleen aan het **[!UICONTROL Address for errors]** veld in te vullen als u onverwerkte e-mails met bounce wilt doorsturen. Nochtans, zorg ervoor het adres dat wordt gebruikt regelmatig wordt gecontroleerd, aangezien dit een zware lading op uw postserver kon zetten. Neem contact op met uw accountmanager voor meer informatie.
 
@@ -310,7 +313,7 @@ In dit stadium kunt u voorkeuren voor gegevensbeleid opnemen.
 
 ## Toegang vanaf internet {#access-from-the-internet}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om privacyredenen raden we aan HTTPS te gebruiken voor alle externe bronnen.
 
@@ -334,7 +337,7 @@ Met Adobe Campagne kunt u deze drie URL&#39;s onderscheiden om de laadbewerking 
 
 ## Openbare middelen beheren {#managing-public-resources}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om privacyredenen raden we aan HTTPS te gebruiken voor alle externe bronnen.
 
