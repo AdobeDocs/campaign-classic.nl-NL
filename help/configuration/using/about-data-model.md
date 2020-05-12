@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 87966db35779f0e6a4b09a1a3ba1c30d4d002518
+source-git-commit: 580be39d09bd59770d490945c3ba2b29e12fb3c4
+workflow-type: tm+mt
+source-wordcount: '970'
+ht-degree: 0%
 
 ---
 
@@ -28,9 +31,9 @@ Om tot de beschrijving van elke lijst toegang te hebben, ga naar **[!UICONTROL A
 
 ![](assets/data-model_documentation-tab.png)
 
-Raadpleeg deze [sectie voor meer informatie over de standaardbeschrijving van het klassieke gegevensmodel van de campagne](../../configuration/using/data-model-description.md).
+Raadpleeg [deze sectie](../../configuration/using/data-model-description.md)voor meer informatie over de standaardbeschrijving van het klassieke gegevensmodel van de campagne.
 
-De fysieke en logische structuur van de gegevens die in de toepassing worden overgedragen, wordt in XML beschreven. Het voert een grammatica specifiek voor de Campagne van Adobe uit, genoemd een schema. Lees deze [sectie](../../configuration/using/about-schema-reference.md)voor meer informatie over Adobe Campagne-schema&#39;s.
+De fysieke en logische structuur van de gegevens die in de toepassing worden overgedragen, wordt in XML beschreven. Het voert een grammatica specifiek voor de Campagne van Adobe uit, genoemd een schema. Lees [deze sectie](../../configuration/using/about-schema-reference.md)voor meer informatie over Adobe Campagne-schema&#39;s.
 
 ## Overzicht {#data-model-overview}
 
@@ -38,13 +41,13 @@ Adobe Campaign is gebaseerd op een relationele database die tabellen bevat die a
 
 >[!NOTE]
 >
->Raadpleeg deze [sectie](../../configuration/using/data-model-best-practices.md#data-model-architecture)voor meer informatie over de architectuur van het gegevensmodel van de campagne en de bijbehorende best practices.
+>Raadpleeg [deze sectie](../../configuration/using/data-model-best-practices.md#data-model-architecture)voor meer informatie over de architectuur van het gegevensmodel van de campagne en de bijbehorende best practices.
 
 ### Ontvangertabel {#recipient-table}
 
 Het gegevensmodel baseert zich op een hoofdlijst die door gebrek de Ontvangende lijst (**NmsRecipient**) is. In deze tabel kunt u alle marketingprofielen opslaan.
 
-Zie deze [sectie](#default-recipient-table)voor meer informatie over de tabel Ontvanger.
+Zie [deze sectie](#default-recipient-table)voor meer informatie over de tabel Ontvanger.
 
 ### Afleveringstabel {#delivery-table}
 
@@ -64,7 +67,7 @@ Tot slot bestaat een deel van het gegevensmodel uit technische gegevens die voor
 
 ## De standaardtabel Ontvanger gebruiken {#default-recipient-table}
 
-De out-of-the-box Ontvangerlijst in de Campagne van Adobe verstrekt een goed uitgangspunt voor de bouw van uw gegevensmodel. Het heeft een aantal vooraf bepaalde gebieden en lijstverbindingen die gemakkelijk kunnen worden uitgebreid. Dit is met name nuttig wanneer u zich hoofdzakelijk richt op ontvangers, omdat het een eenvoudig ontvanger-centric gegevensmodel past.
+De out-of-the-box Ontvangerlijst in de Campagne van Adobe verstrekt een goed uitgangspunt voor de bouw van uw gegevensmodel. Het heeft een aantal vooraf bepaalde gebieden en lijstverbindingen die gemakkelijk kunnen worden uitgebreid. Dit is met name nuttig wanneer u zich vooral richt op ontvangers, omdat het een eenvoudig ontvanger-centric gegevensmodel past.
 
 De standaardtabel met ontvangers biedt de volgende voordelen:
 
@@ -85,7 +88,7 @@ Aangezien de tabel Ontvanger deel uitmaakt van het product, veranderen zowel de 
 
 Wanneer u begint met Adobe Campaign, moet u het standaardgegevensmodel beoordelen om te controleren welke tabel het meest geschikt is om uw marketinggegevens op te slaan.
 
-Indien relevant, kunt u de standaard Ontvanger lijst met de uit-van-de-doos gebieden gebruiken, zoals die in deze [sectie](#default-recipient-table)wordt beschreven.
+Indien relevant, kunt u de standaard Ontvanger lijst met de uit-van-de-doos gebieden gebruiken, zoals die in [deze sectie](#default-recipient-table)wordt beschreven.
 
 Indien nodig kunt u het uitbreiden met twee mechanismen:
 
@@ -108,7 +111,7 @@ Als uw gegevensmodel niet in de op de ontvanger gerichte structuur past, kunt u 
 >
 >In dit geval moet u een nieuwe [doeltoewijzing](../../configuration/using/target-mapping.md)maken.
 
-Alle principes en stappen nodig wanneer het gebruiken van een lijst van de douaneontvanger zijn gedetailleerd in deze [sectie](../../configuration/using/about-custom-recipient-table.md).
+Alle principes en stappen nodig wanneer het gebruiken van een lijst van de douaneontvanger zijn gedetailleerd in [deze sectie](../../configuration/using/about-custom-recipient-table.md).
 
 De voordelen van een aangepaste tabel voor ontvangers zijn als volgt:
 
@@ -130,4 +133,4 @@ Er is geen onderhoud nodig om te controleren of alle extensies nog geldig zijn n
 
 >[!IMPORTANT]
 >
->Het gebruiken van een douane ontvankelijke lijst is gereserveerd voor gevorderde gebruikers en is onderworpen aan sommige beperkingen. Zie deze sectie voor meer informatie.
+>Het gebruiken van een douane ontvankelijke lijst is gereserveerd voor gevorderde gebruikers en is onderworpen aan sommige beperkingen. Zie [deze sectie](../../configuration/using/about-custom-recipient-table.md)voor meer informatie.
