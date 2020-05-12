@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 25ae29490f8b4c58dad499669f5bccff43de8b7a
+source-git-commit: e8a9d8d63c01cc19380267fced45e180b4d7ccb4
+workflow-type: tm+mt
+source-wordcount: '988'
+ht-degree: 0%
 
 ---
 
@@ -75,40 +78,40 @@ Een leveringskanaal toevoegen (mobiel kanaal, Mobile App-kanaal, enz.) moet word
 
    ![](assets/messagecenter_install_channel.png)
 
-## Transactieberichten en binnenkomende interactie {#transactional-messages-and-inbound-interaction}
+<!--## Transactional messages and inbound Interaction {#transactional-messages-and-inbound-interaction}
 
-Wanneer gecombineerd met de Binnenkomende module van de Interactie, laat het transactieoverseinen u toe om een marketing aanbieding op te nemen die aan de ontvanger in het bericht wordt gewijd.
+When combined with the Inbound Interaction module, transactional messaging enables you to insert a marketing offer dedicated to the recipient into the message.
 
 >[!NOTE]
 >
->De module Interactie wordt beschreven in [Interactie](../../interaction/using/interaction-and-offer-management.md).
+>The Interaction module is detailed in [Interaction](../../interaction/using/interaction-and-offer-management.md).
 
-Om transactioneel overseinen met Interactie te gebruiken, moet u de volgende configuraties toepassen:
+To use transactional messaging with Interaction, you need to apply the following configurations:
 
-* Installeer het **Interaction** -pakket op de besturingsinstantie en configureer uw aanbiedingencatalogus.
+* Install the **Interaction** package onto the control instance and configure your offer catalog.
 
-   >[!CAUTION]
-   >
-   >Herhaal de aanbiedingen niet naar de uitvoeringsinstanties.
+  >[!CAUTION]
+  >
+  >Do not replicate the offers onto the execution instances.
 
-* De gebeurtenis moet een id bevatten die aan de ontvangers is gekoppeld, zodat u de aanbiedingen kunt aanpassen. Het **@externalId** -kenmerk moet de waarde van deze id bevatten. **De interactie** wordt gevormd door gebrek om de ontvanger van de primaire sleutel te identificeren:
+* The event must include an identifier linked to the recipients, for personalizing offers. The **@externalId** attribute must contain the value of this identifier. **Interaction** is configured by default to identify the recipient of the primary key:
 
-   ```
-   <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="1242"> 
-   ```
+  ```
+  <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="1242"> 
+  ```
 
-   U kunt **interactie** zodanig configureren dat identificatie plaatsvindt in het veld dat u kiest, bijvoorbeeld op het e-mailadres:
+  You can configure **Interaction** so that identification takes place in the field of your choice, for example on the email address:
 
-   ```
-   <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="john.doe@yahoo.com"> 
-   ```
+  ```
+  <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="john.doe@yahoo.com"> 
+  ```
 
-Maak uw leveringssjablonen op de manier die u gebruikt voor een e-mailcampagne:
+Create your delivery templates the way you would for an email campaign:
 
-* Voeg het voorstel toe aan je template voor transactieberichten.
-* Controleer de voorvertoning, verzend een proefdruk en publiceer de sjabloon.
+* Add the offer to your transactional message template.
+* Check the preview, send a proof and publish the template.
 
-U moet ook de eenheidswijze op uw aanbiedingsruimten toelaten. Zie [deze sectie](../../interaction/using/creating-offer-spaces.md)voor meer informatie.
+You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](../../interaction/using/creating-offer-spaces.md).-->
 
 ## Transactieberichten en pushmeldingen {#transactional-messaging-and-push-notifications}
 
