@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +45,7 @@ Berichten bijhouden is standaard ingeschakeld. Volg onderstaande stappen om de m
 
 1. Geef voor elke URL van het bericht op of u reeksspatiëring wilt activeren.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Wanneer de URL van de koppeling als een label wordt gebruikt, wordt aangeraden het bijhouden van gegevens te desactiveren om het risico van afwijzing door phishing te voorkomen.
    >
@@ -67,4 +70,4 @@ Berichten bijhouden is standaard ingeschakeld. Volg onderstaande stappen om de m
    * **[!UICONTROL Opt-out]** : beschouwt deze URL als een opt-out- of niet-abonnements-URL.
    * **[!UICONTROL Mirror page]** : beschouwt deze URL als een URL van een spiegelpagina.
 
-1. Bovendien kunt u een categorie selecteren voor elke bijgehouden URL in de vervolgkeuzelijst van de **[!UICONTROL Category]** kolom. Deze categorieën kunnen rapporten worden getoond, zoals bijvoorbeeld in **[!UICONTROL URLs and click streams]** (zie [deze sectie](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Categorieën worden gedefinieerd in een specifieke opsomming: **[!UICONTROL urlCategory]** (zie Opsommingen [beheren](../../platform/using/managing-enumerations.md)).
+1. Bovendien kunt u een categorie selecteren voor elke bijgehouden URL in de vervolgkeuzelijst van de **[!UICONTROL Category]** kolom. Deze categorieën kunnen rapporten worden getoond, zoals bijvoorbeeld in **[!UICONTROL URLs and click streams]** (zie [deze sectie](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Categorieën worden gedefinieerd in een specifieke opsomming: **[!UICONTROL urlCategory]** (Zie [Opsommingen](../../platform/using/managing-enumerations.md)beheren).
