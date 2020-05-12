@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+workflow-type: tm+mt
+source-wordcount: '889'
+ht-degree: 0%
 
 ---
 
@@ -34,11 +37,11 @@ De belangrijkste platformfuncties voor het beheer van tijdzones zijn: invoer/uit
 
 **De exploitanten** kunnen tijdstreken tijdens **leveringsconfiguratie** wijzigen en kunnen de bijzondere tijdzone specificeren waarin de levering zal worden uitgevoerd.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Als het gegevensbestand veelvoudige tijdstreken niet beheert, voor alle gegevens die manipulaties filtreren, SQL moeten de vragen in de tijdzone van de gegevensbestandserver worden uitgevoerd.
 
-Elke Adobe Campagneoperator is gekoppeld aan een tijdzone: deze informatie is geconfigureerd in hun profiel. Raadpleeg [dit document](../../platform/using/access-management.md)voor meer informatie.
+Elke Adobe Campagneoperator is gekoppeld aan een tijdzone: deze informatie is geconfigureerd in hun profiel. For more on this, refer to [this document](../../platform/using/access-management.md).
 
 Wanneer het Adobe Campagne-platform geen tijdzonebeheer vereist, kunt u een opslagwijze in lokaal formaat met een specifieke verbonden tijdzone houden.
 
@@ -46,9 +49,9 @@ Wanneer het Adobe Campagne-platform geen tijdzonebeheer vereist, kunt u een opsl
 
 In tijdzones zijn verschillende situaties samengevat: de expressie kan een constante tijdvertraging met de UTC-datum beschrijven, of de tijden van een regio die tweemaal per jaar (zomertijd) kunnen veranderen.
 
-**Bijvoorbeeld, in postgreSQL, ZONE** SET TIME &quot;Europe/Paris&quot;; bij het commando wordt rekening gehouden met de zomer - en wintertijd : de datum wordt uitgedrukt in UTC+1 of UTC+2, afhankelijk van het tijdstip van het jaar.
+Bijvoorbeeld, in postgreSQL, ZONE **SET TIME &quot;Europe/Paris&quot;;** bij het commando wordt rekening gehouden met de zomer - en wintertijd : de datum wordt uitgedrukt in UTC+1 of UTC+2, afhankelijk van het tijdstip van het jaar.
 
-**Als u echter de** SET TIME ZONE 0200 gebruikt; -opdracht, is de tijdvertraging altijd UTC+2.
+Als u echter de **SET TIME ZONE 0200 gebruikt;** -opdracht, is de tijdvertraging altijd UTC+2.
 
 ## Configuratie {#configuration}
 
@@ -59,7 +62,7 @@ Vanuit technisch oogpunt zijn er twee manieren om informatie over het type **Dat
 1. TIJDSTEMPEL MET TIMEZONE-indeling: de database-engine de datums in UTC opslaat. Elke geopende sessie heeft een tijdzone en de datums worden overeenkomstig deze tijdzone omgezet.
 1. Lokale notatie + lokale tijdzone: alle datums worden opgeslagen in de lokale notatie (geen tijdvertragingsbeheer) en er wordt één tijdzone aan toegewezen. De tijdzone wordt opgeslagen in de optie **WdbcTimeZone** van de Adobe Campagne-instantie en kan worden gewijzigd via het **[!UICONTROL Administration > Platform > Options]** menu van de boomstructuur.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Houd er rekening mee dat deze wijziging kan leiden tot problemen met de consistentie en synchronisatie van gegevens.
 
@@ -71,7 +74,7 @@ Schakel de **[!UICONTROL UTC database (date fields with time zone)]** optie in o
 
 ![](assets/install_wz_select_utc_option.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Als u **Oracle** gebruikt, moeten de tijdzonebestanden (.dat) van de Oracle-clientlagen compatibel zijn met de tijdzonebestanden die op de server zijn geïnstalleerd.
 
@@ -93,7 +96,7 @@ XML-velden met datums worden nu opgeslagen in UTC. Tijdens het laden worden veld
 
 Als u een bestaande instantie wilt gebruiken, voegt u de optie **WdbcTimeZone** toe en voert u de tijdzone van de instantie in.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Controleer of de juiste waarde is geconfigureerd voor de optie WdbcTimeZone: latere wijzigingen kunnen tot inconsistenties leiden .
 
