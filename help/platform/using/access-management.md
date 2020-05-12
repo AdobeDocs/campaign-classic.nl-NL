@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 92f4047628eca0fc1d71aded0329720c094463bd
+source-git-commit: 4148efa9c7a8b002672d72fc526753bf7304673c
+workflow-type: tm+mt
+source-wordcount: '2894'
+ht-degree: 0%
 
 ---
 
@@ -278,6 +281,14 @@ De standaardgroepen met operatoren zijn:
 1. Lokaal/centraal beheer
 
    In deze groepen kunt u **Distributed Marketing** gebruiken (optionele Adobe Campagne-module).
+
+1. Aanbiedingsmanagers
+
+   De operatoren in deze groep kunnen aanbiedingen maken en onderhouden. Raadpleeg deze [pagina](../../interaction/using/operator-profiles.md)voor meer informatie hierover.
+Deze groep bevat de volgende benoemde rechten:
+
+   * MAPPEN INVOEGEN: Recht om omslagen in de boom van de Campagne van Adobe op te nemen (op voorwaarde dat u bewerkingsrechten voor de betrokken takken hebt),
+   * MAPPEN BEWERKEN: Recht om omslageigenschappen zoals interne naam, etiket, bijbehorende beeld, subomslagorde te veranderen, etc.
 
 ## Benoemde rechten {#named-rights}
 
