@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4406e11e33e14136ea43fc3cc5a92e0d1c466100
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+workflow-type: tm+mt
+source-wordcount: '2375'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Om tot de beschrijving van elke lijst toegang te hebben, ga naar **[!UICONTROL A
 
 >[!NOTE]
 >
->De fysieke en logische structuur van de gegevens die in de toepassing worden overgedragen, wordt in XML beschreven. Het voert een grammatica specifiek voor de Campagne van Adobe uit, genoemd een schema. Lees deze [sectie](../../configuration/using/about-schema-reference.md)voor meer informatie over Adobe Campagne-schema&#39;s.
+>De fysieke en logische structuur van de gegevens die in de toepassing worden overgedragen, wordt in XML beschreven. Het voert een grammatica specifiek voor de Campagne van Adobe uit, genoemd een schema. Lees [deze sectie](../../configuration/using/about-schema-reference.md)voor meer informatie over Adobe Campagne-schema&#39;s.
 
 ## Beschrijving van de belangrijkste tabellen {#description-main-tables}
 
@@ -58,7 +61,7 @@ Het veld iFolderId is de externe sleutel die de ontvanger aan zijn uitvoeringsma
 
 Het veld sCountryCode is de ISO-code 3166-1 Alpha 2 (2 tekens) van het land dat aan de ontvanger is gekoppeld. Dit veld is in feite een buitenlandse sleutel in de referentietabel van het land (NmsCountry), die de landlabels en andere landcodegegevens bevat. Als het land niet is gevuld, wordt de waarde &#39;XX&#39; opgeslagen (en wordt gebruikt in plaats van een nul-id-record).
 
-Zie deze [sectie](../../configuration/using/about-data-model.md#default-recipient-table)voor meer informatie over de tabel Ontvanger.
+Zie [deze sectie](../../configuration/using/about-data-model.md#default-recipient-table)voor meer informatie over de tabel Ontvanger.
 
 ### NmsGroup {#NmsGroup}
 
@@ -181,7 +184,7 @@ De volgende indicatoren worden automatisch bijgewerkt tijdens de uitvoering van 
 * Aantal reacties: **iTransaction**. Aantal lijnen in de lijst van reactielogboeken.
 * Aantal gecontacteerde personen: **iContactReactie**. Afzonderlijk aantal gerichte contacten in de hypothese.
 * Aantal controlegroepen: **iProofReactie**. Afzonderlijk aantal gerichte contacten tussen controlegroepen in de hypothese.
-* Behandelde responspercentage: **dContactReactieRate**. Responspercentage van de gerichte contacten in de hypothese.
+* Behandelde responspercentage: **dContactReactingRate**. Responspercentage van de gerichte contacten in de hypothese.
 * Responspercentage van de controlegroep: **dProofReactieRate**. Responspercentage van de hypothesecontrolegroep.
 * Totale gecontacteerde inkomsten van de bevolking: **dContactRehandeldeTotalAmount**. Totale inkomsten van de gerichte contacten in de hypothese.
 * Gemiddelde inkomsten van de controlegroep: **dContactRehandeldeAvgAmount**. Gemiddelde inkomsten van de doelgroep contacten in de hypothese.
@@ -190,7 +193,7 @@ De volgende indicatoren worden automatisch bijgewerkt tijdens de uitvoering van 
 * Totale marge per contactpersoon: **dContactRehandeldeTotalMargin**. Totale marge per contact als bedoeld in de hypothese.
 * Gemiddelde marge per contact: **dContactRehandeldeAvgMargin**. Gemiddelde marge per contact als bedoeld in de hypothese.
 * Totale marge van de controlegroep: **dProofReactieTotalMargin**. Totale marge van de in de hypothese beoogde controlegroep.
-* Gemiddelde marge van de controlegroep: **dProofReactieAvgMargin**. Gemiddelde marge van de in de hypothese beoogde controlegroep.
+* Gemiddelde marge van de controlegroep: **dProofRehandeldeAvgMargin**. Gemiddelde marge van de in de hypothese beoogde controlegroep.
 * Aanvullende inkomsten: **dAdditionalAmount**. (Gemiddelde inkomsten van gecontacteerde onderneming - Gemiddelde inkomsten van de controlegroep) * Aantal gecontacteerde partijen.
 * Aanvullende marge: **dAdditionalMargin**. (Gemiddelde marge van gecontacteerde partij - Gemiddelde marge van controlegroep) / Aantal gecontacteerde personen.
 * Gemiddelde kosten per contactpersoon (SQL-expressie). Berekende kosten van de levering / Aantal gecontacteerde personen.
