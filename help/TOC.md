@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campagne classic
 translation-type: tm+mt
-source-git-commit: 2ba9efa49f26559786641ff5e1caa9c481f770b2
+source-git-commit: 24a50fcaad4d9081e5504652eb5b73aa7db1e65f
 workflow-type: tm+mt
-source-wordcount: '2077'
+source-wordcount: '2078'
 ht-degree: 0%
 
 ---
@@ -532,9 +532,7 @@ ht-degree: 0%
       + [Serviceniveau van Message Center](message-center/using/message-center-service-level.md)
       + [Verwerkingstijd van Message Center](message-center/using/message-center-processing-time.md)
    + Hoofdletters gebruiken {#use-case}
-      + [Doel](message-center/using/purpose.md)
-      + [Belangrijke opmerkingen](message-center/using/important-notes.md)
-      + [Implementatie](message-center/using/implementation.md)
+      + [Transactiee-mails verzenden met bijlagen](message-center/using/transactional-email-with-attachments.md)
 + Integreren met sociale media {#integrating-with-social-media}
    + [Sociale marketing](social/using/about-social-marketing.md)
    + Configuratie {#configuration}
