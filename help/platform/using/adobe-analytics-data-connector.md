@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cda7ae757a6de0e8cd6227faa2b731e9f392791b
+source-git-commit: e9923eb8cb78e7af05d64a122cd35b9cf3a4f215
+workflow-type: tm+mt
+source-wordcount: '1661'
+ht-degree: 0%
 
 ---
 
@@ -200,7 +203,8 @@ Deze bestanden zijn beschikbaar in de Adobe Campagne-structuur, onder de **[!UIC
 
 * **[!UICONTROL Recovering of web events]**: Deze workflow downloadt eenmaal per uur segmenten over het gedrag van gebruikers op een bepaalde site, neemt deze op in de Adobe Campagne-database en start de workflow voor het opnieuw in de handel brengen.
 * **[!UICONTROL Event purge]**: met deze workflow kunt u alle gebeurtenissen uit de database verwijderen, afhankelijk van de periode die in het **[!UICONTROL Lifespan]** veld is geconfigureerd. Raadpleeg [Stap 2 voor meer informatie: Maak het externe account in Campagne](#step-2--create-the-external-account-in-campaign).
-* **[!UICONTROL Identification of converted contacts]**: directory van de bezoekers die een aankoop hebben gedaan na een hermarketingcampagne. De gegevens die door deze workflow worden verzameld, zijn toegankelijk in het **[!UICONTROL Re-marketing efficiency]** rapport. Raadpleeg deze [pagina](#creating-a-re-marketing-campaign).* **[!UICONTROL Sending of indicators and campaign attributes]**: Hiermee kunt u via Adobe Campaign e-mailcampagne-indicatoren verzenden naar de Adobe Experience Cloud via de gegevensconnector Adobe Analytics -. Deze workflow wordt elke dag om 4 uur gestart en het kan 24 uur duren voordat de gegevens naar Analytics worden verzonden.
+* **[!UICONTROL Identification of converted contacts]**: directory van de bezoekers die een aankoop hebben gedaan na een hermarketingcampagne. De gegevens die door deze workflow worden verzameld, zijn toegankelijk in het **[!UICONTROL Re-marketing efficiency]** rapport. Raadpleeg deze [pagina](#creating-a-re-marketing-campaign).
+* **[!UICONTROL Sending of indicators and campaign attributes]**: Hiermee kunt u via Adobe Campaign e-mailcampagne-indicatoren verzenden naar de Adobe Experience Cloud via de gegevensconnector Adobe Analytics -. Deze workflow wordt elke dag om 4 uur gestart en het kan 24 uur duren voordat de gegevens naar Analytics worden verzonden.
 
    Deze workflow moet niet opnieuw worden gestart, anders worden alle eerdere gegevens opnieuw verzonden, waardoor de resultaten van Analytics kunnen worden scheefgetrokken.
 
@@ -232,7 +236,6 @@ Deze bestanden zijn beschikbaar in de Adobe Campagne-structuur, onder de **[!UIC
    * **[!UICONTROL Contact date]** (planning/@contactDate)
 
 
-* **Identificatie van omgezette contactpersonen**: directory van de bezoekers die een aankoop hebben gedaan na een hermarketingcampagne. De gegevens die door deze workflow worden verzameld, zijn toegankelijk in het **[!UICONTROL Re-marketing efficiency]** rapport (zie deze [pagina](../../platform/using/adobe-analytics-data-connector.md#creating-a-re-marketing-campaign)).
 
 ## Leveringen bijhouden in Adobe Campagne {#tracking-deliveries-in-adobe-campaign}
 
