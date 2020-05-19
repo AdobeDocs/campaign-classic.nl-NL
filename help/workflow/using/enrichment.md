@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 1aca6758bc787f91ae28d7d5add875edf04541e8
+workflow-type: tm+mt
+source-wordcount: '1290'
+ht-degree: 0%
 
 ---
 
@@ -55,7 +58,11 @@ Er zijn vier typen koppelingen:
 
    Deze optie is geconfigureerd op het **[!UICONTROL Reconciliation and deduplication]** tabblad dat toegankelijk is via de **[!UICONTROL Edit additional data]** koppeling van de **[!UICONTROL Enrichment]** activiteit.
 
-De [Verrijkende gegevens](../../workflow/using/enriching-data.md) en het [Creëren van een summiere lijst](../../workflow/using/creating-a-summary-list.md) gebruiken gevallen detailleert de werking van de activiteiten van de Verrijking in hun context.
+In de volgende secties zijn ook gebruiksgevallen te vinden waarin de activiteiten van verrijkingsactiviteiten in hun context worden beschreven:
+
+* [Verrijking via e-mail met aangepaste datumvelden](../../workflow/using/email-enrichment-with-custom-date-fields.md).
+* [Gegevens worden verrijkt](../../workflow/using/enriching-data.md)
+* [Een overzichtslijst maken](../../workflow/using/creating-a-summary-list.md)
 
 ## Informatie toevoegen {#adding-information}
 
@@ -122,7 +129,7 @@ Hiervoor voert u de volgende stappen uit:
    83TY2;SWITZERLAND;mike@gmail.com
    ```
 
-1. **Bewerk de verrijkingsactiviteit en klik op Gegevens** toevoegen... koppeling om een samenvoeging met de tabel Land te maken.
+1. Bewerk de verrijkingsactiviteit en klik op Gegevens **toevoegen...** koppeling om een samenvoeging met de tabel Land te maken.
 
    ![](assets/enrichment_edit_after_file_box.png)
 
@@ -148,7 +155,7 @@ U kunt een of meer verzoeningscriteria gebruiken.
 
 ![](assets/enrichment_reconciliations_tab_01.png)
 
-Als er meerdere samenvoegvoorwaarden zijn opgegeven, moeten deze ALLES worden gecontroleerd zodat de gegevens aan elkaar kunnen worden gekoppeld.
+Als er meerdere samenvoegvoorwaarden zijn opgegeven, moeten deze ALLES worden geverifieerd zodat de gegevens kunnen worden gekoppeld.
 
 ## Een voorstel invoegen {#inserting-an-offer-proposition}
 
@@ -211,7 +218,7 @@ Dit doet u als volgt:
 
 Wanneer een **verrijkingsactiviteit** wordt gebruikt om aanbiedingen te leveren, worden standaard hun classificaties en hun gewichten niet opgeslagen in de tabel met voorstellen.
 
- Deze informatie wordt standaard opgeslagen in de **[!UICONTROL Offer engine]** activiteit.
+Deze informatie wordt standaard opgeslagen in de **[!UICONTROL Offer engine]** activiteit.
 
 U kunt deze gegevens echter als volgt opslaan:
 
