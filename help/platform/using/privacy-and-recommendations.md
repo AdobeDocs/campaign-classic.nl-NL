@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 33bf5c5a08613cf88eaace91b85a76157cac7ba1
+source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+workflow-type: tm+mt
+source-wordcount: '824'
+ht-degree: 0%
 
 ---
 
@@ -32,13 +35,15 @@ Neem de tijd om door checklist [van de](https://docs.campaign.adobe.com/doc/AC/g
 
 ## Privacybeheer {#privacy-management}
 
+De Campagne van Adobe biedt een reeks hulpmiddelen om u te helpen aan de verordeningen van de Privacy (GDPR, CCPA, en meer.) voldoen.
+
 GDPR (General Data Protection Regulation) is de privacywet van de Europese Unie (EU) die de vereisten inzake gegevensbescherming harmoniseert en moderniseert. GDPR is van toepassing op klanten van de Campagne van Adobe die gegevens voor de Onderwerpen van Gegevens in de EU houden.
 
 CCPA (California Consumer Privacy Act) biedt inwoners van Californië nieuwe rechten met betrekking tot hun persoonlijke gegevens en legt verantwoordelijkheden op het gebied van gegevensbescherming op aan bepaalde entiteiten die zaken doen in Californië.
 
 Naast toestemmingsbeheer, de montages van het gegevensbehoud, en het rechtenbeheer, verstrekken wij, in onze rol als Bewerker van Gegevens, extra mogelijkheden om uw bereidheid als Controlemechanisme van Gegevens voor bepaalde verzoeken van de Privacy te helpen vergemakkelijken.
 
-In dit [artikel](https://helpx.adobe.com/campaign/kb/acc-privacy.html)leert u hoe u met Adobe Campaign de verschillende functies van de privacysleutel kunt beheren: Recht op toegang, recht om te worden vergeten, toestemming, gegevensbewaring en gebruikersrollen. U zult ook beste praktijken vinden, om u met uw naleving van de Privacy te helpen wanneer het gebruiken van onze dienst.
+In [dit artikel](https://helpx.adobe.com/campaign/kb/acc-privacy.html)leert u hoe u met Adobe Campaign de verschillende functies van de privacysleutel kunt beheren: Recht op toegang, recht om te worden vergeten, toestemming, gegevensbewaring en gebruikersrollen. U zult ook beste praktijken vinden, om u met uw naleving van de Privacy te helpen wanneer het gebruiken van onze oplossing.
 
 ## Cookies en trackingmogelijkheden {#cookies-and-tracking-capabilities}
 
