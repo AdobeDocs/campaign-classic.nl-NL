@@ -12,7 +12,10 @@ discoiquuid: null
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 79f8cc179fcbf9d537a1cc889b268a43202d7369
+source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+workflow-type: tm+mt
+source-wordcount: '1389'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +39,7 @@ Dit proces biedt klanten minstens één releasecyclus om hun implementatie aan e
 
 Deze sectie maakt een lijst van eigenschappen en mogelijkheden die als verouderd met recentste Klassieke versies van de Campagne zijn gemerkt.
 
-In het algemeen worden functies die in een toekomstige release verwijderd moeten worden, eerst vervangen, met een alternatief dat beschikbaar is. Deze functies en mogelijkheden zijn niet meer beschikbaar voor nieuwe standaardklanten van de campagne of moeten niet worden gebruikt voor nieuwe implementatie. Ze worden ook verwijderd uit de productdocumentatie.
+In het algemeen worden functies die in een toekomstige versie moeten worden verwijderd, eerst vervangen door een alternatief. Deze eigenschappen en mogelijkheden zijn of niet meer beschikbaar voor nieuwe Klassieke klanten van de Campagne, of zouden niet voor om het even welke nieuwe implementatie moeten worden gebruikt. Ze worden ook verwijderd uit de productdocumentatie.
 
 Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik maken van de functie/mogelijkheid en plannen te maken om hun implementatie te wijzigen en het geboden alternatief te gebruiken. Raadpleeg de verwijderingsdatum van het doel om uw omgeving en projectupdates dienovereenkomstig te plannen.
 
@@ -50,8 +53,8 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    <td><strong>Vervanging</strong></td> 
   </tr> 
    <tr> 
-   <td>Javascript SDK-beveiliging<br></td>
-   <td>decryptString<br></td>
+   <td>Javascript SDK-beveiliging<br> </td>
+   <td>decryptString<br> </td>
    <td><p>Om veiligheidsredenen is de <em>decryptString</em> -API niet meer standaard beschikbaar voor nieuwe installaties.</p> 
    <p>In de context van een postupgrade naar 18.6 (en hoger), wordt deze API niet meer geactiveerd en is deze vervangen door de functie <em>decryptPassword</em> .</p><br> </td>
   </tr> 
@@ -68,14 +71,14 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    <td><strong>Vervanging</strong></td> 
   </tr> 
    <tr> 
-   <td>E-mailarchivering<br></td>
-   <td>Archief<br>op basis van bestanden</td>
+   <td>E-mailarchivering<br> </td>
+   <td>Archivering op basis van bestanden<br> </td>
    <td><p>E-mailarchivering is nu beschikbaar via een specifiek BCC-e-mailadres. <a href="../../installation/using/email-archiving.md">Meer</a>informatie.</p> 
    <p><em>Doeldatum verwijdering: Release van campagne 20.2 - juni 2020</em></p><br> </td>
   </tr> 
    <tr> 
-   <td>Leadbeheer<br></td>
-   <td>Leads<br></td>
+   <td>Beheer van leads<br> </td>
+   <td>Leads<br> </td>
    <td><p>Het beheerpakket voor leads in Adobe Campaign Classic vereenvoudigt het proces voor het maken en onderhouden van de volledige levenscyclus van het leads-beheer. Vergelijkbare functionaliteit kan worden geïmplementeerd via andere native workflowactiviteiten en wijzigingen in gegevensmodellen.</p> 
    <p><em>Doeldatum verwijdering: Release van campagne 20.2 - juni 2020</em></p><br> </td>
   </tr> 
@@ -96,24 +99,24 @@ Vanaf 20.1 Februari Versie, is het volgende systeem verouderd voor de Klassieke 
    <td><strong>Vervanging</strong></td> 
   </tr> 
    <tr> 
-   <td>Campagne Classic Client Console 32 bits<br></td>
+   <td>Campagne Classic Client Console 32 bits<br> </td>
    <td><p>Campagne Classic Client Console 64 bits</p><br> </td>
   </tr> 
  </tbody> 
 </table>
 
-### Adobe Campaign 19.2-release {#compat-19-2-release}
+### Adobe Campaign 19.2-release  {#compat-19-2-release}
 
 Vanaf 19.2 Fall Release zijn de volgende besturingssystemen verouderd voor Campaign Classic. De verenigbaarheid zal in 2020 EOY eindigen.
 
-* Webserver: Apache 2.2. Meer [informatie](https://wiki.centos.org/About/Product)
+* Webserver: Apache 2.2. [Meer informatie](https://wiki.centos.org/About/Product)
 * Besturingssysteem: CentOS 6. [Meer informatie](https://wiki.centos.org/About/Product)
 
 Raadpleeg de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) om een upgrade naar een nieuwere versie uit te voeren of naar een nieuw systeem te gaan.
 
 ## Verwijderde functies {#removed-features}
 
-Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd uit Campagnestandaard.
+Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd uit Campagne Classic.
 
 <table> 
  <tbody> 
@@ -123,7 +126,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
    <td><strong>Versie</strong></td> 
   </tr> 
    <tr> 
-   <td>Campagne-APIs-documentatie - jsapi.chm-bestand<br></td>
+   <td>Campagne-APIs-documentatie - jsapi.chm-bestand<br> </td>
    <td>Klassieke API's voor campagnes zijn nu beschikbaar in een speciale pagina. Als u het bestand jsapi.chm gebruikte, moet u nu naar <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">de nieuwe onlineversie</a>verwijzen.</td>
    <td>19.1</td>
   </tr> 
@@ -138,7 +141,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
    <td>18.10</td>
   </tr> 
   <tr> 
-   <td>Push Notifications - iOS Binary Connector<br></td>
+   <td>Push Notifications - iOS Binary Connector<br> </td>
    <td>Conform de aanbeveling van Apple verwijdert Adobe de oudere iOS Binary Connector. De meer capabele en efficiëntere HTTP/2-gebaseerde schakelaar is reeds beschikbaar.</td>
    <td>18.10</td>
   </tr> 
@@ -173,7 +176,7 @@ Adobe Campaign Classic Client Console kan niet meer worden uitgevoerd op de volg
 Vanaf release 19.1 is Adobe Campaign niet meer compatibel met de volgende besturingssystemen.
 
 * Debian 7. [Meer](https://wiki.debian.org/DebianReleases)informatie.
-* RHEL 6.x. Meer [weten](https://access.redhat.com/support/policy/updates/errata)?
+* RHEL 6.x. [Meer](https://access.redhat.com/support/policy/updates/errata)informatie.
 * Windows Server 2008. [Meer](https://support.microsoft.com/en-us/lifecycle/search/1163)informatie.
 * SLES 11. [Meer](https://www.suse.com/lifecycle)informatie.
 
@@ -201,10 +204,10 @@ Verwijs naar de [Klassieke matrijs](https://helpx.adobe.com/campaign/kb/compatib
 Vanaf de 19.1-lenteversie is Adobe-campagne niet meer compatibel met de volgende FDA-servers.
 
 * Oracle 11G. [Meer](http://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)informatie.
-* PostgreSQL 9.3. Meer [weten](https://www.postgresql.org/support/versioning)?
+* PostgreSQL 9.3. [Meer](https://www.postgresql.org/support/versioning)informatie.
 * MySQL 5.5. &lt;[Meer](http://www.fromdual.com/support-for-mysql-from-oracle)informatie.
-* DB2 9.5. Meer [weten](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)?
-* Gegevens 14 - 14.1. Meer [weten](https://community.teradata.com/t5/Database/Teradata-Database-Product-Life-Cycle/td-p/35068)?
+* DB2 9.5. [Meer](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)informatie.
+* Gegevens 14 - 14.1. [Meer](https://community.teradata.com/t5/Database/Teradata-Database-Product-Life-Cycle/td-p/35068)informatie.
 
 Campagne Classic is niet compatibel met de volgende servers in FDA (Federated Data Access).
 
