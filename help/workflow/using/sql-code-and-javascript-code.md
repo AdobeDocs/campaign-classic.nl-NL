@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 16e35b62cdf42c04139cc17645095a3d1f6e0fa7
+source-git-commit: 26ba86073e4f1569bf05a7d8aa864ca87baed3ea
+workflow-type: tm+mt
+source-wordcount: '201'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 16e35b62cdf42c04139cc17645095a3d1f6e0fa7
 
 ## SQL-code {#sql-code}
 
-Een **[!UICONTROL SQL code*]* activiteit voert een SQL manuscript uit. Het script is een JST-sjabloon.
+Een **[!UICONTROL SQL code]** activiteit voert een SQL manuscript uit. Het script is een JST-sjabloon.
 
 ![](assets/sql_code.png)
 
@@ -50,14 +53,14 @@ Een **[!UICONTROL SQL code*]* activiteit voert een SQL manuscript uit. Het scrip
 
    ![](assets/javascript_code.png)
 
-   * **[!UICONTROL Script]**:Het centrale gebied van de editor bevat het script dat moet worden uitgevoerd.
-   * **[!UICONTROL Processing errors]**:Raadpleeg [Verwerkingsfouten](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+   * **[!UICONTROL Script]**: Het centrale gebied van de editor bevat het script dat moet worden uitgevoerd.
+   * **[!UICONTROL Processing errors]**: Raadpleeg [Verwerkingsfouten](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
 
 * **[!UICONTROL Advanced JavaScript code]**
 
    ![](assets/advanced_javascript_code.png)
 
-   * **[!UICONTROL First call]**:De eerste streek van de redacteur bevat het manuscript om tijdens de eerste vraag uit te voeren.
-   * **[!UICONTROL Next calls]**:De tweede streek van de redacteur bevat het manuscript om tijdens de volgende vraag uit te voeren.
-   * **[!UICONTROL Transitions]**:U kunt verschillende uitvoerovergangen voor activiteiten definiëren.
-   * **[!UICONTROL Schedule]**:Op het **[!UICONTROL Schedule]** tabblad kunt u plannen wanneer de activiteit moet worden geactiveerd.
+   * **[!UICONTROL First call]**: De eerste streek van de redacteur bevat het manuscript om tijdens de eerste vraag uit te voeren.
+   * **[!UICONTROL Next calls]**: De tweede streek van de redacteur bevat het manuscript om tijdens de volgende vraag uit te voeren.
+   * **[!UICONTROL Transitions]**: U kunt verschillende uitvoerovergangen voor activiteiten definiëren.
+   * **[!UICONTROL Schedule]**: Op het **[!UICONTROL Schedule]** tabblad kunt u plannen wanneer de activiteit moet worden geactiveerd.
