@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 0d2270c9d980d963437f9bb5cf37795474d261d6
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +52,10 @@ Klik op de **[!UICONTROL Edit configuration...]** koppeling om de deduplicatiemo
 
    ![](assets/s_user_segmentation_dedup_param2.png)
 
-   In de volgende stap kunt u met de **[!UICONTROL Other]** optie het criterium of de criteria selecteren die u wilt gebruiken:
+   >[!NOTE]
+   >
+   >Als u externe gegevens als invoer gebruikt, bijvoorbeeld uit een extern bestand, moet u de **[!UICONTROL Temporary schema]** optie selecteren.
+In de volgende stap kunt u met de **[!UICONTROL Other]** optie het criterium of de criteria selecteren die u wilt gebruiken:
 
    ![](assets/s_user_segmentation_dedup_param3.png)
 
@@ -75,7 +81,7 @@ Klik op de **[!UICONTROL Edit configuration...]** koppeling om de deduplicatiemo
       ![](assets/s_user_segmentation_dedup_param7.png)
    Klik **[!UICONTROL Finish]** om de geselecteerde deduplicatiemethode goed te keuren.
 
-   De middelste sectie van het venster vat de bepaalde configuratie samen.
+   Het middelste gedeelte van het venster geeft een overzicht van de gedefinieerde configuratie.
 
    In de onderste sectie van het venster van de activiteitenredacteur, kunt u het etiket voor de uitgaande overgang van het grafische voorwerp wijzigen en een segmentcode ingaan die met het resultaat van de activiteit zal worden geassocieerd. Deze code kan later als het richten criterium worden gebruikt.
 
