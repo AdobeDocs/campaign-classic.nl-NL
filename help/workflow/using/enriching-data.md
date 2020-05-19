@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 1aca6758bc787f91ae28d7d5add875edf04541e8
+workflow-type: tm+mt
+source-wordcount: '744'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +28,8 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 ## Informatie over het verrijken van gegevens {#about-enriching-data}
 
 In dit geval worden mogelijke toepassingen van de **[!UICONTROL Enrichment]** activiteit in een doelworkflow beschreven. Raadpleeg voor meer informatie over het gebruik van de **[!UICONTROL Enrichment]** activiteit: [Verrijking](../../workflow/using/enrichment.md).
+
+Een gebruiksscenario voor het verrijken van een e-maillevering met aangepaste datums is ook beschikbaar in [deze sectie](../../workflow/using/email-enrichment-with-custom-date-fields.md).
 
 De contactpersonen in de marketingdatabase worden via een webtoepassing uitgenodigd deel te nemen aan een wedstrijd. De resultaten van de mededinging worden in de **[!UICONTROL Competition results]** tabel teruggevorderd. Deze tabel is gekoppeld aan de tabel met contactpersonen (**[!UICONTROL Recipients]**). De **[!UICONTROL Competition results]** tabel bevat de volgende velden:
 
@@ -63,7 +68,7 @@ De tweede vraag laat ons toe om de ontvangers te richten die aan de laatste conc
 
 Een **[!UICONTROL Intersection]** typeactiviteit wordt dan toegevoegd om de ontvangers te richten die aan het gegevensbestand binnen de laatste zes maanden worden toegevoegd en die de laatste concurrentie zijn ingegaan.
 
-## Stap 2:Verrijking {#step-2--enrichment}
+## Stap 2: Verrijking {#step-2--enrichment}
 
 In dit voorbeeld, willen wij leveringen volgens het **[!UICONTROL Score]** gebied personaliseren dat in de **[!UICONTROL Competition results]** lijst wordt opgeslagen. Deze lijst heeft een 1-n typeverhouding met de lijst van ontvangers. De **[!UICONTROL Enrichment]** activiteit laat ons toe om gegevens van een lijst toe te voegen verbonden aan de het filtreren dimensie aan de het werklijst van het werkschema.
 
@@ -75,19 +80,19 @@ In dit voorbeeld, willen wij leveringen volgens het **[!UICONTROL Score]** gebie
 
    ![](assets/uc1_enrich_7.png)
 
-1. Voer een id en een label in en selecteer de **[!UICONTROL Limit the line count]** optie in het **[!UICONTROL Data collected]** veld. Selecteer in het **[!UICONTROL Lines to retrieve]** veld &#39;1&#39; als waarde. Voor elke ontvanger, zal de verrijkingsactiviteit één enkele lijn van de **[!UICONTROL Competition results]** lijst aan de het werklijst van het werkschema toevoegen. Klik **[!UICONTROL Next]**.
+1. Voer een id en een label in en selecteer de **[!UICONTROL Limit the line count]** optie in het **[!UICONTROL Data collected]** veld. Selecteer in het **[!UICONTROL Lines to retrieve]** veld &#39;1&#39; als waarde. Voor elke ontvanger, zal de verrijkingsactiviteit één enkele lijn van de **[!UICONTROL Competition results]** lijst aan de het werklijst van het werkschema toevoegen. Klik op **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_8.png)
 
-1. In dit voorbeeld willen we de hoogste score van de ontvanger terugkrijgen, maar alleen voor de laatste competitie. Hiervoor voegt u een filter toe aan het **[!UICONTROL Competition name]** veld om alle regels uit te sluiten die betrekking hebben op eerdere vergelijkende onderzoeken. Klik **[!UICONTROL Next]**.
+1. In dit voorbeeld willen we de hoogste score van de ontvanger terugkrijgen, maar alleen voor de laatste competitie. Hiervoor voegt u een filter toe aan het **[!UICONTROL Competition name]** veld om alle regels uit te sluiten die betrekking hebben op eerdere vergelijkende onderzoeken. Klik op **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_9.png)
 
-1. Ga naar het **[!UICONTROL Sort]** scherm en klik op de **[!UICONTROL Add]** knop, selecteer het **[!UICONTROL Score]** veld en schakel het selectievakje in de **[!UICONTROL descending]** kolom in om items van de **[!UICONTROL Score]** velden in aflopende volgorde te sorteren. Voor elke ontvanger voegt de verrijkingsactiviteit een regel toe die overeenkomt met de hoogste score voor de laatste game. Klik **[!UICONTROL Next]**.
+1. Ga naar het **[!UICONTROL Sort]** scherm en klik op de **[!UICONTROL Add]** knop, selecteer het **[!UICONTROL Score]** veld en schakel het selectievakje in de **[!UICONTROL descending]** kolom in om items van de **[!UICONTROL Score]** velden in aflopende volgorde te sorteren. Voor elke ontvanger voegt de verrijkingsactiviteit een regel toe die overeenkomt met de hoogste score voor de laatste game. Klik op **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_10.png)
 
-1. Dubbelklik in het **[!UICONTROL Data to add]** venster op het **[!UICONTROL Score]** veld. Voor elke ontvanger voegt de verrijkingsactiviteit alleen het **[!UICONTROL Score]** veld toe. Klik **[!UICONTROL Finish]**.
+1. Dubbelklik in het **[!UICONTROL Data to add]** venster op het **[!UICONTROL Score]** veld. Voor elke ontvanger voegt de verrijkingsactiviteit alleen het **[!UICONTROL Score]** veld toe. Klik op **[!UICONTROL Finish]**.
 
    ![](assets/uc1_enrich_11.png)
 
