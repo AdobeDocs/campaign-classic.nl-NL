@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e82605eda5bccd2e5604614acd4cb7d646822fc
+source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
 workflow-type: tm+mt
-source-wordcount: '6502'
+source-wordcount: '6464'
 ht-degree: 0%
 
 ---
@@ -23,19 +23,18 @@ ht-degree: 0%
 
 # Documentatieupdates{#documentation-updates}
 
-Meer informatie over alle nieuwste updates voor de documentatie van Adobe Campaign Classic.
+Deze pagina bevat een overzicht van alle nieuwe functies en documentatieupdates per maand en de campagneversie.
 
-Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates voor elke release van Adobe Campaign Classic.
+U kunt ook de [Adobe Campagne Classic Release Notes](../../rn/using/latest-release.md) raadplegen voor meer updates.
 
-U kunt ook de opmerkingen bij de release [Adobe Campaign Classic raadplegen](../../rn/using/latest-release.md).
 
 ## mei 2020 {#may-2020}
 
-De sectie Te leveren items controleren is verplaatst en gereorganiseerd. [Meer informatie](../../delivery/using/monitoring-deliverability.md)
+De sectie Te leveren items controleren is verplaatst en verbeterd. [Meer informatie](../../delivery/using/monitoring-deliverability.md)
 
-De sectie voor het oplossen van problemen met betrekking tot levering is verplaatst en bijgewerkt. [Meer informatie](../../delivery/using/deliverability-faq.md)
+De sectie voor het oplossen van problemen met betrekking tot de aflevering is verplaatst en verbeterd. [Meer informatie](../../delivery/using/deliverability-faq.md)
 
-De sectie Een nieuw platform starten is uitgebreid. [Meer informatie](../../delivery/using/starting-new-platform.md)
+Richtlijnen voor de leveringszekerheid bij het starten van een nieuwe platformsectie zijn verbeterd. [Meer informatie](../../delivery/using/starting-new-platform.md)
 
 De sectie E-mailberichten over transacties verzenden met bijlagen is verplaatst en bijgewerkt. [Meer informatie](../../message-center/using/transactional-email-with-attachments.md)
 
@@ -45,11 +44,11 @@ De tabel met FDA-rechten is verplaatst naar de documentatie van Accessing an ext
 
 De veelgestelde vragen zijn bijgewerkt met tips over het wissen van zachte en harde cache. [Meer informatie](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)
 
-De sectie met best practices voor gegevensmodellen is verbeterd met aanvullende informatie over indexen. [Meer informatie](../../configuration/using/data-model-best-practices.md#indexes)
+De beste praktijken van het gegevensmodel zijn verbeterd met extra informatie over indexen. [Meer informatie](../../configuration/using/data-model-best-practices.md#indexes)
 
-De sectie waarin het vooraf gedefinieerde gegevensmodel van de campagne van Adobe wordt beschreven, is bijgewerkt met meer informatie over elke tabel buiten de box en met koppelingen naar de relevante modules. [Meer informatie](../../configuration/using/data-model-description.md)
+De sectie die het ingebouwde gegevensmodel van de Campagne van Adobe beschrijft is bijgewerkt met meer details op elke lijst. [Meer informatie](../../configuration/using/data-model-description.md)
 
-Gebruiksgevallen uit de gids &quot;Automatiseren met workflows&quot; zijn ingedeeld in thematische onderdelen. [Meer informatie](../../workflow/using/using-the-local-approval-activity.md)
+Gebruiksscenario&#39;s voor workflowgebruik zijn bijgewerkt en opnieuw ingedeeld in thematische onderdelen. [Meer informatie](../../workflow/using/using-the-local-approval-activity.md)
 
 De secties [Bounce Mail Qualification](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) en [Email Management Rules](../../delivery/using/understanding-delivery-failures.md#email-management-rules) zijn uitgebreid met bijgewerkte informatie.
 
@@ -57,29 +56,29 @@ Het Adobe Campaign Enhanced MTA-artikel is bijgewerkt. Het is nu alleen van toep
 
 ## maart 2020 {#march-2020}
 
-De pagina met best practices voor gegevensmodellen is bijgewerkt met nieuwe secties, waaronder [reeksen](../../configuration/using/data-model-best-practices.md#sequences), [prestaties](../../configuration/using/data-model-best-practices.md#performance) en [grote tabellen](../../configuration/using/data-model-best-practices.md#large-tables). [Meer informatie](../../configuration/using/data-model-best-practices.md)
+De beste praktijken van het gegevensmodel zijn bijgewerkt met nieuwe secties met inbegrip van [Reeksen](../../configuration/using/data-model-best-practices.md#sequences), [Prestaties](../../configuration/using/data-model-best-practices.md#performance) en [Grote lijsten](../../configuration/using/data-model-best-practices.md#large-tables), onder andere. [Meer informatie](../../configuration/using/data-model-best-practices.md)
 
-Er is nu een nieuwe sectie beschikbaar met een beschrijving van het vooraf gedefinieerde gegevensmodel van de Adobe-campagne en de interactie van tabellen buiten de box. [Meer informatie](../../configuration/using/data-model-description.md)
+Er is nu een nieuw gedeelte beschikbaar waarin het ingebouwde gegevensmodel en de interactie tussen tabellen van Adobe Campaign worden beschreven. [Meer informatie](../../configuration/using/data-model-description.md)
 
-Er zijn extra bronnen toegevoegd aan de pagina &quot;Documentstartpagina&quot;. [Meer informatie](../../campaign-classic-home.md)
+Er zijn extra belangrijke koppelingen toegevoegd aan de documentatiehomepage. [Meer informatie](../../campaign-classic-home.md)
 
 Er is een gebruiksscenario toegevoegd voor het integreren van een dynamische aanbieding van Adobe Target in een e-mailbericht in Adobe Campaign. [Meer informatie](../../integrations/using/inserting-a-dynamic-image.md)
 
 Er is nu een nieuwe sectie beschikbaar met de verschillende talen die beschikbaar zijn in Adobe Campaign. [Meer informatie](../../platform/using/adobe-campaign-workspace.md#languages)
 
-De pagina van het Toegangsbeheer is bijgewerkt met meer informatie over Benoemde rechten. [Meer informatie](../../platform/using/access-management.md#named-rights)
+De richtlijnen voor toegangsbeheer zijn bijgewerkt met meer informatie over benoemde rechten. [Meer informatie](../../platform/using/access-management.md#named-rights)
 
 ## februari 2020 {#february-2020}
 
 Er is nu een nieuwe sectie beschikbaar met de aanbevolen procedures en aanbevelingen voor het ontwerpen van het gegevensmodel van de Adobe-campagne. [Meer informatie](../../configuration/using/data-model-best-practices.md)
 
-De sectie &quot;E-maillevering&quot; heet nu gewijzigd in &quot;Configuraties van technische e-mail&quot;. [Meer informatie](../../installation/using/email-deliverability.md)
+Een nieuwe sectie is beschikbaar over Technische e-mailconfiguraties. [Meer informatie](../../installation/using/email-deliverability.md)
 
-Het document met veelgestelde vragen over de aflevering is bijgewerkt met meer informatie over het foutbericht &#39;met quota&#39;s beantwoord&#39;. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ)
+De Veelgestelde vragen over aflevering zijn bijgewerkt met meer informatie over het foutbericht &#39;met quota&#39;s beantwoord&#39;. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ)
 
-AMP for Email wordt nu ondersteund door drie e-mailproviders (Gmail, Outlook en Mail.ru). De sectie waarin wordt beschreven hoe u interactieve inhoud met AMP definieert, is bijgewerkt. [Meer informatie](../../delivery/using/defining-interactive-content.md)
+AMP for Email wordt nu ondersteund door nieuwe e-mailproviders: de desbetreffende documentatie is bijgewerkt. [Meer informatie](../../delivery/using/defining-interactive-content.md)
 
-De sectie E-mailarchivering is verduidelijkt. [Meer informatie](../../installation/using/email-archiving.md#recommendations-and-limitations)
+De sectie E-mailarchivering is verbeterd. [Meer informatie](../../installation/using/email-archiving.md#recommendations-and-limitations)
 
 ## 20.1 - 17/02/2020{#release-20-1}
 
@@ -91,7 +90,7 @@ Verbeteringen voor de Hadoop FDA-aansluiting - [Meer informatie](../../platform/
 
 **Overige documentatie-updates die bij de release worden geleverd**
 
-De [installatie](../../installation/using/before-reading.md), de [productie](../../production/using/foreword.md) en de [configuratiegidsen](../../configuration/using/additional-parameters.md) zijn bijgewerkt met de nieuwe systeemeenheid die door het opstarten van de netwerkdienst wordt gebruikt. U kunt nog steeds /etc/init.d/nlserver6 gebruiken, maar we raden u aan nu de systeemopdracht te gebruiken voor interactie met de Nlserver-service.
+De [installatie](../../installation/using/before-reading.md), de [productie](../../production/using/foreword.md) en de [configuratiegidsen](../../configuration/using/additional-parameters.md) zijn bijgewerkt met de nieuwe systeemeenheid die door het opstarten van de netwerkdienst wordt gebruikt. U kunt /etc/init.d/nlserver6 nog steeds gebruiken, maar Adobe raadt u aan de systeemopdracht nu te gebruiken voor interactie met de Nlserver-service.
 
 De installatiehandleiding is bijgewerkt en gesynchroniseerd met de nieuwste versie van de compatibiliteitsmatrix. Er zijn nieuwe ondersteunde systemen toegevoegd. Voorvallen van verouderde en niet-ondersteunde systemen zijn verwijderd. [Meer informatie](../../installation/using/before-reading.md)
 
@@ -181,7 +180,7 @@ De voorbeelden voor API-aanroepen die een **HttpServletRequest** met aanmeldings
 
 Een aanbeveling voor **sqlDefault** attribuut in schemadefinitie is toegevoegd. [Lees meer](../../configuration/using/elements-and-attributes.md#attribute-description).
 
-In de handleiding **Integrating with Adobe Experience Cloud** wordt nu verwezen naar de integratie tussen Adobe Campagne en Adobe Real-time Customer Data Platform. [Lees meer](../../integrations/using/about-campaign-integrations.md).
+In de handleiding **Integrating with Adobe Experience Cloud** wordt nu verwezen naar de integratie tussen Adobe Campaign en Adobe Real-time Customer Data Platform. [Lees meer](../../integrations/using/about-campaign-integrations.md).
 
 ## november 2019 {#november-2019}
 
