@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e1937c1ddcbde092a22f4fe8c50d3d72b02cfeed
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '461'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +47,7 @@ Deze methode markeert ook gebruikers die te veel objecten maken.
 
 ## Leveringen {#deliveries}
 
-Op elk moment moeten er minder dan 1000 leveringen plaatsvinden. Veel leveringen verbruiken databaseruimte en veroorzaken problemen. Een geval dat tot meer dan 10 leveringen per dag leidt moet tegen bedrijfsvereisten worden gecontroleerd. Overweeg continue leveringen te gebruiken om minder leveringen te maken. Zie [deze sectie](../../workflow/using/continuous-delivery.md)voor meer informatie.
+Op elk moment moeten er minder dan 1000 leveringen plaatsvinden. Veel leveringen verbruiken databaseruimte en veroorzaken problemen. Een geval dat tot meer dan 10 leveringen per dag leidt moet tegen bedrijfsvereisten worden gecontroleerd. Overweeg continue leveringen te gebruiken om minder leveringen te maken. For more on this, refer to [this section](../../workflow/using/continuous-delivery.md).
 
 Leveringen ouder dan twee jaar moeten uit het geval worden verwijderd.
 
@@ -58,7 +61,7 @@ Als een werkstroom bestanden importeert en geen gebruik maakt van de standaardfu
 
 ## Transactionele gegevens en logboeken {#transactional-data-and-logs}
 
-Elke [workflow](../../workflow/using/executing-a-workflow.md#work-table) die gegevens importeert in Adobe Campaign, zorgt ervoor dat de database groter wordt.
+Elke [workflow](../../workflow/using/data-life-cycle.md#work-table) die gegevens importeert in Adobe Campaign, zorgt ervoor dat de database groter wordt.
 
 Controleer of werkstromen voor opschonen of leegmaken worden uitgevoerd en of de records op effectieve wijze worden gewist. Alle transactiegegevens en logbestanden moeten worden gewist. Met de opschoningstaak worden alleen de standaardtabellen verwijderd: bijhouden en brede logboeken. Specifieke tabellen moeten worden leeggemaakt door specifieke workflows. Zie [deze sectie](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
 
