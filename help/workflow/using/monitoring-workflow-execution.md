@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 202f571f5c348ca4ab617821cd1ec24cefa8c504
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '2006'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +53,7 @@ Het logbestand bevat de geschiedenis of audittrail van de workflow. Hiermee word
 
    ![](assets/new-workflow-display-log-tab.png)
 
-* Filter de logboekberichten door activiteit. Klik hiertoe op **[!UICONTROL Display the tasks and the log]** de werkbalk boven het diagram om de tabbladen **[!UICONTROL Log]** en **[!UICONTROL Tasks]** tabbladen onder het diagram weer te geven. Selecteer een activiteit om alle verwante berichten te bekijken. Deze lijst bevat alle berichten als er geen activiteit is geselecteerd.
+* Filter de logboekberichten door activiteit. Klik hiertoe op **[!UICONTROL Display the tasks and the log]** de werkbalk boven het diagram om de **[!UICONTROL Log]** en de **[!UICONTROL Tasks]** tabbladen onder het diagram weer te geven. Selecteer een activiteit om alle verwante berichten te bekijken. Deze lijst bevat alle berichten als er geen activiteit is geselecteerd.
 
    ![](assets/new-workflow-display-log-activity.png)
 
@@ -102,7 +105,7 @@ Het logboek toont de chronologische lijst van uitvoeringsberichten met betrekkin
 
 ## De logbestanden leegmaken {#purging-the-logs}
 
-Workflowgeschiedenis wordt niet automatisch gewist: alle berichten worden standaard gehouden. De geschiedenis kan worden gewist via het **[!UICONTROL File > Actions]** menu of door op de **[!UICONTROL Actions]** knop in de werkbalk boven de lijst te klikken. Selecteer **[!UICONTROL Purge history]**. De opties in het **[!UICONTROL Actions]** menu worden beschreven in de sectie [Handelingen](../../workflow/using/executing-a-workflow.md#actions-toolbar) .
+Workflowgeschiedenis wordt niet automatisch gewist: alle berichten worden standaard gehouden. De geschiedenis kan worden gewist via het **[!UICONTROL File > Actions]** menu of door op de **[!UICONTROL Actions]** knop in de werkbalk boven de lijst te klikken. Selecteer **[!UICONTROL Purge history]**. De opties in het **[!UICONTROL Actions]** menu worden beschreven in de sectie [Handelingen](../../workflow/using/starting-a-workflow.md) .
 
 ![](assets/purge_historique.png)
 
@@ -112,7 +115,7 @@ De workflow geeft worktables weer die via bepaalde activiteiten kunnen worden ge
 
 Het is ook mogelijk om verbindingen tussen diverse het werkdimensies tot stand te brengen en afmetingsveranderingen te bepalen. Voor elk contract dat bijvoorbeeld in de database is opgenomen, richt u zich tot de hoofdhouder en gebruikt u de gegevens van de medehouder in de aanvullende informatie.
 
-De werktabellen van de workflow worden automatisch verwijderd wanneer de workflow wordt gepassiveerd. Als u een werktabel wilt behouden, slaat u deze op in een lijst via de **[!UICONTROL List update]** activiteit (zie [Lijstupdate](../../workflow/using/list-update.md)).
+De werktafels van de workflow worden automatisch verwijderd wanneer de workflow wordt gepassiveerd. Als u een werktabel wilt behouden, slaat u deze op in een lijst via de **[!UICONTROL List update]** activiteit (zie [Lijstupdate](../../workflow/using/list-update.md)).
 
 ## Fouten beheren {#managing-errors}
 
@@ -235,7 +238,7 @@ Let op:
    logInfo("Workflow already running, parallel execution not allowed.");
    ```
 
-In deze rubriek wordt een gebruiksgeval weergegeven: Updates [van gegevens](../../workflow/using/coordinating-data-updates.md)coördineren.
+In deze rubriek wordt een gebruiksgeval weergegeven: [Gegevens-updates](../../workflow/using/coordinating-data-updates.md)coördineren.
 
 ## Database-onderhoud {#database-maintenance}
 
@@ -257,7 +260,7 @@ Deze periodes kunnen via de optie NmsServer_PausedWorkflowPeriod worden gevormd.
 
 Workflowtoezichthouders worden op de hoogte gesteld. De maker en laatste gebruiker die de workflow heeft gewijzigd, wordt ook op de hoogte gesteld. Beheerders ontvangen de meldingen niet.
 
-## Workflows filteren op basis van hun status{#filtering-workflows-status}
+## Workflows filteren op basis van hun status {#filtering-workflows-status}
 
 Met de klassieke interface van Campagne kunt u de uitvoeringsstatus van alle workflows op uw instantie controleren met behulp van vooraf gedefinieerde **weergaven**. Open het knooppunt **[!UICONTROL Administration]**/**[!UICONTROL Audit]**/**[!UICONTROL Workflows Status]** om deze weergaven te openen.
 
