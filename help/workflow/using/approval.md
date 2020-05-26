@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '547'
+ht-degree: 0%
 
 ---
 
@@ -70,7 +73,7 @@ Klik op de **[!UICONTROL Advanced parameters...]** koppeling om de leveringssjab
 
 Deze sjabloon kan worden gewijzigd om de berichtlay-out aan te passen, maar u kunt het beste een kopie maken. Het doelmechanisme (extern bestand, doeltoewijzing) mag niet worden gewijzigd omdat meldingen correct moeten werken.
 
-Een goedkeuringsvoorbeeld wordt getoond in het [Definiëren van goedkeuringen](../../workflow/using/executing-a-workflow.md#defining-approvals).
+Een goedkeuringsvoorbeeld wordt getoond in het [Definiëren van goedkeuringen](../../workflow/using/defining-approvals.md).
 
 ## Uitvoerparameters {#output-parameters}
 
