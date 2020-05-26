@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '539'
+ht-degree: 0%
 
 ---
 
@@ -64,13 +67,13 @@ Naast de gebruikelijke verpersoonlijkingsgebieden, kunt u verpersoonlijkingsgebi
 
 ![](assets/s_advuser_using_additional_data.png)
 
-De gegevens in de workflowtabel worden aangeduid met de naam: het wordt altijd samengesteld uit de **targetData** verbinding. Raadpleeg de [doelgegevens](../../workflow/using/executing-a-workflow.md#target-data)voor meer informatie hierover.
+De gegevens in de workflowtabel worden aangeduid met de naam: het wordt altijd samengesteld uit de **targetData** verbinding. Raadpleeg de [doelgegevens](../../workflow/using/data-life-cycle.md#target-data)voor meer informatie hierover.
 
 In het kader van de e-maillevering kunnen personaliseringsgebieden ook gegevens gebruiken van doeluitbreiding die in de het richten werkschemasfases wordt uitgevoerd, zoals aangetoond in het hieronder voorbeeld:
 
 ![](assets/s_advuser_add_data_email.png)
 
-Als een segmentcode in een het richten activiteit wordt gespecificeerd, wordt het toegevoegd aan een specifieke kolom van de werkschemalijst en zal samen met de verpersoonlijkingsgebieden worden aangeboden. Als u alle aanpassingsvelden wilt weergeven, klikt u op de **[!UICONTROL Target extension > Other...]** koppeling die toegankelijk is via de aanpassingsknop.
+Als een segmentcode in een het richten activiteit wordt gespecificeerd, wordt het toegevoegd aan een specifieke kolom van de werkschemalijst en zal samen met de verpersoonlijkingsgebieden worden aangeboden. Als u alle aanpassingsvelden wilt weergeven, klikt u op de **[!UICONTROL Target extension > Other...]** koppeling die via de aanpassingsknop toegankelijk is.
 
 ![](assets/s_advuser_segment_code_select.png)
 
