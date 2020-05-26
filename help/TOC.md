@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campagne classic
 translation-type: tm+mt
-source-git-commit: 24a50fcaad4d9081e5504652eb5b73aa7db1e65f
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2090'
 ht-degree: 0%
 
 ---
@@ -327,8 +327,13 @@ ht-degree: 0%
       + [Doelgegevens](workflow/using/targeting-data.md)
       + [Gegevens importeren](workflow/using/importing-data.md)
       + [Werkstroomgegevens gebruiken](workflow/using/how-to-use-workflow-data.md)
-      + [Een workflow uitvoeren](workflow/using/executing-a-workflow.md)
       + [Best practices voor workflows](workflow/using/workflow-best-practices.md)
+   + Een workflow uitvoeren {#executing-a-workflow}
+      + [Een workflow starten](workflow/using/starting-a-workflow.md)
+      + [Levenscyclus van werkstroom](workflow/using/workflow-life-cycle.md)
+      + [Levenscyclus gegevens](workflow/using/data-life-cycle.md)
+      + [Goedkeuringen definiëren](workflow/using/defining-approvals.md)
+      + [Architectuur](workflow/using/architecture.md)
    + Gerichte activiteiten {#targeting-activities}
       + [Over doelactiviteiten](workflow/using/about-targeting-activities.md)
       + [Query](workflow/using/query.md)
