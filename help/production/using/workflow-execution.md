@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 69b562979f3b32a4d30dfed0695cf3cf6c0fd26a
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,8 @@ In de onderstaande sectie vindt u informatie over algemene problemen met betrekk
 Raadpleeg de volgende secties voor meer informatie over workflows:
 
 * [Workflows](../../workflow/using/about-workflows.md)
-* [Een workflow uitvoeren](../../workflow/using/executing-a-workflow.md)
+* [Een workflow starten](../../workflow/using/starting-a-workflow.md)
+* [Levenscyclus van werkstroom](../../workflow/using/workflow-life-cycle.md)
 * [Tips en trucs bij het gebruik van workflows](../../workflow/using/workflow-best-practices.md)
 
 ## Zo snel mogelijk starten in campagnes {#start-as-soon-as-possible-in-campaigns}
@@ -121,5 +125,5 @@ Voer de volgende stappen uit om dit te controleren en de module indien nodig te 
 Als een werkstroom mislukt, voert u de volgende stappen uit:
 
 1. Controleer het werkstroomjournaal. Raadpleeg voor meer informatie de secties Uitvoering [van de](../../workflow/using/monitoring-workflow-execution.md) controlewerkstroom en Logboeken [](../../workflow/using/monitoring-workflow-execution.md#displaying-logs) weergeven.
-1. Technische workflows controleren. Zie de [volgende sectie](../../workflow/using/monitoring-technical-workflows.md)voor meer informatie.
+1. Technische workflows controleren. For more on this refer to the [this section](../../workflow/using/monitoring-technical-workflows.md).
 1. Zoek naar mislukkingen op de individuele werkschemaactiviteiten.
