@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9773e8ae39133968e4e167d11715c123e00d22c2
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
 workflow-type: tm+mt
 source-wordcount: '3227'
 ht-degree: 0%
@@ -538,7 +538,7 @@ De **nlserver sms** module vraagt de router van SMS met regelmatige intervallen.
 
 * **Abonnement opzeggen**: ontvangers die de levering van SMS willen ophouden kunnen een bericht terugkeren dat het woord STOP bevat. Als uw leverancier het onder de voorwaarden van het contract toestaat, kunt u berichten via de **Binnenkomende het werkschemaactiviteit van SMS** terugwinnen en dan een vraag creëren om **niet meer contact deze ontvankelijke** optie voor de betrokken ontvangers toe te laten.
 
-   Raadpleeg de [handleiding voor workflows](../../workflow/using/executing-a-workflow.md#architecture) .
+   Raadpleeg de [handleiding voor workflows](../../workflow/using/architecture.md) .
 
 ## InSMS-schema {#insms-schema}
 
