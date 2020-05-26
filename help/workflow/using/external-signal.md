@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ U kunt deze activiteit vormen om gebeurtenissen te bepalen als geen signaal word
 
 ![](assets/edit_signal.png)
 
-De configuratie van verlopen wordt gedetailleerd beschreven in [Verlopen](../../workflow/using/executing-a-workflow.md#expirations).
+De configuratie van verlopen wordt gedetailleerd beschreven in [Verlopen](../../workflow/using/defining-approvals.md).
 
 In het veld **Vertraging** kunt u een vertraging bij verlopen opgeven in de gewenste eenheden. Zie [Wacht](../../workflow/using/wait.md).
 
