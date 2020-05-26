@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '1634'
+ht-degree: 0%
 
 ---
 
@@ -155,7 +158,7 @@ De volgende fasen voor het samenstellen van gegevens zijn bedoeld:
 1. Voor het voorbereiden van gegevens om aan leveringsbehoeften te voldoen, verwijs naar het [Verrijken en het wijzigen van gegevens](../../workflow/using/targeting-data.md#enriching-and-modifying-data).
 1. Voor het gebruiken van gegevens om updates of binnen een levering uit te voeren, verwijs naar het [Bijwerken van het gegevensbestand](../../workflow/using/how-to-use-workflow-data.md#updating-the-database).
 
-De resultaten van alle verrijkingen en alle handgrepen die tijdens het richten worden uitgevoerd worden opgeslagen en toegankelijk op verpersoonlijkingsgebieden, met name voor gebruik wanneer het creëren van gepersonaliseerde berichten. Raadpleeg de [doelgegevens voor meer informatie](../../workflow/using/executing-a-workflow.md#target-data)
+De resultaten van alle verrijkingen en alle handgrepen die tijdens het richten worden uitgevoerd worden opgeslagen en toegankelijk op verpersoonlijkingsgebieden, met name voor gebruik wanneer het creëren van gepersonaliseerde berichten. Raadpleeg de [doelgegevens voor meer informatie](../../workflow/using/data-life-cycle.md#target-data)
 
 ### Afmetingen gericht en filteren {#targeting-and-filtering-dimensions}
 
@@ -207,7 +210,7 @@ De **[!UICONTROL Campaign process]** submap centraliseert de workflows die nodig
 
 U kunt andere technische werkschema&#39;s in de **[!UICONTROL Administration > Production > Technical workflows]** knoop van de boomstructuur tot stand brengen. Dit proces is echter voorbehouden aan professionele gebruikers.
 
-De aangeboden activiteiten zijn dezelfde als voor workflows die zich op de werkstroom richten. Raadpleeg de stappen [voor](#implementation-steps-)implementatie voor meer informatie.
+De aangeboden activiteiten zijn hetzelfde als voor workflows die zich op werkstromen richten. Raadpleeg de stappen [voor](#implementation-steps-)implementatie voor meer informatie.
 
 ## Workflowsjablonen {#workflow-templates}
 
