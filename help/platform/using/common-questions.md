@@ -14,7 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9a1db0fbced3550621c5520656a34344128ee13f
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Hebt u hulp nodig terwijl u met Campaign Classic werkt? Lees de 10 bovenste vrag
 
 Adobe Campaign Classic gebruikt met name een scala aan technologie om waarde te bieden. Deze combinatie technologieën vereist u om uw Klassieke instantie(s) van de Campagne regelmatig te bevorderen, om ervoor te zorgen de meest bijgewerkte versies worden gebruikt om superieure veiligheid, stabiliteit, en prestaties te leveren.
 
-Als u Adobe Managed Services gebruikt, kunt u profiteren van de upgrade Campagne Gold Standard. Raadpleeg [dit artikel](https://helpx.adobe.com/campaign/kb/gold-standard.html)voor meer informatie.
+Als u Adobe Managed Services gebruikt, kunt u profiteren van de upgrade Campagne Gold Standard. For more on this refer to [this article](https://helpx.adobe.com/campaign/kb/gold-standard.html).
 
 [Lees dit artikel](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) om te leren hoe u uw omgeving kunt bijwerken en [Algemene vragen](https://helpx.adobe.com/campaign/kb/build-upgrade-faq.html) over dit specifieke onderwerp kunt lezen.
 
@@ -49,9 +52,9 @@ Adobe Campagne wordt geleverd met een reeks dashboards en tools om uw e-mailleve
 
 [Klik hier om te leren](../../delivery/using/monitoring-a-delivery.md) hoe u ervoor kunt zorgen dat uw berichten worden verzonden, hoe u de uitvoering kunt controleren en actie kunt ondernemen als er een fout optreedt.
 
-## 5.Kan ik de uitvoering van de workflow controleren? {#can-i-monitor-workflow-execution}
+## 5. Kan ik de uitvoering van de workflow controleren? {#can-i-monitor-workflow-execution}
 
-Begrijp hoe te om de werkschemauitvoering van de Campagne [in deze pagina](../../workflow/using/executing-a-workflow.md)te controleren.
+Begrijp hoe te om de werkschemauitvoering van de Campagne [in deze pagina](../../workflow/using/starting-a-workflow.md)te controleren.
 
 ## 6. Hoe kan ik verbinding maken met Campaign Classic? {#how-can-i-connect-to-campaign-classic-}
 
