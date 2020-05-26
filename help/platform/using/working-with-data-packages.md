@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 4ea5504bcfe306c5c5dc4b5fd685d898766d1685
+workflow-type: tm+mt
+source-wordcount: '2481'
+ht-degree: 0%
 
 ---
 
@@ -335,3 +338,128 @@ De standaardpakketten worden geïnstalleerd wanneer de Campagne van Adobe wordt 
 Raadpleeg de licentieovereenkomst om te controleren welke pakketten u kunt installeren.
 
 Raadpleeg [deze pagina](../../installation/using/installing-campaign-standard-packages.md)voor meer informatie over standaardpakketten.
+
+## Aanbevolen werkwijzen voor gegevenspakketten {#data-package-best-practices}
+
+In deze sectie wordt beschreven hoe u gegevenspakketten op consistente wijze kunt ordenen gedurende de levensduur van het project.
+
+<!--Adobe Campaign allows you to export or import the platform configuration through a package system.-->
+
+Pakketten kunnen verschillende configuraties en elementen bevatten, al dan niet gefilterd. Als u sommige elementen mist of geen elementen/pakketten in de correcte orde invoert, kan de platformconfiguratie breken.
+
+Bovendien kan de map met pakketspecificaties snel complex worden, aangezien meerdere mensen met veel verschillende functies aan hetzelfde platform werken.
+
+Hoewel dit niet verplicht is, biedt deze sectie een oplossing om pakketten in de Campagne van Adobe voor grootschalige projecten te organiseren en te gebruiken.
+
+<!--This solution has been used with a project involving more than 10 consultants.-->
+
+De belangrijkste beperkingen zijn:
+* Pakketten organiseren en bijhouden wat er is gewijzigd en wanneer
+* Als een configuratie wordt bijgewerkt, minimaliseert u het risico om iets te breken dat niet rechtstreeks aan de update is gekoppeld
+
+>[!NOTE]
+>
+>Zie [deze pagina](https://helpx.adobe.com/campaign/kb/export-packages-automatically.html)voor meer informatie over het instellen van een workflow voor het automatisch exporteren van pakketten.
+
+### Aanbevelingen {#data-package-recommendations}
+
+Importeer altijd binnen dezelfde versie van het platform. U moet controleren dat u uw pakketten tussen twee instanties opstelt die de zelfde bouwstijl hebben. Dwing nooit de import en werk altijd eerst het platform bij (als de build anders is).
+
+>[!IMPORTANT]
+>
+>Het importeren tussen verschillende versies wordt niet ondersteund door Adobe.
+<!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won’t be able to help you resolve any issues you encounter.-->
+
+Let op het schema en de databasestructuur. De invoer van pakket met schema moet door schemageneratie worden gevolgd.
+
+### Oplossing {#data-package-solution}
+
+#### Pakkettypen {#package-types}
+
+Begin door verschillende typen pakketten te definiëren. Er worden slechts vier typen gebruikt:
+
+**Entiteiten**
+* Alle specifieke elementen &quot;xtk&quot; en &quot;nms&quot; in Adobe Campagne, zoals schema&#39;s, formulieren, mappen, leveringssjablonen, enz.
+* U kunt een entiteit beschouwen als zowel een element &quot;admin&quot; als een element &quot;platform&quot;.
+* U mag niet meer dan één entiteit in een pakket opnemen wanneer u het pakket uploadt naar een Campagne-instantie.
+
+<!--Nothing “works” alone. An entity package does not have a specific role or objective.-->
+
+Als u uw configuratie op een nieuw geval moet opstellen, kunt u al uw entiteitpakketten invoeren.
+
+**Functies** Dit type pakket:
+* Beantwoord een cliëntvereiste/specificatie.
+* Bevat een of meer functies.
+* Alle afhankelijkheden moeten worden opgenomen om de functionaliteit zonder enig ander pakket te kunnen uitvoeren.
+
+**Campagnes** Dit pakket is niet verplicht. Het is soms nuttig om een specifiek type voor alle campagnes te creëren, zelfs als een campagne als eigenschap kan worden gezien.
+
+**Updates** Zodra gevormd, kan een eigenschap in een ander milieu worden uitgevoerd. Het pakket kan bijvoorbeeld worden geëxporteerd van een ontwikkelomgeving naar een testomgeving. Bij deze test wordt een defect aan het licht gebracht. In de eerste plaats moet het worden aangepast aan de ontwikkelomgeving. Vervolgens moet de pleister op het testplatform worden aangebracht.
+
+De eerste oplossing zou zijn om de hele functie opnieuw te exporteren. Maar om elk risico te vermijden (het bijwerken van ongewenste elementen) is het veiliger om een pakket te hebben dat alleen de correctie bevat.
+
+Daarom raden we u aan een updatepakket te maken dat slechts één eenheidstype van de functie bevat.
+
+Een update kan niet alleen een oplossing zijn, maar ook een nieuw element van uw entiteit/functie/campagnemakket. Als u wilt voorkomen dat het hele pakket wordt geïmplementeerd, kunt u een updatepakket exporteren.
+
+### Naamconventies {#data-package-naming}
+
+Nu er typen zijn gedefinieerd, moeten we een naamgevingsconventie opgeven. In Adobe Campaign kunnen geen submappen voor pakketspecificaties worden gemaakt. Dit houdt in dat getallen de beste oplossing zijn om georganiseerd te blijven. Nummervoorvoegselpakketnamen. U kunt de volgende conventie gebruiken:
+
+* Entiteit: van 1 tot en met 99
+* Functie: van 100 tot en met 199
+* Campagne: van 200 tot en met 299
+* Bijwerken: 5000 tot en met 5999
+
+### Pakketten {#data-packages}
+
+>[!NOTE]
+>
+>Het is beter regels op te stellen voor het bepalen van het juiste aantal pakketten.
+
+#### Volgorde van pakketten voor entiteiten {#entity-packages-order}
+
+Om het importeren te vergemakkelijken, moeten eenheidspakketten worden geordend op het moment dat ze worden geïmporteerd. Bijvoorbeeld:
+* 001 - Schema
+* 002 - Formulier
+* 003 - Afbeeldingen
+* enz.
+
+>[!NOTE]
+>
+>Formulieren mogen alleen worden geïmporteerd nadat het schema is bijgewerkt.
+
+#### Pakket 200 {#package-200}
+
+Pakketnummer &quot;200&quot; mag niet worden gebruikt voor een specifieke campagne: dit nummer zal worden gebruikt om iets bij te werken dat alle campagnes aangaat .
+
+#### Pakket bijwerken {#update-package}
+
+Het laatste punt betreft de nummering van updatepakketten. Het is uw pakketnummer (entiteit, functie of campagne) met het voorvoegsel &quot;5&quot;. Bijvoorbeeld:
+* 5001 om één schema bij te werken
+* 5200 om alle campagnes bij te werken
+* 5101 om de 101-functie bij te werken
+
+Het updatepakket mag slechts één specifieke entiteit bevatten, zodat het gemakkelijk opnieuw kan worden gebruikt. Als u deze wilt splitsen, voegt u een nieuw nummer toe (begin vanaf 1). Er zijn geen specifieke bestelregels voor deze pakketten. Om beter te begrijpen, veronderstel dat wij een 101 eigenschap, een sociale toepassing hebben:
+* Het bevat een webApp en een externe account.
+   * Het etiket van de verpakking is: 101 - Sociale toepassing (socialApplication).
+* Er is een fout opgetreden in de webApp.
+   * De wepApp wordt gecorrigeerd.
+   * Er moet een reparatiepakket met de volgende naam worden gemaakt: 5101 - 1 - Webtoepassing voor sociale toepassingen (socialApplication_webApp).
+* Er moet een nieuwe externe rekening worden toegevoegd voor het sociale aspect.
+   * Externe account wordt gemaakt.
+   * Het nieuwe pakket is: 5101 - 2 - Externe account voor sociale toepassing (socialApplication_extAccount).
+   * Parallel hieraan wordt het 101-pakket bijgewerkt en toegevoegd aan de externe account, maar het wordt niet geïmplementeerd.
+      ![](assets/ncs_datapackage_best-practices-1.png)
+
+#### Pakketdocumentatie {#package-documentation}
+
+Wanneer u een pakket bijwerkt, moet u altijd een opmerking in het beschrijvingsveld plaatsen om eventuele wijzigingen en redenen (bijvoorbeeld &quot;voeg een nieuw schema toe&quot; of &quot;repareer een fout&quot;) nader toe te lichten.
+
+![](assets/ncs_datapackage_best-practices-2.png)
+
+De opmerking moet u ook op de hoogte brengen. Meld uw opmerking over een updatepakket altijd aan het &quot;bovenliggende item&quot; (pakket zonder het voorvoegsel 5).
+
+>[!IMPORTANT]
+>
+>Het beschrijvingsveld mag maximaal 2.000 tekens bevatten.
