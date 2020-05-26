@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f5062117b5cefbdd2570018f6803f114c14a3fae
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '809'
+ht-degree: 0%
 
 ---
 
@@ -76,7 +79,7 @@ We maken een e-mail waarin we eerst de naam van de ontvanger invoegen en vervolg
 
    >[!NOTE]
    >
-   >Wanneer een levering deel uitmaakt van een workflow, kunt u de gegevens uit de tabel met tijdelijke werkstromen gebruiken. Deze gegevens worden gegroepeerd in het **[!UICONTROL Target extension]** menu. Zie [deze sectie](../../workflow/using/executing-a-workflow.md#target-data)voor meer informatie.
+   >Wanneer een levering deel uitmaakt van een workflow, kunt u de gegevens uit de tabel met tijdelijke werkstromen gebruiken. Deze gegevens worden gegroepeerd in het **[!UICONTROL Target extension]** menu. For more on this, refer to [this section](../../workflow/using/data-life-cycle.md#target-data).
 
 ## Aanpassing optimaliseren {#optimizing-personalization}
 
@@ -90,7 +93,7 @@ Bijvoorbeeld, als u prestatieskwesties wanneer het leveren aan een hoog aantal o
 
 Volg onderstaande stappen om deze optie te gebruiken:
 
-1. Maak een campagne. Zie [deze sectie](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)voor meer informatie.
+1. Maak een campagne. For more on this, refer to [this section](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
 1. Voeg op het **[!UICONTROL Targeting and workflows]** tabblad van uw campagne een **query** -activiteit toe aan uw workflow. Raadpleeg [deze sectie](../../workflow/using/query.md)voor meer informatie over het gebruik van deze activiteit.
 1. Voeg een **[!UICONTROL Email delivery]** activiteit aan het werkschema toe en open het. Raadpleeg [deze sectie](../../workflow/using/delivery.md)voor meer informatie over het gebruik van deze activiteit.
 1. Ga naar het **[!UICONTROL Analysis]** tabblad van de optie **[!UICONTROL Delivery properties]** en selecteer de **[!UICONTROL Prepare the personalization data with a workflow]** optie.
