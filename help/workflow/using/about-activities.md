@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '98'
+ht-degree: 0%
 
 ---
 
@@ -34,5 +37,5 @@ Meer informatie:
 
 * [Informatie over doelactiviteiten](../../workflow/using/about-targeting-activities.md)
 * [Gegevens importeren](../../workflow/using/importing-data.md)
-* [Een workflow uitvoeren](../../workflow/using/executing-a-workflow.md)
+* [Een workflow uitvoeren](../../workflow/using/starting-a-workflow.md)
 * [Best practices voor workflows](../../workflow/using/workflow-best-practices.md)
