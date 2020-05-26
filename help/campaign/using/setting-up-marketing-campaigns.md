@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ Een marketingcampagne maken:
 
    Zie [De doelpopulatie](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)selecteren.
 
-1. Leveringen maken: selecteert u kanalen en definieert u de inhoud die u wilt verzenden.
+1. Leveringen maken: selecteert u de kanalen en definieert u de inhoud die u wilt verzenden.
 
    Zie [Leveringen](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries)maken.
 
@@ -63,7 +66,7 @@ Om uw omslaghiërarchie voor marketing plannen en programma&#39;s te vormen:
    ![](assets/create_plan_1.png)
 
 1. Wijzig de naam van het abonnement.
-1. **Klik met de rechtermuisknop op het zojuist gemaakte abonnement en selecteer** Eigenschappen... .
+1. Klik met de rechtermuisknop op het zojuist gemaakte abonnement en selecteer **Eigenschappen...**.
 
    ![](assets/create_plan_2.png)
 
@@ -146,7 +149,7 @@ U kunt de wizard voor het maken van plannen gebruiken om alle uitvoeringsdatums 
 
 ![](assets/s_ncs_user_op_template_recur_planning_wz.png)
 
-De configuratiewijze van het uitvoeringsprogramma valt samen met het **[!UICONTROL Scheduler]** voorwerp van het Werkschema. Zie [deze sectie](../../workflow/using/executing-a-workflow.md#architecture)voor meer informatie.
+De configuratiewijze van het uitvoeringsprogramma valt samen met het **[!UICONTROL Scheduler]** voorwerp van het Werkschema. For more on this, refer to [this section](../../workflow/using/architecture.md).
 
 >[!IMPORTANT]
 >
@@ -229,7 +232,7 @@ Een periodieke campagne is een campagne die op een specifiek malplaatje wordt ge
 
    >[!IMPORTANT]
    >
-   >De periodieke campagnemalplaatjes creëren nieuwe campagnes volgens het hierboven bepaalde programma. Daarom moet deze bewerking zorgvuldig worden uitgevoerd om overbelasting van de Adobe Campaign-database te voorkomen.
+   >De periodieke campagnemalplaatjes creëren nieuwe campagnes volgens het hierboven bepaalde programma. Deze moet daarom zorgvuldig worden voltooid om overbelasting van de Adobe Campaign-database te voorkomen.
 
 1. Wanneer de begindatum van de uitvoering is bereikt, wordt de overeenkomende campagne automatisch gemaakt. Het neemt alle kenmerken van zijn malplaatje over.
 
