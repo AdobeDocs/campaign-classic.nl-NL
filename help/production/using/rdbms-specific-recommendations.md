@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '1090'
+ht-degree: 0%
 
 ---
 
@@ -99,7 +102,7 @@ vacuum full nmsdelivery;
 >* Adobe raadt u aan de tabellen toe te voegen die specifiek zijn voor uw gegevensmodel en die kunnen worden bijgewerkt. Dit kan het geval voor **NmsRecipient** zijn als u grote dagelijkse gegevensreplicatiestromen hebt.
 >* De **vacuüm** en **re-index** bevelen zullen de lijst sluiten, die sommige processen onderbreekt terwijl het onderhoud wordt uitgevoerd.
 >* Voor zeer grote tabellen (meestal boven 5 GB) kan **vacuüm vol** tamelijk inefficiënt worden en erg lang duren. Adobe raadt u niet aan deze methode te gebruiken voor de **tabel YyyNmsBroadLogXxx** .
->* Deze onderhoudsbewerking kan worden geïmplementeerd door een Adobe Campagne-workflow met een **[!UICONTROL SQL]** activiteit (zie [deze sectie](../../workflow/using/executing-a-workflow.md#architecture)voor meer informatie). Zorg ervoor dat u onderhoud plant voor een lage activiteitstijd die niet in strijd is met uw back-upvenster.
+>* Deze onderhoudsbewerking kan worden geïmplementeerd door een Adobe Campagne-workflow met een **[!UICONTROL SQL]** activiteit (zie [deze sectie](../../workflow/using/architecture.md)voor meer informatie). Zorg ervoor dat u onderhoud plant voor een lage activiteitstijd die niet in strijd is met uw back-upvenster.
 >
 
 
