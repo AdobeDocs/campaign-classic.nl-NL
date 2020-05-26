@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4b4ec97e52a494dd88b2516650ae514294f00934
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '1610'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +52,7 @@ Er zijn twee aanvullende oplossingen beschikbaar om u te helpen:
    Deze optie is beschikbaar op het **[!UICONTROL Execution]** tabblad met workfloweigenschappen en registreert alle SQL-query&#39;s die door het gereedschap worden gegenereerd op basis van de verschillende activiteiten. Het is een goede manier om te zien wat er daadwerkelijk door het platform wordt uitgevoerd. Deze optie mag echter alleen tijdelijk tijdens de ontwikkeling worden gebruikt en niet tijdens de productie worden geactiveerd.
 
 Leeg de logboeken als ze niet meer nodig zijn. Workflowgeschiedenis wordt niet automatisch gewist: alle berichten worden standaard gehouden. De geschiedenis kan worden gewist via het **[!UICONTROL File > Actions]** menu of door op de knop Handelingen in de werkbalk boven de lijst te klikken. Selecteer Geschiedenis leegmaken.
-Raadpleeg deze [documentatie](../../workflow/using/executing-a-workflow.md#actions-toolbar)voor meer informatie over het leegmaken van uw logbestanden.
+Raadpleeg deze [documentatie](../../workflow/using/starting-a-workflow.md)voor meer informatie over het leegmaken van uw logbestanden.
 
 ### Workflowplanning {#workflow-planning}
 
@@ -109,7 +112,7 @@ U kunt de ernst van een werkstroom in de werkschemaeigenschappen, op het **[!UIC
 
 * Normaal
 * Productie
-*  Kritiek
+* Kritiek
 
 Door deze informatie op te geven tijdens het maken van een workflow, kunt u de ernst van het geconfigureerde proces beter begrijpen.
 
