@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e16d4de068f8cb1e61069aa53626f7bf7021466
+source-git-commit: e3de6f7b21d912efa4f6faca5e57cb480e8f1805
+workflow-type: tm+mt
+source-wordcount: '1036'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 2e16d4de068f8cb1e61069aa53626f7bf7021466
 
 ## Gebruiken {#use}
 
-Met deze **[!UICONTROL Load (File)]** activiteit hebt u rechtstreeks toegang tot een bron met externe gegevens en kunt u deze gebruiken in Adobe Campaign. Alle gegevens die vereist zijn voor doelbewerkingen worden niet altijd gevonden in de Adobe Campagne-database: het kan in externe dossiers ter beschikking worden gesteld.
+Met deze **[!UICONTROL Data loading (File)]** activiteit hebt u rechtstreeks toegang tot een bron met externe gegevens en kunt u deze gebruiken in Adobe Campaign. Alle gegevens die vereist zijn voor doelbewerkingen worden niet altijd gevonden in de Adobe Campagne-database: het kan in externe dossiers ter beschikking worden gesteld.
 
 Het bestand dat moet worden geladen, kan worden opgegeven door de overgang of worden berekend tijdens de uitvoering van deze activiteit. Bijvoorbeeld, kan het de lijst van 10 favoriete producten van een cliënt zijn de waarvan aankopen in een extern gegevensbestand worden beheerd.
 
@@ -111,7 +114,7 @@ In het volgende voorbeeld kunt u elke dag een bestand op de server verzamelen, d
 
    * de eerste kolom bevat een code die samenvalt met de gebeurtenis: aankoop (meer of minder dan 3000 euro), geen aankoop of terugbetaling voor een of meer aankopen.
    * de vier volgende kolommen bevatten de voornaam, achternaam, e-mail en het rekeningnummer van de klant.
-   De indelingsconfiguratie van het te laden bestand valt samen met de configuratie die is gedefinieerd tijdens het importeren van gegevens in Adobe Campaign. Zie deze [sectie](../../platform/using/importing-data.md#step-2---source-file-selection)voor meer informatie.
+   De indelingsconfiguratie van het te laden bestand valt samen met de configuratie die is gedefinieerd tijdens het importeren van gegevens in Adobe Campaign. For more on this, refer to this [section](../../platform/using/importing-data.md#step-2---source-file-selection).
 
 1. Geef bij de splitsingsactiviteit de subsets op die u wilt maken, op basis van de waarde in de kolom **Gebeurtenis** .
 
