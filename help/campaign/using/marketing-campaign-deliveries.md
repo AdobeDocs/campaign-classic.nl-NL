@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '2928'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +45,7 @@ Voor elke levering definieert de campagnemanager:
 
 * Het hoofddoel. Zie [Het hoofddoel opbouwen in een workflow](#building-the-main-target-in-a-workflow) en de doelpopulatie [](#selecting-the-target-population)selecteren voor meer informatie.
 * De controlegroep. Voor meer op dit, verwijs naar het [Bepalen van een controlegroep](#defining-a-control-group).
-* De zaadadressen. Zie [deze sectie](../../delivery/using/about-seed-addresses.md)voor meer informatie.
+* De zaadadressen. For more on this, refer to [this section](../../delivery/using/about-seed-addresses.md).
 
 Enkele van deze gegevens worden overgenomen van de sjabloon.
 
@@ -70,7 +73,7 @@ U kunt een populatie in een lijst importeren en deze lijst vervolgens als doel i
 
 Het hoofddoel van een levering kan ook worden gedefinieerd in de doelworkflow: in deze grafische omgeving kunt u een doel maken met behulp van query&#39;s, tests en operatoren: verenigen, dedupliceren, delen, enz.
 
-De handleiding [Automating with workflows](../../workflow/using/executing-a-workflow.md#architecture) bevat een gedetailleerde beschrijving van de werking van de workflowmodule.
+De handleiding [Automating with workflows](../../workflow/using/architecture.md) bevat een gedetailleerde beschrijving van de werking van de workflowmodule.
 
 >[!IMPORTANT]
 >
@@ -104,7 +107,7 @@ De functies voor het uitvoeren en opmaken van werkstromen voor het opgeven van d
 
 >[!NOTE]
 >
->De activiteiten beschikbaar om het diagram evenals alle vertoning en lay-outeigenschappen te bouwen zijn gedetailleerd in het [Automatiseren met werkschema](../../workflow/using/executing-a-workflow.md#architecture) gids.
+>De activiteiten beschikbaar om het diagram evenals alle vertoning en lay-outeigenschappen te bouwen zijn gedetailleerd in het [Automatiseren met werkschema](../../workflow/using/architecture.md) gids.
 
 U kunt verschillende doelworkflows voor één campagne maken. Een workflow toevoegen:
 
@@ -207,7 +210,7 @@ De controlegroep kan uit het belangrijkste doel worden gehaald en/of uit een spe
 U kunt een controlegroep op campagneniveau bepalen, waarbij de controlegroep op elke levering van de betrokken campagne zal worden toegepast.
 
 1. Bewerk de desbetreffende campagne en klik op het **[!UICONTROL Edit]** tabblad.
-1. Klik **[!UICONTROL Advanced campaign settings]**.
+1. Klik op **[!UICONTROL Advanced campaign settings]**.
 
    ![](assets/s_ncs_user_edit_op_target.png)
 
@@ -252,7 +255,7 @@ Klik **[!UICONTROL Next]** om de sorteervolgorde te definiëren (indien nodig) e
 
 ![](assets/s_ncs_user_edit_op_target_param.png)
 
-Deze configuratie is gelijk aan een deelactiviteit in de workflow, waarmee u het doel kunt onderverdelen in subsets. De controlegroep is één van deze subsets. Raadpleeg de [volgende sectie](../../workflow/using/executing-a-workflow.md#architecture) voor meer informatie.
+Deze configuratie is gelijk aan een deelactiviteit in de workflow, waarmee u het doel kunt onderverdelen in subsets. De controlegroep is één van deze subsets. Raadpleeg de [volgende sectie](../../workflow/using/architecture.md) voor meer informatie.
 
 ### Een populatie toevoegen {#adding-a-population}
 
@@ -388,7 +391,7 @@ In het dashboard worden de documenten die bij de campagne horen gegroepeerd in d
 
 ![](assets/s_ncs_user_op_edit_document.png)
 
-U kunt ze ook vanuit deze weergave bewerken en wijzigen.
+Deze kunnen ook vanuit deze weergave worden bewerkt en gewijzigd.
 
 ### Middelen koppelen en structureren via een leveringsoverzicht {#associating-and-structuring-resources-linked-via-a-delivery-outline}
 
@@ -442,7 +445,7 @@ Een overzicht kan punten en verpersoonlijkingsgebieden, middelen en aanbiedingen
 
 #### Een omtrek selecteren {#selecting-an-outline}
 
-Voor elke levering kunt u de omtrek selecteren die u wilt koppelen in de sectie die is gereserveerd voor de extractieomtrek, zoals in het volgende voorbeeld:
+Voor elke levering, kunt u het overzicht selecteren om van de sectie te associëren die voor het extractieoverzicht wordt gereserveerd, zoals in het volgende voorbeeld:
 
 ![](assets/s_ncs_user_op_select_composition.png)
 
