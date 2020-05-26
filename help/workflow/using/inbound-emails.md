@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 9e5a499d723d3e4126f533b6c7dd63073aff3d09
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 0%
 
 ---
 
@@ -82,5 +85,5 @@ Het eerste lusje van de **Binnenkomende E-mails** activiteit laat u de parameter
 
    ![](assets/email_rec_edit_3.png)
 
-   De configuratie is het zelfde als voor de het plannen activiteit. Zie [Verlopen](../../workflow/using/executing-a-workflow.md#expirations).
+   De configuratie is het zelfde als voor de het plannen activiteit. Zie [Verlopen](../../workflow/using/defining-approvals.md).
 
