@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+source-git-commit: 5d8959dc790c0cf0e6ea62122310bfbee5bcc0dd
 workflow-type: tm+mt
-source-wordcount: '6464'
+source-wordcount: '6477'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,8 @@ De sectie voor het oplossen van problemen met betrekking tot de aflevering is ve
 Richtlijnen voor de leveringszekerheid bij het starten van een nieuwe platformsectie zijn verbeterd. [Meer informatie](../../delivery/using/starting-new-platform.md)
 
 De sectie E-mailberichten over transacties verzenden met bijlagen is verplaatst en bijgewerkt. [Meer informatie](../../message-center/using/transactional-email-with-attachments.md)
+
+De sectie met aanbevolen werkwijzen in het gegevenspakket is verplaatst en bijgewerkt. [Meer informatie](../../platform/using/working-with-data-packages.md#data-package-best-practices)
 
 ## april 2020 {#april-2020}
 
@@ -180,7 +182,7 @@ De voorbeelden voor API-aanroepen die een **HttpServletRequest** met aanmeldings
 
 Een aanbeveling voor **sqlDefault** attribuut in schemadefinitie is toegevoegd. [Lees meer](../../configuration/using/elements-and-attributes.md#attribute-description).
 
-In de handleiding **Integrating with Adobe Experience Cloud** wordt nu verwezen naar de integratie tussen Adobe Campaign en Adobe Real-time Customer Data Platform. [Lees meer](../../integrations/using/about-campaign-integrations.md).
+In de handleiding **Integrating with Adobe Experience Cloud** wordt nu verwezen naar de integratie tussen Adobe Campagne en Adobe Real-time Customer Data Platform. [Lees meer](../../integrations/using/about-campaign-integrations.md).
 
 ## november 2019 {#november-2019}
 
