@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ea5504bcfe306c5c5dc4b5fd685d898766d1685
+source-git-commit: 8089eb39e7326408f94b5fd6acacd8950c0e6021
 workflow-type: tm+mt
 source-wordcount: '2481'
 ht-degree: 0%
@@ -387,14 +387,20 @@ Begin door verschillende typen pakketten te definiëren. Er worden slechts vier 
 
 Als u uw configuratie op een nieuw geval moet opstellen, kunt u al uw entiteitpakketten invoeren.
 
-**Functies** Dit type pakket:
+**Functies**
+
+Dit type pakket:
 * Beantwoord een cliëntvereiste/specificatie.
 * Bevat een of meer functies.
 * Alle afhankelijkheden moeten worden opgenomen om de functionaliteit zonder enig ander pakket te kunnen uitvoeren.
 
-**Campagnes** Dit pakket is niet verplicht. Het is soms nuttig om een specifiek type voor alle campagnes te creëren, zelfs als een campagne als eigenschap kan worden gezien.
+**Campagnes**
 
-**Updates** Zodra gevormd, kan een eigenschap in een ander milieu worden uitgevoerd. Het pakket kan bijvoorbeeld worden geëxporteerd van een ontwikkelomgeving naar een testomgeving. Bij deze test wordt een defect aan het licht gebracht. In de eerste plaats moet het worden aangepast aan de ontwikkelomgeving. Vervolgens moet de pleister op het testplatform worden aangebracht.
+Dit pakket is niet verplicht. Het is soms nuttig om een specifiek type voor alle campagnes te creëren, zelfs als een campagne als eigenschap kan worden gezien.
+
+**Updates**
+
+Zodra gevormd, kan een eigenschap in een ander milieu worden uitgevoerd. Het pakket kan bijvoorbeeld worden geëxporteerd van een ontwikkelomgeving naar een testomgeving. Bij deze test wordt een defect aan het licht gebracht. In de eerste plaats moet het worden aangepast aan de ontwikkelomgeving. Vervolgens moet de pleister op het testplatform worden aangebracht.
 
 De eerste oplossing zou zijn om de hele functie opnieuw te exporteren. Maar om elk risico te vermijden (het bijwerken van ongewenste elementen) is het veiliger om een pakket te hebben dat alleen de correctie bevat.
 
