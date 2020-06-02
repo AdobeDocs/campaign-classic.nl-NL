@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a976144d70b113d1358b0514a3e805d79e11484a
+source-git-commit: 5b6b4fd2b21f90a88744736b499eab1b0764774e
 workflow-type: tm+mt
 source-wordcount: '3740'
 ht-degree: 0%
@@ -60,6 +60,13 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
    <td> Lijst van schema's waarvoor u testadressen voor het Teruggeven Inbox wilt gebruiken. (elementnamen worden met komma's van elkaar gescheiden), bijvoorbeeld: custom_nms_receiving.<br /> </td> 
   </tr> 
   <tr> 
+   <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
+   <td><p> Hiermee kunt u toestaan dat de exploitant die verantwoordelijk is voor de levering de verzending bevestigt, als een specifieke exploitant of groep exploitanten is aangewezen voor het starten van een levering in de eigendommen van de levering.</p><p> Hiervoor activeert u de optie door "1" als waarde in te voeren. Voer 0 in om deze optie te deactiveren.</p><p> Het proces voor bevestiging verzenden werkt dan als standaard: alleen de exploitant of groep van exploitanten die voor de verzending zijn aangewezen in de leveringseigenschappen (of een beheerder) kan de verzending bevestigen en uitvoeren. Zie <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">deze sectie</a>.</p> </td> 
+   <tr> 
+   <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
+   <td> Adobe Campagne gebruikt een globale variabele "Nms_DefaultRcpSchema"aan dialoog met het gebrek ontvankelijke gegevensbestand (nms:ontvanger).<br /> De waarde van de optie moet overeenkomen met de naam van het schema dat overeenkomt met de tabel voor externe ontvangers.<br /> </td> 
+  </tr> 
+  <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
    <td> Minimumaantal ontvangers om een levering als belangrijkste in het factureringsrapport te beschouwen.<br /> </td> 
   </tr> 
@@ -94,10 +101,6 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveDuplicatesRecipients</span> <br /> </td> 
    <td> Als u "1" opgeeft als waarde, kunt u dubbele waarden automatisch negeren.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
-   <td> Adobe Campagne gebruikt een globale variabele "Nms_DefaultRcpSchema"aan dialoog met het gebrek ontvankelijke gegevensbestand (nms:ontvanger).<br /> De waarde van de optie moet overeenkomen met de naam van het schema dat overeenkomt met de tabel voor externe ontvangers.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ErrorAddressMasks</span> <br /> </td> 
@@ -164,6 +167,10 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
    <td> Lijst van geoorloofde het door:sturen e-mailadressen (van de binnenkomende module van de postverwerking). De adressen moeten door komma's (of * worden gescheiden om allen toe te staan). Bijvoorbeeld xyz@abc.com,pqr@abc.com.<br /> </td> 
   </tr> 
   <tr> 
+   <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
+   <td> AES-sleutel die wordt gebruikt in het servlet 'lineImage' om de URL's (LINE-kanaal) te coderen.<br /> </td> 
+  </tr> 
+  <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailMaxError</span> <br /> </td> 
    <td> Op kanaal "email" (standaard gebruiken): Maximale aantal fouten dat wordt geaccepteerd, voor SOFT-fouten tijdens het verzenden voordat de ontvanger in quarantaine wordt geplaatst.<br /> </td> 
   </tr> 
@@ -180,9 +187,21 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
    <td> Op kanaal "mobile": Minimale periode die moet worden doorgebracht sinds de vorige SOFT-fout waarnaar wordt verwezen, voordat u rekening houdt met een nieuwe SOFT-fout.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
-   <td> URL van de spiegelpaginaserver (door gebrek, zou identiek moeten zijn aan NmsTracking_ServerUrl).<br /> Het is de standaardwaarde van e-mailleveringen wanneer URL niet in de verpletterende definitie wordt gespecificeerd.<br /> </td> 
+   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
+   <td> Staat een maximumperiode (die in uren wordt uitgedrukt) toe om te worden gespecificeerd het aantal uitzendingen te beperken die telkens als het synchronisatiewerkschema wordt uitgevoerd worden teruggekregen.</a>.<br /> </td> 
   </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
+   <td> Maximum aantal vraag in sessie MidSourcing, die parallel (3 door gebrek) kan worden in werking gesteld.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsMTA_Alert_Delay</span> <br /> </td> 
+   <td> Aangepaste vertraging (in minuten) waarna een levering wordt beschouwd als 'vertraagd', de standaardwaarde is 30 minuten.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
+   <td><p>Deze optie wordt gebruikt door de technische workflow <span class="uicontrol"><a href="../../workflow/using/campaign.md">operationMgt</a></span> wanneer het aantal actieve leveringen wordt geteld.</p>Hiermee kunt u het aantal dagen definiëren waarboven leveringen met een inconsistente status worden uitgesloten van het aantal lopende leveringen.</p><p>De standaardwaarde is "7", wat betekent dat inconsistente leveringen ouder dan 7 dagen worden uitgesloten.</p></td> 
+  </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
    <td> Regel 1 van het adres van de afzender.<br /> </td> 
@@ -203,10 +222,10 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
    <td> <span class="uicontrol">NmsPaper_SenderLine7</span> <br /> </td> 
    <td> Regel 7 van het adres van de afzender.<br /> </td> 
   </tr>
-    <tr> 
-   <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>Deze optie wordt gebruikt door de technische workflow <span class="uicontrol"><a href="../../workflow/using/campaign.md">operationMgt</a></span> wanneer het aantal actieve leveringen wordt geteld.</p>Hiermee kunt u het aantal dagen definiëren waarboven leveringen met een inconsistente status worden uitgesloten van het aantal lopende leveringen.</p><p>De standaardwaarde is "7", wat betekent dat inconsistente leveringen ouder dan 7 dagen worden uitgesloten.</p></td> 
-  </tr>
+  <tr> 
+   <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
+   <td> URL van de spiegelpaginaserver (door gebrek, zou identiek moeten zijn aan NmsTracking_ServerUrl).<br /> Het is de standaardwaarde van e-mailleveringen wanneer URL niet in de verpletterende definitie wordt gespecificeerd.<br /> </td> 
+  </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_Priority</span> <br /> </td> 
    <td> Parameters van verzonden SMS-berichten: informatie die aan de gateway van SMS wordt overgebracht om op de berichtprioriteit te wijzen.<br /> </td> 
@@ -220,51 +239,33 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
    <td> Periode waarin opnieuw pogingen van SMS-berichten worden uitgevoerd.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkEmail_Characters</span> <br /> </td> 
-   <td> Geldige tekens voor een e-mailadres.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
-   <td> Staat een maximumperiode (die in uren wordt uitgedrukt) toe om te worden gespecificeerd het aantal uitzendingen te beperken die telkens als het synchronisatiewerkschema wordt uitgevoerd worden teruggekregen.</a>.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
-   <td> Maximum aantal vraag in sessie MidSourcing, die parallel (3 door gebrek) kan worden in werking gesteld.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> Hiermee kunt u toestaan dat de exploitant die verantwoordelijk is voor de levering de verzending bevestigt, als een specifieke exploitant of groep exploitanten is aangewezen voor het starten van een levering in de eigendommen van de levering.</p><p> Hiervoor activeert u de optie door "1" als waarde in te voeren. Voer 0 in om deze optie te deactiveren.</p><p> Het proces voor bevestiging verzenden werkt dan als standaard: alleen de exploitant of groep van exploitanten die voor de verzending zijn aangewezen in de leveringseigenschappen (of een beheerder) kan de verzending bevestigen en uitvoeren. Zie <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">deze sectie</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMTA_Alert_Delay</span> <br /> </td> 
-   <td> Custom delay (in minutes) after which a delivery is considered as 'delayed', default being 30 minutes.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">XtkBarcode_SpecialChar</span> <br /> </td> 
-   <td> Ondersteuning voor speciale tekens voor Code128 in- en uitschakelen.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
-   <td> AES-sleutel die wordt gebruikt in het servlet 'lineImage' om de URL's (LINE-kanaal) te coderen.<br /> </td> 
+   <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
+   <td> Laatste consolidatiedatum voor <span class="uicontrol">NmsUserAgent</span> -statistieken.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsWebSegments_LastStates</span> <br /> </td> 
    <td> Naam van de optie die de websegmenten en hun status bevat.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
-   <td> Laatste consolidatiedatum voor <span class="uicontrol">NmsUserAgent</span> -statistieken.<br /> </td> 
+   <td> <span class="uicontrol">XtkBarcode_SpecialChar</span> <br /> </td> 
+   <td> Schakel ondersteuning voor speciale tekens voor Code128 in of uit.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">XtkEmail_Characters</span> <br /> </td> 
+   <td> Geldige tekens voor een e-mailadres.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Restrict_EditXML</span> </td> 
-   <td> Add this option with the "0" value to disable the edition of deliveries' XML code (right-click / <span class="uicontrol">Edit XML source</span> or <span class="uicontrol">CTRL + F4</span> shortcut).<br /> </td> 
-  </tr> 
-  <!--<tr> 
+   <td> Voeg deze optie met de waarde "0" toe om de uitgave van de XML-code van de leveringen uit te schakelen (klik met de rechtermuisknop of <span class="uicontrol">bewerk de XML-bron</span> of de sneltoets <span class="uicontrol">CTRL + F4</span> ).<br /> </td> 
+  </tr>  
+ </tbody> 
+</table>
+
+<!--<tr> 
    <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
    <td> BCC email address for Momentum to send a raw copy of the sent emails. <br /> </td> 
-  </tr> 
- </tbody> 
-</table>-->
+  </tr>
+-->
 
 ## Bronnen {#resources}
 
@@ -278,7 +279,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NcmRessourcesDir</span> <br /> </td> 
-   <td> Location of resources for publication in the Adobe Campaign client console. Zie <a href="../../delivery/using/formatting.md#image-referencing">deze sectie</a>.<br /> </td> 
+   <td> Locatie van bronnen voor publicatie in de Adobe Campagne-clientconsole. Zie <a href="../../delivery/using/formatting.md#image-referencing">deze sectie</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmRessourcesDirPreview</span> <br /> </td> 
@@ -302,7 +303,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmPublishingDir</span> <br /> </td> 
-   <td> Root folder for publications.<br /> Raadpleeg <a href="../../delivery/using/using-a-content-template.md">deze sectie</a>voor meer informatie over het genereren van HTML- en tekstinhoud.<br /> </td> 
+   <td> Hoofdmap voor publicaties.<br /> Raadpleeg <a href="../../delivery/using/using-a-content-template.md">deze sectie</a>voor meer informatie over het genereren van HTML- en tekstinhoud.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkImageUrl</span> <br /> </td> 
@@ -310,7 +311,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaInstance</span> <br /> </td> 
-   <td> Lets you configure the instance name for image uploading.<br /> </td> 
+   <td> Hiermee kunt u de instantienaam configureren voor het uploaden van afbeeldingen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaPassword</span> <br /> </td> 
@@ -347,7 +348,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_Duration</span> <br /> </td> 
-   <td> Default validity period of a campaign (in seconds).<br /> </td> 
+   <td> Standaardgeldigheidsperiode van een campagne (in seconden).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_LimitConcurrency</span> <br /> </td> 
@@ -367,15 +368,15 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkReport_Logo</span> <br /> </td> 
-   <td> Logo to be displayed in the top right-hand corner of the reports exported.<br /> </td> 
+   <td> Logo dat in de hoogste juiste hoek van de uitgevoerde rapporten moet worden getoond.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_PausedWorkflowPeriod</span> <br /> </td> 
-   <td> Number of days to wait between checks for paused workflows.<br /> </td> 
+   <td> Aantal dagen dat moet worden gewacht tussen controles op gepauzeerde workflows.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCampaign_Activate_OwnerConfirmation</span> <br /> </td> 
-   <td> Activate the deliveries validation by the owner of the operation by entering "1" as the value. Voer 0 in om deze optie te deactiveren.<br /> </td> 
+   <td> Activeer de validatie van leveringen door de eigenaar van de bewerking door "1" in te voeren als waarde. Voer 0 in om deze optie te deactiveren.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsAsset_JavascriptExt</span> <br /> </td> 
@@ -400,23 +401,23 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkKey</span> <br /> </td> 
-   <td> This key is used to encrypt most passwords in the database. (external accounts, LDAP password...).<br /> </td> 
+   <td> Deze sleutel wordt gebruikt om de meeste wachtwoorden in het gegevensbestand te coderen. (externe accounts, LDAP-wachtwoord...)<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Allow_PrivilegeEscalation</span> <br /> </td> 
-   <td> If 1 is selected, this option to allow privilegeEscalation in javascript.<br /> </td> 
+   <td> Als 1 wordt geselecteerd, deze optie om privilegeEscalation in javascript toe te staan.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Disable_ControlsOnFileDownload</span> <br /> </td> 
-   <td> If 1 is selected, this option disable ACL controls during a file download (via fileDownload.jsp).<br /> </td> 
+   <td> Als 1 wordt geselecteerd, onbruikbaar maakt deze optie ACL controles tijdens een dossierdownload (via fileDownload.jsp).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Disable_JSFileSandboxing</span> <br /> </td> 
-   <td> If 1 is selected, this option disable the file sandboxing within Javascript.<br /> </td> 
+   <td> Als 1 wordt geselecteerd, onbruikbaar deze optie het dossier het zandbakken binnen Javascript.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_SaveOptions_AllowNonAdmin</span> <br /> </td> 
-   <td> If set to 'true', authorized non-admin operator to update the xtkOption values through the deployment wizard.<br /> </td> 
+   <td> Indien ingesteld op 'true', geautoriseerde niet-admin-operator om de xtkOption-waarden bij te werken via de implementatietovenaar.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Unsafe_DecryptString</span> <br /> </td> 
@@ -424,12 +425,12 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkTraceDeleteLogin</span> <br /> </td> 
-   <td> Enter the "1" value to trace the deletion of elements with Audit trail information in the mData, through the modification of its "modified by" field before the deletion of the record.<br /> </td> 
+   <td> Voer de waarde "1" in om de verwijdering van elementen met audittrailinformatie in de mData te traceren door de wijziging van het veld "gewijzigd door" voordat de record wordt verwijderd.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Message Center {#message-center}
+## Berichtencentrum {#message-center}
 
 <table> 
  <thead> 
@@ -441,10 +442,10 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">MC_EnrichmentCustomJs</span> <br /> </td> 
-   <td> JavaScript library to be personalized for enriching events. Moet de uitvoering van deze twee functies bevatten:<br /> 
+   <td> JavaScript-bibliotheek die moet worden gepersonaliseerd voor het verrijken van gebeurtenissen. Moet de uitvoering van deze twee functies bevatten:<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">enrichRtEvents(aiEventId);</span> : enriches and saves events in the database (where <span class="uicontrol">aiEventId</span> corresponds to the table of real time events processed).</p> </li> 
-     <li> <p> <span class="uicontrol">enrichBatchEvents(aiEventId);</span> : enriches and saves events in the database (where <span class="uicontrol">aiEventId</span> corresponds to the ID table of batch events processed).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichRtEvents(aiEventId);</span> : Verrijkt en slaat gebeurtenissen in het gegevensbestand op (waar <span class="uicontrol">aiEventId</span> aan de verwerkte lijst van gebeurtenissen in real time beantwoordt).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichBatchEvents(aiEventId);</span> : Verrijkt en slaat gebeurtenissen in het gegevensbestand op (waar <span class="uicontrol">aiEventId</span> aan de lijst van identiteitskaart verwerkte partijgebeurtenissen beantwoordt).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -453,10 +454,10 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RoutingCustomJs</span> <br /> </td> 
-   <td> JavaScript library to be personalized for routing events. Moet de uitvoering van deze twee functies bevatten:<br /> 
+   <td> JavaScript-bibliotheek die gepersonaliseerd moet worden voor het routeren van gebeurtenissen. Moet de uitvoering van deze twee functies bevatten:<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">dispatchRtEvent(iEventId);</span> : returns the internal name of the transactional message selected to process the real time event (where <span class="uicontrol">iEventId</span> corresponds to the ID of the real time event processed).</p> </li> 
-     <li> <p> <span class="uicontrol">dispatchBatchEvent(iEventId);</span> : returns the internal name of the transactional message selected to process the batch event (where <span class="uicontrol">iEventId</span> corresponds to the ID of the batch event processed).</p> </li> 
+     <li> <p> <span class="uicontrol">dispatchRtEvent(iEventId);</span> : retourneert de interne naam van het transactiemelding die is geselecteerd om de real-time gebeurtenis te verwerken (waarbij <span class="uicontrol">iEventId</span> overeenkomt met de id van de real-time gebeurtenis die is verwerkt).</p> </li> 
+     <li> <p> <span class="uicontrol">dispatchBatchEvent(iEventId);</span> : retourneert de interne naam van het transactiemelding dat is geselecteerd om de batchgebeurtenis te verwerken (waarbij <span class="uicontrol">iEventId</span> overeenkomt met de id van de batchgebeurtenis die is verwerkt).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -481,7 +482,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueTimeAlert</span> <br /> </td> 
-   <td> Alert threshold for average queuing time of real-time events.<br /> </td> 
+   <td> Alert drempel voor gemiddelde het een rij vormen tijd van gebeurtenissen in real time.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueTimeWarning</span> <br /> </td> 
@@ -489,7 +490,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueWarning</span> <br /> </td> 
-   <td> Warning threshold for the average number of queued real-time events.<br /> </td> 
+   <td> De drempel van de waarschuwing voor het gemiddelde aantal een rij gevormde gebeurtenissen in real time.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventErrorAlert</span> <br /> </td> 
@@ -536,7 +537,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
    <td> Grootte van het hergroeperen voor de gebeurtenis die verplettert.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">MC_LastRtEventStat</span> <br /> </td> 
+   <td> <span class="uicontrol">MC_LastRtEventState</span> <br /> </td> 
    <td> Wijzig de aanwijzer van de RtEvent-status (laatste datum tot wanneer de gegevens zijn opgehaald).<br /> </td> 
   </tr> 
   <tr> 
@@ -566,7 +567,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_EventHistoPurgeDelay</span> <br /> </td> 
-   <td><p> Lets you define the delay after which the event history is erased from the database.</p><p>
+   <td><p> Hier kunt u de vertraging definiëren waarna de gebeurtenisgeschiedenis uit de database wordt gewist.</p><p>
    Deze optie wordt automatisch gecreeerd zodra de vertraging binnen de interface wordt gewijzigd. Als u de waarde in de lijst met opties wijzigt, moet deze worden uitgedrukt in seconden.</p><br /> </td> 
   </tr> 
   <tr> 
@@ -579,11 +580,11 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_PropositionPurgeDelay</span> <br /> </td> 
-   <td><p> Lets you define the delay after which propositions are erased from the database.</p><p> Deze optie wordt automatisch gecreeerd zodra de vertraging binnen de interface wordt gewijzigd. Als u de waarde in de lijst met opties wijzigt, moet deze worden uitgedrukt in seconden.</p><br /> </td> 
+   <td><p> Hiermee kunt u de vertraging definiëren waarna voorstellingen uit de database worden verwijderd.</p><p> Deze optie wordt automatisch gecreeerd zodra de vertraging binnen de interface wordt gewijzigd. Als u de waarde in de lijst met opties wijzigt, moet deze worden uitgedrukt in seconden.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_QuarantineMailboxFull</span> <br /> </td> 
-   <td> <p>Lets you define the delay after which the quarantines are erased from the database.</p><p> Deze optie wordt automatisch gecreeerd zodra de vertraging binnen de interface wordt gewijzigd. Als u de waarde in de lijst met opties wijzigt, moet deze worden uitgedrukt in seconden.</p><br /> </td> 
+   <td> <p>Hier kunt u de vertraging definiëren waarna de quarantines uit de database worden verwijderd.</p><p> Deze optie wordt automatisch gecreeerd zodra de vertraging binnen de interface wordt gewijzigd. Als u de waarde in de lijst met opties wijzigt, moet deze worden uitgedrukt in seconden.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_RecycledDeliveryPurgeDelay</span> <br /> </td> 
