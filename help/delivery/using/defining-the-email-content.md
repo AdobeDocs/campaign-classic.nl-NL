@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+source-git-commit: cedcd9150c374116f187da7fd9e76bf81e978e2a
 workflow-type: tm+mt
-source-wordcount: '2800'
+source-wordcount: '2798'
 ht-degree: 0%
 
 ---
@@ -180,17 +180,21 @@ Met de wizard voor levering kunt u lokale afbeeldingen of afbeeldingen die zijn 
 
 ![](assets/s_ncs_user_image_from_library.png)
 
-De ontvangers kunnen de afbeeldingen die zijn opgenomen in de berichten die ze ontvangen, alleen weergeven als deze berichten beschikbaar zijn op een server die van buitenaf toegankelijk is.
+>[!IMPORTANT]
+>
+>De ontvangers kunnen de afbeeldingen die zijn opgenomen in de berichten die ze ontvangen, alleen weergeven als deze berichten beschikbaar zijn op een server die van buitenaf toegankelijk is.
 
-Als u afbeeldingen wilt beheren via de wizard voor levering, moet u op het **[!UICONTROL Tracking & Images]** pictogram op de werkbalk klikken.
+Afbeeldingen beheren via de wizard voor levering:
 
-![](assets/s_ncs_user_email_del_img_param.png)
+1. Klik op het **[!UICONTROL Tracking & Images]** pictogram op de werkbalk.
+   ![](assets/s_ncs_user_email_del_img_param.png)
 
-Selecteer **[!UICONTROL Upload images]** op het **[!UICONTROL Images]** tabblad. Vervolgens kunt u kiezen of u de afbeeldingen in het e-mailbericht wilt opnemen.
+1. Selecteer **[!UICONTROL Upload images]** op het **[!UICONTROL Images]** tabblad.
+1. Vervolgens kunt u kiezen of u de afbeeldingen in het e-mailbericht wilt opnemen.
 
 ![](assets/s_ncs_user_email_del_img_upload.png)
 
-* U kunt afbeeldingen handmatig uploaden zonder te wachten op de fase van de leveringsanalyse. Klik hiertoe op de **[!UICONTROL Upload images now]** koppeling.
+* U kunt afbeeldingen handmatig uploaden zonder te wachten op de fase van de leveringsanalyse. Klik hiertoe op de **[!UICONTROL Upload the images straightaway...]** koppeling.
 * U kunt een ander pad opgeven voor toegang tot de afbeeldingen op de trackingserver. Voer dit in het **[!UICONTROL Image URL]** veld in. Deze waarde negeert de waarde die is gedefinieerd in de parameters van de installatiewizard.
 
 Wanneer u HTML-inhoud met opgenomen afbeeldingen opent in de wizard voor levering, kunt u de afbeeldingen volgens de leveringsparameters direct uploaden.
@@ -201,7 +205,7 @@ Wanneer u HTML-inhoud met opgenomen afbeeldingen opent in de wizard voor leverin
 >
 >De toegangspaden voor afbeeldingen worden gewijzigd tijdens het handmatig uploaden of tijdens het verzenden van berichten.
 
-**Voorbeeld: verzenden, bericht met afbeeldingen{#example--sending-a-message-with-images}**
+### Voorbeeld: verzenden, bericht met afbeeldingen {#example--sending-a-message-with-images}
 
 Hier volgt een voorbeeld van een levering met vier afbeeldingen:
 
