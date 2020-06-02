@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 06f2106c7c37fd5f115d15f3530997571f1f8e70
+source-git-commit: adb25307146847a1c49d9c548d00557e95562541
+workflow-type: tm+mt
+source-wordcount: '880'
+ht-degree: 0%
 
 ---
 
@@ -42,15 +45,16 @@ Volg onderstaande stappen om een lokaal bestand aan een levering te koppelen.
 >U kunt meerdere bestanden aan een levering koppelen. Bijlagen kunnen elke indeling hebben, inclusief de zipped-indeling.
 
 1. Klik op de **[!UICONTROL Attachments]** koppeling.
-1. Klik op de **[!UICONTROL Add]** knop en klik vervolgens **[!UICONTROL File...]** om het bestand te selecteren dat aan de levering moet worden gekoppeld.
+1. Klik op de **[!UICONTROL Add]** knop.
+1. Klik **[!UICONTROL File...]** om het bestand te selecteren dat aan de levering moet worden gekoppeld.
 
-![](assets/s_ncs_user_wizard_email_attachement.png)
+   ![](assets/s_ncs_user_wizard_email_attachement.png)
 
 U kunt het bestand ook rechtstreeks slepen en neerzetten in het **[!UICONTROL Attachments]** leveringsveld of het **[!UICONTROL Attach]** pictogram gebruiken op de werkbalk van de wizard voor levering.
 
 ![](assets/s_ncs_user_wizard_add_file_ico.png)
 
-1. Als het bestand is geselecteerd, wordt het direct naar de server geüpload om beschikbaar te zijn op het moment van levering. De naam wordt weergegeven in het **[!UICONTROL Attachments]** veld.
+Als het bestand is geselecteerd, wordt het direct naar de server geüpload om beschikbaar te zijn op het moment van levering. De naam wordt weergegeven in het **[!UICONTROL Attachments]** veld.
 
 ![](assets/s_ncs_user_wizard_email_attachement_e.png)
 
@@ -92,7 +96,7 @@ Als de bijlage een lokaal bestand is, selecteert u de optie: **[!UICONTROL File 
 
 ### Een gepersonaliseerd bericht bijvoegen {#attach-a-personalized-message}
 
-Met deze optie **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** kunt u een boete selecteren met verpersoonlijkingsvelden, zoals de achternaam en voornaam van de bedoelde ontvanger.
+Met deze optie **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** kunt u een bestand met verpersoonlijkingsvelden selecteren, zoals de achternaam en voornaam van de bedoelde ontvanger.
 
 ![](assets/s_ncs_user_wizard_email_calc_attachement_06.png)
 
