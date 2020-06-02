@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5d8959dc790c0cf0e6ea62122310bfbee5bcc0dd
+source-git-commit: e2ba309643a10a2bfdb031b3ee0acd90c3d02fc0
 workflow-type: tm+mt
 source-wordcount: '6477'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 # Documentatieupdates{#documentation-updates}
 
-Deze pagina bevat een overzicht van alle nieuwe functies en documentatieupdates per maand en de campagneversie.
+Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates per maand en de campagneversie.
 
 U kunt ook de [Adobe Campagne Classic Release Notes](../../rn/using/latest-release.md) raadplegen voor meer updates.
 
@@ -182,7 +182,7 @@ De voorbeelden voor API-aanroepen die een **HttpServletRequest** met aanmeldings
 
 Een aanbeveling voor **sqlDefault** attribuut in schemadefinitie is toegevoegd. [Lees meer](../../configuration/using/elements-and-attributes.md#attribute-description).
 
-In de handleiding **Integrating with Adobe Experience Cloud** wordt nu verwezen naar de integratie tussen Adobe Campagne en Adobe Real-time Customer Data Platform. [Lees meer](../../integrations/using/about-campaign-integrations.md).
+In de handleiding **Integrating with Adobe Experience Cloud** wordt nu verwezen naar de integratie tussen Adobe Campaign en Adobe Real-time Customer Data Platform. [Lees meer](../../integrations/using/about-campaign-integrations.md).
 
 ## november 2019 {#november-2019}
 
@@ -210,7 +210,7 @@ Er is een nieuwe pagina met best practices voor de gegevensverbinding van Adobe 
 
 De gids Aan de slag met best practices voor levering is verplaatst en bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/delivery-best-practices.html)
 
-Er is een aanbeveling toegevoegd aan de documentatie van het SMS-kanaal om problemen te voorkomen bij het gebruik van meerdere externe accounts die de uitgebreide algemene SMPP-connector gebruiken met dezelfde leverancieraccount. [Meer informatie](../../delivery/using/sms-channel.md#automatic-reply)
+Er is een aanbeveling toegevoegd aan de documentatie van het SMS-kanaal om problemen te voorkomen bij het gebruik van meerdere externe accounts die de uitgebreide algemene SMPP-connector gebruiken met dezelfde provider. [Meer informatie](../../delivery/using/sms-channel.md#automatic-reply)
 
 Er is informatie toegevoegd aan de documentatie bij de planningsactiviteit over hoe u gelijktijdige uitvoering van een workflow kunt voorkomen. [Meer informatie](../../workflow/using/scheduler.md)
 
