@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
+source-git-commit: e488e1771fe4d07132844900f41f5f4f09fa9438
+workflow-type: tm+mt
+source-wordcount: '775'
+ht-degree: 1%
 
 ---
 
@@ -96,10 +99,6 @@ In de volgende tabel vindt u toegang tot de beschikbare documentatie over de int
   <tr> 
    <td> <strong>Adobe Analytics - Data Connectors</strong><br /> </td> 
    <td> <strong>Met gegevensconnectors</strong> (voorheen Adobe Genesis genoemd) kunnen Adobe Campaign en Adobe Analytics via segmenten communiceren over het gebruikersgedrag na een e-mailcampagne. Omgekeerd verzendt het programma indicatoren en kenmerken van e-mailcampagnes die door Adobe Campaign worden geleverd naar Adobe Analytics - Data connector.<br /> <p><a href="../../platform/using/adobe-analytics-data-connector.md">Meer</a> informatie over campagne - integratie van gegevensconnectors.</p><br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <strong>Adobe Campagnestandaard</strong> (eerste aanbieding)<br /> </td> 
-   <td> Hiermee kunt u gegevens repliceren naar <strong>Campagnestandaard</strong>, waarbij het beste van beide toepassingen wordt gecombineerd. Campagne Classic v7 beschikt over geavanceerde tools voor het beheer van de primaire marketingdatabase. De gegevensreplicatie van de Klassieke v7 van de Campagne staat de Norm van de Campagne toe om de rijke gegevens in een gebruikersvriendelijk milieu te gebruiken.<br /><p> <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">Meer</a> informatie over de integratie van Adobe Campagne Classic - Adobe Campagne Standard.</p><br /></td> 
   </tr> 
  </tbody> 
 </table>
