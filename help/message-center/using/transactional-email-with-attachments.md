@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 24a50fcaad4d9081e5504652eb5b73aa7db1e65f
+source-git-commit: 22d0e70f77eb3759632e05ab1cb0d8ee53adfac9
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,10 @@ In dit scenario worden de bijlagen niet vooraf gemaakt, maar direct toegevoegd a
 * Als de gehechtheid met een transactie (zoals in het hierboven beschreven voorbeeldscenario) wordt geassocieerd, kan het dynamische gegevens bevatten die tijdens het klantenproces worden geproduceerd.
 * Als u PDF-bestanden bijvoegt, wordt de beveiliging geoptimaliseerd omdat u deze kunt versleutelen en verzenden via HTTPS.
 
+>[!NOTE]
+>
+>Om prestatieproblemen te voorkomen moet elke afbeeldingsgrootte standaard niet groter zijn dan 100.000 bytes als u direct gedownloade afbeeldingen van een gepersonaliseerde URL opneemt als bijlage. Deze aanbevolen drempelwaarde kan worden geconfigureerd [in de lijst met klassieke opties](../../installation/using/configuring-campaign-options.md#delivery)voor campagne.
+
 ## Aanbevelingen {#important-notes}
 
 Lees de onderstaande richtlijnen zorgvuldig door voordat u dit scenario implementeert:
@@ -53,6 +57,10 @@ Lees de onderstaande richtlijnen zorgvuldig door voordat u dit scenario implemen
 * Aangezien er geen directe toegang tot de instanties of servers van het Overseinen van de Transactie buiten Adobe is, is er geen standaardmanier om dergelijke dossiers op deze servers (geen toegang FTP) te duwen.
 * Het is contractueel niet correct om de schijfruimte op de instanties van het Overseinen van de Transactie te gebruiken om dossiers van om het even welke soort op te slaan, zelfs niet voor gehechtheid.
 * U moet een ander online schijfsysteem gebruiken om deze bestanden te hosten. U hebt FTP-toegang tot dit systeem nodig en u moet bestanden kunnen schrijven en verwijderen.
+
+>[!NOTE]
+>
+>Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De geadviseerde drempel kan van [de lijst van de Klassieke opties](../../installation/using/configuring-campaign-options.md#delivery)van de Campagne worden gevormd.
 
 ## Implementatie {#implementation}
 
