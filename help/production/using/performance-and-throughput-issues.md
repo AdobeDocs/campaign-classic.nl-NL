@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d80e3d47b06b7a03974d9cfdd465861b3c5bcf81
+source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Hier volgt een lijst met best practices en artikelen met betrekking tot de te le
 * IP-reputatie: als de IP reputatie niet goed genoeg is, zal er een effect op prestaties zijn. De module **Leverbaarheidscontrole** biedt verschillende tools om de prestaties van uw platform bij te houden. Zie deze [pagina](../../delivery/using/monitoring-deliverability.md).
 * Opwarmen IP: IP warm-up wordt uitgevoerd door het leveringsteam. Dit houdt in dat het aantal e-mails over een periode van een paar weken geleidelijk wordt verhoogd via nieuwe IP&#39;s.
 * Instellen IP-affiniteit: Een onjuiste IP affiniteitopstelling kan de e-mail volledig tegenhouden (onjuiste exploitant/affiniteitsnaam in configuratie) of de productie (klein aantal IPs in de affiniteit) verminderen. Zie deze [pagina](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* E-mailformaat: De e-mailgrootte speelt een belangrijke rol in productie. De aanbevolen maximale e-mailgrootte is 60 kB. Zie deze [pagina](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Controleer in het rapport [Leveringsdoorvoer](../../reporting/using/delivery-reports.md#delivery-throughput) het aantal bytes dat per uur is overgedragen.
+* E-mailformaat: De e-mailgrootte speelt een belangrijke rol in productie. De aanbevolen maximale e-mailgrootte is 60 kB. Zie deze [pagina](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Controleer in het rapport [Leveringsdoorvoer](../../reporting/using/global-reports.md#delivery-throughput) het aantal bytes dat per uur is overgedragen.
 * Groot aantal ongeldige ontvangers: wanneer er een groot aantal ongeldige ontvangers is, kan het effect op de productie hebben. De MTA blijft het verzenden van e-mails naar ongeldige ontvangers opnieuw proberen. Controleer of de database goed wordt onderhouden.
 * Hoeveelheid personalisatie: als een levering in &quot;Personalisatie lopend&quot;blijft, controleer JavaScript die in verpersoonlijkingsblokken wordt gebruikt.
 
