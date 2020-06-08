@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4869eb41f942a89c48bc213913c44b70ae777bfc
+source-git-commit: 653f630079277ffb75915206c445e9414cfcdd7c
+workflow-type: tm+mt
+source-wordcount: '1295'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +59,7 @@ Selecteer de database-engine in de vervolgkeuzelijst.
 
 Ondersteunde databases worden weergegeven in de matrix [Compatibiliteit van de sectie](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
 
-Identificeer de server en kies het type van verrichting om uit te voeren. In dit geval, **[!UICONTROL Create or recycle a database]**.
+Identificeer de server en kies het type van verrichting om uit te voeren. In this case, **[!UICONTROL Create or recycle a database]**.
 
 ![](assets/s_ncs_install_db_oracle_creation01.png)
 
@@ -66,7 +69,7 @@ Afhankelijk van de geselecteerde database-engine kan de identificatie-informatie
 * Voor een **PostgreSQL** - of **DB2** -engine moet u de DNS-naam (of het IP-adres) opgeven die op de toepassingsserver is gedefinieerd om toegang te krijgen tot de databaseserver.
 * Voor een **Microsoft SQL Server** -engine moet u het volgende definiëren:
 
-   1. de DNS-naam (of het IP-adres) die op de toepassingsserver is gedefinieerd voor toegang tot de databaseserver: **DNS** of **DNS\ `<instance>`** (instantiemodus),
+   1. de DNS-naam (of het IP-adres) die op de toepassingsserver is gedefinieerd voor toegang tot de databaseserver: **DNS** of **DNS\`<instance>`**(instantiemodus),
    1. de authentificatiemethode die wordt gebruikt om tot de Server van Microsoft SQL toegang te hebben: **[!UICONTROL SQL Server authentication]** of **[!UICONTROL Windows NT authentication]**.
 
       ![](assets/s_ncs_install_db_mssql_creation01.png)
@@ -179,7 +182,7 @@ Kies de database-engine in de vervolgkeuzelijst.
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-Identificeer de server en kies het type van verrichting u wilt uitvoeren. In dit geval, **[!UICONTROL Use an existing database]**.
+Identificeer de server en kies het type van verrichting u wilt uitvoeren. In this case, **[!UICONTROL Use an existing database]**.
 
 ![](assets/s_ncs_install_db_oracle_exists_01.png)
 
@@ -207,6 +210,7 @@ U moet de volgende instellingen definiëren:
 
    >[!NOTE]
    >
+   >Zorg ervoor dat zowel de naam van het schema als de gebruikersnaam overeenkomen. De geadviseerde manier om gegevensbestand te creëren is door cliënt van de campagneconsole.
    >Voor een Oracle-database hoeft u de accountnaam niet in te voeren.
 
 * Geef aan of de database Unicode moet zijn of niet.
