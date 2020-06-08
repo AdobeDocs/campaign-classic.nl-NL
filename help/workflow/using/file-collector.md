@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 0%
 
 ---
 
@@ -74,7 +77,7 @@ Op het eerste tabblad van de **[!UICONTROL File collector]** activiteit kunt u d
 
 1. **Historiatie**
 
-   Raadpleeg de **[!UICONTROL File historization]** volgende stap: [Webdownload](../../workflow/using/web-download.md).
+   Raadpleeg de volgende **[!UICONTROL File historization]** stap: [Webdownload](../../workflow/using/web-download.md).
 
 De volgorde van de bestandsverwerking kan niet worden bepaald. Als u een set bestanden opeenvolgend wilt verwerken, gebruikt u de **[!UICONTROL Stop as soon as a file has been processed]** optie en maakt u een lus. In dit geval worden de bestanden in alfabetische volgorde verwerkt. Met de **[!UICONTROL Process file nonexistence]** optie kunt u de herhaling voltooien.
 
@@ -82,6 +85,4 @@ De volgorde van de bestandsverwerking kan niet worden bepaald. Als u een set bes
 
 ## Uitvoerparameters {#output-parameters}
 
-* filename
-
-Volledige bestandsnaam. Dit is de bestandsnaam nadat deze naar de historiemap is verplaatst. Het pad is dus anders, maar de naam is ook anders als er al een ander bestand met dezelfde naam in de map staat. De extensie blijft behouden.
+* bestandsnaam: Volledige bestandsnaam. Dit is de bestandsnaam nadat deze naar de historiemap is verplaatst. Het pad is dus anders, maar de naam is ook anders als er al een ander bestand met dezelfde naam in de map staat. De extensie blijft behouden.
