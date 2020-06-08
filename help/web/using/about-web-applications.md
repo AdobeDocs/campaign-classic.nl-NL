@@ -15,20 +15,29 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 61c7681535dc08e1d705d7d239e96c603bbad339
+source-git-commit: 1667dd0c8a38db0e554c59062cbcc5b6c6d992bb
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 0%
 
 ---
 
 
 # Webtoepassingen{#about-web-applications}
 
-Met Adobe Campaign kunt u dynamische en interactieve webtoepassingen maken en publiceren met gegevens uit de database en inhoud die zijn aangepast aan de rechten van de verbonden gebruiker. U kunt pagina&#39;s maken, zoals een bewerkingsformulier op een extranet, of meldingsformulieren, inclusief gegevens uit de database met tabellen, grafieken, invoerformulieren enzovoort. Met deze functionaliteit kunt u webpagina&#39;s ontwerpen en plaatsen waar gebruikers informatie kunnen opzoeken of invoeren.
+Met Adobe Campaign kunt u dynamische en interactieve webtoepassingen maken en publiceren met gegevens uit de database en inhoud die zijn aangepast aan de rechten van de verbonden gebruiker.
+
+U kunt pagina&#39;s maken, zoals een bewerkingsformulier op een extranet, of meldingsformulieren, inclusief gegevens uit de database met tabellen, grafieken, invoerformulieren enzovoort. Met deze functionaliteit kunt u webpagina&#39;s ontwerpen en plaatsen waar gebruikers informatie kunnen opzoeken of invoeren.
 
 Dit kan een abonnementsformulier zijn met gegevens die vooraf zijn geladen met informatie in de Adobe Campagne-database, zoals hieronder wordt weergegeven:
 
 ![](assets/webapp_form_sample.png)
 
 Dit hoofdstuk verstrekt een overzicht van hoe te om de toepassingen van het Web te beheren.
+
+>[!NOTE]
+>
+>Raadpleeg de checklist [voor](https://helpx.adobe.com/campaign/kb/acc-security.html) beveiliging en privacy voor meer informatie over het optimaliseren van beveiliging voor webtoepassingen.
 
 >[!CAUTION]
 >
