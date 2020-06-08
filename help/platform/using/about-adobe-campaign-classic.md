@@ -1,7 +1,7 @@
 ---
-title: Info over Adobe Campagne Classic
-seo-title: Info over Adobe Campagne Classic
-description: Info over Adobe Campagne Classic
+title: Informatie over Adobe Campagne Classic
+seo-title: Informatie over Adobe Campagne Classic
+description: Informatie over Adobe Campagne Classic
 seo-description: null
 page-status-flag: never-activated
 uuid: 2d0160fa-8328-4ff9-ab91-56e4058f8a99
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
+source-git-commit: 3b04cf988f144b8bfb846aff83e97c9b3a82e6e0
+workflow-type: tm+mt
+source-wordcount: '878'
+ht-degree: 0%
 
 ---
 
 
-# Info over Adobe Campagne Classic{#about-adobe-campaign-classic}
+# Informatie over Adobe Campagne Classic{#about-adobe-campaign-classic}
 
 Om een hoge mate van klantenbetrokkenheid en grote ervaringen te leveren, moeten de merken verenigbare klantenreizen op alle touchpoints tot stand brengen. Marktdeelnemers kunnen nu efficiënt marketingcampagnes ontwerpen, plannen, uitvoeren, beheren en optimaliseren die een hoog rendement op marketinginvesteringen opleveren en loyaliteit stimuleren.
 
@@ -28,7 +31,7 @@ Met Adobe Campaign kunt u het maken van conversationele marketingcampagnes coör
 
 >[!NOTE]
 >
->Adobe Campaign Classic is beschikbaar in v6.11 en v7. Behalve wanneer vermeld, zijn de hulpmaterialen op beide versies, in recentste bouwstijl van toepassing. Screenshots verwijzen naar Campaign Classic v7.
+>Adobe Campaign Classic is beschikbaar in v6.11 en v7. Behalve wanneer vermeld, zijn de hulpmaterialen op beide versies, in recentste bouwstijl van toepassing. Schermafbeeldingen weerspiegelen de gebruikersinterface van Campagne Classic v7.
 
 ## Belangrijkste mogelijkheden {#key-capabilities}
 
@@ -70,7 +73,7 @@ U kunt de leveringsfuncties en de geavanceerde functies van het campagnebeheer v
 
 ## Kernmogelijkheden en invoegtoepassingen {#core-capabilities-and-add-ons}
 
-Adobe Campaign biedt een aantal mogelijkheden om u te helpen de functionaliteit voor marketing van gesprekken te implementeren en te optimaliseren, afhankelijk van uw behoeften en architectuur. Sommige zijn kernmogelijkheden en sommige hangen van de installatie van een pakket en van uw configuratie af. Hier vindt u een gedetailleerde productbeschrijving: Beschrijving [van](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html)klassieke Adobe-campagne.
+Adobe Campaign biedt een aantal mogelijkheden om u te helpen de functionaliteit voor marketing van gesprekken te implementeren en te optimaliseren, afhankelijk van uw behoeften en architectuur. Sommige zijn kernmogelijkheden en sommige hangen van de installatie van een pakket en van uw configuratie af. Hier vindt u een gedetailleerde productbeschrijving: [Adobe Campagne Classic - Productbeschrijving](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).
 
 De volgende mogelijkheden zijn beschikbaar. Afhankelijk van uw licentieovereenkomst kunnen sommige van deze mogelijkheden beschikbaar zijn of niet in uw exemplaar.
 
