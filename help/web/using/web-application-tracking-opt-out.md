@@ -15,16 +15,23 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: a62e4d072573f7ed1b77f755eb57838c70745592
+workflow-type: tm+mt
+source-wordcount: '674'
+ht-degree: 0%
 
 ---
 
 
 # Weigeren van webtoepassing{#web-application-tracking-opt-out}
 
-Met Adobe Campaign kunt u het webgedrag van eindgebruikers die zich afmelden voor het volgen van gedragingen via cookies of webbakens, niet meer bijhouden. De functie omvat de mogelijkheid om een banner weer te geven om de eindgebruiker die optie te bieden; U kunt deze banners toevoegen aan webtoepassingen of landingspagina&#39;s.
+Met Adobe Campaign kunt u webgedrag niet meer volgen van eindgebruikers die zich afmelden voor het volgen van gedrag via cookies of webbakens. De functie omvat de mogelijkheid om een banner weer te geven om de eindgebruiker die optie te bieden; U kunt deze banners toevoegen aan webtoepassingen of landingspagina&#39;s.
 
 Als een eindgebruiker via cookies of webbakens de functie voor het bijhouden van gedrag uitschakelt, wordt die informatie met JavaScript-API&#39;s naar de Adobe Campagne Tracking-server verzonden. Houd er rekening mee dat sommige rechtsgebieden vereisen dat de klant eindgebruikers een opt-in biedt voordat een opt-out kan worden aangeboden (of andere wettelijke vereisten heeft) en dat de klant verantwoordelijk is voor het naleven van de toepasselijke wetgeving.
+
+>[!NOTE]
+>
+>Volg bij het schrijven van scripts altijd de richtlijnen die worden beschreven in de checklist [voor](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)beveiliging en privacy.
 
 ## De banner configureren {#configuring-the-banner-}
 
@@ -75,7 +82,7 @@ Adobe Campaign wordt geleverd met API&#39;s waarmee u de cookiewaarde kunt beher
 
 De naam van het cookie is **acoptout**. De gemeenschappelijke waarden zijn:
 
-* 0: gebruiker heeft Web tracking toegestaan (standaardwaarde)
+* 0: gebruiker heeft webspatiëring toegestaan (standaardwaarde)
 * 1: gebruiker heeft webtracking verboden
 * null: gebruiker heeft niet gekozen maar Web tracking is toegestaan omdat dit de standaardwaarde is
 
