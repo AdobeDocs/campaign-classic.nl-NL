@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cedcd9150c374116f187da7fd9e76bf81e978e2a
+source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
 workflow-type: tm+mt
-source-wordcount: '2798'
+source-wordcount: '2887'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,8 @@ In het bovenstaande bericht is het onderwerp van het bericht bijvoorbeeld gepers
 >[!NOTE]
 >
 >Het gebruik van verpersoonlijkingsgebieden wordt voorgesteld in [Ongeveer verpersoonlijking](../../delivery/using/about-personalization.md).
+
+U kunt ook emoticons invoegen in uw onderwerpregel via het pop- **[!UICONTROL Insert emoticon]** upvenster.
 
 ## Berichtinhoud {#message-content}
 
@@ -115,6 +117,19 @@ Berichten worden standaard in HTML- of tekstindeling verzonden, afhankelijk van 
 
    ![](assets/s_ncs_user_wizard_email01_142.png)
 
+### emoticons in een e-mail invoegen {#inserting-emoticons}
+
+U kunt emoticons invoegen in uw e-mailinhoud.
+
+1. Klik op het **[!UICONTROL Insert emoticon]** pictogram.
+1. Selecteer een emoticon in het pop-upvenster.
+
+   ![](assets/emoticon_4.png)
+
+1. Klik op de **[!UICONTROL Close]** knop als u klaar bent.
+
+Raadpleeg deze [pagina](../../delivery/using/customizing-emoticon-list.md)om de lijst met emoticonen aan te passen.
+
 ## Berichtindelingen selecteren {#selecting-message-formats}
 
 U kunt de indeling van verzonden e-mailberichten wijzigen. Hiervoor bewerkt u de leveringseigenschappen en klikt u op het **[!UICONTROL Delivery]** tabblad.
@@ -147,7 +162,7 @@ Zie [deze sectie](../../delivery/using/defining-interactive-content.md)voor meer
 
 ## Inhoudsbeheer gebruiken {#using-content-management}
 
-U kunt de inhoud van de levering bepalen gebruikend de vormen van het inhoudsbeheer, direct in de leveringstovenaar. Hiervoor moet u verwijzen naar de publicatiesjabloon van het inhoudsbeheer dat moet worden gebruikt, op het **[!UICONTROL Advanced]** tabblad van de leveringseigenschappen.
+U kunt de inhoud van de levering bepalen gebruikend de vormen van het inhoudsbeheer, direct in de leveringstovenaar. Hiervoor moet u verwijzen naar de publicatiesjabloon van het te gebruiken inhoudsbeheer op het **[!UICONTROL Advanced]** tabblad van de leveringseigenschappen.
 
 ![](assets/s_ncs_content_in_delivery.png)
 
@@ -191,11 +206,10 @@ Afbeeldingen beheren via de wizard voor levering:
 
 1. Selecteer **[!UICONTROL Upload images]** op het **[!UICONTROL Images]** tabblad.
 1. Vervolgens kunt u kiezen of u de afbeeldingen in het e-mailbericht wilt opnemen.
-
-![](assets/s_ncs_user_email_del_img_upload.png)
+   ![](assets/s_ncs_user_email_del_img_upload.png)
 
 * U kunt afbeeldingen handmatig uploaden zonder te wachten op de fase van de leveringsanalyse. Klik hiertoe op de **[!UICONTROL Upload the images straightaway...]** koppeling.
-* U kunt een ander pad opgeven voor toegang tot de afbeeldingen op de trackingserver. Voer dit in het **[!UICONTROL Image URL]** veld in. Deze waarde negeert de waarde die is gedefinieerd in de parameters van de installatiewizard.
+* U kunt een ander pad opgeven voor toegang tot de afbeeldingen op de trackingserver. Voer dit in het **[!UICONTROL Images URL]** veld in. Deze waarde negeert de waarde die is gedefinieerd in de parameters van de installatiewizard.
 
 Wanneer u HTML-inhoud met opgenomen afbeeldingen opent in de wizard voor levering, kunt u de afbeeldingen volgens de leveringsparameters direct uploaden.
 
@@ -205,7 +219,11 @@ Wanneer u HTML-inhoud met opgenomen afbeeldingen opent in de wizard voor leverin
 >
 >De toegangspaden voor afbeeldingen worden gewijzigd tijdens het handmatig uploaden of tijdens het verzenden van berichten.
 
-### Voorbeeld: verzenden, bericht met afbeeldingen {#example--sending-a-message-with-images}
+### Een bericht verzenden met afbeeldingen {#sending-a-message-with-images}
+
+>[!NOTE]
+>
+>Om prestatieproblemen te voorkomen moet elke afbeeldingsgrootte standaard niet groter zijn dan 100.000 bytes als u direct gedownloade afbeeldingen van een gepersonaliseerde URL opneemt als [bijlage](../../delivery/using/attaching-files.md). Deze aanbevolen drempelwaarde kan worden geconfigureerd [in de lijst met klassieke opties](../../installation/using/configuring-campaign-options.md#delivery)voor campagne.
 
 Hier volgt een voorbeeld van een levering met vier afbeeldingen:
 
