@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7db84fc951234cb6257d8e41615ba7fc5b2c6f77
+source-git-commit: 1909cc8640a32eb709187dab084778f03ef39118
+workflow-type: tm+mt
+source-wordcount: '3589'
+ht-degree: 0%
 
 ---
 
@@ -509,7 +512,7 @@ De URL&#39;s van de redundante servers moeten worden opgegeven in de omleidingsc
 
 De eigenschap **enableIf** is optioneel (standaard leeg) en stelt u in staat de verbinding alleen in te schakelen als het resultaat waar is. Dit laat u een identieke configuratie op alle omleidingsservers verkrijgen.
 
-Voer de volgende opdracht uit om de hostnaam van de computer op te halen: hostnaam - **s**.
+Voer de volgende opdracht uit om de hostnaam van de computer op te halen: **hostnaam -s**.
 
 ## Openbare middelen beheren {#managing-public-resources}
 
@@ -610,6 +613,8 @@ Bijvoorbeeld: **uploadWhiteList=&quot;.*.png,.Met *.jpg&quot;** kunt u PNG- en J
 Als u de server van de Campagne met de buitenkant door een volmacht (gebruikend een activiteit van het dossieroverdrachtwerkschema bijvoorbeeld) moet verbinden, moet u de volmachtConfig sectie van serverConf via een bevel vormen. De volgende proxyverbindingen zijn mogelijk: HTTP, HTTPS, FTP, SFTP. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
 >[!NOTE]
+>
+>Vanaf 20.2 zijn de parameters van het HTTP- en HTTPS-protocol niet meer beschikbaar. In de volgende informatie worden deze parameters nog steeds vermeld, aangezien ze beschikbaar blijven voor eerdere gebouwen, waaronder 9032.
 >
 >SOCKS-proxy&#39;s worden niet ondersteund.
 
