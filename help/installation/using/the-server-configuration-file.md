@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: d9b0f943fa09b3d0ad8547eb708e888724f1ae7e
+workflow-type: tm+mt
+source-wordcount: '7852'
+ht-degree: 2%
 
 ---
 
@@ -1534,6 +1537,12 @@ Hier zijn de verschillende parameters van de **mta** knoop. Dit is de configurat
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
+   <td> signEmailLinks<br /> </td> 
+   <td> Schakel het handtekeningmechanisme in. Hierdoor wordt de beveiliging bij het bijhouden van koppelingen in e-mail verbeterd.<br /> </td> 
+   <td> Boolean<br /> </td> 
+   <td> true<br /> </td> 
+  </tr>
+  <tr> 
    <td> statServerAddress<br /> </td> 
    <td> Adres van de server van de leveringsstatistiek, die als &lt;dns of ip&gt; wordt gegeven [: 
      &lt;port&gt; ]. Zie <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Coördinaten van de statistiekserver</a>. 
@@ -2544,6 +2553,12 @@ Hier zijn de verschillende parameters van de **volgende** knoop. Dit is de confi
    <td> false<br /> </td> 
   </tr> 
   <tr> 
+   <td> blockRedirectForUnsignedTrackingLink<br /> </td> 
+   <td> Schakel onjuist gevormde URL's die zijn gegenereerd uit vorige builds uit.<br /> </td> 
+   <td> Boolean<br /> </td> 
+   <td> false<br /> </td> 
+  </tr> 
+  <tr> 
    <td> consolidatiePeriodSec<br /> </td> 
    <td> Consolidatieperiode<br /> </td> 
    <td> Lang<br /> </td> 
@@ -2596,6 +2611,18 @@ Hier zijn de verschillende parameters van de **volgende** knoop. Dit is de confi
    <td> Waarschuwing geheugenverbruik: waarschuwing over de hoeveelheid RAM die door een bepaald proces wordt verbruikt (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> phishbowlServiceAPIKey<br /> </td> 
+   <td> API sleutel voor de Integratie van het Eindpunt van de Dienst Phishbowl. Hierdoor wordt omleiding van onjuist gevormde URL's die zijn gegenereerd op basis van oudere builds beschermd. <br /> </td> 
+   <td> Lang<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> phishbowlServiceEndpoint<br /> </td> 
+   <td> Eindpunt voor de Integratie van het Eindpunt van de Dienst Phishbowl. Hierdoor wordt omleiding van onjuist gevormde URL's die zijn gegenereerd op basis van oudere builds beschermd.<br /> </td> 
+   <td> Lang<br /> </td> 
+   <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
