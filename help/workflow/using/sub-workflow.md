@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 0%
 
 ---
 
@@ -26,20 +29,19 @@ Met de **[!UICONTROL Sub-workflow]** activiteit kunt u de uitvoering van een and
 
 U kunt meerdere subworkflows aanroepen in één workflow. Subworkflows worden synchroon uitgevoerd.
 
->[!NOTE]
->
->De subworkflow kan alleen correct worden uitgevoerd als u één sprong van het type &quot;aankomst&quot; met het laagste getal hebt en slechts één sprong van het type &quot;start&quot; met het hoogste getal. Als u bijvoorbeeld &quot;start&quot;-sprongen hebt met een prioriteit 1, 2 en 3, hebt u slechts één sprongreis van het type &quot;start&quot; met een prioriteit 3.
+In het onderstaande voorbeeld roept een &#39;master&#39;-workflow een subworkflow aan met behulp van sprongen. Zie [deze sectie](../../workflow/using/jump--start-point-and-end-point-.md)voor meer informatie over grafische objecten van het sprongtype.
 
 1. Maak een workflow die u als een subworkflow in een andere workflow wilt gebruiken.
-1. Voeg een **[!UICONTROL Jump (end point)]** activiteit met een prioriteit van 1 aan het begin van de werkstroom in. Als u meerdere sprongen van het type &quot;aankomst&quot; hebt, gebruikt Adobe Campaign de &quot;aankomst&quot;-sprong met het laagste aantal.
-
-   Voeg een **[!UICONTROL Jump (start point)]** activiteit in met een prioriteit van 2 aan het einde van de workflow. Als u meerdere sprongen van het type &quot;start&quot; hebt, gebruikt Adobe Campagne de &quot;start&quot;-sprong met het hoogste aantal.
+1. Voeg een **[!UICONTROL Jump (end point)]** activiteit met een prioriteit van 1 aan het begin van de werkstroom in. Als u meerdere sprongen van het type &quot;eindpunt&quot; hebt, gebruikt Adobe Campagne de sprong &quot;eindpunt&quot; met het laagste aantal.
+1. Voeg een **[!UICONTROL Jump (start point)]** activiteit in met een prioriteit van 2 aan het einde van de workflow. Als u meerdere sprongen van het type &quot;beginpunt&quot; hebt, gebruikt Adobe Campagne de sprong &quot;beginpunt&quot; met het hoogste aantal.
 
    ![](assets/subworkflow_jumps.png)
 
    >[!NOTE]
    >
-   >Als de subworkflowactiviteit verwijst naar een werkstroom met verschillende **[!UICONTROL Jump]** activiteiten, wordt de subwerkstroom uitgevoerd tussen het type &quot;aankomst&quot; met het laagste getal en de sprong van het type &quot;start&quot; met het hoogste getal.
+   >Als de subworkflowactiviteit verwijst naar een werkstroom met verschillende **[!UICONTROL Jump]** activiteiten, wordt de subwerkstroom uitgevoerd tussen het type &quot;eindpunt&quot; springen met het laagste getal en het type &quot;beginpunt&quot; springen met het hoogste getal.
+   >
+   >De subworkflow kan alleen correct worden uitgevoerd als u slechts één sprongreis van het type &quot;eindpunt&quot; met het laagste getal hebt en slechts één sprongreis van het type &quot;beginpunt&quot; met het hoogste getal.
 
 1. Vul deze subworkflow in en sla deze op.
 1. Een &#39;hoofdworkflow&#39; maken.
@@ -49,7 +51,7 @@ U kunt meerdere subworkflows aanroepen in één workflow. Subworkflows worden sy
    ![](assets/subworkflow_selection.png)
 
 1. U kunt ook een configuratiescript toevoegen om de workflow waarnaar wordt verwezen te wijzigen.
-1. Klik **[!UICONTROL Ok]**. Er wordt automatisch een uitgaande overgang gemaakt met het label van de **[!UICONTROL Jump (start point)]** activiteit uit de geselecteerde workflow.
+1. Klik op **[!UICONTROL Ok]**. Er wordt automatisch een uitgaande overgang gemaakt met het label van de **[!UICONTROL Jump (start point)]** activiteit uit de geselecteerde workflow.
 
    ![](assets/subworkflow_outbound.png)
 
@@ -78,6 +80,4 @@ Elke binnenkomende gebeurtenis moet een doel specificeren dat door deze paramete
 
 Deze reeks van drie waarden identificeert de bevolking die door de vraag wordt gericht. **[!UICONTROL tableName]** is de naam van de lijst die de doelherkenningstekens registreert, **[!UICONTROL schema]** is het schema van de bevolking (gewoonlijk nms:ontvanger) en **[!UICONTROL recCount]** is het aantal elementen in de lijst.
 
-* targetSchema
-
-Deze waarde is het schema van de het werklijst. Deze parameter is geldig voor alle overgangen met **[!UICONTROL tableName]** en **[!UICONTROL schema]**.
+* targetSchema: Deze waarde is het schema van de het werklijst. Deze parameter is geldig voor alle overgangen met **[!UICONTROL tableName]** en **[!UICONTROL schema]**.
