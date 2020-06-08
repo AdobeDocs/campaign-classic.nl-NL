@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+workflow-type: tm+mt
+source-wordcount: '1203'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ De volgende secties beschrijven hoe de Schakelaar ACS u helpt ontvangers in Camp
 
 ## De koppeling voor het opzeggen van abonnementen wijzigen {#changing-the-unsubscription-link}
 
-Wanneer een ontvanger klikt op de koppeling om het abonnement op te zeggen in een e-mailbericht dat is verzonden door Campagnestandaard, wordt het bijbehorende profiel in Campagnestandaard bijgewerkt. Om ervoor te zorgen dat een herhaald profiel de keus van een gebruiker aan de dienst omvat om zich af te melden, moet de informatie naar Campagne v7 eerder dan de Norm van de Campagne worden verzonden. Om de wijziging uit te voeren, wordt de service voor het opzeggen van abonnementen gekoppeld aan een webtoepassing voor Campagne v7 in plaats van aan de Campagnestandaard.
+Wanneer een ontvanger klikt op de koppeling om het abonnement op te zeggen in een e-mailbericht dat is verzonden door Campagnestandaard, wordt het bijbehorende profiel in Campagnestandaard bijgewerkt. Om ervoor te zorgen dat een herhaald profiel de keuze van een gebruiker om zich af te melden voor de service bevat, moet de informatie naar Campagne v7 worden verzonden in plaats van naar Campagnestandaard. Om de wijziging uit te voeren, wordt de service voor het opzeggen van abonnementen gekoppeld aan een webtoepassing voor Campagne v7 in plaats van aan de Campagnestandaard.
 
 >[!NOTE]
 >
@@ -76,13 +79,13 @@ De stappen hieronder voor het veranderen van één enkel punt van gegevens biede
 
 Profielen en services die zijn gerepliceerd vanuit Campaign v7, zijn beschikbaar voor digitale marketers om de rijke gegevens in Campaign Standard te benutten. De instructies tonen hieronder hoe te om een vraag aan een Standaardwerkschema van de Campagne toe te voegen en dan het met het gerepliceerde gegevensbestand te gebruiken.
 
-Zie [Workflows](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/about-workflows-and-data-management/workflow-data-and-processes.html)voor meer informatie en volledige instructies over de standaardworkflows voor campagnes.
+Zie [Workflows](../../workflow/using/about-workflows.md)voor meer informatie en volledige instructies over de standaardworkflows voor campagnes.
 
 1. Ga naar Campagnestandaard en klik **[!UICONTROL Marketing Activities]**.
 1. Klik **[!UICONTROL Create]** in de rechterbovenhoek.
-1. Klik **[!UICONTROL Workflow]**.
+1. Klik op **[!UICONTROL Workflow]**.
 1. Klik **[!UICONTROL New workflow]** en **[!UICONTROL Next]**.
-1. Voer een naam voor de workflow in het **[!UICONTROL Label]** veld in en geef desgewenst aanvullende informatie op. Klik **[!UICONTROL Next]**.
+1. Voer een naam voor de workflow in het **[!UICONTROL Label]** veld in en geef desgewenst aanvullende informatie op. Klik op **[!UICONTROL Next]**.
 1. Sleep **[!UICONTROL Targeting]** een **[!UICONTROL Query]** doel van links naar de werkruimte.
 
    ![](assets/acs_connect_profile_sync_05.png)
@@ -100,7 +103,7 @@ Zie [Workflows](https://docs.adobe.com/content/help/en/campaign-standard/using/m
 
 Digitale marketers kunnen een Campagne v7-webtoepassing gebruiken om ervoor te zorgen dat de keuze van een ontvanger om zich af te melden voor een service naar de Campagne v7-database wordt verzonden. Nadat de ontvanger de unsubscription verbinding klikt, wordt de optie om op te houden die de dienst ontvangt herhaald van Campagne v7 aan de Norm van de Campagne. Zie [De koppeling](#changing-the-unsubscription-link)voor abonnementen wijzigen voor meer informatie.
 
-Voer de onderstaande stappen uit om een e-maillevering toe te voegen aan een bestaande workflow met de service voor het opzeggen van abonnementen die is gemaakt in Campagne v7. Zie dit [document](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/about-workflows-and-data-management/workflow-data-and-processes.html)voor meer informatie en volledige instructies over workflows voor de campagnestandaard.
+Voer de onderstaande stappen uit om een e-maillevering toe te voegen aan een bestaande workflow met de service voor het opzeggen van abonnementen die is gemaakt in Campagne v7. Zie dit [document](../../workflow/using/about-workflows.md)voor meer informatie en volledige instructies over workflows voor de campagnestandaard.
 
 >[!NOTE]
 >
@@ -116,7 +119,7 @@ Voer de onderstaande stappen uit om een e-maillevering toe te voegen aan een bes
 
    ![](assets/acs_connect_profile_sync_08.png)
 
-1. Voer in het **[!UICONTROL Label]** veld een naam voor de levering in en geef desgewenst aanvullende informatie op. Klik **[!UICONTROL Next]**.
+1. Voer in het **[!UICONTROL Label]** veld een naam voor de levering in en geef desgewenst aanvullende informatie op. Klik op **[!UICONTROL Next]**.
 
    ![](assets/acs_connect_profile_sync_09.png)
 
@@ -125,7 +128,7 @@ Voer de onderstaande stappen uit om een e-maillevering toe te voegen aan een bes
 
    ![](assets/acs_connect_profile_sync_10.png)
 
-1. Kies inhoud die de koppeling bevat om het abonnement op de service op te zeggen. Klik **[!UICONTROL Confirm]**.
+1. Kies inhoud die de koppeling bevat om het abonnement op de service op te zeggen. Klik op **[!UICONTROL Confirm]**.
 
    ![](assets/acs_connect_profile_sync_11.png)
 
@@ -138,7 +141,7 @@ Voer de onderstaande stappen uit om een e-maillevering toe te voegen aan een bes
    ![](assets/acs_connect_profile_sync_13.png)
 
 1. Markeer de tekst met de cursor en klik op het ketingpictogram.
-1. Klik **[!UICONTROL Link to a landing page]**.
+1. Klik op **[!UICONTROL Link to a landing page]**.
 
    ![](assets/acs_connect_profile_sync_14.png)
 
@@ -150,7 +153,7 @@ Voer de onderstaande stappen uit om een e-maillevering toe te voegen aan een bes
 
    ![](assets/acs_connect_profile_sync_16.png)
 
-1. Klik **[!UICONTROL Create]**.
+1. Klik op **[!UICONTROL Create]**.
 1. Ga terug naar de workflow door op de naam van de levering te klikken.
 
    ![](assets/acs_connect_profile_sync_17.png)
