@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: efef031d9c662daac6634ff7cc0d05d9d512443b
+source-git-commit: e059fc9e2bfade30454601f31990c3ec14b8a847
+workflow-type: tm+mt
+source-wordcount: '1212'
+ht-degree: 0%
 
 ---
 
@@ -145,13 +148,7 @@ De volgende tabel bevat een lijst met alle standaardpakketten met hun beschrijvi
    <td> Verzendt leveringen via het telefoonkanaal met de Campagne van Adobe.<br /> </td> 
    <td> Alles<br /> </td> 
    <td> Optioneel</td> 
-  </tr> 
-  <tr> 
-   <td> Faxkanaal<br /> </td> 
-   <td> Verzendt leveringen via het faxkanaal met de Campagne van Adobe.<br /> </td> 
-   <td> Alles<br /> </td> 
-   <td> Optioneel</td> 
-  </tr> 
+  </tr>
   <tr> 
    <td> Mobiel App-kanaal<br /> </td> 
    <td> Gebruikt het Adobe Campaign-platform om persoonlijke meldingen naar iOS- en Android-terminals te verzenden via apps. <br /> </td> 
