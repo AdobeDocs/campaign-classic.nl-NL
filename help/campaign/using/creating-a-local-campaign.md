@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '1573'
+ht-degree: 0%
 
 ---
 
@@ -138,7 +141,7 @@ Dubbelklik op de **[!UICONTROL Query]** activiteit om deze te configureren volge
 
 ![](assets/mkt_dist_local_campaign_localize_query.png)
 
-###  Aflevering {#delivery}
+### Aflevering {#delivery}
 
 Klik op het **[!UICONTROL Audit]** tabblad op het **[!UICONTROL Detail...]** pictogram om de **[!UICONTROL Scheduling]** voor de geselecteerde levering te bekijken.
 
@@ -251,9 +254,9 @@ Een campagne bestellen:
 
    ![](assets/mkg_dist_subscribe_step1.png)
 
-   Voltooi de beschikbare parameters en keur de volgorde goed.
+1. Voltooi de beschikbare parameters en keur de volgorde goed.
 
-   Er wordt een kennisgeving verzonden aan de beheerder van de organisatorische entiteit waartoe de lokale entiteit behoort, om deze bestelling goed te keuren.
+1. Er wordt een kennisgeving verzonden aan de beheerder van de organisatorische entiteit waartoe de lokale entiteit behoort, om deze bestelling goed te keuren.
 
    ![](assets/mkg_dist_subscribe_step3.png)
 
