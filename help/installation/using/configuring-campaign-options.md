@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b6b4fd2b21f90a88744736b499eab1b0764774e
+source-git-commit: de1173786c94c2a526153e7e6948f71c9523fa7b
 workflow-type: tm+mt
-source-wordcount: '3740'
+source-wordcount: '3903'
 ht-degree: 0%
 
 ---
@@ -109,6 +109,18 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_FromAddressMasks</span> <br /> </td> 
    <td> Hier kunt u de syntaxis definiëren van het adres Van dat wordt gebruikt bij het verzenden van een bericht.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsDelivery_ImageServerTimeout</span> <br /> </td> 
+   <td> Hiermee kunt u een time-outlimiet (in seconden) definiëren voor het ophalen van een reactie van de server wanneer een afbeelding wordt opgehaald die is gedownload van een gepersonaliseerde URL en die is gekoppeld aan een e-mail. Als deze waarde wordt overschreden, kan het bericht niet worden verzonden. De standaardwaarde is 60 seconden.<br /> </td> 
+  </tr> 
+ <tr> 
+   <td> <span class="uicontrol">NmsDelivery_MaxDownloadedImageSize</span> <br /> </td> 
+   <td> Hiermee kunt u de maximale grootte (in bytes) definiëren die is toegestaan voor afbeeldingen die zijn gedownload van een gepersonaliseerde URL en die zijn gekoppeld aan een e-mail. De standaardwaarde is 100.000 bytes. Als een proefdruk wordt verzonden en de afbeelding(en) wordt (worden) gedownload om de e-mail te verwerken, als de grootte van een afbeelding deze waarde overschrijdt of als er een downloadprobleem is, wordt een fout weergegeven in de leveringslogboeken en mislukt de proefaflevering.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsDelivery_MaxRecommendedAttachments</span> <br /> </td> 
+   <td> Hiermee kunt u een maximum aantal bijlagen instellen in een e-mailsjabloon of transactiesjabloon. Als deze waarde wordt overschreden, zal een waarschuwing in de logboeken van de leveringsanalyse of wanneer het publiceren van het transactionele e-mailmalplaatje worden getoond. De standaardwaarde is 1 bijlage.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxRetry</span> <br /> </td> 
