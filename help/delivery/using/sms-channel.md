@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 3bf835b3f686d1293fda7e6254660c477ba26452
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3152'
 ht-degree: 0%
 
 ---
@@ -41,38 +41,13 @@ Als u naar een mobiele telefoon wilt verzenden, hebt u het volgende nodig:
 
 1. Een externe account die een connector en type bericht opgeeft.
 
-   Beschikbare connectors zijn: NetSize, Generic SMPP (versie 3.4 die binaire wijze steunt SMPP), Sybase365 (SAP SMS 365), CLX Mededelingen, Tele2, O2, en Uitgebreide generische SMPP.
+   Merk op dat de volgende schakelaars vanaf versie 20.2 zullen worden afgekeurd: NetSize, Generic SMPP (SMPP versie 3.4 die binaire wijze steunt), Sybase365 (SAP SMS 365), CLX Mededelingen, Tele2, O2 en iOS. Verouderde mogelijkheden zijn nog steeds beschikbaar, maar deze worden niet verder verbeterd en worden niet ondersteund. Raadpleeg deze [pagina](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)voor meer informatie.
 
 1. Een leveringssjabloon waarin naar deze externe account wordt verwezen.
 
-### Een externe account activeren {#activating-an-external-account}
-
-De lijst met externe accounts vindt u in het knooppunt **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** van de Adobe Campagne Explorer-structuur.
-
-* Ga bijvoorbeeld naar het standaardaccount met de naam **[!UICONTROL NetSize mobile delivery]**.
-* Schakel op het **[!UICONTROL General]** tabblad het **[!UICONTROL Enabled]** selectievakje in.
-
-   ![](assets/s_user_external_account_01.png)
-
-* Controleer of de **[!UICONTROL Mobile]** optie is geselecteerd voor het **[!UICONTROL Channel]** veld.
-* Selecteer op het **[!UICONTROL Mobile]** tabblad een connector in de vervolgkeuzelijst: NetSize, Generic SMPP, Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2, of Uitgebreide generische SMPP. Voor meer informatie over de Uitgebreide generische schakelaar SMPP, verwijs naar het [Creëren van een externe rekening](#creating-an-smpp-external-account) SMPP.
-
-   ![](assets/s_user_external_account_connect_01.png)
-
-* Configureer de connector volgens de informatie die door de leverancier is verstrekt. In het onderstaande voorbeeld is de operator NetSize.
-
-   ![](assets/s_user_external_account_param.png)
-
-* Laat op het **[!UICONTROL Connector]** tabblad de **[!UICONTROL Call Web Service]** activeringsmodus standaard geselecteerd.
-
-   ![](assets/s_user_external_account_param_02.png)
-
-* Als het **[!UICONTROL Connector]** lusje wordt getoond, specificeer de toegang URL voor de schakelaar. Het adres moet in **netsize.jsp** eindigen als uw leverancier NetSize is. Voor alle andere schakelaars, beëindigt het adres URL in **smpp34.jsp**.
-
 ### Een SMPP-externe account maken {#creating-an-smpp-external-account}
 
-Als u het SMPP-protocol wilt gebruiken, kunt u ook een nieuwe externe account maken.
-
+Als u SMS naar een mobiele telefoon wilt verzenden, moet u eerst uw SMPP-externe account maken.
 Voor meer informatie over het protocol en de montages van SMS, verwijs naar deze [technische nota](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
 
 Hiervoor voert u de volgende stappen uit:
@@ -87,7 +62,11 @@ Hiervoor voert u de volgende stappen uit:
 
    ![](assets/extended_smpp_connector.png)
 
-   De **[!UICONTROL Enable verbose SMPP traces in the log file]** optie staat u toe om al verkeer SMPP in logboekdossiers te dumpen. Deze optie moet worden toegelaten om de schakelaar problemen op te lossen en met het verkeer te vergelijken dat door de leverancier wordt gezien.
+   >[!CAUTION]
+   >
+   > Vanaf versie 20.2 worden oudere connectors vervangen en niet ondersteund. Wij adviseren gebruikend de **[!UICONTROL Extended generic SMPP]** schakelaar. Raadpleeg deze [pagina](https://helpx.adobe.com/campaign/kb/sms-connector.html)voor meer informatie over het migreren naar de aanbevolen connector.
+
+1. De **[!UICONTROL Enable verbose SMPP traces in the log file]** optie staat u toe om al verkeer SMPP in logboekdossiers te dumpen. Deze optie moet worden toegelaten om de schakelaar problemen op te lossen en met het verkeer te vergelijken dat door de leverancier wordt gezien.
 
 1. Neem contact op met uw SMS-serviceprovider die u zal uitleggen hoe u de verschillende externe accountvelden op het **[!UICONTROL Connection settings]** tabblad kunt invullen.
 
@@ -378,6 +357,7 @@ Ontvangers worden vermeld in de **[!UICONTROL Non deliverables and addresses]** 
 
 Als u veelvoudige externe rekeningen gebruikend de Uitgebreide generische schakelaar SMPP met de zelfde leveranciersrekening hebt, kan de volgende kwestie gebeuren: wanneer u een antwoord op een korte code verzendt, kan dit antwoord op een van uw externe accountverbindingen worden ontvangen. Het automatische antwoord dat wordt verzonden, kan dan ook niet het verwachte bericht zijn.
 U kunt dit voorkomen door een van de volgende oplossingen toe te passen, afhankelijk van de provider die u gebruikt:
+
 * Maak één leverancieraccount voor elke externe account.
 * Gebruik het **[!UICONTROL System type]** veld op het tabblad **[!UICONTROL Mobile]** **[!UICONTROL Connection settings]** > om elke korte code van elkaar te onderscheiden. Vraag uw provider om een andere waarde voor elke account.
 
@@ -393,19 +373,19 @@ Om via het kanaal van SMS te leveren, moet u een malplaatje tot stand brengen wa
 
 Om het inheemse leveringsmalplaatje te houden, adviseren wij dat u het dupliceert en dan het vormt.
 
-In het onderstaande voorbeeld maken we een sjabloon voor het verzenden van berichten via de NetSize-account die eerder is ingeschakeld. Dit doet u als volgt:
+In het onderstaande voorbeeld maken we een sjabloon voor het verzenden van berichten via de SMPP-account die eerder is ingeschakeld. Dit doet u als volgt:
 
 1. Ga naar het **[!UICONTROL Delivery templates]** knooppunt.
 1. Klik met de rechtermuisknop op de **[!UICONTROL Send to mobiles]** sjabloon en selecteer **[!UICONTROL Duplicate]**.
 
    ![](assets/s_user_mobile_template_change_01.png)
 
-1. Wijzig het label van de sjabloon.
+1. Wijzig het label van de sjabloon, bijvoorbeeld **Verzenden naar mobiele apparaten (SMPP)**.
 
    ![](assets/s_user_mobile_template_change_02.png)
 
 1. Klik op **[!UICONTROL Properties]**.
-1. Op het **[!UICONTROL General]** lusje, selecteer een verpletterende wijze die aan een externe rekening beantwoordt die u, bijvoorbeeld **[!UICONTROL NetSize mobile delivery]** vormde.
+1. Op het **[!UICONTROL General]** lusje, selecteer een verpletterende wijze die aan de externe rekening beantwoordt die u in de vorige stappen creeerde.
 
    ![](assets/s_user_mobile_template_change_03.png)
 
@@ -426,7 +406,7 @@ Volg onderstaande stappen om een nieuwe SMS-levering te maken:
 >Algemene concepten voor het maken van leveringen worden in [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md)beschreven.
 
 1. Maak een nieuwe levering, bijvoorbeeld via het dashboard Levering.
-1. Selecteer de leveringssjabloon **[!UICONTROL Send to mobiles (NetSize)]** die u eerder hebt gemaakt. Voor meer op dit, verwijs naar het [Veranderende de sectie van het leveringsmalplaatje](#changing-the-delivery-template) .
+1. Selecteer het leveringsmalplaatje **Verzonden naar mobiele telefoons (SMPP)** dat u vroeger creeerde. Voor meer op dit, verwijs naar het [Veranderende de sectie van het leveringsmalplaatje](#changing-the-delivery-template) .
 
    ![](assets/s_user_mobile_wizard.png)
 
@@ -488,7 +468,7 @@ De **[!UICONTROL Properties]** knoop geeft toegang tot de geavanceerde leverings
 
 De volgende opties zijn beschikbaar:
 
-* **Verzendadres** (alleen voor NetSize-connector en SMPP-connectors): Hiermee kunt u de naam van de afzender aanpassen met een reeks alfanumerieke tekens die zijn beperkt tot elf tekens. Het veld mag niet uitsluitend uit cijfers bestaan. U kunt een voorwaarde definiëren om bijvoorbeeld verschillende namen weer te geven op basis van de gebiedscode van de ontvanger:
+* **Adres** afzender: Hiermee kunt u de naam van de afzender aanpassen met een reeks alfanumerieke tekens die zijn beperkt tot elf tekens. Het veld mag niet uitsluitend uit cijfers bestaan. U kunt een voorwaarde definiëren om bijvoorbeeld verschillende namen weer te geven op basis van de gebiedscode van de ontvanger:
 
    ```
    <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
