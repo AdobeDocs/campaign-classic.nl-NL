@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
+source-git-commit: 5847107a459bf47f34e4994c3521266bb174d8cb
+workflow-type: tm+mt
+source-wordcount: '832'
+ht-degree: 0%
 
 ---
 
@@ -59,20 +62,20 @@ Begin door een nieuwe levering te maken.
    >De modus **Silent Push** is beschikbaar in iOS 7. Hierdoor kan een &quot;stille&quot; melding naar een mobiele toepassing worden verzonden. De gebruiker wordt niet op de hoogte gebracht van de aankomst van de melding. Deze wordt rechtstreeks naar de toepassing overgedragen.
 
 1. Voer in het **[!UICONTROL Title]** veld het label in van de titel die u in het bericht wilt weergeven. Deze wordt alleen weergegeven in de lijst met meldingen die beschikbaar zijn in het meldingscentrum. In dit veld kunt u de waarde definiëren van de parameter **title** van de payload van de iOS-melding.
+
 1. Als u de HTTP/2-connector gebruikt, kunt u een ondertitel (waarde van de **ondertitelingsparameter** van de iOS-berichtlading) toevoegen. Raadpleeg de sectie Mobiele toepassing [configureren in de Adobe-campagne](../../delivery/using/configuring-the-mobile-application.md) .
+
 1. Voer vervolgens de code **[!UICONTROL Message]** en de **[!UICONTROL Value of the badge]** code in op basis van het gekozen berichttype.
 
    ![](assets/nmac_delivery_ios_5.png)
 
    >[!NOTE]
    >
-   >U kunt emojis toevoegen aan de inhoud van uw bericht. Ga hiertoe naar een emoji-lijstwebsite ([voorbeeld](https://www.utf8-chartable.de/unicode-utf8-table.pl?start=9728)), kopieer een emoji en plak deze rechtstreeks in de inhoudseditor. In Windows 7 worden sommige emojis&#39;s mogelijk niet correct weergegeven in de editor (vierkant symbool), maar ze moeten wel correct worden verzonden in het laatste bericht. De mogelijkheid om emojis weer te geven is afhankelijk van het besturingssysteem dat op het apparaat wordt gebruikt. Wij adviseren dat u proefdrukken verzendt om te verifiëren dat de levering correct wordt getoond alvorens het te verzenden.
-
-   >[!NOTE]
-   >
    >**[!UICONTROL Badge]** en **[!UICONTROL Alert and badge]** typemeldingen kunt u de waarde van de badge wijzigen (het nummer boven het logo van de mobiele toepassing). Als u de badge wilt vernieuwen, hoeft u alleen 0 als waarde in te voeren. Als het veld leeg is, verandert de waarde van de badge niet.
 
-1. Met **[!UICONTROL Action button]** de optie kunt u een label definiëren voor de actieknop die wordt weergegeven in de waarschuwingsberichten (veld **action_loc_key** van de payload). Als uw iOS-toepassing landinstellbare tekenreeksen beheert (**Localizable.strings**), voert u de bijbehorende sleutel in dit veld in. Als uw toepassing geen landinstellbare tekst beheert, voert u het label in dat u wilt zien op de actieknop. Raadpleeg de documentatie [van](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) Apple voor meer informatie over landinstellbare tekenreeksen.
+1. Klik op het **[!UICONTROL Insert emoticon]** pictogram om emoticons in te voegen bij uw pushmelding. Als u de lijst met emoticonen wilt aanpassen, raadpleegt u het [aanpassen van de lijst met emoticonen](../../delivery/using/defining-interactive-content.md)
+
+1. Met **[!UICONTROL Action button]** de optie kunt u een label definiëren voor de actieknop in de waarschuwingsberichten (veld **action_loc_key** van de payload). Als uw iOS-toepassing landinstellbare tekenreeksen beheert (**Localizable.strings**), voert u de bijbehorende sleutel in dit veld in. Als uw toepassing geen landinstellbare tekst beheert, voert u het label in dat u wilt zien op de actieknop. Raadpleeg de documentatie [van](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) Apple voor meer informatie over landinstellbare tekenreeksen.
 1. Selecteer in het **[!UICONTROL Play a sound]** veld het geluid dat door de mobiele terminal moet worden afgespeeld wanneer het bericht wordt ontvangen.
 
    >[!NOTE]
@@ -83,7 +86,7 @@ Begin door een nieuwe levering te maken.
 
    >[!NOTE]
    >
-   >Toepassingsvariabelen moeten worden gedefinieerd in de code van de mobiele toepassing en moeten worden ingevoerd tijdens het maken van de service. Raadpleeg voor meer informatie: Een mobiele toepassing [configureren in Adobe Campagne](../../delivery/using/configuring-the-mobile-application.md).
+   >Toepassingsvariabelen moeten worden gedefinieerd in de code van de mobiele toepassing en moeten worden ingevoerd tijdens het maken van de service. Raadpleeg voor meer informatie: [Een mobiele toepassing configureren in Adobe Campagne](../../delivery/using/configuring-the-mobile-application.md).
 
 1. Zodra het bericht wordt gevormd, klik het **[!UICONTROL Preview]** lusje aan voorproef het bericht.
 
@@ -121,15 +124,13 @@ Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Ra
 
    ![](assets/nmac_delivery_android_4.png)
 
-   >[!NOTE]
-   >
-   >U kunt emojis toevoegen aan de inhoud van uw bericht. Ga hiertoe naar een emoji-lijstwebsite ([voorbeeld](https://www.utf8-chartable.de/unicode-utf8-table.pl?start=9728)), kopieer een emoji en plak deze rechtstreeks in de inhoudseditor. In Windows 7 worden sommige emojis&#39;s mogelijk niet correct weergegeven in de editor (vierkant symbool), maar ze moeten wel correct worden verzonden in de laatste e-mail. De mogelijkheid om emojis weer te geven is afhankelijk van het besturingssysteem dat op het apparaat wordt gebruikt. Wij adviseren dat u proefdrukken verzendt om te verifiëren dat de levering correct wordt getoond alvorens het te verzenden.
+1. Klik op het **[!UICONTROL Insert emoticon]** pictogram om emoticons in te voegen bij uw pushmelding. Als u de lijst met emoticonen wilt aanpassen, raadpleegt u het [aanpassen van de lijst met emoticonen](../../delivery/using/defining-interactive-content.md)
 
 1. Voer in het **[!UICONTROL Application variables]** veld de waarde van elke variabele in. Met toepassingsvariabelen kunt u berichtgedrag definiëren: U kunt bijvoorbeeld een specifiek toepassingsscherm configureren dat moet worden weergegeven wanneer de gebruiker het bericht activeert.
 
    >[!NOTE]
    >
-   >Toepassingsvariabelen moeten worden gedefinieerd in de code van de mobiele toepassing en moeten worden ingevoerd tijdens het maken van de service. Raadpleeg voor meer informatie: Een mobiele toepassing [configureren in Adobe Campagne](../../delivery/using/configuring-the-mobile-application.md).
+   >Toepassingsvariabelen moeten worden gedefinieerd in de code van de mobiele toepassing en moeten worden ingevoerd tijdens het maken van de service. Raadpleeg voor meer informatie: [Een mobiele toepassing configureren in Adobe Campagne](../../delivery/using/configuring-the-mobile-application.md).
 
 1. Zodra het bericht wordt gevormd, klik het **[!UICONTROL Preview]** lusje aan voorproef het bericht.
 
