@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
+source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+workflow-type: tm+mt
+source-wordcount: '377'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +55,7 @@ Hieronder volgt een lijst van de meest gebruikte RBL&#39;s. Voor een uitgebreide
 
 * **SURBL**
 
-   Zie [https://www.surbl.org/](https://www.surbl.org/)
+   Zie [http://www.surbl.org/](http://www.surbl.org/)
 
    De SURBL identificeert de websites die regelmatig in spam verschijnen. Als uw domein in deze lijst wordt weergegeven, kan dit van invloed zijn op de leesbaarheid. U moet de services voor levering en de ondersteuning van Adobe Campagne onmiddellijk op de hoogte stellen.
 
