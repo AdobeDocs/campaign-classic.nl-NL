@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
+source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+workflow-type: tm+mt
+source-wordcount: '941'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ Als u wilt dat Adobe Campaign publicaties naar muren op Facebook kan verzenden, 
 Begin door een Facebook-account en meerdere pagina&#39;s te maken: deze zullen worden gebruikt voor de verzending van publicaties .
 
 * Gebruik de koppeling [https://www.facebook.com](https://www.facebook.com) om een Facebook-account te maken.
-* Als u een Facebook-pagina wilt maken, gebruikt u de koppeling [https://www.facebook.com/pages/create.php](https://www.facebook.com/pages/create.php) .
+* Als u een Facebook-pagina wilt maken, gebruikt u de koppeling [https://www.facebook.com/pages/create](https://www.facebook.com/pages/create) .
 
    We raden u aan hetzelfde Facebook-account te gebruiken om al uw pagina&#39;s te beheren. Op deze manier hebt u slechts één Facebook-toepassing en één externe account nodig om op alle pagina&#39;s van de account te schrijven.
 
