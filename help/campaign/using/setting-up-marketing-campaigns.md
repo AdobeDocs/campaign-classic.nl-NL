@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 1a139e1704a7df38a7b8088e23c972864f8ad998
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
@@ -144,10 +144,6 @@ Herhalende campagnes worden gecreeerd van een specifiek malplaatje dat het werks
 Geef op dit tabblad de geplande uitvoeringsdatums op voor de campagnes die op deze sjabloon zijn gebaseerd.
 
 ![](assets/s_ncs_user_op_template_recur_planning.png)
-
-U kunt de wizard voor het maken van plannen gebruiken om alle uitvoeringsdatums automatisch in te vullen. Klik hiertoe op de **[!UICONTROL Complete the execution schedule...]** koppeling boven de tabel.
-
-![](assets/s_ncs_user_op_template_recur_planning_wz.png)
 
 De configuratiewijze van het uitvoeringsprogramma valt samen met het **[!UICONTROL Scheduler]** voorwerp van het Werkschema. For more on this, refer to [this section](../../workflow/using/architecture.md).
 
