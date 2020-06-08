@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 74e1a883088d347cb1aab05d76b630c912411fc4
+source-git-commit: f4d82657fbeae39af173c867975455669497d8eb
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Spam van het signaal is de Franse dienst die anonymized terugkoppel meldt voor F
 
 ## 250ok {#deliverability-250ok}
 
-[250ok](https://250ok.com/) is een complementaire monitoringsoplossing voor de interne hulpprogramma&#39;s van Adobe voor het leveren van items. Deze oplossing biedt IP-, domein- en reputatie-indicatoren.
+[250ok](https://250ok.com/) is een complementaire monitoringsoplossing voor de interne hulpprogramma&#39;s van Adobe voor het leveren van items, die IP, zwarte lijsten van domeinen en reputatie-indicatoren bieden.
 
 De verstrekte informatie is real-time, wat een pro-actieve bijstand mogelijk maakt.
 
