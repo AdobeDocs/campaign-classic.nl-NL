@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 0%
 
 ---
 
@@ -72,6 +75,4 @@ Hiermee wordt de populatie aangegeven die in de groep moet worden opgeslagen.
 
 ## Uitvoerparameters {#output-parameters}
 
-* groupId
-
-Groep-id.
+* groupId: Groep-id.
