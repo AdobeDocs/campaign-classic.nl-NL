@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
+source-git-commit: c8cfdb67a4be2bc27baa363032c74a4aa8665e2a
+workflow-type: tm+mt
+source-wordcount: '2908'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +39,7 @@ De database wordt op twee niveaus opgeschoond: in de werkstroomplanner en in de 
 
 >[!NOTE]
 >
->Voor meer op de planner, verwijs naar [deze sectie](../../workflow/using/scheduler.md).
+>For more on the scheduler, refer to [this section](../../workflow/using/scheduler.md).
 
 Standaard wordt de **[!UICONTROL Database cleanup]** workflow zo geconfigureerd dat deze elke dag om 4.00 uur wordt gestart. De planner laat u het werkschema veranderen die frequentie teweegbrengen. De volgende frequenties zijn beschikbaar:
 
@@ -59,20 +62,20 @@ Met **[!UICONTROL Deployment wizard]** , dat via het **[!UICONTROL Tools > Advan
 
 De velden van het **[!UICONTROL Purge of data]** venster komen overeen met de volgende opties. Deze worden gebruikt door een aantal van de taken die door de **[!UICONTROL Database cleanup]** workflow worden uitgevoerd:
 
-* Geconsolideerde reeksspatiëring: **NmsCleanup_TrackingStatPurgeDelay** (verwijs naar [Overbodig bijhouden van logbestanden](#cleanup-of-tracking-logs))
+* Geconsolideerde reeksspatiëring: **NmsCleanup_TrackingStatePurgeDelay** (verwijs naar [Overbodig trackinglogboeken](#cleanup-of-tracking-logs))
 * Leveringslogboeken: **NmsCleanup_BroadLogPurgeDelay** (zie [Overbodig verwijderen van leveringslogboeken](#cleanup-of-delivery-logs))
 * Logbestanden bijhouden: **NmsCleanup_TrackingLogPurgeDelay** (verwijs naar [Overbodig bijhouden van logbestanden](#cleanup-of-tracking-logs))
 * Verwijderde leveringen: **NmsCleanup_RecycledDeliveryPurgeDelay** (verwijs naar [Opschonen van te verwijderen of te recyclen](#cleanup-of-deliveries-to-be-deleted-or-recycled)leveringen)
 * Import weigert: **NmsCleanup_RejectsPurgeDelay** (verwijs naar [Overbodig verwijderen van door invoer](#cleanup-of-rejects-generated-by-imports-)gegenereerde afwijzingen)
 * Bezoekersprofielen: **NmsCleanup_VisitorPurgeDelay** (zie [Overbodig verwijderen van bezoekers](#cleanup-of-visitors))
-* Voorstellen voorstellen: **NmsCleanup_PropositionPurgeDelay** (zie [Overbodig verwijderen van voorstellen](#cleanup-of-propositions))
+* Voorstellen voorstellen: **NmsCleanup_PropositionPurgeDelay** (verwijs naar [Overbodig verwijderen van voorstellen](#cleanup-of-propositions))
 
    >[!NOTE]
    >
    >Het **[!UICONTROL Offer propositions]** veld is alleen beschikbaar wanneer de module **Interactie** is geïnstalleerd.
 
-* Gebeurtenissen: **NmsCleanup_EventPurgeDelay** (verwijs naar [het opschonen van verlopen gebeurtenissen](#cleansing-expired-events))
-* Gearchiveerde gebeurtenissen: **NmsCleanup_EventHistoPurgeDelay** (verwijs naar [het opschonen van verlopen gebeurtenissen](#cleansing-expired-events))
+* Gebeurtenissen: **NmsCleanup_EventPurgeDelay** (verwijs naar [Het opschonen van verlopen gebeurtenissen](#cleansing-expired-events))
+* Gearchiveerde gebeurtenissen: **NmsCleanup_EventHistoPurgeDelay** (zie [Verlopen gebeurtenissen](#cleansing-expired-events)opschonen)
 
    >[!NOTE]
    >
@@ -324,11 +327,11 @@ Met deze stap kunt u records verwijderen waarvoor niet alle gegevens tijdens het
 
 ### Opschonen van workflowinstanties {#cleanup-of-workflow-instances}
 
-Deze taak leegt elke werkschemainstantie gebruikend zijn identiteitskaart (**lWorkflowId**) en geschiedenis (**lHistory**). Het schrapt inactieve lijsten door de werktable schoonmaakbeurttaak opnieuw in werking te stellen.
+Deze taak leegt elke werkschemainstantie gebruikend zijn identiteitskaart (**lWorkflowId**) en geschiedenis (**lHistory**). Het schrapt inactieve lijsten door de werktable schoonmaakbeurttaak opnieuw in werking te stellen. De opschoning verwijdert ook alle zwevende werktabellen (wkf% en wkfhisto%) van verwijderde workflows.
 
 >[!NOTE]
 >
->De zuiveringsfrequentie van de historie wordt voor elke workflow in het veld **Geschiedenis opgegeven in dagen** (standaardwaarde 30 dagen). Dit veld vindt u op het tabblad **Uitvoering** van de workfloweigenschappen. Zie [deze sectie](../../workflow/using/workflow-properties.md#execution)voor meer informatie.
+>De zuiveringsfrequentie van de historie wordt voor elke workflow in het veld **Geschiedenis opgegeven in dagen** (standaardwaarde 30 dagen). Dit veld vindt u op het tabblad **Uitvoering** van de workfloweigenschappen. For more on this, refer to [this section](../../workflow/using/workflow-properties.md#execution).
 
 1. De volgende query wordt gebruikt om de lijst met te verwijderen workflows te herstellen:
 
@@ -393,7 +396,7 @@ DELETE FROM XtkWorkflowLogin WHERE iWorkflowId NOT IN (SELECT iWorkflowId FROM X
 
 ### Opruiming van verweesde werktabellen {#cleanup-of-orphan-work-tables}
 
-Met deze taak verwijdert u zwevende werktabellen die aan groepen zijn gekoppeld. In de **tabel NmsGroup** worden de groepen opgeslagen die moeten worden gereinigd (met een ander type dan 0). Het voorvoegsel van de tabelnamen is **grp**. Om de te reinigen groepen te identificeren, wordt de volgende vraag gebruikt:
+Met deze taak verwijdert u zwevende werktabellen die zijn gekoppeld aan groepen. In de **tabel NmsGroup** worden de groepen opgeslagen die moeten worden gereinigd (met een ander type dan 0). Het voorvoegsel van de tabelnamen is **grp**. Om de te reinigen groepen te identificeren, wordt de volgende vraag gebruikt:
 
 ```
 SELECT iGroupId FROM NmsGroup WHERE iType>0"
@@ -404,7 +407,7 @@ SELECT iGroupId FROM NmsGroup WHERE iType>0"
 Met deze taak verwijdert u overbodige records uit de bezoekerstabel door middel van massaverwijdering. De verouderde verslagen zijn die waarvoor de laatste wijziging vroeger is dan de behoudsperiode die in de plaatsingstovenaar wordt bepaald (verwijs naar de tovenaar [van de](#deployment-wizard)Plaatsing). De volgende query wordt gebruikt:
 
 ```
-DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WHERE iRecipientId = 0 AND tsLastModified < $(tsDate) LIMIT 5000)
+DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WHERE iRecipientId = 0 AND tsLastModified < AddDays(GetDate(), -30) AND iOrigin = 0 LIMIT 20000)
 ```
 
 waarbij **$(tsDate)** de huidige serverdatum is, waarvan we de periode aftrekken die is gedefinieerd voor de optie **NmsCleanup_VisitorPurgeDelay** .
@@ -600,11 +603,11 @@ Met deze query worden alle items verwijderd die betrekking hebben op iOS en Andr
 
 Met de optie **XtkCleanup_NoStats** kunt u het gedrag van de stap voor opslagoptimalisatie van de opschoonworkflow bepalen.
 
-Als de optie **XtkCleanup_NoStats** niet bestaat of als zijn waarde 0 is, zal dit de opslagoptimalisering in uitgebreide wijze (VACUUM VERBOSE ANALYZE) op PostgreSQL uitvoeren en statistieken op alle andere gegevensbestanden bijwerken. Controleer de PostSQL-logboeken om ervoor te zorgen dat deze opdracht wordt uitgevoerd. VACUUM zal lijnen in het formaat uitvoeren: `INFO: vacuuming "public.nmsactivecontact"` en ANALYZE zullen lijnen in het formaat uitvoeren: `INFO: analyzing "public.nmsactivecontact"`.
+Als de optie **XtkCleanup_NoStats** niet bestaat of als zijn waarde 0 is, zal dit de opslagoptimalisering in uitgebreide wijze (VACUUM VERBOSE ANALYZE) op PostgreSQL uitvoeren en statistieken op alle andere gegevensbestanden bijwerken. Om ervoor te zorgen dat dit bevel wordt uitgevoerd, controleer de logboeken PostgreSQL. VACUUM zal lijnen in het formaat uitvoeren: `INFO: vacuuming "public.nmsactivecontact"` en ANALYZE zullen lijnen in het formaat uitvoeren: `INFO: analyzing "public.nmsactivecontact"`.
 
 Als de waarde van de optie 1 is, worden statistieken het bijwerken niet uitgevoerd op om het even welk gegevensbestand. De volgende loglijn zal in de werkschemalogboeken verschijnen: `Option 'XtkCleanup_NoStats' is set to '1'`.
 
-Als de waarde van de optie 2 is, zal dit de opslaganalyse op uitgebreide wijze (ANALYZE VERBOSE) op PostgreSQL uitvoeren en statistieken op alle andere gegevensbestanden bijwerken. Controleer de PostSQL-logboeken om ervoor te zorgen dat deze opdracht wordt uitgevoerd. ANALYZE geeft de regels in de volgende notatie: `INFO: analyzing "public.nmsactivecontact"`.
+Als de waarde van de optie 2 is, zal dit de opslaganalyse op uitgebreide wijze (ANALYZE VERBOSE) op PostgreSQL uitvoeren en statistieken op alle andere gegevensbestanden bijwerken. Om ervoor te zorgen dat dit bevel wordt uitgevoerd, controleer de logboeken PostgreSQL. ANALYZE geeft de regels in de volgende notatie: `INFO: analyzing "public.nmsactivecontact"`.
 
 ### Opschonen van abonnementen (NMAC) {#subscription-cleanup--nmac-}
 
