@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '2470'
+ht-degree: 0%
 
 ---
 
@@ -229,73 +232,69 @@ We gaan een campagne opzetten met:
 
 #### Stap 1 - Het creëren van de begroting {#step-1---creating-the-budget}
 
-Maak een nieuw budget via het **[!UICONTROL Campaign management > Budgets]** knooppunt.
+1. Maak een nieuw budget via het **[!UICONTROL Campaign management > Budgets]** knooppunt.
 
-Definieer een begroting van 10.000 euro op het **[!UICONTROL Allocated]** gebied van de **[!UICONTROL Amounts]** sectie. Voeg twee uitgavencategorieën in de onderste sectie van het venster toe:
+1. Definieer een begroting van 10.000 euro op het **[!UICONTROL Allocated]** gebied van de **[!UICONTROL Amounts]** sectie. Voeg twee uitgavencategorieën in de onderste sectie van het venster toe:
 
 ![](assets/s_user_cost_mgmt_sample_1.png)
 
 #### Stap 2 - het Vormen van de dienstverlener en het bepalen van de kostenstructuren {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-Creeer een dienstverlener en een de dienstmalplaatje met zijn kostenstructuur van de **[!UICONTROL Administration > Campaigns]** knoop.
+1. Creeer een dienstverlener en een de dienstmalplaatje met zijn kostenstructuur van de **[!UICONTROL Administration > Campaigns]** knoop. Voor meer op dit, verwijs naar het [Creëren van een dienstverlener en zijn kostencategorieën](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
-Voor meer op dit, verwijs naar het [Creëren van een dienstverlener en zijn kostencategorieën](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
-
-* Maak voor direct mailverkeer kostencategorieën **[!UICONTROL Envelopes]** (typen 114x229 en 162x229) **[!UICONTROL Postage]** en **[!UICONTROL Print]** (typen A3 en A4). En creeer dan de volgende kostenstructuren:
+   Maak voor direct mailverkeer kostencategorieën **[!UICONTROL Envelopes]** (typen 114x229 en 162x229) **[!UICONTROL Postage]** en **[!UICONTROL Print]** (typen A3 en A4). En creeer dan de volgende kostenstructuren:
 
    ![](assets/s_user_cost_mgmt_sample_2.png)
 
-   Voeg een vaste kostprijs toe (in de kostencategorieën) waarvan de berekening vast is en waarvan het bedrag leeg is (in de desbetreffende kostenstructuur) en die voor elke levering afzonderlijk wordt gespecificeerd.
+1. Voeg een vaste kostprijs toe (in de kostencategorieën) waarvan de berekening vast is en waarvan het bedrag leeg is (in de desbetreffende kostenstructuur) en die voor elke levering afzonderlijk wordt gespecificeerd.
 
    ![](assets/s_user_cost_mgmt_sample_5.png)
 
-* Voor taken maakt u de volgende twee kostencategorieën:
+   Voor taken maakt u de volgende twee kostencategorieën:
 
-   1. **[!UICONTROL Room reservation]** (Kleine kamer en Grote kamer), met een **vaste** kostenstructuur van 300 en 500 euro:
+   * **[!UICONTROL Room reservation]** (Kleine kamer en Grote kamer), met een **vaste** kostenstructuur van 300 en 500 euro:
+   ![](assets/s_user_cost_mgmt_sample_6.png)
 
-      ![](assets/s_user_cost_mgmt_sample_6.png)
-
-   1. **[!UICONTROL Creation]** (Sjabloon **voor** inhoud), met een **dagelijkse** kostenstructuur van 300 EUR:
-
-      ![](assets/s_user_cost_mgmt_sample_7.png)
+   * **[!UICONTROL Creation]** (Sjabloon **voor** inhoud), met een **dagelijkse** kostenstructuur van 300 EUR:
+   ![](assets/s_user_cost_mgmt_sample_7.png)
 
 #### Stap 3 - De kosten van de begroting in de campagne {#step-3---charging-the-budget-in-the-campaign}
 
-Maak een campagne en selecteer het budget dat in Stap 1 wordt gemaakt.
+1. Maak een campagne en selecteer het budget dat in Stap 1 wordt gemaakt.
 
->[!NOTE]
->
->Standaard wordt het voor het programma geselecteerde budget toegepast op alle campagnes in het programma.
+   >[!NOTE]
+   >
+   >Standaard wordt het voor het programma geselecteerde budget toegepast op alle campagnes in het programma.
 
-![](assets/s_user_cost_mgmt_sample_4.png)
+   ![](assets/s_user_cost_mgmt_sample_4.png)
 
-Geef de geraamde voorlopige kosten op, uitgesplitst:
+1. Geef de geraamde voorlopige kosten op, uitgesplitst:
 
-![](assets/s_user_cost_mgmt_sample_9.png)
+   ![](assets/s_user_cost_mgmt_sample_9.png)
 
-Klik **[!UICONTROL Ok]** en dan **[!UICONTROL Save]** om deze informatie te bevestigen. De berekende kosten van de campagne worden vervolgens bijgewerkt met de geraamde voorlopige kosten.
+1. Klik **[!UICONTROL Ok]** en dan **[!UICONTROL Save]** om deze informatie te bevestigen. De berekende kosten van de campagne worden vervolgens bijgewerkt met de geraamde voorlopige kosten.
 
 #### Stap 4 - Het creëren van de directe postlevering {#step-4---creating-the-direct-mail-delivery}
 
-Maak een workflow voor de campagne en plaats de query-activiteiten om het doel te selecteren (waarschuwingsbericht: de geadresseerde postadressen moeten worden opgegeven).
+1. Maak een workflow voor de campagne en plaats de query-activiteiten om het doel te selecteren (waarschuwingsbericht: de geadresseerde postadressen moeten worden opgegeven).
 
-Creeer een directe postlevering en selecteer de dienstverlener die in Stap 2 wordt gecreeerd: de kostencategorieën worden automatisch weergegeven.
+1. Creeer een directe postlevering en selecteer de dienstverlener die in Stap 2 wordt gecreeerd: de kostencategorieën worden automatisch weergegeven.
 
-Overschrijf de kosten van de enveloppen en voeg vaste kosten toe. Selecteer ook de categorieën waarop deze kosten betrekking hebben.
+1. Overschrijf de kosten van de enveloppen en voeg vaste kosten toe. Selecteer ook de categorieën waarop deze kosten betrekking hebben.
 
-![](assets/s_user_cost_mgmt_sample_3.png)
+   ![](assets/s_user_cost_mgmt_sample_3.png)
 
->[!NOTE]
->
->Als een van de kostencategorieën niet wordt gebruikt, zal dit geen kosten genereren.
+   >[!NOTE]
+   >
+   >Als een van de kostencategorieën niet wordt gebruikt, zal dit geen kosten genereren.
 
-Start de workflow die u zojuist hebt gemaakt om de analyse te starten en de kosten te berekenen.
+1. Start de workflow die u zojuist hebt gemaakt om de analyse te starten en de kosten te berekenen.
 
-![](assets/s_user_cost_mgmt_sample_10.png)
+   ![](assets/s_user_cost_mgmt_sample_10.png)
 
-Als voor deze campagne begrotingsgoedkeuring is ingeschakeld, keurt u de begroting van het dashboard goed. Je kunt de goedkeuring van kostencategorieën controleren.
+1. Als voor deze campagne begrotingsgoedkeuring is ingeschakeld, keurt u de begroting van het dashboard goed. Je kunt de goedkeuring van kostencategorieën controleren.
 
-![](assets/s_user_cost_mgmt_sample_10b.png)
+   ![](assets/s_user_cost_mgmt_sample_10b.png)
 
 De uitgavenregel voor de levering wordt toegevoegd op het **[!UICONTROL Edit > Budget]** tabblad van de campagne. Bewerk de tabel om de details van de berekening weer te geven.
 
@@ -311,27 +310,27 @@ Wanneer u de berekende kosten bewerkt, kunt u de uitsplitsing van de kosten en d
 
 Aan deze campagne, zullen wij de twee taken toevoegen waarvoor de kostenstructuren vroeger werden gecreeerd (zie [Stap 2 - het Vormen van de dienstverlener en het bepalen van de kostenstructuren](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)). Klik hiertoe op de **[!UICONTROL Add a task]** knop in het campagnemashboard. Geef een naam op voor de taak en klik op **[!UICONTROL Save]**.
 
-De taak wordt vervolgens toegevoegd aan de takenlijst. U moet het uitgeven om het te vormen.
+1. De taak wordt vervolgens toegevoegd aan de takenlijst. U moet het uitgeven om het te vormen.
 
-Selecteer op het **[!UICONTROL Properties]** tabblad de service en de bijbehorende kostencategorie:
+1. Selecteer op het **[!UICONTROL Properties]** tabblad de service en de bijbehorende kostencategorie:
 
-![](assets/s_user_cost_mgmt_sample_14.png)
+   ![](assets/s_user_cost_mgmt_sample_14.png)
 
-Klik vervolgens op het **[!UICONTROL Expenses and revenue]** pictogram van de taak en geef de geschatte voorlopige kosten op.
+1. Klik vervolgens op het **[!UICONTROL Expenses and revenue]** pictogram van de taak en geef de geschatte voorlopige kosten op.
 
-![](assets/s_user_cost_mgmt_sample_15.png)
+   ![](assets/s_user_cost_mgmt_sample_15.png)
 
-Wanneer de taak is gered, worden de berekende kosten gespecificeerd met de waarde die voor de geschatte voorlopige kosten wordt ingevoerd.
+   Wanneer de taak is gered, worden de berekende kosten gespecificeerd met de waarde die voor de geschatte voorlopige kosten wordt ingevoerd.
 
-Wanneer de taak is voltooid (status **[!UICONTROL Finished]** ), worden de berekende kosten automatisch bijgewerkt met de kosten van de grote ruimte zoals die in de kostenstructuur zijn ingevoerd. Deze kosten worden ook in deze categorie in de uitsplitsing weergegeven.
+   Wanneer de taak is voltooid (status **[!UICONTROL Finished]** ), worden de berekende kosten automatisch bijgewerkt met de kosten van de grote ruimte zoals die in de kostenstructuur zijn ingevoerd. Deze kosten worden ook in deze categorie in de uitsplitsing weergegeven.
 
-Vervolgens maakt u een tweede taak volgens dezelfde procedure. die langer dan vijf dagen zijn gepland en betrekking hebben op de eerder gemaakte kostenstructuur.
+1. Vervolgens maakt u een tweede taak volgens dezelfde procedure. die langer dan vijf dagen zijn gepland en betrekking hebben op de eerder gemaakte kostenstructuur.
 
-![](assets/s_user_cost_mgmt_sample_16.png)
+   ![](assets/s_user_cost_mgmt_sample_16.png)
 
-Wanneer de taak is voltooid, worden de berekende kosten gespecificeerd met de waarde van de gerelateerde kostenstructuur, d.w.z. 1500 euro in ons voorbeeld (5 dagen x 300 euro):
+   Wanneer de taak is voltooid, worden de berekende kosten gespecificeerd met de waarde van de gerelateerde kostenstructuur, d.w.z. 1500 euro in ons voorbeeld (5 dagen x 300 euro):
 
-![](assets/s_user_cost_mgmt_sample_17.png)
+   ![](assets/s_user_cost_mgmt_sample_17.png)
 
 #### Stap 6 - De begrotingsstatus van de campagne bijwerken {#step-6---update-the-campaign-budget-status}
 
