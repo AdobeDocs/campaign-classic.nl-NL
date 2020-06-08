@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: a62e4d072573f7ed1b77f755eb57838c70745592
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 0%
 
 ---
 
@@ -28,6 +31,10 @@ Ga naar het tabblad **Campagnes** en selecteer het **[!UICONTROL Web Application
 
 ![](assets/webapp_create_from_campaign.png)
 
+>[!NOTE]
+>
+>ALways beschermen de pagina&#39;s die persoonlijke informatie zouden kunnen bevatten. Raadpleeg de checklist [Beveiliging en Privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
+
 Dit malplaatje bepaalt het type van toepassing van het Web. U kunt:
 
 1. Webformulieren (+ profielwijziging)
@@ -36,15 +43,15 @@ Dit malplaatje bepaalt het type van toepassing van het Web. U kunt:
 
 1. Webtoepassingen
 
-   De Campagne van Adobe laat u de toepassingen van het Web tot stand brengen om op een platform van het Web of een Extranet bijvoorbeeld worden blootgesteld. Hierdoor kunt u gegevens bewerken en gegevens opnemen in Adobe Campaign. In dit geval kunt u hun toegang beperken tot geverifieerde gebruikers (via toegangsbeheer) en gegevens vooraf laden instellen op basis van verschillende criteria. Zie [deze sectie](../../web/using/about-web-applications.md)voor meer informatie.
+   De Campagne van Adobe laat u de toepassingen van het Web tot stand brengen om op een platform van het Web of een Extranet bijvoorbeeld worden blootgesteld. Hierdoor kunt u gegevens bewerken en gegevens opnemen in Adobe Campaign. In dit geval kunt u hun toegang beperken tot geverifieerde gebruikers (via toegangsbeheer) en gegevens vooraf laden instellen op basis van verschillende criteria. For more on this, refer to [this section](../../web/using/about-web-applications.md).
 
 1. Openingspagina&#39;s
 
-   Een openingspagina is een HTML-pagina waarvan de inhoud beschikbaar is op een website en waarmee gebruikers gegevens kunnen invoeren die in het databaseprofiel Adobe Campagne moeten worden opgeslagen. De inhoud van dit type pagina wordt meestal gemaakt door een gespecialiseerde webdienst voordat deze wordt geïmporteerd in Adobe Campaign voor publicatie, beheer en follow-up. Raadpleeg [deze pagina](../../web/using/creating-a-landing-page.md)voor meer informatie.
+   Een openingspagina is een HTML-pagina waarvan de inhoud beschikbaar is op een website en waarmee gebruikers gegevens kunnen invoeren die in het databaseprofiel Adobe Campagne moeten worden opgeslagen. De inhoud van dit type pagina wordt meestal gemaakt door een gespecialiseerde webdienst voordat deze wordt geïmporteerd in Adobe Campaign voor publicatie, beheer en follow-up. For more on this, refer to [this page](../../web/using/creating-a-landing-page.md).
 
 1. Enquêtes
 
-   Met de Adobe-campagne kunt u via de optie **Beoordelingsbeheer** online enquêtes ontwerpen en beheren en de resultaten ervan verwerken: dynamische het gebiedsverwezenlijking, scorebeheer, de uitvoer van antwoorden en specifieke rapporten. Zie [deze sectie](../../web/using/about-surveys.md)voor meer informatie.
+   Met de Adobe-campagne kunt u via de optie **Beoordelingsbeheer** online enquêtes ontwerpen en beheren en de resultaten ervan verwerken: dynamische het gebiedsverwezenlijking, scorebeheer, de uitvoer van antwoorden en specifieke rapporten. For more on this, refer to [this section](../../web/using/about-surveys.md).
 
    >[!CAUTION]
    >
@@ -52,10 +59,10 @@ Dit malplaatje bepaalt het type van toepassing van het Web. U kunt:
 
 1. Facebook-toepassingen
 
-   Dankzij de optie **Sociale marketing** kunt u in Adobe Campaign gepersonaliseerde inhoud publiceren in een Facebook-toepassing. Zie [deze sectie](../../social/using/about-social-marketing.md)voor meer informatie.
+   Dankzij de optie **Sociale marketing** kunt u in Adobe Campaign gepersonaliseerde inhoud publiceren in een Facebook-toepassing. For more on this, refer to [this section](../../social/using/about-social-marketing.md).
 
    >[!CAUTION]
    >
    >**Social Marketing** is een optionele Adobe Campaign-module. Controleer uw licentieovereenkomst.
 
-De wijze van de paginasonfiguratie evenals de beschikbare configuraties kunnen voor verscheidene de toepassingstypes van het Web identiek zijn. Zie [deze sectie](../../web/using/about-web-forms.md)voor meer informatie.
+De wijze van de paginasonfiguratie evenals de beschikbare configuraties kunnen voor verscheidene de toepassingstypes van het Web identiek zijn. For more on this, refer to [this section](../../web/using/about-web-forms.md).
