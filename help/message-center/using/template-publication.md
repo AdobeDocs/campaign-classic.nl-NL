@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 1486e897a125520c51661db3030c62ab380fb173
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 Zodra het berichtmalplaatje op de controleinstantie wordt gecreeerd volledig is, kunt u het op alle uitvoeringsinstanties publiceren. Met Publicatie kunt u automatisch twee berichtsjablonen op de uitvoeringsinstantie maken waarmee u berichten kunt verzenden die zijn gekoppeld aan realtime- en batchgebeurtenissen.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Vergeet niet de sjabloon te publiceren wanneer u er wijzigingen in aanbrengt, zodat deze wijzigingen tijdens de levering van transactiemeldingen van kracht worden.
 
@@ -34,15 +37,14 @@ Zodra het berichtmalplaatje op de controleinstantie wordt gecreeerd volledig is,
 
 1. Ga in de besturingsinstantie naar de **[!UICONTROL Message Center > Transactional message templates]** map van de boomstructuur.
 1. Selecteer de sjabloon die u op de uitvoeringsinstanties wilt publiceren.
-1. Klik **[!UICONTROL Publication]** .
+1. Klik op **[!UICONTROL Publish]**.
 
    ![](assets/messagecenter_publish_model_008.png)
 
-Wanneer de publicatie is voltooid, worden zowel berichtsjablonen die moeten worden toegepast op batch- als realtime-gebeurtenissen gemaakt in de structuur van de productieinstantie in de **[!UICONTROL Administration > Production > Message Center > Default > Transactional message templates]** map.
+Wanneer de publicatie is voltooid, worden zowel berichtsjablonen die moeten worden toegepast op batchgebeurtenissen als realtime-typegebeurtenissen gemaakt in de structuur van de productieinstantie in de **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** map.
 
 ![](assets/messagecenter_deployed_model_001.png)
 
 >[!NOTE]
 >
 >Als u een bestaand veld van de transactiemplate voor berichten, zoals het adres van de afzender, vervangt door een lege waarde, wordt het corresponderende veld op de uitvoeringsinstantie(s) niet bijgewerkt wanneer het transactiemelding opnieuw wordt gepubliceerd. De vorige waarde blijft in de selectie staan. Als u echter een niet-lege waarde toevoegt, wordt het desbetreffende veld op de gebruikelijke wijze na de volgende publicatie bijgewerkt.
-
