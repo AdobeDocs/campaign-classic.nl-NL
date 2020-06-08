@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4148efa9c7a8b002672d72fc526753bf7304673c
+source-git-commit: 651dfdab75f64d72a1c5beb1273a878ee7102b47
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2912'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ De volledige procedure voor het maken van een operator wordt in [deze pagina](#c
 
 Raadpleeg [deze pagina](../../installation/using/connecting-through-ldap.md)voor meer informatie over de integratie met Adobe Campagne en LDAP.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Operatoren moeten zijn gekoppeld aan een beveiligingszone om zich aan te melden bij een instantie. Raadpleeg [deze pagina](../../installation/using/configuring-campaign-server.md#defining-security-zones)voor meer informatie over beveiligingszones in Adobe Campaign.
 
@@ -149,7 +149,7 @@ Met de **[!UICONTROL Edit the access parameters...]** koppeling hebt u toegang t
 
    ![](assets/s_ncs_user_restrictions_operators.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Dit is een zeer strenge beperking en het moet met voorzichtigheid worden gebruikt. Een exploitant die met dit type van rechten het programma wordt geopend kan slechts de inhoud van de gespecificeerde omslag zien, en heeft geen toegang tot een andere knoop van de boom via de ontdekkingsreiziger. Afhankelijk van de functies waartoe hij toegang heeft (bijvoorbeeld: werkstromen), kan hij gegevens tonen die gewoonlijk in knopen worden opgeslagen die hij niet kan zien.
 
@@ -179,7 +179,7 @@ U hebt toegang tot:
 
 Adobe Campaign gebruikt technische operatoren met profielen die standaard zijn geconfigureerd: Beheerder (&#39;admin&#39;), Facturering (&#39;facturering&#39;), Controle, Web application agent (&#39;webapp&#39;), enz. Sommige hiervan zijn afhankelijk van de toepassingen en opties die op het platform zijn geïnstalleerd: De &quot;centrale&quot;en &quot;lokale&quot;exploitanten, bijvoorbeeld, zijn slechts zichtbaar als de Verdeelde optie van de Marketing wordt geïnstalleerd.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Deze technische operatoren worden standaard op de hoogte gesteld wanneer het platform informatieberichten retourneert. We raden u ten zeerste aan een contactbericht voor hen te verzenden.
 >
@@ -396,7 +396,7 @@ Als de **[!UICONTROL Security]** optie op het **[!UICONTROL System folder]** tab
 
 ## Mappen en weergaven {#folders-and-views}
 
-### Mappen en weergaven {#about-folders-and-views}
+### Mappen {#about-folders}
 
 Mappen zijn knooppunten in de Adobe Campaign-structuur. Deze knooppunten worden gemaakt door met de rechtermuisknop op de structuur te klikken via het **[!UICONTROL Add new folder]** menu. Standaard kunt u in het eerste menu de map toevoegen die overeenkomt met de huidige context.
 
@@ -404,17 +404,23 @@ Mappen zijn knooppunten in de Adobe Campaign-structuur. Deze knooppunten worden 
 
 U kunt machtigingen voor deze mappen verlenen, net als voor alle andere mappen in de structuur. Zie Toegangsbeheer voor [mappen](#folder-access-management).
 
+### Weergaven {#about-views}
+
 Daarnaast kunt u weergaven maken om de toegang tot gegevens te beperken en de inhoud van de structuur aan uw wensen aan te passen. U kunt vervolgens rechten toewijzen aan de weergaven.
 
 Een weergave is een map waarin records worden weergegeven die fysiek zijn opgeslagen in een of meer andere mappen van hetzelfde type. Als u bijvoorbeeld een map Campagne maakt die een weergave is, worden standaard alle campagnes in de database weergegeven, ongeacht de oorsprong ervan. Deze gegevens kunnen vervolgens worden gefilterd.
 
 Wanneer u een map naar een weergave converteert, worden alle gegevens die overeenkomen met het maptype dat in de database aanwezig is, weergegeven in de weergave, ongeacht de map waarin deze is opgeslagen. Vervolgens kunt u het filter filteren om de lijst met weergegeven gegevens te beperken.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >De weergaven bevatten gegevens en bieden toegang tot deze gegevens, maar de gegevens worden niet fysiek opgeslagen in de weergavemap. De exploitant moet de aangewezen rechten voor de gewenste actie in de omslagen van de gegevensbron (lees minstens toegang) hebben.
 >
 >Als u toegang tot een weergave wilt geven zonder toegang tot de bronmap, geeft u geen leestoegang op het bovenliggende knooppunt van de bronmap.
+
+Om weergaven van mappen te onderscheiden, wordt de naam van elke weergave weergegeven in een andere kleur (donkercyaan).
+
+![](assets/s_ncs_user_view_name_color.png)
 
 ### Mappen toevoegen en weergaven maken {#adding-folders-and-creating-views}
 
@@ -442,4 +448,3 @@ In het onderstaande voorbeeld maken we nieuwe mappen waarin specifieke gegevens 
 De volgende leveringen worden weergegeven in de weergave:
 
 ![](assets/s_ncs_user_add_folder_exple02.png)
-
