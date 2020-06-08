@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e2ba309643a10a2bfdb031b3ee0acd90c3d02fc0
+source-git-commit: 39b8f4af256c23744a2b6e5978964e4b3207aafb
 workflow-type: tm+mt
-source-wordcount: '6477'
+source-wordcount: '6666'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,38 @@ ht-degree: 0%
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates per maand en de campagneversie.
 
 U kunt ook de [Adobe Campagne Classic Release Notes](../../rn/using/latest-release.md) raadplegen voor meer updates.
+
+## 20.2 - 08/06/2020{#release-20-2}
+
+**Nieuwe mogelijkheden inbegrepen in de versie**
+
+Ondersteuning voor Emoticons - [Meer informatie](../../delivery/using/customizing-emoticon-list.md)
+
+Azure Synapse FDA Connector - [Meer informatie](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse)
+
+Privacy-wetten voor Thailand en Brazilië - [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
+
+**Overige documentatie-updates die bij de release worden geleverd**
+
+De nieuwe optie die het toelaten om een transactiemalplaatje van het berichtbericht unpublish is gedocumenteerd in[deze sectie](../../message-center/using/template-unpublication.md).
+
+De nieuwe opties waarmee u beperkingen kunt instellen voor het verzenden van e-mailberichten met afbeeldingen die zijn gedownload van een gepersonaliseerde URL en bijlagen, zijn toegevoegd aan de lijst met opties voor Klassieke campagne. [Meer informatie](../../installation/using/configuring-campaign-options.md#delivery)
+
+De nieuwe **Voorbereiden de leveringsdelen in de gegevensbestandoptie** wordt gedocumenteerd in [deze sectie](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis).
+
+Het valideren van de leveringssectie is verduidelijkt en bijgewerkt. [Meer informatie](../../delivery/using/steps-validating-the-delivery.md)
+
+De parameters met betrekking tot het nieuwe het volgen mechanisme van de verbindingshandtekening zijn toegevoegd aan de sectie van het de configuratiedossier [van de](../../installation/using/the-server-configuration-file.md) Server.
+
+De compatibiliteitsmatrix is bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+
+De sectie over de opschoningsworkflow is bijgewerkt. [Meer informatie](../../production/using/database-cleanup-workflow.md)
+
+De het netwerkeindpunten van de Campagne zijn verplaatst naar deze [sectie](../../installation/using/campaign-network-endpoints.md).
+
+Het gedeelte Spam Assassin-installatie is bijgewerkt met de nieuwe naam van het installatiebestand. [Meer informatie](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
+
+De sectie over het dupliceren van omgevingen is bijgewerkt. [Meer informatie](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
 
 
 ## mei 2020 {#may-2020}
@@ -210,7 +242,7 @@ Er is een nieuwe pagina met best practices voor de gegevensverbinding van Adobe 
 
 De gids Aan de slag met best practices voor levering is verplaatst en bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/delivery-best-practices.html)
 
-Er is een aanbeveling toegevoegd aan de documentatie van het SMS-kanaal om problemen te voorkomen bij het gebruik van meerdere externe accounts die de uitgebreide algemene SMPP-connector gebruiken met dezelfde provider. [Meer informatie](../../delivery/using/sms-channel.md#automatic-reply)
+Er is een aanbeveling toegevoegd aan de documentatie van het SMS-kanaal om problemen te voorkomen bij het gebruik van meerdere externe accounts die de uitgebreide algemene SMPP-connector gebruiken met dezelfde leverancieraccount. [Meer informatie](../../delivery/using/sms-channel.md#automatic-reply)
 
 Er is informatie toegevoegd aan de documentatie bij de planningsactiviteit over hoe u gelijktijdige uitvoering van een workflow kunt voorkomen. [Meer informatie](../../workflow/using/scheduler.md)
 
