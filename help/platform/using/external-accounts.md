@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 090ec1f9b30c8548075493757b814a8bb40bea30
+source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+workflow-type: tm+mt
+source-wordcount: '2217'
+ht-degree: 0%
 
 ---
 
@@ -107,7 +110,7 @@ Met de **[!UICONTROL Routing]** externe account kunt u elk kanaal configureren d
 De volgende kanalen kunnen worden gevormd:
 
 * [E-mail](../../installation/using/deploying-an-instance.md#email-channel-parameters)
-* [Mobiel (SMS)](../../delivery/using/sms-channel.md#activating-an-external-account).
+* [Mobiel (SMS)](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)
 * [Telefoon](../../delivery/using/other-channels.md)
 * [Direct mail](../../delivery/using/about-direct-mail-channel.md)
 * [Bureau](../../delivery/using/other-channels.md)
@@ -154,6 +157,7 @@ De Campagne van Adobe verstrekt verscheidene schakelaars die u toestaan om met e
 
 De volgende verbindingstypen kunnen worden geconfigureerd:
 
+* Azure Synapse. Raadpleeg deze [pagina](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse)voor meer informatie.
 * Oracle. Raadpleeg deze [pagina](../../platform/using/specific-configuration-database.md#configure-access-to-oracle)voor meer informatie.
 * Netezza. Raadpleeg deze [pagina](../../platform/using/specific-configuration-database.md#configure-access-to-netezza)voor meer informatie.
 * SAP HANA. Raadpleeg deze [pagina](../../platform/using/specific-configuration-database.md#configure-access-to-sap-hana)voor meer informatie.
@@ -529,7 +533,7 @@ Met het **[!UICONTROL Oracle on demand]** externe account kunt u Oracle-gegevens
 
 ![](assets/ext_account_18.png)
 
-Als u het externe Oracle-account op aanvraag wilt configureren voor gebruik met Adobe Campaign, moet u de volgende gegevens opgeven:
+Als u de externe Oracle-account op aanvraag wilt configureren voor gebruik met Adobe Campaign, moet u de volgende gegevens opgeven:
 
 * **[!UICONTROL Account]**
 
