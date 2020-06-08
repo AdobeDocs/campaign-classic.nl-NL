@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 30f313cecf1c3d7c65f6524a3f86a1c28b35f679
+source-git-commit: aef56860d6e4558a7f4833066ab3d83733591522
+workflow-type: tm+mt
+source-wordcount: '801'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +39,7 @@ De clients voor mobiele apparaten, berichten en webmail die beschikbaar zijn voo
 >
 >Rendering in doos is niet nodig om personalisatie in leveringen te testen. Personalisatie kan worden gecontroleerd met Adobe-campagneprogramma&#39;s zoals **[!UICONTROL Preview]** en [proefdrukken](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-## Inbox-rendering activeren{#activating-inbox-rendering}
+## Inbox-rendering activeren {#activating-inbox-rendering}
 
 Voor gehoste en hybride clients wordt de InBox-rendering op uw exemplaar geconfigureerd door technische ondersteuning en consultants van Adobe. Neem voor meer informatie contact op met de manager van uw Adobe-account.
 
@@ -47,9 +50,9 @@ Voor on-premise installaties, volg de stappen hieronder om Inbox teruggeven te v
 1. Stel de parameters voor de externe account als volgt in:
    * **[!UICONTROL Label]**: Informatie over de leveringsserver
    * **[!UICONTROL Internal name]**: DeliabilityInstance
-   * **[!UICONTROL Type]**:HTTP
+   * **[!UICONTROL Type]**: HTTP
    * **[!UICONTROL Server]**: https://deliverability-app.neolane.net/deliverability
-   * **[!UICONTROL Encryption]**:Geen
+   * **[!UICONTROL Encryption]**: Geen
    * Schakel de **[!UICONTROL Enabled]** optie in.
    ![](assets/s_tn_inbox_rendering_external-account.png)
 
@@ -98,12 +101,6 @@ Het aantal resterende beschikbare tokens wordt weergegeven in het **[!UICONTROL 
 
 Doorgaans wordt de renderfunctie Inbox gebruikt om het HTML-framework van een nieuw ontworpen e-mail te testen. Voor elke rendering zijn ongeveer 70 tokens nodig (afhankelijk van het aantal omgevingen dat doorgaans wordt getest). In sommige gevallen hebt u echter meerdere renderingrapporten in postvak nodig om de levering volledig te testen. Het zou dus meer tokens kunnen vergen om meerdere controles te voltooien.
 
->[!NOTE]
->
->Als u een cliënt van Litmus bent, kunt u uw eigen rekening van Litmus aan voorziening gebruiken en Inbox teruggeven in de Campagne van Adobe gebruiken. Neem voor meer informatie hierover contact op met de manager van uw Adobe-account.
->
->Houd er rekening mee dat als u uw Litmus-gegevens wijzigt, er verificatieproblemen kunnen optreden in Adobe Campaign.
-
 ## Toegang tot het renderrapport in Postvak IN {#accessing-the-inbox-rendering-report}
 
 Nadat u de e-maillevering hebt gemaakt en de inhoud ervan en de doelgroep hebt gedefinieerd, volgt u de onderstaande stappen.
@@ -115,7 +112,7 @@ Raadpleeg [deze sectie](../../delivery/using/about-email-channel.md)voor meer in
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Er wordt een bewijs verzonden. De renderingminiaturen zijn enkele minuten na het verzenden van de e-mails toegankelijk in die proefdruk. Raadpleeg [deze sectie](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)voor meer informatie over het verzenden van proefdrukken.
+   Er wordt een bewijs verzonden. De renderingminiaturen zijn enkele minuten na het verzenden van de e-mails toegankelijk in die proefdruk. For more on sending proofs, refer to [this section](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 1. Na verzending wordt de proefdruk weergegeven in de leveringslijst. Dubbelklik erop.
 
@@ -137,7 +134,7 @@ Het **[!UICONTROL General summary]** aantal ontvangen berichten, ongewenste (spa
 
 Houd de cursor boven het diagram om de details van elke kleur weer te geven.
 
-Het verslag bestaat uit drie delen: **[!UICONTROL Mobile]**, **[!UICONTROL Messaging clients]**, en **[!UICONTROL Webmails]**. Schuif omlaag het rapport om alle renderingen weer te geven die in deze drie categorieën zijn gegroepeerd.
+Het verslag bestaat uit drie delen: **[!UICONTROL Mobile]**, **[!UICONTROL Messaging clients]** en **[!UICONTROL Webmails]**. Schuif omlaag het rapport om alle renderingen weer te geven die in deze drie categorieën zijn gegroepeerd.
 
 ![](assets/s_tn_inbox_rendering_report.png)
 
