@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campagne classic
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 56ddf3dc1505c0507c67f8b08c9f33b4007f8857
 workflow-type: tm+mt
-source-wordcount: '2090'
+source-wordcount: '2100'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,7 @@ ht-degree: 0%
 + Opmerkingen bij de release {#release-notes}
    + [Laatste release](rn/using/latest-release.md)
    + Eerdere versies {#previous-releases}
+      + [Release 20.1](rn/using/release--20-1.md)
       + [Release 19.2](rn/using/release--19-2.md)
       + [Release 19.1](rn/using/release--19-1.md)
       + [Release 18.10](rn/using/release--18-10.md)
@@ -127,6 +128,7 @@ ht-degree: 0%
       + [Voorwaardelijke inhoud](delivery/using/conditional-content.md)
       + [Persoonlijke coupons](delivery/using/personalized-coupons.md)
       + [Aangepaste PDF-documenten genereren](delivery/using/generating-personalized-pdf-documents.md)
+      + [De lijst met emoticonen aanpassen](delivery/using/customizing-emoticon-list.md)
    + zaadadressen gebruiken {#using-seed-addresses}
       + [Informatie over zaadadressen](delivery/using/about-seed-addresses.md)
       + [zaadadressen maken](delivery/using/creating-seed-addresses.md)
@@ -526,6 +528,7 @@ ht-degree: 0%
       + [Voorvertoning van Transactiebericht](message-center/using/transactional-message-preview.md)
       + [Een proefafdruk verzenden](message-center/using/sending-a-proof.md)
       + [Sjabloonpublicatie](message-center/using/template-publication.md)
+      + [Onpublicatie sjabloon](message-center/using/template-unpublication.md)
    + Gebeurtenisverwerking {#event-processing}
       + [Gebeurtenisverwerking](message-center/using/about-event-processing.md)
       + [Gebeurtenisverzameling](message-center/using/event-collection.md)
@@ -603,6 +606,7 @@ ht-degree: 0%
       + [Interactie - Gegevensbuffer](installation/using/interaction---data-buffer.md)
    + Bijlagen {#appendices}
       + [Het serverconfiguratiebestand](installation/using/the-server-configuration-file.md)
+      + [De netwerkeindpunten van de campagne](installation/using/campaign-network-endpoints.md)
       + [Opdrachtlijnen](installation/using/command-lines.md)
       + [Nieuwe instanties maken](installation/using/creating-new-instances.md)
       + [Lijst met klassieke opties voor campagne](installation/using/configuring-campaign-options.md)
