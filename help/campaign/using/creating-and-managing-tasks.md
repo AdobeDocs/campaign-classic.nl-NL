@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '3737'
+ht-degree: 0%
 
 ---
 
@@ -102,7 +105,7 @@ Wanneer een Adobe Campagne-operator een taak maakt, wordt deze standaard automat
 >
 >Operator management wordt in [deze sectie](../../platform/using/access-management.md)weergegeven.
 
-U kunt aangeven welke operatoren bij de uitvoering van de taak betrokken zijn. Deze operatoren zijn niet geautoriseerd om de taak te sluiten. Zij kunnen alleen de hun toegewezen taak goedkeuren.
+U kunt aangeven welke operatoren bij de uitvoering van de taak betrokken zijn. Deze operatoren zijn niet geautoriseerd om de taak te sluiten. Zij mogen alleen de hun toegewezen taak goedkeuren.
 
 Ze worden geselecteerd met het **[!UICONTROL Resources]** pictogram op de taakwerkbalk. Klik **[!UICONTROL Add]** en selecteer de betrokken exploitanten.
 
@@ -190,7 +193,7 @@ De begroting die standaard in rekening wordt gebracht, is de begroting van de ca
 
 >[!NOTE]
 >
->Voor meer informatie over uitgaven en begrotingen, zie [kostenvastlegging, berekening en het in rekening brengen](../../campaign/using/controlling-costs.md#cost-commitment--calculation-and-charging).
+>Voor meer informatie over uitgaven en budgetten, zie [Kosten, berekening en het in rekening brengen](../../campaign/using/controlling-costs.md#cost-commitment--calculation-and-charging).
 
 In dit venster kunt u ook de te bereiken doelstellingen definiëren. De doelstellingen worden uitgedrukt in de geraamde ontvangsten voor de taak.
 
@@ -274,10 +277,10 @@ Wanneer u taken maakt via een campagne, kunt u specifieke taken maken. Het taakt
 
 De volgende taken kunnen worden gepland:
 
-* **[!UICONTROL Control task]**, verwijst naar [controletaken](#control-tasks),
-* **[!UICONTROL Marketing resource creation task]**, verwijst naar de [groeperingstaak](#grouping-task),
-* **[!UICONTROL Grouping task]**, verwijst naar de [groeperingstaak](#grouping-task),
-* **[!UICONTROL Notification task]**, verwijs naar de [Meldingstaak](#notification-task).
+* [Controletaken](#control-tasks);
+* [Groeperingstaak](#grouping-task),
+* [Groeperingstaak](#grouping-task),
+* [Meldingstaak](#notification-task).
 
 >[!NOTE]
 >
@@ -419,7 +422,7 @@ Bovendien als u het eind van een oudertaak uitstelt, kunnen sommige van zijn kin
 
 **Voorbeeld**
 
-Een oudertaak die op 9 oktober om 5PM wordt gepland te beëindigen heeft twee kindtaken, taak A en taak B. Taak A moet op 10 oktober om 2 uur beginnen en taak B moet op 12 oktober om 8.00 uur beginnen.
+Een oudertaak die op 9 oktober om 5 PM wordt gepland te beëindigen heeft twee kindtaken, taak A en taak B. Taak A moet op 10 oktober om 2 uur beginnen en taak B moet op 12 oktober om 8.00 uur beginnen.
 
 Laten we de bovenliggende taak uitstellen: het loopt nu af op 11 oktober om 13.00 uur. Alleen taak A wordt uitgesteld en begint op 11 oktober om 13.00 uur.
 
@@ -440,7 +443,7 @@ Een taak kan zijn: **[!UICONTROL Scheduled]**, **[!UICONTROL In progress]**, **[
 >[!NOTE]
 >
 >* De taakstatus wordt automatisch bijgewerkt.
->* Zelfs als de geldigheidsperiode is voltooid, worden taken die niet zijn afgesloten, nog steeds opgenomen in de lijst met actieve taken. Een waarschuwing waarschuwt exploitanten dat de taak laat is.
+>* Zelfs als de geldigheidsperiode is voltooid, worden taken die niet zijn afgesloten, nog steeds opgenomen in de lijst met lopende taken. Een waarschuwing waarschuwt exploitanten dat de taak laat is.
 >
 
 
