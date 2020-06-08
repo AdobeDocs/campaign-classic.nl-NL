@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: e31a0faf6c48e2d34ce47fc1cd5a23aae05aeebf
 workflow-type: tm+mt
-source-wordcount: '2928'
+source-wordcount: '2925'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Als u een levering wilt maken die is gekoppeld aan een campagne, klikt u op de *
 
 ![](assets/campaign_op_add_delivery.png)
 
-De voorgestelde configuraties zijn geschikt voor de verschillende typen levering (direct mail, e-mail, mobiele kanalen, fax of telefoon).
+De voorgestelde configuraties zijn geschikt voor de verschillende typen levering: direct mail, e-mail, mobiele kanalen.
 
 >[!NOTE]
 >
