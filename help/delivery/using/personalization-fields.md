@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: e9e9b1352706e15a0d0c6ff8921e430524a44b13
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
@@ -83,11 +83,11 @@ We maken een e-mail waarin we eerst de naam van de ontvanger invoegen en vervolg
 
 ## Aanpassing optimaliseren {#optimizing-personalization}
 
-U kunt personalisatie optimaliseren met behulp van een speciale optie: **[!UICONTROL Prepare the personalization data with a workflow]**, beschikbaar op het **[!UICONTROL Analysis]** tabblad van de leveringseigenschappen.
+U kunt personalisatie optimaliseren met behulp van een speciale optie: **[!UICONTROL Prepare the personalization data with a workflow]**, beschikbaar op het **[!UICONTROL Analysis]** tabblad van de leveringseigenschappen. Zie [deze sectie](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)voor meer informatie over het analyseren van de aflevering.
 
 Tijdens de leveringsanalyse, leidt deze optie automatisch tot en voert een werkschema uit dat alle gegevens met betrekking tot het doel in een tijdelijke lijst, met inbegrip van gegevens van lijsten verbonden in FDA opslaat.
 
-Door deze optie in te schakelen, kunt u een aanzienlijke prestatieverbetering bereiken voor het uitvoeren van personalisatie.
+Als u deze optie inschakelt, kunnen de prestaties van de leveringsanalyse aanzienlijk worden verbeterd wanneer een groot aantal gegevens wordt verwerkt, vooral als de personalisatiegegevens afkomstig zijn van een externe tabel via FDA. Zie [Toegang tot een externe database (FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data)voor meer informatie.
 
 Bijvoorbeeld, als u prestatieskwesties wanneer het leveren aan een hoog aantal ontvangers terwijl het gebruiken van veel verpersoonlijkingsgebieden en/of verpersoonlijkingsblokken in de inhoud van uw berichten ervaart, kan deze optie de behandeling van verpersoonlijking en daarom het leveren van uw berichten versnellen.
 
