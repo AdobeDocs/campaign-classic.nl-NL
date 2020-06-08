@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
+source-git-commit: 5b0bcdfca1767aab5c54f06a5af5fb9097d2ec6f
+workflow-type: tm+mt
+source-wordcount: '1671'
+ht-degree: 0%
 
 ---
 
@@ -28,45 +31,58 @@ Dit doet u als volgt:
 
 1. **De levering** analyseren: met deze stap kunt u de te leveren berichten voorbereiden. Raadpleeg [De levering](#analyzing-the-delivery)analyseren.
 
-   De beschikbare validatiemodi worden gedetailleerd weergegeven in de [goedkeuringsmodus](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode)wijzigen.
+   De regels die tijdens analyse worden toegepast worden voorgesteld in het [Validatieproces met typologiesectie](#validation-process-with-typologies) . De beschikbare validatiemodi worden gedetailleerd beschreven in het gedeelte [De goedkeuringsmodus](#changing-the-approval-mode) wijzigen.
 
 1. **Proefdrukken** verzenden: Met deze stap kunt u inhoud, URL&#39;s, personalisatievelden, enzovoort goedkeuren. Zie Een proefdruk [](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) verzenden en een specifiek proefdrukdoel [](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)definiëren.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Beide stappen moeten noodzakelijk na elke wijziging van de berichtinhoud worden uitgevoerd.
 
 ## De levering analyseren {#analyzing-the-delivery}
 
-De analyse is het stadium waarin de doelpopulatie wordt berekend en de leveringsinhoud wordt voorbereid. Zodra het volledig is, is de levering klaar om worden verzonden. Als u de leveringanalyse wilt starten, klikt u op **[!UICONTROL Send]** en selecteert u **[!UICONTROL Deliver as soon as possible]**.
+De analyse is het stadium waarin de doelpopulatie wordt berekend en de leveringsinhoud wordt voorbereid. Zodra het volledig is, is de levering klaar om worden verzonden.
 
-![](assets/s_ncs_user_email_del_send.png)
+### De analyse starten {#launching-the-analysis}
 
-Met de **[!UICONTROL Analyze]** knop kunt u de analyse handmatig starten. Op de voortgangsbalk ziet u de voortgang van de analyse. In het onderste gedeelte van het venster wordt het analyseresultaat weergegeven. Speciale pictogrammen geven waarschuwingen weer.
+1. Klik op **[!UICONTROL Send]** om de leveringanalyse te starten.
+1. Selecteer **[!UICONTROL Deliver as soon as possible]**.
 
-![](assets/s_ncs_user_interface_delivery04b.png)
+   ![](assets/s_ncs_user_email_del_send.png)
 
->[!NOTE]
->
->De validatieregels worden beschreven in [Validatieproces met typologieën](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+1. Klik **[!UICONTROL Analyze]** om de analyse handmatig te starten.
 
-U kunt deze taak op elk gewenst moment stoppen door op **[!UICONTROL Stop]** te klikken.
+   Op de voortgangsbalk ziet u de voortgang van de analyse.
 
-![](assets/s_ncs_user_wizard_email01_16.png)
+   ![](assets/s_ncs_user_email_del_analyze_progress.png)
 
-Er worden geen berichten verzonden tijdens de analysefase. U kunt deze taak dus zonder risico starten of annuleren.
+   >[!NOTE]
+   >
+   >De validatieregels die tijdens de analyse worden gebruikt, worden beschreven in de sectie [Validatie met typologieën](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) .
 
->[!CAUTION]
->
->De analyse bevriest de levering (of het bewijs) op het moment van de analyse. Elke wijziging van de levering (of het bewijs) moet worden gevolgd door een andere analyse voordat zij van toepassing wordt.
+1. U kunt de analyse op elk gewenst moment stoppen door op **[!UICONTROL Stop]** te klikken.
 
-In het laatste logbericht worden foutberichten en het aantal fouten weergegeven. Een speciaal pictogram geeft het fouttype weer: als het gele pictogram een niet-kritieke verwerkingsfout aangeeft, geeft het rode pictogram een kritieke fout aan die het begin van de levering verhindert.
+   ![](assets/s_ncs_user_wizard_email01_16.png)
 
-![](assets/s_ncs_user_email_del_analyze_error.png)
+   Tijdens de voorbereidingsfase worden geen berichten verzonden. U kunt de analyse daarom zonder risico starten of annuleren.
 
-Klik **[!UICONTROL Close]** om de fouten te verbeteren. Nadat u de wijzigingen hebt aangebracht, moet u de analyse opnieuw starten.
+   >[!IMPORTANT]
+   >
+   >Wanneer de analyse loopt, bevriest de levering (of het bewijs). Elke wijziging in de levering (of het bewijs) moet worden gevolgd door een andere analyse voordat zij van toepassing wordt.
 
-Controleer het resultaat van de analyse alvorens te klikken **[!UICONTROL Confirm delivery]** om het bericht naar het gespecificeerde doel te verzenden. Met een bevestigingsbericht kunt u de levering starten.
+1. Wacht tot de analyse is voltooid.
+
+   Wanneer de analyse is voltooid, geeft de bovenste sectie van het venster aan of de voorbereiding van de levering is voltooid of dat er fouten zijn opgetreden. Alle validatiestappen, waarschuwingen en fouten worden weergegeven. De gekleurde pictogrammen tonen het berichttype:
+   * Het blauwe pictogram geeft een informatief bericht aan.
+   * Het gele pictogram geeft een niet-kritieke verwerkingsfout aan.
+   * Het rode pictogram geeft een kritieke fout aan die het verzenden van de levering verhindert.
+   ![](assets/s_ncs_user_email_del_analyze_error.png)
+
+1. Klik **[!UICONTROL Close]** om eventuele fouten te corrigeren.
+
+1. Nadat u de wijzigingen hebt aangebracht, klikt u opnieuw op de analyse **[!UICONTROL Analyze]**.
+
+Na het controleren van het resultaat van de analyse, zult u kunnen klikken om het bericht naar het gespecificeerde doel **[!UICONTROL Confirm delivery]** te verzenden. Met een bevestigingsbericht kunt u de levering starten.
 
 ![](assets/s_ncs_user_email_del_analyze_ok.png)
 
@@ -74,18 +90,33 @@ Controleer het resultaat van de analyse alvorens te klikken **[!UICONTROL Confir
 >
 >Klik op de **[!UICONTROL Change the main delivery target]** koppeling als het aantal te verzenden berichten niet overeenkomt met uw configuratie. Zo kunt u de definitie van de doelpopulatie wijzigen en de analyse opnieuw starten.
 
-Op het **[!UICONTROL Analysis]** tabblad Leveringsparameters kunt u een set gegevens definiëren voor de voorbereiding van berichten tijdens de analysefase.
+### Parameters voor analyse {#analysis-parameters}
+
+Op het **[!UICONTROL Analysis]** tabblad van de leveringseigenschappen kunt u een set gegevens definiëren voor de voorbereiding van berichten tijdens de analysefase.
 
 ![](assets/s_ncs_user_email_del_analyze_adv_param.png)
 
 Op dit tabblad hebt u toegang tot de volgende opties:
 
-* **[!UICONTROL Label and code of the delivery]** : de opties voor deze sectie van het scherm worden gebruikt om de waarden van deze velden tijdens de fase van de leveringsanalyse te berekenen. In het **[!UICONTROL Calculate the execution folder during the delivery analysis]** veld wordt de naam berekend van de map die deze leveringsactie tijdens de analysefase zal bevatten.
-* **[!UICONTROL Approval mode]** : in dit veld kunt u het type goedkeuring voor levering selecteren. De goedkeuringsmodi worden weergegeven in [validatieproces met typologieën](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
-* **[!UICONTROL Prepare the personalization data with a workflow]** : met deze optie kunt u de aanpassingsgegevens in uw levering voorbereiden in een automatische workflow. Het staat toe om de prestaties van de leveringsanalyse hoogst te verbeteren wanneer een hoop gegevens worden verwerkt, vooral als de verpersoonlijkingsgegevens uit een externe lijst door FDA komen. Raadpleeg de sectie [Access an external database (FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data) .
-* **[!UICONTROL Start job in a detached process]** : Met deze optie kunt u de afleveringsanalyse in een afzonderlijk proces starten. De analysefunctie gebruikt standaard het serverproces voor de Adobe Campagne-toepassing (webserver). Als u deze optie selecteert, zorgt u ervoor dat de analyse ook wordt voltooid wanneer de toepassingsserver uitvalt.
+* **[!UICONTROL Label and code of the delivery]** : de opties in deze sectie worden gebruikt om de waarden van deze velden tijdens de fase van de leveringsanalyse te berekenen. In het **[!UICONTROL Compute the execution folder during the delivery analysis]** veld wordt de naam berekend van de map die deze leveringsactie tijdens de analysefase zal bevatten.
+* **[!UICONTROL Approval mode]** : in dit veld kunt u handmatig of automatisch afleveren definiëren wanneer de analyse is voltooid. De validatiemodi worden weergegeven in de sectie [De goedkeuringsmodus](#changing-the-approval-mode) wijzigen.
+* **[!UICONTROL Prepare the delivery parts in the database]** : met deze optie kunt u de prestaties van de leveringsanalyse verbeteren. Zie [deze sectie](#improving-delivery-analysis)voor meer informatie.
+* **[!UICONTROL Prepare the personalization data with a workflow]** : met deze optie kunt u de aanpassingsgegevens in uw levering voorbereiden in een automatische workflow, waardoor u een aanzienlijke prestatieverhoging voor het uitvoeren van personalisatie kunt realiseren. Zie Verpersoonlijking [optimaliseren voor meer informatie](../../delivery/using/personalization-fields.md#optimizing-personalization).
+* **[!UICONTROL Start job in a detached process]** : met deze optie kunt u de leveringsanalyse in een afzonderlijk proces starten. De analysefunctie gebruikt standaard het serverproces voor de Adobe Campagne-toepassing (webserver). Als u deze optie selecteert, zorgt u ervoor dat de analyse ook wordt voltooid wanneer de toepassingsserver uitvalt.
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : deze optie voegt de SQL vraaglogboeken aan het leveringsdagboek tijdens de analysefase toe.
 * **[!UICONTROL Ignore personalization scripts during sending]** : Met deze optie kunt u de interpretatie van JavaScript-instructies in HTML-inhoud omzeilen. Ze worden op dezelfde manier weergegeven als in de geleverde inhoud. Deze richtlijnen worden geïntroduceerd met de tag **&lt;%=** ).
+
+### De prestaties van de leveringsanalyse verbeteren {#improving-delivery-analysis}
+
+Om de voorbereiding van de levering te versnellen, kunt u de **[!UICONTROL Prepare the delivery parts in the database]** optie controleren alvorens de analyse te lanceren.
+
+Wanneer deze optie wordt toegelaten, wordt de levering voorbereiding uitgevoerd direct binnen het gegevensbestand, dat de analyse kan beduidend versnellen.
+
+Deze optie is momenteel alleen beschikbaar als aan de volgende voorwaarden is voldaan:
+* De levering moet een e-mail zijn. De andere kanalen worden momenteel niet ondersteund.
+* U moet niet midsourcing of extern verpletteren, slechts bulklevering gebruiken die type verplettert. U kunt het verpletteren controleren die op het **[!UICONTROL General]** lusje van **[!UICONTROL Delivery properties]**. wordt gebruikt.
+* U kunt geen populatie richten die uit een extern dossier komt. Voor één levering, klik de **[!UICONTROL To]** verbinding van **[!UICONTROL Email parameters]** en controleer dat de **[!UICONTROL Defined in the database]** optie wordt geselecteerd. Voor levering die in een werkschema wordt gebruikt, controleer dat de ontvangers **[!UICONTROL Specified by the inbound event(s)]** op het **[!UICONTROL Delivery]** tabel zijn.
+* U moet een PostSQL-database gebruiken.
 
 ### De prioriteit van de analyse configureren {#analysis-priority-}
 
@@ -172,6 +203,8 @@ U kunt de goedkeuringsregels, de inhoud, de volgorde van uitvoering en de volled
 
 U kunt nieuwe regels tot stand brengen en nieuwe typologieën van deze knoop bepalen. Deze taken zijn echter voorbehouden aan ervaren gebruikers die JavaScript kennen.
 
+Zie [Informatie over campagnetypologieën](../../campaign/using/about-campaign-typologies.md)voor meer informatie over typologische regels.
+
 Als u de huidige typologie wilt bewerken, klikt u op het **[!UICONTROL Edit link]** pictogram rechts van het **[!UICONTROL Typology]** veld.
 
 ![](assets/s_ncs_user_email_del_typo_tab.png)
@@ -182,7 +215,7 @@ Het **[!UICONTROL Rule]** tabblad bevat een lijst met de typologische regels die
 
 >[!NOTE]
 >
->**[!UICONTROL Arbitration]** typologieën van het type worden gebruikt in het kader van het beheer van de verkoopdruk . Zie [deze sectie](../../campaign/using/about-marketing-resource-management.md)voor meer informatie.
+>**[!UICONTROL Arbitration]** typologieën van het type worden gebruikt in het kader van het beheer van de verkoopdruk . For more on this, refer to [this section](../../campaign/using/about-marketing-resource-management.md).
 
 ## De goedkeuringsmodus wijzigen {#changing-the-approval-mode}
 
@@ -196,4 +229,4 @@ De volgende goedkeuringsmodi zijn beschikbaar:
 
 * **[!UICONTROL Manual]**: Aan het einde van de analysefase moet de gebruiker de levering bevestigen om te beginnen met het verzenden. Klik hiertoe op de **[!UICONTROL Start]** knop om de levering te starten.
 * **[!UICONTROL Semi-automatic]**: Het verzenden begint automatisch als de analysefase geen waarschuwingsberichten produceert.
-* **[!UICONTROL Automatic]**: De verzending begint automatisch aan het einde van de analysefase, ongeacht het resultaat ervan.
+* **[!UICONTROL Automatic]**: De verzending begint automatisch aan het einde van de analysefase, ongeacht het resultaat.
