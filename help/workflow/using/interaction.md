@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 28a32c9a5300c28784ae7a2837075b4dc3aad1fa
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+workflow-type: tm+mt
+source-wordcount: '100'
+ht-degree: 0%
 
 ---
 
 
 # Interactie{#interaction}
 
-De hieronder beschreven workflow wordt standaard geïnstalleerd met de module **Aanbieding (Interactie)** . Raadpleeg deze [sectie](../../interaction/using/interaction-and-offer-management.md)voor meer informatie over deze module.
+De hieronder beschreven workflows worden standaard geïnstalleerd met de module **Aanbieding (Interactie)** . Raadpleeg deze [sectie](../../interaction/using/interaction-and-offer-management.md)voor meer informatie over deze module.
 
 <table> 
  <tbody> 
@@ -32,13 +35,13 @@ De hieronder beschreven workflow wordt standaard geïnstalleerd met de module **
    <td> <strong>Beschrijving</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Volledige geaggregeerde berekening (voorzettingscp-kubus)</span><br /> </td> 
-   <td> <span class="uicontrol">agg_nmspropositionrcp_full</span><br /> </td> 
+   <td> <span class="uicontrol">Volledige geaggregeerde berekening (voorzettingskubus)</span> <br /> </td> 
+   <td> <span class="uicontrol">agg_nmspropositionrcp_full</span> <br /> </td> 
    <td> Deze workflow werkt het <strong>volledige</strong> aggregaat voor de <strong>aanbiedingskubus</strong> bij. Het wordt teweeggebracht elke dag om 6 uur door gebrek. In dit aggregaat worden de volgende afmetingen vastgelegd: Kanaal, levering, marketingaanbieding en datum.<br /> De <strong>blokje van het Voorstel</strong> van de Aanbieding wordt dan gebruikt om rapporten te produceren die op aanbiedingen worden gebaseerd. Meer informatie over kubussen vindt u in <a href="../../reporting/using/about-cubes.md">deze sectie</a>.<br /> </td> 
   </tr> 
    <tr> 
-   <td> <span class="uicontrol">MessageCenter volledige geaggregeerde berekening</span><br /> </td> 
-   <td> <span class="uicontrol">agg_messageCenter_full</span><br /> </td> 
+   <td> <span class="uicontrol">MessageCenter volledige geaggregeerde berekening</span> <br /> </td> 
+   <td> <span class="uicontrol">agg_messageCenter_full</span> <br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
