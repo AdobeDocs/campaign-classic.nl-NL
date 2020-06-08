@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+workflow-type: tm+mt
+source-wordcount: '2541'
+ht-degree: 0%
 
 ---
 
@@ -177,7 +180,7 @@ Voer de volgende stappen uit om de **Oracle On Demand** -aansluiting te configur
 
    ![](assets/crm_connectors_ood_7.png)
 
-   Deze workflow verzamelt de relevante gegevens met behulp van query&#39;s en exporteert deze vervolgens naar de Oracle On Demand-lijst met contactpersonen.
+   Deze workflow verzamelt de relevante gegevens met behulp van query&#39;s en exporteert deze vervolgens naar de Contacttabel van Oracle On Demand.
 
 ### Voorbeeld voor Microsoft Dynamics {#example-for-microsoft-dynamics}
 
@@ -197,7 +200,7 @@ Voer de volgende stappen uit om de Microsoft Dynamics-connector te configureren 
    >
    >De parameter redirectURL wordt niet vereist door Adobe Campagne Classic.
 
-   De **clientId** -waarde wordt gebruikt met de gebruikersnaam/het wachtwoord om het token voor toonder op te halen met het wachtwoord voor het type gift. Dit wordt genoemd de Verlening van het Wachtwoord van de Eigenaar van het **Middel**. Raadpleeg [deze pagina](https://blogs.msdn.microsoft.com/wushuai/2016/09/25/resource-owner-password-credentials-grant-in-azure-ad-oauth/)voor meer informatie.
+   De **clientId** -waarde wordt gebruikt met de gebruikersnaam/het wachtwoord om het token voor toonder op te halen met het wachtwoord voor het type gift. Dit wordt genoemd de Verlening van het Wachtwoord van de Eigenaar van het **Middel**. For more on this, refer to [this page](https://blogs.msdn.microsoft.com/wushuai/2016/09/25/resource-owner-password-credentials-grant-in-azure-ad-oauth/).
 
    ![](assets/crm_connectors_msdynamics_01_3.png)
 
@@ -207,7 +210,7 @@ Voer de volgende stappen uit om de Microsoft Dynamics-connector te configureren 
 
    ![](assets/crm_connectors_msdynamics_02.png)
 
-   Selecteer de tabellen die u wilt herstellen.
+1. Selecteer de tabellen die u wilt herstellen.
 
    ![](assets/crm_connectors_msdynamics_03.png)
 
@@ -306,7 +309,7 @@ De datum van de laatste synchronisatie wordt opgeslagen in een optie die in het 
 >
 >Deze noot is alleen van toepassing op de generieke **[!UICONTROL CRM Connector]** activiteit. Voor andere CRM-activiteiten is het proces automatisch.
 >
->Deze optie moet u handmatig maken en invullen onder **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Dit moet een tekstoptie zijn en de waarde ervan moet overeenkomen met de volgende indeling: **yyyy/MM/dd hh:mm:ss**.
+>Deze optie moet u handmatig maken en invullen onder **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Dit moet een tekstoptie zijn en de waarde ervan moet overeenkomen met de volgende indeling: **jjjj/MM/dd uu:mm:ss**.
 > 
 >U moet deze optie handmatig bijwerken als u wilt doorgaan met importeren.
 
@@ -322,11 +325,11 @@ Als u de **[!UICONTROL Automatic index]** optie activeert, worden drie variabele
 
 * **vars.crmOptionName**: geeft de naam aan van de optie die de laatste importdatum bevat.
 * **vars.crmStartImport**: staat voor de begindatum (inclusief) van de laatste gegevensherstel.
-* **vars.crmEndDate**: de einddatum (exclusief) van de laatste gegevensherstel.
+* **vars.crmEndDate**: staat voor de einddatum (exclusief) van de laatste gegevensherstel.
 
    >[!NOTE]
    >
-   >Deze datums worden weergegeven in de volgende notatie: **yyyy/MM/dd hh:mm:ss**.
+   >Deze datums worden weergegeven in de volgende notatie: **jjjj/MM/dd uu:mm:ss**.
 
 #### Gegevens filteren {#filtering-data}
 
