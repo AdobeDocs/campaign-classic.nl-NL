@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+source-git-commit: cb44d439c6866d94f8e1201575ab3d3094d6ad79
+workflow-type: tm+mt
+source-wordcount: '1291'
+ht-degree: 0%
 
 ---
 
@@ -66,7 +69,7 @@ Dit proces werkt alleen als de bron- en doelomgevingen hetzelfde aantal instanti
 
 ### Overdrachtsprocedure {#transfer-procedure}
 
-Deze sectie helpt u de stappen te begrijpen die nodig zijn voor het overbrengen van een bronomgeving naar een doelomgeving via een casestudy: ons doel is een productieomgeving (**prod** - instantie ) te herstellen in een ontwikkelomgeving (**dev** - instantie ) die zo dicht mogelijk bij het &quot; live &quot; - platform functioneert .
+Deze sectie helpt u de stappen te begrijpen die nodig zijn voor het overbrengen van een bronomgeving naar een doelomgeving via een casestudy: ons doel is een productieomgeving (**prod** - instantie ) te herstellen in een ontwikkelomgeving (**dev** - instantie ) die zo dicht mogelijk bij het &quot; live &quot; - platform werkt .
 
 De volgende stappen moeten met grote zorg worden uitgevoerd: sommige processen zijn mogelijk nog in uitvoering wanneer de gegevensbestanden van het bronmilieu worden gekopieerd. Voorzichtigheid (stap 3 hieronder) verhindert berichten tweemaal worden verzonden en handhaaft gegevensconsistentie.
 
@@ -109,7 +112,11 @@ Controleer of het aantal geëxporteerde opties/accounts gelijk is aan het aantal
 >
 >Het aantal regels dat in een pakketexport wordt geëxporteerd, is 1000 regels. Als het aantal opties of externe rekeningen meer dan 1000 bedraagt, moet u meerdere exportbewerkingen uitvoeren.
 > 
->Zie [deze sectie](../../platform/using/working-with-data-packages.md#exporting-packages)voor meer informatie.
+>For more information, refer to [this section](../../platform/using/working-with-data-packages.md#exporting-packages).
+
+>[!NOTE]
+>
+>Wanneer de tabel NCMext-account wordt geëxporteerd, worden wachtwoorden die betrekking hebben op de externe accounts (bijvoorbeeld wachtwoorden voor midsourcing, Berichtencentrum uitvoeren, SMPP, IMS en andere externe accounts) niet geëxporteerd. Zorg ervoor dat u vooraf toegang hebt tot de juiste wachtwoorden, omdat deze mogelijk opnieuw moeten worden ingevoerd nadat de externe accounts weer in de omgeving zijn geïmporteerd.
 
 ### Stap 3 - Stop het doelmilieu (dev) {#step-3---stop-the-target-environment--dev-}
 
@@ -146,7 +153,7 @@ U kunt ook controleren of er nog geen systeemprocessen actief zijn.
 Hiervoor gebruikt u het volgende proces:
 
 * In Windows: open de manager **van de** Taak en controleer dat er geen processen **nlserver.exe** zijn.
-* In Linux: de **ps aux uitvoeren| grep nlserver** bevel en controleer dat er geen **nlserver** processen zijn.
+* In Linux: de **ps aux uitvoeren | grep nlserver** bevel en controleer dat er geen **nlserver** processen zijn.
 
 ### Stap 4 - Herstel de gegevensbestanden in het doelmilieu (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
