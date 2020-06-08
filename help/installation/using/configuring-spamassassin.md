@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+source-git-commit: 1a9d4c9eadf996d37481f33636eae98e482ac115
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Voer de volgende stappen uit als u SpamAssassin in Windows wilt installeren en c
 
 1. Maak verbinding met het [Extranetportaal](http://support.neolane.net) met uw gebruikersgegevens.
 1. Ga naar het **Downloadcentrum** en blader op de pagina naar de sectie **Tools** .
-1. Download het bestand **Spam Assassin (Windows-installatie) (1.0)** .
+1. Download het bestand **Neolane Spam Assassin (Windows-installatie) (2.0)** (neolane_spammurin.2.0.zip).
 1. Kopieer dit bestand naar de Adobe Campaign-server en decomprimeer het vervolgens.
 
    >[!NOTE]
