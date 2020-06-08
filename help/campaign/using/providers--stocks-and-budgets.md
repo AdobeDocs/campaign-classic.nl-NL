@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: e059fc9e2bfade30454601f31990c3ec14b8a847
+workflow-type: tm+mt
+source-wordcount: '1906'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +55,7 @@ De taken die tijdens de leveringen worden uitgevoerd, worden door de dienstverle
 
 #### Een serviceprovider toevoegen {#adding-a-service-provider}
 
-U kunt zoveel serviceproviders maken als nodig zijn voor uw leveringen. De procedure voor de toevoeging van een dienstverlener is als volgt:
+U kunt zoveel serviceproviders maken als nodig zijn voor uw leveringen. De procedure voor het toevoegen van een dienstverlener is als volgt:
 
 1. Klik met de rechtermuisknop op de lijst met serviceproviders en selecteer **[!UICONTROL New]** of klik op de **[!UICONTROL New]** knop boven de lijst met serviceproviders.
 1. Geef in de onderste sectie van het venster de naam en contactgegevens van de serviceprovider op.
@@ -81,7 +84,7 @@ Pas de volgende stappen toe om een servicesjabloon te maken en de inhoud ervan t
 
    ![](assets/s_ncs_user_supplier_node_03.png)
 
-   * Voer een label in voor deze kostencategorie en selecteer het type proces in kwestie: Levering door **[!UICONTROL Direct mail]**, **[!UICONTROL E-mail]**, **[!UICONTROL Mobile]**, **[!UICONTROL Telephone]**, **[!UICONTROL Fax]** of **[!UICONTROL Task]**.
+   * Voer een label in voor deze kostencategorie en selecteer het type proces in kwestie: Levering door **[!UICONTROL Direct mail]**, **[!UICONTROL E-mail]**, **[!UICONTROL Mobile]**, **[!UICONTROL Telephone]** of **[!UICONTROL Task]**.
    * Klik op de **[!UICONTROL Add]** knop om de typen kosten te definiëren die aan deze categorie zijn gekoppeld.
    * Indien nodig wordt een voorraadlijn gekoppeld aan elk type kosten, zodat de gebruikte hoeveelheden automatisch aan de bestaande voorraden worden gerelateerd.
 
@@ -176,7 +179,7 @@ Wanneer een dienst wordt geselecteerd, de kostencategorieën die met het type va
 
    ![](assets/s_ncs_user_supplier_mail_delivery_select.png)
 
-* Voor levering op mobiele kanalen, fax, of telefoon, is de zelfde selectiemodus van toepassing.
+* Voor levering op mobiele kanalen of telefoon geldt dezelfde selectiemodus.
 * Voor een e-maillevering wordt de service geselecteerd op het **[!UICONTROL Advanced]** tabblad in de leveringseigenschappen, zoals in het volgende voorbeeld:
 
    ![](assets/s_ncs_user_supplier_email_delivery_select.png)
