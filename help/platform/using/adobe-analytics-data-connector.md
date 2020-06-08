@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e9923eb8cb78e7af05d64a122cd35b9cf3a4f215
+source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
 workflow-type: tm+mt
 source-wordcount: '1661'
 ht-degree: 0%
@@ -246,7 +246,7 @@ Als u wilt dat de Adobe Experience Cloud de activiteiten op de sites kan bijhoud
    ![](assets/webanalytics_delivery_properties_003.png)
 
 1. Open de leveringseigenschappen.
-1. Ga naar het **[!UICONTROL Web Analytics]** tabblad en selecteer de eerder gemaakte externe account. Zie [stap 2: Het externe account maken in Campagne](#step-2--create-the-external-account-in-campaign)).
+1. Ga naar het **[!UICONTROL Web Analytics]** tabblad en selecteer de eerder gemaakte externe account. Zie [stap 2: Maak het externe account in Campagne](#step-2--create-the-external-account-in-campaign).
 
    ![](assets/webanalytics_delivery_properties_002.png)
 
