@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: adb25307146847a1c49d9c548d00557e95562541
+source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,13 @@ ht-degree: 0%
 
 ## E-mailbijlagen {#about-email-attachments}
 
-U kunt een of meer bestanden bijvoegen bij een e-maillevering. Er zijn twee mogelijke gevallen:
+U kunt een of meer bestanden bijvoegen bij een e-maillevering.
+
+>[!NOTE]
+>
+>Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De geadviseerde drempel kan van [de lijst van de Klassieke opties](../../installation/using/configuring-campaign-options.md#delivery)van de Campagne worden gevormd.
+
+Er zijn twee mogelijke gevallen:
 
 * Selecteer een bestand en koppel het op dezelfde manier aan de levering.
 * Pas de inhoud van de bijlage aan voor elke ontvanger. In dit geval moet u een **berekende bijlage** maken: de naam van de gehechtheid wordt berekend op het tijdstip van levering voor elk bericht afhankelijk van de ontvanger. U kunt de inhoud ook personaliseren en converteren naar PDF-indeling op het moment van levering als u de optie **Variabel digitaal afdrukken** hebt geselecteerd.
@@ -92,7 +98,7 @@ Als de bijlage een lokaal bestand is, selecteert u de optie: **[!UICONTROL File 
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_01.png)
 
-   Het bestand is vervolgens beschikbaar op de server die moet worden gekoppeld aan de verschillende leveringen die op basis van deze sjabloon zijn gemaakt.
+Het bestand is vervolgens beschikbaar op de server die moet worden gekoppeld aan de verschillende leveringen die op basis van deze sjabloon zijn gemaakt.
 
 ### Een gepersonaliseerd bericht bijvoegen {#attach-a-personalized-message}
 
@@ -120,6 +126,10 @@ Voor dit type van gehechtheid, pas de volgende configuratiestappen toe:
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 
+>[!NOTE]
+>
+>Om prestatieproblemen te voorkomen moet elke afbeeldingsgrootte standaard niet groter zijn dan 100.000 bytes als u direct gedownloade afbeeldingen van een gepersonaliseerde URL opneemt als bijlage. Deze aanbevolen drempelwaarde kan worden geconfigureerd [in de lijst met klassieke opties](../../installation/using/configuring-campaign-options.md#delivery)voor campagne.
+
 ### Een berekend bestand bijvoegen {#attach-a-calculated-file}
 
 U kunt de naam van de bijlage berekenen tijdens de voorbereiding van de levering. Selecteer de optie om dit te doen **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
@@ -131,7 +141,7 @@ U kunt de naam van de bijlage berekenen tijdens de voorbereiding van de levering
 1. Geef het label op dat u op de bijlage wilt toepassen.
 1. Geef het toegangspad van het bestand en de exacte naam ervan op in het definitievenster.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Het bestand moet aanwezig zijn op de server.
 
@@ -156,7 +166,7 @@ Als u de bijlage selecteert, kunt u de optie kiezen **[!UICONTROL The file name 
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_010.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Het bestand moet aanwezig zijn op de server.
 
