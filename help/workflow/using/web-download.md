@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+workflow-type: tm+mt
+source-wordcount: '401'
+ht-degree: 0%
 
 ---
 
@@ -71,7 +74,4 @@ Met de **webdownloadactiviteit** wordt het downloaden van een bestand gestart vi
 
 ## Uitvoerparameters {#output-parameters}
 
-* filename
-
-   Volledige naam van het gedownloade bestand.
-
+* bestandsnaam: Volledige naam van het gedownloade bestand.
