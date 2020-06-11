@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e20d44fe02771e8723ae396ff8cb5845c68de471
+source-git-commit: 6ce00d34ecbdfa6a13593772ffa1850768ad6e45
 workflow-type: tm+mt
 source-wordcount: '1408'
 ht-degree: 0%
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 De **laatste stabiele build** is 9032 (3a9dc9c). Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/do-not-localize/blue_2.png) Release 20.1.3 - build 9124 {#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/orange_2.png) Release 20.1.3 - build 9124 {#release-20-1-3-build-9124}
 
 _6 mei 2020_
 
@@ -192,7 +192,7 @@ _17 februari 2020_
 
 * Probleem verholpen waardoor de trackingindicatoren voor transactionele berichten niet konden worden bijgewerkt in de workflow voor bijhouden. (NEO-1770)
 
-* Oplossing voor een regressieprobleem dat ertoe leidde dat het webproces vastliep en opnieuw opstartte wanneer een aanvraag voor een aanbieding werd ingediend via SOAP. (NEO-19482)
+* Oplossing voor een regressieprobleem dat ertoe leidde dat het webproces vastliep en opnieuw opstartte bij het aanvragen van een aanbieding via SOAP. (NEO-19482)
 
 * Probleem verholpen waarbij gegevens niet konden worden geüpload naar openbare bronnen als de uploadmap een externe gedeelde locatie was. (NEO-19361)
 
