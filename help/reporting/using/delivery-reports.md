@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b74ea9a6b079bbe88ed17a79e532bd8ce6ce13ae
+source-git-commit: 5ebea30c743ab416ede879c74735e2c7870d3db9
+workflow-type: tm+mt
+source-wordcount: '1456'
+ht-degree: 0%
 
 ---
 
@@ -72,7 +75,7 @@ Dit rapport combineert de belangrijkste indicatoren voor het volgen van het gedr
 
 * **[!UICONTROL Distinct opens for the population reached]** : Schatting van het aantal ontvangers voor wie het bericht bestemd is dat een bericht ten minste eenmaal heeft geopend. Er wordt rekening gehouden met klikken op abonnementkoppelingen en spiegelpagina&#39;s.
 * **[!UICONTROL Sum of opens for the population reached]** : Schatting van het totale aantal openingen door de beoogde ontvangers.
-* **[!UICONTROL Clicks on opt-out link]** :Aantal klikken op de verbinding van het unsubscription.
+* **[!UICONTROL Clicks on opt-out link]** : Aantal klikken op de verbinding van het unsubscription.
 * **[!UICONTROL Clicks on the mirror page link]** : Aantal klikken op de verbinding aan de spiegelpagina. Om in aanmerking te worden genomen, moet de verbinding als dusdanig in de leveringstovenaar (bijgehouden URLs) worden bepaald. Zie deze [pagina](../../delivery/using/monitoring-a-delivery.md).
 * **[!UICONTROL Estimation of forwards]** : Schatting van het aantal e-mails dat door de beoogde ontvangers is doorgestuurd. Deze waarde wordt berekend door het aantal verschillende personen en het aantal verschillende ontvangers af te trekken die in de e-mail hebben geklikt.
 
@@ -92,7 +95,7 @@ Deze waardetabel toont de uitsplitsing van leveringen, opent, klikt en ruwe reac
 
 >[!NOTE]
 >
->De domeinnamen die in dit rapport worden weergegeven, worden gedefinieerd in de gespecificeerde lijst die op kubusniveau wordt gebruikt. Als u standaarddomeinen wilt wijzigen, toevoegen of verwijderen, bewerkt u de **[!UICONTROL Domains]** gespecificeerde lijst en wijzigt u waarden en aliassen. Zie [deze sectie](../../platform/using/managing-enumerations.md)voor meer informatie. De **[!UICONTROL Others]** categorie omvat domeinnamen die niet tot om het even welke waarde van de gespecificeerde lijst behoren.
+>De domeinnamen die in dit rapport worden weergegeven, worden gedefinieerd in de gespecificeerde lijst die op kubusniveau wordt gebruikt. Als u standaarddomeinen wilt wijzigen, toevoegen of verwijderen, bewerkt u de **[!UICONTROL Domains]** gespecificeerde lijst en wijzigt u waarden en aliassen. For more on this, refer to [this section](../../platform/using/managing-enumerations.md). De **[!UICONTROL Others]** categorie omvat domeinnamen die niet tot om het even welke waarde van de gespecificeerde lijst behoren.
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -163,8 +166,8 @@ Dit rapport bevat alle belangrijke informatie over de levering.
 
 Deze sectie heeft twee indicatoren:
 
-* **[!UICONTROL Initial population]** :Het totale aantal ontvangers waarop de levering betrekking heeft.
-* **[!UICONTROL Messages rejected by the rule]** : Aantal adressen genegeerd tijdens de analyse wanneer het toepassen van typologieregels: adres ontbreekt, in quarantaine geplaatst, op zwarte lijst gezet, enz. Raadpleeg deze [pagina](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies)voor meer informatie over typologische regels.
+* **[!UICONTROL Initial population]** : Het totale aantal ontvangers waarop de levering betrekking heeft.
+* **[!UICONTROL Messages rejected by the rule]** : Aantal adressen genegeerd tijdens de analyse wanneer het toepassen van typologieregels: adres ontbreekt, in quarantaine geplaatst, toegevoegd aan de bloklijst, enz. Raadpleeg deze [pagina](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies)voor meer informatie over typologische regels.
 
 **[!UICONTROL Causes of exclusion]**
 
@@ -175,7 +178,7 @@ Het middelste diagram toont de uitsplitsing per regel van berichten die tijdens 
 Dit deel omvat de volgende indicatoren:
 
 * **[!UICONTROL Messages to be delivered]** : Totaal aantal berichten dat na leveringsanalyse moet worden bezorgd.
-* **[!UICONTROL Success]** :Aantal berichten dat is verwerkt. Het bijbehorende tarief is de verhouding met het aantal te leveren berichten.
+* **[!UICONTROL Success]** : Aantal berichten dat is verwerkt. Het bijbehorende tarief is de verhouding met het aantal te leveren berichten.
 * **[!UICONTROL Errors]** : Totaal aantal fouten gecumuleerd tijdens leveringen en automatische terugkerende verwerking. Het bijbehorende tarief is de verhouding met het aantal te leveren berichten.
 * **[!UICONTROL New quarantines]** : Aantal adressen in quarantaine na een mislukte levering (onbekende gebruiker, ongeldig domein). Het bijbehorende tarief is de verhouding met het aantal te leveren berichten.
 
