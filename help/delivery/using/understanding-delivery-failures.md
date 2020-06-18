@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: 9c26ef0b520c6486d86e73cb93612cc7ab9556d0
 workflow-type: tm+mt
-source-wordcount: '2434'
+source-wordcount: '2450'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## Leveringsfouten {#about-delivery-failures}
 
-Wanneer een bericht (e-mail, SMS, pushmelding) niet naar een profiel kan worden verzonden, verstuurt de externe server automatisch een foutbericht dat wordt opgehaald door het Adobe Campagne-platform en dat is gekwalificeerd om te bepalen of het e-mailadres of telefoonnummer al dan niet in quarantaine moet worden geplaatst. Zie [Bounce-mailbeheer](#bounce-mail-management).
+Wanneer een bericht (e-mail, SMS, pushmelding) niet naar een profiel kan worden verzonden, verstuurt de externe server automatisch een foutbericht dat door het Adobe Campaign-platform wordt opgepakt en gekwalificeerd is om te bepalen of het e-mailadres of telefoonnummer al dan niet in quarantaine moet worden geplaatst. Zie [Bounce-mailbeheer](#bounce-mail-management).
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Wanneer een bericht (e-mail, SMS, pushmelding) niet naar een profiel kan worden 
 
 Zodra een bericht wordt verzonden, staat de leveringslogboeken u toe om de leveringsstatus voor elk profiel en het bijbehorende mislukkingstype en de reden te bekijken.
 
-Berichten kunnen ook tijdens de voorbereiding van de levering worden uitgesloten als een adres in quarantaine is geplaatst of als een profiel op een zwarte lijst staat. Uitgesloten berichten worden vermeld in het leveringsdashboard.
+De berichten kunnen ook tijdens de leveringsvoorbereiding worden uitgesloten als een adres quarantined is of als een profiel op de bloklijst is. Uitgesloten berichten worden vermeld in het leveringsdashboard.
 
 **Verwante onderwerpen:**
 
@@ -86,10 +86,10 @@ De mogelijke oorzaken van een mislukking van de levering zijn:
    <td> De kwaliteitsbeoordeling voor dit adres is te laag.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Adres op zwarte lijst </td> 
+   <td> Adres op de bloklijst </td> 
    <td> Hard </td> 
    <td> 8 </td> 
-   <td> Het adres is op de zwarte lijst geplaatst op het moment van verzending. Deze status wordt gebruikt voor het importeren van gegevens uit externe lijsten en externe systemen wanneer gegevens worden geïmporteerd in de lijst Adobe Campagne Quarantine.<br /> </td> 
+   <td> Het adres werd toegevoegd aan de bloklijst op het tijdstip van verzending. Deze status wordt gebruikt voor het importeren van gegevens van externe lijsten en systemen naar de Adobe Campaign Quarantine-lijst.<br /> </td> 
   </tr> 
   <tr> 
    <td> Besturingsadres </td> 
@@ -107,7 +107,7 @@ De mogelijke oorzaken van een mislukking van de levering zijn:
    <td> Fout genegeerd </td> 
    <td> Genegeerd </td> 
    <td> 25 </td> 
-   <td> Het adres is gewhitelisteerd. De fout wordt daarom genegeerd en er wordt een e-mail verzonden.<br /> </td> 
+   <td> Het adres staat in de lijst Allow. De fout wordt daarom genegeerd en er wordt een e-mail verzonden.<br /> </td> 
   </tr> 
   <tr> 
    <td> Uitgesloten na arbitrage </td> 
@@ -158,7 +158,7 @@ De mogelijke oorzaken van een mislukking van de levering zijn:
    <td> Het adres is in quarantaine geplaatst toe te schrijven aan een veiligheid terugkoppelt als spamrapport. Volgens de fout, zal het adres opnieuw worden geprobeerd tot de foutenteller 5 bereikt, of het zal direct naar quarantines worden verzonden.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Beperkte doelgrootte </td> 
+   <td> Target beperkt in grootte </td> 
    <td> Genegeerd </td> 
    <td> 17 </td> 
    <td> De maximale leveringsgrootte is bereikt voor de ontvanger.<br /> </td> 
@@ -200,14 +200,14 @@ De standaardconfiguratie staat vijf herpogingen toe met intervallen van één uu
 
 Een bericht kan onmiddellijk (synchrone fout), of later op ontbreken, nadat het is verzonden (asynchrone fout).
 
-* Synchrone fout: Als de externe mailserver waarmee contact is opgenomen door de Adobe Campagne-leveringsserver onmiddellijk een foutbericht heeft geretourneerd, mag de levering niet naar de server van het profiel worden verzonden. Adobe Campaign kwalificeert elke fout om te bepalen of de e-mailadressen in kwestie al dan niet in quarantaine moeten worden geplaatst. Zie [Bounce mail-kwalificatie](#bounce-mail-qualification).
+* Synchrone fout: Als de externe mailserver waarmee contact is opgenomen door de Adobe Campaign-leveringsserver onmiddellijk een foutbericht heeft geretourneerd, mag de levering niet naar de server van het profiel worden verzonden. Adobe Campaign kwalificeert elke fout om te bepalen of de e-mailadressen in kwestie al dan niet in quarantaine moeten worden geplaatst. Zie [Bounce mail-kwalificatie](#bounce-mail-qualification).
 * Asynchrone fout: een stuiterende post of een SR werd later opnieuw toegestuurd door de ontvangende server. Deze post wordt geladen in een technische brievenbus de toepassing gebruikt om berichten met een fout te etiketteren. Asynchrone fouten kunnen optreden tot een week nadat een levering is verzonden.
 
    >[!NOTE]
    >
    >De configuratie van de stuiterende brievenbus is gedetailleerd in [deze sectie](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
 
-   De feedbacklus werkt als stuiterende e-mails. Wanneer een gebruiker een e-mail als spam kwalificeert, kunt u e-mailregels in de Campagne van Adobe vormen om alle leveringen aan deze gebruiker te blokkeren. Berichten die worden verzonden naar gebruikers die een e-mailbericht hebben gekwalificeerd als spam, worden automatisch omgeleid naar een e-mailvak dat speciaal voor dit doel is gemaakt. De adressen van deze gebruikers worden op de zwarte lijst weergegeven, ook al hebben ze niet op de koppeling voor het opzeggen van abonnementen geklikt. De adressen zijn zwarte lijst in de (**NmsAddress**) quarantainelijst en niet de (**NmsRecipient**) ontvankelijke lijst.
+   De [feedbacklus](../../delivery/using/technical-recommendations.md#feedback-loop) werkt als e-mailberichten met een stuitend bericht. Wanneer een gebruiker een e-mail als spam kwalificeert, kunt u e-mailregels in Adobe Campaign configureren om alle leveringen aan deze gebruiker te blokkeren. Berichten die worden verzonden naar gebruikers die een e-mailbericht hebben gekwalificeerd als spam, worden automatisch omgeleid naar een e-mailvak dat speciaal voor dit doel is gemaakt. De adressen van deze gebruikers zijn op de bloklijst hoewel zij niet de unsubscription verbinding klikten. De adressen zijn op de bloklijst in de (**NmsAddress**) quarantainelijst en niet in de (**NmsRecipient**) ontvankelijke lijst.
 
    >[!NOTE]
    >
@@ -215,13 +215,13 @@ Een bericht kan onmiddellijk (synchrone fout), of later op ontbreken, nadat het 
 
 ## Bounce mail management {#bounce-mail-management}
 
-Met het Adobe Campaign-platform kunt u fouten in de e-maillevering beheren via de functie voor stuiterende berichten. Wanneer een e-mail niet aan een ontvanger kan worden geleverd, keert de verre overseinenserver automatisch een foutenmelding (stuiterende post) aan technische inbox terug die voor dit doel wordt ontworpen. Foutberichten worden verzameld door het Adobe Campagne-platform en gekwalificeerd door het inMail-proces om de lijst met regels voor e-mailbeheer te verrijken
+Met het Adobe Campaign-platform kunt u mislukte e-mailleveringen beheren via de functie voor stuiterende e-mail. Wanneer een e-mail niet aan een ontvanger kan worden geleverd, keert de verre overseinenserver automatisch een foutenmelding (stuiterende post) aan technische inbox terug die voor dit doel wordt ontworpen. Foutberichten worden verzameld door het Adobe Campaign-platform en gekwalificeerd door het inMail-proces om de lijst met regels voor e-mailbeheer te verrijken
 
 ### Bounce mail-kwalificatie {#bounce-mail-qualification}
 
-Wanneer de levering van een e-mailbericht mislukt, ontvangt de Adobe Campagne Delivery-server een foutbericht van de berichtenserver of de externe DNS-server. De lijst met fouten bestaat uit tekenreeksen in het bericht dat door de externe server wordt geretourneerd. De types en de redenen van mislukkingen worden toegewezen aan elk foutenbericht.
+Wanneer de levering van een e-mail ontbreekt, ontvangt de leverings server van Adobe Campaign een foutenmelding van de overseinenserver of de verre DNS server. De lijst met fouten bestaat uit tekenreeksen in het bericht dat door de externe server wordt geretourneerd. De types en de redenen van mislukkingen worden toegewezen aan elk foutenbericht.
 
-Deze lijst is beschikbaar via het **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** knooppunt. Het bevat alle regels die door Adobe Campaign worden gebruikt om leveringsfouten te kwalificeren. Het is niet-uitputtend, wordt regelmatig bijgewerkt door de Campagne van Adobe en kan ook door de gebruiker worden beheerd.
+Deze lijst is beschikbaar via het **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** knooppunt. Het bevat alle regels die door Adobe Campaign worden gebruikt om leveringsfouten te kwalificeren. Het is niet-limitatief en wordt regelmatig door Adobe Campaign bijgewerkt en kan ook door de gebruiker worden beheerd.
 
 ![](assets/tech_quarant_rules_qualif.png)
 
@@ -229,7 +229,7 @@ Deze lijst is beschikbaar via het **[!UICONTROL Administration > Campaign Manage
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
-Adobe Campagne filtert dit bericht om de variabele inhoud (zoals IDs, data, e-mailadressen, telefoonaantallen, enz.) te schrappen en geeft het gefilterde resultaat weer in de **[!UICONTROL Text]** kolom. De variabelen worden vervangen door **`#xxx#`**, behalve adressen die worden vervangen door **`*`**.
+Adobe Campaign filtert dit bericht om de variabele inhoud (zoals id&#39;s, datums, e-mailadressen, telefoonnummers, enz.) te verwijderen. en geeft het gefilterde resultaat weer in de **[!UICONTROL Text]** kolom. De variabelen worden vervangen door **`#xxx#`**, behalve adressen die worden vervangen door **`*`**.
 
 Dit proces staat toe om alle mislukkingen van het zelfde type samen te brengen en veelvoudige ingangen voor gelijkaardige fouten in de de kwalificatielijst van het Logboek van de Levering te vermijden.
 
@@ -258,7 +258,7 @@ Stuitberichten kunnen de volgende kwalificatiestatus hebben:
 * Voor instanties die de verbeterde MTA zonder **Webhooks/EFS** gebruiken, zullen de **[!UICONTROL Inbound email]** regels ook worden gebruikt om de synchrone stuiterende e-mails te verwerken die uit Verbeterde MTA komen, gebruikend het zelfde e-mailadres zoals voor asynchrone stuiterende e-mails.
 >
 >
-Raadpleeg [dit document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagnes.
+Raadpleeg [dit document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de Adobe Campaign Enhanced MTA.
 
 ### E-mailbeheerregels {#email-management-rules}
 
@@ -282,7 +282,7 @@ De standaardregels zijn als volgt.
 
 Deze regels bevatten de lijst met tekenreeksen die door externe servers kunnen worden geretourneerd en waarmee u de fout (**Hard**, **Zacht** of **Genegeerd**) kunt kwalificeren.
 
-Wanneer een e-mail mislukt, retourneert de externe server een stuiterend bericht naar het adres dat is opgegeven in de platformparameters. De Campagne van Adobe vergelijkt de inhoud van elke stuiterende post met de koorden in de lijst van regels, en wijst het dan één van de drie [foutentypes](#delivery-failure-types-and-reasons)toe.
+Wanneer een e-mail mislukt, retourneert de externe server een stuiterend bericht naar het adres dat is opgegeven in de platformparameters. Adobe Campaign vergelijkt de inhoud van elke stuiterende post met de koorden in de lijst van regels, en wijst het dan één van de drie [foutentypes](#delivery-failure-types-and-reasons)toe.
 
 >[!NOTE]
 >
@@ -294,30 +294,30 @@ Zie [deze sectie](#bounce-mail-qualification)voor meer informatie over stuiteren
 >
 >Voor ontvangen of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, en als uw instantie **Webhooks/EFS** functionaliteit heeft, worden de **[!UICONTROL Inbound email]** regels niet meer gebruikt voor synchrone de foutenmeldingen van de leveringsmislukking. Zie [deze sectie](#bounce-mail-qualification)voor meer informatie.
 >
->Raadpleeg [dit document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagnes.
+>Raadpleeg [dit document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de Adobe Campaign Enhanced MTA.
 
 #### Domeinbeheer {#domain-management}
 
-De Adobe Campagne Messaging-server past één **domeinbeheerregel** toe op alle domeinen.
+De het overseinenserver van Adobe Campaign past één enkele regel van het **Domeinbeheer** op alle domeinen toe.
 
 <!--![](assets/tech_quarant_domain_rules_02.png)-->
 
 * U kunt kiezen al dan niet om bepaalde identificatienormen en encryptiesleutels te activeren om de domeinnaam, zoals identiteitskaart **van de** Afzender, **Domeinsleutels**, **DKIM**, en **S/MIME** te controleren.
 * De **SMTP relaisparameters** laten u het IP adres en de haven van een relaisserver voor een bepaald domein vormen. Zie [deze sectie](../../installation/using/configuring-campaign-server.md#smtp-relay)voor meer informatie.
 
-Als uw berichten in Vooruitzichten met **[!UICONTROL on behalf of]** in het afzenderadres worden getoond, zorg ervoor u niet uw e-mails met identiteitskaart **van de** Afzender ondertekent, die de verouderde merkgebonden standaard van de e-mailauthentificatie van Microsoft is. Als de **[!UICONTROL Sender ID]** optie is ingeschakeld, schakelt u het desbetreffende vakje uit en neemt u contact op met de ondersteuning van Adobe Campagne. De leverbaarheid wordt niet beïnvloed.
+Als uw berichten in Vooruitzichten met **[!UICONTROL on behalf of]** in het afzenderadres worden getoond, zorg ervoor u niet uw e-mails met identiteitskaart **van de** Afzender ondertekent, die de verouderde merkgebonden standaard van de e-mailauthentificatie van Microsoft is. Als de **[!UICONTROL Sender ID]** optie is ingeschakeld, schakelt u het desbetreffende vakje uit en neemt u contact op met de Adobe Campaign-ondersteuning. De leverbaarheid wordt niet beïnvloed.
 
 >[!IMPORTANT]
 >
 >Voor ontvangen of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, worden de **[!UICONTROL Domain management]** regels niet meer gebruikt. **DKIM (DomainKeys Identified Mail)** e-mailverificatie wordt ondertekend door de Enhanced MTA voor alle berichten met alle domeinen. Het ondertekent niet met identiteitskaart **van de** Afzender, **DomainKeys**, of **S/MIME** tenzij anders gespecificeerd op het Verbeterde niveau MTA.
 >
->Raadpleeg [dit document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagnes.
+>Raadpleeg [dit document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de Adobe Campaign Enhanced MTA.
 
 #### MX-beheer {#mx-management}
 
 * De MX beheersregels worden gebruikt om de stroom van uitgaande e-mails voor een specifiek domein te regelen. Ze nemen een monster van de stuiterende berichten en blokkeren het verzenden, indien van toepassing.
 
-* De het overseinenserver van de Campagne van Adobe past regels toe specifiek voor de domeinen, en toen de regels voor het algemene geval dat door een asterisk in de lijst van regels wordt vertegenwoordigd.
+* De het overseinenserver van Adobe Campaign past regels toe specifiek voor de domeinen, en toen de regels voor het algemene geval dat door een asterisk in de lijst van regels wordt vertegenwoordigd.
 
 * Om MX beheersregels te vormen, plaats eenvoudig een drempel en selecteer bepaalde parameters SMTP. Een **drempel** is een grens die als foutenpercentage wordt berekend waarvoorbij alle berichten naar een specifiek domein worden geblokkeerd. In het algemeen geldt dat het verzenden van e-mails voor minimaal 300 berichten drie uur wordt geblokkeerd als het foutenpercentage 90% bereikt.
 
@@ -327,4 +327,4 @@ For more on MX management, refer to [this section](../../installation/using/emai
 >
 >Voor ontvangen of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, worden de regels van de **[!UICONTROL MX management]** leveringsproductie niet meer gebruikt. Verbeterde MTA gebruikt zijn eigen MX regels die het toestaan om uw productie door domein aan te passen die op uw eigen historische e-mailreputatie wordt gebaseerd, en op real time terugkoppelen die uit de domeinen komt waar u e-mails verzendt.
 >
->Raadpleeg [dit document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagnes.
+>Raadpleeg [dit document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de Adobe Campaign Enhanced MTA.
