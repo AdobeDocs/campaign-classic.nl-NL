@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a527f246c4b0bf84c2a83e8df74b7a92542fda7a
+source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+workflow-type: tm+mt
+source-wordcount: '954'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: a527f246c4b0bf84c2a83e8df74b7a92542fda7a
 
 ## Algemene informatie {#general-information}
 
-Alle API methodes worden voorgesteld in de vorm van de diensten van het Web. Hierdoor kunt u alle Adobe Campagne-functies beheren via SOAP-aanroepen, het native ingangspunt van de Adobe Campagne-toepassingsserver. De Adobe Campaign-console zelf gebruikt alleen SOAP-aanroepen.
+Alle API methodes worden voorgesteld in de vorm van de diensten van het Web. Hierdoor kunt u alle Adobe Campaign-functies beheren via SOAP-aanroepen, het native ingangspunt van de Adobe Campaign-toepassingsserver. De Adobe Campaign-console zelf gebruikt alleen SOAP-aanroepen.
 
 De diensten van het Web laten u vele toepassingen van een derdesysteem tot stand brengen:
 
@@ -34,7 +37,7 @@ De diensten van het Web laten u vele toepassingen van een derdesysteem tot stand
 
 ## Definitie van webservices {#definition-of-web-services}
 
-De definitie van de diensten van het Web die op de de toepassingsserver van de Campagne van Adobe worden uitgevoerd is beschikbaar bij de gegevensschema&#39;s.
+De definitie van de diensten van het Web die op de de toepassingsserver van Adobe Campaign worden uitgevoerd is beschikbaar bij de gegevensschema&#39;s.
 
 De dienst van het Web wordt beschreven in de grammatica van de gegevensschema&#39;s en is beschikbaar bij het **`<methods>`** element.
 
@@ -59,7 +62,7 @@ De aanwezigheid van het attribuut &quot;static&quot; (met de waarde &quot;true&q
 
 Een &quot;const&quot;methode heeft impliciet een document van XML in het formaat van zijn bijbehorend schema als input.
 
-Een volledige beschrijving van het `<method>` element van een Adobe-cameraschema is beschikbaar in het hoofdstuk &quot;Schemaverwijzingen&quot; onder <a href="../../configuration/using/elements-and-attributes.md#method--element" target="_blank">  `<method>`    element.
+Een volledige beschrijving van het `<method>` element van een Adobe Campaign-schema is beschikbaar in het hoofdstuk &quot;Schema references&quot; onder  <a href="../../configuration/using/elements-and-attributes.md#method--element" target="_blank">  `<method>`    element.
 
 Voorbeeld van de methode &quot;const&quot;-type &quot;ExecuteQuery&quot; in het schema &quot;xtk:queryDef&quot;:
 
@@ -86,7 +89,7 @@ Als u een WSDL-bestand wilt genereren, moet u de volgende URL vanuit een webbrow
 
 Met:
 
-* **`<server>`**: de Adobe Campagne-toepassingsserver (nlserver-web)
+* **`<server>`**: de Adobe Campaign-toepassingsserver (nlserver-web)
 * **`<schema>`**: schema-id (namespace:schema_name)
 
 ### Voorbeeld van de methode &#39;ExecuteQuery&#39; van schema &#39;xtk:queryDef&#39; {#example-on-the--executequery--method-of-schema--xtk-querydef-}
@@ -181,7 +184,7 @@ In het `<binding>` deel worden het SOAP-communicatieprotocol ( `<soap:binding>` 
 
 #### Service {#service}
 
-In het `<service>` deel wordt de service &quot;XtkQueryDef&quot; beschreven met de URI op de URL van de toepassingsserver van Adobe Campagne.
+In het `<service>` deel wordt de service &quot;XtkQueryDef&quot; beschreven met de URI op de URL van de Adobe Campaign-toepassingsserver.
 
 ```
 <service name="XtkQueryDef">
@@ -193,7 +196,7 @@ In het `<service>` deel wordt de service &quot;XtkQueryDef&quot; beschreven met 
 
 ## Connectiviteit {#connectivity}
 
-De Campagne van Adobe heeft veiligheid voor authentificatiemechanismen verhoogd door veiligheidsstreken (zie het **Bepalen van veiligheidsstreken** hoofdstuk in [deze sectie](../../installation/using/configuring-campaign-server.md#defining-security-zones)) evenals zittingsbeheersmontages in te voeren.
+Adobe Campaign heeft de beveiliging voor verificatiemechanismen verbeterd door beveiligingszones in te voeren (zie het hoofdstuk **Beveiligingszones** definiëren in [deze sectie](../../installation/using/configuring-campaign-server.md#defining-security-zones)) en door instellingen voor sessiebeheer in te voeren.
 
 Er zijn twee beschikbare verificatiemodi:
 
@@ -201,7 +204,7 @@ Er zijn twee beschikbare verificatiemodi:
 
 of
 
-* **via de Adobe Campagne-aanmelding + wachtwoord** waarmee een sessietoken wordt gemaakt. Het sessietoken verloopt automatisch na een ingestelde periode. Deze modus wordt niet aanbevolen en vereist dat de beveiligingsinstellingen van de toepassing voor bepaalde zone-instellingen worden verminderd (allowUserPassword=&quot;true&quot; en sessionTokenOnly=&quot;true&quot;).
+* **via Adobe Campaign login + wachtwoord** dat tot een zittingsteken leidt. Het sessietoken verloopt automatisch na een ingestelde periode. Deze modus wordt niet aanbevolen en vereist dat de beveiligingsinstellingen van de toepassing voor bepaalde zone-instellingen worden verminderd (allowUserPassword=&quot;true&quot; en sessionTokenOnly=&quot;true&quot;).
 
 ### Sessietekenmerken {#session-token-characteristics}
 
@@ -281,7 +284,7 @@ Van een SOAP-aanroep:
 
 >[!NOTE]
 >
->De URLs die in de volgende vraag **HttpServletRequest** wordt gebruikt moet in de url toestemmingensectie van het **serverConf.xml** - dossier worden gewhitelliseerd. Dit geldt ook voor de URL van de server zelf.
+>De URL&#39;s die in de volgende **HttpServletRequest** -aanroepen worden gebruikt, moeten in de lijst met toegestane waarden in de sectie met url-machtigingen van het bestand **serverConf.xml** staan. Dit geldt ook voor de URL van de server zelf.
 
 Uitvoering aanmelding():
 
