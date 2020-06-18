@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 6d63a43bdcf1c63b2ada240e7e15db8a5dfcfe11
+workflow-type: tm+mt
+source-wordcount: '1980'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ## Inleiding {#introduction}
 
-Wanneer u in de Adobe Campagne boom (van het **[!UICONTROL Explorer]** menu in de homepage) navigeert, worden de gegevens in het gegevensbestand getoond in lijsten. Deze lijsten kunnen worden gevormd om slechts de gegevens te tonen die door de exploitant worden vereist. De acties kunnen dan op de gefiltreerde gegevens worden gelanceerd. Met de filterconfiguratie kunt u gegevens in een lijst selecteren **[!UICONTROL dynamically]**. Als de gegevens worden gewijzigd, worden de gefilterde gegevens bijgewerkt.
+Wanneer u in de boomstructuur van Adobe Campaign (van het **[!UICONTROL Explorer]** menu in de homepage) navigeert, worden de gegevens in het gegevensbestand getoond in lijsten. Deze lijsten kunnen worden gevormd om slechts de gegevens te tonen die door de exploitant worden vereist. De acties kunnen dan op de gefiltreerde gegevens worden gelanceerd. Met de filterconfiguratie kunt u gegevens in een lijst selecteren **[!UICONTROL dynamically]**. Als de gegevens worden gewijzigd, worden de gefilterde gegevens bijgewerkt.
 
 >[!NOTE]
 >
@@ -36,7 +39,7 @@ Met Adobe Campaign kunt u filters toepassen op gegevenslijsten.
 
 Deze filters kunnen eenmaal worden gebruikt of u kunt ze opslaan voor toekomstig gebruik. U kunt meerdere filters tegelijk toepassen.
 
-De volgende filtertypen zijn beschikbaar in Adobe Campagne:
+De volgende filtertypen zijn beschikbaar in Adobe Campaign:
 
 * Standaardfilters
 
@@ -70,13 +73,13 @@ U kunt het standaardfilter van een lijst veranderen. Zie Het standaardfilter [wi
 
    >[!NOTE]
    >
-   >Raadpleeg [deze sectie](../../platform/using/about-queries-in-campaign.md)voor meer informatie over het maken van query&#39;s in Adobe Campaign.
+   >Raadpleeg [deze sectie](../../platform/using/about-queries-in-campaign.md)voor meer informatie over het samenstellen van query&#39;s in Adobe Campaign.
 
 * Gebruikersfilters
 
    Een **toepassingsfilter** is een geavanceerd filter dat is opgeslagen, om zijn configuratie met andere exploitanten te gebruiken en te delen.
 
-   De **[!UICONTROL Filters]** knoop die boven de lijsten wordt gevestigd biedt een reeks toepassingsfilters aan die kunnen worden gecombineerd om het filtreren te raffineren. De methode voor het maken van deze filters wordt weergegeven bij het [opslaan van een filter](#saving-a-filter).
+   De **[!UICONTROL Filters]** knoop boven de lijsten biedt een reeks toepassingsfilters aan die kunnen worden gecombineerd om het filtreren te raffineren. De methode voor het maken van deze filters wordt weergegeven bij het [opslaan van een filter](#saving-a-filter).
 
 ## Het standaardfilter wijzigen {#altering-the-default-filter}
 
@@ -179,7 +182,7 @@ U kunt een geavanceerd filter opslaan om het voor toekomstig gebruik te houden. 
 
 ### Een geavanceerd filter met functies maken {#creating-an-advanced-filter-with-functions}
 
-Geavanceerde filters kunnen functies gebruiken; Er worden **filters met functies** gemaakt via een expressie-editor waarmee u formules kunt maken met behulp van de databasegegevens en geavanceerde functies. Als u een filter met functies wilt maken, herhaalt u de stappen 1, 2 en 3 voor het maken van geavanceerde filters en gaat u als volgt te werk:
+Geavanceerde filters kunnen functies gebruiken; **filters met functies** worden gemaakt via een expressie-editor waarmee u formules kunt maken met behulp van de databasegegevens en geavanceerde functies. Als u een filter met functies wilt maken, herhaalt u de stappen 1, 2 en 3 voor het maken van geavanceerde filters en gaat u als volgt te werk:
 
 1. Klik in het venster Veldselectie op **[!UICONTROL Advanced selection]**.
 1. Selecteer het type formule dat u wilt gebruiken: aggregaat, bestaand gebruikersfilter of -expressie.
@@ -276,8 +279,8 @@ De vooraf gedefinieerde filters zijn:
    <td> Hiermee selecteert u ontvangers die in de afgelopen maanden ten minste x maal op een levering hebben geklikt.<br /> </td> 
   </tr> 
   <tr> 
-   <td> E-mailadres in zwarte lijst<br /> </td> 
-   <td> Hiermee selecteert u ontvangers wier e-mailadres op de zwarte lijst staat.<br /> </td> 
+ <td> E-mailadres in de bloklijst<br /> </td> 
+    <td> Hiermee selecteert u ontvangers van wie het e-mailadres in de bloklijst staat.<br/> </td>
   </tr> 
   <tr> 
    <td> Gegarandeerd e-mailadres<br /> </td> 
