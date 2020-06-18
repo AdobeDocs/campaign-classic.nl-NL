@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+workflow-type: tm+mt
+source-wordcount: '1528'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +47,7 @@ Voer de volgende stappen uit om de ontvangers van de levering te selecteren:
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. Selecteer de doelafbeelding in de **[!UICONTROL Target mapping]** vervolgkeuzelijst. Standaard doeltoewijzing voor Adobe Campagne is **[!UICONTROL Recipients]**.
+1. Selecteer de doelafbeelding in de **[!UICONTROL Target mapping]** vervolgkeuzelijst. Standaard doeltoewijzing voor Adobe Campaign is **[!UICONTROL Recipients]**.
 
    Andere doeltoewijzingen zijn beschikbaar, en sommige kunnen met uw specifieke configuratie verwant zijn. Zie [Doeltoewijzing](../../delivery/using/selecting-a-target-mapping.md)selecteren voor meer informatie over doeltoewijzingen.
 
@@ -141,7 +144,7 @@ Klik op de **[!UICONTROL Edit...]** koppeling om de standaardconfiguratie te wij
 
 De volgende opties zijn beschikbaar:
 
-* **[!UICONTROL Exclude duplicate addresses during delivery]**. Deze optie is standaard actief: hiermee kunt u dubbele e-mailadressen tijdens de levering verwijderen. De toegepaste strategie is afhankelijk van de manier waarop Adobe Campaign wordt gebruikt en het type gegevens in de database.
+* **[!UICONTROL Exclude duplicate addresses during delivery]**. Deze optie is standaard actief: hiermee kunt u dubbele e-mailadressen tijdens de levering verwijderen. De toegepaste strategie kan variëren afhankelijk van hoe Adobe Campaign wordt gebruikt en het type gegevens in het gegevensbestand.
 
    De standaardwaarde van de optie kan voor elke leveringsmalplaatje worden gevormd.
 
@@ -154,7 +157,7 @@ De volgende opties zijn beschikbaar:
 
       ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , d.w.z. ontvangers wier e-mailadressen op een zwarte lijst staan (&#39;Weigeren&#39;). Deze optie moet geselecteerd blijven om de beroepsethiek van e-marketing en de wetgeving inzake e-handel te eerbiedigen.
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , d.w.z. ontvangers wier e-mailadressen op een bloklijst staan (&#39;Weigeren&#39;). Deze optie moet geselecteerd blijven om de beroepsethiek van e-marketing en de wetgeving inzake e-handel te eerbiedigen.
 * **[!UICONTROL Exclude quarantined recipients]**. Met deze optie kunt u profielen met een adres dat niet reageert, uitsluiten van het doel. We raden u ten zeerste aan deze optie geselecteerd te houden.
 
    >[!NOTE]
@@ -191,7 +194,7 @@ Selecteer deze optie om ontvangers te kiezen met de **[!UICONTROL Add]** knop, z
 
 ![](assets/s_ncs_user_wizard_email01_143.png)
 
-Raadpleeg [deze sectie](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)voor meer informatie over het verzenden van bewijzen.
+For more on proof sending, refer to [this section](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 ### Het vervangen van adressen gebruiken in proef {#using-address-substitution-in-proof}
 
