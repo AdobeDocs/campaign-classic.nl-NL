@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 54cb4143fc534aa436c4b8b28e031e87a2a02e40
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
@@ -37,13 +40,13 @@ Verwijder gedupliceerde externe accounts die dezelfde instellingen hebben.
 
 Als het veld **Productcontext** voor de externe account is ingesteld, controleert u of de waarde is ingesteld op: **dma_campagne_classic**
 
-Zorg ervoor dat de productcontext hetzelfde is voor Campagne en Experience Cloud.
+Zorg ervoor dat de productcontext voor Campagne en Experience Cloud gelijk is.
 
 Als de **productcontext** bijvoorbeeld niet wordt weergegeven, moet de standaardproductcontext **dma_campagne** zijn in zowel Campagne als Experience Cloud. Als het veld **Productcontext** wordt weergegeven, moet de standaardproductcontext **dma_campagne_classic** zijn in zowel Campagne als Experience Cloud.
 
 **[!UICONTROL IMS Server URL]**
 
-Controleer in de externe account van **Adobe Marketing Cloud** voor campagne of het **[!UICONTROL IMS Server URL]** gaat om [adobeid-na1.services.adobe.com](https://adobeid-na1.services.adobe.com/) of [ims-na1.adobelogin.com](http://ims-na1.adobelogin.com/). Zorg ervoor zowel stadium als de productie instanties aan het zelfde IMS productieeindpunt richten.
+Controleer in de externe account van de **Adobe Marketing Cloud** voor campagne of het **[!UICONTROL IMS Server URL]** gaat om [adobeid-na1.services.adobe.com](https://adobeid-na1.services.adobe.com/) of [ims-na1.adobelogin.com](http://ims-na1.adobelogin.com/). Zorg ervoor zowel stadium als de productie instanties aan het zelfde IMS productieeindpunt richten.
 
 **Associatiemasker**
 
@@ -62,7 +65,7 @@ De gebieden die in de externe rekening van de Campagne worden bepaald moeten een
 
 **URL voor terugbellen**
 
-De **callback-URL** moet worden weergegeven en beginnen met &quot;https://&quot;. Controleer of de URL **van de** callback is gekoppeld aan de overeenkomstige instantie. De productie-instantie moet bijvoorbeeld omleiden naar de productie-URL.
+De URL **voor** terugbellen moet worden toegevoegd aan de lijst met toegestane adressen en beginnen met &quot;https://&quot;. Controleer of de URL **van de** callback is gekoppeld aan de overeenkomstige instantie. De productie-instantie moet bijvoorbeeld omleiden naar de productie-URL.
 
 **Client-id en geheim**
 
@@ -84,7 +87,7 @@ Start de server opnieuw als er wijzigingen zijn aangebracht in de bovenstaande i
 
    Verwijs naar de vorige stappen om de configuratie van de **[!UICONTROL Association Mask]** en van de exploitantgroepen te controleren.
 
-* De gebruiker heeft geen toegang tot de aanmeldingspagina voor de Adobe-id:
+* De gebruiker heeft geen toegang tot de aanmeldingspagina van Adobe ID:
 
    Verwijs naar de vorige stappen om de werkingsgebiedconfiguratie te controleren.
 
