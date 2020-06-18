@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+workflow-type: tm+mt
+source-wordcount: '732'
+ht-degree: 0%
 
 ---
 
@@ -32,11 +35,11 @@ Adobe raadt u aan de onderstaande aanbevolen procedures te volgen om dergelijke 
 
 >[!NOTE]
 >
->Als uw instantie op AWS wordt gehost, kunt u de opslagruimte van uw SFTP-server controleren met het Classic [Configuratiescherm](https://docs.adobe.com/content/help/en/control-panel/using/sftp-management/sftp-storage-management.html).
+>Als uw instantie wordt gehost op AWS, kunt u de opslagruimte van uw SFTP-server controleren met het Campaign Classic- [Configuratiescherm](https://docs.adobe.com/content/help/en/control-panel/using/sftp-management/sftp-storage-management.html).
 >
 >Volg de stappen in [deze sectie](https://docs.adobe.com/content/help/en/control-panel/using/faq.html#ims-org-id) om te controleren of uw exemplaar wordt gehost op AWS.
 
-* De mogelijkheden voor servergrootte variëren afhankelijk van uw licentie. In elk geval moet u de minimale gegevens mogelijk houden en de gegevens slechts zo lang bewaren als nodig is (15 dagen is de maximale termijn).
+* De mogelijkheden voor servergrootte variëren afhankelijk van uw licentie. In elk geval moet u de minimale gegevens zo veel mogelijk bewaren en de gegevens zo lang als nodig is bewaren (15 dagen is de maximale termijn).
 * Gebruik op sleutels gebaseerde authentificatie eerder dan wachtwoordauthentificatie, om wachtwoordvervalsing te vermijden (de wachtwoorden hebben een geldigheidsperiode van 90 dagen). Bovendien kunt u met op sleutels gebaseerde verificatie meerdere sleutels genereren, bijvoorbeeld wanneer u meerdere entiteiten beheert. Integendeel, voor wachtwoordverificatie moet u het wachtwoord delen met alle entiteiten die u beheert.
 
    De gesteunde zeer belangrijke indeling is SSH-2 RSA 2048. Toetsen kunnen worden gegenereerd met programma&#39;s zoals PyTTY (Windows) of ssh-keygen (Unix). U moet de openbare sleutel aan het ondersteuningsteam van Adobe verstrekken via een [ondersteuningsticket](https://support.neolane.net) om deze te uploaden naar de campagneserver.
@@ -47,7 +50,7 @@ Adobe raadt u aan de onderstaande aanbevolen procedures te volgen om dergelijke 
 * Soms, login aan SFTP om direct te controleren wat daar ligt.
 * Houd er rekening mee dat SFTP-schijfbeheer primair uw verantwoordelijkheid is.
 * Standaard staan alle mappen die u maakt alleen in de modus Lezen/Schrijven voor uw id. Wanneer het creëren van omslagen die door Campagne moeten worden betreden, zorg ervoor om hen te vormen met lees/schrijf rechten voor de volledige groep. Anders kunnen workflows mogelijk geen bestanden maken of verwijderen omdat deze om beveiligingsredenen onder een andere id binnen dezelfde groep worden uitgevoerd.
-* Openbare IPs waarvan u probeert om de verbinding in werking te stellen SFTP moet op de instantie van de Campagne worden gewhitelisteerd. Whitelisting van IP adressen kan via een [steunkaartje](https://support.neolane.net)worden gevraagd.
+* Openbare IPs waarvan u probeert om de verbinding van SFTP in werking te stellen moet aan toestaan worden toegevoegd lijst op de instantie van de Campagne. Het toevoegen van IP adressen aan toestaan lijst kan via een [steunkaartje](https://support.neolane.net)worden gevraagd.
 
 >[!CAUTION]
 >
@@ -89,7 +92,7 @@ In de onderstaande sectie vindt u de informatie die u wilt controleren en die u 
 
    Als de poort niet is geopend, moet u uitgaande verbindingen aan uw zijde openen en het opnieuw proberen. Als u nog steeds verbindingsproblemen ondervindt, deelt u de uitvoer van de opdracht met het ondersteuningsteam van Adobe.
 
-1. Controleer of de openbare IP van waaruit u de verbinding van SFTP probeert in werking te stellen die u aan de Steun van Adobe voor het whitelisting verstrekte.
+1. Controleer of de openbare IP van waaruit u de SFTP-verbinding probeert te initiëren, de IP is die u aan de Adobe-ondersteuning hebt doorgegeven voor de lijst met toestaan.
 1. Als u een op een wachtwoord gebaseerde verificatie gebruikt, is uw wachtwoord mogelijk verlopen (wachtwoorden hebben een geldigheidsduur van 90 dagen). Daarom adviseren wij sterk gebruikend een zeer belangrijke gebaseerde authentificatie (zie de beste praktijken [van de server](#sftp-server-best-practices)SFTP).
 1. Als u een op sleutels gebaseerde authentificatie gebruikt, controleer dat de sleutel u gebruikt het zelfde is dat u aan het team van de Steun van Adobe voor de instantieconfiguratie verstrekte.
 1. Als u FileZilla of een gelijkwaardig hulpmiddel van FTP gebruikt, verstrek de details van verbindingslogboeken in het steunkaartje.
