@@ -15,20 +15,23 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+workflow-type: tm+mt
+source-wordcount: '485'
+ht-degree: 0%
 
 ---
 
 
 # Algemene invoer en uitvoer{#generic-imports-and-exports}
 
-De Campagne van Adobe biedt een module van de gegevensuitvoer die het gemakkelijk maakt om een lijst van klanten of vooruitzichten (bijvoorbeeld, na een het richten verrichting) te halen die dan deel van een doelbevolking zullen worden.
+Adobe Campaign biedt een gegevensexportmodule aan die het gemakkelijk maakt om een lijst van klanten of vooruitzichten (bijvoorbeeld, na een het richten verrichting) te halen die dan deel van een doelbevolking zullen worden.
 
-Adobe Campaign beschikt ook over een importmodule waarmee u uw database gegevens uit externe bestanden kunt verschaffen.
+Adobe Campaign beschikt ook over een importmodule waarmee u gegevens uit externe bestanden aan uw database kunt leveren.
 
 >[!NOTE]
 >
->De uitvoer en de invoer worden gevormd in specifieke malplaatjes die door werkschema&#39;s via de **[!UICONTROL Import]** en **[!UICONTROL Export]** activiteiten worden uitgevoerd. Ze kunnen automatisch volgens een schema worden herhaald, bijvoorbeeld om de gegevensuitwisseling tussen verschillende informatiesystemen te automatiseren. Indien nodig, kunt u een occasionele invoer of uitvoer via de **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** knoop van de boom van de Campagne van Adobe tot stand brengen.
+>De uitvoer en de invoer worden gevormd in specifieke malplaatjes die door werkschema&#39;s via de **[!UICONTROL Import]** en **[!UICONTROL Export]** activiteiten worden uitgevoerd. Ze kunnen automatisch volgens een schema worden herhaald, bijvoorbeeld om de gegevensuitwisseling tussen verschillende informatiesystemen te automatiseren. Indien nodig, kunt u een occasionele invoer of uitvoer via de **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** knoop van de boom van Adobe Campaign tot stand brengen.
 
 U kunt:
 
@@ -40,9 +43,9 @@ U kunt:
 >
 >Gegevensimport in campagne moet via workflows worden uitgevoerd om de consistentie van gegevens te waarborgen en de efficiëntie te verbeteren. Raadpleeg voor meer informatie de secties [Gegevens](../../workflow/using/importing-data.md)importeren, Beste werkwijzen [](../../workflow/using/importing-data.md#best-practices-when-importing-data) importeren en Sjabloonvoorbeeld [](../../workflow/using/importing-data.md#setting-up-a-recurring-import) importeren.
 
-## Een taaksjabloon maken {#creating-a-job-template}
+## Creating a job template {#creating-a-job-template}
 
-Importeren- en exportsjablonen worden opgeslagen in de **[!UICONTROL Resources > Templates > Job templates]** directory van de Adobe Campagne-structuur.
+Importeren- en exportsjablonen worden opgeslagen in de **[!UICONTROL Resources > Templates > Job templates]** directory van de Adobe Campaign-structuur.
 
 ![](assets/s_ncs_user_export_wizard_template.png)
 
@@ -54,17 +57,17 @@ De procedure voor het creëren van een procesmalplaatje wordt voorgesteld in de 
 
 >[!NOTE]
 >
->De native sjabloon **[!UICONTROL Import blacklist]** is al geconfigureerd voor het importeren van een lijst met e-mailadressen die op de zwarte lijst staan.
+>De native sjabloon **[!UICONTROL Import block list]** is al geconfigureerd voor het importeren van een lijst met e-mailadressen die aan de bloklijst zijn toegevoegd.
 > 
 >Met de sjablonen **[!UICONTROL New text import]** en **[!UICONTROL New text export]** sjablonen kunt u een geheel nieuwe import of export configureren.
 
 ## Nieuwe import/export maken {#creating-a-new-import-export}
 
-Nadat de sjabloon is geconfigureerd, kunnen import- en exportbewerkingen in verschillende contexten worden gestart in Adobe Campaign.
+Zodra het malplaatje is gevormd, kunnen de invoer en de uitvoerverrichtingen in verscheidene contexten in Adobe Campaign worden gelanceerd.
 
 Met al deze opties opent u de wizard [Importeren](../../platform/using/importing-data.md) of [Exporteren](../../platform/using/exporting-data.md#export-wizard) .
 
-* Klik in het **[!UICONTROL Profiles and targets]** gedeelte van de Adobe Campagne-werkruimte op de **[!UICONTROL Jobs]** koppeling: dit brengt u naar de lijst van bestaande in - en uitvoer .
+* Klik in het **[!UICONTROL Profiles and targets]** gedeelte van de Adobe Campaign-werkruimte op de **[!UICONTROL Jobs]** koppeling: dit brengt u naar de lijst van bestaande in - en uitvoer .
 
    Klik op de **[!UICONTROL Create]** knop en selecteer het type taak dat u wilt uitvoeren.
 
@@ -74,7 +77,7 @@ Met al deze opties opent u de wizard [Importeren](../../platform/using/importing
 
    ![](assets/s_ncs_user_import_from_production.png)
 
-* U kunt importeren en exporteren ook vanuit de Adobe Campaign Explorer.
+* Ook vanuit de Adobe Campaign-verkenner kunnen invoer en export plaatsvinden.
 
    Als u gegevens wilt exporteren/importeren, klikt u op het **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** knooppunt, vervolgens op het **[!UICONTROL New]** pictogram en selecteert u **[!UICONTROL Export]** of **[!UICONTROL Import]**. Hiermee opent u de juiste wizard.
 
