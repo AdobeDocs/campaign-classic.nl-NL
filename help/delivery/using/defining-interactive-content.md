@@ -1,6 +1,6 @@
 ---
-title: Interactieve inhoud definiëren in Adobe Campagne Classic
-description: Leer hoe u in Adobe Campaign Classic interactieve en dynamische e-mailinhoud met AMP definieert.
+title: Interactieve inhoud definiëren in Adobe Campaign Classic
+description: Leer hoe u interactieve en dynamische e-mailinhoud definieert met AMP in Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: ddcc2e3b-e251-4a7a-a22a-28701522839f
 contentOwner: sauviat
@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1815f9fc6063ec86d6c12ef492396e5afb82b3e1
+source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+workflow-type: tm+mt
+source-wordcount: '1653'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +41,7 @@ Deze functie is beschikbaar via een speciaal pakket in Adobe Campaign. Dit pakke
 
 Voor hybride en gehoste architecturen moet het pakket op alle servers worden geïnstalleerd, inclusief de [mid-sourcingserver](../../installation/using/mid-sourcing-server.md) en de [uitvoeringsinstantie](../../message-center/using/creating-a-shared-connection.md#execution-instance). Neem contact op met uw accountmanager.
 
-Bekijk deze [video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html) om te zien hoe u AMP activeert in Adobe Campaign en meer te weten te komen over het gebruik ervan.
+Bekijk deze [video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html) om te zien hoe u AMP activeert in Adobe Campaign en meer te weten komt over het gebruik ervan.
 
 ## Informatie over AMP voor e-mail {#about-amp-for-email}
 
@@ -49,15 +52,15 @@ Bijvoorbeeld:
 * De inhoud wordt bijgewerkt in het bericht.
 * Ontvangers kunnen actie ondernemen zoals op een formulier reageren zonder hun Postvak IN te verlaten.
 
-AMP for Email is compatibel met bestaande e-mails. De AMP-versie van het bericht is in de e-mail ingesloten als een nieuw MIME-onderdeel, in aanvulling op de HTML en/of onbewerkte tekst, waardoor compatibiliteit tussen alle e-mailclients wordt gegarandeerd.
+AMP for Email is compatibel met bestaande e-mails. De AMP-versie van het bericht is in de e-mail ingesloten als een nieuw MIME-onderdeel, naast de HTML en/of onbewerkte tekst, en zorgt voor compatibiliteit tussen alle e-mailclients.
 
 Raadpleeg de documentatie bij [](https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email)AMP-ontwikkelaars voor meer informatie over de AMP voor e-mailindeling, specificatie en vereisten.
 
-## Belangrijke stappen voor het gebruik van AMP voor e-mail met Adobe-campagne {#key-steps-to-use-amp}
+## Belangrijke stappen voor het gebruik van AMP voor e-mail met Adobe Campaign {#key-steps-to-use-amp}
 
-Volg onderstaande stappen om een AMP-e-mail met Adobe Campagne te testen en te verzenden:
+Volg onderstaande stappen om een AMP-e-mail met Adobe Campaign te testen en te verzenden:
 1. Installeer het **[!UICONTROL AMP support (Beta)]** pakket. Zie Standaardpakketten [voor campagne](../../installation/using/installing-campaign-standard-packages.md)installeren.
-1. Maak een e-mail en maak uw AMP-inhoud in Adobe Campaign. Zie AMP-e-mailinhoud [maken met Adobe Campagne](#build-amp-email-content).
+1. Maak een e-mail en maak uw AMP-inhoud in Adobe Campaign. Zie AMP-e-mailinhoud [maken met Adobe Campaign](#build-amp-email-content).
 1. Zorg ervoor dat u voldoet aan alle leveringsvereisten van de e-mailproviders die de AMP-indeling ondersteunen. Zie [AMP voor vereisten](#amp-for-email-delivery-requirements)voor e-maillevering.
 
    >[!NOTE]
@@ -72,7 +75,7 @@ Volg onderstaande stappen om een AMP-e-mail met Adobe Campagne te testen en te v
 
 1. Verzend uw e-mail zoals u gewoonlijk zou doen. Zie Een AMP-e-mail [](#sending-amp-email)verzenden.
 
-## AMP-e-mailinhoud samenstellen in Adobe-campagne {#build-amp-email-content}
+## AMP-e-mailinhoud samenstellen in Adobe Campaign {#build-amp-email-content}
 
 Voer de onderstaande stappen uit om een e-mailbericht te maken in de AMP-indeling.
 
@@ -96,9 +99,9 @@ Voer de onderstaande stappen uit om een e-mailbericht te maken in de AMP-indelin
    >
    >Raadpleeg de documentatie bij [](https://amp.dev/documentation/guides-and-tutorials/start/create_email/?format=email)AMP-ontwikkelaars voor meer informatie over het samenstellen van uw eerste AMP-e-mail.
 
-   U kunt bijvoorbeeld de component met de productlijst in de AMP-sjabloon gebruiken en een lijst bijhouden met producten van een systeem van derden of zelfs in Adobe-campagne. Wanneer u een prijs of een ander element aanpast, zal het automatisch weerspiegeld worden wanneer de ontvanger opnieuw e-mail van hun brievenbus opent.
+   U kunt bijvoorbeeld de component met de productlijst van de AMP-sjabloon gebruiken en een lijst bijhouden met producten van een systeem van derden of zelfs binnen Adobe Campaign. Wanneer u een prijs of een ander element aanpast, zal het automatisch weerspiegeld worden wanneer de ontvanger opnieuw e-mail van hun brievenbus opent.
 
-1. Pas uw AMP-inhoud naar wens aan, zoals u gewoonlijk doet met de HTML-indeling in Adobe Campaign, met verpersoonlijkingsvelden en aanpassingsblokken.
+1. Pas uw AMP-inhoud naar wens aan, zoals u gewoonlijk doet met de HTML-indeling in Adobe Campaign, met personalisatievelden en aanpassingsblokken.
 
    ![](assets/amp_tab_perso.png)
 
@@ -114,7 +117,7 @@ Voer de onderstaande stappen uit om een e-mailbericht te maken in de AMP-indelin
 
    >[!NOTE]
    >
-   >De AMP-editor van Adobe Campagne is niet ontworpen voor validatie van inhoud. Gebruik een externe website, zoals de webvalidator [van het](https://validator.ampproject.org) AMP, om te controleren of uw inhoud correct is.
+   >De AMP-editor van Adobe Campaign is niet ontworpen voor validatie van inhoud. Gebruik een externe website, zoals de webvalidator [van het](https://validator.ampproject.org) AMP, om te controleren of uw inhoud correct is.
 
 1. Breng zo nodig wijzigingen aan totdat de AMP-inhoud de validatie doorgeeft.
 
@@ -132,7 +135,7 @@ Voer de onderstaande stappen uit om een e-mailbericht te maken in de AMP-indelin
    >
    >U kunt uw AMP-inhoud niet rechtstreeks in Adobe Campaign voorvertonen. Gebruik een externe website, zoals [AMP Playground](https://playground.amp.dev).
 
-1. Ga terug naar Adobe Campagne en kopieer en plak uw gevalideerde inhoud naar het **[!UICONTROL AMP content]** tabblad.
+1. Ga terug naar Adobe Campaign en kopieer en plak uw gevalideerde inhoud naar het **[!UICONTROL AMP content]** tabblad.
 
 1. Schakel over naar het **[!UICONTROL HTML content]** **[!UICONTROL Text content]** tabblad of het tabblad en definieer inhoud voor ten minste een van deze twee indelingen.
 
@@ -159,18 +162,18 @@ U kunt ook de [Tips en bekende beperkingen voor Gmail](https://developers.google
 
 Aangezien AMP for Email beschikbaar is als bètamogelijkheid, kunt u momenteel in twee stappen experimenteren met het verzenden van een AMP-e-mail:
 
-1. Met Adobe Campaign kunt u testen of een dynamische e-mail met AMP-functionaliteit wordt geleverd aan geselecteerde e-mailadressen die correct zijn geconfigureerd, om de inhoud en het gedrag ervan te controleren. Zie AMP-e-maillevering [testen voor geselecteerde adressen](#testing-amp-delivery-for-selected-addresses).
-1. Nadat de test is uitgevoerd, kunt u een levering of een campagne verzenden als onderdeel van het bètaprogramma voor e-mail door u te registreren bij de relevante e-mailprovider(s) om uw senderdomein te laten zweven. Zie E-mails met AMP [leveren door u te registreren bij een e-mailprovider](#delivering-amp-emails-by-registering).
+1. Met Adobe Campaign kunt u testen of een dynamische e-mail met AMP-functionaliteit wordt geleverd aan geselecteerde e-mailadressen die op de juiste wijze zijn geconfigureerd, om de inhoud en het gedrag ervan te controleren. Zie AMP-e-maillevering [testen voor geselecteerde adressen](#testing-amp-delivery-for-selected-addresses).
+1. Nadat de test is uitgevoerd, kunt u een levering of een campagne verzenden als onderdeel van het bètaprogramma voor e-mail door u te registreren bij de relevante e-mailprovider(s) om uw senderdomein toe te voegen aan de lijst met toegestane items. Zie E-mails met AMP [leveren door u te registreren bij een e-mailprovider](#delivering-amp-emails-by-registering).
 
 ### AMP-e-maillevering testen voor geselecteerde adressen {#testing-amp-delivery-for-selected-addresses}
 
-U kunt testen hoe dynamische berichten vanuit Adobe Campaign naar geselecteerde e-mailadressen worden verzonden.
+U kunt testen hoe dynamische berichten van Adobe Campaign naar geselecteerde e-mailadressen worden verzonden.
 
 >[!NOTE]
 >
 >Momenteel ondersteunen alleen Gmail, Outlook en Mail.ru het testen van de AMP-indeling.
 
-Voor Gmail en Vooruitzichten, moet u eerst whitelist het afzenderadres(sen) u gebruikt om van de Campagne van Adobe voor de rekeningen van Gmail en van Vooruitzichten te leveren u richt.
+Voor Gmail en Vooruitzichten, moet u eerst de afzenderadres(sen) toevoegen u aan toestaat lijst om van Adobe Campaign voor de rekeningen van Gmail en van Vooruitzichten te leveren u richt.
 
 Dit doet u als volgt:
 1. Controleer of de optie voor het inschakelen van dynamische e-mail is ingeschakeld bij de desbetreffende e-mailprovider(s).
@@ -184,7 +187,7 @@ Om het verzenden van een e-mail van AMP naar een adres te testen Mail.ru, volg d
 
 ### E-mails met AMP leveren door zich te registreren bij een e-mailprovider {#delivering-amp-emails-by-registering}
 
-U kunt experimenteren met het leveren van dynamische e-mailberichten door u te registreren bij de e-mailproviders die deelnemen aan het AMP bètaprogramma om uw senderdomein te laten whiteleren.
+U kunt experimenteren met het leveren van dynamische e-mailberichten door u te registreren bij de e-mailproviders die deelnemen aan het AMP bètaprogramma om uw senderdomein toe te voegen aan de lijst met toegestane adressen.
 
 >[!NOTE]
 >
