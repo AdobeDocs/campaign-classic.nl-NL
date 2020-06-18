@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f8cf2f72dcf2ab48a42faf7931ca831b6431548d
+source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+workflow-type: tm+mt
+source-wordcount: '1617'
+ht-degree: 0%
 
 ---
 
@@ -61,7 +64,7 @@ Met de **[!UICONTROL Edit query...]** koppeling kunt u het doeltype, de beperkin
 
    U kunt ook voorwaarden voor gegevensgroepering toevoegen door het desbetreffende vak in te schakelen. Om dit te doen, moet de het filtreren afmeting aan de het richten van vraag afmeting verschillend zijn. Zie deze [sectie](../../workflow/using/querying-using-grouping-management.md)voor meer informatie over groeperen.
 
-   U kunt meer criteria ook toevoegen door de bouwer van de Uitdrukking te gebruiken en het te combineren met de logische opties EN, OF, en BEHALVE. Vervolgens kunt u een voorbeeld bekijken van de combinatie **[!UICONTROL Corresponding SQL query...]** van criteria. Zie deze [sectie](../../platform/using/defining-filter-conditions.md#building-expressions)voor meer informatie.
+   U kunt meer criteria ook toevoegen door de bouwer van de Uitdrukking te gebruiken en het te combineren met de logische opties EN, OF, en BEHALVE. Vervolgens kunt u een voorbeeld bekijken van de combinatie **[!UICONTROL Corresponding SQL query...]** van criteria. For more on this refer to this [section](../../platform/using/defining-filter-conditions.md#building-expressions).
 
    Sla het filter op als u het later opnieuw wilt gebruiken.
 
@@ -69,7 +72,7 @@ Met de **[!UICONTROL Edit query...]** koppeling kunt u het doeltype, de beperkin
 
 ## Gegevens toevoegen {#adding-data}
 
-In de aanvullende kolommen kunt u aanvullende informatie over de doelpopulatie verzamelen, bijvoorbeeld contractnummers, abonnementen op nieuwsbrieven of oorsprong. Deze gegevens kunnen worden opgeslagen in de Adobe Campagne-database of in een externe database.
+In de aanvullende kolommen kunt u aanvullende informatie over de doelpopulatie verzamelen, bijvoorbeeld contractnummers, abonnementen op nieuwsbrieven of oorsprong. Deze gegevens kunnen worden opgeslagen in de Adobe Campaign-database of in een externe database.
 
 Met de **[!UICONTROL Add data...]** koppeling kunt u de aanvullende gegevens selecteren die u wilt verzamelen.
 
@@ -79,13 +82,13 @@ Selecteer eerst het type gegevens dat u wilt toevoegen:
 
 ![](assets/wf_add_data_1st_option.png)
 
-* Selecteer deze optie **[!UICONTROL Data linked to the filtering dimension]** om de gegevens in de Adobe Campagne-database te selecteren.
+* Selecteer deze optie **[!UICONTROL Data linked to the filtering dimension]** om de gegevens in de Adobe Campaign-database te selecteren.
 * Selecteer **[!UICONTROL External data]** om gegevens uit een externe database toe te voegen. Deze optie is alleen beschikbaar als u de optie **Federated Data Access** hebt aangeschaft. Raadpleeg [Toegang tot een externe database (FDA)](../../workflow/using/accessing-an-external-database--fda-.md)voor meer informatie hierover.
 * Selecteer de **[!UICONTROL An offer proposition]** optie om een reeks kolommen toe te voegen die u de beste die voorstel laten opslaan door de aanbiedingsmotor wordt geproduceerd. Deze optie is alleen beschikbaar als u de module **Interactie** hebt aangeschaft.
 
 Als er geen optionele module op het platform is geïnstalleerd, wordt dit werkgebied niet weergegeven. U wordt rechtstreeks naar de volgende fase geleid.
 
-Gegevens toevoegen uit de Adobe Campagne-database:
+Gegevens toevoegen uit de Adobe Campaign-database:
 
 1. Selecteer het type gegevens dat u wilt toevoegen. Dit kunnen gegevens zijn die tot de het filtreren afmeting of gegevens behoren die in verbonden lijsten worden opgeslagen.
 
@@ -172,7 +175,7 @@ Deze waarde is het schema van de het werklijst. Deze parameter is geldig voor al
 
 ## Uw query&#39;s optimaliseren {#optimizing-queries}
 
-In de onderstaande sectie vindt u tips en trucs voor het optimaliseren van query&#39;s die op Adobe Campagne worden uitgevoerd, zodat de werkbelasting voor de database wordt beperkt en de gebruikerservaring wordt verbeterd.
+In de onderstaande sectie vindt u tips en trucs voor het optimaliseren van query&#39;s die op Adobe Campaign worden uitgevoerd om de werkbelasting van de database te beperken en de gebruikerservaring te verbeteren.
 
 ### Verbindingen en indexen {#joins-and-indexes}
 
@@ -185,7 +188,7 @@ In de onderstaande sectie vindt u tips en trucs voor het optimaliseren van query
 
    Zorg ervoor dat de `where` component van hetzelfde type is als het veld.
 
-   Een algemene fout is: `iBlacklist='3'` waarbij `iBlacklist` het een numeriek veld is en `3` een tekstwaarde.
+   Een algemene fout is: `iBlocklist='3'` waarbij `iBlocklist` een numeriek veld is en `3` een tekstwaarde.
 
    Zorg ervoor u weet wat het uitvoeringsplan van uw vraag zal zijn. Vermijd volledig lijstaftasten, vooral voor vragen in real time of dichtbij vragen in real time die elke minuut lopen.
 
@@ -196,7 +199,7 @@ Voor meer op dit, verwijs naar[de modelbeste praktijken](https://helpx.adobe.com
 * Houd rekening met functies als `Lower(...)`. Wanneer de functie Lower wordt gebruikt, wordt de Index niet gebruikt.
 * Controleer query&#39;s met de ‘soortgelijke’ instructie of de ‘bovenste’ of ‘onderste’ instructies zorgvuldig. Pas &quot;Upper&quot;op de gebruikersinput, niet op het gegevensbestandgebied toe.
 
-   Zie [deze sectie](../../platform/using/defining-filter-conditions.md#list-of-functions)voor meer informatie over functies.
+   For more on functions, refer to [this section](../../platform/using/defining-filter-conditions.md#list-of-functions).
 
 ### Afmetingen filteren {#filtering-dimensions}
 
@@ -216,7 +219,7 @@ Het equivalent van de het filtreren afmeting in SQL is de binnenpartij:
 
 `select iRecipientId from nmsRecipient INNER JOIN nmsBroadLog ON (...)`
 
-Raadpleeg [deze sectie](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions)voor meer informatie over filterafmetingen.
+For more on filtering dimensions, refer to [this section](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
 
 ### Architectuur {#architecture}
 
