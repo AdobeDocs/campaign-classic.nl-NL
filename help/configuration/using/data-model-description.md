@@ -1,6 +1,6 @@
 ---
-title: Beschrijving van Adobe Campagne Classic-gegevensmodel
-description: In dit document wordt het klassieke gegevensmodel van de Campagne beschreven.
+title: Beschrijving van het klassieke gegevensmodel van Adobe Campaign
+description: In dit document wordt het klassieke Adobe Campaign-gegevensmodel beschreven.
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 # Beschrijving van gegevensmodel campagne{#data-model-description}
 
-Adobe Campagne wordt geleverd met een vooraf gedefinieerd gegevensmodel. In deze sectie vindt u een aantal details over de ingebouwde tabellen van het gegevensmodel van de campagne en de interactie ervan.
+Adobe Campaign wordt geleverd met een vooraf gedefinieerd gegevensmodel. In deze sectie vindt u enkele details over de ingebouwde tabellen van het Adobe Campaign-gegevensmodel en de interactie ervan.
 
 Om tot de beschrijving van elke lijst toegang te hebben, ga naar **[!UICONTROL Admin > Configuration > Data schemas]**, selecteer een middel van de lijst en klik de **[!UICONTROL Documentation]** tabel.
 
@@ -31,19 +31,19 @@ Om tot de beschrijving van elke lijst toegang te hebben, ga naar **[!UICONTROL A
 
 >[!NOTE]
 >
->De fysieke en logische structuur van de gegevens die in de toepassing worden overgedragen, wordt in XML beschreven. Het voert een grammatica specifiek voor de Campagne van Adobe uit, genoemd een schema. Lees [deze sectie](../../configuration/using/about-schema-reference.md)voor meer informatie over Adobe Campagne-schema&#39;s.
+>De fysieke en logische structuur van de gegevens die in de toepassing worden overgedragen, wordt in XML beschreven. Het volgt een grammatica specifiek voor Adobe Campaign, genoemd een schema. Lees [deze sectie](../../configuration/using/about-schema-reference.md)voor meer informatie over Adobe Campaign-schema&#39;s.
 
 ## Beschrijving van de belangrijkste tabellen {#description-main-tables}
 
-Adobe Campaign is gebaseerd op een relationele database die tabellen bevat die aan elkaar zijn gekoppeld.
+Adobe Campaign vertrouwt op een relationele database die tabellen bevat die aan elkaar zijn gekoppeld.
 
-In het volgende diagram ziet u de verbindingen tussen de belangrijkste bedrijfstabellen van het gegevensmodel van de campagne van Adobe met de hoofdvelden voor elk.
+Het volgende diagram toont de verbindingen tussen de belangrijkste bedrijfstabellen van het de gegevensmodel van Adobe Campaign met de belangrijkste gebieden voor elk.
 
 <!--![](assets/data-model_diagram.png)-->
 
 ![](assets/data-model_simplified-diagram.png)
 
-Het vooraf gedefinieerde Adobe Campagne-gegevensmodel bevat de onderstaande hoofdtabellen.
+Het vooraf gedefinieerde Adobe Campaign-gegevensmodel bevat de onderstaande hoofdtabellen.
 
 ### NmsRecipient {#NmsRecipient}
 
@@ -55,7 +55,7 @@ Dit is de standaardtabel die wordt gebruikt voor de **ontvangers van leveringen*
 * iEmailFormat: voorkeursindeling voor e-mailberichten (1 voor tekst, 2 voor HTML en 0 als deze niet gedefinieerd zijn).
 * sAddress1, sAddress2, sAddress3, sAddress4, sZipCode, sCity wordt gebruikt om het postadres te bouwen (in overeenstemming met de norm XPZ 10-011 AFNOR van Mei 1997).
 * sPhone, sMobilePhone en sFax bevatten respectievelijk de telefoon-, mobiele telefoon- en faxnummers.
-* iBlackList is de standaardmarkering voor niet-deelname die wordt gebruikt voor de profielen (1 betekent &quot;niet-geabonneerd&quot;, anders 0).
+* iBlockList is de standaardmarkering voor niet-deelname die wordt gebruikt voor de profielen (1 betekent &quot;niet-geabonneerd&quot;, 0 anders).
 
 Het veld iFolderId is de externe sleutel die de ontvanger aan zijn uitvoeringsmap koppelt. Zie [XtkFolder](#XtkFolder)voor meer informatie.
 
@@ -77,7 +77,7 @@ De NmsRcpGrpRel-relatietabel bevat alleen de twee velden die overeenkomen met de
 
 Deze tabel komt overeen met het **nms:service** -schema.
 
-In de Campagne van Adobe, kunt u abonnementen tot stand brengen en beheren aan informatiediensten (onderwerpen). De lijst NmsService slaat de definitie van de informatiediensten (onderwerpen) op die u uw ontvangers aanbiedt om aan (een nieuwsbrief bijvoorbeeld) in te schrijven.
+In Adobe Campaign kunt u abonnementen op informatieservices (onderwerpen) maken en beheren. De lijst NmsService slaat de definitie van de informatiediensten (onderwerpen) op die u uw ontvangers aanbiedt om aan (een nieuwsbrief bijvoorbeeld) in te schrijven.
 
 De diensten zijn entiteiten die aan groepen (statische ontvankelijke groeperingen) gelijkaardig zijn, behalve dat zij meer informatie verspreiden en gemakkelijke beheer van abonnementen en abonnementen via vormen toelaten.
 
@@ -259,7 +259,7 @@ This set of tables is linked to the **Web applications** functionality, which al
 
 Deze set tabellen is gekoppeld aan het **Mobile App Channel**, waarmee gepersonaliseerde meldingen naar iOS- en Android-terminals kunnen worden verzonden via apps. Zie [Informatie over het mobiele toepassingskanaal](../../delivery/using/about-mobile-app-channel.md)voor meer informatie.
 
-* **NmsMobileApp**: Deze tabel komt overeen met het schema **nms:mobileApp** . Het bevat de mobiele toepassingen die zijn gedefinieerd in Adobe Campaign.
+* **NmsMobileApp**: Deze tabel komt overeen met het schema **nms:mobileApp** . Het bevat de mobiele toepassingen die in Adobe Campaign zijn gedefinieerd.
 * **NmsAppSubscription**: Deze tabel komt overeen met het schema **nms:appSubscription** . Het bevat de abonneeinformatie betreffende één of meerdere toepassingen.
 * **NmsAppSubscriptionRcp**: Deze tabel komt overeen met het schema **nms:appSubscriptionRcp** . Hiermee kunt u bezoekers die zijn geabonneerd op een toepassing, koppelen aan de tabel met ontvangers.
 * **NmsExcludeLogAppSubRcp**: Deze tabel komt overeen met het schema **nms:excludeLogAppSubRcp** .
