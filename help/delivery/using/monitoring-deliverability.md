@@ -1,5 +1,5 @@
 ---
-title: De prestaties controleren in Adobe Campaign Classic
+title: Leverbaarheid controleren in Adobe Campaign Classic
 description: Meer informatie over gereedschappen en richtlijnen voor het controleren van de prestaties in Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 0b5c5dbd-f532-4d8a-a255-9e6d88357d8d
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f4d82657fbeae39af173c867975455669497d8eb
+source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 # Leverbaarheid controleren{#monitoring-deliverability}
 
-Hieronder vindt u meer informatie over de verschillende bewakingstools die door Adobe Campaign worden geboden en enkele aanvullende richtlijnen voor het bewaken van de leverbaarheid.
+Hieronder vindt u nadere informatie over de verschillende monitoringinstrumenten die door Adobe Campaign worden geleverd en enkele aanvullende richtlijnen voor de controle op de leverantie.
 
 ## Monitoringinstrumenten {#monitoring-tools}
 
@@ -58,7 +58,7 @@ Hier volgen enkele aanvullende richtlijnen voor het controleren van de leverbaar
 * Controleer elke leveringsproductie om ervoor te zorgen dat het met de geldigheid van de leveringsinhoud (b.v. &#39;Flash-verkoop&#39; moet in minuten worden geleverd, niet in dagen).
 * Wanneer het gebruiken van [golven](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves), verifieer dat elke golf genoeg tijd heeft om te beëindigen alvorens volgende wordt teweeggebracht.
 * Controleer of het aantal fouten en nieuwe [quarantines](../../delivery/using/understanding-quarantine-management.md) consistent zijn met andere leveringen.
-* Raadpleeg zorgvuldig de [leveringslogboeken](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) om het soort fouten te controleren die worden benadrukt (grijze of zwarte lijst, DNS kwesties, anti-spamregels, enz.).
+* Raadpleeg zorgvuldig de [leveringslogboeken](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) om het soort fouten te controleren die worden benadrukt (bloklijsten, DNS kwesties, anti-spamregels, enz.).
 
 ## Spam {#signal-spam}
 
@@ -70,31 +70,31 @@ Spam van het signaal is de Franse dienst die anonymized terugkoppel meldt voor F
 
 ## 250ok {#deliverability-250ok}
 
-[250ok](https://250ok.com/) is een complementaire monitoringsoplossing voor de interne hulpprogramma&#39;s van Adobe voor het leveren van items, die IP, zwarte lijsten van domeinen en reputatie-indicatoren bieden.
+[250ok](https://250ok.com/) is een aanvullende controleoplossing voor de interne hulpprogramma&#39;s van Adobe voor het leveren van items. Deze oplossing biedt IP- en domeinbloklijsten en reputatie-indicatoren.
 
 De verstrekte informatie is real-time, wat een pro-actieve bijstand mogelijk maakt.
 
 ## Technisch rapport over de aflevering {#technical-deliverability-monitoring}
 
-Het technische rapport voor de bewaking van de leverantie wordt dagelijks bijgewerkt en is beschikbaar door naar **[!UICONTROL Monitoring]** > **[!UICONTROL Overview]** te navigeren en op de **[!UICONTROL Technical monitoring]** koppeling op het **[!UICONTROL Home]** tabblad Adobe Campagne te klikken. Het bevat een aantal kwaliteitsindicatoren voor de prestaties van uw platform.
+Het technische rapport voor de controle van de leverantie wordt dagelijks bijgewerkt en is beschikbaar door naar **[!UICONTROL Monitoring]** > **[!UICONTROL Overview]** te navigeren en op de **[!UICONTROL Technical monitoring]** koppeling op het **[!UICONTROL Home]** tabblad Adobe Campaign te klikken. Het bevat een aantal kwaliteitsindicatoren voor de prestaties van uw platform.
 
 Deze indicatoren worden dagelijks om 9.00 uur bijgewerkt.
 
 >[!NOTE]
 >
->Bovendien kunt u een dagelijks rapport per e-mail op een bepaald adres ontvangen. Laat ons het gewenste e-mailadres weten via e-mail of via het Adobe Campagne Extranet.
+>Bovendien kunt u een dagelijks rapport per e-mail op een bepaald adres ontvangen. Laat ons het gewenste e-mailadres weten via e-mail of via het Adobe Campaign Extranet.
 
 ![](assets/s_tn_del_monitoring.png)
 
 In het verslag worden de volgende indicatoren gebruikt:
 
-* **[!UICONTROL Reverse DNS]** : De Campagne van Adobe controleert of omgekeerde DNS voor een IP adres wordt gegeven en dat dit correct naar IP wijst.
+* **[!UICONTROL Reverse DNS]** : Adobe Campaign controleert of omgekeerde DNS voor een IP adres wordt gegeven en dat dit correct naar IP wijst.
 
 * **[!UICONTROL SPF]** (Beleidskader voor verzender): Een authentificatiemechanisme dat ISPs en brievenbusleveranciers toelaat om te controleren of de e-mailafzender op het verzendende domein wordt gemachtigd.
 
 * **[!UICONTROL DomainKeys]** : Een service die door Yahoo is ontwikkeld en waarmee de identiteit van een e-mailafzender wordt gecertificeerd.
 
-* **[!UICONTROL IP and RBL domain]** (Lijst voor realtime zwarte gaten): Een lijst van IP adressen en domeinen die door blocklist organisaties voor slechte verzendende reputatie zijn gemarkeerd. Deze lijsten worden bijgehouden door speciale organisaties zoals Spamhaus, Spamcop, SURBL/URIBL, enz. De Campagne van Adobe verwerkt momenteel controles tegen RBLs die een significant leverbaarheidseffect hebben. Deze RBLs wijzen op het verzenden van reputatie, en kan door ISPs worden van verwijzingen voorzien alvorens om uw e-mails te aanvaarden.
+* **[!UICONTROL IP and RBL domain]** (Lijst voor realtime zwarte gaten): Een lijst van IP adressen en domeinen die door de organisaties van de bloklijst voor slechte verzendende reputatie zijn gemarkeerd. Deze lijsten worden bijgehouden door speciale organisaties zoals Spamhaus, Spamcop, SURBL/URIBL, enz. Adobe Campaign verwerkt momenteel controles tegen RBL&#39;s die een significant effect op de leverbaarbaarheid hebben. Deze RBLs wijzen op het verzenden van reputatie, en kan door ISPs worden van verwijzingen voorzien alvorens om uw e-mails te aanvaarden.
 
 * **[!UICONTROL SNDS]** (Smart Network Data Services): Een [Windows Live Hotmail-service](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx)tegen spam. Hotmail is enige ISP die dit type van informatie verstrekt. Benchmarkscores zijn een groen filterresultaat, een klachtenpercentage van minder dan 0,1% en geen spamvallen.
 
