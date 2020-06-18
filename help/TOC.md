@@ -1,19 +1,19 @@
 ---
 audience: end-user
-user-guide-title: Help bij Adobe Campagne Classic
+user-guide-title: Adobe Campaign Classic Help
 index: y
 product: adobe campaign
 sub-product: adobe campagne classic
 translation-type: tm+mt
-source-git-commit: 56ddf3dc1505c0507c67f8b08c9f33b4007f8857
+source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2101'
 ht-degree: 0%
 
 ---
 
 
-# Help bij Adobe Campagne Classic {#using}
+# Adobe Campaign Classic Help {#using}
 
 + [Productdocumentatie](campaign-classic-home.md)
 + [Laatste updates](rn/using/documentation-updates.md)
@@ -28,11 +28,11 @@ ht-degree: 0%
       + [Release 18.4](rn/using/release--18-4.md)
    + [Verouderde functies](rn/using/deprecated-features.md)
 + Aan de slag {#getting-started}
-   + Beginnen met Adobe-campagne {#starting-with-adobe-campaign}
-      + [Informatie over Adobe Campagne Classic](platform/using/about-adobe-campaign-classic.md)
+   + Starten met Adobe Campaign {#starting-with-adobe-campaign}
+      + [Info over Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
       + [Privacy en aanbevelingen](platform/using/privacy-and-recommendations.md)
-      + [Adobe-campagne starten](platform/using/launching-adobe-campaign.md)
-      + [De werkruimte Adobe Campagne](platform/using/adobe-campaign-workspace.md)
+      + [Adobe Campaign starten](platform/using/launching-adobe-campaign.md)
+      + [Adobe Campaign-werkruimte](platform/using/adobe-campaign-workspace.md)
       + Veelgestelde vragen {#faq}
          + [Algemene vragen](platform/using/common-questions.md)
          + [Belangrijkste concepten](platform/using/faq-key-concepts.md)
@@ -107,7 +107,7 @@ ht-degree: 0%
    + Pushmeldingen verzenden {#sending-push-notifications}
       + [Mobiel toepassingskanaal](delivery/using/about-mobile-app-channel.md)
       + [Campagne SDK integreren in de mobiele toepassing](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
-      + [De mobiele toepassing configureren in Adobe Campagne](delivery/using/configuring-the-mobile-application.md)
+      + [De mobiele toepassing configureren in Adobe Campaign](delivery/using/configuring-the-mobile-application.md)
       + [Meldingen maken](delivery/using/creating-notifications.md)
       + [Problemen oplossen](delivery/using/troubleshooting.md)
    + Direct mail verzenden {#sending-direct-mail}
@@ -161,7 +161,7 @@ ht-degree: 0%
       + [Inbox rendering](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Aanbevolen werkwijzen opnieuw inschakelen](delivery/using/re-engagement-best-practices.md)
-      + [Databases met zwarte lijsten](delivery/using/blacklisting-databases.md)
+      + [Bloklijstdatabases](delivery/using/block-list-databases.md)
       + [Problemen oplossen](delivery/using/deliverability-faq.md)
    + Module voor inhoudsbeheer {#content-management}
       + [Over inhoudsbeheer](delivery/using/about-content-management.md)
@@ -214,7 +214,7 @@ ht-degree: 0%
       + [hypothesen maken](campaign/using/creating-hypotheses.md)
       + [Hypothetische tekstspatiëring](campaign/using/hypothesis-tracking.md)
 + Rapportage {#reporting}
-   + Rapporteren in Adobe-campagne {#reporting-in-adobe-campaign}
+   + Rapportering in Adobe Campaign {#reporting-in-adobe-campaign}
       + [Aan de slag met rapportage](reporting/using/about-adobe-campaign-reporting-tools.md)
       + [Aanbevolen werkwijzen voor rapportage](reporting/using/best-practices.md)
    + Toegang tot ingebouwde rapporten {#accessing-built-in-reports}
@@ -294,7 +294,7 @@ ht-degree: 0%
    + Delen van publiek {#audience-sharing}
       + [Soorten publiek delen met [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [Aanvraag indienen bij Adobe](integrations/using/submitting-request-to-adobe.md)
-      + [Integratie van gedeelde soorten publiek configureren in [!DNL Adobe-campagne]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+      + [Integratie van gedeelde soorten publiek configureren in [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [Problemen oplossen](integrations/using/troubleshooting.md)
       + [Soorten publiek importeren en exporteren](integrations/using/importing-and-exporting-audiences.md)
    + Elementen delen {#asset-sharing}
@@ -302,15 +302,15 @@ ht-degree: 0%
       + [Toegang tot [!DNL Assets] configureren](integrations/using/configuring-access-to-assets.md)
       + [Gedeeld element invoegen](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
-      + [Info over [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
+      + [Info [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Integratie configureren](integrations/using/configuring-the-integration.md)
-      + [Een nieuwsbrief [!DNL Experience Manager] maken](integrations/using/creating-an-experience-manager-newsletter.md)
-   + Adobe-doel {#adobe-target}
+      + [Een [!DNL Experience Manager]-nieuwsbrief maken](integrations/using/creating-an-experience-manager-newsletter.md)
+   + Adobe Target {#adobe-target}
       + [Integreren met [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
-      + [Integratie configureren met [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
+      + [De integratie configureren met [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Een dynamische afbeelding invoegen](integrations/using/inserting-a-dynamic-image.md)
-   + Verbinding maken via een Adobe-id {#connecting-via-an-adobe-id}
-      + [Info over [!DNL Adobe-id]](integrations/using/about-adobe-id.md)
+   + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
+      + [Info [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
       + [[!DNL IMS] configureren](integrations/using/configuring-ims.md)
       + [[!DNL IMS] implementeren](integrations/using/implementing-ims.md)
       + [IMS-problemen oplossen](integrations/using/ims-troubleshooting.md)
@@ -439,7 +439,7 @@ ht-degree: 0%
       + [Technische workflows](workflow/using/about-technical-workflows.md)
       + [Leveringen](workflow/using/deliveries.md)
       + [Campagne](workflow/using/campaign.md)
-      + [Webanalyse](workflow/using/web-analytics.md)
+      + [Web Analytics](workflow/using/web-analytics.md)
       + [Distributed Marketing](workflow/using/distributed-marketing.md)
       + [Leverbaarheidscontrole](workflow/using/email-deliverability.md)
       + [Inbox rendering](workflow/using/inbox-rendering.md)
@@ -555,7 +555,7 @@ ht-degree: 0%
    + Bijlagen {#annexes}
       + [Voorbeelden van Facebook-apps](social/using/examples-of-facebook-apps.md)
       + [Tekstspatiëring](social/using/tracking.md)
-+ Campagne Classic installeren {#installing-campaign-classic}
++ Campaign Classic installeren {#installing-campaign-classic}
    + Architectuur- en hostingmodellen {#architecture-and-hosting-models}
       + [Voor lezen](installation/using/before-reading.md)
       + [Algemene architectuur](installation/using/general-architecture.md)
@@ -594,7 +594,7 @@ ht-degree: 0%
       + [De database maken en configureren](installation/using/creating-and-configuring-the-database.md)
       + [Configuratie van campagneserver](installation/using/campaign-server-configuration.md)
       + [Een instantie implementeren](installation/using/deploying-an-instance.md)
-      + [Campagne Classic-standaardpakketten installeren](installation/using/installing-campaign-standard-packages.md)
+      + [Campaign Classic-standaardpakketten installeren](installation/using/installing-campaign-standard-packages.md)
    + Aanvullende configuraties {#additional-configurations}
       + [Campagneserver configureren](installation/using/configuring-campaign-server.md)
       + [Verbinding maken via LDAP](installation/using/connecting-through-ldap.md)
@@ -609,9 +609,9 @@ ht-degree: 0%
       + [De netwerkeindpunten van de campagne](installation/using/campaign-network-endpoints.md)
       + [Opdrachtlijnen](installation/using/command-lines.md)
       + [Nieuwe instanties maken](installation/using/creating-new-instances.md)
-      + [Lijst met klassieke opties voor campagne](installation/using/configuring-campaign-options.md)
+      + [Lijst met Campaign Classic-opties](installation/using/configuring-campaign-options.md)
       + [Campagne verwijderen](installation/using/uninstalling-campaign.md)
-+ Classic van controlecampagne {#monitoring-campaign-classic}
++ Campaign Classic controleren {#monitoring-campaign-classic}
    + Inleiding {#introduction}
       + [Voorwoord](production/using/foreword.md)
       + [Algemene architectuur](production/using/general-architecture.md)
@@ -629,7 +629,7 @@ ht-degree: 0%
       + [Herstel](production/using/restoration.md)
       + [Omgevingen dupliceren](production/using/duplicating-environments.md)
       + [Workflow voor opschonen van databases](production/using/database-cleanup-workflow.md)
-   + Adobe-campagne bijwerken {#updating-adobe-campaign}
+   + Adobe Campaign bijwerken {#updating-adobe-campaign}
       + [Inleiding](production/using/introduction.md)
       + [Bijwerken](production/using/upgrading.md)
       + [Overschakelen naar Unicode](production/using/switching-to-unicode.md)
@@ -657,7 +657,7 @@ ht-degree: 0%
       + [Console-update](production/using/console-update.md)
       + [Wachtwoord verloren](production/using/lost-password.md)
       + [JSP-gedrag](production/using/jsp-behavior.md)
-+ Campagne Classic configureren {#configuring-campaign-classic}
++ Campaign Classic configureren {#configuring-campaign-classic}
    + Gegevensmodel {#data-model}
       + [Over het gegevensmodel](configuration/using/about-data-model.md)
       + [Beschrijving van gegevensmodel](configuration/using/data-model-description.md)
@@ -724,10 +724,10 @@ ht-degree: 0%
       + [Voordat u de migratie start](migration/using/before-starting-migration.md)
       + [De migratie testen](migration/using/testing-the-migration.md)
       + [Uw platform configureren](migration/using/configuring-your-platform.md)
-   + Migreren naar Adobe-campagne 7 {#migrating-to-adobe-campaign-7}
-      + [Vereisten voor migratie naar Adobe-campagne 7](migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)
-      + [Migreren in Windows voor Adobe-campagne 7](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
-      + [Migreren in Linux voor Adobe Campagne v7](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
+   + Migreren naar Adobe Campaign 7 {#migrating-to-adobe-campaign-7}
+      + [Vereisten voor migratie naar Adobe Campaign 7](migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)
+      + [Migreren in Windows voor Adobe Campaign 7](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
+      + [Migreren in Linux voor Adobe Campaign v7](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
    + Configuratie {#configuration}
       + [Algemene configuraties](migration/using/general-configurations.md)
       + [Specifieke configuraties in v5.11](migration/using/specific-configurations-in-v5-11.md)
