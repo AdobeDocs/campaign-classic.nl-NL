@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1909cc8640a32eb709187dab084778f03ef39118
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
-source-wordcount: '3589'
+source-wordcount: '3608'
 ht-degree: 0%
 
 ---
@@ -31,16 +31,16 @@ In de onderstaande sectie vindt u informatie over configuraties aan de serverzij
 >
 >Deze configuraties moeten alleen door beheerders worden uitgevoerd en voor **hostmodellen op locatie** .
 >
->Voor **gehoste** implementaties kunnen instellingen aan de serverzijde alleen door Adobe worden geconfigureerd. Sommige instellingen kunnen echter worden ingesteld in het Configuratiescherm (bijvoorbeeld voor IP-wittekst of URL-machtigingen).
+>Voor **gehoste** implementaties kunnen instellingen aan de serverzijde alleen door Adobe worden geconfigureerd. Sommige instellingen kunnen echter worden ingesteld in het Configuratiescherm (IP staat bijvoorbeeld lijstbeheer of URL-machtigingen toe).
 
 Raadpleeg de volgende secties voor meer informatie:
 
 * [Documentatie van het regelpaneel](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
 * [Hostmodellen](../../installation/using/hosting-models.md)
-* [Campagne Classic On-premise &amp; Hosted Capaciteitmatrix](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
+* [Campaign Classic On-premise &amp; Hosted Capaciteitmatrix](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
 * [Configuratiestappen voor hybride en gehoste modellen](https://docs.campaign.adobe.com/doc/AC/en/INS_Hybrid_and_Hosted_models_About_hybrid_and_hosted_models.html)
 
-Campagne Classic-configuratiebestanden worden opgeslagen in de map **conf** in de installatiemap van Adobe Campagne. De configuratie wordt verspreid over twee bestanden:
+Campaign Classic-configuratiebestanden worden opgeslagen in de map **conf** van de installatiemap van Adobe Campaign. De configuratie wordt verspreid over twee bestanden:
 
 * **serverConf.xml**: algemene configuratie voor alle instanties. In dit bestand worden de technische parameters van de Adobe Campaign-server gecombineerd: deze worden door alle instanties gedeeld . Hieronder wordt een beschrijving van een aantal van deze parameters gegeven. De verschillende knooppunten en parameters en vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 * **config-`<instance>`.xml** (waarbij **instantie** de naam van de instantie is): specifieke configuratie van de instantie. Als u uw server onder verschillende exemplaren deelt, gelieve de parameters specifiek voor elk geval in hun relevant dossier in te gaan.
@@ -49,7 +49,7 @@ Campagne Classic-configuratiebestanden worden opgeslagen in de map **conf** in d
 
 ### Beveiligingszones {#about-security-zones}
 
-Elke exploitant moet met een streek worden verbonden om aan een geval te login en exploitant IP moet in de adressen of adresreeksen worden omvat die in de veiligheidsstreek worden bepaald. De configuratie van de beveiligingszone wordt uitgevoerd in het configuratiebestand van de Adobe Campaign-server.
+Elke exploitant moet met een streek worden verbonden om aan een geval te login en exploitant IP moet in de adressen of adresreeksen worden omvat die in de veiligheidsstreek worden bepaald. Configuratie van de beveiligingszone wordt uitgevoerd in het configuratiebestand van de Adobe Campaign-server.
 
 De exploitanten zijn verbonden met een veiligheidsstreek van zijn profiel in de console ( **[!UICONTROL Administration > Access management > Operators]** knoop). Leer hoe u zones kunt koppelen aan Campagneontwikkelaars in [deze sectie](#linking-a-security-zone-to-an-operator).
 
@@ -81,7 +81,7 @@ Het uit-van-de-doos **serverConf.xml** - dossier omvat drie streken: **public, V
 
 >[!NOTE]
 >
->**De uit-van-de-doos configuratie is veilig**. Voordat u echter migreert van een eerdere versie van Adobe Campaign, kan het nodig zijn de beveiliging tijdelijk te verlagen om de nieuwe regels te migreren en goed te keuren.
+>**De uit-van-de-doos configuratie is veilig**. Het kan echter nodig zijn de beveiliging tijdelijk te verlagen om de nieuwe regels te migreren en goed te keuren, voordat een eerdere versie van Adobe Campaign naar een andere versie gaat.
 
 Voorbeeld van het definiëren van een zone in het bestand **serverConf.xml** :
 
@@ -170,19 +170,19 @@ Wanneer naar een proxy wordt verwezen en een verbinding via deze proxy wordt ing
 
 Er kunnen verschillende gevallen optreden:
 
-* Een subnetwerk wordt direct van verwijzingen voorzien in de veiligheidsstreek en geen volmacht wordt gevormd: gebruikers van het subnetwerk kunnen rechtstreeks verbinding maken met de Adobe Campagneserver.
+* Een subnetwerk wordt direct van verwijzingen voorzien in de veiligheidsstreek en geen volmacht wordt gevormd: gebruikers van het subnetwerk kunnen rechtstreeks verbinding maken met de Adobe Campaign-server.
 
    ![](assets/8101_proxy1.png)
 
-* Een volmacht wordt gespecificeerd voor een subnetwerk in de veiligheidsstreek: gebruikers van dit subnetwerk hebben via deze proxy toegang tot de Adobe Campagneserver.
+* Een volmacht wordt gespecificeerd voor een subnetwerk in de veiligheidsstreek: gebruikers van dit subnetwerk hebben via deze proxy toegang tot de Adobe Campaign-server.
 
    ![](assets/8101_proxy2.png)
 
-* Een volmacht is inbegrepen in een subnetwerk van de veiligheidszone: gebruikers die via deze proxy toegang hebben, ongeacht de oorsprong, hebben toegang tot de Adobe Campagneserver.
+* Een volmacht is inbegrepen in een subnetwerk van de veiligheidszone: gebruikers die toegang hebben via deze proxy, ongeacht de oorsprong ervan, hebben toegang tot de Adobe Campaign-server.
 
    ![](assets/8101_proxy3.png)
 
-De IP adressen van volmachten die waarschijnlijk tot de server van de Campagne van Adobe zullen toegang hebben moeten in zowel **`<subnetwork>`** betrokken als eerste niveau subnetwork **`<subnetwork name="all"/>`**. zijn ingegaan. Bijvoorbeeld, hier voor een volmacht de waarvan IP adres 10.131.146.102 is:
+De IP adressen van volmachten die waarschijnlijk tot de server van Adobe Campaign zullen toegang hebben moeten in zowel **`<subnetwork>`** betrokken als eerste niveau subnetwork zijn ingegaan **`<subnetwork name="all"/>`**. Bijvoorbeeld, hier voor een volmacht de waarvan IP adres 10.131.146.102 is:
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" 
@@ -245,9 +245,9 @@ Zodra de streken worden bepaald en de **[!UICONTROL Security zone]** opsomming w
 
 ### Standaardpoort voor Tomcat {#default-port-for-tomcat}
 
-Wanneer de 8080 luisterpoort van de Tomcat-server al bezig is met een andere toepassing die vereist is voor uw configuratie, moet u de 8080-poort vervangen door een gratis poort (bijvoorbeeld 8090). Als u dit wilt wijzigen, bewerkt u het bestand **server.xml** dat is opgeslagen in de map **/tomcat-7/conf** van de installatiemap van Adobe Campagne.
+Wanneer de 8080 luisterpoort van de Tomcat-server al bezig is met een andere toepassing die vereist is voor uw configuratie, moet u de 8080-poort vervangen door een gratis poort (bijvoorbeeld 8090). Als u dit wilt wijzigen, bewerkt u het bestand **server.xml** dat is opgeslagen in de map **/tomcat-7/conf** van de installatiemap van Adobe Campaign.
 
-Pas dan de haven van de JSP relaispagina&#39;s aan. Hiervoor wijzigt u het bestand **serverConf.xml** dat is opgeslagen in de map **/conf** van de installatiemap van Adobe Campagne. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+Pas dan de haven van de JSP relaispagina&#39;s aan. Hiervoor wijzigt u het bestand **serverConf.xml** dat is opgeslagen in de map **/conf** van de installatiemap van Adobe Campaign. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
 ```
 <serverConf>
@@ -280,7 +280,7 @@ Afhankelijk van uw behoeften en instellingen kunt u ook de volgende configuratie
 
 De module MTA doet dienst als inheemse agent van de postoverdracht voor uitzending SMTP (haven 25).
 
-Het is echter mogelijk deze te vervangen door een relaisserver als dit voor uw beveiligingsbeleid is vereist. In dat geval is de wereldwijde doorvoer het relais één (op voorwaarde dat de doorvoer van de relaisserver lager is dan die van de Adobe-campagne).
+Het is echter mogelijk deze te vervangen door een relaisserver als dit voor uw beveiligingsbeleid is vereist. In dat geval, zal de globale productie relais zijn één (op voorwaarde dat de productie van de relaisserver aan Adobe Campaign minder is).
 
 In dit geval, worden deze parameters geplaatst door de server SMTP in de **`<relay>`** sectie te vormen. U moet het IP adres (of de gastheer) van de server specificeren SMTP die wordt gebruikt om post en zijn bijbehorende haven (25 door gebrek) over te brengen.
 
@@ -343,7 +343,7 @@ Hiervoor voert u de volgende stappen uit:
 
 ## URL-machtigingen {#url-permissions}
 
-De standaardlijst met URL&#39;s die door JavaScript-codes kunnen worden aangeroepen (workflows, enz.) door uw Classic-instanties van de Campagne is beperkt. Dit zijn URL&#39;s waarmee uw instanties correct kunnen werken.
+De standaardlijst met URL&#39;s die door JavaScript-codes kunnen worden aangeroepen (workflows, enz.) door uw Campaign Classic-instanties beperkt zijn. Dit zijn URL&#39;s waarmee uw instanties correct kunnen werken.
 
 Instanties mogen standaard geen verbinding maken met externe URL&#39;s. Het is echter mogelijk om sommige externe URL&#39;s toe te voegen aan de lijst met geoorloofde URL&#39;s, zodat uw instantie hiermee verbinding kan maken. Hierdoor kunt u uw Campagne-instanties verbinden met externe systemen, zoals bijvoorbeeld SFTP-servers of websites, om de overdracht van bestanden en/of gegevens mogelijk te maken.
 
@@ -358,9 +358,9 @@ Met **Hybride** en **Op-gebouw** het ontvangen modellen, moet de beheerder een n
 
 Er zijn drie modi voor verbindingsbeveiliging:
 
-* **Blokkeren**: alle URL&#39;s die niet bij de whitelist horen, worden geblokkeerd, met een foutbericht. Dit is de standaardwijze na een postupgrade.
-* **Toestemming**: alle URL&#39;s die niet bij de whitelist horen, zijn toegestaan.
-* **Waarschuwing**: alle niet-witte URL&#39;s zijn toegestaan, maar de JS-interpreter geeft een waarschuwing weer, zodat de beheerder deze kan verzamelen. In deze modus worden JST-310027-waarschuwingsberichten toegevoegd.
+* **Blokkeren**: alle URL&#39;s die niet tot de lijst met toegestane adressen behoren, worden geblokkeerd, met een foutbericht. Dit is de standaardwijze na een postupgrade.
+* **Toestemming**: alle URL&#39;s die niet tot de lijst met toegestane adressen behoren, zijn toegestaan.
+* **Waarschuwing**: alle URL&#39;s die niet tot de lijst met toegestane adressen behoren, zijn toegestaan, maar de JS-interpreter geeft een waarschuwing weer, zodat de beheerder deze kan verzamelen. In deze modus worden JST-310027-waarschuwingsberichten toegevoegd.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -372,9 +372,9 @@ Er zijn drie modi voor verbindingsbeveiliging:
 
 >[!IMPORTANT]
 >
->Standaard gebruikt de client van nieuwe klanten de **blokkeermodus**. Als ze een nieuwe URL moeten toestaan, moeten ze contact opnemen met hun beheerder om de URL te whitelist.
+>Standaard gebruikt de client van nieuwe klanten de **blokkeermodus**. Als zij een nieuwe URL moeten toestaan, zouden zij hun beheerder moeten contacteren om het aan toe te voegen staan lijst.
 >
->Bestaande klanten die uit een migratie komen, kunnen de **waarschuwingsmodus** een tijdje gebruiken. Ondertussen moeten zij het uitgaande verkeer analyseren alvorens URLs toe te laten. Zodra de lijst met geoorloofde URL&#39;s is gedefinieerd, moeten ze contact opnemen met de beheerder om de URL&#39;s te whiteliseren en de **blokkeermodus** te activeren.
+>Bestaande klanten die uit een migratie komen, kunnen de **waarschuwingsmodus** een tijdje gebruiken. Ondertussen moeten zij het uitgaande verkeer analyseren alvorens URLs toe te laten. Zodra de lijst met geautoriseerde URL&#39;s is gedefinieerd, moeten ze contact opnemen met de beheerder om de URL&#39;s toe te voegen aan de lijst met geautoriseerde URL&#39;s en de **blokkeermodus** te activeren.
 
 ## Dynamische paginabeveiliging en -bedekkingen {#dynamic-page-security-and-relays}
 
@@ -434,7 +434,7 @@ In dit voorbeeld valt de **`<IP_addresses>`** waarde samen met de lijst met IP-a
 >
 >De volgende configuratie wordt slechts vereist voor op-gebouw installaties.
 
-Vanuit build 8780 kunnen technische beheerders de lijst met geoorloofde externe opdrachten beperken die in Adobe Campagne kunnen worden gebruikt.
+Van bouwstijl 8780, kunnen de technische beheerders de lijst van geoorloofde externe bevelen beperken die in Adobe Campaign kunnen worden gebruikt.
 
 Hiervoor moet u een tekstbestand maken met de lijst met opdrachten die u niet wilt gebruiken, bijvoorbeeld:
 
@@ -455,23 +455,23 @@ sh
 >
 >Deze lijst is niet limitatief.
 
-In het **exec** knooppunt van het serverconfiguratiebestand moet u verwijzen naar het eerder gemaakte bestand in het kenmerk **blacklistFile** .
+In de **exec** knoop van het dossier van de serverconfiguratie, moet u het eerder gecreeerd dossier in het **blocklistFile** attribuut van verwijzingen voorzien.
 
 **Alleen** voor Linux: in het dossier van de serverconfiguratie, adviseren wij dat u een gebruiker specificeert die aan het uitvoeren van externe bevelen wordt gewijd om uw veiligheidsconfiguratie te verbeteren. Deze gebruiker wordt geplaatst in de **exec** knoop van het configuratiedossier. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
 >[!NOTE]
 >
->Als er geen gebruiker is opgegeven, worden alle opdrachten uitgevoerd in de gebruikerscontext van de Adobe Campagne-instantie. De gebruiker moet anders zijn dan de gebruiker die de Campagne van Adobe in werking stelt.
+>Als er geen gebruiker is opgegeven, worden alle opdrachten uitgevoerd in de gebruikerscontext van de Adobe Campaign-instantie. De gebruiker moet anders zijn dan de gebruiker die Adobe Campaign uitvoert.
 
 Bijvoorbeeld:
 
 ```
 <serverConf>
- <exec user="theUnixUser" blacklistFile="/pathtothefile/blacklist"/>
+ <exec user="theUnixUser" blocklistFile="/pathtothefile/blocklist"/>
 </serverConf>
 ```
 
-Deze gebruiker moet worden toegevoegd aan de vervolgkeuzelijst van de Adobe Campagneoperator &#39;neolane&#39;.
+Deze gebruiker moet worden toegevoegd aan de sudoerlijst van de &#39;neolane&#39; Adobe Campaign-operator.
 
 >[!IMPORTANT]
 >
@@ -518,7 +518,7 @@ Voer de volgende opdracht uit om de hostnaam van de computer op te halen: **host
 
 Overheidsmiddelen worden gepresenteerd in het [beheer van openbare middelen](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
-Ze worden opgeslagen in de map **/var/res/instance** in de installatiemap van Adobe Campagne.
+Ze worden opgeslagen in de map **/var/res/instance** in de installatiemap van Adobe Campaign.
 
 De overeenkomende URL is: **http://server/res/instance** , waarbij de **instantie** de naam van de instantie tracking is.
 
@@ -539,11 +539,11 @@ In dit geval, zou nieuwe URL voor de openbare middelen die in het hogere gedeelt
 
 ## Workflows en affiniteiten met hoge beschikbaarheid {#high-availability-workflows-and-affinities}
 
-U kunt verschillende workflowservers (wfserver) configureren en deze op twee of meer computers distribueren. Als u dit type architectuur kiest, configureert u de verbindingsmodus van de taakverdelingsmechanisme op basis van de toegang tot de Adobe-campagne.
+U kunt verschillende workflowservers (wfserver) configureren en deze op twee of meer computers distribueren. Als u dit type architectuur kiest, configureert u de verbindingsmodus van de taakverdelingsmechanisme op basis van de Adobe Campaign-toegang.
 
 Voor toegang van het Web, selecteer de wijze van het **ladingsverdelingsmechanisme** om verbindingstijden te beperken.
 
-Als u deze functie opent via de Adobe Campaign-console, kiest u de **hash** - of **sticky ip** -modus. Zo kunt u de verbinding tussen de rijke client en de server onderhouden en voorkomen dat een gebruikerssessie wordt onderbroken tijdens bijvoorbeeld het importeren of exporteren.
+Als de toegang via de console van Adobe Campaign, kies **knoeiboel** of **kleverige ip** wijze. Zo kunt u de verbinding tussen de rijke client en de server onderhouden en voorkomen dat een gebruikerssessie wordt onderbroken tijdens bijvoorbeeld het importeren of exporteren.
 
 U kunt ervoor kiezen de uitvoering van een workflow of een workflowactiviteit op een bepaalde computer af te dwingen. Hiervoor moet u een of meer affiniteiten definiëren voor de betreffende workflow of activiteit.
 
@@ -580,7 +580,7 @@ U kunt ervoor kiezen de uitvoering van een workflow of een workflowactiviteit op
 
 ## Automatisch proces opnieuw opstarten {#automatic-process-restart}
 
-Standaard worden de verschillende Adobe Campagne-processen elke dag om zes uur (servertijd) automatisch opnieuw gestart.
+Standaard worden de verschillende Adobe Campaign-processen elke dag om zes uur (servertijd) automatisch opnieuw gestart.
 
 U kunt deze configuratie echter wijzigen.
 
@@ -594,7 +594,7 @@ Elk in dit bestand geconfigureerd proces heeft een **processRestartTime** -kenme
 
 ## Uploadbare bestanden beperken {#limiting-uploadable-files}
 
-Met een nieuw kenmerk **uploadWhiteList** kunt u de bestandstypen beperken die beschikbaar zijn voor uploaden naar de Adobe Campagneserver.
+Met een nieuw kenmerk **uploadAllowList** kunt u de bestandstypen beperken die beschikbaar zijn voor uploaden op de Adobe Campaign-server.
 
 Dit kenmerk is beschikbaar in het element **dataStore** van het bestand **serverConf.xml** . Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
@@ -602,7 +602,7 @@ De standaardwaarde van dit kenmerk is **.+** en u kunt elk bestandstype uploaden
 
 Als u de mogelijke indelingen wilt beperken, moet u de kenmerkwaarde vervangen door een geldige reguliere Java-expressie. U kunt verschillende waarden invoeren door deze met een komma te scheiden.
 
-Bijvoorbeeld: **uploadWhiteList=&quot;.*.png,.Met *.jpg&quot;** kunt u PNG- en JPG-indelingen uploaden naar de server. Er worden geen andere indelingen geaccepteerd.
+Bijvoorbeeld: **uploadAllowList=&quot;.*.png,.Met *.jpg&quot;** kunt u PNG- en JPG-indelingen uploaden naar de server. Er worden geen andere indelingen geaccepteerd.
 
 >[!IMPORTANT]
 >
