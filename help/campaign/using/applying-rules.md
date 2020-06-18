@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 8c1f284be77447a88748ce97a3524b7035bb5bc0
+workflow-type: tm+mt
+source-wordcount: '980'
+ht-degree: 0%
 
 ---
 
@@ -84,7 +87,7 @@ In de standaardbewerkingsmodus worden de regels in de volgende volgorde toegepas
 1. Controlevoorschriften, als zij bij het begin van het richten worden toegepast.
 1. Filterregels:
 
-   * Native toepassingsregels voor adreskwalificatie: gedefinieerd adres / niet-geverifieerd adres / adres / adres op de zwarte lijst / kwaliteit van het quarantaineadres / adres.
+   * Native toepassingsregels voor adreskwalificatie: gedefinieerd adres / niet-geverifieerd adres / adres in de bloklijst / quarantineadres / adreskwaliteit.
    * Filterregels die door de gebruiker zijn gedefinieerd.
    * Deduplicatieregel op het adres of de id (indien nodig toegepast).
 
@@ -139,7 +142,7 @@ Als optie, kunt u het **[!UICONTROL Managing affinities with IP addresses]** geb
 >[!NOTE]
 >
 >Affinity management is niet van toepassing op **[!UICONTROL Filtering]** typologieën.\
->Affinities worden gedefinieerd in het configuratiebestand van de instantie op de Adobe Campagneserver. Zie [deze sectie](../../installation/using/about-initial-configuration.md)voor meer informatie.
+>Affinities worden gedefinieerd in het configuratiebestand van de instantie, op de Adobe Campaign-server. For more on this, refer to [this section](../../installation/using/about-initial-configuration.md).
 
 ### Campagne optimaliseren en Distribueren {#campaign-optimization-and-distributed-marketing}
 
