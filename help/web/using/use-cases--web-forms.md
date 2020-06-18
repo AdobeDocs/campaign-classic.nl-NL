@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 9188a68ca2ffcd9cf9e82b475aa2a0dd5807561b
+workflow-type: tm+mt
+source-wordcount: '972'
+ht-degree: 0%
 
 ---
 
@@ -51,13 +54,13 @@ De berichten van de bevestiging worden verzonden via een specifiek leveringsmalp
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Aangezien de ontvangers van deze levering hun goedkeuring niet hebben bevestigd, worden ze nog steeds op de zwarte lijst gezet in de database. Om deze communicatie te ontvangen, moet u leveringen op basis van deze sjabloon toestaan aan ontvangers op de zwarte lijst.
+1. Aangezien de ontvangers van deze levering hun goedkeuring niet hebben bevestigd, staan zij nog op de lijst van het gegevensbestandblok. Voor hen om deze mededeling te ontvangen, moet u leveringen toelaten die op dit malplaatje worden gebaseerd aan doelontvangers die op de bloklijst zijn.
 
    Klik hiertoe op het **[!UICONTROL Exclusions]** tabblad.
 
-1. Klik op de **[!UICONTROL Edit...]** koppeling en schakel de **[!UICONTROL Exclude recipients who no longer want to be contacted (blacklist)]** optie uit.
+1. Klik op de **[!UICONTROL Edit...]** koppeling en schakel de **[!UICONTROL Exclude recipients who no longer want to be contacted (blocklist)]** optie uit.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)
+   <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
    >[!CAUTION]
    >
@@ -109,10 +112,10 @@ Hiervoor voert u de volgende stappen uit:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   De eerste **[!UICONTROL Script]** activiteit zal ontvangers op een zwarte lijst zetten tot zij hun abonnement op de nieuwsbrief bevestigden. De inhoud ervan moet als volgt zijn:
+   De eerste **[!UICONTROL Script]** activiteit zal ontvangers aan de bloklijst toevoegen tot zij hun abonnement op nieuwsbrief bevestigden. De inhoud ervan moet als volgt zijn:
 
    ```
-   ctx.recipient.@blackList=1
+   ctx.recipient.@blockList=1
    ```
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
@@ -120,7 +123,7 @@ Hiervoor voert u de volgende stappen uit:
    De tweede **[!UICONTROL Script]** activiteit staat leveringen toe om aan de gebruikers te worden verzonden en hen aan de nieuwsbrief in te schrijven. Met de laatste twee regels van het script kunt u de ontvangers van de tijdelijke map overbrengen naar een andere map en worden ze afgestemd op bestaande profielen zodra ze het abonnement hebben bevestigd.
 
    ```
-   ctx.recipient.@blackList=0
+   ctx.recipient.@blockList=0
    nms.subscription.Subscribe("INTERNAL_NAME_OF_THE_NEWSLETTER", ctx.recipient, false)
    ctx.recipient.folder = <folder name="nmsRootRecipient"/>
    nms.subscription.Unsubscribe("TEMP", ctx.recipient)
@@ -172,7 +175,7 @@ Het abonnement op de nieuwsbrief omvat de volgende stappen:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   De gebruiker wordt toegevoegd aan de Adobe Campagne-database in de **[!UICONTROL Temp]** map en zijn profiel wordt op de zwarte lijst weergegeven totdat hij of zij zijn abonnement met de e-mail bevestigt.
+   De gebruiker wordt toegevoegd aan de Adobe Campaign-database in de **[!UICONTROL Temp]** map en zijn profiel wordt toegevoegd aan de bloklijst totdat hij of zij zijn of haar abonnement met de e-mail bevestigt.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -186,7 +189,7 @@ Het abonnement op de nieuwsbrief omvat de volgende stappen:
 
    In Adobe Campaign wordt het gebruikersprofiel bijgewerkt:
 
-   * zij zijn niet langer op de zwarte lijst geplaatst;
+   * zij niet langer op de bloklijst staan;
    * zij zijn geabonneerd op de informatiedienst .
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
