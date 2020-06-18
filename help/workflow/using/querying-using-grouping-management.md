@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: f99e3a4f69cb2b0122f2f6957d419d6b95ad54b1
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 1%
 
 ---
 
@@ -48,24 +51,24 @@ U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
    ![](assets/query_editor_nveau_29.png)
 
-1. Sorteer de e-maildomeinen in aflopende volgorde in het **[!UICONTROL Sorting]** venster. Controleer **[!UICONTROL Yes]** de **[!UICONTROL Descending sort]** kolom om dit te doen. Klik **[!UICONTROL Next]**.
+1. Sorteer de e-maildomeinen in aflopende volgorde in het **[!UICONTROL Sorting]** venster. Controleer **[!UICONTROL Yes]** de **[!UICONTROL Descending sort]** kolom om dit te doen. Klik op **[!UICONTROL Next]**.
 
    ![](assets/query_editor_nveau_70.png)
 
-1. Selecteer **[!UICONTROL Data filtering]** in **[!UICONTROL Filtering conditions]**. Ga naar het **[!UICONTROL Target elements]** venster en klik **[!UICONTROL Next]**.
+1. In **[!UICONTROL Data filtering]** selecteert u **[!UICONTROL Filtering conditions]**. Ga naar het **[!UICONTROL Target elements]** venster en klik **[!UICONTROL Next]**.
 1. Selecteer in het **[!UICONTROL Data grouping]** venster de **[!UICONTROL Email domain]** knop door te klikken **[!UICONTROL Add]**.
 
    Dit venster voor gegevensgroepering wordt alleen weergegeven als het vak **[!UICONTROL Handle groupings (GROUP BY + HAVING]**) is ingeschakeld.
 
-   ![](assets/query_editor_blacklist_04.png)
+   ![](assets/query_editor_blocklist_04.png)
 
 1. Geef in het **[!UICONTROL Grouping condition]** venster een aantal primaire sleutels op dat groter is dan 30, omdat we alleen willen dat e-maildomeinen die meer dan 30 keer zijn bedoeld, als resultaten worden geretourneerd.
 
    Dit venster wordt weergegeven wanneer het **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** selectievakje is ingeschakeld: Hier wordt het groeperingsresultaat gefilterd (HAVING).
 
-   ![](assets/query_editor_blacklist_05.png)
+   ![](assets/query_editor_blocklist_05.png)
 
 1. Klik in het **[!UICONTROL Data formatting]** venster op **[!UICONTROL Next]**: hier is geen opmaak nodig .
 1. Klik in het venster met de gegevensvoorvertoning op **[!UICONTROL Launch data preview]**: hier worden drie verschillende e-maildomeinen geretourneerd die meer dan 30 keer als doel hebben.
 
-   ![](assets/query_editor_blacklist_06.png)
+   ![](assets/query_editor_blocklist_06.png)
