@@ -1,5 +1,5 @@
 ---
-title: Updates van Adobe Campagne Classic-documentatie
+title: Updates van Adobe Campaign Classic-documentatie
 description: Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates voor elke release van Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39b8f4af256c23744a2b6e5978964e4b3207aafb
+source-git-commit: c1b0980d540992538f7961afd7c218888dee4a39
 workflow-type: tm+mt
-source-wordcount: '6666'
+source-wordcount: '6708'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,11 @@ ht-degree: 0%
 
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates per maand en de campagneversie.
 
-U kunt ook de [Adobe Campagne Classic Release Notes](../../rn/using/latest-release.md) raadplegen voor meer updates.
+U kunt ook de [Adobe Campaign Classic Release Notes](../../rn/using/latest-release.md) raadplegen voor meer updates.
+
+## juni 2020 {#june-2020}
+
+Zowel de termen &quot;whitelist&quot; als &quot;blacklist&quot; zijn uit de documentatie van Adobe Campaign verwijderd. Sommige van deze termen bestaan mogelijk nog steeds in de gebruikersinterface van het product, optienamen en interne code, maar worden in komende campagnereleases vervangen door &quot;blocklist&quot; en &quot;allowlist&quot;.
 
 ## 20.2 - 08/06/2020{#release-20-2}
 
@@ -41,7 +45,7 @@ Privacy-wetten voor Thailand en Brazilië - [Meer informatie](https://helpx.adob
 
 De nieuwe optie die het toelaten om een transactiemalplaatje van het berichtbericht unpublish is gedocumenteerd in[deze sectie](../../message-center/using/template-unpublication.md).
 
-De nieuwe opties waarmee u beperkingen kunt instellen voor het verzenden van e-mailberichten met afbeeldingen die zijn gedownload van een gepersonaliseerde URL en bijlagen, zijn toegevoegd aan de lijst met opties voor Klassieke campagne. [Meer informatie](../../installation/using/configuring-campaign-options.md#delivery)
+De nieuwe opties waarmee u beperkingen kunt instellen voor het verzenden van e-mailberichten met afbeeldingen die zijn gedownload van een gepersonaliseerde URL en bijlagen, zijn toegevoegd aan de lijst met Campaign Classic-opties. [Meer informatie](../../installation/using/configuring-campaign-options.md#delivery)
 
 De nieuwe **Voorbereiden de leveringsdelen in de gegevensbestandoptie** wordt gedocumenteerd in [deze sectie](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis).
 
@@ -80,7 +84,7 @@ De veelgestelde vragen zijn bijgewerkt met tips over het wissen van zachte en ha
 
 De beste praktijken van het gegevensmodel zijn verbeterd met extra informatie over indexen. [Meer informatie](../../configuration/using/data-model-best-practices.md#indexes)
 
-De sectie die het ingebouwde gegevensmodel van de Campagne van Adobe beschrijft is bijgewerkt met meer details op elke lijst. [Meer informatie](../../configuration/using/data-model-description.md)
+De sectie die het ingebouwde gegevensmodel van Adobe Campaign beschrijft, is bijgewerkt met meer details over elke tabel. [Meer informatie](../../configuration/using/data-model-description.md)
 
 Gebruiksscenario&#39;s voor workflowgebruik zijn bijgewerkt en opnieuw ingedeeld in thematische onderdelen. [Meer informatie](../../workflow/using/using-the-local-approval-activity.md)
 
@@ -92,19 +96,19 @@ Het Adobe Campaign Enhanced MTA-artikel is bijgewerkt. Het is nu alleen van toep
 
 De beste praktijken van het gegevensmodel zijn bijgewerkt met nieuwe secties met inbegrip van [Reeksen](../../configuration/using/data-model-best-practices.md#sequences), [Prestaties](../../configuration/using/data-model-best-practices.md#performance) en [Grote lijsten](../../configuration/using/data-model-best-practices.md#large-tables), onder andere. [Meer informatie](../../configuration/using/data-model-best-practices.md)
 
-Er is nu een nieuw gedeelte beschikbaar waarin het ingebouwde gegevensmodel en de interactie tussen tabellen van Adobe Campaign worden beschreven. [Meer informatie](../../configuration/using/data-model-description.md)
+Er is nu een nieuw gedeelte beschikbaar waarin het ingebouwde gegevensmodel van Adobe Campaign en de interactie tussen tabellen worden beschreven. [Meer informatie](../../configuration/using/data-model-description.md)
 
 Er zijn extra belangrijke koppelingen toegevoegd aan de documentatiehomepage. [Meer informatie](../../campaign-classic-home.md)
 
-Er is een gebruiksscenario toegevoegd voor het integreren van een dynamische aanbieding van Adobe Target in een e-mailbericht in Adobe Campaign. [Meer informatie](../../integrations/using/inserting-a-dynamic-image.md)
+Er is een gebruiksscenario toegevoegd voor het integreren van een dynamisch aanbod van Adobe Target in een e-mailbericht in Adobe Campaign. [Meer informatie](../../integrations/using/inserting-a-dynamic-image.md)
 
-Er is nu een nieuwe sectie beschikbaar met de verschillende talen die beschikbaar zijn in Adobe Campaign. [Meer informatie](../../platform/using/adobe-campaign-workspace.md#languages)
+Er is nu een nieuw gedeelte beschikbaar waarin de verschillende talen die in Adobe Campaign beschikbaar zijn, worden beschreven. [Meer informatie](../../platform/using/adobe-campaign-workspace.md#languages)
 
 De richtlijnen voor toegangsbeheer zijn bijgewerkt met meer informatie over benoemde rechten. [Meer informatie](../../platform/using/access-management.md#named-rights)
 
 ## februari 2020 {#february-2020}
 
-Er is nu een nieuwe sectie beschikbaar met de aanbevolen procedures en aanbevelingen voor het ontwerpen van het gegevensmodel van de Adobe-campagne. [Meer informatie](../../configuration/using/data-model-best-practices.md)
+Er is nu een nieuwe sectie beschikbaar met best practices en belangrijke aanbevelingen bij het ontwerpen van het Adobe Campaign-gegevensmodel. [Meer informatie](../../configuration/using/data-model-best-practices.md)
 
 Een nieuwe sectie is beschikbaar over Technische e-mailconfiguraties. [Meer informatie](../../installation/using/email-deliverability.md)
 
@@ -144,9 +148,9 @@ De handleiding [Verzendpushmeldingen](../../delivery/using/about-mobile-app-chan
 
 De nieuwe parameter voor URLs rapportconfiguratie is [hier](../../reporting/using/properties-of-the-report.md#defining-additional-settings)gedocumenteerd.
 
-De **pagina van de Classic On-premise &amp; Hosted Capability van de Campagne matrijs** is bijgewerkt met de nieuwe schakelaars FDA. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
+De **Campaign Classic On-premise &amp; Hosted Capaciteitmatrixpagina** is bijgewerkt met de nieuwe FDA-connectors. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
 
-De **pagina met de klassieke Capability-matrix** voor campagne is bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+De pagina met de matrix **** Campaign Classic Capability is bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
 De nieuwe **[!UICONTROL Cleanup of Nmsaddress]** workflow is [hier](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress)beschreven.
 
@@ -160,13 +164,13 @@ De parameter van het configuratiedossier die erop wijst dat een instantie Verbet
 
 De sectie Aflevering is verplaatst, gereorganiseerd en verbeterd met bijgewerkte inhoud. [Meer informatie](../../delivery/using/about-deliverability.md)
 
-Er is nu een nieuwe sectie beschikbaar waarin de grondbeginselen van het klassieke gegevensmodel van de campagne van Adobe worden beschreven en waarin wordt beschreven hoe u toegang krijgt tot de beschrijving van elke tabel. [Meer informatie](../../configuration/using/about-data-model.md)
+Er is nu een nieuwe sectie beschikbaar waarin de grondbeginselen van het klassieke Adobe Campaign-gegevensmodel en de manier waarop u toegang krijgt tot de beschrijving van elke tabel worden beschreven. [Meer informatie](../../configuration/using/about-data-model.md)
 
-Het Adobe Campaign Enhanced MTA-artikel is bijgewerkt met meer gedetailleerde informatie over het installeren van een specifiek Typologisch pakket op instanties die niet de vereiste verbeterde MTA-headers aan elk bericht toevoegen. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html#impacts)
+Het Adobe Campaign Enhanced MTA-artikel is bijgewerkt met meer gedetailleerde informatie over het installeren van een specifiek Typologisch pakket op instanties die niet de vereiste uitgebreide MTA-headers aan elk bericht toevoegen. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html#impacts)
 
 De gebruiksgevallen met betrekking tot vraagontwerp zijn gereorganiseerd in afzonderlijke secties. [Meer informatie](../../workflow/using/querying-recipient-table.md)
 
-Er is nu een nieuw gedeelte beschikbaar over tips en trucs voor het beheer van aanbiedingen en het gebruik van de module Interactie in Adobe Campagne Classic. [Meer informatie](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
+Er is nu een nieuw gedeelte beschikbaar over tips en trucs voor het beheer van aanbiedingen en het gebruik van de Interactiemodule in Adobe Campaign Classic. [Meer informatie](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
 
 De documentatie over interactie is verrijkt met koppelingen naar verschillende video&#39;s die u helpen beter te begrijpen hoe u aanbiedingen kunt beheren. [Meer informatie](../../interaction/using/interaction-and-offer-management.md)
 
@@ -200,13 +204,13 @@ Beveiligd SMS-bericht (TLS) - Meer [informatie](https://helpx.adobe.com/campaign
 
 **Overige documentatie-updates die bij de release worden geleverd**
 
-De uitgebreide documentatie van MTA van de Campagne van Adobe is nu beschikbaar. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+De Adobe Campaign Enhanced MTA-documentatie is nu beschikbaar. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 Er is een nieuwe sectie toegevoegd over het oplossen van problemen met een workflow die in de status &quot;Zo snel mogelijk starten&quot; blijft in een campagne. [Meer informatie](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
 De nieuwe opties &quot;NmsOperation_DeliveryPreparationWindow&quot; en &quot;WdbcKillSessionPolicy&quot; zijn toegevoegd aan de lijst met campagneopties. [Meer informatie](../../installation/using/configuring-campaign-options.md)
 
-Er is nu een nieuw document beschikbaar met een beschrijving van de basisbeginselen van het Classic-gegevensmodel van Adobe Campagne. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)
+Er is nu een nieuw document beschikbaar met een beschrijving van de basisbeginselen van het klassieke Adobe Campaign-gegevensmodel. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)
 
 De nieuwe optie **Maximum verpersoonlijking runtime** in de leveringseigenschappen wordt gedocumenteerd in deze [sectie](../../delivery/using/personalization-fields.md#timing-out-personalization).
 
@@ -214,7 +218,7 @@ De voorbeelden voor API-aanroepen die een **HttpServletRequest** met aanmeldings
 
 Een aanbeveling voor **sqlDefault** attribuut in schemadefinitie is toegevoegd. [Lees meer](../../configuration/using/elements-and-attributes.md#attribute-description).
 
-In de handleiding **Integrating with Adobe Experience Cloud** wordt nu verwezen naar de integratie tussen Adobe Campaign en Adobe Real-time Customer Data Platform. [Lees meer](../../integrations/using/about-campaign-integrations.md).
+Er wordt nu verwezen naar de integratie tussen Adobe Campaign en Adobe Real-time Customer Data Platform in de handleiding **Integrating with Adobe Experience Cloud** . [Lees meer](../../integrations/using/about-campaign-integrations.md).
 
 ## november 2019 {#november-2019}
 
@@ -232,13 +236,13 @@ De gids Aan de slag met de beste praktijken voor levering is bijgewerkt. [Meer i
 
 ## Oktober 2019 {#october-2019}
 
-De lijst met foutberichten voor Campagnestandaard en Campagne Classic is bijgewerkt. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
+De lijst met foutberichten voor Campaign Standard en Campaign Classic is bijgewerkt. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
 De gids aan de slag met de GDPR is verbeterd en verrijkt. Het is nu een documentatie over privacybeheer, waaronder GDPR en CCPA. [Meer informatie](https://helpx.adobe.com/content/help/en/campaign/kb/campaign-privacy.html)
 
 Er is een nieuwe pagina voor probleemoplossing toegevoegd voor tracering in Campaign Classic. [Lees meer](https://helpx.adobe.com/campaign/kb/classic-tracking-troubleshooting.html).
 
-Er is een nieuwe pagina met best practices voor de gegevensverbinding van Adobe Analytics toegevoegd. [Meer informatie over de gegevensconnector van Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md)
+Er is een nieuwe pagina met aanbevolen procedures voor de Adobe Analytics Data Connector toegevoegd. [Meer informatie over de Adobe Analytics Data Connector](../../platform/using/adobe-analytics-data-connector.md)
 
 De gids Aan de slag met best practices voor levering is verplaatst en bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/delivery-best-practices.html)
 
@@ -250,7 +254,7 @@ De stappen om Inbox het teruggeven voor installaties op gebouw te vormen zijn to
 
 ## september 2019 {#september-2019}
 
-Er is een nieuwe pagina toegevoegd met algemene richtlijnen voor het onderhoud van Campagne Classic. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)
+Er is een nieuwe pagina toegevoegd met algemene richtlijnen voor het onderhoud van Campaign Classic. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)
 
 Informatie met betrekking tot workflows-controle is gecentraliseerd in een nieuwe specifieke sectie. [Lees meer](../../workflow/using/monitoring-workflow-execution.md).
 
@@ -272,7 +276,7 @@ Er is een nieuwe veelgestelde vragen voor een build-upgrade gemaakt. [Meer infor
 
 De [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) is bijgewerkt. De lijst met ondersteunde databasesystemen is bijgewerkt, evenals Android/iOS-versies en verwante SDK&#39;s. De [19.0-compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix-19-0.html) is gearchiveerd.
 
-De pagina &#39;Afgekeurde en verwijderde functies in Campagne Classic&#39; is bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+De pagina &#39;Afgekeurde en verwijderde functies in Campaign Classic&#39; is bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
 De beschrijving van het serverconfiguratiebestand is toegevoegd aan de installatiegids. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_The_server_configuration_file.html)
 
@@ -292,7 +296,7 @@ Meer informatie over de authentificatiemethodes van de ZEEP voor transactioneel 
 
 De Apache-configuratiestappen zijn bijgewerkt. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/INS_Installing_Campaign_in_Linux__Integration_into_a_Web_server.html#Configuring_Apache_web_server_in_RHEL)
 
-Er is een nieuwe pagina toegevoegd met de lijst met eindpunten voor Campagnestandaard en Klassiek. [Meer informatie](https://helpx.adobe.com/campaign/kb/campaign-endpoints.html)
+Er is een nieuwe pagina toegevoegd met daarin de lijst met eindpunten voor Campaign Standard en Classic. [Meer informatie](https://helpx.adobe.com/campaign/kb/campaign-endpoints.html)
 
 Het artikel met best practices voor gegevenspakketten is bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/data-package-best-practices.html)
 
@@ -302,7 +306,7 @@ Er is een nieuw kennisbankartikel gemaakt over het gebruik van de aanbiedingenca
 
 De sectie Subworkflowactiviteit is uitgebreid met een voorbeeld van gebruik. [Meer informatie](../../workflow/using/sub-workflow.md)
 
-Het artikel [Kennisbank met de Classic On-premise &amp; Hosted Capability Matrix](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html) van de Campagne Classic is bijgewerkt met informatie over het archiveren van e-mails.
+Het [Campaign Classic On-premise &amp; Hosted Capability Matrix](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html) Knowledge Base-artikel is bijgewerkt met informatie over het archiveren van e-mails.
 
 De documentatie van het Overseinen van de Transactie is bijgewerkt met een nota betreffende malplaatjepublicatie. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
 
@@ -313,10 +317,10 @@ Er is een nieuwe sectie over best practices voor workflowplanning toegevoegd. [M
 Twee nieuwe opties toegevoegd aan de lijst met opties voor campagne: XtkSecurity_Restrict_EditXML en NmsOperation_OperationMgtDebug.
 [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Configuring_Campaign_options.html)
 
-Toegevoegde informatie over de verschillende externe rekeningen beschikbaar in de Klassieke Campagne en hoe te om hen te vormen.
+Extra informatie over de verschillende externe accounts die beschikbaar zijn in Campaign Classic en hoe u deze kunt configureren.
 [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html)
 
-De bijgewerkte sectie van de Verbinding van Gegevens van Analytics om interfaceveranderingen te wijzen.
+Bijgewerkte sectie van de Verbinding van Gegevens van Analytics om interfaceveranderingen te weerspiegelen.
 [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/PTF_Connectors_Adobe_Analytics_Data_Connector.html)
 
 Informatie toegevoegd over het factureringsrapport.
@@ -343,7 +347,7 @@ Het marketingmateriaal voor Cloud-triggers is bijgewerkt. [Meer informatie](http
 
 Er is een opmerking toegevoegd aan het onderdeel Aanbiedingsgoedkeuring om aan te geven dat de vermelding &quot;Goedgekeurde inhoud&quot; aangeeft dat het goedkeuringsproces voor de inhoud is voltooid, ongeacht of alle aanbiedingen zijn in- of uitgeschakeld. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/ITA_Managing_an_offer_catalog_Approving_and_activating_an_offer.html#Approving_offer_content)
 
-Er is een nieuwe sectie toegevoegd aan de installatiegids, met opties voor Beheer / Platform / Opties. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Configuring_Campaign_options.html)
+Er is een nieuwe sectie toegevoegd aan de installatiegids, met daarin een overzicht van de opties in het knooppunt Beheer / Platform / Opties. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Configuring_Campaign_options.html)
 
 Er is informatie toegevoegd over het gebruik van zaadadressen om uw mailinglijst te beschermen. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/DLV_Using_seed_addresses_About_seed_addresses.html)
 
@@ -353,11 +357,11 @@ De sectie [E-mailarchivering](https://docs.campaign.adobe.com/doc/AC/en/INS_Addi
 
 * De beste praktijken zijn toegevoegd betreffende e-mail per verbinding en BCC die parameters IPs verzendt. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html#Best_practices)
 
-* We hebben de stappen bijgewerkt voor een upgrade naar het nieuwe e-mailarchiveringssysteem (BCC) als u al e-mailarchivering gebruikt met een oudere build (vóór Adobe Campagne 17.2 - build 8795). [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html#Updated_email_archiving_system__BCC_)
+* We hebben de stappen bijgewerkt voor de upgrade naar het nieuwe e-mailarchiveringssysteem (BCC) als u al e-mailarchivering gebruikt met een oudere build (vóór Adobe Campaign 17.2 - build 8795). [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_archiving.html#Updated_email_archiving_system__BCC_)
 
 Er is een gebruiksgeval toegevoegd aan de handleiding Automating with Workflows: Persoonlijke waarschuwingen verzenden aan operatoren. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Sending_personalized_alerts_to_operators.html)
 
-De sectie &#39;Migreren naar een nieuwe versie&#39; is bijgewerkt. In de documentatie worden nu alleen de stappen beschreven voor een migratie van een oudere versie naar Adobe Campagne Classic v7, omdat migratie naar Adobe Campaign v6.11 niet meer mogelijk is. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/MIG_Migration_overview_About_migration.html)
+De sectie &#39;Migreren naar een nieuwe versie&#39; is bijgewerkt. In de documentatie worden nu alleen de stappen beschreven voor een migratie van een oudere versie naar Adobe Campaign Classic v7, omdat migratie naar Adobe Campaign v6.11 niet meer mogelijk is. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/MIG_Migration_overview_About_migration.html)
 
 De sectie &quot;Retries after a delivery temporary failure&quot; is verduidelijkt. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_delivery_failures.html#Retries_after_a_delivery_temporary_failure)
 
@@ -385,11 +389,11 @@ Workflowcontrole - Meer [informatie](https://docs.campaign.adobe.com/doc/AC/en/P
 
 **Overige documentatie-updates die bij de release worden geleverd**
 
-Klassieke API&#39;s voor campagnes zijn nu beschikbaar op een [specifieke pagina](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html). Als u het bestand jsapi.chm gebruikte, moet u nu naar de nieuwe onlineversie verwijzen.
+Campaign Classic API&#39;s zijn nu beschikbaar op een [speciale pagina](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html). Als u het bestand jsapi.chm gebruikte, moet u nu naar de nieuwe onlineversie verwijzen.
 
 De compatibiliteitsmatrix is bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
-De pagina &#39;Afgekeurde en verwijderde functies in Campagne Classic&#39; is bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+De pagina &#39;Afgekeurde en verwijderde functies in Campaign Classic&#39; is bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
 In de [versienota&#39;s](https://docs.campaign.adobe.com/doc/AC/en/RN.html) en de nota [&#39;s van de](https://docs.campaign.adobe.com/doc/AC/en/RN_legacy.html)erfenisversie, is een waarschuwing toegevoegd voor bouwwerken die zijn teruggeroepen. Er zijn ook cumulatieve bouwwerken voor de punten 17.9, 18.4 en 18.6 toegevoegd.
 
@@ -425,9 +429,9 @@ Er is nu een nieuw geval beschikbaar waarin wordt beschreven hoe u een workflow 
 
 Er zijn enkele aanbevelingen toegevoegd aan de sectie E-mailarchivering. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Email_deliverability.html#Activating_emails_BCC_archiving)
 
-Er is een nieuwe aanbeveling toegevoegd met betrekking tot de minimale schermresolutie voor optimaal gebruik van Adobe Campagne. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Adobe_Campaign_workspace.html#Screen_resolution)
+Er is een nieuwe aanbeveling toegevoegd betreffende de minimale schermresolutie voor optimaal gebruik door Adobe Campaign. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Adobe_Campaign_workspace.html#Screen_resolution)
 
-De de integratiegids van de Manager van de Ervaring is bijgewerkt met wat verduidelijking toegevoegd aan de configuratie van deze integratie. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/ITG_Adobe_Experience_Manager_About_Adobe_Experience_Manager.html)
+De Experience Manager-integratiegids is bijgewerkt en er is wat verduidelijking toegevoegd aan de configuratie van deze integratie. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/ITG_Adobe_Experience_Manager_About_Adobe_Experience_Manager.html)
 
 Toegevoegde informatie over het verschil tussen de lijst met groepstypen en de lijst met lijsttypen. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/PTF_Profile_management_Creating_and_managing_lists.html#About_lists_in_Adobe_Campaign)
 
@@ -471,7 +475,7 @@ De pagina Vervangen en verwijderde functies is bijgewerkt. [Meer informatie](htt
 
 **Overige documentatie-updates die bij de release worden geleverd**
 
-De namen van de klassieke gebruikershandleidingen voor campagnes zijn gewijzigd om de navigatie te vereenvoudigen, de gebruikerservaring te verbeteren, toegang te krijgen tot informatie en zelfhulp. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/browseAC.html)
+De namen van Campaign Classic-gebruikershandleidingen zijn gewijzigd om de navigatie te vereenvoudigen, de gebruikerservaring, de toegang tot informatie en zelfhulp te verbeteren. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/browseAC.html)
 
 De lijst met functies die beschikbaar zijn in de expressieeditor is bijgewerkt. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/PTF_Creating_queries_Defining_filter_conditions.html#List_of_functions)
 
@@ -503,17 +507,17 @@ De gids Aan de slag voor beste praktijken voor levering is bijgewerkt. [Meer inf
 
 De de rekeningsconfiguratie van de Dynamica 365 van Microsoft met de plaatsing van Web API was bijgewerkt. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/PTF_Connectors_CRM_Connectors.html#Example_for_Microsoft_Dynamics)
 
-De procedure voor de installatie van Adobe Campaign Classic op een Windows-platform is bijgewerkt. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/INS_Installing_Campaign_in_Windows__Installing_the_server.html)
+De procedure voor het installeren van Adobe Campaign Classic op een Windows-platform is bijgewerkt. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/INS_Installing_Campaign_in_Windows__Installing_the_server.html)
 
 Tijdschema voor het delen van publiek tussen Adobe Experience Cloud en Campaign Classic is gedetailleerd weergegeven. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Importing_and_exporting_audiences.html)
 
-Het artikel van de kennisbank volledig voor de Klassieke lijst van de Campagne is bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/article-list.html)
+Het artikel in de Knowledge Base is vol voor de Campaign Classic-lijst bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/article-list.html)
 
 Een nieuwe TechNote over prestatiesverbetering en beste praktijken is levend. [Meer informatie](https://helpx.adobe.com/campaign/kb/best-practices-for-performance-improvement.html)
 
 Er is een A/B-testmonster bijgewerkt. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_A-B_testing.html)
 
-De pagina Klassieke vraag/veelgestelde vragen over campagne is bijgewerkt. [Meer informatie](../../platform/using/common-questions.md)
+De pagina Algemene vragen/FAQ van Campaign Classic is bijgewerkt. [Meer informatie](../../platform/using/common-questions.md)
 
 ## 18.4 - 24/04/2018{#release-18-4}
 
@@ -529,13 +533,13 @@ Verbetering Android-push-aansluiting - [Meer informatie](https://docs.campaign.a
 
 Opmerkingen bij de release zijn verbeterd voor een betere gebruikerservaring en bevatten nu alle patches die betrekking hebben op verzoeken van klanten.  [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/RN.html)
 
-Er is een nieuwe pagina toegevoegd met de meest voorkomende vragen over Campagne Classic. [Meer informatie](../../platform/using/common-questions.md)
+Er is een nieuwe pagina toegevoegd met de meest voorkomende vragen over Campaign Classic. [Meer informatie](../../platform/using/common-questions.md)
 
 De lijst met foutberichten is bijgewerkt. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
 Het marketingmateriaal voor Cloud-triggers is bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
 
-Er is een technologie toegevoegd voor het installeren en implementeren van het Privacy-pakket (GDPR) in oudere Classic-versies van Campagne. [Meer informatie](https://helpx.adobe.com/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html)
+Er is een technologie toegevoegd voor het installeren en implementeren van het Privacy-pakket (GDPR) in oudere Campaign Classic-versies. [Meer informatie](https://helpx.adobe.com/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html)
 
 Er is een technologie toegevoegd aan het nieuwe mechanisme voor automatisch genereren van reeksen. [Meer informatie](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html)
 
@@ -574,7 +578,7 @@ Toegevoegde informatie over productiegrenzen wanneer vestiging een relais SMTP. 
 
 ## 17.12 - 14/12/2017{#release-doc-14-12-2017}
 
-De [documentatieset](https://helpx.adobe.com/support/campaign/classic.html) van Adobe Campaign Classic is gereorganiseerd voor een verbeterde bruikbaarheid.
+De [Adobe Campaign Classic-documentatieset](https://helpx.adobe.com/support/campaign/classic.html) is gereorganiseerd voor een verbeterde bruikbaarheid.
 
 Er is een nieuwe sectie met zelfstudies toegevoegd om de toegang tot de belangrijkste Help-materialen, Hoe kan ik-onderwerpen, voorbeelden en video&#39;s voor campagnes te vergemakkelijken. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/PTF_Starting_with_Adobe_Campaign_Tutorials.html)
 
@@ -584,7 +588,7 @@ De lijst met foutberichten is bijgewerkt. [Meer informatie](https://docs.campaig
 
 Het marketingmateriaal voor Cloud-triggers is bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
 
-De Gids voor klassieke migratie van de Campagne is toegevoegd aan de verzameling. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/MIG_Migration_overview_About_migration.html)
+De Campaign Classic-migratiegids is toegevoegd aan de verzameling. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/MIG_Migration_overview_About_migration.html)
 
 Matrix voor campagnecompatibiliteit is bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
@@ -594,7 +598,7 @@ Het nieuwe artikel van de Kennisbank om configuratie en eigenschapverschillen tu
 
 Toegevoegde instructies voor het installeren van een standaardpakket. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/INS_Initial_configuration_Installing_packages.html)
 
-Toegevoegde details over hoe te om integratie met de Manager van de Publiek of de kerndienst van Mensen te vormen. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Configuring_shared_audiences_integration_in_Adobe_Campaign.html)
+Toegevoegde details over hoe te om integratie met Audience Manager of de kerndienst van Mensen te vormen. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Configuring_shared_audiences_integration_in_Adobe_Campaign.html)
 
 Bijgewerkt de installatiedocumentatie om te vermelden dat pgcrypto nu wordt vereist voor de installatie van de Campagne als het gebruiken van PostSQL. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/INS_Installing_Campaign_in_Linux__Prerequisites.html#Database_access_layers)
 
@@ -646,7 +650,7 @@ Er is een nieuwe functie toegevoegd om aan de slag te gaan met de upgrade. [Lees
 
 ## Mei 2017{#release-doc-30-05-2017}
 
-Er is een nieuwe gids voor aan de slag: Hier worden enkele aanbevolen procedures beschreven die u kunt gebruiken voor Adobe Campaign, van het maken en activeren tot het verzenden en controleren. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
+Er is een nieuwe gids voor aan de slag: het bevat een aantal van de beste praktijken die kunnen worden gebruikt om met Adobe Campaign te leveren, van het creëren en richten tot het verzenden en controleren. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
 
 De gids Aan de slag voor beveiliging is bijgewerkt. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)
 
@@ -668,7 +672,7 @@ Er is een tabel met de specifieke fouten voor SMS-berichten toegevoegd aan de se
 
 Workflows: er is een nieuw voorbeeld van een multikanaalsworkflow toegevoegd. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/WKF_Repository_of_activities_Action_activities.html#Cross-channel_deliveries)
 
-Marketingklassen voor cloud: Er is een technologie toegevoegd voor het configureren en gebruiken van deze toepassing met Adobe Campaign. [Meer informatie](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
+Marketingklassen voor cloud: er is een technologie toegevoegd voor het configureren en gebruiken van deze configuratie met Adobe Campaign. [Meer informatie](https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html)
 
 De Workflowgids is gereorganiseerd en uitgebreid. U kunt eenvoudig zoeken hoe u een workflow [bouwt](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Building_a_workflow.html) en [uitvoert](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Executing_a_workflow.html) , hoe u uw gegevens [doelt](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Targeting_data.html) en [beheert](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Targeting_data.html#Data_Management) , hoe u gegevens [importeert](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Importing_data.html) [](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_How_to_use_workflow_data.html#Updating_the_database) [](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_How_to_use_workflow_data.html#Delivering_via_a_workflow)en hoe u workflowgegevens kunt gebruiken om de database bij te werken of om leveringen te verzenden.
 
