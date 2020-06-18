@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 0%
 
 ---
 
@@ -47,8 +50,6 @@ In het volgende voorbeeld wordt getracht een lijst op te stellen van ontvangers 
 1. Voer de workflow uit. In dit voorbeeld bestaat het resultaat uit ontvangers tussen de 18 en 30 jaar, maar degenen die in Parijs wonen, worden uitgesloten en naar het complement gestuurd.
 
    ![](assets/exclusion_example.png)
-
-In het voorbeeld van import op een zwarte lijst wordt een activiteit van het type **Uitsluiting** gebruikt die u kunt vinden in de [lijst](../../workflow/using/read-list.md)Lezen.
 
 ## Invoerparameters {#input-parameters}
 
