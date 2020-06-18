@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
 workflow-type: tm+mt
 source-wordcount: '2602'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Verschillende statussen worden weergegeven op [deze pagina](#delivery-statuses).
 
 ### Logboeken bijhouden {#tracking-logs}
 
-Op het **[!UICONTROL Tracking]** tabblad vindt u de volggeschiedenis voor deze levering. Op dit tabblad vindt u de volggegevens van de verzonden berichten, dus alle URL&#39;s die door Adobe Campaign moeten worden gevolgd. De volgende gegevens worden per uur bijgewerkt.
+Op het **[!UICONTROL Tracking]** tabblad vindt u de volggeschiedenis voor deze levering. Op dit tabblad worden volggegevens weergegeven voor de verzonden berichten, d.w.z. alle URL&#39;s die door Adobe Campaign moeten worden gevolgd. De volgende gegevens worden per uur bijgewerkt.
 
 >[!NOTE]
 >
@@ -95,8 +95,8 @@ Van uw leveringsdashboard, wilt u de verwerkte berichten en leveringslogboeken c
 Sommige indicatoren of status kunnen onjuist of niet bijgewerkt zijn, dit kan met de volgende oplossingen worden opgelost:
 
 * Als uw leveringsstatus onjuist is, controleer dat alle noodzakelijke goedkeuringen voor deze levering zijn gedaan of de **[!UICONTROL operationMgt]** en **[!UICONTROL deliveryMgt]** werkschema&#39;s zonder fouten lopen. Dit kan ook zijn toe te schrijven aan de levering gebruikend een affiniteit die niet op de verzendende instantie wordt gevormd.
-* Als uw leveringsindicatoren nog bij nul zijn en als u op een midsourcingconfiguratie bent, controleer het **[!UICONTROL Mid-sourcing (delivery counters)]** technische werkschema. Start het als de status niet is ingesteld **[!UICONTROL Started]**. Vervolgens kunt u proberen de indicatoren opnieuw te berekenen door met de rechtermuisknop op de relevante levering in de Adobe Campagneverkenner te klikken en **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** te selecteren. Raadpleeg deze [sectie](../../reporting/using/delivery-reports.md#tracking-indicators)voor meer informatie over trackingindicatoren.
-* Als uw leveringsteller niet overeenkomt met uw levering, probeert u de indicatoren opnieuw te berekenen door met de rechtermuisknop op de desbetreffende levering te klikken in de Adobe Campagneverkenner en **[!UICONTROL Actions]** > te selecteren **[!UICONTROL Recompute delivery and tracking indicators]** om opnieuw te synchroniseren. Raadpleeg deze [sectie](../../reporting/using/delivery-reports.md#tracking-indicators)voor meer informatie over trackingindicatoren.
+* Als uw leveringsindicatoren nog bij nul zijn en als u op een midsourcingconfiguratie bent, controleer het **[!UICONTROL Mid-sourcing (delivery counters)]** technische werkschema. Start het als de status niet is ingesteld **[!UICONTROL Started]**. Vervolgens kunt u proberen de indicatoren opnieuw te berekenen door met de rechtermuisknop op de desbetreffende levering in de Adobe Campaign-verkenner te klikken en **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** te selecteren. Raadpleeg deze [sectie](../../reporting/using/delivery-reports.md#tracking-indicators)voor meer informatie over trackingindicatoren.
+* Als uw leveringsteller niet overeenkomt met uw levering, probeert u de indicatoren opnieuw te berekenen door met de rechtermuisknop op de desbetreffende levering in de Adobe Campaign-verkenner te klikken en **[!UICONTROL Actions]** > te selecteren **[!UICONTROL Recompute delivery and tracking indicators]** voor resynchroniseren. Raadpleeg deze [sectie](../../reporting/using/delivery-reports.md#tracking-indicators)voor meer informatie over trackingindicatoren.
 * Als uw leveringsteller niet bijgewerkt is voor midsourcingimplementaties, controleert u of de **[!UICONTROL Mid-Sourcing (Delivery counters)]** technische workflow actief is. Raadpleeg deze [pagina](../../installation/using/mid-sourcing-deployment.md)voor meer informatie.
 
 U kunt uw leveringen ook bijhouden met verschillende rapporten via het leveringsdashboard. For more on this, refer to this [section](../../reporting/using/delivery-reports.md).
@@ -109,20 +109,20 @@ Als de leveringsprestaties slecht zijn, kunt u controleren:
 
 * **De omvang van de levering**: Het voltooien van grote leveringen kan langer duren. De kinderen MTA worden gevormd om een standaardpartijgrootte te behandelen, die voor de meeste instanties werkt, maar moet worden gecontroleerd wanneer de leveringen constant langzaam zijn.
 * **Het doel van de levering**: Het verbod op leveringsprestaties wordt beïnvloed door zachte stuiterfouten, die worden afgehandeld volgens de configuratie voor opnieuw proberen. Hoe groter het aantal fouten, hoe meer pogingen nodig zijn.
-* **De totale platformbelasting**: Wanneer meerdere grote leveringen worden verzonden, kan dit gevolgen hebben voor het hele platform. U kunt IP reputatie en leveringsproblemen ook controleren. Raadpleeg voor meer informatie de handleiding [over de beste praktijken bij de](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) uitvoering van Adobe Campagne en [deze pagina](../../delivery/using/about-deliverability.md).
+* **De totale platformbelasting**: Wanneer meerdere grote leveringen worden verzonden, kan dit gevolgen hebben voor het hele platform. U kunt IP reputatie en leveringsproblemen ook controleren. Raadpleeg voor meer informatie de handleiding [over best practices voor Adobe Campaign-](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) levering en [deze pagina](../../delivery/using/about-deliverability.md).
 
-Het onderhoud van platforms en databases kan ook van invloed zijn op de verzendprestaties van de levering. For more on this, refer to [this page](../../production/using/database-performances.md).
+Platform- en databaseonderhoud kan ook van invloed zijn op de verzendingsprestaties van de levering. For more on this, refer to [this page](../../production/using/database-performances.md).
 
 ### Trage leveringen {#slow-deliveries}
 
 Nadat je op de **[!UICONTROL Send]** button hebt geklikt, lijkt het langer te duren voordat je levering is uitgevoerd. Dit kan worden veroorzaakt door verschillende elementen:
 
-* Sommige e-mailproviders hebben uw IP-adressen mogelijk op de zwarte lijst gezet. In dit geval, controleer uw uitzendingen en raadpleeg [dit aan de slag](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) .
-* Uw levering is mogelijk te groot om snel te worden verwerkt, dit kan gebeuren met een hoge mate van personalisatie in JavaScript of als uw levering meer dan 60 kbytes weegt. Raadpleeg de best practices [van Adobe Campagne](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) Delivery voor meer informatie over de richtlijnen voor inhoud.
-* Throttling zou binnen de Campagne MTA van Adobe kunnen voorgekomen zijn. Dit wordt veroorzaakt door:
+* Sommige e-mailproviders hebben mogelijk uw IP-adressen aan een bloklijst toegevoegd. In dit geval, controleer uw uitzendingen en raadpleeg [deze sectie](../../delivery/using/about-deliverability.md).
+* Uw levering is mogelijk te groot om snel te worden verwerkt, dit kan gebeuren met een hoge mate van personalisatie in JavaScript of als uw levering meer dan 60 kbytes weegt. Raadpleeg de best practices [voor Adobe Campaign-](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) levering voor meer informatie over richtlijnen voor inhoud.
+* Throttling zou binnen Adobe Campaign MTA kunnen voorgekomen zijn. Dit wordt veroorzaakt door:
 
    * Berichten gepend (**[!UICONTROL quotas met]** bericht): er is voldaan aan de quota die zijn aangegeven in de declaratieve MX-regels die in de campagne zijn vastgesteld. Raadpleeg [deze pagina](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ)voor meer informatie over dit bericht. Raadpleeg [deze pagina](../../delivery/using/technical-recommendations.md#mx-rules)voor meer informatie over MX-regels.
-   * Berichten gepend (**[!UICONTROL dynamic flow control]** bericht): Campagne MTA heeft fouten ontmoet toen het proberen om berichten voor bepaalde ISP te leveren die een vertraging veroorzaakt om te grote van een foutendichtheid te vermijden en zo het onder ogen zien van potentiële zwarte lijst.
+   * Berichten gepend (**[!UICONTROL dynamic flow control]** bericht): Campagne MTA heeft fouten ontmoet wanneer het proberen om berichten voor bepaalde ISP te leveren die een vertraging veroorzaakt om te grote van een foutendichtheid te vermijden en zo het onder ogen zien van potentiële bloklijst.
 
 * Door een systeemprobleem kunnen servers niet met elkaar communiceren: dit kan het hele verzendingsproces vertragen . Controleer de servers om ervoor te zorgen dat er geen geheugen of middelkwesties zijn die Campagne in het proces kunnen beïnvloeden om de verpersoonlijkingsgegevens bijvoorbeeld te krijgen.
 
@@ -166,7 +166,7 @@ Tijdens het verzenden van een levering krijgt u mogelijk de volgende status op h
   </tr> 
   <tr> 
    <td> Genegeerd<br /> </td> 
-   <td> De levering is niet naar de ontvanger verzonden vanwege een fout met zijn adres. Het was op de zwarte lijst geplaatst, in quarantaine geplaatst, niet geleverd of een duplicaat. <br /> </td> 
+   <td> De levering is niet naar de ontvanger verzonden vanwege een fout met zijn adres. Het is toegevoegd aan een bloklijst, in quarantaine geplaatst, niet opgegeven of gedupliceerd. <br /> </td> 
   </tr> 
   <tr> 
    <td> Verzonden<br /> </td> 
@@ -203,7 +203,7 @@ Tijdens het verzenden van een levering krijgt u mogelijk de volgende status op h
  </tbody> 
 </table>
 
-Raadpleeg de handleiding [over de beste praktijken bij de](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) levering van Adobe Campagne en naar [deze pagina](../../delivery/using/about-deliverability.md)voor informatie over het optimaliseren van de leverbaarheid van e-mails voor uw Adobe Campagne.
+Raadpleeg de handleiding [over de beste praktijken bij](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) Adobe Campaign- [levering en naar](../../delivery/using/about-deliverability.md)deze paginavoor meer informatie over de manier waarop u de leverbaarheid van uw Adobe Campaign-e-mails kunt optimaliseren.
 
 ### Status in behandeling {#pending-status}
 
@@ -262,7 +262,7 @@ De logboeken van de levering zijn zeer belangrijk om te leren waarom een leverin
 
    Om dit op te lossen, controleer de gebruikte verpersoonlijkingsgegevens, en controleer dan het doel voor ontvangers die meer dan één ingang voor om het even welk van die gebieden hebben. U kunt ook een **[!UICONTROL Deduplication]** activiteit in het richten werkschema voorafgaand aan de leveringsactiviteit gebruiken om te controleren er slechts één verpersoonlijkingsgebied tegelijkertijd is. Raadpleeg [deze pagina](../../workflow/using/deduplication.md)voor meer informatie over deduplicatie.
 
-* Sommige levering kan mislukken met een &quot;Onbereikbare&quot;fout die verklaart: &quot;Binnenkomende e-mailstuit (regel &#39;Auto_responses&#39; komt overeen met deze stuit). Dit betekent dat de levering is gelukt, maar dat Adobe Campagne een automatisch antwoord van de ontvanger heeft ontvangen (bijvoorbeeld een antwoord &quot;Buiten-kantoor&quot;) dat overeenkwam met de regels voor inkomende e-mail &quot;Auto_responses&quot;. Het e-mailbericht waarin automatisch wordt gereageerd, wordt genegeerd door Adobe Campaign en het adres van de ontvanger wordt niet verzonden naar quarantines.
+* Sommige levering kan mislukken met een &quot;Onbereikbare&quot;fout die verklaart: &quot;Binnenkomende e-mailstuit (regel &#39;Auto_responses&#39; komt overeen met deze stuit). Dit betekent dat de levering is geslaagd, maar Adobe Campaign heeft een automatisch antwoord van de ontvanger ontvangen (bijvoorbeeld een antwoord &quot;Buiten-kantoor&quot;) dat overeenkwam met de regels voor inkomende e-mail &quot;Auto_responses&quot;. Het e-mailbericht met het automatische antwoord wordt genegeerd door Adobe Campaign en het adres van de ontvanger wordt niet verzonden naar quarantines.
 
 **Verwante onderwerpen:**
 
