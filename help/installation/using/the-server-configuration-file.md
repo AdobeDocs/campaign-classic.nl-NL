@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d9b0f943fa09b3d0ad8547eb708e888724f1ae7e
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
-source-wordcount: '7852'
+source-wordcount: '7859'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 # Het serverconfiguratiebestand{#the-server-configuration-file}
 
-De algemene configuratie van Adobe Campagne wordt bepaald in het **serverConf.xml** - dossier, dat in de **conf** folder van de installatiemap wordt gevestigd. In deze sectie worden alle verschillende knooppunten en parameters van het bestand **serverConf.xml** weergegeven.
+De algemene configuratie van Adobe Campaign wordt gedefinieerd in het bestand **serverConf.xml** in de map **conf** van de installatiemap. In deze sectie worden alle verschillende knooppunten en parameters van het bestand **serverConf.xml** weergegeven.
 
 >[!NOTE]
 >
@@ -207,7 +207,7 @@ Hier zijn de verschillende parameters van de **dataStore** knoop. Hier worden de
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/upload/' <br /> </td> 
   </tr> 
   <tr> 
-   <td> uploadWhitelist<br /> </td> 
+   <td> uploadAllowlist<br /> </td> 
    <td> Geautoriseerde bestanden die moeten worden gedownload, gescheiden door ','. De tekenreeks moet een geldige, reguliere Java-expressie zijn. Zie Uploadbare bestanden <a href="../../installation/using/configuring-campaign-server.md#limiting-uploadable-files" target="_blank">beperken</a>.<br /> </td> 
    <td> String<br /> </td> 
    <td> '.+' <br /> </td> 
@@ -575,8 +575,8 @@ Voor extra informatie, verwijs naar het [Beperken van geoorloofde externe bevele
  </thead> 
  <tbody> 
   <tr> 
-   <td> blacklistFile<br /> </td> 
-   <td> Pad naar het bestand met de opdrachten die op de zwarte lijst moeten worden gezet. <br /> </td> 
+   <td> blocklistFile<br /> </td> 
+   <td> Pad naar het bestand met de opdrachten die u wilt toevoegen aan de lijst Toestaan. <br /> </td> 
    <td> String<br /> </td> 
   </tr> 
   <tr> 
@@ -907,7 +907,7 @@ Hier zijn de verschillende parameters van de **threadPool** knoop.
 
 Hier zijn de verschillende parameters van de **urlPermission** knoop. Dit is de lijst met URL&#39;s waartoe de JavaScript-code toegang heeft.
 
-Lijst met domeinen en reguliere expressies die aangeven of een URL die in de JavaScript-code wordt aangetroffen, al dan niet door de Adobe Campagneserver kan worden gebruikt.
+Lijst met domeinen en reguliere expressies die aangeven of een URL die in de JavaScript-code wordt aangetroffen, door de Adobe Campaign-server kan worden gebruikt of niet.
 
 Als de URL niet kan worden gevonden, wordt de standaardactie uitgevoerd volgens de opgegeven standaardmodus.
 
@@ -1179,7 +1179,7 @@ Hier zijn de verschillende parameters van de **inMail** knoop. Dit is de configu
   </tr> 
   <tr> 
    <td> checkInstanceName<br /> </td> 
-   <td> Instantienaam controleren: Indien waar (true), moet de naam van de Adobe Campagne-instantie in de headers voor bericht-id gelijk zijn aan de naam van de huidige instantie. <br /> </td> 
+   <td> Instantienaam controleren: Indien true, moet de naam van de Adobe Campaign-instantie in de Message-ID-headers gelijk zijn aan de huidige instantie. <br /> </td> 
    <td> Boolean<br /> </td> 
    <td> true<br /> </td> 
   </tr> 
@@ -3079,7 +3079,7 @@ Zie [Dynamische paginabeveiliging en relays](../../installation/using/configurin
   </tr> 
   <tr> 
    <td> status<br /> </td> 
-   <td> Synchronisatiestatus van een openbare bron (opsomming). Mogelijke waarden zijn 'normal' (normal execute), 'blacklist' (url blacklist in case of error 404) en 'reserve' (file upload on reserve server if existing).<br /> </td> 
+   <td> Synchronisatiestatus van een openbare bron (opsomming). Mogelijke waarden zijn 'normal' (normal execute), 'blocklist' (url added to block list in case of error 404) en 'reserve' (file upload on reserve server if existing).<br /> </td> 
    <td> String<br /> </td> 
    <td> normaal<br /> </td> 
   </tr> 
@@ -3137,19 +3137,19 @@ Hier is de standaardconfiguratie:
      timeout="" status="normal" httpAllowed="true" urlPath="/nl/jsp/s.jsp"/>
 
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/nms/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/nms/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/xtk/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/xtk/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/nl/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/nl/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="*.jssp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="*.jssp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="true" urlPath="/webApp/*"/>
+     timeout="" status="blocklist" httpAllowed="true" urlPath="/webApp/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/report/*"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/report/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/jssp/*"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/jssp/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
      timeout="" status="normal" httpAllowed="false" urlPath="/strings/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
@@ -3219,7 +3219,7 @@ Zie deze [sectie](../../installation/using/deploying-an-instance.md#synchronizin
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> ID van IMS-organisatie: unieke organisatie-id in de Adobe Marketing Cloud, die met name wordt gebruikt voor de VisitorID-service en de IMS SSO. <br /> </td> 
+   <td> ID van IMS-organisatie: unieke organisatie-id binnen de Adobe Marketing Cloud, met name gebruikt voor de VisitorID-dienst en de IMS SSO. <br /> </td> 
    <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
