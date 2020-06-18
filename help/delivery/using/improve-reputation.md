@@ -1,6 +1,6 @@
 ---
-title: Uw reputatie verbeteren wanneer u Adobe Campagne Classic gebruikt
-description: Meer informatie over het verbeteren van uw reputatie bij het gebruik van Adobe Campaign Classic.
+title: Uw reputatie verbeteren bij het gebruik van Adobe Campaign Classic
+description: Meer weten over het verbeteren van je reputatie bij het gebruik van Adobe Campaign Classic?
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -13,14 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 68756f920fbc8658cff552615adbf023b4c5e3aa
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+workflow-type: tm+mt
+source-wordcount: '553'
+ht-degree: 0%
 
 ---
 
 
 # Uw reputatie verbeteren{#improve-reputation}
 
-Verwijder dubbele e-mailadressen van uw doel om te voorkomen dat de ontvangers uitputten. Deze stap beschermt uw verzendende reputatie en verzekert goed quarantainebeheer. De Campagne van Adobe biedt de noodzakelijke hulpmiddelen om deze aanbevelingen uit te voeren en het risico te vermijden om door ISP op de zwarte lijst te worden gezet.
+Verwijder dubbele e-mailadressen van uw doel om te voorkomen dat de ontvangers uitputten. Deze stap beschermt uw verzendende reputatie en verzekert goed quarantainebeheer. Adobe Campaign biedt de noodzakelijke hulpmiddelen aan om deze aanbevelingen uit te voeren en het risico te vermijden om aan een bloklijst door ISP worden toegevoegd.
 
 Om dubbel werk zoveel mogelijk te voorkomen, moeten de volgende acties worden uitgevoerd:
 
@@ -42,7 +45,7 @@ Het hebben van dubbele e-mailadressen kan veelvoudige gevolgen hebben:
 * Hetzelfde bericht wordt meerdere keren verzonden. Zelfs als Campagne standaard een deduplicatieprocedure uitvoert voordat het wordt verzonden, is er niets om te voorkomen dat hetzelfde bericht wordt verzonden door verschillende handelingen met dezelfde inhoud wanneer een doel wordt gesplitst.
 * Abonnementsverzoeken worden niet geaccepteerd. Als een ontvanger zich afmeldt na het ontvangen van een bericht, zal zijn dubbel profiel nog verkiesbaar voor toekomstige berichten zijn.
 
-Naast deze nevenstap van de opt-in-procedures zal deze situatie gebruikers waarschijnlijk ertoe brengen de berichten als spam te beschouwen en een zwarte-beursprocedure bij ISP in werking te stellen.
+Naast deze zijstap van opt-in procedures, zal deze situatie gebruikers waarschijnlijk leiden om de berichten als spam te beschouwen en een procedure van de bloklijst bij ISP teweeg te brengen.
 
 U moet bijzonder voorzichtig zijn wanneer het uitvoeren van verrichtingen op het gegevensbestand:
 
@@ -51,7 +54,7 @@ U moet bijzonder voorzichtig zijn wanneer het uitvoeren van verrichtingen op het
 * Automatische invoer, hetzij van lijsten of van andere gegevensbestanden, is elementen waarmee rekening moet worden gehouden bij het beheer van profielen. Wat gebeurt er als u een profiel verwijdert of verplaatst in een andere partitie? Het kan opnieuw worden gemaakt in de eerste partitie door een automatische importbewerking, bijvoorbeeld wanneer een inkooporder wordt geplaatst.
 * Het opslaan van profielen in verschillende mappen kan worden geïmplementeerd met behulp van weergaven in plaats van partities. Op deze manier, bent u zeker dat de profielen in de zelfde fysieke verdeling terwijl nog het toelaten van de adequate rechten worden getoond en worden geleid.
 
-Er zijn echter gevallen waarin duplicaten tussen de verschillende partities normaal zijn. Wanneer een persoon bijvoorbeeld voor derden of voor verschillende bedrijfsentiteiten wordt verzonden, is het logisch dat dezelfde persoon om verschillende redenen een ontvanger is. Het is echter zelden normaal om duplicaten binnen dezelfde partitie te zoeken.
+Er zijn echter gevallen waarin duplicaten tussen de verschillende partities normaal zijn. Bij het verzenden van documenten voor derden of voor verschillende bedrijfsentiteiten is het bijvoorbeeld logisch dat dezelfde persoon om verschillende redenen een ontvanger is. Het is echter zelden normaal om duplicaten binnen dezelfde partitie te zoeken.
 
 ## Quarantines {#quarantines}
 
