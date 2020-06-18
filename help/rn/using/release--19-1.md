@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4b42a4bb0a95b2a46187c996d069846a8c3941bf
+source-git-commit: 2c555f29f0e0029b468927dbdb4bc79f9a35990d
+workflow-type: tm+mt
+source-wordcount: '2693'
+ht-degree: 0%
 
 ---
 
 
 # Release 19.1{#release-19-1}
 
-[Upgrade](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) maken| [Release](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) van het regelpaneel| [Documentatie-updates](../../rn/using/documentation-updates.md) | [Eerdere versies](../../rn/using/release--19-1.md) | [Verouderde kenmerken](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+[Upgrade maken](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Release van het regelpaneel](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Documentatie-updates](../../rn/using/documentation-updates.md) | [Eerdere introducties](../../rn/using/release--19-1.md) | [Verouderde kenmerken](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
 <table> 
  <tbody> 
@@ -74,7 +77,7 @@ _13 augustus 2019_
 
 ## Release 19.1.4 - build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) 29 **april 2020**: new build (9032@3a9dc9c) met de volgende oplossingen:
+![](assets/do-not-localize/green_2.png) **29 april 2020**: new build (9032@3a9dc9c) met de volgende oplossingen:
 
 * Verbeterde beveiliging voor het bijhouden van koppelingen in e-mail. Dit is standaard ingeschakeld voor alle klanten. Er is een extra, verbeterde beveiligingsfunctie beschikbaar die kan worden ingeschakeld door de klantenservice te bereiken. Meer informatie over de functie en de stappen die niet-gehoste klanten moeten uitvoeren, vindt u in de checklist [voor](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)beveiliging en privacy.
 * Probleem verholpen waarbij afbeeldingen niet konden worden weergegeven bij levering op regel. (NEO-23207)
@@ -90,30 +93,30 @@ _13 augustus 2019_
 * Oplossing voor een regressie die ertoe leidde dat de opschoonworkflow vastliep.
 * Oplossing voor een kleine regressie in de logboeken van de opschoonworkflow.
 
-![](assets/do-not-localize/orange_2.png) 5 **maart 2020**: new build (9032@19f73c5), die de volgende oplossing bevat:
+![](assets/do-not-localize/orange_2.png) **5 maart 2020**: new build (9032@19f73c5), die de volgende oplossing bevat:
 
 * Probleem met externe accounts met FTP via SSL opgelost. (NEO-20498)
 
-![](assets/do-not-localize/orange_2.png) 17 **december 2019**: new build (9032@d6b8062), die de volgende oplossing bevat:
+![](assets/do-not-localize/orange_2.png) **17 december 2019**: new build (9032@d6b8062), die de volgende oplossing bevat:
 
 * Probleem met bijhouden van gegevens op de volgende communicatiekanalen verholpen: mobiele (SMS, MMS), push (iOS, Android) en sociale netwerken (Facebook, Twitter). (NEO-19595)
 
-![](assets/do-not-localize/orange_2.png) 11 **december 2019**: new build (9032@bc4a935), die de volgende oplossing bevat:
+![](assets/do-not-localize/orange_2.png) **11 december 2019**: new build (9032@bc4a935), die de volgende oplossing bevat:
 
 * Oplossing voor een prestatieprobleem bij het verzenden van berichten met een MSSQL-database. (NEO-1758)
 
-![](assets/do-not-localize/orange_2.png) 20 **november 2019**: new build (9032@3468c7b) met de volgende oplossingen:
+![](assets/do-not-localize/orange_2.png) **20 november 2019**: new build (9032@3468c7b) met de volgende oplossingen:
 
 * Oplossing voor een aanmeldingsprobleem via IMS-verificatie. (NEO-17312)
 * Probleem verholpen bij het weergeven van cumulatieve rapporten over meerdere leveringen. (NEO-18165)
 * Probleem verholpen waarbij de webserver vastliep of kon blokkeren.
 
-![](assets/do-not-localize/orange_2.png) 19 **september 2019**: new build (9032@cee805c) met de volgende oplossingen:
+![](assets/do-not-localize/orange_2.png) **19 september 2019**: new build (9032@cee805c) met de volgende oplossingen:
 
 * Probleem verholpen bij gebruik van de CRM-connector voor Salesforce. (NEO-17712)
 * Probleem verholpen met een index die prestatieproblemen kan veroorzaken bij het verzenden van transactieberichten.
 
-![](assets/do-not-localize/orange_2.png) 13 **augustus 2019**: eerste 19.1.4-build met de volgende oplossingen:
+![](assets/do-not-localize/orange_2.png) **13 augustus 2019**: eerste 19.1.4-build met de volgende oplossingen:
 
 * Oplossing voor een probleem met de planneractiviteit die ongewenste foutberichten tijdens de configuratie van de wizard genereerde. Bijwerken vanuit NEO-11662 wordt ongedaan gemaakt. (NEO-17097)
 * Oplossing voor een regressie veroorzaakt door NEO-12727 die ertoe zou kunnen leiden dat werkstromen worden gestopt wanneer een testactiviteit tweemaal werd uitgevoerd. (NEO-16835)
@@ -153,15 +156,15 @@ _30 mei 2019_
  <tbody> 
   <tr> 
    <td> Deelvenster Beheer<br /> </td> 
-   <td> <p>Om uw werk als Admin gebruiker efficiënter te maken, beheer montages van uw servers SFTP door opslag, het fluiten van IP adressen, en het installeren van de sleutels van SSH voor elke instantie te controleren. Houd er rekening mee dat het Configuratiescherm vanaf vandaag alleen beschikbaar is voor klanten die op AWS worden gehost (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">meld u vandaag</a>aan via de Experience Cloud).</p> <p>Raadpleeg voor meer informatie de <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">gedetailleerde documentatie</a> en de <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">Hoe kan ik-video</a>. </p><p>Opmerking: U hoeft niet te upgraden naar de nieuwste build voor campagnes om toegang te krijgen tot het Configuratiescherm.</p> </td> 
+   <td> <p>Om de efficiëntie van uw werk als Admin-gebruiker te verhogen, beheert u instellingen van uw SFTP-servers door opslag te controleren, IP-adressen toe te voegen om lijst toe te staan en SSH-sleutels voor elke instantie te installeren. Houd er rekening mee dat het Configuratiescherm vanaf vandaag alleen beschikbaar is voor klanten die op AWS worden gehost (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">meld u vandaag</a>aan via de Experience Cloud).</p> <p>Raadpleeg voor meer informatie de <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">gedetailleerde documentatie</a> en de <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">Hoe kan ik-video</a>. </p><p>Opmerking: U hoeft niet te upgraden naar de nieuwste build voor campagnes om toegang te krijgen tot het Configuratiescherm.</p> </td> 
   </tr> 
     <tr> 
    <td> Audittrail<br /> </td> 
-   <td> <p>Als beheerder verhoogt u de productiviteit door de wijzigingen te controleren en te beheren die in de Adobe Campagne Classic-instantie zijn aangebracht. Het audittrail zal acties registreren die op Bronschema's, Werkschema's en Opties worden gemaakt. U kunt snel zien of is een element gecreeerd, gewijzigd of geschrapt.</p><p>Raadpleeg voor meer informatie de <a href="../../production/using/audit-trail.md">gedetailleerde documentatie</a> en <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/monitoring/audit-trail.html">hoe kan ik-video</a>.</p></td> 
+   <td> <p>Als beheerder verhoogt u de productiviteit door de wijzigingen te controleren en te beheren die zijn aangebracht in de Adobe Campaign Classic-instantie. Het audittrail zal acties registreren die op Bronschema's, Werkschema's en Opties worden gemaakt. U kunt snel zien of is een element gecreeerd, gewijzigd of geschrapt.</p><p>Raadpleeg voor meer informatie de <a href="../../production/using/audit-trail.md">gedetailleerde documentatie</a> en <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/monitoring/audit-trail.html">hoe kan ik-video</a>.</p></td> 
   </tr> 
   <tr> 
    <td> Guardrail, robuustheid en schaalbaarheid<br /> </td> 
-   <td> Er is een aantal verbeteringen toegevoegd aan Campaign Classic. Hieronder vindt u verbeteringen op het gebied van geleidbaarheid, robuustheid en schaalbaarheid.<br /> </td> 
+   <td> Campaign Classic heeft een aantal verbeteringen aangebracht. Hieronder vindt u verbeteringen op het gebied van geleidbaarheid, robuustheid en schaalbaarheid.<br /> </td> 
   </tr> 
   <tr> 
    <td> Update over compatibiliteitsmatrix<br /> </td> 
@@ -213,7 +216,7 @@ _30 mei 2019_
 * Nu, tijdens de analyse van een decomail levering, als de publicatiemodus aan **[!UICONTROL None]** in de plaatsingstovenaar wordt geplaatst, wordt een fout geregistreerd en de analyse wordt tegengehouden: &quot;Publicatiemodus is ingesteld op &#39;none&#39;: Kan afbeelding niet insluiten. De beelden zullen niet op eigenschaptelefoon worden getoond.&quot; (NEO-12208)
 * Het breedbandbeheer is verbeterd voor transactioneel overseinen. Wanneer de uitzendingen van de uitvoeringsinstantie aan de controleinstantie worden gesynchroniseerd, wordt het @lastModified gebied bijgewerkt aan de huidige datum van het systeem. De optie MC_Update_BlLastModified is toegevoegd voor besturingsinstanties. Waar betekent dat de huidige datum op de controleinstantie (standaardgedrag) zal worden gebruikt. Onwaar betekent dat we de @lastModified-datum van de uitzendingsinstantie gebruiken. (NEO-12579)
 * Er zijn indexen toegevoegd aan de tijdelijke tabellen met coupons om het verzenden van leveringen te optimaliseren. (NEO-12437)
-* In de integratie Analytics is het nu toegestaan om AAM-segmentgegevens met %-teken op te halen. (NEO-12025)
+* In de Analytics-integratie is het nu toegestaan om AAM-segmentgegevens met %-teken op te halen. (NEO-12025)
 * Verwijderd de recordlimiet van 10.000 in WorkflowHeatmap om een probleem met ontbrekende gegevens op te lossen. (NEO-12329)
 * Open Office wordt niet ondersteund en wordt nu volledig uit de toepassing verwijderd. Als u het nog steeds gebruikt, ga naar Libre Office omdat het vanaf 19.1 niet meer werkt.
 * U kunt schrijven toegang tot de activiteit van de Update in Werkschema nu beperken gebruikend systeemfilterattributen. [Meer informatie](../../configuration/using/filtering-schemas.md)
@@ -243,7 +246,7 @@ _30 mei 2019_
 * Probleem verholpen waarbij enkele waarden zouden kunnen worden overschreven bij het exporteren en vervolgens importeren van een object via XML. De optie XtkExport_IncludeDefaultValues is toegevoegd. Wanneer ingesteld op Waar (standaardgedrag), worden alle waarden geëxporteerd. Wanneer ingesteld op Onwaar, worden wijzigingen overschreven met de standaardwaarde. (NEO-11979)
 * Probleem verholpen waarbij de **[!UICONTROL Alert]** workflowactiviteit mislukte wanneer een verrijkingsactiviteit werd toegevoegd na een query. (NEO-12132)
 * Probleem verholpen met Oracle-instellingen waarbij verschuivingen van de pijplijn (triggers) niet met succes zijn opgehaald uit de database waardoor duplicaten werden veroorzaakt. (NEO-12121)
-* Correctie van een probleem dat weergavefouten kon veroorzaken in draaitabellen bij gebruik van de integratie Analytics (NEO-12103)
+* Correctie van een probleem dat weergavefouten kon veroorzaken in draaitabellen bij gebruik van de Analytics-integratie (NEO-12103)
 * Probleem opgelost met het rapport van de beschrijvende analyse. (NEO-11414)
 * Probleem verholpen met CRM-connectors wanneer de externe tabel een veld met een onderstrepingsteken in de naam bevatte.
 * Probleem opgelost waarbij valutasymbolen in Hypotheseverslagen konden worden weergegeven. (NEO-11634)
@@ -266,7 +269,7 @@ _30 mei 2019_
 * Probleem verholpen met de activiteit Bestand splitsen bij het importeren van soorten publiek uit Audience Manager. (NEO-11550)
 * Probleem verholpen dat fouten veroorzaakte in het rapport met hot click. (NEO-11459)
 * Probleem verholpen met renderen van aanbieding. (NEO-11565)
-* Probleem verholpen met de activiteit van de Update van de Lijst wanneer het invoeren van publiek van de Manager van het Publiek. (NEO-11226)
+* Probleem verholpen met de activiteit van de Update van de Lijst wanneer het invoeren van publiek van Audience Manager. (NEO-11226)
 * Oplossing voor een probleem met de activiteiten en configuratie van de tijdzone van het Programma. (NEO-11662)
 * Probleem verholpen waarbij de traceringsworkflow mislukte in het geval van onjuist gevormde URL&#39;s.
 * Probleem met externe accounts opgelost na het importeren van het pakket met mobiele toepassingen.
