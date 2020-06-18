@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+workflow-type: tm+mt
+source-wordcount: '2822'
+ht-degree: 0%
 
 ---
 
 
 # Algemene configuraties{#general-configurations}
 
-In deze sectie wordt de configuratie beschreven die in Adobe Campagne v7 moet worden uitgevoerd als u van versie 5.11 of v6.02 migreert.
+In deze sectie wordt de configuratie beschreven die in Adobe Campaign v7 moet worden uitgevoerd als u van versie 5.11 of v6.02 migreert.
 
 Daarnaast:
 
@@ -89,9 +92,9 @@ Controleren of beide zijden zich in dezelfde tijdzone bevinden:
 
 >[!IMPORTANT]
 >
->Om veiligheidsredenen is het Adobe Campagne-platform niet meer standaard toegankelijk: u moet de veiligheidsstreken vormen, en daarom exploitantIP adressen verzamelen.
+>Om veiligheidsredenen is het Adobe Campaign-platform niet meer standaard toegankelijk: u moet de veiligheidsstreken vormen, en daarom exploitantIP adressen verzamelen.
 
-Adobe Campaign v7 heeft betrekking op het concept van **beveiligingszones**. Elke gebruiker moet met een streek worden geassocieerd om aan login aan een instantie en het IP van de gebruiker adres moet in de adressen of adreswaaiers worden omvat die in de veiligheidsstreek worden bepaald. U kunt de beveiligingszones configureren in het configuratiebestand van de Adobe Campagne-server. De veiligheidsstreek waaraan een gebruiker wordt geassocieerd moet in de console (**[!UICONTROL Administration > Access management > Operators]**) worden bepaald.
+Adobe Campaign v7 heeft betrekking op het concept van **veiligheidszones**. Elke gebruiker moet met een streek worden geassocieerd om aan login aan een instantie en het IP van de gebruiker adres moet in de adressen of adreswaaiers worden omvat die in de veiligheidsstreek worden bepaald. U kunt de beveiligingszones configureren in het configuratiebestand van de Adobe Campaign-server. De veiligheidsstreek waaraan een gebruiker wordt geassocieerd moet in de console (**[!UICONTROL Administration > Access management > Operators]**) worden bepaald.
 
 **Vraag uw netwerkbeheerder vóór de migratie** om u te helpen de beveiligingszones definiëren die na de migratie moeten worden geactiveerd.
 
@@ -113,13 +116,13 @@ nlserver config -internalpassword
 
 ### Nieuwe functies in v7 {#new-features-in-v7}
 
-* Gebruikers zonder machtigingen kunnen geen verbinding meer maken met Adobe Campaign. Hun toestemmingen moeten manueel worden toegevoegd, bijvoorbeeld, door een toestemming te creëren genoemd **verbind**.
+* Gebruikers zonder machtigingen kunnen niet langer verbinding maken met Adobe Campaign. Hun toestemmingen moeten manueel worden toegevoegd, bijvoorbeeld, door een toestemming te creëren genoemd **verbind**.
 
    De gebruikers die door deze wijziging worden beïnvloed worden geïdentificeerd en worden vermeld tijdens postupgrade.
 
 * Tekstspatiëring werkt niet meer als het wachtwoord leeg is. Als dit het geval is, zal een foutenmelding u op de hoogte brengen en u vragen om het aan te passen.
 * Gebruikerswachtwoorden worden niet meer opgeslagen in het schema **xtk:sessionInfo** .
-* Beheermachtigingen zijn nu nodig om de functies **xtk:builder:EvaluateJavaScript** en **xtk:builder:EvaluateJavaScriptTemplate** te gebruiken.
+* Beheerdersmachtigingen zijn nu nodig om de functies **xtk:builder:EvaluateJavaScript** en **xtk:builder:EvaluateJavaScriptTemplate** te gebruiken.
 
 Bepaalde out-of-the-box schema&#39;s zijn gewijzigd en zijn nu standaard alleen toegankelijk met schrijftoegang voor operatoren met de **beheerdersbevoegdheid** :
 
@@ -192,18 +195,18 @@ Bijvoorbeeld:
 
 ```
 <url IPMask="" deny="" hostMask="" httpAllowed="true" relayHost="true" relayPath="true"
-           status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="*/cus/myPublicPage.jssp"/>
+           status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="*/cus/myPublicPage.jssp"/>
 ```
 
 ## Syntaxis {#syntax}
 
 ### JavaScript {#javascript}
 
-In Adobe Campaign v7 is een recentere JavaScript-interpreter geïntegreerd. Deze update kan echter tot een storing van bepaalde scripts leiden. Aangezien de vorige motor machtiger was, zou bepaalde syntaxis werken wat niet langer het geval is met de nieuwe versie van de motor.
+Adobe Campaign v7 integreert een recentere tolk JavaScript. Deze update kan echter tot een storing van bepaalde scripts leiden. Aangezien de vorige motor machtiger was, zou bepaalde syntaxis werken wat niet langer het geval is met de nieuwe versie van de motor.
 
 De **[!UICONTROL myObject.@attribute]** syntaxis is nu alleen geldig voor XML-objecten. Deze syntaxis kan worden gebruikt voor het aanpassen van leveringen en inhoudsbeheer. Als u dit type syntaxis op een niet voorwerp van XML gebruikte, zullen de verpersoonlijkingseigenschappen niet meer werken.
 
-Voor alle andere objecttypen is de syntaxis nu **[!UICONTROL myObject`[`&quot;kenmerk&quot;`]`]**. Bijvoorbeeld een niet-XML-object dat de volgende syntaxis heeft gebruikt:**[!UICONTROL employee.@sn]**, moet nu de volgende syntaxis gebruiken:**[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
+Voor alle andere objecttypen is de syntaxis nu **[!UICONTROL myObject`[`&quot;kenmerk&quot;`]`]**. Bijvoorbeeld een niet-XML-object dat de volgende syntaxis heeft gebruikt:**[!UICONTROL employee.@sn]**moet nu de volgende syntaxis gebruiken:**[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
 
 * Voormalige syntaxis:
 
@@ -251,7 +254,7 @@ U kunt een XML-kenmerk niet meer gebruiken als een tabelsleutel.
 
 ### SQLData {#sqldata}
 
-Om de beveiliging van de instantie te versterken, is een nieuwe syntaxis geïntroduceerd in Adobe Campagne v7 om de syntaxis te vervangen die op SQLData wordt gebaseerd. Als u deze code-elementen met deze syntaxis gebruikt, moet u deze wijzigen. De belangrijkste elementen zijn:
+Om de instantieveiligheid te versterken, is een nieuwe syntaxis geïntroduceerd in Adobe Campaign v7 om de syntaxis te vervangen die op SQLData wordt gebaseerd. Als u deze code-elementen met deze syntaxis gebruikt, moet u deze wijzigen. De belangrijkste elementen zijn:
 
 * Filteren op subquery: de nieuwe syntaxis is gebaseerd op het `<subQuery>` element om een subquery te bepalen
 * Aggregaten: de nieuwe syntaxis is &quot;statistische functie(verzameling)&quot;
@@ -265,7 +268,7 @@ Het schema queryDef (xtk:queryDef) is gewijzigd:
 
 Wanneer een &quot;@expr&quot;attribuut wordt gebruikt, kan SQLData aanwezig zijn. U kunt de volgende termen zoeken: &quot;SQLData&quot;, &quot;aliasSqlTable&quot;, &quot;sql&quot;.
 
-Adobe Campagne v7-instanties zijn standaard beveiligd. De veiligheid komt in termen van definities van veiligheidsstreken in het **[!UICONTROL serverConf.xml]** dossier: het **allowSQLInjection** -kenmerk beheert de SQL-syntaxisbeveiliging.
+Adobe Campaign v7-instanties zijn standaard beveiligd. De veiligheid komt in termen van definities van veiligheidsstreken in het **[!UICONTROL serverConf.xml]** dossier: het **allowSQLInjection** -kenmerk beheert de SQL-syntaxisbeveiliging.
 
 Als een SQLData-fout optreedt tijdens de uitvoering na de upgrade, moet u dit kenmerk wijzigen om het gebruik van op SQLData gebaseerde syntaxis tijdelijk toe te staan, zodat u de code kunt herschrijven. Hiervoor moet u de volgende optie wijzigen in het bestand **serverConf.xml** :
 
@@ -451,13 +454,13 @@ Conflicten oplossen moet alleen worden uitgevoerd door gevorderde operatoren en 
 
 U lost een conflict op door het volgende proces toe te passen:
 
-1. Plaats de cursor in de structuur van de Adobe Campagne. **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]**
+1. Plaats de cursor in de Adobe Campaign-boomstructuur **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]**.
 1. Selecteer in de lijst het conflict dat u wilt oplossen.
 
 Er zijn drie manieren om een conflict op te lossen:
 
 * **[!UICONTROL Declared as resolved]**: van tevoren ingrijpen van de exploitant vereist.
-* **[!UICONTROL Accept the new version]**: wordt aangeraden als de bronnen van Adobe Campaign niet door de gebruiker zijn gewijzigd.
+* **[!UICONTROL Accept the new version]**: aanbevolen als de gebruiker de bronnen die bij Adobe Campaign worden geleverd, niet heeft gewijzigd.
 * **[!UICONTROL Keep the current version]**: betekent dat de bijwerking wordt afgewezen.
 
    >[!IMPORTANT]
@@ -469,7 +472,7 @@ Ga als volgt te werk als u het conflict handmatig wilt oplossen:
 
    ![](assets/s_ncs_production_conflict002.png)
 
-1. Verwijder de versie die u niet wilt behouden. Verwijder de entiteit **`_conflict_argument_ string`** die u bijhoudt.
+1. Verwijder de versie die u niet wilt behouden. Verwijder het **`_conflict_argument_ string`** deel van de entiteit die u wilt behouden.
 
    ![](assets/s_ncs_production_conflict003.png)
 
@@ -509,7 +512,7 @@ In v7 is de inhoud van het aanbod verplaatst. In v6.02 bevond de inhoud zich in 
 >[!IMPORTANT]
 Als sommige leveringen die geconfigureerde aanbiedingen gebruiken na de migratie moeten worden verzonden, moet u al deze leveringen in v7 verwijderen en opnieuw maken. Als u dat niet kunt, wordt een &quot;verenigbaarheidswijze&quot;aangeboden. Deze modus wordt niet aanbevolen omdat u niet van alle nieuwe functies in Interaction v7 kunt profiteren. Dit is een overgangsmodus waarmee u lopende campagnes kunt voltooien vóór de daadwerkelijke 6.1-migratie. Neem contact met ons op voor meer informatie over deze modus.
 
-Een voorbeeld van een bewegingsscript (**interactionTo610_full_XX.js**) is beschikbaar in de map **Migration** in de map Adobe Campagne v7. In dit bestand ziet u een voorbeeld van een script voor een client dat gebruikmaakt van één e-mailrepresentatie per aanbieding (de **[!UICONTROL htmlSource]** velden en **[!UICONTROL textSource]** velden). De inhoud in de tabel **NmsEmailOfferView** is verplaatst naar de tabel met aanbiedingen.
+Een voorbeeld van een bewegingsscript (**interactionTo610_full_XX.js**) is beschikbaar in de map **Migration** in de map Adobe Campaign v7. In dit bestand ziet u een voorbeeld van een script voor een client dat gebruikmaakt van één e-mailrepresentatie per aanbieding (de **[!UICONTROL htmlSource]** velden en **[!UICONTROL textSource]** velden). De inhoud in de tabel **NmsEmailOfferView** is verplaatst naar de tabel met aanbiedingen.
 
 >[!NOTE]
 Met dit script kunt u niet profiteren van de opties voor inhoudsbeheer en renderfuncties. Om van deze functies te profiteren, moet u de catalogusaanbiedingen, in het bijzonder de aanbiedingsinhoud en configuratieruimten heroverwegen.
@@ -625,7 +628,7 @@ Als u de blauwe banner vanaf v7 wilt hebben (zodat u toegang hebt tot de univers
 
 ![](assets/migration_reports_1.png)
 
-Als u wilt profiteren van de nieuwe rapportfuncties, moet u de v.6.x-renderingengine selecteren. Controleer in dit geval al uw scripts en wijzig deze zo nodig. Als u een specifiek script voor OpenOffice hebt toegevoegd voor het exporteren van PDF-bestanden, werkt dit niet meer met de nieuwe PDF-exportengine (PhantomJS).
+Als u wilt profiteren van de nieuwe rapportfuncties, moet u de v.6.x-renderingengine selecteren. Controleer in dit geval al uw scripts en wijzig deze zo nodig. Als u een specifiek script voor OpenOffice hebt toegevoegd aan PDF-export, werkt dit niet meer met de nieuwe PDF-exportengine (PhantomJS).
 
 ## Webtoepassingen {#web-applications}
 
