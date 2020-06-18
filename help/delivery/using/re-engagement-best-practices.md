@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 30f313cecf1c3d7c65f6524a3f86a1c28b35f679
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ ISP&#39;s zoals AOL, Gmail, Microsoft en Yahoo! niet-betrokkenheid weergeven als
 
 ## Hoe moet u inactiviteit aanpakken? {#how-should-you-approach-inactivity-}
 
-Gelukkig kunnen klanten die het Adobe Campagne-platform gebruiken inactiviteit binnen hun exemplaar bekijken door open te bekijken en gegevens volgens het segment te klikken. Aangezien niet-betrokkenheid levering kan belemmeren, kan de eerste gedachte zijn om abonnees uit het gegevensbestand enkel te verwijderen. In sommige gevallen kan dit echter een verkeerde optie blijken. Daarom is een strategie van hernieuwde betrokkenheid (ook wel een win-backstrategie genoemd) de beste aanbeveling om de abonnees te behouden die in het ontvangen van post geïnteresseerd zijn, en geleidelijk degenen te elimineren die geen activiteit meer tonen.
+Gelukkig kunnen klanten die het Adobe Campaign-platform gebruiken inactiviteit in hun exemplaar bekijken door de geopende versie te bekijken en op gegevens te klikken volgens het segment. Aangezien niet-betrokkenheid levering kan belemmeren, kan de eerste gedachte zijn om abonnees uit het gegevensbestand enkel te verwijderen. In sommige gevallen kan dit echter een verkeerde optie blijken. Daarom is een strategie van hernieuwde betrokkenheid (ook wel een win-backstrategie genoemd) de beste aanbeveling om de abonnees te behouden die in het ontvangen van post geïnteresseerd zijn, en geleidelijk degenen te elimineren die geen activiteit meer tonen.
 
 ## Werken herbetrokkenheidscampagnes echt? {#do-re-engagement-campaigns-really-work-}
 
@@ -52,9 +55,9 @@ Volgens een studie over het retourpad werden er herplaatsingscampagnes uitgevoer
 ### Fase 1 {#phase-1}
 
 * De eerste stap is abonnees te identificeren die zeer weinig aan geen open of klikactiviteit hebben, en dienovereenkomstig deze groep te segmenteren die op een vastgestelde tijdkader wordt gebaseerd. De duimregel is om abonnees te bekijken die geen e-mail binnen de afgelopen 90 dagen hebben geopend of geklikt. Dit varieert echter afhankelijk van de aard van de activiteit (bijvoorbeeld seizoensgebonden verzending).
-* Een ander punt om in mening te houden terwijl het bepalen van termijnen is dat ISPs en zwarte lijst bedrijven vinden om betrokkenheid overal tussen 1.5 en 1.8 jaar te zijn. Daarnaast worden gedragsactiviteiten zoals aankopen en website-activiteit, of andere aanraakpunten, zoals voorkeuren tijdens de aanmeldfase of het eerste contactpunt, uitgevoerd.
+* Een ander punt om in mening te houden terwijl het bepalen van timeframes is dat ISPs en de ondernemingen van de bloklijst de betrokkenheid om tussen 1.5 en 1.8 jaar overwegen overal te zijn. Daarnaast worden gedragsactiviteiten zoals aankopen en website-activiteit, of andere aanraakpunten, zoals voorkeuren tijdens de aanmeldfase of het eerste contactpunt, uitgevoerd.
 
-### Fase 1 {#phase-2}
+### Fase 2 {#phase-2}
 
 * Zodra een segment wordt bepaald, is de volgende stap een re-betrokkenheidscampagne te creëren die aan de abonnee volgens de metriek behandelt die zijn geïdentificeerd. Het creëren van een onderwerpregel zal helpen de rente van de abonnee verhogen. Volgens een onderzoek van de Weg van de Terugkeer, produceren de onderwerplijnen en de inhoud die &quot;Wij missen u&quot;hogere reactiesnelheden dan &quot;wij willen u terug&quot;.
 * Een prikkel kan ook worden aangeboden om met e-mail opnieuw in dienst te nemen. Wanneer u aanbiedingen met kortingen overweegt, kunt u het beste dollarbedragen versus percentages gebruiken. Het Weg van de terugkeer stelt ook voor dit te doen aangezien het hogere reactiesnelheden zal veroorzaken. Ten slotte is het ook nuttig om splitstests uit te voeren om de respons en succespercentages te beoordelen.
