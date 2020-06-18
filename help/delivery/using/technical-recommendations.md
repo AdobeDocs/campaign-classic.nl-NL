@@ -1,6 +1,6 @@
 ---
-title: Technische aanbevelingen om de prestaties te verbeteren met Adobe Campagne Classic
-description: Ontdek de technieken, configuraties en gereedschappen die u kunt gebruiken om de prestaties te verbeteren met Adobe Campagne Classic.
+title: Technische aanbevelingen voor verbetering van de leverbaarheid met Adobe Campaign Classic
+description: Ontdek de technieken, configuraties en gereedschappen die u kunt gebruiken om de prestaties te verbeteren met Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 71be1087-e5ff-4a7a-85ca-36803839e72f
 contentOwner: sauviat
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2436'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Hieronder vindt u een overzicht van verschillende technieken, configuraties en g
 
 ### DNS omkeren {#reverse-dns}
 
-De Campagne van Adobe controleert of omgekeerde DNS voor een IP adres wordt gegeven en dat dit correct naar IP wijst.
+Adobe Campaign controleert of omgekeerde DNS voor een IP adres wordt gegeven en dat dit correct naar IP wijst.
 
 Een belangrijk punt in de netwerkconfiguratie zorgt ervoor dat correcte omgekeerde DNS voor elk van de IP adressen voor uitgaande berichten wordt bepaald. Dit betekent dat voor een bepaald IP adres, er een omgekeerd DNS verslag (PTR verslag) met een passende DNS (een verslag van A) die terug naar het aanvankelijke IP adres van een lus voorzien is.
 
@@ -85,11 +85,11 @@ Voor het gebruik van DKIM zijn enkele voorwaarden vereist:
 
 * **Beveiliging**: encryptie is een zeer belangrijk element van DKIM en om het veiligheidsniveau van DKIM sinds het voorjaar 2013 te verzekeren, is 1024b de Beste praktijken geadviseerde encryptiegrootte. De lagere sleutels DKIM zullen niet als geldig door de meerderheid van toegangsleveranciers worden beschouwd.
 * **Reputatie**: de reputatie is gebaseerd op IP en/of het domein, maar de minder transparante selecteur DKIM is ook een zeer belangrijk element dat in aanmerking moet worden genomen. Het is belangrijk dat u de kiezer kiest: vermijden dat de &quot; wanbetaling &quot; , die door iedereen gebruikt zou kunnen worden , behouden blijft en dus een zeer zwakke reputatie heeft . U moet een verschillende selecteur voor **behoud vs. verwervingsmededelingen** en voor authentificatie uitvoeren.
-* **Optiedeclaratie** Adobe Campagne: in de campagne van Adobe is de privé sleutel DKIM gebaseerd op een selecteur DKIM en een domein. Het is momenteel niet mogelijk om meerdere persoonlijke sleutels voor hetzelfde domein of subdomein te maken met verschillende kiezers. Het is niet mogelijk om te bepalen welk selecteerdomein/subdomein voor de authentificatie in noch het platform noch e-mail moet worden gebruikt. Het platform zal alternatief één van de privé sleutels selecteren, wat betekent de authentificatie een hoge kans heeft om te ontbreken.
+* **Optiedeclaratie** Adobe Campaign: in de campagne van Adobe is de privé sleutel DKIM gebaseerd op een selecteur DKIM en een domein. Het is momenteel niet mogelijk om meerdere persoonlijke sleutels voor hetzelfde domein of subdomein te maken met verschillende kiezers. Het is niet mogelijk om te bepalen welk selecteerdomein/subdomein voor de authentificatie in noch het platform noch e-mail moet worden gebruikt. Het platform zal alternatief één van de privé sleutels selecteren, wat betekent de authentificatie een hoge kans heeft om te ontbreken.
 
 >[!NOTE]
 >
->* Als u DomainKeys voor uw instantie van de Campagne van Adobe hebt gevormd, moet u enkel **dkim** in de regels [van het](../../delivery/using/understanding-delivery-failures.md#domain-management)Domeinbeheer selecteren. Indien niet, volg de zelfde configuratiestappen (privé/openbare sleutel) zoals voor DomainKeys.
+>* Als u DomainKeys voor uw instantie van Adobe Campaign hebt gevormd, moet u enkel **dkim** in de het beheersregels [van het](../../delivery/using/understanding-delivery-failures.md#domain-management)Domein selecteren. Indien niet, volg de zelfde configuratiestappen (privé/openbare sleutel) zoals voor DomainKeys.
 >* Het is niet noodzakelijk om zowel DomainKeys als DKIM voor het zelfde domein toe te laten aangezien DKIM een betere versie van DomainKeys is.
 >* De volgende domeinen valideren momenteel DKIM: AOL, Gmail.
 
@@ -138,7 +138,7 @@ Recommendations for defining an SPF record:
 
 ## Feedbacklus {#feedback-loop}
 
-Een feedbacklijn werkt door op het ISP niveau een bepaald e-mailadres voor een waaier van IP adressen te verklaren die voor het verzenden van berichten worden gebruikt. ISP zal naar deze brievenbus, op een gelijkaardige manier verzenden zoals wat voor stuitberichten wordt gedaan, die berichten die door ontvangers als spam worden gemeld. Het platform moet zo worden geconfigureerd dat toekomstige leveringen aan gebruikers die een klacht hebben ingediend, worden geblokkeerd. Het is belangrijk dat zij niet langer contact met hen opnemen, ook al hebben zij niet de juiste opt-out-link gebruikt. Op basis van deze klachten zal een ISP een IP-adres op een zwarte lijst zetten. Afhankelijk van ISP, zal een klachtentarief van rond 1% in de zwarte lijst van een IP adres resulteren.
+Een feedbacklijn werkt door op het ISP niveau een bepaald e-mailadres voor een waaier van IP adressen te verklaren die voor het verzenden van berichten worden gebruikt. ISP zal naar deze brievenbus, op een gelijkaardige manier verzenden zoals wat voor stuitberichten wordt gedaan, die berichten die door ontvangers als spam worden gemeld. Het platform moet zo worden geconfigureerd dat toekomstige leveringen aan gebruikers die een klacht hebben ingediend, worden geblokkeerd. Het is belangrijk dat zij niet langer contact met hen opnemen, ook al hebben zij niet de juiste opt-out-link gebruikt. Het is op basis van deze klachten dat ISP een IP adres aan zijn bloklijst zal toevoegen. Afhankelijk van ISP, zal een klachtentarief van rond 1% in het blokkeren van een IP adres resulteren.
 
 Er wordt momenteel een standaard ontwikkeld voor het definiëren van de indeling van feedbacklusberichten: de [Misbruikrapportage-indeling (ARF)](https://tools.ietf.org/html/rfc6650).
 
@@ -147,7 +147,7 @@ Het implementeren van een feedbacklus voor een instantie vereist:
 * Een brievenbus specifiek aan de instantie, die de stuiterende brievenbus kan zijn
 * IP die adressen verzendt specifiek aan de instantie
 
-Bij het implementeren van een eenvoudige feedbacklus in Adobe Campaign wordt de functionaliteit voor het verzenden van berichten gebruikt. De terugkoppelt lijnbrievenbus wordt gebruikt als stuiterende brievenbus en een regel wordt bepaald om deze berichten te ontdekken. De e-mailadressen van de ontvangers die het bericht als spam hebben gemeld, worden toegevoegd aan de quarantainelijst.
+Bij het implementeren van een eenvoudige feedbacklus in Adobe Campaign wordt de functionaliteit voor het stuiterende bericht gebruikt. De terugkoppelt lijnbrievenbus wordt gebruikt als stuiterende brievenbus en een regel wordt bepaald om deze berichten te ontdekken. De e-mailadressen van de ontvangers die het bericht als spam hebben gemeld, worden toegevoegd aan de quarantainelijst.
 
 * Creeer of wijzig een stuiterende postregel, **Feedback_loop**, in **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** met de reden **Verworpen** en het type **Hard**.
 * Als een brievenbus speciaal voor de terugkoppel lijn is bepaald, bepaal de parameters om tot het toegang te hebben door een nieuwe externe rekening van Bounce Mails binnen te creëren **[!UICONTROL Administration > Platform > External accounts]**.
@@ -171,7 +171,7 @@ Als u gedwongen bent om één enkel te gebruiken terugkoppelt lijnadres voor vee
    </serverConf>
    ```
 
-Met de leveringsservice van Adobe Campaign wordt uw abonnement op feedbacklusservices voor de volgende ISP&#39;s beheerd: AOL, BlueTime, Comcast, Cox, EarthLink, FastMail, Gmail, Hotmail, HostedEmail, Libero, Mail.ru, MailTrust, OpenSRS, QQ, RoadRunner, Synacor, Telenor, Terra, UnitedOnline, USA, XS4ALL, Yahoo, Yandex, Zoho.
+Met de Adobe Campaign Deliverability-service wordt uw abonnement op feedbacklusservices voor de volgende ISP&#39;s beheerd: AOL, BlueTime, Comcast, Cox, EarthLink, FastMail, Gmail, Hotmail, HostedEmail, Libero, Mail.ru, MailTrust, OpenSRS, QQ, RoadRunner, Synacor, Telenor, Terra, UnitedOnline, USA, XS4ALL, Yahoo, Yandex, Zoho.
 
 ## List-Unsubscribe {#list-unsubscribe}
 
@@ -254,11 +254,11 @@ Adobe biedt een speciale IP-strategie voor elke klant met een IP-bestand voor he
 
 ## IP-certificering {#ip-certification}
 
-IP de Certificatie is een fliteling en verzendend praktijkprogramma dat helpt ervoor zorgen dat de e-mail wordt ontvangen zonder die door antispamfilters of andere e-mailblokkeringssystemen wordt geblokkeerd.
+IP de Certificatie is een verzendend beste praktijkprogramma dat helpt ervoor zorgen dat de e-mail wordt ontvangen zonder die door antispamfilters of andere e-mailblokkeringssystemen wordt geblokkeerd.
 
 Momenteel bieden twee leveranciers IP Certificatie aan: Return Path en Certified Senders Alliance.
 
-Gecertificeerde afzenders worden toegevoegd aan whitelisten voor e-mail die worden gebruikt door wereldwijde postbusproviders en e-mailbeveiligingsbedrijven. Deze commerciële whitelisten zijn gebaseerd op een systeem dat de afzender toestaat om antispamfilters geheel te mijden of stijgende punten worden toegewezen aangezien zij het systeem ingaan.
+Gecertificeerde afzenders worden toegevoegd aan lijsten voor e-mailadressen die worden gebruikt door leveranciers van postvakken en e-mailbeveiligingsbedrijven. Deze commercieel staan lijsten toe zijn gebaseerd op een systeem dat de afzender toelaat om antispamfilters volledig te mijden of stijgende punten worden toegewezen aangezien zij het systeem ingaan.
 
 Het [programma voor de certificering](https://www.validity.com/products/returnpath/certification/) van retourpaden biedt een aantal voordelen, waaronder:
 
@@ -275,6 +275,6 @@ De [Certified Senders Alliance](https://certified-senders.org/certification-proc
 * Bescherming tegen juridische en financiële risico&#39;s door volledige naleving van wettelijke normen
 * Bescherming van de reputatie door middel van vroegtijdige waarschuwingen van het CSA Complaints Office en dagelijkse spamvangrapporten
 
-ISPs is vrij om deze diensten te gebruiken en het aantal ISPs kan afhankelijk van whitelist variëren.
+ISPs is vrij om deze diensten te gebruiken en het aantal ISPs kan afhankelijk van toestaan lijst variëren.
 
 Nochtans, omdat meer en meer ISPs hun antispamfilters bouwen die op het gedrag van elke inbox eigenaar eerder dan het analyseren van de berichtinhoud zelf worden gebaseerd, kan het gebruiken van IP Certificatie geen garantie van inbox plaatsing of zelfs levering zijn.
