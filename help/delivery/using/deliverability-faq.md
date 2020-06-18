@@ -1,6 +1,6 @@
 ---
-title: Belangrijkste punten bij het beheren van de prestaties in Adobe Campagne Classic
-description: Wat zijn de belangrijkste punten om te controleren bij het beheren van de prestaties in Adobe Campaign Classic?
+title: Belangrijkste punten bij het beheren van de leverbaarheid in Adobe Campaign Classic
+description: Wat zijn de belangrijkste punten om te controleren wanneer het beheren van leverbaarheid in Adobe Campaign Classic?
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: 56fed9fff445892366d3e0f1367029882077ae20
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1355'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Ondervindt u een probleem met de leesbaarheid? U kunt hier de oplossing vinden.
 
 Dit bericht geeft aan dat u de quota voor een specifieke MX hebt bereikt en dat u moet wachten om nog een e-mail naar deze provider te kunnen verzenden.
 
-In de Campagne van Adobe, is er een configuratie betreffende het aantal e-mails per uur dat kan worden verzonden. Deze configuratie moet met waakzaamheid worden gebruikt, aangezien het aantal in het geval wordt bepaald het aantal verbindingen die met ISP worden uitgevoerd en niet het aantal werkelijk verzonden e-mails betreft.
+In Adobe Campaign is er een configuratie voor het aantal e-mails per uur dat kan worden verzonden. Deze configuratie moet met waakzaamheid worden gebruikt, aangezien het aantal in het geval wordt bepaald het aantal verbindingen die met ISP worden uitgevoerd en niet het aantal werkelijk verzonden e-mails betreft.
 
 Dit betekent dat een verbinding een MX-regel kan gebruiken zonder dat een e-mail is verzonden. In dit geval, zal een configuratie met IP of een domein met een lage reputatie verscheidene verbindingen moeten proberen alvorens een e-mail te verzenden. Voor elke poging, zal een berichten per uurkrediet worden gebruikt. Als gevolg hiervan zullen de prestaties van de marketingcampagne aanzienlijk worden beïnvloed.
 
@@ -48,40 +48,39 @@ Als u altijd het zelfde foutenbericht voor ISP krijgt, kan uw e-mail of IP als g
 * Werk uw abonnementsformulieren bij om fouten in de ingevoerde domeinnamen op te sporen (bijvoorbeeld: gmaul.com of yaho.com).
 * Als u fouten opmerkt die verklaren dat uw berichten als spam worden verklaard, of dat uw berichten constant worden geblokkeerd, probeer exclusief de ontvangers die niet in één van uw berichten in de laatste 12 maanden van het doel hebben geopend of geklikt.
 
-Als het probleem zich blijft voordoen, neemt u contact op met de commerciële services of de services voor de levering, de Adobe Campagne Client Care of de Adobe Campagne-ondersteuning.
+Neem contact op met de services voor commercieel gebruik of levering, Adobe Campaign Client Care of Adobe Campaign als het probleem zich blijft voordoen.
 
-## Zwarte lijst versus quarantaine {#blacklisting-versus-quarantine}
+## Bloklijst versus quarantaine {#block-list-versus-quarantine}
 
-* **Wat is het verschil tussen een e-mailadres dat op de zwarte lijst staat en een e-mailadres dat in quarantaine is geplaatst?**
+* **Wat is het verschil tussen een e-mailadres in de bloklijst en een in quarantaine geplaatst e-mailadres?**
 
-   * De status **[!UICONTROL Blacklisted]** is een resultaat van een feedbacklus (wanneer een persoon een bericht rapporteert als spam).
+   * De status **[!UICONTROL On block list]** is een resultaat van een feedbacklus (wanneer een persoon een bericht rapporteert als spam).
 
    * De status **[!UICONTROL Quarantined]** is het resultaat van een zachte of harde stuit.
-   Zie [deze sectie](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-blacklisting)voor meer informatie.
+   Zie [deze sectie](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-block-list)voor meer informatie.
 
 * **Wat betekenen de verschillende redenen voor quarantainefouten?**
 
-   Hier volgen tien mogelijke redenen: niet gedefinieerd, gebruiker onbekend, ongeldig domein, adres op de zwarte lijst, geweigerd, fout genegeerd, onbereikbaar, account uitgeschakeld, postvak vol, niet verbonden.
+   Hier volgen tien mogelijke redenen: niet bepaald, gebruiker onbekend, ongeldig domein, adres op bloklijst, geweigerd, fout genegeerd, onbereikbaar, account gehandicapt, brievenbus volledig, niet verbonden.
 
    Voor meer op dit, zie het [Begrip van quarantainebeheer](../../delivery/using/understanding-quarantine-management.md).
 
-## Uitschakelen {#unblacklisting}
+## Verwijderen uit de bloklijst {#remove-from-block-list}
 
-* **Een van mijn ontvangers was per ongeluk op de zwarte lijst gezet. Hoe maak ik de zwarte lijst ongedaan zodat ik ze opnieuw kan versturen?**
+* **Een van mijn ontvangers is per ongeluk aan de bloklijst toegevoegd. Hoe verwijder ik hen uit de bloklijst zodat ik kan beginnen hen berichten opnieuw te verzenden?**
 
    * Ga naar **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
    * Stel in de details van de corresponderende record de waarde van het **[!UICONTROL Status]** veld in op **[!UICONTROL Valid]**.
    * Sla de record op.
 
-* **Hoe kan ik weten of één van mijn IPs zwarte lijst is? Hoe maak ik mijn IP(s) niet op de zwarte lijst?**
+* **Hoe kan ik te weten komen of één van mijn IPs op een bloklijst is? Hoe verwijder ik mijn IP(s) uit een bloklijst?**
 
-   Om te controleren of uw IP adres zwarte lijst is, kunt u diverse websites gebruiken om het te verifiëren:
-   * [https://mxtoolbox.com/](https://mxtoolbox.com/)
-   * [https://whatismyipaddress.com/blacklist-check](https://whatismyipaddress.com/blacklist-check)
-   * [https://www.blacklistalert.org/](https://www.blacklistalert.org/)
-   Over het algemeen, zal het resultaat van de IP adrescontrole een lijst terugkeren die details van de zwarte lijst en ook de naam van de website bevat die het IP adres zwarte lijst maakt.
+   Om te controleren of uw IP adres op een bloklijst is, kunt u diverse websites gebruiken om het te verifiëren, zoals:
+   * [MX-gereedschapset](https://mxtoolbox.com/)
+   * [Wat is mijn IP adres](https://whatismyipaddress.com)
+   Over het algemeen, zal het resultaat van de IP adrescontrole een lijst terugkeren die details van de bloklijst en ook de naam van de website bevat die het IP adres blokkeerde.
 
-   Als u op de desbetreffende koppeling klikt, hebt u toegang tot de gegevens van de website. Vervolgens kunt u vragen dat uw website wordt verwijderd van de website die het IP-adres op een zwarte lijst zet.
+   Als u op de desbetreffende koppeling klikt, hebt u toegang tot de gegevens van de website. Vervolgens kunt u vragen dat uw website wordt verwijderd van de website die het IP-adres aan de bloklijst heeft toegevoegd.
 
    >[!NOTE]
    >
