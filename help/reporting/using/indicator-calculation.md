@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 5ebea30c743ab416ede879c74735e2c7870d3db9
+workflow-type: tm+mt
+source-wordcount: '2980'
+ht-degree: 0%
 
 ---
 
@@ -27,10 +30,10 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Label</strong><br /> </th> 
-   <th> <strong>Veldnaam</strong><br /> </th> 
-   <th> <strong>Indicatorbeschrijving</strong><br /> </th> 
-   <th> <strong>Indicatorberekeningsformule</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
+   <th> <strong>Veldnaam</strong> <br /> </th> 
+   <th> <strong>Beschrijving van de indicator</strong> <br /> </th> 
+   <th> <strong>Indicatorberekeningsformule</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -66,10 +69,10 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery and tracking statistics]**
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Label</strong><br /> </th> 
-   <th> <strong>Veldnaam</strong><br /> </th> 
-   <th> <strong>Indicatorbeschrijving</strong><br /> </th> 
-   <th> <strong>Indicatorberekeningsformule</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
+   <th> <strong>Veldnaam</strong> <br /> </th> 
+   <th> <strong>Beschrijving van de indicator</strong> <br /> </th> 
+   <th> <strong>Indicatorberekeningsformule</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -149,10 +152,10 @@ Dit rapport is gebaseerd op de **[!UICONTROL Internet Browser Statistics]** lijs
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Label</strong><br /> </th> 
-   <th> <strong>Veldnaam</strong><br /> </th> 
-   <th> <strong>Indicatorbeschrijving</strong><br /> </th> 
-   <th> <strong>Indicatorberekeningsformule</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
+   <th> <strong>Veldnaam</strong> <br /> </th> 
+   <th> <strong>Beschrijving van de indicator</strong> <br /> </th> 
+   <th> <strong>Indicatorberekeningsformule</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -182,10 +185,10 @@ Dit rapport is gebaseerd op de **[!UICONTROL Internet Browser Statistics]** lijs
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Label</strong><br /> </th> 
-   <th> <strong>Veldnaam</strong><br /> </th> 
-   <th> <strong>Indicatorbeschrijving</strong><br /> </th> 
-   <th> <strong>Indicatorberekeningsformule</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
+   <th> <strong>Veldnaam</strong> <br /> </th> 
+   <th> <strong>Beschrijving van de indicator</strong> <br /> </th> 
+   <th> <strong>Indicatorberekeningsformule</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -217,10 +220,10 @@ Dit rapport is gebaseerd op de tabellen **[!UICONTROL Delivery]** (nms:delivery)
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Label</strong><br /> </th> 
-   <th> <strong>Veldnaam</strong><br /> </th> 
-   <th> <strong>Indicatorbeschrijving</strong><br /> </th> 
-   <th> <strong>Indicatorberekeningsformule</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
+   <th> <strong>Veldnaam</strong> <br /> </th> 
+   <th> <strong>Beschrijving van de indicator</strong> <br /> </th> 
+   <th> <strong>Indicatorberekeningsformule</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -286,10 +289,10 @@ Dit rapport is gebaseerd op de tabellen **[!UICONTROL Delivery]** (nms:delivery)
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Label</strong><br /> </th> 
-   <th> <strong>Veldnaam</strong><br /> </th> 
-   <th> <strong>Indicatorbeschrijving</strong><br /> </th> 
-   <th> <strong>Indicatorberekeningsformule</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
+   <th> <strong>Veldnaam</strong> <br /> </th> 
+   <th> <strong>Beschrijving van de indicator</strong> <br /> </th> 
+   <th> <strong>Indicatorberekeningsformule</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -319,10 +322,10 @@ Dit rapport is gebaseerd op de tabellen **[!UICONTROL Delivery]** (nms:delivery)
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Label</strong><br /> </th> 
-   <th> <strong>Veldnaam</strong><br /> </th> 
-   <th> <strong>Indicatorbeschrijving</strong><br /> </th> 
-   <th> <strong>Indicatorberekeningsformule</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
+   <th> <strong>Veldnaam</strong> <br /> </th> 
+   <th> <strong>Beschrijving van de indicator</strong> <br /> </th> 
+   <th> <strong>Indicatorberekeningsformule</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -354,10 +357,10 @@ Dit rapport is gebaseerd op de tabellen **[!UICONTROL Delivery]** (nms:delivery)
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Label</strong><br /> </th> 
-   <th> <strong>Veldnaam</strong><br /> </th> 
-   <th> <strong>Indicatorbeschrijving</strong><br /> </th> 
-   <th> <strong>Indicatorberekeningsformule</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
+   <th> <strong>Veldnaam</strong> <br /> </th> 
+   <th> <strong>Beschrijving van de indicator</strong> <br /> </th> 
+   <th> <strong>Indicatorberekeningsformule</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -391,10 +394,10 @@ Dit rapport is gebaseerd op de **[!UICONTROL Internet Browser Statistics]** lijs
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Label</strong><br /> </th> 
-   <th> <strong>Veldnaam</strong><br /> </th> 
-   <th> <strong>Indicatorbeschrijving</strong><br /> </th> 
-   <th> <strong>Indicatorberekeningsformule</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
+   <th> <strong>Veldnaam</strong> <br /> </th> 
+   <th> <strong>Beschrijving van de indicator</strong> <br /> </th> 
+   <th> <strong>Indicatorberekeningsformule</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -424,10 +427,10 @@ Dit rapport is gebaseerd op de **[!UICONTROL Internet Browser Statistics]** lijs
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Label</strong><br /> </th> 
-   <th> <strong>Veldnaam</strong><br /> </th> 
-   <th> <strong>Indicatorbeschrijving</strong><br /> </th> 
-   <th> <strong>Indicatorberekeningsformule</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
+   <th> <strong>Veldnaam</strong> <br /> </th> 
+   <th> <strong>Beschrijving van de indicator</strong> <br /> </th> 
+   <th> <strong>Indicatorberekeningsformule</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -459,10 +462,10 @@ Dit rapport is gebaseerd op de **[!UICONTROL Services]** lijst (nms:service).
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Label</strong><br /> </th> 
-   <th> <strong>Veldnaam</strong><br /> </th> 
-   <th> <strong>Indicatorbeschrijving</strong><br /> </th> 
-   <th> <strong>Indicatorberekeningsformule</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
+   <th> <strong>Veldnaam</strong> <br /> </th> 
+   <th> <strong>Beschrijving van de indicator</strong> <br /> </th> 
+   <th> <strong>Indicatorberekeningsformule</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -487,7 +490,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Services]** lijst (nms:service).
   <tr> 
    <td> Evolutie<br /> </td> 
    <td> -<br /> </td> 
-   <td> Aantal abonnementen min het aantal afboekingen. De rentevoet wordt berekend op basis van het totale aantal abonnees.<br /> </td> 
+   <td> Aantal abonnementen min het aantal afboekingen. De rentevoet wordt berekend in verhouding tot het totale aantal abonnees.<br /> </td> 
    <td> IF(number(@_subscription) &gt; number(@_unsubscription), '+', '')+format(@_subscription - @_unsubscription, 'number', '##0')+ Iif(@_subscriber&gt;0,' (' + format(100*percent(@_subscription - @_unsubscription, @_subscriber), 'number', '#,##0.0 0')+ '%)','')<br /> </td> 
   </tr> 
   <tr> 
@@ -506,10 +509,10 @@ Dit rapport is gebaseerd op de tabellen **[!UICONTROL Delivery and tracking stat
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Label</strong><br /> </th> 
-   <th> <strong>Veldnaam</strong><br /> </th> 
-   <th> <strong>Indicatorbeschrijving</strong><br /> </th> 
-   <th> <strong>Indicatorberekeningsformule</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
+   <th> <strong>Veldnaam</strong> <br /> </th> 
+   <th> <strong>Beschrijving van de indicator</strong> <br /> </th> 
+   <th> <strong>Indicatorberekeningsformule</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -550,7 +553,7 @@ Dit rapport is gebaseerd op de tabellen **[!UICONTROL Delivery and tracking stat
    <td> count(Iif([url/@type]=6, @id, 0)<br /> </td> 
   </tr> 
   <tr> 
-   <td> Schatting van de forwards<br /> </td> 
+   <td> Raming van de forwards<br /> </td> 
    <td> @forward<br /> </td> 
    <td> Verschil tussen het aantal verschillende personen en het aantal verschillende ontvangers dat ten minste één keer in de e-mail heeft geklikt.<br /> </td> 
    <td> @personClick - @receivingClick<br /> </td> 
@@ -564,7 +567,7 @@ Dit rapport is gebaseerd op de tabellen **[!UICONTROL Delivery and tracking stat
   <tr> 
    <td> Klachten<br /> </td> 
    <td> @klachten<br /> </td> 
-   <td> Aantal berichten met een status gelijk aan "Mislukt" en een reden gelijk aan "adres op de zwarte lijst".<br /> </td> 
+   <td> Aantal berichten met een status gelijk aan "Mislukt" en een reden gelijk aan "adres toegevoegd aan de bloklijst".<br /> </td> 
    <td> Count(@status=2 en msg/@failureReason=8)<br /> </td> 
   </tr> 
   <tr> 
@@ -703,10 +706,10 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** tabel (nms:delivery).
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Label</strong><br /> </th> 
-   <th> <strong>Veldnaam</strong><br /> </th> 
-   <th> <strong>Indicatorbeschrijving</strong><br /> </th> 
-   <th> <strong>Indicatorberekeningsformule</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
+   <th> <strong>Veldnaam</strong> <br /> </th> 
+   <th> <strong>Beschrijving van de indicator</strong> <br /> </th> 
+   <th> <strong>Indicatorberekeningsformule</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -730,7 +733,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** tabel (nms:delivery).
   </tr> 
   <tr> 
    <td> Klikken<br /> </td> 
-   <td> @_klikken<br /> </td> 
+   <td> @_click<br /> </td> 
    <td> Aantal alle @totalClicks met een URL-primaire sleutel anders dan 1<br /> </td> 
    <td> count(if([@url-id]!= 1, @totalClicks, 0)<br /> </td> 
   </tr> 
@@ -750,10 +753,10 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** tabel (nms:delivery).
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Label</strong><br /> </th> 
-   <th> <strong>Veldnaam</strong><br /> </th> 
-   <th> <strong>Indicatorbeschrijving</strong><br /> </th> 
-   <th> <strong>Indicatorberekeningsformule</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
+   <th> <strong>Veldnaam</strong> <br /> </th> 
+   <th> <strong>Beschrijving van de indicator</strong> <br /> </th> 
+   <th> <strong>Indicatorberekeningsformule</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -766,7 +769,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** tabel (nms:delivery).
   <tr> 
    <td> Berichten afgewezen door de regel<br /> </td> 
    <td> @weiger<br /> </td> 
-   <td> Aantal adressen genegeerd tijdens de analyse in overeenstemming met typologieregels: adres niet gespecificeerd, quarantined, zwarte lijst, enz.<br /> </td> 
+   <td> Aantal adressen genegeerd tijdens de analyse in overeenstemming met typologieregels: adres niet gespecificeerd, quarantined, toegevoegd aan de bloklijst, enz.<br /> </td> 
    <td> sum([eigenschappen/@weiger])<br /> </td> 
   </tr> 
   <tr> 
@@ -809,10 +812,10 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** tabel (nms:delivery).
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Label</strong><br /> </th> 
-   <th> <strong>Veldnaam</strong><br /> </th> 
-   <th> <strong>Indicatorbeschrijving</strong><br /> </th> 
-   <th> <strong>Indicatorberekeningsformule</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
+   <th> <strong>Veldnaam</strong> <br /> </th> 
+   <th> <strong>Beschrijving van de indicator</strong> <br /> </th> 
+   <th> <strong>Indicatorberekeningsformule</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -829,7 +832,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** tabel (nms:delivery).
    <td> sum(Iif([url/@type] = 1, @totalClicks, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Openen<br /> </td> 
+   <td> Open<br /> </td> 
    <td> @open<br /> </td> 
    <td> De som van alle @totalClicks met een primaire URL-sleutel die gelijk is aan 1.<br /> </td> 
    <td> sum(Iif([@url-id] = 1, @totalClicks, 0)<br /> </td> 
@@ -844,10 +847,10 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery and tracking statistics]**
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Label</strong><br /> </th> 
-   <th> <strong>Veldnaam</strong><br /> </th> 
-   <th> <strong>Indicatorbeschrijving</strong><br /> </th> 
-   <th> <strong>Indicatorberekeningsformule</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
+   <th> <strong>Veldnaam</strong> <br /> </th> 
+   <th> <strong>Beschrijving van de indicator</strong> <br /> </th> 
+   <th> <strong>Indicatorberekeningsformule</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -898,15 +901,15 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery and tracking statistics]**
 
 ## Indeling van openen {#breakdown-of-opens-1}
 
-Dit rapport is gebaseerd op **Leveringen** (nms:levering) en **het Volgen logboeken** (nms:trackingLogRcp) lijsten.
+Dit rapport is gebaseerd op **Leveringen** (nms:levering) en het **Volgen logboeken** (nms:trackingLogRcp) lijsten.
 
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Label</strong><br /> </th> 
-   <th> <strong>Veldnaam</strong><br /> </th> 
-   <th> <strong>Indicatorbeschrijving</strong><br /> </th> 
-   <th> <strong>Indicatorberekeningsformule</strong><br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
+   <th> <strong>Veldnaam</strong> <br /> </th> 
+   <th> <strong>Beschrijving van de indicator</strong> <br /> </th> 
+   <th> <strong>Indicatorberekeningsformule</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -925,20 +928,20 @@ De indicator **Verzonden** (@sent), die via de **Leveringen (nms:levering) wordt
 
 ## Indicatorsynchronisatie {#indicator-synchronization}
 
-Als u voor bepaalde indicatoren een desynchronisatie of inconsistentie ervaart, selecteert u de desbetreffende levering in de Adobe Campagneverkenner, klikt u met de rechtermuisknop en kiest u **[!UICONTROL Action>Recompute delivery and tracking indicators]**. Klik **[!UICONTROL Next]** en klik vervolgens op **[!UICONTROL Finish]**.
+Als u desynchronisatie of inconsistentie voor bepaalde indicatoren ervaart, selecteer de betrokken levering in de ontdekkingsreiziger van Adobe Campaign, klik met de rechtermuisknop en kies **[!UICONTROL Action>Recompute delivery and tracking indicators]**. Klik **[!UICONTROL Next]** en klik vervolgens op **[!UICONTROL Finish]**.
 
 ![](assets/s_ncs_user_recalculate_indicators.png)
 
 ## Tekstspatiëring wordt geopend {#tracking-opens-}
 
-Adobe Campaign kan alleen berichten detecteren als de ontvanger de afbeeldingen in de e-mail heeft gedownload. HTML en Multipart/Alternative e-mails bevatten een afbeelding van 0 pixels, waarmee u berichten kunt detecteren die zijn geopend. Aangezien berichten in tekstopmaak geen afbeeldingen bevatten, is het onmogelijk om te bepalen of ze zijn geopend of niet. Waarden die worden berekend op basis van het bericht dat wordt geopend, zijn altijd schattingen vanwege de foutmarge die is gekoppeld aan de beeldweergave.
+Als Adobe Campaign het bericht pas kan detecteren nadat het is geopend, moet de ontvanger de afbeeldingen in de e-mail downloaden. HTML en Multipart/Alternative e-mails bevatten een afbeelding van 0 pixels, waarmee u berichten kunt detecteren die zijn geopend. Aangezien berichten in tekstopmaak geen afbeeldingen bevatten, is het onmogelijk om te bepalen of ze zijn geopend of niet. Waarden die worden berekend op basis van het bericht dat wordt geopend, zijn altijd schattingen vanwege de foutmarge die is gekoppeld aan de beeldweergave.
 
 ## Gerichte personen/ontvangers {#targeted-persons---recipients}
 
-In sommige rapporten maakt Adobe Campaign onderscheid tussen beoogde personen en beoogde ontvangers.
+In sommige rapporten maakt Adobe Campaign onderscheid tussen doelpersonen en doelgroepen.
 
 De gerichte ontvangers zijn alle ontvangers aan wie de levering werd verzonden.
 
 Het aantal personen omvat de beoogde ontvangers plus alle personen aan wie de e-mail is doorgestuurd. Telkens wanneer er een open of een klik in nieuwe browser (waar het bericht nog niet in is geopend), wordt een andere persoon toegevoegd aan de statistieken.
 
-Als u bijvoorbeeld een e-mail (verzonden door Adobe Campaign) op het werk ontvangt en deze opent of erin klikt, wordt u als een beoogde ontvanger geteld (dus ontvanger=1, persoon=1). Als u deze e-mail doorstuurt naar twee vrienden, blijft het aantal beoogde ontvangers gelijk aan één, terwijl het aantal personen gelijk is aan drie. Waarde 3 valt samen met elke open/klik in een nieuwe browser.
+Als u bijvoorbeeld een e-mail (verzonden door Adobe Campaign) ontvangt op het werk en deze opent of erin klikt, wordt u geteld als een beoogde ontvanger (dus de ontvanger=1, de persoon=1). Als u deze e-mail doorstuurt naar twee vrienden, blijft het aantal beoogde ontvangers gelijk aan één, terwijl het aantal personen gelijk is aan drie. Waarde 3 valt samen met elke open/klik in een nieuwe browser.
