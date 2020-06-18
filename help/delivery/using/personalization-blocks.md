@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+workflow-type: tm+mt
+source-wordcount: '858'
+ht-degree: 0%
 
 ---
 
@@ -26,9 +29,9 @@ De blokken van de verpersoonlijking zijn dynamisch, gepersonaliseerd en bevatten
 
 >[!NOTE]
 >
->De blokken van de verpersoonlijking zijn ook beschikbaar bij **[!UICONTROL Digital Content Editor (DCE)]** . Raadpleeg [deze pagina](../../web/using/editing-content.md#inserting-a-personalization-block)voor meer informatie.
+>De blokken van de verpersoonlijking zijn ook beschikbaar bij **[!UICONTROL Digital Content Editor (DCE)]** . For more on this, refer to [this page](../../web/using/editing-content.md#inserting-a-personalization-block).
 
-U kunt aanpassingsblokken openen via het **[!UICONTROL Resources > Campaign Management > Personalization blocks]** knooppunt van de Adobe Campaign-verkenner. Verscheidene blokken zijn beschikbaar door gebrek (zie uit- [van-de-doos verpersoonlijkingsblokken](#out-of-the-box-personalization-blocks)).
+Personalisatieblokken zijn toegankelijk via het **[!UICONTROL Resources > Campaign Management > Personalization blocks]** knooppunt van de Adobe Campaign Explorer. Verscheidene blokken zijn beschikbaar door gebrek (zie uit- [van-de-doos verpersoonlijkingsblokken](#out-of-the-box-personalization-blocks)).
 
 U hebt de mogelijkheid om nieuwe blokken te definiëren waarmee u uw leveringen kunt optimaliseren. Voor meer op dit, verwijs naar het [bepalen van de blokken](#defining-custom-personalization-blocks)van de douaneverpersoonlijking.
 
@@ -108,7 +111,7 @@ Een lijst van verpersoonlijkingsblokken is beschikbaar door gebrek om u te helpe
    >Raadpleeg [De spiegelpagina](../../delivery/using/sending-messages.md#generating-the-mirror-page)genereren voor meer informatie over het genereren van spiegelpagina&#39;s.
 
 * **[!UICONTROL Link to mirror page]** : voegt een koppeling naar de spiegelpagina in: &quot;Klik hier als je dit bericht niet juist kunt weergeven.&quot;
-* **[!UICONTROL Unsubscription link]** : voegt een koppeling in waarmee u zich kunt afmelden bij alle leveringen (zwarte lijst).
+* **[!UICONTROL Unsubscription link]** : voegt een koppeling in waarmee u zich kunt afmelden bij alle leveringen (bloklijst).
 * **[!UICONTROL Formatting function for proper nouns]** : Hiermee wordt de functie **[!UICONTROL toSmartCase]** JavaScript gegenereerd. De eerste letter van elk woord wordt in hoofdletters gewijzigd. Dit blok moet in de broncode van de levering, in **`<script>...</script>`** markeringen worden opgenomen.
 
    In het onderstaande voorbeeld wordt de functie gebruikt om het element &quot;Mijn koptekst&quot; te vervangen door &quot;Mijn nieuwe koptekst&quot; door hoofdletters bij elk woord:
