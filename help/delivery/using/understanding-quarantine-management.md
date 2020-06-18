@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 527d2dd2296d18c8ca26745b9f87d65c6fdf480a
+source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
+workflow-type: tm+mt
+source-wordcount: '2472'
+ht-degree: 0%
 
 ---
 
@@ -34,21 +37,21 @@ Adobe Campaign beheert een lijst met in quarantaine geplaatste adressen. Ontvang
 
 De profielen waarvan e-mailadressen of telefoonaantal in quarantaine zijn worden automatisch uitgesloten tijdens berichtvoorbereiding (zie het [identificeren van quarantined adressen voor een levering](#identifying-quarantined-addresses-for-a-delivery)). Dit zal leveranties versnellen, aangezien het foutenpercentage een significant effect op leveringssnelheid heeft.
 
-Sommige internetproviders beschouwen e-mails automatisch als spam als de snelheid van ongeldige adressen te hoog is. Met quarantaine kunt u dus voorkomen dat deze providers op zwarte lijsten worden gezet.
+Sommige internetproviders beschouwen e-mails automatisch als spam als de snelheid van ongeldige adressen te hoog is. Met quarantaine kunt u dus voorkomen dat deze providers aan een bloklijst worden toegevoegd.
 
 Bovendien helpen quarantines de verzendkosten van SMS te verminderen door onjuiste telefoonaantallen van leveringen uit te sluiten. Raadpleeg [deze pagina](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)voor meer informatie over tips en trucs voor het beveiligen en optimaliseren van leveringen.
 
-### Quarantine versus zwarte lijst {#quarantine-vs-blacklisting}
+### Quarantine versus block list {#quarantine-vs-block-list}
 
 **Quarantaine** is alleen van toepassing op een adres, niet op het profiel zelf. Dit betekent dat twee profielen met hetzelfde e-mailadres worden beïnvloed als het adres in quarantaine wordt geplaatst.
 
 Op dezelfde manier kan een profiel waarvan het e-mailadres in quarantaine is geplaatst, zijn profiel bijwerken en een nieuw adres invoeren. Dit profiel kan vervolgens opnieuw worden geactiveerd door leveringsacties.
 
-**Wanneer je een abonnement** op een object verkoopt, wordt het profiel niet meer geactiveerd door levering, bijvoorbeeld na een abonnement (opt-out).
+Als het profiel op de **bloklijst** staat, wordt het profiel echter niet meer gericht op levering, bijvoorbeeld na een abonnement (opt-out).
 
 >[!NOTE]
 >
->Wanneer een gebruiker op een SMS-bericht reageert met een trefwoord zoals &quot;STOP&quot; om zich af te melden voor SMS-leveringen, wordt dit profiel niet op de zwarte lijst weergegeven, zoals in het e-mailuitschakelproces. Het profieltelefoonnummer wordt naar quarantaine verzonden, zodat de gebruiker e-mailberichten blijft ontvangen.
+>Wanneer een gebruiker op een SMS-bericht reageert met een trefwoord zoals &quot;STOP&quot; om zich af te melden voor SMS-leveringen, wordt dit profiel niet toegevoegd aan de bloklijst, zoals in het e-mailuitschakelproces. Het profieltelefoonnummer wordt naar quarantaine verzonden, zodat de gebruiker e-mailberichten blijft ontvangen.
 
 ## In quarantaine geplaatste adressen identificeren {#identifying-quarantined-addresses}
 
@@ -103,16 +106,16 @@ Als u een adres uit quarantaine moet verwijderen, verander zijn status manueel i
 
 ![](assets/tech_quarant_error_status.png)
 
-Als u de status wijzigt in **[!UICONTROL Whitelisted]**, wordt het adres systematisch geactiveerd, zelfs als er een fout optreedt.
+Als u de status wijzigt in **[!UICONTROL On allow list]**, wordt het adres systematisch geactiveerd, zelfs als een fout optreedt.
 
 >[!CAUTION]
-De adressen op de zwarte lijst worden niet betrokken bij het quarantainesysteem en zijn niet gericht, zelfs als u de status van het adres verandert.
+De adressen op de bloklijst zijn niet betrokken bij het quarantainesysteem en worden niet gericht, zelfs als u de status van het adres verandert.
 
 U kunt ook het aantal fouten en de periode tussen fouten wijzigen. Hiervoor wijzigt u de instellingen van de implementatietovenaar (instellingen voor E-mailkanaal/Geavanceerd). Raadpleeg [deze sectie](../../installation/using/deploying-an-instance.md)voor meer informatie over de implementatietovenaar.
 
 ## Voorwaarden voor verzending van een adres naar quarantaine {#conditions-for-sending-an-address-to-quarantine}
 
-Adobe Campagne beheert quarantaine volgens het type van leveringsmislukking en de reden die tijdens de kwalificatie van foutenmeldingen (zie de kwalificatie [van de post van de](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)Stuiteren) en de types en de redenen [van de](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)Leveringsmislukking wordt toegewezen.
+Adobe Campaign beheert quarantaine volgens het type van de leveringsmislukking en de reden die tijdens de kwalificatie van foutenmeldingen (zie de kwalificatie [van de](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)post van de Stuitage) en de types en redenen [van de](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)Leveringsmislukking wordt toegewezen.
 
 * **Genegeerde fout**: genegeerde fouten sturen geen adres naar quarantaine.
 * **Harde fout**: het desbetreffende e-mailadres wordt onmiddellijk naar quarantaine verzonden.
@@ -120,7 +123,7 @@ Adobe Campagne beheert quarantaine volgens het type van leveringsmislukking en d
 
 Als een gebruiker een e-mailbericht kwalificeert als een spam (**feedbacklus**), wordt het bericht automatisch doorgestuurd naar een technische mailbox die door Adobe wordt beheerd. Het e-mailadres van de gebruiker wordt vervolgens automatisch naar quarantaine verzonden.
 
-In de lijst van quarantined adressen, wijst het **[!UICONTROL Error reason]** gebied erop waarom het geselecteerde adres in quarantaine werd geplaatst. Quarantaine in Adobe Campaign is hoofdlettergevoelig. Importeer e-mailadressen in kleine letters, zodat ze later niet opnieuw worden toegewezen.
+In de lijst van quarantined adressen, wijst het **[!UICONTROL Error reason]** gebied erop waarom het geselecteerde adres in quarantaine werd geplaatst. Quarantine in Adobe Campaign is hoofdlettergevoelig. Importeer e-mailadressen in kleine letters, zodat ze later niet opnieuw worden toegewezen.
 
 ![](assets/tech_quarant_error_reasons.png)
 
@@ -144,14 +147,14 @@ De items die in quarantaine worden geplaatst, zijn apparaattokens.
 
 **Voor iOS - binaire connector**
 
-Voor elk bericht ontvangt Adobe Campaign de synchrone en asynchrone fouten van de APNS-server. Voor de volgende synchrone fouten genereert Adobe Campaign zachte fouten:
+Voor elk bericht ontvangt Adobe Campaign de synchrone en asynchrone fouten van de APNS-server. Bij de volgende synchrone fouten genereert Adobe Campaign schermfouten:
 
 * Problemen met de lengte van de lading: niet opnieuw proberen, de oorzaak van de fout is **[!UICONTROL Unreachable]**.
 * Problemen met certificaatvervaldatum: niet opnieuw proberen, de oorzaak van de fout is **[!UICONTROL Unreachable]**.
 * Verbinding verloren tijdens levering: opnieuw uitgevoerd, de reden van de fout is **[!UICONTROL Unreachable]**.
 * Uitgave serviceconfiguratie (ongeldig certificaat, ongeldig certificaatwachtwoord, geen certificaat): niet opnieuw proberen, de oorzaak van de fout is **[!UICONTROL Unreachable]**.
 
-De APNS-server waarschuwt Adobe Campaign asynchroon dat een apparaattoken niet is geregistreerd (wanneer de mobiele toepassing door de gebruiker is verwijderd). De **[!UICONTROL mobileAppOptOutMgt]** workflow wordt elke 6 uur uitgevoerd om contact op te nemen met de APNS-feedbackservices om de **AppSubscriptionRcp** -tabel bij te werken. Voor alle gedeactiveerde tokens, wordt het gebied **Uitgeschakeld** geplaatst aan **Waar** en het abonnement verbonden aan dat apparatenteken zal automatisch van toekomstige leveringen worden uitgesloten.
+De APNS-server meldt Adobe Campaign asynchroon dat een apparaattoken niet is geregistreerd (wanneer de mobiele toepassing door de gebruiker is verwijderd). De **[!UICONTROL mobileAppOptOutMgt]** workflow wordt elke 6 uur uitgevoerd om contact op te nemen met de APNS-feedbackservices om de **AppSubscriptionRcp** -tabel bij te werken. Voor alle gedeactiveerde tokens, wordt het gebied **Uitgeschakeld** geplaatst aan **Waar** en het abonnement verbonden aan dat apparatenteken zal automatisch van toekomstige leveringen worden uitgesloten.
 
 **Voor iOS - HTTP/2-connector**
 
@@ -236,7 +239,7 @@ Als APNS synchroon een &quot;niet-geregistreerde&quot; status voor een bericht r
   <tr> 
    <td> APNS-bericht afgewezen: alle andere fouten<br /> </td> 
    <td> Mislukt<br /> </td> 
-   <td> De oorzaak van de foutafstoting komt voor in het foutbericht<br /> </td> 
+   <td> De oorzaak van de fout-afwijzing komt voor in het foutbericht<br /> </td> 
    <td> Zacht<br /> </td> 
    <td> Geweigerd<br /> </td> 
    <td> Nee<br /> </td> 
@@ -264,7 +267,7 @@ Voor klanten die de schakelaar Baidu gebruiken, zijn hier de verschillende soort
 * Verbinding verloren tijdens een levering: soft error, failure reason **[!UICONTROL Refused]**, re try wordt uitgevoerd.
 * Synchrone fout die door Baidu tijdens het verzenden is geretourneerd: harde fout, mislukkingsreden **[!UICONTROL Refused]**, wordt niet opnieuw uitgevoerd.
 
-Adobe Campagne neemt om de 10 minuten contact op met de Baidu-server om de status van het verzonden bericht op te halen en werkt de weblogs bij. Als een bericht wordt verklaard zoals verzonden, wordt de status van het bericht in de uitzendingen geplaatst aan **[!UICONTROL Received]**. Als Baidu een fout declareert, wordt de status ingesteld op **[!UICONTROL Failed]**.
+Adobe Campaign neemt om de 10 minuten contact op met de Baidu-server om de status van het verzonden bericht op te halen en werkt de weblogs bij. Als een bericht wordt verklaard zoals verzonden, wordt de status van het bericht in de uitzendingen geplaatst aan **[!UICONTROL Received]**. Als Baidu een fout declareert, wordt de status ingesteld op **[!UICONTROL Failed]**.
 
 **Voor Android V2**
 
