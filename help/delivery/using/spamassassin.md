@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 0%
 
 ---
 
@@ -24,19 +27,19 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ## Info over SpamAssassin {#about-spamassassin}
 
-De Campagne van Adobe kan worden gevormd om met [SpamAssassin](https://spamassassin.apache.org)te werken, een derdedienst die voor e-mailspamfiltratie wordt gebruikt. Dit staat u toe om e-mailberichten te scoren om te bepalen of een bericht het risico loopt om als spam door de anti-anti-spamhulpmiddelen worden beschouwd die op ontvangstbewijs worden gebruikt.
+Adobe Campaign kan worden gevormd om met [SpamAssassin](https://spamassassin.apache.org)te werken, een derdedienst die voor het filtreren van e-mailspam wordt gebruikt. Dit staat u toe om e-mailberichten te scoren om te bepalen of een bericht het risico loopt om als spam door de anti-anti-spamhulpmiddelen worden beschouwd die op ontvangstbewijs worden gebruikt.
 
 SpamAssassin maakt gebruik van diverse spamdetectietechnieken, waaronder:
 
 * DNS-gebaseerde en op vage controlesom gebaseerde spamdetectie
 * Bayesiaans filteren
 * Externe programma&#39;s
-* Blacklists
+* Bloklijsten
 * Online databases
 
 >[!NOTE]
 >
->SpamAssassin moet op de toepassingsserver van de Campagne van Adobe worden geïnstalleerd en worden gevormd. Zie [deze sectie](../../installation/using/configuring-spamassassin.md)voor meer informatie.
+>SpamAssassin moet op de de toepassingsserver van Adobe Campaign worden geïnstalleerd en worden gevormd. For more on this, refer to [this section](../../installation/using/configuring-spamassassin.md).
 >
 >De regels die bepalen of een element al dan niet spam is worden beheerd via SpamAssassin en kunnen door een beheerder met voorrechten worden uitgegeven.
 
@@ -46,7 +49,7 @@ Nadat u de e-maillevering hebt gemaakt en de inhoud ervan hebt gedefinieerd, vol
 
 Raadpleeg [deze sectie](../../delivery/using/about-email-channel.md)voor meer informatie over het maken en ontwerpen van een levering.
 
-1. Ga naar het **[!UICONTROL Preview]** tabblad.
+1. Go to the **[!UICONTROL Preview]** tab.
 1. Selecteer een ontvanger om een voorvertoning van uw levering weer te geven.
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)
