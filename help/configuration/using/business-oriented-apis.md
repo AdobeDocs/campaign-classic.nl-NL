@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+workflow-type: tm+mt
+source-wordcount: '639'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +48,7 @@ In deze sectie wordt het gebruik van de services &quot;Abonneren&quot;, &quot;Un
 
 >[!IMPORTANT]
 >
->[De documentatie](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) van JSAPI van de campagne bevat extra informatie over de vraag van de ZEEP en het gebruiken van Javascript in de Campagne van Adobe, evenals een volledige verwijzing naar alle methodes en functies die in de toepassing worden gebruikt.
+>[De documentatie](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) van JSAPI van de campagne bevat extra informatie over de vraag van de ZEEP en het gebruiken van Javascript in Adobe Campaign, evenals een volledige verwijzing naar alle methodes en functies die in de toepassing worden gebruikt.
 
 ## Abonneren (nms:abonnement) {#subscribe--nms-subscription-}
 
@@ -147,7 +150,7 @@ Als de ontvanger niet aanwezig in het gegevensbestand is of niet aan de betrokke
 
 >[!NOTE]
 >
->Als de servicenaam niet als parameter is opgegeven, wordt de ontvanger automatisch op de zwarte lijst geplaatst (@blackList=&quot;1&quot;).
+>Als de de dienstnaam niet als parameter wordt gespecificeerd, is de ontvanger dan automatisch op bloklijst (@blockList=&quot;1&quot;).
 
 Deze aanroep retourneert geen gegevens, behalve fouten.
 
