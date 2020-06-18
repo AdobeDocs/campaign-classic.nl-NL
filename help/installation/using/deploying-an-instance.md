@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
-source-wordcount: '3055'
+source-wordcount: '3066'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ## Implementatiewizard {#deployment-wizard}
 
-Met een grafische wizard, die beschikbaar is in de Adobe Campaign-clientconsole, kunt u de parameters definiëren van de instantie waarmee u verbinding wilt maken.
+Met een grafische wizard, die beschikbaar is in de Adobe Campaign-clientconsole, kunt u de parameters definiëren van de instantie waarmee u verbinding gaat maken.
 
 Selecteer **Opties > Geavanceerd > de wizard** Implementatie om de wizard Implementatie te starten.
 
@@ -90,15 +90,15 @@ Geef de volgende parameters op:
 * **[!UICONTROL Sender address]** : het adres van de verzender,
 * **[!UICONTROL Reply address text]** : De naam, die aanpasbaar is, die zal worden gebruikt wanneer de ontvanger de **[!UICONTROL Reply]** knoop in hun e-mailcliëntsoftware klikt,
 * **[!UICONTROL Reply address]** : Het e-mailadres dat moet worden gebruikt wanneer de ontvanger op de **[!UICONTROL Reply]** knop klikt in zijn e-mailclientsoftware.
-* **[!UICONTROL Error address]** : E-mailadres van berichten met fouten. Dit is het technische adres dat wordt gebruikt voor het afhandelen van stuiterende berichten, inclusief e-mails die door de Adobe Campagneserver zijn ontvangen vanwege niet-bestaande doeladressen.
+* **[!UICONTROL Error address]** : E-mailadres van berichten met fouten. Dit is het technische adres dat wordt gebruikt om stuiterende post, met inbegrip van e-mails te behandelen die door de server van Adobe Campaign wegens niet bestaande doeladressen worden ontvangen.
 
-Daarnaast kunt u de **maskers** opgeven die zijn geautoriseerd voor het verzendadres en het foutadres. Indien nodig, kunnen deze maskers met komma&#39;s worden gescheiden. Deze configuratie is optioneel. Wanneer de gebieden zijn ingegaan, controleert de Campagne van Adobe op het tijdstip van levering (tijdens analyse, als het adres geen variabelen omvat) dat de adressen geldig zijn. Deze werkende wijze zorgt ervoor dat geen adressen worden gebruikt die leveringskwesties konden teweegbrengen. De adressen van de levering moeten op de leveringsserver worden gevormd.
+Daarnaast kunt u de **maskers** opgeven die zijn geautoriseerd voor het verzendadres en het foutadres. Indien nodig, kunnen deze maskers met komma&#39;s worden gescheiden. Deze configuratie is optioneel. Wanneer de gebieden zijn ingegaan, controleert Adobe Campaign op het tijdstip van levering (tijdens analyse, als het adres geen variabelen omvat) dat de adressen geldig zijn. Deze werkende wijze zorgt ervoor dat geen adressen worden gebruikt die leveringskwesties konden teweegbrengen. De adressen van de levering moeten op de leveringsserver worden gevormd.
 
 ### Tekens geautoriseerd in adressen {#characters-authorized-in-addresses}
 
 <!--This window enables you to define, for all email campaigns, the delivery and address-quality management options.-->
 
-In de Adobe Campagne-database moeten alle e-mailadressen als volgt worden gemaakt: `x@y.z`. De tekens **x**, **y** en **z** mogen niet leeg zijn en mogen geen niet-toegestane tekens bevatten.
+In de Adobe Campaign-database moeten alle e-mailadressen als volgt worden gemaakt: `x@y.z`. De tekens **x**, **y** en **z** mogen niet leeg zijn en mogen geen niet-toegestane tekens bevatten.
 
 Hier kunt u de geoorloofde tekens (&#39;gegevensbeleid&#39;) definiëren in het e-mailveld van de database. Tekens die niet in de lijst staan, worden verboden en daarom geweigerd wanneer gegevens in de database worden ingevoerd via de interface, via een webformulier en ook wanneer gegevens worden geïmporteerd.
 
@@ -116,7 +116,7 @@ De volgende opties zijn beschikbaar:
 
 * **[!UICONTROL Delivery duration of messages]** : Daarna wordt de levering gestopt (standaard 5 dagen),
 * **[!UICONTROL Online resources validity duration]** : Tijdstip waarop informatie uit het ontvangende profiel wordt bewaard om spiegelpagina&#39;s te genereren;
-* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Als deze optie is geselecteerd, wordt geen contact opgenomen met op de zwarte lijst geplaatste ontvangers.
+* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Als deze optie is geselecteerd, wordt geen contact opgenomen met ontvangers op de bloklijst.
 * **[!UICONTROL Automatically ignore doubles]** : Als deze optie is geselecteerd, wordt de levering niet uitgevoerd naar dubbele adressen.
 
 ### Parameters opnieuw proberen {#retry-parameters}
@@ -155,11 +155,11 @@ Nadat u de POP-instellingen hebt opgegeven, klikt u op **Testen** om te controle
 
 ### Onverwerkte stuitberichten {#unprocessed-bounce-mails}
 
-Stemmen worden automatisch afgehandeld door Adobe Campaign. Hierbij worden de regels toegepast die worden vermeld in het knooppunt **Beheer > Campagnebeheer > Beheer van niet-te leveren items > Kwalificatieknooppunt** van leveringslogboek. Voor meer op dit, verwijs naar [Stuiteren postbeheer](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+De grenzen worden automatisch behandeld door Adobe Campaign, die de regels toepast die in het **Beleid > het Beheer van de Campagne > het Beheer van Niet te leveren Lijsten > het kwalificatieknooppunt** van het Logboek van de Levering worden vermeld. Voor meer op dit, verwijs naar [Stuiteren postbeheer](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
-Onverwerkte steunkleuren worden niet weergegeven in de interface van Adobe Campagne. Zij worden automatisch geschrapt tenzij zij aan een derdebrievenbus gebruikend de volgende gebieden worden overgebracht:
+Onverwerkte grenzen worden niet weergegeven in de Adobe Campaign-interface. Zij worden automatisch geschrapt tenzij zij aan een derdebrievenbus gebruikend de volgende gebieden worden overgebracht:
 
-* **[!UICONTROL Forwarding address]** : Vul dit veld in om alle foutberichten (verwerkt of onverwerkt) die door het Adobe Campagneplatform zijn verzameld, over te brengen naar een adres van een derde.
+* **[!UICONTROL Forwarding address]** : Vul dit veld in om alle foutberichten (verwerkt of onverwerkt) die door het Adobe Campaign-platform zijn verzameld, over te brengen naar een adres van een derde.
 * **[!UICONTROL Address for errors]** : Vul dit gebied in om aan een derdeadres slechts de foutenmeldingen over te brengen die het inMail proces niet in aanmerking kwam.
 * **[!UICONTROL SMTP server]** : Server die wordt gebruikt om onverwerkte e-mails over bounce te verzenden.
 
@@ -181,9 +181,9 @@ Wanneer u tracking op een instantie activeert, worden de URL&#39;s in de leverin
 
 * De informatie over externe (of veilig of niet) ingevoerde URLs op deze pagina van de plaatsingstovenaar wordt gebruikt om nieuwe URL te bouwen. De gewijzigde koppeling bevat naast deze informatie ook: de identificatiecodes van de levering, de ontvanger en de URL.
 
-   Trackinggegevens worden verzameld door Adobe Campagne op de trackingserver(s) om de ontvangende profielen en de gegevens die aan de levering zijn gekoppeld, te verrijken ( **[!UICONTROL Tracking]** tabbladen).
+   De trackinggegevens worden door Adobe Campaign verzameld op de trackingserver(s) om de ontvangende profielen en de aan de levering gekoppelde gegevens te verrijken ( **[!UICONTROL Tracking]** tabs).
 
-   Informatie over interne URL&#39;s wordt alleen door de toepassingsserver van Adobe Campagne gebruikt om contact op te nemen met de trackingserver(s).
+   Informatie over interne URL&#39;s wordt alleen door de Adobe Campaign-toepassingsserver gebruikt om contact op te nemen met de trackingserver(s).
 
    Raadpleeg de [Trackingserver](#tracking-server)voor meer informatie hierover.
 
@@ -199,7 +199,7 @@ Om de efficiëntie van het bijhouden van wijzigingen op dit exemplaar te garande
 <!--With Mid-sourcing architecture, you can externalize tracking management. To do this:-->
 
 * **[!UICONTROL External URL]** en/of **[!UICONTROL Secure external URL]** : Voer de URL voor omleiding in die moet worden gebruikt in de e-mail die moet worden verzonden.
-* **[!UICONTROL Internal URL(s)]** : URL&#39;s die alleen door de Adobe-campagneserver worden gebruikt om contact op te nemen met de trackingserver(s) voor het verzamelen van logbestanden en het uploaden van de URL&#39;s. Het is niet nodig deze aan de instantie te koppelen.
+* **[!UICONTROL Internal URL(s)]** : URL&#39;s die alleen door de Adobe Campaign-server worden gebruikt om contact op te nemen met de trackingserver(s) voor het verzamelen van logbestanden en het uploaden van de URL&#39;s. Het is niet nodig deze aan de instantie te koppelen.
 
    Als u geen URL opgeeft, wordt standaard de URL voor bijhouden gebruikt.
 
@@ -317,7 +317,7 @@ In dit stadium kunt u voorkeuren voor gegevensbeleid opnemen.
 >
 >Om privacyredenen raden we aan HTTPS te gebruiken voor alle externe bronnen.
 
-Met deze stap kunt u toegangs-URL&#39;s definiëren voor Adobe Campagnepagina&#39;s die op internet worden weergegeven.
+Met deze stap kunt u toegangs-URL&#39;s definiëren voor Adobe Campaign-pagina&#39;s die op internet worden weergegeven.
 
 U moet hier ook de publicatieopties aangeven die aan webformulieren zijn gekoppeld.
 
@@ -333,7 +333,7 @@ Gebruik deze pagina om de server-URL&#39;s te vullen met:
 
    Een spiegelpagina is een dynamische pagina waarop de inhoud van het e-mailbericht wordt weergegeven. Het wordt betreden via een verbinding die in het bericht wordt opgenomen dat naar de ontvanger wordt verzonden en kan gepersonaliseerde elementen bevatten. De spiegelpagina biedt de ontvanger de mogelijkheid om het bericht in Internet browser in plaats van de e-mailsoftware te lezen, ongeacht het leveringsformaat (tekst of HTML). Er worden echter alleen spiegelpagina&#39;s gegenereerd voor een bepaalde levering als de vereiste HTML-inhoud is gedefinieerd.
 
-Met Adobe Campagne kunt u deze drie URL&#39;s onderscheiden om de laadbewerking over meerdere platforms te spreiden.
+Met Adobe Campaign kunt u deze drie URL&#39;s onderscheiden om de laadbewerking over meerdere platforms te spreiden.
 
 ## Openbare middelen beheren {#managing-public-resources}
 
@@ -351,7 +351,7 @@ Voor deze stap, moet u ingaan:
 1. De modus voor beelddetectie in een levering. Raadpleeg het gedeelte [Afbeeldingsdetectie](#delivery-image-detection) van levering voor meer informatie.
 1. Publicatieopties Raadpleeg de sectie [Publicatiemodi](#publication-modes) voor meer informatie.
 
-De openbare middelen zijn toegankelijk via het **Beleid > Middelen > Online > de knoop van Openbare middelen** van de Boom van de Campagne van Adobe. Ze worden verzameld in een bibliotheek en kunnen worden opgenomen in e-mails, maar ook worden gebruikt in campagnes of taken en in inhoudsbeheer.
+De openbare middelen zijn toegankelijk via het **Beleid > Middelen > Online > de knoop van Openbare middelen** van de boom van Adobe Campaign. Ze worden verzameld in een bibliotheek en kunnen worden opgenomen in e-mails, maar ook worden gebruikt in campagnes of taken en in inhoudsbeheer.
 
 ![](assets/install_pub_resources_view.png)
 
@@ -390,11 +390,11 @@ De volgende publicatiemodi zijn beschikbaar:
 
    De bronnen worden automatisch naar de verschillende trackingservers gekopieerd. Zij worden gevormd in de stap [die configuratie](#tracking-configuration)volgen.
 
-* Andere Adobe Campagne-servers
+* Andere Adobe Campaign-servers
 
-   U kunt nog een andere Adobe Campagne-server gebruiken waar de bronnen worden gekopieerd.
+   U kunt een of meer andere Adobe Campaign-servers gebruiken waar de bronnen worden gekopieerd.
 
-   Als u een speciale Adobe Campagneserver wilt gebruiken aan de serverzijde, moet u een nieuwe instantie maken met de volgende opdracht:
+   Als u een specifieke Adobe Campaign-server wilt gebruiken aan de serverzijde, moet u een nieuwe instantie maken met de volgende opdracht:
 
    ```
    nlserver config -addtrackinginstance:<trackingA>/<trackingA*>
@@ -419,13 +419,13 @@ De volgende publicatiemodi zijn beschikbaar:
       [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
       ```
 
-      Hier `[INSTALL]` ziet u het toegangspad naar de installatiemap van Adobe Campaign.
+      waar `[INSTALL]` is het toegangspad naar de installatiemap van Adobe Campaign.
 
    * Controleer in Unix of het script uitvoerbaar is.
 
 Voor afbeeldingen moeten deze worden gekopieerd van de map &quot;images&quot; die via de optie **NmsDelivery_ImageSubDirectory** is opgegeven naar een of meer frontale servers. Deze servers slaan de afbeeldingen op zodat ze toegankelijk zijn via de nieuwe geconfigureerde URL.
 
-In het geval van publicatie op een Adobe Campaign-server zonder handmatig publicatiescript worden de afbeeldingen van een levering standaard opgeslagen in het `$(XTK_INSTALL_DIR)/var/res/img/ directory`bestand. De bijbehorende URL is: **`https://server/res/img`**.
+In geval van publicatie op een Adobe Campaign-server zonder handmatig publicatiescript worden de afbeeldingen van een levering standaard opgeslagen in de `$(XTK_INSTALL_DIR)/var/res/img/ directory`server. De bijbehorende URL is: **`https://server/res/img`**.
 
 `XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)`. De bijbehorende URL is als volgt: **`https://server/res/instance`** waarbij instantie de naam van de instantie tracking is.
 
@@ -459,7 +459,7 @@ Het kenmerk status kan een van de volgende drie waarden hebben:
 
 * normaal: Bestaand gedrag (zonder synchronisatie)
 
-* zwarte lijst: De URL wordt op de zwarte lijst weergegeven als er een fout van 404 wordt geretourneerd. De duur (in seconden) van de zwarte lijst wordt gedefinieerd door een **time-outkenmerk** waarvan de standaardwaarde 60 seconden is.
+* blocklist: De URL wordt toegevoegd aan de bloklijst als er een fout van 404 wordt geretourneerd. De duur (in seconden) van de URL in de bloklijst wordt gedefinieerd door een **time-outkenmerk** waarvan de standaardwaarde 60 seconden is.
 
 De uit-van-de-doos configuratie van de synchronisatie is:
 
@@ -478,11 +478,11 @@ startRedirection="true" startRedirectionInModule="true" trackWebVisitors="false"
 <relay debugRelay="false" forbiddenCharsInAuthority="?#.@/:" forbiddenCharsInPath="?#/"
            modDir="index.html" startRelay="false" startRelayInModule="true" timeout="60">
    <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/view/*"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jsp"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jssp"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="/webApp/*"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="/report/*"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="/jssp/*"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jsp"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jssp"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="/webApp/*"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="/report/*"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="/jssp/*"/>
       <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/strings/*"/>
       <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/interaction/*"/>
       <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/barcode/*"/>
