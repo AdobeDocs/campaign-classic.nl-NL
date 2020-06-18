@@ -15,16 +15,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b9c57b3cba0e8c24300396c2abac613f6e1193a
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+workflow-type: tm+mt
+source-wordcount: '1304'
+ht-degree: 0%
 
 ---
 
 
 # E-mailarchivering{#email-archiving}
 
-U kunt Adobe Campaign zodanig configureren dat een kopie van de e-mails die u van uw platform hebt ontvangen, bewaard blijft.
+U kunt Adobe Campaign zo configureren dat een kopie van de e-mails die u van uw platform hebt ontvangen, bewaard blijft.
 
-Adobe Campaign zelf beheert echter geen gearchiveerde bestanden. Het laat u toe om de berichten van uw keus naar een specifiek adres te verzenden, van waar zij kunnen worden verwerkt en worden gearchiveerd gebruikend een extern systeem.
+Adobe Campaign zelf beheert gearchiveerde bestanden echter niet. Het laat u toe om de berichten van uw keus naar een specifiek adres te verzenden, van waar zij kunnen worden verwerkt en worden gearchiveerd gebruikend een extern systeem.
 
 Hiervoor worden .eml-bestanden die overeenkomen met de verzonden e-mails, overgebracht naar een externe server, zoals een SMTP-e-mailserver. De archiveringsbestemming is een BCC e-mailadres (onzichtbaar voor de leverende ontvangers) dat u moet specificeren.
 
@@ -40,7 +43,7 @@ Hiervoor worden .eml-bestanden die overeenkomen met de verzonden e-mails, overge
 
 ## E-mailarchivering activeren (op locatie) {#activating-email-archiving--on-premise-}
 
-Volg onderstaande stappen om BCC e-mailarchivering te activeren wanneer Adobe Campagne op locatie is geïnstalleerd.
+Volg onderstaande stappen om BCC e-mailarchivering te activeren wanneer Adobe Campaign op locatie is geïnstalleerd.
 
 ### Lokale map {#local-folder}
 
@@ -132,7 +135,7 @@ In het **config-`<instance name>.xml`**dossier, gebruik de volgende parameters o
 
 >[!CAUTION]
 >
->Het e-mailarchiveringssysteem (BCC) is gewijzigd met Adobe Campagne 17.2 (build 8795). Als u een upgrade uitvoert vanaf een oudere build en al gebruikmaakt van e-mailarchiveringsmogelijkheden, moet u de upgrade handmatig uitvoeren naar het nieuwe e-mailarchiveringssysteem (BCC).
+>Het e-mailarchiveringssysteem (BCC) is gewijzigd met Adobe Campaign 17.2 (build 8795). Als u een upgrade uitvoert vanaf een oudere build en al gebruikmaakt van e-mailarchiveringsmogelijkheden, moet u de upgrade handmatig uitvoeren naar het nieuwe e-mailarchiveringssysteem (BCC).
 
 U doet dit door de volgende wijzigingen in het **`config-<instance>.xml`** bestand aan te brengen:
 
@@ -151,5 +154,5 @@ Zodra e-mail BCC wordt gevormd, zorg ervoor u de **[!UICONTROL Archive emails]**
    * Als u zelfde MTA over veelvoudige instanties (ontwikkeling, test, staaf) voor één enkele cliënt gebruikt, zullen de berichten die van alle drie instanties worden verzonden door de dataLogPath optie worden gedupliceerd.
 
 * **E-mails per verbinding**: BCC e-mailarchivering werkt door een verbinding te openen en alle e-mails via die verbinding te verzenden. Adobe raadt u aan om met uw interne technische contactpersoon te controleren hoeveel e-mails worden geaccepteerd voor een bepaalde verbinding. Het verhogen van dit aantal kan een grote invloed op de productie BCC hebben.
-* **BCC die IPs** verzendt: BCC-e-mailberichten worden momenteel niet verzonden via de normale MTA-proxy&#39;s. In plaats daarvan is een directe verbinding geopend van de MTA-server naar de e-mailserver van het doel. Dit betekent dat u extra IPs op uw netwerk, afhankelijk van uw configuratie van de e-mailserver kunt moeten whitelist.
+* **BCC die IPs** verzendt: BCC-e-mailberichten worden momenteel niet verzonden via de normale MTA-proxy&#39;s. In plaats daarvan is een directe verbinding geopend van de MTA-server naar de e-mailserver van het doel. Dit betekent dat u extra IPs aan toestaan lijst op uw netwerk kunt moeten toevoegen, afhankelijk van uw configuratie van de e-mailserver.
 
