@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+workflow-type: tm+mt
+source-wordcount: '476'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ De tabbladen en hun inhoud zijn afhankelijk van uw configuratie en geïnstalleer
 
 >[!CAUTION]
 >
->Het XML-schema en het formulier dat betrekking heeft op de velden in de tabel met profielen, zijn toegankelijk via het **[!UICONTROL Administration > Configuration > Data schemas]** knooppunt van de Adobe Campagne-structuur. Alleen deskundige gebruikers kunnen wijzigingen aanbrengen in deze schema&#39;s.
+>Het XML-schema en het formulier dat betrekking heeft op de velden in de tabel met profielen, zijn toegankelijk via het **[!UICONTROL Administration > Configuration > Data schemas]** knooppunt van de Adobe Campaign-structuur. Alleen deskundige gebruikers kunnen wijzigingen aanbrengen in deze schema&#39;s.
 >
 >Raadpleeg [deze pagina](../../configuration/using/about-schema-edition.md)voor meer informatie.
 
@@ -46,7 +49,7 @@ Dit scherm bevat alle algemene gegevens over het geselecteerde profiel. Het beva
 
 >[!NOTE]
 >
->Wanneer de **[!UICONTROL No longer contact (by any channel)]** optie is geselecteerd, betekent dit dat het profiel op de zwarte lijst staat, d.w.z. dat in het profiel de wens is geuit dat geen contact wordt opgenomen (bijvoorbeeld door in een nieuwsbrief op een koppeling zonder abonnement te klikken). Deze zullen niet meer het doelwit zijn van leveringen op welke kanalen dan ook (e-mail, direct mail, enz.). Raadpleeg [deze pagina](../../delivery/using/understanding-quarantine-management.md)voor meer informatie.
+>Wanneer de **[!UICONTROL No longer contact (by any channel)]** optie is geselecteerd, betekent dit dat het profiel op de bloklijst staat, d.w.z. dat in het profiel de wens is geuit dat geen contact wordt opgenomen (bijvoorbeeld door op een koppeling voor niet-abonnementen in een nieuwsbrief te klikken). Deze zullen niet meer het doelwit zijn van leveringen via welke kanalen dan ook (e-mail, direct mail, enz.). For more on this, refer to [this page](../../delivery/using/understanding-quarantine-management.md).
 
 ## Tabblad Contactgegevens {#contact-information-tab}
 
@@ -82,7 +85,7 @@ Dit scherm bevat de informatiediensten waarop het profiel heeft geabonneerd.
 
 De **[!UICONTROL Detail]** knop geeft de eigenschappen van het geselecteerde abonnement weer. Met de **[!UICONTROL Add]** knop kunt u handmatig een nieuw abonnement toevoegen.
 
-Raadpleeg [deze pagina](../../delivery/using/managing-subscriptions.md)voor meer informatie.
+For more on this, refer to [this page](../../delivery/using/managing-subscriptions.md).
 
 ## Tabblad Aflevering {#deliveries-tab}
 
