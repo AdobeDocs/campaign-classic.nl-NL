@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cc9ea59a9925930d4a4b260ce73a6bd4b615db5a
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
 workflow-type: tm+mt
-source-wordcount: '2857'
+source-wordcount: '2865'
 ht-degree: 0%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 0%
 
 # Specifieke configuraties per databasetype {#specific-configurations-by-database-type}
 
-Afhankelijk van de externe databases die u vanuit Adobe Campaign kunt openen, moet u bepaalde specifieke configuraties uitvoeren. Bij deze configuraties worden vooral stuurprogramma&#39;s geïnstalleerd en worden omgevingsvariabelen opgegeven die bij elke RDBMS op de Adobe Campagneserver horen.
+Afhankelijk van de externe databases die u vanuit Adobe Campaign wilt kunnen openen, moet u bepaalde specifieke configuraties uitvoeren. Bij deze configuraties worden vooral stuurprogramma&#39;s geïnstalleerd en worden omgevingsvariabelen opgegeven die bij elke RDBMS op de Adobe Campaign-server horen.
 
-Als algemene regel geldt dat u de corresponderende clientlaag in de externe database op de Adobe Campaign-server moet installeren.
+Als algemene regel geldt dat u de corresponderende clientlaag op de externe database op de Adobe Campaign-server moet installeren.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Als algemene regel geldt dat u de corresponderende clientlaag in de externe data
 Met de [!DNL Azure] externe account kunt u uw Campagne-instantie verbinden met uw externe database van Azure Synapse.
 Een externe [!DNL Azure Synapse] account maken:
 
-1. Configureer uw [!DNL Azure Synapse] externe account in Campaign Classic. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. Configureer in Campaign Classic uw [!DNL Azure Synapse] externe account. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Klik op **[!UICONTROL Create]**.
 
@@ -121,9 +121,9 @@ Om Azure Synapse op CentOS te vormen:
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. In Campaign Classic kunt u uw [!DNL Azure Synapse] externe account vervolgens configureren. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#azure-external)voor meer informatie over het configureren van uw externe account.
+1. In Campaign Classic kunt u vervolgens uw [!DNL Azure Synapse] externe account configureren. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#azure-external)voor meer informatie over het configureren van uw externe account.
 
-1. Aangezien Azure Synapse Analytics via de haven van TCP 1433 communiceert, moet u deze haven op uw firewall openen. Gebruik de volgende opdracht:
+1. Aangezien Azure Synapse Analytics communiceert via de TCP 1433-poort, moet u deze poort openen op uw firewall. Gebruik de volgende opdracht:
 
    ```
    firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="[server_ip_here]/32" port port="1433" protocol="tcp" accept'
@@ -132,7 +132,7 @@ Om Azure Synapse op CentOS te vormen:
 
    >[!NOTE]
    >
-   >Om communicatie van de zijde van Analytics van de Stedelijke Synapse toe te staan zou u uw openbare IP kunnen moeten whitelist. Raadpleeg de [Azure-documentatie](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)om dit te doen.
+   >Om communicatie van de zijde van Analytics van de Stedelijke Synapse toe te staan zou u uw openbare IP aan toestaan lijst kunnen moeten toevoegen. Raadpleeg de [Azure-documentatie](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)om dit te doen.
 
 1. Voer in het geval van iptables de volgende opdracht uit:
 
@@ -144,7 +144,7 @@ Om Azure Synapse op CentOS te vormen:
 
 >[!NOTE]
 >
->Dit is exclusief voor versie 13 van het ODBC-stuurprogramma, maar Adobe Campaign Classic kan ook SQL Server Native Client drivers 11.0 en 10.0 gebruiken.
+>Dit is exclusief aan versie 13 van de Bestuurder ODBC maar Adobe Campaign Classic kan SQL de Inheemse bestuurders van de Cliënt van de Server 11.0 en 10.0 ook gebruiken.
 
 Om Azure Synapse op Vensters te vormen:
 
@@ -158,9 +158,9 @@ Om Azure Synapse op Vensters te vormen:
 
 1. Nadat het ODBC-stuurprogramma is geïnstalleerd, kunt u het indien nodig testen. Raadpleeg deze [pagina](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server)voor meer informatie.
 
-1. In Campaign Classic kunt u uw [!DNL Azure Synapse] externe account vervolgens configureren. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#azure-external)voor meer informatie over het configureren van uw externe account.
+1. In Campaign Classic kunt u vervolgens uw [!DNL Azure Synapse] externe account configureren. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#azure-external)voor meer informatie over het configureren van uw externe account.
 
-1. Aangezien Azure Synapse Analytics door de haven van TCP 1433 communiceert, moet u deze haven op de Firewall van de Verdediger van Vensters openen. Raadpleeg de documentatie [bij](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule)Windows voor meer informatie.
+1. Aangezien Azure Synapse Analytics communiceert via de TCP 1433-poort, moet u deze poort openen op de Windows Defender Firewall. Raadpleeg de documentatie [bij](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule)Windows voor meer informatie.
 
 ### Azure Synapse on Debian {#azure-debian}
 
@@ -215,7 +215,7 @@ Om Azure Synapse op Debian te vormen:
 
 1. In Campaign Classic kunt u nu uw [!DNL Azure Synapse] externe account configureren. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#azure-external)voor meer informatie over het configureren van uw externe account.
 
-1. Om iptables op Debian te vormen om de verbinding met Azure Analytics van de Synapse te verzekeren, laat de uitgaande haven TCP 1433 voor uw hostname met het volgende bevel toe:
+1. Om iptables op Debian te vormen om de verbinding met Azure Synapse Analytics te verzekeren, laat de uitgaande haven van TCP 1433 voor uw hostname met het volgende bevel toe:
 
    ```
    iptables -A OUTPUT -p tcp -d [server_hostname_here] --dport 1433 -j ACCEPT
@@ -223,7 +223,7 @@ Om Azure Synapse op Debian te vormen:
 
    >[!NOTE]
    >
-   >Om communicatie van de zijde van Analytics van de Stedelijke Synapse toe te staan zou u uw openbare IP kunnen moeten whitelist. Raadpleeg de [Azure-documentatie](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)om dit te doen.
+   >Om communicatie van de zijde van Analytics van de Stedelijke Synapse toe te staan zou u uw openbare IP aan toestaan lijst kunnen moeten toevoegen. Raadpleeg de [Azure-documentatie](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)om dit te doen.
 
 ## Toegang tot Snowflake configureren {#configure-access-to-snowflake}
 
@@ -237,7 +237,7 @@ Om Azure Synapse op Debian te vormen:
 
 Met de [!DNL Snowflake] externe account kunt u uw Campagne-instantie verbinden met uw Snowflake externe database.
 
-1. Configureer uw [!DNL Snowflake] externe account in Campaign Classic. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. Configureer in Campaign Classic uw [!DNL Snowflake] externe account. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Selecteer de ingebouwde **[!UICONTROL Snowflake]** externe account.
 
@@ -262,7 +262,7 @@ De connector ondersteunt de volgende opties:
 |---|---|
 | werkschema | Databaseschema dat moet worden gebruikt voor werktabellen |
 | entrepot | Naam van het standaardentrepot aan gebruik. De standaardinstelling van de gebruiker wordt hierdoor genegeerd. |
-| TimeZoneName | Door gebrek leeg, zo betekent het dat de systeemtijdzone van de Klassieke toepassingsserver van de Campagne wordt gebruikt. De optie kan worden gebruikt om de TIMEZONE-sessieparameter te forceren. <br>Raadpleeg [deze pagina](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)voor meer informatie. |
+| TimeZoneName | Standaard leeg, wat betekent dat de systeemtijdzone van de Campaign Classic-toepassingsserver wordt gebruikt. De optie kan worden gebruikt om de TIMEZONE-sessieparameter te forceren. <br>Raadpleeg [deze pagina](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)voor meer informatie. |
 | WeekStart | WEEK_START, sessieparameter. Standaard ingesteld op 0. <br>Raadpleeg [deze pagina](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start)voor meer informatie. |
 | UseCachedResult | USE_CACHED_RESULTS sessieparameter. Standaard ingesteld op TRUE. U kunt deze optie gebruiken om de resultaten van Sneeuwvlokken in cache uit te schakelen. <br>Raadpleeg [deze pagina](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)voor meer informatie. |
 
@@ -283,7 +283,7 @@ De connector ondersteunt de volgende opties:
    /etc/init.d/nlserver6 start
    ```
 
-1. In Campaign Classic kunt u uw [!DNL Snowflake] externe account vervolgens configureren. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#snowflake-external)voor meer informatie over het configureren van uw externe account.
+1. In Campaign Classic kunt u vervolgens uw [!DNL Snowflake] externe account configureren. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#snowflake-external)voor meer informatie over het configureren van uw externe account.
 
 ### Sneeuwvlok op Debian {#snowflake-debian}
 
@@ -303,7 +303,7 @@ De connector ondersteunt de volgende opties:
    systemctl start nlserver.service
    ```
 
-1. In Campaign Classic kunt u uw [!DNL Snowflake] externe account vervolgens configureren. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#snowflake-external)voor meer informatie over het configureren van uw externe account.
+1. In Campaign Classic kunt u vervolgens uw [!DNL Snowflake] externe account configureren. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#snowflake-external)voor meer informatie over het configureren van uw externe account.
 
 ### Sneeuwvlok in Windows {#snowflake-windows}
 
@@ -311,11 +311,11 @@ De connector ondersteunt de volgende opties:
 
 1. Configureer het ODBC-stuurprogramma. For more on this, refer to [this page](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver)
 
-1. In Campaign Classic kunt u uw [!DNL Snowflake] externe account vervolgens configureren. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#snowflake-external)voor meer informatie over het configureren van uw externe account.
+1. In Campaign Classic kunt u vervolgens uw [!DNL Snowflake] externe account configureren. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#snowflake-external)voor meer informatie over het configureren van uw externe account.
 
 ## Toegang tot Hadoop 3.0 configureren {#configure-access-to-hadoop-3}
 
-Als u verbinding wilt maken met een externe database in Hadoop in FDA, hebt u de volgende configuraties op de Adobe Campaign-server nodig. Deze configuratie is zowel voor Windows als voor Linux beschikbaar.
+Als u verbinding wilt maken met een externe Hadoop-database in FDA, hebt u de volgende configuraties op de Adobe Campaign-server nodig. Deze configuratie is zowel voor Windows als voor Linux beschikbaar.
 
 1. Download de ODBC-stuurprogramma&#39;s voor Hadoop, afhankelijk van uw OS-versie. Drivers vindt u op [deze pagina](https://www.cloudera.com/downloads.html).
 
@@ -470,7 +470,7 @@ De aansluiting ondersteunt ook de volgende opties voor Hive:
 
 ## Toegang tot Netezza configureren {#configure-access-to-netezza}
 
-Als u verbinding maakt met een externe Netezza-database in FDA, hebt u hieronder aanvullende configuraties op de Adobe Campagneserver nodig:
+Als u verbinding maakt met een externe Netezza-database in FDA, hebt u hieronder aanvullende configuraties op de Adobe Campaign-server nodig:
 
 1. Installeer de ODBC-stuurprogramma&#39;s voor Netezza volgens het besturingssysteem dat u gebruikt:
 
@@ -515,7 +515,7 @@ Als u verbinding maakt met een externe Netezza-database in FDA, hebt u hieronder
    * **ODBCINI**: locatie van het bestand odbc.ini (bijvoorbeeld /etc/odbc.ini).
    * **NZ_ODBC_INI_PATH**: locatie van het bestand odbc.ini. Netezza vereist ook deze tweede variabele voor het gebruiken van het odbc.ini- dossier.
 
-1. In Campaign Classic, kunt u uw externe rekening van Netezza dan vormen. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic kunt u vervolgens uw Netezza externe account configureren. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Click **[!UICONTROL New]** and select **[!UICONTROL External database]** as **[!UICONTROL Type]**.
 
@@ -539,7 +539,7 @@ Als u verbinding maakt met een externe Netezza-database in FDA, hebt u hieronder
 
 ## Toegang tot Oracle configureren {#configure-access-to-oracle}
 
-Als u verbinding wilt maken met een externe Oracle-database in FDA, hebt u hieronder aanvullende configuraties op de Adobe Campaign-server nodig.
+Voor verbinding met een externe Oracle-database in FDA zijn hieronder aanvullende configuraties op de Adobe Campaign-server vereist.
 
 ### Voor Linux {#for-linux-1}
 
@@ -548,7 +548,7 @@ Als u verbinding wilt maken met een externe Oracle-database in FDA, hebt u hiero
 
    Maak vervolgens een nieuwe omgevingsvariabele TNS_ADMIN: Exporteer TNS_ADMIN=/etc/oracle en start de computer opnieuw op.
 
-1. Integreer Oracle in uw Adobe Campaign-server (nlserver). Hiervoor controleert u of het bestand **customer.sh** aanwezig is in de map &quot;nl6&quot; van de boomstructuur van de Adobe Campagne-server en of dit bestand de koppelingen naar de Oracle-bibliotheken bevat.
+1. Integreer Oracle in uw Adobe Campaign-server (nlserver). Hiervoor controleert u of het bestand **customer.sh** aanwezig is in de map &quot;nl6&quot; van de structuur van de Adobe Campaign-serverstructuur en of het bestand de koppelingen naar de Oracle-bibliotheken bevat.
 
    Bijvoorbeeld voor een client in 11.2:
 
@@ -588,7 +588,7 @@ Als u verbinding wilt maken met een externe Oracle-database in FDA, hebt u hiero
 
 ## Toegang tot Sybase IQ configureren {#configure-access-to-sybase-iq}
 
-Als u verbinding maakt met een externe Sybase-IQ-database in FDA, hebt u hieronder aanvullende configuraties op de Adobe Campagneserver nodig:
+Voor verbinding met een externe Sybase-IQ-database in FDA zijn hieronder aanvullende configuraties op de Adobe Campaign-server vereist:
 
 1. Zorg ervoor dat het unixodbc-pakket zich op de server bevindt.
 1. Installeer **iq_odbc**. Er kan een fout optreden aan het einde van de installatie. Deze fout kan worden genegeerd.
@@ -625,7 +625,7 @@ Als u verbinding maakt met een externe Sybase-IQ-database in FDA, hebt u hierond
    * Als u een bestand customer.sh gebruikt om het pad te declareren: Voeg het pad /opt/sybase/IQ-16_0/lib64 toe voor de variabele LD_LIBRARY_PATH.
    * Gebruik anders een Unix-opdracht.
 
-1. In Campaign Classic, kunt u uw externe rekening van Sybase IQ dan vormen. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic kunt u vervolgens uw Sybase IQ-externe account configureren. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Click **[!UICONTROL New]** and select **[!UICONTROL External database]** as **[!UICONTROL Type]**.
 
@@ -643,11 +643,11 @@ Als u verbinding maakt met een externe Sybase-IQ-database in FDA, hebt u hierond
 
 >[!NOTE]
 >
->Voor Windows moet u de Sybase IQ-client installeren op de Adobe Campaign-server en een ODBC-verbinding maken. Zorg ervoor dat u een systeemgegevensbron maakt wanneer de Adobe Campaign-server (nlserver) als service in Windows wordt uitgevoerd.
+>Voor Windows moet u de Sybase IQ-client op de Adobe Campaign-server installeren en een ODBC-verbinding maken. Zorg ervoor dat u een systeemgegevensbron maakt wanneer de Adobe Campaign-server (nlserver) als service in Windows wordt uitgevoerd.
 
 ## Toegang tot metagegevens configureren {#configure-access-to-teradata}
 
-Als u verbinding wilt maken met een externe database met Teradata in FDA, hebt u bepaalde aanvullende configuraties op de Adobe Campagneserver nodig. Raadpleeg dit [artikel](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html)voor meer informatie over het configureren van uw Teradata-database.
+Voor verbinding met een externe database met Teradata in FDA zijn bepaalde aanvullende configuraties op de Adobe Campaign-server vereist. Raadpleeg dit [artikel](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html)voor meer informatie over het configureren van uw Teradata-database.
 
 1. Installeer het [ODBC-stuurprogramma voor Teradata](https://downloads.teradata.com/download/connectivity/odbc-driver/linux).
 
@@ -688,7 +688,7 @@ Als u verbinding wilt maken met een externe database met Teradata in FDA, hebt u
    * **ODBCINI**: locatie van het bestand odbc.ini (bijvoorbeeld /etc/odbc.ini).
    * **NLSPATH**: locatie van het bestand opermsgs.cat (/opt/teradata/client/15.10/msg/opermsgs.cat)
 
-1. In Campaign Classic kunt u vervolgens uw externe account voor metagegevens configureren. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic kunt u vervolgens uw externe account voor Teradata configureren. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Click **[!UICONTROL New]** and select **[!UICONTROL External database]** as **[!UICONTROL Type]**.
 
@@ -706,7 +706,7 @@ Als u verbinding wilt maken met een externe database met Teradata in FDA, hebt u
 
 ## Toegang tot SAP-HANA configureren {#configure-access-to-sap-hana}
 
-Als u verbinding maakt met een externe SAP HANA-database in FDA, hebt u bepaalde aanvullende configuraties op de Adobe Campagneserver nodig:
+Voor het verbinden met een externe SAP HANA-database in FDA zijn bepaalde aanvullende configuraties op de Adobe Campaign-server vereist:
 
 1. Installeer de ODBC-stuurprogramma&#39;s voor SAP HANA, afhankelijk van het besturingssysteem dat u gebruikt:
 
@@ -742,7 +742,7 @@ Als u verbinding maakt met een externe SAP HANA-database in FDA, hebt u bepaalde
    * **LD_LIBRARY_PATH**: Het zou de verbinding aan uw cliënt van SAP Hana (/usr/sap/hdbclient/libodbcHDB.so) door gebrek moeten omvatten.
    * **ODBCINI**: locatie van het bestand odbc.ini (bijvoorbeeld /etc/odbc.ini).
 
-1. In Campaign Classic, kunt u uw externe rekening van SAP Hana dan vormen. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic kunt u vervolgens uw externe SAP Hana-account configureren. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Click **[!UICONTROL New]** and select **[!UICONTROL External database]** as **[!UICONTROL Type]**.
 
