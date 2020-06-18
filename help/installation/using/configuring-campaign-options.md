@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: de1173786c94c2a526153e7e6948f71c9523fa7b
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
 source-wordcount: '3903'
 ht-degree: 0%
@@ -23,13 +23,13 @@ ht-degree: 0%
 ---
 
 
-# Lijst met klassieke opties voor campagne{#configuring-campaign-options}
+# Lijst met Campaign Classic-opties{#configuring-campaign-options}
 
-Met het **[!UICONTROL Administration / Platform / Options]** knooppunt kunt u de opties voor Adobe-campagnes configureren.
+Met het **[!UICONTROL Administration / Platform / Options]** knooppunt kunt u Adobe Campaign-opties configureren.
 
 >[!NOTE]
 >
->U kunt de opties voor Adobe-campagnes alleen aanpassen of bijwerken door deskundige gebruikers.
+>U kunt Adobe Campaign-opties alleen wijzigen of bijwerken door experts.
 
 Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kunnen handmatig worden toegevoegd wanneer dat nodig is. Welke opties beschikbaar zijn, is afhankelijk van de pakketten die bij de instantie worden geïnstalleerd.
 
@@ -64,7 +64,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
    <td><p> Hiermee kunt u toestaan dat de exploitant die verantwoordelijk is voor de levering de verzending bevestigt, als een specifieke exploitant of groep exploitanten is aangewezen voor het starten van een levering in de eigendommen van de levering.</p><p> Hiervoor activeert u de optie door "1" als waarde in te voeren. Voer 0 in om deze optie te deactiveren.</p><p> Het proces voor bevestiging verzenden werkt dan als standaard: alleen de exploitant of groep van exploitanten die voor de verzending zijn aangewezen in de leveringseigenschappen (of een beheerder) kan de verzending bevestigen en uitvoeren. Zie <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">deze sectie</a>.</p> </td> 
    <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
-   <td> Adobe Campagne gebruikt een globale variabele "Nms_DefaultRcpSchema"aan dialoog met het gebrek ontvankelijke gegevensbestand (nms:ontvanger).<br /> De waarde van de optie moet overeenkomen met de naam van het schema dat overeenkomt met de tabel voor externe ontvangers.<br /> </td> 
+   <td> Adobe Campaign gebruikt een globale variabele "Nms_DefaultRcpSchema"aan dialoog met het standaard ontvankelijke gegevensbestand (nms:ontvanger).<br /> De waarde van de optie moet overeenkomen met de naam van het schema dat overeenkomt met de tabel voor externe ontvangers.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
@@ -95,7 +95,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
    <td> Reguliere expressies voor het normaliseren van leveringsberichten.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsBroadcast_RemoveBlackList</span> <br /> </td> 
+   <td> <span class="uicontrol">NmsBroadcast_RemoveBlockList</span> <br /> </td> 
    <td> Als u "1" opgeeft als waarde, kunt u ontvangers uitsluiten die niet langer contact met u willen opnemen.<br /> </td> 
   </tr> 
   <tr> 
@@ -175,7 +175,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
    <td> Formule die wordt gebruikt om de weging van een bericht voor voorlopige levering te berekenen.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsInmail_WhitelistEmails</span> <br /> </td> 
+   <td> <span class="uicontrol">NmsInmail_AllowlistEmails</span> <br /> </td> 
    <td> Lijst van geoorloofde het door:sturen e-mailadressen (van de binnenkomende module van de postverwerking). De adressen moeten door komma's (of * worden gescheiden om allen toe te staan). Bijvoorbeeld xyz@abc.com,pqr@abc.com.<br /> </td> 
   </tr> 
   <tr> 
@@ -291,11 +291,11 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NcmRessourcesDir</span> <br /> </td> 
-   <td> Locatie van bronnen voor publicatie in de Adobe Campagne-clientconsole. Zie <a href="../../delivery/using/formatting.md#image-referencing">deze sectie</a>.<br /> </td> 
+   <td> Locatie van bronnen voor publicatie in de Adobe Campaign-clientconsole. Zie <a href="../../delivery/using/formatting.md#image-referencing">deze sectie</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmRessourcesDirPreview</span> <br /> </td> 
-   <td> Locatie van bronnen voor voorvertoning in de Adobe Campagne-clientconsole. Zie <a href="../../delivery/using/formatting.md#image-referencing">deze sectie</a>.<br /> </td> 
+   <td> Locatie van bronnen voor voorvertoning in de Adobe Campaign-clientconsole. Zie <a href="../../delivery/using/formatting.md#image-referencing">deze sectie</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_DefaultIgnoredImage</span> <br /> </td> 
@@ -592,7 +592,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_PropositionPurgeDelay</span> <br /> </td> 
-   <td><p> Hiermee kunt u de vertraging definiëren waarna voorstellingen uit de database worden verwijderd.</p><p> Deze optie wordt automatisch gecreeerd zodra de vertraging binnen de interface wordt gewijzigd. Als u de waarde in de lijst met opties wijzigt, moet deze worden uitgedrukt in seconden.</p><br /> </td> 
+   <td><p> Hier kunt u de vertraging definiëren waarna voorstellingen uit de database worden verwijderd.</p><p> Deze optie wordt automatisch gecreeerd zodra de vertraging binnen de interface wordt gewijzigd. Als u de waarde in de lijst met opties wijzigt, moet deze worden uitgedrukt in seconden.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_QuarantineMailboxFull</span> <br /> </td> 
@@ -635,19 +635,19 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr>  
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
-   <td> Naam van de tabelruimte die de indexen van de standaardtabellen van Adobe Campagne moet bevatten.<br /> </td> 
+   <td> Naam van de tabelruimte die de indexen van de Adobe Campaign-standaardtabellen moet bevatten.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
-   <td> Naam van de tabelruimte die de gegevens moet bevatten van de standaardtabellen voor Adobe Campagne.<br /> </td> 
+   <td> Naam van de tabelruimte die de gegevens van de standaard Adobe Campaign-tabellen moet bevatten.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWork</span> <br /> </td> 
-   <td> Naam van de tabelruimte die de gegevens van de Adobe Campagne-werktabellen moet bevatten.<br /> </td> 
+   <td> Naam van de tabelruimte die de gegevens van de Adobe Campaign-werktabellen moet bevatten.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWorkIndex</span> <br /> </td> 
-   <td> Naam van de tabelruimte die de indexen van de Adobe Campagne-werktabellen moet bevatten.<br /> </td> 
+   <td> Naam van de tabelruimte die de indexen van de Adobe Campaign-werktabellen moet bevatten.<br /> </td> 
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
@@ -655,7 +655,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
-   <td> Tijdzone van de instantie van Adobe Campaign. Zie <a href="../../installation/using/time-zone-management.md#configuration" target="_blank">Configuratie</a>.<br /> </td> 
+   <td> Tijdzone van de instantie Adobe Campaign. Zie <a href="../../installation/using/time-zone-management.md#configuration" target="_blank">Configuratie</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcUseNChar</span> <br /> </td> 
@@ -717,11 +717,11 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">AEMResourceTypeFilter</span> <br /> </td> 
-   <td> Typen AEM-bronnen die kunnen worden gebruikt in Adobe Campaign. Waarden moeten worden gescheiden door komma's.<br /> </td> 
+   <td> Typen AEM-bronnen die in Adobe Campaign kunnen worden gebruikt. Waarden moeten worden gescheiden door komma's.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> Hiermee kunt u Experience Cloud-triggers configureren. Het gegevenstype is 'lange tekst' en moet de JSON-indeling hebben. Zie <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Experience Cloud Triggers gebruiken met Adobe Campaign Classic</a>.<br /> </td> 
+   <td> Hiermee kunt u Experience Cloud-triggers configureren. Het gegevenstype is 'lange tekst' en moet de JSON-indeling hebben. Zie <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Hoe Experience Cloud Triggers gebruiken met Adobe Campaign Classic</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
@@ -733,7 +733,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> Adobe Target-server gebruikt voor de integratie. Deze optie is standaard al geselecteerd. Deze waarde komt overeen met de Adobe Target Domain Server, gevolgd door de waarde /m2. Bijvoorbeeld: tt.omtrdc.net/m2.<br /> Zie <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">deze sectie</a>.<br /> </td> 
+   <td> Adobe Target-server gebruikt voor integratie. Deze optie is standaard al geselecteerd. Deze waarde komt overeen met de Adobe Target Domain Server, gevolgd door de waarde /m2. Bijvoorbeeld: tt.omtrdc.net/m2.<br /> Zie <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">deze sectie</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
@@ -741,11 +741,11 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
-   <td> Optie gebruikt voor de integratie met Adobe Audience Manager.<br /> </td> 
+   <td> Optie die wordt gebruikt voor de integratie met Adobe Audience Manager.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DestinationId</span> <br /> </td> 
-   <td> Optie gebruikt voor de integratie met Adobe Audience Manager.<br /> </td> 
+   <td> Optie die wordt gebruikt voor de integratie met Adobe Audience Manager.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Teradata</span> <br /> </td> 
@@ -986,7 +986,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLoad_Rights</span> <br /> </td> 
-   <td> Synchronisatie van autorisaties en groepen vanuit de LDAP-directory naar benoemde rechten in Adobe Campaign inschakelen.<br /> </td> 
+   <td> Synchronisatie van machtigingen en groepen vanuit de LDAP-directory naar benoemde rechten in Adobe Campaign inschakelen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLoad_RightsAttr</span> <br /> </td> 
@@ -1002,7 +1002,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLoad_RightsMask</span> <br /> </td> 
-   <td> Uitdrukking om de namen van de rechten van de Campagne van Adobe uit de vergunningen te halen LDAP.<br /> </td> 
+   <td> Uitdrukking om de namen van de Adobe Campaign-rechten te extraheren uit de LDAP-machtigingen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLoad_RightsScope</span> <br /> </td> 
