@@ -1,7 +1,7 @@
 ---
-title: Integratie van gedeelde soorten publiek configureren in Adobe-campagne
-seo-title: Integratie van gedeelde soorten publiek configureren in Adobe-campagne
-description: Integratie van gedeelde soorten publiek configureren in Adobe-campagne
+title: Integratie van gedeelde soorten publiek configureren in Adobe Campaign
+seo-title: Integratie van gedeelde soorten publiek configureren in Adobe Campaign
+description: Integratie van gedeelde soorten publiek configureren in Adobe Campaign
 seo-description: null
 page-status-flag: never-activated
 uuid: 6ed137e4-027f-4eb0-a0b5-4beb7deef51f
@@ -15,21 +15,24 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6ae45cbd87fc0152fc654202e03501fc8d2abd06
+source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 0%
 
 ---
 
 
-# Integratie van gedeelde soorten publiek configureren in Adobe-campagne{#configuring-shared-audiences-integration-in-adobe-campaign}
+# Integratie van gedeelde soorten publiek configureren in Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
 
 Nadat u dit verzoek hebt verzonden, gaat Adobe door met de levering van de integratie voor u. Neem contact op met u voor meer informatie en informatie over de definitieve configuratie:
 
-1. [Stap 1: Externe accounts configureren of controleren in Adobe-campagne](#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)
+1. [Stap 1: Externe accounts in Adobe Campaign configureren of controleren](#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)
 1. [Stap 2: De gegevensbron configureren](#step-2--configure-the-data-source)
 1. [Stap 3: Campagne bijhouden-server configureren](#step-3--configure-campaign-tracking-server)
 1. [Stap 4: De service voor de bezoekersidentiteitskaart configureren](#step-4--configure-the-visitor-id-service)
 
-## Stap 1: Externe accounts configureren of controleren in Adobe-campagne {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
+## Stap 1: Externe accounts in Adobe Campaign configureren of controleren {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
 
 Ten eerste moeten we de externe accounts in Adobe Campaign als volgt configureren of controleren:
 
@@ -42,7 +45,7 @@ Ten eerste moeten we de externe accounts in Adobe Campaign als volgt configurere
 
 1. Vul het **[!UICONTROL Server]** veld in: **ftp-out.demdex.com** domein voor de invoer externe rekening en **ftp-in.demdex.com** domein voor de uitvoer externe rekening.
 
-   Herinner dat de uitvoer van Campagne de invoer voor de Manager van de Publiek of de de kerndienst van Mensen is.
+   Herinner dat de uitvoer van Campagne de invoer voor de de kerndienst van de Audience Manager of van de Mensen is.
 
    >[!NOTE]
    >
@@ -58,7 +61,7 @@ Uw externe accounts zijn nu geconfigureerd.
 
 ## Stap 2: De gegevensbron configureren {#step-2--configure-the-data-source}
 
-De **ontvanger - Bezoeker-id** wordt gemaakt in Audience Manager. Dit is een uit-van-de-doos gegevensbron die door gebrek voor identiteitskaart van de Bezoeker wordt gevormd. Segmenten die zijn gemaakt op basis van campagne maken deel uit van deze gegevensbron.
+De **ontvanger - Bezoeker-id** wordt gemaakt in de Audience Manager. Dit is een uit-van-de-doos gegevensbron die door gebrek voor identiteitskaart van de Bezoeker wordt gevormd. Segmenten die zijn gemaakt op basis van campagne maken deel uit van deze gegevensbron.
 
 De **[!UICONTROL Recipient - Visitor ID]** gegevensbron configureren:
 
@@ -76,6 +79,6 @@ U moet ervoor zorgen de het Volgen van de Campagne Server op het domein (CNAME) 
 
 ## Stap 4: De service voor de bezoekersidentiteitskaart configureren {#step-4--configure-the-visitor-id-service}
 
-Raadpleeg het volgende [document](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-setup-aam-analytics.html) voor informatie over het configureren van uw service of de volgende [video](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two) als uw bezoeker-id nog nooit is geconfigureerd op uw webeigenschappen of websites.
+Raadpleeg het volgende [document](https://docs.adobe.com/content/help/en/id-service/using/implementation/setup-aam-analytics.html) voor informatie over het configureren van uw service of de volgende [video](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two) als uw bezoeker-id nog nooit is geconfigureerd op uw webeigenschappen of websites.
 
 Uw configuratie en levering worden voltooid, kan de integratie nu worden gebruikt om publiek of segmenten in te voeren en uit te voeren.
