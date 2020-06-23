@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e3de6f7b21d912efa4f6faca5e57cb480e8f1805
+source-git-commit: 9c9554b83726da7a7dbc747878d7d0758e71a4d7
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## Gebruiken {#use}
 
-Met deze **[!UICONTROL Data loading (File)]** activiteit hebt u rechtstreeks toegang tot een bron met externe gegevens en kunt u deze gebruiken in Adobe Campaign. Alle gegevens die vereist zijn voor doelbewerkingen worden niet altijd gevonden in de Adobe Campagne-database: het kan in externe dossiers ter beschikking worden gesteld.
+Met deze **[!UICONTROL Data loading (File)]** activiteit hebt u rechtstreeks toegang tot een bron met externe gegevens en kunt u deze gebruiken in Adobe Campaign. Alle gegevens die vereist zijn voor bewerkingen met het doel als doel, worden niet altijd gevonden in de Adobe Campaign-database: het kan in externe dossiers ter beschikking worden gesteld.
 
 Het bestand dat moet worden geladen, kan worden opgegeven door de overgang of worden berekend tijdens de uitvoering van deze activiteit. Bijvoorbeeld, kan het de lijst van 10 favoriete producten van een cliënt zijn de waarvan aankopen in een extern gegevensbestand worden beheerd.
 
@@ -38,6 +38,10 @@ In het bovenste gedeelte van het configuratievenster voor deze activiteit kunt u
 ![](assets/s_advuser_wf_etl_file.png)
 
 U kunt een vooraf uitgevoerd proces definiëren tijdens het importeren van bestanden, bijvoorbeeld om het bestand niet op de server uit te pakken (en dus ruimte voor het uitgepakt bestand op te slaan) maar om het uitpakken op te nemen in de bestandsverwerking. Selecteer de **[!UICONTROL Pre-process the file]** optie en kies een van de drie opties: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) of **[!UICONTROL Decrypt]** (gpg).
+
+![](assets/preprocessing-dataloading.png)
+
+Raadpleeg voor meer informatie deze sectie: [Een bestand decoderen of decoderen voordat het wordt verwerkt](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing).
 
 ## De bestandsindeling definiëren {#defining-the-file-format}
 
