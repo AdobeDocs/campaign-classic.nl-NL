@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f4d5d8474099776f770e88fcaf3bf15256da1be2
+source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+workflow-type: tm+mt
+source-wordcount: '853'
+ht-degree: 0%
 
 ---
 
 
-# Dynamische doelinhoud invoegen {#inserting-a-dynamic-image}
+# Dynamische Target-inhoud invoegen {#inserting-a-dynamic-image}
 
-In deze handleiding wordt uitgelegd hoe u een dynamische aanbieding van Target kunt integreren in een e-mailbericht in Adobe Campaign.
+In deze handleiding presenteren we hoe we een dynamisch aanbod van Target kunnen integreren in een e-mail in Adobe Campaign.
 
 Wij willen een levering tot stand brengen die een beeldblok zal omvatten dat dynamisch afhankelijk van het land van de ontvanger zal veranderen. De gegevens worden samen met elke mbox-aanvraag verzonden en zijn afhankelijk van het IP-adres van de bezoeker.
 
@@ -34,7 +37,7 @@ In deze e-mail, willen wij één van de beelden dynamisch volgens de volgende ge
 
 ![](assets/target_4.png)
 
-Hiervoor moeten de volgende stappen worden uitgevoerd in Adobe Campagne en Target:
+Hiervoor moeten we de volgende stappen uitvoeren, zowel in Adobe Campaign als in Target:
 
 1. [De dynamische aanbieding in een e-mail invoegen](../../integrations/using/inserting-a-dynamic-image.md#inserting-dynamic-offer)
 1. [Omleidingsvoorstellen maken](../../integrations/using/inserting-a-dynamic-image.md#create-redirect-offers)
@@ -44,11 +47,11 @@ Hiervoor moeten de volgende stappen worden uitgevoerd in Adobe Campagne en Targe
 
 ## De dynamische aanbieding in een e-mail invoegen {#inserting-dynamic-offer}
 
-Als u klaar bent met het definiëren van het doel en de inhoud van uw e-mail in Adobe Campaign, kunt u een dynamische afbeelding invoegen vanuit Target.
+Als u in Adobe Campaign klaar bent met het definiëren van het doel en de inhoud van uw e-mail, kunt u een dynamische afbeelding invoegen vanuit Target.
 
-Hiervoor geeft u de URL van de standaardafbeelding, de locatienaam en de velden op die u naar Doel wilt overbrengen.
+Hiervoor geeft u de URL van de standaardafbeelding, de locatienaam en de velden op die u naar Target wilt overbrengen.
 
-In Adobe Campaign kunt u op twee manieren een dynamische afbeelding van Target invoegen in een e-mailbericht:
+In Adobe Campaign zijn er twee manieren om een dynamische afbeelding van Target in te voegen in een e-mailbericht:
 
 * Als u de editor voor digitale inhoud gebruikt, kiest u een bestaande afbeelding en kiest u **[!UICONTROL Insert]** **[!UICONTROL Dynamic image served by Adobe Target]** > in de werkbalk.
 
@@ -61,21 +64,21 @@ In Adobe Campaign kunt u op twee manieren een dynamische afbeelding van Target i
 ### De afbeeldingsparameters definiëren {#defining-image-parameters}
 
 * De URL **[!UICONTROL Default image]** van de URL: De afbeelding die wordt weergegeven wanneer aan geen van de voorwaarden is voldaan. U kunt ook een afbeelding selecteren in de middelenbibliotheek.
-* De **[!UICONTROL Target location]**: Voer een naam in voor de locatie van uw dynamische aanbieding. U moet deze locatie selecteren in uw doelactiviteit.
+* De **[!UICONTROL Target location]**: Voer een naam in voor de locatie van uw dynamische aanbieding. Je moet deze locatie selecteren in je Target-activiteit.
 * De **[!UICONTROL Landing Page]**: Als u wilt dat de standaardafbeelding wordt omgeleid naar een standaardbestemmingspagina. Deze URL is alleen bedoeld voor gevallen waarin de standaardafbeelding in de uiteindelijke e-mail wordt weergegeven en optioneel is.
-* De **[!UICONTROL Additional decision parameters]**: Geef de toewijzing op tussen de velden die zijn gedefinieerd in de Adobe Target-segmenten en de Adobe Campagne-velden. De Adobe-campagnevelden moeten zijn opgegeven in de keuzelijst. In ons voorbeeld hebben we het veld Land toegevoegd.
+* De **[!UICONTROL Additional decision parameters]**: Geef de toewijzing op tussen de velden die zijn gedefinieerd in de Adobe Target-segmenten en de Adobe Campaign-velden. De Adobe Campaign-velden die worden gebruikt, moeten zijn opgegeven in de keuzelijst. In ons voorbeeld hebben we het veld Land toegevoegd.
 
-Als u Enterprise-machtigingen gebruikt in uw instellingen in Adobe Target, voegt u de bijbehorende eigenschap in dit veld toe. Meer informatie over de rechten van Target Enterprise vindt u op [deze pagina](https://marketing.adobe.com/resources/help/en_US/target/target/properties-overview.html).
+Als u Enterprise-machtigingen gebruikt in uw instellingen in Adobe Target, voegt u de bijbehorende eigenschap toe in dit veld. Meer informatie over Target Enterprise-machtigingen vindt u op [deze pagina](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/properties-overview.html).
 
 ![](assets/target_13.png)
 
 ## Omleidingsvoorstellen maken {#create-redirect-offers}
 
-In Target kunt u verschillende versies van uw aanbieding maken. Afhankelijk van elke gebruikerservaring kan een omleidingsaanbod worden gemaakt en kunt u opgeven welke afbeelding wordt weergegeven.
+In Target kunt u verschillende versies van uw voorstel maken. Afhankelijk van elke gebruikerservaring kan een omleidingsaanbod worden gemaakt en kunt u opgeven welke afbeelding wordt weergegeven.
 
-In ons geval hebben we twee omleidingsaanbiedingen nodig, de derde (de standaard) moet worden gedefinieerd in Adobe Campagne.
+In ons geval hebben we twee doorgifteaanbiedingen nodig, de derde (de standaard) moet in Adobe Campaign worden gedefinieerd.
 
-1. Als u een nieuwe omleidingsaanbieding wilt maken in Target Standard, klikt u op het **[!UICONTROL Content]** tabblad **[!UICONTROL Code offers]**.
+1. Als u een nieuwe omleidingsaanbieding in Target Standard wilt maken, klikt u op het **[!UICONTROL Content]** tabblad **[!UICONTROL Code offers]**.
 
 1. Klik **[!UICONTROL Create]** dan **[!UICONTROL Redirect Offer]**.
 
@@ -91,7 +94,7 @@ In ons geval hebben we twee omleidingsaanbiedingen nodig, de derde (de standaard
 
 In Target moet u de twee soorten publiek maken waarin de personen die uw aanbieding bezoeken, worden ingedeeld voor de verschillende inhoud die moet worden geleverd. Voor elk publiek, voeg een regel toe om te bepalen wie de aanbieding zal kunnen zien.
 
-1. Als u een nieuw publiek wilt maken in Doel, klikt u op het **[!UICONTROL Audiences]** tabblad **[!UICONTROL Create Audience]**.
+1. Als u een nieuw publiek wilt maken in Target, klikt u op het **[!UICONTROL Audiences]** tabblad **[!UICONTROL Create Audience]**.
 
    ![](assets/audiences_1.png)
 
@@ -105,7 +108,7 @@ In Target moet u de twee soorten publiek maken waarin de personen die uw aanbied
 
 ## Een ervaring maken die gericht is op activiteiten {#creating-targeting-activity}
 
-In Doel, moeten wij een Ervaring creëren richtend activiteit, de verschillende ervaringen bepalen, en hen associëren met de overeenkomstige aanbiedingen.
+In Target moeten we een Experience Targeting-activiteit creëren, de verschillende ervaringen definiëren en ze koppelen aan de overeenkomstige aanbiedingen.
 
 ### Het publiek definiëren {#defining-the-audience}
 
@@ -129,7 +132,7 @@ In Doel, moeten wij een Ervaring creëren richtend activiteit, de verschillende 
 
 Voeg inhoud toe voor elk publiek:
 
-1. Selecteer de locatienaam die u hebt gekozen bij het invoegen van de dynamische aanbieding in Adobe Campaign.
+1. Selecteer de locatienaam die u hebt gekozen bij het invoegen van het dynamische aanbod in Adobe Campaign.
 
    ![](assets/target_15.png)
 
@@ -155,10 +158,10 @@ In de **[!UICONTROL Reporting Settings]** sectie kunt u een actie selecteren en 
 
 ![](assets/target_experience_2.png)
 
-## E-mail voorvertonen en verzenden in Campaign Classic {#preview-send-email}
+## E-mailvoorvertoning weergeven en verzenden in Campaign Classic {#preview-send-email}
 
-In Adobe Campaign kunt u nu een voorbeeld van uw e-mail bekijken en de rendering ervan testen op verschillende ontvangers. U zult merken dat de afbeelding verandert op basis van de verschillende ervaringen die zijn gemaakt. Raadpleeg deze [pagina](../../delivery/using/defining-the-email-content.md)voor meer informatie over het maken van e-mailberichten.
+In Adobe Campaign kunt u nu een voorbeeld van uw e-mail bekijken en de weergave ervan testen op verschillende ontvangers. U zult merken dat de afbeelding verandert op basis van de verschillende ervaringen die zijn gemaakt. Raadpleeg deze [pagina](../../delivery/using/defining-the-email-content.md)voor meer informatie over het maken van e-mailberichten.
 
-U kunt nu uw e-mail verzenden, inclusief een dynamisch voorstel van Target.
+Je kunt nu je e-mail verzenden, inclusief een dynamisch voorstel van Target.
 
 ![](assets/target_20.png)
