@@ -5,9 +5,9 @@ solution: Campaign Classic
 title: Adobe Campaign Classic-productdocumentatie
 topic: Premium
 translation-type: tm+mt
-source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+source-git-commit: b247a3702249183e1e0851160fb3ac3809437ff1
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,11 @@ ht-degree: 0%
 
 ## Nieuwe functies
 
+* Zowel de termen &quot;whitelist&quot; als &quot;blacklist&quot; zijn uit de documentatie van Adobe Campaign verwijderd. [Meer informatie](/help/rn/using/documentation-updates.md)
+
 * **[Krijg de Veelgestelde vragen van de Toegang van de Steun](https://helpx.adobe.com/campaign/kb/ac-support.html)**<br/>, beste praktijken, hulpmiddelen, en verzoek om hulp
 
-* **[Privacy Compliance](https://helpx.adobe.com/campaign/kb/campaign-privacy.html)**<br/> Learn how Adobe Campaign you with your Privacy compliance
+* **[Privacy Compliance](https://helpx.adobe.com/campaign/kb/campaign-privacy.html)**<br/> leren hoe Adobe Campaign u kan helpen bij het naleven van uw privacy
 
 * **[Traceermogelijkheden](https://helpx.adobe.com/campaign/kb/acc-tracking.html)**<br/> Begrijpen de mogelijkheden en processen voor bijhouden in campagnes
 
@@ -43,7 +45,7 @@ ht-degree: 0%
     </a>
     </div>
     <p>
-    <em>Antwoorden op veelgestelde vragen zoeken bij gebruik van Campagne Classic</em>
+    <em>Antwoorden op veelgestelde vragen zoeken bij gebruik van Campaign Classic</em>
     <p>
   </td>
    <td>
