@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
 workflow-type: tm+mt
-source-wordcount: '2217'
+source-wordcount: '2218'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,12 @@ U kunt de volgende typen externe accounts instellen:
 * [Externe account routeren](#routing-external-account)
 * [Externe FTP-account](#ftp-external-account)
 * [Externe externe database-account](#external-database-external-account)
-* [Externe account voor webanalyse](#web-analytics-external-account)
+* [Externe account voor Web Analytics](#web-analytics-external-account)
 * [Externe account voor Facebook connect](#facebook-connect-external-account)
 * [Uitvoerinstantie externe account](#execution-instance-external-account)
 * [Externe account voor Adobe Experience Cloud](#adobe-experience-cloud-external-account)
 * [Externe SFTP-account](#sftp-external-account)
-* [Externe account voor Adobe Experience Manager](#adobe-experience-manager-external-account)
+* [Externe rekening van Adobe Experience Manager](#adobe-experience-manager-external-account)
 * [Amazon Simple Storage Service (S3) externe account](#amazon-simple-storage-service--s3--external-account)
 * [Azure External Account](#azure-external-account)
 * [Externe rekening](#hadoop-external-account)
@@ -47,7 +47,7 @@ U kunt de volgende typen externe accounts instellen:
 
 ## Een externe account maken {#creating-an-external-account}
 
-Adobe Campagne wordt geleverd met een set vooraf gedefinieerde externe accounts. Als u verbindingen wilt instellen met externe systemen, zoals FTP-servers die worden gebruikt voor bestandsoverdracht, kunt u uw eigen externe accounts maken.
+Adobe Campaign wordt geleverd met een reeks vooraf gedefinieerde externe accounts. Als u verbindingen wilt instellen met externe systemen, zoals FTP-servers die worden gebruikt voor bestandsoverdracht, kunt u uw eigen externe accounts maken.
 
 Externe accounts worden gebruikt door technische processen, zoals technische workflows of workflows voor campagnes. Wanneer u een bestandsoverdracht instelt in een workflow of een gegevensuitwisseling met een andere toepassing (Adobe Target, Experience Manager, enz.), moet u een externe account selecteren.
 
@@ -121,7 +121,7 @@ De volgende kanalen kunnen worden gevormd:
 
 ## Externe FTP-account {#ftp-external-account}
 
-Met de externe FTP-account kunt u de toegang tot een server buiten Adobe Campaign configureren en testen. Als u verbindingen wilt instellen met externe systemen, zoals FTP-servers 898 die worden gebruikt voor bestandsoverdracht, kunt u uw eigen externe accounts maken. Raadpleeg deze [pagina](../../workflow/using/file-transfer.md)voor meer informatie.
+Met de externe FTP-account kunt u toegang tot een server buiten Adobe Campaign configureren en testen. Als u verbindingen wilt instellen met externe systemen, zoals FTP-servers 898 die worden gebruikt voor bestandsoverdracht, kunt u uw eigen externe accounts maken. Raadpleeg deze [pagina](../../workflow/using/file-transfer.md)voor meer informatie.
 
 Hiertoe geeft u in deze externe account het adres en de referenties op waarmee de verbinding met de FTP-server tot stand wordt gebracht
 
@@ -151,7 +151,7 @@ Op deze [pagina](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-o
 
 ## Externe externe database-account {#external-database-external-account}
 
-De Campagne van Adobe verstrekt verscheidene schakelaars die u toestaan om met externe toepassingen te communiceren en met gegevensbestandmotoren te verbinden.
+Adobe Campaign biedt verschillende connectors waarmee u kunt communiceren met externe toepassingen en verbinding kunt maken met database-engines.
 
 ![](assets/ext_account_11.png)
 
@@ -173,7 +173,7 @@ De volgende verbindingstypen kunnen worden geconfigureerd:
 
 ### Sneeuwvlokken externe account {#snowflake-external-account}
 
-Met de externe **Snowflake** -account kunt u uw Campagne-instantie verbinden met uw externe Snowflake-database. Voor meer informatie over hoe te om Klassiek van de Campagne met Sneeuwvlok te vormen, verwijs naar deze [pagina](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
+Met de externe **Snowflake** -account kunt u uw Campagne-instantie verbinden met uw externe Snowflake-database. Raadpleeg deze [pagina](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake)voor meer informatie over het configureren van Campaign Classic met Snowflake.
 
 Als u deze externe account wilt configureren voor gebruik met Adobe Campaign, moet u de volgende gegevens opgeven:
 
@@ -197,7 +197,7 @@ Als u deze externe account wilt configureren voor gebruik met Adobe Campaign, mo
 
 ### Externe rekening met teragegevens {#teradata-external-account}
 
-Met de externe **account van de Teradata** kunt u uw Campagne-instantie verbinden met uw externe database van Teradata. Raadpleeg deze [pagina](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html) of deze [sectie](../../platform/using/specific-configuration-database.md#configure-access-to-teradata)voor meer informatie over het configureren van Campagne Classic met Teradata.
+Met de externe **account van de Teradata** kunt u uw Campagne-instantie verbinden met uw externe database van Teradata. Raadpleeg deze [pagina](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html) of deze [sectie](../../platform/using/specific-configuration-database.md#configure-access-to-teradata)voor meer informatie over het configureren van Campaign Classic met Teradata.
 
 ![](assets/ext_account_19.png)
 
@@ -233,9 +233,9 @@ Als u deze externe account wilt configureren voor gebruik met Adobe Campaign, mo
 
 ![](assets/ext_account_20.png)
 
-Wanneer meerdere gebruikers van Adobe Campagne verbinding maken met dezelfde externe FDA-account voor metagegevens, kunt u op het **[!UICONTROL Query banding]** tabblad een queryband instellen, dat wil zeggen een set sleutel-/waardeparen, voor een sessie.
+Wanneer meerdere Adobe Campaign-gebruikers verbinding maken met dezelfde externe FDA Teradata-account, kunt u op het **[!UICONTROL Query banding]** tabblad een queryband instellen, dat wil zeggen een set sleutel-/waardeparen, voor een sessie.
 
-Telkens wanneer een campagnegebruiker een query uitvoert in de Teradata-database, verzendt Adobe Campaign metagegevens die bestaan uit een lijst met sleutels die aan deze gebruiker zijn gekoppeld. Deze gegevens kunnen vervolgens door de gegevensbeheerder van Teradata worden gebruikt voor auditdoeleinden of voor het beheer van toegangsrechten.
+Elke keer dat een campagnegebruiker een query uitvoert op de Teradata-database, verzendt Adobe Campaign metagegevens, die bestaan uit een lijst met sleutels die aan deze gebruiker zijn gekoppeld. Deze gegevens kunnen vervolgens door de gegevensbeheerder van Teradata worden gebruikt voor auditdoeleinden of voor het beheer van toegangsrechten.
 
 Schakel het **[!UICONTROL Active]** selectievakje in om deze functie te activeren
 
@@ -245,9 +245,9 @@ In het **[!UICONTROL Users]** veld kunt u voor elke gebruiker een queryband opge
 
 Raadpleeg de documentatie bij **[!UICONTROL Query banding]** de [metagegevens voor meer informatie over](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw)het document.
 
-## Externe account voor webanalyse {#web-analytics-external-account}
+## Externe account voor Web Analytics {#web-analytics-external-account}
 
-Met het **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** externe account kunt u gegevens van Adobe Analytics naar Adobe Campaign doorsturen in de vorm van segmenten. Omgekeerd verzendt het programma indicatoren en kenmerken van e-mailcampagnes die door Adobe Campaign worden geleverd naar Adobe Analytics - Data connector.
+Met de **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** externe account kunt u gegevens van Adobe Analytics naar Adobe Campaign doorsturen in de vorm van segmenten. Omgekeerd verzendt het programma indicatoren en kenmerken van e-mailcampagnes die door Adobe Campaign worden geleverd aan Adobe Analytics - Gegevensconnector.
 
 ![](assets/ext_account_10.png)
 
@@ -299,7 +299,7 @@ Raadpleeg deze [pagina](../../message-center/using/creating-a-shared-connection.
 
 ## Externe account voor Adobe Experience Cloud {#adobe-experience-cloud-external-account}
 
-Als u met een Adobe-id verbinding wilt maken met de Adobe Campaign-console, moet u de **[!UICONTROL Adobe Experience Cloud (MAC)]** externe account configureren.
+Als u verbinding wilt maken met de Adobe Campaign-console met behulp van een Adobe ID, moet u de **[!UICONTROL Adobe Experience Cloud (MAC)]** externe account configureren.
 
 ![](assets/ext_account_9.png)
 
@@ -321,15 +321,15 @@ Als u met een Adobe-id verbinding wilt maken met de Adobe Campaign-console, moet
 
 * **[!UICONTROL Callback server]**
 
-   Open de URL van uw Adobe Campagne-instantie.
+   Toegang tot URL van je Adobe Campaign-instantie.
 
 * **[!UICONTROL IMS organization ID]**
 
-   ID van uw IMS-organisatie. Raadpleeg deze [pagina](https://marketing.adobe.com/resources/help/en_US/mcloud/faq.html) om uw organisatie-id te zoeken (**Waar vind ik mijn IMS-organisatie-id?**).
+   ID van uw IMS-organisatie. Raadpleeg deze [pagina](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) om uw organisatie-id te zoeken (**Waar vind ik mijn IMS-organisatie-id?**).
 
 * **[!UICONTROL Association mask]**
 
-   Syntaxis waarmee configuratienamen in het Enterprise-dashboard kunnen worden gesynchroniseerd met de groepen in Adobe Campaign.
+   Syntaxis waarmee configuratienamen in Enterprise-dashboard kunnen worden gesynchroniseerd met de groepen in Adobe Campaign.
 
 * **[!UICONTROL Server]**
 
@@ -363,29 +363,29 @@ Met de externe SFTP-account kunt u toegang tot een server buiten Adobe Campaign 
 
    Wachtwoord gebruikt om verbinding te maken met de SFTP-server.
 
-## Externe account voor Adobe Experience Manager {#adobe-experience-manager-external-account}
+## Externe rekening van Adobe Experience Manager {#adobe-experience-manager-external-account}
 
-Met het **[!UICONTROL AEM (AEM instance)]** externe account kunt u de inhoud van uw e-mailleveringen en uw formulieren rechtstreeks beheren in Adobe Experience Manager.
+Met het **[!UICONTROL AEM (AEM instance)]** externe account kunt u de inhoud van uw e-mailleveringen en uw formulieren rechtstreeks in Adobe Experience Manager beheren.
 
 ![](assets/ext_account_5.png)
 
 * **[!UICONTROL Server]**
 
-   URL van de Adobe Experience Manager-server.
+   URL van de server van de Adobe Experience Manager.
 
 * **[!UICONTROL Port]**
 
-   Accountnaam gebruikt om verbinding te maken met de ontwerpinstantie van Adobe Experience Manager.
+   Accountnaam gebruikt om verbinding te maken met de Adobe Experience Manager-ontwerpinstantie.
 
 * **[!UICONTROL Password]**
 
-   Wachtwoord waarmee u verbinding maakt met de ontwerpinstantie van Adobe Experience Manager.
+   Wachtwoord dat wordt gebruikt om verbinding te maken met de Adobe Experience Manager-ontwerpinstantie.
 
 For more on this, refer to this [section](../../integrations/using/about-adobe-experience-manager.md).
 
 ## Amazon Simple Storage Service (S3) externe account {#amazon-simple-storage-service--s3--external-account}
 
-De Amazon Simple Storage Service (S3)-connector kan worden gebruikt voor het importeren of exporteren van gegevens naar Adobe Campagne. Deze kan worden ingesteld in een workflowactiviteit. Raadpleeg deze [pagina](../../workflow/using/file-transfer.md)voor meer informatie.
+De Amazon Simple Storage Service (S3)-connector kan worden gebruikt voor het importeren of exporteren van gegevens naar Adobe Campaign. Deze kan worden ingesteld in een workflowactiviteit. Raadpleeg deze [pagina](../../workflow/using/file-transfer.md)voor meer informatie.
 
 ![](assets/ext_account_3.png)
 
@@ -449,9 +449,9 @@ Met de **[!UICONTROL Hadoop]** externe account wordt een verbinding met een gede
 
 ## Externe account voor Microsoft Dynamics CRM {#microsoft-dynamics-crm-external-account}
 
-Met het **[!UICONTROL Microsoft Dynamics CRM]** externe account kunt u gegevens van Microsoft Dynamics importeren en exporteren naar Adobe Campaign.
+Met de **[!UICONTROL Microsoft Dynamics CRM]** externe account kunt u Microsoft Dynamics-gegevens importeren en exporteren naar Adobe Campaign.
 
-De configuratie voor de schakelaar van de Dynamiek van Microsoft om met de Campagne van Adobe te werken hangt van uw plaatsingstype af.
+De configuratie voor de schakelaar van de Dynamiek van Microsoft om met Adobe Campaign te werken hangt van uw plaatsingstype af.
 Met **[!UICONTROL On-premise]** en **[!UICONTROL Office 365]** plaatsingstypes, moet u de volgende details verstrekken:
 
 ![](assets/ext_account_21.png)
@@ -529,11 +529,11 @@ Raadpleeg deze [pagina](../../platform/using/crm-connectors.md#example-for-micro
 
 ## Oracle op verzoek externe account {#oracle-on-demand-external-account}
 
-Met het **[!UICONTROL Oracle on demand]** externe account kunt u Oracle-gegevens importeren en exporteren naar Adobe Campaign.
+Met de **[!UICONTROL Oracle on demand]** externe account kunt u Oracle-gegevens importeren en exporteren naar Adobe Campaign.
 
 ![](assets/ext_account_18.png)
 
-Als u de externe Oracle-account op aanvraag wilt configureren voor gebruik met Adobe Campaign, moet u de volgende gegevens opgeven:
+Als u de externe Oracle-account op aanvraag wilt configureren voor samenwerking met Adobe Campaign, moet u de volgende gegevens opgeven:
 
 * **[!UICONTROL Account]**
 
@@ -551,11 +551,11 @@ Raadpleeg deze [pagina](../../platform/using/crm-connectors.md#example-for-oracl
 
 ## Externe rekening Salesforce CRM {#salesforce-crm-external-account}
 
-Met het **[!UICONTROL Salesforce CRM]** externe account kunt u Salesforce-gegevens importeren en exporteren naar Adobe Campagne.
+Met de **[!UICONTROL Salesforce CRM]** externe account kunt u Salesforce-gegevens importeren en exporteren naar Adobe Campaign.
 
 ![](assets/ext_account_17.png)
 
-Als u de externe account van Salesforce CRM wilt configureren voor gebruik met Adobe Campaign, moet u de volgende gegevens opgeven:
+Om de externe rekening van Salesforce CRM te vormen om met Adobe Campaign te werken, moet u de volgende details verstrekken:
 
 * **[!UICONTROL Account]**
 
