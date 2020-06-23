@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: bb35d2ae2d40aaef3bb381675d0c36ffb100b242
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Alle verzamelde gegevens kunnen worden gebruikt om de database bij te werken, of
 
 ### Lijsten en directe updates {#lists-and-direct-updates}
 
-De gegevens van de Adobe Campaign-database en de bestaande lijsten kunnen worden bijgewerkt met behulp van twee speciale activiteiten:
+De gegevens van de Adobe Campaign-databank en de bestaande lijsten kunnen worden bijgewerkt met behulp van twee specifieke activiteiten:
 
 * Met de **[!UICONTROL List update]** activiteit kunt u werktabellen opslaan in een gegevenslijst.
 
@@ -67,13 +67,13 @@ Naast de gebruikelijke verpersoonlijkingsgebieden, kunt u verpersoonlijkingsgebi
 
 ![](assets/s_advuser_using_additional_data.png)
 
-De gegevens in de workflowtabel worden aangeduid met de naam: het wordt altijd samengesteld uit de **targetData** verbinding. Raadpleeg de [doelgegevens](../../workflow/using/data-life-cycle.md#target-data)voor meer informatie hierover.
+De gegevens in de workflowtabel worden aangeduid met de naam: het wordt altijd samengesteld uit de **targetData** verbinding. Raadpleeg de gegevens [van](../../workflow/using/data-life-cycle.md#target-data)Target voor meer informatie hierover.
 
 In het kader van de e-maillevering kunnen personaliseringsgebieden ook gegevens gebruiken van doeluitbreiding die in de het richten werkschemasfases wordt uitgevoerd, zoals aangetoond in het hieronder voorbeeld:
 
 ![](assets/s_advuser_add_data_email.png)
 
-Als een segmentcode in een het richten activiteit wordt gespecificeerd, wordt het toegevoegd aan een specifieke kolom van de werkschemalijst en zal samen met de verpersoonlijkingsgebieden worden aangeboden. Als u alle aanpassingsvelden wilt weergeven, klikt u op de **[!UICONTROL Target extension > Other...]** koppeling die via de aanpassingsknop toegankelijk is.
+Als een segmentcode in een het richten activiteit wordt gespecificeerd, wordt het toegevoegd aan een specifieke kolom van de werkschemalijst en zal samen met de verpersoonlijkingsgebieden worden aangeboden. Als u alle aanpassingsvelden wilt weergeven, klikt u op de **[!UICONTROL Target extension > Other...]** koppeling die toegankelijk is via de aanpassingsknop.
 
 ![](assets/s_advuser_segment_code_select.png)
 
@@ -85,16 +85,67 @@ Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden exporteren. Wan
 
 Om dit te kunnen doen:
 
-* Als uw installatie van Adobe Campaign wordt gehost door Adobe: Stuur een verzoek naar [Support](https://support.neolane.net) om de benodigde hulpprogramma&#39;s op de server te installeren.
-* Als de Adobe-campagne op locatie is geïnstalleerd: Installeer het hulpprogramma dat u wilt gebruiken (bijvoorbeeld: GPG, GZIP) en de benodigde sleutels (coderingssleutel) op de toepassingsserver.
+1. Installeer een sleutelpaar GPG voor uw instantie gebruikend het [Controlebord](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
 
-Vervolgens kunt u opdrachten of code gebruiken, zoals:
+   >[!NOTE]
+   >
+   >Het Configuratiescherm is beschikbaar voor alle klanten die op AWS worden gehost (behalve voor klanten die hun marketinginstanties op locatie hosten).
 
-```
-function encryptFile(file) {  
-  var systemCommand = “gpg --encrypt --recipient  recipientToEncryptTo ” + file;  
-  var result = execCommand(systemCommand, true); 
-}
-```
+1. Als uw installatie van Adobe Campaign wordt gehost door Adobe, neemt u contact op met de klantenservice van Adobe om de benodigde hulpprogramma&#39;s op de server te installeren.
+1. Als de installatie van Adobe Campaign op locatie plaatsvindt, installeert u het hulpprogramma dat u wilt gebruiken (bijvoorbeeld: GPG, GZIP) en de benodigde sleutels (coderingssleutel) op de toepassingsserver.
 
-Wanneer u een bestand importeert, kunt u het ook ontsleutelen of ontsleutelen. Zie Een bestand [decoderen of decoderen voordat het wordt verwerkt](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing).
+Vervolgens kunt u opdrachten of code op het **[!UICONTROL Script]** tabblad van de activiteit of in een **[!UICONTROL JavaScript code]** activiteit gebruiken. In het onderstaande gebruiksgeval wordt een voorbeeld gegeven.
+
+**Verwante onderwerpen:**
+
+* [Een bestand decoderen of decoderen voordat het wordt verwerkt](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing)
+* [Activiteit](../../workflow/using/extraction--file-.md)voor gegevensextractie (bestand).
+
+### Hoofdlettergebruik: Gegevens coderen en exporteren met een sleutel die is geïnstalleerd in het Configuratiescherm {#use-case-gpg-encrypt}
+
+In dit geval, zullen wij een werkschema bouwen om gegevens te coderen en uit te voeren gebruikend een sleutel die op Controlebord wordt geïnstalleerd.
+
+De volgende stappen worden uitgevoerd:
+
+1. Genereer een sleutelpaar van GPG (openbaar/privé) gebruikend een nut van GPG, dan installeer de openbare sleutel op Controlebord. Gedetailleerde stappen zijn beschikbaar in de documentatie [van het](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data)Configuratiescherm.
+
+1. In Campaign Classic maakt u een workflow om de gegevens te exporteren en deze te exporteren met de persoonlijke sleutel die is geïnstalleerd via het Configuratiescherm. Hiervoor maken we als volgt een workflow:
+
+   ![](assets/gpg-workflow-encrypt.png)
+
+   * **[!UICONTROL Query]** activiteit: In dit voorbeeld, willen wij een vraag uitvoeren om de gegevens van het gegevensbestand te richten dat wij willen uitvoeren.
+   * **[!UICONTROL Data extraction (file)]** activiteit: Extraheert de gegevens naar een bestand.
+   * **[!UICONTROL JavaScript code]** activiteit: Codeert de gegevens die u wilt extraheren.
+   * **[!UICONTROL File transfer]** activiteit: Hiermee verzendt u de gegevens naar een externe bron (in dit voorbeeld een SFTP-server).
+
+1. Vorm de **[!UICONTROL Query]** activiteit om de gewenste gegevens van het gegevensbestand te richten. For more on this, refer to [this section](../../workflow/using/query.md).
+
+1. Open de **[!UICONTROL Data extraction (file)]** activiteit dan vorm het op uw behoeften. De globale concepten op hoe te om de activiteit te vormen zijn beschikbaar in [deze sectie](../../workflow/using/extraction--file-.md).
+
+   ![](assets/gpg-data-extraction.png)
+
+1. Open de **[!UICONTROL JavaScript code]** activiteit, dan kopieer-kleef het hieronder bevel om de gegevens te coderen om uit te pakken.
+
+   >[!IMPORTANT]
+   >
+   >Vervang de **vingerafdrukwaarde** van de opdracht door de vingerafdruk van de openbare sleutel die in het Configuratiescherm is geïnstalleerd.
+
+   ```
+   var cmd='gpg ';
+   cmd += ' --trust-model always';
+   cmd += ' --batch -yes';
+   cmd += ' --recipient fingerprint';
+   cmd += ' --encrypt --output ' + vars.filename + '.gpg ' + vars.filename;
+   execCommand(cmd,true);
+   vars.filename=vars.filename + '.gpg'
+   ```
+
+   ![](assets/gpg-script.png)
+
+1. Open de **[!UICONTROL File transfer]** activiteit, dan specificeer de server SFTP waarnaar u het dossier wilt verzenden. De globale concepten op hoe te om de activiteit te vormen zijn beschikbaar in [deze sectie](../../workflow/using/file-transfer.md).
+
+   ![](assets/gpg-file-transfer.png)
+
+1. U kunt de workflow nu uitvoeren. Zodra het wordt uitgevoerd, zal het gegevensdoel door de vraag naar de server SFTP in een gecodeerd.gpg- dossier worden uitgevoerd.
+
+   ![](assets/gpg-sftp-encrypt.png)
