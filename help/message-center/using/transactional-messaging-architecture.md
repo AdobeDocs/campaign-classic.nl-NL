@@ -1,6 +1,6 @@
 ---
-title: Adobe Campagne Classic transactiemeldingsarchitectuur
-description: In deze sectie wordt de klassieke architectuur voor transactiemeldingen van Adobe Campagne Classic beschreven.
+title: Adobe Campaign Classic Transformation Messaging Architecture
+description: In deze sectie wordt de Adobe Campaign Classic Transaction Messaging-architectuur beschreven.
 page-status-flag: never-activated
 uuid: a8fe7a37-6df7-49f4-838f-97a72e4a38f3
 contentOwner: sauviat
@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e8a9d8d63c01cc19380267fced45e180b4d7ccb4
+source-git-commit: e6f8eb6f4ffc3ffe9dbc643cf0edeef439c0f969
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 0%
@@ -25,12 +25,12 @@ ht-degree: 0%
 
 ## Informatie over uitvoerings- en besturingsinstanties {#about-execution-and-control-instances}
 
-In de Campagne van Adobe, werden de transactionele overseinenmogelijkheden (die ook als Centrum van het Bericht worden bekend) ontworpen om scalability te steunen en de dienst te verlenen 24/7. Het bestaat uit verschillende gevallen:
+In Adobe Campaign, werden de transactionele overseinenmogelijkheden (die ook als Centrum van het Bericht worden bekend) ontworpen om scalability te steunen en de dienst te verlenen 24/7. Het bestaat uit verschillende gevallen:
 
 * een controle-instantie waarin de berichtmalplaatjes worden gecreeerd;
 * een of meer uitvoeringsinstanties die gebeurtenissen ontvangen en berichten leveren.
 
-Om deze mogelijkheden te gebruiken, melden de gebruikers van de Campagne van Adobe aan de controleinstantie om transactionele berichtmalplaatjes tot stand te brengen, de berichtvoorproef te produceren gebruikend een zaadlijst, vertoningsrapporten en controleuitvoeringsinstanties.
+Om deze mogelijkheden te gebruiken, de gebruikers van Adobe Campaign login aan de controleinstantie om transactionele berichtmalplaatjes tot stand te brengen, de berichtvoorproef te produceren gebruikend een zaadlijst, vertoningsrapporten en controleuitvoeringsinstanties.
 
 De instanties van de uitvoering ontvangen gebeurtenissen, koppelen hen aan transactionele berichtmalplaatjes, en verzenden een gepersonaliseerd bericht naar elke ontvanger.
 
@@ -38,7 +38,7 @@ De instanties van de uitvoering ontvangen gebeurtenissen, koppelen hen aan trans
 
 ## Verschillende besturingsinstanties ondersteunen {#supporting-several-control-instances}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Het delen van een uitvoeringscluster met verschillende besturingsinstanties wordt alleen ondersteund voor omgevingen op locatie.
 
@@ -54,7 +54,7 @@ Het is mogelijk om een uitvoeringscluster onder verscheidene controleinstanties 
 
 Er zijn verscheidene voorzorgsmaatregelen om te nemen wanneer het installeren van de Transactieberichtpakketten. Adobe raadt u aan in een testomgeving te werken voordat u de productie start. U hebt ook een compatibele Adobe Campaign-licentie nodig. Neem voor meer informatie contact op met de manager van uw Adobe-account.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >De bedieningsinstantie en de uitvoeringsinstantie(s) moeten op verschillende computers zijn geïnstalleerd. Ze kunnen niet dezelfde Campagne-instantie delen.
 
@@ -90,7 +90,7 @@ To use transactional messaging with Interaction, you need to apply the following
 
 * Install the **Interaction** package onto the control instance and configure your offer catalog.
 
-  >[!CAUTION]
+  >[!IMPORTANT]
   >
   >Do not replicate the offers onto the execution instances.
 
@@ -124,7 +124,7 @@ In combinatie met de Mobile App Channel-module kunt u met een transactiebericht 
 Als u transactiemodules voor berichten wilt gebruiken met Mobile App Channel, moet u de volgende configuraties toepassen:
 
 1. Installeer het **Mobile App Channel** -pakket op de controle- en uitvoeringsinstanties.
-1. Repliceer het type **mobiele toepassing** van Adobe Campagne-service en de mobiele toepassingen die deze service bevat op de uitvoeringsinstanties.
+1. Repliceer de Adobe Campaign-service van het type **mobiele toepassing** en de mobiele toepassingen die deze bevat op de uitvoeringsinstanties.
 
 De gebeurtenis moet de volgende elementen bevatten:
 
