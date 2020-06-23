@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5eb82bb5dae589cb18d42695565b25dad36006bd
+source-git-commit: a215109db2d511180c91723059cd8ca10a34a612
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ Voer de volgende stappen uit om gegevensextractie te configureren:
 
    De **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** optie voegt een extra stap toe om het uiteindelijke resultaat van het aggregaat te filteren, bijvoorbeeld op een bepaald type inkooporder, klanten die meer dan tien keer hebben besteld, enz.
 
-1. Indien nodig kunt u nieuwe kolommen aan het uitvoerbestand toevoegen, zoals bijvoorbeeld berekeningen of verwerkingsresultaten. Klik hiertoe op het **[!UICONTROL Add]** pictogram
+1. Indien nodig kunt u nieuwe kolommen aan het uitvoerbestand toevoegen, zoals bijvoorbeeld berekeningen of verwerkingsresultaten. Klik hiertoe op het **[!UICONTROL Add]** pictogram.
 
    ![](assets/s_advuser_extract_file_add_col.png)
 
@@ -50,6 +53,12 @@ Voer de volgende stappen uit om gegevensextractie te configureren:
    Kies de gewenste formule in de lijst.
 
    ![](assets/s_advuser_extract_file_agregate_values.png)
+
+U kunt een postproces bepalen dat tijdens de gegevensextractie wordt uitgevoerd, toestaand u om de dossiers te zip of te coderen. Hiervoor moet de gewenste opdracht worden toegevoegd op het **[!UICONTROL Script]** tabblad van de activiteit.
+
+Raadpleeg voor meer informatie deze sectie: [Een bestand](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file)bekijken of versleutelen.
+
+![](assets/postprocessing_dataextraction.png)
 
 ## Lijst van geaggregeerde functies {#list-of-aggregate-functions}
 
