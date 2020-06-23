@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: 972dce4b8429bb5b56fdf32b237384155bcc417a
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 0%
 
 ---
 
@@ -48,7 +51,7 @@ De belangrijkste methoden voor het maken van profielen voor ontvangers zijn:
 
 ## Profielen en doelen {#profiles-and-targets}
 
-Met de **[!UICONTROL Profiles and targets]** koppeling kunt u ontvangers weergeven die zijn opgeslagen in de Adobe Campaign-database. U kunt een nieuwe ontvanger maken, een bestaande ontvanger bewerken en het bijbehorende profiel openen. Raadpleeg [deze pagina](../../platform/using/editing-a-profile.md)voor meer informatie.
+Met de **[!UICONTROL Profiles and targets]** koppeling kunt u ontvangers weergeven die zijn opgeslagen in de Adobe Campaign-database. U kunt een nieuwe ontvanger maken, een bestaande ontvanger bewerken en het bijbehorende profiel openen. For more on this, refer to [this page](../../platform/using/editing-a-profile.md).
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
@@ -58,11 +61,11 @@ Het geeft u ook toegang tot:
 * abonnementsdiensten; verwijzen naar [deze pagina](../../delivery/using/managing-subscriptions.md),
 * webtoepassingen; verwijzen naar [deze pagina](../../web/using/about-web-applications.md),
 * invoer en uitvoer ( werkgelegenheid ) ; verwijzen naar [algemene invoer en uitvoer](../../platform/using/generic-imports-and-exports.md);
-* doelgerichte werkstromen; verwijzen naar [deze pagina](../../workflow/using/building-a-workflow.md#implementation-steps-).
+* doelgerichte werkstromen; verwijst naar [deze pagina](../../workflow/using/building-a-workflow.md#implementation-steps-).
 
 Op de pagina met ontvangers kunt u veelvuldige bewerkingen uitvoeren op profielen: bewerkingen, updates, toevoegingen, verwijderingen, sorteren.
 
-Voor geavanceerdere profielmanipulaties moet u de Adobe Campagnestructuur bewerken. Klik hiertoe op de **[!UICONTROL Explorer]** koppeling op de startpagina van Adobe Campagne.
+Voor geavanceerdere profielmanipulaties moet u de Adobe Campaign-structuur bewerken. Klik hiertoe op de **[!UICONTROL Explorer]** koppeling op de startpagina van Adobe Campaign.
 
 Door gebrek, worden de ontvangers opgeslagen in de **[!UICONTROL Profiles and Targets > Recipients]** knoop van de boom. U kunt ontvangers maken vanuit deze weergave en ook:
 
@@ -76,11 +79,11 @@ Voor toegang tot geavanceerde functies en configuraties moet u op het **[!UICONT
 
 ![](assets/d_ncs_user_interface01.png)
 
-De algemene lay-out van de Adobe Campaign Explorer wordt weergegeven in de [Adobe Campaign-verkenner](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)gebruiken.
+De algemene indeling van de Adobe Campaign-verkenner wordt weergegeven in de [Adobe Campaign-verkenner](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)gebruiken.
 
 >[!NOTE]
 >
->U kunt een geavanceerde weergave van deze lijst ook weergeven vanuit de Adobe Campagne-structuur door op de **[!UICONTROL Profiles and targets > Recipients]** koppeling te klikken. De lijstvertoning kan aan uw behoeften worden gevormd. U kunt kolommen toevoegen of verwijderen, de kolomvolgorde, de sorteergegevens enzovoort definiëren. De weergaveconfiguratie voor lijsten wordt beschreven in [Adobe Campagneverkenner](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)gebruiken.
+>U kunt een geavanceerde weergave van deze lijst ook weergeven vanuit de Adobe Campaign-structuur door op de **[!UICONTROL Profiles and targets > Recipients]** koppeling te klikken. De lijstvertoning kan aan uw behoeften worden gevormd. U kunt kolommen toevoegen of verwijderen, de kolomvolgorde, de sorteergegevens enzovoort definiëren. De de vertoningsconfiguratie van de lijst wordt beschreven in het [Gebruiken van de ontdekkingsreiziger](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)van Adobe Campaign.
 >
 >U kunt ook de weergave voor ontvangers definiëren. Zie [Mappen en weergaven](../../platform/using/access-management.md#folders-and-views)voor meer informatie over deze functionaliteit.
 
@@ -92,12 +95,12 @@ Actieve profielen zijn de profielen die voor factureringsdoeleinden worden getel
 
 Facturering heeft alleen betrekking op profielen die **actief** zijn. Een profiel wordt als actief beschouwd als het profiel de afgelopen twaalf maanden via een kanaal als doel is aangewezen of met het profiel is gecommuniceerd.
 
+Er wordt geen rekening gehouden met de profielen die tijdens de voorbereiding van de levering zijn uitgesloten (typologische regels, quarantaine). Een profiel dat voor meerdere leveringen is bestemd, wordt slechts eenmaal meegeteld.
+
 >[!NOTE]
 >
 >Er wordt geen rekening gehouden met de kanalen Facebook en Twitter.
 
-U kunt een overzicht van **[!UICONTROL Number of active profiles]** van het **[!UICONTROL Administration > Campaign Management > Customer metrics]** menu hebben.
+U kunt een overzicht van het **[!UICONTROL Number of active profiles]** van het **[!UICONTROL Administration > Campaign Management > Customer metrics]** menu van Campaign Standard hebben. Het daadwerkelijke aantal wordt uitgevoerd door het **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technische werkschema](../../workflow/using/deliveries.md), dat elke dag loopt en de nieuwe gegevens aan het bestaande rapport voor de huidige periode in het **[!UICONTROL Customer metrics]** menu toevoegt. Elke periode duurt 12 maanden.
 
-Het daadwerkelijke aantal wordt uitgevoerd door het **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technische werkschema](../../workflow/using/delivery.md), dat elke dag loopt en de nieuwe gegevens aan het bestaande rapport voor de huidige periode in het **[!UICONTROL Customer metrics]** menu toevoegt. Elke periode duurt 12 maanden.
-
-Er wordt geen rekening gehouden met de profielen die tijdens de voorbereiding van de levering zijn uitgesloten (typologische regels, quarantaine). Een profiel dat voor meerdere leveringen is bestemd, wordt slechts eenmaal meegeteld.
+Als u wordt gehost op AWS en Campaign Classic gebruikt vanuit build 8931, kunt u het aantal actieve profielen dat wordt gebruikt op uw instanties ook rechtstreeks controleren via het Configuratiescherm. Raadpleeg de documentatie bij het [Configuratiescherm voor meer informatie](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
