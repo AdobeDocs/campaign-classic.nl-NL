@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
+source-git-commit: b080bdc4d719994c74ec5c094c917e2c40839a49
 workflow-type: tm+mt
-source-wordcount: '2472'
+source-wordcount: '2584'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ De volgende rapporten verstrekken informatie over de adressen in quarantaine:
 
 * Het **[!UICONTROL Non-deliverables and bounces]** rapport bevat informatie over de adressen in quarantaine, de typen fouten die zijn aangetroffen, enz. en een uitsplitsing naar domein van fouten.
 
-U kunt deze informatie opzoeken voor alle leveringen van het platform (**Startpagina>Rapporten**) of voor een specifieke levering. U kunt ook aangepaste rapporten maken en de informatie selecteren die moet worden weergegeven.
+U kunt deze informatie opzoeken voor alle leveringen van het platform (**[!UICONTROL Home page > Reports]**) of voor een specifieke levering. U kunt ook aangepaste rapporten maken en de informatie selecteren die moet worden weergegeven.
 
 ### Het identificeren van quarantined adressen voor een ontvanger {#identifying-quarantined-addresses-for-a-recipient}
 
@@ -102,16 +102,30 @@ U kunt de status van het e-mailadres van elke ontvanger opzoeken. Selecteer hier
 
 ### Het verwijderen van een quarantined adres {#removing-a-quarantined-address}
 
-Als u een adres uit quarantaine moet verwijderen, verander zijn status manueel in **[!UICONTROL Valid]**.
+Indien nodig, kunt u een adres uit de quarantainelijst manueel verwijderen. Bovendien worden adressen die aan specifieke voorwaarden voldoen automatisch verwijderd uit de quarantainelijst door de **[!UICONTROL Database cleanup]** workflow.
 
-![](assets/tech_quarant_error_status.png)
+Een adres handmatig uit de quarantainelijst verwijderen:
 
-Als u de status wijzigt in **[!UICONTROL On allow list]**, wordt het adres systematisch geactiveerd, zelfs als een fout optreedt.
+* U kunt de status wijzigen in **[!UICONTROL Valid]** van het **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** knooppunt.
 
->[!CAUTION]
-De adressen op de bloklijst zijn niet betrokken bij het quarantainesysteem en worden niet gericht, zelfs als u de status van het adres verandert.
+   ![](assets/tech_quarant_error_status.png)
 
-U kunt ook het aantal fouten en de periode tussen fouten wijzigen. Hiervoor wijzigt u de instellingen van de implementatietovenaar (instellingen voor E-mailkanaal/Geavanceerd). Raadpleeg [deze sectie](../../installation/using/deploying-an-instance.md)voor meer informatie over de implementatietovenaar.
+* U kunt ook de status wijzigen in **[!UICONTROL On allow list]**. In dit geval blijft het adres op de quarantainelijst staan, maar het wordt systematisch als doel gebruikt, zelfs als er een fout optreedt.
+
+<!--Addresses on the block list are not concerned by the quarantine system and are not targeted, even if you change the status of the address.-->
+
+De adressen worden automatisch verwijderd uit de quarantainelijst in de volgende gevallen:
+
+* Adressen in een **[!UICONTROL With errors]** status worden na een geslaagde aflevering uit de quarantainelijst verwijderd.
+* Adressen in een **[!UICONTROL With errors]** status worden uit de quarantainelijst verwijderd als de laatste zachte stuit meer dan 10 dagen geleden heeft plaatsgevonden. Zie [deze sectie](#soft-error-management)voor meer informatie over softerror management.
+* Adressen in een **[!UICONTROL With errors]** status die met de **[!UICONTROL Mailbox full]** fout is verstuurd, worden na 30 dagen uit de quarantainelijst verwijderd.
+
+De status verandert vervolgens in **[!UICONTROL Valid]**.
+
+>[!IMPORTANT]
+Ontvangers met een adres in een **[!UICONTROL Quarantine]** of **[!UICONTROL On block list]** status worden nooit verwijderd, zelfs niet als ze een e-mail ontvangen.
+
+U kunt het aantal fouten en de periode tussen twee fouten wijzigen. Hiervoor wijzigt u de corresponderende instellingen in de wizard Implementatie (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**). Raadpleeg [deze sectie](../../installation/using/deploying-an-instance.md)voor meer informatie over de implementatietovenaar.
 
 ## Voorwaarden voor verzending van een adres naar quarantaine {#conditions-for-sending-an-address-to-quarantine}
 
@@ -121,7 +135,7 @@ Adobe Campaign beheert quarantaine volgens het type van de leveringsmislukking e
 * **Harde fout**: het desbetreffende e-mailadres wordt onmiddellijk naar quarantaine verzonden.
 * **Zachte fout**: de zachte fouten verzenden onmiddellijk geen adres naar quarantaine, maar zij verhogen een foutenteller. Zie [Foutenbeheer](#soft-error-management)voor meer informatie.
 
-Als een gebruiker een e-mailbericht kwalificeert als een spam (**feedbacklus**), wordt het bericht automatisch doorgestuurd naar een technische mailbox die door Adobe wordt beheerd. Het e-mailadres van de gebruiker wordt vervolgens automatisch naar quarantaine verzonden.
+Als een gebruiker een e-mailbericht kwalificeert als een spam ([feedbacklus](../../delivery/using/technical-recommendations.md#feedback-loop)), wordt het bericht automatisch doorgestuurd naar een technische mailbox die door Adobe wordt beheerd. Het e-mailadres van de gebruiker wordt vervolgens automatisch naar quarantaine verzonden.
 
 In de lijst van quarantined adressen, wijst het **[!UICONTROL Error reason]** gebied erop waarom het geselecteerde adres in quarantaine werd geplaatst. Quarantine in Adobe Campaign is hoofdlettergevoelig. Importeer e-mailadressen in kleine letters, zodat ze later niet opnieuw worden toegewezen.
 
@@ -239,7 +253,7 @@ Als APNS synchroon een &quot;niet-geregistreerde&quot; status voor een bericht r
   <tr> 
    <td> APNS-bericht afgewezen: alle andere fouten<br /> </td> 
    <td> Mislukt<br /> </td> 
-   <td> De oorzaak van de fout-afwijzing komt voor in het foutbericht<br /> </td> 
+   <td> De oorzaak van de foutafstoting komt voor in het foutbericht<br /> </td> 
    <td> Zacht<br /> </td> 
    <td> Geweigerd<br /> </td> 
    <td> Nee<br /> </td> 
