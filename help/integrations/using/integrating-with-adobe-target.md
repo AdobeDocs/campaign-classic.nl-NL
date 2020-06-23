@@ -15,28 +15,31 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b0cd40d4616f7b55a1d655a1717b9c7ce8d8b6c6
+source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 0%
 
 ---
 
 
 # Integreren met Adobe Target{#integrating-with-adobe-target}
 
-Dankzij de integratie tussen Adobe Campaign en Adobe Target (Klassiek en Standaard) in Adobe Experience Cloud kunt u een aanbieding van Adobe Target opnemen in een e-maillevering voor Adobe Campagne.
+Dankzij de integratie tussen Adobe Campaign en Adobe Target (Classic en Standard) in Adobe Experience Cloud kunt u een aanbod van Adobe Target opnemen in een Adobe Campaign e-maillevering.
 
-Het operationele beginsel is als volgt: wanneer een ontvanger een e-mail opent die via de Campagne van Adobe wordt verzonden, staat een vraag aan Adobe Target u toe om een dynamische versie van de inhoud te tonen. Deze dynamische versie wordt berekend op basis van de regels die vooraf zijn opgegeven bij het maken van de e-mail.
+Het operationele beginsel is als volgt: wanneer een ontvanger een e-mailbericht opent dat via Adobe Campaign is verzonden, kunt u met een aanroep naar Adobe Target een dynamische versie van de inhoud weergeven. Deze dynamische versie wordt berekend op basis van de regels die vooraf zijn opgegeven bij het maken van de e-mail.
 
 Meer informatie over de integratie van Adobe Campaign en Adobe Target met [deze vier tips en trucs](https://www.adobe.com/content/dam/www/us/en/marketing/campaign/pdfs/Adobe_Campaign_for_Target_Tips_and_Tricks.pdf).
 >[!NOTE]
 >
 >De integratie ondersteunt alleen statische afbeeldingen. De rest van de inhoud kan niet worden gepersonaliseerd.
 
-Adobe Target kan verschillende gegevenstypen gebruiken:
+Adobe Target kan verschillende typen gegevens gebruiken:
 
-* Gegevens van de Adobe Campaign-datamart
-* Segmenten die zijn gekoppeld aan de bezoeker-id in Adobe Target als er geen wettelijke beperkingen gelden voor de gebruikte gegevens
+* Gegevens uit de Adobe Campaign datamart
+* Segmenten die zijn gekoppeld aan de bezoekersidentiteitskaart in Adobe Target, indien voor de gebruikte gegevens geen wettelijke beperkingen gelden
 * Adobe Target-gegevens: gebruikersagent, IP-adres, geolocalisatiegegevens
 
 >[!NOTE]
 >
->U vindt ook informatie over integratie tussen Adobe Campaign en Adobe Target op de Help-pagina&#39;s [van](https://marketing.adobe.com/resources/help/en_US/target/a4t/c_campaign_and_target.html)Adobe Target.
+>Op de Help-pagina&#39;s [van](https://docs.adobe.com/content/help/en/target/using/integrate/campaign-and-target.html)Adobe Target vindt u ook informatie over de integratie tussen Adobe Campaign en Adobe Target.
