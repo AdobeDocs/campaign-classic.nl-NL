@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1b0980d540992538f7961afd7c218888dee4a39
+source-git-commit: 57263746675152b472aa5df4ce94f97b77a84a6b
 workflow-type: tm+mt
-source-wordcount: '6708'
+source-wordcount: '6726'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,8 @@ Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates
 U kunt ook de [Adobe Campaign Classic Release Notes](../../rn/using/latest-release.md) raadplegen voor meer updates.
 
 ## juni 2020 {#june-2020}
+
+Er zijn gebruiksgevallen toegevoegd voor het [coderen](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) en [decoderen](../../workflow/using/importing-data.md#use-case-gpg-decrypt) van gegevens met de workflows Configuratiescherm en Campagne.
 
 Zowel de termen &quot;whitelist&quot; als &quot;blacklist&quot; zijn uit de documentatie van Adobe Campaign verwijderd. Sommige van deze termen bestaan mogelijk nog steeds in de gebruikersinterface van het product, optienamen en interne code, maar worden in komende campagnereleases vervangen door &quot;blocklist&quot; en &quot;allowlist&quot;.
 
