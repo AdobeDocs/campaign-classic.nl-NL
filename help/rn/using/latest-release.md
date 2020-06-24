@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e3e8802aae0d10befcf9eef1ccf720f82c460038
+source-git-commit: b2cc71f8f9b7df80b1601a9fa55bfd77f9a82433
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1765'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,8 @@ ht-degree: 0%
 </table>
 
 De **laatste stabiele build** is 9032 (3a9dc9c). Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+
+![](assets/do-not-localize/cp-icon.png) **Nieuwe release** van het Configuratiescherm in juni met controle van actieve profielen, controle van de leverbaarheid van subdomeinen en beheer van GPG-sleutels. [Meer](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)informatie.
 
 ## ![](assets/do-not-localize/blue_2.png) Release 20.2.1 - build 9178 {#release-20-2-1-build-9178}
 
@@ -90,7 +92,7 @@ _8 juni 2020_
   <tr> 
    <td> <p>De Thaise wet inzake de bescherming van persoonsgegevens (PDPA) is de nieuwe privacywet die de vereisten inzake gegevensbescherming voor Thailand harmoniseert en moderniseert. </p>
    <p>Lei Geral de Proteção de Dados (LGPD) is vanaf 16 augustus van kracht voor alle bedrijven die in Brazilië persoonsgegevens verzamelen of verwerken.</p>
-   <p>Deze regels zijn van toepassing op klanten van Adobe Campagne die gegevens voor de Onderwerpen van Gegevens in deze landen verblijven. Naast de privacy mogelijkheden reeds beschikbaar in Campagne (met inbegrip van toestemmingsbeheer, montages van het gegevensbehoud, en gebruikersrollen), nemen wij deze kans aan om extra mogelijkheden te omvatten, helpen uw bereidheid voor PDPA en LGPD vergemakkelijken:</p>
+   <p>Deze voorschriften zijn van toepassing op Adobe Campaign-klanten die gegevens bewaren voor in deze landen wonende gegevenssubjecten. Naast de privacy mogelijkheden reeds beschikbaar in Campagne (met inbegrip van toestemmingsbeheer, montages van het gegevensbehoud, en gebruikersrollen), nemen wij deze kans aan om extra mogelijkheden te omvatten, helpen uw bereidheid voor PDPA en LGPD vergemakkelijken:</p>
    <ul> 
      <li><p>Recht op toegang en recht op verwijdering: wij benutten de capaciteiten die voor de GDPR en de CCPA zijn toegevoegd. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">Meer informatie</a></p></li> 
      <li> <p>Wanneer u een privacyaanvraag maakt met de Campagne-interface of API, selecteert u nu het <strong>Regeltype</strong> : PDPA, LGPD, GDPR, CCPA. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests">Lees meer</a>.</p></li>
@@ -147,11 +149,11 @@ Meer informatie over de matrix [Campagne Compatibility](https://helpx.adobe.com/
 
 * Verouderde sms-connectors zijn nu afgekeurd. Raadpleeg de pagina met [Verouderde functies](../../rn/using/deprecated-features.md).
 
-* U kunt uw eigen Litmus-account niet meer gebruiken voor het instellen en gebruiken van Inbox-rendering in Adobe Campaign. [Meer](../../delivery/using/inbox-rendering.md)informatie.
+* U kunt uw eigen Litmus-account niet meer gebruiken voor provisioning en gebruik van Inbox-rendering in Adobe Campaign. [Meer](../../delivery/using/inbox-rendering.md)informatie.
 
 * Voor een beter onderscheid tussen weergaven en mappen is de kleur van weergavenamen gewijzigd van donkerblauw in donkercyaan. [Meer informatie](../../platform/using/access-management.md#about-views)
 
-* Campaign Classic kan nu worden verbonden met Microsoft Dynamics CRM-accounts die worden gehost in de regio&#39;s VK, India en Canada. Dit is op Bureau 365 en op gebouw (Dynamiek 2015) plaatsingstypes van toepassing.
+* Campaign Classic kan nu worden verbonden met Microsoft Dynamics CRM-accounts die worden gehost in de regio&#39;s Verenigd Koninkrijk, India en Canada. Dit is op Bureau 365 en op gebouw (Dynamiek 2015) plaatsingstypes van toepassing.
 
 * De campagne voert nu een controle van TLS uit om te controleren dat hostname van de server hostname in het verstrekte certificaat aanpast.
 
