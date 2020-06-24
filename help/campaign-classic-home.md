@@ -5,9 +5,9 @@ solution: Campaign Classic
 title: Adobe Campaign Classic-productdocumentatie
 topic: Premium
 translation-type: tm+mt
-source-git-commit: b247a3702249183e1e0851160fb3ac3809437ff1
+source-git-commit: 30b2860250c6d1c4032a22a28f6e2e48dcacc6a8
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Nieuwe functies
 
-* Zowel de termen &quot;whitelist&quot; als &quot;blacklist&quot; zijn uit de documentatie van Adobe Campaign verwijderd. [Meer informatie](/help/rn/using/documentation-updates.md)
+* **[Emoticons](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>U kunt nu emoticons invoegen in berichten en onderwerpregel
 
 * **[Krijg de Veelgestelde vragen van de Toegang van de Steun](https://helpx.adobe.com/campaign/kb/ac-support.html)**<br/>, beste praktijken, hulpmiddelen, en verzoek om hulp
 
@@ -49,11 +49,11 @@ ht-degree: 0%
     <p>
   </td>
    <td>
-    <a href="https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html">
+    <a href="https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html">
       <img alt="Upgrade maken" src="platform/using/assets/upgrade.png" />
     </a>
     <div>
-      <a href="https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html">
+      <a href="https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html">
     <strong>Upgrade naar de nieuwste build</strong>
     </a>
     </div>
