@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 3a932bc440853151704f1ba1e188fa0af9d4c5cb
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '116'
 ht-degree: 0%
 
 ---
@@ -30,4 +30,3 @@ Workflows worden afgehandeld door een specifieke module. Deze module kan op meer
 * Het runwf-proces (Workflow Instance Runner) voert alle taken van een bepaalde workflowinstantie uit. Wanneer er geen uit te voeren taken voorlopig zijn, wordt het &quot;passief&quot;, d.w.z. het bewaart zijn status in het gegevensbestand, dan houdt op.
 * De wfserver-module (Workflow Server) bewaakt de huidige workflowinstanties. Als er een taak moet worden uitgevoerd, maakt deze module een proces om de bijbehorende instantie te activeren (of opnieuw te activeren).
 
-Wanneer een exploitant een actie op een werkschema (begin, einde, pauze, enz.) uitvoert, wordt de actie niet onmiddellijk uitgevoerd door de &quot;nlserver&quot;module, maar in plaats daarvan geplaatst in een rij om door de werkschemamodule te worden verwerkt.
