@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 655544352070b0e2fab72b1991d2e4d80e03e349
+source-git-commit: 3d6c304aaa0b3e6ba1156f1a65e93f5c284b0c0a
 workflow-type: tm+mt
-source-wordcount: '2808'
+source-wordcount: '2848'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,11 @@ De volgende correcties hebben betrekking op het beveiligingsmechanisme voor kopp
 ![](assets/do-not-localize/orange_2.png) **29 april 2020**: new build (9032@3a9dc9c) met de volgende oplossingen:
 
 * Verbeterde beveiliging voor het bijhouden van koppelingen in e-mail. Dit is standaard ingeschakeld voor alle klanten. Er is een extra, verbeterde beveiligingsfunctie beschikbaar die kan worden ingeschakeld door de klantenservice te bereiken. Meer informatie over de functie en de stappen die niet-gehoste klanten moeten uitvoeren, vindt u in de checklist [voor](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)beveiliging en privacy.
+
+>[!CAUTION]
+>
+>Als u problemen ondervindt met pushberichten via koppelingen voor reeksspatiëring of met ankerlabels voor leveringen, raden we u aan het nieuwe handtekeningmechanisme voor het bijhouden van koppelingen uit te schakelen. De procedure wordt in deze [pagina beschreven](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
+
 * Probleem verholpen waarbij afbeeldingen niet konden worden weergegeven bij levering op regel. (NEO-23207)
 * Probleem verholpen met de **bestandsoverdrachtactiviteit** waardoor verificatie op basis van SFTP-sleutels niet kon werken op Debian 9. (NEO-23183)
 * Probleem verholpen die invloed kan hebben op pushberichten wanneer deze op een hoge frequentie worden verzonden. (NEO-20516)
