@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 68a95962dfecc4b10f48ba16d4f8ab29cae02ee8
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ Acties die betrekking hebben op het uitvoeren van de workflow (starten, stoppen,
 Met de werkbalk kunt u de uitvoering van de workflow starten en volgen.
 
 De lijst met opties in het **[!UICONTROL Actions]** menu en in het snelmenu dat met de rechtermuisknop wordt geopend, wordt hieronder beschreven.
+
+>[!IMPORTANT]
+>
+>Houd er rekening mee dat wanneer een operator een handeling uitvoert op een werkstroom (starten, stoppen, pauzeren, enz.), de handeling niet direct wordt uitgevoerd, maar in plaats daarvan in een wachtrij wordt geplaatst om te worden verwerkt door de [werkstroommodule](../../workflow/using/architecture.md).
 
 ## Werkbalk Handelingen {#actions-toolbar}
 
