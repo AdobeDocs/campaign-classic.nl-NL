@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campagne classic
 translation-type: tm+mt
-source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
+source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
 workflow-type: tm+mt
-source-wordcount: '2101'
+source-wordcount: '2126'
 ht-degree: 0%
 
 ---
@@ -320,6 +320,13 @@ ht-degree: 0%
       + [Synchroniseren van publiek](integrations/using/synchronizing-audiences.md)
       + [Webtoepassingen synchroniseren](integrations/using/synchronizing-web-applications.md)
       + [Problemen met de [!DNL ACS Connector] oplossen](integrations/using/troubleshooting-the-acs-connector.md)
+   + Experience Cloud Triggers {#experience-triggers}
+      + [Info over [!DNL Adobe Experience Cloud-triggers]](integrations/using/about-triggers.md)
+      + [Gasleiding configureren](integrations/using/configuring-pipeline.md)
+      + [Pipeline, optie NmsPipeline_Config](integrations/using/nmspipeline-config.md)
+      + [Triggergebeurtenissen](integrations/using/events.md)
+      + [Pipetcontrole](integrations/using/pipeline-monitoring.md)
+      + [Problemen met pijpleidingen oplossen](integrations/using/pipeline-troubleshooting.md)
 + Automatiseren met workflows {#automating-with-workflows}
    + Inleiding {#introduction}
       + [Workflows](workflow/using/about-workflows.md)
@@ -397,6 +404,7 @@ ht-degree: 0%
       + [Binnenkomende e-mails](workflow/using/inbound-emails.md)
       + [Binnenkomende SMS](workflow/using/inbound-sms.md)
    + Gebruik hoofdletters {#use-cases}
+      + [Gebruikskwesties bij werkstromen](workflow/using/about-workflow-use-cases.md)
       + Leveringen {#deliveries}
          + [De lokale goedkeuringsactiviteit gebruiken](workflow/using/using-the-local-approval-activity.md)
          + [A/B-tests](workflow/using/a-b-testing.md)
