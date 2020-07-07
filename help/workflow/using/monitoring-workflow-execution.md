@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2001'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ In [deze sectie](../../workflow/using/supervising-workflows.md#supervising-workf
 
 Daarnaast kunnen beheerders van de instantie het **audittrail** gebruiken om activiteiten en laatste wijzigingen in workflows, de status van uw workflows, te controleren. Raadpleeg de [desbetreffende sectie](../../production/using/audit-trail.md)voor meer informatie hierover.
 
-In [deze pagina](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)worden extra manieren weergegeven om de verschillende campagneprocessen te controleren.
+In [deze pagina](../../production/using/monitoring-guidelines.md)worden extra manieren weergegeven om de verschillende campagneprocessen te controleren.
 
 ## Voortgang weergeven {#displaying-progress}
 
@@ -111,7 +111,7 @@ Workflowgeschiedenis wordt niet automatisch gewist: alle berichten worden standa
 
 ## Worktables and workflow schema {#worktables-and-workflow-schema}
 
-De workflow geeft worktables weer die via bepaalde activiteiten kunnen worden gemanipuleerd. Met Adobe Campaign kunt u via gegevensbeheeractiviteiten de kolommen van worktables in de workflow aanpassen, hernoemen en verrijken, bijvoorbeeld om ze aan te passen aan de nomenclatuur, afhankelijk van de behoeften van de klant, om aanvullende informatie te verzamelen over de co-begunstigde van een contract, enz.
+De workflow geeft worktables weer die via bepaalde activiteiten kunnen worden gemanipuleerd. Met Adobe Campaign kunt u via gegevensbeheeractiviteiten de kolommen van workflows aanpassen, hernoemen en verrijken, bijvoorbeeld om ze aan te passen aan de nomenclatuur afhankelijk van de behoeften van de klant, om aanvullende informatie te verzamelen over de co-begunstigde van een contract, enz.
 
 Het is ook mogelijk om verbindingen tussen diverse het werkdimensies tot stand te brengen en afmetingsveranderingen te bepalen. Voor elk contract dat bijvoorbeeld in de database is opgenomen, richt u zich tot de hoofdhouder en gebruikt u de gegevens van de medehouder in de aanvullende informatie.
 
@@ -119,11 +119,11 @@ De werktafels van de workflow worden automatisch verwijderd wanneer de workflow 
 
 ## Fouten beheren {#managing-errors}
 
-Wanneer een fout optreedt, wordt de werkstroom gepauzeerd en wordt de activiteit uitgevoerd wanneer de fout optrad met rood. In het workflowoverzicht (**[!UICONTROL Monitoring]** universum > **[!UICONTROL Workflows]** koppeling) kunt u alleen workflows met fouten weergeven, zoals hieronder wordt weergegeven.
+Wanneer een fout optreedt, wordt de werkstroom gepauzeerd en wordt de activiteit uitgevoerd wanneer de fout optrad, met rood wordt weergegeven. In het workflowoverzicht (**[!UICONTROL Monitoring]** universum > **[!UICONTROL Workflows]** koppeling) kunt u alleen workflows met fouten weergeven, zoals hieronder wordt weergegeven.
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
-In de Adobe Campagneverkenner wordt standaard een **[!UICONTROL Failed]** kolom weergegeven in de workflowlijst.
+In Adobe Campaign Explorer wordt standaard een **[!UICONTROL Failed]** kolom weergegeven in de workflowlijst.
 
 ![](assets/wf-explorer_errors_col.png)
 
@@ -137,11 +137,11 @@ Voorbeeld van melding:
 
 ![](assets/wf-notification_error-msg.png)
 
-Met de koppeling hebt u toegang tot de Adobe Campagne-console in de webmodus en kunt u werken aan de foutworkflow nadat u zich hebt aangemeld.
+Met de koppeling hebt u toegang tot de Adobe Campaign-console in de webmodus en kunt u werken aan de foutworkflow nadat u zich hebt aangemeld.
 
 ![](assets/wf-notification_error-console.png)
 
-U kunt de werkstroom zodanig configureren dat deze niet wordt gepauzeerd en verder wordt uitgevoerd in het geval van fouten. Hiervoor bewerkt u de workflow **[!UICONTROL Properties]** en selecteert u in de **[!UICONTROL Error management]** sectie de **[!UICONTROL Ignore]** optie in het **[!UICONTROL In case of error]** veld. Vervolgens kunt u opgeven hoeveel opeenvolgende fouten kunnen worden genegeerd voordat het proces wordt gepauzeerd.
+U kunt de workflow zodanig configureren dat deze niet wordt onderbroken en verder wordt uitgevoerd in het geval van fouten. Hiervoor bewerkt u de workflow **[!UICONTROL Properties]** en selecteert u in de **[!UICONTROL Error management]** sectie de **[!UICONTROL Ignore]** optie in het **[!UICONTROL In case of error]** veld. Vervolgens kunt u opgeven hoeveel opeenvolgende fouten kunnen worden genegeerd voordat het proces wordt gepauzeerd.
 
 In dit geval wordt de fouttaak afgebroken. Deze modus is vooral geschikt voor workflows die zijn ontworpen om de campagne later weer te geven (periodieke acties).
 
@@ -175,7 +175,7 @@ Indien mogelijk raden we u aan de workflow opnieuw te starten nadat u wijziginge
 
 ## Instantie controleren {#instance-supervision}
 
-Op de **[!UICONTROL Instance supervision]** pagina kunt u de serveractiviteit van de campagne van Adobe bekijken en de lijst met workflows en leveringen met fouten weergeven.
+Op de **[!UICONTROL Instance supervision]** pagina kunt u de Adobe Campaign-serveractiviteit weergeven en een lijst met workflows en leveringen met fouten weergeven.
 
 Ga naar het **[!UICONTROL Monitoring]** universum en klik op de **[!UICONTROL General view]** koppeling om deze pagina te openen.
 
@@ -262,7 +262,7 @@ Workflowtoezichthouders worden op de hoogte gesteld. De maker en laatste gebruik
 
 ## Workflows filteren op basis van hun status {#filtering-workflows-status}
 
-Met de klassieke interface van Campagne kunt u de uitvoeringsstatus van alle workflows op uw instantie controleren met behulp van vooraf gedefinieerde **weergaven**. Open het knooppunt **[!UICONTROL Administration]**/**[!UICONTROL Audit]**/**[!UICONTROL Workflows Status]** om deze weergaven te openen.
+Met de Campaign Classic-interface kunt u de uitvoeringsstatus van alle workflows op uw exemplaar controleren aan de hand van vooraf gedefinieerde **weergaven**. Open het knooppunt **[!UICONTROL Administration]**/**[!UICONTROL Audit]**/**[!UICONTROL Workflows Status]** om deze weergaven te openen.
 
 De volgende weergaven zijn beschikbaar:
 
