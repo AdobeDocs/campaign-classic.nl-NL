@@ -15,20 +15,29 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: be590c6d993eecacf51736e3c3e415addae5c6bd
+source-git-commit: 005be008585f75a87fb0029a8a88578cfde5ce51
+workflow-type: tm+mt
+source-wordcount: '466'
+ht-degree: 0%
 
 ---
 
 
-# De clientconsole installeren{#installing-the-client-console}
+# Campagne-clientconsole installeren{#installing-the-client-console}
 
-De installatieprocedure voor de Adobe Campagne Console vindt u hieronder in detail.
+De console van de Cliënt van de campagne is een rijke cliënt die u toelaat om met uw de toepassingsserver(s) van de Campagne te verbinden.
 
-Controleer voordat u de Adobe Campaign-console installeert de voorwaarden in de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
+Voordat u begint, moet u de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)voor Campagne controleren en de URL en gebruikersgegevens van de Campagneserver ophalen.
 
-Voer de volgende stappen uit om de Adobe Campaign-console te installeren:
+>[!CAUTION]
+>
+>De console van de Cliënt van de campagne en de toepassingsserver van de Campagne moeten op de zelfde productversie lopen. Adobe raadt ook aan om dezelfde productbuild te gebruiken.
 
-1. Open browser van het Web en download de console van het volgende adres:
+## Download de console{#download-the-client-console}
+
+Volg onderstaande stappen om de Adobe Campaign-clientconsole te downloaden en installeren:
+
+1. Open een webbrowser en download de console vanaf het volgende adres:
 
    [`https://<your adobe campaign server>:<port number>/nl/jsp/logon.jsp`](https://machine/nl/jsp/logon.jsp).
 
@@ -40,11 +49,57 @@ Voer de volgende stappen uit om de Adobe Campaign-console te installeren:
 
 1. Klik op de **[!UICONTROL Download]** koppeling op de installatiepagina.
 1. Download en sla het instellingenbestand van de client op.
-1. Het gedownloade bestand uitvoeren op een computer in Windows: De installatie wordt gestart. Het standaardinstallatiepad van de clientconsole is **$PROGRAMFILES$/Adobe/Adobe Campagne Classic vX Client**, waarbij &#39;X&#39; &#39;6&#39; of &#39;7&#39; is, volgens uw Adobe Campagneversie.
-1. Zodra het installatieprogramma is voltooid, start u de console vanuit het Windows- **[!UICONTROL Start]** menu (in de **Adobe Campagne** programmagroep).
+1. Het gedownloade bestand uitvoeren op een computer in Windows: De installatie wordt gestart. Het standaardinstallatiepad van de clientconsole is **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**, waarbij &#39;X&#39; &#39;6&#39; of &#39;7&#39; is, volgens uw Adobe Campaign-versie.
 
 >[!NOTE]
 >
->In Windows kunt u het bestand **nlclient.exe** rechtstreeks starten vanuit de `[INSTALL]/bin` map op een Windows-server. Dit `[INSTALL]` is het toegangspad voor de installatiemap van Adobe Campagne.\
->Als u een nieuwe verbinding wilt maken, raadpleegt u [Een instantie maken en aanmelden](../../installation/using/creating-an-instance-and-logging-on.md).
+>In Windows kunt u het bestand **nlclient.exe** rechtstreeks starten vanuit de `[INSTALL]/bin` map op een Windows-server, waar `[INSTALL]` het toegangspad voor de installatiemap van Adobe Campaign ligt.
 
+## Verbinding maken{#create-the-connection}
+
+Nadat de clientconsole is geïnstalleerd, voert u de onderstaande stappen uit om de verbinding met de toepassingsserver tot stand te brengen:
+
+1. Start de console vanuit het Windows- **[!UICONTROL Start]** menu in de **Adobe Campaign** -programmagroep.
+
+1. Klik op de koppeling in de rechterbovenhoek van de aanmeldingsvelden om het venster voor de verbindingsconfiguratie te openen.
+
+   ![](assets/s_ncs_install_define_connection_01.png)
+
+1. Klik op **[!UICONTROL Add > Connection]** en voer het label en de URL van de Adobe Campaign-toepassingsserver in.
+
+   ![](assets/s_ncs_install_define_connection_02.png)
+
+1. Geef een verbinding met uw Adobe Campaign-toepassingsserver op via een URL. Gebruik of DNS of een alias van de machine, of uw IP adres.
+
+   U kunt bijvoorbeeld het [`https://<machine>.<domain>.com`](https://machine) type URL gebruiken.
+
+1. Als Adobe IMS voor uw organisatie is geconfigureerd, controleert u de optie **[!UICONTROL Connect with an Adobe ID]**
+
+1. Klik **[!UICONTROL Ok]** om uw instellingen op te slaan.
+
+U kunt zo veel verbindingen toevoegen als u nodig hebt om bijvoorbeeld verbinding te maken met uw test-, stage- en productieomgeving.
+
+>[!NOTE]
+>
+>Met de **[!UICONTROL Add]** knop kunt u al uw verbindingen ordenen **[!UICONTROL folders]** . U hoeft alleen elke verbinding naar een map te slepen.
+
+
+## Aanmelden bij campagne
+
+Volg onderstaande stappen om u aan te melden bij een bestaande instantie:
+
+1. Start de console vanuit het Windows- **[!UICONTROL Start]** menu in de **Adobe Campaign** -programmagroep.
+
+1. Klik op de koppeling in de rechterbovenhoek van de aanmeldingsvelden om het venster voor de verbindingsconfiguratie te openen.
+
+1. Selecteer de instantie Campagne waaraan u zich moet aanmelden.
+
+1. Klik op **[!UICONTROL Ok]**
+
+1. Voer uw aanmeldingsgegevens voor de gebruiker in en klik op **[!UICONTROL Log in]**
+
+**Verwante onderwerpen**
+
+* [Een instantie maken en aanmelden](../../installation/using/creating-an-instance-and-logging-on.md).
+* [Compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+* [De Adobe Campaign-client](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/install-and-setup-the-adobe-campaign-client.html) installeren en instellen (video)
