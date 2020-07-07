@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3d6c304aaa0b3e6ba1156f1a65e93f5c284b0c0a
+source-git-commit: 8c352c850777852d14ccf3002c20f651b46f9047
 workflow-type: tm+mt
-source-wordcount: '2848'
+source-wordcount: '2917'
 ht-degree: 0%
 
 ---
@@ -77,11 +77,27 @@ _13 augustus 2019_
 
 ## Release 19.1.4 - build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) **22 juni 2020**: new build (9032@800be2e) met de volgende oplossingen:
+![](assets/do-not-localize/green_2.png) **Gold Standard 10-release**
+
+_7 juli 2020_
+
+Deze nieuwe build (9032@efd8a94) bevat de volgende oplossing:
+
+* Probleem verholpen waardoor koppelingen niet konden worden bijgehouden. (NEO-26411)
+
+>[!CAUTION]
+>
+>Wij adviseren dat u de cliëntconsole met beschikbaar in deze versie bevordert. Zie deze [pagina](../../installation/using/installing-the-client-console.md)
+
+![](assets/do-not-localize/orange_2.png) **Gold Standard 9-release**
+
+_22 juni 2020_
+
+Deze nieuwe build (9032@800be2e) bevat de volgende oplossingen:
 
 * De iOS HTTP2-connector is verbeterd (updates van derden en foutbeheer). (NEO-25904, NEO-25903, NEO-25799)
 
-De volgende correcties hebben betrekking op het beveiligingsmechanisme voor koppelingen bijhouden:
+De volgende oplossingen hebben betrekking op het beveiligingsmechanisme voor koppelingen bijhouden (zie de checklist [Beveiliging en Privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)):
 
 * Probleem verholpen waardoor het bijhouden van &#39;berichtklikken&#39; niet kon worden uitgevoerd (iOS- en Android-pushmeldingen). (NEO-25965)
 * Probleem verholpen waardoor u URL&#39;s voor bijhouden niet kunt openen of erop kunt klikken wanneer u bepaalde oudere versies van Outlook gebruikt.  (NEO-25688)
@@ -89,7 +105,11 @@ De volgende correcties hebben betrekking op het beveiligingsmechanisme voor kopp
 * Probleem verholpen met de antiphishingservice. (NEO-25283)
 * Probleem met bijhouden opgelost bij het gebruik van specifieke aangepaste volgformules. (NEO-25277)
 
-![](assets/do-not-localize/orange_2.png) **29 april 2020**: new build (9032@3a9dc9c) met de volgende oplossingen:
+![](assets/do-not-localize/orange_2.png) **Gold Standard 8-release**
+
+_29 april 2020_
+
+Deze nieuwe build (9032@3a9dc9c) bevat de volgende oplossingen:
 
 * Verbeterde beveiliging voor het bijhouden van koppelingen in e-mail. Dit is standaard ingeschakeld voor alle klanten. Er is een extra, verbeterde beveiligingsfunctie beschikbaar die kan worden ingeschakeld door de klantenservice te bereiken. Meer informatie over de functie en de stappen die niet-gehoste klanten moeten uitvoeren, vindt u in de checklist [voor](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)beveiliging en privacy.
 
@@ -110,32 +130,56 @@ De volgende correcties hebben betrekking op het beveiligingsmechanisme voor kopp
 * Oplossing voor een regressie die ertoe leidde dat de opschoonworkflow vastliep.
 * Oplossing voor een kleine regressie in de logboeken van de opschoonworkflow.
 
-![](assets/do-not-localize/orange_2.png) **5 maart 2020**: new build (9032@19f73c5), die de volgende oplossing bevat:
+![](assets/do-not-localize/orange_2.png) **Gold Standard 6-release**
+
+_9 maart 2019_
+
+Deze nieuwe build (9032@19f73c5) bevat de volgende oplossing:
 
 * Probleem met externe accounts met FTP via SSL opgelost. (NEO-20498)
 
-![](assets/do-not-localize/orange_2.png) **17 december 2019**: new build (9032@d6b8062), die de volgende oplossing bevat:
+![](assets/do-not-localize/orange_2.png) **Gold Standard 5-release**
+
+_17 december 2019_
+
+Deze nieuwe build (9032@d6b8062) bevat de volgende oplossing:
 
 * Probleem met bijhouden van gegevens op de volgende communicatiekanalen verholpen: mobiele (SMS, MMS), push (iOS, Android) en sociale netwerken (Facebook, Twitter). (NEO-19595)
 
-![](assets/do-not-localize/orange_2.png) **11 december 2019**: new build (9032@bc4a935), die de volgende oplossing bevat:
+![](assets/do-not-localize/orange_2.png) **Gold Standard 4-release**
+
+_11 december 2019_
+
+Deze nieuwe build (9032@bc4a935) bevat de volgende oplossing:
 
 * Oplossing voor een prestatieprobleem bij het verzenden van berichten met een MSSQL-database. (NEO-1758)
 
-![](assets/do-not-localize/orange_2.png) **20 november 2019**: new build (9032@3468c7b) met de volgende oplossingen:
+![](assets/do-not-localize/orange_2.png) **Gold Standard 3-release**
+
+_20 november 2019_
+
+Deze nieuwe build (9032@3468c7b) bevat de volgende oplossingen:
 
 * Oplossing voor een aanmeldingsprobleem via IMS-verificatie. (NEO-17312)
 * Probleem verholpen bij het weergeven van cumulatieve rapporten over meerdere leveringen. (NEO-18165)
 * Probleem verholpen waarbij de webserver vastliep of kon blokkeren.
 
-![](assets/do-not-localize/orange_2.png) **19 september 2019**: new build (9032@cee805c) met de volgende oplossingen:
+![](assets/do-not-localize/orange_2.png) **Gold Standard 2-release**
+
+_19 september 2019_
+
+Deze nieuwe build (9032@cee805c) bevat de volgende oplossingen:
 
 * Probleem verholpen bij gebruik van de CRM-connector voor Salesforce. (NEO-17712)
 * Probleem verholpen met een index die prestatieproblemen kan veroorzaken bij het verzenden van transactieberichten.
 
-![](assets/do-not-localize/orange_2.png) **13 augustus 2019**: eerste 19.1.4-build met de volgende oplossingen:
+![](assets/do-not-localize/orange_2.png) **Release 19.1.4 - build 9032**
 
-* Oplossing voor een probleem met de planneractiviteit die ongewenste foutberichten tijdens de configuratie van de wizard genereerde. Bijwerken vanuit NEO-11662 wordt ongedaan gemaakt. (NEO-17097)
+_13 augustus 2019_
+
+Aanvankelijke build 19.1.4 met de volgende oplossingen:
+
+* Oplossing voor een probleem met de planneractiviteit die ongewenste foutberichten tijdens de configuratie van de wizard genereerde. Update van NEO-11662 wordt teruggedraaid. (NEO-17097)
 * Oplossing voor een regressie veroorzaakt door NEO-12727 die ertoe zou kunnen leiden dat werkstromen worden gestopt wanneer een testactiviteit tweemaal werd uitgevoerd. (NEO-16835)
 * Probleem verholpen waarbij een onjuiste HTTP-code werd geretourneerd (HTTP 200 OK in plaats van HTTP 403 Verboden) wanneer een ongeldig of verlopen sessietoken werd gebruikt in API-aanroepen. (NEO-16826)
 * Probleem verholpen met de DKIM-sleutel die niet meer in e-mails was ingesloten, waardoor problemen met de te leveren items ontstonden. (NEO-16804)
@@ -173,7 +217,7 @@ _30 mei 2019_
  <tbody> 
   <tr> 
    <td> Deelvenster Beheer<br /> </td> 
-   <td> <p>Om de efficiëntie van uw werk als Admin-gebruiker te verhogen, beheert u instellingen van uw SFTP-servers door opslag te controleren, IP-adressen toe te voegen om lijst toe te staan en SSH-sleutels voor elke instantie te installeren. Houd er rekening mee dat het Configuratiescherm vanaf vandaag alleen beschikbaar is voor klanten die op AWS worden gehost (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">meld u vandaag</a>aan via de Experience Cloud).</p> <p>Raadpleeg voor meer informatie de <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">gedetailleerde documentatie</a> en de <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">Hoe kan ik-video</a>. </p><p>Opmerking: U hoeft niet te upgraden naar de nieuwste build voor campagnes om toegang te krijgen tot het Configuratiescherm.</p> </td> 
+   <td> <p>Om uw werk als Admin gebruiker efficiënter te maken, beheer montages van uw servers SFTP door opslag te controleren, IP adressen aan lijst van gewenste personen toe te voegen, en SSH sleutels voor elke instantie te installeren. Houd er rekening mee dat het Configuratiescherm vanaf vandaag alleen beschikbaar is voor klanten die op AWS worden gehost (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">meld u vandaag</a>aan via de Experience Cloud).</p> <p>Raadpleeg voor meer informatie de <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">gedetailleerde documentatie</a> en de <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">Hoe kan ik-video</a>. </p><p>Opmerking: U hoeft niet te upgraden naar de nieuwste build voor campagnes om toegang te krijgen tot het Configuratiescherm.</p> </td> 
   </tr> 
     <tr> 
    <td> Audittrail<br /> </td> 
