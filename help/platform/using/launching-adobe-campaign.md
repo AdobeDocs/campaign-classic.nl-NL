@@ -1,7 +1,7 @@
 ---
-title: Adobe-campagne starten
-seo-title: Adobe-campagne starten
-description: Adobe-campagne starten
+title: Adobe Campaign starten
+seo-title: Adobe Campaign starten
+description: Adobe Campaign starten
 seo-description: null
 page-status-flag: never-activated
 uuid: c1c5bb0d-ae8e-4b0e-ab39-8b2291162557
@@ -15,30 +15,35 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+source-git-commit: 84f06afb36aa6a9fa13db1fda7034389b762eb99
+workflow-type: tm+mt
+source-wordcount: '386'
+ht-degree: 0%
 
 ---
 
 
-# Adobe-campagne starten{#launching-adobe-campaign}
+# Adobe Campaign starten{#launching-adobe-campaign}
 
-## Adobe-campagne starten {#starting-adobe-campaign}
+De console van de Cliënt van de campagne is een rijke cliënt die u toelaat om met uw de toepassingsserver(s) van de Campagne te verbinden. Leer hoe u de clientconsole op [deze pagina](../../installation/using/installing-the-client-console.md)downloadt en configureert.
 
-U kunt Adobe Campagne starten door te selecteren **[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**.
+## Adobe Campaign starten {#starting-adobe-campaign}
+
+Je kunt Adobe Campaign starten door te selecteren **[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**.
 
 In het verbindingsvenster van de clientconsole kunt u bestaande databases selecteren of configureren en er verbinding mee maken met een gebruikersnaam en wachtwoord:
 
 ![](assets/s_ncs_user_login.png)
 
-## Verbinding maken met Adobe-campagne {#connecting-to-adobe-campaign}
+## Verbinding maken met Adobe Campaign {#connecting-to-adobe-campaign}
 
-U kunt verbinding maken met Adobe-campagne met uw Adobe-id. Raadpleeg [deze pagina](../../integrations/using/about-adobe-id.md)voor meer informatie.
+U kunt verbinding maken met Adobe Campaign via uw Adobe ID. For more on this, refer to [this page](../../integrations/using/about-adobe-id.md).
 
 U kunt ook verbinding maken met een toegewezen aanmelding/wachtwoord:
 
 1. Voer de id van de operatoraccount in het **[!UICONTROL login]** veld in.
 
-   Uw id wordt gegeven door de beheerder van uw Adobe Campagne-platform.
+   De beheerder van uw Adobe Campaign-platform geeft uw id op.
 
 1. Voer uw wachtwoord in het **[!UICONTROL Password]** veld in.
 
@@ -46,7 +51,7 @@ U kunt ook verbinding maken met een toegewezen aanmelding/wachtwoord:
 
 1. Klik **[!UICONTROL Log in]** om te bevestigen.
 
-U hebt nu toegang tot de [Adobe-werkruimte](../../platform/using/adobe-campaign-workspace.md)voor campagnes.
+U hebt nu toegang tot de [Adobe Campaign-werkruimte](../../platform/using/adobe-campaign-workspace.md).
 
 ## Verbindingen instellen {#setting-up-connections}
 
@@ -60,22 +65,21 @@ Klik in het **[!UICONTROL Connections]** venster op **[!UICONTROL Add > Connecti
 
 Vervolgens definieert u de verbindingsinstellingen. Dit doet u als volgt:
 
-* Voer een naam in **[!UICONTROL Label]** om een naam toe te wijzen aan uw databaseverbinding.
-* Voeg het adres van de toepassingsserver in het **[!UICONTROL URL]** veld toe. Neem contact op met de beheerder als u de verbindings-URL niet kent.
-* Controleer **[!UICONTROL Connect with an Adobe ID]** of de operatoren verbinding maken met de console met hun Adobe-id. Raadpleeg [deze pagina](../../integrations/using/about-adobe-id.md)voor meer informatie.
-* Klik **[!UICONTROL OK]** om te valideren.
+1. Voer een naam in **[!UICONTROL Label]** om een naam toe te wijzen aan uw databaseverbinding.
 
->[!NOTE]
->
->Met de **[!UICONTROL Add]** knop kunt u al uw verbindingen ordenen **[!UICONTROL folders]** . U hoeft alleen elke verbinding naar een map te slepen.
+1. Voeg het adres van de toepassingsserver in het **[!UICONTROL URL]** veld toe. Neem contact op met de beheerder als u de verbindings-URL niet kent.
+
+1. Controleer **[!UICONTROL Connect with an Adobe ID]** of de operatoren verbinding maken met de console met hun Adobe ID. For more on this, refer to [this page](../../integrations/using/about-adobe-id.md).
+
+1. Klik **[!UICONTROL OK]** om te valideren.
 
 ## Operatoren en machtigingen {#operators-and-permissions}
 
-De id&#39;s en wachtwoorden van operatoren die toegang hebben tot de software en hun respectievelijke machtigingen worden gedefinieerd door de systeembeheerder van het Adobe Campagne-systeem in het **[!UICONTROL Administration > Access management > Operators]** knooppunt van de Adobe Campagne-structuur.
+De id&#39;s en wachtwoorden van operatoren met toegang tot de software en hun respectieve machtigingen worden gedefinieerd door uw Adobe Campaign-systeembeheerder in het **[!UICONTROL Administration > Access management > Operators]** knooppunt van de Adobe Campaign-structuur.
 
-Deze functionaliteit wordt gedetailleerd in de het beheerssectie van de [Toegang](../../platform/using/access-management.md) .
+Deze functionaliteit wordt gedetailleerd in de sectie van het Beheer van de [Toegang](../../platform/using/access-management.md) .
 
-## Verbinding met Adobe-campagne verbreken {#disconnecting-from-adobe-campaign}
+## Verbinding met Adobe Campaign verbreken {#disconnecting-from-adobe-campaign}
 
 Als u de verbinding met Adobe Campaign wilt verbreken, gebruikt u het eerste pictogram in de pictogrambalk.
 
@@ -91,7 +95,7 @@ In het **[!UICONTROL Help > About...]** menu hebt u toegang tot de volgende info
 
 * **versienummer** ,
 * **buildnummer** ,
-* een koppeling om contact op te nemen met de Adobe Campagne Support.
+* een koppeling om contact op te nemen met Adobe Campaign Support.
 
    >[!CAUTION]
    >
