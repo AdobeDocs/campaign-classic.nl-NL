@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 54cb4143fc534aa436c4b8b28e031e87a2a02e40
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '1996'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ACS Connector bridges Adobe Campaign v7 en Adobe Campaign Standard. Het is een g
 
 Met de Schakelaar ACS, blijft Campaign Standard door digitale marketers worden gebruikt om, campagnes te ontwerpen te richten en uit te voeren terwijl Campaign v7 voor gegeven-georiënteerde gebruikers zoals gegevensbestandmarketers wordt gemaakt.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >ACS Connector is alleen beschikbaar als onderdeel van de Adobe Campaign Premier-aanbieding. Neem contact op met uw accountmanager voor meer informatie over het in licentie geven van Adobe Campaign Premier.
 >
@@ -83,7 +83,7 @@ De Schakelaar ACS herhaalt periodiek de volgende punten van Campaign Standard aa
 
 Dankzij replicatie van bezorgings-id&#39;s en e-maillogboeken hebt u toegang tot de geschiedenis van leveringen en traceringsgegevens voor uw v7-ontvangers vanuit Campagne v7.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Alleen e-mailuitzendingen en trackinglogboeken worden gerepliceerd van Campaign Standard naar Campaign v7.
 
@@ -120,7 +120,7 @@ Het factureren wordt niet beïnvloed door uw keuze voor een toepassing voor het 
 
 Er bestaan twee soorten implementatie voor ACS-connector. Beide worden altijd uitgevoerd door het Adobe Campaign Consulting-team.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Deze sectie is alleen bedoeld voor professionele gebruikers, zodat zij een algemeen overzicht krijgen van het implementatieproces en de belangrijkste stappen ervan.
 >
@@ -140,7 +140,7 @@ Alle technische elementen met betrekking tot de Schakelaar ACS zijn beschikbaar 
 
 Na de installatie van het pakket zijn onder **[!UICONTROL Administration > ACS Connector > Process]**.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Probeer nooit deze workflows te wijzigen. Ze mogen nooit fout zijn of gepauzeerd zijn. Neem contact op met uw Adobe Campaign-consultant als dit gebeurt.
 
@@ -219,7 +219,7 @@ U vindt onder de lijst met ontvangende velden die worden gerepliceerd met de bas
   </tr> 
   <tr> 
    <td> Geen contact meer (via een kanaal)<br /> </td> 
-   <td> @blockList<br /> </td> 
+   <td> @lijst van afgewezen personen<br /> </td> 
   </tr> 
   <tr> 
    <td> Geen contact meer per e-mail<br /> </td> 
@@ -290,7 +290,7 @@ De rechten worden verschillend behandeld in Campaign v7 en Campaign Standard. In
 
 In dit gedeelte worden enkele mogelijkheden beschreven voor een geavanceerde implementatie.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Deze informatie kan alleen als algemene richtsnoeren worden gebruikt. Vraag uw Adobe Campaign-consultant om informatie over de implementatie.
 
