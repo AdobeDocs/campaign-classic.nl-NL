@@ -5,9 +5,9 @@ solution: Campaign Classic
 title: Adobe Campaign Classic-productdocumentatie
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 30b2860250c6d1c4032a22a28f6e2e48dcacc6a8
+source-git-commit: ad0f9bdd2571a8780da464dc3ac8feb7b5aed998
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -87,4 +87,4 @@ ht-degree: 0%
 | [Aan de slag met campagne](platform/using/about-adobe-campaign-classic.md) | [Implementatiehandleiding](https://helpx.adobe.com/campaign/kb/acc-implementation.html) |
 | [Gold Standard-upgrade](https://helpx.adobe.com/campaign/kb/gold-standard.html) | [Handleiding voor bijhouden](https://helpx.adobe.com/campaign/kb/acc-tracking.html) |
 | [Verouderde functies](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) | [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/campaign/kb/acc-security.html) |
-| [Campagne](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html) | [Bewaking van beste praktijken](https://helpx.adobe.com/campaign/kb/acc-maintenance.html) |
+| [Campagne](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html) | [Monitoringrichtsnoeren](production/using/monitoring-guidelines.md) |
