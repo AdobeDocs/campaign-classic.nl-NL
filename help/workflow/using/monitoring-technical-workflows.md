@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d60f47f03949177b97509166a8d9e640849e5fd7
+source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: d60f47f03949177b97509166a8d9e640849e5fd7
 
 De technische werkstromen moeten worden bewaakt en er moeten maatregelen worden genomen wanneer ze mislukken.
 
-In [deze pagina](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)worden extra manieren weergegeven om de verschillende campagneprocessen te controleren.
+In [deze pagina](../../production/using/monitoring-guidelines.md)worden extra manieren weergegeven om de verschillende campagneprocessen te controleren.
 
 ## Instance Monitoring dashboard {#instance-monitoring-dashboard}
 
@@ -42,7 +45,7 @@ Controleer onder Systeemindicatoren en kernbestanden of er geen rode indicatoren
 
 Technische workflows zijn beschikbaar via **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
-Afhankelijk van de technische werkstroom, volg de hieronder beschreven stappen om ervoor te zorgen dat alles zoals verwacht werkt.
+Afhankelijk van de technische workflow voert u de onderstaande stappen uit om ervoor te zorgen dat alles werkt zoals u had verwacht.
 
 Raadpleeg deze [sectie](../../workflow/using/about-technical-workflows.md)voor een beter begrip van wat elke technische workflow moet doen.
 
@@ -54,7 +57,7 @@ Voor **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
 Voor **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
-Controleer of de workflow voor bijhouden volgens schema wordt uitgevoerd (standaard elk uur) en of het dagboek geen terugkerende fouten markeert. Zie deze [sectie](../../workflow/using/delivery.md)voor meer informatie.
+Controleer of de workflow voor bijhouden volgens schema wordt uitgevoerd (standaard elk uur) en of het dagboek geen terugkerende fouten markeert. For more on this, refer to this [section](../../workflow/using/delivery.md).
 
 Voor **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
 
@@ -102,4 +105,4 @@ U kunt een controlewerkschema bouwen om een e-mail te verzenden wanneer bepaalde
 
 U kunt een weergave maken zodat alle werkstromen in een functioneel gebied of in het hele systeem kunnen worden gecontroleerd.
 
-U kunt ook de functie Adobe Campagne of de rapportfunctionaliteit gebruiken om documentatie op verzoek samen te stellen, die altijd up-to-date is.
+U kunt ook de functie Adobe Campaign-taak of -rapport gebruiken om documentatie op aanvraag te maken. Dit is altijd up-to-date.
