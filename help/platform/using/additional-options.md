@@ -15,13 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
+source-git-commit: c86af066045c1c35b51624de8565af21746354c1
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 0%
 
 ---
 
 
 # Aanvullende opties {#additional-options}
-
 
 <!--
 
@@ -91,6 +93,29 @@ Tijdens de leveringsanalyse, leidt deze optie automatisch tot en voert een werks
 
 Door deze optie in te schakelen, kunt u een aanzienlijke prestatieverbetering bereiken voor het uitvoeren van personalisatie.
 
+## Gegevens uit een externe database gebruiken in een workflow {#using-data-from-an-external-database-in-a-workflow}
+
+Bij verschillende Adobe Campaign-workflowactiviteiten kunt u de gegevens gebruiken die in een externe database zijn opgeslagen.
+
+### Filteren op externe gegevens {#filtering-on-external-data}
+
+De vraagactiviteit staat u toe om externe gegevens toe te voegen en het in de bepaalde filterconfiguraties te gebruiken.
+
+Raadpleeg de sectie [Query](../../workflow/using/targeting-data.md#selecting-data) voor meer informatie.
+
+### Subsets maken {#creating-sub-sets}
+
+Met de splitsingsactiviteit kunt u subsets maken. U kunt externe gegevens gebruiken om de filtercriteria te bepalen aan gebruik.
+
+Raadpleeg de sectie [Splitsen](../../workflow/using/split.md) voor meer informatie hierover.
+
+### Externe database laden {#loading-external-database}
+
+U kunt de externe gegevens gebruiken in het laden van gegevens (RDBMS). Deze activiteit wordt voorgesteld in de het laden [van](../../workflow/using/data-loading--rdbms-.md) Gegevens sectie.
+
+### Informatie en koppelingen toevoegen {#adding-information-and-links}
+
+Met de verrijkingsactiviteit kunt u aanvullende gegevens toevoegen aan de werktabel van de workflow en koppelingen naar een externe tabel. Om deze reden, kan het de gegevens van een extern gegevensbestand exploiteren. Deze activiteit wordt vermeld in het gedeelte [Verrijking](../../workflow/using/enrichment.md) .
 <!--
 
 ## Cloud Messaging - FDA synchronization {#cloud-messaging---fda-synchronization}
