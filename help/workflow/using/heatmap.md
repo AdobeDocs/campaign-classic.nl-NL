@@ -15,20 +15,23 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d6a4d56c595f16f454684b1d6afc7d7323c5914c
+source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+workflow-type: tm+mt
+source-wordcount: '1326'
+ht-degree: 0%
 
 ---
 
 
 # Workflow HeatMap {#workflow-heatmap}
 
-De Adobe Campagne Workflow HeatMap bestaat uit een grafische voorstelling met kleurcodes van alle workflows die momenteel worden uitgevoerd. Het is alleen beschikbaar voor de Instance Administrators.
+De Adobe Campaign Workflow HeatMap bestaat uit een grafische voorstelling met kleurcodes van alle workflows die momenteel worden uitgevoerd. Het is alleen beschikbaar voor de Instance Administrators.
 
-In [deze pagina](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)worden extra manieren weergegeven om de verschillende campagneprocessen te controleren.
+In [deze pagina](../../production/using/monitoring-guidelines.md)worden extra manieren weergegeven om de verschillende campagneprocessen te controleren.
 
 ## Over de workflow HeatMap {#about-the-workflow-heatmap}
 
-Door een snel overzicht te geven van het aantal gelijktijdige workflows, stelt de Workflow HeatMap de beheerders van het Adobe Campagneplatform in staat de belasting op de instantie te controleren en de workflows dienovereenkomstig te plannen.
+Door een snel overzicht te geven van het aantal gelijktijdige workflows, stelt de Workflow HeatMap de beheerders van het Adobe Campaign-platform in staat de belasting op de instantie te controleren en de workflows dienovereenkomstig te plannen.
 
 Meer bepaald, helpt het de platformbeheerders om:
 
@@ -43,22 +46,22 @@ Meer bepaald, helpt het de platformbeheerders om:
 >
 >Naast de Heatmap **van het** Werkschema, kunt u een werkschema tot stand brengen dat u de status van een reeks werkschema&#39;s zal laten controleren en terugkomende berichten naar supervisors zal verzenden. Raadpleeg de [desbetreffende sectie](../../workflow/using/supervising-workflows.md)voor meer informatie hierover.
 
-Het gebruiken van het Werkschema HeatMap vereist om een goed inzicht in de volgende concepten te hebben: [Workflows](../../workflow/using/about-workflows.md), [Activiteiten](../../workflow/using/about-activities.md) en best practices voor [workflows](../../workflow/using/workflow-best-practices.md).
+Het gebruiken van het Werkschema HeatMap vereist om een goed inzicht in de volgende concepten te hebben: [Workflows](../../workflow/using/about-workflows.md), [activiteiten](../../workflow/using/about-activities.md) en best practices voor [workflows](../../workflow/using/workflow-best-practices.md).
 
-De Workflow HeatMap is standaard beschikbaar in Adobe Campaign vanaf versie 18.10. Als u een build tussen 8700 en 8977 (18.10) hebt, kunt u ook van deze mogelijkheid profiteren. Als u het corresponderende pakket wilt aanvragen, neemt u contact op met de [klantenservice](https://support.neolane.net/) van Adobe en volgt u de instructies van [deze pagina](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) om te begrijpen hoe u het pakket kunt installeren.
+De Workflow HeatMap is standaard beschikbaar in Adobe Campaign vanaf release 18.10. Als u een build tussen 8700 en 8977 (18.10) hebt, kunt u ook van deze mogelijkheid profiteren. Als u het corresponderende pakket wilt aanvragen, neemt u contact op met de [klantenservice](https://support.neolane.net/) van Adobe en volgt u de instructies van [deze pagina](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) om te begrijpen hoe u het pakket kunt installeren.
 
-Wanneer u voor het eerst toegang krijgt tot Worklow HeatMap, wordt het volgende pop-upvenster weergegeven. Met deze overeenkomst kunnen gegevens worden overgebracht en opgeslagen in de Verenigde Staten, zodat Adobe Campaign:
+Wanneer u voor het eerst toegang krijgt tot Worklow HeatMap, wordt het volgende pop-upvenster weergegeven. Met deze overeenkomst kunnen in de Verenigde Staten gegevens worden overgedragen en opgeslagen, zodat Adobe Campaign:
 
 * controleren instanties om eventuele prestatieproblemen te onderzoeken.
 * gegevens verzamelen voor afwijkingsdetectie.
 
-De gegevensoverdracht is alleen beschikbaar voor gebruikers die verbinding maken met Adobe Campagne met hun Adobe-id.
+De gegevensoverdracht is alleen beschikbaar voor gebruikers die verbinding maken met Adobe Campaign via hun Adobe ID.
 
 ![](assets/wf_monitoring_agreement.png)
 
 Er zijn drie opties beschikbaar:
 
-* **[!UICONTROL Accept]** : Door deze overeenkomst te accepteren, machtigt u Adobe Campaign om uw gegevens te verzamelen en naar de Verenigde Staten over te brengen om u te kunnen helpen in geval van afwijkende detecties.
+* **[!UICONTROL Accept]** : Door deze overeenkomst te accepteren, machtigt u Adobe Campaign om uw gegevens te verzamelen en deze naar de Verenigde Staten over te brengen om u te kunnen helpen in geval van afwijkende detecties.
 * **[!UICONTROL Refuse]** : Door de overeenkomst te weigeren, worden uw gegevens niet overgedragen, maar kunt u nog wel Workflowoverzicht gebruiken.
 * **[!UICONTROL Do not show this message again]** : Door te klikken **[!UICONTROL Do not show this message again]** , zal het pop-up venster ophouden tonen wanneer het toegang tot van het Werkschema Heatmap maar nog beschikbaar bij de **[!UICONTROL Term of use]** knoop.
 
@@ -110,7 +113,7 @@ Deze keuze is niet definitief, u kunt deze altijd wijzigen door op de **[!UICONT
 
 1. Als u enkele workflows hebt bewerkt in de tussenliggende tijd, klikt u op de **[!UICONTROL Reload data]** knop om de gegevens die in het raster worden weergegeven, te vernieuwen.
 
-## HeatMap lezen {#reading-the-heatmap}
+## De HeatMap lezen {#reading-the-heatmap}
 
 De Campagne Workflow HeatMap is een raster dat van linksboven naar rechtsonder kan worden gelezen, zodat de &#39;hot zones&#39; kunnen worden gevonden met een groen tot rood kleurgecodeerd bereik.
 
@@ -175,7 +178,7 @@ Als Campagnebeheerder, helpt het Werkschema HeatMap u om de langste werkschema&#
 
 ## Voorbeeld: Het gebruiken van HeatMap om werkschemaplanning te verbeteren {#example--using-the-heatmap-to-improve-workflow-planning}
 
-In het onderstaande voorbeeld ziet u hoe de planning efficiënter kan zijn en hoe de prestaties kunnen worden verbeterd wanneer u de Adobe Campagne Workflow HeatMap gebruikt.
+In het onderstaande voorbeeld ziet u hoe planning efficiënter kan zijn en hoe de prestaties kunnen worden verbeterd bij gebruik van de Adobe Campaign Workflow HeatMap.
 
 In dit geval klagen veel gebruikers over workflowprestaties. U moet controleren wat de activiteit vertraagt en hoe te om het probleem op te lossen.
 
