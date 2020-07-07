@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 229df9ee7da5ac9c773a7af82aabceb755299cc6
+source-git-commit: 306c7bf0a94684d27c5f95035f3d3e77da8c7097
 workflow-type: tm+mt
-source-wordcount: '6767'
+source-wordcount: '6795'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,19 @@ Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates
 
 U kunt ook de [Adobe Campaign Classic Release Notes](../../rn/using/latest-release.md) raadplegen voor meer updates.
 
+## juli 2020 {#july-2020}
+
+Er is een nieuwe sectie toegevoegd met richtlijnen voor Campaign Classic-bewaking. [Meer informatie](../../production/using/monitoring-guidelines.md)
+
+De sectie Privacy en toestemming is uitgebreid met gedetailleerdere informatie en handige koppelingen. [Lees meer](../../platform/using/privacy-and-recommendations.md).
+
 ## juni 2020 {#june-2020}
 
 Het verwijderen van een quarantined adressectie is bijgewerkt. Hieronder valt ook een verduidelijking van de gevallen waarin adressen automatisch uit de quarantainelijst worden verwijderd. [Meer informatie](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
 Er zijn gebruiksgevallen toegevoegd voor het [coderen](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) en [decoderen](../../workflow/using/importing-data.md#use-case-gpg-decrypt) van gegevens met de workflows Configuratiescherm en Campagne.
 
-Zowel de termen &quot;whitelist&quot; als &quot;blacklist&quot; zijn uit de documentatie van Adobe Campaign verwijderd. Sommige van deze termen bestaan mogelijk nog steeds in de gebruikersinterface van het product, optienamen en interne code, maar worden in komende campagnereleases vervangen door &quot;blocklist&quot; en &quot;allowlist&quot;.
+Zowel de termen &quot;whitelist&quot; als &quot;blacklist&quot; zijn uit de documentatie van Adobe Campaign verwijderd. Sommige van deze termen bestaan mogelijk nog steeds in de gebruikersinterface van het product, optienamen en interne code, maar worden in komende campagnereleases vervangen door &quot;lijst van afgewezen personen&quot; en &quot;lijst van gewenste personen&quot;.
 
 De integratiepagina van Experience Cloud Triggers en Adobe Campaign Classic is [hier](../../integrations/using/about-triggers.md)geplaatst.
 
@@ -68,7 +74,6 @@ De het netwerkeindpunten van de Campagne zijn verplaatst naar deze [sectie](../.
 Het gedeelte Spam Assassin-installatie is bijgewerkt met de nieuwe naam van het installatiebestand. [Meer informatie](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
 
 De sectie over het dupliceren van omgevingen is bijgewerkt. [Meer informatie](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
-
 
 ## mei 2020 {#may-2020}
 
@@ -260,7 +265,7 @@ De stappen om Inbox het teruggeven voor installaties op gebouw te vormen zijn to
 
 ## september 2019 {#september-2019}
 
-Er is een nieuwe pagina toegevoegd met algemene richtlijnen voor het onderhoud van Campaign Classic. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)
+Er is een nieuwe pagina toegevoegd met algemene richtlijnen voor het onderhoud van Campaign Classic. [Meer informatie](../../production/using/monitoring-guidelines.md)
 
 Informatie met betrekking tot workflows-controle is gecentraliseerd in een nieuwe specifieke sectie. [Lees meer](../../workflow/using/monitoring-workflow-execution.md).
 
