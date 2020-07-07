@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9188a68ca2ffcd9cf9e82b475aa2a0dd5807561b
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '972'
 ht-degree: 0%
@@ -54,7 +54,7 @@ De berichten van de bevestiging worden verzonden via een specifiek leveringsmalp
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Aangezien de ontvangers van deze levering hun goedkeuring niet hebben bevestigd, staan zij nog op de lijst van het gegevensbestandblok. Voor hen om deze mededeling te ontvangen, moet u leveringen toelaten die op dit malplaatje worden gebaseerd aan doelontvangers die op de bloklijst zijn.
+1. Aangezien de ontvangers van deze levering hun goedkeuring niet hebben bevestigd, zijn zij nog op de lijst van afgewezen personen van het gegevensbestand. Voor hen om deze mededeling te ontvangen, moet u leveringen toelaten die op dit malplaatje worden gebaseerd aan doelontvangers die op de lijst van afgewezen personen zijn.
 
    Klik hiertoe op het **[!UICONTROL Exclusions]** tabblad.
 
@@ -62,7 +62,7 @@ De berichten van de bevestiging worden verzonden via een specifiek leveringsmalp
 
    <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Deze optie kan alleen in dit type context worden uitgeschakeld.
 
@@ -112,7 +112,7 @@ Hiervoor voert u de volgende stappen uit:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   De eerste **[!UICONTROL Script]** activiteit zal ontvangers aan de bloklijst toevoegen tot zij hun abonnement op nieuwsbrief bevestigden. De inhoud ervan moet als volgt zijn:
+   De eerste **[!UICONTROL Script]** activiteit zal ontvangers aan de lijst van afgewezen personen toevoegen tot zij hun abonnement op nieuwsbrief bevestigen. De inhoud ervan moet als volgt zijn:
 
    ```
    ctx.recipient.@blockList=1
@@ -175,7 +175,7 @@ Het abonnement op de nieuwsbrief omvat de volgende stappen:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   De gebruiker wordt toegevoegd aan de Adobe Campaign-database in de **[!UICONTROL Temp]** map en zijn profiel wordt toegevoegd aan de bloklijst totdat hij of zij zijn of haar abonnement met de e-mail bevestigt.
+   De gebruiker wordt toegevoegd aan de Adobe Campaign-database in de **[!UICONTROL Temp]** map en zijn profiel wordt toegevoegd aan de lijst van afgewezen personen totdat hij of zij zijn of haar abonnement met de e-mail bevestigt.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -189,7 +189,7 @@ Het abonnement op de nieuwsbrief omvat de volgende stappen:
 
    In Adobe Campaign wordt het gebruikersprofiel bijgewerkt:
 
-   * zij niet langer op de bloklijst staan;
+   * zij niet langer op de lijst van afgewezen personen staan,
    * zij zijn geabonneerd op de informatiedienst .
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
