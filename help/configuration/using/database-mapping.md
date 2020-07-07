@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 656b867686dd90f3e921c2adb5e5676fec184803
+workflow-type: tm+mt
+source-wordcount: '1976'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +50,7 @@ De SQL-toewijzing van ons voorbeeldschema geeft het volgende XML-document:
 
 Het hoofdelement van het schema is niet langer **`<srcschema>`**, maar **`<schema>`**.
 
-Dit neemt ons aan een ander type van document, dat automatisch van het bronschema wordt geproduceerd, eenvoudig die als schema wordt bedoeld. Dit schema wordt gebruikt door de toepassing Adobe Campagne.
+Dit neemt ons aan een ander type van document, dat automatisch van het bronschema wordt geproduceerd, eenvoudig die als schema wordt bedoeld. Dit schema wordt gebruikt door de Adobe Campaign-toepassing.
 
 De SQL-namen worden automatisch bepaald op basis van de naam en het type van het element.
 
@@ -207,7 +210,7 @@ Toetsen houden zich aan de volgende regels:
 
 >[!NOTE]
 >
->Toetsen worden gemaakt tijdens het toewijzen van tabellen (standaard of FDA). Adobe Campagne zoekt naar unieke indexen.
+>Toetsen worden gemaakt tijdens het toewijzen van tabellen (standaard of FDA), Adobe Campaign zoekt naar unieke indexen.
 
 **Voorbeeld**:
 
@@ -296,7 +299,7 @@ Toetsen houden zich aan de volgende regels:
 
 ### Automatische incrementele toets {#auto-incremental-key}
 
-De primaire sleutel van de meeste lijsten van de Campagne van Adobe is een 32 - beetje lang geheel dat door de gegevensbestandmotor auto-wordt geproduceerd. De berekening van de sleutelwaarde hangt van een opeenvolging (door gebrek, de functie **XtkNewId** SQL) af die een aantal produceert dat in het volledige gegevensbestand uniek is. De inhoud van de toets wordt automatisch ingevoerd bij het invoegen van de record.
+De primaire sleutel van de meeste Adobe Campaign-tabellen is een 32-bits lang geheel getal dat automatisch wordt gegenereerd door de database-engine. De berekening van de sleutelwaarde hangt van een opeenvolging (door gebrek, de functie **XtkNewId** SQL) af die een aantal produceert dat in het volledige gegevensbestand uniek is. De inhoud van de toets wordt automatisch ingevoerd bij het invoegen van de record.
 
 Het voordeel van een stijgende sleutel is dat het een niet wijzigbare technische sleutel voor de verbindingen tussen lijsten verstrekt. Bovendien neemt deze sleutel niet veel geheugen in beslag omdat er een dubbel-byte geheel getal wordt gebruikt.
 
@@ -310,7 +313,7 @@ Van ACC 18.10, is **XtkNewId** niet meer de standaardwaarde voor de opeenvolging
 
 >[!NOTE]
 >
->Een reeks waarnaar wordt verwezen in een Adobe-cameraschema (**bijvoorbeeld NmsTrackingLogId** ) moet worden gekoppeld aan een SQL-functie die het aantal id&#39;s in de parameters retourneert, gescheiden door komma&#39;s. Deze functie moet ******GetNewXXXIds** worden genoemd, waar **XXX** de naam van de opeenvolging (**GetNewNmsTrackingLogIds** bijvoorbeeld) is. Bekijk de **postgres-nms.sql**-, **mssql-nms.sql** - of **oracle-nms.sql** -bestanden die bij de toepassing worden geleverd in de map **datakit/nms/eng/sql/** om het voorbeeld van een &#39;NmsTrackingLogId&#39;-sequentie voor elke database-engine te herstellen.
+>Een reeks waarnaar in een Adobe Campaign-schema wordt verwezen (bijvoorbeeld **NmsTrackingLogId** ), moet worden gekoppeld aan een SQL-functie die het aantal id&#39;s in de parameters retourneert, gescheiden door komma&#39;s. Deze functie moet ******GetNewXXXIds** worden genoemd, waar **XXX** de naam van de opeenvolging (**GetNewNmsTrackingLogIds** bijvoorbeeld) is. Bekijk de **postgres-nms.sql**-, **mssql-nms.sql** - of **oracle-nms.sql** -bestanden die bij de toepassing worden geleverd in de map **datakit/nms/eng/sql/** om het voorbeeld van een &#39;NmsTrackingLogId&#39;-sequentie voor elke database-engine te herstellen.
 
 Als u een unieke sleutel wilt declareren, vult u het kenmerk **Automatisch** (met de waarde &quot;true&quot;) in op het hoofdelement van het gegevensschema.
 
@@ -362,7 +365,7 @@ De verschillende soorten verenigingen (zogenaamde &quot;kardinaliteiten&quot;) z
 
 In de interface kunt u de verschillende soorten relaties gemakkelijk onderscheiden dankzij hun pictogrammen.
 
-Voor samenvoegrelaties met een cameratabel/database:
+Voor het samenvoegen van relaties met een tabel/database voor campagnes:
 
 * ![](assets/join_with_campaign11.png) : Kardinaliteit 1-1. Bijvoorbeeld tussen een ontvanger en een huidige orde. Een ontvanger kan slechts aan één voorkomen van de huidige ordetabel tegelijkertijd worden verwant.
 * ![](assets/externaljoin11.png) : Kardinaliteit 1-1, externe verbinding. Bijvoorbeeld tussen een ontvanger en hun land. Een ontvanger kan slechts aan één voorkomen van het lijstland worden verwant. De inhoud van de landentabel wordt niet opgeslagen.
