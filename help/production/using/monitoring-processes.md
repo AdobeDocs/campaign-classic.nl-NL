@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 954018e1016fc924064bd795066f80704499f6a7
+source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+workflow-type: tm+mt
+source-wordcount: '3602'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ De toepassingsserver en de omleidingsserver (**tracking**) kunnen handmatig of a
 
 ## Handmatige controle {#manual-monitoring}
 
-Ga naar **[!UICONTROL Monitoring]** en klik op de **[!UICONTROL Overview]** koppeling om de pagina voor toezicht op het Adobe Campagne-proces weer te geven.
+Ga naar **[!UICONTROL Monitoring]** en klik op de **[!UICONTROL Overview]** koppeling om de pagina voor Adobe Campaign-procesbewaking weer te geven.
 
 ![](assets/d_ncs_monitoring.png)
 
@@ -36,7 +39,7 @@ Met de weergegeven pagina kunt u de status van de verbonden instantie weergeven,
 * de lijst van ontbrekende processen en uitvoeringsinformatie (begindatum, PID, enz.);
 * een weergave van workflows en leveringen.
 
-In [deze pagina](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)worden extra manieren weergegeven om de verschillende campagneprocessen te controleren.
+In [deze pagina](../../production/using/monitoring-guidelines.md)worden extra manieren weergegeven om de verschillende campagneprocessen te controleren.
 
 ### Logboekjournaal {#log-journal}
 
@@ -63,7 +66,7 @@ Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven
 
    **[!UICONTROL Alert]** : deze indicator wordt weergegeven wanneer het geheugenverbruik 90% van de totale hoeveelheid bereikt.
 
-   Wanneer de **[!UICONTROL Warning]** indicatoren en **[!UICONTROL Alert]** indicatoren worden weergegeven, kunt u het probleem oplossen door RAM toe te voegen aan het apparaat waarop de Adobe Campagneserver is geïnstalleerd. U kunt ook besluiten om de Adobe Campagneserver op een specifieke computer te installeren.
+   Wanneer de **[!UICONTROL Warning]** indicatoren en **[!UICONTROL Alert]** indicatoren worden weergegeven, kunt u het probleem oplossen door RAM toe te voegen aan het apparaat waarop de Adobe Campaign-server is geïnstalleerd. U kunt ook besluiten de Adobe Campaign-server op een daarvoor bestemde computer te installeren.
 
 * **[!UICONTROL Swap Memory]** : informatie met betrekking tot het virtuele geheugen dat een pagineringsdossier aanpast: een gebied op de vaste schijf dat door Windows wordt gebruikt alsof het RAM-geheugen is.
 
@@ -93,7 +96,7 @@ Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven
 
    **[!UICONTROL Alert]** : deze indicator wordt weergegeven wanneer de beschikbare schijfruimte 90% van de totale capaciteit bereikt.
 
-* **[!UICONTROL Number of processes too old]** : informatie over Adobe Campagne-processen die langer dan één dag actief zijn geweest.
+* **[!UICONTROL Number of processes too old]** : informatie over Adobe Campaign-processen die al meer dan een dag actief zijn.
 
    **[!UICONTROL Current value]** : aantal processen dat momenteel actief is.
 
@@ -101,7 +104,7 @@ Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven
 
    **[!UICONTROL Alert]** : deze indicator wordt weergegeven als het aantal processen gelijk is aan 1.
 
-   Wanneer de **[!UICONTROL Alert]** indicator wordt getoond, kan het zijn dat het betrokken proces door de SQL gegevensbestandmotor wordt gesloten of dat het in een oneindige lijn wordt geplakt. Het **waakhond** -proces dat door de Campagne van Adobe wordt verstrekt begint automatisch alle processen elke dag opnieuw en laat u toe om dit probleem op te lossen. U kunt echter ook zelf een einde maken aan het desbetreffende proces om een nieuwe start te forceren.
+   Wanneer de **[!UICONTROL Alert]** indicator wordt getoond, kan het zijn dat het betrokken proces door de SQL gegevensbestandmotor wordt gesloten of dat het in een oneindige lijn wordt geplakt. Met het **waakhond** -proces dat Adobe Campaign biedt, worden alle processen elke dag opnieuw opgestart en kunt u dit probleem oplossen. U kunt echter ook zelf een einde maken aan het desbetreffende proces om een nieuwe start te forceren.
 
 #### In Linux {#in-linux}
 
@@ -130,7 +133,7 @@ Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven
 
    **[!UICONTROL Alert]** : deze indicator wordt weergegeven wanneer het geheugenverbruik 90% van de totale hoeveelheid bereikt.
 
-   Wanneer de **[!UICONTROL Warning]** indicatoren en **[!UICONTROL Alert]** indicatoren worden weergegeven, kunt u het probleem oplossen door RAM toe te voegen aan het apparaat waarop de Adobe Campagneserver is geïnstalleerd. U kunt ook besluiten om de Adobe Campagneserver op een specifieke computer te installeren.
+   Wanneer de **[!UICONTROL Warning]** indicatoren en **[!UICONTROL Alert]** indicatoren worden weergegeven, kunt u het probleem oplossen door RAM toe te voegen aan het apparaat waarop de Adobe Campaign-server is geïnstalleerd. U kunt ook besluiten de Adobe Campaign-server op een daarvoor bestemde computer te installeren.
 
 * **[!UICONTROL Swap Memory]** : informatie met betrekking tot het virtuele geheugen dat een pagineringsdossier aanpast: een gebied op de vaste schijf dat door Windows wordt gebruikt alsof het RAM-geheugen is.
 
@@ -146,7 +149,7 @@ Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven
 
    Wanneer de **[!UICONTROL Warning]** indicatoren en **[!UICONTROL Alert]** indicatoren worden weergegeven, kunt u het probleem oplossen door het uitwisselingsbestand groter te maken.
 
-* **[!UICONTROL Core Files]** : informatie over de bestanden die zijn gegenereerd na het vastlopen van een Adobe-campagne. Met deze bestanden kunt u de oorzaken van het vastlopen vaststellen.
+* **[!UICONTROL Core Files]** : informatie over de bestanden die zijn gegenereerd na het vastlopen van een Adobe Campaign-proces. Met deze bestanden kunt u de oorzaken van het vastlopen vaststellen.
 
    **[!UICONTROL Current Value]** : aantal bestaande bestanden.
 
@@ -156,9 +159,9 @@ Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven
 
    **[!UICONTROL Alert]** : deze indicator wordt weergegeven wanneer het aantal bestanden gelijk is aan 1.
 
-   Wanneer een proces ontbreekt als gevolg van een crash, wordt het in het rood weergegeven in de lijst met processen en wordt het proces automatisch opnieuw gestart door het **waakhond** -proces dat wordt geleverd door Adobe Campaign.
+   Wanneer een proces wegens een botsing ontbreekt, wordt het getoond in rood op de lijst van processen en automatisch opnieuw begonnen door het **waakhondproces** dat door Adobe Campaign wordt verstrekt.
 
-* **[!UICONTROL Number of shared memory segments]** : informatie over de geheugensegmenten die door alle Adobe Campagne-processen worden gedeeld.
+* **[!UICONTROL Number of shared memory segments]** : informatie over de geheugensegmenten die door alle Adobe Campaign-processen worden gedeeld.
 
    **[!UICONTROL Current value]** : aantal geheugensegmenten dat momenteel in gebruik is.
 
@@ -242,11 +245,11 @@ Met Adobe Campaign kunt u indicatoren aanpassen. Dit doet u als volgt:
 
 1. Plaats het bestand in de **[!UICONTROL usr/local/neolane/nl6]** map.
 
-Dit bestand wordt opgeroepen door Adobe Campaign.
+Dit bestand wordt aangeroepen door Adobe Campaign.
 
 ## SMTP-rapporten {#smtp-reports}
 
-De SMTP rapporten van de leveringscontrole zijn geïntegreerd in het platform van de Campagne van Adobe. Zij kunnen via de console of het gebruiken van de toegang van het Web worden betreden.
+SMTP-rapporten voor de bewaking van de levering zijn geïntegreerd in het Adobe Campaign-platform. Zij kunnen via de console of het gebruiken van de toegang van het Web worden betreden.
 
 Deze rapporten tonen SMTP leveringsstatistieken en SMTP fouten door domein.
 
@@ -321,7 +324,7 @@ De lijst van indicatoren voor dit verslag is hieronder weergegeven.
 
 Klik op een domeinnaam om de fouten te bekijken.
 
-Ze zijn gecategoriseerd door PublicId: deze id komt overeen met een IP-adres dat door verschillende Adobe Campaign-tags achter een router wordt gedeeld. De statistiekserver gebruikt deze id om de verbinding- en leveringsstatistieken tussen dit beginpunt en de doelserver te onthouden.
+Ze zijn gecategoriseerd door PublicId: dit herkenningsteken beantwoordt aan een IP adres dat door verscheidene Adobe Campaign mtas achter een router wordt gedeeld. De statistiekserver gebruikt deze id om de verbinding- en leveringsstatistieken tussen dit beginpunt en de doelserver te onthouden.
 
 ![](assets/smtp_error_report_details.png)
 
@@ -337,7 +340,7 @@ Klik op een PublicID om meer details te bekijken.
 
 >[!NOTE]
 >
->Voor meer informatie over SMTP-fouten en het beheer ervan in de Adobe-campagne raadpleegt u [deze sectie](../../installation/using/email-deliverability.md).
+>Voor meer informatie over SMTP-fouten en het beheer ervan in Adobe Campaign raadpleegt u [deze sectie](../../installation/using/email-deliverability.md).
 
 ## Factureringsrapport {#billing-report}
 
@@ -371,7 +374,7 @@ Opdracht
 
 **nlserver-monitor**
 
-Hier kunt u een aantal indicatoren weergeven voor de Adobe Campaign-modules en het systeem.
+Hier geeft u een aantal indicatoren weer voor de Adobe Campaign-modules en het systeem.
 
 Er wordt uitvoer gegenereerd in een gemakkelijk verwerkte XML-indeling.
 
@@ -403,13 +406,13 @@ Een regel als deze wordt weergegeven in XML-indeling:
 
 Deze **http(s)://`<Application server url>`/nl/jsp/ping.jsp** pagina werkt op dezelfde manier als de bijbehorende netwerktegenhanger: het test een volledige vraag die door apache/tomcat/Webmodule/gegevensbestand gaat en aan de cliënt uploadt. Als alles goed werkt, geeft het een &quot;OK&quot;. We raden u aan deze test uit te voeren op computers met toegang tot de databases (bijvoorbeeld mtas&#39;s en enquêtes).
 
-**Gebruik**: Als u zich op afstand wilt aanmelden, moet u een sessietoken die aan een aanmeldingsnaam van de operator is gekoppeld, doorgeven als een argument (zie de tip in [Automatische controle via Adobe Campagnerscripts](#automatic-monitoring-via-adobe-campaign-scripts)).
+**Gebruik**: een zittingsteken verbonden aan een exploitant login moet als argument worden overgegaan om zich ver te registreren (zie de uiteinde in [Automatische controle via manuscripten](#automatic-monitoring-via-adobe-campaign-scripts)van Adobe Campaign).
 
 Bijvoorbeeld:
 
 ![](assets/ncs_monitoring_ping.png)
 
-De naam van de operator en de aanmelding moeten eerder zijn geconfigureerd in de Adobe Campagne-clientconsole met databaserechten.
+De naam van de operator en de aanmelding moeten eerder in de Adobe Campaign-clientconsole zijn geconfigureerd met databaserechten.
 
 ![](assets/ncs_operators_rights_01.png)
 
@@ -417,23 +420,23 @@ De naam van de operator en de aanmelding moeten eerder zijn geconfigureerd in de
 
 #### /nl/jsp/monitor.jsp {#nl-jsp-monitor-jsp}
 
-Dit is een test om te controleren of een exploitant tot de server van de Campagne van Adobe via een Web-pagina kan toegang hebben; dezelfde webpagina als de pagina die via de menu&#39;s van de clientconsole wordt geopend. U kunt deze pagina vanuit uw bewakingstools bellen (Tivoli, Nagios, enz.).
+Dit is een test om te controleren of een operator via een webpagina toegang heeft tot de Adobe Campaign-server. dezelfde webpagina als de pagina die via de menu&#39;s van de clientconsole wordt geopend. U kunt deze pagina vanuit uw bewakingstools bellen (Tivoli, Nagios, enz.).
 
 ![](assets/ncs_monitoring_web.png)
 
-**Gebruik**: Een sessietoken dat is gekoppeld aan een aanmeldingsnaam van de operator waarmee u verbinding kunt maken met de instantie, moet worden gebruikt als een argument (zie de tip in [Automatische controle via Adobe Campagnerscripts](#automatic-monitoring-via-adobe-campaign-scripts)).
+**Gebruik**: Een zittingsteken verbonden aan een exploitant login die u met de instantie laat verbinden moet als argument worden gebruikt (zie de uiteinde in [Automatische controle via manuscripten](#automatic-monitoring-via-adobe-campaign-scripts)van Adobe Campaign).
 
-De operator en de bijbehorende aanmelding moeten eerder worden geconfigureerd in de Adobe Campagne-clientconsole met de juiste databaserechten en -beperkingen.
+De exploitant en hun login moeten eerder in de de cliëntconsole van Adobe Campaign met de aangewezen gegevensbestandrechten en beperkingen worden gevormd.
 
 **Frequentie**: dit is een volledige servertest en hoeft niet vaak te worden uitgevoerd (het kan bijvoorbeeld elke tien minuten worden uitgevoerd).
 
 #### /nl/jsp/soaprouter.jsp {#nl-jsp-soaprouter-jsp}
 
-Deze **jsp** vertegenwoordigt het toegangspunt voor de API&#39;s van de Adobe Campagne-toepassing. Zij kan daarom een gedetailleerd toezicht op de aanvraag uitvoeren. Deze kan ook worden gebruikt om de webservices van Adobe Campagne te controleren. Het wordt gebruikt in onze toezichtmanuscripten, maar merk op dat het voor machtsgebruikers slechts is.
+Deze **jsp** vertegenwoordigt het toegangspunt voor Adobe Campaign-toepassings-API&#39;s. Zij kan daarom een gedetailleerd toezicht op de aanvraag uitvoeren. Het kan ook worden gebruikt om de Webdiensten van Adobe Campaign te controleren. Het wordt gebruikt in onze toezichtmanuscripten, maar merk op dat het voor machtsgebruikers slechts is.
 
 ### Controle op basis van implementatietypen {#monitoring-based-on-deployment-types}
 
-De Campagne van Adobe laat diverse plaatsingsconfiguraties (voor meer op dit, verwijs naar [deze sectie](../../installation/using/hosting-models.md)) toe. In deze sectie worden de verschillende automatische bewakingstechnieken beschreven die moeten worden toegepast, afhankelijk van het type installatie.
+Adobe Campaign maakt verschillende implementatieconfiguraties mogelijk (raadpleeg voor meer informatie [deze sectie](../../installation/using/hosting-models.md)). In deze sectie worden de verschillende automatische bewakingstechnieken beschreven die moeten worden toegepast, afhankelijk van het type installatie.
 
 <table> 
  <thead> 
@@ -478,13 +481,13 @@ De Campagne van Adobe laat diverse plaatsingsconfiguraties (voor meer op dit, ve
 
 ## Automatische controle via Adobe Campaign-scripts {#automatic-monitoring-via-adobe-campaign-scripts}
 
-Adobe Campagne kan een hulpmiddel van de instantiemonitoring (netreport) verstrekken dat u een rapport door e-mail betreffende de ontdekte anomalieën laat verzenden.
+Adobe Campaign kan een hulpmiddel van de instantiecontrole (netreport) verstrekken dat u een rapport door e-mail betreffende de ontdekte anomalieën laat verzenden.
 
 ![](assets/pro_netreport.png)
 
 >[!CAUTION]
 >
->Dit programma kan worden gebruikt om uw instanties te controleren, maar wordt niet ondersteund door Adobe Campaign. Neem voor meer informatie contact op met de beheerder van de campagne.
+>Dit gereedschap kan worden gebruikt om uw instanties te controleren, maar wordt niet ondersteund door Adobe Campaign. Neem voor meer informatie contact op met de beheerder van de campagne.
 
 ### Vereiste elementen {#required-elements}
 
@@ -493,7 +496,7 @@ Voor automatische controle zijn de volgende voorzorgsmaatregelen voorafgaand aan
 * U moet de bestanden **netreport.tgz **(Linux-installatie) of **netreport.zip** (Windows-installatie) hebben,
 * We raden u ten zeerste aan om geen controle op de te controleren machine te installeren,
 * het moet zijn geïnstalleerd op een machine met een JRE of JDK;
-* in Linux moet de te controleren machine het **bc** pakket hebben. Zie [deze sectie](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages)voor meer informatie.
+* in Linux moet de te controleren machine het **bc** pakket hebben. For more on this, refer to [this section](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages).
 
 ### Installatieprocedure {#installation-procedure}
 
@@ -596,7 +599,7 @@ Dit element vormt de controle van een bepaalde server op de gastheer, d.w.z.
 * **alias** (optioneel): naam van de bewaakte computer zoals deze in het rapport wordt weergegeven.
 * **sessionToken**: biedt aanmeldingsverificatie via een geautoriseerd sessietoken.
 
-   Als u het sessietoken wilt configureren, selecteert u de **operator voor controle** in de Adobe Campagne-console. Geef op het tabblad **Toegangsrechten** de IP-adressen op van de computers die gemachtigd zijn om dit exemplaar te controleren. Vervolgens kunt u verbinding maken met de controlepagina vanaf deze computers met behulp van de **controle** -id en zonder dat u een wachtwoord hoeft op te geven.
+   Om het zittingsteken te vormen, selecteer de **controleexploitant** in de console van Adobe Campaign. Geef op het tabblad **Toegangsrechten** de IP-adressen op van de computers die gemachtigd zijn om dit exemplaar te controleren. Vervolgens kunt u verbinding maken met de controlepagina vanaf deze computers met behulp van de **controle** -id en zonder dat u een wachtwoord hoeft op te geven.
 
    ![](assets/ncs_operators_rights_02.png)
 
