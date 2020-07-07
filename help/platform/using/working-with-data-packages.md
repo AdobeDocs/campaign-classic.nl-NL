@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8089eb39e7326408f94b5fd6acacd8950c0e6021
+source-git-commit: 788866c4f11d3875f713a61f7560d6d5255f3019
 workflow-type: tm+mt
-source-wordcount: '2481'
+source-wordcount: '2460'
 ht-degree: 0%
 
 ---
@@ -29,16 +29,16 @@ ht-degree: 0%
 
 Met Adobe Campaign kunt u de platformconfiguratie en gegevens via een pakketsysteem exporteren of importeren. Pakketten kunnen verschillende configuraties, elementen bevatten, al dan niet gefilterd.
 
-Met gegevenspakketten kunnen entiteiten van de Adobe Campagne-database worden weergegeven via bestanden in XML-indeling. Elke entiteit in een pakket wordt met al zijn gegevens vertegenwoordigd.
+Met gegevenspakketten kunnen entiteiten van de Adobe Campaign-database worden weergegeven via bestanden in XML-indeling. Elke entiteit in een pakket wordt met al zijn gegevens vertegenwoordigd.
 
-Het beginsel van **gegevenspakketten** is een gegevensconfiguratie uit te voeren en het te integreren in een ander systeem van de Campagne van Adobe. Voor meer informatie over hoe te om een verenigbare reeks gegevenspakketten te handhaven, verwijs naar dit [technologie](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/Technotes/AdobeCampaign_How_to_maintain_a_consistent_set_of_data_packages.pdf).
+Het beginsel van **gegevenspakketten** is een gegevensconfiguratie te exporteren en in een ander Adobe Campaign-systeem te integreren. Leer hoe u een consistente set gegevenspakketten in deze [sectie](#data-package-best-practices)kunt onderhouden.
 
 ### Typen pakketten {#types-of-packages}
 
 Er zijn drie soorten exporteerbare pakketten: gebruikerspakketten, platformpakketten en beheerpakketten.
 
 * **Gebruikerspakket**: hiermee kunt u de lijst met te exporteren entiteiten selecteren. Dit type pakket beheert afhankelijkheden en controleert fouten.
-* **Platform-pakket**: het omvat alle toegevoegde technische middelen ( niet standaard ) : schema&#39;s, JavaScript-code, enz.
+* **Platform**: het omvat alle toegevoegde technische middelen ( niet standaard ) : schema&#39;s, JavaScript-code, enz.
 
    ![](assets/ncs_datapackage_package_platform.png)
 
@@ -89,7 +89,7 @@ In ons voorbeeld zijn de verbindingen op de &quot;omslag&quot;en &quot;bedrijf&q
 
 Het **`operation`** attribuut met de waarde &quot;none&quot; definieert een afstemmingskoppeling.
 
-Een gegevenspakket kan manueel van om het even welke tekstredacteur worden samengesteld. Zorg er gewoon voor dat de structuur van het XML-document voldoet aan het gegevensschema &quot;xtk:navtree&quot;. De Adobe Campaign-console heeft een module voor het exporteren en importeren van gegevenspakketten.
+Een gegevenspakket kan manueel van om het even welke tekstredacteur worden samengesteld. Zorg er gewoon voor dat de structuur van het XML-document voldoet aan het gegevensschema &quot;xtk:navtree&quot;. De Adobe Campaign-console heeft een export- en importmodule voor gegevenspakketten.
 
 ## Pakketten exporteren {#exporting-packages}
 
@@ -105,7 +105,7 @@ Nadat een pakket is geëxporteerd, kunt u het pakket en alle toegevoegde entitei
 
 ### Een set objecten in een pakket exporteren {#exporting-a-set-of-objects-in-a-package}
 
-De wizard voor het exporteren van pakketten is toegankelijk via het **[!UICONTROL Tools > Advanced > Export package...]** menu van de Adobe Campagne-clientconsole.
+De wizard voor het exporteren van pakketten is toegankelijk via het **[!UICONTROL Tools > Advanced > Export package...]** menu van de Adobe Campaign-clientconsole.
 
 ![](assets/ncs_datapackage_typepackage.png)
 
@@ -313,9 +313,9 @@ Voer de volgende stappen uit om een pakket uit een pakketdefinitie te exporteren
 
 ### Over importeren van pakket {#about-package-import}
 
-De wizard voor het importeren van pakketten is toegankelijk via het hoofdmenu **[!UICONTROL Tools > Advanced > Package import...]** van de Adobe Campagne-clientconsole.
+De wizard voor het importeren van pakketten is toegankelijk via het hoofdmenu **[!UICONTROL Tools > Advanced > Package import...]** van de Adobe Campaign-clientconsole.
 
-U kunt een pakket importeren uit een eerder uitgevoerde exportbewerking, bijvoorbeeld uit een ander Adobe Campagne-exemplaar of uit een standaardpakket, afhankelijk van de voorwaarden van uw licentie.
+U kunt een pakket importeren uit een eerder uitgevoerde exportbewerking, bijvoorbeeld uit een ander Adobe Campaign-exemplaar of uit een standaardpakket, afhankelijk van de voorwaarden van uw licentie.
 
 ![](assets/ncs_datapackage_import.png)
 
@@ -333,7 +333,7 @@ Klik **[!UICONTROL Next]** en **[!UICONTROL Start]** om het importeren te starte
 
 ### Een standaardpakket installeren {#installing-a-standard-package}
 
-De standaardpakketten worden geïnstalleerd wanneer de Campagne van Adobe wordt gevormd. Afhankelijk van uw toestemmingen en uw plaatsingsmodel, kunt u nieuwe standaardpakketten invoeren als u nieuwe opties of toe:voegen-ons verwerft, of als u aan een nieuwe aanbieding bevordert.
+Standaardpakketten worden geïnstalleerd wanneer de Adobe Campaign wordt geconfigureerd. Afhankelijk van uw toestemmingen en uw plaatsingsmodel, kunt u nieuwe standaardpakketten invoeren als u nieuwe opties of toe:voegen-ons verwerft, of als u aan een nieuwe aanbieding bevordert.
 
 Raadpleeg de licentieovereenkomst om te controleren welke pakketten u kunt installeren.
 
@@ -343,15 +343,11 @@ Raadpleeg [deze pagina](../../installation/using/installing-campaign-standard-pa
 
 In deze sectie wordt beschreven hoe u gegevenspakketten op consistente wijze kunt ordenen gedurende de levensduur van het project.
 
-<!--Adobe Campaign allows you to export or import the platform configuration through a package system.-->
-
 Pakketten kunnen verschillende configuraties en elementen bevatten, al dan niet gefilterd. Als u sommige elementen mist of geen elementen/pakketten in de correcte orde invoert, kan de platformconfiguratie breken.
 
 Bovendien kan de map met pakketspecificaties snel complex worden, aangezien meerdere mensen met veel verschillende functies aan hetzelfde platform werken.
 
-Hoewel dit niet verplicht is, biedt deze sectie een oplossing om pakketten in de Campagne van Adobe voor grootschalige projecten te organiseren en te gebruiken.
-
-<!--This solution has been used with a project involving more than 10 consultants.-->
+Hoewel dit niet verplicht is, biedt deze sectie een oplossing om pakketten in Adobe Campaign te helpen organiseren en gebruiken voor grootschalige projecten.
 
 De belangrijkste beperkingen zijn:
 * Pakketten organiseren en bijhouden wat er is gewijzigd en wanneer
@@ -379,7 +375,7 @@ Let op het schema en de databasestructuur. De invoer van pakket met schema moet 
 Begin door verschillende typen pakketten te definiëren. Er worden slechts vier typen gebruikt:
 
 **Entiteiten**
-* Alle specifieke elementen &quot;xtk&quot; en &quot;nms&quot; in Adobe Campagne, zoals schema&#39;s, formulieren, mappen, leveringssjablonen, enz.
+* Alle &quot;xtk&quot;- en &quot;nms&quot;-specifieke elementen in Adobe Campaign, zoals schema&#39;s, formulieren, mappen, leveringssjablonen, enz.
 * U kunt een entiteit beschouwen als zowel een element &quot;admin&quot; als een element &quot;platform&quot;.
 * U mag niet meer dan één entiteit in een pakket opnemen wanneer u het pakket uploadt naar een Campagne-instantie.
 
@@ -410,7 +406,7 @@ Een update kan niet alleen een oplossing zijn, maar ook een nieuw element van uw
 
 ### Naamconventies {#data-package-naming}
 
-Nu er typen zijn gedefinieerd, moeten we een naamgevingsconventie opgeven. In Adobe Campaign kunnen geen submappen voor pakketspecificaties worden gemaakt. Dit houdt in dat getallen de beste oplossing zijn om georganiseerd te blijven. Nummervoorvoegselpakketnamen. U kunt de volgende conventie gebruiken:
+Nu er typen zijn gedefinieerd, moeten we een naamgevingsconventie opgeven. Adobe Campaign staat het niet toe om subfolders voor pakketspecificaties tot stand te brengen, betekenend dat de aantallen de beste oplossing voor het blijven georganiseerd zijn. Nummervoorvoegselpakketnamen. U kunt de volgende conventie gebruiken:
 
 * Entiteit: van 1 tot en met 99
 * Functie: van 100 tot en met 199
