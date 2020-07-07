@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 0%
@@ -27,9 +27,9 @@ ht-degree: 0%
 
 ## Over CRM-connectors {#about-crm-connectors}
 
-Adobe Campaign biedt verschillende CRM-connectors waarmee u uw Adobe Campagne-platform kunt koppelen aan systemen van derden. Deze schakelaars van CRM laten u toe om contacten, rekeningen, aankopen, enz. te synchroniseren. Ze zorgen ervoor dat uw toepassing eenvoudig kan worden geïntegreerd met verschillende externe en zakelijke toepassingen.
+Adobe Campaign biedt verschillende CRM-connectors waarmee u uw Adobe Campaign-platform kunt koppelen aan systemen van derden. Deze schakelaars van CRM laten u toe om contacten, rekeningen, aankopen, enz. te synchroniseren. Ze zorgen ervoor dat uw toepassing eenvoudig kan worden geïntegreerd met verschillende externe en zakelijke toepassingen.
 
-Deze connectors maken snelle en eenvoudige gegevensintegratie mogelijk: De Campagne van Adobe verstrekt een specifieke tovenaar voor het verzamelen en het selecteren van uit de lijsten beschikbaar in CRM. Dit garandeert tweerichtingssynchronisatie om ervoor te zorgen dat de gegevens altijd up-to-date zijn in alle systemen.
+Deze connectors maken snelle en eenvoudige gegevensintegratie mogelijk: Adobe Campaign verstrekt een specifieke tovenaar voor het verzamelen van en het selecteren van uit de lijsten beschikbaar in CRM. Dit garandeert tweerichtingssynchronisatie om ervoor te zorgen dat de gegevens altijd up-to-date zijn in alle systemen.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Verbinding maken met de CRM wordt uitgevoerd via specifieke workflowactiviteiten
 
 ### Compatibele CRM-systemen en -beperkingen {#compatible-crm-systems-and-limitations}
 
-CRM&#39;s die hieronder worden vermeld, kunnen worden geïntegreerd in de Adobe-campagne.
+CRM&#39;s die hieronder worden vermeld, kunnen in Adobe Campaign worden geïntegreerd.
 
 Ondersteunde versies worden gedetailleerd weergegeven in de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
 
@@ -47,52 +47,52 @@ Ondersteunde versies worden gedetailleerd weergegeven in de [compatibiliteitsmat
 
    Raadpleeg [deze sectie](#example-for-salesforce-com) voor meer informatie over het instellen van de verbinding met Salesforce.com.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
-   >Wanneer u Adobe Campagne verbindt met Salesforce.com, gelden de volgende beperkingen:
+   >Wanneer u Adobe Campaign verbindt met Salesforce.com, gelden de volgende beperkingen:
    >
    >    
    >    
    >    * Testproductieinstanties worden ondersteund.
    >    * Toewijzingsregels worden ondersteund.
-   >    * Meerdere selectienumeraties worden niet ondersteund door Adobe Campagne.
+   >    * Meerdere selectienumeraties worden niet ondersteund door Adobe Campaign.
 
 
 * **Oracle On Demand**
 
    Raadpleeg [deze sectie](#example-for-oracle-on-demand) voor meer informatie over het instellen van de verbinding met Oracle On Demand.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
-   >Wanneer u Adobe Campagne verbindt met Oracle On Demand, gelden de volgende beperkingen:
+   >Bij de verbinding van Adobe Campaign met Oracle On Demand gelden de volgende beperkingen:
    >
    >    
    >    
-   >    * Met Adobe Campaign kunt u elk object synchroniseren dat beschikbaar is in de standaard Oracle On Demand-sjablonen. Als u persoonlijke tabellen hebt toegevoegd in Oracle On Demand, worden deze niet hersteld in Adobe Campaign.
+   >    * Adobe Campaign kan elk object dat beschikbaar is in de standaard Oracle On Demand-sjablonen synchroniseren. Als u persoonlijke tabellen hebt toegevoegd in Oracle On Demand, worden deze niet hersteld in Adobe Campaign.
    >    * Met API-versie v1.0 kunt u gegevens sorteren of filteren tijdens een query, maar niet tegelijkertijd.
    >    * De door Oracle On Demand verzonden data bevatten geen informatie over de tijdzone.
-   >    * Meerdere selectienumeraties worden niet ondersteund door Adobe Campagne.
+   >    * Meerdere selectienumeraties worden niet ondersteund door Adobe Campaign.
 
 
 * **MS Dynamics CRM** en **MS Dynamics Online**
 
    Verwijs naar [deze sectie](#example-for-microsoft-dynamics) om te leren hoe te opstelling de verbinding met de Dynamica van Microsoft.
 
-   In [deze video](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html)vindt u meer informatie over het gebruik van Adobe Campaign en Microsoft Dynamics.
+   In [deze video](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html)ziet u hoe Adobe Campaign en Microsoft Dynamics elkaar gebruiken.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
-   >Wanneer u Adobe Campagne verbindt met Microsoft Dynamics, gelden de volgende beperkingen:
+   >Bij het verbinden van Adobe Campaign met Microsoft Dynamics gelden de volgende beperkingen:
    >
    >    
    >    
-   >    * Het installeren van plug-ins kan het gedrag van CRM wijzigen. Dit kan leiden tot compatibiliteitsproblemen met Adobe Campaign.
-   >    * Meerdere selectienumeraties worden niet ondersteund door Adobe Campagne.
+   >    * Het installeren van plug-ins kan het gedrag van CRM wijzigen, wat kan leiden tot compatibiliteitsproblemen met Adobe Campaign.
+   >    * Meerdere selectienumeraties worden niet ondersteund door Adobe Campaign.
 
 
 ## De verbinding instellen {#setting-up-the-connection}
 
-Voer de volgende stappen uit om CRM-connectors te gebruiken in Adobe Campagne:
+Voer de volgende stappen uit om CRM-connectors te gebruiken in Adobe Campaign:
 
 1. Een externe account maken
 1. Verzamel de lijsten CRM
@@ -105,9 +105,9 @@ Voer de volgende stappen uit om CRM-connectors te gebruiken in Adobe Campagne:
 
 ### Voorbeeld van Salesforce.com {#example-for-salesforce-com}
 
-Volg onderstaande stappen om de **Salesforce.com** -aansluiting te configureren met Adobe Campaign:
+Volg onderstaande stappen om de **Salesforce.com** -aansluiting met Adobe Campaign te configureren:
 
-1. Maak een nieuw extern account via het **[!UICONTROL Administration > Platform > External accounts]** knooppunt van de Adobe Campagne-structuur.
+1. Maak een nieuwe externe account via het **[!UICONTROL Administration > Platform > External accounts]** knooppunt van de Adobe Campaign-structuur.
 1. Stel de configuratietovenaar in werking om de beschikbare lijsten van CRM te produceren.
 
    ![](assets/crm_connectors_sfdc_wz.png)
@@ -120,17 +120,17 @@ Volg onderstaande stappen om de **Salesforce.com** -aansluiting te configureren 
 
    >[!NOTE]
    >
-   >Als u de installatie wilt goedkeuren, moet u zich afmelden en weer aan bij de Adobe Campagne-console.
+   >Als u de installatie wilt goedkeuren, moet u zich afmelden en weer terugzetten op de Adobe Campaign-console.
 
-1. Controleer het schema dat in de Campagne van Adobe in de **[!UICONTROL Administration > Configuration > Data schemas]** knoop wordt geproduceerd.
+1. Controleer het schema dat in Adobe Campaign in het **[!UICONTROL Administration > Configuration > Data schemas]** knooppunt wordt gegenereerd.
 
    ![](assets/crm_connectors_sfdc_table.png)
 
-1. Zodra het schema wordt gecreeerd, kunt u opsommingen automatisch via CRM aan de Campagne van Adobe synchroniseren.
+1. Zodra het schema wordt gecreeerd, kunt u opsommingen automatisch via CRM aan Adobe Campaign synchroniseren.
 
-   Klik hiertoe op de **[!UICONTROL Synchronizing enumerations...]** koppeling en selecteer de opsomming van Adobe Campagne die overeenkomt met de opsomming CRM.
+   Om dit te doen, klik de **[!UICONTROL Synchronizing enumerations...]** verbinding en selecteer de opsomming van Adobe Campaign die de opsomming van CRM aanpast.
 
-   U kunt alle waarden van een opsomming van Adobe-campagnes vervangen door die van de CRM: Selecteer **[!UICONTROL Yes]** in de **[!UICONTROL Replace]** kolom om dit te doen.
+   U kunt alle waarden van een opsomming van Adobe Campaign door die van CRM vervangen: Selecteer **[!UICONTROL Yes]** in de **[!UICONTROL Replace]** kolom om dit te doen.
 
    ![](assets/crm_connectors_sfdc_enum.png)
 
@@ -140,19 +140,19 @@ Volg onderstaande stappen om de **Salesforce.com** -aansluiting te configureren 
 
    ![](assets/crm_connectors_sfdc_exe.png)
 
-1. Als u Salesforce-gegevens wilt importeren of Adobe Campagne-gegevens wilt exporteren naar Salesforce, moet u een workflow maken en de **[!UICONTROL CRM connector]** activiteit gebruiken.
+1. Als u Salesforce-gegevens wilt importeren of Adobe Campaign-gegevens wilt exporteren naar Salesforce, moet u een workflow maken en de **[!UICONTROL CRM connector]** activiteit gebruiken.
 
    ![](assets/crm_connectors_sfdc_wf.png)
 
 ### Voorbeeld voor Oracle On Demand {#example-for-oracle-on-demand}
 
-Voer de volgende stappen uit om de **Oracle On Demand** -aansluiting te configureren voor gebruik met Adobe Campaign:
+Voer de volgende stappen uit om de **Oracle On Demand** -connector te configureren voor gebruik met Adobe Campaign:
 
-1. Maak een nieuw extern account via het **[!UICONTROL Administration > Platform > External accounts]** knooppunt van de Adobe Campagne-structuur.
+1. Maak een nieuwe externe account via het **[!UICONTROL Administration > Platform > External accounts]** knooppunt van de Adobe Campaign-structuur.
 
    ![](assets/crm_connectors_ood_1.png)
 
-1. Open de configuratietovenaar: De Adobe Campagne toont automatisch de lijsten van het de gegevensmodel van Oracle. Selecteer de tabellen die u wilt verzamelen.
+1. Open de configuratietovenaar: Adobe Campaign geeft automatisch de tabellen van het Oracle-gegevensmodel weer. Selecteer de tabellen die u wilt verzamelen.
 
    ![](assets/crm_connectors_ood_2.png)
 
@@ -166,39 +166,39 @@ Voer de volgende stappen uit om de **Oracle On Demand** -aansluiting te configur
 
    ![](assets/crm_connectors_ood_4.png)
 
-1. Als u Oracle On Demand-gegevens wilt importeren in Adobe Campagne, maakt u het volgende type workflow:
+1. Als u Oracle On Demand-gegevens wilt importeren in Adobe Campaign, maakt u het volgende type workflow:
 
    ![](assets/crm_connectors_ood_5.png)
 
-   Deze workflow importeert contactpersonen via Oracle On Demand, synchroniseert deze met de bestaande Adobe Campagne-gegevens, verwijdert dubbele contactpersonen en werkt de Adobe Campagne-database bij.
+   Deze workflow importeert contactpersonen via Oracle On Demand, synchroniseert deze met de bestaande Adobe Campaign-gegevens, verwijdert dubbele contactpersonen en werkt de Adobe Campaign-database bij.
 
    De **[!UICONTROL CRM Connector]** activiteit moet worden gevormd zoals hier getoond:
 
    ![](assets/crm_connectors_ood_6.png)
 
-1. Als u Adobe Campagne-gegevens wilt exporteren naar Oracle On Demand, maakt u de volgende workflow:
+1. Als u Adobe Campaign-gegevens wilt exporteren naar Oracle On Demand, maakt u de volgende workflow:
 
    ![](assets/crm_connectors_ood_7.png)
 
-   Deze workflow verzamelt de relevante gegevens met behulp van query&#39;s en exporteert deze vervolgens naar de Contacttabel van Oracle On Demand.
+   Deze workflow verzamelt de relevante gegevens met behulp van query&#39;s en exporteert deze vervolgens naar de Oracle On Demand-lijst met contactpersonen.
 
 ### Voorbeeld voor Microsoft Dynamics {#example-for-microsoft-dynamics}
 
-Voer de volgende stappen uit om de Microsoft Dynamics-connector te configureren voor gebruik met Adobe Campaign:
+Om de schakelaar van de Dynamiek van Microsoft te vormen om met Adobe Campaign te werken, pas de volgende stappen toe:
 
-1. Maak een nieuw extern account via het **[!UICONTROL Administration > Platform > External accounts]** knooppunt van de Adobe Campagne-structuur.
+1. Maak een nieuwe externe account via het **[!UICONTROL Administration > Platform > External accounts]** knooppunt van de Adobe Campaign-structuur.
 
    ![](assets/crm_connectors_msdynamics_01_4.png)
 
 1. Selecteer het **implementatietype**: **[!UICONTROL On-premise]**, **[!UICONTROL Office 365]** of **[!UICONTROL Web API]**, afhankelijk van de schakelaar u wilt vormen.
 
-   Adobe Campaign Classic biedt ondersteuning voor de interface Dynamics 365 REST met het OAuth-protocol voor verificatie.
+   Adobe Campaign Classic steunt de interface van het SPEL van de Dynamiek 365 met het protocol OAuth voor authentificatie.
 
    Als u een **[!UICONTROL WebAPI]** plaatsing selecteert, moet u een app op Azure Folder registreren en **clientId** van de Azure Folder krijgen. Deze registratie wordt beschreven in [deze pagina](https://msdn.microsoft.com/en-us/library/mt622431.aspx).
 
    >[!NOTE]
    >
-   >De parameter redirectURL wordt niet vereist door Adobe Campagne Classic.
+   >De parameter redirectURL wordt niet vereist door Adobe Campaign Classic.
 
    De **clientId** -waarde wordt gebruikt met de gebruikersnaam/het wachtwoord om het token voor toonder op te halen met het wachtwoord voor het type gift. Dit wordt genoemd de Verlening van het Wachtwoord van de Eigenaar van het **Middel**. For more on this, refer to [this page](https://blogs.msdn.microsoft.com/wushuai/2016/09/25/resource-owner-password-credentials-grant-in-azure-ad-oauth/).
 
@@ -206,7 +206,7 @@ Voer de volgende stappen uit om de Microsoft Dynamics-connector te configureren 
 
    Raadpleeg de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)voor meer informatie over CRM-versiecompatibiliteit.
 
-1. Open de configuratietovenaar. De Campagne van Adobe ontdekt automatisch de lijsten van het de gegevensmalplaatje van de Dynamica van Microsoft.
+1. Open de configuratietovenaar. Adobe Campaign ontdekt automatisch de lijsten van het de gegevensmalplaatje van de Dynamica van Microsoft.
 
    ![](assets/crm_connectors_msdynamics_02.png)
 
@@ -234,7 +234,7 @@ Voer de volgende stappen uit om de Microsoft Dynamics-connector te configureren 
 
    ![](assets/crm_connectors_msdynamics_07.png)
 
-   Deze workflow importeert de contactpersonen via Microsoft Dynamics, synchroniseert deze met de bestaande Adobe Campagne-gegevens, verwijdert dubbele contactpersonen en werkt de Adobe Campagne-database bij.
+   Deze werkschema voert de contacten via de Dynamica van Microsoft in, synchroniseert hen met de bestaande gegevens van Adobe Campaign, schrapt dubbele contacten, en werkt het gegevensbestand van Adobe Campaign bij.
 
    De **[!UICONTROL CRM Connector]** activiteit moet als volgt worden gevormd:
 
@@ -242,7 +242,7 @@ Voer de volgende stappen uit om de Microsoft Dynamics-connector te configureren 
 
 ## Gegevenssynchronisatie {#data-synchronization}
 
-Synchronisatie tussen Adobe Campaign en de CRM wordt uitgevoerd via een toegewijde workflowactiviteit: [CRM-connector](../../workflow/using/crm-connector.md).
+Synchronisatie tussen Adobe Campaign en de CRM wordt uitgevoerd via een specifieke workflowactiviteit: [CRM-connector](../../workflow/using/crm-connector.md).
 
 Met deze activiteit kunt u:
 
@@ -261,14 +261,14 @@ De configuratie van deze activiteit hangt af van het uit te voeren proces. Hiero
 
 ### Importeren vanuit de CRM {#importing-from-the-crm}
 
-Als u gegevens wilt importeren via CRM in Adobe Campaign, moet u het volgende type workflow maken:
+Om gegevens via CRM in Adobe Campaign te importeren, moet u het volgende type workflow maken:
 
 ![](assets/crm_wf_import.png)
 
 Voor een de invoeractiviteit, zijn de de activiteitsconfiguratiestappen van de Verbinding van **CRM** :
 
 1. Selecteer een **[!UICONTROL Import from the CRM]** bewerking.
-1. Ga naar de **[!UICONTROL Remote object]** drop-down lijst en selecteer het voorwerp betrokken bij het proces. Dit object valt samen met een van de tabellen die tijdens de verbindingsconfiguratie in Adobe Campaign zijn gemaakt.
+1. Ga naar de **[!UICONTROL Remote object]** drop-down lijst en selecteer het voorwerp betrokken bij het proces. Dit object valt samen met een van de tabellen die in Adobe Campaign worden gemaakt tijdens de verbindingsconfiguratie.
 1. Ga naar de **[!UICONTROL Remote fields]** sectie en ga de gebieden in om worden ingevoerd.
 
    Als u een veld wilt toevoegen, klikt u op de **[!UICONTROL Add]** knop op de werkbalk en vervolgens op het **[!UICONTROL Edit expression]** pictogram.
@@ -277,9 +277,9 @@ Voor een de invoeractiviteit, zijn de de activiteitsconfiguratiestappen van de V
 
    Wijzig zo nodig de gegevensindeling in de vervolgkeuzelijst met de **[!UICONTROL Conversion]** kolommen. Mogelijke conversietypen worden gedetailleerd in [gegevensindeling](#data-format).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
-   >De id van de record in de CRM is verplicht voor het koppelen van objecten in CRM en in Adobe Campaign. Deze wordt automatisch toegevoegd wanneer het vak wordt goedgekeurd.
+   >De identificator van de record in de CRM is verplicht voor het koppelen van objecten in CRM en in Adobe Campaign. Deze wordt automatisch toegevoegd wanneer het vak wordt goedgekeurd.
    >
    >De laatste wijzigingsdatum aan de CRM-zijde is ook verplicht voor de incrementele invoer van gegevens.
 
@@ -289,11 +289,11 @@ Voor een de invoeractiviteit, zijn de de activiteitsconfiguratiestappen van de V
 
    ![](assets/crm_task_import_filter.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >De beperkingen die zijn gekoppeld aan de modi voor gegevensfiltering worden gedetailleerd weergegeven in de [gegevensfiltering](#filtering-data).
 
-1. Met deze **[!UICONTROL Use automatic index...]** optie kunt u automatisch incrementele objectsynchronisatie beheren tussen de CRM-campagne en de Adobe-campagne, afhankelijk van de datum en de laatste wijziging.
+1. Met deze **[!UICONTROL Use automatic index...]** optie kunt u automatisch incrementele objectsynchronisatie tussen de CRM en Adobe Campaign beheren, afhankelijk van de datum en de laatste wijziging.
 
    Raadpleeg voor meer informatie het [Variabele-beheer](#variable-management).
 
@@ -371,7 +371,7 @@ Selecteer vervolgens de velden van de binnenkomende populatie die u wilt importe
 
 ### Exporteren naar de CRM {#exporting-to-the-crm}
 
-Als u Adobe Campaign-gegevens exporteert naar de CRM-database, kunt u de volledige inhoud kopiëren naar een CRM-database.
+Het uitvoeren van de gegevens van Adobe Campaign in CRM laat u volledige inhoud aan een gegevensbestand van CRM kopiëren.
 
 Als u gegevens naar CRM wilt exporteren, moet u het volgende type workflow maken:
 
@@ -380,9 +380,9 @@ Als u gegevens naar CRM wilt exporteren, moet u het volgende type workflow maken
 Voor de uitvoer, pas de volgende configuratie op de activiteit van de Schakelaar **van** CRM toe:
 
 1. Selecteer een **[!UICONTROL Export to CRM]** bewerking.
-1. Ga naar de **[!UICONTROL Remote object]** drop-down lijst en selecteer het voorwerp betrokken bij het proces. Dit object valt samen met een van de tabellen die tijdens de verbindingsconfiguratie in Adobe Campaign zijn gemaakt.
+1. Ga naar de **[!UICONTROL Remote object]** drop-down lijst en selecteer het voorwerp betrokken bij het proces. Dit object valt samen met een van de tabellen die in Adobe Campaign worden gemaakt tijdens de verbindingsconfiguratie.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >De de uitvoerfunctie van de activiteit van de Verbindingen van **CRM** kan gebieden op de kant van CRM opnemen of bijwerken. Om gebiedsupdates in CRM toe te laten, moet u de primaire sleutel van de verre lijst specificeren. Als de sleutel ontbreekt, worden gegevens ingevoegd (in plaats van bijgewerkt).
 
@@ -447,17 +447,17 @@ Met de **[!UICONTROL Reject]** uitvoerovergang hebt u toegang tot het uitvoersch
 
 ### Objecten importeren die zijn verwijderd in de CRM {#importing-objects-deleted-in-the-crm}
 
-Als u het instellen van een uitgebreid proces voor gegevenssynchronisatie wilt inschakelen, kunt u objecten die zijn verwijderd in de CRM-campagne importeren in Adobe-campagne.
+Om het opzetten van een uitgebreid proces van de gegevenssynchronisatie toe te laten, kunt u voorwerpen invoeren die in CRM worden geschrapt in Adobe Campaign.
 
 Hiervoor voert u de volgende stappen uit:
 
 1. Selecteer een **[!UICONTROL Import objects deleted in the CRM]** bewerking.
-1. Ga naar de **[!UICONTROL Remote object]** drop-down lijst en selecteer het voorwerp betrokken bij het proces. Dit object valt samen met een van de tabellen die tijdens de verbindingsconfiguratie in Adobe Campaign zijn gemaakt.
+1. Ga naar de **[!UICONTROL Remote object]** drop-down lijst en selecteer het voorwerp betrokken bij het proces. Dit object valt samen met een van de tabellen die in Adobe Campaign worden gemaakt tijdens de verbindingsconfiguratie.
 1. Geef de periode op waarmee rekening moet worden gehouden in de velden **[!UICONTROL Start date]** en de **[!UICONTROL End date]** velden. Deze data worden in de periode opgenomen.
 
    ![](assets/crm_import_deleted_obj.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >De periode voor het verwijderen van elementen moet samenvallen met de specifieke beperkingen van de BCR. Dit betekent dat voor Salesforce.com bijvoorbeeld elementen die meer dan 30 dagen geleden zijn verwijderd, niet kunnen worden hersteld.
 
