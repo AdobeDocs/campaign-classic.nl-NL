@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
+source-git-commit: 9f3ef7b0a7b656f81400ed55a713058d43e6c96b
+workflow-type: tm+mt
+source-wordcount: '957'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Campagne-SDK&#39;s voor iOS en Android zijn een van de onderdelen van de module 
 >
 >Neem contact op met de klantenservice van Adobe om de Campagne SDK (voorheen bekend als Neolane SDK) op te halen.
 
-Het doel van de SDK is om de integratie van een mobiele toepassing in het Adobe Campaign-platform te vergemakkelijken.
+Het doel van de SDK is de integratie van een mobiele toepassing in het Adobe Campaign-platform te vergemakkelijken.
 
 Raadpleeg de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html#MobileSDK) voor meer informatie over de verschillende ondersteunde Android- en iOS-versies.
 
@@ -36,7 +39,7 @@ Raadpleeg de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compat
 
 * **In Android**: het **bestand neolane_sdk-release.aar** moet aan het project zijn gekoppeld.
 
-   Met de volgende machtigingen krijgt u toegang tot de Adobe Campagneserver:
+   Met de volgende machtiging krijgt u toegang tot de Adobe Campaign-server:
 
    ```
    Neolane.getInstance().setIntegrationKey("your Adobe mobile app integration key");
@@ -64,13 +67,13 @@ Raadpleeg de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compat
 
 Als u de campagne-SDK wilt integreren in de mobiele toepassing, moet de functionele beheerder de ontwikkelaar de volgende informatie geven:
 
-* **Een integratiesleutel**: om het Adobe Campagne-platform in staat te stellen de mobiele toepassing te identificeren.
+* **Een integratiesleutel**: om het Adobe Campaign-platform in staat te stellen de mobiele toepassing te identificeren.
 
    >[!NOTE]
    >
-   >Deze integratietoets wordt ingevoerd in de Adobe Campagne Console, op het **[!UICONTROL Information]** tabblad Service dat is toegewezen aan de mobiele toepassing. Zie Een mobiele toepassing [configureren in Adobe Campagne](../../delivery/using/configuring-the-mobile-application.md).
+   >Deze integratietoets wordt ingevoerd in de Adobe Campaign-console, op het **[!UICONTROL Information]** tabblad Service dat is toegewezen aan de mobiele toepassing. Zie Een mobiele toepassing [configureren in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
-* **Een URL** voor bijhouden: die overeenkomt met het adres van de Adobe Campagne Tracking-server.
+* **Een URL** voor bijhouden: die overeenkomt met het adres van de Adobe Campaign-trackingserver.
 * **Een marketing-URL**: om de inzameling van abonnementen toe te laten.
 
 * **In Android**:
@@ -94,7 +97,7 @@ Als u de campagne-SDK wilt integreren in de mobiele toepassing, moet de function
 
 Met de registratiefunctie kunt u:
 
-* Stuur de bericht-id of push-id (deviceToken for iOS en registrationID for Android) naar Adobe Campagne.
+* Stuur de bericht-id of push-id (deviceToken voor iOS en registrationID voor Android) naar Adobe Campaign.
 * de afstemmingssleutel of de gebruikersnaam herstellen (bijvoorbeeld e-mail- of accountnummer)
 
 * **In Android**:
@@ -146,7 +149,7 @@ Met de registratiefunctie kunt u:
    }
    ```
 
-## Traceerfunctie {#tracking-function}
+## Trackingfunctie {#tracking-function}
 
 * **In Android**:
 
@@ -202,14 +205,19 @@ Met de registratiefunctie kunt u:
        if( url == null )     url = "https://www.tripadvisor.fr";
        int iconId = R.drawable.notif_neotrip;
    
-       // notify Neolane that a notification just arrived
-       NeolaneAsyncRunner nas = new NeolaneAsyncRunner(Neolane.getInstance());
-       nas.notifyReceive(Integer.valueOf(messageId), deliveryId, new NeolaneAsyncRunner.RequestListener() {
-         public void onNeolaneException(NeolaneException arg0, Object arg1) {}
-         public void onIOException(IOException arg0, Object arg1) {}
-         public void onComplete(String arg0, Object arg1){}
-       });
-       if (yourApplication.isActivityVisible())
+     // notify Neolane that a notification just arrived
+     SharedPreferences settings = context.getSharedPreferences(NeoTripActivity.APPLICATION_PREF_NAME, Context.MODE_PRIVATE);
+     Neolane.getInstance().setIntegrationKey(settings.getString(NeoTripActivity.APPUUID_NAME, NeoTripActivity.DFT_APPUUID));
+     Neolane.getInstance().setMarketingHost(settings.getString(NeoTripActivity.SOAPRT_NAME, NeoTripActivity.DFT_SOAPRT));
+     Neolane.getInstance().setTrackingHost(settings.getString(NeoTripActivity.TRACKRT_NAME, NeoTripActivity.DFT_TRACKRT));
+   
+     NeolaneAsyncRunner nas = new NeolaneAsyncRunner(Neolane.getInstance());
+     nas.notifyReceive(Integer.valueOf(messageId), deliveryId, new NeolaneAsyncRunner.RequestListener() {
+       public void onNeolaneException(NeolaneException arg0, Object arg1) {}
+       public void onIOException(IOException arg0, Object arg1) {}
+       public void onComplete(String arg0, Object arg1){}
+     });
+     if (yourApplication.isActivityVisible())
        {
          Log.i("INFO", "The application has the focus" );
          ...
@@ -247,24 +255,28 @@ Met de registratiefunctie kunt u:
 
    ```
    public class NotificationActivity extends Activity {
-    public static final String NOTIFICATION_URL_KEYNAME = "NotificationUrl";
-    .....
-    public void onCreate(Bundle savedBundle) {
-     super.onCreate(savedBundle);
-     setContentView(R.layout.notification_viewer);  
-     .....  
-     Bundle extra = getIntent().getExtras();  
-     .....  
-     //get the messageId and the deliveryId to do the tracking  
-     String deliveryId = extra.getString("_dId");
-     String messageId = extra.getString("_mId");
-     if (deliveryId != null && messageId != null) {
-      NeolaneAsyncRunner neolaneAs = new NeolaneAsyncRunner(Neolane.getInstance());
-      neolaneAs.notifyOpening(Integer.valueOf(messageId), deliveryId, new NeolaneAsyncRunner.RequestListener() {
-       public void onNeolaneException(NeolaneException arg0, Object arg1) {}
-       public void onIOException(IOException arg0, Object arg1) {}
-       public void onComplete(String arg0, Object arg1) {}
-       });
+   public void onCreate(Bundle savedBundle) {
+     [...]
+     Bundle extra = getIntent().getExtras();
+     if (extra != null) {
+       // reinit the acc sdk
+       SharedPreferences settings = getSharedPreferences(NeoTripActivity.APPLICATION_PREF_NAME, Context.MODE_PRIVATE);
+       Neolane.getInstance().setIntegrationKey(settings.getString(NeoTripActivity.APPUUID_NAME, NeoTripActivity.DFT_APPUUID));
+       Neolane.getInstance().setMarketingHost(settings.getString(NeoTripActivity.SOAPRT_NAME, NeoTripActivity.DFT_SOAPRT));               
+       Neolane.getInstance().setTrackingHost(settings.getString(NeoTripActivity.TRACKRT_NAME, NeoTripActivity.DFT_TRACKRT));
+   
+       // Get the messageId and the deliveryId to do the tracking
+       String deliveryId = extra.getString("_dId");
+       String messageId = extra.getString("_mId");
+       if (deliveryId != null && messageId != null) {
+         try {
+           Neolane.getInstance().notifyOpening(Integer.valueOf(messageId), Integer.valueOf(deliveryId));
+         } catch (NeolaneException e) {
+           // ...
+         } catch (IOException e) {
+           // ...
+         }
+       }
      }
     }
    }
@@ -291,7 +303,7 @@ Met de registratiefunctie kunt u:
 
 ## Beheer van stille meldingen {#silent-notification-tracking}
 
-Met iOS kunt u geen meldingen verzenden, een melding of gegevens die rechtstreeks naar een mobiele toepassing worden verzonden zonder deze weer te geven. Met Adobe Campaign kunt u deze bijhouden.
+Met iOS kunt u geen meldingen verzenden, een melding of gegevens die rechtstreeks naar een mobiele toepassing worden verzonden zonder deze weer te geven. Met Adobe Campaign kun je ze volgen.
 
 Volg het onderstaande voorbeeld om je melding op te volgen:
 
@@ -527,7 +539,7 @@ Voer de volgende stappen uit om **registerDeviceStatus** -gedelegeerde te implem
 
 ## Variabelen {#variables}
 
-Met de variabelen kunt u het gedrag van mobiele toepassingen definiëren nadat u een melding hebt ontvangen. Deze variabelen moeten worden gedefinieerd in de code voor mobiele toepassingen en in de Adobe Campagne-console, op het **[!UICONTROL Variables]** tabblad in de toegewijde service voor mobiele toepassingen (zie Een mobiele toepassing [configureren in Adobe Campagne](../../delivery/using/configuring-the-mobile-application.md)). Hier is een voorbeeld van een code waarmee een mobiele toepassing toegevoegde variabelen in een melding kan verzamelen. In ons voorbeeld gebruiken we de variabele &quot;VAR&quot;.
+Met de variabelen kunt u het gedrag van mobiele toepassingen definiëren nadat u een melding hebt ontvangen. Deze variabelen moeten worden gedefinieerd in de mobiele toepassingscode en in de Adobe Campaign-console, op het **[!UICONTROL Variables]** tabblad in de speciale service voor mobiele toepassingen (zie Een mobiele toepassing [configureren in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md)). Hier is een voorbeeld van een code waarmee een mobiele toepassing toegevoegde variabelen in een melding kan verzamelen. In ons voorbeeld gebruiken we de variabele &quot;VAR&quot;.
 
 * **In Android**:
 
@@ -613,9 +625,9 @@ De media moeten worden gedownload op het niveau van de berichtdienst uitbreiding
 
 Op dit niveau moet u:
 
-* Wijs de extensie van de inhoud toe aan de categorie die wordt verzonden door Adobe Campaign:
+* Wijs de extensie van de inhoud toe aan de categorie die door Adobe Campaign is verzonden:
 
-   Als u wilt dat uw mobiele toepassing een afbeelding weergeeft, kunt u de categoriewaarde instellen op &quot;image&quot; in Adobe Campagne en in uw mobiele toepassing. U maakt dan een meldingsextensie met de parameter **UNNotificationExtensionCategory** ingesteld op &quot;image&quot;. Wanneer het pushbericht op het apparaat wordt ontvangen, wordt de extensie aangeroepen op basis van de gedefinieerde categoriewaarde.
+   Als u wilt dat uw mobiele toepassing een afbeelding weergeeft, kunt u de categoriewaarde instellen op &quot;image&quot; in Adobe Campaign en in uw mobiele toepassing, maakt u een meldingsextensie met de parameter **UNNotificationExtensionCategory** ingesteld op &quot;image&quot;. Wanneer het pushbericht op het apparaat wordt ontvangen, wordt de extensie aangeroepen op basis van de gedefinieerde categoriewaarde.
 
 * De lay-out voor uw melding definiëren
 
