@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campagne classic
 translation-type: tm+mt
-source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
+source-git-commit: c38fe4cc442768550ee90cecc6b31b78d39f3da1
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2122'
 ht-degree: 0%
 
 ---
@@ -73,12 +73,13 @@ ht-degree: 0%
    + Toegang tot een externe database (FDA){#accessing-external-database}
       + [FDA](platform/using/about-fda.md)
       + [Specifieke configuraties per databasetype](platform/using/specific-configuration-database.md)
+      + [Verouderde connectors](platform/using/legacy-connectors.md)
       + [Toegangsrechten externe database](platform/using/remote-database-access-rights.md)
       + [Verbinding maken met de database](platform/using/connecting-to-database.md)
       + [Het gegevensschema maken](platform/using/creating-data-schema.md)
       + [Gegevenstoewijzing definiëren](platform/using/defining-data-mapping.md)
       + [Aanvullende opties](platform/using/additional-options.md)
-      + [Gegevens uit een externe database gebruiken in een workflow](platform/using/data-external-database-workflow.md)
+      + [Bijlagen](platform/using/appendices-fda.md)
    + Aansluitingen {#connectors}
       + [Informatie over connectors](platform/using/about-connectors.md)
       + [CRM-connectors](platform/using/crm-connectors.md)
@@ -161,7 +162,7 @@ ht-degree: 0%
       + [Inbox rendering](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Aanbevolen werkwijzen opnieuw inschakelen](delivery/using/re-engagement-best-practices.md)
-      + [Bloklijstdatabases](delivery/using/block-list-databases.md)
+      + [Lijst van afgewezen personen-databases](delivery/using/block-list-databases.md)
       + [Problemen oplossen](delivery/using/deliverability-faq.md)
    + Module voor inhoudsbeheer {#content-management}
       + [Over inhoudsbeheer](delivery/using/about-content-management.md)
@@ -623,6 +624,7 @@ ht-degree: 0%
    + Inleiding {#introduction}
       + [Voorwoord](production/using/foreword.md)
       + [Algemene architectuur](production/using/general-architecture.md)
+      + [Monitoringrichtsnoeren](production/using/monitoring-guidelines.md)
    + Productieprocedures {#production-procedures}
       + [Configuratiebeginsel](production/using/configuration-principle.md)
       + [Exploitatiebeginsel](production/using/operating-principle.md)
