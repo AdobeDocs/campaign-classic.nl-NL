@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
+source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+workflow-type: tm+mt
+source-wordcount: '1372'
+ht-degree: 0%
 
 ---
 
 
 # Release 19.2{#release-19-2}
 
-[Upgrade](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) maken| [Release](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) van het regelpaneel| [Documentatie-updates](../../rn/using/documentation-updates.md) | [Eerdere versies](../../rn/using/release--19-1.md) | [Verouderde kenmerken](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+[Upgrade maken](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Release van het regelpaneel](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Documentatie-updates](../../rn/using/documentation-updates.md) | [Eerdere introducties](../../rn/using/release--19-1.md) | [Verouderde kenmerken](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
 <table> 
  <tbody> 
@@ -41,7 +44,7 @@ source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
  </tbody> 
 </table>
 
-De **laatste stabiele build** is 9032 (3a9dc9c). Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+De **laatste stabiele build** is Gold Standard 10. Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) Release 19.2.3 - build 9081 {#release-19-2-3-build-9081}
 
@@ -66,8 +69,8 @@ _2 december 2019_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>CCPA is de nieuwe privacywet van de staat Californië die de vereisten inzake gegevensbescherming harmoniseert en moderniseert die van kracht worden op 1 januari 2020. CCPA is op de klanten van de Campagne van Adobe van toepassing die gegevens voor de Onderwerpen van Gegevens in Californië verblijven.</p>
-    <p>Naast de privacy mogelijkheden reeds beschikbaar (met inbegrip van toestemmingsbeheer, montages van het gegevensbehoud, en gebruikersrollen), helpt de Campagne van Adobe uw bereidheid voor CCPA vergemakkelijken:</p>
+   <td> <p>CCPA is de nieuwe privacywet van de staat Californië die de vereisten inzake gegevensbescherming harmoniseert en moderniseert die van kracht worden op 1 januari 2020. CCPA is op de klanten van Adobe Campaign van toepassing die gegevens voor de Onderwerpen van Gegevens in Californië verblijven.</p>
+    <p>Naast de privacymogelijkheden die al beschikbaar zijn (zoals beheer van toestemming, instellingen voor gegevensbewaring en gebruikersrollen), helpt Adobe Campaign u de bereidheid tot CCPA te vergemakkelijken:</p>
     <ul>
       <li>Recht op toegang en recht op verwijdering: We benutten de capaciteiten die voor GDPR zijn toegevoegd. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">Meer informatie</a></li>
       <li>U kunt bijhouden of een consument heeft gekozen voor de verkoop van persoonlijke gegevens. Hiervoor moet u de tabel Profielen uitbreiden en een <strong>Uitschakelen voor het veld CCPA</strong> toevoegen. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">Meer informatie</a></li></td> 
@@ -98,7 +101,7 @@ _2 december 2019_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>Met Adobe Campaign kunt u de nieuwe interactieve <a href="https://amp.dev/about/email/">AMP uitproberen voor de indeling E-mail</a> . Hiermee kunnen marketers AMP-componenten in berichten opnemen om de e-mailervaring te verbeteren met rijke, dynamische en interactieve inhoud die rechtstreeks in het bericht zelf kan worden geactiveerd.</p>
+<td> <p>Met Adobe Campaign kunt u de nieuwe interactieve <a href="https://amp.dev/about/email/">AMP uitproberen voor de indeling E-mail</a> , waarmee marketers AMP-componenten in berichten kunnen opnemen om de e-mailbeleving te verbeteren met rijke, dynamische en interactieve inhoud die rechtstreeks in het bericht zelf kan worden geactiveerd.</p>
    <p>Dit vermogen wordt vrijgegeven als openbare bèta.</p>
    <p>Raadpleeg de <a href="../../delivery/using/defining-interactive-content.md">gedetailleerde documentatie</a> en de <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">zelfstudie-video</a>voor meer informatie.</p><br /></td> 
   </tr> 
@@ -144,7 +147,7 @@ _2 december 2019_
 
 _Verouderde systemen_
 
-De volgende systemen zijn nu [verouderd](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) voor Classic-implementaties voor campagnes:
+De volgende systemen zijn nu [verouderd](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) voor Campaign Classic-implementaties:
 * Apache 2.2
 * Centos 6
 
@@ -177,7 +180,7 @@ De build 1.0.26 van de iOS SDK is nu beschikbaar. In deze nieuwe build hebben we
 * Probleem verholpen met DKIM-sleutels die niet in e-mailberichten waren ingesloten. (NEO-16804)
 * Probleem verholpen waarbij de onjuiste foutcode werd weergegeven toen een ongeldig sessietoken werd gebruikt in de context van API-aanroepen om gebeurtenissen te activeren. De foutcode was &#39;HTTP 200 OK&#39; in plaats van &#39;HTTP 403 Verboden&#39;. (NEO-16826)
 * Probleem verholpen bij het weergeven van leveringsrapporten via webtoegang. (NEO-17015)
-* Probleem verholpen met een IMS-verificatie bij aanmelding bij Adobe Campaign. (NEO-17312)
+* Probleem verholpen met IMS-verificatie bij aanmelding bij Adobe Campaign. (NEO-17312)
 * Probleem verholpen waarbij werd voorkomen dat in quarantaine geplaatste e-mails werden verwijderd tijdens het privacybeheerproces. (NEO-17314)
 * Problemen met de doorvoer verholpen na upgrade naar 9031 met SQL-database. (NEO-1758)
 * Probleem verholpen dat invloed had op de CRM-connector met Salesforce. (NEO-17712)
