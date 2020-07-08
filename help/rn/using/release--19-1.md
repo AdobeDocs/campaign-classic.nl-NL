@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8c352c850777852d14ccf3002c20f651b46f9047
+source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
 workflow-type: tm+mt
-source-wordcount: '2917'
+source-wordcount: '2934'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-De **laatste stabiele build** is 9032 (3a9dc9c). Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+De **laatste stabiele build** is Gold Standard 10. Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) Release 19.1.6 - build 9035 {#release-19-1-6-build-9035}
 
@@ -83,7 +83,7 @@ _7 juli 2020_
 
 Deze nieuwe build (9032@efd8a94) bevat de volgende oplossing:
 
-* Probleem verholpen waardoor koppelingen niet konden worden bijgehouden. (NEO-26411)
+* Probleem verholpen waarbij tracering niet werkte toen de medio-souring server bezig was met build 9032 (Gold Standard 7) en de marketingserver op een oudere build (vóór 9032). (NEO-26411)
 
 >[!CAUTION]
 >
