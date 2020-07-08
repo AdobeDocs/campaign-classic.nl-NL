@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 788866c4f11d3875f713a61f7560d6d5255f3019
+source-git-commit: d60389eb735fb50188ddc2f2e3df3788a3213446
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 2%
+source-wordcount: '1128'
+ht-degree: 1%
 
 ---
 
@@ -132,12 +132,6 @@ De volgende tabel bevat een lijst met alle standaardpakketten met hun beschrijvi
    <td> Verstuurt leveringen via het mobiele/sms-kanaal met Adobe Campaign. Optioneel. <a href="../../delivery/using/sms-channel.md">Meer informatie</a> <br /> </td> 
    <td> Alles<br /> </td> 
   </tr> 
-  <tr> 
-   <td> Telefoonkanaal<br /> </td> 
-   <td> Verstuurt leveringen via het telefoonkanaal met Adobe Campaign.<br /> </td> 
-   <td> Alles<br /> </td> 
-   <td> Optioneel</td> 
-  </tr>
   <tr> 
    <td> Mobiel App-kanaal<br /> </td> 
    <td> Gebruikt het Adobe Campaign-platform om gepersonaliseerde meldingen naar iOS- en Android-terminals te verzenden via apps. Optioneel. <a href="../../delivery/using/about-mobile-app-channel.md">Meer informatie</a> <br /> </td> 
