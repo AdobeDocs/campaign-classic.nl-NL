@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 788866c4f11d3875f713a61f7560d6d5255f3019
+source-git-commit: a6b15dd1be6bb53b7a757d7fe1333314df9693a4
 workflow-type: tm+mt
-source-wordcount: '2460'
+source-wordcount: '2462'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Het beginsel van **gegevenspakketten** is een gegevensconfiguratie te exporteren
 Er zijn drie soorten exporteerbare pakketten: gebruikerspakketten, platformpakketten en beheerpakketten.
 
 * **Gebruikerspakket**: hiermee kunt u de lijst met te exporteren entiteiten selecteren. Dit type pakket beheert afhankelijkheden en controleert fouten.
-* **Platform**: het omvat alle toegevoegde technische middelen ( niet standaard ) : schema&#39;s, JavaScript-code, enz.
+* **Platform**: het omvat alle toegevoegde technische middelen ( niet - standaard ) : schema&#39;s, JavaScript-code, enz.
 
    ![](assets/ncs_datapackage_package_platform.png)
 
@@ -315,7 +315,7 @@ Voer de volgende stappen uit om een pakket uit een pakketdefinitie te exporteren
 
 De wizard voor het importeren van pakketten is toegankelijk via het hoofdmenu **[!UICONTROL Tools > Advanced > Package import...]** van de Adobe Campaign-clientconsole.
 
-U kunt een pakket importeren uit een eerder uitgevoerde exportbewerking, bijvoorbeeld uit een ander Adobe Campaign-exemplaar of uit een standaardpakket, afhankelijk van de voorwaarden van uw licentie.
+U kunt een pakket importeren uit een eerder uitgevoerde exportbewerking, bijvoorbeeld uit een ander Adobe Campaign-exemplaar of uit een [ingebouwd pakket](../../installation/using/installing-campaign-standard-packages.md), afhankelijk van de voorwaarden van uw licentie.
 
 ![](assets/ncs_datapackage_import.png)
 
@@ -331,13 +331,13 @@ Klik **[!UICONTROL Next]** en **[!UICONTROL Start]** om het importeren te starte
 
 ![](assets/ncs_datapackage_import_2.png)
 
-### Een standaardpakket installeren {#installing-a-standard-package}
+### Een ingebouwd pakket installeren {#installing-a-standard-package}
 
-Standaardpakketten worden geïnstalleerd wanneer de Adobe Campaign wordt geconfigureerd. Afhankelijk van uw toestemmingen en uw plaatsingsmodel, kunt u nieuwe standaardpakketten invoeren als u nieuwe opties of toe:voegen-ons verwerft, of als u aan een nieuwe aanbieding bevordert.
+Standaardpakketten zijn ingebouwde pakketten die worden geïnstalleerd wanneer de Adobe Campaign wordt geconfigureerd. Afhankelijk van uw toestemmingen en uw plaatsingsmodel, kunt u nieuwe standaardpakketten invoeren als u nieuwe opties of toe:voegen-ons verwerft, of als u aan een nieuwe aanbieding bevordert.
 
 Raadpleeg de licentieovereenkomst om te controleren welke pakketten u kunt installeren.
 
-Raadpleeg [deze pagina](../../installation/using/installing-campaign-standard-packages.md)voor meer informatie over standaardpakketten.
+Raadpleeg [deze pagina](../../installation/using/installing-campaign-standard-packages.md)voor meer informatie over ingebouwde pakketten.
 
 ## Aanbevolen werkwijzen voor gegevenspakketten {#data-package-best-practices}
 
