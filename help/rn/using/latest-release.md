@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b2cc71f8f9b7df80b1601a9fa55bfd77f9a82433
+source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1764'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-De **laatste stabiele build** is 9032 (3a9dc9c). Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+De **laatste stabiele build** is Gold Standard 10. Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ![](assets/do-not-localize/cp-icon.png) **Nieuwe release** van het Configuratiescherm in juni met controle van actieve profielen, controle van de leverbaarheid van subdomeinen en beheer van GPG-sleutels. [Meer](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)informatie.
 
