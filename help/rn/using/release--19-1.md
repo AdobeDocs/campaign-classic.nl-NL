@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: d2781c8bc25cde742a89bddc1535886179130c2a
 workflow-type: tm+mt
 source-wordcount: '2934'
 ht-degree: 0%
@@ -83,7 +83,7 @@ _7 juli 2020_
 
 Deze nieuwe build (9032@efd8a94) bevat de volgende oplossing:
 
-* Probleem verholpen waarbij tracering niet werkte toen de medio-souring server bezig was met build 9032 (Gold Standard 7) en de marketingserver op een oudere build (vóór 9032). (NEO-26411)
+* Probleem verholpen waarbij tracering niet werkte toen de server voor midsourcing werd gebruikt bij build 9032 (Gold Standard) en de marketingserver op een oudere build (vóór 9032). (NEO-26411)
 
 >[!CAUTION]
 >
