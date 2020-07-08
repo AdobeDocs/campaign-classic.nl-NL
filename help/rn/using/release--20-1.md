@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6ce00d34ecbdfa6a13593772ffa1850768ad6e45
+source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1407'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-De **laatste stabiele build** is 9032 (3a9dc9c). Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+De **laatste stabiele build** is Gold Standard 10. Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) Release 20.1.3 - build 9124 {#release-20-1-3-build-9124}
 
@@ -70,7 +70,7 @@ _17 februari 2020_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Sneeuwvlok is een volledig beheerd wolkendepot dat is gebouwd om op zowel opslag als compute niveau te schrapen. Met deze nieuwe aansluiting kan Adobe Campaign nu de kracht van Snowflake benutten om Big Data Segmentation uit te voeren. Deze connector is beschikbaar voor alle klanten, ook voor klanten die worden gehost door Adobe.</p>
+   <td> <p>Sneeuwvlok is een volledig beheerde cloud-data warehouse die is ontworpen om zowel op opslagniveau als op computerniveau te worden geschaald. Met deze nieuwe aansluiting kan Adobe Campaign nu de kracht van Snowflake benutten om Big Data Segmentation uit te voeren. Deze connector is beschikbaar voor alle klanten, ook voor klanten die worden gehost door Adobe.</p>
     <p>Raadpleeg voor meer informatie de <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">gedetailleerde documentatie</a> en <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">zelfstudievideo</a>.</p>
    </td> 
   </tr> 
@@ -198,7 +198,7 @@ _17 februari 2020_
 
 * Probleem opgelost waarbij het publiek voor **importeren uit de technische workflow van Adobe Experience Cloud** voortdurend faalde. (NEO-18463)
 
-* Probleem verholpen waarbij leveringen niet konden worden verzonden wanneer sjablonen werden gebruikt die vanuit Experience Manager waren geïmporteerd. (NEO-17540)
+* Probleem verholpen waarbij leveringen niet konden worden verzonden bij gebruik van sjablonen die uit Experience Manager zijn geïmporteerd. (NEO-17540)
 
 * Probleem verholpen dat optrad na de upgrade naar versie 9032 en waardoor de instantie geen verbinding kon maken met de FTP-server via het SSL-protocol. (NEO-20498)
 
