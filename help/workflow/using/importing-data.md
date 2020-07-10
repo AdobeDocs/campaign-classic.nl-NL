@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb35d2ae2d40aaef3bb381675d0c36ffb100b242
+source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
 workflow-type: tm+mt
-source-wordcount: '2420'
+source-wordcount: '2450'
 ht-degree: 0%
 
 ---
@@ -86,12 +86,15 @@ In het onderstaande gebruiksgeval wordt een voorbeeld gegeven.
 
 In dit geval, zullen wij een werkschema bouwen om gegevens in te voeren die in een extern systeem zijn gecodeerd, gebruikend een sleutel die in het Controlebord wordt geproduceerd.
 
+In [deze sectie](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/decrypting-data.html)is ook een zelfstudievideo beschikbaar die laat zien hoe u een GPG-sleutel kunt gebruiken voor het decoderen van gegevens.
+
 De volgende stappen worden uitgevoerd:
 
 1. Gebruik het Configuratiescherm om een sleutelpaar (openbaar/privé) te genereren. Gedetailleerde stappen zijn beschikbaar in de documentatie [van het](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)Configuratiescherm.
 
    * De openbare sleutel zal met het externe systeem worden gedeeld, dat het zal gebruiken om de gegevens te coderen om naar Campagne te verzenden.
    * De persoonlijke sleutel wordt door Campaign Classic gebruikt om de inkomende gecodeerde gegevens te decoderen.
+
    ![](assets/gpg_generate.png)
 
 1. In het externe systeem gebruikt u de openbare sleutel die u van het Configuratiescherm hebt gedownload om de gegevens te coderen die u naar Campaign Classic wilt importeren.
@@ -223,6 +226,7 @@ In dit voorbeeld ziet u hoe u een workflow instelt die opnieuw kan worden gebrui
    * **[!UICONTROL Split]**: Maak filters om records op een andere manier te verwerken, afhankelijk van de vraag of ze met elkaar in overeenstemming kunnen worden gebracht.
    * **[!UICONTROL Deduplication]**: Dupliceer de gegevens uit het binnenkomende bestand voordat deze in de database worden ingevoegd.
    * **[!UICONTROL Update data]**: Werk de database bij met de geïmporteerde profielen.
+
    ![](assets/import_template_example0.png)
 
 1. Configureer de **[!UICONTROL Data Loading (file)]** activiteit:
@@ -244,6 +248,7 @@ In dit voorbeeld ziet u hoe u een workflow instelt die opnieuw kan worden gebrui
 
    * Selecteer op het **[!UICONTROL Enrichment]** **[!UICONTROL Add data]** tabblad een koppeling tussen de geïmporteerde gegevens en de ontvangers voor dimensie. In dit voorbeeld, wordt het de douaneveld van identiteitskaart van **CRM** gebruikt om te creëren toetreedt voorwaarde. Gebruik het veld of de combinatie van velden die u nodig hebt, zolang u unieke records kunt identificeren.
    * Laat op het **[!UICONTROL Reconciliation]** tabblad de **[!UICONTROL Identify the document from the working data]** optie uitgeschakeld.
+
    ![](assets/import_template_example2.png)
 
 1. Configureer de **[!UICONTROL Split]** activiteit om onderling afgestemde ontvangers in één overgang en ontvangers op te halen die niet in overeenstemming konden worden gebracht maar die voldoende gegevens in een tweede overgang hebben.
@@ -284,6 +289,7 @@ In dit voorbeeld ziet u hoe u een workflow instelt die opnieuw kan worden gebrui
 
    * In dit voorbeeld wordt het e-mailveld gebruikt om unieke profielen te zoeken. U kunt elk veld gebruiken waarvan u zeker weet dat het is ingevuld en deel uitmaakt van een unieke combinatie.
    * Selecteer in het **[!UICONTROL Deduplication method]** scherm **[!UICONTROL Advanced parameters]** en controleer de **[!UICONTROL Disable automatic filtering of 0 ID records]** optie om ervoor te zorgen dat records met een primaire sleutel gelijk aan 0 (die alle records van deze overgang moeten zijn) niet worden uitgesloten.
+
    ![](assets/import_template_example7.png)
 
 1. Vorm de **[!UICONTROL Update data]** activiteit die na de eerder gevormde **[!UICONTROL Deduplication]** activiteit wordt gevestigd.
