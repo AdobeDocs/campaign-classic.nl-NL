@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb35d2ae2d40aaef3bb381675d0c36ffb100b242
+source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -104,6 +104,8 @@ Vervolgens kunt u opdrachten of code op het **[!UICONTROL Script]** tabblad van 
 ### Hoofdlettergebruik: Gegevens coderen en exporteren met een sleutel die is geïnstalleerd in het Configuratiescherm {#use-case-gpg-encrypt}
 
 In dit geval, zullen wij een werkschema bouwen om gegevens te coderen en uit te voeren gebruikend een sleutel die op Controlebord wordt geïnstalleerd.
+
+In [deze sectie](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/using-a-gpg-key-to-encrypt-data.html)is ook een zelfstudievideo beschikbaar die laat zien hoe u een GPG-sleutel kunt gebruiken om gegevens te coderen.
 
 De volgende stappen worden uitgevoerd:
 
