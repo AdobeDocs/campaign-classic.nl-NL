@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d2781c8bc25cde742a89bddc1535886179130c2a
+source-git-commit: 77bb2ee42919a1bbf9a1a9e4594505f5cf99ca68
 workflow-type: tm+mt
-source-wordcount: '2934'
+source-wordcount: '2921'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ _7 juli 2020_
 
 Deze nieuwe build (9032@efd8a94) bevat de volgende oplossing:
 
-* Probleem verholpen waarbij tracering niet werkte toen de server voor midsourcing werd gebruikt bij build 9032 (Gold Standard) en de marketingserver op een oudere build (vóór 9032). (NEO-26411)
+* Probleem verholpen waarbij tracering niet werkte toen de handtekeningfunctie was uitgeschakeld. (NEO-26411)
 
 >[!CAUTION]
 >
