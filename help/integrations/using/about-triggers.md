@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -46,11 +46,11 @@ De pijpleiding is een overseinensysteem dat in Experience Cloud wordt ontvangen 
 
 ### Hoe werkt Pipeline? {#how-pipeline-work}
 
-Het &#39;gepipeleerde&#39; proces wordt altijd uitgevoerd op de Adobe Campaign-marketingserver. Het verbindt met de pijpleiding, wint de gebeurtenissen terug, en verwerkt hen onmiddellijk.
+Het [!DNL pipelined] proces wordt altijd uitgevoerd op de Adobe Campaign-marketingserver. Het verbindt met de pijpleiding, wint de gebeurtenissen terug, en verwerkt hen onmiddellijk.
 
 ![](assets/triggers_2.png)
 
-Het gepipetteerde proces meldt zich aan bij de Experience Cloud gebruikend de authentificatiedienst en verzendt een privé sleutel. De verificatieservice retourneert een token. Het token wordt gebruikt voor verificatie bij het ophalen van de gebeurtenissen. [!DNL Triggers] worden teruggewonnen van een REST Webdienst gebruikend een eenvoudig GET verzoek. De reactie is JSON-indeling. De parameters aan het verzoek omvatten de naam van de trekker en een wijzer die op het laatste opgehaalde bericht wijst. Het gepipetteerde proces handelt het automatisch af.
+Het [!DNL pipelined] proces meldt zich aan bij de Experience Cloud gebruikend de authentificatiedienst en verzendt een privé sleutel. De verificatieservice retourneert een token. Het token wordt gebruikt voor verificatie bij het ophalen van de gebeurtenissen. [!DNL Triggers] worden teruggewonnen van een REST Webdienst gebruikend een eenvoudig GET verzoek. De reactie is JSON-indeling. De parameters aan het verzoek omvatten de naam van de trekker en een wijzer die op het laatste opgehaalde bericht wijst. Het [!DNL pipelined] proces handelt het automatisch af.
 
 ## Integratie met Adobe Experience Cloud Triggers gebruiken met Adobe Campaign Classic
 
