@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: 9f55a2014546ce08972f51e4930ce04d4ce0c188
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ Met de **[!UICONTROL Sub-workflow]** activiteit kunt u de uitvoering van een and
 
 U kunt meerdere subworkflows aanroepen in één workflow. Subworkflows worden synchroon uitgevoerd.
 
-In het onderstaande voorbeeld roept een &#39;master&#39;-workflow een subworkflow aan met behulp van sprongen. Zie [deze sectie](../../workflow/using/jump--start-point-and-end-point-.md)voor meer informatie over grafische objecten van het sprongtype.
+In het onderstaande voorbeeld roept een primaire workflow een subworkflow aan met behulp van sprongen. Zie [deze sectie](../../workflow/using/jump--start-point-and-end-point-.md)voor meer informatie over grafische objecten van het sprongtype.
 
 1. Maak een workflow die u als een subworkflow in een andere workflow wilt gebruiken.
-1. Voeg een **[!UICONTROL Jump (end point)]** activiteit met een prioriteit van 1 aan het begin van de werkstroom in. Als u meerdere sprongen van het type &quot;eindpunt&quot; hebt, gebruikt Adobe Campagne de sprong &quot;eindpunt&quot; met het laagste aantal.
-1. Voeg een **[!UICONTROL Jump (start point)]** activiteit in met een prioriteit van 2 aan het einde van de workflow. Als u meerdere sprongen van het type &quot;beginpunt&quot; hebt, gebruikt Adobe Campagne de sprong &quot;beginpunt&quot; met het hoogste aantal.
+1. Voeg een **[!UICONTROL Jump (end point)]** activiteit met een prioriteit van 1 aan het begin van de werkstroom in. Als u meerdere sprongen van het type &quot;eindpunt&quot; hebt, gebruikt Adobe Campaign de sprongen &quot;eindpunt&quot; met het laagste getal.
+1. Voeg een **[!UICONTROL Jump (start point)]** activiteit in met een prioriteit van 2 aan het einde van de workflow. Als u meerdere sprongen van het type &quot;beginpunt&quot; hebt, gebruikt Adobe Campaign de sprong &quot;beginpunt&quot; met het hoogste getal.
 
    ![](assets/subworkflow_jumps.png)
 
@@ -44,7 +44,7 @@ In het onderstaande voorbeeld roept een &#39;master&#39;-workflow een subworkflo
    >De subworkflow kan alleen correct worden uitgevoerd als u slechts één sprongreis van het type &quot;eindpunt&quot; met het laagste getal hebt en slechts één sprongreis van het type &quot;beginpunt&quot; met het hoogste getal.
 
 1. Vul deze subworkflow in en sla deze op.
-1. Een &#39;hoofdworkflow&#39; maken.
+1. Een primaire workflow maken.
 1. Voeg een **[!UICONTROL Sub-workflow]** activiteit in en open deze.
 1. Selecteer de workflow die u wilt gebruiken in de **[!UICONTROL Workflow template]** vervolgkeuzelijst.
 
@@ -57,13 +57,17 @@ In het onderstaande voorbeeld roept een &#39;master&#39;-workflow een subworkflo
 
 1. Voer de workflow uit.
 
-Wanneer de workflow eenmaal is uitgevoerd, bevindt de workflow die als een subworkflow is aangeroepen zich nog steeds in de **[!UICONTROL Being edited]** status. Dit betekent het volgende:
+Na uitvoering blijft de workflow die als een subworkflow werd aangeroepen, in **[!UICONTROL Being edited]** status, wat betekent dat:
 
 * U kunt niet met de rechtermuisknop op de overgangen klikken om het doel weer te geven.
 * Het aantal intermediaire populaties kan niet worden weergegeven.
-* De logbestanden worden samengevoegd in de &quot;master&quot;-workflow en worden alleen aangeduid als &quot;subworkflow&quot;.
+* De logboeken van de subworkflow worden weergegeven in de primaire workflow.
 
-Deze workflow is slechts een sjabloon. Er wordt een nieuwe subworkflow op basis van deze sjabloon gemaakt wanneer deze wordt aangeroepen vanuit de &quot;master&quot;-workflow.
+   ![](assets/subworkflow_logs.png)
+
+>[!NOTE]
+>
+>Als er een fout optreedt in de subworkflow, wordt de primaire workflow gepauzeerd en wordt er een kopie van de subworkflow gemaakt.
 
 ## Invoerparameters (optioneel) {#input-parameters--optional-}
 
