@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 # Pipetcontrole {#pipeline-monitoring}
 
-De webservice voor gepipetteerde status geeft informatie over de status van het gepipetteerde proces.
+De [!DNL pipelined] statuswebservice geeft informatie over de status van het [!DNL pipelined] proces.
 
 U kunt deze functie handmatig openen in een browser of automatisch met een bewakingstoepassing.
 
@@ -50,7 +50,7 @@ Aanbevolen indicatoren voor de bewaking worden gemarkeerd.
    * next-offsets-flush: tijd om tot de volgende partij te wachten, wanneer gebeëindigd.
    * verwerkt-sinds-laatste-flush: aantal triggers verwerkt in de laatste batch.
 * verpletteren
-   * triggers: lijst met opgehaalde triggers. Gevormd in de pijpleiding optie.
+   * triggers: lijst met opgehaalde triggers. In de [!DNL pipelined] optie geconfigureerd.
 * stats
    * average-pointer-flush-time-ms: gemiddelde verwerkingstijd voor één partij triggers.
    * gemiddelde-trigger-processing-time-ms: gemiddelde tijd die wordt doorgebracht het ontleden van de trekkergegevens.
