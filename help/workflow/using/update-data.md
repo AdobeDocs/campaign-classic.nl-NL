@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+workflow-type: tm+mt
+source-wordcount: '845'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +34,7 @@ In het **[!UICONTROL Operation type]** veld kunt u kiezen welk proces wordt uitg
 * **[!UICONTROL Insert or update]**: gegevens toevoegen of bijwerken als deze al zijn toegevoegd.
 * **[!UICONTROL Insert]**: alleen gegevens toevoegen.
 * **[!UICONTROL Update]**: alleen gegevens bijwerken.
-* **[!UICONTROL Update and merge collections]**: gegevens bijwerken en een &quot;hoofdrecord&quot; kiezen, en vervolgens elementen koppelen die zijn gekoppeld aan de duplicaten in deze hoofdrecord. Duplicaten kunnen vervolgens worden verwijderd zonder weeselementen in bijlage te maken.
+* **[!UICONTROL Update and merge collections]**: gegevens bijwerken en een primaire record kiezen, en vervolgens elementen koppelen die zijn gekoppeld aan de duplicaten in deze primaire record. Duplicaten kunnen vervolgens worden verwijderd zonder weeselementen in bijlage te maken.
 * **[!UICONTROL Delete]**: gegevens verwijderen.
 
 ![](assets/s_advuser_update_data_1.png)
@@ -107,7 +110,7 @@ Door gegevens bij te werken en verzamelingen samen te voegen, kunt u de gegevens
 
 1. Selecteer de verzamelingen die u wilt verplaatsen naar de primaire record en de velden die u wilt bijwerken.
 
-   Ga de regels in die op deze van toepassing zijn zodra één of veelvoudige secundaire verslagen worden geïdentificeerd. Hiervoor kunt u de Expression Builder gebruiken. Zie deze [sectie](../../platform/using/defining-filter-conditions.md#building-expressions)voor meer informatie. Bijvoorbeeld door op te geven dat dit de meest recente bijgewerkte waarde is van alle verschillende records die moeten worden bewaard.
+   Ga de regels in die op deze van toepassing zijn zodra één of veelvoudige secundaire verslagen worden geïdentificeerd. Hiervoor kunt u de Expression Builder gebruiken. For more on this, refer to this [section](../../platform/using/defining-filter-conditions.md#building-expressions). Bijvoorbeeld door op te geven dat dit de meest recente bijgewerkte waarde is van alle verschillende records die moeten worden bewaard.
 
    Dan ga de voorwaarden in om met de regel rekening te houden.
 
