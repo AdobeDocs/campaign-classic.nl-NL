@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 Uw versie van Adobe Campaign Classic biedt geen ondersteuning voor de pijpleiding.
 
-1. Controleer of het element met pijplijn aanwezig is in het configuratiebestand. Als dat niet het geval is, betekent dit dat dit niet wordt ondersteund.
+1. Controleer of het [!DNL pipelined] element aanwezig is in het configuratiebestand. Als dat niet het geval is, betekent dit dat dit niet wordt ondersteund.
 1. Upgrade naar versie 6.11 build 8705 of hoger.
 
 **Pipelined failed with &#39;&#39; aurait dmeeste commencer par &#39;[&#39; ou &#39;{&#39; (iRc=16384)&quot;**
@@ -53,7 +53,7 @@ De parameter @authPrivateKey van het instance config-bestand is onjuist.
 1. Controleer of de authPrivateKey: begint met @, eindigt met = en is ongeveer 4000 tekens lang.
 1. Zoek de originele sleutel en controleer of deze: in formaat RSA, 4096 beetjes lang, en begint met —BEGIN RSA PRIVATE KEY—.
    <br> Maak de sleutel zo nodig opnieuw en registreer deze op Adobe Analytics. Zie deze [sectie](../../integrations/using/configuring-pipeline.md#oauth-client-creation).
-1. Controleer of de toets is gecodeerd binnen dezelfde instantie als die voor pijplijnen. <br>Voer zo nodig de codering opnieuw uit met behulp van het voorbeeld JavaScript of de workflow.
+1. Controleer of de sleutel is gecodeerd binnen dezelfde instantie als [!DNL pipelined]. <br>Voer zo nodig de codering opnieuw uit met behulp van het voorbeeld JavaScript of de workflow.
 
 **Pipelined ontbreekt met &quot;kan het teken tijdens authentificatie lezen niet&quot;**
 
@@ -65,12 +65,12 @@ De persoonlijke sleutel heeft een ongeldige indeling.
 
 **Er worden geen triggers opgehaald**
 
-Wanneer het proces met pijplijnen wordt uitgevoerd en er geen triggers worden opgehaald:
+Wanneer het [!DNL pipelined] proces wordt uitgevoerd en er geen triggers worden opgehaald:
 
 1. Controleer of de trigger actief is in Analytics en of deze gebeurtenissen genereert.
-1. Controleer of het proces met pijplijnen actief is.
-1. Zoek naar fouten in het pijpleidende logboek.
-1. Zoek naar fouten in de pijplijnstatuspagina. trigger-discarted, trigger-failure moet nul zijn.
+1. Zorg ervoor dat het [!DNL pipelined] proces wordt uitgevoerd.
+1. Zoek naar fouten in het [!DNL pipelined] logboek.
+1. Zoek naar fouten in de [!DNL pipelined] statuspagina. trigger-discarted, trigger-failure moet nul zijn.
 1. Controleer of de triggernaam in de **[!UICONTROL NmsPipeline_Config]** optie is geconfigureerd. Als er twijfel bestaat, gebruikt u de jokertekenoptie.
 1. Controleer of Analytics een actieve trigger heeft en of deze gebeurtenissen genereert. Er kan een vertraging van een paar uur optreden nadat de configuratie in Analytics is gemaakt voordat deze actief is.
 
@@ -89,9 +89,9 @@ Wanneer de Analytics-tijdstempel veel ouder is dan de aanmaakdatum van de gebeur
 
 Over het algemeen kan het 15 tot 90 minuten duren voordat een marketingcampagne wordt gestart. Dit varieert afhankelijk van de implementatie van gegevensinzameling, lading op de pijpleiding, douaneconfiguratie van de bepaalde trekker, en het werkschema in Adobe Campaign.
 
-1. Controleer of het proces met pijplijnen is uitgevoerd.
+1. Controleer of het [!DNL pipelined] proces actief is geweest.
 1. Zoek naar fouten in pipelined.log die nieuwe pogingen kunnen veroorzaken. Corrigeer de fouten, indien van toepassing.
-1. Controleer de gepipetteerde statuspagina voor de rijgrootte. Als de wachtrij groot is, verbetert u de prestaties van de JS.
+1. Controleer de [!DNL pipelined] statuspagina voor de rijgrootte. Als de wachtrij groot is, verbetert u de prestaties van de JS.
 1. Aangezien een vertraging met volume lijkt te toenemen, configureert u de triggers op Analytics met behulp van minder berichten.
 Bijlagen
 
