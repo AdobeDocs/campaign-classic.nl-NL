@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9957dabca4c63d504a3d06cf527a97b79fee46d5
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 # Pipeline, optie NmsPipeline_Config {#nmspipeline_config}
 
-Zodra de authentificatiewerken, kunnen de pijpleiding de gebeurtenissen terugwinnen en hen verwerken. Het verwerkt slechts trekkers die in Adobe Campaign worden gevormd, die anderen negeren. De trigger moet uit Analytics zijn gegenereerd en vooraf naar de pijpleiding zijn geduwd.
+Zodra de authentificatie werkt, [!DNL pipelined] kan de gebeurtenissen terugwinnen en hen verwerken. Het verwerkt slechts trekkers die in Adobe Campaign worden gevormd, die anderen negeren. De trigger moet uit Analytics zijn gegenereerd en vooraf naar de pijpleiding zijn geduwd.
 De optie kan ook met een vervanging worden gevormd om alle trekkers ongeacht naam te vangen.
 
 De triggers worden geconfigureerd in een optie onder **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. De optienaam is **[!UICONTROL NmsPipeline_Config]**. Het gegevenstype is &#39;lange tekst&#39; in JSON-indeling.
@@ -90,6 +90,6 @@ Controleer of de JSON geldig is met behulp van deze [website](http://jsonlint.co
 
 * &quot;name&quot; is de trigger-id. Met een jokerteken &quot;*&quot; worden alle triggers afgevangen.
 * &quot;Consumer&quot; is een unieke tekenreeks die de instantie van de server uniek identificeert. Dit kan doorgaans de instantienaam zelf zijn. Voor meerdere omgevingen (dev/stage/prod) dient u ervoor te zorgen dat deze uniek zijn voor elk van deze omgevingen, zodat elke instantie een kopie van het bericht krijgt.
-* Pijpleidingen ondersteunen ook het onderwerp &quot;aliassen&quot;.
+* [!DNL Pipelined] ondersteunt ook het onderwerp &#39;&#39;aliassen&#39;&#39;.
 
-Start de pijplijn opnieuw nadat u wijzigingen hebt aangebracht.
+Start opnieuw [!DNL pipelined] nadat u wijzigingen hebt aangebracht.
