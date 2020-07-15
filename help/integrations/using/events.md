@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1145'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ ht-degree: 0%
 
 Pipeline gebruikt een functie JavaScript om elk bericht te verwerken. Deze functie is door de gebruiker gedefinieerd.
 
-Het wordt gevormd in de **[!UICONTROL NmsPipeline_Config]** optie onder het &quot;JSConnector&quot;attribuut. Deze javascript wordt geroepen telkens als een gebeurtenis wordt ontvangen. Het wordt geleid door het pijplijnproces.
+Het wordt gevormd in de **[!UICONTROL NmsPipeline_Config]** optie onder het &quot;JSConnector&quot;attribuut. Deze javascript wordt geroepen telkens als een gebeurtenis wordt ontvangen. Het wordt door het [!DNL pipelined] proces geleid.
 
 Het JS-voorbeeldbestand is cus:triggers.js.
 
 ### JavaScript, functie {#function-js}
 
-De pijpleiding Javascript moet met een specifieke functie beginnen.
+Het [!DNL pipelined] Javascript moet met een specifieke functie beginnen.
 
 Deze functie wordt één keer aangeroepen voor elke gebeurtenis:
 
@@ -51,7 +51,7 @@ Het moet terugkeren zoals
 <undefined/>
 ```
 
-Start opnieuw een pipet nadat u de JS hebt bewerkt.
+Start opnieuw [!DNL pipelined] nadat u de JS hebt bewerkt.
 
 ### Gegevensindeling activeren {#trigger-format}
 
@@ -110,7 +110,7 @@ Voorbeeld:
 
 ### Volgorde van de verwerking van gebeurtenissen {#order-events}
 
-De gebeurtenissen worden één voor één verwerkt, in volgorde van verschuiving. Elke draad van de pijpleiding verwerkt een verschillende verdeling.
+De gebeurtenissen worden één voor één verwerkt, in volgorde van verschuiving. Elke draad van de [!DNL pipelined] processen een verschillende verdeling.
 
 De &quot;verschuiving&quot; van de laatste opgehaalde gebeurtenis wordt opgeslagen in de database. Daarom als het proces wordt tegengehouden, begint het van het laatste bericht opnieuw. Dit gegeven wordt opgeslagen in het ingebouwde schema xtk:pipeOffset.
 
@@ -122,8 +122,8 @@ Er is momenteel geen manier om verschillende wachtrijen te hebben voor afzonderl
 
 ### Logboekregistratie en foutafhandeling {#logging-error-handling}
 
-Logbestanden zoals logInfo() worden naar het gepipetteerde logbestand geleid. Fouten zoals logError() worden naar het gepipetteerde logbestand geschreven en zorgen ervoor dat de gebeurtenis in de wachtrij voor opnieuw proberen wordt geplaatst. Controleer het gepipetteerde log.
-Foutberichten worden verschillende keren opnieuw geprobeerd in de duur die is ingesteld bij de opties voor uitlijnen.
+Logbestanden zoals logInfo() worden naar het [!DNL pipelined] logbestand gestuurd. Fouten zoals logError() worden naar het [!DNL pipelined] logbestand geschreven en zorgen ervoor dat de gebeurtenis in de wachtrij voor opnieuw proberen wordt geplaatst. Controleer het gepipetteerde log.
+Foutberichten worden verschillende keren opnieuw geprobeerd in de duur die in de [!DNL pipelined] opties is ingesteld.
 
 Voor foutopsporing en bewaking worden de volledige triggergegevens naar de triggertabel geschreven. Het bevindt zich in het veld &quot;data&quot; in XML-indeling. U kunt ook een logInfo() met de triggergegevens gebruiken voor hetzelfde doel.
 
