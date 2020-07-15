@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,7 @@ Voer de volgende stappen uit:
 
 ### Registratie van toepassingsnamen in Adobe Campaign Classic {#application-name-registration}
 
-De toepassings-id van de gemaakte Auth-client moet in Adobe Campaign zijn geconfigureerd. U kunt het doen door het instantie config dossier in het pijpleidende element, specifiek de appName attributen uit te geven.
+De toepassings-id van de gemaakte Auth-client moet in Adobe Campaign zijn geconfigureerd. U kunt dit doen door het instantie config-bestand in het [!DNL pipelined] element te bewerken, met name het kenmerk appName.
 
 Voorbeeld:
 
@@ -139,11 +139,11 @@ Voorbeeld:
 
 ### Sleutelversleuteling {#key-encription}
 
-De persoonlijke sleutel moet gecodeerd zijn om via een pijpleiding te kunnen worden gebruikt. De encryptie wordt gedaan gebruikend de cryptString functie Javascript en moet op de zelfde instantie worden uitgevoerd zoals pijpleiding.
+De persoonlijke sleutel moet worden versleuteld om door [!DNL pipelined]te kunnen worden gebruikt. De encryptie wordt gedaan gebruikend de cryptString functie Javascript en moet op de zelfde instantie worden uitgevoerd zoals [!DNL pipelined].
 
 In deze [pagina](../../integrations/using/pipeline-troubleshooting.md)vindt u een voorbeeld van versleuteling met persoonlijke sleutels in JavaScript.
 
-De gecodeerde persoonlijke sleutel moet zijn geregistreerd in Adobe Campaign. U kunt het doen door het instantie config dossier in het pijpleidende element, specifiek het authPrivateKey attribuut uit te geven.
+De gecodeerde persoonlijke sleutel moet zijn geregistreerd in Adobe Campaign. U kunt het doen door het instantie config dossier in het [!DNL pipelined] element, specifiek het authPrivateKey attribuut uit te geven.
 
 Voorbeeld:
 
@@ -153,7 +153,7 @@ Voorbeeld:
 
 ### Automatische start van het pijplijnproces {#pipelined-auto-start}
 
-Het proces via leidingen moet automatisch worden gestart.
+Het [!DNL pipelined] proces moet automatisch worden gestart.
 Om het te doen, plaats het element in het configuratiedossier aan autostart= &quot;waar&quot;:
 
 ```
@@ -174,7 +174,7 @@ De wijzigingen worden pas van kracht als u de toepassing opnieuw start:
 nlserver restart pipelined@instance
 ```
 
-In het geval van fouten, zoek fouten op de standaardoutput (als u manueel begon) of in het pijpleidende logboekdossier. Raadpleeg de sectie Problemen oplossen in dit document voor meer informatie over het oplossen van problemen.
+Als er fouten optreden, zoekt u naar fouten in de standaarduitvoer (als u deze handmatig hebt gestart) of in het [!DNL pipelined] logbestand. Raadpleeg de sectie Problemen oplossen in dit document voor meer informatie over het oplossen van problemen.
 
 ### Opties voor configuratie met pijplijn {#pipelined-configuration-options}
 
@@ -187,7 +187,7 @@ In het geval van fouten, zoek fouten op de standaardoutput (als u manueel begon)
 | findPipelineEndpoint | URL om het eindpunt te ontdekken van de Diensten van de Pijpleiding dat voor deze huurder moet worden gebruikt. Standaard: https://producer-pipeline-pnw.adobe.net |
 | dumpStatePeriodSec | Periode tussen twee dumps van het proces interne staat in var/INSTANCE/pipelined.json Interne staat is ook toegankelijk op bestelling op http://INSTANCE/pipelined/status (haven 7781). |
 | forcePipelineEndpoint | Maak de ontdekking van PipelineServicesEndpoint onbruikbaar en forceer het |
-| monitorServerPort | Tijdens het proces via pijpleidingen wordt er geluisterd naar deze poort om de interne processtatus te verkrijgen op http://INSTANCE/pipelined/status (poort 7781). |
+| monitorServerPort | Het [!DNL pipelined] proces luistert op deze haven om de proces interne staat in http://INSTANCE/pipelined/status (haven 7781) te verstrekken. |
 | pointerFlushMessageCount | Wanneer dit aantal berichten wordt verwerkt, worden de compensaties opgeslagen in het gegevensbestand. Standaard is 1000 |
 | pointerFlushPeriodSec | Na deze periode worden de offsets opgeslagen in de database. Standaard is 5 (sec) |
 | processingJSThreads | Aantal specifieke draden verwerkend berichten met de schakelaars van douaneJS. Standaard is 4 |
