@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campagne classic
 translation-type: tm+mt
-source-git-commit: c38fe4cc442768550ee90cecc6b31b78d39f3da1
+source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
 workflow-type: tm+mt
-source-wordcount: '2122'
+source-wordcount: '2076'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 + [Productdocumentatie](campaign-classic-home.md)
 + [Laatste updates](rn/using/documentation-updates.md)
-+ Opmerkingen bij de release {#release-notes}
++ Release Notes {#release-notes}
    + [Laatste release](rn/using/latest-release.md)
    + Eerdere versies {#previous-releases}
       + [Release 20.1](rn/using/release--20-1.md)
@@ -30,7 +30,7 @@ ht-degree: 0%
 + Aan de slag {#getting-started}
    + Starten met Adobe Campaign {#starting-with-adobe-campaign}
       + [Info over Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
-      + [Privacy en aanbevelingen](platform/using/privacy-and-recommendations.md)
+      + [Privacy en instemming](platform/using/privacy-and-recommendations.md)
       + [Adobe Campaign starten](platform/using/launching-adobe-campaign.md)
       + [Adobe Campaign-werkruimte](platform/using/adobe-campaign-workspace.md)
       + Veelgestelde vragen {#faq}
@@ -72,7 +72,7 @@ ht-degree: 0%
       + [Externe rekeningen](platform/using/external-accounts.md)
    + Toegang tot een externe database (FDA){#accessing-external-database}
       + [FDA](platform/using/about-fda.md)
-      + [Specifieke configuraties per databasetype](platform/using/specific-configuration-database.md)
+      + [FDA-connectors configureren](platform/using/specific-configuration-database.md)
       + [Verouderde connectors](platform/using/legacy-connectors.md)
       + [Toegangsrechten externe database](platform/using/remote-database-access-rights.md)
       + [Verbinding maken met de database](platform/using/connecting-to-database.md)
@@ -300,29 +300,29 @@ ht-degree: 0%
       + [Soorten publiek importeren en exporteren](integrations/using/importing-and-exporting-audiences.md)
    + Elementen delen {#asset-sharing}
       + [Elementen delen met [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
-      + [Toegang tot [!DNL Assets] configureren](integrations/using/configuring-access-to-assets.md)
+      + [Toegang configureren tot [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
       + [Gedeeld element invoegen](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Info [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Integratie configureren](integrations/using/configuring-the-integration.md)
-      + [Een [!DNL Experience Manager]-nieuwsbrief maken](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Een [!DNL Experience Manager] nieuwsbrief maken](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Integreren met [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [De integratie configureren met [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Een dynamische afbeelding invoegen](integrations/using/inserting-a-dynamic-image.md)
    + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
       + [Info [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
-      + [[!DNL IMS] configureren](integrations/using/configuring-ims.md)
-      + [[!DNL IMS] implementeren](integrations/using/implementing-ims.md)
+      + [Configureren [!DNL IMS]](integrations/using/configuring-ims.md)
+      + [Implementatie [!DNL IMS]](integrations/using/implementing-ims.md)
       + [IMS-problemen oplossen](integrations/using/ims-troubleshooting.md)
    + ACS-connector {#acs-connector}
       + [[!DNL ACS Connector] beginselen en gegevenscyclus](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Profielen synchroniseren](integrations/using/synchronizing-profiles.md)
       + [Synchroniseren van publiek](integrations/using/synchronizing-audiences.md)
       + [Webtoepassingen synchroniseren](integrations/using/synchronizing-web-applications.md)
-      + [Problemen met de [!DNL ACS Connector] oplossen](integrations/using/troubleshooting-the-acs-connector.md)
+      + [Problemen met de [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
    + Experience Cloud Triggers {#experience-triggers}
-      + [Info over [!DNL Adobe Experience Cloud-triggers]](integrations/using/about-triggers.md)
+      + [Info [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Gasleiding configureren](integrations/using/configuring-pipeline.md)
       + [Pipeline, optie NmsPipeline_Config](integrations/using/nmspipeline-config.md)
       + [Triggergebeurtenissen](integrations/using/events.md)
@@ -605,7 +605,7 @@ ht-degree: 0%
       + [Een instantie implementeren](installation/using/deploying-an-instance.md)
       + [Campaign Classic-standaardpakketten installeren](installation/using/installing-campaign-standard-packages.md)
    + Aanvullende configuraties {#additional-configurations}
-      + [Campagneserver configureren](installation/using/configuring-campaign-server.md)
+      + [Campaign-server configureren](installation/using/configuring-campaign-server.md)
       + [Verbinding maken via LDAP](installation/using/connecting-through-ldap.md)
       + [Technische e-mailconfiguraties](installation/using/email-deliverability.md)
       + [E-mailarchivering](installation/using/email-archiving.md)
