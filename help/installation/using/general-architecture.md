@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+workflow-type: tm+mt
+source-wordcount: '1337'
+ht-degree: 0%
 
 ---
 
 
 # Algemene architectuur{#general-architecture}
 
-De gebruikelijke implementatie van de Adobe Campaign-oplossing bestaat uit de volgende onderdelen:
+De gebruikelijke Adobe Campaign-implementatie van oplossingen bestaat uit de volgende onderdelen:
 
 * **Persoonlijke clientomgeving**
 
@@ -34,9 +37,9 @@ De gebruikelijke implementatie van de Adobe Campaign-oplossing bestaat uit de vo
 
 * **Databasecontainers**
 
-   Op basis van relationele databasetechnologie slaat de Adobe Campagne-database alle klantgegevens, campagnecomponenten, aanbiedingen en workflows op, evenals de resultaten van de campagne in de databasecontainers van de klant.
+   Gebaseerd op relationele gegevensbestandtechnologie, slaat het gegevensbestand van Adobe Campaign alle klanteninformatie, campagnecomponenten, aanbiedingen en werkschema&#39;s, evenals campagneresultaten in de containers van het klantengegevensbestand op.
 
-De Campagne van Adobe is gebaseerd op een dienst-georiënteerde architectuur (SOA) en omvat verscheidene functionele modules. Deze modules kunnen op één of meerdere computers, in enige of veelvoudige instanties, afhankelijk van beperkingen in termen van scalability, beschikbaarheid en de dienstisolatie worden opgesteld. Het werkingsgebied van plaatsingsconfiguraties is daarom zeer breed, en overspant één enkele, centrale computer door aan configuraties met inbegrip van veelvoudige specifieke servers over veelvoudige plaatsen.
+Adobe Campaign is gebaseerd op een servicegerichte architectuur (SOA) en bestaat uit verschillende functionele modules. Deze modules kunnen op één of meerdere computers, in enige of veelvoudige instanties, afhankelijk van beperkingen in termen van scalability, beschikbaarheid en de dienstisolatie worden opgesteld. Het werkingsgebied van plaatsingsconfiguraties is daarom zeer breed, en overspant één enkele, centrale computer door aan configuraties met inbegrip van veelvoudige specifieke servers over veelvoudige plaatsen.
 
 >[!NOTE]
 >
@@ -46,27 +49,27 @@ De Campagne van Adobe is gebaseerd op een dienst-georiënteerde architectuur (SO
 
 >[!CAUTION]
 >
->Tenzij uitdrukkelijk anders vermeld, vallen de installatie, updates en onderhoud op alle componenten van een Adobe Campagneplatform onder de verantwoordelijkheid van de systeembeheerder(s) die de componenten host. Dit omvat het implementeren van de voorwaarden voor Adobe Campagne-toepassingen en het naleven van de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) tussen componenten.
+>Indien niet uitdrukkelijk anders vermeld, vallen de installatie, updates en het onderhoud op alle componenten van een Adobe Campaign-platform onder de verantwoordelijkheid van de systeembeheerder(s) die deze host(s). Dit omvat het implementeren van de voorwaarden voor Adobe Campaign-toepassingen en het naleven van de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) tussen componenten.
 
 ## Presentatielaag {#presentation-layer}
 
 De toepassing kan op verschillende manieren worden benaderd, afhankelijk van de behoeften van de gebruikers: Rich client-, thin client- of API-integratie.
 
-* **Rijke client**: De hoofdgebruikersinterface van de toepassing is een rijke client, met andere woorden een native toepassing (Windows) die alleen communiceert met de Adobe Campagne-toepassingsserver met standaard internetprotocollen (SOAP, HTTP, enzovoort). Deze console biedt grote gebruiksvriendelijkheid voor productiviteit, gebruikt zeer weinig bandbreedte (door het gebruik van een lokale cache) en is ontworpen voor eenvoudige implementatie. Deze console kan vanuit een internetbrowser worden geïmplementeerd, kan automatisch worden bijgewerkt en vereist geen specifieke netwerkconfiguratie omdat alleen HTTP(S)-verkeer wordt gegenereerd.
-* **Dunne client**: Bepaalde delen van de toepassing kunnen via eenvoudige browser van het Web worden betreden gebruikend een HTML- gebruikersinterface, met inbegrip van de rapporteringsmodule, de stadia van de leveringsgoedkeuring, functionaliteit van de Verdeelde module van de Marketing (centraal/lokaal), instantie controle, enz. In deze modus kunt u de functionaliteit van Adobe Campagne opnemen in een intranet of extranet.
+* **Rijke client**: De hoofdgebruikersinterface van de toepassing is een rijke client, met andere woorden een native toepassing (Windows) die alleen communiceert met de Adobe Campaign-toepassingsserver met standaard internetprotocollen (SOAP, HTTP, enzovoort). Deze console biedt grote gebruiksvriendelijkheid voor productiviteit, gebruikt zeer weinig bandbreedte (door het gebruik van een lokale cache) en is ontworpen voor eenvoudige implementatie. Deze console kan vanuit een internetbrowser worden geïmplementeerd, kan automatisch worden bijgewerkt en vereist geen specifieke netwerkconfiguratie omdat alleen HTTP(S)-verkeer wordt gegenereerd.
+* **Dunne client**: Bepaalde delen van de toepassing kunnen via eenvoudige browser van het Web worden betreden gebruikend een HTML- gebruikersinterface, met inbegrip van de rapporteringsmodule, de stadia van de leveringsgoedkeuring, functionaliteit van de Verdeelde module van de Marketing (centraal/lokaal), instantie controle, enz. Met deze modus kunt u Adobe Campaign-functies opnemen in een intranet of extranet.
 * **Integratie via de API**&#39;s: In bepaalde gevallen, kan het systeem van externe toepassing worden geroepen gebruikend de Diensten APIs van het Web die via het protocol van de ZEEP worden blootgesteld.
 
 ## Logische toepassingslaag {#logical-application-layer}
 
-Adobe Campaign is één platform met verschillende toepassingen die in combinatie een open en schaalbare architectuur creëren. Het Adobe Campaign-platform is geschreven op een flexibele toepassingslaag en kan eenvoudig worden geconfigureerd om aan de zakelijke behoeften van een bedrijf te voldoen. Dit beantwoordt aan de groeiende behoeften van de onderneming vanuit zowel functioneel als technisch oogpunt. De verdeelde architectuur verzekert lineaire systeemscalability die van duizenden berichten aan miljoenen berichten schrapt.
+Adobe Campaign is één platform met verschillende toepassingen die combineren tot het maken van een open en schaalbare architectuur. Het platform van Adobe Campaign wordt geschreven op een flexibele toepassingslaag en is gemakkelijk configureerbaar om aan de bedrijfsbehoeften van een bedrijf te voldoen. Dit beantwoordt aan de groeiende behoeften van de onderneming vanuit zowel functioneel als technisch oogpunt. De verdeelde architectuur verzekert lineaire systeemscalability die van duizenden berichten aan miljoenen berichten schrapt.
 
-Adobe Campagne is afhankelijk van een reeks server-side processen die samenwerken.
+Adobe Campaign vertrouwt op een reeks server-zijprocessen die samenwerken.
 
 De belangrijkste processen zijn:
 
 **Toepassingsserver** (extern web)
 
-Dit proces stelt het volledige gamma van de functionaliteit van de Campagne van Adobe via de APIs van de Diensten van het Web (ZEEP - HTTP + XML) bloot. Bovendien kan het de Web-pagina&#39;s dynamisch produceren die voor op HTML-Gebaseerde toegang (rapporten, de vormen van het Web, enz.) worden gebruikt. Hiertoe bevat dit proces een Apache Tomcat JSP-server. Dit is het proces waaraan de console verbindt.
+Dit proces stelt de volledige waaier van de functionaliteit van Adobe Campaign via de APIs van de Diensten van het Web (ZEEP - HTTP + XML) bloot. Bovendien kan het de Web-pagina&#39;s dynamisch produceren die voor op HTML-Gebaseerde toegang (rapporten, de vormen van het Web, enz.) worden gebruikt. Hiertoe bevat dit proces een Apache Tomcat JSP-server. Dit is het proces waaraan de console verbindt.
 
 **Workflow-engine** (nlserver wfserver)
 
@@ -80,13 +83,13 @@ Het behandelt ook periodiek uitgevoerde technische werkschema&#39;s, die omvatte
 
 **Leveringsserver** (nlserver mta)
 
-Adobe Campaign beschikt over de native functionaliteit voor e-mailuitzending. Dit proces functioneert als SMTP agent van de postoverdracht (MTA). Het voert &quot;één-op-één&quot;verpersoonlijking van berichten uit en behandelt hun fysieke levering. Het werkt met leveringstaken en handelt automatische pogingen af. Wanneer reeksspatiëring is ingeschakeld, worden de URL&#39;s automatisch vervangen, zodat ze naar de omleidingsserver verwijzen.
+Adobe Campaign heeft native functionaliteit voor e-mailuitzending. Dit proces functioneert als SMTP agent van de postoverdracht (MTA). Het voert &quot;één-op-één&quot;verpersoonlijking van berichten uit en behandelt hun fysieke levering. Het werkt met leveringstaken en handelt automatische pogingen af. Wanneer reeksspatiëring is ingeschakeld, worden de URL&#39;s automatisch vervangen, zodat ze naar de omleidingsserver verwijzen.
 
 Dit proces kan de aanpassing en het automatische verzenden naar een derderouter voor SMS, fax en directe post behandelen.
 
 **Redirection server** (nlserver webmdl)
 
-Voor e-mail, behandelt de Campagne van Adobe automatisch open en klikt het volgen (transactie het volgen op het niveau van de Website is een verdere mogelijkheid). Hiertoe worden de URL&#39;s die in de e-mailberichten zijn opgenomen, herschreven zodat ze naar deze module verwijzen. Deze module registreert het doorgeven van de internetgebruiker voordat deze naar de vereiste URL wordt doorgestuurd.
+Voor e-mail, behandelt Adobe Campaign automatisch open en klikt het volgen (transactie het volgen op het niveau van de Website is een verdere mogelijkheid). Hiertoe worden de URL&#39;s die in de e-mailberichten zijn opgenomen, herschreven zodat ze naar deze module verwijzen. Deze module registreert het doorgeven van de internetgebruiker voordat deze naar de vereiste URL wordt doorgestuurd.
 
 Om de hoogste beschikbaarheid te garanderen, is dit proces volledig onafhankelijk van het gegevensbestand: de andere serverprocessen communiceren ermee met behulp van alleen SOAP-aanroepen (HTTP, HTTP(S) en XML). Technisch, wordt deze functionaliteit uitgevoerd in een uitbreidingsmodule van een server van HTTP (ISAPI uitbreiding in IIS, of een module van DSO Apache, enz.) en is alleen beschikbaar in Windows.
 
@@ -116,7 +119,7 @@ Dit proces verzekert de opname aan de schijf van binnenkomende gebeurtenissen, b
 
 **Controlemodules** (nlserver watchdog)
 
-Dit technische proces fungeert als een hoofdproces dat de anderen voortbrengt. Het bewaakt ze ook en start ze automatisch opnieuw in geval van incidenten, zodat het systeem maximaal uptime kan blijven.
+Dit technische proces fungeert als een primair proces dat de anderen voortbrengt. Het bewaakt ze ook en start ze automatisch opnieuw in geval van incidenten, zodat het systeem maximaal uptime kan blijven.
 
 **Statistische server** (nlserver stat)
 
@@ -124,12 +127,12 @@ Dit proces handhaaft statistieken over het aantal verbindingen, de berichten die
 
 >[!NOTE]
 >
->De volledige lijst met Adobe Campagnemodules is beschikbaar in [dit document](../../production/using/operating-principle.md).
+>De volledige lijst met Adobe Campaign-modules is beschikbaar in [dit document](../../production/using/operating-principle.md).
 
 ## Persistentielaag {#persistence-layer}
 
-De database wordt gebruikt als een persistentielaag en bevat bijna alle informatie die wordt beheerd door Adobe Campaign. Dit omvat zowel functionele gegevens (profielen, abonnementen, inhoud, enz.), technische gegevens (leveringstaken en logbestanden, trackinglogbestanden, enz.) en werkgegevens (aankopen, leads).
+De database wordt gebruikt als een persistentielaag en bevat bijna alle informatie die door Adobe Campaign wordt beheerd. Dit omvat zowel functionele gegevens (profielen, abonnementen, inhoud, enz.), technische gegevens (leveringstaken en logbestanden, trackinglogbestanden, enz.) en werkgegevens (aankopen, leads).
 
-De betrouwbaarheid van de database is van het grootste belang omdat de meeste componenten van Adobe Campagne toegang tot de database vereisen om hun taken uit te voeren (met uitzondering van de omleidingsmodule).
+De betrouwbaarheid van de database is van het grootste belang omdat de meeste Adobe Campaign-componenten toegang tot de database vereisen om hun taken uit te voeren (met uitzondering van de omleidingsmodule).
 
-Het platform wordt vooraf gedefinieerd met een marketing gecentreerde datamarkt of kan gemakkelijk op een bestaande gegevensmarkt en een schema plaatsen gebruikend om het even welk van de belangrijkste Relationele Systemen van het Beheer van het Gegevensbestand (RDBMS). Alle gegevens in de datamarkt worden benaderd door het Adobe Campaign-platform via SQL-aanroepen van Adobe Campaign naar de database. Adobe Campaign beschikt ook over een volledig pakket met de ETL-gereedschappen (Extract Transform and Load) waarmee u gegevens kunt importeren en exporteren naar en uit het systeem.
+Het platform wordt vooraf gedefinieerd met een marketing gecentreerde datamarkt of kan gemakkelijk op een bestaande gegevensmarkt en een schema plaatsen gebruikend om het even welk van de belangrijkste Relationele Systemen van het Beheer van het Gegevensbestand (RDBMS). Alle gegevens binnen de datamarkt zijn toegankelijk voor het Adobe Campaign-platform via SQL-aanroepen van Adobe Campaign naar de database. Adobe Campaign biedt ook een volledige aanvulling op de ETL-gereedschappen (Extract Transform and Load) voor het importeren en exporteren van gegevens naar en vanuit het systeem.
