@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 567cae1b91efbcd04a041630eeeb446450e002f7
+source-git-commit: 2140468e52d78a91fc4128e9187d927f08e2f0ee
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 0%
+source-wordcount: '149'
+ht-degree: 2%
 
 ---
 
@@ -32,11 +32,11 @@ Campagnegebruikers kunnen verbinding maken met de Adobe Campaign-console via hun
 * Beveiligd beleid voor wachtwoordbeheer.
 * Gebruik van Federated ID-accounts (externe ID-provider).
 
-Met het identiteitsbeheersysteem van Adobe kunnen beheerders de toegang van gebruikers tot toepassingen en services maken en beheren. Raadpleeg [deze pagina](https://helpx.adobe.com/enterprise/using/identity.html)voor meer informatie over de verschillende typen Adobe-id&#39;s.
+Met Adobe IMS (Identity Management System) kunnen beheerders de toegang van gebruikers tot toepassingen en services maken en beheren. Raadpleeg [deze pagina](https://helpx.adobe.com/enterprise/using/identity.html)voor meer informatie over de verschillende typen Adobe-id&#39;s.
 
 >[!IMPORTANT]
 >
->De IMS-implementatie is strikt voorbehouden aan de technische beheerders van Adobe. De implementatie van de IMS is een complex proces dat lang kan duren.
+>De implementatie van Adobe IMS is uitsluitend voorbehouden aan de technische beheerders van Adobe. Neem contact op met uw Adobe-medewerker om het implementatieproces te starten.
 
 ## Verwante onderwerpen
 
@@ -45,4 +45,3 @@ Met het identiteitsbeheersysteem van Adobe kunnen beheerders de toegang van gebr
 | [IMS configureren](../../integrations/using/configuring-ims.md) | [Veelgestelde vragen over Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) |
 | [IMS implementeren](../../integrations/using/implementing-ims.md) | [Toegangsbeheer](../../platform/using/access-management.md) |
 | [IMS-probleemoplossing](../../integrations/using/ims-troubleshooting.md) | [Campagnepakketten installeren](../../installation/using/installing-campaign-standard-packages.md) |
-
