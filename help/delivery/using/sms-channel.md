@@ -15,21 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3bf835b3f686d1293fda7e6254660c477ba26452
+source-git-commit: 2f0bb31f7234289f39a561fa58a23cac0390b465
 workflow-type: tm+mt
-source-wordcount: '3152'
-ht-degree: 0%
+source-wordcount: '3151'
+ht-degree: 1%
 
 ---
 
 
 # SMS-kanaal{#sms-channel}
 
-Met Adobe Campaign kunt u op grote schaal gepersonaliseerde sms-berichten afleveren. De ontvangende profielen moeten ten minste een mobiel telefoonnummer bevatten.
+Met Adobe Campaign kunt u op grote schaal gepersonaliseerde leveringen van SMS-berichten uitvoeren. De ontvangende profielen moeten ten minste een mobiel telefoonnummer bevatten.
 
 >[!NOTE]
 >
->Met Adobe Campaign kunt u ook meldingen verzenden op mobiele terminals via de optie **Adobe Campagne Mobile App Channel (NMAC)** .
+>Met Adobe Campaign kunt u ook berichten verzenden op mobiele terminals via de optie **Adobe Campaign Mobile App Channel (NMAC)** .
 > 
 >Raadpleeg voor meer informatie de sectie [Over het kanaal](../../delivery/using/about-mobile-app-channel.md) van de mobiele app.
 
@@ -41,7 +41,7 @@ Als u naar een mobiele telefoon wilt verzenden, hebt u het volgende nodig:
 
 1. Een externe account die een connector en type bericht opgeeft.
 
-   Merk op dat de volgende schakelaars vanaf versie 20.2 zullen worden afgekeurd: NetSize, Generic SMPP (SMPP versie 3.4 die binaire wijze steunt), Sybase365 (SAP SMS 365), CLX Mededelingen, Tele2, O2 en iOS. Verouderde mogelijkheden zijn nog steeds beschikbaar, maar deze worden niet verder verbeterd en worden niet ondersteund. Raadpleeg deze [pagina](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)voor meer informatie.
+   Merk op dat de volgende schakelaars vanaf versie 20.2 zullen worden afgekeurd: NetSize, Generic SMPP (SMPP versie 3.4 die binaire wijze steunt), Sybase365 (SAP SMS 365), CLX Mededelingen, Tele2, O2 en iOS. Verouderde mogelijkheden zijn nog steeds beschikbaar, maar deze worden niet verder verbeterd en worden niet ondersteund. For more on this, refer to this [page](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html).
 
 1. Een leveringssjabloon waarin naar deze externe account wordt verwezen.
 
@@ -64,7 +64,7 @@ Hiervoor voert u de volgende stappen uit:
 
    >[!CAUTION]
    >
-   > Vanaf versie 20.2 worden oudere connectors vervangen en niet ondersteund. Wij adviseren gebruikend de **[!UICONTROL Extended generic SMPP]** schakelaar. Raadpleeg deze [pagina](https://helpx.adobe.com/campaign/kb/sms-connector.html)voor meer informatie over het migreren naar de aanbevolen connector.
+   > Vanaf versie 20.2 zijn verouderde connectors vervangen en niet ondersteund. Wij adviseren gebruikend de **[!UICONTROL Extended generic SMPP]** schakelaar. Raadpleeg deze [pagina](https://helpx.adobe.com/campaign/kb/sms-connector.html)voor meer informatie over het migreren naar de aanbevolen connector.
 
 1. De **[!UICONTROL Enable verbose SMPP traces in the log file]** optie staat u toe om al verkeer SMPP in logboekdossiers te dumpen. Deze optie moet worden toegelaten om de schakelaar problemen op te lossen en met het verkeer te vergelijken dat door de leverancier wordt gezien.
 
@@ -88,7 +88,7 @@ Hiervoor voert u de volgende stappen uit:
 
    ![](assets/extended_smpp_transliteration.png)
 
-   For more on this, refer to [this section](#about-character-transliteration).
+   Raadpleeg [deze sectie](#about-character-transliteration) voor meer informatie.
 
 1. Op het **[!UICONTROL Throughput and delays]** lusje, kunt u de maximumproductie van uitgaande berichten (&quot;MT&quot;, Mobiel geëindigd) in MT per seconde specificeren. Als u &quot;0&quot;op het overeenkomstige gebied ingaat, zal de productie onbeperkt zijn.
 
@@ -96,7 +96,7 @@ Hiervoor voert u de volgende stappen uit:
 
 1. Op het **[!UICONTROL Mapping of encodings]** tabblad kunt u coderingen definiëren.
 
-   For more on this, refer to [this section](#about-text-encodings).
+   Raadpleeg [deze sectie](#about-text-encodings) voor meer informatie.
 
 1. Op het **[!UICONTROL SMSC specificities]** tabblad is de **[!UICONTROL Send full phone number]** optie standaard uitgeschakeld. Laat het niet toe als u het protocol wilt respecteren SMPP en slechts cijfers naar de server van de leverancier van SMS (SMSC) overbrengen.
 
@@ -106,7 +106,7 @@ Hiervoor voert u de volgende stappen uit:
 
 1. Als u een **[!UICONTROL Extended generic SMPP]** schakelaar vormt, kunt u opstelling automatische antwoorden.
 
-   For more on this, refer to [this section](#automatic-reply).
+   Raadpleeg [deze sectie](#automatic-reply) voor meer informatie.
 
 ### Informatie over tekentransliteratie {#about-character-transliteration}
 
@@ -308,13 +308,13 @@ CR: Enter
 
 ### Informatie over tekstcoderingen {#about-text-encodings}
 
-Wanneer u een SMS-bericht verzendt, kan Adobe Campaign een of meer tekstcoderingen gebruiken. Elke codering heeft een eigen specifieke tekenset en bepaalt het aantal tekens dat in een SMS-bericht past.
+Bij het verzenden van een SMS-bericht kan Adobe Campaign een of meer tekstcoderingen gebruiken. Elke codering heeft een eigen specifieke tekenset en bepaalt het aantal tekens dat in een SMS-bericht past.
 
 Wanneer u een nieuwe externe account voor levering via SMPP voor mobiele apparaten configureert, kunt u deze account definiëren **[!UICONTROL Mapping of encodings]** op het **[!UICONTROL Mobile]** tabblad: in het **[!UICONTROL data_coding]** veld kan Adobe Campaign meedelen welke codering wordt gebruikt voor het SMSC.
 
 >[!NOTE]
 >
->De toewijzing tussen de werkelijk gebruikte **data_coding** -waarde en de codering wordt gestandaardiseerd. Bepaalde SMSC&#39;s hebben echter hun eigen specifieke kaart: in dit geval moet uw **Adobe Campagnebeheerder** deze toewijzing declareren. Vraag uw provider om meer informatie.
+>De toewijzing tussen de werkelijk gebruikte **data_coding** -waarde en de codering wordt gestandaardiseerd. Bepaalde SMSC&#39;s hebben echter hun eigen specifieke kaart: in dit geval moet uw **Adobe Campaign** -beheerder deze toewijzing declareren. Vraag uw provider om meer informatie.
 
 U kunt **data_codings** verklaren en het coderen dwingen indien nodig: Hiervoor geeft u één codering in de tabel op.
 
@@ -323,7 +323,7 @@ U kunt **data_codings** verklaren en het coderen dwingen indien nodig: Hiervoor 
    * Er wordt geprobeerd GSM-codering te gebruiken waaraan de waarde **data_coding = 0** wordt toegewezen.
    * Als GSM-codering mislukt, wordt **UCS2** -codering gebruikt waaraan de waarde **data_coding = 8** wordt toegewezen.
 
-* Wanneer u de coderingen definieert die u wilt gebruiken en de gekoppelde **[!UICONTROL data_coding]** veldwaarden, probeert Adobe Campagne de eerste codering in de lijst te gebruiken. Als de eerste codering niet mogelijk blijkt, volgt u de volgende code.
+* Wanneer u de coderingen definieert die u wilt gebruiken en de gekoppelde **[!UICONTROL data_coding]** veldwaarden, probeert Adobe Campaign de eerste codering in de lijst te gebruiken, gevolgd door de volgende codering als de eerste codering onmogelijk blijkt.
 
 >[!IMPORTANT]
 >
@@ -335,7 +335,7 @@ U kunt **data_codings** verklaren en het coderen dwingen indien nodig: Hiervoor 
 
 Wanneer vestiging een uitgebreide generische schakelaar SMPP, kunt u automatische antwoorden vormen.
 
-Wanneer een abonnee op een SMS-bericht reageert dat via Adobe Campaign naar hem is verzonden en zijn bericht een trefwoord zoals &quot;STOP&quot; bevat, kunt u berichten configureren die automatisch naar hem worden teruggestuurd in de **[!UICONTROL Automatic reply sent to the MO]** sectie.
+Wanneer een abonnee op een SMS-bericht reageert dat via Adobe Campaign naar hem is verzonden en zijn bericht een trefwoord bevat zoals &quot;STOP&quot;, kunt u berichten configureren die automatisch naar hem worden teruggestuurd in de **[!UICONTROL Automatic reply sent to the MO]** sectie.
 
 >[!NOTE]
 >
@@ -367,7 +367,7 @@ De stappen voor vestiging een externe rekening gebruikend de Uitgebreide generis
 
 ### De leveringssjabloon wijzigen {#changing-the-delivery-template}
 
-Adobe Campaign biedt u een sjabloon voor levering aan mobiele apparaten. Deze sjabloon is beschikbaar in het **[!UICONTROL Resources > Templates > Delivery templates]** knooppunt. Raadpleeg de sectie [Over sjablonen](../../delivery/using/about-templates.md) voor meer informatie.
+Adobe Campaign biedt u een sjabloon voor levering aan mobiele apparaten. Deze sjabloon is beschikbaar in het **[!UICONTROL Resources > Templates > Delivery templates]** knooppunt. For more on this, refer to the [About templates](../../delivery/using/about-templates.md) section.
 
 Om via het kanaal van SMS te leveren, moet u een malplaatje tot stand brengen waarin de kanaalschakelaar van verwijzingen wordt voorzien.
 
@@ -410,7 +410,7 @@ Volg onderstaande stappen om een nieuwe SMS-levering te maken:
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. Identificeer uw levering met een etiket, code, en beschrijving. For more on this, refer to [this section](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Identificeer uw levering met een etiket, code, en beschrijving. Raadpleeg [deze sectie](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery) voor meer informatie.
 1. Klik **[!UICONTROL Continue]** om deze informatie te bevestigen en het venster van de berichtconfiguratie te tonen.
 
 ## De SMS-inhoud definiëren {#defining-the-sms-content}
@@ -443,7 +443,7 @@ Voer de volgende stappen uit om de inhoud van het SMS te maken:
    >
    >Wanneer u de analyse start, wordt de lengte van berichten gecontroleerd en wordt een waarschuwing weergegeven in geval van overloop.
 
-1. Als u de schakelaar NetSize of een schakelaar SMPP gebruikt, kunt u de naam van de leveringsafzender personaliseren. Raadpleeg voor meer informatie de sectie [Geavanceerde parameters](#advanced-parameters) .
+1. Als u de schakelaar NetSize of een schakelaar SMPP gebruikt, kunt u de naam van de leveringsafzender personaliseren. For more on this, refer to the [Advanced parameters](#advanced-parameters) section.
 
 ## De doelpopulatie selecteren {#selecting-the-target-population}
 
@@ -504,7 +504,7 @@ Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Ra
 
 ## Binnenkomende berichten verwerken {#processing-inbound-messages}
 
-De **nlserver sms** module vraagt de router van SMS met regelmatige intervallen. Hierdoor kan Adobe Campaign de voortgang van de leveringen volgen en de statusrapporten en aanvragen voor abonnementen bij ontvangers afhandelen.
+De **nlserver sms** module vraagt de router van SMS met regelmatige intervallen. Op deze manier kan Adobe Campaign de voortgang van de leveringen volgen en de statusrapporten en aanvragen voor abonnementen bij ontvangers afhandelen.
 
 * **Statusrapporten**: Bekijk leveringslogboeken om de status van uw berichten te controleren.
 
@@ -527,8 +527,8 @@ Het InSMS-schema bevat relevante informatie over inkomende SMS. Een beschrijving
 * **bericht**: inhoud van het ontvangen SMS.
 * **oorsprong**: mobiel nummer bij de oorsprong van het bericht.
 * **providerId**: Identificatiecode van het door het SMSC geretourneerde bericht (berichtcentrum).
-* **gemaakt**: de datum waarop het inkomende bericht in de Campagne van Adobe werd opgenomen.
-* **TextAccount**: Externe account voor Adobe Campaign.
+* **gemaakt**: datum waarop het inkomende bericht in Adobe Campaign is ingevoegd.
+* **TextAccount**: Adobe Campaign externe account.
 
    >[!IMPORTANT]
    >
@@ -544,11 +544,11 @@ Het InSMS-schema bevat relevante informatie over inkomende SMS. Een beschrijving
 * **largeAccount**: de code van de klantenrekening verbonden aan inkomende SMS.
 * **countryCode**: de landcode van de exploitant.
 * **operatorCode**: netcode van de exploitant.
-* **linkedSmsId**: Adobe Campagne-id (broadlogId) gekoppeld aan uitgaande SMS, waar dit SMS het antwoord is.
+* **linkedSmsId**: Adobe Campaign-id (broadlogId) gekoppeld aan uitgaande SMS, waarbij dit SMS het antwoord is.
 
 ## Automatische antwoorden beheren (Amerikaanse verordening) {#managing-automatic-replies--american-regulation-}
 
-Wanneer abonnees op een SMS-bericht reageren dat via Adobe Campaign naar hen is verzonden, en zij gebruiken een trefwoord zoals STOP, HELP of YES, is het in de VS-markt nodig om berichten te configureren die automatisch worden geretourneerd.
+Wanneer de abonnees op een bericht van SMS antwoorden dat werd verzonden naar hen via Adobe Campaign, en zij gebruiken een sleutelwoord zoals STOP, HELP, of JA, is het noodzakelijk, op de markt van de V.S., om berichten te vormen die automatisch zijn teruggekeerd.
 
 Als ontvangers bijvoorbeeld het trefwoord STOP verzenden, ontvangen ze automatisch een bevestigingsbericht met de mededeling dat ze het abonnement hebben opgezegd.
 
