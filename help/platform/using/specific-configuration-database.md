@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4f1f1cd9c5ebb77fbb01cadad6c587ed2fe64dcc
+source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1833'
 ht-degree: 0%
 
 ---
 
 
-# Specifieke configuraties per databasetype {#specific-configurations-by-database-type}
+# FDA-connectors configureren {#specific-configurations-by-database-type}
 
 Afhankelijk van de externe databases die u vanuit Adobe Campaign wilt kunnen openen, moet u bepaalde specifieke configuraties uitvoeren. Bij deze configuraties worden vooral stuurprogramma&#39;s geïnstalleerd en worden omgevingsvariabelen opgegeven die bij elke RDBMS op de Adobe Campaign-server horen.
 
@@ -59,6 +59,7 @@ Een externe [!DNL Azure Synapse] account maken:
    * **[!UICONTROL Password]**: Wachtwoord gebruikersaccount
 
    * **[!UICONTROL Database]**: Naam van de database
+
    ![](assets/azure_1.png)
 
 ### Azure Synapse op CentOS {#azure-centos}
@@ -160,11 +161,11 @@ Om Azure Synapse op Vensters te vormen:
    your_language\your_architecture\msodbcsql.msi (i.e: English\X64\msodbcsql.msi)
    ```
 
-1. Nadat het ODBC-stuurprogramma is geïnstalleerd, kunt u het indien nodig testen. Raadpleeg deze [pagina](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server)voor meer informatie.
+1. Nadat het ODBC-stuurprogramma is geïnstalleerd, kunt u het indien nodig testen. For more on this, refer to this [page](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server).
 
 1. In Campaign Classic kunt u vervolgens uw [!DNL Azure Synapse] externe account configureren. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#azure-external)voor meer informatie over het configureren van uw externe account.
 
-1. Aangezien Azure Synapse Analytics communiceert via de TCP 1433-poort, moet u deze poort openen op de Windows Defender Firewall. Raadpleeg de documentatie [bij](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule)Windows voor meer informatie.
+1. Aangezien Azure Synapse Analytics communiceert via de TCP 1433-poort, moet u deze poort openen op de Windows Defender Firewall. For more on this, refer to [Windows documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
 ### Azure Synapse on Debian {#azure-debian}
 
@@ -258,6 +259,7 @@ Met de [!DNL Snowflake] externe account kunt u uw Campagne-instantie verbinden m
    * **[!UICONTROL Password]**: Wachtwoord gebruikersaccount
 
    * **[!UICONTROL Database]**: Naam van de database
+
    ![](assets/snowflake.png)
 
 1. Klik op het **[!UICONTROL Parameters]** tabblad en vervolgens op de **[!UICONTROL Deploy functions]** knop om functies te maken.
@@ -346,6 +348,7 @@ Met de [!DNL Hadoop] externe account kunt u uw Campagne-instantie verbinden met 
    * **[!UICONTROL Database]**: Naam van de database als deze niet is opgegeven in DSN. Deze kan leeg worden gelaten, indien opgegeven in de DSN
 
    * **[!UICONTROL Time zone]**: Tijdzone van server
+
    ![](assets/hadoop3.png)
 
 De schakelaar steunt de volgende opties ODBC:
@@ -404,6 +407,7 @@ Met de [!DNL Oracle] externe account kunt u uw Campagne-instantie verbinden met 
    * **[!UICONTROL Password]**: Wachtwoord gebruikersaccount
 
    * **[!UICONTROL Time zone]**: Tijdzone van server
+
    ![](assets/oracle_config.png)
 
 ### Oracle op Linux {#for-linux-1}
