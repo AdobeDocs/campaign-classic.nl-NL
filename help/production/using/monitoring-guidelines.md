@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7d944973e10c4df166325049b947e359853a2353
+source-git-commit: fdc305ff5bf27aa5cc0a4a9e89ac8ed9d5bead57
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 0%
+source-wordcount: '721'
+ht-degree: 1%
 
 ---
 
@@ -27,24 +27,26 @@ ht-degree: 0%
 
 Het **[!UICONTROL Monitoring]** tabblad, dat toegankelijk is vanaf de Campaign Classic-startpagina, is het belangrijkste toegangspunt waarmee u uw exemplaar kunt controleren.
 
-Het verstrekt een dashboard van wat op uw geval voorkomt:  de status (versie van de build, geïnstalleerde pakketten, enz.), systeemindicatoren, logboeken, workflows die momenteel worden uitgevoerd, de status van de laatst verzonden leveringen, enz.
+Het verstrekt een dashboard van wat op uw geval voorkomt: de status (versie van de build, geïnstalleerde pakketten, enz.), systeemindicatoren, logboeken, workflows die momenteel worden uitgevoerd, de status van de laatst verzonden leveringen, enz.
 
-Gedetailleerde informatie is [hier](../../production/using/monitoring-processes.md)beschikbaar.
+Gedetailleerde informatie is [hier](../../production/using/monitoring-processes.md) beschikbaar.
 
 ![](assets/monitoring_tab.png)
 
 ## Bewaking van Campaign Classic-processen {#monitoring-campaign-classic-processes}
 
-Er zijn aanvullende manieren beschikbaar om de verschillende campagneprocessen te controleren. Raadpleeg de onderstaande secties voor meer informatie.
-
 <table>
-<tr><td><img src="assets/do-not-localize/instance_icon.svg" width="60px"><p><a href="#monitoring-instance">Uw instantie controleren</a></p></td>
-<td><img src="assets/do-not-localize/workflow_icon.svg" width="60px"><p><a href="#moniroting-workflows">Workflows controleren</a></p></td>
-<td><img src="assets/do-not-localize/database_icon.svg" width="60px"><p><a href="#monitoring-database">De database controleren</a></p></td>
-<td><img src="assets/do-not-localize/delivery_icon.svg" width="60px"><p><a href="#monitoring-deliveries">Leveringen controleren</a></p></td></tr>
+<tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Uw instantie controleren</a></p></td>
+<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">Workflows controleren</a></p></td>
+<td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">De database controleren</a></p></td>
+<td><img src="assets/do-not-localize/icon_Send.svg" width="60px"><p><a href="#monitoring-deliveries">Leveringen controleren</a></p></td></tr>
 </table>
 
+Er zijn aanvullende manieren beschikbaar om de verschillende campagneprocessen te controleren. Zij verstrekken verscheidene manieren om uw instanties te controleren om ervoor te zorgen dat uw systeem gezond is en uiteindelijk problemen problemen op te lossen die zich kunnen voordoen wanneer vestiging werkschema&#39;s, verzendende leveringen, enz.
+
 ### Uw exemplaar controleren {#monitoring-instance}
+
+<img src="assets/do-not-localize/icon_system.svg" width="60px">
 
 **Automatische bewakingsgereedschappen**
 
@@ -54,7 +56,7 @@ Er zijn verschillende automatische methoden beschikbaar. om u te helpen uw insta
 
 Met het audittrail kunt u de volledige geschiedenis van wijzigingen met betrekking tot opties, workflows en schema&#39;s binnen uw instantie visualiseren. [Klik hier](../../production/using/audit-trail.md) voor meer informatie.
 
-**Deelvenster Beheer**
+**Configuratiescherm**
 
 In het Configuratiescherm kunt u verschillende instellingen van uw exemplaar beheren: beheer URL toestemmingen, controleer uw instantiedetails zoals de bouwstijlversies van uw servers, enz. Hiermee kunt u ook de beschikbare ruimte op de SFTP-servers controleren die met uw instantie zijn verbonden. [Klik hier](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html) voor meer informatie.
 
@@ -63,6 +65,8 @@ In het Configuratiescherm kunt u verschillende instellingen van uw exemplaar beh
 >Houd er rekening mee dat het Configuratiescherm alleen toegankelijk is voor Admin-gebruikers en beschikbaar is voor alle klanten die Adobe Managed Services gebruiken.
 
 ### Workflows controleren {#monitoring-workflows}
+
+<img src="assets/do-not-localize/icon_workflows.svg" width="60px">
 
 **Workflow HeatMap**
 
@@ -88,6 +92,8 @@ De volgende richtlijnen en beste praktijken wanneer het gebruiken van werkschema
 
 ### Bewaking van leveringen {#monitoring-deliveries}
 
+<img src="assets/do-not-localize/icon_send.svg" width="60px">
+
 **SMTP-rapporten**
 
 In SMTP-rapporten worden leveringsstatistieken en SMTP-fouten per domein weergegeven. [Klik hier](../../production/using/monitoring-processes.md) voor meer informatie.
@@ -103,6 +109,8 @@ In SMTP-rapporten worden leveringsstatistieken en SMTP-fouten per domein weergeg
 * [Uitgave van tijdelijke bestanden](../../production/using/temporary-files.md) - alleen *op locatie voor hostingmodellen*
 
 ### Toezicht op de database {#monitoring-database}
+
+<img src="assets/do-not-localize/icon_database.svg" width="60px">
 
 **Workflow voor opschonen van databases**
 
