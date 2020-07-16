@@ -15,36 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: c7b00960ffde49df65cd5c8fcfb8fab6aee485d7
 workflow-type: tm+mt
-source-wordcount: '1372'
-ht-degree: 0%
+source-wordcount: '1295'
+ht-degree: 2%
 
 ---
 
 
 # Release 19.2{#release-19-2}
-
-[Upgrade maken](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Release van het regelpaneel](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Documentatie-updates](../../rn/using/documentation-updates.md) | [Eerdere introducties](../../rn/using/release--19-1.md) | [Verouderde kenmerken](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>Algemene beschikbaarheid</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>Releasekandidaat</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>Niet meer beschikbaar</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>Vervangen</strong></td> 
-  </tr> 
-   <tr> 
-   <td>Nieuwste stabiele build beschikbaar. Build gevalideerd in productie.<br> </td>
-   <td>Build gevalideerd door Adobe. Wachten op proefdrukken van de productie.<br> </td>
-   <td>Nieuwere build beschikbaar met foutoplossingen. Bijwerken is vereist.<br> </td>
-   <td>Bevat bekende regressies. Bijwerken is verplicht.<br> </td>
-  </tr> 
- </tbody> 
-</table>
-
-De **laatste stabiele build** is Gold Standard 10. Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) Release 19.2.3 - build 9081 {#release-19-2-3-build-9081}
 
@@ -59,7 +38,7 @@ _7 februari 2020_
 
 _2 december 2019_
 
-**Wat is nieuw?**
+**Nieuwe functies?**
 
 <table> 
  <thead> 
