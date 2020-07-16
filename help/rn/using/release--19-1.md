@@ -15,36 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 77bb2ee42919a1bbf9a1a9e4594505f5cf99ca68
+source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
 workflow-type: tm+mt
-source-wordcount: '2921'
-ht-degree: 0%
+source-wordcount: '2118'
+ht-degree: 1%
 
 ---
 
 
 # Release 19.1{#release-19-1}
-
-[Upgrade maken](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Release van het regelpaneel](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Documentatie-updates](../../rn/using/documentation-updates.md) | [Eerdere introducties](../../rn/using/release--19-1.md) | [Verouderde kenmerken](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>Algemene beschikbaarheid</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>Releasekandidaat</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>Niet meer beschikbaar</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>Vervangen</strong></td> 
-  </tr> 
-   <tr> 
-   <td>Nieuwste stabiele build beschikbaar. Build gevalideerd in productie.<br> </td>
-   <td>Build gevalideerd door Adobe. Wachten op proefdrukken van de productie.<br> </td>
-   <td>Nieuwere build beschikbaar met foutoplossingen. Bijwerken is vereist.<br> </td>
-   <td>Bevat bekende regressies. Bijwerken is verplicht.<br> </td>
-  </tr> 
- </tbody> 
-</table>
-
-De **laatste stabiele build** is Gold Standard 10. Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) Release 19.1.6 - build 9035 {#release-19-1-6-build-9035}
 
@@ -62,7 +41,7 @@ _3 oktober 2019_
 * Probleem verholpen dat ertoe kon leiden dat bepaalde berichten niet werden verwerkt door de server voor middeluitgaven. (NEO-12395)
 * Probleem verholpen waardoor de SQL-gegevensbeheeractiviteit niet volledig kon worden gebruikt (het genoemde recht SQL-gegevensbeheer ontbreekt).
 
-## ![](assets/do-not-localize/orange_2.png) Release 19.1.5 - build 9033{#release-19-1-5-build-9033}
+## ![](assets/do-not-localize/red_2.png) Release 19.1.5 - build 9033{#release-19-1-5-build-9033}
 
 _13 augustus 2019_
 
@@ -75,117 +54,14 @@ _13 augustus 2019_
 * Een nieuwe authentificatieoptie is toegevoegd om geloofsbrieven OAuth binnen de AC schakelaar met de Dynamica van Microsoft te steunen. (NEO-11982)
 * Probleem met UUID (Unique Universal Identifier) verrijkingsactiviteit mislukt met Hive FDA.
 
-## Release 19.1.4 - build 9032{#release-19-1-4-build-9032}
+## ![](assets/do-not-localize/green_2.png) Release 19.1.4 - build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) **Gold Standard 10-release**
-
-_7 juli 2020_
-
-Deze nieuwe build (9032@efd8a94) bevat de volgende oplossing:
-
-* Probleem verholpen waarbij tracering niet werkte toen de handtekeningfunctie was uitgeschakeld. (NEO-26411)
-
->[!CAUTION]
+>[!NOTE]
 >
->Wij adviseren dat u de cliëntconsole met beschikbaar in deze versie bevordert. Zie deze [pagina](../../installation/using/installing-the-client-console.md)
+>19.1.4 Gold Standard-releases worden op deze [pagina](../../rn/using/gold-standard.md)weergegeven.
 
-![](assets/do-not-localize/orange_2.png) **Gold Standard 9-release**
 
-_22 juni 2020_
-
-Deze nieuwe build (9032@800be2e) bevat de volgende oplossingen:
-
-* De iOS HTTP2-connector is verbeterd (updates van derden en foutbeheer). (NEO-25904, NEO-25903, NEO-25799)
-
-De volgende oplossingen hebben betrekking op het beveiligingsmechanisme voor koppelingen bijhouden (zie de checklist [Beveiliging en Privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)):
-
-* Probleem verholpen waardoor het bijhouden van &#39;berichtklikken&#39; niet kon worden uitgevoerd (iOS- en Android-pushmeldingen). (NEO-25965)
-* Probleem verholpen waardoor u URL&#39;s voor bijhouden niet kunt openen of erop kunt klikken wanneer u bepaalde oudere versies van Outlook gebruikt.  (NEO-25688)
-* Probleem verholpen waarbij het bijhouden van URL&#39;s met fragmenten in personalisatieparameters (ankerlabels met hekje) niet werkte. (NEO-25774)
-* Probleem verholpen met de antiphishingservice. (NEO-25283)
-* Probleem met bijhouden opgelost bij het gebruik van specifieke aangepaste volgformules. (NEO-25277)
-
-![](assets/do-not-localize/orange_2.png) **Gold Standard 8-release**
-
-_29 april 2020_
-
-Deze nieuwe build (9032@3a9dc9c) bevat de volgende oplossingen:
-
-* Verbeterde beveiliging voor het bijhouden van koppelingen in e-mail. Dit is standaard ingeschakeld voor alle klanten. Er is een extra, verbeterde beveiligingsfunctie beschikbaar die kan worden ingeschakeld door de klantenservice te bereiken. Meer informatie over de functie en de stappen die niet-gehoste klanten moeten uitvoeren, vindt u in de checklist [voor](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)beveiliging en privacy.
-
->[!CAUTION]
->
->Als u problemen ondervindt met pushberichten via koppelingen voor reeksspatiëring of met ankerlabels voor leveringen, raden we u aan het nieuwe handtekeningmechanisme voor het bijhouden van koppelingen uit te schakelen. De procedure wordt in deze [pagina beschreven](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
-
-* Probleem verholpen waarbij afbeeldingen niet konden worden weergegeven bij levering op regel. (NEO-23207)
-* Probleem verholpen met de **bestandsoverdrachtactiviteit** waardoor verificatie op basis van SFTP-sleutels niet kon werken op Debian 9. (NEO-23183)
-* Probleem verholpen die invloed kan hebben op pushberichten wanneer deze op een hoge frequentie worden verzonden. (NEO-20516)
-* Probleem verholpen in responsbeheer voor aanbiedingen die tot een vastlopen van de webserver kan leiden. (NEO-19482)
-* Correctie van een fout in het beheer van LibreOffice waardoor u rapporten niet kon exporteren. (NEO-20982)
-* Probleem verholpen dat een fout veroorzaakte bij het upgraden van een groot aantal workflows met behulp van een enquêteactiviteit.
-* Verbeterd LibreOffice-beheer om fouten in de voorvertoning van e-mail met .odt-bestanden te voorkomen.
-* Verbeterd beheer van Apache-verbinding om latentie op webservice te voorkomen.
-* De weergave van versietag (7 cijfers) in het menu **Info** is verbeterd.
-* Oplossing voor een regressie in lijstbeheer waardoor aanbiedingen niet konden worden gepubliceerd.
-* Oplossing voor een regressie die ertoe leidde dat de opschoonworkflow vastliep.
-* Oplossing voor een kleine regressie in de logboeken van de opschoonworkflow.
-
-![](assets/do-not-localize/orange_2.png) **Gold Standard 6-release**
-
-_9 maart 2019_
-
-Deze nieuwe build (9032@19f73c5) bevat de volgende oplossing:
-
-* Probleem met externe accounts met FTP via SSL opgelost. (NEO-20498)
-
-![](assets/do-not-localize/orange_2.png) **Gold Standard 5-release**
-
-_17 december 2019_
-
-Deze nieuwe build (9032@d6b8062) bevat de volgende oplossing:
-
-* Probleem met bijhouden van gegevens op de volgende communicatiekanalen verholpen: mobiele (SMS, MMS), push (iOS, Android) en sociale netwerken (Facebook, Twitter). (NEO-19595)
-
-![](assets/do-not-localize/orange_2.png) **Gold Standard 4-release**
-
-_11 december 2019_
-
-Deze nieuwe build (9032@bc4a935) bevat de volgende oplossing:
-
-* Oplossing voor een prestatieprobleem bij het verzenden van berichten met een MSSQL-database. (NEO-1758)
-
-![](assets/do-not-localize/orange_2.png) **Gold Standard 3-release**
-
-_20 november 2019_
-
-Deze nieuwe build (9032@3468c7b) bevat de volgende oplossingen:
-
-* Oplossing voor een aanmeldingsprobleem via IMS-verificatie. (NEO-17312)
-* Probleem verholpen bij het weergeven van cumulatieve rapporten over meerdere leveringen. (NEO-18165)
-* Probleem verholpen waarbij de webserver vastliep of kon blokkeren.
-
-![](assets/do-not-localize/orange_2.png) **Gold Standard 2-release**
-
-_19 september 2019_
-
-Deze nieuwe build (9032@cee805c) bevat de volgende oplossingen:
-
-* Probleem verholpen bij gebruik van de CRM-connector voor Salesforce. (NEO-17712)
-* Probleem verholpen met een index die prestatieproblemen kan veroorzaken bij het verzenden van transactieberichten.
-
-![](assets/do-not-localize/orange_2.png) **Release 19.1.4 - build 9032**
-
-_13 augustus 2019_
-
-Aanvankelijke build 19.1.4 met de volgende oplossingen:
-
-* Oplossing voor een probleem met de planneractiviteit die ongewenste foutberichten tijdens de configuratie van de wizard genereerde. Update van NEO-11662 wordt teruggedraaid. (NEO-17097)
-* Oplossing voor een regressie veroorzaakt door NEO-12727 die ertoe zou kunnen leiden dat werkstromen worden gestopt wanneer een testactiviteit tweemaal werd uitgevoerd. (NEO-16835)
-* Probleem verholpen waarbij een onjuiste HTTP-code werd geretourneerd (HTTP 200 OK in plaats van HTTP 403 Verboden) wanneer een ongeldig of verlopen sessietoken werd gebruikt in API-aanroepen. (NEO-16826)
-* Probleem verholpen met de DKIM-sleutel die niet meer in e-mails was ingesloten, waardoor problemen met de te leveren items ontstonden. (NEO-16804)
-* Verschillende problemen met workflowplanning zijn opgelost. De werkschema&#39;s werden gepland om één keer per dag te worden uitgevoerd zonder rekening te houden met de plannerconfiguratie. (NEO-16619, NEO-16426)
-
-## ![](assets/do-not-localize/orange_2.png) Release 19.1.2 - build 9029{#release-19-1-2-build-9029}
+## ![](assets/do-not-localize/red_2.png) Release 19.1.2 - build 9029{#release-19-1-2-build-9029}
 
 _21 juni 2019_
 
@@ -201,11 +77,11 @@ _21 juni 2019_
 * Wij staan nu de schrapping van dummy verslagen toe die in de Dynamica van Microsoft tijdens het invoeren werkschema worden gecreeerd.
 * Verbeterde machtigingen om het pakket met de beveiligingszone uit te voeren wanneer u een interne account gebruikt.
 
-## ![](assets/do-not-localize/orange_2.png) Release 19.1 - build 9026{#release-19-1-build-9026}
+## ![](assets/do-not-localize/red_2.png) Release 19.1 - build 9026{#release-19-1-build-9026}
 
 _30 mei 2019_
 
-**Wat is nieuw?**
+**Nieuwe functies?**
 
 <table> 
  <thead> 
@@ -216,7 +92,7 @@ _30 mei 2019_
  </thead> 
  <tbody> 
   <tr> 
-   <td> Deelvenster Beheer<br /> </td> 
+   <td> Configuratiescherm<br /> </td> 
    <td> <p>Om uw werk als Admin gebruiker efficiënter te maken, beheer montages van uw servers SFTP door opslag te controleren, IP adressen aan lijst van gewenste personen toe te voegen, en SSH sleutels voor elke instantie te installeren. Houd er rekening mee dat het Configuratiescherm vanaf vandaag alleen beschikbaar is voor klanten die op AWS worden gehost (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">meld u vandaag</a>aan via de Experience Cloud).</p> <p>Raadpleeg voor meer informatie de <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">gedetailleerde documentatie</a> en de <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">Hoe kan ik-video</a>. </p><p>Opmerking: U hoeft niet te upgraden naar de nieuwste build voor campagnes om toegang te krijgen tot het Configuratiescherm.</p> </td> 
   </tr> 
     <tr> 
