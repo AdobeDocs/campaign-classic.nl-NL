@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9f55a2014546ce08972f51e4930ce04d4ce0c188
+source-git-commit: 64b31b8d4f88023f4285bf161d236973a7d63107
 workflow-type: tm+mt
-source-wordcount: '6898'
+source-wordcount: '6939'
 ht-degree: 8%
 
 ---
@@ -28,6 +28,8 @@ Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates
 U kunt ook de [Adobe Campaign Classic Release Notes](../../rn/using/latest-release.md) raadplegen voor meer updates.
 
 ## Juli 2020 {#july-2020}
+
+De [releaseopmerkingen](../../rn/using/latest-release.md) zijn opnieuw ingedeeld: er is een [overzichtspagina](../../rn/using/latest-release.md) toegevoegd met informatie over de status van de build, het upgradeproces, aanbevelingen en belangrijke koppelingen. Er is ook een speciale pagina voor [Gold Standard-releases](../../rn/using/gold-standard.md) toegevoegd en de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) is geïntegreerd.
 
 Er is een nieuwe sectie toegevoegd met richtlijnen voor Campaign Classic-bewaking. [Meer informatie](../../production/using/monitoring-guidelines.md)
 
