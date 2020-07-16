@@ -13,54 +13,33 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
 workflow-type: tm+mt
-source-wordcount: '1407'
-ht-degree: 0%
+source-wordcount: '1330'
+ht-degree: 1%
 
 ---
 
 
 # Release 20.1{#release-20-1}
 
-[Upgrade maken](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Release van het regelpaneel](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Documentatie-updates](../../rn/using/documentation-updates.md) | [Eerdere introducties](../../rn/using/release--19-2.md) | [Verouderde kenmerken](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>Algemene beschikbaarheid</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>Releasekandidaat</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>Niet meer beschikbaar</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>Vervangen</strong></td> 
-  </tr> 
-   <tr> 
-   <td>Nieuwste stabiele build beschikbaar. Build gevalideerd in productie.<br> </td>
-   <td>Build gevalideerd door Adobe. Wachten op proefdrukken van de productie.<br> </td>
-   <td>Nieuwere build beschikbaar met foutoplossingen. Bijwerken is vereist.<br> </td>
-   <td>Bevat bekende regressies. Bijwerken is verplicht.<br> </td>
-  </tr> 
- </tbody> 
-</table>
-
-De **laatste stabiele build** is Gold Standard 10. Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
-
-## ![](assets/do-not-localize/orange_2.png) Release 20.1.3 - build 9124 {#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/orange_2.png) Release 20.1.3 - build 9124{#release-20-1-3-build-9124}
 
 _6 mei 2020_
 
 * Probleem verholpen met de **bestandsoverdrachtactiviteit** waardoor verificatie op basis van SFTP-sleutels niet kon werken op Debian 9. (NEO-23183)
 
-## ![](assets/do-not-localize/orange_2.png) Release 20.1.2 - build 9123 {#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/orange_2.png) Release 20.1.2 - build 9123{#release-20-1-2-build-9123}
 
 _13 maart 2020_
 
 * Probleem verholpen waarbij implementatie van versies op Red Hat 7-servers werd voorkomen. (NEO-2332)
 
-## ![](assets/do-not-localize/orange_2.png) Release 20.1 - build 9122 {#release-20-1-build-9122}
+## ![](assets/do-not-localize/orange_2.png) Release 20.1 - build 9122{#release-20-1-build-9122}
 
 _17 februari 2020_
 
-**Wat is nieuw?**
+**Nieuwe functies?**
 
 <table> 
  <thead> 
@@ -192,7 +171,7 @@ _17 februari 2020_
 
 * Probleem verholpen waardoor de trackingindicatoren voor transactionele berichten niet konden worden bijgewerkt in de workflow voor bijhouden. (NEO-1770)
 
-* Oplossing voor een regressieprobleem dat ertoe leidde dat het webproces vastliep en opnieuw opstartte bij het aanvragen van een aanbieding via SOAP. (NEO-19482)
+* Oplossing voor een regressieprobleem dat ertoe leidde dat het webproces vastliep en opnieuw opstartte wanneer een aanvraag voor een aanbieding werd ingediend via SOAP. (NEO-19482)
 
 * Probleem verholpen waarbij gegevens niet konden worden geüpload naar openbare bronnen als de uploadmap een externe gedeelde locatie was. (NEO-19361)
 
