@@ -13,36 +13,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: 5b7c0dc12b41b8482dce9d42bbf88878bb03bf38
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 0%
+source-wordcount: '1692'
+ht-degree: 1%
 
 ---
 
 
 # Laatste release{#latest-release}
-
-[Upgrade maken](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Release van het regelpaneel](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Documentatie-updates](../../rn/using/documentation-updates.md) | [Eerdere introducties](../../rn/using/release--20-1.md) | [Verouderde kenmerken](../../rn/using/deprecated-features.md)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>Algemene beschikbaarheid</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>Releasekandidaat</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>Niet meer beschikbaar</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>Vervangen</strong></td> 
-  </tr> 
-   <tr> 
-   <td>Nieuwste stabiele build beschikbaar. Build gevalideerd in productie.<br> </td>
-   <td>Build gevalideerd door Adobe. Wachten op proefdrukken van de productie.<br> </td>
-   <td>Nieuwere build beschikbaar met foutoplossingen. Bijwerken is vereist.<br> </td>
-   <td>Bevat bekende regressies. Bijwerken is verplicht.<br> </td>
-  </tr> 
- </tbody> 
-</table>
-
-De **laatste stabiele build** is Gold Standard 10. Klik [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ![](assets/do-not-localize/cp-icon.png) **Nieuwe release** van het Configuratiescherm in juni met controle van actieve profielen, controle van de leverbaarheid van subdomeinen en beheer van GPG-sleutels. [Meer](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)informatie.
 
@@ -50,7 +29,7 @@ De **laatste stabiele build** is Gold Standard 10. Klik [hier](../../rn/using/re
 
 _8 juni 2020_
 
-**Wat is nieuw?**
+**Nieuwe functies?**
 
 <table> 
  <thead> 
@@ -95,7 +74,7 @@ _8 juni 2020_
    <p>Deze voorschriften zijn van toepassing op Adobe Campaign-klanten die gegevens bewaren voor in deze landen wonende gegevenssubjecten. Naast de privacy mogelijkheden reeds beschikbaar in Campagne (met inbegrip van toestemmingsbeheer, montages van het gegevensbehoud, en gebruikersrollen), nemen wij deze kans aan om extra mogelijkheden te omvatten, helpen uw bereidheid voor PDPA en LGPD vergemakkelijken:</p>
    <ul> 
      <li><p>Recht op toegang en recht op verwijdering: wij benutten de capaciteiten die voor de GDPR en de CCPA zijn toegevoegd. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">Meer informatie</a></p></li> 
-     <li> <p>Wanneer u een privacyaanvraag maakt met de Campagne-interface of API, selecteert u nu het <strong>Regeltype</strong> : PDPA, LGPD, GDPR, CCPA. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests">Lees meer</a>.</p></li>
+     <li> <p>Wanneer u een privacyaanvraag maakt met de Campagne-interface of API, selecteert u nu het <strong>Regeltype</strong> : PDPA, LGPD, GDPR, CCPA. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests">Meer informatie</a>.</p></li>
     </ul>
    </td> 
   </tr> 
