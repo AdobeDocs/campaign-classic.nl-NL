@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campagne classic
 translation-type: tm+mt
-source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
+source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
 workflow-type: tm+mt
-source-wordcount: '2076'
+source-wordcount: '2089'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,9 @@ ht-degree: 0%
 + [Productdocumentatie](campaign-classic-home.md)
 + [Laatste updates](rn/using/documentation-updates.md)
 + Release Notes {#release-notes}
+   + [Aan de slag met upgrades](rn/using/rn-overview.md)
    + [Laatste release](rn/using/latest-release.md)
+   + [Gold Standard-release](rn/using/gold-standard.md)
    + Eerdere versies {#previous-releases}
       + [Release 20.1](rn/using/release--20-1.md)
       + [Release 19.2](rn/using/release--19-2.md)
@@ -26,7 +28,9 @@ ht-degree: 0%
       + [Release 18.10](rn/using/release--18-10.md)
       + [Release 18.6](rn/using/release--18-6.md)
       + [Release 18.4](rn/using/release--18-4.md)
-   + [Verouderde functies](rn/using/deprecated-features.md)
+   + Verouderde functies en compatibiliteit {#deprecated-compatibility}
+      + [Verouderde functies](rn/using/deprecated-features.md)
+      + [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md)
 + Aan de slag {#getting-started}
    + Starten met Adobe Campaign {#starting-with-adobe-campaign}
       + [Info over Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
