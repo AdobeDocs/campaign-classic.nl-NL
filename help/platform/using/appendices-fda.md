@@ -247,7 +247,7 @@ $ apt update
 $ apt install libmysqlclient20
 ```
 
-#### Windows [#windows-mysql]
+#### Windows {#windows-mysql}
 
 Download de C schakelaar van deze [pagina](https://dev.mysql.com/downloads/connector/c). We raden u aan versie 5.7 te downloaden.
 
