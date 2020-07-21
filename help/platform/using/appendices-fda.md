@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 353f5df040087175c9f211308704f1af1844ef2c
+source-git-commit: 789799f79608c26126d70e896bd1b7a6df33e4fa
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -211,7 +211,7 @@ Als uw basis in latin1 is, zult u APICharSize=1 in de opties moeten toevoegen.
 
 De term gebruikt de naam van de tijdzone die niet standaard is, u kunt de lijst op de plaats [van](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA)Meta-gegevens vinden. Adobe Campaign probeert de tijdzone in de externe configuratie om te zetten in iets dat Teradata begrijpt. Als er geen overeenkomst wordt gevonden, wordt de dichtstbijzijnde GMT+X (of GMT-X)-tijdzone gevonden voor de sessie, met een waarschuwing in het logbestand.
 
-De conversie is voltooid bij het lezen van een bestand met de naam teradata_timezones.txt dat zich in de volgende directory data zou moeten bevinden: /usr/local/neolane/nl6/datakit under linux. Als u dit bestand bewerkt, moet u contact opnemen met het Adobe Campaign-team om de wijziging in de broncode door te voeren anders wordt dit bestand overschreven tijdens de volgende campagneupdate.
+De conversie is voltooid bij het lezen van een bestand met de naam teradata_timezones.txt dat zich in de volgende directory DataGrid moet bevinden: /usr/local/neolane/nl6/datakit under linux. Als u dit bestand bewerkt, moet u contact opnemen met het Adobe Campaign-team om de wijziging in de broncode door te voeren anders wordt dit bestand overschreven tijdens de volgende campagneupdate.
 
 De tijdzone die wordt gebruikt om te verbinden zal worden vermeld wanneer het runnen van nlserver met - verbose schakelaar, bijvoorbeeld:
 
