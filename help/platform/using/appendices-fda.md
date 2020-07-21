@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 789799f79608c26126d70e896bd1b7a6df33e4fa
+source-git-commit: e7cf3b189f328cd1ea6ca8b67a3fc4c0c0bddd84
 workflow-type: tm+mt
 source-wordcount: '1417'
 ht-degree: 0%
@@ -128,8 +128,9 @@ U installeert als volgt udf_utf16to8:
    
    -- Test: should return 410042
    SELECT CAST(Char2HexInt(UDF_UTF16to8(_UNICODE'004100000042'XC)) AS VARCHAR(100));
-   
-### Configuratie van de campagneserver voor Linux {#campaign-server-linux}
+   ```
+
+### Configuratie van de campagnereserver voor Linux {#campaign-server-linux}
 
 Voor de installatie van het stuurprogramma is het volgende vereist:
 
