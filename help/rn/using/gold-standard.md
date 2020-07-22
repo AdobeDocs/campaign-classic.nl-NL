@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
+source-git-commit: f097fcc4363181cda21386840f19e2523c3af3f9
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ _7 juli 2020_
 
 De build 9032@efd8a94 bevat de volgende oplossing:
 
-* Probleem verholpen waarbij tracering niet werkte toen de handtekeningfunctie was uitgeschakeld. (NEO-26411)
+Probleem verholpen waarbij tracering niet werkte wanneer de handtekeningfunctie was uitgeschakeld of wanneer een oud marketingexemplaar werd gebruikt met een recent medio. (NEO-26411)
 
 >[!CAUTION]
 >
