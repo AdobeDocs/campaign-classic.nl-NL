@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b7c0dc12b41b8482dce9d42bbf88878bb03bf38
+source-git-commit: d9b6ae9f7e2f3b15698f1a420b5416162cbcc758
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 1%
+source-wordcount: '1987'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,29 @@ ht-degree: 1%
 
 ![](assets/do-not-localize/cp-icon.png) **Nieuwe release** van het Configuratiescherm in juni met controle van actieve profielen, controle van de leverbaarheid van subdomeinen en beheer van GPG-sleutels. [Meer](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)informatie.
 
-## ![](assets/do-not-localize/blue_2.png) Release 20.2.1 - build 9178 {#release-20-2-1-build-9178}
+## ![](assets/do-not-localize/blue_2.png) Release 20.2.1 - build 9180 {#release-20-2-2-build-9180}
+
+_22 juli 2020_
+
+* Probleem verholpen waarbij tracering niet werkte wanneer de handtekeningfunctie was uitgeschakeld of wanneer een oud marketingexemplaar werd gebruikt met een recent medio. (NEO-26411)
+* Probleem verholpen waarbij niet-ondertekende koppelingen van gepersonaliseerde domeinen werden geblokkeerd op het moment dat ze moesten worden toegestaan. (NEO-25210)
+* Probleem verholpen waardoor u URL&#39;s voor bijhouden niet kunt openen of erop kunt klikken wanneer u bepaalde oudere versies van Outlook gebruikt. (NEO-25688)
+* Probleem verholpen waarbij URL&#39;s van pagina&#39;s die onjuist zijn gedefinieerd in e-mailleveringen werden gespiegeld. (NEO-26084)
+* Probleem met coderen van URL-beheer in de service voor anti-phishing is opgelost. (NEO-25283)
+* Probleem verholpen waarbij het bijhouden van URL&#39;s met fragmenten in personalisatieparameters (ankerlabels met hekje) niet werkte. (NEO-25774)
+* Probleem met bijhouden opgelost bij het gebruik van specifieke aangepaste volgformules. (NEO-25277) Probleem opgelost waarbij het bijhouden van &quot;meldingskliks&quot; niet werkte (iOS- en Android-pushmeldingen). (NEO-25965)
+* Oplossing voor een regressie die invloed had op berekende velden in een werkstroom. (NEO-25194)
+* Oplossing voor een regressie die ervoor zorgde dat het direct maken van URL&#39;s voor webtracering niet werkte. (NEO-20999)
+* Probleem verholpen met leveringsrapporten buiten de doos die werden afgekapt tijdens het exporteren naar PDF. (NEO-25757)
+* Probleem verholpen waarbij de toepassing vastliep in de wizard voor implementatie.
+* Probleem verholpen waardoor de workflow voor het melden van voorstellen na een postupgrade niet correct kon werken.
+* De iOS HTTP2-connector is verbeterd (updates van derden en foutbeheer). (NEO-25904, NEO-25903)
+* De lijst jarsToSkip in catalina.properties is bijgewerkt om de verwijzing naar een jar-bestand te verwijderen dat niet meer werd gebruikt (iOS-meldingen).
+* Probleem verholpen waarbij de voorbereiding van de levering na de upgrade werd geblokkeerd.
+* Na de schakelaar aan het [nieuwe mechanisme](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)van opeenvolging ID, worden alle Webtoepassingen die de ontvankelijke lijst bijwerken opnieuw gepubliceerd tijdens postupgrade.
+* Oplossing voor een mogelijke XSS-kwetsbaarheid in de leveringsinhoud. (NEO-17987, NEO-26073)
+
+## ![](assets/do-not-localize/orange_2.png) Release 20.2.1 - build 9178 {#release-20-2-1-build-9178}
 
 _8 juni 2020_
 
