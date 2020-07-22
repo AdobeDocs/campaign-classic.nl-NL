@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campagne classic
 translation-type: tm+mt
-source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
+source-git-commit: 14e275203e3436183d5a5c743375ba42f6153c6d
 workflow-type: tm+mt
-source-wordcount: '2089'
+source-wordcount: '2094'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,6 @@ ht-degree: 0%
       + [Direct maillevering maken](delivery/using/creating-a-direct-mail-delivery.md)
       + [De inhoud voor direct mail definiëren](delivery/using/defining-the-direct-mail-content.md)
       + [Valideren](delivery/using/validating.md)
-      + [Andere kanalen](delivery/using/other-channels.md)
    + Leveringssjablonen gebruiken {#using-delivery-templates}
       + [Over sjablonen](delivery/using/about-templates.md)
       + [Een leveringssjabloon maken](delivery/using/creating-a-delivery-template.md)
@@ -426,6 +425,7 @@ ht-degree: 0%
          + [Een overzichtslijst maken](workflow/using/creating-a-summary-list.md)
          + [Gegevens worden verrijkt](workflow/using/enriching-data.md)
          + [Werken met aggregaten](workflow/using/using-aggregates.md)
+         + [Driemaandelijkse lijstupdate die een stijgende vraag gebruikt](workflow/using/quarterly-list-update.md)
       + Query&#39;s ontwerpen {#designing-queries}
          + [De tabel met ontvangers opvragen](workflow/using/querying-recipient-table.md)
          + [Leveringsgegevens opvragen](workflow/using/querying-delivery-information.md)
