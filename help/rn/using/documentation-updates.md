@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 64b31b8d4f88023f4285bf161d236973a7d63107
+source-git-commit: 13fefe429862e856bc7ec1d376d80c176398da0b
 workflow-type: tm+mt
-source-wordcount: '6939'
+source-wordcount: '6963'
 ht-degree: 8%
 
 ---
@@ -28,6 +28,8 @@ Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates
 U kunt ook de [Adobe Campaign Classic Release Notes](../../rn/using/latest-release.md) raadplegen voor meer updates.
 
 ## Juli 2020 {#july-2020}
+
+Er is een gebruiksscenario toegevoegd aan de praktijkvoorbeelden voor het automatisch bijwerken van een lijst met behulp van een incrementele query. [Meer informatie](../../workflow/using/about-workflow-use-cases.md)
 
 De [releaseopmerkingen](../../rn/using/latest-release.md) zijn opnieuw ingedeeld: er is een [overzichtspagina](../../rn/using/latest-release.md) toegevoegd met informatie over de status van de build, het upgradeproces, aanbevelingen en belangrijke koppelingen. Er is ook een speciale pagina voor [Gold Standard-releases](../../rn/using/gold-standard.md) toegevoegd en de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) is geïntegreerd.
 
