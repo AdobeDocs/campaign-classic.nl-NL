@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,13 @@ ht-degree: 0%
 
 # Communicatiekanalen{#communication-channels}
 
-Met de Campagne van Adobe, kunt u kanaalcampagnes met inbegrip van e-mail, SMS, LIJNberichten, Push berichten en directe berichten verzenden, en hun doeltreffendheid meten gebruikend diverse specifieke [rapporten](../../reporting/using/delivery-reports.md). Deze berichten worden ontworpen en verzonden door leveringen, en kunnen voor elke ontvanger worden gepersonaliseerd.
+Met Adobe Campaign kunt u kanaalcampagnes verzenden, zoals e-mails, SMS, LIJN-berichten, pushberichten en directe mails, en de doeltreffendheid van deze campagnes meten aan de hand van verschillende speciale [rapporten](../../reporting/using/delivery-reports.md). Deze berichten worden ontworpen en verzonden door leveringen, en kunnen voor elke ontvanger worden gepersonaliseerd.
 
 De kernfuncties omvatten het richten, het bepalen en het personaliseren van berichten, de uitvoering van mededelingen, en de bijbehorende operationele rapporten. Het belangrijkste functionele toegangspunt is de leveringstovenaar. Dit toegangspunt leidt tot verschillende mogelijkheden die door Adobe Campaign worden gedekt.
 
 >[!NOTE]
 >
->Adobe Campaign beschikt over een aantal gereedschappen om de prestaties te controleren en het verzenden van e-mailberichten te optimaliseren. Raadpleeg voor meer informatie de [introductie](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) en het [leveringsbeheer](../../delivery/using/about-deliverability.md).
+>Adobe Campaign beschikt over een set gereedschappen om de prestaties te controleren en het verzenden van e-mail te optimaliseren. Raadpleeg voor meer informatie de [introductie](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) en het [leveringsbeheer](../../delivery/using/about-deliverability.md).
 
 Het verzenden van leveringen kan worden geautomatiseerd door de levering voor te bereiden en/of te verzenden tijdens een workflow. Voor meer op levering-type activiteiten in werkschema&#39;s, verwijs naar [deze sectie](../../workflow/using/about-action-activities.md).
 
@@ -42,7 +42,7 @@ Adobe Campaign biedt de volgende leveringskanalen:
 1. **Mobiel kanaal**: Met leveringen op mobiele kanalen kunt u persoonlijke SMS- of LINE-berichten naar de doelgroep sturen. Zie [SMS-kanaal](../../delivery/using/sms-channel.md).
 1. **Mobiel toepassingskanaal**: Met levering voor mobiele apps kunt u meldingen verzenden naar iOS- en Android-systemen. Raadpleeg het hoofdstuk over het kanaal [van de](../../delivery/using/about-mobile-app-channel.md) mobiele app.
 
-   Andere kanalen worden beschreven op [deze pagina](../../delivery/using/other-channels.md).
+   Andere kanalen worden beschreven op [deze pagina](../../delivery/using/communication-channels.md#other-channels).
 
    >[!NOTE]
    >
@@ -59,12 +59,12 @@ Externe accounts worden geconfigureerd via het **[!UICONTROL Administration > Pl
 
 ## E-mailleveringen {#email-deliveries}
 
-Het [e-mailkanaal](../../delivery/using/about-email-channel.md) is een van de kernkanalen van Adobe Campaign, waarmee u persoonlijke e-mailberichten kunt plannen en verzenden naar specifieke doelgroepen.
+Het [e-mailkanaal](../../delivery/using/about-email-channel.md) is een van de belangrijkste kanalen in Adobe Campaign, zodat u persoonlijke e-mails kunt plannen en verzenden naar specifieke doelen.
 
 U kunt verschillende typen e-mailberichten verzenden:
 
 * E-mails met één verzending: e-mails die u één keer naar een bepaald doel kunt verzenden. Deze worden gewoonlijk gebruikt om een specifieke inhoud te promoten die maar één keer wordt voorbereid en verzonden (nieuwsbrief, promotiemail, enz.).
-* E-mails terugsturen: in een campagne regelmatig dezelfde e-mail sturen en elk bericht en de bijbehorende verslagen samenvoegen. Dezelfde e-mail wordt verzonden, maar doorgaans naar een ander doel, op basis van het in aanmerking komende doel voor de dag van de verzending. Een veelvoorkomend voorbeeld is een e-mailbericht voor verjaardagen. Raadpleeg [Terugkerende leveringen](../../workflow/using/recurring-delivery.md)voor meer informatie hierover.
+* E-mails terugsturen: in een campagne regelmatig dezelfde e-mail sturen en elk bericht en de bijbehorende verslagen samenvoegen. Dezelfde e-mail wordt verzonden, maar doorgaans naar een ander doel, op basis van het in aanmerking komende doel voor de dag van de verzending. Een veelvoorkomend voorbeeld is een e-mailbericht voor verjaardagen. For more on this, refer to [Recurring deliveries](../../workflow/using/recurring-delivery.md).
 * Transactiee-mails: Eenvoudige e-mailberichten die worden geactiveerd op basis van het gedrag van uw klanten. Zie [Transactioneel overseinen](../../message-center/using/about-transactional-messaging.md).
 
 Als u meer wilt weten over het gebruik en de aanbevelingen van de [levering, raadpleegt u de best practices](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)voor de levering van campagnes.
@@ -86,10 +86,20 @@ Als u SMS- of lijnberichten wilt verzenden naar een mobiele telefoon die u nodig
 
 ## Pushmeldingen {#push-notifications}
 
-Met Adobe Campaign kunt u persoonlijke en gesegmenteerde [pushmeldingen](../../delivery/using/about-mobile-app-channel.md) verzenden naar mobiele iOS- en Android-apparaten via speciale apps. Nadat configuratie- en integratiestappen zijn uitgevoerd, kunnen iOS- en Android-leveringen worden gemaakt en verzonden. U kunt ook veelzijdige meldingen ontwerpen met afbeeldingen of video&#39;s.
+Met Adobe Campaign kunt u gepersonaliseerde en gesegmenteerde [pushmeldingen](../../delivery/using/about-mobile-app-channel.md) verzenden naar mobiele iOS- en Android-apparaten via specifieke apps. Nadat configuratie- en integratiestappen zijn uitgevoerd, kunnen iOS- en Android-leveringen worden gemaakt en verzonden. U kunt ook veelzijdige meldingen ontwerpen met afbeeldingen of video&#39;s.
 
 ## Direct mail {#direct-mail}
 
 [Directe post](../../delivery/using/about-direct-mail-channel.md) is een off-line kanaal dat u toestaat om het dossier te personaliseren en te produceren dat door directe postleveranciers wordt vereist. Het biedt u de mogelijkheid om online en off-line kanalen in uw klantenreizen te mengen.
 
-Met onlinekanalen kunt u uw berichten maken (e-mail, sms, levering van mobiele apps, enz.) en stuur ze rechtstreeks vanuit Adobe Campaign naar uw doelgroep. Bij offlinekanalen is dit anders. Wanneer u een directe postbestelling voorbereidt, genereert Adobe Campagne een dossier met alle gerichte profielen en de gekozen contactinformatie (postadres bijvoorbeeld). U kunt dit bestand dan naar uw directe-mailprovider sturen, die voor de verzending zal zorgen.
+Met onlinekanalen kunt u uw berichten maken (e-mail, sms, levering van mobiele apps, enz.) en stuur ze rechtstreeks vanuit Adobe Campaign naar je publiek. Bij offlinekanalen is dit anders. Wanneer u een directe postbestelling voorbereidt, genereert Adobe Campaign een bestand met alle doelprofielen en de gekozen contactgegevens (bijvoorbeeld postadres). U kunt dit bestand dan naar uw directe-mailprovider sturen, die voor de verzending zal zorgen.
+
+## Andere kanalen {#other-channels}
+
+Adobe Campaign biedt leveringssjablonen van het Bureau of de Telefoon aan, die worden gebruikt om externe leveringen tot stand te brengen. Als u deze kanalen gebruikt, moet u speciale methoden instellen voor het verwerken van uitvoerbestanden. De stappen van de configuratie zijn het zelfde als voor [Directe post kanaal](../../delivery/using/about-direct-mail-channel.md).
+
+Bovendien gebruiken de &quot;Andere&quot;typeleveringen een specifiek technisch malplaatje dat geen proces uitvoert: hiermee kunnen ze marketingacties beheren die buiten het Adobe Campaign-platform worden uitgevoerd.
+
+Dit kanaal heeft geen specifiek mechanisme. Het is een generisch kanaal dat zijn eigen externe rekening heeft die optie, het type van leveringsmalplaatje en activiteit van het campagnewerkschema verpletteren, enkel zoals een ander communicatiekanaal beschikbaar in Adobe Campaign.
+
+Dit kanaal is alleen bedoeld voor beschrijvende doeleinden, bijvoorbeeld om leveringen te definiëren waarvoor u het doel van een campagne die is uitgevoerd in een ander programma dan Adobe Campaign, wilt bijhouden.
