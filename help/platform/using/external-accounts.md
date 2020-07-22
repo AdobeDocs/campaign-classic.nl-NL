@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Externe accounts worden gebruikt door technische processen, zoals technische wor
 
    ![](assets/ext_account_1.png)
 
-1. Klik op de **[!UICONTROL New]** knop.
+1. Klik op de knop **[!UICONTROL New]**. 
 
    ![](assets/ext_account_2.png)
 
@@ -111,9 +111,9 @@ De volgende kanalen kunnen worden gevormd:
 
 * [E-mail](../../installation/using/deploying-an-instance.md#email-channel-parameters)
 * [Mobiel (SMS)](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)
-* [Telefoon](../../delivery/using/other-channels.md)
+* [Telefoon](../../delivery/using/communication-channels.md#other-channels)
 * [Direct mail](../../delivery/using/about-direct-mail-channel.md)
-* [Bureau](../../delivery/using/other-channels.md)
+* [Bureau](../../delivery/using/communication-channels.md#other-channels)
 * [Facebook](../../social/using/publishing-on-facebook-walls.md#delegating-write-access-to-adobe-campaign)
 * [Twitter](../../social/using/configuring-publishing-on-twitter.md)
 * [iOS-kanaal](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-ios)
@@ -121,7 +121,7 @@ De volgende kanalen kunnen worden gevormd:
 
 ## Externe FTP-account {#ftp-external-account}
 
-Met de externe FTP-account kunt u toegang tot een server buiten Adobe Campaign configureren en testen. Als u verbindingen wilt instellen met externe systemen, zoals FTP-servers 898 die worden gebruikt voor bestandsoverdracht, kunt u uw eigen externe accounts maken. Raadpleeg deze [pagina](../../workflow/using/file-transfer.md)voor meer informatie.
+Met de externe FTP-account kunt u toegang tot een server buiten Adobe Campaign configureren en testen. Als u verbindingen wilt instellen met externe systemen, zoals FTP-servers 898 die worden gebruikt voor bestandsoverdracht, kunt u uw eigen externe accounts maken. For more on this, refer to this [page](../../workflow/using/file-transfer.md).
 
 Hiertoe geeft u in deze externe account het adres en de referenties op waarmee de verbinding met de FTP-server tot stand wordt gebracht
 
@@ -243,7 +243,7 @@ In het **[!UICONTROL Default]** veld kunt u een standaardqueryband invoeren die 
 
 In het **[!UICONTROL Users]** veld kunt u voor elke gebruiker een queryband opgeven. U kunt zoveel sleutel-/waardeparen toevoegen als u nodig hebt, bijvoorbeeld priority=1;workload=high. Als aan de gebruiker geen queryband is toegewezen, wordt het **[!UICONTROL Default]** veld toegepast.
 
-Raadpleeg de documentatie bij **[!UICONTROL Query banding]** de [metagegevens voor meer informatie over](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw)het document.
+For more information on **[!UICONTROL Query banding]**, refer to the [Teradata documentation](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
 
 ## Externe account voor Web Analytics {#web-analytics-external-account}
 
@@ -251,13 +251,13 @@ Met de **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** externe
 
 ![](assets/ext_account_10.png)
 
-Voor deze externe account moet de berekeningsformule voor bijgehouden URL&#39;s worden verrijkt en moet de verbinding tussen de twee oplossingen worden goedgekeurd. Raadpleeg deze [pagina](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign)voor meer informatie.
+Voor deze externe account moet de berekeningsformule voor bijgehouden URL&#39;s worden verrijkt en moet de verbinding tussen de twee oplossingen worden goedgekeurd. For more on this, refer to this [page](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign).
 
 ## Externe account voor Facebook connect {#facebook-connect-external-account}
 
 Met de **[!UICONTROL Facebook Connect]** externe account kunt u persoonlijke inhoud weergeven in uw Facebook-toepassingen, waardoor het eenvoudiger wordt om vooruitzichten te krijgen via dit sociale netwerk.
 
-Voor elke Facebook-toepassing moet u een **[!UICONTROL Facebook Connect]** type extern account maken. Raadpleeg de [pagina](../../social/using/creating-a-facebook-application.md#configuring-external-accounts)voor meer informatie.
+Voor elke Facebook-toepassing moet u een **[!UICONTROL Facebook Connect]** type extern account maken. For more on this, refer to [page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
 ![](assets/ext_account_12.png)
 
@@ -343,7 +343,7 @@ Raadpleeg deze [pagina](../../integrations/using/configuring-ims.md)voor meer in
 
 ## Externe SFTP-account {#sftp-external-account}
 
-Met de externe SFTP-account kunt u toegang tot een server buiten Adobe Campaign configureren en testen. Als u verbindingen wilt instellen met externe systemen, zoals SFTP, die worden gebruikt voor bestandsoverdracht, kunt u uw eigen externe accounts maken. Raadpleeg deze [pagina](../../workflow/using/file-transfer.md)voor meer informatie.
+Met de externe SFTP-account kunt u toegang tot een server buiten Adobe Campaign configureren en testen. Als u verbindingen wilt instellen met externe systemen, zoals SFTP, die worden gebruikt voor bestandsoverdracht, kunt u uw eigen externe accounts maken. For more on this, refer to this [page](../../workflow/using/file-transfer.md).
 
 ![](assets/ext_account_4.png)
 
@@ -385,7 +385,7 @@ For more on this, refer to this [section](../../integrations/using/about-adobe-e
 
 ## Amazon Simple Storage Service (S3) externe account {#amazon-simple-storage-service--s3--external-account}
 
-De Amazon Simple Storage Service (S3)-connector kan worden gebruikt voor het importeren of exporteren van gegevens naar Adobe Campaign. Deze kan worden ingesteld in een workflowactiviteit. Raadpleeg deze [pagina](../../workflow/using/file-transfer.md)voor meer informatie.
+De Amazon Simple Storage Service (S3)-connector kan worden gebruikt voor het importeren of exporteren van gegevens naar Adobe Campaign. Deze kan worden ingesteld in een workflowactiviteit. For more on this, refer to this [page](../../workflow/using/file-transfer.md).
 
 ![](assets/ext_account_3.png)
 
