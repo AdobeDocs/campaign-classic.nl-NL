@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f097fcc4363181cda21386840f19e2523c3af3f9
+source-git-commit: 890153a5b30594a1cb90606db4be8fd1ec19267b
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Deze pagina bevat de Gold Standard-releases.
 
 Raadpleeg dit [artikel](https://helpx.adobe.com/campaign/kb/gold-standard.html)voor meer informatie over de Gold Standard-upgrade.
 
-## ![](assets/do-not-localize/blue_2.png) Gold Standard 10-release{#gs-10}
+## ![](assets/do-not-localize/limited.png) Gold Standard 10-release{#gs-10}
 
 _7 juli 2020_
 
