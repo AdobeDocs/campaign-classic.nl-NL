@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4d04c261441d4d66441c3665a7beb785383c9f14
+source-git-commit: fef684cd20f9b210025b21d2bc6bdb209a929f7c
 workflow-type: tm+mt
-source-wordcount: '2924'
+source-wordcount: '2961'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Er zijn twee soorten toestemmingen u aan een gebruiker kunt verlenen:
 
 >[!NOTE]
 >
->Voordat u begint met het definiëren van machtigingen, raadt Adobe u aan de checklist voor [beveiligingsconfiguraties](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)te lezen.
+>Voordat u begint met het definiëren van machtigingen, raadt Adobe u aan de [configuratiecontrolelijst](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)voor beveiliging te lezen.
 
 ## Operatoren {#operators}
 
@@ -241,55 +241,63 @@ Voer de volgende stappen uit om een nieuwe operatorgroep te maken:
 
 De standaardgroepen met operatoren zijn:
 
-1. Leveringsoperatoren
+1. **[!UICONTROL Administrator]**
+
+   De operatoren in deze groep hebben volledige toegang tot het exemplaar. Beheerders zijn gebruikers die toegang hebben tot de meest technische onderdelen van de interface. Ze spelen een **[!UICONTROL Administration]** rol en zorgen ervoor dat het platform helemaal is opgezet.
+
+   Deze groep bevat het volgende benoemde recht:
+
+   * **[!UICONTROL ADMINISTRATION]**: het recht om objecten zoals workflow, levering, scripts, enz. uit te voeren, te maken, te bewerken/te verwijderen.
+
+1. **[!UICONTROL Delivery operators]**
 
    De exploitanten in deze groep zijn verantwoordelijk voor het beheer van de leveringen: zij verlenen toegang tot de belangrijkste middelen die voor het creëren van en het voorbereiden van levering worden vereist (campagneretypologieën, leveringsafbeeldingen, standaardmalplaatjes, verpersoonlijkingsblokken, enz.).
 
    Deze groep bevat de volgende benoemde rechten:
 
-   * LEVERINGEN VOORBEREIDEN: het recht om de leveringsanalyse te maken, te bewerken en te starten;
-   * AFLEVERINGEN STARTEN: het recht om eerder geanalyseerde leveringen goed te keuren.
+   * **[!UICONTROL PREPARE DELIVERIES]**: het recht om de leveringsanalyse te maken, te bewerken en te starten;
+   * **[!UICONTROL START DELIVERIES]**: het recht om eerder geanalyseerde leveringen goed te keuren.
 
-1. Campagne-managers
+1. **[!UICONTROL Campaign managers]**
 
-   De exploitanten in deze groep kunnen marketingcampagnes beheren: hiermee hebt u toegang tot de objecten die aan campagnes zijn gekoppeld (plannen, programma&#39;s, workflows, budgetten, enz.).
+   De exploitanten in deze groep kunnen marketingcampagnes beheren: hiermee hebt u toegang tot de objecten die aan campagnes zijn gekoppeld (plannen, programma&#39;s, workflows, budgetten, enz.) binnen het kader van **[!UICONTROL Campaign]** (optionele Adobe Campaign-module).
 
    Deze groep bevat de volgende benoemde rechten:
 
-   * MAPPEN INVOEGEN: het recht om mappen in te voegen in de Adobe Campaign-structuur (op voorwaarde dat u bewerkingsrechten hebt voor de betrokken vertakkingen);
-   * WORKFLOW: recht om werkstromen te gebruiken.
+   * **[!UICONTROL INSERT FOLDERS]**: het recht om mappen in te voegen in de Adobe Campaign-structuur (op voorwaarde dat u bewerkingsrechten hebt voor de betrokken vertakkingen);
+   * **[!UICONTROL WORKFLOW]**: recht om werkstromen te gebruiken.
 
    >[!NOTE]
    >
    >Met deze groep kunnen operatoren geen leveringen starten.
 
-1. Inhoudsauteurs
+1. **[!UICONTROL Content contributors]**
 
-   De operatoren in deze groep hebben toegang tot de mappen Inhoud in het kader van **Inhoudbeheer** (optionele Adobe Campaign-module). Deze groep verleent geen aanvullende rechten.
+   De operatoren in deze groep hebben toegang tot de mappen Inhoud binnen het kader van **[!UICONTROL Content management]** (optionele Adobe Campaign-module). Deze groep verleent geen aanvullende rechten.
 
-1. Toegang tot rapporten
+1. **[!UICONTROL Access to reports]**
 
    Deze groep is gereserveerd voor externe operatoren, voor toegang tot de leveringsrapporten via een webtoegang.
 
-1. Workflow-uitvoering
+1. **[!UICONTROL Workflow execution]**
 
    Met deze groep kunt u operatoren het recht geven om workflows te beheren die geen verband houden met campagnes.
 
-1. Workflowsupervisors
+1. **[!UICONTROL Workflow supervisors]**
 
    De operatoren in deze groep ontvangen een e-mailkennisgeving in geval van waarschuwingen over workflows voor campagnes.
 
 1. Lokaal/centraal beheer
 
-   Met deze groepen kunt u **Distributed Marketing** (optionele Adobe Campaign-module) gebruiken.
+   U kunt deze groepen gebruiken **[!UICONTROL Distributed marketing]** (optionele Adobe Campaign-module).
 
-1. Aanbiedingsmanagers
+1. **[!UICONTROL Offer managers]**
 
    De operatoren in deze groep kunnen aanbiedingen maken en onderhouden. Raadpleeg deze [pagina](../../interaction/using/operator-profiles.md)voor meer informatie hierover.
 Deze groep bevat de volgende benoemde rechten:
 
-   * MAPPEN INVOEGEN: Recht om mappen in te voegen in de Adobe Campaign-structuur (op voorwaarde dat u bewerkrechten hebt voor de betrokken vertakkingen).
-   * MAPPEN BEWERKEN: Recht om omslageigenschappen zoals interne naam, etiket, bijbehorende beeld, subomslagorde te veranderen, etc.
+   * **[!UICONTROL INSERT FOLDERS]**: Recht om mappen in te voegen in de Adobe Campaign-structuur (op voorwaarde dat u bewerkrechten hebt voor de betrokken vertakkingen).
+   * **[!UICONTROL EDIT FOLDERS]**: Recht om omslageigenschappen zoals interne naam, etiket, bijbehorende beeld, subomslagorde te veranderen, etc.
 
 ## Benoemde rechten {#named-rights}
 
@@ -419,7 +427,7 @@ Wanneer u een map naar een weergave converteert, worden alle gegevens die overee
 >
 >De weergaven bevatten gegevens en bieden toegang tot deze gegevens, maar de gegevens worden niet fysiek opgeslagen in de weergavemap. De exploitant moet de aangewezen rechten voor de gewenste actie in de omslagen van de gegevensbron (lees minstens toegang) hebben.
 >
->Als u toegang tot een weergave wilt geven zonder de bronmap te openen, geeft u geen leestoegang op het bovenliggende knooppunt van de bronmap.
+>Als u toegang tot een weergave wilt geven zonder toegang tot de bronmap, geeft u geen leestoegang op het bovenliggende knooppunt van de bronmap.
 
 Om weergaven van mappen te onderscheiden, wordt de naam van elke weergave weergegeven in een andere kleur (donkercyaan).
 
