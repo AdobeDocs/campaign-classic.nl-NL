@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: fef684cd20f9b210025b21d2bc6bdb209a929f7c
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 2%
 
 ---
 
@@ -24,10 +27,10 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 Er zijn twee soorten operatoren die Interactie gebruiken: bieden managers en leveringsmanagers aan. Ze hebben elk specifieke rechten die ze slechts toegang geven tot bepaalde delen van de boom en het platform.
 
-* **[!UICONTROL Offer manager]** : aanbiedingen maken en onderhouden
+* **[!UICONTROL Offer manager]** : aanbiedingen maken en onderhouden. Als aanbiedingen worden gebruikt in de workflow, moet de operator zich in de operatorgroep **[!UICONTROL Administrator]** of **[!UICONTROL Offer managers)** bevinden om de workflow uit te voeren.
 * **[!UICONTROL Delivery manager]** : goedkeurt en gebruikt voorstellen
 
-De stappen voor het maken van operatoren die specifiek zijn voor Interactie zijn identiek aan de stappen die worden gebruikt om alle andere operatoren op het platform te maken. Zie [deze sectie](../../platform/using/access-management.md#creating-an-operator)voor meer informatie. De rechten worden gevormd tijdens de verwezenlijking van de exploitant.
+De stappen voor het maken van operatoren die specifiek zijn voor Interactie zijn identiek aan de stappen die worden gebruikt om alle andere operatoren op het platform te maken. Raadpleeg [deze sectie](../../platform/using/access-management.md#creating-an-operator) voor meer informatie. De rechten worden gevormd tijdens de verwezenlijking van de exploitant.
 
 ## Aanbiedingsmanager {#offer-manager}
 
