@@ -13,15 +13,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
+source-git-commit: d4edd389fde91c3f316c5213f4d7f34e51979112
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2473'
 ht-degree: 0%
 
 ---
 
 
 # Gegevens importeren{#importing-data}
+
+>[!CAUTION]
+>
+>Houd bij het gebruik van deze functionaliteit rekening met de beperkingen voor SFTP-opslag, DB-opslag en actieve profielen die gelden voor uw AdobeCampagne-contract.
 
 ## Gegevens verzamelen {#how-to-collect-data}
 
@@ -101,7 +105,7 @@ De volgende stappen worden uitgevoerd:
 
    ![](assets/gpg_external.png)
 
-1. In Campaign Classic maakt u een workflow om de gecodeerde gegevens te importeren en te decoderen met de persoonlijke sleutel die is geïnstalleerd via het Configuratiescherm. Hiervoor maken we als volgt een workflow:
+1. In Campaign Classic, bouwt een werkschema om de gecodeerde gegevens in te voeren en het te decrypteren gebruikend de privé sleutel die via het Controlebord is geïnstalleerd. Hiervoor maken we als volgt een workflow:
 
    ![](assets/gpg_workflow.png)
 
@@ -240,7 +244,7 @@ In dit voorbeeld ziet u hoe u een workflow instelt die opnieuw kan worden gebrui
 
    * Selecteer in de **[!UICONTROL Name of the file to load]** sectie de velden **[!UICONTROL Upload a file from the local machine]** en laat deze leeg. Telkens wanneer een nieuwe werkstroom van dit malplaatje wordt gecreeerd, kunt u hier het dossier specificeren u wilt, zolang het aan de bepaalde structuur beantwoordt.
 
-      U kunt alle opties gebruiken, maar u moet de sjabloon dienovereenkomstig aanpassen. Als u bijvoorbeeld een optie selecteert **[!UICONTROL Specified in the transition]**, kunt u een **[!UICONTROL File Transfer]** activiteit toevoegen voordat u het bestand ophaalt dat u wilt importeren van een FTP-/SFTP-server. Met S3- of SFTP-verbinding kunt u ook segmentgegevens importeren naar Adobe Campaign met het Adobe Real-time Customer Data-platform. Raadpleeg deze [documentatie](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html)voor meer informatie.
+      U kunt alle opties gebruiken, maar u moet de sjabloon dienovereenkomstig aanpassen. Als u bijvoorbeeld een optie selecteert **[!UICONTROL Specified in the transition]**, kunt u een **[!UICONTROL File Transfer]** activiteit toevoegen voordat u het bestand ophaalt dat u wilt importeren van een FTP-/SFTP-server. Met S3- of SFTP-verbinding kunt u ook segmentgegevens importeren naar Adobe Campaign met het Adobe Real-Time Customer Data-platform. For more on this, refer to this [documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html).
 
       ![](assets/import_template_example1.png)
 
