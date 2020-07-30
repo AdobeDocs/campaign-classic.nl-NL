@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 9f70468e3dd7003a18812d07669f10c561e8bef7
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 0%
@@ -161,7 +161,7 @@ Deze voorbeeld-JS-code slaat de trigger op in de database.
 
 ```
 function processPipelineMessage(xmlTrigger)
- {```
+ {
  (…)
  var event = 
  <pipelineEvent
@@ -209,7 +209,7 @@ Hier volgt een voorbeeldschemacode voor deze tabel:
 | shopper_id | String 32 | shopper_id | De interne id van de klant. Wordt ingesteld door de afstemmingsworkflow. Als nul, betekent het dat de klant in Campaign onbekend is. |
 | shopper_key | Lang | shopper_key | De externe id van de klant zoals vastgelegd door Analytics. |
 | gemaakt | Datumtijd | Gemaakt | De tijd waarop de gebeurtenis in Campagne werd gecreeerd. |
-| lastModified | Datumtijd | Laatst gewijzigd | De laatste keer dat de gebeurtenis is gewijzigd in Adobe. |
+| lastModified | Datumtijd | Laatst gewijzigd | De laatste keer dat de gebeurtenis werd gewijzigd in Adobe. |
 | timeGMT | Datumtijd | Tijdstempel | Het tijdstip waarop de gebeurtenis in Analytics is gegenereerd. |
 
 ### Gebeurtenissen weergeven {#display-events}
