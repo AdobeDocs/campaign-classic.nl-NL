@@ -5,10 +5,10 @@ index: y
 product: adobe campaign
 sub-product: adobe campagne classic
 translation-type: tm+mt
-source-git-commit: 14e275203e3436183d5a5c743375ba42f6153c6d
+source-git-commit: b19a8e477b4419a369fa257b4629f4a01f0b0400
 workflow-type: tm+mt
-source-wordcount: '2094'
-ht-degree: 0%
+source-wordcount: '2097'
+ht-degree: 8%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 + [Productdocumentatie](campaign-classic-home.md)
 + [Laatste updates](rn/using/documentation-updates.md)
-+ Release Notes {#release-notes}
++ Release-opmerkingen{#release-notes}
    + [Aan de slag met upgrades](rn/using/rn-overview.md)
    + [Laatste release](rn/using/latest-release.md)
    + [Gold Standard-release](rn/using/gold-standard.md)
-   + Eerdere versies {#previous-releases}
+   + Eerdere releases {#previous-releases}
       + [Release 20.1](rn/using/release--20-1.md)
       + [Release 19.2](rn/using/release--19-2.md)
       + [Release 19.1](rn/using/release--19-1.md)
@@ -31,9 +31,9 @@ ht-degree: 0%
    + Verouderde functies en compatibiliteit {#deprecated-compatibility}
       + [Verouderde functies](rn/using/deprecated-features.md)
       + [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md)
-+ Aan de slag {#getting-started}
++ Getting Started {#getting-started}
    + Starten met Adobe Campaign {#starting-with-adobe-campaign}
-      + [Info over Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
+      + [Informatie over Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
       + [Privacy en instemming](platform/using/privacy-and-recommendations.md)
       + [Adobe Campaign starten](platform/using/launching-adobe-campaign.md)
       + [Adobe Campaign-werkruimte](platform/using/adobe-campaign-workspace.md)
@@ -47,25 +47,25 @@ ht-degree: 0%
          + [Configuratie](platform/using/faq-campaign-config.md)
          + [Rapporten](platform/using/faq-reporting.md)
          + [Ontwikkeling](platform/using/faq-developers.md)
-      + [Zelfstudies](platform/using/tutorials.md)
+      + [Tutorials](platform/using/tutorials.md)
    + Profielbeheer {#profile-management}
-      + [Profielen](platform/using/about-profiles.md)
+      + [Informatie over profielen](platform/using/about-profiles.md)
       + [Een profiel bewerken](platform/using/editing-a-profile.md)
       + [Profielen toevoegen](platform/using/adding-profiles.md)
       + [Profielen beheren](platform/using/managing-profiles.md)
       + [Gegevens bijwerken](platform/using/updating-data.md)
       + [Profielen exporteren en importeren](platform/using/exporting-and-importing-profiles.md)
       + [Lijsten maken en beheren](platform/using/creating-and-managing-lists.md)
-   + Gegevens importeren en exporteren {#importing-and-exporting-data}
+   + Data importeren en exporteren {#importing-and-exporting-data}
       + [Algemene invoer en uitvoer](platform/using/generic-imports-and-exports.md)
-      + [Gegevens exporteren](platform/using/exporting-data.md)
-      + [Gegevens importeren](platform/using/importing-data.md)
+      + [Data exporteren](platform/using/exporting-data.md)
+      + [Data importeren](platform/using/importing-data.md)
       + [SFTP-servergebruik](platform/using/sftp-server-usage.md)
-   + Gegevens filteren {#filtering-data}
+   + Data filteren {#filtering-data}
       + [Filteropties](platform/using/filtering-options.md)
       + [Filters maken](platform/using/creating-filters.md)
       + [Hoofdletters gebruiken](platform/using/use-case.md)
-   + Vragen maken {#creating-queries}
+   + Query&#39;s maken {#creating-queries}
       + [Over query&#39;s in campagne](platform/using/about-queries-in-campaign.md)
       + [Stappen om een query te maken](platform/using/steps-to-create-a-query.md)
       + [Filtervoorwaarden definiëren](platform/using/defining-filter-conditions.md)
@@ -73,7 +73,7 @@ ht-degree: 0%
       + [Toegangsbeheer](platform/using/access-management.md)
       + [Werken met gegevenspakketten](platform/using/working-with-data-packages.md)
       + [Opsommingen beheren](platform/using/managing-enumerations.md)
-      + [Externe rekeningen](platform/using/external-accounts.md)
+      + [Externe accounts](platform/using/external-accounts.md)
    + Toegang tot een externe database (FDA){#accessing-external-database}
       + [FDA](platform/using/about-fda.md)
       + [FDA-connectors configureren](platform/using/specific-configuration-database.md)
@@ -89,8 +89,9 @@ ht-degree: 0%
       + [CRM-connectors](platform/using/crm-connectors.md)
       + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
 + Berichten verzenden {#sending-messages}
-   + Informatie over leveringen en kanalen {#about-deliveries-and-channels}
+   + Aan de slag met berichten {#about-deliveries-and-channels}
       + [Communicatiekanalen](delivery/using/communication-channels.md)
+      + [Best practices voor levering](delivery/using/delivery-best-practices.md)
       + [Toegang tot leveringsgegevens](delivery/using/accessing-deliveries-information.md)
       + [Soorten leveringen](delivery/using/types-of-deliveries.md)
    + Belangrijke stappen bij het maken van een levering {#key-steps-when-creating-a-delivery}
@@ -118,10 +119,10 @@ ht-degree: 0%
    + Direct mail verzenden {#sending-direct-mail}
       + [Over direct-mailkanaal](delivery/using/about-direct-mail-channel.md)
       + [Direct maillevering maken](delivery/using/creating-a-direct-mail-delivery.md)
-      + [De inhoud voor direct mail definiëren](delivery/using/defining-the-direct-mail-content.md)
+      + [De content voor direct mail definiëren](delivery/using/defining-the-direct-mail-content.md)
       + [Valideren](delivery/using/validating.md)
    + Leveringssjablonen gebruiken {#using-delivery-templates}
-      + [Over sjablonen](delivery/using/about-templates.md)
+      + [Sjablonen](delivery/using/about-templates.md)
       + [Een leveringssjabloon maken](delivery/using/creating-a-delivery-template.md)
       + [Een doeltoewijzing selecteren](delivery/using/selecting-a-target-mapping.md)
       + [Een levering maken via een sjabloon](delivery/using/creating-a-delivery-from-a-template.md)
@@ -145,23 +146,23 @@ ht-degree: 0%
       + [Abonnementen beheren](delivery/using/managing-subscriptions.md)
       + [Virale en sociale marketing](delivery/using/viral-and-social-marketing.md)
    + Bewaking van leveringen {#monitoring-deliveries}
-      + [Toezicht op levering](delivery/using/monitoring-a-delivery.md)
+      + [Een levering controleren](delivery/using/monitoring-a-delivery.md)
       + [Leveringsfouten begrijpen](delivery/using/understanding-delivery-failures.md)
       + [Werken met quarantainebeheer](delivery/using/understanding-quarantine-management.md)
-   + Berichten bijhouden {#tracking-messages}
+   + Berichten traceren {#tracking-messages}
       + [Over berichten bijhouden](delivery/using/about-message-tracking.md)
       + [Hoe te om gevolgde verbindingen te vormen](delivery/using/how-to-configure-tracked-links.md)
       + [URL-tracking aanpassen](delivery/using/personalizing-url-tracking.md)
       + [De trackinglogboeken openen](delivery/using/accessing-the-tracking-logs.md)
       + [Tekstspatiëring](delivery/using/testing-tracking.md)
    + Leverbaarheidsbeheer {#deliverability-management}
-      + [Over leverbaarbaarheid](delivery/using/about-deliverability.md)
+      + [Informatie over leverbaarheid](delivery/using/about-deliverability.md)
       + [Belangrijkste punten om te controleren](delivery/using/deliverability-key-points.md)
       + [Een nieuw platform starten](delivery/using/starting-new-platform.md)
       + [Inhoud van controleberichten](delivery/using/control-message-content.md)
       + [Verbeter uw reputatie](delivery/using/improve-reputation.md)
       + [Technische aanbevelingen](delivery/using/technical-recommendations.md)
-      + [Leverbaarheid controleren](delivery/using/monitoring-deliverability.md)
+      + [Leverbaarheid opvolgen](delivery/using/monitoring-deliverability.md)
       + [Inbox rendering](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Aanbevolen werkwijzen opnieuw inschakelen](delivery/using/re-engagement-best-practices.md)
@@ -199,7 +200,7 @@ ht-degree: 0%
       + [Informatie over campagetypologieën](campaign/using/about-campaign-typologies.md)
       + [Drukvoorschriften](campaign/using/pressure-rules.md)
       + [Consistentieregels](campaign/using/consistency-rules.md)
-      + [Controlevoorschriften](campaign/using/control-rules.md)
+      + [Beheerregels](campaign/using/control-rules.md)
       + [Filterregels](campaign/using/filtering-rules.md)
       + [Toepassingsregels](campaign/using/applying-rules.md)
       + [Campagnesimulaties](campaign/using/campaign-simulations.md)
@@ -223,13 +224,13 @@ ht-degree: 0%
       + [Aanbevolen werkwijzen voor rapportage](reporting/using/best-practices.md)
    + Toegang tot ingebouwde rapporten {#accessing-built-in-reports}
       + [Ingebouwde campagnerapporten](reporting/using/about-campaign-built-in-reports.md)
-      + [Lijst van verslagen](reporting/using/list-of-reports.md)
+      + [Lijst met rapporten](reporting/using/list-of-reports.md)
    + Verslagen over leveringen{#reports-on-deliveries}
       + [Rapporten over leveringen](reporting/using/reports-on-deliveries.md)
       + [Algemene rapporten](reporting/using/global-reports.md)
       + [Afleveringsrapporten](reporting/using/delivery-reports.md)
       + [Cumulatieve verslagen](reporting/using/cumulative-reports.md)
-      + [Indicatorberekening](reporting/using/indicator-calculation.md)
+      + [Berekening van indicatoren](reporting/using/indicator-calculation.md)
       + [Persoon/personen en ontvangers](reporting/using/person-people-recipients.md)
    + Populaties analyseren {#analyzing-populations}
       + [Informatie over beschrijvende analyse](reporting/using/about-descriptive-analysis.md)
@@ -297,7 +298,7 @@ ht-degree: 0%
    + [Over de integratie van campagnes](integrations/using/about-campaign-integrations.md)
    + Delen van publiek {#audience-sharing}
       + [Soorten publiek delen met [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
-      + [Aanvraag indienen bij Adobe](integrations/using/submitting-request-to-adobe.md)
+      + [Aanvraag verzenden naar Adobe](integrations/using/submitting-request-to-adobe.md)
       + [Integratie van gedeelde soorten publiek configureren in [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [Problemen oplossen](integrations/using/troubleshooting.md)
       + [Soorten publiek importeren en exporteren](integrations/using/importing-and-exporting-audiences.md)
@@ -337,23 +338,23 @@ ht-degree: 0%
       + [Informatie over activiteiten](workflow/using/about-activities.md)
    + Algemene werking {#general-operation}
       + [Een workflow maken](workflow/using/building-a-workflow.md)
-      + [Doelgegevens](workflow/using/targeting-data.md)
-      + [Gegevens importeren](workflow/using/importing-data.md)
+      + [Targetingdata](workflow/using/targeting-data.md)
+      + [Data importeren](workflow/using/importing-data.md)
       + [Werkstroomgegevens gebruiken](workflow/using/how-to-use-workflow-data.md)
       + [Best practices voor workflows](workflow/using/workflow-best-practices.md)
    + Een workflow uitvoeren {#executing-a-workflow}
       + [Een workflow starten](workflow/using/starting-a-workflow.md)
-      + [Levenscyclus van werkstroom](workflow/using/workflow-life-cycle.md)
+      + [Levenscyclus van workflows](workflow/using/workflow-life-cycle.md)
       + [Levenscyclus gegevens](workflow/using/data-life-cycle.md)
       + [Goedkeuringen definiëren](workflow/using/defining-approvals.md)
       + [Architectuur](workflow/using/architecture.md)
-   + Gerichte activiteiten {#targeting-activities}
-      + [Over doelactiviteiten](workflow/using/about-targeting-activities.md)
+   + Targetingactiviteiten {#targeting-activities}
+      + [Informatie over targetingactiviteiten](workflow/using/about-targeting-activities.md)
       + [Query](workflow/using/query.md)
       + [Incrementele query](workflow/using/incremental-query.md)
       + [Leeslijst](workflow/using/read-list.md)
-      + [Unie](workflow/using/union.md)
-      + [Intersectie](workflow/using/intersection.md)
+      + [Samenvoeging](workflow/using/union.md)
+      + [Doorsnede](workflow/using/intersection.md)
       + [Uitsluiting](workflow/using/exclusion.md)
       + [Splitsen](workflow/using/split.md)
       + [Cellen](workflow/using/cells.md)
@@ -366,15 +367,15 @@ ht-degree: 0%
       + [Dimensie wijzigen](workflow/using/change-dimension.md)
       + [Lijstupdate](workflow/using/list-update.md)
       + [Abonnementsservices](workflow/using/subscription-services.md)
-      + [Gegevens bijwerken](workflow/using/update-data.md)
+      + [Data bijwerken](workflow/using/update-data.md)
       + [CRM-connector](workflow/using/crm-connector.md)
    + Stroombeheeractiviteiten {#flow-control-activities}
       + [Informatie over stroombeheeractiviteiten](workflow/using/about-flow-control-activities.md)
-      + [Begin en einde](workflow/using/start-and-end.md)
-      + [Vork](workflow/using/fork.md)
+      + [Start- en Einde-activiteiten](workflow/using/start-and-end.md)
+      + [Vertakking](workflow/using/fork.md)
       + [AND-join](workflow/using/and-join.md)
       + [Planner](workflow/using/scheduler.md)
-      + [Testen](workflow/using/test.md)
+      + [Test](workflow/using/test.md)
       + [Wachten](workflow/using/wait.md)
       + [Tijdbeperking](workflow/using/time-constraint.md)
       + [Subworkflow](workflow/using/sub-workflow.md)
@@ -385,7 +386,7 @@ ht-degree: 0%
       + [Taak](workflow/using/task.md)
    + Acties {#action-activities}
       + [Informatie over actieactiviteiten](workflow/using/about-action-activities.md)
-      + [Aflevering](workflow/using/delivery.md)
+      + [Levering](workflow/using/delivery.md)
       + [Afleveringscontrole](workflow/using/delivery-control.md)
       + [Doorlopende levering](workflow/using/continuous-delivery.md)
       + [Terugkerende levering](workflow/using/recurring-delivery.md)
@@ -407,7 +408,7 @@ ht-degree: 0%
       + [Webdownload](workflow/using/web-download.md)
       + [Binnenkomende e-mails](workflow/using/inbound-emails.md)
       + [Binnenkomende SMS](workflow/using/inbound-sms.md)
-   + Gebruik hoofdletters {#use-cases}
+   + Use cases {#use-cases}
       + [Gebruikskwesties bij werkstromen](workflow/using/about-workflow-use-cases.md)
       + Leveringen {#deliveries}
          + [De lokale goedkeuringsactiviteit gebruiken](workflow/using/using-the-local-approval-activity.md)
@@ -423,7 +424,7 @@ ht-degree: 0%
       + Gegevensbeheer {#data-management}
          + [Gegevensupdates coördineren](workflow/using/coordinating-data-updates.md)
          + [Een overzichtslijst maken](workflow/using/creating-a-summary-list.md)
-         + [Gegevens worden verrijkt](workflow/using/enriching-data.md)
+         + [Data verrijken](workflow/using/enriching-data.md)
          + [Werken met aggregaten](workflow/using/using-aggregates.md)
          + [Driemaandelijkse lijstupdate die een stijgende vraag gebruikt](workflow/using/quarterly-list-update.md)
       + Query&#39;s ontwerpen {#designing-queries}
@@ -436,11 +437,11 @@ ht-degree: 0%
          + [Een filter maken](workflow/using/creating-a-filter.md)
          + [Gedupliceerde ontvangers filteren](workflow/using/filtering-duplicated-recipients.md)
    + Workflows controleren {#monitoring-workflows}
-      + [Uitvoering van controlewerkstroom](workflow/using/monitoring-workflow-execution.md)
+      + [Workflowuitvoering opvolgen](workflow/using/monitoring-workflow-execution.md)
       + [Technische workflows controleren](workflow/using/monitoring-technical-workflows.md)
       + [Workflow HeatMap](workflow/using/heatmap.md)
    + Geavanceerd beheer {#advanced-management}
-      + [Workflow-eigenschappen](workflow/using/workflow-properties.md)
+      + [Workfloweigenschappen](workflow/using/workflow-properties.md)
       + [Geavanceerde parameters](workflow/using/advanced-parameters.md)
       + [JavaScript-scripts en -sjablonen](workflow/using/javascript-scripts-and-templates.md)
       + [Toegang tot een externe database (FDA)](workflow/using/accessing-an-external-database--fda-.md)
@@ -452,7 +453,7 @@ ht-degree: 0%
       + [Technische workflows](workflow/using/about-technical-workflows.md)
       + [Leveringen](workflow/using/deliveries.md)
       + [Campagne](workflow/using/campaign.md)
-      + [Web Analytics](workflow/using/web-analytics.md)
+      + [Webanalyse](workflow/using/web-analytics.md)
       + [Distributed Marketing](workflow/using/distributed-marketing.md)
       + [Leverbaarheidscontrole](workflow/using/email-deliverability.md)
       + [Inbox rendering](workflow/using/inbox-rendering.md)
@@ -519,7 +520,7 @@ ht-degree: 0%
       + [Presentatieregels](interaction/using/presentation-rules.md)
       + [Aanbiedingen op een binnenkomend kanaal](interaction/using/offers-on-an-inbound-channel.md)
       + [Aanbiedingen op een uitgaand kanaal](interaction/using/offers-on-an-outbound-channel.md)
-+ Transactieberichten {#transactional-messaging}
++ Transactional Messaging {#transactional-messaging}
    + Inleiding {#introduction}
       + [Informatie over transactieberichten](message-center/using/about-transactional-messaging.md)
       + [Transactionele berichtenarchitectuur](message-center/using/transactional-messaging-architecture.md)
@@ -539,7 +540,7 @@ ht-degree: 0%
       + [Het beheren van zaadadressen in transactionele berichten](message-center/using/managing-seed-addresses-in-transactional-messages.md)
       + [Persoonlijke gegevens](message-center/using/personalization-data.md)
       + [Voorvertoning van Transactiebericht](message-center/using/transactional-message-preview.md)
-      + [Een proefafdruk verzenden](message-center/using/sending-a-proof.md)
+      + [Een proef verzenden](message-center/using/sending-a-proof.md)
       + [Sjabloonpublicatie](message-center/using/template-publication.md)
       + [Onpublicatie sjabloon](message-center/using/template-unpublication.md)
    + Gebeurtenisverwerking {#event-processing}
@@ -622,9 +623,9 @@ ht-degree: 0%
       + [De netwerkeindpunten van de campagne](installation/using/campaign-network-endpoints.md)
       + [Opdrachtlijnen](installation/using/command-lines.md)
       + [Nieuwe instanties maken](installation/using/creating-new-instances.md)
-      + [Lijst met Campaign Classic-opties](installation/using/configuring-campaign-options.md)
+      + [Lijst met opties voor Campaign Classic](installation/using/configuring-campaign-options.md)
       + [Campagne verwijderen](installation/using/uninstalling-campaign.md)
-+ Campaign Classic controleren {#monitoring-campaign-classic}
++ Controle Campaign Classic {#monitoring-campaign-classic}
    + Inleiding {#introduction}
       + [Voorwoord](production/using/foreword.md)
       + [Algemene architectuur](production/using/general-architecture.md)
@@ -674,7 +675,7 @@ ht-degree: 0%
 + Campaign Classic configureren {#configuring-campaign-classic}
    + Gegevensmodel {#data-model}
       + [Over het gegevensmodel](configuration/using/about-data-model.md)
-      + [Beschrijving van gegevensmodel](configuration/using/data-model-description.md)
+      + [Beschrijving van datamodel](configuration/using/data-model-description.md)
       + [Aanbevolen procedures](configuration/using/data-model-best-practices.md)
    + Schema-referentie {#schema-reference}
       + [Schema-verwijzing](configuration/using/about-schema-reference.md)
