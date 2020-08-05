@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1527'
 ht-degree: 0%
 
 ---
@@ -29,25 +29,23 @@ ht-degree: 0%
 
 Voor elke levering kunt u verschillende typen doelpopulaties definiëren. In de onderstaande sectie vindt u meer informatie over het selecteren van:
 
-* **De belangrijkste ontvangers van de levering**. [Lees meer](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target).
-* **De ontvangers van bewijsberichten**, om een validatiecyclus op te zetten. [Lees meer](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+* De belangrijkste ontvangers van de levering. [Meer informatie](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
+* De ontvangers van bewijsberichten, om een validatiecyclus op te zetten. [Meer informatie](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
 
-Bovendien, kunt u [zaadadressen](../../delivery/using/about-seed-addresses.md), en [controlegroepen](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)ook bepalen. indien de levering in een afzetcampagne is opgenomen.
+Bovendien, als de levering in een marketing campagne inbegrepen is, kunt u [zaadadressen](../../delivery/using/about-seed-addresses.md), en [controlegroepen](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)ook bepalen.
 
 ## De belangrijkste ontvangers van de levering selecteren {#selecting-the-main-target}
 
-In de meeste gevallen wordt het hoofddoel opgehaald uit de Campagne-database (standaardmodus).
+In de meeste gevallen wordt het hoofddoel opgehaald uit de Adobe Campaign-database (standaardmodus). Ontvangers kunnen echter ook in een extern bestand worden opgeslagen. Meer informatie vindt u in [deze sectie](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
 
-Ontvangers kunnen ook in een extern bestand worden opgeslagen. De configuratie van dit type van levering wordt voorgesteld in het [Selecteren van externe ontvangers](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+Volg onderstaande stappen om de ontvangers van een levering te selecteren:
 
-Voer de volgende stappen uit om de ontvangers van de levering te selecteren:
-
-1. Klik op de **[!UICONTROL To]** koppeling.
-1. Als de ontvangers in het gegevensbestand worden opgeslagen, selecteer de eerste optie.
+1. Selecteer in de leveringseditor **[!UICONTROL To]**.
+1. Als de ontvangers in het gegevensbestand worden opgeslagen, kies de eerste optie.
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. Selecteer de doelafbeelding in de **[!UICONTROL Target mapping]** vervolgkeuzelijst. Standaard doeltoewijzing voor Adobe Campaign is **[!UICONTROL Recipients]**.
+1. Selecteer de doelafbeelding in de **[!UICONTROL Target mapping]** vervolgkeuzelijst. Standaard Adobe Campaign-doeltoewijzing is **[!UICONTROL Recipients]**, gebaseerd op **nms:ontvangerschema** .
 
    Andere doeltoewijzingen zijn beschikbaar, en sommige kunnen met uw specifieke configuratie verwant zijn. Zie [Doeltoewijzing](../../delivery/using/selecting-a-target-mapping.md)selecteren voor meer informatie over doeltoewijzingen.
 
@@ -114,7 +112,7 @@ Dit doet u als volgt:
 
 1. Wanneer het invoeren van de ontvangers, klik de **[!UICONTROL File format definition...]** verbinding om het externe dossier te selecteren en te vormen.
 
-   Raadpleeg [deze sectie](../../platform/using/importing-data.md#step-2---source-file-selection)voor meer informatie over het importeren van gegevens.
+   For more information on data import, refer to [this section](../../platform/using/importing-data.md#step-2---source-file-selection).
 
 1. Klik **[!UICONTROL Finish]** en vorm uw levering als standaardlevering.
 
@@ -157,7 +155,7 @@ De volgende opties zijn beschikbaar:
 
       ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , d.w.z. ontvangers wier e-mailadressen op een bloklijst staan (&#39;Weigeren&#39;). Deze optie moet geselecteerd blijven om de beroepsethiek van e-marketing en de wetgeving inzake e-handel te eerbiedigen.
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , dat wil zeggen ontvangers wier e-mailadressen zich op een lijst van afgewezen personen bevinden (&#39;Weigeren&#39;). Deze optie moet geselecteerd blijven om de beroepsethiek van e-marketing en de wetgeving inzake e-handel te eerbiedigen.
 * **[!UICONTROL Exclude quarantined recipients]**. Met deze optie kunt u profielen met een adres dat niet reageert, uitsluiten van het doel. We raden u ten zeerste aan deze optie geselecteerd te houden.
 
    >[!NOTE]
