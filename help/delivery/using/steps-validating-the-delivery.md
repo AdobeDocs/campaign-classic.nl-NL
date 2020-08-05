@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8c1f284be77447a88748ce97a3524b7035bb5bc0
+source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
 workflow-type: tm+mt
-source-wordcount: '1676'
-ht-degree: 0%
+source-wordcount: '1673'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ Dit doet u als volgt:
 
 1. **De levering** analyseren: met deze stap kunt u de te leveren berichten voorbereiden. Raadpleeg [De levering](#analyzing-the-delivery)analyseren.
 
-   De regels die tijdens analyse worden toegepast worden voorgesteld in het [Validatieproces met typologiesectie](#validation-process-with-typologies) . De beschikbare validatiemodi worden gedetailleerd beschreven in het gedeelte [De goedkeuringsmodus](#changing-the-approval-mode) wijzigen.
+   De regels die tijdens de analyse worden toegepast, worden vermeld in [deze sectie](#validation-process-with-typologies) . De beschikbare validatiemodi worden gedetailleerd beschreven in het gedeelte [De goedkeuringsmodus](#changing-the-approval-mode) wijzigen.
 
 1. **Proefdrukken** verzenden: Met deze stap kunt u inhoud, URL&#39;s, personalisatievelden, enzovoort goedkeuren. Zie Een proefdruk [](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) verzenden en een specifiek proefdrukdoel [](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)definiëren.
 
@@ -76,6 +76,7 @@ De analyse is het stadium waarin de doelpopulatie wordt berekend en de leverings
    * Het blauwe pictogram geeft een informatief bericht aan.
    * Het gele pictogram geeft een niet-kritieke verwerkingsfout aan.
    * Het rode pictogram geeft een kritieke fout aan die het verzenden van de levering verhindert.
+
    ![](assets/s_ncs_user_email_del_analyze_error.png)
 
 1. Klik **[!UICONTROL Close]** om eventuele fouten te corrigeren.
@@ -134,14 +135,15 @@ Als een levering te groot is, is het beter om een lage prioriteit aan het toe te
 >
 >Om ervoor te zorgen dat de grotere leveringsanalyses de vooruitgang van uw werkschema&#39;s niet vertragen, kunt u hun uitvoeringen plannen door te tikken **[!UICONTROL Schedule execution for a time of low activity]**.
 
-## Een proefafdruk verzenden {#sending-a-proof}
+## Een proef verzenden {#sending-a-proof}
 
-Adobe raadt u ten zeerste aan een validatiecyclus voor levering in te stellen om mogelijke fouten in de berichtconfiguratie op te sporen. Zorg ervoor dat de inhoud zo vaak als nodig wordt goedgekeurd door proefdrukken naar testontvangers te verzenden. Telkens wanneer een wijziging wordt aangebracht, moet voor de goedkeuring van de inhoud een bewijs worden verzonden.
+Om mogelijke fouten in berichtconfiguratie te ontdekken, adviseert Adobe hoogst vestiging een cyclus van de leveringsbevestiging. Zorg ervoor dat de inhoud zo vaak als nodig wordt goedgekeurd door proefdrukken naar testontvangers te verzenden. Telkens wanneer een wijziging wordt aangebracht, moet voor de goedkeuring van de inhoud een bewijs worden verzonden.
 
 >[!NOTE]
 >
 >* De beschikbare validatiemodi worden gedetailleerd weergegeven in de [goedkeuringsmodus](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode)wijzigen.
 >* De configuratie van het proefdrukdoel wordt verklaard in het [bepalen van een specifiek proefdrukdoel](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+
 >
 
 
@@ -156,7 +158,7 @@ Volg onderstaande stappen om een proefdruk te verzenden:
 1. Analyse van berichten starten. Zie De levering [analyseren](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 1. U kunt de levering nu verzenden (zie De levering [verzenden](../../delivery/using/steps-sending-the-delivery.md)).
 
-   Nadat de levering is verzonden, wordt de proefdruk weergegeven in de leveringslijst en wordt deze automatisch gemaakt en genummerd. Deze kan worden bewerkt als u toegang wilt krijgen tot de inhoud en eigenschappen van de sjabloon. Raadpleeg deze [pagina](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard)voor meer informatie.
+   Nadat de levering is verzonden, wordt de proefdruk weergegeven in de leveringslijst en wordt deze automatisch gemaakt en genummerd. Deze kan worden bewerkt als u toegang wilt krijgen tot de inhoud en eigenschappen van de sjabloon. Raadpleeg [deze pagina](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) voor meer informatie.
 
    ![](assets/s_ncs_user_delivery_validation_cycle_03a.png)
 
@@ -181,13 +183,13 @@ Op het **[!UICONTROL Advanced]** tabblad met leveringseigenschappen kunt u de ei
 De volgende opties zijn beschikbaar:
 
 * Met de eerste optie kunt u de proefdrukverdubbelingen behouden.
-* Beide volgende opties laten u ontvangers houden die op de bloklijst en adressen in quarantaine zijn. Zie de beschrijving van deze opties voor het hoofddoel in [Uitsluitingsinstellingen](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings)aanpassen. In tegenstelling tot het doel van een levering, waar deze adressen door gebrek worden uitgesloten, worden zij gehouden door gebrek voor het doel van een proef.
+* Beide volgende opties laten u ontvangers houden die op de lijst van afgewezen personen en de adressen in quarantaine zijn. Zie de beschrijving van deze opties voor het hoofddoel in [Uitsluitingsinstellingen](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings)aanpassen. In tegenstelling tot het doel van een levering, waar deze adressen door gebrek worden uitgesloten, worden zij gehouden door gebrek voor het doel van een proef.
 * Met de **[!UICONTROL Keep the delivery code for the proof]** optie kunt u dezelfde leveringscode opgeven als voor de levering waarop de optie betrekking heeft. Deze code wordt gespecificeerd in de eerste stap van de leveringstovenaar.
 * Standaard wordt het onderwerp van de proefdruk voorafgegaan door &#39;Bewijs nr.&#39;, waarbij # het nummer van de proefdruk is. U kunt dit voorvoegsel wijzigen in het **[!UICONTROL Label prefix]** veld.
 
 ## Validatieproces met typologieën {#validation-process-with-typologies}
 
-Alvorens om het even welke berichten te verzenden, zou u de campagne moeten analyseren om zijn inhoud en configuratie goed te keuren. De controleregels die tijdens de analysefase worden toegepast, worden in een **typologie** gedefinieerd. Voor e-mails worden standaard de volgende punten in de analyse behandeld:
+Alvorens om het even welke berichten te verzenden, zou u de campagne moeten analyseren om zijn inhoud en configuratie goed te keuren. The checking rules applied during the analysis phase are defined in a **typology**. Voor e-mails worden standaard de volgende punten in de analyse behandeld:
 
 * Het object goedkeuren
 * URL&#39;s en afbeeldingen goedkeuren
@@ -215,7 +217,7 @@ Het **[!UICONTROL Rule]** tabblad bevat een lijst met de typologische regels die
 
 >[!NOTE]
 >
->**[!UICONTROL Arbitration]** typologieën van het type worden gebruikt in het kader van het beheer van de verkoopdruk . For more on this, refer to [this section](../../campaign/using/about-marketing-resource-management.md).
+>**[!UICONTROL Arbitration]** typologieën van het type worden gebruikt in het kader van het beheer van de verkoopdruk . Raadpleeg [deze sectie](../../campaign/using/about-marketing-resource-management.md) voor meer informatie.
 
 ## De goedkeuringsmodus wijzigen {#changing-the-approval-mode}
 
