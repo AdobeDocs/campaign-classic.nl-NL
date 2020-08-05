@@ -13,15 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f599bc5483779ae62dd4d5eb1936cbc2760639b5
+source-git-commit: 4548eda6f87566398ddf19131b777012cbf8917b
 workflow-type: tm+mt
-source-wordcount: '4348'
+source-wordcount: '4361'
 ht-degree: 3%
 
 ---
 
 
 # Best practices voor levering {#delivery-best-practices}
+
+Leer beste praktijken met betrekking tot leveringsontwerp en verzendend met Adobe Campaign.
 
 ## Levering optimaliseren {#optimize-delivery}
 
@@ -102,7 +104,7 @@ Als u meerdere merken beheert in Adobe Campaign, raadt Adobe aan één subdomein
 
 **Tip**:  Om configuratiefouten in Campaign Standard te vermijden, adviseren wij dat u een inheemse malplaatje dupliceert en zijn eigenschappen verandert eerder dan een nieuw malplaatje tot stand te brengen.
 
-**Adressen configureren**
+### Adressen configureren
 
 * Het adres van de afzender is verplicht om het verzenden van een e-mail toe te staan.
 
@@ -126,7 +128,7 @@ Voer de onderstaande stappen uit om adressen in de Campagne-interface te configu
 
 1. In de **[!UICONTROL Reply address text]** dossiers, wordt het adres van de afzender gebruikt door gebrek voor antwoorden. Adobe raadt echter aan een bestaand reëel adres te gebruiken, zoals de klantenservice van uw merk. In dit geval, als een ontvanger een antwoord verzendt, zal de klantenzorg het kunnen behandelen.
 
-**Een controlegroep instellen**
+### Een controlegroep instellen
 
 Nadat de levering is verzonden, kunt u het gedrag van de uitgesloten ontvangers vergelijken met de ontvangers die de levering wel hebben ontvangen. Vervolgens kunt u de efficiëntie van uw campagnes meten. Meer informatie over controlegroepen vindt u in [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
@@ -134,7 +136,7 @@ Klik op de **[!UICONTROL To]** koppeling als u een controlegroep wilt instellen.
 
 ![](assets/d_best_practices_control_group.png)
 
-**Typologieën gebruiken om filters of controleregels toe te passen**
+### Typologieën gebruiken om filters of controleregels toe te passen
 
 Een typologie bevat controleregels die tijdens de analysefase worden toegepast, alvorens om het even welk bericht te verzenden.
 
@@ -342,7 +344,7 @@ Zodra uw bericht klaar is, zorg ervoor zijn inhoud correct, op alle apparaten wo
 
 Alvorens uw bericht te verzenden, zorg ook dat de parameters en de configuratie met de levering verenigbaar zijn.
 
-### Validatie is een sleutel {#validation-is-key}
+### Waarom validatie de sleutel is {#validation-is-key}
 
 Alvorens een levering te verzenden, moet u ervoor zorgen dat uw ontvangers het bericht zullen ontvangen dat u echt hen wilt verzenden. Hiervoor moet u de inhoud en de leveringsparameters van het bericht valideren.
 
@@ -461,7 +463,7 @@ Om de snelheid te meten waarbij de berichten worden geleverd, kunt u de levering
 
 * Probeer geen grote leveringen samen te plannen. Houd er rekening mee dat het 5 tot 10 minuten kan duren voordat de laadbewerking gelijkmatig over het systeem is verspreid.
 
-## Problemen met levering oplossen {#delivery-troubleshooting}
+### Problemen met levering oplossen {#delivery-troubleshooting}
 
 Specifieke acties kunnen worden uitgevoerd wanneer problemen met leveringen optreden:
 
