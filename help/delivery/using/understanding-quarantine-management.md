@@ -15,17 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b080bdc4d719994c74ec5c094c917e2c40839a49
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '2584'
-ht-degree: 0%
+source-wordcount: '2576'
+ht-degree: 12%
 
 ---
 
 
 # Werken met quarantainebeheer{#understanding-quarantine-management}
 
-## Informatie over quarantines {#about-quarantines}
+## Quarantaine {#about-quarantines}
 
 Adobe Campaign beheert een lijst met in quarantaine geplaatste adressen. Ontvangers van wie adres in quarantaine is geplaatst worden door gebrek tijdens leveringsanalyse uitgesloten, en zullen niet worden gericht. Een e-mailadres kan in quarantaine worden geplaatst, bijvoorbeeld, wanneer de brievenbus volledig is of als het adres niet bestaat. In elk geval voldoet de quarantaineprocedure aan de hieronder beschreven specifieke voorschriften.
 
@@ -33,41 +33,41 @@ Adobe Campaign beheert een lijst met in quarantaine geplaatste adressen. Ontvang
 >
 >Deze sectie is van toepassing op online kanalen: e-mail, SMS, pushmelding.
 
-### De levering optimaliseren via quarantines {#optimizing-your-delivery-through-quarantines}
+### Uw levering optimaliseren via quarantaine {#optimizing-your-delivery-through-quarantines}
 
-De profielen waarvan e-mailadressen of telefoonaantal in quarantaine zijn worden automatisch uitgesloten tijdens berichtvoorbereiding (zie het [identificeren van quarantined adressen voor een levering](#identifying-quarantined-addresses-for-a-delivery)). Dit zal leveranties versnellen, aangezien het foutenpercentage een significant effect op leveringssnelheid heeft.
+De profielen waarvan de e-mailadressen of telefoonnummers in quarantaine zijn geplaatst, worden automatisch uitgesloten tijdens de voorbereiding van berichten (zie [In quarantaine geplaatste adressen voor een levering identificeren](#identifying-quarantined-addresses-for-a-delivery)). Hierdoor wordt de levering versneld, omdat het foutenpercentage een belangrijk effect heeft op de leveringssnelheid.
 
-Sommige internetproviders beschouwen e-mails automatisch als spam als de snelheid van ongeldige adressen te hoog is. Met quarantaine kunt u dus voorkomen dat deze providers aan een bloklijst worden toegevoegd.
+Sommige internetproviders beschouwen e-mails automatisch als spam als het aantal ongeldige adressen te hoog is. Met quarantaine kunt u dus voorkomen dat u door deze providers aan een lijst van afgewezen personen wordt toegevoegd.
 
-Bovendien helpen quarantines de verzendkosten van SMS te verminderen door onjuiste telefoonaantallen van leveringen uit te sluiten. Raadpleeg [deze pagina](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)voor meer informatie over tips en trucs voor het beveiligen en optimaliseren van leveringen.
+Bovendien zijn de verzendkosten voor sms-berichten lager doordat onjuiste telefoonnummers van de levering worden uitgesloten. Raadpleeg [deze pagina](../../delivery/using/delivery-best-practices.md) voor meer informatie over de best practices voor het beveiligen en optimaliseren van uw leveringen .
 
-### Quarantine versus block list {#quarantine-vs-block-list}
+### Quarantine versus lijst van afgewezen personen {#quarantine-vs-block-list}
 
-**Quarantaine** is alleen van toepassing op een adres, niet op het profiel zelf. Dit betekent dat twee profielen met hetzelfde e-mailadres worden beïnvloed als het adres in quarantaine wordt geplaatst.
+**Quarantaine** is alleen van toepassing op een adres, niet op het profiel zelf. Wanneer twee profielen hetzelfde e-mailadres hebben, worden ze dus allebei beïnvloed als het adres in quarantaine wordt geplaatst.
 
-Op dezelfde manier kan een profiel waarvan het e-mailadres in quarantaine is geplaatst, zijn profiel bijwerken en een nieuw adres invoeren. Dit profiel kan vervolgens opnieuw worden geactiveerd door leveringsacties.
+Op dezelfde manier kan een profiel waarvan het e-mailadres in quarantaine is geplaatst, zijn profiel bijwerken en een nieuw adres invoeren. Dit profiel kan dan opnieuw worden getarget door leveringsacties.
 
-Als het profiel op de **bloklijst** staat, wordt het profiel echter niet meer gericht op levering, bijvoorbeeld na een abonnement (opt-out).
+Being on the **block list**, on the other hand, will result in the profile no longer being targeted by any delivery, for example after an unsubscription (opt-out).
 
 >[!NOTE]
 >
->Wanneer een gebruiker op een SMS-bericht reageert met een trefwoord zoals &quot;STOP&quot; om zich af te melden voor SMS-leveringen, wordt dit profiel niet toegevoegd aan de bloklijst, zoals in het e-mailuitschakelproces. Het profieltelefoonnummer wordt naar quarantaine verzonden, zodat de gebruiker e-mailberichten blijft ontvangen.
+>Wanneer een gebruiker op een SMS-bericht reageert met een trefwoord zoals &quot;STOP&quot; om zich af te melden voor SMS-leveringen, wordt dit profiel niet aan de lijst van afgewezen personen toegevoegd, zoals in het e-mailuitschakelproces. Het profieltelefoonnummer wordt naar quarantaine verzonden, zodat de gebruiker e-mailberichten blijft ontvangen.
 
 ## In quarantaine geplaatste adressen identificeren {#identifying-quarantined-addresses}
 
-De gekwalificeerde adressen kunnen voor een specifieke levering of voor het volledige platform worden vermeld.
+Adressen kunnen in quarantaine worden geplaatst voor een specifieke levering of voor het volledige platform.
 
-### Het identificeren van quarantined adressen voor een levering {#identifying-quarantined-addresses-for-a-delivery}
+### In quarantaine geplaatste adressen voor een levering identificeren {#identifying-quarantined-addresses-for-a-delivery}
 
-De gekwantificeerde adressen voor een specifieke levering zijn vermeld tijdens de leveringsvoorbereidingsfase, in de leveringslogboeken van het leveringsdashboard (zie [leveringslogboeken en geschiedenis](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history)).
+Quarantined addresses for a specific delivery are listed during the delivery preparation phase, in the delivery logs of the delivery dashboard (see [Delivery logs and history](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history)).
 
-### Het identificeren van quarantined adressen voor het volledige platform {#identifying-quarantined-addresses-for-the-entire-platform}
+### In quarantaine geplaatste adressen voor het volledige platform identificeren {#identifying-quarantined-addresses-for-the-entire-platform}
 
-De beheerders kunnen van de adressen in quarantaine voor het volledige platform van de **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** knoop een lijst maken.
+Administrators can list the addresses in quarantine for the entire platform from the **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** node.
 
 >[!NOTE]
 >
->Dit menu bevat quarantaine-elementen voor **e-mail**-, **SMS** - en **pushberichtkanalen** .
+>Dit menu bevat quarantaine-elementen voor **e-mail**-, **sms**- en **pushberichtkanalen**.
 
 Voor elk adres is de volgende informatie beschikbaar:
 
@@ -78,7 +78,7 @@ Voor elk adres is de volgende informatie beschikbaar:
 >De toename van het aantal quarantines is een normaal effect dat gerelateerd is aan de &quot;slijtage&quot; van de database. Als de levensduur van een e-mailadres bijvoorbeeld wordt beschouwd als drie jaar en de tabel met ontvangers elk jaar met 50% toeneemt, kan de toename van quarantaine als volgt worden berekend:
 >
 >Einde van jaar 1: (1*0,33)/(1+0,5)=22%.
-Einde van jaar 2: (1,22*0,33)+0,33)/(1,5+0,75)=32,5%.
+Einde van jaar 2: ((1,22*0,33)+0,33)/(1,5+0,75)=32,5%.
 
 ### Het identificeren van quarantined adressen in leveringsrapporten {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -94,7 +94,7 @@ De volgende rapporten verstrekken informatie over de adressen in quarantaine:
 
 U kunt deze informatie opzoeken voor alle leveringen van het platform (**[!UICONTROL Home page > Reports]**) of voor een specifieke levering. U kunt ook aangepaste rapporten maken en de informatie selecteren die moet worden weergegeven.
 
-### Het identificeren van quarantined adressen voor een ontvanger {#identifying-quarantined-addresses-for-a-recipient}
+### Identifying quarantined addresses for a recipient {#identifying-quarantined-addresses-for-a-recipient}
 
 U kunt de status van het e-mailadres van elke ontvanger opzoeken. Selecteer hiertoe het profiel van de ontvanger en klik op het **[!UICONTROL Deliveries]** tabblad. Voor alle leveringen aan die ontvanger, kunt u te weten komen of het ontbroken adres, tijdens analyse in quarantined, enz. was. Voor elke map kunt u alleen de ontvangers weergeven van wie het e-mailadres in quarantaine staat. Gebruik hiervoor het **[!UICONTROL Quarantined email address]** toepassingsfilter.
 
@@ -125,19 +125,19 @@ De status verandert vervolgens in **[!UICONTROL Valid]**.
 >[!IMPORTANT]
 Ontvangers met een adres in een **[!UICONTROL Quarantine]** of **[!UICONTROL On block list]** status worden nooit verwijderd, zelfs niet als ze een e-mail ontvangen.
 
-U kunt het aantal fouten en de periode tussen twee fouten wijzigen. Hiervoor wijzigt u de corresponderende instellingen in de wizard Implementatie (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**). Raadpleeg [deze sectie](../../installation/using/deploying-an-instance.md)voor meer informatie over de implementatietovenaar.
+U kunt het aantal fouten en de periode tussen twee fouten wijzigen. Hiervoor wijzigt u de corresponderende instellingen in de wizard Implementatie (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**). For more on the deployment wizard, refer to [this section](../../installation/using/deploying-an-instance.md).
 
-## Voorwaarden voor verzending van een adres naar quarantaine {#conditions-for-sending-an-address-to-quarantine}
+## Voorwaarden voor het in quarantaine plaatsen van een adres {#conditions-for-sending-an-address-to-quarantine}
 
 Adobe Campaign beheert quarantaine volgens het type van de leveringsmislukking en de reden die tijdens de kwalificatie van foutenmeldingen (zie de kwalificatie [van de](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)post van de Stuitage) en de types en redenen [van de](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)Leveringsmislukking wordt toegewezen.
 
-* **Genegeerde fout**: genegeerde fouten sturen geen adres naar quarantaine.
-* **Harde fout**: het desbetreffende e-mailadres wordt onmiddellijk naar quarantaine verzonden.
-* **Zachte fout**: de zachte fouten verzenden onmiddellijk geen adres naar quarantaine, maar zij verhogen een foutenteller. Zie [Foutenbeheer](#soft-error-management)voor meer informatie.
+* **Genegeerde fout**: bij genegeerde fouten wordt een adres niet in quarantaine geplaatst.
+* **Harde fout**: het desbetreffende e-mailadres wordt onmiddellijk in quarantaine geplaatst.
+* **Zachte fout**: bij zachte fouten wordt het adres niet direct in quarantaine geplaatst, maar neemt het aantal fouten op de foutenteller toe. Zie [Foutenbeheer](#soft-error-management)voor meer informatie.
 
-Als een gebruiker een e-mailbericht kwalificeert als een spam ([feedbacklus](../../delivery/using/technical-recommendations.md#feedback-loop)), wordt het bericht automatisch doorgestuurd naar een technische mailbox die door Adobe wordt beheerd. Het e-mailadres van de gebruiker wordt vervolgens automatisch naar quarantaine verzonden.
+If a user qualifies an email as a spam ([Feedback loop](../../delivery/using/technical-recommendations.md#feedback-loop)), the message is automatically redirected towards a technical mailbox managed by Adobe. Het e-mailadres van de gebruiker wordt vervolgens automatisch naar quarantaine verzonden.
 
-In de lijst van quarantined adressen, wijst het **[!UICONTROL Error reason]** gebied erop waarom het geselecteerde adres in quarantaine werd geplaatst. Quarantine in Adobe Campaign is hoofdlettergevoelig. Importeer e-mailadressen in kleine letters, zodat ze later niet opnieuw worden toegewezen.
+In de lijst van quarantined adressen, wijst het **[!UICONTROL Error reason]** gebied erop waarom het geselecteerde adres in quarantaine werd geplaatst. Quarantaine in Adobe Campaign is hoofdlettergevoelig. Zorg dat u de e-mailadressen in kleine letters importeert, zodat ze later niet opnieuw worden getarget.
 
 ![](assets/tech_quarant_error_reasons.png)
 
@@ -146,8 +146,8 @@ In de lijst van quarantined adressen, wijst het **[!UICONTROL Error reason]** ge
 In tegenstelling tot harde fouten, verzenden de zachte fouten onmiddellijk geen adres naar quarantaine, maar zij verhogen in plaats daarvan een foutenteller.
 
 * Wanneer de foutenteller de grensdrempel bereikt, dan gaat het adres in quarantaine.
-* In de standaardconfiguratie is de drempel ingesteld op vijf fouten, waarbij twee fouten significant zijn als ze zich op een afstand van minstens 24 uur bevinden. Het adres wordt in quarantaine geplaatst bij de vijfde fout.
-* De drempelwaarde voor de foutteller kan worden gewijzigd. Raadpleeg voor meer informatie [Retries na tijdelijke mislukking](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)van levering.
+* In de standaardconfiguratie is de drempel ingesteld op vijf fouten, waarbij twee fouten significant worden bij een tussenliggende periode van minstens 24 uur. Het adres wordt bij de vijfde fout in quarantaine geplaatst.
+* De drempelwaarde voor de foutenteller kan worden gewijzigd. For more on this, refer to [Retries after a delivery temporary failure](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 De foutenteller wordt opnieuw geïnitialiseerd als de laatste significante fout meer dan 10 dagen geleden voorkwam. De adresstatus verandert dan in **Geldig** en het wordt geschrapt van de lijst van quarantines door het de schoonmaakbeurt **van het** Gegevensbestand werkschema.
 
@@ -265,7 +265,7 @@ Als APNS synchroon een &quot;niet-geregistreerde&quot; status voor een bericht r
 
 **Voor Android V1**
 
-Voor elke melding ontvangt Adobe Campaign de synchrone fouten rechtstreeks van de FCM-server. De campagne van Adobe behandelt hen op de vlucht en produceert harde of zachte fouten volgens de strengheid van de fout en de pogingen kunnen worden uitgevoerd:
+Voor elke melding ontvangt Adobe Campaign de synchrone fouten rechtstreeks van de FCM-server. Met de Adobe-campagne worden ze direct afgehandeld en worden harde of zachte fouten gegenereerd op basis van de ernst van de fout. U kunt het opnieuw proberen:
 
 * Lengte van lading overschreden, verbindingskwestie, de kwestie van de de dienstbeschikbaarheid: opnieuw uitgevoerd, soft error, error reason is **[!UICONTROL Refused]**.
 * Apparaatquota overschreden: niet opnieuw proberen, soft error, error reason is **[!UICONTROL Refused]**.
@@ -285,7 +285,7 @@ Adobe Campaign neemt om de 10 minuten contact op met de Baidu-server om de statu
 
 **Voor Android V2**
 
-Android V2-quarantainemomechanisme gebruikt hetzelfde proces als Android V1. Hetzelfde geldt voor de update voor abonnementen en uitsluitingen. Raadpleeg de sectie [Android V1](#android-quarantine) voor meer informatie hierover.
+Android V2-quarantainemomechanisme gebruikt hetzelfde proces als Android V1. Hetzelfde geldt voor de update voor abonnementen en uitsluitingen. For more on this refer to the [Android V1](#android-quarantine) section.
 
 <table> 
  <tbody> 
@@ -429,7 +429,7 @@ De schakelaar SMPP wint gegevens van het bericht van SR (Status Report) terug da
 Voordat een nieuw type fout wordt gekwalificeerd, is de reden van de fout altijd ingesteld op **Geweigerd** .
 
 >[!NOTE]
-De fouttypen en -redenen zijn gelijk aan die voor e-mailberichten. Zie Typen [leveringsfouten en redenen](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+De fouttypen en -redenen zijn gelijk aan die voor e-mailberichten. See [Delivery failure types and reasons](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 Vraag uw leverancier om een lijst van status en foutencodes om juiste mislukkingstypes en redenen voor mislukking in de de kwalificatielijst van het Logboek van de Levering te plaatsen.
 
 Voorbeeld van een gegenereerd bericht:
