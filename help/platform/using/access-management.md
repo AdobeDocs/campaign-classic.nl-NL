@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fef684cd20f9b210025b21d2bc6bdb209a929f7c
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '2961'
+source-wordcount: '2955'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Er zijn twee soorten toestemmingen u aan een gebruiker kunt verlenen:
 
 >[!NOTE]
 >
->Voordat u begint met het definiëren van machtigingen, raadt Adobe u aan de [configuratiecontrolelijst](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)voor beveiliging te lezen.
+>Voordat u begint met het definiëren van machtigingen, raadt Adobe u aan de [configuratiecontrolelijst](https://helpx.adobe.com/campaign/kb/acc-security.html)voor beveiliging te lezen.
 
 ## Operatoren {#operators}
 
@@ -66,7 +66,7 @@ Raadpleeg [deze pagina](../../installation/using/connecting-through-ldap.md)voor
 >
 >Operatoren moeten zijn gekoppeld aan een beveiligingszone om zich aan te melden bij een instantie. Raadpleeg [deze pagina](../../installation/using/configuring-campaign-server.md#defining-security-zones)voor meer informatie over beveiligingszones in Adobe Campaign.
 
-Gebruikers kunnen ook rechtstreeks verbinding maken met Adobe Campaign via hun Adobe ID. For more on this, refer to this [page](../../integrations/using/about-adobe-id.md).
+Gebruikers kunnen ook rechtstreeks verbinding maken met Adobe Campaign via hun Adobe ID. Raadpleeg [deze pagina](../../integrations/using/about-adobe-id.md) voor meer informatie.
 
 ### Een operator maken {#creating-an-operator}
 
@@ -211,7 +211,7 @@ De technische operator &#39;webapp&#39; heeft standaard het benoemde BEHEERRECHT
 
 >[!NOTE]
 >
->Voor meer informatie over de richtlijnen van de Veiligheid, verwijs naar checklist [van de Configuratie van de Veiligheid van](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)Adobe Campaign.
+>Voor meer informatie over de richtlijnen van de Veiligheid, verwijs naar checklist [van de Configuratie van de Veiligheid van](https://helpx.adobe.com/campaign/kb/acc-security.html)Adobe Campaign.
 
 ## Exploitantgroepen {#operator-groups}
 
@@ -293,7 +293,7 @@ De standaardgroepen met operatoren zijn:
 
 1. **[!UICONTROL Offer managers]**
 
-   De operatoren in deze groep kunnen aanbiedingen maken en onderhouden. Raadpleeg deze [pagina](../../interaction/using/operator-profiles.md)voor meer informatie hierover.
+   De operatoren in deze groep kunnen aanbiedingen maken en onderhouden. For more information on this, refer to this [page](../../interaction/using/operator-profiles.md).
 Deze groep bevat de volgende benoemde rechten:
 
    * **[!UICONTROL INSERT FOLDERS]**: Recht om mappen in te voegen in de Adobe Campaign-structuur (op voorwaarde dat u bewerkrechten hebt voor de betrokken vertakkingen).
@@ -331,7 +331,7 @@ Deze rechten zijn als volgt:
 
 * **[!UICONTROL PREPARE DELIVERIES]**: Recht om een levering te maken, te bewerken en op te slaan. Gebruikers met het **[!UICONTROL PREPARE DELIVERIES]** recht kunnen ook het analyseproces voor de levering starten.
 
-* **[!UICONTROL PRIVACY DATA RIGHT]**: Recht om privacygegevens te verzamelen en te schrappen. For more on this, refer to this [page](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
+* **[!UICONTROL PRIVACY DATA RIGHT]**: Recht om privacygegevens te verzamelen en te schrappen. Raadpleeg [deze pagina](https://helpx.adobe.com/campaign/kb/acc-privacy.html) voor meer informatie.
 
 * **[!UICONTROL PROGRAM EXECUTION]**: Recht om bevelen in diverse programmeertalen uit te voeren.
 
@@ -442,7 +442,7 @@ In het onderstaande voorbeeld maken we nieuwe mappen waarin specifieke gegevens 
 
    ![](assets/s_ncs_user_add_folder_exple.png)
 
-1. Selecteer op het **[!UICONTROL Restriction]** tabblad **[!UICONTROL This folder is a view]**. Alle leveringen in het gegevensbestand zullen dan worden getoond.
+1. Selecteer op het tabblad **[!UICONTROL Restriction]** de optie **[!UICONTROL This folder is a view]**. Alle leveringen in het gegevensbestand zullen dan worden getoond.
 
    ![](assets/s_ncs_user_add_folder_exple01.png)
 
