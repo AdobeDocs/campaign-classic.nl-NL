@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '1146'
+ht-degree: 0%
 
 ---
 
 
 # Sjablonen voor marketingcampagnes {#campaign-templates}
 
-De malplaatjes van de campagne worden gecentraliseerd in de **[!UICONTROL Resources > Templates > Campaign templates]** knoop. Een standaardsjabloon wordt standaard verschaft. Hiermee kunt u een nieuwe campagne maken met alle beschikbare modules (Documenten, Taken, zaadadressen, enz.), maar de aangeboden modules zijn afhankelijk van uw rechten en de configuratie van uw Adobe-campagneplatform.
+De malplaatjes van de campagne worden gecentraliseerd in de **[!UICONTROL Resources > Templates > Campaign templates]** knoop. Een standaardsjabloon wordt standaard verschaft. U kunt hiermee een nieuwe campagne maken met alle beschikbare modules (Documenten, Taken, zaadadressen, enz.), maar de aangeboden modules zijn afhankelijk van uw rechten en de configuratie van uw Adobe Campaign-platform.
 
 ## Een campagnemalplaatje maken of dupliceren {#creating-or-duplicating-a-campaign-template}
 
@@ -44,7 +47,7 @@ Voer de volgende stappen uit om een nieuwe sjabloon te maken:
 
    ![](assets/create_campaign_template_3.png)
 
-1. **Klik op het tabblad** Doel en workflows **op Een workflow** toevoegen... .
+1. Klik op het tabblad **Doel en workflows** op Een workflow **toevoegen...**.
 
    ![](assets/create_campaign_template_4.png)
 
@@ -62,7 +65,7 @@ De diverse lusjes en sub-tabs van het campagnemalplaatje staan u toe om tot zijn
 
 De campagnes zijn gebaseerd op modellen die een reeks vooraf bepaalde parameters delen.
 
-In een standaardconfiguratie worden de campagnemalplaatjes gecentraliseerd in de **[!UICONTROL Resources > Templates > Campaign templates]** knoop van de boom van de Campagne van Adobe.
+In een standaardconfiguratie, zijn de campagnemalplaatjes gecentraliseerd in de **[!UICONTROL Resources > Templates > Campaign templates]** knoop van de boom van Adobe Campaign.
 
 ![](assets/s_ncs_user_campaign_op_template_node.png)
 
@@ -74,7 +77,7 @@ Een out-of-the-box malplaatje wordt geleverd om een campagne tot stand te brenge
 
 De creatie en configuratie van campagnemalplaatjes worden voorgesteld in de malplaatjes [van de](#campaign-templates)Campagne.
 
-Raadpleeg voor meer informatie over het maken van campagnes de video [Een campagne en een e-mailvideo](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html) maken.
+Raadpleeg voor meer informatie over het maken van campagnes de video [Een campagne en een e-mailvideo](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/sending-messages/email-channel/creating-a-campaign-and-an-email.html) maken.
 
 ## Configuratie van de beschikbare modules {#configuration-of-the-available-modules}
 
@@ -92,7 +95,7 @@ Bijvoorbeeld met de onderstaande configuratie:
 
 ![](assets/s_ncs_user_op_template_tab1.4.png)
 
-De volgende koppelingen worden weergegeven op het campagnemdashboard (de **[!UICONTROL Add a task]** koppeling ontbreekt):
+De volgende koppelingen worden weergegeven op het campagneschboard (de **[!UICONTROL Add a task]** koppeling ontbreekt):
 
 ![](assets/s_ncs_user_op_template_tab1.3ex.png)
 
@@ -124,7 +127,7 @@ De volgende koppelingen en tabbladen worden weergegeven:
 
 * **Documenten**
 
-   Wanneer deze module wordt geselecteerd, wordt een extra lusje toegevoegd aan het **[!UICONTROL Edition]** lusje van het malplaatje en de campagnes die op dit malplaatje worden gebaseerd. Bijgevoegde documenten kunnen voor elke campagne afzonderlijk of vanuit de sjabloon worden toegevoegd.
+   Wanneer deze module wordt geselecteerd, wordt een extra lusje toegevoegd aan het **[!UICONTROL Edition]** lusje van het malplaatje en de campagnes die op dit malplaatje worden gebaseerd. Bijgevoegde documenten kunnen worden toegevoegd vanuit de sjabloon of afzonderlijk voor elke campagne.
 
    ![](assets/s_ncs_user_op_template_activate_3.png)
 
