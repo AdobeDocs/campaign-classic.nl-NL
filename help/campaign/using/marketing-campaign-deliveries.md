@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e31a0faf6c48e2d34ce47fc1cd5a23aae05aeebf
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '2925'
+source-wordcount: '2928'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ De voorgestelde configuraties zijn geschikt voor de verschillende typen levering
 
 >[!NOTE]
 >
->Raadpleeg de sectie [Berichten](../../delivery/using/communication-channels.md) verzenden voor meer informatie over het maken en configureren van leveringen.
+>Raadpleeg de sectie [Berichten](../../delivery/using/steps-about-delivery-creation-steps.md) verzenden voor meer informatie over het maken en configureren van leveringen.
 
 ## De doelpopulatie selecteren {#selecting-the-target-population}
 
@@ -45,7 +45,7 @@ Voor elke levering definieert de campagnemanager:
 
 * Het hoofddoel. Zie [Het hoofddoel opbouwen in een workflow](#building-the-main-target-in-a-workflow) en de doelpopulatie [](#selecting-the-target-population)selecteren voor meer informatie.
 * De controlegroep. Voor meer op dit, verwijs naar het [Bepalen van een controlegroep](#defining-a-control-group).
-* De zaadadressen. For more on this, refer to [this section](../../delivery/using/about-seed-addresses.md).
+* De zaadadressen. Raadpleeg [deze sectie](../../delivery/using/about-seed-addresses.md) voor meer informatie.
 
 Enkele van deze gegevens worden overgenomen van de sjabloon.
 
@@ -79,13 +79,13 @@ De handleiding [Automating with workflows](../../workflow/using/architecture.md)
 >
 >In dezelfde campagne kunt u niet meer dan 28 workflows instellen. Buiten deze limiet zijn extra workflows niet zichtbaar in de interface en kunnen fouten genereren.
 
-#### Een doelworkflow maken {#creating-a-targeting-workflow}
+#### Creating a targeting workflow {#creating-a-targeting-workflow}
 
 Het richten kan door een combinatie filtervoorwaarden in een grafische opeenvolging in een werkschema worden tot stand gebracht. U kunt populaties en subpopulaties maken die op basis van uw vereisten worden aangepast. Klik op het **[!UICONTROL Targeting and workflows]** tabblad in het campagnemdashboard om de werkstroomeditor weer te geven.
 
 ![](assets/s_ncs_user_edit_op_wf_link.png)
 
-De doelpopulatie wordt geëxtraheerd uit de Adobe Campagne-database via een of meer query&#39;s die in een workflow zijn geplaatst. Leer hoe te om een vraag te bouwen, verwijs naar [deze sectie](../../workflow/using/query.md).
+De doelpopulatie wordt geëxtraheerd uit de Adobe Campaign-database via een of meer query&#39;s die in een workflow zijn geplaatst. Leer hoe te om een vraag te bouwen, verwijs naar [deze sectie](../../workflow/using/query.md).
 
 U kunt query&#39;s starten en populaties delen via vakken zoals Union, Intersection, Sharing, Exclusion enzovoort.
 
@@ -219,7 +219,7 @@ U kunt een controlegroep op campagneniveau bepalen, waarbij de controlegroep op 
 
    ![](assets/s_ncs_user_edit_op_general_tab_exe_target.png)
 
-De configuratieprocedure wordt voorgesteld in het [Uithalen van de controlegroep van het belangrijkste doel](#extracting-the-control-group-from-the-main-target) en het [Toevoegen van een bevolking](#adding-a-population).
+De configuratieprocedure wordt voorgesteld in het [Uithalen van de controlegroep van het belangrijkste doel](#extracting-the-control-group-from-the-main-target) en het [Toevoegen van een controlegroep](#adding-a-population).
 
 #### De controlegroep voor een levering activeren {#activating-the-control-group-for-a-delivery}
 
@@ -238,7 +238,7 @@ Door gebrek, is de configuratie van de controlegroep die op het campagneniveau w
 1. Klik op het **[!UICONTROL Control group]** tabblad en selecteer **[!UICONTROL Enable and edit control group configuration]**.
 1. Klik **[!UICONTROL Edit...]** om de controlegroep te vormen.
 
-De configuratieprocedure wordt voorgesteld in het [Uithalen van de controlegroep van het belangrijkste doel](#extracting-the-control-group-from-the-main-target) en het [Toevoegen van een bevolking](#adding-a-population).
+De configuratieprocedure wordt voorgesteld in het [Uithalen van de controlegroep van het belangrijkste doel](#extracting-the-control-group-from-the-main-target) en het [Toevoegen van een controlegroep](#adding-a-population).
 
 #### De besturingsgroep extraheren van het hoofddoel {#extracting-the-control-group-from-the-main-target}
 
@@ -257,7 +257,7 @@ Klik **[!UICONTROL Next]** om de sorteervolgorde te definiëren (indien nodig) e
 
 Deze configuratie is gelijk aan een deelactiviteit in de workflow, waarmee u het doel kunt onderverdelen in subsets. De controlegroep is één van deze subsets. Raadpleeg de [volgende sectie](../../workflow/using/architecture.md) voor meer informatie.
 
-### Een populatie toevoegen {#adding-a-population}
+### Een besturingsgroep toevoegen {#adding-a-population}
 
 U kunt een nieuwe bevolking bepalen die als controlegroep moet worden gebruikt. Deze populatie kan uit een groep ontvangers komen of u kunt het tot stand brengen via een specifieke vraag.
 
@@ -265,7 +265,7 @@ U kunt een nieuwe bevolking bepalen die als controlegroep moet worden gebruikt. 
 
 >[!NOTE]
 >
->De Adobe Campagne-query-editor wordt in [deze sectie](../../workflow/using/query.md)weergegeven.
+>Adobe Campaign query editor wordt weergegeven in [deze sectie](../../workflow/using/query.md).
 
 ## Levering starten {#starting-a-delivery}
 
@@ -273,11 +273,11 @@ Zodra alle goedkeuringen zijn verleend, is de levering klaar om te worden begonn
 
 ### Een online levering starten {#starting-an-online-delivery}
 
-Zodra alle goedkeuringsaanvragen zijn ingewilligd, verandert de leveringsstatus in **[!UICONTROL Pending confirmation]** en kan deze door een exploitant worden gestart. Indien van toepassing, wordt de Adobe Campagneoperator (of groep van operatoren) die als controleur is aangewezen om de levering te starten, op de hoogte gesteld dat een levering klaar is om te worden gestart.
+Zodra alle goedkeuringsaanvragen zijn ingewilligd, verandert de leveringsstatus in **[!UICONTROL Pending confirmation]** en kan deze door een exploitant worden gestart. In voorkomend geval wordt de Adobe Campaign-exploitant (of groep marktdeelnemers) die als controleur is aangewezen om de levering te starten, ervan in kennis gesteld dat de levering klaar is om te worden gestart.
 
 >[!NOTE]
 >
->Als een specifieke exploitant of groep exploitanten voor het beginnen van een levering in de eigenschappen van de levering wordt aangewezen, kunt u de exploitant die voor de levering verantwoordelijk is ook toestaan om de verzending te bevestigen. Hiervoor activeert u de optie **NMS_ActivateOwnerConfirmation** door **1** als waarde in te voeren. De opties worden beheerd via het knooppunt **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** in de Adobe Campagneverkenner.
+>Als een specifieke exploitant of groep exploitanten voor het beginnen van een levering in de eigenschappen van de levering wordt aangewezen, kunt u de exploitant die voor de levering verantwoordelijk is ook toestaan om de verzending te bevestigen. Hiervoor activeert u de optie **NMS_ActivateOwnerConfirmation** door **1** als waarde in te voeren. De opties worden beheerd via het knooppunt **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** in de Adobe Campaign-verkenner.
 >  
 >Voer **0** in als u deze optie wilt uitschakelen. Het proces voor bevestiging verzenden werkt dan als standaard: alleen de exploitant of groep van exploitanten die voor de verzending zijn aangewezen in de leveringseigenschappen (of een beheerder) kan de verzending bevestigen en uitvoeren.
 
@@ -314,7 +314,7 @@ Zie Een extractiebestand [](../../campaign/using/marketing-campaign-approval.md#
 ![](assets/s_ncs_user_file_valid_select_BAT.png)
 
 
-* Klik op de **[!UICONTROL Send a proof]** knop om de proefdrukken te maken.
+* Click the **[!UICONTROL Send a proof]** button to create the proofs.
 
    Het proefdrukdoel moet vooraf worden gedefinieerd.
 
@@ -322,7 +322,7 @@ Zie Een extractiebestand [](../../campaign/using/marketing-campaign-approval.md#
 
    ![](assets/s_ncs_user_file_notif_submit_proof.png)
 
-* De leveringsstatus verandert in **[!UICONTROL To submit]**. Klik op de **[!UICONTROL Submit proofs]** knop om het goedkeuringsproces te starten.
+* De leveringsstatus verandert in **[!UICONTROL To submit]**. Click the **[!UICONTROL Submit proofs]** button to start the approval process.
 
    ![](assets/s_ncs_user_file_notif_submit_proof_validation.png)
 
@@ -372,7 +372,7 @@ Documenten kunnen worden gekoppeld op campagneniveau (contextuele documenten) of
 
 Het **[!UICONTROL Documents]** tabblad bevat:
 
-* De lijst met alle documenten die vereist zijn voor de inhoud (sjabloon, afbeeldingen, enz.) die lokaal kunnen worden gedownload door Adobe Campagneontwikkelaars met de juiste rechten,
+* De lijst met alle documenten die vereist zijn voor de inhoud (sjabloon, afbeeldingen, enz.) die door Adobe Campaign-operatoren met de juiste rechten lokaal kunnen worden gedownload,
 * Documenten die informatie voor de router bevatten, als om het even welk.
 
 De documenten zijn via het **[!UICONTROL Edit > Documents]** tabblad gekoppeld aan het programma of de campagne.
@@ -413,7 +413,7 @@ Als u een omtrek wilt maken, klikt u op het **[!UICONTROL Delivery outlines]** s
 >
 >Als dit tabblad niet aanwezig is, is deze functie niet beschikbaar voor deze campagne. Verwijs naar de configuratie van het campagnemalplaatje.
 >   
->Raadpleeg de sjablonen [voor](../../campaign/using/marketing-campaign-templates.md#campaign-templates)campagnes voor meer informatie.
+>For more on this, refer to [Campaign templates](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 ![](assets/s_ncs_user_op_composition_link.png)
 
@@ -427,7 +427,7 @@ Klik vervolgens op **[!UICONTROL Add a delivery outline]** en maak een hiërarch
 Een overzicht kan punten en verpersoonlijkingsgebieden, middelen en aanbiedingen bevatten:
 
 * Items kunnen bijvoorbeeld fysieke documenten zijn waarnaar hier wordt verwezen en die hier worden beschreven en die aan de levering worden gekoppeld.
-* Met velden voor personalisatie kunt u personalisatie-elementen maken die te maken hebben met leveringen in plaats van met ontvangers. Het is dus mogelijk waarden te creëren die in leveringen voor een specifiek doel moeten worden gebruikt (welkomstaanbod, korting, enz.) Ze worden gemaakt in Adobe Campaign en via de **[!UICONTROL Import personalization fields...]** koppeling geïmporteerd in de omtrek.
+* Met velden voor personalisatie kunt u personalisatie-elementen maken die te maken hebben met leveringen in plaats van met ontvangers. Het is dus mogelijk waarden te creëren die in leveringen voor een specifiek doel moeten worden gebruikt (welkomstaanbod, korting, enz.) Ze worden in Adobe Campaign gemaakt en via de **[!UICONTROL Import personalization fields...]** koppeling in de omtrek geïmporteerd.
 
    ![](assets/s_ncs_user_op_add_composition_field.png)
 
