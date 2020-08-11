@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 51bbf50a1e9b00c25fca8e1e86ca21c314c18313
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '2597'
+source-wordcount: '2567'
 ht-degree: 2%
 
 ---
@@ -109,7 +109,7 @@ Als de leveringsprestaties slecht zijn, kunt u controleren:
 
 * **De omvang van de levering**: Het voltooien van grote leveringen kan langer duren. De kinderen MTA worden gevormd om een standaardpartijgrootte te behandelen, die voor de meeste instanties werkt, maar moet worden gecontroleerd wanneer de leveringen constant langzaam zijn.
 * **Het doel van de levering**: Het verbod op leveringsprestaties wordt beïnvloed door zachte stuiterfouten, die worden afgehandeld volgens de configuratie voor opnieuw proberen. Hoe groter het aantal fouten, hoe meer pogingen nodig zijn.
-* **De totale platformbelasting**: Wanneer meerdere grote leveringen worden verzonden, kan dit gevolgen hebben voor het hele platform. U kunt IP reputatie en leveringsproblemen ook controleren. Raadpleeg voor meer informatie de handleiding [over best practices voor Adobe Campaign-](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) levering en [deze pagina](../../delivery/using/about-deliverability.md).
+* **De totale platformbelasting**: Wanneer meerdere grote leveringen worden verzonden, kan dit gevolgen hebben voor het hele platform. U kunt IP reputatie en leveringsproblemen ook controleren. Raadpleeg voor meer informatie de handleiding [over best practices voor Adobe Campaign-](../../delivery/using/deliverability-key-points.md) levering en [deze pagina](../../delivery/using/about-deliverability.md).
 
 Platform- en databaseonderhoud kan ook van invloed zijn op de verzendingsprestaties van de levering. For more on this, refer to [this page](../../production/using/database-performances.md).
 
@@ -118,10 +118,10 @@ Platform- en databaseonderhoud kan ook van invloed zijn op de verzendingsprestat
 Nadat je op de **[!UICONTROL Send]** button hebt geklikt, lijkt het langer te duren voordat je levering is uitgevoerd. Dit kan worden veroorzaakt door verschillende elementen:
 
 * Sommige e-mailproviders hebben mogelijk uw IP-adressen aan een lijst van afgewezen personen toegevoegd. In dit geval, controleer uw uitzendingen en raadpleeg [deze sectie](../../delivery/using/about-deliverability.md).
-* Uw levering is mogelijk te groot om snel te worden verwerkt, dit kan gebeuren met een hoge mate van personalisatie in JavaScript of als uw levering meer dan 60 kbytes weegt. Raadpleeg de best practices [voor Adobe Campaign-](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) levering voor meer informatie over richtlijnen voor inhoud.
+* Uw levering is mogelijk te groot om snel te worden verwerkt, dit kan gebeuren met een hoge mate van personalisatie in JavaScript of als uw levering meer dan 60 kbytes weegt. Raadpleeg de best practices [voor Adobe Campaign-](../../delivery/using/delivery-best-practices.md) levering voor meer informatie over richtlijnen voor inhoud.
 * Throttling zou binnen Adobe Campaign MTA kunnen voorgekomen zijn. Dit wordt veroorzaakt door:
 
-   * Berichten gepend (**[!UICONTROL quotas met]** bericht): er is voldaan aan de quota die zijn aangegeven in de declaratieve MX-regels die in de campagne zijn vastgesteld. Raadpleeg [deze pagina](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ)voor meer informatie over dit bericht. Raadpleeg [deze pagina](../../delivery/using/technical-recommendations.md#mx-rules)voor meer informatie over MX-regels.
+   * Berichten gepend (**[!UICONTROL quotas met]** bericht): er is voldaan aan de quota die zijn aangegeven in de declaratieve MX-regels die in de campagne zijn vastgesteld. Raadpleeg [deze pagina](../../delivery/using/deliverability-faq.md) voor meer informatie over dit bericht. Raadpleeg [deze pagina](../../delivery/using/technical-recommendations.md#mx-rules)voor meer informatie over MX-regels.
    * Berichten gepend (**[!UICONTROL dynamic flow control]** bericht): Campagne MTA heeft fouten ontmoet wanneer het proberen om berichten voor bepaalde ISP te leveren die een vertraging veroorzaakt om te grote van een foutendichtheid te vermijden en zo potentiële lijst van afgewezen personen onder ogen te zien.
 
 * Door een systeemprobleem kunnen servers niet met elkaar communiceren: dit kan het hele verzendingsproces vertragen . Controleer de servers om ervoor te zorgen dat er geen geheugen of middelkwesties zijn die Campagne in het proces kunnen beïnvloeden om de verpersoonlijkingsgegevens bijvoorbeeld te krijgen.
@@ -203,7 +203,7 @@ Tijdens het verzenden van een levering krijgt u mogelijk de volgende status op h
  </tbody> 
 </table>
 
-Raadpleeg de handleiding [over de beste praktijken bij](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) Adobe Campaign- [levering en naar](../../delivery/using/about-deliverability.md)deze paginavoor meer informatie over de manier waarop u de leverbaarheid van uw Adobe Campaign-e-mails kunt optimaliseren.
+Raadpleeg de handleiding [over de beste praktijken bij](../../delivery/using/deliverability-key-points.md) Adobe Campaign- [levering en naar](../../delivery/using/about-deliverability.md)deze paginavoor meer informatie over de manier waarop u de leverbaarheid van uw Adobe Campaign-e-mails kunt optimaliseren.
 
 ### Status in behandeling {#pending-status}
 
