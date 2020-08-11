@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '1884'
+ht-degree: 0%
 
 ---
 
@@ -26,9 +29,9 @@ Met gegevensgeoriënteerde API&#39;s kunt u het volledige datamodel beheren.
 
 ## Overzicht van het datamodel {#overview-of-the-datamodel}
 
-Adobe Campagne biedt geen specifieke lees-API per entiteit (geen functie getRecipient of getDelivery, enz.). Met de methoden QUERY &amp; WRITER voor het lezen en wijzigen van gegevens hebt u toegang tot de gegevens van het model.
+Adobe Campaign biedt geen specifieke lees-API per entiteit (geen getRecipient- of getDelivery-functie, enz.). Met de methoden QUERY &amp; WRITER voor het lezen en wijzigen van gegevens hebt u toegang tot de gegevens van het model.
 
-Met Adobe Campaign kunt u verzamelingen beheren: de vragen laten u toe om een reeks informatie terug te krijgen die door de basis wordt verzameld. In tegenstelling tot toegang in SQL-modus, retourneren Adobe Campagne-API&#39;s een XML-structuur in plaats van gegevenskolommen. Adobe Campaign maakt dus samengestelde documenten met alle verzamelde gegevens.
+Met Adobe Campaign kunt u verzamelingen beheren: de vragen laten u toe om een reeks informatie terug te krijgen die door de basis wordt verzameld. In tegenstelling tot toegang in SQL-modus, retourneren Adobe Campaign API&#39;s een XML-structuur in plaats van gegevenskolommen. Adobe Campaign maakt dus samengestelde documenten met alle verzamelde gegevens.
 
 Deze werkende wijze biedt geen één-op-één afbeelding tussen de attributen en de elementen van de documenten van XML en de kolommen van de lijsten in het gegevensbestand aan.
 
@@ -36,15 +39,15 @@ XML-documenten worden opgeslagen in MEMO-tekstvelden van de database.
 
 ## Beschrijving van het model {#description-of-the-model}
 
-U moet bekend zijn met het gegevensmodel van de Campagne van Adobe om de gebieden van het gegevensbestand in uw manuscripten te kunnen richten.
+U moet bekend zijn met het Adobe Campaign-gegevensmodel om de velden van de database in uw scripts te kunnen verwerken.
 
-Raadpleeg de beschrijving [van het gegevensmodel van](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/_Datamodel_Description_of_the_main_tables.html)Adobe Campagne Data model voor een presentatie van het gegevensmodel.
+Voor een presentatie van het gegevensmodel raadpleegt u de beschrijving [van het](../../configuration/using/data-model-description.md)Adobe Campaign-gegevensmodel.
 
-Raadpleeg dit artikel voor informatie over het genereren van de structuur: [Hoe te om een Model of Woordenboek](https://helpx.adobe.com/campaign/kb/generate-data-model.html)van Gegevens te produceren.
+Raadpleeg dit artikel voor informatie over het genereren van de structuur: [Een gegevensmodel of gegevenswoordenboek](https://helpx.adobe.com/campaign/kb/generate-data-model.html)genereren.
 
 ## Query en schrijver {#query-and-writer}
 
-In het volgende introductieschema vindt u details op laag niveau voor lezen (ExecuteQuery) en schrijven (Writer) tussen database en klant (webpagina&#39;s of Adobe Campagne Client Console).
+In het volgende introductieschema worden uitwisselingen op laag niveau beschreven voor lezen (ExecuteQuery) en schrijven (Writer) tussen database en klant (webpagina&#39;s of Adobe Campaign-clientconsole).
 
 ![](assets/s_ncs_integration_webservices_schema_writer.png)
 
@@ -226,7 +229,7 @@ Om het aantal verslagen op een vraag te tellen:
 
 >[!NOTE]
 >
->Ook hier gebruiken we de voorwaarde uit het vorige voorbeeld. De clausules `<select>` en clausules worden niet gebruikt. </select>&quot;
+>Ook hier gebruiken we de voorwaarde uit het vorige voorbeeld. De clausules `<select>` en clausules worden niet gebruikt. </select>`
 
 #### Gegevensgroepering {#data-grouping}
 
@@ -398,7 +401,7 @@ Als u wilt voorkomen dat een parameter wordt gebonden, moet het kenmerk &quot;no
 
 #### Tip voor het samenstellen van query&#39;s: {#query-building-tip-}
 
-Om met de syntaxis van een vraag te helpen, kunt u de vraag schrijven gebruikend de generische vraagredacteur in de de cliëntconsole van de Campagne van Adobe ( **[!UICONTROL Tools/ Generic query editor...]** menu). Dit doet u als volgt:
+Om met de syntaxis van een vraag te helpen, kunt u de vraag schrijven gebruikend de generische vraagredacteur in de de cliëntconsole van Adobe Campaign ( **[!UICONTROL Tools/ Generic query editor...]** menu). Dit doet u als volgt:
 
 1. Selecteer de gegevens die u wilt ophalen:
 
@@ -469,7 +472,7 @@ In plaats van:
 
 ### Voorbeeld van SOAP-berichten {#example-of-soap-messages}
 
-* Query:
+* Queryactiviteit:
 
    ```
    <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -588,7 +591,7 @@ Bijwerken of invoegen voor verschillende ontvangers:
 
 ### Voorbeeld van koppelingen {#example-on-links}
 
-#### Voorbeeld 1 {#example-1}
+#### Example 1 {#example-1}
 
 De map koppelen aan een ontvanger op basis van de interne naam (@name).
 
@@ -606,7 +609,7 @@ De definitie van de sleutel van de hoofdentiteit (&quot;nms:ontvanger&quot;) bes
 >
 >De bewerking &quot;none&quot; die in het mappenelement is ingevoerd, definieert een afstemming in de map zonder update of invoeging.
 
-#### Voorbeeld 2 {#example-2}
+#### Example 2 {#example-2}
 
 Het bijwerken van het bedrijf (verbonden lijst in &quot;cus:bedrijf&quot;schema) van een ontvanger:
 
@@ -616,7 +619,7 @@ Het bijwerken van het bedrijf (verbonden lijst in &quot;cus:bedrijf&quot;schema)
 </recipient>
 ```
 
-#### Voorbeeld 3 {#example-3}
+#### Example 3 {#example-3}
 
 Een ontvanger aan een groep toevoegen met de groeprelatietabel (&quot;nms:rcpGrpRel&quot;):
 
@@ -638,7 +641,7 @@ Door gebrek, moeten alle inzamelingselementen worden bevolkt om de de inzameling
 
 ### Voorbeeld van SOAP-berichten {#example-of-soap-messages-1}
 
-* Query:
+* Queryactiviteit:
 
    ```
    <?xml version='1.0' encoding='ISO-8859-1'?>
