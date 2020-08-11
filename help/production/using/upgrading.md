@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '1122'
+ht-degree: 0%
 
 ---
 
 
 # Bijwerken{#upgrading}
 
-Voordat u het upgradeproces start, bepaalt en bevestigt u welke versie van Adobe Campaign moet worden bijgewerkt naar en raadpleegt u de [Opmerkingen](https://docs.campaign.adobe.com/doc/AC/en/RN.html)bij de release.
+Voordat u het upgradeproces start, bepaalt en bevestigt u welke versie van Adobe Campaign moet worden bijgewerkt naar en raadpleegt u de [releaseopmerkingen](../../rn/using/latest-release.md) .
 
 >[!CAUTION]
 >
@@ -31,11 +34,11 @@ Voordat u het upgradeproces start, bepaalt en bevestigt u welke versie van Adobe
 
 >[!NOTE]
 >
->Raadpleeg ook de [installatiegids](../../installation/using/general-architecture.md) en de [build-upgrade](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) die aan de slag gaat.
+>Raadpleeg ook de [installatiegids](../../installation/using/general-architecture.md) en de [build-upgrade](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) die aan de slag gaat.
 
 ## In Windows {#in-windows}
 
-Als u Adobe Campaign in een nieuwe versie wilt bijwerken wanneer u een nieuwe build levert, moet u de volgende procedure toepassen in Windows:
+Om Adobe Campaign in een nieuwe versie bij te werken wanneer het leveren van een nieuwe bouwstijl, zou de volgende procedure in Vensters moeten worden toegepast:
 
 * [Afsluitdiensten](#shut-down-services),
 * [Een upgrade uitvoeren van de Adobe Campaign-servertoepassing](#upgrade-the-adobe-campaign-server-application),
@@ -54,7 +57,7 @@ Als u alle bestanden wilt vervangen door de nieuwe versie, moet u alle instantie
 
       **iisreset /stop**
 
-   * Adobe Campagne-service: nlserver met **netstop6**
+   * Adobe Campaign-service: **netstop nlserver6**
    >[!CAUTION]
    >
    >U moet er ook voor zorgen dat de omleidingsserver (webmdl) wordt gestopt, zodat het bestand **nlsrvmod.dll** dat door IIS wordt gebruikt, kan worden vervangen door de nieuwe versie.
@@ -69,17 +72,17 @@ Als u alle bestanden wilt vervangen door de nieuwe versie, moet u alle instantie
 
    U kunt de Manager van de Taak van Vensters gebruiken om ervoor te zorgen alle processen worden tegengehouden.
 
-### Een upgrade uitvoeren van de Adobe Campagne-servertoepassing {#upgrade-the-adobe-campaign-server-application}
+### De Adobe Campaign-servertoepassing upgraden {#upgrade-the-adobe-campaign-server-application}
 
 Voer de volgende stappen uit om het upgradebestand uit te voeren:
 
 1. Voer **setup.exe** uit.
 
-   Als u dit bestand wilt downloaden, gaat u naar de pagina Adobe Campagne Support ( [https://support.neolane.net/](https://support.neolane.net/)) via de koppeling **Download Center** .
+   Als u dit bestand wilt downloaden, gaat u naar de pagina Adobe Campaign Support ( [https://support.neolane.net/](https://support.neolane.net/)) via de koppeling **Download Center** .
 
 1. Selecteer de installatiemodus: kiezen **[!UICONTROL Update or repair]**
-1. Klik **[!UICONTROL Next]** .
-1. Klik **[!UICONTROL Finish]** .
+1. Klik op **[!UICONTROL Next]** .
+1. Klik op **[!UICONTROL Finish]** .
 
    Het installatieprogramma kopieert vervolgens de nieuwe bestanden.
 
@@ -111,11 +114,11 @@ De volgende diensten moeten opnieuw worden opgestart:
 
    **iisreset /start**
 
-* Adobe Campagne-service: **Net start Nlserver6**
+* Adobe Campaign-service: **netwerkbeginserver6**
 
 ## In Linux {#in-linux}
 
-Als u Adobe Campaign in een nieuwe versie wilt bijwerken wanneer een nieuwe build wordt geleverd, volgt de procedure voor Linux:
+Als u Adobe Campaign wilt bijwerken in een nieuwe versie wanneer een nieuwe build wordt geleverd, volgt de procedure voor Linux:
 
 * [Updates](#obtain-updated-packages)verkrijgen,
 * [Een update](#perform-an-update)uitvoeren
@@ -129,7 +132,7 @@ Raadpleeg [deze sectie](../../installation/using/client-console-availability-for
 
 ### Bijgewerkte pakketten ophalen {#obtain-updated-packages}
 
-Begin door beide bijgewerkte pakketten van de Campagne van Adobe te herstellen: Ga naar de pagina Adobe Campagne Support ( [https://support.neolane.net/](https://support.neolane.net/)) via de link **Download Center** .
+Begin door beide bijgewerkte pakketten van Adobe Campaign te herstellen: Ga naar de pagina Adobe Campaign Support ( [https://support.neolane.net/](https://support.neolane.net/)) via de link **Download Center** .
 
 Het bestand is **nlserver6-v7-XXX.rpm**
 
@@ -178,6 +181,7 @@ Hiervoor voert u de volgende opdracht uit:
 >* Uw script wordt mogelijk **httpd** genoemd in plaats van **apache**.
 >* U MOET dit bevel uitvoeren tot u het volgende antwoord verkrijgt:
    >Deze bewerking is vereist om Apache de nieuwe bibliotheek te laten toepassen.
+
 >
 
 
@@ -215,13 +219,13 @@ Er zijn twee manieren om het synchronisatieresultaat weer te geven:
 
 Pas het volgende proces toe om conflicten op te lossen:
 
-1. Ga in de Adobe Campaign-structuur naar **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]** .
+1. Ga in de Adobe Campaign boom naar **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]** .
 1. Selecteer het conflict dat u wilt oplossen in de lijst.
 
 Er zijn drie manieren om een conflict op te lossen:
 
 * **[!UICONTROL Declare as resolved]** : moet vooraf door de gebruiker worden ingeschakeld.
-* **[!UICONTROL Accept the new version]** : wordt aangeraden als de bronnen van Adobe Campaign niet door de gebruiker zijn gewijzigd.
+* **[!UICONTROL Accept the new version]** : aanbevolen als de gebruiker de bronnen die bij Adobe Campaign worden geleverd, niet heeft gewijzigd.
 * **[!UICONTROL Keep the current version]** : betekent dat de bijwerking wordt afgewezen.
 
    >[!CAUTION]
@@ -251,7 +255,7 @@ Een unicode-database mag bijvoorbeeld niet alleen de opslag van LATIN1-gegevens,
 
 ### In Windows {#in-windows-1}
 
-Download en kopieer het bestand op de computer waarop de toepassingsserver (**nlserver web**) van Adobe Campaign is geïnstalleerd
+Download en kopieer het bestand op de computer waarop de Adobe Campaign-toepassingsserver (**nlserver web**) is geïnstalleerd
 
 **setup-client-6.** XXXX **.exe**
 
@@ -265,7 +269,7 @@ De volgende keer dat clientconsoles worden aangesloten, wordt gebruikers in een 
 
 ### In Linux {#in-linux-1}
 
-Op de computer waarop de Adobe Campagne-toepassingsserver (**nlserver web**) is geïnstalleerd, haalt u het volgende pakket op:
+Op de computer waarop de Adobe Campaign-toepassingsserver (**nlserver-web**) is geïnstalleerd, haalt u het volgende pakket op:
 
 **setup-client-6.** XXXX **.exe**
 
