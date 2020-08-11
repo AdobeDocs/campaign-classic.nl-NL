@@ -1,6 +1,6 @@
 ---
 title: Monitoringrichtsnoeren
-description: In deze paragraaf worden algemene richtsnoeren voor de bewaking van Campaign Classic uiteengezet.
+description: In deze paragraaf worden algemene richtsnoeren voor de monitoring van Campaign Classic uiteengezet.
 page-status-flag: never-activated
 uuid: cf0d782d-47bf-40ae-ab6f-d1d47fa15792
 contentOwner: sauviat
@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 41c515008a12fa066cedc9d7125195e2c4776f40
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 1%
+source-wordcount: '710'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 ## Instance Monitoring dashboard {#instance-monitoring-dashboard}
 
-Het **[!UICONTROL Monitoring]** tabblad, dat toegankelijk is vanaf de Campaign Classic-startpagina, is het belangrijkste toegangspunt waarmee u uw exemplaar kunt controleren.
+Het **[!UICONTROL Monitoring]** tabblad, dat toegankelijk is vanaf de startpagina van Campaign Classic, is het belangrijkste toegangspunt waarmee u uw instantie kunt controleren.
 
 Het verstrekt een dashboard van wat op uw geval voorkomt: de status (versie van de build, geïnstalleerde pakketten, enz.), systeemindicatoren, logboeken, workflows die momenteel worden uitgevoerd, de status van de laatst verzonden leveringen, enz.
 
@@ -58,11 +58,11 @@ Met het audittrail kunt u de volledige geschiedenis van wijzigingen met betrekki
 
 **Configuratiescherm**
 
-In het Configuratiescherm kunt u verschillende instellingen van uw exemplaar beheren: beheer URL toestemmingen, controleer uw instantiedetails zoals de bouwstijlversies van uw servers, enz. Hiermee kunt u ook de beschikbare ruimte op de SFTP-servers controleren die met uw instantie zijn verbonden. [Klik hier](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html) voor meer informatie.
+In het Configuratiescherm kunt u verschillende instellingen van uw exemplaar beheren: beheer URL toestemmingen, controleer uw instantiedetails zoals de bouwstijlversies van uw servers, enz. Hiermee kunt u ook de beschikbare ruimte op de SFTP-servers controleren die met uw instantie zijn verbonden. [Klik hier](https://docs.adobe.com/content/help/nl-NL/control-panel/using/control-panel-home.html) voor meer informatie.
 
 >[!NOTE]
 >
->Houd er rekening mee dat het Configuratiescherm alleen toegankelijk is voor Admin-gebruikers en beschikbaar is voor alle klanten die Adobe Managed Services gebruiken.
+>Houd er rekening mee dat het Configuratiescherm alleen toegankelijk is voor gebruikers met beheerdersrechten en beschikbaar is voor alle klanten die Adobe Managed Services gebruiken.
 
 ### Workflows controleren {#monitoring-workflows}
 
@@ -88,7 +88,7 @@ Naast de heatmap kunt u ook een workflow maken waarmee u de status van een set w
 
 De volgende richtlijnen en beste praktijken wanneer het gebruiken van werkschema&#39;s kunnen helpen prestaties verbeteren. Raadpleeg de volgende secties voor meer informatie:
 * [Tips en trucs bij het gebruik van workflows](../../workflow/using/workflow-best-practices.md)
-* [Uitvoering van controlewerkstroom](../../workflow/using/monitoring-workflow-execution.md)
+* [Workflowuitvoering opvolgen](../../workflow/using/monitoring-workflow-execution.md)
 
 ### Bewaking van leveringen {#monitoring-deliveries}
 
@@ -96,11 +96,11 @@ De volgende richtlijnen en beste praktijken wanneer het gebruiken van werkschema
 
 **SMTP-rapporten**
 
-In SMTP-rapporten worden leveringsstatistieken en SMTP-fouten per domein weergegeven. [Klik hier](../../production/using/monitoring-processes.md) voor meer informatie.
+In SMTP-rapporten worden leveringsstatistieken en SMTP-fouten per domein weergegeven. [Meer informatie](../../production/using/monitoring-processes.md)
 
 **Aanbevolen procedures**
 
-[De beste praktijken voor levering verzenden en ontwerpen](http://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) kunnen u helpen hun prestaties verbeteren.
+[De beste praktijken voor levering verzenden en ontwerpen](../../delivery/using/delivery-best-practices.md) kunnen u helpen hun prestaties verbeteren.
 
 **De het oplossen van problemen** Specifieke acties van de levering kunnen worden uitgevoerd wanneer het ontmoeten van kwesties met leveringen:
 * [Leverbaarheidsproblemen](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
