@@ -1,7 +1,7 @@
 ---
-title: Zelfstudies
-seo-title: Zelfstudies
-description: Zelfstudies
+title: Tutorials
+seo-title: Tutorials
+description: Tutorials
 seo-description: null
 page-status-flag: never-activated
 uuid: f335a7fc-5d79-4b3a-a422-98c9ef4f4562
@@ -15,27 +15,27 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
 
 
-# Zelfstudies{#tutorials}
+# Tutorials{#tutorials}
 
 ## Stapsgewijze hulplijnen {#step-by-step-guides}
 
 Ga aan de slag met Adobe Campaign door onze intuïtieve stapsgewijze handleidingen te raadplegen.
 
-* [E-mailinhoud bewerken met Adobe Experience Manager](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/aem.html): Leer over de basisbeginselen om aan de slag te gaan met de integratie tussen Adobe Campaign en Experience Manager.
+* [E-mailinhoud bewerken met Adobe Experience Manager](https://helpx.adobe.com/campaign/kb/acc-aem.html): Leer over de grondbeginselen om met de integratie tussen Adobe Campaign en Experience Manager te beginnen.
 * [Privacybeheer](https://helpx.adobe.com/campaign/kb/acc-privacy.html): Ontdek wat Adobe Campaign Classic biedt om u te helpen bij het naleven van uw privacy wanneer u onze service gebruikt.
-* [Dynamische inhoud in een e-mail](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/target.html)integreren: de basisbeginselen te ontdekken om aan de slag te gaan met de integratie tussen Campaign Classic en Target Standard.
-* [Te leveren items beheren](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html): Meer informatie over de concepten en beste praktijken met betrekking tot leverbaarheid evenals de hulpmiddelen die door Adobe Campaign Classic worden aangeboden om het verzenden van uw leveringen te optimaliseren.
-* [Aanbevolen werkwijzen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)voor levering: Meer informatie over de beste praktijken met betrekking tot leveringsontwerp en verzendend met Adobe Campaign Classic.
-* [Een upgrade](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html)voor build uitvoeren: In deze handleiding vindt u de belangrijkste stappen en aanbevolen procedures voor het uitvoeren van een upgrade van Campaign Classic.
-* [Controlelijst](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)voor beveiligingsconfiguratie: ontdekt zeer belangrijke elementen om betreffende veiligheidsconfiguratie en het verharden voor plaatsing op locatie te controleren
+* [Dynamische inhoud in een e-mail](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html)integreren: ontdekken de grondbeginselen om met de integratie tussen Campaign Classic en de Norm van het Doel te beginnen.
+* [Te leveren items beheren](../../delivery/using/deliverability-key-points.md): Meer informatie over de concepten en beste praktijken met betrekking tot leverbaarheid evenals de hulpmiddelen die door Adobe Campaign Classic worden aangeboden om het verzenden van uw leveringen te optimaliseren.
+* [Aanbevolen werkwijzen](../../delivery/using/delivery-best-practices.md)voor levering: Meer informatie over de beste praktijken met betrekking tot leveringsontwerp en verzendend met Adobe Campaign Classic.
+* [Een build uitvoeren]upgradehttps://helpx.adobe.com/campaign/kb/acc-build-upgrade.html: deze gids stelt u de belangrijkste stappen en beste praktijken voor om een bouwstijlverbetering met Campaign Classic uit te voeren.
+* [Controlelijst](https://helpx.adobe.com/campaign/kb/acc-security.html)voor beveiligingsconfiguratie: ontdekt zeer belangrijke elementen om betreffende veiligheidsconfiguratie en het verharden voor plaatsing op locatie te controleren
 
 Meer informatie over Adobe Campaign vindt u in de volgende gebruiksgevallen en -voorbeelden:
 
