@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f3006ac7178b4fc3091859ca8a7225864da9524a
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '880'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ Voor het instellen van dit gebruiksgeval hebben we de volgende workflow voor doe
 
 Met deze (dagelijkse) workflow worden alle ontvangers geselecteerd die op de huidige datum jarig zijn.
 
-Deze manier van werken kan ook worden gevonden in de vorm van een video. Raadpleeg voor meer informatie de video [Een workflow](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html) maken.
+Deze manier van werken kan ook worden gevonden in de vorm van een video. For more on this, refer to the [Creating a workflow](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html) video.
 
 Hiertoe maakt u een campagne en klikt u op het **[!UICONTROL Targeting and workflows]** tabblad. Raadpleeg voor meer informatie het hoofddoel [Samenstellen in een workflowsectie](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) .
 
@@ -209,7 +212,7 @@ Voeg een **Terugkomende leveringsactiviteit** toe die op het malplaatje wordt ge
 
 >[!CAUTION]
 >
->Om de workflows uit te voeren, moeten de technische workflows met betrekking tot het campagneproces worden gestart. Raadpleeg voor meer informatie de sectie [Lijst met workflows voor](../../workflow/using/campaign.md) campagneprocessen.
+>Om de workflows uit te voeren, moeten de technische workflows met betrekking tot het campagneproces worden gestart. For more on this, refer to the [List of campaign process workflows](../../workflow/using/campaign.md) section.
 >
 >Als de goedkeuringsstappen voor de campagne zijn ingeschakeld, worden de leveringen pas verzonden nadat deze stappen zijn bevestigd. Raadpleeg voor meer informatie de [sectie De processen kiezen die moeten worden goedgekeurd](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved) .
 
