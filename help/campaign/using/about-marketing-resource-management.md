@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '406'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 Met de module **Marketing Resource Management (MRM)** kunt u marketingacties in samenwerkingsmodus beheren door een volledig beheer en realtime tracering van de betrokken taken, budgetten en marketingbronnen te bieden.
 
-De exploitanten van de Campagne van Adobe kunnen hun acties coördineren en hun vooruitgang in alle stadia goedkeuren via volledige bevestigingsprocessen en aangewezen volgende hulpmiddelen: rapportage, bijhouden van goedkeuringen, meldingen, discussieforums, enz. Ze worden gewaarschuwd in de gebeurtenis of fout of vertraging en in elke nieuwe fase van de validatiecyclus.
+Adobe Campaign-operatoren kunnen hun acties coördineren en de voortgang ervan in alle fasen goedkeuren via volledige validatieprocessen en de juiste trackinggereedschappen: rapportage, bijhouden van goedkeuringen, meldingen, discussieforums, enz. Ze worden gewaarschuwd in de gebeurtenis of fout of vertraging en in elke nieuwe fase van de validatiecyclus.
 
 In het kader van de programma&#39;s en subprogramma&#39;s van marketingplannen kunnen dus taken worden gecreëerd en toegewezen aan de betrokken marktdeelnemers en vervolgens in alle fasen worden beheerd.
 
@@ -36,7 +39,7 @@ Tot slot wordt het begrotingsbeheer uitgebreid dankzij het beheer van doelstelli
 
 ## Basisbegrippen {#core-concepts}
 
-In de context van Adobe Campaign, moeten de volgende concepten worden bepaald:
+In het kader van Adobe Campaign moeten de volgende begrippen worden gedefinieerd:
 
 * **Taak**
 
@@ -46,23 +49,23 @@ In de context van Adobe Campaign, moeten de volgende concepten worden bepaald:
 
 * **Marketingbronnen**
 
-   Met Adobe Campaign kunt u de voortgang volgen van gezamenlijke marketingprojecten, zoals communicatiemiddelen, actieplannen, nieuwsbrieven, enz. De aanmaak- en goedkeuringscyclus van deze marketingbronnen kan vanaf het dashboard van de bron worden gevolgd tot de publicatie ervan.
+   Met Adobe Campaign kunt u de voortgang volgen van gezamenlijke marketingprojecten, zoals communicatiemedia, actieplannen, nieuwsbrieven, enz. De aanmaak- en goedkeuringscyclus van deze marketingbronnen kan vanaf het dashboard van de bron worden gevolgd tot de publicatie ervan.
 
    Raadpleeg [Marketing resources](../../campaign/using/managing-marketing-resources.md)beheren voor meer informatie.
 
-## Gebruikersvriendelijkheid {#user-friendliness}
-
 >[!NOTE]
 >
->Raadpleeg [deze sectie](../../platform/using/adobe-campaign-workspace.md)voor meer informatie over de algemene werkruimte van Adobe Campagne.
+>Raadpleeg [deze sectie](../../platform/using/adobe-campaign-workspace.md)voor meer informatie over de algemene Adobe Campaign-werkruimte.
 >  
->Alle functies in verband met leveringen en profielbeheer worden in [deze sectie](../../delivery/using/communication-channels.md)beschreven.
+>Alle functies die verband houden met leveringen en communicatiekanalen worden in [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md)beschreven.
 >
 >Alle campagnegerelateerde functies worden beschreven in [Toegang tot marketingcampagnes](../../campaign/using/accessing-marketing-campaigns.md).
 
-Bovendien bieden de plannen en programma&#39;s in de Campagne van Adobe extra functionaliteit:
+Bovendien bieden plannen en programma&#39;s in Adobe Campaign extra functionaliteit:
 
-* Begrotingsbeheer. Raadpleeg voor meer informatie de [Controlekosten](../../campaign/using/controlling-costs.md).
-* Taakbeheer. Raadpleeg [Taken](../../campaign/using/creating-and-managing-tasks.md)maken en beheren voor meer informatie.
-* Marketing resource management. Raadpleeg [Marketing resources](../../campaign/using/managing-marketing-resources.md)beheren voor meer informatie.
+* Begrotingsbeheer. For more on this, refer to [Controlling costs](../../campaign/using/controlling-costs.md)
+
+* Taakbeheer. Zie Taken [maken en beheren voor meer informatie](../../campaign/using/creating-and-managing-tasks.md)
+
+* Marketing resource management. Raadpleeg [Marketing Resources beheren voor meer informatie](../../campaign/using/managing-marketing-resources.md)
 
