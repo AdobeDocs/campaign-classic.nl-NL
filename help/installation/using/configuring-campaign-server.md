@@ -1,7 +1,7 @@
 ---
-title: Campagneserver configureren
-seo-title: Campagneserver configureren
-description: Campagneserver configureren
+title: Campaign-server configureren
+seo-title: Campaign-server configureren
+description: Campaign-server configureren
 seo-description: null
 page-status-flag: never-activated
 uuid: be21ae4b-ca2a-4952-b256-cd8dc51309cf
@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '3608'
-ht-degree: 0%
+source-wordcount: '3593'
+ht-degree: 3%
 
 ---
 
 
-# Campagneserver configureren{#configuring-campaign-server}
+# Campaign-server configureren{#configuring-campaign-server}
 
 In de onderstaande sectie vindt u informatie over configuraties aan de serverzijde die kunnen worden uitgevoerd om aan uw behoeften en uw specifieke omgeving te voldoen.
 
@@ -31,16 +31,16 @@ In de onderstaande sectie vindt u informatie over configuraties aan de serverzij
 >
 >Deze configuraties moeten alleen door beheerders worden uitgevoerd en voor **hostmodellen op locatie** .
 >
->Voor **gehoste** implementaties kunnen instellingen aan de serverzijde alleen door Adobe worden geconfigureerd. Sommige instellingen kunnen echter worden ingesteld in het Configuratiescherm (IP staat bijvoorbeeld lijstbeheer of URL-machtigingen toe).
+>Voor **Gehoste** plaatsingen, server-zijmontages kunnen door slechts Adobe worden gevormd. Sommige instellingen kunnen echter worden ingesteld in het Configuratiescherm (bijvoorbeeld IP-lijst van gewenste personen of URL-machtigingen).
 
 Raadpleeg de volgende secties voor meer informatie:
 
-* [Documentatie van het regelpaneel](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+* [Configuratiescherm-documentatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/control-panel-home.html)
 * [Hostmodellen](../../installation/using/hosting-models.md)
-* [Campaign Classic On-premise &amp; Hosted Capaciteitmatrix](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
-* [Configuratiestappen voor hybride en gehoste modellen](https://docs.campaign.adobe.com/doc/AC/en/INS_Hybrid_and_Hosted_models_About_hybrid_and_hosted_models.html)
+* [Campaign Classic On-premisse en gehoste capaciteitmatrix](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
+* [Configuratiestappen](../../installation/using/about-hybrid-and-hosted-models.md) voor hybride en gehoste modellen )
 
-Campaign Classic-configuratiebestanden worden opgeslagen in de map **conf** van de installatiemap van Adobe Campaign. De configuratie wordt verspreid over twee bestanden:
+Campaign Classic-configuratiebestanden worden opgeslagen in de map **conf** in de installatiemap van Adobe Campaign. De configuratie wordt verspreid over twee bestanden:
 
 * **serverConf.xml**: algemene configuratie voor alle instanties. In dit bestand worden de technische parameters van de Adobe Campaign-server gecombineerd: deze worden door alle instanties gedeeld . Hieronder wordt een beschrijving van een aantal van deze parameters gegeven. De verschillende knooppunten en parameters en vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 * **config-`<instance>`.xml** (waarbij **instantie** de naam van de instantie is): specifieke configuratie van de instantie. Als u uw server onder verschillende exemplaren deelt, gelieve de parameters specifiek voor elk geval in hun relevant dossier in te gaan.
@@ -306,7 +306,7 @@ Raadpleeg ook optimalisatie voor verzending [via e-mail](../../installation/usin
 
 >[!IMPORTANT]
 >
->De affiniteitsconfiguratie moet van de ene server op de andere coherent zijn. We raden u aan contact op te nemen met Adobe voor de configuratie van affiniteit, aangezien configuratiewijzigingen moeten worden gerepliceerd op alle toepassingsservers waarop de MTA wordt uitgevoerd.
+>De affiniteitsconfiguratie moet van de ene server op de andere coherent zijn. Wij adviseren dat u Adobe voor affiniteitsconfiguratie contacteert, aangezien de configuratieveranderingen op alle toepassingsservers zouden moeten worden herhaald die MTA in werking stellen.
 
 U kunt uitgaand verkeer SMTP door affiniteiten met IP adressen verbeteren.
 
@@ -343,24 +343,24 @@ Hiervoor voert u de volgende stappen uit:
 
 ## URL-machtigingen {#url-permissions}
 
-De standaardlijst met URL&#39;s die door JavaScript-codes kunnen worden aangeroepen (workflows, enz.) door uw Campaign Classic-instanties beperkt zijn. Dit zijn URL&#39;s waarmee uw instanties correct kunnen werken.
+De standaardlijst met URL’s die via JavaScript-codes kunnen worden aangeroepen (workflows, enz.) door uw Campaign Classic-instanties, is beperkt. Dit zijn URL’s waardoor uw instanties correct kunnen werken.
 
-Instanties mogen standaard geen verbinding maken met externe URL&#39;s. Het is echter mogelijk om sommige externe URL&#39;s toe te voegen aan de lijst met geoorloofde URL&#39;s, zodat uw instantie hiermee verbinding kan maken. Hierdoor kunt u uw Campagne-instanties verbinden met externe systemen, zoals bijvoorbeeld SFTP-servers of websites, om de overdracht van bestanden en/of gegevens mogelijk te maken.
+Instanties mogen standaard geen verbinding maken met externe URL’s. Het is echter mogelijk om sommige externe URL&#39;s toe te voegen aan de lijst met geoorloofde URL&#39;s, zodat uw instantie hiermee verbinding kan maken. Hierdoor kunt u uw Campaign-instanties verbinden met externe systemen zoals SFTP-servers of websites, om de overdracht van bestanden en/of data mogelijk te maken.
 
 Wanneer een URL is toegevoegd, wordt hiernaar verwezen in het configuratiebestand van de instantie (serverConf.xml).
 
 De manier waarop u URL-machtigingen kunt beheren, is afhankelijk van uw hostingmodel:
 
 * **Hybride** of **op locatie**: Voeg de toe te staan URLs in het **serverConf.xml- dossier** toe. Gedetailleerde informatie is beschikbaar in de onderstaande sectie.
-* **Gehost**: Voeg de URL&#39;s toe die u via het **Configuratiescherm** wilt toestaan. Raadpleeg de [desbetreffende documentatie](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html)voor meer informatie.
+* **Gehost**: Voeg de URL&#39;s toe die u via het **Configuratiescherm** wilt toestaan. Raadpleeg de [desbetreffende documentatie](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html) voor meer informatie.
 
 Met **Hybride** en **Op-gebouw** het ontvangen modellen, moet de beheerder een nieuwe **urlPermission** in het **serverConf.xml** - dossier van verwijzingen voorzien. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
 Er zijn drie modi voor verbindingsbeveiliging:
 
-* **Blokkeren**: alle URL&#39;s die niet tot de lijst met toegestane adressen behoren, worden geblokkeerd, met een foutbericht. Dit is de standaardwijze na een postupgrade.
-* **Toestemming**: alle URL&#39;s die niet tot de lijst met toegestane adressen behoren, zijn toegestaan.
-* **Waarschuwing**: alle URL&#39;s die niet tot de lijst met toegestane adressen behoren, zijn toegestaan, maar de JS-interpreter geeft een waarschuwing weer, zodat de beheerder deze kan verzamelen. In deze modus worden JST-310027-waarschuwingsberichten toegevoegd.
+* **Blokkeren**: alle URL&#39;s die niet bij de lijst van gewenste personen horen, worden geblokkeerd, met een foutbericht. Dit is de standaardwijze na een postupgrade.
+* **Toestemming**: alle URL&#39;s die niet bij de lijst van gewenste personen horen, zijn toegestaan.
+* **Waarschuwing**: alle URL&#39;s die niet bij de lijst van gewenste personen horen, zijn toegestaan, maar de JS-interpreter geeft een waarschuwing weer, zodat de beheerder deze kan verzamelen. In deze modus worden JST-310027-waarschuwingsberichten toegevoegd.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -372,9 +372,9 @@ Er zijn drie modi voor verbindingsbeveiliging:
 
 >[!IMPORTANT]
 >
->Standaard gebruikt de client van nieuwe klanten de **blokkeermodus**. Als zij een nieuwe URL moeten toestaan, zouden zij hun beheerder moeten contacteren om het aan toe te voegen staan lijst.
+>Standaard gebruikt de client van nieuwe klanten de **blokkeermodus**. Als zij een nieuwe URL moeten toestaan, zouden zij hun beheerder moeten contacteren om het aan de lijst van gewenste personen toe te voegen.
 >
->Bestaande klanten die uit een migratie komen, kunnen de **waarschuwingsmodus** een tijdje gebruiken. Ondertussen moeten zij het uitgaande verkeer analyseren alvorens URLs toe te laten. Zodra de lijst met geautoriseerde URL&#39;s is gedefinieerd, moeten ze contact opnemen met de beheerder om de URL&#39;s toe te voegen aan de lijst met geautoriseerde URL&#39;s en de **blokkeermodus** te activeren.
+>Bestaande klanten die uit een migratie komen, kunnen de **waarschuwingsmodus** een tijdje gebruiken. Ondertussen moeten zij het uitgaande verkeer analyseren alvorens URLs toe te laten. Zodra de lijst van geoorloofde URLs wordt bepaald, zouden zij hun beheerder moeten contacteren om URLs aan de lijst van gewenste personen toe te voegen en de **blokkerende wijze** te activeren.
 
 ## Dynamische paginabeveiliging en -bedekkingen {#dynamic-page-security-and-relays}
 
@@ -487,6 +487,7 @@ Standaard worden niet alle HTTP-headers weergegeven. U kunt specifieke kopballen
 
    * **naam**: koptekstnaam
    * **waarde**: naam van waarde.
+
    Bijvoorbeeld:
 
    ```
