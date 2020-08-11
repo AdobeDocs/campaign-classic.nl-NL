@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a3550b94cf68ae96e04020d99f5fc815ddaf0732
+source-git-commit: 1e7dfc5cebf6b59d1b7e718fcab289691d8b76de
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Leer beste praktijken met betrekking tot leveringsontwerp en verzendend met Adob
 <tr>
   <td>
     <a href="optimize-delivery.md">
-      <img alt="Optimaliseren" src="assets/do-not-localize/optimize.svg"/>
+      <img alt="Optimaliseren" src="assets/do-not-localize/optimize.svg" width="60px"/>
     </a>
     <div>
       <a href="optimize-delivery.md">
@@ -42,7 +42,7 @@ Leer beste praktijken met betrekking tot leveringsontwerp en verzendend met Adob
   </td>
    <td>
     <a href="use-templates.md">
-      <img alt="Sjablonen" src="assets/do-not-localize/design.svg"/>
+      <img alt="Sjablonen" src="assets/do-not-localize/design.svg" width="60px"/>
     </a>
     <div>
       <a href="use-templates.md">
@@ -55,7 +55,7 @@ Leer beste praktijken met betrekking tot leveringsontwerp en verzendend met Adob
   </td>
   <td>
     <a href="design-and-personalize.md">
-      <img alt="Ontwerp" src="assets/do-not-localize/custom.svg"/>
+      <img alt="Ontwerp" src="assets/do-not-localize/custom.svg" width="60px"/>
     </a>
     <div>
       <a href="design-and-personalize.md">
@@ -70,7 +70,7 @@ Leer beste praktijken met betrekking tot leveringsontwerp en verzendend met Adob
 <tr>
   <td>
     <a href="define-the-right-audience.md">
-      <img alt="Target" src="assets/do-not-localize/profiles.svg"/>
+      <img alt="Target" src="assets/do-not-localize/profiles.svg" width="60px"/>
     </a>
     <div>
       <a href="define-the-right-audience.md">
@@ -83,7 +83,7 @@ Leer beste praktijken met betrekking tot leveringsontwerp en verzendend met Adob
   </td>
    <td>
     <a href="check-before-sending.md">
-      <img alt="Controleren" src="assets/do-not-localize/start.svg"/>
+      <img alt="Controleren" src="assets/do-not-localize/start.svg" width="60px"/>
     </a>
     <div>
       <a href="check-before-sending.md">
@@ -96,7 +96,7 @@ Leer beste praktijken met betrekking tot leveringsontwerp en verzendend met Adob
   </td>
   <td>
     <a href="track-and-monitor.md">
-      <img alt="Optimaliseren" src="assets/do-not-localize/troubleshoot.svg"/>
+      <img alt="Optimaliseren" src="assets/do-not-localize/troubleshoot.svg" width="60px"/>
     </a>
     <div>
       <a href="track-and-monitor.md">
