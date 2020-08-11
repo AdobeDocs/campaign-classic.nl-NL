@@ -1,7 +1,7 @@
 ---
-title: Een Experience Manager-nieuwsbrief maken
-seo-title: Een Experience Manager-nieuwsbrief maken
-description: Een Experience Manager-nieuwsbrief maken
+title: Een nieuwsbrief voor Experience Managers maken
+seo-title: Een nieuwsbrief voor Experience Managers maken
+description: Een nieuwsbrief voor Experience Managers maken
 seo-description: null
 page-status-flag: never-activated
 uuid: 75cf4891-06a6-42d2-9b22-b4d93e0dc64a
@@ -15,23 +15,23 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 0%
+source-wordcount: '301'
+ht-degree: 1%
 
 ---
 
 
-# Een Experience Manager-nieuwsbrief maken{#creating-an-experience-manager-newsletter}
+# Een nieuwsbrief voor Experience Managers maken{#creating-an-experience-manager-newsletter}
 
-Deze integratie kan bijvoorbeeld worden gebruikt om een nieuwsbrief in de Adobe Experience Manager te maken die vervolgens in Adobe Campaign wordt gebruikt als onderdeel van een e-mailcampagne.
+Deze integratie kan bijvoorbeeld worden gebruikt voor het maken van een nieuwsbrief in Adobe Experience Manager die vervolgens in Adobe Campaign wordt gebruikt als onderdeel van een e-mailcampagne.
 
-Raadpleeg deze [stapsgewijze handleiding](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/aem.html)voor een meer gedetailleerd voorbeeld van het gebruik van deze integratie.
+Raadpleeg deze [stapsgewijze handleiding](https://helpx.adobe.com/campaign/kb/acc-aem.html)voor een meer gedetailleerd voorbeeld van het gebruik van deze integratie.
 
-**Van Adobe Experience Manager:**
+**Uit Adobe Experience Manager:**
 
-1. Klik in uw exemplaar van de AEM-auteur op het **Adobe Experience** -logo linksboven op de pagina en selecteer **[!UICONTROL Sites]**.
+1. Klik in de AEM instantie van de auteur op het **Adobe Experience** -logo linksboven op de pagina en selecteer **[!UICONTROL Sites]**.
 
    ![](assets/aem_uc_1.png)
 
@@ -80,14 +80,14 @@ Uw nieuwsbrief is nu klaar en gesynchroniseerd in Adobe Campaign.
    ![](assets/aem_uc_10.png)
 
 1. Voeg een **[!UICONTROL Label]** object toe aan uw levering en klik op **[!UICONTROL Continue]**.
-1. Klik op de knop **[!UICONTROL Synchronize]**. 
+1. Klik op de knop **[!UICONTROL Synchronize]**.
 
-   Als deze knoop niet in uw interface verschijnt, klik de **[!UICONTROL Properties]** knoop en selecteer het **[!UICONTROL Advanced]** lusje. Het **[!UICONTROL Content editing mode]** veld moet worden ingesteld op **[!UICONTROL AEM]** uw AEM-instantie in het **[!UICONTROL AEM account]** veld.
+   Als deze knoop niet in uw interface verschijnt, klik de **[!UICONTROL Properties]** knoop en selecteer het **[!UICONTROL Advanced]** lusje. Het **[!UICONTROL Content editing mode]** veld moet worden ingesteld op **[!UICONTROL AEM]** het AEM in het **[!UICONTROL AEM account]** veld.
 
    ![](assets/aem_uc_11.png)
 
 1. Selecteer de levering die eerder in Adobe Experience Manager is gemaakt en klik op **[!UICONTROL Ok]**.
-1. Klik op de **[!UICONTROL Refresh content]** knop zodra er wijzigingen zijn aangebracht in uw AEM-levering.
+1. Klik op de **[!UICONTROL Refresh content]** knop zodra er wijzigingen in de AEM zijn aangebracht.
 
    ![](assets/aem_uc_12.png)
 
