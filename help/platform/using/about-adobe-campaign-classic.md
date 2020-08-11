@@ -1,7 +1,7 @@
 ---
-title: Informatie over Adobe Campagne Classic
-seo-title: Informatie over Adobe Campagne Classic
-description: Informatie over Adobe Campagne Classic
+title: Informatie over Adobe Campaign Classic
+seo-title: Informatie over Adobe Campaign Classic
+description: Informatie over Adobe Campaign Classic
 seo-description: null
 page-status-flag: never-activated
 uuid: 2d0160fa-8328-4ff9-ab91-56e4058f8a99
@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3b04cf988f144b8bfb846aff83e97c9b3a82e6e0
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Informatie over Adobe Campagne Classic{#about-adobe-campaign-classic}
+# Informatie over Adobe Campaign Classic{#about-adobe-campaign-classic}
 
 Om een hoge mate van klantenbetrokkenheid en grote ervaringen te leveren, moeten de merken verenigbare klantenreizen op alle touchpoints tot stand brengen. Marktdeelnemers kunnen nu efficiënt marketingcampagnes ontwerpen, plannen, uitvoeren, beheren en optimaliseren die een hoog rendement op marketinginvesteringen opleveren en loyaliteit stimuleren.
 
@@ -31,27 +31,27 @@ Met Adobe Campaign kunt u het maken van conversationele marketingcampagnes coör
 
 >[!NOTE]
 >
->Adobe Campaign Classic is beschikbaar in v6.11 en v7. Behalve wanneer vermeld, zijn de hulpmaterialen op beide versies, in recentste bouwstijl van toepassing. Schermafbeeldingen weerspiegelen de gebruikersinterface van Campagne Classic v7.
+>Adobe Campaign Classic is beschikbaar in v6.11 en v7. Behalve wanneer vermeld, zijn de hulpmaterialen op beide versies, in recentste bouwstijl van toepassing. Schermafbeeldingen weerspiegelen de gebruikersinterface van Campaign Classic v7.
 
 ## Belangrijkste mogelijkheden {#key-capabilities}
 
-De Campagne van Adobe verstrekt een platform voor het ontwerpen van dwars-kanaalklantenervaringen en verstrekt een milieu voor visuele campagneorchestratie, interactiebeheer in real time en kanaaluitvoering.
+Adobe Campaign biedt een platform voor het ontwerpen van kanaaloverschrijdende klantervaringen en biedt een omgeving voor visuele campagnelay-out, real-time interactiebeheer en kanaaloverschrijdende uitvoering.
 
-De marketingcampagne in Adobe Campaign illustreert de belangrijkste onderdelen van de functionaliteit van het product:
+De marketingcampagne in Adobe Campaign illustreert de belangrijkste aspecten van de functionaliteit van het product:
 
 ![](assets/d_ncs_user_emarketing.png)
 
 ### Geïntegreerd klantprofiel {#integrated-customer-profile}
 
-Profielen (klanten, vooruitzichten, abonnees van nieuwsbrieven, enz.) zijn gecentraliseerd in de Adobe Campagne-database. Er zijn vele mogelijke mechanismen om profielen te verwerven en dit gegevensbestand op te bouwen: on line verzameling via webformulieren, handmatig of automatisch importeren van tekstbestanden, replicatie met bedrijfsdatabases of andere informatiesystemen. Met de Campagne van Adobe, kunt u marketing geschiedenis, aankoopinformatie, voorkeur, CRM gegevens, en om het even welke relevante PII gegevens in een geconsolideerde mening opnemen om te analyseren en actie te ondernemen.
+Profielen (klanten, vooruitzichten, abonnees van nieuwsbrieven, enz.) zijn gecentraliseerd in de Adobe Campaign-database. Er zijn vele mogelijke mechanismen om profielen te verwerven en dit gegevensbestand op te bouwen: on line verzameling via webformulieren, handmatig of automatisch importeren van tekstbestanden, replicatie met bedrijfsdatabases of andere informatiesystemen. Met Adobe Campaign kunt u de marketinggeschiedenis, aankoopgegevens, voorkeuren, CRM-gegevens en alle relevante PII-gegevens in een geconsolideerde weergave opnemen om te analyseren en actie te ondernemen.
 
-In de Campagne van Adobe, zijn de ontvangers de standaardprofielen gericht voor het verzenden van leveringen (e-mail, SMS, enz.). Dankzij de gegevens van de ontvanger die in het gegevensbestand worden opgeslagen, kunt u het doel filteren dat om het even welke bepaalde levering zal ontvangen en om verpersoonlijkingsgegevens in uw leveringsinhoud toe te voegen. De database bevat andere typen profielen. Ze zijn ontworpen voor verschillende toepassingen. Zaadprofielen worden bijvoorbeeld gemaakt om de leveringen te testen voordat ze naar het uiteindelijke doel worden verzonden.
+In Adobe Campaign zijn ontvangers de standaardprofielen voor het verzenden van leveringen (e-mails, SMS, enz.). Dankzij de gegevens van de ontvanger die in het gegevensbestand worden opgeslagen, kunt u het doel filteren dat om het even welke bepaalde levering zal ontvangen en om verpersoonlijkingsgegevens in uw leveringsinhoud toe te voegen. De database bevat andere typen profielen. Ze zijn ontworpen voor verschillende toepassingen. Zaadprofielen worden bijvoorbeeld gemaakt om de leveringen te testen voordat ze naar het uiteindelijke doel worden verzonden.
 
 De grondbeginselen van profielbeheer worden uitgelegd in [Informatie over profielen](../../platform/using/about-profiles.md).
 
 ### Gerichte segmentatie {#targeted-segmentation}
 
-Adobe Campaign beschikt over krachtige, gebruiksvriendelijke segmentatie- en doelfuncties waarmee u bijzonder doelgerichte, gedifferentieerde aanbiedingen kunt maken. De beschrijvende analysefunctionaliteit laat u informatie upstream en downstream van uw marketing campagnes analyseren, en de functionaliteit van het filterbeheer en [grafische vraagredacteur](../../platform/using/about-queries-in-campaign.md) laat u uw abonneepopulatie filtreren en steekproef of doelgroepen creëren die op een onbeperkt aantal criteria worden gebaseerd. De analyse- en doelfuncties worden beschreven in [deze pagina](../../reporting/using/about-descriptive-analysis.md) en in de sectie [Filters](../../platform/using/creating-filters.md) maken.
+Adobe Campaign beschikt over krachtige, gebruiksvriendelijke segmentatie- en doelgerichte functies waarmee u zeer doelgerichte, gedifferentieerde aanbiedingen kunt maken. De beschrijvende analysefunctionaliteit laat u informatie upstream en downstream van uw marketing campagnes analyseren, en de functionaliteit van het filterbeheer en [grafische vraagredacteur](../../platform/using/about-queries-in-campaign.md) laat u uw abonneepopulatie filtreren en steekproef of doelgroepen creëren die op een onbeperkt aantal criteria worden gebaseerd. De analyse- en doelfuncties worden beschreven in [deze pagina](../../reporting/using/about-descriptive-analysis.md) en in de sectie [Filters](../../platform/using/creating-filters.md) maken.
 
 De geavanceerde functionaliteit voor gegevensbeheer breidt de mogelijkheden voor gegevensverwerking uit. Het vereenvoudigt en optimaliseert het het richten proces door gegevens op te nemen niet die in datamart worden gemodelleerd. Deze functionaliteit wordt gedetailleerd beschreven in [deze pagina](../../workflow/using/targeting-data.md#data-management).
 
@@ -69,15 +69,15 @@ Met Adobe Campaign kunt u het gedrag van uw klanten volgen en interpreteren door
 
 ### Adobe Experience Cloud-integratie {#adobe-experience-cloud-integrations}
 
-U kunt de leveringsfuncties en de geavanceerde functies van het campagnebeheer van Adobe Campaign combineren met een reeks oplossingen die u helpen uw gebruikerservaring personaliseren: Bijvoorbeeld triggers voor Adobe Experience Manager, Adobe Analytics, Adobe Target of Adobe Experience Cloud. U kunt ook integreren met Adobe IMS en u aanmelden bij Campagne met uw Adobe-id. Raadpleeg [deze sectie](../../integrations/using/about-adobe-id.md)voor meer informatie over integratie tussen oplossingen en verificatie.
+U kunt de leveringsfuncties en de geavanceerde functies voor campagnemanagement van Adobe Campaign combineren met een reeks oplossingen die u helpen uw gebruikerservaring aan te passen: Adobe Experience Manager, Adobe Analytics, Adobe Target of Adobe Experience Cloud bijvoorbeeld. U kunt ook integreren met Adobe IMS en u aanmelden bij Campagne met uw Adobe ID. Raadpleeg [deze sectie](../../integrations/using/about-adobe-id.md)voor meer informatie over integratie tussen oplossingen en verificatie.
 
 ## Kernmogelijkheden en invoegtoepassingen {#core-capabilities-and-add-ons}
 
-Adobe Campaign biedt een aantal mogelijkheden om u te helpen de functionaliteit voor marketing van gesprekken te implementeren en te optimaliseren, afhankelijk van uw behoeften en architectuur. Sommige zijn kernmogelijkheden en sommige hangen van de installatie van een pakket en van uw configuratie af. Hier vindt u een gedetailleerde productbeschrijving: [Adobe Campagne Classic - Productbeschrijving](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).
+Adobe Campaign biedt een reeks mogelijkheden om u te helpen de functionaliteit voor marketing van gesprekken uitvoeren en optimaliseren afhankelijk van uw behoeften en architectuur. Sommige zijn kernmogelijkheden en sommige hangen van de installatie van een pakket en van uw configuratie af. Hier vindt u een gedetailleerde productbeschrijving: [Adobe Campaign Classic-productbeschrijving](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).
 
 De volgende mogelijkheden zijn beschikbaar. Afhankelijk van uw licentieovereenkomst kunnen sommige van deze mogelijkheden beschikbaar zijn of niet in uw exemplaar.
 
-* [Kanalen](../../delivery/using/communication-channels.md) - ontwerp en verzend leveringen op verschillende kanalen: e-mail, SMS, Line, mobile app, direct mail,
+* [Kanalen](../../delivery/using/steps-about-delivery-creation-steps.md) - ontwerp en verzend leveringen op verschillende kanalen: e-mail, SMS, Line, mobile app, direct mail,
 * [Campagne](../../campaign/using/designing-marketing-campaigns.md) - orkestcampagne over de kanalen
 * [MRM](../../campaign/using/about-marketing-resource-management.md) - marketingmiddelen en -budgetten beheren;
 * [Interactie](../../interaction/using/interaction-and-offer-management.md) - aanbiedingen beheren met Campagne
