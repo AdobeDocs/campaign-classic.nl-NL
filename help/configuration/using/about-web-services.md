@@ -15,40 +15,43 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a047e4af6e31c54fa2444943a18da5913e115c09
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '661'
+ht-degree: 0%
 
 ---
 
 
 # Webservices{#about-web-services}
 
-## Definitie van Adobe Campagne-API&#39;s {#definition-of-adobe-campaign-apis}
+## Definitie van Adobe Campaign API&#39;s {#definition-of-adobe-campaign-apis}
 
-De toepassingsserver van de Campagne van Adobe werd ontworpen voor openheid en gemakkelijke integratie met meer en meer diverse en complexe bedrijfsinformatiesystemen.
+De Adobe Campaign-toepassingsserver is ontworpen voor openheid en eenvoudige integratie met steeds meer uiteenlopende en complexe bedrijfsinformatiesystemen.
 
-Adobe Campagne-API&#39;s worden gebruikt in JavaScript binnen de toepassing en in SOAP buiten de toepassing. Ze vormen een bibliotheek van algemene functies die kunnen worden verrijkt. Zie [SOAP-methoden](../../configuration/using/implementing-soap-methods.md)implementeren voor meer informatie.
+Adobe Campaign API&#39;s worden gebruikt in JavaScript binnen de toepassing en in SOAP daarbuiten. Ze vormen een bibliotheek van algemene functies die kunnen worden verrijkt. Zie [SOAP-methoden](../../configuration/using/implementing-soap-methods.md)implementeren voor meer informatie.
 
 >[!IMPORTANT]
 >
->Het aantal geoorloofde Vraag van de Motor varieert per dag op uw vergunningscontract. Raadpleeg [deze pagina](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html)voor meer informatie.\
->In [deze specifieke documentatie](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)vindt u een lijst met alle API&#39;s, inclusief de volledige beschrijving ervan.
+>Het aantal geoorloofde Vraag van de Motor varieert per dag op uw vergunningscontract. For more on this, refer to [this page](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
+>In [deze specifieke documentatie](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)vindt u een lijst met alle API&#39;s, inclusief de volledige beschrijving ervan.
 
 ## Vereisten {#prerequisites}
 
-Voordat u de Adobe Campagne-API&#39;s kunt gebruiken, moet u vertrouwd zijn met de volgende onderwerpen:
+Voordat u de Adobe Campaign API&#39;s kunt gebruiken, moet u vertrouwd zijn met de volgende onderwerpen:
 
 * Javascript
 * SOAP-protocol
 * Adobe Campaign datamodel
 
-## Adobe Campagne-API&#39;s gebruiken {#using-adobe-campaign-apis}
+## Adobe Campaign API&#39;s gebruiken {#using-adobe-campaign-apis}
 
 Adobe Campaign gebruikt twee typen API&#39;s:
 
 * Algemene gegevens krijgen toegang tot API&#39;s voor het opvragen van gegevens in het datamodel. Zie API&#39;s [die zijn gericht op gegevens](../../configuration/using/data-oriented-apis.md).
 * Bedrijfs specifieke APIs die u op elk voorwerp laten handelen: leveringen, workflows, abonnementen, enz. Raadpleeg de [bedrijfsgerichte API&#39;s](../../configuration/using/business-oriented-apis.md).
 
-Als u API&#39;s wilt ontwikkelen en wilt communiceren met Adobe Campaign, moet u bekend zijn met uw datamodel. Met Adobe Campaign kunt u een volledige beschrijving van de basis genereren. Zie de [beschrijving van het model](../../configuration/using/data-oriented-apis.md#description-of-the-model).
+Om APIs te ontwikkelen en met Adobe Campaign in wisselwerking te staan, moet u met uw datamodel vertrouwd zijn. Met Adobe Campaign kunt u een volledige beschrijving van de basis genereren. Zie de [beschrijving van het model](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
 ## SOAP-aanroepen {#soap-calls}
 
@@ -65,7 +68,7 @@ De structuur van een SOAP-bericht is als volgt:
 
 ## Middelen en uitwisselingen {#resources-and-exchanges}
 
-In het volgende schema ziet u de verschillende bronnen die betrokken zijn bij het gebruik van de Adobe Campagne-API&#39;s:
+In het volgende schema ziet u de verschillende bronnen die betrokken zijn bij het gebruik van Adobe Campaign API&#39;s:
 
 ![](assets/s_ncs_integration_webservices_schema_pres.png)
 
@@ -77,7 +80,7 @@ Zie [ExecuteQuery (xtk:queryDef)](../../configuration/using/data-oriented-apis.m
 
 >[!NOTE]
 >
->De beschrijving van WSDL van deze dienst wordt voltooid in het hier getoonde voorbeeld: Beschrijving [webservice: WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
+>De beschrijving van WSDL van deze dienst wordt voltooid in het hier getoonde voorbeeld: [Webservicebeschrijving: WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
 ### SOAP-query {#soap-query}
 
@@ -122,7 +125,7 @@ In SOAP worden de parameters op volgorde van weergave herkend. De eerste paramet
 
 Het resultaat van de query wordt ingevoerd vanuit het `<pdomoutput>` element.
 
-## Foutbeheer {#error-management}
+## Error management {#error-management}
 
 Voorbeeld van reactie SOAP-fout:
 
@@ -156,7 +159,7 @@ Het succes of de mislukking van de de dienstaanroeping wordt geïdentificeerd wa
 
 >[!IMPORTANT]
 >
->Alle Adobe Campagne-webservices verwerken fouten. Daarom wordt sterk geadviseerd om elke vraag te testen om teruggekeerde fouten te behandelen.
+>Alle Adobe Campaign-webservices verwerken fouten. Daarom wordt sterk geadviseerd om elke vraag te testen om teruggekeerde fouten te behandelen.
 
 Voorbeeld van foutafhandeling in C#:
 
@@ -176,10 +179,10 @@ catch (SoapException e)
 
 ## URL van de de dienstserver van het Web (of EndPoint) {#url-of-web-service-server--or-endpoint-}
 
-Om de dienst van het Web voor te leggen, moet de server van de Campagne van Adobe die de overeenkomstige de dienstmethode uitvoert worden gecontacteerd.
+Om de dienst van het Web voor te leggen, moet de server van Adobe Campaign die de overeenkomstige de dienstmethode uitvoert worden gecontacteerd.
 
 De server-URL is als volgt:
 
 https://serverName/nl/jsp/soaprouter.jsp
 
-Met **`<server>`** de toepassingsserver van de Campagne van Adobe (**nlserver Web**).
+Met **`<server>`** de Adobe Campaign-toepassingsserver (**nlserver-web**).
