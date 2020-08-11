@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5e8598fd445f6e2ebd891af1e15c07eb836cd647
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '618'
 ht-degree: 6%
 
 ---
@@ -159,7 +159,7 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 <p>9,6 x</p>
 <p>10.x</p>
 <p>11.x</p>
-<p>Opmerking: U kunt Amazon RDS ook gebruiken voor PostgreSQL met de hierboven gespecificeerde versies.</p>
+<p>Opmerking: u kunt ook Amazon RDS voor PostgreSQL gebruiken met de hierboven gespecificeerde versies.</p>
 </td>
 </tr>
 <tr>
@@ -169,7 +169,7 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 <p>2014</p>
 <p>2016</p>
 <p>2017</p>
-<p>Waarschuwing: Microsoft SQL Server wordt niet ondersteund als de primaire database wanneer de Campagneserver op Linux wordt uitgevoerd. Raadpleeg de <a href="https://docs.campaign.adobe.com/doc/AC/en/INS_Prerequisites_and_recommendations__Database.html#Microsoft_SQL_Server">installatiehandleiding</a>.</p>
+<p>Waarschuwing: Microsoft SQL Server wordt niet ondersteund als de primaire database wanneer de Campagneserver op Linux wordt uitgevoerd. <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Meer informatie</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -292,7 +292,7 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 </td>
 </tr>
 <tr>
-<td>Sneeuwvlok</td>
+<td>Snowflake</td>
 <td> </td>
 </tr>
 </tbody>
@@ -366,10 +366,10 @@ Raadpleeg deze [sectie](https://docs.adobe.com/content/help/en/campaign-classic/
 
 ## Meer als dit{#Morelikethis}
 
-* [Campaign Classic Release-aantekeningen](https://docs.adobe.com/content/help/nl-NL/campaign-classic/using/release-notes/latest-release.html)
+* [Opmerkingen bij de release Campaign Classic](https://docs.adobe.com/content/help/nl-NL/campaign-classic/using/release-notes/latest-release.html)
 * [Installatiehandleiding](https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/general-architecture.html)
 * [Verouderde functies en systemen](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 * [Upgradeprocedure bouwen](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)
-* [Campaign Classic-compatibiliteitmatrix voor 19.0-release](https://helpx.adobe.com/campaign/kb/compatibility-matrix-19-0.html)
-* [Campaign Classic-compatibiliteitmatrix voor 19.1-release](https://helpx.adobe.com/campaign/kb/compatibility-matrix-19-1.html)
+* [Campaign Classic-compatibiliteitsmatrix voor 19.0-release](https://helpx.adobe.com/campaign/kb/compatibility-matrix-19-0.html)
+* [Campaign Classic-compatibiliteitsmatrix voor 19.1-release](https://helpx.adobe.com/campaign/kb/compatibility-matrix-19-1.html)
 
