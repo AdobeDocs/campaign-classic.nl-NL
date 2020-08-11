@@ -15,30 +15,30 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 0%
+source-wordcount: '479'
+ht-degree: 5%
 
 ---
 
 
 # Informatie over campagetypologieën{#about-campaign-typologies}
 
-De Optimalisering van de campagne is de module van de Campagne van Adobe die u de verzendende leveringen laat controleren, filtreren en controleren. Om conflicten tussen campagnes te vermijden, kan de Campagne van Adobe diverse combinaties testen door specifieke beperkingsregels toe te passen. Dit garandeert dat de verzonden berichten voldoen aan de behoeften en verwachtingen van klanten en het communicatiebeleid van het bedrijf.
+De Optimalisering van de campagne is de module van Adobe Campaign die u de verzendende leveringen laat controleren, filtreren en controleren. Om conflicten tussen campagnes te vermijden, kan Adobe Campaign diverse combinaties testen door specifieke beperkingsregels toe te passen. Dit garandeert dat de verzonden berichten voldoen aan de behoeften en verwachtingen van klanten en het communicatiebeleid van het bedrijf.
 
 >[!NOTE]
 >
->Afhankelijk van uw aanbieding kan de optimalisatie van de campagne worden opgenomen of een invoegtoepassing. Controleer uw licentieovereenkomst.
+>Afhankelijk van uw aanbieding kan de optimalisatie van de campagne worden opgenomen of een invoegtoepassing. Controleer hiervoor uw licentieovereenkomst.
 
 ## Typologieregels {#typology-rules}
 
-Met Adobe Campagne kunt u vier typen typologische regels ontwerpen en toepassen:
+Met Adobe Campaign kunt u vier typen typologische regels ontwerpen en toepassen:
 
-* **Filterregels** waarmee u een deel van het doel kunt uitsluiten op basis van criteria. Raadpleeg voor meer informatie de [Filterregels](../../campaign/using/filtering-rules.md).
-* **Regels voor druk** waarmee u de vermoeidheid bij het in de handel brengen kunt regelen. Raadpleeg voor meer informatie de [drukregels](../../campaign/using/pressure-rules.md).
-* **De regels van de capaciteit** die u ladingen laten beperken om optimale verwerkingsvoorwaarden te verzekeren. Raadpleeg [Beheerscapaciteit](../../campaign/using/consistency-rules.md#controlling-capacity)voor meer informatie hierover.
-* **Regels van de controle** die u de geldigheid van berichten laten controleren alvorens zij worden verzonden. Voor meer op dit, verwijs naar de regels [van de](../../campaign/using/control-rules.md)Controle.
+* **Filterregels** waarmee u een deel van het doel kunt uitsluiten op basis van criteria. For more on this, refer to [Filtering rules](../../campaign/using/filtering-rules.md).
+* **Regels voor druk** waarmee u de vermoeidheid bij het in de handel brengen kunt regelen. For more on this, refer to [Pressure rules](../../campaign/using/pressure-rules.md).
+* **De regels van de capaciteit** die u ladingen laten beperken om optimale verwerkingsvoorwaarden te verzekeren. For more on this, refer to [Controlling capacity](../../campaign/using/consistency-rules.md#controlling-capacity).
+* **Regels van de controle** die u de geldigheid van berichten laten controleren alvorens zij worden verzonden. For more on this, refer to [Control rules](../../campaign/using/control-rules.md).
 
 Zodra zij zijn gecreeerd, worden de typologieregels gegroepeerd in campagnetypologieën die in leveringen van verwijzingen worden voorzien. Zie Typologieën [toepassen](#applying-typologies).
 
@@ -64,11 +64,27 @@ De stappen voor het maken en toepassen van een typologie voor uw leveringen word
 
    Typologieën zijn toegankelijk via het knooppunt **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** .
 
-1. Vorm uw levering om de typologie te gebruiken u creeerde. For more on this, refer to [this section](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery).
+1. Vorm uw levering om de typologie te gebruiken u creeerde. Raadpleeg [deze sectie](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery) voor meer informatie.
 1. Test en controleer het gedrag door campagnesimulaties. For more on campaign simulations, refer to [this section](../../campaign/using/campaign-simulations.md).
 
-Tijdens de voorbereiding van de levering worden ontvangers uitgesloten wanneer aan het criterium wordt voldaan. U kunt logboeken controleren om uitsluitingen te controleren. In [deze pagina](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules)vindt u voorbeelden van situaties voor de druktypologische regels.
+Tijdens de voorbereiding van de levering worden ontvangers uitgesloten wanneer aan het criterium wordt voldaan. U kunt logboeken controleren om toezicht te houden op uitsluitingen. In [deze pagina](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules)vindt u voorbeelden van situaties voor de druktypologische regels.
 
-**Verwante onderwerpen**
+## Hoe stelt u vermoeidheidsbeheer in met behulp van typologische regels
+
+In deze video wordt uitgelegd hoe u vermoeidheidsbeheer in Adobe Campaign Classic kunt implementeren door gebruik te maken van typologische regels.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
+
+## Hoe stelt u vermoeidheidsbeheer in met behulp van vooraf gedefinieerde filters
+
+Het beheer van de vermoeidheid controleert frequentie en hoeveelheid overseinen om te vermijden overdrijving van ontvangers. Als u niet de module van de campagnoptimalisering in uw campagneinstantie hebt, kunt u een vooraf bepaald filter vormen dat de doelbevolking door het aantal ontvangen berichten zal filtrerenDeze video verklaart hoe te om vermoeidheidsbeheer in Adobe Campaign Classic uit te voeren door filters te gebruiken.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
+
+**Verwant onderwerp**
 
 * [Pas automatische bedrijfsregels op leveringen op om het even welk kanaal toe](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Applyautomaticbusinessrulestodeliveriesonanychannel)
+
+* [Informatie over campagetypologieën](../../campaign/using/pressure-rules.md)
+
+* [Vermoediging van het op de markt brengen met drukregels beheren](https://docs.adobe.com/content/help/en/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html)
