@@ -1,7 +1,7 @@
 ---
 title: Veelgestelde vragen over profielen en soorten publiek
 seo-title: Algemene vragen
-description: Klassieke veelgestelde vragen over campagne
+description: Campaign Classic Veelgestelde vragen
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -14,14 +14,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 0%
 
 ---
 
 
-# Veelgestelde vragen over profielen en soorten publiek {#audiences-faq}
+# Profiles and Audiences FAQ {#audiences-faq}
 
-Leer hoe u een doelgroep maakt en het publiek beheert in Adobe Campaign.
+Leer hoe u zich op een populatie kunt richten en het publiek in Adobe Campaign kunt beheren.
 
 ## Hoe te om ontvangers tot stand te brengen? {#how-to-create-recipients-}
 
@@ -39,7 +42,7 @@ U kunt workflows [gebruiken om doelgroepen](../../campaign/using/marketing-campa
 
 Een lijst is een statische reeks ontvangers die kan worden gericht in leveringsacties, die tijdens de invoerverrichtingen of werkschemauitvoering worden bijgewerkt. Bijvoorbeeld, kan een populatie die uit het gegevensbestand via een vraag wordt gehaald een lijst leveren.
 
-[Klik hier voor meer](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group)informatie. U kunt ook [deze video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html) bekijken over het handmatig maken van een lijst en [deze andere video](https://docs.campaign.adobe.com/doc/AC/en/Videos/creating_list_recipients_611.mp4) om een lijst met ontvangers in een workflow te maken en automatisch bij te werken.
+[Klik hier voor meer](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group)informatie. U kunt ook [deze video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html) bekijken over het handmatig maken van een lijst en [deze andere video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) om een lijst met ontvangers in een workflow te maken en automatisch bij te werken.
 
 ## Hoe kan ik een populatie dedupliceren voordat ik een bericht verstuurt? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
