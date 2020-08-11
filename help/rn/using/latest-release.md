@@ -13,23 +13,23 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d9b6ae9f7e2f3b15698f1a420b5416162cbcc758
+source-git-commit: 251244225076dd11a319d1c4b2124c0d05168eaa
 workflow-type: tm+mt
-source-wordcount: '1987'
-ht-degree: 0%
+source-wordcount: '1976'
+ht-degree: 3%
 
 ---
 
 
 # Laatste release{#latest-release}
 
-![](assets/do-not-localize/cp-icon.png) **Nieuwe release** van het Configuratiescherm in juni met controle van actieve profielen, controle van de leverbaarheid van subdomeinen en beheer van GPG-sleutels. [Meer](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)informatie.
+![](assets/do-not-localize/cp-icon.png) **Nieuwe release** van het Configuratiescherm in juni met controle van actieve profielen, controle van de leverbaarheid van subdomeinen en beheer van GPG-sleutels. [Meer informatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/blue_2.png) Release 20.2.1 - build 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/blue_2.png) Release 20.2.2 - build 9180 {#release-20-2-2-build-9180}
 
 _22 juli 2020_
 
-* Probleem verholpen waarbij tracering niet werkte wanneer de handtekeningfunctie was uitgeschakeld of wanneer een oud marketingexemplaar werd gebruikt met een recent medio. (NEO-26411)
+* Probleem verholpen waarbij tracering niet werkte toen de handtekeningfunctie was uitgeschakeld. (NEO-26411)
 * Probleem verholpen waarbij niet-ondertekende koppelingen van gepersonaliseerde domeinen werden geblokkeerd op het moment dat ze moesten worden toegestaan. (NEO-25210)
 * Probleem verholpen waardoor u URL&#39;s voor bijhouden niet kunt openen of erop kunt klikken wanneer u bepaalde oudere versies van Outlook gebruikt. (NEO-25688)
 * Probleem verholpen waarbij URL&#39;s van pagina&#39;s die onjuist zijn gedefinieerd in e-mailleveringen werden gespiegeld. (NEO-26084)
@@ -51,7 +51,7 @@ _22 juli 2020_
 
 _8 juni 2020_
 
-**Nieuwe functies?**
+**Nieuwe functies**
 
 <table> 
  <thead> 
@@ -77,7 +77,7 @@ _8 juni 2020_
  <tbody> 
   <tr> 
    <td> <p>U kunt uw instantie van de Campagne nu met uw externe gegevensbestand van Azure Synapse verbinden. Deze verbinding wordt beheerd via een nieuwe externe account.</p>
-    <p>Azure Synapse is alleen beschikbaar voor hybride en on-premise omgevingen. Raadpleeg de <a href="../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse">gedetailleerde documentatie</a>voor meer informatie.</p>
+    <p>Azure Synapse is alleen beschikbaar voor hybride en on-premise omgevingen. Raadpleeg de <a href="../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse">gedetailleerde documentatie</a> voor meer informatie.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -95,7 +95,7 @@ _8 juni 2020_
    <p>Lei Geral de Proteção de Dados (LGPD) is vanaf 16 augustus van kracht voor alle bedrijven die in Brazilië persoonsgegevens verzamelen of verwerken.</p>
    <p>Deze voorschriften zijn van toepassing op Adobe Campaign-klanten die gegevens bewaren voor in deze landen wonende gegevenssubjecten. Naast de privacy mogelijkheden reeds beschikbaar in Campagne (met inbegrip van toestemmingsbeheer, montages van het gegevensbehoud, en gebruikersrollen), nemen wij deze kans aan om extra mogelijkheden te omvatten, helpen uw bereidheid voor PDPA en LGPD vergemakkelijken:</p>
    <ul> 
-     <li><p>Recht op toegang en recht op verwijdering: wij benutten de capaciteiten die voor de GDPR en de CCPA zijn toegevoegd. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">Meer informatie</a></p></li> 
+     <li><p>Recht op toegang en recht op verwijdering: we maken gebruik van de functies die voor de AVG (GDPR) en CCPA zijn toegevoegd. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">Meer informatie</a></p></li> 
      <li> <p>Wanneer u een privacyaanvraag maakt met de Campagne-interface of API, selecteert u nu het <strong>Regeltype</strong> : PDPA, LGPD, GDPR, CCPA. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests">Meer informatie</a>.</p></li>
     </ul>
    </td> 
@@ -126,11 +126,11 @@ Meer informatie over de matrix [Campagne Compatibility](https://helpx.adobe.com/
 
 **Verbeteringen**
 
-* Transactioneel overseinen is verbeterd voor een betere gebruikerservaring. U kunt nu de publicatie van een transactiemalplaatje ongedaan maken, waardoor dit van de uitvoeringsinstanties wordt verwijderd. [Meer](../../message-center/using/template-unpublication.md)informatie.
+* Transactioneel overseinen is verbeterd voor een betere gebruikerservaring. U kunt nu de publicatie van een transactiemalplaatje ongedaan maken, waardoor dit van de uitvoeringsinstanties wordt verwijderd. [Meer informatie](../../message-center/using/template-unpublication.md).
 
 * Er zijn nieuwe opties beschikbaar om beperkingen in te stellen bij het verzenden van e-mailberichten die afbeeldingen of bijlagen bevatten. Deze gidsen kunnen prestatieskwesties vermijden, die met name met transactioneel overseinen nuttig zijn. [Meer informatie](../../installation/using/configuring-campaign-options.md#delivery)
 
-* Met de nieuwe optie **De leveringsonderdelen in de database** voorbereiden kunt u de levering direct in de database voorbereiden. Hierdoor kan de analyse aanzienlijk worden versneld. Deze optie is alleen beschikbaar voor specifieke configuraties. [Meer](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis)informatie. (NEO-23886)
+* Met de nieuwe optie **De leveringsonderdelen in de database** voorbereiden kunt u de levering direct in de database voorbereiden. Hierdoor kan de analyse aanzienlijk worden versneld. Deze optie is alleen beschikbaar voor specifieke configuraties. [Meer informatie](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis). (NEO-23886)
 
 * De prestaties van de activiteit [van de Schakelaar van](../../workflow/using/crm-connector.md) CRM voor de Dynamica van Microsoft zijn verbeterd. (NEO-13303, NEO-12710)
 
@@ -140,21 +140,21 @@ Meer informatie over de matrix [Campagne Compatibility](https://helpx.adobe.com/
    >
    >Deze verbetering vereist een extra stap na het uitvoeren van de verbetering. Raadpleeg de onderstaande sectie **Technische ontwikkelingen** .
 
-* De opschoonworkflow is verbeterd. De zwevende werktabellen van alle verwijderde workflows worden nu ook automatisch verwijderd door de opschoonworkflow. [Meer](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances)informatie.
+* De opschoonworkflow is verbeterd. De zwevende werktabellen van alle verwijderde workflows worden nu ook automatisch verwijderd door de opschoonworkflow. [Meer informatie](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances).
 
 * Certificaten voor mobiele iOS-toepassingen met de iOS HTTP2-connector worden nu gevalideerd voordat pushmeldingen worden verzonden, zodat leveringen niet mislukken vanwege verlopen certificaten.
 
-* Het beheer van HTTP-proxyverbindingen is verbeterd. [Meer](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)informatie.
+* Het beheer van HTTP-proxyverbindingen is verbeterd. [Meer informatie](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
 
 **Overige wijzigingen**
 
 * Verouderde sms-connectors zijn nu afgekeurd. Raadpleeg de pagina met [Verouderde functies](../../rn/using/deprecated-features.md).
 
-* U kunt uw eigen Litmus-account niet meer gebruiken voor provisioning en gebruik van Inbox-rendering in Adobe Campaign. [Meer](../../delivery/using/inbox-rendering.md)informatie.
+* U kunt uw eigen Litmus-account niet meer gebruiken voor provisioning en gebruik van Inbox-rendering in Adobe Campaign. [Meer informatie](../../delivery/using/inbox-rendering.md).
 
 * Voor een beter onderscheid tussen weergaven en mappen is de kleur van weergavenamen gewijzigd van donkerblauw in donkercyaan. [Meer informatie](../../platform/using/access-management.md#about-views)
 
-* Campaign Classic kan nu worden verbonden met Microsoft Dynamics CRM-accounts die worden gehost in de regio&#39;s Verenigd Koninkrijk, India en Canada. Dit is op Bureau 365 en op gebouw (Dynamiek 2015) plaatsingstypes van toepassing.
+* Campaign Classic kan nu worden verbonden met Microsoft Dynamics CRM-accounts die in het Verenigd Koninkrijk, India en Canada worden gehost. Dit is op Bureau 365 en op gebouw (Dynamiek 2015) plaatsingstypes van toepassing.
 
 * De campagne voert nu een controle van TLS uit om te controleren dat hostname van de server hostname in het verstrekte certificaat aanpast.
 
@@ -162,7 +162,7 @@ Meer informatie over de matrix [Campagne Compatibility](https://helpx.adobe.com/
 
 * Er is een foutbericht toegevoegd in het logbestand om gebruikers te waarschuwen wanneer het gedownloade bestand groter is dan de schijfruimte.
 
-* De volgende functies zijn nu beschikbaar voor de Snowflake-connector: Maandengeleden, DaysAgoInt, ToDateTime, JarenAgo.
+* De volgende functies zijn nu beschikbaar voor de Snowflake-aansluiting: Maandengeleden, DaysAgoInt, ToDateTime, JarenAgo.
 
 **Technische ontwikkelingen**
 
