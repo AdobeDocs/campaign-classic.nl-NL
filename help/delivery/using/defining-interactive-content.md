@@ -1,6 +1,6 @@
 ---
 title: Interactieve inhoud definiëren in Adobe Campaign Classic
-description: Leer hoe u interactieve en dynamische e-mailinhoud definieert met AMP in Adobe Campaign Classic.
+description: Leer hoe u interactieve en dynamische e-mailinhoud kunt definiëren met AMP in Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: ddcc2e3b-e251-4a7a-a22a-28701522839f
 contentOwner: sauviat
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1642'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,9 @@ Deze functie is beschikbaar via een speciaal pakket in Adobe Campaign. Dit pakke
 
 Voor hybride en gehoste architecturen moet het pakket op alle servers worden geïnstalleerd, inclusief de [mid-sourcingserver](../../installation/using/mid-sourcing-server.md) en de [uitvoeringsinstantie](../../message-center/using/creating-a-shared-connection.md#execution-instance). Neem contact op met uw accountmanager.
 
-Bekijk deze [video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html) om te zien hoe u AMP activeert in Adobe Campaign en meer te weten komt over het gebruik ervan.
+In de onderstaande video wordt uitgelegd hoe u AMP in Adobe Campaign Classic kunt activeren en het gebruik kunt laten zien.
+
+>[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
 
 ## Informatie over AMP voor e-mail {#about-amp-for-email}
 
@@ -162,8 +164,8 @@ U kunt ook de [Tips en bekende beperkingen voor Gmail](https://developers.google
 
 Aangezien AMP for Email beschikbaar is als bètamogelijkheid, kunt u momenteel in twee stappen experimenteren met het verzenden van een AMP-e-mail:
 
-1. Met Adobe Campaign kunt u testen of een dynamische e-mail met AMP-functionaliteit wordt geleverd aan geselecteerde e-mailadressen die op de juiste wijze zijn geconfigureerd, om de inhoud en het gedrag ervan te controleren. Zie AMP-e-maillevering [testen voor geselecteerde adressen](#testing-amp-delivery-for-selected-addresses).
-1. Nadat de test is uitgevoerd, kunt u een levering of een campagne verzenden als onderdeel van het bètaprogramma voor e-mail door u te registreren bij de relevante e-mailprovider(s) om uw senderdomein toe te voegen aan de lijst met toegestane items. Zie E-mails met AMP [leveren door u te registreren bij een e-mailprovider](#delivering-amp-emails-by-registering).
+1. Met Adobe Campaign kunt u testen of een dynamische e-mail met AMP-functionaliteit wordt geleverd aan geselecteerde e-mailadressen die correct zijn geconfigureerd, om de inhoud en het gedrag ervan te controleren. Zie AMP-e-maillevering [testen voor geselecteerde adressen](#testing-amp-delivery-for-selected-addresses).
+1. Nadat u de test hebt uitgevoerd, kunt u een levering of een campagne verzenden als onderdeel van het bètaprogramma voor e-mail door u te registreren bij de desbetreffende e-mailprovider(s) om uw senderdomein toe te voegen aan de lijst van gewenste personen. Zie E-mails met AMP [leveren door u te registreren bij een e-mailprovider](#delivering-amp-emails-by-registering).
 
 ### AMP-e-maillevering testen voor geselecteerde adressen {#testing-amp-delivery-for-selected-addresses}
 
@@ -173,7 +175,7 @@ U kunt testen hoe dynamische berichten van Adobe Campaign naar geselecteerde e-m
 >
 >Momenteel ondersteunen alleen Gmail, Outlook en Mail.ru het testen van de AMP-indeling.
 
-Voor Gmail en Vooruitzichten, moet u eerst de afzenderadres(sen) toevoegen u aan toestaat lijst om van Adobe Campaign voor de rekeningen van Gmail en van Vooruitzichten te leveren u richt.
+Voor Gmail en Vooruitzichten, moet u eerst de afzenderadres(sen) toevoegen u aan de lijst van gewenste personen gebruikt om van Adobe Campaign voor de rekeningen van Gmail en van Vooruitzichten te leveren u richt.
 
 Dit doet u als volgt:
 1. Controleer of de optie voor het inschakelen van dynamische e-mail is ingeschakeld bij de desbetreffende e-mailprovider(s).
@@ -187,7 +189,7 @@ Om het verzenden van een e-mail van AMP naar een adres te testen Mail.ru, volg d
 
 ### E-mails met AMP leveren door zich te registreren bij een e-mailprovider {#delivering-amp-emails-by-registering}
 
-U kunt experimenteren met het leveren van dynamische e-mailberichten door u te registreren bij de e-mailproviders die deelnemen aan het AMP bètaprogramma om uw senderdomein toe te voegen aan de lijst met toegestane adressen.
+U kunt experimenteren met het leveren van dynamische e-mailberichten door u te registreren bij de e-mailproviders die deelnemen aan het AMP bètaprogramma om uw senderdomein toe te voegen aan de lijst van gewenste personen.
 
 >[!NOTE]
 >
