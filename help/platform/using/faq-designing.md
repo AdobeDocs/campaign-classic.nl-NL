@@ -1,7 +1,7 @@
 ---
 title: Veelgestelde vragen over berichtenontwerp
 seo-title: Algemene vragen bij het ontwerpen van berichten
-description: Klassieke veelgestelde vragen over campagne
+description: Campaign Classic Veelgestelde vragen
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -14,9 +14,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -24,13 +24,13 @@ ht-degree: 0%
 
 # Veelgestelde vragen over berichtenontwerp {#design-messages-faq}
 
-Belangrijke stappen voor het ontwerpen van lokale-kanaalberichten met Adobe Campaign.
+Belangrijke stappen voor het ontwerpen van lokale berichten met Adobe Campaign ontdekken.
 
 ## Zijn er specifieke richtlijnen bij het ontwerpen van e-mails met campagne? {#are-there-specific-guidelines-when-designing-emails-with-campaign-}
 
-Voordat u begint met het ontwerpen van e-mailberichten, leert u de concepten en aanbevolen procedures met betrekking tot het ontwerpen van de levering en het verzenden met Adobe Campagne.
+Voordat u begint met het ontwerpen van e-mails, leert u de concepten en beste praktijken die betrekking hebben op het ontwerpen en verzenden van de levering met Adobe Campaign.
 
-[Klik hier voor meer](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)informatie.
+[Klik hier voor meer](../../delivery/using/delivery-best-practices.md)informatie.
 
 ## Wat is een leveringssjabloon? {#what-is-a-delivery-template-}
 
@@ -40,7 +40,7 @@ De configuratie van de levering en de parameters kunnen in een leveringsmalplaat
 
 ## Kan ik eenvoudig een bestaande HTML importeren om een e-mail te maken in Campagne? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
 
-Ontdek hoe u met één klik een bestaande HTML importeert om een e-mail te maken en te verzenden in Adobe Campaign.
+Ontdek hoe u met één klik een bestaande HTML importeert om een e-mailbericht te maken en te verzenden in Adobe Campaign.
 
 [Klik hier voor meer](../../delivery/using/defining-the-email-content.md#message-content)informatie.
 
@@ -54,7 +54,7 @@ Ontdek hoe u met één klik een bestaande HTML importeert om een e-mail te maken
 
 ## Hoe kan ik berichten personaliseren? {#how-can-i-personalize-messages-}
 
-Berichten die door Adobe Campaign worden geleverd, kunnen op verschillende manieren worden gepersonaliseerd, afhankelijk van de inhoud of de weergave van berichten. Deze methoden kunnen worden gecombineerd aan de hand van criteria die met name uit de profielen van de begunstigden zijn afgeleid. In het algemeen kunt u met Adobe Campaign:
+Berichten die door Adobe Campaign worden geleverd, kunnen op verschillende manieren worden gepersonaliseerd, met betrekking tot de inhoud of de weergave van berichten. Deze methoden kunnen worden gecombineerd aan de hand van criteria die met name uit de profielen van de begunstigden zijn afgeleid. In het algemeen kunt u met Adobe Campaign:
 
 * Pas het berichtformaat aan. [Klik hier voor meer](../../delivery/using/defining-the-email-content.md#message-content)informatie.
 * Voeg dynamische verpersoonlijkingsgebieden in. [Klik hier voor meer](../../delivery/using/personalization-fields.md)informatie.
