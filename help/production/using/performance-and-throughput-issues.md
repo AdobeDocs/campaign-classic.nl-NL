@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Eerst en vooral, zou u moeten controleren dat u de recentste bouwstijl hebt geïnstalleerd. Dit zorgt ervoor dat u de recentste eigenschappen en insectenmoeilijke situaties hebt. Raadpleeg de [opmerkingen bij](https://docs.campaign.adobe.com/doc/AC/en/RN.html) de release voor meer informatie over de inhoud van elke release.
+>Eerst en vooral, zou u moeten controleren dat u de recentste bouwstijl hebt geïnstalleerd. Dit zorgt ervoor dat u de recentste eigenschappen en insectenmoeilijke situaties hebt. Raadpleeg de [opmerkingen bij](../../rn/using/latest-release.md) de release voor meer informatie over de inhoud van elke release.
 
 ## Hardware en infrastructuur {#hardware-and-infrastructure}
 
@@ -45,14 +45,14 @@ Adobe Campaign beschikt ook over een [programma](../../production/using/monitori
 
 Meestal zijn prestatieproblemen gekoppeld aan databaseonderhoud. Hier volgen de belangrijkste onderdelen:
 
-* Configuratie: We raden u aan de eerste configuratie van het Adobe Campaign-platform te controleren en een volledige hardwarefout uit te voeren.
+* Configuratie: We raden u aan de eerste configuratie van het Adobe Campaign-platform te controleren en een volledige hardwarecontrole uit te voeren.
 * Installatie en configuratie van het Adobe Campaign-platform: controleer de opties voor netwerkconfiguratie en platformleverantie.
 * Onderhoud database: zorg ervoor dat de taak van de gegevensbestandschoonmaakbeurt operationeel is en dat het gegevensbestandonderhoud correct gepland en uitgevoerd is. Controleer het aantal en de grootte van werktabellen.
 * Realtime diagnose: controleer het proces en de dossiers van het platformlogboek, dan controleert gegevensbestandactiviteit terwijl het ontspannen van de kwestie.
 
 >[!NOTE]
 >
->Zie deze sectie voor meer informatie: [Databaseprestaties](../../production/using/database-performances.md).
+>For more information, refer to this section: [Database performances](../../production/using/database-performances.md).
 
 ## Toepassingsconfiguratie {#application-configuration}
 
@@ -75,5 +75,5 @@ Hier volgt een lijst met best practices en artikelen met betrekking tot de te le
 
 >[!NOTE]
 >
->Vergeet niet de gids over [aflevering aan de slag](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) te raadplegen.
+>Zie ook [sectie met hoofdpunten](../../delivery/using/deliverability-key-points.md) voor de aflevering.
 
