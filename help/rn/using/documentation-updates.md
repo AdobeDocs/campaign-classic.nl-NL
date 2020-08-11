@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 24d2dded38ddb922891a7264d9efea02cb448323
 workflow-type: tm+mt
-source-wordcount: '6943'
-ht-degree: 14%
+source-wordcount: '7069'
+ht-degree: 13%
 
 ---
 
@@ -25,7 +25,37 @@ ht-degree: 14%
 
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates per maand en de campagneversie.
 
+
 U kunt ook de [Adobe Campaign Classic Release Notes](../../rn/using/latest-release.md) raadplegen voor meer updates.
+
+## Augustus 2020 {#aug-2020}
+
+Leer beste praktijken met betrekking tot leveringsontwerp en het verzenden met Campagne in een specifieke sectie. [Meer informatie](../../delivery/using/delivery-best-practices.md)
+
+De landingspagina van best practices op het gebied van aflevering is verbeterd om de toegang tot subsecties te vergemakkelijken. [Meer informatie](../../delivery/using/deliverability-key-points.md)
+
+Hoe kan ik-video&#39;s zijn nu beschikbaar over de volgende onderwerpen:
+
+* [Hoe stelt u vermoeidheidsbeheer in met behulp van typologische regels en vooraf gedefinieerde filters](../../campaign/using/about-campaign-typologies.md)
+
+* [Een e-mail maken in een campagne](../../campaign/using/designing-marketing-campaigns.md)
+
+* [Een meertalige nieuwsbrief met voorwaardelijke inhoud maken](../../delivery/using/conditional-content.md)
+
+* [Hoe te om een leveringsmalplaatje te vormen en op te stellen](../../delivery/using/creating-a-delivery-template.md)
+
+* [AMP activeren en gebruiken voor e-mailberichten](../../delivery/using/defining-interactive-content.md)
+
+* [E-mails personaliseren met gebruik van dynamische inhoudsblokken](../../delivery/using/personalization-blocks.md)
+
+* [E-mails personaliseren met personalisatievelden](../../delivery/using/personalization-fields.md)
+
+* [Zaden en proefdrukken in een e-mail beheren](../../delivery/using/steps-defining-the-target-population.md)
+
+* [Hoe te opstelling een terugkomende levering](../../workflow/using/recurring-delivery.md)
+
+* [Hoe te opstelling een ononderbroken levering](../../workflow/using/continuous-delivery.md)
+
 
 ## Juli 2020 {#july-2020}
 
