@@ -1,7 +1,7 @@
 ---
 title: Belangrijkste concepten
 seo-title: Veelgestelde vragen over campagnefuncties
-description: Klassieke veelgestelde vragen over campagne
+description: Campaign Classic Veelgestelde vragen
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -14,33 +14,36 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '902'
+ht-degree: 1%
 
 ---
 
 
 # Belangrijkste concepten {#key-concepts}
 
-Leer de belangrijkste stappen om met de Campagne van Adobe te beginnen.
+Leer de belangrijkste stappen om met Adobe Campaign te beginnen.
 
-## Kan ik verbinding maken met Campaign Classic met een Adobe-id? {#can-i-connect-to-campaign-classic-with-an-adobe-id-}
+## Kan ik verbinding maken met Campaign Classic met een Adobe ID? {#can-i-connect-to-campaign-classic-with-an-adobe-id-}
 
-Dankzij de integratie met de IMS (Adobe Identity Management System) kunnen gebruikers verbinding maken met de Adobe Campaign-console met hun Adobe-id. Deze integratie biedt de volgende voordelen:
+Dankzij de integratie met de IMS (Adobe Identity Management System) kunnen gebruikers verbinding maken met de Adobe Campaign-console via hun Adobe ID. Deze integratie biedt de volgende voordelen:
 
 * Dezelfde id kan voor alle Experience Cloud-oplossingen worden gebruikt.
-* De verbinding wordt onthouden wanneer u Adobe Campaign gebruikt met verschillende integraties.
+* De verbinding wordt gememoriseerd wanneer het gebruiken van Adobe Campaign met verschillende integraties.
 * Beveiligd beleid voor wachtwoordbeheer.
 * Gebruik van Federated ID-accounts (externe ID-provider).
 
-[Klik hier voor meer](../../integrations/using/about-adobe-id.md) informatie over het gebruik van Campagne Classic met een Adobe-id.
+[Klik hier voor meer](../../integrations/using/about-adobe-id.md) informatie over toegang tot Campaign Classic met een Adobe ID.
 
 ## Wat is mijn versie van Campaign? {#what-is-my-version-of-campaign-}
 
-[ Controleer uw ](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)versie en buildnummer **in de** Help > Info.. menu van de clientconsole van de Campagne.
+Controleer uw [versie en buildnummer](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) in de **Help > Info..** menu van de clientconsole van de Campagne.
 
 ## Wat zijn de verschillen wanneer het werken op-gebouw tegenover in een ontvangen milieu? {#what-are-the-differences-when-working-on-premise-vs--in-a-hosted-environment-}
 
-Adobe Campagne Classic wordt geleverd met een set modules en opties. De beschikbaarheid van deze modules en hun configuratie kunnen van het [type van plaatsing](../../installation/using/hosting-models.md) van uw installatie afhangen: gehost (Beheerde services) of op locatie.
+Adobe Campaign Classic wordt geleverd met een aantal modules en opties. De beschikbaarheid van deze modules en hun configuratie kunnen van het [type van plaatsing](../../installation/using/hosting-models.md) van uw installatie afhangen: gehost (Managed Services) of op locatie.
 
 [Klik hier voor meer](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)informatie.
 
@@ -58,17 +61,17 @@ Dit zijn een reeks rechten en beperkingen die toestaan of weigeren om:
 
 ## Hoe te om privacy naleving van Campaign te verzekeren? {#how-to-be-gdpr-compliant-with-campaign-}
 
-De Campagne van Adobe biedt een reeks hulpmiddelen aan om u met uw Privacynaleving voor GDPR en CCPA te helpen.
+Adobe Campaign biedt een reeks tools om u te helpen met uw privacynaleving voor GDPR en CCPA.
 
-Raadpleeg [dit document](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html) voor meer informatie over de gereedschappen en functies van Adobe Campaign en de aanbevolen procedures om u te helpen met de naleving van uw GDPR-standaard wanneer u onze service gebruikt. Implementatiestappen voor Campagne Classic worden beschreven in [dit artikel](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
+Raadpleeg [dit document](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html) voor meer informatie over de tools en functies die Adobe Campaign biedt en over de beste praktijken om u te helpen met de naleving van uw GDPR-standaard wanneer u onze service gebruikt. Implementatiestappen voor Campaign Classic worden in [dit artikel](https://helpx.adobe.com/campaign/kb/acc-privacy.html)beschreven.
 
 ## Wat zijn de concepten van het gebruikersinterface van de Campagne ik zou moeten weten? {#what-are-campaign-user-interface-concepts-i-should-know-}
 
-Lees [deze sectie](../../platform/using/adobe-campaign-workspace.md) voor meer informatie over de basisbeginselen van de Adobe Campagne-werkruimte. U kunt ook [deze video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html)bekijken.
+Lees [dit gedeelte](../../platform/using/adobe-campaign-workspace.md) voor meer informatie over de basisbeginselen van de Adobe Campaign-werkruimte. U kunt ook [deze video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html)bekijken.
 
 ## Hoe kan ik het publiek van mijn berichten selecteren? {#how-can-i-select-the-target-population-of-my-messages-}
 
-Met de Campagne van Adobe, kunt u verschillende strategieën gebruiken om publiek tot stand te brengen en doelontvangers te selecteren.
+Met Adobe Campaign kunt u verschillende strategieën gebruiken om een publiek te maken en doelontvangers te selecteren.
 
 [Klik hier voor meer](../../delivery/using/steps-defining-the-target-population.md)informatie.
 
@@ -76,7 +79,7 @@ Met de Campagne van Adobe, kunt u verschillende strategieën gebruiken om publie
 
 Adobe Campaign bevat workflows om het volledige scala aan processen en taken in de verschillende modules van de toepassingsserver te ordenen. Met deze uitgebreide grafische omgeving kunt u processen ontwerpen, zoals segmentatie, uitvoering van campagnes, bestandsverwerking, menselijke participatie, enz. Deze processen worden uitgevoerd en bijgehouden door de workflowengine.
 
-U kunt bijvoorbeeld een workflow gebruiken om een bestand van een server te downloaden, het te decomprimeren en vervolgens records in de Adobe Campagne-database te importeren.
+U kunt bijvoorbeeld een workflow gebruiken om een bestand van een server te downloaden, het te decomprimeren en vervolgens records in de Adobe Campaign-database te importeren.
 
 Een workflow kan ook een of meer operatoren omvatten die op de hoogte moeten worden gebracht of die keuzes kunnen maken en processen kunnen goedkeuren. Op deze manier is het mogelijk om een leveringsactie te maken, een taak toe te wijzen aan een of meer operatoren om aan inhoud te werken, doelen op te geven en proefdrukken goed te keuren voordat de levering wordt gestart.
 
@@ -92,7 +95,7 @@ Leer hoe u uw platform configureert en SMS-berichten verzendt [in deze sectie](.
 
 ## Hoe kan ik pushmeldingen verzenden? {#how-to-send-push-notifications-}
 
-Leer hoe u met de Adobe-campagne een persoonlijke pushmelding [naar iOS- en Android-apparaten kunt](../../delivery/using/creating-notifications.md) verzenden via apps.
+Leer hoe u met de Adobe Campaign een persoonlijke pushmelding [naar iOS en Android-apparaten kunt](../../delivery/using/creating-notifications.md) verzenden via apps.
 
 ## Hoe een online enquête ontwerpen en delen? {#how-to-design-and-share-an-online-survey-}
 
@@ -100,13 +103,13 @@ Leer hoe u een online enquête [kunt](../../web/using/getting-started-with-surve
 
 ## Hoe maak je een landingspagina? {#how-to-create-landing-page-}
 
-Met de Adobe Campagne Digital Content Editor kunt u een openingspagina ontwerpen en toewijzingen definiëren met databasevelden.
+U kunt de digitale inhoudeditor van Adobe Campaign gebruiken om een openingspagina te ontwerpen en toewijzingen te definiëren met databasevelden.
 
 [Klik hier voor meer](../../web/using/creating-a-landing-page.md)informatie.
 
 ## Hoe kan ik leveringen volgen? {#how-can-i-track-deliveries-}
 
-U kunt leveringen volgen die met de Klassiek van de Campagne door specifieke [leveringsrapporten](../../reporting/using/delivery-reports.md) worden verzonden en dan uw leveringen controleren.
+U kunt leveringen volgen die met Campaign Classic via speciale [leveringsrapporten](../../reporting/using/delivery-reports.md) worden verzonden en dan uw leveringen controleren.
 
 Meer informatie over beheer van bijhouden in Campagne vindt u op [deze pagina](https://helpx.adobe.com/campaign/kb/acc-tracking.html).
 
@@ -116,7 +119,7 @@ Lees uit de controlelijst [van de configuratie van de](https://helpx.adobe.com/c
 
 ## Hoe kan ik een foutbericht vertalen? {#how-to-translate-an-error-message-}
 
-Een foutbericht wordt weergegeven in een vreemde taal? Alle foutberichten en de vertaling ervan worden weergegeven op [deze pagina](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html).
+Een foutbericht wordt weergegeven in een vreemde taal? Alle foutberichten en de vertaling ervan worden weergegeven op [deze pagina](https://docs.adobe.com/content/help/nl/campaign-classic/technicalresources/error_messages/error_codes.html).
 
 ## Kan ik een webformulier maken en antwoorden verzamelen in Campagne? {#can-i-create-a-webform-and-collect-answers-in-campaign-}
 
@@ -124,12 +127,12 @@ Leer hoe u een webformulier [](../../web/using/about-web-forms.md)maakt: een web
 
 ## Is er een lijst met vervangen functies en versies? {#is-there-a-list-of-deprecated-features-and-versions-}
 
-Adobe evalueert voortdurend de mogelijkheden in het product en is van plan om in de loop der tijd de mogelijkheden te vervangen door krachtigere versies, of besluit om geselecteerde onderdelen opnieuw te implementeren om beter voorbereid te zijn op toekomstige verwachtingen of uitbreidingen. Aangezien de Campagne met derdehulpmiddelen werkt, wordt de verenigbaarheid bijgewerkt regelmatig, om gesteunde versies slechts uit te voeren.
+Adobe evalueert constant mogelijkheden in het product en in tijd plannen om mogelijkheden met krachtigere versies te vervangen, of besluit om geselecteerde delen opnieuw uit te voeren om beter op toekomstige verwachtingen of uitbreidingen worden voorbereid. Aangezien de Campagne met derdehulpmiddelen werkt, wordt de verenigbaarheid bijgewerkt regelmatig, om gesteunde versies slechts uit te voeren.
 
 [Klik hier voor meer](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)informatie.
 
 ## Zijn er nieuwe documentatie updates en hulpmaterialen vrijgegeven? {#are-there-new-documentation-updates-and-help-materials-released-}
 
-De meest recente update van de Classic-documentatie van Campagne vindt u [op deze pagina](https://docs.adobe.com/content/help/en/campaign-classic/using/documentation-updates.html).
+De meest recente Campaign Classic documentatie updates zijn vermeld [in deze pagina](https://docs.adobe.com/content/help/en/campaign-classic/using/documentation-updates.html).
 
 U kunt ook de meest recente technische notities [op deze pagina](https://helpx.adobe.com/campaign/kb/article-list.html)raadplegen.
