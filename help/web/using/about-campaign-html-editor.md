@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 0%
 
 ---
 
 
 # Info over Campagne HTML Editor{#about-campaign-html-editor}
 
-De **Digital Content Editor (DCE)** is een HTML-inhoudeditor waarmee u in Adobe Campaign eenvoudig sjablonen of inhoud in HTML-indeling kunt maken of wijzigen.
+De **Digital Content Editor (DCE)** is een HTML-inhoudeditor waarmee u eenvoudig sjablonen of inhoud in HTML-indeling kunt maken of wijzigen in Adobe Campaign.
 
 Met de Digital Content Editor kunt u pagina-elementen invoegen en opmaken en databasevelden koppelen aan elementen van een HTML-pagina. Het wordt aangeboden door gebrek wanneer het creëren van een pagina voor een toepassing van het Web, of beschikbaar wanneer het creëren van leveringen die op een malplaatje worden gebaseerd waarin het actief is.
 
@@ -60,7 +63,7 @@ Als u een e-maillevering wilt maken, gaat u als volgt te werk:
 * Creeer een levering van een malplaatje van het e-mailtype waarin DCE actief is,
 * Selecteer bestaande inhoud of maak inhoud van een standaardsjabloon.
 * Online-inhoud bewerken en configureren
-* Verzend de levering, voor meer op dit verwijs naar [deze sectie](../../delivery/using/communication-channels.md).
+* Verzend de levering, voor meer op dit verwijs naar [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 >[!NOTE]
 >
