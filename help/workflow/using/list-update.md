@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Als de lijst al bestaat, worden ontvangers toegevoegd aan de bestaande inhoud, t
 
 Als u wilt dat de gemaakte of bijgewerkte lijst een andere tabel gebruikt dan de tabel voor ontvangers, controleert u de **[!UICONTROL Create or use a list with its own table]** optie.
 
-Als u deze optie wilt gebruiken, moeten de desbetreffende specifieke tabellen zijn geconfigureerd in uw Adobe Campagne-exemplaar.
+Als u deze optie wilt gebruiken, moeten de desbetreffende tabellen zijn geconfigureerd in uw Adobe Campaign-exemplaar.
 
 Over het algemeen betekent het opslaan van een doel in een lijst het einde van een workflow. Door gebrek, heeft de **[!UICONTROL List update]** activiteit daarom geen uitgaande overgang. Schakel de **[!UICONTROL Generate an outbound transition]** optie in om er een toe te voegen.
 
@@ -58,13 +58,13 @@ In het volgende voorbeeld volgt de activiteit van de lijstupdate een vraag die m
 1. Laat de **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** optie ingeschakeld om ontvangers te verwijderen die niet voldoen aan de doelcriteria en om de nieuwe criteria in de lijst in te voegen.
 1. Laat de **[!UICONTROL Create or use a list with its own table]** optie ook ingeschakeld.
 1. Laat de **[!UICONTROL Generate an outbound transition]** optie uitgeschakeld.
-1. Klik **[!UICONTROL Ok]** en start de workflow.
+1. Click **[!UICONTROL Ok]** then start the workflow.
 
    ![](assets/s_user_segmentation_update_list_calc_example.png)
 
    De lijst met overeenkomende ontvangers wordt vervolgens gemaakt of bijgewerkt.
 
-Raadpleeg voor meer informatie de video [Een lijst met ontvangers](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html) maken.
+Raadpleeg voor meer informatie de video [Een lijst met ontvangers](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) maken.
 
 ## Invoerparameters {#input-parameters}
 
