@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 0%
 
 ---
 
@@ -50,3 +53,17 @@ Alleen als de **[!UICONTROL Specified by the inbound event]** optie is geselecte
 Deze reeks van drie waarden identificeert het doel dat uit de levering tijdens de vlucht voortvloeit. **[!UICONTROL tableName]** is de naam van de lijst die de herkenningstekens van het doel memoriseert, **[!UICONTROL schema]** is het schema van de bevolking (gewoonlijk nms:ontvanger) en **[!UICONTROL recCount]** is het aantal elementen in de lijst.
 
 De overgang verbonden aan het complement heeft de zelfde parameters.
+
+## Hoe te opstelling een ononderbroken levering
+
+Deze sectie verklaart hoe te opstelling een ononderbroken levering.
+
+De **ononderbroken levering** laat u nieuwe ontvangers aan een bestaande levering toevoegen en vermijdt u het moeten tot een nieuwe levering leiden telkens als een nieuwe ontvanger wordt toegevoegd. U kunt creatief direct in de campagnewerkschema bijwerken en het zal het malplaatje in de omslag van het Middel van het leveringsmalplaatje bijwerken.
+
+Een ononderbroken levering zal tot één enkele levering en leveringslogboeken (wideLog) leiden en het volgen logboeken die erop wijzen dat één levering wordt toegevoegd telkens als het uitvoert.
+
+![Doorlopende levering](assets/delivery_continuous.jpg)
+
+Deze video toont hoe te om een ononderbroken levering met een stijgende vraag te vormen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
