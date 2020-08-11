@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 0%
 
 ---
 
@@ -110,3 +113,9 @@ In het onderstaande voorbeeld leert u hoe u een meertalige e-mail kunt maken. De
    >[!NOTE]
    >
    >Aangezien er geen alternatieve versie is gedefinieerd in de e-mailinhoud, moet u de doelpopulatie filteren voordat u de e-mail verzendt.
+
+## Een meertalige nieuwsbrief met voorwaardelijke inhoud maken
+
+Leer hoe u voorwaardelijke inhoud aan een levering kunt toevoegen op het voorbeeld van een meertalige nieuwsbrief.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
