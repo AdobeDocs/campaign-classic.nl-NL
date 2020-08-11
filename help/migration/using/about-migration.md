@@ -15,16 +15,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 0%
 
 ---
 
 
 # Migratie{#about-migration}
 
-In dit document worden de voorwaarden voor een migratie beschreven, evenals de stappen voor een migratie naar een Adobe Campagne Classic (v7)-platform en de aanvullende, noodzakelijke en optionele instellingen, afhankelijk van uw configuratie.
+In dit document worden de voorwaarden voor een migratie beschreven, evenals de stappen voor een migratie naar een Adobe Campaign Classic-platform (v7) en de aanvullende, noodzakelijke en optionele instellingen, afhankelijk van uw configuratie.
 
-Het migratieproces moet met de nodige voorzichtigheid worden uitgevoerd, de gevolgen ervan moeten van tevoren volledig in overweging worden genomen en de procedure moet strikt worden uitgevoerd. Deze mag alleen door een deskundige gebruiker worden uitgevoerd. We raden u ten zeerste aan contact op te nemen met Adobe Campaign voordat u een migratieprocedure start.
+Het migratieproces moet met de nodige voorzichtigheid worden uitgevoerd, de gevolgen ervan moeten van tevoren volledig in overweging worden genomen en de procedure moet strikt worden uitgevoerd. Deze mag alleen door een deskundige gebruiker worden uitgevoerd. We raden u ten zeerste aan contact op te nemen met Adobe Campaign voordat we een migratieprocedure starten.
 
 De migratie moet vooraf op de ontwikkelomgeving worden getest om ervoor te zorgen dat deze zonder fouten en zonder fouten goed functioneert. Het migreren van de productieomgeving mag pas plaatsvinden als de gemigreerde ontwikkelomgeving volledig is goedgekeurd.
 
@@ -34,4 +37,4 @@ De migratie moet vooraf op de ontwikkelomgeving worden getest om ervoor te zorge
 
 >[!NOTE]
 >
->De nieuwe functies en evoluties voor Adobe Campagne v7 worden gedetailleerd in [deze pagina](https://docs.campaign.adobe.com/doc/AC/en/RN.html).
+>De nieuwe functies en evoluties voor Adobe Campaign v7 worden beschreven in [deze pagina](../../rn/using/latest-release.md).
