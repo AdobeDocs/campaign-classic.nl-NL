@@ -1,5 +1,5 @@
 ---
-title: E-mailkanaal in Adobe Campagne Classic
+title: E-mailkanaal in Adobe Campaign Classic
 description: Deze sectie bevat algemene informatie die specifiek is voor het e-mailkanaal in Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: aaef3c4a-99b2-4554-9a78-bb66459e45a4
@@ -13,19 +13,22 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b7470011bbb08cc1a7041b53e8405c971f33e51c
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '124'
+ht-degree: 3%
 
 ---
 
 
 # E-mailkanaal{#about-email-channel}
 
-Met Adobe Campaign kunt u op grote schaal gepersonaliseerde elektronische berichten verzenden naar een doelgroep.
+Met Adobe Campaign kunt u op grote schaal gepersonaliseerde elektronische berichten aan een doelgroep verzenden.
 
 Voordat u begint met het verzenden van e-mails:
 
 * Zorg ervoor dat de ontvangende profielen minstens een e-mailadres bevatten.
-* Meer informatie over de best practices voor [levering](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)van Adobe Campagne.
+* Klik hier als je meer wilt weten over de beste praktijken [voor Adobe Campaign-](../../delivery/using/delivery-best-practices.md)levering.
 * Lees meer over [aflevering](../../delivery/using/about-deliverability.md) en [Leverbaarheid](https://helpx.adobe.com/campaign/kb/acc-deliverability.html)beheren.
 
 De belangrijkste stappen voor het verzenden van een e-mail zijn:
