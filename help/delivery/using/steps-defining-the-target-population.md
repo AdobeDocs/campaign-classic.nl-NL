@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1573'
 ht-degree: 0%
 
 ---
@@ -229,3 +229,15 @@ U kunt de proefdrukken als doel **[!UICONTROL Seed addresses]** gebruiken: met d
 >De zaadadressen worden voorgesteld in [Ongeveer zaadadressen](../../delivery/using/about-seed-addresses.md).
 
 U kunt de definitie van een specifiek proefdrukdoel en het gebruik van zaadadressen combineren gebruikend de **[!UICONTROL Specific target and Seed addresses]** optie. De gerelateerde configuraties worden vervolgens in twee aparte subtabbladen gedefinieerd.
+
+## Zaden en proefdrukken in een e-mail beheren
+
+In deze video leert u hoe u zaden en proefdrukken aan een bestaande e-mail kunt toevoegen en hoe u deze kunt verzenden.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
+Zie ook:
+* [Het proefdrukdoel selecteren](#selecting-the-proof-target)
+
+* [Informatie over zaadadressen](../../delivery/using/about-seed-addresses.md)
+
+* [Hoofdlettergebruik: het selecteren van zaadadressen op criteria](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
