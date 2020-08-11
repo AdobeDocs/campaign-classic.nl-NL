@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 1%
 
 ---
 
 
-# Een leveringssjabloon maken{#creating-a-delivery-template}
+# Creating a delivery template{#creating-a-delivery-template}
 
 ## Een bestaande levering converteren naar een sjabloon {#converting-an-existing-delivery-to-a-template}
 
@@ -61,7 +64,7 @@ Voer de volgende stappen uit om een leveringssjabloon te configureren:
 
 1. Vul de categorie **E-mailparameters** in met het onderwerp en de doelgroep van uw e-mail.
 1. Voeg uw **HTML-inhoud** toe om uw sjabloon aan te passen. U kunt een koppeling naar een spiegelpagina en een koppeling naar een abonnement weergeven.
-1. Selecteer het tabblad **Voorbeeld** . Selecteer **Ontvanger** in het vervolgkeuzemenu Aanpassing **** testen om een voorvertoning van de sjabloon weer te geven als het gekozen profiel.
+1. Select the **Preview** tab. Selecteer **Ontvanger** in het vervolgkeuzemenu Aanpassing **** testen om een voorvertoning van de sjabloon weer te geven als het gekozen profiel.
 
    ![](assets/delivery_template_5.png)
 
@@ -70,3 +73,21 @@ Voer de volgende stappen uit om een leveringssjabloon te configureren:
 >[!NOTE]
 >
 >Om configuratiefouten te vermijden, adviseren wij dat u een inheemse malplaatje dupliceert en zijn eigenschappen veranderen eerder dan een nieuw malplaatje tot stand te brengen.
+
+## Hoe te om een leveringsmalplaatje te vormen
+
+In de volgende video ziet u hoe u een sjabloon voor een ad-hoclevering configureert.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
+
+## Eigenschappen voor leveringssjablonen instellen
+
+In de volgende video ziet u hoe u de eigenschappen van de leveringssjabloon instelt en wordt elke eigenschap in detail uitgelegd.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
+
+## Hoe te om een ad hoc leveringsmalplaatje op te stellen
+
+In deze video wordt uitgelegd hoe u een sjabloon voor ad-hoc e-maillevering kunt implementeren. In deze video wordt het verschil tussen een e-maillevering en een leveringsworkflow uitgelegd.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
