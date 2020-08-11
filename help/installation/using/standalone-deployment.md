@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
+source-git-commit: f8d36b9fca9624500c5273eb73a1702f077dd60c
+workflow-type: tm+mt
+source-wordcount: '1134'
+ht-degree: 0%
 
 ---
 
@@ -75,7 +78,7 @@ Naarmate het volume toeneemt, verplaatst een variant van deze architectuur de da
    * de eerste die aan het publiek voor het volgen van en het richten aan de computer op zijn openbaar IP wordt blootgesteld;
    * de tweede alias die aan interne gebruikers voor consoletoegang wordt blootgesteld en aan de zelfde computer richten.
 
-* Firewall geconfigureerd voor het openen van STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 voor Oracle, 5432 voor PostgreSQL, enz.) poorten. Voor verdere informatie, verwijs naar de configuratie [van het](../../installation/using/network-configuration.md)Netwerk.
+* Firewall geconfigureerd voor het openen van SMTP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 voor Oracle, 5432 voor PostgreSQL, enz.) poorten. Voor verdere informatie, verwijs naar de configuratie [van het](../../installation/using/network-configuration.md)Netwerk.
 
 In de volgende voorbeelden zijn de parameters van de instantie:
 
@@ -87,11 +90,11 @@ In de volgende voorbeelden zijn de parameters van de instantie:
 
 Voer de volgende stappen uit:
 
-1. Voer de installatieprocedure voor de Adobe Campagneserver uit: **nlserver** -pakket in Linux of **setup.exe** in Windows.
+1. Volg de installatieprocedure voor de Adobe Campaign-server: **Server** -pakket in Linux of **setup.exe** in Windows.
 
    Raadpleeg voor meer informatie de [vereisten voor de installatie van Campagne in Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) en [de vereisten voor de installatie van Campagne in Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
-1. Zodra de server van de Campagne van Adobe wordt geïnstalleerd, begin de toepassingsserver (Web) gebruikend het bevel **nlserver web -tomcat** (de module van het Web laat u toe om Tomcat op standalone de serverwijze van het Web te beginnen luisterend op haven 8080) en ervoor te zorgen Tomcat correct begint:
+1. Zodra de server van Adobe Campaign wordt geïnstalleerd, begin de toepassingsserver (Web) gebruikend het bevel **nlserver web -tomcat** (de module van het Web laat u toe om Tomcat op standalone de serverwijze van het Web te beginnen luisterend op haven 8080) en ervoor te zorgen begint Tomcat correct:
 
    ```
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -108,7 +111,7 @@ Voer de volgende stappen uit:
 
    Raadpleeg de volgende secties voor meer informatie hierover:
 
-   * Voor Linux: [Eerste start-up van de server](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server),
+   * Voor Linux: [Eerste start van de server](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server),
    * Voor Windows: [Eerste start-up van de server](../../installation/using/installing-the-server.md#first-start-up-of-the-server).
 
 1. Wijzig het **interne** wachtwoord met de opdracht:
@@ -117,7 +120,7 @@ Voer de volgende stappen uit:
    nlserver config -internalpassword
    ```
 
-   Raadpleeg de [interne id](../../installation/using/campaign-server-configuration.md#internal-identifier)voor meer informatie hierover.
+   For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
 1. Creeer de **demo** instantie met de DNS maskers voor het volgen (in dit geval, **tracking.campagne.net**) en toegang tot cliëntconsoles (in dit geval, **console.campagne.net**). Er zijn twee manieren om dit te doen:
 
@@ -155,7 +158,7 @@ Voer de volgende stappen uit:
    </serverconf>
    ```
 
-   Raadpleeg [Processen](../../installation/using/campaign-server-configuration.md#enabling-processes)inschakelen voor meer informatie.
+   For more on this, refer to [Enabling processes](../../installation/using/campaign-server-configuration.md#enabling-processes).
 
 1. Bewerk het bestand **serverConf.xml** en geef het leveringsdomein op. Geef vervolgens de IP-adressen (of de host) van de DNS-servers op die door de MTA-module worden gebruikt om DNS-vragen van het MX-type te beantwoorden.
 
@@ -173,13 +176,13 @@ Voer de volgende stappen uit:
 
    Raadpleeg de volgende secties voor meer informatie hierover:
 
-   * Voor Linux: Beschikbaarheid van [clientconsole voor Linux](../../installation/using/client-console-availability-for-linux.md)
-   * Voor Windows: Beschikbaarheid van [clientconsole voor Windows](../../installation/using/client-console-availability-for-windows.md)
+   * Voor Linux: [Beschikbaarheid van clientconsole voor Linux](../../installation/using/client-console-availability-for-linux.md)
+   * Voor Windows: [Beschikbaarheid van clientconsole voor Windows](../../installation/using/client-console-availability-for-windows.md)
 
 1. Volg de procedure van de de serverintegratie van het Web (IIS, Apache) in de volgende secties wordt beschreven die:
 
    * Voor Linux: [Integratie in een webserver voor Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
-   * Voor Windows: [Integratie in een server van het Web voor Vensters](../../installation/using/integration-into-a-web-server-for-windows.md)
+   * Voor Windows: [Integratie in een webserver voor Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
 1. Start de website en test omleiding met de URL: https://tracking.campaign.net/r/test.
 
@@ -191,14 +194,14 @@ Voer de volgende stappen uit:
 
    Raadpleeg de volgende secties voor meer informatie hierover:
 
-   * Voor Linux: De server van het Web [lanceren en de configuratie testen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
-   * Voor Windows: De server van het Web [lanceren en de configuratie testen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
+   * Voor Linux: [De server van het Web lanceren en de configuratie testen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
+   * Voor Windows: [De server van het Web lanceren en de configuratie testen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
-1. Start de Adobe Campagne-server (**Net start Nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux) en voer de PDump **van de** opdrachtserver opnieuw uit om de aanwezigheid van alle ingeschakelde modules te controleren.
+1. Start de Adobe Campaign-server (**Net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux) en voer de PDump **van de** opdrachtserver opnieuw uit om te controleren of alle ingeschakelde modules aanwezig zijn.
 
    >[!NOTE]
    >
-   >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl start nlserver**
+   >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systeemserver voor opstarten**
 
    ```
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -211,7 +214,7 @@ Voer de volgende stappen uit:
    web@default (28671) - 40.5 MB
    ```
 
-   Met deze opdracht weet u ook de versie en het buildnummer van de Adobe Campagne-server die op de computer is geïnstalleerd.
+   Met deze opdracht weet u ook de versie en het buildnummer van de Adobe Campaign-server die op de computer is geïnstalleerd.
 
 1. Test de **webmodule** van de server met de URL: https://console.campaign.net/nl/jsp/logon.jsp
 
@@ -223,10 +226,10 @@ Voer de volgende stappen uit:
 
    Raadpleeg de volgende secties voor meer informatie hierover:
 
-   * Voor Linux: Beschikbaarheid van [clientconsole voor Linux](../../installation/using/client-console-availability-for-linux.md)
-   * Voor Windows: Beschikbaarheid van [clientconsole voor Windows](../../installation/using/client-console-availability-for-windows.md)
+   * Voor Linux: [Beschikbaarheid van clientconsole voor Linux](../../installation/using/client-console-availability-for-linux.md)
+   * Voor Windows: [Beschikbaarheid van clientconsole voor Windows](../../installation/using/client-console-availability-for-windows.md)
 
-1. Start de Adobe Campaign-clientconsole (vanaf de vorige downloadpagina of die rechtstreeks op de server wordt gestart voor een Windows-installatie), stel de URL van de serververbinding in op https://console.campaign.net en maak verbinding met de **interne** aanmelding.
+1. Start de Adobe Campaign-clientconsole (vanaf de vorige downloadpagina of rechtstreeks gestart op de server voor een Windows-installatie), stel de URL van de serververbinding in op https://console.campaign.net en maak verbinding met behulp van de **interne** aanmelding.
 
    Zie Een instantie [maken en aanmelden](../../installation/using/creating-an-instance-and-logging-on.md) en [interne id](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
@@ -249,11 +252,11 @@ Voer de volgende stappen uit:
    * E-maillevering: afzender en antwoordadressen en de foutenbrievenbus voor stuitende post.
    * Tekstspatiëring: Vul de externe URL die wordt gebruikt voor omleiding en de interne URL, klik op **Registratie op de volgende server(s)** en valideer deze vervolgens op de **demo** -instantie van de trackingserver.
 
-      Voor meer op dit, verwijs naar het [Volgen configuratie](../../installation/using/deploying-an-instance.md#tracking-configuration).
+      For more on this, refer to [Tracking configuration](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
       ![](assets/s_ncs_install_deployment_wiz_09.png)
 
-      Aangezien de Adobe Campaign-server wordt gebruikt als toepassingsserver en omleidingsserver, is de interne URL die wordt gebruikt voor het verzamelen van trackinglogboeken en het overbrengen van URL&#39;s een directe interne verbinding met Tomcat (https://localhost:8080).
+      Aangezien de Adobe Campaign-server zowel als de toepassingsserver als de omleidingsserver wordt gebruikt, is de interne URL die wordt gebruikt voor het verzamelen van trackinglogboeken en het overbrengen van URL&#39;s een directe interne verbinding met Tomcat (https://localhost:8080).
 
    * Stuitbeheer: Voer de parameters in voor het afhandelen van stuiterende berichten (houd geen rekening met de sectie **Onverwerkte stuiterende berichten** ).
    * Toegang vanaf: Geef de twee URL&#39;s op voor rapporten, webformulieren en spiegel.
