@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e9e9b1352706e15a0d0c6ff8921e430524a44b13
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 0%
+source-wordcount: '868'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 De gebieden van de aanpassing worden gebruikt voor verpersoonlijking op het eerste niveau van de inhoud van geleverde berichten. De velden die u in een hoofdinhoud invoegt, geven de positie aan waar de gegevens uit de geselecteerde gegevensbron moeten worden ingevoegd.
 
-In het verpersoonlijkingsveld met de syntaxis **&lt;%= receiving.LastName %>** geeft u Adobe Campagne bijvoorbeeld de opdracht de naam van de ontvanger in te voegen in de database (tabel met ontvangers).
+In het verpersoonlijkingsveld met de syntaxis **&lt;%= receiving.LastName %>** geeft Adobe Campaign bijvoorbeeld de opdracht de naam van de ontvanger in te voegen in de database (tabel met ontvangers).
 
 >[!NOTE]
 >
@@ -42,15 +42,15 @@ De gebieden van de verpersoonlijking kunnen uit twee types van gegevensbron, vol
 
 >[!NOTE]
 >
->Een Adobe Campagne-aanpassingstag heeft altijd de volgende vorm **&lt;%=table.field%>**.
+>Een Adobe Campaign-personalisatietag heeft altijd de volgende vorm **&lt;%=table.field%>**.
 
-## Een aanpassingsveld invoegen {#inserting-a-personalization-field}
+## Een personalisatieveld invoegen {#inserting-a-personalization-field}
 
 Als u verpersoonlijkingsvelden wilt invoegen, klikt u op het vervolgkeuzepictogram dat toegankelijk is vanuit een bewerkveld voor koptekst, onderwerp of berichttekst.
 
 ![](assets/s_ncs_user_add_custom_field.png)
 
-Nadat een gegevensbron is geselecteerd (ontvangende velden of bestandsveld), neemt deze invoeging de vorm aan van een opdracht die wordt geïnterpreteerd door Adobe Campagne en wordt vervangen door de waarde van het veld voor een bepaalde ontvanger. De fysieke vervanging kan dan op het **[!UICONTROL Preview]** lusje worden bekeken.
+Na de selectie van een gegevensbron (ontvangende velden of bestandsveld) neemt deze invoeging de vorm aan van een opdracht die wordt geïnterpreteerd door Adobe Campaign en wordt vervangen door de waarde van het veld voor een bepaalde ontvanger. De fysieke vervanging kan dan op het **[!UICONTROL Preview]** lusje worden bekeken.
 
 ## Voorbeeld van personalisatievelden {#personalization-fields-example}
 
@@ -79,7 +79,7 @@ We maken een e-mail waarin we eerst de naam van de ontvanger invoegen en vervolg
 
    >[!NOTE]
    >
-   >Wanneer een levering deel uitmaakt van een workflow, kunt u de gegevens uit de tabel met tijdelijke werkstromen gebruiken. Deze gegevens worden gegroepeerd in het **[!UICONTROL Target extension]** menu. For more on this, refer to [this section](../../workflow/using/data-life-cycle.md#target-data).
+   >Wanneer een levering deel uitmaakt van een workflow, kunt u de gegevens uit de tabel met tijdelijke werkstromen gebruiken. Deze gegevens worden gegroepeerd in het **[!UICONTROL Target extension]** menu. Raadpleeg [deze sectie](../../workflow/using/data-life-cycle.md#target-data) voor meer informatie.
 
 ## Aanpassing optimaliseren {#optimizing-personalization}
 
@@ -93,9 +93,9 @@ Bijvoorbeeld, als u prestatieskwesties wanneer het leveren aan een hoog aantal o
 
 Volg onderstaande stappen om deze optie te gebruiken:
 
-1. Maak een campagne. For more on this, refer to [this section](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. Voeg op het **[!UICONTROL Targeting and workflows]** tabblad van uw campagne een **query** -activiteit toe aan uw workflow. Raadpleeg [deze sectie](../../workflow/using/query.md)voor meer informatie over het gebruik van deze activiteit.
-1. Voeg een **[!UICONTROL Email delivery]** activiteit aan het werkschema toe en open het. Raadpleeg [deze sectie](../../workflow/using/delivery.md)voor meer informatie over het gebruik van deze activiteit.
+1. Een campagne maken. Raadpleeg [deze sectie](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign) voor meer informatie.
+1. Voeg op het **[!UICONTROL Targeting and workflows]** tabblad van uw campagne een **query** -activiteit toe aan uw workflow. For more on using this activity, refer to [this section](../../workflow/using/query.md).
+1. Voeg een **[!UICONTROL Email delivery]** activiteit aan het werkschema toe en open het. For more on using this activity, refer to [this section](../../workflow/using/delivery.md).
 1. Ga naar het **[!UICONTROL Analysis]** tabblad van de optie **[!UICONTROL Delivery properties]** en selecteer de **[!UICONTROL Prepare the personalization data with a workflow]** optie.
 
    ![](assets/perso_optimization.png)
@@ -104,7 +104,7 @@ Volg onderstaande stappen om deze optie te gebruiken:
 
 Zodra de analyse wordt gedaan, worden de verpersoonlijkingsgegevens opgeslagen in een tijdelijke lijst door een tijdelijke technische werkschema dat op de vlucht tijdens de analyse wordt gecreeerd.
 
-Deze workflow is niet zichtbaar in de Adobe Campagne-interface. Het is alleen bedoeld als een technisch middel om personalisatiegegevens snel op te slaan en af te handelen.
+Deze workflow is niet zichtbaar in de Adobe Campaign-interface. Het is alleen bedoeld als een technisch middel om personalisatiegegevens snel op te slaan en af te handelen.
 
 Wanneer de analyse is voltooid, gaat u naar de workflow **[!UICONTROL Properties]** en selecteert u het **[!UICONTROL Variables]** tabblad. Daar kunt u de naam van de tijdelijke lijst zien die u kunt gebruiken om een SQL vraag te maken om identiteitskaarts te tonen die het bevat.
 
@@ -123,3 +123,9 @@ Als tijdens de voorvertoning of het verzenden de maximale tijd die u in dit veld
 De standaardwaarde is 5 seconden.
 
 Als u deze optie instelt op 0, is er geen tijdslimiet voor de verpersoonlijkingsfase.
+
+## E-mails personaliseren met personalisatievelden
+
+Leer hoe u een verpersoonlijkingsveld toevoegt aan de onderwerpregel en de inhoud van een e-maillevering.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
