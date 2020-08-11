@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
+source-git-commit: b14f5ecd2b06ed9f4cb49d8779b9f94ea4bcdddc
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 0%
+source-wordcount: '1176'
+ht-degree: 11%
 
 ---
 
@@ -31,7 +31,7 @@ De kernfuncties omvatten het richten, het bepalen en het personaliseren van beri
 
 >[!NOTE]
 >
->Adobe Campaign beschikt over een set gereedschappen om de prestaties te controleren en het verzenden van e-mail te optimaliseren. Raadpleeg voor meer informatie de [introductie](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) en het [leveringsbeheer](../../delivery/using/about-deliverability.md).
+>Adobe Campaign beschikt over een set gereedschappen om de prestaties te controleren en het verzenden van e-mail te optimaliseren. Raadpleeg voor meer informatie de [introductie](../../delivery/using/deliverability-key-points.md) en het [leveringsbeheer](../../delivery/using/about-deliverability.md).
 
 Het verzenden van leveringen kan worden geautomatiseerd door de levering voor te bereiden en/of te verzenden tijdens een workflow. Voor meer op levering-type activiteiten in werkschema&#39;s, verwijs naar [deze sectie](../../workflow/using/about-action-activities.md).
 
@@ -42,11 +42,11 @@ Adobe Campaign biedt de volgende leveringskanalen:
 1. **Mobiel kanaal**: Met leveringen op mobiele kanalen kunt u persoonlijke SMS- of LINE-berichten naar de doelgroep sturen. Zie [SMS-kanaal](../../delivery/using/sms-channel.md).
 1. **Mobiel toepassingskanaal**: Met levering voor mobiele apps kunt u meldingen verzenden naar iOS- en Android-systemen. Raadpleeg het hoofdstuk over het kanaal [van de](../../delivery/using/about-mobile-app-channel.md) mobiele app.
 
-   Andere kanalen worden beschreven op [deze pagina](../../delivery/using/communication-channels.md#other-channels).
+   Andere kanalen worden beschreven op [deze pagina](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels).
 
    >[!NOTE]
    >
-   >Het gebruik van meerdere kanalen is afhankelijk van het pakket. Controleer uw licentieovereenkomst.
+   >Het gebruik van meerdere kanalen is afhankelijk van het pakket. Controleer hiervoor uw licentieovereenkomst.
 
 Leveringen kunnen **online** (via e-mail, een van de mobiele kanalen en pushmeldingen) en **offline** (direct-mailkanaal) worden uitgevoerd.
 
@@ -67,9 +67,9 @@ U kunt verschillende typen e-mailberichten verzenden:
 * E-mails terugsturen: in een campagne regelmatig dezelfde e-mail sturen en elk bericht en de bijbehorende verslagen samenvoegen. Dezelfde e-mail wordt verzonden, maar doorgaans naar een ander doel, op basis van het in aanmerking komende doel voor de dag van de verzending. Een veelvoorkomend voorbeeld is een e-mailbericht voor verjaardagen. For more on this, refer to [Recurring deliveries](../../workflow/using/recurring-delivery.md).
 * Transactiee-mails: Eenvoudige e-mailberichten die worden geactiveerd op basis van het gedrag van uw klanten. Zie [Transactioneel overseinen](../../message-center/using/about-transactional-messaging.md).
 
-Als u meer wilt weten over het gebruik en de aanbevelingen van de [levering, raadpleegt u de best practices](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)voor de levering van campagnes.
+Als u meer wilt weten over het gebruik en de aanbevelingen van de [levering, raadpleegt u de best practices](../../delivery/using/delivery-best-practices.md)voor de levering van campagnes.
 
-Raadpleeg [deze sectie](../../delivery/using/types-of-deliveries.md)voor meer informatie over de verschillende typen leveringen.
+Raadpleeg [deze sectie](#types-of-deliveries)voor meer informatie over de verschillende typen leveringen.
 
 ## Mobiele leveringen {#mobile-deliveries}
 
@@ -86,13 +86,13 @@ Als u SMS- of lijnberichten wilt verzenden naar een mobiele telefoon die u nodig
 
 ## Pushmeldingen {#push-notifications}
 
-Met Adobe Campaign kunt u gepersonaliseerde en gesegmenteerde [pushmeldingen](../../delivery/using/about-mobile-app-channel.md) verzenden naar mobiele iOS- en Android-apparaten via specifieke apps. Nadat configuratie- en integratiestappen zijn uitgevoerd, kunnen iOS- en Android-leveringen worden gemaakt en verzonden. U kunt ook veelzijdige meldingen ontwerpen met afbeeldingen of video&#39;s.
+Adobe Campaign allows you to send personalized and segmented [push notifications](../../delivery/using/about-mobile-app-channel.md) on iOS and Android mobile devices, through dedicated apps. Nadat configuratie- en integratiestappen zijn uitgevoerd, kunnen iOS- en Android-leveringen worden gemaakt en verzonden. U kunt ook veelzijdige meldingen ontwerpen met afbeeldingen of video&#39;s.
 
 ## Direct mail {#direct-mail}
 
-[Directe post](../../delivery/using/about-direct-mail-channel.md) is een off-line kanaal dat u toestaat om het dossier te personaliseren en te produceren dat door directe postleveranciers wordt vereist. Het biedt u de mogelijkheid om online en off-line kanalen in uw klantenreizen te mengen.
+[Direct mail is een offline kanaal waarmee u het bestand dat wordt vereist door direct-mailproviders kunt personaliseren en genereren. ](../../delivery/using/about-direct-mail-channel.md) Het biedt u de mogelijkheid om online en offline kanalen in uw klanttrajecten te combineren.
 
-Met onlinekanalen kunt u uw berichten maken (e-mail, sms, levering van mobiele apps, enz.) en stuur ze rechtstreeks vanuit Adobe Campaign naar je publiek. Bij offlinekanalen is dit anders. Wanneer u een directe postbestelling voorbereidt, genereert Adobe Campaign een bestand met alle doelprofielen en de gekozen contactgegevens (bijvoorbeeld postadres). U kunt dit bestand dan naar uw directe-mailprovider sturen, die voor de verzending zal zorgen.
+Met online kanalen kunt u uw berichten (e-mail, sms, levering van mobiele apps, enzovoort) maken en ze vanuit Adobe Campaign direct naar uw doelgroep verzenden. Bij offline kanalen is dit anders. Wanneer u een direct-maillevering voorbereidt, genereert Adobe Campaign een bestand met alle doelprofielen en de gekozen contactinformatie (bijvoorbeeld postadres). U kunt dit bestand dan naar uw direct-mailprovider sturen, die voor de werkelijke verzending zorgt.
 
 ## Andere kanalen {#other-channels}
 
@@ -103,3 +103,33 @@ Bovendien gebruiken de &quot;Andere&quot;typeleveringen een specifiek technisch 
 Dit kanaal heeft geen specifiek mechanisme. Het is een generisch kanaal dat zijn eigen externe rekening heeft die optie, het type van leveringsmalplaatje en activiteit van het campagnewerkschema verpletteren, enkel zoals een ander communicatiekanaal beschikbaar in Adobe Campaign.
 
 Dit kanaal is alleen bedoeld voor beschrijvende doeleinden, bijvoorbeeld om leveringen te definiëren waarvoor u het doel van een campagne die is uitgevoerd in een ander programma dan Adobe Campaign, wilt bijhouden.
+
+## Soorten leveringen{#types-of-deliveries}
+
+Er zijn drie typen leveringsobjecten in campagne:
+
+### Eén levering {#single-delivery}
+
+Een **levering** is een standalone leveringsvoorwerp dat eens wordt uitgevoerd. Het kan worden gedupliceerd, opnieuw worden bereid, maar zolang het in zijn definitieve staat (geannuleerd, gestopt, gebeëindigd) is, kan het niet opnieuw worden gebruikt.
+
+Leveringen kunnen worden gemaakt op basis van de lijst met leveringen of binnen een workflow via een [leveringsactiviteit](../../workflow/using/delivery.md) .
+
+Workflows bieden ook specifieke leveringsactiviteiten op basis van het type kanaal dat u wilt gebruiken. For more on these activities, refer to [this section](../../workflow/using/cross-channel-deliveries.md).
+
+### Terugkerende levering {#recurring-delivery}
+
+Met een **terugkerende levering** kunt u elke keer dat de activiteit wordt uitgevoerd, een nieuwe levering maken. Zo voorkomt u dat u een nieuwe levering moet maken voor terugkerende taken.
+
+Als u dit soort activiteiten bijvoorbeeld eens per maand uitvoert, krijgt u na een jaar 12 leveringen.
+
+De terugkomende leveringen worden gecreeerd binnen werkschema&#39;s via de [Terugkomende leveringsactiviteit](../../workflow/using/recurring-delivery.md). Een voorbeeld van deze activiteit die wordt gebruikt wordt voorgesteld in deze sectie: [Een terugkerende levering maken in een doelworkflow](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
+
+### Doorlopende levering {#continuous-delivery}
+
+Met een **doorlopende levering** kunt u nieuwe ontvangers aan een bestaande levering toevoegen, zodat u niet telkens een nieuwe levering hoeft te maken wanneer deze wordt uitgevoerd.
+
+Als een informatie in de levering verandert (inhoud, naam, enz.), wordt een nieuw leveringsvoorwerp gecreeerd bij de leveringsuitvoering. Als er geen informatie is gewijzigd, wordt hetzelfde leveringsobject opnieuw gebruikt en worden de logbestanden voor levering en bijhouden toegevoegd aan hetzelfde object.
+
+Als voorbeeld, als u dit type van activiteit eens per maand in werking stelt, zult u eindigen met één enkele levering na een jaar (vooropgesteld u geen verandering in de levering).
+
+De ononderbroken leveringen worden gecreeerd binnen werkschema&#39;s via de [Ononderbroken leveringsactiviteit](../../workflow/using/continuous-delivery.md).
