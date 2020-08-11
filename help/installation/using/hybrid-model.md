@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 63d0551c0c036cb54ebea4e6cc4dc1f6566cf976
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '116'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Hier volgen de installatie- en configuratiestappen die van toepassing zijn op hy
 * URL&#39;s van pagina&#39;s per merk configureren voor bijhouden en spiegelen. Raadpleeg deze [sectie](../../message-center/using/configuring-multibranding.md)voor transactieberichten.
 * De clientconsole installeren: Zie deze [sectie](../../installation/using/installing-the-client-console.md).
 * Pakketten installeren: Zie deze [sectie](../../installation/using/installing-campaign-standard-packages.md).
-* Leverbaarheid: configureren van [MX-regels](../../installation/using/email-deliverability.md#mx-configuration) en [e-mailindelingen](../../installation/using/email-deliverability.md#managing-email-formats). Lees voor meer informatie over de gereedschappen en de aanbevolen procedures voor [de levering de gids](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) Aan de slag en [gedetailleerde documentatie](../../delivery/using/about-deliverability.md).
+* Leverbaarheid: configureren van [MX-regels](../../installation/using/email-deliverability.md#mx-configuration) en [e-mailindelingen](../../installation/using/email-deliverability.md#managing-email-formats). Lees voor meer informatie over de gereedschappen en de aanbevolen procedures voor [de levering de gids](../../delivery/using/deliverability-key-points.md) Aan de slag en [gedetailleerde documentatie](../../delivery/using/about-deliverability.md).
 * Campagneopties configureren: Zie deze [sectie](../../installation/using/configuring-campaign-options.md).
 * Een externe database configureren (FDA): Zie deze [sectie](../../platform/using/about-fda.md).
 * CRM-connectors configureren: Zie deze [sectie](../../platform/using/crm-connectors.md).
