@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campagne classic
 translation-type: tm+mt
-source-git-commit: b19a8e477b4419a369fa257b4629f4a01f0b0400
+source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
 workflow-type: tm+mt
-source-wordcount: '2097'
+source-wordcount: '2110'
 ht-degree: 8%
 
 ---
@@ -89,13 +89,17 @@ ht-degree: 8%
       + [CRM-connectors](platform/using/crm-connectors.md)
       + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
 + Berichten verzenden {#sending-messages}
-   + Aan de slag met berichten {#about-deliveries-and-channels}
-      + [Communicatiekanalen](delivery/using/communication-channels.md)
-      + [Best practices voor levering](delivery/using/delivery-best-practices.md)
-      + [Toegang tot leveringsgegevens](delivery/using/accessing-deliveries-information.md)
-      + [Soorten leveringen](delivery/using/types-of-deliveries.md)
+   + [Aan de slag met berichten](delivery/using/communication-channels.md)
+   + Best practices voor levering {#delivery-bestpractices}
+      + [Tips en trucs leren](delivery/using/delivery-best-practices.md)
+      + [Levering optimaliseren](delivery/using/optimize-delivery.md)
+      + [Sjablonen gebruiken](delivery/using/use-templates.md)
+      + [Aangepaste inhoud maken](delivery/using/design-and-personalize.md)
+      + [Het juiste publiek definiëren](delivery/using/define-the-right-audience.md)
+      + [Controleren vóór verzending](delivery/using/check-before-sending.md)
+      + [Track en monitor](delivery/using/track-and-monitor.md)
    + Belangrijke stappen bij het maken van een levering {#key-steps-when-creating-a-delivery}
-      + [Over het maken van leveringen ](delivery/using/steps-about-delivery-creation-steps.md)
+      + [Aan de slag met leveringen](delivery/using/steps-about-delivery-creation-steps.md)
       + [De levering maken en identificeren](delivery/using/steps-create-and-identify-the-delivery.md)
       + [Bepaling van de doelpopulatie](delivery/using/steps-defining-the-target-population.md)
       + [De levering valideren](delivery/using/steps-validating-the-delivery.md)
@@ -218,7 +222,7 @@ ht-degree: 8%
       + [Hypothesjablonen](campaign/using/hypothesis-templates.md)
       + [hypothesen maken](campaign/using/creating-hypotheses.md)
       + [Hypothetische tekstspatiëring](campaign/using/hypothesis-tracking.md)
-+ Rapportage {#reporting}
++ Rapporten {#reporting}
    + Rapportering in Adobe Campaign {#reporting-in-adobe-campaign}
       + [Aan de slag met rapportage](reporting/using/about-adobe-campaign-reporting-tools.md)
       + [Aanbevolen werkwijzen voor rapportage](reporting/using/best-practices.md)
