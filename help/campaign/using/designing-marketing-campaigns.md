@@ -15,21 +15,24 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 4%
 
 ---
 
 
 # Verkoopcampagnes ontwerpen{#designing-marketing-campaigns}
 
-Met Adobe Campaign kunt u communicatie- en marketingcampagnes definiëren, optimaliseren, uitvoeren en analyseren. De Campagne van Adobe doet dienst als verenigd orde en uitvoeringscentrum voor marketing strategieën. Raadpleeg [Toegang tot campagnes](../../campaign/using/accessing-campaigns.md) en [marketingcampagnes](../../campaign/using/setting-up-marketing-campaigns.md)voor meer informatie.
+Met Adobe Campaign kunt u communicatie- en marketingcampagnes definiëren, optimaliseren, uitvoeren en analyseren. Adobe Campaign fungeert als een gemeenschappelijk centrum voor bestellingen en uitvoering voor marketingstrategieën. Raadpleeg [Toegang tot campagnes](../../campaign/using/accessing-campaigns.md) en [marketingcampagnes](../../campaign/using/setting-up-marketing-campaigns.md)voor meer informatie.
 
-Bovendien laat de module van het Beheer van het Middel van de **Marketing (MRM)** u marketing acties op een samenwerkingswijze controleren door volledig beheer en in real time het volgen van de taken, de begrotingen en de marketing middelen in kwestie te verstrekken. Met het beheer van marketingbronnen kunt u het beheer van interne en externe processen, bronnen en marketingcampagnes optimaliseren en reguleren, evenals de relaties van derden (agentschappen, printers, enz.). Zie [deze sectie](../../campaign/using/about-marketing-resource-management.md)voor meer informatie.
+Bovendien laat de module van het Beheer van het Middel van de **Marketing (MRM)** u marketing acties op een samenwerkingswijze controleren door volledig beheer en in real time het volgen van de taken, de begrotingen en de marketing middelen in kwestie te verstrekken. Met het beheer van marketingbronnen kunt u het beheer van interne en externe processen, bronnen en marketingcampagnes optimaliseren en reguleren, evenals de relaties van derden (agentschappen, printers, enz.). Raadpleeg [deze sectie](../../campaign/using/about-marketing-resource-management.md) voor meer informatie.
 
 >[!NOTE]
 >
->Raadpleeg de sectie Aan de [slag](../../platform/using/about-adobe-campaign-classic.md) voor meer informatie over de kernfuncties van Adobe Campagne.\
->De mogelijkheden met betrekking tot het richten van de bevolking, berichtverpersoonlijking en berichtlevering op de diverse kanalen zijn gedetailleerd in [deze sectie](../../delivery/using/communication-channels.md).
+>Raadpleeg de sectie Aan de [slag](../../platform/using/about-adobe-campaign-classic.md) voor meer informatie over de kernfuncties van Adobe Campaign.\
+>De mogelijkheden met betrekking tot het richten van de bevolking, berichtverpersoonlijking en berichtlevering op de diverse kanalen zijn gedetailleerd in [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ## Basisbegrippen {#core-concepts}
 
@@ -49,13 +52,13 @@ De volgende concepten moeten bekend zijn in het kader van de campagne:
 
    Het marketingplan kan meerdere programma&#39;s bevatten. Het is gekoppeld aan een kalenderperiode, heeft een toegewezen budget en kan ook worden gekoppeld aan documenten en doelstellingen.
 
-   Raadpleeg de [Campagnekalender](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar)voor meer informatie hierover.
+   For more on this, refer to [Campaign calendar](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
 
 * **Workflow**
 
    Een campagneworkflow bevat dezelfde activiteiten als voor alle workflows, maar is specifiek voor de campagne. Het laat u toe om leveringen voor alle beschikbare kanalen tot stand te brengen en te vormen.
 
-   Zie [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)voor meer informatie.
+   Raadpleeg [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) voor meer informatie.
 
 * **Doelstellingen**
 
@@ -66,3 +69,11 @@ De volgende concepten moeten bekend zijn in het kader van de campagne:
    Een leveringsoverzicht is een gestructureerde beschrijving van een levering. Elke levering kan naar een leveringsoverzicht verwijzen dat, bijvoorbeeld, de verwante aanbiedingen bevat, documenten om, of een verbinding aan opslag in bijlage te zijn. Naar een aanbieding kan in de levering worden verwezen op basis van het geselecteerde leveringsoverzicht.
 
    Zie [Bronnen koppelen en structureren via een overzichtstabel](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)voor meer informatie hierover.
+
+## Een e-mail maken in een campagne
+
+In deze video wordt uitgelegd hoe u een campagne en een e-mail kunt maken in Adobe Campaign Classic.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+
+For more details, refer to [this section](../../campaign/using/marketing-campaign-deliveries.md)
