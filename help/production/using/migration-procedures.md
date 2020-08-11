@@ -15,20 +15,23 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a11a73b0679c0a65dc10f71869bf2a6c6efc008
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 4%
 
 ---
 
 
 # Migratieprocedures{#migration-procedures}
 
-Als u een upgrade uitvoert van Adobe Campaign v6 naar v7, raden we u de volgende richtlijnen aan.
+Als u een upgrade uitvoert van Adobe Campaign v6 naar v7, raden we u aan de volgende richtlijnen te volgen.
 
-* Verwijder in Windows voor de client- en serverupgrade de installatie van Adobe Campagne v6 voordat u versie 7 installeert. Vergeet niet vooraf back-ups te maken van uw log- en configuratiebestanden.
-* Verwijder in Linux voor de serverupgrade het pakket Adobe Campagne v6 voordat u versie 7 installeert.
+* In Windows moet u Adobe Campaign v6 voor zowel de client- als serverupgrade verwijderen voordat u versie 7 installeert. Vergeet niet vooraf back-ups te maken van uw log- en configuratiebestanden.
+* Verwijder in Linux voor de serverupgrade het Adobe Campaign v6-pakket voordat u versie 7 installeert.
 
 Voor meer informatie over migratieprocedures en beste praktijken, verwijs naar:
 
-* [Een build-upgrade uitvoeren](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html)
+* [Een build-upgrade uitvoeren](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)
 * [Migratieoverzicht](../../migration/using/about-migration.md)
 
