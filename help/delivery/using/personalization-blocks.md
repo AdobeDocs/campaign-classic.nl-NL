@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '884'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Een lijst van verpersoonlijkingsblokken is beschikbaar door gebrek om u te helpe
    >Raadpleeg [De spiegelpagina](../../delivery/using/sending-messages.md#generating-the-mirror-page)genereren voor meer informatie over het genereren van spiegelpagina&#39;s.
 
 * **[!UICONTROL Link to mirror page]** : voegt een koppeling naar de spiegelpagina in: &quot;Klik hier als je dit bericht niet juist kunt weergeven.&quot;
-* **[!UICONTROL Unsubscription link]** : voegt een koppeling in waarmee u zich kunt afmelden bij alle leveringen (bloklijst).
+* **[!UICONTROL Unsubscription link]** : voegt een koppeling in waarmee u zich kunt afmelden bij alle leveringen (lijst van afgewezen personen).
 * **[!UICONTROL Formatting function for proper nouns]** : Hiermee wordt de functie **[!UICONTROL toSmartCase]** JavaScript gegenereerd. De eerste letter van elk woord wordt in hoofdletters gewijzigd. Dit blok moet in de broncode van de levering, in **`<script>...</script>`** markeringen worden opgenomen.
 
    In het onderstaande voorbeeld wordt de functie gebruikt om het element &quot;Mijn koptekst&quot; te vervangen door &quot;Mijn nieuwe koptekst&quot; door hoofdletters bij elk woord:
@@ -158,4 +158,10 @@ Ga naar de verkenner en voer de volgende stappen uit om een verpersoonlijkingsbl
 
       ![](assets/s_ncs_user_personalized_block_b.png)
 
-   * Voer de inhoud in (in HTML, tekst, JavaScript, enz.) van het (de) personalisatieblok(ken) en klik **[!UICONTROL Save]** .
+   * Voer de inhoud in (in HTML, tekst, JavaScript, enz.) van het (de) verpersoonlijkingsblok(ken) en klik **[!UICONTROL Save]**.
+
+## E-mails personaliseren met gebruik van dynamische inhoudsblokken
+
+Leer hoe u dynamische inhoudsblokken hebt gemaakt en hoe u deze kunt gebruiken om de inhoud van uw e-maillevering aan te passen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
