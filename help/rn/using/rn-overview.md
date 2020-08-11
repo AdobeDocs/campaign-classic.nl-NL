@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 99dfefe3f51115b78bfeb02094d614a6e63af124
+source-git-commit: 27a72257904ff356b1a341c29f9a1ab3ccb20dd2
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 0%
+source-wordcount: '439'
+ht-degree: 3%
 
 ---
 
@@ -31,7 +31,7 @@ Daarom vinden wij het van essentieel belang dat u de meest recente versie van Ad
 
 ## Status vrijgeven{#rn-statuses}
 
-Vanaf Campaign Classic 19.2 wordt aan elke build een status gekoppeld. Hieronder vindt u de statussen en hoe u deze kunt interpreteren.
+Vanaf Campaign Classic 19.2, wordt een status geassocieerd aan elke bouwstijl. Hieronder vindt u de statussen en hoe u deze kunt interpreteren.
 
 ![](assets/do-not-localize/green3.png) **Algemene beschikbaarheid** - De nieuwste stabiele build beschikbaar. Build gevalideerd in productie.
 
@@ -39,7 +39,7 @@ De **laatste stabiele build** is Gold Standard 6. Klik [hier](../../rn/using/gol
 
 ![](assets/do-not-localize/limited.png) **Beperkte beschikbaarheid** - build momenteel in productievalidering. Alleen on demand-implementatie.
 
-![](assets/do-not-localize/blue3.png) **Releasekandidaat** - Build gevalideerd door Adobe. Wachten op proefdrukken van de productie.
+![](assets/do-not-localize/blue3.png) **Release-kandidaat** - build gevalideerd door Adobe. Wachten op proefdrukken van de productie.
 
 ![](assets/do-not-localize/orange3.png) **Niet meer beschikbaar** - Nieuwere build beschikbaar met opgeloste problemen. Bijwerken is vereist.
 
@@ -49,7 +49,7 @@ De **laatste stabiele build** is Gold Standard 6. Klik [hier](../../rn/using/gol
 
 Als gehoste klant (Managed Service of Hybrid) moet u contact opnemen met het zorgteam van de klant om uw omgeving te laten upgraden.
 
-Als gebruiker van de Gold Standard profiteert u automatisch van de Gold Standard-upgrade met de nieuwste stabiele versie zonder enige actie. [Meer informatie](https://helpx.adobe.com/campaign/kb/gold-standard.html)
+Als gebruiker van de Gold Standard profiteert u automatisch van de Gold Standard-upgrade met de nieuwste stabiele versie zonder enige actie. [Meer informatie](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-6)
 
 Als gebruiker op locatie kunt u de upgrade uitvoeren. Hiervoor moet u de nieuwste stabiele build [](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) downloaden en al uw omgevingen upgraden. Lees meer over het [upgradeproces](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)en raadpleeg de veelgestelde vragen over [upgrades](https://helpx.adobe.com/campaign/kb/build-upgrade-faq.html).
 
@@ -59,14 +59,14 @@ Om een stabiele configuratie te verzekeren, adviseren wij dat u de zelfde stabie
 
 Om uw implementatie up-to-date te houden, zorg ervoor om de [Vervangen en verwijderde eigenschappen](../../rn/using/deprecated-features.md) en de matrixpagina [van de](../../rn/using/compatibility-matrix.md) Verenigbaarheid met elke nieuwe versie te lezen.
 
-Als u wilt worden geïnformeerd over nieuwe Experience Cloud-oplossingen, meldt u zich aan bij de [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html).
+Als u op de hoogte wilt worden gebracht van nieuwe Experience Cloud-oplossingen, meldt u zich aan de [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html).
 
 Lees meer over de andere [aanbevelingen](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html#Recommendations).
 
 ## Ondersteuning en andere handige koppelingen{#support}
 
 * [Help en ondersteuning](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
-* [Configuratiescherm-releases](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)
+* [Configuratiescherm-releases](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html)
 * [Documentatie-updates](../../rn/using/documentation-updates.md)
 * [Eerdere versies](../../rn/using/release--20-1.md)
 * [Verouderde functies](../../rn/using/deprecated-features.md)
