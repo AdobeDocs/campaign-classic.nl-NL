@@ -1,6 +1,6 @@
 ---
-title: Belangrijkste punten bij het beheren van de prestaties in Adobe Campagne Classic
-description: Wat zijn de belangrijkste punten om te controleren bij het beheren van de prestaties in Adobe Campaign Classic?
+title: Belangrijkste punten bij het beheren van de leverbaarbaarheid in Adobe Campaign Classic
+description: Wat zijn de belangrijkste punten om te controleren wanneer het beheren van leverbaarheid in Adobe Campaign Classic?
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -13,17 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4582ea496fff35c5b586049b8daa379464bd78fc
+source-git-commit: b14f5ecd2b06ed9f4cb49d8779b9f94ea4bcdddc
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 0%
+source-wordcount: '623'
+ht-degree: 1%
 
 ---
 
 
 # Belangrijkste punten voor de aflevering{#deliverability-key-points}
 
-We raden u aan de onderstaande aanbevolen werkwijzen te gebruiken om de leverbaarheid van uw e-mailberichten voor Adobe Campagne te optimaliseren. De leveringsproblemen zijn over het algemeen verbonden met maatregelen van bescherming tegen spam die door de dienstverleners van Internet en de beheerders van de postserver worden uitgevoerd.
+We raden u aan de onderstaande aanbevolen procedures te gebruiken om de leverbaarheid van je Adobe Campaign-e-mails te optimaliseren. De leveringsproblemen zijn over het algemeen verbonden met maatregelen van bescherming tegen spam die door de dienstverleners van Internet en de beheerders van de postserver worden uitgevoerd.
 
 **De e-mailleverbaarheid** verwijst naar de reeks kenmerken die bepalen of een bericht zijn bestemming kan bereiken, via een persoonlijk e-mailadres, binnen een korte tijd, en met de verwachte kwaliteit in termen van inhoud en formaat.
 
@@ -71,3 +71,92 @@ In mindere mate kan de inhoud van bepaalde berichten ertoe leiden dat bepaalde f
 ## Werk met uw reputatie {#reputation}
 
 Spammers maken geprogrammeerde leveringen om hun reputatie in de loop der tijd te behouden. Soms moeten zij hun marketing plan aanpassen om aan de beste praktijken te voldoen die door ISPs worden opgelegd en zo, na een piek in reputatie (oprijving), vormen zij regelmatige leveringen.
+
+## Aanbevolen procedures {#best-practices}
+
+Leer de beste praktijken met betrekking tot leverbaarheid met Adobe Campaign. Gebruik de onderstaande koppelingen om door onderwerpen te navigeren en hulp te zoeken.
+
+<table>
+<tr>
+  <td>
+    <a href="starting-new-platform.md">
+      <img alt="Start" src="assets/do-not-localize/start.svg"/>
+    </a>
+    <div>
+      <a href="starting-new-platform.md">
+    <strong>Start</strong>
+    </a>
+    </div>
+    <p>
+    <em>Een nieuw platform starten</em>
+    <p>
+  </td>
+   <td>
+    <a href="control-message-content.md">
+      <img alt="Ontwerp" src="assets/do-not-localize/design.svg"/>
+    </a>
+    <div>
+      <a href="control-message-content.md">
+    <strong>Ontwerp</strong>
+    </a>
+    </div>
+    <p>
+    <em>Inhoud van controleberichten</em>
+    <p>
+  </td>
+  <td>
+    <a href="improve-reputation.md">
+      <img alt="Ontwerp" src="assets/do-not-localize/check.svg"/>
+    </a>
+    <div>
+      <a href="improve-reputation.md">
+    <strong>Verzenden</strong>
+    </a>
+    </div>
+    <p>
+    <em>Verbeter uw reputatie</em>
+    <p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <a href="technical-recommendations.md">
+      <img alt="Optimaliseren" src="assets/do-not-localize/optimize.svg"/>
+    </a>
+    <div>
+      <a href="technical-recommendations.md">
+    <strong>Optimaliseren</strong>
+    </a>
+    </div>
+    <p>
+    <em>Technische aanbevelingen</em>
+    <p>
+  </td>
+   <td>
+    <a href="monitoring-deliverability.md">
+      <img alt="Controleren" src="assets/do-not-localize/monitor.svg"/>
+    </a>
+    <div>
+      <a href="monitoring-deliverability.md">
+    <strong>Monitor</strong>
+    </a>
+    </div>
+    <p>
+    <em>Monitoringinstrumenten</em>
+    <p>
+  </td>
+  <td>
+    <a href="deliverability-faq.md">
+      <img alt="Optimaliseren" src="assets/do-not-localize/troubleshoot.svg"/>
+    </a>
+    <div>
+      <a href="deliverability-faq.md">
+    <strong>Problemen oplossen</strong>
+    </a>
+    </div>
+    <p>
+    <em>Oplossen van problemen</em>
+    <p>
+  </td>
+</tr>
+</table>
