@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '1049'
+ht-degree: 0%
 
 ---
 
@@ -26,9 +29,9 @@ Met Adobe Campaign kunt u marketingcampagnes maken, configureren, uitvoeren en a
 
 ## Beginselen van de werkruimte {#workspace-basics}
 
-### Homepage {#home-page}
+### Startpagina {#home-page}
 
-Als u eenmaal verbinding hebt gemaakt met Adobe Campaign, wordt de startpagina weergegeven.
+Zodra u verbinding hebt met Adobe Campaign, wordt de homepage weergegeven.
 
 ![](assets/campaign_global_view.png)
 
@@ -38,16 +41,16 @@ Campagne-elementen worden aangetroffen in het **[!UICONTROL Campaigns]** univers
 
 Het navigatieblok van het **[!UICONTROL Campaigns]** heelal biedt verschillende ingangen, afhankelijk van modules die op de instantie worden geïnstalleerd. U hebt bijvoorbeeld toegang tot:
 
-* **Campagnekalender**: tijdschema van de plannen, marketingprogramma&#39;s, leveringen en campagnes. Raadpleeg de [campagnemalender](#campaign-calendar).
+* **Campagnekalender**: tijdschema van de plannen, marketingprogramma&#39;s, leveringen en campagnes. Zie [Campagnekalender](#campaign-calendar).
 * **Campagnes**: toegang tot de campagnes in alle marketingprogramma&#39;s.
 * **Leveringen**: toegang tot de met de campagnes verband houdende leveringen.
 * **Webtoepassingen**: toegang tot webtoepassingen (formulieren, enquêtes, enz.).
 
 >[!NOTE]
 >
->Zie [deze sectie](../../platform/using/adobe-campaign-workspace.md)voor meer informatie over de algemene ergonomie, machtigingen en functies voor profielbeheer van Adobe Campagne.
+>Zie [deze sectie](../../platform/using/adobe-campaign-workspace.md)voor meer informatie over de algemene ergonomie van Adobe Campaign, machtigingen en functies voor profielbeheer.
 >
->Alle functies met betrekking tot kanalen en leveringen worden in [deze sectie](../../delivery/using/communication-channels.md)beschreven.
+>Alle functies met betrekking tot kanalen en leveringen worden in [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md)beschreven.
 
 ### Campagnekalender {#campaign-calendar}
 
@@ -132,7 +135,7 @@ Een campagne centraliseert een reeks leveringen. Voor elke campagne, biedt het p
 
 Voor elke campagne kunnen exploitanten berichten uitwisselen via een speciaal forum.
 
-Raadpleeg de [discussieforums](../../campaign/using/discussion-forums.md)voor meer informatie hierover.
+For more on this, refer to [Discussion forums](../../campaign/using/discussion-forums.md).
 
 #### Rapporten {#reports}
 
@@ -149,7 +152,7 @@ Via de **[!UICONTROL Reports]** koppeling hebt u toegang tot de campagnerapporte
 Campagnes worden gemaakt via campagnemalplaatjes. U kunt herbruikbare sjablonen configureren waarvoor sommige opties zijn geselecteerd en andere instellingen al zijn opgeslagen. Voor elke campagne wordt de volgende functionaliteit aangeboden:
 
 * Referentie van documenten en bronnen: u kunt documenten aan de campagne associëren (kort, rapport, beelden, enz.). Alle documentindelingen worden ondersteund. Zie Gekoppelde documenten [](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)beheren.
-* Vastlegkosten: voor elke campagne kunt u in Adobe Campaign kostengegevens en kostenberekeningsstructuren definiëren die kunnen worden gebruikt bij het maken van de marketingcampagne. Bijvoorbeeld: afdrukkosten, gebruik van een extern bureau, huur van ruimten enz. Zie [Kostencategorieën](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories)definiëren.
+* Vastlegkosten: voor elke campagne kunt u in Adobe Campaign de kostenposten en kostenberekeningsstructuren definiëren die kunnen worden gebruikt bij het maken van de marketingcampagne. Bijvoorbeeld: afdrukkosten, gebruik van een extern bureau, huur van ruimten enz. Zie [Kostencategorieën](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories)definiëren.
 * Definitie van doelstellingen: u kunt kwantificeerbare doelstellingen voor een campagne bepalen, bijvoorbeeld aantal abonnees, bedrijfsvolume, enz. Deze informatie wordt later gebruikt in campagnerapporten.
 * Het beheren van zaadadressen (voor meer op dit, verwijs naar [deze sectie](../../delivery/using/about-seed-addresses.md)) en controlegroepen (verwijs naar het [Bepalen van een controlegroep](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)).
 * Goedkeuringen beheren: u kunt kiezen welke behandelingen moeten worden goedgekeurd en, indien nodig, de revisieoperatoren of groepen operatoren selecteren. Zie [Leveringen](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)controleren en goedkeuren.
@@ -160,7 +163,7 @@ Campagnes worden gemaakt via campagnemalplaatjes. U kunt herbruikbare sjablonen 
 
 ## De webinterface gebruiken {#using-the-web-interface-}
 
-U kunt de schermen van de Adobe Campagne-console openen via een internetbrowser om alle campagnes en leveringen, alsmede rapporten en informatie over de profielen in uw database weer te geven. Met deze toegang kunt u geen records maken. Afhankelijk van de rechten van de operator kunt u de gegevens in de database bekijken en/of bewerken. U kunt bijvoorbeeld de inhoud van de campagne goedkeuren, een levering opnieuw starten of stoppen, enzovoort.
+U kunt de Adobe Campaign-consoleschermen openen via een internetbrowser om alle campagnes en leveringen, alsmede rapporten en informatie over de profielen in uw database weer te geven. Met deze toegang kunt u geen records maken. Afhankelijk van de rechten van de operator kunt u de gegevens in de database bekijken en/of bewerken. U kunt bijvoorbeeld de inhoud van de campagne goedkeuren, een levering opnieuw starten of stoppen, enzovoort.
 
 1. Meld u op de gebruikelijke manier aan via https://`<your instance>:<port>/view/home`.
 1. Via de menu&#39;s hebt u toegang tot de overzichten.
