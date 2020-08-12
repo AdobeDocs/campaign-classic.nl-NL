@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '484'
 ht-degree: 5%
 
 ---
@@ -26,6 +26,8 @@ ht-degree: 5%
 # Informatie over campagetypologieën{#about-campaign-typologies}
 
 De Optimalisering van de campagne is de module van Adobe Campaign die u de verzendende leveringen laat controleren, filtreren en controleren. Om conflicten tussen campagnes te vermijden, kan Adobe Campaign diverse combinaties testen door specifieke beperkingsregels toe te passen. Dit garandeert dat de verzonden berichten voldoen aan de behoeften en verwachtingen van klanten en het communicatiebeleid van het bedrijf.
+
+![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](#typologies-video)
 
 >[!NOTE]
 >
@@ -69,7 +71,7 @@ De stappen voor het maken en toepassen van een typologie voor uw leveringen word
 
 Tijdens de voorbereiding van de levering worden ontvangers uitgesloten wanneer aan het criterium wordt voldaan. U kunt logboeken controleren om toezicht te houden op uitsluitingen. In [deze pagina](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules)vindt u voorbeelden van situaties voor de druktypologische regels.
 
-## Hoe stelt u vermoeidheidsbeheer in met behulp van typologische regels
+## Hoe stelt u vermoeidheidsbeheer in met behulp van typologische regels {#typologies-video}
 
 In deze video wordt uitgelegd hoe u vermoeidheidsbeheer in Adobe Campaign Classic kunt implementeren door gebruik te maken van typologische regels.
 
