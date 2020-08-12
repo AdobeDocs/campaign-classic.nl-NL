@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,9 @@ ht-degree: 0%
 # Voorwaardelijke inhoud{#conditional-content}
 
 Door voorwaardelijke inhoudsgebieden te vormen, kunt u dynamische verpersoonlijking tot stand brengen die op het profiel van de ontvanger bijvoorbeeld wordt gebaseerd. Tekstblokken en/of afbeeldingen worden vervangen wanneer aan een bepaalde voorwaarde wordt voldaan.
+
+![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](#conditionnal-content-video)
+
 
 ## Voorwaarden in een e-mail gebruiken {#using-conditions-in-an-email}
 
@@ -114,7 +117,7 @@ In het onderstaande voorbeeld leert u hoe u een meertalige e-mail kunt maken. De
    >
    >Aangezien er geen alternatieve versie is gedefinieerd in de e-mailinhoud, moet u de doelpopulatie filteren voordat u de e-mail verzendt.
 
-## Een meertalige nieuwsbrief met voorwaardelijke inhoud maken
+## Een meertalige nieuwsbrief met voorwaardelijke inhoud maken {#conditionnal-content-video}
 
 Leer hoe u voorwaardelijke inhoud aan een levering kunt toevoegen op het voorbeeld van een meertalige nieuwsbrief.
 
