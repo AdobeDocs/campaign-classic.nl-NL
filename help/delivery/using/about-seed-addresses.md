@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 0%
+source-wordcount: '379'
+ht-degree: 2%
 
 ---
 
@@ -29,7 +29,9 @@ De zaadadressen worden gebruikt aan doelontvangers die niet de bepaalde doelcrit
 
 Een van de belangrijkste redenen om ze te gebruiken is de bescherming **van** je mailinglijst. Door zaadadressen in te voegen in uw mailinglijst kunt u zien of het door een derde wordt gebruikt, aangezien de zaadadressen het bevat de leveringen ontvangen die naar uw postingslijst worden verzonden.
 
-Bovendien laten de zaadadressen u **voorproef en test de leveringenverpersoonlijking en het teruggeven** alvorens zij, door hen proefdrukken te verzenden (zie het [Gebruiken van zaadadressen als proef](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof)).
+Bovendien laten de zaadadressen u **voorproef en test de leveringenverpersoonlijking en het teruggeven** alvorens zij verzenden, door hen proefdrukken te verzenden (zie het [Gebruiken van zaadadressen als proef](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof).
+
+![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](../../delivery/using/steps-defining-the-target-population.md#seeds-and-proofs-video)
 
 De zaadadreseigenschap heeft de volgende voordelen:
 
@@ -52,7 +54,8 @@ Voor direct-mailleveringen worden de zaadadressen toegevoegd tijdens extractie e
 >Voor direct-mailleveringen moet de indeling van het extractiebestand voldoen aan de volgende beperkingen:
 >
 >* De optie mag niet worden gebruikt **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
->* Als elementverzamelingen worden geëxtraheerd, hebben deze velden een lege waarde voor de zaadadressen, tenzij de **[!UICONTROL Single row (expert user)]** optie is geselecteerd. For more on this, refer to [this section](../../platform/using/exporting-data.md#step-7---data-formatting).
+>* Als elementverzamelingen worden geëxtraheerd, hebben deze velden een lege waarde voor de zaadadressen, tenzij de **[!UICONTROL Single row (expert user)]** optie is geselecteerd. Raadpleeg [deze sectie](../../platform/using/exporting-data.md#step-7---data-formatting) voor meer informatie.
+
 >
 
 
