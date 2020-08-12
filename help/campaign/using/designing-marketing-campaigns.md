@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '416'
 ht-degree: 4%
 
 ---
@@ -46,7 +46,7 @@ De volgende concepten moeten bekend zijn in het kader van de campagne:
 
 * **Programma**
 
-   Met een programma kunt u marketingacties voor een kalenderperiode definiëren: lancering, kanvassing, loyaliteit, enz. Elk programma bevat campagnes die zijn gekoppeld aan een kalender, die een algemeen overzicht biedt.
+   Met een programma kunt u marketingacties voor een kalenderperiode definiëren: lancering, kanvassing, loyaliteit, enz. Elk programma bevat campagnes die zijn gekoppeld aan een kalender, die een algemene weergave biedt.
 
 * **Plan**
 
@@ -70,10 +70,3 @@ De volgende concepten moeten bekend zijn in het kader van de campagne:
 
    Zie [Bronnen koppelen en structureren via een overzichtstabel](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)voor meer informatie hierover.
 
-## Een e-mail maken in een campagne
-
-In deze video wordt uitgelegd hoe u een campagne en een e-mail kunt maken in Adobe Campaign Classic.
-
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
-
-For more details, refer to [this section](../../campaign/using/marketing-campaign-deliveries.md)
