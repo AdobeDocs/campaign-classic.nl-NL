@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Een out-of-the-box malplaatje wordt geleverd om een campagne tot stand te brenge
 
 De creatie en configuratie van campagnemalplaatjes worden voorgesteld in de malplaatjes [van de](#campaign-templates)Campagne.
 
-Raadpleeg voor meer informatie over het maken van campagnes de video [Een campagne en een e-mailvideo](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/sending-messages/email-channel/creating-a-campaign-and-an-email.html) maken.
+Raadpleeg [deze video](../../campaign/using/marketing-campaign-deliveries.md#create-email-video)voor meer informatie over het maken van campagnes.
 
 ## Configuratie van de beschikbare modules {#configuration-of-the-available-modules}
 
