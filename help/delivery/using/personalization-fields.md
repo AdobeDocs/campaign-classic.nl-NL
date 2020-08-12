@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '873'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,9 @@ De gebieden van de aanpassing worden gebruikt voor verpersoonlijking op het eers
 
 In het verpersoonlijkingsveld met de syntaxis **&lt;%= receiving.LastName %>** geeft Adobe Campaign bijvoorbeeld de opdracht de naam van de ontvanger in te voegen in de database (tabel met ontvangers).
 
->[!NOTE]
+![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](#personalization-fields-video)
+
+>[!CAUTION]
 >
 >Inhoud van aanpassingsvelden mag niet langer zijn dan 1024 tekens.
 
@@ -124,7 +126,7 @@ De standaardwaarde is 5 seconden.
 
 Als u deze optie instelt op 0, is er geen tijdslimiet voor de verpersoonlijkingsfase.
 
-## E-mails personaliseren met personalisatievelden
+## E-mails personaliseren met personalisatievelden {#personalization-field-video}
 
 Leer hoe u een verpersoonlijkingsveld toevoegt aan de onderwerpregel en de inhoud van een e-maillevering.
 
