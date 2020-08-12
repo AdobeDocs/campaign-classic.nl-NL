@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 32076ea0a817d8649d1db9e39628221e15ede37e
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1578'
 ht-degree: 0%
 
 ---
@@ -174,6 +174,9 @@ U kunt de grootte van de doelpopulatie verminderen. Hiervoor geeft u het aantal 
 
 De proef is een speciaal bericht dat u een levering laat testen alvorens het naar het belangrijkste doel te verzenden. Ontvangers van het bewijs zijn verantwoordelijk voor het goedkeuren van zowel de vorm als de inhoud van het bericht.
 
+![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](#seeds-and-proofs-video)
+
+
 Voer de onderstaande stappen uit om het doel van de proefdrukken te selecteren:
 
 1. Klik op de **[!UICONTROL To]** koppeling.
@@ -230,7 +233,7 @@ U kunt de proefdrukken als doel **[!UICONTROL Seed addresses]** gebruiken: met d
 
 U kunt de definitie van een specifiek proefdrukdoel en het gebruik van zaadadressen combineren gebruikend de **[!UICONTROL Specific target and Seed addresses]** optie. De gerelateerde configuraties worden vervolgens in twee aparte subtabbladen gedefinieerd.
 
-## Zaden en proefdrukken in een e-mail beheren
+## Zaden en proefdrukken in een e-mail beheren {#seeds-and-proofs-video}
 
 In deze video leert u hoe u zaden en proefdrukken aan een bestaande e-mail kunt toevoegen en hoe u deze kunt verzenden.
 
