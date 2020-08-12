@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 32076ea0a817d8649d1db9e39628221e15ede37e
 workflow-type: tm+mt
 source-wordcount: '1573'
 ht-degree: 0%
@@ -235,6 +235,7 @@ U kunt de definitie van een specifiek proefdrukdoel en het gebruik van zaadadres
 In deze video leert u hoe u zaden en proefdrukken aan een bestaande e-mail kunt toevoegen en hoe u deze kunt verzenden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
+
 Zie ook:
 * [Het proefdrukdoel selecteren](#selecting-the-proof-target)
 
