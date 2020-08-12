@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 24d2dded38ddb922891a7264d9efea02cb448323
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
 source-wordcount: '7069'
 ht-degree: 13%
@@ -38,7 +38,7 @@ Hoe kan ik-video&#39;s zijn nu beschikbaar over de volgende onderwerpen:
 
 * [Hoe stelt u vermoeidheidsbeheer in met behulp van typologische regels en vooraf gedefinieerde filters](../../campaign/using/about-campaign-typologies.md)
 
-* [Een e-mail maken in een campagne](../../campaign/using/designing-marketing-campaigns.md)
+* [Een e-mail maken in een campagne](../../campaign/using/marketing-campaign-deliveries.md)
 
 * [Een meertalige nieuwsbrief met voorwaardelijke inhoud maken](../../delivery/using/conditional-content.md)
 
