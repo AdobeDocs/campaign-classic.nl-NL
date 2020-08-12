@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,15 @@ ht-degree: 0%
 
 De blokken van de verpersoonlijking zijn dynamisch, gepersonaliseerd en bevatten een specifiek teruggeven dat u in uw leveringen kunt opnemen. U kunt bijvoorbeeld een logo, een begroetingsbericht of een koppeling naar een spiegelpagina toevoegen. Zie [Aanmaakblokken](#inserting-personalization-blocks)invoegen.
 
->[!NOTE]
->
->De blokken van de verpersoonlijking zijn ook beschikbaar bij **[!UICONTROL Digital Content Editor (DCE)]** . For more on this, refer to [this page](../../web/using/editing-content.md#inserting-a-personalization-block).
+![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](#personalization-blocks-video)
 
 Personalisatieblokken zijn toegankelijk via het **[!UICONTROL Resources > Campaign Management > Personalization blocks]** knooppunt van de Adobe Campaign Explorer. Verscheidene blokken zijn beschikbaar door gebrek (zie uit- [van-de-doos verpersoonlijkingsblokken](#out-of-the-box-personalization-blocks)).
 
 U hebt de mogelijkheid om nieuwe blokken te definiëren waarmee u uw leveringen kunt optimaliseren. Voor meer op dit, verwijs naar het [bepalen van de blokken](#defining-custom-personalization-blocks)van de douaneverpersoonlijking.
+
+>[!NOTE]
+>
+>De blokken van de verpersoonlijking zijn ook beschikbaar bij **[!UICONTROL Digital Content Editor (DCE)]** . For more on this, refer to [this page](../../web/using/editing-content.md#inserting-a-personalization-block).
 
 ## Aanmaakblokken invoegen {#inserting-personalization-blocks}
 
@@ -160,7 +162,7 @@ Ga naar de verkenner en voer de volgende stappen uit om een verpersoonlijkingsbl
 
    * Voer de inhoud in (in HTML, tekst, JavaScript, enz.) van het (de) verpersoonlijkingsblok(ken) en klik **[!UICONTROL Save]**.
 
-## E-mails personaliseren met gebruik van dynamische inhoudsblokken
+## E-mails personaliseren met gebruik van dynamische inhoudsblokken {#personalization-blocks-video}
 
 Leer hoe u dynamische inhoudsblokken hebt gemaakt en hoe u deze kunt gebruiken om de inhoud van uw e-maillevering aan te passen.
 
