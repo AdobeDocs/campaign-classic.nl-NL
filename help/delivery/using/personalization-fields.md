@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 3%
@@ -126,7 +126,7 @@ De standaardwaarde is 5 seconden.
 
 Als u deze optie instelt op 0, is er geen tijdslimiet voor de verpersoonlijkingsfase.
 
-## E-mails personaliseren met personalisatievelden {#personalization-field-video}
+## E-mails personaliseren met personalisatievelden {#personalization-fields-video}
 
 Leer hoe u een verpersoonlijkingsveld toevoegt aan de onderwerpregel en de inhoud van een e-maillevering.
 
