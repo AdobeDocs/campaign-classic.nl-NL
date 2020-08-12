@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '2928'
+source-wordcount: '2956'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,8 @@ ht-degree: 0%
 # Aflevering van marketingcampagnes {#marketing-campaign-deliveries}
 
 Leveringen kunnen worden gemaakt via het campagnedashboard, een campagneworkflow of rechtstreeks via het overzicht van leveringen.
+
+![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](#create-email-video)
 
 ## Leveringen maken {#creating-deliveries}
 
@@ -78,6 +80,13 @@ De handleiding [Automating with workflows](../../workflow/using/architecture.md)
 >[!IMPORTANT]
 >
 >In dezelfde campagne kunt u niet meer dan 28 workflows instellen. Buiten deze limiet zijn extra workflows niet zichtbaar in de interface en kunnen fouten genereren.
+
+### Een e-mail maken in een campagne {#create-email-video}
+
+In deze video wordt uitgelegd hoe u een campagne en een e-mail kunt maken in Adobe Campaign Classic.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+
 
 #### Creating a targeting workflow {#creating-a-targeting-workflow}
 
