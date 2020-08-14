@@ -1,7 +1,7 @@
 ---
-title: Veelgestelde vragen over berichtenontwerp
+title: Veelgestelde vragen over het ontwerpen van berichten
 seo-title: Algemene vragen bij het ontwerpen van berichten
-description: Campaign Classic Veelgestelde vragen
+description: Veelgestelde vragen over Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -17,56 +17,56 @@ translation-type: tm+mt
 source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
 source-wordcount: '346'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Veelgestelde vragen over berichtenontwerp {#design-messages-faq}
+# Veelgestelde vragen over het ontwerpen van berichten {#design-messages-faq}
 
-Belangrijke stappen voor het ontwerpen van lokale berichten met Adobe Campaign ontdekken.
+Ontdek de belangrijkste stappen voor het ontwerpen van berichten voor meerdere kanalen met Adobe Campaign.
 
-## Zijn er specifieke richtlijnen bij het ontwerpen van e-mails met campagne? {#are-there-specific-guidelines-when-designing-emails-with-campaign-}
+## Zijn er specifieke richtlijnen bij het ontwerpen van e-mails met Campaign? {#are-there-specific-guidelines-when-designing-emails-with-campaign-}
 
-Voordat u begint met het ontwerpen van e-mails, leert u de concepten en beste praktijken die betrekking hebben op het ontwerpen en verzenden van de levering met Adobe Campaign.
+Leer voordat u begint met het ontwerpen van e-mails de concepten en best practices met betrekking tot het ontwerpen en verzenden van leveringen met Adobe Campaign.
 
-[Klik hier voor meer](../../delivery/using/delivery-best-practices.md)informatie.
+[Klik hier voor meer informatie](../../delivery/using/delivery-best-practices.md).
 
 ## Wat is een leveringssjabloon? {#what-is-a-delivery-template-}
 
-De configuratie van de levering en de parameters kunnen in een leveringsmalplaatje worden bewaard om opnieuw te worden gebruikt.
+De configuratie en parameters van de levering kunnen in een leveringssjabloon worden bewaard om opnieuw te worden gebruikt.
 
-[Klik hier voor meer](../../delivery/using/about-templates.md)informatie.
+[Klik hier voor meer informatie](../../delivery/using/about-templates.md).
 
-## Kan ik eenvoudig een bestaande HTML importeren om een e-mail te maken in Campagne? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
+## Kan ik eenvoudig een bestaande HTML importeren om een e-mail te maken in Campaign? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
 
 Ontdek hoe u met één klik een bestaande HTML importeert om een e-mailbericht te maken en te verzenden in Adobe Campaign.
 
-[Klik hier voor meer](../../delivery/using/defining-the-email-content.md#message-content)informatie.
+[Klik hier voor meer informatie](../../delivery/using/defining-the-email-content.md#message-content).
 
-## Hoe maakt u een e-mailinhoud met Campagne DCE? {#how-to-use-campaign-dce-to-create-an-email-content-}
+## Hoe maakt u e-mailcontent met Campaign DCE? {#how-to-use-campaign-dce-to-create-an-email-content-}
 
-[Een e-mail ontwerpen met de editor](../../web/using/use-case--creating-an-email-delivery.md)voor digitale inhoud voor campagne: Leer hoe u campagne-DCE kunt gebruiken om een e-mail te ontwerpen aan de hand van een voorbeeld.
+[Ontwerp een e-mail met de digitale content-editor van Campaign](../../web/using/use-case--creating-an-email-delivery.md): ontdek hoe u Campaign DCE kunt gebruiken om een e-mail te ontwerpen aan de hand van een voorbeeld.
 
-## Hoe kan ik een nieuwsbrief op abonnementsbasis in Campaign creëren? {#how-can-i-create-a-subscription-based-newsletter-in-campaign-}
+## Hoe kan ik een nieuwsbrief op lidmaatschapsbasis maken in Campaign? {#how-can-i-create-a-subscription-based-newsletter-in-campaign-}
 
-[Een nieuwsbrief](../../delivery/using/managing-subscriptions.md)maken: belangrijke stappen om een nieuwsbrief te creëren en abonnementen te beheren.
+[Maak een nieuwsbrief](../../delivery/using/managing-subscriptions.md): ontdek de belangrijkste stappen om een nieuwsbrief te maken en lidmaatschappen te beheren.
 
 ## Hoe kan ik berichten personaliseren? {#how-can-i-personalize-messages-}
 
-Berichten die door Adobe Campaign worden geleverd, kunnen op verschillende manieren worden gepersonaliseerd, met betrekking tot de inhoud of de weergave van berichten. Deze methoden kunnen worden gecombineerd aan de hand van criteria die met name uit de profielen van de begunstigden zijn afgeleid. In het algemeen kunt u met Adobe Campaign:
+Berichten die door Adobe Campaign worden geleverd, kunnen op verschillende manieren worden gepersonaliseerd, met betrekking tot de content of de weergave van berichten. Deze methoden kunnen worden gecombineerd aan de hand van criteria die met name uit de profielen van de ontvangers zijn afgeleid. In het algemeen kunt u met Adobe Campaign:
 
-* Pas het berichtformaat aan. [Klik hier voor meer](../../delivery/using/defining-the-email-content.md#message-content)informatie.
-* Voeg dynamische verpersoonlijkingsgebieden in. [Klik hier voor meer](../../delivery/using/personalization-fields.md)informatie.
-* Voeg vooraf gedefinieerde aanpassingsblokken in of maak uw eigen blok. [Klik hier voor meer](../../delivery/using/personalization-blocks.md)informatie.
-* Voorwaardelijke inhoud maken. [Klik hier voor meer](../../delivery/using/conditional-content.md) informatie en lees [deze sectie](../../delivery/using/conditional-content.md).
+* Het berichtformaat aanpassen. [Klik hier voor meer informatie](../../delivery/using/defining-the-email-content.md#message-content).
+* Dynamische personalisatievelden invoegen. [Klik hier voor meer informatie](../../delivery/using/personalization-fields.md).
+* Vooraf gedefinieerde personalisatieblokken invoegen of uw eigen blok maken. [Klik hier voor meer informatie](../../delivery/using/personalization-blocks.md).
+* Voorwaardelijke content maken. [Klik hier voor meer informatie](../../delivery/using/conditional-content.md) en lees [deze sectie](../../delivery/using/conditional-content.md).
 
 ## Kan ik meertalige berichten versturen? {#can-i-send-multilingual-messages-}
 
-U kunt meertalige berichten naar uw ontvangers verzenden, afhankelijk van hun voorkeuren of bijvoorbeeld hun land.
+U kunt meertalige berichten naar uw ontvangers verzenden, bijvoorbeeld afhankelijk van hun voorkeuren of land.
 
-Hiervoor lokaliseert u de inhoud van het bericht en past u de inhoud aan, afhankelijk van het profiel van de ontvanger, met behulp van [voorwaarden](../../delivery/using/conditional-content.md). U kunt ook [workflows](../../workflow/using/split.md) gebruiken om de versie van het te verzenden bericht te selecteren, afhankelijk van een test op de voorkeurstaal.
+Hiervoor lokaliseert u de content van het bericht en personaliseert u de content afhankelijk van het profiel van de ontvanger, met behulp van [voorwaarden](../../delivery/using/conditional-content.md). U kunt ook [workflows](../../workflow/using/split.md) gebruiken om de versie van het te verzenden bericht te selecteren, afhankelijk van een test voor de voorkeurstaal.
 
 ## Hoe kan ik een webformulier lokaliseren? {#how-can-i-localize-a-webform-}
 
-U kunt een webtoepassing lokaliseren in verschillende talen. Het vertaalmechanisme wordt in [deze sectie](../../web/using/translating-a-web-form.md)weergegeven.
+U kunt een webapplicatie lokaliseren in verschillende talen. Het vertaalmechanisme wordt in [deze sectie](../../web/using/translating-a-web-form.md) beschreven.
