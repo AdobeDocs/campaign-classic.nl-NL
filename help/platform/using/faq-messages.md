@@ -1,7 +1,7 @@
 ---
-title: Veelgestelde vragen testen en verzenden
-seo-title: Berichten valideren, verzenden en volgen
-description: Klassieke veelgestelde vragen over campagne
+title: Veelgestelde vragen over testen en verzenden
+seo-title: Berichten valideren, verzenden en opvolgen
+description: Veelgestelde vragen over Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -13,103 +13,106 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
+workflow-type: ht
+source-wordcount: '755'
+ht-degree: 100%
 
 ---
 
 
-# Berichten valideren, verzenden en volgen {#validate-send-track}
+# Berichten valideren, verzenden en opvolgen {#validate-send-track}
 
 ## Testen en valideren {#test-and-validate-before-sending}
 
-Leer hoe u test- en validatiestappen uitvoert voordat u berichten verzendt in Adobe Campaign.
+Ontdek hoe u test- en validatiestappen uitvoert voordat u berichten verzendt in Adobe Campaign.
 
-### Wat is de leveringanalyse? {#what-is-the-delivery-analysis-}
+### Wat is de leveringsanalyse? {#what-is-the-delivery-analysis-}
 
-De leveringsanalyse is de fase waarin de doelpopulatie wordt berekend en de leveringsinhoud wordt voorbereid. Zodra het volledig is, is de levering klaar om te verzenden. Raadpleeg de logboeken om te controleren of alles correct is.
+De leveringsanalyse is de fase waarin de doelpopulatie wordt berekend en de leveringscontent wordt voorbereid. Zodra deze is voltooid, is de levering klaar om te verzenden. Raadpleeg de logboeken om te controleren of alles correct is.
 
-[Klik hier voor meer](../../delivery/using/steps-validating-the-delivery.md)informatie.
+[Klik hier voor meer informatie](../../delivery/using/steps-validating-the-delivery.md).
 
-### Waarom zou ik proefdrukken maken? {#why-should-i-create-proofs-}
+### Waarom moet ik proeven maken? {#why-should-i-create-proofs-}
 
-Adobe raadt u ten zeerste aan proefdrukberichten te maken om uw levering op een goedkeuringsgroep te testen voordat u deze naar het hoofddoel verzendt. U kunt dan berichtinhoud, verpersoonlijking en leveringsparameters bevestigen.
+Adobe raadt u ten zeerste aan proefberichten te maken om uw levering op een goedkeuringsgroep te testen voordat u deze naar het hoofddoel verzendt. U kunt dan parameters voor berichtcontent, personalisatie en levering bevestigen.
 
-[Klik hier voor meer](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)informatie. U kunt ook [deze video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/managing-seed-and-proofs.html)bekijken.
+[Klik hier voor meer informatie](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof). U kunt ook [deze video](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/managing-seed-and-proofs.html) bekijken.
 
-### Hoe te om zaadadressen in de Campagne van Adobe te gebruiken? {#how-to-use-seed-addresses-in-adobe-campaign-}
+### Hoe kunt u seed-adressen in Adobe Campaign gebruiken? {#how-to-use-seed-addresses-in-adobe-campaign-}
 
-De zaadadressen worden gebruikt aan doelontvangers die niet de bepaalde doelcriteria aanpassen. Deze ontvangers worden toegevoegd aan het doel: ze kunnen rechtstreeks in de levering of de campagne worden geïmporteerd of gemaakt. Voor direct-mailleveringen worden deze tijdens de extractie toegevoegd en in het uitvoerdocument gemengd.
+Seed-adressen worden gebruikt om ontvangers die niet aan de gedefinieerde doelcriteria voldoen, doelgericht te benaderen. Deze ontvangers worden aan het doel toegevoegd: ze kunnen rechtstreeks in de levering of de campagne worden geïmporteerd of gemaakt. Voor direct-mailleveringen worden deze tijdens de extractie toegevoegd en in het uitvoerdocument gemengd.
 
 Dit heeft de volgende voordelen:
 
-* Willekeurige vervanging van velden door gegevens uit ontvangende profielen: hiermee kunt u alleen het e-mailadres invoeren, bijvoorbeeld in de sectie zaadadres.
-* Wanneer een werkstroom met functies voor gegevensbeheer wordt gebruikt, kunnen de extra gegevens die in leveringen worden verwerkt op zaadniveau worden ingevoerd om waarden af te dwingen: dit negeert de vervanging van willekeurige waarden .
+* Willekeurige vervanging van velden door data uit profielen van ontvangers: hiermee kunt u alleen het e-mailadres invoeren, bijvoorbeeld in de sectie voor het seed-adres.
+* Wanneer een workflow met functies voor data management wordt gebruikt, kunnen de extra data die in leveringen worden verwerkt, op het niveau van het seed-adres worden ingevoerd om waarden af te dwingen: dit omzeilt de vervanging van willekeurige waarden.
 
-[Klik hier voor meer informatie over zaadadressen](../../delivery/using/about-seed-addresses.md).
+[Klik hier voor meer informatie over seed-adressen](../../delivery/using/about-seed-addresses.md).
 
-### Hoe kan ik opstelling een goedkeuringsproces alvorens berichten te verzenden? {#how-can-i-set-up-an-approval-process-before-sending-messages-}
+### Hoe kan ik een goedkeuringsproces instellen alvorens berichten te verzenden? {#how-can-i-set-up-an-approval-process-before-sending-messages-}
 
-Adobe raadt u ten zeerste aan een validatiecyclus voor levering in te stellen om mogelijke fouten in de berichtconfiguratie op te sporen. Zorg ervoor dat de inhoud zo vaak als nodig wordt goedgekeurd door proefdrukken naar testontvangers te verzenden. Telkens wanneer een wijziging wordt aangebracht, moet voor de goedkeuring van de inhoud een bewijs worden verzonden.
+Adobe raadt u ten zeerste aan een cyclus voor leveringsvalidatie in te stellen om mogelijke fouten in de berichtconfiguratie op te sporen. Zorg ervoor dat de content zo vaak als nodig wordt goedgekeurd door proeven naar testontvangers te verzenden. Telkens wanneer een wijziging wordt aangebracht, moet voor de goedkeuring van de content een proef worden verzonden.
 
-[Klik hier voor meer](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)informatie.
+[Klik hier voor meer informatie](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 ### Wat is een typologieregel? {#what-is-a-typology-rule-}
 
-Om conflicten tussen campagnes te vermijden, kan de Campagne van Adobe diverse combinaties testen door specifieke beperkingsregels toe te passen. Dit garandeert dat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid van het bedrijfs communicatie.
+Om conflicten tussen campagnes te vermijden kan Adobe Campaign diverse combinaties testen door specifieke beperkingsregels toe te passen. Dit garandeert dat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid inzake bedrijfscommunicatie.
 
-[Klik hier voor meer](../../campaign/using/about-campaign-typologies.md)informatie.
+[Klik hier voor meer informatie](../../campaign/using/about-campaign-typologies.md).
 
 ## Uw berichten verzenden {#send-your-messages}
 
-Leer hoe u berichten op verschillende kanalen kunt verzenden met Adobe Campaign.
+Ontdek hoe u berichten in verschillende kanalen kunt verzenden met Adobe Campaign.
 
 ### Hoe kan ik e-mails sturen in golven? {#how-can-i-send-emails-in-waves-}
 
-Alvorens een levering naar een grote bevolking te verzenden, kunt u golven [](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves) vormen om berichten in verscheidene partijen te verdelen en de lading in evenwicht te brengen.
+Alvorens een levering naar een grote populatie te verzenden, kunt u [golven configureren](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves) om berichten in verscheidene batches te verdelen en de lading te spreiden.
 
-### Welke zijn de belangrijkste stappen om een e-mail in Campagne tot stand te brengen? {#which-are-the-key-steps-to-create-an-email-in-campaign-}
+### Welke zijn de belangrijkste stappen om een e-mail in Campaign te maken? {#which-are-the-key-steps-to-create-an-email-in-campaign-}
 
-Nadat de e-maillevering is gemaakt en gevalideerd, kunt u deze verzenden. U kunt besluiten de e-mail naar het hoofddoel onmiddellijk te verzenden of een levering voor een latere datum te plannen. Indien nodig kunt u daarvoor ook de doelpopulatie inschatten.
+Nadat de e-maillevering is gemaakt en gevalideerd, kunt u deze verzenden. U kunt besluiten de e-mail onmiddellijk naar het hoofddoel te verzenden of een levering voor een latere datum te plannen. Indien nodig kunt u vooraf ook de doelpopulatie inschatten.
 
-[Klik hier voor meer](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)informatie.
+[Klik hier voor meer informatie](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-### Hoe een levering te plannen? {#how-to-schedule-a-delivery-}
+### Hoe moet ik een levering plannen? {#how-to-schedule-a-delivery-}
 
-U kunt de levering van berichten uitstellen om de levering te plannen of om verkoopdruk te beheren en te voorkomen dat een populatie te groot wordt.
+U kunt de levering van berichten uitstellen om de levering te plannen of om de salesdruk te beheren en te voorkomen dat een populatie overbevraagd wordt.
 
-[Klik hier voor meer](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending)informatie.
+[Klik hier voor meer informatie](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending).
 
 ### Kan ik een bijlage toevoegen aan e-mails? {#can-i-add-an-attachment-to-emails-}
 
-Met Campagne Classic kunt u persoonlijke bijlagen toevoegen aan uw e-mails.
+Met Campaign Classic kunt u gepersonaliseerde bijlagen toevoegen aan uw e-mails.
 
 [Klik hier voor meer informatie over e-mailbijlagen](../../delivery/using/attaching-files.md).
 
-## Houd je berichten bij en meet de impact ervan {#track-your-messages-and-measure-their-impact}
+## Uw berichten bijhouden en de impact ervan meten {#track-your-messages-and-measure-their-impact}
 
-Nadat u uw berichten hebt verzonden, leert u hoe u de effecten van deze berichten kunt bijhouden en meten met Adobe Campagne.
+Nadat u berichten hebt verzonden, kunt u leren hoe u met Adobe Campaign de berichten kunt opvolgen en de impact ervan meten.
 
 ### Hoe kan ik bijgehouden koppelingen in een e-maillevering configureren? {#how-can-i-configure-tracked-links-in-an-email-delivery-}
 
-Voor elke levering, kunt u de ontvangst van berichten en de activering van de verbindingen volgen die in de berichtinhoud worden opgenomen. Hierdoor kunt u het gedrag van ontvangers volgen na de leveringsacties waarop ze waren gericht.
+Voor elke levering kunt u de ontvangst van berichten en de activering van de koppelingen die in de berichtcontent zijn opgenomen, opvolgen. Hierdoor kunt u het gedrag van ontvangers volgen na de leveringsacties waarvoor ze als doel zijn opgegeven.
 
-Voor elke URL van het bericht kunt u kiezen of u het bijhouden van wijzigingen wilt activeren, het koppelingslabel wilt wijzigen, koppelingen voor rapportagedoeleinden op categorieën wilt groeperen.
+Voor elke URL van het bericht kunt u kiezen of u bijvoorbeeld het bijhouden wilt activeren, het koppelingslabel wilt wijzigen of koppelingen voor rapportagedoeleinden op categorieën wilt groeperen.
 
-[Klik hier voor meer](../../delivery/using/about-message-tracking.md) informatie over het bijhouden van uw berichten in Campaign Classic.
+[Klik hier voor meer informatie](../../delivery/using/about-message-tracking.md) over het opvolgen van berichten in Campaign Classic.
 
-### Waar heb ik toegang tot bezorgings- en trackinglogboeken? {#where-can-i-access-delivery-and-tracking-logs-}
+### Waar heb ik toegang tot leverings- en trackinglogboeken? {#where-can-i-access-delivery-and-tracking-logs-}
 
-Leer hoe u uw leveringen kunt bijhouden en het gedrag van de ontvangers [op deze pagina](../../delivery/using/monitoring-a-delivery.md)kunt begrijpen.
+Ontdek hoe u uw leveringen kunt bijhouden en het gedrag van de ontvangers kunt begrijpen [op deze pagina](../../delivery/using/monitoring-a-delivery.md).
 
 ### Waar kan ik leveringsrapporten krijgen? {#where-can-i-get-delivery-reports-}
 
-Adobe Campagne wordt geleverd met een reeks rapporten om uw leveringen te controleren en uw berichten te volgen.
+Adobe Campaign wordt geleverd met een set rapporten om uw leveringen te controleren en uw berichten op te volgen.
 
 [Klik hier voor meer informatie over ingebouwde rapporten](../../reporting/using/delivery-reports.md).
 
-### Hoe kwalificeert en beheert de Campagne van Adobe quarantaineadressen? {#how-does-adobe-campaign-qualify-and-manage-quarantine-addresses-}
+### Hoe kwalificeert en beheert Adobe Campaign quarantaineadressen? {#how-does-adobe-campaign-qualify-and-manage-quarantine-addresses-}
 
-Adobe Campaign beheert een lijst met in quarantaine geplaatste adressen. Ontvangers van wie adres in quarantaine is geplaatst worden door gebrek tijdens leveringsanalyse uitgesloten, en zullen niet worden gericht. Een e-mailadres kan in quarantaine worden geplaatst, bijvoorbeeld, wanneer de brievenbus volledig is of als het adres niet bestaat.
+Adobe Campaign beheert een lijst met in quarantaine geplaatste adressen. Ontvangers van wie het adres in quarantaine is geplaatst, worden standaard tijdens de leveringsanalyse uitgesloten, en zullen niet doelgericht worden benaderd. Een e-mailadres kan in quarantaine worden geplaatst, bijvoorbeeld, wanneer het postvak vol is of als het adres niet bestaat.
 
 [Klik hier voor meer informatie over quarantainebeheer](../../delivery/using/understanding-quarantine-management.md).
