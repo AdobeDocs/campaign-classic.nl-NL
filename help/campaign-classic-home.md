@@ -7,7 +7,7 @@ topic: Premium
 translation-type: tm+mt
 source-git-commit: ad0f9bdd2571a8780da464dc3ac8feb7b5aed998
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,19 +19,22 @@ ht-degree: 0%
 
 ## Nieuwe functies
 
-* **[Emoticons](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>U kunt nu emoticons invoegen in berichten en onderwerpregel
+* **[Emoticons](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>U kunt nu emoticons invoegen in berichten en onderwerpregels
 
-* **[Krijg de Veelgestelde vragen van de Toegang van de Steun](https://helpx.adobe.com/campaign/kb/ac-support.html)**<br/>, beste praktijken, hulpmiddelen, en verzoek om hulp
+* **[Ondersteuning krijgen](https://helpx.adobe.com/nl/campaign/kb/ac-support.html)**<br/>
+Krijg toegang tot veelgestelde vragen, best practices en Help-resources en vraag hulp
 
-* **[Privacy Compliance](https://helpx.adobe.com/campaign/kb/campaign-privacy.html)**<br/> leren hoe Adobe Campaign u kan helpen bij het naleven van uw privacy
+* **[Naleving van privacyvereisten](https://helpx.adobe.com/nl/campaign/kb/campaign-privacy.html)**<br/>
+Ontdek hoe Adobe Campaign u kan helpen aan privacyvereisten te voldoen
 
-* **[Traceermogelijkheden](https://helpx.adobe.com/campaign/kb/acc-tracking.html)**<br/> Begrijpen de mogelijkheden en processen voor bijhouden in campagnes
+* **[Trackingmogelijkheden](https://helpx.adobe.com/nl/campaign/kb/acc-tracking.html)**<br/>
+Begrijp de mogelijkheden en processen voor tracking in Campaign
 
-* **[Interactieve inhoud met AMP](delivery/using/defining-interactive-content.md)**<br/>Leer hoe u dynamische e-mails kunt verzenden met de nieuwe AMP-indeling
+* **[Interactieve content met AMP](delivery/using/defining-interactive-content.md)**<br/>Ontdek hoe u dynamische e-mails kunt verzenden met de nieuwe AMP-indeling
 
 [Klik hier voor meer updates](/help/rn/using/documentation-updates.md)
 
-## Bovenste pagina&#39;s
+## Bovenste pagina’s
 
 <table>
 <tr>
@@ -45,20 +48,20 @@ ht-degree: 0%
     </a>
     </div>
     <p>
-    <em>Antwoorden op veelgestelde vragen zoeken bij gebruik van Campaign Classic</em>
+    <em>Vind antwoorden op veelgestelde vragen bij het gebruik van Campaign Classic</em>
     <p>
   </td>
    <td>
-    <a href="https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html">
-      <img alt="Upgrade maken" src="platform/using/assets/upgrade.png" />
+    <a href="https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html">
+      <img alt="Buildupgrade" src="platform/using/assets/upgrade.png" />
     </a>
     <div>
-      <a href="https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html">
+      <a href="https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html">
     <strong>Upgrade naar de nieuwste build</strong>
     </a>
     </div>
     <p>
-    <em>Leer zeer belangrijke stappen en beste praktijken om een bouwstijlverbetering uit te voeren</em>
+    <em>Ontdek de belangrijkste stappen en best practices om een buildupgrade uit te voeren</em>
     <p>
   </td>
   <td>
@@ -71,20 +74,20 @@ ht-degree: 0%
     </a>
     </div>
     <p>
-    <em>Gespecialiseerde pushmeldingen ontwerpen en verzenden op mobiele apparaten</em>
+    <em>Ontwerp en verzend gepersonaliseerde pushmeldingen op mobiele apparaten</em>
     <p>
   </td>
 </tr>
 </table>
 
-## Aanvullende bronnen
+## Aanvullende resources
 
-| Nuttige pagina&#39;s | Bronnen voor ontwikkelaars |
+| Nuttige pagina’s | Resources voor ontwikkelaars |
 |---|---|
-| [Opmerkingen bij de release](/help/rn/using/latest-release.md) | [Lijst met foutberichten](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
-| [Hoe kan ik-video&#39;s](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [Campagne gegevensmodel](configuration/using/about-data-model.md) |
-| [Compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) | [Campagne JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
-| [Aan de slag met campagne](platform/using/about-adobe-campaign-classic.md) | [Implementatiehandleiding](https://helpx.adobe.com/campaign/kb/acc-implementation.html) |
-| [Gold Standard-upgrade](https://helpx.adobe.com/campaign/kb/gold-standard.html) | [Handleiding voor bijhouden](https://helpx.adobe.com/campaign/kb/acc-tracking.html) |
-| [Verouderde functies](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) | [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/campaign/kb/acc-security.html) |
-| [Campagne](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html) | [Monitoringrichtsnoeren](production/using/monitoring-guidelines.md) |
+| [Release-opmerkingen](/help/rn/using/latest-release.md) | [Lijst met foutberichten](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
+| [Instructievideo’s](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/overview.html) | [Campaign-datamodel](configuration/using/about-data-model.md) |
+| [Compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html) | [Campaign-JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
+| [Aan de slag met Campaign](platform/using/about-adobe-campaign-classic.md) | [Implementatiehandleiding](https://helpx.adobe.com/nl/campaign/kb/acc-implementation.html) |
+| [Gold Standard-upgrade](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html) | [Handleiding voor tracking](https://helpx.adobe.com/nl/campaign/kb/acc-tracking.html) |
+| [Verouderde functies](https://helpx.adobe.com/nl/campaign/kb/deprecated-and-removed-features.html) | [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html) |
+| [Campaign-configuratiescherm](https://docs.adobe.com/content/help/nl-NL/control-panel/using/control-panel-home.html) | [Monitoringrichtsnoeren](production/using/monitoring-guidelines.md) |
