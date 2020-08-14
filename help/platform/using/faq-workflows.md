@@ -1,7 +1,7 @@
 ---
 title: Veelgestelde vragen over workflows
-seo-title: Automatiseer processen en beheer gegevens met workflows
-description: Klassieke veelgestelde vragen over campagne
+seo-title: Processen automatiseren en data beheren met workflows
+description: Veelgestelde vragen over Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -13,61 +13,61 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '373'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
 # Veelgestelde vragen over workflows {#workflows-faq}
 
-Leer hoe u processen en taken kunt ordenen met Adobe Campagne-workflows.
+Ontdek hoe u processen en taken kunt organiseren met Adobe Campaign-workflows.
 
 ## Wat zijn de belangrijkste stappen om een workflow te maken? {#what-are-the-key-steps-to-create-a-workflow-}
 
-[Klik hier voor meer informatie over het maken van uw eerste workflow](../../workflow/using/building-a-workflow.md): leer concepten en beste praktijken om werkschema&#39;s in Campagne te bouwen.
+[Klik hier voor meer informatie over het maken van uw eerste workflow](../../workflow/using/building-a-workflow.md): leer concepten en best practices om workflows in Campaign te bouwen.
 
-## Hoe kan ik gegevens importeren in Campagne? {#how-can-i-import-data-in-campaign-}
+## Hoe kan ik data importeren in Campaign? {#how-can-i-import-data-in-campaign-}
 
-Leer beste praktijken om gegevens door een werkschema van de Campagne [in deze sectie](../../workflow/using/importing-data.md)te invoeren.
+Ontdek [in deze sectie](../../workflow/using/importing-data.md) best practices om data te importeren via een Campaign-workflow.
 
 ## Kan ik de uitvoering van de workflow controleren? {#can-i-monitor-workflow-execution-}
 
-Begrijp hoe te om de werkschemauitvoering van de Campagne [in deze pagina](../../workflow/using/starting-a-workflow.md)te controleren.
+Ontdek hoe u de uitvoering van een Campaign-workflow kunt controleren [op deze pagina](../../workflow/using/starting-a-workflow.md).
 
-## Hoe kan ik Campagnegegevens bijwerken met een workflow? {#how-can-i-update-campaign-data-with-a-workflow-}
+## Hoe kan ik Campaign-data bijwerken met een workflow? {#how-can-i-update-campaign-data-with-a-workflow-}
 
-U kunt de gegevens in de database op grote schaal bijwerken, samenvoegen en invoegen.
+U kunt de data in de database op grote schaal bijwerken, samenvoegen en invoegen.
 
-[Klik hier voor meer](../../workflow/using/update-data.md)informatie.
+[Klik hier voor meer informatie](../../workflow/using/update-data.md).
 
-## Hoe kan ik mogelijkheden voor gegevensbeheer benutten? {#how-can-i-leverage-data-management-capabilities-}
+## Hoe kan ik mogelijkheden voor data management benutten? {#how-can-i-leverage-data-management-capabilities-}
 
-In de Campagne van Adobe, kunt u hefboomwerking een reeks activiteiten voor het oplossen van complexe gerichte kwesties door efficiëntere en flexibelere hulpmiddelen aan te bieden. Met gegevensbeheeractiviteiten kunt u een consistent beheer van alle communicatie met een contactpersoon implementeren met behulp van informatie over hun contracten, abonnementen, reactiviteit op leveringen, enz. Met gegevensbeheer kunt u de levenscyclus van gegevens bijhouden tijdens segmentatiebewerkingen, met name:
+In Adobe Campaign kunt u een reeks activiteiten gebruiken om complexe targetingproblemen op te lossen door efficiëntere en flexibelere tools aan te bieden. Met activiteiten voor data management kunt u een consistent beheer van alle communicaties met een contactpersoon implementeren met behulp van informatie over hun contracten, lidmaatschappen, reactiviteit op leveringen, enzovoort. Met data management kunt u de levenscyclus van data bijhouden tijdens segmentatiebewerkingen, met name:
 
-* Het vereenvoudigen en optimaliseren van het richten processen, door gegevens op te nemen die niet in datamart worden gemodelleerd (het creëren van nieuwe lijsten: lokale extensie voor elke doelworkflow (afhankelijk van de configuratie).
-* Het houden van en het overbrengen van bufferberekeningen, vooral tijdens de fasen van de doelbouw of voor gegevensbestandbeleid.
-* Toegang tot externe basen (optioneel): heterogene databases waarmee tijdens het doelproces rekening wordt gehouden.
+* Het vereenvoudigen en optimaliseren van targetingprocessen, door data op te nemen die niet in de datamart worden gemodelleerd (het maken van nieuwe tabellen: lokale extensie voor elke targetingworkflow afhankelijk van de configuratie).
+* Het bijhouden en overbrengen van bufferberekeningen, vooral tijdens fasen voor de opbouw van doelen of voor databasebeheer.
+* Het openen van externe databases (optioneel): heterogene databases waarmee tijdens het targetingproces rekening wordt gehouden.
 
-[Klik hier voor meer](../../workflow/using/targeting-data.md#data-management) informatie en om een complex doel te ontwerpen en aan uw gegevens te werken waarin workflowactiviteiten voor gegevensbeheer worden gecombineerd.
+[Klik hier voor meer informatie](../../workflow/using/targeting-data.md#data-management) en om een complex doel te ontwerpen en aan uw data te werken waarin workflowactiviteiten voor data management worden gecombineerd.
 
-## Kan ik het verzenden van persoonlijke berichten automatiseren? {#can-i-automate-personalized-messages-sending-}
+## Kan ik het verzenden van gepersonaliseerde berichten automatiseren? {#can-i-automate-personalized-messages-sending-}
 
-Lees [dit gebruiksgeval](../../workflow/using/enriching-data.md) om persoonlijke berichten naar mensen te sturen afhankelijk van hun hoogste scores van een wedstrijd.
+Lees [dit gebruiksscenario](../../workflow/using/enriching-data.md) om gepersonaliseerde berichten naar mensen te sturen afhankelijk van hun hoogste scores in een wedstrijd.
 
-## Hoe kan ik een publiek in subsets splitsen met een workflow? {#how-can-i-split-an-audience-in-subsets-with-a-workflow-}
+## Hoe kan ik een doelgroep in subsets splitsen met een workflow? {#how-can-i-split-an-audience-in-subsets-with-a-workflow-}
 
-Leer hoe u een doel kunt splitsen in verschillende subsets [in deze sectie](../../workflow/using/split.md).
+Ontdek [in deze sectie](../../workflow/using/split.md) hoe u een doel kunt splitsen in verschillende subsets.
 
-## Hoe kan ik ontvangergegevens bijwerken uit een extern bestand? {#how-can-i-update-recipient-data-from-an-external-file-}
+## Hoe kan ik ontvangerdata bijwerken vanuit een extern bestand? {#how-can-i-update-recipient-data-from-an-external-file-}
 
-U kunt bepaalde velden in een campagne-tabel wijzigen met waarden uit een extern tekstbestand.
+U kunt bepaalde velden in een Campaign-tabel wijzigen met waarden uit een extern tekstbestand.
 
 [Klik hier voor meer informatie](../../platform/using/importing-data.md#example--enrich-the-values-with-those-of-an-external-file).
 
-## Hoe kan ik nieuwe ontvangers identificeren en richten? {#how-can-i-identify-and-target-new-recipients-}
+## Hoe kan ik nieuwe ontvangers identificeren en doelgericht benaderen? {#how-can-i-identify-and-target-new-recipients-}
 
-[Dit gebruiksgeval](../../workflow/using/using-aggregates.md) zal u leren hoe te om aggregaten te gebruiken om laatste die ontvangers automatisch te identificeren in het gegevensbestand worden toegevoegd en hen een welkome bericht te verzenden.
+In [dit gebruiksscenario](../../workflow/using/using-aggregates.md) ontdekt u hoe u samenvoegingen kunt gebruiken om automatisch de laatste ontvangers die in de database zijn toegevoegd, te identificeren en hen een welkomstbericht te verzenden.
