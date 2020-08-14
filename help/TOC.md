@@ -7,8 +7,8 @@ sub-product: adobe campaign classic
 translation-type: tm+mt
 source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2110'
+ht-degree: 95%
 
 ---
 
