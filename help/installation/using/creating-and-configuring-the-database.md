@@ -15,17 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 653f630079277ffb75915206c445e9414cfcdd7c
+source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 0%
+source-wordcount: '1296'
+ht-degree: 1%
 
 ---
 
 
 # De database maken en configureren{#creating-and-configuring-the-database}
 
-Wanneer u een database maakt, biedt Adobe Campaign twee verschillende opties:
+Als u een database maakt, biedt Adobe Campaign twee verschillende opties:
 
 1. Een database maken of recyclen: Kies deze opties als u een nieuwe database wilt maken of een bestaande database opnieuw wilt gebruiken. Zie [Zaak 1: Een database](#case-1--creating-recycling-a-database)maken/recyclen.
 1. Een bestaande database gebruiken: Kies deze optie als de beheerder al een lege database heeft gemaakt en u deze wilt gebruiken. of om de structuur van een bestaande database uit te breiden. Zie [zaak 2: Een bestaande database](#case-2--using-an-existing-database)gebruiken.
@@ -36,7 +36,7 @@ De configuratiestappen worden hieronder beschreven.
 >
 >Namen van databases, gebruikers en schema&#39;s mogen niet beginnen met een getal of speciale tekens bevatten.
 >
->Alleen de **interne** id kan deze bewerkingen uitvoeren. Raadpleeg de [interne id](../../installation/using/campaign-server-configuration.md#internal-identifier)voor meer informatie hierover.
+>Alleen de **interne** id kan deze bewerkingen uitvoeren. For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
 ## Zaak 1: Een database maken/recyclen {#case-1--creating-recycling-a-database}
 
@@ -57,7 +57,7 @@ Selecteer de database-engine in de vervolgkeuzelijst.
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-Ondersteunde databases worden weergegeven in de matrix [Compatibiliteit van de sectie](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
+Ondersteunde databases worden weergegeven in de matrix [Compatibiliteit van de sectie](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html).
 
 Identificeer de server en kies het type van verrichting om uit te voeren. In this case, **[!UICONTROL Create or recycle a database]**.
 
@@ -69,7 +69,7 @@ Afhankelijk van de geselecteerde database-engine kan de identificatie-informatie
 * Voor een **PostgreSQL** - of **DB2** -engine moet u de DNS-naam (of het IP-adres) opgeven die op de toepassingsserver is gedefinieerd om toegang te krijgen tot de databaseserver.
 * Voor een **Microsoft SQL Server** -engine moet u het volgende definiëren:
 
-   1. de DNS-naam (of het IP-adres) die op de toepassingsserver is gedefinieerd voor toegang tot de databaseserver: **DNS** of **DNS\ `<instance>`**(instantiemodus),
+   1. de DNS-naam (of het IP-adres) die op de toepassingsserver is gedefinieerd voor toegang tot de databaseserver: **DNS** of **DNS\`<instance>`** (instantiemodus),
    1. de authentificatiemethode die wordt gebruikt om tot de Server van Microsoft SQL toegang te hebben: **[!UICONTROL SQL Server authentication]** of **[!UICONTROL Windows NT authentication]**.
 
       ![](assets/s_ncs_install_db_mssql_creation01.png)
@@ -132,7 +132,7 @@ In het **[!UICONTROL Creation steps]** venster kunt u het SQL-script weergeven e
 
 * Voor een Oracle-, Microsoft SQL Server- of PostSQL-database kan de beheerder ook de **opslagparameters** definiëren die moeten worden gebruikt bij het maken van databaseobjecten.
 
-   Deze parameters krijgen de exacte namen van de tabelruimten (waarschuwing: hoofdlettergevoelig). Ze worden respectievelijk opgeslagen in het **[!UICONTROL Administration > Platform > Options]** knooppunt in de volgende opties:
+   Deze parameters krijgen de exacte namen van de tabelruimten (waarschuwing: hoofdlettergevoelig). Ze worden respectievelijk in het **[!UICONTROL Administration > Platform > Options]** knooppunt opgeslagen in de volgende opties (zie [](../../installation/using/configuring-campaign-options.md#database)):
 
    * **WdbcOptions_TableSpaceUser**: gebruikerstabellen die op een schema worden gebaseerd
    * **WdbcOptions_TableSpaceIndex**: index van gebruikerstabellen die op een schema worden gebaseerd
@@ -142,7 +142,7 @@ In het **[!UICONTROL Creation steps]** venster kunt u het SQL-script weergeven e
 * Voor een Oracle-database moet de Adobe Campaign-gebruiker toegang hebben tot de Oracle-bibliotheken, meestal als lid van de **installatiegroep** .
 * Met de **[!UICONTROL Set or change the administrator password]** optie kunt u het wachtwoord invoeren dat is gekoppeld aan de Adobe Campaign-operator met beheerdersrechten.
 
-   We raden u aan om voor beveiligingsdoeleinden een beheerderswachtwoord voor een Adobe Campagne-account te definiëren.
+   We raden u aan om voor beveiligingsdoeleinden een Adobe Campaign-beheerderswachtwoord te definiëren.
 
 ### Stap 6 - De database maken {#step-6---creating-the-database}
 
@@ -154,7 +154,7 @@ Zodra het gegevensbestand wordt gecreeerd, kunt u opnieuw verbinden om instantie
 
 U moet nu de plaatsingstovenaar beginnen om het vormen van de instantie te beëindigen. Raadpleeg de wizard [Implementatie](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
-De verbindingsinstellingen voor de database die aan de instantie is gekoppeld, worden opgeslagen in het bestand **`/conf/config-<instance>.xml`** in de installatiemap van Adobe Campagne.
+De verbindingsinstellingen voor de database die aan de instantie is gekoppeld, worden opgeslagen in het bestand **`/conf/config-<instance>.xml`** in de installatiemap van Adobe Campaign.
 
 Voorbeeld van een configuratie van de Server van Microsoft SQL op base61 gegevensbestand verbonden aan de &quot;campagne&quot;rekening met zijn gecodeerd wachtwoord:
 
@@ -166,7 +166,7 @@ Voorbeeld van een configuratie van de Server van Microsoft SQL op base61 gegeven
 
 Het gegevensbestand, evenals de gebruiker, moet door de gegevensbestandbeheerder en de correct gevormde toegangsrechten zijn gecreeerd.
 
-Voor een Oracle-database zijn de minimaal vereiste rechten bijvoorbeeld: VERLENEN VAN VERBINDING, MIDDELEN EN ONBEPERKTE TABLESPACE.
+Voor een Oracle-database zijn de minimaal vereiste rechten bijvoorbeeld: GRANT CONNECT, RESOURCE en UNLIMITED TABLESPACE.
 
 Om een bestaand gegevensbestand te gebruiken, zijn de configuratiestappen als volgt:
 
@@ -233,7 +233,7 @@ In het **[!UICONTROL Creation steps]** venster kunt u het SQL-script weergeven e
 * Voor een Oracle-database moet de Adobe Campaign-gebruiker toegang hebben tot de Oracle-bibliotheken, meestal als lid van de **installatiegroep** .
 * Met de **[!UICONTROL Set or change the administrator password]** optie kunt u het wachtwoord invoeren dat is gekoppeld aan de Adobe Campaign-operator met beheerdersrechten.
 
-   We raden u aan om voor beveiligingsdoeleinden een beheerderswachtwoord voor een Adobe Campagne-account te definiëren.
+   We raden u aan om voor beveiligingsdoeleinden een Adobe Campaign-beheerderswachtwoord te definiëren.
 
 ### Stap 5 - De database maken {#step-5---creating-the-database}
 
@@ -245,7 +245,7 @@ Wanneer het maken van een database is voltooid, kunt u opnieuw verbinding maken 
 
 U moet nu de plaatsingstovenaar beginnen om het vormen van de instantie te beëindigen. Raadpleeg de wizard [Implementatie](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
-De verbindingsinstellingen voor de database die aan de instantie is gekoppeld, worden opgeslagen in het bestand **`/conf/config-<instance>.xml`** in de installatiemap van Adobe Campagne.
+De verbindingsinstellingen voor de database die aan de instantie is gekoppeld, worden opgeslagen in het bestand **`/conf/config-<instance>.xml`** in de installatiemap van Adobe Campaign.
 
 Voorbeeld van een configuratie van de Server van Microsoft SQL op base61 gegevensbestand verbonden aan de &quot;campagne&quot;rekening met zijn gecodeerd wachtwoord:
 
