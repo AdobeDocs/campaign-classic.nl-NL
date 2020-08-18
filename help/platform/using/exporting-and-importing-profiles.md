@@ -15,20 +15,35 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 00351a7a108f74741fa15546d9bd5cf68699e5c1
+source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 14%
 
 ---
 
 
-# Profielen exporteren en importeren{#exporting-and-importing-profiles}
+# Importing and exporting profiles{#exporting-and-importing-profiles}
 
-Ontvangersprofielen kunnen worden geïmporteerd in de Adobe Campagne-database of worden geëxporteerd en opgeslagen in een bestand dat zich niet in de database bevindt.
+U kunt workflows [gebruiken](#use-workflows) om ontvangersprofielen te importeren of te exporteren naar een Adobe Campaign-database, of om [generieke import- of exporttaken](#create-jobs)in te stellen.
 
-Als u gegevensimport en -export wilt configureren en uitvoeren, gaat u naar het **[!UICONTROL Profiles and targets]** universum en klikt u op de **[!UICONTROL Jobs]** koppeling.
+![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](#import-profiles-video)
+
+## Workflows gebruiken{#use-workflows}
+
+De uitvoer en de invoer worden gevormd in specifieke malplaatjes die door werkschema&#39;s via de **[!UICONTROL Import]** en **[!UICONTROL Export]** activiteiten worden uitgevoerd. Ze kunnen automatisch volgens een schema worden herhaald, bijvoorbeeld om de gegevensuitwisseling tussen verschillende informatiesystemen te automatiseren. [Meer informatie](../../workflow/using/importing-data.md#best-practices-when-importing-data)
+
+Indien nodig kunt u een incidentele import- of exporttaak maken via de **[!UICONTROL Generic imports and exports]** hieronder beschreven functie.
+
+## Taken maken{#create-jobs}
+
+Als u taken voor het importeren en exporteren van gegevens wilt configureren en uitvoeren, gaat u naar het **[!UICONTROL Profiles and targets]** tabblad en klikt u op de **[!UICONTROL Jobs]** koppeling. [Meer informatie](../../platform/using/generic-imports-and-exports.md)
 
 ![](assets/s_ncs_user_interface_import_link.png)
 
->[!NOTE]
->
->Gegevens importeren en exporteren worden weergegeven in [Algemene import en export](../../platform/using/generic-imports-and-exports.md) en in [deze video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html).
 
+## Hoe kan ik profielen importeren{#import-profiles-video}
+
+In deze video wordt uitgelegd hoe u profielen in Adobe Campaign kunt importeren, zodat u deze af en toe kunt importeren.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
