@@ -15,28 +15,31 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
+workflow-type: tm+mt
+source-wordcount: '695'
+ht-degree: 5%
 
 ---
 
 
 # Lijsten maken en beheren{#creating-and-managing-lists}
 
-## Informatie over lijsten in Adobe-campagne {#about-lists-in-adobe-campaign}
+## Over lijsten in Adobe Campaign {#about-lists-in-adobe-campaign}
 
-Een lijst is een statische set profielen die kan worden gebruikt voor leveringsacties of die kan worden bijgewerkt tijdens importbewerkingen of tijdens workflowuitvoering. Bijvoorbeeld, kan een populatie die uit het gegevensbestand via een vraag wordt gehaald een lijst leveren.
+Een lijst is een statische set profielen die kan worden gebruikt voor leveringsacties of die kan worden bijgewerkt tijdens importbewerkingen of tijdens workflowuitvoering. Een populatie die via een query uit de database is geëxtraheerd, kan bijvoorbeeld een lijst leveren.
 
-Leveringen (via e-mail, sms of andere kanalen) die op deze lijsten gericht zijn, kunnen dan worden opgezet in overeenstemming met de beroepsethiek van het op de markt brengen van vergunningen.
+
 
 Lijsten worden gemaakt en beheerd via de **[!UICONTROL Lists]** koppeling op het **[!UICONTROL Profiles and targets]** tabblad.
 
 ![](assets/s_ncs_user_interface_group_link.png)
 
-Er zijn twee soorten lijsten beschikbaar in Adobe Campaign:
+Er zijn twee typen lijsten beschikbaar in Adobe Campaign:
 
 * **[!UICONTROL Group]** type: De **[!UICONTROL Group]** typelijsten behoren tot een **statische** lijst met personen die op basis van specifieke criteria zijn geselecteerd. De lijst is als een momentopname van een reeks profielen. Houd er rekening mee dat dit niet automatisch wordt bijgewerkt als profielen aan de database worden toegevoegd.
 
-   Raadpleeg deze **[!UICONTROL Group]** pagina [voor meer informatie over het maken van een](#creating-a-profile-list-from-a-group)typelijst.
+   For more information on how to create a **[!UICONTROL Group]** type list, refer to this [page](#creating-a-profile-list-from-a-group).
 
 * **[!UICONTROL List]** type: Met **[!UICONTROL List]** typelijsten kunt u workflows gebruiken om lijsten te maken en te beheren. Dit zijn specifieke lijsten die het resultaat zijn van gegevensimporten en die kunnen worden bijgewerkt via de specifieke **[!UICONTROL List update]** workflowactiviteit.
 
@@ -44,15 +47,15 @@ Er zijn twee soorten lijsten beschikbaar in Adobe Campaign:
 
 ## Een profiellijst maken op basis van een groep {#creating-a-profile-list-from-a-group}
 
-**[!UICONTROL Group]** typelijsten die via de **[!UICONTROL Profiles and targets]** koppeling worden gemaakt, moeten zijn gebaseerd op de standaardtabel met Adobe-cameraprofielen (nms:ontvanger).
+**[!UICONTROL Group]** typelijsten die via de **[!UICONTROL Profiles and targets]** koppeling worden gemaakt, moeten zijn gebaseerd op de standaard Adobe Campaign-profieltabel (nms:ontvanger).
 
 >[!NOTE]
 >
->Als u lijsten wilt maken die andere soorten gegevens bevatten, moet u een workflow uitvoeren. Als u bijvoorbeeld een query op de bezoekerslijst gebruikt en de lijst vervolgens bijwerkt, kunt u een bezoekerslijst maken. Raadpleeg [deze sectie](../../workflow/using/about-workflows.md)voor meer informatie over workflows.
+>Als u lijsten wilt maken die andere soorten gegevens bevatten, moet u een workflow uitvoeren. Als u bijvoorbeeld een query op de bezoekerslijst gebruikt en de lijst vervolgens bijwerkt, kunt u een bezoekerslijst maken. For more information on workflows, refer to [this section](../../workflow/using/about-workflows.md).
 
 Voer de volgende stappen uit om een nieuwe **[!UICONTROL Group]** typelijst te maken:
 
-1. Klik op de **[!UICONTROL Create]** knop en selecteer **[!UICONTROL New list]**.
+1. Click the **[!UICONTROL Create]** button and select **[!UICONTROL New list]**.
 
    ![](assets/s_ncs_user_new_group.png)
 
@@ -68,7 +71,7 @@ Voer de volgende stappen uit om een nieuwe **[!UICONTROL Group]** typelijst te m
 
    ![](assets/s_ncs_user_add_group.png)
 
-1. Klik **[!UICONTROL Save]** om de lijst op te slaan. Het wordt dan toegevoegd aan het overzicht van lijsten.
+1. Click **[!UICONTROL Save]** to save the list. Het wordt dan toegevoegd aan het overzicht van lijsten.
 
 U kunt nieuwe profielen rechtstreeks maken vanuit het venster Profielen toevoegen door op **[!UICONTROL Create]** te klikken. Het profiel wordt toegevoegd aan de database.
 
@@ -93,7 +96,7 @@ De profielen van een set profielen kunnen worden gefilterd en gekoppeld aan een 
 
    ![](assets/s_ncs_user_add_selection_to_group_2.png)
 
-1. Klik op de **[!UICONTROL Start]** knop.
+1. Klik op de knop **[!UICONTROL Start]**.
 
    ![](assets/s_ncs_user_add_selection_to_group_3.png)
 
@@ -107,7 +110,7 @@ U kunt het proces controleren via het **[!UICONTROL Lists]** tabblad op de profi
 
 ![](assets/s_ncs_user_add_selection_to_group_4.png)
 
-U kunt de lijst ook bewerken via de startpagina van Adobe Campagne: Klik op het **[!UICONTROL Profiles and Targets > Lists]** menu en selecteer de desbetreffende lijst. Op het **[!UICONTROL Content]** tabblad ziet u de profielen die aan deze lijst zijn gekoppeld.
+U kunt de lijst ook bewerken via de homepage van Adobe Campaign: Klik op het **[!UICONTROL Profiles and Targets > Lists]** menu en selecteer de desbetreffende lijst. Op het **[!UICONTROL Content]** tabblad ziet u de profielen die aan deze lijst zijn gekoppeld.
 
 ![](assets/s_ncs_user_add_selection_to_group_5.png)
 
@@ -125,7 +128,7 @@ Als u een profiel uit een lijst wilt verwijderen, kunt u:
 
 ## Een lijst met profielen verwijderen {#deleting-a-list-of-profiles}
 
-U kunt een of meer lijsten verwijderen uit de lijst met groepen in de Adobe Campagne-structuur. Hiervoor bewerkt u de structuur via de **[!UICONTROL Advanced > Explorer]** koppeling op de startpagina van Adobe Campagne. Selecteer de desbetreffende groep(en) en klik met de rechtermuisknop. Selecteer **[!UICONTROL Delete]**. U wordt in een waarschuwingsbericht gevraagd de verwijdering te bevestigen.
+U kunt een of meer lijsten verwijderen uit de lijst met groepen in de Adobe Campaign-structuur. Hiervoor bewerkt u de structuur via de **[!UICONTROL Advanced > Explorer]** koppeling op de startpagina van Adobe Campaign. Selecteer de desbetreffende groep(en) en klik met de rechtermuisknop. Selecteer **[!UICONTROL Delete]**. U wordt in een waarschuwingsbericht gevraagd de verwijdering te bevestigen.
 
 >[!NOTE]
 >
