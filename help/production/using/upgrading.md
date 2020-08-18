@@ -1,7 +1,7 @@
 ---
-title: Bijwerken
-seo-title: Bijwerken
-description: Bijwerken
+title: Upgraden
+seo-title: Upgraden
+description: Upgraden
 seo-description: null
 page-status-flag: never-activated
 uuid: f24552d4-6bdf-411c-a1f2-b8f339c311f4
@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 5598682078a8fd3c8d9ecdca083f3a310c48f5f0
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 0%
+source-wordcount: '1120'
+ht-degree: 1%
 
 ---
 
 
-# Bijwerken{#upgrading}
+# Upgraden{#upgrading}
 
 Voordat u het upgradeproces start, bepaalt en bevestigt u welke versie van Adobe Campaign moet worden bijgewerkt naar en raadpleegt u de [releaseopmerkingen](../../rn/using/latest-release.md) .
 
@@ -34,7 +34,7 @@ Voordat u het upgradeproces start, bepaalt en bevestigt u welke versie van Adobe
 
 >[!NOTE]
 >
->Raadpleeg ook de [installatiegids](../../installation/using/general-architecture.md) en de [build-upgrade](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) die aan de slag gaat.
+>Raadpleeg ook de [installatiegids](../../installation/using/general-architecture.md) en de [build-upgrade](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html) die aan de slag gaat.
 
 ## In Windows {#in-windows}
 
@@ -257,7 +257,7 @@ Een unicode-database mag bijvoorbeeld niet alleen de opslag van LATIN1-gegevens,
 
 Download en kopieer het bestand op de computer waarop de Adobe Campaign-toepassingsserver (**nlserver web**) is geïnstalleerd
 
-**setup-client-6.** XXXX **.exe**
+**setup-client-6.XXXX.exe**
 
 in **[pad van de toepassing]**datakitnlengjsp
 
@@ -271,7 +271,7 @@ De volgende keer dat clientconsoles worden aangesloten, wordt gebruikers in een 
 
 Op de computer waarop de Adobe Campaign-toepassingsserver (**nlserver-web**) is geïnstalleerd, haalt u het volgende pakket op:
 
-**setup-client-6.** XXXX **.exe**
+**setup-client-6.XXXX.exe**
 
 en kopieer het bestand en sla het op als **/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
 
