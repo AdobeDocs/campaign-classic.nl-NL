@@ -1,7 +1,7 @@
 ---
-title: Monitoringprocessen
-seo-title: Monitoringprocessen
-description: Monitoringprocessen
+title: Processen opvolgen
+seo-title: Processen opvolgen
+description: Processen opvolgen
 seo-description: null
 page-status-flag: never-activated
 uuid: 9dc1461f-5e95-454d-8df5-19baab85f184
@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+source-git-commit: 68d532a9597877f2f265dfc2d16ea31d1ce80858
 workflow-type: tm+mt
 source-wordcount: '3602'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 ---
 
 
-# Monitoringprocessen{#monitoring-processes}
+# Processen opvolgen{#monitoring-processes}
 
 De toepassingsserver en de omleidingsserver (**tracking**) kunnen handmatig of automatisch worden gecontroleerd.
 
@@ -263,6 +263,7 @@ Zij worden gegroepeerd onder **Controle** > &quot;Controle SMTP&quot;.
 >
 >* Informatie over SMTP-bewaking is alleen beschikbaar als het e-mailkanaal is geactiveerd.
 >* De **[!UICONTROL SMTP sending statistics]** worden slechts aangeboden als de statistiekenserver op de instantie is begonnen.
+
 >
 
 
@@ -282,6 +283,7 @@ De lijst van indicatoren voor dit verslag wordt onder de grafiek weergegeven.
    * Groene lijn: met succes verzonden berichten (valt samen met de uitgaande gegevens).
 
    * Rode lijn: berichten die door Shaper worden verlaten, aan de **mta** zijn teruggekeerd (valt samen met de gegevens die op deze terugwinning worden verworpen).
+
    Deze waarden worden uitgedrukt in aantal berichten per uur.
 
 1. Vertegenwoordigt twee rijen van Shapier:
@@ -344,7 +346,7 @@ Klik op een PublicID om meer details te bekijken.
 
 ## Factureringsrapport {#billing-report}
 
-Het **[!UICONTROL Billing]** technische werkschema verzendt het rapport van de systeemactiviteit naar de &quot;facturerings&quot;exploitant per e-mail. Deze wordt standaard geactiveerd op de 25e van elke maand.
+The **[!UICONTROL Billing]** technical workflow sends the system activity report to the &#39;billing&#39; operator by email. Deze wordt standaard geactiveerd op de 25e van elke maand.
 
 De technische workflow vindt u in een submap van het volgende knooppunt: **Beheer** > **Productie** > **Technische workflows**.
 
@@ -442,7 +444,7 @@ Adobe Campaign maakt verschillende implementatieconfiguraties mogelijk (raadplee
  <thead> 
   <tr> 
    <th> Type implementatie </th> 
-   <th> Toezicht </th> 
+   <th> Controle </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -493,10 +495,10 @@ Adobe Campaign kan een hulpmiddel van de instantiecontrole (netreport) verstrekk
 
 Voor automatische controle zijn de volgende voorzorgsmaatregelen voorafgaand aan de installatie vereist:
 
-* U moet de bestanden **netreport.tgz **(Linux-installatie) of **netreport.zip** (Windows-installatie) hebben,
+* U moet de bestanden **netreport.tgz** (installatie van Linux) of **netreport.zip** (installatie van Windows) hebben,
 * We raden u ten zeerste aan om geen controle op de te controleren machine te installeren,
 * het moet zijn geïnstalleerd op een machine met een JRE of JDK;
-* in Linux moet de te controleren machine het **bc** pakket hebben. For more on this, refer to [this section](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages).
+* in Linux moet de te controleren machine het **bc** pakket hebben. Raadpleeg [deze sectie](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages) voor meer informatie.
 
 ### Installatieprocedure {#installation-procedure}
 
@@ -506,7 +508,7 @@ De installatieprocedure is als volgt:
 1. Ophalen van archief uitvoeren.
 1. Lees het **Lees mij** -bestand.
 1. Werk het **configuratiebestand netconf.xml** bij.
-1. Werk het bestand **netreport.bat** (Windows) of **netreport.sh **(Linux) bij.
+1. Werk het bestand **netreport.bat** (Windows) of **netreport.sh** (Linux) bij.
 
 ### Het bestand netconf.xml configureren {#configuring-the-netconf-xml-file}
 
