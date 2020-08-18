@@ -1,7 +1,7 @@
 ---
-title: Gegevens exporteren
-seo-title: Gegevens exporteren
-description: Gegevens exporteren
+title: Data exporteren
+seo-title: Data exporteren
+description: Data exporteren
 seo-description: null
 page-status-flag: never-activated
 uuid: 818de79a-587f-4735-b333-4bc702c3b450
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: b690e6c7141ba88c8ce72f631ec24fc068ade8f5
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 1%
 
 ---
 
 
-# Gegevens exporteren{#exporting-data}
+# Data exporteren{#exporting-data}
 
 ## Wizard Exporteren {#export-wizard}
 
@@ -40,7 +43,7 @@ Wanneer u de wizard Exporteren start, moet u eerst een sjabloon selecteren. Als 
    De native sjabloon is **[!UICONTROL New text export]**. Deze sjabloon moet niet worden gewijzigd, maar u kunt het dupliceren om een nieuwe sjabloon te configureren. Standaard worden exportsjablonen opgeslagen in het **[!UICONTROL Resources > Templates > Job templates]** knooppunt.
 
 1. Voer in het **[!UICONTROL Label]** veld een naam in voor het exporteren. U kunt een beschrijving toevoegen.
-1. Selecteer het exporttype. Er zijn twee mogelijke exporttypen: **[!UICONTROL Simple export]** **[!UICONTROL Multiple export]** om slechts één bestand te exporteren en meerdere bestanden in één uitvoering te exporteren, van een of meer typen brondocument.
+1. Selecteer het exporttype. Er zijn twee mogelijke exporttypen: **[!UICONTROL Simple export]** als u slechts één bestand wilt exporteren en meerdere bestanden in één uitvoering wilt exporteren, van een of meer typen brondocument. **[!UICONTROL Multiple export]**
 
 ### Stap 2 - Type bestand dat moet worden geëxporteerd {#step-2---type-of-file-to-export}
 
@@ -50,7 +53,7 @@ Wanneer het exporteren wordt gestart vanuit het **[!UICONTROL Jobs]** knooppunt,
 
 ![](assets/s_ncs_user_export_wizard02.png)
 
-* Standaard is de **[!UICONTROL Download the file generated on the server after the export]** optie geselecteerd. Vul in het **[!UICONTROL Local file]** veld de naam en het pad in van het bestand dat u wilt maken, of blader door de lokale schijf door op de map rechts van het veld te klikken. U kunt deze optie deselecteren om het toegangspad en de naam van het uitvoerbestand van de server in te voeren.
+* By default, the **[!UICONTROL Download the file generated on the server after the export]** option is selected. Vul in het **[!UICONTROL Local file]** veld de naam en het pad in van het bestand dat u wilt maken, of blader door de lokale schijf door op de map rechts van het veld te klikken. U kunt deze optie deselecteren om het toegangspad en de naam van het uitvoerbestand van de server in te voeren.
 
    >[!NOTE]
    >
@@ -73,7 +76,7 @@ Selecteer een uitvoerindeling voor het exportbestand. De volgende indelingen kun
 * Selecteer bij **[!UICONTROL Text]** opmaak de scheidingstekens voor het scheiden van de kolommen (tabs, komma&#39;s, puntkomma&#39;s of aangepaste tekens) en de tekenreeksen (enkele of dubbele aanhalingstekens of geen).
 * Voor **[!UICONTROL text]** en **[!UICONTROL CSV]**, kunt u de optie selecteren **[!UICONTROL Use first lines as column titles]**.
 * Geef de datumnotatie en getalnotatie op. Klik hiertoe op de **[!UICONTROL Edit]** knop voor het desbetreffende veld en gebruik de editor.
-* Voor velden met opsommingswaarden kunt u **[!UICONTROL Export labels instead of internal values of enumerations]** selecteren. De titel kan bijvoorbeeld worden opgeslagen in de notatie **1=Mr.**, **2=Miss**,** 3=Mevrouw**. Als deze optie wordt gekozen, worden **meneer**, **mevrouw** en **mevrouw** geëxporteerd.
+* Voor velden met opsommingswaarden kunt u **[!UICONTROL Export labels instead of internal values of enumerations]** selecteren. De titel kan bijvoorbeeld worden opgeslagen in de notatie **1=Mr.**, **2=mevrouw**, **3=mevrouw**. Als deze optie wordt gekozen, worden **meneer**, **mevrouw** en **mevrouw** geëxporteerd.
 
 ### Stap 4 - Selectie van gegevens {#step-4---data-selection}
 
@@ -109,9 +112,10 @@ U kunt de volgorde en het label van de velden voor het uitvoerbestand wijzigen e
    * Overschakelen naar kleine letters
    * Overschakelen naar hoofdletters
    * Eerste letter in hoofdletters
+
    ![](assets/s_ncs_user_export_wizard06.png)
 
-* Klik **[!UICONTROL Add a calculated field]** als u een nieuw berekend veld wilt maken (bijvoorbeeld een kolom met achternaam + voornaam). Zie [Berekende velden](../../platform/using/importing-data.md#calculated-fields)voor meer informatie.
+* Klik **[!UICONTROL Add a calculated field]** als u een nieuw berekend veld wilt maken (bijvoorbeeld een kolom met achternaam + voornaam). For more on this, refer to [Calculated fields](../../platform/using/importing-data.md#calculated-fields).
 
 Als u een verzameling elementen exporteert (bijvoorbeeld abonnementen van ontvangers, lijsten waartoe ze behoren, enz.), moet u het aantal elementen in de verzameling opgeven dat u wilt exporteren.
 
@@ -133,6 +137,6 @@ Klik **[!UICONTROL Start]** om het exporteren van gegevens te starten.
 
 ## Gegevens exporteren via een workflow {#exporting-data-via-a-workflow}
 
-Workflows kunnen een handige manier zijn om een aantal exportprocessen te automatiseren of om nauwkeurige sets gegevens te exporteren nadat u een aantal van de beschikbare activiteiten voor gegevensbeheer hebt gebruikt om uw gegevens te transformeren.
+Workflows kunnen een handige manier zijn om een aantal van uw exportprocessen te automatiseren of om nauwkeurige sets gegevens te exporteren nadat u een aantal van de beschikbare activiteiten voor gegevensbeheer hebt gebruikt om uw gegevens te transformeren.
 
 Raadpleeg [deze sectie](../../workflow/using/how-to-use-workflow-data.md)voor meer informatie over het exporteren van gegevens uit een workflow.
