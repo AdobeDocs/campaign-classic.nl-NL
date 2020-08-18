@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: ced6c73961e949c421e9dfb638b40a06dcad4614
+workflow-type: tm+mt
+source-wordcount: '826'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +43,7 @@ De identificatiesleutel van een stijlpagina is een tekenreeks die bestaat uit de
 >
 >In de praktijk wordt het aanbevolen dezelfde sleutel te gebruiken voor het schema, het formulier en de publicatiesjabloon.
 
-## De sjabloon maken en configureren {#creating-and-configuring-the-template}
+## Creating and configuring the template {#creating-and-configuring-the-template}
 
 Publicatiesjablonen worden standaard opgeslagen in het **[!UICONTROL Administration > Configuration > Publication templates]** knooppunt. Als u een nieuwe sjabloon wilt maken, klikt u op de **[!UICONTROL New]** knop boven de lijst met sjablonen.
 
@@ -52,7 +55,7 @@ Als u de publicatiesjabloon wilt configureren, vult u de naam van de sjabloon (d
 >
 >Het label wordt weergegeven wanneer inhoud wordt gemaakt op basis van deze publicatiesjabloon.
 
-Met de optie **Status controleren om het genereren** van inhoud te valideren, wordt een controle van de status &quot;Gevalideerd&quot; van de instanties van de inhoud gedwongen om het genereren van bestanden toe te staan. Zie [Publicatie](#publication)voor meer informatie.
+Met de optie **Status controleren om het genereren** van inhoud te valideren, wordt een controle van de status &quot;Gevalideerd&quot; van de instanties van de inhoud gedwongen om het genereren van bestanden toe te staan. For more on this, refer to [Publication](#publication).
 
 Voor elk uitvoerdocument moet een transformatiesjabloon worden toegevoegd. U kunt zo veel transformatiesjablonen maken als nodig is.
 
@@ -75,10 +78,10 @@ Bij publicatie wordt het uitvoerdocument gegenereerd in de vorm van een bestand,
 De volgende publicatieopties zijn beschikbaar:
 
 * De tekenset voor het coderen van het uitvoerbestand kan via het **[!UICONTROL Encoding]** veld worden geforceerd. De tekenset Latin 1 (1252) wordt standaard gebruikt.
-* Met de **[!UICONTROL Multi-file generation]** optie activeert u een speciale documentpublicatiemodus. Deze optie bestaat uit het vullen van een verdelingstag aan het begin van elke pagina van het uitvoerdocument. Als u de inhoud genereert, wordt er een bestand gemaakt voor elke gevulde partitioneringstag. Deze modus wordt gebruikt om mini-sites te genereren op basis van een inhoudsblok. Raadpleeg [Meerdere bestanden genereren](#multi-file-generation)voor meer informatie.
+* Met de **[!UICONTROL Multi-file generation]** optie activeert u een speciale documentpublicatiemodus. Deze optie bestaat uit het vullen van een verdelingstag aan het begin van elke pagina van het uitvoerdocument. Als u de inhoud genereert, wordt er een bestand gemaakt voor elke gevulde partitioneringstag. Deze modus wordt gebruikt om mini-sites te genereren op basis van een inhoudsblok. for more on this, refer to [Multi-file generation](#multi-file-generation).
 * Het **[!UICONTROL Location]** veld bevat de naam van het uitvoerbestand. De naam kan uit variabelen worden samengesteld om een automatische filename te produceren.
 
-   Een variabele wordt gevuld met de volgende indeling: **`$(<xpath>)`, waar `<xpath>` is de weg van een gebied van het de gegevensschema van het publicatiesjabloon.
+   Een variabele wordt gevuld met de volgende indeling: **`$(<xpath>)`**, waarbij **`<xpath>`** de weg van een gebied van het de gegevensschema van het publicatiesjabloon is.
 
    De naam van een bestand kan een datumveld zijn. Als u dit veld correct wilt opmaken, gebruikt u de functie **$date-format** , waarbij het pad van het veld en de uitvoerindeling als parameters worden gebruikt.
 
@@ -94,7 +97,7 @@ De volgende publicatieopties zijn beschikbaar:
    >
    >Raadpleeg [Inhoudsinstanties](../../delivery/using/using-a-content-template.md#creating-a-content-instance)maken voor meer informatie over het genereren van inhoud.
 
-###  Aflevering {#delivery}
+### Levering {#delivery}
 
 Op dit tabblad kunt u een scenario selecteren om een levering rechtstreeks op de inhoud te starten. De inhoud van de e-mail wordt automatisch ingevuld op basis van de uitvoerindeling (HTML of Tekst).
 
@@ -116,7 +119,7 @@ De partitioneringstag die in de stijlpagina moet worden geïntegreerd, ziet er a
 
 **`<xsl:comment> #nl:output_replace(<name_of_file>) </xsl:comment>`** waarbij **`<name_of_file>`** is de bestandsnaam van de pagina die moet worden gegenereerd.
 
-**Voorbeeld:**Meerdere bestanden genereren met het schema &quot;cus:book&quot;.
+**Voorbeeld:** Meerdere bestanden genereren met het schema &quot;cus:book&quot;.
 
 Het beginsel is dat een hoofdpagina met een lijst van de hoofdstukken wordt gemaakt, met de mogelijkheid om de details van het hoofdstuk op een externe pagina weer te geven.
 
