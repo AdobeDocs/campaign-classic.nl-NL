@@ -1,5 +1,5 @@
 ---
-title: Aanbevolen werkwijzen en probleemoplossing voor SFTP-servers
+title: SFTP-servergebruik
 description: Meer informatie over best practices en probleemoplossing voor SFTP-servers.
 page-status-flag: never-activated
 uuid: 5281058d-91bd-4f98-835d-1d46dc7b8b1f
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc7ba0c26bd57a75c3dbeaec541844a3b1196ef3
+source-git-commit: 8198c4aa6eccc0cbb5de4712ebdd8000783b615c
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '996'
 ht-degree: 12%
 
 ---
@@ -118,9 +118,9 @@ Deze fout geeft aan dat de domeinnaam van de FTP-server niet correct kan worden 
    1. Controleer of de servernaam is toegevoegd aan de lokale DNS-server.
    1. Als ja, stel het volgende bevel op de server van Adobe Campaign in werking om het IP adres te krijgen:
 
-   `nslookup <server domain name>`
+      `nslookup <server domain name>`
 
-   Dit bevestigt dat de FTP-server werkt en bereikbaar is vanaf de Adobe Campaign-toepassingsserver.
+      Dit bevestigt dat de FTP-server werkt en bereikbaar is vanaf de Adobe Campaign-toepassingsserver.
 
 1. Problemen met **sessielogboeken** oplossen:
 
@@ -128,11 +128,11 @@ Deze fout geeft aan dat de domeinnaam van de FTP-server niet correct kan worden 
    1. Ga naar **[!UICONTROL File Transfer]** tabblad en klik vervolgens op **[!UICONTROL Advanced Parameters]**.
    1. Schakel de optie **[!UICONTROL Display the session logs]** in.
 
-   ![](assets/sftp-error-display-logs.png)
+      ![](assets/sftp-error-display-logs.png)
 
    1. Ga naar de workflowcontrole en controleer of in de logboeken de fout &#39;Kan hostnaam niet oplossen&#39; wordt weergegeven.
 
-   Als de SFTP-server door Adobe wordt gehost, controleert u of IP aan de lijst van gewenste personen is toegevoegd door contact op te nemen met de klantenservice.
+1. Als de SFTP-server door Adobe wordt gehost, controleert u of IP aan de lijst van gewenste personen is toegevoegd door contact op te nemen met de klantenservice.
 
    Anders valideren:
 
