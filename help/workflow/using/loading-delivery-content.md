@@ -1,7 +1,7 @@
 ---
-title: Inhoud van levering laden
-seo-title: Inhoud van levering laden
-description: Inhoud van levering laden
+title: Leveringscontent laden
+seo-title: Leveringscontent laden
+description: Leveringscontent laden
 seo-description: null
 page-status-flag: never-activated
 uuid: f2004fb0-9beb-463f-9903-10f291b3663e
@@ -15,18 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: ee4addc88c6169603122259437d5cb0362851aa6
+workflow-type: tm+mt
+source-wordcount: '320'
+ht-degree: 4%
 
 ---
 
 
-# Inhoud van levering laden{#loading-delivery-content}
+# Leveringscontent laden{#loading-delivery-content}
 
-Als uw leveringsinhoud beschikbaar is in een HTML-bestand dat zich op Amazon S3-, FTP- of SFTP-servers bevindt, kunt u deze inhoud eenvoudig laden in Adobe Campagne-leveringen.
+Als uw leveringsinhoud beschikbaar is in een HTML-bestand dat zich op Amazon S3-, FTP- of SFTP-servers bevindt, kunt u deze inhoud gemakkelijk laden in Adobe Campaign-leveringen.
 
 Dit doet u als volgt:
 
-1. Als u nog geen verbinding hebt gedefinieerd tussen de Adobe-campagne en de (S)FTP-server die als host fungeert voor de inhoudsbestanden, maakt u een nieuwe externe account van het type S3, FTP of SFTP in **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**. Geef in deze externe account het adres en de referenties op waarmee de verbinding met de S3- of (S)FTP-server tot stand wordt gebracht.
+1. Als u nog geen verbinding hebt gedefinieerd tussen Adobe Campaign en de (S)FTP-server die als host fungeert voor de inhoudsbestanden, maakt u een nieuwe externe account van het type S3, FTP of SFTP in **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**. Geef in deze externe account het adres en de referenties op waarmee de verbinding met de S3- of (S)FTP-server tot stand wordt gebracht.
 
    Hier is een voorbeeld van een externe S3-account:
 
@@ -37,6 +40,7 @@ Dit doet u als volgt:
 
    * De externe account die moet worden gebruikt om verbinding te maken met de S3- of (S)FTP-server.
    * Het pad van het bestand op de S3- of (S)FTP-server.
+
    ![](assets/delivery_loadcontent_filetransfertexample.png)
 
 1. Voeg een **[!UICONTROL Delivery]** activiteit toe en verbind het met de uitgaande overgang van de **[!UICONTROL File transfer]** activiteit. Configureer dit als volgt:
@@ -45,6 +49,7 @@ Dit doet u als volgt:
    * Ontvangers: In dit voorbeeld wordt ervan uitgegaan dat het doel is opgegeven in de levering zelf.
    * Inhoud: Zelfs als de inhoud wordt geïmporteerd in de vorige activiteit, selecteert u **[!UICONTROL Specified in the delivery]**. Aangezien de inhoud rechtstreeks wordt geïmporteerd uit een bestand op een externe server, heeft de inhoud geen id wanneer deze wordt verwerkt door de workflow en kan niet worden geïdentificeerd als afkomstig van de binnenkomende gebeurtenis.
    * Uit te voeren handeling: Selecteer deze optie **[!UICONTROL Save]** om de levering op te slaan en deze via **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** te openen zodra de workflow wordt uitgevoerd.
+
    ![](assets/delivery_loadcontent_activityexample.png)
 
 1. Voeg op het **[!UICONTROL Script]** tabblad van de **[!UICONTROL Delivery]** activiteit de volgende opdracht toe om de inhoud van het geïmporteerde bestand in de levering te laden:
@@ -60,4 +65,3 @@ Dit doet u als volgt:
 >[!NOTE]
 >
 >De beste praktijken en het oplossen van problemen op het servergebruik van SFTP worden gedetailleerd [in deze pagina](../../platform/using/sftp-server-usage.md).
-
