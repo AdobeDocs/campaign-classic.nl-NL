@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: bc7ba0c26bd57a75c3dbeaec541844a3b1196ef3
 workflow-type: tm+mt
-source-wordcount: '7069'
+source-wordcount: '7095'
 ht-degree: 95%
 
 ---
@@ -24,7 +24,6 @@ ht-degree: 95%
 # Documentatie-updates{#documentation-updates}
 
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates per maand en per Campaign-release.
-
 
 U kunt ook de [Adobe Campaign Classic-release-opmerkingen](../../rn/using/latest-release.md) raadplegen voor meer updates.
 
@@ -56,6 +55,7 @@ Hoe kan ik-video&#39;s zijn nu beschikbaar over de volgende onderwerpen:
 
 * [Hoe te opstelling een ononderbroken levering](../../workflow/using/continuous-delivery.md)
 
+Er is informatie toegevoegd over de controles en handeling die moeten worden uitgevoerd wanneer de fout &quot;Kan hostnaam niet oplossen&quot; wordt opgehaald na verbinding te maken met FTP-server. [Meer informatie](../../platform/using/sftp-server-usage.md)
 
 ## Juli 2020 {#july-2020}
 
