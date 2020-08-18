@@ -1,6 +1,6 @@
 ---
-title: Informatie over schemaverwijzing in Adobe Campaign Classic
-description: Leer hoe u extensieschema's configureert om het conceptuele gegevensmodel van de klassieke Adobe Campagne-database uit te breiden.
+title: Schema-verwijzing in Adobe Campaign Classic
+description: Leer hoe te om uitbreidingsschema's te vormen om het conceptuele gegevensmodel van het gegevensbestand van Adobe Campaign Classic uit te breiden.
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -13,18 +13,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: d4ebaaf90d88cbec9a4d24d79eaf7c46890d933a
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 7%
 
 ---
 
 
-# Schema-verwijzing{#about-schema-reference}
+# Schemaverwijzing{#about-schema-reference}
 
-In dit hoofdstuk wordt beschreven hoe u extensieschema&#39;s configureert om het conceptuele gegevensmodel van de Adobe Campagne-database uit te breiden.
+In dit hoofdstuk wordt beschreven hoe u extensieschema&#39;s configureert om het conceptuele gegevensmodel van de Adobe Campaign-database uit te breiden.
 
-Voor een beter inzicht in de ingebouwde lijsten van de Campagne en hun interactie, verwijs naar het Klassieke gegevensmodel [van de](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)Campagne.
+Raadpleeg het gegevensmodel [](https://helpx.adobe.com/nl/campaign/kb/acc-datamodel.html)Campaign Classic voor een beter begrip van ingebouwde tabellen en hun interactie.
 
-De fysieke en logische structuur van de gegevens die in de toepassing worden overgedragen, wordt in XML beschreven. Het voert een grammatica specifiek voor de Campagne van Adobe uit, genoemd een **schema**.
+De fysieke en logische structuur van de data die in de applicatie worden overgedragen, wordt in XML beschreven. It obeys a grammar specific to Adobe Campaign, called a **schema**.
 
 Een schema is een XML-document dat is gekoppeld aan een databasetabel. De code definieert de gegevensstructuur en beschrijft de SQL-definitie van de tabel:
 
@@ -43,13 +46,13 @@ Hierin wordt ook de XML-structuur beschreven die wordt gebruikt om gegevens op t
 
 Met schema&#39;s kunt u een entiteit in de database definiëren. Er is een schema voor elke entiteit.
 
-In de volgende afbeelding ziet u de locatie van schema&#39;s in het Adobe Campagne-gegevenssysteem:
+In de volgende afbeelding ziet u de locatie van schema&#39;s in het Adobe Campaign-gegevenssysteem:
 
 ![](assets/reference_schema_intro.png)
 
 ## Syntaxis van schema&#39;s {#syntax-of-schemas}
 
-Het hoofdelement van het schema is **`<srcschema>`**. Het bevat de ** **`<element>`** en **`<attribute>`** subelementen.
+Het hoofdelement van het schema is **`<srcschema>`**. Het bevat de **`<element>`** en **`<attribute>`** subelementen.
 
 Het eerste **`<element>`** subelement valt samen met de hoofdmap van de entiteit.
 
@@ -85,7 +88,7 @@ Met een naamruimte kunt u een set schema&#39;s groeperen op interessegebied. Bij
 >
 >Id&#39;s mogen niet beginnen met numerieke tekens.
 
-Bepaalde naamruimten zijn gereserveerd voor beschrijvingen van de systeementiteiten die vereist zijn voor de werking van de Adobe Campagne-toepassing:
+Bepaalde naamruimten zijn gereserveerd voor beschrijvingen van de systeementiteiten die vereist zijn voor de werking van de Adobe Campaign-toepassing:
 
 * **xtk**: met betrekking tot platformsysteemgegevens,
 * **nl**: betreffende het algemene gebruik van de aanvraag,
