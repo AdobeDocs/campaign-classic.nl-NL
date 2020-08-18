@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ee4addc88c6169603122259437d5cb0362851aa6
+source-git-commit: bc7ba0c26bd57a75c3dbeaec541844a3b1196ef3
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '999'
 ht-degree: 12%
 
 ---
@@ -95,9 +95,9 @@ De sectie hieronder maakt een lijst van de informatie om aan het team van de Ste
 1. Als u een zeer belangrijke gebaseerde authentificatie gebruikt, controleer dat de sleutel u gebruikt het zelfde is dat u aan het team van de Steun van Adobe voor de instantieconfiguratie verstrekte.
 1. Als u FileZilla of een gelijkwaardig hulpmiddel van FTP gebruikt, verstrek de details van verbindingslogboeken in het steunkaartje.
 
-## Fout &quot;Kan hostnaam niet oplossen&quot;, uploadfout in cURL
+## Fout &quot;Kan hostnaam niet oplossen&quot;
 
-Deze sectie verstrekt informatie over de controles en de actie om uit te voeren wanneer het krijgen van &quot;kan gastheernaam niet oplossen.&quot; fout na verbinding maken met FTP-server vanuit Campaign Classic.
+Deze sectie bevat informatie over de controles en de handelingen die moeten worden uitgevoerd wanneer de fout &quot;Kan hostnaam niet oplossen&quot; wordt opgehaald nadat verbinding is gemaakt met FTP-server vanuit Campaign Classic.
 
 Het werkschemadagboek toont de volgende logboeken:
 
