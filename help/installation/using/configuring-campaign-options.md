@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
 workflow-type: tm+mt
-source-wordcount: '3903'
-ht-degree: 0%
+source-wordcount: '3927'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +33,7 @@ Met het **[!UICONTROL Administration / Platform / Options]** knooppunt kunt u Ad
 
 Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kunnen handmatig worden toegevoegd wanneer dat nodig is. Welke opties beschikbaar zijn, is afhankelijk van de pakketten die bij de instantie worden geïnstalleerd.
 
-## Aflevering {#delivery}
+## Levering {#delivery}
 
 <table> 
  <thead> 
@@ -112,7 +112,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageServerTimeout</span> <br /> </td> 
-   <td> Hiermee kunt u een time-outlimiet (in seconden) definiëren voor het ophalen van een reactie van de server wanneer een afbeelding wordt opgehaald die is gedownload van een gepersonaliseerde URL en die is gekoppeld aan een e-mail. Als deze waarde wordt overschreden, kan het bericht niet worden verzonden. De standaardwaarde is 60 seconden.<br /> </td> 
+   <td> Hiermee kunt u een time-outlimiet (in seconden) definiëren voor het ophalen van een reactie van de server wanneer een afbeelding wordt opgehaald die is gedownload van een gepersonaliseerde URL en die is gekoppeld aan een e-mail. Als deze waarde wordt overschreden, kan het bericht niet worden verzonden. The default value is 60 seconds.<br /> </td> 
   </tr> 
  <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxDownloadedImageSize</span> <br /> </td> 
@@ -592,7 +592,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_PropositionPurgeDelay</span> <br /> </td> 
-   <td><p> Hier kunt u de vertraging definiëren waarna voorstellingen uit de database worden verwijderd.</p><p> Deze optie wordt automatisch gecreeerd zodra de vertraging binnen de interface wordt gewijzigd. Als u de waarde in de lijst met opties wijzigt, moet deze worden uitgedrukt in seconden.</p><br /> </td> 
+   <td><p> Hiermee kunt u de vertraging definiëren waarna voorstellingen uit de database worden verwijderd.</p><p> Deze optie wordt automatisch gecreeerd zodra de vertraging binnen de interface wordt gewijzigd. Als u de waarde in de lijst met opties wijzigt, moet deze worden uitgedrukt in seconden.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_QuarantineMailboxFull</span> <br /> </td> 
@@ -633,21 +633,21 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
     <li><p>1 - pg_cancel_backend: stopt workflowproces en annuleert query in de database<p></li>
     <li><p>2 - pg_terminate_backend: stopt workflowproces en beëindigt query in de database<p></li></ul></td> 
   </tr>  
-  <tr> 
-   <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
-   <td> Naam van de tabelruimte die de indexen van de Adobe Campaign-standaardtabellen moet bevatten.<br /> </td> 
+    <tr> 
+   <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
+   <td> Naam van de tabelruimte die de gegevens van de standaardtabellen van Adobe Campaign moet bevatten.<br />Zie De database <a href="../../installation/using/creating-and-configuring-the-database.md">maken en configureren</a>.</td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
-   <td> Naam van de tabelruimte die de gegevens van de standaard Adobe Campaign-tabellen moet bevatten.<br /> </td> 
+   <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
+   <td> Naam van de tabelruimte die de indexen van de Adobe Campaign-standaardtabellen moet bevatten.<br />Zie De database <a href="../../installation/using/creating-and-configuring-the-database.md">maken en configureren</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWork</span> <br /> </td> 
-   <td> Naam van de tabelruimte die de gegevens van de Adobe Campaign-werktabellen moet bevatten.<br /> </td> 
+   <td> Naam van de tabelruimte die de gegevens van de Adobe Campaign-werktabellen moet bevatten.<br />Zie De database <a href="../../installation/using/creating-and-configuring-the-database.md">maken en configureren</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWorkIndex</span> <br /> </td> 
-   <td> Naam van de tabelruimte die de indexen van de Adobe Campaign-werktabellen moet bevatten.<br /> </td> 
+   <td> Naam van de tabelruimte die de indexen van de Adobe Campaign-werktabellen moet bevatten.<br />Zie De database <a href="../../installation/using/creating-and-configuring-the-database.md">maken en configureren</a>.</td> 
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
@@ -687,8 +687,8 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
    <td> Tijdens migratie wordt de boomstructuur automatisch opnieuw ingedeeld op basis van de nieuwe versienormen.<br /> Met deze optie kunt u de automatische migratie van de boomstructuur uitschakelen. Als u het gebruikt, moet u na migratie verouderde mappen verwijderen, de nieuwe mappen toevoegen en alle noodzakelijke controles uitvoeren.<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">Gegevenstype:</span> Geheel</p> </li> 
-     <li> <p> <span class="uicontrol">Waarde (tekst)</span> : 1 </p> </li> 
-    </ul> Deze optie mag alleen worden gebruikt als de uit-de-box navigatieboom te veel wijzigingen heeft ondergaan.<br /> Zie <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">deze sectie</a>voor meer informatie.<br /> </td> 
+     <li> <p> <span class="uicontrol">Waarde (tekst)</span> : 3 </p> </li> 
+    </ul> Deze optie mag alleen worden gebruikt als de uit-de-box navigatieboom te veel wijzigingen heeft ondergaan.<br /> Raadpleeg <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">deze sectie</a> voor meer informatie.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 
@@ -717,7 +717,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">AEMResourceTypeFilter</span> <br /> </td> 
-   <td> Typen AEM-bronnen die in Adobe Campaign kunnen worden gebruikt. Waarden moeten worden gescheiden door komma's.<br /> </td> 
+   <td> Typen AEM die in Adobe Campaign kunnen worden gebruikt. Waarden moeten worden gescheiden door komma's.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
@@ -741,11 +741,11 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
-   <td> Optie die wordt gebruikt voor de integratie met Adobe Audience Manager.<br /> </td> 
+   <td> Optie gebruikt voor de integratie met Adobe Audience Manager.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">AAM_DestinationId</span> <br /> </td> 
-   <td> Optie die wordt gebruikt voor de integratie met Adobe Audience Manager.<br /> </td> 
+   <td> <span class="uicontrol">AAM_BestemmingId</span> <br /> </td> 
+   <td> Optie gebruikt voor de integratie met Adobe Audience Manager.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Teradata</span> <br /> </td> 
@@ -832,7 +832,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
  </tbody> 
 </table>
 
-## Tekstspatiëring {#tracking}
+## Tracking {#tracking}
 
 <table> 
  <thead> 
