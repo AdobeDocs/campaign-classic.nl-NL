@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
+source-git-commit: ee4addc88c6169603122259437d5cb0362851aa6
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2113'
 ht-degree: 95%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 95%
       + [Algemene import- en exportbewerkingen](platform/using/generic-imports-and-exports.md)
       + [Data exporteren](platform/using/exporting-data.md)
       + [Data importeren](platform/using/importing-data.md)
-      + [SFTP-servergebruik](platform/using/sftp-server-usage.md)
+      + [Aanbevolen werkwijzen en probleemoplossing voor SFTP-servers](platform/using/sftp-server-usage.md)
    + Data filteren {#filtering-data}
       + [Filteropties](platform/using/filtering-options.md)
       + [Filters maken](platform/using/creating-filters.md)
