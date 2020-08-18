@@ -1,7 +1,7 @@
 ---
-title: '"Gebruik gevallen: overzichten maken"'
-seo-title: '"Gebruik gevallen: overzichten maken"'
-description: '"Gebruik gevallen: overzichten maken"'
+title: '"Gebruiksscenario’s: overzichten maken"'
+seo-title: '"Gebruiksscenario’s: overzichten maken"'
+description: '"Gebruiksscenario’s: overzichten maken"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 404ae82b-2766-4802-8673-aaaa26868f46
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: b01252d57ec4ca5c5c87e69566079c48d7363e38
+workflow-type: tm+mt
+source-wordcount: '951'
+ht-degree: 1%
 
 ---
 
 
-# Gebruik hoofdletters/kleine letters: overzichten maken{#use-cases-creating-overviews}
+# Gebruiksscenario’s: overzichten maken{#use-cases-creating-overviews}
 
 In het volgende voorbeeld, zullen wij overzicht-type de toepassingen van het Web tot stand brengen om alle toepassingen van het Web in uw gegevensbestand te tonen. Configureer de volgende elementen:
 
@@ -32,7 +35,7 @@ In het volgende voorbeeld, zullen wij overzicht-type de toepassingen van het Web
 
 ![](assets/s_ncs_configuration_webapp_overview.png)
 
-## Een webtoepassing van één pagina maken {#creating-a-single-page-web-application}
+## Creating a single-page Web application {#creating-a-single-page-web-application}
 
 1. Creeer één enkele toepassing van het **[!UICONTROL Page]** Web en maak uitgaande overgangen en overgangen aan de volgende pagina onbruikbaar.
 
@@ -60,7 +63,7 @@ In het volgende voorbeeld, zullen wij overzicht-type de toepassingen van het Web
 
 ## Een filter toevoegen aan een map {#adding-a-filter-on-a-folder}
 
-In een overzicht kunt u naar keuze toegang krijgen tot gegevens, afhankelijk van de locatie in de Adobe-campagnestructuur. Dit is een filter op een map. Pas het volgende proces toe om het aan uw overzicht toe te voegen.
+In een overzicht kunt u naar keuze toegang krijgen tot gegevens, afhankelijk van de locatie in de Adobe Campaign-structuur. Dit is een filter op een map. Pas het volgende proces toe om het aan uw overzicht toe te voegen.
 
 1. Plaats uw curseur op de **[!UICONTROL Page]** knoop van uw toepassing van het Web en voeg een **[!UICONTROL Select folder]** element (**[!UICONTROL Advanced controls > Select folder]**) toe.
 1. Klik in het **[!UICONTROL Storage]** venster dat verschijnt op de **[!UICONTROL Edit variables]** koppeling.
@@ -201,15 +204,16 @@ Deze twee elementen worden in dezelfde container gegroepeerd om in het overzicht
 
 1. Plaats de cursor op het lijstelement en maak een filter via het **[!UICONTROL Data > Filter]** tabblad:
 
-   * **** Uitdrukking: Externe sleutel van de koppeling &#39;Gemaakt door&#39;
-   * **** Operator: is gelijk aan
-   * **** Waarde: Variabelen (variabelen)
-   * **** Wordt in aanmerking genomen: &#39;$(var2/@id)&#39;!=&#39;
+   * **Uitdrukking:** Externe sleutel van de koppeling &#39;Gemaakt door&#39;
+   * **Operator:** is gelijk aan
+   * **Waarde:** Variabelen (variabelen)
+   * **Wordt in aanmerking genomen:** &#39;$(var2/@id)&#39;!=&#39;
+
    ![](assets/s_ncs_configuration_webapp_filter002.png)
 
 >[!CAUTION]
 >
->De gebruiker van de toepassing van het Web moet een geïdentificeerde exploitant met de aangewezen rechten van de Campagne van Adobe zijn om tot de informatie toegang te hebben. Dit type van configuratie zal niet voor de anonieme toepassingen van het Web werken.
+>De gebruiker van de toepassing van het Web moet een geïdentificeerde exploitant met de aangewezen rechten van Adobe Campaign zijn om tot de informatie toegang te hebben. Dit type van configuratie zal niet voor de anonieme toepassingen van het Web werken.
 
 ### Een koppeling voor vernieuwen maken {#creating-a-refresh-link}
 
@@ -220,7 +224,7 @@ Deze twee elementen worden in dezelfde container gegroepeerd om in het overzicht
 
    ![](assets/s_ncs_configuration_webapp_refreshlink.png)
 
-1. Voeg het pictogram Vernieuwen toe op het **[!UICONTROL Image]** gebied: **/xtk/img/refresh.png **.
+1. Voeg het pictogram Vernieuwen toe op het **[!UICONTROL Image]** gebied: **/xtk/img/refresh.png**.
 1. Gebruikend de soort-orde pijlen, reorganiseer de diverse elementen van uw toepassing van het Web zoals hieronder getoond.
 
    ![](assets/s_ncs_configuration_webapp_orderelements.png)
