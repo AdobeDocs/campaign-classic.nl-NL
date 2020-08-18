@@ -1,7 +1,7 @@
 ---
-title: Schema-structuur
-seo-title: Schema-structuur
-description: Schema-structuur
+title: Schemastructuur
+seo-title: Schemastructuur
+description: Schemastructuur
 seo-description: null
 page-status-flag: never-activated
 uuid: 9be70907-6154-4890-91e8-fd0fac30ab05
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 8e4fc977daf9039ee8587bf505d7406fd863e68b
+workflow-type: tm+mt
+source-wordcount: '1566'
+ht-degree: 1%
 
 ---
 
 
-# Schema-structuur{#schema-structure}
+# Schemastructuur{#schema-structure}
 
 De basisstructuur van een `<srcschema>` is als volgt:
 
@@ -129,9 +132,9 @@ De volgende regels moeten in acht worden genomen:
 
 * Alleen **`<element>`** elementen kunnen **`<attribute>`** elementen en **`<element>`** elementen in de XML-structuur bevatten.
 * Een **`<attribute>`** element moet een unieke naam binnen een element hebben **`<element>`**.
-* Het gebruik van **`<elements>`** in gegevenstekenreeksen met meerdere regels wordt aanbevolen.
+* Het gebruik van gegevensreeksen **`<elements>`** met meerdere regels wordt aanbevolen.
 
-## Gegevenstypen {#data-types}
+## Datatypen {#data-types}
 
 Het gegevenstype wordt ingevoerd via het **kenmerk type** in de **`<attribute>`** en **`<element>`** elementen.
 
@@ -173,14 +176,14 @@ Hier is ons voorbeeldschema met de ingevoerde types:
 </srcSchema>
 ```
 
-### Typen Adobe-campagne-/DBMS-gegevens toewijzen {#mapping-the-types-of-adobe-campaign-dbms-data}
+### Toewijzing van de typen Adobe Campaign/DBMS-gegevens {#mapping-the-types-of-adobe-campaign-dbms-data}
 
 In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door Adobe Campaign worden gegenereerd voor de verschillende databasebeheersystemen.
 
 <table> 
  <tbody> 
   <tr> 
-   <td> <strong>Adobe-campagne</strong><br /> </td> 
+   <td> <strong>Adobe Campaign</strong><br /> </td> 
    <td> <strong>PosgreSQL</strong><br /> </td> 
    <td> <strong>Oracle</strong><br /> </td> 
    <td> <strong>TeraData</strong><br /> </td> 
@@ -188,7 +191,7 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
    <td> <strong>MS SQL</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> String<br /> </td> 
+   <td> Tekenreeks<br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
    <td> VARCHAR2 (NVARCHAR2 als unicode)<br /> </td> 
    <td> VARCHAR (VARCHAR TEKEN STELT UNICODE IN ALS Unicode.<br /> </td> 
@@ -245,24 +248,24 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
   </tr> 
   <tr> 
    <td> Datum<br /> </td> 
-   <td> DATUM<br /> </td> 
-   <td> DATUM<br /> </td> 
+   <td> DATE<br /> </td> 
+   <td> DATE<br /> </td> 
    <td> TIJDSTEMPEL<br /> </td> 
-   <td> DATUM<br /> </td> 
+   <td> DATE<br /> </td> 
    <td> DATETIME<br /> </td> 
   </tr> 
   <tr> 
-   <td> Tijd<br /> </td> 
-   <td> TIJD<br /> </td> 
+   <td> Time<br /> </td> 
+   <td> TIME<br /> </td> 
    <td> FLOAT<br /> </td> 
-   <td> TIJD<br /> </td> 
-   <td> TIJD<br /> </td> 
+   <td> TIME<br /> </td> 
+   <td> TIME<br /> </td> 
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Datumtijd<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
-   <td> DATUM<br /> </td> 
+   <td> DATE<br /> </td> 
    <td> TIJDSTEMPEL<br /> </td> 
    <td> TIJDSTEMPEL<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIMEOFFSET<br /> </td> 
@@ -270,7 +273,7 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
-   <td> DATUM<br /> </td> 
+   <td> DATE<br /> </td> 
    <td> TIJDSTEMPEL<br /> </td> 
    <td> TIJDSTEMPEL<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIME2<br /> </td> 
@@ -297,12 +300,12 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB(4 MB)<br /> </td> 
-   <td> AFBEELDING<br /> </td> 
+   <td> IMAGE<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Eigenschappen {#properties}
+## Properties {#properties}
 
 De **`<elements>`** en **`<attributes>`** elementen van het gegevensschema kunnen met diverse eigenschappen worden verrijkt. U kunt een label vullen om het huidige element te beschrijven.
 
@@ -320,13 +323,13 @@ De **`<elements>`** en **`<attributes>`** elementen van het gegevensschema kunne
    <attribute name="email" type="string" length="80" label="Email"/>
    ```
 
-   Het label kan worden weergegeven op het invoerformulier voor de Adobe Campagne-client:
+   Het label kan worden weergegeven op het invoerformulier voor de Adobe Campaign-clientconsole:
 
    ![](assets/d_ncs_integration_schema_label.png)
 
 * Met de eigenschap **desc** kunt u een lange beschrijving invoeren.
 
-   De beschrijving is zichtbaar vanaf het invoerformulier in de statusbalk van het hoofdvenster van de Adobe Campagne client console.
+   De beschrijving is te zien vanaf het invoerformulier in de statusbalk van het hoofdvenster van de Adobe Campaign-clientconsole.
 
    >[!NOTE]
    >
@@ -353,7 +356,7 @@ De waarde moet een expressie zijn die compatibel is met XPath-taal. Raadpleeg [V
 
    >[!NOTE]
    >
-   >In de de cliëntconsole van de Campagne van Adobe, wordt de **[!UICONTROL Administration>Counters]** knoop gebruikt om tellers te beheren.
+   >In de Adobe Campaign clientconsole wordt het **[!UICONTROL Administration>Counters]** knooppunt gebruikt om tellers te beheren.
 
 Als u een standaardwaarde aan een veld wilt koppelen, kunt u de opdracht `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
@@ -399,7 +402,7 @@ Voorbeeld van een opsommingsdeclaratie in het gegevensschema:
 </enumeration>
 ```
 
-Een opsomming wordt gedeclareerd buiten het hoofdelement via het **`<enumeration>`** element.
+Een opsomming wordt buiten het hoofdelement gedeclareerd via het **`<enumeration>`** element.
 
 De opsommingseigenschappen zijn als volgt:
 
@@ -471,7 +474,7 @@ Met projectie van de XML-inhoud:
 
 ## Verwijzen naar XPath {#referencing-with-xpath}
 
-De taal XPath wordt gebruikt in de Campagne van Adobe om naar een element of een attribuut te verwijzen dat tot een gegevensschema behoort.
+De XPath-taal wordt in Adobe Campaign gebruikt om naar een element of kenmerk te verwijzen dat of dat tot een gegevensschema behoort.
 
 XPath is een syntaxis waarmee u een knooppunt in de boomstructuur van een XML-document kunt zoeken.
 
@@ -482,8 +485,8 @@ Elementen worden aangeduid met hun naam en kenmerken worden aangeduid met de naa
 * **@email**: selecteert de e-mail;
 * **location/@city**: selecteert het kenmerk &quot;city&quot; onder het **`<location>`** element
 * **../@email**: selecteert het e-mailadres in het bovenliggende element van het huidige element
-* **groep`[1]/@label`**: selecteert het kenmerk &quot;label&quot; dat het onderliggende element van het eerste **`<group>`**verzamelingselement is
-* **groep`[@label='test1']`**: selecteert het kenmerk &quot;label&quot; dat het onderliggende element van het **`<group>`**element is en de waarde &quot;test1&quot; bevat
+* **groep`[1]/@label`**: selecteert het kenmerk &quot;label&quot; dat het onderliggende element van het eerste **`<group>`** verzamelingselement is
+* **groep`[@label='test1']`**: selecteert het kenmerk &quot;label&quot; dat het onderliggende element van het **`<group>`** element is en de waarde &quot;test1&quot; bevat
 
 >[!NOTE]
 >
@@ -491,6 +494,7 @@ Elementen worden aangeduid met hun naam en kenmerken worden aangeduid met de naa
 >
 >* **location/@city** is ongeldig; gebruiken **`[location/@city]`**
 >* **`[@email]`** en **@email** is gelijk
+
 >
 
 
@@ -502,7 +506,7 @@ Het is ook mogelijk complexe expressies te definiëren, zoals de volgende rekenk
 
 Er zijn functies op hoog niveau toegevoegd aan de expressies om het potentieel van deze taal te verrijken.
 
-U hebt toegang tot de lijst met beschikbare functies via een expressie-editor in de Adobe Campagne-clientconsole:
+U hebt toegang tot de lijst met beschikbare functies via een expressie-editor in de Adobe Campaign-clientconsole:
 
 ![](assets/d_ncs_integration_schema_function.png)
 
