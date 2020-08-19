@@ -1,7 +1,7 @@
 ---
-title: De werkruimte Adobe Campagne
-seo-title: De werkruimte Adobe Campagne
-description: De werkruimte Adobe Campagne
+title: Adobe Campaign-werkruimte
+seo-title: Adobe Campaign-werkruimte
+description: Adobe Campaign-werkruimte
 seo-description: null
 page-status-flag: never-activated
 uuid: ed954f73-6456-4fa3-b284-9b2d865c2afb
@@ -15,32 +15,35 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 14e67ca7f57d39e6939d6ff3479aa897674b18dc
+source-git-commit: 11a6ddd275dc8482e82f163abc14cacaf0281dff
+workflow-type: tm+mt
+source-wordcount: '2165'
+ht-degree: 2%
 
 ---
 
 
-# De werkruimte Adobe Campagne{#adobe-campaign-workspace}
+# Adobe Campaign-werkruimte{#adobe-campaign-workspace}
 
-## Informatie over de Adobe Campagne-interface {#about-adobe-campaign-interface}
+## About Adobe Campaign interface {#about-adobe-campaign-interface}
 
-Zodra u met het gegevensbestand wordt verbonden, zult u tot de homepage van de Campagne van Adobe toegang hebben, die een dashboard is: het bestaat uit verbindingen en kortere weg die u tot mogelijkheden, afhankelijk van uw installatie en algemene platformconfiguraties kunnen toegang hebben.
+Zodra u met het gegevensbestand wordt verbonden, zult u tot de homepage van Adobe Campaign toegang hebben, die een dashboard is: het bestaat uit verbindingen en kortere weg die u tot mogelijkheden, afhankelijk van uw installatie en algemene platformconfiguraties kunnen toegang hebben.
 
 Vanuit het centrale gedeelte van de homepage kunt u koppelingen gebruiken om toegang te krijgen tot het online documentatieportaal, -forum en de ondersteuningswebsite van Campagne.
 
 ![](assets/d_ncs_user_interface_home.png)
 
-De bovenstaande schermafbeelding is een voorbeeld van de startpagina voor een Adobe Campagnegebruiker. Bekijk de overzichtsvideo [van de](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html)Adobe Campagne Interface voor meer informatie.
+De bovenstaande schermafbeelding is een voorbeeld van de startpagina voor een Adobe Campaign-gebruiker. Bekijk de overzichtsvideo [van de](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html)Adobe Campaign Interface voor meer informatie.
 
 >[!NOTE]
 >
->De beschikbare Adobe Campagne-mogelijkheden voor uw instantie zijn afhankelijk van geïnstalleerde modules en invoegtoepassingen. Sommige zijn mogelijk ook niet beschikbaar, afhankelijk van uw machtigingen en specifieke configuraties.
+>De Adobe Campaign-mogelijkheden die voor uw instantie beschikbaar zijn, zijn afhankelijk van de geïnstalleerde modules en invoegtoepassingen. Sommige zijn mogelijk ook niet beschikbaar, afhankelijk van uw machtigingen en specifieke configuraties.
 >
->Voordat u een module of add-on installeert, moet u de licentieovereenkomst controleren of contact opnemen met de manager van uw Adobe-account.
+>Voordat u een module of invoegtoepassing kunt installeren, moet u de licentieovereenkomst controleren of contact opnemen met de Adobe-accountmanager.
 
 ### Console en webtoegang {#console-and-web-access}
 
-Het Adobe Campagne-platform is toegankelijk via een console of via een internetbrowser.
+Het Adobe Campaign-platform is toegankelijk via een console of via een internetbrowser.
 
 De toegang van het Web verstrekt een interface die aan de console maar met een verminderde reeks functionaliteiten gelijkaardig is.
 
@@ -54,7 +57,7 @@ Terwijl met de toegang van het Web, de opties hoofdzakelijk het bekijken zullen 
 
 ### Talen {#languages}
 
-De taal wordt geselecteerd bij de installatie van uw Adobe Campagne Classic-exemplaar en kan daarna niet worden gewijzigd. Raadpleeg deze [pagina](../../installation/using/creating-an-instance-and-logging-on.md)voor meer informatie over het maken van een instantie.
+De taal wordt geselecteerd wanneer u uw Adobe Campaign Classic-exemplaar installeert en kan achteraf niet worden gewijzigd. For more information on how to create an instance, refer to this [page](../../installation/using/creating-an-instance-and-logging-on.md).
 
 ![](assets/language.png)
 
@@ -66,7 +69,7 @@ U kunt kiezen uit vijf verschillende talen:
 * Duits
 * Japans
 
-De taal die u kiest voor uw Adobe Campagne Classic-instantie kan van invloed zijn op datum- en tijdnotaties. For more on this, refer to this [section](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+De taal die u voor uw Adobe Campaign Classic-exemplaar hebt gekozen, is mogelijk van invloed op de datum- en tijdnotatie. Raadpleeg deze [sectie](../../platform/using/adobe-campaign-workspace.md#date-and-time) voor meer informatie.
 
 ## Basisbeginselen van navigatie {#navigation-basics}
 
@@ -104,11 +107,11 @@ Gebruik bijvoorbeeld op de leveringspagina de **[!UICONTROL Create]** knop om ee
 
 ![](assets/d_ncs_user_interface_tab_add_del.png)
 
-## Adobe Campagneverkenner gebruiken {#using-adobe-campaign-explorer}
+## Adobe Campaign Explorer gebruiken {#using-adobe-campaign-explorer}
 
-### Informatie over Adobe Campagneverkenner {#about-adobe-campaign-explorer}
+### About Adobe Campaign explorer {#about-adobe-campaign-explorer}
 
-De Adobe Campagneverkenner is toegankelijk via het werkbalkpictogram. Hiermee hebt u toegang tot de Adobe-campagne voor alle mogelijkheden, configuratieschermen en een gedetailleerdere weergave van enkele platformelementen.
+De Adobe Campaign-verkenner is toegankelijk via het werkbalkpictogram. Hiermee hebt u toegang tot de Adobe Campaign, alle Adobe Campaign-mogelijkheden, configuratieschermen en een gedetailleerdere weergave van enkele platformelementen.
 
 De **[!UICONTROL Explorer]** werkruimte bestaat uit drie zones:
 
@@ -122,11 +125,11 @@ De **[!UICONTROL Explorer]** werkruimte bestaat uit drie zones:
 
 ### Schermresolutie {#screen-resolution}
 
-Voor optimale navigatie en bruikbaarheid raadt Adobe aan een minimale schermresolutie van 1600 x 900 pixels te gebruiken.
+Voor optimale navigatie en bruikbaarheid raadt Adobe u aan een minimale schermresolutie van 1600 x 900 pixels te gebruiken.
 
 >[!CAUTION]
 >
->Resoluties van minder dan 1600 x 900 pixels worden mogelijk niet ondersteund door Adobe Campagne.
+>Resoluties van minder dan 1600 x 900 pixels worden mogelijk niet ondersteund door Adobe Campaign.
 
 Als bepaalde delen van de **[!UICONTROL Explorer]** zone in de **[!UICONTROL Details]** werkruimte zijn afgekapt, vouwt u deze uit met de pijl boven de zone of klikt u op de **[!UICONTROL Enlarge]** knop.
 
@@ -144,7 +147,7 @@ Als u door een lijst wilt bladeren, kunt u **de schuifbalken** (horizontaal en v
 
 ### Records tellen {#counting-records}
 
-Standaard worden in Adobe Campagne de eerste 200 records van een lijst geladen. Dit betekent dat niet noodzakelijkerwijs alle records van de tabel worden weergegeven die u bekijkt. U kunt een telling van het aantal verslagen in de lijst in werking stellen en meer verslagen laden.
+Standaard laadt Adobe Campaign de eerste 200 records van een lijst. Dit betekent dat niet noodzakelijkerwijs alle records van de tabel worden weergegeven die u bekijkt. U kunt een telling van het aantal verslagen in de lijst in werking stellen en meer verslagen laden.
 
 In het onderste rechtergedeelte van het lijstscherm, **[!UICONTROL counter]** toont een hoeveel verslagen zijn geladen en het totale aantal verslagen in het gegevensbestand (na het toepassen van om het even welke filters):
 
@@ -207,8 +210,7 @@ Een andere manier om kolommen toe te voegen, bijvoorbeeld als u gegevens wilt to
    >
    >Gebruik het veld **Zoeken** om een zoekopdracht uit te voeren in de beschikbare velden. Zie Een lijst [](#sorting-a-list)sorteren voor meer informatie.
    >
-   >Velden worden aangegeven met specifieke pictogrammen: SQL-velden, gekoppelde tabellen, berekende velden, enzovoort. Voor elk geselecteerd veld wordt de beschrijving weergegeven onder de lijst met beschikbare velden.
-   [Lijsten](#configuring-lists)configureren.
+   >Velden worden aangegeven met specifieke pictogrammen: SQL-velden, gekoppelde tabellen, berekende velden, enzovoort. Voor elk geselecteerd veld wordt de beschrijving weergegeven onder de lijst met beschikbare velden. [Lijsten](#configuring-lists)configureren.
    >
    >U kunt gegevens ook sorteren en filteren. Zie [Filteropties](../../platform/using/filtering-options.md).
 
@@ -303,7 +305,7 @@ Lijsten kunnen een grote hoeveelheid gegevens bevatten. U kunt deze gegevens sor
 
 Klik op de kolomkop om een oplopende of aflopende sortering toe te passen of om het sorteren van gegevens te annuleren. De actieve sorteerstatus en sorteervolgorde worden aangegeven met een blauwe pijl vóór het kolomlabel. Een rood streepje vóór het kolomlabel betekent dat de sortering wordt toegepast op gegevens die uit de database zijn geïndexeerd. Deze sorteermethode wordt gebruikt om sorteertaken te optimaliseren.
 
-U kunt ook sorteren configureren of sorteercriteria combineren. Hiervoor voert u de volgende stappen uit:
+U kunt ook sorteren configureren of sorteercriteria combineren. Volg de onderstaande stappen om dit te doen:
 
 1. **[!UICONTROL Configure list]** en rechts van de lijst.
 
@@ -334,7 +336,7 @@ U kunt een onderzoek van de beschikbare gebieden in een redacteur in werking ste
 
 ### Datum en tijd {#date-and-time}
 
-De taal van uw Klassieke Adobe Campagne instantie beïnvloedt datum en tijdformaten.
+De taal van uw Adobe Campaign Classic-exemplaar is van invloed op datum- en tijdnotaties.
 
 Taal wordt geselecteerd tijdens de installatie van Campagne en kan achteraf niet worden gewijzigd. U kunt selecteren: Engels (VS), Engels (EN), Frans, Duits of Japans. For more on this, refer to [this page](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -377,7 +379,7 @@ Als u klikt, **[!UICONTROL Yes]** is deze waarde beschikbaar in de keuzelijst me
 
 >[!NOTE]
 >
->Opsommingen (ook wel &#39;gespecificeerde lijsten&#39; genoemd) worden beheerd door de beheerder via de **[!UICONTROL Administration > Platform > Enumerations]** sectie. Raadpleeg [Opsommingen](../../platform/using/managing-enumerations.md)beheren voor meer informatie hierover.
+>Opsommingen (ook wel &#39;gespecificeerde lijsten&#39; genoemd) worden beheerd door de beheerder via de **[!UICONTROL Administration > Platform > Enumerations]** sectie. For more on this, refer to [Managing enumerations](../../platform/using/managing-enumerations.md).
 
 ### Standaardeenheden {#default-units}
 
