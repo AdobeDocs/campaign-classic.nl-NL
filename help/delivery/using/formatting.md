@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+workflow-type: tm+mt
+source-wordcount: '1449'
+ht-degree: 0%
 
 ---
 
@@ -74,7 +77,7 @@ De kenmerken en elementen van de inhoud worden weergegeven als JavaScript-object
 **Voorbeeld**:
 
 * **inhoud.@name**: Hiermee wordt de waarde van het kenmerk &quot;name&quot; van het hoofdelement opgehaald
-* **inhoud.@`['name']`**: identiek aan de** inhoud.@name **syntaxis
+* **inhoud.@`['name']`**: identiek aan de **inhoud.@name** syntaxis
 * **content.chapter.length**: retourneert het aantal elementen in het `<chapter` verzamelingselement
 * **content.chapter`[0]`.@name**: wint de naam van het eerste `<chapter>` element terug
 * **hoofdstuk.name()**: retourneert de naam van het `<chapter>` element
@@ -477,7 +480,7 @@ Voorbeelden:
    <xsl:text disable-output-escaping="yes"><%= recipient.email %></xsl:text>
    ```
 
-* De voorwaardelijke test toevoegen **&lt;% if (receiving.language == &#39;en&#39;) { %>**:
+* De voorwaardelijke test toevoegen **&lt;% if (receiving.language == &#39;en&#39;)`{`%>**:
 
    ```
    <xsl:text disable-output-escaping="yes"><% if (recipient.language == 'en') { %></xsl:text>
@@ -524,7 +527,7 @@ Als u een voorvertoning van het uitvoerdocument wilt genereren, selecteert u een
 
 Naar de afbeeldingen die u opgeeft in het HTML-uitvoerdocument, kan worden verwezen met absolute of relatieve verwijzingen.
 
-Met relatieve verwijzing kunt u de URL invoeren van de server die de afbeeldingen bevat in de opties **NcmRessourcesDir** en **NcmRessourcesDirPreview** . Deze opties bevatten de locatie van afbeeldingen die u wilt publiceren en voorvertonen in de Adobe Campagne-clientconsole.
+Met relatieve verwijzing kunt u de URL invoeren van de server die de afbeeldingen bevat in de opties **NcmRessourcesDir** en **NcmRessourcesDirPreview** . Deze opties bevatten de locatie van afbeeldingen die u wilt publiceren en voorvertonen in de Adobe Campaign-clientconsole.
 
 Deze twee opties zijn toegankelijk via het scherm voor optiebeheer in de **[!UICONTROL Administration > Platform > Options]** map.
 
@@ -571,13 +574,13 @@ In het formulier wordt het veld voor het selecteren van de afbeelding toegevoegd
 
 ## Datumweergave {#date-display}
 
-In het XML-invoerdocument worden de datums opgeslagen in de interne XML-indeling: **YYY/MM/DD HH:MM:SS** (voorbeeld 2018/10/01 12:23:30).
+In het XML-invoerdocument worden de datums opgeslagen in de interne XML-indeling: **YYYY/MM/DD HH:MM:SS** (voorbeeld 2018/10/01 12:23:30).
 
-Adobe Campaign biedt functies voor datumopmaak voor de JavaScript-sjablonen en XSL-opmaakmodellen die hieronder worden beschreven.
+Adobe Campaign biedt functies voor datumnotatie voor de JavaScript-sjablonen en XSL-opmaakmodellen die hieronder worden beschreven.
 
 ### JavaScript-datumopmaak {#javascript-date-formatting}
 
-Als u een datum in de gewenste notatie wilt weergeven, biedt Adobe Campaign de **formatDate** -functie die als invoer de inhoud van de datum opgeeft en een tekenreeks die de uitvoerindeling opgeeft, met de volgende syntaxis: **%4Y/%2M/%2D %2H%2N%2S**
+Als u een datum in de gewenste notatie wilt weergeven, biedt Adobe Campaign de **formatDate** -functie die als invoer de inhoud van de datum opgeeft, en een tekenreeks die de uitvoerindeling opgeeft, met de volgende syntaxis: **%4Y/%2M/%2D %2H%2N%2S**
 
 Voorbeelden:
 
@@ -608,7 +611,7 @@ Voorbeelden:
 
 ### XSL-datumopmaak {#xsl-date-formatting}
 
-Er is geen standaardfunctie voor datumbeheer in XSLT-syntaxis. Als u een datum in de gewenste notatie wilt weergeven, biedt Adobe Campagne de externe **datumnotatie** voor de functie. Deze functie neemt als input de inhoud van de datum en een koord die het outputformaat met de volgende syntaxis specificeren: **%4Y/%2M/%2D %2H%2N%2S**
+Er is geen standaardfunctie voor datumbeheer in XSLT-syntaxis. Als u een datum in de gewenste notatie wilt weergeven, biedt Adobe Campaign de externe **datumnotatie** voor de functie. Deze functie neemt als input de inhoud van de datum en een koord die het outputformaat met de volgende syntaxis specificeren: **%4Y/%2M/%2D %2H%2N%2S**
 
 Voorbeelden:
 
