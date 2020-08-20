@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
 workflow-type: tm+mt
 source-wordcount: '1833'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -42,7 +42,7 @@ Als algemene regel geldt dat u de corresponderende clientlaag op de externe data
 Met de [!DNL Azure] externe account kunt u uw Campagne-instantie verbinden met uw externe database van Azure Synapse.
 Een externe [!DNL Azure Synapse] account maken:
 
-1. Configureer in Campaign Classic uw [!DNL Azure Synapse] externe account. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic, vorm uw [!DNL Azure Synapse] externe rekening. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Klik op **[!UICONTROL New]**.
 
@@ -128,7 +128,7 @@ Om Azure Synapse op CentOS te vormen:
 
 1. In Campaign Classic kunt u vervolgens uw [!DNL Azure Synapse] externe account configureren. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#azure-external)voor meer informatie over het configureren van uw externe account.
 
-1. Aangezien Azure Synapse Analytics communiceert via de TCP 1433-poort, moet u deze poort openen op uw firewall. Gebruik de volgende opdracht:
+1. Aangezien Azure Synapse Analytics via de haven van TCP 1433 communiceert, moet u deze haven op uw firewall openen. Gebruik de volgende opdracht:
 
    ```
    firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="[server_ip_here]/32" port port="1433" protocol="tcp" accept'
@@ -161,11 +161,11 @@ Om Azure Synapse op Vensters te vormen:
    your_language\your_architecture\msodbcsql.msi (i.e: English\X64\msodbcsql.msi)
    ```
 
-1. Nadat het ODBC-stuurprogramma is geïnstalleerd, kunt u het indien nodig testen. For more on this, refer to this [page](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server).
+1. Nadat het ODBC-stuurprogramma is geïnstalleerd, kunt u het indien nodig testen. Raadpleeg [deze pagina](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server) voor meer informatie.
 
 1. In Campaign Classic kunt u vervolgens uw [!DNL Azure Synapse] externe account configureren. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#azure-external)voor meer informatie over het configureren van uw externe account.
 
-1. Aangezien Azure Synapse Analytics communiceert via de TCP 1433-poort, moet u deze poort openen op de Windows Defender Firewall. For more on this, refer to [Windows documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
+1. Aangezien Azure Synapse Analytics door de haven van TCP 1433 communiceert, moet u deze haven op de Firewall van de Verdediger van Vensters openen. For more on this, refer to [Windows documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
 ### Azure Synapse on Debian {#azure-debian}
 
@@ -220,7 +220,7 @@ Om Azure Synapse op Debian te vormen:
 
 1. In Campaign Classic kunt u nu uw [!DNL Azure Synapse] externe account configureren. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#azure-external)voor meer informatie over het configureren van uw externe account.
 
-1. Om iptables op Debian te vormen om de verbinding met Azure Synapse Analytics te verzekeren, laat de uitgaande haven van TCP 1433 voor uw hostname met het volgende bevel toe:
+1. Om iptables op Debian te vormen om de verbinding met Azure Analytics van de Synapse te verzekeren, laat de uitgaande haven TCP 1433 voor uw hostname met het volgende bevel toe:
 
    ```
    iptables -A OUTPUT -p tcp -d [server_hostname_here] --dport 1433 -j ACCEPT
@@ -234,15 +234,15 @@ Om Azure Synapse op Debian te vormen:
 
 >[!NOTE]
 >
->[!DNL Snowflake] de schakelaar is beschikbaar voor ontvangen en on-premise plaatsingen. For more on this, refer to [this article](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>[!DNL Snowflake] de schakelaar is beschikbaar voor ontvangen en on-premise plaatsingen. For more on this, refer to [this article](https://helpx.adobe.com/nl/campaign/kb/acc-on-prem-vs-hosted.html).
 
 ![](assets/snowflake_3.png)
 
-### Sneeuwvlokken externe account {#snowflake-external}
+### Snowflake externe rekening {#snowflake-external}
 
-Met de [!DNL Snowflake] externe account kunt u uw Campagne-instantie verbinden met uw Snowflake externe database.
+Met de [!DNL Snowflake] externe account kunt u uw Campagne-instantie verbinden met uw externe Snowflake-database.
 
-1. Configureer in Campaign Classic uw [!DNL Snowflake] externe account. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic, vorm uw [!DNL Snowflake] externe rekening. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Klik op **[!UICONTROL New]**.
 
@@ -272,11 +272,11 @@ De connector ondersteunt de volgende opties:
 |---|---|
 | werkschema | Databaseschema dat moet worden gebruikt voor werktabellen |
 | entrepot | Naam van het standaardentrepot aan gebruik. De standaardinstelling van de gebruiker wordt hierdoor genegeerd. |
-| TimeZoneName | Standaard leeg, wat betekent dat de systeemtijdzone van de Campaign Classic-toepassingsserver wordt gebruikt. De optie kan worden gebruikt om de TIMEZONE-sessieparameter te forceren. <br>Raadpleeg [deze pagina](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)voor meer informatie. |
-| WeekStart | WEEK_START, sessieparameter. Standaard ingesteld op 0. <br>Raadpleeg [deze pagina](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start)voor meer informatie. |
-| UseCachedResult | USE_CACHED_RESULTS sessieparameter. Standaard ingesteld op TRUE. U kunt deze optie gebruiken om de resultaten van Sneeuwvlokken in cache uit te schakelen. <br>Raadpleeg [deze pagina](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)voor meer informatie. |
+| TimeZoneName | Standaard leeg, wat betekent dat de systeemtijdzone van de Campaign Classic-toepassingsserver wordt gebruikt. De optie kan worden gebruikt om de TIMEZONE-sessieparameter te forceren. <br>[Raadpleeg deze pagina](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone) voor meer informatie. |
+| WeekStart | WEEK_START, sessieparameter. Standaard ingesteld op 0. <br>[Raadpleeg deze pagina](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start) voor meer informatie. |
+| UseCachedResult | USE_CACHED_RESULTS sessieparameter. Standaard ingesteld op TRUE. U kunt deze optie gebruiken om resultaten in de Snowflake-cache uit te schakelen. <br>[Raadpleeg deze pagina](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html) voor meer informatie. |
 
-### Sneeuwvlok op CentOS {#snowflake-centos}
+### Snowflake op CentOS {#snowflake-centos}
 
 1. Download de ODBC-stuurprogramma&#39;s voor [!DNL Snowflake]. [Klik hier](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/snowflake-odbc-2.20.2.x86_64.rpm) om te beginnen met downloaden.
 1. Vervolgens moet u de ODBC-stuurprogramma&#39;s op CentOs installeren met de volgende opdracht:
@@ -295,7 +295,7 @@ De connector ondersteunt de volgende opties:
 
 1. In Campaign Classic kunt u vervolgens uw [!DNL Snowflake] externe account configureren. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#snowflake-external)voor meer informatie over het configureren van uw externe account.
 
-### Sneeuwvlok op Debian {#snowflake-debian}
+### Snowflake op Debian {#snowflake-debian}
 
 1. Download de ODBC-stuurprogramma&#39;s voor [!DNL Snowflake]. [Klik hier](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) om te downloaden.
 
@@ -315,7 +315,7 @@ De connector ondersteunt de volgende opties:
 
 1. In Campaign Classic kunt u vervolgens uw [!DNL Snowflake] externe account configureren. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#snowflake-external)voor meer informatie over het configureren van uw externe account.
 
-### Sneeuwvlok in Windows {#snowflake-windows}
+### Snowflake in Windows {#snowflake-windows}
 
 1. Download het [ODBC-stuurprogramma voor Windows](https://docs.snowflake.net/manuals/user-guide/odbc-download.html). U hebt beheerdersrechten nodig om het stuurprogramma te installeren. For more on this, refer to [this page](https://docs.snowflake.net/manuals/user-guide/admin-user-management.html)
 
@@ -329,7 +329,7 @@ De connector ondersteunt de volgende opties:
 
 Met de [!DNL Hadoop] externe account kunt u uw Campagne-instantie verbinden met uw externe database van Hadoop.
 
-1. Configureer in Campaign Classic uw [!DNL Hadoop] externe account. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic, vorm uw [!DNL Hadoop] externe rekening. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Klik op **[!UICONTROL New]**.
 
@@ -390,7 +390,7 @@ Als u verbinding wilt maken met een externe Hadoop-database in FDA, hebt u de vo
 
 Met de [!DNL Oracle] externe account kunt u uw Campagne-instantie verbinden met uw externe database van Hadoop.
 
-1. Configureer in Campaign Classic uw [!DNL oracle] externe account. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic, vorm uw [!DNL oracle] externe rekening. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Klik op **[!UICONTROL New]**.
 
