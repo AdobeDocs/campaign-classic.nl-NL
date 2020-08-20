@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7cf3b189f328cd1ea6ca8b67a3fc4c0c0bddd84
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -33,18 +33,18 @@ ht-degree: 0%
 
 | Databaseversie | Stuurprogrammaversie | Minimale campagneversie vereist | Opmerking |
 |:-:|:-:|:-:|:-:|
-| 15 | 15 | Campaign Classic 17.9 | Onder Linux: Vragen met tijdstempel kunnen mislukken (hersteld in build 8937 voor 18.4 en 8977 voor 18.10) In de foutopsporingsmodus kunnen waarschuwingen optreden in verband met slecht geheugengebruik in het stuurprogramma. |
-| 15 | 16 | Campaign Classic 17.9 | Aanbevolen installatie voor een Teradata 15-database onder Linux. |
-| 16 | 16 | Campaign Classic 18.10 | Unicode-tekens met surrogaatparen worden niet volledig verwerkt. Het gebruik van vervangende tekens in gegevens moet werken. Het gebruiken van vervangingen in een het filtreren voorwaarde van een vraag zal niet zonder deze verandering werken. |
+| 15 | 15 | Campaign Classic 17,9 | Onder Linux: Vragen met tijdstempel kunnen mislukken (hersteld in build 8937 voor 18.4 en 8977 voor 18.10) In de foutopsporingsmodus kunnen waarschuwingen optreden in verband met slecht geheugengebruik in het stuurprogramma. |
+| 15 | 16 | Campaign Classic 17,9 | Aanbevolen installatie voor een Teradata 15-database onder Linux. |
+| 16 | 16 | Campaign Classic 18,10 | Unicode-tekens met surrogaatparen worden niet volledig verwerkt. Het gebruik van vervangende tekens in gegevens moet werken. Het gebruiken van vervangingen in een het filtreren voorwaarde van een vraag zal niet zonder deze verandering werken. |
 | 16 | 15 | niet ondersteund |   |
 
 **Gebaseerd op Latin1**
 
-Versies die ouder zijn dan Adobe Campaign Classic 17.9, ondersteunen alleen de Teradata Latin-1-database.
+Versies die ouder zijn dan Adobe Campaign Classic 17.9 ondersteunen alleen de Teradata Latin-1-database.
 
 Vanaf Adobe Campaign Classic 17.9 ondersteunen we nu standaard Teradata-database in Unicode.
 
-Klanten met een database met Latijn-1-gegevens die migreren naar een recente Campaign Classic-versie, moeten de parameter APICharSize=1 toevoegen in de opties van de externe account.
+Klanten met een database met Latijn-1-gegevens die migreren naar een recente release van Campaign Classic, moeten de parameter APICharSize=1 toevoegen in de opties van de externe account.
 
 ### Databaseconfiguratie {#database-configuration}
 
@@ -184,13 +184,13 @@ Gereedschappen installeren:
 
 #### Configuratie stuurprogramma {#driver-configuration}
 
-Meer op bestuurdersconfiguratie leren, verwijs naar deze [sectie](../../platform/using/legacy-connectors.md#configure-access-to-teradata).
+To learn more on driver configuration, refer to this [section](../../platform/using/legacy-connectors.md#configure-access-to-teradata).
 
 #### Omgevingsvariabelen {#environment-varaiables}
 
 Raadpleeg deze [sectie](../../platform/using/legacy-connectors.md#configure-access-to-teradata)voor meer informatie over de omgevingsvariabelen van de Adobe Campaign-server.
 
-### Configuratie campagneserver voor Windows #campagne-server-windows}
+### Configuratie van de campagneserver voor Windows {#campaign-server-windows}
 
 U moet eerst de hulpprogramma&#39;s en hulpprogramma&#39;s van Teradata voor Windows downloaden. U kunt het van deze [pagina downloaden](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-windows-installation-package)
 
@@ -212,7 +212,7 @@ Als uw basis in latin1 is, zult u APICharSize=1 in de opties moeten toevoegen.
 
 De term gebruikt de naam van de tijdzone die niet standaard is, u kunt de lijst op de plaats [van](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA)Meta-gegevens vinden. Adobe Campaign probeert de tijdzone in de externe configuratie om te zetten in iets dat Teradata begrijpt. Als er geen overeenkomst wordt gevonden, wordt de dichtstbijzijnde GMT+X (of GMT-X)-tijdzone gevonden voor de sessie, met een waarschuwing in het logbestand.
 
-De conversie is voltooid bij het lezen van een bestand met de naam teradata_timezones.txt dat zich in de volgende directory DataGrid moet bevinden: /usr/local/neolane/nl6/datakit under linux. Als u dit bestand bewerkt, moet u contact opnemen met het Adobe Campaign-team om de wijziging in de broncode door te voeren anders wordt dit bestand overschreven tijdens de volgende campagneupdate.
+De conversie is voltooid bij het lezen van een bestand met de naam teradata_timezones.txt dat zich in de volgende directory data zou moeten bevinden: /usr/local/neolane/nl6/datakit under linux. Als u dit bestand bewerkt, moet u contact opnemen met het Adobe Campaign-team om de wijziging in de broncode door te voeren anders wordt dit bestand overschreven tijdens de volgende campagneupdate.
 
 De tijdzone die wordt gebruikt om te verbinden zal worden vermeld wanneer het runnen van nlserver met - verbose schakelaar, bijvoorbeeld:
 
