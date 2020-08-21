@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
+source-git-commit: e31efa347b42b4ccb532ca5f79e73745b5a7878b
 workflow-type: tm+mt
-source-wordcount: '1330'
-ht-degree: 1%
+source-wordcount: '1331'
+ht-degree: 6%
 
 ---
 
@@ -27,19 +27,19 @@ ht-degree: 1%
 
 _6 mei 2020_
 
-* Probleem verholpen met de **bestandsoverdrachtactiviteit** waardoor verificatie op basis van SFTP-sleutels niet kon werken op Debian 9. (NEO-23183)
+* Probleem verholpen met de activiteit **Bestand overdragen** waardoor verificatie op basis van SFTP-sleutels niet kon werken op Debian 9. (NEO-23183)
 
 ## ![](assets/do-not-localize/orange_2.png) Release 20.1.2 - build 9123{#release-20-1-2-build-9123}
 
 _13 maart 2020_
 
-* Probleem verholpen waarbij implementatie van versies op Red Hat 7-servers werd voorkomen. (NEO-2332)
+* Probleem verholpen waarbij implementatie van versies op Red Hat 7-servers werd voorkomen. (NEO-23332)
 
 ## ![](assets/do-not-localize/orange_2.png) Release 20.1 - build 9122{#release-20-1-build-9122}
 
 _17 februari 2020_
 
-**Nieuwe functies?**
+**Nieuwe functies**
 
 <table> 
  <thead> 
@@ -49,8 +49,8 @@ _17 februari 2020_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Sneeuwvlok is een volledig beheerde cloud-data warehouse die is ontworpen om zowel op opslagniveau als op computerniveau te worden geschaald. Met deze nieuwe aansluiting kan Adobe Campaign nu de kracht van Snowflake benutten om Big Data Segmentation uit te voeren. Deze connector is beschikbaar voor alle klanten, ook voor klanten die worden gehost door Adobe.</p>
-    <p>Raadpleeg voor meer informatie de <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">gedetailleerde documentatie</a> en <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">zelfstudievideo</a>.</p>
+   <td> <p>Snowflake is een volledig beheerde opslagplaats voor cloudgegevens die op zowel opslagniveau als computerniveau is gebouwd. Met deze nieuwe aansluiting kan Adobe Campaign nu gebruikmaken van de kracht van Snowflake om Big Data Segmentation uit te voeren. Deze schakelaar is beschikbaar aan alle klanten, met inbegrip van die door Adobe worden ontvangen.</p>
+    <p>For more information, refer to the <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -65,7 +65,7 @@ _17 februari 2020_
  <tbody> 
   <tr> 
    <td> <p>De Hadoop FDA Connector is verbeterd om zowel Hadoop 3.0 als Cloudera te ondersteunen.</p>
-    <p>Raadpleeg de <a href="../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3">gedetailleerde documentatie</a>voor meer informatie.</p>
+    <p>Raadpleeg de <a href="../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3">gedetailleerde documentatie</a> voor meer informatie.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -103,7 +103,7 @@ _17 februari 2020_
 
 * In Linux gebruikt het opstarten van de netwerkservice nu een systeemeenheid in plaats van het script /etc/init.d/nlserver6. De migratie naar het nieuwe opstartschema wordt automatisch uitgevoerd wanneer u het 20.1-pakket installeert. /etc/init.d/nlserver6 wordt nog verstrekt maar voor het in wisselwerking staan met de nlserver dienst (begin, nieuw begin, einde, enz.), adviseren wij dat u het systeembevel direct gebruikt.
 
-* De meest verbruikende douanetabellen zijn bewogen van de **xtkNewId** opeenvolging aan specifieke opeenvolgingen. [Meer informatie](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* De meest verbruikende douanetabellen zijn bewogen van de **xtkNewId** opeenvolging aan specifieke opeenvolgingen. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 
 * Verbeterde queryprestaties die kunnen worden beïnvloed door onnodige databaseverbindingen.
 
@@ -127,11 +127,11 @@ _17 februari 2020_
 
 * Probleem met regressie verholpen als gevolg van de implementatie van SSL-certificering, waardoor de gebruikersverbinding op de Windows-server is mislukt. (NEO-20629)
 
-* Probleem verholpen met incrementele queryactiviteit in het geval van negatieve workflow-id&#39;s. (NEO-1979)
+* Probleem verholpen met incrementele queryactiviteit in het geval van negatieve workflow-id&#39;s. (NEO-19779)
 
 * Probleem met codering verholpen bij het uitvoeren van query&#39;s via de Netezza FDA-connector. (NEO-19594)
 
-* Probleem verholpen dat tot een fout leidde bij het gebruik van de POST-methode in de gebeurtenisactiviteit van de **webdownloadworkflow** .
+* Probleem verholpen dat tot een fout leidde wanneer de methode van de POST in de de werkschemagebeurtenisactiviteit van de Download van het **Web** werd gebruikt.
 
 * Probleem opgelost met het genereren van voorstellen. (NEO-18176)
 
@@ -169,21 +169,21 @@ _17 februari 2020_
 
 * Probleem verholpen waarbij verschillende nummers werden weergegeven in het rapport met de leveringstijd. (NEO-11783)
 
-* Probleem verholpen waardoor de trackingindicatoren voor transactionele berichten niet konden worden bijgewerkt in de workflow voor bijhouden. (NEO-1770)
+* Probleem verholpen waardoor de trackingindicatoren voor transactionele berichten niet konden worden bijgewerkt in de workflow voor bijhouden. (NEO-17770)
 
 * Oplossing voor een regressieprobleem dat ertoe leidde dat het webproces vastliep en opnieuw opstartte wanneer een aanvraag voor een aanbieding werd ingediend via SOAP. (NEO-19482)
 
 * Probleem verholpen waarbij gegevens niet konden worden geüpload naar openbare bronnen als de uploadmap een externe gedeelde locatie was. (NEO-19361)
 
-* Probleem opgelost waarbij het publiek voor **importeren uit de technische workflow van Adobe Experience Cloud** voortdurend faalde. (NEO-18463)
+* Probleem verholpen waarbij het publiek voor **importeren uit de technische workflow van Adobe Experience Cloud** voortdurend faalde. (NEO-18463)
 
-* Probleem verholpen waarbij leveringen niet konden worden verzonden bij gebruik van sjablonen die uit Experience Manager zijn geïmporteerd. (NEO-17540)
+* Probleem verholpen waardoor leveringen niet konden worden verzonden bij gebruik van sjablonen die uit Experience Manager zijn geïmporteerd. (NEO-17540)
 
 * Probleem verholpen dat optrad na de upgrade naar versie 9032 en waardoor de instantie geen verbinding kon maken met de FTP-server via het SSL-protocol. (NEO-20498)
 
 * Oplossing van een probleem dat optrad bij het verwijderen, invoegen of bijwerken van een grote hoeveelheid gegevens met de **activiteit Gegevens** bijwerken in een workflow met een FDA-schema als doeldimensie. (NEO-13280)
 
-* Probleem verholpen waarbij e-mailberichten niet konden worden verzonden wanneer de instructie &#39;if&#39; buiten de `body` tag werd gebruikt.
+* Probleem verholpen waarbij e-mailberichten niet konden worden verzonden wanneer de instructie &#39;if&#39; buiten de `body` tag werd gebruikt. (NEO-18628)
 
 * Probleem verholpen die optrad tijdens het weergeven van de spiegelpagina vanuit de leveringslogboeken van een verzonden bericht. (NEO-17976)
 
@@ -193,7 +193,7 @@ _17 februari 2020_
 
 * Probleem verholpen waardoor sommige knoppen niet konden worden gebruikt in het scherm voor het maken van **gegevensdistributie** .
 
-* Probleem verholpen dat optrad bij het plannen van een leveringsactiviteit in een instantie met Asia/Kolkata als tijdzone. (NEO-2001)
+* Probleem verholpen dat optrad bij het plannen van een leveringsactiviteit in een instantie met Asia/Kolkata als tijdzone. (NEO-20001)
 
 * Er wordt nu een fout weergegeven wanneer een levering een probleem met de affiniteitsconfiguratie heeft.
 
