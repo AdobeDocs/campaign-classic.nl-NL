@@ -6,9 +6,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 0810608c67e6da4d9afa3a366df664594b0b6840
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2109'
 ht-degree: 95%
 
 ---
@@ -432,7 +432,7 @@ ht-degree: 95%
          + [Data verrijken](workflow/using/enriching-data.md)
          + [Werken met samenvoegingen](workflow/using/using-aggregates.md)
          + [Driemaandelijkse lijstupdate die een stijgende vraag gebruikt](workflow/using/quarterly-list-update.md)
-      + Query’s ontwerpen {#designing-queries}
+      + Doelstelling {#designing-queries}
          + [Query’s uitvoeren op de tabel met ontvangers](workflow/using/querying-recipient-table.md)
          + [Query’s uitvoeren op leveringsgegevens](workflow/using/querying-delivery-information.md)
          + [Berekening van samenvoegingen uitvoeren](workflow/using/performing-aggregate-computing.md)
