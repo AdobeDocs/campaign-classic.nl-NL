@@ -1,7 +1,7 @@
 ---
-title: Toegangsbeheer
-seo-title: Toegangsbeheer
-description: Toegangsbeheer
+title: Toegangscontrole
+seo-title: Toegangscontrole
+description: Toegangscontrole
 seo-description: null
 page-status-flag: never-activated
 uuid: 3f0cfa8f-1511-4445-9acb-b5be46e78295
@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 6c66718fbbf13486d52b0cc98eae6c854b34030d
 workflow-type: tm+mt
 source-wordcount: '2955'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Toegangsbeheer{#access-management}
+# Toegangscontrole{#access-management}
 
 ## Machtigingen {#about-permissions}
 
@@ -44,7 +44,7 @@ Er zijn twee soorten toestemmingen u aan een gebruiker kunt verlenen:
 
 >[!NOTE]
 >
->Voordat u begint met het definiëren van machtigingen, raadt Adobe u aan de [configuratiecontrolelijst](https://helpx.adobe.com/campaign/kb/acc-security.html)voor beveiliging te lezen.
+>Voordat u begint met het definiëren van machtigingen, raadt Adobe u aan de [configuratiecontrolelijst](https://helpx.adobe.com/nl/campaign/kb/acc-security.html)voor beveiliging te lezen.
 
 ## Operatoren {#operators}
 
@@ -211,7 +211,7 @@ De technische operator &#39;webapp&#39; heeft standaard het benoemde BEHEERRECHT
 
 >[!NOTE]
 >
->Voor meer informatie over de richtlijnen van de Veiligheid, verwijs naar checklist [van de Configuratie van de Veiligheid van](https://helpx.adobe.com/campaign/kb/acc-security.html)Adobe Campaign.
+>Voor meer informatie over de richtlijnen van de Veiligheid, verwijs naar checklist [van de Configuratie van de Veiligheid van](https://helpx.adobe.com/nl/campaign/kb/acc-security.html)Adobe Campaign.
 
 ## Exploitantgroepen {#operator-groups}
 
@@ -331,7 +331,7 @@ Deze rechten zijn als volgt:
 
 * **[!UICONTROL PREPARE DELIVERIES]**: Recht om een levering te maken, te bewerken en op te slaan. Gebruikers met het **[!UICONTROL PREPARE DELIVERIES]** recht kunnen ook het analyseproces voor de levering starten.
 
-* **[!UICONTROL PRIVACY DATA RIGHT]**: Recht om privacygegevens te verzamelen en te schrappen. Raadpleeg [deze pagina](https://helpx.adobe.com/campaign/kb/acc-privacy.html) voor meer informatie.
+* **[!UICONTROL PRIVACY DATA RIGHT]**: Recht om privacygegevens te verzamelen en te schrappen. Raadpleeg [deze pagina](https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html) voor meer informatie.
 
 * **[!UICONTROL PROGRAM EXECUTION]**: Recht om bevelen in diverse programmeertalen uit te voeren.
 
@@ -357,7 +357,7 @@ Met standaardgroepen en benoemde rechten hebben operatoren toegang tot bepaalde 
 
 De Adobe Campaign-matrix voor toegangsrechten is [hier](/help/platform/using/assets/access-rights-matrix.pdf)beschikbaar.
 
-[![image](assets/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
+[![image](assets/do-not-localize/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
 
 ## Toegangsbeheer voor mappen {#folder-access-management}
 
