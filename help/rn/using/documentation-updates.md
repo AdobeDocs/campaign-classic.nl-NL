@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8198c4aa6eccc0cbb5de4712ebdd8000783b615c
+source-git-commit: 70efc8a7f1fab68d73e36b4373116c4aaaa0af5d
 workflow-type: tm+mt
-source-wordcount: '7096'
-ht-degree: 95%
+source-wordcount: '7164'
+ht-degree: 94%
 
 ---
 
@@ -45,7 +45,7 @@ Hoe kan ik-video&#39;s zijn nu beschikbaar over de volgende onderwerpen:
 
 * [AMP activeren en gebruiken voor e-mailberichten](../../delivery/using/defining-interactive-content.md)
 
-* [E-mails personaliseren met gebruik van dynamische inhoudsblokken](../../delivery/using/personalization-blocks.md)
+* [E-mails personaliseren met behulp van dynamische contentblokken](../../delivery/using/personalization-blocks.md)
 
 * [E-mails personaliseren met personalisatievelden](../../delivery/using/personalization-fields.md)
 
@@ -56,6 +56,15 @@ Hoe kan ik-video&#39;s zijn nu beschikbaar over de volgende onderwerpen:
 * [Hoe te opstelling een ononderbroken levering](../../workflow/using/continuous-delivery.md)
 
 Er is informatie toegevoegd over de controles en handelingen die moeten worden uitgevoerd wanneer de fout &quot;Kan hostnaam niet oplossen&quot; wordt opgehaald nadat verbinding is gemaakt met een FTP-server. [Meer informatie](../../platform/using/sftp-server-usage.md)
+
+Er wordt verwezen naar nieuwe gevallen van gebruik in de lijst met gevallen waarin [werkstromen worden gebruikt](../../workflow/using/about-workflow-use-cases.md):
+
+* Automatisch content maken, editie en publiceren automatiseren
+* Een goedkeuringsproces voor ontvangers instellen voordat een levering wordt verzonden
+* Instantievariabelen aanroepen in een query
+* Een gesplitst percentage toepassen op een populatie
+
+De sectie **[!UICONTROL AND-join]** Activiteit is verrijkt met aanvullende informatie over het gebruik ervan en met een opmerking over het gebruik van variabelen. [Meer informatie](../../workflow/using/and-join.md)
 
 ## Juli 2020 {#july-2020}
 
