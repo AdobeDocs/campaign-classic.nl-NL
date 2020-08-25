@@ -1,8 +1,6 @@
 ---
-title: Vork
-seo-title: Vork
-description: Vork
-seo-description: null
+title: Vertakking
+description: Vertakking
 page-status-flag: never-activated
 uuid: 90db1991-cff9-4dbd-a478-7aae1d845836
 contentOwner: sauviat
@@ -15,16 +13,20 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: f7ed7e59be2cfbde467b0c80d21cfbf52016a2b8
+workflow-type: tm+mt
+source-wordcount: '72'
+ht-degree: 4%
 
 ---
 
 
-# Vork{#fork}
+# Vertakking{#fork}
 
-Met een vork kunt u meerdere activiteiten parallel uitvoeren.
+Met een vork kunt u alle uitgaande activiteiten parallel activeren.
 
-Dubbelklik op het grafische object om het aantal uitgaande overgangen te definiëren, een nieuwe overgang te maken of het label van de geselecteerde overgang te wijzigen.
+U kunt de activiteit bijvoorbeeld gebruiken in de context van het maken van inhoud en het verzenden van inhoud, zodat u de doelberekening en het maken van inhoud tegelijkertijd kunt starten. Er is een speciale gebruiksaanwijzing beschikbaar in [deze sectie](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content).
+
+Om de activiteit te vormen, open het dan het aantal en het etiket van de gewenste uitgaande overgangen bepaalt.
 
 ![](assets/s_user_segmentation_fork.png)
-
