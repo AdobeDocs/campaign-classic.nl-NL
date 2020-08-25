@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9d36192a768fd0162f2301a5fe0437074d0fda58
+source-git-commit: c959c0e8ace1eaaa768ea04c194eaccac0b35344
+workflow-type: tm+mt
+source-wordcount: '1238'
+ht-degree: 2%
 
 ---
 
@@ -74,23 +77,29 @@ De variabelen zijn de vrije eigenschappen van de objecten **[!UICONTROL instance
 
 ### Instantievariabelen {#instance-variables}
 
-De instantievariabelen (**[!UICONTROL instance.vars.xxx]**) zijn vergelijkbaar met algemene variabelen.  Ze worden door alle activiteiten gedeeld.
+De instantievariabelen (**[!UICONTROL instance.vars.xxx]**) zijn vergelijkbaar met algemene variabelen. Ze worden door alle activiteiten gedeeld.
 
 ### Taakvariabelen {#task-variables}
 
-De taakvariabelen (**[!UICONTROL task.vars.xxx]**) zijn vergelijkbaar met lokale variabelen.  Ze worden alleen gebruikt door de huidige taak. Deze variabelen worden gebruikt door permanente activiteiten om gegevens te bewaren en worden soms gebruikt om gegevens tussen de verschillende manuscripten van een zelfde activiteit uit te wisselen.
+De taakvariabelen (**[!UICONTROL task.vars.xxx]**) zijn vergelijkbaar met lokale variabelen. Ze worden alleen gebruikt door de huidige taak. Deze variabelen worden gebruikt door permanente activiteiten om gegevens te bewaren en worden soms gebruikt om gegevens tussen de verschillende manuscripten van een zelfde activiteit uit te wisselen.
 
 ### Gebeurtenisvariabelen {#event-variables}
 
 Met de gebeurtenisvariabelen (**[!UICONTROL vars.xxx]**) kunt u gegevens uitwisselen tussen de elementaire taken van een workflowproces. Deze variabelen worden doorgegeven door de taak die de actieve taak heeft geactiveerd. Het is mogelijk deze te wijzigen en nieuwe te definiëren. Deze worden vervolgens doorgegeven aan de volgende activiteiten.
 
-In het geval van **AND-join** type activiteiten, worden de variabelen samengevoegd maar als één variabele tweemaal wordt bepaald, is er een conflict en de waarde blijft onbepaald.
+>[!CAUTION]
+>
+>In het geval van [AND-join](../../workflow/using/and-join.md) type activiteiten, worden de variabelen samengevoegd maar als één variabele tweemaal wordt bepaald, is er een conflict en de waarde blijft onbepaald.
 
-Dit zijn de meest gebruikte variabelen, en zij zouden in voorkeur aan instantievariabelen moeten worden gebruikt.
+Gebeurtenissen zijn de meest gebruikte variabelen en moeten bij voorkeur worden gebruikt in plaats van instantievariabelen.
 
 Bepaalde gebeurtenisvariabelen worden door de verschillende activiteiten gewijzigd of gelezen. Dit zijn allemaal tekenreeksvariabelen. Met een exportbewerking wordt bijvoorbeeld de **[!UICONTROL vars.filename]** variabele ingesteld met de volledige naam van het bestand dat zojuist is geëxporteerd. Al deze gelezen of gewijzigde variabelen worden gedocumenteerd in [Informatie over activiteiten](../../workflow/using/about-activities.md), in de secties **Invoerparameters** en **Output parameters** van de activiteiten.
 
-### Voorbeelden {#example}
+### Gebruiksscenario’s {#example}
+
+>[!NOTE]
+>
+>Er zijn extra gevallen van werkloos gebruik beschikbaar in [deze sectie](../../workflow/using/about-workflow-use-cases.md).
 
 **Voorbeeld 1**
 
@@ -106,7 +115,7 @@ In dit voorbeeld wordt een instantievariabele gebruikt om dynamisch het gesplits
 
 1. Voeg een activiteit van de Vraag en doelontvangers volgens uw behoeften toe.
 
-1. Voeg een gesplitste activiteit toe en vorm het om een willekeurige steekproef van de inkomende bevolking uit te voeren. U kunt het gewenste percentage kiezen. Deze wordt in dit voorbeeld op 50% ingesteld.
+1. Voeg een gesplitste activiteit toe en vorm het om een willekeurige steekproef van de inkomende bevolking uit te voeren. U kunt het gewenste percentage kiezen. Deze wordt in dit voorbeeld ingesteld op 50%.
 
    Dit percentage wordt dynamisch bijgewerkt dankzij de eerder gedefinieerde instantievariabele.
 
