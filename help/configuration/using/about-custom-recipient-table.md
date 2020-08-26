@@ -1,7 +1,7 @@
 ---
-title: Over aangepaste tabel voor ontvangers
-seo-title: Over aangepaste tabel voor ontvangers
-description: Over aangepaste tabel voor ontvangers
+title: Aangepaste tabel voor ontvangers
+seo-title: Aangepaste tabel voor ontvangers
+description: Aangepaste tabel voor ontvangers
 seo-description: null
 page-status-flag: never-activated
 uuid: 4b162da4-90d2-44ff-9f89-ff0275540359
@@ -15,16 +15,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 668a0093616e1a2b49623b010ae5055f4d43d9b9
+source-git-commit: 6c76ce3e6da41a80d1df2adfcb17fd7c0f85b894
+workflow-type: tm+mt
+source-wordcount: '669'
+ht-degree: 2%
 
 ---
 
 
-# Over aangepaste tabel voor ontvangers{#about-custom-recipient-table}
+# Aangepaste tabel voor ontvangers{#about-custom-recipient-table}
 
 In deze sectie worden de beginselen beschreven voor het gebruik van een niet-standaardtabel voor ontvangers.
 
-Standaard biedt Adobe Campagne een standaard ontvangende tabel waaraan functies en processen buiten de box zijn gekoppeld. De standaard ontvankelijke lijst heeft een aantal vooraf bepaalde gebieden en lijsten die gemakkelijk kunnen worden uitgebreid gebruikend een uitbreidingslijst.
+Adobe Campaign biedt standaard een standaard ontvangende tabel aan waaraan functies en processen buiten de box zijn gekoppeld. De standaard ontvankelijke lijst heeft een aantal vooraf bepaalde gebieden en lijsten die gemakkelijk kunnen worden uitgebreid gebruikend een uitbreidingslijst.
 
 Als deze extensiemethode voldoende flexibiliteit biedt om een tabel uit te breiden, is het niet mogelijk het aantal velden of koppelingen in de tabel te beperken. Het gebruiken van een niet-standaardlijst, of &quot;externe ontvankelijke lijst&quot;, staat voor een grotere flexibiliteit toe maar vereist bepaalde voorzorgsmaatregelen wanneer het uitvoeren van het.
 
@@ -32,20 +35,20 @@ Als deze extensiemethode voldoende flexibiliteit biedt om een tabel uit te breid
 
 Met deze functionaliteit kan Adobe Campaign gegevens uit een externe database verwerken: deze gegevens worden gebruikt als een reeks profielen voor leveringen . Bij de implementatie van dit proces zijn verschillende definities nodig die relevant kunnen zijn voor de behoeften van de klant. Bijvoorbeeld:
 
-* Geen updatestream van en naar de Adobe Campagne-database: gegevens uit deze tabel kunnen rechtstreeks worden bijgewerkt via de database-engine die de tabel host.
+* Geen updatestream van en naar de Adobe Campaign-database: gegevens uit deze tabel kunnen rechtstreeks worden bijgewerkt via de database-engine die de tabel host.
 * Geen wijzigingen in de processen die op de bestaande database worden uitgevoerd.
 * Een profieldatabase gebruiken met een niet-standaardstructuur: de mogelijkheid om profielen die in verschillende tabellen zijn opgeslagen, met verschillende structuren te leveren met behulp van één exemplaar.
-* Er zijn geen wijzigingen of onderhoud vereist tijdens het bijwerken van de Adobe Campagne-database.
+* Geen wijzigingen of onderhoud vereist bij het bijwerken van de Adobe Campaign-database.
 * De standaard ontvankelijke lijst is nutteloos als u niet de meeste lijstgebieden nodig hebt of als het gegevensbestandmalplaatje niet op de ontvangers wordt gecentreerd.
 * Om efficiënt te zijn, is een lijst met weinig gebieden nodig als u een significant aantal profielen hebt. De standaard ontvangende tabel heeft te veel velden voor dit specifieke geval.
 
-In deze sectie worden de belangrijkste punten beschreven waarmee u bestaande tabellen in Adobe Campaign kunt toewijzen en de configuratie die u wilt toepassen om leveringen uit te voeren op basis van een tabel. Tot slot beschrijft het hoe te om gebruikers van het vragen van interfaces te voorzien zoals praktisch die beschikbaar met de standaard ontvankelijke lijst. Om het materiaal te begrijpen dat in deze sectie wordt gepresenteerd, is een goede kennis van de beginselen van scherm- en schemaontwerp vereist.
+In deze sectie worden de belangrijkste punten beschreven waarmee u bestaande tabellen in Adobe Campaign kunt toewijzen en de configuratie die moet worden toegepast om leveringen uit te voeren op basis van een tabel. Tot slot beschrijft het hoe te om gebruikers van het vragen van interfaces te voorzien zoals praktisch die beschikbaar met de standaard ontvankelijke lijst. Om het materiaal te begrijpen dat in deze sectie wordt gepresenteerd, is een goede kennis van de beginselen van scherm- en schemaontwerp vereist.
 
-## Aanbevelingen en beperkingen {#recommendations-and-limitations}
+## Recommendations en beperkingen {#recommendations-and-limitations}
 
 Het gebruiken van een externe ontvankelijke lijst heeft de volgende beperkingen:
 
-* De Campagne van Adobe steunt veelvoudige ontvankelijke schema&#39;s, die als richtingsschema&#39;s worden bekend, verbonden aan de zelfde brede en/of trackinglogschema&#39;s. Dit kan anders leiden tot anomalieën in de afstemming van gegevens achteraf.
+* Adobe Campaign steunt geen veelvoudige ontvankelijke schema&#39;s, weet als het richten van schema&#39;s, verbonden aan de zelfde brede en/of trackinglogschema&#39;s. Dit kan anders leiden tot anomalieën in de afstemming van gegevens achteraf.
 
    In de onderstaande afbeelding ziet u de vereiste relationele structuur voor elk schema voor aangepaste ontvangers:
    ![](assets/custom_recipient_limitation.png)
@@ -61,7 +64,7 @@ Het gebruiken van een externe ontvankelijke lijst heeft de volgende beperkingen:
 
 * De koppeling met de **[!UICONTROL visitor]** tabel werkt niet.
 
-   Aldus, om de **[!UICONTROLSsociale module van de Marketing]** te gebruiken moet u de opslagstap vormen om de correcte lijst van verwijzingen te voorzien.
+   Aldus, om de **[!UICONTROL Social Marketing]** module te gebruiken moet u de opslagstap vormen om de correcte lijst van verwijzingen te voorzien.
 
    Op dezelfde manier moet bij het gebruik van verwijzingsfuncties het standaard eerste berichtoverdrachtmodel worden aangepast.
 
