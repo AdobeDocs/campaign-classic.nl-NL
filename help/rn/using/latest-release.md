@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 251244225076dd11a319d1c4b2124c0d05168eaa
+source-git-commit: c96c94fe0b98e298968c329466ee4e2e04b11a35
 workflow-type: tm+mt
-source-wordcount: '1976'
-ht-degree: 86%
+source-wordcount: '1975'
+ht-degree: 85%
 
 ---
 
@@ -92,7 +92,7 @@ _8 juni 2020_
  <tbody> 
   <tr> 
    <td> <p>De Thaise wet inzake de bescherming van persoonsgegevens (PDPA) is de nieuwe privacywet die de vereisten inzake databescherming voor Thailand harmoniseert en moderniseert. </p>
-   <p>De Braziliaanse wet inzake gegevensbescherming (Lei Geral de Proteção de Dados, LGPD) is vanaf 16 augustus van kracht voor alle bedrijven die in Brazilië persoonsdata verzamelen of verwerken.</p>
+   <p>Lei Geral de Proteção de Dados (LGPD) van Brazilië zal begin 2021 in werking treden voor alle bedrijven die in Brazilië persoonsgegevens verzamelen of verwerken.</p>
    <p>Deze voorschriften zijn van toepassing op Adobe Campaign-klanten die data bewaren voor in deze landen wonende betrokken personen. Naast de privacymogelijkheden die reeds beschikbaar zijn in Campaign (met inbegrip van toestemmingsbeheer, instellingen voor dataretentie en gebruikersrollen), grijpen wij deze kans om extra mogelijkheden op te nemen om u te helpen uw gereedheid voor PDPA en LGPD te vergemakkelijken:</p>
    <ul> 
      <li><p>Recht op toegang en recht op verwijdering: wij gebruiken de mogelijkheden die voor AVG en CCPA zijn toegevoegd. <a href="https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html">Meer informatie</a></p></li> 
