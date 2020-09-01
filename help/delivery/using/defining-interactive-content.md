@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f52e00ade7c97662eb4061e19fd38b863b2c2bd3
+source-git-commit: 80de051cde62038c11246f8da08a7e00505a3313
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1616'
 ht-degree: 3%
 
 ---
@@ -33,10 +33,9 @@ Zie [Een AMP-e-mail](#targeting-amp-email)richten voor meer informatie over het 
 
 Deze functie is beschikbaar via een speciaal pakket in Adobe Campaign. Dit pakket moet geïnstalleerd zijn om het te kunnen gebruiken. Start vervolgens de server opnieuw om rekening te houden met het pakket.
 
-    >[!OPMERKING]
-    >
-    > Voor hybride en gehoste architecturen moet het pakket op alle servers worden geïnstalleerd, inclusief de [server voor midsourcing](../../installation/using/mid-sourcing-server.md) en de [uitvoeringsinstantie](../../message-center/using/creating-a-shared-connection.md#execute-instance). Neem contact op met uw accountmanager.
-
+>[!NOTE]
+>
+> Voor hybride en gehoste architecturen moet het pakket op alle servers worden geïnstalleerd, inclusief de [mid-sourcingserver](../../installation/using/mid-sourcing-server.md) en de [uitvoeringsinstantie](../../message-center/using/creating-a-shared-connection.md#execution-instance). Neem contact op met uw accountmanager.
 
 ## Informatie over AMP voor e-mail {#about-amp-for-email}
 
