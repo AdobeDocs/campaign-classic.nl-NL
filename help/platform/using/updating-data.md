@@ -1,7 +1,7 @@
 ---
-title: Gegevens bijwerken
-seo-title: Gegevens bijwerken
-description: Gegevens bijwerken
+title: Data bijwerken
+seo-title: Data bijwerken
+description: Data bijwerken
 seo-description: null
 page-status-flag: never-activated
 uuid: 3a192934-215a-4a0a-a141-956b5c229f5b
@@ -15,18 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+source-git-commit: 98c880e1218f179b8b804d52690135a2f28520a0
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 3%
 
 ---
 
 
-# Gegevens bijwerken{#updating-data}
+# Data bijwerken{#updating-data}
 
 De gegevens die aan het profiel van een ontvanger zijn gekoppeld, kunnen handmatig of automatisch worden bijgewerkt.
 
 ## Een automatische update instellen {#setting-up-an-automatic-update}
 
-Een automatische update kan worden geconfigureerd via een workflow. Zie [deze sectie](../../workflow/using/update-data.md)voor meer informatie.
+Een automatische update kan worden geconfigureerd via een workflow. Raadpleeg [deze sectie](../../workflow/using/update-data.md) voor meer informatie.
 
 ## Een massa-update uitvoeren {#performing-a-mass-update}
 
@@ -84,7 +87,7 @@ Klik **[!UICONTROL Compute]** om het resultaat van uw keuze weer te geven.
 
 Controleer de **[!UICONTROL Result]** kolommen van beide secties van het venster en klik om de samenvoeging **[!UICONTROL Finish]** uit te voeren.
 
-## Gegevens exporteren {#exporting-data}
+## Data exporteren {#exporting-data}
 
 De inhoud van een lijst kan worden geëxporteerd. Het exporteren configureren en uitvoeren:
 
