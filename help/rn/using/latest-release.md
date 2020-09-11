@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c96c94fe0b98e298968c329466ee4e2e04b11a35
+source-git-commit: f92180f93850d5bc33e74210d17cdd36c0c15e5f
 workflow-type: tm+mt
-source-wordcount: '1975'
-ht-degree: 85%
+source-wordcount: '2119'
+ht-degree: 80%
 
 ---
 
@@ -25,7 +25,20 @@ ht-degree: 85%
 
 ![](assets/do-not-localize/cp-icon.png) **Release van nieuw configuratiescherm in juni** met controle van actieve profielen, controle van de leverbaarheid van subdomeinen en beheer van GPG-sleutels. [Meer informatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/blue_2.png) Release 20.2.2 - build 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/blue_2.png) Release 20.2.3 - build 9182 {#release-20-2-3-build-9182}
+
+_11 september 2020_
+
+* Oplossing voor een regressie waarbij de voorbereiding van de levering werd geblokkeerd als gevolg van één foutieve functie op het leveringsonderdeel, wat tot geheugenoverbelasting leidde. (NEO-27346)
+* Probleem verholpen waarbij Apache en de webserver werden uitgeschakeld voordat de webtoepassing opnieuw werd gepubliceerd. (NEO-27155)
+* Oplossing voor een regressie in HTML-sjabloonbeheer die ertoe leidde dat URL&#39;s werden bijgehouden omdat tabs verkeerd werden geïnterpreteerd. (NEO-25909)
+* Probleem opgelost met de workflow voor het opschonen van databases die zou kunnen mislukken als gevolg van niet-beheerde gegevensbron. (NEO-23160, NEO-23364)
+* De opschoningsworkflow wordt nu verwijderd door verlopen lijsten met 100 batches in plaats van één voor één.
+* Probleem verholpen waarbij de interne naam van een externe account niet kon worden gewijzigd. (NEO-27323)
+* Een regressie herstellen tijdens een postupgrade, wat een onjuiste start van nlserver veroorzaakt (foutlogboeken).
+* Het updatebeheer voor gedeeld geheugen is verbeterd. De extra stappen die in 20.2 worden vereist zijn niet meer nodig.
+
+## ![](assets/do-not-localize/orange_2.png) Release 20.2.2 - build 9180 {#release-20-2-2-build-9180}
 
 _22 juli 2020_
 
