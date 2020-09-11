@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
+source-git-commit: aeedcfb489e0dc0cd62e4472dc86102fa40cf6b4
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 1%
@@ -69,7 +69,7 @@ Afhankelijk van de geselecteerde database-engine kan de identificatie-informatie
 * Voor een **PostgreSQL** - of **DB2** -engine moet u de DNS-naam (of het IP-adres) opgeven die op de toepassingsserver is gedefinieerd om toegang te krijgen tot de databaseserver.
 * Voor een **Microsoft SQL Server** -engine moet u het volgende definiëren:
 
-   1. de DNS-naam (of het IP-adres) die op de toepassingsserver is gedefinieerd voor toegang tot de databaseserver: **DNS** of **DNS\ `<instance>`** (instantiemodus),
+   1. de DNS-naam (of het IP-adres) die op de toepassingsserver is gedefinieerd voor toegang tot de databaseserver: **DNS** of **DNS`\<instance>`** (instantiemodus),
    1. de authentificatiemethode die wordt gebruikt om tot de Server van Microsoft SQL toegang te hebben: **[!UICONTROL SQL Server authentication]** of **[!UICONTROL Windows NT authentication]**.
 
       ![](assets/s_ncs_install_db_mssql_creation01.png)
