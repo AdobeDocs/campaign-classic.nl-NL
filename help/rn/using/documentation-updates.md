@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 70efc8a7f1fab68d73e36b4373116c4aaaa0af5d
+source-git-commit: 562f9f5411284cdf763821b0179ae795fa4bc48a
 workflow-type: tm+mt
-source-wordcount: '7164'
+source-wordcount: '7184'
 ht-degree: 94%
 
 ---
@@ -26,6 +26,10 @@ ht-degree: 94%
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates per maand en per Campaign-release.
 
 U kunt ook de [Adobe Campaign Classic-release-opmerkingen](../../rn/using/latest-release.md) raadplegen voor meer updates.
+
+## September 2020 {#september-2020}
+
+* Er is een opmerking toegevoegd om op te geven dat het aantal actieve profielen alleen beschikbaar is voor marketinginstanties. [Meer informatie](../../platform/using/about-profiles.md#active-profiles)
 
 ## Augustus 2020 {#aug-2020}
 
