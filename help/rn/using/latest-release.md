@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f92180f93850d5bc33e74210d17cdd36c0c15e5f
+source-git-commit: 2bd946fc0e5b206280a7946e0cbc6fa6d1be90f2
 workflow-type: tm+mt
-source-wordcount: '2119'
-ht-degree: 80%
+source-wordcount: '2161'
+ht-degree: 76%
 
 ---
 
@@ -45,13 +45,13 @@ _22 juli 2020_
 * Probleem verholpen waarbij tracering niet werkte toen de handtekeningfunctie was uitgeschakeld. (NEO-26411)
 * Probleem verholpen waarbij niet-ondertekende koppelingen van gepersonaliseerde domeinen werden geblokkeerd op het moment dat ze moesten worden toegestaan. (NEO-25210)
 * Probleem verholpen waardoor u URL&#39;s voor bijhouden niet kunt openen of erop kunt klikken wanneer u bepaalde oudere versies van Outlook gebruikt. (NEO-25688)
-* Probleem verholpen waarbij URL&#39;s van pagina&#39;s die onjuist zijn gedefinieerd in e-mailleveringen werden gespiegeld. (NEO-26084)
+* Probleem verholpen waarbij pagina-URL&#39;s die niet correct zijn gedefinieerd in e-mailleveringen werden gespiegeld (vanwege onjuiste ASCII-tekenbesturing). (NEO-26084)
 * Probleem met coderen van URL-beheer in de service voor anti-phishing is opgelost. (NEO-25283)
 * Probleem verholpen waarbij het bijhouden van URL&#39;s met fragmenten in personalisatieparameters (ankerlabels met hekje) niet werkte. (NEO-25774)
 * Probleem met bijhouden opgelost bij het gebruik van specifieke aangepaste volgformules. (NEO-25277) Probleem opgelost waarbij het bijhouden van &quot;meldingskliks&quot; niet werkte (iOS- en Android-pushmeldingen). (NEO-25965)
-* Oplossing voor een regressie die invloed had op berekende velden in een werkstroom. (NEO-25194)
+* Oplossing voor een regressie die invloed had op berekende velden in een werkstroom waardoor de werkstroom mislukte. (NEO-25194)
 * Oplossing voor een regressie die ervoor zorgde dat het direct maken van URL&#39;s voor webtracering niet werkte. (NEO-20999)
-* Probleem verholpen met leveringsrapporten buiten de doos die werden afgekapt tijdens het exporteren naar PDF. (NEO-25757)
+* Probleem met regressie verholpen met leveringsrapporten buiten de doos die werden afgekapt tijdens het exporteren naar PDF. (NEO-25757)
 * Probleem verholpen waarbij de toepassing vastliep in de wizard voor implementatie.
 * Probleem verholpen waardoor de workflow voor het melden van voorstellen na een postupgrade niet correct kon werken.
 * De iOS HTTP2-connector is verbeterd (updates van derden en foutbeheer). (NEO-25904, NEO-25903)
@@ -239,7 +239,7 @@ Een voorbeeld voor Linux is beschikbaar op deze [pagina](../../configuration/usi
 * Probleem verholpen dat invloed zou kunnen hebben op pushmeldingen wanneer deze op een hoge frequentie worden verzonden. (NEO-20516)
 * Probleem verholpen waarbij bij de volgende trackingdata duplicaten werden opgenomen, ook al werden deze niet bijgehouden in de trackinglogboeken. (NEO-20040)
 * Probleem verholpen waarbij dubbele transactionele e-mails werden verzonden nadat een fout met de communicatie van de trackingserver was verholpen. (NEO-23640)
-* Probleem verholpen waarbij de parameterwaarde voor codering tijdens het omleiden van een tracking-URL werd verwijderd. (NEO-25637)
+* Probleem verholpen waarbij de waarde van de coderingsparameter werd verwijderd bij omleiding van een URL voor reeksspatiëring (invloed op Japanse tekens). (NEO-25637)
 * Probleem verholpen waarbij een query niet werkte bij het vergelijken van getallen met drijvende komma’s. (NEO-23243)
 * Probleem verholpen waarbij de weergave van de content van de kolom **Modified by** kon worden verhinderd nadat een workflow opnieuw was gestart. (NEO-23035)
 * Probleem opgelost waarbij het downloaden van logboekbestanden uit een tweede container tot mislukken van de technische workflow voor tracking leidde. (NEO-23159)
@@ -249,7 +249,7 @@ Een voorbeeld voor Linux is beschikbaar op deze [pagina](../../configuration/usi
 * Probleem verholpen met extra opslagvelden tijdens het maken van leveringen via de optie **Computed by a script** in de workflowactiviteit **Script**. (NEO-20609)
 * Probleem verholpen waarbij dubbele workflows niet werden verwijderd binnen de opschoningstaken voor de database.
 * Probleem verholpen waarbij de technische workflow voor **facturering (actieve profielen)** mislukte. (NEO-19777)
-* Probleem verholpen tijdens het testen van de verbinding van het externe account van acsDefaultAccount. (NEO-23433)
+* Oplossing voor een regressieprobleem bij gebruik van de ACS-connectorfunctie die de verbinding met een Campaign Standard-instantie heeft verhinderd (onjuist beheer van de FOH/FOH2-verbinding). (NEO-23433)
 * Probleem verholpen waardoor u geen schema-extensie voor een primaire sleutel met meerdere kolommen met een Hadoop-tabel kon maken. (NEO-17390)
 * Probleem verholpen in de activiteit **Laden (SOAP)** waardoor WSDL-bestanden soms niet niet vanaf een URL konden worden geladen. (NEO-16924)
 * Probleem verholpen waardoor u geen **onvoorwaardelijke stop** kon uitvoeren via de console wanneer meerdere actieve workflowservers een gelijke taakverdeling hadden. (NEO-19556)
@@ -261,6 +261,6 @@ Een voorbeeld voor Linux is beschikbaar op deze [pagina](../../configuration/usi
 * Probleem verholpen waarbij een levering twee keer in de leveringslijst kon worden weergegeven nadat deze was verzonden.
 * Probleem met de leveringsvoorbereiding verholpen dat kon optreden wanneer de routeringsconfiguratie was ingesteld om de levering via midsourcing te verzenden.
 * Probleem verholpen waarbij een foutbericht kon worden weergegeven wanneer op een koppeling voor een webapplicatie in een Line-bericht werd geklikt.
-* Probleem verholpen waarbij Microsoft Dynamics CRM niet alle entiteiten kon ophalen. (NEO-24528)
 * Probleem verholpen waarbij de geschiedenis van de activiteit **Incrementele query** werd verwijderd na het uitvoeren van de opschoningsworkflow.
-* Probleem verholpen bij het maken van een extern account voor midsourcing waarbij de optie NmsMidSourcing_LastBroadLog_&lt;InternalName> ontbrak.
+* Probleem verholpen bij het maken van een extern account voor midsourcing waarbij de optie NmsMidSourcing_LastBroadLog_&lt;InternalName> ontbrak..
+* Probleem met regressie bij databaseverbinding verholpen waarbij de webserver voortdurend opnieuw werd opgestart als gevolg van een probleem met de databasecodering. Dit kan leiden tot overconsumptie. (NEO-23264)
