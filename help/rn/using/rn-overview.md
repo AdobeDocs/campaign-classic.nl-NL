@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 27a72257904ff356b1a341c29f9a1ab3ccb20dd2
+source-git-commit: ac2d993f525eb918ad5e15104eb3ede9eeadfb43
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 3%
+ht-degree: 10%
 
 ---
 
@@ -37,9 +37,9 @@ Vanaf Campaign Classic 19.2, wordt een status geassocieerd aan elke bouwstijl. H
 
 De **laatste stabiele build** is Gold Standard 6. Klik [hier](../../rn/using/gold-standard.md)
 
-![](assets/do-not-localize/limited.png) **Beperkte beschikbaarheid** - build momenteel in productievalidering. Alleen on demand-implementatie.
+![](assets/do-not-localize/limited3.png) **Beperkte beschikbaarheid** - build momenteel in productievalidering. Alleen on demand-implementatie.
 
-![](assets/do-not-localize/blue3.png) **Release-kandidaat** - build gevalideerd door Adobe. Wachten op proefdrukken van de productie.
+![](assets/do-not-localize/blue3.png) **Release-kandidaat** - build gevalideerd door Adobe. Wachten op controle van productie.
 
 ![](assets/do-not-localize/orange3.png) **Niet meer beschikbaar** - Nieuwere build beschikbaar met opgeloste problemen. Bijwerken is vereist.
 
@@ -51,7 +51,7 @@ Als gehoste klant (Managed Service of Hybrid) moet u contact opnemen met het zor
 
 Als gebruiker van de Gold Standard profiteert u automatisch van de Gold Standard-upgrade met de nieuwste stabiele versie zonder enige actie. [Meer informatie](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-6)
 
-Als gebruiker op locatie kunt u de upgrade uitvoeren. Hiervoor moet u de nieuwste stabiele build [](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) downloaden en al uw omgevingen upgraden. Lees meer over het [upgradeproces](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)en raadpleeg de veelgestelde vragen over [upgrades](https://helpx.adobe.com/campaign/kb/build-upgrade-faq.html).
+Als gebruiker op locatie kunt u de upgrade uitvoeren. Hiervoor moet u de nieuwste stabiele build [](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) downloaden en al uw omgevingen upgraden. Lees meer over het [upgradeproces](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html)en raadpleeg de veelgestelde vragen over [upgrades](https://helpx.adobe.com/nl/campaign/kb/build-upgrade-faq.html).
 
 ## Aanbevelingen{#recommendations}
 
