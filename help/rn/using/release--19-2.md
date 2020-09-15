@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c7b00960ffde49df65cd5c8fcfb8fab6aee485d7
+source-git-commit: 9357be26b1bc436b19861faa2a43ec6a17cb5b3c
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 2%
+source-wordcount: '1318'
+ht-degree: 8%
 
 ---
 
@@ -38,7 +38,7 @@ _7 februari 2020_
 
 _2 december 2019_
 
-**Nieuwe functies?**
+**Nieuwe functies**
 
 <table> 
  <thead> 
@@ -66,7 +66,7 @@ _2 december 2019_
  <tbody> 
   <tr> 
    <td> <p>U kunt nu de uitvoeringsstatus van alle workflows op uw exemplaar controleren met behulp van vooraf gedefinieerde weergaven.</p>
-   <p>Raadpleeg de <a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status">gedetailleerde documentatie</a>voor meer informatie.</p></td> 
+   <p>Raadpleeg de <a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status">gedetailleerde documentatie</a> voor meer informatie.</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -82,7 +82,7 @@ _2 december 2019_
   <tr> 
 <td> <p>Met Adobe Campaign kunt u de nieuwe interactieve <a href="https://amp.dev/about/email/">AMP uitproberen voor de indeling E-mail</a> , waarmee marketers AMP-componenten in berichten kunnen opnemen om de e-mailbeleving te verbeteren met rijke, dynamische en interactieve inhoud die rechtstreeks in het bericht zelf kan worden geactiveerd.</p>
    <p>Dit vermogen wordt vrijgegeven als openbare bèta.</p>
-   <p>Raadpleeg de <a href="../../delivery/using/defining-interactive-content.md">gedetailleerde documentatie</a> en de <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">zelfstudie-video</a>voor meer informatie.</p><br /></td> 
+   <p>Raadpleeg de <a href="../../delivery/using/defining-interactive-content.md">gedetailleerde documentatie</a> en de <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">videotutorial</a>voor meer informatie.</p><br /></td> 
   </tr> 
  </tbody> 
 </table>
@@ -96,7 +96,7 @@ _2 december 2019_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>Beveiligd SMS wordt nu ondersteund via de uitgebreide algemene SMPP-connector. Hierdoor is een gecodeerde verbinding met de provider mogelijk.</p> <p><strong>Waarschuwing</strong> Voor deze functie is een bijgewerkt certificaat op alle servers vereist. Ongeldige, ingetrokken of verlopen certificaten genereren fouten die de algemene mogelijkheden voor het verzenden van SMS beïnvloeden.</p><p>Raadpleeg de <a href="https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html">gedetailleerde documentatie</a>voor meer informatie. </p> </td> 
+<td> <p>Beveiligd SMS wordt nu ondersteund via de uitgebreide algemene SMPP-connector. Hierdoor is een gecodeerde verbinding met de provider mogelijk.</p> <p><strong>Waarschuwing</strong> Voor deze functie is een bijgewerkt certificaat op alle servers vereist. Ongeldige, ingetrokken of verlopen certificaten genereren fouten die de algemene mogelijkheden voor het verzenden van SMS beïnvloeden.</p><p>Raadpleeg de <a href="https://helpx.adobe.com/nl/campaign/kb/sms-connector-protocol-and-settings.html">gedetailleerde documentatie</a> voor meer informatie. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -126,11 +126,11 @@ _2 december 2019_
 
 _Verouderde systemen_
 
-De volgende systemen zijn nu [verouderd](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) voor Campaign Classic-implementaties:
+The following systems are now [deprecated](https://helpx.adobe.com/nl/campaign/kb/deprecated-and-removed-features.html) for Campaign Classic implementations:
 * Apache 2.2
 * Centos 6
 
-Zorg ervoor dat u beschikt over ondersteunde versies van alle systemen die in de nieuwste matrix voor campagnecompatibiliteit worden vermeld. [Meer informatie](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+Zorg ervoor dat u beschikt over ondersteunde versies van alle systemen die in de nieuwste matrix voor campagnecompatibiliteit worden vermeld. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html)
 
 _Campagne Mobile SDK_
 
@@ -138,7 +138,7 @@ De build 1.0.26 van de iOS SDK is nu beschikbaar. In deze nieuwe build hebben we
 
 **Patches**
 
-* Correctie van de consolebotsing die kon voorkomen wanneer het toevoegen van een lege verbonden lijst in de het werkschemaactiviteit van de **Laden van Gegevens (RDBMS)** . (NEO-12213)
+* Probleem verholpen waarbij het programma vastloopt als het veld Gekoppelde tabel **toevoegen leeg was in de activiteit van de workflow voor het laden van** gegevens (RDBMS) **** . (NEO-12213)
 * Probleem verholpen dat ertoe kon leiden dat bepaalde berichten niet werden verwerkt door de server voor middeluitgaven. (NEO-12395)
 * Probleem verholpen in de workflow voor het opschonen van databases bij gebruik van de optie voor het weergeven van query&#39;s met metagegevens. (NEO-12399)
 * Probleem opgelost dat invloed had op de leveringsanalyse met typologieregel, waaronder ne.jp domain. (NEO-12609)
@@ -152,7 +152,7 @@ De build 1.0.26 van de iOS SDK is nu beschikbaar. In deze nieuwe build hebben we
 * Probleem verholpen in workflows wanneer de activiteit **Bestandsoverdracht** wordt gebruikt om bestanden te downloaden met de optie Bronbestanden **verwijderen na overdracht** , met een naam die een spatieteken bevat. (NEO-13411)
 * Probleem verholpen waarbij Tomcat-cache werd opgeschoond en dit tot geheugenproblemen kon leiden. (NEO-13456)
 * Probleem verholpen bij het installeren van de **Controle van de aanbiedingsmotor met het ingebouwde pakket van de uitvoeringsinstantie** op een bestaande controleinstantie die in Microsoft SQL 2017 loopt. (NEO-13539)
-* Correctie van het storten van de console die kon voorkomen wanneer het unchecking van bijgehouden URLs in een e-mail, van het **Inhoud** tabel van de Tekst. (NEO-13545)
+* Oplossing voor een probleem met een crash van de console dat zich kon voordoen wanneer bijgehouden URL&#39;s in een e-mail werden uitgeschakeld, op het tabblad **Tekstinhoud** vanwege een niet-geïnitialiseerde variabele. (NEO-13545)
 * Probleem verholpen met codering van Chinese afzendernaam. (NEO-13837)
 * Oplossing voor een fout die kan optreden bij het weergeven van enquêteresolutiegegevens in de Verkenner. (NEO-14590)
 * Probleem verholpen dat tot een discrepantie tussen de indeling van het leveringslogboek en de quarantainetabel kon leiden. (NEO-16547)
@@ -161,9 +161,11 @@ De build 1.0.26 van de iOS SDK is nu beschikbaar. In deze nieuwe build hebben we
 * Probleem verholpen bij het weergeven van leveringsrapporten via webtoegang. (NEO-17015)
 * Probleem verholpen met IMS-verificatie bij aanmelding bij Adobe Campaign. (NEO-17312)
 * Probleem verholpen waarbij werd voorkomen dat in quarantaine geplaatste e-mails werden verwijderd tijdens het privacybeheerproces. (NEO-17314)
-* Problemen met de doorvoer verholpen na upgrade naar 9031 met SQL-database. (NEO-1758)
+* Problemen met de doorvoer verholpen na upgrade naar 9031 met SQL-database. (NEO-17558)
 * Probleem verholpen dat invloed had op de CRM-connector met Salesforce. (NEO-17712)
 * Probleem met time-out verholpen bij het importeren van gegevens uit een externe SFTP. (NEO-19723)
 * Probleem verholpen bij toegang tot voorspellende modellen. (NEO-19713)
 * Probleem verholpen dat invloed had op willekeurige steekproeven in de **gesplitste** werkstroomactiviteit met de Hadoop FDA-database. (NEO-16636)
+* Oplossing voor een regressie op Oracle waarbij sommige functies na de upgrade als ongeldig werden beschouwd. (NEO-12759)
+
 
