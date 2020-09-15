@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e31efa347b42b4ccb532ca5f79e73745b5a7878b
+source-git-commit: 9357be26b1bc436b19861faa2a43ec6a17cb5b3c
 workflow-type: tm+mt
-source-wordcount: '1331'
+source-wordcount: '1344'
 ht-degree: 6%
 
 ---
@@ -107,7 +107,7 @@ _17 februari 2020_
 
 * Verbeterde queryprestaties die kunnen worden beïnvloed door onnodige databaseverbindingen.
 
-* Verbeterde prestaties van de wizard Database bijwerken.
+* Verbeterde prestaties van de wizard Database bijwerken om minder SQL-instructies te maken en zo de responstijd te optimaliseren.
 
 * Het beheer van de databaserecord is verbeterd.
 
@@ -171,7 +171,7 @@ _17 februari 2020_
 
 * Probleem verholpen waardoor de trackingindicatoren voor transactionele berichten niet konden worden bijgewerkt in de workflow voor bijhouden. (NEO-17770)
 
-* Oplossing voor een regressieprobleem dat ertoe leidde dat het webproces vastliep en opnieuw opstartte wanneer een aanvraag voor een aanbieding werd ingediend via SOAP. (NEO-19482)
+* Oplossing voor een regressieprobleem dat ertoe leidde dat het webproces vastliep en opnieuw opstartte bij het aanvragen van een aanbieding via SOAP. (NEO-19482)
 
 * Probleem verholpen waarbij gegevens niet konden worden geüpload naar openbare bronnen als de uploadmap een externe gedeelde locatie was. (NEO-19361)
 
@@ -183,7 +183,7 @@ _17 februari 2020_
 
 * Oplossing van een probleem dat optrad bij het verwijderen, invoegen of bijwerken van een grote hoeveelheid gegevens met de **activiteit Gegevens** bijwerken in een workflow met een FDA-schema als doeldimensie. (NEO-13280)
 
-* Probleem verholpen waarbij e-mailberichten niet konden worden verzonden wanneer de instructie &#39;if&#39; buiten de `body` tag werd gebruikt. (NEO-18628)
+* Probleem verholpen waarbij e-mailberichten niet konden worden verzonden als er JavaScript-code buiten de HTML-inhoudstag stond. (NEO-18628)
 
 * Probleem verholpen die optrad tijdens het weergeven van de spiegelpagina vanuit de leveringslogboeken van een verzonden bericht. (NEO-17976)
 
