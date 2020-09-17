@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2bd946fc0e5b206280a7946e0cbc6fa6d1be90f2
+source-git-commit: ab9d2c2e80ba09b5a2cceadb49c06ff13989da0f
 workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 76%
@@ -48,7 +48,8 @@ _22 juli 2020_
 * Probleem verholpen waarbij pagina-URL&#39;s die niet correct zijn gedefinieerd in e-mailleveringen werden gespiegeld (vanwege onjuiste ASCII-tekenbesturing). (NEO-26084)
 * Probleem met coderen van URL-beheer in de service voor anti-phishing is opgelost. (NEO-25283)
 * Probleem verholpen waarbij het bijhouden van URL&#39;s met fragmenten in personalisatieparameters (ankerlabels met hekje) niet werkte. (NEO-25774)
-* Probleem met bijhouden opgelost bij het gebruik van specifieke aangepaste volgformules. (NEO-25277) Probleem opgelost waarbij het bijhouden van &quot;meldingskliks&quot; niet werkte (iOS- en Android-pushmeldingen). (NEO-25965)
+* Probleem met bijhouden opgelost bij het gebruik van specifieke aangepaste volgformules. (NEO-25277)
+* Probleem verholpen waardoor het bijhouden van &#39;berichtklikken&#39; niet kon worden uitgevoerd (iOS- en Android-pushmeldingen). (NEO-25965)
 * Oplossing voor een regressie die invloed had op berekende velden in een werkstroom waardoor de werkstroom mislukte. (NEO-25194)
 * Oplossing voor een regressie die ervoor zorgde dat het direct maken van URL&#39;s voor webtracering niet werkte. (NEO-20999)
 * Probleem met regressie verholpen met leveringsrapporten buiten de doos die werden afgekapt tijdens het exporteren naar PDF. (NEO-25757)
