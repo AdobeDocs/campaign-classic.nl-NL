@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac2d993f525eb918ad5e15104eb3ede9eeadfb43
+source-git-commit: 7f7b53f0a7ec0f50bf3a99314606272b8ebdc8d7
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 14%
@@ -35,7 +35,7 @@ Deze pagina bevat de Gold Standard-releases.
 
 Raadpleeg dit [artikel](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html)voor meer informatie over de Gold Standard-upgrade.
 
-## ![](assets/do-not-localize/limited_2.png) Gold Standard 10-release{#gs-10}
+## ![](assets/do-not-localize/green_2.png) Gold Standard 10-release{#gs-10}
 
 _7 juli 2020_
 
@@ -88,7 +88,7 @@ De build 9032@3a9dc9c bevat de volgende oplossingen:
 * Oplossing voor een regressie die ertoe leidde dat de opschoningsworkflow vastliep.
 * Oplossing voor een kleine regressie in de logboeken van de opschoningsworkflow.
 
-## ![](assets/do-not-localize/green_2.png) Gold Standard 6-release{#gs-6}
+## ![](assets/do-not-localize/orange_2.png) Gold Standard 6-release{#gs-6}
 
 _9 maart 2020_
 
