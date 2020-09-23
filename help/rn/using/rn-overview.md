@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac2d993f525eb918ad5e15104eb3ede9eeadfb43
+source-git-commit: 7f7b53f0a7ec0f50bf3a99314606272b8ebdc8d7
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 10%
@@ -35,7 +35,7 @@ Vanaf Campaign Classic 19.2, wordt een status geassocieerd aan elke bouwstijl. H
 
 ![](assets/do-not-localize/green3.png) **Algemene beschikbaarheid** - De nieuwste stabiele build beschikbaar. Build gevalideerd in productie.
 
-De **laatste stabiele build** is Gold Standard 6. Klik [hier](../../rn/using/gold-standard.md)
+De **laatste stabiele build** is Gold Standard 10. Klik [hier](../../rn/using/gold-standard.md#gs-10)
 
 ![](assets/do-not-localize/limited3.png) **Beperkte beschikbaarheid** - build momenteel in productievalidering. Alleen on demand-implementatie.
 
@@ -49,7 +49,7 @@ De **laatste stabiele build** is Gold Standard 6. Klik [hier](../../rn/using/gol
 
 Als gehoste klant (Managed Service of Hybrid) moet u contact opnemen met het zorgteam van de klant om uw omgeving te laten upgraden.
 
-Als gebruiker van de Gold Standard profiteert u automatisch van de Gold Standard-upgrade met de nieuwste stabiele versie zonder enige actie. [Meer informatie](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-6)
+Als gebruiker van de Gold Standard profiteert u automatisch van de Gold Standard-upgrade met de nieuwste stabiele versie zonder enige actie. [Meer informatie](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-10)
 
 Als gebruiker op locatie kunt u de upgrade uitvoeren. Hiervoor moet u de nieuwste stabiele build [](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) downloaden en al uw omgevingen upgraden. Lees meer over het [upgradeproces](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html)en raadpleeg de veelgestelde vragen over [upgrades](https://helpx.adobe.com/nl/campaign/kb/build-upgrade-faq.html).
 
