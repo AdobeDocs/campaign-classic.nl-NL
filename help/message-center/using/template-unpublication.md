@@ -15,17 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 71aeeda3edafc64dbe696ce6f344b8b0ccdc43d1
+source-git-commit: b9577d190f26e21f116d99d48fdf2bca84585d50
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 0%
+source-wordcount: '212'
+ht-degree: 4%
 
 ---
 
 
-# Onpublicatie sjabloon{#template-unpublication}
+# Publicatie van sjabloon ongedaan maken{#template-unpublication}
 
 Zodra een berichtmalplaatje op de uitvoeringsinstanties wordt gepubliceerd, kan het unpublished.
+
+>[!NOTE]
+>
+>Deze mogelijkheid is beschikbaar vanaf de release van Campagne 20.2.
 
 Een gepubliceerde sjabloon kan zelfs nog steeds worden aangeroepen. Daarom als u niet meer een berichtmalplaatje gebruikt, wordt het geadviseerd om het unpublish. Dit om te voorkomen dat er per ongeluk een ongewenste transactiemelding wordt verzonden. U hebt bijvoorbeeld een berichtsjabloon gepubliceerd die u alleen gebruikt voor kerstcampagnes. Misschien wilt u de publicatie ongedaan maken nadat de kerstperiode is afgelopen en deze volgend jaar opnieuw publiceren.
 
