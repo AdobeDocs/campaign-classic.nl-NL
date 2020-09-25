@@ -13,12 +13,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 25ae29490f8b4c58dad499669f5bccff43de8b7a
+source-git-commit: b9577d190f26e21f116d99d48fdf2bca84585d50
+workflow-type: tm+mt
+source-wordcount: '972'
+ht-degree: 0%
 
 ---
 
 
-# Server voor midsourcing{#mid-sourcing-server}
+# Midsourcingserver{#mid-sourcing-server}
 
 In deze sectie worden de installatie en configuratie van een server voor midsourcing beschreven, evenals de implementatie van een instantie die derden in staat stelt berichten te verzenden in de modus **mid-sourcing** .
 
@@ -60,7 +63,7 @@ U moet echter het volgende toepassen:
    </serverconf>
    ```
 
-   Raadpleeg [Processen](../../installation/using/campaign-server-configuration.md#enabling-processes)inschakelen voor meer informatie.
+   For more on this, refer to [Enabling processes](../../installation/using/campaign-server-configuration.md#enabling-processes).
 
 * Stappen **6**, **9** en **10** zijn niet nodig.
 * Tijdens stappen **12** en **13**, moet u op de haven 8080 in verbindings URL wijzen (aangezien de console direct met Tomcat, niet via de server van het Web communiceert). De URL wordt [http://console.campaign.net:8080](http://console.campaign.net). Tijdens stap **13** selecteert u zowel het **[!UICONTROL Issue towards Mid-sourcing]** pakket als de pakketten die u wilt installeren.
@@ -85,7 +88,7 @@ Zoek vanuit de clientconsole de **e-mailroutering met gebruik van de mid-sourcin
 
    >[!CAUTION]
    >
-   >Als u de server voor midsourcing installeert en extra Adobe Campagne-modules wilt installeren, raden we u aan de module Aflevering te gebruiken en niet de module Campagne.
+   >Als u de server voor midsourcing installeert en extra Adobe Campaign-modules wilt installeren, raden we u aan de module Aflevering te gebruiken en niet de module Campagne.
 
    Volg dezelfde procedure als voor de standaardplaatsing, die slechts de **[!UICONTROL Mid-sourcing platform]** optie selecteert.
 
@@ -122,7 +125,7 @@ Het is mogelijk dat een mid-sourcing-instantie wordt gedeeld door meerdere verze
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Start de module Web opnieuw met de volgende opdracht: Start **het web** opnieuw op de server.
+1. Start de module Web opnieuw met de volgende opdracht: **web** opnieuw starten op de server.
 
 U moet de instelling voor de server voor midsourcing wijzigen in het bestand serverConf.xml. De volgende lijn moet aan de &quot;Beheer van affiniteiten met IP adressen&quot;sectie, onder de bestaande lijn worden toegevoegd:
 
@@ -170,7 +173,7 @@ U moet de server stoppen en dan opnieuw beginnen om met de wijziging rekening te
 1. Bevestig uw configuratie door te klikken **[!UICONTROL Test the connection]**.
 1. Declareer de volgende instantie waarnaar wordt verwezen op de mid-sourcing server:
 
-   Klik op de koppeling **[!UICONTROL Use this platform as a platform to access the tracking servers]**,
+   Klik op de koppeling **[!UICONTROL Use this platform as a proxy to access the tracking servers]**,
 
    Geef de naam van de instantie tracking op en bevestig vervolgens de verbinding met de tracingserver.
 
