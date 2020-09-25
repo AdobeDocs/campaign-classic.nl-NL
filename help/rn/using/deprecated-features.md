@@ -11,7 +11,7 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 900b5a21172440a385dde6eb137bac2e7129bb9d
+source-git-commit: b9577d190f26e21f116d99d48fdf2bca84585d50
 workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 95%
@@ -132,7 +132,7 @@ De volgende systemen zijn afgeschaft voor Campaign Classic. Raadpleeg de [compat
 Vanaf release 20.2 zijn de volgende systemen verouderd voor Campaign Classic. De compatibiliteit loopt af in de release van 20.3 - oktober 2020.
 
 * Clientconsole: Windows 7
-* Verouderde SMS-connectors (zie [Verouderde functies)](#deprecated-features)
+* Verouderde SMS-connectors - zie [Verouderde functies](#deprecated-features)
 * DB2 UDB 10.5 voor Federated Data Access (FDA)
 
 ### Adobe Campaign 19.2-release  {#compat-19-2-release}
