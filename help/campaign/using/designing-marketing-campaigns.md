@@ -1,7 +1,7 @@
 ---
-title: Verkoopcampagnes ontwerpen
-seo-title: Verkoopcampagnes ontwerpen
-description: Verkoopcampagnes ontwerpen
+title: Marketingcampagnes ontwerpen
+seo-title: Marketingcampagnes ontwerpen
+description: Marketingcampagnes definiëren, optimaliseren, uitvoeren en analyseren.
 seo-description: null
 page-status-flag: never-activated
 uuid: e0fd5df6-7516-4ca6-bbdf-243a264d0283
@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 4%
+source-wordcount: '420'
+ht-degree: 6%
 
 ---
 
 
-# Verkoopcampagnes ontwerpen{#designing-marketing-campaigns}
+# Marketingcampagnes ontwerpen{#designing-marketing-campaigns}
 
 Met Adobe Campaign kunt u communicatie- en marketingcampagnes definiëren, optimaliseren, uitvoeren en analyseren. Adobe Campaign fungeert als een gemeenschappelijk centrum voor bestellingen en uitvoering voor marketingstrategieën. Raadpleeg [Toegang tot campagnes](../../campaign/using/accessing-campaigns.md) en [marketingcampagnes](../../campaign/using/setting-up-marketing-campaigns.md)voor meer informatie.
 
@@ -38,7 +38,7 @@ Bovendien laat de module van het Beheer van het Middel van de **Marketing (MRM)*
 
 De volgende concepten moeten bekend zijn in het kader van de campagne:
 
-* **Campagne**
+* **Campaign**
 
    Een campagne centraliseert alle elementen met betrekking tot een marketingcampagne: leveringen, doelgerichte regels, kosten, uitvoerbestanden, verwante documenten, enz. Elke campagne is aan een programma verbonden.
 
@@ -46,7 +46,7 @@ De volgende concepten moeten bekend zijn in het kader van de campagne:
 
 * **Programma**
 
-   Met een programma kunt u marketingacties voor een kalenderperiode definiëren: lancering, kanvassing, loyaliteit, enz. Elk programma bevat campagnes die zijn gekoppeld aan een kalender, die een algemene weergave biedt.
+   Met een programma kunt u marketingacties voor een kalenderperiode definiëren: lancering, kanvassing, loyaliteit, enz. Elk programma bevat campagnes die zijn gekoppeld aan een kalender, die een algemeen overzicht biedt.
 
 * **Plan**
 
