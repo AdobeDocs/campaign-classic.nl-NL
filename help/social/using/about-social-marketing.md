@@ -1,8 +1,6 @@
 ---
-title: Sociale marketing
-seo-title: Sociale marketing
-description: Sociale marketing
-seo-description: null
+title: Social marketing
+description: Leer hoe u via Campagne communiceert met klanten via Facebook en Twitter.
 page-status-flag: never-activated
 uuid: 64c861e3-b685-44e2-9b5b-4fbf5d70baa9
 contentOwner: sauviat
@@ -15,12 +13,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 4%
 
 ---
 
 
-# Sociale marketing{#about-social-marketing}
+# Social marketing{#about-social-marketing}
 
 Met de toepassing **Sociale netwerken** beheren (Social Marketing) voor het beheer van sociale netwerken kunt u via Facebook en Twitter communiceren met klanten en vooruitzichten.
 
@@ -33,10 +34,10 @@ Met de toepassing **Sociale netwerken** beheren (Social Marketing) voor het behe
 
 1. **Het verkrijgen van nieuwe contacten**
 
-   Met Adobe Campaign Social Marketing kunt u ook eenvoudig nieuwe contactpersonen aanschaffen via Facebook: Neem contact op met gebruikers en vraag hen of zij hun profielgegevens willen delen. Als ze het programma accepteren, worden de gegevens automatisch hersteld in Adobe Campaign. Hiermee kunt u doelgerichte campagnes voeren en, indien mogelijk, kanaalstrategieën implementeren.
+   Met Adobe Campaign Social Marketing kunt u ook eenvoudig nieuwe contactpersonen aanschaffen via Facebook: Neem contact op met gebruikers en vraag hen of zij hun profielgegevens willen delen. Als ze het accepteren, herstelt Adobe Campaign automatisch de gegevens, waarmee u doelgerichte campagnes kunt voeren en waar mogelijk kanaalstrategieën kunt implementeren.
 
 >[!IMPORTANT]
 >
 >Facebook en Twitter brengen regelmatig wijzigingen aan in hun schermen en processen. Dit document wordt dienovereenkomstig bijgewerkt.
 >
->Adobe Campaign vraagt of u de servicevoorwaarden van Facebook en Twitter naleeft.
+>Adobe Campaign vraagt dat je voldoet aan de servicevoorwaarden van Facebook en Twitter.
