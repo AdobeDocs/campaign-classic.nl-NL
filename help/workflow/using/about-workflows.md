@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+source-git-commit: 700cd82d87eccf6579afab5c9e8f7945807817da
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 16%
@@ -82,5 +82,5 @@ Raadpleeg de volgende secties voor hulp en tips en trucs om processen te automat
 * Ontdek in [deze sectie](../../workflow/using/importing-data.md)hoe u workflows kunt gebruiken om gegevens te importeren in Campagne.
 * Best practices voor workflows worden in [deze pagina](../../workflow/using/workflow-best-practices.md)beschreven.
 * Raadpleeg de instructies over het uitvoeren van workflows in [deze sectie](../../workflow/using/starting-a-workflow.md).
-* Leer hoe u workflows in [deze pagina](../../workflow/using/monitoring-workflow-execution)kunt controleren.
+* Leer hoe u workflows in [deze pagina](../../workflow/using/monitoring-workflow-execution.md)kunt controleren.
 * Leer hoe u gebruikers toegang biedt om workflows te gebruiken op [deze pagina](../../workflow/using/managing-rights.md).
