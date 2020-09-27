@@ -1,8 +1,6 @@
 ---
 title: Algemene architectuur
-seo-title: Algemene architectuur
-description: Algemene architectuur
-seo-description: null
+description: Leer hoe u Campaign Classic installeert en configureert.
 page-status-flag: never-activated
 uuid: 686bc660-2403-4bab-a4ea-9b872adf8fa0
 contentOwner: sauviat
@@ -15,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1341'
 ht-degree: 0%
 
 ---
@@ -43,13 +41,13 @@ Adobe Campaign is gebaseerd op een servicegerichte architectuur (SOA) en bestaat
 
 >[!NOTE]
 >
->Als softwareleverancier specificeren wij compatibele hardware en softwareinfrastructuur. De hardwareaanbevelingen die hier worden gegeven, dienen uitsluitend ter informatie en zijn gebaseerd op onze ervaring. Adobe is niet aansprakelijk voor besluiten die op basis daarvan worden genomen. Het zal ook van uw bedrijfsregels en praktijken en de kritiek en vereiste prestatiesniveaus van het project afhangen.
+>Als softwareleverancier specificeren wij compatibele hardware en softwareinfrastructuur. De hardwareaanbevelingen die hier worden gegeven, dienen uitsluitend ter informatie en zijn gebaseerd op onze ervaring. Adobe is niet aansprakelijk voor besluiten die op hen zijn gebaseerd. Het zal ook van uw bedrijfsregels en praktijken en de kritiek en vereiste prestatiesniveaus van het project afhangen.
 
 ![](assets/s_ncs_install_architecture.png)
 
 >[!CAUTION]
 >
->Indien niet uitdrukkelijk anders vermeld, vallen de installatie, updates en het onderhoud op alle componenten van een Adobe Campaign-platform onder de verantwoordelijkheid van de systeembeheerder(s) die deze host(s). Dit omvat het implementeren van de voorwaarden voor Adobe Campaign-toepassingen en het naleven van de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) tussen componenten.
+>Indien niet uitdrukkelijk anders vermeld, vallen de installatie, updates en het onderhoud op alle componenten van een Adobe Campaign-platform onder de verantwoordelijkheid van de systeembeheerder(s) die deze host(s). Dit omvat het implementeren van de voorwaarden voor Adobe Campaign-toepassingen en het naleven van de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html) tussen componenten.
 
 ## Presentatielaag {#presentation-layer}
 
