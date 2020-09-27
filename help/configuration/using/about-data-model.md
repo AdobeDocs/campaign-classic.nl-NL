@@ -1,6 +1,6 @@
 ---
-title: Informatie over het klassieke gegevensmodel van Adobe Campagne
-description: In dit document worden de grondbeginselen van het gegevensmodel van Adobe Campaign Classic beschreven.
+title: Over het Adobe Campaign Classic-gegevensmodel
+description: Leer hoe u het gegevensmodel van de campagne kunt uitbreiden, schema's kunt bewerken, API's kunt gebruiken en meer.
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -13,31 +13,31 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 580be39d09bd59770d490945c3ba2b29e12fb3c4
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 0%
+source-wordcount: '971'
+ht-degree: 5%
 
 ---
 
 
-# Informatie over het gegevensmodel van de campagne{#about-data-model}
+# About the Campaign data model{#about-data-model}
 
-In deze sectie worden de grondbeginselen van het klassieke gegevensmodel van de Campagne beschreven, voor een beter begrip van ingebouwde lijsten van de Campagne en hun interactie.
+In deze sectie worden de grondbeginselen van het Adobe Campaign Classic-gegevensmodel beschreven, voor een beter begrip van geïntegreerde tabellen en hun interactie in de campagne.
 
-Het conceptuele gegevensmodel van de Adobe Campagne-database bestaat uit een set ingebouwde tabellen en hun interactie.
+Het conceptuele datamodel van de Adobe Campaign-database bestaat uit een reeks ingebouwde tabellen en hun interactie.
 
 Om tot de beschrijving van elke lijst toegang te hebben, ga naar **[!UICONTROL Admin > Configuration > Data schemas]**, selecteer een middel van de lijst en klik de **[!UICONTROL Documentation]** tabel.
 
 ![](assets/data-model_documentation-tab.png)
 
-Raadpleeg [deze sectie](../../configuration/using/data-model-description.md)voor meer informatie over de standaardbeschrijving van het klassieke gegevensmodel van de campagne.
+Raadpleeg [deze sectie](../../configuration/using/data-model-description.md)voor meer informatie over het standaardgegevensmodel Campaign Classic.
 
-De fysieke en logische structuur van de gegevens die in de toepassing worden overgedragen, wordt in XML beschreven. Het voert een grammatica specifiek voor de Campagne van Adobe uit, genoemd een schema. Lees [deze sectie](../../configuration/using/about-schema-reference.md)voor meer informatie over Adobe Campagne-schema&#39;s.
+De fysieke en logische structuur van de data die in de applicatie worden overgedragen, wordt in XML beschreven. Het volgt een grammatica die specifiek is voor Adobe Campaign en een schema wordt genoemd. For more on Adobe Campaign schemas, read out [this section](../../configuration/using/about-schema-reference.md).
 
 ## Overzicht {#data-model-overview}
 
-Adobe Campaign is gebaseerd op een relationele database die tabellen bevat die aan elkaar zijn gekoppeld. De basisstructuur van het gegevensmodel van de Campagne van Adobe kan als volgt worden beschreven.
+Adobe Campaign vertrouwt op een relationele database die tabellen bevat die aan elkaar zijn gekoppeld. De basisstructuur van het Adobe Campaign-gegevensmodel kan als volgt worden beschreven.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Een ander deel van het gegevensmodel laat toe om alle logboeken tijdelijk op te 
 
 De logboeken van de levering zijn alle berichten die naar ontvangers of apparaten over alle kanalen worden verzonden. De hoofdtabel met leveringslogbestanden (**NmsBroadLog**) bevat de leveringslogboeken voor alle ontvangers.
 In de hoofdtabel Logbestanden voor bijhouden (**NmsTrackingLog**) worden de logbestanden voor bijhouden opgeslagen voor alle ontvangers. De trackinglogboeken verwijzen naar reacties van ontvangers, zoals het openen van e-mail en klikken. Elke reactie komt overeen met een trackinglog.
-Logbestanden voor aflevering en tracering worden na een bepaalde periode verwijderd. Deze periode is opgegeven in Adobe Campagne en kan worden gewijzigd. Daarom wordt het ten zeerste aanbevolen de stammen regelmatig uit te voeren.
+Logbestanden voor aflevering en tracering worden na een bepaalde periode verwijderd, die in Adobe Campaign is opgegeven en kan worden gewijzigd. Daarom wordt het ten zeerste aanbevolen de stammen regelmatig uit te voeren.
 
 ### Technische tabellen {#technical-tables}
 
@@ -67,7 +67,7 @@ Tot slot bestaat een deel van het gegevensmodel uit technische gegevens die voor
 
 ## De standaardtabel Ontvanger gebruiken {#default-recipient-table}
 
-De out-of-the-box Ontvangerlijst in de Campagne van Adobe verstrekt een goed uitgangspunt voor de bouw van uw gegevensmodel. Het heeft een aantal vooraf bepaalde gebieden en lijstverbindingen die gemakkelijk kunnen worden uitgebreid. Dit is met name nuttig wanneer u zich vooral richt op ontvangers, omdat het een eenvoudig ontvanger-centric gegevensmodel past.
+De out-of-the-box Ontvangerlijst in Adobe Campaign biedt een goed uitgangspunt voor het samenstellen van uw gegevensmodel. Het heeft een aantal vooraf bepaalde gebieden en lijstverbindingen die gemakkelijk kunnen worden uitgebreid. Dit is met name nuttig wanneer u zich vooral richt op ontvangers, omdat het een eenvoudig ontvanger-centric gegevensmodel past.
 
 De standaardtabel met ontvangers biedt de volgende voordelen:
 
@@ -101,11 +101,11 @@ Voor meer bij het vormen van uitbreidingsschema&#39;s om het conceptuele gegeven
 >
 >Het uitbreiden van het gegevensmodel is gereserveerd voor geavanceerde gebruikers.
 
-## Een aangepaste tabel voor ontvangers gebruiken {#custom-recipient-table}
+## Using a custom recipient table {#custom-recipient-table}
 
-Bij het ontwerpen van uw Adobe Campagne-gegevensmodel kunt u de [out-of-the-box Ontvanger tabel](#default-recipient-table)gebruiken of besluiten om een niet-standaard ontvangende tabel te maken waarin u marketingprofielen kunt opslaan.
+Bij het ontwerpen van uw Adobe Campaign-gegevensmodel kunt u de [out-of-the-box Ontvangertabel](#default-recipient-table)gebruiken of besluiten een niet-standaard ontvangertabel te maken om uw marketingprofielen op te slaan.
 
-Als uw gegevensmodel niet in de op de ontvanger gerichte structuur past, kunt u in Adobe Campagne andere tabellen instellen als de doeldimensie. Dit kan bijvoorbeeld van belang zijn wanneer u huishoudens, rekeningen (zoals mobiele telefoons) en bedrijven/sites moet aanspreken in plaats van alleen ontvangers.
+Als uw gegevensmodel niet in de op de ontvanger gerichte structuur past, kunt u andere tabellen instellen als de doeldimensie in Adobe Campaign. Dit kan bijvoorbeeld van belang zijn wanneer u huishoudens, rekeningen (zoals mobiele telefoons) en bedrijven/sites moet aanspreken in plaats van alleen ontvangers.
 
 >[!NOTE]
 >
