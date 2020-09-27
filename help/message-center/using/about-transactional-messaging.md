@@ -1,8 +1,6 @@
 ---
 title: Informatie over transactieberichten
-seo-title: Informatie over transactieberichten
-description: Informatie over transactieberichten
-seo-description: null
+description: 'Verzend triggerberichten op basis van gebeurtenissen die zijn gegenereerd op basis van informatiesystemen. '
 page-status-flag: never-activated
 uuid: c854daac-8756-44f3-a4e2-be31177ab9d1
 contentOwner: sauviat
@@ -15,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f4ecdab4c17a6ba8deb3b98079f57bb7a9adf4a0
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 0%
+source-wordcount: '164'
+ht-degree: 3%
 
 ---
 
@@ -31,10 +29,10 @@ Transactioneel overseinen (het Centrum van het Bericht) is een module van de Cam
 >
 >Voor Transactioneel overseinen is een specifieke licentie vereist. Controleer uw licentieovereenkomst.
 
-De module van het Centrum van het Bericht van de Campagne van Adobe is geïntegreerd in een informatiesysteem dat gebeurtenissen terugkeert die in gepersonaliseerde transactionele berichten moeten worden veranderd. Deze berichten kunnen individueel of in partijen via e-mail, SMS of push-berichten worden verzonden.
+De module van het Centrum van het Bericht van Adobe Campaign is geïntegreerd in een informatiesysteem dat gebeurtenissen terugkeert die in gepersonaliseerde transactionele berichten moeten worden veranderd. Deze berichten kunnen individueel of in partijen via e-mail, SMS of push-berichten worden verzonden.
 
 In deze specifieke architectuur, wordt de uitvoeringscel gescheiden van de controleinstantie, die hogere beschikbaarheid en beter ladingsbeheer verzekert.
 
 >[!NOTE]
 >
->Neem contact op met de klantenservice van Adobe om nieuwe gebruikers te maken voor de uitvoering van Message Center-instanties die worden gehost op Adobe Cloud. De gebruikers van het Centrum van het bericht zijn specifieke exploitanten die specifieke toestemmingen vereisen om tot omslagen &quot;Echt - tijd&quot;(nmsRtEvent) toegang te hebben.
+>Als u nieuwe gebruikers wilt maken voor de uitvoering van Message Center-berichten die worden gehost op Adobe Cloud, dient u contact op te nemen met de klantenservice van Adobe. De gebruikers van het Centrum van het bericht zijn specifieke exploitanten die specifieke toestemmingen vereisen om tot omslagen &quot;Real time&quot;(nmsRtEvent) toegang te hebben.
