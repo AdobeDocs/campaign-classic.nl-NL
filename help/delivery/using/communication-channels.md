@@ -1,7 +1,7 @@
 ---
 title: Communicatiekanalen
 seo-title: Communicatiekanalen
-description: Communicatiekanalen
+description: Maak leveringen om gepersonaliseerde berichten op verschillende kanalen te verzenden.
 seo-description: null
 page-status-flag: never-activated
 uuid: 42975431-64c9-4ecb-98ed-b1f9b13c157e
@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b14f5ecd2b06ed9f4cb49d8779b9f94ea4bcdddc
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1183'
 ht-degree: 11%
 
 ---
@@ -104,7 +104,7 @@ Dit kanaal heeft geen specifiek mechanisme. Het is een generisch kanaal dat zijn
 
 Dit kanaal is alleen bedoeld voor beschrijvende doeleinden, bijvoorbeeld om leveringen te definiëren waarvoor u het doel van een campagne die is uitgevoerd in een ander programma dan Adobe Campaign, wilt bijhouden.
 
-## Soorten leveringen{#types-of-deliveries}
+## Typen leveringen{#types-of-deliveries}
 
 Er zijn drie typen leveringsobjecten in campagne:
 
@@ -126,7 +126,7 @@ De terugkomende leveringen worden gecreeerd binnen werkschema&#39;s via de [Teru
 
 ### Doorlopende levering {#continuous-delivery}
 
-Met een **doorlopende levering** kunt u nieuwe ontvangers aan een bestaande levering toevoegen, zodat u niet telkens een nieuwe levering hoeft te maken wanneer deze wordt uitgevoerd.
+Met een **doorlopende levering** kunt u nieuwe ontvangers toevoegen aan een bestaande levering, zodat u niet telkens een nieuwe levering hoeft te maken wanneer deze wordt uitgevoerd.
 
 Als een informatie in de levering verandert (inhoud, naam, enz.), wordt een nieuw leveringsvoorwerp gecreeerd bij de leveringsuitvoering. Als er geen informatie is gewijzigd, wordt hetzelfde leveringsobject opnieuw gebruikt en worden de logbestanden voor levering en bijhouden toegevoegd aan hetzelfde object.
 
