@@ -1,7 +1,7 @@
 ---
 title: Adobe Campaign Classic
 seo-title: Adobe Campaign Classic
-description: Adobe Campaign Classic
+description: Belangrijke mogelijkheden, gebruikersinterface en globale richtlijnen ontdekken.
 seo-description: null
 page-status-flag: never-activated
 uuid: 2d0160fa-8328-4ff9-ab91-56e4058f8a99
@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 100%
+source-wordcount: '883'
+ht-degree: 98%
 
 ---
 
 
-# Adobe Campaign Classic{#about-adobe-campaign-classic}
+# Get Started with Campaign Classic{#about-adobe-campaign-classic}
 
 Om een hoge mate van klantbetrokkenheid en fantastische ervaringen te bieden moeten merken consistente klantreizen op alle contactpunten tot stand brengen. Marketeers kunnen nu efficiënt marketingcampagnes op alle kanalen ontwerpen, plannen, uitvoeren, beheren en optimaliseren die een hoog rendement op marketinginvesteringen opleveren en loyaliteit stimuleren.
 
