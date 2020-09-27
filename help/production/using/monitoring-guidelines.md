@@ -1,6 +1,6 @@
 ---
 title: Monitoringrichtsnoeren
-description: In deze paragraaf worden algemene richtsnoeren voor de monitoring van Campaign Classic uiteengezet.
+description: Ontdek richtlijnen en beste praktijken om de instantie en processen van de Campagne te controleren.
 page-status-flag: never-activated
 uuid: cf0d782d-47bf-40ae-ab6f-d1d47fa15792
 contentOwner: sauviat
@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 3%
+source-wordcount: '712'
+ht-degree: 6%
 
 ---
 
@@ -33,7 +33,7 @@ Gedetailleerde informatie is [hier](../../production/using/monitoring-processes.
 
 ![](assets/monitoring_tab.png)
 
-## Bewaking van Campaign Classic-processen {#monitoring-campaign-classic-processes}
+## Monitoring Campaign Classic processes {#monitoring-campaign-classic-processes}
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Uw instantie controleren</a></p></td>
@@ -88,9 +88,9 @@ Naast de heatmap kunt u ook een workflow maken waarmee u de status van een set w
 
 De volgende richtlijnen en beste praktijken wanneer het gebruiken van werkschema&#39;s kunnen helpen prestaties verbeteren. Raadpleeg de volgende secties voor meer informatie:
 * [Tips en trucs bij het gebruik van workflows](../../workflow/using/workflow-best-practices.md)
-* [Workflowuitvoering opvolgen](../../workflow/using/monitoring-workflow-execution.md)
+* [Workflowuitvoering controleren](../../workflow/using/monitoring-workflow-execution.md)
 
-### Bewaking van leveringen {#monitoring-deliveries}
+### Leveringen controleren{#monitoring-deliveries}
 
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
@@ -98,7 +98,7 @@ De volgende richtlijnen en beste praktijken wanneer het gebruiken van werkschema
 
 In SMTP-rapporten worden leveringsstatistieken en SMTP-fouten per domein weergegeven. [Meer informatie](../../production/using/monitoring-processes.md)
 
-**Aanbevolen procedures**
+**Best practices**
 
 [De beste praktijken voor levering verzenden en ontwerpen](../../delivery/using/delivery-best-practices.md) kunnen u helpen hun prestaties verbeteren.
 
@@ -120,7 +120,7 @@ Met de workflow voor het opschonen van databases kunt u verouderde gegevens uit 
 
 Specifieke acties kunnen worden uitgevoerd wanneer er problemen optreden met databaseprestaties. [Klik hier](../../production/using/database-performances.md) voor meer informatie.
 
-**Database-onderhoud**
+**Databaseonderhoud**
 
 *alleen op locatie en hybride hostingmodellen*
 
@@ -139,7 +139,7 @@ De technische middelen zijn beschikbaar in de documentatie van Campaign Classic.
 **Modellen en mogelijkheden hosten**
 
 * [Campaign Classic-hostmodellen](../../installation/using/hosting-models.md)
-* [Mogelijkheden van het hostmodel](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
+* [Mogelijkheden van het hostmodel](https://helpx.adobe.com/nl/campaign/kb/acc-on-prem-vs-hosted.html)
 
 **Serverconfiguratie**
 
