@@ -9,10 +9,10 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 5e765777d79df28ae306d02512851b1b3f49018d
+source-git-commit: 546c8f14006e333bb81aa52a008e9f1dfa79f03b
 workflow-type: tm+mt
-source-wordcount: '2109'
-ht-degree: 95%
+source-wordcount: '2119'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 95%
       + [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md)
 + Aan de slag {#getting-started}
    + Starten met Adobe Campaign {#starting-with-adobe-campaign}
-      + [Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
+      + [Aan de slag met Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
       + [Privacy en instemming](platform/using/privacy-and-recommendations.md)
       + [Adobe Campaign starten](platform/using/launching-adobe-campaign.md)
       + [Adobe Campaign-werkruimte](platform/using/adobe-campaign-workspace.md)
@@ -266,7 +266,7 @@ ht-degree: 95%
       + [Gebruiksscenario: een rapport weergeven over antwoorden op een online enquête](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + Webcontent ontwerpen {#designing-content}
    + Webapplicaties {#web-applications}
-      + [Webapplicaties](web/using/about-web-applications.md)
+      + [Aan de slag met webtoepassingen](web/using/about-web-applications.md)
       + [Een nieuwe webapplicatie maken](web/using/creating-a-new-web-application.md)
       + [Een webapplicatie ontwerpen](web/using/designing-a-web-application.md)
       + [Gebruiksscenario’s: overzichten maken](web/using/use-cases--creating-overviews.md)
@@ -342,7 +342,7 @@ ht-degree: 95%
       + [Problemen met pipelines oplossen](integrations/using/pipeline-troubleshooting.md)
 + Automatiseren met workflows {#automating-with-workflows}
    + Inleiding {#introduction}
-      + [Workflows](workflow/using/about-workflows.md)
+      + [Aan de slag met workflows](workflow/using/about-workflows.md)
       + [Activiteiten](workflow/using/about-activities.md)
    + Algemene werking {#general-operation}
       + [Een workflow maken](workflow/using/building-a-workflow.md)
@@ -478,7 +478,7 @@ ht-degree: 95%
       + [Overdracht naar midsourcing](workflow/using/transfer-to-mid-sourcing.md)
       + [Midsourcingplatform](workflow/using/mid-sourcing-platform.md)
 + Aanbiedingen beheren {#managing-offers}
-   + Overzicht van interacties {#interaction-overview}
+   + Aan de slag met interactie {#interaction-overview}
       + [Interactie- en aanbiedingsbeheer](interaction/using/interaction-and-offer-management.md)
       + [Verklarende woordenlijst](interaction/using/glossary.md)
       + [Best practices interacties](interaction/using/interaction-best-practices.md)
@@ -530,7 +530,7 @@ ht-degree: 95%
       + [Aanbiedingen op een uitgaand kanaal](interaction/using/offers-on-an-outbound-channel.md)
 + Transactionele berichten {#transactional-messaging}
    + Inleiding {#introduction}
-      + [Transactionele berichten](message-center/using/about-transactional-messaging.md)
+      + [Aan de slag met transactiemeldingen](message-center/using/about-transactional-messaging.md)
       + [Architectuur van transactionele berichten](message-center/using/transactional-messaging-architecture.md)
       + [Beschrijving van gebeurtenis](message-center/using/event-description.md)
    + Instantieconfiguratie {#instance-configuration}
