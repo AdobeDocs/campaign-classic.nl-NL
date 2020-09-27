@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 700cd82d87eccf6579afab5c9e8f7945807817da
+source-git-commit: 546c8f14006e333bb81aa52a008e9f1dfa79f03b
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 16%
@@ -21,9 +21,9 @@ ht-degree: 16%
 ---
 
 
-# Aan de slag met workflows{#about-workflows}
+# Aan de slag met workflows{#gs-workflows}
 
-## Workflows
+## Workflows{#about-workflows}
 
 Adobe Campaign bevat een workflowmodule waarmee u het volledige scala aan processen en taken in de verschillende modules van de toepassingsserver kunt ordenen. Met deze uitgebreide grafische omgeving kunt u processen ontwerpen, zoals segmentatie, uitvoering van campagnes, bestandsverwerking, menselijke participatie, enzovoort. Deze processen worden uitgevoerd en bijgehouden door de workflowengine.
 
@@ -73,7 +73,7 @@ Elke werkstroom bevat:
 
    Meer informatie over workflowgegevens en tabellen vindt u in [deze sectie](../../workflow/using/how-to-use-workflow-data.md).
 
-## Belangrijkste beginselen en beste praktijken
+## Belangrijkste beginselen en beste praktijken{#principles-workflows}
 
 Raadpleeg de volgende secties voor hulp en tips en trucs om processen te automatiseren met workflows:
 
