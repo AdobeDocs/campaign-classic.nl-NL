@@ -1,8 +1,6 @@
 ---
 title: Interactie- en aanbiedingsbeheer
-seo-title: Interactie- en aanbiedingsbeheer
-description: Interactie- en aanbiedingsbeheer
-seo-description: null
+description: Verzend de beste voorstellen naar uw contacten die op geschiktheidsregels worden gebaseerd.
 page-status-flag: never-activated
 uuid: 70720baa-e64e-4fb6-8301-fe3920791f79
 contentOwner: sauviat
@@ -15,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad4a40053b25bbf8de81e074e135ef4944f0b427
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+workflow-type: tm+mt
+source-wordcount: '290'
+ht-degree: 6%
 
 ---
 
@@ -32,12 +33,12 @@ Met interactie kunt u een catalogus met aanbiedingen maken en beheren en de rege
 
 ![](assets/Offermgt2.png)
 
-Bekijk deze video om uzelf vertrouwd te maken met de interactiefunctie en de terminologieën die worden gebruikt in Campagne Interaction: Overzicht [van de interactie tussen](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)Adobe-campagnes.
+Bekijk deze video om uzelf vertrouwd te maken met de interactiefunctie en de terminologieën die worden gebruikt in Campagne Interaction: [Overzicht](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)van Adobe Campaign-interactie.
 
 ## Verwante onderwerpen
 
-| Nuttige pagina&#39;s | Aanvullende bronnen |
+| Nuttige pagina’s | Aanvullende bronnen |
 |---|---|
 | [Interactie-implementatiestappen](../../interaction/using/implementation-steps.md) | [Distributie van testaanbiedingen](../../interaction/using/about-offers-simulation.md) |
 | [Live/Design-omgevingen](../../interaction/using/live-design-environments.md) | [Een voorstel toevoegen in een e-mail](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
-| [Aanbiedingsruimten maken](../../interaction/using/creating-offer-spaces.md) | [Hoofdlettergebruik: een aanbieding toevoegen aan een website](../../interaction/using/offers-on-an-inbound-channel.md) |
+| [Aanbiedingsplaatsingen maken](../../interaction/using/creating-offer-spaces.md) | [Hoofdlettergebruik: een aanbieding toevoegen aan een website](../../interaction/using/offers-on-an-inbound-channel.md) |
