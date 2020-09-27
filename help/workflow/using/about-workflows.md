@@ -1,8 +1,6 @@
 ---
 title: Workflows
-seo-title: Workflows
-description: Workflows
-seo-description: null
+description: Automatiseer processen met workflows, beheer gegevens en publiek, verzend berichten, en meer.
 page-status-flag: never-activated
 uuid: 19adb0e5-042d-47a0-9f92-24e4b3045dbe
 contentOwner: sauviat
@@ -15,26 +13,31 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 16%
 
 ---
 
 
-# Workflows{#about-workflows}
+# Aan de slag met workflows{#about-workflows}
 
-Adobe Campagne omvat een werkschemamodule die u machtigt om de volledige waaier van processen en taken over de verschillende modules van de toepassingsserver te ordenen. Met deze uitgebreide grafische omgeving kunt u processen ontwerpen, zoals segmentatie, uitvoering van campagnes, bestandsverwerking, menselijke participatie, enz. Deze processen worden uitgevoerd en bijgehouden door de workflowengine.
+## Workflows
 
-U kunt bijvoorbeeld een workflow gebruiken om een bestand van een server te downloaden, het te decomprimeren en vervolgens records in de Adobe Campagne-database te importeren.
+Adobe Campaign bevat een workflowmodule waarmee u het volledige scala aan processen en taken in de verschillende modules van de toepassingsserver kunt ordenen. Met deze uitgebreide grafische omgeving kunt u processen ontwerpen, zoals segmentatie, uitvoering van campagnes, bestandsverwerking, menselijke participatie, enzovoort. Deze processen worden uitgevoerd en bijgehouden door de workflowengine.
 
-Een workflow kan ook een of meer operatoren omvatten die op de hoogte moeten worden gebracht of die keuzes kunnen maken en processen kunnen goedkeuren. Op deze manier is het mogelijk om een leveringsactie te maken, een taak toe te wijzen aan een of meer operatoren om aan inhoud te werken, doelen op te geven en proefdrukken goed te keuren voordat de levering wordt gestart.
+U kunt bijvoorbeeld een workflow gebruiken om een bestand van een server te downloaden, het te decomprimeren en vervolgens records in de Adobe Campaign-database te importeren.
+
+Een workflow kan ook een of meer operatoren omvatten die op de hoogte moeten worden gebracht of die keuzes kunnen maken en processen kunnen goedkeuren. Op deze manier is het mogelijk om een leveringsactie te maken, een taak toe te wijzen aan een of meer operatoren om aan content te werken, doelen op te geven en proeven goed te keuren voordat de levering wordt gestart.
 
 Workflows vinden plaats in verschillende contexten en fasen van het campagnebeheerproces.
 
-Adobe Campagne gebruikt workflows om:
+Adobe Campaign gebruikt workflows om:
 
-* Voer gerichte campagnes uit. Raadpleeg de stappen [voor](../../workflow/using/building-a-workflow.md#implementation-steps-)implementatie voor meer informatie.
-* Campagnes opbouwen: voor elke campagne, laat het **[!UICONTROL Workflow]** lusje u het doel bouwen en de leveringen tot stand brengen. Raadpleeg de [campagneworkflows](../../workflow/using/building-a-workflow.md#campaign-workflows)voor meer informatie.
-* Technische processen uitvoeren: opschonen, trackinggegevens verzamelen of voorlopige berekeningen maken. Raadpleeg de [technische workflows](../../workflow/using/building-a-workflow.md#technical-workflows)voor meer informatie.
+* Voer gerichte campagnes uit. For more on this, refer to [Implementation steps](../../workflow/using/building-a-workflow.md#implementation-steps-).
+* Campagnes opbouwen: voor elke campagne, laat het **[!UICONTROL Workflow]** lusje u het doel bouwen en de leveringen tot stand brengen. For more on this, refer to [Campaign workflows](../../workflow/using/building-a-workflow.md#campaign-workflows).
+* Technische processen uitvoeren: opschonen, trackinggegevens verzamelen of voorlopige berekeningen maken. For more on this, refer to [Technical workflows](../../workflow/using/building-a-workflow.md#technical-workflows).
 
 Een werkstroom kan zowel een procesdefinitie (het werkschemamodel, dat een vertegenwoordiging van is wat verondersteld om is te gebeuren) als een geval van dit proces (een werkschemainstantie, die een vertegenwoordiging van is wat eigenlijk gebeurt) betekenen.
 
@@ -70,3 +73,14 @@ Elke werkstroom bevat:
 
    Meer informatie over workflowgegevens en tabellen vindt u in [deze sectie](../../workflow/using/how-to-use-workflow-data.md).
 
+## Belangrijkste beginselen en beste praktijken
+
+Raadpleeg de volgende secties voor hulp en tips en trucs om processen te automatiseren met workflows:
+
+* Meer informatie over workflowactiviteiten vindt u op [deze pagina](../../workflow/using/how-to-use-workflow-data.md).
+* Leer hoe u een workflow maakt in [deze sectie](../../workflow/using/building-a-workflow.md).
+* Ontdek in [deze sectie](../../workflow/using/importing-data.md)hoe u workflows kunt gebruiken om gegevens te importeren in Campagne.
+* Best practices voor workflows worden in [deze pagina](../../workflow/using/workflow-best-practices.md)beschreven.
+* Raadpleeg de instructies over het uitvoeren van workflows in [deze sectie](../../workflow/using/starting-a-workflow.md).
+* Leer hoe u workflows in [deze pagina](../../workflow/using/monitoring-workflow-execution)kunt controleren.
+* Leer hoe u gebruikers toegang biedt om workflows te gebruiken op [deze pagina](../../workflow/using/managing-rights.md).
