@@ -1,7 +1,7 @@
 ---
-title: Voorbeelden van schema's
-seo-title: Voorbeelden van schema's
-description: Voorbeelden van schema's
+title: Voorbeelden van schemabewerking
+seo-title: Voorbeelden van schemabewerking
+description: Voorbeelden van schemabewerking
 seo-description: null
 page-status-flag: never-activated
 uuid: f4bc1596-cf4e-4d1f-b6e8-b18cbd1e2e23
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 042349ae62012984a040b578d97706bae1c9917d
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 3%
 
 ---
 
 
-# Voorbeelden van schema&#39;s{#examples-of-schemas-edition}
+# Voorbeelden van schemabewerking{#examples-of-schemas-edition}
 
 ## Een tabel uitbreiden {#extending-a-table}
 
@@ -304,3 +307,46 @@ CREATE UNIQUE INDEX CusRcpGrpRel_id ON CusRcpGrpRel(iRcpGroupId, iRecipientId);
 CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 ```
 
+## Hoofdlettergebruik: een veld koppelen aan een bestaande referentietabel {#uc-link}
+
+Dit gebruiksgeval toont aan hoe u een bestaande verwijzingstabel als alternatief aan ingebouwde de opsingsmechanismen van Adobe Campaign (enum, userEnum, of dbEnum) kunt gebruiken.
+
+U kunt een bestaande verwijzingstabel als opsomming in uw schema&#39;s ook gebruiken. Dit kan worden bereikt door een verbinding tussen een lijst en de verwijzingstabel te creëren, en door de attributen **displayAsField=&quot;waar&quot;** toe te voegen.
+
+In dit voorbeeld bevat de referentietabel een lijst met namen en identificatiecodes van banken:
+
+```
+<srcSchema entitySchema="xtk:srcSchema" img="cus:bank16x16.png" label="Bank" mappingType="sql" name="bank" namespace="cus"
+xtkschema="xtk:srcSchema">
+    <element img="cus:bank16x16.png" label="Banks" name="bank">
+        <compute-string expr="@name"/>
+        <key name="id">
+            <keyfield xpath="@id"/>
+        </key>
+        <attribute label="Bank Id" name="id" type="short"/>
+        <attribute label="Name" length="64" name="name" type="string"/>
+     </element> 
+</srcSchema>
+```
+
+Definieer een koppeling in een tabel die deze referentietabel gebruikt en voeg het kenmerk **displayAsField=&quot;true&quot;** toe.
+
+```
+<element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
+```
+
+In de gebruikersinterface wordt geen koppeling maar een veld weergegeven. Wanneer de gebruiker dat veld kiest, kan hij een waarde in de referentietabel selecteren of de functie voor automatisch aanvullen gebruiken.
+
+![](assets/schema-edition-ex.png)
+
+* Als de instructie automatisch moet worden voltooid, moet u een compute-string definiëren in de referentietabel.
+
+* Voeg het kenmerk **noDbIndex=&quot;true&quot;** toe aan de koppelingsdefinitie om te voorkomen dat Adobe Campaign een index maakt voor de waarden die zijn opgeslagen in de brontabel van de koppeling.
+
+## Verwante onderwerpen
+
+* [Werken met opsommingen](../../platform/using/managing-enumerations.md)
+
+* [Aan de slag met campagnereschema&#39;s](../../configuration/using/about-schema-edition.md)
+
+* [De databasestructuur bijwerken](../../configuration/using/updating-the-database-structure.md)
