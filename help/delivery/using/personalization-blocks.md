@@ -1,7 +1,7 @@
 ---
-title: Aanpassingsblokken
-seo-title: Aanpassingsblokken
-description: Aanpassingsblokken
+title: Personalisatieblokken
+seo-title: Personalisatieblokken
+description: Personalisatieblokken
 seo-description: null
 page-status-flag: never-activated
 uuid: f9867f8d-f6ce-4a5f-b6b4-fd8056d28576
@@ -15,19 +15,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 811d664807776473790b74c4cb6a672b5ca2bdd8
 workflow-type: tm+mt
 source-wordcount: '889'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Aanpassingsblokken{#personalization-blocks}
+# Personalisatieblokken{#personalization-blocks}
 
 De blokken van de verpersoonlijking zijn dynamisch, gepersonaliseerd en bevatten een specifiek teruggeven dat u in uw leveringen kunt opnemen. U kunt bijvoorbeeld een logo, een begroetingsbericht of een koppeling naar een spiegelpagina toevoegen. Zie [Aanmaakblokken](#inserting-personalization-blocks)invoegen.
 
-![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](#personalization-blocks-video)
+![](assets/do-not-localize/how-to-video.png) Deze functie ontdekken [in video](#personalization-blocks-video)
 
 Personalisatieblokken zijn toegankelijk via het **[!UICONTROL Resources > Campaign Management > Personalization blocks]** knooppunt van de Adobe Campaign Explorer. Verscheidene blokken zijn beschikbaar door gebrek (zie uit- [van-de-doos verpersoonlijkingsblokken](#out-of-the-box-personalization-blocks)).
 
@@ -162,7 +162,7 @@ Ga naar de verkenner en voer de volgende stappen uit om een verpersoonlijkingsbl
 
    * Voer de inhoud in (in HTML, tekst, JavaScript, enz.) van het (de) verpersoonlijkingsblok(ken) en klik **[!UICONTROL Save]**.
 
-## E-mails personaliseren met gebruik van dynamische inhoudsblokken {#personalization-blocks-video}
+## E-mails personaliseren met behulp van dynamische contentblokken {#personalization-blocks-video}
 
 Leer hoe u dynamische inhoudsblokken hebt gemaakt en hoe u deze kunt gebruiken om de inhoud van uw e-maillevering aan te passen.
 
