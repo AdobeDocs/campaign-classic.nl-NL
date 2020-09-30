@@ -1,7 +1,7 @@
 ---
-title: zaadadressen maken
-seo-title: zaadadressen maken
-description: zaadadressen maken
+title: Seed-adressen maken
+seo-title: Seed-adressen maken
+description: Seed-adressen maken
 seo-description: null
 page-status-flag: never-activated
 uuid: 0dae107a-7b53-4096-93c3-9517b402cbc9
@@ -15,18 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 6483c3e2e9fd3a2951b2bc8bf6d8a3350361e86f
+workflow-type: tm+mt
+source-wordcount: '411'
+ht-degree: 2%
 
 ---
 
 
-# zaadadressen maken{#creating-seed-addresses}
+# Seed-adressen maken{#creating-seed-addresses}
 
-De zaadadressen worden niet beheerd via standaardprofielen en doelstellingen, maar in een specifiek knooppunt van de hiërarchie van de Campagne van Adobe **[!UICONTROL Resources > Campaign management > Seed addresses]**.
+Zaadadressen worden niet beheerd via standaardprofielen en -doelen, maar in een speciaal knooppunt van de Adobe Campaign-hiërarchie **[!UICONTROL Resources > Campaign management > Seed addresses]**.
 
-U kunt submappen maken om de zaadadressen te ordenen. Klik hiertoe met de rechtermuisknop op het **[!UICONTROL Seed addresses]** knooppunt en selecteer **[!UICONTROL Create a new 'Seed addresses' folder]**. Geef de submap een naam en druk op **[!UICONTROL Enter]** om te valideren. U kunt nu zaadadressen maken of kopiëren naar deze submap. Voor meer op dit, verwijs naar het [bepalen van adressen](#defining-addresses).
+U kunt submappen maken om de zaadadressen te ordenen. Klik hiertoe met de rechtermuisknop op het **[!UICONTROL Seed addresses]** knooppunt en selecteer **[!UICONTROL Create a new 'Seed addresses' folder]**. Geef de submap een naam en druk op **[!UICONTROL Enter]** om te valideren. U kunt nu zaadadressen maken of kopiëren naar deze submap. For more on this, refer to [Defining addresses](#defining-addresses).
 
-Met Adobe Campaign kunt u ook zaadadressjablonen maken die worden geïmporteerd in leveringen of campagnes en die worden aangepast op basis van de specifieke behoeften van de desbetreffende leveringen en campagnes. Raadpleeg Sjablonen voor [zaadadressen](#creating-seed-address-templates)maken.
+Met Adobe Campaign kunt u ook zaadadressjablonen maken die worden geïmporteerd in leveringen of campagnes en die worden aangepast aan de specifieke behoeften van de desbetreffende leveringen en campagnes. Raadpleeg Sjablonen voor [zaadadressen](#creating-seed-address-templates)maken.
 
 ## Adressen definiëren {#defining-addresses}
 
@@ -44,7 +47,12 @@ Voer de volgende stappen uit om zaadadressen te maken:
    ![](assets/s_ncs_user_seedlist_new_address.png)
 
 1. Op het **[!UICONTROL Seed fields]** lusje, ga de waarden in die in de leveringslogboeken tijdens de analysefase (in de **[!UICONTROL nms:broadLog]** lijst) zullen worden opgenomen.
-1. Op het **[!UICONTROL Additional data]** lusje, ga de verpersoonlijkingsgegevens in die voor de leveringen worden gebruikt die in de werkschema&#39;s worden gecreeerd Datamanagement en die u een specifieke waarde aan wilt toewijzen.
+
+1. Voer op het **[!UICONTROL Additional data]** tabblad de aanpassingsgegevens in die worden gebruikt voor de leveringen die in de workflows voor gegevensbeheer zijn gemaakt en waaraan u een specifieke waarde wilt toewijzen.
+
+   >[!NOTE]
+   >
+   >Controleer of er aanvullende doelgegevens zijn gedefinieerd met een alias die begint met &#39;@&#39; in de **[!UICONTROL Enrichment]** activiteit. Anders, zult u hen niet behoorlijk met uw zaadadressen in uw leveringsactiviteit kunnen gebruiken.
 
 ## Sjablonen voor zaadadressen maken {#creating-seed-address-templates}
 
