@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1b76fb1694545f4be02a63e4c670b81db632c5ee
+source-git-commit: 6483c3e2e9fd3a2951b2bc8bf6d8a3350361e86f
 workflow-type: tm+mt
-source-wordcount: '3686'
+source-wordcount: '3704'
 ht-degree: 87%
 
 ---
@@ -32,6 +32,8 @@ U kunt ook de [Adobe Campaign Classic-release-opmerkingen](../../rn/using/latest
 Er is een opmerking toegevoegd om op te geven dat het aantal actieve profielen alleen beschikbaar is voor marketinginstanties. [Meer informatie](../../platform/using/about-profiles.md#active-profiles)
 
 Er is een nieuw voorbeeld van een schemaeditie toegevoegd om een veld te koppelen aan een bestaande referentietabel. [Meer informatie](../../configuration/using/examples-of-schemas-edition.md#uc-link)
+
+Er is een opmerking toegevoegd betreffende het gebruik van aanvullende gegevens met zaadadressen in leveringen. [Meer informatie](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
 ## Augustus 2020 {#aug-2020}
 
