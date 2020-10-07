@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: introduction
 discoiquuid: 8b33e6af-15c3-4b30-8ad6-d76a1f33be21
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '83'
+ht-degree: 4%
 
 ---
 
@@ -24,4 +24,4 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 In dit document worden de productieprocedures voor Adobe Campaign beschreven: configuratie, bewaking, upgradeproces, gegevensverwerking, procedure voor databaseonderhoud en aanbevelingen. Aan het einde van dit document is een sectie over probleemoplossing beschikbaar.
 
-De productieprocedures moeten met voorzichtigheid worden uitgevoerd, de effecten ervan moeten vooraf volledig in aanmerking worden genomen en de procedure moet strikt worden uitgevoerd. Deze mag alleen door een deskundige gebruiker worden uitgevoerd. We raden u ten zeerste aan contact op te nemen met Adobe Campaign voordat u een productieprocedure start. Verwacht stappen na de upgrade.
+De productieprocedures moeten met voorzichtigheid worden uitgevoerd, de effecten ervan moeten vooraf volledig in aanmerking worden genomen en de procedure moet strikt worden uitgevoerd. Deze mag alleen door een deskundige gebruiker worden uitgevoerd. We raden u ten zeerste aan contact op te nemen met Adobe Campaign voordat u een productieprocedure start. Verwacht dat u de upgrade uitvoert.
