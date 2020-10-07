@@ -1,7 +1,7 @@
 ---
-title: Informatie over stroombeheeractiviteiten
-seo-title: Informatie over stroombeheeractiviteiten
-description: Informatie over stroombeheeractiviteiten
+title: Stroombeheeractiviteiten
+seo-title: Stroombeheeractiviteiten
+description: Stroombeheeractiviteiten
 seo-description: null
 page-status-flag: never-activated
 uuid: de3fee78-4f1c-4c75-a7d4-b2257b0c3316
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 27cd51f6-b787-4703-a34d-ce23321f0dcf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 9%
 
 ---
 
 
-# Informatie over stroombeheeractiviteiten{#about-flow-control-activities}
+# Stroombeheeractiviteiten{#about-flow-control-activities}
 
 De volgende activiteiten zijn databaseactiviteiten: Hun belangrijkste taak is de coördinatie van de andere activiteiten.
 
@@ -32,8 +32,8 @@ De volgende activiteiten zijn databaseactiviteiten: Hun belangrijkste taak is de
 * **Wacht**: laat de uitgaande overgang na een bepaalde tijdslimiet toe. Zie [Wacht](../../workflow/using/wait.md).
 * **Tijdbeperking**: Hiermee kunt u een taak pauzeren voor een ingestelde periode. Raadpleeg de [tijdbeperking](../../workflow/using/time-constraint.md).
 * **Subworkflow**: Hiermee kunt u een andere workflow uitvoeren. Zie [Subworkflow](../../workflow/using/sub-workflow.md).
-* **Sprongen**: Hiermee kunt u overgangen zonder koppelingen implementeren. Zie [Springen (beginpunt en eindpunt)](../../workflow/using/jump--start-point-and-end-point-.md).
-* **Extern signaal**: laat u de uitgaande overgang na het ontvangen van een extern signaal toelaten. Raadpleeg de sectie [Extern signaal](../../workflow/using/external-signal.md) .
+* **Sprongen**: Hiermee kunt u overgangen zonder koppelingen implementeren. Refer to [Jump (start point and end point)](../../workflow/using/jump--start-point-and-end-point-.md).
+* **Extern signaal**: laat u de uitgaande overgang na het ontvangen van een extern signaal toelaten. Raadpleeg de sectie [Extern signaal](../../workflow/using/external-signal.md).
 * **Goedkeuring**: Hiermee kunt u een e-mail naar een operator of groep operatoren verzenden en wachten tot de goedkeuring is voltooid. Raadpleeg de sectie [Goedkeuring](../../workflow/using/approval.md) .
 * **Waarschuwing**: Hiermee kunt u een waarschuwing naar een operator of groep operatoren sturen. Raadpleeg de sectie [Waarschuwing](../../workflow/using/alert.md) .
 * **Taak**: Hiermee kunt u de uitvoering van taken configureren. Raadpleeg de sectie [Taak](../../workflow/using/task.md) .
