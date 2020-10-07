@@ -1,7 +1,7 @@
 ---
-title: Opeenvolging van webformulierpagina's definiëren
-seo-title: Opeenvolging van webformulierpagina's definiëren
-description: Opeenvolging van webformulierpagina's definiëren
+title: De volgorde van webformulierpagina’s definiëren
+seo-title: De volgorde van webformulierpagina’s definiëren
+description: De volgorde van webformulierpagina’s definiëren
 seo-description: null
 page-status-flag: never-activated
 uuid: 297fad62-d806-4bd8-9b8c-313c20344ab0
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 85bf3244-6896-43e7-96b8-84c45c282fec
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 2%
 
 ---
 
 
-# Opeenvolging van webformulierpagina&#39;s definiëren{#defining-web-forms-page-sequencing}
+# De volgorde van webformulierpagina’s definiëren{#defining-web-forms-page-sequencing}
 
 Het formulier kan een of meer pagina&#39;s bevatten. Het wordt gebouwd door een diagram dat u opeenvolgende pagina&#39;s en het testen, manuscriptuitvoering en de stadia van de paginakijlopname laat. De wijze van de diagramconstructie is het zelfde als voor een werkschema.
 
@@ -118,7 +118,7 @@ U kunt de pagina ook personaliseren die volgens de initialisatieparameters van d
 
 ## Scripts toevoegen {#adding-scripts}
 
-Met het **[!UICONTROL Script]** object kunt u rechtstreeks een JavaScript-script invoeren, bijvoorbeeld om de waarde van een veld te wijzigen, gegevens op te halen uit de database of een Adobe Campagne-API aan te roepen.
+Met het **[!UICONTROL Script]** object kunt u rechtstreeks een JavaScript-script invoeren, bijvoorbeeld om de waarde van een veld te wijzigen, gegevens op te halen uit de database of een Adobe Campaign API aan te roepen.
 
 ## De eindpagina aanpassen {#personalizing-the-end-page}
 
