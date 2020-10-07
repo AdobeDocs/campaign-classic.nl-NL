@@ -1,7 +1,7 @@
 ---
-title: Workflow-eigenschappen
-seo-title: Workflow-eigenschappen
-description: Workflow-eigenschappen
+title: Workfloweigenschappen
+seo-title: Workfloweigenschappen
+description: Workfloweigenschappen
 seo-description: null
 page-status-flag: never-activated
 uuid: bd576cc0-2db8-4519-bcb5-52bf5c811f42
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 discoiquuid: 71969b30-cc01-4358-9597-f17939720684
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '545'
+ht-degree: 1%
 
 ---
 
 
-# Workflow-eigenschappen{#workflow-properties}
+# Workfloweigenschappen{#workflow-properties}
 
 ## Tabblad Uitvoering {#execution-tab}
 
@@ -46,7 +46,7 @@ Deze sectie wordt alleen weergegeven in workflows voor campagnes.
 
    Als uw installatie meerdere workflowservers bevat, gebruikt u dit veld om de computer te kiezen waarop de workflow wordt uitgevoerd. Als de waarde die in dit veld wordt gedefinieerd, op geen enkele server bestaat, blijft de workflow in behandeling.
 
-   Zie deze [sectie](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
+   Refer to this [section](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
 
 * **[!UICONTROL History in days]**
 
@@ -54,7 +54,7 @@ Deze sectie wordt alleen weergegeven in workflows voor campagnes.
 
 * **[!UICONTROL Log SQL queries in the journal]**
 
-   Deze functionaliteit is gereserveerd voor geavanceerde gebruikers. Het heeft betrekking op werkstromen die gericht activiteiten (vraag, vereniging, doorsnede, enz.) bevatten. Als deze optie is ingeschakeld, worden de SQL-query&#39;s die tijdens de workflowuitvoering naar de database worden verzonden, weergegeven in Adobe Campagne: dit betekent dat u ze kunt analyseren om query&#39;s te optimaliseren of problemen te diagnosticeren.
+   Deze functionaliteit is gereserveerd voor geavanceerde gebruikers. Het heeft betrekking op werkstromen die gericht activiteiten (vraag, vereniging, doorsnede, enz.) bevatten. Als deze optie is ingeschakeld, worden de SQL-query&#39;s die tijdens de uitvoering van de workflow naar de database worden verzonden, weergegeven in Adobe Campaign: dit betekent dat u ze kunt analyseren om query&#39;s te optimaliseren of problemen te diagnosticeren.
 
    De vragen worden getoond op een **[!UICONTROL SQL logs]** **[!UICONTROL Properties]** lusje dat aan het werkschema (behalve campagnewerkschema&#39;s) en aan de activiteit wordt toegevoegd wanneer de optie wordt toegelaten. Het **[!UICONTROL Audit]** tabblad bevat ook SQL-query&#39;s.
 
@@ -64,14 +64,14 @@ Deze sectie wordt alleen weergegeven in workflows voor campagnes.
 
    Deze optie mag alleen worden gebruikt voor foutopsporing en nooit in productie. Wanneer deze optie is ingeschakeld, heeft de workflow prioriteit en worden alle andere workflows gestopt totdat deze is voltooid.
 
-### Foutbeheer {#error-management}
+### Error management {#error-management}
 
 * **[!UICONTROL Troubleshooting]**
 
    In dit veld kunt u de acties definiëren die moeten worden uitgevoerd als een workflowtaak fouten bevat. Er zijn twee mogelijke opties:
 
    * **[!UICONTROL Stop the process]**: de workflow wordt automatisch gepauzeerd. de workflowstatus verandert in **[!UICONTROL Failed]**. Als het probleem is opgelost, start u de workflow opnieuw met de **[!UICONTROL Start]** knoppen of de **[!UICONTROL Restart]** knoppen.
-   * **[!UICONTROL Ignore]**: de status van de taak die de fout heeft veroorzaakt, verandert in **[!UICONTROL Failed]**, maar de werkstroom behoudt de **[!UICONTROL Started]** status. Deze configuratie is relevant voor terugkerende taken: als de tak een planner omvat, zal het normaal beginnen volgende tijd het werkschema wordt uitgevoerd.
+   * **[!UICONTROL Ignore]**: De status van de taak die de fout heeft veroorzaakt, verandert in **[!UICONTROL Failed]**, maar de werkstroom behoudt de **[!UICONTROL Started]** status. Deze configuratie is relevant voor terugkerende taken: als de tak een planner omvat, zal het normaal beginnen volgende tijd het werkschema wordt uitgevoerd.
 
 * **[!UICONTROL Consecutive errors]**
 
@@ -85,7 +85,7 @@ Deze sectie wordt alleen weergegeven in workflows voor campagnes.
 
    ![](assets/wf-properties_select-supervisors.png)
 
-   Het **[!UICONTROL Notification to a workflow supervisor]** standaardmalplaatje omvat een verbinding voor de toegang tot van de console van de Campagne van Adobe via het Web zodat de ontvanger aan de kwestie kan werken zodra zij het programma worden geopend.
+   Het **[!UICONTROL Notification to a workflow supervisor]** standaardmalplaatje omvat een verbinding voor de toegang tot van de console van Adobe Campaign via het Web zodat de ontvanger aan de kwestie kan werken zodra zij het programma worden geopend.
 
    Ga naar **[!UICONTROL Administration>Campaign management>Technical deliveries and templates]** om een gepersonaliseerde sjabloon te maken.
 
