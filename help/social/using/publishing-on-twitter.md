@@ -11,11 +11,11 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 discoiquuid: 2dc278ce-477c-493d-8abb-8bbdf2e988a5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '944'
+ht-degree: 5%
 
 ---
 
@@ -39,7 +39,7 @@ Maak een nieuwe levering op basis van de **[!UICONTROL Tweet (twitter)]** leveri
 
 ![](assets/social_twitter_delivery_001.png)
 
-### Het hoofddoel selecteren {#selecting-the-main-target}
+### Selecting the main target {#selecting-the-main-target}
 
 Selecteer de account(s) waarnaar u tweets wilt verzenden.
 
@@ -47,7 +47,7 @@ Selecteer de account(s) waarnaar u tweets wilt verzenden.
 
    ![](assets/social_twitter_delivery_002.png)
 
-1. Klik op de **[!UICONTROL Add]** knop.
+1. Klik op de knop **[!UICONTROL Add]**.
 
    ![](assets/social_twitter_delivery_006.png)
 
@@ -94,7 +94,7 @@ Op het **[!UICONTROL Preview]** tabblad kunt u een rendering van de tweet weerge
 
 Het volgen kan in de leveringsrapporten en in het **[!UICONTROL Edit > Tracking]** lusje van de levering en de dienst worden bekeken.
 
-De volgende configuratie is het zelfde als voor een e-maillevering. Zie [deze sectie](../../delivery/using/monitoring-a-delivery.md)voor meer informatie.
+De volgende configuratie is het zelfde als voor een e-maillevering. Raadpleeg [deze sectie](../../delivery/using/monitoring-a-delivery.md) voor meer informatie.
 
 >[!NOTE]
 >
@@ -128,7 +128,7 @@ Bewijs van levering is identiek aan e-mailleveringen. Zie [deze sectie](../../de
 
 ## Directe berichten verzenden aan abonnees {#sending-direct-messages-to-subscribers}
 
-### Exploitatiebeginsel {#operating-principle}
+### Werkwijze {#operating-principle}
 
 Met de **[!UICONTROL Synchronize Twitter accounts]** workflow (zie [Synchronizing Twitter accounts](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts)) wordt de lijst met Twitter-abonnees hersteld, zodat u hen directe berichten kunt sturen. De herstelde volgers worden opgeslagen in een specifieke tabel: de bezoekerslijst. Ga naar het **[!UICONTROL Profiles and Targets > Visitors]** knooppunt om de lijst met Twitter-volgers weer te geven.
 
@@ -136,9 +136,9 @@ Met de **[!UICONTROL Synchronize Twitter accounts]** workflow (zie [Synchronizin
 
 >[!IMPORTANT]
 >
->De workflow kan alleen de lijst met Twitter-volgers herstellen als het **[!UICONTROL Synchronize Twitter accounts]** selectievakje is ingeschakeld in het scherm Bewerken van de service die aan de account is gekoppeld. Raadpleeg voor meer informatie: Schrijftoegang [delegeren naar Adobe-campagne](../../social/using/configuring-publishing-on-twitter.md#delegating-write-access-to-adobe-campaign).
+>De workflow kan alleen de lijst met Twitter-volgers herstellen als het **[!UICONTROL Synchronize Twitter accounts]** selectievakje is ingeschakeld in het scherm Bewerken van de service die aan de account is gekoppeld. Raadpleeg voor meer informatie: [Schrijftoegang delegeren aan Adobe Campaign](../../social/using/configuring-publishing-on-twitter.md#delegating-write-access-to-adobe-campaign).
 
-Voor elk van de volgende programma&#39;s wordt de volgende informatie hersteld:
+Adobe Campaign herstelt voor elk van de volgende gegevens:
 
 * **[!UICONTROL Origin]**: naam van het sociale netwerk (in dit geval **Twitter** )
 * **[!UICONTROL External ID]**: gebruikersnaam
@@ -155,7 +155,7 @@ De volgende beperkingen zijn inherent aan Twitter.
 
 * Het bericht mag niet langer zijn dan 140 tekens.
 * HTML wordt niet ondersteund.
-* U kunt niet meer dan 250 directe berichten per dag verzenden. Als u wilt voorkomen dat deze drempelwaarde wordt overschreden, kunt u in verschillende golven leveren. Leveringen in golven worden geconfigureerd als e-mailleveringen. Zie [deze sectie](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)voor meer informatie.
+* U kunt niet meer dan 250 directe berichten per dag verzenden. Als u wilt voorkomen dat deze drempelwaarde wordt overschreden, kunt u in verschillende golven leveren. Leveringen in golven worden geconfigureerd als e-mailleveringen. Raadpleeg [deze sectie](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves) voor meer informatie.
 
 ### De levering maken {#creating-the-delivery-}
 
@@ -163,7 +163,7 @@ Maak een nieuwe levering op basis van de **[!UICONTROL Tweet (Direct Message)]**
 
 ![](assets/social_twitter_delivery_010.png)
 
-### Het hoofddoel selecteren {#selecting-the-main-target-1}
+### Selecting the main target {#selecting-the-main-target-1}
 
 Selecteer de volgers aan wie u uw directe bericht wilt verzenden.
 
@@ -171,7 +171,7 @@ Selecteer de volgers aan wie u uw directe bericht wilt verzenden.
 
    ![](assets/social_twitter_delivery_016.png)
 
-1. Klik op de **[!UICONTROL Add]** knop.
+1. Klik op de knop **[!UICONTROL Add]**.
 
    ![](assets/social_twitter_delivery_006.png)
 
