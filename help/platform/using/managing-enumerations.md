@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 discoiquuid: 7674c856-2b64-4a85-9ffa-3e14a142028e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 0%
 
 ---
 
@@ -59,7 +59,7 @@ In de gespecificeerde lijstgebieden, kunt u waarden buiten opsommingswaarden ing
 
 >[!CAUTION]
 >
->Het zuiveren van gegevens is een kritiek proces dat de gegevens in het gegevensbestand beïnvloedt. Adobe Campaign voert updates voor massagegevens uit, waardoor sommige waarden kunnen worden verwijderd. Deze bewerking is daarom voorbehouden aan professionele gebruikers.
+>Het zuiveren van gegevens is een kritiek proces dat de gegevens in het gegevensbestand beïnvloedt. Adobe Campaign voert massagegevensupdates uit, wat ertoe kan leiden dat sommige waarden worden verwijderd. Deze bewerking is daarom voorbehouden aan professionele gebruikers.
 
 De ingevoerde waarde is dan:
 
@@ -152,7 +152,7 @@ U kunt de aanraakberekening handmatig uitvoeren via de **[!UICONTROL Cleanse val
 ![](assets/s_ncs_user_itemized_list_alias_hits.png)
 
 * **[!UICONTROL Update the number of alias hits]**: hiermee kunt u resultaten bijwerken die al zijn berekend op basis van de ingevoerde datum.
-* **[!UICONTROL Recalculate the number of alias hits from the start]**: Hiermee kunt u berekeningen uitvoeren op het gehele Adobe Campagne-platform.
+* **[!UICONTROL Recalculate the number of alias hits from the start]**: Hiermee kunt u berekeningen uitvoeren op het hele Adobe Campaign-platform.
 
 U kunt ook een specifieke workflow maken, zodat de berekening automatisch gedurende een bepaalde periode wordt uitgevoerd, bijvoorbeeld eenmaal per week.
 
