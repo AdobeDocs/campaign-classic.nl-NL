@@ -9,16 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '412'
+ht-degree: 0%
 
 ---
 
 
-# Een berekend veld van het type Opsomming toevoegen {#adding-an-enumeration-type-calculated-field}
+# Adding an Enumeration type calculated field {#adding-an-enumeration-type-calculated-field}
 
 Hier willen wij een vraag met een **[!UICONTROL Enumerations]** type berekend gebied tot stand brengen. Met dit veld wordt een extra kolom gegenereerd in het venster met de gegevensvoorvertoning. Deze kolom zal de numerieke waarden specificeren die als resultaat voor elke ontvanger (0, 1 en 2) zijn teruggekeerd. Aan elke waarde in de nieuwe kolom wordt een geslacht toegewezen: &quot;Mannelijk&quot; voor &quot;1&quot;, &quot;Vrouwelijk&quot; voor &quot;2&quot; of &quot;Niet aangegeven&quot; als de waarde gelijk is aan &quot;0&quot;.
 
@@ -42,12 +42,12 @@ Voer de volgende stappen uit:
    ![](assets/query_editor_nveau_73.png)
 
 1. Klik in het **[!UICONTROL Sorting]** venster op **[!UICONTROL Next]**: voor dit voorbeeld is geen sortering nodig .
-1. Selecteer **[!UICONTROL Data filtering]** in **[!UICONTROL Filtering conditions]**.
+1. In **[!UICONTROL Data filtering]** selecteert u **[!UICONTROL Filtering conditions]**.
 1. In het **[!UICONTROL Target element]** venster, plaats een filtervoorwaarde om ontvangers te verzamelen die Engels spreken.
 
    ![](assets/query_editor_nveau_74.png)
 
-1. Klik in het **[!UICONTROL Data formatting]** venster op **[!UICONTROL Add a calculated field]**.
+1. In the **[!UICONTROL Data formatting]** window, click **[!UICONTROL Add a calculated field]**.
 
    ![](assets/query_editor_nveau_75.png)
 
@@ -63,13 +63,14 @@ Voer de volgende stappen uit:
 
    * Voer in de **[!UICONTROL Source]** kolom de bronwaarde voor elk geslacht (0,1,2) in een nieuwe regel in.
    * Voer in de **[!UICONTROL Destination]** kolom de waarden in: &quot;Niet aangegeven&quot; voor regel &quot;0&quot;, &quot;Mannelijk&quot; voor regel &quot;1&quot; en &quot;Vrouwelijk&quot; voor regel &quot;2&quot;.
+
    Selecteer de **[!UICONTROL Keep the source value]** functie.
 
    Klik **[!UICONTROL OK]** om het berekende veld goed te keuren.
 
    ![](assets/query_editor_nveau_77.png)
 
-1. Klik in het **[!UICONTROL Data formatting]** venster op **[!UICONTROL Next]**.
+1. In the **[!UICONTROL Data formatting]** window, click **[!UICONTROL Next]**.
 1. In het voorvertoningsvenster **[!UICONTROL start the preview of the data]**.
 
    De aanvullende kolom definieert het geslacht van 0, 1 en 2:
@@ -77,6 +78,7 @@ Voer de volgende stappen uit:
    * 0 voor &quot;Niet aangegeven&quot;
    * 1 voor &quot;Mannelijk&quot;
    * 2 voor &quot;Vrouwelijk&quot;
+
    ![](assets/query_editor_nveau_78.png)
 
    Als u bijvoorbeeld geen geslacht &quot;2&quot; opgeeft in het veld **[!UICONTROL List of enumeration values]** en de **[!UICONTROL Generate a warning and continue]** functie van het **[!UICONTROL In other cases]** veld is geselecteerd, wordt een waarschuwingslogboek weergegeven. Dit logbestand geeft aan dat geslacht &quot;2&quot; (vrouwelijk) niet is ingevoerd. Deze wordt weergegeven in het **[!UICONTROL Logs generated during export]** veld van het venster met gegevensvoorvertoning.
