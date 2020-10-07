@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: 0f5399a8-860d-4a1b-86a9-9011b973346b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '122'
+ht-degree: 9%
 
 ---
 
@@ -100,7 +100,7 @@ Voor een bestaande **prod** -instantie in Linux/PostgreSQL zijn de stappen voor 
    /etc/init.d/apache start
    ```
 
-1. Bevestig de schakelaar. U doet dit door verbinding te maken via de Adobe Campaign-console en:
+1. Bevestig de schakelaar. Hiervoor maakt u verbinding via de Adobe Campaign-console en:
 
    * controleert u of de gegevens correct worden weergegeven, met name de tekens met accent:
    * start een levering en controleer of de opzoekfunctie voor bijhouden werkt.
