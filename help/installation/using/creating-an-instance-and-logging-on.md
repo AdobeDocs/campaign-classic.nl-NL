@@ -11,18 +11,18 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 discoiquuid: c7395094-c635-45ab-8455-a050f7d16b64
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: be590c6d993eecacf51736e3c3e415addae5c6bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 4%
 
 ---
 
 
 # Een instantie maken en aanmelden{#creating-an-instance-and-logging-on}
 
-Als u een nieuwe instantie en een Adobe Campagne-database wilt maken, past u het volgende proces toe:
+Pas het volgende proces toe om een nieuwe instantie en een Adobe Campaign-database te maken:
 
 1. Maak de verbinding.
 1. Meld u aan om de verwante instantie te maken.
@@ -30,9 +30,9 @@ Als u een nieuwe instantie en een Adobe Campagne-database wilt maken, past u het
 
 >[!NOTE]
 >
->Alleen de **interne** id kan deze bewerkingen uitvoeren. Raadpleeg de [interne id](../../installation/using/campaign-server-configuration.md#internal-identifier)voor meer informatie hierover.
+>Alleen de **interne** id kan deze bewerkingen uitvoeren. For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
-Wanneer de Adobe Campaign-console wordt gestart, hebt u toegang tot een aanmeldingspagina.
+Wanneer de Adobe Campaign-console wordt gestart, opent u een aanmeldingspagina.
 
 Ga als volgt te werk om een nieuwe instantie te maken:
 
@@ -40,17 +40,17 @@ Ga als volgt te werk om een nieuwe instantie te maken:
 
    ![](assets/s_ncs_install_define_connection_01.png)
 
-1. Klik op **[!UICONTROL Add > Connection]** en voer het label en de URL van de toepassingsserver van Adobe Campagne in.
+1. Klik op **[!UICONTROL Add > Connection]** en voer het label en de URL van de Adobe Campaign-toepassingsserver in.
 
    ![](assets/s_ncs_install_define_connection_02.png)
 
-1. Geef een verbinding met uw Adobe Campagne-toepassingsserver op via een URL. Gebruik of DNS of een alias van de machine, of uw IP adres.
+1. Geef een verbinding met uw Adobe Campaign-toepassingsserver op via een URL. Gebruik of DNS of een alias van de machine, of uw IP adres.
 
    U kunt bijvoorbeeld het [`https://<machine>.<domain>.com`](https://machine) type URL gebruiken.
 
    >[!CAUTION]
    >
-   >Gebruik voor de verbindings-URL alleen de volgende tekens: `[a-z]`, `[A-Z]`, `[0-9]` en streepjes (-) of volledige stops.
+   >Gebruik voor de verbindings-URL alleen de volgende tekens: `[a-z]`, `[A-Z]`en `[0-9]` streepjes (-) of volledige stops.
 
 1. Klik **[!UICONTROL Ok]** om de instellingen te bevestigen: U kunt nu beginnen met het maken van de instantie.
 1. Voer in het **[!UICONTROL Connection settings]** venster de **interne** aanmelding en het bijbehorende wachtwoord in om verbinding te maken met de Adobe Campaign-toepassingsserver. Nadat u verbinding hebt gemaakt, kunt u de wizard voor het maken van instanties gebruiken om een nieuwe instantie te declareren
@@ -60,7 +60,7 @@ Ga als volgt te werk om een nieuwe instantie te maken:
 
    De naam van de instantie die aan de domeinnaam wordt toegevoegd, mag niet meer dan 40 tekens bevatten. Dit laat u de grootte van &quot;bericht-identiteitskaart&quot;kopballen beperken en verhindert berichten als spam, in het bijzonder door hulpmiddelen zoals SpamAssassin worden beschouwd.
 
-1. Voer in de **[!UICONTROL DNS masks]** velden de **lijst in met DNS-maskers** waaraan de instantie moet worden gekoppeld. De Adobe Campagneserver gebruikt hostname die in de HTTP- verzoeken verschijnt om te bepalen welke instantie te bereiken.
+1. Voer in de **[!UICONTROL DNS masks]** velden de **lijst in met DNS-maskers** waaraan de instantie moet worden gekoppeld. De Adobe Campaign-server gebruikt de hostnaam die in de HTTP-aanvragen wordt weergegeven om te bepalen welke instantie moet worden bereikt.
 
    De hostname is bevat tussen het koord **https://** en het eerste schuine streep karakter **/** van het serveradres.
 
@@ -80,11 +80,11 @@ Ga als volgt te werk om een nieuwe instantie te maken:
 
    >[!CAUTION]
    >
-   >De instantietaal kan na deze stap niet meer worden gewijzigd. Instanties van Adobe Campagne zijn niet meertalig: u kunt niet de interface van een taal aan een andere schakelen.
+   >De instantietaal kan na deze stap niet meer worden gewijzigd. Adobe Campaign-instanties zijn niet meertalig: u kunt niet de interface van een taal aan een andere schakelen.
 
 1. Klik **[!UICONTROL Ok]** om de instantiedeclaratie te bevestigen. Log uit en weer aan om de database te declareren.
 
    >[!NOTE]
    >
-   >De instantie kan vanaf de opdrachtregel worden gemaakt. Raadpleeg de [opdrachtregels](../../installation/using/command-lines.md)voor meer informatie.
+   >De instantie kan vanaf de opdrachtregel worden gemaakt. For more on this, refer to [Command lines](../../installation/using/command-lines.md).
 
