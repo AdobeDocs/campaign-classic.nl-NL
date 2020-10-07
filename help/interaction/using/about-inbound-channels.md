@@ -1,7 +1,7 @@
 ---
-title: Over binnenkomende kanalen
-seo-title: Over binnenkomende kanalen
-description: Over binnenkomende kanalen
+title: Binnenkomende kanalen
+seo-title: Binnenkomende kanalen
+description: Binnenkomende kanalen
 seo-description: null
 page-status-flag: never-activated
 uuid: 4224282b-f05f-400e-82f9-9ee9d7a8b443
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 9469495c-9e46-4fd8-826d-1b7227326ce1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5489e09303920bf5bd3dcd08263dc3c945d151c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 5%
 
 ---
 
 
-# Over binnenkomende kanalen{#about-inbound-channels}
+# Binnenkomende kanalen{#about-inbound-channels}
 
 De aanbiedingen kunnen op diverse aanbiedingsruimten worden voorgesteld gebruikend een binnenkomend of uitgaand kanaal. In dit hoofdstuk worden enkele specifieke functies voor binnenkomende kanalen beschreven.
 
@@ -38,4 +38,4 @@ Alvorens aanbiedingen op een binnenkomend kanaal te kunnen voorstellen, moet u d
 >
 >Voor binnenkomende interactie, moet u de aanbiedingsmotor specifiek vormen om één of verscheidene aanbiedingen voor te stellen en bij te werken.
 >
->Je moet de eenheidsmodus ook inschakelen voor je aanbiedingsruimten. Raadpleeg voor meer informatie de sectie [Aanbiedingsruimten](../../interaction/using/creating-offer-spaces.md) maken.
+>Je moet de eenheidsmodus ook inschakelen voor je aanbiedingsruimten. For more on this, refer to the [Creating offer spaces](../../interaction/using/creating-offer-spaces.md) section.
