@@ -11,14 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 71fc8bfc-40e0-4592-a540-bd6807ded3a0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3066'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -27,7 +24,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Configuraties aan de serverzijde kunnen alleen door Adobe worden uitgevoerd voor implementaties die worden gehost door Adobe. Meer over de verschillende plaatsingen leren, verwijs naar de [Hosting modelsectie](../../installation/using/hosting-models.md) of naar [dit artikel](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>Serverconfiguraties kunnen alleen worden uitgevoerd door Adobe voor implementaties die worden gehost door Adobe. Meer over de verschillende plaatsingen leren, verwijs naar de [Hosting modelsectie](../../installation/using/hosting-models.md) of naar [dit artikel](https://helpx.adobe.com/nl/campaign/kb/acc-on-prem-vs-hosted.html).
 
 ## Implementatiewizard {#deployment-wizard}
 
@@ -40,7 +37,7 @@ Selecteer **Opties > Geavanceerd > de wizard** Implementatie om de wizard Implem
 De configuratiestappen zijn als volgt:
 
 1. [Algemene parameters](#general-parameters)
-1. [Parameters e-mailkanaal](#email-channel-parameters)
+1. [Parameters voor e-mailkanaal](#email-channel-parameters)
 1. [Beknopte e-mails beheren](#managing-bounced-emails)
 1. [Configuratie bijhouden](#tracking-configuration)
 1. [Parameters van mobiele kanalen](#mobile-channel-parameters)
@@ -74,7 +71,7 @@ De volgende opties zijn beschikbaar:
 * **[!UICONTROL Managing bounced emails]** : Het POP-account definiëren waarmee inkomende e-mail wordt opgehaald. Zie [Verzonden e-mails](#managing-bounced-emails)beheren.
 * **[!UICONTROL LDAP integration]** : Gebruikersverificatie configureren via een LDAP-directory. Zie [Verbinding maken via LDAP](../../installation/using/connecting-through-ldap.md).
 
-## Parameters e-mailkanaal {#email-channel-parameters}
+## Parameters voor e-mailkanaal {#email-channel-parameters}
 
 In de volgende stap kunt u de informatie definiëren die in berichtkoppen moet worden weergegeven.
 
@@ -104,7 +101,7 @@ Hier kunt u de geoorloofde tekens (&#39;gegevensbeleid&#39;) definiëren in het 
 
 Er zijn twee lijsten beschikbaar: **Alleen** Europees of alleen **** VS. Indien nodig kunnen andere tekens worden toegevoegd.
 
-### Leveringsparameters {#delivery-parameters}
+### Bezorgingsparameters {#delivery-parameters}
 
 De **geavanceerde parameters...** de verbinding laat u toe om tot leveringsopties, parameters toegang te hebben verbonden aan retry en quarantines.
 
@@ -116,7 +113,7 @@ De volgende opties zijn beschikbaar:
 
 * **[!UICONTROL Delivery duration of messages]** : Daarna wordt de levering gestopt (standaard 5 dagen),
 * **[!UICONTROL Online resources validity duration]** : Tijdstip waarop informatie uit het ontvangende profiel wordt bewaard om spiegelpagina&#39;s te genereren;
-* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Als deze optie is geselecteerd, wordt geen contact opgenomen met ontvangers op de bloklijst.
+* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Als deze optie is ingeschakeld, wordt geen contact opgenomen met ontvangers op de lijst van afgewezen personen.
 * **[!UICONTROL Automatically ignore doubles]** : Als deze optie is geselecteerd, wordt de levering niet uitgevoerd naar dubbele adressen.
 
 ### Parameters opnieuw proberen {#retry-parameters}
@@ -128,13 +125,13 @@ De informatie over terugvorderingen wordt verstrekt in de velden **Herstelperiod
 De configuratieopties voor quarantines zijn als volgt:
 
 * **[!UICONTROL Duration between two significant errors]** : Voer standaard een waarde in (&quot;1d&quot;): 1 dag) om de tijd te bepalen die de toepassing wacht alvorens de foutenteller in het geval van mislukking te verhogen,
-* **[!UICONTROL Maximum number of errors before quarantine]** : zodra deze waarde is bereikt, wordt het e-mailadres in quarantaine geplaatst (standaard &quot;5&quot;: het adres zal in quarantined op de zesde fout) zijn. Dit betekent dat het contact automatisch van volgende leveringen wordt uitgesloten.
+* **[!UICONTROL Maximum number of errors before quarantine]** : zodra deze waarde is bereikt, wordt het e-mailadres in quarantaine geplaatst (standaard &quot;5&quot;: het adres zal in quarantined op de zesde fout) zijn. Dit betekent dat het contact automatisch van volgende bezorgingen wordt uitgesloten.
 
 ## Beknopte e-mails beheren {#managing-bounced-emails}
 
 Bounce mail is uiterst belangrijk om leveringsfouten te kwalificeren. Deze fouten worden gecategoriseerd in NP@I zodra de regels hun oorzaak hebben bepaald.
 
-Deze stap is alleen beschikbaar als de opties **E-mailkanaal** en **Bounce Mail** Management zijn geselecteerd in de eerste fase van de implementatiewizard. Zie [Algemene parameters](#general-parameters).
+Deze stap is alleen beschikbaar als de opties voor **E-mailbeheer** en **Bounce Mail** -beheer zijn geselecteerd in de eerste fase van de implementatiewizard. Zie [Algemene parameters](#general-parameters).
 
 In dit werkgebied kunt u instellingen definiëren voor het beheer van stuiterende berichten.
 
@@ -165,17 +162,17 @@ Onverwerkte grenzen worden niet weergegeven in de Adobe Campaign-interface. Zij 
 
 >[!IMPORTANT]
 >
->Adobe raadt u alleen aan het **[!UICONTROL Address for errors]** veld in te vullen als u onverwerkte e-mails met bounce wilt doorsturen. Nochtans, zorg ervoor het adres dat wordt gebruikt regelmatig wordt gecontroleerd, aangezien dit een zware lading op uw postserver kon zetten. Neem contact op met uw accountmanager voor meer informatie.
+>Als u onverwerkte e-mails met bounce wilt doorsturen, raadt Adobe aan het **[!UICONTROL Address for errors]** veld alleen in te vullen. Nochtans, zorg ervoor het adres dat wordt gebruikt regelmatig wordt gecontroleerd, aangezien dit een zware lading op uw postserver kon zetten. Neem contact op met uw accountmanager voor meer informatie.
 
 ## Configuratie bijhouden {#tracking-configuration}
 
 In de volgende stap kunt u tracering voor de instantie configureren. De instantie moet worden gedeclareerd en geregistreerd bij de volgende server(s).
 
-Deze stap wordt alleen aangeboden als de opties **E-mailkanaal** en **Tekstspatiëring** zijn geselecteerd op de eerste pagina van de implementatiewizard. Zie [Algemene parameters](#general-parameters).
+Deze stap wordt alleen aangeboden als de opties **E-mailkanaal** en **Bijhouden** zijn geselecteerd op de eerste pagina van de implementatiewizard. Zie [Algemene parameters](#general-parameters).
 
 Raadpleeg [dit document](../../configuration/using/about-web-tracking.md)voor gedetailleerde informatie over webtracering (modus Tekstspatiëring, tags maken en invoegen...).
 
-### Exploitatiebeginsel {#operating-principle}
+### Werkwijze {#operating-principle}
 
 Wanneer u tracking op een instantie activeert, worden de URL&#39;s in de leveringen tijdens het verzenden gewijzigd om tracking in te schakelen.
 
@@ -185,11 +182,11 @@ Wanneer u tracking op een instantie activeert, worden de URL&#39;s in de leverin
 
    Informatie over interne URL&#39;s wordt alleen door de Adobe Campaign-toepassingsserver gebruikt om contact op te nemen met de trackingserver(s).
 
-   Raadpleeg de [Trackingserver](#tracking-server)voor meer informatie hierover.
+   For more on this, refer to [Tracking server](#tracking-server).
 
 * Zodra URLs wordt gevormd, moet u het volgen toelaten. Hiervoor moet de instantie zijn geregistreerd op de volgende server(s).
 
-   Raadpleeg [Opslaan van reeksspatiëring](#saving-tracking)voor meer informatie.
+   For more on this, refer to [Saving tracking](#saving-tracking).
 
 ### Trackingserver {#tracking-server}
 
@@ -274,7 +271,7 @@ In de volgende stap kunt u de standaardinstellingen definiëren voor leveringen 
 
 >[!NOTE]
 >
->Het mobiele kanaal is optioneel: dit stadium wordt alleen weergegeven als het is aangeschaft . Controleer uw licentieovereenkomst.
+>Het mobiele kanaal is optioneel: dit stadium wordt alleen weergegeven als het is aangeschaft . Controleer hiervoor uw licentieovereenkomst.
 
 ![](assets/s_ncs_install_deployment_wiz_12.png)
 
@@ -349,7 +346,7 @@ Voor deze stap, moet u ingaan:
 
 1. De nieuwe URL voor openbare bronnen. Zie de sectie URL [van](#public-resources-url) openbare bronnen voor meer informatie.
 1. De modus voor beelddetectie in een levering. Raadpleeg het gedeelte [Afbeeldingsdetectie](#delivery-image-detection) van levering voor meer informatie.
-1. Publicatieopties Raadpleeg de sectie [Publicatiemodi](#publication-modes) voor meer informatie.
+1. Publicatieopties For more information, refer to the [Publication modes](#publication-modes) section.
 
 De openbare middelen zijn toegankelijk via het **Beleid > Middelen > Online > de knoop van Openbare middelen** van de boom van Adobe Campaign. Ze worden verzameld in een bibliotheek en kunnen worden opgenomen in e-mails, maar ook worden gebruikt in campagnes of taken en in inhoudsbeheer.
 
@@ -459,7 +456,7 @@ Het kenmerk status kan een van de volgende drie waarden hebben:
 
 * normaal: Bestaand gedrag (zonder synchronisatie)
 
-* blocklist: De URL wordt toegevoegd aan de bloklijst als er een fout van 404 wordt geretourneerd. De duur (in seconden) van de URL in de bloklijst wordt gedefinieerd door een **time-outkenmerk** waarvan de standaardwaarde 60 seconden is.
+* lijst van afgewezen personen: De URL wordt toegevoegd aan de lijst van afgewezen personen als er een fout van 404 wordt geretourneerd. De duur (in seconden) van de URL die zich in de lijst van afgewezen personen bevindt, wordt gedefinieerd door een **time-outkenmerk** waarvan de standaardwaarde 60 seconden is.
 
 De uit-van-de-doos configuratie van de synchronisatie is:
 
