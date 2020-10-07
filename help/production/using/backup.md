@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 discoiquuid: 870ab0f2-1bd7-42e7-8d83-a08a520b6587
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a11a73b0679c0a65dc10f71869bf2a6c6efc008
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '198'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ Back-up is van essentieel belang om gegevensverlies te voorkomen in geval van ee
 
 Gegevens worden op twee verschillende locaties opgeslagen:
 
-* fysieke bestanden worden opgeslagen in de map Adobe Campaign,
+* fysieke bestanden worden opgeslagen in de mappen van Adobe Campaign;
 * andere gegevens worden in de database opgeslagen.
 
 De meeste gegevens bevinden zich in de database. Dit is 99% van de informatie waarvan een back-up moet worden gemaakt.
@@ -63,6 +63,6 @@ De mappen waarvan een back-up moet worden gemaakt, zijn daarom:
 
 ## Database {#database}
 
-De database bevat alle informatie die in de rijke clientconsole van Adobe Campaign wordt weergegeven, plus alle bedrijfsgegevens.
+Het gegevensbestand bevat alle informatie die in de rijke cliëntconsole van Adobe Campaign wordt getoond, evenals alle lijn-van-bedrijfsgegevens.
 
 Uw hostingbedrijf en met name de databasebeheerders zijn verantwoordelijk voor deze bewerking.
