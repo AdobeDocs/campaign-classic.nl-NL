@@ -1,5 +1,5 @@
 ---
-title: Adobe Campagne Classic Interaction Best practices
+title: Aanbevolen procedures voor Adobe Campaign Classic-interactie
 description: In deze sectie wordt de aanbevolen aanpak beschreven voor het beheer van de Interactiemodule in Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 88bcc1d5-be8f-4a63-9b4a-3843b5751abe
@@ -9,22 +9,22 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 discoiquuid: 85e8348f-d240-4a36-b7bd-645807dbc227
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 91f80adf0b84d45a71e07079d4e72fd7628b41c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1193'
+ht-degree: 0%
 
 ---
 
 
-# Aanbevolen werkwijzen voor interactie{#interaction-best-practices}
+# Best practices interacties{#interaction-best-practices}
 
 ## Algemene aanbevelingen {#general-recommendations}
 
-In deze sectie wordt de aanbevolen aanpak beschreven voor het beheer van de Interactiemodule in Adobe Campaign Classic, inclusief geschiktheidsregels, vooraf gedefinieerde filters, workflowactiviteiten en databaseopties.
+In dit gedeelte wordt de beste praktijkaanpak beschreven voor het beheer van de Interactiemodule in Adobe Campaign Classic, inclusief toelatingsregels, vooraf gedefinieerde filters, workflowactiviteiten en databaseopties.
 
-De interactie in de Campagne van Adobe vereist zorgvuldig beheer om efficiënt te werken. U moet een evenwicht vinden tussen het aantal contacten en het aantal aanbiedingencategorieën en aanbiedingen. Als deze factoren niet zorgvuldig worden behandeld, kunnen er problemen optreden in uw Adobe Campagne-instantie.
+De interactie in Adobe Campaign vereist zorgvuldig beheer om efficiënt te werken. U moet een evenwicht vinden tussen het aantal contacten en het aantal aanbiedingencategorieën en aanbiedingen. Als deze factoren niet zorgvuldig worden afgehandeld, kunnen er problemen optreden in uw Adobe Campaign-exemplaar.
 
 ### Implementatie {#implementation}
 
@@ -32,7 +32,7 @@ Hieronder staan belangrijke elementen waarmee u rekening moet houden bij het imp
 
 * Voor partijmotor (typisch gebruikt in uitgaande mededelingen zoals e-mail), is de productie de belangrijkste zorg, aangezien de veelvoudige contacten tezelfdertijd kunnen worden behandeld. Het typische knelpunt is gegevensbestandprestaties.
 * De belangrijkste beperking voor eenheidsmotor (typisch gebruikt in binnenkomende mededelingen zoals een banner op een website) is latentie, aangezien iemand een antwoord verwacht. Het typische knelpunt is de prestaties van de CPU.
-* Het catalogusontwerp van de aanbieding heeft een enorme invloed op de prestaties van Adobe Campagne Classic.
+* Het ontwerp van de aanbiedingencatalogus heeft een enorme invloed op de Adobe Campaign Classic-prestaties.
 * Als er veel aanbiedingen zijn, splitst u deze in verschillende aanbiedingcatalogi.
 
 ### Subsidiabiliteitsregels {#eligibility-rules}
@@ -61,7 +61,7 @@ Hieronder staan enkele aanbevolen procedures voor de tabel met voorstellen.
 
 ## Tips en trucs voor het beheren van aanbiedingen {#tips-managing-offers}
 
-Deze sectie bevat gedetailleerder advies over het beheer van aanbiedingen en het gebruik van de Interactiemodule in Adobe Campaign Classic.
+Deze sectie bevat meer gedetailleerd advies over het beheer van aanbiedingen en het gebruik van de Interactiemodule in Adobe Campaign Classic.
 
 ### Meerdere aanbiedingsruimten gebruiken in een e-maillevering {#multiple-offer-spaces}
 
@@ -85,7 +85,7 @@ Wanneer u het voorstel selecteert, is de waarde van het **[!UICONTROL view]** ke
 * &quot;rendering/html&quot;: html-rendering. De HTML-renderfunctie wordt gebruikt.
 * &quot;aanbieding/weergave/html&quot;: html-inhoud. De klasse maakt geen gebruik van de HTML-renderfunctie. Het bevat alleen het HTML-veld.
 
-Wanneer u meerdere aanbiedingsruimten opneemt in één e-mailbestelling en sommige daarvan renderingfuncties hebben en andere niet, moet u onthouden welke mogelijkheden ruimtes bieden en welke ruimten renderfuncties bieden.
+Wanneer u meerdere aanbiedingsruimten opneemt in één e-mailbestelling en sommige daarvan renderingfuncties hebben en andere niet, moet u onthouden welke functies ruimtes bieden en welke ruimten renderfuncties bieden.
 
 Daarom wordt u aangeraden voor alle aanbiedingsruimten een HTML-renderfunctie te definiëren, zelfs als uw aanbiedingsruimte alleen HTML-inhoud vereist.
 
