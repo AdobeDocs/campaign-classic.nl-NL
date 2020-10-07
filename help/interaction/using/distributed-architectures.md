@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 811a42a4-552c-49cb-bffd-7e124ef83735
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1013'
+ht-degree: 1%
 
 ---
 
@@ -78,8 +78,8 @@ Op besturingsinstanties:
    ![](assets/interaction_powerbooster1.png)
 
    * Vul het label in en voeg een korte en expliciete interne naam toe.
-   * Selecteer de **[!UICONTROL Execution instance]**.
-   * Schakel de **[!UICONTROL Enabled]** optie in.
+   * Selecteer **[!UICONTROL Execution instance]**.
+   * Schakel de optie **[!UICONTROL Enabled]** in.
    * Voltooi de verbindingsparameters voor de uitvoeringsinstantie.
    * Elke uitvoeringsinstantie moet aan een identiteitskaart worden verbonden. Deze id wordt toegewezen wanneer u op de **[!UICONTROL Initialize connection]** knop klikt.
    * Controleer het gebruikte type toepassing: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** of beide.
