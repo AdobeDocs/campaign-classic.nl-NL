@@ -11,14 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 7f471ac1-cd6a-4371-977e-52d60ce8d968
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f4ecdab4c17a6ba8deb3b98079f57bb7a9adf4a0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -27,15 +24,16 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->* De uitbreidingen van het schema die op de schema&#39;s worden gemaakt door de technische werkschema [&#39;s van het Centrum van het](../../message-center/using/technical-workflows.md) Bericht op of controle of uitvoeringsinstanties worden gebruikt moeten op de andere instanties worden gedupliceerd die door de transactionele overseinenmodule van de Campagne van Adobe worden gebruikt.
+>* De uitbreidingen van het schema die op de schema&#39;s worden gemaakt door de technische werkschema [&#39;s van het Centrum van het](../../message-center/using/technical-workflows.md) Bericht op of controle of uitvoeringsinstanties worden gebruikt moeten op de andere die instanties worden gedupliceerd door de module van het de transactiemelding van Adobe Campaign worden gebruikt.
 >* De bedieningsinstantie en de uitvoeringsinstantie(s) moeten op verschillende computers zijn geïnstalleerd. Ze kunnen niet dezelfde Campagne-instantie delen.
+
 >
 
 
 
 ## Control-instantie {#control-instance}
 
-Als u een opgesplitste architectuur hebt, moet u de uitvoeringsinstanties specificeren verbonden aan de controleinstantie en hen verbinden. Transactionele berichtmalplaatjes worden opgesteld aan de uitvoeringsinstanties. De verbinding tussen de controleinstantie en de uitvoeringsinstanties wordt gecreeerd door het type externe rekeningen te vormen. **[!UICONTROL Execution instance]** U moet zoveel externe accounts maken als er uitvoeringen zijn.
+Als u een opgesplitste architectuur hebt, moet u de uitvoeringsinstanties specificeren verbonden aan de controleinstantie en hen verbinden. De transactionele berichtmalplaatjes worden opgesteld aan de uitvoeringsinstanties. De verbinding tussen de controleinstantie en de uitvoeringsinstanties wordt gecreeerd door het type externe rekeningen te vormen. **[!UICONTROL Execution instance]** U moet zoveel externe accounts maken als er uitvoeringen zijn.
 
 >[!NOTE]
 >
@@ -43,8 +41,8 @@ Als u een opgesplitste architectuur hebt, moet u de uitvoeringsinstanties specif
 
 Voer de volgende stappen uit om een uitvoerinstantie van het type externe account te maken:
 
-1. Ga naar de **[!UICONTROL Administration > Platform > External accounts]** map.
-1. Selecteer een van de uitvoerinstantietypen voor externe accounts die bij Adobe Campagne buiten het vak zijn geplaatst, klik met de rechtermuisknop en kies **[!UICONTROL Duplicate]** .
+1. Go to the **[!UICONTROL Administration > Platform > External accounts]** folder.
+1. Selecteer een van de uitvoerinstantietypen voor externe accounts die in Adobe Campaign buiten de box zijn geplaatst, klik met de rechtermuisknop en kies **[!UICONTROL Duplicate]** .
 
    ![](assets/messagecenter_create_extaccount_001.png)
 
@@ -60,7 +58,7 @@ Voer de volgende stappen uit om een uitvoerinstantie van het type externe accoun
 
    ![](assets/messagecenter_create_extaccount_004.png)
 
-1. De rekening moet de Agent van het Centrum van het Bericht zoals die in de exploitantomslag wordt bepaald aanpassen. Standaard wordt het account buiten de box van Adobe Campaign geleverd **[!UICONTROL mc]** .
+1. De rekening moet de Agent van het Centrum van het Bericht zoals die in de exploitantomslag wordt bepaald aanpassen. De door Adobe Campaign verschafte out-of-box-account is standaard **[!UICONTROL mc]** .
 
    ![](assets/messagecenter_create_extaccount_005.png)
 
@@ -68,7 +66,7 @@ Voer de volgende stappen uit om een uitvoerinstantie van het type externe accoun
 
    >[!NOTE]
    >
-   >Om te vermijden ingaand een wachtwoord telkens als u aan de instantie het programma opent, kunt u het IP adres van de controleinstantie in de uitvoeringsinstantie specificeren. Raadpleeg de [uitvoeringsinstantie](#execution-instance)voor meer informatie hierover.
+   >Om te vermijden ingaand een wachtwoord telkens als u aan de instantie het programma opent, kunt u het IP adres van de controleinstantie in de uitvoeringsinstantie specificeren. For more on this, refer to [Execution instance](#execution-instance).
 
 1. Geef de herstelmethode op die door de uitvoeringsinstantie moet worden gebruikt.
 
@@ -100,7 +98,7 @@ Voer de volgende stappen uit om een uitvoerinstantie van het type externe accoun
 
 Opdat de controleinstantie met de uitvoeringsinstantie kan verbinden zonder het moeten een wachtwoord geven, ga eenvoudig het IP adres van de controleinstantie in de de toegangsrechtensectie van het Centrum van het **Bericht** in. Lege wachtwoorden zijn echter standaard niet toegestaan.
 
-Als u een leeg wachtwoord wilt gebruiken, gaat u naar de uitvoeringsinstanties en definieert u een beveiligingszone die is beperkt tot het IP-adres van het informatiesysteem dat de gebeurtenissen levert. Deze veiligheidszone moet lege wachtwoorden toestaan en `<identifier> / <password>` typeverbindingen goedkeuren. For more on this, refer to [this section](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Als u een leeg wachtwoord wilt gebruiken, gaat u naar de uitvoeringsinstanties en definieert u een beveiligingszone die is beperkt tot het IP-adres van het informatiesysteem dat de gebeurtenissen levert. Deze veiligheidszone moet lege wachtwoorden toestaan en `<identifier> / <password>` typeverbindingen goedkeuren. Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#defining-security-zones) voor meer informatie.
 
 >[!NOTE]
 >
@@ -133,7 +131,7 @@ Maak in de boomstructuur van alle uitvoeringsinstanties één map per operator (
 
    ![](assets/messagecenter_multi_control_1.png)
 
-1. In **Controle 2** controle instantie, creeer één externe rekening per uitvoeringsinstantie, en ga de **mc2** exploitant in elke externe rekening in. De **mc2** exploitant zal dan op alle uitvoeringsinstanties worden gecreeerd (verwijs naar het [Vormen van uitvoeringsinstanties](#configuring-execution-instances)).
+1. In **Controle 2** controlegeval, creeer één externe rekening per uitvoeringsinstantie, en ga de **mc2** exploitant in elke externe rekening in. De **mc2** exploitant zal dan op alle uitvoeringsinstanties worden gecreeerd (verwijs naar het [Vormen van uitvoeringsinstanties](#configuring-execution-instances)).
 
    ![](assets/messagecenter_multi_control_2.png)
 
@@ -145,7 +143,7 @@ Maak in de boomstructuur van alle uitvoeringsinstanties één map per operator (
 
 Om verscheidene controleinstanties te gebruiken, moet deze configuratie op ALLE uitvoeringsinstanties worden uitgevoerd.
 
-1. Eén map per operator in het **[!UICONTROL Administration > Production > Message Center]** knooppunt maken: **Map 1** en **Map 2**. Raadpleeg [Platform](../../platform/using/access-management.md#folders-and-views)voor meer informatie over het maken van mappen en weergaven.
+1. Eén map per operator in het **[!UICONTROL Administration > Production > Message Center]** knooppunt maken: **Map 1** en **Map 2**. Raadpleeg het [Platform](../../platform/using/access-management.md#folders-and-views)voor meer informatie over het maken van mappen en weergaven.
 
    ![](assets/messagecenter_multi_control_3.png)
 
@@ -155,7 +153,7 @@ Om verscheidene controleinstanties te gebruiken, moet deze configuratie op ALLE 
 
    >[!NOTE]
    >
-   >**mc1** - en **mc2** -operatoren moeten **[!UICONTROL Message Center execution]** rechten hebben en kunnen geen toegang hebben tot de Adobe Campaign-clientconsole. Een exploitant moet altijd met een veiligheidsstreek verbonden zijn. For more on this, refer to [this section](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+   >**mc1** - en **mc2** -operatoren moeten **[!UICONTROL Message Center execution]** rechten hebben en hebben geen toegang tot de Adobe Campaign-clientconsole. Een exploitant moet altijd met een veiligheidsstreek verbonden zijn. Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#defining-security-zones) voor meer informatie.
 
 1. Voor elke exploitant, controleer het **[!UICONTROL Restrict to information found in sub-folders of]** vakje, en selecteer de relevante omslag (**Omslag 1** voor de exploitant **mc1** en **Omslag 2** voor de exploitant **mc2** ).
 
