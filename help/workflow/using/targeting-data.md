@@ -1,7 +1,7 @@
 ---
-title: Doelgegevens
-seo-title: Doelgegevens
-description: Doelgegevens
+title: Targetingdata
+seo-title: Targetingdata
+description: Targetingdata
 seo-description: null
 page-status-flag: never-activated
 uuid: 90c46ae9-8f9d-4538-a0fe-92fb3373f863
@@ -11,18 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 79f1e85a-b5e6-4875-ac57-ab979fc57079
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1900'
+ht-degree: 4%
 
 ---
 
 
-# Doelgegevens{#targeting-data}
+# Targetingdata{#targeting-data}
 
-## Vragen maken {#creating-queries}
+## Query’s maken {#creating-queries}
 
 ### Gegevens selecteren {#selecting-data}
 
@@ -102,7 +102,7 @@ De volgende afstemmingsopties voor gegevens zijn beschikbaar:
 
    Met deze optie kunt u gegevens afstemmen op basis van alle kolommen die de verschillende populaties van het doel gemeen hebben.
 
-   De Campagne van Adobe identificeert kolommen op hun naam worden gebaseerd. Er wordt een tolerantiedrempel aanvaard: Een kolom &#39;E-mail&#39; kan bijvoorbeeld worden herkend als identiek aan een kolom &#39;@email&#39;.
+   Adobe Campaign geeft kolommen aan op basis van hun naam. Er wordt een tolerantiedrempel aanvaard: Een kolom &#39;E-mail&#39; kan bijvoorbeeld worden herkend als identiek aan een kolom &#39;@email&#39;.
 
 * **[!UICONTROL A selection of columns]**
 
@@ -182,7 +182,7 @@ Om het te vormen, moet u eerst criteria selecteren:
 
    ![](assets/split-subset-config-add_external_data.png)
 
-   Zie deze [sectie](../../platform/using/about-fda.md)voor meer informatie.
+   Raadpleeg deze [sectie](../../platform/using/about-fda.md) voor meer informatie.
 
 Vervolgens moeten nieuwe subsets worden toegevoegd:
 
@@ -206,7 +206,7 @@ Nadat subsets zijn gemaakt, toont de splitsingsactiviteit standaard evenveel uit
 
 ![](assets/wf_split_multi_outputs.png)
 
-U kunt al deze subsets groeperen in één uitvoerovergang. In dit geval is de koppeling naar de desbetreffende subsets bijvoorbeeld zichtbaar in de segmentcode. Selecteer de **[!UICONTROL Generate all subsets in the same table]** optie om dit te doen.
+U kunt al deze subsets groeperen in één uitvoerovergang. In dit geval is de koppeling naar de desbetreffende subsets bijvoorbeeld zichtbaar in de segmentcode. To do this, select the **[!UICONTROL Generate all subsets in the same table]** option.
 
 ![](assets/wf_split_select_option_single_output.png)
 
@@ -214,7 +214,7 @@ Bijvoorbeeld, kunt u één enkele leveringsactiviteit plaatsen en de leveringsin
 
 ![](assets/wf_split_single_output.png)
 
-Subsets kunnen ook worden gemaakt met behulp van de **[!UICONTROL Cells]** activiteit. Raadpleeg de sectie [Cellen](../../workflow/using/cells.md) voor meer informatie hierover.
+Subsets kunnen ook worden gemaakt met behulp van de **[!UICONTROL Cells]** activiteit. For more on this, refer to the [Cells](../../workflow/using/cells.md) section.
 
 ### Doelgegevens gebruiken {#using-targeted-data}
 
@@ -226,21 +226,21 @@ Zodra de gegevens zijn geïdentificeerd en opgesteld, kunnen ze in de volgende c
 
 * U kunt ook de inhoud van bestaande lijsten vernieuwen.
 
-   Zie [Lijstupdate](../../workflow/using/list-update.md)voor meer informatie.
+   For more on this, refer to [List update](../../workflow/using/list-update.md).
 
 * U kunt leveringen rechtstreeks voorbereiden of starten in de workflow.
 
    Raadpleeg voor meer informatie [Levering](../../workflow/using/delivery.md), [Leveringscontrole](../../workflow/using/delivery-control.md) en [Doorlopende levering](../../workflow/using/continuous-delivery.md).
 
-## Gegevensbeheer {#data-management}
+## Data Management {#data-management}
 
-In de Campagne van Adobe, combineert het Gegevensbeheer een reeks activiteiten om complexe gerichte kwesties op te lossen door efficiëntere en flexibelere hulpmiddelen aan te bieden. Dit laat u verenigbaar beheer van alle communicatie met een contact uitvoeren gebruikend informatie met betrekking tot hun contracten, abonnementen, reactiviteit aan leveringen, enz. Met gegevensbeheer kunt u de levenscyclus van gegevens bijhouden tijdens segmentatiebewerkingen, met name:
+In Adobe Campaign combineert het gegevensbeheer een reeks activiteiten om complexe doelgerichte problemen op te lossen door efficiëntere en flexibelere hulpmiddelen aan te bieden. Dit laat u verenigbaar beheer van alle communicatie met een contact uitvoeren gebruikend informatie met betrekking tot hun contracten, abonnementen, reactiviteit aan leveringen, enz. Met data management kunt u de levenscyclus van data bijhouden tijdens segmentatiebewerkingen, met name:
 
-* Het vereenvoudigen en optimaliseren van het richten processen, door gegevens op te nemen die niet in datamart worden gemodelleerd (het creëren van nieuwe lijsten: lokale extensie voor elke doelworkflow (afhankelijk van de configuratie).
-* Het houden van en het overbrengen van bufferberekeningen, vooral tijdens de fasen van de doelbouw of voor gegevensbestandbeleid.
-* Toegang tot externe basen (optioneel): heterogene databases waarmee tijdens het doelproces rekening wordt gehouden.
+* Het vereenvoudigen en optimaliseren van targetingprocessen, door data op te nemen die niet in de datamart worden gemodelleerd (het maken van nieuwe tabellen: lokale extensie voor elke targetingworkflow afhankelijk van de configuratie).
+* Het bijhouden en overbrengen van bufferberekeningen, vooral tijdens fasen voor de opbouw van doelen of voor databasebeheer.
+* Het openen van externe databases (optioneel): heterogene databases waarmee tijdens het targetingproces rekening wordt gehouden.
 
-Voor het implementeren van deze bewerkingen biedt Adobe Campaign de volgende opties:
+Voor de uitvoering van deze transacties biedt Adobe Campaign:
 
 * Gegevensverzameling: [Bestandsoverdracht](../../workflow/using/file-transfer.md), [Gegevens laden (bestand)](../../workflow/using/data-loading--file-.md), [Gegevens laden (RDBMS)](../../workflow/using/data-loading--rdbms-.md), Gegevens [bijwerken](../../workflow/using/update-data.md). In deze eerste stap voor het verzamelen van gegevens worden de gegevens voorbereid, zodat ze in andere activiteiten kunnen worden verwerkt. Verschillende parameters moeten worden gecontroleerd om ervoor te zorgen dat de workflow correct wordt uitgevoerd en de verwachte resultaten oplevert. Wanneer u bijvoorbeeld gegevens importeert, moet de primaire sleutel (sleutel) voor deze gegevens uniek zijn voor elke record.
 * Doelactiviteiten zijn verrijkt met opties voor gegevensbeheer: [Query](../../workflow/using/query.md), [Union](../../workflow/using/union.md), [Intersection](../../workflow/using/intersection.md), [Split](../../workflow/using/split.md). Zo kunt u een samenvoeging of een doorsnede configureren tussen gegevens van verschillende doeldimensies, zolang de gegevens met elkaar in overeenstemming zijn.
