@@ -1,7 +1,7 @@
 ---
-title: Een openingspagina maken
-seo-title: Een openingspagina maken
-description: Een openingspagina maken
+title: Een landingspagina maken
+seo-title: Een landingspagina maken
+description: Een landingspagina maken
 seo-description: null
 page-status-flag: never-activated
 uuid: fc0e9749-f44e-4aa0-bdfa-6f44ba570bea
@@ -11,26 +11,26 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 discoiquuid: 5f1e5886-628f-4c9e-80c1-d82feec23e8c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 3%
 
 ---
 
 
-# Een openingspagina maken{#creating-a-landing-page}
+# Een landingspagina maken{#creating-a-landing-page}
 
 ## Over het maken van bestemmingspagina&#39;s {#about-landing-pages-creation}
 
-In dit geval kunt u zien hoe u de Digital Editor gebruikt om een bestemmingspagina te maken vanuit de Adobe Campagne-console.
+In dit geval kunt u het gebruik van de Digital Editor voor het maken van een bestemmingspagina op de Adobe Campaign-console bekijken.
 
-Voordat u de bestemmingspagina gaat configureren in Adobe Campaign, moet u **een of meer sjablonen** gebruiken die de HTML-pagina(&#39;s) vertegenwoordigen.
+Voordat u de bestemmingspagina in Adobe Campaign gaat configureren, moet u **een of meer sjablonen** hebben die de HTML-pagina(&#39;s) vertegenwoordigen.
 
-Het hoofddoel van dit gebruiksgeval is om ervoor te zorgen dat de formuliervelden van de landingspagina overeenkomen met de interne velden in Adobe Campaign met behulp van de functies in de DCE.
+Het hoofddoel van dit gebruiksgeval is om de formuliervelden van de landingspagina te laten overeenstemmen met de interne velden in Adobe Campaign met behulp van de functies in de DCE.
 
-## De openingspagina maken {#creating-the-landing-page}
+## Creating the landing page {#creating-the-landing-page}
 
 Als u een nieuwe webtoepassing van het type Landing Page wilt maken, gaat u als volgt te werk:
 
@@ -95,7 +95,7 @@ Pas deze stappen voor elke pagina toe die in de toepassing van het Web wordt opg
 
 >[!CAUTION]
 >
->**De DCE voert de JavaScript-code voor de geladen HTML-pagina uit.** JavaScript-fouten in de HTML-sjabloon die kunnen worden weergegeven in de Adobe Campagne-interface. Deze fouten hebben geen betrekking op de editor. Als u wilt controleren of de geïmporteerde bestanden geen fouten bevatten, raden we u aan deze bestanden in een browser (Internet Explorer/Firefox/Chrome) te testen voordat u de bestanden in de DCE importeert.
+>**De DCE voert de JavaScript-code voor de geladen HTML-pagina uit.** JavaScript-fouten in de HTML-sjabloon die kunnen voorkomen in de Adobe Campaign-interface. Deze fouten hebben geen betrekking op de editor. Als u wilt controleren of de geïmporteerde bestanden geen fouten bevatten, raden we u aan deze bestanden in een browser (Internet Explorer/Firefox/Chrome) te testen voordat u de bestanden in de DCE importeert.
 
 ## Stap 2 - De inhoud configureren {#step-2---configuring-the-content}
 
@@ -145,7 +145,7 @@ Deze stap is verplicht omdat het de toepassing van het Web zal toestaan om de op
 
    ![](assets/dce_uc1_actionbouton.png)
 
-### Een aanpassingsveld invoegen {#inserting-a-personalization-field}
+### Een personalisatieveld invoegen {#inserting-a-personalization-field}
 
 Met deze stap kunt u de pagina Bedankt personaliseren. Dit doet u als volgt:
 
