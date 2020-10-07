@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
@@ -45,28 +42,28 @@ Controleer onder Systeemindicatoren en kernbestanden of er geen rode indicatoren
 
 Technische workflows zijn beschikbaar via **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
-Afhankelijk van de technische workflow voert u de onderstaande stappen uit om ervoor te zorgen dat alles werkt zoals u had verwacht.
+Afhankelijk van de technische werkstroom, volg de hieronder beschreven stappen om ervoor te zorgen dat alles zoals verwacht werkt.
 
 Raadpleeg deze [sectie](../../workflow/using/about-technical-workflows.md)voor een beter begrip van wat elke technische workflow moet doen.
 
 Voor **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. Controleer of de **[!UICONTROL Database Cleanup]** workflow elke dag wordt uitgevoerd en voltooid. Raadpleeg deze [pagina](../../workflow/using/delivery.md)voor meer informatie.
+1. Controleer of de **[!UICONTROL Database Cleanup]** workflow elke dag wordt uitgevoerd en voltooid. Raadpleeg [deze pagina](../../workflow/using/delivery.md) voor meer informatie.
 1. Bekijk het dagboek om te verifiëren dat de verstreken tijd in tijd vrij constant is en zich niet in andere werkschema&#39;s mengt.
 1. Raadpleeg deze [pagina](../../production/using/database-cleanup-workflow.md)voor meer informatie.
 
 Voor **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
-Controleer of de workflow voor bijhouden volgens schema wordt uitgevoerd (standaard elk uur) en of het dagboek geen terugkerende fouten markeert. For more on this, refer to this [section](../../workflow/using/delivery.md).
+Controleer of de workflow voor bijhouden volgens schema wordt uitgevoerd (standaard elk uur) en of het dagboek geen terugkerende fouten markeert. Raadpleeg deze [sectie](../../workflow/using/delivery.md) voor meer informatie.
 
 Voor **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
 
-1. Controleer of de **[!UICONTROL Deliverability update]** workflow elke dag wordt uitgevoerd en voltooid. Raadpleeg deze [pagina](../../workflow/using/delivery.md)voor meer informatie.
+1. Controleer of de **[!UICONTROL Deliverability update]** workflow elke dag wordt uitgevoerd en voltooid. Raadpleeg [deze pagina](../../workflow/using/delivery.md) voor meer informatie.
 1. Verifieer in het dagboek dat de regels regelmatig worden bijgewerkt.
 
 Voor **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
-1. Bekijk alle workflows die zich onder de **[!UICONTROL Campaign process]** map bevinden. Raadpleeg deze [pagina](../../workflow/using/campaign.md)voor meer informatie.
+1. Bekijk alle workflows die zich onder de **[!UICONTROL Campaign process]** map bevinden. Raadpleeg [deze pagina](../../workflow/using/campaign.md) voor meer informatie.
 1. Controleer of de workflows worden uitgevoerd zoals gepland en of het dagboek geen terugkerende fouten markeert.
 
 ## Workflowcontrole {#workflow-supervision}
