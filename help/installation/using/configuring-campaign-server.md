@@ -11,14 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3593'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -37,13 +34,13 @@ Raadpleeg de volgende secties voor meer informatie:
 
 * [Configuratiescherm-documentatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/control-panel-home.html)
 * [Hostmodellen](../../installation/using/hosting-models.md)
-* [Campaign Classic On-premisse en gehoste capaciteitmatrix](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
+* [Campaign Classic On-premisse en gehoste capaciteitmatrix](https://helpx.adobe.com/nl/campaign/kb/acc-on-prem-vs-hosted.html)
 * [Configuratiestappen](../../installation/using/about-hybrid-and-hosted-models.md) voor hybride en gehoste modellen )
 
 Campaign Classic-configuratiebestanden worden opgeslagen in de map **conf** in de installatiemap van Adobe Campaign. De configuratie wordt verspreid over twee bestanden:
 
 * **serverConf.xml**: algemene configuratie voor alle instanties. In dit bestand worden de technische parameters van de Adobe Campaign-server gecombineerd: deze worden door alle instanties gedeeld . Hieronder wordt een beschrijving van een aantal van deze parameters gegeven. De verschillende knooppunten en parameters en vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
-* **config-`<instance>`.xml** (waarbij **instantie** de naam van de instantie is): specifieke configuratie van de instantie. Als u uw server onder verschillende exemplaren deelt, gelieve de parameters specifiek voor elk geval in hun relevant dossier in te gaan.
+* **config-`<instance>`.xml** (waarbij **instantie** de naam van de instantie is): specifieke configuratie van de instantie. Als u uw server onder verschillende exemplaren deelt, gelieve de parameters specifiek voor elke instantie in hun relevant dossier in te gaan.
 
 ## Beveiligingszones definiëren {#defining-security-zones}
 
@@ -392,7 +389,7 @@ Voor JSP-pagina&#39;s is de standaardconfiguratie:
 
 Adobe Campaign gebruikt de volgende JSP-pagina&#39;s:
 
-* /nl/jsp/**soaprouter.jsp**: client console- en webserviceverbindingen (SOAP API&#39;s),
+* /nl/jsp/**soaprouter.jsp**: client console- en webserviceverbindingen (SOAP API&#39;s);
 * /nl/jsp/**m.jsp**: spiegelpagina&#39;s,
 * /nl/jsp/**opening van een sessie.jsp**: Web-based toegang tot rapporten en tot plaatsing van de cliëntconsole,
 * /nl/jsp/**s.jsp** : Het gebruik van virale marketing (sponsoring en sociale netwerken).
@@ -558,7 +555,7 @@ U kunt ervoor kiezen de uitvoering van een workflow of een workflowactiviteit op
 
    De vervolgkeuzelijst bevat eerder gebruikte affiniteiten. Het wordt voltooid in tijd met de verschillende ingegaan waarden.
 
-1. Open het bestand **nl6/conf/config-`<instance>.xml`**.
+1. Open het bestand **nl6/conf/config-`<instance>.xml`** .
 1. Wijzig de lijn die met de **[!UICONTROL wfserver]** module overeenkomt als volgt:
 
    ```
