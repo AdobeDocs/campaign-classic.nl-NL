@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 0%
@@ -179,7 +176,7 @@ Als u verbinding maakt met een externe Netezza-database in FDA, hebt u hieronder
    * **ODBCINI**: locatie van het bestand odbc.ini (bijvoorbeeld /etc/odbc.ini).
    * **NZ_ODBC_INI_PATH**: locatie van het bestand odbc.ini. Netezza vereist ook deze tweede variabele voor het gebruiken van het odbc.ini- dossier.
 
-1. In Campaign Classic kunt u vervolgens uw Netezza externe account configureren. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic, kunt u uw externe rekening van Netezza dan vormen. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Click **[!UICONTROL New]** and select **[!UICONTROL External database]** as **[!UICONTROL Type]**.
 
@@ -319,7 +316,7 @@ Voor verbinding met een externe database met Teradata in FDA zijn bepaalde aanvu
 
    * **[!UICONTROL Database]**: Naam van de database
 
-## Toegang tot SAP-HANA configureren {#configure-access-to-sap-hana}
+## Toegang tot SAP HANA configureren {#configure-access-to-sap-hana}
 
 Voor het verbinden met een externe SAP HANA-database in FDA zijn bepaalde aanvullende configuraties op de Adobe Campaign-server vereist:
 
@@ -357,7 +354,7 @@ Voor het verbinden met een externe SAP HANA-database in FDA zijn bepaalde aanvul
    * **LD_LIBRARY_PATH**: Het zou de verbinding aan uw cliënt van SAP Hana (/usr/sap/hdbclient/libodbcHDB.so) door gebrek moeten omvatten.
    * **ODBCINI**: locatie van het bestand odbc.ini (bijvoorbeeld /etc/odbc.ini).
 
-1. In Campaign Classic kunt u vervolgens uw externe SAP Hana-account configureren. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic, kunt u uw externe rekening van SAP Hana dan vormen. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Click **[!UICONTROL New]** and select **[!UICONTROL External database]** as **[!UICONTROL Type]**.
 
