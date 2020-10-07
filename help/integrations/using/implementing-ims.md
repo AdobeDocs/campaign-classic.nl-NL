@@ -11,11 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 discoiquuid: 3999577b-0460-4898-a4ec-a7b0e5002065
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '53'
+ht-degree: 0%
 
 ---
 
@@ -28,13 +28,13 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
    ![](assets/ims_1.png)
 
-1. Voer uw Adobe-id en wachtwoord in. Het startscherm van Adobe Campaign wordt dan weergegeven.
+1. Voer uw Adobe ID en wachtwoord in. Het startscherm van Adobe Campaign wordt dan weergegeven.
 
    ![](assets/ims_2.png)
 
 ## De IMS-verbinding uitschakelen {#disabling-the-ims-connection}
 
-Als u de verbinding via de Adobe-id wilt uitschakelen, verbreekt u de verbinding, klikt u op **[!UICONTROL File > Connections]** en schakelt u de optie uit **[!UICONTROL Connect with an Adobe ID]**.
+Als u de verbinding via de Adobe ID wilt uitschakelen, verbreekt u de verbinding, klikt u **[!UICONTROL File > Connections]** en schakelt u de optie uit **[!UICONTROL Connect with an Adobe ID]**.
 
 ![](assets/ims_4.png)
 
