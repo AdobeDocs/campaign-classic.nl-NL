@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: f6e44634-3a13-480e-ab44-f3c744054a96
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '999'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ De interactie laat u de stroom van aanbiedingsvoorstellen controleren gebruikend
 
 ## Een presentatieregel voor aanbiedingen maken en ernaar verwijzen {#creating-and-referencing-an-offer-presentation-rule}
 
-1. Ga naar **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** knooppunt.
+1. Go to the **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** node.
 1. Maak een typologieregel en kies het **[!UICONTROL Offer presentation]** type.
 
    ![](assets/offer_typology_001.png)
@@ -109,7 +109,7 @@ U kunt filtercriteria selecteren om voorstellen uit te sluiten die op het kanaal
 
 ![](assets/offer_typology_014.png)
 
-Deze criteria zijn de meest voorkomende toepassingen van de presentatieregels. Als u andere criteria wilt gebruiken, kunt u een query maken met de **[!UICONTROL Limit propositions...]** koppeling. Voor meer op dit, verwijs naar het [Creëren van een vraag over voorstellingensectie](#creating-a-query-on-propositions) .
+Deze criteria zijn de meest voorkomende toepassingen van de presentatieregels. Als u andere criteria wilt gebruiken, kunt u een query maken met de **[!UICONTROL Limit propositions...]** koppeling. For more on this, refer to the [Creating a query on propositions](#creating-a-query-on-propositions) section.
 
 * **Filter op het kanaal**
 
@@ -139,7 +139,7 @@ Deze criteria zijn de meest voorkomende toepassingen van de presentatieregels. A
 
 * **Filter op de status van het voorstel**
 
-   Met dit filter kunt u de meest frequente statussen kiezen voor aanbiedingsvoorstellen waarmee rekening moet worden gehouden in de voorpositiegeschiedenis.
+   Met dit filter kunt u de meest frequente statussen kiezen voor voorstellen die in de voorpositiegeschiedenis in aanmerking moeten worden genomen.
 
    **[!UICONTROL Regardless of the proposition status]** : standaardwaarde. Er wordt geen filter toegepast op de status van het voorstel.
 
