@@ -1,7 +1,7 @@
 ---
-title: Leveranciers, voorraden en begrotingen
-seo-title: Leveranciers, voorraden en begrotingen
-description: Leveranciers, voorraden en begrotingen
+title: Providers, voorraden en budgetten
+seo-title: Providers, voorraden en budgetten
+description: Providers, voorraden en budgetten
 seo-description: null
 page-status-flag: never-activated
 uuid: 6caffaaf-a6a6-40e1-8b17-07c81748382c
@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: d4627141-cef1-4ddb-ad6a-5dc217b9fa96
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e059fc9e2bfade30454601f31990c3ec14b8a847
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1906'
 ht-degree: 0%
@@ -23,9 +20,9 @@ ht-degree: 0%
 ---
 
 
-# Leveranciers, voorraden en begrotingen{#providers-stocks-and-budgets}
+# Providers, voorraden en budgetten{#providers-stocks-and-budgets}
 
-Met Adobe Campaign kunt u serviceproviders definiëren die betrokken zijn bij de taken die in de campagnes worden uitgevoerd. Informatie over de serviceproviders en de bijbehorende kostenstructuren wordt door de beheerder van de Adobe-campagne vanuit de hoofdweergave gedefinieerd. Van de levering wordt naar de dienstverlener verwezen en de kostenstructuur ervan maakt het mogelijk de kosten van deze levering te berekenen en het betrokken bestand te beheren.
+Met Adobe Campaign kunt u serviceproviders definiëren die betrokken zijn bij de taken die in de campagnes worden uitgevoerd. Informatie over de dienstverleners en de bijbehorende kostenstructuren wordt door de Adobe Campaign-beheerder in hoofdlijnen gedefinieerd. Van de levering wordt naar de dienstverlener verwezen en de kostenstructuur ervan maakt het mogelijk de kosten van deze levering te berekenen en het betrokken bestand te beheren.
 
 ## Dienstverleners en hun kostenstructuren creëren {#creating-service-providers-and-their-cost-structures}
 
@@ -35,7 +32,7 @@ De dienstverleners worden gevormd in de **[!UICONTROL Administration > Campaign 
 
 De taken die tijdens de leveringen worden uitgevoerd, worden door de dienstverleners verricht, met name voor direct mail en mobiele kanalen. Deze serviceproviders kunnen bijvoorbeeld betrokken zijn bij het afdrukken of verspreiden van berichten. Deze taken omvatten configuraties en kosten die specifiek zijn voor elke dienstverlener. De configuratie van dienstverleners omvat vier fasen:
 
-1. Een serviceprovider maken in Adobe Campaign
+1. Opzetten van een serviceprovider in Adobe Campaign
 
    Zie Een [serviceprovider](#adding-a-service-provider)toevoegen.
 
@@ -55,7 +52,7 @@ De taken die tijdens de leveringen worden uitgevoerd, worden door de dienstverle
 
 #### Een serviceprovider toevoegen {#adding-a-service-provider}
 
-U kunt zoveel serviceproviders maken als nodig zijn voor uw leveringen. De procedure voor het toevoegen van een dienstverlener is als volgt:
+U kunt zoveel serviceproviders maken als nodig zijn voor uw leveringen. De procedure voor de toevoeging van een dienstverlener is als volgt:
 
 1. Klik met de rechtermuisknop op de lijst met serviceproviders en selecteer **[!UICONTROL New]** of klik op de **[!UICONTROL New]** knop boven de lijst met serviceproviders.
 1. Geef in de onderste sectie van het venster de naam en contactgegevens van de serviceprovider op.
@@ -70,7 +67,7 @@ U moet de dienstmalplaatjes met elke dienstverlener associëren. In deze templat
 
 >[!NOTE]
 >
->Voor meer op dit, verwijs naar het [Definiëren van de kostenstructuur](#defining-the-cost-structure).
+>For more on this, refer to [Defining the cost structure](#defining-the-cost-structure).
 
 Een kostencategorie is een entiteit die een reeks kosten bevat die in aanmerking komen voor een bepaalde soort levering (e-mail, direct mail, enz.) of voor een taak. De categorieën van kosten worden gegroepeerd in de malplaatjes van de diensten verbonden aan de dienstverleners. Elke dienstverlener kan één of meerdere de dienstmalplaatjes van verwijzingen voorzien.
 
@@ -101,7 +98,7 @@ Pas de volgende stappen toe om een servicesjabloon te maken en de inhoud ervan t
 
    ![](assets/s_ncs_user_supplier_default_cost.png)
 
-### De kostenstructuur definiëren {#defining-the-cost-structure}
+### Defining the cost structure {#defining-the-cost-structure}
 
 Voor elk type kosten worden in een kostenstructuur de toe te passen berekeningsregels vermeld.
 
@@ -194,7 +191,7 @@ U kunt verplichte selectie van een kostentype tijdens de definitie van kostencat
 
 De types van kosten kunnen met voorraadlijnen worden geassocieerd om alarm, spoorlevering, en lanceringsorden te behandelen.
 
-De procedure voor het instellen van beheer van voorraden en bestellingen in Adobe Campaign, en het waarschuwen van operatoren in geval van onvoldoende voorraad voor levering, is als volgt:
+De procedure voor het opzetten van het beheer van de voorraden en de orders in Adobe Campaign en voor het waarschuwen van de marktdeelnemers in geval van ontoereikende leveranties is als volgt:
 
 1. Aanmaak van voorraden en referentie van verbonden dienstverleners
 
@@ -214,7 +211,7 @@ De procedure voor het instellen van beheer van voorraden en bestellingen in Adob
 
 ### Voorraadbeheer {#stock-management}
 
-Adobe Campagne kan een groep operatoren waarschuwen als het bestand is uitgeput of een minimumdrempel heeft bereikt. De voorraden zijn toegankelijk via de **[!UICONTROL Stocks]** verbinding van het **[!UICONTROL Campaigns]** universum via de **[!UICONTROL Other choices]** verbinding van het navigatiegebied.
+Adobe Campaign kan een groep operatoren waarschuwen als het bestand is uitgeput of een minimumdrempel heeft bereikt. De voorraden zijn toegankelijk via de **[!UICONTROL Stocks]** verbinding van het **[!UICONTROL Campaigns]** universum via de **[!UICONTROL Other choices]** verbinding van het navigatiegebied.
 
 ![](assets/s_ncs_user_stocks_view.png)
 
