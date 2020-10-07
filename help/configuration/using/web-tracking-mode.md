@@ -11,18 +11,18 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: efeef54b-925d-4654-8601-52a73539b41f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 1%
 
 ---
 
 
 # Webtraceringsmodus{#web-tracking-mode}
 
-Met Adobe Campaign kunt u een webtraceringsmodus selecteren waarmee wordt gedefinieerd hoe trackinglogbestanden in de toepassing worden verwerkt.
+Met Adobe Campaign kunt u een webvolgmodus selecteren waarmee wordt gedefinieerd hoe trackinglogbestanden in de toepassing worden verwerkt.
 
 Er zijn drie beschikbare wijzen het volgen van het Web: **&quot;Sessiespatiëring&quot;**,**&quot;Permanente tracking&quot;** en **&quot;Anonieme tracking&quot;**.
 
@@ -70,17 +70,17 @@ Deze modus is voordelig in termen van volume (beperkt aantal records in de tabel
 
 **Kenmerken van de permanente webtraceringsmodus:**
 
-Met deze webtraceringsmodus kunt u een traceringslogboek maken op basis van de aanwezigheid van het permanente uuuid230-cookie. Als een bezoeker zijn sessie sluit, gebruikt Adobe Campaign het permanente cookie om informatie over deze bestanden te herstellen op basis van eerdere trackinglogboeken. Adobe Campaign voegt een trackinglogbestand opnieuw in als de uuid230 van de huidige sessie dezelfde waarde heeft als een uuid230 die al in de tabel tracking is opgeslagen.
+Met deze webtraceringsmodus kunt u een traceringslogboek maken op basis van de aanwezigheid van het permanente uuuid230-cookie. Als een bezoeker zijn sessie sluit, gebruikt Adobe Campaign het permanente cookie om informatie over de bezoekers te herstellen op basis van eerdere trackinglogboeken. Adobe Campaign voegt een trackinglogbestand opnieuw in als uuid230 van de huidige sessie dezelfde waarde heeft als een uuid230 die al in de volgende tabel is opgeslagen.
 
-Dit betekent dat de bezoeker eerder in de Campagne van Adobe (via een levering) moet zijn geïdentificeerd om verzoening op uuid230 waarden toe te laten.
+Dit betekent dat de bezoeker eerder in Adobe Campaign moet zijn geïdentificeerd (via een levering) om verzoening op uuid230-waarden mogelijk te maken.
 
-Standaard worden zoekopdrachten in vorige logbestanden voor bijhouden uitgevoerd in de tabel &quot;trackingLog&quot;. Als het Leads-pakket is ingeschakeld, zoekt Adobe Campagne voordat u de tabel &quot;trackingLog&quot; doorzoekt, naar de tabel &quot;innerLead&quot; voor vorige trackinglogrecords.
+Standaard worden zoekopdrachten in vorige logbestanden voor bijhouden uitgevoerd in de tabel &quot;trackingLog&quot;. Als het Leads-pakket is ingeschakeld, doorzoekt Adobe Campaign de tabel &quot;trackingLog&quot; voordat het doorzoekt, naar de tabel &quot;innerLead&quot; voor vorige logrecords voor bijhouden van inhoud.
 
 Deze methode is duur in termen van berekening tijdens logboekaanpassing.
 
 **Kenmerken van de anonieme webtraceringsmodus:**
 
-Met deze webtraceringsmodus kunt u een traceringslogboek ophalen dat is gekoppeld aan anonieme navigatie in Adobe Campaign. Er wordt automatisch een traceringslogboek gemaakt voor elke klik op een bijgehouden URL. Dit logboek heeft slechts de waarde van uuid230. Tijdens een marketing campagne, wordt een het volgen logboek gecreeerd automatisch met alle identiteitsinformatie (verwijs naar zitting het volgen). Adobe Campaign zoekt automatisch naar eerdere logs voor een waarde &quot;uuid230&quot; die gelijk is aan de waarde in het logbestand voor bijhouden van deze marketingcampagne. Als identieke waarden worden gevonden, worden alle vorige het volgen logboeken ingegaan met alle informatie van het het volgen van de marketingcampagne logboek.
+Met deze webtraceringsmodus kunt u een traceringslogboek ophalen dat is gekoppeld aan anonieme navigatie in Adobe Campaign. Er wordt automatisch een traceringslogboek gemaakt voor elke klik op een bijgehouden URL. Dit logboek heeft slechts de waarde van uuid230. Tijdens een marketing campagne, wordt een het volgen logboek gecreeerd automatisch met alle identiteitsinformatie (verwijs naar zitting het volgen). Adobe Campaign zoekt automatisch naar eerdere logs voor een waarde &quot;uuid230&quot; die gelijk is aan de waarde in het trackinglogbestand voor deze marketingcampagne. Als identieke waarden worden gevonden, worden alle vorige het volgen logboeken ingegaan met alle informatie van het het volgen van de marketingcampagne logboek.
 
 Deze wijze is het duurst in termen van berekening en volume.
 
