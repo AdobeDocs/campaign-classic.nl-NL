@@ -1,6 +1,6 @@
 ---
-title: Adobe Campaign Classic Transformation Messaging Architecture
-description: In deze sectie wordt de Adobe Campaign Classic Transaction Messaging-architectuur beschreven.
+title: Adobe Campaign Classic-architectuur voor transactieberichten
+description: In deze sectie wordt de Adobe Campaign Classic-structuur voor transactiemeldingen beschreven.
 page-status-flag: never-activated
 uuid: a8fe7a37-6df7-49f4-838f-97a72e4a38f3
 contentOwner: sauviat
@@ -9,19 +9,16 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 discoiquuid: a910d5fe-cef4-47d8-b3bc-0055ef0d1afd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e6f8eb6f4ffc3ffe9dbc643cf0edeef439c0f969
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Transactionele berichtenarchitectuur{#transactional-messaging-architecture}
+# Architectuur van transactionele berichten{#transactional-messaging-architecture}
 
 ## Informatie over uitvoerings- en besturingsinstanties {#about-execution-and-control-instances}
 
@@ -179,6 +176,7 @@ Vervolgens moet u in het menu **[!UICONTROL Explorer]** , in **[!UICONTROL Platf
    * **[!UICONTROL Label]** en **[!UICONTROL Internal name]** : Geef uw externe account de naam die u nodig hebt.
    * **[!UICONTROL Type]** : selecteren **[!UICONTROL External database]** .
    * **[!UICONTROL Enabled]** moet worden ingeschakeld.
+
    Van de **[!UICONTROL Connection]** categorie:
 
    * **[!UICONTROL Type]** : Selecteer uw databaseserver, bijvoorbeeld PostgresSQL.
@@ -201,6 +199,7 @@ Vervolgens moet u in het menu **[!UICONTROL Explorer]** , in **[!UICONTROL Platf
    * **[!UICONTROL Label]** en **[!UICONTROL Internal name]** : Geef uw externe account de naam die u nodig hebt.
    * **[!UICONTROL Type]** : selecteren **[!UICONTROL External database]** .
    * Ingeschakelde doos moet worden gecontroleerd.
+
    Van de **[!UICONTROL Connection]** categorie:
 
    * **[!UICONTROL Type]** : selecteren **[!UICONTROL HTTP relay to remote Database]** .
@@ -217,18 +216,20 @@ Vervolgens moet u in het menu **[!UICONTROL Explorer]** , in **[!UICONTROL Platf
    * **[!UICONTROL Label]** en **[!UICONTROL Internal name]** : Geef uw externe account de naam die u nodig hebt.
    * **[!UICONTROL Type]** : selecteren **[!UICONTROL Execution instance]** .
    * Ingeschakelde doos moet worden gecontroleerd.
+
    Van de **[!UICONTROL Connection]** categorie:
 
    * **[!UICONTROL URL]** : Voer de URL van de uitvoeringsinstantie in.
    * **[!UICONTROL Account]** : Voer uw account in die u gebruikt om toegang te krijgen tot uw uitvoeringsexemplaar.
    * **[!UICONTROL Password]** : Voer het wachtwoord in voor de account die wordt gebruikt om toegang te krijgen tot uw uitvoeringsexemplaar.
+
    Van de **[!UICONTROL Account connection method]** categorie:
 
    * **[!UICONTROL Method]** : selecteren **[!UICONTROL Federated Data Access (FDA)]** .
    * **[!UICONTROL FDA account]** : Selecteer uw FDA-account in de vervolgkeuzelijst.
-   * Klik op de **[!UICONTROL Create the archiving workflow]** knop.
+   * Klik op de knop **[!UICONTROL Create the archiving workflow]**.
    * Klik op de **[!UICONTROL Create data synchronization workflow]** knop om de workflow voor het synchroniseren van LINE-gegevens te maken.
 
 
 
-1. U kunt nu transactiemeldingen maken. Raadpleeg deze [pagina](../../message-center/using/introduction.md)voor meer informatie.
+1. U kunt nu transactiemeldingen maken. Raadpleeg [deze pagina](../../message-center/using/introduction.md) voor meer informatie.
