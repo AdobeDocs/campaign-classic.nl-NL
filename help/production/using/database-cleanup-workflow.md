@@ -11,11 +11,8 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 discoiquuid: 6b188d78-abb4-4f03-80b9-051ce960f43c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c8cfdb67a4be2bc27baa363032c74a4aa8665e2a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2908'
 ht-degree: 0%
@@ -134,7 +131,7 @@ De eerste taak die door het **[!UICONTROL Database cleanup]** werkschema wordt u
 
 Met deze taak worden alle leveringen verwijderd of gerecycleerd.
 
-1. De **[!UICONTROL Database cleanup]** werkstroom selecteert alle leveringen waarvoor het **deleteStatus** gebied de waarde **[!UICONTROL Yes]** of **[!UICONTROL Recycled]** heeft en waarvan schrappingsdatum vroeger is dan de periode die in het **[!UICONTROL Deleted deliveries]** (**NmsCleanup_RecycledDeliveryPurgeDelay**) gebied van de plaatsingstovenaar wordt bepaald. Raadpleeg de wizard [Implementatie voor meer informatie](#deployment-wizard). Deze periode wordt berekend op basis van de huidige serverdatum.
+1. De **[!UICONTROL Database cleanup]** werkstroom selecteert alle leveringen waarvoor het **deleteStatus** gebied de waarde **[!UICONTROL Yes]** of **[!UICONTROL Recycled]** heeft en waarvan schrappingsdatum vroeger is dan de periode die in het **[!UICONTROL Deleted deliveries]** (**NmsCleanup_RecycledDeliveryPurgeDelay**) gebied van de plaatsingstovenaar wordt bepaald. For more on this, refer to [Deployment wizard](#deployment-wizard). Deze periode wordt berekend op basis van de huidige serverdatum.
 1. Voor elke server voor midsourcing selecteert de taak de lijst met te verwijderen leveringen.
 1. De **[!UICONTROL Database cleanup]** werkstroom verwijdert leveringslogboeken, bijlagen, spiegelpaginagegevens en alle andere gerelateerde gegevens.
 1. Voordat de levering goed wordt verwijderd, worden de gekoppelde gegevens in de volgende tabellen gewist:
@@ -160,7 +157,7 @@ Met deze taak worden alle leveringen verwijderd of gerecycleerd.
    * In de het volgen logboeklijsten (**NmsTrackinglogXxx**), massa-schrappingen worden uitgevoerd in partijen van 20.000 verslagen.
    * In de leverfragmenttabel (**NmsDeliveryPart**) worden massa-deletions uitgevoerd in batches van 500.000 records. Deze lijst bevat verpersoonlijkingsinformatie over de resterende te leveren berichten.
    * In de tabel met gegevensfragmenten op de spiegelpagina (**NmsMirrorPageInfo**) worden massaverwijderingen uitgevoerd in batches van 20.000 records voor verlopen leveringsonderdelen en voor voltooide of geannuleerde onderdelen. Deze lijst bevat verpersoonlijkingsinformatie over alle berichten die voor het produceren van spiegelpagina&#39;s worden gebruikt.
-   * In de zoektabel voor de spiegelpagina (**NmsMirrorPageSearch**) worden massaverwijderingen uitgevoerd in batches van 20.000 records. Deze lijst is een onderzoeksindex die toegang tot verpersoonlijkingsinformatie verleent die in de **lijst NmsMirrorPageInfo** wordt opgeslagen.
+   * In de zoektabel met spiegelpagina&#39;s (**NmsMirrorPageSearch**) worden massaverwijderingen uitgevoerd in batches van 20.000 records. Deze lijst is een onderzoeksindex die toegang tot verpersoonlijkingsinformatie verleent die in de **lijst NmsMirrorPageInfo** wordt opgeslagen.
    * In de logtabel van het batchproces (**XtkJobLog**) worden massaverwijderingen uitgevoerd in batches van 20.000 records. Deze tabel bevat het logboek met te verwijderen leveringen.
    * In de URL-tabel voor levering (**NmsTrackingUrl**) wordt de volgende query gebruikt:
 
@@ -331,7 +328,7 @@ Deze taak leegt elke werkschemainstantie gebruikend zijn identiteitskaart (**lWo
 
 >[!NOTE]
 >
->De zuiveringsfrequentie van de historie wordt voor elke workflow in het veld **Geschiedenis opgegeven in dagen** (standaardwaarde 30 dagen). Dit veld vindt u op het tabblad **Uitvoering** van de workfloweigenschappen. For more on this, refer to [this section](../../workflow/using/workflow-properties.md#execution).
+>De zuiveringsfrequentie van de historie wordt voor elke workflow in het veld **Geschiedenis opgegeven in dagen** (standaardwaarde 30 dagen). Dit veld vindt u op het tabblad **Uitvoering** van de workfloweigenschappen. Raadpleeg [deze sectie](../../workflow/using/workflow-properties.md#execution) voor meer informatie.
 
 1. De volgende query wordt gebruikt om de lijst met te verwijderen workflows te herstellen:
 
@@ -396,7 +393,7 @@ DELETE FROM XtkWorkflowLogin WHERE iWorkflowId NOT IN (SELECT iWorkflowId FROM X
 
 ### Opruiming van verweesde werktabellen {#cleanup-of-orphan-work-tables}
 
-Met deze taak verwijdert u zwevende werktabellen die zijn gekoppeld aan groepen. In de **tabel NmsGroup** worden de groepen opgeslagen die moeten worden gereinigd (met een ander type dan 0). Het voorvoegsel van de tabelnamen is **grp**. Om de te reinigen groepen te identificeren, wordt de volgende vraag gebruikt:
+Met deze taak verwijdert u zwevende werktabellen die aan groepen zijn gekoppeld. In de **tabel NmsGroup** worden de groepen opgeslagen die moeten worden gereinigd (met een ander type dan 0). Het voorvoegsel van de tabelnamen is **grp**. Om de te reinigen groepen te identificeren, wordt de volgende vraag gebruikt:
 
 ```
 SELECT iGroupId FROM NmsGroup WHERE iType>0"
