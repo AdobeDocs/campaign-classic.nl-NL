@@ -1,7 +1,7 @@
 ---
-title: Werken met gegevenspakketten
-seo-title: Werken met gegevenspakketten
-description: Werken met gegevenspakketten
+title: Werken met datapakketten
+seo-title: Werken met datapakketten
+description: Werken met datapakketten
 seo-description: null
 page-status-flag: never-activated
 uuid: 867b2702-dbc4-4b71-a385-a2c7fd09d25e
@@ -11,27 +11,24 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 discoiquuid: 42867665-d0ca-486e-9110-91716c0d5c57
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a6b15dd1be6bb53b7a757d7fe1333314df9693a4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2462'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Werken met gegevenspakketten{#working-with-data-packages}
+# Werken met datapakketten{#working-with-data-packages}
 
 ## Over gegevenspakketten {#about-data-packages}
 
-Met Adobe Campaign kunt u de platformconfiguratie en gegevens via een pakketsysteem exporteren of importeren. Pakketten kunnen verschillende configuraties, elementen bevatten, al dan niet gefilterd.
+Met Adobe Campaign kunt u de platformconfiguratie en data via een pakketsysteem exporteren of importeren. Pakketten kunnen verschillende configuraties, elementen bevatten, al dan niet gefilterd.
 
-Met gegevenspakketten kunnen entiteiten van de Adobe Campaign-database worden weergegeven via bestanden in XML-indeling. Elke entiteit in een pakket wordt met al zijn gegevens vertegenwoordigd.
+Met datapakketten kunnen entiteiten van de Adobe Campaign-database worden weergegeven via bestanden in XML-indeling. Elke entiteit in een pakket wordt met al zijn data vertegenwoordigd.
 
-Het beginsel van **gegevenspakketten** is een gegevensconfiguratie te exporteren en in een ander Adobe Campaign-systeem te integreren. Leer hoe u een consistente set gegevenspakketten in deze [sectie](#data-package-best-practices)kunt onderhouden.
+The principle of **data packages** is to export a data configuration and integrate it into another Adobe Campaign system. Leer hoe u een consistente set gegevenspakketten in deze [sectie](#data-package-best-practices)kunt onderhouden.
 
 ### Typen pakketten {#types-of-packages}
 
@@ -125,7 +122,7 @@ Voor de drie typen pakketten biedt de wizard de volgende stappen:
 
    >[!NOTE]
    >
-   >Het afhankelijkheidsmechanisme bestuurt de uitvoersequentie van de entiteit. Voor meer op dit, verwijs naar het [Leiden gebiedsdelen](#managing-dependencies).
+   >Het afhankelijkheidsmechanisme bestuurt de uitvoersequentie van de entiteit. For more on this, refer to [Managing dependencies](#managing-dependencies).
 
 1. Het scherm van de entiteitconfiguratie bepaalt de filtervraag op het type van document dat moet worden gehaald.
 
@@ -243,7 +240,7 @@ Met pakketdefinities kunt u een pakketstructuur maken waarin u entiteiten toevoe
 * [Genereren van pakketdefinities configureren](#configuring-package-definitions-generation)
 * [Pakketten uit een pakketdefinitie exporteren](#exporting-packages-from-a-package-definition)
 
-### Een pakketdefinitie maken {#creating-a-package-definition}
+### Creating a package definition {#creating-a-package-definition}
 
 Pakketdefinities zijn toegankelijk via het **[!UICONTROL Administration > Configuration > Package management > Package definitions]** menu.
 
@@ -265,7 +262,7 @@ Klik op het **[!UICONTROL Content]** tabblad op de **[!UICONTROL Add]** knop om 
 
 ![](assets/packagedefinition_addentities.png)
 
-Entiteiten kunnen rechtstreeks vanaf hun locatie in de instantie aan een pakketdefinitie worden toegevoegd. Hiervoor voert u de volgende stappen uit:
+Entiteiten kunnen rechtstreeks vanaf hun locatie in de instantie aan een pakketdefinitie worden toegevoegd. Volg de onderstaande stappen om dit te doen:
 
 1. Klik met de rechtermuisknop op de gewenste entiteit en selecteer **[!UICONTROL Actions > Export in a package]**.
 
@@ -337,7 +334,7 @@ Standaardpakketten zijn ingebouwde pakketten die worden geïnstalleerd wanneer d
 
 Raadpleeg de licentieovereenkomst om te controleren welke pakketten u kunt installeren.
 
-Raadpleeg [deze pagina](../../installation/using/installing-campaign-standard-packages.md)voor meer informatie over ingebouwde pakketten.
+For more information on built-in packages, refer to [this page](../../installation/using/installing-campaign-standard-packages.md).
 
 ## Aanbevolen werkwijzen voor gegevenspakketten {#data-package-best-practices}
 
@@ -429,7 +426,7 @@ Om het importeren te vergemakkelijken, moeten eenheidspakketten worden geordend 
 
 >[!NOTE]
 >
->Formulieren mogen alleen worden geïmporteerd nadat het schema is bijgewerkt.
+>Forms mag alleen worden geïmporteerd nadat het schema is bijgewerkt.
 
 #### Pakket 200 {#package-200}
 
@@ -445,7 +442,7 @@ Het laatste punt betreft de nummering van updatepakketten. Het is uw pakketnumme
 Het updatepakket mag slechts één specifieke entiteit bevatten, zodat het gemakkelijk opnieuw kan worden gebruikt. Als u deze wilt splitsen, voegt u een nieuw nummer toe (begin vanaf 1). Er zijn geen specifieke bestelregels voor deze pakketten. Om beter te begrijpen, veronderstel dat wij een 101 eigenschap, een sociale toepassing hebben:
 * Het bevat een webApp en een externe account.
    * Het etiket van de verpakking is: 101 - Sociale toepassing (socialApplication).
-* Er is een fout opgetreden in de webApp.
+* Er is een fout in de webApp.
    * De wepApp wordt gecorrigeerd.
    * Er moet een reparatiepakket met de volgende naam worden gemaakt: 5101 - 1 - Webtoepassing voor sociale toepassingen (socialApplication_webApp).
 * Er moet een nieuwe externe rekening worden toegevoegd voor het sociale aspect.
