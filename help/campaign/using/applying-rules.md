@@ -1,7 +1,7 @@
 ---
-title: Toepassingsregels
-seo-title: Toepassingsregels
-description: Toepassingsregels
+title: Regels toepassen
+seo-title: Regels toepassen
+description: Regels toepassen
 seo-description: null
 page-status-flag: never-activated
 uuid: 4472fc0d-d717-4603-8472-bdaf2835a02a
@@ -11,19 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: a0e76d27-bedd-4f81-b4d2-1221444e670e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 8c1f284be77447a88748ce97a3524b7035bb5bc0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '980'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 
-# Toepassingsregels{#applying-rules}
+# Regels toepassen{#applying-rules}
 
 ## Een typologie toepassen op een levering {#applying-a-typology-to-a-delivery}
 
@@ -46,7 +43,7 @@ Om de gemaakte typologische regels toe te passen, moet u deze koppelen aan een t
 
    >[!NOTE]
    >
-   >De typologie kan in het leveringsmalplaatje worden bepaald, dat automatisch op alle leveringen wordt toegepast die gebruikend dit malplaatje worden gecreeerd.
+   >De typologie kan in de leveringssjabloon worden gedefinieerd, en wordt dan automatisch toegepast op alle leveringen die met deze sjabloon zijn gemaakt.
 
 ## Toepassingsvoorwaarden definiëren {#defining-application-conditions}
 
@@ -84,17 +81,17 @@ De typologieregels worden in een specifieke volgorde toegepast tijdens de fase w
 
 In de standaardbewerkingsmodus worden de regels in de volgende volgorde toegepast:
 
-1. Controlevoorschriften, als zij bij het begin van het richten worden toegepast.
+1. Controleregels, indien toegepast aan het begin van targeting.
 1. Filterregels:
 
-   * Native toepassingsregels voor adreskwalificatie: gedefinieerd adres / niet-geverifieerd adres / adres in de bloklijst / quarantineadres / adreskwaliteit.
+   * Native toepassingsregels voor adreskwalificatie: bepaald adres / niet-geverifieerd adres / adres op de lijst van afgewezen personen / quarantined adres / adreskwaliteit.
    * Filterregels die door de gebruiker zijn gedefinieerd.
    * Deduplicatieregel op het adres of de id (indien nodig toegepast).
 
-1. Drukvoorschriften.
+1. Drukregels.
 1. Capaciteitsregels.
-1. Controlevoorschriften, als zij aan het eind van het richten worden toegepast.
-1. Regels van de controle, als zij bij het begin van verpersoonlijking worden toegepast. Als de gebruikersregels (filtreren/druk/capacitief) zijn verlopen en opnieuw moeten worden berekend, zullen zij tijdens deze stap worden toegepast.
+1. Controleregels, indien toegepast aan het einde van targeting.
+1. Controleregels, indien toegepast aan het begin van personalisatie. Als de gebruikersregels (filtreren/druk/capacitief) zijn verlopen en opnieuw moeten worden berekend, zullen zij tijdens deze stap worden toegepast.
 1. Controlevoorschriften, als zij aan het eind van verpersoonlijking van toepassing zijn.
 
 >[!NOTE]
@@ -105,7 +102,7 @@ U kunt de uitvoeringsopeenvolging van regels aanpassen die het zelfde type hebbe
 
 Bijvoorbeeld, zal een drukregel met een uitvoeringsorde van 20 vóór een drukregel met een uitvoeringsorde van 30 worden uitgevoerd.
 
-### Controlevoorschriften {#control-rules}
+### Controleregels {#control-rules}
 
 Voor **[!UICONTROL Control]** regels, kunt u beslissen op welk punt van de leveringslevenscyclus de regel zal worden toegepast (vóór of na het richten, bij het begin van verpersoonlijking, aan het eind van de analyse). Selecteer de waarde die u wilt toepassen in de vervolgkeuzelijst van het **[!UICONTROL Phase]** veld op het **[!UICONTROL General]** tabblad van de typologieregel.
 
@@ -142,7 +139,7 @@ Als optie, kunt u het **[!UICONTROL Managing affinities with IP addresses]** geb
 >[!NOTE]
 >
 >Affinity management is niet van toepassing op **[!UICONTROL Filtering]** typologieën.\
->Affinities worden gedefinieerd in het configuratiebestand van de instantie, op de Adobe Campaign-server. For more on this, refer to [this section](../../installation/using/about-initial-configuration.md).
+>Affinities worden gedefinieerd in het configuratiebestand van de instantie, op de Adobe Campaign-server. Raadpleeg [deze sectie](../../installation/using/about-initial-configuration.md) voor meer informatie.
 
 ### Campagne optimaliseren en Distribueren {#campaign-optimization-and-distributed-marketing}
 
