@@ -1,7 +1,7 @@
 ---
-title: Over sjablonen
-seo-title: Over sjablonen
-description: Over sjablonen
+title: Sjablonen
+seo-title: Sjablonen
+description: Sjablonen
 seo-description: null
 page-status-flag: never-activated
 uuid: 13b5ad3a-aded-43b8-ae4d-c23aa7bc17bd
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 discoiquuid: 22e289d0-c33c-4daa-a893-b292e523f30b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '277'
+ht-degree: 2%
 
 ---
 
 
-# Over sjablonen{#about-templates}
+# Sjablonen{#about-templates}
 
 Een leveringsconfiguratie kan in een leveringsmalplaatje worden bewaard om opnieuw te worden gebruikt. De sjabloon kan een volledige of gedeeltelijke configuratie van de levering bevatten.
 
@@ -30,13 +30,13 @@ Het leveringsmalplaatje kan manueel, zoals beschreven in dit hoofdstuk, of volge
 
 Er zijn twee typen sjablonen:
 
-1. Native Adobe Campagne-leveringssjablonen
+1. Native leversjablonen van Adobe Campaign
 
    Native sjablonen MOGEN NIET uit het systeem worden verwijderd. Zij omvatten een minimumconfiguratie voor elk leveringskanaal. De beheerder kan echter bepaalde functies beperken of standaardwaarden aanbieden aan gebruikers (activering volgen, e-mailadressen van de afzender enz.). Native scenario&#39;s worden vet weergegeven in de lijst met sjablonen. Ze moeten worden gedupliceerd om ze te kunnen wijzigen.
 
 1. Vooraf gedefinieerde leveringssjablonen
 
-   De beheerder van de Campagne van Adobe kan nieuwe leveringsmalplaatjes tot stand brengen. Ze kunnen opnieuw worden gebruikt door operatoren (die met geschikte toegangsrechten) of automatisch door serverprocessen. Bijvoorbeeld, kunt u een malplaatje van de e-maillevering vormen, en wanneer de gebruiker een levering gebruikend dit malplaatje creeert, moet hij eenvoudig de tekst of de inhoud van HTML ingaan en dan het leveren; de overige keuzen zijn al door de beheerder gedefinieerd.
+   De Adobe Campaign-beheerder kan nieuwe leveringssjablonen maken. Ze kunnen opnieuw worden gebruikt door operatoren (die met geschikte toegangsrechten) of automatisch door serverprocessen. Bijvoorbeeld, kunt u een malplaatje van de e-maillevering vormen, en wanneer de gebruiker een levering gebruikend dit malplaatje creeert, moet hij eenvoudig de tekst of de inhoud van HTML ingaan en dan het leveren; de overige keuzen zijn al door de beheerder gedefinieerd.
 
 >[!NOTE]
 >
