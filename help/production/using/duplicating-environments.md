@@ -11,14 +11,11 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 discoiquuid: 9f7118f4-aef0-469c-bbe1-b62bed674faa
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cb44d439c6866d94f8e1201575ab3d3094d6ad79
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1291'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -35,9 +32,9 @@ ht-degree: 0%
 
 Voor het gebruik van Adobe Campaign moeten een of meer omgevingen worden geïnstalleerd en geconfigureerd: ontwikkeling, test, preproductie, productie, enz.
 
-Elke omgeving bevat een Adobe Campagne-instantie en elke Adobe Campagne-instantie is gekoppeld aan een of meer databases. De toepassingsserver kan een of meer processen uitvoeren: bijna allemaal hebben directe toegang tot de instantiedatabase .
+Elke omgeving bevat een Adobe Campaign-instantie en elke Adobe Campaign-instantie is gekoppeld aan een of meer databases. De toepassingsserver kan een of meer processen uitvoeren: bijna allemaal hebben directe toegang tot de instantiedatabase .
 
-In deze sectie worden de processen beschreven die moeten worden toegepast om een Adobe Campagne-omgeving te dupliceren, dat wil zeggen om een bronomgeving te herstellen naar een doelomgeving, wat resulteert in twee identieke werkomgevingen.
+In deze sectie worden de processen beschreven die moeten worden toegepast om een Adobe Campaign-omgeving te dupliceren, d.w.z. om een bronomgeving te herstellen naar een doelomgeving, wat resulteert in twee identieke werkomgevingen.
 
 Hiervoor voert u de volgende stappen uit:
 
@@ -49,12 +46,12 @@ Hiervoor voert u de volgende stappen uit:
 
    >[!NOTE]
    >
-   >In de context van de Campagne van Adobe, combineert een **voorzichtigheid** acties die u alle processen laten tegenhouden interactie met de buitenkant: logboeken, tracering, leveringen, campagneworkflows, enz.\
+   >In de context van Adobe Campaign, combineert een **voorzichtigheid** acties die u alle processen laten tegenhouden interactie met de buitenkant: logboeken, tracering, leveringen, campagneworkflows, enz.\
    >Deze stap is nodig om te voorkomen dat berichten meerdere keren worden verzonden (eenmaal vanuit de nominale omgeving en één vanuit de gedupliceerde omgeving).
 
    >[!CAUTION]
    >
-   >Eén omgeving kan meerdere instanties bevatten. Voor elk exemplaar van Adobe Campaign geldt een licentieovereenkomst. Controleer uw licentieovereenkomst om te zien hoeveel omgevingen u kunt hebben.\
+   >Eén omgeving kan meerdere instanties bevatten. Elke Adobe Campaign-instantie is onderworpen aan een licentieovereenkomst. Controleer uw licentieovereenkomst om te zien hoeveel omgevingen u kunt hebben.\
    >Met de onderstaande procedure kunt u een omgeving overbrengen zonder dat dit invloed heeft op het aantal omgevingen en instanties dat u hebt geïnstalleerd.
 
 ### Voordat u begint {#before-you-start}
@@ -77,6 +74,7 @@ De volgende stappen moeten met grote zorg worden uitgevoerd: sommige processen z
 >
 >* De volgende procedure is geldig in de taal PostgreSQL. Als de SQL-taal anders is (bijvoorbeeld Oracle), moeten de SQL-query&#39;s worden aangepast.
 >* De onderstaande opdrachten zijn van toepassing binnen de context van een **prod** -instantie en een **dev** -instantie onder PostgreSQL.
+
 >
 
 
@@ -112,7 +110,7 @@ Controleer of het aantal geëxporteerde opties/accounts gelijk is aan het aantal
 >
 >Het aantal regels dat in een pakketexport wordt geëxporteerd, is 1000 regels. Als het aantal opties of externe rekeningen meer dan 1000 bedraagt, moet u meerdere exportbewerkingen uitvoeren.
 > 
->For more information, refer to [this section](../../platform/using/working-with-data-packages.md#exporting-packages).
+>Raadpleeg [deze sectie](../../platform/using/working-with-data-packages.md#exporting-packages) voor meer informatie.
 
 >[!NOTE]
 >
@@ -120,7 +118,7 @@ Controleer of het aantal geëxporteerde opties/accounts gelijk is aan het aantal
 
 ### Stap 3 - Stop het doelmilieu (dev) {#step-3---stop-the-target-environment--dev-}
 
-U moet de processen van de Campagne van Adobe op alle doelmilieuservers tegenhouden. Deze bewerking is afhankelijk van uw besturingssysteem.
+U moet de processen van Adobe Campaign op alle doelmilieuservers tegenhouden. Deze bewerking is afhankelijk van uw besturingssysteem.
 
 U kunt alle processen tegenhouden, of slechts die die aan het gegevensbestand schrijven.
 
@@ -165,7 +163,7 @@ psql mydatabase < mydatabase.sql
 
 ### Stap 5 - Let op de doelomgeving (dev) {#step-5---cauterize-the-target-environment--dev-}
 
-Om storingen te voorkomen, mogen de processen die gekoppeld zijn aan het verzenden van de levering en het uitvoeren van de workflow niet automatisch worden uitgevoerd wanneer de doelomgeving wordt geactiveerd.
+Om storingen te voorkomen, mogen de processen die verband houden met het verzenden van de levering en het uitvoeren van de workflow niet automatisch worden uitgevoerd wanneer de doelomgeving wordt geactiveerd.
 
 Voer hiertoe de volgende opdracht uit:
 
@@ -196,11 +194,11 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
 
 ### Stap 7 - begin het proces van het Web van het doelmilieu (dev) opnieuw {#step-7---restart-the-target-environment-web-process--dev-}
 
-Start in de doelomgeving de Adobe Campagne-processen voor alle servers opnieuw.
+Start in de doelomgeving de Adobe Campaign-processen voor alle servers opnieuw.
 
 >[!NOTE]
 >
->Voordat u de Adobe-campagne opnieuw start in de **ontwikkelomgeving** , kunt u een extra beveiligingsprocedure toepassen: start alleen de **webmodule** .
+>Voordat u Adobe Campaign opnieuw start in de **ontwikkelomgeving** , kunt u een extra veiligheidsprocedure toepassen: start alleen de **webmodule** .
 >  
 >Om dit te doen, geef het configuratiedossier van uw instantie (**config-dev.xml**) uit, dan voeg &quot;_&quot;karakter vóór autoStart= &quot;waar&quot;opties voor elke module (mta, staat, enz.) toe.
 
@@ -229,7 +227,7 @@ Controleer vooral de waarden van verschillende regels met bestanden voordat u ze
 Om de configuratie van het gegevensbestand van het doelmilieu (dev) in te voeren:
 
 1. Open de beheerconsole van de database en wis de externe accounts (table nms:extAccount) waarvan de id niet 0 is (@id &lt;> 0).
-1. Importeer in de Adobe Campaign-console het pakket options_dev.xml dat eerder is gemaakt via de functionaliteit voor het importeren van pakketten.
+1. Importeer in de Adobe Campaign-console het pakket options_dev.xml dat eerder is gemaakt via de functionaliteit van het importpakket.
 
    Controleer of de opties inderdaad zijn bijgewerkt in het **[!UICONTROL Administration > Platform > Options]** knooppunt.
 
@@ -239,7 +237,7 @@ Om de configuratie van het gegevensbestand van het doelmilieu (dev) in te voeren
 
 ### Stap 9 - Start alle processen opnieuw en wijzig gebruikers (dev) {#step-9---restart-all-processes-and-change-users--dev-}
 
-Gebruik de volgende opdrachten om Adobe Campagne te starten:
+Gebruik de volgende opdrachten om Adobe Campaign-processen te starten:
 
 * In Windows:
 
