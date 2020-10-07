@@ -1,7 +1,7 @@
 ---
-title: Over responsbeheer
-seo-title: Over responsbeheer
-description: Over responsbeheer
+title: Responsbeheer
+seo-title: Responsbeheer
+description: Responsbeheer
 seo-description: null
 page-status-flag: never-activated
 uuid: 3087a96d-50fb-488a-9b76-70eb5c67deed
@@ -11,20 +11,20 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 discoiquuid: a4669fee-4512-455f-b495-ebd5a0746b76
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '441'
+ht-degree: 4%
 
 ---
 
 
-# Over responsbeheer{#about-response-manager}
+# Responsbeheer{#about-response-manager}
 
 ## Doelstellingen {#objectives}
 
-De Campagne van Adobe biedt een toepassing van het reactiebeheer (de Manager van de Reactie) die u het succes en de rentabiliteit van marketing campagnes laat meten of voorstellen voor alle communicatie kanalen (e-mail, mobiel, telefoon, direct mail, fax, agentschap, enz.) aanbiedt.
+Adobe Campaign biedt een toepassing voor responsbeheer (Response Manager) waarmee u het succes en de rentabiliteit van marketingcampagnes kunt meten of voorstellen kunt bieden voor alle communicatiekanalen (e-mail, mobiel, telefoon, direct mail, fax, agentschap, enz.).
 
 ## Hypothetisch concept {#hypothesis-concept}
 
@@ -36,11 +36,11 @@ Ook, laten de **rapporten** die met de Manager van de Reactie worden verstrekt u
 
 Bovendien kunt u dankzij de detailregels voor aankopen uw hypothesen zo instellen dat deze zich bijvoorbeeld op één bepaald product concentreren.
 
-Zo willen we bijvoorbeeld na een levering die een post promoot de gegenereerde inkomsten evalueren. We gaan ervan uit dat iedere ontvanger die in de maand na de activering van de levering ten minste één artikel heeft aangeschaft, op deze actie heeft gereageerd. Op basis van deze hypothese zal het responsbeheer bepalen welke aankoopaanvraaglijnen er aan moeten worden toegewezen. Op basis daarvan zal het dan mogelijk zijn de daaruit voortvloeiende ontvangsten te bepalen als de som van deze begrotingslijnen.
+Zo willen we bijvoorbeeld na een levering die een post promoot de gegenereerde inkomsten evalueren. We gaan ervan uit dat iedere ontvanger die in de maand na de activering van de levering ten minste één artikel heeft aangeschaft, op deze actie heeft gereageerd. Op basis van deze hypothese zal het responsbeheer bepalen welke aankoopaanvraaglijnen er aan moeten worden toegewezen. Op basis daarvan zal het dan mogelijk zijn de resulterende ontvangsten te bepalen als de som van deze begrotingslijnen.
 
 >[!CAUTION]
 >
->Responsbeheer is een **[!UICONTROL Campaign]** optie. Controleer uw licentieovereenkomst.
+>Responsbeheer is een **[!UICONTROL Campaign]** optie. Controleer hiervoor uw licentieovereenkomst.
 
 U kunt ook alle reacties berekenen voor het hele huishouden van de ontvanger die de levering of het aanbod heeft ontvangen.
 
