@@ -1,6 +1,6 @@
 ---
-title: Gegevens importeren en exporteren
-seo-title: Gegevens importeren en exporteren
+title: Data importeren en exporteren
+seo-title: Data importeren en exporteren
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -8,14 +8,14 @@ uuid: 72c71984-ab56-476c-841b-0d8892b9f6d4
 contentOwner: sauviat
 discoiquuid: 572409d0-0920-493b-9781-d235d84aa9ee
 iscontainer: true
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '14'
+ht-degree: 100%
 
 ---
 
 
-# Gegevens importeren en exporteren{#importing-and-exporting-data}
+# Data importeren en exporteren{#importing-and-exporting-data}
 
