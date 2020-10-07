@@ -11,18 +11,18 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: c6c39b7d-7bbd-4789-b1ea-b938153e9679
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '322'
+ht-degree: 2%
 
 ---
 
 
 # Logboekprecisie{#log-precision}
 
-U kunt dit proces op alle modules van de Campagne van Adobe toepassen om logboekprecisie te verhogen.
+U kunt dit proces op alle modules van Adobe Campaign toepassen om logboekprecisie te verhogen.
 
 Het betekent dat de processen opnieuw moeten worden gestart met een hoger logbestand.
 
@@ -30,7 +30,7 @@ Het betekent dat de processen opnieuw moeten worden gestart met een hoger logbes
 >
 >Deze procedure annuleert de diensten lopend op deze module.
 
-Adobe Campagne kan werken met twee niveaus van logbestand:
+Adobe Campaign kan werken met twee logniveaus:
 
 1. De **modus Uitgebreid** is het eerste niveau na het standaardniveau. Met de volgende opdracht activeert u deze:
 
