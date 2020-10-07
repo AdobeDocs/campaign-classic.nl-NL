@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: d41658ab-ee79-4a5c-a165-d94b81eb2b33
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -34,12 +31,12 @@ SpamAssassin maakt gebruik van diverse spamdetectietechnieken, waaronder:
 * DNS-gebaseerde en op vage controlesom gebaseerde spamdetectie
 * Bayesiaans filteren
 * Externe programma&#39;s
-* Bloklijsten
+* Lijsten van afgewezen personen
 * Online databases
 
 >[!NOTE]
 >
->SpamAssassin moet op de de toepassingsserver van Adobe Campaign worden geïnstalleerd en worden gevormd. For more on this, refer to [this section](../../installation/using/configuring-spamassassin.md).
+>SpamAssassin moet op de de toepassingsserver van Adobe Campaign worden geïnstalleerd en worden gevormd. Raadpleeg [deze sectie](../../installation/using/configuring-spamassassin.md) voor meer informatie.
 >
 >De regels die bepalen of een element al dan niet spam is worden beheerd via SpamAssassin en kunnen door een beheerder met voorrechten worden uitgegeven.
 
@@ -49,7 +46,7 @@ Nadat u de e-maillevering hebt gemaakt en de inhoud ervan hebt gedefinieerd, vol
 
 Raadpleeg [deze sectie](../../delivery/using/about-email-channel.md)voor meer informatie over het maken en ontwerpen van een levering.
 
-1. Go to the **[!UICONTROL Preview]** tab.
+1. Ga naar het tabblad **[!UICONTROL Preview]**. 
 1. Selecteer een ontvanger om een voorvertoning van uw levering weer te geven.
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)
@@ -63,7 +60,7 @@ Raadpleeg [deze sectie](../../delivery/using/about-email-channel.md)voor meer in
    ![](assets/s_tn_del_preview_spamassassin_ko.png)
 
 1. Klik op de **[!UICONTROL More...]** koppeling naast de waarschuwing.
-1. Selecteer het **[!UICONTROL Anti-spam checking]** tabblad.
+1. Selecteer het tabblad **[!UICONTROL Anti-spam checking]**. 
 1. Ga naar de **[!UICONTROL Points / Rule / Description]** sectie om de redenen voor dit risico te bekijken.
 
    ![](assets/s_tn_del_msg_spamassassin_ko.png)
