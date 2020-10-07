@@ -1,7 +1,7 @@
 ---
-title: Hypothesjablonen
-seo-title: Hypothesjablonen
-description: Hypothesjablonen
+title: Hypothesesjablonen
+seo-title: Hypothesesjablonen
+description: Hypothesesjablonen
 seo-description: null
 page-status-flag: never-activated
 uuid: 080417c2-1c45-4404-961e-2e660d8f0436
@@ -11,16 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 discoiquuid: addfc395-7a85-4be1-a757-a719ed34bb33
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1437'
+ht-degree: 0%
 
 ---
 
 
-# Hypothesjablonen{#hypothesis-templates}
+# Hypothesesjablonen{#hypothesis-templates}
 
 ## Een hypothesemodel maken {#creating-a-hypothesis-model}
 
@@ -28,7 +28,7 @@ Door het samenstellen van de hypothesesjabloon kunt u de context definiëren voo
 
 Voer de volgende stappen uit om een hypothesesjabloon te maken:
 
-1. Klik in de Adobe Campaign Explorer op **[!UICONTROL Resources>Templates>Hypothesis templates]**.
+1. Klik in de Adobe Campaign-verkenner op **[!UICONTROL Resources>Templates>Hypothesis templates]**.
 
    ![](assets/response_hypothesis_model_creation_001.png)
 
@@ -36,7 +36,7 @@ Voer de volgende stappen uit om een hypothesesjabloon te maken:
 1. Voer het hypotheselabel in.
 1. Geef aan of de template bestemd is voor hypothesen over aanbiedingen of leveringen via de **[!UICONTROL Hypothesis type]** website.
 1. Geef voor **[!UICONTROL Delivery]** typesjablonen aan of metingen met of zonder controlegroep moeten worden uitgevoerd (zie voor meer informatie de [eigenschappen van een hypothesesjabloon](#properties-of-a-hypothesis-template)).
-1. Voor **[!UICONTROL Delivery]** typesjablonen kiest u een specifiek kanaal of besluit u de sjabloon toe te passen op alle beschikbare kanalen in Adobe Campagne met behulp van de **[!UICONTROL Channel]** vervolgkeuzelijst (zie [Eigenschappen van een hypothesesjabloon](#properties-of-a-hypothesis-template)voor meer informatie).
+1. Voor **[!UICONTROL Delivery]** typesjablonen kiest u een specifiek kanaal of besluit u de sjabloon toe te passen op alle beschikbare kanalen in Adobe Campaign met behulp van de **[!UICONTROL Channel]** vervolgkeuzelijst (zie voor meer informatie de [eigenschappen van een hypothesesjabloon](#properties-of-a-hypothesis-template)).
 1. Selecteer de **[!UICONTROL Execution folder]** waarin u de hypothesen wilt maken en automatisch wilt uitvoeren die op basis van deze sjabloon worden gemaakt.
 1. Kies de uitvoeringsinstellingen (zie de instellingen voor [het uitvoeren van](#hypothesis-template-execution-settings)hypothesesjablonen voor meer informatie hierover).
 1. Geef de periode voor de berekening van de hypothese op (zie voor meer informatie de instellingen voor de uitvoering van de [hypothesesjabloon](#hypothesis-template-execution-settings)).
@@ -70,7 +70,7 @@ Op het **[!UICONTROL General]** tabblad van de sjabloon kunt u de algemene sjabl
 
    Voor meer bij het bepalen van en het vormen van een controlegroep, verwijs naar het [bepalen van een controlegroep](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
-* **[!UICONTROL Channel]**: U kunt een specifiek kanaal kiezen of de hypothesesjabloon beschikbaar maken voor alle kanalen in de Adobe Campagne Console door deze te selecteren **[!UICONTROL All channels]** in de vervolgkeuzelijst. Als u het malplaatje voor een specifiek kanaal vormt, laat dit u leveringen automatisch filtreren per kanaal wanneer het creëren van de hypothese (verwijs naar het [Creëren van hypotheses](../../campaign/using/creating-hypotheses.md)).
+* **[!UICONTROL Channel]**: u kunt een specifiek kanaal kiezen of de hypothesesjabloon beschikbaar maken voor alle kanalen in de Adobe Campaign-console door deze te selecteren **[!UICONTROL All channels]** in de vervolgkeuzelijst. Als u het malplaatje voor een specifiek kanaal vormt, laat dit u leveringen automatisch filtreren per kanaal wanneer het creëren van de hypothese (verwijs naar het [Creëren van hypotheses](../../campaign/using/creating-hypotheses.md)).
 
    ![](assets/response_properties_001.png)
 
@@ -81,7 +81,7 @@ Op het **[!UICONTROL General]** tabblad van de sjabloon kunt u de algemene sjabl
 
 Op het **[!UICONTROL General]** tabblad van de sjabloon kunt u ook de parameters voor het uitvoeren van hypothesen opgeven. De beschikbare opties zijn als volgt:
 
-* **[!UICONTROL Schedule execution for a time of low activity]**: Hiermee kunt u het starten van een hypothese plannen om de prestaties van Adobe Campagne te optimaliseren. Als deze optie is ingeschakeld, wordt tijdens de downtime in de verwerkingsworkflow van campagnes hypotheseverberekening uitgevoerd.
+* **[!UICONTROL Schedule execution for a time of low activity]**: Hiermee kunt u de hypothese plannen om Adobe Campaign-prestaties te optimaliseren. Als deze optie is ingeschakeld, wordt tijdens de downtime in de verwerkingsworkflow van campagnes hypotheseverberekening uitgevoerd.
 
    ![](assets/response_exec_settings_002.png)
 
@@ -103,7 +103,7 @@ Op het **[!UICONTROL General]** tabblad van de sjabloon kunt u ook de parameters
 
       ![](assets/response_frequency_execution_002.png)
 
-   1. Klik **[!UICONTROL Finish]** om het schema op te slaan.
+   1. Click **[!UICONTROL Finish]** to save the schedule.
 
       ![](assets/response_frequency_execution_003.png)
 
@@ -172,7 +172,7 @@ Als u de transactietabel en de velden hebt gedefinieerd waarop de hypothese betr
 
       ![](assets/response_scope_filtering_005.png)
 
-   1. Klik **[!UICONTROL Finish]** om de query op te slaan.
+   1. Click **[!UICONTROL Finish]** to save your query.
 
       ![](assets/response_scope_filtering_006.png)
 
@@ -190,7 +190,7 @@ Als u de transactietabel en de velden hebt gedefinieerd waarop de hypothese betr
 
 In dit voorbeeld, gaan wij een hypothesemalplaatje op een direct-mailtype levering tot stand brengen. De transactietabel (**Aankopen** in ons voorbeeld) waarop de hypothesen zijn gebaseerd, bevat aankooplijnen die zijn gekoppeld aan artikelen of producten. Wij willen ons model vormen om hypotheses op artikelen of producten in de aankooplijst tot stand te brengen.
 
-1. Ga in de Adobe Campaign Explorer naar het **[!UICONTROL Resources > Templates > Hypothesis templates]** knooppunt.
+1. Ga in de Adobe Campaign explorer naar het **[!UICONTROL Resources > Templates > Hypothesis templates]** knooppunt.
 1. Klik **[!UICONTROL New]** om een sjabloon te maken.
 
    ![](assets/response_hypothesis_model_example_001.png)
