@@ -1,7 +1,7 @@
 ---
-title: Berichtcentrum (controle)
-seo-title: Berichtcentrum (controle)
-description: Berichtcentrum (controle)
+title: Berichtencentrum (controle)
+seo-title: Berichtencentrum (controle)
+description: Berichtencentrum (controle)
 seo-description: null
 page-status-flag: never-activated
 uuid: bdb3610b-a893-4e60-a9f7-f21d90b66919
@@ -11,18 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 discoiquuid: 69e3e99f-d392-4316-926c-3c3c675415ad
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 8%
 
 ---
 
 
-# Berichtcentrum (controle){#message-center-control}
+# Berichtencentrum (controle){#message-center-control}
 
-De hieronder beschreven workflow wordt elk uur uitgevoerd. Het wordt geïnstalleerd met het Centrum van het **Bericht - de module van de Controle** door gebrek. Raadpleeg deze [sectie](../../message-center/using/about-transactional-messaging.md)voor meer informatie over deze module.
+De hieronder beschreven workflow wordt elk uur uitgevoerd. Het wordt geïnstalleerd met het Centrum van het **Bericht - de module van de Controle** door gebrek. For more on this module, refer to this [section](../../message-center/using/about-transactional-messaging.md).
 
 Meer over hoe te om technische werkschema&#39;s met betrekking tot de module van het Centrum van het Bericht te vormen, verwijs naar [deze pagina](../../message-center/using/technical-workflows.md).
 
