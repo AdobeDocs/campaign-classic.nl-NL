@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: f3666c12-5e6f-452e-b1d6-b69a7e9f6f6e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '949'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -31,7 +28,7 @@ U kunt een of meer bestanden bijvoegen bij een e-maillevering.
 
 >[!NOTE]
 >
->Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De geadviseerde drempel kan van [de lijst van de Klassieke opties](../../installation/using/configuring-campaign-options.md#delivery)van de Campagne worden gevormd.
+>Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De aanbevolen drempelwaarde kan worden geconfigureerd [in de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
 
 Er zijn twee mogelijke gevallen:
 
@@ -40,7 +37,7 @@ Er zijn twee mogelijke gevallen:
 
 >[!NOTE]
 >
->Dit type van configuratie wordt over het algemeen uitgevoerd in de leveringsmalplaatjes. Zie [Informatie over sjablonen](../../delivery/using/about-templates.md)voor meer informatie.
+>Dit type van configuratie wordt over het algemeen uitgevoerd in de leveringsmalplaatjes. For more on this, refer to [About templates](../../delivery/using/about-templates.md).
 
 ## Een lokaal bestand bijvoegen {#attaching-a-local-file}
 
@@ -51,7 +48,7 @@ Volg onderstaande stappen om een lokaal bestand aan een levering te koppelen.
 >U kunt meerdere bestanden aan een levering koppelen. Bijlagen kunnen elke indeling hebben, inclusief de zipped-indeling.
 
 1. Klik op de **[!UICONTROL Attachments]** koppeling.
-1. Klik op de **[!UICONTROL Add]** knop.
+1. Klik op de knop **[!UICONTROL Add]**.
 1. Klik **[!UICONTROL File...]** om het bestand te selecteren dat aan de levering moet worden gekoppeld.
 
    ![](assets/s_ncs_user_wizard_email_attachement.png)
@@ -87,7 +84,7 @@ De volgende opties zijn beschikbaar:
 
 ### Een lokaal bestand bijvoegen {#attach-a-local-file}
 
-Als de bijlage een lokaal bestand is, selecteert u de optie: **[!UICONTROL File name is specified when creating the delivery template]**. Het bestand wordt lokaal geselecteerd en geüpload naar de server. Voer de onderstaande stappen uit:
+Als de bijlage een lokaal bestand is, selecteert u de optie: **[!UICONTROL File name is specified when creating the delivery template]**. Het bestand wordt lokaal geselecteerd en geüpload naar de server. Volg de onderstaande stappen:
 
 1. Selecteer in het **[!UICONTROL Local file]** veld het bestand dat u wilt uploaden.
 1. Geef zo nodig het label op. Het label vervangt de bestandsnaam bij weergave in een berichtensysteem. Als er niets is opgegeven, wordt standaard de bestandsnaam gebruikt.
@@ -128,11 +125,11 @@ Voor dit type van gehechtheid, pas de volgende configuratiestappen toe:
 
 >[!NOTE]
 >
->Om prestatieproblemen te voorkomen moet elke afbeeldingsgrootte standaard niet groter zijn dan 100.000 bytes als u direct gedownloade afbeeldingen van een gepersonaliseerde URL opneemt als bijlage. Deze aanbevolen drempelwaarde kan worden geconfigureerd [in de lijst met klassieke opties](../../installation/using/configuring-campaign-options.md#delivery)voor campagne.
+>Om prestatieproblemen te voorkomen moet elke afbeeldingsgrootte standaard niet groter zijn dan 100.000 bytes als u direct gedownloade afbeeldingen van een gepersonaliseerde URL opneemt als bijlage. Deze aanbevolen drempelwaarde kan worden geconfigureerd [in de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
 
 ### Een berekend bestand bijvoegen {#attach-a-calculated-file}
 
-U kunt de naam van de bijlage berekenen tijdens de voorbereiding van de levering. Selecteer de optie om dit te doen **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
+U kunt de naam van de bijlage berekenen tijdens de voorbereiding van de levering. To do this, select the option **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
 
 >[!NOTE]
 >
