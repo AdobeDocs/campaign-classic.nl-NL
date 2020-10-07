@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 853f26ad-d373-49a5-952e-4197ffc3d904
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 0%
@@ -32,7 +29,7 @@ Bij het implementeren van de leverbaarheid bestaat een aantal van de beste prakt
 
 >[!NOTE]
 >
->Neem voor meer informatie over campagnestrategieën voor herbetrokkenheid en de leveringsservices van Adobe contact op met uw Deliverability consultant of neem contact op met uw Adobe-verkoopagent.
+>Neem voor meer informatie over strategieën voor de terugplaatsingscampagne en de leveringsservices van Adobe contact op met uw Deliverability Consultant of neem contact op met uw Adobe Sales-agent.
 
 ## Hoe bekijkt ISPs niet-betrokkenheidsactiviteit? {#how-do-isps-view-non-engagement-activity-}
 
@@ -55,7 +52,7 @@ Volgens een studie over het retourpad werden er herplaatsingscampagnes uitgevoer
 ### Fase 1 {#phase-1}
 
 * De eerste stap is abonnees te identificeren die zeer weinig aan geen open of klikactiviteit hebben, en dienovereenkomstig deze groep te segmenteren die op een vastgestelde tijdkader wordt gebaseerd. De duimregel is om abonnees te bekijken die geen e-mail binnen de afgelopen 90 dagen hebben geopend of geklikt. Dit varieert echter afhankelijk van de aard van de activiteit (bijvoorbeeld seizoensgebonden verzending).
-* Een ander punt om in mening te houden terwijl het bepalen van timeframes is dat ISPs en de ondernemingen van de bloklijst de betrokkenheid om tussen 1.5 en 1.8 jaar overwegen overal te zijn. Daarnaast worden gedragsactiviteiten zoals aankopen en website-activiteit, of andere aanraakpunten, zoals voorkeuren tijdens de aanmeldfase of het eerste contactpunt, uitgevoerd.
+* Een ander punt om in mening te houden terwijl het bepalen van timeframes is dat ISPs en de bedrijven van de lijst van afgewezen personen vinden om betrokkenheid overal tussen 1.5 en 1.8 jaar te zijn. Daarnaast worden gedragsactiviteiten zoals aankopen en website-activiteit, of andere aanraakpunten, zoals voorkeuren tijdens de aanmeldfase of het eerste contactpunt, uitgevoerd.
 
 ### Fase 2 {#phase-2}
 
