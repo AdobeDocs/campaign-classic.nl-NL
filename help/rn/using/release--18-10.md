@@ -11,11 +11,11 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2371'
+ht-degree: 8%
 
 ---
 
@@ -54,7 +54,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 * Probleem verholpen met de HTTPRequest-API, die niet wachtte op alle callbacks om te voltooien. (NEO-12628)
 * Er zijn indexen toegevoegd aan de tijdelijke tabellen met coupons om het verzenden van leveringen te optimaliseren. (NEO-12437)
 * Probleem verholpen tijdens het analyseren van een bericht waarin ontvangers voor Japanse (.JP) domeinen als doel werden ingesteld. (NEO-12246)
-* In de integratie Analytics is het nu toegestaan om AAM-segmentgegevens met %-teken op te halen. (NEO-12025)
+* In de integratie Analytics is het nu toegestaan AAM segmentgegevens op te halen met het teken %. (NEO-12025)
 * Probleem verholpen waarbij Tomcat vastliep tijdens het verzenden van pushberichten via HTTP2. (NEO-12701)
 
 ## Release 18.10.3 - build 8981{#release-18-10-3-build-8981}
@@ -111,7 +111,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 >
 >Er is al op gewezen dat dit een bouwwerk is. Voer een [upgrade uit naar de nieuwste build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) of neem contact op met de [technische ondersteuning](https://support.neolane.net/).
 
-**Wat is nieuw?**
+**Nieuwe functies**
 
 <table> 
  <thead> 
@@ -123,20 +123,20 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
  <tbody> 
   <tr> 
    <td> Verbeteringen voor pushmeldingen<br /> </td> 
-   <td> Er zijn een aantal verbeteringen geïmplementeerd voor pushberichten in Adobe Campaign:<br /> 
+   <td> Een aantal verbeteringen is geïmplementeerd voor pushberichten in Adobe Campaign:<br /> 
     <ul> 
      <li> <p>Stil meldingen bijhouden in iOS </p> </li> 
      <li> <p>Feedback op registratieaanroepen in iOS implementeren</p> </li> 
      <li> <p>De voorbereidingssnelheid voor iOS-levering verbeteren</p> </li> 
-    </ul> <p>Als onderdeel van GCM-afschrijving door Google staat Android V2-connector nu alleen verbindingen met de FCM-server toe.</p><p>Raadpleeg de <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">gedetailleerde documentatie</a>voor meer informatie. De handmatige upgrade naar FCM vindt u in dit <a href="https://helpx.adobe.com/campaign/kb/migrate-to-fcm.html">artikel</a>. </p> </td> 
+    </ul> <p>Als onderdeel van GCM-afschrijving door Google staat Android V2-connector nu alleen verbindingen met de FCM-server toe.</p><p>Raadpleeg de <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">gedetailleerde documentatie</a> voor meer informatie. De handmatige upgrade naar FCM vindt u in dit <a href="https://helpx.adobe.com/nl/campaign/kb/migrate-to-fcm.html">artikel</a>. </p> </td> 
   </tr> 
   <tr> 
    <td> SQL-gegevensbeheer<br /> </td> 
-   <td> <p>Er is een nieuwe werkstroomactiviteit voor gegevensbeheer toegevoegd. Met de activiteit <strong>SQL-gegevensbeheer</strong> kunt u uw eigen SQL-scripts schrijven of kopiëren en plakken om werktabellen te maken en te vullen (alleen FDA). </p> <p>Raadpleeg de <a href="../../workflow/using/sql-data-management.md">gedetailleerde documentatie</a>voor meer informatie.</p></td> 
+   <td> <p>Er is een nieuwe werkstroomactiviteit voor gegevensbeheer toegevoegd. Met de activiteit <strong>SQL-gegevensbeheer</strong> kunt u uw eigen SQL-scripts schrijven of kopiëren en plakken om werktabellen te maken en te vullen (alleen FDA). </p> <p>Raadpleeg de <a href="../../workflow/using/sql-data-management.md">gedetailleerde documentatie</a> voor meer informatie.</p></td> 
   </tr> 
   <tr> 
    <td> Workflowbewaking<br /> </td> 
-   <td> <p>Met de nieuwe Adobe Campagne Workflow HeatMap beschikken de platformbeheerders over een snelle grafische weergave van alle gelijktijdige workflows, waardoor ze de belasting op de instantie kunnen controleren en de workflows op basis daarvan kunnen plannen.</p> <p>Raadpleeg de <a href="../../workflow/using/heatmap.md">gedetailleerde documentatie</a>voor meer informatie.</p> <p>Het Workflow HeatMap-pakket is ook beschikbaar op aanvraag voor builds vóór 8977 (vanaf build 8700). Raadpleeg <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">deze pagina</a>voor meer informatie over aanvragen en installeren.</p> </td> 
+   <td> <p>Met de nieuwe Adobe Campaign Workflow HeatMap beschikken de platformbeheerders over een snelle grafische weergave van alle gelijktijdige workflows, waardoor ze de belasting op de instantie kunnen controleren en de workflows dienovereenkomstig kunnen plannen.</p> <p>Raadpleeg de <a href="../../workflow/using/heatmap.md">gedetailleerde documentatie</a> voor meer informatie.</p> <p>Het Workflow HeatMap-pakket is ook beschikbaar op aanvraag voor builds vóór 8977 (vanaf build 8700). Raadpleeg <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">deze pagina</a>voor meer informatie over aanvragen en installeren.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -151,13 +151,13 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 **Verbeteringen**
 
-* Klassieke API&#39;s voor campagnes zijn nu beschikbaar op een [specifieke pagina](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html). Als u het bestand jsapi.chm gebruikte, moet u nu naar de nieuwe onlineversie verwijzen.
-* PostgreSQL 10, Debian 9 en Teradata 16.20 worden nu ondersteund. Raadpleeg de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
-* Wanneer u een SFTP-verbinding maakt, kunt u nu proxyverificatie gebruiken. Raadpleeg de [gedetailleerde documentatie](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868) voor meer informatie.
+* Campaign Classic API’s zijn nu beschikbaar op een [speciale pagina](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html). Als u het bestand jsapi.chm gebruikte, moet u nu naar de nieuwe onlineversie verwijzen.
+* PostgreSQL 10, Debian 9 en Teradata 16.20 worden nu ondersteund. Raadpleeg de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html).
+* Wanneer u een SFTP-verbinding maakt, kunt u nu proxyverificatie gebruiken. For more information, refer to the [detailed documentation](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868)
 * De optie **van de de berekeningsformule** van de Datum is nu beschikbaar in de leveringseigenschappen wanneer het creëren van één enkele levering gebruikend het direct-mailleveringsmalplaatje. (NEO-9792)
 * Het beheer van domeinnamen is verbeterd voor het bijhouden van cookies en webtoepassingen. Zie de sectie &#39;Technische ontwikkelingen&#39; hieronder voor meer informatie.
-* De import van gedeelde Adobe Marketing Cloud-middelen op een bezorgings- of bestemmingspagina is verbeterd op het gebied van beveiliging en prestaties.
-* Er is een nieuw selectievakje beschikbaar in de externe account van het mobiele kanaal om uitgebreide SMPP-sporen in te schakelen in het logbestand. Hierdoor is deze uitvoer rechtstreeks toegankelijk via de interface van Adobe Campagne.
+* De import van gedeelde Adobe Marketing Cloud-middelen op een bezorgings- of landingspagina is verbeterd op het gebied van beveiliging en prestaties.
+* Er is een nieuw selectievakje beschikbaar in de externe account van het mobiele kanaal om uitgebreide SMPP-sporen in te schakelen in het logbestand, waardoor deze uitvoer rechtstreeks toegankelijk wordt via de Adobe Campaign-interface.
 * In de uitzendingen, is er nu een onderscheid tussen het maximumaantal verbindingen en het maximumaantal berichten per uur. Wanneer de grenzen worden bereikt, is het dan mogelijk te weten waarom de productie beperkt is. Eerder was hetzelfde bericht (&quot;met quotum bereikt&quot;) van toepassing op beide gevallen.
 * U kunt nu een SQL-script opgeven dat moet worden uitgevoerd wanneer u een verbinding verwerft vanuit de pool. Dit script kan worden gebruikt om het standaardschema in te stellen. Dit script wordt toegepast na query-streepvorming. (NEO-11256)
 * In de campagne-SDK wordt de gebruikersnaam niet meer opgeslagen om te voldoen aan onze PII-regels. Gegevens worden nu opgeslagen als een hash.
@@ -212,7 +212,7 @@ Deze indexveranderingen kunnen tot een toename van de tijd leiden die wordt vere
 * Probleem verholpen waarbij lege regels werden geretourneerd wanneer de functie zcat werd gebruikt om bestanden te laden in de activiteit Gegevens laden. (NEO-11273)
 * Probleem verholpen waarbij tijdens de analyse van de levering gedupliceerde brede logs werden gegenereerd. (NEO-11360)
 * Probleem verholpen waarbij de levering mislukte omdat een vreemde-koppelingssleutel ontbrak nadat de verrijkingsactiviteit in een workflow was uitgevoerd. (NEO-11537)
-* Probleem verholpen waarbij het verwijderen of repareren van Adobe Campaign niet kon worden verholpen wanneer het installatiepad bepaalde Chinese GB18030-tekens bevatte.
+* Probleem verholpen waardoor Adobe Campaign niet correct kon worden verwijderd of gerepareerd wanneer het installatiepad bepaalde GB18030 Chinese tekens bevatte.
 * Probleem verholpen waarbij sommige trackinglogboeken werden gekoppeld aan de verkeerde levering. (NEO-11412)
 * Probleem verholpen waarbij sommige delen van de leveringslogs langer dan verwacht in behandeling zouden kunnen blijven. (NEO-11336)
 * Oplossing voor een fout die optrad bij het bewerken van een query om een coupon aan een levering toe te voegen. (NEO-11037)
@@ -233,12 +233,12 @@ Deze indexveranderingen kunnen tot een toename van de tijd leiden die wordt vere
 * Probleem verholpen bij het sorteren van gegevens in een verrijkingswerkstroomactiviteit. (NEO-11394)
 * Probleem verholpen bij het sorteren van gegevens in een aangepast rapport. (NEO-10896)
 * Probleem verholpen dat tot fouten leidde bij het gebruik van de instelling useVault met Teradata. (NEO-11399)
-* Probleem verholpen waarbij de clientconsole van Adobe Campagne vastliep wanneer meerdere queryregels werden verwijderd. (NEO-10744)
+* Probleem opgelost waarbij de Adobe Campaign-clientconsole vastliep bij het verwijderen van meerdere queryregels. (NEO-10744)
 * Probleem opgelost waarbij drukregels in sommige gevallen niet konden worden toegepast bij het verzenden van direct mail. (NEO-9004)
 * Probleem verholpen die optrad bij het gebruik van de activiteit Gegevens bij het importeren van een kolom met het gegevenstype &quot;time&quot;: het tijdscheidingsteken wordt opnieuw ingesteld, zelfs nadat het is verwijderd. (NEO-10743)
 * Probleem verholpen waardoor de map Deliveries niet kon worden weergegeven in de lijst met uitvoeringsmappen in de leveringseigenschappen tijdens het bewerken van een terugkerende levering. (NEO-11094)
 * Probleem verholpen waardoor het venster Weergavepopulatie niet meer dan 200 records kon weergeven als het resulterende doel van een query-activiteit in een workflow. (NEO-11195)
-* Probleem verholpen in Oracle waarbij een DELETE-query niet kon worden uitgevoerd met meer dan 1000 geselecteerde elementen. (NEO-11171)
+* Probleem verholpen in Oracle waarbij een DELETE-query niet kon worden uitgevoerd met meer dan 1000 elementen geselecteerd. (NEO-11171)
 * Probleem verholpen waarbij URL&#39;s werden gecodeerd als bijgehouden URL&#39;s in de aanvullende parameters van de levering van een Android-pushmelding. (NEO-11468)
 * Oplossing voor een scriptfout die optrad in het rapport Gebruikersactiviteiten bij het instellen van de parameters op &quot;Intervallen van één dag&quot; en &quot;Openen&quot;. (NEO-11655)
 * Probleem verholpen die optrad wanneer verbinding werd gemaakt met de server voor midsourcing of met Message Center via een geverifieerde webproxy. (NEO-11309)
