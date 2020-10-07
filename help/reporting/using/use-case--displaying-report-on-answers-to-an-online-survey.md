@@ -1,7 +1,7 @@
 ---
-title: '"Hoofdlettergebruik: rapport weergeven over antwoorden op een online enquête"'
-seo-title: '"Hoofdlettergebruik: rapport weergeven over antwoorden op een online enquête"'
-description: '"Hoofdlettergebruik: rapport weergeven over antwoorden op een online enquête"'
+title: '"Gebruiksscenario: een rapport weergeven over antwoorden op een online enquête"'
+seo-title: '"Gebruiksscenario: een rapport weergeven over antwoorden op een online enquête"'
+description: '"Gebruiksscenario: een rapport weergeven over antwoorden op een online enquête"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 2c0a5b7d-c606-4bcb-9600-8f89e6fce32a
@@ -11,18 +11,18 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: 5404a227-6cfb-463b-9a56-af46a022eb38
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '484'
+ht-degree: 9%
 
 ---
 
 
-# Hoofdlettergebruik: rapport weergeven over antwoorden op een online enquête{#use-case-displaying-report-on-answers-to-an-online-survey}
+# Gebruiksscenario: een rapport weergeven over antwoorden op een online enquête{#use-case-displaying-report-on-answers-to-an-online-survey}
 
-Antwoorden op Adobe Campagne-enquêtes kunnen worden verzameld en geanalyseerd met behulp van speciale rapporten.
+Antwoorden op Adobe Campaign-enquêtes kunnen worden verzameld en geanalyseerd met behulp van speciale rapporten.
 
 In het volgende voorbeeld willen we antwoorden verzamelen op een online enquête en deze weergeven in een draaientabel
 
@@ -36,13 +36,13 @@ Voordat u met dit gebruiksgeval begint, hebt u toegang nodig tot een enquête en
 
 >[!NOTE]
 >
->Dit gebruiksgeval mag alleen worden geïmplementeerd als u de optie **Beoordelingsmanager** hebt verkregen. Controleer uw licentieovereenkomst.
+>Dit gebruiksgeval mag alleen worden geïmplementeerd als u de optie **Beoordelingsmanager** hebt verkregen. Controleer hiervoor uw licentieovereenkomst.
 
 ## Stap 1 - Het creëren van de gegevensinzameling en de opslagwerkschema {#step-1---creating-the-data-collection-and-storage-workflow}
 
 Voer de volgende stappen uit om de antwoorden op de enquête te verzamelen:
 
-1. Maak een workflow en plaats een **[!UICONTROL Answers to a survey]** activiteit. Raadpleeg [deze sectie](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data)voor meer informatie over het gebruik van deze activiteit.
+1. Maak een workflow en plaats een **[!UICONTROL Answers to a survey]** activiteit. For more on using this activity, refer to [this section](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
 1. Bewerk de activiteit en selecteer de enquête waarvan u de antwoorden wilt analyseren.
 1. Schakel de **[!UICONTROL Select all the answer data]** optie in om alle informatie te verzamelen.
 
