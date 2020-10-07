@@ -11,18 +11,18 @@ audience: social
 content-type: reference
 topic-tags: configuration
 discoiquuid: 32f81ae9-396d-4bb6-8c81-6b75744f529d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '90'
+ht-degree: 8%
 
 ---
 
 
 # Workflows starten{#starting-workflows}
 
-Met de **[!UICONTROL Managing social networks]** workflows die u kunt openen via het **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** knooppunt, kunt u Adobe-campagne synchroniseren met Twitter en Facebook.
+Met de **[!UICONTROL Managing social networks]** workflows die u kunt openen via het **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** knooppunt, kunt u Adobe Campaign synchroniseren met Twitter en Facebook.
 
 De eerste keer dat u Sociale marketing gebruikt, worden deze workflows standaard gestopt. Begin ze door op de **[!UICONTROL Start]** knop op de werkbalk te klikken.
 
