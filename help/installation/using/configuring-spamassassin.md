@@ -11,14 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: aa37bdc6-0f85-4eca-859f-e8b15083cfb5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1a9d4c9eadf996d37481f33636eae98e482ac115
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '984'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -27,11 +24,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Sommige configuraties kunnen alleen door Adobe worden uitgevoerd voor implementaties die worden gehost door Adobe. Bijvoorbeeld, om tot de server en de dossiers van de instantieconfiguratie toegang te hebben. Meer over de verschillende plaatsingen leren, verwijs naar de [Hosting modelsectie](../../installation/using/hosting-models.md) of naar [dit artikel](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>Sommige configuraties kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen. Bijvoorbeeld, om tot de server en de dossiers van de instantieconfiguratie toegang te hebben. Meer over de verschillende plaatsingen leren, verwijs naar de [Hosting modelsectie](../../installation/using/hosting-models.md) of naar [dit artikel](https://helpx.adobe.com/nl/campaign/kb/acc-on-prem-vs-hosted.html).
 
 ## Overzicht {#overview}
 
-SpamAssassin is software die is ontworpen om ongewenste e-mails te filteren. In combinatie met deze software kan Adobe Campaign een score toewijzen aan e-mailberichten en bepalen of een bericht waarschijnlijk ongewenst wordt geacht voordat de levering wordt gestart. Hiervoor moet SpamAssassin op de toepassingsserver(s) van Adobe Campaign zijn geïnstalleerd en geconfigureerd en is een aantal aanvullende Perl-modules vereist om te werken.
+SpamAssassin is software die is ontworpen om ongewenste e-mails te filteren. In combinatie met deze software kan Adobe Campaign een score toewijzen aan e-mailberichten en bepalen of een bericht waarschijnlijk ongewenst wordt geacht voordat de levering wordt gestart. Hiertoe moet SpamAssassin op de toepassingsserver(s) van Adobe Campaign zijn geïnstalleerd en geconfigureerd en is een bepaald aantal aanvullende Perl-modules vereist om te kunnen werken.
 
 De plaatsing en de integratie van SpamAssassin zoals die in dit hoofdstuk wordt beschreven zijn gebaseerd op standaardsoftwareinstallatie, zoals filtreren en het scoren regels, die die door SpamAssassin zonder enige veranderingen of optimalisaties worden verstrekt. De attributie van de score en de berichtkwalificatie zijn uitsluitend gebaseerd op de configuratie van opties SpamAssassin en op het filtreren regels. De beheerders van het netwerk zijn verantwoordelijk voor het aanpassen van hen aan de behoeften van hun bedrijf.
 
@@ -39,20 +36,20 @@ De plaatsing en de integratie van SpamAssassin zoals die in dit hoofdstuk wordt 
 >
 >De kwalificatie van e-mails als ongewenst door SpamAssassin is volledig gebaseerd op filtreer- en scoreregels.
 >
->Deze regels moeten daarom ten minste eenmaal per dag worden bijgewerkt, zodat uw SpamAssassin-installatie en de integratie ervan in Adobe Campaign volledig functioneel zijn en de relevantie van de scores die aan uw leveringen zijn toegewezen, wordt gegarandeerd voordat deze worden verzonden.
+>Deze regels moeten daarom ten minste eenmaal per dag worden bijgewerkt om ervoor te zorgen dat uw SpamAssassin-installatie en de integratie ervan in Adobe Campaign volledig functioneel zijn en dat de relevantie van de scores die aan uw leveringen zijn toegekend, wordt gegarandeerd voordat deze worden verzonden.
 >
 >Deze update valt onder de verantwoordelijkheid van de serverbeheerder die als host fungeert voor SpamAssassin.
 
-Het gebruik van SpamAssassin in de Campagne van Adobe verstrekt een aanwijzing op het mogelijke gedrag van postservers die SpamAssassin gebruiken wanneer zij e-mail ontvangen die door de Campagne van Adobe wordt verzonden. Het is echter mogelijk dat de mailservers van internetproviders of online-mailservers de berichten die door Adobe Campaign worden verzonden, als ongewenst beschouwen.
+Het gebruik van SpamAssassin in Adobe Campaign geeft een indicatie van het mogelijke gedrag van mailservers die SpamAssassin gebruiken wanneer ze e-mail ontvangen die door Adobe Campaign is verzonden. Het is echter mogelijk dat de mailservers van internetproviders of online-mailservers de berichten die door Adobe Campaign worden verzonden, als ongewenst beschouwen.
 
-Voor het implementeren van SpamAssassin en de bijbehorende modules in Perl zijn Adobe Campagne-toepassingsservers vereist die via een HTTP-verbinding (TCP/80-flow) zijn uitgerust met internettoegang.
+Voor het implementeren van SpamAssassin en de bijbehorende modules in Perl zijn Adobe Campaign-toepassingsservers vereist die zijn uitgerust met internettoegang via een HTTP-verbinding (TCP/80-flow).
 
 ## Installeren op een Windows-computer {#installing-on-a-windows-machine}
 
-Voer de volgende stappen uit als u SpamAssassin in Windows wilt installeren en configureren om integratie met Adobe Campaign mogelijk te maken:
+Voer de volgende stappen uit om SpamAssassin in Windows te installeren en te configureren om integratie met Adobe Campaign mogelijk te maken:
 
 1. SpamAssassin installeren
-1. SpamAssassin integreren in Adobe-campagne
+1. SpamAssassin integreren in Adobe Campaign
 
 ### SpamAssassin installeren {#installing-spamassassin}
 
@@ -106,7 +103,7 @@ Voer de volgende stappen uit als u SpamAssassin in Windows wilt installeren en c
 
       De inhoud van deze test-e-mail activeert een score van 1.000 punten door SpamAssassin. Dit betekent dat het als ongewenst is ontdekt en dat de installatie succesvol was en volledig functioneel is.
 
-### SpamAssassin integreren in Adobe-campagne {#integrating-spamassassin-into-adobe-campaign}
+### SpamAssassin integreren in Adobe Campaign {#integrating-spamassassin-into-adobe-campaign}
 
 1. Bewerk het **`[INSTALL]/conf/serverConf.xml`** bestand. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 1. Verander de waarde van het **spamCheck** de **bevelattribuut** van elementen in de knoop van het **Web** . Voer hiertoe de volgende opdracht uit:
@@ -121,7 +118,7 @@ Voer de volgende stappen uit als u SpamAssassin in Windows wilt installeren en c
 
    Stop en start de **[!UICONTROL Adobe Campaign]** service.
 
-1. Als u de integratie van SpamAssassin in Adobe Campaign wilt controleren, gebruikt u een GTBUE-test (Algemene test voor ongevraagde e-mail met opsommingstekens):
+1. Als u de integratie van SpamAssassin in Adobe Campaign wilt controleren, gebruikt u een GTBUE-test (Generic Test for Unrequested Bulk Email):
 
    Dubbelklik op het bestand **portableshell.bat** . Dit brengt de vertoning van Vensters Shell teweeg. Voer vervolgens de volgende opdracht uit:
 
@@ -129,7 +126,7 @@ Voer de volgende stappen uit als u SpamAssassin in Windows wilt installeren en c
    perl "[INSTALL]\bin\spamcheck.pl" "C:\TestSpamMail.txt"
    ```
 
-   De inhoud van deze test-e-mail activeert 1.000 punten die door SpamAssassin zijn toegewezen. Dit betekent dat het als ongewenst is gedetecteerd en dat de integratie in Adobe Campaign is gelukt en volledig functioneel is.
+   De inhoud van deze test-e-mail activeert 1.000 punten die door SpamAssassin zijn toegewezen. Dit betekent dat het als ongewenst is ontdekt en dat de integratie in Adobe Campaign succesvol was en volledig functioneert.
 
 1. Het filtreren en het scoring regels van SpamAssassin bijwerken
 
