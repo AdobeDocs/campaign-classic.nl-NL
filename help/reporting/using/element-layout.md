@@ -1,7 +1,7 @@
 ---
-title: Element-indeling
-seo-title: Element-indeling
-description: Element-indeling
+title: Indeling van element
+seo-title: Indeling van element
+description: Indeling van element
 seo-description: null
 page-status-flag: never-activated
 uuid: 60dc80d9-f81b-48ce-9341-f975daaf5ebc
@@ -11,18 +11,18 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 8fdda764-3e42-4972-a9c9-63567588931e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 1%
 
 ---
 
 
-# Element-indeling{#element-layout}
+# Indeling van element{#element-layout}
 
-Naast de verschillende hier beschreven grafieken: De types van [Grafiek en de varianten](../../reporting/using/creating-a-chart.md#chart-types-and-variants), kunt u de vertoning aanpassen en elementen toevoegen aan de rapportpagina(s).
+Naast de verschillende hier beschreven grafieken: [Grafiektypen en -varianten](../../reporting/using/creating-a-chart.md#chart-types-and-variants), kunt u de weergave aanpassen en elementen toevoegen aan de rapportpagina(&#39;s).
 
 U kunt containers gebruiken: Hiermee kunt u verschillende elementen van een pagina aan elkaar koppelen en de lay-out ervan in kolommen en/of cellen configureren. Hoe deze te gebruiken is gedetailleerd in [deze rubriek](../../web/using/defining-web-forms-layout.md#creating-containers).
 
@@ -68,4 +68,4 @@ Dan neem deze herkenningstekens in de inhoud van HTML van het rapport op:
 
 Wanneer het rapport wordt weergegeven, worden deze automatisch vervangen door de juiste inhoud.
 
-Net als bij HTML-teksten kunt u met deze modus de teksten in het rapport centraliseren en de vertaling ervan beheren. De teksten die op dit tabblad worden gemaakt, worden automatisch verzameld door het geïntegreerde vertaalprogramma voor Adobe Campagne.
+Net als bij HTML-teksten kunt u met deze modus de teksten in het rapport centraliseren en de vertaling ervan beheren. De op dit tabblad gemaakte tekst wordt automatisch verzameld door het geïntegreerde vertaalgereedschap van Adobe Campaign.
