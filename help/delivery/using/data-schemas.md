@@ -1,7 +1,7 @@
 ---
-title: Gegevensschema's
-seo-title: Gegevensschema's
-description: Gegevensschema's
+title: Dataschema’s
+seo-title: Dataschema’s
+description: Dataschema’s
 seo-description: null
 page-status-flag: never-activated
 uuid: 3327a38c-e44d-4581-a67b-bb60c1604a5f
@@ -11,22 +11,22 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: aeaa9475-3715-40a4-8864-29d126883272
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 2%
 
 ---
 
 
-# Gegevensschema&#39;s{#data-schemas}
+# Dataschema’s{#data-schemas}
 
-Hieronder volgen enkele algemene beginselen voor het gebruik van gegevensschema&#39;s in Adobe Campaign.
+Hieronder volgen enkele algemene beginselen betreffende het gebruik van gegevensschema&#39;s in Adobe Campaign.
 
 Raadpleeg [deze sectie](../../configuration/using/about-schema-edition.md)voor meer informatie over het maken en configureren van gegevensschema&#39;s in Adobe Campaign.
 
-## Schema-structuur {#schema-structure}
+## Schemastructuur {#schema-structure}
 
 Het document van XML van een gegevensschema moet het **`<srcschema>`** wortelelement met de **naam** en **namespace** attributen bevatten om de schemanaam en zijn namespace te bevolken.
 
@@ -56,7 +56,7 @@ Deze eigenschappen worden beschreven in het **ncm:inhoudsschema** .
 >
 >Wanneer het creëren van een nieuw schema of tijdens een schemauitbreiding, moet u de zelfde primaire zeer belangrijke opeenvolgingswaarde (@pkSequence) voor het volledige schema houden.
 
-## Gegevenstypen {#data-types}
+## Datatypen {#data-types}
 
 Hier volgt een voorbeeld van een inhoudsbeheerschema met de ingevulde typen:
 
@@ -76,7 +76,7 @@ Hier volgt een voorbeeld van een inhoudsbeheerschema met de ingevulde typen:
 </element>
 ```
 
-## Eigenschappen {#properties}
+## Properties {#properties}
 
 Diverse eigenschappen kunnen worden gebruikt om de **`<element>`** en de **`<attribute>`** elementen van het gegevensschema te verrijken.
 
@@ -84,7 +84,7 @@ De belangrijkste eigenschappen die in inhoudsbeheer worden gebruikt zijn als vol
 
 * **label**: korte beschrijving,
 * **desc**: lange beschrijving,
-* **standaard**: expressie die een standaardwaarde retourneert bij het maken van inhoud;
+* **standaard**: expressie die een standaardwaarde retourneert bij het maken van inhoud,
 * **userEnum**: gratis opsomming voor het opslaan en weergeven van de waarden die via dit veld worden ingevoerd;
 * **opsomming**: vaste opsomming die wordt gebruikt wanneer de lijst van mogelijke waarden vooraf bekend is.
 
@@ -172,7 +172,7 @@ Hier is ons voorbeeldschema met zijn **Berekende koord**:
 </srcSchema>
 ```
 
-## Schema&#39;s bewerken {#editing-schemas}
+## Schema’s bewerken {#editing-schemas}
 
 In het bewerkingsveld kunt u de XML-inhoud van het bronschema invoeren:
 
