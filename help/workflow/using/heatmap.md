@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1326'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -36,19 +33,19 @@ Door een snel overzicht te geven van het aantal gelijktijdige workflows, stelt d
 Meer bepaald, helpt het de platformbeheerders om:
 
 * Gelijktijdige workflows bekijken en begrijpen
-* Workflows filteren op duur om te zien welke workflows problemen kunnen tegenkomen
+* Workflows filteren op duur om te zien in welke workflows problemen kunnen optreden
 * Filteren van activiteiten op duur om te zien welke activiteiten problemen kunnen tegenkomen
-* Gemakkelijk individuele werkschema&#39;s en alle verwante activiteiten (met hun duur) vinden
+* Gemakkelijk individuele workflows en alle verwante activiteiten (met hun duur) vinden
 * Zoeken op type workflow ([technische workflows](../../workflow/using/building-a-workflow.md#technical-workflows) of [campagneworkflows](../../workflow/using/building-a-workflow.md#campaign-workflows))
-* Een specifieke workflow zoeken die moet worden geanalyseerd
+* Zoeken naar een specifieke workflow die moet worden geanalyseerd
 
 >[!NOTE]
 >
->Naast de Heatmap **van het** Werkschema, kunt u een werkschema tot stand brengen dat u de status van een reeks werkschema&#39;s zal laten controleren en terugkomende berichten naar supervisors zal verzenden. Raadpleeg de [desbetreffende sectie](../../workflow/using/supervising-workflows.md)voor meer informatie hierover.
+>Naast de Heatmap **van het** Werkschema, kunt u een werkschema tot stand brengen dat u de status van een reeks werkschema&#39;s zal laten controleren en terugkomende berichten naar supervisors zal verzenden. For more on this, refer to the [dedicated section](../../workflow/using/supervising-workflows.md).
 
 Het gebruiken van het Werkschema HeatMap vereist om een goed inzicht in de volgende concepten te hebben: [Workflows](../../workflow/using/about-workflows.md), [activiteiten](../../workflow/using/about-activities.md) en best practices voor [workflows](../../workflow/using/workflow-best-practices.md).
 
-De Workflow HeatMap is standaard beschikbaar in Adobe Campaign vanaf release 18.10. Als u een build tussen 8700 en 8977 (18.10) hebt, kunt u ook van deze mogelijkheid profiteren. Als u het corresponderende pakket wilt aanvragen, neemt u contact op met de [klantenservice](https://support.neolane.net/) van Adobe en volgt u de instructies van [deze pagina](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) om te begrijpen hoe u het pakket kunt installeren.
+De Workflow HeatMap is standaard beschikbaar in Adobe Campaign vanaf versie 18.10. Als u een build tussen 8700 en 8977 (18.10) hebt, kunt u ook van deze mogelijkheid profiteren. Als u het corresponderende pakket wilt aanvragen, neemt u contact op met de [Adobe Klantenservice](https://support.neolane.net/) en volgt u de instructies van [deze pagina](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) om te begrijpen hoe u het pakket kunt installeren.
 
 Wanneer u voor het eerst toegang krijgt tot Worklow HeatMap, wordt het volgende pop-upvenster weergegeven. Met deze overeenkomst kunnen in de Verenigde Staten gegevens worden overgedragen en opgeslagen, zodat Adobe Campaign:
 
@@ -86,7 +83,7 @@ Deze keuze is niet definitief, u kunt deze altijd wijzigen door op de **[!UICONT
    >Alleen de workflows die niet door de **[!UICONTROL Database cleanup]** workflow zijn verwijderd, zijn zichtbaar. Raadpleeg [deze sectie](../../production/using/database-cleanup-workflow.md)voor meer informatie over de workflow voor het opschonen van databases.\
    >Door gebrek, is de de tijdzone van de Werkstroom HeatMap die voor de huidige beheerdergebruiker wordt bepaald. U kunt deze bijvoorbeeld wijzigen als u zich niet in hetzelfde gebied bevindt als de marketinggebruikers waarmee u werkt.
 
-1. Klik op de **[!UICONTROL Filters]** knop.
+1. Klik op de knop **[!UICONTROL Filters]**.
 
    ![](assets/wkf_monitoring_filters.png)
 
@@ -194,7 +191,7 @@ In dit geval klagen veel gebruikers over workflowprestaties. U moet controleren 
    * De werkstromen in behandeling moeten elke dag handmatig opnieuw worden gestart.
    * De prestaties zijn laag.
 
-1. In plaats van vijftig workflows te hebben die om 10.00 uur beginnen, verdeel de werkstromen&#39; beginnende tijden gelijkmatig over de rest van de dag.
+1. In plaats van vijftig workflows te hebben die om 10.00 uur beginnen, verdeel de werkstromen&#39; beginnende tijden gelijkelijk over de rest van de dag.
 1. Ga terug naar de **[!UICONTROL Campaign Workflow HeatMap]** pagina en klik op de **[!UICONTROL Reload data]** knop.
 1. Neem nu het volgende in acht:
 
