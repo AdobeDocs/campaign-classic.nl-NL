@@ -1,7 +1,7 @@
 ---
-title: Verslagen over leveringen
-seo-title: Verslagen over leveringen
-description: Verslagen over leveringen
+title: Rapporten over leveringen
+seo-title: Rapporten over leveringen
+description: Rapporten over leveringen
 seo-description: null
 page-status-flag: never-activated
 uuid: 83ea834e-08f7-441b-8f15-a25ec07c4aab
@@ -11,18 +11,18 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '704'
+ht-degree: 6%
 
 ---
 
 
 # Persoon/personen en ontvangers {#person-people-and-recipients}
 
-Met dit voorbeeld krijgt u inzicht in het verschil tussen een persoon/persoon en een ontvanger in Adobe Campaign. Wij zullen een levering naar verscheidene mensen verzenden om het verschil tussen mensen en ontvangers te benadrukken terwijl het detailleren van de berekeningsmethode voor de volgende indicatoren:
+Dit voorbeeld helpt u het verschil te begrijpen tussen een persoon/persoon en een ontvanger in Adobe Campaign. Wij zullen een levering naar verscheidene mensen verzenden om het verschil tussen mensen en ontvangers te benadrukken terwijl het detailleren van de berekeningsmethode voor de volgende indicatoren:
 
 * **[!UICONTROL Clicks]**
 * **[!UICONTROL Distinct clicks for the population reached]**
@@ -32,7 +32,7 @@ Met dit voorbeeld krijgt u inzicht in het verschil tussen een persoon/persoon en
 
 >[!NOTE]
 >
->Deze indicatoren worden in het **[!UICONTROL Tracking indicators]** verslag gebruikt. Zie [Trackingindicatoren](../../reporting/using/delivery-reports.md#tracking-indicators)voor meer informatie.
+>Deze indicatoren worden in het **[!UICONTROL Tracking indicators]** verslag gebruikt. For more on this, refer to [Tracking indicators](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 Er worden drie koppelingen toegevoegd aan een levering. Het wordt verzonden naar 4 ontvangers:
 
@@ -74,7 +74,7 @@ Marie&#39;s open wordt getoond in het volgende logboek:
 
 ![](assets/s_ncs_user_indicators_example_4bis.png)
 
-Openen wordt toegewezen aan een ontvanger: Marie. Adobe Campaign voegt daarom een nieuwe ontvanger aan de telling toe.
+Openen wordt toegewezen aan een ontvanger: Marie. Adobe Campaign voegt daarom een nieuwe begunstigde aan de telling toe.
 
 **Tussentijdse berekening:**
 
@@ -94,9 +94,9 @@ De acties van Florian (open en 9 klikken) verschijnen in de volgende logboeken:
 
 ![](assets/s_ncs_user_indicators_example_3bis.png)
 
-**Ontvangers**: de open en kliks worden toegewezen aan dezelfde ontvanger (Florian). Aangezien deze ontvanger afwijkt van de vorige (Marie), voegt Adobe Campaign een nieuwe ontvanger toe aan de telling.
+**Ontvangers**: de open en kliks worden toegewezen aan dezelfde ontvanger (Florian). Aangezien deze ontvanger verschilt van de vorige (Marie), voegt Adobe Campaign een nieuwe ontvanger aan de telling toe.
 
-Personen: Aangezien de browser van deze ontvanger cookies accepteert, kunnen we zien dat dezelfde id (UUID) is toegewezen aan alle kliklogboeken: **`fe37a503 [...]`**. In Adobe Campaign worden deze muisklikken correct herkend als behorend tot dezelfde persoon. Er wordt een nieuwe persoon toegevoegd aan de telling.
+Personen: Aangezien de browser van deze ontvanger cookies accepteert, kunnen we zien dat dezelfde id (UUID) is toegewezen aan alle kliklogboeken: **`fe37a503 [...]`**. Adobe Campaign identificeert deze klikken correct als behorend tot dezelfde persoon. Er wordt een nieuwe persoon toegevoegd aan de telling.
 
 **Tussentijdse berekening:**
 
