@@ -1,6 +1,6 @@
 ---
-title: Een e-mail verzenden met Adobe Campagne Classic
-description: Meer informatie over de parameters die specifiek zijn voor het leveren van e-mails in Adobe Campaign Classic.
+title: Een e-mail verzenden met Adobe Campaign Classic
+description: Meer informatie over de parameters die specifiek zijn voor het verzenden van e-mails in Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 791f7a54-3225-46ca-ad6f-6c32e9c62d75
 contentOwner: sauviat
@@ -9,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: e2dd8161-fe38-48bf-a288-8ec328b2660e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7c800c20fff89b97f6fa38b3c659ca765765e157
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '741'
+ht-degree: 9%
 
 ---
 
@@ -31,7 +31,7 @@ In de onderstaande secties worden de parameters beschreven die specifiek zijn vo
 
 ## E-mails archiveren {#archiving-emails}
 
-Met Adobe Campaign kunt u e-mails opslaan op een extern systeem via BCC door gewoon een BCC-e-mailadres toe te voegen aan het doel van uw bericht. Zodra de optie geactiveerd is, wordt een exacte kopie van alle verzonden berichten bewaard voor deze levering.
+Met Adobe Campaign kunt u e-mailberichten op een extern systeem opslaan via BCC door eenvoudig een BCC-e-mailadres toe te voegen aan uw berichtdoel. Zodra de optie geactiveerd is, wordt een exacte kopie van alle verzonden berichten bewaard voor deze levering.
 
 Raadpleeg [deze sectie](../../installation/using/email-archiving.md)voor meer informatie over het configureren van e-mailblokkering.
 
@@ -41,12 +41,12 @@ Raadpleeg [deze sectie](../../installation/using/email-archiving.md)voor meer in
 
 Bij het maken van een nieuwe bezorgings- of leveringssjabloon is E-mail BCC niet standaard ingeschakeld, zelfs niet als de optie is aangeschaft. U moet het manueel in elke levering of malplaatje toelaten waar u het wilt gebruiken.
 
-Hiervoor voert u de volgende stappen uit:
+Volg de onderstaande stappen om dit te doen:
 
 1. Ga naar **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** of **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
 1. Selecteer de levering van uw keuze of dupliceer de uit-van-de-doos sjabloon voor **e-maillevering** en selecteer vervolgens de gedupliceerde sjabloon.
-1. Klik op de knop **Eigenschappen** .
-1. Selecteer het **[!UICONTROL Delivery]** tabblad.
+1. Click the **Properties** button.
+1. Selecteer het tabblad **[!UICONTROL Delivery]**. 
 1. Schakel het vakje E-mailberichten **** archiveren in om een kopie van alle verzonden berichten voor deze levering of voor elke levering te bewaren op basis van deze sjabloon.
 
    ![](assets/s_ncs_user_wizard_archiving.png)
@@ -103,12 +103,12 @@ Hiervoor selecteert u de **[!UICONTROL Force the encoding used for messages]** o
 
 Het is mogelijk om kopballen SMTP aan uw leveringen toe te voegen. Hiervoor gebruikt u de desbetreffende sectie van het **[!UICONTROL SMTP]** tabblad in de levering.
 
-Het script dat in dit venster wordt ingevoerd, moet in het volgende formulier verwijzen naar één koptekst per regel: **name:value**.
+The script entered in this window must reference one header per line in the following form: **name:value**.
 
 Waarden worden indien nodig automatisch gecodeerd.
 
 >[!CAUTION]
 >
->Het toevoegen van een manuscript voor het opnemen van extra kopballen SMTP is gereserveerd voor gevorderde gebruikers.
+>Het toevoegen van een script voor het opnemen van extra SMTP-kopteksten is gereserveerd voor gevorderde gebruikers.
 >
->De syntaxis van dit script moet voldoen aan de vereisten van dit inhoudstype: geen ongebruikte ruimte, geen lege regel, enz.
+>De syntaxis van dit script moet voldoen aan de vereisten van dit type content: geen ongebruikte ruimte, geen lege regel, enz.
