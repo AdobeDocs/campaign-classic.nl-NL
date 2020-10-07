@@ -11,20 +11,20 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 discoiquuid: 1b6ce502-0d33-46e4-b52e-124b849de11f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '106'
+ht-degree: 16%
 
 ---
 
 
 # Specifieke configuraties in v6.10{#specific-configurations-in-v6-10}
 
-Er zijn enkele verbeteringen doorgevoerd in Adobe Campaign v7 om de beveiliging te optimaliseren.
+In Adobe Campaign v7 zijn bepaalde verbeteringen doorgevoerd om de veiligheid te optimaliseren.
 
-Als u vanaf een 6.10-platform migreert en uw clientconsole ouder is dan de 8104-build, moet u deze bijwerken. Als dit niet gebeurt voordat u gaat migreren, wordt u gevraagd om uw clientconsole bij te werken wanneer u opnieuw verbinding maakt. Klik **[!UICONTROL Yes]**.
+Als u vanaf een 6.10-platform migreert en uw clientconsole ouder is dan de 8104-build, moet u deze bijwerken. Als dit niet gebeurt voordat u gaat migreren, wordt u gevraagd om uw clientconsole bij te werken wanneer u opnieuw verbinding maakt. Klik op **[!UICONTROL Yes]**.
 
 >[!IMPORTANT]
 >
