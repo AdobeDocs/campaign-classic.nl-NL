@@ -11,24 +11,24 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: 42db3be8-ee02-4158-adcd-846420a32460
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 10%
 
 ---
 
 
 # Kubussen{#about-cubes}
 
-De exploratie van gegevens in het gegevensbestand wordt aangeboden via de module van de Analyse van de **Marketing** . Het laat u toe om gegevens te analyseren en te meten, statistieken te berekenen, en rapportverwezenlijking en berekening te vereenvoudigen en te optimaliseren. Daarnaast kunt u met Marketing Analytics rapporten maken en doelpopulaties maken. Als deze eenmaal zijn geïdentificeerd, worden ze opgeslagen in lijsten die kunnen worden gebruikt in Adobe Campaign (zoeken, segmenteren, enz.).
+De exploratie van gegevens in het gegevensbestand wordt aangeboden via de module van de Analyse van de **Marketing** . Het laat u toe om gegevens te analyseren en te meten, statistieken te berekenen, en rapportverwezenlijking en berekening te vereenvoudigen en te optimaliseren. Daarnaast kunt u met Marketing Analytics rapporten maken en doelpopulaties maken. Zodra deze worden geïdentificeerd, worden zij opgeslagen in lijsten die in Adobe Campaign (gericht, segmentatie, enz.) kunnen worden gebruikt.
 
 De kubussen worden gebruikt voor het produceren van bepaalde ingebouwde rapporten, met inbegrip van leveringsrapporten (levering het volgen, klikt, opent, enz.). Rapporten op basis van kubussen mogen alleen worden gebruikt als standaard voor gegevensvolumes onder 5 miljoen feitenlijnen.
 
-U kunt de mogelijkheden van de gegevensbestandexploratie en analyse uitbreiden terwijl het voor eindgebruikers gemakkelijker maken om rapporten en lijsten te vormen: alles wat zij moeten doen is een bestaande (volledig gevormde) kubus selecteren wanneer het creëren van hun rapport of lijst om berekeningen, maatregelen en statistieken te verwerken.
+U kunt de mogelijkheden van databaseverkenning en -analyse uitbreiden terwijl het voor eindgebruikers gemakkelijker wordt om rapporten en tabellen te configureren. Alles wat gebruikers moeten doen is een bestaande (volledig geconfigureerde) kubus selecteren bij het maken van hun rapport of tabel om berekeningen, metingen en statistieken te verwerken.
 
-Zodra zij zijn gecreeerd en gevormd, worden de kubussen gebruikt in de dozen van de rapportvraag en de toepassingen van het Web. Ze kunnen worden gebruikt en bewerkt binnen draaitabellen.
+Zodra kubussen zijn gemaakt en geconfigureerd, worden ze gebruikt in vakken voor rapportquery’s en webapplicaties. Ze kunnen worden gebruikt en bewerkt binnen draaitabellen.
 
 >[!CAUTION]
 >
@@ -41,7 +41,8 @@ Met de module van de Analyse van de Marketing, laat de Campagne u toe:
    * gegevens samenvoegen en opslaan in een werktabel om indicatoren vooraf te berekenen op basis van gebruikersbehoeften;
    * vermindering van de hoeveelheid gegevens die betrokken is bij de verschillende berekeningen die voor rapporten en vragen worden gebruikt, waardoor de berekeningstijden van de indicatoren aanzienlijk worden geoptimaliseerd;
    * het vereenvoudigen van de toegang tot gegevens, waardoor gebruikers gegevens (al dan niet vooraf geaggregeerd) kunnen manipuleren, afhankelijk van verschillende dimensies.
-   Zie [Indicatoren](../../reporting/using/creating-indicators.md)maken voor meer informatie.
+
+   For more on this, refer to [Creating indicators](../../reporting/using/creating-indicators.md).
 
 1. Draai-tabellen maken met de volgende weergave:
 
@@ -49,12 +50,13 @@ Met de module van de Analyse van de Marketing, laat de Campagne u toe:
    * selecteren van de gegevens die moeten worden weergegeven en de weergavemodus;
    * aanpassing van de gebruikte maatregelen en indicatoren;
    * het aanbieden van interactieve analysehulpmiddelen aan gebruikers met een niet-technische achtergrond.
+
    Voor meer op dit, verwijs naar het [Gebruiken van kubussen om gegevens](../../reporting/using/using-cubes-to-explore-data.md)te onderzoeken.
 
 1. Bouw een vraag gebruikend gegevens die in een kubus worden berekend en worden samengevoegd.
 1. Identificeer populaties en verwijs hen in lijsten.
 
-##  Terminologie {#terminology}
+## Terminologie {#terminology}
 
 Wanneer het werken met kubussen, moeten de volgende concepten gekend zijn:
 
@@ -68,9 +70,9 @@ Wanneer het werken met kubussen, moeten de volgende concepten gekend zijn:
 
    Een feitentabel kan bijvoorbeeld: de omroeptabel, de aankooptabel, enz.
 
-* Dimensie
+* Dimension
 
-   Met afmetingen kunt u gegevens segmenteren in groepen: zodra zij zijn gecreëerd , dienen de afmetingen als analysecentra . In de meeste gevallen zullen voor een bepaalde dimensie verschillende niveaus worden vastgesteld. Voor een tijdsdimensie zijn de niveaus bijvoorbeeld maanden, dagen, uren, minuten, enzovoort. Deze reeks niveaus vertegenwoordigt de dimensiehiërarchie en laat diverse niveaus van gegevensanalyse toe.
+   Met Dimension kunt u gegevens segmenteren in groepen: zodra zij zijn gecreëerd , dienen de afmetingen als analysecentra . In de meeste gevallen zullen voor een bepaalde dimensie verschillende niveaus worden vastgesteld. Voor een tijdsdimensie zijn de niveaus bijvoorbeeld maanden, dagen, uren, minuten, enzovoort. Deze reeks niveaus vertegenwoordigt de dimensiehiërarchie en laat diverse niveaus van gegevensanalyse toe.
 
 * Binding
 
@@ -92,7 +94,7 @@ De kubussen worden opgeslagen in de **[!UICONTROL Administration > Configuration
 
 De belangrijkste gebruikscontext voor kubussen is als volgt:
 
-* Gegevens kunnen rechtstreeks worden geëxporteerd in een rapport dat is ontworpen in het **[!UICONTROL Reports]** universum van het Adobe Campaign-platform.
+* De uitvoer van gegevens kan rechtstreeks worden uitgevoerd in een rapport dat is ontworpen in het **[!UICONTROL Reports]** universum van het Adobe Campaign-platform.
 
    Hiertoe maakt u een nieuw rapport en selecteert u de kubus die u wilt gebruiken.
 
