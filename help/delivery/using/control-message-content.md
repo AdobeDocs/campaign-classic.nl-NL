@@ -1,6 +1,6 @@
 ---
-title: Over de leveringsmogelijkheden in Adobe Campagne Classic
-description: Meer informatie over het beheren van de beschikbaarheid in Adobe Campaign Classic.
+title: Informatie over leverbaarbaarheid in Adobe Campaign Classic
+description: Meer weten over het beheren van de leverbaarbaarheid in Adobe Campaign Classic?
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -9,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 68756f920fbc8658cff552615adbf023b4c5e3aa
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +38,7 @@ Als algemene regel geldt dat u ontvangers die zich willen afmelden, niet in de w
 
 ## SpamAssassin {#spamassassin}
 
-Adobe Campagne kan worden gevormd om met SpamAssassin te werken. Dit maakt het mogelijk om e-mailberichten te scoren om te bepalen of een bericht het risico loopt om als spam door de anti-anti-spamhulpmiddelen worden beschouwd die op ontvangstbewijs worden gebruikt.
+Adobe Campaign kan worden gevormd om met SpamAssassin te werken. Dit maakt het mogelijk om e-mailberichten te scoren om te bepalen of een bericht het risico loopt om als spam door de anti-anti-spamhulpmiddelen worden beschouwd die op ontvangstbewijs worden gebruikt.
 
 Voordat u met de levering begint, kunt u op het tabblad Voorbeeld de risico&#39;s evalueren. Het resultaat van de test wordt aangegeven met een waarschuwingsbericht.
 
