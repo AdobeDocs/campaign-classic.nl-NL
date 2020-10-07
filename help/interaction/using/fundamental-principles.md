@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: general-operation
 discoiquuid: 695cf33f-1cc7-4ae8-8ef6-05aa65219411
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '340'
+ht-degree: 2%
 
 ---
 
@@ -42,7 +42,7 @@ Een aanbieding wordt slechts opgesteld op de aanbiedingsruimten die tijdens het 
 
 Er zijn twee mogelijke typen interactie: binnenkomende interacties (geïnitieerd door een contactpersoon) en uitgaande interacties (geïnitieerd door de aanbiedingsmaker).
 
-Deze twee soorten interactie kunnen worden uitgevoerd in monitaire modus (aanbieding wordt berekend voor één contactpersoon) of in batchmodus (aanbieding wordt berekend voor een reeks contactpersonen). Over het algemeen worden binnenkomende interacties uitgevoerd in monitaire modus en uitgaande interacties in batchmodus. Er kunnen echter bepaalde uitzonderingen zijn, bijvoorbeeld voor transactiemeldingen, waarbij de uitgaande interactie in de eenheidsmodus wordt uitgevoerd (zie [deze paragraaf](../../message-center/using/about-transactional-messaging.md)).
+Deze twee soorten interactie kunnen worden uitgevoerd in monitaire modus (het aanbod wordt berekend voor één contactpersoon) of in batchmodus (het aanbod wordt berekend voor een reeks contactpersonen). Over het algemeen worden binnenkomende interacties uitgevoerd in monitaire modus en uitgaande interacties in batchmodus. Er kunnen echter bepaalde uitzonderingen zijn, bijvoorbeeld voor transactiemeldingen, waarbij de uitgaande interactie in de eenheidsmodus wordt uitgevoerd (zie [deze paragraaf](../../message-center/using/about-transactional-messaging.md)).
 
 Zodra een aanbieding kan of moet worden ingediend (volgens de uitgevoerde configuraties), speelt de aanbiedingsmotor de intermediaire rol: het berekent automatisch de best mogelijke aanbieding voor een contact tussen beschikbare die door ontvangen gegevens over het contact en de verschillende regels te combineren die kunnen worden toegepast zoals gespecificeerd in de toepassing.
 
