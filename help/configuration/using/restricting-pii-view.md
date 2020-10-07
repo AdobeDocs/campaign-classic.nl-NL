@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 550439c1-978c-414e-be5b-a9e1a202c4cd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '390'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ## Overzicht {#overview}
 
-Sommige klanten hebben marketinggebruikers nodig om toegang te krijgen tot gegevensrecords, maar willen niet dat ze PII (Personeel Identified Information), zoals voornaam, achternaam of e-mailadres, kunnen zien. Adobe Campaign stelt een manier voor om privacy te beschermen en te voorkomen dat gegevens worden misbruikt door reguliere campagnebedrijven.
+Sommige klanten hebben marketinggebruikers nodig om toegang te krijgen tot gegevensrecords, maar willen niet dat ze PII (Personeel Identified Information), zoals voornaam, achternaam of e-mailadres, kunnen zien. Adobe Campaign stelt een manier voor om de privacy te beschermen en te voorkomen dat gegevens worden misbruikt door reguliere campagnebedrijven.
 
 ## Implementatie {#implementation}
 
@@ -57,7 +57,7 @@ Hier volgen de gevolgen van het gebruik van dit kenmerk in Campagne:
 * Gegevens worden alleen-lezen in gedetailleerde weergave.
 * Gegevens kunnen alleen worden gebruikt in filters (u kunt waarden toch raden met behulp van bepaalde dichotomiestrategieën).
 * Om het even welke uitdrukking die gebruikend een beperkt gebied wordt gebouwd wordt beperkt tot: lower(@email) wordt even toegankelijk als @email.
-* In een werkstroom kunt u de beperkte kolom aan de doelpopulatie toevoegen als een extra kolom van de overgang, maar deze is nog steeds niet toegankelijk voor Adobe-campagnegebruikers.
+* In een werkstroom kunt u de beperkte kolom aan de doelpopulatie toevoegen als een extra kolom van de overgang, maar deze is nog steeds niet toegankelijk voor Adobe Campaign-gebruikers.
 * Wanneer de doelpopulatie in een groep (lijst) wordt opgeslagen, zijn de kenmerken van de opgeslagen velden gelijk aan de gegevensbron.
 * Gegevens zijn standaard niet toegankelijk voor JS-code.
 
