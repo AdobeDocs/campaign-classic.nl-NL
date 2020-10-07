@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c86af066045c1c35b51624de8565af21746354c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -93,7 +90,7 @@ Tijdens de leveringsanalyse, leidt deze optie automatisch tot en voert een werks
 
 Door deze optie in te schakelen, kunt u een aanzienlijke prestatieverbetering bereiken voor het uitvoeren van personalisatie.
 
-## Gegevens uit een externe database gebruiken in een workflow {#using-data-from-an-external-database-in-a-workflow}
+## Data uit een externe database gebruiken in een workflow {#using-data-from-an-external-database-in-a-workflow}
 
 Bij verschillende Adobe Campaign-workflowactiviteiten kunt u de gegevens gebruiken die in een externe database zijn opgeslagen.
 
@@ -101,13 +98,13 @@ Bij verschillende Adobe Campaign-workflowactiviteiten kunt u de gegevens gebruik
 
 De vraagactiviteit staat u toe om externe gegevens toe te voegen en het in de bepaalde filterconfiguraties te gebruiken.
 
-Raadpleeg de sectie [Query](../../workflow/using/targeting-data.md#selecting-data) voor meer informatie.
+For more on this, refer to the [Query](../../workflow/using/targeting-data.md#selecting-data) section.
 
 ### Subsets maken {#creating-sub-sets}
 
 Met de splitsingsactiviteit kunt u subsets maken. U kunt externe gegevens gebruiken om de filtercriteria te bepalen aan gebruik.
 
-Raadpleeg de sectie [Splitsen](../../workflow/using/split.md) voor meer informatie hierover.
+For more on this, refer to the [Split](../../workflow/using/split.md) section.
 
 ### Externe database laden {#loading-external-database}
 
