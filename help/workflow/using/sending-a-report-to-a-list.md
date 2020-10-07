@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 41b8a8a8-efac-4e8e-8aea-d4fd06c46e74
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '623'
+ht-degree: 3%
 
 ---
 
@@ -38,11 +38,11 @@ Ga naar het **[!UICONTROL Profiles and targets]** universum, klik op de **[!UICO
 
 ![](assets/use_case_report_1.png)
 
-Raadpleeg deze [sectie](../../platform/using/creating-and-managing-lists.md)voor meer informatie over het maken van lijsten.
+For more on creating lists, refer to this [section](../../platform/using/creating-and-managing-lists.md).
 
 ## Stap 2: De leveringssjabloon maken {#step-2--creating-the-delivery-template}
 
-1. Ga naar het **[!UICONTROL Resources > Templates > Delivery templates]** knooppunt van de Adobe Campagne-verkenner en dupliceer de **[!UICONTROL Email delivery]** out-of-the-box sjabloon.
+1. Ga naar het **[!UICONTROL Resources > Templates > Delivery templates]** knooppunt van de Adobe Campaign-verkenner en dupliceer de **[!UICONTROL Email delivery]** out-of-the-box-sjabloon.
 
    ![](assets/use_case_report_2.png)
 
@@ -133,5 +133,6 @@ De volgende workflow is gemaakt voor dit gebruik. Het heeft drie activiteiten:
    * Selecteer voor de velden **[!UICONTROL Recipients]** en **[!UICONTROL Content]** velden **[!UICONTROL Specified in the delivery]**.
    * **[!UICONTROL Action to execute]**: selecteren **[!UICONTROL Prepare and start]**.
    * Niet controleren **[!UICONTROL Generate an outbound transition]** en **[!UICONTROL Process errors]**.
+
    ![](assets/use_case_report_11.png)
 
