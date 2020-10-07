@@ -1,7 +1,7 @@
 ---
-title: '"Hoofdlettergebruik: configureren van veldvervanging"'
-seo-title: '"Hoofdlettergebruik: configureren van veldvervanging"'
-description: '"Hoofdlettergebruik: configureren van veldvervanging"'
+title: '"Gebruiksscenario: de veldvervanging configureren"'
+seo-title: '"Gebruiksscenario: de veldvervanging configureren"'
+description: '"Gebruiksscenario: de veldvervanging configureren"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 7f083dc6-e6d7-4eea-ac66-87674716515c
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 discoiquuid: a104fcab-75e6-4d73-bc3d-88570de6df7f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 003bac4c5d89290b9d3653d6ddfab7284b68642d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 6%
 
 ---
 
 
-# Hoofdlettergebruik: configureren van veldvervanging{#use-case-configuring-the-field-substitution}
+# Gebruiksscenario: de veldvervanging configureren{#use-case-configuring-the-field-substitution}
 
 Met Willekeurige veldvervanging kunt u een waarde uit de lijst met ontvangers toewijzen aan de zaadadressen die leeg zijn wanneer de gebruiker deze waarde in een levering gebruikt (voorbeeld: naam, stad, enz.).
 
@@ -58,7 +58,7 @@ In dit voorbeeld, neemt het gegevensschema van zaadadressen een waarde die van h
 
 Deze opsomming laat de gebruiker het favoriete literaire genre van hun cliënten specificeren.
 
-Als u wilt dat deze wijziging van het gegevensschema kan worden weergegeven in het formulier **** Invoeradressen, moet u het bijwerken. Raadpleeg de sectie [Invoerformulier](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form) bijwerken.
+Als u wilt dat deze wijziging van het gegevensschema kan worden weergegeven in het formulier **** Invoeradressen, moet u het bijwerken. Raadpleeg het gedeelte [Invoerformulier](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form) bijwerken.
 
 ## Aanpassing configureren {#configuring-personalization}
 
@@ -90,7 +90,7 @@ Als u wilt dat deze wijziging van het gegevensschema kan worden weergegeven in h
 
    De velden worden **bij levering** willekeurig vervangen.
 
-1. Klik op de **[!UICONTROL Send]** knop.
+1. Klik op de knop **[!UICONTROL Send]**.
 1. Analyseer uw levering en **bevestig de levering**.
 
    De zaadadressen ontvangen de levering in hun inbox.
