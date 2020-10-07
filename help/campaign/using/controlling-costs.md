@@ -1,7 +1,7 @@
 ---
-title: Controlekosten
-seo-title: Controlekosten
-description: Controlekosten
+title: Kosten beheren
+seo-title: Kosten beheren
+description: Kosten beheren
 seo-description: null
 page-status-flag: never-activated
 uuid: 4209ebad-966f-44a6-a33c-bbb398c6f5c2
@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 discoiquuid: 892b93ed-cb0e-4af5-a1ae-eff0c8b703c6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2470'
 ht-degree: 0%
@@ -23,15 +20,15 @@ ht-degree: 0%
 ---
 
 
-# Controlekosten{#controlling-costs}
+# Kosten beheren{#controlling-costs}
 
 ## Over kostenbeheersing {#about-cost-control}
 
-Met Adobe Campaign kunt u geplande, geëngageerde en gefactureerde marketingkosten beheren en deze op categorie verdelen met behulp van de module Marketing Resource Management.
+Adobe Campaign laat u geplande, geëngageerde en gefactureerde marketing kosten controleren en om hen door categorie te verdelen gebruikend de module van het Beheer van het Middel van de Marketing.
 
 De kosten die voor de verschillende processen van een campagne zijn vastgelegd, komen ten laste van een vooraf door de marketingafdeling vastgestelde begroting. De bedragen kunnen in verschillende categorieën worden onderverdeeld om de informatie leesbaarder te maken en om een gedetailleerdere rapportage van de marketinginvesteringen mogelijk te maken.
 
-Het beheer en het bijhouden van budgetten wordt gecentraliseerd in een speciaal knooppunt van de Adobe Campaign-structuur. Hiermee kunt u de toegewezen, gereserveerde, vastgelegde en bestede bedragen vanuit dezelfde visie en voor alle begrotingen controleren.
+Het beheer en bijhouden van budgetten is gecentraliseerd in een speciaal knooppunt van de Adobe Campaign-structuur. Hiermee kunt u de toegewezen, gereserveerde, vastgelegde en bestede bedragen vanuit dezelfde visie en voor alle begrotingen controleren.
 
 ![](assets/s_ncs_user_budget_node_02.png)
 
@@ -109,7 +106,7 @@ Voor de campagne worden, wanneer de status van begrotingsschepping wordt vastges
 
 ![](assets/s_user_budget_in_op_a.png)
 
-Afhankelijk van het niveau van de vastlegging van de campagnebegroting wordt het bedrag op het **[!UICONTROL Planned]**- **[!UICONTROL Reserved]** of **[!UICONTROL Committed]** werkterrein geboekt.
+Afhankelijk van het niveau van de vastlegging van de campagnebegroting wordt het bedrag op het **[!UICONTROL Planned]**- **[!UICONTROL Reserved]** of **[!UICONTROL Committed]** werkterrein opgenomen.
 
 Het niveau van de verbintenis kan worden gewijzigd:
 
@@ -208,6 +205,7 @@ De kosten zijn in drie categorieën onderverdeeld:
    * Voor een levering die nog niet is geanalyseerd, zijn de berekende kosten de geraamde voorlopige kosten. Als de analyse al is uitgevoerd, zijn de berekende kosten de som van alle kosten die uit de dienst zijn berekend, kostenstructuren en het aantal beoogde ontvangers.
    * Voor een lopende taak maken de berekende kosten gebruik van de geraamde voorlopige kosten. Als de taak is voltooid, zijn de berekende kosten de som van alle kosten die zijn berekend op basis van de kostenstructuur van de dienstverlener en het aantal voltooide dagen.
    * Voor het marketingplan is, net als voor het programma, de berekende kosten de som van de voor de campagnes berekende kosten. Indien deze kosten niet worden gespecificeerd, worden voor de berekening van de kosten de geraamde voorlopige kosten gebruikt.
+
    >[!NOTE]
    >
    >Met de **[!UICONTROL Breakdown]** koppeling kunt u de details van de berekening en de laatste berekeningsdatum bekijken.
@@ -253,9 +251,11 @@ We gaan een campagne opzetten met:
    Voor taken maakt u de volgende twee kostencategorieën:
 
    * **[!UICONTROL Room reservation]** (Kleine kamer en Grote kamer), met een **vaste** kostenstructuur van 300 en 500 euro:
+
    ![](assets/s_user_cost_mgmt_sample_6.png)
 
    * **[!UICONTROL Creation]** (Sjabloon **voor** inhoud), met een **dagelijkse** kostenstructuur van 300 EUR:
+
    ![](assets/s_user_cost_mgmt_sample_7.png)
 
 #### Stap 3 - De kosten van de begroting in de campagne {#step-3---charging-the-budget-in-the-campaign}
@@ -350,7 +350,7 @@ Wanneer de begroting is goedgekeurd en de levering is voltooid, worden de kosten
 
 ## Orders en facturen {#orders-and-invoices}
 
-In de context van MRM, kunt u orden bij een dienstverlener bewaren en facturen uitgeven. De volledige levenscyclus van deze bestellingen en facturen kan worden beheerd via de Adobe Campagne-interface.
+In de context van MRM, kunt u orden bij een dienstverlener bewaren en facturen uitgeven. De volledige levenscyclus van deze bestellingen en facturen kan via de interface van Adobe Campaign worden beheerd.
 
 ### Maken van bestellingen {#order-creation}
 
@@ -378,4 +378,4 @@ De facturen van elke dienstverlener worden getoond op het **[!UICONTROL Invoices
 
 Op het **[!UICONTROL Details]** tabblad kunt u de inhoud van de factuur weergeven.
 
-Klik **[!UICONTROL Add]** om een nieuwe factuur te maken.
+Click **[!UICONTROL Add]** to create a new invoice.
