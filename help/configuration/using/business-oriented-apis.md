@@ -1,7 +1,7 @@
 ---
-title: Zakelijke API's
-seo-title: Zakelijke API's
-description: Zakelijke API's
+title: Bedrijfsgerichte API’s
+seo-title: Bedrijfsgerichte API’s
+description: Bedrijfsgerichte API’s
 seo-description: null
 page-status-flag: never-activated
 uuid: ddb6e5cf-dfe0-4dc9-ac5b-fab21827b874
@@ -11,19 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: e7b3ffca-c85f-498d-89b4-23fcff59de49
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Zakelijke API&#39;s{#business-oriented-apis}
+# Bedrijfsgerichte API’s{#business-oriented-apis}
 
 Bedrijfs-API is specifiek voor elk type object. Zij hebben een effect op:
 
@@ -93,7 +90,7 @@ De ontvanger en het abonnement bijwerken.
 
 ### Voorbeeld van SOAP-berichten {#example-of-soap-messages}
 
-* Query:
+* Queryactiviteit:
 
    ```
    <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -150,13 +147,13 @@ Als de ontvanger niet aanwezig in het gegevensbestand is of niet aan de betrokke
 
 >[!NOTE]
 >
->Als de de dienstnaam niet als parameter wordt gespecificeerd, is de ontvanger dan automatisch op bloklijst (@blockList=&quot;1&quot;).
+>Als de de dienstnaam niet als parameter wordt gespecificeerd, is de ontvanger dan automatisch op lijst van afgewezen personen (@lijst van afgewezen personen=&quot;1&quot;).
 
 Deze aanroep retourneert geen gegevens, behalve fouten.
 
 ### Voorbeeld van SOAP-berichten {#example-of-soap-messages-1}
 
-Query:
+Queryactiviteit:
 
 ```
 <?xml version='1.0' encoding='ISO-8859-1'?>
