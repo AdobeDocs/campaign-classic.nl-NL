@@ -1,7 +1,7 @@
 ---
-title: Werken met aggregaten
-seo-title: Werken met aggregaten
-description: Werken met aggregaten
+title: Werken met samenvoegingen
+seo-title: Werken met samenvoegingen
+description: Werken met samenvoegingen
 seo-description: null
 page-status-flag: never-activated
 uuid: 70556745-56b2-4f22-bbc5-7f8106fb0d4a
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 9ca649b4-2226-4cfe-bae1-4632c421975b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 2%
 
 ---
 
 
-# Werken met aggregaten{#using-aggregates}
+# Werken met samenvoegingen{#using-aggregates}
 
 In dit geval wordt beschreven hoe de laatste ontvangers die aan de database zijn toegevoegd, automatisch kunnen worden geïdentificeerd.
 
@@ -40,15 +40,15 @@ Als u het filter **Aanmaakdatum = max. (Aanmaakdatum)** op de ontvangers wilt ui
 1. Maak een query. Hier, is het doel om de laatste bekende aanmaakdatum uit alle ontvangers in het gegevensbestand te berekenen. De query bevat daarom geen filter.
 1. Selecteer **[!UICONTROL Add data]**.
 1. Selecteer **[!UICONTROL Data linked to the filtering dimension]** vervolgens in de geopende vensters **[!UICONTROL Filtering dimension data]**.
-1. Voeg in het **[!UICONTROL Data to add]** venster een kolom toe die de maximumwaarde voor het veld **Aanmaakdatum** in de tabel met ontvangers berekent. U kunt de expressieeditor gebruiken of **max (@created)** rechtstreeks in een veld in de **[!UICONTROL Expression]** kolom invoeren. Klik vervolgens op de **[!UICONTROL Finish]** knop.
+1. Voeg in het **[!UICONTROL Data to add]** venster een kolom toe die de maximumwaarde voor het veld **Aanmaakdatum** in de tabel met ontvangers berekent. U kunt de expressieeditor gebruiken of **max (@created)** rechtstreeks in een veld in de **[!UICONTROL Expression]** kolom invoeren. Then click the **[!UICONTROL Finish]** button.
 
    ![](assets/datamanagement_usecase_2.png)
 
-1. Klik **[!UICONTROL Edit additional data]** dan **[!UICONTROL Advanced parameters...]**. Schakel de **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]** optie in.
+1. Klik op **[!UICONTROL Edit additional data]** en vervolgens op **[!UICONTROL Advanced parameters...]**. Schakel de optie **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]** in.
 
    Met deze optie zorgt u ervoor dat niet alle ontvangers als resultaat worden weergegeven en dat gegevens die expliciet worden toegevoegd, niet worden bewaard. In dit geval verwijst het naar de laatste datum waarop een ontvanger is gemaakt.
 
-   Laat de **[!UICONTROL Remove duplicate rows (DISTINCT)]** optie ingeschakeld.
+   Laat de optie **[!UICONTROL Remove duplicate rows (DISTINCT)]** ingeschakeld.
 
 ## Stap 2: De ontvangers koppelen en het resultaat van de aggregatiefunctie {#step-2--linking-the-recipients-and-the-aggregation-function-result}
 
@@ -60,6 +60,7 @@ Om de vraag te verbinden die ontvangers behandelt aan de vraag die de berekening
    * Selecteer het tijdelijke schema voor het aggregaat. De gegevens voor dit schema worden toegevoegd aan de leden van de hoofdset.
    * Selecteer deze optie **[!UICONTROL Use a simple join]** om het geaggregeerde resultaat te koppelen aan elke ontvanger van de hoofdset.
    * Geef ten slotte op dat de koppeling een **[!UICONTROL Type 11 simple link]** koppeling is.
+
    ![](assets/datamanagement_usecase_3.png)
 
 Het aggregatieresultaat is daarom gekoppeld aan elke ontvanger.
@@ -74,12 +75,13 @@ Zodra de verbinding is gevestigd, maken het gezamenlijke resultaat en de ontvang
 
    De datumtekstvelden in de database worden over het algemeen tot op de milliseconde opgeslagen. Daarom moet u deze voor de hele dag verlengen om te voorkomen dat ontvangers worden opgehaald die slechts die milliseconde hebben gemaakt.
 
-   Hiervoor gebruikt u de functie **ToDate** , beschikbaar in de expressieeditor, die datums en uren omzet in eenvoudige datums.
+   Hiervoor gebruikt u de functie **ToDate** , beschikbaar in de expressie-editor, die datums en uren omzet in eenvoudige datums.
 
    De voor de criteria te gebruiken uitdrukkingen zijn derhalve:
 
    * **[!UICONTROL Expression]**: `toDate([target/@created])`.
    * **[!UICONTROL Value]**: `toDate([datemax/expr####])`, waarbij expr#### betrekking heeft op het aggregaat dat is opgegeven in de query voor de aggregatiefunctie.
+
    ![](assets/datamanagement_usecase_4.png)
 
 Het resultaat van de splitsingsactiviteit heeft dus betrekking op de ontvangers die op dezelfde dag zijn gemaakt als de laatst bekende aanmaakdatum.
