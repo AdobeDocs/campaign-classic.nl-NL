@@ -1,7 +1,7 @@
 ---
-title: Aanvullende gegevens
-seo-title: Aanvullende gegevens
-description: Aanvullende gegevens
+title: Aanvullende data
+seo-title: Aanvullende data
+description: Aanvullende data
 seo-description: null
 page-status-flag: never-activated
 uuid: 81a889ce-b02d-4593-95fa-1de5601182e0
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 29339aad-fd8e-4dae-8f6e-2db87221ad04
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 1%
 
 ---
 
 
-# Aanvullende gegevens{#additional-data}
+# Aanvullende data{#additional-data}
 
 Tijdens een oproep aan de interactiemotor kunt u contextafhankelijke aanvullende informatie overbrengen. Deze gegevens kunnen afkomstig zijn van de doelgegevens die zijn opgeslagen in de werkentabel van een workflow (uitgaand kanaal) of de vraaggegevens die door de website worden verzonden tijdens de aanroep (binnenkomend kanaal). U kunt deze aanvullende gegevens gebruiken in de toelatingsregels, in het aanbieden van personalisatie, en u kunt het ook opslaan in een propositietabel.
 
@@ -123,7 +123,7 @@ Tijdens een vraag aan de motor, kunt u extra gegevens in de propositietabel opsl
 
 Ga in de aanbiedingsruimte naar het **[!UICONTROL Storage]** tabblad en klik op de **[!UICONTROL Add]** knop.
 
-Selecteer in de **[!UICONTROL Storage path]** kolom het opslagveld in de tabel met profielen. Selecteer in de **[!UICONTROL Expression]** kolom het aanvullende veld in het **[!UICONTROL Interaction]** knooppunt.
+Selecteer in de **[!UICONTROL Storage path]** kolom het opslagveld in de tabel met voorstellen. Selecteer in de **[!UICONTROL Expression]** kolom het aanvullende veld in het **[!UICONTROL Interaction]** knooppunt.
 
 U kunt vraaggegevens terugwinnen wanneer het voorstel wordt geproduceerd of wanneer het wordt goedgekeurd (wanneer de persoon op de aanbieding klikt).
 
