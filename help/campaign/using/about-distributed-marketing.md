@@ -1,7 +1,7 @@
 ---
-title: Informatie over gedistribueerde marketing
-seo-title: Informatie over gedistribueerde marketing
-description: Informatie over gedistribueerde marketing
+title: Gedistribueerde marketing
+seo-title: Gedistribueerde marketing
+description: Gedistribueerde marketing
 seo-description: null
 page-status-flag: never-activated
 uuid: 7f7ece67-c644-4072-a06c-c5b49f3acb5d
@@ -11,28 +11,28 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: 6d694f5c-1d1f-4686-b3bf-8697d919a0c8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1132'
+ht-degree: 1%
 
 ---
 
 
-# Informatie over gedistribueerde marketing{#about-distributed-marketing}
+# Gedistribueerde marketing{#about-distributed-marketing}
 
 ## Inleiding {#introduction}
 
-Adobe Campaign biedt een **gedistribueerde marketingtoepassing** voor het uitvoeren van samenwerkingscampagnes tussen centrale entiteiten (hoofdkantoor, marketingafdelingen, enz.) en lokale entiteiten (verkooppunten, regionale agentschappen, enz.). Deze samenwerking is gebaseerd op een gedeelde werkruimte die bekend staat als de **[!UICONTROL list of campaign packages]**, waar centraal gecreëerde campagnemalplaatjes en instanties aan lokale entiteiten worden aangeboden.
+Adobe Campaign biedt een aanvraag voor **gedistribueerde marketing** voor het uitvoeren van samenwerkingscampagnes tussen centrale entiteiten (hoofdkantoor, marketingafdelingen, enz.) en lokale entiteiten (verkooppunten, regionale agentschappen, enz.). Deze samenwerking is gebaseerd op een gedeelde werkruimte die bekend staat als de **[!UICONTROL list of campaign packages]**, waar centraal gecreëerde campagnemalplaatjes en instanties aan lokale entiteiten worden aangeboden.
 
 De centrale entiteit verstrekt campagnes die lokale entiteiten kunnen gebruiken. Campagnes worden geconcretiseerd door pakketten die lokale of samenwerkingscampagnes vertegenwoordigen. Om een campagne te kunnen voeren, moet de lokale entiteit deze opdracht geven en moet de bestelling worden goedgekeurd.
 
 >[!CAUTION]
 >
->De module Distributed Marketing is een optie **Campagne** . Controleer uw licentieovereenkomst.
+>De module Distributed Marketing is een optie **Campagne** . Controleer hiervoor uw licentieovereenkomst.
 
-##  Terminologie {#terminology}
+## Terminologie {#terminology}
 
 ### Centrale entiteiten {#central-entities}
 
@@ -53,7 +53,7 @@ Met Distributed Marketing kunnen lokale entiteiten meer autonomie hebben en tege
 
 ### Lokalisatie {#localization}
 
-Lokalisatie is de capaciteit van een lokale entiteit om het doel en de inhoud van een campagne te wijzigen. Het mogelijke niveau van localisatie hangt van het type van campagne en zijn implementatie af.
+Lokalisatie is het vermogen van een lokale entiteit om het doel en de inhoud van een campagne te wijzigen. Het mogelijke niveau van localisatie hangt van het type van campagne en zijn implementatie af.
 
 ### Lijst met campagnepakketten {#list-of-campaign-packages}
 
@@ -75,7 +75,7 @@ Zie [Een lokale campagne](../../campaign/using/creating-a-local-campaign.md)make
 
 Een samenwerkingscampagne is een campagne waarvan het **uitvoeringsplan door de centrale entiteit wordt bepaald** , die de lokale entiteit kan gebruiken. De inhoud blijft voor elke lokale entiteit hetzelfde, maar de kosten worden gedeeld. Om deel te nemen, onderschrijven lokale entiteiten de samenwerkingscampagne.
 
-* **[!UICONTROL Collaborative campaign (by form)]**: aanbevolen voor campagnes waarbij maximaal 300 lokale entiteiten betrokken zijn. De lokale entiteit kan vooraf bepaalde parameters voor het richten van zich en inhoudsverpersoonlijking in een vorm van het Web ingaan. Het formulier kan een Adobe Campagne-formulier of een extern formulier (extranetclient) zijn. Een functionele beheerder kan het formulier definiëren en configureren op basis van een formuliersjabloon dat door de integrator is gedefinieerd. Om tot de campagne opdracht te geven, heeft de lokale entiteit enkel de toegang van het Web nodig.
+* **[!UICONTROL Collaborative campaign (by form)]**: aanbevolen voor campagnes waarbij maximaal 300 lokale entiteiten betrokken zijn. De lokale entiteit kan vooraf bepaalde parameters voor het richten van zich en inhoudsverpersoonlijking in een vorm van het Web ingaan. Het formulier kan een Adobe Campaign-formulier of een extern formulier (extranetclient) zijn. Een functionele beheerder kan het formulier definiëren en configureren op basis van een formuliersjabloon dat door de integrator is gedefinieerd. Om tot de campagne opdracht te geven, heeft de lokale entiteit enkel de toegang van het Web nodig.
 * **[!UICONTROL Collaborative campaign (by campaign)]**: aanbevolen voor campagnes gericht op tientallen lokale entiteiten. Dit type campagne leidt tot kindcampagnes voor elke lokale entiteit. Zodra de campagne door de centrale entiteit **[!UICONTROL collaborative campaign (by campaign)]** is goedgekeurd, wordt de campagne ter beschikking gesteld van de lokale entiteit, die het kan wijzigen. Uitvoering wordt automatisch gesynchroniseerd tussen bovenliggende en onderliggende campagnes. De lokale entiteit moet toegang hebben tot een instantie om een campagne te bestellen en er deel van te nemen.
 * **[!UICONTROL Collaborative campaign (by target approval)]**: aanbevolen voor campagnes die gericht zijn op enkele duizenden lokale entiteiten. De lokale entiteit ontvangt een lijst van contacten die door de centrale entiteit vooraf is bepaald. De lokale entiteit besluit al dan niet om bepaalde contacten te houden die op de campagneinhoud, via een vorm van het Web worden gebaseerd. Lokale entiteiten worden afgeleid van de lijst met geselecteerde contactpersonen. Om aan de campagne deel te nemen, heeft de lokale entiteit enkel de toegang van het Web nodig.
 * **[!UICONTROL Collaborative campaign (simple)]**: deze modus zorgt voor compatibiliteit met de specifieke uitvoeringsprocessen van eerdere versies.
@@ -149,7 +149,7 @@ De procedure voor de tenuitvoerlegging hangt af van het type campagnemakket dat 
    * uitvoeringsschema (contactdatum en uitwinningsdatum), alleen **voor lokale marktdeelnemers**;
    * uitbreiding van het bestelschema met alle noodzakelijke extra gebieden.
 
-1. Maak een webformulier (Adobe of extranet) waarmee u lokalisatieparameters kunt weergeven, het doel en het budget kunt evalueren en een voorvertoning van de inhoud kunt weergeven en de volgorde kunt goedkeuren.
+1. Creeer een vorm van het Web (Adobe of Extranet) die u toestaat om localisatieparameters te tonen, het doel en het budget te evalueren, evenals voorproef de inhoud en de orde goed te keuren.
 
    Voor **samenwerkingscampagnes (door doelgoedkeuring)**, creeer de lijst waar de goedkeuringen voor elke lokale entiteit zullen worden bewaard.
 
