@@ -1,7 +1,7 @@
 ---
-title: Unie
-seo-title: Unie
-description: Unie
+title: Samenvoegen
+seo-title: Samenvoegen
+description: Samenvoegen
 seo-description: null
 page-status-flag: never-activated
 uuid: 987e106e-c414-4db4-a93e-96e43dc04370
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 573021ad-1efb-4156-af6d-417737ce745a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 2%
 
 ---
 
 
-# Unie{#union}
+# Samenvoegen{#union}
 
 Een vereniging groepeert het resultaat van verscheidene binnenkomende activiteiten in één enkel doel. Het doel wordt gemaakt met alle ontvangen resultaten: alle eerdere activiteiten moeten derhalve worden voltooid voordat de unie kan worden uitgevoerd .
 
@@ -38,7 +38,7 @@ In het volgende voorbeeld zijn de resultaten van twee query&#39;s gecombineerd o
 1. U kunt een label invoeren.
 1. Selecteer de **[!UICONTROL Keys only]** afstemmingsmethode omdat in dit voorbeeld de populatie die het resultaat is van query&#39;s consistente gegevens bevat.
 1. Als u aanvullende gegevens voor de query&#39;s hebt toegevoegd, kunt u alleen de gedeelde gegevens behouden.
-1. Als u de grootte van de uiteindelijke populatie wilt beperken, schakelt u het **[!UICONTROL Limit size of generated population]** selectievakje in.
+1. If you wish to limit the size of the final population, check the **[!UICONTROL Limit size of generated population]** box.
 
    Specificeer dit definitieve aantal door het maximumaantal ontvangers in te gaan en door de vraag te selecteren waarvan de bevolking prioriteit zal nemen.
 
