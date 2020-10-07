@@ -1,7 +1,7 @@
 ---
-title: '"Hoofdlettergebruik: een formulier voor verfijnen als vriend maken"'
-seo-title: '"Hoofdlettergebruik: een formulier voor verfijnen als vriend maken"'
-description: '"Hoofdlettergebruik: een formulier voor verfijnen als vriend maken"'
+title: '"Gebruiksscenario: een formulier voor de verwijzing van een vriend maken"'
+seo-title: '"Gebruiksscenario: een formulier voor de verwijzing van een vriend maken"'
+description: '"Gebruiksscenario: een formulier voor de verwijzing van een vriend maken"'
 seo-description: null
 page-status-flag: never-activated
 uuid: ad8b9076-c551-420d-bb23-0b3c645ee943
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: bbb1154f-2818-489c-9860-0e860596cbf7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '629'
+ht-degree: 5%
 
 ---
 
 
-# Hoofdlettergebruik: een formulier voor een vriend maken{#use-case-creating-a-refer-a-friend-form}
+# Gebruiksscenario: een formulier voor de verwijzing van een vriend maken{#use-case-creating-a-refer-a-friend-form}
 
 In dit voorbeeld willen we een wedstrijd aanbieden aan de ontvangers in de database. Het webformulier bevat een sectie waarin u antwoorden kunt invoeren en een andere sectie waarin u een vriend kunt verwijzen door zijn e-mailadres in te voeren.
 
