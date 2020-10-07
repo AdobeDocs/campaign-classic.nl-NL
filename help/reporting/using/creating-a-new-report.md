@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 22c92ddf-fbea-49d3-afd4-1ba427be399d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '929'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 Voer de volgende stappen uit om een rapport te maken:
 
-1. Open Adobe Campagne Explorer en selecteer de **[!UICONTROL Administration > Configuration]** map in het **[!UICONTROL Reports]** knooppunt.
+1. Open de Verkenner van Adobe Campaign en van de **[!UICONTROL Administration > Configuration]** knoop, dan selecteer de **[!UICONTROL Reports]** omslag.
 1. Klik op de **[!UICONTROL New]** knop boven de lijst met rapporten.
 1. Selecteer **[!UICONTROL Create a new report from a template]** en klik op **[!UICONTROL Next]**.
 
@@ -35,6 +35,7 @@ Voer de volgende stappen uit om een rapport te maken:
    * Met **[!UICONTROL Extended report]** deze optie kunt u een rapport maken dat is geconfigureerd met een grafiek.
    * Met het **[!UICONTROL Qualitative distribution]** rapport kunt u statistieken maken op basis van alle typen gegevens (bedrijfsnaam, e-maildomein, enzovoort).
    * Met het **[!UICONTROL Quantitative distribution]** rapport kunt u statistieken maken over gegevens die kunnen worden gemeten of geteld (factuurbedrag, leeftijd van de ontvanger, enz.).
+
    Voor meer informatie over deze rapportmalplaatjes, verwijs naar [deze sectie](../../reporting/using/about-descriptive-analysis.md).
 
 1. Voer de rapportnaam en de beschrijving ervan in de desbetreffende velden in. Geef aan **[!UICONTROL schema]** op welke manier het rapport wordt toegepast.
@@ -67,23 +68,23 @@ Om een rapport te bouwen, afhankelijk van zijn aard en context, moet u de nuttig
 
    Zie Gegevens [verzamelen voor analyse](../../reporting/using/collecting-data-to-analyze.md)voor meer informatie.
 
-   Deze gegevens zullen (of niet) in het rapport afhankelijk van paginaconfiguratie worden getoond.
+   Deze gegevens zullen (of niet) in het rapport afhankelijk van paginasamenstelling worden getoond.
 
 1. Plaats een of meer &#39;Pagina&#39;-activiteiten om de grafische weergave van de verzamelde gegevens te definiëren. U kunt tabellen, grafieken, invoervelden invoegen en de weergave van een of meer pagina&#39;s of elementen van de pagina bepalen. De weergegeven inhoud kan volledig worden geconfigureerd.
 
-   Zie [Statische elementen](#static-elements)voor meer informatie.
+   For more on this, refer to [Static elements](#static-elements).
 
 1. Gebruik een &#39;Test&#39;-activiteit om de voorwaarden te definiëren voor het weergeven of openen van gegevens.
 
-   Raadpleeg de weergave [van de pagina](../../reporting/using/defining-a-conditional-content.md#conditioning-page-display)Conditioning voor meer informatie.
+   For more on this, refer to [Conditioning page display](../../reporting/using/defining-a-conditional-content.md#conditioning-page-display).
 
 1. Voeg, indien nodig, gepersonaliseerde scripts toe via de activiteit &#39;Script&#39;, bijvoorbeeld om de naam van een rapport te berekenen, om de weergave van het resultaat binnen een specifieke context te filteren, enz.
 
-   Raadpleeg [Scriptactiviteit](../../reporting/using/advanced-functionalities.md#script-activity)voor meer informatie hierover.
+   For more on this, refer to [Script activity](../../reporting/using/advanced-functionalities.md#script-activity).
 
 1. Tot slot kunt u voor het gemakkelijker lezen van complexe rapporten één of meerdere &quot;sprong&quot;type activiteiten opnemen. Dit laat u van één activiteit aan een andere gaan zonder de overgang op het rapport te concretiseren. U kunt de functie Springen ook gebruiken om een ander rapport weer te geven.
 
-   Zie [Snelactiviteit](../../reporting/using/advanced-functionalities.md#jump-activity)voor meer informatie hierover.
+   For more on this, refer to [Jump activity](../../reporting/using/advanced-functionalities.md#jump-activity).
 
 U kunt niet meerdere vertakkingen tegelijk uitvoeren. Dit betekent dat een dergelijk rapport niet werkt:
 
@@ -101,7 +102,7 @@ Om een activiteit te vormen, klik zijn pictogram tweemaal.
 
 De weergegeven inhoud wordt gedefinieerd bij activiteiten van het type **Pagina** .
 
-Een rapport kan een of meer pagina&#39;s bevatten. Pagina&#39;s worden gemaakt via een speciale editor waarmee u in een boomstructuur invoervelden, selectievelden, statische elementen, grafieken of tabellen kunt invoegen. Met behulp van containers kunt u de lay-out definiëren. Raadpleeg de lay-out [Element voor meer informatie hierover](../../reporting/using/element-layout.md).
+Een rapport kan een of meer pagina&#39;s bevatten. Pagina&#39;s worden gemaakt via een speciale editor waarmee u in een boomstructuur invoervelden, selectievelden, statische elementen, grafieken of tabellen kunt invoegen. Met behulp van containers kunt u de lay-out definiëren. For more on this, refer to [Element layout](../../reporting/using/element-layout.md).
 
 Als u een component aan de pagina wilt toevoegen, gebruikt u de pictogrammen in de linkerbovensectie van de werkbalk.
 
