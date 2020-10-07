@@ -1,7 +1,7 @@
 ---
-title: Een webtoepassing bijhouden
-seo-title: Een webtoepassing bijhouden
-description: Een webtoepassing bijhouden
+title: Een webapplicatie opvolgen
+seo-title: Een webapplicatie opvolgen
+description: Een webapplicatie opvolgen
 seo-description: null
 page-status-flag: never-activated
 uuid: c087b40c-fd14-440f-8f38-33f5f68120a9
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: 8e52f927-dadd-44c8-a51d-f717bc083eef
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 3%
 
 ---
 
 
-# Een webtoepassing bijhouden{#tracking-a-web-application}
+# Een webapplicatie opvolgen{#tracking-a-web-application}
 
 Met Adobe Campaign kunt u bezoeken op webtoepassingspagina&#39;s bijhouden en meten door trackingtags in te voegen. Deze functionaliteit kan voor alle toepassingstypen van het Web (vormen, online onderzoeken, Web-pagina&#39;s worden gebruikt die gebruikend DCE worden gecreeerd, etc.).
 
@@ -42,6 +42,7 @@ De belangrijkste verbeteringen in deze versie zijn:
    * **Conversiesnelheid**: aantal personen dat alle stappen van een navigatiepad heeft weergegeven.
    * **Stuitsnelheid**: aantal personen dat alleen de eerste stap heeft getoond
    * **Conversietunnel**: verliespercentage tussen elke stap.
+
    Bovendien wordt de populatie volgens de bron in een **sectorkaart** weergegeven.
 
 ## Identificerend de verkeersbron {#identifying-the-traffic-source}
@@ -53,7 +54,7 @@ Twee verschillende wijzen kunnen worden gebruikt om te identificeren waar de bez
 
    ![](assets/trackers_6.png)
 
-Om de verkeersbron in een toepassing van het Web te identificeren, zoekt de Campagne van Adobe achtereenvolgens de volgende informatie:
+Om de verkeersbron in een toepassing van het Web te identificeren, zoekt Adobe Campaign achtereenvolgens de volgende informatie:
 
 1. de bron-id, indien aanwezig (nlId cookie);
 1. de id van de externe levering die is gedefinieerd in de webtoepassingseigenschappen, indien deze bestaan;
@@ -63,7 +64,7 @@ Om de verkeersbron in een toepassing van het Web te identificeren, zoekt de Camp
 >
 >Herinner dat het anonieme volgen slechts mogelijk is als de overeenkomstige optie in de plaatsingstovenaar is geactiveerd.
 >
->Raadpleeg de [installatiehandleiding](../../installation/using/deploying-an-instance.md)voor meer informatie.
+>For more on this, refer to the [Installation guide](../../installation/using/deploying-an-instance.md).
 
 ## Webtoepassingen die zijn ontworpen met Digital Content Editor (DCE) {#web-applications-designed-with-digital-content-editor--dce-}
 
