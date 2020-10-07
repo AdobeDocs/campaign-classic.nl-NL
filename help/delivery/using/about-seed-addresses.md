@@ -1,7 +1,7 @@
 ---
-title: Informatie over zaadadressen
-seo-title: Informatie over zaadadressen
-description: Informatie over zaadadressen
+title: Seed-adressen
+seo-title: Seed-adressen
+description: Seed-adressen
 seo-description: null
 page-status-flag: never-activated
 uuid: 80ab5abc-3ae0-484d-88c0-be039aac360d
@@ -11,21 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 discoiquuid: b49acfd0-b601-4694-88e3-cc0a169cb866
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '379'
-ht-degree: 2%
+ht-degree: 9%
 
 ---
 
 
-# Informatie over zaadadressen{#about-seed-addresses}
+# Seed-adressen{#about-seed-addresses}
 
-De zaadadressen worden gebruikt aan doelontvangers die niet de bepaalde doelcriteria aanpassen. Op deze manier kunnen ontvangers die buiten het bereik van de levering vallen, de levering ontvangen, net als elke andere doelontvanger.
+Seed-adressen worden gebruikt om ontvangers die niet aan de gedefinieerde doelcriteria voldoen, doelgericht te benaderen. Op deze manier kunnen ontvangers die buiten het bereik van de levering vallen, de levering ontvangen, net als elke andere doelontvanger.
 
 Een van de belangrijkste redenen om ze te gebruiken is de bescherming **van** je mailinglijst. Door zaadadressen in te voegen in uw mailinglijst kunt u zien of het door een derde wordt gebruikt, aangezien de zaadadressen het bevat de leveringen ontvangen die naar uw postingslijst worden verzonden.
 
