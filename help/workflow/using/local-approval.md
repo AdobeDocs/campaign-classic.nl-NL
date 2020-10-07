@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: a223641e-93e1-42ef-bb6b-8e1a0f8f6a65
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '644'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ Wanneer geïntegreerd in een het richten werkschema, laat de **[!UICONTROL Local
 
 >[!CAUTION]
 >
->Om deze activiteit te gebruiken, moet u de Verdeelde module van de Marketing hebben gekocht, die een optie van de Campagne is. Controleer uw licentieovereenkomst.
+>Om deze activiteit te gebruiken, moet u de Verdeelde module van de Marketing hebben gekocht, die een optie van de Campagne is. Controleer hiervoor uw licentieovereenkomst.
 
 Voor een voorbeeld van de **[!UICONTROL Local approval]** activiteit met een distributiemalplaatje, verwijs naar het [Gebruiken van de lokale goedkeuringsactiviteit](../../workflow/using/using-the-local-approval-activity.md).
 
@@ -40,7 +40,7 @@ Voer eerst een label in voor de activiteit en het **[!UICONTROL Action to execut
 
    ![](assets/local_validation_intro_2.png)
 
-* **Incrementele query**: laat u een vraag uitvoeren en zijn uitvoering plannen. Raadpleeg de sectie [Incrementele query](../../workflow/using/incremental-query.md) .
+* **Incrementele query**: laat u een vraag uitvoeren en zijn uitvoering plannen. Refer to the [Incremental query](../../workflow/using/incremental-query.md) section.
 
    ![](assets/local_validation_intro_3.png)
 
@@ -60,7 +60,7 @@ De velden die moeten worden ingevuld in het geval van een kennisgeving voor goed
 
 * **[!UICONTROL Approval management]**
 
-   * Selecteer de leveringssjabloon en het onderwerp dat voor het e-mailbericht wordt gebruikt. Er is een standaardsjabloon beschikbaar: **[!UICONTROL Local approval notification]**. U kunt ook een beschrijving toevoegen die boven de lijsten met ontvangers wordt weergegeven in de goedkeurings- en feedbackberichten.
+   * Selecteer de leveringssjabloon en het onderwerp dat voor het e-mailbericht wordt gebruikt. A default template is available: **[!UICONTROL Local approval notification]**. U kunt ook een beschrijving toevoegen die boven de lijsten met ontvangers wordt weergegeven in de goedkeurings- en feedbackberichten.
    * Geef aan **[!UICONTROL Approval type]** welke termijn overeenkomt met de goedkeuringstermijn (datum of uiterste datum vanaf het begin van de goedkeuring). Op deze datum wordt de workflow opnieuw gestart en wordt bij het bepalen van de doelen geen rekening gehouden met de ontvangers die niet zijn goedgekeurd. Zodra de berichten zijn verzonden, wordt de activiteit een rij gevormd zodat de lokale supervisors hun contacten kunnen goedkeuren.
 
       >[!NOTE]
@@ -98,7 +98,7 @@ Een exploitant kan een levering op één van twee manieren goedkeuren: het gebru
 
    Met het e-mailbericht dat naar beheerders van de groep Beheerders wordt verzonden, kunt u het leveringsdoel goedkeuren. Het bericht gebruikt de gedefinieerde tekst en de JavaScript-expressie wordt vervangen door de berekende waarde (in dit geval &#39;574&#39;)
 
-   Als u de levering wilt goedkeuren, klikt u op de desbetreffende koppeling en meldt u zich aan bij de Adobe Campaign-console.
+   Klik op de desbetreffende koppeling en meld u aan bij de Adobe Campaign-console om de levering goed te keuren.
 
    ![](assets/new-workflow-valid-webaccess.png)
 
