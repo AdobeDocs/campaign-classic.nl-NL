@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: ff7e6f72-7605-41ee-b25a-1e4618e674d7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '504'
+ht-degree: 1%
 
 ---
 
@@ -24,14 +24,14 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 In twee gevallen is het noodzakelijk om doeltoewijzingen te maken:
 
-* als u een andere ontvankelijke lijst dan gebruikt die door de Campagne van Adobe wordt verstrekt,
+* als u een andere ontvangertabel gebruikt dan die van Adobe Campaign,
 * als u een het filtreren afmeting vormt die van de standaard gericht afmeting op het scherm van de doelafbeelding verschillend is.
 
 De tovenaar van de verwezenlijking van de doelafbeelding zal u helpen alle schema&#39;s tot stand brengen die worden vereist om uw douanetabel te gebruiken.
 
 ## Schema&#39;s maken en configureren die zijn gekoppeld aan de aangepaste tabel {#creating-and-configuring-schemas-linked-to-the-custom-table}
 
-Voordat u een doeltoewijzing maakt, zijn verschillende configuraties nodig om Adobe Campagne te laten werken met een nieuw gegevensschema voor ontvangers.
+Alvorens u een doelafbeelding creeert, zijn verscheidene configuraties noodzakelijk opdat Adobe Campaign met een nieuw ontvankelijk gegevensschema werkt.
 
 Hiervoor voert u de volgende stappen uit:
 
@@ -97,7 +97,7 @@ Hiervoor voert u de volgende stappen uit:
 
    ![](assets/mapping_diffusion_wizard_2.png)
 
-1. In het volgende venster van de **Opslag** , ga het **Achtervoegsel van het gebied van uitbreidingsschema** in om de nieuwe schema&#39;s van de uit-van-de-doosschema&#39;s te onderscheiden die door de Campagne van Adobe worden verstrekt.
+1. In het volgende venster van de **Opslag** , ga het **Achtervoegsel van het gebied van uitbreidingsschema** in om de nieuwe schema&#39;s van de uit-van-de-doosschema&#39;s te onderscheiden die door Adobe Campaign worden verstrekt.
 
    Klik **[!UICONTROL Define new additional fields]** om de dimensie te selecteren u in uw levering wilt richten.
 
@@ -107,9 +107,9 @@ Hiervoor voert u de volgende stappen uit:
 
    >[!IMPORTANT]
    >
-   >De Campagne van Adobe steunt veelvoudige ontvankelijke schema&#39;s, die als richtingsschema&#39;s worden bekend, verbonden aan de zelfde brede en/of trackinglogschema&#39;s. Dit kan anders leiden tot anomalieën in de afstemming van gegevens achteraf. Raadpleeg de pagina [Aanbeveling en beperkingen](../../configuration/using/about-custom-recipient-table.md) voor meer informatie hierover.
+   >Adobe Campaign steunt geen veelvoudige ontvankelijke schema&#39;s, weet als het richten van schema&#39;s, verbonden aan de zelfde brede en/of trackinglogschema&#39;s. Dit kan anders leiden tot anomalieën in de afstemming van gegevens achteraf. Raadpleeg de pagina [Aanbeveling en beperkingen](../../configuration/using/about-custom-recipient-table.md) voor meer informatie hierover.
 
-1. Selecteer in het venster **Extensies** de optionele schema&#39;s die u wilt genereren (de lijst met beschikbare schema&#39;s is afhankelijk van de modules die op het Adobe Campagneplatform zijn geïnstalleerd).
+1. Selecteer in het venster **Extensies** de optionele schema&#39;s die u wilt genereren (de lijst met beschikbare schema&#39;s is afhankelijk van de modules die op het Adobe Campaign-platform zijn geïnstalleerd).
 
    ![](assets/mapping_diffusion_wizard_4.png)
 
@@ -128,6 +128,6 @@ Er zijn twee manieren om het nieuwe schema als doel van een levering te gebruike
 
 ![](assets/mapping_selection_ciblage.png)
 
-**Verwante onderwerpen**
+**Verwant onderwerp**
 
 * [Snel reageren op verzoeken van klanten om toegang te krijgen tot hun gegevens](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Quicklyrespondtocustomerrequeststoaccesstheirdata)
