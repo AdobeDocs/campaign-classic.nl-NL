@@ -1,7 +1,7 @@
 ---
-title: Aflevering
-seo-title: Aflevering
-description: Aflevering
+title: Levering
+seo-title: Levering
+description: Levering
 seo-description: null
 page-status-flag: never-activated
 uuid: 3a74fd0b-8598-46a0-bf13-cf35db0987d7
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 9fd7122e-22c7-4f9a-a2a4-5de3daaa3c2e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 366d2149933fa68dfec2a732d1014e1875709cff
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '912'
+ht-degree: 0%
 
 ---
 
 
-# Aflevering{#delivery}
+# Levering{#delivery}
 
 Met een activiteit van het type **levering** kunt u een leveringsactie maken. Het kan worden geconstrueerd met behulp van inputelementen.
 
@@ -28,7 +28,7 @@ Om het te vormen, geef de activiteit uit en ga de leveringsopties in.
 
 ![](assets/edit_diffusion.png)
 
-1. **Aflevering**
+1. **Levering**
 
    U kunt:
 
@@ -87,7 +87,8 @@ Om het te vormen, geef de activiteit uit en ga de leveringsopties in.
    * **[!UICONTROL Prepare]**: met deze optie kunt u het volledige analyseproces uitvoeren ( doelberekening en inhoudsvoorbereiding ) . De levering wordt niet verzonden. Deze actie is het equivalent van het selecteren van de **[!UICONTROL Deliver as soon as possible]** optie en het klikken **[!UICONTROL Analyze]** wanneer het verzenden van een levering naar het belangrijkste doel met **Levering**.
    * **[!UICONTROL Send a proof]**: met deze optie kunt u een bewijs van levering verzenden. Deze actie is het equivalent van klikken op de **[!UICONTROL Send a proof]** knop op de werkbalk van een levering met **levering**
    * **[!UICONTROL Prepare and start]**: met deze optie wordt het volledige analyseproces gestart ( doelberekening en inhoudsvoorbereiding ) en wordt de levering verzonden . Deze actie is het equivalent van klikken **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]** en **[!UICONTROL Confirm delivery]** optie wanneer het verzenden van een levering naar het belangrijkste doel met **Levering**.
-   Met de **[!UICONTROL Act on a delivery]** activiteit die u verder in de workflow gebruikt, kunt u alle resterende stappen starten die vereist zijn voor het starten van de levering (doelberekening, voorbereiding van inhoud, levering). Raadpleeg [Leveringscontrole](../../workflow/using/delivery-control.md)voor meer informatie hierover.
+
+   Met de **[!UICONTROL Act on a delivery]** activiteit die u verder in de workflow gebruikt, kunt u alle resterende stappen starten die vereist zijn voor het starten van de levering (doelberekening, voorbereiding van inhoud, levering). For more on this, refer to [Delivery control](../../workflow/using/delivery-control.md).
 
    De volgende opties zijn ook beschikbaar:
 
@@ -115,8 +116,8 @@ Maak een nieuwe workflow en voeg activiteiten toe zoals in de onderstaande afbee
 Open de activiteit **Levering** en definieer de eigenschappen als volgt:
 
 * Selecteer in de **[!UICONTROL Delivery]** sectie een leveringssjabloon **[!UICONTROL New, created from a template]** en selecteer deze.
-* Selecteer in de **[!UICONTROL Recipients]** sectie **[!UICONTROL Specified in the delivery]**.
-* Houd de **[!UICONTROL Action to execute]** optie in de **[!UICONTROL Prepare]** sectie.
+* In the **[!UICONTROL Recipients]** section, select **[!UICONTROL Specified in the delivery]**.
+* In the **[!UICONTROL Action to execute]** section, keep the **[!UICONTROL Prepare]** option.
 
 ![](assets/new-workflow-param-delivery.png)
 
@@ -131,7 +132,7 @@ Open de activiteit **Goedkeuring** en definieer de eigenschappen als volgt:
    Do you wish to approve delivery (<%= vars.recCount %> recipient(s))?
    ```
 
-   Dit is een bericht dat een expressie bevat die in JavaScript is geschreven: **[!UICONTROL vars.recCount]** vertegenwoordigt het aantal ontvangers die door de levering van de voorafgaande taak worden gericht. Raadpleeg [JavaScript-scripts en -sjablonen](../../workflow/using/javascript-scripts-and-templates.md)voor meer informatie over JavaScript-expressies.
+   Dit is een bericht dat een expressie bevat die in JavaScript is geschreven: **[!UICONTROL vars.recCount]** geeft het aantal ontvangers aan waarop de levering van de voorafgaande taak betrekking heeft. Raadpleeg [JavaScript-scripts en -sjablonen](../../workflow/using/javascript-scripts-and-templates.md)voor meer informatie over JavaScript-expressies.
 
    ![](assets/new-workflow-param-validation.png)
 
