@@ -11,18 +11,18 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: 21777423-0c8a-4bb1-b210-972f660648bd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 5%
 
 ---
 
 
 # Rapporten beheren{#managing-reports}
 
-Rapporten die zijn gebaseerd op een schema dat specifiek is voor de standaard Adobe Campagne-ontvangers (Nm:ontvanger of gekoppeld schema) moeten opnieuw worden ontwikkeld om rekening te houden met de gegevens van de aangepaste tabel en de tabellen die via de doeltoewijzing [zijn gekoppeld (zie de sectie](../../configuration/using/target-mapping.md) Doeltoewijzing).
+Rapporten die zijn gebaseerd op een schema dat specifiek is voor de standaard Adobe Campaign-ontvangers (NM:ontvanger of gekoppeld schema) moeten opnieuw worden ontwikkeld om rekening te houden met de gegevens uit de aangepaste tabel en de tabellen die via de doeltoewijzing zijn gekoppeld (zie de sectie [Doeltoewijzing](../../configuration/using/target-mapping.md) ).
 
 Raadpleeg [deze sectie](../../reporting/using/about-reports-creation-in-campaign.md)voor het maken van nieuwe rapporten.
 
