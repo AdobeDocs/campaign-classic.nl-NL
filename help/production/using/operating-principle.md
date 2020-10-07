@@ -1,7 +1,7 @@
 ---
-title: Exploitatiebeginsel
-seo-title: Exploitatiebeginsel
-description: Exploitatiebeginsel
+title: Werkwijze
+seo-title: Werkwijze
+description: Werkwijze
 seo-description: null
 page-status-flag: never-activated
 uuid: a15929ca-5b1f-499a-a883-43fd0a318c98
@@ -11,25 +11,25 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: 5e9c17ad-14d2-4173-9fc9-0e48a21426c8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a11a73b0679c0a65dc10f71869bf2a6c6efc008
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 1%
 
 ---
 
 
-# Exploitatiebeginsel{#operating-principle}
+# Werkwijze{#operating-principle}
 
-Technisch gezien is het Adobe Campagne-platform gebaseerd op verschillende modules.
+Technisch gezien is het Adobe Campaign-platform gebaseerd op verschillende modules.
 
-Er zijn veel Adobe Campagnemodules. Sommige werken onophoudelijk, terwijl anderen af en toe worden opgestart om beheertaken uit te voeren (bijvoorbeeld om de databaseverbinding te configureren) of om een terugkerende taak uit te voeren (bijvoorbeeld het consolideren van trackinggegevens).
+Er zijn veel Adobe Campaign-modules. Sommige werken onophoudelijk, terwijl anderen af en toe worden opgestart om beheertaken uit te voeren (bijvoorbeeld om de databaseverbinding te configureren) of om een terugkerende taak uit te voeren (bijvoorbeeld het consolideren van trackinggegevens).
 
-Er zijn drie typen Adobe Campagnemodules:
+Er zijn drie typen Adobe Campaign-modules:
 
 * Modules met meerdere instanties: er wordt één proces voor alle instanties uitgevoerd. Dit geldt voor de volgende modules: **web**, **syslogd**, **trackinglogd** en **watchdog** (activiteiten uit het bestand **config-default.xml** ).
-* Monoinstantiemodules: één proces wordt per instantie uitgevoerd. Dit geldt voor de volgende modules: **mta**, **wfserver**, **inMail**, **sms** en **stat** **`<instance>`** (activiteiten van het bestandconfig-.xml).
+* Monoinstantiemodules: één proces wordt per instantie uitgevoerd. Dit geldt voor de volgende modules: **mta**, **wfserver**, **inMail**, **sms** en **stat** (activiteiten van het **`<instance>`** config-.xml-bestand).
 * Hulpprogrammamodules: dit zijn modules die af en toe worden in werking gesteld om af en toe of terugkerende verrichtingen (**schoonmaakbeurt**, **config**, het downloaden het volgen logboeken, enz.) uit te voeren.
 
 Het beleid van de module wordt uitgevoerd gebruikend het **hulpmiddel** van de bevellijn die in de **bin** folder van de installatiemap wordt geïnstalleerd.
@@ -81,7 +81,7 @@ De beschikbare modules worden in de volgende tabel beschreven:
 
 >[!CAUTION]
 >
->Er is één laatste module: de tracerings- en relaismodule die is gekoppeld aan de toepassingsserver en die, omwille van de prestaties, via native mechanismen is geïntegreerd in een Apache- of IIS-webserver via een dynamische bibliotheek. Er is geen Adobe-opdracht Campagne waarmee u deze module kunt starten of beheren. U moet daarom de bevelen van de server van het Web zelf gebruiken.
+>Er is één laatste module: de tracerings- en relaismodule die is gekoppeld aan de toepassingsserver en die, omwille van de prestaties, via native mechanismen is geïntegreerd in een Apache- of IIS-webserver via een dynamische bibliotheek. Er is geen Adobe Campaign-opdracht waarmee u deze module kunt starten of beheren. U moet daarom de bevelen van de server van het Web zelf gebruiken.
 
 Het gebruik van de module en de syntaxis van zijn parameters worden getoond gebruikend het volgende bevel: **nlserver`[module]`-?**
 
