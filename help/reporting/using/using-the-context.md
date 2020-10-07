@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 72fe6df0-0271-48f9-bd6d-bb1ff25fbdf3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ Wanneer u gegevens wilt vertegenwoordigen in de vorm van **[!UICONTROL tables]**
 
 ## Een rechtstreeks filter op gegevens definiëren {#defining-a-direct-filter-on-data}
 
-### Gegevens filteren {#filtering-data}
+### Data filteren {#filtering-data}
 
 Het gebruiken van een **[!UICONTROL Query]** typeactiviteit is niet verplicht wanneer het bouwen van een rapport. De gegevens kunnen direct in de lijsten en grafieken worden gefiltreerd die omhoog het rapport maken.
 
@@ -40,7 +40,7 @@ Klik hiertoe op de **[!UICONTROL Filter data...]** koppeling op het **[!UICONTRO
 
 In het volgende voorbeeld willen we dat in het diagram alleen de ontvangende profielen worden weergegeven die in Frankrijk wonen en die in het jaar een aankoop hebben gedaan.
 
-Als u dit filter wilt definiëren, plaatst u een pagina in het diagram en bewerkt u deze. Klik op de **[!UICONTROL Filter data]** koppeling en maak het filter dat overeenkomt met de gegevens die u wilt weergeven. Raadpleeg [deze sectie](../../platform/using/about-queries-in-campaign.md)voor meer informatie over het maken van query&#39;s in Adobe Campaign.
+Als u dit filter wilt definiëren, plaatst u een pagina in het diagram en bewerkt u deze. Klik op de **[!UICONTROL Filter data]** koppeling en maak het filter dat overeenkomt met de gegevens die u wilt weergeven. Raadpleeg [deze sectie](../../platform/using/about-queries-in-campaign.md)voor meer informatie over het samenstellen van query&#39;s in Adobe Campaign.
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 
