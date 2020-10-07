@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: 679b9ae2-362c-483d-acb8-47bc01928541
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '519'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ Dan vorm de volgende elementen om uw behoeften aan te passen:
 
 1. Selecteer het type streepjescode.
 
-   * Voor de 1D-indeling zijn de volgende typen beschikbaar in Adobe Campagne: Codabar, Code 128, GS1-128 (voorheen EAN-128), UPC-A, UPC-E, ISBN, EAN-8, Code39, Interleaved 2 of 5, POSTNET and Royal Mail (RM4SCC).
+   * Voor de 1D-indeling zijn de volgende typen beschikbaar in Adobe Campaign: Codabar, Code 128, GS1-128 (voorheen EAN-128), UPC-A, UPC-E, ISBN, EAN-8, Code39, Interleaved 2 of 5, POSTNET and Royal Mail (RM4SCC).
 
       Voorbeeld van een 1D-streepjescode:
 
