@@ -1,7 +1,7 @@
 ---
-title: Voorwaardelijke inhoud definiëren
-seo-title: Voorwaardelijke inhoud definiëren
-description: Voorwaardelijke inhoud definiëren
+title: Voorwaardelijke content definiëren
+seo-title: Voorwaardelijke content definiëren
+description: Voorwaardelijke content definiëren
 seo-description: null
 page-status-flag: never-activated
 uuid: 2b49958d-6429-445d-a7dc-caaca072f4e4
@@ -11,22 +11,22 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 0ca5e0f6-cc81-4da9-aecf-a095cc1a19f9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 9%
 
 ---
 
 
-# Voorwaardelijke inhoud definiëren{#defining-a-conditional-content}
+# Voorwaardelijke content definiëren{#defining-a-conditional-content}
 
 U kunt de weergave van specifieke rapportitems of pagina&#39;s voorschrijven.
 
 Pas de zichtbaarheidsinstellingen van bepaalde items aan om deze voorwaardelijk te maken. Raadpleeg de weergave [van](#conditioning-item-display)Conditioning-items voor meer informatie.
 
-Gebruik een **[!UICONTROL Test]** tekstactiviteit om de weergave van een of meer pagina&#39;s voorwaardelijk te maken. Raadpleeg de weergave [van de pagina](#conditioning-page-display)Conditioning voor meer informatie.
+Gebruik een **[!UICONTROL Test]** tekstactiviteit om de weergave van een of meer pagina&#39;s voorwaardelijk te maken. For more on this, refer to [Conditioning page display](#conditioning-page-display).
 
 ## Weergave van items conditioneren {#conditioning-item-display}
 
@@ -40,7 +40,7 @@ In het volgende voorbeeld hangt de weergavevoorwaarde af van de taal:
 
 ![](assets/reporting_display_condition.png)
 
-## Weergave van pagina&#39;s conditioneren {#conditioning-page-display}
+## Paginaweergave van conditionering {#conditioning-page-display}
 
 In het diagram van een rapport kunt u met de **[!UICONTROL Test]** activiteit de volgorde van pagina&#39;s wijzigen, afhankelijk van een of meer voorwaarden.
 
@@ -57,6 +57,6 @@ Deze activiteit is gebaseerd op het volgende operationele beginsel:
 
 1. Selecteer **[!UICONTROL Enable default transition]** om een overgang toe te voegen, voor het geval dat aan één van de gevormde voorwaarden niet wordt voldaan.
 
-   Zie [deze sectie](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display)voor meer informatie.
+   Raadpleeg [deze sectie](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display) voor meer informatie.
 
 U kunt een **[!UICONTROL Test]** activiteit aan het begin van het diagram plaatsen om de weergave afhankelijk te maken van bijvoorbeeld context- of operatorprofiel.
