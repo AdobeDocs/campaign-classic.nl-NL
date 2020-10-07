@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 2f66152b-4d4a-40b8-a1bb-5b97c5410882
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 11a6ddd275dc8482e82f163abc14cacaf0281dff
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2165'
 ht-degree: 2%
@@ -69,7 +66,7 @@ U kunt kiezen uit vijf verschillende talen:
 * Duits
 * Japans
 
-De taal die u voor uw Adobe Campaign Classic-exemplaar hebt gekozen, is mogelijk van invloed op de datum- en tijdnotatie. Raadpleeg deze [sectie](../../platform/using/adobe-campaign-workspace.md#date-and-time) voor meer informatie.
+De taal die u voor uw Adobe Campaign Classic-exemplaar hebt gekozen, kan van invloed zijn op de datum- en tijdnotatie. Raadpleeg deze [sectie](../../platform/using/adobe-campaign-workspace.md#date-and-time) voor meer informatie.
 
 ## Basisbeginselen van navigatie {#navigation-basics}
 
@@ -117,7 +114,7 @@ De **[!UICONTROL Explorer]** werkruimte bestaat uit drie zones:
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 - Boom**: U kunt de inhoud van de structuur aanpassen (knooppunten toevoegen, verplaatsen of verwijderen). Deze procedure is alleen bedoeld voor professionele gebruikers. For more on this, refer to [this page](../../configuration/using/about-navigation-hierarchy.md).
+**1 - Boom**: U kunt de inhoud van de structuur aanpassen (knooppunten toevoegen, verplaatsen of verwijderen). Deze procedure is alleen bedoeld voor professionele gebruikers. Raadpleeg [deze pagina](../../configuration/using/about-navigation-hierarchy.md) voor meer informatie.
 
 **2 - Lijst**: u kunt deze lijst filteren, zoekopdrachten uitvoeren, informatie toevoegen of gegevens sorteren.
 
@@ -214,7 +211,7 @@ Een andere manier om kolommen toe te voegen, bijvoorbeeld als u gegevens wilt to
    >
    >U kunt gegevens ook sorteren en filteren. Zie [Filteropties](../../platform/using/filtering-options.md).
 
-1. Herhaal deze bewerking voor elke kolom die moet worden weergegeven.
+1. Herhaal deze bewerking voor elke kolom die u wilt weergeven.
 1. Gebruik de pijlen om de **weergavevolgorde** te wijzigen. De hoogste kolom zal op de linkerzijde in de lijst van verslagen zijn.
 
    ![](assets/s_ncs_user_columns_order_down.png)
@@ -338,7 +335,7 @@ U kunt een onderzoek van de beschikbare gebieden in een redacteur in werking ste
 
 De taal van uw Adobe Campaign Classic-exemplaar is van invloed op datum- en tijdnotaties.
 
-Taal wordt geselecteerd tijdens de installatie van Campagne en kan achteraf niet worden gewijzigd. U kunt selecteren: Engels (VS), Engels (EN), Frans, Duits of Japans. For more on this, refer to [this page](../../installation/using/creating-an-instance-and-logging-on.md).
+Taal wordt geselecteerd tijdens de installatie van Campagne en kan achteraf niet worden gewijzigd. U kunt selecteren: Engels (VS), Engels (EN), Frans, Duits of Japans. Raadpleeg [deze pagina](../../installation/using/creating-an-instance-and-logging-on.md) voor meer informatie.
 
 De belangrijkste verschillen tussen het Engels van de VS en het Engels van het Verenigd Koninkrijk zijn:
 
