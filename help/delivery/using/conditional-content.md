@@ -1,7 +1,7 @@
 ---
-title: Voorwaardelijke inhoud
-seo-title: Voorwaardelijke inhoud
-description: Voorwaardelijke inhoud
+title: Voorwaardelijke content
+seo-title: Voorwaardelijke content
+description: Voorwaardelijke content
 seo-description: null
 page-status-flag: never-activated
 uuid: d1c38263-a163-448c-8822-8b3e776e45cf
@@ -11,19 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: 167cc61a-fbc7-48cb-89ff-fbdbf9321c01
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '473'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Voorwaardelijke inhoud{#conditional-content}
+# Voorwaardelijke content{#conditional-content}
 
 Door voorwaardelijke inhoudsgebieden te vormen, kunt u dynamische verpersoonlijking tot stand brengen die op het profiel van de ontvanger bijvoorbeeld wordt gebaseerd. Tekstblokken en/of afbeeldingen worden vervangen wanneer aan een bepaalde voorwaarde wordt voldaan.
 
