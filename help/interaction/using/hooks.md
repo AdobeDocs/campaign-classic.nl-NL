@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 2b799ad7-b729-4b3e-9adc-1df13259f2a9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '510'
+ht-degree: 1%
 
 ---
 
@@ -24,11 +24,11 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 Met Hooks in Interaction kunt u het **standaardmotorgedrag** wijzigen.
 
-De **[!UICONTROL Target loading]** en de **[!UICONTROL Proposition post-processing]** haken worden, in de Campagne van Adobe, in de aanbiedingsruimte gevormd:
+De **[!UICONTROL Target loading]** haken en **[!UICONTROL Proposition post-processing]** haken zijn in Adobe Campaign geconfigureerd in de aanbiedingsruimte:
 
 ![](assets/interaction_hooks_1.png)
 
-De **[!UICONTROL Dynamic offer]** haak wordt gevormd met het aanbiedingsgewicht in de Campagne van Adobe:
+De **[!UICONTROL Dynamic offer]** haak wordt gevormd met het aanbiedingsgewicht in Adobe Campaign:
 
 ![](assets/interaction_hooks_2.png)
 
