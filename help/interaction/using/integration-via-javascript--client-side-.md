@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 7453d768-31eb-4372-aae3-27527cd5c79b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 Als u de interactie-engine op een webpagina wilt aanroepen, voegt u een aanroep van een JavaScript-code rechtstreeks in op de pagina. Deze vraag keert de aanbiedingsinhoud in gerichte terug
 
-    element.
+element.
 
 Adobe raadt u aan de JavaScript-integratiemethode te gebruiken.
 
@@ -36,7 +36,7 @@ Het script dat URL aanroept ziet er als volgt uit:
 
 De &quot;**env**&quot;parameter ontvangt de interne naam van het levende milieu gewijd aan anonieme interactie.
 
-Om een aanbieding te presenteren, moeten wij een milieu en een aanbiedingsruimte in de Campagne van Adobe tot stand brengen, dan de HTML- pagina vormen.
+Om een aanbieding te presenteren, moeten wij een milieu en een aanbiedingsruimte in Adobe Campaign creëren, dan de HTML- pagina vormen.
 
 In de volgende gebruiksgevallen worden de mogelijke opties beschreven voor het integreren van aanbiedingen via JavaScript.
 
@@ -46,7 +46,7 @@ In de volgende gebruiksgevallen worden de mogelijke opties beschreven voor het i
 
 1. **De interactie-engine voorbereiden**
 
-   Open de interface van de Campagne van Adobe en bereid een anonieme milieu voor.
+   Open de Adobe Campaign-interface en bereid een anonieme omgeving voor.
 
    Maak een aanbiedingsruimte die is gekoppeld aan de anonieme omgeving.
 
@@ -106,7 +106,7 @@ In de volgende gebruiksgevallen worden de mogelijke opties beschreven voor het i
 
 ### Een geïdentificeerd aanbod presenteren {#presenting-an-identified-offer}
 
-Om een aanbieding aan een geïdentificeerde contact voor te stellen, is het proces gelijkaardig zoals hier beschreven: Een anonieme aanbieding [](#presenting-an-anonymous-offer)presenteren. In de inhoud van de webpagina moet u het volgende script toevoegen waarmee de contactpersoon tijdens de aanroep naar de engine wordt geïdentificeerd:
+Om een aanbieding aan een geïdentificeerde contact voor te stellen, is het proces gelijkaardig zoals hier beschreven: [Een anonieme aanbieding](#presenting-an-anonymous-offer)presenteren. In de inhoud van de webpagina moet u het volgende script toevoegen waarmee de contactpersoon tijdens de aanroep naar de engine wordt geïdentificeerd:
 
 ```
 <script type="text/javascript">
@@ -118,11 +118,11 @@ Om een aanbieding aan een geïdentificeerde contact voor te stellen, is het proc
 
    ![](assets/interaction_htmlmode_001.png)
 
-   In dit voorbeeld is de identificatiecode samengesteld, omdat deze zowel op de e-mail als op de naam van de ontvanger is gebaseerd.
+   In dit voorbeeld is de identificatiesleutel samengesteld omdat deze zowel op de e-mail als op de naam van de ontvanger is gebaseerd.
 
-1. Tijdens de Web-pagina vertoning, laat de manuscriptevaluatie u ontvankelijke identiteitskaart op de aanbiedingsmotor overgaan. Als de id een samenstelling heeft, worden de toetsen weergegeven in dezelfde volgorde als in de geavanceerde instellingen en worden ze van elkaar gescheiden door een|.
+1. Tijdens de Web-pagina vertoning, laat de manuscriptevaluatie u ontvankelijke identiteitskaart op de aanbiedingsmotor overgaan. Als de id een samenstelling heeft, worden de toetsen weergegeven in dezelfde volgorde als in de geavanceerde instellingen en worden ze van elkaar gescheiden door een |.
 
-   In het volgende voorbeeld is de contactpersoon aangemeld bij de website en is deze via e-mail en naam herkend tijdens het aanroepen naar de Interaction-engine.
+   In het volgende voorbeeld is de contactpersoon aangemeld bij de website en is deze via e-mail en naam herkend tijdens het aanroepen naar de Interactie-engine.
 
    ```
    <script type="text/javascript">
@@ -177,7 +177,7 @@ Het geretourneerde XML-knooppunt ziet er als volgt uit:
 </propositions>
 ```
 
-In het volgende gebruiksgeval worden de configuraties beschreven die in Adobe Campagne moeten worden uitgevoerd om de modus XML in te schakelen en wordt vervolgens het resultaat van de aanroep naar de engine in de HTML-pagina weergegeven.
+In het volgende gebruiksgeval worden de configuraties beschreven die in Adobe Campaign moeten worden uitgevoerd om de XML-modus in te schakelen en wordt vervolgens het resultaat van de aanroep naar de engine in de HTML-pagina weergegeven.
 
 1. **Een omgeving en een aanbiedingsruimte maken**
 
@@ -218,7 +218,7 @@ In het volgende gebruiksgeval worden de configuraties beschreven die in Adobe Ca
    >
    >Elk element moet tweemaal worden gedefinieerd. CDATA-typeelementen (&quot;_jst&quot;) kunnen personalisatievelden bevatten.
    >
-   >Vergeet niet de databasestructuur bij te werken. Zie [deze sectie](../../configuration/using/updating-the-database-structure.md)voor meer informatie.
+   >Vergeet niet de databasestructuur bij te werken. Raadpleeg [deze sectie](../../configuration/using/updating-the-database-structure.md) voor meer informatie.
 
    >[!NOTE]
    >
