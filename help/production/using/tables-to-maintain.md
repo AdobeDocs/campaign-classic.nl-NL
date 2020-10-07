@@ -11,25 +11,25 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: 6ec4e566-7116-4d7f-835d-cb0f3c3a6a7a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1126'
+ht-degree: 1%
 
 ---
 
 
 # Tabellen om te onderhouden{#tables-to-maintain}
 
-De lijst met tabellen die u wilt bijhouden, is afhankelijk van uw versie van Adobe Campagne, hoe u deze gebruikt en van de configuratie van het datamodel.
+De lijst met tabellen die moet worden onderhouden, is afhankelijk van uw versie van Adobe Campaign, hoe u deze gebruikt en van de configuratie van het datamodel.
 
 De volgende lijst bevat slechts de lijsten het meest onderworpen aan fragmentatie. De gevolgen zijn als volgt:
 
 * overconsumptie van schijfruimte, waardoor de databasetoegang wordt beïnvloed;
 * indexen die niet regelmatig zijn bijgewerkt, waardoor de zoekprestaties afnemen.
 
-## Adobe Campagne-tabellen {#adobe-campaign-tables}
+## Adobe Campaign-tabellen {#adobe-campaign-tables}
 
 <table> 
  <thead> 
@@ -208,4 +208,4 @@ De volgende lijst bevat slechts de lijsten het meest onderworpen aan fragmentati
 
 ## Klanttabellen {#customer-tables}
 
-Naast de bovenstaande lijst kunnen tabellen die tijdens het instellen van het platform door klanten zijn gemaakt (en die niet voorkomen in het Adobe Campagne-datamodel), ook worden gefragmenteerd, vooral als ze vaak worden bijgewerkt tijdens het laden of synchroniseren van gegevens. Deze tabellen kunnen onderdeel zijn van het standaardgegevensmodel van Adobe Campagne (bijvoorbeeld **NmsRecipient**). In dit geval is het aan de beheerder van het Adobe Campagne-platform om een controle van zijn specifiek gegevensbestandmodel uit te voeren om deze douanetabellen te vinden. Deze lijsten worden noodzakelijk niet uitdrukkelijk vermeld in onze onderhoudsprocedures.
+Naast de bovenstaande lijst kunnen tabellen die tijdens de installatie van het platform door klanten zijn gemaakt (en die niet in het Adobe Campaign-datamodel staan), ook worden gefragmenteerd, vooral als ze vaak worden bijgewerkt tijdens het laden of synchroniseren van gegevens. Deze tabellen kunnen onderdeel zijn van het standaard Adobe Campaign-gegevensmodel (bijvoorbeeld **NmsRecipient**). In dit geval, is het aan de beheerder van het platform van Adobe Campaign om een controle van zijn specifiek gegevensbestandmodel uit te voeren om deze douanetabellen te vinden. Deze lijsten worden noodzakelijk niet uitdrukkelijk vermeld in onze onderhoudsprocedures.
