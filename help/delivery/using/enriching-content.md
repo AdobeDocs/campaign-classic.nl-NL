@@ -1,7 +1,7 @@
 ---
-title: Inhoud verrijken
-seo-title: Inhoud verrijken
-description: Inhoud verrijken
+title: Content verrijken
+seo-title: Content verrijken
+description: Content verrijken
 seo-description: null
 page-status-flag: never-activated
 uuid: 6f1bce9f-88ed-4ad3-987f-79f6c68264d2
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: 4404c21e-0a89-4762-af20-384ad7071916
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '663'
+ht-degree: 1%
 
 ---
 
 
-# Inhoud verrijken{#enriching-content}
+# Content verrijken{#enriching-content}
 
 Met aggregators kunt u de inhoud verrijken met externe gegevens. Dit gegeven komt uit generische vragen of verbonden lijsten.
 
