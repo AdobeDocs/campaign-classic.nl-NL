@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 74084618-2b35-42c5-8a86-87ce137abb71
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2498'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +34,7 @@ Met een **[!UICONTROL List with group]** typetabel kunt u gegevens in de tabel g
 >
 >De **[!UICONTROL Page]** activiteit die de tabel bevat, moet worden voorafgegaan door een **[!UICONTROL Query]** of **[!UICONTROL Script]** activiteit om de in het verslag te analyseren gegevens te verzamelen. Zie Gegevens [verzamelen voor analyse](../../reporting/using/collecting-data-to-analyze.md) en [scriptactiviteit](../../reporting/using/advanced-functionalities.md#script-activity)voor meer informatie over deze activiteiten.
 
-### Exploitatiebeginsel {#operating-principle}
+### Werkwijze {#operating-principle}
 
 Het kan gebeuren dat u verschillende gegevenscategorieën tegelijk moet analyseren. Met een lijst met groepen kunt u gegevens combineren en statistieken maken over verschillende groepen gegevens in dezelfde tabel. Hiertoe kunt u een groep in de tabel maken.
 
@@ -44,22 +44,22 @@ Hier kunt u een lijst weergeven met de campagnes (**[!UICONTROL Label (Campaign)
 
 ![](assets/s_advuser_ergo_listgroup_005.png)
 
-### Uitvoeringsstappen {#implementation-steps}
+### Implementatiestappen {#implementation-steps}
 
-Hier vindt u een volledig voorbeeld van implementatie: Hoofdlettergebruik [: Maak een rapport met een groepslijst](#use-case--create-a-report-with-a-group-list).
+Hier vindt u een volledig voorbeeld van implementatie: [Hoofdlettergebruik: Maak een rapport met een groepslijst](#use-case--create-a-report-with-a-group-list).
 
 Houd rekening met de volgende stappen om een tabel van het type &#39;Lijst met groep&#39; te maken:
 
 1. Ga naar het rapportdiagram en plaats een **[!UICONTROL Query]** activiteit. Zie Gegevens [verzamelen om te analyseren](../../reporting/using/collecting-data-to-analyze.md).
 1. Vul de brontabel in en selecteer de velden van de tabel die de statistieken betreffen.
-1. Plaats een **[!UICONTROL Page]** activiteit in de grafiek. Zie [Statische elementen](../../reporting/using/creating-a-new-report.md#static-elements)voor meer informatie.
+1. Plaats een **[!UICONTROL Page]** activiteit in de grafiek. For more on this, refer to [Static elements](../../reporting/using/creating-a-new-report.md#static-elements).
 1. Voeg een **[!UICONTROL List with group]** typetabel op de pagina in.
 1. Geef het gegevenspad op of de tabel die als gegevensbron in de query is geselecteerd.
 
    Deze stap is verplicht als u de velden in de brontabel later wilt herstellen en deze wilt invoegen in de cellen van de tabel.
 
 1. De tabel en de inhoud ervan maken.
-1. Geef het voltooide rapport op het **[!UICONTROL Preview]** tabblad weer. Vervolgens kunt u het rapport publiceren en het indien nodig exporteren naar een andere indeling. Voor meer op dit, verwijs naar het [Uitvoeren van een rapport](../../reporting/using/actions-on-reports.md#exporting-a-report).
+1. Geef het voltooide rapport weer op het **[!UICONTROL Preview]** tabblad. Vervolgens kunt u het rapport publiceren en het indien nodig exporteren naar een andere indeling. Voor meer op dit, verwijs naar het [Uitvoeren van een rapport](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 ### Lijnen en kolommen toevoegen {#adding-lines-and-columns}
 
@@ -115,7 +115,7 @@ Gebruik het **[!UICONTROL Expression]** menu-item om de waarden te selecteren di
 
 * Voer een label in voor een cel, bijvoorbeeld de koptekst.
 
-   Hiervoor gebruikt u hetzelfde proces als voor het invoegen van een veld in de database, maar selecteert u geen expressie. Voer het label in het **[!UICONTROL Label]** veld in. Het zal worden getoond zoals is.
+   Hiervoor gebruikt u hetzelfde proces als voor het invoegen van een veld in de database, maar selecteert u geen expressie. Enter the label in the **[!UICONTROL Label]** field. Het zal worden getoond zoals is.
 
 * Een aggregaat berekenen (gemiddelde waarde, som enz.) en in de cel weergeven.
 
@@ -198,7 +198,7 @@ In het onderstaande voorbeeld kunt u de tweede pagina van het rapport weergeven 
 
 ![](assets/s_advuser_ergo_listgroup_015.png)
 
-Op het tabblad **Extra** kunt u een visuele koppeling maken naar uw gegevens, zoals een gekleurd teken of een waardebalk. Het gekleurde teken wordt gebruikt wanneer de tabel als een legenda in een diagram wordt weergegeven. Raadpleeg voor meer informatie het voorbeeld van de implementatie: [Stap 5 - De tweede pagina maken](#step-5---create-the-second-page)
+Op het tabblad **Extra** kunt u een visuele koppeling maken naar uw gegevens, zoals een gekleurd teken of een waardebalk. Het gekleurde teken wordt gebruikt wanneer de tabel als een legenda in een diagram wordt weergegeven. Raadpleeg voor meer informatie het voorbeeld van de implementatie: [Stap 5 - Maak de tweede pagina](#step-5---create-the-second-page)
 
 ![](assets/s_advuser_ergo_listgroup_016.png)
 
@@ -222,7 +222,7 @@ Ga naar de grafiek en voeg de eerste componenten toe die voor het ontwerpen van 
 
 ### Stap 2 - creeer de eerste vraag {#step-2---create-the-first-query}
 
-Met de eerste query kunt u leveringen verzamelen die aan elke campagne zijn gekoppeld. Het doel is om een rapport weer te geven over de verschillende leveringen van de Adobe Campaign-database die aan elke campagne zijn gekoppeld.
+Met de eerste query kunt u leveringen verzamelen die aan elke campagne zijn gekoppeld. Het doel is een rapport weer te geven over de verschillende leveringen van de Adobe Campaign-database die aan elke campagne zijn gekoppeld.
 
 Dubbelklik op de eerste query om deze te bewerken en pas vervolgens de volgende stappen toe om deze te configureren:
 
@@ -239,6 +239,7 @@ Dubbelklik op de eerste query om deze te bewerken en pas vervolgens de volgende 
    * de indicator van de verwerkte leveringen,
    * de buitenlandse sleutel van de Campagne-koppeling,
    * de indicator voor de foutenfrequentie.
+
    ![](assets/s_advuser_report_listgroup_002.png)
 
    Een alias koppelen aan elk veld: dit wordt aanbevolen om de gegevens in de tabel die aan de eerste pagina van het rapport worden toegevoegd, gemakkelijker te kunnen selecteren.
@@ -248,7 +249,7 @@ Dubbelklik op de eerste query om deze te bewerken en pas vervolgens de volgende 
    * Label: **@label**
    * Primaire sleutel: **@deliveryId**
    * Label (campagne): **@label1**
-   * Verwerkt: **@processing**
+   * Verwerkt: **@processed**
    * Externe sleutel van de koppeling &#39;Campaign&#39; (&#39;id&#39;): **@operationId**
    * Foutfrequentie: **@errorRatio**
 
@@ -341,7 +342,7 @@ In deze stap, gaan wij de eerste pagina van het rapport vormen. Voer de volgende
 
    ![](assets/s_advuser_report_listgroup_023.png)
 
-   U kunt nu een rendering van het rapport weergeven. Klik op het **[!UICONTROL Preview]** tabblad en selecteer de **[!UICONTROL Global]** optie: Hier ziet u een lijst met alle leveringen in de Adobe Campagne-database die aan een campagne zijn gekoppeld.
+   U kunt nu een rendering van het rapport weergeven. Klik op het **[!UICONTROL Preview]** tabblad en selecteer de **[!UICONTROL Global]** optie: Hier ziet u een lijst met alle leveringen in de Adobe Campaign-database die aan een campagne zijn gekoppeld.
 
    ![](assets/s_advuser_report_listgroup_025.png)
 
@@ -378,12 +379,13 @@ Wij willen een tweede vraag en een tweede pagina toevoegen om de details van een
       ![](assets/reporting_quick_start_query-2_count.png)
 
    * e-maildomeinen van ontvangers en groepsgegevens in dit veld verzamelen: Selecteer hiertoe de **[!UICONTROL Group]** optie in de kolom met domeinnamen.
+
    ![](assets/reporting_quick_start_query-2_filter.png)
 
    Koppel de volgende aliassen aan de velden:
 
    * count(primaire sleutel): **@count**
-   * E-maildomein (ontvanger): **@domein**
+   * E-maildomein (ontvanger): **@domain**
 
       ![](assets/reporting_quick_start_query-2_alias.png)
 
@@ -400,7 +402,7 @@ Wij willen een tweede vraag en een tweede pagina toevoegen om de details van een
 
 ### Stap 5 - Maak de tweede pagina {#step-5---create-the-second-page}
 
-1. Bewerk de pagina en voer het label ervan in: E- **maildomeinen**.
+1. Bewerk de pagina en voer het label ervan in: **E-maildomeinen**.
 1. Schakel de **[!UICONTROL Enable output transitions]** optie uit: dit is de laatste bladzijde van het verslag en zal niet door een andere activiteit worden gevolgd .
 
    ![](assets/s_advuser_report_listgroup_028.png)
@@ -421,11 +423,12 @@ Wij willen een tweede vraag en een tweede pagina toevoegen om de details van een
 
    * Voeg de **[!UICONTROL Email domain(Recipient)]** expressie toe in de tweede cel van de detailregel.
    * Voeg de **[!UICONTROL count(primary key)]** expressie toe in de derde cel van de detailregel.
+
    ![](assets/s_advuser_report_listgroup_019.png)
 
 1. Voeg een cirkeldiagram aan de pagina toe gebruikend het met de rechtermuisknop aanklikken menu en wijs het etiket van **E-maildomeinen** aan het toe. Zie [Grafiektypen en varianten](../../reporting/using/creating-a-chart.md#chart-types-and-variants)voor meer informatie.
 1. Klik op de **[!UICONTROL Variants]** koppeling en hef de selectie van de **[!UICONTROL Display label]** opties en de **[!UICONTROL Display caption]** opties op.
-1. Controleer of er geen waarde sortering is geconfigureerd. Zie [deze sectie](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report)voor meer informatie.
+1. Controleer of er geen waarde sortering is geconfigureerd. Raadpleeg [deze sectie](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report) voor meer informatie.
 
    ![](assets/s_advuser_report_listgroup_0191.png)
 
@@ -437,7 +440,7 @@ Wij willen een tweede vraag en een tweede pagina toevoegen om de details van een
 
    ![](assets/s_advuser_report_listgroup_0201.png)
 
-1. Selecteer in de **[!UICONTROL Chart type]** sectie de **[!UICONTROL Email domain]** variabele.
+1. In the **[!UICONTROL Chart type]** section, select the **[!UICONTROL Email domain]** variable.
 1. Voeg vervolgens de uit te voeren berekening toe: selecteert de som als een operator.
 
    ![](assets/s_advuser_report_listgroup_0202.png)
@@ -466,6 +469,6 @@ Als u op de koppeling van een van deze leveringen klikt, wordt in het diagram de
 
 Dit type van lijst laat u statistieken tonen die op de gegevens in het gegevensbestand worden berekend.
 
-De configuratie van deze types van rapporten is gelijkaardig aan die gebruikt voor de beschrijvende analysetovenaar. Raadpleeg [deze pagina](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template)voor meer informatie.
+De configuratie van deze types van rapporten is gelijkaardig aan die gebruikt voor de beschrijvende analysetovenaar. Raadpleeg [deze pagina](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template) voor meer informatie.
 
 Raadpleeg [deze sectie](../../reporting/using/using-cubes-to-explore-data.md)voor meer informatie over het maken van een draaitabel.
