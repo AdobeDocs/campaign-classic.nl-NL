@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: 76984d9d-7759-4e0f-a275-09cca27589fa
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '423'
+ht-degree: 5%
 
 ---
 
@@ -94,7 +94,7 @@ De handtekening van de functie moet een argument bevatten voor elke parameter &#
 
 Specifieke gevallen:
 
-* **niet-statische methoden**: de functie moet eerst een aanvullend argument bevatten, dat samenvalt met de XML-entiteit die wordt doorgegeven in de vorm van een object van het type &#39;xml&#39; (E4X).
+* **niet-statische methoden**: de functie moet eerst een extra argument bevatten, dat samenvalt met de XML-entiteit die wordt doorgegeven in de vorm van een object van het type &#39;xml&#39; (E4X).
 * **Methoden** van het type &quot;key only&quot;: de functie moet eerst een extra argument bevatten, dat samenvalt met de sleutel die wordt doorgegeven in de vorm van tekenreeksen.
 
 **3. Geretourneerde waarden**
