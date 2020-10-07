@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: b64c9729-cfe2-4d02-8c59-9e53efd34a96
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '129'
+ht-degree: 3%
 
 ---
 
@@ -37,4 +37,4 @@ HTTP/2-connector: u moet communicatie aan en van de volgende servers toestaan:
 
 >[!NOTE]
 >
->Voor meer informatie over de twee schakelaars, verwijs naar het [Vormen van de mobiele toepassing in de Campagne](../../delivery/using/configuring-the-mobile-application.md)van Adobe.
+>Voor meer informatie over de twee schakelaars, verwijs naar het [Vormen van de mobiele toepassing in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
