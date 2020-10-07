@@ -1,7 +1,7 @@
 ---
-title: Analyserapport van aanbieding
-seo-title: Analyserapport van aanbieding
-description: Analyserapport van aanbieding
+title: Analyserapport van aanbiedingen
+seo-title: Analyserapport van aanbiedingen
+description: Analyserapport van aanbiedingen
 seo-description: null
 page-status-flag: never-activated
 uuid: 5593b570-adc0-41a7-a83c-f8e6e4be6247
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: tracking-offers
 discoiquuid: 6aae6a10-b03e-41f1-a6e9-29100800bae1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '85'
+ht-degree: 14%
 
 ---
 
 
-# Analyserapport van aanbieding{#offer-analysis-report}
+# Analyserapport van aanbiedingen{#offer-analysis-report}
 
 Het **[!UICONTROL Offer analysis]** rapport geeft u een overzicht van het aantal geaccepteerde of afgewezen voorstellen.
 
