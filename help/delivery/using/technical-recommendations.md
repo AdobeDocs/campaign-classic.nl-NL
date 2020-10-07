@@ -1,6 +1,6 @@
 ---
-title: Technische aanbevelingen voor verbetering van de leverbaarheid met Adobe Campaign Classic
-description: Ontdek de technieken, configuraties en gereedschappen die u kunt gebruiken om de prestaties te verbeteren met Adobe Campaign Classic.
+title: Technische aanbevelingen om de leverbaarheid met Adobe Campaign Classic te verbeteren
+description: Ontdek de technieken, configuraties en gereedschappen die u kunt gebruiken om de prestaties met Adobe Campaign Classic te verbeteren.
 page-status-flag: never-activated
 uuid: 71be1087-e5ff-4a7a-85ca-36803839e72f
 contentOwner: sauviat
@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: fc95538b-b54d-44ec-81aa-f51b62982699
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2436'
 ht-degree: 0%
@@ -96,7 +93,7 @@ Voor het gebruik van DKIM zijn enkele voorwaarden vereist:
 
 >[!IMPORTANT]
 >
->Voor ontvangen of hybride installaties, als u aan [Verbeterde MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)hebt bevorderd, wordt het e-mailauthentificeren DKIM gedaan door Verbeterde MTA voor alle berichten met alle domeinen.
+>Voor ontvangen of hybride installaties, als u aan [Verbeterde MTA](https://helpx.adobe.com/nl/campaign/kb/acc-campaign-enhanced-mta.html)hebt bevorderd, wordt het e-mailauthentificeren DKIM gedaan door Verbeterde MTA voor alle berichten met alle domeinen.
 
 ### DMARC {#dmarc}
 
@@ -138,7 +135,7 @@ Recommendations for defining an SPF record:
 
 ## Feedbacklus {#feedback-loop}
 
-Een feedbacklijn werkt door op het ISP niveau een bepaald e-mailadres voor een waaier van IP adressen te verklaren die voor het verzenden van berichten worden gebruikt. ISP zal naar deze brievenbus, op een gelijkaardige manier verzenden zoals wat voor stuitberichten wordt gedaan, die berichten die door ontvangers als spam worden gemeld. Het platform moet zo worden geconfigureerd dat toekomstige leveringen aan gebruikers die een klacht hebben ingediend, worden geblokkeerd. Het is belangrijk dat zij niet langer contact met hen opnemen, ook al hebben zij niet de juiste opt-out-link gebruikt. Het is op basis van deze klachten dat ISP een IP adres aan zijn bloklijst zal toevoegen. Afhankelijk van ISP, zal een klachtentarief van rond 1% in het blokkeren van een IP adres resulteren.
+Een feedbacklijn werkt door op het ISP niveau een bepaald e-mailadres voor een waaier van IP adressen te verklaren die voor het verzenden van berichten worden gebruikt. ISP zal naar deze brievenbus, op een gelijkaardige manier verzenden zoals wat voor stuitberichten wordt gedaan, die berichten die door ontvangers als spam worden gemeld. Het platform moet zo worden geconfigureerd dat toekomstige leveringen aan gebruikers die een klacht hebben ingediend, worden geblokkeerd. Het is belangrijk dat zij niet langer contact met hen opnemen, ook al hebben zij niet de juiste opt-out-link gebruikt. Het is op basis van deze klachten dat ISP een IP adres aan zijn lijst van afgewezen personen zal toevoegen. Afhankelijk van ISP, zal een klachtentarief van rond 1% in het blokkeren van een IP adres resulteren.
 
 Er wordt momenteel een standaard ontwikkeld voor het definiëren van de indeling van feedbacklusberichten: de [Misbruikrapportage-indeling (ARF)](https://tools.ietf.org/html/rfc6650).
 
@@ -150,7 +147,7 @@ Het implementeren van een feedbacklus voor een instantie vereist:
 Bij het implementeren van een eenvoudige feedbacklus in Adobe Campaign wordt de functionaliteit voor het stuiterende bericht gebruikt. De terugkoppelt lijnbrievenbus wordt gebruikt als stuiterende brievenbus en een regel wordt bepaald om deze berichten te ontdekken. De e-mailadressen van de ontvangers die het bericht als spam hebben gemeld, worden toegevoegd aan de quarantainelijst.
 
 * Creeer of wijzig een stuiterende postregel, **Feedback_loop**, in **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** met de reden **Verworpen** en het type **Hard**.
-* Als een brievenbus speciaal voor de terugkoppel lijn is bepaald, bepaal de parameters om tot het toegang te hebben door een nieuwe externe rekening van Bounce Mails binnen te creëren **[!UICONTROL Administration > Platform > External accounts]**.
+* Als een brievenbus speciaal voor de terugkoppel lijn is bepaald, bepaal de parameters om tot het toegang te hebben door een nieuwe externe rekening van Stuitbeelden binnen te creëren **[!UICONTROL Administration > Platform > External accounts]**.
 
 Het mechanisme is onmiddellijk operationeel voor het verwerken van kennisgevingen van klachten. Om ervoor te zorgen deze regel correct werkt, kunt u de rekeningen tijdelijk deactiveren zodat zij deze berichten niet verzamelen, dan controleren de inhoud van terugkoppelt lijnbrievenbus manueel. Voer op de server de volgende opdrachten uit:
 
@@ -250,7 +247,7 @@ De SMTP fouten die niet door een regel worden gecontroleerd zijn vermeld in **[!
 
 ### Specifieke IPs {#dedicated-ips}
 
-Adobe biedt een speciale IP-strategie voor elke klant met een IP-bestand voor het maken van een upgrade om een reputatie op te bouwen en de prestaties van de levering te optimaliseren.
+Adobe verstrekt een specifieke IP strategie voor elke klant van een oprijplaat-omhoog IP om een reputatie te bouwen en leveringsprestaties te optimaliseren.
 
 ## IP-certificering {#ip-certification}
 
@@ -258,7 +255,7 @@ IP de Certificatie is een verzendend beste praktijkprogramma dat helpt ervoor zo
 
 Momenteel bieden twee leveranciers IP Certificatie aan: Return Path en Certified Senders Alliance.
 
-Gecertificeerde afzenders worden toegevoegd aan lijsten voor e-mailadressen die worden gebruikt door leveranciers van postvakken en e-mailbeveiligingsbedrijven. Deze commercieel staan lijsten toe zijn gebaseerd op een systeem dat de afzender toelaat om antispamfilters volledig te mijden of stijgende punten worden toegewezen aangezien zij het systeem ingaan.
+Gecertificeerde afzenders worden toegevoegd aan lijsten van gewenste personen voor e-mail die worden gebruikt door leveranciers van postvakken en bedrijven voor e-mailbeveiliging. Deze commerciële lijsten van gewenste personen zijn gebaseerd op een systeem dat de afzender toelaat om antispamfilters volledig te mijden of stijgende punten worden toegewezen aangezien zij het systeem ingaan.
 
 Het [programma voor de certificering](https://www.validity.com/products/returnpath/certification/) van retourpaden biedt een aantal voordelen, waaronder:
 
@@ -275,6 +272,6 @@ De [Certified Senders Alliance](https://certified-senders.org/certification-proc
 * Bescherming tegen juridische en financiële risico&#39;s door volledige naleving van wettelijke normen
 * Bescherming van de reputatie door middel van vroegtijdige waarschuwingen van het CSA Complaints Office en dagelijkse spamvangrapporten
 
-ISPs is vrij om deze diensten te gebruiken en het aantal ISPs kan afhankelijk van toestaan lijst variëren.
+ISPs is vrij om deze diensten te gebruiken en het aantal ISPs kan afhankelijk van de lijst van gewenste personen variëren.
 
 Nochtans, omdat meer en meer ISPs hun antispamfilters bouwen die op het gedrag van elke inbox eigenaar eerder dan het analyseren van de berichtinhoud zelf worden gebaseerd, kan het gebruiken van IP Certificatie geen garantie van inbox plaatsing of zelfs levering zijn.
