@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 978cbe62-f06a-46a6-b8a1-e30a65b8470a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '641'
+ht-degree: 1%
 
 ---
 
@@ -38,7 +38,7 @@ Als u de status van een set workflows wilt controleren, moet u de volgende stapp
 
 >[!NOTE]
 >
->Naast het werkschema, staat de Heatmap **van het** Werkschema van de Campagne u toe om in details de werkschema&#39;s te analyseren die momenteel lopen. Raadpleeg de [desbetreffende sectie](../../workflow/using/heatmap.md)voor meer informatie hierover.
+>Naast het werkschema, staat de Heatmap **van het** Werkschema van de Campagne u toe om in details de werkschema&#39;s te analyseren die momenteel lopen. For more on this, refer to the [dedicated section](../../workflow/using/heatmap.md).
 >
 >Raadpleeg **deze sectie** voor meer informatie over hoe u de uitvoering [van uw workflows kunt](../../workflow/using/monitoring-workflow-execution.md)controleren.
 
