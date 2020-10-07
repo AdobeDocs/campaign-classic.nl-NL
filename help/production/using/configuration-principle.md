@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: d08ff769-da93-4f86-8802-f0fb5b051ece
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '283'
+ht-degree: 5%
 
 ---
 
@@ -24,13 +24,13 @@ source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
 
 Het Adobe Campaign-platform is gebaseerd op het concept van instanties, vergelijkbaar met dat van virtuele hosts die door Apache worden gebruikt. In deze modus kunt u een server delen door er verschillende instanties aan toe te wijzen. De instanties zijn volledig verschillend van elkaar en werken met hun eigen gegevensbestand en configuratiedossier.
 
-Voor een bepaalde server zijn er twee gemeenschappelijke elementen voor alle instanties van de Campagne van Adobe:
+Voor een bepaalde server zijn er twee gemeenschappelijke elementen voor alle instanties van Adobe Campaign:
 
 * Het **interne** wachtwoord: dit is het algemene beheerderswachtwoord. Dit geldt voor alle instanties van een bepaalde toepassingsserver.
 
    >[!CAUTION]
    >
-   >Als u zich wilt aanmelden met de **interne** id, moet u vooraf een wachtwoord hebben gedefinieerd. Zie [deze sectie](../../installation/using/campaign-server-configuration.md#internal-identifier)voor meer informatie.
+   >Als u zich wilt aanmelden met de **interne** id, moet u vooraf een wachtwoord hebben gedefinieerd. Raadpleeg [deze sectie](../../installation/using/campaign-server-configuration.md#internal-identifier) voor meer informatie.
 
 * Meerdere technische serverconfiguraties: deze configuraties kunnen allen in de specifieke configuratie van een instantie worden overbelast.
 
