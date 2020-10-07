@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 discoiquuid: 5b2b7682-6bac-4282-8d27-e8a259934e7d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1095'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ Hieronder vindt u de definitie van de belangrijkste interactieelementen.
    >
    >De ruimten moeten in de specificaties worden gedefinieerd en mogen tijdens het project niet worden gewijzigd.
 
-* **Catalogus** voorstel: die u tijdens een interactie kunt selecteren. De catalogus is hiërarchisch geordend met elk knooppunt dat overeenkomt met een categorie.
+* **Catalogus** voorstel: die in Adobe Campaign zijn gedefinieerd en die tijdens een interactie kunnen worden geselecteerd. De catalogus is hiërarchisch geordend met elk knooppunt dat overeenkomt met een categorie.
 * **Categorie**: een map die gekoppeld is aan de aanbiedingencatalogus in een omgeving, waarin aanbiedingen worden georganiseerd op basis van aard, datum waarop voor de aanbieding in aanmerking komt en thema van de toepassing. Een categorie kan subcategorieën bevatten, die alle kenmerken van de bovenliggende categorie overnemen. Voor een categorie kunnen subsidiabiliteitsregels worden vastgesteld om deze voor meerdere aanbiedingen te delen.
 * **Toepassingsthema**&#39;s: De sleutelwoorden die in de categorie worden bepaald, die u aanbiedingen laten filtreren wanneer zij aan een binnenkomend of uitgaand kanaal door de selectie van aanbiedingen tot één of twee categorieën te beperken worden voorgesteld.
 
