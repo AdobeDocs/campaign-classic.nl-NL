@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: e8e7a720-c93d-491d-8768-270e47e9c898
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1245'
+ht-degree: 1%
 
 ---
 
@@ -62,7 +62,7 @@ Voer de volgende stappen uit om een simulatie te maken:
 
    >[!NOTE]
    >
-   >Als u leveringen selecteert via een plan, programma of campagne, kan Adobe Campaign de lijst met leveringen automatisch vernieuwen om rekening te houden met elke keer dat een simulatie wordt gestart. Schakel de **[!UICONTROL Refresh the selection of deliveries each time the simulation is started]** optie in om dit te doen.
+   >Als u leveringen selecteert via een plan, programma of campagne, kan Adobe Campaign de lijst met leveringen automatisch vernieuwen om hiermee rekening te houden wanneer een simulatie wordt gestart. Schakel de **[!UICONTROL Refresh the selection of deliveries each time the simulation is started]** optie in om dit te doen.
    >  
    >Als u dit niet doet, zullen om het even welke leveringen die niet beschikbaar in het plan, het programma, of de campagne zijn wanneer de simulatie wordt gecreeerd niet in aanmerking worden genomen: leveringen die later worden toegevoegd, worden genegeerd.
 
@@ -72,7 +72,7 @@ Voer de volgende stappen uit om een simulatie te maken:
 
    ![](assets/simu_campaign_opti_edit_scope_select.png)
 
-   Klik **[!UICONTROL Finish]** om de selectie goed te keuren.
+   Click **[!UICONTROL Finish]** to approve the selection.
 
    U kunt geselecteerde leveringen en leveringen die bij plannen, programma&#39;s of campagnes horen, handmatig combineren.
 
@@ -84,7 +84,7 @@ Voer de volgende stappen uit om een simulatie te maken:
 
    >[!NOTE]
    >
-   >Alleen leveringen waarvan het doel is berekend, worden in aanmerking genomen bij de berekening van de simulaties (statussen: **Doel (klaar** of **klaar voor levering**).
+   >Alleen leveringen waarvan het doel is berekend, worden in aanmerking genomen bij de berekening van de simulaties (statussen: **Klaar** of **klaar voor levering**).
 
 1. Selecteer op het **[!UICONTROL Calculations]** tabblad bijvoorbeeld een analysedimensie, zoals het ontvangende schema.
 
@@ -164,7 +164,7 @@ De volgende rapporten worden standaard geleverd:
 
 >[!NOTE]
 >
->U kunt nieuwe rapporten creëren en hen toevoegen aan aangeboden degenen. Zie [deze sectie](../../reporting/using/about-adobe-campaign-reporting-tools.md)voor meer informatie.
+>U kunt nieuwe rapporten creëren en hen toevoegen aan aangeboden degenen. Raadpleeg [deze sectie](../../reporting/using/about-adobe-campaign-reporting-tools.md) voor meer informatie.
 
 Klik op de **[!UICONTROL Reports]** koppeling van de doelsimulatie via het dashboard om rapporten te openen.
 
@@ -176,7 +176,7 @@ U kunt rapporten ook uitgeven gebruikend de **[!UICONTROL Reports]** verbinding 
 
 Telkens wanneer een simulatie wordt uitgevoerd, vervangt het resultaat om het even welke vorige resultaten: u kunt de resultaten van de ene uitvoering niet weergeven en vergelijken.
 
-Om resultaten te vergelijken, moet u rapporten gebruiken. Met Adobe Campaign kunt u zelfs een rapportgeschiedenis opslaan om deze later opnieuw weer te geven. Deze geschiedenis wordt gedurende de levenscyclus van de simulaties bewaard.
+Om resultaten te vergelijken, moet u rapporten gebruiken. In Adobe Campaign kunt u zelfs een rapportgeschiedenis opslaan om deze later opnieuw te bekijken. Deze geschiedenis wordt gedurende de levenscyclus van de simulaties bewaard.
 
 **Voorbeeld:**
 
@@ -200,7 +200,7 @@ Op het **[!UICONTROL Calculations]** tabblad kunt u rapportassen voor het doel d
 >[!NOTE]
 >
 >Wij adviseren bepalende berekeningsassen in de simulatiesjablonen eerder dan individueel voor elke simulatie.\
->Simulatiesjablonen worden opgeslagen in het **[!UICONTROL Resources > Templates > Simulation templates]** knooppunt van de Adobe Campagne-structuur.
+>Simulatiesjablonen worden opgeslagen in het **[!UICONTROL Resources > Templates > Simulation templates]** knooppunt van de Adobe Campaign-structuur.
 
 **Voorbeeld:**
 
@@ -235,4 +235,4 @@ De doeloverlappingen van de levering geven de beoogde ontvangers aan in ten mins
 >
 >Dit subtabblad wordt alleen weergegeven als de **[!UICONTROL Generate target recovery statistics]** optie is ingeschakeld.
 
-De informatie over rapportageassen kan worden verwerkt in uitsluitingsanalysegerelateerde rapporten die op het **[!UICONTROL Exploring exclusions]** subtabblad worden opgesteld. Raadpleeg [Resultaten](#exploring-results)verkennen voor meer informatie.
+De informatie over rapportageassen kan worden verwerkt in uitsluitingsanalysegerelateerde rapporten die op het **[!UICONTROL Exploring exclusions]** subtabblad worden opgesteld. For more on this, refer to [Exploring results](#exploring-results).
