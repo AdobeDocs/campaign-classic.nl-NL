@@ -11,11 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 discoiquuid: 3c8388d8-1a91-4d16-a8ac-016f643c6009
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
 
 ## Over het gegevensmodel voor transactieberichten {#about-transactional-messaging-datamodel}
 
-Transactieberichten zijn afhankelijk van het gegevensmodel van de Campagne van Adobe, en gebruiken twee extra afzonderlijke lijsten. Deze [tabellen](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** en **NmsBatchEvent**, bevatten dezelfde velden en laten u gebeurtenissen in real time aan de ene kant en gebeurtenissen in batch aan de andere kant beheren.
+Transactioneel overseinen baseert zich op het de gegevensmodel van Adobe Campaign, en gebruikt twee extra afzonderlijke lijsten. Deze [tabellen](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** en **NmsBatchEvent**, bevatten dezelfde velden en laten u gebeurtenissen in real time aan de ene kant en gebeurtenissen in batch aan de andere kant beheren.
 
 ## SOAP-methoden {#soap-methods}
 
@@ -162,11 +162,11 @@ Voorbeeld van gegevens:
 
 ## Informatie die wordt geretourneerd door de SOAP-aanroep {#information-returned-by-the-soap-call}
 
-Wanneer Adobe Campaign een gebeurtenis ontvangt, wordt een unieke retour-id gegenereerd. Dit is de id van de gearchiveerde versie van de gebeurtenis.
+Wanneer Adobe Campaign een gebeurtenis ontvangt, genereert het een unieke retour-id. Dit is de id van de gearchiveerde versie van de gebeurtenis.
 
 >[!CAUTION]
 >
->Wanneer u SOAP-aanroepen ontvangt, controleert Adobe Campaign de indeling van het e-mailadres. Als een e-mailadres onjuist is opgemaakt, wordt een fout geretourneerd.
+>Bij het ontvangen van SOAP-aanroepen verifieert Adobe Campaign de indeling van het e-mailadres. Als een e-mailadres onjuist is opgemaakt, wordt een fout geretourneerd.
 
 * Voorbeeld van een id die door de methode wordt geretourneerd wanneer de gebeurtenisverwerking is geslaagd:
 
@@ -180,7 +180,7 @@ Wanneer Adobe Campaign een gebeurtenis ontvangt, wordt een unieke retour-id gege
    </SOAP-ENV:Envelope>
    ```
 
-Als de waarde van de retour-id strikt groter is dan nul, betekent dit dat de gebeurtenis is gearchiveerd in Adobe Campaign.
+Als de waarde van de retour-id strikt groter is dan nul, betekent dit dat de gebeurtenis met succes is gearchiveerd in Adobe Campaign.
 
 Als de gebeurtenis echter niet kan worden verwerkt, retourneert de methode een foutbericht of een waarde die gelijk is aan nul.
 
