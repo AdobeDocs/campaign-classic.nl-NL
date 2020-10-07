@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 discoiquuid: 8e575da0-c51a-4106-a826-3e1771e63649
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '3232'
+ht-degree: 37%
 
 ---
 
@@ -40,82 +40,82 @@ Hieronder volgt een lijst met de beschikbare operatoren:
  </thead> 
  <tbody> 
   <tr> 
-   <td> <span class="uicontrol">Gelijk aan</span><br /> </td> 
+   <td> <span class="uicontrol">Equal to</span> <br /> </td> 
    <td> Retourneert een resultaat dat identiek is aan de gegevens die zijn ingevoerd in de tweede kolom Waarde.<br /> </td> 
    <td> <strong>Achternaam (@lastName) gelijk aan 'Jones'</strong>retourneert alleen ontvangers met als achternaam Jones.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Groter dan</span><br /> </td> 
+   <td> <span class="uicontrol">Greater than</span> <br /> </td> 
    <td> Retourneert een waarde die groter is dan de ingevoerde waarde.<br /> </td> 
    <td> <strong>Leeftijd (@tijdperk) groter dan 50</strong>, geeft alle waarden groter dan '50', d.w.z. "51", "52", enz.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Kleiner dan</span><br /> </td> 
+   <td> <span class="uicontrol">Less than</span> <br /> </td> 
    <td> Retourneert een waarde die kleiner is dan de ingevoerde waarde.<br /> </td> 
    <td> <strong>Aanmaakdatum (@created) voor 'DaysAgo(100)'</strong>, retourneert alle ontvangers die minder dan 100 dagen geleden zijn gemaakt.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Groter dan of gelijk aan</span><br /> </td> 
+   <td> <span class="uicontrol">Greater than or equal to</span> <br /> </td> 
    <td> Retourneert alle waarden die gelijk zijn aan of groter zijn dan de ingevoerde waarde.<br /> </td> 
    <td> <strong>Leeftijd (@age) groter dan of gelijk aan '30'</strong>, retourneert alle ontvangers van 30 jaar of ouder.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Kleiner dan of gelijk aan</span><br /> </td> 
+   <td> <span class="uicontrol">Less than or equal to</span> <br /> </td> 
    <td> Retourneert alle waarden die gelijk zijn aan of lager zijn dan de ingevoerde waarde.<br /> </td> 
    <td> <strong>Leeftijd (@age) kleiner dan of gelijk aan '60'</strong>, retourneert alle ontvangers van 60 jaar of ouder.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Niet gelijk aan</span><br /> </td> 
+   <td> <span class="uicontrol">Niet gelijk aan</span> <br /> </td> 
    <td> Retourneert alle waarden die niet identiek zijn aan de ingevoerde waarde.<br /> </td> 
    <td> <strong>Taal (@taal) gelijk aan 'Engels'</strong>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Begint met</span><br /> </td> 
+   <td> <span class="uicontrol">Begint met</span> <br /> </td> 
    <td> Retourneert de resultaten die beginnen met de ingevoerde waarde.<br /> </td> 
    <td> <strong>Account # (@account) begint met '32010'.</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Begint niet met</span><br /> </td> 
+   <td> <span class="uicontrol">Begint niet met</span> <br /> </td> 
    <td> Retourneert de resultaten die niet beginnen met de ingevoerde waarde.<br /> </td> 
    <td> <strong>Account # (@account) begint niet met '20'</strong>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Bevat</span><br /> </td> 
+   <td> <span class="uicontrol">Contains</span> <br /> </td> 
    <td> Retourneert de resultaten die ten minste de ingevoerde waarde bevatten.<br /> </td> 
    <td> <strong>E-maildomein (@domain) bevat 'mail'</strong>, retourneert alle domeinnamen die 'mail' bevatten. Het domein 'gmail.com' wordt dus ook geretourneerd.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Bevat</span> niet <br /> </td> 
+   <td> <span class="uicontrol">Bevat niet</span> <br /> </td> 
    <td> Retourneert resultaten die niet de ingevoerde waarde bevatten.<br /> </td> 
    <td> <strong>E-maildomein (@domein) bevat geen 'vo'</strong>. In dit geval worden domeinnamen die 'vo' bevatten, niet geretourneerd. De domeinnaam voila.fr wordt niet weergegeven in de resultaten.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">leuk</span><br /> </td> 
-   <td> <span class="uicontrol">Zoals</span> lijkt het op de operator <span class="uicontrol">Bevat</span> . Hiermee kunt u een <span class="uicontrol">%</span> jokerteken in de waarde invoegen.<br /> </td> 
+   <td> <span class="uicontrol">Like</span> <br /> </td> 
+   <td> <span class="uicontrol">Like</span> lijkt heel sterk op de operator <span class="uicontrol">Contains</span>. Hiermee kunt u een <span class="uicontrol">%</span> jokerteken in de waarde invoegen.<br /> </td> 
    <td> <strong>Achternaam (@lastName) zoals 'Jon%s'</strong>. Hier wordt het jokerteken gebruikt als een joker om de naam Jones te vinden, mocht de operator de ontbrekende letter tussen de 'n' en 's' vergeten hebben.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Niet leuk</span><br /> </td> 
-   <td> Is gelijkaardig aan <span class="uicontrol">als</span> . Hiermee kunt u de ingevoerde waarde niet herstellen. Ook hier moet de ingevoerde waarde het teken <span class="uicontrol">%</span> wild bevatten.<br /> </td> 
+   <td> <span class="uicontrol">Not like</span> <br /> </td> 
+   <td> Heeft overeenkomsten met <span class="uicontrol">Like</span> . Hiermee kunt u de ingevoerde waarde niet herstellen. Ook hier moet de ingevoerde waarde het jokerteken <span class="uicontrol">%</span> bevatten.<br /> </td> 
    <td> <strong>Achternaam (@lastName) houdt niet van 'Smi%h'</strong>. Hier worden de ontvangers met de achternaam 'Smi%h' niet geretourneerd.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Is leeg</span><br /> </td> 
+   <td> <span class="uicontrol">Is empty</span> <br /> </td> 
    <td> In dit geval komt het resultaat dat we zoeken overeen met een lege waarde in de tweede kolom Waarde.<br /> </td> 
    <td> <strong>Mobiele (@mobilePhone) is leeg</strong> en retourneert alle ontvangers die geen mobiel nummer hebben.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Is niet leeg</span><br /> </td> 
+   <td> <span class="uicontrol">Is niet leeg</span> <br /> </td> 
    <td> Werkt in omgekeerde volgorde naar de operator <span class="uicontrol">Is leeg</span> . Het is niet nodig gegevens in te voeren in de tweede kolom Waarde.<br /> </td> 
    <td> <strong>E-mail (@email) is niet leeg</strong>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Is opgenomen in</span><br /> </td> 
+   <td> <span class="uicontrol">Is opgenomen in</span> <br /> </td> 
    <td> Retourneert resultaten die zijn opgenomen in de aangegeven waarden. Deze waarden moeten door een komma worden gescheiden.<br /> </td> 
    <td> <strong>Geboortedatum (@geboortedatum) is opgenomen in 12-10-1979.12-10-1984'</strong>, en retourneert de ontvangers die geboren zijn tussen deze data. <br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Is niet opgenomen in</span><br /> </td> 
+   <td> <span class="uicontrol">Is niet opgenomen in</span> <br /> </td> 
    <td> Werkt zoals <span class="uicontrol">Is inbegrepen in</span> exploitant. Hier, willen wij ontvangers uitsluiten die op de ingegane waarden worden gebaseerd.<br /> </td> 
    <td> <strong>Geboortedatum (@geboortedatum) is niet opgenomen in 10-12-1979.12-10-1984"</strong>. Anders dan in het vorige voorbeeld worden ontvangers die binnen deze datums geboren zijn, niet geretourneerd.<br /> </td> 
   </tr> 
@@ -218,7 +218,7 @@ De verschillende categorieën velden:
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_02.png" /> </td> 
    <td> Buitenlandse sleutel. Wordt gebruikt als een koppeling naar een andere tabel.<br /> </td> 
-   <td> Ontvanger buitenlandse sleutel, buitenlandse servicetoets, enz.<br /> </td> 
+   <td> Ontvanger buitenlandse sleutel, buitenlandse servicesleutel, enz.<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_46.png" /> </td> 
@@ -272,7 +272,7 @@ Koppeling maken naar een tabel en verzamelingselement:
 
 ## Berekende velden maken {#creating-calculated-fields}
 
-Voeg zo nodig een kolom toe tijdens het opmaken van gegevens. Een berekend veld voegt een kolom toe aan de sectie met de voorvertoning van gegevens. Klik **[!UICONTROL Add a calculated field]**.
+Voeg zo nodig een kolom toe tijdens het opmaken van gegevens. Een berekend veld voegt een kolom toe aan de sectie met de voorvertoning van gegevens. Klik op **[!UICONTROL Add a calculated field]**.
 
 ![](assets/query_editor_nveau_43.png)
 
@@ -323,7 +323,7 @@ Voer de volgende stappen uit:
 
    Er zijn verschillende typen beschikbare formules: **[!UICONTROL Field only]**, **[!UICONTROL Aggregate]**, **[!UICONTROL Expression]**.
 
-   Selecteer **[!UICONTROL Process on an aggregate function]**, en **[!UICONTROL Count]**. Klik **[!UICONTROL Next]**.
+   Select **[!UICONTROL Process on an aggregate function]**, and **[!UICONTROL Count]**. Click **[!UICONTROL Next]**.
 
    ![](assets/query_editor_nveau_54.png)
 
@@ -374,12 +374,12 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   <tr> 
    <td> <strong>Avg</strong><br /> </td> 
    <td> Hiermee wordt het gemiddelde van een kolom met getaltypen geretourneerd<br /> </td> 
-   <td> Avg(&lt;value&gt;)<br /></td> 
+   <td> Avg(&lt;waarde&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Aantal</strong><br /> </td> 
-   <td> Telt de waarden in een kolom die niet 'null' zijn<br /> </td> 
-   <td> Count(&lt;value&gt;)<br /></td>  
+   <td> Counts the non-null values of a column<br /> </td> 
+   <td> Count(&lt;waarde&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>CountAll</strong><br /> </td> 
@@ -388,18 +388,18 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   </tr> 
   <tr> 
    <td> <strong>Aftelbaar</strong><br /> </td> 
-   <td> Telt de verschillende waarden van een kolom die niet 'null' zijn<br /> </td> 
-   <td> Countdifferent(&lt;value&gt;)<br /></td> 
+   <td> Counts the distinct non-null values of a column<br /> </td> 
+   <td> Countdistinct(&lt;waarde&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Max</strong><br /> </td> 
-   <td> Retourneert de maximumwaarde van een getal, tekenreeks of datumtekstkolom<br /> </td> 
-   <td> Max(&lt;value&gt;)<br /></td>  
+   <td> Returns the maximum value of a number, string, or date type column<br /> </td> 
+   <td> Max(&lt;waarde&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>Min</strong><br /> </td> 
-   <td> Hiermee wordt de minimumwaarde van een kolom met een getal, tekenreeks of datumtype geretourneerd<br /> </td> 
-   <td> Min(&lt;value&gt;)<br /></td> 
+   <td> Returns the minimum value of a number, string or date type column<br /> </td> 
+   <td> Min(&lt;waarde&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>StdDev</strong><br /> </td> 
@@ -409,12 +409,12 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   <tr> 
    <td> <strong>Som</strong><br /> </td> 
    <td> Hiermee wordt de som van de waarden van een getal, tekenreeks of kolom met het gegevenstype geretourneerd<br /> </td> 
-   <td> Sum(&lt;value&gt;)<br /></td> 
+   <td> Sum(&lt;waarde&gt;)<br /></td> 
   </tr> 
  </tbody> 
 </table>
 
-**String**
+**Tekenreeks**
 
 <table> 
  <tbody> 
@@ -426,37 +426,37 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   <tr> 
    <td> <strong>AllNonNull2</strong><br /> </td> 
    <td> Geeft aan of alle parameters niet null en niet leeg zijn<br /> </td> 
-   <td> AllNonNull2(&lt;string&gt;, &lt;string&gt;)<br /></td> 
+   <td> AllNonNull2(&lt;tekenreeks&gt;, &lt;tekenreeks&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>AllNonNull3</strong><br /> </td> 
    <td> Geeft aan of alle parameters niet null en niet leeg zijn<br /> </td> 
-   <td> AllNonNull3(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td> 
+   <td> AllNonNull3(&lt;tekenreeks&gt;, &lt;tekenreeks&gt;, &lt;tekenreeks&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Ascii</strong><br /> </td> 
-   <td> Retourneert de ASCII-waarde van het eerste teken in de tekenreeks.<br /> </td> 
-   <td> Ascii(&lt;string&gt;)<br /></td> 
+   <td> Hiermee wordt de ASCII-waarde van het eerste teken in de tekenreeks geretourneerd.<br /> </td> 
+   <td> Ascii(&lt;tekenreeks&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Char</strong><br /> </td> 
-   <td> Hiermee wordt het teken geretourneerd dat overeenkomt met de ASCII-code 'n'<br /> </td> 
-   <td> Char(&lt;number&gt;)<br /></td>  
+   <td> Hiermee wordt het teken geretourneerd dat overeenkomt met de ASCII-code ‘n’<br /> </td> 
+   <td> Char(&lt;nummer&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>Charindex</strong><br /> </td> 
    <td> Retourneert de positie van tekenreeks 2 in tekenreeks 1.<br /> </td> 
-   <td> Charindex(&lt;string&gt;, &lt;string&gt;)<br /></td> 
+   <td> Charindex(&lt;tekenreeks&gt;, &lt;tekenreeks&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>GetLine</strong><br /> </td> 
-   <td> Retourneert de nde (van 1 tot en met n) regel van de tekenreeks<br /> </td> 
-   <td> GetLine(&lt;string&gt;)<br /></td> 
+   <td> Retourneert de n-de (van 1 tot en met n) regel van de tekenreeks<br /> </td> 
+   <td> GetLine(&lt;tekenreeks&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>IfEquals</strong><br /> </td> 
    <td> Retourneert de derde parameter als de eerste twee parameters gelijk zijn. Indien niet, wordt de laatste parameter geretourneerd<br /> </td> 
-   <td> IfEquals(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td> 
+   <td> IfEquals(&lt;tekenreeks&gt;, &lt;tekenreeks&gt;, &lt;tekenreeks&gt;, &lt;tekenreeks&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>IsMemoNull</strong><br /> </td> 
@@ -466,12 +466,12 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   <tr> 
    <td> <strong>JuxtWords</strong><br /> </td> 
    <td> Voegt de doorgegeven tekenreeksen samen als parameters. Voegt indien nodig spaties tussen de tekenreeksen toe.<br /> </td> 
-   <td> JuxtWords(&lt;string&gt;, &lt;string&gt;)<br /></td> 
+   <td> JuxtWords(&lt;tekenreeks&gt;, &lt;tekenreeks&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>JuxtWords3</strong><br /> </td> 
    <td> Voegt de doorgegeven tekenreeksen samen als parameters. Voegt indien nodig spaties tussen de tekenreeksen toe<br /> </td> 
-   <td> JuxtWords3(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td>  
+   <td> JuxtWords3(&lt;tekenreeks&gt;, &lt;tekenreeks&gt;, &lt;tekenreeks&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>LPad</strong><br /> </td> 
@@ -479,59 +479,59 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
    <td> LPad(&lt;string&gt;, &lt;number&gt;, &lt;character&gt;)<br /></td> 
   </tr> 
   <tr> 
-   <td> <strong>Links</strong><br /> </td> 
+   <td> <strong>Left</strong><br /> </td> 
    <td> Retourneert de eerste n tekens van de tekenreeks<br /> </td> 
-   <td> Left(&lt;string&gt;, &lt;number&gt;)<br /></td> 
+   <td> Left(&lt;tekenreeks&gt;, &lt;nummer&gt;)<br /></td> 
   </tr> 
   <tr> 
-   <td> <strong>Lengte</strong><br /> </td> 
+   <td> <strong>Length</strong><br /> </td> 
    <td> Retourneert de lengte van de tekenreeks<br /> </td> 
-   <td> Lengte (&lt;string&gt;)<br /></td> 
+   <td> Length(&lt;tekenreeks&gt;)<br /></td> 
   </tr> 
   <tr> 
-   <td> <strong>Onder</strong><br /> </td> 
+   <td> <strong>Lower</strong><br /> </td> 
    <td> Hiermee wordt de tekenreeks in kleine letters geretourneerd<br /> </td> 
-   <td> Lower(&lt;string&gt;)<br /></td> 
+   <td> Lower(&lt;tekenreeks&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Ltrim</strong><br /> </td> 
    <td> Hiermee worden spaties links van de tekenreeks verwijderd<br /> </td> 
-   <td> Ltrim(&lt;string&gt;)<br /></td> 
+   <td> Ltrim(&lt;tekenreeks&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Md5Digest</strong><br /> </td> 
-   <td> Retourneert een hexadecimale representatie van de toets MD5 van een tekenreeks<br /> </td> 
-   <td> Md5Digest(&lt;string&gt;)<br /></td> 
+   <td> Retourneert een hexadecimale representatie van de MD5-toets van een tekenreeks<br /> </td> 
+   <td> Md5Digest(&lt;tekenreeks&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>MemoContains</strong><br /> </td> 
    <td> Hiermee wordt opgegeven of het memo de tekenreeks bevat die als parameter is doorgegeven<br /> </td> 
-   <td> MemoContains(&lt;memo&gt;, &lt;string&gt;)<br /></td> 
+   <td> MemoContains(&lt;memo&gt;, &lt;tekenreeks&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>RPad</strong><br /> </td> 
    <td> Hiermee wordt de voltooide tekenreeks aan de rechterkant geretourneerd<br /> </td> 
-   <td> RPad(&lt;string&gt;, &lt;number&gt;, &lt;character&gt;)<br /></td> 
+   <td> RPad(&lt;tekenreeks&gt;, &lt;nummer&gt;, &lt;teken&gt;)<br /></td> 
   </tr> 
   <tr> 
-   <td> <strong>Rechts</strong><br /> </td> 
+   <td> <strong>Right</strong><br /> </td> 
    <td> Retourneert de laatste n tekens van de tekenreeks<br /> </td> 
-   <td> Right(&lt;string&gt;)<br /> </td> 
+   <td> Right(&lt;tekenreeks&gt;)<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Rtrim</strong><br /> </td> 
    <td> Hiermee worden spaties rechts van de tekenreeks verwijderd<br /> </td> 
-   <td> Rtrim(&lt;string&gt;)<br /> </td> 
+   <td> Rtrim(&lt;tekenreeks&gt;)<br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Slim</strong><br /> </td> 
+   <td> <strong>Smart</strong><br /> </td> 
    <td> Retourneert de tekenreeks met de eerste letter van elk woord in hoofdletters<br /> </td> 
-   <td> Smart(&lt;string&gt;)<br /> </td> 
+   <td> Smart(&lt;tekenreeks&gt;)<br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Subtekenreeks</strong><br /> </td> 
-   <td> Hiermee wordt de subtekenreeks opgehaald die begint op teken n1 van de tekenreeks en lengte n2<br /> </td> 
-   <td> Substring(&lt;string&gt;, &lt;offset&gt;, &lt;length&gt;)<br /> </td>  
+   <td> <strong>Substring</strong><br /> </td> 
+   <td> Extracts the substring starting at character n1 of the string and of length n2<br /> </td> 
+   <td> Substring(&lt;tekenreeks&gt;, &lt;offset&gt;, &lt;lengte&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>ToString</strong><br /> </td> 
@@ -539,23 +539,23 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
    <td> ToString(&lt;number&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Bovenkant</strong><br /> </td> 
+   <td> <strong>Upper</strong><br /> </td> 
    <td> Hiermee wordt de tekenreeks in hoofdletters geretourneerd<br /> </td> 
-   <td> Upper(&lt;string&gt;)<br /> </td>  
+   <td> Upper(&lt;tekenreeks&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>VirtualLink</strong><br /> </td> 
    <td> Retourneert de externe sleutel van een koppeling die als een parameter is doorgegeven als de andere twee parameters gelijk zijn<br /> </td> 
-   <td> VirtualLink(&lt;number&gt;, &lt;number&gt;, &lt;number&gt;)<br /> </td>  
+   <td> VirtualLink(&lt;nummer&gt;, &lt;nummer&gt;, &lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>VirtualLinkStr</strong><br /> </td> 
-   <td> Retourneert de externe (tekst) sleutel van een koppeling die als parameter wordt doorgegeven als de andere twee parameters gelijk zijn<br /> </td> 
-   <td> VirtualLinkStr(&lt;string&gt;, &lt;number&gt;, &lt;number&gt;)<br /> </td>  
+   <td> Retourneert de externe sleutel (tekst) van een koppeling die als parameter wordt doorgegeven als de andere twee parameters gelijk zijn<br /> </td> 
+   <td> VirtualLinkStr(&lt;tekenreeks&gt;, &lt;nummer&gt;, &lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>dataLength</strong><br /> </td> 
-   <td> Hiermee wordt de tekenreeksgrootte geretourneerd<br /> </td> 
+   <td> Returns the string size<br /> </td> 
    <td> dataLength(&lt;string&gt;)<br /> </td>  
   </tr> 
  </tbody> 
@@ -573,57 +573,57 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   <tr> 
    <td> <strong>AddDays</strong><br /> </td> 
    <td> Hiermee voegt u een aantal dagen toe aan een datum<br /> </td> 
-   <td> AddDays(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
+   <td> AddDays(&lt;datum&gt;, &lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>AddHours</strong><br /> </td> 
    <td> Hiermee voegt u een aantal uren toe aan een datum<br /> </td> 
-   <td> AddHours(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
+   <td> AddHours(&lt;datum&gt;, &lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>AddMinutes</strong><br /> </td> 
-   <td> Hiermee wordt een aantal minuten toegevoegd aan een datum<br /> </td> 
-   <td> AddMinutes(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
+   <td> Hiermee voegt u een aantal minuten toe aan een datum<br /> </td> 
+   <td> AddMinutes(&lt;datum&gt;, &lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>AddMonths</strong><br /> </td> 
    <td> Hiermee voegt u een aantal maanden toe aan een datum<br /> </td> 
-   <td> AddMonths(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
+   <td> AddMonths(&lt;datum&gt;, &lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>AddSeconds</strong><br /> </td> 
-   <td> Hiermee wordt een aantal seconden toegevoegd aan een datum<br /> </td> 
-   <td> AddSeconds(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
+   <td> Hiermee voegt u een aantal seconden toe aan een datum<br /> </td> 
+   <td> AddSeconds(&lt;datum&gt;, &lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>AddYaren</strong><br /> </td> 
-   <td> Hiermee wordt een aantal jaren toegevoegd aan een datum<br /> </td> 
-   <td> AddYear(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
+   <td> <strong>AddYears</strong><br /> </td> 
+   <td> Hiermee voegt u een aantal jaren toe aan een datum<br /> </td> 
+   <td> AddYear(&lt;datum&gt;, &lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DateOnly</strong><br /> </td> 
-   <td> Retourneert alleen de datum (met tijd om 00:00)*<br /> </td> 
-   <td> DateOnly(&lt;date&gt;)<br /> </td>  
+   <td> Retourneert alleen de datum (met de tijd 00:00)*<br /> </td> 
+   <td> DateOnly(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Dag</strong><br /> </td> 
+   <td> <strong>Day</strong><br /> </td> 
    <td> Retourneert het getal dat de dag van de datum vertegenwoordigt<br /> </td> 
-   <td> Dag (&lt;datum&gt;)<br /> </td>  
+   <td> Day(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DayOfYear</strong><br /> </td> 
-   <td> Retourneert het getal van de dag in het jaar van de datum<br /> </td> 
-   <td> DayOfYear(&lt;date&gt;)<br /> </td>  
+   <td> Returns the number of the day in the year of the date<br /> </td> 
+   <td> DayOfYear(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DaysAgo</strong><br /> </td> 
-   <td> Retourneert de datum die overeenkomt met de huidige datum min n dagen<br /> </td> 
-   <td> DaysAgo(&lt;number&gt;)<br /> </td>  
+   <td> Returns the date corresponding to the current date minus n days<br /> </td> 
+   <td> DaysAgo(&lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DaysAgoInt</strong><br /> </td> 
-   <td> Retourneert de datum (geheel getal jjjjmmdd) die overeenkomt met de huidige datum min n dagen<br /> </td> 
-   <td> DaysAgoInt(&lt;number&gt;)<br /> </td>  
+   <td> Returns the date (integer yyyymmdd) corresponding to the current date minus n days<br /> </td> 
+   <td> DaysAgoInt(&lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DaysDiff</strong><br /> </td> 
@@ -633,7 +633,7 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   <tr> 
    <td> <strong>DaysOld</strong><br /> </td> 
    <td> Retourneert de leeftijd in dagen van een datum<br /> </td> 
-   <td> DaysOld(&lt;date&gt;)<br /> </td>  
+   <td> DaysOld(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>GetDate</strong><br /> </td> 
@@ -641,9 +641,9 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
    <td> GetDate()<br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Uur</strong><br /> </td> 
+   <td> <strong>Hour</strong><br /> </td> 
    <td> Retourneert het uur van de datum<br /> </td> 
-   <td> Uur(&lt;datum&gt;)<br /> </td>  
+   <td> Hour(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>HoursDiff</strong><br /> </td> 
@@ -651,39 +651,39 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
    <td> HoursDiff(&lt;einddatum&gt;, &lt;begindatum&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Minuut</strong><br /> </td> 
+   <td> <strong>Minute</strong><br /> </td> 
    <td> Retourneert de minuten van de datum<br /> </td> 
-   <td> Minuut(&lt;date&gt;)<br /> </td>  
+   <td> Minute(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>MinutesDiff</strong><br /> </td> 
    <td> Retourneert het aantal minuten tussen twee datums<br /> </td> 
-   <td> MinutesDiff(&lt;end date&gt;, &lt;start date&gt;)<br /> </td>  
+   <td> MinutesDiff(&lt;einddatum&gt;, &lt;begindatum&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Maand</strong><br /> </td> 
+   <td> <strong>Month</strong><br /> </td> 
    <td> Retourneert het getal dat de maand van de datum vertegenwoordigt<br /> </td> 
-   <td> Maand (&lt;datum&gt;)<br /> </td>  
+   <td> Month(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>MonthsAgo</strong><br /> </td> 
-   <td> Retourneert de datum die overeenkomt met de huidige datum min n maanden<br /> </td> 
-   <td> MonthsAgo(&lt;number&gt;)<br /> </td>  
+   <td> Retourneert de datum die overeenkomt met de huidige datum minus n maanden<br /> </td> 
+   <td> MonthsAgo(&lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>MonthsDiff</strong><br /> </td> 
    <td> Retourneert het aantal maanden tussen twee datums<br /> </td> 
-   <td> MonthsDiff(&lt;end date&gt;, &lt;start date&gt;)<br /> </td>  
+   <td> MonthsDiff(&lt;einddatum&gt;, &lt;begindatum&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>MonthsOld</strong><br /> </td> 
    <td> Retourneert de leeftijd in maanden van een datum<br /> </td> 
-   <td> MonthsOld(&lt;date&gt;)<br /> </td>  
+   <td> MonthsOld(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Seconde</strong><br /> </td> 
-   <td> Hiermee worden de seconden van de datum geretourneerd<br /> </td> 
-   <td> Second(&lt;date&gt;)<br /> </td>  
+   <td> <strong>Second</strong><br /> </td> 
+   <td> Retourneert de seconden van de datum<br /> </td> 
+   <td> Second(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>SecondsDiff</strong><br /> </td> 
@@ -691,99 +691,99 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
    <td> SecondsDiff(&lt;einddatum&gt;, &lt;begindatum&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Subdagen</strong><br /> </td> 
+   <td> <strong>SubDays</strong><br /> </td> 
    <td> Hiermee trekt u een aantal dagen van een datum af<br /> </td> 
-   <td> SubDays(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
+   <td> SubDays(&lt;datum&gt;, &lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>SubHours</strong><br /> </td> 
-   <td> Hiermee wordt een aantal uren van een datum afgetrokken<br /> </td> 
-   <td> SubHours(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
+   <td> Hiermee trekt u een aantal uren van een datum af<br /> </td> 
+   <td> SubHours(&lt;datum&gt;, &lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>SubMinutes</strong><br /> </td> 
-   <td> Hiermee wordt een aantal minuten van een datum afgetrokken<br /> </td> 
-   <td> SubMinutes(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
+   <td> Hiermee trekt u een aantal aantal minuten van een datum af<br /> </td> 
+   <td> SubMinutes(&lt;datum&gt;, &lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Submaanden</strong><br /> </td> 
+   <td> <strong>SubMonths</strong><br /> </td> 
    <td> Hiermee trekt u een aantal maanden van een datum af<br /> </td> 
-   <td> SubMonths(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
+   <td> SubMonths(&lt;datum&gt;, &lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>SubSeconds</strong><br /> </td> 
-   <td> Trekt een aantal seconden van een datum af<br /> </td> 
-   <td> SubSeconds(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
+   <td> Hiermee trekt u een aantal seconden van een datum af<br /> </td> 
+   <td> SubSeconds(&lt;datum&gt;, &lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Subjaren</strong><br /> </td> 
+   <td> <strong>SubYears</strong><br /> </td> 
    <td> Hiermee trekt u een aantal jaren van een datum af<br /> </td> 
-   <td> Subjaren(&lt;date&gt;, &lt;number&gt;)<br /> </td>  
+   <td> SubYears(&lt;datum&gt;, &lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>ToDate</strong><br /> </td> 
    <td> Converteert een datum + tijd als datum<br /> </td> 
-   <td> TotDatum (&lt;datum + tijd&gt;)<br /> </td>  
+   <td> ToDate(&lt;datum + tijd&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>ToDateTime</strong><br /> </td> 
    <td> Zet een tekenreeks om in een datum + tijd<br /> </td> 
-   <td> ToDateTime(&lt;string&gt;)<br /> </td>  
+   <td> ToDateTime(&lt;tekenreeks&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>TruncDate</strong><br /> </td> 
-   <td> Rondt een datum+tijd aan het dichtstbijzijnde tweede<br /> </td> 
+   <td> Rondt een datum+tijd af naar de dichtstbijzijnde seconde<br /> </td> 
    <td> TruncDate(@lastModified, &lt;aantal seconden&gt;)<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>TruncDateTZ</strong><br /> </td> 
-   <td> Rondt een datum + tijd aan een bepaalde precisie die in seconden wordt uitgedrukt<br /> </td> 
-   <td> TruncDateTZ(&lt;date&gt;, &lt;number of seconds&gt;, &lt;time zone&gt;)<br /> </td> 
+   <td> Rondt een datum + tijd af naar een bepaalde precisie die in seconden wordt uitgedrukt<br /> </td> 
+   <td> TruncDateTZ(&lt;datum&gt;, &lt;aantal seconden&gt;, &lt;tijdzone&gt;)<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>TruncQuarter</strong><br /> </td> 
-   <td> Rondt een datum af op het kwartaal<br /> </td> 
-   <td> TruncQuarter(&lt;date&gt;)<br /> </td>  
+   <td> Rondt een datum af naar het kwartaal<br /> </td> 
+   <td> TruncQuarter(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>TruncTime</strong><br /> </td> 
-   <td> Rondt het tijdsdeel af tot de dichtstbijzijnde seconde<br /> </td> 
+   <td> Rondt het tijdsdeel af naar de dichtstbijzijnde seconde<br /> </td> 
    <td> TruncTim(e&lt;date&gt;, &lt;number of seconds&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>TruncWeek</strong><br /> </td> 
    <td> Rondt een datum af naar de week<br /> </td> 
-   <td> TruncWeek(&lt;date&gt;)<br /> </td>  
+   <td> TruncWeek(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>TruncYear</strong><br /> </td> 
-   <td> Rondt een datum + tijd tot 1 januari van het jaar<br /> </td> 
-   <td> TruncYear(&lt;date&gt;)<br /> </td>  
+   <td> Rondt een datum + tijd naar 1 januari van het jaar<br /> </td> 
+   <td> TruncYear(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>TruncWeek</strong><br /> </td> 
    <td> Retourneert het getal dat de dag in de week van de datum vertegenwoordigt<br /> </td> 
-   <td> WeekDay(&lt;date&gt;)<br /> </td>  
+   <td> WeekDay(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Jaar</strong><br /> </td> 
+   <td> <strong>Year</strong><br /> </td> 
    <td> Retourneert het getal dat het jaar van de datum vertegenwoordigt<br /> </td> 
-   <td> Jaar (&lt;datum&gt;)<br /> </td>  
+   <td> Year(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Jaar en maand</strong><br /> </td> 
+   <td> <strong>YearAnd Month</strong><br /> </td> 
    <td> Retourneert het getal dat het jaar en de maand van de datum vertegenwoordigt.<br /> </td> 
-   <td> YearAndMonth(&lt;date&gt;)<br /> </td>  
+   <td> YearAndMonth(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>YearDiff</strong><br /> </td> 
    <td> Retourneert het aantal jaren tussen de twee datums<br /> </td> 
-   <td> YarenDiff(&lt;einddatum&gt;, &lt;begindatum&gt;)<br /> </td>  
+   <td> YearsDiff(&lt;einddatum&gt;, &lt;begindatum&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>JarenOud</strong><br /> </td> 
+   <td> <strong>YearsOld</strong><br /> </td> 
    <td> Retourneert de leeftijd in jaren van een datum<br /> </td> 
-   <td> YearOld(&lt;date&gt;)<br /> </td>  
+   <td> YearOld(&lt;datum&gt;)<br /> </td>  
   </tr> 
  </tbody> 
 </table>
@@ -792,7 +792,7 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
 >
 >Merk op dat de functie van **Dateonly** rekening houdt met timezone van de server, niet de exploitant.
 
-**Numeriek**
+**Numerieke waarden**
 
 <table> 
  <tbody> 
@@ -804,71 +804,71 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   <tr> 
    <td> <strong>Abs</strong><br /> </td> 
    <td> Retourneert de absolute waarde van een getal<br /> </td> 
-   <td> Abs(&lt;number&gt;)<br /> </td>  
+   <td> Abs(&lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Ceil</strong><br /> </td> 
    <td> Retourneert het laagste gehele getal dat groter is dan of gelijk is aan een getal<br /> </td> 
-   <td> Ceil(&lt;number&gt;)<br /> </td>  
+   <td> Ceil(&lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Floor</strong><br /> </td> 
-   <td> Retourneert het grootste gehele getal dat groter is dan of gelijk is aan een getal<br /> </td> 
-   <td> Floor(&lt;number&gt;)<br /> </td>  
+   <td> Returns the greatest integer greater than or equal to a number<br /> </td> 
+   <td> Floor(&lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Groter</strong><br /> </td> 
-   <td> Retourneert de grootste van twee getallen<br /> </td> 
-   <td> Greatest(&lt;number 1&gt;, &lt;number 2&gt;)<br /> </td>  
+   <td> <strong>Greatest</strong><br /> </td> 
+   <td> Retourneert het hoogste van twee getallen<br /> </td> 
+   <td> Greatest(&lt;nummer 1&gt;, &lt;nummer 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Minste</strong><br /> </td> 
+   <td> <strong>Least</strong><br /> </td> 
    <td> Retourneert het laagste van twee getallen<br /> </td> 
-   <td> Least(&lt;number 1&gt;, &lt;number 2&gt;)<br /> </td>  
+   <td> Least(&lt;nummer 1&gt;, &lt;nummer 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Mod</strong><br /> </td> 
-   <td> Retourneert de rest van de integer-deling van n1 door n2<br /> </td> 
-   <td> Mod(&lt;number 1&gt;, &lt;number 2&gt;)<br /> </td>  
+   <td> Returns the remainder of the integer division of n1 by n2<br /> </td> 
+   <td> Mod(&lt;nummer 1&gt;, &lt;nummer 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Percentage</strong><br /> </td> 
+   <td> <strong>Percent</strong><br /> </td> 
    <td> Retourneert de verhouding van twee getallen uitgedrukt als een percentage<br /> </td> 
-   <td> Percentage (&lt;number 1&gt;, &lt;number 2&gt;)<br /> </td>  
+   <td> Percent(&lt;nummer 1&gt;, &lt;nummer 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Willekeurig</strong><br /> </td> 
+   <td> <strong>Random</strong><br /> </td> 
    <td> Hiermee wordt de willekeurige waarde geretourneerd<br /> </td> 
    <td> Random()<br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Rond</strong><br /> </td> 
+   <td> <strong>Round</strong><br /> </td> 
    <td> Rondt een getal af naar n decimalen<br /> </td> 
-   <td> Round(&lt;number&gt;, &lt;number of decimal&gt;)<br /> </td>  
+   <td> Round(&lt;nummer&gt;, &lt;aantal decimalen&gt;)<br /> </td>  
   </tr> 
   <tr> 
-   <td> <strong>Ondertekenen</strong><br /> </td> 
+   <td> <strong>Sign</strong><br /> </td> 
    <td> Hiermee wordt het teken van het getal geretourneerd<br /> </td> 
-   <td> Sign(&lt;number&gt;)<br /> </td>  
+   <td> Sign(&lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>ToDouble</strong><br /> </td> 
    <td> Hiermee wordt een geheel getal omgezet in een zwevende waarde<br /> </td> 
-   <td> ToDouble(&lt;number&gt;)<br /> </td>  
+   <td> ToDouble(&lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>ToInt64</strong><br /> </td> 
-   <td> Zet een float om in een 64-bits geheel getal<br /> </td> 
-   <td> ToInt64(&lt;number&gt;)<br /> </td>  
+   <td> Zet een zwevende waarde om in een 64-bits geheel getal<br /> </td> 
+   <td> ToInt64(&lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>ToInteger</strong><br /> </td> 
    <td> Hiermee wordt een zwevende waarde omgezet in een geheel getal<br /> </td> 
-   <td> ToInteger(&lt;number&gt;)<br /> </td>  
+   <td> ToInteger(&lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Trunc</strong><br /> </td> 
-   <td> Aantal decimalen n1 tot n2<br /> </td> 
+   <td> Kapt aantal decimalen af van n1 tot n2<br /> </td> 
    <td> Trunc(&lt;n1&gt;, &lt;n2&gt;)<br /> </td>  
   </tr> 
  </tbody> 
@@ -906,9 +906,9 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
    <td> <strong>Syntaxis</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Afstand</strong><br /> </td> 
-   <td> Retourneert de afstand tussen twee punten die worden gedefinieerd door hun lengte en breedte, uitgedrukt in graden.<br /> </td> 
-   <td> Afstand (&lt;Lengtegraad A&gt;, &lt;Latitude A&gt;, &lt;Lengtegraad B&gt;, &lt;Latitude B&gt;)<br /> </td>  
+   <td> <strong>Distance</strong><br /> </td> 
+   <td> Returns the distance between two points defined by their longitude and latitude, expressed in degrees.<br /> </td> 
+   <td> Distance(&lt;Lengtegraad A&gt;, &lt;Breedtegraad A&gt;, &lt;Lengtegraad B&gt;, &lt;Breedtegraad B&gt;)<br /> </td>  
   </tr> 
  </tbody> 
 </table>
@@ -925,22 +925,22 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   <tr> 
    <td> <strong>Case</strong><br /> </td> 
    <td> Retourneert waarde 1 als de voorwaarde true is. Zo niet, dan wordt waarde 2 geretourneerd.<br /> </td> 
-   <td> Case(When(&lt;condition&gt;, &lt;value 1&gt;), else(&lt;value 2&gt;)<br /> </td> 
+   <td> Case(When(&lt;voorwaarde&gt;, &lt;waarde 1&gt;), Else(&lt;waarde 2&gt;))<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>ClearBit</strong><br /> </td> 
    <td> Hiermee verwijdert u de markering in de waarde<br /> </td> 
-   <td> ClearBit(&lt;identifier&gt;, &lt;flag&gt;)<br /> </td>  
+   <td> ClearBit(&lt;identificatiecode&gt;, &lt;markering&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Coalesce</strong><br /> </td> 
-   <td> Retourneert waarde 2 als waarde 1 nul of null is, anders wordt waarde 1 geretourneerd<br /> </td> 
-   <td> Coalesce(&lt;value 1&gt;, &lt;value 2&gt;)<br /> </td>  
+   <td> Retourneert waarde 2 als waarde 1 null of nihil is, anders wordt waarde 1 geretourneerd<br /> </td> 
+   <td> Coalesce(&lt;waarde 1&gt;, &lt;waarde 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Decode</strong><br /> </td> 
    <td> Retourneert waarde 3 als waarde 1 = waarde 2. Indien geen waarde 4 wordt geretourneerd.<br /> </td> 
-   <td> Decode(&lt;value 1&gt;, &lt;value 2&gt;, &lt;value 3&gt;, &lt;value 4&gt;)<br /> </td>  
+   <td> Decode(&lt;waarde 1&gt;, &lt;waarde 2&gt;, &lt;waarde 3&gt;, &lt;waarde 4&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Else</strong><br /> </td> 
@@ -949,33 +949,33 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   </tr> 
   <tr> 
    <td> <strong>GetEmailDomain</strong><br /> </td> 
-   <td> Extraheert het domein van een e-mailadres<br /> </td> 
-   <td> GetEmailDomain(&lt;value&gt;)<br /> </td>  
+   <td> Extracts the domain from an e-mail address<br /> </td> 
+   <td> GetEmailDomain(&lt;waarde&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>GetMirrorURL</strong><br /> </td> 
-   <td> Hiermee wordt de URL van de server van de spiegel opgehaald<br /> </td> 
-   <td> GetMirrorURL(&lt;value&gt;)<br /> </td>  
+   <td> Hiermee wordt de URL van de server van de spiegelpagina opgehaald<br /> </td> 
+   <td> GetMirrorURL(&lt;waarde&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Iif</strong><br /> </td> 
    <td> Retourneert waarde 1 als de expressie true is. Zo niet, retourneert waarde 2<br /> </td> 
-   <td> Iif(&lt;condition&gt;, &lt;value 1&gt;, &lt;value 2&gt;)<br /> </td>  
+   <td> Iif(&lt;voorwaarde&gt;, &lt;waarde 1&gt;, &lt;waarde 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>IsBitSet</strong><br /> </td> 
    <td> Geeft aan of de markering zich in de waarde bevindt<br /> </td> 
-   <td> IsBitSet(&lt;identifier&gt;, &lt;flag&gt;)<br /> </td>  
+   <td> IsBitSet(&lt;identificatiecode&gt;, &lt;markering&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>IsEmptyString</strong><br /> </td> 
-   <td> Retourneert waarde 2 als tekenreeks 1 leeg is. Retourneert anders waarde 3<br /> </td> 
+   <td> Returns value 2 if string 1 is empty, otherwise returns value 3<br /> </td> 
    <td> IsEmptyString(&lt;value 1&gt;, &lt;value 2&gt;, &lt;value 3&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>NoNull</strong><br /> </td> 
    <td> Retourneert de lege tekenreeks als het argument NULL is<br /> </td> 
-   <td> NoNull(&lt;value&gt;)<br /> </td>   
+   <td> NoNull(&lt;waarde&gt;)<br /> </td>   
   </tr> 
   <tr> 
    <td> <strong>RowId</strong><br /> </td> 
@@ -984,18 +984,18 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   </tr> 
   <tr> 
    <td> <strong>SetBit</strong><br /> </td> 
-   <td> Hiermee wordt de vlag in de waarde geforceerd<br /> </td> 
-   <td> SetBit(&lt;identifier&gt;, &lt;flag&gt;)<br /> </td>  
+   <td> Hiermee wordt de markering in de waarde geforceerd<br /> </td> 
+   <td> SetBit(&lt;identificatiecode&gt;, &lt;markering&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>ToBoolean</strong><br /> </td> 
    <td> Hiermee wordt een getal omgezet in een Booleaanse waarde<br /> </td> 
-   <td> ToBoolean(&lt;number&gt;)<br /> </td>   
+   <td> ToBoolean(&lt;nummer&gt;)<br /> </td>   
   </tr> 
   <tr> 
-   <td> <strong>Wanneer</strong><br /> </td> 
-   <td> Retourneert waarde 1 als de expressie true is. Zo niet, dan wordt waarde 2 geretourneerd (mag alleen worden gebruikt als parameter van de case-functie)<br /> </td> 
-   <td> When(&lt;condition&gt;, &lt;value 1&gt;)<br /> </td>  
+   <td> <strong>When</strong><br /> </td> 
+   <td> Retourneert waarde 1 als de expressie true is. If not, it returns value 2 (may only be used as a parameter of the case function)<br /> </td> 
+   <td> When(&lt;voorwaarde&gt;, &lt;waarde 1&gt;)<br /> </td>  
   </tr> 
  </tbody> 
 </table>
@@ -1012,22 +1012,22 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   <tr> 
    <td> <strong>Desc</strong><br /> </td> 
    <td> Hiermee wordt een aflopende sortering toegepast<br /> </td> 
-   <td> Desc(&lt;value 1&gt;)<br /> </td>  
+   <td> Desc(&lt;waarde 1&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>OrderBy</strong><br /> </td> 
    <td> Hiermee wordt het resultaat binnen de partitie gesorteerd<br /> </td> 
-   <td> OrderBy(&lt;value 1&gt;)<br /> </td>  
+   <td> OrderBy(&lt;waarde 1&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>PartitionBy</strong><br /> </td> 
-   <td> Verdeelt het resultaat van een vraag op een lijst<br /> </td> 
-   <td> PartitionBy(&lt;value 1&gt;)<br /> </td>  
+   <td> Verdeelt het resultaat van een query op een lijst<br /> </td> 
+   <td> PartitionBy(&lt;waarde 1&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>RowNum</strong><br /> </td> 
    <td> Hiermee genereert u een regelnummer op basis van de tabelpartitie en een sorteervolgorde.<br /> </td> 
-   <td> RowNum(PartitionBy(&lt;value 1&gt;), OrderBy(&lt;value 1&gt;))<br /> </td> 
+   <td> RowNum(PartitionBy(&lt;waarde 1&gt;), OrderBy(&lt;waarde 1&gt;))<br /> </td> 
   </tr> 
  </tbody> 
 </table>
