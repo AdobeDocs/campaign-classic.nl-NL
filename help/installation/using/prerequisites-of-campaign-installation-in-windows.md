@@ -1,7 +1,7 @@
 ---
-title: Vereisten voor installatie van campagne in Windows
-seo-title: Vereisten voor installatie van campagne in Windows
-description: Vereisten voor installatie van campagne in Windows
+title: Vereisten voor installatie van Campaign in Windows
+seo-title: Vereisten voor installatie van Campaign in Windows
+description: Vereisten voor installatie van Campaign in Windows
 seo-description: null
 page-status-flag: never-activated
 uuid: 3c030186-d2ab-4845-b5c6-2ed49da00756
@@ -11,20 +11,20 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: faaecbd6-f707-4307-8921-04d8993c2c47
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 19%
 
 ---
 
 
-# Vereisten voor installatie van campagne in Windows{#prerequisites-of-campaign-installation-in-windows}
+# Vereisten voor installatie van Campaign in Windows{#prerequisites-of-campaign-installation-in-windows}
 
-De technische configuratie en software die nodig zijn voor de installatie van Adobe Campaign worden weergegeven in de matrix [Compatibiliteit](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
+De technische configuratie en software die nodig zijn voor de installatie van Adobe Campaign worden weergegeven in de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html).
 
-Het installatieproces van de Adobe Campagneserver voor meervoudig gebruik wordt hieronder beschreven in het [Installeren van de server](../../installation/using/installing-the-server.md).
+Het installatieproces van de Adobe Campaign-server voor meervoudig gebruik wordt hieronder beschreven bij het [installeren van de server](../../installation/using/installing-the-server.md).
 
 De belangrijkste stappen zijn:
 
@@ -35,5 +35,5 @@ Zodra de installatiestappen volledig zijn, moet u de instanties, het gegevensbes
 
 >[!NOTE]
 >
->Wanneer Adobe Campagne aan een milieu van Vensters wordt opgesteld, kunnen de gebruikers met de noodzakelijke toegangsrechten de syntaxis van UNC (Universal.Uniform Naming Convention) voor toegangspaden tijdens dossiermanipulatie op het netwerk gebruiken.
+>Wanneer Adobe Campaign wordt opgesteld aan een milieu van Vensters, kunnen de gebruikers met de noodzakelijke toegangsrechten de syntaxis van UNC (Universal.Uniform Naming Convention) voor toegangspaden tijdens dossiermanipulatie op het netwerk gebruiken.
 
