@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1130'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Sjablonen voor marketingcampagnes {#campaign-templates}
+# Marketing Campaign templates {#campaign-templates}
 
 De malplaatjes van de campagne worden gecentraliseerd in de **[!UICONTROL Resources > Templates > Campaign templates]** knoop. Een standaardsjabloon wordt standaard verschaft. U kunt hiermee een nieuwe campagne maken met alle beschikbare modules (Documenten, Taken, zaadadressen, enz.), maar de aangeboden modules zijn afhankelijk van uw rechten en de configuratie van uw Adobe Campaign-platform.
 
@@ -95,7 +92,7 @@ Bijvoorbeeld met de onderstaande configuratie:
 
 ![](assets/s_ncs_user_op_template_tab1.4.png)
 
-De volgende koppelingen worden weergegeven op het campagneschboard (de **[!UICONTROL Add a task]** koppeling ontbreekt):
+De volgende koppelingen worden weergegeven op het campagnemdashboard (de **[!UICONTROL Add a task]** koppeling ontbreekt):
 
 ![](assets/s_ncs_user_op_template_tab1.3ex.png)
 
@@ -119,7 +116,7 @@ De volgende koppelingen en tabbladen worden weergegeven:
 
    ![](assets/s_ncs_user_op_template_activate_1.png)
 
-* **Zaadadressen**
+* **Seed-adressen**
 
    Wanneer deze module wordt geselecteerd, wordt een extra lusje toegevoegd aan de geavanceerde montages van het malplaatje en de campagnes die op dit malplaatje worden gebaseerd. De configuratie kan via het malplaatje of individueel voor elke campagne worden bepaald.
 
