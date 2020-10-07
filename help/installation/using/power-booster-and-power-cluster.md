@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 715d2b69-5b47-4890-8b7d-1dc0a0d4ead8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '401'
+ht-degree: 7%
 
 ---
 
@@ -24,15 +24,15 @@ source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
 
 ## Overzicht {#overview}
 
-Adobe Campaign biedt u twee sets vooraf verpakte architectuuropties waarmee u uw implementatie kunt afmeten:
+Adobe Campaign biedt u twee sets vooraf verpakte architecturale opties voor het dimensioneren van uw implementatie:
 
 * **Extra voeding**
 
-   Deze optie biedt ondersteuning voor één extra uitvoeringsinstantie die is losgekoppeld van de primaire toepassingsinstantie van Adobe Campagne. Speciale uitvoeringsinstanties kunnen op afstand of door een derde worden gehost. Wanneer geïmplementeerd, worden e-mailuitvoering, bijhouden, spiegel- en stuiterberichten onafhankelijk van de centrale toepassingsfuncties afgehandeld.
+   Deze optie biedt ondersteuning voor één extra uitvoeringsinstantie die is losgekoppeld van de primaire Adobe Campaign-toepassingsinstantie. Speciale uitvoeringsinstanties kunnen op afstand of door een derde worden gehost. Wanneer geïmplementeerd, worden e-mailuitvoering, bijhouden, spiegel- en stuiterberichten onafhankelijk van de centrale toepassingsfuncties afgehandeld.
 
 * **Power Cluster**
 
-   Deze optie biedt ondersteuning voor 2 tot N geclusterde uitvoeringsinstanties, losgekoppeld van de primaire toepassing van Adobe Campagne voor een bepaalde toepassing. Clusters kunnen op afstand, in gedistribueerde implementaties en door derden worden gehost. Naast de voordelen van procesisolatie, maakt de optie van de Cluster van de Macht van de Campagne van Adobe overtolligheid en schaal uit strategieën gebruikend grondstoffenhardware voor vereenvoudigde evolutie van SLA of prestaties mogelijk.
+   Deze optie biedt ondersteuning voor 2 tot N geclusterde uitvoeringsinstanties die zijn losgekoppeld van de primaire Adobe Campaign-toepassingsinstantie met betrekking tot een bepaalde toepassing. Clusters kunnen op afstand, in gedistribueerde implementaties en door derden worden gehost. Naast de voordelen van procesisolatie, maakt de Adobe Campaign Power Cluster-optie redundantie mogelijk en schaalt deze strategieën uit met behulp van gewone hardware voor een vereenvoudigde ontwikkeling van SLA of prestaties.
 
 ![](assets/architectural_options_diagram.png)
 
@@ -40,8 +40,8 @@ Adobe Campaign biedt u twee sets vooraf verpakte architectuuropties waarmee u uw
 
 De opties voor Power Booster en Power Cluster kunnen door de volgende toepassingen worden gebruikt:
 
-* Campagne
-* Aflevering
+* Campaign
+* Levering
 * Berichtencentrum
 
 ## Matrix met architectuuraanbevelingen {#matrix-of-architectural-recommendations}
@@ -61,7 +61,7 @@ De opties voor Power Booster en Power Cluster kunnen door de volgende toepassing
    <td> Meer dan 100 miljoen e-mails per maand<br /> </td> 
   </tr> 
   <tr> 
-   <td> Transactieberichten<br /> </td> 
+   <td> Transactionele berichten<br /> </td> 
    <td> 50.000 per uur per uitvoeringsserver<br /> </td> 
    <td> 50.000 per uur per uitvoeringsserver<br /> </td> 
    <td> 50.000 per uur per uitvoeringsserver<br /> </td> 
@@ -89,7 +89,7 @@ De opties voor Power Booster en Power Cluster kunnen door de volgende toepassing
 
 ## Aanbevelingen {#recommendations}
 
-* Een uitvoeringsinstantie moet aan de dienst worden gewijd. U kunt geen pakket installeren voor een service waarop u zich niet hebt geabonneerd. Als u bijvoorbeeld een abonnement neemt op de optie **Power Booster** voor de service **Message Center** , mag u het **[!UICONTROL Execution of transactional messages]** pakket alleen op de toegewezen uitvoeringsinstantie installeren. Controleer uw licentieovereenkomst.
-* Aangezien speciale instanties (of clusters) Adobe Campagne-instanties zijn, zijn de aanbevelingen hetzelfde als voor een hoofdinstantie. Raadpleeg [dit document](../../production/using/foreword.md)voor meer informatie.
-* Neem contact op met de Adobe Campagne Professional Services om de instantie correct te configureren vanuit het oogpunt van database-/hardwarecomponenten.
+* Een uitvoeringsinstantie moet aan de dienst worden gewijd. U kunt geen pakket installeren voor een service waarop u zich niet hebt geabonneerd. Als u bijvoorbeeld een abonnement neemt op de optie **Power Booster** voor de service **Message Center** , mag u het **[!UICONTROL Execution of transactional messages]** pakket alleen op de toegewezen uitvoeringsinstantie installeren. Controleer hiervoor uw licentieovereenkomst.
+* Aangezien specifieke instanties (of clusters) Adobe Campaign-instanties zijn, zijn de aanbevelingen hetzelfde als voor een hoofdinstantie. For more on this, refer to [this document](../../production/using/foreword.md).
+* Neem contact op met Adobe Campaign Professional Services om de instantie correct te configureren vanuit het gezichtspunt van database-/hardwarecomponenten.
 
