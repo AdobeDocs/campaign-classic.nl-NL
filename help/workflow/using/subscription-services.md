@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 940bec7e-e3f0-4251-b7fe-72bf188743a7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 3%
 
 ---
 
@@ -36,7 +36,7 @@ Om het te vormen, geef de activiteit uit en ga zijn etiket in, dan selecteer de 
 1. Klik **[!UICONTROL Subscription]** of **[!UICONTROL Unsubscription]** als u een abonnement wilt nemen op of een abonnement wilt nemen op de opgegeven populatie van of naar de geselecteerde informatiedienst.
 1. Selecteer **[!UICONTROL Send a confirmation message]** om ontvangers op de hoogte te stellen van het feit dat ze zijn geabonneerd op of geen abonnement hebben op een service.
 
-   De inhoud van dit bericht wordt gespecificeerd in een leveringsmalplaatje met betrekking tot de informatiedienst. Zie deze [sectie](../../delivery/using/managing-subscriptions.md)voor meer informatie.
+   De inhoud van dit bericht wordt gespecificeerd in een leveringsmalplaatje met betrekking tot de informatiedienst. Raadpleeg deze [sectie](../../delivery/using/managing-subscriptions.md) voor meer informatie.
 
 ## Voorbeeld: Een lijst met ontvangers abonneren op een nieuwsbrief {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 
