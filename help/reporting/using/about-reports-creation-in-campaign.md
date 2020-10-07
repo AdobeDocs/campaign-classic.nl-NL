@@ -1,7 +1,7 @@
 ---
-title: Over het maken van rapporten in Campagne
-seo-title: Over het maken van rapporten in Campagne
-description: Over het maken van rapporten in Campagne
+title: Rapporten maken in Campaign
+seo-title: Rapporten maken in Campaign
+description: Rapporten maken in Campaign
 seo-description: null
 page-status-flag: never-activated
 uuid: 9176ab80-c941-47a1-956a-3d1d63c403ba
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: a21e9c9e-ffc5-40d1-8eac-f4f25da8f21d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '171'
+ht-degree: 11%
 
 ---
 
 
-# Over het maken van rapporten in Campagne{#about-reports-creation-in-campaign}
+# Rapporten maken in Campaign{#about-reports-creation-in-campaign}
 
 Om statistieken over de gegevens in uw gegevensbestand van de Campagne te produceren, kunt u rapporten creëren en hun inhoud en lay-out aanpassen die op uw behoeften worden gebaseerd. Deze rapporten kunnen met andere exploitanten worden gedeeld.
 
