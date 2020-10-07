@@ -1,7 +1,7 @@
 ---
-title: URL-tracking aanpassen
-seo-title: URL-tracking aanpassen
-description: URL-tracking aanpassen
+title: URL-tracking personaliseren
+seo-title: URL-tracking personaliseren
+description: URL-tracking personaliseren
 seo-description: null
 page-status-flag: never-activated
 uuid: e054d106-9cf2-49db-aa16-2fdbc0777c8b
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 discoiquuid: f0e8a50b-d4a4-4271-87f7-802ef410a0f9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 12%
 
 ---
 
 
-# URL-tracking aanpassen{#personalizing-url-tracking}
+# URL-tracking personaliseren{#personalizing-url-tracking}
 
 Geavanceerde instellingen voor het bijhouden van berichten zijn toegankelijk via het **[!UICONTROL Tracking & Images]** pictogram op de werkbalk van de wizard voor het verzenden van berichten.
 
@@ -44,7 +44,7 @@ U kunt de volgende opties configureren:
 
 De bijgehouden URL&#39;s worden in boomvorm weergegeven in het centrale venster.
 
-U kunt het bijhouden van gegevens voor elke URL van het bericht afzonderlijk activeren of deactiveren. Zie [deze sectie](../../delivery/using/how-to-configure-tracked-links.md)voor meer informatie.
+U kunt het bijhouden van gegevens voor elke URL van het bericht afzonderlijk activeren of deactiveren. Raadpleeg [deze sectie](../../delivery/using/how-to-configure-tracked-links.md) voor meer informatie.
 
 Op het **[!UICONTROL Advanced]** tabblad kunt u de berekeningsformules van de bijgehouden URL&#39;s en de openings-URL aanpassen.
 
