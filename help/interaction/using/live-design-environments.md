@@ -11,18 +11,18 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 discoiquuid: 3cea2be4-4da4-4ebd-a241-1bbaa5abb16e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 3%
 
 ---
 
 
 # Live/Design-omgevingen{#live-design-environments}
 
-## Exploitatiebeginsel {#operating-principle}
+## Werkwijze {#operating-principle}
 
 De interactie werkt met twee soorten aanbiedingsmilieu&#39;s:
 
@@ -41,7 +41,7 @@ Interactie wordt standaard geleverd met een **[!UICONTROL Design]** omgeving en 
 
 ![](assets/offer_environments_overview_002.png)
 
-De managers van de aanbieding en de leveringsmanagers hebben toegang tot verschillende meningen van het milieu. Leveringsmanagers kunnen de **[!UICONTROL Live]** aanbiedingsomgeving en de gebruiksaanbiedingen alleen bekijken om deze te leveren. De managers van de aanbieding kunnen het **[!UICONTROL Design]** milieu bekijken en veranderen en het **[!UICONTROL Live]** milieu bekijken. Raadpleeg de profielen [van](../../interaction/using/operator-profiles.md)operatoren voor meer informatie.
+De managers van de aanbieding en de leveringsmanagers hebben toegang tot verschillende meningen van het milieu. Leveringsmanagers kunnen de **[!UICONTROL Live]** aanbiedingsomgeving en de gebruiksaanbiedingen alleen bekijken om deze te leveren. De managers van de aanbieding kunnen het **[!UICONTROL Design]** milieu bekijken en veranderen en het **[!UICONTROL Live]** milieu bekijken. For more on this, refer to [Operator profiles](../../interaction/using/operator-profiles.md).
 
 ## Een aanbiedingsomgeving maken {#creating-an-offer-environment}
 
@@ -59,7 +59,7 @@ Door gebrek, komt de Interactie met een vooraf gevormd milieu om de ontvankelijk
    >
    >Als het selectievakje al is ingeschakeld, schakelt u het uit en controleert u het opnieuw.
 
-1. Adobe Campagne leidt tot twee milieu&#39;s (**[!UICONTROL Design]** en **[!UICONTROL Live]** ) met richtingsinformatie van eerder toegelaten doelafbeelding. Het milieu wordt preconfigured met het richten informatie.
+1. Adobe Campaign maakt twee omgevingen (**[!UICONTROL Design]** en **[!UICONTROL Live]** ) met doelinformatie uit de eerder ingeschakelde doeltoewijzing. Het milieu wordt preconfigured met het richten informatie.
 
    Als u **[!UICONTROL Visitor]** toewijzing hebt geactiveerd, wordt het **[!UICONTROL Environment dedicated to incoming anonymous interactions]** vakje automatisch gecontroleerd in het **[!UICONTROL General]** lusje van het milieu.
 
