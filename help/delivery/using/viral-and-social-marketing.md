@@ -1,7 +1,7 @@
 ---
-title: Virale en sociale marketing
-seo-title: Virale en sociale marketing
-description: Virale en sociale marketing
+title: Viral en social marketing
+seo-title: Viral en social marketing
+description: Viral en social marketing
 seo-description: null
 page-status-flag: never-activated
 uuid: dca3db7e-cc8d-42ca-b1b8-45e9fb739c97
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 discoiquuid: 66f2b229-92d9-4db1-97a4-2d9eb2270446
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '568'
+ht-degree: 2%
 
 ---
 
 
-# Virale en sociale marketing{#viral-and-social-marketing}
+# Viral en social marketing{#viral-and-social-marketing}
 
 ## Virtuele marketing {#about-viral-marketing}
 
@@ -54,11 +54,11 @@ Wanneer de ontvanger op het pictogram van een van de weergegeven sociale netwerk
 
 >[!NOTE]
 >
->Dit verpersoonlijkingsblok bevat alle koppelingen (voor het verzenden en delen van berichten met alle sociale netwerken). Het kan worden aangepast aan uw behoeften. De configuratie is echter gereserveerd voor geavanceerde gebruikers. Als u het overeenkomende aanpassingsblok wilt bewerken, gaat u naar het **[!UICONTROL Resources > Campaign management > Personalization blocks]** knooppunt van de Adobe Campagne-structuur.
+>Dit verpersoonlijkingsblok bevat alle koppelingen (voor het verzenden en delen van berichten met alle sociale netwerken). Het kan worden aangepast aan uw behoeften. De configuratie is echter gereserveerd voor geavanceerde gebruikers. Ga naar het **[!UICONTROL Resources > Campaign management > Personalization blocks]** knooppunt van de Adobe Campaign-structuur om het overeenkomende aanpassingsblok te bewerken.
 
 ## Virale marketing: doorsturen naar een vriend {#viral-marketing--forward-to-a-friend}
 
-Een virale dienst maakt verwijzingsacties mogelijk: met deze acties kunt u een bericht naar een vriend sturen . Het profiel van de referentie(s) wordt tijdelijk opgeslagen in de database (in een specifieke tabel). De doorgestuurde berichten bevatten een koppeling waarmee de scheidsrechter zich kan abonneren: als dat het geval is, worden deze toegevoegd aan de Adobe Campagne-database.
+Een virale dienst maakt verwijzingsacties mogelijk: met deze acties kunt u een bericht naar een vriend sturen . Het profiel van de referentie(s) wordt tijdelijk opgeslagen in de database (in een specifieke tabel). De doorgestuurde berichten bevatten een koppeling waarmee de scheidsrechter zich kan abonneren: als ze dat doen, worden ze toegevoegd aan de Adobe Campaign-database.
 
 Het doorsturen van berichten is gebaseerd op de zelfde principes zoals sociale netwerkverbindingen.
 
@@ -89,7 +89,7 @@ Pas de volgende stappen toe:
    >
    >Deze configuratie kan worden aangepast. Om dit te doen, moet u de **Ontvankelijke toepassing wijzigen van het abonnement** Web die in de **[!UICONTROL Resources > Online > Web applications]** knoop wordt opgeslagen.
    >
-   >Voor meer informatie over de toepassingen van het Web, verwijs naar [deze sectie](../../web/using/about-web-applications.md).
+   >For more information on Web applications, refer to [this section](../../web/using/about-web-applications.md).
 
    Nadat ze zijn gevalideerd, wordt een bevestigingsbericht naar hen verzonden: ze worden pas goed geregistreerd als ze de koppeling in het bevestigingsbericht activeren. Dit bericht wordt gecreeerd gebaseerd op het **[!UICONTROL Registration confirmation]** malplaatje, dat in de **[!UICONTROL Administration > Campaign management > Technical delivery templates]** knoop wordt opgeslagen.
 
@@ -97,7 +97,7 @@ Pas de volgende stappen toe:
 
 ## Delen van sociale netwerken bijhouden {#tracking-social-network-sharing}
 
-Het delen van en de toegang tot gedeelde informatie wordt gevolgd. Deze informatie die door Adobe Campaign wordt verzameld, is op twee plaatsen toegankelijk:
+Het delen van en de toegang tot gedeelde informatie wordt gevolgd. Deze door Adobe Campaign verzamelde informatie is op twee plaatsen toegankelijk:
 
 * op het **[!UICONTROL Tracking]** tabblad van de levering (of afzonderlijk voor elke ontvanger):
 
