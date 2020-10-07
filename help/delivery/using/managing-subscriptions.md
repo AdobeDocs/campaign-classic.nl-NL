@@ -1,7 +1,7 @@
 ---
-title: Abonnementen beheren
-seo-title: Abonnementen beheren
-description: Abonnementen beheren
+title: Lidmaatschappen beheren
+seo-title: Lidmaatschappen beheren
+description: Lidmaatschappen beheren
 seo-description: null
 page-status-flag: never-activated
 uuid: a2c526fa-3080-4dd5-9628-f0e7040f93cd
@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 discoiquuid: 9a61fe74-f779-4f23-be25-3d9a8e95704a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1102'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -50,9 +47,9 @@ Er zijn drie modi voor abonnementen/abonnementen op services:
 
 ## Een informatiedienst maken {#creating-an-information-service}
 
-U kunt abonnementen op informatieservices maken en beheren met de bijbehorende bevestigingsberichten of automatische leveringen aan abonnees.
+U kunt abonnementen op informatiediensten met bijbehorende bevestigingsberichten of automatische leveringen aan abonnees tot stand brengen en beheren.
 
-Ga naar het **[!UICONTROL Profiles and Targets]** heelal en klik op de **[!UICONTROL Services and Subscriptions]** koppeling om toegang te krijgen tot de kaart met informatiediensten.
+Ga naar het **[!UICONTROL Profiles and Targets]** universum en klik op de **[!UICONTROL Services and Subscriptions]** koppeling om toegang te krijgen tot de kaart met informatiediensten.
 
 ![](assets/s_ncs_user_services_new.png)
 
@@ -138,11 +135,11 @@ Als u ontvangers wilt registreren voor een informatieservice, kunt u:
 * Schrijf automatisch een reeks ontvangers in op deze service. De lijst met ontvangers kan afkomstig zijn van een filterbewerking, een groep, een map, een import of een directe selectie met de muis. Als u zich op deze ontvangers wilt abonneren, selecteert u de profielen en klikt u met de rechtermuisknop. Selecteer **[!UICONTROL Actions > Subscribe selection to a service...]** de desbetreffende service, selecteer deze en start de bewerking.
 * Importeer ontvangers en meld ze automatisch aan bij een informatieservice. Selecteer hiertoe de desbetreffende service in de laatste stap van de wizard Importeren.
 
-   For more on this, refer to [this section](../../platform/using/importing-data.md#import-wizard).
+   Raadpleeg [deze sectie](../../platform/using/importing-data.md#import-wizard) voor meer informatie.
 
 * Gebruik een webformulier zodat ontvangers zich op een service kunnen abonneren.
 
-   For more on this, refer to [this section](../../web/using/about-web-applications.md).
+   Raadpleeg [deze sectie](../../web/using/about-web-applications.md) voor meer informatie.
 
 * Een doelworkflow maken en een **[!UICONTROL Subscription service]** vak gebruiken.
 
@@ -156,7 +153,7 @@ Als u ontvangers wilt registreren voor een informatieservice, kunt u:
 
 e-mailleveringen moeten wettelijk gezien een link zonder abonnement bevatten. Ontvangers kunnen op deze koppeling klikken om hun profiel bij te werken en worden uitgesloten van de doelstellingen voor toekomstige leveringen.
 
-De standaardkoppeling voor het ongedaan maken van abonnementen wordt ingevoegd via de laatste knop op de werkbalk van de inhoudseditor die wordt geleverd in de wizard voor levering (zie [Informatie over personalisatie](../../delivery/using/about-personalization.md)). Wanneer de ontvanger op deze koppeling klikt, wordt het profiel toegevoegd aan de bloklijst (opt-out), wat betekent dat deze ontvanger niet langer het doelwit is van een leveringsactie.
+De standaardkoppeling voor het ongedaan maken van abonnementen wordt ingevoegd via de laatste knop op de werkbalk van de inhoudseditor die wordt geleverd in de wizard voor levering (zie [Informatie over personalisatie](../../delivery/using/about-personalization.md)). Wanneer de ontvanger op deze koppeling klikt, wordt het profiel toegevoegd aan de lijst van afgewezen personen (opt-out), wat betekent dat deze ontvanger niet langer het doelwit is van een leveringsactie.
 
 Ontvangers kunnen echter besluiten hun abonnement op een service op te zeggen zonder zich af te melden bij alle services. U kunt dit toestaan door een webformulier te gebruiken (zie [deze sectie](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) of een gepersonaliseerde koppeling voor niet-abonnementen in te voegen (zie [Aanpassingsblokken](../../delivery/using/personalization-blocks.md)).
 
