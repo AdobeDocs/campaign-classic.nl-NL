@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: 12f13b8d-afc3-4b55-a31b-080d31f84fc9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
 
 Standaard is de **syslogd** luisterpoort 666 (udp). Indien nodig kunt u dit wijzigen met een omgevingsvariabele.
 
-Zodra het wordt gevormd, wordt deze variabele in aanmerking genomen door alle modules van de Campagne van Adobe.
+Zodra het wordt gevormd, wordt deze variabele in aanmerking genomen door alle modules van Adobe Campaign.
 
 ### In Linux {#in-linux}
 
@@ -38,7 +38,7 @@ export TRACE_ADDR=localhost:<listening port>
 
 ### In Windows {#in-windows}
 
-U moet de de omgevingsvariabele **TRACE_ADDR.** met de **localhost** waarde tot stand brengen: **`<listening port="" />`**.
+U moet de omgevingsvariabele **TRACE_ADDR.** met de **localhost** -waarde maken: **`<listening port="" />`**.
 
 >[!CAUTION]
 >
@@ -46,7 +46,7 @@ U moet de de omgevingsvariabele **TRACE_ADDR.** met de **localhost** waarde tot 
 
 ## Beveiligingszones configureren {#configuring-security-zones}
 
-Elke exploitant moet met een streek worden verbonden om aan een geval te login en exploitant IP moet in de adressen of adresreeksen worden omvat die in de veiligheidsstreek worden bepaald. Configuratie van de technische zones wordt uitgevoerd in het configuratiebestand van de Adobe Campagneserver. De verbinding van een exploitant met een veiligheidsstreek moet in de console ( **[!UICONTROL Administration > Access management > Operators]** knoop) worden bepaald.
+Elke exploitant moet met een streek worden verbonden om aan een geval te login en exploitant IP moet in de adressen of adresreeksen worden omvat die in de veiligheidsstreek worden bepaald. De configuratie van de technische zone wordt uitgevoerd in het configuratiedossier van de server van Adobe Campaign. De verbinding van een exploitant met een veiligheidsstreek moet in de console ( **[!UICONTROL Administration > Access management > Operators]** knoop) worden bepaald.
 
 >[!NOTE]
 >
