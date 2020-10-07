@@ -1,7 +1,7 @@
 ---
-title: De mobiele toepassing configureren in Adobe Campagne
-seo-title: De mobiele toepassing configureren in Adobe Campagne
-description: De mobiele toepassing configureren in Adobe Campagne
+title: De mobiele applicatie configureren in Adobe Campaign
+seo-title: De mobiele applicatie configureren in Adobe Campaign
+description: De mobiele applicatie configureren in Adobe Campaign
 seo-description: null
 page-status-flag: never-activated
 uuid: aff1a4a0-34e7-4ce0-9eb3-30a8de1380f2
@@ -11,18 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1519'
+ht-degree: 2%
 
 ---
 
 
-# De mobiele toepassing configureren in Adobe Campagne {#configuring-the-mobile-application-in-adobe-campaign}
+# De mobiele applicatie configureren in Adobe Campaign {#configuring-the-mobile-application-in-adobe-campaign}
 
-U vindt onder een configuratiemonster een product dat is gebaseerd op een bedrijf dat pakketten voor online feestdagen verkoopt. Zijn mobiele toepassing (Neotrips) is beschikbaar aan zijn klanten in twee versies: Neotrips voor Android en Neotrips voor iOS. Om de mobiele toepassing in de Campagne van Adobe te vormen, moet u:
+U vindt onder een configuratiemonster een product dat is gebaseerd op een bedrijf dat pakketten voor online feestdagen verkoopt. Zijn mobiele toepassing (Neotrips) is beschikbaar aan zijn klanten in twee versies: Neotrips voor Android en Neotrips voor iOS. Als u de mobiele toepassing in Adobe Campaign wilt configureren, moet u:
 
 * Maak een **[!UICONTROL Mobile application]** tekstinformatieservice voor de mobiele toepassing Neotrips.
 * Voeg de iOS- en Android-versies van de toepassing toe aan deze service.
@@ -38,13 +38,13 @@ U vindt onder een configuratiemonster een product dat is gebaseerd op een bedrij
 
 >[!CAUTION]
 >
->De toepassing moet zijn geconfigureerd voor pushacties voordat deze kan worden geïntegreerd in de Adobe Campagne SDK.
+>De toepassing moet zijn geconfigureerd voor pushacties VOORDAT deze wordt geïntegreerd in de SDK van Adobe Campaign.
 >
 >Indien dit niet het geval is, gelieve [deze pagina](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/)te raadplegen.
 
-### Stap 1:Het pakket installeren {#installing-package-ios}
+### Stap 1: Het pakket installeren {#installing-package-ios}
 
-1. Open de wizard voor het importeren van pakketten vanuit **[!UICONTROL Tools > Advanced > Package import...]** de Adobe Campagne-clientconsole.
+1. Open de wizard voor het importeren van pakketten vanuit **[!UICONTROL Tools > Advanced > Package import...]** de Adobe Campaign-clientconsole.
 
    ![](assets/package_ios.png)
 
@@ -72,7 +72,7 @@ Voor iOS zijn twee connectors beschikbaar:
 Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
 1. Ga naar **[!UICONTROL Administration > Platform > External accounts]**.
-1. Selecteer de **[!UICONTROL iOS routing]** externe account.
+1. Select the **[!UICONTROL iOS routing]** external account.
 1. Vul op het **[!UICONTROL Connector]** tabblad het **[!UICONTROL Access URL of the connector]** veld in:
 
    Voor iOS HTTP2: http://localhost:8080/nms/jsp/iosHTTP2.jsp
@@ -83,7 +83,7 @@ Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
    >
    > U kunt het ook configureren als volgt: https://localhost:8080/nms/jsp/ios.jsp, maar u wordt aangeraden versie 2 van de connector te gebruiken.
 
-1. Klik **[!UICONTROL Save]**.
+1. Klik op **[!UICONTROL Save]**.
 
 Uw iOS-connector is nu geconfigureerd. U kunt uw service gaan maken.
 
@@ -93,7 +93,7 @@ Uw iOS-connector is nu geconfigureerd. U kunt uw service gaan maken.
 
    ![](assets/nmac_service_1.png)
 
-1. Definieer een **[!UICONTROL Label]** en een **[!UICONTROL Internal name]**.
+1. Define a **[!UICONTROL Label]** and an **[!UICONTROL Internal name]**.
 1. Ga naar het **[!UICONTROL Type]** veld en selecteer **[!UICONTROL Mobile application]**.
 
    >[!NOTE]
@@ -125,7 +125,7 @@ In het volgende voorbeeld voegen we **mediaURl** en **mediaExt** toe om uitgebre
 
 1. Klik **[!UICONTROL Next]** om de ontwikkeltoepassing te configureren.
 
-1. Zorg ervoor dat dit ook **[!UICONTROL Integration key]** is gedefinieerd in de Adobe-campagne en in de toepassingscode via de SDK. Raadpleeg voor meer informatie: Campagne SDK [integreren in de mobiele toepassing](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md). Met deze integratietoets, die specifiek is voor elke toepassing, kunt u de mobiele toepassing koppelen aan het Adobe Campagne-platform.
+1. Zorg ervoor dat dit in Adobe Campaign en in de toepassingscode via de SDK **[!UICONTROL Integration key]** is gedefinieerd. Raadpleeg voor meer informatie: [Campagne SDK integreren in de mobiele toepassing](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md). Met deze integratietoets, die specifiek is voor elke toepassing, kunt u de mobiele toepassing koppelen aan het Adobe Campaign-platform.
 
    >[!NOTE]
    >
@@ -145,17 +145,17 @@ In het volgende voorbeeld voegen we **mediaURl** en **mediaExt** toe om uitgebre
 
    ![](assets/nmac_ios_5.png)
 
-1. Klik **[!UICONTROL Finish]**. Uw iOS-toepassing kan nu worden gebruikt in Campaign Classic.
+1. Klik op **[!UICONTROL Finish]**. Uw iOS-toepassing kan nu worden gebruikt in Campaign Classic.
 
 ### Stap 4: Een rijke melding voor iOS maken {#creating-ios-delivery}
 
-Met iOS 10 of hoger is het mogelijk om rijke meldingen te genereren. Adobe Campagne kan meldingen verzenden met behulp van variabelen waarmee het apparaat een uitgebreide melding kan weergeven.
+Met iOS 10 of hoger is het mogelijk om rijke meldingen te genereren. Adobe Campaign kan meldingen verzenden met behulp van variabelen waarmee het apparaat een uitgebreide melding kan weergeven.
 
 U moet nu een nieuwe levering maken en deze koppelen aan de mobiele toepassing die u hebt gemaakt.
 
 1. Ga naar **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
-1. Klik **[!UICONTROL New]**.
+1. Klik op **[!UICONTROL New]**.
 
    ![](assets/nmac_android_3.png)
 
@@ -186,9 +186,9 @@ De afbeelding en webpagina moeten in de pushmelding worden weergegeven wanneer d
 
 ## De mobiele toepassing configureren met Android {#configuring-the-mobile-application-android}
 
-### Stap 1:Het pakket installeren {#installing-package-android}
+### Stap 1: Het pakket installeren {#installing-package-android}
 
-1. Open de wizard voor het importeren van pakketten vanuit **[!UICONTROL Tools > Advanced > Package import...]** de Adobe Campagne-clientconsole.
+1. Open de wizard voor het importeren van pakketten vanuit **[!UICONTROL Tools > Advanced > Package import...]** de Adobe Campaign-clientconsole.
 
    ![](assets/package_ios.png)
 
@@ -216,7 +216,7 @@ Voor Android zijn twee connectors beschikbaar:
 Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
 1. Ga naar **[!UICONTROL Administration > Platform > External accounts]**.
-1. Selecteer de **[!UICONTROL Android routing]** externe account.
+1. Select the **[!UICONTROL Android routing]** external account.
 1. Vul op het **[!UICONTROL Connector]** tabblad het **[!UICONTROL JavaScript used in the connector]** veld in:
 
    Voor Android V2: https://localhost:8080/nms/jsp/androidPushConnectorV2.js
@@ -227,7 +227,7 @@ Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
    ![](assets/nmac_connectors3.png)
 
-1. Voor Android V2 is er één extra parameter beschikbaar in het configuratiebestand van Adobe Server (serverConf.xml):
+1. Voor Android V2 is er één aanvullende parameter beschikbaar in het configuratiebestand van de Adobe Server (serverConf.xml):
 
    * **maxGCMConnectPerChild**: Maximale limiet van parallelle HTTP-aanvragen voor de FCM die door elke onderliggende server worden geïnitieerd (standaard 8).
 
@@ -237,7 +237,7 @@ Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
    ![](assets/nmac_service_1.png)
 
-1. Definieer een **[!UICONTROL Label]** en een **[!UICONTROL Internal name]**.
+1. Define a **[!UICONTROL Label]** and an **[!UICONTROL Internal name]**.
 1. Ga naar het **[!UICONTROL Type]** veld en selecteer **[!UICONTROL Mobile application]**.
 
    >[!NOTE]
@@ -256,7 +256,7 @@ Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
 1. Voer een **[!UICONTROL Label]** waarde in.
 
-1. Zorg ervoor dat dit ook **[!UICONTROL Integration key]** is gedefinieerd in de Adobe-campagne en in de toepassingscode via de SDK. Raadpleeg voor meer informatie: Campagne SDK [integreren in de mobiele toepassing](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
+1. Zorg ervoor dat dit in Adobe Campaign en in de toepassingscode via de SDK **[!UICONTROL Integration key]** is gedefinieerd. Raadpleeg voor meer informatie: [Campagne SDK integreren in de mobiele toepassing](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
 
    >[!NOTE]
    >
@@ -272,9 +272,9 @@ Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
    ![](assets/nmac_android_2.png)
 
-1. Klik **[!UICONTROL Finish]** dan **[!UICONTROL Save]**. Uw Android-toepassing kan nu worden gebruikt in Campaign Classic.
+1. Klik op **[!UICONTROL Finish]** en vervolgens op **[!UICONTROL Save]**. Uw Android-toepassing kan nu worden gebruikt in Campaign Classic.
 
-Standaard slaat Adobe Campagne een sleutel op in het veld **[!UICONTROL User identifier]** (@userKey) van de **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** tabel. Met deze sleutel kunt u een abonnement koppelen aan een ontvanger. Als u aanvullende gegevens wilt verzamelen (zoals een complexe afstemmingssleutel), moet u de volgende configuratie toepassen:
+Standaard slaat Adobe Campaign een toets op in het veld **[!UICONTROL User identifier]** (@userKey) van de **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** tabel. Met deze sleutel kunt u een abonnement koppelen aan een ontvanger. Als u aanvullende gegevens wilt verzamelen (zoals een complexe afstemmingssleutel), moet u de volgende configuratie toepassen:
 
 1. Maak een extensie van het **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schema en definieer de nieuwe velden.
 1. Definieer de toewijzing op het **[!UICONTROL Subscription parameters]** tabblad.
@@ -288,7 +288,7 @@ U moet nu een nieuwe levering maken en deze koppelen aan de mobiele toepassing d
 
 1. Ga naar **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
-1. Klik **[!UICONTROL New]**.
+1. Klik op **[!UICONTROL New]**.
 
    ![](assets/nmac_android_3.png)
 
