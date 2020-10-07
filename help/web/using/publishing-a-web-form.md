@@ -1,7 +1,7 @@
 ---
-title: Webformulieren publiceren
-seo-title: Webformulieren publiceren
-description: Webformulieren publiceren
+title: Een webformulier publiceren
+seo-title: Een webformulier publiceren
+description: Een webformulier publiceren
 seo-description: null
 page-status-flag: never-activated
 uuid: 37222829-1d56-438c-a4ca-878925debcb5
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: f4322902-c72d-4443-9c30-09add4c615a3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '999'
+ht-degree: 2%
 
 ---
 
 
-# Webformulieren publiceren{#publishing-a-web-form}
+# Een webformulier publiceren{#publishing-a-web-form}
 
 ## De formuliergegevens vooraf laden {#pre-loading-the-form-data}
 
@@ -30,7 +30,7 @@ De volgende identificatiemethoden zijn mogelijk:
 
 * **[!UICONTROL Adobe Campaign Encryption]**
 
-   Deze coderingsmethode gebruikt de gecodeerde Adobe Campagne-id (ID). Deze methode is alleen van toepassing op een Adobe Campagne-object en de gecodeerde id kan alleen worden gegenereerd door het Adobe Campagne-platform.
+   Deze coderingsmethode gebruikt de gecodeerde Adobe Campaign-id (ID). Deze methode is alleen van toepassing op een Adobe Campaign-object en de gecodeerde id mag alleen worden gegenereerd door het Adobe Campaign-platform.
 
    Als u deze methode gebruikt, moet u de URL van het formulier aanpassen om het e-mailadres te verzenden door de **`<%=escapeUrl(recipient.cryptedId) %>`** parameter toe te voegen. Raadpleeg [Een formulier via e-mail](#delivering-a-form-via-email)verzenden voor meer informatie.
 
@@ -38,7 +38,7 @@ De volgende identificatiemethoden zijn mogelijk:
 
    ![](assets/s_ncs_admin_survey_preload_methods_001.png)
 
-   Deze coderingsmethode gebruikt een externe id die is gekoppeld aan een sleutel die wordt gedeeld door Adobe Campaign en de externe provider. In het **[!UICONTROL Des key]** veld kunt u deze coderingssleutel invoeren.
+   Deze encryptiemethode gebruikt een herkenningsteken (identiteitskaart) die extern wordt verstrekt, verbonden met een sleutel die door Adobe Campaign en de externe leverancier wordt gedeeld. In het **[!UICONTROL Des key]** veld kunt u deze coderingssleutel invoeren.
 
 * **[!UICONTROL List of fields]**
 
@@ -50,7 +50,7 @@ De volgende identificatiemethoden zijn mogelijk:
 
    >[!CAUTION]
    >
-   >De gegevens in de geselecteerde velden worden niet versleuteld. Deze mag niet in een versleuteld formulier worden aangeboden, omdat Adobe Campagne dit niet kan decoderen als de **[!UICONTROL Field list]** optie is geselecteerd.
+   >De gegevens in de geselecteerde velden worden niet versleuteld. Het mag niet in een versleuteld formulier worden opgegeven, omdat Adobe Campaign het niet kan decoderen als de **[!UICONTROL Field list]** optie is geselecteerd.
 
    In het volgende voorbeeld wordt het vooraf laden van profielen gebaseerd op het e-mailadres.
 
@@ -164,5 +164,5 @@ U kunt de antwoordlogboeken verwerken die in vragen worden verstrekt, bijvoorbee
 
 >[!NOTE]
 >
->Als u de antwoorden volledig wilt bijhouden, exporteert u de reacties en bekijkt of maakt u speciale rapporten, gebruikt u de optionele module **Enquête** . Zie [deze sectie](../../web/using/about-surveys.md)voor meer informatie.
+>Als u de antwoorden volledig wilt bijhouden, exporteert u de reacties en bekijkt of maakt u speciale rapporten, gebruikt u de optionele module **Enquête** . Raadpleeg [deze sectie](../../web/using/about-surveys.md) voor meer informatie.
 
