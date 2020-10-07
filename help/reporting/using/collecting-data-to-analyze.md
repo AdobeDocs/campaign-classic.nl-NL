@@ -1,7 +1,7 @@
 ---
-title: Gegevens verzamelen om te analyseren
-seo-title: Gegevens verzamelen om te analyseren
-description: Gegevens verzamelen om te analyseren
+title: Data verzamelen om te analyseren
+seo-title: Data verzamelen om te analyseren
+description: Data verzamelen om te analyseren
 seo-description: null
 page-status-flag: never-activated
 uuid: 5a611786-6e56-4fce-b232-dd8428f3a5f2
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 594a333d-1fc3-49a0-b3f6-7ea8fa4321e9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c41cf2f35495a1514642e47f0b7146d8dd50946
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '507'
+ht-degree: 4%
 
 ---
 
 
-# Gegevens verzamelen om te analyseren{#collecting-data-to-analyze}
+# Data verzamelen om te analyseren{#collecting-data-to-analyze}
 
 De gegevens die voor de bouw van het rapport moeten worden gebruikt kunnen direct in de rapportpagina worden geselecteerd (voor meer op dit, verwijs naar het [Gebruiken van de context](../../reporting/using/using-the-context.md)) of via één of meerdere vragen worden verzameld.
 
@@ -30,7 +30,7 @@ Deze activiteit biedt drie verschillende methodes aan:
 1. De gegevens in een lijst verwerken.
 1. Gegevens in een bestaande kubus gebruiken.
 
-De keuze van de methode hangt af van het type berekening, het gegevensvolume en de duurzaamheid ervan, enz. Al deze parameters moeten zorgvuldig worden onderzocht om overbelasting van de Adobe Campaign-database te voorkomen en om het genereren en manipuleren van de gemaakte rapporten te optimaliseren. Raadpleeg [deze pagina](../../reporting/using/best-practices.md#optimizing-report-creation)voor meer informatie.
+De keuze van de methode hangt af van het type berekening, het gegevensvolume en de duurzaamheid ervan, enz. Al deze parameters moeten zorgvuldig worden onderzocht om overbelasting van de Adobe Campaign-database te voorkomen en om het genereren en manipuleren van de gemaakte rapporten te optimaliseren. Raadpleeg [deze pagina](../../reporting/using/best-practices.md#optimizing-report-creation) voor meer informatie.
 
 In alle gevallen worden gegevens verzameld via een **[!UICONTROL Query]** type activiteit.
 
@@ -62,7 +62,7 @@ Het is mogelijk om een kubus voor het bepalen van de vraag te selecteren.
 
 ![](assets/reporting_query_from_cube.png)
 
-Met behulp van kubussen kunt u de exploratie- en analysemogelijkheden van de database uitbreiden en tegelijkertijd de configuratie van rapporten en tabellen voor eindgebruikers vereenvoudigen: Selecteer eenvoudig een bestaande, volledig gevormde kubus en gebruik zijn berekeningen, maatregelen en statistieken. Raadpleeg [deze sectie](../../reporting/using/about-cubes.md)voor meer informatie over het maken van kubussen.
+Met behulp van kubussen kunt u de exploratie- en analysemogelijkheden van de database uitbreiden en tegelijkertijd de configuratie van rapporten en tabellen voor eindgebruikers vereenvoudigen: Selecteer eenvoudig een bestaande, volledig gevormde kubus en gebruik zijn berekeningen, maatregelen en statistieken. For more on creating cubes, refer to [this section](../../reporting/using/about-cubes.md).
 
 Klik op de **[!UICONTROL Edit query...]** koppeling en selecteer de indicatoren die u in uw rapport wilt weergeven of gebruiken.
 
