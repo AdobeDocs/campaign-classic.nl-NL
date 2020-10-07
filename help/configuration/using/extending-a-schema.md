@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 1c9af980-4e6b-44dc-af61-dd284863ec7d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 7%
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 >
 >Sommige ingebouwde schema&#39;s mogen niet worden uitgebreid: voornamelijk die waarvoor de volgende instellingen zijn gedefinieerd:\
 >**dataSource=&quot;file&quot;** en **mappingType=&quot;xmlFile&quot;**.\
->De volgende schema&#39;s mogen niet worden uitgebreid: **xtk:entiteitBackupNew**, **xtk:entiteitBackupOriginal**, **xtk:entiteitOriginal**, **xtk:form**, **xtk:srcSchema********************************************, ncm:publishing, nl:monitoring, nms:agendaRookschemanms:remoteTracms king, nms:userAgentRules, xtk:builder, xtk:connectionsxtk:dbInit,xtk:funcList,xtk:fusion,xtk: jst**, **xtk:navtree**, **xtk:queryDef**, **xtk:resourceMenu**, **xtk:schema**, ****************xtk:scriptContext, xtk:sessionxtk:sqlSchemaxtk:strings.
+>De volgende schema&#39;s mogen niet worden uitgebreid: **xtk:entiteitBackupNew**, **xtk:entiteitBackupOriginal**, **xtk:entiteitOriginal**, **xtk:form**, **xtk:srcSchema**, ******************************************ncm:publishing, nl:controle,nms:agendaonderRingNms:remoteTracking,nms:userAgentRules, xtk:builder, xtk:connections, xtk:dbInit, xtk:funcList,xtk:fusionxtk: jst**, **xtk:navtree**, **xtk:queryDef**, **xtk:resourceMenu**, **xtk:schema**, ****************xtk:scriptContext, xtk:sessionxtk:sqlSchemaxtk:strings.
 >Deze lijst is niet limitatief.
 
 Er zijn twee methoden om een bestaand schema uit te breiden:
@@ -68,6 +68,6 @@ Er zijn twee methoden om een bestaand schema uit te breiden:
 
 >[!IMPORTANT]
 >
->Voor de wijzigingen die in aanmerking moeten worden genomen, moet u schema&#39;s opnieuw genereren. Raadpleeg voor meer informatie de sectie [Regenererende schema&#39;s](../../configuration/using/regenerating-schemas.md) .\
->Als de wijzigingen van invloed zijn op de structuur van de database, moet u een update uitvoeren. Raadpleeg voor meer informatie de sectie [De databasestructuur](../../configuration/using/updating-the-database-structure.md) bijwerken.
+>Voor de wijzigingen die in aanmerking moeten worden genomen, moet u schema&#39;s opnieuw genereren. For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.\
+>Als de wijzigingen van invloed zijn op de structuur van de database, moet u een update uitvoeren. Raadpleeg de sectie [De databasestructuur bijwerken](../../configuration/using/updating-the-database-structure.md) voor meer informatie.
 
