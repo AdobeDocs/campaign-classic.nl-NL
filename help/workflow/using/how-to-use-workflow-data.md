@@ -1,7 +1,7 @@
 ---
-title: Werkstroomgegevens gebruiken
-seo-title: Werkstroomgegevens gebruiken
-description: Werkstroomgegevens gebruiken
+title: Workflowdata gebruiken
+seo-title: Workflowdata gebruiken
+description: Workflowdata gebruiken
 seo-description: null
 page-status-flag: never-activated
 uuid: ed03f14b-1b53-426e-9213-22cb2f3deb19
@@ -11,21 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: ec3844ca-8d80-4ddc-b08c-f18a6919bb28
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Werkstroomgegevens gebruiken{#how-to-use-workflow-data}
+# Workflowdata gebruiken{#how-to-use-workflow-data}
 
-## De database bijwerken {#updating-the-database}
+## Updating the database {#updating-the-database}
 
 Alle verzamelde gegevens kunnen worden gebruikt om de database bij te werken, of in leveringen. U kunt bijvoorbeeld de personalisatiemogelijkheden voor berichtinhoud verrijken (het aantal contracten in het bericht opnemen, het gemiddelde winkelwagentje van het afgelopen jaar opgeven, enzovoort) of een gedetailleerde bevolkingsgerichtheid (verzend een bericht aan contractmedehouders, richt de 1.000 beste abonnees aan online diensten, enz.). Deze gegevens kunnen ook worden geëxporteerd of gearchiveerd in een lijst.
 
@@ -43,7 +40,7 @@ De gegevens van de Adobe Campaign-databank en de bestaande lijsten kunnen worden
 
 * De **[!UICONTROL Update data]** activiteit voert een massa update van de gebieden in het gegevensbestand uit.
 
-   Zie Gegevens [bijwerken voor meer informatie](../../workflow/using/update-data.md).
+   For more on this, refer to [Update data](../../workflow/using/update-data.md).
 
 ### Abonnementsbeheer/Abonnementsbeheer {#subscription-unsubscription-management}
 
@@ -67,7 +64,7 @@ Naast de gebruikelijke verpersoonlijkingsgebieden, kunt u verpersoonlijkingsgebi
 
 ![](assets/s_advuser_using_additional_data.png)
 
-De gegevens in de workflowtabel worden aangeduid met de naam: het wordt altijd samengesteld uit de **targetData** verbinding. Raadpleeg de gegevens [van](../../workflow/using/data-life-cycle.md#target-data)Target voor meer informatie hierover.
+De gegevens in de workflowtabel worden aangeduid met de naam: het wordt altijd samengesteld uit de **targetData** verbinding. For more on this, refer to [Target data](../../workflow/using/data-life-cycle.md#target-data).
 
 In het kader van de e-maillevering kunnen personaliseringsgebieden ook gegevens gebruiken van doeluitbreiding die in de het richten werkschemasfases wordt uitgevoerd, zoals aangetoond in het hieronder voorbeeld:
 
@@ -77,7 +74,7 @@ Als een segmentcode in een het richten activiteit wordt gespecificeerd, wordt he
 
 ![](assets/s_advuser_segment_code_select.png)
 
-## Gegevens exporteren {#exporting-data}
+## Data exporteren {#exporting-data}
 
 ### Een bestand zoeken of versleutelen {#zipping-or-encrypting-a-file}
 
@@ -111,7 +108,7 @@ De volgende stappen worden uitgevoerd:
 
 1. Genereer een sleutelpaar van GPG (openbaar/privé) gebruikend een nut van GPG, dan installeer de openbare sleutel op Controlebord. Gedetailleerde stappen zijn beschikbaar in de documentatie [van het](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data)Configuratiescherm.
 
-1. In Campaign Classic maakt u een workflow om de gegevens te exporteren en deze te exporteren met de persoonlijke sleutel die is geïnstalleerd via het Configuratiescherm. Hiervoor maken we als volgt een workflow:
+1. In Campaign Classic, bouwt een werkschema om de gegevens uit te voeren en het uit te voeren gebruikend de privé sleutel die via het Controlebord is geïnstalleerd. Hiervoor maken we als volgt een workflow:
 
    ![](assets/gpg-workflow-encrypt.png)
 
@@ -120,7 +117,7 @@ De volgende stappen worden uitgevoerd:
    * **[!UICONTROL JavaScript code]** activiteit: Codeert de gegevens die u wilt extraheren.
    * **[!UICONTROL File transfer]** activiteit: Hiermee verzendt u de gegevens naar een externe bron (in dit voorbeeld een SFTP-server).
 
-1. Vorm de **[!UICONTROL Query]** activiteit om de gewenste gegevens van het gegevensbestand te richten. For more on this, refer to [this section](../../workflow/using/query.md).
+1. Vorm de **[!UICONTROL Query]** activiteit om de gewenste gegevens van het gegevensbestand te richten. Raadpleeg [deze sectie](../../workflow/using/query.md) voor meer informatie.
 
 1. Open de **[!UICONTROL Data extraction (file)]** activiteit dan vorm het op uw behoeften. De globale concepten op hoe te om de activiteit te vormen zijn beschikbaar in [deze sectie](../../workflow/using/extraction--file-.md).
 
