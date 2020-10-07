@@ -1,7 +1,7 @@
 ---
-title: '"Hoofdlettergebruik: maken, inhoudsbeheer"'
-seo-title: '"Hoofdlettergebruik: maken, inhoudsbeheer"'
-description: '"Hoofdlettergebruik: maken, inhoudsbeheer"'
+title: '"Gebruiksscenario: contentmanagement maken"'
+seo-title: '"Gebruiksscenario: contentmanagement maken"'
+description: '"Gebruiksscenario: contentmanagement maken"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 204a63eb-40dd-446d-a847-4e55ad23b2bd
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: a4c62580-664d-47fe-87f5-cfe608b05e6f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1178'
+ht-degree: 2%
 
 ---
 
 
-# Hoofdlettergebruik: maken, inhoudsbeheer{#use-case-creating-content-management}
+# Gebruiksscenario: contentmanagement maken{#use-case-creating-content-management}
 
 Voor het maken van contentbeheer in Adobe Campaign zijn de volgende stappen nodig:
 
@@ -55,9 +55,9 @@ Deze nieuwsbrief bevat drie soorten elementen:
 
 De verschillende elementen van deze nieuwsbrief worden samengesteld op basis van de regels die zijn gedefinieerd in een JavaScript-sjabloon waarin wordt verwezen naar alle elementen die moeten worden ingevoegd en waarin de lay-out ervan wordt beschreven.
 
-Deze elementen worden gemaakt via een speciaal schema dat de volgende elementen voor elke inhoud opgeeft: naam, label, type, grootte en alle andere informatie die relevant is voor de verwerking ervan in Adobe Campaign.
+Deze elementen worden gemaakt via een speciaal schema dat de volgende elementen voor elke inhoud opgeeft: naam, etiket, type, grootte en alle andere informatie die relevant is voor de verwerking ervan in Adobe Campaign.
 
-## Stap 2 - het creëren van het gegevensschema {#step-2---creating-the-data-schema}
+## Step 2 - Creating the data schema {#step-2---creating-the-data-schema}
 
 Een gegevensschema is een XML-document dat is gekoppeld aan inhoud. Hierin wordt de XML-structuur van de gegevens in deze inhoud beschreven.
 
@@ -69,7 +69,7 @@ Een gegevensschema is een XML-document dat is gekoppeld aan inhoud. Hierin wordt
 
 Voer de volgende stappen uit om een gegevensschema te maken:
 
-1. Open de Adobe Campagneverkenner en selecteer het **[!UICONTROL Administration > Configuration > Data schemas]** knooppunt.
+1. Open Adobe Campaign Explorer en selecteer het **[!UICONTROL Administration > Configuration > Data schemas]** knooppunt.
 
    Klik op het **[!UICONTROL New]** pictogram boven de lijst met gegevensschema&#39;s.
 
@@ -89,7 +89,7 @@ Voer de volgende stappen uit om een gegevensschema te maken:
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   Raadpleeg [Bewerkschema&#39;s voor meer informatie](../../delivery/using/data-schemas.md#editing-schemas).
+   For more on this, refer to [Editing schemas](../../delivery/using/data-schemas.md#editing-schemas).
 
    Voor elk element waarnaar in de inhoud wordt verwezen, moet u een overeenkomend type selecteren.
 
@@ -98,23 +98,23 @@ Voer de volgende stappen uit om een gegevensschema te maken:
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Inhoud</strong><br /> </th> 
-   <th> <strong>Indeling</strong><br /> </th> 
-   <th> <strong>Type</strong><br /> </th> 
-   <th> <strong>Label</strong><br /> </th> 
+   <th> <strong>Inhoud</strong> <br /> </th> 
+   <th> <strong>Indeling</strong> <br /> </th> 
+   <th> <strong>Type</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
    <td> Titel<br /> </td> 
    <td> Kenmerk<br /> </td> 
-   <td> String<br /> </td> 
+   <td> Tekenreeks<br /> </td> 
    <td> Titel<br /> </td> 
   </tr> 
   <tr> 
    <td> Ondertitel<br /> </td> 
    <td> Kenmerk<br /> </td> 
-   <td> String<br /> </td> 
+   <td> Tekenreeks<br /> </td> 
    <td> Naam<br /> </td> 
   </tr> 
   <tr> 
@@ -132,7 +132,7 @@ Voer de volgende stappen uit om een gegevensschema te maken:
   <tr> 
    <td> Foto van de auteur<br /> </td> 
    <td> Kenmerk<br /> </td> 
-   <td> String<br /> </td> 
+   <td> Tekenreeks<br /> </td> 
    <td> URL<br /> </td> 
   </tr> 
   <tr> 
@@ -142,10 +142,10 @@ Voer de volgende stappen uit om een gegevensschema te maken:
    <td> Auteur<br /> </td> 
   </tr> 
   <tr> 
-   <td> Koptekstlogo (opgeslagen in openbare bronnen van Adobe Campagne)<br /> </td> 
+   <td> Koptekstlogo (opgeslagen in publieke middelen van Adobe Campaign)<br /> </td> 
    <td> Kenmerk<br /> </td> 
    <td> Koppeling<br /> </td> 
-   <td> Afbeelding<br /> </td> 
+   <td> Image<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -169,7 +169,7 @@ Het schema bevat de volgende informatie:
 
 ## Stap 3 - Het invoerformulier maken {#step-3---creating-the-input-form}
 
-Met het invoerformulier kunt u een inhoudsinstantie bewerken via een invoerinterface vanuit de Adobe Campagne-clientconsole.
+Met het invoerformulier kunt u een inhoudsinstantie bewerken via een invoerinterface vanuit de Adobe Campaign-clientconsole.
 
 De beschrijving van een formulier is een gestructureerd XML-document waarin de grammatica van het formulierschema &quot;xtk:form&quot; wordt gevolgd.
 
@@ -181,7 +181,7 @@ De beschrijving van een formulier is een gestructureerd XML-document waarin de g
 
 Voer de volgende stappen uit om een invoerformulier te maken voor inhoudsbeheer:
 
-1. Open de Adobe Campagneverkenner en selecteer het **[!UICONTROL Administration > Configuration > Input forms]** knooppunt.
+1. Open Adobe Campaign Explorer en selecteer het **[!UICONTROL Administration > Configuration > Input forms]** knooppunt.
 
    Klik op het **[!UICONTROL New]** pictogram boven de lijst met formulieren.
 
@@ -229,9 +229,9 @@ In dit voorbeeld willen we een JavaScript-sjabloon gebruiken om de gegevensconst
 >
 >Restricties die zijn gekoppeld aan documentopbouw (JavaScript- of XSL-sjabloon) worden beschreven in [Opmaak](../../delivery/using/formatting.md).
 
-Als u een JavaScript-sjabloon wilt gebruiken in Adobe Campagne, voert u de volgende stappen uit:
+Als u een JavaScript-sjabloon wilt gebruiken in Adobe Campaign, voert u de volgende stappen uit:
 
-1. Open de Adobe Campagneverkenner en selecteer het **[!UICONTROL Administration > Configuration > JavaScript Templates]** knooppunt.
+1. Open Adobe Campaign Explorer en selecteer het **[!UICONTROL Administration > Configuration > JavaScript Templates]** knooppunt.
 
    Klik op het **[!UICONTROL New]** pictogram boven de lijst met sjablonen.
 
@@ -331,7 +331,7 @@ Als u een JavaScript-sjabloon wilt gebruiken in Adobe Campagne, voert u de volge
    </html>
    ```
 
-   Als u een functie oproept aan het begin van een sjabloon, kunt u een aanroep van verpersoonlijkingsgegevens instellen die uit de Adobe Campagne-database zijn genomen (in dit geval: receiving.firstName en receiving.lastName), zodat het kan worden geïnterpreteerd wanneer gebruikt in een levering. Raadpleeg [Een JavaScript-sjabloon](../../delivery/using/formatting.md#including-a-javascript-template)opnemen voor meer informatie.
+   Als u een functie oproept aan het begin van een sjabloon, kunt u een aanroep instellen naar verpersoonlijkingsgegevens uit de Adobe Campaign-database (in dit geval: receiving.firstName en receiving.lastName), zodat het kan worden geïnterpreteerd wanneer gebruikt in een levering. Raadpleeg [Een JavaScript-sjabloon](../../delivery/using/formatting.md#including-a-javascript-template)opnemen voor meer informatie.
 
    In dit voorbeeld bevat de functie de volgende code:
 
