@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 discoiquuid: f8ae9497-9ca2-4c0c-8dc8-c0563839b036
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2386'
+ht-degree: 0%
 
 ---
 
@@ -654,7 +654,7 @@ De invoerparameters worden beschreven op de **`<param>`** elementen onder de **`
 Het parametertype moet via het **typeattribuut** worden gespecificeerd. De mogelijke typen zijn:
 
 * **tekenreeks**: tekenreeks
-* **Booleaans**:Boolean
+* **Booleaans**: Boolean
 * **byte**: 8-bits geheel getal
 * **kort**: 16-bits geheel getal
 * **lang**: 32-bits geheel getal
