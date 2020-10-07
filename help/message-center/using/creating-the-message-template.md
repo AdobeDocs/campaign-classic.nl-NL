@@ -1,7 +1,7 @@
 ---
-title: Berichtsjabloon maken
-seo-title: Berichtsjabloon maken
-description: Berichtsjabloon maken
+title: De berichtsjabloon maken
+seo-title: De berichtsjabloon maken
+description: De berichtsjabloon maken
 seo-description: null
 page-status-flag: never-activated
 uuid: 8155275c-729b-40ca-abae-e6b75889cc1a
@@ -11,16 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 2c2a7196-9183-46b1-b1e2-4a07a53e93b4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2c0d4054fbc15a88ea0370269b62c7d647aea033
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '133'
+ht-degree: 12%
 
 ---
 
 
-# Berichtsjabloon maken{#creating-the-message-template}
+# De berichtsjabloon maken{#creating-the-message-template}
 
 1. Ga naar de **[!UICONTROL Message Center >Transactional message templates]** map in de Adobe Campaign-structuur.
 1. Klik in de lijst met transactiemalplaatjes met de rechtermuisknop en selecteer **[!UICONTROL New]** in het vervolgkeuzemenu of klik op de **[!UICONTROL New]** knop boven de lijst met transactionele berichtsjablonen.
