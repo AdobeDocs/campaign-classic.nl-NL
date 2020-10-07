@@ -11,19 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 discoiquuid: dd8f9adf-208c-42d9-b1a7-bfc8a690687e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d60389eb735fb50188ddc2f2e3df3788a3213446
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
 
 
-# Ingebouwde Campaign Classic-pakketten installeren{#installing-campaign-standard-packages}
+# Installing Campaign Classic built-in packages{#installing-campaign-standard-packages}
 
 ## Ingebouwde pakketten {#campaign-standard-packages}
 
@@ -67,7 +64,7 @@ De volgende tabel bevat een lijst met alle standaardpakketten met hun beschrijvi
  </thead> 
  <tbody> 
   <tr> 
-   <td> Aflevering<br /> </td> 
+   <td> Levering<br /> </td> 
    <td> Controleert leveringen en uiteindelijke problemen die worden aangetroffen wanneer berichten worden verzonden. <a href="../../delivery/using/monitoring-a-delivery.md">Meer informatie</a><br /> </td> 
    <td> Alles</td> 
   </tr> 
@@ -133,7 +130,7 @@ De volgende tabel bevat een lijst met alle standaardpakketten met hun beschrijvi
    <td> Alles<br /> </td> 
   </tr> 
   <tr> 
-   <td> Mobiel App-kanaal<br /> </td> 
+   <td> Kanaal voor mobiele apps<br /> </td> 
    <td> Gebruikt het Adobe Campaign-platform om gepersonaliseerde meldingen naar iOS- en Android-terminals te verzenden via apps. Optioneel. <a href="../../delivery/using/about-mobile-app-channel.md">Meer informatie</a> <br /> </td> 
    <td> Alles<br /> </td> 
   </tr> 
@@ -163,7 +160,7 @@ De volgende tabel bevat een lijst met alle standaardpakketten met hun beschrijvi
    <td> Alles<br /> </td> 
   </tr> 
   <tr> 
-   <td> Campagne optimaliseren<br /> </td> 
+   <td> Campagnes optimaliseren<br /> </td> 
    <td> Controles, filters en controleren het verzenden van leveringen zodat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid van het bedrijfs communicatie. Optioneel. <a href="../../campaign/using/about-campaign-typologies.md">Meer informatie</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
@@ -188,48 +185,48 @@ De volgende tabel bevat een lijst met alle standaardpakketten met hun beschrijvi
    <td> Marketing </td> 
   </tr> 
   <tr> 
-   <td> CRM-connectors<br /> </td> 
+   <td> CRM connectors<br /> </td> 
    <td> Verschillende CRM-connectors waarmee u uw Adobe Campaign-platform kunt koppelen aan systemen van derden.  <a href="../../platform/using/crm-connectors.md">Meer informatie</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Web Analytics-connectors<br /> </td> 
-   <td> Hiermee staat u Adobe Campaign en Adobe Analytics toe om te communiceren via het Web Analytics-connectorpakket. Niet compatibel met Transactioneel overseinen (het pakket van het Centrum van het Bericht). <a href="../../platform/using/adobe-analytics-data-connector.md">Meer informatie</a><br /> </td> 
+   <td> Webanalytische connectors<br /> </td> 
+   <td> Hiermee staat u Adobe Campaign en Adobe Analytics toe om te communiceren via het connectorpakket Web Analytics. Niet compatibel met Transactioneel overseinen (het pakket van het Centrum van het Bericht). <a href="../../platform/using/adobe-analytics-data-connector.md">Meer informatie</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
-   <td> AEM-integratie<br /> </td> 
-   <td> Hiermee kunt u de inhoud van uw e-mailleveringen en uw formulieren rechtstreeks in Adobe Experience Manager beheren, zodat u kunt profiteren van de functionaliteit voor het bewerken van inhoud van AEM en de leveringscapaciteit van Adobe Campaign. <a href="../../integrations/using/about-adobe-experience-manager.md">Meer informatie</a> <br /> </td> 
+   <td> AEM integratie<br /> </td> 
+   <td> Hiermee kunt u de inhoud van uw e-mailleveringen en uw formulieren rechtstreeks in Adobe Experience Manager beheren, zodat u kunt profiteren van AEM functies voor het bewerken van inhoud en de leveringsmogelijkheden van Adobe Campaign. <a href="../../integrations/using/about-adobe-experience-manager.md">Meer informatie</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Integratie van Adobe Marketing Cloud met gedeelde doelgroepen<br /> </td> 
-   <td> Hiermee kunt u soorten publiek en segmenten uitwisselen en delen met Adobe Experience Cloud-oplossingen en kernservices. Vereist IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Meer informatie</a> <br /> </td> 
+   <td> Integratie van Adobe Marketing Cloud-publiek<br /> </td> 
+   <td> Hiermee kunt u soorten publiek/segmenten uitwisselen en delen met Adobe Experience Cloud-oplossingen en kernservices. Vereist IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Meer informatie</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
    <td> Integratie met Adobe Marketing Cloud<br /> </td> 
-   <td> Hiermee kunt u soorten publiek/segmenten van verschillende Adobe Marketing Cloud naar Adobe Campaign importeren en exporteren. Optioneel. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Meer informatie</a> </td> 
+   <td> Hiermee kunt u soorten publiek/segmenten van verschillende Adobe Marketing Cloud-oplossingen importeren en exporteren naar Adobe Campaign. Optioneel. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Meer informatie</a> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Privacy Data Protection-verordening<br /> </td> 
-   <td> Bevat extra functionaliteit voor de naleving van uw privacy in Campaign Classic. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">Meer informatie</a> <br /> </td> 
+   <td> Verordening inzake bescherming van privacydata<br /> </td> 
+   <td> Bevat extra functionaliteit om met uw naleving van de Privacy in Campaign Classic te helpen. <a href="https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html">Meer informatie</a> <br /> </td> 
    <td> Alles</td> 
   </tr> 
   <tr> 
-   <td> Overschakelen naar middelmatig bronnen <br /> </td> 
+   <td> Transfer to Mid-Sourcing <br /> </td> 
    <td> Geeft details over de installatie en configuratie van een server voor midsourcing, alsook over de implementatie van een instantie die derden in staat stelt berichten te verzenden in de modus voor midsourcing. Optioneel. <a href="../../installation/using/mid-sourcing-server.md">Meer informatie</a> <br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
-   <td> Middelsourcingsplatform<br /> </td> 
+   <td> Midsourcingplatform<br /> </td> 
    <td> Deze configuratie is een optimale middenoplossing tussen een ontvangen (ASP) configuratie en internalisering. De naar buiten gerichte uitvoeringscomponenten worden uitgevoerd op een "mid-sourcing"-server die wordt gehost op Adobe Campaign. Optioneel. <a href="../../installation/using/mid-sourcing-server.md">Meer informatie</a> <br /> </td> 
    <td> Midden-sourcing </td> 
   </tr> 
   <tr> 
-   <td> ACS-connector<br /> </td> 
-   <td> Bridges Adobe Campaign v7 en Adobe Campaign Standard. Het is een geïntegreerde functie in Campagne v7 die automatisch gegevens aan Campaign Standard repliceert, die het beste van beide toepassingen verenigt. Optioneel. <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">Meer informatie</a> <br /> </td> 
+   <td> ACS Connector<br /> </td> 
+   <td> Bridges Adobe Campaign v7 en Adobe Campaign Standard. Het is een geïntegreerde eigenschap in Campagne v7 die automatisch gegevens aan Campaign Standard herhaalt, die het beste van beide toepassingen verenigt. Optioneel. <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">Meer informatie</a> <br /> </td> 
    <td> Marketing </td> 
   </tr> 
  </tbody> 
