@@ -1,5 +1,5 @@
 ---
-title: Levenscyclus gegevens
+title: Levenscyclus van data
 description: Meer informatie over de levenscyclus van gegevens in workflows.
 page-status-flag: never-activated
 uuid: 7668f1a2-fcd0-41f8-b8f6-71d77bc47486
@@ -9,19 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Levenscyclus gegevens {#data-life-cycle}
+# Levenscyclus van data {#data-life-cycle}
 
 ## Werktabel {#work-table}
 
@@ -45,7 +42,7 @@ Selecteer hiertoe het relevante menu:
 
    In dit menu hebt u toegang tot de wizard voor beschrijvende analyse, waarmee u statistieken en rapporten over de overgangsgegevens kunt produceren.
 
-   For more on this, refer to this [section](../../reporting/using/using-the-descriptive-analysis-wizard.md).
+   Raadpleeg deze [sectie](../../reporting/using/using-the-descriptive-analysis-wizard.md) voor meer informatie.
 
 De doelgegevens worden gewist terwijl de workflow wordt uitgevoerd. Alleen de laatste werktabel is toegankelijk. U kunt het werkschema vormen zodat alle het werklijsten toegankelijk blijven: Controleer de **[!UICONTROL Keep the result of interim populations between two executions]** optie in de werkschemaeigenschappen.
 
@@ -65,7 +62,7 @@ Hiermee kunt u gegevens gebruiken die via een lijst zijn verzameld of die zijn g
 
 **[!UICONTROL Target extension]** (targetData) type verpersoonlijkingselementen zijn niet beschikbaar voor het richten van werkschema&#39;s. Het leveringsdoel moet in het werkschema worden gebouwd en in de binnenkomende overgang van de levering worden gespecificeerd.
 
-Als u leveringsproeven wilt tot stand brengen, moet het proefdrukdoel op de **[!UICONTROL Address substitution]** wijze worden gebouwd zodat de verpersoonlijkingsgegevens kunnen worden ingegaan. For more on this, refer to this [section](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
+Als u leveringsproeven wilt tot stand brengen, moet het proefdrukdoel op de **[!UICONTROL Address substitution]** wijze worden gebouwd zodat de verpersoonlijkingsgegevens kunnen worden ingegaan. Raadpleeg deze [sectie](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof) voor meer informatie.
 
 In het volgende voorbeeld, gaan wij een lijst van informatie over klanten verzamelen, die in een gepersonaliseerd e-mail moet worden gebruikt.
 
@@ -91,7 +88,7 @@ Voer de volgende stappen uit:
 
    ![](assets/wf-targetdata-sample-2.png)
 
-1. Configureer de **[!UICONTROL Enrichment]** tekstactiviteit om de verzamelde gegevens te combineren met de gegevens die al in de Adobe Campagne-database staan.
+1. Configureer de **[!UICONTROL Enrichment]** tekstactiviteit om de verzamelde gegevens te combineren met de gegevens die al in de Adobe Campaign-database staan.
 
    Hier is de afstemmingssleutel het rekeningnummer:
 
