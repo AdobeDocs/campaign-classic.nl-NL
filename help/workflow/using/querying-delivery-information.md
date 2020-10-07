@@ -1,5 +1,5 @@
 ---
-title: Leveringsgegevens opvragen
+title: Query’s uitvoeren op leveringsgegevens
 description: Leer hoe u leveringsinformatie kunt opvragen
 page-status-flag: never-activated
 uuid: 0556d53e-0fdf-47b3-b1e0-b52e85e0c662
@@ -9,16 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1241'
+ht-degree: 1%
 
 ---
 
 
-# Leveringsgegevens opvragen {#querying-delivery-information}
+# Query’s uitvoeren op leveringsgegevens {#querying-delivery-information}
 
 ## Aantal klikken voor een specifieke levering {#number-of-clicks-for-a-specific-delivery}
 
@@ -46,7 +46,7 @@ Voer de volgende stappen uit om dit voorbeeld uit te voeren:
 
    Dit doet u als volgt:
 
-   * Klik op het **[!UICONTROL Add]** pictogram rechts van het **[!UICONTROL Output columns]** veld. Selecteer de **[!UICONTROL Formula type]** optie in het **[!UICONTROL Edit the formula using an expression]** venster en klik op **[!UICONTROL Next]**. Klik in het **[!UICONTROL Field to select]** venster op **[!UICONTROL Advanced selection]**.
+   * Klik op het **[!UICONTROL Add]** pictogram rechts van het **[!UICONTROL Output columns]** veld. Selecteer de **[!UICONTROL Formula type]** optie in het **[!UICONTROL Edit the formula using an expression]** venster en klik op **[!UICONTROL Next]**. In the **[!UICONTROL Field to select]** window, click **[!UICONTROL Advanced selection]**.
 
       ![](assets/query_editor_tracklog_06.png)
 
@@ -56,7 +56,7 @@ Voer de volgende stappen uit om dit voorbeeld uit te voeren:
 
       ![](assets/query_editor_nveau_18.png)
 
-      Klik **[!UICONTROL Next]**.
+      Klik op **[!UICONTROL Next]**.
 
    * Selecteer het **[!UICONTROL Primary key (@id)]** veld. De **[!UICONTROL count (primary key)]** outputkolom wordt gevormd.
 
@@ -80,29 +80,29 @@ Voer de volgende stappen uit om dit voorbeeld uit te voeren:
 
    * Herstel het volgen logboeken over een bepaalde periode voor een specifieke levering. Er zijn drie filtervoorwaarden nodig: twee datumvoorwaarden om de zoekperiode in te stellen tussen twee weken vóór de huidige datum en de dag vóór de huidige datum; en een andere voorwaarde om de zoekopdracht te beperken tot een bepaalde levering.
 
-      In het **[!UICONTROL Target element]** venster, vorm de datum beginnend waarvan het volgen logboeken in overweging zullen worden genomen. Klik **[!UICONTROL Add]**. Er wordt een voorwaardelijn weergegeven. Bewerk de **[!UICONTROL Expression]** kolom door op de **[!UICONTROL Edit expression]** functie te klikken. Kies in het **[!UICONTROL Field to select]** venster **[!UICONTROL Date (@logDate)]**.
+      In het **[!UICONTROL Target element]** venster, vorm de datum beginnend waarvan het volgen logboeken in overweging zullen worden genomen. Klik op **[!UICONTROL Add]**. Er wordt een voorwaardelijn weergegeven. Bewerk de **[!UICONTROL Expression]** kolom door op de **[!UICONTROL Edit expression]** functie te klikken. Kies in het **[!UICONTROL Field to select]** venster **[!UICONTROL Date (@logDate)]**.
 
       ![](assets/query_editor_nveau_23.png)
 
       Selecteer de **[!UICONTROL greater than]** operator. Klik in de **[!UICONTROL Value]** kolom **[!UICONTROL Edit expression]** en selecteer in het **[!UICONTROL Formula type]** venster **[!UICONTROL Process on dates]**. Tot slot, in **[!UICONTROL Current date minus n days]**, ga &quot;15&quot;in.
 
-      Klik **[!UICONTROL Finish]**.
+      Klik op **[!UICONTROL Finish]**.
 
       ![](assets/query_editor_nveau_24.png)
 
    * Als u de einddatum van de zoekopdracht in het trackinglogboek wilt selecteren, maakt u een tweede voorwaarde door op **[!UICONTROL Add]** te klikken. Kies **[!UICONTROL Expression]** nogmaals in de **[!UICONTROL Date (@logDate)]** kolom.
 
-      Selecteer de **[!UICONTROL less than]** operator. Klik in de **[!UICONTROL Value]** kolom op **[!UICONTROL Edit expression]**. Ga voor datumverwerking naar het **[!UICONTROL Formula type]** venster en voer &quot;1&quot; in **[!UICONTROL Current date minus n days]**.
+      Selecteer de **[!UICONTROL less than]** operator. In the **[!UICONTROL Value]** column, click **[!UICONTROL Edit expression]**. Ga voor datumverwerking naar het **[!UICONTROL Formula type]** venster en voer &quot;1&quot; in **[!UICONTROL Current date minus n days]**.
 
-      Klik **[!UICONTROL Finish]**.
+      Klik op **[!UICONTROL Finish]**.
 
       ![](assets/query_editor_nveau_65.png)
 
       Nu willen wij de derde filtervoorwaarde, d.w.z. het leveringsetiket vormen dat onze vraag betrekking heeft.
 
-   * Klik op de **[!UICONTROL Add]** functie om een andere filtervoorwaarde te maken. Klik in de **[!UICONTROL Expression]** kolom op **[!UICONTROL Edit expression]**. Kies in het **[!UICONTROL Field to select]** venster **[!UICONTROL Label]** de **[!UICONTROL Delivery]** node.
+   * Klik op de **[!UICONTROL Add]** functie om een andere filtervoorwaarde te maken. In the **[!UICONTROL Expression]** column, click **[!UICONTROL Edit expression]**. Kies in het **[!UICONTROL Field to select]** venster **[!UICONTROL Label]** de **[!UICONTROL Delivery]** node.
 
-      Klik **[!UICONTROL Finish]**.
+      Klik op **[!UICONTROL Finish]**.
 
       ![](assets/query_editor_nveau_66.png)
 
@@ -131,7 +131,7 @@ U kunt dit voorbeeld maken door de volgende stappen toe te passen:
    ![](assets/query_recipients_1.png)
 
 1. Selecteer **[!UICONTROL Filtering conditions]** en klik op **[!UICONTROL Next]**.
-1. Klik op de **[!UICONTROL Add]** knop en selecteer **[!UICONTROL Tracking logs]**.
+1. Click the **[!UICONTROL Add]** button and select **[!UICONTROL Tracking logs]**.
 1. Stel de **[!UICONTROL Operator]** van de **[!UICONTROL Tracking logs]** expressie in op **[!UICONTROL Do not exist such as]**.
 
    ![](assets/query_open_1.png)
@@ -168,7 +168,7 @@ In het volgende voorbeeld ziet u hoe u zich kunt richten op profielen die de lev
 
    ![](assets/s_advuser_query_sample1.1.png)
 
-   Klik **[!UICONTROL Finish]** om de selectie te bevestigen.
+   Click **[!UICONTROL Finish]** to confirm selection.
 
    Selecteer de **[!UICONTROL Greater than]** operator om alleen de trackinglogboeken van minder dan twee weken oud te herstellen.
 
@@ -192,7 +192,7 @@ In een werkstroom kunt u met de **[!UICONTROL Query]** vakken en **[!UICONTROL S
 
 * Context
 
-   Er wordt een aanbod voor de zomersport verzonden. Vier dagen na de levering worden twee andere leveringen verzonden. Een daarvan is &quot;watersportaanbod&quot;, de andere is een follow-up van de eerste &quot;Zomersportaanbieding&quot;.
+   Er wordt een aanbod voor de zomersport verzonden. Vier dagen na de levering worden twee andere leveringen verzonden. Een daarvan is &quot;watersportaanbod&quot;, het andere is een follow-up van het eerste aanbod voor de zomersport.
 
    De levering &quot;Watersportaanbod&quot; wordt verzonden naar ontvangers die bij de eerste levering op de link &quot;Watersport&quot; hebben geklikt. Deze kliks tonen aan dat de ontvanger in het onderwerp geinteresseerd is. Het heeft zin om ze naar soortgelijke aanbiedingen te sturen. Ontvangers die niet op het zomersportaanbod hebben geklikt, krijgen echter weer dezelfde inhoud.
 
@@ -207,7 +207,7 @@ De volgende stappen tonen u hoe te om de **[!UICONTROL Split]** doos te vormen d
    ![](assets/query_editor_ex_04.png)
 
 1. Definieer op het **[!UICONTROL Subsets]** tabblad de eerste gesplitste vertakking. Voer bijvoorbeeld het label **Klikken** voor deze vertakking in.
-1. Selecteer de **[!UICONTROL Add a filtering condition on the incoming population]** optie. Klik **[!UICONTROL Edit]**.
+1. Selecteer de **[!UICONTROL Add a filtering condition on the incoming population]** optie. Klik op **[!UICONTROL Edit]**.
 1. Dubbelklik in het **[!UICONTROL Targeting and filtering dimension]** venster op het **[!UICONTROL Recipients of a delivery]** filter.
 
    ![](assets/query_editor_ex_05.png)
@@ -220,12 +220,12 @@ De volgende stappen tonen u hoe te om de **[!UICONTROL Split]** doos te vormen d
 
    ![](assets/query_editor_ex_08.png)
 
-1. De tweede vertakking definiëren. Deze vertakking bevat het e-mailbericht met dezelfde inhoud als voor de eerste levering. Ga naar het **[!UICONTROL Subsets]** tabblad en klik **[!UICONTROL Add]** om het te maken.
+1. De tweede vertakking definiëren. Deze vertakking bevat de e-mail met follow-up met dezelfde inhoud als voor de eerste levering. Ga naar het **[!UICONTROL Subsets]** tabblad en klik **[!UICONTROL Add]** om het te maken.
 
    ![](assets/query_editor_ex_06.png)
 
 1. Er wordt een ander subtabblad weergegeven. Geef de naam &quot;**Heeft niet geklikt**&quot;.
-1. Klik **[!UICONTROL Add a filtering condition for the incoming population]**. Klik vervolgens **[!UICONTROL Edit...]**.
+1. Klik op **[!UICONTROL Add a filtering condition for the incoming population]**. Klik vervolgens op **[!UICONTROL Edit...]**.
 
    ![](assets/query_editor_ex_07.png)
 
