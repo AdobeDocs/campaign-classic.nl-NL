@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: d63892b3-260d-45e8-b99a-1e7c78353395
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2452'
+ht-degree: 1%
 
 ---
 
@@ -79,9 +79,9 @@ U kunt vijf verschillende typen tekstvelden invoegen in een formulierpagina:
 
    ![](assets/s_ncs_admin_survey_txt_ex.png)
 
-* **Getal**: Hiermee kan de gebruiker een getal op één regel invoeren. Zie [Getallen](#adding-numbers)toevoegen voor meer informatie hierover.
+* **Getal**: Hiermee kan de gebruiker een getal op één regel invoeren. for more on this, refer to [Adding numbers](#adding-numbers).
 
-   Nadat de pagina is goedgekeurd, wordt de inhoud van het veld gecontroleerd om te controleren of de ingevoerde waarde compatibel is met het veld. Raadpleeg [Besturingsinstellingen](../../web/using/form-rendering.md#defining-control-settings)definiëren voor meer informatie hierover.
+   Wanneer de pagina is goedgekeurd, wordt de inhoud van het veld gecontroleerd om te controleren of de ingevoerde waarde compatibel is met het veld. For more on this, refer to [Defining control settings](../../web/using/form-rendering.md#defining-control-settings).
 
 * **Wachtwoord**: Hiermee kan de gebruiker tekst op één regel invoeren. Tijdens tekstinvoer worden de tekens vervangen door punten:
 
@@ -99,7 +99,7 @@ U kunt vijf verschillende typen tekstvelden invoegen in een formulierpagina:
    >
    >Tekstvelden met meerdere regels zijn specifieke velden die regeleinden kunnen bevatten. Hun opslagruimte moet worden gekoppeld aan een veld dat is toegewezen aan een XML-element, niet aan een XML-kenmerk. Voor meer over de types van gegevens in schema&#39;s, verwijs naar het &quot;de verwijzings&quot;hoofdstuk van het Schema in [deze sectie](../../configuration/using/about-schema-reference.md).
    >   
-   >Als u de module **Beoordeling** gebruikt, kunt u dit type veld opslaan in een gearchiveerd veld dat automatisch wordt aangepast aan de indeling. Zie [deze sectie](../../web/using/about-surveys.md)voor meer informatie.
+   >Als u de module **Beoordeling** gebruikt, kunt u dit type veld opslaan in een gearchiveerd veld dat automatisch wordt aangepast aan de indeling. Raadpleeg [deze sectie](../../web/using/about-surveys.md) voor meer informatie.
 
 * **Verrijkte tekst** met meerdere regels: Hiermee kan de gebruiker tekst invoeren met een lay-out die wordt opgeslagen in HTML-indeling.
 
@@ -127,7 +127,7 @@ De antwoordopslagmodus kan worden gewijzigd via de **[!UICONTROL Edit storage...
 >
 >Opslagmodi worden gedetailleerd weergegeven in [responsopslagvelden](../../web/using/web-forms-answers.md#response-storage-fields)
 
-Op het **[!UICONTROL Advanced]** tabblad kunt u weergaveparameters voor het veld definiëren (positie van labels, uitlijning, enz.). Zie De indeling van [webformulieren definiëren](../../web/using/defining-web-forms-layout.md).
+Op het **[!UICONTROL Advanced]** tabblad kunt u weergaveparameters voor het veld definiëren (positie van labels, uitlijning, enz.). See [Defining web forms layout](../../web/using/defining-web-forms-layout.md).
 
 ## Vervolgkeuzelijsten toevoegen {#adding-drop-down-lists}
 
@@ -225,7 +225,7 @@ Voeg zoveel keuzerondjes toe als er labels zijn. Het voordeel van deze functie i
 
 >[!NOTE]
 >
->Webformulieren staan de selectie van verschillende waarden niet toe. Meerdere selecties mogen alleen worden geactiveerd voor formulieren van het type **enquête** . Zie [deze sectie](../../web/using/about-surveys.md)voor meer informatie.\
+>Webformulieren staan de selectie van verschillende waarden niet toe. Meerdere selecties mogen alleen worden geactiveerd voor formulieren van het type **enquête** . Raadpleeg [deze sectie](../../web/using/about-surveys.md) voor meer informatie.\
 >Het is echter mogelijk om een **[!UICONTROL Multiple choice]** typegebied in een toepassing van het Web op te nemen; maar zonder toestemming voor de keuze van verschillende waarden: u kunt de aangeboden opties selecteren met behulp van keuzerondjes.
 
 ## Rasters toevoegen {#adding-grids}
@@ -272,7 +272,7 @@ Datums kunnen worden geselecteerd via een kalender of een vervolgkeuzelijst. U k
 
 >[!NOTE]
 >
->De datums die in formulieren worden gebruikt, worden standaard ingevoerd via een kalender. Controleer voor meertalige formulieren of de kalenders beschikbaar zijn in alle gebruikte talen. Zie [Een webformulier](../../web/using/translating-a-web-form.md)vertalen.
+>De datums die in formulieren worden gebruikt, worden standaard ingevoerd via een kalender. Controleer voor meertalige formulieren of de kalenders beschikbaar zijn in alle gebruikte talen. See [Translating a web form](../../web/using/translating-a-web-form.md).
 
 In sommige gevallen (bijvoorbeeld bij het invoeren van geboortedata) kan het echter gemakkelijker zijn om vervolgkeuzelijsten te gebruiken.
 
@@ -383,9 +383,10 @@ U kunt de koppeling naar deze bestanden opslaan in een lokale variabele of in ee
 >[!CAUTION]
 >
 >* Dit type bestand moet worden gereserveerd voor formulieren met beveiligde toegang (met referenties).
->* Adobe Campaign heeft geen invloed op de grootte of het type van de geüploade bron: daarom adviseren wij hoogst gebruikend upload gebieden voor veilige de plaatsen van het typeIntranet slechts.
+>* Adobe Campaign bepaalt niet de grootte of het type geüploade bron: daarom adviseren wij hoogst gebruikend upload gebieden voor de veilige plaatsen van het typeIntranet slechts.
 >* Als verscheidene servers met de instantie (lading het in evenwicht brengen architectuur) worden verbonden, moet u ervoor zorgen vraag aan de vorm van het Web op de zelfde server aankomt.
->* Voor deze implementaties is de hulp van het Adobe Campagne Consulting-team vereist.
+>* Deze implementaties vereisen de hulp van het Adobe Campaign Consulting-team.
+
 >
 
 
