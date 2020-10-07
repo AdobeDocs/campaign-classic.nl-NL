@@ -1,7 +1,7 @@
 ---
-title: Integratie met Adobe Experience Cloud-oplossingen
-seo-title: Integratie met Adobe Experience Cloud-oplossingen
-description: Integratie met Adobe Experience Cloud-oplossingen
+title: Integraties met Adobe Experience Cloud-oplossingen
+seo-title: Integraties met Adobe Experience Cloud-oplossingen
+description: Integraties met Adobe Experience Cloud-oplossingen
 seo-description: null
 page-status-flag: never-activated
 uuid: 6f179af5-1e5b-42a9-a493-1b726af2af8e
@@ -11,18 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 discoiquuid: dddc3bdc-2344-423b-81d9-6f93847448a0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '110'
+ht-degree: 24%
 
 ---
 
 
-# Integratie met Adobe Experience Cloud-oplossingen{#integrations-with-adobe-experience-cloud-solutions}
+# Integraties met Adobe Experience Cloud-oplossingen{#integrations-with-adobe-experience-cloud-solutions}
 
-De hieronder beschreven workflows worden standaard geïnstalleerd met de module **Integratie met de Adobe Experience Cloud** . Raadpleeg deze [sectie](../../integrations/using/configuring-ims.md#installing-the-package)voor meer informatie over deze module.
+De hieronder beschreven workflows worden standaard geïnstalleerd met de module **Integratie met de Adobe Experience Cloud** . For more on this module, refer to this [section](../../integrations/using/configuring-ims.md#installing-the-package).
 
 <table> 
  <tbody> 
@@ -32,13 +32,13 @@ De hieronder beschreven workflows worden standaard geïnstalleerd met de module 
    <td> <strong>Beschrijving</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Soorten publiek importeren uit de Adobe Experience Cloud</span><br /> </td> 
-   <td> <span class="uicontrol">importSharedAudience</span><br /> </td> 
-   <td> Met deze workflow kunt u soorten publiek/segmenten van verschillende Adobe Experience Cloud-oplossingen importeren in Adobe Campagne.<br /> </td> 
+   <td> <span class="uicontrol">Publiek importeren uit de Adobe Experience Cloud</span> <br /> </td> 
+   <td> <span class="uicontrol">importSharedAudience</span> <br /> </td> 
+   <td> Met deze workflow kunt u soorten publiek/segmenten van verschillende Adobe Experience Cloud-oplossingen importeren in Adobe Campaign.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Soorten publiek exporteren naar de Adobe Experience Cloud</span><br /> </td> 
-   <td> <span class="uicontrol">exportSharedAudience</span><br /> </td> 
+   <td> <span class="uicontrol">Soorten publiek exporteren naar de Adobe Experience Cloud</span> <br /> </td> 
+   <td> <span class="uicontrol">exportSharedAudience</span> <br /> </td> 
    <td> Deze workflow exporteert soorten publiek als gedeeld publiek/segmenten. Deze doelgroepen kunnen worden gebruikt in de verschillende Adobe Experience Cloud-oplossingen die u gebruikt.<br /> </td> 
   </tr> 
  </tbody> 
