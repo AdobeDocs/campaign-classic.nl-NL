@@ -1,7 +1,7 @@
 ---
-title: Tijdbeperking
-seo-title: Tijdbeperking
-description: Tijdbeperking
+title: Tijdsbeperking
+seo-title: Tijdsbeperking
+description: Tijdsbeperking
 seo-description: null
 page-status-flag: never-activated
 uuid: 63bde1af-dd78-4fca-b3b9-edb1b64552cd
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 798409af-b236-4bb5-ac0f-90f0a19db345
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '76'
+ht-degree: 10%
 
 ---
 
 
-# Tijdbeperking{#time-constraint}
+# Tijdsbeperking{#time-constraint}
 
 Met een **tijdbeperkingsactiviteit** kunt u de uitvoering van een taak uitstellen of deze beëindigen.
 
