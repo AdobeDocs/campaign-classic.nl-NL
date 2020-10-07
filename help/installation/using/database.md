@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 1dcf01af-c2f3-4975-ba05-628d52952064
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 1%
 
 ---
 
@@ -24,13 +24,13 @@ source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
 
 De databaseserver kan op elk besturingssysteem worden uitgevoerd, ongeacht het besturingssysteem dat door de toepassingsserver of -servers wordt gebruikt, zolang er tussen de servers netwerkconnectiviteit is.
 
-Het besturingssysteem van de databaseserver is niet belangrijk zolang er verbinding is met de verschillende componenten van Adobe Campaign.
+Het besturingssysteem van de databaseserver is niet belangrijk zolang er verbinding met de verschillende componenten van Adobe Campaign beschikbaar is.
 
 Controleer ook de sectie van de de toegangslagen [van het](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) Gegevensbestand.
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
-De native client moet op de Adobe Campagne-toepassingsservers zijn geïnstalleerd.
+De native client moet op de Adobe Campaign-toepassingsservers zijn geïnstalleerd.
 
 U kunt controleren op de inheemse cliënt op de server via het ODBC bestuurdersconfiguratiescherm, onder **SQL Server Native Cliënt 10.0** (voor de cliënten van de Server 2008 van Microsoft SQL en 2008 R2), of **SQL Server Native Cliënt 11.0** (voor de Server 2012 van Microsoft SQL, 201 6 en 2017 clients).
 
@@ -53,9 +53,9 @@ De volgende toegang DLLs moet aanwezig zijn:
 
 De parameters **NLS_NCHAR_CHARACTERSET** en **NLS_CHARACTERSET** moeten correct worden gevormd opdat het gegevensbestand in Unicode of ANSI werkt.
 
-Adobe Campaign maakt gebruik van standaard Oracle-codering. Het gebruik van andere codering kan compatibiliteitsproblemen veroorzaken: in dit geval kunt u contact opnemen met de technische ondersteuning .
+Adobe Campaign gebruikt standaard Oracle-codering. Het gebruik van andere codering kan compatibiliteitsproblemen veroorzaken: in dit geval kunt u contact opnemen met de technische ondersteuning .
 
-Gebruik de volgende **opdracht sqlplus** om meer te weten te komen over uw codering:
+Gebruik de volgende opdracht **sqlplus** om meer te weten te komen over uw codering:
 
 ```
 SELECT * FROM nls_database_parameters ;
@@ -88,6 +88,6 @@ U kunt ook verwijzen naar de [Oracle-client in Linux](../../installation/using/i
 
 Wij adviseren dat u UTF-8 steun wanneer het installeren van de gegevensbestandmotor installeert. Op deze manier kunt u Unicode-databases maken.
 
-**Verwante onderwerpen**
+**Verwant onderwerp**
 
-* [Niet-geregistreerde optie in klassieke tabellen van de Campagne van Adobe](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)
+* [Niet-geregistreerde optie in Adobe Campaign Classic-tabellen](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)
