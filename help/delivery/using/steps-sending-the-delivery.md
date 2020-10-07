@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1526'
+ht-degree: 5%
 
 ---
 
@@ -36,7 +36,7 @@ Voordat u de levering verzendt, kunt u de verzendende parameters in de leverings
 
 * **[!UICONTROL Delivery priority]**: Met deze optie kunt u de verzendvolgorde voor uw leveringen beïnvloeden door hun prioriteitsniveau (normaal, hoog of laag) op te geven. Hierdoor kunt u de volgorde voor bepaalde, meer urgente leveringen voorrang geven boven andere.
 
-* **[!UICONTROL Message batch quantity]**: Met deze optie kunt u het aantal berichten definiëren dat is gegroepeerd binnen hetzelfde XML-leveringspakket. Als de parameter op 0 wordt geplaatst, worden de berichten automatisch gegroepeerd. De pakketgrootte wordt bepaald door de berekening `<delivery size>/1024`, met minimaal 8 en maximaal 256 berichten per pakket.
+* **[!UICONTROL Message batch quantity]**: Met deze optie kunt u het aantal berichten definiëren dat binnen hetzelfde XML-leveringspakket wordt gegroepeerd. Als de parameter op 0 wordt geplaatst, worden de berichten automatisch gegroepeerd. De pakketgrootte wordt bepaald door de berekening `<delivery size>/1024`, met minimaal 8 en maximaal 256 berichten per pakket.
 
    >[!CAUTION]
    >
@@ -52,7 +52,7 @@ Voordat u de levering verzendt, kunt u de verzendende parameters in de leverings
    >
    >Voor meer informatie bij het vormen van een server SMTP, verwijs naar [deze sectie](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
-* **[!UICONTROL Archive emails]**: Met deze optie kunt u e-mailberichten op een extern systeem opslaan via BCC door eenvoudig een BCC-e-mailadres toe te voegen aan uw berichtdoel. Raadpleeg E-mails [archiveren voor meer informatie](../../delivery/using/sending-messages.md#archiving-emails).
+* **[!UICONTROL Archive emails]**: Met deze optie kunt u e-mailberichten op een extern systeem opslaan via BCC door eenvoudig een BCC-e-mailadres toe te voegen aan uw berichtdoel. For more on this, refer to [Archiving emails](../../delivery/using/sending-messages.md#archiving-emails).
 
 Zodra de levering wordt gevormd en klaar om worden verzonden, zorg ervoor u de analyse [van de](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)Levering in werking hebt gesteld. Klik eenmaal **[!UICONTROL Confirm delivery]** om de levering van berichten te starten.
 
@@ -60,15 +60,15 @@ Zodra de levering wordt gevormd en klaar om worden verzonden, zorg ervoor u de a
 
 U kunt de leveringstovenaar dan sluiten en de uitvoering van de levering van het **[!UICONTROL Delivery]** lusje volgen, dat via de details van deze levering of via de lijst van leveringen toegankelijk is.
 
-Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Raadpleeg de volgende secties voor meer informatie:
+Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Raadpleeg deze secties voor meer informatie hierover:
 
-* [Toezicht op levering](../../delivery/using/monitoring-a-delivery.md)
+* [Een levering controleren](../../delivery/using/monitoring-a-delivery.md)
 * [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
-* [Over berichten bijhouden](../../delivery/using/about-message-tracking.md)
+* [Berichttracering](../../delivery/using/about-message-tracking.md)
 
 ## De verzending van de levering plannen {#scheduling-the-delivery-sending}
 
-U kunt de levering van berichten uitstellen om de levering te plannen of om verkoopdruk te beheren en te voorkomen dat een populatie te groot wordt.
+U kunt de levering van berichten uitstellen om de levering te plannen of om de salesdruk te beheren en te voorkomen dat een populatie overbevraagd wordt.
 
 1. Klik op de **[!UICONTROL Send]** knop en selecteer de **[!UICONTROL Postpone delivery]** optie.
 
@@ -166,7 +166,7 @@ De twee onderstaande voorbeelden zijn de meest gebruikte voorbeelden voor het ge
 
    Gebruikend golven, kunt u het aantal berichten tot 20 per dag beperken, die de dagelijkse verwerkingscapaciteit van een vraagcentrum is.
 
-   Selecteer de **[!UICONTROL Schedule multiple waves of the same size]** optie om dit te doen. Voer deze optie in **[!UICONTROL 20]** als de grootte van de golf en **[!UICONTROL 1d]** in het **[!UICONTROL Period]** veld.
+   To do this, select the **[!UICONTROL Schedule multiple waves of the same size]** option. Voer deze optie in **[!UICONTROL 20]** als de grootte van de golf en **[!UICONTROL 1d]** in het **[!UICONTROL Period]** veld.
 
    ![](assets/s_ncs_user_wizard_waves_call_center.png)
 
@@ -184,7 +184,7 @@ Door gebrek, zijn vijf herpogingen gepland voor de eerste dag van de levering me
 >
 >Voor gehoste of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, worden de retry montages in de levering niet meer gebruikt door Campagne. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
 >
->Alle gevolgen worden beschreven in het document [Verbeterde MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) van de Campagne van Adobe.
+>Alle effecten worden beschreven in het document [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/nl/campaign/kb/acc-campaign-enhanced-mta.html) .
 
 
 ## Geldigheidsduur definiëren {#defining-validity-period}
@@ -193,7 +193,7 @@ Wanneer de levering is gestart, kunnen de berichten (en eventuele nieuwe poginge
 
 ![](assets/s_ncs_user_email_del_valid_period.png)
 
-* In het **[!UICONTROL Delivery duration]** veld kunt u de limiet voor algemene leveringspogingen invoeren. Dit betekent dat de Campagne van Adobe de berichten verzendt die op de begindatum beginnen, en dan, voor berichten die een fout slechts terugkeren, regelmatig, configureerbare herpogingen worden uitgevoerd tot de geldigheidsgrens wordt bereikt.
+* In het **[!UICONTROL Delivery duration]** veld kunt u de limiet voor algemene leveringspogingen invoeren. Dit betekent dat Adobe Campaign de berichten verzendt die op de begindatum beginnen, en dan, voor berichten die een fout slechts terugkeren, regelmatig, configureerbare herpogingen worden uitgevoerd tot de geldigheidsgrens wordt bereikt.
 
    U kunt ook datums opgeven. Selecteer **[!UICONTROL Explicitly set validity dates]** deze optie. In dit geval kunt u ook de tijd opgeven op basis van de uiterste datum voor levering en geldigheid. De huidige tijd wordt standaard gebruikt, maar u kunt deze rechtstreeks wijzigen in het invoerveld.
 
@@ -205,4 +205,4 @@ Wanneer de levering is gestart, kunnen de berichten (en eventuele nieuwe poginge
 >
 >Voor gehoste of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, zal het plaatsen in uw levering van de Campagne slechts worden gebruikt als reeks aan **[!UICONTROL Delivery duration]** 3.5 **** dagen of minder. Als u een waarde definieert die hoger is dan 3,5 dagen, wordt hiermee geen rekening gehouden.
 >
->Alle gevolgen worden beschreven in het document [Verbeterde MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) van de Campagne van Adobe.
+>Alle effecten worden beschreven in het document [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/nl/campaign/kb/acc-campaign-enhanced-mta.html) .
