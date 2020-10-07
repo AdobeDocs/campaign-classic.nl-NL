@@ -11,18 +11,18 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 62d03128-5525-4556-8590-8492847c4a1f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 7%
 
 ---
 
 
 # Aanbiedingssjablonen beheren{#managing-offer-templates}
 
-Aanbiedingssjablonen worden in Adobe Campagne offline geleverd. U kunt ze gebruiken nadat u uw aanbiedingen hebt gemaakt, gedupliceerd of de configuratie ervan hebt aangepast aan uw behoeften. U kunt ook uw eigen sjablonen maken. Sjabloonaanbiedingen worden opgeslagen in de map **Bronnen** > **Sjablonen** > **Aanbiedingssjablonen**.
+Aanbiedingssjablonen worden in Adobe Campaign offline geleverd. U kunt ze gebruiken nadat u uw aanbiedingen hebt gemaakt, gedupliceerd of de configuratie ervan hebt aangepast aan uw behoeften. U kunt ook uw eigen sjablonen maken. Sjabloonaanbiedingen worden opgeslagen in de map **Bronnen** > **Sjablonen** > **Aanbiedingssjablonen**.
 
 ## Een aanbiedingstemplate maken {#creating-an-offer-template}
 
@@ -37,7 +37,7 @@ Voer de volgende stappen uit om een sjabloonaanbieding te maken:
 
 ## Een bestaande sjabloon dupliceren {#duplicate-an-existing-template}
 
-Voer de volgende stappen uit om een aanbiedingstemplate (al dan niet buiten de box) te dupliceren:
+Ga als volgt te werk om een aanbiedingstemplate (al dan niet buiten de box) te dupliceren:
 
 1. Ga naar **Bronnen > Sjablonen > Aanbiedingssjablonen**.
 1. Klik met de muis met de rechtermuisknop op de sjabloon die u wilt dupliceren en selecteer **Dupliceren** in het keuzemenu.
