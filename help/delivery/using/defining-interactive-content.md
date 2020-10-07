@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 80de051cde62038c11246f8da08a7e00505a3313
+source-git-commit: a636d56652e1045e7c48bd2e1a2420b58212739a
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1574'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 Met Adobe Campaign kunt u de nieuwe interactieve [AMP-indeling voor e-mail](https://amp.dev/about/email/) proberen, waarmee u onder bepaalde omstandigheden dynamische e-mailberichten kunt verzenden.
 
-In deze versie kunt u:
+Met AMP for Email kunt u:
 * Test het leveren van AMP-e-mails naar specifieke adressen die correct zijn geconfigureerd.
 * E-mails met AMP naar Gmail-, Outlook- of Mail.ru-adressen verzenden nadat u zich hebt geregistreerd bij de betreffende providers.
 
@@ -55,19 +55,14 @@ Raadpleeg de documentatie bij [](https://amp.dev/documentation/guides-and-tutori
 ## Belangrijke stappen voor het gebruik van AMP voor e-mail met Adobe Campaign {#key-steps-to-use-amp}
 
 Volg onderstaande stappen om een AMP-e-mail met Adobe Campaign te testen en te verzenden:
-1. Installeer het **[!UICONTROL AMP support (Beta)]** pakket. Zie Standaardpakketten [voor campagne](../../installation/using/installing-campaign-standard-packages.md)installeren.
+1. Installeer het **[!UICONTROL AMP support]** pakket. Zie Standaardpakketten [voor campagne](../../installation/using/installing-campaign-standard-packages.md)installeren.
 1. Maak een e-mail en maak uw AMP-inhoud in Adobe Campaign. Zie AMP-e-mailinhoud [maken met Adobe Campaign](#build-amp-email-content).
 1. Zorg ervoor dat u voldoet aan alle leveringsvereisten van de e-mailproviders die de AMP-indeling ondersteunen. Zie [AMP voor vereisten](#amp-for-email-delivery-requirements)voor e-maillevering.
-
-   >[!NOTE]
-   >
-   >AMP for Email is beschikbaar als bètamogelijkheid voor testdoeleinden. Momenteel ondersteunen slechts enkele e-mailproviders het testen van deze indeling.
-
 1. Wanneer u uw doel definieert, moet u ontvangers selecteren die de AMP-indeling kunnen weergeven. Zie [Een AMP-e-mail](#targeting-amp-email)als doel instellen.
 
    >[!NOTE]
    >
-   >Momenteel kunt u alleen testen of u AMP-e-mailberichten naar specifieke e-mailadressen verzendt die op de juiste wijze zijn geconfigureerd of nadat u zich hebt geregistreerd bij de e-mailproviders die deelnemen aan het bètaprogramma van AMP.
+   >Momenteel kunt u AMP-e-mails alleen verzenden naar [specifieke e-mailadressen](#testing-amp-delivery-for-selected-addresses) (voor testdoeleinden) of na [registratie](#delivering-amp-emails-by-registering) bij de ondersteunde e-mailclients.
 
 1. Verzend uw e-mail zoals u gewoonlijk zou doen. Zie Een AMP-e-mail [](#sending-amp-email)verzenden.
 
@@ -156,10 +151,10 @@ U kunt ook de [Tips en bekende beperkingen voor Gmail](https://developers.google
 
 ## Een AMP-e-mail als doel instellen {#targeting-amp-email}
 
-Aangezien AMP for Email beschikbaar is als bètamogelijkheid, kunt u momenteel in twee stappen experimenteren met het verzenden van een AMP-e-mail:
+U kunt momenteel in twee stappen experimenteren met het verzenden van een AMP-e-mail:
 
 1. Met Adobe Campaign kunt u testen of een dynamische e-mail met AMP-functionaliteit wordt geleverd aan geselecteerde e-mailadressen die correct zijn geconfigureerd, om de inhoud en het gedrag ervan te controleren. Zie AMP-e-maillevering [testen voor geselecteerde adressen](#testing-amp-delivery-for-selected-addresses).
-1. Nadat u de test hebt uitgevoerd, kunt u een levering of een campagne verzenden als onderdeel van het bètaprogramma voor e-mail door u te registreren bij de desbetreffende e-mailprovider(s) om uw senderdomein toe te voegen aan de lijst van gewenste personen. Zie E-mails met AMP [leveren door u te registreren bij een e-mailprovider](#delivering-amp-emails-by-registering).
+1. Nadat u de test hebt uitgevoerd, kunt u een levering of een campagne verzenden als onderdeel van het AMP for Email-programma door u te registreren bij de desbetreffende e-mailprovider(s) om uw senderdomein toe te voegen aan de lijst van gewenste personen. Zie E-mails met AMP [leveren door u te registreren bij een e-mailprovider](#delivering-amp-emails-by-registering).
 
 ### AMP-e-maillevering testen voor geselecteerde adressen {#testing-amp-delivery-for-selected-addresses}
 
@@ -183,7 +178,7 @@ Om het verzenden van een e-mail van AMP naar een adres te testen Mail.ru, volg d
 
 ### E-mails met AMP leveren door zich te registreren bij een e-mailprovider {#delivering-amp-emails-by-registering}
 
-U kunt experimenteren met het leveren van dynamische e-mailberichten door u te registreren bij de e-mailproviders die deelnemen aan het AMP bètaprogramma om uw senderdomein toe te voegen aan de lijst van gewenste personen.
+U kunt experimenteren met het leveren van dynamische e-mailberichten door u te registreren bij de ondersteunde e-mailproviders, zodat uw senderdomein aan de lijst van gewenste personen wordt toegevoegd.
 
 >[!NOTE]
 >
