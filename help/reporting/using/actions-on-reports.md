@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 3b9c138e-8f7f-4ee1-9baa-328848d01d3a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 2%
 
 ---
 
@@ -38,7 +38,7 @@ Selecteer de indeling waarin u het rapport wilt exporteren in de vervolgkeuzelij
 
 Wanneer een rapport meerdere pagina&#39;s bevat, moet u de bewerking voor elke pagina herhalen.
 
-U kunt uw rapport configureren met het oog op het exporteren ervan in PDF-, Excel- of OpenOffice-indeling. Open de Adobe Campagneverkenner en selecteer het betreffende rapport.
+U kunt uw rapport configureren met het oog op het exporteren ervan in PDF-, Excel- of OpenOffice-indeling. Open de explorator van Adobe Campaign en selecteer het betrokken rapport.
 
 Exportopties zijn toegankelijk via de **[!UICONTROL Page]** activiteiten van het rapport op het **[!UICONTROL Advanced]** tabblad.
 
@@ -113,7 +113,7 @@ De archiefdatums worden weergegeven onder het pictogram voor tonen/verbergen. Kl
 
 ![](assets/s_ncs_advuser_report_history_04.png)
 
-Het is mogelijk om een rapportarchief te schrappen. Ga hiertoe naar het knooppunt Adobe Campagne waar de rapporten zijn opgeslagen. Klik op het **[!UICONTROL Archives]** tabblad, selecteer het tabblad dat u wilt verwijderen en klik op **[!UICONTROL Delete]**.
+Het is mogelijk om een rapportarchief te schrappen. Ga hiertoe naar het Adobe Campaign-knooppunt waar uw rapporten zijn opgeslagen. Klik op het **[!UICONTROL Archives]** tabblad, selecteer het tabblad dat u wilt verwijderen en klik op **[!UICONTROL Delete]**.
 
 ![](assets/s_ncs_advuser_report_history_01.png)
 
