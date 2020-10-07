@@ -11,22 +11,22 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 discoiquuid: 1d3cc650-3c79-4a1d-b2bc-e7eb6d59d2f1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1102'
+ht-degree: 3%
 
 ---
 
 
 # LINE-kanaal{#line-channel}
 
-LINE is een toepassing voor gratis instant messaging-, spraak- en videogesprekken die beschikbaar zijn op alle smartphones (iPhone, Android, Windows Phone, Blackberry, Nokia) en op pc&#39;s. Met Adobe Campaign kunt u LINE-berichten verzenden.
+LINE is een toepassing voor gratis instant messaging-, spraak- en videogesprekken die beschikbaar zijn op alle smartphones (iPhone, Android, Windows Phone, Blackberry, Nokia) en op pc&#39;s. Met Adobe Campaign kunt u LIJNberichten verzenden.
 
 De LIJN is slechts beschikbaar voor op-gebouw of beheerde de diensteninstallaties.
 
-De LIJN kan ook met de transactionele berichtmodule worden gecombineerd om berichten in real time op LINE te verzenden die in de mobiele apparaten van de consument wordt geïnstalleerd. Raadpleeg deze [pagina](../../message-center/using/transactional-messaging-architecture.md#transactional-messaging-and-line)voor meer informatie.
+De LIJN kan ook met de transactionele berichtmodule worden gecombineerd om berichten in real time op LINE te verzenden die in de mobiele apparaten van de consument wordt geïnstalleerd. Raadpleeg [deze pagina](../../message-center/using/transactional-messaging-architecture.md#transactional-messaging-and-line) voor meer informatie.
 
 ![](assets/line_message.png)
 
@@ -56,9 +56,9 @@ Om de dienst van de LIJN tot stand te brengen en te vormen, zie het [Leiden abon
 
 ![](assets/line_service.png)
 
-Tot slot kunt u als volgt een extern account maken op de Adobe-campagne:
+Ten slotte een externe account maken op Adobe Campaign:
 
-1. Klik in het **venster Beheer** > **Platformstructuur** op het tabblad **Externe accounts** .
+1. Klik in de boomstructuur **Beheer** > **Platform** op het tabblad **Externe accounts** .
 1. Klik vervolgens op het pictogram **Nieuw** .
 
    ![](assets/line_config.png)
@@ -94,10 +94,10 @@ Voer de volgende stappen uit als u een **LIJNlevering** wilt maken:
 
    ![](assets/line_message_01.png)
 
-1. Identificeer uw levering met een etiket, code, en beschrijving. Zie [deze sectie](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery)voor meer informatie.
+1. Identificeer uw levering met een etiket, code, en beschrijving. Raadpleeg [deze sectie](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery) voor meer informatie.
 1. Klik **[!UICONTROL Continue]** om de levering te maken.
 
-## De inhoud definiëren {#defining-the-content}
+## De content definiëren {#defining-the-content}
 
 Om de inhoud van een levering van de LIJN te bepalen, moet u eerst berichttype aan uw levering toevoegen. Elke lijnlevering kan tot 5 berichten bevatten.
 
@@ -112,7 +112,7 @@ Een **tekstbericht** LINE levering is een bericht dat in tekstvorm naar ontvange
 
 ![](assets/line_message_02.png)
 
-De configuratie voor dit type van bericht is gelijkaardig aan de configuratie van de **tekst** in e-mail. Raadpleeg deze [pagina](../../delivery/using/defining-the-email-content.md#message-content)voor meer informatie.
+De configuratie voor dit type van bericht is gelijkaardig aan de configuratie van de **tekst** in e-mail. For more information, refer to this [page](../../delivery/using/defining-the-email-content.md#message-content).
 
 ### Afbeelding en koppelingslevering configureren {#configuring-an-image-and-link-delivery}
 
@@ -141,6 +141,7 @@ U kunt het volgende gebruiken:
    * 460px
    * 300px
    * 240px
+
    >[!NOTE]
    >
    >De grootte van 1040 x 1040 px is verplicht voor elke lijnafbeelding met koppeling.
