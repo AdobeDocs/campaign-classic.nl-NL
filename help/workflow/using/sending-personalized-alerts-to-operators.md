@@ -1,7 +1,7 @@
 ---
-title: Persoonlijke waarschuwingen verzenden aan operatoren
-seo-title: Persoonlijke waarschuwingen verzenden aan operatoren
-description: Persoonlijke waarschuwingen verzenden aan operatoren
+title: Gepersonaliseerde waarschuwingen verzenden naar operatoren
+seo-title: Gepersonaliseerde waarschuwingen verzenden naar operatoren
+description: Gepersonaliseerde waarschuwingen verzenden naar operatoren
 seo-description: null
 page-status-flag: never-activated
 uuid: 10dd46b9-df28-4043-91f9-c9316a7c69d3
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 4d72db10-29bd-4b3c-adb3-bead02890271
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 5%
 
 ---
 
 
-# Persoonlijke waarschuwingen verzenden aan operatoren{#sending-personalized-alerts-to-operators}
+# Gepersonaliseerde waarschuwingen verzenden naar operatoren{#sending-personalized-alerts-to-operators}
 
 In dit voorbeeld willen wij een alarm naar een exploitant verzenden die de naam van profielen zal bevatten die een nieuwsbrief opende maar niet de verbinding klikte het bevat.
 
@@ -28,7 +28,7 @@ De velden voor de voornaam en achternaam van de profielen zijn gekoppeld aan de 
 
 Het proces bestaat uit het ontwikkelen van een workflow zoals hieronder:
 
-1. Gebruik een **[!UICONTROL Query]** activiteit aan doelgegevens.
+1. Gebruik een **[!UICONTROL Query]** activiteit om gegevens te richten.
 1. Voeg een **[!UICONTROL JavaScript code]** activiteit in het werkschema toe om de bevolking van de vraag aan de instantievariabele te bewaren.
 1. Gebruik een **[!UICONTROL Test]** activiteit om het aantal inwoners te controleren.
 1. Gebruik een **[!UICONTROL Alert]** activiteit om een alarm naar een exploitant, afhankelijk van het **[!UICONTROL Test]** activiteitenresultaat te verzenden.
