@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 3da951ef-5775-4593-8301-f143c71edc19
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1610'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -56,13 +53,13 @@ Raadpleeg deze [documentatie](../../workflow/using/starting-a-workflow.md)voor m
 
 ### Workflowplanning {#workflow-planning}
 
-* Probeer de dag een stabiel activiteitsniveau te handhaven en pieken te vermijden om te voorkomen dat de instantie overbelast raakt. Hiervoor verdeelt u de begintijden van de workflow gelijkmatig over de dag.
+* Probeer de dag een stabiel activiteitsniveau te handhaven en pieken te vermijden om te voorkomen dat de instantie overbelast raakt. Hiervoor verdeelt u de werkstroom gelijkmatig over de dag.
 * Plan de gegevensbelasting &#39;s nachts om de bronconflict te verminderen.
 * De lange werkschema&#39;s kunnen potentieel een effect op de server en gegevensbestandmiddelen hebben. Splits de langste workflows om de verwerkingstijd te verkorten.
 * Om de totale uitvoeringstijd te verkorten, vervang tijdrovende activiteiten door vereenvoudigde en snellere activiteiten.
 * Gebruik niet meer dan 20 workflows tegelijk. Wanneer te veel werkstromen tegelijkertijd worden uitgevoerd, kan het systeem zonder middelen en instabiel worden. Raadpleeg dit [artikel](https://helpx.adobe.com/ie/campaign/kb/workflows-not-starting-in-a-campaign-technical-workflows.html)voor meer informatie over waarom de workflow mogelijk niet wordt gestart.
 
-### Workflow-uitvoering {#workflow-execution}
+### Workflowuitvoering {#workflow-execution}
 
 Het is aan te raden een workflow niet meer dan om de 15 minuten te plannen, omdat dit de algehele systeemprestaties kan belemmeren en blokken in de database kan maken.
 
@@ -84,7 +81,7 @@ Schakel in het **[!UICONTROL Workflow properties]** venster nooit de **[!UICONTR
 
 ![](assets/wf-execute-in-engine.png)
 
-## Workflow-eigenschappen {#workflow-properties}
+## Workfloweigenschappen {#workflow-properties}
 
 ### Workflowmappen {#workflow-folders}
 
@@ -94,7 +91,7 @@ Als de workflow van invloed is op het hele platform (bijvoorbeeld op het opschon
 
 ### Workflownaamgeving {#workflow-naming}
 
-Omdat het hen gemakkelijker maakt om te vinden en problemen op te lossen als zij niet op de verwachte manieren presteren, adviseert Adobe om uw werkschema&#39;s eigennamen en etiketten te geven: Vul het beschrijvingsveld van de werkstroom in om een overzicht te geven van het proces dat moet worden uitgevoerd zodat de exploitant het gemakkelijk kan begrijpen.
+Om het gemakkelijker te maken om workflows te vinden en problemen op te lossen als ze niet naar behoren functioneren, wordt u aangeraden om uw workflows duidelijke namen en labels te geven. Vul het beschrijvingsveld van de workflow in om het uit te voeren proces samen te vatten, zodat de operator het gemakkelijk kan begrijpen.
 
 Als de workflow deel uitmaakt van een proces waarbij meerdere workflows zijn betrokken, kunt u expliciet zijn wanneer u een label invoert. het gebruik van getallen is een goede manier om de workflows te bestellen (door Label).
 
@@ -126,11 +123,11 @@ Alle geplande workflows die op productieomgevingen worden uitgevoerd, moeten wor
 
 In de werkschemaeigenschappen, selecteer een groep van de Supervisor, of het gebrek **[!UICONTROL Workflow supervisors]** of een douanegroep. Zorg ervoor dat ten minste één operator tot deze groep behoort, met een e-mailinstelling.
 
-Voordat u een workflow gaat maken, moet u workflowsupervisors definiëren. Zij zullen per e-mail op de hoogte worden gesteld in het geval van fouten. Raadpleeg [Fouten](../../workflow/using/monitoring-workflow-execution.md#managing-errors)beheren voor meer informatie.
+Voordat u een workflow gaat maken, moet u workflowsupervisors definiëren. Zij zullen per e-mail op de hoogte worden gesteld in het geval van fouten. For more on this, refer to [Managing errors](../../workflow/using/monitoring-workflow-execution.md#managing-errors).
 
-Controleer regelmatig het **[!UICONTROL Monitoring]** universum om de algemene status van de actieve workflows te bekijken. Raadpleeg voor meer informatie het [Instantietoezicht](../../workflow/using/monitoring-workflow-execution.md#instance-supervision).
+Controleer regelmatig het **[!UICONTROL Monitoring]** universum om de algemene status van de actieve workflows te bekijken. For more on this, refer to [Instance supervision](../../workflow/using/monitoring-workflow-execution.md#instance-supervision).
 
-Met de Workflow HeatMap kunnen beheerders van het Adobe Campagne-platform de belasting op de instantie controleren en workflows dienovereenkomstig plannen. Raadpleeg voor meer informatie de [workflowbewaking](../../workflow/using/heatmap.md).
+Met de Workflow HeatMap kunnen beheerders van het Adobe Campaign-platform de belasting op de instantie controleren en workflows dienovereenkomstig plannen. For more on this, refer to [Workflow monitoring](../../workflow/using/heatmap.md).
 
 ## Activiteiten gebruiken {#using-activities}
 
@@ -140,18 +137,18 @@ Met de Workflow HeatMap kunnen beheerders van het Adobe Campagne-platform de bel
 
 ### Naam van de activiteit {#name-of-the-activity}
 
-Tijdens het ontwikkelen van uw workflow hebben alle activiteiten een naam, net als alle andere Adobe Campagneobjecten. Terwijl de naam door het hulpmiddel wordt geproduceerd, adviseren wij u het met een expliciete naam anders te noemen wanneer het vormen van het. Het risico dat het later gebeurt, is dat het de werkstroom kan onderbreken met activiteiten die de naam van een andere voorgaande activiteit gebruiken. Het zou dus moeilijk zijn om de namen achteraf bij te werken.
+Tijdens het ontwikkelen van uw workflow hebben alle activiteiten een naam, net als alle Adobe Campaign-objecten. Terwijl de naam door het hulpmiddel wordt geproduceerd, adviseren wij u het met een expliciete naam anders te noemen wanneer het vormen van het. Het risico dat het later gebeurt, is dat het de werkstroom kan onderbreken met activiteiten die de naam van een andere voorgaande activiteit gebruiken. Het zou dus moeilijk zijn om de namen achteraf bij te werken.
 
 U vindt de naam van de activiteit op het **[!UICONTROL Advanced]** tabblad. Laat ze niet de naam **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]** maar geef ze expliciete namen, zoals **[!UICONTROL querySubscribedRecipients]**. Deze naam zal in het dagboek, en indien van toepassing in de SQL logboeken verschijnen, en dit zal helpen om het werkschema te zuiveren wanneer het vormen van het.
 
 ### Eerste en laatste activiteiten {#first-and-last-activities}
 
 * Start uw workflow altijd met een **[!UICONTROL Start]** activiteit of een **[!UICONTROL Scheduler]** activiteit. Indien relevant kunt u ook een **[!UICONTROL External signal]** activiteit gebruiken.
-* Gebruik bij het samenstellen van uw workflow slechts één **[!UICONTROL Scheduler]** activiteit per vertakking. Als de zelfde tak van een werkschema verscheidene planners (verbonden aan elkaar) heeft, zal het aantal uit te voeren taken exponentieel worden vermenigvuldigd, die het gegevensbestand aanzienlijk zou overbelasten. Deze regel is ook van toepassing op alle activiteiten met een **[!UICONTROL Scheduling & History]** tab. Meer weten over [plannen](../../workflow/using/scheduler.md)?
+* When building your workflow, only use one **[!UICONTROL Scheduler]** activity per branch. Als dezelfde vertakking van een workflow meerdere planners heeft (die met elkaar gekoppeld zijn), zal het aantal uit te voeren taken exponentieel worden vermenigvuldigd, waardoor de database aanzienlijk overbelast zou worden. Deze regel is ook van toepassing op alle activiteiten met een **[!UICONTROL Scheduling & History]** tab. Meer weten over [plannen](../../workflow/using/scheduler.md)?
 
    ![](assets/wf-scheduler.png)
 
-* Gebruik **[!UICONTROL End]** activiteiten voor elke workflow. Hiermee maakt Adobe Campagne tijdelijke ruimte vrij die wordt gebruikt voor berekeningen binnen workflows. Raadpleeg voor meer informatie: [Begin en einde](../../workflow/using/start-and-end.md).
+* Gebruik **[!UICONTROL End]** activiteiten voor elke workflow. Zo maakt Adobe Campaign tijdelijke ruimte vrij die wordt gebruikt voor berekeningen binnen workflows. Raadpleeg voor meer informatie: [Begin en einde](../../workflow/using/start-and-end.md).
 
 ### JavaScript binnen een activiteit {#javascript-within-an-activity}
 
