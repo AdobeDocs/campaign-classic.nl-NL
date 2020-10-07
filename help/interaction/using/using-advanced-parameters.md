@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 2bb756a2-4aca-4195-9b7a-ec85028a8012
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '121'
+ht-degree: 9%
 
 ---
 
@@ -28,9 +28,9 @@ In dit hoofdstuk worden de verschillende mogelijke geavanceerde parameters in In
 >
 >Het volgende hoofdstuk is bestemd voor **technische beheerders**.
 
-* U kunt aanvullende contextafhankelijke gegevens gebruiken. Raadpleeg de sectie [Aanvullende gegevens](../../interaction/using/additional-data.md) .
+* U kunt aanvullende contextafhankelijke gegevens gebruiken. Refer to the [Additional data](../../interaction/using/additional-data.md) section.
 * U kunt de toepassingscontext van de voorgestelde aanbiedingen via een inkomend kanaal verrijken. Hiervoor moeten de **nms:interactieschema** worden uitgebreid. Raadpleeg de voorbeeldsectie [Extensie](../../interaction/using/extension-example.md) voor de volledige procedure.
 * Het creëren van een testmilieu wordt gedetailleerd in het [Creëren van een sectie van het testmilieu](../../interaction/using/creating-a-test-environment.md) .
-* U kunt het standaardgedrag van de motor wijzigen met haken. Raadpleeg voor meer informatie de sectie [Hooks](../../interaction/using/hooks.md)
+* U kunt het standaardgedrag van de motor wijzigen met haken. For more on this, refer to the [Hooks](../../interaction/using/hooks.md) section
 * Tot slot wordt het gebruiken van Interactie met een verdeelde architectuur gedetailleerd in de [Verdeelde architectuursectie](../../interaction/using/distributed-architectures.md) .
 
