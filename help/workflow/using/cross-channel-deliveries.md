@@ -1,7 +1,7 @@
 ---
-title: Kanaalleveringen
-seo-title: Kanaalleveringen
-description: Kanaalleveringen
+title: Leveringen tussen kanalen
+seo-title: Leveringen tussen kanalen
+description: Leveringen tussen kanalen
 seo-description: null
 page-status-flag: never-activated
 uuid: 191ff39e-f739-48b3-8865-ad1b641b7499
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 8dda45b4-4b5d-4b4e-a8b4-45d9bc49aaf3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 8%
 
 ---
 
 
-# Kanaalleveringen{#cross-channel-deliveries}
+# Leveringen tussen kanalen{#cross-channel-deliveries}
 
 Kanaaloverschrijdende leveringen zijn beschikbaar op het **[!UICONTROL Deliveries]** tabblad van activiteiten in de campagnewerkstroom.
 
@@ -40,7 +40,7 @@ U kunt een doel voor uw levering vóór het werkschema specificeren gebruikend d
 
 Hier maken we bijvoorbeeld een workflow voor het verzenden van een e-mail of een SMS voor gebruikers met pushberichten en een week later een pushmelding. Dit doet u als volgt:
 
-1. Maak een campagne.
+1. Een campagne maken.
 1. Voeg op het **[!UICONTROL Targeting and workflows]** tabblad van de campagne een **[!UICONTROL Query]** item toe aan de workflow.
 1. Configureer uw query. Hier selecteren we bijvoorbeeld de ontvangers die zijn geabonneerd op pushberichten als doeldimensie.
 
@@ -57,14 +57,14 @@ Hier maken we bijvoorbeeld een workflow voor het verzenden van een e-mail of een
 1. Voeg een **[!UICONTROL Split]** activiteit aan uw werkschema toe om ontvangers te verdelen die een mobiel aantal en degenen hebben die een e-mailadres hebben.
 1. Selecteer op het **[!UICONTROL Delivery]** tabblad een levering voor elk van uw doelen.
 
-   U kunt uw levering op dezelfde manier maken als met een klassieke wizard voor levering door te dubbelklikken op de leveringsactiviteit in uw workflow. Raadpleeg deze [pagina](../../delivery/using/about-email-channel.md)voor meer informatie.
+   U kunt uw levering op dezelfde manier maken als met een klassieke wizard voor levering door te dubbelklikken op de leveringsactiviteit in uw workflow. Raadpleeg [deze pagina](../../delivery/using/about-email-channel.md) voor meer informatie.
 
    ![](assets/cross_channel_delivery_3.png)
 
 1. Voeg en vorm een **[!UICONTROL Wait]** activiteit toe opdat de ontvangers niet teveel leveringen in één keer ontvangen.
-1. Voeg een **[!UICONTROL Split]** activiteit toe om abonnees van een mobiele iOS- of Android-toepassing te verdelen.
+1. Voeg een **[!UICONTROL Split]** activiteit toe om abonnees van mobiele iOS- of Android-toepassingen te verdelen.
 
-   Selecteer een service voor elk besturingssysteem. Raadpleeg deze [pagina](../../delivery/using/configuring-the-mobile-application.md)voor meer informatie over het maken van services.
+   Selecteer een service voor elk besturingssysteem. For more on service creation, refer to this [page](../../delivery/using/configuring-the-mobile-application.md).
 
    ![](assets/cross_channel_delivery_4.png)
 
