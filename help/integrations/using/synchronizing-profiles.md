@@ -11,27 +11,24 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 discoiquuid: 91115d4f-0cb6-4bce-b28d-17f15e9f9a0a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1203'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
 # Profielen synchroniseren{#synchronizing-profiles}
 
-ACS Connector repliceert gegevens van Campaign v7 aan Campaign Standard. De gegevens die zijn ontvangen van Campaign v7 kunnen in Campaign Standard worden gebruikt om leveringen te maken. U kunt zien hoe profielen worden gesynchroniseerd door de hieronder vermelde bewerkingen uit te voeren.
+ACS Connector repliceert gegevens van Campaign v7 aan Campaign Standard. De gegevens die van Campagne v7 worden ontvangen kunnen in Campaign Standard worden gebruikt om leveringen tot stand te brengen. U kunt zien hoe profielen worden gesynchroniseerd door de hieronder vermelde bewerkingen uit te voeren.
 
-* **Nieuwe ontvangers** toevoegen: Maak een nieuwe ontvanger in Campaign v7 en bevestig dat een overeenkomstig profiel is gerepliceerd naar Campaign Standard. Zie [Een nieuwe ontvanger](#creating-a-new-recipient)maken.
+* **Nieuwe ontvangers** toevoegen: Maak een nieuwe ontvanger in Campagne v7 en bevestig dat een overeenkomstig profiel aan Campaign Standard is herhaald. Zie [Een nieuwe ontvanger](#creating-a-new-recipient)maken.
 * **Ontvangers** bijwerken: Bewerk een nieuwe ontvanger in Campagne v7 en bekijk het bijbehorende profiel in Campaign Standard om te bevestigen dat de update is gerepliceerd. Zie Een ontvanger [bewerken](#editing-a-recipient).
-* **Een workflow maken in Campaign Standard**: Maak een workflow in Campaign Standard die een query bevat met een publiek of profielen die zijn gerepliceerd vanuit Campagne v7. Zie [Een workflow](#creating-a-workflow)maken.
+* **Een workflow maken in Campaign Standard**: Maak een workflow in Campaign Standard die een query bevat met een publiek of profielen die zijn gerepliceerd uit Campagne v7. See [Creating a workflow](#creating-a-workflow).
 * **Een levering maken in Campaign Standard**: Volg de workflow om de levering te voltooien. Zie [Een levering](#creating-a-delivery)maken.
-* **Controleer de koppeling** voor het opzeggen van abonnementen: Gebruik een het Webtoepassing van de Campagne v7 om ervoor te zorgen dat de keus van de ontvanger om aan de dienst af te melden wordt verzonden naar het gegevensbestand van de Campagne v7. De optie om de service niet meer te ontvangen, wordt naar Campaign Standard gerepliceerd. Zie [De koppeling](#changing-the-unsubscription-link)voor abonnementen wijzigen.
+* **Controleer de koppeling** voor het opzeggen van abonnementen: Gebruik een het Webtoepassing van de Campagne v7 om ervoor te zorgen dat de keus van de ontvanger om aan de dienst af te melden wordt verzonden naar het gegevensbestand van de Campagne v7. De optie om het ontvangen van de dienst op te houden wordt herhaald aan Campaign Standard. Zie [De koppeling](#changing-the-unsubscription-link)voor abonnementen wijzigen.
 
 ## Vereisten {#prerequisites}
 
@@ -43,19 +40,19 @@ De volgende secties beschrijven hoe de Schakelaar ACS u helpt ontvangers in Camp
 
 ## De koppeling voor het opzeggen van abonnementen wijzigen {#changing-the-unsubscription-link}
 
-Wanneer een ontvanger in een e-mailbericht van Campaign Standard op de koppeling voor het opzeggen van een abonnement klikt, wordt het bijbehorende profiel in Campaign Standard bijgewerkt. Om ervoor te zorgen dat een gerepliceerd profiel de keuze van de gebruiker bevat om zich af te melden voor een service, moet de informatie naar Campagne v7 worden verzonden in plaats van naar Campaign Standard. Om de wijziging uit te voeren, wordt de service voor het opzeggen van abonnementen gekoppeld aan een Campagne v7-webtoepassing in plaats van aan Campaign Standard.
+Wanneer een ontvanger in een e-mailbericht dat door Campaign Standard is verzonden op de koppeling voor het opzeggen van een abonnement klikt, wordt het bijbehorende profiel in Campaign Standard bijgewerkt. Om ervoor te zorgen dat een herhaald profiel de keus van een gebruiker om aan de dienst te onderschrijven omvat, moet de informatie naar Campagne v7 eerder dan Campaign Standard worden verzonden. Om de wijziging uit te voeren, wordt de service voor het ongedaan maken van abonnementen gekoppeld aan een Campagne v7-webtoepassing in plaats van aan Campaign Standard.
 
 >[!NOTE]
 >
 >Vraag uw consultant om de webtoepassing voor de service voor abonnementen te configureren voordat u de onderstaande stappen uitvoert.
 
-## Een nieuwe ontvanger maken {#creating-a-new-recipient}
+## Creating a new recipient {#creating-a-new-recipient}
 
-1. Maak een nieuwe ontvanger in Campagne v7 voor replicatie naar Campaign Standard. Voer zoveel mogelijk gegevens in, zoals de achternaam, voornaam, e-mailadres en postadres van de ontvanger. Kies echter geen ontvanger **[!UICONTROL Salutation]** omdat deze in de volgende sectie wordt toegevoegd, namelijk [Een ontvanger](#editing-a-recipient)bewerken. Zie [Ontvangers](../../platform/using/adding-profiles.md)toevoegen voor meer informatie.
+1. Creeer een nieuwe ontvanger in Campagne v7 voor replicatie aan Campaign Standard. Voer zoveel mogelijk gegevens in, zoals de achternaam, voornaam, e-mailadres en postadres van de ontvanger. Kies echter geen ontvanger **[!UICONTROL Salutation]** omdat deze in de volgende sectie wordt toegevoegd, namelijk [Een ontvanger](#editing-a-recipient)bewerken. Zie [Ontvangers](../../platform/using/adding-profiles.md)toevoegen voor meer informatie.
 
    ![](assets/acs_connect_profile_sync_01.png)
 
-1. Bevestig dat de nieuwe ontvanger aan Campaign Standard is toegevoegd. Controleer bij het bekijken van het profiel of de gegevens die u hebt ingevoerd in Campaign v7, ook beschikbaar zijn in Campaign Standard. Zie [Navigatiebeginselen](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)voor meer informatie over de locatie waar u naar profielen wilt zoeken in Campaign Standard.
+1. Bevestig dat de nieuwe ontvanger aan Campaign Standard is toegevoegd. Wanneer het herzien van het profiel, zorg ervoor dat de gegevens u in Campagne v7 inging ook beschikbaar in Campaign Standard is. Zie [Navigatiebeginselen](https://docs.adobe.com/content/help/nl-NL/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)voor meer informatie over de locatie waar u naar profielen in Campaign Standard wilt zoeken.
 
    ![](assets/acs_connect_profile_sync_02.png)
 
@@ -69,7 +66,7 @@ De stappen hieronder voor het veranderen van één enkel punt van gegevens biede
 
    ![](assets/acs_connect_profile_sync_03.png)
 
-1. Bevestig dat de naam van de ontvanger is bijgewerkt in Campaign Standard. Zie [Navigatiebeginselen](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)voor meer informatie over de locatie waar u naar profielen wilt zoeken in Campaign Standard.
+1. Bevestig dat de naam van de ontvanger is bijgewerkt in Campaign Standard. Zie [Navigatiebeginselen](https://docs.adobe.com/content/help/nl-NL/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)voor meer informatie over de locatie waar u naar profielen in Campaign Standard wilt zoeken.
 
    ![](assets/acs_connect_profile_sync_04.png)
 
@@ -101,9 +98,9 @@ Zie [Workflows](../../workflow/using/about-workflows.md)voor meer informatie en 
 >
 >De instructies voor het maken van de levering gaan verder met de workflow die is gestart met het [maken van een workflow](#creating-a-workflow).
 
-Digitale marketers kunnen een Campagne v7-webtoepassing gebruiken om ervoor te zorgen dat de keuze van een ontvanger om zich af te melden voor een service naar de Campagne v7-database wordt verzonden. Nadat de ontvanger op de verbinding klikt unsubscription, wordt de optie om op te houden die de dienst ontvangt herhaald van Campagne v7 aan Campaign Standard. Zie [De koppeling](#changing-the-unsubscription-link)voor abonnementen wijzigen voor meer informatie.
+Digitale marketers kunnen een Campagne v7-webtoepassing gebruiken om ervoor te zorgen dat de keuze van een ontvanger om zich af te melden voor een service naar de Campagne v7-database wordt verzonden. Nadat de ontvanger de unsubscription verbinding klikt, wordt de optie om op te houden die de dienst ontvangt herhaald van Campagne v7 aan Campaign Standard. Zie [De koppeling](#changing-the-unsubscription-link)voor abonnementen wijzigen voor meer informatie.
 
-Voer de onderstaande stappen uit om een e-maillevering toe te voegen aan een bestaande workflow met de service voor het opzeggen van abonnementen die is gemaakt in Campagne v7. Zie dit [document](../../workflow/using/about-workflows.md)voor meer informatie en volledige instructies over Campaign Standard-workflows.
+Voer de onderstaande stappen uit om een e-maillevering toe te voegen aan een bestaande workflow met de service voor het opzeggen van abonnementen die is gemaakt in Campagne v7. Zie dit [document](../../workflow/using/about-workflows.md)voor meer informatie en volledige instructies over werkstromen van Campaign Standard.
 
 >[!NOTE]
 >
@@ -182,7 +179,7 @@ Volg de instructies in [Een workflow](#creating-a-workflow) maken en een leverin
 
    ![](assets/acs_connect_profile_sync_22.png)
 
-1. Ga naar Campaign Standard en open de profieldetails voor de ontvanger. Bevestig dat naast **[!UICONTROL No longer contact (by any channel)]** deze optie een selectievakje wordt weergegeven. Zie [Navigatiebeginselen](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)voor meer informatie over de locatie waar u naar profielen wilt zoeken in Campaign Standard.
+1. Ga naar Campaign Standard en open de profieldetails voor de ontvanger. Bevestig dat naast **[!UICONTROL No longer contact (by any channel)]** deze optie een selectievakje wordt weergegeven. Zie [Navigatiebeginselen](https://docs.adobe.com/content/help/nl-NL/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html)voor meer informatie over de locatie waar u naar profielen in Campaign Standard wilt zoeken.
 
    ![](assets/acs_connect_profile_sync_23.png)
 
