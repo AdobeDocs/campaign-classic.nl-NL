@@ -9,14 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: 88575757-ef1b-4247-88ff-6f355c1ecd3e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '124'
-ht-degree: 3%
+ht-degree: 12%
 
 ---
 
@@ -34,8 +31,8 @@ Voordat u begint met het verzenden van e-mails:
 De belangrijkste stappen voor het verzenden van een e-mail zijn:
 
 * [Een e-maillevering maken](../../delivery/using/creating-an-email-delivery.md)
-* [Bepaling van de doelpopulatie](../../delivery/using/steps-defining-the-target-population.md)
-* [De e-mailinhoud definiëren](../../delivery/using/defining-the-email-content.md)
+* [De doelpopulatie definiëren](../../delivery/using/steps-defining-the-target-population.md)
+* [De e-mailcontent definiëren](../../delivery/using/defining-the-email-content.md)
 * [De e-mail verzenden](../../delivery/using/sending-messages.md)
 * [Toezicht op de levering](../../delivery/using/monitoring-a-delivery.md)
 
