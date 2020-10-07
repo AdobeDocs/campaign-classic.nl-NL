@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 9cb3be65-6652-47fa-b8a4-e088530aab4a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c4b5b7c44bbc74f56d3c70b93b131bba4d78c6f
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 5%
 
 ---
 
@@ -36,7 +36,7 @@ U kunt dit voorbeeld maken door de volgende stappen toe te passen:
    ![](assets/uc_enrichment_1.png)
 
 1. Voeg een **[!UICONTROL Split]** activiteit toe om ontvangers te onderscheiden die hun verjaardagen deze maand zullen vieren van andere ontvangers.
-1. Als je de lijst wilt splitsen, selecteer je in de **[!UICONTROL Filtering of selected records]** rubriek **[!UICONTROL Add a filtering condition on the inbound population]**. Klik vervolgens op **[!UICONTROL Edit]**.
+1. Als je de lijst wilt splitsen, selecteer je in de **[!UICONTROL Filtering of selected records]** rubriek **[!UICONTROL Add a filtering condition on the inbound population]**. Then, click **[!UICONTROL Edit]**.
 
    ![](assets/uc_enrichment_2.png)
 
@@ -52,7 +52,7 @@ U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
    ![](assets/uc_enrichment_4.png)
 
-1. Klik **[!UICONTROL Finish]**. Klik vervolgens op het **[!UICONTROL General]** tabblad van uw **[!UICONTROL Split]** activiteit op de **[!UICONTROL Generate complement]** categorie in de **[!UICONTROL Results]** categorie.
+1. Klik op **[!UICONTROL Finish]**. Klik vervolgens op het **[!UICONTROL General]** tabblad van uw **[!UICONTROL Split]** activiteit op de **[!UICONTROL Generate complement]** categorie in de **[!UICONTROL Results]** categorie.
 
    Met het **[!UICONTROL Complement]** resultaat kunt u een leveringsactiviteit toevoegen of een lijst bijwerken. Hier hebben we zojuist een **[!UICONTROL End]** activiteit toegevoegd.
 
@@ -64,12 +64,12 @@ U moet nu uw **[!UICONTROL Enrichment]** activiteit vormen:
 
    ![](assets/uc_enrichment_7.png)
 
-1. Open je **[!UICONTROL Enrichment]** activiteit. Klik in de **[!UICONTROL Complementary information]** categorie op **[!UICONTROL Add data]**.
+1. Open je **[!UICONTROL Enrichment]** activiteit. In the **[!UICONTROL Complementary information]** category, click **[!UICONTROL Add data]**.
 
    ![](assets/uc_enrichment_8.png)
 
 1. Selecteer **[!UICONTROL Data linked to the filtering dimension]** dan **[!UICONTROL Data of the filtering dimension]**.
-1. Klik op de **[!UICONTROL Add]** knop.
+1. Klik op de knop **[!UICONTROL Add]**.
 
    ![](assets/uc_enrichment_9.png)
 
@@ -81,13 +81,13 @@ U moet nu uw **[!UICONTROL Enrichment]** activiteit vormen:
 
    ![](assets/uc_enrichment_11.png)
 
-1. Als u vervolgens de einddatum **van het aangepaste datumveld** Geldigheid wilt maken die de week na de geboortedatum als doel heeft, moet u het volgende toevoegen **[!UICONTROL Expression]**: `AddDays([target/@birthDate], 7)`.
+1. Als u vervolgens het aangepaste datumveld **Geldigheid wilt maken met als einddatum** de week na de geboortedatum als doel, moet u het volgende toevoegen **[!UICONTROL Expression]**: `AddDays([target/@birthDate], 7)`.
 
    U kunt een label aan uw expressie toevoegen.
 
    ![](assets/uc_enrichment_12.png)
 
-1. Klik **[!UICONTROL Ok]**. Uw verrijking is nu klaar.
+1. Klik op **[!UICONTROL Ok]**. Uw verrijking is nu klaar.
 
 Na je **[!UICONTROL Enrichment]** activiteit kunt je een levering toevoegen. In dit geval hebben we een e-maillevering toegevoegd om ontvangers een speciaal voorstel met geldigheidsdata te sturen naar klanten die deze maand hun verjaardagen vieren.
 
@@ -114,7 +114,7 @@ U kunt nu uw e-maillevering ontwerpen met de aangepaste datumvelden die in de **
            formatDate(targetData.alias of your expression,"%2D.%2M")  %>
    ```
 
-1. Klik ![](assets/uc_enrichment_16.png) . Selecteer **[!UICONTROL Target extension]** vervolgens de eerder gemaakte aangepaste geldigheidsdatums met de **[!UICONTROL Enrichment]** activiteit om uw extensie toe te voegen aan de formatDate-expressie.
+1. Klik op ![](assets/uc_enrichment_16.png) . Selecteer **[!UICONTROL Target extension]** vervolgens de eerder gemaakte aangepaste geldigheidsdatums met de **[!UICONTROL Enrichment]** activiteit om uw extensie toe te voegen aan de formatDate-expressie.
 
    ![](assets/uc_enrichment_19.png)
 
