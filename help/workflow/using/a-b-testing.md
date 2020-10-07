@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 4113c3fe-a279-4fe1-be89-ea43c96edc34
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1350'
+ht-degree: 2%
 
 ---
 
@@ -42,7 +42,7 @@ Voer de volgende stappen uit om de A/B-test te maken:
 * [Stap 7: De workflow starten](#step-7--starting-the-workflow)
 * [Stap 8: Het resultaat](#step-8--analyzing-the-result)analyseren.
 
-## Stap 1:Een doelworkflow maken {#step-1--creating-a-targeting-workflow}
+## Step 1: Creating a targeting workflow {#step-1--creating-a-targeting-workflow}
 
 U moet uw workflow maken op het **[!UICONTROL Targeting and Workflows]** tabblad van een campagne. Het bestaat uit een **[!UICONTROL Query]** activiteit, een **[!UICONTROL Split]** activiteit die verband houdt met twee **[!UICONTROL Email delivery]** activiteiten, een **[!UICONTROL Wait]** activiteit, een **[!UICONTROL JavaScript code]** activiteit en een **[!UICONTROL Delivery]** activiteit.
 
@@ -50,7 +50,7 @@ U moet uw workflow maken op het **[!UICONTROL Targeting and Workflows]** tabblad
 
    ![](assets/use_case_abtesting_targetwkfl_001.png)
 
-1. Ga naar het **[!UICONTROL Targeting and Workflows]** tabblad.
+1. Ga naar het tabblad **[!UICONTROL Targeting and Workflows]**. 
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
@@ -66,7 +66,7 @@ U moet uw workflow maken op het **[!UICONTROL Targeting and Workflows]** tabblad
 
 ### De query-activiteit configureren {#configuring-the-query-activity}
 
-* Dubbelklik op de **[!UICONTROL Query]** activiteit.
+* Double-click the **[!UICONTROL Query]** activity.
 
    ![](assets/use_case_abtesting_createrecipients_001.png)
 
@@ -84,7 +84,7 @@ Met deze activiteit kunt u verschillende populaties maken: degene die levering A
 
 1. Bezig met maken van populatie A:
 
-   * Dubbelklik op de **[!UICONTROL Split]** activiteit.
+   * Double-click the **[!UICONTROL Split]** activity.
 
       ![](assets/use_case_abtesting_createrecipients_004.png)
 
@@ -116,7 +116,7 @@ Met deze activiteit kunt u verschillende populaties maken: degene die levering A
 
 1. Creëren van de resterende populatie:
 
-   * Ga naar het **[!UICONTROL General]** tabblad.
+   * Ga naar het tabblad **[!UICONTROL General]**. 
 
       ![](assets/use_case_abtesting_createrecipients_011.png)
 
@@ -130,9 +130,9 @@ Met deze activiteit kunt u verschillende populaties maken: degene die levering A
 
 ## Stap 3: Twee leveringssjablonen maken {#step-3--creating-two-delivery-templates}
 
-We willen nu twee leveringssjablonen maken. Naar elke sjabloon wordt verwezen in een **[!UICONTROL Email delivery]** activiteit die is gekoppeld aan de **[!UICONTROL Split]** activiteit. Zie deze [sectie](../../delivery/using/about-templates.md)voor meer informatie.
+We willen nu twee leveringssjablonen maken. Naar elke sjabloon wordt verwezen in een **[!UICONTROL Email delivery]** activiteit die is gekoppeld aan de **[!UICONTROL Split]** activiteit. Raadpleeg deze [sectie](../../delivery/using/about-templates.md) voor meer informatie.
 
-1. Ga naar de **[!UICONTROL Resources > Delivery template]** map.
+1. Go to the **[!UICONTROL Resources > Delivery template]** folder.
 1. Dupliceer de **[!UICONTROL Email]** leveringssjabloon.
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
@@ -188,7 +188,7 @@ De keus van de leveringsinhoud die voor de resterende bevolking wordt bestemd wo
 
 ### Voorbeeld van een script {#example-of-a-script}
 
-Het volgende script kan worden gebruikt zoals in de doelworkflow. Raadpleeg [Implementatie](#implementation)voor meer informatie.
+Het volgende script kan worden gebruikt zoals in de doelworkflow. For more on this, refer to [Implementation](#implementation).
 
 ```
  // query the database to find the winner (best open rate)
@@ -374,7 +374,7 @@ Nadat de testleveringen zijn verzonden, kunt u controleren naar welke ontvanger(
 
    ![](assets/use_case_abtesting_analysis_001.png)
 
-* Ga naar het **[!UICONTROL Tracking]** tabblad als u wilt weten of de levering is geopend.
+* Als u wilt weten of de levering is geopend, gaat u naar het **[!UICONTROL Tracking]** tabblad.
 
    ![](assets/use_case_abtesting_analysis_002.png)
 
