@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6b0acb6b-0808-4972-b2a2-15fab29b3861
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '978'
+ht-degree: 2%
 
 ---
 
@@ -62,7 +62,7 @@ Deze gegevens staan in het tekstbestand &quot;Purchases.txt&quot;.
 
 1. Voeg de activiteiten **Bestandsverzamelaar** en **Gegevens laden (bestand)** toe aan de workflow.
 
-   Met de activiteit **Bestandsverzamelaar** kunt u bestanden verzamelen en verzenden van en naar de Adobe Campagneserver.
+   Met de activiteit **Bestandsverzamelaar** kunt u bestanden verzamelen en verzenden van en naar de Adobe Campaign-server.
 
    Met de activiteit **Gegevens laden (bestand)** kunt u de werktabel van de workflow verrijken met de verzamelde gegevens.
 
@@ -90,7 +90,7 @@ Voeg de verrijkingsactiviteit toe en configureer deze als volgt:
 
    ![](assets/uc2_enrich_enrich1.png)
 
-1. Klik **[!UICONTROL Add data]** en selecteer de **[!UICONTROL A link]** optie.
+1. Click **[!UICONTROL Add data]**, then select the **[!UICONTROL A link]** option.
 
    ![](assets/uc2_enrich_enrich2.png)
 
@@ -108,7 +108,7 @@ In het volgende venster, moet u tot stand brengen zich aansluit bij voorwaarde d
 Nu wordt de verbinding gecreeerd, gaan wij een kolom aan de het werklijst van het werkschema van het &quot;Schema van Opslag&quot;toevoegen: het veld &quot;ZipCode Reference&quot;.
 
 1. Open de verrijkingsactiviteit.
-1. Klik **[!UICONTROL Edit additional data]**.
+1. Klik op **[!UICONTROL Edit additional data]**.
 1. Voeg het veld &quot;ZipCode Reference&quot; toe aan het **[!UICONTROL Output columns]** veld.
 
 ![](assets/uc2_enrich_enrich5.png)
@@ -127,7 +127,7 @@ Voordat de gegevens in de tabel **Aankopen** worden bijgewerkt, moet een afstemm
 1. Selecteer in dit geval de doeldimensie, het schema &quot;Aankopen&quot;.
 1. Selecteer een &quot;Bronexpressie&quot; voor de gegevens in de tabel met workflows (in dit geval het veld &quot;storeName&quot;).
 1. Selecteer een expressie Doel voor de gegevens in de tabel &#39;Aankopen&#39; (in dit geval het veld &#39;bestandsnaam&#39;).
-1. Schakel de **[!UICONTROL Keep unreconciled data coming from the work table]** optie in.
+1. Schakel de optie **[!UICONTROL Keep unreconciled data coming from the work table]** in.
 
 ![](assets/uc2_enrich_reconciliation.png)
 
@@ -152,7 +152,7 @@ Het doel van deze tweede verrijking is een aggregaat te maken op het aankoopsche
 1. Klik op Toevoegen **[!UICONTROL Data]**.
 1. Klik op de **[!UICONTROL Data linked to the targeting dimension]** optie.
 1. Klik op de **[!UICONTROL Data linked to the filtering dimension]** optie in het **[!UICONTROL Select fields to add]** venster.
-1. Selecteer het **[!UICONTROL Purchases]** knooppunt en klik op **[!UICONTROL Next]**.
+1. Select the **[!UICONTROL Purchases]** node then click **[!UICONTROL Next]**.
 
    ![](assets/uc2_enrich_enrich9.png)
 
@@ -160,7 +160,7 @@ Het doel van deze tweede verrijking is een aggregaat te maken op het aankoopsche
 
    ![](assets/uc2_enrich_enrich10.png)
 
-1. Klik **[!UICONTROL Next]**.
+1. Klik op **[!UICONTROL Next]**.
 1. Voeg de volgende expressie toe om het aankooptotaal voor elke contactpersoon te berekenen: &quot;Sum(@prodprice)&quot;.
 
    ![](assets/uc2_enrich_enrich6.png)
