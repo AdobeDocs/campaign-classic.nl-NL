@@ -9,11 +9,8 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 discoiquuid: d8b49f68-c783-43fc-9907-e8480ecd28c2
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ee4addc88c6169603122259437d5cb0362851aa6
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 1%
@@ -56,7 +53,7 @@ De configuratie is afhankelijk van de geselecteerde actie.
 
    ![](assets/file_transfert_edit_send.png)
 
-   Dit kan ook een of meer andere bestanden betreffen. Als u deze wilt selecteren, schakelt u de optie uit en klikt u op **[!UICONTROL Insert]**. Geef het toegangspad op van het bestand dat moet worden verzonden. Klik **[!UICONTROL Insert]** nogmaals om een ander bestand toe te voegen. De bestanden hebben nu elk een eigen tabblad.
+   Dit kan ook een of meer andere bestanden betreffen. Als u deze wilt selecteren, schakelt u de optie uit en klikt u op **[!UICONTROL Insert]**. Geef het toegangspad op van het bestand dat u wilt verzenden. Klik **[!UICONTROL Insert]** nogmaals om een ander bestand toe te voegen. De bestanden hebben nu elk een eigen tabblad.
 
    ![](assets/file_transfert_source.png)
 
