@@ -11,21 +11,18 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: b2219912-5570-45d2-8b52-52486e29d008
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1090'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # RDBMS - Specifieke aanbevelingen{#rdbms-specific-recommendations}
 
-In deze sectie worden enkele aanbevelingen/aanbevolen procedures beschreven die zijn aangepast aan de verschillende RDBMS-engines die door Adobe Campaign worden ondersteund, zodat u onderhoudsplannen kunt instellen. Dit zijn echter slechts aanbevelingen. Het is aan u om deze aan uw behoeften aan te passen, overeenkomstig uw interne procedure en beperkingen. Uw gegevensbestandbeheerder heeft de verantwoordelijkheid om deze plannen te bouwen en uit te voeren.
+Om u te helpen bij het instellen van onderhoudsplannen, worden in deze sectie enkele aanbevelingen/aanbevolen procedures weergegeven die zijn aangepast aan de verschillende RDBMS-engines die Adobe Campaign ondersteunt. Dit zijn echter slechts aanbevelingen. Het is aan u om deze aan uw behoeften aan te passen, overeenkomstig uw interne procedure en beperkingen. Uw gegevensbestandbeheerder heeft de verantwoordelijkheid om deze plannen te bouwen en uit te voeren.
 
 ## PostgreSQL {#postgresql}
 
@@ -98,11 +95,12 @@ vacuum full nmsdelivery;
 
 >[!NOTE]
 >
->* Adobe raadt u aan om kleinere tabellen te gebruiken: als het proces op grote tabellen mislukt ( waarbij het risico van mislukking het grootst is ) , is ten minste een deel van het onderhoud voltooid .
+>* Adobe raadt u aan kleinere tabellen te gebruiken: als het proces op grote tabellen mislukt ( waarbij het risico van mislukking het grootst is ) , is ten minste een deel van het onderhoud voltooid .
 >* Adobe raadt u aan de tabellen toe te voegen die specifiek zijn voor uw gegevensmodel en die kunnen worden bijgewerkt. Dit kan het geval voor **NmsRecipient** zijn als u grote dagelijkse gegevensreplicatiestromen hebt.
 >* De **vacuüm** en **re-index** bevelen zullen de lijst sluiten, die sommige processen onderbreekt terwijl het onderhoud wordt uitgevoerd.
->* Voor zeer grote tabellen (meestal boven 5 GB) kan **vacuüm vol** tamelijk inefficiënt worden en erg lang duren. Adobe raadt u niet aan deze methode te gebruiken voor de **tabel YyyNmsBroadLogXxx** .
->* Deze onderhoudsbewerking kan worden geïmplementeerd door een Adobe Campagne-workflow met een **[!UICONTROL SQL]** activiteit (zie [deze sectie](../../workflow/using/architecture.md)voor meer informatie). Zorg ervoor dat u onderhoud plant voor een lage activiteitstijd die niet in strijd is met uw back-upvenster.
+>* Voor zeer grote tabellen (meestal boven 5 GB) kan **vacuüm vol** tamelijk inefficiënt worden en erg lang duren. Adobe raadt u niet aan deze te gebruiken voor de **tabel YyyNmsBroadLogXxx** .
+>* Deze onderhoudsbewerking kan worden geïmplementeerd door een Adobe Campaign-workflow met behulp van een **[!UICONTROL SQL]** activiteit (zie [deze sectie](../../workflow/using/architecture.md)voor meer informatie). Zorg ervoor dat u onderhoud plant voor een lage activiteitstijd die niet in strijd is met uw back-upvenster.
+
 >
 
 
@@ -111,8 +109,8 @@ vacuum full nmsdelivery;
 
 PostgreSQL biedt geen eenvoudige manier om een online tabel opnieuw samen te stellen, aangezien **vacuüm de tabel volledig** vergrendelt en zo een normale productie voorkomt. Dit betekent dat onderhoud moet worden uitgevoerd wanneer de tabel niet wordt gebruikt. U kunt:
 
-* onderhoud uitvoeren wanneer het Adobe Campagne-platform wordt gestopt,
-* Stop de diverse subservices van Adobe Campagne die waarschijnlijk in de tabel zullen schrijven die opnieuw wordt samengesteld (**nlserver stop wfserver instance_name** om het werkstroomproces te stoppen).
+* onderhoud uitvoeren wanneer het Adobe Campaign-platform wordt gestopt;
+* Stop de diverse subservices van Adobe Campaign die waarschijnlijk in de tabel zullen schrijven die opnieuw wordt samengesteld (**nlserver stop wfserver instance_name** om het werkstroomproces te stoppen).
 
 Hier is een voorbeeld van lijstdefragmentatie gebruikend specifieke functies om noodzakelijke DDL te produceren. Met de volgende SQL kunt u twee nieuwe functies maken: **GenRebuildTablePart1** en **GenRebuildTablePart2**, die kunnen worden gebruikt om de noodzakelijke DDL te produceren om een lijst te ontspannen.
 
@@ -419,7 +417,7 @@ Het onderstaande voorbeeld heeft betrekking op Microsoft SQL Server 2005. Als u 
 
 1. Klik op **[!UICONTROL Close]** .
 1. Dubbelklik in de Microsoft SQL Server-verkenner op de **[!UICONTROL Management > Maintenance Plans]** map.
-1. Selecteer het onderhoudsplan van de Campagne van Adobe: de verschillende stappen worden beschreven in een workflow .
+1. Selecteer het Adobe Campaign-onderhoudsplan: de verschillende stappen worden beschreven in een workflow .
 
    Er is een object gemaakt in de **[!UICONTROL SQL Server Agent > Jobs]** map. Met dit object kunt u het onderhoudsplan starten. In ons voorbeeld is er slechts één object omdat alle onderhoudstaken deel uitmaken van hetzelfde plan.
 
@@ -439,4 +437,4 @@ Deze optie kan worden gebruikt als u wilt dat werktabellen (bijvoorbeeld de tabe
 
 Wanneer u de optie op &quot;tempdb.dbo.&quot;plaatst, zullen de werkende lijsten op het gebrek tijdelijke gegevensbestand van de Server van Microsoft worden gecreeerd SQL. De gegevensbestandbeheerder moet schrijftoegang tot het tempdb- gegevensbestand toestaan.
 
-Als de optie is ingesteld, wordt deze gebruikt voor alle Microsoft SQL Server-databases die zijn geconfigureerd in Adobe Campagne (hoofddatabase en externe accounts). Als twee externe accounts dezelfde server delen, kunnen er conflicten optreden (omdat tempdb uniek is). Op dezelfde manier, als twee instanties van de Campagne de zelfde server MSSQL gebruiken, zouden er conflicten kunnen zijn als zij de zelfde tempdb gebruiken.
+Als de optie wordt geplaatst, zal het op alle gegevensbestanden van de Server van Microsoft worden gebruikt SQL die in Adobe Campaign (belangrijkste gegevensbestand en externe rekeningen) worden gevormd. Als twee externe accounts dezelfde server delen, kunnen er conflicten optreden (omdat tempdb uniek is). Op dezelfde manier, als twee instanties van de Campagne de zelfde server MSSQL gebruiken, zouden er conflicten kunnen zijn als zij de zelfde tempdb gebruiken.
