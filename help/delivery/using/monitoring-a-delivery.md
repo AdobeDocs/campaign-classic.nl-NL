@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2567'
 ht-degree: 2%
@@ -30,7 +27,7 @@ Het **leveringsdashboard** is essentieel om uw leveringen en eventuele problemen
 **Verwante onderwerpen:**
 
 * [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
-* [Werken met quarantainebeheer](../../delivery/using/understanding-quarantine-management.md)
+* [Quarantainebeheer begrijpen](../../delivery/using/understanding-quarantine-management.md)
 * [Best practices voor levering](../../delivery/using/delivery-best-practices.md)
 * [Leverbaarheid beheren](../../delivery/using/about-deliverability.md)
 
@@ -70,7 +67,7 @@ Op het **[!UICONTROL Tracking]** tabblad vindt u de volggeschiedenis voor deze l
 >
 >Als &#39;tracking&#39; niet is ingeschakeld voor levering, wordt dit tabblad niet weergegeven.
 
-De volgende configuratie wordt uitgevoerd in het aangewezen stadium in de leveringstovenaar. Zie [Hoe te om gevolgde verbindingen](../../delivery/using/how-to-configure-tracked-links.md)te vormen.
+De volgende configuratie wordt uitgevoerd in het aangewezen stadium in de leveringstovenaar. See [How to configure tracked links](../../delivery/using/how-to-configure-tracked-links.md).
 
 **[!UICONTROL Tracking]** gegevens worden geïnterpreteerd in de leveringsrapporten. Zie [deze sectie](../../reporting/using/delivery-reports.md).
 
@@ -111,7 +108,7 @@ Als de leveringsprestaties slecht zijn, kunt u controleren:
 * **Het doel van de levering**: Het verbod op leveringsprestaties wordt beïnvloed door zachte stuiterfouten, die worden afgehandeld volgens de configuratie voor opnieuw proberen. Hoe groter het aantal fouten, hoe meer pogingen nodig zijn.
 * **De totale platformbelasting**: Wanneer meerdere grote leveringen worden verzonden, kan dit gevolgen hebben voor het hele platform. U kunt IP reputatie en leveringsproblemen ook controleren. Raadpleeg voor meer informatie de handleiding [over best practices voor Adobe Campaign-](../../delivery/using/deliverability-key-points.md) levering en [deze pagina](../../delivery/using/about-deliverability.md).
 
-Platform- en databaseonderhoud kan ook van invloed zijn op de verzendingsprestaties van de levering. For more on this, refer to [this page](../../production/using/database-performances.md).
+Platform- en databaseonderhoud kan ook van invloed zijn op de verzendingsprestaties van de levering. Raadpleeg [deze pagina](../../production/using/database-performances.md) voor meer informatie.
 
 ### Trage leveringen {#slow-deliveries}
 
@@ -203,7 +200,7 @@ Tijdens het verzenden van een levering krijgt u mogelijk de volgende status op h
  </tbody> 
 </table>
 
-Raadpleeg de handleiding [over de beste praktijken bij](../../delivery/using/deliverability-key-points.md) Adobe Campaign- [levering en naar](../../delivery/using/about-deliverability.md)deze paginavoor meer informatie over de manier waarop u de leverbaarheid van uw Adobe Campaign-e-mails kunt optimaliseren.
+Raadpleeg de handleiding [over de beste praktijken bij](../../delivery/using/deliverability-key-points.md) Adobe Campaign- [levering en naar](../../delivery/using/about-deliverability.md)deze paginavoor meer informatie over het optimaliseren van de leverbaarheid van uw Adobe Campaign-e-mails.
 
 ### Status in behandeling {#pending-status}
 
