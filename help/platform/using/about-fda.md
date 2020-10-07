@@ -11,52 +11,49 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c86af066045c1c35b51624de8565af21746354c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '580'
-ht-degree: 0%
+ht-degree: 16%
 
 ---
 
 
 # Over Federale gegevenstoegang {#about-federated-data-access}
 
-Adobe Campaign biedt de optie **Federated Data Access** (FDA) voor het verwerken van gegevens die zijn opgeslagen in een of meer externe databases: u hebt toegang tot externe gegevens zonder de structuur van Adobe Campaign-gegevens te wijzigen.
+Adobe Campaign provides the **Federated Data Access** (FDA) option in order to process information stored in one or more external databases: you can access external data without changing the structure of Adobe Campaign data.
 
 >[!CAUTION]
 >
->Toegang tot een externe database via de FDA is alleen mogelijk voor installaties op locatie of hybride installaties, behalve met de Snowflake-aansluitingen. Raadpleeg deze [pagina](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)voor meer informatie.
+>Toegang tot een externe database via FDA is alleen mogelijk voor installaties op locatie of hybride installaties, behalve met de Snowflake-aansluitingen. Raadpleeg [deze pagina](https://helpx.adobe.com/nl/campaign/kb/acc-on-prem-vs-hosted.html) voor meer informatie.
 
-## Exploitatiebeginsel {#operating-principle}
+## Werkwijze {#operating-principle}
 
 Met de optie FDA kunt u uw gegevensmodel uitbreiden in een database van derden. Het zal automatisch de structuur van de gerichte lijsten ontdekken en gegevens van de SQL bronnen gebruiken.
 
 Als u deze functionaliteit wilt gebruiken, moet u:
 
-1. Een externe database hebben die compatibel is met de Adobe Campaign FDA-module. De lijst met databasesystemen en compatibele versies wordt gedetailleerd weergegeven in de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html). Gebruikers moeten ook over de [benodigde machtigingen](../../platform/using/remote-database-access-rights.md) in Adobe Campaign en de externe database beschikken.
+1. Een externe database hebben die compatibel is met de Adobe Campaign FDA-module. De lijst met databasesystemen en compatibele versies wordt gedetailleerd weergegeven in de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html). Gebruikers moeten ook over de [benodigde machtigingen](../../platform/using/remote-database-access-rights.md) in Adobe Campaign en de externe database beschikken.
 1. [Installeer de stuurprogramma](../../platform/using/specific-configuration-database.md) &#39;s die overeenkomen met uw database op de Adobe Campaign-server.
 1. [Maak en configureer een externe account](../../platform/using/connecting-to-database.md) waarmee u de verbinding tussen Adobe Campaign en de externe database tot stand kunt brengen. Raadpleeg deze [pagina](../../platform/using/external-accounts.md)voor meer informatie over beschikbare externe accounts.
 1. [Maak het schema](../../platform/using/creating-data-schema.md) van de externe database in Adobe Campaign. Hierdoor kunt u de gegevensstructuur van de externe database herkennen.
 1. Uiteindelijk, [creeer een nieuwe doelafbeelding](../../platform/using/defining-data-mapping.md) van het eerder gecreeerd schema, in het geval waar de ontvangers van uw leveringen uit het externe gegevensbestand komen. Dit brengt bepaalde beperkingen met zich mee, met name wat betreft de personalisering van de leveringen.
 
-Zodra het gegevensschema wordt gecreeerd, kunnen de gegevens in de werkschema&#39;s van Adobe Campaign worden verwerkt. For more on this, refer to [this section](../../workflow/using/accessing-an-external-database--fda-.md).
+Zodra het gegevensschema wordt gecreeerd, kunnen de gegevens in de werkschema&#39;s van Adobe Campaign worden verwerkt. Raadpleeg [deze sectie](../../workflow/using/accessing-an-external-database--fda-.md) voor meer informatie.
 
 ## Beschikbare externe databases {#external-database}
 
 U vindt hieronder de lijst met alle externe databases die compatibel zijn met de Adobe Campaign FDA-module:
 
-* Microsoft Azure Synapse Analytics. For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#azure-external).
-* Sneeuwvlok. For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
-* Hadoop. For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3).
-* Oracle. For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-oracle).
-* Netezza. For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-netezza).
-* IQ van Sybase. For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-sybase-iq).
-* Tera-gegevens. For more on this, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-teradata).
-* SAP HANA. For more on this, refer to this [section](../../platform/using/specific-configuration-database.md).
+* Microsoft Azure Synapse Analytics. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#azure-external) voor meer informatie.
+* Snowflake. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake) voor meer informatie.
+* Hadoop. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3) voor meer informatie.
+* Oracle. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#configure-access-to-oracle) voor meer informatie.
+* Netezza. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#configure-access-to-netezza) voor meer informatie.
+* IQ van Sybase. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#configure-access-to-sybase-iq) voor meer informatie.
+* Tera-gegevens. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md#configure-access-to-teradata) voor meer informatie.
+* SAP HANA. Raadpleeg deze [sectie](../../platform/using/specific-configuration-database.md) voor meer informatie.
 
 ## Beste praktijken en aanbevelingen {#best-practices-and-recommendations}
 
