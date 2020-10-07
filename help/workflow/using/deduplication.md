@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 83b915bd-7e23-41b5-9f9a-f7eb72026376
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0d2270c9d980d963437f9bb5cf37795474d261d6
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '728'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
@@ -55,7 +52,8 @@ Klik op de **[!UICONTROL Edit configuration...]** koppeling om de deduplicatiemo
    >[!NOTE]
    >
    >Als u externe gegevens als invoer gebruikt, bijvoorbeeld uit een extern bestand, moet u de **[!UICONTROL Temporary schema]** optie selecteren.
-In de volgende stap kunt u met de **[!UICONTROL Other]** optie het criterium of de criteria selecteren die u wilt gebruiken:
+   >
+   >In de volgende stap kunt u met de **[!UICONTROL Other]** optie het criterium of de criteria selecteren die u wilt gebruiken:
 
    ![](assets/s_user_segmentation_dedup_param3.png)
 
@@ -67,12 +65,12 @@ In de volgende stap kunt u met de **[!UICONTROL Other]** optie het criterium of 
 
    De volgende methoden zijn beschikbaar:
 
-   * **[!UICONTROL Choose for me]**: Hiermee selecteert u willekeurig de record die u uit de duplicaten wilt verwijderen.
-   * **[!UICONTROL Following a list of values]**: Hiermee kunt u een prioriteit voor een of meer velden definiëren. Als u de waarden wilt definiëren, selecteert u een veld of maakt u een expressie. Voeg vervolgens de waarde(n) toe aan de desbetreffende tabel. Als u een nieuw veld wilt definiëren, klikt u op de **[!UICONTROL Add]** knop boven de lijst met waarden.
+   * **[!UICONTROL Choose for me]**: Hiermee selecteert u willekeurig de record die u uit de duplicaten wilt houden.
+   * **[!UICONTROL Following a list of values]**: Hiermee kunt u een waardeprioriteit voor een of meer velden definiëren. Als u de waarden wilt definiëren, selecteert u een veld of maakt u een expressie en vervolgens voegt u de waarde(n) toe aan de desbetreffende tabel. Als u een nieuw veld wilt definiëren, klikt u op de knop **[!UICONTROL Add]** boven de lijst met waarden.
 
       ![](assets/s_user_segmentation_dedup_param5.png)
 
-   * **[!UICONTROL Non-empty value]**: Hiermee kunt u records bewaren waarvoor de waarde van de geselecteerde expressie niet leeg is als prioriteit.
+   * **[!UICONTROL Non-empty value]**: Hiermee kunt u records waarvoor de waarde van de geselecteerde expressie niet leeg is als prioriteit behouden.
 
       ![](assets/s_user_segmentation_dedup_param6.png)
 
@@ -81,13 +79,13 @@ In de volgende stap kunt u met de **[!UICONTROL Other]** optie het criterium of 
       ![](assets/s_user_segmentation_dedup_param7.png)
    Klik **[!UICONTROL Finish]** om de geselecteerde deduplicatiemethode goed te keuren.
 
-   Het middelste gedeelte van het venster geeft een overzicht van de gedefinieerde configuratie.
+   De middelste sectie van het venster vat de bepaalde configuratie samen.
 
    In de onderste sectie van het venster van de activiteitenredacteur, kunt u het etiket voor de uitgaande overgang van het grafische voorwerp wijzigen en een segmentcode ingaan die met het resultaat van de activiteit zal worden geassocieerd. Deze code kan later als het richten criterium worden gebruikt.
 
    ![](assets/s_user_segmentation_dedup_param8.png)
 
-   Controleer de **[!UICONTROL Generate complement]** optie als u de resterende populatie wilt uitbuiten. Het complement bestaat uit alle duplicaten. Vervolgens wordt als volgt een aanvullende overgang aan de activiteit toegevoegd:
+   Check the **[!UICONTROL Generate complement]** option if you wish to exploit the remaining population. Het complement bestaat uit alle duplicaten. Vervolgens wordt als volgt een aanvullende overgang aan de activiteit toegevoegd:
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
