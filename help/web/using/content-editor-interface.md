@@ -1,7 +1,7 @@
 ---
-title: Interface van de inhoudseditor
-seo-title: Interface van de inhoudseditor
-description: Interface van de inhoudseditor
+title: Interface van de content-editor
+seo-title: Interface van de content-editor
+description: Interface van de content-editor
 seo-description: null
 page-status-flag: never-activated
 uuid: b108ea74-ae2c-4e47-bee8-12070927ba89
@@ -12,16 +12,16 @@ content-type: reference
 topic-tags: editing-html-content
 dc-title: </strong> and
 discoiquuid: 20c64d31-c2ed-4bc9-9f0e-46f2e0c08c88
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 4%
 
 ---
 
 
-# Interface van de inhoudseditor{#content-editor-interface}
+# Interface van de content-editor{#content-editor-interface}
 
 ## Venster bewerken {#editing-window}
 
@@ -30,7 +30,7 @@ Het DCE-bewerkingsvenster is onderverdeeld in drie verschillende secties. Hierme
 ![](assets/dce_decoupe_window_nb.png)
 
 1. De **bovenste** sectie is een weergavegebied voor berichten aan de gebruiker. Deze berichten wijzen op het statuut van de de toepassingsstatus van het Web of de levering die evenals waarschuwingen en foutenmeldingen met betrekking tot de inhoud wordt gecreeerd. Raadpleeg de status van [HTML-inhoud voor meer informatie](../../web/using/content-editing-best-practices.md#html-content-statuses).
-1. De sectie **links** van het venster is het gebied voor het bewerken van inhoud. Vanuit dit gebied kan de gebruiker rechtstreeks met de inhoud communiceren via de pop-upwerkbalk: voegt een koppeling in een afbeelding in, wijzigt het lettertype, verwijdert een veld, enzovoort. Zie Formulieren [](../../web/using/editing-content.md#editing-forms)bewerken voor meer informatie.
+1. De sectie **links** van het venster is het gebied voor het bewerken van inhoud. Vanuit dit gebied kan de gebruiker rechtstreeks met de inhoud communiceren via de pop-upwerkbalk: voegt een koppeling in een afbeelding in, wijzigt het lettertype, verwijdert een veld, enzovoort. For more on this refer to [Editing forms](../../web/using/editing-content.md#editing-forms).
 1. De sectie **rechts** van het venster is het gebied van het bedieningspaneel. In dit gebied worden de verschillende opties voor de editor gegroepeerd, met name de opties voor het configureren van de paginakop en de algemene opties voor een blok: Voeg een rand toe, verbind een gegevensbestandgebied met een inputstreek, toegang Web-pagina eigenschappen, enz. Raadpleeg de secties [Algemene opties](#global-options) en Inhoud [](../../web/using/editing-content.md) bewerken voor meer informatie.
 
 ## Algemene opties {#global-options}
@@ -92,5 +92,5 @@ De werkbalk is een **pop-upelement** van de DCE-interface dat verschillende func
 
 >[!CAUTION]
 >
->Met bepaalde werkbalkfuncties kunt u de HTML-inhoud opmaken. Als de pagina echter een CSS-stijlpagina bevat, kunnen de **instructies** uit de stijlpagina **voorrang** krijgen op de instructies die met de werkbalk zijn opgegeven.
+>Met bepaalde werkbalkfuncties kunt u de HTML-content opmaken. However, if the page contains a CSS style sheet, the **instructions** from the style sheet may prove to take **priority** over the instructions specified with the toolbar.
 
