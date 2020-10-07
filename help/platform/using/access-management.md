@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 discoiquuid: c0eb06fd-192c-4ee4-9a38-c9bedbe6aea0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6c66718fbbf13486d52b0cc98eae6c854b34030d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2955'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -35,7 +32,7 @@ Met Adobe Campaign kunt u de rechten definiëren en beheren die aan de verschill
 
 De machtigingen zijn van toepassing op operatorprofielen of groepen operatoren.
 
-Zij worden aangevuld met veiligheidsparameters die gekoppeld zijn aan de verbindingsmodus van de exploitant met Adobe Campaign. For more on this, refer to [this page](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Zij worden aangevuld met veiligheidsparameters die gekoppeld zijn aan de verbindingsmodus van de exploitant met Adobe Campaign. Raadpleeg [deze pagina](../../installation/using/configuring-campaign-server.md#defining-security-zones) voor meer informatie.
 
 Er zijn twee soorten toestemmingen u aan een gebruiker kunt verlenen:
 
@@ -132,7 +129,7 @@ Met de **[!UICONTROL Edit the access parameters...]** koppeling hebt u toegang t
 
 * Met de **[!UICONTROL Disable account]** optie kunt u de account van de operator uitschakelen: Hij heeft geen toegang meer tot Adobe Campaign.
 * Met de **[!UICONTROL Forbid access from the rich client]** optie kunt u het gebruik van Adobe Campaign beperken tot [webtoegang](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) of via API&#39;s: toegang tot de Adobe Campaign-clientconsole is niet meer beschikbaar.
-* Het is mogelijk om een veiligheidszone aan de exploitant te verbinden. For more on this, refer to [this page](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+* Het is mogelijk om een veiligheidszone aan de exploitant te verbinden. Raadpleeg [deze pagina](../../installation/using/configuring-campaign-server.md#defining-security-zones) voor meer informatie.
 * U kunt een vertrouwd IP masker ook bepalen gebruikend de aangewezen verbinding.
 
    De operator kan verbinding maken met Adobe Campaign zonder het wachtwoord in te voeren als het IP-adres in deze lijst staat.
