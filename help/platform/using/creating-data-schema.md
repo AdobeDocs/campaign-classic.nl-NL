@@ -11,16 +11,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9a26ec7ed1c8463270ac9f97079f49e00d5b258e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 3%
 
 ---
 
 
-# Het gegevensschema maken {#creating-the-data-schema}
+# Het dataschema maken {#creating-the-data-schema}
 
 Een schema maken voor een externe database:
 
@@ -32,13 +32,13 @@ Een schema maken voor een externe database:
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. Klik **[!UICONTROL OK]** om te bevestigen. Adobe Campaign detecteert automatisch de structuur van de geselecteerde tabel en genereert het logische schema. Houd er rekening mee dat er geen koppelingen worden gegenereerd in Adobe Campaign.
+1. Klik **[!UICONTROL OK]** om te bevestigen. Adobe Campaign detecteert automatisch de structuur van de geselecteerde tabel en genereert het logische schema. Adobe Campaign genereert geen koppelingen.
 
 1. Klik **[!UICONTROL Save]** om het maken te bevestigen.
 
    >[!CAUTION]
    >
-   >Met Sneeuwvlok is een primaire sleutel verplicht.
+   >Met Snowflake is een primaire sleutel verplicht.
 
    ![](assets/wf_new_schema_generate_fda.png)
 
