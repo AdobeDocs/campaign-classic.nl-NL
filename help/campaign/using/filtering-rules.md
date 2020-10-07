@@ -11,25 +11,22 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: 0d50826e-2211-4c3b-8413-ca1453bba6c4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9784e0db6f1bef5abdf93d3517da04fe1ba69e7d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Filterregels{#filtering-rules}
+# Regels voor filteren{#filtering-rules}
 
 Met filterregels kunt u de berichten definiëren die u wilt uitsluiten op basis van criteria die in een query zijn gedefinieerd. Deze regels zijn gekoppeld aan een doelgerichte dimensie.
 
 Filterregels kunnen worden gekoppeld aan andere soorten regels (controle, druk, enz.) in typologieën, of gegroepeerd in een specifieke **Filtrerende** typologie. Raadpleeg [Filtertypologie](#creating-and-using-a-filtering-typology)voor meer informatie hierover.
 
-## Filterregels maken {#creating-a-filtering-rule}
+## Creating a filtering rule {#creating-a-filtering-rule}
 
 Bijvoorbeeld, kunt u uw nieuwsbrief abonnees filtreren om mededelingen te verhinderen worden verzonden naar ontvangers die onderage zijn.
 
@@ -67,7 +64,7 @@ In dit geval wordt de regel, zelfs als deze aan alle leveringen is gekoppeld, al
 
 >[!NOTE]
 >
->Typologieën en filterregels kunnen in een werkschema, in de **[!UICONTROL Delivery outline]** activiteit worden gebruikt. For more on this, refer to [this section](../../workflow/using/delivery-outline.md).
+>Typologieën en filterregels kunnen in een werkschema, in de **[!UICONTROL Delivery outline]** activiteit worden gebruikt. Raadpleeg [deze sectie](../../workflow/using/delivery-outline.md) voor meer informatie.
 
 ## Filtertypologie maken en gebruiken {#creating-and-using-a-filtering-typology}
 
@@ -96,7 +93,7 @@ U kunt filterregels ook rechtstreeks via dit tabblad koppelen, zonder ze te groe
 
 Twee het filtreren regels zijn beschikbaar door gebrek: **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) en **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** ). Tijdens de e-mailanalyse, vergelijken deze regels de ontvankelijke e-mailadressen met de verboden adressen of domeinnamen in een gecodeerde globale suppressielijst die in de leveringsinstantie wordt beheerd. Als er een gelijke is, wordt het bericht niet verzonden naar die ontvanger.
 
-Hiermee voorkomt u dat de bloklijst wordt toegevoegd vanwege kwaadaardige activiteiten, met name het gebruik van een Spamtrap. Als bijvoorbeeld een spamtrap wordt gebruikt om zich te abonneren via een van uw webformulieren, wordt automatisch een bevestigingsbericht verzonden naar die spamtrap. Hierdoor wordt uw adres automatisch toegevoegd aan de lijst met blokkeringen.
+Hiermee voorkomt u dat de lijst van afgewezen personen wordt toegevoegd vanwege kwaadaardige activiteiten, met name het gebruik van een Spamtrap. Als bijvoorbeeld een spamtrap wordt gebruikt om zich te abonneren via een van uw webformulieren, wordt automatisch een bevestigingsbericht verzonden naar die spamtrap. Hierdoor wordt uw adres automatisch toegevoegd aan de lijst van afgewezen personen.
 
 >[!NOTE]
 >
