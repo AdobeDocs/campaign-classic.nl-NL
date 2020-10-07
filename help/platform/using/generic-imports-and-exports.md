@@ -1,7 +1,7 @@
 ---
-title: Algemene invoer en uitvoer
-seo-title: Algemene invoer en uitvoer
-description: Algemene invoer en uitvoer
+title: Algemene import- en exportbewerkingen
+seo-title: Algemene import- en exportbewerkingen
+description: Algemene import- en exportbewerkingen
 seo-description: null
 page-status-flag: never-activated
 uuid: e98753bb-1f14-4ec7-aa3b-d5e4f1ebaef7
@@ -11,19 +11,16 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: a21576c7-e94c-4fe1-9e31-d89116e427f6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Algemene invoer en uitvoer{#generic-imports-and-exports}
+# Algemene import- en exportbewerkingen{#generic-imports-and-exports}
 
 Adobe Campaign biedt een gegevensexportmodule aan die het gemakkelijk maakt om een lijst van klanten of vooruitzichten (bijvoorbeeld, na een het richten verrichting) te halen die dan deel van een doelbevolking zullen worden.
 
@@ -57,7 +54,7 @@ De procedure voor het creëren van een procesmalplaatje wordt voorgesteld in de 
 
 >[!NOTE]
 >
->De native sjabloon **[!UICONTROL Import block list]** is al geconfigureerd voor het importeren van een lijst met e-mailadressen die aan de bloklijst zijn toegevoegd.
+>De native sjabloon **[!UICONTROL Import block list]** is al geconfigureerd voor het importeren van een lijst met e-mailadressen die aan de lijst van afgewezen personen zijn toegevoegd.
 > 
 >Met de sjablonen **[!UICONTROL New text import]** en **[!UICONTROL New text export]** sjablonen kunt u een geheel nieuwe import of export configureren.
 
