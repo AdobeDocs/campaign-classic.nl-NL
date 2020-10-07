@@ -9,14 +9,11 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 discoiquuid: 0af1fd96-48ef-43c9-a03b-0f9a6e0e02fe
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 3%
+ht-degree: 10%
 
 ---
 
@@ -40,9 +37,9 @@ De volledige lijst van Adobe oplossingen en kerndiensten die met Adobe Campaign 
 
 ## Uw oplossingen koppelen {#working-with-experience-cloud-solutions}
 
-Afhankelijk van uw omgeving kunnen verschillende oplossingen aan Adobe Experience Cloud worden gekoppeld. Ze zijn gekoppeld als organisaties. Een **organisatie** is de entiteit die een beheerder toelaat om groepen en gebruikers te vormen, en om enig teken-binnen in de Experience Cloud te controleren. De organisatie functioneert als een login bedrijf dat alle producten en oplossingen van de Experience Cloud overspant. Meestal is een organisatie uw bedrijfsnaam. Een bedrijf kan echter veel organisaties hebben.
+Afhankelijk van uw omgeving kunnen verschillende oplossingen aan Adobe Experience Cloud worden gekoppeld. Ze zijn gekoppeld als organisaties. An **organization** is the entity that enables an administrator to configure groups and users, and to control single sign-on in the Experience Cloud. De organisatie functioneert als een aanmeldingsbedrijf dat alle producten en oplossingen van Experience Cloud omvat. Meestal is een organisatie uw bedrijfsnaam. Een bedrijf kan echter vele organisaties hebben.
 
-Organisatiebeheer en het koppelen van Adobe Experience Cloud-accounts vindt u in het Help-portaal [van](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html)Adobe Experience Cloud.
+Organisatiebeheer en het koppelen van Adobe Experience Cloud-accounts vindt u in het Help-portaal [van](https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/organizations.html)Adobe Experience Cloud.
 
 >[!CAUTION]
 >
@@ -74,11 +71,11 @@ De volgende lijst verleent toegang tot beschikbare documentatie van de Experienc
   </tr> 
   <tr> 
    <td> <strong>Adobe Experience Manager</strong><br /> </td> 
-   <td> Hiermee kunt u rechtstreeks in <strong>Adobe Experience Manager</strong>e-mailinhoud of formulieren maken die zijn toegewezen aan de Adobe Campaign-database.<br /> <p><a href="../../integrations/using/about-adobe-experience-manager.md">Meer</a> weten over de integratie tussen Adobe Campaign en Adobe Experience Manager?</p><br /> </td> 
+   <td> Allows you to create email contents or forms mapped to the Adobe Campaign database directly in <strong>Adobe Experience Manager</strong>.<br /> <p><a href="../../integrations/using/about-adobe-experience-manager.md">Meer</a> weten over de integratie tussen Adobe Campaign en Adobe Experience Manager?</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Target</strong><br /> </td> 
-   <td> Hiermee kunt u afbeeldingen invoegen die dynamisch door <strong>Adobe Target</strong> zijn berekend wanneer het e-mailbericht dat door Adobe Campaign is gemaakt en verzonden, wordt geopend.<br /> <p><a href="../../integrations/using/integrating-with-adobe-target.md">Meer</a> weten over de integratie tussen Adobe Campaign en Adobe Target?</p><br /> </td> 
+   <td> Allows you to insert images that are dynamically computed by <strong>Adobe Target</strong> when the email created and sent by Adobe Campaign is opened.<br /> <p><a href="../../integrations/using/integrating-with-adobe-target.md">Meer</a> weten over de integratie tussen Adobe Campaign en Adobe Target?</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>People core service</strong><br /> <strong>Adobe Audience Manager</strong><br /> </td> 
@@ -86,11 +83,11 @@ De volgende lijst verleent toegang tot beschikbare documentatie van de Experienc
   </tr> 
   <tr> 
    <td> <strong>De kerndienst van activa</strong><br /> </td> 
-   <td> Hiermee kunt u elementen uit uw Adobe Experience Cloud-bibliotheek invoegen in e-mails en bestemmingspagina's die in Adobe Campaign zijn gemaakt.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-experience-cloud-assets">Meer</a> informatie over de integratie van Adobe Campaign - Assets core service</p><br /> </td> 
+   <td> Hiermee kunt u assets uit uw Adobe Experience Cloud-bibliotheek invoegen in e-mails en landingspagina’s die in Adobe Campaign zijn gemaakt.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-experience-cloud-assets">Meer</a> informatie over de integratie van Adobe Campaign - Assets core service</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>AEM Assets</strong><br /> </td> 
-   <td> Hiermee kunt u elementen uit uw <strong>AEM Assets</strong> -bibliotheek invoegen in e-mails en bestemmingspagina's die in Adobe Campaign zijn gemaakt.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets">Meer</a> weten over de integratie tussen Adobe Campaign en AEM Assets?</p><br /> </td> 
+   <td> Allows you to insert assets from your <strong>AEM Assets</strong> library into emails and landing pages created in Adobe Campaign.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets">Meer</a> weten over de integratie tussen Adobe Campaign en AEM Assets?</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Experience Cloud Triggers</strong><br /> </td> 
