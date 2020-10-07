@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 669635bd-868b-4550-b075-6294ccb71297
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '989'
+ht-degree: 2%
 
 ---
 
@@ -47,7 +47,7 @@ Op het **[!UICONTROL Headers/Footers]** tabblad kunt u met deze sjabloon de info
 
 ![](assets/s_ncs_admin_survey_render_edit_header.png)
 
-Elke regel van de regel **[!UICONTROL Page headers]** en de **[!UICONTROL Page footers]** sectie komt overeen met een regel in de HTML-pagina. Klik **[!UICONTROL Add]** om een nieuwe regel te maken.
+Elke regel van de regel **[!UICONTROL Page headers]** en de **[!UICONTROL Page footers]** sectie komt overeen met een regel in de HTML-pagina. Click **[!UICONTROL Add]** to create a new line.
 
 Selecteer een bestaande regel en klik op de **[!UICONTROL Detail]** knop om deze aan te passen.
 
@@ -70,7 +70,7 @@ In de **[!UICONTROL Position]** velden kunt u de positie van elementen in de kop
 
 U kunt de stijlpagina voor elk element van het formulier (invoervelden, afbeeldingen, keuzerondjes, enz.) overladen.
 
-Gebruik hiervoor het **[!UICONTROL Advanced]** tabblad.
+To do this, use the **[!UICONTROL Advanced]** tab.
 
 ![](assets/s_ncs_admin_survey_advanced_tab.png)
 
@@ -83,7 +83,7 @@ Hiermee kunt u de volgende eigenschappen definiëren:
 * **[!UICONTROL Width]** van het gebied: dit kan worden uitgedrukt als een percentage of in ems, punten of pixels (standaardwaarde);
 * Maximaal **[!UICONTROL Length]**: Maximum aantal tekens toegestaan (voor besturingselementen voor tekst, aantal en wachtwoordtype),
 * **[!UICONTROL Lines]**: aantal regels voor een **[!UICONTROL Multi-line text]** tekstzone;
-* **[!UICONTROL Style inline]**: kunt u de CSS-stijlpagina overladen met extra instellingen. **Deze worden met behulp van**; tekens zoals in het onderstaande voorbeeld wordt getoond:
+* **[!UICONTROL Style inline]**: kunt u de CSS-stijlpagina overladen met extra instellingen. Deze worden met behulp van **;** tekens zoals in het onderstaande voorbeeld wordt getoond:
 
    ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
 
@@ -153,7 +153,7 @@ In het venster van de gebiedsselectie, kunt u van de volgende gegevens kiezen:
 
 * De hoofdstructuur bevat de parameters van de formuliercontext. De standaardparameters zijn de id (die overeenkomt met de gecodeerde id van de ontvanger), de taal en de oorsprong.
 
-   Raadpleeg deze [pagina](../../web/using/defining-web-forms-properties.md#form-url-parameters)voor meer informatie.
+   Raadpleeg [deze pagina](../../web/using/defining-web-forms-properties.md#form-url-parameters) voor meer informatie.
 
 * De **[!UICONTROL Recipients]** substructuur bevat de invoervelden die in het formulier zijn ingevoegd en in de database zijn opgeslagen.
 
@@ -161,9 +161,9 @@ In het venster van de gebiedsselectie, kunt u van de volgende gegevens kiezen:
 
 * De **[!UICONTROL Variables]** substructuur bevat de beschikbare variabelen voor dit formulier. Raadpleeg Gegevens [opslaan in een lokale variabele](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable)voor meer informatie hierover.
 
-Raadpleeg de volgende gebruiksscenario&#39;s voor meer informatie: Verschillende opties [weergeven, afhankelijk van de geselecteerde waarden](../../web/using/use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
+Raadpleeg de volgende gebruiksscenario&#39;s voor meer informatie: [Verschillende opties worden weergegeven, afhankelijk van de geselecteerde waarden](../../web/using/use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
 
-U kunt ook de weergave van formulierpagina&#39;s met behulp van het **[!UICONTROL Test]** object bepalen. Raadpleeg deze [pagina](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display)voor meer informatie.
+U kunt ook de weergave van formulierpagina&#39;s met behulp van het **[!UICONTROL Test]** object bepalen. Raadpleeg [deze pagina](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display) voor meer informatie.
 
 ## Elementen uit een bestaand formulier importeren {#importing-elements-from-an-existing-form}
 
