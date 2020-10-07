@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: 279b0ae6-2578-4f1f-af59-13a1a9c80b32
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ced6c73961e949c421e9dfb638b40a06dcad4614
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
@@ -105,7 +102,7 @@ Op dit tabblad kunt u een scenario selecteren om een levering rechtstreeks op de
 
 >[!NOTE]
 >
->Zie Een inhoudsinstantie [leveren voor een voorbeeld van het maken van de levering op basis van inhoud](../../delivery/using/using-a-content-template.md#delivering-a-content-instance).
+>Raadpleeg [Inhoudsinstantie](../../delivery/using/using-a-content-template.md#delivering-a-content-instance)leveren voor een voorbeeld van het maken van de levering op basis van inhoud.
 
 ### aggregator {#aggregator}
 
