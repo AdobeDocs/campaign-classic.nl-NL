@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2576'
-ht-degree: 12%
+ht-degree: 14%
 
 ---
 
@@ -27,7 +24,7 @@ ht-degree: 12%
 
 ## Quarantaine {#about-quarantines}
 
-Adobe Campaign beheert een lijst met in quarantaine geplaatste adressen. Ontvangers van wie adres in quarantaine is geplaatst worden door gebrek tijdens leveringsanalyse uitgesloten, en zullen niet worden gericht. Een e-mailadres kan in quarantaine worden geplaatst, bijvoorbeeld, wanneer de brievenbus volledig is of als het adres niet bestaat. In elk geval voldoet de quarantaineprocedure aan de hieronder beschreven specifieke voorschriften.
+Adobe Campaign beheert een lijst met in quarantaine geplaatste adressen. Ontvangers van wie het adres in quarantaine is geplaatst, worden standaard tijdens de leveringsanalyse uitgesloten, en zullen niet doelgericht worden benaderd. Een e-mailadres kan in quarantaine worden geplaatst, bijvoorbeeld, wanneer het postvak vol is of als het adres niet bestaat. In elk geval voldoet de quarantaineprocedure aan de hieronder beschreven specifieke voorschriften.
 
 >[!NOTE]
 >
@@ -165,7 +162,7 @@ Voor elk bericht ontvangt Adobe Campaign de synchrone en asynchrone fouten van d
 
 * Problemen met de lengte van de lading: niet opnieuw proberen, de oorzaak van de fout is **[!UICONTROL Unreachable]**.
 * Problemen met certificaatvervaldatum: niet opnieuw proberen, de oorzaak van de fout is **[!UICONTROL Unreachable]**.
-* Verbinding verloren tijdens levering: opnieuw uitgevoerd, de reden van de fout is **[!UICONTROL Unreachable]**.
+* Verbinding verloren tijdens levering: opnieuw uitgevoerd, de oorzaak van de fout is **[!UICONTROL Unreachable]**.
 * Uitgave serviceconfiguratie (ongeldig certificaat, ongeldig certificaatwachtwoord, geen certificaat): niet opnieuw proberen, de oorzaak van de fout is **[!UICONTROL Unreachable]**.
 
 De APNS-server meldt Adobe Campaign asynchroon dat een apparaattoken niet is geregistreerd (wanneer de mobiele toepassing door de gebruiker is verwijderd). De **[!UICONTROL mobileAppOptOutMgt]** workflow wordt elke 6 uur uitgevoerd om contact op te nemen met de APNS-feedbackservices om de **AppSubscriptionRcp** -tabel bij te werken. Voor alle gedeactiveerde tokens, wordt het gebied **Uitgeschakeld** geplaatst aan **Waar** en het abonnement verbonden aan dat apparatenteken zal automatisch van toekomstige leveringen worden uitgesloten.
