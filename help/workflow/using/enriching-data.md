@@ -1,7 +1,7 @@
 ---
-title: Gegevens worden verrijkt
-seo-title: Gegevens worden verrijkt
-description: Gegevens worden verrijkt
+title: Data verrijken
+seo-title: Data verrijken
+description: Data verrijken
 seo-description: null
 page-status-flag: never-activated
 uuid: 3f65a8a2-b3e1-4c4c-9653-b8a7c4d7557a
@@ -11,19 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: f87da08f-68b9-4e2b-821f-b3ff20e390f1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1aca6758bc787f91ae28d7d5add875edf04541e8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '744'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Gegevens worden verrijkt{#enriching-data}
+# Data verrijken{#enriching-data}
 
 ## Informatie over het verrijken van gegevens {#about-enriching-data}
 
