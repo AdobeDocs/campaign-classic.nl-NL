@@ -1,7 +1,7 @@
 ---
-title: Een campagne volgen
-seo-title: Een campagne volgen
-description: Een campagne volgen
+title: Een campagne opvolgen
+seo-title: Een campagne opvolgen
+description: Een campagne opvolgen
 seo-description: null
 page-status-flag: never-activated
 uuid: 66919c81-b22c-4138-a654-ea53154ba718
@@ -11,16 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: e1f8958d-f036-4635-be6e-ebdbea6ac116
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '411'
+ht-degree: 2%
 
 ---
 
 
-# Een campagne volgen{#tracking-a-campaign}
+# Een campagne opvolgen{#tracking-a-campaign}
 
 De centrale entiteitexploitanten kunnen campagneorden in de lijst van campagnepakketten volgen.
 
