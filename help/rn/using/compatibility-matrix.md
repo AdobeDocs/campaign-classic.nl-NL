@@ -9,14 +9,11 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 6%
+ht-degree: 16%
 
 ---
 
@@ -35,7 +32,7 @@ Adobe Campaign Classic is compatibel met alle systemen en gereedschappen die op 
 
 Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie over afgekeurde items.
 
-## Besturingssystemen{#OperatingSystems}
+## Operating Systems{#OperatingSystems}
 
 <table> 
 <tbody> 
@@ -71,7 +68,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 </tbody>
 </table>
 
-## Webservers{#WebServers}
+## Web Servers{#WebServers}
 
 <table>
 <tbody>
@@ -92,7 +89,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 </tbody>
 </table>
 
-## Gereedschappen{#Tools}
+## Tools{#Tools}
 
 <table>
 <tbody>
@@ -179,7 +176,7 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 >
 >PostgreSQL is de standaarddatabaseserver voor gehoste omgevingen.
 
-## CRM-connectors{#CRMconnectors}
+## CRM connectors{#CRMconnectors}
 
 <table>
 <tbody>
@@ -368,8 +365,8 @@ Raadpleeg deze [sectie](https://docs.adobe.com/content/help/en/campaign-classic/
 
 * [Opmerkingen bij de release Campaign Classic](https://docs.adobe.com/content/help/nl-NL/campaign-classic/using/release-notes/latest-release.html)
 * [Installatiehandleiding](https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/general-architecture.html)
-* [Verouderde functies en systemen](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
-* [Upgradeprocedure bouwen](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)
-* [Campaign Classic-compatibiliteitsmatrix voor 19.0-release](https://helpx.adobe.com/campaign/kb/compatibility-matrix-19-0.html)
-* [Campaign Classic-compatibiliteitsmatrix voor 19.1-release](https://helpx.adobe.com/campaign/kb/compatibility-matrix-19-1.html)
+* [Verouderde functies en systemen](https://helpx.adobe.com/nl/campaign/kb/deprecated-and-removed-features.html)
+* [Upgradeprocedure bouwen](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html)
+* [Campaign Classic-compatibiliteitsmatrix voor 19.0-release](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix-19-0.html)
+* [Campaign Classic-compatibiliteitsmatrix voor 19.1-release](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix-19-1.html)
 
