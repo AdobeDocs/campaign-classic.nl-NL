@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 discoiquuid: 299f84e6-f6ff-4ca0-9799-b56d57e1752b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '76'
+ht-degree: 10%
 
 ---
 
@@ -28,4 +28,4 @@ In de meeste gevallen worden profielen via een workflow [naar Campagne](../../wo
 
 Voer de informatie voor dit profiel in. De tabbladen en velden die moeten worden ingevuld, worden beschreven in [Een profiel](../../platform/using/editing-a-profile.md)bewerken.
 
-Klik **[!UICONTROL Save]** om het maken van profielen te valideren. Het profiel wordt vervolgens toegevoegd aan de Adobe Campagne-database.
+Klik **[!UICONTROL Save]** om het maken van profielen te valideren. Het profiel wordt vervolgens toegevoegd aan de Adobe Campaign-database.
