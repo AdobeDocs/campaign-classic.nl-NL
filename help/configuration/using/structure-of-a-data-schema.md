@@ -1,7 +1,7 @@
 ---
-title: Structuur van een gegevensschema
-seo-title: Structuur van een gegevensschema
-description: Structuur van een gegevensschema
+title: Structuur van een dataschema
+seo-title: Structuur van een dataschema
+description: Structuur van een dataschema
 seo-description: null
 page-status-flag: never-activated
 uuid: 83e3995d-fa31-4cb5-acf2-83f17329c99c
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: a1a39eaa-6d6f-42c5-a36b-bd1cb3a77dcb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 13%
 
 ---
 
 
-# Structuur van een gegevensschema{#structure-of-a-data-schema}
+# Structuur van een dataschema{#structure-of-a-data-schema}
 
 De structuur van een gegevensschema wordt weergegeven in de vorm van een boomstructuur. Als u het schema grafisch wilt weergeven in de Adobe Campaign-clientconsole, selecteert u het doelschema en klikt u op het **[!UICONTROL Structure]** subtabblad.
 
