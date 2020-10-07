@@ -1,6 +1,6 @@
 ---
-title: Beschrijving van het klassieke gegevensmodel van Adobe Campaign
-description: In dit document wordt het klassieke Adobe Campaign-gegevensmodel beschreven.
+title: Beschrijving van Adobe Campaign Classic-gegevensmodel
+description: In dit document wordt het Adobe Campaign Classic-gegevensmodel beschreven.
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -9,21 +9,18 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2375'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Beschrijving van gegevensmodel campagne{#data-model-description}
+# Campaign data model description{#data-model-description}
 
-Adobe Campaign wordt geleverd met een vooraf gedefinieerd gegevensmodel. In deze sectie vindt u enkele details over de ingebouwde tabellen van het Adobe Campaign-gegevensmodel en de interactie ervan.
+Adobe Campaign bevat een vooraf gedefinieerd datamodel. In deze sectie vindt u enkele details over de ingebouwde tabellen van het Adobe Campaign-gegevensmodel en de interactie ervan.
 
 Om tot de beschrijving van elke lijst toegang te hebben, ga naar **[!UICONTROL Admin > Configuration > Data schemas]**, selecteer een middel van de lijst en klik de **[!UICONTROL Documentation]** tabel.
 
@@ -31,13 +28,13 @@ Om tot de beschrijving van elke lijst toegang te hebben, ga naar **[!UICONTROL A
 
 >[!NOTE]
 >
->De fysieke en logische structuur van de gegevens die in de toepassing worden overgedragen, wordt in XML beschreven. Het volgt een grammatica specifiek voor Adobe Campaign, genoemd een schema. Lees [deze sectie](../../configuration/using/about-schema-reference.md)voor meer informatie over Adobe Campaign-schema&#39;s.
+>De fysieke en logische structuur van de data die in de applicatie worden overgedragen, wordt in XML beschreven. Het volgt een grammatica die specifiek is voor Adobe Campaign en een schema wordt genoemd. For more on Adobe Campaign schemas, read out [this section](../../configuration/using/about-schema-reference.md).
 
 ## Beschrijving van de belangrijkste tabellen {#description-main-tables}
 
 Adobe Campaign vertrouwt op een relationele database die tabellen bevat die aan elkaar zijn gekoppeld.
 
-Het volgende diagram toont de verbindingen tussen de belangrijkste bedrijfstabellen van het de gegevensmodel van Adobe Campaign met de belangrijkste gebieden voor elk.
+Het volgende diagram toont de verbindingen tussen de belangrijkste bedrijfslijsten van het de gegevensmodel van Adobe Campaign met de belangrijkste gebieden voor elk.
 
 <!--![](assets/data-model_diagram.png)-->
 
@@ -57,7 +54,7 @@ Dit is de standaardtabel die wordt gebruikt voor de **ontvangers van leveringen*
 * sPhone, sMobilePhone en sFax bevatten respectievelijk de telefoon-, mobiele telefoon- en faxnummers.
 * iBlockList is de standaardmarkering voor niet-deelname die wordt gebruikt voor de profielen (1 betekent &quot;niet-geabonneerd&quot;, 0 anders).
 
-Het veld iFolderId is de externe sleutel die de ontvanger aan zijn uitvoeringsmap koppelt. Zie [XtkFolder](#XtkFolder)voor meer informatie.
+Het veld iFolderId is de externe sleutel die de ontvanger aan zijn uitvoeringsmap koppelt. For more on this, see [XtkFolder](#XtkFolder).
 
 Het veld sCountryCode is de ISO-code 3166-1 Alpha 2 (2 tekens) van het land dat aan de ontvanger is gekoppeld. Dit veld is in feite een buitenlandse sleutel in de referentietabel van het land (NmsCountry), die de landlabels en andere landcodegegevens bevat. Als het land niet is gevuld, wordt de waarde &#39;XX&#39; opgeslagen (en wordt gebruikt in plaats van een nul-id-record).
 
@@ -67,7 +64,7 @@ Zie [deze sectie](../../configuration/using/about-data-model.md#default-recipien
 
 Deze tabel komt overeen met het schema **nms:group** .
 
-Hiermee kunt u **statische groepen ontvangers** maken. Er is een veel-op-veel relatie tussen ontvangers en groepen. Eén ontvanger kan bijvoorbeeld tot meerdere groepen behoren en één groep kan meerdere ontvangers bevatten. Groepen kunnen handmatig worden gemaakt, via import of levering als doel. Groepen worden vaak gebruikt als leveringsdoelen. Er is een unieke index op het gebied die de interne naam van de sName groep vertegenwoordigt. De groep is gekoppeld aan een map (de sleutel is iFolderId. Zie [XtkFolder](#XtkFolder)voor meer informatie hierover.
+Hiermee kunt u **statische groepen ontvangers** maken. Er is een veel-op-veel relatie tussen ontvangers en groepen. Eén ontvanger kan bijvoorbeeld tot meerdere groepen behoren en één groep kan meerdere ontvangers bevatten. Groepen kunnen handmatig worden gemaakt, via import of levering als doel. Groepen worden vaak gebruikt als leveringsdoelen. Er is een unieke index op het gebied die de interne naam van de sName groep vertegenwoordigt. De groep is gekoppeld aan een map (de sleutel is iFolderId. For more on this, see [XtkFolder](#XtkFolder)).
 
 ### NmsRcpGrpRel {#NmsRcpGrpRel}
 
@@ -81,7 +78,7 @@ In Adobe Campaign kunt u abonnementen op informatieservices (onderwerpen) maken 
 
 De diensten zijn entiteiten die aan groepen (statische ontvankelijke groeperingen) gelijkaardig zijn, behalve dat zij meer informatie verspreiden en gemakkelijke beheer van abonnementen en abonnementen via vormen toelaten.
 
-Er is een unieke index op het gebied die de interne naam van de dienst sName vertegenwoordigt. De service is gekoppeld aan een map (de sleutel is iFolderId. Zie [XtkFolder](#XtkFolder)voor meer informatie hierover. Tot slot specificeert het iType gebied het leveringskanaal van deze dienst (0 voor e-mail, 1 voor SMS, 2 voor telefoon, 3 voor directe post en 4 voor fax).
+Er is een unieke index op het gebied die de interne naam van de dienst sName vertegenwoordigt. De service is gekoppeld aan een map (de sleutel is iFolderId. For more on this, see [XtkFolder](#XtkFolder)). Tot slot specificeert het iType gebied het leveringskanaal van deze dienst (0 voor e-mail, 1 voor SMS, 2 voor telefoon, 3 voor directe post en 4 voor fax).
 
 ### NmsSubscription {#NmsSubscription}
 
@@ -101,7 +98,7 @@ Deze tabel komt overeen met het **nms:leveringsschema** .
 
 Elke record in deze tabel vertegenwoordigt een **leveringsactie** of een **leveringssjabloon**. Het bevat alle parameters die nodig zijn voor het uitvoeren van leveringen (doel, inhoud, enz.). Logboeken voor levering (uitzending) (NmsBroadLog) en bijbehorende URL&#39;s voor tracering (NmsTrackingUrl) worden tijdens de analysefase gemaakt (zie hieronder voor meer informatie over beide tabellen).
 
-Er is een unieke index op het gebied die de interne naam van de levering sInternalName of het scenario vertegenwoordigt. De levering is gekoppeld aan een uitvoeringsmap (de externe sleutel is iFolderProcessId. Zie [XtkFolder](#XtkFolder)voor meer informatie hierover.
+Er is een unieke index op het gebied die de interne naam van de levering sInternalName of het scenario vertegenwoordigt. De levering is gekoppeld aan een uitvoeringsmap (de externe sleutel is iFolderProcessId. For more on this, see [XtkFolder](#XtkFolder)).
 
 ### XtkFolder {#XtkFolder}
 
