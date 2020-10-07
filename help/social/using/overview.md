@@ -11,11 +11,11 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 discoiquuid: 9330d4f2-b36d-440d-b56e-b2d4448199b2
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '139'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ Met Social Marketing kunt u leveringen verzenden naar uw verschillende Facebook-
 
 >[!IMPORTANT]
 >
->Adobe Campaign vraagt of u de servicevoorwaarden van Facebook en Twitter met betrekking tot het verzenden van berichten naleeft.
+>Adobe Campaign vraagt dat je voldoet aan de servicevoorwaarden die Facebook en Twitter hebben meegedeeld met betrekking tot het verzenden van berichten.
 >
 >Voordat u publicaties verzendt, moet u voldoen aan de configuratiestappen die worden beschreven in Workflows [](../../social/using/starting-workflows.md)starten.
 
