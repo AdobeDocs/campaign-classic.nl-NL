@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 discoiquuid: 52b5d5a9-10dc-4601-8fe4-962a2334322b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '140'
+ht-degree: 5%
 
 ---
 
@@ -28,7 +28,7 @@ Deze instellingen kunt u later wijzigen op het **[!UICONTROL General]** tabblad 
 
 ![](assets/offer_simulation_008.png)
 
-* **[!UICONTROL Schedule execution for a time of low activity]** : Hiermee kunt u de simulatie plannen op basis van de gekozen prioriteit (Laag, Gemiddeld of Hoog) om de prestaties van Adobe-campagnes te optimaliseren.
+* **[!UICONTROL Schedule execution for a time of low activity]** : Hiermee kunt u de simulatie plannen op basis van de gekozen prioriteit (Laag, Gemiddeld of Hoog) om de Adobe Campaign-prestaties te optimaliseren.
 * **[!UICONTROL Priority]** : dit is het niveau dat op de simulatie wordt toegepast om het te plannen. Als de **[!UICONTROL Schedule execution for a time of low activity]** optie is ingeschakeld, wordt in de workflow voor het verwerken van de campagne een tijd met een lage activiteit geselecteerd om de campagne te starten.
 * **[!UICONTROL Log SQL queries in the journal]** : deze functionaliteit is alleen voor ervaren gebruikers. Het laat u een lusje aan het logboek toevoegen die SQL vragen toont om mogelijke storingen te ontdekken als de simulatie met fouten eindigt.
 
