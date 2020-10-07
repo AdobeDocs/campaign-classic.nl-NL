@@ -1,7 +1,7 @@
 ---
-title: hypothesen maken
-seo-title: hypothesen maken
-description: hypothesen maken
+title: Hypotheses maken
+seo-title: Hypotheses maken
+description: Hypotheses maken
 seo-description: null
 page-status-flag: never-activated
 uuid: 48b74772-473f-4fbc-a228-ce8e35a7b9ba
@@ -11,16 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 discoiquuid: 0f73de0e-e589-4e39-9895-209dad75db75
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1063'
+ht-degree: 1%
 
 ---
 
 
-# hypothesen maken{#creating-hypotheses}
+# Hypotheses maken{#creating-hypotheses}
 
 Er zijn verschillende mogelijkheden om hypothesen te creëren/te koppelen aan een campagneaanbod of levering:
 
@@ -38,7 +38,7 @@ U kunt als volgt een hypothese over een bestaande levering maken:
 >
 >Deze bewerking is alleen mogelijk voor in behandeling zijnde leveringen.
 
-1. Ga in de Adobe Campaign-structuur naar **[!UICONTROL Campaign management > Measurement hypotheses]**.
+1. Ga in de Adobe Campaign boom naar **[!UICONTROL Campaign management > Measurement hypotheses]**.
 1. Klik op de **[!UICONTROL New]** knop of klik met de rechtermuisknop op de lijst met hypothesen en selecteer **[!UICONTROL New]** in de vervolgkeuzelijst.
 
    ![](assets/response_hypothesis_instance_creation_002.png)
@@ -67,7 +67,7 @@ U kunt als volgt een hypothese over een bestaande levering maken:
    >[!CAUTION]
    >
    >U kunt deze instelling openen als u het **[!UICONTROL Keep execution workflow]** selectievakje hebt ingeschakeld.\
-   >Deze optie moet alleen worden geactiveerd voor foutopsporingsdoeleinden, in het geval van een fout tijdens het uitvoeren van de hypothese. De automatisch gegenereerde workflows worden opgeslagen in de map **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Objects created automatically]** > **[!UICONTROL Campaign workflows]** in de Adobe Campagneverkenner.
+   >Deze optie moet alleen worden geactiveerd voor foutopsporingsdoeleinden, in het geval van een fout tijdens het uitvoeren van de hypothese. De automatisch gegenereerde workflows worden opgeslagen in de map **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Objects created automatically]** > **[!UICONTROL Campaign workflows]** in de Adobe Campaign-verkenner.
    > 
    >Bovendien mogen automatisch gegenereerde workflows niet worden gewijzigd. Eventuele wijzigingen zouden elders niet in aanmerking worden genomen voor latere berekeningen.
    >
@@ -120,7 +120,7 @@ Voor meer informatie kunt u ook naar [Voorbeeld verwijzen: het creëren van een 
 Het creëren van een hypothese over een aanbiedingsvoorstel is vergelijkbaar met het creëren van een hypothese over de levering tijdens de vlucht. De hypothese kan worden uitgevoerd zolang het aanbod actief is. De berekeningsperiode is gebaseerd op de datum van het voorstel. Wanneer de hypothese u een ontvanger aan een aankoop laat verbinden, kan de status van het aanbiedingsvoorstel waarschijnlijk worden goedgekeurd automatisch worden veranderd (voor meer op dit, verwijs naar [Transacties](../../campaign/using/hypothesis-templates.md#transactions)).
 
 1. Maak een of meer **[!UICONTROL Offer]** typemodellen zoals beschreven in [Een hypothesemodel](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model)maken.
-1. Ga naar het **[!UICONTROL Campaign management > Measurement hypotheses]** knooppunt.
+1. Go to the **[!UICONTROL Campaign management > Measurement hypotheses]** node.
 1. Maak een **[!UICONTROL Offers]** typehypothese door het eerder gemaakte model te selecteren.
 
    ![](assets/response_hypothesis_instance_offer_001.png)
