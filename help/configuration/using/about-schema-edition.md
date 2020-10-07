@@ -1,7 +1,7 @@
 ---
-title: Schema-editie
-seo-title: Schema-editie
-description: Schema-editie
+title: De schema-editor
+seo-title: De schema-editor
+description: De schema-editor
 seo-description: null
 page-status-flag: never-activated
 uuid: edb4d47d-b507-4d86-9873-ebd5f6acefc6
@@ -11,30 +11,30 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: d5b08e4e-060c-4185-9dac-af270918e2b9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 7%
 
 ---
 
 
-# Schema-editie{#about-schema-edition}
+# De schema-editor{#about-schema-edition}
 
-Voor Adobe Campaign worden gegevensschema&#39;s gebruikt:
+Adobe Campaign past gegevensschema&#39;s toe op:
 
-* Definieer hoe gegevensobjecten in de toepassing worden gekoppeld aan onderliggende databasetabellen.
-* Definieer koppelingen tussen de verschillende gegevensobjecten in de Campagne-toepassing.
-* Definieer en beschrijf de afzonderlijke velden die in elk object zijn opgenomen.
+* Definiëren hoe dataobjecten in de applicatie worden gekoppeld aan onderliggende databasetabellen.
+* Definiëren van koppelingen tussen de verschillende dataobjecten in de Campaign-applicatie.
+* Definiëren en beschrijven van de afzonderlijke velden die in elk object zijn opgenomen.
 
-Voor een beter inzicht in de ingebouwde lijsten van de Campagne en hun interactie, verwijs naar het Klassieke gegevensmodel [van de](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)Campagne.
+Raadpleeg het gegevensmodel [](https://helpx.adobe.com/nl/campaign/kb/acc-datamodel.html)Campaign Classic voor een beter begrip van ingebouwde tabellen en hun interactie.
 
 ## Schema&#39;s uitbreiden of maken {#extending-or-creating-schemas}
 
-Als u een veld, index of ander element wilt toevoegen aan een van de schema&#39;s met kerngegevens in Campagne, zoals de ontvangende tabel (nms:ontvanger), moet u dat schema uitbreiden. Raadpleeg voor meer informatie de sectie [Een schema](../../configuration/using/extending-a-schema.md) uitbreiden.
+Als u een veld, index of ander element wilt toevoegen aan een van de schema&#39;s met kerngegevens in Campagne, zoals de ontvangende tabel (nms:ontvanger), moet u dat schema uitbreiden. For more on this, refer to the [Extending a schema](../../configuration/using/extending-a-schema.md) section.
 
-Als u een geheel nieuw type gegevens wilt toevoegen dat niet in Adobe Campagne (bijvoorbeeld een concordantietabel) buiten de box valt, kunt u rechtstreeks een aangepast schema maken. Raadpleeg voor meer informatie de sectie [Gegevensschema&#39;s](../../configuration/using/data-schemas.md) .
+Als u een geheel nieuw type gegevens wilt toevoegen dat niet in Adobe Campaign buiten het vak bestaat (bijvoorbeeld een contracttabel), kunt u rechtstreeks een aangepast schema maken. For more on this, refer to the [Data schemas](../../configuration/using/data-schemas.md) section.
 
 ![](assets/schemaextension_getting_started_1.png)
 
@@ -120,7 +120,7 @@ Raadpleeg de sectie [Beheer van toetsen](../../configuration/using/database-mapp
 
 ## Attributen (velden) {#attributes--fields-}
 
-Met kenmerken kunt u de velden definiëren waaruit het gegevensobject bestaat. U kunt de **[!UICONTROL Insert]** knoop in de toolbar van de schemageditie gebruiken om lege attributenmalplaatjes in uw XML te laten vallen waar uw curseur is. Raadpleeg voor meer informatie de sectie [Gegevensschema&#39;s](../../configuration/using/data-schemas.md) .
+Met kenmerken kunt u de velden definiëren waaruit het gegevensobject bestaat. U kunt de **[!UICONTROL Insert]** knoop in de toolbar van de schemageditie gebruiken om lege attributenmalplaatjes in uw XML te laten vallen waar uw curseur is. For more on this, refer to the [Data schemas](../../configuration/using/data-schemas.md) section.
 
 ![](assets/schemaextension_getting_started_2.png)
 
@@ -141,7 +141,7 @@ De volledige lijst met kenmerken is beschikbaar in de sectie [`<attribute>` Elem
 * **@xml**
 * **@type**
 
-   Als u een tabel wilt weergeven met de toewijzingen voor de gegevenstypen die door Adobe Campaign zijn gegenereerd voor de verschillende databasebeheersystemen, raadpleegt u de sectie [Toewijzing van de typen Adobe Campagne/DBMS-gegevens](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) .
+   Als u een tabel wilt weergeven met de toewijzingen voor de gegevenstypen die door Adobe Campaign zijn gegenereerd voor de verschillende databasebeheersystemen, raadpleegt u de sectie [Toewijzing van de typen Adobe Campaign/DBMS-gegevens](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) .
 
 Raadpleeg de sectie [Kenmerkbeschrijving](../../configuration/using/elements-and-attributes.md#attribute-description) voor meer informatie over elk kenmerk.
 
@@ -225,9 +225,9 @@ Nadat de wijzigingen zijn voltooid en opgeslagen, moeten alle wijzigingen die va
 
 ![](assets/schemaextension_getting_started_3.png)
 
-Raadpleeg voor meer informatie de sectie [De databasestructuur](../../configuration/using/updating-the-database-structure.md) bijwerken.
+Raadpleeg de sectie [De databasestructuur bijwerken](../../configuration/using/updating-the-database-structure.md) voor meer informatie.
 
 >[!NOTE]
 >
->Wanneer de wijzigingen niet de gegevensbestandstructuur beïnvloeden, moet u enkel schema&#39;s regenereren. Selecteer hiertoe de schema&#39;s die u wilt bijwerken, klik met de rechtermuisknop en kies **[!UICONTROL Actions > Regenerate selected schemas...]** . Raadpleeg voor meer informatie de sectie [Regenererende schema&#39;s](../../configuration/using/regenerating-schemas.md) .
+>Wanneer de wijzigingen niet de gegevensbestandstructuur beïnvloeden, moet u enkel schema&#39;s regenereren. Selecteer hiertoe de schema&#39;s die u wilt bijwerken, klik met de rechtermuisknop en kies **[!UICONTROL Actions > Regenerate selected schemas...]** . For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.
 
