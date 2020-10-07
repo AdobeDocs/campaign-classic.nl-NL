@@ -1,7 +1,7 @@
 ---
-title: Berichtinhoud maken
-seo-title: Berichtinhoud maken
-description: Berichtinhoud maken
+title: Berichtcontent maken
+seo-title: Berichtcontent maken
+description: Berichtcontent maken
 seo-description: null
 page-status-flag: never-activated
 uuid: 4ee013fc-fba2-4120-b796-dd4008000ea9
@@ -11,22 +11,22 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 1f420652-c9af-4a49-8d5c-a640e960aced
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2c0d4054fbc15a88ea0370269b62c7d647aea033
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 4%
 
 ---
 
 
-# Berichtinhoud maken{#creating-message-content}
+# Berichtcontent maken{#creating-message-content}
 
-De definitie van de inhoud van het transactiebericht is gelijk aan die voor normale leveringen in Adobe Campaign. Voor een e-maillevering kunt u bijvoorbeeld inhoud in HTML- of tekstindeling maken, bijlagen toevoegen of het bezorgingsobject aanpassen. Raadpleeg voor meer informatie het hoofdstuk over [e-maillevering](../../delivery/using/about-email-channel.md).
+De definitie van de inhoud van het transactiebericht is gelijk aan die voor normale leveringen in Adobe Campaign. U kunt bijvoorbeeld voor een e-maillevering inhoud in HTML- of tekstindeling maken, bijlagen toevoegen of het bezorgingsobject aanpassen. Raadpleeg voor meer informatie het hoofdstuk over [e-maillevering](../../delivery/using/about-email-channel.md).
 
 >[!CAUTION]
 >
->Afbeeldingen in het bericht moeten openbaar toegankelijk zijn. Adobe Campagne biedt geen mechanisme voor het uploaden van afbeeldingen voor transactieberichten.\
+>Afbeeldingen in het bericht moeten openbaar toegankelijk zijn. Adobe Campaign biedt geen mechanisme voor het uploaden van afbeeldingen voor transactieberichten.\
 >In tegenstelling tot JSSP of webApp, heeft `<%=` geen standaardescaping.
 >
 >In dit geval moet u alle gegevens die uit de gebeurtenis komen, op de juiste wijze verwijderen. Deze escape is afhankelijk van de manier waarop dit veld wordt gebruikt. Gebruik in een URL bijvoorbeeld encodeURIComponent. U kunt escapeXMLString gebruiken om in de HTML te worden weergegeven.
@@ -46,7 +46,7 @@ Voer de volgende stappen uit om personalisatietags in te voegen in de tekst van 
 
    ![](assets/messagecenter_create_custo_002.png)
 
-1. Vul de tag in met de volgende syntaxis: naam **element**.@**kenmerknaam** , zoals hieronder wordt weergegeven.
+1. Vul de tag in met de volgende syntaxis: **elementnaam**.@**kenmerknaam** , zoals hieronder wordt weergegeven.
 
    ![](assets/messagecenter_create_custo_003.png)
 
