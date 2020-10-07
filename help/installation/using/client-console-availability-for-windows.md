@@ -11,29 +11,29 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: 4fa2e8c1-33d1-4d14-941b-ca528b8ceabb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 6%
 
 ---
 
 
 # Beschikbaarheid van clientconsole voor Windows{#client-console-availability-for-windows}
 
-Gebruikers van Adobe Campagne kunnen zich alleen aanmelden bij de instantie die u hebt gemaakt en geconfigureerd als ze de clientconsole gebruiken.
+Adobe Campaign-gebruikers kunnen zich alleen aanmelden bij de instantie die u hebt gemaakt en geconfigureerd, als ze de clientconsole gebruiken.
 
-Wanneer de computer die wordt gebruikt om een Adobe Campagne-toepassingsserver (**nlserver web**) te starten gebruikersverbindingen ontvangt van de clientconsole, kunt u deze configureren om het installatieprogramma voor de rijke client van Adobe Campaign beschikbaar te maken via een HTML-interface.
+Wanneer de computer die wordt gebruikt om een Adobe Campaign-toepassingsserver (**nlserver-web**) te starten gebruikersverbindingen ontvangt van de clientconsole, kunt u deze configureren om het installatieprogramma voor de Adobe Campaign-client beschikbaar te maken via een HTML-interface.
 
 Hiervoor moet u:
 
 1. Herstel het pakket dat het consoleinstallatieprogramma bevat.
 
-   Dit bestand wordt aangeroepen `setup-client-7.X.XXXX.exe` voor v7 of `setup-client-6.X.XXXX.exe` voor v6.1. `X` Dit is de subversie van Adobe Campagne en `XXXX` is het buildnummer.
+   Dit bestand wordt aangeroepen `setup-client-7.X.XXXX.exe` voor v7 of `setup-client-6.X.XXXX.exe` voor v6.1, waarbij `X` de subversie van Adobe Campaign en het buildnummer `XXXX` zijn.
 
-1. Kopieer en plak dit pakket naar de installatiemap van Adobe Campagne, onder **/datakit/nl/eng/jsp**.
-1. Start de Adobe Campagneserver.
+1. Kopieer en plak dit pakket naar de installatiemap van Adobe Campaign, onder **/datakit/nl/eng/jsp**.
+1. Start de Adobe Campaign-server.
 
 De uiteindelijke gebruikers kunnen het installatieprogramma van de console dan downloaden via een webbrowser via de volgende URL:
 
@@ -49,7 +49,7 @@ Wanneer er een nieuwe versie van de clientconsole beschikbaar is, wordt u gevraa
 
 >[!NOTE]
 >
->In de prompt die wordt weergegeven, raadt Adobe aan de optie **[!UICONTROL No longer ask this question]** uitgeschakeld te laten om ervoor te zorgen dat alle gebruikers worden gewaarschuwd wanneer een nieuwe versie van de console beschikbaar is.\
+>In de herinnering die wordt getoond, adviseert Adobe het verlaten van de optie **[!UICONTROL No longer ask this question]** om ervoor te zorgen dat alle gebruikers worden gewaarschuwd wanneer een nieuwe versie van de console beschikbaar is.\
 >Als u deze optie selecteert en ervoor kiest de nieuwste versie niet te downloaden, wordt geen andere gebruiker op de hoogte gesteld van nieuwe beschikbare versies.
 
 Om deze herinnering terug te stellen, volg de stappen hieronder (slechts zouden de systeembeheerders comfortabel met het uitgeven van het Registratie deze veranderingen moeten aanbrengen):
