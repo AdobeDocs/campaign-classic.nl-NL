@@ -11,21 +11,18 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 discoiquuid: 44c7acdd-6b7a-4e88-b2a7-3e9bf8a6eab5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Integreren met Adobe Target{#integrating-with-adobe-target}
+# Integrating with Adobe Target{#integrating-with-adobe-target}
 
-Dankzij de integratie tussen Adobe Campaign en Adobe Target (Classic en Standard) in Adobe Experience Cloud kunt u een aanbod van Adobe Target opnemen in een Adobe Campaign e-maillevering.
+Dankzij de integratie tussen Adobe Campaign en Adobe Target (Classic en Standard) in Adobe Experience Cloud kunt u een aanbod van Adobe Target opnemen in een Adobe Campaign-e-maillevering.
 
 Het operationele beginsel is als volgt: wanneer een ontvanger een e-mailbericht opent dat via Adobe Campaign is verzonden, kunt u met een aanroep naar Adobe Target een dynamische versie van de inhoud weergeven. Deze dynamische versie wordt berekend op basis van de regels die vooraf zijn opgegeven bij het maken van de e-mail.
 
@@ -42,4 +39,4 @@ Adobe Target kan verschillende typen gegevens gebruiken:
 
 >[!NOTE]
 >
->Op de Help-pagina&#39;s [van](https://docs.adobe.com/content/help/en/target/using/integrate/campaign-and-target.html)Adobe Target vindt u ook informatie over de integratie tussen Adobe Campaign en Adobe Target.
+>Op de Help-pagina&#39;s [van](https://docs.adobe.com/content/help/nl-NL/target/using/integrate/campaign-and-target.html)Adobe Target vindt u ook informatie over de integratie tussen Adobe Campaign en Adobe Target.
