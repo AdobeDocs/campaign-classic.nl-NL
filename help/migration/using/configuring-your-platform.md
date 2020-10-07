@@ -11,11 +11,11 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 discoiquuid: 4d2e765b-750b-457f-ad55-8bd6faaa86af
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 40391fbea53757decb48fd937f5e74e8ba6fb207
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '943'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 40391fbea53757decb48fd937f5e74e8ba6fb207
 
 Bepaalde belangrijke wijzigingen in Adobe Campaign v7 vereisen een configuratie om ervoor te zorgen dat deze effectief werkt. Deze parameters kunnen nodig zijn voor of na het migreren. De betrokken veranderingen en hun configuratiewijze worden voorgesteld in deze sectie.
 
-Tijdens migratie, wordt de **lijst NmsRecipient** herbouwd van de schemadefinitie. Eventuele wijzigingen die buiten de Adobe-campagne in de SQL-structuur van deze tabel zijn aangebracht, gaan verloren.
+Tijdens migratie, wordt de **lijst NmsRecipient** herbouwd van de schemadefinitie. Eventuele wijzigingen die buiten Adobe Campaign in de SQL-structuur van deze tabel zijn aangebracht, gaan verloren.
 
 Voorbeeldelementen om te controleren:
 
@@ -36,7 +36,7 @@ Deze waarschuwing geldt ook voor Oracle-gebruikers: als u de optie **usetimestam
 
 ## Voor de migratie {#before-the-migration}
 
-Bij het migreren naar Adobe Campaign v7 moeten de volgende elementen zijn geconfigureerd. Deze elementen moeten worden behandeld alvorens met de **postupgrade** te beginnen.
+Bij het migreren naar Adobe Campaign v7 moeten de volgende elementen worden geconfigureerd. Deze elementen moeten worden behandeld alvorens met de **postupgrade** te beginnen.
 
 * Tijdzones
 
@@ -44,31 +44,31 @@ Bij het migreren naar Adobe Campaign v7 moeten de volgende elementen zijn geconf
 
    Raadpleeg de sectie [Tijdzones](../../migration/using/general-configurations.md#time-zones) als u de modus Meerdere tijdzones wilt gebruiken.
 
-   Als u Oracle als een database gebruikt, moet u controleren of de Oracle-tijdzonebestanden correct zijn gesynchroniseerd tussen de toepassingsserver en de databaseserver. Raadpleeg de sectie [Oracle](../../migration/using/general-configurations.md#oracle) voor meer informatie.
+   Als u Oracle als een database gebruikt, moet u controleren of de Oracle-tijdzonebestanden correct zijn gesynchroniseerd tussen de toepassingsserver en de databaseserver. For more on this, refer to the [Oracle](../../migration/using/general-configurations.md#oracle) section.
 
 * Beveiligingszones
 
-   Om veiligheidsredenen is het Adobe Campagne-platform niet meer standaard toegankelijk: u moet de veiligheidsstreken vormen, die het verzamelen van de gebruikersIP adressen vóór de migratie vereist.
+   Om veiligheidsredenen is het Adobe Campaign-platform niet meer standaard toegankelijk: u moet de veiligheidsstreken vormen, die het verzamelen van de gebruikersIP adressen vóór de migratie vereist.
 
-   Raadpleeg de sectie [Beveiliging](../../migration/using/general-configurations.md#security) voor meer informatie.
+   For more information, refer to the [Security](../../migration/using/general-configurations.md#security) section.
 
 * Syntaxis
 
-   Bepaalde syntaxis in JavaScript wordt mogelijk geaccepteerd in versies 5.11 en 6.02 en wordt niet meer geaccepteerd in versie 7, omdat er een nieuwe interpreter wordt gebruikt. Raadpleeg de sectie [JavaScript](../../migration/using/general-configurations.md#javascript) voor meer informatie.
+   Bepaalde syntaxis in JavaScript wordt mogelijk geaccepteerd in versies 5.11 en 6.02 en wordt niet meer geaccepteerd in versie 7, omdat er een nieuwe interpreter wordt gebruikt. For more information, refer to the [JavaScript](../../migration/using/general-configurations.md#javascript) section.
 
-   Op dezelfde manier wordt een nieuwe syntaxis geïntroduceerd in Adobe Campagne v7 om de op SQLData gebaseerde syntaxis te vervangen. Als u code-elementen met deze syntaxis gebruikt, moet u deze aanpassen. Raadpleeg de sectie [SQLData](../../migration/using/general-configurations.md#sqldata) voor meer informatie.
+   Op dezelfde manier wordt in Adobe Campaign v7 een nieuwe syntaxis geïntroduceerd die de op SQLData gebaseerde syntaxis vervangt. Als u code-elementen met deze syntaxis gebruikt, moet u deze aanpassen. For more information, refer to the [SQLData](../../migration/using/general-configurations.md#sqldata) section.
 
 * Wachtwoorden
 
-   U moet de **wachtwoorden Admin** en **Internal** configureren. Raadpleeg voor meer informatie de sectie [Gebruikerswachtwoorden](../../migration/using/before-starting-migration.md#user-passwords) .
+   U moet de **wachtwoorden Admin** en **Internal** configureren. For more information, refer to the [User passwords](../../migration/using/before-starting-migration.md#user-passwords) section.
 
 * Boomstructuur
 
-   Als u migreert vanaf een v5.11-platform, moet u de structuurmappen opnieuw ordenen volgens de Adobe Campagne v6-normen. Raadpleeg de structuursectie [Adobe Campagne v7 voor meer informatie](../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure) .
+   Als u migreert vanaf een v5.11-platform, moet u de structuurmappen opnieuw ordenen volgens de Adobe Campaign v6-normen. Raadpleeg de sectie Structuur [van de](../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure) Adobe Campaign v7-structuur voor meer informatie.
 
 * Interactie
 
-   Als u **Interactie** gebruikt, moet u alle 6.02 schemaverwijzingen schrappen die niet meer in v7 bestaan. Raadpleeg de sectie [Interactie](../../migration/using/general-configurations.md#interaction) voor meer informatie.
+   Als u **Interactie** gebruikt, moet u alle 6.02 schemaverwijzingen schrappen die niet meer in v7 bestaan. For more information, refer to the [Interaction](../../migration/using/general-configurations.md#interaction) section.
 
 ## Na de migratie {#after-the-migration}
 
@@ -78,13 +78,13 @@ Na het runnen van **postupgrade**, moeten de volgende elementen in aanmerking wo
 
    Het aanpassingsblok van de pagina Mirror is gewijzigd met v6.x. Deze nieuwe versie verbetert de beveiliging bij het openen van deze pagina&#39;s.
 
-   Als u het v5-verpersoonlijkingsblok in uw berichten hebt gebruikt, mislukt de weergave van de spiegelpagina. Adobe raadt u ten zeerste aan het nieuwe aanpassingsblok te gebruiken wanneer u een spiegel in uw berichten invoegt.
+   Als u het v5-verpersoonlijkingsblok in uw berichten hebt gebruikt, mislukt de weergave van de spiegelpagina. Adobe adviseert hoogst om het nieuwe verpersoonlijkingsblok te gebruiken wanneer het opnemen van spiegelpagina in uw berichten.
 
    Nochtans, als tijdelijke oplossing (en aangezien de spiegelpagina&#39;s nog leven), kunt u aan het oude verpersoonlijkingsblok terugkeren om dit probleem te vermijden door de optie te veranderen **[!UICONTROL XtkAcceptOldPasswords]** en het te plaatsen aan **[!UICONTROL 1]**. Dit heeft geen invloed op het gebruik van het nieuwe personalisatieblok v6.x.
 
 * Syntaxis
 
-   Als er fouten optreden die te maken hebben met de syntaxis, moet u tijdens de postupgrade de optie **allowSQLInjection** tijdelijk activeren in het bestand **serverConf.xml** , omdat u dan tijd hebt om de code te herschrijven. Nadat de code is aangepast, moet u de beveiliging opnieuw activeren. Raadpleeg de sectie [SQLData](../../migration/using/general-configurations.md#sqldata) voor meer informatie hierover.
+   Als er fouten optreden die te maken hebben met de syntaxis, moet u tijdens de postupgrade de optie **allowSQLInjection** tijdelijk activeren in het bestand **serverConf.xml** , omdat u dan tijd hebt om de code te herschrijven. Nadat de code is aangepast, moet u de beveiliging opnieuw activeren. For more on this, refer to the [SQLData](../../migration/using/general-configurations.md#sqldata) section.
 
 * Conflicten
 
@@ -118,21 +118,21 @@ Na het runnen van **postupgrade**, moeten de volgende elementen in aanmerking wo
 
 * Schemas
 
-   In de Rode Hoed, kunt u fouten ontmoeten wanneer het uitgeven van bepaalde schema&#39;s. Raadpleeg voor meer informatie de sectie [Red-Hat](../../migration/using/general-configurations.md#red-hat) .
+   In de Rode Hoed, kunt u fouten ontmoeten wanneer het uitgeven van bepaalde schema&#39;s. For more on this, refer to the [Red-Hat](../../migration/using/general-configurations.md#red-hat) section.
 
 * Workflows
 
-   Als u migreert vanaf een v5.11-platform, moet u de runtimemap voor workflows beheren. Raadpleeg de sectie [Workflows](../../migration/using/specific-configurations-in-v5-11.md#workflows) voor meer informatie.
+   Als u migreert vanaf een v5.11-platform, moet u de runtimemap voor workflows beheren. For more on this, refer to the [Workflows](../../migration/using/specific-configurations-in-v5-11.md#workflows) section.
 
-* Tekstspatiëring
+* Tracking
 
-   Als u migreert vanaf een v5.11-platform, moet u de modus Tekstspatiëring configureren. Raadpleeg de sectie [Tekstspatiëring](../../migration/using/specific-configurations-in-v5-11.md#tracking) voor meer informatie.
+   Als u migreert vanaf een v5.11-platform, moet u de modus Tekstspatiëring configureren. For more on this, refer to the [Tracking](../../migration/using/specific-configurations-in-v5-11.md#tracking) section.
 
-* Homepage
+* Startpagina
 
    Als u migreert vanaf een v6.02-platform, kunt u aanvullende parameters definiëren om uw oude startpagina vanaf v6.02 te houden. Raadpleeg voor meer informatie de [gebruiksvriendelijkheid: Homepage en navigatiegedeelte](../../migration/using/specific-configurations-in-v6-02.md#user-friendliness--home-page-and-navigation) .
 
 * Interactie
 
-   Als u **Interactie** gebruikt, moet u om het even welke parameters na de migratie aanpassen. Raadpleeg de sectie [Interactie](../../migration/using/general-configurations.md#interaction) voor meer informatie.
+   Als u **Interactie** gebruikt, moet u om het even welke parameters na de migratie aanpassen. For more on this, refer to the [Interaction](../../migration/using/general-configurations.md#interaction) section.
 
