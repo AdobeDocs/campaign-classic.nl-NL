@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 9eadfda0-0614-4e4e-aed0-26f0b9222fbd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: afe286211c21f4fc178ffb5f9f30baed96ebfeab
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1930'
+ht-degree: 0%
 
 ---
 
@@ -103,9 +103,9 @@ Als u niet de gehele populatie wilt gebruiken die zich in een subset bevindt, ku
    * **[!UICONTROL Maximum size]**: een maximum aantal records.
    * **[!UICONTROL By data grouping]**: u kunt een limiet instellen voor het aantal records, afhankelijk van de waarden in een opgegeven veld van de binnenkomende populatie. Raadpleeg [Beperking van het aantal subsetrecords door gegevensgroepering](#limiting-the-number-of-subset-records-by-data-grouping)voor meer informatie over dit onderwerp.
    * **[!UICONTROL By data grouping (in %)]**: u kunt een limiet instellen voor het aantal records, afhankelijk van de waarden in een bepaald veld van de binnenkomende populatie met een percentage. Raadpleeg [Beperking van het aantal subsetrecords door gegevensgroepering](#limiting-the-number-of-subset-records-by-data-grouping)voor meer informatie over dit onderwerp.
-   * **[!UICONTROL By data distribution]**: Als uw groeperingsgebieden teveel waarden hebben of als u wilt vermijden opnieuw ingaat de waarden voor elke nieuwe gespleten activiteit, laat de Campagne van Adobe u een **[!UICONTROL By data distribution]** beperking (facultatieve Verdeelde module) vormen. Raadpleeg voor meer informatie [het Beperken van het aantal subsetrecords per gegevensdistributie](#limiting-the-number-of-subset-records-per-data-distribution).
+   * **[!UICONTROL By data distribution]**: Als uw groeperingsgebieden teveel waarden hebben of als u wilt vermijden opnieuw ingaat de waarden voor elke nieuwe gespleten activiteit, kunt Adobe Campaign u een **[!UICONTROL By data distribution]** beperking (facultatieve Verdeelde module) vormen. Raadpleeg voor meer informatie [het beperken van het aantal subsetrecords per gegevensdistributie](#limiting-the-number-of-subset-records-per-data-distribution).
 
-1. Klik **[!UICONTROL Finish]** om de criteria voor de recordselectie goed te keuren. De bepaalde configuratie wordt dan getoond in het middelste venster van de redacteur.
+1. Klik **[!UICONTROL Finish]** om de criteria voor de recordselectie goed te keuren. De gedefinieerde configuratie wordt vervolgens weergegeven in het middelste venster van de editor.
 
 ## Het aantal subsetrecords beperken door gegevensgroepering {#limiting-the-number-of-subset-records-by-data-grouping}
 
@@ -129,7 +129,7 @@ Als u het **[!UICONTROL Language]** veld bijvoorbeeld selecteert als een groepsv
 
 ## Het aantal subsetrecords per gegevensdistributie beperken {#limiting-the-number-of-subset-records-per-data-distribution}
 
-Als uw groeperingsvelden een te groot aantal waarden bevatten of als u het opnieuw instellen van waarden voor elke nieuwe gesplitste activiteit wilt voorkomen, kunt u met Adobe Campaign een beperking per gegevensdistributie maken. Als u gegevensbeperkingswaarden selecteert (zie de sectie Subsets [](#creating-subsets) maken voor meer informatie), selecteert u de **[!UICONTROL By data distribution]** optie en selecteert u een sjabloon in het keuzemenu. Hieronder ziet u hoe u een sjabloon voor gegevensdistributie maakt.
+Als uw groeperingsvelden een te groot aantal waarden bevatten of als u wilt voorkomen dat waarden opnieuw worden ingesteld voor elke nieuwe gesplitste activiteit, kunt u met Adobe Campaign een beperking per gegevensdistributie maken. Als u gegevensbeperkingswaarden selecteert (zie de sectie Subsets [](#creating-subsets) maken voor meer informatie), selecteert u de **[!UICONTROL By data distribution]** optie en selecteert u een sjabloon in het keuzemenu. Hieronder ziet u hoe u een sjabloon voor gegevensdistributie maakt.
 
 Voor een voorbeeld van de **[!UICONTROL Local approval]** activiteit met een distributiemalplaatje, verwijs naar het [Gebruiken van de lokale goedkeuringsactiviteit](../../workflow/using/using-the-local-approval-activity.md).
 
@@ -137,7 +137,7 @@ Voor een voorbeeld van de **[!UICONTROL Local approval]** activiteit met een dis
 
 >[!IMPORTANT]
 >
->Als u deze functie wilt gebruiken, moet u de module Distributed Marketing aanschaffen. Dit is een optie Campagne. Controleer uw licentieovereenkomst.
+>Als u deze functie wilt gebruiken, moet u de module Distributed Marketing aanschaffen. Dit is een optie Campagne. Controleer hiervoor uw licentieovereenkomst.
 
 Met de sjabloon voor gegevensdistributie kunt u het aantal records beperken aan de hand van een lijst met groeperingswaarden. Voer de volgende stappen uit om een sjabloon voor gegevensdistributie te maken:
 
@@ -155,7 +155,7 @@ Met de sjabloon voor gegevensdistributie kunt u het aantal records beperken aan 
    * **[!UICONTROL Targeting dimension]**: Voer de doeldimensie in waarop de gegevensverspreiding zal worden toegepast, **[!UICONTROL Recipient]** bijvoorbeeld. Dit schema moet altijd compatibel zijn met de gegevens die worden gebruikt in de doelworkflow.
    * **[!UICONTROL Distribution field]**: Selecteer een veld via de doeldimensie. Als u bijvoorbeeld het **[!UICONTROL Email domain]** veld selecteert, wordt de lijst met ontvangers uitgesplitst naar domein.
    * **[!UICONTROL Distribution type]**: Selecteer op het **[!UICONTROL Distribution]** tabblad de manier waarop de beperkingswaarde van het doel wordt opgesplitst: **[!UICONTROL Percentage]** of **[!UICONTROL Set]**.
-   * **[!UICONTROL Assignment type]**: Selecteer het gegevenstype voor de toewijzing van de gegevensdistributie. U kunt kiezen tussen toewijzen per groep of operator of toewijzen door lokale entiteit. Toewijzing door lokale entiteit wordt gebruikt in **Distributed Marketing**. Zie deze [sectie](../../campaign/using/about-distributed-marketing.md)voor meer informatie.
+   * **[!UICONTROL Assignment type]**: Selecteer het gegevenstype voor de toewijzing van de gegevensdistributie. U kunt kiezen tussen toewijzen per groep of operator of toewijzen door lokale entiteit. Toewijzing door lokale entiteit wordt gebruikt in **Distributed Marketing**. For more information, refer to this [section](../../campaign/using/about-distributed-marketing.md).
    * **[!UICONTROL Approval storage]**: als u een **[!UICONTROL Local approval]** activiteit in uw het richten werkschema (verwijs naar [Lokale goedkeuring](../../workflow/using/local-approval.md)) gebruikt, ga het schema in waarin de goedkeuringsresultaten zullen worden opgeslagen. U moet één opslagschema per het richten schema specificeren. Als u het **[!UICONTROL Recipients]** het richten schema gebruikt, ga het standaard **[!UICONTROL Local approval of recipients]** opslagschema in.
 
       In het geval van een eenvoudige beperking door gegevensgroepering zonder lokale goedkeuring, te hoeven u niet om het **[!UICONTROL Approvals storage]** gebied in te gaan.
@@ -204,7 +204,7 @@ Met de sjabloon voor gegevensdistributie kunt u het aantal records beperken aan 
       >
       >Controleer of de juiste rechten aan de exploitanten zijn toegekend.
 
-   * **[!UICONTROL Local entity]**: Selecteer de lokale entiteit die aan elke distributiewaarde is toegewezen. Lokale entiteiten worden gebruikt in **Distributed Marketing**. Zie deze [sectie](../../campaign/using/about-distributed-marketing.md)voor meer informatie.
+   * **[!UICONTROL Local entity]**: Selecteer de lokale entiteit die aan elke distributiewaarde is toegewezen. Lokale entiteiten worden gebruikt in **Distributed Marketing**. For more information, refer to this [section](../../campaign/using/about-distributed-marketing.md).
 
 ## Parameters filteren {#filtering-parameters}
 
@@ -212,7 +212,7 @@ Klik op het **[!UICONTROL General]** tabblad om het activiteitlabel in te voeren
 
 ![](assets/s_user_segmentation_partage_general.png)
 
-Controleer de **[!UICONTROL Generate complement]** optie als u de resterende populatie wilt uitbuiten. De complement is het binnenkomende doel min de samenvoeging van de subsets. Een extra uitgaande overgang zal dan aan de activiteit worden toegevoegd, als volgt:
+Check the **[!UICONTROL Generate complement]** option if you wish to exploit the remaining population. De complement is het binnenkomende doel min de samenvoeging van de subsets. Een extra uitgaande overgang zal dan aan de activiteit worden toegevoegd, als volgt:
 
 ![](assets/s_user_segmentation_partage_compl.png)
 
@@ -220,12 +220,12 @@ Deze optie werkt alleen correct als de binnenkomende gegevens een primaire sleut
 
 Bijvoorbeeld, als de gegevens direct van een extern gegevensbestand zoals Netezza (die het begrip van een index niet steunt) via een **[!UICONTROL Data loading (RDBMS)]** activiteit worden gelezen, zal de aanvulling die door de **[!UICONTROL Split]** activiteit wordt geproduceerd onjuist zijn.
 
-U voorkomt dit door een **[!UICONTROL Enrichment]** activiteit vlak voor de **[!UICONTROL Split]** activiteit te slepen en neer te zetten. In de **[!UICONTROL Enrichment]** activiteit, controleer **[!UICONTROL Keep all additional data from the main set]** en specificeer in de extra gegevens de kolommen die u voor het vormen van de filters van de **[!UICONTROL Split]** activiteit wilt gebruiken. De gegevens van de binnenkomende overgang van de **[!UICONTROL Split]** activiteit worden dan plaatselijk opgeslagen in een tijdelijke lijst op de server van de Campagne van Adobe en de aanvulling kan correct worden geproduceerd.
+U voorkomt dit door een **[!UICONTROL Enrichment]** activiteit vlak voor de **[!UICONTROL Split]** activiteit te slepen en neer te zetten. In de **[!UICONTROL Enrichment]** activiteit, controleer **[!UICONTROL Keep all additional data from the main set]** en specificeer in de extra gegevens de kolommen die u voor het vormen van de filters van de **[!UICONTROL Split]** activiteit wilt gebruiken. De gegevens van de binnenkomende overgang van de **[!UICONTROL Split]** activiteit worden dan plaatselijk opgeslagen in een tijdelijke lijst op de server van Adobe Campaign en de aanvulling kan correct worden geproduceerd.
 
 Met de **[!UICONTROL Enable overlapping of output populations]** optie kunt u populaties beheren die tot verschillende subsets behoren:
 
 * Wanneer het vakje niet wordt gecontroleerd, zorgt de gespleten activiteit ervoor een ontvanger niet in verscheidene outputovergangen kan aanwezig zijn, zelfs als het aan de criteria van verscheidene subsets voldoet. Deze worden als doel ingesteld op het eerste tabblad met overeenkomende criteria.
-* Als het selectievakje is ingeschakeld, kunnen de ontvangers in verschillende subsets worden gevonden als ze voldoen aan hun filtercriteria. Adobe Campaign raadt u aan exclusieve criteria te gebruiken.
+* Als het selectievakje is ingeschakeld, kunnen de ontvangers in verschillende subsets worden gevonden als ze voldoen aan hun filtercriteria. Adobe Campaign raadt aan exclusieve criteria te hanteren.
 
 ## Invoerparameters {#input-parameters}
 
