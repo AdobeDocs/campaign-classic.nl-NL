@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 2fe907da-ef37-46e2-a8fb-6ad4e18be486
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 4%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 In dit geval wordt een voorbeeld weergegeven met een workflow voor levering over meerdere kanalen. In [deze sectie](../../workflow/using/cross-channel-deliveries.md)wordt het algemene concept van de levering tussen kanalen beschreven.
 
-Het doel is een publiek van de ontvangers van uw gegevensbestand in verschillende groepen te segmenteren met als doel een e-mail naar een groep en een bericht van SMS naar een andere groep te verzenden.
+Het doel is een publiek van de ontvangers van uw gegevensbestand in verschillende groepen te segmenteren met als doel een e-mail naar een groep en een SMS-bericht naar een andere groep te verzenden.
 
 De belangrijkste stappen voor de implementatie van dit gebruiksgeval zijn als volgt:
 
@@ -42,8 +42,8 @@ De belangrijkste stappen voor de implementatie van dit gebruiksgeval zijn als vo
 
 Om uw doel te bepalen, creeer een vraag om de ontvangers te identificeren.
 
-1. Maak een campagne. Zie [deze sectie](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)voor meer informatie.
-1. Voeg op het **[!UICONTROL Targeting and workflows]** tabblad van uw campagne een **query** -activiteit toe aan uw workflow. Raadpleeg [deze sectie](../../workflow/using/query.md)voor meer informatie over het gebruik van deze activiteit.
+1. Een campagne maken. Raadpleeg [deze sectie](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign) voor meer informatie.
+1. Voeg op het **[!UICONTROL Targeting and workflows]** tabblad van uw campagne een **query** -activiteit toe aan uw workflow. For more on using this activity, refer to [this section](../../workflow/using/query.md).
 1. Bepaal de ontvangers die uw leveringen zullen ontvangen. Selecteer bijvoorbeeld &#39;Gold&#39;-leden als doeldimensie.
 1. Voeg filtervoorwaarden aan uw vraag toe. Selecteer in dit voorbeeld ontvangers met een e-mailadres en een mobiel nummer.
 
@@ -76,7 +76,7 @@ Om uw doel te bepalen, creeer een vraag om de ontvangers te identificeren.
 
 Zodra uw doel wordt geïdentificeerd en uw eerste levering gecreeerd, moet u het doel in verschillende populaties segmenteren gebruikend het filtreren voorwaarden.
 
-1. Voeg een **gesplitste** activiteit aan het werkschema toe en open het. Raadpleeg [deze sectie](../../workflow/using/split.md)voor meer informatie over het gebruik van deze activiteit.
+1. Voeg een **gesplitste** activiteit aan het werkschema toe en open het. For more on using this activity, refer to [this section](../../workflow/using/split.md).
 1. Creeer drie segmenten van de bevolking die stroomopwaarts in de vraag wordt berekend.
 
    ![](assets/wkf_cross-channel_6.png)
@@ -89,7 +89,7 @@ Zodra uw doel wordt geïdentificeerd en uw eerste levering gecreeerd, moet u het
 
    ![](assets/wkf_cross-channel_9.png)
 
-1. Selecteer in de filterinstellingen een optie in de **[!UICONTROL Recipients who have not opened or clicked (email)]** **[!UICONTROL Behavior]** vervolgkeuzelijst en selecteer de e-mail met de aanbieding die u wilt verzenden in de leveringslijst. Klik **[!UICONTROL Finish]**.
+1. Selecteer in de filterinstellingen een optie in de **[!UICONTROL Recipients who have not opened or clicked (email)]** **[!UICONTROL Behavior]** vervolgkeuzelijst en selecteer de e-mail met de aanbieding die u wilt verzenden in de leveringslijst. Klik op **[!UICONTROL Finish]**.
 
    ![](assets/wkf_cross-channel_10.png)
 
@@ -106,7 +106,7 @@ Zodra uw doel wordt geïdentificeerd en uw eerste levering gecreeerd, moet u het
 
    ![](assets/wkf_cross-channel_13.png)
 
-1. Klik **[!UICONTROL Finish]** om uw wijzigingen op te slaan.
+1. Click **[!UICONTROL Finish]** to save your changes.
 
 ## Stap 4: De workflow voltooien {#step-4--finalizing-the-workflow}
 
@@ -119,7 +119,7 @@ Zodra uw doel wordt geïdentificeerd en uw eerste levering gecreeerd, moet u het
 1. Dubbelklik op de leveringsactiviteiten in uw workflow om deze te bewerken. Raadpleeg het [e-mailkanaal](../../delivery/using/about-email-channel.md) en het [SMS-kanaal](../../delivery/using/sms-channel.md)voor meer informatie over het maken van een e-mail en een sms.
 1. Dubbelklik op de **[!UICONTROL List update]** activiteit en selecteer de **[!UICONTROL Generate an outbound transition]** optie.
 
-   Vervolgens kunt u de resulterende ontvangers van Adobe Campaign exporteren naar de Adobe Experience Cloud. U kunt bijvoorbeeld het publiek in Adobe Target gebruiken door een **[!UICONTROL Update shared audience]** activiteit aan de workflow toe te voegen. Raadpleeg [Een publiek](../../integrations/using/importing-and-exporting-audiences.md#exporting-an-audience)exporteren voor meer informatie.
+   Vervolgens kunt u de resulterende ontvangers van Adobe Campaign naar de Adobe Experience Cloud exporteren. U kunt bijvoorbeeld het publiek in Adobe Target gebruiken door een **[!UICONTROL Update shared audience]** activiteit aan de workflow toe te voegen. Raadpleeg [Een publiek](../../integrations/using/importing-and-exporting-audiences.md#exporting-an-audience)exporteren voor meer informatie.
 
 1. Klik op de knop **Start** op de actiebalk om de workflow uit te voeren.
 
