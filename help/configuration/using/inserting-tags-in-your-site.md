@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 57988b00-62cc-43d3-a2eb-bfed5bff7dc1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 6%
 
 ---
 
@@ -42,7 +42,7 @@ De ingevoegde tag neemt contact op met de omleidingsserver.
 
 Wanneer u een pagina definieert die in de console moet worden bijgehouden, kunt u een voorbeeld van een webtrackingtag genereren om deze te kopiëren en in de broncode van uw webpagina te plakken.
 
-Als u echter tags van het type TRANSACTION gebruikt, moet u de voorbeeldtag wijzigen met JavaScript om de transactiegegevens (hoeveelheid, aantal items) en alle informatie die in een extensieschema is gedefinieerd in te voegen.
+Als u echter tags van het type TRANSACTION gebruikt, moet u de voorbeeldtag wijzigen met JavaScript om de transactiegegevens (hoeveelheid, aantal items) en informatie die in een extensieschema is gedefinieerd in te voegen.
 
 ### Statische invoeging van tags {#static-insertion-of-tags}
 
