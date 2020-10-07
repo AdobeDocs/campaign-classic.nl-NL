@@ -11,21 +11,18 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 discoiquuid: 4443b0ca-80c6-467d-a4df-50864aae8496
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Integratie van gedeelde soorten publiek configureren in Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
+# Configuring shared audiences integration in Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
 
-Nadat u dit verzoek hebt verzonden, gaat Adobe door met de levering van de integratie voor u. Neem contact op met u voor meer informatie en informatie over de definitieve configuratie:
+Zodra u dit verzoek hebt voorgelegd, zal Adobe aan de levering van de integratie voor u te werk gaan en u contacteren om details en informatie te verstrekken die u de configuratie moet voltooien:
 
 1. [Stap 1: Externe accounts in Adobe Campaign configureren of controleren](#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)
 1. [Stap 2: De gegevensbron configureren](#step-2--configure-the-data-source)
@@ -37,10 +34,11 @@ Nadat u dit verzoek hebt verzonden, gaat Adobe door met de levering van de integ
 Ten eerste moeten we de externe accounts in Adobe Campaign als volgt configureren of controleren:
 
 1. Klik op het **[!UICONTROL Explorer]** pictogram.
-1. Ga naar **[!UICONTROL Administration > Platform > External accounts]**. De vermelde SFTP-accounts zouden door Adobe moeten zijn geconfigureerd en de benodigde informatie had aan u moeten worden doorgegeven.
+1. Ga naar **[!UICONTROL Administration > Platform > External accounts]**. De vermelde SFTP-rekeningen hadden door Adobe moeten zijn geconfigureerd en de benodigde informatie had aan u moeten worden meegedeeld.
 
    * **[!UICONTROL importSharedAudience]** : SFTP-account voor het importeren van soorten publiek.
    * **[!UICONTROL exportSharedAudience]** : SFTP-account voor het exporteren van soorten publiek.
+
    ![](assets/aam_config_1.png)
 
 1. Vul het **[!UICONTROL Server]** veld in: **ftp-out.demdex.com** domein voor de invoer externe rekening en **ftp-in.demdex.com** domein voor de uitvoer externe rekening.
@@ -49,25 +47,27 @@ Ten eerste moeten we de externe accounts in Adobe Campaign als volgt configurere
 
    >[!NOTE]
    >
-   >Als u S3 gebruikt, ga uw **[!UICONTROL AWS S3 Account Server]** volgende syntaxis in:\
-   `<S3bucket name>.s3.amazonaws.com/<s3object path>`\
-   Voor meer informatie over hoe te om uw S3 rekening te vormen, verwijs naar deze [pagina](../../platform/using/external-accounts.md#amazon-simple-storage-service--s3--external-account).
+   >Als u S3 gebruikt, ga uw **[!UICONTROL AWS S3 Account Server]** volgende syntaxis in:
+   >
+   >`<S3bucket name>.s3.amazonaws.com/<s3object path>`
+   >
+   >Voor meer informatie over hoe te om uw S3 rekening te vormen, verwijs naar deze [pagina](../../platform/using/external-accounts.md#amazon-simple-storage-service--s3--external-account).
 
    ![](assets/aam_config_2.png)
 
-1. Voeg de inhoud **[!UICONTROL Account]** en **[!UICONTROL Password]** informatie van Adobe toe.
+1. Voeg de tekst **[!UICONTROL Account]** en **[!UICONTROL Password]** informatie van Adobe toe.
 
 Uw externe accounts zijn nu geconfigureerd.
 
-## Stap 2: De gegevensbron configureren {#step-2--configure-the-data-source}
+## Step 2: Configure the Data Source {#step-2--configure-the-data-source}
 
 De **ontvanger - Bezoeker-id** wordt gemaakt in de Audience Manager. Dit is een uit-van-de-doos gegevensbron die door gebrek voor identiteitskaart van de Bezoeker wordt gevormd. Segmenten die zijn gemaakt op basis van campagne maken deel uit van deze gegevensbron.
 
 De **[!UICONTROL Recipient - Visitor ID]** gegevensbron configureren:
 
-1. Selecteer in het **[!UICONTROL Explorer]** knooppunt **[!UICONTROL Administration > Platform > AMC Data sources]**.
+1. From the **[!UICONTROL Explorer]** node, select **[!UICONTROL Administration > Platform > AMC Data sources]**.
 1. Selecteer **[!UICONTROL Recipient - Visitor ID]**.
-1. Voer de gegevens in **[!UICONTROL Data Source ID]** en **[!UICONTROL AAM Destination ID]** die door Adobe worden geleverd.
+1. Voer de tekst in **[!UICONTROL Data Source ID]** en **[!UICONTROL AAM Destination ID]** geef deze op door Adobe.
 
    ![](assets/aam_config_3.png)
 
@@ -75,7 +75,7 @@ De **[!UICONTROL Recipient - Visitor ID]** gegevensbron configureren:
 
 Voor de configuratie van de integratie met de dienst van de Kern van Mensen of de manager van het Publiek, moeten wij ook de server van het Volgen van de Campagne vormen.
 
-U moet ervoor zorgen de het Volgen van de Campagne Server op het domein (CNAME) wordt geregistreerd. Meer informatie over domeinnaamdelegatie vindt u in [dit artikel](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
+U moet ervoor zorgen de het Volgen van de Campagne Server op het domein (CNAME) wordt geregistreerd. Meer informatie over domeinnaamdelegatie vindt u in [dit artikel](https://helpx.adobe.com/nl/campaign/kb/domain-name-delegation.html).
 
 ## Stap 4: De service voor de bezoekersidentiteitskaart configureren {#step-4--configure-the-visitor-id-service}
 
