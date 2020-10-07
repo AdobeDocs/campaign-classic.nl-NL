@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 345af5c2-c852-4086-8ed0-ff3e7e402e04
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c830d40cef836533c5104901d03a07e7cf96d3d6
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -75,7 +72,7 @@ Begin door een nieuwe levering te maken.
 
 1. Klik op het **[!UICONTROL Insert emoticon]** pictogram om emoticons in te voegen bij uw pushmelding. Als u de lijst met emoticonen wilt aanpassen, raadpleegt u het [aanpassen van de lijst met emoticonen](../../delivery/using/customizing-emoticon-list.md)
 
-1. Met **[!UICONTROL Action button]** de optie kunt u een label definiëren voor de actieknop in de waarschuwingsberichten (veld **action_loc_key** van de payload). Als uw iOS-toepassing landinstellbare tekenreeksen beheert (**Localizable.strings**), voert u de bijbehorende sleutel in dit veld in. Als uw toepassing geen landinstellbare tekst beheert, voert u het label in dat u wilt zien op de actieknop. Raadpleeg de documentatie [van](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) Apple voor meer informatie over landinstellbare tekenreeksen.
+1. Met **[!UICONTROL Action button]** de optie kunt u een label definiëren voor de actieknop die wordt weergegeven in de waarschuwingsberichten (veld **action_loc_key** van de payload). Als uw iOS-toepassing landinstellbare tekenreeksen beheert (**Localizable.strings**), voert u de bijbehorende sleutel in dit veld in. Als uw toepassing geen landinstellbare tekst beheert, voert u het label in dat u wilt zien op de actieknop. Raadpleeg de documentatie [van](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) Apple voor meer informatie over landinstellbare tekenreeksen.
 1. Selecteer in het **[!UICONTROL Play a sound]** veld het geluid dat door de mobiele terminal moet worden afgespeeld wanneer het bericht wordt ontvangen.
 
    >[!NOTE]
@@ -100,10 +97,10 @@ Begin door een nieuwe levering te maken.
 
 Als u een bewijs wilt verzenden en de uiteindelijke levering wilt verzenden, gebruikt u hetzelfde proces als voor e-mailleveringen.
 
-Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Raadpleeg de volgende secties voor meer informatie:
+Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Raadpleeg deze secties voor meer informatie hierover:
 
 * [Push notification quarantines](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
-* [Toezicht op levering](../../delivery/using/monitoring-a-delivery.md)
+* [Een levering controleren](../../delivery/using/monitoring-a-delivery.md)
 * [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
 
 ## Meldingen verzenden op Android {#sending-notifications-on-android}
@@ -143,8 +140,8 @@ Het gedetailleerde proces voor het valideren en verzenden van een levering wordt
 * [De levering valideren](../../delivery/using/steps-validating-the-delivery.md)
 * [De levering verzenden](../../delivery/using/steps-sending-the-delivery.md)
 
-Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Raadpleeg de volgende secties voor meer informatie:
+Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Raadpleeg deze secties voor meer informatie hierover:
 
 * [Push notification quarantines](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
-* [Toezicht op levering](../../delivery/using/monitoring-a-delivery.md)
+* [Een levering controleren](../../delivery/using/monitoring-a-delivery.md)
 * [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
