@@ -11,11 +11,11 @@ audience: rn
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 79a6d3cf-2425-49b9-9b92-b56be26438bf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d046304657f04312d78176c49a650690b05e4c94
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '813'
+ht-degree: 8%
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: d046304657f04312d78176c49a650690b05e4c94
 >
 >Er is al op gewezen dat dit een bouwwerk is. Voer een [upgrade uit naar de nieuwste build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) of neem contact op met de [technische ondersteuning](https://support.neolane.net/).
 
-**Wat is nieuw?**
+**Nieuwe functies**
 
 <table> 
  <thead> 
@@ -42,7 +42,7 @@ source-git-commit: d046304657f04312d78176c49a650690b05e4c94
  <tbody> 
   <tr> 
    <td> Query-streepjescodes<br /> </td> 
-   <td> <p>Wanneer meerdere Campagnegebruikers verbinding maken met dezelfde externe FDA Teradata-account, kunt u nu een queryband (sleutel/waarde-paren) doorgeven die specifiek is voor elke gebruiker. Telkens wanneer een campagnegebruiker een query uitvoert in de Teradata-database, kan Adobe Campaign nu metagegevens verzenden die aan de gebruiker zijn gekoppeld. Deze gegevens, die bestaan uit een lijst met sleutels en waarden, kunnen vervolgens door Teradata-beheerders worden gebruikt voor auditdoeleinden of voor het beheren van toegangsrechten, bijvoorbeeld.</p><p>Raadpleeg de <a href="https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html#Teradata_external_account">gedetailleerde documentatie</a>voor meer informatie.</p> </td>
+   <td> <p>Wanneer meerdere Campagnegebruikers verbinding maken met dezelfde externe FDA Teradata-account, kunt u nu een queryband (sleutel/waarde-paren) doorgeven die specifiek is voor elke gebruiker. Elke keer dat een campagnegebruiker een query uitvoert in de Teradata-database, kan Adobe Campaign nu metagegevens verzenden die aan de gebruiker zijn gekoppeld. Deze gegevens, die bestaan uit een lijst met sleutels en waarden, kunnen vervolgens door Teradata-beheerders worden gebruikt voor auditdoeleinden of voor het beheren van toegangsrechten, bijvoorbeeld.</p><p>Raadpleeg de <a href="https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html#Teradata_external_account">gedetailleerde documentatie</a> voor meer informatie.</p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -65,7 +65,7 @@ source-git-commit: d046304657f04312d78176c49a650690b05e4c94
 
 Query-streepjescodes
 
-Een specifieke sleutel (PROXYUSER of PROXYROLE) wordt gebruikt om een gebruiker of rol van Tera-gegevens aan een gebruiker van de Campagne te associëren. Er is een nieuwe machtiging toegevoegd om deze proxygebruiker/rol te gebruiken. U moet de GRANT CONNECT via het toegangsrecht toevoegen aan de databaseaccount (de account die is gedefinieerd in de externe account van Teradata).
+Een specifieke sleutel (PROXYUSER of PROXYROLE) wordt gebruikt om een gebruiker of rol van Tera-gegevens aan een gebruiker van de Campagne te associëren. Er is een nieuwe machtiging toegevoegd om deze proxygebruiker/rol te gebruiken. U moet de GRANT CONNECT via het toegangsrecht toevoegen aan de databaseaccount (de die is gedefinieerd in de externe account van Teradata).
 
 Er is een nieuw tabblad toegevoegd aan de externe accounts van Teradata. Het **[!UICONTROL Query banding]** tabblad bevat de volgende opties:
 
@@ -86,7 +86,7 @@ Raadpleeg de volgende artikelen voor meer informatie over querybinding:
 >
 >Er is al op gewezen dat dit een bouwwerk is. Voer een [upgrade uit naar de nieuwste build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) of neem contact op met de [technische ondersteuning](https://support.neolane.net/).
 
-**Wat is nieuw?**
+**Nieuwe functies**
 
 <table> 
  <thead> 
@@ -98,11 +98,11 @@ Raadpleeg de volgende artikelen voor meer informatie over querybinding:
  <tbody> 
   <tr> 
    <td> Beveiligingsverbeteringen<br /> </td> 
-   <td> Er is een aantal verbeteringen toegevoegd aan Campaign Classic. Hieronder vindt u verbeteringen en correcties.<br /> </td> 
+   <td> Aan Campaign Classic is een aantal verbeteringen op het gebied van beveiliging toegevoegd. Hieronder vindt u verbeteringen en correcties.<br /> </td> 
   </tr> 
   <tr> 
    <td> Ondersteuning voor Windows Server 2016<br /> </td> 
-   <td> Adobe Campagne is nu compatibel met Windows Server 2016. Zie <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Campagne Classic Compatibility Matrix</a>.<br /> </td> 
+   <td> Adobe Campaign is nu compatibel met Windows Server 2016. Zie <a href="https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html">Campaign Classic Compatibility matrix</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -111,7 +111,7 @@ Raadpleeg de volgende artikelen voor meer informatie over querybinding:
 
 decryptString
 
-De functie **decryptString** is afgekeurd. Raadpleeg het artikel [Vervangen en verwijderde functies](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) .
+De functie **decryptString** is afgekeurd. Raadpleeg het artikel [Vervangen en verwijderde functies](https://helpx.adobe.com/nl/campaign/kb/deprecated-and-removed-features.html) .
 
 Voor nieuwe klanten, wordt deze functie nu slechts gebruikt om crypt identiteitskaart van de ontvanger in het landen pagina&#39;s te decoderen. Om wachtwoorden te decrypteren die in een externe rekening worden opgeslagen, gebruik de nieuwe **decryptPassword** functie.
 
@@ -119,13 +119,13 @@ Voor bestaande klanten, wordt het gedrag van deze functie niet veranderd maar wi
 
 decryptPassword
 
-De functie **decryptPassword** is toegevoegd. Hiermee kunt u een wachtwoord decoderen dat is opgeslagen in een externe account. Raadpleeg de [JSAPI](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) -documentatie voor meer informatie.
+De functie **decryptPassword** is toegevoegd. Hiermee kunt u een wachtwoord decoderen dat is opgeslagen in een externe account. Raadpleeg de [JSAPI](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html) -documentatie voor meer informatie.
 
 Bestand-API&#39;s
 
 Voor nieuwe installaties is maptoegang via bestand-API&#39;s beperkt tot de **var**-, **sftp** - en tijdelijke mappen van Adobe Campaign.
 
-Voor bestaande klanten hebben bestand-API&#39;s geen toegang meer tot de map **conf** van Adobe Campaign. De compatibiliteitsoptie **XtkSecurity_Disable_JSFileSandboxing** wordt toegevoegd door de postupgrade en standaard geactiveerd, zodat u de andere mappen kunt blijven gebruiken. Als u de toegang tot de **var**-, **sftp** - en tijdelijke mappen van Adobe Campaign wilt beperken, deactiveert u de optie.
+Bestands-API&#39;s hebben voor bestaande klanten geen toegang meer tot de map **conf** van Adobe Campaign. De compatibiliteitsoptie **XtkSecurity_Disable_JSFileSandboxing** wordt toegevoegd door de postupgrade en standaard geactiveerd, zodat u de andere mappen kunt blijven gebruiken. Als u de toegang tot de **var**-, **sftp** - en tijdelijke mappen van Adobe Campaign wilt beperken, deactiveert u de optie.
 
 **Reparatie**
 
