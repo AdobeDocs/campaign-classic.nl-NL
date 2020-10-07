@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: 9bcb5dc1-8cb4-4781-a8cd-8d072ff28b1a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '761'
+ht-degree: 3%
 
 ---
 
@@ -24,9 +24,9 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ## Consistentieregels {#about-consistency-rules}
 
-De Campagne van Adobe verzekert verenigbare mededelingen dankzij een reeks regels in campagnemypologieën. Zij hebben tot doel de leveringen die aan de ontvangers worden verzonden, te controleren, zoals volume, aard, relevantie, enz.
+Adobe Campaign garandeert consistente communicatie dankzij een set regels die zijn opgenomen in campagnetypologieën. Zij hebben tot doel de leveringen die aan de ontvangers worden verzonden, te controleren, zoals volume, aard, relevantie, enz.
 
-**Met capaciteitsregels** kunt u bijvoorbeeld voorkomen dat het platform waarop de levering van berichten betrekking heeft, wordt overbelast. Bijvoorbeeld, speciale aanbiedingen die een downloadverbinding bevatten mogen niet aan teveel mensen tegelijkertijd worden verzonden, om verzadiging van de server te vermijden; de telefooncampagnes mogen niet de verwerkingscapaciteit van callcenters, enz. overschrijden. Raadpleeg [Beheerscapaciteit](#controlling-capacity)voor meer informatie hierover.
+**Met capaciteitsregels** kunt u bijvoorbeeld voorkomen dat het platform waarop de levering van berichten betrekking heeft, wordt overbelast. Bijvoorbeeld, speciale aanbiedingen die een downloadverbinding bevatten mogen niet aan teveel mensen tegelijkertijd worden verzonden, om verzadiging van de server te vermijden; de telefooncampagnes mogen niet de verwerkingscapaciteit van callcenters, enz. overschrijden. For more on this, refer to [Controlling capacity](#controlling-capacity).
 
 ## Beheerscapaciteit {#controlling-capacity}
 
@@ -51,14 +51,14 @@ Volg onderstaande stappen om een nieuwe capaciteitsregel te ontwerpen:
    >
    >Beschikbaarheidsregels dienen alleen ter informatie. Als u berichten moet uitsluiten wanneer de capaciteitslimiet is bereikt, raadpleegt u [deze sectie](#exclude-messages-when-capacity-limit-reached).
 
-1. Koppel deze regel aan een typologie en verwijs de typologie in uw levering om deze capaciteitsregel toe te passen. Zie [deze sectie](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery)voor meer informatie.
+1. Koppel deze regel aan een typologie en verwijs de typologie in uw levering om deze capaciteitsregel toe te passen. Raadpleeg [deze sectie](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery) voor meer informatie.
 1. U kunt de consumptie controleren via de regel **[!UICONTROL Consumptions]** en de **[!UICONTROL Capacity]** tabbladen.
 
    Wanneer een regel in een levering wordt gebruikt, verstrekken de **[!UICONTROL Consumed]** en **[!UICONTROL Remaining]** kolommen informatie over de lading, zoals hieronder getoond:
 
    ![](assets/campaign_opt_create_capacity_03.png)
 
-   Zie [deze sectie](#monitoring-consumption)voor meer informatie.
+   Raadpleeg [deze sectie](#monitoring-consumption) voor meer informatie.
 
 ## De maximumbelasting definiëren {#defining-the-maximum-load}
 
