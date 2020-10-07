@@ -1,7 +1,7 @@
 ---
-title: Aanbevolen werkwijzen voor rapportage
-seo-title: Aanbevolen werkwijzen voor rapportage
-description: Aanbevolen werkwijzen voor rapportage
+title: Best practices voor rapportage
+seo-title: Best practices voor rapportage
+description: Best practices voor rapportage
 seo-description: null
 page-status-flag: never-activated
 uuid: 09de6a17-b3a7-4543-b672-b0a21653aa75
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: reporting-in-adobe-campaign
 discoiquuid: 904961e0-7dff-4350-8d5d-e4bdd368b3ff
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c41cf2f35495a1514642e47f0b7146d8dd50946
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '817'
+ht-degree: 1%
 
 ---
 
 
-# Aanbevolen werkwijzen voor rapportage{#best-practices-reporting}
+# Best practices voor rapportage{#best-practices-reporting}
 
 ## De behoeften analyseren{#analyzing-needs}
 
@@ -32,7 +32,7 @@ Om de creatie, het gebruik en de duurzaamheid van een rapport te optimaliseren, 
 
    De eerste stap bestaat erin duidelijk aan te geven wat de noodzaak is: wat u in uw rapport wilt tonen en wat zijn doel is (controle, analyse, gegevensexport, enz.).
 
-   Adobe Campaign biedt een groot aantal verschillende rapportagemogelijkheden. Het is belangrijk dat u analyseert wat u nodig hebt om de meest geschikte functionaliteit te identificeren.
+   Adobe Campaign biedt een breed scala aan rapportagemogelijkheden. Het is belangrijk dat u analyseert wat u nodig hebt om de meest geschikte functionaliteit te identificeren.
 
    U kunt bijvoorbeeld:
 
@@ -40,7 +40,7 @@ Om de creatie, het gebruik en de duurzaamheid van een rapport te optimaliseren, 
    * Voeg indicatoren toe aan een bestaand rapport (zie [deze paragraaf](../../reporting/using/about-reports-creation-in-campaign.md)),
    * De gegevens in de database bekijken (via [deze sectie](../../reporting/using/about-descriptive-analysis.md)),
    * Maak een nieuw leveringsrapport (zie [deze sectie](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Gegevens exporteren uit de Adobe Campagne-database (via een workflow, zie [deze sectie](../../workflow/using/about-workflows.md)),
+   * Gegevens exporteren uit de Adobe Campaign-database (via een workflow, zie [deze sectie](../../workflow/using/about-workflows.md));
    * Een draaitabel maken (zie [deze sectie](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)),
    * Geaggregeerde gegevens verkennen (via [deze sectie](../../reporting/using/about-cubes.md)),
    * Gebruik een wizard om gegevens te analyseren (via [deze sectie](../../reporting/using/about-descriptive-analysis.md)),
@@ -48,7 +48,7 @@ Om de creatie, het gebruik en de duurzaamheid van een rapport te optimaliseren, 
 
 1. Doelpopulatie identificeren
 
-   Dan moet u weten wie het rapport u wilt tot stand brengen zal richten, het type van publiek kent wie het en de wijze van de rapportvertoning (in browser, in de Campagne van Adobe, voor een specifiek voorwerp, voor het volledige platform, enz.) zal bekijken.
+   Dan moet u weten wie het rapport u wilt tot stand brengen zal richten, het type van publiek kent wie het en de wijze van de rapportvertoning (in browser, in Adobe Campaign, voor een specifiek voorwerp, voor het volledige platform, enz.) zal bekijken.
 
    U kunt ook rapporten maken voor:
 
@@ -56,13 +56,14 @@ Om de creatie, het gebruik en de duurzaamheid van een rapport te optimaliseren, 
    * marktdeelnemers die uitsluitend toegang hebben tot een marketingcampagne,
    * één enkele exploitant voor tijdelijk gebruik,
    * Alle operatoren in webtoegang, enz.
+
    Bij deze overwegingen moet ook rekening worden gehouden met kwesties die verband houden met toegangsrechten en veiligheid.
 
 1. De inhoud definiëren
 
    Vervolgens moet u weten welk type gegevens u wilt weergeven: leveringsindicatoren, verslagen over de databaseprofielen, enz.
 
-   U moet ook de aard van deze gegevens (eenvoudig, resulterend uit een berekening, significant, enz.), zijn plaats (in de Campagne van Adobe, in een derdesysteem), zijn updatefrequentie kennen om de berekeningsfrequentie (dagelijks, wekelijks, op-de-weg), en zijn volume te bepalen.
+   U moet ook weten wat de aard van deze gegevens is (eenvoudig, resulterend uit een berekening, significant, enz.), waar deze zich bevinden (in Adobe Campaign, in een systeem van derden), hoe vaak ze worden bijgewerkt om de berekeningsfrequentie (dagelijks, wekelijks, ter plekke) en het volume ervan te bepalen.
 
    De kwesties die verband houden met gegevensvolumes en updates moeten zorgvuldig worden bestudeerd om weergaveproblemen, met name in termen van tijd, te vermijden. Daarom raden we u aan aggregaten te maken om bepaalde gegevens buiten het rapport vooraf te berekenen. Tabellen die de tracerings- en leveringslogboeken bevatten, kunnen miljoenen records bevatten: dit betekent dat de gegevens moeten worden samengevoegd via een werkstroom die in een rapport moet worden gebruikt .
 
@@ -100,11 +101,11 @@ Zoekopdrachten die u in staat stellen de gegevens te verzamelen die in de rappor
 
 Met de bovenstaande aanbevelingen kunt u de berekening van rapporten optimaliseren.
 
-Daarnaast worden in Adobe Campaign de volgende verbeteringen aanbevolen:
+Daarnaast beveelt Adobe Campaign de volgende verbeteringen aan:
 
 * Onderzoek het datamodel: de geïndexeerde velden moeten vooral worden gebruikt om de berekeningsformules te verbeteren .
 
-   Als u snel een geïndexeerd veld wilt zoeken, bekijkt u de naam van de kolom in de Adobe Campagne-interface: de sorteerpijl wordt rood onderstreept als het veld wordt geïndexeerd.
+   Als u snel een geïndexeerd veld wilt zoeken, bekijkt u de naam van de kolom in de Adobe Campaign-interface: de sorteerpijl wordt rood onderstreept als het veld wordt geïndexeerd.
 
 * Zorg ervoor dat het rapport op lange termijn geldig is: het gegevensvolume kan in de loop der tijd aanzienlijk toenemen.
 
@@ -114,4 +115,4 @@ Daarnaast worden in Adobe Campaign de volgende verbeteringen aanbevolen:
 
 ### Rapporten exporteren {#exporting-reports}
 
-De aanbevelingen specifiek voor het uitvoeren van rapporten worden gedetailleerd in [deze sectie](../../reporting/using/actions-on-reports.md#exporting-a-report).
+Recommendations-specifieke exportrapporten worden in [deze sectie](../../reporting/using/actions-on-reports.md#exporting-a-report)beschreven.
