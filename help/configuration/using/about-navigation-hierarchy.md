@@ -1,7 +1,7 @@
 ---
-title: Navigatiehiërarchie
-seo-title: Navigatiehiërarchie
-description: Navigatiehiërarchie
+title: De navigatiehiërarchie
+seo-title: De navigatiehiërarchie
+description: De navigatiehiërarchie
 seo-description: null
 page-status-flag: never-activated
 uuid: 3fc31f78-2de7-4fb2-b951-71c87d4f0cfe
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 discoiquuid: cf6a79ac-c5b1-4508-bcf1-73f2fbbfe87b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '91'
+ht-degree: 13%
 
 ---
 
 
-# Navigatiehiërarchie{#about-navigation-hierarchy}
+# De navigatiehiërarchie{#about-navigation-hierarchy}
 
 De navigatiehiërarchie werkt als een bestandsbrowser (bijvoorbeeld Windows Verkenner). Mappen kunnen submappen bevatten. Als u een knooppunt selecteert, wordt de weergave weergegeven die overeenkomt met het knooppunt.
 
