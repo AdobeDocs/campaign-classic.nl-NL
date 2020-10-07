@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 0c264783-2775-4ec6-8d49-cd9a45a18d60
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '194'
+ht-degree: 5%
 
 ---
 
@@ -30,7 +30,7 @@ Deze activiteit laat u toe om gegevens te verwerken en gemakkelijk complexe vrag
 
 Voer gewoon uw query in het scriptvenster in.
 
-Op het **[!UICONTROL Texts]** tabblad kunt u tekstreeksen definiëren. Deze kunnen vervolgens met de volgende syntaxis worden gebruikt: **$(id)**. Zie Koptekst en voettekst [toevoegen voor meer informatie over het gebruik van tekst](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
+Op het **[!UICONTROL Texts]** tabblad kunt u tekstreeksen definiëren. Deze kunnen vervolgens met de volgende syntaxis worden gebruikt: **$(Id)**. Zie Koptekst en voettekst [toevoegen voor meer informatie over het gebruik van tekst](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
 
 >[!CAUTION]
 >
