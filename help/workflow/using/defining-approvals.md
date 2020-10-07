@@ -9,11 +9,8 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 0%
@@ -96,7 +93,7 @@ U kunt vier typen vervaldatums maken:
 * **Vertraging vóór een bepaalde datum**: De vervaldatum wordt berekend door een tijdsduur af te trekken van een datum die u opgeeft.
 * **Vervaldatum berekend door script**: De vervaldatum wordt berekend met behulp van JavaScript.
 
-   In het volgende voorbeeld wordt een vervaldatum berekend 24 uur voordat de levering wordt gestart (aangeduid door **vars.deliveryId**):
+   In het volgende voorbeeld wordt een vervaldatum berekend 24 uur voordat de levering wordt gestart (geïdentificeerd door **vars.deliveryId**):
 
    ```
    var delivery = nms.delivery.get(vars.deliveryId)
