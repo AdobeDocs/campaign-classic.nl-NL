@@ -1,7 +1,7 @@
 ---
-title: Indicatorberekening
-seo-title: Indicatorberekening
-description: Indicatorberekening
+title: Indicatoren berekenen
+seo-title: Indicatoren berekenen
+description: Indicatoren berekenen
 seo-description: null
 page-status-flag: never-activated
 uuid: 83ea834e-08f7-441b-8f15-a25ec07c4aab
@@ -11,19 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5ebea30c743ab416ede879c74735e2c7870d3db9
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2980'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Indicatorberekening {#indicator-calculation}
+# Indicatoren berekenen {#indicator-calculation}
 
 ## Gebruikersactiviteiten {#user-activities-1}
 
@@ -38,8 +35,8 @@ ht-degree: 0%
  </thead> 
  <tbody> 
   <tr> 
-   <td> Openen<br /> </td> 
-   <td> @open<br /> </td> 
+   <td> Geopende items<br /> </td> 
+   <td> @opens<br /> </td> 
    <td> De som van alle @totalClicks met een primaire URL-sleutel gelijk aan 1.<br /> </td> 
    <td> sum(IF([@url-id]=1, @totalClicks, 0)<br /> </td> 
   </tr> 
@@ -60,7 +57,7 @@ ht-degree: 0%
 
 Dit rapport is gebaseerd op de **[!UICONTROL Consolidated tracking]** lijst (nms:trackingStats). Deze geaggregeerde tabel wordt om prestatieredenen gebruikt bij het weergeven van rapporten, in de plaats van de **[!UICONTROL Recipient tracking logs]** tabel (nms:trackingLogRcp) en wordt niet in real-time berekend. De tabel wordt een paar minuten nadat de logbestanden voor bijhouden zijn opgehaald, gegenereerd. Indien de indicatoren actueel zijn, zullen de resultaten dezelfde zijn als voor de indicatoren van het verslag over de **volgindicatoren** . De @totalclicks-indicator geeft het totale aantal klikken over een periode van 5 minuten aan.
 
-## Niet-te leveren producten en bedragen {#non-deliverables-and-bounces-1}
+## Niet-leverbare items en niet-bezorgingen {#non-deliverables-and-bounces-1}
 
 **Uitsplitsing naar fouttype**
 
@@ -228,7 +225,7 @@ Dit rapport is gebaseerd op de tabellen **[!UICONTROL Delivery]** (nms:delivery)
  </thead> 
  <tbody> 
   <tr> 
-   <td> Aantal te leveren berichten<br /> </td> 
+   <td> Number of messages to deliver<br /> </td> 
    <td> @totalTarget<br /> </td> 
    <td> Het totale aantal berichten dat tijdens de leveringsanalyse wordt verwerkt.<br /> </td> 
    <td> sum([eigenschappen/@totalTarget])<br /> </td> 
@@ -317,7 +314,7 @@ Dit rapport is gebaseerd op de tabellen **[!UICONTROL Delivery]** (nms:delivery)
  </tbody> 
 </table>
 
-**Openen**
+**Geopende items**
 
 <table> 
  <thead> 
@@ -333,7 +330,7 @@ Dit rapport is gebaseerd op de tabellen **[!UICONTROL Delivery]** (nms:delivery)
    <td> Aantal openingen <br /> </td> 
    <td> @open<br /> </td> 
    <td> Het totale aantal tekstspatiëringsregels in de tabel voor webtracering.<br /> </td> 
-   <td> Aantal<br /> </td> 
+   <td> Count<br /> </td> 
   </tr> 
   <tr> 
    <td> Uitsplitsing<br /> </td> 
@@ -371,7 +368,7 @@ Dit rapport is gebaseerd op de tabellen **[!UICONTROL Delivery]** (nms:delivery)
    <td> Formule: count(@id)<br /> Filter: @ontvanger-id!= 0<br /> </td> 
   </tr> 
   <tr> 
-   <td> Openen<br /> </td> 
+   <td> Geopende items<br /> </td> 
    <td> @opened<br /> </td> 
    <td> Aantal van alle @ids met een type URL gelijk aan "Open".<br /> </td> 
    <td> count (Iif([url/@type] = 2, @id, 0)<br /> </td> 
@@ -482,7 +479,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Services]** lijst (nms:service).
    <td> sum(Iif(@action = 1 en @date &gt; addDays(getDate(), (-1)), 1, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Abonnementen opzeggen<br /> </td> 
+   <td> Uitschrijvingen<br /> </td> 
    <td> @_unsubscription<br /> </td> 
    <td> aantal aflossingen (actie = 0) op de vorige dag.<br /> </td> 
    <td> sum(Iif(@action = 0 en @date &gt; addDays(getDate(), (-1)), 1, 0))<br /> </td> 
@@ -490,7 +487,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Services]** lijst (nms:service).
   <tr> 
    <td> Evolutie<br /> </td> 
    <td> -<br /> </td> 
-   <td> Aantal abonnementen min het aantal afboekingen. De rentevoet wordt berekend in verhouding tot het totale aantal abonnees.<br /> </td> 
+   <td> Aantal abonnementen min het aantal afboekingen. De rentevoet wordt berekend op basis van het totale aantal abonnees.<br /> </td> 
    <td> IF(number(@_subscription) &gt; number(@_unsubscription), '+', '')+format(@_subscription - @_unsubscription, 'number', '##0')+ Iif(@_subscriber&gt;0,' (' + format(100*percent(@_subscription - @_unsubscription, @_subscriber), 'number', '#,##0.0 0')+ '%)','')<br /> </td> 
   </tr> 
   <tr> 
@@ -502,7 +499,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Services]** lijst (nms:service).
  </tbody> 
 </table>
 
-## Traceringsindicatoren {#tracking-indicators-1}
+## Trackingsindicatoren {#tracking-indicators-1}
 
 Dit rapport is gebaseerd op de tabellen **[!UICONTROL Delivery and tracking statistics]** (nms:deliveryLogStats) en **[!UICONTROL Consolidated tracking]** (nms:trackingStats).
 
@@ -553,7 +550,7 @@ Dit rapport is gebaseerd op de tabellen **[!UICONTROL Delivery and tracking stat
    <td> count(Iif([url/@type]=6, @id, 0)<br /> </td> 
   </tr> 
   <tr> 
-   <td> Raming van de forwards<br /> </td> 
+   <td> Schatting van de forwards<br /> </td> 
    <td> @forward<br /> </td> 
    <td> Verschil tussen het aantal verschillende personen en het aantal verschillende ontvangers dat ten minste één keer in de e-mail heeft geklikt.<br /> </td> 
    <td> @personClick - @receivingClick<br /> </td> 
@@ -566,12 +563,12 @@ Dit rapport is gebaseerd op de tabellen **[!UICONTROL Delivery and tracking stat
   </tr> 
   <tr> 
    <td> Klachten<br /> </td> 
-   <td> @klachten<br /> </td> 
-   <td> Aantal berichten met een status gelijk aan "Mislukt" en een reden gelijk aan "adres toegevoegd aan de bloklijst".<br /> </td> 
+   <td> @complaints<br /> </td> 
+   <td> Aantal berichten met een status gelijk aan "Mislukt"en een reden gelijk aan "adres toegevoegd aan de lijst van afgewezen personen".<br /> </td> 
    <td> Count(@status=2 en msg/@failureReason=8)<br /> </td> 
   </tr> 
   <tr> 
-   <td> Openen<br /> </td> 
+   <td> Geopende items<br /> </td> 
    <td> @receivingOpen<br /> </td> 
    <td> Aantal alle @wideLog-ids in alle volgende logboeken.<br /> </td> 
    <td> Countdifferent ([@wideLog-id])<br /> </td> 
@@ -699,7 +696,7 @@ Dit rapport is gebaseerd op de tabellen **[!UICONTROL Delivery and tracking stat
  </tbody> 
 </table>
 
-## URL&#39;s en klik op streams {#urls-and-click-streams-1}
+## URL&#39;s en klikpaden {#urls-and-click-streams-1}
 
 Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** tabel (nms:delivery).
 
@@ -722,7 +719,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** tabel (nms:delivery).
   <tr> 
    <td> Afzonderlijke klikken<br /> </td> 
    <td> @differentClicks<br /> </td> 
-   <td> Verhouding van het aantal verschillende personen dat ten minste één keer in een levering heeft geklikt ten opzichte van het aantal berichten dat met succes is geleverd.<br /> </td> 
+   <td> Verhouding van het aantal verschillende personen dat ten minste eenmaal op een levering heeft geklikt ten opzichte van het aantal berichten dat met succes is geleverd.<br /> </td> 
    <td> percent([indicatoren/@personClick], [indicatoren/@success])<br /> </td> 
   </tr> 
   <tr> 
@@ -746,7 +743,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** tabel (nms:delivery).
  </tbody> 
 </table>
 
-## Overzicht van levering {#delivery-summary-1}
+## Leveringsoverzicht {#delivery-summary-1}
 
 Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** tabel (nms:delivery).
 
@@ -769,7 +766,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** tabel (nms:delivery).
   <tr> 
    <td> Berichten afgewezen door de regel<br /> </td> 
    <td> @weiger<br /> </td> 
-   <td> Aantal adressen genegeerd tijdens de analyse in overeenstemming met typologieregels: adres niet gespecificeerd, quarantined, toegevoegd aan de bloklijst, enz.<br /> </td> 
+   <td> Aantal adressen genegeerd tijdens de analyse in overeenstemming met typologieregels: adres niet gespecificeerd, quarantined, toegevoegd aan de lijst van afgewezen personen, enz.<br /> </td> 
    <td> sum([eigenschappen/@weiger])<br /> </td> 
   </tr> 
   <tr> 
@@ -799,7 +796,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** tabel (nms:delivery).
  </tbody> 
 </table>
 
-## Hot kliks {#hot-clicks-1}
+## Hot clicks {#hot-clicks-1}
 
 Dit rapport is gebaseerd op de tabellen Delivery(nms:delivery) en **[!UICONTROL Consolidated tracking]** (nms:trackingStats).
 
@@ -833,7 +830,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** tabel (nms:delivery).
   </tr> 
   <tr> 
    <td> Open<br /> </td> 
-   <td> @open<br /> </td> 
+   <td> @opens<br /> </td> 
    <td> De som van alle @totalClicks met een primaire URL-sleutel die gelijk is aan 1.<br /> </td> 
    <td> sum(Iif([@url-id] = 1, @totalClicks, 0)<br /> </td> 
   </tr> 
@@ -879,7 +876,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery and tracking statistics]**
    <td> @unbereikable + @mailBoxFull + @invalidDomain + @disabled + @notConnected + @deny<br /> </td> 
   </tr> 
   <tr> 
-   <td> Openen<br /> </td> 
+   <td> Geopende items<br /> </td> 
    <td> @receivingOpen<br /> </td> 
    <td> Het totale aantal @wideLog-ids in de volgende logboeken.<br /> </td> 
    <td> Countdifferent ([@wideLog-id])<br /> </td> 
@@ -891,7 +888,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery and tracking statistics]**
    <td> Countdifferent(Iif([url/@type]=1, @source-id, 0)) <br /> </td> 
   </tr> 
   <tr> 
-   <td> Abonnementen opzeggen<br /> </td> 
+   <td> Uitschrijvingen<br /> </td> 
    <td> @optOut<br /> </td> 
    <td> Het totale aantal @ids waarvoor de categorie URL staat voor "Uitschakelen".<br /> </td> 
    <td> count(Iif([url/@type]=3, @id, 0)<br /> </td> 
@@ -914,7 +911,7 @@ Dit rapport is gebaseerd op **Leveringen** (nms:levering) en het **Volgen logboe
  </thead> 
  <tbody> 
   <tr> 
-   <td> Openen<br /> </td> 
+   <td> Geopende items<br /> </td> 
    <td> @totalRecipientOpen<br /> </td> 
    <td> De som van alle @id met een primaire URL-sleutel gelijk aan 1 (open). <br /> </td> 
    <td> count(IF([@url-id] = 1, @id, 0)<br /> </td> 
