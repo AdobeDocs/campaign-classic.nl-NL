@@ -1,5 +1,5 @@
 ---
-title: Aanmaakstappen voor leveringen in Adobe Campagne Classic
+title: Aanmaakstappen voor leveringen in Adobe Campaign Classic
 description: Ontdek de belangrijkste stappen voor het maken van de levering in Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 8bf70ea4-5f28-4d85-b5ce-0bd3ed3eea55
@@ -9,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c581f22261af7e083f6bd47e603d17d2d71e7ce6
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 7%
 
 ---
 
@@ -27,7 +27,7 @@ De belangrijkste stappen bij het maken van een levering zijn als volgt:
 1. **Bepaal de leveringsinhoud**. De definitie van de leveringsinhoud is specifiek voor elk kanaal. Raadpleeg de desbetreffende sectie voor meer informatie hierover:
 
    * [E-mailkanaal](../../delivery/using/defining-the-email-content.md)
-   * [SMS-kanaal](../../delivery/using/sms-channel.md#defining-the-sms-content)
+   * [Sms-kanaal](../../delivery/using/sms-channel.md#defining-the-sms-content)
    * [Direct mailkanaal](../../delivery/using/defining-the-direct-mail-content.md)
    * [Mobiel toepassingskanaal](../../delivery/using/about-mobile-app-channel.md)
 
