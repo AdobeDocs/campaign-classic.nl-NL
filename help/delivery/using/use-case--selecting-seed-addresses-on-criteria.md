@@ -1,7 +1,7 @@
 ---
-title: '"Hoofdlettergebruik: zaadadressen op criteria selecteren"'
-seo-title: '"Hoofdlettergebruik: zaadadressen op criteria selecteren"'
-description: '"Hoofdlettergebruik: zaadadressen op criteria selecteren"'
+title: '"Gebruiksscenario: seed-adressen selecteren op criteria"'
+seo-title: '"Gebruiksscenario: seed-adressen selecteren op criteria"'
+description: '"Gebruiksscenario: seed-adressen selecteren op criteria"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 6af39893-6ef3-4204-8b53-0c16e35bac8f
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 discoiquuid: fa8aab62-e182-4388-aa23-c255b0dbd42e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '845'
+ht-degree: 4%
 
 ---
 
 
-# Hoofdlettergebruik: het selecteren van zaadadressen op criteria{#use-case-selecting-seed-addresses-on-criteria}
+# Gebruiksscenario: seed-adressen selecteren op criteria{#use-case-selecting-seed-addresses-on-criteria}
 
 In het kader van een levering of een campagne, laat de **[!UICONTROL Edit the dynamic condition...]** verbinding u zaadadressen kiezen die op specifieke selectiecriteria worden gebaseerd.
 
@@ -60,7 +60,7 @@ Raadpleeg de handleiding [Configuratie voor meer informatie over schema-extensie
 
    ![](assets/dlv_seeds_usecase_10.png)
 
-1. Klik **[!UICONTROL Save]**.
+1. Klik op **[!UICONTROL Save]**.
 1. Kopieer in het schemabewerkingsvenster de onderstaande regels en plak deze in het gebied dat in de schermafbeelding wordt aangegeven.
 
    ```
@@ -85,8 +85,8 @@ Raadpleeg de handleiding [Configuratie voor meer informatie over schema-extensie
 
    In dit geval, specificeert u dat een nieuwe genoemde opsomming in de lijst van het zaadadres **[!UICONTROL Department]** is gecreeerd, en het is gebaseerd op het standaardopsommingsmalplaatje (geëtiketteerd onder de naam **[!UICONTROL @company]** Bedrijf **** in de vorm van het zaadadres).
 
-1. Klik **[!UICONTROL Save]**.
-1. Selecteer de **[!UICONTROL Tools > Advanced]** optie in het **[!UICONTROL Update database structure]** menu.
+1. Klik op **[!UICONTROL Save]**.
+1. In the **[!UICONTROL Tools > Advanced]** menu, select the **[!UICONTROL Update database structure]** option.
 
    ![](assets/dlv_seeds_usecase_12.png)
 
@@ -94,13 +94,13 @@ Raadpleeg de handleiding [Configuratie voor meer informatie over schema-extensie
 
    ![](assets/dlv_seeds_usecase_13.png)
 
-1. Volg de wizard totdat u naar de pagina komt om de update uit te voeren. Klik op de **[!UICONTROL Start]** knop.
+1. Volg de wizard totdat u naar de pagina komt om de update uit te voeren. Klik op de knop **[!UICONTROL Start]**.
 
    ![](assets/dlv_seeds_usecase_14.png)
 
    Nadat de update is voltooid, kunt u de wizard sluiten.
 
-1. Maak de verbinding en maak vervolgens opnieuw verbinding met Adobe Campaign. De veranderingen in het schema van de zaadadresgegevens worden aangebracht die zijn nu effectief. Om hen van het scherm van het zaadadres zichtbaar te zijn, moet u bijwerken bijbehorende **[!UICONTROL Input form]**. Raadpleeg de sectie [Invoerformulier](#updating-the-input-form) bijwerken.
+1. Verbinding verbreken en vervolgens opnieuw verbinding maken met Adobe Campaign. De veranderingen in het schema van de zaadadresgegevens worden aangebracht die zijn nu effectief. Om hen van het scherm van het zaadadres zichtbaar te zijn, moet u bijwerken bijbehorende **[!UICONTROL Input form]**. Raadpleeg het gedeelte [Invoerformulier](#updating-the-input-form) bijwerken.
 
 #### Het gegevensschema uitbreiden vanuit een gekoppelde tabel {#extending-the-data-schema-from-a-linked-table}
 
@@ -136,7 +136,7 @@ Zij geven aan:
 
 De gebruiker kan dan uit **stap 5** van de sectie volgen, en de **[!UICONTROL Input form]** van de zaadadressen bijwerken.
 
-Raadpleeg de sectie [Invoerformulier](#updating-the-input-form) bijwerken.
+Raadpleeg het gedeelte [Invoerformulier](#updating-the-input-form) bijwerken.
 
 #### Het invoerformulier bijwerken {#updating-the-input-form}
 
@@ -183,20 +183,20 @@ U kunt nu de dynamische voorwaarde van de zaadadressen voor de levering specific
    >
    >De eerder gemaakte schema-extensie komt van het **ontvangende** schema. De waarden die op het scherm hierboven worden getoond komen van een opsomming van het **ontvankelijke** schema.
 
-1. Klik **[!UICONTROL Ok]**.
+1. Klik op **[!UICONTROL Ok]**.
 
    De query wordt weergegeven in het **[!UICONTROL Select target]** venster.
 
    ![](assets/dlv_seeds_usecase_04.png)
 
-1. Klik **[!UICONTROL Ok]** om de vraag goed te keuren.
+1. Click **[!UICONTROL Ok]** to approve the query.
 1. Analyseer uw levering en klik op het **[!UICONTROL Delivery]** tabblad voor toegang tot de leveringslogboeken.
 
    De zaadadressen van de aankoopafdeling worden getoond als hangende levering, enkel zoals die van de ontvangers of andere zaadadressen.
 
    ![](assets/dlv_seeds_usecase_05.png)
 
-1. Klik op de **[!UICONTROL Send]** knop om de levering te starten.
+1. Click the **[!UICONTROL Send]** button to start the delivery.
 
    De leden van de aankoopafdeling maken deel uit van uw zaadadressen die de levering in hun e-mailpostvak zullen ontvangen.
 
