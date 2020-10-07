@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: 728a95f8-46fe-49a8-a645-a0dd6eeb6615
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1025'
+ht-degree: 1%
 
 ---
 
@@ -24,9 +24,9 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ## Inleiding {#introduction}
 
-De Campagne van Adobe staat de gebruiker toe om **hun eigen functies** te bepalen die tot SQL functies kunnen toegang hebben, zowel die aangeboden door het gegevensbestand als die die niet reeds beschikbaar in de console zijn. Dit is nuttig voor geaggregeerde functies (gemiddelde, maximum, som) bijvoorbeeld, die alleen op de server kunnen worden berekend of wanneer de database een eenvoudigere manier biedt om bepaalde functies te implementeren, in plaats van &quot;handmatig&quot; de expressie in de console te schrijven (bijvoorbeeld datumbeheer).
+Adobe Campaign staat de gebruiker toe om **hun eigen functies** te bepalen die tot SQL functies kunnen toegang hebben, zowel die aangeboden door het gegevensbestand als die die niet reeds beschikbaar in de console zijn. Dit is nuttig voor geaggregeerde functies (gemiddelde, maximum, som) bijvoorbeeld, die alleen op de server kunnen worden berekend of wanneer de database een eenvoudigere manier biedt om bepaalde functies te implementeren, in plaats van &quot;handmatig&quot; de expressie in de console te schrijven (bijvoorbeeld datumbeheer).
 
-Dit mechanisme kan ook worden gebruikt als u een recente of ongewone SQL-functie voor de database-engine wilt gebruiken, die nog niet door de Adobe Campagne-console wordt aangeboden.
+Dit mechanisme kan ook worden gebruikt als u een recente of ongewone SQL-functie van de database-engine wilt gebruiken, die nog niet door de Adobe Campaign-console wordt aangeboden.
 
 Zodra deze functies zijn toegevoegd, zullen zij in de uitdrukkingsredacteur enkel als andere vooraf bepaalde functies verschijnen.
 
@@ -42,7 +42,7 @@ Als u de toepassing vanuit de console wilt installeren, selecteert u de **opties
 
 >[!IMPORTANT]
 >
->Waarschuwing: zelfs als de lijst met geïmporteerde functies direct in de functie-editor wordt weergegeven, zijn ze pas bruikbaar als de Adobe-campagne opnieuw is gestart.
+>Waarschuwing: zelfs als de lijst met geïmporteerde functies direct in de functie-editor wordt weergegeven, zijn ze pas bruikbaar als Adobe Campaign opnieuw is gestart.
 
 ## Algemene structuur van het te importeren pakket {#general-structure-of-package-to-import}
 
@@ -131,8 +131,9 @@ Het veld **@name** verwijst naar de naam van de functie en &quot;args&quot; is d
 * **@minArgs** en **maxArgs** geven het aantal parameters (minimum en maximum) voor een parameter aan. Voor een functie met 2 parameters zijn minArgs en maxArgs bijvoorbeeld 2 en 2. Voor drie parameters, plus 1 optioneel, zijn deze respectievelijk 3 en 4.
 * Tot slot verstrekt het **providerPart** element de functie implementatie.
 
-   * Het attribuut **provider** is verplicht, het specificeert de gegevensbestandsystemen waarvoor de implementatie wordt verstrekt. Zoals getoond in het voorbeeld, wanneer de uitdrukkingssyntaxis of onderliggende functies verschillen, kunnen de alternatieve implementaties volgens het gegevensbestand worden verstrekt.
+   * Het attribuut **provider** is verplicht, het specificeert de gegevensbestandsystemen waarvoor de implementatie wordt verstrekt. Zoals getoond in het voorbeeld, wanneer de uitdrukkingssyntaxis of de onderliggende functies verschillen, kunnen de alternatieve implementaties volgens het gegevensbestand worden verstrekt.
    * Het **@body** -kenmerk bevat de functie-implementatie. Opmerking: deze implementatie moet een expressie zijn in de databasetaal (niet een codeblok). Afhankelijk van de databases kunnen expressies subquery&#39;s zijn (&quot;(selecteer kolom in de tabel waarin...)&quot;) die slechts één waarde retourneren. Dit is bijvoorbeeld het geval in Oracle (de query moet tussen haakjes worden geschreven).
+
    >[!NOTE]
    >
    >Als slechts één of twee gegevensbestanden waarschijnlijk door de bepaalde functie worden gevraagd, kunnen wij altijd slechts de definities verstrekken die aan deze gegevensbestanden beantwoorden.
