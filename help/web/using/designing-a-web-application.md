@@ -1,7 +1,7 @@
 ---
-title: Een webtoepassing ontwerpen
-seo-title: Een webtoepassing ontwerpen
-description: Een webtoepassing ontwerpen
+title: Een webapplicatie ontwerpen
+seo-title: Een webapplicatie ontwerpen
+description: Een webapplicatie ontwerpen
 seo-description: null
 page-status-flag: never-activated
 uuid: 29c11154-f056-4047-849a-739ba0a2c615
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: 08efa472-d090-404d-9ad7-47adb3489c30
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '365'
+ht-degree: 4%
 
 ---
 
 
-# Een webtoepassing ontwerpen{#designing-a-web-application}
+# Een webapplicatie ontwerpen{#designing-a-web-application}
 
 Webtoepassingen worden volgens hetzelfde principe als [onlineenquêtes](../../web/using/about-surveys.md)gemaakt en beheerd.
 
@@ -58,7 +58,7 @@ U kunt ook het type tabel selecteren in het keuzemenu.
 
 ## Overzicht-type de toepassingen van het Web {#overview-type-web-applications}
 
-De interface van de Campagne van Adobe gebruikt vele toepassingen van het Web om, tot ontvangers, leveringen, campagnes, voorraden, enz. toegang te hebben te beheren en in wisselwerking te staan.
+De interface van Adobe Campaign gebruikt vele toepassingen van het Web om, tot ontvangers, leveringen, campagnes, voorraden, enz. toegang te hebben te beheren en in wisselwerking te staan.
 
 Deze worden in de interface weergegeven in de vorm van dashboards met slechts één pagina.
 
