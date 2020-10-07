@@ -1,7 +1,7 @@
 ---
-title: Categorieën voorstellen maken
-seo-title: Categorieën voorstellen maken
-description: Categorieën voorstellen maken
+title: Categorieën voor aanbiedingen maken
+seo-title: Categorieën voor aanbiedingen maken
+description: Categorieën voor aanbiedingen maken
 seo-description: null
 page-status-flag: never-activated
 uuid: 5ac0ae5e-1731-4699-b4ef-f3867ad0ab58
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: a9fad813-3256-4a00-ba74-7dbaba9e8e23
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 4%
 
 ---
 
 
-# Categorieën voorstellen maken{#creating-offer-categories}
+# Categorieën voor aanbiedingen maken{#creating-offer-categories}
 
 Het creëren van categorieën aanbiedingen kan alleen in de **[!UICONTROL Design]** omgeving plaatsvinden. Zij worden automatisch in de **[!UICONTROL Live]** omgeving (d.w.z. beschikbaar gesteld) ingezet wanneer de gecreëerde/gewijzigde aanbieding(en) die zij bevatten, worden goedgekeurd. Standaard bevat de **[!UICONTROL Design]** omgeving een categorie voor alle aanbiedingen. U kunt subcategorieën maken om een hiërarchie toe te voegen aan de catalogusaanbiedingen.
 
@@ -28,7 +28,7 @@ Voor elke categorie kunt u de toelatingsdata bepalen, d.w.z. een periode waarna 
 
 Voer de volgende stappen uit om een extra categorie te maken:
 
-1. Ga naar de **[!UICONTROL Offer catalog]** map.
+1. Go to the **[!UICONTROL Offer catalog]** folder.
 
    ![](assets/offer_cat_create_001.png)
 
