@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: a5fc6c78-b4fb-41fd-a072-7be4ece3c554
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '720'
+ht-degree: 1%
 
 ---
 
@@ -53,7 +53,7 @@ Klik op de **[!UICONTROL Filter the source data...]** koppeling om de berekening
 
 ## Afmetingen definiëren {#defining-dimensions}
 
-Dimensies vallen samen met analysegassen die voor elke kubus zijn gedefinieerd op basis van het bijbehorende feitelijke schema. Dit zijn de dimensies die in de analyse worden onderzocht, zoals tijd (jaar, maand, datum...), een classificatie van producten of contracten (familie, referentie, enz.), een bevolkingssegment (per stad, leeftijdsgroep, status, enz.).
+Dimension vallen samen met analysegassen die voor elke kubus zijn gedefinieerd op basis van het bijbehorende feitenschema. Dit zijn de dimensies die in de analyse worden onderzocht, zoals tijd (jaar, maand, datum...), een classificatie van producten of contracten (familie, referentie, enz.), een bevolkingssegment (per stad, leeftijdsgroep, status, enz.).
 
 Deze analysegassen worden gedefinieerd op het **[!UICONTROL Dimension]** tabblad Kubus.
 
@@ -103,7 +103,7 @@ Wanneer de afmetingen zijn gedefinieerd, moet u een berekeningsmodus opgeven voo
 
 Hiervoor voert u de volgende stappen uit:
 
-1. Klik op de **[!UICONTROL Add]** knop.
+1. Klik op de knop **[!UICONTROL Add]**.
 1. Selecteer het type maatregel en de formule die u wilt toepassen. Hier willen we het aantal vrouwen bij de ontvangers tellen.
 
    Onze maatregel is gebaseerd op het feitenschema en gebruikt de **[!UICONTROL Count]** exploitant.
@@ -136,7 +136,7 @@ Dit doet u als volgt:
 
    ![](assets/s_advuser_cube_wz_15.png)
 
-1. U kunt de assen van de dimensie veranderen, hen schrappen, nieuwe maatregelen toevoegen, etc. Hier worden mogelijke bewerkingen beschreven: Kubussen [gebruiken om gegevens](../../reporting/using/using-cubes-to-explore-data.md)te verkennen.
+1. U kunt de assen van de dimensie veranderen, hen schrappen, nieuwe maatregelen toevoegen, etc. Hier worden mogelijke bewerkingen beschreven: [Kubussen gebruiken om gegevens](../../reporting/using/using-cubes-to-explore-data.md)te verkennen.
 
    Gebruik hiervoor de juiste pictogrammen.
 
