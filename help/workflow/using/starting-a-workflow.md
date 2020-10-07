@@ -9,14 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 68a95962dfecc4b10f48ba16d4f8ab29cae02ee8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -61,7 +58,7 @@ De werkbalkknoppen worden in deze [sectie](../../campaign/using/marketing-campai
 
    Deze actie stopt en start de workflow opnieuw. Doorgaans kunt u sneller opnieuw opstarten. Het is ook nuttig om opnieuw beginnen te automatiseren wanneer het tegenhouden een bepaalde hoeveelheid tijd neemt: De reden hiervoor is dat de opdracht Stoppen niet beschikbaar is wanneer de workflow wordt gestopt.
 
-   De **[!UICONTROL Start / Pause / Stop / Restart]** acties zijn ook beschikbaar via de uitvoeringspictogrammen op de werkbalk. For more on this, refer to this [section](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
+   De **[!UICONTROL Start / Pause / Stop / Restart]** acties zijn ook beschikbaar via de uitvoeringspictogrammen op de werkbalk. Raadpleeg deze [sectie](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow) voor meer informatie.
 
 * **[!UICONTROL Purge history]**
 
@@ -87,7 +84,7 @@ De werkbalkknoppen worden in deze [sectie](../../campaign/using/marketing-campai
 
    Met deze actie maakt u een nieuw werkstroomsjabloon op basis van de geselecteerde workflow. U moet de map opgeven waarin deze wordt opgeslagen (in het **[!UICONTROL Folder]** veld).
 
-   De **[!UICONTROL Mass update of selected lines]** en de **[!UICONTROL Merge selected lines]** opties zijn algemene platformopties beschikbaar in alle **[!UICONTROL Actions]** menu&#39;s. For more on this, refer to this [section](../../platform/using/updating-data.md).
+   De **[!UICONTROL Mass update of selected lines]** en de **[!UICONTROL Merge selected lines]** opties zijn algemene platformopties beschikbaar in alle **[!UICONTROL Actions]** menu&#39;s. Raadpleeg deze [sectie](../../platform/using/updating-data.md) voor meer informatie.
 
 ## Klikken met rechtermuisknop {#right-click-menu}
 
