@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: ba42c3cf-31fc-4fbc-b230-a2b3982328c5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 681e6ec5fc9ed8c7e46af04f0ed62927b30e1b2e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 19%
 
 ---
 
@@ -48,5 +48,5 @@ Als u een **[!UICONTROL List]** typelijst wilt maken op basis van de nieuwe tabe
 
 >[!NOTE]
 >
->U kunt ook naar de video [Een lijst met ontvangers](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html) maken verwijzen.
+>U kunt ook naar de video [Een lijst met ontvangers](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/creating-a-list-of-recipients.html) maken verwijzen.
 
