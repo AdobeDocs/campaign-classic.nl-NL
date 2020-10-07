@@ -1,7 +1,7 @@
 ---
-title: Hypothetische tekstspatiëring
-seo-title: Hypothetische tekstspatiëring
-description: Hypothetische tekstspatiëring
+title: Hypotheses traceren
+seo-title: Hypotheses traceren
+description: Hypotheses traceren
 seo-description: null
 page-status-flag: never-activated
 uuid: cb949a9d-8bbe-446b-b5b4-22234a91a68b
@@ -11,16 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 discoiquuid: 4452bfc6-9ac4-4d81-a63c-879a163c13ee
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 2%
 
 ---
 
 
-# Hypothetische tekstspatiëring{#hypothesis-tracking}
+# Hypotheses traceren{#hypothesis-tracking}
 
 Het resultaat van hypotheseberekeningen is beschikbaar op verschillende niveaus van het Adobe Campaign-platform: De indicatoren berekend op basis van hypothesen en de reacties op de doelpopulaties zijn zichtbaar via de werkelijke hypothese, alsmede in de hypotheseverslagen die beschikbaar zijn via campagnes en leveringen.
 
@@ -65,7 +65,7 @@ De indicatoren geven de volgende informatie:
 
 U kunt de reacties van de ontvangers op de hypothesen bekijken via het **[!UICONTROL Reactions]** tabblad.
 
-1. Wanneer de hypotheseberekening is voltooid, gaat u naar het **[!UICONTROL Campaign management > Measurement hypotheses]** knooppunt van de Adobe Campaign-structuur.
+1. Als de hypotheseberekening is voltooid, gaat u naar het **[!UICONTROL Campaign management > Measurement hypotheses]** knooppunt van de Adobe Campaign-structuur.
 1. Selecteer de gewenste hypothese en klik op het **[!UICONTROL Reactions]** tabblad om de lijst weer te geven met ontvangers die na de marketingcampagne waarschijnlijk iets zullen kopen.
 
    ![](assets/response_hypothesis_reactions_001.png)
