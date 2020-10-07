@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 discoiquuid: ef7aa3a0-249f-46eb-9300-5b97bce31c8c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '230'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
 
 Voor toegang tot de geavanceerde functies voor beheer van ontvangers moet u de Adobe Campaign-structuur bewerken. Klik hiertoe op de **[!UICONTROL Explorer]** knop op de werkbalk.
 
-Ontvangers worden standaard opgeslagen in het **[!UICONTROL Profiles and targets]** knooppunt van de Adobe Campagnestructuur. Vanuit hetzelfde knooppunt kunt u een of meer mappen en submappen maken waarin de profielen van ontvangers worden opgeslagen.
+Ontvangers worden standaard opgeslagen in het **[!UICONTROL Profiles and targets]** knooppunt van de Adobe Campaign-structuur. Vanuit hetzelfde knooppunt kunt u een of meer mappen en submappen maken waarin de profielen van ontvangers worden opgeslagen.
 
 Elk knooppunt valt samen met een map. De gegevens van elke omslag moeten worden beschouwd om van elkaar worden verdeeld. Dit betekent dat het beheer van dubbele bestanden voor meerdere ontvangende mappen lastiger zal zijn.
 
