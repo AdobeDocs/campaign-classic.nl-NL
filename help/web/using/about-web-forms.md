@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 3b8e4691-fcbc-48ef-b529-11c9a9a9d788
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 5%
 
 ---
 
@@ -79,12 +79,13 @@ In de volgende secties wordt beschreven hoe u inhoud en indeling voor formuliers
 * [Velden toevoegen aan een webformulier](../../web/using/adding-fields-to-a-web-form.md),
 * [HTML-inhoud](../../web/using/static-elements-in-a-web-form.md#inserting-html-content)invoegen,
 * [Statische elementen in een webformulier](../../web/using/static-elements-in-a-web-form.md),
-* [Opmaak](../../web/using/defining-web-forms-layout.md)van webformulieren definiëren.
+* [De opmaak van webformulieren definiëren](../../web/using/defining-web-forms-layout.md).
 
 >[!NOTE]
 >
 >* Tijdens het ontwerpen van een pagina kunt u de uiteindelijke rendering weergeven op het **[!UICONTROL Preview]** tabblad. Sla het formulier eerst op om de wijzigingen weer te geven. Eventuele fouten worden weergegeven op het **[!UICONTROL Log]** tabblad.
 >* Om ervoor te zorgen dat de paginavertoning en de informatieopslag in de aangewezen opeenvolging voorkomen, laat zuiveringswijze in de vorm van het Web toe. Ga hiertoe naar het **[!UICONTROL Preview]** subtabblad en schakel het **[!UICONTROL Enable debug mode]** selectievakje in: alle verzamelde informatie en mogelijke uitvoeringsfouten worden onder aan elke pagina weergegeven .
+
 >
 
 
@@ -99,7 +100,7 @@ In dit geval selecteert u eerst het type veld dat u wilt toevoegen en de opslagm
 
 ![](assets/s_ncs_admin_webform_select_storage.png)
 
-Klik **[!UICONTROL Ok]** om de selectie goed te keuren.
+Click **[!UICONTROL Ok]** to approve the selection.
 
 ![](assets/s_ncs_admin_webform_confirm_storage.png)
 
