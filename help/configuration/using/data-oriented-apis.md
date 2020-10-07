@@ -1,7 +1,7 @@
 ---
-title: Gegevensgeoriënteerde API's
-seo-title: Gegevensgeoriënteerde API's
-description: Gegevensgeoriënteerde API's
+title: Datagerichte API’s
+seo-title: Datagerichte API’s
+description: Datagerichte API’s
 seo-description: null
 page-status-flag: never-activated
 uuid: f81356b3-8eef-4b65-9510-47c9d4b4e871
@@ -11,11 +11,8 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: fba46d42-0253-425b-bbc2-6702d4140e05
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Gegevensgeoriënteerde API&#39;s{#data-oriented-apis}
+# Datagerichte API’s{#data-oriented-apis}
 
 Met gegevensgeoriënteerde API&#39;s kunt u het volledige datamodel beheren.
 
