@@ -11,22 +11,22 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: 860be8be-f28c-4836-b4fb-e91c6a4616c6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '412'
+ht-degree: 1%
 
 ---
 
 
 # Beheer{#administration}
 
-Automatisch opstarten van de Adobe Campagnemodules (**web**, **mta**, **wfserver**, enz.) wordt geleverd door de **nlserver** .
+Automatisch opstarten van de Adobe Campaign-modules (**web**, **mta**, **wfserver**, enz.) wordt geleverd door de **nlserver** .
 
-Als u Adobe Campaign installeert, wordt de computer automatisch zo geconfigureerd dat de **Nlserver** -service wordt gestart tijdens het opstarten.
+Als u Adobe Campaign installeert, wordt de computer automatisch zo geconfigureerd dat de **Nlserver** -service wordt opgestart tijdens de opstartvolgorde.
 
-De volgende opdrachten worden gebruikt om de Adobe Campagne-service handmatig te starten en af te sluiten:
+De volgende opdrachten worden gebruikt om de Adobe Campaign-service handmatig te starten en af te sluiten:
 
 * In Windows:
 
@@ -40,11 +40,11 @@ De volgende opdrachten worden gebruikt om de Adobe Campagne-service handmatig te
 
 >[!NOTE]
 >
->Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl start nlserver** / **systemctl stop nlserver**
+>Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemCtl start nlserver** / **systemctl stop nlserver**
 
-Hier volgt een lijst met de gebruikelijke beheeropdrachten die in Linux (als **Adobe-campagne**) toegankelijk zijn:
+Hier volgt een lijst met de gebruikelijke beheeropdrachten die in Linux (zoals **Adobe Campaign**) toegankelijk zijn:
 
-* Alle opgestarte Adobe Campagnemodules weergeven: **/etc/init.d/nlserver6 pdump** of **/etc/init.d/nlserver6 status**
+* Alle begonnen Adobe Campaign-modules weergeven: **/etc/init.d/nlserver6 pdump** of **/etc/init.d/nlserver6 status**
 
    >[!NOTE]
    >
@@ -63,7 +63,7 @@ Hier volgt een lijst met de gebruikelijke beheeropdrachten die in Linux (als **A
 
    **nlserver-stop`<module>[@<instance>][-immediate][-noconsole]`**
 
-   U kunt een module ook opnieuw starten met de **opdracht Opnieuw starten`<module>[@<instance>]`**van de server.
+   U kunt een module ook opnieuw starten met de **opdracht Opnieuw starten`<module>[@<instance>]`** van de server.
 
    Voorbeeld:
 
@@ -85,12 +85,13 @@ Hier volgt een lijst met de gebruikelijke beheeropdrachten die in Linux (als **A
    >    * In het geval van een noodsituatie, gebruik de **-directe** optie om een onmiddellijke halt toe te roepen aan het proces (gelijkwaardig aan het bevel van Unix **doden -9**).
    >    * Gebruik de optie **-noconsole** om ervoor te zorgen dat de gestarte module niets op de console zal tonen. Zijn logboeken zullen aan de schijf via de **syslogd** module worden geschreven.
    >    * Gebruik de **-uitgebreide** optie om extra informatie over procesacties te tonen.
+
       >    
       >      
       Voorbeeld:
       >    
       >      
-      **webbreedbeeldscherm opnieuw opstarten vanaf de server**
+      **webbreedbeeldscherm opnieuw starten**
       >    
       >      
       **nlserver start mta@myinstance -verbose**
@@ -99,19 +100,19 @@ Hier volgt een lijst met de gebruikelijke beheeropdrachten die in Linux (als **A
       Met deze optie voegt u aanvullende logbestanden toe. We raden u aan om de processen opnieuw te starten zonder de optie **-verbose** zodra u de gewenste informatie hebt gevonden, om overbelasting van logbestanden te voorkomen.
 
 
-* Start alle Adobe Campagne-processen op (gelijk aan het starten van de **Nlserver6** -service):
+* Start alle Adobe Campaign-processen op (gelijk aan het starten van de **Nlserver6** -service):
 
    **nlserver watchdog -noconsole**
 
-* Sluit alle processen van de Campagne van Adobe (gelijkwaardig aan het sluiten van de dienst **nlserver6** ):
+* Sluit alle Adobe Campaign-processen af (gelijk aan het sluiten van de **Nlserver6** -service):
 
    **Uitschakelen van server**
 
-* Laad de configuratie van de **nlserver** -webmodule (en de extensiemodule van de webserver, indien van toepassing) opnieuw wanneer de bestanden **serverConf.xml** en **config-`<instance>  .xml </instance>`**zijn bewerkt.
+* Laad de configuratie van de **nlserver** -webmodule (en de extensiemodule van de webserver, indien van toepassing) opnieuw wanneer de bestanden **serverConf.xml** en **config-`<instance>  .xml </instance>`** zijn bewerkt.
 
    **nlserver config-reload**
 
    >[!NOTE]
    >
-   >Sommige configuratieveranderingen worden niet dynamisch in aanmerking genomen; Adobe Campaign moet worden afgesloten en vervolgens opnieuw worden gestart.
+   >Sommige configuratieveranderingen worden niet dynamisch in aanmerking genomen; Adobe Campaign moet worden afgesloten en opnieuw worden opgestart.
 
