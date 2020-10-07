@@ -1,7 +1,7 @@
 ---
-title: Adobe Analytics Data Connector
-seo-title: Adobe Analytics Data Connector
-description: Adobe Analytics Data Connector
+title: Adobe Analytics-dataconnector
+seo-title: Adobe Analytics-dataconnector
+description: Adobe Analytics-dataconnector
 seo-description: null
 page-status-flag: never-activated
 uuid: 5a1de443-04de-49a8-9057-5d8381e48630
@@ -11,19 +11,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: 5ff1577f-0809-46fd-ac1e-11b24637e35c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1661'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Adobe Analytics Data Connector{#adobe-analytics-data-connector}
+# Adobe Analytics-dataconnector{#adobe-analytics-data-connector}
 
 ## Over de integratie van gegevensconnectors {#about-data-connector-integration}
 
@@ -31,9 +28,9 @@ ht-degree: 0%
 >
 >Adobe Analytics Data Connector is niet compatibel met Transaction messaging (Message Center).
 
-Dankzij de gegevensverbinding (voorheen Adobe Genesis genoemd) kunnen Adobe Campaign en Adobe Analytics communiceren via het **Web Analytics-connectors** -pakket. Het stuurt gegevens door naar Adobe Campaign in de vorm van segmenten met betrekking tot gebruikersgedrag na een e-mailcampagne. Omgekeerd verzendt het programma indicatoren en kenmerken van e-mailcampagnes die door Adobe Campaign worden geleverd aan Adobe Analytics - Gegevensconnector.
+Gegevensconnector (voorheen bekend als Adobe Genesis) maakt interactie tussen Adobe Campaign en Adobe Analytics mogelijk via het **Web Analytics-connectorpakket** . Het stuurt gegevens door naar Adobe Campaign in de vorm van segmenten met betrekking tot gebruikersgedrag na een e-mailcampagne. Omgekeerd verzendt het programma indicatoren en kenmerken van e-mailcampagnes die door Adobe Campaign worden geleverd aan Adobe Analytics - Gegevensconnector.
 
-Met de gegevensconnector biedt Adobe Campaign een manier om het internetpubliek (Web Analytics) te meten. Dankzij deze integratie kan Adobe Campaign na een marketingcampagne gegevens over het gedrag van bezoekers van een of meer sites herstellen en (na analyse) hermarketingcampagnes voeren om deze in kopers om te zetten. Omgekeerd, laten de analytische hulpmiddelen van het Web Adobe Campaign toe om indicatoren en campagneattributen aan hun platforms door te sturen.
+Met de gegevensconnector biedt Adobe Campaign een manier om het internetpubliek te meten (Web Analytics). Dankzij deze integratie kan Adobe Campaign na een marketingcampagne gegevens over het gedrag van bezoekers van een of meer sites herstellen en (na analyse) hermarketingcampagnes voeren om deze in kopers om te zetten. Omgekeerd, laten de analytische hulpmiddelen van het Web Adobe Campaign toe om indicatoren en campagneattributen aan hun platforms door te sturen.
 
 Raadpleeg deze [documentatie](https://helpx.adobe.com/marketing-cloud/how-to/analytics-ac.html)voor meer informatie over de implementatie van de integratie van Adobe Analytics met Adobe Campaign.
 
@@ -72,10 +69,11 @@ In de volgende stappen wordt de configuratie van de gegevensconnector beschreven
 
 1. From the **[!UICONTROL Admin]** tab, select **[!UICONTROL Data Connectors]**.
 
-   U hebt de volgende Analytics-gereedschapsmachtigingen nodig om toegang te krijgen tot het **[!UICONTROL Data Connectors]** menu. Raadpleeg deze [pagina voor meer informatie](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/analytics-tools.html)
+   U hebt de volgende bevoegdheden voor Analytics-hulpprogramma&#39;s nodig om toegang te krijgen tot het **[!UICONTROL Data Connectors]** menu. Raadpleeg [deze pagina](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/analytics-tools.html) voor meer informatie
    * Integraties (maken)
    * Integraties (update)
    * Integraties (verwijderen)
+
    ![](assets/adobe_genesis_install_002.png)
 
 1. Selecteer in de lijst met partners **[!UICONTROL Adobe Campaign Classic]**.
@@ -122,9 +120,9 @@ Zorg ervoor dat de foto&#39;s van het type Numeriek **[!UICONTROL Events]** zijn
 
 ### Stap 2: Externe account maken in campagne {#step-2--create-the-external-account-in-campaign}
 
-De integratie van Adobe Campaign in de Analytics-platforms vindt plaats via een connector. U synchroniseert de toepassingen door het volgende proces toe te passen:
+De integratie van Adobe Campaign in de analyseplatforms vindt plaats via een connector. U synchroniseert de toepassingen door het volgende proces toe te passen:
 
-1. Installeer het **Web Analytics connectors** -pakket in Adobe Campaign.
+1. Installeer het **Web Analytics-connectors** -pakket in Adobe Campaign.
 1. Ga naar de **[!UICONTROL Administration > Platform > External accounts]** map van de Adobe Campaign-structuur.
 1. Klik met de rechtermuisknop op de lijst met externe accounts en selecteer **[!UICONTROL New]** deze in de vervolgkeuzelijst (of klik op de **[!UICONTROL New]** knop boven de lijst met externe accounts).
 1. Selecteer het **[!UICONTROL Web Analytics]** type in de vervolgkeuzelijst.
@@ -156,7 +154,7 @@ De integratie van Adobe Campaign in de Analytics-platforms vindt plaats via een 
 
 >[!NOTE]
 >
->Als u verschillende publiek meetgereedschappen gebruikt, kunt u **[!UICONTROL Other]** in de **[!UICONTROL Partners]** vervolgkeuzelijst selecteren wanneer u een externe account maakt. U mag slechts naar één externe account verwijzen in de leveringseigenschappen: U moet daarom de formule van bijgehouden URL&#39;s aanpassen door de parameters toe te voegen die door Adobe en alle andere gebruikte meetgereedschappen worden verwacht.
+>Als u verschillende publiek meetgereedschappen gebruikt, kunt u **[!UICONTROL Other]** in de **[!UICONTROL Partners]** vervolgkeuzelijst selecteren wanneer u een externe account maakt. U mag slechts naar één externe account verwijzen in de leveringseigenschappen: u moet daarom de formule van bijgehouden URL&#39;s aanpassen door de parameters toe te voegen die door de Adobe en alle andere gebruikte meetinstrumenten worden verwacht.
 
 ### Stap 3: Adobe Campaign en Adobe Analytics synchroniseren {#step-3--synchronize-adobe-campaign-and-adobe-analytics}
 
@@ -204,7 +202,7 @@ Deze bestanden zijn beschikbaar in de Adobe Campaign-structuur, onder de **[!UIC
 * **[!UICONTROL Recovering of web events]**: eenmaal per uur downloadt deze workflow segmenten over het gedrag van gebruikers op een bepaalde site, neemt deze op in de Adobe Campaign-database en start de workflow voor het opnieuw in de handel brengen.
 * **[!UICONTROL Event purge]**: met deze workflow kunt u alle gebeurtenissen uit de database verwijderen, afhankelijk van de periode die in het **[!UICONTROL Lifespan]** veld is geconfigureerd. Raadpleeg [Stap 2 voor meer informatie: Maak het externe account in Campagne](#step-2--create-the-external-account-in-campaign).
 * **[!UICONTROL Identification of converted contacts]**: directory van de bezoekers die een aankoop hebben gedaan na een hermarketingcampagne. De gegevens die door deze workflow worden verzameld, zijn toegankelijk in het **[!UICONTROL Re-marketing efficiency]** rapport. Raadpleeg deze [pagina](#creating-a-re-marketing-campaign).
-* **[!UICONTROL Sending of indicators and campaign attributes]**: Hiermee kunt u via Adobe Campaign e-mailcampagneindicatoren naar de Adobe Experience Cloud verzenden via de Adobe Analytics - Gegevensconnector. Deze workflow wordt elke dag om 4 uur gestart en het kan 24 uur duren voordat de gegevens naar Analytics worden verzonden.
+* **[!UICONTROL Sending of indicators and campaign attributes]**: Hiermee kunt u e-mailcampagnemarameters via Adobe Campaign naar de Adobe Experience Cloud verzenden via Adobe Analytics - Data-connector. Deze workflow wordt elke dag om 4 uur gestart en het kan 24 uur duren voordat de gegevens naar Analytics worden verzonden.
 
    Deze workflow moet niet opnieuw worden gestart, anders worden alle eerdere gegevens opnieuw verzonden, waardoor de resultaten van Analytics kunnen worden scheefgetrokken.
 
@@ -220,6 +218,7 @@ Deze bestanden zijn beschikbaar in de Adobe Campaign-structuur, onder de **[!UIC
    * **[!UICONTROL Number of distinct clicks]** (@receivingClick)
    * **[!UICONTROL Opt-Out]** (@optOut)
    * **[!UICONTROL Errors]** (@fout)
+
    >[!NOTE]
    >
    >De verzonden gegevens zijn de delta die op de laatste momentopname wordt gebaseerd die tot negatieve waarde in de metrische gegevens kan leiden.
@@ -239,7 +238,7 @@ Deze bestanden zijn beschikbaar in de Adobe Campaign-structuur, onder de **[!UIC
 
 ## Leveringen bijhouden in Adobe Campaign {#tracking-deliveries-in-adobe-campaign}
 
-Als u wilt dat Adobe Experience Cloud de activiteit op de sites kan volgen zodra de levering door Adobe Campaign is verzonden, moet u in de leveringseigenschappen verwijzen naar de overeenkomstige connector. Hiervoor voert u de volgende stappen uit:
+Als u wilt dat de Adobe Experience Cloud de activiteit op de sites kan volgen wanneer de levering door Adobe Campaign wordt verzonden, moet u in de leveringseigenschappen verwijzen naar de bijbehorende connector. Hiervoor voert u de volgende stappen uit:
 
 1. Open de levering van de campagne die u wilt bijhouden.
 
@@ -250,9 +249,9 @@ Als u wilt dat Adobe Experience Cloud de activiteit op de sites kan volgen zodra
 
    ![](assets/webanalytics_delivery_properties_002.png)
 
-1. U kunt nu uw levering verzenden en uw rapport openen in Adobe Analytics.
+1. Je kunt nu je levering verzenden en je rapport bekijken in Adobe Analytics.
 
-## Nieuwe marketingcampagne maken {#creating-a-re-marketing-campaign}
+## Creating a re-marketing campaign {#creating-a-re-marketing-campaign}
 
 Om uw re-marketing campagne voor te bereiden, creeer eenvoudig leveringsmalplaatjes die voor re-marketing typecampagnes worden gebruikt. Dan vorm uw re-marketing campagne en verbind het met een segment. Elk segment moet een andere hermarketingcampagne voeren.
 
