@@ -1,7 +1,7 @@
 ---
-title: Geen verbinding
-seo-title: Geen verbinding
-description: Geen verbinding
+title: Mislukte verbinding
+seo-title: Mislukte verbinding
+description: Mislukte verbinding
 seo-description: null
 page-status-flag: never-activated
 uuid: 5e4cf47d-9699-4b4c-9c45-064fdc17110a
@@ -11,16 +11,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 493067fb-68f1-48b9-afaa-3127a847db83
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 90813bc2913d56136067b9f64c0e934df3f17473
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '348'
+ht-degree: 3%
 
 ---
 
 
-# Geen verbinding{#failure-to-connect}
+# Mislukte verbinding{#failure-to-connect}
 
 De redenen hiervoor kunnen meerdere zijn en zijn afhankelijk van verschillende contexten.
 
@@ -46,9 +46,9 @@ Controleer de volgende informatie:
 
    * Reageert de webserver?
 
-      Maak verbinding met de URL voor toegang tot de Adobe Campagneserver via een webbrowser: **http(s)://`<urlserver>`**. Als de server niet reageert, wordt de webserver gestopt op de computer. Neem contact op met de systeembeheerder van het hostbedrijf om de service opnieuw te starten.
+      Verbinding maken met de URL voor servertoegang van Adobe Campaign via een webbrowser: **http(en)://`<urlserver>`**. Als de server niet reageert, wordt de webserver gestopt op de computer. Neem contact op met de systeembeheerder van het hostbedrijf om de service opnieuw te starten.
 
-   * Is de Adobe-campagne correct geïntegreerd?
+   * Is Adobe Campaign correct geïntegreerd?
 
       Aanmelden bij: **http(s):///`<urlserver>`/r/test** URL. De server moet het volgende berichttype retourneren
 
@@ -58,21 +58,21 @@ Controleer de volgende informatie:
 
       Als u dit resultaat niet verkrijgt, controleer in uw de serverconfiguratie van het Web dat de integratie in acht wordt genomen.
 
-1. **Controleert aan de zijde van de Campagne van Adobe**
+1. **Controles aan de zijde van de Adobe Campaign**
 
-   * Is de Adobe Campaign Web-module gestart?
+   * Is de module Adobe Campaign Web gestart?
 
       Maak verbinding met de volgende URL: **http(s)://`<URLSERVER>`/nl/jsp/logon.jsp**
 
       * Als u een Tomcat Java-fout verkrijgt:
 
-         Is de integratie van JAVA correct uitgevoerd? Voor Adobe Campaign is een JDK van SUN vereist.
+         Is de integratie van JAVA correct uitgevoerd? Adobe Campaign heeft een SUN JDK nodig.
 
-         Het is geïntegreerd in het bestand **`[path of application]`/nl6/customer.sh **
+         Het is geïntegreerd in het bestand **`[path of application]`/nl6/customer.sh**
 
       * Als u een lege pagina krijgt:
 
-         Is de module Web van de Campagne van Adobe begonnen? U zou moeten verkrijgen:
+         Is de module Adobe Campaign Web gestart? U zou moeten verkrijgen:
 
          ```
          nlserver pdump
@@ -89,5 +89,5 @@ Controleer de volgende informatie:
          ```
 >[!NOTE]
 >
->Als u een antwoord van het volgende type krijgt wanneer u de modules van de Campagne van Adobe opsomt: **nlserver pdump**
+>Als u een reactie van het volgende type krijgt wanneer u de Adobe Campaign-modules opsomt: **nlserver pdump**
 >HH:MM:SS > Toepassingsserver voor Adobe Campaign Classic (7.X YY.R build XXX@SHA1) van DD/MM/YYYY Geen taken U moet de volledige Adobe Campaign-toepassing opnieuw starten. Hiervoor gebruikt u de volgende opdracht: **nlserver watchdog -svc -noconsole **
