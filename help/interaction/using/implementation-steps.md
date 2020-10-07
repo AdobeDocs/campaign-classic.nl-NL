@@ -1,7 +1,7 @@
 ---
-title: Uitvoeringsstappen
-seo-title: Uitvoeringsstappen
-description: Uitvoeringsstappen
+title: Implementatiestappen
+seo-title: Implementatiestappen
+description: Implementatiestappen
 seo-description: null
 page-status-flag: never-activated
 uuid: 11582071-00a2-4245-af3e-bc81174ce223
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: general-operation
 discoiquuid: 7f79c0d8-77b0-4cc6-a888-7dbd32d2f3b6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 3%
 
 ---
 
 
-# Uitvoeringsstappen{#implementation-steps}
+# Implementatiestappen{#implementation-steps}
 
 ## Interactie configureren {#configuring-interaction}
 
@@ -28,7 +28,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 >
 >De volgende stappen moeten worden uitgevoerd door een **beheerdersprofiel** en alleen in ontwerpomgevingen.
 
-1. Gebruikersprofielen maken. Raadpleeg de profielen [van](../../interaction/using/operator-profiles.md)operatoren voor meer informatie.
+1. Gebruikersprofielen maken. For more on this, refer to [Operator profiles](../../interaction/using/operator-profiles.md).
 1. Creërend een aanbiedingsmilieu door dimensie te richten. Raadpleeg [Een aanbiedingsomgeving](../../interaction/using/live-design-environments.md#creating-an-offer-environment)maken voor meer informatie hierover.
 1. Typologische regels maken voor elke omgeving. Voor meer op dit, verwijs naar het [Creëren van en het van verwijzingen voorzien van een de presentatieregel](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule)van de aanbieding.
 1. Het creëren van aanbiedingsruimten voor elke milieu en het vormen van teruggevende functies. Raadpleeg [Aanbiedingsruimten](../../interaction/using/creating-offer-spaces.md)maken voor meer informatie hierover.
@@ -45,7 +45,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
    >
    >Wanneer een ruimte op het binnenkomende kanaal van het Web wordt gecreeerd, is een configuratie ook noodzakelijk op de plaats waarop de aanbieding zal worden getoond.
 
-## De aanbiedingencatalogus beheren {#managing-the-offer-catalog-}
+## Managing the offer catalog {#managing-the-offer-catalog-}
 
 >[!NOTE]
 >
