@@ -11,11 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 discoiquuid: cfff302a-6ac0-461a-a1e4-8e4b617fe134
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '106'
+ht-degree: 7%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 Gebeurtenissen die door het informatiesysteem worden gegenereerd, kunnen in twee modi worden verzameld:
 
-* Met aanroepen van SOAP-methoden kunt u gebeurtenissen in Adobe Campaign uitvoeren: Met de methode PushEvent kunt u één gebeurtenis tegelijk verzenden. Met de methode PushEvents kunt u verschillende gebeurtenissen tegelijk verzenden. Zie de [gebeurtenisbeschrijving](../../message-center/using/event-description.md).
+* Met aanroepen van SOAP-methoden kunt u gebeurtenissen in Adobe Campaign duwen: Met de methode PushEvent kunt u één gebeurtenis tegelijk verzenden. Met de methode PushEvents kunt u verschillende gebeurtenissen tegelijk verzenden. Zie de [gebeurtenisbeschrijving](../../message-center/using/event-description.md).
 * Als u een workflow maakt, kunt u gebeurtenissen herstellen door bestanden of via een SQL-gateway te importeren (met de optie **Federated Data Access** ).
 
 Zodra zij worden verzameld, worden de gebeurtenissen uitgesplitst - door technische werkschema&#39;s - tussen echt - tijd en partijrijen van de uitvoeringsinstanties, terwijl het wachten om aan een berichtmalplaatje worden verbonden.
