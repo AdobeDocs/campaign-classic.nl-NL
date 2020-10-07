@@ -9,14 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '864'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -35,7 +32,7 @@ Met deze stap kunt u mogelijke fouten detecteren en corrigeren voordat u deze aa
 
 De stappen voor het valideren van een levering worden weergegeven [in deze sectie](../../delivery/using/steps-validating-the-delivery.md).
 
-## Inbox rendering {#inbox-and-email-rendering}
+## Inboxrendering {#inbox-and-email-rendering}
 
 Met Postvak-rendering kunt u uw berichten voorvertonen bij belangrijke e-mailclients, inhoud en reputatie scannen en ontdekken hoe ontvangers berichten lezen.
 
@@ -109,7 +106,7 @@ U kunt:
 
 ### Typologieën gebruiken
 
-U kunt typologische regels gebruiken om een deel van het doel uit te sluiten op basis van specifieke criteria. Dit garandeert dat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid van het bedrijfs communicatie. U kunt bijvoorbeeld de ontvangers die jonger zijn, filteren van het doel van de nieuwsbrief. Meer informatie [in dit voorbeeld](../../campaign/using/filtering-rules.md).
+U kunt typologische regels gebruiken om een deel van het doel uit te sluiten op basis van specifieke criteria. Dit garandeert dat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid inzake bedrijfscommunicatie. U kunt bijvoorbeeld de ontvangers die jonger zijn, filteren van het doel van de nieuwsbrief. Meer informatie [in dit voorbeeld](../../campaign/using/filtering-rules.md).
 
 ### Bijlagen voorkomen
 
