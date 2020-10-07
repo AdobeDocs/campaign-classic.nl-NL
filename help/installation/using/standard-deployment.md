@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: d714b759-cc08-4656-876c-9820d5c56216
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '834'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ De twee servers in DMZ behandelen het volgen, spiegelen pagina&#39;s en levering
 
 De toepassingsserver in LAN dient het eind - gebruikers en voert alle terugkomende processen (werkschemamotor) uit. Wanneer piekbelastingen op de frontservers worden bereikt, heeft dit dus geen gevolgen voor de gebruikers van de toepassing.
 
-De databaseserver kan op een andere computer dan deze drie worden gehost. De toepassingsserver en de databaseserver kunnen anders dezelfde computer delen in het LAN, zolang het besturingssysteem wordt ondersteund door Adobe Campagne (Linux of Windows).
+De databaseserver kan op een andere computer dan deze drie worden gehost. De toepassingsserver en de databaseserver kunnen anders dezelfde computer delen in het LAN, zolang het besturingssysteem wordt ondersteund door Adobe Campaign (Linux of Windows).
 
 De algemene communicatie tussen servers en processen wordt uitgevoerd volgens het volgende schema:
 
@@ -56,14 +56,14 @@ Dit type van configuratie kan een groot aantal ontvangers (500.000 tot 1.000.000
 * Bounce mailbox toegankelijk via POP3,
 * Maken van twee DNS-aliassen:
 
-   * de eerste die aan het publiek voor het volgen van en het richten aan het taakverdelingsmechanisme op een virtueel IP adres (VIP) wordt blootgesteld en die dan aan de twee frontale servers wordt verdeeld;
+   * de eerste die aan het publiek wordt blootgesteld voor het volgen en aanwijzen van het taakverdelingsmechanisme op een virtueel IP adres (VIP) en die dan aan de twee frontale servers wordt verdeeld;
    * de tweede die aan de interne gebruikers voor toegang via de console wordt blootgesteld en aan de zelfde toepassingsserver richt.
 
 * Firewall geconfigureerd voor het openen van STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 voor Oracle, 5432 voor PostgreSQL, enz.) poorten. Voor meer informatie, verwijs naar sectie [Toegang](../../installation/using/network-configuration.md#database-access)van het Gegevensbestand.
 
 ### De toepassingsserver installeren {#installing-the-application-server}
 
-Voer de stappen uit om een zelfstandige instantie van de Adobe Campagne-toepassingsserver te installeren tot de database is gemaakt (stap 12). Zie [Installeren en configureren (enkele computer)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
+Voer de stappen uit om een zelfstandige instantie van de Adobe Campaign-toepassingsserver te installeren tot de database is gemaakt (stap 12). Zie [Installeren en configureren (enkele computer)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
 Aangezien de computer geen volgende server is, neem niet de integratie met de server van het Web in rekening.
 
@@ -80,14 +80,14 @@ De installatie en configuratieprocedure is identiek op beide computers.
 
 De stappen zijn als volgt:
 
-1. Installeer de Adobe Campagneserver.
+1. Installeer de Adobe Campaign-server.
 
    Raadpleeg voor meer informatie de [vereisten voor de installatie van Campagne in Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) en [de vereisten voor de installatie van Campagne in Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
 1. Volg de procedure van de de serverintegratie van het Web (IIS, Apache) in de volgende secties wordt beschreven die:
 
-   * Voor Linux: [Integratie in een webserver voor Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
-   * Voor Windows: [Integratie in een server van het Web voor Vensters](../../installation/using/integration-into-a-web-server-for-windows.md)
+   * For Linux: [Integration into a Web server for Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
+   * For Windows: [Integration into a Web server for Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
 1. Maak de **demo** -instantie. Er zijn twee manieren om dit te doen:
 
@@ -112,7 +112,7 @@ De stappen zijn als volgt:
 
 1. Verander **intern** in het zelfde als de toepassingsserver.
 
-   Raadpleeg de [interne id](../../installation/using/campaign-server-configuration.md#internal-identifier)voor meer informatie hierover.
+   For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
 1. Koppel de database aan de instantie:
 
@@ -122,7 +122,7 @@ De stappen zijn als volgt:
 
 1. Schakel in de bestanden **config-default.xml** en **config-demo.xml** de modules **web**, **trackinglogd** en **mta** in.
 
-   Raadpleeg [Processen](../../installation/using/campaign-server-configuration.md#enabling-processes)inschakelen voor meer informatie.
+   For more on this, refer to [Enabling processes](../../installation/using/campaign-server-configuration.md#enabling-processes).
 
 1. Bewerk het bestand **serverConf.xml** en vul het in:
 
@@ -136,7 +136,7 @@ De stappen zijn als volgt:
       >
       >De parameter **nameServers** wordt alleen in Windows gebruikt.
 
-      Raadpleeg de [leveringsinstellingen](../../installation/using/campaign-server-configuration.md#delivery-settings)voor meer informatie.
+      For more on this, refer to [Delivery settings](../../installation/using/campaign-server-configuration.md#delivery-settings).
 
    * de overtollige het volgen servers in de omleidingsparameters:
 
@@ -145,7 +145,7 @@ De stappen zijn als volgt:
       <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
       ```
 
-      Raadpleeg [Overbodige reeksspatiëring](../../installation/using/configuring-campaign-server.md#redundant-tracking)voor meer informatie.
+      For more on this, refer to [Redundant tracking](../../installation/using/configuring-campaign-server.md#redundant-tracking).
 
 1. Start de website en test de omleiding via de URL: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
 
@@ -163,10 +163,10 @@ De stappen zijn als volgt:
 
    Raadpleeg de volgende secties voor meer informatie hierover:
 
-   * Voor Linux: De server van het Web [lanceren en de configuratie testen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
-   * Voor Windows: De server van het Web [lanceren en de configuratie testen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
+   * Voor Linux: [De server van het Web lanceren en de configuratie testen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
+   * Voor Windows: [De server van het Web lanceren en de configuratie testen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
-1. Start de Adobe Campagneserver.
+1. Start de Adobe Campaign-server.
 1. Maak in de Adobe Campaign-console verbinding met de **beheerdersaanmelding** zonder wachtwoord en start de implementatietovenaar.
 
    Raadpleeg Een instantie [](../../installation/using/deploying-an-instance.md)implementeren voor meer informatie.
@@ -175,7 +175,7 @@ De stappen zijn als volgt:
 
 1. Vul de externe URL (die van het taakverdelingsmechanisme) die wordt gebruikt voor omleiding en de interne URL&#39;s van de twee frontale servers.
 
-   Voor meer op dit, verwijs naar het [Volgen configuratie](../../installation/using/deploying-an-instance.md#tracking-configuration).
+   For more on this, refer to [Tracking configuration](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
    ![](assets/d_ncs_install_tracking2.png)
 
