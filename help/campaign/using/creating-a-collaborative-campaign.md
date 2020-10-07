@@ -1,7 +1,7 @@
 ---
-title: Een samenwerkingscampagne maken
-seo-title: Een samenwerkingscampagne maken
-description: Een samenwerkingscampagne maken
+title: Een collaboratieve campagne maken
+seo-title: Een collaboratieve campagne maken
+description: Een collaboratieve campagne maken
 seo-description: null
 page-status-flag: never-activated
 uuid: 13d8ff65-1480-422a-85b6-40b553a3c151
@@ -11,20 +11,20 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: 01d8be92-7312-4386-b5f5-651af31308f7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '916'
+ht-degree: 4%
 
 ---
 
 
-# Een samenwerkingscampagne maken{#creating-a-collaborative-campaign-intro}
+# Een collaboratieve campagne maken{#creating-a-collaborative-campaign-intro}
 
 De centrale entiteit creeert samenwerkingscampagnes van de **Verdeelde de campagnemalplaatjes van de Marketing** . Zie [deze pagina](../../campaign/using/about-distributed-marketing.md#collaborative-campaign).
 
-## Een samenwerkingscampagne maken {#creating-a-collaborative-campaign}
+## Een collaboratieve campagne maken {#creating-a-collaborative-campaign}
 
 Als u een samenwerkingscampagne wilt configureren, klikt u op het **[!UICONTROL Campaign management > Campaigns]** knooppunt en vervolgens op het **[!UICONTROL New]** pictogram.
 
@@ -90,7 +90,7 @@ De campagneworkflow moet activiteiten van het type **Lokale goedkeuring** integr
 
 ![](assets/mkg_dist_data_distribution.png)
 
-Selecteer de **doeldimensie** en de **[!UICONTROL Distribution field]**. Selecteer voor de **[!UICONTROL Assignment type]** optie **Lokale entiteit**.
+Select the **Targeting dimension** and the **[!UICONTROL Distribution field]**. Selecteer voor de **[!UICONTROL Assignment type]** optie **Lokale entiteit**.
 
 Voeg op het **[!UICONTROL Distribution]** tabblad een veld toe voor elke lokale entiteit en geef de waarde op.
 
@@ -110,14 +110,14 @@ De lokale entiteit kan bepaalde contacten schrappen die op de campagneinhoud wor
 
 Als u een eenvoudige samenwerkingscampagne wilt maken, moet u de **[!UICONTROL Collaborative campaign (simple)]** sjabloon selecteren.
 
-## Een gezamenlijk campagnemakket maken {#creating-a-collaborative-campaign-package}
+## Creating a collaborative campaign package {#creating-a-collaborative-campaign-package}
 
 Om een campagne ter beschikking te stellen van lokale entiteiten moet de centrale entiteit een campagnepakket maken.
 
 Voer de volgende stappen uit:
 
 1. Klik in de **[!UICONTROL Navigation]** sectie op de pagina **Campagnes** op de **[!UICONTROL Campaign packages]** koppeling.
-1. Klik op de **[!UICONTROL Create]** knop.
+1. Klik op de knop **[!UICONTROL Create]**.
 1. In het gedeelte boven in het venster kunt u de **[!UICONTROL New collaborative package (mutualizedEmpty)]** sjabloon selecteren.
 1. Selecteer de referentiecampagne.
 1. Geef het label, de map en het uitvoeringsschema voor het campagnemakket op.
@@ -134,7 +134,7 @@ Voor **samenwerkingscampagnes** moet de centrale entiteit de registratie- en per
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry.png)
 
-### Publiek {#audience}
+### Doelgroep {#audience}
 
 De centrale entiteit moet de betrokken lokale entiteiten per campagne specificeren zodra de samenwerkingscampagne is opgezet.
 
@@ -176,7 +176,7 @@ Nadat een lokale entiteit de registratie heeft voltooid, worden centrale entitei
 
 ![](assets/mkg_dist_mutual_op_valid_command.png)
 
-Raadpleeg de sectie [Goedkeuringsproces](../../campaign/using/creating-a-local-campaign.md#approval-process) voor meer informatie.
+For more on this, refer to the [Approval process](../../campaign/using/creating-a-local-campaign.md#approval-process) section.
 
 ## Een bestelling goedkeuren {#approving-an-order}
 
