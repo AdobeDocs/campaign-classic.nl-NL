@@ -1,7 +1,7 @@
 ---
-title: Een webtoepassing vertalen
-seo-title: Een webtoepassing vertalen
-description: Een webtoepassing vertalen
+title: Een webapplicatie vertalen
+seo-title: Een webapplicatie vertalen
+description: Een webapplicatie vertalen
 seo-description: null
 page-status-flag: never-activated
 uuid: 7b24a872-d3d1-4473-a6f9-96ba2a0eee8b
@@ -11,24 +11,24 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: 328e5b2f-8596-4eda-8ac5-57cb29bfb691
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '367'
+ht-degree: 6%
 
 ---
 
 
-# Een webtoepassing vertalen{#translating-a-web-application}
+# Een webapplicatie vertalen{#translating-a-web-application}
 
-U kunt webtoepassingspagina&#39;s die zijn gemaakt met de Adobe Campagne Digital Content Editor (DCE), vertalen.
+U kunt webtoepassingspagina&#39;s die zijn gemaakt met de Adobe Campaign Digital Content Editor (DCE), vertalen.
 
 Als u via het **[!UICONTROL Localization]** **[!UICONTROL Properties]** tabblad in een webtoepassing ten minste één extra taal selecteert, wordt een nieuwe optie beschikbaar wanneer u een HTML-inhoudsblok toevoegt aan een pagina die met DCE wordt bewerkt.
 
 Met deze optie kunt u aangeven of de blokinhoud moet worden vertaald of niet.
 
-Tekenreeksen die moeten worden vertaald, worden op dezelfde manier verzameld als de andere tekenreeksen van de webtoepassing, via het **[!UICONTROL Translations]** tabblad van de toepassing. Raadpleeg [deze pagina](../../web/using/translating-a-web-form.md)voor meer informatie.
+Tekenreeksen die moeten worden vertaald, worden op dezelfde manier verzameld als de andere tekenreeksen van de webtoepassing, via het **[!UICONTROL Translations]** tabblad van de toepassing. Raadpleeg [deze pagina](../../web/using/translating-a-web-form.md) voor meer informatie.
 
 De tekenreeksen markeren die moeten worden vertaald:
 
