@@ -11,11 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 discoiquuid: afb375de-2de3-47ad-8b37-664cc04864e8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 9%
 
 ---
 
@@ -38,4 +38,4 @@ Deze soort kan in de eigenschappen van het berichtmalplaatje worden veranderd zo
 
 >[!NOTE]
 >
->Voor gehoste of hybride installaties, als u tot Verbeterde MTA hebt bevorderd, kunnen alle transactionele berichten ook met de Verbeterde MTA van de Campagne van Adobe voor betere leverability, productie, en stuitbehandeling worden verzonden. Alle effecten zijn gelijk aan die voor standaardmarketingberichten en worden beschreven in het document [Adobe Campagne Enhanced MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) .
+>Voor ontvangen of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, kunnen alle transactionele berichten ook met Adobe Campaign Verbeterde MTA voor betere leverability, productie, en stuitbehandeling worden verzonden. Alle effecten zijn gelijk aan die voor standaardmarketingberichten en worden beschreven in het document [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/nl/campaign/kb/acc-campaign-enhanced-mta.html) .
