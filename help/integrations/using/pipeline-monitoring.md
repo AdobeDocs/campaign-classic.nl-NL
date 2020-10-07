@@ -1,7 +1,7 @@
 ---
-title: Integratie configureren
-seo-title: Integratie configureren
-description: Integratie configureren
+title: De integratie configureren
+seo-title: De integratie configureren
+description: De integratie configureren
 seo-description: null
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
@@ -11,19 +11,16 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Pipetcontrole {#pipeline-monitoring}
+# Pipelinecontrole {#pipeline-monitoring}
 
 De [!DNL pipelined] statuswebservice geeft informatie over de status van het [!DNL pipelined] proces.
 
@@ -55,7 +52,7 @@ Aanbevolen indicatoren voor de bewaking worden gemarkeerd.
    * average-pointer-flush-time-ms: gemiddelde verwerkingstijd voor één partij triggers.
    * gemiddelde-trigger-processing-time-ms: gemiddelde tijd die wordt doorgebracht het ontleden van de trekkergegevens.
    * gelezen door bytes: Het aantal bytes dat uit de wachtrij is gelezen sinds het proces is gestart.
-   * current-messages: Het huidige aantal berichten in behandeling die uit de wachtrij zijn gehaald en in afwachting zijn van verwerking. **Deze indicator moet dicht bij nul** zijn.
+   * current-messages: Het huidige aantal berichten in behandeling die uit de wachtrij zijn gehaald en op verwerking wachten. **Deze indicator moet dicht bij nul** zijn.
    * huidige-pogingen: Het huidige aantal berichten dat niet is verwerkt en dat nog moet worden geprobeerd.
    * piekberichten: maximumaantal berichten dat in behandeling is sinds het proces is gestart.
    * aanwijzer-flushes: aantal batches berichten die sinds het begin zijn verwerkt.
