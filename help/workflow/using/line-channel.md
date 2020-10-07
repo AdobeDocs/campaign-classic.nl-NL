@@ -11,18 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 discoiquuid: 367314a2-eb6d-4710-8a47-5a51049ad924
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '97'
+ht-degree: 13%
 
 ---
 
 
 # LINE-kanaal{#line-channel}
 
-De hieronder beschreven workflows worden standaard geïnstalleerd met de module **LINE-kanaal** . Raadpleeg deze [sectie](../../delivery/using/line-channel.md)voor meer informatie over deze module.
+De hieronder beschreven workflows worden standaard geïnstalleerd met de module **LINE-kanaal** . For more on this module, refer to this [section](../../delivery/using/line-channel.md).
 
 <table> 
  <tbody> 
@@ -32,18 +32,18 @@ De hieronder beschreven workflows worden standaard geïnstalleerd met de module 
    <td> <strong>Beschrijving</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Update voor</span> toegangstoken van lijn V2 <br /> </td> 
+   <td> <span class="uicontrol">Update van toegangstoken LINE V2</span> <br /> </td> 
    <td> <span class="uicontrol">updateLineV2AccessToken</span> <br /> </td> 
    <td> Deze werkstroom verfrist het toegangstoken aan LIJN V2.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Geblokkeerde lijngebruikers</span> verwijderen <br /> </td> 
+   <td> <span class="uicontrol">Geblokkeerde lijngebruikers verwijderen</span> <br /> </td> 
    <td> <span class="uicontrol">deleteBlockedLineUsersV2</span> <br /> </td> 
    <td> Deze workflow zorgt ervoor dat de gegevens van de gebruikers van de LIJN V2 worden verwijderd nadat ze de officiële account van de LIJN gedurende 180 dagen hebben geblokkeerd.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">MID naar migratie naar LineUserID</span><br /> </td> 
-   <td> <span class="uicontrol">MIDToUserIDMigration</span><br /> </td> 
+   <td> <span class="uicontrol">MID naar migratie naar LineUserID</span> <br /> </td> 
+   <td> <span class="uicontrol">MIDToUserIDMigration</span> <br /> </td> 
    <td> Deze workflow genereert de LINE V2-gebruikers-id voor migratie van LIJN V1 naar LIJN V2.<br /> </td> 
   </tr> 
  </tbody> 
