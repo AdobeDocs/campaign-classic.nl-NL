@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 13%
 
 ---
 
@@ -47,7 +47,7 @@ U moet parameters voltooien om de levering te identificeren. Dit doet u als volg
 
    Een leveringscode kan ook aan de levering worden toegewezen. De naam van de levering en de bijbehorende code worden weergegeven in de lijst met leveringen, maar kunnen niet door de ontvangers worden gezien.
 
-1. Voeg een beschrijving toe aan het **[!UICONTROL Description]** veld.
+1. Voeg een beschrijving toe in het **[!UICONTROL Description]** veld.
 1. Selecteer de leveringsaard op het relevante gebied. Deze informatie is handig voor het bijhouden van de levering: u kunt filteren op basis van dit criterium in de leveringslijst of query&#39;s maken aan de hand van dit selectiecriterium.
 
    ![](assets/s_ncs_user_email_del_nature.png)
@@ -56,8 +56,8 @@ U moet parameters voltooien om de levering te identificeren. Dit doet u als volg
 
 De leveringsinhoud is klaar om te worden gevormd. De definitie van de inhoud van de levering is specifiek voor elk kanaal. Raadpleeg de desbetreffende sectie voor meer informatie hierover:
 
-* [De e-mailinhoud definiëren](../../delivery/using/defining-the-email-content.md)
+* [De e-mailcontent definiëren](../../delivery/using/defining-the-email-content.md)
 * [De SMS-inhoud definiëren](../../delivery/using/sms-channel.md#defining-the-sms-content)
-* [De inhoud voor direct mail definiëren](../../delivery/using/defining-the-direct-mail-content.md)
+* [De content voor direct mail definiëren](../../delivery/using/defining-the-direct-mail-content.md)
 * [Pushmeldingen](../../delivery/using/about-mobile-app-channel.md)
 
