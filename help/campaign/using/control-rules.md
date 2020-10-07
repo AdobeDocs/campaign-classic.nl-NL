@@ -1,7 +1,7 @@
 ---
-title: Controlevoorschriften
-seo-title: Controlevoorschriften
-description: Controlevoorschriften
+title: Controleregels
+seo-title: Controleregels
+description: Controleregels
 seo-description: null
 page-status-flag: never-activated
 uuid: a83e56d0-573a-4592-b2b1-0d3b3e52b03f
@@ -11,16 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: be037a80-3f94-465c-ba7d-ae7d50f70e36
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 2%
 
 ---
 
 
-# Controlevoorschriften{#control-rules}
+# Controleregels{#control-rules}
 
 ## Regels inzake analyse en arbitrage {#analysis-and-arbitration-control-rules}
 
@@ -37,7 +37,7 @@ Met een set regels voor verduistering kunt u gebruikelijke controles uitvoeren. 
 * **[!UICONTROL Wave scheduling check]** (e-mail): controleert of de laatste leveringsgolf volgens de planning vóór het einde van de geldigheidsperiode zal beginnen, als de levering in verschillende golven is opgesplitst.
 * **[!UICONTROL Unsubscription link approval]** (e-mail): controleert op de aanwezigheid van ten minste één niet-abonnements-URL (opt-out) in elke inhoud (HTML en Tekst).
 
-## Een besturingsregel maken {#creating-a-control-rule}
+## Creating a control rule {#creating-a-control-rule}
 
 Het is mogelijk om nieuwe controleregels tot stand te brengen om uw behoeften aan te passen. Om dit te doen, creeer een **[!UICONTROL Control]** typologieregel en ga de controleformule in SQL op het **[!UICONTROL Code]** lusje in.
 
