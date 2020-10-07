@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1a139e1704a7df38a7b8088e23c972864f8ad998
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1227'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Marketingcampagnes opzetten{#setting-up-marketing-campaigns}
+# Setting up marketing campaigns{#setting-up-marketing-campaigns}
 
 De campagnes omvatten acties (leveringen) en processen (het invoeren of het halen van dossiers), evenals middelen (marketing documenten, leveringsoverzichten). Ze worden gebruikt in marketingcampagnes. Campagnes maken deel uit van een programma en programma&#39;s zijn opgenomen in een campagneplan.
 
@@ -37,7 +34,7 @@ Een marketingcampagne maken:
 
    Zie [De doelpopulatie](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)selecteren.
 
-1. Leveringen maken: selecteert u de kanalen en definieert u de inhoud die u wilt verzenden.
+1. Leveringen maken: selecteert u kanalen en definieert u de inhoud die u wilt verzenden.
 
    Zie [Leveringen](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries)maken.
 
@@ -121,7 +118,7 @@ Een terugkomende campagne is een campagne die op een specifiek malplaatje wordt 
 
 Een periodieke campagne is een campagne die automatisch volgens het uitvoeringsprogramma van zijn malplaatje wordt gecreeerd.
 
-### Een terugkerende campagne maken {#creating-a-recurring-campaign}
+### Creating a recurring campaign {#creating-a-recurring-campaign}
 
 Herhalende campagnes worden gecreeerd van een specifiek malplaatje dat het werkschemamalplaatje bepaalt dat en het uitvoeringsplan moet worden uitgevoerd.
 
@@ -145,7 +142,7 @@ Geef op dit tabblad de geplande uitvoeringsdatums op voor de campagnes die op de
 
 ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-De configuratiewijze van het uitvoeringsprogramma valt samen met het **[!UICONTROL Scheduler]** voorwerp van het Werkschema. For more on this, refer to [this section](../../workflow/using/architecture.md).
+De configuratiewijze van het uitvoeringsprogramma valt samen met het **[!UICONTROL Scheduler]** voorwerp van het Werkschema. Raadpleeg [deze sectie](../../workflow/using/architecture.md) voor meer informatie.
 
 >[!IMPORTANT]
 >
@@ -175,6 +172,7 @@ Pas de volgende procedure toe om de terugkerende campagne te maken en de workflo
 
    * **[!UICONTROL To be approved]** : Hiermee kunt u de goedkeuringsaanvragen voor levering afdwingen in de workflow.
    * **[!UICONTROL To be started]** : Hiermee kunt u de workflow starten wanneer de begindatum is bereikt.
+
    In het **[!UICONTROL Create in advance for]** veld kunt u alle workflows maken die de ingevoerde periode beslaan.
 
    Na uitvoering van de **[!UICONTROL Jobs on campaigns]** workflow worden de toegewijde workflows gemaakt op basis van de gebeurtenissen die in het campagneprogramma zijn gedefinieerd. Op deze manier wordt voor elke uitvoeringsdatum een workflow gemaakt.
@@ -198,7 +196,7 @@ Pas de volgende procedure toe om de terugkerende campagne te maken en de workflo
    >De begindatum van de aan de workflow gekoppelde planningsregel is beschikbaar in een variabele van de workflow met de volgende syntaxis:\
    >`$date(instance/vars/@startPlanningDate)`
 
-### Een periodieke campagne maken {#creating-a-periodic-campaign}
+### Creating a periodic campaign {#creating-a-periodic-campaign}
 
 Een periodieke campagne is een campagne die op een specifiek malplaatje wordt gebaseerd dat u campagneinstanties laat tot stand brengen die op een uitvoeringsprogramma worden gebaseerd. Campagneinstanties worden automatisch gemaakt op basis van een periodiek campagnemalplaatje, afhankelijk van de frequentie die in het sjabloonprogramma is gedefinieerd.
 
@@ -228,7 +226,7 @@ Een periodieke campagne is een campagne die op een specifiek malplaatje wordt ge
 
    >[!IMPORTANT]
    >
-   >De periodieke campagnemalplaatjes creëren nieuwe campagnes volgens het hierboven bepaalde programma. Deze moet daarom zorgvuldig worden voltooid om overbelasting van de Adobe Campaign-database te voorkomen.
+   >De periodieke campagnemalplaatjes creëren nieuwe campagnes volgens het hierboven bepaalde programma. Het moet daarom zorgvuldig worden afgerond om overbelasting van de Adobe Campaign-databank te voorkomen.
 
 1. Wanneer de begindatum van de uitvoering is bereikt, wordt de overeenkomende campagne automatisch gemaakt. Het neemt alle kenmerken van zijn malplaatje over.
 
