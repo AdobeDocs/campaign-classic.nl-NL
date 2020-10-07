@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 discoiquuid: 181fcb70-9394-4091-93df-92c39273ec3d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 Wanneer het creëren van een levering, zijn er twee mogelijke methodes om aanbiedingen te integreren:
 
-* De aanbiedingsmotor aanroepen in de hoofdtekst van een levering.
+* De aanbiedingsmotor in de hoofdtekst van een levering aanroepen.
 * Verwijzen naar aanbiedingen via de leveringscontouren van een campagne. Deze methode wordt over het algemeen gebruikt voor papiercampagnes.
 
 ## Het leveren met een vraag aan de aanbiedingsmotor {#delivering-with-a-call-to-the-offer-engine}
