@@ -11,18 +11,18 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 discoiquuid: d538f489-f1ae-4682-9c21-d0300bd42b26
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 3%
 
 ---
 
 
 # Stappen om een query te maken{#steps-to-create-a-query}
 
-U kunt als volgt een query samenstellen in Adobe Campaign:
+De stappen voor het bouwen van een vraag in Adobe Campaign zijn als volgt:
 
 1. Selecteer de werktabel. Zie [Stap 1 - kies een lijst](#step-1---choose-a-table).
 1. Selecteer de gegevens die u wilt extraheren. Zie [Stap 2 - kies gegevens om te extraheren](#step-2---choose-data-to-extract).
@@ -60,7 +60,7 @@ U kunt uitvoerkolomgegevens groeperen: Om dit te doen, controleer **[!UICONTROL 
 
 * Met de **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** functie kunt u groeperen op en selecteren wat is gegroepeerd (&quot;hebben&quot;). Deze functie is van toepassing op alle velden in de uitvoerkolom. Met deze optie kunt u bijvoorbeeld alle keuzen van een uitvoerkolom groeperen en een bepaald type informatie herstellen, zoals ontvangers tussen 35 en 50.
 
-   Zie [deze sectie](../../workflow/using/querying-using-grouping-management.md)voor meer informatie.
+   Raadpleeg [deze sectie](../../workflow/using/querying-using-grouping-management.md) voor meer informatie.
 
 * Met de **[!UICONTROL Remove duplicate rows (DISTINCT)]** functie kunt u identieke resultaten dedupliceren die in de uitvoerkolom zijn verkregen. Als u bijvoorbeeld een telling uitvoert door de velden Achternaam, Voornaam en E-mail te selecteren in de uitvoerkolom, worden de velden met identieke gegevens verwijderd, omdat dit betekent dat dezelfde contactpersoon meerdere malen in de database is ingevoerd: slechts één resultaat zal in aanmerking worden genomen .
 
@@ -102,7 +102,7 @@ Zoals aangetoond in het volgende voorbeeld, om alle Engelstalige ontvangers teru
 
 >[!NOTE]
 >
->U hebt rechtstreeks toegang tot een optie door de volgende formule te typen in het veld **Waarde** : **$(opties:OPTION_NAME)**.
+>U hebt rechtstreeks toegang tot een optie door de volgende formule te typen in het veld **Waarde** : **$(options:OPTION_NAME)**.
 
 Klik op het **[!UICONTROL Preview]** tabblad om het resultaat van de filtervoorwaarde weer te geven. In dit geval worden alle Engelstalige ontvangers weergegeven met hun naam, voornaam en e-mailadres.
 
