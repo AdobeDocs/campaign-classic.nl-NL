@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 86c18986-1f65-40ff-80dc-1fbff37f406d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2980'
 ht-degree: 0%
@@ -27,27 +24,27 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-In het volgende gedeelte vindt u een overzicht van de configuratie die is vereist voor het beheren van de uitvoer van Adobe Campaign-instanties bij het verzenden van e-mails.
+In de volgende sectie vindt u een overzicht van de configuratie die is vereist voor het beheer van de uitvoer van Adobe Campaign-instanties bij het verzenden van e-mails.
 
 >[!NOTE]
 >
->Sommige configuraties kunnen alleen door Adobe worden uitgevoerd voor implementaties die door Adobe worden gehost, bijvoorbeeld voor toegang tot de server- en instantieconfiguratiebestanden. Meer over de verschillende plaatsingen leren, verwijs naar de [Hosting modelsectie](../../installation/using/hosting-models.md) of naar [dit artikel](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>Sommige configuraties kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen, bijvoorbeeld, om tot de server en de dossiers van de instantieconfiguratie toegang te hebben. Meer over de verschillende plaatsingen leren, verwijs naar de [Hosting modelsectie](../../installation/using/hosting-models.md) of naar [dit artikel](https://helpx.adobe.com/nl/campaign/kb/acc-on-prem-vs-hosted.html).
 
 Raadpleeg deze [sectie](../../delivery/using/about-deliverability.md)voor meer informatie over de concepten en beste praktijken met betrekking tot de leverbaarheid.
 
-Alle technische aanbevelingen met betrekking tot het efficiënt verzenden en ontvangen van e-mails door een Adobe Campagneplatform zijn beschikbaar in deze [sectie](../../delivery/using/technical-recommendations.md).
+Alle technische aanbevelingen betreffende het efficiënt verzenden en ontvangen van e-mails door een Adobe Campaign-platform zijn beschikbaar in deze [sectie](../../delivery/using/technical-recommendations.md).
 
-## Exploitatiebeginsel {#operating-principle}
+## Werkwijze {#operating-principle}
 
-Het is mogelijk om de uitvoer van een of meer Adobe Campagne-instanties te beheren om het aantal verzonden e-mails te beperken, afhankelijk van een domein. Bijvoorbeeld, kunt u de output tot 20.000 per uur voor adressen **yahoo.com** beperken, terwijl het vormen van 100.000 berichten per uur voor alle andere domeinen.
+Het is mogelijk om de uitvoer van een of meer Adobe Campaign-instanties te beheren om het aantal verzonden e-mails te beperken, afhankelijk van een domein. Bijvoorbeeld, kunt u de output tot 20.000 per uur voor adressen **yahoo.com** beperken, terwijl het vormen van 100.000 berichten per uur voor alle andere domeinen.
 
-De output van het bericht moet voor elk IP adres worden gecontroleerd dat door de leveringsservers (**mta**) wordt gebruikt. Verschillende **gegevens die** zijn opgesplitst op meerdere computers en die tot verschillende Adobe Campagne-instanties behoren, kunnen hetzelfde IP-adres delen voor het verzenden van e-mail: Er moet een proces worden ingesteld om het gebruik van deze IP-adressen te coördineren.
+De output van het bericht moet voor elk IP adres worden gecontroleerd dat door de leveringsservers (**mta**) wordt gebruikt. Verschillende **mta** &#39;s die zijn opgesplitst over verschillende computers en die tot verschillende Adobe Campaign-instanties behoren, kunnen hetzelfde IP-adres delen voor het verzenden van e-mail: Er moet een proces worden ingesteld om het gebruik van deze IP-adressen te coördineren.
 
 Dit is wat de **staatsmodule** doet: het door:sturen alle verbindingsverzoeken en berichten die naar de postservers voor een reeks IP adressen moeten worden verzonden. De statistiekserver houdt leveringen bij en kan verzending op basis van ingestelde quota in- of uitschakelen.
 
 ![](assets/s_ncs_install_mta.png)
 
-* De statistische server (**stat**) is gekoppeld aan een Adobe Campagnebasis om de configuratie ervan te laden.
+* De statistiekserver (**stat**) is gekoppeld aan een Adobe Campaign-basis om de configuratie ervan te laden.
 * De leveringsservers (**mta**) gebruiken UDP om een statistiekserver te contacteren die niet altijd tot hun eigen instantie behoort.
 
 ### Leveringsservers {#delivery-servers}
@@ -105,7 +102,7 @@ Wanneer een bericht wordt verzonden, zijn er 3 mogelijke resultaten:
 
    >[!NOTE]
    >
-   >Een **pad** is een verbinding tussen de Adobe Campagne **Mta** en de doel **mta**. De Adobe Campagne **mta** kan van verscheidene beginIPs en verscheidene doeldomeinIPs kiezen.
+   >Een **pad** is een verbinding tussen de **mta** van Adobe Campaign en de **mta** van het doel. De Adobe Campaign- **database** kan kiezen uit verschillende begin-IP&#39;s en verschillende doel-IP&#39;s.
 
 ### Berichten verlaten {#message-abandonment}
 
@@ -123,7 +120,7 @@ Een pad wordt doorgaans als niet beschikbaar gemarkeerd voor een variabele hoeve
 
 De statistische server kan door verscheidene instanties worden gebruikt: het moet onafhankelijk van de instanties worden gevormd die het zullen gebruiken.
 
-Begin door het gegevensbestand van de Campagne van Adobe te bepalen dat de configuratie zal ontvangen.
+Begin door het gegevensbestand te bepalen van Adobe Campaign dat de configuratie zal ontvangen.
 
 ### Configuratie starten {#start-configuration}
 
@@ -147,11 +144,11 @@ MX-regels (Mail eXchanger) zijn de regels die de communicatie tussen een verzend
 >
 >Voor ontvangen of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, worden de regels van de **[!UICONTROL MX management]** leveringsproductie niet meer gebruikt. Verbeterde MTA gebruikt zijn eigen MX regels die het toestaan om uw productie door domein aan te passen die op uw eigen historische e-mailreputatie wordt gebaseerd, en op real time terugkoppelen die uit de domeinen komt waar u e-mails verzendt.
 >
->Raadpleeg dit [document](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de verbeterde MTA voor Adobe-campagne.
+>Raadpleeg dit [document](https://helpx.adobe.com/nl/campaign/kb/acc-campaign-enhanced-mta.html)voor meer informatie over de Adobe Campaign Enhanced MTA.
 
 Deze regels worden automatisch elke ochtend om 6AM (servertijd) opnieuw geladen om de cliëntinstantie regelmatig te leveren.
 
-Afhankelijk van de materiaalcapaciteiten en het interne beleid, zal ISP een vooraf bepaald aantal verbindingen en berichten per uur goedkeuren. Deze variabelen kunnen automatisch door het ISP systeem afhankelijk van de reputatie van IP worden gewijzigd en domein verzenden. Via zijn leverbaarheidsplatform, beheert de Campagne van Adobe meer dan 150 specifieke regels door ISP, en, daarnaast, één generische regel voor andere domeinen.
+Afhankelijk van de materiaalcapaciteiten en het interne beleid, zal ISP een vooraf bepaald aantal verbindingen en berichten per uur goedkeuren. Deze variabelen kunnen automatisch door het ISP systeem afhankelijk van de reputatie van IP worden gewijzigd en domein verzenden. Via zijn leverbaarheidsplatform, beheert Adobe Campaign meer dan 150 specifieke regels door ISP, en, daarnaast, één generische regel voor andere domeinen.
 
 Het maximumaantal verbindingen hangt niet uitsluitend van het aantal openbare IP adressen af die door MTA worden gebruikt.
 
@@ -223,7 +220,7 @@ De regels die voor MX moeten worden nageleefd, worden bepaald in het **[!UICONTR
 Als het **[!UICONTROL MX management]** document niet bestaat in het knooppunt, kunt u het handmatig maken. Dit doet u als volgt:
 
 1. Maak een nieuwe set regels voor e-mail.
-1. Kies de **[!UICONTROL MX management]** modus.
+1. Choose the **[!UICONTROL MX management]** mode.
 
    ![](assets/s_ncs_install_mx_mgt_rule.png)
 
@@ -252,10 +249,12 @@ De volgende parameters beschikbaar voor elke regel zijn:
    * a.mx.yahoo.com
    * b.mx.yahoo.com
    * c.mx.yahoo.com
+
    zijn compatibel met de volgende maskers:
 
    * *.yahoo.com
    * ?.mx.yahoo.com
+
    Voor het e-mailadres foobar@gmail.com is het domein bijvoorbeeld gmail.com en de MX-record is:
 
    ```
@@ -272,6 +271,7 @@ De volgende parameters beschikbaar voor elke regel zijn:
 
    * Een getal: de regel geldt alleen voor deze publicId;
    * Een reeks getallen (**getal1-getal2**): de regel zal op alle publicIds tussen deze twee aantallen van toepassing zijn.
+
    >[!NOTE]
    >
    >Als het veld leeg is, geldt de regel voor alle id&#39;s.
@@ -313,7 +313,7 @@ U kunt de indeling van verzonden berichten definiëren, zodat de weergegeven inh
 
 Hiervoor gaat u naar het **[!UICONTROL Management of email formats]** document in **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]**.
 
-Dit document bevat een lijst met alle vooraf gedefinieerde domeinen die overeenkomen met de Japanse indelingen die worden beheerd door Adobe Campaign. Raadpleeg [dit document](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles)voor meer informatie.
+Dit document bevat een lijst met alle vooraf gedefinieerde domeinen die overeenkomen met de Japanse indelingen die door Adobe Campaign worden beheerd. For more information, refer to [this document](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
 
 ![](assets/mail_rule_sets.png)
 
@@ -338,7 +338,7 @@ Deze optie wordt vooral gebruikt door de Japanse markt voor **Deco-mail**, **Dec
 
 ### Synchronisatie vergrendelen {#clock-synchronization}
 
-De klokken van alle servers die het Adobe Campagne-platform (inclusief de database) vormen, moeten worden gesynchroniseerd en hun systemen moeten in dezelfde tijdzone worden ingesteld.
+De klokken van alle servers die het Adobe Campaign-platform (inclusief de database) vormen, moeten worden gesynchroniseerd en hun systemen moeten op dezelfde tijdzone worden ingesteld.
 
 ### Coördinaten van de statistiekserver {#coordinates-of-the-statistics-server}
 
@@ -383,7 +383,7 @@ De parameters zijn als volgt:
 * **adres**: dit is het IP adres van de MTA gastheermachine die moet worden gebruikt.
 * **heloHost**: dit herkenningsteken vertegenwoordigt het IP adres aangezien het door de server SMTP zal worden gezien.
 
-* **publicId**: deze informatie is nuttig wanneer een IP adres door verscheidene **mtas** van de Campagne van Adobe achter een NATIONAAL router wordt gedeeld. De statistiekserver gebruikt deze id om verbinding te onthouden en statistieken tussen dit uitgangspunt en de doelserver te verzenden.
+* **publicId**: deze informatie is nuttig wanneer een IP adres door verscheidene **mtas** van Adobe Campaign achter een NATIONAAL router wordt gedeeld. De statistiekserver gebruikt deze id om verbinding te onthouden en statistieken tussen dit uitgangspunt en de doelserver te verzenden.
 * **gewicht**: Hiermee kunt u de relatieve gebruiksfrequentie van het adres definiëren. Standaard hebben alle adressen een dikte gelijk aan 1.
 
 >[!NOTE]
@@ -411,7 +411,7 @@ Als, bijvoorbeeld, het eerste adres niet voor een bepaalde MX kan worden gebruik
 
 ## Optimalisatie van e-mailverzending {#email-sending-optimization}
 
-De interne architectuur van de Adobe Campaign- **database** heeft een invloed op de configuratie voor het optimaliseren van de e-maillevering. Hier volgen enkele tips voor het verbeteren van uw leveringen.
+De interne architectuur van de Adobe Campaign- **database** is van invloed op de configuratie voor het optimaliseren van de e-maillevering. Hier volgen enkele tips voor het verbeteren van uw leveringen.
 
 ### De parameter maxWaitingMessages aanpassen {#adjust-the-maxwaitingmessages-parameter}
 
