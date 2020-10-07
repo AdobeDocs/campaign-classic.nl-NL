@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: 2df82006-dcc3-4b07-bc36-b646b1c27aaa
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '910'
+ht-degree: 2%
 
 ---
 
@@ -44,13 +44,13 @@ Als u een nieuwe enquête wilt maken, gaat u naar het **[!UICONTROL Campaigns]**
 
 ## Stap 2 - De sjabloon selecteren {#step-2---selecting-the-template}
 
-Selecteer een enquêtemalplaatje, dan geef het onderzoek een naam. Deze naam is niet zichtbaar voor eindgebruikers, maar de enquête kan wel worden geïdentificeerd in Adobe Campaign. Klik **[!UICONTROL Save]** om het onderzoek aan de lijst van de toepassingen van het Web toe te voegen.
+Selecteer een enquêtemalplaatje, dan geef het onderzoek een naam. Deze naam is niet zichtbaar voor de eindgebruikers, maar maakt het mogelijk de enquête te identificeren binnen Adobe Campaign. Klik **[!UICONTROL Save]** om het onderzoek aan de lijst van de toepassingen van het Web toe te voegen.
 
 ![](assets/s_ncs_admin_survey_wz_00.png)
 
 ## Stap 3 - Opbouw van de enquête {#step-3---building-the-survey}
 
-De onderzoeken worden gebouwd in een diagram waar de volgende elementen worden geplaatst: de pagina(&#39;s) waar de inhoud wordt gemaakt, de stappen voor het vooraf laden en opslaan van gegevens en de testfasen. Scripts en query&#39;s kunnen ook worden ingevoegd.
+De onderzoeken worden gebouwd in een diagram waar de volgende elementen worden geplaatst: de pagina(&#39;s) waarop de inhoud wordt gemaakt, de stappen voor het vooraf laden en opslaan van gegevens en de testfasen. Scripts en query&#39;s kunnen ook worden ingevoegd.
 
 Klik op de **[!UICONTROL Edit]** vorm van de enquête om de grafiek te maken.
 
