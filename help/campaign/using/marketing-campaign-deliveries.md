@@ -11,19 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2956'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Aflevering van marketingcampagnes {#marketing-campaign-deliveries}
+# Marketing campaign deliveries {#marketing-campaign-deliveries}
 
 Leveringen kunnen worden gemaakt via het campagnedashboard, een campagneworkflow of rechtstreeks via het overzicht van leveringen.
 
@@ -83,12 +80,12 @@ De handleiding [Automating with workflows](../../workflow/using/architecture.md)
 
 ### Een e-mail maken in een campagne {#create-email-video}
 
-In deze video wordt uitgelegd hoe u een campagne en een e-mail kunt maken in Adobe Campaign Classic.
+In deze video wordt uitgelegd hoe u een campagne en een e-mail maakt in Adobe Campaign Classic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 
-#### Creating a targeting workflow {#creating-a-targeting-workflow}
+#### Een doelworkflow maken {#creating-a-targeting-workflow}
 
 Het richten kan door een combinatie filtervoorwaarden in een grafische opeenvolging in een werkschema worden tot stand gebracht. U kunt populaties en subpopulaties maken die op basis van uw vereisten worden aangepast. Klik op het **[!UICONTROL Targeting and workflows]** tabblad in het campagnemdashboard om de werkstroomeditor weer te geven.
 
@@ -208,7 +205,7 @@ Met de werkbalkpictogrammen kunt u actie ondernemen met betrekking tot de uitvoe
 
    ![](assets/s_user_segmentation_stop_unconditional.png)
 
-### Een besturingsgroep definiëren {#defining-a-control-group}
+### Defining a control group {#defining-a-control-group}
 
 Een controlegroep is een populatie die de levering niet zal ontvangen; het wordt gebruikt om het gedrag en de impact van de campagne na de levering te volgen door een vergelijking te maken met het gedrag van de doelpopulatie, die de levering heeft ontvangen.
 
@@ -258,7 +255,7 @@ U kunt ontvangers extraheren uit het hoofddoel van de levering. In dit geval, zu
 Als u een controlegroep wilt extraheren, schakelt u de controlegroep voor de campagne of levering in en selecteert u een van de volgende opties: **[!UICONTROL Activate random sampling]** of **[!UICONTROL Keep only the first records after sorting]**.
 
 * **[!UICONTROL Activate random sampling]** : bij deze optie wordt steekproefsgewijze bemonstering toegepast op de ontvangers in de doelpopulatie. Als u vervolgens de drempel instelt op 100, bestaat de controlegroep uit 100 ontvangers die willekeurig uit de doelpopulatie zijn geselecteerd. De willekeurige bemonstering is afhankelijk van de database-engine.
-* **[!UICONTROL Keep only the first records after sorting]** : met deze optie kunt u een beperking definiëren op basis van een of meer sorteervolgorden. Als u het **[!UICONTROL Age]** gebied als sorterend criterium selecteert en dan 100 als drempel bepaalt, zal de controlegroep uit de 100 jongste ontvangers worden samengesteld. Het zou bijvoorbeeld interessant kunnen zijn om een controlegroep te definiëren die ontvangers bevat die weinig aankopen doen, of ontvangers die vaak aankopen doen, en om hun gedrag te vergelijken met dat van de gecontacteerde ontvangers.
+* **[!UICONTROL Keep only the first records after sorting]** : met deze optie kunt u een limiet definiëren op basis van een of meer sorteervolgorden. Als u het **[!UICONTROL Age]** gebied als sorterend criterium selecteert en dan 100 als drempel bepaalt, zal de controlegroep uit de 100 jongste ontvangers worden samengesteld. Het zou bijvoorbeeld interessant kunnen zijn om een controlegroep te definiëren die ontvangers bevat die weinig aankopen doen, of ontvangers die vaak aankopen doen, en om hun gedrag te vergelijken met dat van de gecontacteerde ontvangers.
 
 Klik **[!UICONTROL Next]** om de sorteervolgorde te definiëren (indien nodig) en selecteer de beperkingsmodus voor ontvangers.
 
@@ -266,7 +263,7 @@ Klik **[!UICONTROL Next]** om de sorteervolgorde te definiëren (indien nodig) e
 
 Deze configuratie is gelijk aan een deelactiviteit in de workflow, waarmee u het doel kunt onderverdelen in subsets. De controlegroep is één van deze subsets. Raadpleeg de [volgende sectie](../../workflow/using/architecture.md) voor meer informatie.
 
-### Een besturingsgroep toevoegen {#adding-a-population}
+### Een controlegroep toevoegen {#adding-a-population}
 
 U kunt een nieuwe bevolking bepalen die als controlegroep moet worden gebruikt. Deze populatie kan uit een groep ontvangers komen of u kunt het tot stand brengen via een specifieke vraag.
 
@@ -373,7 +370,7 @@ In een campagne kunt u ook andere objecten bekijken, zoals promotiecoupons, spec
 
 >[!NOTE]
 >
->Als u MRM gebruikt, kunt u een bibliotheek van marketing middelen ook beheren die voor verscheidene deelnemers voor samenwerkingswerk beschikbaar zijn. Zie [Marketingbronnen](../../campaign/using/managing-marketing-resources.md)beheren.
+>Als u MRM gebruikt, kunt u een bibliotheek van marketing middelen ook beheren die voor verscheidene deelnemers voor samenwerkingswerk beschikbaar zijn. See [Managing marketing resources](../../campaign/using/managing-marketing-resources.md).
 
 ### Documenten toevoegen {#adding-documents}
 
@@ -400,7 +397,7 @@ In het dashboard worden de documenten die bij de campagne horen gegroepeerd in d
 
 ![](assets/s_ncs_user_op_edit_document.png)
 
-Deze kunnen ook vanuit deze weergave worden bewerkt en gewijzigd.
+U kunt ze ook vanuit deze weergave bewerken en wijzigen.
 
 ### Middelen koppelen en structureren via een leveringsoverzicht {#associating-and-structuring-resources-linked-via-a-delivery-outline}
 
