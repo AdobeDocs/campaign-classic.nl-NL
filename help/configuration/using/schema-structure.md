@@ -11,11 +11,8 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 discoiquuid: b5c8faf7-d0ae-4d95-b7fe-6ef9674a33d2
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 8e4fc977daf9039ee8587bf505d7406fd863e68b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 1%
@@ -132,7 +129,7 @@ De volgende regels moeten in acht worden genomen:
 
 * Alleen **`<element>`** elementen kunnen **`<attribute>`** elementen en **`<element>`** elementen in de XML-structuur bevatten.
 * Een **`<attribute>`** element moet een unieke naam binnen een element hebben **`<element>`**.
-* Het gebruik van gegevensreeksen **`<elements>`** met meerdere regels wordt aanbevolen.
+* Het gebruik van gegevensreeksen met meerdere regels wordt aanbevolen. **`<elements>`**
 
 ## Datatypen {#data-types}
 
