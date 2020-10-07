@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 6877d94d-d6e5-4080-a537-ef1bb6e6f8cf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 11%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ## Overzicht {#overview}
 
-Wanneer de toepassing toegang moet krijgen tot de gegevens van een bestaande tabel, een SQL-weergave of gegevens uit een externe database, maakt u het schema in Adobe Campagne met de volgende gegevens:
+Wanneer de toepassing toegang moet krijgen tot de gegevens van een bestaande tabel, een SQL-weergave of gegevens uit een externe database, maakt u het schema in Adobe Campaign met de volgende gegevens:
 
 * Naam van tabel: Voer de naam van de tabel (met de alias wanneer een koppeling wordt gebruikt) in met het kenmerk &quot;sqltable&quot;,
 * schemasleutel: verwijzing naar het (de) afstemmingsveld(en);
@@ -37,7 +37,7 @@ Wanneer de toepassing toegang moet krijgen tot de gegevens van een bestaande tab
 Pas de volgende stappen toe om het bijbehorende schema te maken:
 
 1. Bewerk het **[!UICONTROL Administration>Configuration>Data schemas]** knooppunt van de Adobe Campaign-structuur en klik **[!UICONTROL New]** .
-1. Selecteer de **[!UICONTROL Access data from an existing table or an SQL view]** optie en klik **[!UICONTROL Next]** .
+1. Select the **[!UICONTROL Access data from an existing table or an SQL view]** option and click **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 
@@ -64,7 +64,7 @@ Pas de volgende stappen toe om het bijbehorende schema te maken:
 </srcSchema>
 ```
 
-## Een externe database openen {#accessing-an-external-database}
+## Toegang tot een externe database {#accessing-an-external-database}
 
 Met de optie **Federated Data Access - FDA** hebt u toegang tot de gegevens die in een externe database zijn opgeslagen.
 
