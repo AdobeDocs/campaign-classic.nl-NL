@@ -11,18 +11,18 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 477a2c31-0403-4db1-a372-c75dca58380d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 6%
 
 ---
 
 
 # Integratie via SOAP (serverzijde){#integration-via-soap-server-side}
 
-De SOAP-webservices die worden aangeboden voor aanbiedingsbeheer, verschillen van de services die gewoonlijk worden gebruikt in Adobe Campaign. U hebt toegang tot deze bestanden via de interactie-URL die in de vorige sectie is beschreven. U kunt nu aanbiedingen voor een bepaalde contactpersoon presenteren of bijwerken.
+De SOAP-webservices die worden aangeboden voor aanbiedingsbeheer, verschillen van de services die gewoonlijk in Adobe Campaign worden gebruikt. U hebt toegang tot deze bestanden via de interactie-URL die in de vorige sectie is beschreven. U kunt nu aanbiedingen voor een bepaalde contactpersoon presenteren of bijwerken.
 
 ## Voorstel {#offer-proposition}
 
@@ -33,8 +33,8 @@ Voor een aanbiedingsvoorstel via ZEEP, voeg het **nms:proposition#Propose** beve
 * **context**: Hiermee kunt u contextinformatie toevoegen in het ruimteschema. Als het gebruikte schema **nms:interactie** is, **`<empty>`** zou moeten worden toegevoegd.
 * **categorieën**: geeft de categorie(ën) aan waartoe de aanbiedingen moeten behoren.
 * **thema**&#39;s: geeft het thema of de thema&#39;s aan waartoe de aanbieding(en) moeten behoren.
-* **uuuid**: waarde van het permanente cookie van Adobe Campaign (&quot;uuid230&quot;).
-* **nli**: De waarde van het Adobe Campagne-sessiecookie (&quot;null&quot;).
+* **uuuid**: waarde van de permanente cookie van Adobe Campaign (&quot;uuid230&quot;).
+* **nli**: waarde van het Adobe Campaign-sessiecookie (&quot;nlid&quot;).
 * **noProp**: Gebruik de waarde &quot;true&quot; om de invoeging van een voorstel te deactiveren.
 
 >[!NOTE]
