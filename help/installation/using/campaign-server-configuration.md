@@ -1,7 +1,7 @@
 ---
-title: Configuratie van campagneserver
-seo-title: Configuratie van campagneserver
-description: Configuratie van campagneserver
+title: Configuratie van de Campaign-server
+seo-title: Configuratie van de Campaign-server
+description: Configuratie van de Campaign-server
 seo-description: null
 page-status-flag: never-activated
 uuid: a1fadad2-e888-4dd8-bc1f-04df16ba7d46
@@ -11,24 +11,24 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 discoiquuid: f296676e-3bf1-47da-8239-f5ae54e52fc0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 4869eb41f942a89c48bc213913c44b70ae777bfc
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 3%
 
 ---
 
 
-# Configuratie van campagneserver{#campaign-server-configuration}
+# Configuratie van de Campaign-server{#campaign-server-configuration}
 
-In de volgende secties worden de verplichte serverconfiguraties beschreven die de efficiënte werking van Adobe Campagne voor de meeste opstelling zullen waarborgen.
+In de volgende secties worden verplichte serverconfiguraties beschreven die de efficiënte werking van Adobe Campaign voor de meeste sets garanderen.
 
 Er worden extra configuraties aangeboden in de [Campagneserver](../../installation/using/configuring-campaign-server.md)configureren.
 
 >[!NOTE]
 >
->Configuraties aan de serverzijde kunnen alleen door Adobe worden uitgevoerd voor implementaties die worden gehost door Adobe. Meer over de verschillende plaatsingen leren, verwijs naar de [Hosting modelsectie](../../installation/using/hosting-models.md) of naar dit [artikel](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>Serverconfiguraties kunnen alleen worden uitgevoerd door Adobe voor implementaties die worden gehost door Adobe. Meer over de verschillende plaatsingen leren, verwijs naar de [Hosting modelsectie](../../installation/using/hosting-models.md) of naar dit [artikel](https://helpx.adobe.com/nl/campaign/kb/acc-on-prem-vs-hosted.html).
 
 ## Interne id {#internal-identifier}
 
@@ -56,12 +56,12 @@ Confirmation: XXXX
 
 ## Configuratiebestanden {#configuration-files}
 
-De configuratiebestanden worden opgeslagen in de map **conf** in de installatiemap van Adobe Campagne. De configuratie wordt verspreid over twee bestanden:
+De configuratiebestanden worden opgeslagen in de map **conf** in de installatiemap van Adobe Campaign. De configuratie wordt verspreid over twee bestanden:
 
-* **`config-<instance>.xml`** (waarbij de **instantie** de naam van de instantie is): specifieke configuratie van de instantie. Als u uw server onder verschillende exemplaren deelt, gelieve de parameters specifiek voor elk geval in hun relevant dossier in te gaan.
+* **`config-<instance>.xml`** (waarbij de **instantie** de naam van de instantie is): specifieke configuratie van de instantie. Als u uw server onder verschillende exemplaren deelt, gelieve de parameters specifiek voor elke instantie in hun relevant dossier in te gaan.
 * **serverConf.xml**: algemene configuratie voor alle instanties. In dit bestand worden de technische parameters van de Adobe Campaign-server gecombineerd: deze worden door alle instanties gedeeld . Hieronder wordt een beschrijving van een aantal van deze parameters gegeven. Raadpleeg het bestand zelf om alle beschikbare parameters weer te geven. De verschillende knooppunten en parameters en vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
-U kunt de opslagdirectory (**var** directory) van Adobe Campagne-gegevens (logbestanden, downloads, omleidingen, enz.) configureren. Hiervoor gebruikt u de **systeemvariabele XTK_VAR_DIR** :
+U kunt de opslagdirectory (**var** directory) van Adobe Campaign-gegevens (logbestanden, downloads, omleidingen, enz.) configureren. Hiervoor gebruikt u de **systeemvariabele XTK_VAR_DIR** :
 
 * Geef in Windows de volgende waarde op in de **systeemvariabele XTK_VAR_DIR**
 
@@ -69,15 +69,15 @@ U kunt de opslagdirectory (**var** directory) van Adobe Campagne-gegevens (logbe
    D:\log\AdobeCampaign
    ```
 
-* Ga in Linux naar het bestand **customer.sh** en geef aan: XTK_VAR_DIR=/app/log/AdobeCampaign **exporteren**.
+* Ga in Linux naar het bestand **customer.sh** en geef aan: **XTK_VAR_DIR=/app/log/AdobeCampaign** exporteren.
 
-   Raadpleeg de [parameters](../../installation/using/installing-packages-with-linux.md#personalizing-parameters)aanpassen voor meer informatie hierover.
+   For more on this, refer to [Personalizing parameters](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
 ## Processen inschakelen {#enabling-processes}
 
-De processen van de Campagne van Adobe op de server worden toegelaten (en onbruikbaar gemaakt) via **config-default.xml** en **`config-<instance>.xml`** - dossiers.
+Adobe Campaign-processen op de server worden ingeschakeld (en uitgeschakeld) via **config-default.xml** en **`config-<instance>.xml`** bestanden.
 
-Als u de wijzigingen op deze bestanden wilt toepassen en de Adobe Campagne-service is gestart, moet u de opdracht **nlserver config -reload** uitvoeren.
+Als u de wijzigingen op deze bestanden wilt toepassen en de Adobe Campaign-service is gestart, moet u de opdracht **nlserver config -reload** uitvoeren.
 
 Er zijn twee soorten processen: meerdere instanties en één instantie.
 
@@ -85,7 +85,7 @@ Er zijn twee soorten processen: meerdere instanties en één instantie.
 
    Enablement kan van het **config-default.xml** - dossier worden gevormd.
 
-   Een Adobe Campagneserver declareren voor toegang tot clientconsoles en voor omleiding (tracking):
+   Adobe Campaign-server declareren voor toegang tot clientconsoles en voor omleiding (tracking):
 
    ```
    vi nl6/conf/config-default.xml
