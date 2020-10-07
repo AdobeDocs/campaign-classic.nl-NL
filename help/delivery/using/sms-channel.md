@@ -1,7 +1,7 @@
 ---
-title: SMS-kanaal
-seo-title: SMS-kanaal
-description: SMS-kanaal
+title: Sms-kanaal
+seo-title: Sms-kanaal
+description: Sms-kanaal
 seo-description: null
 page-status-flag: never-activated
 uuid: be6a2abc-ba5c-4363-bf38-cc309ee3a8d9
@@ -11,19 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 discoiquuid: 8b101c0b-3611-4f15-813b-7c0bf54fc48a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2f0bb31f7234289f39a561fa58a23cac0390b465
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3151'
-ht-degree: 1%
+ht-degree: 20%
 
 ---
 
 
-# SMS-kanaal{#sms-channel}
+# Sms-kanaal{#sms-channel}
 
 Met Adobe Campaign kunt u op grote schaal gepersonaliseerde leveringen van SMS-berichten uitvoeren. De ontvangende profielen moeten ten minste een mobiel telefoonnummer bevatten.
 
@@ -41,16 +38,16 @@ Als u naar een mobiele telefoon wilt verzenden, hebt u het volgende nodig:
 
 1. Een externe account die een connector en type bericht opgeeft.
 
-   Merk op dat de volgende schakelaars vanaf versie 20.2 zullen worden afgekeurd: NetSize, Generic SMPP (SMPP versie 3.4 die binaire wijze steunt), Sybase365 (SAP SMS 365), CLX Mededelingen, Tele2, O2 en iOS. Verouderde mogelijkheden zijn nog steeds beschikbaar, maar deze worden niet verder verbeterd en worden niet ondersteund. For more on this, refer to this [page](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html).
+   Merk op dat de volgende schakelaars vanaf versie 20.2 zullen worden afgekeurd: NetSize, Generic SMPP (SMPP versie 3.4 die binaire wijze steunt), Sybase365 (SAP SMS 365), CLX Mededelingen, Tele2, O2 en iOS. Verouderde mogelijkheden zijn nog steeds beschikbaar, maar deze worden niet verder verbeterd en worden niet ondersteund. Raadpleeg [deze pagina](https://helpx.adobe.com/nl/campaign/kb/deprecated-and-removed-features.html) voor meer informatie.
 
 1. Een leveringssjabloon waarin naar deze externe account wordt verwezen.
 
-### Een SMPP-externe account maken {#creating-an-smpp-external-account}
+### Creating an SMPP external account {#creating-an-smpp-external-account}
 
 Als u SMS naar een mobiele telefoon wilt verzenden, moet u eerst uw SMPP-externe account maken.
-Voor meer informatie over het protocol en de montages van SMS, verwijs naar deze [technische nota](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
+Voor meer informatie over het protocol en instellingen van sms raadpleegt u deze [technische opmerking](https://helpx.adobe.com/nl/campaign/kb/sms-connector-protocol-and-settings.html).
 
-Hiervoor voert u de volgende stappen uit:
+Volg de onderstaande stappen om dit te doen:
 
 1. Klik in het knooppunt **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** van de structuur op het **[!UICONTROL New]** pictogram.
 1. Definieer het accounttype als **Verpletterend**, het kanaal als **Mobiel (SMS)**, en de leveringswijze als **Bulk levering**.
@@ -64,9 +61,9 @@ Hiervoor voert u de volgende stappen uit:
 
    >[!CAUTION]
    >
-   > Vanaf versie 20.2 zijn verouderde connectors vervangen en niet ondersteund. Wij adviseren gebruikend de **[!UICONTROL Extended generic SMPP]** schakelaar. Raadpleeg deze [pagina](https://helpx.adobe.com/campaign/kb/sms-connector.html)voor meer informatie over het migreren naar de aanbevolen connector.
+   > Vanaf versie 20.2 zijn verouderde connectors vervangen en niet ondersteund. Wij adviseren gebruikend de **[!UICONTROL Extended generic SMPP]** schakelaar. Raadpleeg deze [pagina](https://helpx.adobe.com/nl/campaign/kb/sms-connector.html)voor meer informatie over het migreren naar de aanbevolen connector.
 
-1. De **[!UICONTROL Enable verbose SMPP traces in the log file]** optie staat u toe om al verkeer SMPP in logboekdossiers te dumpen. Deze optie moet worden toegelaten om de schakelaar problemen op te lossen en met het verkeer te vergelijken dat door de leverancier wordt gezien.
+1. The **[!UICONTROL Enable verbose SMPP traces in the log file]** option allows you to dump all SMPP traffic in log files. Deze optie moet zijn ingeschakeld om problemen met de connector op te lossen en om vergelijkingen te maken met het verkeer dat door de provider wordt waargenomen.
 
 1. Neem contact op met uw SMS-serviceprovider die u zal uitleggen hoe u de verschillende externe accountvelden op het **[!UICONTROL Connection settings]** tabblad kunt invullen.
 
@@ -76,23 +73,23 @@ Hiervoor voert u de volgende stappen uit:
 
 1. Standaard voldoet het aantal tekens in een SMS aan de GSM-standaarden.
 
-   SMS-berichten die gebruikmaken van GSM-codering mogen maximaal 160 tekens bevatten, of 153 tekens per SMS voor berichten die in meerdere onderdelen worden verzonden.
+   Sms-berichten met gsm-codering mogen maximaal 160 tekens bevatten of 153 tekens per sms voor berichten die in meerdere delen worden verzonden.
 
    >[!NOTE]
    >
-   >Bepaalde tekens tellen als twee tekens (accolades, vierkante haken, het euroteken, enz.).
+   >Bepaalde tekens tellen als twee tekens: accolades, vierkante haakjes, het euroteken, enzovoort. 
    >
    >De lijst met beschikbare GSM-tekens wordt hieronder weergegeven.
 
-   Desgewenst kunt u tekentransliteratie autoriseren door het desbetreffende vak in te schakelen.
+   Desgewenst kunt u tekentransliteratie autoriseren door het betreffende vakje in te schakelen.
 
    ![](assets/extended_smpp_transliteration.png)
 
    Raadpleeg [deze sectie](#about-character-transliteration) voor meer informatie.
 
-1. Op het **[!UICONTROL Throughput and delays]** lusje, kunt u de maximumproductie van uitgaande berichten (&quot;MT&quot;, Mobiel geëindigd) in MT per seconde specificeren. Als u &quot;0&quot;op het overeenkomstige gebied ingaat, zal de productie onbeperkt zijn.
+1. In the **[!UICONTROL Throughput and delays]** tab, you can specify the maximum throughput of outbound messages (&quot;MT&quot;, Mobile Terminated) in MT per second. Als u ‘0’ invoert in het overeenkomstige veld, is de doorvoer onbeperkt.
 
-   De waarden van alle velden die overeenkomen met de tijdsduur moeten in seconden worden ingevuld.
+   De waarden van alle velden die corresponderen met een tijdsduur, moeten in seconden worden ingevuld.
 
 1. Op het **[!UICONTROL Mapping of encodings]** tabblad kunt u coderingen definiëren.
 
@@ -102,7 +99,7 @@ Hiervoor voert u de volgende stappen uit:
 
    Aangezien bepaalde providers het gebruik van het voorvoegsel &#39;+&#39; vereisen, wordt u echter geadviseerd contact op te nemen met uw provider en wordt u aangeraden deze optie indien nodig in te schakelen.
 
-   Het **[!UICONTROL Enable TLS over SMPP]** selectievakje staat u toe om verkeer te coderen SMPP. Raadpleeg voor meer informatie deze [technische notitie](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
+   The **[!UICONTROL Enable TLS over SMPP]** checkbox allows you to encrypt SMPP traffic. For more on this, refer to this [technical note](https://helpx.adobe.com/nl/campaign/kb/sms-connector-protocol-and-settings.html).
 
 1. Als u een **[!UICONTROL Extended generic SMPP]** schakelaar vormt, kunt u opstelling automatische antwoorden.
 
@@ -112,20 +109,20 @@ Hiervoor voert u de volgende stappen uit:
 
 Tekentransliteratie kan worden ingesteld in een externe account voor levering via SMPP mobile, onder het **[!UICONTROL Mobile]** tabblad.
 
-Vertaling bestaat erin een teken van een SMS door een ander te vervangen wanneer dat teken niet in aanmerking wordt genomen door de GSM-standaard.
+Transliteratie houdt in dat een teken van een sms door een ander teken wordt vervangen wanneer dat teken niet in aanmerking wordt genomen door de gsm-standaard.
 
-* Als de vertaling is **[!UICONTROL authorized]**, wordt elk karakter dat niet in aanmerking wordt genomen vervangen door een GSM karakter wanneer het bericht wordt verzonden. De letter &quot;ë&quot; wordt bijvoorbeeld vervangen door &quot;e&quot;. Het bericht is daarom enigszins gewijzigd, maar de tekenlimiet blijft ongewijzigd.
-* Wanneer transliteratie is **[!UICONTROL not authorized]**, wordt elk bericht dat karakters bevat die niet in aanmerking worden genomen verzonden in binair formaat (Unicode): alle tekens worden daarom naar behoren verzonden. De SMS-berichten met Unicode zijn echter beperkt tot 70 tekens (of 67 tekens per SMS voor berichten die in meerdere delen worden verzonden). Als het maximumaantal tekens wordt overschreden, worden verschillende berichten verzonden, wat extra kosten kan veroorzaken.
+* If transliteration is **[!UICONTROL authorized]**, each character that is not taken into account is replaced by a GSM character when the message is sent. De letter ‘ë’ wordt bijvoorbeeld vervangen door ‘e’. Het bericht is daarom enigszins gewijzigd, maar de tekenlimiet blijft hetzelfde.
+* When transliteration is **[!UICONTROL not authorized]**, each message that contains characters that are not taken into account is sent in binary format (Unicode): all of the characters are therefore sent as they are. De sms-berichten met Unicode zijn echter beperkt tot 70 tekens (of 67 tekens per sms voor berichten die in meerdere delen worden verzonden). Als het maximum aantal tekens wordt overschreden, worden verschillende berichten verzonden, wat extra kosten kan veroorzaken.
 
 >[!IMPORTANT]
 >
->Als u personalisatievelden invoegt in de inhoud van uw SMS-bericht, worden mogelijk tekens ingevoegd waarmee de GSM-codering geen rekening houdt.
+>Als u personalisatievelden invoegt in de content van uw sms-bericht, worden mogelijk tekens ingevoegd die niet in aanmerking worden genomen door de gsm-codering.
 
-Standaard is tekentransliteratie uitgeschakeld. Als u alle tekens in uw SMS-berichten wilt behouden zoals ze zijn, wordt u aangeraden deze optie niet in te schakelen om bijvoorbeeld eigennamen te wijzigen.
+Standaard is transliteratie van tekens uitgeschakeld. Als u alle tekens in uw sms-berichten wilt behouden zoals ze zijn, bijvoorbeeld om geen eigennamen te wijzigen, wordt u aangeraden deze optie niet in te schakelen.
 
-Als uw SMS-berichten echter veel tekens bevatten die Unicode-berichten genereren, kunt u deze optie inschakelen om de kosten voor het verzenden van uw berichten te beperken.
+Als uw sms-berichten echter veel tekens bevatten die Unicode-berichten genereren, kunt u deze optie inschakelen om de kosten voor het verzenden van uw berichten te beperken.
 
-In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard rekening houdt. Alle karakters die in het berichtlichaam worden opgenomen, buiten die hieronder vermeld, zetten het volledige bericht in binair formaat (Unicode) om en beperken daarom het tot 70 karakters.
+In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard rekening houdt. Alle tekens die in de hoofdtekst van het bericht worden ingevoegd, met uitzondering van de onderstaande tekens, converteren het volledige bericht naar de binaire indeling (Unicode) en beperken het tot 70 tekens.
 
 **Standaardtekens**
 
@@ -154,7 +151,7 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
   <tr> 
    <td> $ </td> 
    <td> <img height="21px" src="assets/phi.png" /> </td> 
-   <td> " </td> 
+   <td> ’ </td> 
    <td> 2 </td> 
    <td> B </td> 
    <td> R </td> 
@@ -222,7 +219,7 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
    <td> x </td> 
   </tr> 
   <tr> 
-   <td> C </td> 
+   <td> Ç </td> 
    <td> <img height="21px" src="assets/theta.png" /> </td> 
    <td> ) </td> 
    <td> 9 </td> 
@@ -253,7 +250,7 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
   </tr> 
   <tr> 
    <td> ø </td> 
-   <td> AE </td> 
+   <td> Æ </td> 
    <td> , </td> 
    <td> &lt; </td> 
    <td> L </td> 
@@ -267,7 +264,7 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
    <td> - </td> 
    <td> = </td> 
    <td> M </td> 
-   <td> - </td> 
+   <td> Ñ </td> 
    <td> m </td> 
    <td> ñ </td> 
   </tr> 
@@ -300,7 +297,7 @@ ESC: Escape
 
 LF: Nieuwe regel
 
-CR: Enter
+CR: Enter-teken
 
 **Geavanceerde tekens (twee keer geteld)**
 
@@ -308,26 +305,26 @@ CR: Enter
 
 ### Informatie over tekstcoderingen {#about-text-encodings}
 
-Bij het verzenden van een SMS-bericht kan Adobe Campaign een of meer tekstcoderingen gebruiken. Elke codering heeft een eigen specifieke tekenset en bepaalt het aantal tekens dat in een SMS-bericht past.
+Wanneer u een sms-bericht verzendt, kan Adobe Campaign een of meer tekstcoderingen gebruiken. Elke codering heeft een eigen specifieke tekenset en bepaalt het aantal tekens dat in een sms-bericht past.
 
-Wanneer u een nieuwe externe account voor levering via SMPP voor mobiele apparaten configureert, kunt u deze account definiëren **[!UICONTROL Mapping of encodings]** op het **[!UICONTROL Mobile]** tabblad: in het **[!UICONTROL data_coding]** veld kan Adobe Campaign meedelen welke codering wordt gebruikt voor het SMSC.
+Wanneer u een nieuwe externe account voor levering via SMPP voor mobiele apparaten configureert, kunt u deze definiëren **[!UICONTROL Mapping of encodings]** op het **[!UICONTROL Mobile]** tabblad: in het **[!UICONTROL data_coding]** veld kan Adobe Campaign meedelen welke codering wordt gebruikt voor het SMSC.
 
 >[!NOTE]
 >
->De toewijzing tussen de werkelijk gebruikte **data_coding** -waarde en de codering wordt gestandaardiseerd. Bepaalde SMSC&#39;s hebben echter hun eigen specifieke kaart: in dit geval moet uw **Adobe Campaign** -beheerder deze toewijzing declareren. Vraag uw provider om meer informatie.
+>De toewijzing tussen de waarde **data_coding** en de werkelijk gebruikte codering wordt gestandaardiseerd. Nevertheless, certain SMSC have their own specific mapping: in this case, your **Adobe Campaign** administrator needs to declare this mapping. Neem contact op met uw provider om meer informatie te krijgen.
 
-U kunt **data_codings** verklaren en het coderen dwingen indien nodig: Hiervoor geeft u één codering in de tabel op.
+You can declare **data_codings** and force the encoding if necessary: to do this, specify a single encoding in the table.
 
 * Wanneer geen afbeelding van coderingen wordt bepaald, neemt de schakelaar een generisch gedrag over:
 
-   * Er wordt geprobeerd GSM-codering te gebruiken waaraan de waarde **data_coding = 0** wordt toegewezen.
-   * Als GSM-codering mislukt, wordt **UCS2** -codering gebruikt waaraan de waarde **data_coding = 8** wordt toegewezen.
+   * Er wordt geprobeerd gsm-codering te gebruiken waaraan de waarde **data_coding = 0** wordt toegewezen.
+   * Als gsm-codering mislukt, wordt **UCS2** -codering gebruikt waaraan de waarde **data_coding = 8** wordt toegewezen.
 
 * Wanneer u de coderingen definieert die u wilt gebruiken en de gekoppelde **[!UICONTROL data_coding]** veldwaarden, probeert Adobe Campaign de eerste codering in de lijst te gebruiken, gevolgd door de volgende codering als de eerste codering onmogelijk blijkt.
 
 >[!IMPORTANT]
 >
->De volgorde van de verklaringen is belangrijk: U wordt aangeraden de lijst in oplopende volgorde **van kosten** te plaatsen om de coderingen te bevorderen, zodat u in elk SMS-bericht zoveel mogelijk tekens kunt plaatsen.
+>De volgorde van de declaratie is belangrijk. U wordt aangeraden de lijst in oplopende volgorde **van kosten** te plaatsen om voorrang te geven aan de coderingen, zodat u in elk sms-bericht zoveel mogelijk tekens kunt plaatsen.
 >
 >Declareer alleen de coderingen die u wilt gebruiken. Als sommige coderingen die door het SMSC worden verstrekt niet met uw doel van gebruik zouden moeten beantwoorden, verklaar hen niet in de lijst.
 
@@ -375,7 +372,7 @@ Om het inheemse leveringsmalplaatje te houden, adviseren wij dat u het dupliceer
 
 In het onderstaande voorbeeld maken we een sjabloon voor het verzenden van berichten via de SMPP-account die eerder is ingeschakeld. Dit doet u als volgt:
 
-1. Ga naar het **[!UICONTROL Delivery templates]** knooppunt.
+1. Go to the **[!UICONTROL Delivery templates]** node.
 1. Klik met de rechtermuisknop op de **[!UICONTROL Send to mobiles]** sjabloon en selecteer **[!UICONTROL Duplicate]**.
 
    ![](assets/s_user_mobile_template_change_01.png)
@@ -406,7 +403,7 @@ Volg onderstaande stappen om een nieuwe SMS-levering te maken:
 >Algemene concepten voor het maken van leveringen worden in [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md)beschreven.
 
 1. Maak een nieuwe levering, bijvoorbeeld via het dashboard Levering.
-1. Selecteer het leveringsmalplaatje **Verzonden naar mobiele telefoons (SMPP)** dat u vroeger creeerde. Voor meer op dit, verwijs naar het [Veranderende de sectie van het leveringsmalplaatje](#changing-the-delivery-template) .
+1. Selecteer het leveringsmalplaatje **Verzonden naar mobiele telefoons (SMPP)** dat u vroeger creeerde. For more on this, refer to the [Changing the delivery template](#changing-the-delivery-template) section.
 
    ![](assets/s_user_mobile_wizard.png)
 
@@ -496,11 +493,11 @@ De volgende opties zijn beschikbaar:
 
 ## Bewaking en tracering van SMS-leveringen {#monitoring-and-tracking-sms-deliveries}
 
-Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Raadpleeg de volgende secties voor meer informatie:
+Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Raadpleeg deze secties voor meer informatie hierover:
 
-* [Toezicht op levering](../../delivery/using/monitoring-a-delivery.md)
+* [Een levering controleren](../../delivery/using/monitoring-a-delivery.md)
 * [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
-* [Over berichten bijhouden](../../delivery/using/about-message-tracking.md)
+* [Berichttracering](../../delivery/using/about-message-tracking.md)
 
 ## Binnenkomende berichten verwerken {#processing-inbound-messages}
 
@@ -528,7 +525,7 @@ Het InSMS-schema bevat relevante informatie over inkomende SMS. Een beschrijving
 * **oorsprong**: mobiel nummer bij de oorsprong van het bericht.
 * **providerId**: Identificatiecode van het door het SMSC geretourneerde bericht (berichtcentrum).
 * **gemaakt**: datum waarop het inkomende bericht in Adobe Campaign is ingevoegd.
-* **TextAccount**: Adobe Campaign externe account.
+* **extAccount**: Adobe Campaign externe account.
 
    >[!IMPORTANT]
    >
