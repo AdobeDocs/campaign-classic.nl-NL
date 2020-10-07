@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: d1510fd9-995b-46c6-8d57-e1fe3999235e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
 
 ## Het installatieprogramma uitvoeren {#executing-the-installation-program}
 
-Voor een Windows 32-bits platform installeert u Adobe Campagne 32-bits. Installeer Adobe Campagne 64-bits voor een Windows 64-bits platform.
+Installeer Adobe Campaign 32-bits voor een Windows 32-bits platform. Installeer Adobe Campaign 64-bits voor een Windows 64-bits platform.
 
 De installatiestappen voor de Adobe Campaign-server zijn als volgt:
 
@@ -38,10 +38,11 @@ De installatiestappen voor de Adobe Campaign-server zijn als volgt:
 
    Er zijn verschillende installatietypen beschikbaar:
 
-   * **[!UICONTROL Installation of an application server]** : Installeer de toepassingsserver van de Campagne van Adobe en de cliëntconsole.
+   * **[!UICONTROL Installation of an application server]** : Installeer de Adobe Campaign-toepassingsserver en de clientconsole.
    * **[!UICONTROL Minimal installation (Network)]** : Installatie van de clientcomputer vanaf het netwerk. Slechts zal een beperkt aantal DLLs op de computer, indien nodig worden geïnstalleerd, en alle andere componenten zullen van een netwerkaandrijving worden gebruikt.
    * **[!UICONTROL Installation of a client]** : Installatie van de vereiste componenten voor de Adobe Campaign-client.
    * **[!UICONTROL Custom installation]** : De gebruiker kiest de te installeren elementen.
+
    Selecteer **Installatie van een toepassingsserver** en voer de volgende stappen uit:
 
    ![](assets/s_ncs_install_installer_02.png)
@@ -66,7 +67,7 @@ De installatiestappen voor de Adobe Campaign-server zijn als volgt:
    >
    >Wanneer de serverinstallatie is voltooid, moet de server opnieuw worden opgestart om mogelijke netwerkproblemen te voorkomen.
 
-   Zodra de installatie is voltooid, start u Adobe Campaign om de configuratiebestanden te maken. Zie [Eerste start-up van de server](#first-start-up-of-the-server).
+   Als de installatie is voltooid, start u Adobe Campaign om de configuratiebestanden te maken. Zie [Eerste start-up van de server](#first-start-up-of-the-server).
 
 ## Samenvattende installatietests {#summary-installation-testing}
 
@@ -76,7 +77,7 @@ U kunt de eerste installatie testen met de volgende opdracht:
 nlserver pdump
 ```
 
-Als de campagne van Adobe niet wordt gestart, is het antwoord:
+Als Adobe Campaign niet wordt gestart, is het antwoord:
 
 ```
 No task
@@ -92,7 +93,7 @@ nlserver web
 
 ![](assets/s_ncs_install_cmd_nlserverweb.png)
 
-De bestanden in de installatiemap worden gebruikt om de Adobe Campagne-servermodules te configureren.
+De bestanden in de installatiemap worden gebruikt om de Adobe Campaign-servermodules te configureren.
 
 De volgende informatie wordt weergegeven:
 
@@ -141,19 +142,19 @@ De volgende informatie wordt weergegeven:
 
 ## Wachtwoord voor de interne id {#password-for-the-internal-identifier}
 
-De Adobe Campaign-server definieert een technische aanmelding die **intern** wordt genoemd en alle rechten in alle gevallen heeft. Vlak na de installatie heeft de aanmelding geen wachtwoord. Het is verplicht om er een te definiëren.
+De Adobe Campaign-server definieert een technische aanmelding met de naam **internal** die alle rechten in alle gevallen heeft. Vlak na de installatie heeft de aanmelding geen wachtwoord. Het is verplicht om er een te definiëren.
 
 Zie de sectie [Interne id](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
-## Adobe-campagnediensten starten {#starting-adobe-campaign-services}
+## Adobe Campaign-services starten {#starting-adobe-campaign-services}
 
-Als u de Adobe Campagne-services wilt starten, kunt u de servicebeheerder gebruiken of het volgende invoeren op de opdrachtregel (met de juiste rechten):
+Om de diensten van Adobe Campaign te beginnen, kunt u de de dienstmanager gebruiken of het volgende bij de bevellijn (met de aangewezen rechten) ingaan:
 
 ```
 net start nlserver6
 ```
 
-Als u de Adobe Campagne processen later moet tegenhouden, gebruik het bevel:
+Als u de processen van Adobe Campaign later moet tegenhouden, gebruik het bevel:
 
 ```
 net stop nlserver6
