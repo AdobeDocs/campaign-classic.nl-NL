@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 639d2f42-e397-4694-942c-b2b8ad94ce9c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
 
 Bepaalde processen van de toepassing moeten met anderen communiceren of toegang krijgen tot LAN en internet. Dit betekent dat sommige havens van TCP voor deze processen open moeten zijn.
 
-Gebruik de ingesloten Apache Tomcat-poort als prioriteit (standaard is dit 8080) voor interne communicatie tussen de verschillende toepassingsservers van een Adobe Campagne-platform.
+Gebruik de ingesloten Apache Tomcat-poort als prioriteit (standaard is dit 8080) voor interne communicatie tussen de verschillende toepassingsservers van een Adobe Campaign-platform.
 
 ### Leveringsserver {#delivery-server}
 
@@ -86,7 +86,7 @@ Voor het binnenkomende proces van de postterugwinning (**nlserver inMail**), moe
  </tbody> 
 </table>
 
-### Toepassingsserver {#application-server}
+### Applicatieserver {#application-server}
 
 Voor de toepassingsserver (**nlserver web**) moeten de volgende poorten geopend zijn:
 
@@ -105,7 +105,7 @@ Voor de toepassingsserver (**nlserver web**) moeten de volgende poorten geopend 
  </tbody> 
 </table>
 
-Wanneer meerdere toepassingsservers van een Adobe Campagne-platform met elkaar moeten communiceren, raden we u aan de poort van de Apache Tomcat-server te gebruiken (standaard: 8080) eerder dan dat van de haven van HTTP van de server van het Web die de redirection moduleintegratie werd uitgevoerd met. Dit betekent dat de poort open moet zijn tussen deze servers.
+Wanneer meerdere toepassingsservers van een Adobe Campaign-platform met elkaar moeten communiceren, raden we u aan de poort van de Apache Tomcat-server te gebruiken (standaard: 8080) eerder dan dat van de haven van HTTP van de server van het Web die de redirection moduleintegratie werd uitgevoerd met. Dit betekent dat de poort open moet zijn tussen deze servers.
 
 ### Status van SMS-verzending {#sms-delivery-status}
 
@@ -128,7 +128,7 @@ Voor het bijhouden van SMS-leveringen (**nlserver sms**) moet de volgende poort 
 
 ### Rijke client {#rich-client}
 
-Voor de rijke client van Adobe Campaign (**nlclient**) moeten de volgende poorten geopend zijn:
+Voor de rijke cliënt van Adobe Campaign (**nlclient**), moeten de volgende havens open zijn:
 
 <table> 
  <tbody> 
@@ -139,7 +139,7 @@ Voor de rijke client van Adobe Campaign (**nlclient**) moeten de volgende poorte
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p>443/tcp (https)</p><br /> </td> 
-   <td> Toepassingsserver<br /> </td> 
+   <td> Applicatieserver<br /> </td> 
    <td> SOAP-verkeer (HTTP).<br /> </td> 
   </tr> 
  </tbody> 
@@ -180,7 +180,7 @@ De standaardhavens zijn het volgende:
 
 ## Externe toegang {#external-access}
 
-Bovendien moeten bepaalde componenten toegankelijk zijn via het openbare internet, zodat e-mailcampagnes die rechtstreeks vanuit Adobe Campaign worden uitgevoerd, kunnen worden weergegeven. Dit betekent dat sommige havens voor componenten open moeten zijn.
+Bovendien moeten bepaalde componenten toegankelijk zijn via het openbare internet, zodat direct vanuit Adobe Campaign uitgevoerde e-mailcampagnes kunnen worden bekeken. Dit betekent dat sommige havens voor componenten open moeten zijn.
 
 ### Redirection-server {#redirection-server}
 
@@ -209,7 +209,7 @@ Deze servergastherenWeb vormen, spiegelpagina&#39;s, enz. De volgende poorten mo
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
-   <td> Overal. Dit is nodig wanneer webformulieren rechtstreeks vanaf het Adobe Campagneplatform worden beheerd of wanneer spiegel-pagina's worden gebruikt.<br /> </td> 
+   <td> Overal. Dit is nodig wanneer webformulieren rechtstreeks vanaf het Adobe Campaign-platform worden beheerd of wanneer spiegel-pagina's worden gebruikt.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -231,7 +231,7 @@ Deze servergastherenWeb vormen, spiegelpagina&#39;s, enz. De volgende poorten mo
 
 ## Integratie met Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-Voor integratie tussen Adobe Campaign en Adobe Experience Manager moeten verschillende poorten worden geopend als de installatie op locatie is. Raadpleeg de [gedetailleerde documentatie](../../integrations/using/about-adobe-experience-manager.md)voor meer informatie over het configureren van deze integratie.
+De integratie tussen Adobe Campaign en Adobe Experience Manager vereist het openen van verscheidene havens als de installatie &quot;op-gebouw&quot;is. Raadpleeg de [gedetailleerde documentatie](../../integrations/using/about-adobe-experience-manager.md)voor meer informatie over het configureren van deze integratie.
 
 <table> 
  <tbody> 
@@ -241,11 +241,11 @@ Voor integratie tussen Adobe Campaign en Adobe Experience Manager moeten verschi
   </tr> 
   <tr> 
    <td> 80<br /> </td> 
-   <td> AEM-verbinding met Adobe-campagne<br /> </td> 
+   <td> AEM verbinding met Adobe Campaign<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 
-   <td> De verbinding van de Campagne van Adobe aan "creatie"en "het publiceren"instanties van AEM. Afhankelijk van uw AEM-configuratie kunnen de poorten die u wilt openen afwijken van de standaardpoorten.<br /> </td> 
+   <td> Adobe Campaign-verbinding met AEM 'authoring'- en 'publishing'-instanties. Afhankelijk van uw AEM configuratie kunnen de poorten die u wilt openen afwijken van de standaardpoorten.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
