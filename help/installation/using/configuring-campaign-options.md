@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 discoiquuid: 9c1884f6-1dd8-41ab-b8dc-604c8cc2dc89
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 1%
@@ -200,7 +197,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
-   <td> Staat een maximumperiode (die in uren wordt uitgedrukt) toe om te worden gespecificeerd het aantal uitzendingen te beperken die telkens als het synchronisatiewerkschema wordt uitgevoerd worden teruggekregen.</a>.<br /> </td> 
+   <td> Staat een maximumperiode (die in uren wordt uitgedrukt) toe om het aantal uitzendingen te beperken wordt teruggekregen telkens als het synchronisatiewerkschema wordt uitgevoerd.</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
@@ -592,7 +589,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_PropositionPurgeDelay</span> <br /> </td> 
-   <td><p> Hiermee kunt u de vertraging definiëren waarna voorstellingen uit de database worden verwijderd.</p><p> Deze optie wordt automatisch gecreeerd zodra de vertraging binnen de interface wordt gewijzigd. Als u de waarde in de lijst met opties wijzigt, moet deze worden uitgedrukt in seconden.</p><br /> </td> 
+   <td><p> Hier kunt u de vertraging definiëren waarna voorstellingen uit de database worden verwijderd.</p><p> Deze optie wordt automatisch gecreeerd zodra de vertraging binnen de interface wordt gewijzigd. Als u de waarde in de lijst met opties wijzigt, moet deze worden uitgedrukt in seconden.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_QuarantineMailboxFull</span> <br /> </td> 
@@ -687,7 +684,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
    <td> Tijdens migratie wordt de boomstructuur automatisch opnieuw ingedeeld op basis van de nieuwe versienormen.<br /> Met deze optie kunt u de automatische migratie van de boomstructuur uitschakelen. Als u het gebruikt, moet u na migratie verouderde mappen verwijderen, de nieuwe mappen toevoegen en alle noodzakelijke controles uitvoeren.<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">Gegevenstype:</span> Geheel</p> </li> 
-     <li> <p> <span class="uicontrol">Waarde (tekst)</span> : 3 </p> </li> 
+     <li> <p> <span class="uicontrol">Waarde (tekst)</span> : 1 </p> </li> 
     </ul> Deze optie mag alleen worden gebruikt als de uit-de-box navigatieboom te veel wijzigingen heeft ondergaan.<br /> Raadpleeg <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">deze sectie</a> voor meer informatie.<br /> </td> 
   </tr> 
   <tr> 
