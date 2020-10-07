@@ -11,18 +11,18 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 discoiquuid: 88eb17b6-5206-4064-9cd9-b4645a85c609
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '725'
+ht-degree: 1%
 
 ---
 
 
 # Discussieforums{#discussion-forums}
 
-Adobe Campagneontwikkelaars kunnen discussieforums gebruiken om informatie te delen. De volgende elementen hebben elk hun eigen forum: plannen, programma&#39;s, campagnes, middelen, simulaties, bestanden. Elke exploitant heeft ook een persoonlijk forum. Alle discussies zijn openbaar, zelfs op persoonlijke forums.
+Adobe Campaign-operatoren kunnen discussieforums gebruiken om informatie te delen. De volgende elementen hebben elk hun eigen forum: plannen, programma&#39;s, campagnes, middelen, simulaties, bestanden. Elke exploitant heeft ook een persoonlijk forum. Alle discussies zijn openbaar, zelfs op persoonlijke forums.
 
 Operatoren kunnen zich op een forum abonneren om elke keer dat een bericht wordt gepost, een e-mailbericht te ontvangen.
 
@@ -75,16 +75,16 @@ In het **[!UICONTROL Discussion forum]** vak:
 
 ## Verzending naar het persoonlijke forum van een exploitant {#posting-to-the-personal-forum-of-an-operator}
 
-U kunt een bericht naar het forum van een exploitant posten als, bijvoorbeeld, uw bericht geen specifieke campagne aangaat maar u wilt van het gesprek in de Campagne van Adobe blijven volgen. Persoonlijke forums zijn openbaar en alle operatoren zien uw bericht. De exploitant ontvangt telkens een bericht wanneer iemand aan zijn persoonlijk forum post.
+U kunt een bericht aan het forum van een exploitant posten als, bijvoorbeeld, uw bericht geen specifieke campagne aangaat maar u wilt het gesprek in Adobe Campaign nog volgen. Persoonlijke forums zijn openbaar en alle operatoren zien uw bericht. De exploitant ontvangt telkens een bericht wanneer iemand aan zijn persoonlijk forum post.
 
 Toegang tot het forum van een exploitant:
 
 * Als u de vereiste rechten hebt om toegang te krijgen tot het **[!UICONTROL Administration > Access management > Operators]** knooppunt van de verkenner, opent u het dashboard van de gewenste operator en klikt u op de **[!UICONTROL Forum]** koppeling in de rechterbovenhoek.
-* Als dat niet het geval is, zoekt u de naam van de operator in Adobe Campaign (via een bericht dat deze operator naar het forum heeft gestuurd en dat hem een taak toewijst) en klikt u erop om het dashboard te openen. U kunt de beheerder ook vragen om een weergave van de map met operatoren te maken.
+* Zo niet, zoek dan de naam van de exploitant in Adobe Campaign (via een bericht dat door deze operator aan het forum is gepost, een taak die hem wordt toegewezen) en klik erop om het dashboard te openen. U kunt de beheerder ook vragen om een weergave van de map met operatoren te maken.
 
 ## Abonneren op een forum {#subscribing-to-a-forum}
 
-Als u zich abonneert op een forum, kunt u discussies volgen. Elke keer dat een bericht naar het forum wordt gepost, ontvangt u een e-mailbericht. Deze e-mail bevat de berichttekst en eventuele bijlagen. Als u een bericht wilt beantwoorden, klikt u in de hoofdtekst van de e-mail en meldt u zich vervolgens aan bij de webinterface van Adobe Campagne. Wanneer u zich abonneert op een forum, is deze informatie zichtbaar voor iedereen.
+Als u zich abonneert op een forum, kunt u discussies volgen. Elke keer dat een bericht naar het forum wordt gepost, ontvangt u een e-mailbericht. Deze e-mail bevat de berichttekst en eventuele bijlagen. Als u een bericht wilt beantwoorden, klikt u in de hoofdtekst van de e-mail en meldt u zich vervolgens aan bij de Adobe Campaign-webinterface. Wanneer u zich abonneert op een forum, is deze informatie zichtbaar voor iedereen.
 
 * Als u zich wilt abonneren op een forum, klikt u op de **[!UICONTROL Follow discussions]** knop in de rechterbovensectie boven de lijst met berichten.
 
@@ -114,7 +114,8 @@ Als operatoren die zijn geabonneerd op een forum geen meldingen ontvangen zoals 
 * Ga naar het **[!UICONTROL Administration > Production > Technical workflows > Campaign processes]** knooppunt en controleer of de **[!UICONTROL Jobs in discussion forums]** workflow is gestart en of er geen fouten optreden.
 * De leveringslogboeken weergeven:
 
-   * Ga op de startpagina van Adobe Campaign naar **[!UICONTROL Campaigns > Navigation > Deliveries]**, open de **[!UICONTROL Discussion forum notification]** levering.
+   * Ga op de startpagina van Adobe Campaign naar **[!UICONTROL Campaigns > Navigation > Deliveries]** en open de **[!UICONTROL Discussion forum notification]** levering.
    * Ga in de verkenner naar **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** en klik op **[!UICONTROL Discussion forum notifications]**.
+
    In het **[!UICONTROL Discussion forum notifications]** vak vindt u de leveringslogboeken op het **[!UICONTROL Edit > Delivery]** tabblad. U kunt ook de tabbladen **[!UICONTROL Tracking > Log]** en **[!UICONTROL Exclusion causes]** tabbladen weergeven.
 
