@@ -1,7 +1,7 @@
 ---
-title: Persoonlijke coupons
-seo-title: Persoonlijke coupons
-description: Persoonlijke coupons
+title: Gepersonaliseerde coupons
+seo-title: Gepersonaliseerde coupons
+description: Gepersonaliseerde coupons
 seo-description: null
 page-status-flag: never-activated
 uuid: c840e2de-f0ef-478b-af9f-82e1b6534933
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: f324afa5-304c-470e-a592-290f76a11ccb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 1%
 
 ---
 
 
-# Persoonlijke coupons{#personalized-coupons}
+# Gepersonaliseerde coupons{#personalized-coupons}
 
 Door coupons toe te voegen aan uw leveringen kunnen uw ontvangers meer waarde krijgen voor producten en services. Met de module Campagne-coupon kunt u een set coupons maken die u naar verwachting aan toekomstige marketingaanbiedingen wilt toevoegen. Als u klaar bent om een levering te maken, wijst u de toepasselijke coupons toe. Aangezien coupons geldig zijn voor een bepaalde periode, wordt een toegewezen coupon op unieke wijze gekoppeld aan het bijbehorende leveringsbericht. Bovendien bevestigt Campaign dat er voldoende coupons zijn voor het aantal berichten voordat de levering wordt verzonden.
 
@@ -43,7 +43,7 @@ Voordat u de onderstaande stappen uitvoert, moet u weten welk type coupon u wilt
 
    ![](assets/deliv_coup_01.png)
 
-1. Klik op de **[!UICONTROL New]** knop.
+1. Klik op de knop **[!UICONTROL New]**.
 1. Voer in het **[!UICONTROL Label]** veld de naam van de coupon in. Er wordt automatisch een unieke code ingevoerd **[!UICONTROL Coupon code]**. U kunt de code behouden of een nieuwe invoeren.
 
    ![](assets/deliv_coup_02.png)
@@ -58,6 +58,7 @@ Voordat u de onderstaande stappen uitvoert, moet u weten welk type coupon u wilt
    1. Als u Individueel kiest, wordt linksonder een nieuw tabblad, Coupons, weergegeven. Ga naar het **[!UICONTROL Coupons]** tabblad en klik **[!UICONTROL Add]**.
    1. Voer een unieke code voor de afzonderlijke coupon in als u hierom wordt gevraagd door het pop-upvenster.
    1. Klik **[!UICONTROL Save]** om de coupon te genereren.
+
    Zie Afzonderlijke coupons [configureren voor meer informatie over het tabblad Coupons](#configuring-individual-coupons).
 
    >[!NOTE]
@@ -82,7 +83,7 @@ Waarden voor **[!UICONTROL status]**, **[!UICONTROL channel]** en **[!UICONTROL 
 In het onderstaande voorbeeld wordt de levering gemaakt op de startpagina. Raadpleeg [deze sectie](../../delivery/using/about-email-channel.md)voor gedetailleerde instructies over het maken van een levering. U kunt ook een coupon toevoegen aan een levering in een workflow.
 
 1. Ga naar **[!UICONTROL Campaigns]** en kies **[!UICONTROL Deliveries]**.
-1. Klik **[!UICONTROL Create]**.
+1. Klik op **[!UICONTROL Create]**.
 
    ![](assets/deliv_coup_04.png)
 
@@ -134,7 +135,7 @@ In het onderstaande voorbeeld wordt de levering gemaakt op de startpagina. Raadp
 
    ![](assets/deliv_coup_15.png)
 
-1. Klik **[!UICONTROL Analyze]**. Als het analyselogboek bevestigt dat er genoeg coupons voor alle ontvangers zijn, klikt u **[!UICONTROL Confirm delivery]** om het te verzenden.
+1. Klik op **[!UICONTROL Analyze]**. Als het analyselogboek bevestigt dat er genoeg coupons voor alle ontvangers zijn, klikt u **[!UICONTROL Confirm delivery]** om het te verzenden.
 
    ![](assets/deliv_coup_16.png)
 
@@ -160,8 +161,8 @@ Bevestig dat de levering succesvol was:
 De leveringsanalyse stopt als er minder coupons zijn dan berichten. In dat geval kunt u meer coupons importeren of het aantal berichten beperken. Volg de onderstaande instructies als u het aantal berichten wilt beperken.
 
 1. Ga naar het venster E-maillevering.
-1. Klik **[!UICONTROL To]**.
-1. Ga in **[!UICONTROL Select target]** naar de **[!UICONTROL Exclusions]** tab.
+1. Klik op **[!UICONTROL To]**.
+1. In **[!UICONTROL Select target]**, go to the **[!UICONTROL Exclusions]** tab.
 
    ![](assets/deliv_coup_18.png)
 
