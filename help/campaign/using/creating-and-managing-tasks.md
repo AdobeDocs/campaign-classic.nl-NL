@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 discoiquuid: d71e5ff7-1e81-4c49-9673-c6fae890029b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3737'
 ht-degree: 0%
@@ -27,13 +24,13 @@ ht-degree: 0%
 
 ## Taken {#about-tasks}
 
-Met Adobe Campaign kunt u taken maken en de volledige levenscyclus ervan rechtstreeks in de toepassing beheren. De programma- en campagneimplementatie kan worden onderverdeeld in taken die worden toegewezen aan Adobe Campagnebeheerders of externe serviceproviders. In deze modus kunt u een open samenwerkingsomgeving maken waarin alle deelnemers aan het programma en externe deelnemers zijn opgenomen.
+Met Adobe Campaign kunt u taken maken en de volledige levenscyclus ervan rechtstreeks binnen de toepassing beheren. De uitvoering van programma&#39;s en campagnes kan worden onderverdeeld in taken die worden toegewezen aan Adobe Campaign-exploitanten of externe dienstverleners. In deze modus kunt u een open samenwerkingsomgeving maken waarin alle deelnemers aan het programma en externe deelnemers zijn opgenomen.
 
 Taken kunnen worden gemaakt, weergegeven en gecontroleerd vanuit de takenlijst of het campagnemdashboard. Zij kunnen ook worden bekeken en bijgehouden in de schema&#39;s van het marketingplan, de programma&#39;s en de campagnes.
 
 Taken worden aan de campagne gekoppeld en kunnen afhankelijkheden, d.w.z. bijbehorende taken, hebben. Elke taak heeft een status, prioriteit, geschatte belasting en bijbehorende kosten.
 
-Alle taken worden gegroepeerd in een lijst die toegankelijk is via het **Campagne** universum. Raadpleeg [Toegang tot taken](#accessing-tasks)voor meer informatie.
+Alle taken worden gegroepeerd in een lijst die toegankelijk is via het **Campagne** universum. For more on this, refer to [Accessing tasks](#accessing-tasks).
 
 Ze kunnen worden weergegeven in het programma waartoe ze behoren.
 
@@ -63,7 +60,7 @@ Klik op een taak om deze te bewerken.
 
 ![](assets/s_ncs_user_task_edit_from_view.png)
 
-## Een nieuwe taak maken {#creating-a-new-task}
+## Creating a new task {#creating-a-new-task}
 
 Als u een taak wilt maken, klikt u op de **[!UICONTROL Tasks]** koppeling in het universum Campagnes en selecteert u **[!UICONTROL Create]**.
 
@@ -97,7 +94,7 @@ De levenscyclus van taken wordt gepresenteerd in de [levenscyclus](#life-cycle).
 
 Alleen de exploitant die met een taak is belast, mag deze sluiten.
 
-Wanneer een Adobe Campagne-operator een taak maakt, wordt deze standaard automatisch toegewezen aan deze beheerders. Gebruik het **[!UICONTROL Assigned to]** veld om een andere operator te selecteren.
+Wanneer een Adobe Campaign-operator een taak maakt, wordt deze standaard automatisch toegewezen aan deze beheerders. Gebruik het **[!UICONTROL Assigned to]** veld om een andere operator te selecteren.
 
 ![](assets/s_ncs_user_task_edit_simple_general_tab.png)
 
@@ -141,7 +138,7 @@ U kunt een goedkeuringsschema voor de taak definiëren in de onderste sectie van
 
 ![](assets/s_ncs_user_edit_op_valid_calendar.png)
 
-De persoon die met de taak is belast, kan zichzelf de taak toevertrouwen om de taak goed te keuren, ook al zijn hiervoor al andere exploitanten aangewezen. Als er geen controleur is gedefinieerd, worden de meldingen verzonden naar de persoon die verantwoordelijk is voor de taak. Alle andere Adobe Campagneontwikkelaars met **[!UICONTROL Administrator]** rechten kunnen de taak ook goedkeuren. Ze ontvangen echter geen meldingen.
+De persoon die met de taak is belast, kan zichzelf de taak toevertrouwen om de taak goed te keuren, ook al zijn hiervoor al andere exploitanten aangewezen. Als er geen controleur is gedefinieerd, worden de meldingen verzonden naar de persoon die verantwoordelijk is voor de taak. Alle andere Adobe Campaign-operatoren met **[!UICONTROL Administrator]** rechten kunnen deze taak ook goedkeuren. Ze ontvangen echter geen meldingen.
 
 ### Documenten waarnaar wordt verwezen {#documents-referenced}
 
@@ -193,7 +190,7 @@ De begroting die standaard in rekening wordt gebracht, is de begroting van de ca
 
 >[!NOTE]
 >
->Voor meer informatie over uitgaven en budgetten, zie [Kosten, berekening en het in rekening brengen](../../campaign/using/controlling-costs.md#cost-commitment--calculation-and-charging).
+>Voor meer informatie over uitgaven en begrotingen, zie [kostenvastlegging, berekening en het in rekening brengen](../../campaign/using/controlling-costs.md#cost-commitment--calculation-and-charging).
 
 In dit venster kunt u ook de te bereiken doelstellingen definiëren. De doelstellingen worden uitgedrukt in de geraamde ontvangsten voor de taak.
 
@@ -227,7 +224,7 @@ Ga naar het **[!UICONTROL Resources]** vak en voeg de operator toe aan het **[!U
 
 ### Eerste meldingen {#initial-notifications}
 
-Wanneer u een taak maakt of wijzigt met een begindatum in de toekomst, biedt Adobe Campaign u aan een e-mail te sturen naar de persoon die verantwoordelijk is voor de taak om hem te laten weten wanneer de taak wordt gestart.
+Wanneer u een taak maakt of wijzigt met een begindatum in de toekomst, biedt Adobe Campaign aan een e-mail te sturen naar de persoon die verantwoordelijk is voor de taak om hem te laten weten wanneer deze wordt gestart.
 
 ![](assets/mrm_task_first_notif.png)
 
@@ -240,7 +237,7 @@ Als u een melding wilt plannen, gaat u naar het **[!UICONTROL Resources]** vak e
 * Voor taken binnen campagnes, selecteer een specifieke datum en een tijd.
 * Voor taken binnen campagnemalplaatjes, wordt de berichttijd uitgedrukt als resterende tijd alvorens de taak begint (bijvoorbeeld, als u 2d op het **[!UICONTROL Initial notification]** gebied ingaat, zal e-mail 2 dagen vóór de datum van de taakaanvang worden verzonden).
 
-Als u een melding hebt gepland, kunt u tijdens het opslaan van de taak nog steeds een melding verzenden. U kunt besluiten om het te verzenden en dit zal niet het geplande bericht vervangen.
+Als u een melding hebt gepland, biedt Adobe Campaign tijdens het opslaan van de taak nog steeds aan om onmiddellijk een melding te verzenden. U kunt besluiten om het te verzenden en dit zal niet het geplande bericht vervangen.
 
 ### Aan een programma gekoppelde taak {#task-linked-to-a-program}
 
@@ -361,7 +358,7 @@ Als u echter al een taak hebt gemaakt die u aan een groeperingstaak wilt koppele
 
 Met behulp van meldingstaken kunt u e-mailleveringen plannen (aan een operator, een groep operatoren, een serviceprovider, enzovoort). Hiermee kunt u herinneringen plannen, bijvoorbeeld om iemand te laten weten dat een campagne binnenkort wordt voltooid, of om documenten te verzenden voordat een campagne wordt gestart, zodat exploitanten deze kunnen voorbereiden. Dit betekent dat u uw communicatie binnen uw campagne of programma kunt bijhouden en de uitgevoerde acties beter in het oog kunt houden.
 
-#### Levenscyclus {#life-cycle}
+#### Life cycle {#life-cycle}
 
 De taken van het bericht vereisen geen goedkeuring. Dit betekent dat hun levenscyclus eenvoudiger is dan die van een standaardtaak:
 
@@ -388,7 +385,7 @@ Tijdens het creëren, moeten de volgende elementen in de taak zijn ingegaan:
 
 U kunt een bijlage aan de taak en aan het bericht e-mail toevoegen. Klik hiertoe op het **[!UICONTROL Documents]** pictogram in de werkbalk in de rechterbovenhoek.
 
-## Levenscyclus {#life-cycle-1}
+## Life cycle {#life-cycle-1}
 
 ### Koppelingen tussen taken {#links-between-tasks}
 
@@ -416,7 +413,7 @@ De afhankelijkheid tussen taken wordt vertegenwoordigd door pijlen in het campag
 
 ![](assets/s_ncs_user_task_dependencies_from_board.png)
 
-In het geval van gegroepeerde taken wijst Adobe Campaign automatisch de einddatum van de bovenliggende taak toe aan de onderliggende taak als begindatum. Als een **Uitnodigingstaak** maken bijvoorbeeld eindigt op 15 oktober om 15.30 uur, wordt de taak **Uitnodiging-mail** verzenden voor het uitvoeren van een onderliggende taak gestart op 15 oktober om 15.30 uur.
+In het geval van gegroepeerde taken, wijst Adobe Campaign automatisch de einddatum van de oudertaak aan de kindtaak als begindatum toe. Als een **Uitnodigingstaak** maken bijvoorbeeld eindigt op 15 oktober om 15.30 uur, wordt de taak **Uitnodiging-mail** verzenden voor het uitvoeren van een onderliggende taak gestart op 15 oktober om 15.30 uur.
 
 Bovendien als u het eind van een oudertaak uitstelt, kunnen sommige van zijn kindtaken worden beïnvloed: dit zijn de kindtaken waarvan status is **[!UICONTROL Scheduled]** en de waarvan begindatum vroeger dan de nieuwe einddatum van de oudertaak is. De duur van de taak blijft ongewijzigd. Als de begindatum van een kindtaak later dan de nieuwe einddatum van de oudertaak is, wordt de kindtaak niet beïnvloed.
 
@@ -438,12 +435,13 @@ Een taak kan zijn: **[!UICONTROL Scheduled]**, **[!UICONTROL In progress]**, **[
 * Zodra het is begonnen, is de taak **[!UICONTROL In progress]**. Wanneer de persoon die verantwoordelijk is voor de taak het sluit, verandert het in **[!UICONTROL Finished]**.
 * Als er een controleur is gedefinieerd, wordt de taak uitgevoerd **[!UICONTROL Pending approval]** zodra de persoon die verantwoordelijk is voor het sluiten ervan en totdat de controleur het goedkeurt. Als de controleur het afwijst, wordt de taak **[!UICONTROL Rejected]** uitgevoerd.
 * Een taak kan door de verantwoordelijke persoon via het dashboard of het **[!UICONTROL Task map]** door de **[!UICONTROL Cancel]** knoop worden geannuleerd.
-* Als u een taak wilt plannen, voert u in de toekomst een begindatum in. Vervolgens kunt u een eerste melding verzenden naar de Adobe Campagneontwikkelaars die bij het uitvoeren van de taak zijn betrokken. Zie [Volledige levenscyclus](#complete-task-life-cycle)van de taak.
+* Als u een taak wilt plannen, voert u in de toekomst een begindatum in. Vervolgens kunt u een eerste melding verzenden aan de Adobe Campaign-operatoren die bij de uitvoering van de taak zijn betrokken. Zie [Volledige levenscyclus](#complete-task-life-cycle)van de taak.
 
 >[!NOTE]
 >
 >* De taakstatus wordt automatisch bijgewerkt.
->* Zelfs als de geldigheidsperiode is voltooid, worden taken die niet zijn afgesloten, nog steeds opgenomen in de lijst met lopende taken. Een waarschuwing waarschuwt exploitanten dat de taak laat is.
+>* Zelfs als de geldigheidsperiode is voltooid, worden taken die niet zijn afgesloten, nog steeds opgenomen in de lijst met actieve taken. Een waarschuwing waarschuwt exploitanten dat de taak laat is.
+
 >
 
 
@@ -454,7 +452,7 @@ Naast de uitvoeringsstatus kan een taak worden gekoppeld aan een vorderingsstatu
 
 U kunt de lijst met taken filteren op processtatus of voortgangsstatus.
 
-Raadpleeg [Toegang tot taken](#accessing-tasks)voor meer informatie.
+For more on this, refer to [Accessing tasks](#accessing-tasks).
 
 ### Volledige levenscyclus van taken {#complete-task-life-cycle}
 
