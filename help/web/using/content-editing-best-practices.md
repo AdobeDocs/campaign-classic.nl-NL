@@ -1,7 +1,7 @@
 ---
-title: Aanbevolen werkwijzen voor het bewerken van inhoud
-seo-title: Aanbevolen werkwijzen voor het bewerken van inhoud
-description: Aanbevolen werkwijzen voor het bewerken van inhoud
+title: Best practices voor het bewerken van content
+seo-title: Best practices voor het bewerken van content
+description: Best practices voor het bewerken van content
 seo-description: null
 page-status-flag: never-activated
 uuid: badc6806-b474-4cad-94a3-003a50271281
@@ -11,22 +11,22 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 discoiquuid: 3ad38469-8e22-4bfc-8029-5d360f76d6bb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 7%
 
 ---
 
 
-# Aanbevolen werkwijzen voor het bewerken van inhoud{#content-editing-best-practices}
+# Best practices voor het bewerken van content{#content-editing-best-practices}
 
 Om de optimale werking van de redacteur te verzekeren, adviseren wij het naleven van de volgende richtlijnen:
 
-* Voordat u een HTML-paginasjabloon **** importeert in Adobe Campaign, moet u ervoor zorgen dat de sjabloon wordt geopend en correct wordt weergegeven in de verschillende browsers.
-* Als de HTML-pagina **JavaScript-scripts** bevat, moeten deze **zonder fouten** buiten de editor worden uitgevoerd.
-* Wanneer het bouwen van een malplaatje, adviseren wij toevoegend een **&#39;type&#39;** attribuut aan `<input>` markeringen. Deze informatie zal door de redacteur worden verwerkt en zal de gebruiker helpen om een gebied van het gegevensbestand aan het gebied van de vorm te verbinden wanneer het vormen van de toepassing van het Web.
+* Before **importing an HTML page template** in Adobe Campaign, please make sure the template opens and displays correctly in the various browsers.
+* If the HTML page contains **JavaScript scripts**, they need to execute **without errors** outside of the editor.
+* Bij het samenstellen van een sjabloon wordt aangeraden een **&#39;type’**-attribuut toe te voegen aan tags. `<input>` Deze informatie zal door de redacteur worden verwerkt en zal de gebruiker helpen om een gebied van het gegevensbestand aan het gebied van de vorm te verbinden wanneer het vormen van de toepassing van het Web.
 
    Voorbeeld van HTML-code in de sjabloon:
 
