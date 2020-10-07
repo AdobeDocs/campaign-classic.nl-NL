@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a3b5378c2e67b9982fa425f32e14e0b1c66e1bf3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1751'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -48,7 +45,7 @@ Werken binnen de wetgeving die van toepassing is op de regio(s) waar u actief be
 
 >[!NOTE]
 >
->Zie [deze pagina](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr)voor meer informatie over hoe GDPR, CCPA, PDPA en LGPD van toepassing zijn op Adobe Campaign.
+>Zie [deze pagina](https://helpx.adobe.com/nl/campaign/kb/campaign-privacy-overview.html#whatisgdpr)voor meer informatie over hoe GDPR, CCPA, PDPA en LGPD van toepassing zijn op Adobe Campaign.
 
 ### Adobe Experience Cloud privacy {#experience-cloud-privacy}
 
@@ -99,7 +96,7 @@ Wanneer het integreren van Campagne met andere oplossingen van Experience Cloud 
 
 Met Adobe Campaign kunt u gegevens verzamelen, waaronder persoonlijke en vertrouwelijke informatie. Het is daarom van essentieel belang dat u de toestemming van uw ontvangers ontvangt en controleert.
 
-* Heb altijd ontvangers overeenkomen om mededelingen te ontvangen. Om dit te doen, moet u zo snel mogelijk aan de &quot;opt-out&quot;-verzoeken blijven voldoen en moet u de instemming controleren via een &quot;double opt-in&quot;-proces. Zie [Een abonnementsformulier met dubbele aanmelding](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)maken voor meer informatie.
+* Heb altijd ontvangers overeenkomen om mededelingen te ontvangen. Om dit te doen, moet u zo snel mogelijk aan de &quot;opt-out&quot;-verzoeken blijven voldoen en moet u de toestemming controleren via een &quot;double opt-in&quot;-proces. Zie [Een abonnementsformulier met dubbele aanmelding](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)maken voor meer informatie.
 * Importeer geen frauduleuze lijsten en gebruik geen zaadadressen om te controleren of uw clientbestand niet frauduleus wordt gebruikt. Zie [Informatie over zaadadressen](../../delivery/using/about-seed-addresses.md)voor meer informatie.
 * Via toestemmings- en rechtenbeheer kunt u de voorkeuren van uw ontvangers bijhouden en beheren wie binnen uw organisatie toegang heeft tot welke gegevens. Zie [deze sectie](#consent)voor meer informatie.
 * De privacyverzoeken van uw ontvangers faciliteren en beheren. Zie [deze sectie](#privacy-requests)voor meer informatie.
@@ -136,7 +133,7 @@ Adobe Campaign biedt extra mogelijkheden om u te helpen uw bereidheid als Data C
 
 >[!NOTE]
 >
->Deze reeks hulpmiddelen is hier om u met uw privacynaleving voor GDPR, CCPA, PDPA, en LGPD te helpen. Zie [deze pagina](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr)voor meer informatie over deze verschillende verordeningen.
+>Deze reeks hulpmiddelen is hier om u met uw privacynaleving voor GDPR, CCPA, PDPA, en LGPD te helpen. Zie [deze pagina](https://helpx.adobe.com/nl/campaign/kb/campaign-privacy-overview.html#whatisgdpr)voor meer informatie over deze verschillende verordeningen.
 
 <!--* **GDPR** (General Data Protection Regulation) is the European Union’s (EU) privacy law that harmonizes and modernizes data protection requirements. GDPR applies to Adobe Campaign customers who hold data for Data Subjects residing in the EU.
 
@@ -174,4 +171,4 @@ Met Adobe Campaign kunt u ook controleren hoe ontvangers door uw website bladere
 
 De configuratie van webtracering wordt weergegeven in [deze sectie](../../configuration/using/about-web-tracking.md).
 
-Om het bijhouden van wijzigingen verder te beheren, kunt u in Adobe Campaign een uitschakelbanner weergeven om het webgedrag van eindgebruikers die zich afmelden voor het volgen van gedragingen, niet meer te volgen. Voor meer op dit, zie de toepassing van het [Web het volgen opt-out](../../web/using/web-application-tracking-opt-out.md).
+Voor verder beheer van tracering kunt u in Adobe Campaign een uitschakelingsbanner weergeven om het webgedrag van eindgebruikers die zich afmelden voor het volgen van gedragingen, niet meer te volgen. Voor meer op dit, zie de toepassing van het [Web het volgen opt-out](../../web/using/web-application-tracking-opt-out.md).
