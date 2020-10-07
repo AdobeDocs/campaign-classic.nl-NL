@@ -1,7 +1,7 @@
 ---
-title: Filterschema's
-seo-title: Filterschema's
-description: Filterschema's
+title: Schema’s filteren
+seo-title: Schema’s filteren
+description: Schema’s filteren
 seo-description: null
 page-status-flag: never-activated
 uuid: 04a90785-3084-42fd-85af-77bc28687579
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 64d4c5b8-db0b-4287-8d30-4bf09878a401
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 1%
 
 ---
 
 
-# Filterschema&#39;s{#filtering-schemas}
+# Schema’s filteren{#filtering-schemas}
 
 ## Systeemfilters {#system-filters}
 
@@ -105,7 +105,7 @@ Door gebrek, zijn de ingebouwde schema&#39;s slechts toegankelijk met SCHRIJVEN 
 
 >[!IMPORTANT]
 >
->LEES- en SCHRIJFmachtigingen voor het schema **xtk:sessionInfo** zijn alleen toegankelijk voor de interne account van een Adobe Campagne-instantie.
+>De LEZEN en SCHRIJVEN toestemmingen voor het schema **xtk:sessionInfo** zijn slechts toegankelijk door de interne rekening van een instantie van Adobe Campaign.
 
 ## Systeemfilters van ingebouwde schema&#39;s wijzigen {#modifying-system-filters-of-built-in-schemas}
 
