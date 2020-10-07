@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: 90718075-87a7-4e9a-935b-571010908e79
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
 
 In deze sectie worden de gebruikelijke opdrachten in Adobe Campaign weergegeven.
 
-De opdrachtserver **** is de invoeropdracht voor de gehele Adobe Campagne-toepassing.
+De opdrachtserver **** is de invoeropdracht voor de hele Adobe Campaign-toepassing.
 
 Deze opdracht heeft de volgende syntaxis: **nlserver **`<command>`****`<arguments>`****
 
@@ -34,6 +34,7 @@ De parameter **`<command>`** komt overeen met de module.
 >
 >* In elk geval, kunt u het **-noconsole** argument toevoegen om commentaren te schrappen die worden getoond zodra de modules zijn begonnen.
 >* Omgekeerd kunt u het argument **-verbose** toevoegen om meer informatie weer te geven.
+
 >
 
 
@@ -66,7 +67,7 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-Een andere handige opdracht is **Nlserver-monitor**. Hier wordt het XML-bestand met controle vermeld (verkregen in de Adobe Campaign-client of via de **website monitor.jsp** ).
+Een andere handige opdracht is **Nlserver-monitor**. Het bevat het XML-bestand voor controle (verkregen in de Adobe Campaign-client of via de **website monitor.jsp** ).
 
 U kunt de parameter toevoegen **-mist** om van de afwezige modules (fout in modules, modules sluiten enz.) een lijst te maken
 
@@ -98,7 +99,7 @@ nlserver stop <module>@<INSTANCE>
 
 ## Afsluiten van services {#shut-down-services}
 
-Als u Adobe Campagne wilt stoppen, gebruikt u een van de volgende opdrachten:
+Als u de Adobe Campaign-services wilt stoppen, gebruikt u een van de volgende opdrachten:
 
 * Als u toegang hebt tot de hoofdmap of beheerder:
 
@@ -118,7 +119,7 @@ Als u Adobe Campagne wilt stoppen, gebruikt u een van de volgende opdrachten:
       net stop nlserver6
       ```
 
-* Als dat niet het geval is, gaat u naar het Adobe Campaign-account:
+* Zo niet, dan op de Adobe Campaign-account:
 
    ```
    nlserver shutdown 
@@ -134,11 +135,11 @@ Op dezelfde manier kunt u een van de volgende opdrachten gebruiken om Adobe Camp
 
       >[!NOTE]
       >
-      >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl start nlserver**
+      >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systeemserver voor opstarten**
 
    * In Windows: netwerkbeginserver6
 
-* Anders in het Adobe Campaign-account: **nlserver watchdog -svc -noconsole**
+* Anders, in de rekening van Adobe Campaign: **nlserver watchdog -svc -noconsole**
 
 ## Het configuratiebevel {#the-config-command}
 
@@ -156,17 +157,18 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 Voer het wachtwoord in.
 
-Het **interne** wachtwoord wijzigen: **nlserver config -internalpassword**
+Het **interne** wachtwoord wijzigen: **nlserver config - intern wachtwoord**
 
 >[!CAUTION]
 >
->Als u zich wilt aanmelden met de **interne** id, moet u vooraf een wachtwoord hebben gedefinieerd. Zie [deze sectie](../../installation/using/campaign-server-configuration.md#internal-identifier)voor meer informatie.
+>Als u zich wilt aanmelden met de **interne** id, moet u vooraf een wachtwoord hebben gedefinieerd. Raadpleeg [deze sectie](../../installation/using/campaign-server-configuration.md#internal-identifier) voor meer informatie.
 
 >[!NOTE]
 >
 >* In het algemeen, in plaats van het wijzigen van de configuratiedossiers door hand, kunt u het **config** bevel gebruiken
->* Als u de lijst met parameters wilt ophalen, gebruikt u de **-?** parameter: Configuratie **nlserver -?**
+>* Als u de lijst met parameters wilt ophalen, gebruikt u de **-?** parameter: **nlserver config -?**
 >* In het geval van een Oracle-database moet u de account niet opgeven. De syntaxis ziet er als volgt uit:
+
 >
 >  
 nlserver config -setdblogin:Oracle:test6@dbserver
