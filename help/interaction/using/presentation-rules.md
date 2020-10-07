@@ -11,25 +11,25 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 discoiquuid: 8ef303b4-d9ce-40ee-a6c6-ed5012ab8eb8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 28614a6b0c45deef17d9b3275a16e65bdff4538b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 2%
 
 ---
 
 
 # Presentatieregels{#presentation-rules}
 
-## Presentatieregel maken {#creating-a-presentation-rule}
+## Creating a presentation rule {#creating-a-presentation-rule}
 
 In onze databank staan verschillende reisaanbiedingen voor Europa, Afrika, de Verenigde Staten en Canada. We willen voorstellen verzenden voor een reis naar Canada, maar als de ontvanger dit soort aanbiedingen weigert, willen we ze niet meer sturen
 
 We gaan onze regels zodanig configureren dat de reis naar Canada slechts één keer per ontvanger wordt aangeboden en niet opnieuw wordt aangeboden als ze wordt afgewezen.
 
-1. Ga in de Adobe Campagne-structuur naar **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** knooppunt.
-1. Maak een nieuwe **[!UICONTROL Offer presentation]** tekstregel.
+1. Ga in de Adobe Campaign-structuur naar **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** knooppunt.
+1. Create a new **[!UICONTROL Offer presentation]** type rule.
 
    ![](assets/offer_typology_example_001.png)
 
@@ -116,6 +116,6 @@ We willen een eerste voorstel verzenden dat tot de categorie Canada behoort. Ind
 
    ![](assets/offer_typology_example_019.png)
 
-**Verwante onderwerpen**
+**Verwant onderwerp**
 
 * [Aanbiedingen beheren en redundantie beheren op verschillende kanalen](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Manageoffersandcontrolredundancyacrosschannels)
