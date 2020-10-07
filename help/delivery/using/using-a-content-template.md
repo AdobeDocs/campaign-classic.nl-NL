@@ -1,7 +1,7 @@
 ---
-title: Een inhoudssjabloon gebruiken
-seo-title: Een inhoudssjabloon gebruiken
-description: Een inhoudssjabloon gebruiken
+title: Een contentsjabloon gebruiken
+seo-title: Een contentsjabloon gebruiken
+description: Een contentsjabloon gebruiken
 seo-description: null
 page-status-flag: never-activated
 uuid: 893b9711-593f-4865-b61a-ef0fede9a2b0
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: 48f491b7-bf7b-457f-9cf2-db2bbf4eceea
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '431'
+ht-degree: 3%
 
 ---
 
 
-# Een inhoudssjabloon gebruiken{#using-a-content-template}
+# Een contentsjabloon gebruiken{#using-a-content-template}
 
 ## Over inhoudssjablonen {#about-content-templates}
 
@@ -38,11 +38,11 @@ De lay-out wordt automatisch toegepast op basis van de geselecteerde instellinge
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-Raadpleeg het voorbeeld van de volledige implementatie voor meer informatie hierover: Inhoud [maken in de wizard](../../delivery/using/use-case--creating-content-management.md#creating-content-in-the-delivery-wizard)Aflevering.
+Raadpleeg het voorbeeld van de volledige implementatie voor meer informatie hierover: [Inhoud maken in de wizard](../../delivery/using/use-case--creating-content-management.md#creating-content-in-the-delivery-wizard)Aflevering.
 
 ## Inhoudsinstanties maken {#creating-a-content-instance}
 
-U kunt inhoud rechtstreeks in de Adobe Campagne boom tot stand brengen om in werkschema&#39;s te gebruiken, uit te voeren, of direct te injecteren in nieuwe leveringen.
+U kunt inhoud direct in de boom van Adobe Campaign tot stand brengen die in werkschema&#39;s wordt gebruikt, wordt uitgevoerd, of direct in nieuwe leveringen wordt geïnjecteerd.
 
 Voer de volgende stappen uit:
 
@@ -78,11 +78,11 @@ Voer de volgende stappen uit:
    >
    >U kunt het genereren van niet-goedgekeurde inhoud toestaan. Om dit te doen, verander de relevante optie in het publicatiemalplaatje. Voor meer op dit, verwijs naar het [Creëren van en het vormen van het malplaatje](../../delivery/using/publication-templates.md#creating-and-configuring-the-template).
 
-   De inhoud van HTML en Tekst wordt standaard gegenereerd in de **publicatiemap** van de Adobe Campagne-instantie. U kunt de publicatiemap wijzigen met de optie **NcmPublishingDir** .
+   De inhoud van HTML en Tekst wordt standaard gegenereerd in de **publicatiemap** van de Adobe Campaign-instantie. U kunt de publicatiemap wijzigen met de optie **NcmPublishingDir** .
 
 ## Inhoudsinstantie leveren {#delivering-a-content-instance}
 
-Als u een inhoudsinstantie wilt maken en leveren, moet een leveringssjabloon worden gekoppeld aan de publicatiesjabloon die wordt gebruikt om deze inhoud te genereren. Raadpleeg [Aflevering](../../delivery/using/publication-templates.md#delivery)voor meer informatie.
+Als u een inhoudsinstantie wilt maken en leveren, moet een leveringssjabloon worden gekoppeld aan de publicatiesjabloon die wordt gebruikt om deze inhoud te genereren. For more on this, refer to [Delivery](../../delivery/using/publication-templates.md#delivery).
 
 Bovendien moet de opslagmap voor inhoud worden toegewezen aan inhoud die is ontleend aan deze publicatiesjabloon (wanneer u met een inhoudsmap meerdere typen inhoud kunt genereren, kunnen leveringen niet automatisch worden gemaakt).
 
