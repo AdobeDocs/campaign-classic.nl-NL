@@ -11,14 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: bd057441-8524-49e6-b5d5-fbd0ec5bca85
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1573'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -39,7 +36,7 @@ Een lokale campagne is een instantie die is gemaakt op basis van een sjabloon wa
 1. De campagne bestellen.
 1. Bezig met uitvoeren van campagnes.
 
-## Een lokale campagnemalplaatje maken {#creating-a-local-campaign-template}
+## Creating a local campaign template {#creating-a-local-campaign-template}
 
 Als u een campagnepakket wilt maken, moet u eerst de **campagnemalplaatje** maken via het **[!UICONTROL Resources > Templates]** knooppunt.
 
@@ -83,7 +80,7 @@ Er zijn vier types van beschikbare interfaces van het Web:
 
    ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL By external form]** : de lokale entiteit heeft toegang tot campagneparameters in zijn Extranet (niet de Campagne van Adobe). Deze parameters zijn identiek aan die van een **lokale campagne (door vorm)**.
+* **[!UICONTROL By external form]** : de lokale entiteit heeft toegang tot campagneparameters in zijn Extranet (niet Adobe Campaign). Deze parameters zijn identiek aan die van een **lokale campagne (door vorm)**.
 * **[!UICONTROL Pre-set]** : de lokale entiteit geeft opdracht tot campagne gebruikend het standaardformulier, zonder het te lokaliseren.
 
    ![](assets/mkt_distr_5.png)
@@ -141,7 +138,7 @@ Dubbelklik op de **[!UICONTROL Query]** activiteit om deze te configureren volge
 
 ![](assets/mkt_dist_local_campaign_localize_query.png)
 
-### Aflevering {#delivery}
+### Levering {#delivery}
 
 Klik op het **[!UICONTROL Audit]** tabblad op het **[!UICONTROL Detail...]** pictogram om de **[!UICONTROL Scheduling]** voor de geselecteerde levering te bekijken.
 
@@ -174,7 +171,7 @@ Het campagnemalplaatje kan alleen beschikbaar worden voor lokale entiteiten als 
 Voer de volgende stappen uit:
 
 1. Klik in de **[!UICONTROL Navigation]** sectie op de pagina **Campagnes** op de **[!UICONTROL Campaign packages]** koppeling.
-1. Klik op de **[!UICONTROL Create]** knop.
+1. Klik op de knop **[!UICONTROL Create]**.
 
    ![](assets/mkg_dist_add_an_entry.png)
 
@@ -198,7 +195,7 @@ Deze informatie is te vinden in het aan lokale agentschappen verzonden kennisgev
 
 ![](assets/s_advuser_mkg_dist_local_notif.png)
 
-### Publiek {#audience}
+### Doelgroep {#audience}
 
 Voor een lokale campagne kan de centrale entiteit de betrokken lokale entiteiten specificeren door het **[!UICONTROL Limit the package to a set of local entities]** te controleren.
 
@@ -226,7 +223,7 @@ Vanaf het **[!UICONTROL General]** tabblad kan de centrale entiteit:
 
 ### Meldingen {#notifications}
 
-Wanneer een campagne beschikbaar wordt of wanneer de registratietermijn wordt bereikt, wordt een bericht verzonden naar de exploitanten van de lokale berichtgroep. Raadpleeg [Organisatorische entiteiten](../../campaign/using/about-distributed-marketing.md#organizational-entities)voor meer informatie hierover.
+Wanneer een campagne beschikbaar wordt of wanneer de registratietermijn wordt bereikt, wordt een bericht verzonden naar de exploitanten van de lokale berichtgroep. For more on this, refer to [Organizational entities](../../campaign/using/about-distributed-marketing.md#organizational-entities).
 
 ## Een campagne bestellen {#ordering-a-campaign}
 
@@ -242,7 +239,7 @@ Om een campagne van de centrale entiteit te gebruiken, moet de lokale entiteit h
 
 Een campagne bestellen:
 
-1. Klik **[!UICONTROL Order campaign]** in het berichtbericht, of de overeenkomstige knoop in de Campagne van Adobe.
+1. Klik **[!UICONTROL Order campaign]** in het berichtbericht, of de overeenkomstige knoop in Adobe Campaign.
 
    Voer uw id en wachtwoord in om de campagne te bestellen. De interface bestaat uit een set pagina&#39;s die zijn gedefinieerd in een webtoepassing.
 
@@ -276,9 +273,9 @@ Een campagne bestellen:
 
    ![](assets/mkg_dist_local_op_catalog_detail_3.png)
 
-   Raadpleeg de sectie [Goedkeuringsproces](#approval-process) voor meer informatie.
+   For more on this, refer to the [Approval process](#approval-process) section.
 
-1. De lokale exploitant wordt vervolgens op de hoogte gesteld dat de campagne beschikbaar is: de beschikbaarheid van campagnes is te vinden in de lijst van campagnepakketten binnen het **Campagne** universum. De campagne kan dan worden gebruikt. Raadpleeg [Toegankelijkheidscampagnes](../../campaign/using/accessing-campaigns.md)voor meer informatie.
+1. De lokale exploitant wordt vervolgens op de hoogte gesteld dat de campagne beschikbaar is: de beschikbaarheid van campagnes is te vinden in de lijst van campagnepakketten binnen het **Campagne** universum. De campagne kan dan worden gebruikt. For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-campaigns.md).
 
    Met deze **[!UICONTROL Start targeting with order approval]** optie kan de lokale entiteit de campagne uitvoeren zodra de bestelling is goedgekeurd.
 
@@ -308,7 +305,7 @@ Wanneer een campagne wordt besteld door een lokale entiteit, worden de revisoren
 
 ![](assets/mkg_dist_command_valid_web.png)
 
-#### Goedkeuren via de Adobe Campaign-console {#approving-via-the-adobe-campaign-console}
+#### Goedkeuring via de Adobe Campaign-console {#approving-via-the-adobe-campaign-console}
 
 De bestelling kan ook worden goedgekeurd via de console, in het overzicht van de campagnevolgorde. Als u een bestelling wilt goedkeuren, selecteert u deze en klikt u op **[!UICONTROL Approve the order]**.
 
@@ -324,7 +321,7 @@ Zodra een campagneorde wordt goedgekeurd, kan het door de lokale entiteit worden
 
 ![](assets/mkg_dist_mutual_op_created.png)
 
-Raadpleeg [Toegankelijkheidscampagnes](../../campaign/using/accessing-campaigns.md)voor meer informatie.
+For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-campaigns.md).
 
 ### Afwijzing van een goedkeuring {#rejecting-an-approval}
 
