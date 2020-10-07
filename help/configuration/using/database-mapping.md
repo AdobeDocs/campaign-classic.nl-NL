@@ -11,11 +11,8 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 discoiquuid: bc06c00d-f421-452e-bde0-b4ecc12c72c8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 656b867686dd90f3e921c2adb5e5676fec184803
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1976'
 ht-degree: 0%
@@ -418,7 +415,7 @@ Koppelingen voldoen aan de volgende regels:
 >
 >Standaard zijn koppelingen de elementen die aan het einde van het schema worden gedeclareerd.
 
-### Voorbeeld 1 {#example-1}
+### Example 1 {#example-1}
 
 1-N met betrekking tot de &quot;cus:company&quot;schemalijst:
 
@@ -481,7 +478,7 @@ Er is een omgekeerde koppeling naar de tabel &quot;cus:receiving&quot; toegevoeg
 * **niet geconsolideerd**: de koppeling wordt gedeclareerd als een verzamelingselement voor een kardinaliteit van 1 N (standaard)
 * **integriteit**: &quot;define&quot;door gebrek (kan met het &quot;revIntegrity&quot;attribuut in de verbindingsdefinitie op het bronschema worden gedwongen).
 
-### Voorbeeld 2 {#example-2}
+### Example 2 {#example-2}
 
 In dit voorbeeld, zullen wij een verbinding naar de &quot;nms:adres&quot;schemalijst verklaren. De join is een buitenste verbinding en wordt expliciet gevuld met het e-mailadres van de ontvanger en het veld &quot;@address&quot; van de gekoppelde tabel (&quot;nms:address&quot;).
 
@@ -496,7 +493,7 @@ In dit voorbeeld, zullen wij een verbinding naar de &quot;nms:adres&quot;schemal
 </srcSchema>
 ```
 
-### Voorbeeld 3 {#example-3}
+### Example 3 {#example-3}
 
 1-1 met betrekking tot de tabel in het schema &quot;cus:extension&quot;:
 
@@ -504,7 +501,7 @@ In dit voorbeeld, zullen wij een verbinding naar de &quot;nms:adres&quot;schemal
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
-### Voorbeeld 4 {#example-4}
+### Example 4 {#example-4}
 
 Koppeling naar een map (&quot;xtk:folder&quot;-schema):
 
@@ -514,7 +511,7 @@ Koppeling naar een map (&quot;xtk:folder&quot;-schema):
 
 De standaardwaarde retourneert de id van het eerste toepasselijke parametertype-bestand dat is ingevoerd in de functie &quot;DefaultFolder(&#39;nmsFolder&#39;)&quot;.
 
-### Voorbeeld 5 {#example-5}
+### Example 5 {#example-5}
 
 In dit voorbeeld willen we een sleutel maken voor een koppeling (&quot;bedrijf&quot; naar het schema &quot;focus:bedrijf&quot;) met het kenmerk **xlink** en een veld van de tabel (&quot;e-mail&quot;):
 
