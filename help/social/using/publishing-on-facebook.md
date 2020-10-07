@@ -11,11 +11,11 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 discoiquuid: 335cf2de-1874-4e48-9538-f0937641cf96
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1151'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ Creeer een nieuwe levering gebruikend het **[!UICONTROL Publish to a brand page]
 
 ![](assets/social_facebook_delivery_001.png)
 
-## Het hoofddoel selecteren {#selecting-the-main-target}
+## Selecting the main target {#selecting-the-main-target}
 
 U moet de pagina(&#39;s) selecteren waarop u uw publicatie wilt plaatsen.
 
@@ -45,7 +45,7 @@ U moet de pagina(&#39;s) selecteren waarop u uw publicatie wilt plaatsen.
 
    ![](assets/social_facebook_delivery_010.png)
 
-1. Klik op de **[!UICONTROL Add]** knop.
+1. Klik op de knop **[!UICONTROL Add]**.
 
    ![](assets/social_facebook_delivery_011.png)
 
@@ -59,7 +59,7 @@ U moet de pagina(&#39;s) selecteren waarop u uw publicatie wilt plaatsen.
 
 ## Het proefdrukdoel selecteren {#selecting-the-proof-target}
 
-Op het **[!UICONTROL Target of the proofs]** tabblad kunt u de Facebook-pagina definiëren die u wilt gebruiken voor het testen van leveringen voordat u deze verzendt. We raden u aan hiervoor een speciale persoonlijke Facebook-pagina te maken. Raadpleeg [Een testpagina voor Facebook maken voor meer informatie over het maken van een persoonlijke Facebook-pagina](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Als u het proefdrukdoel wilt selecteren, voert u dezelfde stappen uit als voor het hoofddoel: Het hoofddoel [](#selecting-the-main-target)selecteren.
+Op het **[!UICONTROL Target of the proofs]** tabblad kunt u de Facebook-pagina definiëren die u wilt gebruiken voor het testen van leveringen voordat u deze verzendt. We raden u aan hiervoor een speciale persoonlijke Facebook-pagina te maken. Raadpleeg [Een testpagina voor Facebook maken voor meer informatie over het maken van een persoonlijke Facebook-pagina](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Als u het proefdrukdoel wilt selecteren, voert u dezelfde stappen uit als voor het hoofddoel: [Het hoofddoel](#selecting-the-main-target)selecteren.
 
 ![](assets/social_facebook_delivery_004.png)
 
@@ -67,7 +67,7 @@ Op het **[!UICONTROL Target of the proofs]** tabblad kunt u de Facebook-pagina d
 >
 >Als u dezelfde Facebook-testpagina gebruikt voor alle leveringen, kunt u het proefdrukdoel opslaan in de **[!UICONTROL Publish to a brand page]** leveringssjabloon, die toegankelijk is via het **[!UICONTROL Resources > Templates > Delivery templates]** knooppunt. Het proefdrukdoel wordt standaard ingevoerd voor elke nieuwe levering.
 
-## Het publiek definiëren {#defining-the-audience}
+## Defining the audience {#defining-the-audience}
 
 Als u lokale segmenten wilt gebruiken om het type openbaar te verfijnen dat is geautoriseerd om de publicatie weer te geven, raden we u aan één Facebook-pagina per segment te maken (bijvoorbeeld: Adobe Campaign Paris, Adobe Campaign London, enz.).
 
@@ -131,7 +131,7 @@ Voer de verschillende velden in:
    >1. Voer het **[!UICONTROL Namespace]** veld in.
    >1. Voer het **[!UICONTROL Mobile Site URL]** veld in: wanneer een gebruiker op de publicatiekoppeling op zijn smartphone klikt, wordt deze automatisch door Facebook omgeleid naar de URL die in dit veld is gedefinieerd.
    >1. Maak uw webtoepassing zodat het Facebook-scherm wordt gepersonaliseerd als een functie van het gebruikte apparaat (smartphone of pc).
-   >1. Ga naar het **[!UICONTROL Link]** gebied van de publicatie via de console van de Campagne van Adobe, ga URL van het **[!UICONTROL Canvas page]** gebied in.
+   >1. Ga naar het **[!UICONTROL Link]** gebied van de publicatie via de console van Adobe Campaign, ga URL van het **[!UICONTROL Canvas page]** gebied in.
 
 
 1. Voer in het **[!UICONTROL Image]** veld de URL in van de afbeelding die links van de publicatie wordt weergegeven.
@@ -199,9 +199,9 @@ Op het **[!UICONTROL Preview]** tabblad kunt u de rendering van de publicatie we
 
 Het volgen kan in de leveringsrapporten en in het **[!UICONTROL Edit > Tracking]** lusje van de levering en de dienst worden bekeken.
 
-De klikken op URL in de levering worden gemeten door de Campagne van Adobe. Het aantal klikken op de **[!UICONTROL Like]** knop, het aantal opmerkingen en het aantal ventilatoren worden door Facebook gemeten.
+Klik op de URL in de levering wordt gemeten door Adobe Campaign. Het aantal klikken op de **[!UICONTROL Like]** knop, het aantal opmerkingen en het aantal ventilatoren worden door Facebook gemeten.
 
-De volgende configuratie is het zelfde als voor een e-maillevering. Zie [deze sectie](../../delivery/using/monitoring-a-delivery.md)voor meer informatie.
+De volgende configuratie is het zelfde als voor een e-maillevering. Raadpleeg [deze sectie](../../delivery/using/monitoring-a-delivery.md) voor meer informatie.
 
 >[!NOTE]
 >
