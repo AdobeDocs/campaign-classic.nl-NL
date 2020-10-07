@@ -1,7 +1,7 @@
 ---
-title: Over inhoudsbeheer
-seo-title: Over inhoudsbeheer
-description: Over inhoudsbeheer
+title: Contentmanagement
+seo-title: Contentmanagement
+description: Contentmanagement
 seo-description: null
 page-status-flag: never-activated
 uuid: f5f4b666-239c-423a-81aa-a50902224d41
@@ -11,18 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: 9f4e8d10-7387-4716-aa85-a6b012ad14ef
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e0ab9a3545b5c688975c32075c41e3987da5cf37
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 4%
 
 ---
 
 
-# Over inhoudsbeheer{#about-content-management}
+# Contentmanagement{#about-content-management}
 
-De Adobe Campagne Content Manager-module is een specifiek Classic- [standaardpakket](../../installation/using/installing-campaign-standard-packages.md) voor campagnes dat u kunt installeren om terugkerende nieuwsbrieven of websites te maken. Het kan u helpen om uw berichten tot stand te brengen, te bevestigen en te publiceren.
+De Adobe Campaign Content Manager-module is een specifiek Campaign Classic- [standaardpakket](../../installation/using/installing-campaign-standard-packages.md) dat u kunt installeren om terugkerende nieuwsbrieven of websites te maken. Het kan u helpen om uw berichten tot stand te brengen, te bevestigen en te publiceren.
 
 >[!NOTE]
 >
