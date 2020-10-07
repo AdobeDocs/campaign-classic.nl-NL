@@ -1,7 +1,7 @@
 ---
-title: Inhoudsbeheer
-seo-title: Inhoudsbeheer
-description: Inhoudsbeheer
+title: Contentmanagement
+seo-title: Contentmanagement
+description: Contentmanagement
 seo-description: null
 page-status-flag: never-activated
 uuid: 8d1bf84b-96e5-4d3d-9d77-42d2027a74db
@@ -11,22 +11,22 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 13b72aa1-de40-4548-835b-97e765e04e95
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '419'
+ht-degree: 3%
 
 ---
 
 
-# Inhoudsbeheer{#content-management}
+# Contentmanagement{#content-management}
 
 Met een **inhoudsbeheeractiviteit** kunt u inhoud maken en manipuleren en bestanden genereren op basis van deze inhoud. Deze inhoud kan vervolgens worden geleverd via een &#39;leveringsactiviteit&#39;.
 
 >[!CAUTION]
 >
->Inhoudsbeheer is een optionele Adobe Campagne-module. Controleer uw licentieovereenkomst.
+>Inhoudsbeheer is een optionele Adobe Campaign-module. Controleer hiervoor uw licentieovereenkomst.
 
 De eigenschappen van de activiteit zijn verdeeld in drie stappen:
 
@@ -36,7 +36,7 @@ De eigenschappen van de activiteit zijn verdeeld in drie stappen:
 
    ![](assets/content_mgmt_edit.png)
 
-   Raadpleeg deze [sectie](../../delivery/using/about-content-management.md)voor meer informatie over het configureren en gebruiken van inhoudsbeheer in Adobe Campaign.
+   Raadpleeg deze [sectie](../../delivery/using/about-content-management.md)voor meer informatie over het configureren en gebruiken van contentbeheer in Adobe Campaign.
 
 1. **Inhoud**
 
