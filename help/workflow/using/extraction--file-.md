@@ -1,5 +1,5 @@
 ---
-title: Gegevens uitnemen (bestand)
+title: Data-extractie (bestand)
 description: Meer informatie over de activiteit van de gegevensextractie-workflow (bestand).
 page-status-flag: never-activated
 uuid: c1e3fde3-183c-4602-9cef-760e4648fcf7
@@ -9,19 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: fe4e6f64-eb0a-44bc-8221-6c9bfb99871f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a215109db2d511180c91723059cd8ca10a34a612
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Gegevens uitnemen (bestand){#extraction-file}
+# Data-extractie (bestand){#extraction-file}
 
 U kunt gegevens uit een werkstroomtabel in een extern bestand extraheren met behulp van de **[!UICONTROL Data extraction (file)]** activiteit.
 
@@ -60,7 +57,7 @@ Raadpleeg voor meer informatie deze sectie: [Een bestand](../../workflow/using/h
 
 ![](assets/postprocessing_dataextraction.png)
 
-## Lijst van geaggregeerde functies {#list-of-aggregate-functions}
+## List of aggregate functions {#list-of-aggregate-functions}
 
 Hieronder volgt een lijst met beschikbare statistische functies:
 
