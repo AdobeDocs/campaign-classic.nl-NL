@@ -1,7 +1,7 @@
 ---
-title: Bepaling van de doelpopulatie
-seo-title: Bepaling van de doelpopulatie
-description: Bepaling van de doelpopulatie
+title: De doelpopulatie definiëren
+seo-title: De doelpopulatie definiëren
+description: De doelpopulatie definiëren
 seo-description: null
 page-status-flag: never-activated
 uuid: 8bf70ea4-5f28-4d85-b5ce-0bd3ed3eea55
@@ -11,19 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1578'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Bepaling van de doelpopulatie {#defining-the-target-population}
+# De doelpopulatie definiëren {#defining-the-target-population}
 
 ## Over doelpopulaties {#about-target-populations}
 
@@ -233,7 +230,7 @@ U kunt de proefdrukken als doel **[!UICONTROL Seed addresses]** gebruiken: met d
 
 U kunt de definitie van een specifiek proefdrukdoel en het gebruik van zaadadressen combineren gebruikend de **[!UICONTROL Specific target and Seed addresses]** optie. De gerelateerde configuraties worden vervolgens in twee aparte subtabbladen gedefinieerd.
 
-## Zaden en proefdrukken in een e-mail beheren {#seeds-and-proofs-video}
+## How to manage seed and proofs in an email {#seeds-and-proofs-video}
 
 In deze video leert u hoe u zaden en proefdrukken aan een bestaande e-mail kunt toevoegen en hoe u deze kunt verzenden.
 
@@ -244,4 +241,4 @@ Zie ook:
 
 * [Informatie over zaadadressen](../../delivery/using/about-seed-addresses.md)
 
-* [Hoofdlettergebruik: het selecteren van zaadadressen op criteria](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+* [Gebruiksscenario: seed-adressen selecteren op criteria](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
