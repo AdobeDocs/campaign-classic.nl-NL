@@ -1,7 +1,7 @@
 ---
-title: Opdrachtlijnen
-seo-title: Opdrachtlijnen
-description: Opdrachtlijnen
+title: Opdrachtregels
+seo-title: Opdrachtregels
+description: Opdrachtregels
 seo-description: null
 page-status-flag: never-activated
 uuid: fa897d6a-0326-4922-8936-2471af2f213c
@@ -11,18 +11,18 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 discoiquuid: 3621d4ec-8839-40c3-a574-486c408f79ba
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 5%
 
 ---
 
 
-# Opdrachtlijnen{#command-lines}
+# Opdrachtregels{#command-lines}
 
-De volgende opdrachtregels vereisen toegang tot de toepassingsserver. Voor implementaties die worden gehost door Adobe, kunnen deze opdrachten alleen door Adobe worden uitgevoerd.
+De volgende opdrachtregels vereisen toegang tot de toepassingsserver. Voor plaatsingen die door Adobe worden ontvangen, kunnen deze bevelen slechts door Adobe worden uitgevoerd.
 
 ## Een instantie maken {#creating-an-instance}
 
