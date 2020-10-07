@@ -11,30 +11,30 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: 8fb9ff23-17a7-4425-9195-738d6fd914dc
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 3%
 
 ---
 
 
 # De interface configureren{#configuring-the-interface}
 
-Voer de volgende stappen uit om de nieuwe tabel met ontvangers in de Adobe Campagne weer te geven en een dialoogvenster te openen:
+Voer de volgende stappen uit om de nieuwe tabel met ontvangers in de Adobe Campaign-interface weer te geven en deze te openen:
 
 * Maak een nieuw formulier om de inhoud van de nieuwe tabel met ontvangers te bewerken.
 * Voer een nieuw type in in de map van de verkenner-structuur.
-* Maak een nieuwe webtoepassing voor toegang tot de aangepaste tabel via de startpagina van Adobe Campagne.
+* Maak een nieuwe webtoepassing voor toegang tot de aangepaste tabel via de Adobe Campaign-startpagina.
 
-Adobe Campagne gebruikt een globale variabele &quot;Nms_DefaultRcpSchema&quot;aan dialoog met het gebrek ontvankelijke gegevensbestand (nms:ontvanger). Deze variabele moet daarom worden gewijzigd.
+Adobe Campaign gebruikt een globale variabele &quot;Nms_DefaultRcpSchema&quot;aan dialoog met het standaard ontvankelijke gegevensbestand (nms:ontvanger). Deze variabele moet daarom worden gewijzigd.
 
 1. Ga naar het **[!UICONTROL Administration>Platform>Options]** knooppunt van de verkenner.
 1. Wijzig de waarde van de **variabele Nms_DefaultRcpSchema** met de naam van het schema dat overeenkomt met de externe tabel voor ontvangers (in dit geval: focus:individu).
 1. Wijzigingen opslaan.
 
-## Een nieuw formulier maken {#creating-a-new-form-}
+## Creating a new form {#creating-a-new-form-}
 
 Als u een nieuw formulier maakt, kunt u de gegevens van de externe tabel met ontvangers weergeven en bewerken.
 
@@ -69,7 +69,7 @@ Als u een nieuw formulier maakt, kunt u de gegevens van de externe tabel met ont
 
 ## Een nieuw type map maken in de navigatiehiërarchie {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
 
-1. Ga naar het **[!UICONTROL Administration>Configuration>Navigation hierarchies]** knooppunt.
+1. Go to the **[!UICONTROL Administration>Configuration>Navigation hierarchies]** node.
 1. Maak een nieuw **xtk:navtree** - **document van het type navtree** .
 1. Beschrijf alle controles en gebieden die u afhankelijk van uw lijstmalplaatje nodig hebt.
 
