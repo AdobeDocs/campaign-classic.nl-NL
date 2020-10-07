@@ -1,7 +1,7 @@
 ---
-title: Stapeltracering in Linux
-seo-title: Stapeltracering in Linux
-description: Stapeltracering in Linux
+title: Stacktracering in Linux
+seo-title: Stacktracering in Linux
+description: Stacktracering in Linux
 seo-description: null
 page-status-flag: never-activated
 uuid: d839df47-902f-4b92-bc78-536fc4fb6c98
@@ -11,16 +11,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 60f306ea-4593-4e56-896e-8933277ee26a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9482a99c3be164651b3428179388cb0a8a75783f
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 14%
 
 ---
 
 
-# Stapeltracering in Linux{#stack-trace-in-linux}
+# Stacktracering in Linux{#stack-trace-in-linux}
 
 Een **stapelspoor** vertegenwoordigt een spoor in een **kerntypedossier** . Dit bestand wordt gegenereerd als er een computerfout optreedt. De oorsprong van de fout kan worden geïdentificeerd.
 
@@ -28,6 +28,7 @@ Een **stapelspoor** vertegenwoordigt een spoor in een **kerntypedossier** . Dit 
 >
 >* Een **kernbestand** krijgt de naam **core.`<num>`**.
 >* **gdb - De GNU-foutopsporing** moet op de computer zijn geïnstalleerd.
+
 >
 
 
@@ -59,9 +60,9 @@ gdb nlserver <coreFile>
 #16 0x5565918a in clone () from /lib/tls/libc.so.6
 ```
 
-De technische ondersteuning van Adobe Campaign kan u vragen deze opdracht uit te voeren met een specifiek uitvoerbaar bestand (dat door ons moet worden geleverd).
+De technische steun van Adobe Campaign zou u kunnen vragen om dit bevel in werking te stellen gebruikend specifiek uitvoerbaar (door ons te leveren).
 
-In dit geval voert u gewoon de volgende opdracht uit door **nlserver** te vervangen door het uitvoerbare bestand dat wordt geleverd door Adobe Campaign:
+In dit geval voert u gewoon de volgende opdracht uit door **nlserver** te vervangen door het uitvoerbare bestand dat door Adobe Campaign wordt geleverd:
 
 ```
 gdb nlserver <coreFile>
