@@ -11,18 +11,18 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 discoiquuid: a78c9986-7c49-47db-99a0-9f0949c4dee7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ceb5b2fdcd0dfca28412534ed3417367026f71d0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 4%
 
 ---
 
 
 # Gebeurtenisverwerking{#about-event-processing}
 
-In de context van transactiemelding, wordt een gebeurtenis geproduceerd door een extern informatiesysteem en verzonden naar de Campagne van Adobe via de **[!UICONTROL PushEvent]** en **[!UICONTROL PushEvents]** methodes (zie de beschrijving [van de](../../message-center/using/event-description.md)Gebeurtenis). Het bevat gegevens die aan de gebeurtenis zijn gekoppeld, zoals het type (bevestiging van de bestelling of het maken van een account op bijvoorbeeld een website), het e-mailadres of het mobiele nummer, en andere informatie waarmee u het transactiemelding vóór levering kunt verrijken en personaliseren. Dit kunnen de contactgegevens van de klant, de taal van het bericht of het e-mailformaat zijn.
+In de context van transactiemelding, wordt een gebeurtenis geproduceerd door een extern informatiesysteem en verzonden naar Adobe Campaign via de **[!UICONTROL PushEvent]** en **[!UICONTROL PushEvents]** methodes (zie beschrijving [van de](../../message-center/using/event-description.md)Gebeurtenis). Het bevat gegevens die aan de gebeurtenis zijn gekoppeld, zoals het type (bevestiging van de bestelling of het maken van een account op bijvoorbeeld een website), het e-mailadres of het mobiele nummer, en andere informatie waarmee u het transactiemelding vóór levering kunt verrijken en personaliseren. Dit kunnen de contactgegevens van de klant, de taal van het bericht of het e-mailformaat zijn.
 
 Voorbeeld van gebeurtenisgegevens:
 
@@ -33,8 +33,8 @@ Om transactionele overseinengebeurtenissen te verwerken, moeten de volgende stap
 1. Gebeurtenisverzameling,
 1. Gebeurtenisoverdracht naar een berichtsjabloon,
 1. Verrijking van gebeurtenissen met personalisatiegegevens,
-1. Uitvoering van de levering,
-1. Recycling van gebeurtenissen waarvan de gekoppelde levering is mislukt (deze stap kan worden uitgevoerd via een Adobe Campagne-workflow).
+1. Uitvoering van levering,
+1. Recycling van gebeurtenissen waarvan de gekoppelde levering is mislukt (deze stap kan worden uitgevoerd via een Adobe Campaign-workflow).
 
 ## Gebeurtenisstatussen {#event-statuses}
 
