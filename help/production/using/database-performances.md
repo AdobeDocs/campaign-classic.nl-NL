@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 6358c8fd-2b75-4462-acd1-887ee44d3110
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '483'
+ht-degree: 8%
 
 ---
 
@@ -24,28 +24,28 @@ source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
 
 De meeste prestatieproblemen houden verband met databaseonderhoud. Hier volgen vier belangrijke aanwijzingen om u te helpen de oorzaak van langzame prestaties te vinden:
 
-* configuratie,
-* Installatie en configuratie van het Adobe Campaign-platform,
-* onderhoud van databases,
+* Configuratie,
+* Installatie en configuratie van het Adobe Campaign-platform;
+* Databaseonderhoud,
 * Realtime diagnose.
 
 ## Configuratie {#configuration}
 
-Controleer of de initiële configuratie van het Adobe Campagne-platform nog steeds geldig is en herzie indien nodig de behoeften van uw klant op het gebied van de leverbaarheid of de databasegrootte. We raden u ook aan een volledige hardwarecontrole uit te voeren (CPU, RAM, IO-systeem).
+Controleer of de eerste configuratie van het Adobe Campaign-platform nog geldig is en herzie indien nodig de behoeften van uw klant op het gebied van de leverbaarheid of de databasegrootte. We raden u ook aan een volledige hardwarecontrole uit te voeren (CPU, RAM, IO-systeem).
 
 >[!NOTE]
 >
->Raadpleeg de handleiding [voor inzichten van](https://helpx.adobe.com/campaign/kb/hardware-sizing-guide.html) Adobe Campaign Harware Sizing.
+>U kunt de handleiding [voor](https://helpx.adobe.com/nl/campaign/kb/hardware-sizing-guide.html) Adobe Campaign Harware Sizing raadplegen voor inzichten.
 
-## Platformconfiguratie {#platform-configuration}
+## Platform configureren {#platform-configuration}
 
 Onjuiste configuratie kan de prestaties van het platform beïnvloeden. Wij adviseren dat u netwerkconfiguratie, de opties van de platformleverantie evenals configuratie MTA in het **serverConf.xml** - dossier controleert.
 
-## Database-onderhoud {#database-maintenance}
+## Databaseonderhoud {#database-maintenance}
 
 **Opschoontaak database**
 
-Controleer of de opschoontaak van de database actief is. U doet dit door de logbestanden weer te geven om te zien of deze fouten bevatten. Zie [deze sectie](../../production/using/database-cleanup-workflow.md)voor meer informatie.
+Controleer of de opschoontaak van de database actief is. U doet dit door de logbestanden weer te geven om te zien of deze fouten bevatten. Raadpleeg [deze sectie](../../production/using/database-cleanup-workflow.md) voor meer informatie.
 
 **Onderhoudsplannen**
 
@@ -55,7 +55,7 @@ Zorg ervoor dat het databaseonderhoud correct is gepland en uitgevoerd. Neem hie
 * eerder uitgevoerde onderhoudsplannen;
 * bekijk de manuscriptlogboeken.
 
-Zie [deze sectie](../../production/using/recommendations.md)voor meer informatie.
+Raadpleeg [deze sectie](../../production/using/recommendations.md) voor meer informatie.
 
 >[!CAUTION]
 >
@@ -71,13 +71,13 @@ Controleer het aantal en de grootte van werktabellen. Wanneer zij een bepaalde g
 
 >[!CAUTION]
 >
->Als de bewerking lang duurt en veel ruimte vrijmaakt, betekent dit dat diepgaand onderhoud noodzakelijk is (indexheropbouw, enz.). Zie [deze sectie](../../production/using/recommendations.md)voor meer informatie.
+>Als de bewerking lang duurt en veel ruimte vrijmaakt, betekent dit dat diepgaand onderhoud noodzakelijk is (indexheropbouw, enz.). Raadpleeg [deze sectie](../../production/using/recommendations.md) voor meer informatie.
 
-**Bewaking van Adobe-campagneproces**
+**Adobe Campaign-procesbewaking**
 
-Afhankelijk van de installatie-instellingen van Adobe Campagne kunnen twee programma&#39;s worden gebruikt voor platformbewaking:
+Afhankelijk van de installatie-instellingen van Adobe Campaign kunnen twee tools worden gebruikt voor platformbewaking:
 
-* de pagina voor de productie van exemplaren. Raadpleeg [Handmatige controle](../../production/using/monitoring-processes.md#manual-monitoring)voor meer informatie.
+* de pagina voor de productie van exemplaren. For more on this, refer to [Manual monitoring](../../production/using/monitoring-processes.md#manual-monitoring).
 * het netreport script. Raadpleeg [Automatische controle via Adobe Campaign-scripts](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts)voor meer informatie.
 
 ## Specificaties {#specifics}
