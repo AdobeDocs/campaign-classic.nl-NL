@@ -1,7 +1,7 @@
 ---
-title: Toepassingsserver
-seo-title: Toepassingsserver
-description: Toepassingsserver
+title: Applicatieserver
+seo-title: Applicatieserver
+description: Applicatieserver
 seo-description: null
 page-status-flag: never-activated
 uuid: 837c6a5c-53a4-4d1b-a084-9cf77e7a0eee
@@ -11,28 +11,28 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 7a9e028c-255d-4aad-9827-d19f9a7897b2
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 2%
 
 ---
 
 
-# Toepassingsserver{#application-server}
+# Applicatieserver{#application-server}
 
-De vereiste databasetoegangslagen moeten op de server zijn geïnstalleerd en toegankelijk zijn vanaf de Adobe Campagne-account.
+De vereiste databasetoegangslagen moeten op de server zijn geïnstalleerd en toegankelijk zijn vanaf de Adobe Campaign-account.
 
 ## Java Development Kit - JDK {#java-development-kit---jdk}
 
-De dynamische generator van de Web-pagina gebruikt JSP 1.2 technologie. Hiervoor wordt een Tomcat-engine (van Apache) in de toepassing opgenomen. Hiervoor is een JDK (Java Development Kit) vereist, die is geïnstalleerd op alle servers waarop de Adobe Campagne-toepassing is geïnstalleerd.
+De dynamische generator van de Web-pagina gebruikt JSP 1.2 technologie. Hiervoor wordt een Tomcat-engine (van Apache) in de toepassing opgenomen. Hiervoor is een JDK (Java Development Kit) vereist die is geïnstalleerd op alle servers waarop de Adobe Campaign-toepassing is geïnstalleerd.
 
-U moet eerst een JDK installeren op de computers waarop u de toepassingsserver van de Campagne van Adobe (**het Webproces** van de Server) wilt in werking stellen omdat het een servletcontainer, Apache Tomcat, opneemt die wordt gebruikt om dynamische Web-pagina&#39;s (rapporten, Web-formulieren, enz.) te produceren.
+U moet eerst een JDK installeren op de computers waarop u de Adobe Campaign-toepassingsserver (**nlserver-webproces** ) wilt uitvoeren omdat deze een servletcontainer, Apache Tomcat, bevat die wordt gebruikt om dynamische webpagina&#39;s te genereren (rapporten, webformulieren, enz.).
 
 De toepassing is goedgekeurd voor de Java Development Kit (JDK) die door Oracle is ontwikkeld en voor **OpenJDK**.
 
-De ondersteunde versies worden gedetailleerd beschreven in de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
+De ondersteunde versies worden gedetailleerd beschreven in de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html).
 
 >[!NOTE]
 >
@@ -66,11 +66,11 @@ yum install java-1.8.0-openjdk
 
 ## OpenSSL {#openssl}
 
-In Linux moet OpenSSL zijn geïnstalleerd. De versies die worden ondersteund door Adobe Campaign zijn **OpenSSL 1.0.1** en **OpenSSL 0.9.8**. Subversies 0.9.8g tot en met 0.9.8o worden geaccepteerd.
+In Linux moet OpenSSL zijn geïnstalleerd. De versies die door Adobe Campaign worden ondersteund, zijn **OpenSSL 1.0.1** en **OpenSSL 0.9.8**. Subversies 0.9.8g tot en met 0.9.8o worden geaccepteerd.
 
 ## Rapporten exporteren {#exporting-reports}
 
-Met Adobe Campaign kunt u platformrapporten exporteren in Microsoft Excel- en Adobe PDF-indeling. Voor de indeling Microsoft Excel gebruikt Adobe Campaign **LibreOffice**. Voor de Adobe PDF-indeling gebruikt Adobe Campaign de **PhantomJS** -converter. PhantomJs is opgenomen in het fabriekspakket en LibreOffice moet zijn geïnstalleerd op de computer(s) waarop de Adobe Campagne-toepassingsserver wordt uitgevoerd (**nlserver webproces** ).
+Met Adobe Campaign kunt u platformrapporten exporteren in Microsoft Excel- en Adobe PDF-indeling. Voor de indeling Microsoft Excel gebruikt Adobe Campaign **LibreOffice**. Voor de Adobe PDF-indeling gebruikt Adobe Campaign de **PhantomJS** -converter. PhantomJs is opgenomen in het fabriekspakket en LibreOffice moet zijn geïnstalleerd op de computer(s) waarop de Adobe Campaign-toepassingsserver wordt uitgevoerd (**nlserver-webproces** ).
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ Met Adobe Campaign kunt u platformrapporten exporteren in Microsoft Excel- en Ad
 
 Met SpamAssassin kunt u een score toewijzen aan e-mails om te bepalen of een bericht als ongewenst kan worden beschouwd door anti-spamgereedschappen die worden gebruikt bij de ontvangst. Installatie is optioneel.
 
-De kwalificatie van e-mails als ongewenst door SpamAssassin is volledig gebaseerd op filtreer- en scoreregels. Deze regels moeten daarom ten minste eenmaal per dag worden bijgewerkt, zodat uw SpamAssassin-installatie en de integratie ervan in Adobe Campaign volledig functioneel zijn en de relevantie van de scores die aan uw leveringen zijn toegewezen, wordt gegarandeerd voordat deze worden verzonden. Deze update valt onder de verantwoordelijkheid van de serverbeheerder die als host fungeert voor SpamAssassin.
+De kwalificatie van e-mails als ongewenst door SpamAssassin is volledig gebaseerd op filtreer- en scoreregels. Deze regels moeten daarom ten minste eenmaal per dag worden bijgewerkt om ervoor te zorgen dat uw SpamAssassin-installatie en de integratie ervan in Adobe Campaign volledig functioneel zijn en dat de relevantie van de scores die aan uw leveringen zijn toegekend, wordt gegarandeerd voordat deze worden verzonden. Deze update valt onder de verantwoordelijkheid van de serverbeheerder die als host fungeert voor SpamAssassin.
 
 De minimaal ondersteunde versie is: **3,4**
 
