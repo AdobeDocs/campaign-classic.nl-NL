@@ -1,7 +1,7 @@
 ---
-title: Samenvoegen bijwerken
-seo-title: Samenvoegen bijwerken
-description: Samenvoegen bijwerken
+title: Samenvoeging bijwerken
+seo-title: Samenvoeging bijwerken
+description: Samenvoeging bijwerken
 seo-description: null
 page-status-flag: never-activated
 uuid: 34ae42e1-da34-43be-b219-0b3b872177b3
@@ -11,20 +11,20 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 031f8d5d-940c-4a4c-97e7-ad4ef61983c1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 8%
 
 ---
 
 
-# Samenvoegen bijwerken{#update-aggregate}
+# Samenvoeging bijwerken{#update-aggregate}
 
 Voor rapportagedoeleinden worden aggregaten op kubueniveau gedefinieerd. Er is een **[!UICONTROL Workflow]** tabblad beschikbaar wanneer u een aggregaat configureert.
 
-Raadpleeg de desbetreffende [sectie](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates)voor meer informatie over kubussen en het gebruik van aggregaten in Adobe Campagne.
+Raadpleeg de desbetreffende [sectie](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates)voor meer informatie over kubussen en het gebruik van aggregaten in Adobe Campaign.
 
 Met de **[!UICONTROL Update aggregate]** activiteit kunt u de updatemodus selecteren die u wilt toepassen: volledig of gedeeltelijk.
 
