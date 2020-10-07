@@ -11,14 +11,11 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: cd03c475-fe57-4c6e-b1c0-533938e6f74e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '86'
-ht-degree: 4%
+ht-degree: 22%
 
 ---
 
@@ -32,6 +29,6 @@ Als u een upgrade uitvoert van Adobe Campaign v6 naar v7, raden we u aan de volg
 
 Voor meer informatie over migratieprocedures en beste praktijken, verwijs naar:
 
-* [Een build-upgrade uitvoeren](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)
+* [Een build-upgrade uitvoeren](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html)
 * [Migratieoverzicht](../../migration/using/about-migration.md)
 
