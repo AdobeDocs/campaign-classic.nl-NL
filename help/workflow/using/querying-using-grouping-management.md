@@ -1,5 +1,5 @@
 ---
-title: Vragen met behulp van groeperingsbeheer
+title: Query’s uitvoeren met behulp van groeperingsbeheer
 description: Leer hoe u query's uitvoert met behulp van groeperingsbeheer
 page-status-flag: never-activated
 uuid: 0556d53e-0fdf-47b3-b1e0-b52e85e0c662
@@ -9,19 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f99e3a4f69cb2b0122f2f6957d419d6b95ad54b1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '251'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
 
-# Vragen met behulp van groeperingsbeheer {#querying-using-grouping-management}
+# Query’s uitvoeren met behulp van groeperingsbeheer {#querying-using-grouping-management}
 
 In dit voorbeeld willen we een query uitvoeren om alle e-maildomeinen te zoeken die meer dan 30 keer zijn aangewezen tijdens eerdere leveringen.
 
@@ -62,7 +59,7 @@ U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
    ![](assets/query_editor_blocklist_04.png)
 
-1. Geef in het **[!UICONTROL Grouping condition]** venster een aantal primaire sleutels op dat groter is dan 30, omdat we alleen willen dat e-maildomeinen die meer dan 30 keer zijn bedoeld, als resultaten worden geretourneerd.
+1. Geef in het **[!UICONTROL Grouping condition]** venster een aantal primaire sleutels op dat groter is dan 30, aangezien we alleen willen dat e-maildomeinen die meer dan 30 keer zijn bedoeld als resultaten worden geretourneerd.
 
    Dit venster wordt weergegeven wanneer het **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** selectievakje is ingeschakeld: Hier wordt het groeperingsresultaat gefilterd (HAVING).
 
