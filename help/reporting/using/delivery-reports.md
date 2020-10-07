@@ -1,7 +1,7 @@
 ---
-title: Afleveringsrapporten
-seo-title: Afleveringsrapporten
-description: Afleveringsrapporten
+title: Leveringsrapporten
+seo-title: Leveringsrapporten
+description: Leveringsrapporten
 seo-description: null
 page-status-flag: never-activated
 uuid: 83ea834e-08f7-441b-8f15-a25ec07c4aab
@@ -11,19 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5ebea30c743ab416ede879c74735e2c7870d3db9
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1456'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Afleveringsrapporten {#delivery-reports}
+# Leveringsrapporten {#delivery-reports}
 
 U kunt de uitvoering van leveringen bijhouden via verschillende rapporten die toegankelijk zijn vanuit het leveringsoverzicht. Pas de volgende procedure toe om rapporten weer te geven:
 
@@ -52,7 +49,7 @@ U kunt de uitvoering van leveringen bijhouden via verschillende rapporten die to
    * **[!UICONTROL Delivery statistics]** : zie [Leveringsstatistieken](../../reporting/using/global-reports.md#delivery-statistics).
    * **[!UICONTROL Breakdown of opens]** : Zie [Uitsplitsing van openen](../../reporting/using/global-reports.md#breakdown-of-opens).
 
-## Traceringsindicatoren {#tracking-indicators}
+## Trackingsindicatoren {#tracking-indicators}
 
 Dit rapport combineert de belangrijkste indicatoren voor het volgen van het gedrag van ontvangers bij het ontvangen van de levering. Het geeft toegang tot levering en ontvangststatistieken, open en klikthrough tarieven, geproduceerde klikstromen, Web het volgen en het delen van activiteiten aan sociale netwerken.
 
@@ -76,7 +73,7 @@ Dit rapport combineert de belangrijkste indicatoren voor het volgen van het gedr
 * **[!UICONTROL Distinct opens for the population reached]** : Schatting van het aantal ontvangers voor wie het bericht bestemd is dat een bericht ten minste eenmaal heeft geopend. Er wordt rekening gehouden met klikken op abonnementkoppelingen en spiegelpagina&#39;s.
 * **[!UICONTROL Sum of opens for the population reached]** : Schatting van het totale aantal openingen door de beoogde ontvangers.
 * **[!UICONTROL Clicks on opt-out link]** : Aantal klikken op de verbinding van het unsubscription.
-* **[!UICONTROL Clicks on the mirror page link]** : Aantal klikken op de verbinding aan de spiegelpagina. Om in aanmerking te worden genomen, moet de verbinding als dusdanig in de leveringstovenaar (bijgehouden URLs) worden bepaald. Zie deze [pagina](../../delivery/using/monitoring-a-delivery.md).
+* **[!UICONTROL Clicks on the mirror page link]** : Aantal klikken op de verbinding aan de spiegelpagina. Om in aanmerking te worden genomen, moet de verbinding als dusdanig in de leveringstovenaar (bijgehouden URLs) worden bepaald. Refer to this [page](../../delivery/using/monitoring-a-delivery.md).
 * **[!UICONTROL Estimation of forwards]** : Schatting van het aantal e-mails dat door de beoogde ontvangers is doorgestuurd. Deze waarde wordt berekend door het aantal verschillende personen en het aantal verschillende ontvangers af te trekken die in de e-mail hebben geklikt.
 
    >[!NOTE]
@@ -95,7 +92,7 @@ Deze waardetabel toont de uitsplitsing van leveringen, opent, klikt en ruwe reac
 
 >[!NOTE]
 >
->De domeinnamen die in dit rapport worden weergegeven, worden gedefinieerd in de gespecificeerde lijst die op kubusniveau wordt gebruikt. Als u standaarddomeinen wilt wijzigen, toevoegen of verwijderen, bewerkt u de **[!UICONTROL Domains]** gespecificeerde lijst en wijzigt u waarden en aliassen. For more on this, refer to [this section](../../platform/using/managing-enumerations.md). De **[!UICONTROL Others]** categorie omvat domeinnamen die niet tot om het even welke waarde van de gespecificeerde lijst behoren.
+>De domeinnamen die in dit rapport worden weergegeven, worden gedefinieerd in de gespecificeerde lijst die op kubusniveau wordt gebruikt. Als u standaarddomeinen wilt wijzigen, toevoegen of verwijderen, bewerkt u de **[!UICONTROL Domains]** gespecificeerde lijst en wijzigt u waarden en aliassen. Raadpleeg [deze sectie](../../platform/using/managing-enumerations.md) voor meer informatie. De **[!UICONTROL Others]** categorie omvat domeinnamen die niet tot om het even welke waarde van de gespecificeerde lijst behoren.
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -106,7 +103,7 @@ Deze waardetabel toont de uitsplitsing van leveringen, opent, klikt en ruwe reac
 * **[!UICONTROL Distinct clicks for the population reached]** : Aantal verschillende personen dat ten minste één keer in een levering heeft geklikt.
 * **[!UICONTROL Cumulated clicks]** : Het totale aantal klikken door beoogde ontvangers, exclusief koppelingen zonder abonnement en spiegel.
 * **[!UICONTROL Recipient clicks]** : Aantal afzonderlijke beoogde ontvangers die minstens één keer op dezelfde levering hebben geklikt.
-* **[!UICONTROL Estimated recipient reactivity]** : Verhouding van het aantal ontvangers dat ten minste eenmaal in een levering heeft geklikt ten opzichte van het geschatte aantal ontvangers dat een levering ten minste eenmaal heeft geopend. Er wordt geen rekening gehouden met de klikken op de pagina-link Weigeren en de koppeling spiegelen.
+* **[!UICONTROL Estimated recipient reactivity]** : Verhouding tussen het aantal ontvangers dat ten minste eenmaal in een levering heeft geklikt en het geschatte aantal ontvangers dat een levering ten minste eenmaal heeft geopend. Er wordt geen rekening gehouden met de klikken op de pagina-link Weigeren en de koppeling spiegelen.
 
 **[!UICONTROL 5. Web tracking]**
 
@@ -126,13 +123,13 @@ Deze waardetabel toont de uitsplitsing van leveringen, opent, klikt en ruwe reac
 
 Deze sectie toont het aantal berichten die op elk sociaal netwerk worden gedeeld. Raadpleeg [Delen naar sociale netwerken](../../reporting/using/global-reports.md#sharing-to-social-networks)voor meer informatie.
 
-## URL&#39;s en klik op streams {#urls-and-click-streams}
+## URL&#39;s en klikpaden {#urls-and-click-streams}
 
 Dit rapport bevat de lijst met bezochte pagina&#39;s na een levering.
 
 ![](assets/s_ncs_user_url_report.png)
 
-U kunt de inhoud van dit rapport vormen door te selecteren: het scorebord dat moet worden weergegeven, het tijdfilter (sinds de actie wordt gestart, gedurende de eerste 6 uur na de start, enz.) en de weergavemodus voor gegevens (per label, per URL, per categorie - voor meer informatie hierover, raadpleegt u [deze pagina](../../delivery/using/monitoring-a-delivery.md)). Klik **[!UICONTROL Refresh]** om uw selectie te bevestigen.
+U kunt de inhoud van dit rapport vormen door te selecteren: het scorebord dat moet worden weergegeven, het tijdfilter (sinds de actie wordt gestart, gedurende de eerste 6 uur na de start, enz.) en de weergavemodus voor gegevens (per label, per URL, per categorie - voor meer informatie hierover, raadpleegt u [deze pagina](../../delivery/using/monitoring-a-delivery.md)). Klik op **[!UICONTROL Refresh]** om uw selectie te bevestigen.
 
 De volgende tarieven worden getoond in de hogere sectie van het rapport:
 
@@ -156,7 +153,7 @@ De centrale tabel bevat de volgende informatie:
 
 Dit diagram toont de uitsplitsing van gecumuleerde klikken per dag.
 
-## Overzicht van levering {#delivery-summary}
+## Leveringsoverzicht {#delivery-summary}
 
 Dit rapport bevat alle belangrijke informatie over de levering.
 
@@ -167,7 +164,7 @@ Dit rapport bevat alle belangrijke informatie over de levering.
 Deze sectie heeft twee indicatoren:
 
 * **[!UICONTROL Initial population]** : Het totale aantal ontvangers waarop de levering betrekking heeft.
-* **[!UICONTROL Messages rejected by the rule]** : Aantal adressen genegeerd tijdens de analyse wanneer het toepassen van typologieregels: adres ontbreekt, in quarantaine geplaatst, toegevoegd aan de bloklijst, enz. Raadpleeg deze [pagina](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies)voor meer informatie over typologische regels.
+* **[!UICONTROL Messages rejected by the rule]** : Aantal adressen genegeerd tijdens de analyse wanneer het toepassen van typologieregels: adres ontbreekt, in quarantaine geplaatst, toegevoegd aan de lijst van afgewezen personen, enz. For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
 
 **[!UICONTROL Causes of exclusion]**
 
@@ -182,7 +179,7 @@ Dit deel omvat de volgende indicatoren:
 * **[!UICONTROL Errors]** : Totaal aantal fouten gecumuleerd tijdens leveringen en automatische terugkerende verwerking. Het bijbehorende tarief is de verhouding met het aantal te leveren berichten.
 * **[!UICONTROL New quarantines]** : Aantal adressen in quarantaine na een mislukte levering (onbekende gebruiker, ongeldig domein). Het bijbehorende tarief is de verhouding met het aantal te leveren berichten.
 
-## Hot kliks {#hot-clicks}
+## Hot clicks {#hot-clicks}
 
 Dit rapport toont de berichtinhoud (HTML en/of tekst) met, op elke verbinding, het percentage klikt op verbindingen. De belemmeringen van de verpersoonlijking unsubscription verbindingen, spiegelpaginakoppelingen en aanbiedingsverbindingen worden in de totale gecumuleerde kliks in aanmerking genomen maar niet getoond in het rapport.
 
@@ -198,7 +195,7 @@ Dit rapport bevat statistieken over openen, klikken en transacties.
 
 ![](assets/s_ncs_user_stat_report.png)
 
-Hiermee kunt u de marketingeffecten van de levering volgen. U kunt configureren hoe waarden worden weergegeven door de tijdschaal te wijzigen (1 uur, 3 uur of 24 uur, enz.). Klik **[!UICONTROL Refresh]** om uw selectie te bevestigen.
+Hiermee kunt u de marketingeffecten van de levering volgen. U kunt configureren hoe waarden worden weergegeven door de tijdschaal te wijzigen (1 uur, 3 uur of 24 uur, enz.). Klik op **[!UICONTROL Refresh]** om uw selectie te bevestigen.
 
 Dit rapport bevat een tabel met waarden en een Pareto-grafiek met de tijd die nodig is voor de levering om de maximale efficiëntie te bereiken. De volgende indicatoren worden gebruikt:
 
