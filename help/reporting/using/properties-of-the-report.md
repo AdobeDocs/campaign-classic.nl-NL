@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 5ec88743-be51-438c-9064-dd0196fdd7d3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b2222b2997105801164f930428c7b05ae7d11336
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '734'
+ht-degree: 3%
 
 ---
 
@@ -42,7 +42,7 @@ Als u de tabel wilt wijzigen waarop het rapport betrekking heeft, klikt u op het
 
 ## Toegankelijkheid rapporteren {#report-accessibility}
 
-Een rapport kan tot voorbij de console van de Campagne van Adobe, bijvoorbeeld via browser van het Web worden betreden. In dit geval, kan het noodzakelijk zijn om het controle van de rapporttoegang zoals hieronder getoond te vormen.
+Een rapport kan tot voorbij de console van Adobe Campaign, bijvoorbeeld via browser van het Web worden betreden. In dit geval, kan het noodzakelijk zijn om het controle van de rapporttoegang zoals hieronder getoond te vormen.
 
 ![](assets/s_ncs_advuser_report_properties_02b.png)
 
@@ -52,7 +52,7 @@ Het algemene beginsel is als volgt:
 
    De rechten van de standaardrapportoperator (&#39;webapp&#39;) worden gebruikt om rapportelementen weer te geven.
 
-* De **[!UICONTROL Access control]** optie stelt Adobe Campagnebeheerders in staat om het te openen zodra zij het programma worden geopend.
+* Met deze **[!UICONTROL Access control]** optie hebben Adobe Campaign-operatoren toegang tot de toepassing wanneer ze zijn aangemeld.
 * Met de **[!UICONTROL Specific account]** optie kunt u het rapport uitvoeren met de rechten van de operator geselecteerd in het **[!UICONTROL Operator]** veld.
 
 Eigenschappen voor webformulieren worden in [deze pagina](../../web/using/about-web-forms.md)nader beschreven.
@@ -75,7 +75,7 @@ De bewerkingstaal is de taal waarin u schrijft. Wanneer u een taal toevoegt, wor
 
 Op het **[!UICONTROL Rendering]** tabblad kunt u de weergavemodus voor de pagina aanpassen. U kunt selecteren:
 
-* De engine voor het renderen van grafieken: Adobe Campaign beschikt over twee verschillende modi voor het genereren van diagramrendering. De renderingengine is standaard HTML 5. Indien nodig kunt u Flash-rendering selecteren.
+* De engine voor het renderen van grafieken: Adobe Campaign biedt twee verschillende modi voor het genereren van diagramrendering. De renderingengine is standaard HTML 5. Indien nodig, kunt u de rendering Flash selecteren.
 * Het navigatietype in het rapport: via knoppen of koppelingen.
 * De standaardpositie van labels voor rapportelementen. Deze positie kan voor elk element worden overbelast.
 * De sjabloon of het thema dat wordt gebruikt voor het genereren van rapportpagina&#39;s.
@@ -101,7 +101,7 @@ Een nieuwe instelling maken:
    ![](assets/s_ncs_advuser_report_properties_09a.png)
 
 1. Geef indien nodig op of de instelling verplicht is.
-1. Selecteer het type instelling dat u wilt maken: **[!UICONTROL Filter]** of **[!UICONTROL Variable]**.
+1. Select the type of setting you want to create: **[!UICONTROL Filter]** or **[!UICONTROL Variable]**.
 
    Met de **[!UICONTROL Filter entities]** optie kunt u een veld van de database als parameter gebruiken.
 
@@ -133,7 +133,7 @@ Als u de definitie van een variabele wilt weergeven, selecteert u de variabele e
 
 Op het **[!UICONTROL Scripts]** tabblad kunt u verwijzen naar JavaScript-codes die aan de client- en/of serverzijde worden uitgevoerd wanneer de rapportpagina wordt opgevraagd.
 
-Voor een normale uitvoering op de client moeten de scripts waarnaar wordt verwezen, in JavaScript zijn geschreven en compatibel zijn met de meeste browsers. Zie [deze sectie](../../web/using/web-forms-answers.md)voor meer informatie.
+Voor een normale uitvoering op de client moeten de scripts waarnaar wordt verwezen, in JavaScript zijn geschreven en compatibel zijn met de meeste browsers. Raadpleeg [deze sectie](../../web/using/web-forms-answers.md) voor meer informatie.
 
 ## De foutpagina aanpassen {#personalizing-the-error-page}
 
