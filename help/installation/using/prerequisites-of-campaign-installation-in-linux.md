@@ -1,7 +1,7 @@
 ---
-title: Vereisten voor installatie van campagne in Linux
-seo-title: Vereisten voor installatie van campagne in Linux
-description: Vereisten voor installatie van campagne in Linux
+title: Vereisten voor installatie van Campaign in Linux
+seo-title: Vereisten voor installatie van Campaign in Linux
+description: Vereisten voor installatie van Campaign in Linux
 seo-description: null
 page-status-flag: never-activated
 uuid: 65c7af3f-ca1d-4255-b54a-6a3c83af40ae
@@ -11,26 +11,26 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 discoiquuid: 3e2ccb70-6c0c-435f-9c06-f3e5e40367bb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '917'
+ht-degree: 4%
 
 ---
 
 
-# Vereisten voor installatie van campagne in Linux{#prerequisites-of-campaign-installation-in-linux}
+# Vereisten voor installatie van Campaign in Linux{#prerequisites-of-campaign-installation-in-linux}
 
 ## Softwarevereisten {#software-prerequisites}
 
-In deze sectie worden de voorbereidende stappen beschreven die voor de installatie van Adobe Campagne zijn vereist.
+In dit gedeelte worden de voorbereidende stappen beschreven die zijn vereist voor de installatie van Adobe Campaign.
 
-De technische en softwareconfiguratie die vereist is voor de installatie van Adobe Campaign wordt beschreven in de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
+De technische en softwareconfiguratie die vereist is voor de installatie van Adobe Campaign wordt beschreven in de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html).
 
 Ter herinnering, moeten de volgende componenten worden geïnstalleerd en correct worden gevormd:
 
-* Apache, raadpleeg de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
+* Apache, raadpleeg de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html).
 * Java JDK en OpenJDK, verwijs naar [Java Development Kit - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
 * Bibliotheken, zie [Bibliotheken](#libraries),
 * De toegangslagen van het gegevensbestand, verwijs naar de toegangslagen [van het](#database-access-layers)Gegevensbestand,
@@ -43,11 +43,11 @@ Ter herinnering, moeten de volgende componenten worden geïnstalleerd en correct
 
 ### Bibliotheken {#libraries}
 
-Als u Adobe Campaign in Linux wilt installeren, moet u over de vereiste bibliotheken beschikken.
+Als u Adobe Campaign in Linux wilt installeren, moet u de vereiste bibliotheken hebben.
 
 * Bibliotheek C moet de TLS-modus (Thread Local Storage) kunnen ondersteunen. Deze modus is in de meeste gevallen actief, behalve bij sommige kernels waarvoor Xen-ondersteuning is uitgeschakeld.
 
-   Om dit te controleren, kunt u gebruiken **uname - a| bijvoorbeeld de opdracht grep xen** .
+   Om dit te controleren, kunt u gebruiken **uname - a | bijvoorbeeld de opdracht grep xen** .
 
    Als het bevel om het even wat (lege lijn) niet terugkeert, betekent het configuratie correct is.
 
@@ -62,6 +62,7 @@ Als u Adobe Campaign in Linux wilt installeren, moet u over de vereiste biblioth
    * RHEL 7, CentOS 7: libicu50
    * Debian 8: libicu52
    * Debian 9: libicu57
+
    Als u Adobe Campaign wilt gebruiken, moet de bibliotheek libc-ares zijn geïnstalleerd. Voer bij RHEL/CentOS de volgende opdracht uit:
 
    ```
@@ -84,13 +85,13 @@ Om dit te doen, login als wortel en ga het volgende bevel in:
 echo 0 >/selinux/enforce
 ```
 
-Daarnaast is in het bestand **/etc/sysconfig/httpd** de volgende regel toegevoegd om te verwijzen naar het configuratiescript voor de omgeving van Adobe Campagne:
+Daarnaast is in het bestand **/etc/sysconfig/httpd** de volgende regel toegevoegd om naar het Adobe Campaign-omgevingsconfiguratiescript te verwijzen:
 
 ```
 . ~neolane/nl6/env.sh
 ```
 
-In RHEL en CentOS werden compatibiliteitsproblemen met de clientlagen van databases opgemerkt wanneer SELinux wordt ingeschakeld. We raden u aan SELinux uit te schakelen om er zeker van te zijn dat de Adobe-campagne correct kan werken.
+In RHEL en CentOS werden compatibiliteitsproblemen met de clientlagen van databases opgemerkt wanneer SELinux wordt ingeschakeld. We raden u aan SELinux uit te schakelen om er zeker van te zijn dat Adobe Campaign correct kan werken.
 
 **Pas het volgende proces toe:**
 
@@ -168,9 +169,9 @@ De volgende configuraties zijn nodig met CentOS:
 
 ## Databasetoegangslagen {#database-access-layers}
 
-De toegangslagen voor de database-engine die u gebruikt, moeten op de server zijn geïnstalleerd en toegankelijk zijn via het Adobe Campaign-account. Versies en installatiemodi kunnen variëren, afhankelijk van de gebruikte database-engine.
+De toegangslagen voor de database-engine die u gebruikt, moeten op de server zijn geïnstalleerd en toegankelijk zijn via de Adobe Campaign-account. Versies en installatiemodi kunnen variëren, afhankelijk van de gebruikte database-engine.
 
-De ondersteunde proefversie wordt beschreven in de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
+De ondersteunde proefversie wordt beschreven in de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html).
 
 Controleer ook de algemene sectie [Database](../../installation/using/database.md) .
 
@@ -194,7 +195,7 @@ U kunt een Linux RPM-pakket verkrijgen van het Oracle Technology Network.
 
 Problemen kunnen optreden na een Oracle-client of een serverupdate, wijziging van versie of bij de eerste installatie van de instantie.
 
-Als u op de clientconsole opmerkt dat er sprake is van onverwachte tijdsvertraging (een of meer uren) in logboeken, werkstroomlaatste verwerking, volgende verwerking enzovoort, kan er een probleem zijn tussen de bibliotheek van de Oracle-client en de Oracle-server. Dergelijke problemen voorkomen
+Als u op de clientconsole opmerkt dat er sprake is van onverwachte tijdsvertraging (een of meer uren) in logboeken, laatste verwerking van de workflow, volgende verwerking enzovoort, kan er een probleem zijn tussen de bibliotheek van de Oracle-client en de Oracle-server. Dergelijke problemen voorkomen
 
 1. Gebruik de **volledige client**.
 
@@ -202,7 +203,7 @@ Als u op de clientconsole opmerkt dat er sprake is van onverwachte tijdsvertragi
 
 1. Zorg ervoor dat de **clientversie** en de versie **van de** databaseserver **hetzelfde** zijn.
 
-   Het is bekend dat het mixen van versies ondanks de compatibiliteitsmatrix en de aanbeveling van Oracle om client- en serverversies uit te lijnen problemen kan veroorzaken.
+   Het is bekend dat het mixen van versies ondanks de compatibiliteitsmatrix en de aanbeveling van Oracle om client- en serverversies uit te lijnen problemen veroorzaakt.
 
    Controleer ook de waarde ORACLE_HOME om te controleren of deze naar de verwachte clientversie verwijst (voor het geval er meerdere versies op de computer zijn geïnstalleerd).
 
@@ -212,9 +213,9 @@ Als u op de clientconsole opmerkt dat er sprake is van onverwachte tijdsvertragi
 
 De ondersteunde bibliotheekversie is **libdb2.so**.
 
-## Uitvoeringsstappen {#implementation-steps}
+## Implementatiestappen {#implementation-steps}
 
-Adobe Campagne-installaties voor Linux moeten in de volgende volgorde worden uitgevoerd: serverinstallatie gevolgd door instantieconfiguratie.
+Adobe Campaign-installaties voor Linux moeten in de volgende volgorde worden uitgevoerd: serverinstallatie gevolgd door instantieconfiguratie.
 
 Het installatieproces wordt in dit hoofdstuk beschreven. De installatiestappen zijn als volgt:
 
