@@ -1,7 +1,7 @@
 ---
-title: '"Hoofdlettergebruik: een e-maillevering maken"'
-seo-title: '"Hoofdlettergebruik: een e-maillevering maken"'
-description: '"Hoofdlettergebruik: een e-maillevering maken"'
+title: '"Gebruiksscenario: een e-maillevering maken"'
+seo-title: '"Gebruiksscenario: een e-maillevering maken"'
+description: '"Gebruiksscenario: een e-maillevering maken"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 7cd6329c-63d5-4cf0-9451-f0b4c2eaf0dd
@@ -11,18 +11,18 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 discoiquuid: 4ec34980-62a2-47b9-b103-de4290925624
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '740'
+ht-degree: 3%
 
 ---
 
 
-# Hoofdlettergebruik: een e-maillevering maken{#use-case-creating-an-email-delivery}
+# Gebruiksscenario: een e-maillevering maken{#use-case-creating-an-email-delivery}
 
-In dit geval leert u stappen om een e-maillevering te ontwerpen met de Adobe Campagne Digital Content Editor (DCE).
+In dit geval leert u hoe u een e-maillevering ontwerpt met de Adobe Campaign Digital Content Editor (DCE).
 
 Ons uiteindelijke doel is om een levering te maken met een gepersonaliseerde sjabloon die het volgende bevat:
 
@@ -39,13 +39,13 @@ Ons uiteindelijke doel is om een levering te maken met een gepersonaliseerde sja
 
 ## Stap 1 - Een levering maken {#step-1---creating-a-delivery}
 
-Als u een nieuwe levering wilt maken, plaatst u de cursor op het tabblad **Campagnes** en klikt u op **Leveringen**. Klik vervolgens op de knop **Maken** boven de lijst met bestaande leveringen. Raadpleeg [deze pagina](../../delivery/using/about-email-channel.md)voor meer informatie over het maken van leveringen.
+Als u een nieuwe levering wilt maken, plaatst u de cursor op het tabblad **Campagnes** en klikt u op **Leveringen**. Klik vervolgens op de knop **Maken** boven de lijst met bestaande leveringen. For more on creating deliveries, refer to [this page](../../delivery/using/about-email-channel.md).
 
 ![](assets/delivery_step_1.png)
 
 ## Stap 2 - Een sjabloon selecteren {#step-2---selecting-a-template}
 
-Selecteer een leveringssjabloon en geef uw levering een naam. Deze naam is alleen zichtbaar voor gebruikers van de Adobe Campagne Console en niet voor uw ontvangers. Deze kop wordt echter weergegeven in uw lijst met leveringen. Klik **[!UICONTROL Continue]**.
+Selecteer een leveringssjabloon en geef uw levering een naam. Deze naam is alleen zichtbaar voor gebruikers van de Adobe Campaign-console en niet voor uw ontvangers. Deze kop wordt echter wel weergegeven in uw lijst met leveringen. Klik op **[!UICONTROL Continue]**.
 
 ![](assets/dce_delivery_model.png)
 
@@ -57,15 +57,15 @@ Selecteer de inhoudssjabloon die u wilt gebruiken en klik op de **[!UICONTROL St
 
 ![](assets/dce_select_model.png)
 
-U kunt ook HTML-inhoud die buiten Adobe Campaign is gemaakt, importeren door deze te selecteren **[!UICONTROL From a file]**.
+U kunt ook HTML-inhoud die buiten Adobe Campaign is gemaakt, importeren door **[!UICONTROL From a file]** te selecteren.
 
 ![](assets/dce_select_from_file_template.png)
 
-U kunt deze inhoud opslaan als een sjabloon voor toekomstig gebruik. Nadat u een gepersonaliseerde inhoudssjabloon hebt gemaakt, kunt u deze voorvertonen in de lijst met sjablonen. Raadpleeg [Sjabloonbeheer](../../web/using/template-management.md)voor meer informatie hierover.
+U kunt deze inhoud opslaan als een sjabloon voor toekomstig gebruik. Nadat u een gepersonaliseerde inhoudssjabloon hebt gemaakt, kunt u deze voorvertonen in de lijst met sjablonen. For more on this, refer to [Template management](../../web/using/template-management.md).
 
 >[!CAUTION]
 >
->Als u de **Adobe Campagne-webinterface** gebruikt, moet u een .zip-bestand importeren dat de HTML-inhoud en verwante afbeeldingen bevat.
+>Als u de **Adobe Campaign-webinterface** gebruikt, moet u een .zip-bestand importeren dat de HTML-inhoud en verwante afbeeldingen bevat.
 
 ## Stap 4 - Het ontwerpen van het bericht {#step-4---designing-the-message}
 
@@ -109,7 +109,7 @@ U kunt deze inhoud opslaan als een sjabloon voor toekomstig gebruik. Nadat u een
 
 * Een koppeling naar een webtoepassing integreren
 
-   Met de Digital Content Editor kunt u koppelingen naar webtoepassingen integreren vanuit uw Adobe Campagne-console, zoals een openingspagina of een formulierpagina. Voor meer op dit, verwijs naar [Verbinding aan een toepassing](../../web/using/editing-content.md#link-to-a-web-application)van het Web.
+   Met de Digital Content Editor kunt u koppelingen naar webtoepassingen integreren vanuit uw Adobe Campaign-console, zoals een openingspagina of een formulierpagina. Voor meer op dit, verwijs naar [Verbinding aan een toepassing](../../web/using/editing-content.md#link-to-a-web-application)van het Web.
 
    Selecteer een tekstveld voor de koppeling naar een webtoepassing en klik op het eerste pictogram. Kies **[!UICONTROL Link to a Web application]**, selecteer dan de gewenste toepassing door het pictogram aan het eind van het gebied van de Toepassing **van het** Web te klikken.
 
