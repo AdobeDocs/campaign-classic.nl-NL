@@ -11,11 +11,11 @@ audience: rn
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 4dc87ff3-eb6a-40ac-97ee-00b64cd7718d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2263'
+ht-degree: 7%
 
 ---
 
@@ -95,7 +95,7 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 24 apr. 2018
 
-**Wat is nieuw?**
+**Nieuwe functies**
 
 <table> 
  <thead> 
@@ -106,20 +106,20 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
  </thead> 
  <tbody> 
   <tr> 
-   <td> Algemene EU-verordening inzake gegevensbescherming (GDPR)<br /> </td> 
-   <td> <p>GDPR is de nieuwe privacywet van de Europese Unie (EU) die de vereisten inzake gegevensbescherming harmoniseert en moderniseert en op 25 mei 2018 van kracht wordt. GDPR is van toepassing op klanten van de Campagne van Adobe die gegevens voor de Onderwerpen van Gegevens in de EU houden.</p> <p>Naast de privacymogelijkheden die reeds beschikbaar zijn in de Campagne van Adobe (met inbegrip van toestemmingsbeheer, montages van het gegevensbehoud, en gebruikersrollen), nemen wij deze kans in onze rol als Bewerker van Gegevens om extra mogelijkheden te omvatten, helpen uw bereidheid als Controlemechanisme voor bepaalde GDPR- verzoeken vergemakkelijken:</p> 
+   <td> EU General Data Protection Regulation (GDPR)<br /> </td> 
+   <td> <p>GDPR is de nieuwe privacywet van de Europese Unie (EU) die de vereisten inzake gegevensbescherming harmoniseert en moderniseert en op 25 mei 2018 van kracht wordt. AVG is van toepassing op Adobe Campaign-klanten die data bewaren voor in de EU wonende betrokken personen.</p> <p>Naast de privacy mogelijkheden reeds beschikbaar in Adobe Campaign (met inbegrip van toestemmingsbeheer, montages van het gegevensbehoud, en gebruikersrollen), nemen wij deze kans in onze rol als Bewerker van Gegevens om extra mogelijkheden te omvatten, om uw bereidheid als Datacontrole voor bepaalde GDPR verzoeken te helpen vergemakkelijken:</p> 
     <ul> 
-     <li> <p>Recht op toegang: Hiermee kan de betrokkene een kopie ontvangen van zijn/haar persoonlijke gegevens die zijn vastgelegd door gegevenscontrollers, waaronder mogelijk gegevens die zijn opgeslagen in Adobe Campaign.</p> </li> 
-     <li> <p>Rechts om te verwijderen: geeft de betrokkene het recht om zijn/haar persoonlijke gegevens die door gegevenscontrollers zijn vastgelegd, te laten wissen, mogelijk met inbegrip van gegevens die in Adobe Campaign zijn opgeslagen.</p> </li> 
-    </ul> Raadpleeg de <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">gedetailleerde documentatie</a>voor meer informatie.<br /> </td> 
+     <li> <p>Recht op toegang: staat de betrokkene toe een kopie te ontvangen van zijn/haar persoonsgegevens die door de gegevensverwerkingsverantwoordelijken zijn vastgelegd, met inbegrip van gegevens die in Adobe Campaign zijn opgeslagen.</p> </li> 
+     <li> <p>Rechts om te verwijderen: geeft de betrokkene het recht om zijn/haar persoonsgegevens die door gegevensverwerkingsverantwoordelijken zijn vastgelegd, te laten wissen, eventueel met inbegrip van gegevens die in Adobe Campaign zijn opgeslagen.</p> </li> 
+    </ul> Raadpleeg de <a href="https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html">gedetailleerde documentatie</a> voor meer informatie.<br /> </td> 
   </tr> 
   <tr> 
    <td> Actieve profielen<br /> </td> 
-   <td> <p>Adobe Campaign bevat nu de lijst met actieve profielen, die elke maand wordt bijgewerkt via een speciale workflow.</p> <p>Raadpleeg de <a href="../../platform/using/about-profiles.md#active-profiles">gedetailleerde documentatie</a>voor meer informatie.</p> </td> 
+   <td> <p>Adobe Campaign biedt nu een lijst met actieve profielen, die maandelijks wordt bijgewerkt via een specifieke workflow.</p> <p>Raadpleeg de <a href="../../platform/using/about-profiles.md#active-profiles">gedetailleerde documentatie</a> voor meer informatie.</p> </td> 
   </tr> 
   <tr> 
    <td> Verbetering Android-pushconnector<br /> </td> 
-   <td> <p>De Android-connector is verbeterd en biedt nu ondersteuning voor een hogere doorvoer. </p> <p>Raadpleeg de <a href="../../delivery/using/configuring-the-mobile-application.md">gedetailleerde documentatie</a>voor meer informatie.</p> </td> 
+   <td> <p>De Android-connector is verbeterd en biedt nu ondersteuning voor een hogere doorvoer. </p> <p>Raadpleeg de <a href="../../delivery/using/configuring-the-mobile-application.md">gedetailleerde documentatie</a> voor meer informatie.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -134,22 +134,22 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 **Verbeteringen**
 
 * **LINE-kanaal - architectuurverbetering**: Net als bij alle andere kanalen in Adobe Campaign wordt het LINE-kanaal nu ondersteund voor alle implementatietypen: gehost, hybride en op locatie.
-* **Volgorde automatisch genereren**: Het mechanisme voor het genereren van id&#39;s is verbeterd en vergroot de levensduur van campagneinstanties met grote volumes objecten. Raadpleeg dit [technische artikel](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html)voor meer informatie.
+* **Volgorde automatisch genereren**: Het mechanisme voor het genereren van id&#39;s is verbeterd en vergroot de levensduur van campagneinstanties met grote volumes objecten. For more information, refer to this [technote](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html).
 
 **Overige wijzigingen**
 
 * Er is een nieuwe modus beschikbaar voor het importeren van pakketten via de opdrachtregel, zodat ronde afhankelijkheden mogelijk zijn (niet aanbevolen voor grote pakketten). Zie de sectie &#39;Technische ontwikkelingen&#39; voor meer informatie. (NEO-8979)
 * Verbeterde prestaties voor een grote hoeveelheid gegevens die in Teradata worden geladen en verholpen een probleem waardoor de juiste waarde van de gegevens die in het logbestand zijn verwerkt, niet kon worden weergegeven. (NEO-10429)
-* Het importeren van soorten publiek vanuit Audience Manager werkt nu met gesplitste bestanden. Eerder werd alleen het laatste bestand van het segment geïmporteerd door de technische workflow van importSharedAudience. (NEO-10156)
+* Het importeren van soorten publiek uit Audience Manager werkt nu met gesplitste bestanden. Eerder werd alleen het laatste bestand van het segment geïmporteerd door de technische workflow van importSharedAudience. (NEO-10156)
 * In Windows is het standaardinstallatiepad van de Campagneserver gewijzigd. Wanneer u de installatie van de 64-bits versie start, is het standaardinstallatiepad nu: **C:\Program Files\Adobe\Adobe Campaign Classic v7** in plaats van **C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**
 * De standaard MX regels zijn verbeterd om meer domeinen te omvatten en productie te optimaliseren.
 * Afgedwongen toegangsbeperkingen voor de SOAP-aanroep van de implementatiewizard (xtk:serverOptions#SaveOptions).
 * De verouderde bibliotheek weka.jar is verwijderd en de OpenSSL-bibliotheek is bijgewerkt voor optimalisatie van de beveiliging.
 * Verbeterde technische workflow voor facturering om uitvoeringen van instanties te beveiligen.
-* De mogelijkheid voor beheerders om het wachtwoord van een operator in te stellen of opnieuw in te stellen, is hersteld. Klik hiertoe met de rechtermuisknop op een operator, selecteer **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** en stel het nieuwe wachtwoord van de operator in. We raden operatoren aan hun wachtwoord te wijzigen wanneer ze opnieuw verbinden. Raadpleeg de [gedetailleerde documentatie](../../production/using/lost-password.md)voor meer informatie.
-* Ter ondersteuning van de nieuwe functie voor meervoud in Adobe Target kan nu een nieuwe parameter &quot;at_property&quot; aan URL&#39;s worden toegevoegd wanneer u opties en externe accounts voor de integratie met Target configureert. De waarde die voor deze parameter moet worden gebruikt, vindt u in Adobe Target en wordt door Campagne gebruikt bij het uitvoeren van aanroepen naar Doel. Raadpleeg de [gedetailleerde documentatie](../../integrations/using/inserting-a-dynamic-image.md)voor meer informatie.
-* U kunt nu een standaard openingspagina opgeven die moet worden geopend wanneer u klikt op een afbeelding die wordt geleverd door Adobe Target. Als u voorheen op die afbeelding klikte, werd de standaardafbeeldingsset gebruikt bij het maken van de e-mail. Raadpleeg de [gedetailleerde documentatie](../../integrations/using/inserting-a-dynamic-image.md)voor meer informatie.
-* Het selectievakje **SMPP-sporen** inschakelen in de externe account is toegevoegd om de uitvoer te forceren. Raadpleeg de [gedetailleerde documentatie](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)voor meer informatie.
+* De mogelijkheid voor beheerders om het wachtwoord van een operator in te stellen of opnieuw in te stellen, is hersteld. Klik hiertoe met de rechtermuisknop op een operator, selecteer **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** en stel het nieuwe wachtwoord van de operator in. We raden operatoren aan hun wachtwoord te wijzigen wanneer ze opnieuw verbinden. Raadpleeg de [gedetailleerde documentatie](../../production/using/lost-password.md) voor meer informatie.
+* Ter ondersteuning van de nieuwe functie voor meervoud in Adobe Target kan nu een nieuwe parameter &quot;at_property&quot; aan URL&#39;s worden toegevoegd wanneer u opties en externe accounts voor de integratie met Target configureert. De waarde die voor deze parameter moet worden gebruikt, is te vinden in Adobe Target en wordt door Campagne gebruikt bij het uitvoeren van aanroepen naar Doel. Raadpleeg de [gedetailleerde documentatie](../../integrations/using/inserting-a-dynamic-image.md) voor meer informatie.
+* U kunt nu een standaard openingspagina opgeven die moet worden geopend wanneer u klikt op een afbeelding die wordt geleverd door Adobe Target. Als u voorheen op die afbeelding klikte, werd de standaardafbeeldingsset gebruikt bij het maken van de e-mail. Raadpleeg de [gedetailleerde documentatie](../../integrations/using/inserting-a-dynamic-image.md) voor meer informatie.
+* Het selectievakje **SMPP-sporen** inschakelen in de externe account is toegevoegd om de uitvoer te forceren. Raadpleeg de [gedetailleerde documentatie](../../delivery/using/sms-channel.md#creating-an-smpp-external-account) voor meer informatie.
 
 **Technische ontwikkelingen**
 
@@ -198,12 +198,12 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 
 **Patches**
 
-* Oplossing voor een synchronisatieprobleem bij het repliceren van bezorgings- en trackinglogs van Adobe Campaign Standard naar Adobe Campaign Classic. (NEO-10023)
+* Probleem met synchronisatie verholpen bij het repliceren van bezorgings- en trackinglogboeken van Adobe Campaign Standard naar Adobe Campaign Classic. (NEO-10023)
 * Probleem verholpen met de verwerking van de tabellen met fouten en logbestanden in Teradata toen een ETL-workflow werd hervat na een fout bij een snelle laadbewerking. De tabellen Error en Log worden nu op de juiste wijze verwijderd telkens wanneer de workflow wordt hervat. (NEO-10672)
 * Probleem verholpen na upgrade waarbij het Hive-pakket automatisch werd geïnstalleerd (nodig voor Hadoop) als het FDA-pakket is geïnstalleerd. (NEO-10592)
 * Probleem verholpen waarbij ongeldige domeinen werden behandeld als een **niet-gedefinieerde** fout. (NEO-10248)
 * Probleem verholpen waarbij logboekbestanden in de tabel deliveryLogStats werden gedupliceerd bij het verzenden van Anroid-pushleveringen. (NEO-10234)
-* Probleem verholpen waarbij bepaalde streepjescode-indelingen niet leesbaar werden door streepjescodescanners. (NEO-10125)
+* Probleem verholpen waarbij bepaalde streepjescode-indelingen mogelijk niet leesbaar werden door streepjescodescanners. (NEO-10125)
 * Probleem verholpen met de JavaScript-functie urlEncode wanneer niet-ASCII-tekens werden gebruikt. Zie de sectie &#39;Technische ontwikkelingen&#39; voor meer informatie. (NEO-10123)
 * Probleem verholpen bij het uitvoeren van een query, waaronder sha256-functies in Teradata-databases. (NEO-10119)
 * De fouten van het werkschemamegeheugen die in de activiteit SalesForce konden voorkomen wanneer het gebruiken van zeer grote lijsten SalesForce. (NEO-9900)
@@ -214,7 +214,7 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 * Probleem verholpen dat tot workflowfouten kon leiden wanneer een hypothese over een aanbieding werd uitgevoerd en de status van het voorstel werd bijgewerkt. (NEO-9304)
 * Fouten verholpen die optraden tijdens de afleveringsanalyse bij het gebruik van drukregels op basis van een kenmerk van de Android-aflevering. (NEO-9202)
 * Probleem verholpen bij het sorteren op kolommen in de lijst met ontvangers die tot prestatieproblemen kunnen leiden. Zie de sectie &#39;Technische ontwikkelingen&#39; hieronder voor meer informatie over de wijzigingen queryDef. (NEO-9042)
-* Probleem verholpen waarbij de koppelingen in een goedkeurings-e-mail zouden kunnen verwijzen naar een onjuiste aanmeldings-URL, vooral wanneer u een aanmeldingstype voor een id met licentie gebruikt. (NEO-9011)
+* Probleem verholpen waarbij de koppelingen in een goedkeurings-e-mail zouden kunnen verwijzen naar een onjuiste aanmeldings-URL, vooral wanneer u een aanmeldingstype Federated ID gebruikt. (NEO-9011)
 * Probleem opgelost waarbij onjuiste datums werden weergegeven in de datumkiezers van rapporten voor bepaalde tijdzones. (NEO-9007)
 * Probleem verholpen waarbij het doel van een uitgaande database niet kon worden weergegeven bij gebruik van een FDA SQL-database. (NEO-8924)
 * Probleem verholpen waardoor de MS Dynamics CRM-connector er niet in slaagde gegevens te verzamelen gedurende de eerste 7 dagen van de maand. (NEO-8803)
@@ -230,7 +230,7 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 * Oplossing voor een regressie in gegevensbeheer die het maken van indexen op verrijkingsachtige werkstroomactiviteiten verhinderde.
 * Probleem opgelost dat zich kon voordoen bij het maken van externe bronnen met de titel @id
 * Probleem verholpen die kan optreden wanneer gecomprimeerde bestanden worden geüpload via een FTP-server of wanneer bestanden met jokertekens in de bestandsnaam worden geüpload.
-* Probleem verholpen met lange opsommingen van basistypen in externe aangepaste bronnen die zijn gemaakt in Campagnestandaard.
+* Probleem verholpen met lange opsommingen van basistypen in externe aangepaste bronnen die in Campaign Standard zijn gemaakt.
 * Probleem verholpen dat ertoe kon leiden dat SMS werd verzonden, zelfs wanneer de verbinding met de provider niet tot SMS-verlies leidde.
 * Probleem verholpen waarbij een SMTP-verbinding voor onbepaalde tijd vastliep.
 * Probleem verholpen met druktypologische regels tijdens de voorbereiding van berichten bij het gebruik van een LIJN-toewijzing of bij het filteren en aanwijzen van schema&#39;s die verschillen.
