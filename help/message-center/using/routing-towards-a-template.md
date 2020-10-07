@@ -1,7 +1,7 @@
 ---
-title: Het verpletteren aan een malplaatje
-seo-title: Het verpletteren aan een malplaatje
-description: Het verpletteren aan een malplaatje
+title: Routering naar een sjabloon
+seo-title: Routering naar een sjabloon
+description: Routering naar een sjabloon
 seo-description: null
 page-status-flag: never-activated
 uuid: 1f8252c4-7f96-4759-9544-39b8f854961f
@@ -11,16 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 discoiquuid: 8fa464e6-3c88-441c-8179-0c54960469a7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '125'
+ht-degree: 12%
 
 ---
 
 
-# Het verpletteren aan een malplaatje{#routing-towards-a-template}
+# Routering naar een sjabloon{#routing-towards-a-template}
 
 Nadat de berichtsjabloon op de uitvoeringsinstantie(s) is gepubliceerd, worden automatisch twee sjablonen gegenereerd die aan een realtime- of batchgebeurtenis moeten worden gekoppeld. De verpletterende stap bestaat uit het verbinden van een gebeurtenis aan het aangewezen berichtmalplaatje. Koppelen is gebaseerd op het gebeurtenistype dat is opgegeven in de eigenschappen van de gebeurtenis zelf en die van de sjabloon.
 
