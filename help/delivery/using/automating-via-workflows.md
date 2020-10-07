@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: 4abce633-647f-4ae4-9419-859f6e2e8628
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1191'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ## Inhoudsbeheeractiviteiten {#content-management-activity}
 
-Het maken, bewerken en publiceren van inhoud kan worden geautomatiseerd met behulp van een workflow die is geconfigureerd via de Adobe Campagne-clientinterface.
+Het maken, bewerken en publiceren van inhoud kan worden geautomatiseerd met behulp van een workflow die via de Adobe Campaign-clientinterface is geconfigureerd.
 
 De activiteit van het **inhoudsbeheer** wordt betreden via de **[!UICONTROL Tools]** toolbar van het werkschemadiagram.
 
@@ -77,7 +77,7 @@ Activiteiteneigenschappen worden in vier stappen onderverdeeld:
 
    Hiermee genereert u de uitvoerbestanden voor elk van de transformatiesjablonen met een publicatie van het type &quot;Bestand&quot;. De uitgaande overgang wordt geactiveerd voor elk geproduceerd dossier, met de volgende parameters: de id van de inhoud die is opgeslagen in de variabele &quot;contentId&quot; en de bestandsnaam in de variabele &quot;filename&quot;.
 
-### Overgang {#transition}
+### Transition {#transition}
 
 Met de optie **Een uitvoerovergang** genereren kunt u een uitvoerovergang toevoegen aan de **[!UICONTROL Content management]** activiteit om een nieuwe activiteit te koppelen aan de uitvoering van de workflow. Nadat u deze optie hebt ingeschakeld, voert u een label voor de overgang in.
 
@@ -221,11 +221,11 @@ De laatste actie van de activiteit is het voorbereiden en lanceren van de leveri
 
 ### Inhoud importeren vanuit FTP {#importing-content-from-ftp}
 
-Als uw leveringsinhoud beschikbaar is in een HTML-bestand dat zich op FTP- of SFTP-servers bevindt, kunt u deze inhoud gemakkelijk laden in Adobe Campagne-leveringen. Zie [dit voorbeeld](../../workflow/using/loading-delivery-content.md).
+Als uw leveringsinhoud beschikbaar is in een HTML-bestand dat zich op FTP- of SFTP-servers bevindt, kunt u deze inhoud gemakkelijk laden in Adobe Campaign-leveringen. Refer to [this example](../../workflow/using/loading-delivery-content.md).
 
-### Inhoud importeren vanuit de Amazon Simple Storage Service (S3)-connector {#importing-content-from-amazon-simple-storage-service--s3--connector}
+### Inhoud importeren van de Amazon Simple Storage Service (S3)-connector {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-Als uw leveringsinhoud zich op de emmers van de Eenvoudige Opslagdienst van Amazon (S3) bevindt, kunt u deze inhoud in de levering van de Campagne van Adobe gemakkelijk laden. Zie [dit voorbeeld](../../workflow/using/loading-delivery-content.md).
+Als uw leveringsinhoud zich op de emmers van de Dienst van de Eenvoudige Opslag van Amazon (S3) bevindt, kunt u deze inhoud in Adobe Campaign leveringen gemakkelijk laden. Refer to [this example](../../workflow/using/loading-delivery-content.md).
 
 ## Halfautomatische update {#semi-automatic-update}
 
