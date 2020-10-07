@@ -1,7 +1,7 @@
 ---
-title: IMS-problemen oplossen
-seo-title: IMS-problemen oplossen
-description: IMS-problemen oplossen
+title: Problemen met IMS oplossen
+seo-title: Problemen met IMS oplossen
+description: Problemen met IMS oplossen
 seo-description: null
 page-status-flag: never-activated
 uuid: 5db95afc-8cbf-4ec3-b58f-504486fe4a40
@@ -11,19 +11,16 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 discoiquuid: e31db11a-ad8e-4fd0-bab7-0df1079231c9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 54cb4143fc534aa436c4b8b28e031e87a2a02e40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# IMS-problemen oplossen{#ims-troubleshooting}
+# Problemen met IMS oplossen{#ims-troubleshooting}
 
 De volgende het oplossen van problemenuiteinden zullen **on-premise** klanten helpen de gemeenschappelijkste problemen oplossen die wanneer het gebruiken van de integratie IMS gebeuren. Neem contact op met Adobe voor **gehoste** klanten.
 
@@ -40,13 +37,13 @@ Verwijder gedupliceerde externe accounts die dezelfde instellingen hebben.
 
 Als het veld **Productcontext** voor de externe account is ingesteld, controleert u of de waarde is ingesteld op: **dma_campagne_classic**
 
-Zorg ervoor dat de productcontext voor Campagne en Experience Cloud gelijk is.
+Zorg ervoor dat de productcontext hetzelfde is voor Campagne en Experience Cloud.
 
-Als de **productcontext** bijvoorbeeld niet wordt weergegeven, moet de standaardproductcontext **dma_campagne** zijn in zowel Campagne als Experience Cloud. Als het veld **Productcontext** wordt weergegeven, moet de standaardproductcontext **dma_campagne_classic** zijn in zowel Campagne als Experience Cloud.
+Als de **productcontext** bijvoorbeeld niet wordt weergegeven, moet de standaardproductcontext **dma_campagne** zijn in zowel Campagne als Experience Cloud. Als het gebied van de Context **van het** Product verschijnt, zou de standaardproductcontext **dma_campagne_classic** in zowel Campagne als Experience Cloud moeten zijn.
 
 **[!UICONTROL IMS Server URL]**
 
-Controleer in de externe account van de **Adobe Marketing Cloud** voor campagne of het **[!UICONTROL IMS Server URL]** gaat om [adobeid-na1.services.adobe.com](https://adobeid-na1.services.adobe.com/) of [ims-na1.adobelogin.com](http://ims-na1.adobelogin.com/). Zorg ervoor zowel stadium als de productie instanties aan het zelfde IMS productieeindpunt richten.
+Controleer in de externe account van Campagne **Adobe Marketing Cloud** of het **[!UICONTROL IMS Server URL]** gaat om [adobeid-na1.services.adobe.com](https://adobeid-na1.services.adobe.com/) of [ims-na1.adobelogin.com](http://ims-na1.adobelogin.com/). Zorg ervoor zowel stadium als de productie instanties aan het zelfde IMS productieeindpunt richten.
 
 **Associatiemasker**
 
@@ -65,7 +62,7 @@ De gebieden die in de externe rekening van de Campagne worden bepaald moeten een
 
 **URL voor terugbellen**
 
-De URL **voor** terugbellen moet worden toegevoegd aan de lijst met toegestane adressen en beginnen met &quot;https://&quot;. Controleer of de URL **van de** callback is gekoppeld aan de overeenkomstige instantie. De productie-instantie moet bijvoorbeeld omleiden naar de productie-URL.
+De **callback-URL** moet worden toegevoegd aan de lijst van gewenste personen en beginnen met &quot;https://&quot;. Controleer of de URL **van de** callback is gekoppeld aan de overeenkomstige instantie. De productie-instantie moet bijvoorbeeld omleiden naar de productie-URL.
 
 **Client-id en geheim**
 
@@ -87,7 +84,7 @@ Start de server opnieuw als er wijzigingen zijn aangebracht in de bovenstaande i
 
    Verwijs naar de vorige stappen om de configuratie van de **[!UICONTROL Association Mask]** en van de exploitantgroepen te controleren.
 
-* De gebruiker heeft geen toegang tot de aanmeldingspagina van Adobe ID:
+* De gebruiker heeft geen toegang tot de Adobe ID-aanmeldingspagina:
 
    Verwijs naar de vorige stappen om de werkingsgebiedconfiguratie te controleren.
 
