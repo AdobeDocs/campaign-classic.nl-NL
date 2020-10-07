@@ -1,7 +1,7 @@
 ---
-title: Gegevensschema's
-seo-title: Gegevensschema's
-description: Gegevensschema's
+title: Dataschema’s
+seo-title: Dataschema’s
+description: Dataschema’s
 seo-description: null
 page-status-flag: never-activated
 uuid: 9f08750a-e125-4531-8c2c-1ab218190210
@@ -11,24 +11,24 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: b65e8d27-f427-464e-ad42-51c0a88eee86
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '390'
+ht-degree: 2%
 
 ---
 
 
-# Gegevensschema&#39;s{#data-schemas}
+# Dataschema’s{#data-schemas}
 
 ## Beginselen {#principles}
 
-Als u de schema&#39;s wilt bewerken, maken en configureren, klikt u op het **[!UICONTROL Administration > Configuration > Data schemas]** knooppunt van de Adobe Campagne-clientconsole.
+Als u de schema&#39;s wilt bewerken, maken en configureren, klikt u op het **[!UICONTROL Administration > Configuration > Data schemas]** knooppunt van de Adobe Campaign-clientconsole.
 
 >[!NOTE]
 >
->De out-of-the-box gegevensschema&#39;s kunnen slechts door een beheerder van uw Klassieke console van de Campagne van Adobe worden geschrapt.
+>Gegevensschema&#39;s buiten de box kunnen alleen worden verwijderd door een beheerder van uw Adobe Campaign Classic-console.
 
 ![](assets/d_ncs_integration_schema_navtree.png)
 
@@ -48,11 +48,11 @@ In de voorvertoning wordt het uitgebreide schema automatisch gegenereerd:
 >
 >Wanneer het bronschema wordt opgeslagen, wordt het genereren van het uitgebreide schema automatisch gestart.
 
-Als u de volledige structuur van een schema moet controleren, kunt u het voorproeflusje gebruiken. Als het schema is uitgebreid, zult u al zijn uitbreidingen dan kunnen visualiseren. Als aanvulling geeft het tabblad Documentatie alle schemakenmerken en -elementen weer, en de bijbehorende eigenschappen (SQL-veld, type/lengte, label, beschrijving). Het tabblad Documentatie is alleen van toepassing op gegenereerde schema&#39;s. Raadpleeg voor meer informatie de sectie [Regenererende schema&#39;s](../../configuration/using/regenerating-schemas.md) .
+Als u de volledige structuur van een schema moet controleren, kunt u het voorproeflusje gebruiken. Als het schema is uitgebreid, zult u al zijn uitbreidingen dan kunnen visualiseren. Als aanvulling geeft het tabblad Documentatie alle schemakenmerken en -elementen weer, en de bijbehorende eigenschappen (SQL-veld, type/lengte, label, beschrijving). Het tabblad Documentatie is alleen van toepassing op gegenereerde schema&#39;s. For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.
 
 ## Voorbeeld: het creëren van een contractlijst {#example--creating-a-contract-table}
 
-In het volgende voorbeeld willen we een nieuwe tabel voor **contracten** maken in het databasemodel van de Adobe Campagne-database. In deze tabel kunt u voor elk contract de voor- en achternaam en het e-mailadres van de houder en de medehouder opslaan.
+In het volgende voorbeeld, willen wij een nieuwe lijst voor **contracten** in het gegevensbestandmodel van het gegevensbestand van Adobe Campaign tot stand brengen. In deze tabel kunt u voor elk contract de voor- en achternaam en het e-mailadres van de houder en de medehouder opslaan.
 
 Hiervoor moet u het schema van de tabel maken en de databasestructuur bijwerken om de bijbehorende tabel te genereren. Pas de volgende stappen toe:
 
@@ -125,5 +125,5 @@ Hiervoor moet u het schema van de tabel maken en de databasestructuur bijwerken 
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. Werk de databasestructuur bij om de tabel te maken waarnaar het schema wordt gekoppeld. Raadpleeg [De databasestructuur](../../configuration/using/updating-the-database-structure.md)bijwerken voor meer informatie.
+1. Werk de databasestructuur bij om de tabel te maken waarnaar het schema wordt gekoppeld. For more on this, refer to [Updating the database structure](../../configuration/using/updating-the-database-structure.md).
 
