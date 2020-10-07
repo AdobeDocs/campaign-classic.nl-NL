@@ -1,7 +1,7 @@
 ---
-title: Hoe te om gevolgde verbindingen te vormen
-seo-title: Hoe te om gevolgde verbindingen te vormen
-description: Hoe te om gevolgde verbindingen te vormen
+title: Getraceerde koppelingen configureren
+seo-title: Getraceerde koppelingen configureren
+description: Getraceerde koppelingen configureren
 seo-description: null
 page-status-flag: never-activated
 uuid: 0fb41a43-8a84-4a61-bf93-97e1d448a5ec
@@ -11,21 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 discoiquuid: 9cae3861-88eb-447a-aa23-9d1de0710eec
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ed44ccd8053d79024e8fb2d05ee27e1e663b8cb2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 0%
+ht-degree: 12%
 
 ---
 
 
-# Hoe te om gevolgde verbindingen te vormen{#how-to-configure-tracked-links}
+# Getraceerde koppelingen configureren{#how-to-configure-tracked-links}
 
-Voor elke levering, kunt u de ontvangst van berichten en de activering van de verbindingen volgen die in de berichtinhoud worden opgenomen. Hierdoor kunt u het gedrag van ontvangers volgen na de leveringsacties waarop ze waren gericht.
+Voor elke levering kunt u de ontvangst van berichten en de activering van de koppelingen die in de berichtcontent zijn opgenomen, opvolgen. Hierdoor kunt u het gedrag van ontvangers volgen na de leveringsacties waarvoor ze als doel zijn opgegeven.
 
 >[!NOTE]
 >
