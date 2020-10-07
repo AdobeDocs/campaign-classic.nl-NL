@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: ca3377c6-a120-4cd0-aaf4-80248f4f5918
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1287'
+ht-degree: 4%
 
 ---
 
@@ -55,7 +55,7 @@ Om een gegevensbestandgebied op te nemen, gebruik de verpersoonlijkingsknoop.
 >
 >De tekenreeksen die u opgeeft in de HTML-editor worden alleen omgezet als ze zijn gedefinieerd op het **[!UICONTROL Texts]** subtabblad. Anders worden ze niet verzameld. Raadpleeg [Een webformulier](../../web/using/translating-a-web-form.md)vertalen voor meer informatie.
 
-### Een koppeling invoegen {#inserting-a-link}
+### Inserting a link {#inserting-a-link}
 
 Vul de velden in het bewerkingsvenster in, zoals in het volgende voorbeeld wordt getoond:
 
@@ -64,7 +64,7 @@ Ga naar **[!UICONTROL Static elements>Link]** om een hypertekstkoppeling toe te 
 ![](assets/s_ncs_admin_survey_add_link.png)
 
 * De inhoud **[!UICONTROL Label]** is de inhoud van de hypertekstkoppeling zoals deze wordt weergegeven op de formulierpagina.
-* Het **[!UICONTROL URL]** is het gewenste adres, bijvoorbeeld: [https://www.adobe.com](https://www.adobe.com) voor een website of [info@adobe.com](mailto:info@adobe.com) voor het verzenden van een bericht.
+* Het **[!UICONTROL URL]** is het gewenste adres, bijvoorbeeld: [https://www.adobe.com](https://www.adobe.com) voor een website, of [info@adobe.com](mailto:info@adobe.com) om een bericht te verzenden.
 * In het **[!UICONTROL Window]** veld kunt u de weergavemodus voor de koppeling selecteren in het geval van een site. U kunt de koppeling openen in een nieuw venster, in het huidige venster of in een ander venster.
 * U kunt een ToolTip toevoegen, zoals hieronder getoond:
 
@@ -92,7 +92,7 @@ U kunt andere acties voor de koppeling definiëren, zodat de gebruiker op de kop
 
    ![](assets/s_ncs_admin_survey_link_next.png)
 
-   U kunt de knoppen **[!UICONTROL Next]** en/of **[!UICONTROL Back]** knoppen verbergen als u deze wilt vervangen door een koppeling. Zie deze [pagina](../../web/using/defining-web-forms-page-sequencing.md).
+   U kunt de knoppen **[!UICONTROL Next]** en/of **[!UICONTROL Back]** knoppen verbergen als u deze wilt vervangen door een koppeling. Refer to this [page](../../web/using/defining-web-forms-page-sequencing.md).
 
    De koppeling vervangt de **[!UICONTROL Next]** knop die standaard wordt gebruikt.
 
@@ -120,7 +120,7 @@ U kunt andere acties voor de koppeling definiëren, zodat de gebruiker op de kop
 
    >[!CAUTION]
    >
-   >Deze functie is alleen beschikbaar als u de **[!UICONTROL Social Marketing]** toepassing hebt geïnstalleerd. Als u deze optie wilt gebruiken, moet u samen met een extern **[!UICONTROL Facebook Connect]** type account een Facebook-toepassing maken. Raadpleeg [deze pagina](../../social/using/creating-a-facebook-application.md#configuring-external-accounts)voor meer informatie.
+   >Deze functie is alleen beschikbaar als u de **[!UICONTROL Social Marketing]** toepassing hebt geïnstalleerd. Als u deze optie wilt gebruiken, moet u samen met een extern **[!UICONTROL Facebook Connect]** type account een Facebook-toepassing maken. Raadpleeg [deze pagina](../../social/using/creating-a-facebook-application.md#configuring-external-accounts) voor meer informatie.
 
    Met de **[!UICONTROL Preload with Facebook]** optie kunt u een knop in een formulier invoegen om velden vooraf te laden met Facebook-profielgegevens.
 
@@ -142,8 +142,8 @@ U kunt andere acties voor de koppeling definiëren, zodat de gebruiker op de kop
 Voor dit gebruiksgeval, hebben wij een toepassing van het Web gecreeerd die uit de volgende elementen wordt samengesteld:
 
 * een pagina met het formulier
-* een **[!UICONTROL Record]** activiteit
-* een **[!UICONTROL End]** activiteit
+* een **[!UICONTROL Record]**-activiteit
+* an **[!UICONTROL End]** activity
 
 ![](assets/social_webapp_031.png)
 
@@ -165,7 +165,7 @@ Voer de volgende stappen uit om een knop voor vooraf laden toe te voegen:
 
    ![](assets/social_webapp_035.png)
 
-1. Ga naar het **[!UICONTROL Application]** veld en selecteer het **[!UICONTROL Facebook Connect]** type externe account dat eerder is gemaakt. Raadpleeg [deze pagina](../../social/using/creating-a-facebook-application.md#configuring-external-accounts)voor meer informatie.
+1. Ga naar het **[!UICONTROL Application]** veld en selecteer het **[!UICONTROL Facebook Connect]** type externe account dat eerder is gemaakt. Raadpleeg [deze pagina](../../social/using/creating-a-facebook-application.md#configuring-external-accounts) voor meer informatie.
 
    ![](assets/social_webapp_036.png)
 
@@ -196,11 +196,11 @@ Dit levert het volgende resultaat op:
 
 ### Tekstvariabelen gebruiken {#using-text-variables}
 
-Op het **[!UICONTROL Text]** tabblad kunt u met de volgende syntaxis variabele velden maken die in de HTML tussen de tekens &lt;%= en %> kunnen worden gebruikt: **$ (IDENTIFIER)**.
+Op het **[!UICONTROL Text]** tabblad kunt u met de volgende syntaxis variabele velden maken die in de HTML tussen de tekens &lt;%= en %> kunnen worden gebruikt: **$(IDENTIFIER)**.
 
-Gebruik deze methode om uw tekenreeksen eenvoudig te lokaliseren. Zie Een webformulier [vertalen](../../web/using/translating-a-web-form.md)
+Gebruik deze methode om uw tekenreeksen eenvoudig te lokaliseren. See [Translating a web form](../../web/using/translating-a-web-form.md)
 
-U kunt bijvoorbeeld een veld **Contactpersoon** maken waarmee u de tekenreeks &quot;Datum van laatste contactpersoon:&quot; kunt weergeven voor de HTML-inhoud. Hiervoor voert u de volgende stappen uit:
+U kunt bijvoorbeeld een veld **Contactpersoon** maken waarmee u de tekenreeks &quot;Datum van laatste contactpersoon:&quot; kunt weergeven voor de HTML-inhoud. Volg de onderstaande stappen om dit te doen:
 
 1. Klik op het **[!UICONTROL Text]** tabblad van de HTML-tekst.
 1. Klik op het **[!UICONTROL Add]** pictogram.
@@ -223,7 +223,7 @@ U kunt bijvoorbeeld een veld **Contactpersoon** maken waarmee u de tekenreeks &q
 
 In deze modus kunt u de tekst van webformulieren factoriseren en vertalingen beheren met het geïntegreerde vertaalgereedschap. Raadpleeg [Een webformulier](../../web/using/translating-a-web-form.md)vertalen voor meer informatie.
 
-## Afbeeldingen invoegen {#inserting-images}
+## Inserting images {#inserting-images}
 
 Afbeeldingen die u in formulieren wilt opnemen, moeten worden opgeslagen op een server die van buitenaf toegankelijk is.
 
