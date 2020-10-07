@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 70e4e63d-354d-4912-b75a-dba38e1c0b03
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 3%
 
 ---
 
@@ -118,7 +118,7 @@ Indien van toepassing, kunt u waarden samen stapelen.
 
 ![](assets/reporting_graph_type_histo.png)
 
-Indien nodig kunt u de weergavevolgorde van waarden omkeren. Selecteer de **[!UICONTROL Reverse stacking]** optie om dit te doen.
+Indien nodig kunt u de weergavevolgorde van waarden omkeren. To do this, select the **[!UICONTROL Reverse stacking]** option.
 
 ### Conversie: trechter {#conversion--funnel}
 
@@ -168,4 +168,4 @@ Als u een nieuwe statistiek wilt maken, klikt u op het **[!UICONTROL Add]** pict
 
 ![](assets/reporting_add_statistics.png)
 
-Zie [deze sectie](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation)voor meer informatie.
+Raadpleeg [deze sectie](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation) voor meer informatie.
