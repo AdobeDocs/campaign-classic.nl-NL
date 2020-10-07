@@ -1,7 +1,7 @@
 ---
-title: Een proefafdruk verzenden
-seo-title: Een proefafdruk verzenden
-description: Een proefafdruk verzenden
+title: Een proef verzenden
+seo-title: Een proef verzenden
+description: Een proef verzenden
 seo-description: null
 page-status-flag: never-activated
 uuid: 6446cc5c-8378-48d1-9486-bffbae83e28d
@@ -11,16 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 81090be2-3ed4-4f35-948b-e21af6e19999
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '143'
+ht-degree: 8%
 
 ---
 
 
-# Een proefafdruk verzenden{#sending-a-proof}
+# Een proef verzenden{#sending-a-proof}
 
 U kunt berichtlevering testen door een bewijs naar een eerder gecreeerd zaadadres te verzenden.
 
