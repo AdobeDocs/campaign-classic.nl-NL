@@ -1,7 +1,7 @@
 ---
-title: Simulatie bijhouden
-seo-title: Simulatie bijhouden
-description: Simulatie bijhouden
+title: Simulatietracking
+seo-title: Simulatietracking
+description: Simulatietracking
 seo-description: null
 page-status-flag: never-activated
 uuid: 8979eb5b-596b-4308-87a1-126afcfb6e0c
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 discoiquuid: a557026c-3b6a-4302-a042-0015449eaca5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '140'
+ht-degree: 11%
 
 ---
 
 
-# Simulatie bijhouden{#simulation-tracking}
+# Simulatietracking{#simulation-tracking}
 
 Zodra de simulatie wordt gebeëindigd, kunt u zijn resultaat via het **[!UICONTROL Results]** lusje analyseren dat aan het simulatievenster en het **[!UICONTROL Breakdown of offers by rank]** rapport wordt toegevoegd, beschikbaar via in het simulatiedashboard.
 
@@ -32,9 +32,9 @@ Raadpleeg [deze sectie](../../reporting/using/about-descriptive-analysis.md) voo
 
 ![](assets/offer_simulation_012.png)
 
-Een draaitabel geeft een snel overzicht van de uitsplitsingen van aanbiedingen per positie. Zoals alle rapporten in de Campagne van Adobe, kunt u het uitvoeren, drukken, archiveren of tonen in Webbrowser.
+Een draaitabel geeft een snel overzicht van de uitsplitsingen van aanbiedingen per positie. Zoals alle rapporten in Adobe Campaign kunt u deze exporteren, afdrukken, archiveren of weergeven in een webbrowser.
 
-Zie [deze sectie](../../reporting/using/actions-on-reports.md)voor meer informatie.
+Raadpleeg [deze sectie](../../reporting/using/actions-on-reports.md) voor meer informatie.
 
 ![](assets/offer_simulation_013.png)
 
