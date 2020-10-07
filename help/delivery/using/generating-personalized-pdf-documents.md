@@ -1,7 +1,7 @@
 ---
-title: Aangepaste PDF-documenten genereren
-seo-title: Aangepaste PDF-documenten genereren
-description: Aangepaste PDF-documenten genereren
+title: Gepersonaliseerde PDF-documenten genereren
+seo-title: Gepersonaliseerde PDF-documenten genereren
+description: Gepersonaliseerde PDF-documenten genereren
 seo-description: null
 page-status-flag: never-activated
 uuid: d4c27523-bff3-457a-ba60-e2747a2b3166
@@ -11,20 +11,20 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: 8dfc5e7c-c762-46ba-bbda-a7251354cb47
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 3%
 
 ---
 
 
-# Aangepaste PDF-documenten genereren{#generating-personalized-pdf-documents}
+# Gepersonaliseerde PDF-documenten genereren{#generating-personalized-pdf-documents}
 
 ## Variabele PDF-documenten {#about-variable-pdf-documents}
 
-Met Adobe Campaign kunt u variabele PDF-documenten (voor e-mailbijlagen, direct mail verzenden) genereren vanuit LibreOffice- of Microsoft Word-documenten.
+Met Adobe Campaign kunt u variabele PDF-documenten genereren (voor e-mailbijlagen, direct mail verzenden) vanuit LibreOffice- of Microsoft Word-documenten.
 
 De volgende extensies worden ondersteund: &quot;.docx&quot;, &quot;.doc&quot; en &quot;.odt&quot;.
 
@@ -69,7 +69,7 @@ Om dit te doen, moet u een verpersoonlijkingsblok vormen, dan een vraag aan het 
 
 **Stap 2: Maak het verpersoonlijkingsblok:**
 
-* Ga naar het **[!UICONTROL Resources > Campaign management > Personalization blocks]** menu van de console van de Campagne van Adobe.
+* Ga naar het **[!UICONTROL Resources > Campaign management > Personalization blocks]** menu van de Adobe Campaign console.
 * Maak een nieuw &#39;Mijn logo&#39;-personalisatieblok met &#39;Mijn logo&#39; als interne naam.
 * Klik op de **[!UICONTROL Advanced parameters...]** koppeling en controleer vervolgens de **[!UICONTROL "The content of the block is included in an attachment"]** optie. Hiermee kunt u de definitie van het verpersoonlijkingsblok rechtstreeks naar de inhoud van het OpenOffice-bestand kopiëren.
 
@@ -77,7 +77,7 @@ Om dit te doen, moet u een verpersoonlijkingsblok vormen, dan een vraag aan het 
 
    U moet twee soorten verklaringen binnen het verpersoonlijkingsblok onderscheiden:
 
-   * De Adobe Campagne-code van de verpersoonlijkingsgebieden waarvoor de &quot;open&quot;en &quot;gesloten&quot;chevrons met escape karakters (respectievelijk `&lt;` en `&gt;`) moeten worden vervangen.
+   * De Adobe Campaign-code van de personalisatievelden waarvoor de &quot;open&quot; en &quot;gesloten&quot; haakjes moeten worden vervangen door escape-tekens (respectievelijk `&lt;` en `&gt;`).
    * De volledige XML-code van OpenOffice wordt naar het OpenOffice-document gekopieerd.
 
 In het voorbeeld ziet het verpersoonlijkingsblok er als volgt uit:
