@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: 7b0aef75-345d-45be-b7d0-a9f6944ee678
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1298'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ De **Op de interface van het vormtype** Web impliceert het gebruiken van een toe
 >
 >API&#39;s worden beschreven in een speciaal document, waartoe de toegang afhankelijk is van uw contract. Zie [API](../../configuration/using/about-web-services.md).
 >
->De webtoepassing die in dit voorbeeld wordt gebruikt, is geen webtoepassing die bij Adobe Campaign van de verkeerde kant op komt. Om een vorm in een campagne te gebruiken, moet u de specifieke toepassing van het Web tot stand brengen.
+>De toepassing van het Web die in dit voorbeeld wordt gebruikt is geen app van het Web die uit-van-de-doos met Adobe Campaign komt. Om een vorm in een campagne te gebruiken, moet u de specifieke toepassing van het Web tot stand brengen.
 
 Wanneer het creëren van het campagnemalplaatje, klik het **[!UICONTROL Zoom]** pictogram binnen de **[!UICONTROL Web interface]** optie van de **[!UICONTROL Advanced campaign settings...]** verbinding aan toegangsdetails van de toepassing van het Web.
 
@@ -131,22 +131,23 @@ Zodra de controles zijn goedgekeurd, kan de campagne automatisch beginnen.
 
 1. Op het **[!UICONTROL General]** tabblad moet u het volgende opgeven:
 
-   * de **[!UICONTROL Targeting dimension]**. Hier wordt de **gegevensdistributie** uitgevoerd op de **ontvangers**.
-   * de **[!UICONTROL Distribution type]**. U kunt een **Vaste grootte** of een **Grootte als percentage** kiezen.
-   * de **[!UICONTROL Assignment type]**. Selecteer de optie **Lokale entiteit** .
-   * de **[!UICONTROL Distribution type]**. Hier, is het **[!UICONTROL Origin (@origin)]** gebied aanwezig in de Ontvanger lijst die u de verhouding tussen het contact en de lokale entiteit laat identificeren.
+   * the **[!UICONTROL Targeting dimension]**. Hier wordt de **gegevensdistributie** uitgevoerd op de **ontvangers**.
+   * the **[!UICONTROL Distribution type]**. U kunt een **Vaste grootte** of een **Grootte als percentage** kiezen.
+   * the **[!UICONTROL Assignment type]**. Selecteer de optie **Lokale entiteit** .
+   * the **[!UICONTROL Distribution type]**. Hier, is het **[!UICONTROL Origin (@origin)]** gebied aanwezig in de Ontvanger lijst die u de verhouding tussen het contact en de lokale entiteit laat identificeren.
    * Het **[!UICONTROL Approval storage]** veld. Selecteer de optie **Lokale goedkeuring van ontvanger** .
 
-1. Geef op het **[!UICONTROL Breakdown]** tabblad het volgende op:
+1. In the **[!UICONTROL Breakdown]** tab, specify:
 
    * het **[!UICONTROL Distribution field value]** programma , dat overeenkomt met de lokale entiteiten die bij de komende campagne betrokken zijn .
    * de lokale entiteit **[!UICONTROL label]**.
    * de waarde **[!UICONTROL Size]** (vast of als percentage). De standaardwaarde **0** houdt in dat alle ontvangers worden geselecteerd die aan de lokale entiteit zijn gekoppeld.
+
    ![](assets/mkg_dist_use_case_target_valid4.png)
 
 1. Sla de nieuwe gegevensdistributie op.
 
-#### Een samenwerkingscampagne maken {#creating-a-collaborative-campaign}
+#### Een collaboratieve campagne maken {#creating-a-collaborative-campaign}
 
 1. Maak een nieuw knooppunt van het **[!UICONTROL Campaign management > Campaign]** knooppunt **[!UICONTROL collaborative campaign (by target approval)]**.
 1. Maak op het **[!UICONTROL Targeting and workflows]** tabblad een workflow voor uw campagne. Dit moet een **Gesplitste** activiteit bevatten waarin de activiteit **[!UICONTROL Record count limitation]** wordt gedefinieerd door de **[!UICONTROL Data distribution]** activiteit.
@@ -158,6 +159,7 @@ Zodra de controles zijn goedgekeurd, kan de campagne automatisch beginnen.
    * de inhoud van het bericht die naar de lokale entiteiten in de kennisgeving zal worden verzonden;
    * de goedkeuringsherinnering;
    * de verwachte verwerking van de campagne.
+
    ![](assets/mkg_dist_use_case_target_valid7.png)
 
 1. Sla uw record op.
@@ -170,13 +172,14 @@ U kunt nu een **campagnepakket** toevoegen uit het **Campagneuniversum** .
 
    * in de modus **Handmatig** nemen de lokale entiteiten deel aan de campagne als zij de uitnodiging van de centrale entiteit aanvaarden. Zij kunnen vooraf geselecteerde contacten schrappen als zij willen en goedkeuring van de manager noodzakelijk is om hun deelname aan de campagne te bevestigen.
    * in de modus **Automatisch** moeten de lokale entiteiten deelnemen aan de campagne, tenzij ze zich ervan verwijderen. Ze kunnen contacten verwijderen zonder goedkeuring.
+
    ![](assets/mkg_dist_use_case_target_valid.png)
 
 1. Op het **[!UICONTROL Description]** tabblad kunt u een beschrijving van de campagne en alle documenten toevoegen die naar de lokale entiteiten moeten worden verzonden.
 
    ![](assets/mkg_dist_use_case_target_valid1.png)
 
-1. Goedkeuren, vervolgens start u de workflow om het pakket te publiceren en ter beschikking te stellen van alle lokale entiteiten in een lijst met pakketten.
+1. Goedkeuren, vervolgens start u de workflow om het pakket te publiceren en beschikbaar te maken voor alle lokale entiteiten in een lijst met pakketten.
 
    ![](assets/mkg_dist_use_case_target_valid2.png)
 
