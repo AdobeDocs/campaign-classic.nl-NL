@@ -1,7 +1,7 @@
 ---
-title: Aanbiedingsruimten maken
-seo-title: Aanbiedingsruimten maken
-description: Aanbiedingsruimten maken
+title: Aanbiedingsplaatsingen maken
+seo-title: Aanbiedingsplaatsingen maken
+description: Aanbiedingsplaatsingen maken
 seo-description: null
 page-status-flag: never-activated
 uuid: 2ad38697-db14-4dc0-abb8-9b71d57e0e35
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 discoiquuid: 0fae2149-0980-466d-ac9e-8afec2e278be
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '984'
+ht-degree: 2%
 
 ---
 
 
-# Aanbiedingsruimten maken{#creating-offer-spaces}
+# Aanbiedingsplaatsingen maken{#creating-offer-spaces}
 
 De aanbieding ruimteverwezenlijking kan slechts door een **technische beheerder** met toegang tot de sub-omslag van de aanbiedingsruimte worden uitgevoerd. De ruimten van de aanbieding kunnen slechts in het ontwerpmilieu worden gecreeerd, en automatisch in het levende milieu tijdens aanbiedingsgoedkeuring worden gedupliceerd.
 
@@ -51,7 +51,7 @@ Pas het volgende proces toe om een nieuwe aanbiedingsruimte te maken:
 
    ![](assets/offer_space_create_003.png)
 
-1. Ga naar het **[!UICONTROL Content]** knooppunt en selecteer de velden in de volgende volgorde: **[!UICONTROL Title]**, dan **[!UICONTROL Image URL]**, dan **[!UICONTROL HTML content]**, dan **[!UICONTROL Destination URL]**.
+1. Ga naar het **[!UICONTROL Content]** knooppunt en selecteer de velden in de volgende volgorde: **[!UICONTROL Title]** En dan **[!UICONTROL Image URL]**, dan **[!UICONTROL HTML content]**, dan **[!UICONTROL Destination URL]**.
 
    ![](assets/offer_space_create_004.png)
 
@@ -127,7 +127,7 @@ Hiervoor gebruikt u het volgende proces:
 
 **Binnenkomende interactie**
 
-Op het **[!UICONTROL Storage]** tabblad kunt u alleen statussen definiëren voor **voorgestelde** en **geaccepteerde** aanbiedingsvoorstellen. Voor binnenkomende interactie, zou de status van aanbiedingsvoorstellen direct in URL voor het roepen van de aanbiedingsmotor, eerder dan door de interface moeten worden gespecificeerd. Op deze manier kunt u opgeven welke status in andere gevallen moet worden toegepast, bijvoorbeeld wanneer een voorstel voor een aanbieding wordt afgewezen.
+Op het **[!UICONTROL Storage]** tabblad kunt u alleen statussen definiëren voor **voorgestelde** en **geaccepteerde** aanbiedingsvoorstellen. Voor binnenkomende interactie, zou de status van aanbiedingsvoorstellen direct in URL voor het roepen van de aanbiedingsmotor, eerder dan door de interface moeten worden gespecificeerd. Op deze manier kunt u opgeven welke status in andere gevallen moet worden toegepast, bijvoorbeeld als een voorstel voor een aanbieding wordt afgewezen.
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
@@ -145,7 +145,7 @@ Zodra een bezoeker op het aanbod klikt en dus op de URL, wordt de **[!UICONTROL 
 >
 >Als u een andere status in de URL wilt opgeven (bijvoorbeeld als een aanbiedingsvoorstel wordt afgewezen), gebruikt u de waarde die overeenkomt met de gewenste status. Voorbeeld: **[!UICONTROL Rejected]** = &quot;5&quot;, **[!UICONTROL Presented]** = &quot;1&quot; enzovoort.
 >
->Statussen en hun waarden kunnen worden opgehaald in het **[!UICONTROL Offer propositions (nms)]** gegevensschema. Raadpleeg [deze pagina](../../configuration/using/data-schemas.md)voor meer informatie.
+>Statussen en hun waarden kunnen worden opgehaald in het **[!UICONTROL Offer propositions (nms)]** gegevensschema. Raadpleeg [deze pagina](../../configuration/using/data-schemas.md) voor meer informatie.
 
 **Uitgaande interactie**
 
