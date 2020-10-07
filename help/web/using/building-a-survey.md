@@ -11,20 +11,20 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: 6850851d-1dbe-44f0-bbff-18dbac2cad9a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '799'
+ht-degree: 1%
 
 ---
 
 
 # Een enquête maken{#building-a-survey}
 
-## Een nieuwe enquête maken {#creating-a-new-survey}
+## Creating a new survey {#creating-a-new-survey}
 
-In dit hoofdstuk worden het ontwerpen van een formulier van het type **enquête** met Adobe Campaign beschreven, evenals de beschikbare opties en configuraties. Met Adobe Campaign kunt u deze enquête beschikbaar stellen aan gebruikers en antwoorden in de database verzamelen en archiveren.
+In dit hoofdstuk worden het ontwerpen van een formulier van het type **Beoordeling** beschreven met Adobe Campaign, plus de beschikbare opties en configuraties. Met Adobe Campaign kunt u deze enquête beschikbaar maken voor gebruikers en antwoorden in de database verzamelen en archiveren.
 
 Webformulieren zijn toegankelijk via het **[!UICONTROL Resources > Online > Web applications]** knooppunt van de structuur. Als u een enquête wilt maken, klikt u op de **[!UICONTROL New]** knop boven de lijst met toepassingen of klikt u met de rechtermuisknop op de lijst en kiest u **[!UICONTROL New]**.
 
@@ -96,7 +96,7 @@ Daarnaast moet de opslaglocatie voor dit invoerveld een **[!UICONTROL Multiple v
 >[!CAUTION]
 >
 >* Deze functionaliteit is alleen beschikbaar voor formulieren van het type **Beoordeling** .
->* Deze optie is niet compatibel met willekeurige vraagweergave. Raadpleeg [Vragen](#adding-questions)toevoegen voor meer informatie.
+>* Deze optie is niet compatibel met willekeurige vraagweergave. For more on this, refer to [Adding questions](#adding-questions).
 
 
 ### Vragen toevoegen {#adding-questions}
@@ -129,7 +129,7 @@ In het bovenstaande voorbeeld ziet de rendering er als volgt uit:
 >
 >Elke vraag heeft een container van het type **Vraag** .
 
-U kunt het willekeurig tekenen van vragen door de Campagne van Adobe toelaten. Het is dan mogelijk om het aantal vragen te specificeren dat in de pagina, op het gebied wordt getoond dat bij de bodem van het configuratievenster wordt gevestigd.
+U kunt het willekeurig tekenen van vragen door Adobe Campaign inschakelen. Het is dan mogelijk om het aantal vragen te specificeren dat in de pagina, op het gebied wordt getoond dat bij de bodem van het configuratievenster wordt gevestigd.
 
 ![](assets/s_ncs_admin_survey_containers_qu_display.png)
 
