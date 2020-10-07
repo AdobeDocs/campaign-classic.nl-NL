@@ -1,7 +1,7 @@
 ---
-title: Verwerkingstijd van Message Center
-seo-title: Verwerkingstijd van Message Center
-description: Verwerkingstijd van Message Center
+title: Verwerkingstijd van het Berichtencentrum
+seo-title: Verwerkingstijd van het Berichtencentrum
+description: Verwerkingstijd van het Berichtencentrum
 seo-description: null
 page-status-flag: never-activated
 uuid: 06aca2c2-33c0-4839-bee4-fd838c49ce76
@@ -11,16 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 discoiquuid: d1f591d2-95e8-4d99-bc60-955c96b532eb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 7%
 
 ---
 
 
-# Verwerkingstijd van Message Center{#message-center-processing-time}
+# Verwerkingstijd van het Berichtencentrum{#message-center-processing-time}
 
 Dit rapport geeft de belangrijkste indicatoren weer die betrekking hebben op de real-time wachtrij. Dit rapport, gericht op technische beheerders, kan ook via het **[!UICONTROL Monitoring]** universum in de controle instantie worden betreden.
 
@@ -37,5 +37,5 @@ Enkel zoals voor het **[!UICONTROL Message Center service level]** rapport, kunt
 
 >[!NOTE]
 >
->De drempelwaarden voor de waarschuwing (oranje) en de rode indicator kunnen worden geconfigureerd in de implementatiewizard van Adobe Campagne. Zie [Controledrempels](../../message-center/using/monitoring-thresholds.md).
+>De drempelwaarden voor de waarschuwings- (oranje) en waarschuwingsindicator (rood) kunnen worden geconfigureerd in de implementatiewizard van Adobe Campaign. Zie [Controledrempels](../../message-center/using/monitoring-thresholds.md).
 
