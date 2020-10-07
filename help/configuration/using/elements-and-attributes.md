@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5e24d94a-f9c1-4642-a881-dfc4b5492f14
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a2cb740fe9b71435f602b738bd270fd3a0954901
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '6022'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: a2cb740fe9b71435f602b738bd270fd3a0954901
 
 Bij het bewerken van een schema is een goedkeuringssysteem op basis van het bronschema (xtk:srcSchema) beschikbaar. Sommige fouten kunnen ook worden ontdekt wanneer het bijwerken van het gegevensbestand gebruikend de &quot;update van de structuur van het Gegevensbestand...&quot; wizard.
 
-Standaard zijn in Adobe Campagne-schema&#39;s alle kenmerken van het type Boolean &#39;false&#39;. Om hen te activeren, moet u de attributen in het schema specificeren en zijn waarde plaatsen aan &quot;waar&quot;.
+Standaard zijn in Adobe Campaign-schema&#39;s alle Booleaanse tekstkenmerken &quot;false&quot;. Om hen te activeren, moet u de attributen in het schema specificeren en zijn waarde plaatsen aan &quot;waar&quot;.
 
 ## `<attribute>` element {#attribute--element}
 
@@ -62,11 +62,11 @@ De volgorde waarin `<attribute>` elementen in een database worden gedefinieerd, 
 
    Toegankelijke waarden zijn:
 
-   * &quot;none&quot;: verzoening alleen. Dit betekent dat het element wordt hersteld zonder het bij te werken of een fout te genereren als het niet bestaat.
+   * &quot;none&quot;: verzoening alleen. Dit betekent dat Adobe Campaign het element zal herstellen zonder het bij te werken of een fout te genereren als het niet bestaat.
    * &quot;insertOrUpdate&quot;: bijwerken met invoeging. Dit betekent dat Adobe Campaign het element bijwerkt of maakt als het niet bestaat.
    * &quot;invoegen&quot;: invoeging. Dit betekent dat Adobe Campaign het element invoegt zonder te controleren of het bestaat.
-   * &quot;update&quot;: bijwerken. Dit betekent dat Adobe Campagne het element zal bijwerken of een fout zal produceren als het niet bestaat.
-   * &quot;delete&quot;: verwijderen. Dit betekent dat in Adobe Campaign elementen worden hersteld en verwijderd.
+   * &quot;update&quot;: bijwerken. Dit betekent dat Adobe Campaign het element zal bijwerken of een fout zal produceren als het niet bestaat.
+   * &quot;delete&quot;: verwijderen. Dit betekent dat Adobe Campaign elementen herstelt en verwijdert.
 
 * **geavanceerd (Booleaans)**: als deze optie is geactiveerd (@advanced=&quot;true&quot;), kunt u het kenmerk verbergen in de lijst met beschikbare velden die toegankelijk zijn voor het configureren van een lijst in een formulier.
 * **applyIf (string)**: Met dit kenmerk kunt u velden optioneel maken. Het `<attribute>` element zal in aanmerking worden genomen wanneer het bijwerken van het gegevensbestand wanneer de beperking wordt nageleefd. &quot;applyIf&quot; ontvangt een XTK-expressie.
@@ -94,30 +94,33 @@ De volgorde waarin `<attribute>` elementen in een database worden gedefinieerd, 
 
    * &quot;shared&quot;: de inhoud wordt opgeslagen in een gedeelde tabel per gegevenstype
    * &quot;toegewezen&quot;: de inhoud wordt opgeslagen in een speciale tabel
+
    SQL-kenmerktabellen worden automatisch gebaseerd op het kenmerktype:
 
    * toegewezen: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
    * gedeeld: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+
    Er zijn twee typen kenmerkvelden: eenvoudige oà¹-velden, waar één enkele waarde is toegestaan op de karakteristieken, en o à¹ multiple choice velden, waar de eigenschap is gekoppeld aan een collectie element dat meerdere waarden kan bevatten.
 
-   Wanneer een eigenschap in een schema wordt bepaald, moet dit schema een belangrijkste sleutel hebben die op één enkel gebied wordt gebaseerd (de samengestelde sleutels zijn niet geoorloofd).
+   Wanneer een kenmerk in een schema wordt bepaald, moet dit schema een hoofdsleutel hebben die op één enkel gebied wordt gebaseerd (de samengestelde sleutels zijn niet geoorloofd).
 
 * **featureDate (boolean)**: kenmerk gekoppeld aan het veld &quot;@feature&quot;-kenmerken. Als de waarde &quot;true&quot; is, kunt u erachter komen wanneer de waarde voor het laatst is bijgewerkt.
 * **img (tekenreeks)**: Hiermee kunt u een pad definiëren voor een afbeelding die is gekoppeld aan een veld (naamruimte + naam van afbeelding) (bijvoorbeeld: img=&quot;cus:mypicture.jpg&quot;). De afbeelding moet fysiek naar de toepassingsserver worden geïmporteerd.
 * **label (tekenreeks)**: label gekoppeld aan het veld, meestal bestemd voor de gebruiker in de interface. Hiermee voorkomt u naamgevingsbeperkingen.
-* **length (tekenreeks)**: max. aantal tekens voor een waarde van het SQL-veld &quot;tekenreeks&quot;. Als het kenmerk &quot;@length&quot; niet is opgegeven, maakt Adobe Campagne automatisch een veld voor 255 tekens.
+* **length (tekenreeks)**: max. aantal tekens voor een waarde van het SQL-veld &quot;tekenreeks&quot;. Als het kenmerk &quot;@length&quot; niet is opgegeven, maakt Adobe Campaign automatisch een veld voor 255 tekens.
 * **localizable (boolean)**: Als dit kenmerk is geactiveerd, geeft dit het gereedschap Verzameling de opdracht om de waarde van het kenmerk &quot;@label&quot; te herstellen voor vertaling (intern gebruik).
 * **naam (MNTOKEN)**: naam van het kenmerk dat overeenkomt met de naam van het veld in de tabel. De waarde van het kenmerk &quot;@name&quot; moet kort zijn, bij voorkeur in het Engels, en voldoen aan XML-naamgevingsbeperkingen.
 
-   Wanneer het schema naar de database wordt geschreven, worden automatisch voorvoegsels aan de veldnaam toegevoegd door Adobe Campaign:
+   Als het schema naar de database wordt geschreven, worden automatisch voorvoegsels aan de veldnaam toegevoegd door Adobe Campaign:
 
    * &quot;i&quot;: voor het type &#39;integer&#39;.
    * &quot;d&quot;: prefix voor het type &#39;double&#39;.
-   * &quot;s&quot;: voor het type tekenreeks.
+   * &quot;s&quot;: voorvoegsel voor het tekenreekstype.
    * &quot;ts&quot;: voorvoegsel voor het type &#39;date&#39;.
+
    Als u de naam van het veld in de tabel volledig wilt definiëren, gebruikt u de optie &quot;@sqlname&quot; bij het definiëren van een kenmerk.
 
-* **notNull (boolean)**: Hiermee kunt u het gedrag van Adobe Campaign opnieuw definiëren met betrekking tot het beheer van NULL-records in de database. Numerieke velden zijn standaard niet null en tekenreeks- en datumtekstvelden kunnen null zijn.
+* **notNull (boolean)**: Hiermee kunt u het Adobe Campaign-gedrag voor het beheer van NULL-records in de database opnieuw definiëren. Numerieke velden zijn standaard niet null en tekenreeks- en datumtekstvelden kunnen null zijn.
 * **pkgStatus (tekenreeks)**: tijdens het exporteren van pakketten worden waarden in aanmerking genomen, afhankelijk van de waarde van &quot;@pkgStatus&quot;:
 
    * &quot;always&quot;: altijd aanwezig
@@ -164,7 +167,8 @@ De volgorde waarin `<attribute>` elementen in een database worden gedefinieerd, 
    * tijd
    * timespan
    * uuid
-   Als het kenmerk &quot;@type&quot; leeg blijft, koppelt Adobe Campagne standaard een tekenreeks (STRING) met een lengte van 100 naar het veld.
+
+   Als het kenmerk &quot;@type&quot; leeg blijft, koppelt Adobe Campaign standaard een tekenreeks (STRING) met een lengte van 100 aan het veld.
 
    Als het veld van het type STRING is en de naam van het veld niet wordt opgegeven door de aanwezigheid van het kenmerk &quot;@sqlname&quot;, wordt de naam van het veld in de database automatisch voorafgegaan door een &#39;s&#39;. Deze werkmodus is vergelijkbaar met velden van het type INTEGER (i), DUBBELE (d) en DATES (ts).
 
@@ -175,7 +179,7 @@ De volgorde waarin `<attribute>` elementen in een database worden gedefinieerd, 
    >
    >Het kenmerk is verborgen, maar de gegevens ervan zijn toegankelijk.
 
-* **xml (Boolean)**: als deze optie is geactiveerd, hebben de waarden van het veld geen gekoppeld SQL-veld. Adobe Campaign maakt een tekstveld met de naam &#39;mData&#39; voor het opslaan van records. Dit betekent dat er op deze velden geen filters of sortering plaatsvindt.
+* **xml (Boolean)**: als deze optie is geactiveerd, hebben de waarden van het veld geen gekoppeld SQL-veld. Adobe Campaign maakt een tekstveld &#39;mData&#39; voor het opslaan van records. Dit betekent dat er op deze velden geen filters of sortering plaatsvindt.
 
 ### Voorbeelden {#examples}
 
@@ -350,11 +354,11 @@ De naam van de index in de database wordt berekend door de naam van de tabel en 
 
    Toegankelijke waarden zijn:
 
-   * &quot;none&quot;: verzoening alleen. Dit betekent dat het element wordt hersteld zonder het bij te werken of een fout te genereren als het niet bestaat.
+   * &quot;none&quot;: verzoening alleen. Dit betekent dat Adobe Campaign het element zal herstellen zonder het bij te werken of een fout te genereren als het niet bestaat.
    * &quot;insertOrUpdate&quot;: bijwerken met invoeging. Dit betekent dat Adobe Campaign het element bijwerkt of maakt als het niet bestaat.
    * &quot;invoegen&quot;: invoeging. Dit betekent dat Adobe Campaign het element invoegt zonder te controleren of het bestaat.
-   * &quot;update&quot;: bijwerken. Dit betekent dat Adobe Campagne het element zal bijwerken of een fout zal produceren als het niet bestaat.
-   * &quot;delete&quot;: verwijderen. Dit betekent dat in Adobe Campaign elementen worden hersteld en verwijderd.
+   * &quot;update&quot;: bijwerken. Dit betekent dat Adobe Campaign het element zal bijwerken of een fout zal produceren als het niet bestaat.
+   * &quot;delete&quot;: verwijderen. Dit betekent dat Adobe Campaign elementen herstelt en verwijdert.
 
 * **applyIf (string)**: voorwaarde voor het in aanmerking nemen van de index - ontvangt een uitdrukking XTK.
 * **label (tekenreeks)**: indexlabel.
@@ -431,7 +435,7 @@ _operation (string), advanced (boolean), aggregaat (string), applyIf (string), a
 
 ### Beschrijving {#description-4}
 
-Adobe Campagne bevat vier typen `<element>` elementen:
+Adobe Campaign kent vier soorten `<element>` elementen:
 
 * Hoofdmap `<element>` : definieert de naam van de SQL-tabel die overeenkomt met het schema.
 * Structuur `<element>` : definieert een groep `<element>` of `<attribute>` elementen.
@@ -446,11 +450,11 @@ Adobe Campagne bevat vier typen `<element>` elementen:
 
    Toegankelijke waarden zijn:
 
-   * &quot;none&quot;: verzoening alleen. Dit betekent dat het element wordt hersteld zonder het bij te werken of een fout te genereren als het niet bestaat.
+   * &quot;none&quot;: verzoening alleen. Dit betekent dat Adobe Campaign het element zal herstellen zonder het bij te werken of een fout te genereren als het niet bestaat.
    * &quot;insertOrUpdate&quot;: bijwerken met invoeging. Dit betekent dat Adobe Campaign het element bijwerkt of maakt als het niet bestaat.
    * &quot;invoegen&quot;: invoeging. Dit betekent dat Adobe Campaign het element invoegt zonder te controleren of het bestaat.
-   * &quot;update&quot;: bijwerken. Dit betekent dat Adobe Campagne het element zal bijwerken of een fout zal produceren als het niet bestaat.
-   * &quot;delete&quot;: verwijderen. Dit betekent dat in Adobe Campaign elementen worden hersteld en verwijderd.
+   * &quot;update&quot;: bijwerken. Dit betekent dat Adobe Campaign het element zal bijwerken of een fout zal produceren als het niet bestaat.
+   * &quot;delete&quot;: verwijderen. Dit betekent dat Adobe Campaign elementen herstelt en verwijdert.
 
 * **geavanceerd (Booleaans)**: als deze optie is geactiveerd (@advanced=&quot;true&quot;), kunt u het kenmerk verbergen in de lijst met beschikbare velden die toegankelijk zijn voor het configureren van een lijst in een formulier.
 * **aggregaat (tekenreeks)**: Hiermee kunt u de definitie van een schema kopiëren `<element>` via een ander schema. Dit kenmerk ontvangt een schemadeclaratie in de vorm van een &quot;namespace:name&quot;.
@@ -480,13 +484,15 @@ Adobe Campagne bevat vier typen `<element>` elementen:
 
    * &quot;shared&quot;: de inhoud wordt opgeslagen in een gedeelde tabel per gegevenstype
    * &quot;toegewezen&quot;: de inhoud wordt opgeslagen in een speciale tabel
+
    SQL-kenmerktabellen worden automatisch gebaseerd op het kenmerktype:
 
    * toegewezen: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
    * gedeeld: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+
    Er zijn twee typen kenmerkvelden: eenvoudige velden waar één waarde is toegestaan op het kenmerk, en meerkeuzevelden, waar het kenmerk is gekoppeld aan een verzamelingselement dat meerdere waarden kan bevatten.
 
-   Wanneer een eigenschap in een schema wordt bepaald, moet dit schema een belangrijkste sleutel hebben die op één enkel gebied wordt gebaseerd (de samengestelde sleutels zijn niet geoorloofd).
+   Wanneer een kenmerk in een schema wordt bepaald, moet dit schema een hoofdsleutel hebben die op één enkel gebied wordt gebaseerd (de samengestelde sleutels zijn niet geoorloofd).
 
 * **featureDate (boolean)**: kenmerk gekoppeld aan het veld &quot;@feature&quot;-kenmerken. Als de waarde &quot;true&quot; is, kunt u erachter komen wanneer de waarde voor het laatst is bijgewerkt.
 * **filterPath (tekenreeks)**: this attribute receive an Xpath and lets you define a filter on a field.
@@ -515,12 +521,13 @@ Adobe Campagne bevat vier typen `<element>` elementen:
 
    * &quot;i&quot;: voor het type &#39;integer&#39;.
    * &quot;d&quot;: prefix voor het type &#39;double&#39;.
-   * &quot;s&quot;: voor het type tekenreeks.
+   * &quot;s&quot;: voorvoegsel voor het tekenreekstype.
    * &quot;ts&quot;: voorvoegsel voor het type &#39;date&#39;.
+
    Om de naam van de lijst op een autonome manier te bepalen, moet u het &quot;@sqltable&quot;attribuut in de definitie van het belangrijkste schemaelement gebruiken.
 
 * **noDbIndex (boolean)**: Hiermee kunt u opgeven dat het element niet wordt geïndexeerd.
-* **ordered (boolean)**: als het kenmerk is geactiveerd (ordered=&quot;true&quot;), behoudt Adobe Campagne de declaratiereeks voor elementen in een XML-verzamelingselement.
+* **ordered (boolean)**: als het kenmerk is geactiveerd (ordered=&quot;true&quot;), behoudt Adobe Campaign de declaratiereeks van het element in een XML-verzamelingselement.
 * **pkSequence (tekenreeks)**: ontvangt de naam van de opeenvolging die voor het berekenen van een auto-stijgende sleutel moet worden gebruikt. Dit kenmerk mag alleen worden gebruikt als een automatisch incrementele sleutel is gedefinieerd voor het hoofdelement van het schema.
 * **pkgStatus (tekenreeks)**: tijdens de uitvoer van pakketten worden waarden in aanmerking genomen als functie van de waarde van deze eigenschap:
 
@@ -537,11 +544,12 @@ Adobe Campagne bevat vier typen `<element>` elementen:
 
    * &quot;single&quot;: Eenvoudige koppeling van het type 1-1
    * &quot;niet geconsolideerd&quot;: 1-N de verbinding van de typeinzameling
+
    Als het kenmerk niet is opgegeven tijdens het maken van koppelingen, is de standaardinstelling 1-N.
 
 * **revDesc (tekenreeks)**: this attribute receive a description linked to the reverse link.
 * **revExternalJoin (boolean)**: wanneer geactiveerd, laat dit attribuut u de externe zich aan op de tegenovergestelde verbinding dwingen.
-* **revIntegrity (tekenreeks)**: dit attribuut bepaalt de integriteit op het doelschema. Dezelfde waarden als het kenmerk &quot;@integriteit&quot; zijn geautoriseerd. Standaard geeft Adobe Campaign de waarde &quot;normal&quot; aan dit kenmerk.
+* **revIntegrity (tekenreeks)**: dit attribuut bepaalt de integriteit op het doelschema. Dezelfde waarden als het kenmerk &quot;@integriteit&quot; zijn geautoriseerd. Adobe Campaign geeft standaard de &quot;normale&quot; waarde aan dit kenmerk.
 * **revLabel (tekenreeks)**: label van de tegenovergestelde koppeling.
 * **revLink (tekenreeks)**: naam van de tegenovergestelde koppeling. Als de waarde &quot;_NONE_&quot;is, zal geen tegenovergestelde verbinding in het bestemmingsschema worden gecreeerd.
 * **revTarget (tekenreeks)**: doel van de tegenovergestelde koppeling.
@@ -810,7 +818,7 @@ Een tabel moet minstens één sleutel hebben.
 
 ### Gebruik en gebruikscontext {#use-and-context-of-use-6}
 
-Normaliter worden sleutels gedeclareerd na het hoofdelement van het schema en de indexen.
+Normaliter worden toetsen gedeclareerd na het hoofdelement van het schema en de indexen.
 
 Een sleutel wordt een samengestelde sleutel genoemd als het verscheidene gebieden (d.w.z. verscheidene `<keyfield>` kinderen) omvat. Gebruik geen samengestelde sleutel om een primaire sleutel te definiëren.
 
@@ -822,7 +830,7 @@ De eerste 1000 id&#39;s zijn gereserveerd, dus als een reeks waarden moet worden
 
 * **allowEmptyPart (boolean)**: in het geval van een samengestelde sleutel, als dit attribuut wordt geactiveerd, wordt zij als geldig beschouwd als minstens één van zijn sleutels niet leeg is. Als dit het geval is, is de lege nodewaarde &quot;0&quot;(boolean of voor alle soorten numerieke gegevens). Standaard moeten alle toetsen waaruit een samengestelde sleutel bestaat, worden ingevoerd.
 * **applyIf (string)**: Met dit kenmerk kunt u de sleutel optioneel maken. In deze code wordt de voorwaarde gedefinieerd op basis waarvan de sleuteldefinitie wordt toegepast. Dit kenmerk ontvangt een XTK-expressie.
-* **internal (boolean)**: als dit kenmerk is geactiveerd, laat Adobe Campaign weten dat de sleutel primair is.
+* **internal (boolean)**: als het wordt geactiveerd, laat dit kenmerk Adobe Campaign weten dat de sleutel primair is.
 * **label (tekenreeks)**: label van de toets.
 * **naam (MNTOKEN)**: interne naam van de sleutel.
 * **noDbIndex (boolean)**: als deze is geactiveerd (noDbIndex=&quot;true&quot;), wordt het veld dat overeenkomt met de sleutel niet geïndexeerd.
@@ -879,7 +887,7 @@ Dit element definieert de velden die moeten worden geïntegreerd in een index of
 
 ### Voorbeelden {#examples-}
 
-Selectie van het veld &#39;sName&#39; in een index met een Xpath-bewerking voor &quot;@name&quot;:
+Selectie van het veld &#39;sName&#39; in een index met een Xpath-element op &#39;@name&#39;:
 
 ```
 <keyfield xpath="@name"/>
@@ -1139,7 +1147,7 @@ De presentatie van het schema is beschikbaar in [Ongeveer schemaverwijzing](../.
 * **gemaakt (datetime)**: this attribute provided information on the date and time of schema creation. Het heeft een formulier &#39;Datum en tijd&#39;. De weergegeven waarden worden opgehaald van de server. De tijd wordt getoond in formaat UTC.
 * **createdBy-id (long)**: is het herkenningsteken van de exploitant die het schema creeerde.
 * **desc (tekenreeks)**: schemabeschrijving
-* **entiteitSchema (tekenreeks)**: basisschema waarop syntaxis en goedkeuring zijn gebaseerd (standaard voor Adobe Campagne: xtk:srcSchema). Wanneer u het huidige schema opslaat, zal de Campagne van Adobe zijn grammatica met het schema goedkeuren dat in de @xtkschema attributen wordt verklaard.
+* **entiteitSchema (tekenreeks)**: basisschema waarop syntaxis en goedkeuring zijn gebaseerd (standaard voor Adobe Campaign: xtk:srcSchema). Wanneer u het huidige schema opslaat, zal Adobe Campaign zijn grammatica met het schema goedkeuren dat in de @xtkschema attributen wordt verklaard.
 * **extendedSchema (tekenreeks)**: ontvangt de naam van het out-of-the-box schema waarop de huidige schemauitbreiding gebaseerd is. Het formulier is &quot;namespace:name&quot;.
 * **img (tekenreeks)**: pictogram gekoppeld aan het schema (kan worden gedefinieerd in de wizard Schema maken).
 * **label (tekenreeks)**: schemalabel.
