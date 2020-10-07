@@ -1,7 +1,7 @@
 ---
-title: Velden aanpassen
-seo-title: Velden aanpassen
-description: Velden aanpassen
+title: Personalisatievelden
+seo-title: Personalisatievelden
+description: Personalisatievelden
 seo-description: null
 page-status-flag: never-activated
 uuid: 3a94a50e-259e-40c3-ae67-8a2c42e9fad7
@@ -11,21 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: 27c8e443-ee6b-4d58-bc2d-81cf8391c5de
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 3%
+ht-degree: 8%
 
 ---
 
 
-# Velden aanpassen{#personalization-fields}
+# Personalisatievelden{#personalization-fields}
 
-De gebieden van de aanpassing worden gebruikt voor verpersoonlijking op het eerste niveau van de inhoud van geleverde berichten. De velden die u in een hoofdinhoud invoegt, geven de positie aan waar de gegevens uit de geselecteerde gegevensbron moeten worden ingevoegd.
+Personalisatievelden worden gebruikt voor personalisatie op het eerste niveau van de content van geleverde berichten. De velden die u in hoofdcontent invoegt, geven de positie aan waar de gegevens uit de geselecteerde gegevensbron moeten worden ingevoegd.
 
 In het verpersoonlijkingsveld met de syntaxis **&lt;%= receiving.LastName %>** geeft Adobe Campaign bijvoorbeeld de opdracht de naam van de ontvanger in te voegen in de database (tabel met ontvangers).
 
