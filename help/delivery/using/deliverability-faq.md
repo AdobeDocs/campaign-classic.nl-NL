@@ -1,5 +1,5 @@
 ---
-title: Belangrijkste punten bij het beheren van de leverbaarheid in Adobe Campaign Classic
+title: Belangrijkste punten bij het beheren van de leverbaarbaarheid in Adobe Campaign Classic
 description: Wat zijn de belangrijkste punten om te controleren wanneer het beheren van leverbaarheid in Adobe Campaign Classic?
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 56fed9fff445892366d3e0f1367029882077ae20
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 0%
@@ -37,7 +34,7 @@ Dit betekent dat een verbinding een MX-regel kan gebruiken zonder dat een e-mail
 
 Daarom is &#39;met quota&#39;s tegemoet gekomen&#39; niet alleen een configuratieprobleem, maar kan het ook worden gekoppeld aan reputatie. Het is belangrijk om foutenmeldingen in het logboek [te analyseren](../../production/using/monitoring-processes.md#smtp-errors-per-domain)SMTP.
 
-Voor meer op MX configuratie, zie [deze sectie](../../installation/using/email-deliverability.md#mx-configuration).
+For more on MX configuration, see [this section](../../installation/using/email-deliverability.md#mx-configuration).
 
 ## Hetzelfde foutbericht voor een ISP {#same-error-for-an-isp}
 
@@ -50,9 +47,9 @@ Als u altijd het zelfde foutenbericht voor ISP krijgt, kan uw e-mail of IP als g
 
 Neem contact op met de services voor commercieel gebruik of levering, Adobe Campaign Client Care of Adobe Campaign als het probleem zich blijft voordoen.
 
-## Bloklijst versus quarantaine {#block-list-versus-quarantine}
+## Lijst van afgewezen personen versus quarantaine {#block-list-versus-quarantine}
 
-* **Wat is het verschil tussen een e-mailadres in de bloklijst en een in quarantaine geplaatst e-mailadres?**
+* **Wat is het verschil tussen een e-mailadres op de lijst van afgewezen personen en een in quarantaine geplaatst e-mailadres?**
 
    * De status **[!UICONTROL On block list]** is een resultaat van een feedbacklus (wanneer een persoon een bericht rapporteert als spam).
 
@@ -61,26 +58,27 @@ Neem contact op met de services voor commercieel gebruik of levering, Adobe Camp
 
 * **Wat betekenen de verschillende redenen voor quarantainefouten?**
 
-   Hier volgen tien mogelijke redenen: niet bepaald, gebruiker onbekend, ongeldig domein, adres op bloklijst, geweigerd, fout genegeerd, onbereikbaar, account gehandicapt, brievenbus volledig, niet verbonden.
+   Hier volgen tien mogelijke redenen: niet bepaald, gebruiker onbekend, ongeldig domein, adres op lijst van afgewezen personen, geweigerd, fout genegeerd, onbereikbaar, rekening gehandicapt, brievenbus volledig, niet verbonden.
 
-   Voor meer op dit, zie het [Begrip van quarantainebeheer](../../delivery/using/understanding-quarantine-management.md).
+   For more on this, see [Understanding quarantine management](../../delivery/using/understanding-quarantine-management.md).
 
-## Verwijderen uit de bloklijst {#remove-from-block-list}
+## Verwijderen uit lijst van afgewezen personen {#remove-from-block-list}
 
-* **Een van mijn ontvangers is per ongeluk aan de bloklijst toegevoegd. Hoe verwijder ik hen uit de bloklijst zodat ik kan beginnen hen berichten opnieuw te verzenden?**
+* **Een van mijn ontvangers is per ongeluk aan de lijst van afgewezen personen toegevoegd. Hoe verwijder ik hen uit de lijst van afgewezen personen zodat ik kan beginnen hen berichten opnieuw te verzenden?**
 
    * Ga naar **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
    * Stel in de details van de corresponderende record de waarde van het **[!UICONTROL Status]** veld in op **[!UICONTROL Valid]**.
    * Sla de record op.
 
-* **Hoe kan ik te weten komen of één van mijn IPs op een bloklijst is? Hoe verwijder ik mijn IP(s) uit een bloklijst?**
+* **Hoe kan ik te weten komen of één van mijn IPs op een lijst van afgewezen personen is? Hoe verwijder ik mijn IP(s) uit een lijst van afgewezen personen?**
 
-   Om te controleren of uw IP adres op een bloklijst is, kunt u diverse websites gebruiken om het te verifiëren, zoals:
+   Om te controleren of uw IP adres op een lijst van afgewezen personen is, kunt u diverse websites gebruiken om het te verifiëren, zoals:
    * [MX-gereedschapset](https://mxtoolbox.com/)
    * [Wat is mijn IP adres](https://whatismyipaddress.com)
-   Over het algemeen, zal het resultaat van de IP adrescontrole een lijst terugkeren die details van de bloklijst en ook de naam van de website bevat die het IP adres blokkeerde.
 
-   Als u op de desbetreffende koppeling klikt, hebt u toegang tot de gegevens van de website. Vervolgens kunt u vragen dat uw website wordt verwijderd van de website die het IP-adres aan de bloklijst heeft toegevoegd.
+   Over het algemeen, zal het resultaat van de IP adrescontrole een lijst terugkeren die details van de lijst van afgewezen personen en ook de naam van de website bevat die het IP adres blokkeerde.
+
+   Als u op de desbetreffende koppeling klikt, hebt u toegang tot de gegevens van de website. Vervolgens kunt u vragen dat uw website wordt verwijderd van de website die het IP-adres aan de lijst van afgewezen personen heeft toegevoegd.
 
    >[!NOTE]
    >
