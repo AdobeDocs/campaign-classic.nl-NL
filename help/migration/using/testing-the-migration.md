@@ -11,11 +11,11 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 discoiquuid: 30e3082f-a367-4c3b-bff2-208ccf97acd4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '670'
+ht-degree: 1%
 
 ---
 
@@ -30,9 +30,9 @@ U moet over een test-/ontwikkelomgeving beschikken om migratietests uit te voere
 
 1. Stop alle ontwikkelingen in uitvoering en zorg ervoor dat ze in de productieomgeving terechtkomen.
 1. Maak een steun van het gegevensbestand van de ontwikkelomgeving.
-1. Stop alle Adobe Campagne-processen op het ontwikkelingsexemplaar.
+1. Stop alle Adobe Campaign-processen op de ontwikkelingsinstantie.
 1. Maak een back-up van de database van de productieomgeving en herstel deze als ontwikkelomgeving.
-1. Voordat u de Adobe Campaign-services start, voert u het **script voor de waarschuwing** freeinstance.jsuit, waarmee u de database kunt wissen van alle objecten die actief waren toen de back-up werd gestart.
+1. Alvorens de diensten van Adobe Campaign te beginnen, stel het **vriesinstance.js** voorzichtigheidsmanuscript in werking dat u het gegevensbestand van om het even welke voorwerpen laat ontruimen die toen de steun werd begonnen in werking.
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -45,7 +45,7 @@ U moet over een test-/ontwikkelomgeving beschikken om migratietests uit te voere
 1. Zorg ervoor dat uw back-ups correct zijn door ze te herstellen. Zorg ervoor dat u toegang hebt tot uw database, tabellen, gegevens, enzovoort.
 1. Test de migratieprocedure in de ontwikkelomgeving.
 
-   De volledige procedures worden beschreven in de sectie [Voorwaarden voor migratie naar Adobe Campagne 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
+   De volledige procedures worden beschreven in het gedeelte [Voorwaarden voor migratie naar Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
 
 1. Als de migratie van de ontwikkelomgeving succesvol is, kunt u de productieomgeving migreren.
 
@@ -55,7 +55,7 @@ U moet over een test-/ontwikkelomgeving beschikken om migratietests uit te voere
 
 >[!NOTE]
 >
->Met de opdracht Adobe Campagne-update (**na upgrade**) kunt u bronnen synchroniseren en schema&#39;s en de database bijwerken. Deze bewerking kan slechts eenmaal en alleen op de toepassingsserver worden uitgevoerd. Na het synchroniseren van middelen, laat het **postupgrade** bevel u ontdekken of de synchronisatie om het even welke fouten of waarschuwingen produceert.
+>Met de Adobe Campaign-opdracht voor bijwerken (**na upgrade**) kunt u bronnen synchroniseren en schema&#39;s en de database bijwerken. Deze bewerking kan slechts eenmaal en alleen op de toepassingsserver worden uitgevoerd. Na het synchroniseren van middelen, laat het **postupgrade** bevel u ontdekken of de synchronisatie om het even welke fouten of waarschuwingen produceert.
 
 ## Migratiehulpmiddelen {#migration-tools}
 
@@ -75,7 +75,7 @@ Met verschillende opties kunt u de impact van een migratie meten en de mogelijke
 
 >[!NOTE]
 >
->**U moet de`<instanceame>`**-instantie gebruiken: optie. We raden u niet aan de optie**-Alles **te gebruiken.
+>U moet de **-instantie gebruiken:`<instanceame>`** optie. We raden u niet aan de optie **-Alles** te gebruiken.
 
 ### -showCustomEntities en -showDeletteEntities options {#showcustomentities-and--showdeletedentities-options}
 
