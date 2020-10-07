@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: 441e80e1-0559-41fd-83e8-afdf94279e75
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +30,7 @@ De kenmerken van een schema dat verwijzingen een bestaande lijst zijn als volgt:
 
 >[!IMPORTANT]
 >
->Verwijder geen velden uit de standaardtabel voor ontvangers, zelfs niet als deze geen nut hebben. Dit kan gedragsfouten in de Adobe Campagne-database veroorzaken.
+>Verwijder geen velden uit de standaardtabel voor ontvangers, zelfs niet als deze geen nut hebben. Dit kan gedragsfouten in de Adobe Campaign-database veroorzaken.
 
 ## Het weergavekenmerk {#the-view-attribute}
 
