@@ -9,14 +9,11 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6483c3e2e9fd3a2951b2bc8bf6d8a3350361e86f
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3704'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -86,7 +83,7 @@ De sectie Privacy en toestemming is uitgebreid met gedetailleerdere informatie e
 
 De pagina Privacy Management in Campaign Classic is bijgewerkt met informatie over het veld &#39;Regulation&#39;, dat nu beschikbaar is wanneer de API wordt gebruikt waarmee het automatische privacyaanvraagproces kan worden ingesteld. [Meer informatie](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
-De overzichtspagina van het privacybeheer is bijgewerkt met informatie over de Thaise wet inzake de bescherming van persoonsgegevens (PDPA) en de Braziliaanse Lei Geral de Proteção de Dados (LGPD). [Meer informatie](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
+De overzichtspagina van privacybeheer is bijgewerkt met informatie over de Thaise wet inzake de bescherming van persoonsgegevens (PDPA) en de Braziliaanse Lei Geral de Proteção de Dados (LGPD). [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
 
 Er is informatie toegevoegd aan de logboeken van subworkflows en aan het gedrag in geval van een fout. [Meer informatie](../../workflow/using/sub-workflow.md)
 
