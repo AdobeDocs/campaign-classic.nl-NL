@@ -1,7 +1,7 @@
 ---
-title: Planner
-seo-title: Planner
-description: Planner
+title: De activiteit Planner
+seo-title: De activiteit Planner
+description: De activiteit Planner
 seo-description: null
 page-status-flag: never-activated
 uuid: e814b978-2edd-442e-9334-9633bc9ec63a
@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 093dbe8a-494f-4fe7-8614-3bf58486e34c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 23629289ac5da3f9bef01f50c452f7c761a6fa44
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
@@ -27,7 +24,7 @@ ht-degree: 0%
 
 De **Planner** is een blijvende taak die zijn overgang op de tijden activeert die door zijn programma worden gespecificeerd.
 
-De **[!UICONTROL Scheduler]** activiteit moet worden beschouwd als een geplande start. De regels voor het positioneren van de activiteit in het diagram zijn hetzelfde als voor de **[!UICONTROL Start]** activiteit. Deze activiteit moet geen binnenkomende overgang hebben.
+De **[!UICONTROL Scheduler]**-activiteit kan dus worden beschouwd als een geplande start. De regels voor het positioneren van de activiteit in het diagram zijn hetzelfde als voor de **[!UICONTROL Start]**-activiteit. Deze activiteit mag geen binnenkomende overgang hebben.
 
 ## Aanbevolen procedures {#best-practices}
 
