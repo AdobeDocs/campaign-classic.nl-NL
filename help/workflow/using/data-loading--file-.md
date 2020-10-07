@@ -1,5 +1,5 @@
 ---
-title: Gegevens laden (bestand)
+title: Data laden (bestand)
 description: Meer informatie over het laden van gegevens (bestand).
 page-status-flag: never-activated
 uuid: c064aa23-412e-49b4-a51d-b0e8ca572f2e
@@ -9,19 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: dcb5b8e8-be38-4d89-908d-f57c2413a9bc
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9c9554b83726da7a7dbc747878d7d0758e71a4d7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1051'
-ht-degree: 0%
+ht-degree: 15%
 
 ---
 
 
-# Gegevens laden (bestand){#data-loading-file}
+# Data laden (bestand){#data-loading-file}
 
 ## Gebruiken {#use}
 
@@ -43,9 +40,9 @@ U kunt een vooraf uitgevoerd proces definiëren tijdens het importeren van besta
 
 Raadpleeg voor meer informatie deze sectie: [Een bestand decoderen of decoderen voordat het wordt verwerkt](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing).
 
-## De bestandsindeling definiëren {#defining-the-file-format}
+## Defining the file format {#defining-the-file-format}
 
-Wanneer u een bestand laadt, wordt de kolomindeling automatisch gedetecteerd met de standaardparameters voor elk gegevenstype. U kunt deze standaardparameters wijzigen om de specifieke processen te specificeren die op uw gegevens moeten worden toegepast, in het bijzonder wanneer er een fout of een lege waarde is.
+Wanneer u een bestand laadt, wordt de kolomindeling automatisch gedetecteerd met de standaardparameters voor elk gegevenstype. U kunt deze standaardparameters wijzigen om de specifieke processen op te geven die op uw data moeten worden toegepast, in het bijzonder wanneer er een fout of een lege waarde is.
 
 U doet dit door **[!UICONTROL Click here to change the file format...]** in het hoofdvenster van de **[!UICONTROL Data loading (file)]** activiteit te selecteren. Het venster met de indelingsdetails wordt dan geopend.
 
@@ -57,13 +54,13 @@ Met de algemene bestandsindeling kunt u bepalen hoe de kolommen worden herkend (
 
 Met de kolomopmaak kunt u de waardeverwerking van elke kolom definiëren:
 
-* **[!UICONTROL Ignore column]**: Deze kolom wordt niet verwerkt tijdens het laden van gegevens.
-* **[!UICONTROL Data type]**: geeft het type gegevens aan dat voor elke kolom wordt verwacht.
+* **[!UICONTROL Ignore column]**: Deze kolom wordt niet verwerkt tijdens het laden van data.
+* **[!UICONTROL Data type]**: Deze geeft het type data op dat voor elke kolom wordt verwacht.
 * **[!UICONTROL Allow NULLs]**: geeft aan hoe lege waarden moeten worden beheerd.
 
-   * **[!UICONTROL Adobe Campaign default]**: genereert alleen een fout voor numerieke velden. Als dit niet het geval is, wordt een NULL-waarde ingevoegd.
-   * **[!UICONTROL Empty value allowed]**: autoriseert lege waarden. De waarde NULL wordt daarom ingevoegd.
-   * **[!UICONTROL Always populated]**: genereert een fout als een waarde leeg is.
+   * **[!UICONTROL Adobe Campaign default]**: Dit genereert alleen een fout voor numerieke velden. Als dit niet het geval is, wordt een NULL-waarde ingevoegd.
+   * **[!UICONTROL Empty value allowed]**: Dit autoriseert lege waarden. De waarde NULL wordt daarom ingevoegd.
+   * **[!UICONTROL Always populated]**: Dit genereert een fout als een waarde leeg is.
 
 * **[!UICONTROL Length]**: geeft het maximum aantal tekens voor het **gegevenstype van de tekenreeks** aan.
 * **[!UICONTROL Format]**: definieert de notatie voor tijd en datum.
@@ -75,16 +72,16 @@ Met de kolomopmaak kunt u de waardeverwerking van elke kolom definiëren:
    * **[!UICONTROL Lower case]**: alle tekens in de tekenreeks zijn in kleine letters weergegeven.
 
 * **[!UICONTROL White space management]**: Geeft aan of bepaalde spaties in een tekenreeks moeten worden genegeerd. Met de **[!UICONTROL Ignore spaces]** waarde kunnen alleen spaties aan het begin en het einde van een tekenreeks worden genegeerd.
-* **[!UICONTROL Error processings]**: definieert het gedrag als een fout optreedt.
+* **[!UICONTROL Error processings]**: Dit definieert het gedrag als een fout optreedt.
 
-   * **[!UICONTROL Ignore the value]**: de waarde wordt genegeerd. Er wordt een waarschuwing gegenereerd in het logboek voor workflowuitvoering.
-   * **[!UICONTROL Reject line]**: de gehele lijn wordt niet verwerkt.
-   * **[!UICONTROL Use a default value in case of error]**: vervangt de waarde die de fout veroorzaakt door een standaardwaarde, die op het **[!UICONTROL Default value]** gebied wordt bepaald.
+   * **[!UICONTROL Ignore the value]**: De waarde wordt genegeerd. Er wordt een waarschuwing gegenereerd in het logboek voor workflowuitvoering.
+   * **[!UICONTROL Reject line]**: De volledige regel wordt niet verwerkt.
+   * **[!UICONTROL Use a default value in case of error]**: Dit vervangt de waarde die de fout veroorzaakt door een standaardwaarde, die in het veld **[!UICONTROL Default value]** is gedefinieerd.
    * **[!UICONTROL Reject the line when there is no remapping value]**: de hele lijn wordt alleen verwerkt als een toewijzing voor de onjuiste waarde is gedefinieerd (zie de onderstaande **[!UICONTROL Mapping]** optie).
    * **[!UICONTROL Use a default value in case the value is not remapped]**: vervangt de waarde die de fout veroorzaakt door een standaardwaarde, die in het **[!UICONTROL Default value]** gebied wordt bepaald, tenzij een afbeelding voor de verkeerde waarde (zie de hieronder **[!UICONTROL Mapping]** optie) was bepaald.
 
-* **[!UICONTROL Default value]**: geeft de standaardwaarde op basis van de gekozen foutafhandeling.
-* **[!UICONTROL Mapping]**: dit veld is alleen beschikbaar in de configuratie van de kolomdetails (toegankelijk via een dubbelklik of via de opties rechts van de kolomlijst). Hiermee worden bepaalde waarden getransformeerd wanneer ze worden geïmporteerd. U kunt bijvoorbeeld &quot;three&quot; omzetten in &quot;3&quot;.
+* **[!UICONTROL Default value]**: Hiermee geeft u de standaardwaarde op op basis van de gekozen foutverwerking.
+* **[!UICONTROL Mapping]**: dit veld is alleen beschikbaar in de configuratie van de kolomdetails (toegankelijk via een dubbelklik of via de opties rechts van de kolomlijst). Hiermee worden bepaalde waarden getransformeerd wanneer ze worden geïmporteerd. U kunt bijvoorbeeld ‘three’ omzetten in ‘3’.
 
 ## Voorbeeld: Gegevens verzamelen en laden in de database {#example--collecting-data-and-loading-it-in-the-database}
 
@@ -94,7 +91,7 @@ In het volgende voorbeeld kunt u elke dag een bestand op de server verzamelen, d
 
 1. Met de bestandscollector kunt u bestanden herstellen die in een map zijn opgeslagen, afhankelijk van de opgegeven frequentie.
 
-   Het **[!UICONTROL Directory]** tabblad bevat informatie over de te herstellen bestanden. In ons voorbeeld worden alle bestanden in tekstopmaak waarvan de naam het woord &#39;klanten&#39; bevat en die zijn opgeslagen in de map tmp/Adobe/Data/files van de server, hersteld.
+   Het **[!UICONTROL Directory]** tabblad bevat informatie over de te herstellen bestanden. In ons voorbeeld worden alle bestanden in tekstopmaak waarvan de namen het woord &#39;klanten&#39; bevatten en die zijn opgeslagen in de map tmp/Adobe/Data/files van de server, hersteld.
 
    Het gebruik van de map **[!UICONTROL File collector]** wordt beschreven in de sectie [Bestandsverzamelaar](../../workflow/using/file-collector.md) .
 
@@ -108,7 +105,7 @@ In het volgende voorbeeld kunt u elke dag een bestand op de server verzamelen, d
 
    Om dit te doen, klik de **[!UICONTROL Change...]** knoop die in de lagere juiste sectie van het het uitgeven hulpmiddel wordt gevestigd en vorm het programma.
 
-   Raadpleeg [Scheduler](../../workflow/using/scheduler.md)voor meer informatie.
+   For more on this, refer to [Scheduler](../../workflow/using/scheduler.md).
 
 1. Configureer vervolgens de activiteit voor het laden van gegevens (bestand) om aan te geven hoe de verzamelde bestanden moeten worden gelezen. Selecteer hiertoe een voorbeeldbestand met dezelfde structuur als de bestanden die u wilt laden.
 
@@ -118,7 +115,8 @@ In het volgende voorbeeld kunt u elke dag een bestand op de server verzamelen, d
 
    * de eerste kolom bevat een code die samenvalt met de gebeurtenis: aankoop (meer of minder dan 3000 euro), geen aankoop of terugbetaling voor een of meer aankopen.
    * de vier volgende kolommen bevatten de voornaam, achternaam, e-mail en het rekeningnummer van de klant.
-   De indelingsconfiguratie van het te laden bestand valt samen met de configuratie die is gedefinieerd tijdens het importeren van gegevens in Adobe Campaign. For more on this, refer to this [section](../../platform/using/importing-data.md#step-2---source-file-selection).
+
+   De indelingsconfiguratie van het te laden bestand valt samen met de configuratie die is gedefinieerd tijdens het importeren van gegevens in Adobe Campaign. Raadpleeg deze [sectie](../../platform/using/importing-data.md#step-2---source-file-selection) voor meer informatie.
 
 1. Geef bij de splitsingsactiviteit de subsets op die u wilt maken, op basis van de waarde in de kolom **Gebeurtenis** .
 
