@@ -1,7 +1,7 @@
 ---
-title: Informatie over simulatie van aanbiedingen
-seo-title: Informatie over simulatie van aanbiedingen
-description: Informatie over simulatie van aanbiedingen
+title: Simulatie van aanbiedingen
+seo-title: Simulatie van aanbiedingen
+description: Simulatie van aanbiedingen
 seo-description: null
 page-status-flag: never-activated
 uuid: 3c6783a0-6bab-4c41-8101-1d926c1ac6ac
@@ -11,22 +11,22 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 discoiquuid: 0af021af-2686-4a37-97d9-6d13a851b5dd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5489e09303920bf5bd3dcd08263dc3c945d151c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 4%
 
 ---
 
 
-# Informatie over simulatie van aanbiedingen{#about-offers-simulation}
+# Simulatie van aanbiedingen{#about-offers-simulation}
 
 Met de module **Simulatie** kunt u de distributie testen van aanbiedingen die tot een categorie of omgeving behoren voordat u uw voorstel naar ontvangers verzendt.
 
 De simulatie houdt rekening met de context en de toelatingsregels die eerder op aanbiedingen van toepassing waren (verwijs naar het overzicht [van de](../../interaction/using/offer-catalog-overview.md)catalogus van de Aanbieding), evenals hun presentatieregels (verwijs naar de presentatie [van de Aanbieding van het](../../interaction/using/managing-offer-presentation.md)Beheer). Dit laat u diverse versies van uw aanbiedingsvoorstel testen en verfijnen zonder eigenlijk een aanbieding of over/onder het eisen van een doel te gebruiken, aangezien de simulatie geen effect op de gerichte ontvangers heeft.
 
-Lees de onderstaande stappen voor meer informatie over het simuleren van een aanbieding. U kunt deze [video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&ref=helpx.adobe.com)ook bekijken.
+Lees de onderstaande stappen voor meer informatie over het simuleren van een aanbieding. You can also watch this [video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com).
 
 ## Belangrijkste stappen voor het creëren van een simulatie {#main-steps-for-creating-a-simulation}
 
@@ -39,7 +39,7 @@ Voer de volgende stappen uit om een simulatie van uw aanbiedingen uit te voeren:
 1. Sla de simulatie op en bewerk deze die u zojuist hebt gemaakt.
 1. Ga naar het **[!UICONTROL Edit]** tabblad en geef de instellingen voor de uitvoering op.
 
-   Raadpleeg de [instellingen](../../interaction/using/execution-settings.md)voor Uitvoering voor meer informatie.
+   For more on this, refer to [Execution settings](../../interaction/using/execution-settings.md).
 
    ![](assets/offer_simulation_003.png)
 
@@ -66,6 +66,6 @@ Voer de volgende stappen uit om een simulatie van uw aanbiedingen uit te voeren:
 
 1. Controleer het simulatieresultaat en toon het analyserapport.
 
-   Raadpleeg [Simulatie bijhouden](../../interaction/using/simulation-tracking.md)voor meer informatie.
+   For more on this, refer to [Simulation tracking](../../interaction/using/simulation-tracking.md).
 
    ![](assets/offer_simulation_007.png)
