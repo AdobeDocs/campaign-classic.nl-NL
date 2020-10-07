@@ -1,7 +1,7 @@
 ---
-title: Ingebouwde campagnerapporten
-seo-title: Ingebouwde campagnerapporten
-description: Ingebouwde campagnerapporten
+title: Ingebouwde Campaign-rapporten
+seo-title: Ingebouwde Campaign-rapporten
+description: Ingebouwde Campaign-rapporten
 seo-description: null
 page-status-flag: never-activated
 uuid: 28c32281-51b8-419d-9f18-c7073788df13
@@ -11,26 +11,26 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: 8e4028f8-055a-435c-b226-3d8e0a352f92
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 5%
 
 ---
 
 
-# Ingebouwde campagnerapporten{#about-campaign-built-in-reports}
+# Ingebouwde Campaign-rapporten{#about-campaign-built-in-reports}
 
-In dit hoofdstuk vindt u een lijst met ingebouwde Adobe Campagne-rapporten, de inhoud en de context van deze rapporten. Met de onderstaande informatie kunt u voorkomen dat rapporten worden gemaakt die al op het platform beschikbaar zijn.
+Dit hoofdstuk bevat een lijst met ingebouwde Adobe Campaign-rapporten, de inhoud en de context ervan. Met de onderstaande informatie kunt u voorkomen dat rapporten worden gemaakt die al op het platform beschikbaar zijn.
 
 >[!NOTE]
 >
->U kunt ook leren hoe u uw eigen rapporten aan het **[!UICONTROL Reports]** tabblad kunt toevoegen. Raadpleeg deze [pagina](../../reporting/using/configuring-access-to-the-report.md#defining-the-filtering-options)voor meer informatie.
+>U kunt ook leren hoe u uw eigen rapporten aan het **[!UICONTROL Reports]** tabblad kunt toevoegen. For more information, refer to this [page](../../reporting/using/configuring-access-to-the-report.md#defining-the-filtering-options).
 
 Deze verslagen en de inhoud ervan worden gedetailleerd beschreven in de documenten met betrekking tot de functies die zij betreffen.
 
-Adobe Campaign biedt verschillende typen rapporten die u kunt openen via de console van de klant of via een internetbrowser.
+Adobe Campaign biedt verschillende typen rapporten die toegankelijk zijn via de klantenconsole of een internetbrowser.
 
 De volgende typen rapporten zijn beschikbaar:
 
@@ -42,7 +42,7 @@ U kunt tot rapporten van de homepage van de cliëntconsole, het rapportdashboard
 
 Voor toegang tot geïntegreerde campagnerapporten:
 
-1. Selecteer het **[!UICONTROL Reports]** tabblad van de Adobe Campagne-interface.
+1. Selecteer het **[!UICONTROL Reports]** tabblad van de Adobe Campaign-interface.
 
    ![](assets/reporting_access_from_home.png)
 
