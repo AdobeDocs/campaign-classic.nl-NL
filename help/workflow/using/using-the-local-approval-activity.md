@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: c143d8c3-c3ce-470c-8812-4b19cdb8afbf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1274'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ Met de **[!UICONTROL Local approval]** activiteit die in een gericht werkschema 
 
 >[!CAUTION]
 >
->Als u deze functie wilt gebruiken, moet u de module Distributed Marketing aanschaffen. Dit is een optie Campagne. Controleer uw licentieovereenkomst.
+>Als u deze functie wilt gebruiken, moet u de module Distributed Marketing aanschaffen. Dit is een optie Campagne. Controleer hiervoor uw licentieovereenkomst.
 
 Voor het instellen van dit gebruiksgeval hebben we de volgende workflow voor doelversie gemaakt:
 
@@ -64,7 +64,7 @@ Voor meer informatie over het creëren van een malplaatje van de gegevensdistrib
 
    ![](assets/local_validation_data_distribution_1.png)
 
-1. Selecteer het **[!UICONTROL General]** tabblad.
+1. Selecteer het tabblad **[!UICONTROL General]**. 
 
    ![](assets/local_validation_data_distribution_2.png)
 
@@ -100,7 +100,7 @@ Voor het instellen van dit gebruiksgeval hebben we de volgende workflow voor doe
 
 De volgende activiteiten zijn toegevoegd:
 
-* Twee **[!UICONTROL Query]** activiteiten
+* Two **[!UICONTROL Query]** activities,
 * Eén **[!UICONTROL Intersection]** activiteit
 * Eén **[!UICONTROL Split]** activiteit
 * Eén **[!UICONTROL Local approval]** activiteit
@@ -121,11 +121,11 @@ Als u niet de bevolking van de vraag wilt beperken, moet u niet de **[!UICONTROL
 
    ![](assets/local_validation_split_1.png)
 
-1. Selecteer de **[!UICONTROL Keep only the first records after sorting]** optie en klik **[!UICONTROL Next]**.
+1. Select the **[!UICONTROL Keep only the first records after sorting]** option and click **[!UICONTROL Next]**.
 
    ![](assets/local_validation_split_1bis.png)
 
-1. Voeg in de **[!UICONTROL Sort columns]** sectie het veld toe waarop de sortering wordt toegepast. Hier hebben we het **[!UICONTROL Email]** veld gekozen. Klik **[!UICONTROL Next]**.
+1. Voeg in de **[!UICONTROL Sort columns]** sectie het veld toe waarop de sortering wordt toegepast. Hier hebben we het **[!UICONTROL Email]** veld gekozen. Klik op **[!UICONTROL Next]**.
 
    ![](assets/local_validation_split_2.png)
 
@@ -147,8 +147,8 @@ Voor meer bij het vormen van de **[!UICONTROL Local approval]** activiteit, verw
 
 De volgende velden moeten worden ingevuld:
 
-1. Selecteer in de **[!UICONTROL Action to execute]** sectie de **[!UICONTROL Target approval notification]** optie.
-1. Selecteer in de **[!UICONTROL Distribution context]** sectie de **[!UICONTROL Specified in the transition]** optie.
+1. In the **[!UICONTROL Action to execute]** section, select the **[!UICONTROL Target approval notification]** option.
+1. In the **[!UICONTROL Distribution context]** section, select the **[!UICONTROL Specified in the transition]** option.
 
    Als u de beoogde populatie niet wilt beperken, selecteert u hier de **[!UICONTROL Explicit]** optie en voert u de eerder gemaakte distributiesjabloon in het **[!UICONTROL Data distribution]** veld in.
 
@@ -159,7 +159,7 @@ De door de **[!UICONTROL Local approval]** activiteit aan lokale toezichthouders
 
 ![](assets/local_validation_intro_2.png)
 
-### Wachten {#wait}
+### Wait {#wait}
 
 Met de wachtactiviteiten kunt u het starten van de tweede lokale goedkeuringsactiviteit uitstellen die de feedbackmelding voor levering verzendt. In het **[!UICONTROL Duration]** veld hebben we de **[!UICONTROL 5d]** waarde (5 dagen) ingevoerd. De acties die de ontvangers gedurende vijf dagen na de verzending van de levering uitvoeren, worden in de feedbackmelding opgenomen.
 
