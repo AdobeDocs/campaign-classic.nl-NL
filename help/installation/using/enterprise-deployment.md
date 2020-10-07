@@ -1,7 +1,7 @@
 ---
-title: Implementatie in ondernemingen
-seo-title: Implementatie in ondernemingen
-description: Implementatie in ondernemingen
+title: Zakelijke implementatie
+seo-title: Zakelijke implementatie
+description: Zakelijke implementatie
 seo-description: null
 page-status-flag: never-activated
 uuid: 2c2b5cef-86cb-4cb5-801a-ca6afeae90bb
@@ -11,16 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 066d0ac1-033c-467b-aa6c-43a97ecd8632
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1265'
+ht-degree: 0%
 
 ---
 
 
-# Implementatie in ondernemingen{#enterprise-deployment}
+# Zakelijke implementatie{#enterprise-deployment}
 
 Dit is de meest volledige configuratie. Het bouwt op de standaardconfiguratie voor grotere veiligheid en beschikbaarheid voort:
 
@@ -63,7 +63,7 @@ Hogere hardware- en beheerkosten.
 * Bounce mailbox toegankelijk via POP3,
 * Het maken van twee DNS-aliassen op het taakverdelingsmechanisme:
 
-   * de eerste die aan het publiek voor het volgen van en het richten aan het taakverdelingsmechanisme op een virtueel IP adres (VIP) wordt blootgesteld en die dan aan de twee frontale servers wordt verdeeld;
+   * de eerste die aan het publiek wordt blootgesteld voor het volgen en aanwijzen van het taakverdelingsmechanisme op een virtueel IP adres (VIP) en die dan aan de twee frontale servers wordt verdeeld;
    * de tweede die aan de interne gebruikers voor toegang via de console wordt blootgesteld en aan een taakverdelingsmechanisme op een virtueel IP adres (VIP) richt en die dan aan de twee toepassingsservers wordt verdeeld.
 
 * Firewall geconfigureerd voor het openen van STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 voor Oracle, 5432 voor PostgreSQL, enz.) poorten. Voor meer informatie, verwijs naar sectie [Toegang](../../installation/using/network-configuration.md#database-access)van het Gegevensbestand.
@@ -87,11 +87,11 @@ In de volgende voorbeelden zijn de parameters van de instantie:
 
 De stappen voor het installeren van de eerste server zijn:
 
-1. Voer de installatieprocedure voor de Adobe Campagneserver uit: **nlserver** -pakket in Linux of **setup.exe** in Windows.
+1. Volg de installatieprocedure voor de Adobe Campaign-server: **Server** -pakket in Linux of **setup.exe** in Windows.
 
    Raadpleeg voor meer informatie de [vereisten voor de installatie van Campagne in Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) en [de vereisten voor de installatie van Campagne in Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
-1. Zodra de server van de Campagne van Adobe wordt geïnstalleerd, begin de toepassingsserver (Web) gebruikend het bevel **nlserver web -tomcat** (de module van het Web laat u toe om Tomcat op standalone de serverwijze van het Web te beginnen luisterend op haven 8080) en ervoor te zorgen Tomcat correct begint:
+1. Zodra de server van Adobe Campaign wordt geïnstalleerd, begin de toepassingsserver (Web) gebruikend het bevel **nlserver web -tomcat** (de module van het Web laat u toe om Tomcat op standalone de serverwijze van het Web te beginnen luisterend op haven 8080) en ervoor te zorgen begint Tomcat correct:
 
    ```
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -103,14 +103,14 @@ De stappen voor het installeren van de eerste server zijn:
 
    >[!NOTE]
    >
-   >De eerste keer wordt de module van het Web uitgevoerd leidt het tot de **config-default.xml** en **serverConf.xml** - dossiers in de **conf** folder onder de installatiemap. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+   >De eerste keer wordt de module van het Web uitgevoerd het leidt tot de **config-default.xml** en **serverConf.xml** dossiers in de **conf** folder onder de installatiemap. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
    Druk op **Ctrl+C** om de server te stoppen.
 
    Raadpleeg de volgende secties voor meer informatie hierover:
 
-   * Voor Linux: [Eerste start-up van de server](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
-   * Voor Windows: [Eerste start-up van de server](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
+   * Voor Linux: [Eerste start van de server](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
+   * Voor Windows: [Eerste start van de server](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
 
 1. Wijzig het **interne** wachtwoord met de opdracht:
 
@@ -118,7 +118,7 @@ De stappen voor het installeren van de eerste server zijn:
    nlserver config -internalpassword
    ```
 
-   Raadpleeg de [interne id](../../installation/using/campaign-server-configuration.md#internal-identifier)voor meer informatie hierover.
+   For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
 1. Creeer de **demo** instantie met de DNS maskers voor het volgen (in dit geval, **tracking.campagne.net**) en toegang tot cliëntconsoles (in dit geval, **console.campagne.net**). Er zijn twee manieren om dit te doen:
 
@@ -156,7 +156,7 @@ De stappen voor het installeren van de eerste server zijn:
    </serverconf>
    ```
 
-   Raadpleeg [Processen](../../installation/using/campaign-server-configuration.md#enabling-processes)inschakelen voor meer informatie.
+   For more on this, refer to [Enabling processes](../../installation/using/campaign-server-configuration.md#enabling-processes).
 
 1. Bewerk het bestand **serverConf.xml** en geef het leveringsdomein op. Geef vervolgens de IP-adressen (of de host) van de DNS-servers op die door de MTA-module worden gebruikt om DNS-vragen van het MX-type te beantwoorden.
 
@@ -174,14 +174,14 @@ De stappen voor het installeren van de eerste server zijn:
 
    Raadpleeg de volgende secties voor meer informatie hierover:
 
-   * Voor Linux: Beschikbaarheid van [clientconsole voor Linux](../../installation/using/client-console-availability-for-linux.md)
-   * Voor Windows: Beschikbaarheid van [clientconsole voor Windows](../../installation/using/client-console-availability-for-windows.md).
+   * Voor Linux: [Beschikbaarheid van clientconsole voor Linux](../../installation/using/client-console-availability-for-linux.md)
+   * Voor Windows: [Beschikbaarheid van clientconsole voor Windows](../../installation/using/client-console-availability-for-windows.md).
 
-1. Start de Adobe Campagne-server (**Net start Nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux) en voer de PDump **van de** opdrachtserver opnieuw uit om de aanwezigheid van alle ingeschakelde modules te controleren.
+1. Start de Adobe Campaign-server (**Net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux) en voer de PDump **van de** opdrachtserver opnieuw uit om te controleren of alle ingeschakelde modules aanwezig zijn.
 
    >[!NOTE]
    >
-   >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl start nlserver**
+   >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systeemserver voor opstarten**
 
 
    ```
@@ -195,7 +195,7 @@ De stappen voor het installeren van de eerste server zijn:
    web@default (28671) - 40.5 MB
    ```
 
-   Met deze opdracht weet u ook de versie en het buildnummer van de Adobe Campagne-server die op de computer is geïnstalleerd.
+   Met deze opdracht weet u ook de versie en het buildnummer van de Adobe Campaign-server die op de computer is geïnstalleerd.
 
 1. Test de **webmodule** van de server met de URL: [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test).
 
@@ -207,14 +207,14 @@ De stappen voor het installeren van de eerste server zijn:
 
    Raadpleeg de volgende secties voor meer informatie hierover:
 
-   * Voor Linux: Beschikbaarheid van [clientconsole voor Linux](../../installation/using/client-console-availability-for-linux.md)
-   * Voor Windows: Beschikbaarheid van [clientconsole voor Windows](../../installation/using/client-console-availability-for-windows.md)
+   * Voor Linux: [Beschikbaarheid van clientconsole voor Linux](../../installation/using/client-console-availability-for-linux.md)
+   * Voor Windows: [Beschikbaarheid van clientconsole voor Windows](../../installation/using/client-console-availability-for-windows.md)
 
 ### De toepassingsserver 2 installeren en configureren {#installing-and-configuring-the-application-server-2}
 
 Voer de volgende stappen uit:
 
-1. Installeer de Adobe Campagneserver.
+1. Installeer de Adobe Campaign-server.
 1. Kopieer de bestanden van de instantie die u hebt gemaakt naar toepassingsserver 1.
 
    Wij houden de zelfde instantienaam zoals toepassingsserver 1.
@@ -244,7 +244,7 @@ Voer de volgende stappen uit:
    </serverconf>
    ```
 
-   Raadpleeg [Processen](../../installation/using/campaign-server-configuration.md#enabling-processes)inschakelen voor meer informatie.
+   For more on this, refer to [Enabling processes](../../installation/using/campaign-server-configuration.md#enabling-processes).
 
 1. Bewerk het bestand **serverConf.xml** en vul de DNS-configuratie van de MTA-module in:
 
@@ -258,12 +258,12 @@ Voer de volgende stappen uit:
 
    Raadpleeg de configuratie [van de](../../installation/using/campaign-server-configuration.md)Campagneserver voor meer informatie hierover.
 
-1. Start de Adobe Campagne-servers.
+1. Start de Adobe Campaign-servers.
 
    Raadpleeg de volgende secties voor meer informatie hierover:
 
-   * Voor Linux: [Eerste start-up van de server](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
-   * Voor Windows: [Eerste start-up van de server](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
+   * Voor Linux: [Eerste start van de server](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
+   * Voor Windows: [Eerste start van de server](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
 
 ### De frontservers installeren en configureren {#installing-and-configuring-the-frontal-servers}
 
@@ -271,11 +271,11 @@ Installatie- en configuratieprocedures zijn op beide computers identiek.
 
 De stappen zijn als volgt:
 
-1. Installeer de Adobe Campaign-server,
+1. Installeer de Adobe Campaign-server.
 1. Voldoe aan de procedure van de de serverintegratie van het Web (IIS, Apache) die in de volgende secties wordt beschreven:
 
-   * Voor Linux: [Integratie in een server van het Web voor Linux](../../installation/using/integration-into-a-web-server-for-linux.md),
-   * Voor Windows: [Integratie in een server van het Web voor Vensters](../../installation/using/integration-into-a-web-server-for-windows.md).
+   * For Linux: [Integration into a Web server for Linux](../../installation/using/integration-into-a-web-server-for-linux.md),
+   * For Windows: [Integration into a Web server for Windows](../../installation/using/integration-into-a-web-server-for-windows.md).
 
 1. Kopieer de bestanden **config-demo.xml** en **serverConf.xml** die tijdens de installatie zijn gemaakt. Activeer in het bestand **config-demo.xml** het **trackinglogd** -proces en deactiveer de **mta**-, **inmail**-, **wfserver** **** - en-processen.
 1. Bewerk het bestand **serverConf.xml** en vul de overtollige trackingservers in de parameters van de omleiding in:
@@ -301,8 +301,8 @@ De stappen zijn als volgt:
 
    Raadpleeg de volgende secties voor meer informatie hierover:
 
-   * Voor Linux: De server van het Web [lanceren en de configuratie](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)testen,
-   * Voor Windows: De server van het Web [lanceren en het testen van de configuratie](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration).
+   * Voor Linux: [De webserver starten en de configuratie](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)testen,
+   * Voor Windows: [Start de webserver en test de configuratie](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration).
 
-1. Start de Adobe Campagneserver.
+1. Start de Adobe Campaign-server.
 
