@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
+source-git-commit: 3b6cfe05b851843f5d886fcccbe114ff7f0b6611
+workflow-type: tm+mt
+source-wordcount: '2185'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +57,7 @@ Dit verslag bevat informatie over de leveringsproductie van het gehele platform 
 
 ![](assets/s_ncs_user_report_toolbar.png)
 
-U kunt de weergegeven waarden configureren door de tijdschaal te wijzigen: Weergave van 1 uur, weergave van 3 uur, weergave van 24 uur, enz. Klik **[!UICONTROL Refresh]** om uw selectie te bevestigen.
+U kunt de weergegeven waarden configureren door de tijdschaal te wijzigen: Weergave van 1 uur, weergave van 3 uur, weergave van 24 uur, enz. Klik op **[!UICONTROL Refresh]** om uw selectie te bevestigen.
 
 ## Gebruikersactiviteiten {#user-activities}
 
@@ -68,7 +71,7 @@ De volgende opties zijn beschikbaar:
 * **[!UICONTROL Clicks]** : Het totale aantal klikken op koppelingen in leveringen. Er wordt geen rekening gehouden met klikken op abonnementkoppelingen en spiegelpagina&#39;s.
 * **[!UICONTROL Transactions]** : Het totale aantal transacties nadat een bericht is ontvangen. Om een transactie in aanmerking te nemen, moet een webtrackingtag van het transactietype in de overeenkomstige Web-pagina worden opgenomen. Webtracking-configuratie wordt in [deze sectie](../../configuration/using/about-web-tracking.md)weergegeven.
 
-## Niet-te leveren producten en bedragen {#non-deliverables-and-bounces}
+## Niet-leverbare items en niet-bezorgingen {#non-deliverables-and-bounces}
 
 Dit verslag geeft een overzicht van de niet-te leveren posten en een uitsplitsing van de bedragen per internetdomein.
 
@@ -102,7 +105,7 @@ De volgende indicatoren worden gebruikt:
 
    >[!NOTE]
    >
-   >Deze indicator heeft alleen betrekking op leveringen op mobiele kanalen. Zie [deze sectie](../../delivery/using/sms-channel.md)voor meer informatie.
+   >Deze indicator heeft alleen betrekking op leveringen op mobiele kanalen. Raadpleeg [deze sectie](../../delivery/using/sms-channel.md) voor meer informatie.
 
    U kunt elke regel van de waardetabel openen door op het `[+]` symbool te klikken. Voor elk fouttype kunt u de indeling van foutberichten per domein weergeven.
 
@@ -124,7 +127,7 @@ U kunt elke regel van de waardetabel openen door op het symbool [+] te klikken. 
 
 >[!NOTE]
 >
->De domeinnamen die in dit rapport worden weergegeven, worden op kubusniveau gedefinieerd. Als u deze waarden wilt wijzigen, bewerkt u de **[!UICONTROL Delivery logs (broadlogrcp)]** kubus. Zie [deze sectie](../../reporting/using/about-cubes.md)voor meer informatie. De **[!UICONTROL Others]** categorie bevat domeinnamen die niet tot een bepaalde klasse behoren.
+>De domeinnamen die in dit rapport worden weergegeven, worden op kubusniveau gedefinieerd. Als u deze waarden wilt wijzigen, bewerkt u de **[!UICONTROL Delivery logs (broadlogrcp)]** kubus. Raadpleeg [deze sectie](../../reporting/using/about-cubes.md) voor meer informatie. De **[!UICONTROL Others]** categorie bevat domeinnamen die niet tot een bepaalde klasse behoren.
 
 ## Browsers {#browsers}
 
@@ -161,11 +164,11 @@ De **[!UICONTROL Breakdown per version]** grafiek geeft de uitsplitsing van bezo
 In de waardetabel worden de volgende indicatoren gebruikt:
 
 * **[!UICONTROL Global rate]** : Dit percentage geeft de uitsplitsing van bezoekers per versie weer ten opzichte van het totale aantal bezoekers (in alle browsers).
-* **[!UICONTROL Relative rate]** : Dit percentage geeft de uitsplitsing van bezoekers per versie weer in vergelijking met het totale aantal bezoekers (in deze browser).
+* **[!UICONTROL Relative rate]** : Deze frequentie geeft de uitsplitsing van bezoekers per versie weer in vergelijking met het totale aantal bezoekers (in deze browser).
 
 ### Delen naar sociale netwerken {#sharing-to-social-networks}
 
-Met virale marketing kunnen ontvangers gegevens delen met hun contactnetwerk: ze kunnen een koppeling naar hun profiel toevoegen (Facebook, Twitter, enz.) of stuur een bericht naar een vriend. Elk aandeel en elke toegang tot gedeelde informatie wordt gevolgd binnen de levering. Zie [deze rubriek](../../delivery/using/viral-and-social-marketing.md)voor meer informatie over het op de markt brengen van virussen.
+Met virale marketing kunnen ontvangers gegevens delen met hun contactnetwerk: ze kunnen een koppeling naar hun profiel toevoegen (Facebook, Twitter, enz.) of stuur een bericht naar een vriend. Elk aandeel en elke toegang tot gedeelde informatie wordt gevolgd binnen de levering. For more information on viral marketing, refer to [this section](../../delivery/using/viral-and-social-marketing.md).
 
 Dit rapport toont de uitsplitsing van gedeelde en geopende berichten per sociaal netwerk (Facebook, Twitter, enz.) en/of per e-mail.
 
@@ -176,7 +179,7 @@ Dit rapport toont de uitsplitsing van gedeelde en geopende berichten per sociaal
 In de statistieken van de e-maillevering, worden twee waarden getoond:
 
 * **[!UICONTROL Number of messages to be delivered]** : Het totale aantal berichten dat tijdens leveringsanalyse wordt verwerkt.
-* **[!UICONTROL Number of successful deliveries]** :Aantal berichten dat is verwerkt.
+* **[!UICONTROL Number of successful deliveries]** : Aantal berichten dat is verwerkt.
 
 **[!UICONTROL Sharing activities and mail open statistics]**
 
@@ -202,7 +205,7 @@ Deze sectie omvat twee grafieken die de indeling van de deelactiviteiten vertege
 
 Dit rapport laat de evolutie zien van aandelen in sociale netwerken (Facebook, Twitter, e-mail, enz.) op tijd.
 
-Zie [deze rubriek](../../delivery/using/viral-and-social-marketing.md)voor meer informatie over het op de markt brengen van virussen.
+For more information on viral marketing, refer to [this section](../../delivery/using/viral-and-social-marketing.md).
 
 ![](assets/s_ncs_user_social_report2.png)
 
@@ -259,7 +262,7 @@ Met dit rapport kunt u abonnementen op informatieservices controleren. Er worden
 
 Het kan voor een abonnement worden getoond door de knoop van de homepage of de ontdekkingsreiziger te klikken. **[!UICONTROL Profiles and targets > Services and subscriptions]** Selecteer het gewenste abonnement en klik op het **[!UICONTROL Reports]** tabblad. Het **[!UICONTROL Subscriptions tracking]** rapport is standaard beschikbaar. Het laat u de abonnement en unsubscription tendensen en het loyaliteitstarief over een periode zien. U kunt de representatie van deze gegevens configureren via de vervolgkeuzelijst. Klik **[!UICONTROL Refresh]** om de geselecteerde configuratie te bevestigen.
 
-Raadpleeg [deze pagina](../../delivery/using/managing-subscriptions.md)voor meer informatie.
+For further information, refer to [this page](../../delivery/using/managing-subscriptions.md).
 
 Het **[!UICONTROL Number subscribed to date]** geeft het totale aantal personen aan dat momenteel is geabonneerd.
 
@@ -308,4 +311,4 @@ Het aantal openingen komt overeen met het totale aantal geopende berichten. E-ma
 
 >[!NOTE]
 >
->Browsernamen en namen van besturingssystemen maken deel uit van de informatie die door de gebruikersagent van de browser is verzonden en waarnaar de nagel is geopend. Adobe Campagne leidt het type apparaat af op basis van de apparaatgegevens.
+>De namen van de browser en het besturingssysteem maken deel uit van de informatie die door de gebruikersagent van de browser is verzonden en waarnaar het bericht is geopend. Adobe Campaign brengt het type apparaat af op basis van de apparaatgegevens.
