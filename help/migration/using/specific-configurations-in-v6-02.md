@@ -11,11 +11,11 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 discoiquuid: 87a6cbda-54a6-4dae-8224-e06dc217f4fc
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 4%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 In de volgende sectie wordt beschreven welke aanvullende configuratie is vereist voor het migreren van versie 6.02. U zou ook de montages moeten vormen die in de [Algemene configuratiesectie](../../migration/using/general-configurations.md) worden gedetailleerd.
 
-## Webtoepassingen {#web-applications}
+## Webapplicaties {#web-applications}
 
 Als u migreert op basis van versie 6.02, worden mogelijk foutlogboeken weergegeven met betrekking tot webtoepassingen van het overzichtstype. Voorbeelden van foutberichten:
 
@@ -50,7 +50,7 @@ Als u deze webtoepassingen hebt gewijzigd en deze wilt blijven gebruiken in v7, 
 >
 >Als u v6.02-webtoepassingen van het overzichtstype wilt blijven gebruiken, moet u de optie **allowSQLInjection** activeren in uw verschillende beveiligingszones voordat de upgrade wordt uitgevoerd. Raadpleeg [webtoepassingen](#web-applications).
 
-Na een migratie van versie 6.02 wordt de startpagina van Adobe Campaign v6.02 niet meer weergegeven, maar is deze nog steeds toegankelijk en compatibel met Adobe Campaign v7.
+Na een migratie van versie 6.02 wordt de Adobe Campaign v6.02-startpagina niet meer weergegeven, maar is deze nog steeds toegankelijk en compatibel met Adobe Campaign v7.
 
 Als u de v6.02-startpagina wilt blijven gebruiken, moet u na de migratie een pakket voor &quot;compatibiliteit&quot; installeren.
 
@@ -66,7 +66,7 @@ sessionTokenOnly="true"
 
 Deze optie wijzigt de veiligheidsniveaus om interfacecompatibiliteit te verzekeren.
 
-Nadat het pakket is geïnstalleerd, wordt de startpagina van Adobe Campagne v7 vervangen door uw oude v6.02-startpagina, compleet met de algemene configuraties van v7 (blauwe webpaginabanner).
+Nadat het pakket is geïnstalleerd, wordt de Adobe Campaign v7-startpagina vervangen door uw oude v6.02-startpagina, compleet met de algemene configuraties van v7 (blauwe webpaginabanner).
 
 ![](assets/dashboards.png)
 
