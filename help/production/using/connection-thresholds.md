@@ -1,7 +1,7 @@
 ---
-title: Verbindingsdrempels
-seo-title: Verbindingsdrempels
-description: Verbindingsdrempels
+title: Drempelwaarden voor verbinding
+seo-title: Drempelwaarden voor verbinding
+description: Drempelwaarden voor verbinding
 seo-description: null
 page-status-flag: never-activated
 uuid: a4b6959a-0f5b-41a2-b4c3-d7d6613d1a18
@@ -11,16 +11,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: f3db77db-94cc-4d75-a59b-2dddce776759
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 5%
 
 ---
 
 
-# Verbindingsdrempels{#connection-thresholds}
+# Drempelwaarden voor verbinding{#connection-thresholds}
 
 Voor zwaar geladen servers, zou de verbindingsdrempel kunnen worden overschreden. Hoe dan ook, het is nuttig om te weten te komen waarom.
 
@@ -28,9 +28,9 @@ Er zijn drie verschillende drempels:
 
 1. De verbindingsdrempel van het Web, die in uw Webserver wordt gevormd. Neem contact op met de systeembeheerder om het bestand te wijzigen.
 1. De drempel voor databaseverbinding. Neem contact op met de databasebeheerder om deze te wijzigen.
-1. De verbindingsdrempel voor Adobe Campagne, die op twee plaatsen beschikbaar is:
+1. De Adobe Campaign-verbindingsdrempel, beschikbaar op twee plaatsen:
 
-   * Tomcat-zijde: alle query&#39;s die daadwerkelijk op de Adobe Campaign Tomcat-client worden ontvangen.
+   * Tomcat-zijde: alle vragen die daadwerkelijk op de Adobe Campaign Tomcat-client aankomen.
 
       Deze drempelwaarde is geconfigureerd in het bestand **nl6/tomcat-7/conf/server.xml** . Het **maxThreads** attribuut laat u de drempel van het aantal vragen verhogen die tegelijkertijd worden verwerkt. Het kan bijvoorbeeld worden gewijzigd in 250.
 
@@ -46,7 +46,7 @@ Er zijn drie verschillende drempels:
                   unpackWARs="true" autoDeploy="true">
       ```
 
-   * Database: reeks van alle verbindingen die tezelfdertijd op het gegevensbestand door een proces worden geopend.
+   * Database: reeks van alle verbindingen opent tezelfdertijd op het gegevensbestand door een proces.
 
       Deze drempelwaarde is geconfigureerd in het bestand **nl6/conf/serverConf.xml**. De **attributen maxCnx** die in **datasource pool** worden gevestigd laten u de drempel van gelijktijdig verwerkte vragen verhogen.
 
