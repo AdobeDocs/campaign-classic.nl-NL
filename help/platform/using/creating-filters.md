@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 discoiquuid: 066e730b-2527-4257-b11f-2e73f746a8a5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6d63a43bdcf1c63b2ada240e7e15db8a5dfcfe11
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1980'
 ht-degree: 0%
@@ -120,7 +117,7 @@ Voer de volgende stappen uit om een **eenvoudig filter** te maken:
 
 1. Als u het filter wilt activeren, drukt u op Enter op het toetsenbord of klikt u op de groene pijl rechts van de filtervelden.
 
-Als het veld waarop u de gegevens wilt filteren niet in de vorm van het profiel wordt weergegeven, kunt u het veld toevoegen in de weergegeven kolommen en vervolgens op die kolom filteren. Om dit te doen,
+Als het veld waarop u de gegevens wilt filteren niet in de vorm van het profiel wordt weergegeven, kunt u het veld toevoegen in de weergegeven kolommen en vervolgens op die kolom filteren. Dit doet u als volgt,
 
 1. Klik op het **[!UICONTROL Configure the list]** pictogram.
 
@@ -142,7 +139,7 @@ Als het veld waarop u de gegevens wilt filteren niet in de vorm van het profiel 
 
 Voer de volgende stappen uit om een **geavanceerd filter** te maken:
 
-1. Klik op de **[!UICONTROL Filters]** knop en selecteer **[!UICONTROL Advanced filter...]**.
+1. Click the **[!UICONTROL Filters]** button and select **[!UICONTROL Advanced filter...]**.
 
    ![](assets/filters_recipient_create_adv_filter.png)
 
@@ -279,8 +276,8 @@ De vooraf gedefinieerde filters zijn:
    <td> Hiermee selecteert u ontvangers die in de afgelopen maanden ten minste x maal op een levering hebben geklikt.<br /> </td> 
   </tr> 
   <tr> 
- <td> E-mailadres in de bloklijst<br /> </td> 
-    <td> Hiermee selecteert u ontvangers van wie het e-mailadres in de bloklijst staat.<br/> </td>
+ <td> E-mailadres op de lijst van afgewezen personen<br /> </td> 
+    <td> Hiermee selecteert u ontvangers van wie het e-mailadres zich op de lijst van afgewezen personen bevindt.<br/> </td>
   </tr> 
   <tr> 
    <td> Gegarandeerd e-mailadres<br /> </td> 
@@ -373,7 +370,7 @@ Klik op het **[!UICONTROL Settings]** tabblad voor toegang tot de volgende optie
 
 * **[!UICONTROL Default filter for the associated document type]**: met deze optie kunt u dit filter standaard voorstellen in de editor van de lijsten waarop de sortering betrekking heeft.
 
-   Het **[!UICONTROL By name or login]** filter wordt bijvoorbeeld toegepast op operatoren. Deze optie is geselecteerd en het filter wordt dus altijd aangeboden in alle operatorlijsten.
+   Het **[!UICONTROL By name or login]** filter wordt bijvoorbeeld toegepast op operatoren. Deze optie is geselecteerd en het filter wordt daarom altijd aangeboden in alle operatorlijsten.
 
 * **[!UICONTROL Filter shared with other operators]**: Met deze optie kunt u het filter beschikbaar maken voor alle andere operatoren in de huidige database.
 * **[!UICONTROL Use parameter entry form]**: Met deze optie kunt u de filtervelden definiëren die boven de lijst worden weergegeven wanneer dit filter wordt geselecteerd. Met deze velden kunt u de filterinstellingen definiëren. Dit formulier moet met de **[!UICONTROL Form]** knop in XML-indeling worden ingevoerd. Het vooraf geconfigureerde filter, dat beschikbaar is in de lijst met ontvangers, geeft bijvoorbeeld een filterveld weer waarmee u de levering kunt selecteren waarop het filter is gericht. **[!UICONTROL Recipients who have opened]**
