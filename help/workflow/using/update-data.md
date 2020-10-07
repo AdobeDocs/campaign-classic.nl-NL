@@ -1,7 +1,7 @@
 ---
-title: Gegevens bijwerken
-seo-title: Gegevens bijwerken
-description: Gegevens bijwerken
+title: Data bijwerken
+seo-title: Data bijwerken
+description: Data bijwerken
 seo-description: null
 page-status-flag: never-activated
 uuid: 5f3ab7c8-175a-4b06-a50c-edc97b226e3c
@@ -11,19 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: c94ce5b7-aa8a-4ea2-845d-68c9c7dc2a7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '845'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Gegevens bijwerken{#update-data}
+# Data bijwerken{#update-data}
 
 Een **update van het gegevenstype** voert een massa-update van de gebieden in het gegevensbestand uit.
 
@@ -35,7 +32,7 @@ In het **[!UICONTROL Operation type]** veld kunt u kiezen welk proces wordt uitg
 * **[!UICONTROL Insert]**: alleen gegevens toevoegen.
 * **[!UICONTROL Update]**: alleen gegevens bijwerken.
 * **[!UICONTROL Update and merge collections]**: gegevens bijwerken en een primaire record kiezen, en vervolgens elementen koppelen die zijn gekoppeld aan de duplicaten in deze primaire record. Duplicaten kunnen vervolgens worden verwijderd zonder weeselementen in bijlage te maken.
-* **[!UICONTROL Delete]**: gegevens verwijderen.
+* **[!UICONTROL Delete]**: Data verwijderen.
 
 ![](assets/s_advuser_update_data_1.png)
 
@@ -63,7 +60,7 @@ U kunt het **[!UICONTROL Insert]** pictogram ook gebruiken om handmatig de datab
 
 ![](assets/s_advuser_update_data_3.png)
 
-Selecteer alle velden die u wilt bijwerken en voeg, indien nodig, voorwaarden toe afhankelijk van de update. Hiervoor gebruikt u de **[!UICONTROL Taken into account if]** kolom. De voorwaarden worden na elkaar toegepast en in overeenstemming met de volgorde in de lijst. Gebruik de pijlen aan de rechterkant om de volgorde van updates te wijzigen.
+Selecteer alle velden die u wilt bijwerken en voeg, indien nodig, voorwaarden toe afhankelijk van de update. Hiervoor gebruikt u de kolom **[!UICONTROL Taken into account if]**. De voorwaarden worden na elkaar toegepast en in overeenstemming met de volgorde in de lijst. Gebruik de pijlen aan de rechterkant om de volgorde van updates te wijzigen.
 
 U kunt hetzelfde doelveld meerdere keren gebruiken.
 
@@ -110,7 +107,7 @@ Door gegevens bij te werken en verzamelingen samen te voegen, kunt u de gegevens
 
 1. Selecteer de verzamelingen die u wilt verplaatsen naar de primaire record en de velden die u wilt bijwerken.
 
-   Ga de regels in die op deze van toepassing zijn zodra één of veelvoudige secundaire verslagen worden geïdentificeerd. Hiervoor kunt u de Expression Builder gebruiken. For more on this, refer to this [section](../../platform/using/defining-filter-conditions.md#building-expressions). Bijvoorbeeld door op te geven dat dit de meest recente bijgewerkte waarde is van alle verschillende records die moeten worden bewaard.
+   Ga de regels in die op deze van toepassing zijn zodra één of veelvoudige secundaire verslagen worden geïdentificeerd. Hiervoor kunt u de Expression Builder gebruiken. Raadpleeg deze [sectie](../../platform/using/defining-filter-conditions.md#building-expressions) voor meer informatie. Bijvoorbeeld door op te geven dat dit de meest recente bijgewerkte waarde is van alle verschillende records die moeten worden bewaard.
 
    Dan ga de voorwaarden in om met de regel rekening te houden.
 
