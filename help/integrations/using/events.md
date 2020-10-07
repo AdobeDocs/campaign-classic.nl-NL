@@ -1,7 +1,7 @@
 ---
-title: Integratie configureren
-seo-title: Integratie configureren
-description: Integratie configureren
+title: De integratie configureren
+seo-title: De integratie configureren
+description: De integratie configureren
 seo-description: null
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
@@ -11,14 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f70468e3dd7003a18812d07669f10c561e8bef7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -58,7 +55,7 @@ Start opnieuw [!DNL pipelined] nadat u de JS hebt bewerkt.
 De [!DNL trigger] gegevens worden doorgegeven aan de JS-functie. Het heeft XML-indeling.
 
 * Het **[!UICONTROL @triggerId]** kenmerk bevat de naam van het [!DNL trigger]object.
-* Het element **Verrijdingen** in JSON-indeling bevat de gegevens die door Analytics zijn gegenereerd en is gekoppeld aan de trigger.
+* Het element **enrichments** in JSON-indeling bevat de gegevens die door Analytics zijn gegenereerd en is gekoppeld aan de trigger.
 * **[!UICONTROL @offset]** is de &quot;wijzer&quot;aan het bericht. Het wijst op de orde van het bericht binnen de rij.
 * **[!UICONTROL @partitio]**n is een container van berichten binnen de rij. De verschuiving is relatief ten opzichte van een partitie. <br>De wachtrij bevat ongeveer 15 partities.
 
@@ -82,7 +79,7 @@ Bijvoorbeeld in een trigger van LogoUpload_uploading_Visits:
 
 * **[!UICONTROL eVar01]** kan de Shopper-id bevatten die wordt gebruikt om te combineren met campagneontvangers. Het is in het formaat van het Koord. <br>U moet de Shopper-id vinden, de primaire sleutel.
 
-* **[!UICONTROL timeGMT]** kan de tijd van de trigger aan de Analytics-zijde bevatten. De notatie is UTC Epoch (seconden sinds 01/01/1970 UTC).
+* **[!UICONTROL timeGMT]** kan de tijd van de trigger aan de zijde Analytics bevatten. De notatie is UTC Epoch (seconden sinds 01/01/1970 UTC).
 
 Voorbeeld:
 
@@ -207,10 +204,10 @@ Hier volgt een voorbeeldschemacode voor deze tabel:
 | data | Memo | Gegevens activeren | De volledige inhoud van triggergegevens in XML-indeling. Voor foutopsporing en controle. |
 | triggerType | Tekenreeks 50 | TriggerType | De naam van de trigger. Identificeert het gedrag van de klant op de website. |
 | shopper_id | String 32 | shopper_id | De interne id van de klant. Wordt ingesteld door de afstemmingsworkflow. Als nul, betekent het dat de klant in Campaign onbekend is. |
-| shopper_key | Lang | shopper_key | De externe id van de klant zoals vastgelegd door Analytics. |
+| shopper_key | Lang | shopper_key | De externe id van de klant, zoals vastgelegd door Analytics. |
 | gemaakt | Datumtijd | Gemaakt | De tijd waarop de gebeurtenis in Campagne werd gecreeerd. |
 | lastModified | Datumtijd | Laatst gewijzigd | De laatste keer dat de gebeurtenis werd gewijzigd in Adobe. |
-| timeGMT | Datumtijd | Tijdstempel | Het tijdstip waarop de gebeurtenis in Analytics is gegenereerd. |
+| timeGMT | Datumtijd | Tijdstempel | De tijd waarop de gebeurtenis in Analytics is gegenereerd. |
 
 ### Gebeurtenissen weergeven {#display-events}
 
