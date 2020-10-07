@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 discoiquuid: 667746cb-b553-4a71-8523-6b2695047ab6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 62b2f1f6cfcaadd10880d428b8b94d73d2addcdb
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '817'
+ht-degree: 2%
 
 ---
 
@@ -38,7 +38,7 @@ Zodra het is bewaard, kan dit rapport worden opnieuw gebruikt om andere analyser
 
 ![](assets/s_ncs_user_report_wizard_08a.png)
 
-Als u wijzigingen in dit rapport wilt aanbrengen, bewerkt u het **[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]** knooppunt van de Adobe Campagne-structuur (of de eerste map van het type &#39;Reports&#39; waarvoor de operator bewerkingsrechten heeft). Voor meer op dit, verwijs naar het [Vormen van de lay-out van een beschrijvend analyserapport](#configuring-the-layout-of-a-descriptive-analysis-report).
+Als u wijzigingen wilt aanbrengen in dit rapport, bewerkt u het **[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]** knooppunt van de Adobe Campaign-structuur (of de eerste map van het type &#39;Reports&#39; waarvoor de operator bewerkingsrechten heeft). Voor meer op dit, verwijs naar het [Vormen van de lay-out van een beschrijvend analyserapport](#configuring-the-layout-of-a-descriptive-analysis-report).
 
 ## Aanvullende instellingen voor analyserapport {#analysis-report-additional-settings}
 
@@ -50,7 +50,7 @@ Deze opties zijn hetzelfde als standaardrapporten en worden in [deze pagina](../
 
 ## De lay-out van een beschrijvend analyserapport configureren {#configuring-the-layout-of-a-descriptive-analysis-report}
 
-U kunt de weergave en lay-out van uw gegevens aanpassen in de grafieken en tabellen van de beschrijvende analyse. Alle opties zijn toegankelijk via de Adobe-campagnestructuur, op het **[!UICONTROL Edit]** tabblad van elk rapport.
+U kunt de weergave en lay-out van uw gegevens aanpassen in de grafieken en tabellen van de beschrijvende analyse. Alle opties zijn toegankelijk via de Adobe Campaign-structuur, op het **[!UICONTROL Edit]** tabblad van elk rapport.
 
 ### Weergavemodus van analyserapport {#analysis-report-display-mode}
 
@@ -96,7 +96,7 @@ U kunt de gegevenslay-out rechtstreeks in de beschrijvende analystabel aanpassen
 * **[!UICONTROL Up]** / **[!UICONTROL Down]** om de variabelen in regels om te wisselen.
 * **[!UICONTROL Move to the right]** / **[!UICONTROL Move to the left]** om de variabelen in kolommen te wisselen.
 * **[!UICONTROL Turn]** om de assen van variabelen om te keren.
-* **[!UICONTROL Sort from A to Z]** om de variabelewaarden laag tot hoog te sorteren.
+* **[!UICONTROL Sort from A to Z]** als u de variabelewaarden laag tot hoog wilt sorteren.
 * **[!UICONTROL Sort from Z to A]** als u de waarden van de variabele hoog naar laag wilt sorteren.
 
    ![](assets/s_ncs_advuser_report_wizard_016.png)
@@ -116,7 +116,7 @@ De volgende opties zijn beschikbaar:
 * Met de **[!UICONTROL Accumulate values]** optie kunt u waarden van de ene reeks naar de andere optellen.
 * U kunt beslissen of u de legenda van het diagram wilt weergeven: om het te verbergen, uncheck de aangewezen optie. Standaard wordt de legenda buiten het diagram in de rechterbovenhoek weergegeven.
 
-   De legenda kan ook boven op het diagram worden weergegeven om op weergaveruimte te besparen. Selecteer de optie om dit te doen **[!UICONTROL Include in the chart]**
+   De legenda kan ook boven op het diagram worden weergegeven om op weergaveruimte te besparen. To do this, select the option **[!UICONTROL Include in the chart]**
 
    Selecteer de verticale en horizontale uitlijning in de **[!UICONTROL Caption position]** vervolgkeuzelijst.
 
@@ -128,11 +128,11 @@ Als u gegevens uit een analyserapport wilt exporteren, klikt u op de vervolgkeuz
 
 ![](assets/s_ncs_user_report_wizard_09.png)
 
-Raadpleeg [deze pagina](../../reporting/using/actions-on-reports.md)voor meer informatie.
+Raadpleeg [deze pagina](../../reporting/using/actions-on-reports.md) voor meer informatie.
 
 ## Hergebruik van bestaande rapporten en analyses {#re-using-existing-reports-and-analyses}
 
-U kunt beschrijvende analyserapporten over gegevens maken met bestaande rapporten die al in Adobe Campagne zijn opgeslagen. Deze modus is mogelijk wanneer analyses zijn opgeslagen of wanneer rapporten zijn gemaakt en geconfigureerd voor toegang via de wizard voor beschrijvende analyse.
+U kunt beschrijvende analyserapporten over gegevens maken met bestaande rapporten die al in Adobe Campaign zijn opgeslagen. Deze modus is mogelijk wanneer analyses zijn opgeslagen of wanneer rapporten zijn gemaakt en geconfigureerd voor toegang via de wizard voor beschrijvende analyse.
 
 Als u wilt weten hoe u beschrijvende analyses kunt opslaan, raadpleegt u [Een analyserapport](#saving-an-analysis-report)opslaan.
 
