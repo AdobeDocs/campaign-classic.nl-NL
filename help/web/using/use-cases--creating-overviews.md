@@ -11,11 +11,8 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: a3834828-4d39-4699-b648-d399797b8ea7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b01252d57ec4ca5c5c87e69566079c48d7363e38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 1%
@@ -217,7 +214,7 @@ Deze twee elementen worden in dezelfde container gegroepeerd om in het overzicht
 
 ### Een koppeling voor vernieuwen maken {#creating-a-refresh-link}
 
-1. Plaats de cursor op de container en voeg een object in **[!UICONTROL Link]** via het **[!UICONTROL Static elements]** menu.
+1. Plaats de cursor op de container en voeg een cursor in **[!UICONTROL Link]** via het **[!UICONTROL Static elements]** menu.
 1. Wijzig het label.
 1. Selecteer **[!UICONTROL Refresh data in a list]**.
 1. Voeg de eerder gemaakte lijst toe.
