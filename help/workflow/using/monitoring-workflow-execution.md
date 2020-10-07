@@ -1,7 +1,7 @@
 ---
-title: Uitvoering van controlewerkstroom
-seo-title: Uitvoering van controlewerkstroom
-description: Uitvoering van controlewerkstroom
+title: Workflowuitvoering controleren
+seo-title: Workflowuitvoering controleren
+description: Workflowuitvoering controleren
 seo-description: null
 page-status-flag: never-activated
 uuid: 4d215ff4-a61d-4294-8f15-17c612022577
@@ -11,11 +11,8 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2001'
 ht-degree: 0%
@@ -23,13 +20,13 @@ ht-degree: 0%
 ---
 
 
-# Uitvoering van controlewerkstroom {#monitoring-workflow-execution}
+# Workflowuitvoering controleren {#monitoring-workflow-execution}
 
 Deze sectie geeft informatie over hoe te om de uitvoering van uw werkschema&#39;s te controleren.
 
 In [deze sectie](../../workflow/using/supervising-workflows.md#supervising-workflows)is ook een gebruiksscenario beschikbaar voor het maken van een workflow waarmee u de status kunt controleren van een set werkstromen die worden gepauzeerd, gestopt of &#39;met fouten&#39;.
 
-Daarnaast kunnen beheerders van de instantie het **audittrail** gebruiken om activiteiten en laatste wijzigingen in workflows, de status van uw workflows, te controleren. Raadpleeg de [desbetreffende sectie](../../production/using/audit-trail.md)voor meer informatie hierover.
+Daarnaast kunnen beheerders van de instantie het **audittrail** gebruiken om activiteiten en laatste wijzigingen in workflows, de status van uw workflows, te controleren. For more on this, refer to the [dedicated section](../../production/using/audit-trail.md).
 
 In [deze pagina](../../production/using/monitoring-guidelines.md)worden extra manieren weergegeven om de verschillende campagneprocessen te controleren.
 
@@ -115,11 +112,11 @@ De workflow geeft worktables weer die via bepaalde activiteiten kunnen worden ge
 
 Het is ook mogelijk om verbindingen tussen diverse het werkdimensies tot stand te brengen en afmetingsveranderingen te bepalen. Voor elk contract dat bijvoorbeeld in de database is opgenomen, richt u zich tot de hoofdhouder en gebruikt u de gegevens van de medehouder in de aanvullende informatie.
 
-De werktafels van de workflow worden automatisch verwijderd wanneer de workflow wordt gepassiveerd. Als u een werktabel wilt behouden, slaat u deze op in een lijst via de **[!UICONTROL List update]** activiteit (zie [Lijstupdate](../../workflow/using/list-update.md)).
+De werktabellen van de workflow worden automatisch verwijderd wanneer de workflow wordt gepassiveerd. Als u een werktabel wilt behouden, slaat u deze op in een lijst via de **[!UICONTROL List update]** activiteit (zie [Lijstupdate](../../workflow/using/list-update.md)).
 
 ## Fouten beheren {#managing-errors}
 
-Wanneer een fout optreedt, wordt de werkstroom gepauzeerd en wordt de activiteit uitgevoerd wanneer de fout optrad, met rood wordt weergegeven. In het workflowoverzicht (**[!UICONTROL Monitoring]** universum > **[!UICONTROL Workflows]** koppeling) kunt u alleen workflows met fouten weergeven, zoals hieronder wordt weergegeven.
+Wanneer een fout optreedt, wordt de werkstroom gepauzeerd en wordt de activiteit uitgevoerd wanneer de fout optrad met rood. In het workflowoverzicht (**[!UICONTROL Monitoring]** universum > **[!UICONTROL Workflows]** koppeling) kunt u alleen workflows met fouten weergeven, zoals hieronder wordt weergegeven.
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
@@ -240,11 +237,11 @@ Let op:
 
 In deze rubriek wordt een gebruiksgeval weergegeven: [Gegevens-updates](../../workflow/using/coordinating-data-updates.md)coördineren.
 
-## Database-onderhoud {#database-maintenance}
+## Databaseonderhoud {#database-maintenance}
 
 Workflows gebruiken veel werktabellen die ruimte verbruiken en het hele platform vertragen als het niet wordt onderhouden. Raadpleeg deze [sectie](../../production/using/tables-to-maintain.md) voor meer informatie over databaseonderhoud.
 
-Met de workflow voor het opruimen van **databases die toegankelijk is via het knooppunt** Beheer > Productie > Technische workflows **** , kunt u verouderde gegevens verwijderen om exponentiële groei van de database te voorkomen. De workflow wordt automatisch geactiveerd zonder tussenkomst van de gebruiker. Zie deze [sectie](../../production/using/database-cleanup-workflow.md).
+Met de workflow voor het opruimen van **databases die toegankelijk is via het knooppunt** Beheer > Productie > Technische workflows **** , kunt u verouderde gegevens verwijderen om exponentiële groei van de database te voorkomen. De workflow wordt automatisch geactiveerd zonder tussenkomst van de gebruiker. Refer to this [section](../../production/using/database-cleanup-workflow.md).
 
 U kunt ook specifieke technische workflows maken om overbodige gegevensverbruikende ruimte te wissen. Zie deze [sectie](../../production/using/application-objects.md) en deze [pagina](#purging-the-logs).
 
@@ -262,7 +259,7 @@ Workflowtoezichthouders worden op de hoogte gesteld. De maker en laatste gebruik
 
 ## Workflows filteren op basis van hun status {#filtering-workflows-status}
 
-Met de Campaign Classic-interface kunt u de uitvoeringsstatus van alle workflows op uw exemplaar controleren aan de hand van vooraf gedefinieerde **weergaven**. Open het knooppunt **[!UICONTROL Administration]**/**[!UICONTROL Audit]**/**[!UICONTROL Workflows Status]** om deze weergaven te openen.
+Met de Campaign Classic-interface kunt u de uitvoeringsstatus van alle workflows in uw instantie controleren met behulp van vooraf gedefinieerde **weergaven**. Open het knooppunt **[!UICONTROL Administration]**/**[!UICONTROL Audit]**/**[!UICONTROL Workflows Status]** om deze weergaven te openen.
 
 De volgende weergaven zijn beschikbaar:
 
