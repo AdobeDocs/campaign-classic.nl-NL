@@ -1,7 +1,7 @@
 ---
-title: Gegevens importeren
-seo-title: Gegevens importeren
-description: Gegevens importeren
+title: Data importeren
+seo-title: Data importeren
+description: Data importeren
 seo-description: null
 page-status-flag: never-activated
 uuid: ca2269ad-7cfd-4f27-88be-469445a468bf
@@ -11,26 +11,26 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: c886bd02-c484-443c-93ca-ca244adbf893
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 00351a7a108f74741fa15546d9bd5cf68699e5c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '4142'
+ht-degree: 1%
 
 ---
 
 
-# Gegevens importeren{#importing-data}
+# Data importeren{#importing-data}
 
 Met Adobe Campaign kunt u gegevens uit een of meer bestanden in tekst-, CSV-, TAB- of XML-indeling importeren naar de database. Deze bestanden zijn gekoppeld aan een tabel (hoofd of gekoppeld) en elk veld van het bronbestand of de bronbestanden is gekoppeld aan een veld van de database. De importconfiguratie kan worden opgeslagen voor hergebruik, zodat u importtaken kunt plannen waarmee uw replicatiebewerkingen worden geautomatiseerd.
 
 >[!NOTE]
 >
 >U kunt gegevens importeren zonder deze toe te wijzen aan de databasegegevens met behulp van de **[!UICONTROL Import a list]** functie.
-> 
->De gegevens kunnen vervolgens uitsluitend in workflows via het **[!UICONTROL Read list]** object worden gebruikt. Raadpleeg [deze pagina](../../workflow/using/read-list.md)voor meer informatie.
 >
->Bekijk de video [Profielen](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html) importeren voor meer informatie.
+>De gegevens kunnen vervolgens uitsluitend in workflows via het **[!UICONTROL Read list]** object worden gebruikt. Raadpleeg [deze pagina](../../workflow/using/read-list.md) voor meer informatie.
+>
+>Bekijk de video [Profielen](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/importing-profiles.html) importeren voor meer informatie.
 
 ## Structuur van de te importeren gegevens {#structure-of-the-data-to-import}
 
@@ -44,7 +44,7 @@ Met de wizard Importeren kunt u het importeren configureren, de opties ervan def
 >
 >Als u een server van het Web IIS gebruikt, kan een configuratie noodzakelijk zijn om het uploaden van grote dossiers (>28 MB) toe te staan.
 >
->Zie [deze sectie](../../installation/using/integration-into-a-web-server-for-windows.md#changing-the-upload-file-size-limit)voor meer informatie.
+>Raadpleeg [deze sectie](../../installation/using/integration-into-a-web-server-for-windows.md#changing-the-upload-file-size-limit) voor meer informatie.
 
 ### Stap 1 - De importsjabloon kiezen {#step-1---choosing-the-import-template}
 
@@ -60,7 +60,7 @@ Wanneer u de wizard Importeren start, moet u eerst een sjabloon selecteren. Als 
    De native sjabloon is **[!UICONTROL New text import]**. Deze sjabloon moet niet worden gewijzigd, maar u kunt het dupliceren om een nieuwe sjabloon te configureren, afhankelijk van uw vereisten. Importeersjablonen worden standaard in het **[!UICONTROL Profiles and targets > Templates > Job templates]** knooppunt opgeslagen.
 
 1. Voer in het **[!UICONTROL Label]** veld een naam in voor deze importbewerking. U kunt een beschrijving toevoegen.
-1. Selecteer het type import in het desbetreffende veld. Er zijn twee mogelijke typen importbewerkingen: als u slechts één bestand wilt importeren en meerdere bestanden in één uitvoering wilt importeren. **[!UICONTROL Simple import]** **[!UICONTROL Multiple import]**
+1. Selecteer het type import in het desbetreffende veld. Er zijn twee mogelijke typen importbewerkingen: **[!UICONTROL Simple import]** als u slechts één bestand wilt importeren en meerdere bestanden tegelijk **[!UICONTROL Multiple import]** wilt importeren.
 
    Selecteer bij een meervoudige importbewerking **[!UICONTROL Multiple import]** de optie in de **[!UICONTROL Import type]** vervolgkeuzelijst in het eerste scherm van de wizard Importeren.
 
@@ -110,7 +110,7 @@ Met de **[!UICONTROL Advanced parameters]** koppeling hebt u toegang tot de volg
 
 Het bronbestand kan de tekstindeling (txt, csv, tab, vaste kolommen) of xml hebben.
 
-Standaard **[!UICONTROL Upload file on the server]** is deze geselecteerd. Klik op de map rechts van het **[!UICONTROL Local file]** veld om naar de lokale schijf te bladeren en selecteer het bestand dat u wilt importeren. U kunt deze optie deselecteren om het toegangspad en de naam in te voeren van het bestand als dit zich op de server bevindt.
+By default, **[!UICONTROL Upload file on the server]** is selected. Klik op de map rechts van het **[!UICONTROL Local file]** veld om naar de lokale schijf te bladeren en selecteer het bestand dat u wilt importeren. U kunt deze optie deselecteren om het toegangspad en de naam in te voeren van het bestand als dit zich op de server bevindt.
 
 ![](assets/s_ncs_user_import_wizard02_1.png)
 
@@ -167,7 +167,7 @@ U moet dan het bestemmingsschema selecteren en de gegevens van elke kolom op geb
 
 #### Berekende velden {#calculated-fields}
 
-Berekende velden zijn nieuwe kolommen die aan het bronbestand worden toegevoegd en uit andere kolommen worden berekend. Berekende velden kunnen vervolgens worden gekoppeld aan velden in de Adobe Campagne-database. Afstemmingen zijn echter niet mogelijk op berekende velden.
+Berekende velden zijn nieuwe kolommen die aan het bronbestand worden toegevoegd en uit andere kolommen worden berekend. Berekende velden kunnen vervolgens worden gekoppeld aan velden in de Adobe Campaign-database. Afstemmingen zijn echter niet mogelijk op berekende velden.
 
 Er zijn vier typen berekende velden:
 
@@ -188,7 +188,7 @@ Met de afstemmingsstap van de importwizard kunt u de modus definiëren waarmee d
 
 ![](assets/s_ncs_user_import_wizard04_1.png)
 
-Het centrale gedeelte van het scherm bevat een structuur met de velden en tabellen van de Adobe Campagne-database waarnaar de gegevens worden geïmporteerd.
+Het centrale gedeelte van het scherm bevat een structuur met de velden en tabellen van de Adobe Campaign-database waarnaar de gegevens worden geïmporteerd.
 
 Er zijn speciale opties beschikbaar voor elk knooppunt (tabel of veld). Wanneer u op het betrokken knooppunt klikt in de lijst, worden de parameters en een korte beschrijving ervan hieronder weergegeven. Het gedrag dat voor elk element wordt bepaald wordt getoond in de overeenkomstige **[!UICONTROL Behavior]** kolom.
 
@@ -292,7 +292,7 @@ In de volgende stap van de wizard Importeren kunt u de map selecteren of maken w
 
 >[!NOTE]
 >
->Deze stap wordt alleen weergegeven wanneer u ontvangers importeert en wanneer u de standaardtabel voor ontvangers van Adobe Campagne (**nms:ontvanger**) gebruikt.
+>Deze stap wordt alleen weergegeven wanneer u ontvangers importeert en wanneer u de standaardtabel voor Adobe Campaign-ontvangers gebruikt (**nms:ontvanger**).
 
 * Klik op de **[!UICONTROL Edit]** koppelingen om de map, de lijst of de service te selecteren waaraan u de ontvangers wilt koppelen of zich erop wilt abonneren.
 
@@ -342,7 +342,7 @@ Klik **[!UICONTROL Next]** om deze stap te valideren en de volgende stap weer te
 
 ### Stap 6 - Het importeren starten {#step-6---launching-the-import}
 
-In de laatste stap van de wizard kunt u gegevensimport starten. Klik op de **[!UICONTROL Start]** knop om dit te doen.
+In de laatste stap van de wizard kunt u gegevensimport starten. To do this, click the **[!UICONTROL Start]** button.
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 
@@ -386,7 +386,7 @@ Taakstatus geeft de huidige status van een taak aan. Elke status wordt vertegenw
 
 * **Server wordt afgesloten**
 
-   De actieve taak wordt onderbroken omdat de Adobe Campagneserver is afgesloten.
+   De actieve taak wordt onderbroken omdat de Adobe Campaign-server is afgesloten.
 
 ## Algemene importvoorbeelden {#generic-import-samples}
 
@@ -396,7 +396,7 @@ Voer de volgende stappen uit om een lijst met ontvangers te maken en op te geven
 
 1. De lijst maken
 
-   * Klik op de **[!UICONTROL Lists]** koppeling in het **[!UICONTROL Profiles and targets]** menu van de startpagina van Adobe Campagne.
+   * Klik op de **[!UICONTROL Lists]** koppeling in het **[!UICONTROL Profiles and targets]** menu van de startpagina van Adobe Campaign.
    * Klik op de knop **[!UICONTROL Create]** en vervolgens op de **[!UICONTROL Import a list]** knop.
 
 1. Het te importeren bestand selecteren
@@ -419,11 +419,11 @@ Voer de volgende stappen uit om een lijst met ontvangers te maken en op te geven
 
 ### Voorbeeld: nieuwe records importeren uit een tekstbestand {#example--import-new-records-from-a-text-file-}
 
-Voer de volgende stappen uit om nieuwe ontvangende profielen die in een tekstbestand zijn opgeslagen, te importeren in de Adobe Campagne-database:
+Voer de volgende stappen uit om nieuwe, in een tekstbestand opgeslagen ontvangerprofielen te importeren in de Adobe Campaign-database:
 
 1. Een sjabloon kiezen
 
-   * Klik op de startpagina van Adobe Campagne op de **[!UICONTROL Profiles and targets]** koppeling en vervolgens **[!UICONTROL Jobs]**. Klik boven de lijst met taken **[!UICONTROL New import]**.
+   * Klik vervolgens op de startpagina van Adobe Campaign op de **[!UICONTROL Profiles and targets]** koppeling **[!UICONTROL Jobs]**. Klik boven de lijst met taken **[!UICONTROL New import]**.
    * Laat de **[!UICONTROL New text import]** sjabloon standaard geselecteerd.
    * Wijzig het label en de beschrijving.
    * Selecteer **[!UICONTROL Simple import]**.
@@ -442,7 +442,7 @@ Voer de volgende stappen uit om nieuwe ontvangende profielen die in een tekstbes
 
    ![](assets/s_ncs_user_import_example03_01.png)
 
-1. Verzoening
+1. Afstemming
 
    * Ga naar de tabel **Ontvangers (nms:ontvanger)** .
    * Selecteer de **[!UICONTROL Insertion]** bewerking en laat de standaardwaarden in de andere velden staan.
@@ -457,7 +457,7 @@ Voer de volgende stappen uit om nieuwe ontvangende profielen die in een tekstbes
 
 1. Het importeren starten
 
-   * Klik **[!UICONTROL Start]**.
+   * Klik op **[!UICONTROL Start]**.
 
       In het centrale gedeelte van de editor kunt u controleren of de importbewerking is voltooid en het aantal verwerkte records weergeven.
 
@@ -493,7 +493,7 @@ We willen bestaande records in de database bijwerken en nieuwe records maken van
 
    Pas de procedure toe in voorbeeld 2 hierboven.
 
-1. Verzoening
+1. Afstemming
 
    * Laat **[!UICONTROL Update or insert]** standaard ingeschakeld.
    * Houd de optie **[!UICONTROL Management of duplicates]** in de **[!UICONTROL Update]** modus, zodat bestaande records in de database worden gewijzigd met gegevens uit het tekstbestand.
@@ -503,7 +503,7 @@ We willen bestaande records in de database bijwerken en nieuwe records maken van
 
 1. Het importeren starten
 
-   * Klik **[!UICONTROL Start]**.
+   * Klik op **[!UICONTROL Start]**.
 
       In het venster Tekstspatiëring kunt u controleren of het importeren is gelukt en het aantal verwerkte records weergeven.
 
@@ -543,7 +543,7 @@ Voer de volgende stappen uit:
 
    In de voorvertoning van de eerste regels van het bestand ziet u dat het bestand updates voor bepaalde records bevat.
 
-1. Verzoening
+1. Afstemming
 
    * Ga naar de tabel en selecteer de **[!UICONTROL Update]** bewerking.
    * Selecteer de optie **[!UICONTROL Reject entity]** voor het **[!UICONTROL Management of doubles]** veld.
@@ -556,7 +556,7 @@ Voer de volgende stappen uit:
 
 1. Het importeren starten
 
-   Klik **[!UICONTROL Start]**.
+   Klik op **[!UICONTROL Start]**.
 
    Kijk in de lijst van ontvangers om te controleren dat de verslagen door de invoer zijn gewijzigd.
 
@@ -592,7 +592,7 @@ In dit voorbeeld ziet u dat bepaalde velden in het tekstbestand een lege waarde 
 
    Pas de procedure toe in voorbeeld 2 hierboven.
 
-1. Verzoening
+1. Afstemming
 
    * Ga naar de tabel en selecteer **[!UICONTROL Update]**.
    * Selecteer de optie **[!UICONTROL Reject entity]** voor het **[!UICONTROL Management of doubles]** veld.
@@ -604,7 +604,7 @@ In dit voorbeeld ziet u dat bepaalde velden in het tekstbestand een lege waarde 
 
 1. Het importeren starten
 
-   * Klik **[!UICONTROL Start]**.
+   * Klik op **[!UICONTROL Start]**.
    * Kijk in de ontvankelijke lijst om te controleren dat de verslagen door de verrichting zijn gewijzigd.
 
       ![](assets/s_ncs_user_import_example06_06.png)
