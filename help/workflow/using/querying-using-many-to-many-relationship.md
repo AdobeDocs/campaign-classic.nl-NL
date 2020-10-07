@@ -9,11 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +47,7 @@ Voer de volgende stappen uit:
 
    ![](assets/query_editor_nveau_34.png)
 
-1. Selecteer in het **[!UICONTROL Data filtering]** venster **[!UICONTROL Filtering conditions]**.
+1. In the **[!UICONTROL Data filtering]** window, select **[!UICONTROL Filtering conditions]**.
 1. In het **[!UICONTROL Target element]** venster, impliceert de het filtreren voorwaarde voor het halen van profielen zonder het volgen logboek voor de laatste 7 dagen twee stappen. Het element dat u moet selecteren, is een veel-op-veel-koppeling.
 
    * Begin door het **[!UICONTROL Recipient delivery logs (broadlog)]** inzamelingselement (oranje knoop) voor de eerste **[!UICONTROL Value]** kolom te selecteren.
@@ -83,7 +83,7 @@ Voer de volgende stappen uit:
 
    ![](assets/query_editor_nveau_40.png)
 
-   Klik **[!UICONTROL OK]**. Het **[!UICONTROL Data formatting]** venster is geconfigureerd.
+   Klik op **[!UICONTROL OK]**. Het **[!UICONTROL Data formatting]** venster is geconfigureerd.
 
    Zie deze sectie voor meer informatie over het toevoegen van berekende velden.
 
