@@ -11,14 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: 65919173-3ce0-4d98-936b-f4581df536ae
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -33,7 +30,7 @@ Adobe Campaign API&#39;s worden gebruikt in JavaScript binnen de toepassing en i
 
 >[!IMPORTANT]
 >
->Het aantal geoorloofde Vraag van de Motor varieert per dag op uw vergunningscontract. For more on this, refer to [this page](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
+>Het aantal geoorloofde Vraag van de Motor varieert per dag op uw vergunningscontract. Raadpleeg [deze pagina](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html) voor meer informatie.\
 >In [deze specifieke documentatie](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)vindt u een lijst met alle API&#39;s, inclusief de volledige beschrijving ervan.
 
 ## Vereisten {#prerequisites}
