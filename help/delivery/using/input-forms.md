@@ -11,20 +11,20 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: abf097eb-ade5-479e-9e20-8bd6bc9d96aa
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '820'
+ht-degree: 2%
 
 ---
 
 
 # Invoerformulieren{#input-forms}
 
-Hieronder volgen enkele algemene beginselen voor het gebruik van invoerformulieren in Adobe Campagne.
+Hieronder volgen enkele algemene beginselen voor het gebruik van inputformulieren in Adobe Campaign.
 
-Formulieren worden beschreven in [deze sectie](../../configuration/using/identifying-a-form.md).
+Forms wordt in [deze sectie](../../configuration/using/identifying-a-form.md)beschreven.
 
 ## Formulierstructuur {#form-structure}
 
@@ -58,7 +58,7 @@ Een bewerkingsbesturingselement wordt ingevoerd in een **`<input>`** element met
 
 **Herinnering voor XPath-syntaxis:**
 
-De taal XPath wordt gebruikt in de Campagne van Adobe om naar een element of een attribuut te verwijzen dat tot een gegevensschema behoort.
+De XPath-taal wordt in Adobe Campaign gebruikt om naar een element of kenmerk te verwijzen dat of dat tot een gegevensschema behoort.
 
 XPath is een syntaxis waarmee u een knooppunt in de boomstructuur van een XML-document kunt zoeken.
 
@@ -82,7 +82,7 @@ Elk veld wordt standaard op één regel weergegeven en neemt alle beschikbare ru
 
 De rangschikking van de besturingselementen ten opzichte van elkaar lijkt op de rangschikking die wordt gebruikt in HTML-tabellen, met de mogelijkheid om een besturingselement in meerdere kolommen te verdelen, elementen te interliniëren of de bezetting van de beschikbare ruimte op te geven. Houd er echter rekening mee dat de opmaak alleen de verdeling van de verhoudingen toestaat; u kunt geen vaste afmetingen opgeven voor een object.
 
-Zie [deze sectie](../../configuration/using/form-structure.md#formatting)voor meer informatie.
+Raadpleeg [deze sectie](../../configuration/using/form-structure.md#formatting) voor meer informatie.
 
 ## Besturingselementen voor lijsttypen {#list-type-controls}
 
