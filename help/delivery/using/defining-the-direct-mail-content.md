@@ -1,7 +1,7 @@
 ---
-title: De inhoud voor direct mail definiëren
-seo-title: De inhoud voor direct mail definiëren
-description: De inhoud voor direct mail definiëren
+title: De content voor direct mail definiëren
+seo-title: De content voor direct mail definiëren
+description: De content voor direct mail definiëren
 seo-description: null
 page-status-flag: never-activated
 uuid: eac69f58-5ecb-4884-8806-edb16e6dece8
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 discoiquuid: 443689f4-4c82-490f-ad96-22446f649a07
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '169'
+ht-degree: 11%
 
 ---
 
 
-# De inhoud voor direct mail definiëren{#defining-the-direct-mail-content}
+# De content voor direct mail definiëren{#defining-the-direct-mail-content}
 
 ## Extractiebestand {#extraction-file}
 
@@ -38,7 +38,7 @@ Met deze koppeling hebt u toegang tot de wizard Exporteren en definieert u de ge
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-Het is mogelijk om een gepersonaliseerde URL in het extractiebestand in te voegen. Raadpleeg de [webfunctionaliteit](../../web/using/publishing-a-web-form.md)voor meer informatie.
+Het is mogelijk om een gepersonaliseerde URL in het extractiebestand in te voegen. For more on this, refer to [Web functionality](../../web/using/publishing-a-web-form.md).
 
 >[!NOTE]
 >
