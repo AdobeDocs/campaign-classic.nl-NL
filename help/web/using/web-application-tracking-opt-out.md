@@ -1,7 +1,7 @@
 ---
-title: Weigeren van webtoepassing
-seo-title: Weigeren van webtoepassing
-description: Weigeren van webtoepassing
+title: Opt-out voor tracking van een webapplicatie
+seo-title: Opt-out voor tracking van een webapplicatie
+description: Opt-out voor tracking van een webapplicatie
 seo-description: null
 page-status-flag: never-activated
 uuid: c9b9eee2-a5be-4378-b2d7-53ed7121eae8
@@ -11,19 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: 8f413002-bd32-426f-88b9-44cefae68593
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '674'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Weigeren van webtoepassing{#web-application-tracking-opt-out}
+# Opt-out voor tracking van een webapplicatie{#web-application-tracking-opt-out}
 
 Met Adobe Campaign kunt u het webgedrag niet meer volgen van eindgebruikers die zich afmelden voor het volgen van gedrag via cookies of webbakens. De functie omvat de mogelijkheid om een banner weer te geven om de eindgebruiker die optie te bieden; U kunt deze banners toevoegen aan webtoepassingen of landingspagina&#39;s.
 
@@ -84,7 +81,7 @@ De naam van het cookie is **acoptout**. De gemeenschappelijke waarden zijn:
 
 * 0: gebruiker heeft Web tracking toegestaan (standaardwaarde)
 * 1: gebruiker heeft webtracking verboden
-* null: gebruiker heeft niet gekozen maar Web tracking is toegestaan omdat dit de standaardwaarde is
+* null: de gebruiker heeft niet gekozen maar Web het volgen wordt toegestaan aangezien het de standaardwaarde is
 
 De beschikbare client-side API&#39;s om de banner aan te passen zijn:
 
