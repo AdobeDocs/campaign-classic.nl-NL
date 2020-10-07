@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 1b2ae224-8406-4506-b589-6e5f6631e87f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ## Definitie van parameters {#definition-of-parameters}
 
-Het Adobe Campagne-platform biedt standaard twee webtrackingparameters van het type TRANSACTION:
+Uw Adobe Campaign-platform biedt standaard twee webtrackingparameters van het type TRANSACTION:
 
 * **bedrag**: het bedrag van een transactie vertegenwoordigt;
 * **artikel**: geeft het aantal items in een transactie aan.
@@ -57,7 +57,7 @@ In de serverconfiguratie, kunt u het maximumaantal karakters bepalen waarmee voo
 >
 >Als u het maximumaantal tekens verhoogt waarmee rekening moet worden gehouden, kan dit van invloed zijn op de webprestaties van uw platform.
 
-Hiervoor wijzigt u het **kenmerk webTrackingParamSize** van het **`<trackinglogd>`** element in het bestand **serverConf.xml** . Dit bestand wordt opgeslagen in de submap **conf** van de installatiemap van Adobe Campagne.
+Hiervoor wijzigt u het **kenmerk webTrackingParamSize** van het **`<trackinglogd>`** element in het bestand **serverConf.xml** . Dit bestand wordt opgeslagen in de submap **conf** van de installatiemap van Adobe Campaign.
 
 **Voorbeeld**:
 
@@ -82,11 +82,11 @@ Wanneer de configuratie is gewijzigd, moet u:
    >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl stop nlserver**
 
 * Verwijder in Linux de gedeelde geheugensegmenten met behulp van de **IPcrm** -opdracht.
-* Start de Adobe Campagne-server opnieuw: **Net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux,
+* Start de Adobe Campaign-server opnieuw: **Net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux,
 
    >[!NOTE]
    >
-   >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl start nlserver**
+   >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systeemserver voor opstarten**
 
 * Start de webserver opnieuw.
 
