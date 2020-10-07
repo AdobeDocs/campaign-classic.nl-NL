@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: b7ff47e1-ef12-4f04-afff-1a6c01d7701f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1aca6758bc787f91ae28d7d5add875edf04541e8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -54,14 +51,14 @@ Er zijn vier typen koppelingen:
 
    Deze optie is geconfigureerd op het **[!UICONTROL Simple Join]** tabblad dat toegankelijk is via de **[!UICONTROL Edit additional data]** koppeling van de **[!UICONTROL Enrichment]** activiteit.
 
-* **[!UICONTROL Define a link by searching for a reference among several options]**: dit type koppeling definieert een koppeling naar een unieke record . Adobe Campagne leidt tot een verbinding aan een doellijst door een buitenlandse sleutel in de doellijst toe te voegen om een verwijzing naar het unieke verslag op te slaan.
+* **[!UICONTROL Define a link by searching for a reference among several options]**: dit type koppeling definieert een koppeling naar een unieke record . Adobe Campaign maakt een koppeling naar een doeltabel door een externe sleutel toe te voegen aan de doeltabel om een verwijzing naar de unieke record op te slaan.
 
    Deze optie is geconfigureerd op het **[!UICONTROL Reconciliation and deduplication]** tabblad dat toegankelijk is via de **[!UICONTROL Edit additional data]** koppeling van de **[!UICONTROL Enrichment]** activiteit.
 
 In de volgende secties zijn ook gebruiksgevallen te vinden waarin de activiteiten van verrijkingsactiviteiten in hun context worden beschreven:
 
-* [Verrijking via e-mail met aangepaste datumvelden](../../workflow/using/email-enrichment-with-custom-date-fields.md).
-* [Gegevens worden verrijkt](../../workflow/using/enriching-data.md)
+* [E-mailverrijking met aangepaste datumvelden](../../workflow/using/email-enrichment-with-custom-date-fields.md).
+* [Data verrijken](../../workflow/using/enriching-data.md)
 * [Een overzichtslijst maken](../../workflow/using/creating-a-summary-list.md)
 
 ## Informatie toevoegen {#adding-information}
@@ -110,7 +107,7 @@ De gegevens en het schema in de verrijkingsfase zijn als volgt:
 
 ## Koppelingen maken {#creating-a-link}
 
-U kunt de verrijkingsactiviteit gebruiken om een verbinding tussen de het werk gegevens en het gegevensbestand van de Campagne van Adobe tot stand te brengen: dit zal een lokale verbinding aan het werkschema tussen de binnenkomende gegevens zijn.
+U kunt de verrijkingsactiviteit gebruiken om een verbinding tussen de het werk gegevens en het gegevensbestand van Adobe Campaign tot stand te brengen: dit zal een lokale verbinding aan het werkschema tussen de binnenkomende gegevens zijn.
 
 Als u bijvoorbeeld gegevens laadt van een bestand dat het accountnummer, het land en de e-mail van ontvangers bevat, moet u een koppeling naar de landentabel maken om deze gegevens in hun profielen bij te werken.
 
@@ -133,7 +130,7 @@ Hiervoor voert u de volgende stappen uit:
 
    ![](assets/enrichment_edit_after_file_box.png)
 
-1. Selecteer de **[!UICONTROL Link definition]** optie en klik op de **[!UICONTROL Next]** knop. Geef het type koppeling op dat u wilt maken. In dit voorbeeld willen we het land van de ontvanger van het bestand in overeenstemming brengen met een land in de lijst met beschikbare landen in de specifieke tabel van de database. Kies de **[!UICONTROL Define a link by searching for a reference among several options]** optie. Selecteer de landentabel in het **[!UICONTROL Target schema]** veld.
+1. Selecteer de **[!UICONTROL Link definition]** optie en klik op de **[!UICONTROL Next]** knop. Geef het type koppeling op dat u wilt maken. In dit voorbeeld willen we het land van de ontvanger van het bestand in overeenstemming brengen met een land in de lijst met beschikbare landen in de specifieke tabel van de database. Kies de optie **[!UICONTROL Define a link by searching for a reference among several options]**. Selecteer de landentabel in het **[!UICONTROL Target schema]** veld.
 
    ![](assets/enrichment_add_a_link_select_option4.png)
 
@@ -147,7 +144,7 @@ Bij de output van deze verrijkingsactiviteit, zal het tijdelijke schema de verbi
 
 ## Gegevensafstemming {#data-reconciliation}
 
-De verrijkingsactiviteit kan worden gebruikt om gegevensverzoening te vormen, met inbegrip van zodra de gegevens in het gegevensbestand zijn geladen. In dit geval kunt u op het **[!UICONTROL Reconciliation]** tabblad de koppeling definiëren tussen de gegevens in de Adobe Campagne-database en de gegevens in de werktabel.
+De verrijkingsactiviteit kan worden gebruikt om gegevensverzoening te vormen, met inbegrip van zodra de gegevens in het gegevensbestand zijn geladen. In dit geval kunt u op het **[!UICONTROL Reconciliation]** tabblad de koppeling definiëren tussen de gegevens in de Adobe Campaign-database en de gegevens in de werktabel.
 
 Selecteer de **[!UICONTROL Identify the targeting document based on work data]** optie, geef het schema op waarnaar u een koppeling wilt maken en definieer de voorwaarden voor het samenvoegen: daartoe selecteert u de velden die moeten worden afgestemd in de werkgegevens (**[!UICONTROL Source expression]**) en in de doeldimensie (**[!UICONTROL Destination expression]**).
 
@@ -161,7 +158,7 @@ Als er meerdere samenvoegvoorwaarden zijn opgegeven, moeten deze ALLES worden ge
 
 Met de verrijkingsactiviteit kunt u aanbiedingen of koppelingen naar aanbiedingen voor ontvangers van de levering toevoegen.
 
-Zie deze [sectie](../../workflow/using/enrichment.md)voor meer informatie over de verrijkingsactiviteit.
+For more information on the enrichment activity, refer to this [section](../../workflow/using/enrichment.md).
 
 Bijvoorbeeld, kunt u de gegevens voor een ontvankelijke vraag vóór een levering verrijken.
 
@@ -170,7 +167,7 @@ Bijvoorbeeld, kunt u de gegevens voor een ontvankelijke vraag vóór een leverin
 Na het vormen van uw vraag (verwijs naar deze [sectie](../../workflow/using/query.md)):
 
 1. Voeg een verrijkingsactiviteit toe en open deze.
-1. Selecteer op het **[!UICONTROL Enrichment]** tabblad **[!UICONTROL Add data]**.
+1. Selecteer op het tabblad **[!UICONTROL Enrichment]** de optie **[!UICONTROL Add data]**.
 1. Selecteer **[!UICONTROL An offer proposition]** de typen gegevens die u wilt toevoegen.
 
    ![](assets/int_enrichment_offer2.png)
@@ -222,7 +219,7 @@ Deze informatie wordt standaard opgeslagen in de **[!UICONTROL Offer engine]** a
 
 U kunt deze gegevens echter als volgt opslaan:
 
-1. Creeer een vraag aan de aanbiedingsmotor in een verrijkingsactiviteit die na een vraag en vóór een leveringsactiviteit wordt geplaatst. Zie deze [sectie](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine).
+1. Creeer een vraag aan de aanbiedingsmotor in een verrijkingsactiviteit die na een vraag en vóór een leveringsactiviteit wordt geplaatst. Refer to this [section](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine).
 1. Selecteer in het hoofdvenster van de activiteit **[!UICONTROL Edit additional data...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
