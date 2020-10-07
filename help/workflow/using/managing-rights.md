@@ -11,18 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 discoiquuid: f78603e9-f6ff-4ebe-941b-b3fbd1924b71
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 2%
 
 ---
 
 
 # Rechten beheren{#managing-rights}
 
-Als ze geen beheerder zijn, hebben Adobe Campagnebeheerders toegangsrechten nodig voor het maken, uitvoeren of wijzigen van workflows.
+Als ze geen beheerder zijn, hebben Adobe Campaign-operatoren toegangsrechten nodig voor het maken, uitvoeren of wijzigen van workflows.
 
 In het algemeen moeten operatoren die op workflows reageren, toegang krijgen tot de bestanden met de gegevens die tijdens de verschillende activiteiten worden gebruikt (ontvangers, lijst met ontvangers, abonnementen, leveringen, enz.), en mogelijk tot hun subbestanden.
 
