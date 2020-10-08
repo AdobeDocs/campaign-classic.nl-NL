@@ -1,7 +1,7 @@
 ---
-title: Interactie - Gegevensbuffer
-seo-title: Interactie - Gegevensbuffer
-description: Interactie - Gegevensbuffer
+title: Interactie - Databuffer
+seo-title: Interactie - Databuffer
+description: Interactie - Databuffer
 seo-description: null
 page-status-flag: never-activated
 uuid: 4cb742b5-6bde-43e8-b26b-16f27dd65f72
@@ -11,22 +11,22 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: cbfdeb2f-4f20-45b8-8cc0-89362f9ea9c1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 6%
 
 ---
 
 
-# Interactie - Gegevensbuffer{#interaction-data-buffer}
+# Interactie - Databuffer{#interaction-data-buffer}
 
 >[!NOTE]
 >
->Sommige configuraties kunnen alleen door Adobe worden uitgevoerd voor implementaties die worden gehost door Adobe. Bijvoorbeeld, om tot de server en de dossiers van de instantieconfiguratie toegang te hebben. Meer over de verschillende plaatsingen leren, verwijs naar de [Hosting modelsectie](../../installation/using/hosting-models.md) of naar [dit artikel](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>Sommige configuraties kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen. Bijvoorbeeld, om tot de server en de dossiers van de instantieconfiguratie toegang te hebben. Meer over de verschillende plaatsingen leren, verwijs naar de [Hosting modelsectie](../../installation/using/hosting-models.md) of naar [dit artikel](https://helpx.adobe.com/nl/campaign/kb/acc-on-prem-vs-hosted.html).
 
-In de Campagne van Adobe, is een gebied **van de** gegevensbuffer geïntroduceerd in de module van de Interactie. Dit staat u toe om prestaties **van binnenkomende Interactie te** verhogen door voorraad en aanbiedingsberekeningen te desynchroniseren.
+In Adobe Campaign is een **gegevensbufferzone** geïntroduceerd in de module Interactie. Dit staat u toe om prestaties **van binnenkomende Interactie te** verhogen door voorraad en aanbiedingsberekeningen te desynchroniseren.
 
 Het heeft slechts betrekking op binnenkomende Interactie, hetzij door een vraag (met of zonder vraaggegevens), of door een statusupdate (updateStatus).
 
@@ -36,7 +36,7 @@ De **configuratie** van de de bufferzone van gegevens kan in het configuratiedos
 
 >[!NOTE]
 >
->Voor alle wijzigingen die in de configuratie worden aangebracht, moeten de webserver (Apache:IIS) en de Adobe Campagne-processen opnieuw worden gestart.\
+>Om het even welke veranderingen die aan de configuratie worden aangebracht vereisen een nieuw begin van de Webserver (Apache:IIS) en de processen van Adobe Campaign.\
 >Nadat u de gegevensbufferzone hebt geconfigureerd, moet u ervoor zorgen dat er een aangepaste hardwareconfiguratie beschikbaar is. (hoeveelheid aanwezig geheugen).
 
 Nadat u de gegevensbufferzone hebt geconfigureerd, moet u ervoor zorgen dat er een aangepaste hardwareconfiguratie beschikbaar is. (hoeveelheid aanwezig geheugen).
@@ -49,7 +49,7 @@ maxProcessMemoryWarningMb="1600" maxSharedEntries="25000" nextOffersSize="0"
 processRestartTime="06:00:00" runLevel="10" targetKeySize="16"/>
 ```
 
-Als u Binnenkomende interactie gebruikt, moet het @autostart-kenmerk &quot;true&quot; zijn om het proces automatisch te starten wanneer de Adobe Campagneserver wordt gestart.
+Als u Binnenkomende interactie gebruikt, moet het @autostart-kenmerk &quot;true&quot; zijn om het proces automatisch te starten wanneer de Adobe Campaign-server wordt gestart.
 
 Details van argument:
 
