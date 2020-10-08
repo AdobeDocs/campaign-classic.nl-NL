@@ -1,6 +1,6 @@
 ---
-title: Bijlagen toevoegen aan transactieberichten met Adobe Campagne Classic
-description: Leer hoe u transactie-e-mails met individuele en/of gepersonaliseerde bijlagen kunt verzenden met Adobe Campaign Classic
+title: Bijlagen toevoegen aan transactieberichten met Adobe Campaign Classic
+description: Leer hoe je transactie-e-mails kunt verzenden met individuele en/of gepersonaliseerde bijlagen met Adobe Campaign Classic
 page-status-flag: never-activated
 uuid: 4452d839-318a-49d8-8abb-4ba04c803e9f
 contentOwner: sauviat
@@ -9,14 +9,11 @@ audience: message-center
 content-type: reference
 topic-tags: use-case
 discoiquuid: 7b8ab9d6-e47e-46d8-99df-da793486654c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 22d0e70f77eb3759632e05ab1cb0d8ee53adfac9
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '629'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -29,7 +26,7 @@ Het doel van dit gebruiksgeval is het toevoegen van e-mailbijlagen tijdens de vl
 
 In dit scenario leert u hoe u transactie-e-mails met individuele en/of gepersonaliseerde bijlagen kunt verzenden. De bijlagen worden niet vooraf geüpload naar de Transactieberichten-server: in plaats daarvan worden ze tijdens de vlucht gegenereerd .
 
-Wanneer u interactie met of gegevens van klanten vastlegt, moet u deze gegevens mogelijk aan het einde van het proces terugsturen naar de klant, bijvoorbeeld in een PDF-bestand dat aan een e-mail is gekoppeld.
+Wanneer u interactie of details van klanten vastlegt, moet u deze informatie mogelijk aan het einde van het proces terugsturen naar de klant, bijvoorbeeld in een PDF-bestand dat aan een e-mail is gekoppeld.
 
 Hieronder volgen de belangrijkste stappen van dit scenario:
 
@@ -47,20 +44,20 @@ In dit scenario worden de bijlagen niet vooraf gemaakt, maar direct toegevoegd a
 
 >[!NOTE]
 >
->Om prestatieproblemen te voorkomen moet elke afbeeldingsgrootte standaard niet groter zijn dan 100.000 bytes als u direct gedownloade afbeeldingen van een gepersonaliseerde URL opneemt als bijlage. Deze aanbevolen drempelwaarde kan worden geconfigureerd [in de lijst met klassieke opties](../../installation/using/configuring-campaign-options.md#delivery)voor campagne.
+>Om prestatieproblemen te voorkomen moet elke afbeeldingsgrootte standaard niet groter zijn dan 100.000 bytes als u direct gedownloade afbeeldingen van een gepersonaliseerde URL opneemt als bijlage. Deze aanbevolen drempelwaarde kan worden geconfigureerd [in de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Aanbevelingen {#important-notes}
 
 Lees de onderstaande richtlijnen zorgvuldig door voordat u dit scenario implementeert:
 
 * De instanties van het Overseinen van de Transactie zouden niet moeten worden gebruikt om, dossiers of gegevens op te slaan uit te voeren of te uploaden. Ze kunnen alleen worden gebruikt voor gebeurtenisgegevens en gerelateerde informatie. Ze moeten niet worden beschouwd als een bestandsopslagsysteem.
-* Aangezien er geen directe toegang tot de instanties of servers van het Overseinen van de Transactie buiten Adobe is, is er geen standaardmanier om dergelijke dossiers op deze servers (geen toegang FTP) te duwen.
+* Aangezien er geen directe toegang tot de instanties of servers van het Overseinen van de Transactie buiten Adobe is, is er geen standaardmanier om dergelijke dossiers op deze servers (geen toegang van FTP) te duwen.
 * Het is contractueel niet correct om de schijfruimte op de instanties van het Overseinen van de Transactie te gebruiken om dossiers van om het even welke soort op te slaan, zelfs niet voor gehechtheid.
 * U moet een ander online schijfsysteem gebruiken om deze bestanden te hosten. U hebt FTP-toegang tot dit systeem nodig en u moet bestanden kunnen schrijven en verwijderen.
 
 >[!NOTE]
 >
->Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De geadviseerde drempel kan van [de lijst van de Klassieke opties](../../installation/using/configuring-campaign-options.md#delivery)van de Campagne worden gevormd.
+>Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De aanbevolen drempelwaarde kan worden geconfigureerd [in de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Implementatie {#implementation}
 
