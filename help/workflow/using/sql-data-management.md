@@ -1,7 +1,7 @@
 ---
-title: SQL-gegevensbeheer
-seo-title: SQL-gegevensbeheer
-description: SQL-gegevensbeheer
+title: SQL Data Management
+seo-title: SQL Data Management
+description: SQL Data Management
 seo-description: null
 page-status-flag: never-activated
 uuid: b6057496-2dd5-4289-96df-98378e4f0ae7
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 18d6f5e1-308f-4080-b7c4-ebf836f74842
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '407'
+ht-degree: 3%
 
 ---
 
 
-# SQL-gegevensbeheer{#sql-data-management}
+# SQL Data Management{#sql-data-management}
 
 Met de activiteit **SQL-gegevensbeheer** kunt u uw eigen SQL-scripts schrijven om werktabellen te maken en te vullen.
 
@@ -30,7 +30,7 @@ Voordat u de activiteit configureert, moet u controleren of aan de volgende voor
 
 * De activiteit is beschikbaar voor verre slechts gegevensbronnen. Het pakket **[!UICONTROL FDA]** (Federated Data Access) moet daarom op uw exemplaar worden geïnstalleerd (zie [deze sectie](../../platform/using/about-fda.md)).
 * Het uitgaande schema moet in het gegevensbestand bestaan en met een gegevensbestand FDA (voor meer op gegevensschema&#39;s, verwijs naar [deze sectie](../../configuration/using/about-schema-reference.md)) worden verbonden.
-* De exploitant die het werkschema uitvoert moet het **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** genoemde recht hebben. Raadpleeg [deze sectie](../../platform/using/access-management.md#named-rights)voor meer informatie over benoemde rechten.
+* De exploitant die het werkschema uitvoert moet het **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** genoemde recht hebben. For more on named rights, refer to [this section](../../platform/using/access-management.md#named-rights).
 
 ## De SQL-gegevensbeheeractiviteit configureren {#configuring-the-sql-data-management-activity}
 
