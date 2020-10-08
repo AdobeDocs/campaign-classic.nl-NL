@@ -11,11 +11,8 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 discoiquuid: f4b1c108-7f71-4aa1-8394-a7f660834c9c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2822'
 ht-degree: 0%
@@ -204,9 +201,9 @@ Bijvoorbeeld:
 
 Adobe Campaign v7 integreert een recentere tolk JavaScript. Deze update kan echter tot een storing van bepaalde scripts leiden. Aangezien de vorige motor machtiger was, zou bepaalde syntaxis werken wat niet langer het geval is met de nieuwe versie van de motor.
 
-De **[!UICONTROL myObject.@attribute]** syntaxis is nu alleen geldig voor XML-objecten. Deze syntaxis kan worden gebruikt voor het aanpassen van leveringen en inhoudsbeheer. Als u dit type syntaxis op een niet voorwerp van XML gebruikte, zullen de verpersoonlijkingseigenschappen niet meer werken.
+De **[!UICONTROL myObject.@attribute]** syntaxis is nu alleen geldig voor XML-objecten. Deze syntaxis kan worden gebruikt voor het aanpassen van leveringen en inhoudsbeheer. Als u dit type syntaxis gebruikt voor een niet-XML-object, werken de verpersoonlijkingsfuncties niet meer.
 
-Voor alle andere objecttypen is de syntaxis nu **[!UICONTROL myObject`[`&quot;kenmerk&quot;`]`]**. Bijvoorbeeld een niet-XML-object dat de volgende syntaxis heeft gebruikt:**[!UICONTROL employee.@sn]**moet nu de volgende syntaxis gebruiken:**[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
+Voor alle andere objecttypen is de syntaxis nu **[!UICONTROL myObject`[`&quot;kenmerk&quot;`]`]**. Bijvoorbeeld een niet-XML-object dat de volgende syntaxis heeft gebruikt: **[!UICONTROL employee.@sn]** moet nu de volgende syntaxis gebruiken: **[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
 
 * Voormalige syntaxis:
 
@@ -472,7 +469,7 @@ Ga als volgt te werk als u het conflict handmatig wilt oplossen:
 
    ![](assets/s_ncs_production_conflict002.png)
 
-1. Verwijder de versie die u niet wilt behouden. Verwijder het **`_conflict_argument_ string`** deel van de entiteit die u wilt behouden.
+1. Verwijder de versie die u niet wilt behouden. Verwijder de entiteit **`_conflict_argument_ string`** die u bijhoudt.
 
    ![](assets/s_ncs_production_conflict003.png)
 
@@ -628,9 +625,9 @@ Als u de blauwe banner vanaf v7 wilt hebben (zodat u toegang hebt tot de univers
 
 ![](assets/migration_reports_1.png)
 
-Als u wilt profiteren van de nieuwe rapportfuncties, moet u de v.6.x-renderingengine selecteren. Controleer in dit geval al uw scripts en wijzig deze zo nodig. Als u een specifiek script voor OpenOffice hebt toegevoegd aan PDF-export, werkt dit niet meer met de nieuwe PDF-exportengine (PhantomJS).
+Als u wilt profiteren van de nieuwe rapportfuncties, moet u de v.6.x-renderingengine selecteren. Controleer in dit geval al uw scripts en wijzig deze zo nodig. Als u een specifiek script voor OpenOffice hebt toegevoegd voor het exporteren van PDF-bestanden, werkt dit niet meer met de nieuwe PDF-exportengine (PhantomJS).
 
-## Webtoepassingen {#web-applications}
+## Webapplicaties {#web-applications}
 
 Er zijn twee families voor webtoepassingen:
 
