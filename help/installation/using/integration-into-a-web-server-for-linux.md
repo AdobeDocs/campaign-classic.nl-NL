@@ -11,18 +11,18 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 discoiquuid: 752ba848-aee9-4bb0-b2c5-490f3124f74e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 4fbc576ba65c44d91ac87ea2967fac3b0a88a040
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 5%
 
 ---
 
 
 # Integratie in een webserver voor Linux{#integration-into-a-web-server-for-linux}
 
-Adobe Campagne omvat Apache Tomcat die via HTTP (en SOAP) als ingangspunt in de toepassingsserver fungeert.
+Adobe Campaign bevat Apache Tomcat die via HTTP (en SOAP) fungeert als ingangspunt in de toepassingsserver.
 
 U kunt deze geïntegreerde Tomcat-server gebruiken om HTTP-aanvragen te bedienen.
 
@@ -35,7 +35,7 @@ In dit geval:
    http://<computer>:8080
    ```
 
-Nochtans, voor veiligheid en beleid, adviseren wij gebruikend een specifieke server van het Web als belangrijkste ingangspunt voor het verkeer van HTTP wanneer de computer die de Campagne van Adobe in werking stelt op Internet wordt blootgesteld en u wenst om toegang tot de console buiten uw netwerk te openen.
+Nochtans, voor veiligheid en beleidsredenen, adviseren wij gebruikend een specifieke server van het Web als belangrijkste ingangspunt voor het verkeer van HTTP wanneer de computer die Adobe Campaign in werking stelt op Internet wordt blootgesteld en u wenst om toegang tot de console buiten uw netwerk te openen.
 
 Een server van het Web laat u ook gegevensvertrouwelijkheid met het protocol van HTTPs waarborgen.
 
@@ -83,7 +83,7 @@ Voer de volgende stappen uit:
     a2enmod nlsrv
    ```
 
-   Als u de module **mod_rewrite** voor de pagina&#39;s van de Campagne van Adobe gebruikt, moet u de **nlsrv.load** en **nlsrv.conf** dossiers anders noemen aan **zz-nlsrv.load** en **zz-nlsrv.conf**. Voer de volgende opdracht uit om de module te activeren:
+   Als u de module **mod_rewrite** voor Adobe Campaign-pagina&#39;s gebruikt, moet u de bestanden **nlsrv.load** en **nlsrv.conf** hernoemen naar **zz-nlsrv.load** en **zz-nlsrv.conf**. Voer de volgende opdracht uit om de module te activeren:
 
    ```
    a2enmod zz-nlsrv
@@ -99,7 +99,7 @@ Voer de volgende stappen uit:
 
    Sla de wijzigingen op.
 
-1. Voeg vervolgens gebruikers van Adobe Campagne toe aan de Apache-gebruikersgroep en vice versa met het volgende type opdracht:
+1. Voeg vervolgens Adobe Campaign-gebruikers toe aan de Apache-gebruikersgroep en vice versa met behulp van het volgende type opdracht:
 
    ```
    usermod neolane -G www-data
@@ -157,7 +157,7 @@ Voer de volgende stappen uit:
    ForceLanguagePriority
    ```
 
-1. Maak een specifiek configuratiebestand voor Adobe Campagne in de `/etc/httpd/conf.d/` map. Bijvoorbeeld `CampaignApache.conf`
+1. Maak een Adobe Campaign-specifiek configuratiebestand in de `/etc/httpd/conf.d/` map. Bijvoorbeeld `CampaignApache.conf`
 
 1. Voeg voor **RHEL7** de volgende instructies toe aan het bestand:
 
@@ -183,7 +183,7 @@ Voer de volgende stappen uit:
    systemctl daemon-reload
    ```
 
-1. Voeg vervolgens Adobe Campagne-operatoren toe aan de groep Apache-operatoren en vice versa door de opdracht uit te voeren:
+1. Voeg vervolgens Adobe Campaign-operatoren toe aan de groep Apache-operatoren en vice versa door de opdracht uit te voeren:
 
    ```
    usermod -a -G neolane apache
@@ -203,7 +203,7 @@ Voer de volgende stappen uit:
 
 ## De server van het Web lanceren en de configuratie testen{#launching-the-web-server-and-testing-the-configuration}
 
-U kunt de configuratie nu testen door Apache te starten. De Adobe Campagne-module moet nu zijn banner op de console weergeven (twee banners op bepaalde besturingssystemen):
+U kunt de configuratie nu testen door Apache te starten. De Adobe Campaign-module moet nu zijn banner op de console weergeven (twee banners op bepaalde besturingssystemen):
 
 ```
  /etc/init.d/apache start
