@@ -1,7 +1,7 @@
 ---
-title: Begin en einde
-seo-title: Begin en einde
-description: Begin en einde
+title: Start- en Einde-activiteiten
+seo-title: Start- en Einde-activiteiten
+description: Start- en Einde-activiteiten
 seo-description: null
 page-status-flag: never-activated
 uuid: ec0c818c-c307-4f50-908c-507bce0ea27b
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 8b239d5e-2317-42c8-9fee-7d40bea624da
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 9%
 
 ---
 
 
-# Begin en einde{#start-and-end}
+# Start- en Einde-activiteiten{#start-and-end}
 
 Met de **[!UICONTROL Start]** en **[!UICONTROL End]** activiteiten kunt u het begin en einde van een werkstroom grafisch markeren. Deze activiteiten hebben geen functioneel effect en zijn derhalve facultatief.
 
