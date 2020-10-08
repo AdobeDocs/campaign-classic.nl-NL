@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f3ef7b0a7b656f81400ed55a713058d43e6c96b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Campagne SDK integreren in de mobiele toepassing {#integrating-campaign-sdk-into-the-mobile-application}
+# De Campaign-SDK integreren in de mobiele applicatie {#integrating-campaign-sdk-into-the-mobile-application}
 
 Campagne-SDK&#39;s voor iOS en Android zijn een van de onderdelen van de module Mobile App Channel.
 
