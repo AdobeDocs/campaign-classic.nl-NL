@@ -1,7 +1,7 @@
 ---
-title: Integratie configureren
-seo-title: Integratie configureren
-description: Integratie configureren
+title: De integratie configureren
+seo-title: De integratie configureren
+description: De integratie configureren
 seo-description: null
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
@@ -11,21 +11,18 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Pipeline, optie NmsPipeline_Config {#nmspipeline_config}
+# Pipelineoptie NmsPipeline_Config {#nmspipeline_config}
 
-Zodra de authentificatie werkt, [!DNL pipelined] kan de gebeurtenissen terugwinnen en hen verwerken. Het verwerkt slechts trekkers die in Adobe Campaign worden gevormd, die anderen negeren. De trigger moet uit Analytics zijn gegenereerd en vooraf naar de pijpleiding zijn geduwd.
+Zodra de authentificatie werkt, [!DNL pipelined] kan de gebeurtenissen terugwinnen en hen verwerken. Het verwerkt slechts trekkers die in Adobe Campaign worden gevormd, die anderen negeren. De trigger moet van Analytics zijn gegenereerd en vooraf naar de pijplijn zijn geduwd.
 De optie kan ook met een vervanging worden gevormd om alle trekkers ongeacht naam te vangen.
 
 De triggers worden geconfigureerd in een optie onder **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. De optienaam is **[!UICONTROL NmsPipeline_Config]**. Het gegevenstype is &#39;lange tekst&#39; in JSON-indeling.
@@ -75,7 +72,7 @@ In dit tweede voorbeeld worden alle triggers afgevangen.
 
 >[!NOTE]
 >
->De waarde [!DNL Trigger] UID voor een specifieke triggernaam in de Analytics-interface kan worden gevonden als onderdeel van de parameters van de URL-querytekenreeks in de Triggers-interface. De triggerType UID wordt overgegaan in de stroom van pijpleidingsgegevens en de code kan in pipe.JS worden geschreven om trekkerUID aan een gebruikersvriendelijk etiket in kaart te brengen dat in een kolom van de Naam van de Trekker in het pijpleidingsschemaEvents kan worden opgeslagen.
+>De waarde [!DNL Trigger] UID aan een specifieke trekkernaam in de interface van Analytics kan als deel van de parameters van het URL querystring in de interface Triggers worden gevonden. De triggerType UID wordt overgegaan in de stroom van pijpleidingsgegevens en de code kan in pipe.JS worden geschreven om trekkerUID aan een gebruikersvriendelijk etiket in kaart te brengen dat in een kolom van de Naam van de Trekker in het pijpleidingsschemaEvents kan worden opgeslagen.
 
 ## De parameter voor de consument {#consumer-parameter}
 
@@ -85,7 +82,7 @@ De parameter &quot;consument&quot; identificeert het geval als een van deze cons
 
 ## Hoe te om de optie van de Pijpleiding te vormen {#configure-pipeline-option}
 
-Voeg Experience Cloud-triggers toe of bewerk ze onder de &quot;triggers&quot;-array. de rest niet bewerken.
+Experience Cloud-triggers toevoegen of bewerken onder de &quot;triggers&quot;-array; de rest niet bewerken.
 Controleer of de JSON geldig is met behulp van deze [website](http://jsonlint.com/).
 
 * &quot;name&quot; is de trigger-id. Met een jokerteken &quot;*&quot; worden alle triggers afgevangen.
