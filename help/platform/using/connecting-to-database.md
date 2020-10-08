@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cb081f893b7da13cda5892409b063b8781e93b2a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '643'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ Als u een verbinding met de externe database wilt inschakelen, moet u de verbind
 
 >[!CAUTION]
 >
->De gebruiker van de Campagne van Adobe heeft specifieke rechten voor het externe gegevensbestand en de de toepassingsserver van de Campagne van Adobe nodig om gegevens van een externe gegevensbestand te verwerken. Voor meer op dit, verwijs naar de [Verre sectie van de de toegangsrechten](../../platform/using/remote-database-access-rights.md) van het gegevensbestandtoegang.
+>De Adobe Campaign-gebruiker heeft specifieke rechten nodig voor de externe database en de Adobe Campaign-toepassingsserver om gegevens uit een externe database te verwerken. Voor meer op dit, verwijs naar de [Verre sectie van de de toegangsrechten](../../platform/using/remote-database-access-rights.md) van het gegevensbestandtoegang.
 >
 >Om storingen te voorkomen, moeten operatoren die toegang krijgen tot externe, gedeelde gegevens werken vanuit aparte ruimten.
 
@@ -40,7 +40,7 @@ Als u een verbinding met een gedeelde externe database wilt inschakelen, zolang 
 
    Voor verbindingen met een **ODBC** typedatabase moet het **[!UICONTROL Server]** veld de naam van de ODBC-gegevensbron bevatten en niet de servernaam. Bovendien kunnen bepaalde aanvullende configuraties noodzakelijk zijn, afhankelijk van de gebruikte databanken. Raadpleeg de sectie [Specifieke configuraties per databasetype](../../platform/using/specific-configuration-database.md) .
 
-1. Nadat de parameters zijn ingevoerd, klikt u op de **[!UICONTROL Test the connection]** knop om deze goed te keuren.
+1. Wanneer de parameters zijn ingevoerd, klikt u op de **[!UICONTROL Test the connection]** knop om deze goed te keuren.
 
    ![](assets/wf-external-account-create.png)
 
@@ -72,7 +72,7 @@ In de queryactiviteit ziet u bijvoorbeeld de volgende stappen voor het maken van
 
    ![](assets/wf_add_data_local_external_data_param.png)
 
-   Klik op de **[!UICONTROL Next]** knop.
+   Klik op de knop **[!UICONTROL Next]**.
 
 1. Selecteer de tabel waarin de gegevens zijn opgeslagen.
 
@@ -80,7 +80,7 @@ In de queryactiviteit ziet u bijvoorbeeld de volgende stappen voor het maken van
 
    ![](assets/wf_add_data_local_external_data_select_table.png)
 
-1. Klik op de **[!UICONTROL Add]** knop om een of meerdere afstemmingsvelden te definiëren tussen de externe databasegegevens en de gegevens in de Adobe Campagne-database. De **[!UICONTROL Edit expression]** pictogrammen van de tabel **[!UICONTROL Remote field]** en **[!UICONTROL Local field]** bieden u toegang tot de lijst met velden van elk van de tabellen.
+1. Klik op de **[!UICONTROL Add]** knop om een of meerdere afstemmingsvelden te definiëren tussen de externe databasegegevens en de gegevens in de Adobe Campaign-database. De **[!UICONTROL Edit expression]** pictogrammen van de tabel **[!UICONTROL Remote field]** en **[!UICONTROL Local field]** bieden u toegang tot de lijst met velden van elk van de tabellen.
 
    ![](assets/wf_add_data_local_external_data_join.png)
 
