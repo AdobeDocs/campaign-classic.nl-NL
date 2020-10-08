@@ -1,5 +1,5 @@
 ---
-title: De e-mailinhoud definiëren in Adobe Campagne Classic
+title: E-mailinhoud definiëren in Adobe Campaign Classic
 description: Leer hoe u de e-mailinhoud definieert wanneer u Adobe Campaign Classic gebruikt.
 page-status-flag: never-activated
 uuid: ddcc2e3b-e251-4a7a-a22a-28701522839f
@@ -9,19 +9,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2887'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# De e-mailinhoud definiëren{#defining-the-email-content}
+# De e-mailcontent definiëren{#defining-the-email-content}
 
 ## Afzender {#sender}
 
@@ -29,7 +26,7 @@ Als u de naam en het adres wilt definiëren van de afzender die wordt weergegeve
 
 ![](assets/s_ncs_user_wizard_email02.png)
 
-In dit venster kunt u alle gegevens invoeren die nodig zijn om de e-mailberichtkoppen te maken. Deze informatie kan worden gepersonaliseerd. Hiervoor gebruikt u de knoppen rechts van de invoervelden om aanpassingsvelden in te voegen.
+In dit venster kunt u alle gegevens invoeren die nodig zijn om de e-mailberichtkoppen te maken. Deze informatie kan worden aangepast. Hiervoor gebruikt u de knoppen rechts van de invoervelden om aanpassingsvelden in te voegen.
 
 Raadpleeg de sectie [Over personalisatie](../../delivery/using/about-personalization.md) voor meer informatie over het invoegen en gebruiken van verpersoonlijkingsvelden.
 
@@ -38,12 +35,12 @@ Raadpleeg de sectie [Over personalisatie](../../delivery/using/about-personaliza
 >* Het adres van de afzender zal voor antwoorden door gebrek worden gebruikt.
 >* De headerparameters mogen niet leeg zijn. Door gebrek, bevatten zij de waardeninput wanneer het vormen van de plaatsingstovenaar. Raadpleeg de [installatiegids](../../installation/using/deploying-an-instance.md)voor meer informatie.
 >* Het adres van de afzender is verplicht om een e-mailbericht toe te staan (norm RFC).
->* Adobe Campagne controleert de syntaxis van e-mailadressen ingegaan.
+>* Adobe Campaign controleert de syntaxis van de ingevoerde e-mailadressen.
 
 
 >[!IMPORTANT]
 >
->In de context van de controles die door de Leveranciers van de Toegang van Internet (ISPs) worden uitgevoerd om ongevraagde e-mail (spam) te bestrijden, adviseert Adobe het creëren van e-mailrekeningen die aan de adressen beantwoorden die voor leveringen en antwoorden worden gespecificeerd. Vraag de beheerder van het berichtensysteem om advies.
+>In het kader van de controles die door de Leveranciers van de Toegang van Internet (ISPs) worden uitgevoerd om ongevraagde e-mail (spam) te bestrijden, adviseert Adobe het creëren van e-mailrekeningen die aan de adressen beantwoorden die voor leveringen en antwoorden worden gespecificeerd. Vraag de beheerder van het berichtensysteem om advies.
 
 ## Berichtonderwerp {#message-subject}
 
@@ -140,7 +137,7 @@ Selecteer de indeling van de e-mail in de onderste sectie van het venster:
 
 * **[!UICONTROL Use recipient preferences]** (standaardmodus)
 
-   De berichtindeling wordt gedefinieerd op basis van de gegevens die zijn opgeslagen in het ontvangende profiel en wordt standaard opgeslagen in het **[!UICONTROL email format]** veld (@emailFormat). Als een ontvanger berichten in een bepaald formaat wenst te ontvangen, is dit het verzonden formaat. Als het veld niet is ingevuld, wordt een meerdelig alternatief bericht verzonden (zie hieronder).
+   The message format is defined according to the data stored in the recipient profile and stored by default in the **[!UICONTROL email format]** field (@emailFormat). Als een ontvanger berichten in een bepaalde indeling wenst te ontvangen, wordt deze indeling gebruikt. Als het veld niet is ingevuld, wordt een meerdelig alternatief bericht verzonden (zie hieronder).
 
 * **[!UICONTROL Let recipient mail client choose the most appropriate format]**
 
@@ -154,7 +151,7 @@ Selecteer de indeling van de e-mail in de onderste sectie van het venster:
 
    Het bericht wordt verzonden in tekstformaat. De HTML-indeling wordt niet verzonden, maar wordt alleen voor de spiegelpagina gebruikt wanneer de ontvanger op het bericht klikt.
 
-## Interactieve inhoud definiëren {#amp-for-email-format}
+## Interactieve content definiëren {#amp-for-email-format}
 
 Met Adobe Campaign kunt u de nieuwe interactieve [AMP-indeling voor e-mail](https://amp.dev/about/email/) proberen, waarmee u onder bepaalde omstandigheden dynamische e-mailberichten kunt verzenden.
 
@@ -162,7 +159,7 @@ Zie [deze sectie](../../delivery/using/defining-interactive-content.md)voor meer
 
 ## Inhoudsbeheer gebruiken {#using-content-management}
 
-U kunt de inhoud van de levering bepalen gebruikend de vormen van het inhoudsbeheer, direct in de leveringstovenaar. Hiervoor moet u verwijzen naar de publicatiesjabloon van het te gebruiken inhoudsbeheer op het **[!UICONTROL Advanced]** tabblad van de leveringseigenschappen.
+U kunt de inhoud van de levering bepalen gebruikend de vormen van het inhoudsbeheer, direct in de leveringstovenaar. Hiervoor moet u verwijzen naar de publicatiesjabloon van het inhoudsbeheer dat moet worden gebruikt, op het **[!UICONTROL Advanced]** tabblad van de leveringseigenschappen.
 
 ![](assets/s_ncs_content_in_delivery.png)
 
@@ -172,7 +169,7 @@ Met een extra tabblad kunt u inhoud invoeren die automatisch wordt geïntegreerd
 
 >[!NOTE]
 >
->Zie [deze sectie](../../delivery/using/about-content-management.md)voor meer informatie over inhoudsbeheer in Adobe Campaign.
+>Zie [deze sectie](../../delivery/using/about-content-management.md)voor meer informatie over contentbeheer in Adobe Campaign.
 
 ## Afbeeldingen toevoegen {#adding-images}
 
@@ -181,15 +178,15 @@ E-mailleveringen in HTML-indeling kunnen afbeeldingen bevatten. Vanuit de wizard
 Afbeeldingen kunnen:
 
 * Een lokale afbeelding of een afbeelding die wordt aangeroepen vanaf een server
-* Een afbeelding die is opgeslagen in de bibliotheek met openbare bronnen voor Adobe Campagne
+* Een afbeelding die is opgeslagen in de openbare-bronnenbibliotheek van Adobe Campaign
 
-   De openbare middelen zijn toegankelijk via de **[!UICONTROL Resources > Online]** knoop van de hiërarchie van de Campagne van Adobe. Ze zijn gegroepeerd in een bibliotheek en kunnen worden opgenomen in e-mailberichten, maar kunnen ook worden gebruikt voor campagnes of taken, of voor inhoudsbeheer.
+   De openbare middelen zijn toegankelijk via de **[!UICONTROL Resources > Online]** knoop van de hiërarchie van Adobe Campaign. Ze zijn gegroepeerd in een bibliotheek en kunnen worden opgenomen in e-mailberichten, maar kunnen ook worden gebruikt voor campagnes of taken, of voor inhoudsbeheer.
 
-* Een middel dat wordt gedeeld met Adobe Experience Cloud. Zie [deze sectie](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
+* An asset shared with Adobe Experience Cloud. Zie [deze sectie](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 
 >[!IMPORTANT]
 >
->Als u afbeeldingen in de e-mailberichten wilt opnemen met de wizard voor levering, moet de Adobe Campagne-instantie zo zijn geconfigureerd dat het beheer van openbare bronnen is ingeschakeld. Deze procedure kan van de plaatsingstovenaar worden uitgevoerd. Raadpleeg de [volgende sectie](../../installation/using/deploying-an-instance.md) voor meer informatie over de configuratie.
+>Als u afbeeldingen in de e-mailberichten wilt opnemen met de wizard voor levering, moet de Adobe Campaign-instantie zo zijn geconfigureerd dat het beheer van openbare bronnen is ingeschakeld. Deze procedure kan van de plaatsingstovenaar worden uitgevoerd. Raadpleeg de [volgende sectie](../../installation/using/deploying-an-instance.md) voor meer informatie over de configuratie.
 
 Met de wizard voor levering kunt u lokale afbeeldingen of afbeeldingen die zijn opgeslagen in de bibliotheek toevoegen aan de inhoud van berichten. Klik hiertoe op de **[!UICONTROL Image]** knop op de werkbalk HTML-inhoud.
 
@@ -223,7 +220,7 @@ Wanneer u HTML-inhoud met opgenomen afbeeldingen opent in de wizard voor leverin
 
 >[!NOTE]
 >
->Om prestatieproblemen te voorkomen moet elke afbeeldingsgrootte standaard niet groter zijn dan 100.000 bytes als u direct gedownloade afbeeldingen van een gepersonaliseerde URL opneemt als [bijlage](../../delivery/using/attaching-files.md). Deze aanbevolen drempelwaarde kan worden geconfigureerd [in de lijst met klassieke opties](../../installation/using/configuring-campaign-options.md#delivery)voor campagne.
+>Om prestatieproblemen te voorkomen moet elke afbeeldingsgrootte standaard niet groter zijn dan 100.000 bytes als u direct gedownloade afbeeldingen van een gepersonaliseerde URL opneemt als [bijlage](../../delivery/using/attaching-files.md). Deze aanbevolen drempelwaarde kan worden geconfigureerd [in de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
 
 Hier volgt een voorbeeld van een levering met vier afbeeldingen:
 
@@ -247,7 +244,7 @@ Voor elke gedetecteerde afbeelding kunt u de status bekijken:
 
 Tijdens de analysefase worden de afbeeldingen automatisch geüpload naar de server, zodat ze van buitenaf toegankelijk zijn, behalve de lokale afbeeldingen die vooraf moeten worden geüpload.
 
-U kunt vooruit werken en afbeeldingen uploaden, zodat deze door andere Adobe-campagneoperatoren kunnen worden weergegeven. Dit is handig als u in samenwerking werkt. Om dit te doen, klik **[!UICONTROL Upload the images straightaway...]** om de beelden op de server te uploaden.
+U kunt vooruit werken en afbeeldingen uploaden, zodat deze door andere Adobe Campaign-operatoren kunnen worden weergegeven. Dit is handig als u in samenwerking werkt. Om dit te doen, klik **[!UICONTROL Upload the images straightaway...]** om de beelden op de server te uploaden.
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_3.png)
 
@@ -281,7 +278,7 @@ Dan vorm de volgende elementen om uw behoeften aan te passen:
 
 1. Selecteer het type streepjescode.
 
-   * Voor de 1D-indeling zijn de volgende typen beschikbaar in Adobe Campagne: Codabar, Code 128, GS1-128 (voorheen EAN-128), UPC-A, UPC-E, ISBN, EAN-8, Code39, Interleaved 2 of 5, POSTNET and Royal Mail (RM4SCC).
+   * Voor de 1D-indeling zijn de volgende typen beschikbaar in Adobe Campaign: Codabar, Code 128, GS1-128 (voorheen EAN-128), UPC-A, UPC-E, ISBN, EAN-8, Code39, Interleaved 2 of 5, POSTNET and Royal Mail (RM4SCC).
 
       Voorbeeld van een 1D-streepjescode:
 
@@ -340,9 +337,9 @@ Om ervoor te zorgen dat de ontvanger berichten in één van deze formaten correc
 
 ![](assets/deco-mail_03.png)
 
-Als u de **[!UICONTROL Email format]** optie echter als **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** of **[!UICONTROL Text]**, laat Adobe Campaign automatisch de Japanse indeling detecteren (wanneer u het e-mailbericht verzendt) voor gebruik, zodat het bericht correct wordt weergegeven.
+Als u de **[!UICONTROL Email format]** optie echter als **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** of **[!UICONTROL Text]**, laat Adobe Campaign automatisch de Japanse indeling detecteren (wanneer het e-mailbericht wordt verzonden) voor gebruik, zodat het bericht correct wordt weergegeven.
 
-Dit automatische detectiesysteem is gebaseerd op de lijst met vooraf gedefinieerde domeinen die zijn gedefinieerd in de set met **[!UICONTROL Management of Email Formats]** mailregels. Raadpleeg [deze pagina](../../installation/using/email-deliverability.md#managing-email-formats)voor meer informatie over het beheren van e-mailindelingen.
+Dit automatische detectiesysteem is gebaseerd op de lijst met vooraf gedefinieerde domeinen die zijn gedefinieerd in de set met **[!UICONTROL Management of Email Formats]** mailregels. For more on managing email formats, refer to [this page](../../installation/using/email-deliverability.md#managing-email-formats).
 
 ### Beperkingen en aanbevelingen {#limitations-and-recommendations}
 
@@ -367,9 +364,9 @@ Daarom moet u:
 
 ### E-mailinhoud testen {#testing-the-email-content}
 
-#### Een voorbeeld van het bericht bekijken {#previewing-the-message}
+#### Previewing the message {#previewing-the-message}
 
-Met Adobe Campaign kunt u controleren of de berichtindeling is aangepast en kan worden verzonden naar een Japanse mobiele telefoon.
+Met Adobe Campaign kunt u controleren of de berichtindeling is aangepast voor verzending naar een Japanse mobiele telefoon.
 
 Nadat u de inhoud hebt gedefinieerd en het onderwerp van de e-mail hebt ingevoerd, kunt u de weergave en opmaak controleren wanneer het bericht wordt gemaakt.
 
@@ -391,7 +388,7 @@ Naast de diagnose van de voorvertoning wordt een tweede controle uitgevoerd bij 
 
 Met deze typologieregel kunt u ervoor zorgen dat de levering voldoet aan de [indelingsbeperkingen](#limitations-and-recommendations) die door de Japanse operatoren zijn gedefinieerd, met name ten opzichte van de totale grootte van de e-mail, de grootte van de HTML- en tekstsecties, het aantal afbeeldingen in de berichten en de tags in de HTML-inhoud.
 
-#### Proefdrukken verzenden {#sending-proofs}
+#### Proeven verzenden {#sending-proofs}
 
 U kunt proefdrukken verzenden om de levering te testen. Als u de proefdruk verzendt en vervangende adressen gebruikt, voert u adressen in die overeenkomen met de e-mailindeling van het gebruikte profiel.
 
@@ -404,7 +401,7 @@ U kunt bijvoorbeeld het adres van een profiel vervangen door test@softbank.ne.jp
 Voor het verzenden van een e-mailbericht naar ontvangers met Japanse e-mailindelingen via Campagne zijn twee opties mogelijk:
 
 * Twee leveringen maken: één voor Japanse ontvangers en een andere voor andere ontvangers - verwijs naar [deze sectie](#designing-a-specific-delivery-for-japanese-formats).
-* Maak één levering en Adobe Campaign detecteert automatisch de indeling die u wilt gebruiken. Raadpleeg [deze sectie](#designing-a-delivery-for-all-formats).
+* Eén levering maken en Adobe Campaign detecteert automatisch de indeling die moet worden gebruikt. Raadpleeg [deze sectie](#designing-a-delivery-for-all-formats).
 
 #### Een specifieke levering ontwerpen voor Japanse indelingen {#designing-a-specific-delivery-for-japanese-formats}
 
@@ -418,7 +415,7 @@ Hiervoor gebruikt u de **[!UICONTROL Split]** activiteit in uw workflow en defin
 
 #### Een levering ontwerpen voor alle indelingen {#designing-a-delivery-for-all-formats}
 
-Wanneer de indelingen in Adobe Campagne dynamisch worden beheerd volgens het domein (profielen met e-mailindelingen die als **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** of **[!UICONTROL Text]** worden gedefinieerd), kunt u dezelfde levering naar al uw ontvangers verzenden.
+Wanneer Adobe Campaign de indelingen dynamisch beheert op basis van het domein (profielen met e-mailindelingen gedefinieerd als **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** of **[!UICONTROL Text]** ), kunt u dezelfde levering naar al uw ontvangers verzenden.
 
 Het berichtcontact zal correct voor de gebruikers op Japanse mobiele telefoons, enkel zoals voor de standaardontvangers tonen.
 
