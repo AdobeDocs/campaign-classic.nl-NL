@@ -1,5 +1,5 @@
 ---
-title: Monitoringrichtsnoeren
+title: Bewakingsrichtlijnen
 description: Ontdek richtlijnen en beste praktijken om de instantie en processen van de Campagne te controleren.
 page-status-flag: never-activated
 uuid: cf0d782d-47bf-40ae-ab6f-d1d47fa15792
@@ -9,19 +9,16 @@ audience: production
 content-type: reference
 topic-tags: introduction
 discoiquuid: 8b33e6af-15c3-4b30-8ad6-d76a1f33be21
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '712'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
 
-# Monitoringrichtsnoeren {#monitoring-guidelines}
+# Bewakingsrichtlijnen {#monitoring-guidelines}
 
 ## Instance Monitoring dashboard {#instance-monitoring-dashboard}
 
