@@ -1,7 +1,7 @@
 ---
-title: Integratie configureren
-seo-title: Integratie configureren
-description: Integratie configureren
+title: De integratie configureren
+seo-title: De integratie configureren
+description: De integratie configureren
 seo-description: null
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
@@ -11,19 +11,16 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '917'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Gasleiding configureren {#configuring-pipeline}
+# Pipeline configureren {#configuring-pipeline}
 
 De parameters van de authentificatie zoals klantenidentiteitskaart, de privé sleutel, en het authentificatieeindpunt worden gevormd in de dossiers van de instantieconfiguratie.
 De lijst van te verwerken trekkers wordt gevormd in een optie. Het heeft de JSON-indeling.
@@ -42,7 +39,7 @@ Voorwaardelijke configuraties zijn:
 * Maak een bestand met een persoonlijke sleutel en maak vervolgens de Auth-toepassing die met die sleutel is geregistreerd.
 * Configuratie van de triggers in Adobe Analytics.
 
-De configuratie van Adobe Analytics valt buiten het bereik van dit document.
+De Adobe Analytics-configuratie valt buiten het bereik van dit document.
 
 Adobe Campaign vereist de volgende informatie van Adobe Analytics:
 
@@ -63,13 +60,13 @@ Een deel van deze configuratie is een aangepaste ontwikkeling en vereist het vol
 
 ## Verificatie- en configuratiebestanden {#authentication-configuration}
 
-Verificatie is vereist omdat Pipeline wordt gehost in de Adobe Experience Cloud.
+De authentificatie wordt vereist aangezien de Pijpleiding in Adobe Experience Cloud wordt ontvangen.
 Als de server van de Marketing op gebouw wordt ontvangen, wanneer het aan Pijpleiding het programma opent, moet het voor authentiek verklaren om een veilige verbinding te hebben.
 Het gebruikt een paar openbare en privé sleutels. Dit proces is dezelfde functie als een gebruiker/wachtwoord, maar alleen veiliger.
 
 ### IMSOrgId {#imsorgid}
 
-De IMSOrgId is de id van de klant in de Adobe Experience Cloud.
+De IMSOrgId is de id van de klant op de Adobe Experience Cloud.
 Stel het bestand in het bestand instance serverConf.xml in onder het kenmerk IMSOrgId.
 Voorbeeld:
 
@@ -110,14 +107,14 @@ EwIDAQAB
 >
 >Toetsen moeten niet door PuttyGen worden gegenereerd, OpenSSL is de beste keuze.
 
-### Het maken van Auth-clients in Adobe Experience Cloud {#oauth-client-creation}
+### Auth client creation in Adobe Experience Cloud {#oauth-client-creation}
 
 Een toepassing van het type JWT moet worden gemaakt door u aan te melden bij de Adobe Analytics in de juiste organisatie-account onder **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > **[!UICONTROL Legacy Oath application]**.
 
 Voer de volgende stappen uit:
 
-1. Selecteer de **[!UICONTROL Service Account (JWT Assertion)]**.
-1. Voer de **[!UICONTROL Application Name]** code in.
+1. Selecteer **[!UICONTROL Service Account (JWT Assertion)]**.
+1. Enter the **[!UICONTROL Application Name]**.
 1. Registreer de **[!UICONTROL Public key]**.
 1. Selecteer de trigger-s **[!UICONTROL Scopes]**.
 
@@ -180,7 +177,7 @@ Als er fouten optreden, zoekt u naar fouten in de standaarduitvoer (als u deze h
 
 | Option | Beschrijving |
 |:-:|:-:|
-| appName | Id van de OAuth-toepassing (toepassings-id) die is geregistreerd in Adobe Analytics (waar de openbare sleutel is geüpload): Beheer > Gebruikersbeheer > Oudere Oath-toepassing. Zie deze[sectie](../../integrations/using/configuring-pipeline.md#oauth-client-creation). |
+| appName | Id van de OAuth-toepassing (toepassings-id) die is geregistreerd in Adobe Analytics (waar de openbare sleutel is geüpload): Beheer > Gebruikersbeheer > Oudere Oath-toepassing. Refer to this [section](../../integrations/using/configuring-pipeline.md#oauth-client-creation). |
 | authGatewayEndpoint | URL om &quot;gatewaytokens&quot;te krijgen. <br> Standaard: https://api.omniture.com |
 | authPrivateKey | Persoonlijke sleutel (openbaar onderdeel geüpload in Adobe Analytics (zie deze sectie). AES gecodeerd met de optie XtkSecretKey: xtk.session.EncryptPassword(&quot;PRIVATE_KEY&quot;); |
 | disableAuth | De authentificatie van de onbruikbaar maken (het verbinden zonder gatewaytokens wordt slechts goedgekeurd door sommige eindpunten van de ontwikkelingsPijpleiding) |
