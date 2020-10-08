@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 discoiquuid: 18ba04d9-7bab-4eea-8dbb-6c2c138c5293
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1563'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ Als u een beschrijvend analyserapport wilt maken, gebruikt u de toegewezen wizar
 
 ## Gegevens in de database analyseren {#analyzing-data-in-the-database}
 
-De wizard voor beschrijvende analyse kan worden gestart via het **[!UICONTROL Tools > Descriptive analysis]** menu: in dit geval heeft de analyse standaard betrekking op ontvangers (**nms:ontvanger**) . Dit is van toepassing op alle gegevens in de Adobe Campagne-database.
+De wizard voor beschrijvende analyse kan worden gestart via het **[!UICONTROL Tools > Descriptive analysis]** menu: in dit geval heeft de analyse standaard betrekking op ontvangers (**nms:ontvanger**) . Het is van toepassing op alle gegevens in de Adobe Campaign-database.
 
 ![](assets/reporting_descriptive_wz_launch.png)
 
@@ -44,7 +44,7 @@ De analyse zal alleen betrekking hebben op ontvangers van databanken van 16 jaar
 
 U kunt de beschrijvende analysewizard gebruiken via een andere context: een lijst, een workflowovergang, een of meer leveringen, een selectie van ontvangers, enz.
 
-De toepassing is toegankelijk via verschillende knooppunten van de Adobe Campagne-structuur die naar de ontvangende tabel verwijzen.
+Het is toegankelijk via verscheidene knopen van de boom van Adobe Campaign die aan de ontvankelijke lijst richten.
 
 Open de beschrijvende analysewizard door items te selecteren en met de rechtermuisknop te klikken. Alleen de geselecteerde gegevens worden geanalyseerd.
 
@@ -62,7 +62,7 @@ Open de beschrijvende analysewizard door items te selecteren en met de rechtermu
 
    ![](assets/reporting_descriptive_from_deliveries.png)
 
-   Hier worden voorbeelden gegeven van beschrijvende analyses voor leveringen: Een [populatie](../../reporting/using/use-cases.md#analyzing-a-population) analyseren en hier: Logboeken voor [bijhouden van ontvangers analyseren](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
+   Hier worden voorbeelden gegeven van beschrijvende analyses voor leveringen: [Analyseren van een populatie](../../reporting/using/use-cases.md#analyzing-a-population) en hier: [Logboeken](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs)voor het bijhouden van ontvangers analyseren.
 
 ## De kwalitatieve distributiesjabloon configureren {#configuring-the-qualitative-distribution-template}
 
@@ -93,7 +93,7 @@ De opties zijn afhankelijk van de inhoud van het veld:
 * **[!UICONTROL Auto]** : met deze optie kunt u de meest gebruikte waarden weergeven. Ze worden automatisch berekend en elk vertegenwoordigen een percentage van de variabelen in verhouding tot het aantal vakken. Voor numerieke waarden genereert Adobe Campaign automatisch een klasse waarin de gegevens worden gesorteerd.
 * **[!UICONTROL Manual]** : deze optie werkt net als de **[!UICONTROL Auto]** optie, maar u kunt deze waarden handmatig instellen. Klik hiertoe op de **[!UICONTROL Add]** knop rechts van de waardetabel.
 
-   Waarden kunnen automatisch door Adobe Campaign worden geïnitialiseerd voordat u de afbeelding kunt aanpassen: Voer hiertoe het aantal vakken in dat u wilt genereren en klik op de **[!UICONTROL Initialize with]** koppeling, zoals hieronder wordt weergegeven:
+   Waarden kunnen automatisch door Adobe Campaign worden geïnitialiseerd voordat ze worden aangepast: Voer hiertoe het aantal vakken in dat u wilt genereren en klik op de **[!UICONTROL Initialize with]** koppeling, zoals hieronder wordt weergegeven:
 
    ![](assets/reporting_descriptive_initialize.png)
 
@@ -141,13 +141,13 @@ Klik op de **[!UICONTROL Variants]** koppeling om de eigenschappen van het diagr
 
 ![](assets/reporting_descriptive_graphe_options.png)
 
-Welke opties worden aangeboden, is afhankelijk van het geselecteerde diagramtype. Raadpleeg [deze pagina](../../reporting/using/creating-a-chart.md#chart-types-and-variants)voor meer informatie.
+Welke opties worden aangeboden, is afhankelijk van het geselecteerde diagramtype. Raadpleeg [deze sectie](../../reporting/using/creating-a-chart.md#chart-types-and-variants) voor meer informatie.
 
 ### Berekening van statistieken {#statistics-calculation}
 
 De beschrijvende analysetovenaar laat u verscheidene types van statistieken over de gegevens berekenen. Door gebrek, slechts wordt één eenvoudige telling gevormd.
 
-Klik **[!UICONTROL Add]** om een nieuwe statistiek te maken.
+Click **[!UICONTROL Add]** to create a new statistic.
 
 ![](assets/reporting_descriptive_create_stat.png)
 
@@ -183,7 +183,7 @@ De volgende bewerkingen zijn mogelijk:
 
       ![](assets/report_compute_data_sample3.png)
 
-   1. Maak een nieuwe **[!UICONTROL Calculated field]** typestatistiek en voer in het **[!UICONTROL User function]** veld de volgende formule in: **@aankopen/@aantal**.
+   1. Maak een nieuwe **[!UICONTROL Calculated field]** typestatistiek en voer in het **[!UICONTROL User function]** veld de volgende formule in: **@purchase/@count**.
 
       ![](assets/report_compute_data_sample4.png)
 
@@ -217,7 +217,7 @@ Selecteer eerst de variabele waarop de berekeningen betrekking hebben:
 
 ![](assets/s_ncs_user_report_wizard_017.png)
 
-Standaard biedt Adobe Campaign een aantal statistieken die voor de geselecteerde gegevens moeten worden berekend. U kunt deze lijst wijzigen, er statistieken aan toevoegen of verwijderen, afhankelijk van uw behoeften.
+Adobe Campaign biedt standaard een reeks statistieken die voor de geselecteerde gegevens moeten worden berekend. U kunt deze lijst wijzigen, er statistieken aan toevoegen of verwijderen, afhankelijk van uw behoeften.
 
 De volgende bewerkingen zijn mogelijk:
 
