@@ -1,7 +1,7 @@
 ---
-title: Een Facebook-toepassing maken
-seo-title: Een Facebook-toepassing maken
-description: Een Facebook-toepassing maken
+title: Een Facebook-applicatie maken
+seo-title: Een Facebook-applicatie maken
+description: Een Facebook-applicatie maken
 seo-description: null
 page-status-flag: never-activated
 uuid: f02129b9-6f64-41ee-8b56-d85211a58f69
@@ -11,38 +11,38 @@ audience: social
 content-type: reference
 topic-tags: configuration
 discoiquuid: c1d880bb-256e-451c-8c52-198711907f8e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '987'
+ht-degree: 1%
 
 ---
 
 
-# Een Facebook-toepassing maken{#creating-a-facebook-application}
+# Een Facebook-applicatie maken{#creating-a-facebook-application}
 
 Dankzij webtoepassingen kunt u met Social Marketing gepersonaliseerde inhoud weergeven in uw Facebook-toepassingen, waardoor het eenvoudiger wordt om vooruitzichten te krijgen via dit sociale netwerk. Raadpleeg [Voorbeelden van Facebook-apps](../../social/using/examples-of-facebook-apps.md)voor meer voorbeelden van Facebook-webtoepassingen.
 
 >[!NOTE]
 >
->Het is ook mogelijk Adobe Campaign te integreren met een Facebook-toepassing die door een partner is ontwikkeld. In dit geval hoeft u de webtoepassing Adobe Campagne niet te gebruiken om Facebook-profielen aan te schaffen. Voor meer op dit, verwijs naar het [Vormen van externe rekeningen](#configuring-external-accounts).
+>Het is ook mogelijk om Adobe Campaign te integreren met een Facebook-toepassing die door een partner is ontwikkeld. In dit geval is het niet nodig om de Adobe Campaign-webtoepassing te gebruiken voor het aanschaffen van Facebook-profielen. Voor meer op dit, verwijs naar het [Vormen van externe rekeningen](#configuring-external-accounts).
 
 ![](assets/social_webapp_fb_000.png)
 
 Pas de volgende configuratiestappen toe:
 
-1. Maak een of meer Facebook-toepassingen. Raadpleeg voor meer informatie: Een Facebook-toepassing [maken](../../social/using/publishing-on-facebook-walls.md#creating-a-facebook-application).
-1. Voer de **[!UICONTROL terms of service]** en de **[!UICONTROL Privacy policy]** koppelingen in die moeten worden weergegeven op het scherm voor het aanvragen van bevoegdheden op Facebook. Raadpleeg voor meer informatie: Het [ingaan van de Termijnen van de Dienst en de beleidsverbindingen](#entering-the-terms-of-service-and-privacy-policy-links)van de Privacy.
-1. Maak voor elke Facebook-toepassing een **[!UICONTROL Facebook Connect]** type extern account. Raadpleeg voor meer informatie: Externe accounts [configureren](#configuring-external-accounts).
-1. Maak voor elke Facebook-toepassing een Facebook-webtoepassing in Adobe Campaign. Raadpleeg voor meer informatie: Een webtoepassing [van het type Facebook](#creating-a-facebook-type-web-application)maken.
-1. Configureer uw Facebook-toepassingen zodat deze als tabbladen op uw Facebook-pagina worden weergegeven. Raadpleeg voor meer informatie: Facebook-tabs [configureren](#configuring-facebook-tabs).
+1. Maak een of meer Facebook-toepassingen. Raadpleeg voor meer informatie: [Een Facebook-toepassing](../../social/using/publishing-on-facebook-walls.md#creating-a-facebook-application)maken.
+1. Voer de **[!UICONTROL terms of service]** en de **[!UICONTROL Privacy policy]** koppelingen in die moeten worden weergegeven op het scherm voor het aanvragen van bevoegdheden op Facebook. Raadpleeg voor meer informatie: [Het ingaan van de Terms van de Dienst en de beleidsverbindingen](#entering-the-terms-of-service-and-privacy-policy-links)van de Privacy.
+1. Maak voor elke Facebook-toepassing een **[!UICONTROL Facebook Connect]** type extern account. Raadpleeg voor meer informatie: [Externe accounts](#configuring-external-accounts)configureren.
+1. Maak voor elke Facebook-toepassing een Facebook-webtoepassing in Adobe Campaign. Raadpleeg voor meer informatie: [Een webtoepassing](#creating-a-facebook-type-web-application)van het type Facebook maken.
+1. Configureer uw Facebook-toepassingen zodat deze als tabbladen op uw Facebook-pagina worden weergegeven. Raadpleeg voor meer informatie: [Facebook-tabbladen](#configuring-facebook-tabs)configureren.
 
 ## Externe accounts configureren {#configuring-external-accounts}
 
 Voor elke Facebook-toepassing moet u een **[!UICONTROL Facebook Connect]** type extern account maken.
 
-Voor deze stap hebt u toegang nodig tot zowel uw Adobe Campaign-console als een internetbrowser die u hebt aangemeld bij de Facebook-account die u gebruikt voor paginabeheer:
+Voor deze stap hebt u toegang tot zowel uw Adobe Campaign-console als een internetbrowser die u hebt aangemeld bij de Facebook-account die u gebruikt voor paginabeheer:
 
 * **Facebook**: Selecteer de eerder gemaakte toepassing ( [https://developers.facebook.com/apps](https://developers.facebook.com/apps)) en selecteer het tabblad **[!UICONTROL Settings]** > **[!UICONTROL Basic]** .
 
@@ -52,7 +52,7 @@ Voor deze stap hebt u toegang nodig tot zowel uw Adobe Campaign-console als een 
    >
    >Als de **[!UICONTROL Facebook Web Games]** sectie niet verschijnt, klik de **[!UICONTROL Add Platform]** knoop, bij de bodem van de pagina, en selecteer **[!UICONTROL Facebook Web Games]**.
 
-* **Adobe-campagne**: Ga naar de **[!UICONTROL Administration > Platform > External accounts]** knoop van de boom en klik **[!UICONTROL New]**.
+* **Adobe Campaign**: Ga naar de **[!UICONTROL Administration > Platform > External accounts]** knoop van de boom en klik **[!UICONTROL New]**.
 
    ![](assets/social_webapp_fb_005.png)
 
@@ -66,19 +66,19 @@ Voor deze stap hebt u toegang nodig tot zowel uw Adobe Campaign-console als een 
 
    **Toepassing die door een partner wordt ontvangen**
 
-   Het is mogelijk Adobe Campaign te integreren met een Facebook-toepassing die door een partner is ontwikkeld. In dit geval hoeft u de webtoepassingen van Adobe Campagne niet te gebruiken om Facebook-profielen aan te schaffen. Wanneer de Facebook-gebruiker de toepassing installeert, wordt een toets (toegangstoken) gegenereerd. De partner stuurt dit toegangstoken door naar Adobe Campaign door een webservice op te roepen. Adobe Campaign gebruikt deze token vervolgens om u aan te melden bij de Facebook-database en de gegevens te verzamelen die de gebruiker via de toepassing deelt.
+   Het is mogelijk om Adobe Campaign te integreren met een Facebook-toepassing die door een partner is ontwikkeld. In dit geval is het niet nodig om de Adobe Campaign-webtoepassingen te gebruiken voor het aanschaffen van Facebook-profielen. Wanneer de Facebook-gebruiker de toepassing installeert, wordt een toets (toegangstoken) gegenereerd. De partner door:sturen dit toegangstoken aan Adobe Campaign door de Webdienst op te roepen. Adobe Campaign gebruikt dit token vervolgens om zich aan te melden bij de Facebook-database en de gegevens te verzamelen die de gebruiker via de toepassing deelt.
 
    >[!NOTE]
    >
    >De parameters van de webservice worden beschreven in het WSDL-bestand dat hier beschikbaar is: **`https://<Instance name>/nl/jsp/schemawsdl.jsp?schema=nms:visitor`**
 
-   Als u de toepassing van derden wilt integreren in de Adobe-campagne, moet u de inhoud van de velden **[!UICONTROL App ID]** en **[!UICONTROL App Secret]** Facebook kopiëren en deze in de **[!UICONTROL Application ID]** en **[!UICONTROL Application secret]** velden van de console plakken.
+   Als u de toepassing van derden wilt integreren in Adobe Campaign, moet u de inhoud van de velden **[!UICONTROL App ID]** en **[!UICONTROL App Secret]** Facebook kopiëren en deze in de **[!UICONTROL Application ID]** en **[!UICONTROL Application secret]** velden van de console plakken.
 
    ![](assets/social_facebook_external_account_013.png)
 
    **Toepassing die door deze instantie wordt gehost**
 
-   Als u de toepassing op deze instantie wilt hosten (als u geen externe toepassing hebt), moet u de webtoepassingen van Adobe Campagne gebruiken om Facebook-profielen aan te schaffen. Raadpleeg [Voorbeelden van Facebook-apps](../../social/using/examples-of-facebook-apps.md)voor meer informatie.
+   Als u de toepassing op deze instantie wilt hosten (als u geen externe toepassing hebt), moet u de Adobe Campaign-webtoepassingen gebruiken om Facebook-profielen aan te schaffen. Raadpleeg [Voorbeelden van Facebook-apps](../../social/using/examples-of-facebook-apps.md)voor meer informatie.
 
    Kopieer in de Adobe Campaign-console het adres in het **[!UICONTROL Secure Canvas URL]** veld en plak het in het **[!UICONTROL Facebook Web games (https)]** veld op Facebook (in de **[!UICONTROL Facebook Web Games]** sectie).
 
@@ -112,7 +112,7 @@ De configuratiestadia zijn als volgt:
 
 ## Webtoepassingen van het type Facebook maken {#creating-a-facebook-type-web-application}
 
-Met de Adobe Campagne Facebook-toepassing kunt u gepersonaliseerde inhoud weergeven in uw Facebook-toepassing. Voor elke Facebook-toepassing moet u een webtoepassing maken in Adobe Campaign. Ga als volgt te werk om een Facebook-webtoepassing te maken:
+Met de Adobe Campaign Facebook-toepassing kunt u persoonlijke inhoud weergeven in uw Facebook-toepassing. Voor elke Facebook-toepassing moet u een webtoepassing in Adobe Campaign maken. Ga als volgt te werk om een Facebook-webtoepassing te maken:
 
 1. Ga naar het **[!UICONTROL Social networks]** universum, klik op de **[!UICONTROL Applications]** link, dan op de **[!UICONTROL Create]** knop.
 
@@ -132,7 +132,7 @@ Met de Adobe Campagne Facebook-toepassing kunt u gepersonaliseerde inhoud weerge
    >* **[!UICONTROL "Page Tab" competition]**: De Facebook-toepassing is volledig geïntegreerd in de tabbladen van de merkpagina&#39;s.
 
 
-1. Voer in het **[!UICONTROL Application]** veld de externe account in die is gekoppeld aan de Facebook-toepassing. Raadpleeg voor meer informatie: Externe accounts [configureren](#configuring-external-accounts).
+1. Voer in het **[!UICONTROL Application]** veld de externe account in die is gekoppeld aan de Facebook-toepassing. Raadpleeg voor meer informatie: [Externe accounts](#configuring-external-accounts)configureren.
 
    ![](assets/social_webapp_005.png)
 
