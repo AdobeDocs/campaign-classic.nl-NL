@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: ca2cd5bf-78a2-4e43-955d-206f4474d1e0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -56,8 +53,8 @@ In het volgende voorbeeld volgt de activiteit van de lijstupdate een vraag die m
 1. Selecteer de map waarin u de lijst wilt opslaan.
 1. Voer een label in voor de lijst. U kunt dynamische velden invoegen om automatisch de naam te genereren uit de lijst. In dit voorbeeld heeft de lijst dezelfde naam als de query om de inhoud ervan gemakkelijk te kunnen identificeren.
 1. Laat de **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** optie ingeschakeld om ontvangers te verwijderen die niet voldoen aan de doelcriteria en om de nieuwe criteria in de lijst in te voegen.
-1. Laat de **[!UICONTROL Create or use a list with its own table]** optie ook ingeschakeld.
-1. Laat de **[!UICONTROL Generate an outbound transition]** optie uitgeschakeld.
+1. Also leave the **[!UICONTROL Create or use a list with its own table]** option checked.
+1. Leave the **[!UICONTROL Generate an outbound transition]** option unchecked.
 1. Click **[!UICONTROL Ok]** then start the workflow.
 
    ![](assets/s_user_segmentation_update_list_calc_example.png)
