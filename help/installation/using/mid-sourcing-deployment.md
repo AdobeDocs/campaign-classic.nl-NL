@@ -1,7 +1,7 @@
 ---
-title: Implementatie van midsourcing
-seo-title: Implementatie van midsourcing
-description: Implementatie van midsourcing
+title: Midsourcingimplementatie
+seo-title: Midsourcingimplementatie
+description: Midsourcingimplementatie
 seo-description: null
 page-status-flag: never-activated
 uuid: e359c486-7ee6-4295-80fc-4c371a0ef068
@@ -11,18 +11,18 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 19220d8e-9494-46b4-9aa0-4c4a729aea96
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: be590c6d993eecacf51736e3c3e415addae5c6bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '353'
+ht-degree: 2%
 
 ---
 
 
-# Implementatie van midsourcing{#mid-sourcing-deployment}
+# Midsourcingimplementatie{#mid-sourcing-deployment}
 
-Deze configuratie is een optimale middenoplossing tussen een ontvangen (ASP) configuratie en internalisering. De naar buiten gerichte uitvoeringscomponenten worden uitgevoerd op een &quot;mid-sourcing&quot;-server die wordt gehost in Adobe Campaign.
+Deze configuratie is een optimale middenoplossing tussen een ontvangen (ASP) configuratie en internalisering. De naar buiten gerichte uitvoeringscomponenten worden uitgevoerd op een &quot;mid-sourcing&quot;-server die wordt gehost op Adobe Campaign.
 
 >[!NOTE]
 >
