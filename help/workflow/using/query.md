@@ -1,7 +1,7 @@
 ---
-title: Query
-seo-title: Query
-description: Query
+title: Queryactiviteit
+seo-title: Queryactiviteit
+description: Queryactiviteit
 seo-description: null
 page-status-flag: never-activated
 uuid: 32f4f467-5083-414f-8616-1aa4bf2b5867
@@ -11,11 +11,8 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: b53d9810-f61f-4257-b410-e4d30f78429d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1617'
 ht-degree: 0%
@@ -25,7 +22,7 @@ ht-degree: 0%
 
 # Query{#query}
 
-## Een query maken {#creating-a-query}
+## Creating a query {#creating-a-query}
 
 Met een query kunt u een doel selecteren op basis van criteria. U kunt een segmentcode aan het vraagresultaat associëren en extra gegevens opnemen in het.
 Voor meer informatie over vraagsteekproeven, verwijs naar deze [deze sectie](../../workflow/using/querying-recipient-table.md).
@@ -62,7 +59,7 @@ Met de **[!UICONTROL Edit query...]** koppeling kunt u het doeltype, de beperkin
 
 1. Als u **[!UICONTROL Filtering conditions]** in stap 1 of met de optie **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]** hebt geselecteerd, moet u later handmatig filtercriteria toevoegen.
 
-   U kunt ook voorwaarden voor gegevensgroepering toevoegen door het desbetreffende vak in te schakelen. Om dit te doen, moet de het filtreren afmeting aan de het richten van vraag afmeting verschillend zijn. Zie deze [sectie](../../workflow/using/querying-using-grouping-management.md)voor meer informatie over groeperen.
+   U kunt ook voorwaarden voor gegevensgroepering toevoegen door het desbetreffende vak in te schakelen. Om dit te doen, moet de het filtreren afmeting aan de het richten van vraag afmeting verschillend zijn. For more information on grouping, refer to this [section](../../workflow/using/querying-using-grouping-management.md).
 
    U kunt meer criteria ook toevoegen door de bouwer van de Uitdrukking te gebruiken en het te combineren met de logische opties EN, OF, en BEHALVE. Vervolgens kunt u een voorbeeld bekijken van de combinatie **[!UICONTROL Corresponding SQL query...]** van criteria. For more on this refer to this [section](../../platform/using/defining-filter-conditions.md#building-expressions).
 
@@ -124,6 +121,7 @@ Een verzameling gegevens toevoegen die verband houden met een doelgroep:
 
    * Als u meerdere regels wilt herstellen (**[!UICONTROL Limit the line count]**), kunt u opgeven hoeveel regels moeten worden verzameld.
    * Indien de verzamelde kolommen aggregaten bevatten, bijvoorbeeld het aantal gedeclareerde fouten, de gemiddelde uitgaven op een locatie, enz. U kunt de **[!UICONTROL Aggregates]** waarde gebruiken.
+
    ![](assets/query_add_collection_param.png)
 
 1. Geef de subselectie van de verzameling op. Bijvoorbeeld: alleen aankopen in de afgelopen 15 dagen.
@@ -148,6 +146,7 @@ In het volgende voorbeeld probeert de query mannen tussen 18 en 30 jaar te ident
    * Ontvangers jonger dan 30 jaar.
    * Ontvangers ouder dan 18 jaar.
    * Ontvangers die in Frankrijk wonen.
+
    ![](assets/query_example.png)
 
    U kunt de SQL bekijken die uw criteria combineert:
@@ -192,7 +191,7 @@ In de onderstaande sectie vindt u tips en trucs voor het optimaliseren van query
 
    Zorg ervoor u weet wat het uitvoeringsplan van uw vraag zal zijn. Vermijd volledig lijstaftasten, vooral voor vragen in real time of dichtbij vragen in real time die elke minuut lopen.
 
-Voor meer op dit, verwijs naar[de modelbeste praktijken](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html) van Gegevens en de secties van de [afbeelding](../../configuration/using/database-mapping.md) van het Gegevensbestand.
+Voor meer op dit, verwijs naar[de modelbeste praktijken](https://helpx.adobe.com/nl/campaign/kb/acc-data-model-best-practices.html) van Gegevens en de secties van de [afbeelding](../../configuration/using/database-mapping.md) van het Gegevensbestand.
 
 ### Functies {#functions}
 
@@ -231,6 +230,7 @@ For more on filtering dimensions, refer to [this section](../../workflow/using/b
    * gegevens,
    * toepassing,
    * Volumes.
+
    >[!NOTE]
    >
    >Een functie die in een ontwikkelomgeving werkt, werkt mogelijk niet in een productieomgeving waarin de gegevens verschillend kunnen zijn. Probeer de belangrijkste verschillen vast te stellen om risico&#39;s te anticiperen en oplossingen voor te bereiden.
