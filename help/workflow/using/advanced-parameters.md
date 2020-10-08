@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 discoiquuid: f66f1ff5-3601-4eb8-b05d-6f99164890ae
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '466'
+ht-degree: 2%
 
 ---
 
@@ -38,9 +38,9 @@ De velden die op het **[!UICONTROL Advanced]** tabblad moeten worden ingevoerd, 
 
 Dit veld bevat de interne naam van de activiteit.
 
-## Afbeelding {#image}
+## Image {#image}
 
-In dit veld kunt u de afbeelding wijzigen die aan een activiteit is gekoppeld. Raadpleeg voor meer informatie: Afbeeldingen [van activiteiten](../../workflow/using/managing-activity-images.md)beheren.
+In dit veld kunt u de afbeelding wijzigen die aan een activiteit is gekoppeld. Raadpleeg voor meer informatie: [Afbeeldingen](../../workflow/using/managing-activity-images.md)met activiteiten beheren.
 
 ## Uitvoering {#execution}
 
@@ -54,7 +54,7 @@ Deze opties worden over het algemeen geselecteerd in het winkelwagentje door met
 
 ## affiniteit {#affinity}
 
-In dit veld kunt u de uitvoering van een activiteit op een specifieke computer forceren. Raadpleeg voor meer informatie: [Dichtheid](../../workflow/using/managing-propensity.md)beheren.
+In dit veld kunt u de uitvoering van een activiteit op een specifieke computer forceren. For more on this, refer to: [Managing propensity](../../workflow/using/managing-propensity.md).
 
 ## Max. uitvoeringstermijn {#max--execution-period}
 
@@ -69,7 +69,7 @@ In dit veld kunt u het gedrag definiëren dat moet worden toegepast bij het gebr
 
 ## Tijdzone {#time-zone}
 
-In dit veld kunt u de tijdzone van de activiteit selecteren. Voor meer informatie hierover: Tijdzones [beheren](../../workflow/using/managing-time-zones.md).
+In dit veld kunt u de tijdzone van de activiteit selecteren. Voor meer informatie hierover: [Tijdzones](../../workflow/using/managing-time-zones.md)beheren.
 
 ## Bij fouten {#in-case-of-errors}
 
@@ -80,7 +80,7 @@ In dit veld kunt u de actie definiëren die moet worden uitgevoerd wanneer de ac
 
 ## Initialisatiescript {#initialization-script}
 
-In dit veld kunt u variabelen initialiseren of eigenschappen van activiteit wijzigen. Raadpleeg voor meer informatie: JavaScript-scripts en -sjablonen [](../../workflow/using/javascript-scripts-and-templates.md).
+In dit veld kunt u variabelen initialiseren of eigenschappen van activiteit wijzigen. Raadpleeg voor meer informatie: [JavaScript-scripts en -sjablonen](../../workflow/using/javascript-scripts-and-templates.md).
 
 ## Opmerking {#comment}
 
