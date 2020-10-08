@@ -1,5 +1,5 @@
 ---
-title: Leverbaarheid controleren in Adobe Campaign Classic
+title: Leverbaarheid in Adobe Campaign Classic bewaken
 description: Meer informatie over gereedschappen en richtlijnen voor het controleren van de prestaties in Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 0b5c5dbd-f532-4d8a-a255-9e6d88357d8d
@@ -9,14 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 0baef937-f00b-4fc4-8608-a870997be684
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '789'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -29,9 +26,9 @@ Hieronder vindt u nadere informatie over de verschillende monitoringinstrumenten
 
 Gebruik de functies van Adobe Campaign om de prestaties van uw platform te controleren.
 
-Het leveringspakket biedt toegang tot:
+Met het leveringspakket hebt u toegang tot:
 
-* Technisch traceringsrapport voor de prestaties van de dagelijks te leveren prestaties (technische controle). Met dit rapport, dat op aanvraag beschikbaar is, kunt u dagelijks een rapport ontvangen via e-mail op een opgegeven adres. Neem voor meer informatie hierover contact op met het team voor klantenservice van Adobe.
+* Technisch traceringsrapport voor de prestaties van de dagelijks te leveren prestaties (technische controle). Met dit rapport, dat op aanvraag beschikbaar is, kunt u dagelijks een rapport ontvangen via e-mail op een opgegeven adres. Neem voor meer informatie contact op met het Adobe Customer Care-team.
 * Het [Inbox-renderrapport](../../delivery/using/inbox-rendering.md) waarmee u uw berichten kunt bekijken bij belangrijke e-mailclients om de inhoud en reputatie te scannen.
 * Overzicht van berichtkwaliteit (inbox, spam).
 
@@ -42,13 +39,14 @@ U kunt ook de volgende gereedschappen gebruiken:
 * Elke levering produceert een rapport van uitzendingsstatistieken voor de verschillende dienstverleners van Internet (ISPs). Het toont sommige gegevenskwaliteit en reputatie metriek die uw leverbaarheid, met inbegrip van de volgende aantallen kunnen beïnvloeden:
    * **[!UICONTROL Hard bounces]** de gegevenskwaliteit aangeven. Dit getal moet lager zijn dan 2%.
    * **[!UICONTROL Soft bounces]** duidt op reputatie. Dit aantal zou niet hoger moeten zijn dan 10% voor om het even welke bepaalde ISP.
-   Zie de sectie [Leveringsstatistieken](../../reporting/using/global-reports.md#delivery-statistics) voor meer informatie.
+
+   For more on this, see the [Delivery statistics](../../reporting/using/global-reports.md#delivery-statistics) section.
 * Meer in het algemeen biedt het [leveringsdashboard](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) u toegang tot:
    * de [leveringssamenvatting](../../delivery/using/monitoring-a-delivery.md#delivery-summary), waarin de bijzonderheden van de verzending en het [aantal te verzenden, te verwerken en met succes te verzenden berichten](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent) worden vermeld;
    * de [leveringslogboeken en de geschiedenis](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history), waaruit blijkt welk doel is uitgesloten en waarom;
    * de [volgende logboeken](../../delivery/using/monitoring-a-delivery.md#tracking-logs), die volgende informatie zoals opent tonen en klikt.
 
-## Monitoringrichtsnoeren {#monitoring-guidelines}
+## Bewakingsrichtlijnen {#monitoring-guidelines}
 
 Hier volgen enkele aanvullende richtlijnen voor het controleren van de leverbaarheid:
 
@@ -58,7 +56,7 @@ Hier volgen enkele aanvullende richtlijnen voor het controleren van de leverbaar
 * Controleer elke leveringsproductie om ervoor te zorgen dat het met de geldigheid van de leveringsinhoud (b.v. &#39;Flash-verkoop&#39; moet in minuten worden geleverd, niet in dagen).
 * Wanneer het gebruiken van [golven](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves), verifieer dat elke golf genoeg tijd heeft om te beëindigen alvorens volgende wordt teweeggebracht.
 * Controleer of het aantal fouten en nieuwe [quarantines](../../delivery/using/understanding-quarantine-management.md) consistent zijn met andere leveringen.
-* Raadpleeg zorgvuldig de [leveringslogboeken](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) om het soort fouten te controleren die worden benadrukt (bloklijsten, DNS kwesties, anti-spamregels, enz.).
+* Raadpleeg zorgvuldig de [leveringslogboeken](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) om het soort fouten te controleren die worden benadrukt (lijsten van afgewezen personen, DNS kwesties, anti-spamregels, enz.).
 
 ## Spam {#signal-spam}
 
@@ -70,7 +68,7 @@ Spam van het signaal is de Franse dienst die anonymized terugkoppel meldt voor F
 
 ## 250ok {#deliverability-250ok}
 
-[250ok](https://250ok.com/) is een aanvullende controleoplossing voor de interne hulpprogramma&#39;s van Adobe voor het leveren van items. Deze oplossing biedt IP- en domeinbloklijsten en reputatie-indicatoren.
+[250ok](https://250ok.com/) is een complementaire controleoplossing aan de interne hulpmiddelen van de Adobe levering die IP en domeinlijsten van afgewezen personen, en reputatie indicatoren verstrekken.
 
 De verstrekte informatie is real-time, wat een pro-actieve bijstand mogelijk maakt.
 
@@ -94,7 +92,7 @@ In het verslag worden de volgende indicatoren gebruikt:
 
 * **[!UICONTROL DomainKeys]** : Een service die door Yahoo is ontwikkeld en waarmee de identiteit van een e-mailafzender wordt gecertificeerd.
 
-* **[!UICONTROL IP and RBL domain]** (Lijst voor realtime zwarte gaten): Een lijst van IP adressen en domeinen die door de organisaties van de bloklijst voor slechte verzendende reputatie zijn gemarkeerd. Deze lijsten worden bijgehouden door speciale organisaties zoals Spamhaus, Spamcop, SURBL/URIBL, enz. Adobe Campaign verwerkt momenteel controles tegen RBL&#39;s die een significant effect op de leverbaarbaarheid hebben. Deze RBLs wijzen op het verzenden van reputatie, en kan door ISPs worden van verwijzingen voorzien alvorens om uw e-mails te aanvaarden.
+* **[!UICONTROL IP and RBL domain]** (Lijst voor realtime zwarte gaten): Een lijst van IP adressen en domeinen die door de organisaties van de lijst van afgewezen personen voor slechte verzendende reputatie zijn gemarkeerd. Deze lijsten worden bijgehouden door speciale organisaties zoals Spamhaus, Spamcop, SURBL/URIBL, enz. Adobe Campaign verwerkt momenteel controles tegen RBL&#39;s die een significant effect op de leverbaarbaarheid hebben. Deze RBLs wijzen op het verzenden van reputatie, en kan door ISPs worden van verwijzingen voorzien alvorens om uw e-mails te aanvaarden.
 
 * **[!UICONTROL SNDS]** (Smart Network Data Services): Een [Windows Live Hotmail-service](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx)tegen spam. Hotmail is enige ISP die dit type van informatie verstrekt. Benchmarkscores zijn een groen filterresultaat, een klachtenpercentage van minder dan 0,1% en geen spamvallen.
 
