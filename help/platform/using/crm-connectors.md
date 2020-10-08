@@ -1,7 +1,7 @@
 ---
-title: CRM-connectors
-seo-title: CRM-connectors
-description: CRM-connectors
+title: CRM-connectoren
+seo-title: CRM-connectoren
+description: CRM-connectoren
 seo-description: null
 page-status-flag: never-activated
 uuid: ef3d88a1-b0fd-4790-b6e8-63fa339ef991
@@ -11,25 +11,22 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dbe9080c-66e3-4ff6-8f16-959f9748f666
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2541'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# CRM-connectors{#crm-connectors}
+# CRM-connectoren{#crm-connectors}
 
 ## Over CRM-connectors {#about-crm-connectors}
 
-Adobe Campaign biedt verschillende CRM-connectors waarmee u uw Adobe Campaign-platform kunt koppelen aan systemen van derden. Deze schakelaars van CRM laten u toe om contacten, rekeningen, aankopen, enz. te synchroniseren. Ze zorgen ervoor dat uw toepassing eenvoudig kan worden geïntegreerd met verschillende externe en zakelijke toepassingen.
+Adobe Campaign biedt verschillende CRM-connectoren waarmee u uw Adobe Campaign-platform kunt koppelen aan systemen van derden. Deze CRM-connectoren laten u toe om contactpersonen, accounts, aankopen, enzovoort, te synchroniseren. Ze zorgen ervoor dat uw applicatie eenvoudig kan worden geïntegreerd met verschillende externe en zakelijke applicaties.
 
-Deze connectors maken snelle en eenvoudige gegevensintegratie mogelijk: Adobe Campaign verstrekt een specifieke tovenaar voor het verzamelen van en het selecteren van uit de lijsten beschikbaar in CRM. Dit garandeert tweerichtingssynchronisatie om ervoor te zorgen dat de gegevens altijd up-to-date zijn in alle systemen.
+Deze connectoren maken snelle en eenvoudige data-integratie mogelijk: Adobe Campaign verstrekt een specifieke wizard voor het verzamelen en selecteren van data uit de lijsten die beschikbaar zijn in het CRM-systeem. Dit garandeert tweerichtingssynchronisatie om ervoor te zorgen dat de data altijd up-to-date zijn in alle systemen.
 
 >[!NOTE]
 >
@@ -41,7 +38,7 @@ Verbinding maken met de CRM wordt uitgevoerd via specifieke workflowactiviteiten
 
 CRM&#39;s die hieronder worden vermeld, kunnen in Adobe Campaign worden geïntegreerd.
 
-Ondersteunde versies worden gedetailleerd weergegeven in de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
+Ondersteunde versies worden gedetailleerd weergegeven in de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html).
 
 * **Salesforce.com**
 
@@ -192,19 +189,19 @@ Om de schakelaar van de Dynamiek van Microsoft te vormen om met Adobe Campaign t
 
 1. Selecteer het **implementatietype**: **[!UICONTROL On-premise]**, **[!UICONTROL Office 365]** of **[!UICONTROL Web API]**, afhankelijk van de schakelaar u wilt vormen.
 
-   Adobe Campaign Classic steunt de interface van het SPEL van de Dynamiek 365 met het protocol OAuth voor authentificatie.
+   Adobe Campaign Classic steunt de Dynamica 365 REST interface met het protocol OAuth voor authentificatie.
 
    Als u een **[!UICONTROL WebAPI]** plaatsing selecteert, moet u een app op Azure Folder registreren en **clientId** van de Azure Folder krijgen. Deze registratie wordt beschreven in [deze pagina](https://msdn.microsoft.com/en-us/library/mt622431.aspx).
 
    >[!NOTE]
    >
-   >De parameter redirectURL wordt niet vereist door Adobe Campaign Classic.
+   >Adobe Campaign Classic vereist de parameter redirectURL niet.
 
-   De **clientId** -waarde wordt gebruikt met de gebruikersnaam/het wachtwoord om het token voor toonder op te halen met het wachtwoord voor het type gift. Dit wordt genoemd de Verlening van het Wachtwoord van de Eigenaar van het **Middel**. For more on this, refer to [this page](https://blogs.msdn.microsoft.com/wushuai/2016/09/25/resource-owner-password-credentials-grant-in-azure-ad-oauth/).
+   De **clientId** -waarde wordt gebruikt met de gebruikersnaam/het wachtwoord om het token voor toonder op te halen met het wachtwoord voor het type gift. Dit wordt genoemd de Verlening van het Wachtwoord van de Eigenaar van het **Middel**. Raadpleeg [deze pagina](https://blogs.msdn.microsoft.com/wushuai/2016/09/25/resource-owner-password-credentials-grant-in-azure-ad-oauth/) voor meer informatie.
 
    ![](assets/crm_connectors_msdynamics_01_3.png)
 
-   Raadpleeg de [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)voor meer informatie over CRM-versiecompatibiliteit.
+   Raadpleeg de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html)voor meer informatie over CRM-versiecompatibiliteit.
 
 1. Open de configuratietovenaar. Adobe Campaign ontdekt automatisch de lijsten van het de gegevensmalplaatje van de Dynamica van Microsoft.
 
@@ -295,7 +292,7 @@ Voor een de invoeractiviteit, zijn de de activiteitsconfiguratiestappen van de V
 
 1. Met deze **[!UICONTROL Use automatic index...]** optie kunt u automatisch incrementele objectsynchronisatie tussen de CRM en Adobe Campaign beheren, afhankelijk van de datum en de laatste wijziging.
 
-   Raadpleeg voor meer informatie het [Variabele-beheer](#variable-management).
+   For more on this, refer to [Variable management](#variable-management).
 
 #### Beheer van variabelen {#variable-management}
 
@@ -331,7 +328,7 @@ Als u de **[!UICONTROL Automatic index]** optie activeert, worden drie variabele
    >
    >Deze datums worden weergegeven in de volgende notatie: **jjjj/MM/dd uu:mm:ss**.
 
-#### Gegevens filteren {#filtering-data}
+#### Data filteren {#filtering-data}
 
 Om efficiënte werking met diverse CRMs te verzekeren, moeten de filters worden gecreeerd gebruikend de volgende regels:
 
@@ -467,7 +464,7 @@ Om voorwerpen op de kant van CRM te schrappen, moet u de primaire sleutel van de
 
 ![](assets/crm_delete_in_crm.png)
 
-Op het **[!UICONTROL Behavior]** tabblad kunt u de verwerking van afwijzingen inschakelen. Met deze optie wordt een tweede uitvoerovergang voor de **[!UICONTROL CRM connector]** activiteit gegenereerd. Zie [Fout bij verwerken](#error-processing)voor meer informatie.
+Op het **[!UICONTROL Behavior]** tabblad kunt u de verwerking van afwijzingen inschakelen. Met deze optie wordt een tweede uitvoerovergang voor de **[!UICONTROL CRM connector]** activiteit gegenereerd. For more on this, refer to [Error processing](#error-processing).
 
 >[!NOTE]
 >
