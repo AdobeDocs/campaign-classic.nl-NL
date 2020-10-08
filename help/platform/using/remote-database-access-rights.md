@@ -11,18 +11,18 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6143f23e05f4528a9d76aece3a6e41165e2f95d4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1021'
+ht-degree: 1%
 
 ---
 
 
-# Toegangsrechten externe database {#remote-database-access-rights}
+# Toegangsrechten voor externe databases {#remote-database-access-rights}
 
-Ten eerste, zodat de gebruiker bewerkingen kan uitvoeren op een externe database via FDA, moet de gebruiker een specifiek benoemd recht hebben in Adobe Campaign.
+Ten eerste, zodat de gebruiker bewerkingen kan uitvoeren op een externe database via FDA, moet de laatste een specifiek benoemd recht hebben in Adobe Campaign.
 
 1. Selecteer het **[!UICONTROL Administration > Access Management > Named Rights]** knooppunt in de Adobe Campaign Explorer.
 1. Maak een nieuw recht door het gekozen label op te geven.
@@ -36,13 +36,13 @@ Ten eerste, zodat de gebruiker bewerkingen kan uitvoeren op een externe database
       >
       >Het **:base** -onderdeel is optioneel in Oracle.
 
-1. Sla het benoemde recht op en koppel het aan de door u gekozen gebruiker vanuit het **[!UICONTROL Administration > Access Management > Operators]** knooppunt van de Adobe Campagneverkenner.
+1. Sla het benoemde recht op en koppel het aan de gekozen gebruiker vanuit het **[!UICONTROL Administration > Access Management > Operators]** knooppunt van de Adobe Campaign Explorer.
 
-Als u vervolgens de gegevens in een externe database wilt verwerken, moet de Adobe Campagnegebruiker ten minste schrijfrechten voor de database hebben om werktabellen te kunnen maken. Deze worden automatisch verwijderd door Adobe Campaign.
+Als u vervolgens de gegevens in een externe database wilt verwerken, moet de Adobe Campaign-gebruiker ten minste schrijfrechten voor de database hebben om werktabellen te kunnen maken. Deze worden automatisch verwijderd door Adobe Campaign.
 
 In het algemeen zijn de volgende rechten noodzakelijk:
 
-* **VERBINDING**: verbinding met de externe database,
+* **CONNECT**: verbinding met de externe database,
 * **LEESgegevens**: alleen-lezen toegang tot tabellen met klantgegevens,
 * **&#39;MetaData&#39;** LEZEN: toegang tot de catalogi van servergegevens om de tabelstructuur te verkrijgen;
 * **LADEN**: massabelasting in werktafels (vereist bij het werken aan verzamelingen en verbindingen);
@@ -54,12 +54,12 @@ De gegevensbestandbeheerder moet deze rechten met de rechten aanpassen specifiek
 
 ## FDA-rechten {#fda-rights}
 
-|   | Sneeuwvlok | Opnieuw | Oracle | SQLServer | PostgreSQL | MySQL |
+|   | Snowflake | Opnieuw | Oracle | SQLServer | PostgreSQL | MySQL |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | **Verbinding maken met externe database** | GEBRUIK OP WAREHOUSE, GEBRUIK OP DATABASE EN GEBRUIK OP SCHEMA-privileges | Een gebruiker maken die is gekoppeld aan de AWS-account | SESSIEBEVOEGDHEID MAKEN | machtiging CONNECT | CONNECT-bevoegdheid | Een gebruiker maken die is gekoppeld aan een externe host die ALLE PRIVILEGES heeft |
 | **Tabellen maken** | TABEL MAKEN OP SCHEMA-voorrecht | BEVOEGDHEID MAKEN | TABELvoorrecht MAKEN | TABEL MAKEN, machtiging | BEVOEGDHEID MAKEN | BEVOEGDHEID MAKEN |
 | **Indexen maken** | N.v.t. | BEVOEGDHEID MAKEN | INDEX OF CREEER OM HET EVEN WELKE INDEXBEVOEGDHEID | ALTER-machtiging | BEVOEGDHEID MAKEN | INDEX-bevoegdheid |
-| **Functies maken** | FUNCTIE MAKEN OP SCHEMA-voorrecht | GEBRUIK OP TAALvoorrecht om externe pythonuscripts aan te roepen | PROCEDURE MAKEN OF EEN PROCESBEVOEGDHEID MAKEN | FUNCTIE MAKEN, machtiging | USAGE-bevoegdheid | ROUTINE-bevoegdheden MAKEN |
+| **Functies maken** | FUNCTIE MAKEN OP SCHEMA-voorrecht | GEBRUIK OP TAALvoorrecht om externe pythonuscripts aan te roepen | PROCEDURE MAKEN OF EEN PROCESBEVOEGDHEID MAKEN | FUNCTIE MAKEN, machtiging | GEBRUIKSRECHT | ROUTINE-bevoegdheden MAKEN |
 | **Procedures maken** | N.v.t. | GEBRUIK OP TAALvoorrecht om externe pythonuscripts aan te roepen | PROCEDURE MAKEN OF EEN PROCESBEVOEGDHEID MAKEN | TOESTEMMING VOOR PROCEDURE MAKEN | USAGE-bevoegdheid (procedures zijn functies) | ROUTINE-bevoegdheden MAKEN |
 | **Objecten verwijderen (tabellen, indexen, functies, procedures)** | Het object in eigendom hebben | Het object in eigendom of supergebruiker zijn | WILLEKEURIGE &lt;-object > bevoegdheid VERWIJDEREN | ALTER-machtiging | Tabel: eigenaar van de tabelindex: het bezit van de indexfunctie: de functie bezitten | DROP-voorrecht |
 | **Uitvoeringen controleren** | BEVOEGDHEID MONITOR voor het vereiste object | Geen bevoegdheid vereist om de opdracht EXPLAIN te gebruiken | INSERT en SELECT privilege en vereiste bevoegdheid om de instructie uit te voeren waarvoor het EXPLAIN-PLAN is gebaseerd op | SHOWPLAN-machtiging | Geen bevoegdheid vereist om instructie EXPLAIN te gebruiken | SELECT, bevoegdheid |
@@ -70,11 +70,11 @@ De gegevensbestandbeheerder moet deze rechten met de rechten aanpassen specifiek
 
 |   | DB2 UDB | TeraData | InfiniDB | Sybase IQ / Sybase ASE | Netezza | Groenblauw | AsterData |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **Verbinding maken met externe database** | CONNECT-instantie | CONNECT-bevoegdheid | Een gebruiker maken die is gekoppeld aan een externe host die ALLE PRIVILEGES heeft | Geen toestemming vereist om de instructie CONNECT te gebruiken | Geen bevoegdheid vereist | CONNECT-bevoegdheid | CONNECT-bevoegdheid |
+| **Verbinding maken met externe database** | CONNECT-autoriteit | CONNECT-bevoegdheid | Een gebruiker maken die is gekoppeld aan een externe host die ALLE PRIVILEGES heeft | Geen toestemming vereist om de instructie CONNECT te gebruiken | Geen bevoegdheid vereist | CONNECT-bevoegdheid | CONNECT-bevoegdheid |
 | **Tabellen maken** | CREATETAB-instantie | CREATE TABLE or TABLE, trefwoord | BEVOEGDHEID MAKEN | RESOURCE Authority en CREATE permission | TABLE-bevoegdheid | BEVOEGDHEID MAKEN | BEVOEGDHEID MAKEN |
 | **Indexen maken** | INDEX-bevoegdheid | INDEX- of INDEX-trefwoord MAKEN | INDEX-bevoegdheid | RESOURCE Authority en CREATE permission | INDEX-bevoegdheid | BEVOEGDHEID MAKEN | BEVOEGDHEID MAKEN |
-| **Functies maken** | IMPLICIT_SCHEMA-autoriteit of CREATEIN-voorrecht | trefwoord FUNCTIE OF FUNCTIE MAKEN | ROUTINE-bevoegdheden MAKEN | RESOURCE-instantie of DBA-instantie voor Java-functies | FUNCTIE, voorrecht | USAGE-bevoegdheid | FUNCTIE-bevoegdheden MAKEN |
-| **Procedures maken** | IMPLICIT_SCHEMA-autoriteit of CREATEIN-voorrecht | PROCEDURE OF PROCEStrefwoord MAKEN | ROUTINE-bevoegdheden MAKEN | BRONNEN | PROCESBEVOEGDHEID | USAGE-bevoegdheid | FUNCTIE-bevoegdheden MAKEN |
+| **Functies maken** | IMPLICIT_SCHEMA-autoriteit of CREATEIN-voorrecht | trefwoord FUNCTIE OF FUNCTIE MAKEN | ROUTINE-bevoegdheden MAKEN | RESOURCE-instantie of DBA-instantie voor Java-functies | FUNCTIE, voorrecht | GEBRUIKSRECHT | FUNCTIE-bevoegdheden MAKEN |
+| **Procedures maken** | IMPLICIT_SCHEMA-autoriteit of CREATEIN-voorrecht | PROCEDURE OF PROCEStrefwoord MAKEN | ROUTINE-bevoegdheden MAKEN | BRONNEN | PROCESBEVOEGDHEID | GEBRUIKSRECHT | FUNCTIE-bevoegdheden MAKEN |
 | **Objecten verwijderen (tabellen, indexen, functies, procedures)** | DROPIN-bevoegdheid of -BEHEER of -bevoegdheid voor het bezit van het object | DROP &lt; object > of objectgerelateerd trefwoord | DROP-voorrecht | Eigenaar van het object of de DBA-instantie | DROP-voorrecht | Het object in eigendom hebben | Het object in eigendom hebben |
 | **Uitvoeringen controleren** | EXPLAIN-instantie | Geen bevoegdheid vereist om instructie EXPLAIN te gebruiken | SELECT, bevoegdheid | Alleen een systeembeheerder kan sp_showplan uitvoeren | Geen bevoegdheid vereist om instructie EXPLAIN te gebruiken | Geen bevoegdheid vereist om instructie EXPLAIN te gebruiken | Geen bevoegdheid vereist om instructie EXPLAIN te gebruiken |
 | **Gegevens schrijven** | Rechten of DATAACCESS-instantie INVOEGEN en bijwerken | Rechten INVOEGEN en BIJWERKEN | Rechten INVOEGEN en BIJWERKEN | Machtigingen INVOEGEN en BIJWERKEN | Rechten INVOEGEN en BIJWERKEN | Rechten INVOEGEN en BIJWERKEN | Rechten INVOEGEN en BIJWERKEN |
