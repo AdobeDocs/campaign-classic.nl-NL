@@ -1,7 +1,7 @@
 ---
-title: '"Gebruik gevallen: webformulieren"'
-seo-title: '"Gebruik gevallen: webformulieren"'
-description: '"Gebruik gevallen: webformulieren"'
+title: '"Gebruiksscenario: webformulieren"'
+seo-title: '"Gebruiksscenario: webformulieren"'
+description: '"Gebruiksscenario: webformulieren"'
 seo-description: null
 page-status-flag: never-activated
 uuid: b2c3f171-325e-4913-a188-a791bad0df2e
@@ -11,19 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: cfa22577-0b9e-4eee-900d-214b81256d81
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '972'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Gebruik hoofdletters/kleine letters: webformulieren{#use-cases-web-forms}
+# Gebruiksscenario: webformulieren{#use-cases-web-forms}
 
 ## Abonnementsformulieren met dubbele aanmelding maken {#create-a-subscription--form-with-double-opt-in}
 
@@ -48,7 +45,7 @@ Dit voorbeeld is gebaseerd op het volgende scenario:
 
 De berichten van de bevestiging worden verzonden via een specifiek leveringsmalplaatje dat op het tijdelijke de dienstniveau van verwijzingen wordt voorzien.
 
-1. Selecteer in het **[!UICONTROL Explorer]** vak **[!UICONTROL Resources > Templates > Delivery templates]**.
+1. In the **[!UICONTROL Explorer]** , select **[!UICONTROL Resources > Templates > Delivery templates]**.
 1. Maak een leveringssjabloon voor het verzenden van de bevestigingsberichten voor abonnementen.
 1. Klik op de **[!UICONTROL To]** knop in het dialoogvenster **[!UICONTROL Email parameters]** om de leveringssjabloon te koppelen aan de doeltoewijzing voor abonnementen in plaats van aan ontvangers.
 
@@ -86,7 +83,7 @@ De webformulierworkflow omvat de volgende activiteiten:
 
 ![](assets/s_ncs_admin_survey_double-opt-in_sample_4c.png)
 
-Hiervoor voert u de volgende stappen uit:
+Volg de onderstaande stappen om dit te doen:
 
 1. Maak een webformulier en kies de sjabloon **[!UICONTROL Newsletter subscription (subNewsletter)]**.
 
