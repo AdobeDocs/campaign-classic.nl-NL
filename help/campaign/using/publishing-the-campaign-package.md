@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: 8653d4fc-e47f-451a-95f2-c9209a252664
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '460'
+ht-degree: 3%
 
 ---
 
@@ -42,7 +42,7 @@ Vervolgens wordt een meldingsbericht naar de controleur verzonden om de beschikb
 
 >[!NOTE]
 >
->Op het niveau van de organisatie kunt u ook revisoren opgeven om orders goed te keuren. Raadpleeg [Organisatorische entiteiten](../../campaign/using/about-distributed-marketing.md#organizational-entities)voor meer informatie hierover.
+>Op het niveau van de organisatie kunt u ook revisoren opgeven om orders goed te keuren. For more on this, refer to [Organizational entities](../../campaign/using/about-distributed-marketing.md#organizational-entities).
 
 ## Andere revisoren toevoegen {#adding-other-reviewers}
 
@@ -62,10 +62,10 @@ Herinneringen kunnen op een bepaalde datum en/of **x** dagen na de verzenddatum 
 
 Zodra het wordt bepaald en het pakket ter goedkeuring is voorgelegd, wordt het uitvoeringsprogramma getoond op het **[!UICONTROL Audit]** lusje. Het toont de verwerkingstijd die op vorige configuratie wordt berekend, evenals de data van alle gevormde herinneringen wordt berekend.
 
-## Goedkeuren via de Adobe Campaign-console {#approving-via-the-adobe-campaign-console}
+## Goedkeuring via de Adobe Campaign-console {#approving-via-the-adobe-campaign-console}
 
 Als er geen controleur is opgegeven of als geen van de aangemelde exploitanten het pakket heeft goedgekeurd, kunt u met de **[!UICONTROL Approve the package]** knop rechtstreeks naar de goedkeuring gaan vanuit het campagnepakket **[!UICONTROL Dashboard]** of vanuit het overzicht van het pakket.
 
 ![](assets/s_advuser_mkg_dist_valid_button.png)
 
-Na goedkeuring wordt de campagne gepubliceerd, toegevoegd aan de lijst en kunnen lokale entiteiten deze gebruiken zodra de beschikbaarheidsdatum is bereikt. Als de lokale entiteiten tijdens het maken van de campagne zijn opgegeven, wordt een bericht verzonden naar de operatoren in de kennisgevingsgroep om hen te laten weten dat de campagne beschikbaar is. Als er vooraf geen entiteit is opgegeven, is de campagne standaard beschikbaar voor alle lokale entiteiten. Raadpleeg [Organisatorische entiteiten](../../campaign/using/about-distributed-marketing.md#organizational-entities)voor meer informatie hierover.
+Na goedkeuring wordt de campagne gepubliceerd, toegevoegd aan de lijst en kunnen lokale entiteiten deze gebruiken zodra de beschikbaarheidsdatum is bereikt. Als de lokale entiteiten tijdens het maken van de campagne zijn opgegeven, wordt een bericht verzonden naar de operatoren in de kennisgevingsgroep om hen te laten weten dat de campagne beschikbaar is. Als er vooraf geen entiteit is opgegeven, is de campagne standaard beschikbaar voor alle lokale entiteiten. For more on this, refer to [Organizational entities](../../campaign/using/about-distributed-marketing.md#organizational-entities).
