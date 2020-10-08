@@ -1,7 +1,7 @@
 ---
-title: Migreren in Linux voor Adobe Campagne v7
-seo-title: Migreren in Linux voor Adobe Campagne v7
-description: Migreren in Linux voor Adobe Campagne v7
+title: Migreren in Linux voor Adobe Campaign v7
+seo-title: Migreren in Linux voor Adobe Campaign v7
+description: Migreren in Linux voor Adobe Campaign v7
 seo-description: null
 page-status-flag: never-activated
 uuid: 47870ea4-b07b-4db7-8094-7a8b6f4b6936
@@ -11,16 +11,16 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 discoiquuid: 8f6519e8-5c8d-4974-b193-a9f1cf78b3a3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1897'
+ht-degree: 1%
 
 ---
 
 
-# Migreren in Linux voor Adobe Campagne v7{#migrating-in-linux-for-adobe-campaign-v}
+# Migreren in Linux voor Adobe Campaign v7{#migrating-in-linux-for-adobe-campaign-v}
 
 ## Algemene procedure {#general-procedure}
 
@@ -28,8 +28,8 @@ De migratiestappen in Linux zijn als volgt:
 
 1. Stopservices: zie [Servicestop](#service-stop).
 1. Sla de database op: zie [Een back-up maken van de database en de bestaande installatie](#back-up-the-database-and-the-existing-installation).
-1. Verwijder vorige Adobe Campagne versiepakketten: Zie [Adobe Campagne-pakketten van vorige versies](#uninstalling-adobe-campaign-previous-version-packages)verwijderen.
-1. Het platform migreren: raadpleeg [Adobe Campagne v7](#deploying-adobe-campaign-v7)implementeren.
+1. Verwijder vorige Adobe Campaign-versiepakketten: zie [Verwijderen van pakketten](#uninstalling-adobe-campaign-previous-version-packages)van vorige versies van Adobe Campaign.
+1. Het platform migreren: Raadpleeg [Adobe Campaign v7](#deploying-adobe-campaign-v7)implementeren.
 1. Herstart service: verwijzen naar [herstartservices](#re-starting-services).
 
 ## Servicestop {#service-stop}
@@ -44,7 +44,7 @@ In de eerste plaats moeten alle processen met toegang tot de database op alle be
    ```
 
 1. Meld u opnieuw aan als **hoofdmap**.
-1. Stop Adobe Campagne vorige versieservices op alle servers.
+1. Stop de vorige Adobe Campaign-versieservices op alle servers.
 
    ```
    /etc/init.d/nlserver6 stop
@@ -56,7 +56,7 @@ In de eerste plaats moeten alle processen met toegang tot de database op alle be
    /etc/init.d/nlserver5 stop
    ```
 
-1. Zorg ervoor dat de Adobe Campagnediensten op elke server worden tegengehouden.
+1. Zorg ervoor dat Adobe Campaign-services op elke server worden gestopt.
 
    ```
    ps waux | grep nlserver
@@ -64,13 +64,13 @@ In de eerste plaats moeten alle processen met toegang tot de database op alle be
 
    De lijst met actieve processen wordt samen met hun id (PID) weergegeven.
 
-1. Als een of meer Adobe Campagne-processen na een paar minuten nog actief zijn of geblokkeerd zijn, kunt u ze doden.
+1. Als een of meer Adobe Campaign-processen na een paar minuten nog actief zijn of geblokkeerd zijn, moet u ze doden.
 
    ```
    killall nlserver
    ```
 
-1. Als sommige processen na een paar minuten nog actief zijn, kunt u ze dwingen te sluiten met de opdracht:
+1. Als sommige processen na een paar minuten nog actief zijn, kunt u ze forceren te sluiten met de opdracht:
 
    ```
    killall -9 nlserver
@@ -78,9 +78,9 @@ In de eerste plaats moeten alle processen met toegang tot de database op alle be
 
 ## Maak een back-up van de database en de bestaande installatie {#back-up-the-database-and-the-existing-installation}
 
-De procedure is afhankelijk van de vorige versie van uw Adobe-campagne.
+De procedure is afhankelijk van de vorige versie van Adobe Campaign.
 
-### Migreren van Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5-11}
+### Migreren vanuit Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5-11}
 
 1. Maak een back-up van de Adobe Campaign-database.
 1. Meld u aan als **neolane** en maak een back-up van de map **nl5** met de volgende opdracht:
@@ -115,7 +115,7 @@ De procedure is afhankelijk van de vorige versie van uw Adobe-campagne.
    </serverconf>
    ```
 
-### Migreren van Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6-02}
+### Migreren vanuit Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6-02}
 
 1. Maak een back-up van de Adobe Campaign-database.
 1. Meld u aan als **neolane** en maak een back-up van de map **nl6** met de volgende opdracht:
@@ -129,7 +129,7 @@ De procedure is afhankelijk van de vorige versie van uw Adobe-campagne.
    >
    >We raden u uit voorzorg aan de map **nl6.back** te comprimeren en op een andere beveiligde locatie dan de server op te slaan.
 
-1. Bewerk de map **config-`<instance name>`.xml** (in de map **nl6.back** ) om de **mta**, **wfserver**, **** stat, enz. te voorkomen. services worden automatisch gestart. Vervang bijvoorbeeld **autoStart** door **_autoStart** (nog steeds **Adobe Campagne**).
+1. Bewerk de map **config-`<instance name>`.xml** (in de map **nl6.back** ) om de **mta**, **wfserver**, **** stat, enz. te voorkomen. services worden automatisch gestart. Vervang bijvoorbeeld **autoStart** door **_autoStart** (nog steeds **Adobe Campaign**).
 
    ```
    <?xml version='1.0'?>
@@ -150,7 +150,7 @@ De procedure is afhankelijk van de vorige versie van uw Adobe-campagne.
    </serverconf>
    ```
 
-### Migreren van Adobe-campagne v6.1 {#migrating-from-adobe-campaign-v6-1}
+### Migreren vanuit Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6-1}
 
 1. Maak een back-up van de Adobe Campaign-database.
 1. Meld u aan als **neolane** en maak een back-up van de map **nl6** met de volgende opdracht:
@@ -164,14 +164,14 @@ De procedure is afhankelijk van de vorige versie van uw Adobe-campagne.
    >
    >We raden u uit voorzorg aan de map **nl6.back** te comprimeren en op een andere beveiligde locatie dan de server op te slaan.
 
-## Installatie van pakketten van vorige versies van Adobe Campagne verwijderen {#uninstalling-adobe-campaign-previous-version-packages}
+## Oude Adobe Campaign-versiepakketten verwijderen {#uninstalling-adobe-campaign-previous-version-packages}
 
-De procedure is afhankelijk van de vorige versie van uw Adobe-campagne.
+De procedure is afhankelijk van de vorige versie van Adobe Campaign.
 
-### Adobe Campagne v5-pakketten verwijderen {#uninstalling-adobe-campaign-v5-packages}
+### Adobe Campaign v5-pakketten verwijderen {#uninstalling-adobe-campaign-v5-packages}
 
 1. Meld u aan als **hoofdmap**.
-1. Identificeer de Adobe Campagnepakketten die met het volgende bevel worden geïnstalleerd.
+1. Identificeer de geïnstalleerde pakketten van Adobe Campaign gebruikend het volgende bevel.
 
    * In **Debian**:
 
@@ -192,7 +192,7 @@ De procedure is afhankelijk van de vorige versie van uw Adobe-campagne.
       rpm -qa | grep nl
       ```
 
-1. Verwijder Adobe Campagne v5-pakketten.
+1. Verwijder Adobe Campaign v5-pakketten.
 
    * In **Debian**:
 
@@ -206,12 +206,12 @@ De procedure is afhankelijk van de vorige versie van uw Adobe-campagne.
       rprm -ev nlserver5 nlthirdparty5
       ```
 
-### Adobe Campagne v6-pakketten verwijderen {#uninstalling-adobe-campaign-v6-packages}
+### Adobe Campaign v6-pakketten verwijderen {#uninstalling-adobe-campaign-v6-packages}
 
-In deze sectie ziet u hoe u pakketten van Adobe Campagne versie 6.02 of v6.1 kunt verwijderen.
+In deze sectie wordt getoond hoe u Adobe Campaign v6.02- of v6.1-pakketten kunt verwijderen.
 
 1. Meld u aan als **hoofdmap**.
-1. Identificeer de Adobe Campagnepakketten die met het volgende bevel worden geïnstalleerd.
+1. Identificeer de geïnstalleerde pakketten van Adobe Campaign gebruikend het volgende bevel.
 
    * In **Debian**:
 
@@ -232,7 +232,7 @@ In deze sectie ziet u hoe u pakketten van Adobe Campagne versie 6.02 of v6.1 kun
       rpm -qa | grep nl
       ```
 
-1. Verwijder Adobe Campagne v6-pakketten.
+1. Verwijder Adobe Campaign v6-pakketten.
 
    * In **Debian**:
 
@@ -246,20 +246,20 @@ In deze sectie ziet u hoe u pakketten van Adobe Campagne versie 6.02 of v6.1 kun
       rprm -ev nlserver6 nlthirdparty6
       ```
 
-## Adobe Campagne v7 implementeren {#deploying-adobe-campaign-v7}
+## Adobe Campaign v7 implementeren {#deploying-adobe-campaign-v7}
 
-De procedure is afhankelijk van de vorige versie van uw Adobe-campagne.
+De procedure is afhankelijk van de vorige versie van Adobe Campaign.
 
-### Migreren van Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5_11-1}
+### Migreren vanuit Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5_11-1}
 
-Het implementeren van Adobe Campaign bestaat uit twee fasen:
+Bij het implementeren van Adobe Campaign worden twee stappen uitgevoerd:
 
-* Adobe Campagne v7-pakketten installeren: deze bewerking moet op elke server worden uitgevoerd.
+* Adobe Campaign v7-pakketten installeren: deze bewerking moet op elke server worden uitgevoerd.
 * De postupgrade: deze opdracht moet voor elke instantie worden gestart.
 
 Voer de volgende stappen uit om Adobe Campaign te implementeren:
 
-1. Installeer de meest recente pakketten van de Campagne van Adobe v7 gebruikend het volgende bevel:
+1. Installeer de meest recente Adobe Campaign v7-pakketten met de volgende opdracht:
 
    * In **Debian**:
 
@@ -278,9 +278,9 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
 
    >[!NOTE]
    >
-   >Wanneer u migreert vanaf v5.11, wordt Adobe Campaign standaard geïnstalleerd in de map **/usr/local/neolane/nl6/** .
+   >Bij het migreren vanaf v5.11 wordt Adobe Campaign standaard geïnstalleerd in de map **/usr/local/neolane/nl6/** .
    >
-   >Nadat de pakketten zijn geïnstalleerd, wordt het volgende bericht weergegeven: De optie **&#39;WdbcTimeZone&#39; ontbreekt**. Dit is normaal.
+   >Nadat de pakketten zijn geïnstalleerd, wordt het volgende bericht weergegeven: **De optie WdbcTimeZone ontbreekt**. Dit is normaal.
 
 1. Als u het installatieprogramma van de clientconsole beschikbaar wilt maken, kopieert u dit naar de installatiemap van Adobe Campaign:
 
@@ -301,7 +301,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
 
    >[!NOTE]
    >
-   >Wanneer u zich aanmeldt als **neolane**, wordt het volgende bericht weergegeven: **nl5/env.sh : Bestand of map** bestaat niet. Dit is normaal.
+   >Wanneer u zich aanmeldt als **neolane**, wordt het volgende bericht weergegeven: **nl5/env.sh: Bestand of map** bestaat niet. Dit is normaal.
 
    Vervang **nl5/env.sh** aan het einde van het bestand door **nl6/env.sh**.
 
@@ -319,7 +319,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
 
    >[!NOTE]
    >
-   >Met deze opdrachten kunt u het interne bestandssysteem van Adobe Campagne v6 maken: **conf** directory (met de bestanden **config-default.xml** en **serverConf.xml** ), **var** directory.
+   >Met deze opdrachten kunt u het interne bestandssysteem van Adobe Campaign v6 maken: **conf** directory (met de bestanden **config-default.xml** en **serverConf.xml** ), directory **var** .
 
 1. Ga naar de back-upmap **nl5.back** en kopieer (overschrijf) de configuratiebestanden en submappen van elke instantie. Meld u aan als **neolaan** en voer de volgende opdracht uit:
 
@@ -336,7 +336,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
    cp -r nl5.back/var/* nl6/var/
    ```
 
-1. Pas in de Adobe Campagne v7 **serverConf.xml** - en **config-default.xml** -bestanden de specifieke configuraties toe die u voor Adobe Campagne v5 had. Gebruik voor het bestand **serverConf.xml** het bestand **nl5/conf/serverConf.xml.diff** .
+1. Pas in de bestanden Adobe Campaign v7 **serverConf.xml** en **config-default.xml** de specifieke configuraties toe die u voor Adobe Campaign v5 had. Gebruik voor het bestand **serverConf.xml** het bestand **nl5/conf/serverConf.xml.diff** .
 
    >[!NOTE]
    >
@@ -352,7 +352,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
    >
    >Als de **gevolgde logd** dienst niet op de volgende server is begonnen, zal geen het volgen informatie door:sturen.
 
-1. Laad de configuratie van Adobe Campagne v7 opnieuw gebruikend het volgende bevel:
+1. Laad de Adobe Campaign v7 configuratie opnieuw gebruikend het volgende bevel:
 
    ```
    nlserver config -reload
@@ -375,18 +375,18 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
 
 >[!IMPORTANT]
 >
->Start Adobe Campagne-services nog niet: In Apache moeten nog wijzigingen worden aangebracht.
+>Start nog geen Adobe Campaign-services: In Apache moeten nog wijzigingen worden aangebracht.
 
-### Migreren van Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6_02-1}
+### Migreren vanuit Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6_02-1}
 
-Het implementeren van Adobe Campaign bestaat uit twee fasen:
+Bij het implementeren van Adobe Campaign worden twee stappen uitgevoerd:
 
-* Adobe Campagne v7-pakketten installeren: deze bewerking moet op elke server worden uitgevoerd.
+* Adobe Campaign v7-pakketten installeren: deze bewerking moet op elke server worden uitgevoerd.
 * De postupgrade: deze opdracht moet voor elke instantie worden gestart.
 
 Voer de volgende stappen uit om Adobe Campaign te implementeren:
 
-1. Installeer de meest recente pakketten van de Campagne van Adobe v7 gebruikend het volgende bevel:
+1. Installeer de meest recente Adobe Campaign v7-pakketten met de volgende opdracht:
 
    * In **Debian**:
 
@@ -405,7 +405,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
 
    >[!NOTE]
    >
-   >Adobe Campagne v7 is standaard in dezelfde map geïnstalleerd als Adobe Campagne v6.02: **/usr/local/neolane/nl6/**.
+   >Adobe Campaign v7 wordt standaard in dezelfde map geïnstalleerd als Adobe Campaign v6.02: **/usr/local/neolane/nl6/**.
 
 1. Als u het installatieprogramma van de clientconsole beschikbaar wilt maken, kopieert u dit naar de installatiemap van Adobe Campaign:
 
@@ -438,7 +438,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
    cp -r nl6.back/var/* nl6/var/
    ```
 
-1. Laad de configuratie van Adobe Campagne v7 opnieuw gebruikend het volgende bevel:
+1. Laad de Adobe Campaign v7 configuratie opnieuw gebruikend het volgende bevel:
 
    ```
    nlserver config -reload
@@ -455,16 +455,16 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
    >
    >De modus &quot;multi timezone&quot; was alleen beschikbaar in v6.02 voor PostgreSQL-databasemotoren. Het is nu beschikbaar ongeacht welke versie van de database-engine wordt gebruikt. We raden u ten zeerste aan uw basis te upgraden naar &quot;multi timezone&quot;. Raadpleeg de sectie [Tijdzones](../../migration/using/general-configurations.md#time-zones) voor meer informatie over tijdzoneopties.
 
-### Migreren van Adobe-campagne v6.1 {#migrating-from-adobe-campaign-v6_1-1}
+### Migreren vanuit Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6_1-1}
 
-Het implementeren van Adobe Campaign bestaat uit twee fasen:
+Bij het implementeren van Adobe Campaign worden twee stappen uitgevoerd:
 
-* Adobe Campagne v7-pakketten installeren: deze bewerking moet op elke server worden uitgevoerd.
+* Adobe Campaign v7-pakketten installeren: deze bewerking moet op elke server worden uitgevoerd.
 * De postupgrade: deze opdracht moet voor elke instantie worden gestart.
 
 Voer de volgende stappen uit om Adobe Campaign te implementeren:
 
-1. Installeer de meest recente pakketten van de Campagne van Adobe v7 gebruikend het volgende bevel:
+1. Installeer de meest recente Adobe Campaign v7-pakketten met de volgende opdracht:
 
    * In **Debian**:
 
@@ -506,7 +506,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
    cp -r nl6.back/var/* nl6/var/
    ```
 
-1. Laad de configuratie van Adobe Campagne v7 opnieuw gebruikend het volgende bevel:
+1. Laad de Adobe Campaign v7 configuratie opnieuw gebruikend het volgende bevel:
 
    ```
    nlserver config -reload
@@ -523,7 +523,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
 
 >[!NOTE]
 >
->Deze sectie is alleen van toepassing wanneer u migreert van Adobe Campagne v5.11.
+>Deze sectie is alleen van toepassing wanneer u migreert vanaf Adobe Campaign v5.11.
 
 In dit stadium moet Apache worden stopgezet. Zie: [Servicestop](#service-stop).
 
@@ -583,9 +583,9 @@ Als u vanaf v6.02 of eerder migreert, moet u uw veiligheidsstreken vormen alvore
 
 ## Herstart {#re-starting-services}
 
-De procedure is afhankelijk van de vorige versie van uw Adobe-campagne.
+De procedure is afhankelijk van de vorige versie van Adobe Campaign.
 
-### Migreren van Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5_11-2}
+### Migreren vanuit Adobe Campaign v5.11 {#migrating-from-adobe-campaign-v5_11-2}
 
 In de **config-`<instance name>`.xml** dossiers, activeer het automatische opstarten van **mta**, **wfserver**, **staat**, enz. diensten.
 
@@ -608,15 +608,15 @@ In de **config-`<instance name>`.xml** dossiers, activeer het automatische opsta
 </serverconf>
 ```
 
-Start Apache en Adobe Campaign-services op elk van de volgende servers:
+Start Apache- en Adobe Campaign-services op elk van de volgende servers:
 
 1. Tracking and redirection server.
-1. Midden-sourcingserver.
+1. Midsourcingserver.
 1. Marketingsserver.
 
 Voordat u verdergaat met de volgende stap, voert u een volledige test van de nieuwe installatie uit. Zorg ervoor dat er geen regressies zijn en dat alles werkt door alle aanbevelingen in de sectie [Algemene configuraties](../../migration/using/general-configurations.md) op te volgen.
 
-### Migreren van Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6_02-2}
+### Migreren vanuit Adobe Campaign v6.02 {#migrating-from-adobe-campaign-v6_02-2}
 
 In de **config-`<instance name>`.xml** dossiers, activeer het automatische opstarten van **mta**, **wfserver**, **staat**, enz. diensten.
 
@@ -639,34 +639,34 @@ In de **config-`<instance name>`.xml** dossiers, activeer het automatische opsta
 </serverconf>
 ```
 
-Start Apache en Adobe Campaign-services op elk van de volgende servers:
+Start Apache- en Adobe Campaign-services op elk van de volgende servers:
 
 1. Tracking and redirection server.
-1. Midden-sourcingserver.
+1. Midsourcingserver.
 1. Marketingsserver.
 
 Test de nieuwe installatie volledig, controleer dat het niet regres en zorg ervoor dat alles correct werkt door alle aanbevelingen in de [Algemene configuratiesectie](../../migration/using/general-configurations.md) te volgen.
 
-### Migreren van Adobe-campagne v6.1 {#migrating-from-adobe-campaign-v6_1-2}
+### Migreren vanuit Adobe Campaign v6.1 {#migrating-from-adobe-campaign-v6_1-2}
 
-Start Apache en Adobe Campaign-services op elk van de volgende servers:
+Start Apache- en Adobe Campaign-services op elk van de volgende servers:
 
 1. Tracking and redirection server.
-1. Midden-sourcingserver.
+1. Midsourcingserver.
 1. Marketingsserver.
 
 Test de nieuwe installatie volledig, controleer dat het niet regres en zorg ervoor dat alles correct werkt door alle aanbevelingen in de [Algemene configuratiesectie](../../migration/using/general-configurations.md) te volgen.
 
-## Adobe Campagne v5 verwijderen en opschonen {#deleting-and-cleansing-adobe-campaign-v5}
+## Adobe Campaign v5 verwijderen en opschonen {#deleting-and-cleansing-adobe-campaign-v5}
 
 >[!NOTE]
 >
->Deze sectie is alleen van toepassing wanneer u migreert van Adobe Campagne v5.11.
+>Deze sectie is alleen van toepassing wanneer u migreert vanaf Adobe Campaign v5.11.
 
-Voordat u de installatie van Adobe Campagne v5 verwijdert en wist, moet u de volgende aanbevelingen uitvoeren:
+Voordat u de Adobe Campaign v5-installatie verwijdert en wist, moet u de volgende aanbevelingen uitvoeren:
 
 * Krijg de functionele teams om een volledige controle van de nieuwe installatie in werking te stellen.
-* Verwijder Adobe Campagne v5 alleen als u zeker weet dat u het programma niet hoeft terug te draaien.
+* Verwijder Adobe Campaign v5 alleen als u er zeker van bent dat terugdraaien niet nodig is.
 
 Verwijder de map **nl5.back** . Meld u aan als **neolaan** en voer de volgende opdracht uit:
 
