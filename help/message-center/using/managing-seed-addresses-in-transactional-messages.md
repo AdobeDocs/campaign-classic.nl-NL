@@ -1,7 +1,7 @@
 ---
-title: Het beheren van zaadadressen in transactionele berichten
-seo-title: Het beheren van zaadadressen in transactionele berichten
-description: Het beheren van zaadadressen in transactionele berichten
+title: Seed-adressen beheren in transactionele berichten
+seo-title: Seed-adressen beheren in transactionele berichten
+description: Seed-adressen beheren in transactionele berichten
 seo-description: null
 page-status-flag: never-activated
 uuid: 51c4e79d-53bb-4d46-9c7d-e90066f5317d
@@ -11,16 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 12e7043e-e8b5-48a9-8a2f-99e2e6040c3c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '214'
+ht-degree: 11%
 
 ---
 
 
-# Het beheren van zaadadressen in transactionele berichten{#managing-seed-addresses-in-transactional-messages}
+# Seed-adressen beheren in transactionele berichten{#managing-seed-addresses-in-transactional-messages}
 
 Met een zaadadres kunt u een voorbeeld van uw bericht weergeven, een proefdruk verzenden en de personalisatie van testberichten vóór verzending via e-mail of SMS uitvoeren. De zaadadressen zijn verbonden met de levering en kunnen niet voor andere leveringen worden gebruikt.
 
@@ -38,7 +38,7 @@ Met een zaadadres kunt u een voorbeeld van uw bericht weergeven, een proefdruk v
 
    ![](assets/messagecenter_create_seedaddr_003.png)
 
-1. Voer de externe id in: in dit optionele veld kunt u een zakelijke sleutel invoeren (unieke id, naam + e-mail, enz.) Deze instelling geldt voor alle toepassingen op uw website die worden gebruikt om uw profielen te identificeren. Als dit veld ook aanwezig is in de marketingdatabase van Adobe Campagne, kunt u een gebeurtenis vervolgens afstemmen op een profiel in de database.
+1. Voer de externe id in: in dit optionele veld kunt u een zakelijke sleutel invoeren (unieke id, naam + e-mail, enz.) Deze instelling geldt voor alle toepassingen op uw website die worden gebruikt om uw profielen te identificeren. Als dit veld ook aanwezig is in de Adobe Campaign-marketingdatabase, kunt u een gebeurtenis vervolgens afstemmen op een profiel in de database.
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
