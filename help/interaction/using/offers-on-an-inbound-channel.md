@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 discoiquuid: 63245348-0402-4929-9c4f-71f01f97758e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7c117c549b02cf24b97dc1330e703b711ba14129
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2093'
+ht-degree: 1%
 
 ---
 
@@ -65,6 +65,7 @@ U krijgt een boomstructuur met uw nieuwe omgeving:
    * HTML-inhoud
    * URL afbeelding
    * Doel-URL
+
    ![](assets/offer_inbound_anonymous_example_030.png)
 
 1. Bewerk de HTML-renderfunctie, bijvoorbeeld als volgt:
@@ -209,7 +210,7 @@ De aanbiedingen die op de website moeten worden gepresenteerd, behoren tot twee 
 
 Pas het volgende proces toe om de aanbiedingsruimte aan te passen aan de **rubriek Beste voorstel** :
 
-1. Ga in de Adobe Campagne-structuur naar de anonieme omgeving die u zojuist hebt gemaakt en voeg een aanbiedingsruimte toe.
+1. Ga in de Adobe Campaign-structuur naar de anonieme omgeving die u zojuist hebt gemaakt en voeg een aanbiedingsruimte toe.
 
    ![](assets/offer_inbound_fallback_example_023.png)
 
@@ -217,7 +218,7 @@ Pas het volgende proces toe om de aanbiedingsruimte aan te passen aan de **rubri
 
    ![](assets/offer_inbound_fallback_example_024.png)
 
-1. Voer een label in voor dit item: Beste anonieme **webaanbieding** bijvoorbeeld.
+1. Voer een label in voor dit item: **Beste anonieme webaanbieding** bijvoorbeeld.
 1. Voeg de velden met aanbiedingsinhoud die voor deze aanbiedingsruimte worden gebruikt toe en configureer de renderfuncties.
 
    ![](assets/offer_inbound_fallback_example_025.png)
@@ -288,7 +289,7 @@ De voorstellen die u op de website gaat presenteren, zijn afkomstig uit twee ver
 
 Om de twee aanbiedingsruimten tot stand te brengen, pas de zelfde procedure toe zoals voor anonieme aanbiedingsruimten. Verwijs naar het [Vormen aanbiedingsruimten voor het anonieme milieu](#configuring-offer-spaces-for-the-anonymous-environment).
 
-1. Ga in de Adobe Campaign-structuur naar de omgeving die u net hebt gemaakt en voeg **Beste voorstel** en **Partner** -aanbiedingsruimten toe.
+1. Ga in de boomstructuur van Adobe Campaign naar de omgeving die u net hebt gemaakt en voeg **Beste voorstel** en **Partner** -aanbiedingsruimten toe.
 1. Pas het proces toe dat in het [Vormen aanbiedingsruimten voor het anonieme milieu](#configuring-offer-spaces-for-the-anonymous-environment)wordt gedetailleerd.
 
    ![](assets/offer_inbound_fallback_example_005.png)
@@ -310,7 +311,7 @@ In dit voorbeeld vindt de identificatie van de contactpersoon plaats via het e-m
 
    ![](assets/offer_inbound_fallback_example_044.png)
 
-1. In the **[!UICONTROL Target identification]** tab, click **[!UICONTROL Add]**.
+1. Klik op het tabblad **[!UICONTROL Target identification]** op **[!UICONTROL Add]**.
 
    ![](assets/offer_inbound_fallback_example_046.png)
 
@@ -405,7 +406,7 @@ Pas het volgende proces toe om deze aanbiedingsruimten op de HTML-pagina van de 
 
    De URL bevat **EnvNeobankRecip**, de interne naam van de geïdentificeerde omgeving.
 
-Wanneer u de webpagina opent; Met het script kunt u de Interactie-engine opvragen om de inhoud van aanbiedingen in de relevante ruimten van de webpagina weer te geven. Bij één aanroep naar de Adobe Campagneserver bepaalt de engine de omgeving, de aanbiedingsruimte en de categorieën die moeten worden geselecteerd.
+Wanneer u de webpagina opent; Met het script kunt u de Interactie-engine opvragen om de inhoud van aanbiedingen in de relevante ruimten van de webpagina weer te geven. Bij één aanroep naar de Adobe Campaign-server bepaalt de engine de omgeving, de aanbiedingsruimte en de categorieën die moeten worden geselecteerd.
 
 In dit voorbeeld herkent de engine de geïdentificeerde omgeving (**EnvNeobankIdnRecip**). Het identificeert de aanbiedingsruimte (**OSWebBestOfferIdentified**) en de categorie **Beste aanbieding** (**CatBestOffer**) voor de eerste en tweede aanbiedingsruimten op de Web-pagina, evenals (**OSWebPartnerIdentified**) aanbieden ruimte en de **Partner****** categorie (het bevestigen van de PartnerPartner) de derde aanbiedingsruimte op de site.
 
