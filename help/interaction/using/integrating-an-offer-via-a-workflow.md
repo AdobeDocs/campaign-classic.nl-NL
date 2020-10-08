@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 discoiquuid: 6e27caea-1f1a-457d-bdec-1f93a12b01cf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 67dce820b7a90163032ee72263a9dd23b521ea69
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1049'
+ht-degree: 4%
 
 ---
 
@@ -74,7 +74,7 @@ Er zijn twee methoden om voorstellen voor aanbiedingen op te geven.
 Na het vormen van uw vraag (verwijs naar de gids [van](../../workflow/using/query.md)Werkschema&#39;s):
 
 1. Voeg een verrijkingsactiviteit toe en open deze.
-1. Selecteer op het **[!UICONTROL Enrichment]** tabblad **[!UICONTROL Add data]**.
+1. Selecteer op het tabblad **[!UICONTROL Enrichment]** de optie **[!UICONTROL Add data]**.
 1. Selecteer **[!UICONTROL An offer proposition]** de typen gegevens die u wilt toevoegen.
 
    ![](assets/int_enrichment_offer2.png)
