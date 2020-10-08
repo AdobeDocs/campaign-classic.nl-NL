@@ -11,14 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 discoiquuid: 8e7eb53c-bbe2-4bd4-8581-c2a63a3dc84e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1049'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -80,7 +77,7 @@ Met campagnes kunt u een reeks programma&#39;s beheren die uit verschillende mar
 
 Wanneer u een programma bewerkt, gebruikt u de onderstaande tabbladen om door het programma te bladeren en het te configureren.
 
-* Op het tabblad **Planning** wordt de agenda van de programma&#39;s weergegeven voor een maand, week of dag, afhankelijk van het tabblad waarop u in de kalenderkop klikt.
+* Op het tabblad **Planning** wordt de agenda van de programma&#39;s weergegeven voor een maand, week of dag, afhankelijk van het tabblad waarop u klikt in de kalenderkop.
 
    Indien nodig, kunt u een campagne, een programma, of een taak door deze pagina tot stand brengen.
 
