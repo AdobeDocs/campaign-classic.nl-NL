@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 010c88f4-9444-448f-bb7b-7191517d2e23
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '807'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ Voer de volgende stappen uit om een aanbieding te maken:
 
    ![](assets/offer_create_001.png)
 
-1. Klik op de **[!UICONTROL Create]** knop.
+1. Klik op de knop **[!UICONTROL Create]**.
 
    ![](assets/offer_create_005.png)
 
@@ -84,7 +84,7 @@ Bijvoorbeeld, kan een aanbieding een gewicht van A voor contacten hebben tussen 
 
 Voer de volgende stappen uit om een dikte in een aanbieding te maken:
 
-1. Klik **[!UICONTROL Add]**.
+1. Klik op **[!UICONTROL Add]**.
 
    ![](assets/offer_weight_create_001.png)
 
@@ -108,7 +108,7 @@ Voer de volgende stappen uit om een dikte in een aanbieding te maken:
 
    ![](assets/offer_weight_create_004.png)
 
-1. Klik **[!UICONTROL OK]** om de dikte op te slaan.
+1. Click **[!UICONTROL OK]** to save the weight.
 
    ![](assets/offer_weight_create_005.png)
 
@@ -184,7 +184,7 @@ Je kunt hypothesen maken voor je voorstellen. Hiermee kunt u de gevolgen van uw 
 
 >[!NOTE]
 >
->Deze hypothesen worden uitgevoerd via Response Manager. Controleer uw licentieovereenkomst.
+>Deze hypothesen worden uitgevoerd via Response Manager. Controleer hiervoor uw licentieovereenkomst.
 
 Op hun **[!UICONTROL Measure]** tabblad wordt verwezen naar de hypothesen die zijn uitgevoerd op een aanbiedingsvoorstel.
 
