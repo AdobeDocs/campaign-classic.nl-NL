@@ -11,14 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 discoiquuid: 6d19a5a6-98e5-4b1a-a56a-67cfead152bd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a33132f64f160b20c98afd08cb9d0fe4cdf62b1a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '160'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
@@ -35,7 +32,7 @@ Zodra IMS wordt toegelaten, kunt u levering van de de kerndienst/Audience Manage
  <tbody> 
   <tr> 
    <td> <strong>Type aanvraag:</strong><br /> </td> 
-   <td> AAM/de kern van Mensen dienst-Campagne Integratie vormen </td> 
+   <td> AAM/de kern van de Mensen dienst-Campagne Integratie vormen </td> 
   </tr> 
   <tr> 
    <td> <strong>Naam organisatie:</strong><br /> </td> 
@@ -50,8 +47,8 @@ Zodra IMS wordt toegelaten, kunt u levering van de de kerndienst/Audience Manage
    <td> Voorbeeld: Productie </td> 
   </tr> 
   <tr> 
-   <td> <strong>AAM of Personenservice</strong><br /> </td> 
-   <td> Voorbeeld: Adobe Audience Manager. Vergeet niet om aan het provisioningteam mee te delen of u al dan niet een Audience Manager-licentie hebt.</td> 
+   <td> <strong>AAM of Persdienst</strong><br /> </td> 
+   <td> Voorbeeld: Adobe Audience Manager. Vergeet niet om aan het inrichtingsteam te vermelden of u al dan niet een Audience Manager-licentie hebt.</td> 
   </tr> 
   <tr> 
    <td> <strong>Opgegeven ID of bezoeker-ID</strong><br /> </td> 
