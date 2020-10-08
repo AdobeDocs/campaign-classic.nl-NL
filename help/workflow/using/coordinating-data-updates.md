@@ -1,7 +1,7 @@
 ---
-title: Gegevensupdates coördineren
-seo-title: Gegevensupdates coördineren
-description: Gegevensupdates coördineren
+title: Data-updates coördineren
+seo-title: Data-updates coördineren
+description: Data-updates coördineren
 seo-description: null
 page-status-flag: never-activated
 uuid: 003d63f8-3169-4190-882e-e360a83ccafb
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: efe09c66-b74b-48f0-9042-5da4342e014e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '303'
+ht-degree: 4%
 
 ---
 
 
-# Gegevensupdates coördineren{#coordinating-data-updates}
+# Data-updates coördineren{#coordinating-data-updates}
 
 In dit geval wordt beschreven hoe u een workflow maakt waarmee u gelijktijdige updates kunt beheren wanneer u verschillende uitvoeringen van een workflow gebruikt.
 
