@@ -11,11 +11,8 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: 968d0ee3-5efc-46d8-b408-b9cce3e730c4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 68d532a9597877f2f265dfc2d16ea31d1ce80858
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3602'
 ht-degree: 0%
@@ -282,7 +279,7 @@ De lijst van indicatoren voor dit verslag wordt onder de grafiek weergegeven.
 
    * Groene lijn: met succes verzonden berichten (valt samen met de uitgaande gegevens).
 
-   * Rode lijn: berichten die door Shaper worden verlaten, aan de **mta** zijn teruggekeerd (valt samen met de gegevens die op deze terugwinning worden verworpen).
+   * Rode lijn: berichten die door Shaper worden verlaten, aan de **mta** zijn teruggekeerd (valt samen met de gegevens die over deze terugwinning worden verworpen).
 
    Deze waarden worden uitgedrukt in aantal berichten per uur.
 
@@ -495,7 +492,7 @@ Adobe Campaign kan een hulpmiddel van de instantiecontrole (netreport) verstrekk
 
 Voor automatische controle zijn de volgende voorzorgsmaatregelen voorafgaand aan de installatie vereist:
 
-* U moet de bestanden **netreport.tgz** (installatie van Linux) of **netreport.zip** (installatie van Windows) hebben,
+* U moet over de bestanden **netreport.tgz** (Linux-installatie) of **netreport.zip** (Windows-installatie) beschikken,
 * We raden u ten zeerste aan om geen controle op de te controleren machine te installeren,
 * het moet zijn geïnstalleerd op een machine met een JRE of JDK;
 * in Linux moet de te controleren machine het **bc** pakket hebben. Raadpleeg [deze sectie](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages) voor meer informatie.
