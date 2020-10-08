@@ -11,18 +11,18 @@ audience: social
 content-type: reference
 topic-tags: configuration
 discoiquuid: 9d74ed9c-0055-4556-a205-6e5fea11816b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '714'
+ht-degree: 3%
 
 ---
 
 
 # Publiceren op Twitter configureren{#configuring-publishing-on-twitter}
 
-Als u wilt dat Adobe Campaign tweets kan verzenden naar uw Twitter-accounts, moet u voor deze accounts schrijftoegang delegeren naar Adobe Campaign. Hiervoor past u de volgende configuratiestappen toe:
+Adobe Campaign kan alleen tweets verzenden naar uw Twitter-accounts als u voor deze accounts schrijftoegang naar Adobe Campaign wilt delegeren. Hiervoor past u de volgende configuratiestappen toe:
 
 * Maak een Twitter-account.
 * Maak een Twitter-testaccount voor het verzenden van proefdrukken.
@@ -50,7 +50,7 @@ We raden u ook aan een persoonlijke Twitter-account te maken die kan worden gebr
 
 ## Een toepassing maken op Twitter {#creating-an-application-on-twitter}
 
-Als u wilt dat Adobe Campagne tweets kan verzenden naar uw Twitter-accounts, moet u één Twitter-toepassing maken per Twitter-account. Hiervoor voert u de volgende stappen uit:
+Adobe Campaign kan alleen tweets verzenden naar uw Twitter-accounts als u per Twitter-account één Twitter-toepassing maakt. Hiervoor voert u de volgende stappen uit:
 
 1. Meld u aan bij uw Twitter-account.
 1. Voer het volgende adres in uw internetbrowser in: [https://apps.twitter.com/](https://apps.twitter.com/).
@@ -60,21 +60,21 @@ Als u wilt dat Adobe Campagne tweets kan verzenden naar uw Twitter-accounts, moe
 
 1. Laat de tovenaar u door het proces begeleiden.
 
-   Als u wilt dat deze toepassing Adobe Campagne tweets kan verzenden naar uw account, gaat u naar het **[!UICONTROL Permissions]** tabblad van de toepassing en selecteert u **[!UICONTROL Read and Write]** de **[!UICONTROL Access]** sectie. Op het **[!UICONTROL Settings]** tabblad moet u ook het **[!UICONTROL Callback URL]** veld leeg laten.
+   Als u wilt dat deze toepassing Adobe Campaign toestaat tweets naar uw account te verzenden, gaat u naar het **[!UICONTROL Permissions]** tabblad van de toepassing en selecteert u **[!UICONTROL Read and Write]** de **[!UICONTROL Access]** sectie. Op het **[!UICONTROL Settings]** tabblad moet u ook het **[!UICONTROL Callback URL]** veld leeg laten.
 
    ![](assets/social_create_twitter_app_002.png)
 
-## Schrijftoegang delegeren naar Adobe Campagne {#delegating-write-access-to-adobe-campaign}
+## Schrijftoegang delegeren aan Adobe Campaign {#delegating-write-access-to-adobe-campaign}
 
 Voor elke Twitter-toepassing moet u een andere **[!UICONTROL Twitter]** typeservice maken die de toepassingsinstellingen bevat.
 
-Voor deze stap hebt u gelijktijdig toegang tot uw Adobe Campagne-console en een internetbrowser nodig die u hebt aangemeld bij uw Twitter-account:
+Voor deze stap hebt u gelijktijdig toegang tot uw Adobe Campaign-console en een internetbrowser nodig die u hebt aangemeld bij uw Twitter-account:
 
 * **Twitter**: Selecteer de eerder gemaakte toepassing ([https://dev.twitter.com/apps](https://dev.twitter.com/apps)) en klik op het **[!UICONTROL Keys and Access Tokens]** tabblad.
 
    ![](assets/social_twitter_service_002.png)
 
-* **Adobe-campagne**: Ga naar het **[!UICONTROL Profiles and targets]** universum, klik de **[!UICONTROL Services and Subscriptions]** verbinding en klik de **[!UICONTROL Create]** knoop.
+* **Adobe Campaign**: Ga naar het **[!UICONTROL Profiles and targets]** universum, klik de **[!UICONTROL Services and Subscriptions]** verbinding en klik de **[!UICONTROL Create]** knoop.
 
    ![](assets/social_twitter_service_007.png)
 
@@ -84,7 +84,7 @@ Voor deze stap hebt u gelijktijdig toegang tot uw Adobe Campagne-console en een 
 
    >[!NOTE]
    >
-   >De **[!UICONTROL Synchronize subscriptions]** optie is standaard ingeschakeld. Als het selectievakje is ingeschakeld, herstelt de workflow voor het synchroniseren van Twitter-accounts (zie [Twitter-accounts](#synchronizing-twitter-accounts)synchroniseren) de lijst met Twitter-volgers, zodat u hun directe berichten kunt sturen (zie [Directe berichten verzenden aan abonnees](../../social/using/publishing-on-twitter.md#sending-direct-messages-to-subscribers)). Schakel dit selectievakje uit als u de lijst met volgers niet wilt herstellen.
+   >The **[!UICONTROL Synchronize subscriptions]** option is enabled by default. Als het selectievakje is ingeschakeld, herstelt de workflow voor het synchroniseren van Twitter-accounts (zie [Twitter-accounts](#synchronizing-twitter-accounts)synchroniseren) de lijst met Twitter-volgers, zodat u hun directe berichten kunt sturen (zie [Directe berichten verzenden aan abonnees](../../social/using/publishing-on-twitter.md#sending-direct-messages-to-subscribers)). Schakel dit selectievakje uit als u de lijst met volgers niet wilt herstellen.
 
 1. Voer het label en de interne naam van de service in.
 
@@ -92,15 +92,15 @@ Voor deze stap hebt u gelijktijdig toegang tot uw Adobe Campagne-console en een 
 
    >[!IMPORTANT]
    >
-   >De naam **[!UICONTROL Internal name]** van de service moet gelijk zijn aan de naam van de Twitter-account. Pas de volgende stappen hieronder toe om ervoor te zorgen dat er geen invoerfouten zijn.
+   >De naam **[!UICONTROL Internal name]** van de service moet gelijk zijn aan de naam van de Twitter-account. Voer de volgende stappen hieronder uit om ervoor te zorgen dat er geen invoerfouten optreden.
 
-   * Klik op de **[!UICONTROL Save]** knop.
+   * Klik op de knop **[!UICONTROL Save]**.
    * Klik in het overzicht van de services op de Twitter-typeservice die u zojuist hebt gemaakt.
-   * Selecteer het **[!UICONTROL Twitter page]** tabblad. Het Twitter-account moet worden weergegeven.
+   * Selecteer het tabblad **[!UICONTROL Twitter page]**. Het Twitter-account moet worden weergegeven.
 
       ![](assets/social_twitter_service_010.png)
 
-1. Selecteer in het **[!UICONTROL Visitor folder]** veld de map van de bezoeker waarin de volgers worden gemaakt. Voor meer informatie hierover, verwijs naar het [Exploitatiebeginsel](../../social/using/publishing-on-twitter.md#operating-principle). Standaard worden volgers gemaakt in de hoofdmap van de **[!UICONTROL Visitors]** map.
+1. Selecteer in het **[!UICONTROL Visitor folder]** veld de map van de bezoeker waarin de volgers worden gemaakt. For more on this, refer to [Operating principle](../../social/using/publishing-on-twitter.md#operating-principle). Standaard worden volgers gemaakt in de hoofdmap van de **[!UICONTROL Visitors]** map.
 
    ![](assets/social_twitter_service_010_b.png)
 
@@ -112,7 +112,7 @@ Voor deze stap hebt u gelijktijdig toegang tot uw Adobe Campagne-console en een 
 
    ![](assets/social_twitter_service_013.png)
 
-1. Klik in de Adobe Campaign-console op **[!UICONTROL Save]**. Het delegeren van schrijftoegang naar Adobe Campaign is nu voltooid.
+1. Klik in de Adobe Campaign-console op **[!UICONTROL Save]**. Het delegeren van schrijftoegang tot Adobe Campaign is nu voltooid.
 
    ![](assets/social_twitter_service_014.png)
 
@@ -120,18 +120,18 @@ Voor deze stap hebt u gelijktijdig toegang tot uw Adobe Campagne-console en een 
 >
 >U moet één **[!UICONTROL Twitter]** typeservice maken per Twitter-toepassing.
 
-De **[!UICONTROL Twitter account Synchronization]** workflow synchroniseert Twitter-accounts in Adobe Campagne. Raadpleeg [Facebook-pagina&#39;s](../../social/using/publishing-on-facebook-walls.md#synchronizing-facebook-pages)synchroniseren voor meer informatie.
+De **[!UICONTROL Twitter account Synchronization]** workflow synchroniseert Twitter-accounts in Adobe Campaign. Raadpleeg [Facebook-pagina&#39;s](../../social/using/publishing-on-facebook-walls.md#synchronizing-facebook-pages)synchroniseren voor meer informatie.
 
 ## Twitter-accounts synchroniseren {#synchronizing-twitter-accounts}
 
 >[!IMPORTANT]
 >
->Als u wilt dat de lijst met Twitter-abonnees door de workflow wordt hersteld, moet u het **[!UICONTROL Twitter account synchronization]** vakje inschakelen in de sectie Bewerken van de service die aan de account is gekoppeld. Raadpleeg voor meer informatie het [delegeren van schrijftoegang tot Adobe Campagne](#delegating-write-access-to-adobe-campaign).
+>Als u wilt dat de lijst met Twitter-abonnees door de workflow wordt hersteld, moet u het **[!UICONTROL Twitter account synchronization]** vakje inschakelen in de sectie Bewerken van de service die aan de account is gekoppeld. Raadpleeg voor meer informatie het [delegeren van schrijftoegang tot Adobe Campaign](#delegating-write-access-to-adobe-campaign).
 
-Met de **[!UICONTROL Twitter account synchronization]** workflow, die u kunt openen via het **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** knooppunt, kunt u eerder geconfigureerde Twitter-accounts synchroniseren met Adobe Campaign. Deze workflow wordt standaard elke donderdag om 7.30 uur geactiveerd.
+Met de **[!UICONTROL Twitter account synchronization]** workflow, die via het **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** knooppunt wordt geopend, kunt u eerder geconfigureerde Twitter-accounts synchroniseren met Adobe Campaign. Deze workflow wordt standaard elke donderdag om 7.30 uur geactiveerd.
 
 >[!NOTE]
 >
->Het is mogelijk om de workflow op elk gewenst moment te starten door de verwachte taakverwerking uit te voeren. U kunt de planner ook uitgeven om het werkschema te veranderen dat frequentie teweegbrengt. Voor meer op de planner, verwijs naar [deze sectie](../../workflow/using/scheduler.md).
+>Het is mogelijk om de workflow op elk gewenst moment te starten door de verwachte taakverwerking uit te voeren. U kunt de planner ook uitgeven om het werkschema te veranderen dat frequentie teweegbrengt. For more on the scheduler, refer to [this section](../../workflow/using/scheduler.md).
 
 U kunt nu tweets verzenden naar uw Twitter-accounts en directe berichten sturen naar uw volgers. Raadpleeg voor meer informatie: [Publiceren op Twitter](../../social/using/publishing-on-twitter.md).
