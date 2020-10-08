@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: affecd87-00a3-4d50-92d3-31ac6228948b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '855'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ## Opgeslagen antwoorden opslaan {#storing-collected-answers}
 
-Naast de standaard opslagmodi die alle webformulieren in Adobe Campagne gebruiken (databaseveld en lokale variabele), maken enquêtes het mogelijk het gegevensmodel dynamisch uit te breiden met behulp van gearchiveerde velden.
+Naast de standaard opslagwijzen die voor alle vormen van het Web in Adobe Campaign (gegevensbestandgebied en lokale variabele) gemeenschappelijk zijn, laten de onderzoeken de dynamische uitbreiding van het gegevensmodel toe gebruikend gearchiveerde gebieden.
 
 >[!CAUTION]
 >
