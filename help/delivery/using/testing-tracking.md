@@ -1,7 +1,7 @@
 ---
-title: Tekstspatiëring
-seo-title: Tekstspatiëring
-description: Tekstspatiëring
+title: Tracking van tests
+seo-title: Tracking van tests
+description: Tracking van tests
 seo-description: null
 page-status-flag: never-activated
 uuid: 76d84ab4-b632-4498-96a1-ce9c773ec125
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 discoiquuid: 4ed23249-4ecf-4e57-91b3-6fae1387bd6a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '252'
+ht-degree: 4%
 
 ---
 
 
-# Tekstspatiëring{#testing-tracking}
+# Tracking van tests{#testing-tracking}
 
 U kunt het bijhouden van wijzigingen testen op spiegelpagina&#39;s, e-maillogboeken en koppelingen. Dit doet u als volgt:
 
