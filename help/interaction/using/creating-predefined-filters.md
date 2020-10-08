@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 discoiquuid: d47017a3-a342-4758-a700-b8e88aa724f2
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 28614a6b0c45deef17d9b3275a16e65bdff4538b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '115'
+ht-degree: 13%
 
 ---
 
@@ -30,7 +30,7 @@ Pas het volgende proces toe om een filter te maken:
 
    ![](assets/offer_filter_create_005.png)
 
-1. Klik **[!UICONTROL New]**.
+1. Klik op **[!UICONTROL New]**.
 
    ![](assets/offer_filter_create_001.png)
 
@@ -50,6 +50,6 @@ Pas het volgende proces toe om een filter te maken:
 
    ![](assets/offer_filter_create_006.png)
 
-**Verwante onderwerpen**
+**Verwant onderwerp**
 
 * [Veelgebruikte query&#39;s opslaan als bewerkbare voorgedefinieerde filters](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Savefrequentlyusedqueriesaseditablepredefinedfilters)
