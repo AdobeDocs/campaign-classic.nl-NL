@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 discoiquuid: 5addada8-0185-488f-9825-83f60981c139
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 762a6ba3fdad9c30407bf807f2cd8076796f98c2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '944'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -57,7 +54,7 @@ De belangrijkste methoden voor het maken van profielen voor ontvangers zijn:
 
 ## Profielen en doelen {#profiles-and-targets}
 
-Met de **[!UICONTROL Profiles and targets]** koppeling kunt u ontvangers weergeven die zijn opgeslagen in de Adobe Campaign-database. U kunt een nieuwe ontvanger maken, een bestaande ontvanger bewerken en het bijbehorende profiel openen. For more on this, refer to [this page](../../platform/using/editing-a-profile.md).
+Met de **[!UICONTROL Profiles and targets]** koppeling kunt u ontvangers weergeven die zijn opgeslagen in de Adobe Campaign-database. U kunt een nieuwe ontvanger maken, een bestaande ontvanger bewerken en het bijbehorende profiel openen. Raadpleeg [deze pagina](../../platform/using/editing-a-profile.md) voor meer informatie.
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
