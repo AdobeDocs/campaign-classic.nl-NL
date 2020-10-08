@@ -1,7 +1,7 @@
 ---
-title: Standalone-implementatie
-seo-title: Standalone-implementatie
-description: Standalone-implementatie
+title: Zelfstandige implementatie
+seo-title: Zelfstandige implementatie
+description: Zelfstandige implementatie
 seo-description: null
 page-status-flag: never-activated
 uuid: 48ce793e-cb9f-4102-898f-758512cb9bf2
@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 9834638f-a8bb-4969-9f8d-99b8d9fdb1ca
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f8d36b9fca9624500c5273eb73a1702f077dd60c
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1134'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Standalone-implementatie{#standalone-deployment}
+# Zelfstandige implementatie{#standalone-deployment}
 
 Deze configuratie omvat alle componenten op de zelfde computer:
 
@@ -105,7 +102,7 @@ Voer de volgende stappen uit:
 
    >[!NOTE]
    >
-   >De eerste keer wordt de module van het Web uitgevoerd leidt het tot de **config-default.xml** en **serverConf.xml** - dossiers in de **conf** folder onder de installatiemap. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+   >De eerste keer wordt de module van het Web uitgevoerd het leidt tot de **config-default.xml** en **serverConf.xml** dossiers in de **conf** folder onder de installatiemap. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
    Druk op **Ctrl+C** om de server te stoppen.
 
@@ -181,8 +178,8 @@ Voer de volgende stappen uit:
 
 1. Volg de procedure van de de serverintegratie van het Web (IIS, Apache) in de volgende secties wordt beschreven die:
 
-   * Voor Linux: [Integratie in een webserver voor Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
-   * Voor Windows: [Integratie in een webserver voor Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
+   * For Linux: [Integration into a Web server for Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
+   * For Windows: [Integration into a Web server for Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
 1. Start de website en test omleiding met de URL: https://tracking.campaign.net/r/test.
 
