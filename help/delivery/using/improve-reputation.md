@@ -1,5 +1,5 @@
 ---
-title: Uw reputatie verbeteren bij het gebruik van Adobe Campaign Classic
+title: Je reputatie verbeteren bij het gebruik van Adobe Campaign Classic
 description: Meer weten over het verbeteren van je reputatie bij het gebruik van Adobe Campaign Classic?
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
@@ -9,21 +9,18 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '553'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # Uw reputatie verbeteren{#improve-reputation}
 
-Verwijder dubbele e-mailadressen van uw doel om te voorkomen dat de ontvangers uitputten. Deze stap beschermt uw verzendende reputatie en verzekert goed quarantainebeheer. Adobe Campaign biedt de noodzakelijke hulpmiddelen aan om deze aanbevelingen uit te voeren en het risico te vermijden om aan een bloklijst door ISP worden toegevoegd.
+Verwijder dubbele e-mailadressen van uw doel om te voorkomen dat de ontvangers uitputten. Deze stap beschermt uw verzendende reputatie en verzekert goed quarantainebeheer. Adobe Campaign biedt de noodzakelijke hulpmiddelen aan om deze aanbevelingen uit te voeren en het risico te vermijden om aan een lijst van afgewezen personen door ISP worden toegevoegd.
 
 Om dubbel werk zoveel mogelijk te voorkomen, moeten de volgende acties worden uitgevoerd:
 
@@ -36,7 +33,7 @@ Het quarantainebeheer wordt weergegeven in [deze sectie](../../delivery/using/un
 
 Hieronder vindt u meer informatie over duplicaat- en quarantainebeheer.
 
-U kunt het verzonden e-mailvolume op IP adres controleren. Hiervoor is een schema-extensie nodig. U moet de uitlogingtabel uitbreiden om de &#39;public identifier&#39; toe te voegen en een workflow maken om de gegevens te extraheren en weer te geven. Neem contact op met Adobe als u dit nodig hebt.
+U kunt het verzonden e-mailvolume op IP adres controleren. Hiervoor is een schema-extensie nodig. U moet de uitlogingtabel uitbreiden om de &#39;public identifier&#39; toe te voegen en een workflow maken om de gegevens te extraheren en weer te geven. Neem contact op met de Adobe als u dit nodig hebt.
 
 ## Duplicaten {#duplicates}
 
@@ -45,7 +42,7 @@ Het hebben van dubbele e-mailadressen kan veelvoudige gevolgen hebben:
 * Hetzelfde bericht wordt meerdere keren verzonden. Zelfs als Campagne standaard een deduplicatieprocedure uitvoert voordat het wordt verzonden, is er niets om te voorkomen dat hetzelfde bericht wordt verzonden door verschillende handelingen met dezelfde inhoud wanneer een doel wordt gesplitst.
 * Abonnementsverzoeken worden niet geaccepteerd. Als een ontvanger zich afmeldt na het ontvangen van een bericht, zal zijn dubbel profiel nog verkiesbaar voor toekomstige berichten zijn.
 
-Naast deze zijstap van opt-in procedures, zal deze situatie gebruikers waarschijnlijk leiden om de berichten als spam te beschouwen en een procedure van de bloklijst bij ISP teweeg te brengen.
+Naast deze zijstap van opt-in procedures, zal deze situatie gebruikers waarschijnlijk leiden om de berichten als spam te beschouwen en een lijst van afgewezen personen procedure bij ISP teweeg te brengen.
 
 U moet bijzonder voorzichtig zijn wanneer het uitvoeren van verrichtingen op het gegevensbestand:
 
