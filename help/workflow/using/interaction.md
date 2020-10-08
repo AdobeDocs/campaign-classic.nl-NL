@@ -11,21 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 discoiquuid: 1683477a-9233-4a25-b0d0-0c81051eb440
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 
 # Interactie{#interaction}
 
-De hieronder beschreven workflows worden standaard geïnstalleerd met de module **Aanbieding (Interactie)** . Raadpleeg deze [sectie](../../interaction/using/interaction-and-offer-management.md)voor meer informatie over deze module.
+De hieronder beschreven workflows worden standaard geïnstalleerd met de module **Aanbieding (Interactie)** . For more on this module, refer to this [section](../../interaction/using/interaction-and-offer-management.md).
 
 <table> 
  <tbody> 
