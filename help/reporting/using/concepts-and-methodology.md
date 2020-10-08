@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: 4655ad65-7eba-44d5-b3f9-f4b8f44d9d5c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 62b2f1f6cfcaadd10880d428b8b94d73d2addcdb
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1494'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ Met Binding kunt u de gegevensweergave vereenvoudigen door waarden te groeperen 
 
 Er zijn in totaal drie typen binding beschikbaar:
 
-1. Handmatig gedefinieerde waardebereiken gebruiken. Bijvoorbeeld leeftijd, gemiddelde winkelwagentje, aantal geopende leveringen, enz.). Voor meer op dit, verwijs naar het [Definiëren van elke bak](#defining-each-bin).
+1. Handmatig gedefinieerde waardebereiken gebruiken. Bijvoorbeeld leeftijd, gemiddelde winkelwagentje, aantal geopende leveringen, enz.). For more on this, refer to [Defining each bin](#defining-each-bin).
 1. Afhankelijk van de waarden van een opsomming, dynamisch: alleen de waarden in de opsomming worden weergegeven, alle andere waarden worden gegroepeerd in &#39;Overige&#39;. Raadpleeg [Dynamisch beheren van bins](#dynamically-managing-bins)voor meer informatie hierover.
 1. Met behulp van waardebereiken worden alle andere reeksen gegroepeerd. Bijvoorbeeld 18- tot 25-jarigen, 26- tot 59-jarigen en de andere. Zie Waardebereiken [maken voor meer informatie](#creating-value-ranges).
 
@@ -103,9 +103,9 @@ In dit geval wordt het filter dat in het feitelijke schema is geselecteerd, gene
 
 ### Opsommingen {#enumerations}
 
-Om de relevantie en leesbaarheid van een rapport te verbeteren, kunt u met Adobe Campaign specifieke opsommingen maken om verschillende waarden opnieuw te groeperen in hetzelfde vak. Deze opsommingen, die voor het binden worden gereserveerd, worden van verwijzingen voorzien in de kubussen dan getoond in de rapporten.
+Om de relevantie en leesbaarheid van een rapport te verbeteren, kunt u met Adobe Campaign specifieke opsommingen maken om verschillende waarden te groeperen in hetzelfde vak. Deze opsommingen, die voor het binden worden gereserveerd, worden van verwijzingen voorzien in de kubussen dan getoond in de rapporten.
 
-De Campagne van Adobe biedt ook een opsomming op domeinen aan die u een lijst van de e-maildomeinen van alle contacten in het gegevensbestand laat tonen, die door ISP, zoals aangetoond in het volgende voorbeeld wordt gegroepeerd:
+Adobe Campaign biedt ook een opsomming op domeinen aan die u een lijst van de e-maildomeinen van alle contacten in het gegevensbestand laat tonen, die door ISP, zoals aangetoond in het volgende voorbeeld wordt gegroepeerd:
 
 ![](assets/nmx_report_sample.png)
 
@@ -113,13 +113,13 @@ Deze is gemaakt met de volgende sjabloon:
 
 ![](assets/nmx_enum_domain.png)
 
-Als u een rapport wilt maken met deze opsomming, maakt u een kubus met de **[!UICONTROL Email domain]** dimensie. Kies vervolgens de **[!UICONTROL Enable binning]** optie **[!UICONTROL Dynamically link the values to an enumeration]**. Selecteer vervolgens de opsomming **Domeinen** , zoals hierboven wordt weergegeven. Alle waarden zonder opgegeven alias worden opnieuw gegroepeerd onder het label **Overige** .
+Als u een rapport wilt maken met deze opsomming, maakt u een kubus met de **[!UICONTROL Email domain]** dimensie. Choose the **[!UICONTROL Enable binning]** option then **[!UICONTROL Dynamically link the values to an enumeration]**. Selecteer vervolgens de opsomming **Domeinen** , zoals hierboven wordt weergegeven. Alle waarden zonder opgegeven alias worden opnieuw gegroepeerd onder het label **Overige** .
 
 ![](assets/nmx_add_dimension.png)
 
 Maak vervolgens een rapport op basis van deze kubus om de waarden weer te geven.
 
-U hoeft alleen de opsomming te wijzigen om het verwante rapport bij te werken. Maak bijvoorbeeld de **Adobe** -waarde en voeg de alias **adobe.com** toe. Het rapport wordt automatisch bijgewerkt met de Adobe-waarde op opsommingsniveau.
+U hoeft alleen de opsomming te wijzigen om het verwante rapport bij te werken. Maak bijvoorbeeld de **Adobe** -waarde en voeg de alias **adobe.com** toe. Het rapport wordt dan automatisch bijgewerkt met de Adobe-waarde op opsommingsniveau.
 
 ![](assets/nmx_add_alias.png)
 
@@ -167,7 +167,7 @@ Voer de volgende stappen uit om een nieuw aggregaat te maken:
 
 De typen metingen worden gedefinieerd op het **[!UICONTROL Measures]** tabblad van de kubus. U kunt sommen, gemiddelden, afwijkingen, enz. berekenen.
 
-U kunt zoveel maatregelen maken als nodig zijn: Selecteer vervolgens de maatregel die u in de tabel wilt weergeven of verbergen. Raadpleeg [Weergavemaatregelen](#displaying-measures)voor meer informatie hierover.
+U kunt zoveel maatregelen maken als nodig zijn: Selecteer vervolgens de maatregel die u in de tabel wilt weergeven of verbergen. For more on this, refer to [Displaying measures](#displaying-measures).
 
 Voer de volgende stappen uit om een nieuwe maatregel te definiëren:
 
@@ -177,7 +177,7 @@ Voer de volgende stappen uit om een nieuwe maatregel te definiëren:
 
 1. Kies zo nodig, en afhankelijk van de operator, de expressie waarop de bewerking betrekking heeft.
 
-   Met de **[!UICONTROL Advanced selection]** knop kunt u complexe berekeningsformules maken. Zie [deze sectie](../../platform/using/about-queries-in-campaign.md)voor meer informatie.
+   Met de **[!UICONTROL Advanced selection]** knop kunt u complexe berekeningsformules maken. Raadpleeg [deze sectie](../../platform/using/about-queries-in-campaign.md) voor meer informatie.
 
    ![](assets/s_advuser_cube_create_a_measure_01.png)
 
