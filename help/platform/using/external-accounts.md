@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 discoiquuid: da60b9ca-4b51-4bff-affc-2b12c576973a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 11%
@@ -197,7 +194,7 @@ Als u deze externe account wilt configureren voor gebruik met Adobe Campaign, mo
 
 ### Externe rekening met teragegevens {#teradata-external-account}
 
-Met de externe **account van de Teradata** kunt u uw Campagne-instantie verbinden met uw externe database van Teradata. Raadpleeg deze [pagina](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html) of deze [sectie](../../platform/using/specific-configuration-database.md#configure-access-to-teradata)voor meer informatie over het configureren van Campaign Classic met metagegevens.
+Met de externe **account van de Teradata** kunt u uw Campagne-instantie verbinden met uw externe database van Teradata. Raadpleeg deze [pagina](https://helpx.adobe.com/nl/campaign/kb/campaign_fda_teradata.html) of deze [sectie](../../platform/using/specific-configuration-database.md#configure-access-to-teradata)voor meer informatie over het configureren van Campaign Classic met metagegevens.
 
 ![](assets/ext_account_19.png)
 
