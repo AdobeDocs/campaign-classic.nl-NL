@@ -1,7 +1,7 @@
 ---
-title: Bestandsverzamelaar
-seo-title: Bestandsverzamelaar
-description: Bestandsverzamelaar
+title: Bestandsophaler
+seo-title: Bestandsophaler
+description: Bestandsophaler
 seo-description: null
 page-status-flag: never-activated
 uuid: 57ef7b2b-f257-4d76-970f-55aece719cec
@@ -11,19 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 discoiquuid: 9b937d4d-55ae-4bd4-8dc6-eea42f15b69f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Bestandsverzamelaar{#file-collector}
+# Bestandsophaler{#file-collector}
 
 De **Bestandsverzamelaar** controleert de aankomst van een of meer bestanden in een map en activeert de overgang ervan voor elk ontvangen bestand. Voor elke gebeurtenis bevat een **[!UICONTROL filename]** variabele de volledige naam van het ontvangen bestand. De verzamelde bestanden worden naar een andere map verplaatst voor archiveringsdoeleinden en om ervoor te zorgen dat ze maar één keer worden geteld.
 
@@ -31,7 +28,7 @@ Standaard is de bestandscollector een permanente taak waarmee de aanwezigheid va
 
 De bestanden moeten zich op de server bevinden waarop de wfserver-module die voor deze workflow verantwoordelijk is, wordt uitgevoerd. Als meerdere wfserver-modules op één instantie worden geïmplementeerd, moet de affiniteit van de activiteiten die deze bestanden gebruiken of de algemene affiniteit van de workflow worden opgegeven.
 
-## Eigenschappen {#properties}
+## Properties {#properties}
 
 Op het eerste tabblad van de **[!UICONTROL File collector]** activiteit kunt u de bronmap selecteren en, indien nodig, de verzamelde bestanden filteren. De andere tabbladen worden beschreven in [Binnenkomende e-mails](../../workflow/using/inbound-emails.md) (**[!UICONTROL Schedule]** en **[!UICONTROL Expiry]** tabbladen).
 
@@ -77,7 +74,7 @@ Op het eerste tabblad van de **[!UICONTROL File collector]** activiteit kunt u d
 
 1. **Historiatie**
 
-   Raadpleeg de volgende **[!UICONTROL File historization]** stap: [Webdownload](../../workflow/using/web-download.md).
+   Raadpleeg de **[!UICONTROL File historization]** volgende stap: [Webdownload](../../workflow/using/web-download.md).
 
 De volgorde van de bestandsverwerking kan niet worden bepaald. Als u een set bestanden opeenvolgend wilt verwerken, gebruikt u de **[!UICONTROL Stop as soon as a file has been processed]** optie en maakt u een lus. In dit geval worden de bestanden in alfabetische volgorde verwerkt. Met de **[!UICONTROL Process file nonexistence]** optie kunt u de herhaling voltooien.
 
