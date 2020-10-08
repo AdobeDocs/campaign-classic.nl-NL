@@ -1,7 +1,7 @@
 ---
-title: Stappen instellen
-seo-title: Stappen instellen
-description: Stappen instellen
+title: Stappen voor instellen
+seo-title: Stappen voor instellen
+description: Stappen voor instellen
 seo-description: null
 page-status-flag: never-activated
 uuid: 4111a805-95ab-4e26-be51-2db1e5c20f57
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 76174374-af73-4da0-b62b-6979bca0102b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 3%
 
 ---
 
 
-# Stappen instellen{#setup-stages}
+# Stappen voor instellen{#setup-stages}
 
 Het basisbeginsel is dat webtrackingcodes op bepaalde pagina&#39;s van uw website worden geplaatst.
 
@@ -35,8 +35,8 @@ Pas de volgende stappen toe om deze tags in te stellen:
 1. Bepaal welke aanvullende informatie u wilt verzamelen, en breid het schema **nms:webTrackingLog** met de beschrijving van deze informatie uit. Standaard kunnen in dit schema de transactiehoeveelheden en het aantal items per transactie worden opgeslagen.
 1. De webtrackingtags maken. Er zijn twee manieren om dit te doen:
 
-   * Voeg de URL&#39;s die overeenkomen met deze pagina&#39;s in uw Adobe Campagne-platform in en genereer en extraheer de bijbehorende tags voor webtracering (vanuit het **[!UICONTROL Campaign execution>Resources>Web tracking tags]** knooppunt van de clientconsole).
-   * Maak de webtrackingtags zelf in de modus &quot;Aanmaken ter plekke&quot;: De URL&#39;s die overeenkomen met deze pagina&#39;s worden automatisch ingevoegd in uw Adobe Campagne-platform.
+   * Voeg de URL&#39;s die overeenkomen met deze pagina&#39;s in uw Adobe Campaign-platform in en genereer en extraheer de bijbehorende tags voor webtracering (vanuit het **[!UICONTROL Campaign execution>Resources>Web tracking tags]** knooppunt van de clientconsole).
+   * Maak de webtrackingtags zelf in de modus &quot;Aanmaken ter plekke&quot;: De URL&#39;s die overeenkomen met deze pagina&#39;s worden automatisch ingevoegd in uw Adobe Campaign-platform.
 
 1. Voeg deze labels statisch of dynamisch toe aan de pagina&#39;s die u wilt bijhouden.
 
