@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 94178104-f8ba-4c17-8ff9-928c5d2df1b7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 >[!CAUTION]
 >
->De activiteit van de **Lading (ZEEP)** is slechts beschikbaar als u de **FDA (Federated Data Access)** module geïnstalleerd hebt. Controleer uw licentieovereenkomst.
+>De activiteit van de **Lading (ZEEP)** is slechts beschikbaar als u de **FDA (Federated Data Access)** module geïnstalleerd hebt. Controleer hiervoor uw licentieovereenkomst.
 
 De **activiteit van de Lading (ZEEP)** wordt gebruikt naast de activiteit van het laden van **gegevens (RDBMS)** wanneer het niet mogelijk is om gegevens direct via FDA in een externe gegevensbestand te verzamelen.
 
@@ -56,7 +56,7 @@ De bewerking is als volgt:
    * **[!UICONTROL Initialization]**: stelt een verbinding van de ZEEP in.
    * **[!UICONTROL Iteration]**: voert de vraag aan de dienst van de ZEEP uit. De return voor deze functie moet een XML-object zijn dat compatibel is met de beschrijving van het voorbeeld of de WSDL.
 
-      De code van dit tabblad wordt in een lus aangeroepen door Adobe Campaign totdat een null XML-object wordt geretourneerd.
+      De code van dit tabblad wordt aangeroepen in een lus door Adobe Campaign totdat een null XML-object wordt geretourneerd.
 
    * **[!UICONTROL Finalization]**: sluit verbinding en/of bevrijdt andere middelen die tijdens verwerking worden gecreeerd.
 
