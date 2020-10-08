@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 36953eb5-3296-4796-9352-945121bbdc69
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1204'
+ht-degree: 1%
 
 ---
 
@@ -60,7 +60,7 @@ De inhoud van de weergegeven tekenreeksen wordt gedefinieerd op het **[!UICONTRO
 
 Op het **[!UICONTROL Localization]** tabblad kunt u de ontwerp- en weergavetalen voor het webformulier selecteren.
 
-Zie [Een webformulier](../../web/using/translating-a-web-form.md)vertalen.
+See [Translating a web form](../../web/using/translating-a-web-form.md).
 
 ## Bladeren en weergeven van formulieren {#form-browsing-and-rendering}
 
@@ -94,7 +94,7 @@ In het onderste gedeelte van het eigenschappenvenster wordt een voorbeeld van re
 
 Op het **[!UICONTROL Page]** tabblad kunt u de inhoud van de kop- en voettekst van het formulier definiëren. Zie Kop- en [voetteksten](../../web/using/form-rendering.md#defining-headers-and-footers)definiëren.
 
-U kunt hiermee ook vertalingen beheren. Zie [Een webformulier](../../web/using/translating-a-web-form.md)vertalen.
+U kunt hiermee ook vertalingen beheren. See [Translating a web form](../../web/using/translating-a-web-form.md).
 
 ## Toegankelijkheid van het formulier {#accessibility-of-the-form}
 
@@ -106,7 +106,7 @@ De geldigheidsperiode loopt van de **[!UICONTROL Start]** datum tot en met de **
 
 >[!NOTE]
 >
->Als het formulier wordt gesloten en de geldigheidsperiode ervan niet is bereikt of verlopen, of als het formulier is gesloten door de Adobe Campagneoperator, wordt een bericht weergegeven wanneer de gebruiker toegang probeert te krijgen tot het formulier. U kunt dit bericht personaliseren door te klikken **[!UICONTROL Personalize the message displayed if the form is closed...]**.
+>Als het formulier wordt gesloten en de geldigheidsperiode ervan niet is bereikt of verlopen, of als het formulier is gesloten door de Adobe Campaign-operator, wordt een bericht weergegeven wanneer de gebruiker toegang probeert te krijgen tot het formulier. U kunt dit bericht personaliseren door te klikken **[!UICONTROL Personalize the message displayed if the form is closed...]**.
 
 ## Toegangsbeheer voor formulieren {#form-access-control}
 
@@ -120,7 +120,7 @@ Als de pagina wordt geopend, wordt het volgende verificatieformulier weergegeven
 
 ![](assets/s_ncs_admin_survey_access_login.png)
 
-Aanmelding en wachtwoord zijn die welke worden gebruikt door Adobe Campagnebeheerders. Zie [deze sectie](../../platform/using/access-management.md)voor meer informatie.
+Aanmelding en wachtwoord zijn die welke door Adobe Campaign-operatoren worden gebruikt. Raadpleeg [deze sectie](../../platform/using/access-management.md) voor meer informatie.
 
 Met de **[!UICONTROL Use a specific account]** optie kunt u de lees- of schrijfmachtigingen beperken van de operator die het formulier benadert. Gebruik de vervolgkeuzelijst om een operator of groep operatoren te selecteren die verantwoordelijk zijn voor het verlenen van deze machtigingen.
 
@@ -130,7 +130,7 @@ Met de **[!UICONTROL Use a specific account]** optie kunt u de lees- of schrijfm
 
 U kunt extra parameters in URL van een vorm toevoegen om zijn inhoud te personaliseren en een context (taal, gecodeerde ontvankelijke identiteitskaart, bedrijf, berekende formule te initialiseren die in een variabele wordt opgeslagen, etc.). Hiermee kunt u toegang geven tot één formulier via verschillende URL&#39;s en de pagina-inhoud aanpassen op basis van de waarde van de parameter(s) die in de URL is aangegeven.
 
-Standaard bevat Adobe Campagne parameters voor het weergeven van een voorbeeld van het formulier en het controleren van fouten. U kunt nieuwe instellingen maken die zijn gekoppeld aan het formulier. Hierbij worden mogelijk de waarden van een veld in de database of van een lokale variabele gebruikt.
+Standaard biedt Adobe Campaign parameters voor het weergeven van een voorbeeld van het formulier en het controleren van fouten. U kunt nieuwe instellingen maken die zijn gekoppeld aan het formulier. Hierbij worden mogelijk de waarden van een veld in de database of van een lokale variabele gebruikt.
 
 ## Standaardparameters {#standard-parameters}
 
@@ -149,7 +149,7 @@ De volgende parameters zijn standaard beschikbaar:
 
    >[!CAUTION]
    >
-   >Wanneer het formulier via een URL met de parameter **_uuid** wordt weergegeven, wordt de waarde van de **[!UICONTROL origin]** parameter naar **Adobe Campagne** gedwongen.
+   >Wanneer het formulier via een URL met de parameter **_uuid** wordt weergegeven, wordt de waarde van de **[!UICONTROL origin]** parameter naar **Adobe Campaign** gedwongen.
 
 ## Parameters toevoegen {#adding-parameters}
 
