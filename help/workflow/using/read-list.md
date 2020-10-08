@@ -1,7 +1,7 @@
 ---
-title: Leeslijst
-seo-title: Leeslijst
-description: Leeslijst
+title: Lijst lezen
+seo-title: Lijst lezen
+description: Lijst lezen
 seo-description: null
 page-status-flag: never-activated
 uuid: 34e28675-f28b-407f-8d60-41a5383af0db
@@ -11,18 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 96a7aea4-4799-4ac7-8dff-666b075a1c43
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '484'
+ht-degree: 1%
 
 ---
 
 
-# Leeslijst{#read-list}
+# Lijst lezen{#read-list}
 
-Gegevens die in een werkstroom worden verwerkt, kunnen afkomstig zijn van lijsten waarin de gegevens vooraf zijn voorbereid of gestructureerd (na een eerdere segmentatie of bestandsupload).
+Gegevens die in een werkstroom worden verwerkt, kunnen afkomstig zijn van lijsten waarin de gegevens vooraf zijn voorbereid of gestructureerd (na een eerdere segmentatie of het uploaden van bestanden).
 
 Met de **[!UICONTROL Read list]** activiteit kunt u de gegevens kopiëren uit een lijst in de werktabel van de workflow, zoals gegevens uit een query. Het is dan toegankelijk door het werkschema.
 
@@ -42,7 +42,7 @@ Zodra de lijstselectie is gevormd, kunt u een filter toevoegen gebruikend de **[
 >
 >Als u een filter wilt maken in een leeslijstactiviteit, moet de relevante lijst een &quot;bestandstype&quot;zijn.
 
-De lijsten kunnen rechtstreeks in de Campagne van Adobe via de verbinding van de homepage worden gecreeerd. **[!UICONTROL Profiles and Targets > Lists]** Ze kunnen ook in een workflow worden gemaakt met behulp van de **[!UICONTROL List update]** activiteit.
+De lijsten kunnen direct in Adobe Campaign via de **[!UICONTROL Profiles and Targets > Lists]** verbinding van de homepage worden gecreeerd. Ze kunnen ook in een workflow worden gemaakt met behulp van de **[!UICONTROL List update]** activiteit.
 
 **Voorbeeld: Een lijst met verzendadressen uitsluiten**
 
