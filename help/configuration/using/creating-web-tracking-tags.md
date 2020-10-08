@@ -1,7 +1,7 @@
 ---
-title: Tags voor webtracking maken
-seo-title: Tags voor webtracking maken
-description: Tags voor webtracking maken
+title: Tags voor webtracering maken
+seo-title: Tags voor webtracering maken
+description: Tags voor webtracering maken
 seo-description: null
 page-status-flag: never-activated
 uuid: c5599bdd-e6b8-4db4-b0ca-aaee2adc1919
@@ -11,25 +11,25 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 647ca037-4efb-4524-9642-11056d096aea
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 6%
 
 ---
 
 
-# Tags voor webtracking maken{#creating-web-tracking-tags}
+# Tags voor webtracering maken{#creating-web-tracking-tags}
 
-Op elke pagina van de site die u wilt bijhouden, moet in het Adobe Campagneplatform worden verwezen. Deze verwijzing kan op twee manieren worden uitgevoerd:
+Op elke pagina van de site die u wilt bijhouden, moet in uw Adobe Campaign-platform worden verwezen. Deze verwijzing kan op twee manieren worden uitgevoerd:
 
 1. Handmatige definitie van URL&#39;s die moeten worden bijgehouden,
 1. Aanmaken van URL&#39;s die u ter plaatse wilt bijhouden.
 
 ## De URL&#39;s definiëren die in de toepassing moeten worden bijgehouden {#defining-the-urls-to-be-tracked-in-the-application}
 
-Met deze methode kunt u handmatig de pagina&#39;s definiëren die moeten worden bijgehouden en vervolgens een voorbeeld genereren van de bijbehorende webtrackingtag. Deze bewerking wordt gedefinieerd in het **[!UICONTROL Campaign execution>Resources>Web tracking tags]** knooppunt van de clientconsole.
+Met deze methode kunt u handmatig de pagina&#39;s definiëren die moeten worden bijgehouden en vervolgens een voorbeeld genereren van de bijbehorende tag voor webtracering. Deze bewerking wordt gedefinieerd in het **[!UICONTROL Campaign execution>Resources>Web tracking tags]** knooppunt van de clientconsole.
 
 ![](assets/d_ncs_integration_webtracking_screen.png)
 
