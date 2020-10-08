@@ -1,7 +1,7 @@
 ---
-title: Lijst van verslagen
-seo-title: Lijst van verslagen
-description: Lijst van verslagen
+title: Lijst met rapporten
+seo-title: Lijst met rapporten
+description: Lijst met rapporten
 seo-description: null
 page-status-flag: never-activated
 uuid: 79a914d0-7828-4fe1-b1b7-b055d4bf1f82
@@ -11,20 +11,20 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: 3e593527-5580-44ea-93dc-9084d862537e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1010'
+ht-degree: 2%
 
 ---
 
 
-# Lijst van verslagen{#list-of-reports}
+# Lijst met rapporten{#list-of-reports}
 
-## Verslagen over leveringen {#reports-on-deliveries}
+## Rapporten over leveringen {#reports-on-deliveries}
 
-De ingebouwde rapporten van de Campagne van Adobe zijn beschikbaar in de lijst hieronder.
+De ingebouwde rapporten van Adobe Campaign zijn te vinden in de onderstaande tabel.
 
 Raadpleeg [deze sectie](../../reporting/using/delivery-reports.md)voor meer informatie over de inhoud van deze rapporten.
 
@@ -127,7 +127,7 @@ Raadpleeg [deze sectie](../../reporting/using/delivery-reports.md)voor meer info
 
 Rapporten over campagnes betreffen de gegevens in de tabel **nms:operation** .
 
-De ingebouwde rapporten van de Campagne van Adobe zijn beschikbaar in de lijst hieronder.
+De ingebouwde rapporten van Adobe Campaign zijn te vinden in de onderstaande tabel.
 
 Raadpleeg [deze sectie](../../campaign/using/designing-marketing-campaigns.md)voor meer informatie over de inhoud van deze rapporten.
 
@@ -143,7 +143,7 @@ Raadpleeg [deze sectie](../../campaign/using/designing-marketing-campaigns.md)vo
   </tr> 
   <tr> 
    <td> Leveringsdoorvoer (operationThroughput)<br /> </td> 
-   <td> De grafieken van de leveringsproductie, in post/uur en Mbits/s, hangt van Campagne af.<br /> </td> 
+   <td> De grafieken van de leveringproductie, in post/uur en Mbits/s, hangt van Campagne af.<br /> </td> 
   </tr> 
   <tr> 
    <td> Campagnekosten (budgetOperationExpenses)<br /> </td> 
@@ -188,7 +188,7 @@ Raadpleeg [deze sectie](../../campaign/using/designing-marketing-campaigns.md)vo
 
 De rapporten over de diensten hebben betrekking op de gegevens in **nms:dienst** lijst.
 
-De ingebouwde rapporten van de Campagne van Adobe zijn beschikbaar in de lijst hieronder.
+De ingebouwde rapporten van Adobe Campaign zijn te vinden in de onderstaande tabel.
 
 Raadpleeg de desbetreffende handleidingen voor meer informatie over de inhoud van deze rapporten.
 
@@ -223,7 +223,7 @@ Raadpleeg de desbetreffende handleidingen voor meer informatie over de inhoud va
 
 ## Begrotingsverslagen {#budget-reports}
 
-De ingebouwde rapporten van de Campagne van Adobe zijn beschikbaar in de lijst hieronder.
+De ingebouwde rapporten van Adobe Campaign zijn te vinden in de onderstaande tabel.
 
 Raadpleeg [deze sectie](../../campaign/using/designing-marketing-campaigns.md)voor meer informatie over de inhoud van deze rapporten.
 
@@ -281,7 +281,7 @@ Raadpleeg [deze sectie](../../campaign/using/designing-marketing-campaigns.md)vo
 
 Rapporten over simulaties hebben betrekking op de gegevens in de tabel **nms:simulatie** .
 
-De ingebouwde rapporten van de Campagne van Adobe zijn beschikbaar in de lijst hieronder.
+De ingebouwde rapporten van Adobe Campaign zijn te vinden in de onderstaande tabel.
 
 Raadpleeg de desbetreffende handleidingen voor meer informatie over de inhoud van deze rapporten.
 
@@ -318,7 +318,7 @@ Raadpleeg de desbetreffende handleidingen voor meer informatie over de inhoud va
 
 De rapporten over de toepassingen van het Web betreffen de gegevens in de **nms:WebApp** lijst.
 
-De ingebouwde rapporten van de Campagne van Adobe zijn beschikbaar in de lijst hieronder.
+De ingebouwde rapporten van Adobe Campaign zijn te vinden in de onderstaande tabel.
 
 Raadpleeg [deze sectie](../../web/using/about-web-applications.md)voor meer informatie over de inhoud van deze rapporten.
 
@@ -356,7 +356,7 @@ De volgende rapporten worden ook ingebouwd verstrekt. Raadpleeg voor meer inform
   </tr> 
   <tr> 
    <td> Analyse van aanbieding (offerteanalyse)<br /> </td> 
-   <td> De analyse van het aanbod per datum en kanaal, hangt van de toe:voegen-op van de Interactie af.<br /> </td> 
+   <td> De analyse van de aanbieding per datum en kanaal, hangt van de toe:voegen-op van de Interactie af.<br /> </td> 
    <td> nms:aanbieding<br /> </td> 
   </tr> 
   <tr> 
