@@ -1,7 +1,7 @@
 ---
-title: Cumulatieve verslagen
-seo-title: Cumulatieve verslagen
-description: Cumulatieve verslagen
+title: Cumulatieve rapporten
+seo-title: Cumulatieve rapporten
+description: Cumulatieve rapporten
 seo-description: null
 page-status-flag: never-activated
 uuid: 83ea834e-08f7-441b-8f15-a25ec07c4aab
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '71'
+ht-degree: 11%
 
 ---
 
 
-# Cumulatieve verslagen {#cumulative-reports}
+# Cumulatieve rapporten {#cumulative-reports}
 
 U kunt gecumuleerde rapporten weergeven bij leveringen. Selecteer hiertoe de te vergelijken leveringen om de lijst met rapporten voor deze leveringen te verkrijgen.
 
