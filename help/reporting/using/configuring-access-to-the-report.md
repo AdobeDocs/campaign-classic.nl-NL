@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: dd50ca25-8fa2-48fa-84cc-a63e476701a0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '760'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ## Weergavecontext rapporteren {#report-display-context}
 
-Bepaal de vertoningscontext van het rapport in het platform van de Campagne van Adobe gebruikend het **[!UICONTROL Display]** lusje. De toegang tot een rapport hangt van zijn selectietype, vertoningsvoorwaarden en toegangsvergunningen af.
+Bepaal de vertoningscontext van het rapport in het platform van Adobe Campaign gebruikend het **[!UICONTROL Display]** lusje. De toegang tot een rapport hangt van zijn selectietype, vertoningsvoorwaarden en toegangsvergunningen af.
 
 ### Type selectie {#selection-type}
 
