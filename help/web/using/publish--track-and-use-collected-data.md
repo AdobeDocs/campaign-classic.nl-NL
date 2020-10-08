@@ -1,7 +1,7 @@
 ---
-title: Gezamelde gegevens publiceren, bijhouden en gebruiken
-seo-title: Gezamelde gegevens publiceren, bijhouden en gebruiken
-description: Gezamelde gegevens publiceren, bijhouden en gebruiken
+title: Verzamelde data publiceren, bijhouden en gebruiken
+seo-title: Verzamelde data publiceren, bijhouden en gebruiken
+description: Verzamelde data publiceren, bijhouden en gebruiken
 seo-description: null
 page-status-flag: never-activated
 uuid: eac16f2c-0423-4727-a2da-3af1d6c616ec
@@ -11,22 +11,22 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: 434a4bda-0907-42a7-8a75-2db658bba046
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '844'
+ht-degree: 4%
 
 ---
 
 
-# Gezamelde gegevens publiceren, bijhouden en gebruiken{#publish-track-and-use-collected-data}
+# Verzamelde data publiceren, bijhouden en gebruiken{#publish-track-and-use-collected-data}
 
 Nadat het formulier is gemaakt, geconfigureerd en gepubliceerd, kunt u de koppeling delen met uw publiek en de reacties volgen.
 
 >[!NOTE]
 >
->De levenscyclus van een onderzoek in de Campagne van Adobe evenals zijn het publiceren en leveringswijzen zijn gelijkaardig aan die van Web: deze worden in [dit gedeelte](../../web/using/about-web-forms.md)nader toegelicht.
+>De levenscyclus van een enquête in Adobe Campaign en de publicatie- en leveringsmodi zijn vergelijkbaar met die van webformulieren: deze worden in [dit gedeelte](../../web/using/about-web-forms.md)nader toegelicht.
 
 ## Beoordelingsdashboard {#survey-dashboard}
 
@@ -46,7 +46,7 @@ Voor elke geleverde enquête kunt u de antwoorden op het **[!UICONTROL Logs]** t
 
 ![](assets/s_ncs_admin_survey_logs.png)
 
-Dubbelklik op een regel om het enquêteformulier weer te geven zoals het door de geënquêteerde is ingevuld. U kunt de enquête volledig doorbladeren en de antwoorden volledig openen. Deze bestanden kunnen in een extern bestand worden geëxporteerd. Raadpleeg Antwoorden [exporteren voor meer informatie](#exporting-answers).
+Dubbelklik op een regel om het enquêteformulier weer te geven zoals het door de geënquêteerde is ingevuld. U kunt de enquête volledig doorbladeren en de antwoorden volledig openen. Deze bestanden kunnen in een extern bestand worden geëxporteerd. For more on this, refer to [Exporting answers](#exporting-answers).
 
 De oorsprong wordt aangegeven in de URL van de enquête door de volgende tekens toe te voegen:
 
@@ -56,7 +56,7 @@ De oorsprong wordt aangegeven in de URL van de enquête door de volgende tekens 
 
 terwijl het onderzoek wordt uitgegeven, bevat zijn URL de parameter **[!UICONTROL __uuid]**, die erop wijst dat het in een testfase en nog niet online is. Wanneer u de enquête opent via deze URL, wordt er geen rekening gehouden met de gemaakte records in de tracering (rapporten). De oorsprong wordt gedwongen tot de waarde **[!UICONTROL Adobe Campaign]**.
 
-Raadpleeg [deze pagina](../../web/using/defining-web-forms-properties.md#form-url-parameters)voor meer informatie over URL-parameters.
+For more on URL parameters, refer to [this page](../../web/using/defining-web-forms-properties.md#form-url-parameters).
 
 ### Verslagen over enquêtes {#reports-on-surveys}
 
@@ -90,7 +90,7 @@ Antwoorden op een enquête kunnen worden geëxporteerd in een extern bestand dat
 
    Als u rapportgegevens wilt exporteren, klikt u op de **[!UICONTROL Export]** knop en kiest u de exportindeling.
 
-   Raadpleeg [deze sectie](../../reporting/using/about-reports-creation-in-campaign.md)voor meer informatie over het exporteren van rapportgegevens.
+   For more on exporting report data, refer to [this section](../../reporting/using/about-reports-creation-in-campaign.md).
 
 1. Antwoorden exporteren
 
@@ -107,6 +107,7 @@ Antwoorden op een enquête kunnen worden geëxporteerd in een extern bestand dat
    * kolommen toevoegen aan het uitvoerbestand en de informatie over de ontvanger (die in de database is opgeslagen) herstellen;
    * de indeling van de geëxporteerde gegevens;
    * Selecteer de coderingsindeling voor de gegevens in het bestand.
+
    Als het onderzoek u wilt uitvoeren verscheidene **[!UICONTROL Multi-line text]** of **[!UICONTROL HTML text]** gebieden bevat, moet het in **[!UICONTROL XML]** formaat worden uitgevoerd. U doet dit door deze indeling te selecteren in de vervolgkeuzelijst van het **[!UICONTROL Output format]** veld, zoals hieronder wordt weergegeven:
 
    ![](assets/s_ncs_admin_survey_logs_export_xml.png)
@@ -119,7 +120,7 @@ Antwoorden op een enquête kunnen worden geëxporteerd in een extern bestand dat
 
 ## De verzamelde gegevens gebruiken {#using-the-collected-data}
 
-De informatie die via online enquêtes wordt verzameld, kan worden teruggevonden in het kader van een gerichte workflow. Gebruik hiervoor het **[!UICONTROL Survey responses]** vak.
+De informatie die via online enquêtes wordt verzameld, kan worden teruggevonden in het kader van een gerichte workflow. To do this, use the **[!UICONTROL Survey responses]** box.
 
 In het volgende voorbeeld, willen wij een aanbieding van het Web speciaal voor de vijf ontvangers met minstens twee kinderen en met de hoogste scores bij een online onderzoek maken. De antwoorden op deze enquête zijn:
 
@@ -155,7 +156,7 @@ Bewerk het gesplitste vak om het te configureren:
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
 
-* Selecteer de **[!UICONTROL Keep only the first records after sorting]** optie en selecteer de sorteerkolom. Schakel de **[!UICONTROL Descending sort]** optie in.
+* Selecteer de **[!UICONTROL Keep only the first records after sorting]** optie en selecteer de sorteerkolom. Schakel de optie **[!UICONTROL Descending sort]** in.
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
 
@@ -167,6 +168,6 @@ Bewerk het gesplitste vak om het te configureren:
 
 ## Gegevens standaardiseren {#standardizing-data}
 
-Het is mogelijk om normalisatieprocessen in de Campagne van Adobe op te zetten voor gegevens die gebruikend aliassen worden verzameld. Zo kunt u de gegevens standaardiseren die in de database zijn opgeslagen: Hiertoe definieert u aliassen in de gespecificeerde lijsten die de relevante informatie bevatten.
+Het is mogelijk om normalisatieprocessen in Adobe Campaign op te zetten voor gegevens die met aliassen worden verzameld. Zo kunt u de gegevens standaardiseren die in de database zijn opgeslagen: Hiertoe definieert u aliassen in de gespecificeerde lijsten die de relevante informatie bevatten.
 
-Raadpleeg [deze pagina](../../platform/using/managing-enumerations.md#about-enumerations)voor meer informatie.
+Raadpleeg [deze pagina](../../platform/using/managing-enumerations.md#about-enumerations) voor meer informatie.
