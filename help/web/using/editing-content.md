@@ -1,7 +1,7 @@
 ---
-title: Inhoud bewerken
-seo-title: Inhoud bewerken
-description: Inhoud bewerken
+title: Content bewerken
+seo-title: Content bewerken
+description: Content bewerken
 seo-description: null
 page-status-flag: never-activated
 uuid: 2f51e848-1820-4bec-a0ea-63c9ddff05e0
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 discoiquuid: da66d640-8504-4dc7-bc4e-1c0ac1d37c37
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1236'
+ht-degree: 1%
 
 ---
 
 
-# Inhoud bewerken{#editing-content}
+# Content bewerken{#editing-content}
 
 ## Een zichtbaarheidsvoorwaarde definiëren {#defining-a-visibility-condition}
 
@@ -44,11 +44,11 @@ Deze voorwaarden passen de syntaxis van de XTK-expressie toe (bijvoorbeeld **ctx
 
 ## Rand en achtergrond toevoegen {#adding-a-border-and-background}
 
-U kunt een **rand** aan een geselecteerd blok toevoegen. De randen worden gedefinieerd met behulp van drie opties: stijl, grootte en kleur.
+You can add a **border** to a selected block. De randen worden gedefinieerd met behulp van drie opties: stijl, grootte en kleur.
 
 ![](assets/dce_popup_border.png)
 
-U kunt ook een **achtergrondkleur** definiëren door een kleur te selecteren in het kleurdiagram.
+You can also define a **background color** by selecting a color from the color chart.
 
 ![](assets/dce_popup_background.png)
 
@@ -64,13 +64,13 @@ U kunt databasevelden koppelen aan invoerzone, keuzerondje of keuzelijstblokken.
 >
 >De standaardgebieden zijn die in het schema van de de toepassingsopslag van het Web.
 
-Met de invoerzone **voor velden** kunt u een databaseveld selecteren dat u wilt koppelen aan het formulierveld.
+The **field** input zone lets you select a database field to link with the form field.
 
 Standaard worden velden aangeboden in de tabel **nms:ontvanger** .
 
 ![](assets/dce_field_selection.png)
 
-Met de optie **Vereist veld** kunt u de goedkeuring van de pagina alleen autoriseren als de gebruiker het veld heeft ingevuld. Als een vereist veld niet is ingevuld, wordt een foutbericht weergegeven.
+The **Required field** option lets you only authorize the page&#39;s approval if the user has filled in the field. Als een vereist veld niet is ingevuld, wordt een foutbericht weergegeven.
 
 Voor keuzerondjes en selectievakjes is **aanvullende configuratie vereist**.
 
@@ -142,6 +142,7 @@ U kunt alleen aanpassingsblokken en velden invoegen in tekstblokken.
 >* Nieuw venster (_leeg)
 >* Huidig venster (_zelf)
 >* Standaardbrowsergedrag
+
 >
 
 
@@ -156,7 +157,7 @@ Voer het koppelingsadres in kwestie in het veld **URL** . Het veld URL moet word
 
 ### Koppelen naar een webtoepassing {#link-to-a-web-application}
 
-Met de optie **Koppelen naar een webtoepassing** hebt u toegang tot een Adobe Campagne Web-toepassing.
+Met de optie **Koppelen naar een webtoepassing** hebt u toegang tot een Adobe Campaign-webtoepassing.
 
 ![](assets/dce_toolbar_imgblock_appweb.png)
 
@@ -176,7 +177,7 @@ Met de **koppeling die een handelingsoptie** definieert, kunt u een handeling co
 
 ### Een koppeling verwijderen {#delete-a-link}
 
-Wanneer een koppeling is ingevoegd, bevat de werkbalk twee nieuwe pictogrammen: Koppeling **** bewerken en de koppeling **** verbreken zodat u kunt communiceren met de gemaakte koppeling.
+Wanneer een koppeling is ingevoegd, bevat de werkbalk twee nieuwe pictogrammen: **De koppeling** bewerken en de koppeling **** verbreken zodat u kunt communiceren met de gemaakte koppeling.
 
 * **[!UICONTROL Edit link]** Hiermee kunt u een venster weergeven met alle parameters van de koppeling.
 * **[!UICONTROL Break the link]** Hiermee kunt u na bevestiging de koppeling en alle bijbehorende parameters verwijderen.
@@ -229,7 +230,7 @@ Voor compatibiliteit met de DCE moeten animaties **van het type** &quot;Flash&qu
 
 >[!CAUTION]
 >
->Externe bestanden in een **scripttag** van de HTML-pagina mogen niet worden aangeroepen. Deze bestanden worden niet geïmporteerd op de Adobe Campagne-server.
+>Externe bestanden in een **scripttag** van de HTML-pagina mogen niet worden aangeroepen. Deze bestanden worden niet geïmporteerd op de Adobe Campaign-server.
 
 ### Een afbeelding toevoegen, verwijderen of dupliceren {#adding---deleting---duplicating-an-image}
 
@@ -254,13 +255,13 @@ Met het pictogram **Dupliceren** dupliceert u de ![]() tag en de inhoud ervan.
 Wanneer u een blok selecteert dat een afbeelding bevat, hebt u toegang tot de volgende eigenschappen:
 
 * **Met Bijschrift** kunt u het bijschrift definiëren dat is gekoppeld aan de afbeelding (komt overeen met het **alt** -kenmerk HTML).
-* **Met Afmetingen** kunt u de afbeeldingsgrootte opgeven, in pixels.
+* **Met Dimension** kunt u de afbeeldingsgrootte opgeven, in pixels.
 
    ![](assets/dce_popup_imgsize.png)
 
 ## Aanpassingsinhoud toevoegen {#adding-personalization-content}
 
-### Een aanpassingsveld invoegen {#inserting-a-personalization-field}
+### Een personalisatieveld invoegen {#inserting-a-personalization-field}
 
 Met de optie voor het veld **Aanpassing aan** persoonlijke voorkeur voor het invoegpictogram kunt u een databaseveld toevoegen aan de inhoud, zoals de naam van de ontvanger. Deze optie is alleen beschikbaar voor tekstblokken.
 
