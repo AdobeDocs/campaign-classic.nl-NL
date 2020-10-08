@@ -1,7 +1,7 @@
 ---
-title: Gebruik hoofdletters
-seo-title: Gebruik hoofdletters
-description: Gebruik hoofdletters
+title: Gebruiksscenario’s
+seo-title: Gebruiksscenario’s
+description: Gebruiksscenario’s
 seo-description: null
 page-status-flag: never-activated
 uuid: 86762d94-2a7d-4053-980b-c699a58a021d
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 discoiquuid: 691eea2c-bffc-4520-91c8-43798eece916
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1318'
+ht-degree: 0%
 
 ---
 
 
-# Gebruik hoofdletters{#use-cases}
+# Gebruiksscenario’s{#use-cases}
 
 ## Een populatie analyseren {#analyzing-a-population}
 
@@ -38,7 +38,7 @@ U doet dit door de desbetreffende leveringen te selecteren, vervolgens met de re
 
 ### Een type analyse selecteren {#selecting-a-type-of-analysis}
 
-In de eerste stap van de medewerker, kunt u het beschrijvende analysemalplaatje selecteren aan gebruik. Standaard bevat Adobe Campaign twee sjablonen: **[!UICONTROL Qualitative distribution]** en **[!UICONTROL Quantitative distribution]**. Voor meer op dit verwijs naar het [Vormen van de kwalitatieve sectie van het distributiemalplaatje](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template) . De verschillende weergaven worden weergegeven in het gedeelte [Info beschrijvende analyse](../../reporting/using/about-descriptive-analysis.md) .
+In de eerste stap van de medewerker, kunt u het beschrijvende analysemalplaatje selecteren aan gebruik. Adobe Campaign biedt standaard twee sjablonen: **[!UICONTROL Qualitative distribution]** en **[!UICONTROL Quantitative distribution]**. For more on this refer to the [Configuring the qualitative distribution template](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template) section. De verschillende weergaven worden weergegeven in het gedeelte [Info beschrijvende analyse](../../reporting/using/about-descriptive-analysis.md) .
 
 In dit voorbeeld selecteert u de **[!UICONTROL Qualitative distribution]** sjabloon en kiest u een weergave met een grafiek en tabel (array). Geef het rapport een naam (&quot;Omschrijvende analyse&quot;) en klik op **[!UICONTROL Next]**.
 
@@ -82,7 +82,7 @@ In dit venster kunt u de lijst met statistieken definiëren die moeten worden be
 
 ![](assets/reporting_descriptive_quickstart_step_4.png)
 
-Klik op de **[!UICONTROL Add]** knop om een nieuwe statistiek te maken. Raadpleeg voor meer informatie de berekening [Statistieken](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation).
+Klik op de **[!UICONTROL Add]** knop om een nieuwe statistiek te maken. For more on this, refer to [Statistics calculation](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation).
 
 ### Het bekijken van en het gebruiken van het rapport {#viewing-and-using-the-report}
 
