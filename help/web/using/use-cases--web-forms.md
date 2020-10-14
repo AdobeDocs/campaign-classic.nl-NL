@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: web-forms
 discoiquuid: cfa22577-0b9e-4eee-900d-214b81256d81
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '960'
 ht-degree: 2%
 
 ---
@@ -51,11 +51,11 @@ De berichten van de bevestiging worden verzonden via een specifiek leveringsmalp
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Aangezien de ontvangers van deze levering hun goedkeuring niet hebben bevestigd, zijn zij nog op de lijst van afgewezen personen van het gegevensbestand. Voor hen om deze mededeling te ontvangen, moet u leveringen toelaten die op dit malplaatje worden gebaseerd aan doelontvangers die op de lijst van afgewezen personen zijn.
+1. Aangezien de ontvangers van deze levering hun goedkeuring niet hebben bevestigd, zijn zij nog op de lijst van afgewezen personen van het gegevensbestand. Voor hen om deze mededeling te ontvangen, moet u leveringen toelaten die op dit malplaatje aan doelontvangers op lijst van afgewezen personen worden gebaseerd.
 
    Klik hiertoe op het **[!UICONTROL Exclusions]** tabblad.
 
-1. Klik op de **[!UICONTROL Edit...]** koppeling en schakel de **[!UICONTROL Exclude recipients who no longer want to be contacted (blocklist)]** optie uit.
+1. Klik op de **[!UICONTROL Edit...]** koppeling en schakel de **[!UICONTROL Exclude recipients who no longer want to be contacted (blacklist)]** optie uit.
 
    <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
@@ -109,10 +109,10 @@ Volg de onderstaande stappen om dit te doen:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   De eerste **[!UICONTROL Script]** activiteit zal ontvangers aan de lijst van afgewezen personen toevoegen tot zij hun abonnement op nieuwsbrief bevestigen. De inhoud ervan moet als volgt zijn:
+   De eerste **[!UICONTROL Script]** activiteit zal ontvangers op lijst van afgewezen personen toevoegen tot zij hun abonnement op nieuwsbrief bevestigen. De inhoud ervan moet als volgt zijn:
 
    ```
-   ctx.recipient.@blockList=1
+   ctx.recipient.@blackList=1
    ```
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
@@ -120,7 +120,7 @@ Volg de onderstaande stappen om dit te doen:
    De tweede **[!UICONTROL Script]** activiteit staat leveringen toe om aan de gebruikers te worden verzonden en hen aan de nieuwsbrief in te schrijven. Met de laatste twee regels van het script kunt u de ontvangers van de tijdelijke map overbrengen naar een andere map en worden ze afgestemd op bestaande profielen zodra ze het abonnement hebben bevestigd.
 
    ```
-   ctx.recipient.@blockList=0
+   ctx.recipient.@blackList=0
    nms.subscription.Subscribe("INTERNAL_NAME_OF_THE_NEWSLETTER", ctx.recipient, false)
    ctx.recipient.folder = <folder name="nmsRootRecipient"/>
    nms.subscription.Unsubscribe("TEMP", ctx.recipient)
@@ -172,7 +172,7 @@ Het abonnement op de nieuwsbrief omvat de volgende stappen:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   De gebruiker wordt toegevoegd aan de Adobe Campaign-database in de **[!UICONTROL Temp]** map en zijn profiel wordt toegevoegd aan de lijst van afgewezen personen totdat hij of zij zijn of haar abonnement met de e-mail bevestigt.
+   De gebruiker wordt toegevoegd aan de Adobe Campaign-database in de **[!UICONTROL Temp]** map en zijn profiel staat op de lijst van afgewezen personen totdat hij of zij zijn of haar abonnement met de e-mail bevestigt.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -186,7 +186,7 @@ Het abonnement op de nieuwsbrief omvat de volgende stappen:
 
    In Adobe Campaign wordt het gebruikersprofiel bijgewerkt:
 
-   * zij niet langer op de lijst van afgewezen personen staan,
+   * zij niet langer in de lijst van afgewezen personen zijn,
    * zij zijn geabonneerd op de informatiedienst .
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
