@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: f449ccd5-3965-4ab8-b5a9-993f3260aba9
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '992'
 ht-degree: 12%
 
 ---
@@ -129,7 +129,7 @@ Deze fout geeft aan dat de domeinnaam van de FTP-server niet correct kan worden 
 
    1. Ga naar de workflowcontrole en controleer of in de logboeken de fout &#39;Kan hostnaam niet oplossen&#39; wordt weergegeven.
 
-1. Als de SFTP-server door Adobe wordt gehost, controleert u of IP aan de lijst van gewenste personen is toegevoegd door contact op te nemen met de klantenservice.
+1. Als de server SFTP door Adobe wordt ontvangen, controleer of IP aan de lijst van gewenste personen wordt toegevoegd door de Zorg van de Klant te contacteren.
 
    Anders valideren:
 
