@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 93dd29e8-cf0a-4010-a3cc-f68c52c0d9ef
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '474'
 ht-degree: 5%
 
 ---
@@ -46,7 +46,7 @@ Dit scherm bevat alle algemene gegevens over het geselecteerde profiel. Het beva
 
 >[!NOTE]
 >
->Wanneer de **[!UICONTROL No longer contact (by any channel)]** optie is geselecteerd, betekent dit dat het profiel zich op de lijst van afgewezen personen bevindt, d.w.z. dat in het profiel de wens is geuit dat geen contact wordt opgenomen (bijvoorbeeld door op een koppeling voor niet-abonnementen in een nieuwsbrief te klikken). Deze zullen niet meer het doelwit zijn van leveringen via welke kanalen dan ook (e-mail, direct mail, enz.). Raadpleeg [deze pagina](../../delivery/using/understanding-quarantine-management.md) voor meer informatie.
+>Wanneer de **[!UICONTROL No longer contact (by any channel)]** optie is geselecteerd, betekent dit dat het profiel op lijst van afgewezen personen is, d.w.z. dat het profiel de wens heeft geuit om niet te worden benaderd (bijvoorbeeld door op een koppeling voor niet-abonnementen in een nieuwsbrief te klikken). Deze zullen niet meer het doelwit zijn van leveringen via welke kanalen dan ook (e-mail, direct mail, enz.). Raadpleeg [deze pagina](../../delivery/using/understanding-quarantine-management.md) voor meer informatie.
 
 ## Tabblad Contactgegevens {#contact-information-tab}
 
