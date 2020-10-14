@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '736'
 ht-degree: 6%
 
 ---
@@ -62,7 +62,7 @@ Om uw ontvangers&#39; te bereiken inbox zonder te stuiteren of als spam worden g
 
 Het is in uw belang om goede processen van het quarantainebeheer te handhaven.
 
-Wanneer u e-mailberichten op een nieuw platform gaat verzenden, kunt u een lijst met adressen gebruiken die niet volledig zijn gekwalificeerd. Als u naar ongeldige adressen of naar honeypot-adressen (brievenbussen slechts die aan truc spammers worden gecreeerd) verzendt, zal dit de reputatie van uw platform beginnen te verminderen. Goede quarantainebeheerprocessen helpen: Houd de adreskwaliteit in stand, vermijd lijst van afgewezen personen door internettoegangsproviders en verlaag uw foutenpercentage, waardoor leveringen en doorvoer sneller verlopen.
+Wanneer u e-mailberichten op een nieuw platform gaat verzenden, kunt u een lijst met adressen gebruiken die niet volledig zijn gekwalificeerd. Als u naar ongeldige adressen of naar honeypot-adressen (brievenbussen slechts die aan truc spammers worden gecreeerd) verzendt, zal dit de reputatie van uw platform beginnen te verminderen. Goede quarantainebeheerprocessen helpen: Houd de adreskwaliteit in stand, vermijd lijst van afgewezen personen door internettoegangsproviders en verlaag uw foutenpercentage, versnelt de levering en doorvoer.
 
 **Tips**
 
@@ -73,7 +73,7 @@ Wanneer u e-mailberichten op een nieuw platform gaat verzenden, kunt u een lijst
 * Adobe Campaign beheert onjuiste adressen op basis van het type geretourneerde fout. Raadpleeg [deze sectie](../../delivery/using/understanding-quarantine-management.md) voor meer informatie.
 
 
-* Sommige internetproviders beschouwen e-mails automatisch als spam als het aantal ongeldige adressen te hoog is. Met quarantaine kunt u dus voorkomen dat u door deze providers aan een lijst van afgewezen personen wordt toegevoegd.
+* Sommige internetproviders beschouwen e-mails automatisch als spam als het aantal ongeldige adressen te hoog is. Met quarantaine kunt u dus voorkomen dat u door deze providers aan de lijst van afgewezen personen wordt toegevoegd.
 
 * Het beheer van quarantaines zal ook de verzendkosten van SMS helpen verminderen door onjuiste telefoonnummers uit te sluiten van leveringen.
 
