@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 1%
@@ -52,7 +52,7 @@ Dit is de standaardtabel die wordt gebruikt voor de **ontvangers van leveringen*
 * iEmailFormat: voorkeursindeling voor e-mailberichten (1 voor tekst, 2 voor HTML en 0 als deze niet gedefinieerd zijn).
 * sAddress1, sAddress2, sAddress3, sAddress4, sZipCode, sCity wordt gebruikt om het postadres te bouwen (in overeenstemming met de norm XPZ 10-011 AFNOR van Mei 1997).
 * sPhone, sMobilePhone en sFax bevatten respectievelijk de telefoon-, mobiele telefoon- en faxnummers.
-* iBlockList is de standaardmarkering voor niet-deelname die wordt gebruikt voor de profielen (1 betekent &quot;niet-geabonneerd&quot;, 0 anders).
+* iBlackList is de standaardmarkering voor niet-deelname die wordt gebruikt voor de profielen (1 betekent &quot;niet-geabonneerd&quot;, anders 0).
 
 Het veld iFolderId is de externe sleutel die de ontvanger aan zijn uitvoeringsmap koppelt. For more on this, see [XtkFolder](#XtkFolder).
 
