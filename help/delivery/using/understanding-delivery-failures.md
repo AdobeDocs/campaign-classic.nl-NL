@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 78b58a7a-b387-4d5d-80d5-01c06f83d759
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2440'
 ht-degree: 16%
 
 ---
@@ -32,7 +32,7 @@ Wanneer een bericht (e-mail, SMS, pushmelding) niet naar een profiel kan worden 
 
 Zodra een bericht wordt verzonden, staat de leveringslogboeken u toe om de leveringsstatus voor elk profiel en het bijbehorende mislukkingstype en de reden te bekijken.
 
-De berichten kunnen ook tijdens de leveringsvoorbereiding worden uitgesloten als een adres quarantined is of als een profiel op de lijst van afgewezen personen is. Uitgesloten berichten worden vermeld in het leveringsdashboard.
+De berichten kunnen ook tijdens de leveringsvoorbereiding worden uitgesloten als een adres quarantined is of als een profiel op lijst van afgewezen personen is. Uitgesloten berichten worden vermeld in het leveringsdashboard.
 
 **Verwante onderwerpen:**
 
@@ -83,10 +83,10 @@ De mogelijke redenen van een leveringsfout zijn:
    <td> De kwaliteitsbeoordeling voor dit adres is te laag.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Adres op lijst van afgewezen personen </td> 
+   <td> Op de lijst met ongewenste personen staan adres </td> 
    <td> Hard </td> 
    <td> 8 </td> 
-   <td> Het adres werd toegevoegd aan de lijst van afgewezen personen op het tijdstip van verzending. Deze status wordt gebruikt voor het importeren van gegevens van externe lijsten en systemen naar de Adobe Campaign Quarantine-lijst.<br /> </td> 
+   <td> Het adres werd toegevoegd aan de lijst van afgewezen personen toen het verzenden. Deze status wordt gebruikt voor het importeren van gegevens van externe lijsten en systemen naar de Adobe Campaign Quarantine-lijst.<br /> </td> 
   </tr> 
   <tr> 
    <td> Besturingsadres </td> 
@@ -104,7 +104,7 @@ De mogelijke redenen van een leveringsfout zijn:
    <td> Fout genegeerd </td> 
    <td> Genegeerd </td> 
    <td> 25 </td> 
-   <td> Het adres is op de lijst van gewenste personen. De fout wordt daarom genegeerd en er wordt een e-mail verzonden.<br /> </td> 
+   <td> Het adres staat op de lijst van gewenste personen. De fout wordt daarom genegeerd en er wordt een e-mail verzonden.<br /> </td> 
   </tr> 
   <tr> 
    <td> Uitgesloten na arbitrage </td> 
@@ -204,7 +204,7 @@ Een bericht kan onmiddellijk (synchrone fout), of later op ontbreken, nadat het 
    >
    >De configuratie van de stuiterende brievenbus is gedetailleerd in [deze sectie](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
 
-   De [feedbacklus](../../delivery/using/technical-recommendations.md#feedback-loop) werkt als e-mailberichten met een stuitend bericht. Wanneer een gebruiker een e-mail als spam kwalificeert, kunt u e-mailregels in Adobe Campaign configureren om alle leveringen aan deze gebruiker te blokkeren. Berichten die worden verzonden naar gebruikers die een e-mailbericht hebben gekwalificeerd als spam, worden automatisch omgeleid naar een e-mailvak dat speciaal voor dit doel is gemaakt. De adressen van deze gebruikers zijn op de lijst van afgewezen personen alhoewel zij niet de unsubscription verbinding klikten. De adressen zijn op de lijst van afgewezen personen in de (**NmsAddress**) quarantainelijst en niet in de (**NmsRecipient**) ontvankelijke lijst.
+   De [feedbacklus](../../delivery/using/technical-recommendations.md#feedback-loop) werkt als e-mailberichten met een stuitend bericht. Wanneer een gebruiker een e-mail als spam kwalificeert, kunt u e-mailregels in Adobe Campaign configureren om alle leveringen aan deze gebruiker te blokkeren. Berichten die worden verzonden naar gebruikers die een e-mailbericht hebben gekwalificeerd als spam, worden automatisch omgeleid naar een e-mailvak dat speciaal voor dit doel is gemaakt. De adressen van deze gebruikers zijn op lijst van afgewezen personen alhoewel zij niet de unsubscription verbinding klikten. De adressen zijn in lijst van afgewezen personen in de (**NmsAddress**) quarantainelijst en niet in de (**NmsRecipient**) ontvankelijke lijst.
 
    >[!NOTE]
    >
