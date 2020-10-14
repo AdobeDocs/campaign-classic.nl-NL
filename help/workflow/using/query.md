@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: targeting-activities
 discoiquuid: b53d9810-f61f-4257-b410-e4d30f78429d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
 source-wordcount: '1617'
 ht-degree: 0%
@@ -187,7 +187,7 @@ In de onderstaande sectie vindt u tips en trucs voor het optimaliseren van query
 
    Zorg ervoor dat de `where` component van hetzelfde type is als het veld.
 
-   Een algemene fout is: `iBlocklist='3'` waarbij `iBlocklist` een numeriek veld is en `3` een tekstwaarde.
+   Een algemene fout is: `iBlacklist='3'` waarbij `iBlacklist` een numeriek veld is en `3` een tekstwaarde.
 
    Zorg ervoor u weet wat het uitvoeringsplan van uw vraag zal zijn. Vermijd volledig lijstaftasten, vooral voor vragen in real time of dichtbij vragen in real time die elke minuut lopen.
 
