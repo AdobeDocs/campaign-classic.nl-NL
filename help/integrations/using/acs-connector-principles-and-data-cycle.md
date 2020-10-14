@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: acs-connector
 discoiquuid: 64d87bea-2376-4684-ac93-6ca56fe0f262
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
 source-wordcount: '1996'
 ht-degree: 0%
@@ -216,15 +216,15 @@ U vindt onder de lijst met ontvangende velden die worden gerepliceerd met de bas
   </tr> 
   <tr> 
    <td> Geen contact meer (via een kanaal)<br /> </td> 
-   <td> @lijst van afgewezen personen<br /> </td> 
+   <td> @blackList<br /> </td> 
   </tr> 
   <tr> 
    <td> Geen contact meer per e-mail<br /> </td> 
-   <td> @blockListEmail<br /> </td> 
+   <td> @blackListEmail<br /> </td> 
   </tr> 
   <tr> 
    <td> Geen contact meer met SMS<br /> </td> 
-   <td> @blockListMobile<br /> </td> 
+   <td> @blackListMobile<br /> </td> 
   </tr> 
   <tr> 
    <td> Telefoon<br /> </td> 
