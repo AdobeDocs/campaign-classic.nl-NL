@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '2974'
 ht-degree: 1%
 
 ---
@@ -564,7 +564,7 @@ Dit rapport is gebaseerd op de tabellen **[!UICONTROL Delivery and tracking stat
   <tr> 
    <td> Klachten<br /> </td> 
    <td> @complaints<br /> </td> 
-   <td> Aantal berichten met een status gelijk aan "Mislukt"en een reden gelijk aan "adres toegevoegd aan de lijst van afgewezen personen".<br /> </td> 
+   <td> Aantal berichten met een status gelijk aan "Mislukt"en een reden gelijk aan "adres op lijst van afgewezen personen".<br /> </td> 
    <td> Count(@status=2 en msg/@failureReason=8)<br /> </td> 
   </tr> 
   <tr> 
@@ -766,7 +766,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** tabel (nms:delivery).
   <tr> 
    <td> Berichten afgewezen door de regel<br /> </td> 
    <td> @weiger<br /> </td> 
-   <td> Aantal adressen genegeerd tijdens de analyse in overeenstemming met typologieregels: adres niet gespecificeerd, quarantined, toegevoegd aan de lijst van afgewezen personen, enz.<br /> </td> 
+   <td> Aantal adressen genegeerd tijdens de analyse in overeenstemming met typologieregels: adres niet gespecificeerd, quarantined, op lijst van afgewezen personen, enz.<br /> </td> 
    <td> sum([eigenschappen/@weiger])<br /> </td> 
   </tr> 
   <tr> 
