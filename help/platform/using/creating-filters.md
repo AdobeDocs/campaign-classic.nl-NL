@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: filtering-data
 discoiquuid: 066e730b-2527-4257-b11f-2e73f746a8a5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1980'
+source-wordcount: '1976'
 ht-degree: 0%
 
 ---
@@ -276,8 +276,8 @@ De vooraf gedefinieerde filters zijn:
    <td> Hiermee selecteert u ontvangers die in de afgelopen maanden ten minste x maal op een levering hebben geklikt.<br /> </td> 
   </tr> 
   <tr> 
- <td> E-mailadres op de lijst van afgewezen personen<br /> </td> 
-    <td> Hiermee selecteert u ontvangers van wie het e-mailadres zich op de lijst van afgewezen personen bevindt.<br/> </td>
+ <td> Op de lijst met ongewenste personen staan e-mailadres<br /> </td> 
+    <td> Hiermee selecteert u ontvangers waarvan het e-mailadres zich op de lijst van afgewezen personen bevindt.<br/> </td>
   </tr> 
   <tr> 
    <td> Gegarandeerd e-mailadres<br /> </td> 
