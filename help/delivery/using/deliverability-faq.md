@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1341'
 ht-degree: 0%
 
 ---
@@ -47,24 +47,24 @@ Als u altijd het zelfde foutenbericht voor ISP krijgt, kan uw e-mail of IP als g
 
 Neem contact op met de services voor commercieel gebruik of levering, Adobe Campaign Client Care of Adobe Campaign als het probleem zich blijft voordoen.
 
-## Lijst van afgewezen personen versus quarantaine {#block-list-versus-quarantine}
+## Lijst van afgewezen personen versus quarantaine {#denylist-versus-quarantine}
 
-* **Wat is het verschil tussen een e-mailadres op de lijst van afgewezen personen en een in quarantaine geplaatst e-mailadres?**
+* **Wat is het verschil tussen een e-mailadres op lijst van afgewezen personen en een quarantined e-mailadres?**
 
-   * De status **[!UICONTROL On block list]** is een resultaat van een feedbacklus (wanneer een persoon een bericht rapporteert als spam).
+   * De status **[!UICONTROL Denylisted]** is een resultaat van een feedbacklus (wanneer een persoon een bericht rapporteert als spam).
 
    * De status **[!UICONTROL Quarantined]** is het resultaat van een zachte of harde stuit.
-   Zie [deze sectie](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-block-list)voor meer informatie.
+   Zie [deze sectie](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist)voor meer informatie.
 
 * **Wat betekenen de verschillende redenen voor quarantainefouten?**
 
-   Hier volgen tien mogelijke redenen: niet bepaald, gebruiker onbekend, ongeldig domein, adres op lijst van afgewezen personen, geweigerd, fout genegeerd, onbereikbaar, rekening gehandicapt, brievenbus volledig, niet verbonden.
+   Hier volgen tien mogelijke redenen: niet bepaald, gebruiker onbekend, ongeldig domein, op lijst van afgewezen personen, geweigerd, fout genegeerd, onbereikbaar, rekening gehandicapt, brievenbus volledig, niet verbonden.
 
    For more on this, see [Understanding quarantine management](../../delivery/using/understanding-quarantine-management.md).
 
-## Verwijderen uit lijst van afgewezen personen {#remove-from-block-list}
+## Verwijderen uit lijst van afgewezen personen {#remove-from-denylist}
 
-* **Een van mijn ontvangers is per ongeluk aan de lijst van afgewezen personen toegevoegd. Hoe verwijder ik hen uit de lijst van afgewezen personen zodat ik kan beginnen hen berichten opnieuw te verzenden?**
+* **Een van mijn ontvangers is per ongeluk aan de lijst van afgewezen personen toegevoegd. Hoe verwijder ik ze uit de denyist zodat ik ze opnieuw berichten kan sturen?**
 
    * Ga naar **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
    * Stel in de details van de corresponderende record de waarde van het **[!UICONTROL Status]** veld in op **[!UICONTROL Valid]**.
@@ -76,7 +76,7 @@ Neem contact op met de services voor commercieel gebruik of levering, Adobe Camp
    * [MX-gereedschapset](https://mxtoolbox.com/)
    * [Wat is mijn IP adres](https://whatismyipaddress.com)
 
-   Over het algemeen, zal het resultaat van de IP adrescontrole een lijst terugkeren die details van de lijst van afgewezen personen en ook de naam van de website bevat die het IP adres blokkeerde.
+   Over het algemeen, zal het resultaat van de IP adrescontrole een lijst terugkeren die details van de lijst van afgewezen personen en ook de naam van de website bevat die het IP adres ontkende.
 
    Als u op de desbetreffende koppeling klikt, hebt u toegang tot de gegevens van de website. Vervolgens kunt u vragen dat uw website wordt verwijderd van de website die het IP-adres aan de lijst van afgewezen personen heeft toegevoegd.
 
