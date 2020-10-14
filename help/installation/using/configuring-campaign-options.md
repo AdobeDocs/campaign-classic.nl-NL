@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: appendices
 discoiquuid: 9c1884f6-1dd8-41ab-b8dc-604c8cc2dc89
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 1%
@@ -92,7 +92,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
    <td> Reguliere expressies voor het normaliseren van leveringsberichten.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsBroadcast_RemoveBlockList</span> <br /> </td> 
+   <td> <span class="uicontrol">NmsBroadcast_RemoveBlackList</span> <br /> </td> 
    <td> Als u "1" opgeeft als waarde, kunt u ontvangers uitsluiten die niet langer contact met u willen opnemen.<br /> </td> 
   </tr> 
   <tr> 
