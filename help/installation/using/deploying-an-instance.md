@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 71fc8bfc-40e0-4592-a540-bd6807ded3a0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '3066'
+source-wordcount: '3063'
 ht-degree: 1%
 
 ---
@@ -113,7 +113,7 @@ De volgende opties zijn beschikbaar:
 
 * **[!UICONTROL Delivery duration of messages]** : Daarna wordt de levering gestopt (standaard 5 dagen),
 * **[!UICONTROL Online resources validity duration]** : Tijdstip waarop informatie uit het ontvangende profiel wordt bewaard om spiegelpagina&#39;s te genereren;
-* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Als deze optie is ingeschakeld, wordt geen contact opgenomen met ontvangers op de lijst van afgewezen personen.
+* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Als deze optie is ingeschakeld, wordt bij lijsten van afgewezen personen geen contact opgenomen met de ontvangers van de 
 * **[!UICONTROL Automatically ignore doubles]** : Als deze optie is geselecteerd, wordt de levering niet uitgevoerd naar dubbele adressen.
 
 ### Parameters opnieuw proberen {#retry-parameters}
@@ -456,7 +456,7 @@ Het kenmerk status kan een van de volgende drie waarden hebben:
 
 * normaal: Bestaand gedrag (zonder synchronisatie)
 
-* lijst van afgewezen personen: De URL wordt toegevoegd aan de lijst van afgewezen personen als er een fout van 404 wordt geretourneerd. De duur (in seconden) van de URL die zich in de lijst van afgewezen personen bevindt, wordt gedefinieerd door een **time-outkenmerk** waarvan de standaardwaarde 60 seconden is.
+* zwarte lijst: De URL wordt toegevoegd aan de lijst van afgewezen personen als deze een fout van 404 retourneert. De duur (in seconden) van de URL die zich in de lijst van afgewezen personen bevindt, wordt gedefinieerd door een **time-outkenmerk** waarvan de standaardwaarde 60 seconden is.
 
 De uit-van-de-doos configuratie van de synchronisatie is:
 
@@ -475,11 +475,11 @@ startRedirection="true" startRedirectionInModule="true" trackWebVisitors="false"
 <relay debugRelay="false" forbiddenCharsInAuthority="?#.@/:" forbiddenCharsInPath="?#/"
            modDir="index.html" startRelay="false" startRelayInModule="true" timeout="60">
    <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/view/*"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jsp"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jssp"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="/webApp/*"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="/report/*"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="/jssp/*"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jsp"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jssp"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="/webApp/*"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="/report/*"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="/jssp/*"/>
       <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/strings/*"/>
       <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/interaction/*"/>
       <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/barcode/*"/>
