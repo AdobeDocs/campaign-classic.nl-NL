@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: a21576c7-e94c-4fe1-9e31-d89116e427f6
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '489'
 ht-degree: 3%
 
 ---
@@ -40,11 +40,11 @@ U kunt:
 >
 >Gegevensimport in campagne moet via workflows worden uitgevoerd om de consistentie van gegevens te waarborgen en de efficiëntie te verbeteren. Raadpleeg voor meer informatie de secties [Gegevens](../../workflow/using/importing-data.md)importeren, Beste werkwijzen [](../../workflow/using/importing-data.md#best-practices-when-importing-data) importeren en Sjabloonvoorbeeld [](../../workflow/using/importing-data.md#setting-up-a-recurring-import) importeren.
 
+![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
+
 ## Creating a job template {#creating-a-job-template}
 
 Importeren- en exportsjablonen worden opgeslagen in de **[!UICONTROL Resources > Templates > Job templates]** directory van de Adobe Campaign-structuur.
-
-![](assets/s_ncs_user_export_wizard_template.png)
 
 Standaard staan er drie importsjablonen en één exportsjabloon in deze map. Ze mogen niet worden gewijzigd. U kunt ze dupliceren om uw eigen sjablonen te maken of een nieuwe sjabloon maken via het menu **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]** .
 
@@ -54,7 +54,7 @@ De procedure voor het creëren van een procesmalplaatje wordt voorgesteld in de 
 
 >[!NOTE]
 >
->De native sjabloon **[!UICONTROL Import block list]** is al geconfigureerd voor het importeren van een lijst met e-mailadressen die aan de lijst van afgewezen personen zijn toegevoegd.
+>De native sjabloon **[!UICONTROL Import denylist]** is al geconfigureerd voor het importeren van een lijst met e-mailadressen die aan de lijst van afgewezen personen zijn toegevoegd.
 > 
 >Met de sjablonen **[!UICONTROL New text import]** en **[!UICONTROL New text export]** sjablonen kunt u een geheel nieuwe import of export configureren.
 
