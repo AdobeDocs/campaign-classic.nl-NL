@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: sending-emails
 discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1573'
 ht-degree: 3%
 
 ---
@@ -151,6 +151,7 @@ U kunt ook de [Tips en bekende beperkingen voor Gmail](https://developers.google
 U kunt momenteel in twee stappen experimenteren met het verzenden van een AMP-e-mail:
 
 1. Met Adobe Campaign kunt u testen of een dynamische e-mail met AMP-functionaliteit wordt geleverd aan geselecteerde e-mailadressen die correct zijn geconfigureerd, om de inhoud en het gedrag ervan te controleren. Zie AMP-e-maillevering [testen voor geselecteerde adressen](#testing-amp-delivery-for-selected-addresses).
+
 1. Nadat u de test hebt uitgevoerd, kunt u een levering of een campagne verzenden als onderdeel van het AMP for Email-programma door u te registreren bij de desbetreffende e-mailprovider(s) om uw senderdomein toe te voegen aan de lijst van gewenste personen. Zie E-mails met AMP [leveren door u te registreren bij een e-mailprovider](#delivering-amp-emails-by-registering).
 
 ### AMP-e-maillevering testen voor geselecteerde adressen {#testing-amp-delivery-for-selected-addresses}
