@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2567'
+source-wordcount: '2562'
 ht-degree: 2%
 
 ---
@@ -163,7 +163,7 @@ Tijdens het verzenden van een levering krijgt u mogelijk de volgende status op h
   </tr> 
   <tr> 
    <td> Genegeerd<br /> </td> 
-   <td> De levering is niet naar de ontvanger verzonden vanwege een fout met zijn adres. Het is toegevoegd aan een lijst van afgewezen personen, in quarantaine geplaatst, niet beschikbaar of gedupliceerd. <br /> </td> 
+   <td> De levering is niet naar de ontvanger verzonden vanwege een fout met zijn adres. Het was of op lijst van afgewezen personen, quarantined, niet verstrekt of een duplicaat. <br /> </td> 
   </tr> 
   <tr> 
    <td> Verzonden<br /> </td> 
@@ -241,7 +241,7 @@ Als de status van een e-maillevering is **[!UICONTROL Failed]**, kan deze worden
 
 De logboeken van de levering zijn zeer belangrijk om te leren waarom een levering ontbrak. Hier zijn mogelijke fouten die u van leveringslogboeken kunt ontdekken:
 
-* Als de ontvankelijke berichten met een &quot;Onbereikbare&quot;fout die ontbreken verklaart: **Fout bij compileren van script &#39;content htmlContent&#39; regel X:`[table]`is niet gedefinieerd. JavaScript: fout terwijl het evalueren van manuscript &#39;content htmlContent**, is de oorzaak van deze kwestie bijna altijd een verpersoonlijking binnen HTML die op een lijst of een gebied probeert te roepen dat niet is bepaald of in kaart gebracht in het stroomopwaartse richten of in de het doelafbeelding van de levering.
+* Als de ontvankelijke berichten met een &quot;Onbereikbare&quot;fout die ontbreken verklaart: **Fout bij compileren van script &#39;content htmlContent&#39; regel X: `[table]` is niet gedefinieerd. JavaScript: fout terwijl het evalueren van manuscript &#39;content htmlContent**, is de oorzaak van deze kwestie bijna altijd een verpersoonlijking binnen HTML die op een lijst of een gebied probeert te roepen dat niet is bepaald of in kaart gebracht in het stroomopwaartse richten of in de het doelafbeelding van de levering.
 
    Om dit te verbeteren, moeten de werkschema en leveringsinhoud worden herzien om specifiek te bepalen welke verpersoonlijking probeert om de lijst in kwestie te roepen en of de lijst of niet kan worden in kaart gebracht. Van daar, of het verwijderen van de vraag aan deze lijst in HTML of het bevestigen van de afbeelding aan de levering zou de weg aan resolutie zijn.
 
