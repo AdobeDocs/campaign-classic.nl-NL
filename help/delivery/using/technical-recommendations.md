@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: fc95538b-b54d-44ec-81aa-f51b62982699
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2432'
 ht-degree: 0%
 
 ---
@@ -255,7 +255,7 @@ IP de Certificatie is een verzendend beste praktijkprogramma dat helpt ervoor zo
 
 Momenteel bieden twee leveranciers IP Certificatie aan: Return Path en Certified Senders Alliance.
 
-Gecertificeerde afzenders worden toegevoegd aan lijsten van gewenste personen voor e-mail die worden gebruikt door leveranciers van postvakken en bedrijven voor e-mailbeveiliging. Deze commerciële lijsten van gewenste personen zijn gebaseerd op een systeem dat de afzender toelaat om antispamfilters volledig te mijden of stijgende punten worden toegewezen aangezien zij het systeem ingaan.
+Gecertificeerde afzenders worden toegevoegd aan lijsten van gewenste personen voor e-mail die worden gebruikt door wereldwijde postbusproviders en e-mailbeveiligingsbedrijven. Deze commerciële lijsten van gewenste personen zijn gebaseerd op een systeem dat de afzender toelaat om antispamfilters volledig te mijden of stijgende punten worden toegewezen aangezien zij het systeem ingaan.
 
 Het [programma voor de certificering](https://www.validity.com/products/returnpath/certification/) van retourpaden biedt een aantal voordelen, waaronder:
 
