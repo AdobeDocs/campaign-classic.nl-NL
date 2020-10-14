@@ -7,13 +7,13 @@ contentOwner: sauviat
 products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
-topic-tags: latest-release-notes
+topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d06cc9c090e2ad8b72ce3192a26108ec213ba549
 workflow-type: tm+mt
-source-wordcount: '3704'
-ht-degree: 88%
+source-wordcount: '3695'
+ht-degree: 87%
 
 ---
 
@@ -23,6 +23,10 @@ ht-degree: 88%
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates per maand en per Campaign-release.
 
 U kunt ook de [Adobe Campaign Classic-release-opmerkingen](../../rn/using/latest-release.md) raadplegen voor meer updates.
+
+## Oktober 2020 {#oct-2020}
+
+Een nieuw technologie is gecreeerd met details op hoe te van het erfenis binaire protocol aan op HTTP/2-Gebaseerde leverancier API van APNs te migreren. [Meer informatie](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
 
 ## September 2020 {#september-2020}
 
@@ -94,8 +98,6 @@ De beste praktijken zijn toegevoegd in de **[!UICONTROL Scheduler]** activiteite
 De sectie over het verwijderen van een in quarantaine geplaatste adres is bijgewerkt. Hieronder valt ook een verduidelijking van de gevallen waarin adressen automatisch uit de quarantainelijst worden verwijderd. [Meer informatie](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
 Er zijn gebruiksscenario’s toegevoegd voor het [versleutelen](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) en [ontsleutelen](../../workflow/using/importing-data.md#use-case-gpg-decrypt) van data met workflows voor Configuratiescherm en Campaign.
-
-Zowel de termen ‘whitelist’ als ‘blacklist’ zijn uit de documentatie van Adobe Campaign verwijderd. Sommige van deze termen bestaan mogelijk nog steeds in de gebruikersinterface van het product, optienamen en interne code, maar worden in komende Campaign-releases vervangen door ‘blokkeringslijst’ en ‘acceptatielijst’.
 
 The Experience Cloud Triggers and Adobe Campaign Classic integration page has been moved [here](../../integrations/using/about-triggers.md).
 
