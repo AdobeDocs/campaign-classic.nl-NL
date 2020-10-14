@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 9fc243b2-7b7b-4083-83f6-04c12336492d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 5%
+source-wordcount: '792'
+ht-degree: 8%
 
 ---
 
@@ -25,8 +25,6 @@ ht-degree: 5%
 ## Over lijsten in Adobe Campaign {#about-lists-in-adobe-campaign}
 
 Een lijst is een statische set profielen die kan worden gebruikt voor leveringsacties of die kan worden bijgewerkt tijdens importbewerkingen of tijdens workflowuitvoering. Een populatie die via een query uit de database is geëxtraheerd, kan bijvoorbeeld een lijst leveren.
-
-
 
 Lijsten worden gemaakt en beheerd via de **[!UICONTROL Lists]** koppeling op het **[!UICONTROL Profiles and targets]** tabblad.
 
@@ -41,6 +39,8 @@ Er zijn twee typen lijsten beschikbaar in Adobe Campaign:
 * **[!UICONTROL List]** type: Met **[!UICONTROL List]** typelijsten kunt u workflows gebruiken om lijsten te maken en te beheren. Dit zijn specifieke lijsten die het resultaat zijn van gegevensimporten en die kunnen worden bijgewerkt via de specifieke **[!UICONTROL List update]** workflowactiviteit.
 
    In tegenstelling tot de **[!UICONTROL Group]** typelijst, kan deze typelijst automatisch met een **[!UICONTROL Scheduler]** activiteit worden bijgewerkt. Raadpleeg de pagina **[!UICONTROL List]** voor een voorbeeld van het maken van [](../../workflow/using/list-update.md)typelijsten.
+
+![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](#create-list-video)
 
 ## Een profiellijst maken op basis van een groep {#creating-a-profile-list-from-a-group}
 
@@ -131,3 +131,22 @@ U kunt een of meer lijsten verwijderen uit de lijst met groepen in de Adobe Camp
 >
 >Wanneer u een lijst verwijdert, worden de profielen in de lijst niet gewijzigd, maar worden de gegevens in het bijbehorende profiel bijgewerkt.
 
+## Hoe te om een lijst van ontvangers tot stand te brengen {#create-list-video}
+
+Een lijst is een statische reeks ontvangers die doelgericht kan worden benaderd in leveringsacties of die tijdens importbewerkingen of de uitvoering van een workflow kan worden bijgewerkt. Een lijst met ontvangers wordt ook wel een doelgroep genoemd.
+
+Leer hoe te om een publiek tot stand te brengen door een lijst van ontvangers van de Ontdekkingsreiziger te vormen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
+
+## Een lijst met ontvangers maken met een workflow
+
+Leer hoe u een workflow maakt om ontvangers als doel in te stellen en hoe u deze terugkeert voordat u de lijst in een e-maildoel gebruikt.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
+
+**Zie ook**
+
+* 
+
+* 
