@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '3593'
+source-wordcount: '3587'
 ht-degree: 4%
 
 ---
@@ -357,7 +357,7 @@ Er zijn drie modi voor verbindingsbeveiliging:
 
 * **Blokkeren**: alle URL&#39;s die niet bij de lijst van gewenste personen horen, worden geblokkeerd, met een foutbericht. Dit is de standaardwijze na een postupgrade.
 * **Toestemming**: alle URL&#39;s die niet bij de lijst van gewenste personen horen, zijn toegestaan.
-* **Waarschuwing**: alle URL&#39;s die niet bij de lijst van gewenste personen horen, zijn toegestaan, maar de JS-interpreter geeft een waarschuwing weer, zodat de beheerder deze kan verzamelen. In deze modus worden JST-310027-waarschuwingsberichten toegevoegd.
+* **Waarschuwing**: alle URL&#39;s die niet tot de lijst van gewenste personen behoren, zijn toegestaan, maar de JS-interpreter geeft een waarschuwing weer, zodat de beheerder deze kan verzamelen. In deze modus worden JST-310027-waarschuwingsberichten toegevoegd.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -452,7 +452,7 @@ sh
 >
 >Deze lijst is niet limitatief.
 
-In de **exec** knoop van het dossier van de serverconfiguratie, moet u het eerder gecreeerd dossier in het **blocklistFile** attribuut van verwijzingen voorzien.
+In de **exec** knoop van het dossier van de serverconfiguratie, moet u het eerder gecreeerd dossier in het **blacklistFile** attribuut van verwijzingen voorzien.
 
 **Alleen** voor Linux: in het dossier van de serverconfiguratie, adviseren wij dat u een gebruiker specificeert die aan het uitvoeren van externe bevelen wordt gewijd om uw veiligheidsconfiguratie te verbeteren. Deze gebruiker wordt geplaatst in de **exec** knoop van het configuratiedossier. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
@@ -464,7 +464,7 @@ Bijvoorbeeld:
 
 ```
 <serverConf>
- <exec user="theUnixUser" blocklistFile="/pathtothefile/blocklist"/>
+ <exec user="theUnixUser" blacklistFile="/pathtothefile/blacklist"/>
 </serverConf>
 ```
 
