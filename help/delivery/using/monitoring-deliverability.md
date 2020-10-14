@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 0baef937-f00b-4fc4-8608-a870997be684
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '786'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ Spam van het signaal is de Franse dienst die anonymized terugkoppel meldt voor F
 
 ## 250ok {#deliverability-250ok}
 
-[250ok](https://250ok.com/) is een complementaire controleoplossing aan de interne hulpmiddelen van de Adobe levering die IP en domeinlijsten van afgewezen personen, en reputatie indicatoren verstrekken.
+[250ok](https://250ok.com/) is een complementaire controleoplossing aan de interne hulpmiddelen van de Adobe levering die IP en domeinlijsten van afgewezen personen, en reputatie-indicatoren verstrekken.
 
 De verstrekte informatie is real-time, wat een pro-actieve bijstand mogelijk maakt.
 
