@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: appendices
 discoiquuid: 9c1884f6-1dd8-41ab-b8dc-604c8cc2dc89
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 63b208e5607bdcddaef03292d229847c4b7366f8
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 1%
@@ -648,7 +648,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> Staat u toe om een afzonderlijk gegevensbestand voor het werken van lijsten op de Server van Microsoft te vormen SQL, om steunen en replicatie te optimaliseren. De optie komt overeen met de naam van de tijdelijke database: Indien opgegeven, worden werktabellen in deze database geschreven. Voorbeeld: 'tempdb.dbo.' (de naam moet eindigen met een punt).</desc> <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Meer informatie</a> <br /> </td> 
+   <td> Staat u toe om een afzonderlijk gegevensbestand voor het werken van lijsten op de Server van Microsoft te vormen SQL, om steunen en replicatie te optimaliseren. De optie komt overeen met de naam van de tijdelijke database: Indien opgegeven, worden werktabellen in deze database geschreven. Voorbeeld: 'tempdb.dbo.' (de naam moet eindigen met een punt). <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Meer informatie</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
