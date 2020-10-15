@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: api
 discoiquuid: fba46d42-0253-425b-bbc2-6702d4140e05
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 63b208e5607bdcddaef03292d229847c4b7366f8
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 0%
@@ -226,7 +226,7 @@ Om het aantal verslagen op een vraag te tellen:
 
 >[!NOTE]
 >
->Ook hier gebruiken we de voorwaarde uit het vorige voorbeeld. De clausules `<select>` en clausules worden niet gebruikt. </select>`
+>Ook hier gebruiken we de voorwaarde uit het vorige voorbeeld. De clausules `<select>` en clausules worden niet gebruikt. `</select>`
 
 #### Gegevensgroepering {#data-grouping}
 
