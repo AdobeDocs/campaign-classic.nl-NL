@@ -3,15 +3,15 @@ audience: end-user
 user-guide-title: Adobe Campaign Classic Guide
 breadcrumb-title: Campaign Classic Guide
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
-user-guide-description: Design, plan, execute, manage, and optimize cross-channel marketing campaigns that deliver a high return on marketing investment.
+user-guide-description: Ontwerp, plan, voer uit, beheer, en optimaliseer kanaalmarketing campagnes die een hoog rendement op marketing investering leveren.
 product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
-source-wordcount: '2119'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
