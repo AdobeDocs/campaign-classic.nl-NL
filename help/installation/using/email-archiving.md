@@ -12,15 +12,15 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: d6467875-949b-4b47-940f-620efd4db5e0
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '1303'
-ht-degree: 3%
+source-wordcount: '1306'
+ht-degree: 2%
 
 ---
 
 
-# E-mailarchivering{#email-archiving}
+# BCC e-mailen {#email-archiving}
 
 U kunt Adobe Campaign zo configureren dat een kopie van de e-mails die u van uw platform hebt ontvangen, bewaard blijft.
 
@@ -30,15 +30,15 @@ Hiervoor worden .eml-bestanden die overeenkomen met de verzonden e-mails, overge
 
 ## Recommendations en beperkingen {#recommendations-and-limitations}
 
-* De functie voor archivering van e-mail is optioneel. Controleer hiervoor uw licentieovereenkomst.
-* Voor **gehoste en hybride architecturen** neemt u contact op met uw accountmanager om deze te activeren. Het adres BCC van uw keus moet aan het team van Adobe worden verstrekt die het voor u zal vormen.
-* Voor **on-premise installaties**, volg de richtlijnen hieronder om het te activeren - zie het [Activating email archiving (op gebouw)](#activating-email-archiving--on-premise-) en het [Vormen van BCC e-mailadres (op gebouw)](#configuring-the-bcc-email-address--on-premise-) secties.
+* BCC-functionaliteit voor e-mail is optioneel. Controleer hiervoor uw licentieovereenkomst.
+* Voor **gehoste en hybride architecturen** neemt u contact op met uw accountmanager om deze te activeren. Het BCC e-mailadres van uw keus moet aan het team van de Adobe worden verstrekt die het voor u zal vormen.
+* Voor installaties **op locatie** volgt u de onderstaande richtlijnen om het programma te activeren. Zie de secties BCC-bericht [activeren (op locatie)](#activating-email-archiving--on-premise-) en E-mailadres van BCC [configureren (op locatie)](#configuring-the-bcc-email-address--on-premise-) .
 * U kunt slechts één BCC-e-mailadres gebruiken.
-* Zodra e-mail BCC wordt gevormd, zorg ervoor de eigenschap in het leveringsmalplaatje of in de levering door de **[!UICONTROL Archive emails]** optie wordt toegelaten. Zie [deze sectie](../../delivery/using/sending-messages.md#archiving-emails)voor meer informatie.
+* Zodra e-mail BCC wordt gevormd, zorg ervoor de eigenschap in het leveringsmalplaatje of in de levering door de **[!UICONTROL Email BCC]** optie wordt toegelaten. Zie [deze sectie](../../delivery/using/sending-messages.md#archiving-emails)voor meer informatie.
 * Er wordt alleen rekening gehouden met e-mailberichten die zijn verzonden, maar met bedragen.
-* Het e-mailarchiveringssysteem is gewijzigd met Adobe Campaign 17.2 (build 8795). Als u al gebruikmaakte van e-mailarchivering, moet u handmatig een upgrade uitvoeren naar het nieuwe e-mailarchiveringssysteem (BCC). Zie de sectie [Bijgewerkt e-mailarchiveringssysteem (BCC)](#updated-email-archiving-system--bcc-) voor meer informatie.
+* Het e-mailarchiveringssysteem is gewijzigd met Adobe Campaign 17.2 (build 8795). Als u al gebruikmaakte van e-mailarchivering, moet u handmatig upgraden naar het nieuwe BCC-systeem voor e-mail. Zie de sectie [Verplaatsen naar de nieuwe BCC](#updated-email-archiving-system--bcc-) -e-mail voor meer informatie.
 
-## E-mailarchivering activeren (op locatie) {#activating-email-archiving--on-premise-}
+## BCC via e-mail activeren (op locatie) {#activating-email-archiving--on-premise-}
 
 Volg onderstaande stappen om BCC e-mailarchivering te activeren wanneer Adobe Campaign op locatie is geïnstalleerd.
 
@@ -70,7 +70,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 >[!NOTE]
 >
->In een mid-sourcing-instantie bevindt de directory voor de gearchiveerde e-mails zich op de mid-sourcing-server.
+>In een mid-sourcing-instantie bevindt de directory voor de BCC-e-mails zich op de mid-sourcing-server.
 >
 >De deliveryID en de broadlogID komen van de mid-sourcingsserver wanneer de status van de e-mails niet wordt verzonden. Zodra de status is veranderd in **[!UICONTROL Sent]**, komen deze IDs van de marketing server.
 
@@ -128,7 +128,7 @@ In het **config-`<instance name>.xml`** dossier, gebruik de volgende parameters 
 >
 >Bovendien kent het relais een **[!UICONTROL Sent]** status toe aan alle e-mails, ook aan die welke niet worden verzonden. Daarom worden alle berichten gearchiveerd.
 
-## Bijgewerkt e-mailarchiveringssysteem (BCC) {#updated-email-archiving-system--bcc-}
+## Naar de nieuwe e-mail-BCC gaan {#updated-email-archiving-system--bcc-}
 
 >[!CAUTION]
 >
@@ -140,9 +140,9 @@ U doet dit door de volgende wijzigingen in het **`config-<instance>.xml`** besta
 1. Stel de parameter **compressionFormat** zo nodig in op **1** .
 1. Stel de parameter **archivingType** in op **1**.
 
-Zodra e-mail BCC wordt gevormd, zorg ervoor u de **[!UICONTROL Archive emails]** optie in het leveringsmalplaatje of de levering selecteert. Zie [deze sectie](../../delivery/using/sending-messages.md#archiving-emails)voor meer informatie.
+Zodra e-mail BCC wordt gevormd, zorg ervoor u de **[!UICONTROL Email BCC]** optie in het leveringsmalplaatje of de levering selecteert. Zie [deze sectie](../../delivery/using/sending-messages.md#archiving-emails)voor meer informatie.
 
-## Aanbevolen procedures {#best-practices}
+## BCC-tips e-mailen {#best-practices}
 
 * **Postvak** BCC-adres: ervoor te zorgen dat het voldoende opvangcapaciteit heeft om alle e-mails die door de MTA worden verzonden, te archiveren.
 * **MTA-mutualisatie**: de archiveringsfunctie van BCC werkt op MTA-niveau. Hiermee kunt u elke e-mail dupliceren die door de MTA is verzonden. Aangezien MTA over verscheidene instanties (bijvoorbeeld dev, test, of prod) of zelfs over verscheidene cliënten (in een midsourcingomgeving) kan worden gemutualiseerd, beïnvloedt het opzetten van deze eigenschap veiligheid:
