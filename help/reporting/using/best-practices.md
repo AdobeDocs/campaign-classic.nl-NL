@@ -1,8 +1,6 @@
 ---
 title: Best practices voor rapportage
-seo-title: Best practices voor rapportage
-description: Best practices voor rapportage
-seo-description: null
+description: Campagne die beste praktijken meldt
 page-status-flag: never-activated
 uuid: 09de6a17-b3a7-4543-b672-b0a21653aa75
 contentOwner: sauviat
@@ -12,15 +10,15 @@ content-type: reference
 topic-tags: reporting-in-adobe-campaign
 discoiquuid: 904961e0-7dff-4350-8d5d-e4bdd368b3ff
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 1%
+source-wordcount: '839'
+ht-degree: 0%
 
 ---
 
 
-# Best practices voor rapportage{#best-practices-reporting}
+# Beste werkwijzen rapporteren{#best-practices-reporting}
 
 ## De behoeften analyseren{#analyzing-needs}
 
@@ -36,15 +34,15 @@ Om de creatie, het gebruik en de duurzaamheid van een rapport te optimaliseren, 
 
    U kunt bijvoorbeeld:
 
-   * De gegevens in de database verkennen en metingen definiëren (via [deze sectie](../../reporting/using/about-cubes.md)).
-   * Voeg indicatoren toe aan een bestaand rapport (zie [deze paragraaf](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * De gegevens in de database bekijken (via [deze sectie](../../reporting/using/about-descriptive-analysis.md)),
-   * Maak een nieuw leveringsrapport (zie [deze sectie](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Gegevens exporteren uit de Adobe Campaign-database (via een workflow, zie [deze sectie](../../workflow/using/about-workflows.md));
-   * Een draaitabel maken (zie [deze sectie](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)),
-   * Geaggregeerde gegevens verkennen (via [deze sectie](../../reporting/using/about-cubes.md)),
-   * Gebruik een wizard om gegevens te analyseren (via [deze sectie](../../reporting/using/about-descriptive-analysis.md)),
-   * Analyseer grote hoeveelheden gegevens (zie [deze sectie](../../reporting/using/about-reports-creation-in-campaign.md)), enz.
+   * Onderzoek de gegevens in het gegevensbestand en bepaal metingen. Meer informatie [in deze sectie](../../reporting/using/about-cubes.md)
+   * Voeg indicatoren aan een bestaand rapport toe. Meer informatie [in deze sectie](../../reporting/using/about-reports-creation-in-campaign.md)
+   * Bekijk de gegevens in de database. Meer informatie [in deze sectie](../../reporting/using/about-descriptive-analysis.md)
+   * Maak een nieuw leveringsrapport. Meer informatie [in deze sectie](../../reporting/using/about-reports-creation-in-campaign.md)),
+   * Gegevens exporteren uit de Adobe Campaign-database (via een workflow, raadpleeg [deze sectie](../../workflow/using/about-workflows.md)
+   * Maak een draaitabel. Meer informatie [in deze sectie](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
+   * Samengevoegde gegevens verkennen. Meer informatie [in deze sectie](../../reporting/using/about-cubes.md)
+   * Gebruik een wizard om gegevens te analyseren. Meer informatie [in deze sectie](../../reporting/using/about-descriptive-analysis.md)
+   * Analyseer grote hoeveelheden gegevens. Meer informatie [in deze sectie](../../reporting/using/about-reports-creation-in-campaign.md)
 
 1. Doelpopulatie identificeren
 
@@ -79,7 +77,7 @@ Namelijk:
 
    Op dezelfde manier, tijdens de ontwerpfase, met een klein volume van gegevens, als de rapportberekening 60 seconden overschrijdt, moeten de berekeningsmethodes worden veranderd.
 
-* Wanneer het gebruiken van de Analyse van de Marketing, moeten de gemanipuleerde gegevens 10 miljoen lijnen niet overschrijden.
+* Wanneer het gebruiken van de module van de Analyse van de Marketing, moeten de rapportgegevens 10 miljoen lijnen niet overschrijden.
 
 We raden ook aan &#39;s nachts aggregaten te berekenen en deze geaggregeerde gegevens rechtstreeks in de rapporten te gebruiken. Deze aggregaten moeten worden gemaakt via speciale gegevensbeheerworkflows (SQL-query&#39;s).
 
@@ -103,15 +101,19 @@ Met de bovenstaande aanbevelingen kunt u de berekening van rapporten optimaliser
 
 Daarnaast beveelt Adobe Campaign de volgende verbeteringen aan:
 
-* Onderzoek het datamodel: de geïndexeerde velden moeten vooral worden gebruikt om de berekeningsformules te verbeteren .
+* Werk met uw datamodel: de geïndexeerde velden moeten vooral worden gebruikt om de berekeningsformules te verbeteren .
 
    Als u snel een geïndexeerd veld wilt zoeken, bekijkt u de naam van de kolom in de Adobe Campaign-interface: de sorteerpijl wordt rood onderstreept als het veld wordt geïndexeerd.
 
-* Zorg ervoor dat het rapport op lange termijn geldig is: het gegevensvolume kan in de loop der tijd aanzienlijk toenemen.
+   For more on indexes, refer to [this section](../../configuration/using/data-model-best-practices.md#indexes).
+
+* Zorg ervoor het rapport scalable is: het gegevensvolume kan in de loop der tijd aanzienlijk toenemen.
 
    Evenzo kan het tijdens de testfasen gemanipuleerde gegevensvolume afwijken van het werkelijke productievolume. Daarom zijn testfasen belangrijk.
 
    Tot slot moeten vertragingen bij het wissen van gegevens bekend zijn en waar nodig worden aangepast voor een gemakkelijke gegevensmanipulatie.
+
+   Raadpleeg [deze sectie](../../configuration/using/data-model-best-practices.md#data-retention)voor meer informatie over opschonen en het bewaren van gegevens.
 
 ### Rapporten exporteren {#exporting-reports}
 
