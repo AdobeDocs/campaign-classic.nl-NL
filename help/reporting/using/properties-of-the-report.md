@@ -1,8 +1,6 @@
 ---
 title: Eigenschappen van het rapport
-seo-title: Eigenschappen van het rapport
-description: Eigenschappen van het rapport
-seo-description: null
+description: Meer informatie over de instellingen van de rapporteigenschappen
 page-status-flag: never-activated
 uuid: 56163f53-d115-45b8-94a5-c173ac4c6533
 contentOwner: sauviat
@@ -12,50 +10,50 @@ content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 5ec88743-be51-438c-9064-dd0196fdd7d3
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b0b9a0714075474bf52c3eed78d45bcef25b44fc
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 3%
+source-wordcount: '458'
+ht-degree: 1%
 
 ---
 
 
 # Eigenschappen van het rapport{#properties-of-the-report}
 
-## Overzicht {#overview}
-
-U kunt volledig uw rapport personaliseren en vormen om uw behoeften aan te passen. Hiervoor bewerkt u de eigenschappen. De eigenschappen van het rapport worden betreden via de knoop van het Bezit die boven de grafiek van de activiteitenopeenvolging wordt gevonden.
+U kunt volledig uw rapport personaliseren en vormen om uw behoeften aan te passen. Hiervoor bewerkt u de eigenschappen. De eigenschappen van het rapport worden betreden via de **[!UICONTROL Properties]** knoop boven de grafiek van de activiteitenopeenvolging.
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
+Algemene eigenschappen worden hieronder beschreven. De geavanceerde mogelijkheden die in de **[!UICONTROL Parameters]**, **[!UICONTROL Variables]** en **[!UICONTROL Scripts]** lusjes worden gevormd worden beschreven [in deze sectie](../../reporting/using/advanced-functionalities.md).
+
 ## Algemene eigenschappen {#overall-properties}
 
-Op het **[!UICONTROL General]** tabblad kunt u het label en het schema weergeven of wijzigen waarop het rapport betrekking heeft. Deze elementen zijn ingegaan tijdens rapportverwezenlijking.
+Op het **[!UICONTROL General]** tabblad van de rapporteigenschappen kunt u de onderstaande instellingen bewerken:
 
-We raden u niet aan het volgende te wijzigen **[!UICONTROL Internal name]** : dit wordt gebruikt in de rapporttoegang URL.
+* Het label en de interne naam van het rapport. Het **[!UICONTROL Internal name]** wordt gebruikt in het rapport definitieve URL. Het mag niet worden gewijzigd na de opstelling van het verslag.
 
-Het rapportmalplaatje wordt geselecteerd tijdens rapportverwezenlijking en kan niet later worden veranderd.
+* De rapportmap **** wordt geselecteerd tijdens het maken van het rapport. De beste manier is om een speciale map voor aangepaste rapporten te maken, zodat deze niet worden gemengd met [ingebouwde rapporten](../../reporting/using/about-campaign-built-in-reports.md).
 
-Als u de tabel wilt wijzigen waarop het rapport betrekking heeft, klikt u op het **[!UICONTROL Select link]** pictogram rechts van het **[!UICONTROL Document type]** veld. Klik op het **[!UICONTROL Magnifier]** pictogram om de beschikbare velden in de geselecteerde tabel weer te geven.
+* De **Opslag** wordt geselecteerd wanneer het creëren van het rapport. Als u de gegevenstabel van het rapport wilt wijzigen, klikt u op het **[!UICONTROL Select link]** pictogram rechts van het **[!UICONTROL Document type]** veld.
 
-![](assets/s_ncs_advuser_report_properties_02.png)
+   ![](assets/s_ncs_advuser_report_properties_02.png)
 
-## Toegankelijkheid rapporteren {#report-accessibility}
+* De parameters van het **Toegangsbeheer** . Deze instellingen worden hieronder beschreven.
 
-Een rapport kan tot voorbij de console van Adobe Campaign, bijvoorbeeld via browser van het Web worden betreden. In dit geval, kan het noodzakelijk zijn om het controle van de rapporttoegang zoals hieronder getoond te vormen.
+## Controlling access to the report {#report-accessibility}
+
+Een rapport kan in de console van Adobe Campaign of met Webbrowser worden betreden. In dit geval, kan het noodzakelijk zijn om het controle van de rapporttoegang zoals hieronder getoond te vormen.
 
 ![](assets/s_ncs_advuser_report_properties_02b.png)
 
-Het algemene beginsel is als volgt:
+Mogelijke opties zijn:
 
-* De **[!UICONTROL Anonymous access]** optie laat onbeperkte toegang tot het rapport toe. Er is echter geen manipulatie mogelijk.
+* **[!UICONTROL Anonymous access]**: deze optie maakt onbeperkte toegang tot het rapport mogelijk . Er is echter geen manipulatie mogelijk.
 
-   De rechten van de standaardrapportoperator (&#39;webapp&#39;) worden gebruikt om rapportelementen weer te geven.
+   De rechten van de technische operator &#39;webapp&#39; worden gebruikt om rapportelementen weer te geven. Meer informatie [in deze sectie](../../platform/using/access-management.md#default-operators).
 
-* Met deze **[!UICONTROL Access control]** optie hebben Adobe Campaign-operatoren toegang tot de toepassing wanneer ze zijn aangemeld.
-* Met de **[!UICONTROL Specific account]** optie kunt u het rapport uitvoeren met de rechten van de operator geselecteerd in het **[!UICONTROL Operator]** veld.
-
-Eigenschappen voor webformulieren worden in [deze pagina](../../web/using/about-web-forms.md)nader beschreven.
+* **[!UICONTROL Access control]**: met deze optie kunnen Adobe Campaign-operatoren de toepassing openen nadat ze zijn aangemeld.
+* **[!UICONTROL Specific account]**: met deze optie kunt u het rapport uitvoeren met de rechten van de operator die in het **[!UICONTROL Operator]** veld is geselecteerd.
 
 ## De lokalisatie van rapporten beheren {#managing-report-localization}
 
@@ -69,7 +67,7 @@ De bewerkingstaal is de taal waarin u schrijft. Wanneer u een taal toevoegt, wor
 
 >[!NOTE]
 >
->Raadpleeg voor meer informatie de desbetreffende sectie van [deze sectie](../../web/using/translating-a-web-form.md).
+>Raadpleeg [deze sectie](../../web/using/translating-a-web-form.md)voor meer informatie over de lokalisatie van webpagina&#39;s in Campagne.
 
 ## HTML-rendering aanpassen {#personalizing-html-rendering}
 
@@ -80,60 +78,7 @@ Op het **[!UICONTROL Rendering]** tabblad kunt u de weergavemodus voor de pagina
 * De standaardpositie van labels voor rapportelementen. Deze positie kan voor elk element worden overbelast.
 * De sjabloon of het thema dat wordt gebruikt voor het genereren van rapportpagina&#39;s.
 
-Eigenschappen voor webformulieren worden in [deze pagina](../../web/using/about-web-forms.md)nader beschreven.
-
 ![](assets/s_ncs_advuser_report_properties_08.png)
-
-## Aanvullende instellingen definiëren {#defining-additional-settings}
-
-Op het **[!UICONTROL Parameters]** tabblad kunt u aanvullende instellingen voor het rapport maken: deze montages zullen in URL tijdens de vraag worden overgegaan.
-
-Eigenschappen voor webformulieren worden in [deze pagina](../../web/using/about-web-forms.md)nader beschreven.
-
->[!CAUTION]
->
->Om veiligheidsredenen moeten deze parameters met grote voorzichtigheid worden gebruikt.
-
-Een nieuwe instelling maken:
-
-1. Klik op de **[!UICONTROL Add]** knop en voer de naam van de instelling in.
-
-   ![](assets/s_ncs_advuser_report_properties_09a.png)
-
-1. Geef indien nodig op of de instelling verplicht is.
-1. Select the type of setting you want to create: **[!UICONTROL Filter]** or **[!UICONTROL Variable]**.
-
-   Met de **[!UICONTROL Filter entities]** optie kunt u een veld van de database als parameter gebruiken.
-
-   ![](assets/s_ncs_advuser_report_properties_09b.png)
-
-   De gegevens worden direct op het niveau van de entiteit teruggevorderd: **ctx/ontvanger/@account**.
-
-   Met de **[!UICONTROL Variable]** optie kunt u een variabele maken of selecteren die als parameter van de URL wordt doorgegeven en die in de filters kan worden gebruikt.
-
-Met **[!UICONTROL Response HTTP headers]** deze optie kunt u voorkomen dat wordt geklikt wanneer de rapportpagina wordt opgenomen in een HTML-pagina die iframe gebruikt. U kunt klikken vermijden door het **[!UICONTROL X-Frame-options header]** gedrag te kiezen:
-
-* **[!UICONTROL None]**: Het verslag heeft niets **[!UICONTROL X-Frame-options header]**.
-* **[!UICONTROL Same as origin]**: Standaard ingesteld voor nieuwe rapporten en opnieuw gepubliceerde rapporten. De hostname zal het zelfde als URL van het rapport zijn.
-* **[!UICONTROL Deny]**: Het rapport kan niet worden opgenomen in een HTML-pagina die iframe gebruikt.
-
-![](assets/s_ncs_advuser_report_properties_09c.png)
-
-## Variabelen toevoegen {#adding-variables}
-
-Het **[!UICONTROL Variables]** lusje bevat de lijst van variabelen die in het rapport worden gevormd. Deze variabelen worden in de context van het verslag weergegeven en kunnen in berekeningen worden gebruikt.
-
-Klik op de **[!UICONTROL Add]** knop om een nieuwe variabele te maken.
-
-Als u de definitie van een variabele wilt weergeven, selecteert u de variabele en klikt u op de **[!UICONTROL Detail...]** knop.
-
-![](assets/s_ncs_advuser_report_properties_10.png)
-
-## Verwijzen naar scripts {#referencing-scripts}
-
-Op het **[!UICONTROL Scripts]** tabblad kunt u verwijzen naar JavaScript-codes die aan de client- en/of serverzijde worden uitgevoerd wanneer de rapportpagina wordt opgevraagd.
-
-Voor een normale uitvoering op de client moeten de scripts waarnaar wordt verwezen, in JavaScript zijn geschreven en compatibel zijn met de meeste browsers. Raadpleeg [deze sectie](../../web/using/web-forms-answers.md) voor meer informatie.
 
 ## De foutpagina aanpassen {#personalizing-the-error-page}
 
@@ -142,4 +87,3 @@ Het **[!UICONTROL Error page]** lusje laat u het bericht vormen dat in het geval
 U kunt teksten bepalen en hen verbinden met specifieke herkenningstekens om rapportlocalisatie te beheren. Zie Koptekst en voettekst [toevoegen voor meer informatie](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
 
 ![](assets/s_ncs_advuser_report_properties_11.png)
-
