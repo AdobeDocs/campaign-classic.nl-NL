@@ -1,6 +1,6 @@
 ---
-title: De Adobe Campaign Classic Ontvanger-tabel gebruiken
-description: Leer hoe u de tabel voor ontvangers buiten de box in Adobe Campaign Classic kunt gebruiken bij het ontwerpen van uw gegevensmodel.
+title: Best practices voor het datamodel
+description: Leer hoe u met het gegevensmodel Campaign Classic werkt
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '3997'
-ht-degree: 0%
+source-wordcount: '4014'
+ht-degree: 1%
 
 ---
 
@@ -253,6 +253,10 @@ Standaard hebben Adobe Campaign-leverings- en trackinglogboeken een retentieduur
 
 * Als u logboeken langer wilt houden, zou dit besluit zorgvuldig afhankelijk van de gegevensbestandgrootte en het volume van verzonden berichten moeten worden genomen. Ter herinnering: Adobe Campaign-reeks is een 32-bits geheel getal.
 * Aanbevolen wordt niet meer dan 1 miljard records tegelijk in deze tabellen te hebben (ongeveer 50% van de 2,14 miljard beschikbare ids) om het risico van het gebruik van alle beschikbare id&#39;s te beperken. Dit zal voor sommige klanten vereisen om de bewaarduur onder 180 dagen te verminderen.
+
+Meer informatie over het bewaren van gegevens vindt u in de richtlijnen [Privacy en beveiliging van](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent)campagnes.
+
+Meer informatie over de opschoonworkflow voor Campagnegegevens vindt u [in deze sectie](../../production/using/database-cleanup-workflow.md).
 
 >[!IMPORTANT]
 >
