@@ -8,10 +8,10 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2130'
+ht-degree: 92%
 
 ---
 
@@ -577,17 +577,16 @@ ht-degree: 0%
       + [Voorbeelden van Facebook-apps](social/using/examples-of-facebook-apps.md)
       + [Tracking](social/using/tracking.md)
 + Campaign Classic installeren {#installing-campaign-classic}
-   + Architectuur- en hostingmodellen {#architecture-and-hosting-models}
-      + [Voordat u gaat lezen](installation/using/before-reading.md)
+   + Architectuurbeginselen {#architecture-and-hosting-models}
       + [Algemene architectuur](installation/using/general-architecture.md)
-      + [Hostmodellen](installation/using/hosting-models.md)
-   + Hybride en gehoste modellen {#hybrid-and-hosted-models}
-      + [Hybride en gehoste modellen](installation/using/about-hybrid-and-hosted-models.md)
-      + [Hybride model](installation/using/hybrid-model.md)
-      + [Gehoste model](installation/using/hosted-model.md)
-   + Vereisten en aanbevelingen {#prerequisites-and-recommendations-}
-      + [Voordat u begint](installation/using/before-starting.md)
-      + [Database](installation/using/database.md)
+      + Hostmodellen{#hosting-models-lp}
+         + [Informatie over hostmodellen](installation/using/hosting-models.md)
+         + [Hybride model](installation/using/hybrid-model.md)
+         + [Gehoste model](installation/using/hosted-model.md)
+         + [Capability matrix](installation/using/capability-matrix.md)
+   + Richtlijnen voor implementatie {#deployment-guidelines}
+      + [Vereisten](installation/using/before-starting.md)
+      + [Databaseserver](installation/using/database.md)
       + [Applicatieserver](installation/using/application-server.md)
       + [Berichtenserver](installation/using/messaging-server.md)
       + [Netwerkconfiguratie](installation/using/network-configuration.md)
