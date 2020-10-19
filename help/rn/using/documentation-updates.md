@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: d06cc9c090e2ad8b72ce3192a26108ec213ba549
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '3695'
-ht-degree: 87%
+source-wordcount: '3731'
+ht-degree: 86%
 
 ---
 
@@ -25,6 +25,10 @@ Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates
 U kunt ook de [Adobe Campaign Classic-release-opmerkingen](../../rn/using/latest-release.md) raadplegen voor meer updates.
 
 ## Oktober 2020 {#oct-2020}
+
+De campagne die geavanceerde motionsectie meldt is verbeterd om te specificeren hoe te om parameters URL en variabelen in douanerapporten te gebruiken. [Meer informatie](../../reporting/using/advanced-functionalities.md)
+
+De pagina met rapporteigenschappen is opnieuw ingedeeld en verrijkt om de configuratie te vergemakkelijken. [Meer informatie](../../reporting/using/properties-of-the-report.md)
 
 Een nieuw technologie is gecreeerd met details op hoe te van het erfenis binaire protocol aan op HTTP/2-Gebaseerde leverancier API van APNs te migreren. [Meer informatie](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
 
