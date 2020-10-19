@@ -10,17 +10,17 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d65e6f48bd84a2342895beca4a4ac184b57bf7c3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2188'
+ht-degree: 76%
 
 ---
 
 
 # Laatste release{#latest-release}
 
-![](assets/do-not-localize/cp-icon.png) **Release van nieuw configuratiescherm in juni** met controle van actieve profielen, controle van de leverbaarheid van subdomeinen en beheer van GPG-sleutels. [Meer informatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **De nieuwe versie** van oktober van het Controlebord met domeinconfiguratie die CNAMEs en nieuwe gegevensbestand controlemogelijkheden gebruikt. [Meer informatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/blue_2.png) Release 20.2.3 - build 9182 {#release-20-2-3-build-9182}
 
@@ -57,6 +57,8 @@ _22 juli 2020_
 * Probleem verholpen waarbij de voorbereiding van de levering na de upgrade werd geblokkeerd.
 * Na de schakelaar aan het [nieuwe mechanisme](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)van opeenvolging ID, worden alle Webtoepassingen die de ontvankelijke lijst bijwerken opnieuw gepubliceerd tijdens postupgrade.
 * Oplossing voor een mogelijke XSS-kwetsbaarheid in de leveringsinhoud. (NEO-17987, NEO-26073)
+
+![](assets/do-not-localize/cp-icon.png) **Release van nieuw configuratiescherm in juni** met controle van actieve profielen, controle van de leverbaarheid van subdomeinen en beheer van GPG-sleutels. [Meer informatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/orange_2.png) Release 20.2.1 - build 9178 {#release-20-2-1-build-9178}
 
