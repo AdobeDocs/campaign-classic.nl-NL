@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
 source-wordcount: '3731'
 ht-degree: 86%
@@ -202,9 +202,9 @@ Verbeteringen voor de Hadoop FDA-connector - [Meer informatie](../../platform/us
 
 **Overige documentatie-updates die bij de release worden geleverd**
 
-De handleidingen inzake [installatie](../../installation/using/before-reading.md), [productie](../../production/using/foreword.md) en [configuratie](../../configuration/using/additional-parameters.md) zijn bijgewerkt met de nieuwe systeemeenheid die door het opstarten van de service nlserver wordt gebruikt. U kunt /etc/init.d/nlserver6 nog steeds gebruiken, maar Adobe raadt u aan de opdracht systemctl nu te gebruiken voor interactie met de service nlserver.
+De handleidingen inzake [installatie](../../installation/using/general-architecture.md), [productie](../../production/using/foreword.md) en [configuratie](../../configuration/using/additional-parameters.md) zijn bijgewerkt met de nieuwe systeemeenheid die door het opstarten van de service nlserver wordt gebruikt. U kunt /etc/init.d/nlserver6 nog steeds gebruiken, maar Adobe raadt u aan de opdracht systemctl nu te gebruiken voor interactie met de service nlserver.
 
-De installatiehandleiding is bijgewerkt en gesynchroniseerd met de nieuwste versie van de compatibiliteitsmatrix. Er zijn nieuwe ondersteunde systemen toegevoegd. Informatie over verouderde en niet-ondersteunde systemen is verwijderd. [Meer informatie](../../installation/using/before-reading.md)
+De installatiehandleiding is bijgewerkt en gesynchroniseerd met de nieuwste versie van de compatibiliteitsmatrix. Er zijn nieuwe ondersteunde systemen toegevoegd. Informatie over verouderde en niet-ondersteunde systemen is verwijderd. [Meer informatie](../../installation/using/general-architecture.md)
 
 De compatibiliteitsmatrix is bijgewerkt met de Hadoop 3.0- en Snowflake FDA-connectoren. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html)
 
@@ -376,7 +376,7 @@ Er is een nieuw knowledgebaseartikel gemaakt over het gebruik van de aanbiedings
 
 De sectie over de activiteit Subworkflow is uitgebreid met een gebruiksvoorbeeld. [Meer informatie](../../workflow/using/sub-workflow.md)
 
-Het knowledgebaseartikel over de [On-premise &amp; gehoste capaciteitsmatrix van Campaign Classic](https://helpx.adobe.com/nl/campaign/kb/acc-on-prem-vs-hosted.html) is bijgewerkt met informatie over het archiveren van e-mails.
+The [Campaign Classic On-premise &amp; Hosted capability matrix](https://helpx.adobe.com/nl/campaign/kb/acc-on-prem-vs-hosted.html) Knowledge base article has been updated with information relating to Email BCC.
 
 De documentatie over transactionele berichten is bijgewerkt met een opmerking betreffende de publicatie van sjablonen. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
 
