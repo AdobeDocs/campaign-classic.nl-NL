@@ -1,8 +1,6 @@
 ---
 title: Workflow voor opschonen van databases
-seo-title: Workflow voor opschonen van databases
-description: Workflow voor opschonen van databases
-seo-description: null
+description: Leer hoe verouderde gegevens automatisch worden opgeschoond
 page-status-flag: never-activated
 uuid: a7478641-cdf6-4bd4-9dd7-0c84416c9de6
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: data-processing
 discoiquuid: 6b188d78-abb4-4f03-80b9-051ce960f43c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '2908'
+source-wordcount: '2910'
 ht-degree: 0%
 
 ---
@@ -32,7 +30,7 @@ Met de **[!UICONTROL Database cleanup]** workflow die via het **[!UICONTROL Admi
 
 De database wordt op twee niveaus opgeschoond: in de werkstroomplanner en in de plaatsingstovenaar.
 
-### De planner {#the-scheduler}
+### Workflowplanner {#the-scheduler}
 
 >[!NOTE]
 >
@@ -53,7 +51,7 @@ Standaard wordt de **[!UICONTROL Database cleanup]** workflow zo geconfigureerd 
 
 ### Implementatiewizard {#deployment-wizard}
 
-Met **[!UICONTROL Deployment wizard]** , dat via het **[!UICONTROL Tools > Advanced]** menu wordt geopend, kunt u configureren hoe lang gegevens worden opgeslagen. Waarden worden uitgedrukt in dagen. Als deze waarden niet worden gewijzigd, gebruikt de workflow de standaardwaarden.
+Via **[!UICONTROL Deployment wizard]****[!UICONTROL Tools > Advanced]** dit menu hebt u toegang tot gegevens, zodat u kunt configureren hoe lang gegevens worden opgeslagen. Waarden worden uitgedrukt in dagen. Als deze waarden niet worden gewijzigd, gebruikt de workflow de standaardwaarden.
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
