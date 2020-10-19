@@ -1,8 +1,6 @@
 ---
 title: Een nieuw rapport maken
-seo-title: Een nieuw rapport maken
-description: Een nieuw rapport maken
-seo-description: null
+description: Leer belangrijke stappen om een nieuw rapport te creëren
 page-status-flag: never-activated
 uuid: dcea5c28-da09-4a31-a13c-c8995c6faa63
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 22c92ddf-fbea-49d3-afd4-1ba427be399d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 2%
+source-wordcount: '923'
+ht-degree: 1%
 
 ---
 
@@ -60,29 +58,29 @@ Activiteiten worden gekoppeld met behulp van overgangen, weergegeven door pijlen
 
 Om een rapport te bouwen, afhankelijk van zijn aard en context, moet u de nuttige elementen identificeren en hun logische opeenvolging verwissen.
 
-1. Gebruik de activiteit van het &quot;Begin&quot;om het eerste proces tot stand te brengen dat moet worden uitgevoerd om het rapport te bouwen. U kunt slechts één van deze activiteiten per rapport gebruiken.
+1. Gebruik de **[!UICONTROL Start]** activiteit om het eerste proces tot stand te brengen dat moet worden uitgevoerd om het rapport te bouwen. U kunt slechts één van deze activiteiten per rapport gebruiken.
 
    Het is verplicht als het diagram een lus bevat.
 
-1. Voeg één of meerdere &quot;Vraag&quot;activiteiten toe om gegevens te verzamelen die voor de bouw van het rapport nuttig zijn. Gegevens kunnen rechtstreeks worden verzameld via een query op een schema van de database, of via een geïmporteerde lijst of een bestaande kubus.
+1. Voeg één of meerdere **[!UICONTROL Query]** activiteiten toe om gegevens te verzamelen die voor de bouw van het rapport nuttig zijn. Gegevens kunnen rechtstreeks worden verzameld via een query op een schema van de database, of via een geïmporteerde lijst of een bestaande kubus.
 
    Zie Gegevens [verzamelen voor analyse](../../reporting/using/collecting-data-to-analyze.md)voor meer informatie.
 
    Deze gegevens zullen (of niet) in het rapport afhankelijk van paginasamenstelling worden getoond.
 
-1. Plaats een of meer &#39;Pagina&#39;-activiteiten om de grafische weergave van de verzamelde gegevens te definiëren. U kunt tabellen, grafieken, invoervelden invoegen en de weergave van een of meer pagina&#39;s of elementen van de pagina bepalen. De weergegeven inhoud kan volledig worden geconfigureerd.
+1. Plaats een of meer **[!UICONTROL Page]** activiteiten om de grafische weergave van de verzamelde gegevens te definiëren. U kunt tabellen, grafieken, invoervelden invoegen en de weergave van een of meer pagina&#39;s of elementen van de pagina bepalen. De weergegeven inhoud kan volledig worden geconfigureerd.
 
    For more on this, refer to [Static elements](#static-elements).
 
-1. Gebruik een &#39;Test&#39;-activiteit om de voorwaarden te definiëren voor het weergeven of openen van gegevens.
+1. Gebruik een **[!UICONTROL Test]** activiteit om de voorwaarden te bepalen voor het tonen van of de toegang tot van gegevens.
 
    For more on this, refer to [Conditioning page display](../../reporting/using/defining-a-conditional-content.md#conditioning-page-display).
 
-1. Voeg, indien nodig, gepersonaliseerde scripts toe via de activiteit &#39;Script&#39;, bijvoorbeeld om de naam van een rapport te berekenen, om de weergave van het resultaat binnen een specifieke context te filteren, enz.
+1. Voeg, indien nodig, gepersonaliseerde scripts toe via de **[!UICONTROL Script]** activiteit, bijvoorbeeld om de naam van een rapport te berekenen, om de weergave van het resultaat binnen een specifieke context te filteren, enz.
 
    For more on this, refer to [Script activity](../../reporting/using/advanced-functionalities.md#script-activity).
 
-1. Tot slot kunt u voor het gemakkelijker lezen van complexe rapporten één of meerdere &quot;sprong&quot;type activiteiten opnemen. Dit laat u van één activiteit aan een andere gaan zonder de overgang op het rapport te concretiseren. U kunt de functie Springen ook gebruiken om een ander rapport weer te geven.
+1. Tot slot kunt u voor het gemakkelijker lezen van complexe rapporten, één of meerdere **[!UICONTROL Jump]** typeactiviteiten opnemen. Dit laat u van één activiteit aan een andere gaan zonder de overgang op het rapport te concretiseren. De **[!UICONTROL Jump]** activiteit kan ook worden gebruikt om een ander rapport te tonen.
 
    For more on this, refer to [Jump activity](../../reporting/using/advanced-functionalities.md#jump-activity).
 
@@ -167,4 +165,3 @@ Tot slot kunt u één of meer geavanceerde controles in uw rapporten integreren.
 Hier kunt u de gegevens in het rapport filtreren om slechts de informatie te tonen bevat in één van de omslagen van de boom:
 
 ![](assets/reporting_control_folder.png)
-
