@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 7d0a00f4ef49a48014735de36786a48c31b76804
 workflow-type: tm+mt
 source-wordcount: '3587'
 ht-degree: 4%
@@ -592,7 +592,7 @@ Elk in dit bestand geconfigureerd proces heeft een **processRestartTime** -kenme
 
 ## Uploadbare bestanden beperken {#limiting-uploadable-files}
 
-Met een nieuw kenmerk **uploadAllowList** kunt u de bestandstypen beperken die beschikbaar zijn voor uploaden op de Adobe Campaign-server.
+Met een nieuw kenmerk **uploadWhiteList** kunt u de bestandstypen beperken die beschikbaar zijn voor uploaden naar de Adobe Campaign-server.
 
 Dit kenmerk is beschikbaar in het element **dataStore** van het bestand **serverConf.xml** . Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
@@ -600,7 +600,7 @@ De standaardwaarde van dit kenmerk is **.+** en u kunt elk bestandstype uploaden
 
 Als u de mogelijke indelingen wilt beperken, moet u de kenmerkwaarde vervangen door een geldige reguliere Java-expressie. U kunt verschillende waarden invoeren door deze met een komma te scheiden.
 
-Bijvoorbeeld: **uploadAllowList=&quot;.*.png,.Met *.jpg&quot;** kunt u PNG- en JPG-indelingen uploaden naar de server. Er worden geen andere indelingen geaccepteerd.
+Bijvoorbeeld: **uploadWhiteList=&quot;.*.png,.Met *.jpg&quot;** kunt u PNG- en JPG-indelingen uploaden naar de server. Er worden geen andere indelingen geaccepteerd.
 
 >[!IMPORTANT]
 >
