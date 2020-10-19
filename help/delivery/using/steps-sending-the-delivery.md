@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
 source-wordcount: '1526'
 ht-degree: 5%
@@ -36,7 +36,7 @@ Voordat u de levering verzendt, kunt u de verzendende parameters in de leverings
 
 * **[!UICONTROL Delivery priority]**: Met deze optie kunt u de verzendvolgorde voor uw leveringen beïnvloeden door hun prioriteitsniveau (normaal, hoog of laag) op te geven. Hierdoor kunt u de volgorde voor bepaalde, meer urgente leveringen voorrang geven boven andere.
 
-* **[!UICONTROL Message batch quantity]**: Met deze optie kunt u het aantal berichten definiëren dat binnen hetzelfde XML-leveringspakket wordt gegroepeerd. Als de parameter op 0 wordt geplaatst, worden de berichten automatisch gegroepeerd. De pakketgrootte wordt bepaald door de berekening `<delivery size>/1024`, met minimaal 8 en maximaal 256 berichten per pakket.
+* **[!UICONTROL Message batch quantity]**: Met deze optie kunt u het aantal berichten definiëren dat is gegroepeerd binnen hetzelfde XML-leveringspakket. Als de parameter op 0 wordt geplaatst, worden de berichten automatisch gegroepeerd. De pakketgrootte wordt bepaald door de berekening `<delivery size>/1024`, met minimaal 8 en maximaal 256 berichten per pakket.
 
    >[!CAUTION]
    >
@@ -50,9 +50,9 @@ Voordat u de levering verzendt, kunt u de verzendende parameters in de leverings
    >
    >Het wordt niet aangeraden deze optie te gebruiken wanneer u medio-sourcing gebruikt om mta niet aan te roepen.
    >
-   >Voor meer informatie bij het vormen van een server SMTP, verwijs naar [deze sectie](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
+   >Voor meer informatie bij het vormen van een server SMTP, verwijs [naar deze sectie](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
-* **[!UICONTROL Archive emails]**: Met deze optie kunt u e-mailberichten op een extern systeem opslaan via BCC door eenvoudig een BCC-e-mailadres toe te voegen aan uw berichtdoel. For more on this, refer to [Archiving emails](../../delivery/using/sending-messages.md#archiving-emails).
+* **[!UICONTROL Email BCC]**: Met deze optie kunt u e-mailberichten op een extern systeem opslaan via BCC door eenvoudig een BCC-e-mailadres toe te voegen aan uw berichtdoel. For more on this, refer [to this section](../../delivery/using/sending-messages.md#archiving-emails).
 
 Zodra de levering wordt gevormd en klaar om worden verzonden, zorg ervoor u de analyse [van de](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)Levering in werking hebt gesteld. Klik eenmaal **[!UICONTROL Confirm delivery]** om de levering van berichten te starten.
 
