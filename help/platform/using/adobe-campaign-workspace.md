@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 2f66152b-4d4a-40b8-a1bb-5b97c5410882
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 26ba32468bce3bbb1c52d225c8195977da4d7d54
 workflow-type: tm+mt
-source-wordcount: '2165'
+source-wordcount: '2147'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 # Adobe Campaign-werkruimte{#adobe-campaign-workspace}
 
-## About Adobe Campaign interface {#about-adobe-campaign-interface}
+## Adobe Campaign-interface verkennen {#about-adobe-campaign-interface}
 
 Zodra u met het gegevensbestand wordt verbonden, zult u tot de homepage van Adobe Campaign toegang hebben, die een dashboard is: het bestaat uit verbindingen en kortere weg die u tot mogelijkheden, afhankelijk van uw installatie en algemene platformconfiguraties kunnen toegang hebben.
 
@@ -30,7 +30,7 @@ Vanuit het centrale gedeelte van de homepage kunt u koppelingen gebruiken om toe
 
 ![](assets/d_ncs_user_interface_home.png)
 
-De bovenstaande schermafbeelding is een voorbeeld van de startpagina voor een Adobe Campaign-gebruiker. Bekijk de overzichtsvideo [van de](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html)Adobe Campaign Interface voor meer informatie.
+![](assets/do-not-localize/how-to-video.png) [Campagne ontdekken in video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Terwijl met de toegang van het Web, de opties hoofdzakelijk het bekijken zullen 
 
 ### Talen {#languages}
 
-De taal wordt geselecteerd wanneer u uw Adobe Campaign Classic-exemplaar installeert en kan achteraf niet worden gewijzigd. For more information on how to create an instance, refer to this [page](../../installation/using/creating-an-instance-and-logging-on.md).
+De taal wordt geselecteerd wanneer u uw Adobe Campaign Classic-exemplaar installeert.
 
 ![](assets/language.png)
 
@@ -67,6 +67,12 @@ U kunt kiezen uit vijf verschillende talen:
 * Japans
 
 De taal die u voor uw Adobe Campaign Classic-exemplaar hebt gekozen, kan van invloed zijn op de datum- en tijdnotatie. Raadpleeg deze [sectie](../../platform/using/adobe-campaign-workspace.md#date-and-time) voor meer informatie.
+
+For more information on how to create an instance, refer to this [page](../../installation/using/creating-an-instance-and-logging-on.md).
+
+>[!CAUTION]
+>
+>De taal kan na het maken van de instantie niet meer worden gewijzigd.
 
 ## Basisbeginselen van navigatie {#navigation-basics}
 
@@ -174,9 +180,9 @@ Klik in het lijstconfiguratievenster op Geavanceerde parameters (linksonder) en 
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
-### Lijsten configureren {#configuring-lists}
+## Lijsten configureren {#configuring-lists}
 
-#### Kolommen toevoegen {#add-columns}
+### Kolommen toevoegen {#add-columns}
 
 Er zijn twee manieren om een kolom in een lijst toe te voegen.
 
@@ -222,14 +228,14 @@ Een andere manier om kolommen toe te voegen, bijvoorbeeld als u gegevens wilt to
 
 1. Klik **[!UICONTROL OK]** om de configuratie te bevestigen en het resultaat te tonen.
 
-#### Een nieuwe kolom maken {#create-a-new-column}
+### Een nieuwe kolom maken {#create-a-new-column}
 
 U kunt nieuwe kolommen maken om extra velden in de lijst weer te geven. Dit doet u als volgt:
 
 1. Klik **[!UICONTROL Configure the list]** bij hieronder en rechts van de lijst.
 1. Klik **[!UICONTROL Add]** om een nieuw veld in de lijst weer te geven.
 
-#### Een kolom verwijderen {#remove-a-column}
+### Een kolom verwijderen {#remove-a-column}
 
 U kunt een of meer kolommen in een lijst met records maskeren aan de hand van de kolommen onder en rechts van de lijst. **[!UICONTROL Configure list]**
 
@@ -241,11 +247,11 @@ In het venster van de lijstconfiguratie, selecteer de kolom die van de **[!UICON
 
 Herhaal deze bewerking voor elke kolom die u wilt maskeren. Klik **[!UICONTROL OK]** om de configuratie te bevestigen en het resultaat te tonen.
 
-#### Kolombreedte aanpassen {#adjust-column-width}
+### Kolombreedte aanpassen {#adjust-column-width}
 
 Wanneer een lijst actief is, d.w.z. minstens één lijn wordt geselecteerd, kunt u F9 gebruiken om de breedte van de kolommen aan te passen zodat alle kolommen op het scherm kunnen worden getoond.
 
-#### Submappen weergeven {#display-sub-folders-records}
+### Submappen weergeven {#display-sub-folders-records}
 
 Lijsten kunnen worden weergegeven:
 
@@ -286,7 +292,7 @@ Klik **[!UICONTROL Save]** in het venster met de mapeigenschappen. De lijstweerg
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
-### Een lijst exporteren {#exporting-a-list}
+## Een lijst exporteren {#exporting-a-list}
 
 Als u gegevens uit een lijst wilt exporteren, moet u een wizard voor exporteren gebruiken. Als u het wilt openen, selecteert u de elementen die u wilt exporteren in de lijst, klikt u met de rechtermuisknop en selecteert u **[!UICONTROL Export...]**.
 
@@ -296,7 +302,7 @@ Het gebruik van de invoer- en uitvoerfuncties wordt toegelicht in [Algemene invo
 >
 >Elementen uit een lijst mogen niet worden geëxporteerd met de functie Kopiëren/Plakken.
 
-### Een lijst sorteren {#sorting-a-list}
+## Een lijst sorteren {#sorting-a-list}
 
 Lijsten kunnen een grote hoeveelheid gegevens bevatten. U kunt deze gegevens sorteren of eenvoudige of geavanceerde filters toepassen. Door te sorteren kunt u gegevens in oplopende of aflopende volgorde weergeven. Met filters kunt u alleen geselecteerde gegevens definiëren en combineren.
 
@@ -321,7 +327,7 @@ U kunt ook sorteren configureren of sorteercriteria combineren. Volg de ondersta
 
 1. Klik **[!UICONTROL Ok]** om deze configuratie te bevestigen en het resultaat in de lijst te tonen.
 
-### Een zoekopdracht uitvoeren {#running-a-search}
+### Elementen zoeken {#running-a-search}
 
 U kunt een onderzoek van de beschikbare gebieden in een redacteur in werking stellen gebruikend het **[!UICONTROL Search]** gebied boven de lijst van gebieden wordt gevestigd die. Druk op **Enter** op het toetsenbord of blader door de lijst. De velden die overeenkomen met uw zoekopdracht, hebben vette labels.
 
@@ -388,4 +394,3 @@ Op de velden die een duur uitdrukken (bv. geldigheidsperiode van de middelen van
 * **[!UICONTROL d]** dagen.
 
 ![](assets/enter_unit_sample.png)
-
