@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 7f471ac1-cd6a-4371-977e-52d60ce8d968
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: fc014fe5fcadac680af31e86e258a4df7073e0bd
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 3%
@@ -78,7 +78,7 @@ Voer de volgende stappen uit om een uitvoerinstantie van het type externe accoun
 
    >[!NOTE]
    >
-   >Houd er rekening mee dat bij gebruik van FDA via HTTP alleen uitvoeringsinstanties met een Postgres-database worden ondersteund. MSSQL- of Oracle-databases worden niet ondersteund.
+   >Houd er rekening mee dat als u FDA via HTTP gebruikt, alleen uitvoeringsinstanties met een PostSQL-database worden ondersteund. MSSQL- of Oracle-databases worden niet ondersteund.
 
    De tweede methode wordt geadviseerd als de controleinstantie directe toegang tot het gegevensbestand van de uitvoeringsinstanties heeft. Als niet, kies de de diensttoegang van het Web. De FDA rekening om te specificeren valt met de verbinding aan de gegevensbestanden van de diverse uitvoeringsinstanties die op de controleinstantie worden gecreeerd.
 
