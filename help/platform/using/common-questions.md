@@ -11,10 +11,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9ef8e05904751cc141403af20582dc850610f6d2
 workflow-type: tm+mt
 source-wordcount: '536'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -67,7 +67,7 @@ U vindt de lijst met alle systemen en onderdelen die voor de recentste build van
 
 U vindt de recentste Campaign Classic-release-opmerkingen [op deze pagina](https://docs.adobe.com/content/help/nl-NL/campaign-classic/using/release-notes/latest-release.html).
 
-## 9. Wat is de procedure voor domeindelegatie? {#what-is-the-procedure-for-domain-delegation-}
+## 9. What is the procedure for domain configuration? {#what-is-the-procedure-for-domain-delegation-}
 
 Een subdomein is een afdeling van uw domein dat kan worden gebruikt om uw merken of diverse typen van traffic (transactionele berichten, marketinginformatie, enzovoort) te isoleren.
 Adobe houdt rekening met het DNS (Domain Name System) voor e-maillevering, dat een klant toestaat om zijn merkimago te behouden door een DNS-alias met zijn domeinnamen te gebruiken, en Adobe om autonoom alle technische best practices uit te voeren die het toestaan om de leverbaarheid tijdens het e-mailen te optimaliseren.
