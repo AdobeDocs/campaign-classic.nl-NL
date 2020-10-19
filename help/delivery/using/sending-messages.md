@@ -1,6 +1,6 @@
 ---
 title: Een e-mail verzenden met Adobe Campaign Classic
-description: Meer informatie over de parameters die specifiek zijn voor het verzenden van e-mails in Adobe Campaign Classic.
+description: Meer informatie over parameters voor e-maillevering
 page-status-flag: never-activated
 uuid: 791f7a54-3225-46ca-ad6f-6c32e9c62d75
 contentOwner: sauviat
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: sending-emails
 discoiquuid: e2dd8161-fe38-48bf-a288-8ec328b2660e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 9%
+source-wordcount: '739'
+ht-degree: 8%
 
 ---
 
@@ -29,25 +29,25 @@ Het gedetailleerde proces voor het valideren en verzenden van een levering wordt
 
 In de onderstaande secties worden de parameters beschreven die specifiek zijn voor het verzenden van e-mails.
 
-## E-mails archiveren {#archiving-emails}
+## BCC e-mailen {#archiving-emails}
 
 Met Adobe Campaign kunt u e-mailberichten op een extern systeem opslaan via BCC door eenvoudig een BCC-e-mailadres toe te voegen aan uw berichtdoel. Zodra de optie geactiveerd is, wordt een exacte kopie van alle verzonden berichten bewaard voor deze levering.
 
-Raadpleeg [deze sectie](../../installation/using/email-archiving.md)voor meer informatie over het configureren van e-mailblokkering.
+Raadpleeg [deze sectie](../../installation/using/email-archiving.md)voor meer informatie over de BCC-configuratie en best practices voor e-mail.
 
 >[!NOTE]
 >
->Deze functie is optioneel. Controleer uw licentieovereenkomst en neem contact op met uw accountmanager om deze te activeren.
+>E-mail BCC is een optionele mogelijkheid. Controleer uw licentieovereenkomst en neem contact op met uw accountmanager om deze te activeren.
 
-Bij het maken van een nieuwe bezorgings- of leveringssjabloon is E-mail BCC niet standaard ingeschakeld, zelfs niet als de optie is aangeschaft. U moet het manueel in elke levering of malplaatje toelaten waar u het wilt gebruiken.
+Bij het maken van een nieuwe bezorgings- of leveringssjabloon is E-mail BCC niet standaard ingeschakeld. U moet het manueel op het niveau van de e-maillevering of leveringsmalplaatje toelaten.
 
-Volg de onderstaande stappen om dit te doen:
+Voer de onderstaande stappen uit om e-mailblokcode in te schakelen voor een sjabloon voor e-maillevering:
 
 1. Ga naar **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** of **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
 1. Selecteer de levering van uw keuze of dupliceer de uit-van-de-doos sjabloon voor **e-maillevering** en selecteer vervolgens de gedupliceerde sjabloon.
 1. Click the **Properties** button.
 1. Selecteer het tabblad **[!UICONTROL Delivery]**. 
-1. Schakel het vakje E-mailberichten **** archiveren in om een kopie van alle verzonden berichten voor deze levering of voor elke levering te bewaren op basis van deze sjabloon.
+1. Schakel de optie **BCC** e-mailen in. Een kopie van alle verzonden berichten voor elke levering op basis van deze sjabloon wordt verzonden naar het e-mailadres BCC dat is geconfigureerd.
 
    ![](assets/s_ncs_user_wizard_archiving.png)
 
