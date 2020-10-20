@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 6652b081-66b6-47a8-97e5-383e3251647e
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 87ad4d4fc69d75e4367e7467ce27de29f58f9445
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '501'
 ht-degree: 7%
 
 ---
@@ -30,7 +30,7 @@ Je kunt Adobe Campaign starten door te selecteren **[!UICONTROL Start / All Prog
 
 In het verbindingsvenster van de clientconsole kunt u bestaande databases selecteren of configureren en er verbinding mee maken met een gebruikersnaam en wachtwoord:
 
-![](assets/acc-logon-screen.png)
+![](assets/s_ncs_user_login.png)
 
 ## Verbinding maken met Adobe Campaign {#connecting-to-adobe-campaign}
 
@@ -86,18 +86,18 @@ Als u de verbinding met Adobe Campaign wilt verbreken, gebruikt u het eerste pic
 >
 >U kunt de toepassing ook sluiten zonder u eerst af te melden.
 
-## Campagneversie ophalen {#getting-your-campaign-version}
+## Adobe Campaign-versie ophalen {#getting-your-campaign-version}
 
 In het **[!UICONTROL Help > About...]** menu hebt u toegang tot de volgende informatie:
 
-* **versienummer**
-* **buildnummer**
+* **versienummer** voor de clientconsole en toepassingsserver van Campagne
+* **buildnummer** voor Campagne-clientconsole en toepassingsserver
 * een koppeling om contact op te nemen met de klantenservice van Adobe
 * koppelingen naar het privacybeleid van Adobe, de Gebruiksvoorwaarden en het Cookies-beleid
 
 ![](assets/about-acc.png)
 
-Wanneer u naar het team van de Steun van Adobe rekt, moet u het versieaantal verstrekken en aantal van uw de cliëntconsole en toepassingsserver van de Campagne bouwen.
+Wanneer u het team van de Zorg van de Adobe klant bereikt, moet u het versieaantal verstrekken en aantal van uw de cliëntconsole en toepassingsserver van de Campagne bouwen.
 
 Als u werkt met de versie [](../../rn/using/gold-standard.md)Campaign Gold Standard, moet u ook de SHA/1-tekens delen die in het **[!UICONTROL About]** vak worden weergegeven. Voor de Gold **Standard 10-release** toont het buildnummer bijvoorbeeld de **build 9032@efd8a94**, zoals hieronder wordt getoond:
 
