@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 247d73933991047603b8d61c7489d976c448dd52
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1804'
 ht-degree: 8%
 
 ---
@@ -152,9 +152,10 @@ De **verzoeken om toegang** en **om verwijderen** worden weergegeven op [deze pa
 Dankzij de trackingfuncties van Adobe Campaign kunt u het bladeren door de ontvangers van de cookies bijhouden aan de hand van drie typen cookies: een sessiecookie en twee permanente cookies.
 
 * A **session cookie**: the **nlid** cookie contains the identifier of the email sent to the contact (**broadlogId**) and the identifier of the message template (**deliveryId**). Deze wordt toegevoegd wanneer de contactpersoon op een URL klikt die is opgenomen in een e-mail die door Adobe Campaign wordt verzonden. Hiermee kunt u het gedrag van de contactpersoon op het web volgen. Deze sessiecookie wordt automatisch gewist wanneer de browser wordt gesloten. De contactpersoon kan zijn browser configureren om cookies te weigeren.
-* Twee **permanente cookies**:
-   * Het **UUID** -cookie (Universal Unique IDentifier) wordt gedeeld door Adobe Experience Cloud-oplossingen. Deze wordt eenmaal ingesteld totdat deze verdwijnt van de clientbrowser wanneer een nieuwe waarde wordt gegenereerd. Met dit cookie kunt u de gebruikers identificeren die met de Experience Cloud-oplossingen werken wanneer ze een website bezoeken. Het kan door een landingspagina (om onbekende klantenactiviteiten aan een ontvanger te associëren) of door een levering worden gedeponeerd. De beschrijving van deze cookie is [hier](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-mc.html)beschikbaar.
-   * Het **nllastdelid** cookie (geïntroduceerd in Campaign Classic 20.3) is een permanent cookie dat de **deliveryId** bevat van de laatste levering waarvan de gebruiker op de koppeling klikte. Dit cookie wordt gebruikt - wanneer het sessiecookie ontbreekt - om de volgende tabel te identificeren die wordt gebruikt.
+
+* Een **permanente cookie**: Het **UUID** -cookie (Universal Unique IDentifier) wordt gedeeld door Adobe Experience Cloud-oplossingen. Deze wordt eenmaal ingesteld totdat deze verdwijnt van de clientbrowser wanneer een nieuwe waarde wordt gegenereerd. Met dit cookie kunt u de gebruikers identificeren die met de Experience Cloud-oplossingen werken wanneer ze een website bezoeken. Het kan door een landingspagina (om onbekende klantenactiviteiten aan een ontvanger te associëren) of door een levering worden gedeponeerd. De beschrijving van deze cookie is [hier](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-mc.html)beschikbaar.
+
+<!--The **nllastdelid** cookie (introduced in Campaign Classic 20.3) is a permanent cookie which contains the **deliveryId** of the last delivery that user clicked the link from. This cookie is used - when the session cookie is missing - to identify the tracking table that will be used.-->
 
 In verordeningen zoals de algemene gegevensbeschermingsverordening (GDPR) wordt bepaald dat bedrijven de toestemming van webgebruikers eisen voordat ze cookies installeren.
 
