@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
 workflow-type: tm+mt
-source-wordcount: '3731'
-ht-degree: 86%
+source-wordcount: '3764'
+ht-degree: 85%
 
 ---
 
@@ -25,6 +25,10 @@ Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates
 U kunt ook de [Adobe Campaign Classic-release-opmerkingen](../../rn/using/latest-release.md) raadplegen voor meer updates.
 
 ## Oktober 2020 {#oct-2020}
+
+Campagne op locatie, gehoste en hybride hostingmodellen worden nu beschreven in een speciale sectie. [Meer informatie](../../installation/using/hosting-models.md)
+
+De matrix voor campagnecapaciteit per hostmodel is bijgewerkt en verplaatst in de installatiegids. [Meer informatie](../../installation/using/capability-matrix.md)
 
 De campagne die geavanceerde motionsectie meldt is verbeterd om te specificeren hoe te om parameters URL en variabelen in douanerapporten te gebruiken. [Meer informatie](../../reporting/using/advanced-functionalities.md)
 
