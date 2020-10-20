@@ -8,10 +8,10 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: f8539433274e531e34b7512ce1b6385d67e8e332
 workflow-type: tm+mt
-source-wordcount: '2130'
-ht-degree: 92%
+source-wordcount: '2124'
+ht-degree: 91%
 
 ---
 
@@ -597,14 +597,14 @@ ht-degree: 92%
       + [Zakelijke implementatie](installation/using/enterprise-deployment.md)
       + [Midsourcingimplementatie](installation/using/mid-sourcing-deployment.md)
       + [Power Booster en Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + Campaign installeren in Windows {#installing-campaign-in-windows-}
-      + [Vereisten voor installatie van Campaign in Windows](installation/using/prerequisites-of-campaign-installation-in-windows.md)
+   + Campagne in Windows {#installing-campaign-in-windows-}
+      + [Voordat u de campagne in Windows installeert](installation/using/prerequisites-of-campaign-installation-in-windows.md)
       + [De server installeren](installation/using/installing-the-server.md)
       + [Integratie in een webserver voor Windows](installation/using/integration-into-a-web-server-for-windows.md)
       + [Beschikbaarheid van clientconsole voor Windows](installation/using/client-console-availability-for-windows.md)
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
-   + Campaign installeren in Linux {#installing-campaign-in-linux-}
-      + [Vereisten voor installatie van Campaign in Linux](installation/using/prerequisites-of-campaign-installation-in-linux.md)
+   + Campagne op Linux  {#installing-campaign-in-linux-}
+      + [Voordat u campagne installeert in Linux](installation/using/prerequisites-of-campaign-installation-in-linux.md)
       + [Pakketten installeren met Linux](installation/using/installing-packages-with-linux.md)
       + [Integratie in een webserver voor Linux](installation/using/integration-into-a-web-server-for-linux.md)
       + [Beschikbaarheid van clientconsole voor Linux](installation/using/client-console-availability-for-linux.md)
@@ -625,11 +625,11 @@ ht-degree: 92%
       + [Midsourcingserver](installation/using/mid-sourcing-server.md)
       + [Interactie - Databuffer](installation/using/interaction---data-buffer.md)
    + Bijlagen {#appendices}
-      + [Het serverconfiguratiebestand](installation/using/the-server-configuration-file.md)
+      + [Serverconfiguratiebestand](installation/using/the-server-configuration-file.md)
       + [Campaign-netwerkeindpunten](installation/using/campaign-network-endpoints.md)
       + [Opdrachtregels](installation/using/command-lines.md)
       + [Nieuwe instanties maken](installation/using/creating-new-instances.md)
-      + [Lijst met Campaign Classic-opties](installation/using/configuring-campaign-options.md)
+      + [Lijst met opties voor campagnes](installation/using/configuring-campaign-options.md)
       + [Installatie van Campaign verwijderen](installation/using/uninstalling-campaign.md)
 + Campaign Classic controleren {#monitoring-campaign-classic}
    + Inleiding {#introduction}
