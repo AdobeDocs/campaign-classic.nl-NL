@@ -1,8 +1,6 @@
 ---
 title: De clientconsole installeren
-seo-title: De clientconsole installeren
-description: De clientconsole installeren
-seo-description: null
+description: Leer hoe u de clientconsole installeert
 page-status-flag: never-activated
 uuid: 1279c0d8-bf27-4a58-ae94-796d6147231a
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: d1069b23-e08d-43c5-bbfb-3158ac40dc7e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: bdc09e1b6e037e1b21573b8624a947e30f8ad1fc
 workflow-type: tm+mt
 source-wordcount: '466'
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
@@ -81,7 +79,7 @@ U kunt zo veel verbindingen toevoegen als u nodig hebt om bijvoorbeeld verbindin
 >Met de **[!UICONTROL Add]** knop kunt u al uw verbindingen ordenen **[!UICONTROL folders]** . U hoeft alleen elke verbinding naar een map te slepen.
 
 
-## Aanmelden bij campagne
+## Aanmelden bij Adobe Campaign
 
 Volg onderstaande stappen om u aan te melden bij een bestaande instantie:
 
