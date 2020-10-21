@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: cbfdeb2f-4f20-45b8-8cc0-89362f9ea9c1
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 6%
+source-wordcount: '259'
+ht-degree: 4%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->Sommige configuraties kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen. Bijvoorbeeld, om tot de server en de dossiers van de instantieconfiguratie toegang te hebben. Meer over de verschillende plaatsingen leren, verwijs naar de [Hosting modelsectie](../../installation/using/hosting-models.md) of naar [dit artikel](https://helpx.adobe.com/nl/campaign/kb/acc-on-prem-vs-hosted.html).
+>Sommige configuraties kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen. Bijvoorbeeld, om tot de server en de dossiers van de instantieconfiguratie toegang te hebben. Raadpleeg de sectie [Hosting-modellen](../../installation/using/hosting-models.md) of naar [deze pagina](../../installation/using/capability-matrix.md)voor meer informatie over de verschillende implementaties.
 
 In Adobe Campaign is een **gegevensbufferzone** geïntroduceerd in de module Interactie. Dit staat u toe om prestaties **van binnenkomende Interactie te** verhogen door voorraad en aanbiedingsberekeningen te desynchroniseren.
 
