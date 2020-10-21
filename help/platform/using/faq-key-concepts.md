@@ -11,10 +11,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 100%
+source-wordcount: '890'
+ht-degree: 95%
 
 ---
 
@@ -40,9 +40,9 @@ Controleer uw [versie en buildnummer](../../platform/using/launching-adobe-campa
 
 ## Wat zijn de verschillen bij het werken in een on-premise omgeving versus in een gehoste omgeving? {#what-are-the-differences-when-working-on-premise-vs--in-a-hosted-environment-}
 
-Adobe Campaign Classic wordt geleverd met een reeks modules en opties. De beschikbaarheid van deze modules en hun configuratie kunnen afhankelijk zijn van het [type implementatie](../../installation/using/hosting-models.md) van uw installatie: gehost (Managed Services) of on-premise.
+Adobe Campaign Classic wordt geleverd met een reeks modules en opties. The availability of these modules and their configuration can depend on the [type of deployment](../../installation/using/hosting-models.md) of your installation: hosted (Managed Services), hybrid or on-premise.
 
-[Klik hier voor meer informatie](https://helpx.adobe.com/nl/campaign/kb/acc-on-prem-vs-hosted.html).
+[Klik hier voor meer informatie](../../installation/using/capability-matrix.md).
 
 ## Hoe kan ik gebruikersmachtigingen instellen? {#how-can-i-set-up-user-permissions-}
 
@@ -64,7 +64,9 @@ Raadpleeg [dit document](https://helpx.adobe.com/nl/campaign/kb/campaign-privacy
 
 ## Wat zijn de concepten van de Campaign-gebruikersinterface die ik zou moeten weten? {#what-are-campaign-user-interface-concepts-i-should-know-}
 
-Lees [deze sectie](../../platform/using/adobe-campaign-workspace.md) voor meer informatie over de basisbeginselen van de Adobe Campaign-werkruimte. U kunt ook [deze video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html) bekijken.
+Lees [deze sectie](../../platform/using/adobe-campaign-workspace.md) voor meer informatie over de basisbeginselen van de Adobe Campaign-werkruimte.
+
+![](assets/do-not-localize/how-to-video.png) [Campagne ontdekken in video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 ## Hoe kan ik de doelgroep van mijn berichten selecteren? {#how-can-i-select-the-target-population-of-my-messages-}
 
@@ -84,7 +86,9 @@ Een workflow kan ook een of meer operatoren omvatten die op de hoogte moeten wor
 
 ## Hoe maak en verzend ik een eerste e-mail? {#how-to-create-and-send-a-first-email-}
 
-[Klik hier voor meer informatie](../../delivery/using/about-email-channel.md) of [bekijk deze video](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html) om een e-mail te maken in een campagne.
+[Klik hier voor meer informatie](../../delivery/using/about-email-channel.md).
+
+![](assets/do-not-localize/how-to-video.png) [Dit ontdekken in video](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
 
 ## Hoe kan ik sms-berichten verzenden? {#how-to-send-sms-messages-}
 
