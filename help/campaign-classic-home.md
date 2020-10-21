@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 title: Adobe Campaign Classic-productdocumentatie
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 5e765777d79df28ae306d02512851b1b3f49018d
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,8 @@ ht-degree: 99%
 
 ## Nieuwe functies
 
-* **[Emoticons](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>U kunt nu emoticons invoegen in berichten en onderwerpregels
+* **[Emoticons](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>
+U kunt nu emoticons invoegen in berichten en onderwerpregels
 
 * **[Ondersteuning krijgen](https://helpx.adobe.com/nl/campaign/kb/ac-support.html)**<br/>
 Krijg toegang tot veelgestelde vragen, best practices en Help-resources en vraag hulp
@@ -28,7 +29,8 @@ Ontdek hoe Adobe Campaign u kan helpen aan privacyvereisten te voldoen
 * **[Trackingmogelijkheden](https://helpx.adobe.com/nl/campaign/kb/acc-tracking.html)**<br/>
 Begrijp de mogelijkheden en processen voor tracking in Campaign
 
-* **[Interactieve content met AMP](delivery/using/defining-interactive-content.md)**<br/>Ontdek hoe u dynamische e-mails kunt verzenden met de nieuwe AMP-indeling
+* **[Interactieve content met AMP](delivery/using/defining-interactive-content.md)**<br/>
+Ontdek hoe u dynamische e-mails kunt verzenden met de nieuwe AMP-indeling
 
 [Klik hier voor meer updates](/help/rn/using/documentation-updates.md)
 
@@ -88,4 +90,4 @@ Begrijp de mogelijkheden en processen voor tracking in Campaign
 | [Aan de slag met Campaign](platform/using/about-adobe-campaign-classic.md) | [Implementatiehandleiding](https://helpx.adobe.com/nl/campaign/kb/acc-implementation.html) |
 | [Gold Standard-upgrade](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html) | [Handleiding voor tracking](https://helpx.adobe.com/nl/campaign/kb/acc-tracking.html) |
 | [Verouderde functies](https://helpx.adobe.com/nl/campaign/kb/deprecated-and-removed-features.html) | [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html) |
-| [Campaign-configuratiescherm](https://docs.adobe.com/content/help/nl-NL/control-panel/using/control-panel-home.html) | [Monitoringrichtsnoeren](production/using/monitoring-guidelines.md) |
+| [Campaign-configuratiescherm](https://docs.adobe.com/content/help/nl-NL/control-panel/using/control-panel-home.html) | [Bewakingsrichtlijnen](production/using/monitoring-guidelines.md) |
