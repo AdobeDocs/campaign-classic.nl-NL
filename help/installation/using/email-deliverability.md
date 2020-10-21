@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 86c18986-1f65-40ff-80dc-1fbff37f406d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '2975'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ In de volgende sectie vindt u een overzicht van de configuratie die is vereist v
 
 >[!NOTE]
 >
->Sommige configuraties kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen, bijvoorbeeld, om tot de server en de dossiers van de instantieconfiguratie toegang te hebben. Meer over de verschillende plaatsingen leren, verwijs naar de [Hosting modelsectie](../../installation/using/hosting-models.md) of naar [dit artikel](https://helpx.adobe.com/nl/campaign/kb/acc-on-prem-vs-hosted.html).
+>Sommige configuraties kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen, bijvoorbeeld, om tot de server en de dossiers van de instantieconfiguratie toegang te hebben. Raadpleeg de sectie [Hosting-modellen](../../installation/using/hosting-models.md) of naar [deze pagina](../../installation/using/capability-matrix.md)voor meer informatie over de verschillende implementaties.
 
 Raadpleeg deze [sectie](../../delivery/using/about-deliverability.md)voor meer informatie over de concepten en beste praktijken met betrekking tot de leverbaarheid.
 
