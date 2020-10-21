@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '3764'
+source-wordcount: '3752'
 ht-degree: 85%
 
 ---
@@ -226,7 +226,7 @@ De handleiding over het [verzenden van pushmeldingen](../../delivery/using/about
 
 De nieuwe parameter voor rapportconfiguratie van URL’s is [hier](../../reporting/using/properties-of-the-report.md#defining-additional-settings) gedocumenteerd.
 
-De pagina over de **On-premise &amp; gehoste capaciteitsmatrix van Campaign Classic** is bijgewerkt met de nieuwe FDA-connectoren. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/acc-on-prem-vs-hosted.html)
+De pagina over de **On-premise &amp; gehoste capaciteitsmatrix van Campaign Classic** is bijgewerkt met de nieuwe FDA-connectoren. [Meer informatie](../../installation/using/capability-matrix.md).
 
 De pagina over de **capaciteitsmatrix van Campaign Classic** is bijgewerkt. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html)
 
@@ -380,7 +380,7 @@ Er is een nieuw knowledgebaseartikel gemaakt over het gebruik van de aanbiedings
 
 De sectie over de activiteit Subworkflow is uitgebreid met een gebruiksvoorbeeld. [Meer informatie](../../workflow/using/sub-workflow.md)
 
-The [Campaign Classic On-premise &amp; Hosted capability matrix](https://helpx.adobe.com/nl/campaign/kb/acc-on-prem-vs-hosted.html) Knowledge base article has been updated with information relating to Email BCC.
+De pagina [Campaign Classic On-premise &amp; Hosted Capability Matrix](../../installation/using/capability-matrix.md) is bijgewerkt met informatie over e-mail BCC.
 
 De documentatie over transactionele berichten is bijgewerkt met een opmerking betreffende de publicatie van sjablonen. [Meer informatie](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
 
