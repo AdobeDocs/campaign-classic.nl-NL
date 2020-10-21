@@ -1,8 +1,6 @@
 ---
 title: Een profiellijst maken met een workflow
-seo-title: Een profiellijst maken met een workflow
-description: Een profiellijst maken met een workflow
-seo-description: null
+description: Leer hoe u een profiellijst maakt in een workflow
 page-status-flag: never-activated
 uuid: a30f7217-fe82-4290-b1e6-e7a126a316c1
 contentOwner: sauviat
@@ -12,17 +10,23 @@ content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: ba42c3cf-31fc-4fbc-b230-a2b3982328c5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 19%
+source-wordcount: '183'
+ht-degree: 7%
 
 ---
 
 
 # Een profiellijst maken met een workflow{#creating-a-profile-list-with-a-workflow}
 
-Als u een **[!UICONTROL List]** typelijst wilt maken op basis van de nieuwe tabel voor ontvangers, moet u een doelworkflow maken die de lijst genereert. Raadpleeg [deze sectie](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign)voor meer informatie over lijsten in Campagne.
+Als u een **[!UICONTROL List]** typelijst wilt maken op basis van de nieuwe tabel voor ontvangers, moet u een doelworkflow maken die de lijst genereert.
+
+Raadpleeg [deze sectie](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign)voor meer informatie over lijsten in Campagne.
+
+![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
+
+Voer de onderstaande stappen uit om een doelworkflow te maken en ontvangers bij te werken in een aangepaste tabel voor ontvangers:
 
 1. Ga naar het **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** knooppunt van de verkenner.
 1. Maak een nieuwe doelworkflow.
@@ -46,7 +50,4 @@ Als u een **[!UICONTROL List]** typelijst wilt maken op basis van de nieuwe tabe
 
    ![](assets/mapping_list_view.png)
 
->[!NOTE]
->
->U kunt ook naar de video [Een lijst met ontvangers](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/creating-a-list-of-recipients.html) maken verwijzen.
 
