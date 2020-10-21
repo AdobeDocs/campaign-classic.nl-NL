@@ -11,9 +11,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '740'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ De leveringsanalyse is de fase waarin de doelpopulatie wordt berekend en de leve
 
 Adobe raadt u ten zeerste aan proefberichten te maken om uw levering op een goedkeuringsgroep te testen voordat u deze naar het hoofddoel verzendt. U kunt dan parameters voor berichtcontent, personalisatie en levering bevestigen.
 
-[Klik hier voor meer informatie](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof). U kunt ook [deze video](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/managing-seed-and-proofs.html) bekijken.
+[Klik hier voor meer informatie](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 ### Hoe kunt u seed-adressen in Adobe Campaign gebruiken? {#how-to-use-seed-addresses-in-adobe-campaign-}
 
