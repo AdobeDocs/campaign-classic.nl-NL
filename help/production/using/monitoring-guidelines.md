@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: 8b33e6af-15c3-4b30-8ad6-d76a1f33be21
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 7%
+source-wordcount: '707'
+ht-degree: 6%
 
 ---
 
@@ -136,7 +136,7 @@ De technische middelen zijn beschikbaar in de documentatie van Campaign Classic.
 **Modellen en mogelijkheden hosten**
 
 * [Campaign Classic-hostmodellen](../../installation/using/hosting-models.md)
-* [Mogelijkheden van het hostmodel](https://helpx.adobe.com/nl/campaign/kb/acc-on-prem-vs-hosted.html)
+* [Mogelijkheden van het hostmodel](../../installation/using/capability-matrix.md)
 
 **Serverconfiguratie**
 
