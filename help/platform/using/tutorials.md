@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: c7c67ee5-ad60-420f-b597-08c388049529
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 677d631a075f50a80c9379fff0c17d3d06c7e803
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 15%
+source-wordcount: '399'
+ht-degree: 7%
 
 ---
 
@@ -42,18 +42,18 @@ Meer informatie over Adobe Campaign vindt u in de volgende gebruiksgevallen en -
 * [Bedekkingen](../../web/using/use-cases--creating-overviews.md)maken: creeer overzicht-type de toepassingen van het Web om alle toepassingen van het Web in uw gegevensbestand te tonen.
 * [Gebruiksscenario](../../workflow/using/about-workflow-use-cases.md)&#39;s voor werkstroom: ontdek door deze gebruiksgevallen verschillende manieren om werkschema&#39;s te gebruiken.
 
-## Instructievideo’s {#how-to-videos}
+## Zelfhulp {#how-to-videos}
 
-Bekijk onze &#39;Hoe kan ik&#39;-video&#39;s om de belangrijkste functies van Adobe Campaign te ontdekken.
+Naast de productdocumentatie, kunt u tot Zelfhulp van de Campagne toegang hebben hieronder vermeld middelen.
 
-* [Een publiek](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/creating-a-list-of-recipients.html)maken: ontdekken hoe u een publiek kunt maken in Adobe Campaign.
-* [Een campagne en een e-mail](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)maken: Ontdek hoe u een e-mail kunt maken in een campagne in Adobe Campaign.
-* [Een lijst met ontvangers](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/creating-a-list-of-recipients.html)maken: Maak een lijst met ontvangers met een workflow in Adobe Campaign.
-* [Een doelworkflow](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-targeting-workflow.html)maken: een workflow maken om de verjaardagen van de ontvangers als doel in te stellen.
-* [Een workflow maken in een campagne](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/creating-a-workflow.html): leren hoe u een workflow in een campagne kunt maken.
-* [Profielen](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/importing-profiles.html)importeren: leren hoe u profielen kunt importeren uit een bestand in Adobe Campaign.
-* [Interface-overzicht](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html): leren navigeren in de Adobe Campaign-interface.
-* [Zaden en proefdrukken beheren in een e-mail](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/managing-seed-and-proofs.html): Leer hoe u zaden en proefdrukken kunt toevoegen aan een bestaande e-mail in Adobe Campaign.
-* [Integratie](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/integrating/dynamics365-integration.html)van Adobe Campaign en Microsoft Dynamics 365: Leer hoe te om Adobe Campaign en de Dynamiek van Microsoft te verbinden en te synchroniseren door de verbindingsmogelijkheden van CRM.
+### Zelfstudievideo&#39;s
 
-Naast deze korte en gedetailleerde video&#39;s kunt u ook [trainingscursussen](https://learning.adobe.com/catalog.html) en [presentatievideo](https://www.adobe.com/training/video.html) &#39;s op onze website vinden.
+Belangrijkste functies van Adobe Campaign in video ontdekken. [Meer informatie](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/overview.html)
+
+### Trainingssessies en video&#39;s
+
+Naast deze korte en gedetailleerde video&#39;s kunt u ook [trainingscursussen](https://learning.adobe.com/catalog.html) vinden en [presentatievideo](https://www.adobe.com/training/video.html) &#39;s met functies bekijken op Adobe.com.
+
+### Experience League-cursussen
+
+U kunt ook de [Aanbevolen cursussen](https://experienceleague.adobe.com/?lang=en#dashboard/learning) voor Adobe Campaign Classic bezoeken: cursussen zijn deskundig beheerde verzamelingen van lessen die u helpen snel vaardigheden en kennis te verwerven.
