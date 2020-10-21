@@ -1,8 +1,6 @@
 ---
-title: Upgraden
-seo-title: Upgraden
-description: Upgraden
-seo-description: null
+title: Upgraden naar een nieuwe build
+description: Leer technische stappen om aan een nieuwe bouwstijl te bevorderen
 page-status-flag: never-activated
 uuid: f24552d4-6bdf-411c-a1f2-b8f339c311f4
 contentOwner: sauviat
@@ -12,15 +10,15 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1136'
 ht-degree: 1%
 
 ---
 
 
-# Upgraden{#upgrading}
+# Upgraden naar een nieuwe build (on-premise){#upgrading}
 
 Voordat u het upgradeproces start, bepaalt en bevestigt u welke versie van Adobe Campaign moet worden bijgewerkt naar en raadpleegt u de [releaseopmerkingen](../../rn/using/latest-release.md) .
 
