@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: c886bd02-c484-443c-93ca-ca244adbf893
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '4142'
-ht-degree: 1%
+source-wordcount: '4138'
+ht-degree: 0%
 
 ---
 
@@ -29,8 +29,8 @@ Met Adobe Campaign kunt u gegevens uit een of meer bestanden in tekst-, CSV-, TA
 >U kunt gegevens importeren zonder deze toe te wijzen aan de databasegegevens met behulp van de **[!UICONTROL Import a list]** functie.
 >
 >De gegevens kunnen vervolgens uitsluitend in workflows via het **[!UICONTROL Read list]** object worden gebruikt. Raadpleeg [deze pagina](../../workflow/using/read-list.md) voor meer informatie.
->
->Bekijk de video [Profielen](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/importing-profiles.html) importeren voor meer informatie.
+
+![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
 
 ## Structuur van de te importeren gegevens {#structure-of-the-data-to-import}
 
