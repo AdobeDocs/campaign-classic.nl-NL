@@ -8,9 +8,9 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: f8539433274e531e34b7512ce1b6385d67e8e332
+source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2125'
 ht-degree: 91%
 
 ---
@@ -43,6 +43,7 @@ ht-degree: 91%
       + Veelgestelde vragen {#faq}
          + [Algemene vragen](platform/using/common-questions.md)
          + [Belangrijkste concepten](platform/using/faq-key-concepts.md)
+         + [Upgrade maken](platform/using/faq-build-upgrade.md)
          + [Doelgroepen](platform/using/faq-audiences.md)
          + [Berichten ontwerpen](platform/using/faq-designing.md)
          + [Berichten verzenden](platform/using/faq-messages.md)
@@ -652,7 +653,8 @@ ht-degree: 91%
       + [Workflow voor opschonen van databases](production/using/database-cleanup-workflow.md)
    + Adobe Campaign bijwerken {#updating-adobe-campaign}
       + [Inleiding](production/using/introduction.md)
-      + [Upgraden](production/using/upgrading.md)
+      + [Een build-upgrade uitvoeren](production/using/build-upgrade.md)
+      + [Bijwerkingsprocedure (op locatie)](production/using/upgrading.md)
       + [Overschakelen naar Unicode](production/using/switching-to-unicode.md)
       + [Migratieprocedures](production/using/migration-procedures.md)
    + Databaseonderhoud {#database-maintenance}
@@ -754,8 +756,4 @@ ht-degree: 91%
       + [Specifieke configuraties in v5.11](migration/using/specific-configurations-in-v5-11.md)
       + [Specifieke configuraties in v6.02](migration/using/specific-configurations-in-v6-02.md)
       + [Specifieke configuraties in v6.10](migration/using/specific-configurations-in-v6-10.md)
-   + Terugdraaien {#rollback}
-      + [Terugdraaien](migration/using/about-rollback.md)
-      + [v5.11 herstellen](migration/using/restoring-v5-11.md)
-      + [v6.02 herstellen](migration/using/restoring-v6-02.md)
-      + [v6.1 herstellen](migration/using/restoring-v6-1.md)
+   + [Terugkeerprocedure](migration/using/about-rollback.md)
