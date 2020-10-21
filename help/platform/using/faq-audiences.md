@@ -11,10 +11,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 97%
+source-wordcount: '280'
+ht-degree: 84%
 
 ---
 
@@ -29,17 +29,22 @@ U kunt ontvangers importeren of ze handmatig maken met de Campaign-clientconsole
 
 ## Hoe kan ik profielen importeren? {#how-to-import-profiles-}
 
-Ontdek gemakkelijke gebruikersscenario’s voor het [importeren van profielen](../../platform/using/importing-data.md#generic-import-samples) in uw database. U kunt ook [deze video](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/importing-profiles.html) bekijken.
+Ontdek gemakkelijke gebruikersscenario’s voor het [importeren van profielen](../../platform/using/importing-data.md#generic-import-samples) in uw database.
+
+![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/importing-profiles.html)
 
 ## Hoe kan ik de doelpopulatie van een marketingcampagne definiëren? {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
-U kunt [workflows gebruiken om een doelpopulatie te maken](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) voor een marketingcampagne. Ontdek via [deze video](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/creating-a-workflow.html) hoe u een targetingworkflow in een campagne maakt.
+U kunt [workflows gebruiken om een doelpopulatie te maken](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) voor een marketingcampagne.
+
 
 ## Hoe kan ik een lijst met profielen maken? {#how-can-i-create-a-list-of-profiles-}
 
 Een lijst is een statische reeks ontvangers die doelgericht kan worden benaderd in leveringsacties en die tijdens de importbewerkingen of de uitvoering van een workflow kan worden bijgewerkt. Een populatie die via een query uit de database is geëxtraheerd, kan bijvoorbeeld een lijst leveren.
 
-[Klik hier voor meer informatie](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group). U kunt ook [deze video](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/creating-a-list-of-recipients.html) bekijken over het handmatig maken van een lijst en [deze andere video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) om een lijst met ontvangers in een workflow te maken en automatisch bij te werken.
+[Klik hier voor meer informatie](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group).
+
+![](assets/do-not-localize/how-to-video.png) Deze functie ontdekken [in deze video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html) en [in deze andere video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
 
 ## Hoe kan ik een populatie dedupliceren voordat ik een bericht verzend? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
