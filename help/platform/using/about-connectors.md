@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: connectors
 discoiquuid: a84a73a9-9930-449f-8b81-007a0e9d5233
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 12%
+source-wordcount: '195'
+ht-degree: 10%
 
 ---
 
@@ -38,5 +38,5 @@ U kunt Campagne met veelvoudige andere systemen, zoals ook integreren:
 
 >[!NOTE]
 >
->De beschikbaarheid van deze modules en hun gebruik kunnen van het type van plaatsing van uw installatie afhangen. Raadpleeg de [matrix](https://helpx.adobe.com/nl/campaign/kb/acc-on-prem-vs-hosted.html)Campagne on-prem/hosted capabilities.
+>De beschikbaarheid van deze modules en hun gebruik kunnen van het type van plaatsing van uw installatie afhangen. Zie [Campagne op locatie - matrix](../../installation/using/capability-matrix.md)met gehoste mogelijkheden.
 
