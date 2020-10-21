@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: appendices
 discoiquuid: da2198a3-7cef-4419-894d-e5bb51bb480c
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '7857'
+source-wordcount: '7852'
 ht-degree: 5%
 
 ---
@@ -26,7 +26,7 @@ De algemene configuratie van Adobe Campaign wordt gedefinieerd in het bestand **
 
 >[!NOTE]
 >
->De server-zijconfiguraties kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen. Meer over de verschillende plaatsingen leren, verwijs naar de [Hosting modelsectie](../../installation/using/hosting-models.md) of naar [dit artikel](https://helpx.adobe.com/nl/campaign/kb/acc-on-prem-vs-hosted.html). De installatie- en configuratiestappen voor gehoste en hybride modellen worden in deze [sectie](../../installation/using/hosted-model.md)weergegeven.
+>De server-zijconfiguraties kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen. Raadpleeg de sectie [Hosting-modellen](../../installation/using/hosting-models.md) of naar [deze pagina](../../installation/using/capability-matrix.md)voor meer informatie over de verschillende implementaties. De installatie- en configuratiestappen voor gehoste en hybride modellen worden in deze [sectie](../../installation/using/hosted-model.md)weergegeven.
 
 De eerste parameters bevinden zich in het **gedeelde** knooppunt. Deze zijn gerelateerd aan het exemplaar. Deze worden mogelijk door alle nlserver-opdrachten gebruikt (nlserver, nlserver wfserver, enz.). De andere secties zijn verwant aan een specifiek nlserver sub-bevel.
 
