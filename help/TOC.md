@@ -8,10 +8,10 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
+source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
 workflow-type: tm+mt
-source-wordcount: '2125'
-ht-degree: 91%
+source-wordcount: '2148'
+ht-degree: 89%
 
 ---
 
@@ -23,17 +23,19 @@ ht-degree: 91%
 + Release-opmerkingen {#release-notes}
    + [Aan de slag met upgrades](rn/using/rn-overview.md)
    + [Laatste release](rn/using/latest-release.md)
-   + [Gold Standard-release](rn/using/gold-standard.md)
+   + Gold Standard-release {#gs-release}
+      + [Opmerkingen bij de release Gold Standard](rn/using/gold-standard.md)
+      + [Compatibiliteitsmatrix voor Gold Standard](rn/using/compatibility-matrix-gs.md)
    + Eerdere releases {#previous-releases}
+      + [Release 20.2](rn/using/release--20-2.md)
       + [Release 20.1](rn/using/release--20-1.md)
       + [Release 19.2](rn/using/release--19-2.md)
       + [Release 19.1](rn/using/release--19-1.md)
       + [Release 18.10](rn/using/release--18-10.md)
       + [Release 18.6](rn/using/release--18-6.md)
       + [Release 18.4](rn/using/release--18-4.md)
-   + Verouderde functies en compatibiliteit {#deprecated-compatibility}
-      + [Verouderde functies](rn/using/deprecated-features.md)
-      + [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md)
+   + [Verouderde functies](rn/using/deprecated-features.md)
+   + [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md)
 + Aan de slag {#getting-started}
    + Starten met Adobe Campaign {#starting-with-adobe-campaign}
       + [Aan de slag met Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
@@ -121,7 +123,10 @@ ht-degree: 91%
    + Pushmeldingen verzenden {#sending-push-notifications}
       + [Kanaal voor mobiele apps](delivery/using/about-mobile-app-channel.md)
       + [De Campaign-SDK integreren in de mobiele applicatie](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
-      + [De mobiele applicatie configureren in Adobe Campaign](delivery/using/configuring-the-mobile-application.md)
+      + Configuring the mobile application{#configure-the-mobile-app}
+         + [Aan de slag met de toepassingsconfiguratie](delivery/using/get-started-app-config.md)
+         + [Configuratiestappen voor iOS](delivery/using/configuring-the-mobile-application.md)
+         + [Configuratiestappen voor Android](delivery/using/configuring-the-mobile-application-android.md)
       + [Meldingen maken](delivery/using/creating-notifications.md)
       + [Problemen oplossen](delivery/using/troubleshooting.md)
    + Direct mail verzenden {#sending-direct-mail}
@@ -336,8 +341,8 @@ ht-degree: 91%
    + Experience Cloud Triggers {#experience-triggers}
       + [Info [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Pipeline configureren](integrations/using/configuring-pipeline.md)
-      + [Pipelineoptie NmsPipeline_Config](integrations/using/nmspipeline-config.md)
-      + [Triggergebeurtenissen](integrations/using/events.md)
+      + [Adobe-IO configureren voor Adobe Experience Cloud-triggers](integrations/using/configuring-adobe-io.md)
+      + [Gebeurtenissen configureren voor aangepaste implementatie](integrations/using/events.md)
       + [Pipelinecontrole](integrations/using/pipeline-monitoring.md)
       + [Problemen met pipelines oplossen](integrations/using/pipeline-troubleshooting.md)
 + Automatiseren met workflows {#automating-with-workflows}
