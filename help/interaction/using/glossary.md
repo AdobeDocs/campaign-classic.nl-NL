@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: interaction-overview
 discoiquuid: 5b2b7682-6bac-4282-8d27-e8a259934e7d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Hieronder vindt u de definitie van de belangrijkste interactieelementen.
 
 * **Ruimte** voorstel: map waarin de locatie wordt aangegeven waar de aanbieding wordt weergegeven. Als u een spatie definieert, kunt u het gebruikte kanaal opgeven en opgeven of het kanaal in de eenheidsmodus kan worden gebruikt (standaard: alleen in batchmodus), de inhoud van de aanbieding opbouwen met behulp van renderfuncties en de aanbieding van de aangeboden aanbiedingen specificeren. Een ruimte is een interface tussen het kanaal en de aanbiedingsmotor.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Een aanbiedingsruimte is geen communicatiekanaal, maar valt samen met een specifieke expositielocatie op het kanaal. Aanbiedingen die op een website worden weergegeven, kunnen bijvoorbeeld twee spaties op dezelfde pagina beslaan. In dit geval hebben we dan twee spaties voor hetzelfde kanaal.
    >
