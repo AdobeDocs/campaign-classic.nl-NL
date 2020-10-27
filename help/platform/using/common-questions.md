@@ -1,7 +1,6 @@
 ---
 title: Algemene vragen
-seo-title: Algemene vragen
-description: Veelgestelde vragen over Campaign Classic
+description: Veelgestelde vragen over Adobe Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -11,17 +10,23 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 98%
+source-wordcount: '539'
+ht-degree: 87%
 
 ---
 
 
 # Algemene vragen{#common-questions}
 
-Hebt u hulp nodig terwijl u met Campaign Classic werkt? Lees de 10 meest gestelde vragen hieronder en andere veelgestelde vragen op die pagina. U kunt ook [zelfstudievideo’s bekijken](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/overview.html) en [Aan de slag-handleidingen lezen](../../platform/using/tutorials.md#step-by-step-guides) om meer te weten te komen over belangrijkste mogelijkheden. Kunt u het antwoord niet vinden? [Vraag het de community](https://forums.adobe.com/community/experience-cloud/marketing-cloud/campaign).
+Hebt u hulp nodig terwijl u met Campaign Classic werkt? Lees de 10 meest gestelde vragen hieronder en andere veelgestelde vragen op die pagina. U kunt ook het volgende doen:
+
+* [Bekijk zelfstudievideo&#39;s](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/overview.html)
+* [Bladeren door opties voor zelfhulp](../../platform/using/tutorials.md#how-to-videos)
+* [Lees uit begin en gebruik casesectie](../../platform/using/tutorials.md#step-by-step-guides)
+* Kunt u het antwoord niet vinden? [Vraag het de expert](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
+* Hebt u ondersteuning nodig? [Raadpleeg de opties voor Help en ondersteuning bij campagnes](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
 
 ## 1. Hoe kan ik Campaign upgraden naar de nieuwste versie? {#how-can-i-upgrade-campaign-to-the-latest-version-}
 
@@ -29,7 +34,7 @@ Adobe Campaign Classic gebruikt met name een scala aan technologische oplossinge
 
 Als u Adobe Managed Services gebruikt, kunt u profiteren van de Campaign Gold Standard-upgrade. Raadpleeg [dit artikel](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html) voor meer informatie.
 
-[Lees dit artikel](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html) om te leren hoe u uw omgeving kunt bijwerken en lees de [Algemene vragen](https://helpx.adobe.com/nl/campaign/kb/build-upgrade-faq.html) over dit specifieke onderwerp.
+[Lees uit deze sectie](../../production/using/build-upgrade.md) hoe u uw omgeving kunt bijwerken en [Algemene vragen](../../platform/using/faq-build-upgrade.md) over dit specifieke onderwerp kunt lezen.
 
 ## 2. Wat is de workflow voor het opschonen van databases? {#what-is-the-database-cleanup-workflow-}
 
