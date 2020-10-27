@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: annexes
 discoiquuid: 07be1d3c-b038-48ca-be37-a33adb8e0fc0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: a0ab8794bdbdfbe627bf33580dc8991793447336
 workflow-type: tm+mt
 source-wordcount: '1985'
 ht-degree: 1%
@@ -129,7 +129,7 @@ Voor het opnieuw maken van dit gebruiksgeval hebben we een webtoepassing gemaakt
 
 ## Hoe verkrijgt u ventilatorgegevens? {#how-to-acquire-fan-data-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Volg de configuratiestappen die zijn beschreven in [Een Facebook-toepassing](../../social/using/creating-a-facebook-application.md)maken.
 
@@ -250,7 +250,7 @@ Als het profiel niet bestaat in de database en het e-mailadres van de Facebook-g
 
 1. Selecteer in het **[!UICONTROL Mapping]** veld het schema waarop u de afstemming wilt uitvoeren.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Controleer of de velden van het **[!UICONTROL Social networks]** tabblad correct zijn ingevoerd in de leveringstoewijzing. Leveringstoewijzingen zijn toegankelijk via het **[!UICONTROL Administration > Campaign management > Target mappings]** knooppunt.
 
