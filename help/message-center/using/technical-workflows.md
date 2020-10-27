@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 2e648e63-06d2-4e8f-9934-066a41d18eac
 translation-type: tm+mt
-source-git-commit: 76547b8e7ef377a6d2c786e721b16c571e8b7712
+source-git-commit: f7527a2d9b76e34fbaa2c9471c44a7a1e7e074d7
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '309'
 ht-degree: 11%
 
 ---
@@ -28,13 +28,11 @@ De diverse technische werkschema&#39;s met betrekking tot transactioneel oversei
 
 ## Workflows voor besturingsinstanties {#control-instance-workflows}
 
-Voor de controleinstantie, moet u één archiveringswerkschema per uitvoeringsinstantie tot stand brengen. De archiveringsworkflows zijn vervolgens toegankelijk via de map **Beheer > Productie > Berichtencentrum** . Nadat de workflows voor archivering zijn gemaakt, worden deze automatisch gestart.
-
-**Verdeelde architectuur**
-
-Als u één of meerdere uitvoeringsinstanties hebt geregistreerd, op de controleinstantie, moet u één archiveringswerkschema voor elke **[!UICONTROL Message Center execution instance]** externe rekening creëren. Klik op de **[!UICONTROL Create the archiving workflow]** knop om de workflow te maken en te starten.
+In de besturingsinstantie moet u voor elke **[!UICONTROL Message Center execution instance]** externe account één archiveringsworkflow maken, ongeacht of u een of meerdere uitvoeringsinstanties hebt geregistreerd. Klik op de **[!UICONTROL Create the archiving workflow]** knop om de workflow te maken en te starten.
 
 ![](assets/messagecenter_archiving_002.png)
+
+Deze workflows zijn dan toegankelijk via de map **Beheer > Productie > Berichtencentrum** . Nadat de workflows voor archivering zijn gemaakt, worden deze automatisch gestart.
 
 <!--**Minimal architecture**
 
