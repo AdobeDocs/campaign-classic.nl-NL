@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: administration-basics
 discoiquuid: da60b9ca-4b51-4bff-affc-2b12c576973a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 55e87d5453565a12048d63dd654c09596260f1cc
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 11%
@@ -113,8 +113,8 @@ De volgende kanalen kunnen worden gevormd:
 * [Bureau](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Facebook](../../social/using/publishing-on-facebook-walls.md#delegating-write-access-to-adobe-campaign)
 * [Twitter](../../social/using/configuring-publishing-on-twitter.md)
-* [iOS-kanaal](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-ios)
-* [Android-kanaal](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-android)
+* [iOS-kanaal](../../delivery/using/configuring-the-mobile-application.md)
+* [Android-kanaal](../../delivery/using/configuring-the-mobile-application-android.md)
 
 ## Externe FTP-account {#ftp-external-account}
 
@@ -252,7 +252,7 @@ Voor deze externe account moet de berekeningsformule voor bijgehouden URL&#39;s 
 
 ## Externe account voor Facebook connect {#facebook-connect-external-account}
 
-Met de **[!UICONTROL Facebook Connect]** externe account kunt u persoonlijke inhoud weergeven in uw Facebook-toepassingen, waardoor het eenvoudiger wordt om vooruitzichten te krijgen via dit sociale netwerk.
+Met de **[!UICONTROL Facebook Connect]** externe account kunt u gepersonaliseerde inhoud weergeven in uw Facebook-toepassingen, waardoor het eenvoudiger wordt om vooruitzichten te krijgen via dit sociale netwerk.
 
 Voor elke Facebook-toepassing moet u een **[!UICONTROL Facebook Connect]** type extern account maken. For more on this, refer to [page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
