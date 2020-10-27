@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3e73d7c91fbe7cff7e1e31bdd788acece5806e61
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 3%
+source-wordcount: '901'
+ht-degree: 2%
 
 ---
 
@@ -23,147 +23,142 @@ ht-degree: 3%
 # Pipeline configureren {#configuring-pipeline}
 
 De parameters van de authentificatie zoals klantenidentiteitskaart, de privé sleutel, en het authentificatieeindpunt worden gevormd in de dossiers van de instantieconfiguratie.
-De lijst van te verwerken trekkers wordt gevormd in een optie. Het heeft de JSON-indeling.
-De trigger wordt direct verwerkt met JavaScript-code. Deze wordt opgeslagen in een databasetabel zonder dat er in realtime verdere verwerking plaatsvindt.
+De lijst met triggers die moeten worden verwerkt, is geconfigureerd in een optie in JSON-indeling.
 De triggers worden gebruikt voor het activeren van een campagneworkflow die e-mails verzendt. De campagne is opgezet zodat een klant die beide triggergebeurtenissen heeft een e-mail ontvangt.
+
+>[!CAUTION]
+>
+>In het geval van Hybride plaatsing, zorg ervoor dat de pijpleiding op een halverwege instantie wordt gevormd.
 
 ## Vereisten {#prerequisites}
 
 Het gebruik [!DNL Experience Cloud Triggers] in Campagne vereist:
 
-* Adobe Campaign versie 6.11 build 8705 of hoger.
-* Adobe Analytics Ultimate, Premium, Foundation, OD, Select, Prime, Mobile Apps, Select of Standard.
+* Adobe Campaign 19.1.9 of 20.3.1. en hoger.
+* Versie Analytics Standard.
 
 Voorwaardelijke configuraties zijn:
 
-* Maak een bestand met een persoonlijke sleutel en maak vervolgens de Auth-toepassing die met die sleutel is geregistreerd.
+* Adobe IO-projectverificatie
+* De IMSOrgId, de id van de Experience Cloud-klant met Adobe Analytics toegevoegd.
+* Het leveringsteam moet de Bevoegdheden van de Beheerder van het Systeem voor IMS van de klant hebben Org
 * Configuratie van de triggers in Adobe Analytics.
-
-De Adobe Analytics-configuratie valt buiten het bereik van dit document.
-
-Adobe Campaign vereist de volgende informatie van Adobe Analytics:
-
-* De naam van de Auth-toepassing.
-* De IMSOrgId, de id van de Experience Cloud-klant.
-* De namen van de triggers die in Analytics zijn geconfigureerd.
-* De naam en indeling van de gegevensvelden die moeten worden afgestemd op de marketingdatabase.
-
-Een deel van deze configuratie is een aangepaste ontwikkeling en vereist het volgende:
-
-* Werken met kennis van JSON-, XML- en Javascript-parsering in Adobe Campaign.
-* Werken met kennis van de API&#39;s QueryDef en Writer.
-* Werken met codering en verificatie met persoonlijke sleutels.
-
->[!NOTE]
->
->Aangezien voor het bewerken van de JS-code technische vaardigheden vereist zijn, moet u er niet naar streven zonder het juiste begrip. <br>Triggers worden opgeslagen in een databasetabel. Daarom kunnen triggergegevens veilig worden gebruikt door marketingmedewerkers voor het maken van doelgerichte workflows.
 
 ## Verificatie- en configuratiebestanden {#authentication-configuration}
 
-De authentificatie wordt vereist aangezien de Pijpleiding in Adobe Experience Cloud wordt ontvangen.
-Als de server van de Marketing op gebouw wordt ontvangen, wanneer het aan Pijpleiding het programma opent, moet het voor authentiek verklaren om een veilige verbinding te hebben.
-Het gebruikt een paar openbare en privé sleutels. Dit proces is dezelfde functie als een gebruiker/wachtwoord, maar alleen veiliger.
+De authentificatie wordt vereist aangezien de pijpleiding in Adobe Experience Cloud wordt ontvangen.
+Het gebruikt een paar openbare en privé sleutels. Dit proces heeft dezelfde functie als een gebruiker/wachtwoord, maar is veiliger.
+Verificatie wordt ondersteund voor de Marketing Cloud via Adobe IO-project.
 
-### IMSOrgId {#imsorgid}
+## Stap 1: Adobe IO-project maken/bijwerken {#creating-adobe-io-project}
 
-De IMSOrgId is de id van de klant op de Adobe Experience Cloud.
-Stel het bestand in het bestand instance serverConf.xml in onder het kenmerk IMSOrgId.
-Voorbeeld:
+Voor Gehoste klanten, kunt u een kaartje van de klantenzorg tot stand brengen om uw organisatie met de Tokens van de Technische Rekening van Adobe IO voor de integratie van Triggers toe te laten.
+
+Raadpleeg voor klanten op locatie de pagina [Adobe IO configureren voor Adobe Experience Cloud-triggers](../../integrations/using/configuring-adobe-io.md) . Let op: u moet selecteren **[!UICONTROL Adobe Analytics]** terwijl u API toevoegt aan de Adobe IO-referentie.
+
+## Stap 2: De pijplijnoptie NmsPipeline_Config configureren {#configuring-nmspipeline}
+
+Zodra de authentificatie wordt geplaatst, zal de pijpleiding de gebeurtenissen terugwinnen. Het zal slechts trekkers verwerken die in Adobe Campaign worden gevormd. De trekker moet van Adobe Analytics zijn geproduceerd en aan de pijpleiding geduwd die slechts trekkers zal verwerken die in Adobe Campaign worden gevormd.
+De optie kan ook met een vervanging worden gevormd om alle trekkers ongeacht de naam te vangen.
+
+1. In Adobe Campaign opent u het optiemenu onder **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** in de **[!UICONTROL Explorer]**.
+
+1. Selecteer de **[!UICONTROL NmsPipeline_Config]** optie.
+
+1. In het **[!UICONTROL Value (long text)]** veld kunt u de volgende JSON-code plakken, die twee triggers opgeeft. U moet ervoor zorgen dat opmerkingen worden verwijderd.
+
+   ```
+   {
+   "topics": [ // list of "topics" that the pipelined is listening to.
+      {
+           "name": "triggers", // Name of the first topic: triggers.
+           "consumer": "customer_dev", // Name of the instance that listens.  This value can be found on the monitoring page of Adobe Campaign.
+           "triggers": [ // Array of triggers.
+               {
+                   "name": "3e8a2ba7-fccc-49bb-bdac-33ee33cf02bf", // TriggerType ID from Analytics 
+                   "jsConnector": "cus:triggers.js" // Javascript library holding the processing function.
+               }, {
+                   "name": "2da3fdff-13af-4c51-8ed0-05802a572e94", // Second TriggerType ID 
+                   "jsConnector": "cus:triggers.js" // Can use the same JS for all.
+               },
+           ]
+       }
+   ]
+   }
+   ```
+
+1. U kunt ook de volgende JSON-code plakken waarmee alle triggers worden afgevangen.
+
+   ```
+   {
+   "topics": [
+     {
+       "name": "triggers",
+       "consumer":  "customer_dev",
+       "triggers": [
+         {
+           "name": "*",
+           "jsConnector": "cus:pipeline.js"
+         }
+       ]
+     }
+   ]
+   }
+   ```
+
+### De parameter Consumenten {#consumer-parameter}
+
+De pijpleiding werkt als een leverancier- en consumentenmodel. Berichten worden alleen voor een individuele consument verbruikt: elke consument krijgt zijn eigen exemplaar van de berichten .
+
+De **consumentenparameter** identificeert het geval als één van deze consumenten. De identiteit van de instantie zal de pijpleiding roepen. U kunt deze vullen met de instantienaam die u kunt vinden op de pagina Bewaking van de clientconsole.
+
+De pijpleidingsdienst houdt spoor van de berichten die door elke consument worden teruggewonnen. Door verschillende consumenten voor verschillende instanties te gebruiken, kunt u ervoor zorgen dat elk bericht naar elke instantie wordt verzonden.
+
+### Aanbevelingen voor de optie Pipet {#pipeline-option-recommendation}
+
+Om de optie van de Pijl te vormen, zou u deze aanbevelingen moeten volgen:
+
+* Voeg triggers toe of bewerk triggers onder **[!UICONTROL Triggers]**, u moet de rest niet bewerken.
+* Controleer of de JSON geldig is. U kunt een JSON-validatie gebruiken. Raadpleeg bijvoorbeeld deze [website](http://jsonlint.com/) .
+* &quot;name&quot; komt overeen met de trigger-id. Met jokerteken &quot;*&quot; worden alle triggers afgevangen.
+* &quot;Consumenten&quot; komt overeen met de naam van de oproepende instantie of toepassing.
+* Pijpleidingen ondersteunen ook het onderwerp &quot;aliassen&quot;.
+* Nadat u wijzigingen hebt aangebracht, moet u de pipet altijd opnieuw starten.
+
+## Stap 3: Optionele configuratie {#step-optional}
+
+U kunt enkele interne parameters wijzigen op basis van de vereisten voor de belasting, maar zorg dat u deze test voordat u ze in productie neemt.
+
+De lijst met optionele parameters is hieronder te vinden:
+
+| Option | Beschrijving |
+|:-:|:-:|
+| appName(Legacy) | AppID van de OAuth-toepassing die is geregistreerd in de Legacy Oath-toepassing waar de openbare sleutel is geüpload. Raadpleeg [deze pagina](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md.) voor meer informatie |
+| authGatewayEndpoint(Legacy) | URL om gatewaytokens te krijgen. Standaard: ```https://api.omniture.com``` |
+| authPrivateKey(Verouderd) | De persoonlijke sleutel, het openbare deel dat in de Oudere Oath-toepassing wordt geüpload, AES gecodeerd met de optie XtkKey: ```cryptString("PRIVATE_KEY")``` |
+| disableAuth(Legacy) | Schakel authentificatie uit, verbindend zonder gatewaytokens slechts door sommige eindpunten van de ontwikkelingsPijpleiding zal worden goedgekeurd. |
+| findPipelineEndpoint | URL om het eindpunt te vinden van de Diensten van de Pijpleiding dat voor deze huurder moet worden gebruikt. Standaard: ```https://producer-pipeline-pnw.adobe.net``` |
+| dumpStatePeriodSec | De periode tussen twee dumps van het proces van de interne staat in ```var/INSTANCE/pipelined.json.```<br> intern land is hier ook op verzoek toegankelijk: ```http://INSTANCE:7781/pipelined/status``` |
+| forcePipelineEndpoint | Maak de opsporing van PipelineServicesEndpoint onbruikbaar om het te dwingen |
+| monitorServerPort | Met behulp van een leidinggevend proces wordt naar deze poort geluisterd om het interne statusproces hier te verzorgen: ```http://INSTANCE:PORT/pipelined/status```. <br>Standaard is 7781 |
+| pointerFlushMessageCount | Wanneer dit aantal berichten wordt verwerkt, zullen de compensatie in het gegevensbestand worden bewaard. <br> Standaard is 1000 |
+| pointerFlushPeriodSec | Na deze periode worden de offsets opgeslagen in de database. <br>Standaard is 5 (sec) |
+| processingJSThreads | Aantal specifieke draden verwerkend berichten met de schakelaars van douaneJS. <br> Standaard is 4 |
+| processingThreads | Aantal specifieke draden verwerkend berichten met ingebouwde code. <br>Standaard is 4 |
+| retryPeriodSec | Vertraging tussen pogingen bij verwerkingsfouten. <br>Standaard is 30 (sec) |
+| retryValiditySec | Verwijder het bericht als het na deze periode niet succesvol is verwerkt (te veel pogingen). <br>De standaardwaarde is 300 (sec) |
+
+### Automatische start van het pijplijnproces {#pipelined-process-autostart}
+
+Het pijplijnproces moet automatisch worden gestart.
+
+Voor dit, plaats het &lt; pijpleiding > element in het config dossier aan autostart= &quot;waar&quot;:
 
 ```
-<redirection IMSOrgId="C5E715(…)98A4@AdobeOrg" (…)
+ <pipelined autoStart="true" ... "/>
 ```
 
-### Sleutelgeneratie {#key-generation}
-
-De sleutel is een paar bestanden. Het heeft in het formaat RSA en 4096 lange bytes. Deze kan worden gegenereerd met een opensource-hulpprogramma zoals OpenSSL. Elke keer dat het gereedschap wordt uitgevoerd, wordt een nieuwe toets willekeurig gegenereerd.
-Voor het gemak worden de volgende stappen beschreven:
-
-* ```openssl genrsa -out <private_key.pem> 4096```
-
-* ```openssl rsa -pubout -in <private_key.pem> -out <public_key.pem>```
-
-Voorbeeld van het bestand private_key.pem:
-
-```
-----BEGIN RSA PRIVATE KEY----
-MIIEowIBAAKCAQEAtqcYzt5WGGABxUJSfe1Xy8sAALrfVuDYURpdgbBEmS3bQMDb
-(…)
-64+YQDOSNFTKLNbDd+bdAA+JoYwUCkhFyvrILlgvlSBvwAByQ2Lx
-----END RSA PRIVATE KEY----
-```
-
-Voorbeeld van het bestand public_key.pem:
-
-```
-----BEGIN PUBLIC KEY----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtqcYzt5WGGABxUJSfe1X
-(…)
-EwIDAQAB
-----END PUBLIC KEY----
-```
-
->[!NOTE]
->
->Toetsen moeten niet door PuttyGen worden gegenereerd, OpenSSL is de beste keuze.
-
-### Auth client creation in Adobe Experience Cloud {#oauth-client-creation}
-
-Een toepassing van het type JWT moet worden gemaakt door u aan te melden bij de Adobe Analytics in de juiste organisatie-account onder **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > **[!UICONTROL Legacy Oath application]**.
-
-Voer de volgende stappen uit:
-
-1. Selecteer **[!UICONTROL Service Account (JWT Assertion)]**.
-1. Enter the **[!UICONTROL Application Name]**.
-1. Registreer de **[!UICONTROL Public key]**.
-1. Selecteer de trigger-s **[!UICONTROL Scopes]**.
-
-   ![](assets/triggers_5.png)
-
-1. Klik op **[!UICONTROL Create]** en controleer het **[!UICONTROL Application ID]** en **[!UICONTROL Application Secret]** gemaakte bestand.
-
-   ![](assets/triggers_6.png)
-
-### Registratie van toepassingsnamen in Adobe Campaign Classic {#application-name-registration}
-
-De toepassings-id van de gemaakte Auth-client moet in Adobe Campaign zijn geconfigureerd. U kunt dit doen door het instantie config-bestand in het [!DNL pipelined] element te bewerken, met name het kenmerk appName.
-
-Voorbeeld:
-
-```
-<pipelined autoStart="true" appName="applicationID" authPrivateKey="@qQf146pexBksGvo0esVIDO(…)"/>
-```
-
-### Sleutelversleuteling {#key-encription}
-
-De persoonlijke sleutel moet worden versleuteld om door [!DNL pipelined]te kunnen worden gebruikt. De encryptie wordt gedaan gebruikend de cryptString functie Javascript en moet op de zelfde instantie worden uitgevoerd zoals [!DNL pipelined].
-
-In deze [pagina](../../integrations/using/pipeline-troubleshooting.md)vindt u een voorbeeld van versleuteling met persoonlijke sleutels in JavaScript.
-
-De gecodeerde persoonlijke sleutel moet zijn geregistreerd in Adobe Campaign. U kunt het doen door het instantie config dossier in het [!DNL pipelined] element, specifiek het authPrivateKey attribuut uit te geven.
-
-Voorbeeld:
-
-```
-<pipelined autoStart="true" appName="applicationID" authPrivateKey="@qQf146pexBksGvo0esVIDO(…)"/>
-```
-
-### Automatische start van het pijplijnproces {#pipelined-auto-start}
-
-Het [!DNL pipelined] proces moet automatisch worden gestart.
-Om het te doen, plaats het element in het configuratiedossier aan autostart= &quot;waar&quot;:
-
-```
-<pipelined autoStart="true" appName="applicationID" authPrivateKey="@qQf146pexBksGvo0esVIDO(…)"/>
-```
-
-### Opnieuw opstarten van het pijlproces {#pipelined-restart}
-
-U kunt de toepassing ook handmatig starten met de opdrachtregel:
-
-```
-nlserver start pipelined@instance
-```
+### Opnieuw opstarten van het pijlproces {#pipelined-process-restart}
 
 De wijzigingen worden pas van kracht als u de toepassing opnieuw start:
 
@@ -171,23 +166,10 @@ De wijzigingen worden pas van kracht als u de toepassing opnieuw start:
 nlserver restart pipelined@instance
 ```
 
-Als er fouten optreden, zoekt u naar fouten in de standaarduitvoer (als u deze handmatig hebt gestart) of in het [!DNL pipelined] logbestand. Raadpleeg de sectie Problemen oplossen in dit document voor meer informatie over het oplossen van problemen.
+## Stap 4: Validatie {#step-validation}
 
-### Opties voor configuratie met pijplijn {#pipelined-configuration-options}
+Volg onderstaande stappen om de installatie van de pijplijn voor provisioning te valideren:
 
-| Option | Beschrijving |
-|:-:|:-:|
-| appName | Id van de OAuth-toepassing (toepassings-id) die is geregistreerd in Adobe Analytics (waar de openbare sleutel is geüpload): Beheer > Gebruikersbeheer > Oudere Oath-toepassing. Refer to this [section](../../integrations/using/configuring-pipeline.md#oauth-client-creation). |
-| authGatewayEndpoint | URL om &quot;gatewaytokens&quot;te krijgen. <br> Standaard: https://api.omniture.com |
-| authPrivateKey | Persoonlijke sleutel (openbaar onderdeel geüpload in Adobe Analytics (zie deze sectie). AES gecodeerd met de optie XtkSecretKey: xtk.session.EncryptPassword(&quot;PRIVATE_KEY&quot;); |
-| disableAuth | De authentificatie van de onbruikbaar maken (het verbinden zonder gatewaytokens wordt slechts goedgekeurd door sommige eindpunten van de ontwikkelingsPijpleiding) |
-| findPipelineEndpoint | URL om het eindpunt te ontdekken van de Diensten van de Pijpleiding dat voor deze huurder moet worden gebruikt. Standaard: https://producer-pipeline-pnw.adobe.net |
-| dumpStatePeriodSec | Periode tussen twee dumps van het proces interne staat in var/INSTANCE/pipelined.json Interne staat is ook toegankelijk op bestelling op http://INSTANCE/pipelined/status (haven 7781). |
-| forcePipelineEndpoint | Maak de ontdekking van PipelineServicesEndpoint onbruikbaar en forceer het |
-| monitorServerPort | Het [!DNL pipelined] proces luistert op deze haven om de proces interne staat in http://INSTANCE/pipelined/status (haven 7781) te verstrekken. |
-| pointerFlushMessageCount | Wanneer dit aantal berichten wordt verwerkt, worden de compensaties opgeslagen in het gegevensbestand. Standaard is 1000 |
-| pointerFlushPeriodSec | Na deze periode worden de offsets opgeslagen in de database. Standaard is 5 (sec) |
-| processingJSThreads | Aantal specifieke draden verwerkend berichten met de schakelaars van douaneJS. Standaard is 4 |
-| processingThreads | Aantal specifieke draden verwerkend berichten met ingebouwde code. Standaard is 4 |
-| retryPeriodSec | Vertraging tussen pogingen (als er verwerkingsfouten zijn). Standaard is 30 (sec) |
-| retryValiditySec | Verwijder het bericht als het na deze periode niet succesvol is verwerkt (te veel pogingen). De standaardwaarde is 300 (sec) |
+* Zorg ervoor dat het [!DNL pipelined] proces wordt uitgevoerd.
+* Controleer pipelined.log voor de logboeken van de pijpleidingsverbinding.
+* Controleer de verbinding en of pingelt wordt ontvangen. Gehoste klanten kunnen de Controle van de Console van de Cliënt gebruiken.
