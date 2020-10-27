@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 16985c1ddcd380cfc1ca4960b35bb5e78628f464
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 2%
@@ -239,6 +239,6 @@ In deze video leert u hoe u zaden en proefdrukken aan een bestaande e-mail kunt 
 Zie ook:
 * [Het proefdrukdoel selecteren](#selecting-the-proof-target)
 
-* [Informatie over zaadadressen](../../delivery/using/about-seed-addresses.md)
+* [Seed-adressen](../../delivery/using/about-seed-addresses.md)
 
 * [Gebruiksscenario: seed-adressen selecteren op criteria](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
