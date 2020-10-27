@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: troubleshooting
 discoiquuid: c6c39b7d-7bbd-4789-b1ea-b938153e9679
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 2%
@@ -26,7 +26,7 @@ U kunt dit proces op alle modules van Adobe Campaign toepassen om logboekprecisi
 
 Het betekent dat de processen opnieuw moeten worden gestart met een hoger logbestand.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Deze procedure annuleert de diensten lopend op deze module.
 
@@ -62,7 +62,7 @@ Adobe Campaign kan werken met twee logniveaus:
    nlserver restart <MODULE_NAME> -noconsole
    ```
 
->[!CAUTION]
+>[!IMPORTANT]
 De logboeken van deze bevelen worden opgeslagen in het logboekdossier van de module.
 
 Hier is een voorbeeld specifiek voor de module van het Web. De overige modules werken zoals hierboven aangegeven.
@@ -88,7 +88,7 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 >[!NOTE]
 In de modus **Tracefile** kunt u de logbestanden opslaan. In de bovenstaande voorbeelden worden de logbestanden opgeslagen in de bestanden **var/`<instance-name>`/mta_debug.log** en **var/default/web_debug.log** .
 
->[!CAUTION]
+>[!IMPORTANT]
 Voeg in Windows de optie LD_PRELOAD niet toe. De volgende opdracht volstaat:\
 nlserver web -tomcat -verbose -tracefilter:*
 
