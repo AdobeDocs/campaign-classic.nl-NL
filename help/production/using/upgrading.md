@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1132'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Voordat u het upgradeproces start, bepaalt en bevestigt u welke versie van Adobe Campaign moet worden bijgewerkt naar en raadpleegt u de [releaseopmerkingen](../../rn/using/latest-release.md) .
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Wij adviseren sterk makend een gegevensbestandsteun op elke instantie alvorens bij te werken. Raadpleeg [Back-up](../../production/using/backup.md)voor meer informatie.\
 >Om een verbetering uit te voeren, zorg ervoor u de capaciteit en de toestemmingen hebt om tot instanties en logboeken toegang te hebben.
@@ -31,7 +31,7 @@ Voordat u het upgradeproces start, bepaalt en bevestigt u welke versie van Adobe
 >
 >Raadpleeg ook de [installatiegids](../../installation/using/general-architecture.md) en de [build-upgrade](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html) die aan de slag gaat.
 
-## In Windows {#in-windows}
+## Windows {#in-windows}
 
 Om Adobe Campaign in een nieuwe versie bij te werken wanneer het leveren van een nieuwe bouwstijl, zou de volgende procedure in Vensters moeten worden toegepast:
 
@@ -53,7 +53,7 @@ Als u alle bestanden wilt vervangen door de nieuwe versie, moet u alle instantie
       **iisreset /stop**
 
    * Adobe Campaign-service: **netstop nlserver6**
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >U moet er ook voor zorgen dat de omleidingsserver (webmdl) wordt gestopt, zodat het bestand **nlsrvmod.dll** dat door IIS wordt gebruikt, kan worden vervangen door de nieuwe versie.
 
@@ -111,7 +111,7 @@ De volgende diensten moeten opnieuw worden opgestart:
 
 * Adobe Campaign-service: **netwerkbeginserver6**
 
-## In Linux {#in-linux}
+## Linux {#in-linux}
 
 Als u Adobe Campaign wilt bijwerken in een nieuwe versie wanneer een nieuwe build wordt geleverd, volgt de procedure voor Linux:
 
@@ -171,7 +171,7 @@ Hiervoor voert u de volgende opdracht uit:
 /etc/init.d/apache stop
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* Uw script wordt mogelijk **httpd** genoemd in plaats van **apache**.
 >* U MOET dit bevel uitvoeren tot u het volgende antwoord verkrijgt:
@@ -223,7 +223,7 @@ Er zijn drie manieren om een conflict op te lossen:
 * **[!UICONTROL Accept the new version]** : aanbevolen als de gebruiker de bronnen die bij Adobe Campaign worden geleverd, niet heeft gewijzigd.
 * **[!UICONTROL Keep the current version]** : betekent dat de bijwerking wordt afgewezen.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Als u deze resolutiemodus selecteert, kunt u geen baat hebben bij correcties in de nieuwe versie.
 
@@ -248,7 +248,7 @@ Een unicode-database mag bijvoorbeeld niet alleen de opslag van LATIN1-gegevens,
 
 ## Waarschuwen als de clientconsoles van de beschikbare update {#warn-the-client-consoles-of-the-available-update}
 
-### In Windows {#in-windows-1}
+### Windows {#in-windows-1}
 
 Download en kopieer het bestand op de computer waarop de Adobe Campaign-toepassingsserver (**nlserver web**) is geïnstalleerd
 
@@ -262,7 +262,7 @@ De volgende keer dat clientconsoles worden aangesloten, wordt gebruikers in een 
 >
 >Zorg ervoor de gebruiker IIS_XPG de aangewezen leesrechten voor dit installatiedossier heeft en verwijs naar de [installatiegids](../../installation/using/general-architecture.md) voor meer informatie.
 
-### In Linux {#in-linux-1}
+### Linux {#in-linux-1}
 
 Op de computer waarop de Adobe Campaign-toepassingsserver (**nlserver-web**) is geïnstalleerd, haalt u het volgende pakket op:
 
