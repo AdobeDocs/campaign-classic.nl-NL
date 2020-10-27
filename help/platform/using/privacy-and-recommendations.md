@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: 247d73933991047603b8d61c7489d976c448dd52
+source-git-commit: 6ca61b4e927b7443815f0337b8e661c8ec126001
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1850'
 ht-degree: 8%
 
 ---
@@ -96,7 +96,7 @@ Wanneer het integreren van Campagne met andere oplossingen van Experience Cloud 
 
 Met Adobe Campaign kunt u gegevens verzamelen, waaronder persoonlijke en vertrouwelijke informatie. Het is daarom van essentieel belang dat u de toestemming van uw ontvangers ontvangt en controleert.
 
-* Heb altijd ontvangers overeenkomen om mededelingen te ontvangen. Om dit te doen, moet u zo snel mogelijk aan de &quot;opt-out&quot;-verzoeken blijven voldoen en moet u de toestemming controleren via een &quot;double opt-in&quot;-proces. Zie [Een abonnementsformulier met dubbele aanmelding](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)maken voor meer informatie.
+* Heb altijd ontvangers overeenkomen om mededelingen te ontvangen. Om dit te doen, moet u zo snel mogelijk aan de &quot;opt-out&quot;-verzoeken blijven voldoen en moet u de instemming controleren via een &quot;double opt-in&quot;-proces. Zie [Een abonnementsformulier met dubbele aanmelding](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)maken voor meer informatie.
 * Importeer geen frauduleuze lijsten en gebruik geen zaadadressen om te controleren of uw clientbestand niet frauduleus wordt gebruikt. Zie [Informatie over zaadadressen](../../delivery/using/about-seed-addresses.md)voor meer informatie.
 * Via toestemmings- en rechtenbeheer kunt u de voorkeuren van uw ontvangers bijhouden en beheren wie binnen uw organisatie toegang heeft tot welke gegevens. Zie [deze sectie](#consent)voor meer informatie.
 * De privacyverzoeken van uw ontvangers faciliteren en beheren. Zie [deze sectie](#privacy-requests)voor meer informatie.
@@ -151,11 +151,11 @@ De **verzoeken om toegang** en **om verwijderen** worden weergegeven op [deze pa
 
 Dankzij de trackingfuncties van Adobe Campaign kunt u het bladeren door de ontvangers van de cookies bijhouden aan de hand van drie typen cookies: een sessiecookie en twee permanente cookies.
 
-* A **session cookie**: the **nlid** cookie contains the identifier of the email sent to the contact (**broadlogId**) and the identifier of the message template (**deliveryId**). Deze wordt toegevoegd wanneer de contactpersoon op een URL klikt die is opgenomen in een e-mail die door Adobe Campaign wordt verzonden. Hiermee kunt u het gedrag van de contactpersoon op het web volgen. Deze sessiecookie wordt automatisch gewist wanneer de browser wordt gesloten. De contactpersoon kan zijn browser configureren om cookies te weigeren.
+* A **session** cookie: the **nlid** cookie contains the identifier of the email sent to the contact (**broadlogId**) and the identifier of the message template (**deliveryId**). Deze wordt toegevoegd wanneer de contactpersoon op een URL klikt die is opgenomen in een e-mail die door Adobe Campaign wordt verzonden. Hiermee kunt u het gedrag van de contactpersoon op het web volgen. Deze sessiecookie wordt automatisch gewist wanneer de browser wordt gesloten. De contactpersoon kan zijn browser configureren om cookies te weigeren.
 
-* Een **permanente cookie**: Het **UUID** -cookie (Universal Unique IDentifier) wordt gedeeld door Adobe Experience Cloud-oplossingen. Deze wordt eenmaal ingesteld totdat deze verdwijnt van de clientbrowser wanneer een nieuwe waarde wordt gegenereerd. Met dit cookie kunt u de gebruikers identificeren die met de Experience Cloud-oplossingen werken wanneer ze een website bezoeken. Het kan door een landingspagina (om onbekende klantenactiviteiten aan een ontvanger te associëren) of door een levering worden gedeponeerd. De beschrijving van deze cookie is [hier](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-mc.html)beschikbaar.
-
-<!--The **nllastdelid** cookie (introduced in Campaign Classic 20.3) is a permanent cookie which contains the **deliveryId** of the last delivery that user clicked the link from. This cookie is used - when the session cookie is missing - to identify the tracking table that will be used.-->
+* Twee **permanente** cookies:
+   * Het **UUID** -cookie (Universal Unique IDentifier) wordt gedeeld door Adobe Experience Cloud-oplossingen. Deze wordt eenmaal ingesteld totdat deze verdwijnt van de clientbrowser wanneer een nieuwe waarde wordt gegenereerd. Met dit cookie kunt u de gebruikers identificeren die met de Experience Cloud-oplossingen werken wanneer ze een website bezoeken. Het kan door een landingspagina (om onbekende klantenactiviteiten aan een ontvanger te associëren) of door een levering worden gedeponeerd. De beschrijving van deze cookie is beschikbaar [op deze pagina](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-mc.html).
+   * Het **nllastdelid** cookie (geïntroduceerd in Campaign Classic 20.3) is een permanent cookie dat de **deliveryId** bevat van de laatste levering waarvan de gebruiker op de koppeling klikte. Dit cookie wordt gebruikt - wanneer het sessiecookie ontbreekt - om de volgende tabel te identificeren die wordt gebruikt.
 
 In verordeningen zoals de algemene gegevensbeschermingsverordening (GDPR) wordt bepaald dat bedrijven de toestemming van webgebruikers eisen voordat ze cookies installeren.
 
