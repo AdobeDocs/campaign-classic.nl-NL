@@ -1,8 +1,6 @@
 ---
-title: De mobiele applicatie configureren in Adobe Campaign
-seo-title: De mobiele applicatie configureren in Adobe Campaign
-description: De mobiele applicatie configureren in Adobe Campaign
-seo-description: null
+title: De mobiele iOS-toepassing configureren in Adobe Campaign
+description: Leer hoe u uw mobiele toepassing instelt voor iOS
 page-status-flag: never-activated
 uuid: aff1a4a0-34e7-4ce0-9eb3-30a8de1380f2
 contentOwner: sauviat
@@ -12,82 +10,49 @@ content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 16985c1ddcd380cfc1ca4960b35bb5e78628f464
 workflow-type: tm+mt
-source-wordcount: '1519'
-ht-degree: 2%
+source-wordcount: '824'
+ht-degree: 1%
 
 ---
 
 
-# De mobiele applicatie configureren in Adobe Campaign {#configuring-the-mobile-application-in-adobe-campaign}
+# Configuratiestappen voor iOS {#configuring-the-mobile-application-in-adobe-campaign-ios}
 
-U vindt onder een configuratiemonster een product dat is gebaseerd op een bedrijf dat pakketten voor online feestdagen verkoopt. Zijn mobiele toepassing (Neotrips) is beschikbaar aan zijn klanten in twee versies: Neotrips voor Android en Neotrips voor iOS. Als u de mobiele toepassing in Adobe Campaign wilt configureren, moet u:
-
-* Maak een **[!UICONTROL Mobile application]** tekstinformatieservice voor de mobiele toepassing Neotrips.
-* Voeg de iOS- en Android-versies van de toepassing toe aan deze service.
-* Maak een levering voor zowel iOS als Android.
-
-![](assets/nmac_service_diagram.png)
+Nadat het pakket is geïnstalleerd, kunt u de iOS-toepassingsinstellingen definiëren in Adobe Campaign Classic.
 
 >[!NOTE]
 >
->Ga naar het **[!UICONTROL Subscriptions]** tabblad van de service om de lijst met abonnees van de service weer te geven, dat wil zeggen alle personen die de toepassing op hun mobiele telefoon hebben geïnstalleerd en ermee hebben ingestemd meldingen te ontvangen.
+>Raadpleeg deze [sectie](../../delivery/using/configuring-the-mobile-application-android.md)voor informatie over het configureren van uw app voor Android en over het maken van een levering voor Android.
 
-## De mobiele toepassing configureren met iOS {#configuring-the-mobile-application-ios}
+## Externe iOS-account configureren {#configuring-external-account-ios}
+
+Voor iOS verzendt de iOS HTTP/2-connector meldingen naar de HTTP/2 APNs.
+
+Om deze schakelaar te vormen, volg deze stappen:
+
+1. Ga naar **[!UICONTROL Administration > Platform > External accounts]**.
+1. Select the **[!UICONTROL iOS routing]** external account.
+1. Vul op het **[!UICONTROL Connector]** tabblad het **[!UICONTROL Access URL of the connector]** veld in met de volgende URL: ```http://localhost:8080/nms/jsp/iosHTTP2.jsp```
+
+   >[!NOTE]
+   >
+   > Vanaf de release van Campagne 20.3 is de verouderde binaire connector van iOS verouderd. Als u deze schakelaar gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. [Meer informatie](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
+
+   ![](assets/nmac_connectors.png)
+
+1. Klik op **[!UICONTROL Save]**.
+
+Uw iOS-connector is nu geconfigureerd. U kunt uw service gaan maken.
+
+## iOS-service configureren {#configuring-ios-service}
 
 >[!CAUTION]
 >
 >De toepassing moet zijn geconfigureerd voor pushacties VOORDAT deze wordt geïntegreerd in de SDK van Adobe Campaign.
 >
 >Indien dit niet het geval is, gelieve [deze pagina](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/)te raadplegen.
-
-### Stap 1: Het pakket installeren {#installing-package-ios}
-
-1. Open de wizard voor het importeren van pakketten vanuit **[!UICONTROL Tools > Advanced > Package import...]** de Adobe Campaign-clientconsole.
-
-   ![](assets/package_ios.png)
-
-1. Selecteer **[!UICONTROL Install a standard package]**.
-
-1. Controleer in de lijst die wordt weergegeven **[!UICONTROL Mobile App Channel]**.
-
-   ![](assets/package_ios_2.png)
-
-1. Klik **[!UICONTROL Next]** en vervolgens **[!UICONTROL Start]** om de pakketinstallatie te starten.
-
-   Nadat de pakketten zijn geïnstalleerd, wordt op de voortgangsbalk **100%** weergegeven. In de installatielogboeken ziet u het volgende bericht: **[!UICONTROL Installation of packages successful]**.
-
-   ![](assets/package_ios_3.png)
-
-1. **[!UICONTROL Close]** het installatievenster.
-
-### Stap 2: Externe iOS-account configureren {#configuring-external-account-ios}
-
-Voor iOS zijn twee connectors beschikbaar:
-
-* De binaire iOS-connector verzendt berichten op de verouderde binaire APNS-server.
-* De iOS HTTP/2-connector verzendt berichten naar de HTTP/2 APNS.
-
-Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
-
-1. Ga naar **[!UICONTROL Administration > Platform > External accounts]**.
-1. Select the **[!UICONTROL iOS routing]** external account.
-1. Vul op het **[!UICONTROL Connector]** tabblad het **[!UICONTROL Access URL of the connector]** veld in:
-
-   Voor iOS HTTP2: http://localhost:8080/nms/jsp/iosHTTP2.jsp
-
-   ![](assets/nmac_connectors.png)
-
-   >[!NOTE]
-   >
-   > U kunt het ook configureren als volgt: https://localhost:8080/nms/jsp/ios.jsp, maar u wordt aangeraden versie 2 van de connector te gebruiken.
-
-1. Klik op **[!UICONTROL Save]**.
-
-Uw iOS-connector is nu geconfigureerd. U kunt uw service gaan maken.
-
-### Stap 3: iOS-service configureren {#configuring-ios-service}
 
 1. Ga naar het **[!UICONTROL Profiles and Targets > Services and subscriptions]** knooppunt en klik **[!UICONTROL New]**.
 
@@ -103,6 +68,16 @@ Uw iOS-connector is nu geconfigureerd. U kunt uw service gaan maken.
    ![](assets/nmac_ios.png)
 
 1. Klik vervolgens op de **[!UICONTROL Add]** knop om het toepassingstype te selecteren.
+
+   ![](assets/nmac_service_2.png)
+
+1. Maak uw iOS-ontwikkelings- en -productieprogramma&#39;s. Raadpleeg deze [sectie](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app) voor meer informatie.
+
+## iOS mobiele toepassing maken {#creating-ios-app}
+
+Nadat u de service hebt gemaakt, moet u nu uw iOS-toepassing maken:
+
+1. Klik vanuit de nieuwe service op de **[!UICONTROL Add]** knop om het toepassingstype te selecteren.
 
    ![](assets/nmac_service_2.png)
 
@@ -131,23 +106,29 @@ In het volgende voorbeeld voegen we **mediaURl** en **mediaExt** toe om uitgebre
    >
    > De eigenschap **[!UICONTROL Integration key]** is volledig aanpasbaar met tekenreekswaarde, maar moet exact hetzelfde zijn als de waarde die in de SDK is opgegeven.
 
-1. Selecteer een van de pictogrammen uit de doos in het **[!UICONTROL Application icon]** veld om de mobiele toepassing in uw service aan te passen.
+1. Selecteer een van de pictogrammen uit de doos van het **[!UICONTROL Application icon]** gebied om mobiele toepassing in uw dienst te personaliseren.
 
-1. Klik op de **[!UICONTROL Enter the certificate...]** koppeling en selecteer vervolgens het verificatiecertificaat en voer het wachtwoord in dat door de ontwikkelaar van de mobiele toepassing is opgegeven. U kunt klikken **[!UICONTROL Test the connection]** om er zeker van te zijn dat dit gelukt is.
+1. Selecteer het **[!UICONTROL Authentication mode]**. U kunt de verificatiemodus altijd later wijzigen op het **[!UICONTROL Certificate]** tabblad van uw mobiele toepassing.
+   * **[!UICONTROL Certificate-based authentication]**: Klik **[!UICONTROL Enter the certificate...]** dan uw p12 sleutel selecteren en ga het wachtwoord in dat door de mobiele toepassingsontwikkelaar werd verstrekt.
+   * **[!UICONTROL Token-based authentication]**: Vul de verbindingsinstellingen in **[!UICONTROL Key ID]**, **[!UICONTROL Team ID]** en **[!UICONTROL Bundle ID]** selecteer uw p8-certificaat door op **[!UICONTROL Enter the private key]**. For more on **[!UICONTROL Token-based authentication]**, refer to [Apple documentation](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apnsToken-based).
 
    >[!NOTE]
    >
-   >Apple vereist verschillende certificaten voor ontwikkelings- en productieversies van dezelfde mobiele toepassing. U moet de twee afzonderlijke toepassingen configureren in Adobe Campaign.
+   > Adobe raadt u aan **[!UICONTROL Token-based authentication]** voor uw iOS-configuratie te gebruiken, omdat deze verificatiemodus beter is beveiligd en niet aan certificaatvervaldatum is gebonden.
 
    ![](assets/nmac_ios_4.png)
+
+1. U kunt klikken **[!UICONTROL Test the connection]** om er zeker van te zijn dat dit gelukt is.
 
 1. Klik **[!UICONTROL Next]** om de productietoepassing te configureren en dezelfde stappen te volgen als hierboven beschreven.
 
    ![](assets/nmac_ios_5.png)
 
-1. Klik op **[!UICONTROL Finish]**. Uw iOS-toepassing kan nu worden gebruikt in Campaign Classic.
+1. Klik op **[!UICONTROL Finish]**.
 
-### Stap 4: Een rijke melding voor iOS maken {#creating-ios-delivery}
+Uw iOS-toepassing kan nu worden gebruikt in Campaign Classic.
+
+## Een rijke melding voor iOS maken {#creating-ios-delivery}
 
 Met iOS 10 of hoger is het mogelijk om rijke meldingen te genereren. Adobe Campaign kan meldingen verzenden met behulp van variabelen waarmee het apparaat een uitgebreide melding kan weergeven.
 
@@ -183,134 +164,3 @@ Het **[!UICONTROL Application variables]** wordt automatisch toegevoegd afhankel
 De afbeelding en webpagina moeten in de pushmelding worden weergegeven wanneer deze worden ontvangen op de mobiele iOS-apparaten van de abonnees.
 
 ![](assets/nmac_ios_8.png)
-
-## De mobiele toepassing configureren met Android {#configuring-the-mobile-application-android}
-
-### Stap 1: Het pakket installeren {#installing-package-android}
-
-1. Open de wizard voor het importeren van pakketten vanuit **[!UICONTROL Tools > Advanced > Package import...]** de Adobe Campaign-clientconsole.
-
-   ![](assets/package_ios.png)
-
-1. Selecteer **[!UICONTROL Install a standard package]**.
-
-1. Controleer in de lijst die wordt weergegeven **[!UICONTROL Mobile App Channel]**.
-
-   ![](assets/package_ios_2.png)
-
-1. Klik **[!UICONTROL Next]** en vervolgens **[!UICONTROL Start]** om de pakketinstallatie te starten.
-
-   Nadat de pakketten zijn geïnstalleerd, wordt op de voortgangsbalk **100%** weergegeven. In de installatielogboeken ziet u het volgende bericht: **[!UICONTROL Installation of packages successful]**.
-
-   ![](assets/package_ios_3.png)
-
-1. **[!UICONTROL Close]** het installatievenster.
-
-### Stap 2: Externe Android-account configureren {#configuring-external-account-android}
-
-Voor Android zijn twee connectors beschikbaar:
-
-* De V1 schakelaar die één verbinding per kind MTA toestaat.
-* De V2-connector die gelijktijdige verbindingen met de FCM-server mogelijk maakt om de doorvoer te verbeteren.
-
-Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
-
-1. Ga naar **[!UICONTROL Administration > Platform > External accounts]**.
-1. Select the **[!UICONTROL Android routing]** external account.
-1. Vul op het **[!UICONTROL Connector]** tabblad het **[!UICONTROL JavaScript used in the connector]** veld in:
-
-   Voor Android V2: https://localhost:8080/nms/jsp/androidPushConnectorV2.js
-
-   >[!NOTE]
-   >
-   > U kunt het ook configureren als volgt: https://localhost:8080/nms/jsp/androidPushConnector.js, maar u wordt aangeraden versie 2 van de connector te gebruiken.
-
-   ![](assets/nmac_connectors3.png)
-
-1. Voor Android V2 is er één aanvullende parameter beschikbaar in het configuratiebestand van de Adobe Server (serverConf.xml):
-
-   * **maxGCMConnectPerChild**: Maximale limiet van parallelle HTTP-aanvragen voor de FCM die door elke onderliggende server worden geïnitieerd (standaard 8).
-
-### Stap 3: Android-service configureren {#configuring-android-service}
-
-1. Ga naar het **[!UICONTROL Profiles and Targets > Services and subscriptions]** knooppunt en klik **[!UICONTROL New]**.
-
-   ![](assets/nmac_service_1.png)
-
-1. Define a **[!UICONTROL Label]** and an **[!UICONTROL Internal name]**.
-1. Ga naar het **[!UICONTROL Type]** veld en selecteer **[!UICONTROL Mobile application]**.
-
-   >[!NOTE]
-   >
-   >De standaarddoelafbeelding is gekoppeld aan de tabel met ontvangers. **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** Als u een verschillende doelafbeelding wilt gebruiken, moet u een nieuwe doelafbeelding tot stand brengen en het ingaan op het **[!UICONTROL Target mapping]** gebied van de dienst. Voor meer bij het creëren van doelafbeelding, verwijs naar de gids [van de](../../configuration/using/about-custom-recipient-table.md)Configuratie.
-
-   ![](assets/nmac_ios.png)
-
-1. Klik vervolgens op de **[!UICONTROL Add]** knop om het toepassingstype te selecteren.
-
-   ![](assets/nmac_service_2.png)
-
-1. Selecteer **[!UICONTROL Create an Android application]**.
-
-   ![](assets/nmac_android.png)
-
-1. Voer een **[!UICONTROL Label]** waarde in.
-
-1. Zorg ervoor dat dit in Adobe Campaign en in de toepassingscode via de SDK **[!UICONTROL Integration key]** is gedefinieerd. Raadpleeg voor meer informatie: [Campagne SDK integreren in de mobiele toepassing](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
-
-   >[!NOTE]
-   >
-   > De eigenschap **[!UICONTROL Integration key]** is volledig aanpasbaar met tekenreekswaarde, maar moet exact hetzelfde zijn als de waarde die in de SDK is opgegeven.
-
-1. Selecteer een van de pictogrammen uit de doos in het **[!UICONTROL Application icon]** veld om de mobiele toepassing in uw service aan te passen.
-
-1. Voer de verbindingsinstellingen van de toepassing in: Voer de projectsleutel in die door de ontwikkelaar van de mobiele toepassing is opgegeven.
-
-1. U kunt desgewenst ook de inhoud van een pushbericht verrijken met andere inhoud **[!UICONTROL Application variables]** . Deze zijn volledig aanpasbaar en een deel van de berichtlading wordt verzonden naar het mobiele apparaat.
-
-   In het volgende voorbeeld voegen we een **titel**, **imageURL** en **iconURL** toe om uitgebreide pushmeldingen te maken. Vervolgens krijgen de toepassing de afbeelding, titel en het pictogram te zien die binnen het bericht worden weergegeven.
-
-   ![](assets/nmac_android_2.png)
-
-1. Klik op **[!UICONTROL Finish]** en vervolgens op **[!UICONTROL Save]**. Uw Android-toepassing kan nu worden gebruikt in Campaign Classic.
-
-Standaard slaat Adobe Campaign een toets op in het veld **[!UICONTROL User identifier]** (@userKey) van de **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** tabel. Met deze sleutel kunt u een abonnement koppelen aan een ontvanger. Als u aanvullende gegevens wilt verzamelen (zoals een complexe afstemmingssleutel), moet u de volgende configuratie toepassen:
-
-1. Maak een extensie van het **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schema en definieer de nieuwe velden.
-1. Definieer de toewijzing op het **[!UICONTROL Subscription parameters]** tabblad.
-   >[!CAUTION]
-   >
-   >Zorg ervoor dat de configuratienamen op het **[!UICONTROL Subscription parameters]** tabblad gelijk zijn aan die in de code van de mobiele toepassing. Raadpleeg de [Integrating Campaign SDK in de sectie over mobiele toepassingen](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) .
-
-### Stap 4: Android-berichten maken {#creating-android-delivery}
-
-U moet nu een nieuwe levering maken en deze koppelen aan de mobiele toepassing die u hebt gemaakt.
-
-1. Ga naar **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
-
-1. Klik op **[!UICONTROL New]**.
-
-   ![](assets/nmac_android_3.png)
-
-1. Selecteer **[!UICONTROL Deliver on Android (android)]** in de **[!UICONTROL Delivery template]** drop-down. Voeg een **[!UICONTROL Label]** object toe aan uw levering.
-
-1. Klik **[!UICONTROL To]** om de populatie te bepalen die moet worden gericht. Standaard wordt de **[!UICONTROL Subscriber application]** doeltoewijzing toegepast. Klik **[!UICONTROL Add]** om de eerder gemaakte service te selecteren.
-
-   ![](assets/nmac_android_7.png)
-
-1. Selecteer Abonnees van een mobiele Android-toepassing in het **[!UICONTROL Target type]** venster en klik op **[!UICONTROL Next]**.
-
-1. Selecteer in de **[!UICONTROL Service]** vervolgkeuzelijst eerst de eerder gemaakte service en vervolgens de toepassing en klik op **[!UICONTROL Finish]**.
-Het **[!UICONTROL Application variables]** wordt automatisch toegevoegd afhankelijk van wat tijdens de configuratiestappen werd toegevoegd.
-
-   ![](assets/nmac_android_6.png)
-
-1. Bewerk uw uitgebreide melding.
-
-   ![](assets/nmac_android_5.png)
-
-1. Klik en verzend uw levering. **[!UICONTROL Save]**
-
-De afbeelding en webpagina moeten worden weergegeven in het pushbericht wanneer deze worden ontvangen op de mobiele Android-apparaten van de abonnees.
-
-![](assets/nmac_android_4.png)
