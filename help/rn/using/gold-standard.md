@@ -1,6 +1,6 @@
 ---
 title: Gold Standard-release
-description: Gold Standard-release
+description: Opmerkingen bij de release Campaign Classic Gold Standard
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 877ca2275c9338377da9e435e070c9911314fe51
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '820'
 ht-degree: 14%
 
 ---
@@ -20,15 +20,13 @@ ht-degree: 14%
 
 # Gold Standard-release{#gold-standard}
 
-Als gebruiker van de Gold Standard profiteert u automatisch van de Gold Standard-upgrade met de nieuwste stabiele versie zonder enige actie.
+Gold Standard is Campaign Classic Long-Term Support Release. Als gebruiker van de Gold Standard profiteert u automatisch van de Gold Standard-upgrade met de nieuwste stabiele versie zonder enige actie. Op locatie en op Hybride klanten kunnen ook profiteren van de Gold Standard-releases.
 
-Op locatie en op Hybride klanten kunnen ook profiteren van de Gold Standard-releases.
-
-Dit is onze supportrelease voor de lange termijn. Als u van een oude bouwstijl migreert, adviseren wij dat u eerst aan deze versie bevordert.
+Als u van een oude bouwstijl migreert, adviseren wij dat u eerst aan deze versie bevordert.
 
 Deze pagina bevat de Gold Standard-releases.
 
-Raadpleeg dit [artikel](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html)voor meer informatie over de Gold Standard-upgrade.
+Raadpleeg dit artikel [](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html)voor meer informatie over het programma Campagne Gold Standard.
 
 ## ![](assets/do-not-localize/green_2.png) Gold Standard 10-release{#gs-10}
 
@@ -40,7 +38,7 @@ Probleem verholpen waarbij tracering niet werkte toen de handtekeningfunctie was
 
 >[!CAUTION]
 >
->Wij adviseren dat u de cliëntconsole met beschikbaar in deze versie bevordert. Refer to this [page](../../installation/using/installing-the-client-console.md)
+>Wij adviseren dat u de cliëntconsole met beschikbaar in deze versie bevordert. Refer [to this page](../../installation/using/installing-the-client-console.md)
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard 9-release{#gs-9}
 
@@ -50,7 +48,7 @@ De build 9032@800be2e bevat de volgende oplossingen:
 
 * De iOS HTTP2-connector is verbeterd (updates van derden en foutbeheer). (NEO-25904, NEO-25903, NEO-25799)
 
-De volgende oplossingen hebben betrekking op het beveiligingsmechanisme voor koppelingen bijhouden (zie de checklist [Beveiliging en Privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)):
+De volgende correcties hebben betrekking op het beveiligingsmechanisme voor koppelingen bijhouden (meer informatie vindt u in de checklist [voor](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)beveiliging en privacy):
 
 * Probleem verholpen waardoor het bijhouden van &#39;berichtklikken&#39; niet kon worden uitgevoerd (iOS- en Android-pushmeldingen). (NEO-25965)
 * Probleem verholpen waardoor u URL&#39;s voor bijhouden niet kunt openen of erop kunt klikken wanneer u bepaalde oudere versies van Outlook gebruikt.  (NEO-25688)
@@ -68,7 +66,7 @@ De build 9032@3a9dc9c bevat de volgende oplossingen:
 
 >[!CAUTION]
 >
->Als u problemen ondervindt met pushberichten via koppelingen voor reeksspatiëring of met ankerlabels voor leveringen, raden we u aan het nieuwe handtekeningmechanisme voor het bijhouden van koppelingen uit te schakelen. De procedure wordt in deze [pagina beschreven](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
+>Als u problemen ondervindt met pushberichten via koppelingen voor reeksspatiëring of met ankerlabels voor leveringen, raden we u aan het nieuwe handtekeningmechanisme voor het bijhouden van koppelingen uit te schakelen. De procedure wordt [op deze pagina beschreven](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
 
 * Probleem verholpen waarbij afbeeldingen niet konden worden weergegeven bij levering op regel. (NEO-23207)
 * Probleem verholpen met de activiteit **Bestand overdragen** waardoor verificatie op basis van SFTP-sleutels niet kon werken op Debian 9. (NEO-23183)
