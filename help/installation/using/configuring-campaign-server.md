@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: 2ff877607641435a2c2806f48f3c5b35d96d39c5
 workflow-type: tm+mt
 source-wordcount: '3582'
 ht-degree: 3%
@@ -242,7 +242,7 @@ Zodra de streken worden bepaald en de **[!UICONTROL Security zone]** opsomming w
 
 ### Standaardpoort voor Tomcat {#default-port-for-tomcat}
 
-Wanneer de 8080 luisterpoort van de Tomcat-server al bezig is met een andere toepassing die vereist is voor uw configuratie, moet u de 8080-poort vervangen door een gratis poort (bijvoorbeeld 8090). Als u dit wilt wijzigen, bewerkt u het bestand **server.xml** dat is opgeslagen in de map **/tomcat-7/conf** van de installatiemap van Adobe Campaign.
+Wanneer de 8080 luisterpoort van de Tomcat-server al bezig is met een andere toepassing die vereist is voor uw configuratie, moet u de 8080-poort vervangen door een gratis poort (bijvoorbeeld 8090). Als u dit wilt wijzigen, bewerkt u het bestand **server.xml** dat is opgeslagen in de map **/tomcat-8/conf** van de installatiemap van Adobe Campaign.
 
 Pas dan de haven van de JSP relaispagina&#39;s aan. Hiervoor wijzigt u het bestand **serverConf.xml** dat is opgeslagen in de map **/conf** van de installatiemap van Adobe Campaign. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
@@ -255,7 +255,7 @@ Pas dan de haven van de JSP relaispagina&#39;s aan. Hiervoor wijzigt u het besta
 
 ### Een map toewijzen in Tomcat {#mapping-a-folder-in-tomcat}
 
-Als u klantspecifieke instellingen wilt definiëren, kunt u een bestand **user_context.xml** maken in de map **/tomcat-7/conf** , dat ook het bestand **context.xml** bevat.
+Als u klantspecifieke instellingen wilt definiëren, kunt u een bestand **user_context.xml** maken in de map **/tomcat-8/conf** , dat ook het bestand **context.xml** bevat.
 
 Dit bestand bevat het volgende type informatie:
 
