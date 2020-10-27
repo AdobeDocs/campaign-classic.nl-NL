@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 discoiquuid: f459dc07-b7db-4526-b428-852b51c9c00e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d509dc584cd4ae17c6dda85c09fceee8c6162dba
 workflow-type: tm+mt
-source-wordcount: '1541'
+source-wordcount: '1540'
 ht-degree: 1%
 
 ---
@@ -305,10 +305,10 @@ In dit stadium, moet de server IIS worden tegengehouden. Raadpleeg de [servicest
 
 1. Voer het script **is_neolane_setup.vbs** uit om de bronnen die door de Adobe Campaign-server worden gebruikt automatisch te configureren in de eerder gemaakte virtuele map.
 
-   * Dit bestand staat in de map **`[Adobe Campaign v7]`\tomcat-7\conf file**, waar **`[Adobe Campaign v7]`** het toegangspad naar de installatiemap van Adobe Campaign staat. De opdracht voor het uitvoeren van het script is als volgt (voor beheerders):
+   * Dit bestand staat in de map **`[Adobe Campaign v7]`\conf** , waar **`[Adobe Campaign v7]`** het toegangspad naar de installatiemap van Adobe Campaign staat. De opdracht voor het uitvoeren van het script is als volgt (voor beheerders):
 
       ```
-      cd C:\Program Files (x86)\Adobe Campaign\Adobe Campaign v7\tomcat-7\conf
+      cd C:\Program Files (x86)\Adobe Campaign\Adobe Campaign v7\conf
       cscript iis_neolane_setup.vbs
       ```
 
