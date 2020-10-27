@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 762b0233-4b2a-420c-ba28-240cfba362e8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 9%
@@ -30,7 +30,6 @@ Het beheer van aanbiedingen wordt uitgevoerd via een boom mappen in de Adobe Cam
 
 Voordat u uw aanbiedingen kunt maken, moet u eerst een omgeving opgeven (zie [Overzicht](../../interaction/using/environments-overview.md)van omgevingen). Het zal alle kenmerken (subsidiabiliteit, beperkingen van het doel, presentatieregels) van een reeks aanbiedingen bevatten, uitgesplitst in categorieën, alsmede de lijst van de ruimten waarin zij zich bevinden.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >De verantwoordelijkheid voor de opstelling van de aanbiedingencatalogus, d.w.z. de categorieën en de aanbiedingen, ligt bij de **[!UICONTROL Offer manager]** Commissie.
-
