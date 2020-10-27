@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: event-processing
 discoiquuid: 8fa464e6-3c88-441c-8179-0c54960469a7
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 12%
@@ -34,7 +34,6 @@ Definitie van het gebeurtenistype in de eigenschappen van het berichtmalplaatje:
 
 Door gebrek, is het verpletteren gebaseerd op de volgende informatie:
 
-* het gebeurtenistype;
-* het kanaal dat moet worden gebruikt (standaard: e-mail),
-* de meest recente leveringstemplate, gebaseerd op de publicatiedatum.
-
+* Het gebeurtenistype
+* Het kanaal dat moet worden gebruikt (standaard: e-mail)
+* De meest recente leveringstemplate, gebaseerd op de publicatiedatum
