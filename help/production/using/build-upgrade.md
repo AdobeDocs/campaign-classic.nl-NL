@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 8ec525f400c29b986eadd888d29f1579860871c6
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
-source-wordcount: '2366'
+source-wordcount: '2355'
 ht-degree: 0%
 
 ---
@@ -209,10 +209,10 @@ De volgende diensten moeten opnieuw worden opgestart:
 
 Download en kopieer het bestand op de computer waarop de Adobe Campaign-toepassingsserver is geïnstalleerd (nlserverweb):
 
+```
+Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
+```
 
-    &quot;
-    Setup-client-7.xxxx.exe in [pad van de toepassing]\datakit\nl\en\jsp
-    &quot;
 
 De volgende keer dat clientconsoles worden aangesloten, wordt gebruikers in een venster geïnformeerd over de beschikbaarheid van een nieuwe update en kunnen ze deze downloaden en installeren.
 
@@ -344,7 +344,7 @@ Er zijn drie opties om conflicten op te lossen: **Accepteer de nieuwe versie**, 
 * Het object wordt niet bijgewerkt
 * Effecten op lange termijn: de incompatibiliteiten van de versie, zal de klant niet van insectenmoeilijke situaties profiteren.
 
->[!CAUTION]
+>[!IMPORTANT]
 >Het wordt ten zeerste aanbevolen conflicten op te lossen.
 
 
@@ -408,7 +408,7 @@ Hier volgen de stappen voor het uitvoeren van een complexe samenvoeging:
 1. Uitvoeren in testomgeving
 
 
->[!CAUTION]
+>[!IMPORTANT]
 >De ontwikkelingsvaardigheden worden vereist om complexe fusies uit te voeren.
 
 
