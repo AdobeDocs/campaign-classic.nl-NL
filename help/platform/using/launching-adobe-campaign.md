@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 6652b081-66b6-47a8-97e5-383e3251647e
 translation-type: tm+mt
-source-git-commit: 87ad4d4fc69d75e4367e7467ce27de29f58f9445
+source-git-commit: 285cf8c6521696a0a94f6ffd8fc1eb148977836d
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '507'
 ht-degree: 7%
 
 ---
@@ -30,7 +30,7 @@ Je kunt Adobe Campaign starten door te selecteren **[!UICONTROL Start / All Prog
 
 In het verbindingsvenster van de clientconsole kunt u bestaande databases selecteren of configureren en er verbinding mee maken met een gebruikersnaam en wachtwoord:
 
-![](assets/s_ncs_user_login.png)
+![](assets/acc-logon.png)
 
 ## Verbinding maken met Adobe Campaign {#connecting-to-adobe-campaign}
 
@@ -46,7 +46,7 @@ U kunt ook verbinding maken met een toegewezen aanmelding/wachtwoord:
 
    De eerste keer u tot het gegevensbestand toegang hebt, is uw wachtwoord dat aan u door de beheerder wordt gegeven. Zodra u verbonden bent, kunt u uw wachtwoord via het **[!UICONTROL Tools > Change password...]** menu veranderen. Details over operatoren en verbindingen zijn beschikbaar in [Toegangsbeheer](../../platform/using/access-management.md).
 
-1. Klik **[!UICONTROL Log in]** om te bevestigen.
+1. Klik **[!UICONTROL LOG IN]** om te bevestigen.
 
 U hebt nu toegang tot de [Adobe Campaign-werkruimte](../../platform/using/adobe-campaign-workspace.md).
 
@@ -57,8 +57,6 @@ U hebt toegang tot de instellingen voor de serververbinding via de koppeling bov
 ![](assets/s_ncs_user_connections_management.png)
 
 In the **[!UICONTROL Connections]** window, click **[!UICONTROL Add > Connection]**.
-
-![](assets/s_ncs_user_add_connexion.png)
 
 Vervolgens definieert u de verbindingsinstellingen. Dit doet u als volgt:
 
@@ -97,7 +95,7 @@ In het **[!UICONTROL Help > About...]** menu hebt u toegang tot de volgende info
 
 ![](assets/about-acc.png)
 
-Wanneer u het team van de Zorg van de Adobe klant bereikt, moet u het versieaantal verstrekken en aantal van uw de cliëntconsole en toepassingsserver van de Campagne bouwen.
+Telkens wanneer u het team van de Zorg van de Adobe klant bereikt, moet u het versieaantal verstrekken en aantal van uw de cliëntconsole en toepassingsserver van Adobe Campaign bouwen.
 
 Als u werkt met de versie [](../../rn/using/gold-standard.md)Campaign Gold Standard, moet u ook de SHA/1-tekens delen die in het **[!UICONTROL About]** vak worden weergegeven. Voor de Gold **Standard 10-release** toont het buildnummer bijvoorbeeld de **build 9032@efd8a94**, zoals hieronder wordt getoond:
 
@@ -107,6 +105,6 @@ Meer informatie over Gold Standard vindt u [in dit artikel](https://helpx.adobe.
 
 **Verwante onderwerpen**:
 
-* [Ondersteuningsopties voor campagnes](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
-* [Softwaredistributie](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)
-* [Experience Cloud-ondersteuning en sessies met experts](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Adobe Campaign - Opties voor Help en ondersteuning](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
+* [Adobe-softwaredistributie](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)
+* [Adobe Experience Cloud-ondersteuning en sessies met experts](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
