@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 16985c1ddcd380cfc1ca4960b35bb5e78628f464
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1670'
 ht-degree: 5%
 
 ---
@@ -28,7 +28,7 @@ Dit doet u als volgt:
 
 1. **De levering** analyseren: met deze stap kunt u de te leveren berichten voorbereiden. Raadpleeg [De levering](#analyzing-the-delivery)analyseren.
 
-   De regels die tijdens de analyse worden toegepast, worden vermeld in [deze sectie](#validation-process-with-typologies) . De beschikbare validatiemodi worden gedetailleerd beschreven in het gedeelte [De goedkeuringsmodus](#changing-the-approval-mode) wijzigen.
+   De regels die tijdens de analyse worden toegepast, worden in [dit deel](#validation-process-with-typologies)uiteengezet. De beschikbare validatiemodi worden gedetailleerd beschreven in het gedeelte [De goedkeuringsmodus](#changing-the-approval-mode) wijzigen.
 
 1. **Proefdrukken** verzenden: Met deze stap kunt u inhoud, URL&#39;s, personalisatievelden, enzovoort goedkeuren. Zie Een proefdruk [](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) verzenden en een specifiek proefdrukdoel [](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)definiëren.
 
