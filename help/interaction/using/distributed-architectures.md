@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 811a42a4-552c-49cb-bffd-7e124ef83735
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Om scalability te kunnen steunen en de dienst 24/7 op het binnenkomende kanaal t
 
 De synchronisatie van aanbiedingen wordt uitgevoerd via pakketten. Bij uitvoeringsinstanties krijgen alle catalogusobjecten de naam van de externe account vooraf. Dit betekent dat verschillende besturingsinstanties (bijvoorbeeld ontwikkelings- en productieinstanties) op dezelfde uitvoeringsinstantie kunnen worden ondersteund.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >We raden u aan korte en expliciete interne namen te gebruiken.
 
@@ -112,7 +112,7 @@ Als voor optimalisatie slechts een deel van de marketingdatabase wordt geduplice
 
 Hier is een lijst van onderhoudsopties beschikbaar op de controle instantie:
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Deze opties mogen alleen voor specifieke onderhoudsbeurten worden gebruikt.
 
@@ -128,7 +128,7 @@ De volgende optie is beschikbaar bij uitvoeringsinstanties:
 
 Als uw instantie eerder niet over het interactiepakket beschikte, is geen migratie nodig. Standaard wordt de tabel met voorstellen weergegeven in 64 bits nadat de pakketten zijn geïnstalleerd.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Afhankelijk van het volume van bestaande voorstellingen in uw instantie, kan deze bewerking even duren.
 
