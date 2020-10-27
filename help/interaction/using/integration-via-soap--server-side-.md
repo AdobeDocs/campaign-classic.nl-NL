@@ -12,15 +12,15 @@ content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 477a2c31-0403-4db1-a372-c75dca58380d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 6%
+source-wordcount: '323'
+ht-degree: 4%
 
 ---
 
 
-# Integratie via SOAP (serverzijde){#integration-via-soap-server-side}
+# Integratie via SOAP (server-kant){#integration-via-soap-server-side}
 
 De SOAP-webservices die worden aangeboden voor aanbiedingsbeheer, verschillen van de services die gewoonlijk in Adobe Campaign worden gebruikt. U hebt toegang tot deze bestanden via de interactie-URL die in de vorige sectie is beschreven. U kunt nu aanbiedingen voor een bepaalde contactpersoon presenteren of bijwerken.
 
