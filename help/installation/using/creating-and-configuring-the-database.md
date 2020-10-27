@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 7dd8a6a5-7cca-4e92-8226-1b9e450dfaf9
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: fe7ce92bde3405fed3429475cdd5681e5837876f
 workflow-type: tm+mt
-source-wordcount: '1296'
-ht-degree: 1%
+source-wordcount: '1305'
+ht-degree: 2%
 
 ---
 
@@ -64,12 +64,13 @@ Afhankelijk van de geselecteerde database-engine kan de identificatie-informatie
 
 * Vul voor een **Oracle** -engine de **TNS-naam** in die voor de toepassingsserver is gedefinieerd.
 * Voor een **PostgreSQL** - of **DB2** -engine moet u de DNS-naam (of het IP-adres) opgeven die op de toepassingsserver is gedefinieerd om toegang te krijgen tot de databaseserver.
-* Voor een **Microsoft SQL Server** -engine moet u het volgende definiëren:
+* Voor een **Microsoft SQL Server** -engine moet u het volgende definiëren: de DNS-naam (of het IP-adres) die op de toepassingsserver is gedefinieerd voor toegang tot de databaseserver: **DNS** of **DNS`\<instance>`** (instantiemodus),
 
-   1. de DNS-naam (of het IP-adres) die op de toepassingsserver is gedefinieerd voor toegang tot de databaseserver: **DNS** of **DNS`\<instance>`** (instantiemodus),
-   1. de authentificatiemethode die wordt gebruikt om tot de Server van Microsoft SQL toegang te hebben: **[!UICONTROL SQL Server authentication]** of **[!UICONTROL Windows NT authentication]**.
+   >[!CAUTION]
+   >
+   > Beginnend 20.3, wordt de authentificatie van NT van Vensters ontmanteld. **[!UICONTROL SQL Server authentication]** is nu de enige authentificatiemodus beschikbaar voor de Server van Microsoft SQL. [Meer informatie](../../rn/using/deprecated-features.md)
 
-      ![](assets/s_ncs_install_db_mssql_creation01.png)
+   ![](assets/s_ncs_install_db_mssql_creation01.png)
 
 ### Stap 2 - Verbinding maken met de server {#step-2---connecting-to-the-server}
 
