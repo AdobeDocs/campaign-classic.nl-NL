@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: 90718075-87a7-4e9a-935b-571010908e79
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 3%
@@ -159,7 +159,7 @@ Voer het wachtwoord in.
 
 Het **interne** wachtwoord wijzigen: **nlserver config - intern wachtwoord**
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Als u zich wilt aanmelden met de **interne** id, moet u vooraf een wachtwoord hebben gedefinieerd. Raadpleeg [deze sectie](../../installation/using/campaign-server-configuration.md#internal-identifier) voor meer informatie.
 
@@ -172,5 +172,4 @@ Het **interne** wachtwoord wijzigen: **nlserver config - intern wachtwoord**
 >
 >  
 nlserver config -setdblogin:Oracle:test6@dbserver
-
 
