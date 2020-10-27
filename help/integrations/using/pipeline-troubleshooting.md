@@ -12,24 +12,24 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3e73d7c91fbe7cff7e1e31bdd788acece5806e61
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 1%
+source-wordcount: '585'
+ht-degree: 2%
 
 ---
 
 
 # Problemen met pipelines oplossen {#pipeline-troubleshooting}
 
-**Pipelined ontbreekt met fout &quot;Geen taak beantwoordt aan het masker pipelined@&quot;**
+**Pipelined ontbreekt met fout &quot;Geen taak beantwoordt aan het masker pipelined@&lt; instantie >&quot;**
 
 De pijpleiding wordt niet ondersteund door uw versie van Adobe Campaign Classic.
 
 1. Controleer of het [!DNL pipelined] element aanwezig is in het configuratiebestand. Als dat niet het geval is, betekent dit dat dit niet wordt ondersteund.
 1. Upgrade naar versie 6.11 build 8705 of hoger.
 
-**Pipelined failed with &#39;&#39; aurait dû commencer par`[`ou`{`(iRc=16384)&quot;**
+**Pipelined failed with &#39;&#39; aurait dû commencer par `[` ou `{` (iRc=16384)&quot;**
 
 De optie **NmsPipeline_Config** is niet ingesteld. Het is eigenlijk een JSON-parseringsfout.
 Stel de JSON-configuratie in de optie **NmsPipeline_Config** in. Zie &quot;verpletterende optie&quot;in deze pagina.
@@ -49,7 +49,7 @@ De parameter @authPrivateKey van het instance config-bestand is onjuist.
 1. Controleer of de authPrivateKey is ingesteld.
 1. Controleer of de authPrivateKey: begint met @, eindigt met = en is ongeveer 4000 tekens lang.
 1. Zoek de originele sleutel en controleer of deze: in formaat RSA, 4096 beetjes lang, en begint met —BEGIN RSA PRIVATE KEY—.
-   <br> Maak de sleutel zo nodig opnieuw en registreer deze op Adobe Analytics. Refer to this [section](../../integrations/using/configuring-pipeline.md#oauth-client-creation).
+   <br> Maak de sleutel zo nodig opnieuw en registreer deze op Adobe Analytics.
 1. Controleer of de sleutel is gecodeerd binnen dezelfde instantie als [!DNL pipelined]. <br>Voer zo nodig de codering opnieuw uit met behulp van het voorbeeld JavaScript of de workflow.
 
 **Pipelined ontbreekt met &quot;kan het teken tijdens authentificatie lezen niet&quot;**
@@ -91,42 +91,3 @@ Over het algemeen kan het 15 tot 90 minuten duren voordat een marketingcampagne 
 1. Controleer de [!DNL pipelined] statuspagina voor de rijgrootte. Als de wachtrij groot is, verbetert u de prestaties van de JS.
 1. Aangezien een vertraging met volume lijkt te stijgen, vorm de trekkers op Analytics gebruikend minder berichten.
 Bijlagen
-
-**JavaScript voor sleutelversleuteling gebruiken**
-
-Voer een JavaScript uit om de persoonlijke sleutel te versleutelen. Het wordt vereist voor de pijpleidingsconfiguratie.
-
-Hier is een codevoorbeeld dat u kunt gebruiken om de cryptString functie in werking te stellen:
-
-```
-/*
-USAGE:
-  nlserver javascript -instance:<instancename> -file -arg:"<private_key.pem file>" -file encryptKey.js
-*/
- 
-function usage()
-{
-  return "USAGE:\n" +
-    '  nlserver javascript -instance:<instancename> -file -arg:"<private_key.pem file>" -file encryptKey.js\n'
-}
- 
-var fn = application.arg;
-if( fn == "" )
-  logError("Missing key file file\n" + usage());
- 
-//open the pem file
-plaintext = loadFile(fn)
- 
-if( !plaintext.match(/^-----BEGIN RSA PRIVATE KEY-----/) )
-  logError("File should be an rsa private key")
- 
-logInfo("Encrypted key:\n" + cryptString(plaintext, <xtkSecretKey>))
-```
-
-Voer op de server de JavaScript-code uit:
-
-```
-nlserver javascript -instance:<instancename> -file -arg:"<private_key.pem file>" -file encryptKey.js
-```
-
-Kopieer en plak de gecodeerde sleutel van de output aan de console.
