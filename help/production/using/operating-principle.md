@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: 5e9c17ad-14d2-4173-9fc9-0e48a21426c8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 1%
@@ -36,7 +36,7 @@ Het beleid van de module wordt uitgevoerd gebruikend het **hulpmiddel** van de b
 
 De algemene syntaxis van het gereedschap **Nlserver** is als volgt:
 
-**nlserver`<command>``<command arguments>`**
+**nlserver `<command>``<command arguments>`**
 
 Voor de lijst van beschikbare modules, gebruik het **nlserver** bevel.
 
@@ -79,11 +79,11 @@ De beschikbare modules worden in de volgende tabel beschreven:
 | web | Toepassingsserver (HTTP en SOAP) |
 | wfserver | Workflowserver |
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Er is één laatste module: de tracerings- en relaismodule die is gekoppeld aan de toepassingsserver en die, omwille van de prestaties, via native mechanismen is geïntegreerd in een Apache- of IIS-webserver via een dynamische bibliotheek. Er is geen Adobe Campaign-opdracht waarmee u deze module kunt starten of beheren. U moet daarom de bevelen van de server van het Web zelf gebruiken.
 
-Het gebruik van de module en de syntaxis van zijn parameters worden getoond gebruikend het volgende bevel: **nlserver`[module]`-?**
+Het gebruik van de module en de syntaxis van zijn parameters worden getoond gebruikend het volgende bevel: **nlserver `[module]` -?**
 
 Voorbeeld:
 
