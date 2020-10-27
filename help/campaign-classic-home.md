@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 title: Adobe Campaign Classic-productdocumentatie
 topic: Premium
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 9844616f417608051bbff2593d6124d8ff83008c
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 100%
+source-wordcount: '272'
+ht-degree: 84%
 
 ---
 
@@ -17,8 +17,9 @@ ht-degree: 100%
 
 ## Nieuwe functies
 
-* **[Emoticons](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>
-U kunt nu emoticons invoegen in berichten en onderwerpregels
+* **[Ga naar API](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/> voor op HTTP/2 gebaseerde APNs-providers. Leer hoe u van het oude binaire protocol naar de op HTTP/2 gebaseerde APIs-provider kunt migreren.
+
+* **[emoticons toevoegen aan uw berichten](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>U kunt nu emoticons invoegen in berichten en onderwerpregel
 
 * **[Ondersteuning krijgen](https://helpx.adobe.com/nl/campaign/kb/ac-support.html)**<br/>
 Krijg toegang tot veelgestelde vragen, best practices en Help-resources en vraag hulp
@@ -28,9 +29,6 @@ Ontdek hoe Adobe Campaign u kan helpen aan privacyvereisten te voldoen
 
 * **[Trackingmogelijkheden](https://helpx.adobe.com/nl/campaign/kb/acc-tracking.html)**<br/>
 Begrijp de mogelijkheden en processen voor tracking in Campaign
-
-* **[Interactieve content met AMP](delivery/using/defining-interactive-content.md)**<br/>
-Ontdek hoe u dynamische e-mails kunt verzenden met de nieuwe AMP-indeling
 
 [Klik hier voor meer updates](/help/rn/using/documentation-updates.md)
 
