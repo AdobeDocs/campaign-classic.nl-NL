@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
+source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 1%
+source-wordcount: '2020'
+ht-degree: 2%
 
 ---
 
@@ -203,3 +203,10 @@ alle inhoud wordt weergegeven en weergegeven.
    * SMS verzenden testen
    * Als u een externe FDA hebt aangesloten, test of de gegevens beide manieren worden verzonden
    * Als u integraties gebruikt, zoals Adobe Campaign-Adobe Experience Manager, Adobe Campaign-Adobe Analytics, test dan of ze nog steeds werken zoals voorheen
+
+**Zie ook**
+
+* [Een build-upgrade uitvoeren](../../production/using/build-upgrade.md)
+* [Opmerkingen bij de release Campaign Classic](../../rn/using/rn-overview.md)
+* [Help- en ondersteuningsopties voor Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+* [Gold Standard-programma](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html)
