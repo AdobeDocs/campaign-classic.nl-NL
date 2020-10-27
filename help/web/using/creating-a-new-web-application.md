@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: web-applications
 discoiquuid: 84f9dbad-365f-405d-88a0-14171fbb805f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2d6266957a1e290333c505e40f95df46797e19c4
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 21%
@@ -30,7 +30,7 @@ Ga naar het tabblad **Campagnes** en selecteer het **[!UICONTROL Web Application
 
 >[!NOTE]
 >
->ALways beschermen de pagina&#39;s die persoonlijke informatie zouden kunnen bevatten. Raadpleeg de checklist [Beveiliging en Privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
+>Beveilig altijd de pagina&#39;s die persoonlijke gegevens kunnen bevatten. Raadpleeg de checklist [Beveiliging en Privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
 
 Dit malplaatje bepaalt het type van toepassing van het Web. U kunt:
 
