@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: data-processing
 discoiquuid: 6b188d78-abb4-4f03-80b9-051ce960f43c
 translation-type: tm+mt
-source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '2910'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Standaard wordt de **[!UICONTROL Database cleanup]** workflow zo geconfigureerd 
 
 ![](assets/ncs_cleanup_scheduler.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Opdat het **[!UICONTROL Database cleanup]** werkschema bij de datum en de tijd te beginnen die in de planner wordt bepaald, moet de werkschemamotor (wfserver) zijn begonnen. Als dit niet het geval is, zal het zuiveren van gegevensbestand niet plaatsvinden tot volgende tijd de werkschemamotor wordt begonnen.
 
@@ -84,7 +84,7 @@ Alle taken die door de **[!UICONTROL Database cleanup]** workflow worden uitgevo
 
 Op de datum en de tijd die in de werkschemaplanner worden bepaald (verwijs naar [de planner](#the-scheduler)), begint de werkschemamotor het gegevensbestand schoonmaakproces. De schoonmaakbeurt van het Gegevensbestand verbindt met het gegevensbestand en voert de taken in de hieronder getoonde opeenvolging uit.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Als een van deze taken mislukt, worden de volgende niet uitgevoerd.\
 >SQL-query&#39;s met een **LIMIT** -kenmerk worden herhaaldelijk uitgevoerd totdat alle informatie wordt verwerkt.
