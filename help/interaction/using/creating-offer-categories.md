@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: a9fad813-3256-4a00-ba74-7dbaba9e8e23
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 4%
 
 ---
@@ -46,11 +46,11 @@ Voer de volgende stappen uit om een extra categorie te maken:
 
    Daarna kunt u zo nodig:
 
-   * u kunt toelatingsdatums toewijzen vanaf het **[!UICONTROL Eligibility]** tabblad.
+   * U kunt toelatingsdatums toewijzen vanaf het **[!UICONTROL Eligibility]** tabblad.
 
       ![](assets/offer_cat_create_004.png)
 
-   * Voer in het **[!UICONTROL Themes]** veld trefwoorden in die kunnen worden gebruikt om voorstellen te selecteren vanuit deze categorie.
+   * Voer in het **[!UICONTROL Themes]** veld trefwoorden in waarmee voorstellen in deze categorie kunnen worden geselecteerd.
 
       ![](assets/offer_cat_create_005.png)
 
@@ -58,7 +58,7 @@ Voer de volgende stappen uit om een extra categorie te maken:
       >
       >Wanneer u de aanbiedingsengine aanroept, wordt alleen het gedeelte van de catalogus geselecteerd waarin de thema&#39;s of categorieën overeenkomen met de parameters.
 
-   * Je kunt tijdelijk het gewicht van een rubriek verhogen voor een bepaalde periode via het **[!UICONTROL Multiplier weight]** veld.
+   * Het aanbiedingsgewicht van een categorie gedurende een bepaalde periode tijdelijk via het **[!UICONTROL Multiplier weight]** veld verhogen.
 
       ![](assets/offer_cat_create_006.png)
 
