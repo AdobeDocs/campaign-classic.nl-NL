@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: b64c9729-cfe2-4d02-8c59-9e53efd34a96
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 3%
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 # Problemen oplossen{#troubleshooting}
 
-Als uw mobiele apparaat is verbonden met Wi-Fi en u ontvangt geen meldingen, controleert u of de FCM-/APNS-poorten niet worden geblokkeerd door uw firewall.
+Als uw mobiele apparaat is verbonden met Wi-Fi en u ontvangt geen meldingen, controleert u of de FCM-/APN-poorten niet worden geblokkeerd door uw firewall.
 
 **Android**: Het mobiele apparaat maakt verbinding met de FCM-servers op poorten 5228 tot en met 5230. Daarom moet u de firewall zo configureren dat verbinding met FCM wordt toegestaan. De open havens zijn: 5228 (de meest gebruikte), 5229 en 5230.
 
