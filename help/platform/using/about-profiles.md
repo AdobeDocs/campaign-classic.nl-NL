@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 5addada8-0185-488f-9825-83f60981c139
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 208bac758542db8dd514bda80c8c735897fcefec
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 16%
@@ -122,7 +122,7 @@ In deze video wordt ook uitgelegd of Adobe Campaign Classic voldoet aan de algem
 
 **Zie ook**
 
-* [Privacy mamanagement in Campaign](https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html)
+* [Privacybeheer in campagne](https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html)
 
 * [Doelpopulatie definiëren](../../delivery/using/define-the-right-audience.md)
 
