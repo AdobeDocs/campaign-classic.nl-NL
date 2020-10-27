@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
 workflow-type: tm+mt
-source-wordcount: '2571'
-ht-degree: 14%
+source-wordcount: '2802'
+ht-degree: 13%
 
 ---
 
@@ -156,20 +156,23 @@ De items die in quarantaine worden geplaatst, zijn apparaattokens.
 
 **Voor iOS - binaire connector**
 
-Voor elk bericht ontvangt Adobe Campaign de synchrone en asynchrone fouten van de APNS-server. Bij de volgende synchrone fouten genereert Adobe Campaign schermfouten:
+>[!NOTE]
+Vanaf de release van Campagne 20.3 is de verouderde binaire connector van iOS verouderd. Als u deze schakelaar gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. [Meer informatie](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
+
+Voor elk bericht ontvangt Adobe Campaign de synchrone en asynchrone fouten van de APNs-server. Bij de volgende synchrone fouten genereert Adobe Campaign schermfouten:
 
 * Problemen met de lengte van de lading: niet opnieuw proberen, de oorzaak van de fout is **[!UICONTROL Unreachable]**.
 * Problemen met certificaatvervaldatum: niet opnieuw proberen, de oorzaak van de fout is **[!UICONTROL Unreachable]**.
 * Verbinding verloren tijdens levering: opnieuw uitgevoerd, de oorzaak van de fout is **[!UICONTROL Unreachable]**.
 * Uitgave serviceconfiguratie (ongeldig certificaat, ongeldig certificaatwachtwoord, geen certificaat): niet opnieuw proberen, de oorzaak van de fout is **[!UICONTROL Unreachable]**.
 
-De APNS-server meldt Adobe Campaign asynchroon dat een apparaattoken niet is geregistreerd (wanneer de mobiele toepassing door de gebruiker is verwijderd). De **[!UICONTROL mobileAppOptOutMgt]** workflow wordt elke 6 uur uitgevoerd om contact op te nemen met de APNS-feedbackservices om de **AppSubscriptionRcp** -tabel bij te werken. Voor alle gedeactiveerde tokens, wordt het gebied **Uitgeschakeld** geplaatst aan **Waar** en het abonnement verbonden aan dat apparatenteken zal automatisch van toekomstige leveringen worden uitgesloten.
+De APNs-server meldt Adobe Campaign asynchroon dat een apparaattoken niet is geregistreerd (wanneer de mobiele toepassing door de gebruiker is verwijderd). De **[!UICONTROL mobileAppOptOutMgt]** workflow wordt elke 6 uur uitgevoerd om contact op te nemen met de APNs-feedbackservices om de **AppSubscriptionRcp** -tabel bij te werken. Voor alle gedeactiveerde tokens, wordt het gebied **Uitgeschakeld** geplaatst aan **Waar** en het abonnement verbonden aan dat apparatenteken zal automatisch van toekomstige leveringen worden uitgesloten.
 
-**Voor iOS - HTTP/2-connector**
+**Voor iOS - HTTP/V2-connector**
 
-Met het http/2-protocol kunt u rechtstreeks feedback geven en de status van elke push-levering bepalen. Als de HTTP/2 protocolschakelaar wordt gebruikt, koppelt de dienst niet meer door het **[!UICONTROL mobileAppOptOutMgt]** werkschema terug. De niet-geregistreerde tokens worden verschillend afgehandeld tussen de binaire iOS-connector en de iOS http/2-connector. Een token wordt als niet-geregistreerd beschouwd wanneer een mobiele toepassing wordt verwijderd of opnieuw wordt geïnstalleerd.
+Met het HTTP/V2-protocol kunt u rechtstreeks feedback geven en de status van elke push-levering bepalen. Als de HTTP/V2 protocolschakelaar wordt gebruikt, koppelt de dienst niet meer door het **[!UICONTROL mobileAppOptOutMgt]** werkschema wordt geroepen. De niet-geregistreerde tokens worden verschillend afgehandeld tussen de binaire iOS-connector en de iOS HTTP/V2-connector. Een token wordt als niet-geregistreerd beschouwd wanneer een mobiele toepassing wordt verwijderd of opnieuw wordt geïnstalleerd.
 
-Als APNS synchroon een &quot;niet-geregistreerde&quot; status voor een bericht retourneert, wordt het doeltoken onmiddellijk in quarantaine geplaatst.
+Synchroon, als APNs een &quot;unregistered&quot;status voor een bericht terugkeert, zal het doelteken onmiddellijk in quarantaine worden geplaatst.
 
 <table> 
  <tbody> 
@@ -222,7 +225,7 @@ Als APNS synchroon een &quot;niet-geregistreerde&quot; status voor een bericht r
    <td> Nee<br /> </td> 
   </tr> 
   <tr> 
-   <td> Certificaatafgifte (wachtwoord, beschadiging, enz.) en de verbinding met APNS-probleem testen<br /> </td> 
+   <td> Certificaatafgifte (wachtwoord, beschadiging, enz.) en testverbinding met APNs-probleem<br /> </td> 
    <td> Mislukt<br /> </td> 
    <td> Verschillende foutberichten op basis van de fout<br /> </td> 
    <td> Zacht<br /> </td> 
@@ -238,7 +241,7 @@ Als APNS synchroon een &quot;niet-geregistreerde&quot; status voor een bericht r
    <td> Ja<br /> </td> 
   </tr> 
   <tr> 
-   <td> APNS-bericht afgewezen: De registratie<br /> ongedaan maken wanneer de gebruiker de toepassing heeft verwijderd of het token is verlopen<br /> </td> 
+   <td> APNs-berichtafwijzing: De registratie<br /> ongedaan maken wanneer de gebruiker de toepassing heeft verwijderd of het token is verlopen<br /> </td> 
    <td> Mislukt<br /> </td> 
    <td> Niet geregistreerd<br /> </td> 
    <td> Hard<br /> </td> 
@@ -246,7 +249,7 @@ Als APNS synchroon een &quot;niet-geregistreerde&quot; status voor een bericht r
    <td> Nee<br /> </td> 
   </tr> 
   <tr> 
-   <td> APNS-bericht afgewezen: alle andere fouten<br /> </td> 
+   <td> APNs-berichtafwijzing: alle andere fouten<br /> </td> 
    <td> Mislukt<br /> </td> 
    <td> De oorzaak van de foutafstoting komt voor in het foutbericht<br /> </td> 
    <td> Zacht<br /> </td> 
@@ -356,6 +359,134 @@ Android V2-quarantainemomechanisme gebruikt hetzelfde proces als Android V1. Het
    <td> Geweigerd<br /> </td> 
    <td> Nee<br /> </td> 
   </tr> 
+    <tr> 
+   <td> Afkeuring van FCM-berichten: Ongeldig argument<br /> </td> 
+   <td> Mislukt<br /> </td> 
+   <td> INVALID_ARGUMENT </td> 
+   <td> Genegeerd</td> 
+   <td> Ongedefinieerd<br /> </td> 
+   <td> Nee<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Afkeuring van FCM-berichten: Verificatiefout van derden<br /> </td> 
+   <td> Mislukt<br /> </td> 
+   <td> THIRD_PARTY_AUTH_ERROR </td> 
+   <td> Genegeerd</td>
+   <td> Geweigerd<br /> </td> 
+   <td> Ja<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Afkeuring van FCM-berichten: Afzender-id komt niet overeen<br /> </td> 
+   <td> Mislukt<br /> </td> 
+   <td> SENDER_ID_MISMATCH </td> 
+   <td> Zacht</td>
+   <td> Gebruiker onbekend<br /> </td> 
+   <td> Nee<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Afkeuring van FCM-berichten: Niet geregistreerd<br /> </td> 
+   <td> Mislukt<br /> </td>
+   <td> ONGEREGISTREERD </td> 
+   <td> Hard</td> 
+   <td> Gebruiker onbekend<br /> </td> 
+   <td> Nee<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Afkeuring van FCM-berichten: Intern<br /> </td> 
+   <td> Mislukt<br /> </td> 
+   <td> INTERN </td> 
+   <td> Genegeerd</td> 
+   <td> Geweigerd<br /> </td> 
+   <td> Ja<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Afkeuring van FCM-berichten: Niet beschikbaar<br /> </td> 
+   <td> Mislukt<br /> </td> 
+   <td> NIET BESCHIKBAAR</td> 
+   <td> Genegeerd</td> 
+   <td> Geweigerd<br /> </td> 
+   <td> Ja<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Afkeuring van FCM-berichten: onverwachte foutcode<br /> </td> 
+   <td> Mislukt<br /> </td> 
+   <td> onverwachte foutcode</td> 
+   <td> Genegeerd</td> 
+   <td> Geweigerd<br /> </td> 
+   <td> Nee<br /> </td> 
+  </tr>
+  <tr> 
+   <td> Verificatie: Verbindingsprobleem<br /> </td> 
+   <td> Mislukt<br /> </td> 
+   <td> Kan geen verbinding maken met verificatieserver </td> 
+   <td> Genegeerd</td>
+   <td> Geweigerd<br /> </td> 
+   <td> Ja<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Verificatie: Niet-geautoriseerde client of bereik in aanvraag.<br /> </td> 
+   <td> Mislukt<br /> </td> 
+   <td> onbevoegd_client </td> 
+   <td> Genegeerd</td>
+   <td> Geweigerd<br /> </td> 
+   <td> Nee<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Verificatie: De cliënt is onbevoegd om toegangstokens terug te winnen gebruikend deze methode, of cliënt geautoriseerd niet voor om het even welk gevraagd werkingsgebied.<br /> </td> 
+   <td> Mislukt<br /> </td> 
+   <td> onbevoegd_client </td> 
+   <td> Genegeerd</td>
+   <td> Geweigerd<br /> </td> 
+   <td> Nee<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Verificatie: Toegang geweigerd<br /> </td> 
+   <td> Mislukt<br /> </td>
+   <td> access_deny</td> 
+   <td> Genegeerd</td>
+   <td> Geweigerd<br /> </td> 
+   <td> Nee<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Verificatie: Ongeldig e-mailadres<br /> </td> 
+   <td> Mislukt<br /> </td> 
+   <td> invalid_Grant </td> 
+   <td> Genegeerd</td> 
+   <td> Geweigerd<br /> </td> 
+   <td> Nee<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Verificatie: Ongeldige JWT<br /> </td> 
+   <td> Mislukt<br /> </td> 
+   <td> invalid_Grant </td> 
+   <td> Genegeerd</td> 
+   <td> Geweigerd<br /> </td> 
+   <td> Nee<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Verificatie: Ongeldige JWT-handtekening<br /> </td> 
+   <td> Mislukt<br /> </td> 
+   <td> invalid_Grant </td> 
+   <td> Genegeerd</td> 
+   <td> Geweigerd<br /> </td> 
+   <td> Nee<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Verificatie: Ongeldig OAuth-bereik of publiek voor ID-token opgegeven<br /> </td> 
+   <td> Mislukt<br /> </td> 
+   <td> onbevoegd_client</td> 
+   <td> Genegeerd</td> 
+   <td> Geweigerd<br /> </td> 
+   <td> Nee<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Verificatie: OAuth-client uitgeschakeld<br /> </td> 
+   <td> Mislukt<br /> </td> 
+   <td> disabled_client</td> 
+   <td> Genegeerd</td> 
+   <td> Geweigerd<br /> </td> 
+   <td> Nee<br /> </td> 
+  </tr>
  </tbody> 
 </table>
 
