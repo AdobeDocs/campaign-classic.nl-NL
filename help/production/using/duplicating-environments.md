@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: data-processing
 discoiquuid: 9f7118f4-aef0-469c-bbe1-b62bed674faa
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 1%
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ### Overzicht {#overview}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Als u geen toegang hebt tot de server en de database (gehoste omgevingen), kunt u de hieronder beschreven procedures niet uitvoeren. Neem contact op met Adobe.
 
@@ -49,14 +49,14 @@ Hiervoor voert u de volgende stappen uit:
    >In de context van Adobe Campaign, combineert een **voorzichtigheid** acties die u alle processen laten tegenhouden interactie met de buitenkant: logboeken, tracering, leveringen, campagneworkflows, enz.\
    >Deze stap is nodig om te voorkomen dat berichten meerdere keren worden verzonden (eenmaal vanuit de nominale omgeving en één vanuit de gedupliceerde omgeving).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Eén omgeving kan meerdere instanties bevatten. Elke Adobe Campaign-instantie is onderworpen aan een licentieovereenkomst. Controleer uw licentieovereenkomst om te zien hoeveel omgevingen u kunt hebben.\
    >Met de onderstaande procedure kunt u een omgeving overbrengen zonder dat dit invloed heeft op het aantal omgevingen en instanties dat u hebt geïnstalleerd.
 
 ### Voordat u begint {#before-you-start}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Wij adviseren sterk het runnen van een volledige steun van de gegevensbestanden voor alle instanties van de bron en doelmilieu&#39;s alvorens het overdrachtsproces te beginnen. Op deze manier kunt u, als zich een probleem voordoet, de back-ups herstellen en terugkeren naar de oorspronkelijke configuratie.
 
@@ -70,7 +70,7 @@ Deze sectie helpt u de stappen te begrijpen die nodig zijn voor het overbrengen 
 
 De volgende stappen moeten met grote zorg worden uitgevoerd: sommige processen zijn mogelijk nog in uitvoering wanneer de gegevensbestanden van het bronmilieu worden gekopieerd. Voorzichtigheid (stap 3 hieronder) verhindert berichten tweemaal worden verzonden en handhaaft gegevensconsistentie.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* De volgende procedure is geldig in de taal PostgreSQL. Als de SQL-taal anders is (bijvoorbeeld Oracle), moeten de SQL-query&#39;s worden aangepast.
 >* De onderstaande opdrachten zijn van toepassing binnen de context van een **prod** -instantie en een **dev** -instantie onder PostgreSQL.
@@ -218,7 +218,7 @@ Controleer of toegang tot de functies van de clientconsole mogelijk is.
 
 ### Stap 8 - Importopties en externe accounts in de doelomgeving (dev) {#step-8---import-options-and-external-accounts-into-the-target-environment--dev-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Alleen het webproces moet in deze stap worden gestart. Als dit niet het geval is, stop andere lopende processen alvorens verder te gaan
 
