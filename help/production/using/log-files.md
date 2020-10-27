@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: fac3e3ec-82a7-4087-ba88-2b28b0f69d1c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 2%
@@ -56,7 +56,7 @@ De mono-instantie logboekdossiers zijn vermeld in de volgende lijst:
 | inMail.log | Logboek van de module Stuiteren |
 | logins.log | Hiermee worden alle aanmeldpogingen bij Adobe Campaign geregistreerd (geslaagd of niet) |
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >De map **redir** bestaat alleen op redirection servers. De submap **url** bevat de overeenkomsten met de URL&#39;s die moeten worden omgeleid, en het subdirectory- **logbestand** bevat de trackinglogboeken. Om het volgen logboeken te produceren, moet de **gevolgde logd** module lopen.
 
@@ -68,4 +68,4 @@ U kunt echter grotere bestanden behouden. Om dit toe te laten, verander de waard
 
 Als u verdere niveaus van detail in de logboeken wilt handhaven, kunt u de modules van Adobe Campaign met de **-verbose** parameter beginnen:
 
-**nlserver start`<MODULE>`@`<INSTANCE>`-verbose**
+**nlserver start `<MODULE>`@`<INSTANCE>` -verbose**
