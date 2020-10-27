@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: ba5e815dd1576b55d9b3226639680f6358137f13
 workflow-type: tm+mt
-source-wordcount: '3752'
-ht-degree: 85%
+source-wordcount: '3882'
+ht-degree: 83%
 
 ---
 
@@ -25,6 +25,31 @@ Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates
 U kunt ook de [Adobe Campaign Classic-release-opmerkingen](../../rn/using/latest-release.md) raadplegen voor meer updates.
 
 ## Oktober 2020 {#oct-2020}
+
+**Nieuwe mogelijkheden inbegrepen in 20.3 versie**
+
+Verbeteringen voor pushmeldingen voor iOS - [Meer informatie](../../delivery/using/configuring-the-mobile-application.md)
+
+Verbeteringen voor pushmeldingen voor Android - [Meer informatie](../../delivery/using/configuring-the-mobile-application-android.md)
+
+**Overige documentatie-updates die bij de release worden geleverd**
+
+De compatibiliteitsmatrix is bijgewerkt. [Meer informatie](../../rn/using/compatibility-matrix.md)
+
+De pagina met verouderde en verwijderde functies is bijgewerkt. [Meer informatie](../../rn/using/deprecated-features.md)
+
+Release-aantekeningen en compatibiliteitsmatrix voor Gold Standard-release zijn nu beschikbaar in een speciale sectie.
+[Meer informatie](../../rn/using/gold-standard.md#gs-10).
+
+**Overige updates**
+
+Documentatiepagina&#39;s zijn bijgewerkt met de Tomcat 8-update.
+
+Details zijn toegevoegd aan de beschrijving in het vak Over in de sectie &#39;Adobe Campaign-versie ophalen&#39;. [Meer informatie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
+
+Richtlijnen voor het uitvoeren van een upgrade van een build zijn toegevoegd aan de sectie &#39;Adobe Campaign Classic bijwerken&#39;. Meer informatie [Meer informatie](../../production/using/build-upgrade.md)
+
+Veelgestelde vragen over de upgrade voor het bouwen van campagnes zijn toegevoegd aan veelgestelde vragen over de campagne. Meer informatie [Meer informatie](../../platform/using/faq-build-upgrade.md)
 
 Campagne op locatie, gehoste en hybride hostingmodellen worden nu beschreven in een speciale sectie. [Meer informatie](../../installation/using/hosting-models.md)
 
