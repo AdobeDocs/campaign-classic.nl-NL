@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: case-study
 discoiquuid: 63245348-0402-4929-9c4f-71f01f97758e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '2093'
 ht-degree: 1%
@@ -79,7 +79,7 @@ U krijgt een boomstructuur met uw nieuwe omgeving:
        }   
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >De renderfunctie moet de velden die voor de ruimte worden gebruikt een naam geven in de volgorde waarin deze eerder zijn geselecteerd, zodat de aanbiedingen correct worden weergegeven.
 
@@ -223,7 +223,7 @@ Pas het volgende proces toe om de aanbiedingsruimte aan te passen aan de **rubri
 
    ![](assets/offer_inbound_fallback_example_025.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >De renderfunctie moet de velden die voor de ruimte worden gebruikt een naam geven in de volgorde waarin deze eerder zijn geselecteerd, zodat de aanbiedingen correct worden weergegeven.
 
