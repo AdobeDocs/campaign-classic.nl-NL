@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 7453d768-31eb-4372-aae3-27527cd5c79b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 2%
@@ -70,7 +70,7 @@ In de volgende gebruiksgevallen worden de mogelijke opties beschreven voor het i
    <script id="interactionProposalScript" src="https://instance.adobe.org:8080/nl/interactionProposal.js?env=OE3" type="text/javascript"></script>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >De `<script>` tag mag niet zelfsluitend zijn.
 
@@ -214,7 +214,7 @@ In het volgende gebruiksgeval worden de configuraties beschreven die in Adobe Ca
    </srcSchema>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Elk element moet tweemaal worden gedefinieerd. CDATA-typeelementen (&quot;_jst&quot;) kunnen personalisatievelden bevatten.
    >
@@ -264,7 +264,7 @@ In het volgende gebruiksgeval worden de configuraties beschreven die in Adobe Ca
 
    ![](assets/interaction_xmlmode_form_001.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >De velden van het formulier ( `<input>`) moeten verwijzen naar de CDATA-typeelementen die in het gemaakte schema zijn gedefinieerd.
 
