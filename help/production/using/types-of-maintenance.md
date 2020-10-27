@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: database-maintenance
 discoiquuid: 4a436ccf-097c-43e6-9eda-492bada5512a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 2%
@@ -30,7 +30,7 @@ Adobe Campaign biedt een ingebouwde workflow waarmee u bepaalde onderhoudstaken 
 * verwijdering van zwevende records en herinitialisatie van status voor verlopen objecten;
 * het bijwerken van de databasestatistieken.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Houd er rekening mee dat de opschoningstaak vooral betrekking heeft op onderhoud op toepassingsniveau, niet op onderhoud op RDBMS-niveau (met uitzondering van de update van statistische gegevens). Onderhoudsbewerkingen zijn echter vereist voor de database. Zelfs als de workflow voor het opschonen van de database met succes wordt uitgevoerd, betekent dit niet dat de database optimaal is ingesteld.
 
