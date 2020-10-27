@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: database-maintenance
 discoiquuid: b2219912-5570-45d2-8b52-52486e29d008
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 1%
@@ -369,7 +369,7 @@ Neem contact op met uw databasebeheerder voor informatie over de procedures die 
 
 >[!NOTE]
 >
->Voor de Server van Microsoft SQL, kunt u het onderhoudsplan gebruiken dat [in deze pagina](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html)wordt gedetailleerd.
+>Voor de Server van Microsoft SQL, kunt u het onderhoudsplan gebruiken dat op [deze pagina](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html)wordt gedetailleerd.
 
 Het onderstaande voorbeeld heeft betrekking op Microsoft SQL Server 2005. Als u een andere versie gebruikt, neemt u contact op met uw databasebeheerder voor informatie over onderhoudsprocedures.
 
@@ -421,7 +421,7 @@ Het onderstaande voorbeeld heeft betrekking op Microsoft SQL Server 2005. Als u 
 
    Er is een object gemaakt in de **[!UICONTROL SQL Server Agent > Jobs]** map. Met dit object kunt u het onderhoudsplan starten. In ons voorbeeld is er slechts één object omdat alle onderhoudstaken deel uitmaken van hetzelfde plan.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Voor dit voorwerp om te lopen, moet de agent van de Server van Microsoft SQL worden toegelaten.
 
