@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 6358c8fd-2b75-4462-acd1-887ee44d3110
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 8%
@@ -57,7 +57,7 @@ Zorg ervoor dat het databaseonderhoud correct is gepland en uitgevoerd. Neem hie
 
 Raadpleeg [deze sectie](../../production/using/recommendations.md) voor meer informatie.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Als u een midsourcingconfiguratie gebruikt, is het van essentieel belang dat databases regelmatig worden onderhouden. Bij het analyseren van een levering op het marketingplatform stuurt de marketinginstantie informatie naar de instantie voor midsourcing. Als het proces wordt vertraagd, wordt het marketingexemplaar beïnvloed.
 
@@ -69,7 +69,7 @@ Controleer het aantal en de grootte van werktabellen. Wanneer zij een bepaalde g
 * werkstromen die wegens een fout zijn gepauzeerd, stoppen of verwijderen;
 * alle werkstromen te stoppen die worden gebruikt voor tests die geen **[!UICONTROL End]** activiteit bevatten en waarvan de status derhalve behouden blijft **[!UICONTROL Paused]** .
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Als de bewerking lang duurt en veel ruimte vrijmaakt, betekent dit dat diepgaand onderhoud noodzakelijk is (indexheropbouw, enz.). Raadpleeg [deze sectie](../../production/using/recommendations.md) voor meer informatie.
 
