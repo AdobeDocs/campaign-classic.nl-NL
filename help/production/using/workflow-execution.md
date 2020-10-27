@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 7d8828c5-5776-49ca-b4f7-a4a6aaaa9db1
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 3%
@@ -78,7 +78,7 @@ Dit probleem kan verschillende oorzaken hebben: volg de onderstaande stappen om 
 
    Om het aantal werkstromen te controleren die van uw instantie lopen, adviseren wij gebruikend de vooraf bepaalde meningen, toegankelijk door gebrek in **[!UICONTROL Administration]** / **[!UICONTROL Audit]** omslag. Raadpleeg [deze sectie](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status) voor meer informatie.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Als u de **[!UICONTROL NmsOperation_LimitConcurrency]** optiedrempel verhoogt, kunnen er prestatieproblemen optreden. Voer dit in geen geval alleen uit en neem contact op met uw Adobe Campaign-contactpersoon.
 
