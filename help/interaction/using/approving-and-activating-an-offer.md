@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 7b1c58a0-6fd6-4c9d-b1c4-f3dffda42523
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 3%
@@ -36,7 +36,7 @@ De inhoud van een aanbieding heeft één representatie per ruimte. Aangezien elk
 
 U kunt de inhoud van het voorstel op bepaalde beschikbare ruimten goedkeuren en op andere plaatsen afwijzen.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Zodra de inhoud en de geschiktheid van een aanbieding zijn goedgekeurd, wordt de publicatieworkflow (kennisgeving van aanbieding) automatisch uitgevoerd en wordt de aanbieding live en beschikbaar gesteld op alle geactiveerde ruimten.
 
@@ -62,7 +62,7 @@ Voer de volgende stappen uit om de inhoud van de aanbieding goed te keuren:
 
 Goedkeuring van de aanbieding betekent aanvaarding of afwijzing van de aanbiedingsgewichten en de toelatingsregels die ook in de aanbieding zijn geconfigureerd of die zijn overgenomen van de regels die in de bovenliggende categorie zijn gemaakt.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Zodra de inhoud en de geschiktheid van een aanbieding zijn goedgekeurd, wordt de publicatieworkflow (kennisgeving van aanbieding) automatisch uitgevoerd en wordt de aanbieding live en beschikbaar gesteld op alle geactiveerde ruimten.
 
