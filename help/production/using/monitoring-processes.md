@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: 968d0ee3-5efc-46d8-b408-b9cce3e730c4
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
-source-wordcount: '3602'
+source-wordcount: '3600'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Het is mogelijk om het logboekdagboek met betrekking tot een proces te tonen. U 
 
 Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven, zoals het fysieke en virtuele geheugen, actieve processen en beschikbare schijfruimte. De indicatoren zijn verschillend voor Linux en Vensters werkende systemen. Ga naar de **[!UICONTROL Instance Monitoring]** pagina en klik op de **[!UICONTROL Display]** koppeling om de lijst met indicatoren te openen
 
-#### In Windows {#in-windows}
+#### Windows {#in-windows}
 
 * **[!UICONTROL Pending events queued]** : specifieke indicator voor het Centrum van het **Bericht**. Zie [deze sectie](../../message-center/using/monitoring-thresholds.md) voor meer informatie.
 * **[!UICONTROL Memory]** : informatie over het fysieke geheugen (RAM).
@@ -103,7 +103,7 @@ Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven
 
    Wanneer de **[!UICONTROL Alert]** indicator wordt getoond, kan het zijn dat het betrokken proces door de SQL gegevensbestandmotor wordt gesloten of dat het in een oneindige lijn wordt geplakt. Met het **waakhond** -proces dat Adobe Campaign biedt, worden alle processen elke dag opnieuw opgestart en kunt u dit probleem oplossen. U kunt echter ook zelf een einde maken aan het desbetreffende proces om een nieuwe start te forceren.
 
-#### In Linux {#in-linux}
+#### Linux {#in-linux}
 
 ![](assets/production_system_indicators_linux_001.png)
 
@@ -256,7 +256,7 @@ Zij worden gegroepeerd onder **Controle** > &quot;Controle SMTP&quot;.
 
 ![](assets/smtp_reports_access.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* Informatie over SMTP-bewaking is alleen beschikbaar als het e-mailkanaal is geactiveerd.
 >* De **[!UICONTROL SMTP sending statistics]** worden slechts aangeboden als de statistiekenserver op de instantie is begonnen.
@@ -484,7 +484,7 @@ Adobe Campaign kan een hulpmiddel van de instantiecontrole (netreport) verstrekk
 
 ![](assets/pro_netreport.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Dit gereedschap kan worden gebruikt om uw instanties te controleren, maar wordt niet ondersteund door Adobe Campaign. Neem voor meer informatie contact op met de beheerder van de campagne.
 
@@ -548,7 +548,7 @@ Hier volgt een configuratievoorbeeld:
 >
 >U kunt verschillende configuraties opgeven door een achtervoegsel toe te voegen aan het bestand **netconf.xml** , bijvoorbeeld **netconf-dev.xml**, **netconf-prod.xml**, enz. Geef vervolgens de configuratie op die moet worden gebruikt voor het uitvoeren van het netreport in de bestanden **netreport.bat** of **netreport.sh** door bijvoorbeeld **$JAVA_HOME/bin/java netreport dev** of **@%JAVA_HOME%binjava netreport prod** toe te voegen.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Voor de **controleexploitant** om te werken, moet de machine dat het netrapport wordt uitgevoerd in een veiligheidsstreek zijn die op **sessionTokenOnly** wijze is. Als er voor deze operator geen vertrouwd IP-masker is opgegeven, moet de beveiligingszone ook de modus **allowEmptyPassword** en **allowUserPassword** hebben.
 
