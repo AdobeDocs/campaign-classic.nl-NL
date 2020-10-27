@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 877ca2275c9338377da9e435e070c9911314fe51
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 9%
+source-wordcount: '428'
+ht-degree: 5%
 
 ---
 
@@ -28,27 +28,21 @@ Daarom vinden wij het van essentieel belang dat u de meest recente versie van Ad
 
 ## Status vrijgeven{#rn-statuses}
 
-Vanaf Campaign Classic 19.2, wordt een status geassocieerd aan elke bouwstijl. Hieronder vindt u de statussen en hoe u deze kunt interpreteren.
+Aan elke build wordt een status gekoppeld. Hieronder vindt u de statussen en hoe u deze kunt interpreteren.
 
-![](assets/do-not-localize/green3.png) **Algemene beschikbaarheid** - De nieuwste stabiele build beschikbaar. Build gevalideerd in productie.
+![](assets/do-not-localize/green3.png) **Algemene beschikbaarheid** (GA) - Gevalideerd in productie en aanbevolen door Adobe.
 
-De **laatste stabiele build** is Gold Standard 10. Klik [hier](../../rn/using/gold-standard.md#gs-10)
+De **laatste GA-build** is Gold Standard 10. Klik [hier](../../rn/using/gold-standard.md#gs-10)
 
-![](assets/do-not-localize/limited3.png) **Beperkte beschikbaarheid** - build momenteel in productievalidering. Alleen on demand-implementatie.
+![](assets/do-not-localize/limited3.png) **Beperkte beschikbaarheid** (LA) - Alleen on-demand implementatie.
 
-![](assets/do-not-localize/blue3.png) **Release-kandidaat** - build gevalideerd door Adobe. Wachten op controle van productie.
+![](assets/do-not-localize/blue3.png) **De Kandidaat** van de versie (RC) - recentste versie met nieuwe mogelijkheden.
 
-![](assets/do-not-localize/orange3.png) **Niet meer beschikbaar** - Nieuwere build beschikbaar met opgeloste problemen. Bijwerken is vereist.
+De **laatste RC-build** is Campaign Classic 20.3. Klik [hier](../../rn/using/latest-release.md)
 
-![](assets/do-not-localize/red3.png) **Vervangen** - Bevat bekende regressies. Bijwerken is verplicht.
+![](assets/do-not-localize/orange3.png) **Niet meer beschikbaar** - U moet een update naar een nieuwere build uitvoeren.
 
-## Proces voor upgrade{#process-upgrade}
-
-Als gehoste klant (Managed Service of Hybrid) moet u contact opnemen met het zorgteam van de klant om uw omgeving te laten upgraden.
-
-Als gebruiker van de Gold Standard profiteert u automatisch van de Gold Standard-upgrade met de nieuwste stabiele versie zonder enige actie. [Meer informatie](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-10)
-
-Als gebruiker op locatie kunt u de upgrade uitvoeren. Hiervoor moet u de nieuwste stabiele build [](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) downloaden en al uw omgevingen upgraden. Lees meer over het [upgradeproces](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html)en raadpleeg de veelgestelde vragen over [upgrades](https://helpx.adobe.com/nl/campaign/kb/build-upgrade-faq.html).
+![](assets/do-not-localize/red3.png) **Vervangen** - Bijwerken naar een nieuwere build is verplicht.
 
 ## Aanbevelingen{#recommendations}
 
@@ -56,16 +50,24 @@ Om een stabiele configuratie te verzekeren, adviseren wij dat u de zelfde stabie
 
 Om uw implementatie up-to-date te houden, zorg ervoor om de [Vervangen en verwijderde eigenschappen](../../rn/using/deprecated-features.md) en de matrixpagina [van de](../../rn/using/compatibility-matrix.md) Verenigbaarheid met elke nieuwe versie te lezen.
 
-Als u op de hoogte wilt worden gebracht van nieuwe Experience Cloud-oplossingen, meldt u zich aan de [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html).
+## Proces voor upgrade{#process-upgrade}
 
-Lees meer over de andere [aanbevelingen](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html#Recommendations).
+Als gehoste klant (Managed Service of Hybrid) moet u contact opnemen met het zorgteam van de klant om uw omgeving te laten upgraden.
+
+Als gebruiker op locatie kunt u de upgrade uitvoeren. Hiervoor moet u de nieuwste stabiele build [](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) downloaden en al uw omgevingen upgraden. Lees meer over het [upgradeproces](../../production/using/build-upgrade.md)en raadpleeg de veelgestelde vragen over [upgrades](../../platform/using/faq-build-upgrade.md).
+
+### Gouden standaard{#upgrade-for-gold-standard-users}
+
+Als Gold Standard-gebruiker profiteert u automatisch van de Gold Standard-upgrade met de [nieuwste GA-build](../../rn/using/gold-standard.md#gs-10) zonder enige actie. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html).
+
+>[!NOTE]
+>De compatibiliteitsmatrix voor Gold Standard is beschikbaar in de [GA-compatibiliteitsmatrix](../../rn/using/compatibility-matrix-gs.md).
 
 ## Ondersteuning en andere handige koppelingen{#support}
 
 * [Help en ondersteuning](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
 * [Configuratiescherm-releases](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html)
-* [Documentatie-updates](../../rn/using/documentation-updates.md)
-* [Eerdere versies](../../rn/using/release--20-1.md)
-* [Verouderde functies](../../rn/using/deprecated-features.md)
-* [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md)
+* [Nieuwste documentatieupdates](../../rn/using/documentation-updates.md)
+* [Verouderde en verwijderde functies](../../rn/using/deprecated-features.md)
 
+Als u op de hoogte wilt worden gebracht van nieuwe Experience Cloud-oplossingen, meldt u zich aan de [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html).
