@@ -1,6 +1,6 @@
 ---
 title: Laatste release
-description: Laatste Campaign Classic release
+description: Opmerkingen bij de nieuwste release Campaign Classic
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -10,257 +10,154 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: d65e6f48bd84a2342895beca4a4ac184b57bf7c3
+source-git-commit: fe7ce92bde3405fed3429475cdd5681e5837876f
 workflow-type: tm+mt
-source-wordcount: '2188'
-ht-degree: 76%
+source-wordcount: '1820'
+ht-degree: 3%
 
 ---
 
 
 # Laatste release{#latest-release}
 
-![](assets/do-not-localize/cp-icon.png) **De nieuwe versie** van oktober van het Controlebord met domeinconfiguratie die CNAMEs en nieuwe gegevensbestand controlemogelijkheden gebruikt. [Meer informatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html).
+Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd met de **nieuwste kandidaatversie** van Campaign Classic Release.
 
-## ![](assets/do-not-localize/blue_2.png) Release 20.2.3 - build 9182 {#release-20-2-3-build-9182}
+Voor de Campaign Classic Gold Standard-versie (nieuwste GA-build) [raadpleegt u deze pagina](../../rn/using/gold-standard.md).
 
-_11 september 2020_
+## ![](assets/do-not-localize/blue_2.png) Release 20.3.1 - build 9228 {#release-20-3-1-build-9228}
 
-* Oplossing voor een regressie waarbij de voorbereiding van de levering werd geblokkeerd als gevolg van één foutieve functie op het leveringsonderdeel, wat tot geheugenoverbelasting leidde. (NEO-27346)
-* Probleem verholpen waarbij Apache en de webserver werden uitgeschakeld voordat de webtoepassing opnieuw werd gepubliceerd. (NEO-27155)
-* Oplossing voor een regressie in HTML-sjabloonbeheer die ertoe leidde dat URL&#39;s werden bijgehouden omdat tabs verkeerd werden geïnterpreteerd. (NEO-25909)
-* Probleem opgelost met de workflow voor het opschonen van databases die zou kunnen mislukken als gevolg van niet-beheerde gegevensbron. (NEO-23160, NEO-23364)
-* De opschoningsworkflow wordt nu verwijderd door verlopen lijsten met 100 batches in plaats van één voor één.
-* Probleem verholpen waarbij de interne naam van een externe account niet kon worden gewijzigd. (NEO-27323)
-* Een regressie herstellen tijdens een postupgrade, wat een onjuiste start van nlserver veroorzaakt (foutlogboeken).
-* Het updatebeheer voor gedeeld geheugen is verbeterd. De extra stappen die in 20.2 worden vereist zijn niet meer nodig.
-
-## ![](assets/do-not-localize/orange_2.png) Release 20.2.2 - build 9180 {#release-20-2-2-build-9180}
-
-_22 juli 2020_
-
-* Probleem verholpen waarbij tracering niet werkte toen de handtekeningfunctie was uitgeschakeld. (NEO-26411)
-* Probleem verholpen waarbij niet-ondertekende koppelingen van gepersonaliseerde domeinen werden geblokkeerd op het moment dat ze moesten worden toegestaan. (NEO-25210)
-* Probleem verholpen waardoor u URL&#39;s voor bijhouden niet kunt openen of erop kunt klikken wanneer u bepaalde oudere versies van Outlook gebruikt. (NEO-25688)
-* Probleem verholpen waarbij pagina-URL&#39;s die niet correct zijn gedefinieerd in e-mailleveringen werden gespiegeld (vanwege onjuiste ASCII-tekenbesturing). (NEO-26084)
-* Probleem met coderen van URL-beheer in de service voor anti-phishing is opgelost. (NEO-25283)
-* Probleem verholpen waarbij het bijhouden van URL&#39;s met fragmenten in personalisatieparameters (ankerlabels met hekje) niet werkte. (NEO-25774)
-* Probleem met bijhouden opgelost bij het gebruik van specifieke aangepaste volgformules. (NEO-25277)
-* Probleem verholpen waardoor het bijhouden van &#39;berichtklikken&#39; niet kon worden uitgevoerd (iOS- en Android-pushmeldingen). (NEO-25965)
-* Oplossing voor een regressie die invloed had op berekende velden in een werkstroom waardoor de werkstroom mislukte. (NEO-25194)
-* Oplossing voor een regressie die ervoor zorgde dat het direct maken van URL&#39;s voor webtracering niet werkte. (NEO-20999)
-* Probleem met regressie verholpen met leveringsrapporten buiten de doos die werden afgekapt tijdens het exporteren naar PDF. (NEO-25757)
-* Probleem verholpen waarbij de toepassing vastliep in de wizard voor implementatie.
-* Probleem verholpen waardoor de workflow voor het melden van voorstellen na een postupgrade niet correct kon werken.
-* De iOS HTTP2-connector is verbeterd (updates van derden en foutbeheer). (NEO-25904, NEO-25903)
-* De lijst jarsToSkip in catalina.properties is bijgewerkt om de verwijzing naar een jar-bestand te verwijderen dat niet meer werd gebruikt (iOS-meldingen).
-* Probleem verholpen waarbij de voorbereiding van de levering na de upgrade werd geblokkeerd.
-* Na de schakelaar aan het [nieuwe mechanisme](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)van opeenvolging ID, worden alle Webtoepassingen die de ontvankelijke lijst bijwerken opnieuw gepubliceerd tijdens postupgrade.
-* Oplossing voor een mogelijke XSS-kwetsbaarheid in de leveringsinhoud. (NEO-17987, NEO-26073)
-
-![](assets/do-not-localize/cp-icon.png) **Release van nieuw configuratiescherm in juni** met controle van actieve profielen, controle van de leverbaarheid van subdomeinen en beheer van GPG-sleutels. [Meer informatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html).
-
-## ![](assets/do-not-localize/orange_2.png) Release 20.2.1 - build 9178 {#release-20-2-1-build-9178}
-
-_8 juni 2020_
+_27 oktober 2020_
 
 **Nieuwe functies**
 
 <table> 
- <thead> 
-  <tr> 
-   <th> <strong>Ondersteuning voor emoticons</strong><br /> </th> 
-  </tr> 
- </thead> 
- <tbody> 
-  <tr> 
-   <td> <p>Bij het ontwerpen van een bericht in Campaign kunt nu gemakkelijk emoticons invoegen in de hoofdtekst van het bericht met behulp van een speciale knop. U kunt ze ook toevoegen aan de onderwerpregel van de e-mail. U kunt de lijst met beschikbare emoticons in de interface aanpassen.</p>
-    <p>Raadpleeg de <a href="../../delivery/using/defining-the-email-content.md#inserting-emoticons">gedetailleerde documentatie</a> voor meer informatie over het toevoegen van emoticons. Leer <a href="../../delivery/using/customizing-emoticon-list.md">in deze sectie</a> hoe u de lijst met emoticons kunt aanpassen.</p>
-   </td> 
-  </tr> 
- </tbody> 
+<thead>
+<tr> 
+<th> <strong>Verbeteringen voor iOS-pushmeldingen</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>Wanneer u uw mobiele app integreert met Campagne, moet u uw communicatie beveiligen met APNs (Apple Push Notification service). U kunt verificatie op basis van een certificaat of een token gebruiken.
+</p>
+<p>Deze twee verificatiemodi zijn nu beschikbaar voor mobiele iOS-apps in Campaign Classic:
+</p>
+<ul> 
+<li><p>Verificatie op basis van token (aanbevolen): deze verificatiemodus is gebaseerd op een .p8-bestand. Deze authentificatiemodus is sneller aangezien elke aanvraag aan APNs het teken bevat. <a href="https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns">Meer informatie</a></p></li>
+<li><p>Certificaatgebaseerde verificatie: deze verificatiemodus is gebaseerd op een .p12-bestand. Voor elke app is een afzonderlijk certificaat vereist. Dit certificaat wordt door Apple geleverd via uw ontwikkelaarsaccount. <a href="https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_certificate-based_connection_to_apns">Meer informatie</a></p></li> 
+</ul>
+<p>Leer hoe te om de authentificatiemodus in Campagne in de <a href="../../delivery/using/configuring-the-mobile-application.md">gedetailleerde documentatie</a>te selecteren.</p>
+</td> 
+</tr> 
+</tbody> 
 </table>
 
 <table> 
- <thead> 
-  <tr> 
-   <th> <strong>Azure Synapse FDA Connector</strong><br /> </th> 
-  </tr> 
- </thead> 
- <tbody> 
-  <tr> 
-   <td> <p>U kunt uw instantie van Campaign nu verbinden met uw externe database van Azure Synapse. Deze verbinding wordt beheerd via een nieuw extern account.</p>
-    <p>Azure Synapse is alleen beschikbaar voor hybride en on-premise omgevingen. Raadpleeg de <a href="../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse">gedetailleerde documentatie</a> voor meer informatie.</p>
-   </td> 
-  </tr> 
- </tbody> 
-</table>
-
-<table> 
- <thead> 
-  <tr> 
-   <th> <strong>Thaise en Braziliaanse privacywetten</strong><br /> </th> 
-  </tr> 
- </thead> 
- <tbody> 
-  <tr> 
-   <td> <p>De Thaise wet inzake de bescherming van persoonsgegevens (PDPA) is de nieuwe privacywet die de vereisten inzake databescherming voor Thailand harmoniseert en moderniseert. </p>
-   <p>Lei Geral de Proteção de Dados (LGPD) van Brazilië zal begin 2021 in werking treden voor alle bedrijven die in Brazilië persoonsgegevens verzamelen of verwerken.</p>
-   <p>Deze voorschriften zijn van toepassing op Adobe Campaign-klanten die data bewaren voor in deze landen wonende betrokken personen. Naast de privacymogelijkheden die reeds beschikbaar zijn in Campaign (met inbegrip van toestemmingsbeheer, instellingen voor dataretentie en gebruikersrollen), grijpen wij deze kans om extra mogelijkheden op te nemen om u te helpen uw gereedheid voor PDPA en LGPD te vergemakkelijken:</p>
-   <ul> 
-     <li><p>Recht op toegang en recht op verwijdering: wij gebruiken de mogelijkheden die voor AVG en CCPA zijn toegevoegd. <a href="https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html">Meer informatie</a></p></li> 
-     <li> <p>Wanneer u een aanvraag om toegang tot persoonsgegevens maakt met de Campaign-interface of -API, selecteert u nu het type <strong>Regulation</strong>: PDPA, LGPD, AVG, CCPA. <a href="https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html#ManagingPrivacyRequests">Meer informatie</a>.</p></li>
-    </ul>
-   </td> 
-  </tr> 
- </tbody> 
+<thead>
+<tr> 
+<th> <strong>Verbeteringen voor Android-pushmeldingen</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>Android-pushmeldingen zijn verbeterd en bieden nu ondersteuning voor FCM HTTP v1 API voor Android-pushkanaalverificatie. </p>
+<p>Met de nieuwe ondersteunde API-versie kunt u nu FCM-meldingsberichten verzenden die uitgebreide mogelijkheden voor pushberichten bieden. <a href="https://firebase.google.com/docs/cloud-messaging/migrate-v1">Meer informatie</a></p> 
+<p>In <a href="../../delivery/using/configuring-the-mobile-application-android.md">deze sectie</a> wordt uitgelegd hoe u de FCM HTTP v1-API voor Android in Adobe Campaign configureert.</p>
+</td> 
+</tr> 
+</tbody> 
 </table>
 
 **Verbeterde beveiliging**
 
-* Alle klanten hebben standaard een betere beveiliging voor het bijhouden van koppelingen in e-mails. Er is een extra, verbeterde beveiligingsfunctie beschikbaar die kan worden ingeschakeld door contact op te nemen met de klantenservice. Meer informatie over de functie en de stappen die niet-gehoste klanten moeten uitvoeren, vindt u in de [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html). (NEO-24232)
+* Beveiligd laden van bibliotheken: Om tegen DLL te beschermen die aanvallen voorlaadt, laadt de Campagne nu Vensters DLLs slechts van het standaard systeemDLL weg terwijl het laden van de Cliënt van de Campagne (nlclient). [Meer](https://support.microsoft.com/en-us/help/2389418/secure-loading-of-libraries-to-prevent-dll-preloading-attacks) informatie (NEO-24147)
+* Oplossing voor een beveiligingsprobleem ter versterking van de bescherming tegen SSRF-aanvallen (Server Side Request Smeery). (NEO-25661)
+* Probleem verholpen dat optrad tijdens het verwerken van GDPR-privacyverzoeken die ervoor zorgden dat records niet konden worden verwijderd uit aangepaste tabellen met een relatie op het tweede niveau met de tabel Ontvanger. (NEO-25967)
+* Probleem verholpen met beveiliging door gebruik te maken van API-aanroepen van gebruikers die geen beheerder zijn en Adobe Experience Manager-sjablonen proberen te synchroniseren. (NEO-23487)
 
-* Om de beveiliging te optimaliseren is het MD5-hashalgoritme waarmee bestandsnamen worden gegenereerd, versterkt met sha256 voor het uploaden van openbare bestanden. (NEO-17044)
-
-* Om de beveiliging tegen XSS-aanvallen te versterken worden scripts aan de clientzijde onbruikbaar gemaakt bij het uitvoeren van een spiegelpagina. (NEO-17987)
-
-* Probleem verholpen waarbij de technische workflow voor **het opschonen van privacyaanvragen** niet kon worden gebruikt om afstemmingsdata te verwijderen. (NEO-25168, NEO-21004)
-
-* Probleem verholpen met de activiteit **Bestand overdragen** waardoor verificatie op basis van SFTP-sleutels niet kon werken op Debian 9. (NEO-23183)
-
-**Verbeteringen op gebied van compatibiliteit**
+**Compatibiliteitsupdates**
 
 De volgende systemen worden nu ondersteund met Campaign:
-* Besturingssystemen: Debian 10
-* RDBMS: Oracle 18c en Oracle 19c
-* FDA: Azure Synapse Analytics
+* iOS 14
+* PostgreSQL 12
+* CentOS / RedHat 8
+* MSSQL2019
 
-Kom meer te weten in de [Campaign-compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html).
+Learn more in the [Campaign Compatibility matrix](../../rn/using/compatibility-matrix.md).
+
+**Verouderde functies**
+
+De volgende functies zijn afgekeurd in 20.3:
+
+* Het demdex-domein dat wordt gebruikt voor het importeren en exporteren van soorten publiek naar de Adobe Experience Cloud is afgekeurd. Als u het indexdomein voor uw invoer/uitvoer externe rekeningen gebruikt, moet u uw implementatie aanpassen dienovereenkomstig. [Meer informatie](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+* De de integratieauthentificatie van trekkers oorspronkelijk die op de authentificatie van AUTH wordt gebaseerd om tot pijpleiding toegang te hebben is nu veranderd en verplaatst naar Adobe I/O. [Meer informatie](../../integrations/using/about-triggers.md)
+
+Meer informatie vindt u op de pagina [](../../rn/using/deprecated-features.md)Afgekeurde en verwijderde functies.
 
 **Verbeteringen**
 
-* Transactionele berichten zijn verbeterd voor een betere gebruikerservaring. U kunt nu de publicatie van een transactionele berichtsjabloon ongedaan maken, waardoor deze uit de uitvoeringsinstanties wordt verwijderd. [Meer informatie](../../message-center/using/template-unpublication.md).
-
-* Er zijn nieuwe opties beschikbaar om beperkingen in te stellen bij het verzenden van e-mails die afbeeldingen of bijlagen bevatten. Deze beveiligingen kunnen prestatieproblemen vermijden, wat in het bijzonder nuttig is bij transactionele berichten. [Meer informatie](../../installation/using/configuring-campaign-options.md#delivery)
-
-* Met de nieuwe optie **Prepare the delivery parts in the database** kunt u de levering direct in de database voorbereiden. Hierdoor kan de analyse aanzienlijk worden versneld. Deze optie is alleen beschikbaar voor specifieke configuraties. [Meer informatie](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis). (NEO-23886)
-
-* De prestaties van de activiteit [CRM Connector](../../workflow/using/crm-connector.md) voor Microsoft Dynamics zijn verbeterd. (NEO-13303, NEO-12710)
-
-* De versie van het gedeelde geheugen is verhoogd.
-
-   >[!WARNING]
-   >
-   >Deze verbetering vereist een extra stap na het uitvoeren van de upgrade. Raadpleeg de onderstaande sectie over **Technische ontwikkelingen**.
-
-* De opschoningsworkflow is verbeterd. Zwevende werktabellen van alle verwijderde workflows worden nu ook automatisch verwijderd door de opschoningsworkflow. [Meer informatie](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances).
-
-* Certificaten voor mobiele iOS-applicaties met de iOS HTTP2-connector worden nu gevalideerd voordat pushmeldingen worden verzonden, zodat leveringen niet mislukken vanwege verlopen certificaten.
-
-* Het beheer van HTTP-proxyverbindingen is verbeterd. [Meer informatie](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
+* Er zijn verschillende verbeteringen aangebracht in de **clientconsole**:
+   * Om incompatibiliteit met bepaalde beperkingen van GPO-regels voor internetbeveiliging te voorkomen, is het aanmeldingsscherm van de client-console van Campagne vervangen door een ingebouwd standaard Windows-formulier.
+   * Probleem verholpen bij het kopiëren/plakken van activiteiten in een workflow met de 64-bits clientconsole. (NEO-27635)
+   * In het menu **Info** is informatie toegevoegd om 64- en 32-bits consoles van elkaar te onderscheiden.
+* De workflow-id wordt nu weergegeven in de logboeken wanneer u een workflow hervat. Op deze manier kunt u beter bepalen welke workflow is hervat.
+* Er is een nieuw permanent cookie geïntroduceerd: nllastdelid. In dit cookie (anders dan UUID230) wordt de deliveryId opgeslagen. Wanneer de zittingskoekje niet aanwezig is, zou de uitzendingsinformatie worden genomen van deliveryId huidig in dit koekje.
+Deze wijziging verhelpt een probleem dat optrad toen de browsersessie voorbij was: het sessiecookie met deliveryId en broadlogId is verwijderd. Zonder deliveryId, kon de breedbandinformatie niet worden gevonden en de het volgen lijstinformatie zou ontbreken in het geval van permanent het volgen (laatste levering).
+Meer informatie over cookies vindt u in [deze sectie](../../platform/using/privacy-and-recommendations.md#cookies).
+* Verbeterde hoge prestaties van de volumeproductie van de leveringsprestatie met de leverbaarheidsserver door het MTA proces opnieuw te beginnen alvorens levering te verzenden.
 
 **Overige wijzigingen**
 
-* Verouderde sms-connectoren zijn nu afgeschaft. Raadpleeg de [pagina met verouderde functies](../../rn/using/deprecated-features.md).
-
-* U kunt uw eigen Litmus-account niet meer gebruiken voor provisioning en gebruik van inboxrendering in Adobe Campaign. [Meer informatie](../../delivery/using/inbox-rendering.md).
-
-* Voor een beter onderscheid tussen weergaven en mappen is de kleur van weergavenamen gewijzigd van donkerblauw in donkercyaan. [Meer informatie](../../platform/using/access-management.md#about-views)
-
-* Campaign Classic kan nu worden verbonden met Microsoft Dynamics CRM-accounts die worden gehost in de regio’s Verenigd Koninkrijk, India en Canada. Dit is van toepassing op Office 365 en op on-premise implementatietypen (Dynamics 2015).
-
-* Campaign voert nu een TLS-verificatie uit om te controleren of de hostnaam van de server overeenkomt met de hostnaam in het opgegeven certificaat.
-
-* De tabel met leverings- en trackingstatistieken geeft nu één vermelding per levering op voor het sms-kanaal in plaats van één vermelding per leveringsontvanger.
-
-* Er is een foutbericht toegevoegd in het logboekbestand om gebruikers te waarschuwen wanneer het gedownloade bestand groter is dan de schijfruimte.
-
-* De volgende functies zijn nu beschikbaar voor de Snowflake-connector: MonthsAgo, DaysAgoInt, ToDateTime, YearsAgo.
+* Wanneer u relatief pad gebruikt voor SFTP, worden `~/` tekens niet meer automatisch toegevoegd. Indien nodig kunt u handmatig `~/` tekens aan het pad toevoegen, maar Adobe raadt u aan een **absoluut pad** te gebruiken.
+* De authentificatie van NT van vensters is verwijderd uit de beschikbare authentificatiemethodes toen het vormen van een nieuw gegevensbestand met een Server van Microsoft SQL. [Meer informatie](../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine)
+* De workflow voor het opschonen van databases is geoptimaliseerd voor Teradata om de prestaties te verbeteren. (NEO-19959)
+* Het foutbericht dat werd weergegeven bij het invoegen van een afbeelding uit Adobe Target, is verbeterd en de naam van de huurder was leeg in de externe account.
+* In leveringseigenschappen is de naam van de **[!UICONTROL Archive emails]** optie gewijzigd **[!UICONTROL Email BCC]**.
+* Om robuustheid te verbeteren, worden selectAll vragen met ongeldige knopen nu verworpen. Als u de controle moet onbruikbaar maken en aan het vorige gedrag terugkeren, kunt u XtkSecurity_Disable_QueryCheck aan 0 plaatsen.
 
 **Technische ontwikkelingen**
 
-Deze nieuwe build werkt het gedeelde geheugen bij en vereist extra stappen om de upgrade uit te voeren. Als Campaign-beheerder dient u geheugensegmenten te verwijderen. Deze stappen zijn verplicht, omdat oude segmenten het starten van nlserver/nlsrvmod verhinderen.
+Tomcat is bijgewerkt van versie 7 (7.0.103) naar versie 8 (8.5.57).
 
-In Windows moet het systeem opnieuw worden opgestart.
+De `tomcat-7` map wordt vervangen door een `tomcat-8` map.
 
-In Debian/CentOs moet het gedeelde geheugen worden verwijderd. Dit zijn de stappen die u moet uitvoeren:
+In vensters _zijn iis_neolane_setup.vbs_ en _apache_neolane.conf_ nu geïnstalleerd in de `conf` directory (in plaats van `tomcat-7/conf` eerder).
 
-Voor de upgrade moet u de volgende stappen uitvoeren:
-
-1. Stop de service apache2 (http2 op CentOS) als deze actief is.
-1. Stop de service nlserver (nlserver6 voor oudere builds) als deze actief is.
-
-Na de upgrade:
-
-1. Verwijder het gedeelde geheugen met de opdracht **ipcrm** als de versie ouder is dan de huidige versie.
-1. Start de service nlserver als deze actief was.
-1. Start de service apache2 als deze actief was.
-
-Hier zijn de opdrachtregels voor Debian:
-
-```
-/etc/init.d/nlserver* stop
-/etc/init.d/apache2 stop
-
-for i in `ipcs -s | awk '/www-data/
-{print $2}'`; do (ipcrm -s $i); done
-
-for i in `ipcs -m | awk '/www-data/ {print $2}
-'`; do (ipcrm shm $i); done
-
-for i in `ipcs -m | awk '/neolane/
-{print $2}'`; do (ipcrm shm $i); done
-
-for i in `ipcs -s | awk '/neolane/ {print $2}
-'`; do (ipcrm -s $i); done
-
-/etc/init.d/apache2 restart
-/etc/init.d/nlserver* start
-```
-
-Een voorbeeld voor Linux is beschikbaar op deze [pagina](../../configuration/using/additional-parameters.md#redirection-server-configuration).
+Op Linux wordt _apache_neolane.conf_ nu geïnstalleerd in de `conf` directory.
 
 **Patches**
 
-* Oplossing voor een kleine regressie in de logboeken van de opschoningsworkflow.
-* Probleem verholpen met de activiteit **Laden (SOAP)** tijdens het parseren van WSDL-bestanden in de workflow.
-* Probleem verholpen dat een fout veroorzaakte bij het upgraden van een groot aantal workflows met behulp van een activiteit **Enquête** om een groot aantal workflows efficiënt te verwerken.
-* Oplossing voor een probleem met onregelmatige verbinding tijdens de verwerking van inMail-berichten van de Enhanced MTA. (NEO-20380)
-* Probleem verholpen waarbij de percentages voor hot clicks niet correct werden weergegeven wanneer afbeeldingen met een breedte van 100% werden weergegeven in de HTML. (NEO-23203)
-* Probleem verholpen waardoor de voorwaardelijke content van de levering niet volledig kon worden weergegeven in het rapport met hot clicks. (NEO-18729)
-* Probleem verholpen waarbij de stap voor doelgoedkeuring werd overgeslagen wanneer een workflow werd hervat om een terugkerende levering te verzenden. (NEO-18166)
-* Probleem verholpen waardoor de knop **Restart message preparation** niet kon worden hervat nadat een fout in de workflow was verholpen. (NEO-13488)
-* Probleem verholpen waarbij leveringen in de midsourcingmodus tijdens de opbouwfase konden mislukken, waarbij ontvangers in de Japanse e-mailindeling werden opgenomen. (NEO-23846)
-* Probleem met tijdzoneconversie verholpen met de Snowflake-connector (NEO-20105)
-* Probleem met externe accounts met FTP via SSL opgelost. (NEO-20498)
-* Probleem verholpen waarbij afbeeldingen niet konden worden weergegeven in Line-leveringen. (NEO-23207)
-* Probleem verholpen dat een fout veroorzaakte bij het publiceren van een aanbieding. (NEO-23312)
-* Probleem verholpen met pushmeldingen die het mogelijk maakten testverbindingen te gebruiken in mobiele applicaties, zelfs als het certificaat verlopen was. (NEO-22991)
-* Probleem verholpen dat invloed zou kunnen hebben op pushmeldingen wanneer deze op een hoge frequentie worden verzonden. (NEO-20516)
-* Probleem verholpen waarbij bij de volgende trackingdata duplicaten werden opgenomen, ook al werden deze niet bijgehouden in de trackinglogboeken. (NEO-20040)
-* Probleem verholpen waarbij dubbele transactionele e-mails werden verzonden nadat een fout met de communicatie van de trackingserver was verholpen. (NEO-23640)
-* Probleem verholpen waarbij de waarde van de coderingsparameter werd verwijderd bij omleiding van een URL voor reeksspatiëring (invloed op Japanse tekens). (NEO-25637)
-* Probleem verholpen waarbij een query niet werkte bij het vergelijken van getallen met drijvende komma’s. (NEO-23243)
-* Probleem verholpen waarbij de weergave van de content van de kolom **Modified by** kon worden verhinderd nadat een workflow opnieuw was gestart. (NEO-23035)
-* Probleem opgelost waarbij het downloaden van logboekbestanden uit een tweede container tot mislukken van de technische workflow voor tracking leidde. (NEO-23159)
-* Probleem verholpen waarbij workflows konden mislukken wanneer een activiteit **Verrijking** werd uitgevoerd. (NEO-17338)
-* Er is een controle toegevoegd aan het veld **Doubles to keep** in de workflowactiviteit **Deduplicatie** om te voorkomen dat er ongeldige of negatieve waarden worden ingevoerd.
-* De **planningswizard** is verwijderd uit de terugkerende campagnes om te voorkomen dat uren en minuten worden vermeld. Alleen datums worden in aanmerking genomen.
-* Probleem verholpen met extra opslagvelden tijdens het maken van leveringen via de optie **Computed by a script** in de workflowactiviteit **Script**. (NEO-20609)
-* Probleem verholpen waarbij dubbele workflows niet werden verwijderd binnen de opschoningstaken voor de database.
-* Probleem verholpen waarbij de technische workflow voor **facturering (actieve profielen)** mislukte. (NEO-19777)
-* Oplossing voor een regressieprobleem bij gebruik van de ACS-connectorfunctie die de verbinding met een Campaign Standard-instantie heeft verhinderd (onjuist beheer van de FOH/FOH2-verbinding). (NEO-23433)
-* Probleem verholpen waardoor u geen schema-extensie voor een primaire sleutel met meerdere kolommen met een Hadoop-tabel kon maken. (NEO-17390)
-* Probleem verholpen in de activiteit **Laden (SOAP)** waardoor WSDL-bestanden soms niet niet vanaf een URL konden worden geladen. (NEO-16924)
-* Probleem verholpen waardoor u geen **onvoorwaardelijke stop** kon uitvoeren via de console wanneer meerdere actieve workflowservers een gelijke taakverdeling hadden. (NEO-19556)
-* Oplossing voor een regressie die ertoe leidde dat de opschoningsworkflow vastliep.
-* Probleem verholpen dat kon optreden wanneer een sjabloon op een uitvoeringsinstantie werd gepubliceerd.
-* Probleem verholpen waardoor de technische workflow van collectPrivacyRequests niet kon worden uitgevoerd. (NEO-20513, NEO-25169)
-* Problemen verholpen die konden optreden wanneer werd geprobeerd verbinding te maken met Audience Manager na een upgrade naar build 9080. (NEO-20511, NEO-25167)
-* Problemen verholpen die konden optreden bij het exporteren van rapporten in PDF- of XLS-indeling. (NEO-20982, NEO-23493, NEO-23348)
-* Probleem verholpen waarbij een levering twee keer in de leveringslijst kon worden weergegeven nadat deze was verzonden.
-* Probleem met de leveringsvoorbereiding verholpen dat kon optreden wanneer de routeringsconfiguratie was ingesteld om de levering via midsourcing te verzenden.
-* Probleem verholpen waarbij een foutbericht kon worden weergegeven wanneer op een koppeling voor een webapplicatie in een Line-bericht werd geklikt.
-* Probleem verholpen waarbij de geschiedenis van de activiteit **Incrementele query** werd verwijderd na het uitvoeren van de opschoningsworkflow.
-* Probleem verholpen bij het maken van een extern account voor midsourcing waarbij de optie NmsMidSourcing_LastBroadLog_&lt;InternalName> ontbrak..
-* Probleem met regressie bij databaseverbinding verholpen waarbij de webserver voortdurend opnieuw werd opgestart als gevolg van een probleem met de databasecodering. Dit kan leiden tot overconsumptie. (NEO-23264)
+* Probleem verholpen waardoor leveringsstatistieken niet opnieuw konden worden berekend.
+* Probleem verholpen waarbij een foutbericht werd weergegeven tijdens het uploaden van een CSV-bestand bij het gebruik van een Campaign Classic 9080-build die was aangesloten op een server die gebruikmaakte van een oudere build. (NEO-23218)
+* Probleem verholpen waarbij een foutbericht kon worden weergegeven tijdens het configureren van de wizard CRM voor Microsoft Dynamics voor een externe account. Dit is te wijten aan een compatibiliteitsprobleem met de nieuwste versie van MS Dynamics CRM API. (NEO-24528)
+* Probleem verholpen waardoor u opzoektypeverslagen (gegevens die bestaan uit buitenlandse zeer belangrijke verslagen die met andere lijsten worden verbonden) van Campaign Classic naar de Dynamiek van Microsoft kon uitvoeren gebruikend de schakelaar van CRM. (NEO-23864)
+* Probleem verholpen dat kon verhinderen dat de gegevens van de Dynamica van Microsoft worden gehaald als de **Automatische indexoptie** in de schakelaar van CRM werd toegelaten. (NEO-25981)
+* Probleem met IMS-verificatie verholpen waarbij verbindingen geopend konden blijven, zelfs als ze werden beëindigd. De beëindigde verbindingen zullen nu automatisch worden gesloten zodra zij worden gebeëindigd om het accumuleren van verbindingen en het verbruiken van systeemmiddelen te vermijden. (NEO-25996)
+* Probleem verholpen waarbij geen foutbericht werd weergegeven wanneer de synchronisatie van Adobe Experience Manager-inhoud voor een levering is mislukt als gevolg van een onjuiste configuratie van de externe account (onjuist account of wachtwoord). Er wordt nu een bericht weergegeven in het geval van een fout, zodat u het probleem gemakkelijker kunt identificeren. (NEO-25586)
+* Probleem verholpen die optrad bij het selecteren van het bewerkingstype **Bijwerken** in de activiteit Gegevens **** bijwerken. Als de bij te werken gegevens onjuist waren, zou de workflow mislukken en mislukken. In het geval van onjuiste gegevens, zal het werkschema niet ontbreken, en de verslagen zullen in een **Afgewezen uitgaande overgang worden opgeslagen** . (NEO-23794)
+* Probleem verholpen waardoor werkstromen die subworkflows bevatten, niet konden werken. (NEO-24036)
+* Probleem verholpen tijdens het bewerken van een beschrijving van een campagnemalplaatje dat ervoor zorgde dat de knop **Opslaan** niet kon worden weergegeven tijdens het kopiëren-plakken van symbolen zoals bijvoorbeeld Japanse tekens. (NEO-27071)
+* Probleem verholpen waardoor u de trackingserver niet kon wijzigen in de wizard Instantieconfiguratie.
+* Probleem verholpen waardoor de beschrijving van een campagne- of campagnemalplaatje niet kon worden opgeslagen wanneer er buiten het venster werd geklikt voordat op de knop **Opslaan** werd geklikt. (NEO-27449)
+* Probleem verholpen waarbij het technische werkschema **Aantal actieve factureringsprofielen** (billingActiveContactCount) niet kon werken. Dit zou kunnen gebeuren als een verbinding op een berekend gebied in een schemauitbreiding was uitgevoerd. Er is een grote hoeveelheid gegevens gemaakt, wat ertoe kan leiden dat de database over onvoldoende ruimte beschikt. (NEO-24062)
+* Probleem verholpen met de activiteit **Gegevens laden (bestand)** , waardoor u Japanse tekens uit tekst- en CSV-bestanden niet kunt importeren als deze aan het einde van het bestand zijn geplaatst. (NEO-24957)
+* Probleem verholpen met ononderbroken leveringen, waardoor de velden **Analyse gestart** en **Analyse voltooid** niet correct kunnen worden ingevuld. (NEO-20755)
+* Probleem verholpen waarbij een foutbericht kon worden weergegeven wanneer werd geprobeerd SMS-berichten voor te vertonen na een query op een ander schema dan **Ontvanger** (nms:ontvanger). (NEO-27517)
+* Probleem verholpen bij gebruik van de Snowflake FDA-aansluiting. Een gebruiker met de de toegangsnaamrechten van de Snowflake FDA kon geen vraag op een schema van de Snowflake uitvoeren. Er is een fout van het type &quot;Wachtwoord niet gevonden&quot; weergegeven in de logboeken. (NEO-23851)
+* Probleem verholpen bij het gebruik van een FDA-connector die gebeurde toen de naam van het gekoppelde FDA-schema een subtekenreeks was van een elementnaam van het huidige schema. Dit gebeurde bijvoorbeeld wanneer het FDA-schema &quot;cust&quot; was en een van de elementen binnen het Ontvangerschema &quot;customer&quot; was. Bij het ophalen van de kolom in het element &quot;customer&quot; en het toevoegen van een kolom uit het schema &quot;cust&quot; FDA, ontbrak de waarde voor de lokale kolom. (NEO-20193)
+* Probleem verholpen in workflows tijdens het ophalen van records uit een externe database en het invoegen van records in de Campagne-database. (NEO-26359)
+* Probleem verholpen in de technische workflow voor de status **van een** update-gebeurtenis: om het rangschikken van de inkomende overeenkomstige gebieden in de activiteit van de **Statistieken** van de Levering aan te passen, werd het rangschikken van drie bestemmingsgebieden in de activiteit van de de leveringsstaten **van de** Update veranderd van 32 in 64 beetjes. (NEO-11557) Meer informatie over de workflow voor de status **van een** update-gebeurtenis vindt u in [deze sectie](../../workflow/using/message-center--execution-.md).
+* Probleem verholpen in het **Message Center-rapport met gebeurtenisgeschiedenis** dat scriptfouten veroorzaakte bij het toepassen van filters en dat het filter op een datumbereik onmogelijk maakte. (NEO-23365)
+* Oplossing voor een interferentieprobleem tussen de technische workflows van de **campagnebanen** (operationMgt) en **Preview** (predicasting). Dit gebeurde wanneer de geplande leveringen in &quot;Klaar Doel&quot;of &quot;Klaar om worden geleverd&quot;status bleven. (NEO-20819)
+* Probleem met XML-parsering verholpen waarbij de XML-id niet aanwezig was in het gegevensveld in xtkOperator. Het veroorzaakte een postupgrade-fout. (NEO-26113)
+* Probleem verholpen bij het gebruik van de **bestandsoverdrachtactiviteit** die gekoppeld was aan een Azure extern account gecodeerd in SSL, waar de verbinding tot stand was gebracht met HTTP in plaats van met HTTPS. (NEO-26720)
+* Probleem verholpen met een MSSQL-database waarbij een fout kon optreden met de procedure up_updatestats tijdens de opschoningsworkflow.
+* Oplossing voor een crash die optrad tijdens het afsluiten van het webproces als de interactieverzoeken nog steeds worden verwerkt. (NEO-26447)
+* Probleem verholpen waarbij de functie **NoNull** in Oracle DB niet meer werkte na upgrade 9032. (NEO-26488)
+* Probleem verholpen waarbij de traceringsworkflow mislukte na upgrade 9171 als het LINEV2-pakket was geïnstalleerd zonder het Message Center-pakket.
+* Probleem met schaalbaarheid verholpen waarbij de verbindingspool niet kon worden verhoogd tot het gewenste aantal verbindingen omdat de verbindingstekenreeks voor het kenmerk &#39;APP&#39; uiteindelijk een ongeldige waarde kreeg. (NEO-25105)
+* Probleem verholpen op het niveau van de proxyconfiguratie waardoor u zich niet kon aanmelden bij Adobe Campaign na de laatste Windows 10-update. (NEO-27813)
+* Probleem verholpen waarbij ongewenste URL&#39;s zichtbaar werden in de geleverde e-mails nadat HTML-sjablonen met trackingkoppelingen waren geïmporteerd. (NEO-25909)
+* Probleem verholpen waarbij de server vastliep bij het weergeven van de doelgegevens van de rest van een activiteit **Splitsen** in een workflow.
+* Probleem verholpen waarbij de server vastliep door geheugenbeschadiging te voorkomen tijdens het opschonen van de expressieparser. (NEO-26856)
+* Probleem verholpen in de verrijkingsactiviteit waarbij niet-beheerders instantievariabelen definieerden. (NEO-25653)
