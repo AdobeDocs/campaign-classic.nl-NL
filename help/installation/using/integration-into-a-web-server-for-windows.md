@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: a4f2ae0e-e631-4ab6-934e-8298e4ce6f2c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d509dc584cd4ae17c6dda85c09fceee8c6162dba
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 3%
@@ -70,7 +70,7 @@ Pas de volgende configuratiestappen toe:
 
    ![](assets/s_ncs_install_iis7_parameters_step1.png)
 
-1. Met een **VBS** -script kunt u de bronnen die door de Adobe Campaign-server worden gebruikt, automatisch configureren in de virtuele directory die we zojuist hebben gemaakt. Als u het bestand wilt starten, dubbelklikt u op het bestand **is_neolane_setup.vbs** in de `[INSTALL]\tomcat-7\conf` map, waar `[INSTALL]` zich het pad bevindt voor toegang tot de installatiemap van Adobe Campaign.
+1. Met een **VBS** -script kunt u de bronnen die door de Adobe Campaign-server worden gebruikt, automatisch configureren in de virtuele directory die we zojuist hebben gemaakt. Als u het bestand wilt starten, dubbelklikt u op het bestand **is_neolane_setup.vbs** in de `[INSTALL]\conf` map, waar `[INSTALL]` zich het pad bevindt voor toegang tot de installatiemap van Adobe Campaign.
 
    ![](assets/s_ncs_install_iis7_parameters_step2.png)
 
