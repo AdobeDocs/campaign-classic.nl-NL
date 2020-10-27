@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: message-templates
 discoiquuid: 81090be2-3ed4-4f35-948b-e21af6e19999
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 8%
@@ -26,7 +26,7 @@ U kunt berichtlevering testen door een bewijs naar een eerder gecreeerd zaadadre
 
 Bij het verzenden van een bewijs wordt hetzelfde proces gebruikt als bij een normale levering (zie [deze sectie](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)voor meer informatie). Als u echter een bewijs wilt verzenden binnen Message Center, moet u de volgende bewerkingen vooraf uitvoeren:
 
-* creeer één of meerdere zaadadressen (verwijs naar het [Leiden zaadadressen in transactionele berichten](../../message-center/using/managing-seed-addresses-in-transactional-messages.md)) met testgegevens (verwijs naar de gegevens [van de](../../message-center/using/personalization-data.md)Personalisatie);
+* Creeer één of meerdere zaadadressen (verwijs naar het [Leiden zaadadressen in transactionele berichten](../../message-center/using/managing-seed-addresses-in-transactional-messages.md)) met testgegevens (verwijs naar de gegevens [van de](../../message-center/using/personalization-data.md)Personalisatie).
 * Maak de berichtinhoud (zie [Berichtinhoud](../../message-center/using/creating-message-content.md)maken).
 
 Het bewijs verzenden:
