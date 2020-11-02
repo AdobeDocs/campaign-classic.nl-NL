@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: asset-sharing
 discoiquuid: d10624ea-d961-4162-879b-1754f897d763
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
@@ -37,5 +37,5 @@ Raadpleeg de sectie Toegang [configureren tot middelen](../../integrations/using
 
 >[!NOTE]
 >
->Als u Adobe Campaign On-Premise gebruikt, is de integratie met de de kerndienst van Activa en met AEM Assets niet beschikbaar, tenzij AEM Assets ook On-Premise is.
+>In de context van een Adobe Campaign On-Premise-omgeving is integratie met de kernservice Middelen en met AEM Assets niet beschikbaar, tenzij AEM Assets ook op locatie is.
 
