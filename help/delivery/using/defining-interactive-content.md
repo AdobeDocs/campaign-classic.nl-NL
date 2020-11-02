@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: sending-emails
 discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1572'
 ht-degree: 3%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 3%
 
 # Interactieve content definiëren{#defining-interactive-content}
 
-Met Adobe Campaign kunt u de nieuwe interactieve [AMP-indeling voor e-mail](https://amp.dev/about/email/) proberen, waarmee u onder bepaalde omstandigheden dynamische e-mailberichten kunt verzenden.
+Met Adobe Campaign kunt u onder bepaalde omstandigheden de nieuwe interactieve [AMP gebruiken voor de indeling E-mail](https://amp.dev/about/email/) , waarmee u dynamische e-mailberichten kunt verzenden.
 
-Met AMP for Email kunt u:
+Met AMP voor e-mail kunt u:
 * Test het leveren van AMP-e-mails naar specifieke adressen die correct zijn geconfigureerd.
 * E-mails met AMP naar Gmail-, Outlook- of Mail.ru-adressen verzenden nadat u zich hebt geregistreerd bij de betreffende providers.
 
