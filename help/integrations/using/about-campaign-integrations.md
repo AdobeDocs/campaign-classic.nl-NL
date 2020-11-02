@@ -10,44 +10,44 @@ content-type: reference
 topic-tags: campaign-integrations
 discoiquuid: 0af1fd96-48ef-43c9-a03b-0f9a6e0e02fe
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 10%
+source-wordcount: '783'
+ht-degree: 8%
 
 ---
 
 
-# Campaign-integraties {#about-campaign-integrations}
+# Get started with Adobe Campaign integrations {#about-campaign-integrations}
 
 Adobe Experience Cloud is een uitgebreide reeks van best-in-klasse, geïntegreerde oplossingen die op een gemeenschappelijk gegevensplatform met een gemeenschappelijke reeks krachtige kerndiensten worden voortgebouwd.
 
 Meer informatie over de beschikbare functionele integratie tussen Adobe Campaign- en [Adobe Experience Cloud-oplossingen](https://docs.adobe.com/content/help/en/core-services/interface/marketing-cloud-integrations.html) en [kernservices](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html). U kunt uw oplossingsimplementaties dan moderniseren en Experience Cloud uitvoeren zodat u eigenschappen zoals klantenattributen en publiek kunt gebruiken.
 
-De volledige lijst van Adobe oplossingen en kerndiensten die met Adobe Campaign kunnen worden geïntegreerd, evenals bijbehorende documentatie, is beschikbaar in [deze sectie](#experience-cloud-integrations).
-
 ![](assets/ExCloud-solutions.png)
 
+De volledige lijst van Adobe oplossingen en kerndiensten die met Adobe Campaign kunnen worden geïntegreerd, evenals bijbehorende documentatie, is beschikbaar in [deze sectie](#experience-cloud-integrations).
 
 >[!CAUTION]
 >
->Voor de meeste van deze integraties moet u zich aanmelden via een Adobe ID (IMS). For more on this implementation, refer to [this page](../../integrations/using/about-adobe-id.md).
->
->De IMS-implementatie is een complex proces, dat lang kan duren. Het is strikt voorbehouden aan de technische beheerders van de Adobe.
+>De meeste van deze integraties vereisen om het Systeem van Adobe Identity Management (IMS) uit te voeren, aan login via een Adobe ID. [Meer weten op deze pagina](../../integrations/using/about-adobe-id.md)?
+
 
 ## Uw oplossingen koppelen {#working-with-experience-cloud-solutions}
 
-Afhankelijk van uw omgeving kunnen verschillende oplossingen aan Adobe Experience Cloud worden gekoppeld. Ze zijn gekoppeld als organisaties. An **organization** is the entity that enables an administrator to configure groups and users, and to control single sign-on in the Experience Cloud. De organisatie functioneert als een aanmeldingsbedrijf dat alle producten en oplossingen van Experience Cloud omvat. Meestal is een organisatie uw bedrijfsnaam. Een bedrijf kan echter vele organisaties hebben.
+U kunt meerdere oplossingen koppelen aan Adobe Experience Cloud. The **organization** is the customer entity that enables an administrator to configure groups and users, and to control single sign-on (SSO) in Adobe Experience Cloud. De organisatie handelt als een login bedrijf dat alle producten en oplossingen van de Experience Cloud overspant. Meestal is een organisatie uw bedrijfsnaam. Een bedrijf kan echter vele organisaties hebben.
 
 Organisatiebeheer en het koppelen van Adobe Experience Cloud-accounts vindt u in het Help-portaal [van](https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/organizations.html)Adobe Experience Cloud.
 
->[!CAUTION]
->
->Wanneer u Adobe Campaign voor het eerst installeert of een bestaande installatie integreert met Adobe Experience Cloud, wordt de [Experience Cloud ID-service](https://docs.adobe.com/content/help/en/id-service/using/home.html) ingeschakeld. Deze service vervangt het permanente cookie dat in de eerste plaats door Adobe Campaign wordt gebruikt voor de trackingfuncties.
->
->Een unieke bezoeker-id wordt vervolgens toegewezen aan ontvangers die trackinglogboeken genereren. Deze id wordt opgeslagen in het **[!UICONTROL Requester UUID (@sourceID)]** veld van de **[!UICONTROL nms:trackingLogRcp]** tabel. De volggegevens van ontvangers die bestonden voordat de bezoekersidentiteitsdienst werd geïmplementeerd, zullen daarom niet langer bruikbaar zijn.
->
->De id wordt dan herkend door de andere Adobe Experience Cloud-oplossingen met dezelfde [CNAME](https://docs.adobe.com/content/help/en/id-service/using/reference/analytics-reference/cname.html).
+## Identiteitsbeheer en cookie {#id-and-cookies}
+
+Wanneer u Adobe Campaign installeert of een bestaande installatie integreert met Adobe Experience Cloud, wordt de [Adobe Experience Cloud Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html) ingeschakeld. Deze service vervangt het permanente cookie dat in de eerste plaats door Adobe Campaign wordt gebruikt voor de trackingfuncties.
+
+De Adobe Experience Cloud Identity Service (ID-service) biedt een universele, permanente id die uw bezoekers identificeert voor alle oplossingen in de Experience Cloud.
+
+Aan ontvangers die trackinglogboeken genereren, wordt een unieke bezoeker-id toegewezen. Deze id wordt opgeslagen in het **[!UICONTROL Requester UUID (@sourceID)]** veld van de **[!UICONTROL nms:trackingLogRcp]** tabel. **De volggegevens van ontvangers die bestonden voordat de bezoekersidentiteitsdienst werd geïmplementeerd, zijn daarom niet langer bruikbaar**.
+
+De id wordt dan herkend door de andere Adobe Experience Cloud-oplossingen met dezelfde [CNAME](https://docs.adobe.com/content/help/en/id-service/using/reference/analytics-reference/cname.html).
 
 ## Experience Cloud-integraties {#experience-cloud-integrations}
 
@@ -62,11 +62,11 @@ De volgende lijst verleent toegang tot beschikbare documentatie van de Experienc
  </thead> 
  <tbody> 
   <tr> 
-   <td> <strong>Adobe Real-time Customer Data Platform</strong><br /> </td> 
-   <td> Dankzij de integratie tussen Adobe Campaign en Adobe Real-time Customer Data Platform kunt u segmentgegevens delen en publiek importeren naar Adobe Campaign.<br /> <p><a href="https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html">Meer</a> informatie over Campagne - de Adobe integratie van het Platform van de Gegevens van de Klant in real time van de.</p><br /> </td> 
+   <td> <strong>Adobe Real-time Customer Data Platform (RTCDP)</strong><br /> </td> 
+   <td> Dankzij de integratie tussen Adobe Campaign en Adobe Real-time Customer Data Platform (RTCDP) kunt u gegevens over segmenten delen en een publiek importeren naar Adobe Campaign.<br /> <p><a href="https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html">Meer</a> informatie over Campagne - de Adobe integratie van het Platform van de Gegevens van de Klant in real time van de.</p><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>IMS - Adobe ID</strong><br /> </td> 
+   <td> <strong>Adobe Identity Management System (IMS) - Adobe ID</strong><br /> </td> 
    <td> Hiermee kunt u verbinding maken met Adobe Campaign met dezelfde Adobe ID als voor de andere Adobe Experience Cloud-oplossingen.<br /> Een Adobe ID moet worden gebruikt om zich aan te melden om bepaalde functies te gebruiken die verband houden met de integratie van Adobe Experience Cloud, met name Core Services.<br /> <p><a href="../../integrations/using/about-adobe-id.md">Meer</a> weten over het implementeren van Adobe ID met Adobe Campaign?</p><br /> </td> 
   </tr> 
   <tr> 
