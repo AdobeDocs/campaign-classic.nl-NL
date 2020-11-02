@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: audience-sharing
 discoiquuid: 8f295058-5a78-4512-9bdf-d5f022457e10
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -22,20 +22,22 @@ ht-degree: 0%
 
 # Sharing audiences with Adobe Experience Cloud{#sharing-audiences-with-adobe-experience-cloud}
 
->[!NOTE]
->
->Om deze integratie te kunnen gebruiken, moet IMS zijn geïmplementeerd. Raadpleeg de sectie over [IMS](../../integrations/using/about-adobe-id.md).
-
-Met Adobe Campaign kunt u soorten publiek/segmenten uitwisselen en delen met Adobe Experience Cloud-oplossingen en kernservices. Hiervoor moet u **Adobe Campaign** integreren met de basisservice **** Mensen (ook wel de **kernservice** Profielen en Soorten publiek genoemd) of Adobe Audience Manager. Dan kunt u:
-
-* Importeer gedeelde soorten publiek/segmenten van verschillende Adobe Experience Cloud-oplossingen naar Adobe Campaign. Soorten publiek kan via lijsten in Adobe Campaign worden geïmporteerd.
-* Exportlijsten in de vorm van een gedeeld publiek in Adobe Experience Cloud. Deze doelgroepen kunnen worden gebruikt in de verschillende Adobe Experience Cloud-oplossingen die u gebruikt. Soorten publiek kunnen worden geëxporteerd nadat het doelpubliek zich in een workflow heeft gericht, met behulp van een speciale **[!UICONTROL Update shared audience]** activiteit.
-
 >[!CAUTION]
 >
->Afhankelijk van het type gegevens kunnen er wettelijke beperkingen gelden voor het importeren van soorten publiek in Adobe Campaign.
+>Om het publiek met de oplossingen van Adobe Experience Cloud te delen, moet u het Systeem van Adobe Identity Management uitvoeren. [Meer informatie over IMS](../../integrations/using/about-adobe-id.md).
 
-De integratie ondersteunt twee typen Adobe Experience Cloud-id&#39;s:
+Met Adobe Campaign kunt u soorten publiek en segmenten delen met Adobe Experience Cloud-oplossingen en kernservices. Er zijn twee opties beschikbaar:
+
+1. Verzend Adobe Experience Platform-segmentgegevens naar Adobe Campaign. Om deze integratie uit te voeren, moet u uw Platform van Gegevens van de Klant in real time met Campagne (RTCDP) verbinden. [Meer informatie vindt u in deze sectie](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html).
+
+
+1. Integreer **Adobe Campaign** met de kernservice **** Mensen (ook wel de kernservice **** Profielen en Soorten publiek genoemd) of Adobe Audience Manager. Dan kunt u:
+
+   * Importeer gedeelde soorten publiek/segmenten van verschillende Adobe Experience Cloud-oplossingen naar Adobe Campaign. Soorten publiek kan via lijsten in Adobe Campaign worden geïmporteerd.
+
+   * Exportlijsten in de vorm van een gedeeld publiek in Adobe Experience Cloud. Deze doelgroepen kunnen worden gebruikt in de verschillende Adobe Experience Cloud-oplossingen die u gebruikt. Soorten publiek kunnen worden geëxporteerd nadat het doelpubliek zich in een workflow heeft gericht, met behulp van een speciale **[!UICONTROL Update shared audience]** activiteit.
+
+Deze integratie ondersteunt twee typen Adobe Experience Cloud-id&#39;s:
 
 * **Bezoeker-id**: dit type identificator maakt Adobe Experience Cloud-bezoekers in overeenstemming met Adobe Campaign-ontvangers.
 * **Opgegeven ID**: dit type id vergelijkt alle soorten gegevens met elementen uit de Adobe Campaign-database. Het wordt in Adobe Campaign vertegenwoordigd als een vooraf gedefinieerde afstemmingssleutel.
