@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: connecting-via-an-adobe-id
 discoiquuid: c988362b-432e-4f9f-8d36-00b3d0015756
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 31%
@@ -27,7 +27,7 @@ Campagnegebruikers kunnen via hun Adobe ID verbinding maken met de Adobe Campaig
 * Veiliger beleid voor wachtwoordbeheer.
 * Gebruik van Federated ID-accounts (externe id-provider).
 
-Met Adobe IMS (Identity Management System) kunnen beheerders de toegang van gebruikers tot toepassingen en services maken en beheren. Raadpleeg [deze pagina](https://helpx.adobe.com/enterprise/using/identity.html)voor meer informatie over de verschillende typen Adobe-id&#39;s.
+Met Adobe Identity Management System (IMS) kunnen beheerders de toegang van gebruikers tot toepassingen en services maken en beheren. Raadpleeg [deze pagina](https://helpx.adobe.com/enterprise/using/identity.html)voor meer informatie over de verschillende typen Adobe-id&#39;s.
 
 >[!IMPORTANT]
 >
