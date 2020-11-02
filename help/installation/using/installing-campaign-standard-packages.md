@@ -1,8 +1,6 @@
 ---
-title: Campaign Classic-standaardpakketten installeren
-seo-title: Campaign Classic-standaardpakketten installeren
-description: Campaign Classic-standaardpakketten installeren
-seo-description: null
+title: Ingebouwde Campaign Classic-pakketten installeren
+description: Leer hoe u geïntegreerde pakketten voor campagnes kunt installeren
 page-status-flag: never-activated
 uuid: 1cba9487-52fc-442f-ae99-f8a2c157f25e
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: dd8f9adf-208c-42d9-b1a7-bfc8a690687e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 6%
+source-wordcount: '1154'
+ht-degree: 5%
 
 ---
 
@@ -52,7 +50,7 @@ De pakketten zijn nu geïnstalleerd.
 
 ### Lijst van uit-van-de-doos Pakketten {#list-of-standard-packages}
 
-De volgende tabel bevat een lijst met alle standaardpakketten met hun beschrijving, het instantietype waarop ze kunnen worden geïnstalleerd (Marketing, Midden, enz.) en aanvullende informatie.
+In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven.
 
 <table> 
  <thead> 
@@ -80,17 +78,17 @@ De volgende tabel bevat een lijst met alle standaardpakketten met hun beschrijvi
   </tr> 
   <tr> 
    <td> Aanbiedingsengine (interactie)<br /> </td> 
-   <td> Reageert in real time tijdens een interactie met een bepaald contact (een klant of een doel) door hen één of verscheidene aangepaste aanbiedingen te maken.  Optioneel. <a href="../../interaction/using/interaction-and-offer-management.md">Meer informatie</a> <br /> </td> 
+   <td> Reageert in real time tijdens een interactie met een bepaald contact (een klant of een doel) door hen één of verscheidene aangepaste aanbiedingen te maken.  Optioneel. <a href="../../interaction/using/interaction-and-offer-management.md#packages-configuration">Meer informatie</a> <br /> </td> 
    <td> Alles<br /> </td> 
   </tr> 
   <tr> 
    <td> Besturing van de aanbiedingsengine met uitvoeringsinstantie. Optioneel.<br /> </td> 
-   <td> </td> 
+   <td> Pakket om op controleinstantie voor de motor van de Aanbieding (interactie) te installeren. <a href="../../interaction/using/distributed-architectures.md#packages-configuration">Meer informatie</a> </td> 
    <td> Marketing<br /> </td>  
   </tr> 
   <tr> 
    <td> De engine voor uitvoeringsinstanties aanbieden. Optioneel.<br /> </td> 
-   <td> </td> 
+   <td> Pakket maken om te installeren op uitvoeringsinstanties voor de Offertenengine (interactie). <a href="../../interaction/using/distributed-architectures.md">Meer informatie</a> </td> 
    <td> Midden, uitvoering <br /> </td>  
   </tr> 
   <!--tr> 
@@ -200,13 +198,13 @@ De volgende tabel bevat een lijst met alle standaardpakketten met hun beschrijvi
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Integratie van Adobe Marketing Cloud-publiek<br /> </td> 
+   <td> Integratie van Adobe Experience Cloud-publiek<br /> </td> 
    <td> Hiermee kunt u soorten publiek/segmenten uitwisselen en delen met Adobe Experience Cloud-oplossingen en kernservices. Vereist IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Meer informatie</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Integratie met Adobe Marketing Cloud<br /> </td> 
-   <td> Hiermee kunt u soorten publiek/segmenten van verschillende Adobe Marketing Cloud-oplossingen importeren en exporteren naar Adobe Campaign. Optioneel. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Meer informatie</a> </td> 
+   <td> Integration with Adobe Experience Cloud<br /> </td> 
+   <td> Hiermee kunt u soorten publiek/segmenten van verschillende Adobe Experience Cloud-oplossingen importeren en exporteren naar Adobe Campaign. Optioneel. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Meer informatie</a> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
@@ -223,6 +221,11 @@ De volgende tabel bevat een lijst met alle standaardpakketten met hun beschrijvi
    <td> Midsourcingplatform<br /> </td> 
    <td> Deze configuratie is een optimale middenoplossing tussen een ontvangen (ASP) configuratie en internalisering. De naar buiten gerichte uitvoeringscomponenten worden uitgevoerd op een "mid-sourcing"-server die wordt gehost op Adobe Campaign. Optioneel. <a href="../../installation/using/mid-sourcing-server.md">Meer informatie</a> <br /> </td> 
    <td> Midden-sourcing </td> 
+  </tr> 
+  <tr> 
+   <td> AMP-ondersteuning<br /> </td> 
+   <td> Hiermee kunt u het nieuwe interactieve AMP gebruiken voor e-mailindeling en dynamische e-mailberichten verzenden. Optioneel. <a href="../../delivery/using/defining-interactive-content.md">Meer informatie</a> <br /> </td> 
+   <td> Alles </td> 
   </tr> 
   <tr> 
    <td> ACS Connector<br /> </td> 
