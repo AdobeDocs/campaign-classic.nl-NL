@@ -1,8 +1,6 @@
 ---
-title: De integratie configureren
-seo-title: De integratie configureren
-description: De integratie configureren
-seo-description: null
+title: Gebeurtenissen configureren
+description: Leer hoe u gebeurtenissen configureert voor een aangepaste implementatie
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 1%
+source-wordcount: '1198'
+ht-degree: 0%
 
 ---
 
@@ -28,9 +26,7 @@ De delen van deze configuratie zijn een douaneontwikkeling en vereisen het volge
 * Werken met kennis van de API&#39;s QueryDef en Writer.
 * Werken met codering en verificatie met persoonlijke sleutels.
 
-Aangezien het bewerken van de GOS-code technische vaardigheden vereist, probeer het dan niet zonder het juiste begrip.
-
-De verdere verwerking van gebeurtenissen wordt gedaan als deel van het Pakket ACX dat buiten de standaardimplementatie wordt verstrekt. De ontvangen gebeurtenis wordt direct verwerkt met behulp van JavaScript-code. Deze wordt opgeslagen in een databasetabel zonder dat er in realtime verdere verwerking plaatsvindt. De triggers worden gebruikt voor het activeren van een campagneworkflow die e-mails verzendt. De campagne is zo ingesteld dat de klant die de gebeurtenis heeft geactiveerd, een e-mail ontvangt.
+Aangezien voor het bewerken van de Javascript-code technische vaardigheden vereist zijn, probeert u dit niet zonder het juiste inzicht.
 
 ## Gebeurtenissen verwerken in JavaScript {#events-javascript}
 
@@ -40,7 +36,7 @@ Pipeline gebruikt een functie JavaScript om elk bericht te verwerken. Deze funct
 
 Het wordt gevormd in de **[!UICONTROL NmsPipeline_Config]** optie onder het &quot;JSConnector&quot;attribuut. Deze javascript wordt geroepen telkens als een gebeurtenis wordt ontvangen. Het wordt door het [!DNL pipelined] proces geleid.
 
-Het JS-voorbeeldbestand is cus:triggers.js.
+Het Javascript-voorbeeldbestand is cus:triggers.js.
 
 ### JavaScript, functie {#function-js}
 
@@ -58,7 +54,7 @@ Het moet terugkeren zoals
 <undefined/>
 ```
 
-Nadat u de JS hebt bewerkt, moet u de toepassing opnieuw starten. [!DNL pipelined]
+Nadat u de JavaScript-code hebt bewerkt, moet u de toepassing opnieuw starten. [!DNL pipelined]
 
 ### Gegevensindeling activeren {#trigger-format}
 
@@ -136,7 +132,7 @@ Voor foutopsporing en bewaking worden de volledige triggergegevens in XML-indeli
 
 ### De gegevens parseren {#data-parsing}
 
-Deze voorbeeld-JS-code parseert de eVar01 in de verrijkingen.
+Deze voorbeeldcode voor JavaScript parseert de eVar01 in de verrijkingen.
 
 ```
 function processPipelineMessage(xmlTrigger)
