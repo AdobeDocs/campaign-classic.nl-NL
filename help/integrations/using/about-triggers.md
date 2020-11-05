@@ -1,8 +1,6 @@
 ---
-title: Informatie over Adobe Experience Manager
-seo-title: Informatie over Adobe Experience Manager
-description: Informatie over Adobe Experience Manager
-seo-description: null
+title: Informatie over Adobe Experience Cloud-triggers
+description: Aan de slag met Adobe Experience Cloud Triggers-implementatie
 page-status-flag: never-activated
 uuid: c523822f-8178-4989-bd88-ab402470e540
 contentOwner: sauviat
@@ -12,17 +10,21 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 0d617f1c-0d0b-489f-9027-a92b1f1eee37
 translation-type: tm+mt
-source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 1%
+source-wordcount: '228'
+ht-degree: 16%
 
 ---
 
 
-# Informatie over Adobe Experience Cloud-triggers{#about-adobe-experience-triggers}
+# Aan de slag met Adobe Experience Cloud-triggers{#about-adobe-experience-triggers}
 
 [!DNL Triggers] is een integratie tussen Adobe Campaign en Adobe Analytics die de pijpleiding gebruikt. De pijplijn haalt gebruikersacties of trekkers van uw website terug. Een achterlating van een winkelwagen is een voorbeeld van een trigger. Triggers worden in Adobe Campaign verwerkt om e-mails in bijna real-time te verzenden.
+
+>[!CAUTION]
+>
+>Deze mogelijkheid is niet rechtstreeks beschikbaar als onderdeel van het product. Voor de implementatie moet Adobe Consulting worden ingeschakeld. Neem contact op met uw Adobe-vertegenwoordiger voor meer informatie
 
 [!DNL Triggers] Voer marketingacties uit binnen een korte tijdspanne na de actie van een gebruiker. De gemiddelde responstijd is minder dan een uur.
 
@@ -38,7 +40,3 @@ Het [!DNL pipelined] proces wordt altijd uitgevoerd op de Adobe Campaign-marketi
 Het [!DNL pipelined] proces logt aan de Experience Cloud binnen gebruikend een authentificatiedienst en verzendt een privé sleutel. De verificatieservice retourneert een token. Het token wordt gebruikt voor verificatie bij het ophalen van de gebeurtenissen.
 
 For more information on authentication, refer to this [page](../../integrations/using/configuring-adobe-io.md).
-
->[!NOTE]
->
->De verdere verwerking van gebeurtenissen wordt gedaan als deel van het Pakket ACX dat buiten de standaardimplementatie wordt verstrekt. De ontvangen gebeurtenis wordt direct verwerkt met behulp van JavaScript-code. Deze wordt opgeslagen in een databasetabel zonder dat er in realtime verdere verwerking plaatsvindt. De triggers worden gebruikt voor het activeren van een campagneworkflow die e-mails verzendt. De campagne is zo ingesteld dat de klant die de gebeurtenis heeft geactiveerd, een e-mail ontvangt.
