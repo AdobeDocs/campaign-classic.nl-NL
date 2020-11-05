@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 title: Adobe Campaign Classic-productdocumentatie
 topic: Premium
 translation-type: tm+mt
-source-git-commit: d9ae51c30e2ac538ff29e4ab53fa215d09f3d655
+source-git-commit: 6ac6145a38538f07b8080e503cd7750b19ed9621
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 74%
+source-wordcount: '277'
+ht-degree: 78%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 74%
 
 ## Nieuwe functies
 
-* **[Integratie met](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/> Adobe Experience Cloud Triggers bijwerken De service voor oudere Auth-verificatie heeft het einde van de levensduur bereikt. Leer hoe u naar Adobe I/O migreert.
+* **[Werk uw Adobe Experience Cloud Triggers-integratie](integrations/using/configuring-adobe-io.md)bij))**<br/> De verouderde Auth-verificatieservice heeft het einde van de levensduur bereikt. Leer hoe u naar Adobe I/O migreert.
 
 * **[Ga naar API](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/> voor op HTTP/2 gebaseerde APNs-providers. Leer hoe u van het oude binaire protocol naar de op HTTP/2 gebaseerde APIs-provider kunt migreren.
 
