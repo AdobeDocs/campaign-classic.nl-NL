@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 3e73d7c91fbe7cff7e1e31bdd788acece5806e61
+source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '907'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ Het gebruik [!DNL Experience Cloud Triggers] in Campagne vereist:
 
 Voorwaardelijke configuraties zijn:
 
-* Adobe IO-projectverificatie
+* Adobe I/O-projectverificatie
 * De IMSOrgId, de id van de Experience Cloud-klant met Adobe Analytics toegevoegd.
 * Het leveringsteam moet de Bevoegdheden van de Beheerder van het Systeem voor IMS van de klant hebben Org
 * Configuratie van de triggers in Adobe Analytics.
@@ -48,13 +48,13 @@ Voorwaardelijke configuraties zijn:
 
 De authentificatie wordt vereist aangezien de pijpleiding in Adobe Experience Cloud wordt ontvangen.
 Het gebruikt een paar openbare en privé sleutels. Dit proces heeft dezelfde functie als een gebruiker/wachtwoord, maar is veiliger.
-Verificatie wordt ondersteund voor de Marketing Cloud via Adobe IO-project.
+Verificatie wordt ondersteund voor de Marketing Cloud via Adobe I/O-project.
 
-## Stap 1: Adobe IO-project maken/bijwerken {#creating-adobe-io-project}
+## Stap 1: Adobe I/O-project maken/bijwerken {#creating-adobe-io-project}
 
-Voor Gehoste klanten, kunt u een kaartje van de klantenzorg tot stand brengen om uw organisatie met de Tokens van de Technische Rekening van Adobe IO voor de integratie van Triggers toe te laten.
+Voor Gehoste klanten, kunt u een kaartje van de klantenzorg tot stand brengen om uw organisatie met de Tokens van de Technische Rekening van Adobe I/O voor de integratie van Triggers toe te laten.
 
-Raadpleeg voor klanten op locatie de pagina [Adobe IO configureren voor Adobe Experience Cloud-triggers](../../integrations/using/configuring-adobe-io.md) . Let op: u moet selecteren **[!UICONTROL Adobe Analytics]** terwijl u API toevoegt aan de Adobe IO-referentie.
+Raadpleeg voor klanten op locatie de pagina [Adobe I/O configureren voor Adobe Experience Cloud-triggers](../../integrations/using/configuring-adobe-io.md) . Merk op dat u moet selecteren **[!UICONTROL Adobe Analytics]** terwijl het toevoegen van API aan de Adobe I/O referentie.
 
 ## Stap 2: De pijplijnoptie NmsPipeline_Config configureren {#configuring-nmspipeline}
 
