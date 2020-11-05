@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
+source-git-commit: d9ae51c30e2ac538ff29e4ab53fa215d09f3d655
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Als u een oudere versie van de integratie van Triggers door tokens JWT of authentificatie Auth gebruikt, moet **u naar Adobe I/O bewegen zoals hieronder** beschreven. JWT- en Auth-verificatiemodi zijn nu afgekeurd. [Meer informatie](https://github.com/AdobeDocs/analytics-1.4-apis)
+>Als u een oudere versie van de integratie van Triggers door authentificatie Auth gebruikt, moet **u naar Adobe I/O bewegen zoals hieronder** beschreven. De oude Auth-verificatiemodus wordt op 30 april 2021 afgesloten. [Meer informatie](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md)
 
 ## Vereisten {#adobe-io-prerequisites}
 
