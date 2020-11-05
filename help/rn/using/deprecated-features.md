@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
 source-wordcount: '1621'
-ht-degree: 83%
+ht-degree: 99%
 
 ---
 
@@ -47,11 +47,11 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    <td><strong>Vervanging</strong></td>
   </tr>
   <tr>
-  <td>CRM-connectors<br></td>
-   <td><p>De aanvang van de Versie van Campagne 20.3, worden de volgende schakelaars van CRM afgekeurd:</p>
+  <td>CRM-connectoren<br></td>
+   <td><p>Vanaf Campaign versie 20.3 zijn de volgende CRM-connectoren afgeschaft:</p>
    <ul>
-   <li>Soap API - Op locatie: 2007, 2015, 2016</li>
-   <li>Soap API - Online: 2015, 2016</li>
+   <li>Soap-API - On-premise: 2007, 2015, 2016</li>
+   <li>Soap-API - Online: 2015, 2016</li>
    <li>Web API - de Dynamica CRM van Microsoft op-gebouw: 2016, 2016 Update 1</li>
    <li>Web API - Microsoft Dynamics CRM Online: 2016, 2016 Update 1</li>
    </ul>
@@ -60,28 +60,28 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
  </tr>
   <tr>
   <td>Verouderd binair iOS<br></td>
-  <td><p>Vanaf de release van Campagne 20.3 is de verouderde binaire connector van iOS verouderd.<p>
-  <p> Als u deze schakelaar gebruikt, moet u uw implementatie dienovereenkomstig aanpassen.
+  <td><p>Vanaf Campaign versie 20.3 is de verouderde binaire iOS-connector van iOS afgeschaft.<p>
+  <p> Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen.
   <a href="https://helpx.adobe.com/campaign/kb/migrate-to-http2.html">Meer informatie</a></p>
   <p><em>Doeldatum voor verwijdering: 2021</em></p>
   </td>
  </tr>
    <tr>
   <td>Demdex-domein<br></td>
-  <td><p> Vanaf de release van Campagne 20.3 is het demdex-domein dat wordt gebruikt voor het importeren en exporteren van soorten publiek naar de Adobe Experience Cloud afgekeurd.<p>
-  <p>Als u het indexdomein voor uw invoer/uitvoer externe rekeningen gebruikt, moet u uw implementatie aanpassen dienovereenkomstig. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Meer informatie</a></p> 
+  <td><p> Vanaf Campaign versie 20.3 is het demdex-domein afgeschaft. Dit werd gebruikt voor het importeren en exporteren van doelgroepen naar Adobe Experience Cloud.<p>
+  <p>Als u het demdex-domein voor uw externe import/export-accounts gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Meer informatie</a></p> 
   <p><em>Doeldatum voor verwijdering: 2021</em></p>
   </td>
   <tr>
   <td>OAuth-verificatie (OAuth en JWT)<br></td>
-  <td><p> Beginnende de versie van Campagne 20.3, de integratieauthentificatie van Triggers oorspronkelijk gebaseerd op de authentificatie van AUTH aan toegangspijplijn is nu veranderd en verplaatst naar Adobe I/O. <p>
-  <p>Als u de integratie van Triggers gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../integrations/using/configuring-adobe-io.md">Meer informatie</a></p> 
-  <p>Raadpleeg deze <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina voor meer informatie over de afschrijving van de OAuth-verificatie</a></p> 
-  <p><em>Doeldatum verwijdering: April 2021</em></p>
+  <td><p> Vanaf Campaign versie 20.3 is de Triggers-integratieverificatie die oorspronkelijk was gebaseerd op de oAUTH-verificatieset-up voor toegang tot de pipeline gewijzigd en verplaatst naar Adobe I/O. <p>
+  <p>Als u Triggers-integratie gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../integrations/using/configuring-adobe-io.md">Meer informatie</a></p> 
+  <p>Raadpleeg deze <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina</a> voor meer informatie over de afschaffing van OAuth-verificatie.</p> 
+  <p><em>Doeldatum voor verwijdering: april 2021</em></p>
   </td>
   </tr>
   <td>Sms-connectoren<br></td>
-  <td><p> De aanvang van Campagne 20.2 versie, worden de volgende schakelaars van SMS afgekeurd.<p>
+  <td><p> Vanaf Campaign-release 20.2 worden de volgende sms-connectoren afgeschaft.<p>
    <ul>
    <li>NetSize</li>
    <li>Generic SMPP (SMPP versie 3.4 die de binaire modus ondersteunt)</li>
@@ -98,7 +98,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
  </tr>
   <tr>  
    <td>Faxkanaal<br></td>
-   <td><p>Vanaf de release Campagne 20.2 is het faxkanaal afgekeurd.</p> 
+   <td><p>Vanaf Campaign 20.2-release is het faxkanaal afgeschaft.</p> 
    <p>Als u dit kanaal gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Ontdek meer</a> over Campaign-kanalen.</p>
    <p><em>Doeldatum voor verwijdering: 2021</em></p></td>
   </tr>
@@ -117,7 +117,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
   </tr> 
    <tr> 
    <td>Windows NT-verificatie<br></td>
-   <td><p>De aanvang van Campagne 20.3 versie, de authentificatie van NT van Vensters is verwijderd uit de beschikbare authentificatiemethodes toen het vormen van een nieuw gegevensbestand met een Server van Microsoft SQL. <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">Meer informatie</a></p></td>
+   <td><p>Vanaf Campaign versie 20.3 is de Windows NT-verificatie verwijderd uit de beschikbare verificatiemethodes bij het configureren van een nieuwe database met een Microsoft SQL Server. <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">Meer informatie</a></p></td>
   </tr>
    <tr> 
    <td>Archivering van e-mails op basis van bestanden<br></td>
@@ -165,7 +165,7 @@ De volgende systemen zijn afgeschaft voor Campaign Classic. Raadpleeg de [compat
 
 ### Adobe Campaign 20.2-release {#compat-20-2-release}
 
-Vanaf versie 20.2 zijn verouderde SMS-connectors afgekeurd. Zie sectie [Verouderde functies](#deprecated-features)
+Vanaf release 20.2 zijn oude sms-connectoren afgeschaft. Zie de sectie [Verouderde functies](#deprecated-features)
 
 ## Einde van compatibiliteit {#end-of-compatibility}
 
@@ -212,11 +212,11 @@ Vanaf de lenterelease 19.1 is Adobe Campaign niet meer compatibel met de volgend
 
 Adobe biedt geen ondersteuning voor de volgende database-engines, omdat deze zijn afgeschaft door de editor. Klanten die met deze versies werken, moeten een upgrade uitvoeren naar de nieuwste versie of naar een andere versie overschakelen.
 
-Refer to [Campaign Compatibility matrix](../../rn/using/compatibility-matrix.md) to access the list of compatible versions.
+Raadpleeg de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) voor toegang tot de lijst met compatibele versies.
 
 **FEDERATED DATA ACCESS (FDA)**
 
-Vanaf versie 20.2 is Adobe Campaign niet meer compatibel met de volgende FDA-server:
+Vanaf release 20.2 is Adobe Campaign niet meer compatibel met de volgende FDA-server:
 
 * DB2 UDB 10.5
 
