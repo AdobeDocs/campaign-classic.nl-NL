@@ -1,8 +1,6 @@
 ---
-title: De integratie configureren
-seo-title: De integratie configureren
-description: De integratie configureren
-seo-description: null
+title: De pijplijn configureren
+description: Leer hoe te om de pijpleiding te vormen
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
+source-git-commit: f3caef21a269cf57624a07bfe1b4bf1e241061a6
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 2%
+source-wordcount: '911'
+ht-degree: 1%
 
 ---
 
@@ -32,17 +30,17 @@ De triggers worden gebruikt voor het activeren van een campagneworkflow die e-ma
 
 ## Vereisten {#prerequisites}
 
-Het gebruik [!DNL Experience Cloud Triggers] in Campagne vereist:
+Controleer voordat u deze configuratie start of:
 
-* Adobe Campaign 19.1.9 of 20.3.1. en hoger.
-* Versie Analytics Standard.
+* een recente versie van Adobe Campaign: 19.1.8 of 20.2.1 gebouwen en hoger,
+* Adobe Analytics Standard-versie
 
-Voorwaardelijke configuraties zijn:
+U hebt ook het volgende nodig:
 
 * Adobe I/O-projectverificatie
-* De IMSOrgId, de id van de Experience Cloud-klant met Adobe Analytics toegevoegd.
-* Het leveringsteam moet de Bevoegdheden van de Beheerder van het Systeem voor IMS van de klant hebben Org
-* Configuratie van de triggers in Adobe Analytics.
+* een geldige IMSOrgID, de id van de Experience Cloud-klant met Adobe Analytics toegevoegd
+* Een ontwikkelaarstoegang tot de IMS-organisatie
+* triggerconfiguratie uitgevoerd in Adobe Analytics
 
 ## Verificatie- en configuratiebestanden {#authentication-configuration}
 
