@@ -10,7 +10,7 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 281eb6b0f84e01d25ac9c3542dc2ee950d4879e7
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
 source-wordcount: '1621'
 ht-degree: 83%
@@ -75,7 +75,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
   <tr>
   <td>OAuth-verificatie (OAuth en JWT)<br></td>
   <td><p> Beginnende de versie van Campagne 20.3, de integratieauthentificatie van Triggers oorspronkelijk gebaseerd op de authentificatie van AUTH aan toegangspijplijn is nu veranderd en verplaatst naar Adobe I/O. <p>
-  <p>Als u de integratie van Triggers gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../integrations/using/about-triggers.md">Meer informatie</a></p> 
+  <p>Als u de integratie van Triggers gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../integrations/using/configuring-adobe-io.md">Meer informatie</a></p> 
   <p>Raadpleeg deze <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina voor meer informatie over de afschrijving van de OAuth-verificatie</a></p> 
   <p><em>Doeldatum verwijdering: April 2021</em></p>
   </td>
