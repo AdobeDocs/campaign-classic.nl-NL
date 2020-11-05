@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: appendices
 discoiquuid: da2198a3-7cef-4419-894d-e5bb51bb480c
 translation-type: tm+mt
-source-git-commit: 2ff877607641435a2c2806f48f3c5b35d96d39c5
+source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
 workflow-type: tm+mt
-source-wordcount: '7852'
+source-wordcount: '7855'
 ht-degree: 5%
 
 ---
@@ -3216,7 +3216,7 @@ For additional information, refer to this [section](../../installation/using/dep
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> ID van IMS-organisatie: unieke organisatie-id binnen de Adobe Marketing Cloud, met name gebruikt voor de VisitorID-service en de IMS SSO. <br /> </td> 
+   <td> Id van Identity Management System (IMS)-organisatie: unieke organisatie-id binnen de Adobe Experience Cloud, met name gebruikt voor de VisitorID-service en de IMS SSO. <br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
