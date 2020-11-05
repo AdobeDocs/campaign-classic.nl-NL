@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: e53af1c2-b50c-4a8c-b5b8-f23a85bd3211
 translation-type: tm+mt
-source-git-commit: b04d802ce1041aecbb60aeeabbd35b1d78c2451d
+source-git-commit: 1e6ef4a3924e2cab0e6baf06e0861620e17d240b
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 0%
@@ -272,8 +272,6 @@ De volgende stappen worden uitgevoerd:
    ![](assets/gpg_generate.png)
 
 1. In het externe systeem gebruikt u de openbare sleutel die u van het Configuratiescherm hebt gedownload om de gegevens te coderen die u naar Campaign Classic wilt importeren.
-
-   ![](assets/gpg_external.png)
 
 1. In Campaign Classic, bouwt een werkschema om de gecodeerde gegevens in te voeren en het te decrypteren gebruikend de privé sleutel die via het Controlebord is geïnstalleerd. Hiervoor maken we als volgt een workflow:
 
