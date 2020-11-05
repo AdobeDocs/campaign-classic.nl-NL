@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: fe7ce92bde3405fed3429475cdd5681e5837876f
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
 source-wordcount: '1820'
 ht-degree: 3%
@@ -90,7 +90,7 @@ Learn more in the [Campaign Compatibility matrix](../../rn/using/compatibility-m
 De volgende functies zijn afgekeurd in 20.3:
 
 * Het demdex-domein dat wordt gebruikt voor het importeren en exporteren van soorten publiek naar de Adobe Experience Cloud is afgekeurd. Als u het indexdomein voor uw invoer/uitvoer externe rekeningen gebruikt, moet u uw implementatie aanpassen dienovereenkomstig. [Meer informatie](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
-* De de integratieauthentificatie van trekkers oorspronkelijk die op de authentificatie van AUTH wordt gebaseerd om tot pijpleiding toegang te hebben is nu veranderd en verplaatst naar Adobe I/O. [Meer informatie](../../integrations/using/about-triggers.md)
+* De de integratieauthentificatie van trekkers oorspronkelijk die op de authentificatie van AUTH wordt gebaseerd om tot pijpleiding toegang te hebben is nu veranderd en verplaatst naar Adobe I/O. [Meer informatie](../../integrations/using/configuring-adobe-io.md)
 
 Meer informatie vindt u op de pagina [](../../rn/using/deprecated-features.md)Afgekeurde en verwijderde functies.
 
