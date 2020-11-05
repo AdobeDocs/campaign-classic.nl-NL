@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: ba5e815dd1576b55d9b3226639680f6358137f13
+source-git-commit: 54ac5abcc53c41d025238a3c89f9d732c0fb1376
 workflow-type: tm+mt
-source-wordcount: '3882'
-ht-degree: 83%
+source-wordcount: '3905'
+ht-degree: 82%
 
 ---
 
@@ -40,6 +40,8 @@ De pagina met verouderde en verwijderde functies is bijgewerkt. [Meer informatie
 
 Release-aantekeningen en compatibiliteitsmatrix voor Gold Standard-release zijn nu beschikbaar in een speciale sectie.
 [Meer informatie](../../rn/using/gold-standard.md#gs-10).
+
+De integratie van trekkers oorspronkelijk gebaseerd op de authentificatie van AUTH om tot pijpleiding toegang te hebben is nu veranderd en verplaatst naar Adobe I/O. [Meer informatie](../../integrations/using/about-triggers.md)
 
 **Overige updates**
 
