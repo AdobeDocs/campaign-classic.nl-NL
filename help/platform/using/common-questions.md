@@ -1,6 +1,6 @@
 ---
 title: Algemene vragen
-description: Veelgestelde vragen over Adobe Campaign Classic
+description: Adobe Campaign Classic- Veelgestelde vragen
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -9,11 +9,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '539'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 87%
 
 Hebt u hulp nodig terwijl u met Campaign Classic werkt? Lees de 10 meest gestelde vragen hieronder en andere veelgestelde vragen op die pagina. U kunt ook het volgende doen:
 
-* [Bekijk zelfstudievideo&#39;s](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/overview.html)
-* [Bladeren door opties voor zelfhulp](../../platform/using/tutorials.md#how-to-videos)
-* [Lees uit begin en gebruik casesectie](../../platform/using/tutorials.md#step-by-step-guides)
+* [Tutorialvideo’s bekijken](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/overview.html)
+* [Door zelfhulpopties bladeren ](../../platform/using/tutorials.md#how-to-videos)
+* [De secties Aan de slag en Gebruiksscenario’s laten voorlezen](../../platform/using/tutorials.md#step-by-step-guides)
 * Kunt u het antwoord niet vinden? [Vraag het de expert](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
-* Hebt u ondersteuning nodig? [Raadpleeg de opties voor Help en ondersteuning bij campagnes](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
+* Hebt u ondersteuning nodig? [Raadpleeg de opties voor Campaign Help en ondersteuning](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
 
 ## 1. Hoe kan ik Campaign upgraden naar de nieuwste versie? {#how-can-i-upgrade-campaign-to-the-latest-version-}
 
@@ -34,7 +34,7 @@ Adobe Campaign Classic gebruikt met name een scala aan technologische oplossinge
 
 Als u Adobe Managed Services gebruikt, kunt u profiteren van de Campaign Gold Standard-upgrade. Raadpleeg [dit artikel](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html) voor meer informatie.
 
-[Lees uit deze sectie](../../production/using/build-upgrade.md) hoe u uw omgeving kunt bijwerken en [Algemene vragen](../../platform/using/faq-build-upgrade.md) over dit specifieke onderwerp kunt lezen.
+[Lees deze sectie](../../production/using/build-upgrade.md) om te leren hoe u uw omgeving kunt bijwerken en lees de [Algemene vragen](../../platform/using/faq-build-upgrade.md) over dit specifieke onderwerp.
 
 ## 2. Wat is de workflow voor het opschonen van databases? {#what-is-the-database-cleanup-workflow-}
 
@@ -72,7 +72,7 @@ U vindt de lijst met alle systemen en onderdelen die voor de recentste build van
 
 U vindt de recentste Campaign Classic-release-opmerkingen [op deze pagina](https://docs.adobe.com/content/help/nl-NL/campaign-classic/using/release-notes/latest-release.html).
 
-## 9. What is the procedure for domain configuration? {#what-is-the-procedure-for-domain-delegation-}
+## 9. Wat is de procedure voor domeinconfiguratie? {#what-is-the-procedure-for-domain-delegation-}
 
 Een subdomein is een afdeling van uw domein dat kan worden gebruikt om uw merken of diverse typen van traffic (transactionele berichten, marketinginformatie, enzovoort) te isoleren.
 Adobe houdt rekening met het DNS (Domain Name System) voor e-maillevering, dat een klant toestaat om zijn merkimago te behouden door een DNS-alias met zijn domeinnamen te gebruiken, en Adobe om autonoom alle technische best practices uit te voeren die het toestaan om de leverbaarheid tijdens het e-mailen te optimaliseren.
