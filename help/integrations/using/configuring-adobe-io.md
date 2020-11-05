@@ -1,8 +1,6 @@
 ---
-title: Adobe-IO configureren voor Adobe Experience Cloud-triggers
-seo-title: Adobe-IO configureren voor Adobe Experience Cloud-triggers
-description: Adobe-IO configureren voor Adobe Experience Cloud-triggers
-seo-description: null
+title: Adobe I/O configureren voor Adobe Experience Cloud-triggers
+description: Leer hoe u Adobe I/O voor Adobe Experience Cloud-triggers configureert
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
 contentOwner: sauviat
@@ -15,37 +13,44 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
+source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
 
 
-# Adobe-IO configureren voor Adobe Experience Cloud-triggers {#configuring-adobe-io}
+# Adobe I/O configureren voor Adobe Experience Cloud-triggers {#configuring-adobe-io}
 
-Voorwaardelijke configuraties zijn:
+## Vereisten {#adobe-io-prerequisites}
 
-* Adobe Campaign Classic build ACC-19.1.9 of ACC-20.2.1 en hoger.
-* een geldige IMSOrgID.
-* een ontwikkelaar toegang tot de IMS-organisatie. U moet de bevoegdheden van de systeembeheerder van IMS Org aanvragen om de procedure te volgen die in deze [pagina](https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/manage-developers.ug.html) wordt beschreven om deze toegang te bieden aan alle productprofielen.
+Controleer voordat u met deze implementatie begint of:
 
-## Stap 1: Adobe-IO-project maken/bijwerken {#creating-adobe-io-project}
+* een recente versie van Adobe Campaign: 19.1.8 of 20.2.1 gebouwen en hoger,
+* een geldige IMSOrgID: de identificatiecode van de organisatie van het Identity Management System (IMS) is de unieke identificatie binnen de Adobe Experience Cloud, die met name wordt gebruikt voor de VisitorID-service en de IMS Single-Sign On (SSO);
+* een ontwikkelaar toegang tot de IMS-organisatie.
 
-1. Open Adobe IO en meld u aan met de System Administrator-rechten voor IMSorg.
+>[!NOTE]
+>
+>Als u de bevoegdheden van de systeembeheerder van de IMS-organisatie moet aanvragen, volgt u de procedure die [in deze pagina](https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/manage-developers.ug.html) wordt beschreven om deze toegang te bieden aan alle productprofielen.
+
+
+## Stap 1: Adobe I/O-project maken/bijwerken {#creating-adobe-io-project}
+
+1. Open Adobe I/O en meld u aan met de System Administrator-rechten voor IMSorg.
 
    >[!NOTE]
    >
    > Controleer of u bent aangemeld bij de juiste IMSorg-portal.
 
-1. Extraheer de bestaande ID van de integratieclient uit het dossier van de instantieconfiguratie ims/authIMSTAClientId. Niet bestaand of leeg attribuut wijst op cliëntIdentiteitskaart niet wordt gevormd.
+1. Extraheer de bestaande ID van de integratieclient uit het dossier van de instantieconfiguratie ims/authIMSTAClientId. Niet bestaand of leeg kenmerk geeft aan dat de client-id niet is geconfigureerd.
 
    >[!NOTE]
    >
-   >Als uw client-id leeg is, kunt u deze rechtstreeks **[!UICONTROL Create a New project]** in Adobe IO gebruiken.
+   >Als uw client-id leeg is, kunt u deze rechtstreeks **[!UICONTROL Create a New project]** in Adobe I/O gebruiken.
 
-1. U moet nu het bestaande project identificeren gebruikend gehaalde cliëntidentiteitskaart Zoek bestaande projecten met dezelfde client-id als de projecten die u in de vorige stap hebt uitgepakt.
+1. Identificeer het bestaande project gebruikend gehaalde cliënt ID. Zoek bestaande projecten met dezelfde client-id als de projecten die u in de vorige stap hebt uitgepakt.
 
    ![](assets/adobe_io_8.png)
 
@@ -53,7 +58,7 @@ Voorwaardelijke configuraties zijn:
 
    ![](assets/adobe_io_1.png)
 
-1. Selecteer in het venster **[!UICONTROL Add an API]** de optie **[!UICONTROL Adobe Analytics]**.
+1. In the **[!UICONTROL Add an API]** window, select **[!UICONTROL Adobe Analytics]**.
 
    ![](assets/adobe_io_2.png)
 
@@ -61,7 +66,7 @@ Voorwaardelijke configuraties zijn:
 
    ![](assets/adobe_io_3.png)
 
-1. Als u identiteitskaart van de Cliënt leeg bent, selecteer **[!UICONTROL Generate a key pair]** om openbaar en Privé keypair tot stand te brengen.
+1. Als uw identiteitskaart van de Cliënt leeg was, selecteer **[!UICONTROL Generate a key pair]** om een Openbaar en Privé sleutelpaar tot stand te brengen.
 
    ![](assets/adobe_io_4.png)
 
@@ -83,7 +88,7 @@ Voorwaardelijke configuraties zijn:
 
 ## Stap 2: De referenties van het project toevoegen in Adobe Campaign {#add-credentials-campaign}
 
-Om de projectgeloofsbrieven in Adobe Campaign toe te voegen, stel het volgende bevel als neolane gebruiker op alle containers van de instantie van Adobe Campaign in werking om de **[!UICONTROL Technical Account]** geloofsbrieven in het dossier van de instantieconfiguratie op te nemen.
+Om de projectgeloofsbrieven in Adobe Campaign toe te voegen, stel het volgende bevel als &quot;neolane&quot;gebruiker op alle containers van de instantie van Adobe Campaign in werking om de **[!UICONTROL Technical Account]** geloofsbrieven in het dossier van de instantieconfiguratie op te nemen.
 
 ```
 nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID[/Client_Secret[/Base64_encoded_Private_Key]]
@@ -95,7 +100,7 @@ nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_
 
 ## Stap 3: Label voor pijplijnen bijwerken {#update-pipelined-tag}
 
-Om [!DNL pipelined] markering bij te werken, moet u het authentificatietype aan Adobe IO project in het configuratiedossier **config-&lt; instance-name >.xml** als volgt bijwerken:
+Om [!DNL pipelined] markering bij te werken, moet u het authentificatietype aan Adobe I/O project in het configuratiedossier **config-&lt; instance-name >.xml** als volgt bijwerken:
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
@@ -103,4 +108,4 @@ Om [!DNL pipelined] markering bij te werken, moet u het authentificatietype aan 
 
 >[!NOTE]
 >
->Als u de oudere versie van de Integratie van Triggers gebruikend de Verouderde tokens van JWT gebruikt, zou u ook Adobe IO API voor [!DNL Adobe Analytics] gedetailleerde in de eerste stap moeten toevoegen om automatisch aan de nieuwe Authentificatie van Triggers te migreren.
+>Als u de oudere versie van de Integratie van Triggers gebruikend de Verouderde tokens van JWT gebruikt, zou u ook Adobe I/O API voor [!DNL Adobe Analytics] gedetailleerde in de eerste stap moeten toevoegen om automatisch aan de nieuwe Authentificatie van Triggers te migreren.
