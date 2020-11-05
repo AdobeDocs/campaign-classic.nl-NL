@@ -9,11 +9,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '887'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Controleer uw [versie en buildnummer](../../platform/using/launching-adobe-campa
 
 ## Wat zijn de verschillen bij het werken in een on-premise omgeving versus in een gehoste omgeving? {#what-are-the-differences-when-working-on-premise-vs--in-a-hosted-environment-}
 
-Adobe Campaign Classic wordt geleverd met een reeks modules en opties. The availability of these modules and their configuration can depend on the [type of deployment](../../installation/using/hosting-models.md) of your installation: hosted (Managed Services), hybrid or on-premise.
+Adobe Campaign Classic wordt geleverd met een reeks modules en opties. De beschikbaarheid van deze modules en hun configuratie kunnen afhankelijk zijn van het [type implementatie](../../installation/using/hosting-models.md) van uw installatie: gehost (Managed Services), hybride of on-premise.
 
 [Klik hier voor meer informatie](../../installation/using/capability-matrix.md).
 
@@ -65,7 +65,7 @@ Raadpleeg [dit document](https://helpx.adobe.com/nl/campaign/kb/campaign-privacy
 
 Lees [deze sectie](../../platform/using/adobe-campaign-workspace.md) voor meer informatie over de basisbeginselen van de Adobe Campaign-werkruimte.
 
-![](assets/do-not-localize/how-to-video.png) [Campagne ontdekken in video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png) [Campaign-werkruimte ontdekken in video](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 ## Hoe kan ik de doelgroep van mijn berichten selecteren? {#how-can-i-select-the-target-population-of-my-messages-}
 
