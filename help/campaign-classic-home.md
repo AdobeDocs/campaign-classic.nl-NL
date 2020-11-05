@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 title: Adobe Campaign Classic-productdocumentatie
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 9844616f417608051bbff2593d6124d8ff83008c
+source-git-commit: d9ae51c30e2ac538ff29e4ab53fa215d09f3d655
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 84%
+source-wordcount: '283'
+ht-degree: 74%
 
 ---
 
@@ -17,15 +17,14 @@ ht-degree: 84%
 
 ## Nieuwe functies
 
+* **[Integratie met](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/> Adobe Experience Cloud Triggers bijwerken De service voor oudere Auth-verificatie heeft het einde van de levensduur bereikt. Leer hoe u naar Adobe I/O migreert.
+
 * **[Ga naar API](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/> voor op HTTP/2 gebaseerde APNs-providers. Leer hoe u van het oude binaire protocol naar de op HTTP/2 gebaseerde APIs-provider kunt migreren.
 
 * **[emoticons toevoegen aan uw berichten](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>U kunt nu emoticons invoegen in berichten en onderwerpregel
 
 * **[Ondersteuning krijgen](https://helpx.adobe.com/nl/campaign/kb/ac-support.html)**<br/>
 Krijg toegang tot veelgestelde vragen, best practices en Help-resources en vraag hulp
-
-* **[Naleving van privacyvereisten](https://helpx.adobe.com/nl/campaign/kb/campaign-privacy.html)**<br/>
-Ontdek hoe Adobe Campaign u kan helpen aan privacyvereisten te voldoen
 
 * **[Trackingmogelijkheden](https://helpx.adobe.com/nl/campaign/kb/acc-tracking.html)**<br/>
 Begrijp de mogelijkheden en processen voor tracking in Campaign
