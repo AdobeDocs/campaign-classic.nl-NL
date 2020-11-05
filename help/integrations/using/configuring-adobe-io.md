@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -23,12 +23,16 @@ ht-degree: 0%
 
 # Adobe I/O configureren voor Adobe Experience Cloud-triggers {#configuring-adobe-io}
 
+>[!CAUTION]
+>
+>Als u een oudere versie van de integratie van Triggers door tokens JWT of authentificatie Auth gebruikt, moet **u naar Adobe I/O bewegen zoals hieronder** beschreven. JWT- en Auth-verificatiemodi zijn nu afgekeurd. [Meer informatie](https://github.com/AdobeDocs/analytics-1.4-apis)
+
 ## Vereisten {#adobe-io-prerequisites}
 
 Controleer voordat u met deze implementatie begint of:
 
 * een recente versie van Adobe Campaign: 19.1.8 of 20.2.1 gebouwen en hoger,
-* een geldige IMSOrgID: de identificatiecode van de organisatie van het Identity Management System (IMS) is de unieke identificatie binnen de Adobe Experience Cloud, die met name wordt gebruikt voor de VisitorID-service en de IMS Single-Sign On (SSO);
+* een geldige IMSOrgID: de identificatiecode van de Identity Management System (IMS)-organisatie is de unieke identificatie binnen de Adobe Experience Cloud, die bijvoorbeeld wordt gebruikt voor de VisitorID-service en de IMS Single-Sign On (SSO);
 * een ontwikkelaar toegang tot de IMS-organisatie.
 
 >[!NOTE]
@@ -105,7 +109,3 @@ Om [!DNL pipelined] markering bij te werken, moet u het authentificatietype aan 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
 ```
-
->[!NOTE]
->
->Als u de oudere versie van de Integratie van Triggers gebruikend de Verouderde tokens van JWT gebruikt, zou u ook Adobe I/O API voor [!DNL Adobe Analytics] gedetailleerde in de eerste stap moeten toevoegen om automatisch aan de nieuwe Authentificatie van Triggers te migreren.
