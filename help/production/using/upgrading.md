@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
+source-git-commit: 7e56e4f98ffab752f0b86bb8620fb1b4af6a3dca
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 1%
@@ -175,10 +175,10 @@ Hiervoor voert u de volgende opdracht uit:
 >
 >* Uw script wordt mogelijk **httpd** genoemd in plaats van **apache**.
 >* U MOET dit bevel uitvoeren tot u het volgende antwoord verkrijgt:
-   >Deze bewerking is vereist om Apache de nieuwe bibliotheek te laten toepassen.
 
->
-
+   >
+   >   
+   Deze bewerking is vereist om Apache de nieuwe bibliotheek te laten toepassen.
 
 
 Start vervolgens Apache opnieuw:
