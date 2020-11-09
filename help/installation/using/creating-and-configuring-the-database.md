@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 7dd8a6a5-7cca-4e92-8226-1b9e450dfaf9
 translation-type: tm+mt
-source-git-commit: fe7ce92bde3405fed3429475cdd5681e5837876f
+source-git-commit: 1781648fc17d729f451664204f99a77dfaa8c824
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1307'
 ht-degree: 2%
 
 ---
@@ -130,7 +130,7 @@ In het **[!UICONTROL Creation steps]** venster kunt u het SQL-script weergeven e
 
 * Voor een Oracle-, Microsoft SQL Server- of PostSQL-database kan de beheerder ook de **opslagparameters** definiëren die moeten worden gebruikt bij het maken van databaseobjecten.
 
-   Deze parameters krijgen de exacte namen van de tabelruimten (waarschuwing: hoofdlettergevoelig). Ze worden respectievelijk in het **[!UICONTROL Administration > Platform > Options]** knooppunt opgeslagen in de volgende opties (zie [](../../installation/using/configuring-campaign-options.md#database)):
+   Deze parameters krijgen de exacte namen van de tabelruimten (waarschuwing: hoofdlettergevoelig). Ze worden respectievelijk opgeslagen in het **[!UICONTROL Administration > Platform > Options]** knooppunt in de volgende opties (zie [deze sectie](../../installation/using/configuring-campaign-options.md#database)):
 
    * **WdbcOptions_TableSpaceUser**: gebruikerstabellen die op een schema worden gebaseerd
    * **WdbcOptions_TableSpaceIndex**: index van gebruikerstabellen die op een schema worden gebaseerd
