@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 075206aa-ff7b-4fa8-a05d-14a29fb119ba
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 1781648fc17d729f451664204f99a77dfaa8c824
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 5%
+source-wordcount: '173'
+ht-degree: 6%
 
 ---
 
@@ -34,4 +34,4 @@ De uitgaande overgang kan slechts één van de binnenkomende overgangspopulaties
 
 >[!CAUTION]
 >
->In het geval van **AND-join** type activiteiten, worden de gebeurtenisvariabelen samengevoegd maar als één variabele tweemaal wordt bepaald, is er een conflict en de waarde blijft onbepaald. Raadpleeg [](../../workflow/using/javascript-scripts-and-templates.md#event-variables) voor meer informatie.
+>In het geval van **AND-join** type activiteiten, worden de gebeurtenisvariabelen samengevoegd maar als één variabele tweemaal wordt bepaald, is er een conflict en de waarde blijft onbepaald. Raadpleeg [deze sectie](../../workflow/using/javascript-scripts-and-templates.md#event-variables) voor meer informatie.
