@@ -3,14 +3,14 @@ audience: end-user
 user-guide-title: Adobe Campaign Classic - handleiding
 breadcrumb-title: Campaign Classic - handleiding
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
-user-guide-description: null
+user-guide-description: U kunt cross-channel marketingcampagnes ontwerpen, plannen, uitvoeren, beheren en optimaliseren voor een hoog rendement op marketinginvesteringen.
 product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 7490895826c9ff80b01e89bb9a106ba218637bf0
+source-git-commit: 5f3ecffba2e505ad0bb074f6d635a51d983997e2
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2151'
 ht-degree: 99%
 
 ---
