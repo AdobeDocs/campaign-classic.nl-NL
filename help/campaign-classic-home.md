@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 title: Adobe Campaign Classic-productdocumentatie
 topic: Premium
 translation-type: tm+mt
-source-git-commit: ccd4fe1366fd9ecaca83dbf7aac241524f0af7d6
+source-git-commit: c14d257bb4f206e56a16d45507ee98ccad239fe7
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 78%
+source-wordcount: '274'
+ht-degree: 77%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 78%
 
 ## Nieuwe functies
 
-* **[Integratie met](integrations/using/configuring-adobe-io.md)**<br/>Adobe Experience Cloud Triggers bijwerken De service voor oudere Auth-verificatie heeft het einde van de levensduur bereikt. Leer hoe u naar Adobe I/O migreert.
+* **[De Adobe Experience Cloud Triggers-integratie](integrations/using/configuring-adobe-io.md)**<br/> bijwerken De service voor oudere Auth-verificatie heeft het einde van de levensduur bereikt. Leer hoe u naar Adobe I/O migreert.
 
-* **[Ga naar API](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/> voor op HTTP/2 gebaseerde APNs-providers. Leer hoe u van het oude binaire protocol naar de op HTTP/2 gebaseerde APIs-provider kunt migreren.
+* **[Ga naar API](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/> voor op HTTP/2 gebaseerde APNs-providers Leer hoe u van het oude binaire protocol naar de op HTTP/2 gebaseerde APIs-provider kunt migreren.
 
-* **[emoticons toevoegen aan uw berichten](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>U kunt nu emoticons invoegen in berichten en onderwerpregel
+* **[emoticons toevoegen aan uw berichten](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/> U kunt nu emoticons invoegen in berichten en onderwerpregel
 
 * **[Ondersteuning krijgen](https://helpx.adobe.com/nl/campaign/kb/ac-support.html)**<br/>
 Krijg toegang tot veelgestelde vragen, best practices en Help-resources en vraag hulp
@@ -29,7 +29,7 @@ Krijg toegang tot veelgestelde vragen, best practices en Help-resources en vraag
 * **[Trackingmogelijkheden](https://helpx.adobe.com/nl/campaign/kb/acc-tracking.html)**<br/>
 Begrijp de mogelijkheden en processen voor tracking in Campaign
 
-[Klik hier voor meer updates](/help/rn/using/documentation-updates.md)
+[Meer updates](/help/rn/using/documentation-updates.md)
 
 ## Bovenste pagina’s
 
