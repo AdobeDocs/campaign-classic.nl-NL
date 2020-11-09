@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: 2e2d1134-9b83-4ada-b74f-c3842a0cf044
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: e01acc00d0b15df99c009fe29d170ed0fc9fa956
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1185'
 ht-degree: 11%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 11%
 
 # Communicatiekanalen{#communication-channels}
 
-Met Adobe Campaign kunt u kanaalcampagnes verzenden, zoals e-mails, SMS, LIJN-berichten, pushberichten en directe mails, en de doeltreffendheid van deze campagnes meten aan de hand van verschillende speciale [rapporten](../../reporting/using/delivery-reports.md). Deze berichten worden ontworpen en verzonden door leveringen, en kunnen voor elke ontvanger worden gepersonaliseerd.
+Met Adobe Campaign kunt u kanaalcampagnes verzenden, waaronder e-mails, SMS, LIJN-berichten, pushberichten en directe mails, en de doeltreffendheid van deze campagnes meten aan de hand van verschillende speciale [rapporten](../../reporting/using/delivery-reports.md). Deze berichten worden ontworpen en verzonden door leveringen, en kunnen voor elke ontvanger worden gepersonaliseerd.
 
-De kernfuncties omvatten het richten, het bepalen en het personaliseren van berichten, de uitvoering van mededelingen, en de bijbehorende operationele rapporten. Het belangrijkste functionele toegangspunt is de leveringstovenaar. Dit toegangspunt leidt tot verschillende mogelijkheden die door Adobe Campaign worden gedekt.
+De kernfuncties omvatten het richten, het bepalen en het personaliseren van berichten, de uitvoering van mededelingen, en de bijbehorende operationele rapporten. Het belangrijkste functionele toegangspunt is de leveringstovenaar. Dit toegangspunt leidt tot meerdere mogelijkheden die door Adobe Campaign worden gedekt.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Adobe Campaign biedt de volgende leveringskanalen:
 
    >[!NOTE]
    >
-   >Het gebruik van meerdere kanalen is afhankelijk van het pakket. Controleer hiervoor uw licentieovereenkomst.
+   >Het aantal beschikbare kanalen is afhankelijk van uw contract. Controleer hiervoor uw licentieovereenkomst.
 
 Leveringen kunnen **online** (via e-mail, een van de mobiele kanalen en pushmeldingen) en **offline** (direct-mailkanaal) worden uitgevoerd.
 
