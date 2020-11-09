@@ -13,15 +13,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d9ae51c30e2ac538ff29e4ab53fa215d09f3d655
+source-git-commit: 8486213403bf848f1632aff06f3f1528b199f86d
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 0%
+source-wordcount: '423'
+ht-degree: 2%
 
 ---
 
 
-# Adobe I/O configureren voor Adobe Experience Cloud-triggers {#configuring-adobe-io}
+# Configuring Adobe I/O for Adobe Experience Cloud Triggers {#configuring-adobe-io}
 
 >[!CAUTION]
 >
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 Controleer voordat u met deze implementatie begint of:
 
-* een recente versie van Adobe Campaign: 19.1.8 of 20.2.1 gebouwen en hoger,
+* een recente versie van Adobe Campaign (20.2.1 en hoger),
 * een geldige IMSOrgID: de identificatiecode van de Identity Management System (IMS)-organisatie is de unieke identificatie binnen de Adobe Experience Cloud, die bijvoorbeeld wordt gebruikt voor de VisitorID-service en de IMS Single-Sign On (SSO);
 * een ontwikkelaar toegang tot de IMS-organisatie.
 
@@ -56,31 +56,31 @@ Controleer voordat u met deze implementatie begint of:
 
 1. Identificeer het bestaande project gebruikend gehaalde cliënt ID. Zoek bestaande projecten met dezelfde client-id als de projecten die u in de vorige stap hebt uitgepakt.
 
-   ![](assets/adobe_io_8.png)
+   ![](assets/do-not-localize/adobe_io_8.png)
 
 1. Selecteer **[!UICONTROL + Add to Project]** en kies **[!UICONTROL API]**.
 
-   ![](assets/adobe_io_1.png)
+   ![](assets/do-not-localize/adobe_io_1.png)
 
 1. In the **[!UICONTROL Add an API]** window, select **[!UICONTROL Adobe Analytics]**.
 
-   ![](assets/adobe_io_2.png)
+   ![](assets/do-not-localize/adobe_io_2.png)
 
 1. Kies **[!UICONTROL Service Account (JWT)]** als verificatietype.
 
-   ![](assets/adobe_io_3.png)
+   ![](assets/do-not-localize/adobe_io_3.png)
 
 1. Als uw identiteitskaart van de Cliënt leeg was, selecteer **[!UICONTROL Generate a key pair]** om een Openbaar en Privé sleutelpaar tot stand te brengen.
 
-   ![](assets/adobe_io_4.png)
+   ![](assets/do-not-localize/adobe_io_4.png)
 
 1. Upload uw openbare sleutel en klik **[!UICONTROL Next]**.
 
-   ![](assets/adobe_io_5.png)
+   ![](assets/do-not-localize/adobe_io_5.png)
 
 1. Kies het productprofiel **Analytics-&lt; Org Name >** en klik **[!UICONTROL Save configured API]**.
 
-   ![](assets/adobe_io_6.png)
+   ![](assets/do-not-localize/adobe_io_6.png)
 
 1. Selecteer in uw project de volgende gegevens **[!UICONTROL Service Account (JWT)]** en kopieer deze:
    * **[!UICONTROL Client ID]**
@@ -88,7 +88,7 @@ Controleer voordat u met deze implementatie begint of:
    * **[!UICONTROL Technical account ID]**
    * **[!UICONTROL Organization ID]**
 
-   ![](assets/adobe_io_7.png)
+   ![](assets/do-not-localize/adobe_io_7.png)
 
 ## Stap 2: De referenties van het project toevoegen in Adobe Campaign {#add-credentials-campaign}
 
