@@ -1,6 +1,6 @@
 ---
-title: Technische workflow voor weergave in Postvak In Adobe Campaign Classic
-description: In deze sectie wordt de technische workflow beschreven die is geïnstalleerd met het renderingspakket Inbox in Adobe Campaign Classic.
+title: Technische workflow voor weergave in Postvak In
+description: In deze sectie wordt de technische workflow beschreven die met het Inbox-renderingpakket is geïnstalleerd.
 page-status-flag: never-activated
 uuid: f60a09f0-47a0-4fc0-b0ac-47178af6ad55
 contentOwner: sauviat
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: technical-workflows
 discoiquuid: da0779dc-b734-483b-81e9-ff4706a2b6de
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '73'
 ht-degree: 2%
 
 ---
