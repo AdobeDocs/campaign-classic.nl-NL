@@ -1,8 +1,6 @@
 ---
 title: Workflowdata gebruiken
-seo-title: Workflowdata gebruiken
-description: Workflowdata gebruiken
-seo-description: null
+description: Leer hoe u workflowgegevens gebruikt
 page-status-flag: never-activated
 uuid: ed03f14b-1b53-426e-9213-22cb2f3deb19
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: ec3844ca-8d80-4ddc-b08c-f18a6919bb28
 translation-type: tm+mt
-source-git-commit: 1e6ef4a3924e2cab0e6baf06e0861620e17d240b
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 3%
+source-wordcount: '916'
+ht-degree: 2%
 
 ---
 
