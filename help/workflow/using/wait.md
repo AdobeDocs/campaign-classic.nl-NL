@@ -1,8 +1,6 @@
 ---
 title: De activiteit Wachten
-seo-title: De activiteit Wachten
-description: De activiteit Wachten
-seo-description: null
+description: Meer informatie over de workflowactiviteit Wachten
 page-status-flag: never-activated
 uuid: 55e4f15d-8d69-45b1-b842-5ccdfdedf550
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 41bcfe67-b5d6-4ee6-9f8a-6a7a208e2036
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 2%
+source-wordcount: '192'
+ht-degree: 1%
 
 ---
 
