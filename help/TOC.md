@@ -8,9 +8,9 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 5f3ecffba2e505ad0bb074f6d635a51d983997e2
+source-git-commit: b8548e8d609ed099433b97b4c0704d27234e81c0
 workflow-type: tm+mt
-source-wordcount: '2151'
+source-wordcount: '2156'
 ht-degree: 99%
 
 ---
@@ -39,7 +39,6 @@ ht-degree: 99%
 + Aan de slag {#getting-started}
    + Starten met Adobe Campaign {#starting-with-adobe-campaign}
       + [Aan de slag met Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
-      + [Privacy en instemming](platform/using/privacy-and-recommendations.md)
       + [Adobe Campaign starten](platform/using/launching-adobe-campaign.md)
       + [Adobe Campaign-werkruimte](platform/using/adobe-campaign-workspace.md)
       + Veelgestelde vragen {#faq}
@@ -54,6 +53,10 @@ ht-degree: 99%
          + [Rapporten](platform/using/faq-reporting.md)
          + [Ontwikkeling](platform/using/faq-developers.md)
       + [Zelfstudies](platform/using/tutorials.md)
+   + Privacy {#privacy}
+      + [Privacy en instemming](platform/using/privacy-and-recommendations.md)
+      + [Privacybeheer](platform/using/privacy-management.md)
+      + [Privacyverzoeken](platform/using/privacy-requests.md)
    + Profielbeheer {#profile-management}
       + [Profielen](platform/using/about-profiles.md)
       + [Een profiel bewerken](platform/using/editing-a-profile.md)
