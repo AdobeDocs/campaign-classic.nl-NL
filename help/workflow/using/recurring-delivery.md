@@ -1,8 +1,6 @@
 ---
 title: Terugkerende levering
-seo-title: Terugkerende levering
-description: Terugkerende levering
-seo-description: null
+description: Meer informatie over de activiteit van de workflow Terugkerende levering
 page-status-flag: never-activated
 uuid: 715855df-fe29-46e8-a7ab-d534f010a26e
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: action-activities
 discoiquuid: 185d3256-a21e-47d7-bee7-7b91762ca1e2
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 9%
+source-wordcount: '199'
+ht-degree: 7%
 
 ---
 
