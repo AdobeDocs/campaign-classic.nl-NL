@@ -1,8 +1,6 @@
 ---
 title: Overzicht van levering
-seo-title: Overzicht van levering
-description: Overzicht van levering
-seo-description: null
+description: Meer informatie over de workflowactiviteit van het overzicht van de levering
 page-status-flag: never-activated
 uuid: 2b924cc6-6b71-481e-acab-2d035bbc2852
 contentOwner: sauviat
@@ -12,17 +10,17 @@ content-type: reference
 topic-tags: targeting-activities
 discoiquuid: a2a65f97-425b-44b2-8cf4-beea850423bc
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 3%
+source-wordcount: '267'
+ht-degree: 1%
 
 ---
 
 
 # Overzicht van levering{#delivery-outline}
 
-Met het leveringsoverzicht kunt u een omtrek gebruiken in een campagneworkflow. De contouren moeten vooraf in de campagne zijn gemaakt.
+Met het **leveringsoverzicht** kunt u een omtrek gebruiken in een campagneworkflow. De contouren moeten vooraf in de campagne zijn gemaakt.
 
 Zie deze [sectie](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)voor meer informatie over de leveringscontouren in Adobe Campaign.
 
@@ -30,7 +28,7 @@ Om de activiteit te vormen, moet u eenvoudig het overzicht selecteren u evenals 
 
 ## Voorbeeld: Een voorstel invoegen via een leveringsoverzicht {#example--inserting-an-offer-via-a-delivery-outline}
 
-Met de overzichtsactiviteit van de levering, die beschikbaar is in de workflows van de campagne, kunt u aanbiedingen presenteren waarnaar wordt verwezen in een leveringsoverzicht van de lopende campagne.
+De activiteit van het **leveringsoverzicht** , beschikbaar in de campagnewerkschema&#39;s, laat u aanbiedingen voorstellen voorstellen die in een leveringsoverzicht van de huidige lopende campagne van verwijzingen worden voorzien.
 
 >[!NOTE]
 >
