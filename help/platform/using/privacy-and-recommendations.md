@@ -1,7 +1,7 @@
 ---
-title: Privacy en aanbevelingen
-seo-title: Privacy en aanbevelingen
-description: Privacy en aanbevelingen
+title: Privacy en instemming
+seo-title: Privacy en instemming
+description: Privacy en instemming
 seo-description: null
 page-status-flag: never-activated
 uuid: a044bbea-521d-4c1e-8aab-7d51a87fc94b
@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: 6ca61b4e927b7443815f0337b8e661c8ec126001
+source-git-commit: 53c15bca0f5cc3e6866e87a5ffbc7f68e7bcc1b8
 workflow-type: tm+mt
-source-wordcount: '1850'
-ht-degree: 8%
+source-wordcount: '1815'
+ht-degree: 7%
 
 ---
 
@@ -45,7 +45,7 @@ Werken binnen de wetgeving die van toepassing is op de regio(s) waar u actief be
 
 >[!NOTE]
 >
->Zie [deze pagina](https://helpx.adobe.com/nl/campaign/kb/campaign-privacy-overview.html#whatisgdpr)voor meer informatie over hoe GDPR, CCPA, PDPA en LGPD van toepassing zijn op Adobe Campaign.
+>Zie [deze pagina](../../platform/using/privacy-management.md#privacy-management-regulations)voor meer informatie over hoe GDPR, CCPA, PDPA en LGPD van toepassing zijn op Adobe Campaign.
 
 ### Adobe Experience Cloud privacy {#experience-cloud-privacy}
 
@@ -83,7 +83,7 @@ Bij het beheren van Privacy, is het belangrijk om te bepalen welke gegevens met 
 * **Persoonsgegevens** zijn informatie die direct of indirect een levende persoon kan identificeren.
 * **Gevoelige persoonsgegevens** zijn gegevens over ras, politieke opvattingen, godsdienstige overtuiging, criminele achtergrond, genetische informatie, gezondheidsgegevens, seksuele voorkeur, biometrische informatie en lidmaatschap van een vakvereniging.
 
-De [belangrijkste wetgeving](#privacy-regulations) heeft als volgt betrekking op de verschillende entiteiten die gegevens beheren:
+De [belangrijkste verordeningen](#privacy-regulations) verwijzen naar de verschillende entiteiten die gegevens beheren als volgt:
 * Een **gegevenscontroller** is de instantie die de middelen en het doel van het verzamelen, gebruiken en delen van persoonsgegevens bepaalt.
 * Een **gegevensprocessor** is een persoon of partij die persoonlijke gegevens verzamelt, gebruikt of deelt op de wijze die door de gegevenscontroller wordt aangegeven.
 * Een **betrokkene** is een levende persoon wiens persoonsgegevens worden verzameld, gebruikt of gedeeld en die direct of indirect kan worden geïdentificeerd aan de hand van die persoonsgegevens.
@@ -108,10 +108,9 @@ Het beheer van de privacy verwijst naar alle processen en hulpmiddelen die u kun
 Adobe Campaign biedt u verschillende functies voor privacybeheer:
 * Goedkeuringsbeheer, gegevensbewaring en gebruikersrollen. Zie [deze sectie](#consent).
 * Privacyverzoeken (recht op toegang en recht om te worden vergeten). Zie [deze sectie](#privacy-requests).
-* Opt-out voor de Verkoop van Persoonlijke Informatie (specifiek CCPA). Zie [deze sectie](https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html#ccpa).
+* Opt-out voor de Verkoop van Persoonlijke Informatie (specifiek CCPA). Zie [deze sectie](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
 
 De belangrijkste mogelijkheden van de Privacy in Campagne en een voorbeeld van de betrokken personen worden voorgesteld in [deze sectie](https://helpx.adobe.com/campaign/kb/campaign-privacy-more.html#gdprpersonasandflow).
-
 
 ### Toestemming, bewaring en rollen {#consent}
 
@@ -121,7 +120,7 @@ Oorspronkelijk biedt Adobe Campaign belangrijke functies die essentieel zijn voo
 * **Bewaren** van gegevens: Alle ingebouwde standaardlogtabellen hebben vooraf ingestelde retentieperioden, waarbij de gegevensopslag doorgaans tot 6 maanden of minder wordt beperkt. Er kunnen extra retentieperiodes worden ingesteld met workflows. Neem hiervoor contact op met de consultants van de Adobe of met technische beheerders.
 * **Rechtenbeheer**: Adobe Campaign biedt u de mogelijkheid om de rechten te beheren die aan de verschillende campagneoperatoren zijn toegewezen via verschillende vooraf gebouwde of aangepaste rollen. Hierdoor kunt u bepalen wie binnen uw bedrijf toegang heeft tot verschillende typen gegevens, deze kan wijzigen of exporteren. Zie [Informatie over toegangsbeheer](../../platform/using/access-management.md)voor meer informatie hierover.
 
-Zie [deze pagina](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent)voor meer informatie over deze functies en hoe u deze kunt beheren in Adobe Campaign.
+Zie [deze sectie](../../platform/using/privacy-management.md#consent-retention-roles)voor meer informatie over deze functies en hoe u ze in Adobe Campaign kunt beheren.
 
 ### Privacyverzoeken {#privacy-requests}
 
@@ -133,7 +132,7 @@ Adobe Campaign biedt extra mogelijkheden om u te helpen uw bereidheid als Data C
 
 >[!NOTE]
 >
->Deze reeks hulpmiddelen is hier om u met uw privacynaleving voor GDPR, CCPA, PDPA, en LGPD te helpen. Zie [deze pagina](https://helpx.adobe.com/nl/campaign/kb/campaign-privacy-overview.html#whatisgdpr)voor meer informatie over deze verschillende verordeningen.
+>Deze reeks hulpmiddelen is hier om u met uw privacynaleving voor GDPR, CCPA, PDPA, en LGPD te helpen. Zie [deze pagina](../../platform/using/privacy-management.md#privacy-management-regulations)voor meer informatie over deze verschillende verordeningen.
 
 <!--* **GDPR** (General Data Protection Regulation) is the European Union’s (EU) privacy law that harmonizes and modernizes data protection requirements. GDPR applies to Adobe Campaign customers who hold data for Data Subjects residing in the EU.
 
@@ -143,7 +142,7 @@ Adobe Campaign biedt extra mogelijkheden om u te helpen uw bereidheid als Data C
 
 Brazil's Lei Geral de Proteção de Dados (LGPD) will be effective starting Aug, 16 for all companies collecting or processing personal data in Brazil. This regulation also applies to Adobe Campaign customers who hold data for Data Subjects residing in this country.-->
 
-De **verzoeken om toegang** en **om verwijderen** worden weergegeven op [deze pagina](https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess). De implementatiestappen voor het maken van deze aanvragen worden in [deze sectie](https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)beschreven. <!--Tutorials are also available [here](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/privacy/privacy-overview.html).-->
+De **verzoeken om toegang** en **om verwijderen** worden weergegeven op [deze pagina](../../platform/using/privacy-management.md#right-access-forgotten). De implementatiestappen voor het maken van deze aanvragen worden in [deze sectie](../../platform/using/privacy-requests.md)beschreven. <!--Tutorials are also available [here](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/privacy/privacy-overview.html).-->
 
 ## Traceermogelijkheden {#tracking-capabilities}
 
@@ -154,7 +153,7 @@ Dankzij de trackingfuncties van Adobe Campaign kunt u het bladeren door de ontva
 * A **session** cookie: the **nlid** cookie contains the identifier of the email sent to the contact (**broadlogId**) and the identifier of the message template (**deliveryId**). Deze wordt toegevoegd wanneer de contactpersoon op een URL klikt die is opgenomen in een e-mail die door Adobe Campaign wordt verzonden. Hiermee kunt u het gedrag van de contactpersoon op het web volgen. Deze sessiecookie wordt automatisch gewist wanneer de browser wordt gesloten. De contactpersoon kan zijn browser configureren om cookies te weigeren.
 
 * Twee **permanente** cookies:
-   * Het **UUID** -cookie (Universal Unique IDentifier) wordt gedeeld door Adobe Experience Cloud-oplossingen. Deze wordt eenmaal ingesteld totdat deze verdwijnt van de clientbrowser wanneer een nieuwe waarde wordt gegenereerd. Met dit cookie kunt u de gebruikers identificeren die met de Experience Cloud-oplossingen werken wanneer ze een website bezoeken. Het kan door een landingspagina (om onbekende klantenactiviteiten aan een ontvanger te associëren) of door een levering worden gedeponeerd. De beschrijving van deze cookie is beschikbaar [op deze pagina](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-mc.html).
+   * Het **UUID** -cookie (Universal Unique IDentifier) wordt gedeeld door Adobe Experience Cloud-oplossingen. Deze wordt één keer ingesteld totdat deze verdwijnt uit de clientbrowser wanneer een nieuwe waarde wordt gegenereerd. Met dit cookie kunt u de gebruikers identificeren die met de Experience Cloud-oplossingen werken wanneer ze een website bezoeken. Het kan door een landingspagina (om onbekende klantenactiviteiten aan een ontvanger te associëren) of door een levering worden gedeponeerd. De beschrijving van deze cookie is beschikbaar op [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=en#ec-cookies).
    * Het **nllastdelid** cookie (geïntroduceerd in Campaign Classic 20.3) is een permanent cookie dat de **deliveryId** bevat van de laatste levering waarvan de gebruiker op de koppeling klikte. Dit cookie wordt gebruikt - wanneer het sessiecookie ontbreekt - om de volgende tabel te identificeren die wordt gebruikt.
 
 In verordeningen zoals de algemene gegevensbeschermingsverordening (GDPR) wordt bepaald dat bedrijven de toestemming van webgebruikers eisen voordat ze cookies installeren.
