@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: input-forms
 discoiquuid: 0c33fd79-8fa5-4cc0-8881-c6d6f4ee1648
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 16%
@@ -22,7 +22,7 @@ ht-degree: 16%
 
 # Formulieren bewerken{#editing-forms}
 
-Het scherm voor het maken en configureren van invoerformulieren is toegankelijk vanuit de **[!UICONTROL Administration > Configuration > Input forms]** map op de Adobe Campaign-clientconsole:
+Het scherm voor het maken en configureren van invoerformulieren is toegankelijk via de map **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** op de Adobe Campaign-clientconsole:
 
 ![](assets/d_ncs_integration_form_arbo.png)
 
