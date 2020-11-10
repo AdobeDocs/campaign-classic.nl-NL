@@ -1,8 +1,6 @@
 ---
 title: Een workflow maken
-seo-title: Een workflow maken
-description: Een workflow maken
-seo-description: null
+description: Leer hoe u een workflow kunt maken
 page-status-flag: never-activated
 uuid: 55743545-dd4b-4a0a-aeff-8fd638812b9d
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: 2d4ccf81-cd85-4f4c-8ba8-5b5612af1e16
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1624'
 ht-degree: 3%
 
 ---
@@ -145,13 +143,13 @@ Doelworkflows kunnen worden gemaakt en bewerkt via het **[!UICONTROL Profiles an
 
 Het richten van werkschema&#39;s binnen het kader van een campagne wordt opgeslagen met alle campagnewerkschema&#39;s.
 
-### Implementatiestappen {#implementation-steps-}
+### Belangrijke stappen om een doelworkflow te maken {#implementation-steps-}
 
-De volgende fasen voor het samenstellen van gegevens zijn bedoeld:
+De stappen voor het maken van een doelworkflow worden in de volgende secties beschreven:
 
-1. Voor het identificeren van gegevens in het gegevensbestand, verwijs naar het [Creëren van vragen](../../workflow/using/targeting-data.md#creating-queries).
-1. Voor het voorbereiden van gegevens om aan leveringsbehoeften te voldoen, verwijs naar het [Verrijken en het wijzigen van gegevens](../../workflow/using/targeting-data.md#enriching-and-modifying-data).
-1. Voor het gebruiken van gegevens om updates of binnen een levering uit te voeren, verwijs naar het [Bijwerken van het gegevensbestand](../../workflow/using/how-to-use-workflow-data.md#updating-the-database).
+1. **Gegevens identificeren** in de database - Zie [Query&#39;s maken](../../workflow/using/targeting-data.md#creating-queries)
+1. **Gegevens voorbereiden** om aan de leveringsbehoeften te voldoen - Zie [Verrijken en gegevens wijzigen](../../workflow/using/targeting-data.md#enriching-and-modifying-data)
+1. **Gegevens gebruiken** om updates of levering uit te voeren - Zie De database [bijwerken](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)
 
 De resultaten van alle verrijkingen en alle handgrepen die tijdens het richten worden uitgevoerd worden opgeslagen en toegankelijk op verpersoonlijkingsgebieden, met name voor gebruik wanneer het creëren van gepersonaliseerde berichten. For more on this, refer to [Target data](../../workflow/using/data-life-cycle.md#target-data)
 
@@ -179,15 +177,15 @@ Voor elke campagne kunt u workflows maken die via het **[!UICONTROL Targeting an
 
 ![](assets/wf-in-op-edit-delivery-tab.png)
 
-Dit tabblad bevat dezelfde activiteiten als voor alle workflows. Deze worden weergegeven in het gedeelte [Implementatiestappen](#implementation-steps-) .
+Dit tabblad bevat dezelfde activiteiten als voor alle workflows. [Meer informatie](#implementation-steps-)
 
-Naast het richten van campagnes, laten de campagnewerkschema&#39;s u toe om leveringen volledig voor alle beschikbare kanalen tot stand te brengen en te vormen. Zodra gecreeerd in het werkschema, zijn deze leveringen beschikbaar bij het dashboard van de campagne.
+Naast het richten van campagnes, laten de campagnewerkschema&#39;s u toe om leveringen volledig voor alle beschikbare kanalen tot stand te brengen en te vormen. Zodra gecreeerd in het werkschema, zijn deze leveringen beschikbaar bij het dashboard van de campagne. [Meer informatie](../../campaign/using/marketing-campaign-deliveries.md)
 
 Alle campagneworkflows worden gecentraliseerd onder het **[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]** knooppunt.
 
 ![](assets/campaigns_wf.png)
 
-De workflows van de campagne en de implementatievoorbeelden worden in deze [pagina](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)beschreven.
+De workflows van de campagne en de implementatievoorbeelden worden in [deze pagina](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)beschreven.
 
 ## Technische workflows {#technical-workflows}
 
@@ -205,7 +203,7 @@ De **[!UICONTROL Campaign process]** submap centraliseert de workflows die nodig
 
 U kunt andere technische werkschema&#39;s in de **[!UICONTROL Administration > Production > Technical workflows]** knoop van de boomstructuur tot stand brengen. Dit proces is echter voorbehouden aan professionele gebruikers.
 
-De aangeboden activiteiten zijn dezelfde als voor workflows die zich op de werkstroom richten. For more on this, refer to [Implementation steps](#implementation-steps-).
+De aangeboden activiteiten zijn dezelfde als voor workflows die zich op de werkstroom richten. [Meer informatie](#implementation-steps-)
 
 ## Workflowsjablonen {#workflow-templates}
 
