@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2d0d2d4eefc67312e1b9a8edc7ae88def2980ef1
+source-git-commit: 160af30e13bb6a81672477f4f801dbd5cc3c767c
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 2%
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->Als u een oudere versie van de integratie van Triggers door authentificatie Auth gebruikt, moet **u naar Adobe I/O bewegen zoals hieronder** beschreven. De oude Auth-verificatiemodus wordt op 30 april 2021 afgesloten. [Meer informatie](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md)
+>Als u een oudere versie van de integratie van Triggers door authentificatie Auth gebruikt, moet **u naar Adobe I/O bewegen zoals hieronder** beschreven. De oude Auth-verificatiemodus wordt op 30 april 2021 afgesloten. [Meer informatie](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 
 ## Vereisten {#adobe-io-prerequisites}
 
