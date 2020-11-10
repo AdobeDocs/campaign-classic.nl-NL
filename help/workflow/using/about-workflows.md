@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: 868940d1-f19d-4e9a-bffa-8654abb4441c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 16%
+source-wordcount: '650'
+ht-degree: 18%
 
 ---
 
@@ -32,9 +32,9 @@ Workflows vinden plaats in verschillende contexten en fasen van het campagnebehe
 
 Adobe Campaign gebruikt workflows om:
 
-* Voer gerichte campagnes uit. For more on this, refer to [Implementation steps](../../workflow/using/building-a-workflow.md#implementation-steps-).
-* Campagnes opbouwen: voor elke campagne, laat het **[!UICONTROL Workflow]** lusje u het doel bouwen en de leveringen tot stand brengen. For more on this, refer to [Campaign workflows](../../workflow/using/building-a-workflow.md#campaign-workflows).
-* Technische processen uitvoeren: opschonen, trackinggegevens verzamelen of voorlopige berekeningen maken. For more on this, refer to [Technical workflows](../../workflow/using/building-a-workflow.md#technical-workflows).
+* Voer gerichte campagnes uit. [Meer informatie](../../workflow/using/building-a-workflow.md#implementation-steps-)
+* Campagnes opbouwen: voor elke campagne, laat het **[!UICONTROL Workflow]** lusje u het doel bouwen en de leveringen tot stand brengen. [Meer informatie](../../workflow/using/building-a-workflow.md#campaign-workflows)
+* Technische processen uitvoeren: opschonen, trackinggegevens verzamelen of voorlopige berekeningen maken. [Meer informatie](../../workflow/using/building-a-workflow.md#technical-workflows)
 
 Een werkstroom kan zowel een procesdefinitie (het werkschemamodel, dat een vertegenwoordiging van is wat verondersteld om is te gebeuren) als een geval van dit proces (een werkschemainstantie, die een vertegenwoordiging van is wat eigenlijk gebeurt) betekenen.
 
