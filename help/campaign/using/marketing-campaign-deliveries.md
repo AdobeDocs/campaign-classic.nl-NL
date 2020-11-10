@@ -1,8 +1,6 @@
 ---
 title: Aflevering van marketingcampagnes
-seo-title: Aflevering van marketingcampagnes
-description: Aflevering van marketingcampagnes
-seo-description: Meer informatie over marketingcampagneleveringen
+description: Meer informatie over marketingcampagneleveringen
 page-status-flag: never-activated
 uuid: 842b501f-7d65-4450-b7ab-aff3942fb96f
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 translation-type: tm+mt
-source-git-commit: 2abd9f987967484cc93009d8961ed6b152cdc354
+source-git-commit: f6e820bd05b95e57b395407ed1e17c11b17cbf84
 workflow-type: tm+mt
-source-wordcount: '2956'
-ht-degree: 2%
+source-wordcount: '2917'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +22,9 @@ ht-degree: 2%
 
 Leveringen kunnen worden gemaakt via het campagnedashboard, een campagneworkflow of rechtstreeks via het overzicht van leveringen.
 
-![](assets/do-not-localize/how-to-video.png)[Ontdek deze functie in video](#create-email-video)
+Wanneer de leveringen worden gemaakt op basis van een campagne, worden ze gekoppeld aan deze campagne en geconsolideerd op campagnereniveau.
+
+![](assets/do-not-localize/how-to-video.png)[ Ontdek deze functie in video](#create-email-video)
 
 ## Leveringen maken {#creating-deliveries}
 
@@ -32,29 +32,21 @@ Als u een levering wilt maken die is gekoppeld aan een campagne, klikt u op de *
 
 ![](assets/campaign_op_add_delivery.png)
 
-De voorgestelde configuraties zijn geschikt voor de verschillende typen levering: direct mail, e-mail, mobiele kanalen.
-
->[!NOTE]
->
->Raadpleeg de sectie [Berichten](../../delivery/using/steps-about-delivery-creation-steps.md) verzenden voor meer informatie over het maken en configureren van leveringen.
+De voorgestelde configuraties zijn geschikt voor de verschillende typen levering: direct mail, e-mail, mobiele kanalen. [Meer informatie](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ## De doelpopulatie selecteren {#selecting-the-target-population}
 
-Voor elke levering definieert de campagnemanager:
+Voor elke levering kunt u definiëren:
 
-* Het hoofddoel. Zie [Het hoofddoel opbouwen in een workflow](#building-the-main-target-in-a-workflow) en de doelpopulatie [](#selecting-the-target-population)selecteren voor meer informatie.
-* De controlegroep. Voor meer op dit, verwijs naar het [Bepalen van een controlegroep](#defining-a-control-group).
-* De zaadadressen. Raadpleeg [deze sectie](../../delivery/using/about-seed-addresses.md) voor meer informatie.
+* Het publiek - Leer meer in het [Bouwen van het publiek in een werkschema](#building-the-main-target-in-a-workflow) en het [Selecteren van de doelbevolking](#selecting-the-target-population).
+* Een controlegroep - Leer meer in het [bepalen van een controlegroep](#defining-a-control-group).
+* Zaadadressen - Meer informatie in [deze sectie](../../delivery/using/about-seed-addresses.md).
 
-Enkele van deze gegevens worden overgenomen van de sjabloon.
+Sommige van deze gegevens kunnen van het [malplaatje](../../campaign/using/marketing-campaign-templates.md#campaign-templates)worden geërft.
 
->[!NOTE]
->
->De malplaatjes van de campagne worden voorgesteld in de malplaatjes [van de](../../campaign/using/marketing-campaign-templates.md#campaign-templates)Campagne.
+Om het leveringsdoel te bouwen, kunt u het filtreren criteria voor de ontvangers in het gegevensbestand bepalen. Deze selectiemodus voor ontvangers wordt weergegeven in [deze sectie](../../delivery/using/steps-defining-the-target-population.md).
 
-Om het leveringsdoel te bouwen, kunt u het filtreren criteria voor de ontvangers in het gegevensbestand bepalen. Deze ontvankelijke selectiemodus wordt voorgesteld in de [Verzendende sectie van Berichten](../../delivery/using/steps-defining-the-target-population.md) .
-
-### Voorbeeld: leveren aan een groep ontvangers {#example--delivering-to-a-group-of-recipients}
+**Voorbeeld: berichten verzenden naar een groep**
 
 U kunt een populatie in een lijst importeren en deze lijst vervolgens als doel instellen in leveringen.
 
@@ -68,24 +60,15 @@ U kunt een populatie in een lijst importeren en deze lijst vervolgens als doel i
 
 ![](assets/s_user_target_group_next.png)
 
-### Het hoofddoel opbouwen in een workflow {#building-the-main-target-in-a-workflow}
+### Het publiek opbouwen in een workflow {#building-the-main-target-in-a-workflow}
 
-Het hoofddoel van een levering kan ook worden gedefinieerd in de doelworkflow: in deze grafische omgeving kunt u een doel maken met behulp van query&#39;s, tests en operatoren: verenigen, dedupliceren, delen, enz.
-
-De handleiding [Automating with workflows](../../workflow/using/architecture.md) bevat een gedetailleerde beschrijving van de werking van de workflowmodule.
+Het hoofddoel van een levering kan ook worden gedefinieerd in de doelworkflow: in deze grafische omgeving kunt u een doel maken met behulp van query&#39;s, tests en operatoren: verenigen, dedupliceren, delen, enz. [Meer informatie](../../workflow/using/architecture.md).
 
 >[!IMPORTANT]
 >
->In dezelfde campagne kunt u niet meer dan 28 workflows instellen. Buiten deze limiet zijn extra workflows niet zichtbaar in de interface en kunnen fouten genereren.
+>U kunt niet meer dan 28 workflows in een campagne maken. Buiten deze limiet zijn extra workflows niet zichtbaar in de interface en kunnen fouten genereren.
 
-### Een e-mail maken in een campagne {#create-email-video}
-
-In deze video wordt uitgelegd hoe u een campagne en een e-mail maakt in Adobe Campaign Classic.
-
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
-
-
-#### Een doelworkflow maken {#creating-a-targeting-workflow}
+#### De workflow maken {#creating-a-targeting-workflow}
 
 Het richten kan door een combinatie filtervoorwaarden in een grafische opeenvolging in een werkschema worden tot stand gebracht. U kunt populaties en subpopulaties maken die op basis van uw vereisten worden aangepast. Klik op het **[!UICONTROL Targeting and workflows]** tabblad in het campagnemdashboard om de werkstroomeditor weer te geven.
 
@@ -124,7 +107,7 @@ U kunt verschillende doelworkflows voor één campagne maken. Een workflow toevo
 1. Selecteer de **[!UICONTROL New workflow]** sjabloon en geef deze workflow een naam.
 1. Klik **[!UICONTROL OK]** om de creatie van het werkschema te bevestigen, en dan het diagram voor deze werkschema tot stand te brengen.
 
-#### Een workflow uitvoeren {#executing-a-workflow}
+#### De workflow uitvoeren {#executing-a-workflow}
 
 Doelworkflows kunnen handmatig worden gestart via de **[!UICONTROL Start]** knop op de werkbalk, op voorwaarde dat u de juiste rechten hebt.
 
@@ -476,3 +459,9 @@ Het exportmodel moet worden gekoppeld aan de dienstverlener die voor de betrokke
 >[!NOTE]
 >
 >Raadpleeg de sectie Aan de [slag](../../platform/using/generic-imports-and-exports.md) voor meer informatie over exporteren.
+
+#### Een e-mail maken in een campagne {#create-email-video}
+
+In deze video wordt uitgelegd hoe u een campagne en een e-mail maakt in Adobe Campaign Classic.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
