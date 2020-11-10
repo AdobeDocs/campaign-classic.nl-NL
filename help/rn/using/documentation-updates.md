@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 7af0d17450ea2bee757e54dd4861f11ad023b700
+source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
 workflow-type: tm+mt
-source-wordcount: '3924'
+source-wordcount: '3932'
 ht-degree: 98%
 
 ---
@@ -25,6 +25,8 @@ Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates
 U kunt ook de [Adobe Campaign Classic-release-opmerkingen](../../rn/using/latest-release.md) raadplegen voor meer updates.
 
 ## November 2020 {#nov-2020}
+
+[Campagne 20.2.3-release](../../rn/using/release--20-2.md#release-20-2-3-build-9182) is verplaatst naar General Availability (GA).
 
 De sectie Privacy is verplaatst en verrijkt met twee nieuwe secties: [Privacybeheer](../../platform/using/privacy-management.md) en [privacyverzoeken](../../platform/using/privacy-requests.md)beheren.
 
