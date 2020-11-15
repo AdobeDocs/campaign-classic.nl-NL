@@ -1,6 +1,6 @@
 ---
-title: Over het Adobe Campaign Classic-gegevensmodel
-description: Leer hoe u het gegevensmodel van de campagne kunt uitbreiden, schema's kunt bewerken, API's kunt gebruiken en meer.
+title: Aan de slag met het gegevensmodel Campaign Classic
+description: Leer hoe u het gegevensmodel van de campagne kunt uitbreiden, schema's kunt bewerken, API's kunt gebruiken en meer
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -10,35 +10,21 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 5%
+source-wordcount: '983'
+ht-degree: 4%
 
 ---
 
 
-# About the Campaign data model{#about-data-model}
+# Get started with Campaign data model{#about-data-model}
 
-In deze sectie worden de grondbeginselen van het Adobe Campaign Classic-gegevensmodel beschreven, voor een beter begrip van geïntegreerde tabellen en hun interactie in de campagne.
-
-Het conceptuele datamodel van de Adobe Campaign-database bestaat uit een reeks ingebouwde tabellen en hun interactie.
-
-Om tot de beschrijving van elke lijst toegang te hebben, ga naar **[!UICONTROL Admin > Configuration > Data schemas]**, selecteer een middel van de lijst en klik de **[!UICONTROL Documentation]** tabel.
-
-![](assets/data-model_documentation-tab.png)
-
-Raadpleeg [deze sectie](../../configuration/using/data-model-description.md)voor meer informatie over het standaardgegevensmodel Campaign Classic.
-
-De fysieke en logische structuur van de data die in de applicatie worden overgedragen, wordt in XML beschreven. Het volgt een grammatica die specifiek is voor Adobe Campaign en een schema wordt genoemd. For more on Adobe Campaign schemas, read out [this section](../../configuration/using/about-schema-reference.md).
+Het conceptuele datamodel van de Adobe Campaign-database bestaat uit een reeks ingebouwde tabellen en hun interactie. De belangrijkste lijsten en de concepten worden vermeld in deze pagina.
 
 ## Overzicht {#data-model-overview}
 
 Adobe Campaign vertrouwt op een relationele database die tabellen bevat die aan elkaar zijn gekoppeld. De basisstructuur van het Adobe Campaign-gegevensmodel kan als volgt worden beschreven.
-
->[!NOTE]
->
->Raadpleeg [deze sectie](../../configuration/using/data-model-best-practices.md#data-model-architecture)voor meer informatie over de architectuur van het gegevensmodel van de campagne en de bijbehorende best practices.
 
 ### Ontvangertabel {#recipient-table}
 
@@ -100,7 +86,7 @@ Voor meer bij het vormen van uitbreidingsschema&#39;s om het conceptuele gegeven
 
 ## Using a custom recipient table {#custom-recipient-table}
 
-Bij het ontwerpen van uw Adobe Campaign-gegevensmodel kunt u de [out-of-the-box Ontvangertabel](#default-recipient-table)gebruiken of besluiten een niet-standaard ontvangertabel te maken om uw marketingprofielen op te slaan.
+Bij het ontwerpen van uw Adobe Campaign-gegevensmodel kunt u de [out-of-the-box Ontvangertabel](#default-recipient-table)gebruiken of besluiten een [aangepaste tabel](../../configuration/using/about-custom-recipient-table.md) voor ontvangers te maken om uw marketingprofielen op te slaan.
 
 Als uw gegevensmodel niet in de op de ontvanger gerichte structuur past, kunt u andere tabellen instellen als de doeldimensie in Adobe Campaign. Dit kan bijvoorbeeld van belang zijn wanneer u huishoudens, rekeningen (zoals mobiele telefoons) en bedrijven/sites moet aanspreken in plaats van alleen ontvangers.
 
@@ -112,22 +98,29 @@ Alle principes en stappen nodig wanneer het gebruiken van een lijst van de douan
 
 De voordelen van een aangepaste tabel voor ontvangers zijn als volgt:
 
-### Flexibel gegevensmodel {#flexible-data-model}
+* **Flexibel gegevensmodel** - De tabel Ontvanger uit de doos is niet bruikbaar als u de meeste tabelvelden Ontvanger niet nodig hebt of als het gegevensmodel niet op de ontvanger is gericht.
 
-De tabel Ontvanger uit de doos is niet bruikbaar als u de meeste tabelvelden Ontvanger niet nodig hebt of als het gegevensmodel niet op de ontvanger is gericht.
+* **Schaalbaarheid** - Voor grote volumes is een gestroomlijnde tabel met weinig velden vereist voor een efficiënt ontwerp. De out-of-the-box ontvangertabel zou te veel nutteloze velden hebben, wat van invloed kan zijn op de prestaties en een gebrek aan efficiëntie.
 
-### Schaalbaarheid {#scalability}
+* **Gegevenslocatie** - Als gegevens zich op een externe bestaande marketingdatabase bevinden, kan het te veel moeite kosten om de tabel Ontvanger buiten de box te gebruiken. Het maken van een nieuwe op basis van een bestaande structuur is eenvoudiger.
 
-Grote volumes vereisen een gestroomlijnde tabel met weinig velden voor een efficiënt ontwerp. De out-of-the-box ontvangertabel zou te veel nutteloze velden hebben, wat van invloed kan zijn op de prestaties en een gebrek aan efficiëntie.
-
-### Gegevenslocatie {#data-location}
-
-Als de gegevens op een extern bestaand marketing gegevensbestand verblijven, kan het teveel inspanning vereisen om de uit-van-de-doos Lijst van de Ontvanger te gebruiken. Het maken van een nieuwe op basis van een bestaande structuur is eenvoudiger.
-
-### Eenvoudige migratie {#easy-migration}
-
-Er is geen onderhoud nodig om te controleren of alle extensies nog geldig zijn na de upgrade.
+* **Eenvoudige migratie** - Er is geen onderhoud nodig om te controleren of alle extensies nog geldig zijn na de upgrade.
 
 >[!IMPORTANT]
 >
 >Het gebruiken van een douane ontvankelijke lijst is gereserveerd voor gevorderde gebruikers en is onderworpen aan sommige beperkingen. Zie [deze sectie](../../configuration/using/about-custom-recipient-table.md)voor meer informatie.
+
+## Verwante onderwerpen
+
+Meer informatie over het gegevensmodel van campagne vindt u in de volgende secties:
+
+* **Beschrijving van de hoofdtabellen** - Raadpleeg [deze sectie](../../configuration/using/data-model-description.md)voor meer informatie over het standaardgegevensmodel Campaign Classic.
+
+* **Volledige beschrijving van elke lijst** - om tot de volledige beschrijving van elke lijst toegang te hebben, ga naar **[!UICONTROL Admin > Configuration > Data schemas]**, selecteer een middel van de lijst en klik de **[!UICONTROL Documentation]** tabel.
+
+   ![](assets/data-model_documentation-tab.png)
+
+
+* **Campagne-schema&#39;s** - De fysieke en logische structuur van de gegevens die in de toepassing worden vervoerd wordt beschreven in XML. Het volgt een grammatica die specifiek is voor Adobe Campaign en een schema wordt genoemd. For more on Adobe Campaign schemas, read out [this section](../../configuration/using/about-schema-reference.md).
+
+* **Beste werkwijzen** voor gegevensmodellen - Leer de architectuur van het gegevensmodel van de campagne en verwante beste werkwijzen, in [deze sectie](../../configuration/using/data-model-best-practices.md#data-model-architecture).
