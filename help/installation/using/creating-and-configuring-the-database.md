@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 7dd8a6a5-7cca-4e92-8226-1b9e450dfaf9
 translation-type: tm+mt
-source-git-commit: 1781648fc17d729f451664204f99a77dfaa8c824
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 2%
+source-wordcount: '1301'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ Selecteer de database-engine in de vervolgkeuzelijst.
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-Ondersteunde databases worden weergegeven in de matrix [Compatibiliteit van de sectie](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html).
+Ondersteunde databases worden vermeld in de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md)voor campagnes.
 
 Identificeer de server en kies het type van verrichting om uit te voeren. In this case, **[!UICONTROL Create or recycle a database]**.
 
