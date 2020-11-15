@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: hybrid-and-hosted-models
 discoiquuid: f5244ab8-2421-4d76-bcf6-3574e68ea4e9
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 6%
@@ -30,7 +30,7 @@ Als ontvangen klant, worden de meeste installatie en configuratiestappen uitgevo
 * Ingebouwde pakketten installeren: Zie [deze paragraaf](../../installation/using/installing-campaign-standard-packages.md).
 * Leverbaarheid: Configureer [MX-regels](../../installation/using/email-deliverability.md#mx-configuration) en [e-mailindelingen](../../installation/using/email-deliverability.md#managing-email-formats). Lees voor meer informatie over de gereedschappen en de aanbevolen procedures voor [de levering de gids](../../delivery/using/deliverability-key-points.md) Aan de slag en [gedetailleerde documentatie](../../delivery/using/about-deliverability.md).
 * Campagneopties configureren: Zie [deze paragraaf](../../installation/using/configuring-campaign-options.md).
-* Een externe database configureren (Federated Data Access): Zie [deze paragraaf](../../platform/using/about-fda.md).
+* Een externe database configureren (Federated Data Access): Zie [deze paragraaf](../../installation/using/about-fda.md).
 * CRM-connectors configureren: Zie [deze paragraaf](../../platform/using/crm-connectors.md).
 * Raadpleeg dit gedeelte voor meer informatie over implementatiebeginselen [](../../installation/using/mid-sourcing-deployment.md)voor midsourcing.
 
