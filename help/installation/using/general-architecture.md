@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: architecture-and-hosting-models
 discoiquuid: 7c28c179-eb18-437e-baf2-25829566c766
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1336'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Adobe Campaign is gebaseerd op een servicegerichte architectuur (SOA) en bestaat
 
 >[!CAUTION]
 >
->Indien niet uitdrukkelijk anders vermeld, vallen de installatie, updates en het onderhoud op alle componenten van een Adobe Campaign-platform onder de verantwoordelijkheid van de systeembeheerder(s) die deze host(s). Dit omvat het implementeren van de voorwaarden voor Adobe Campaign-toepassingen en het naleven van de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html) tussen componenten.
+>Indien niet uitdrukkelijk anders vermeld, vallen de installatie, updates en het onderhoud op alle componenten van een Adobe Campaign-platform onder de verantwoordelijkheid van de systeembeheerder(s) die deze host(s). Dit omvat het implementeren van de voorwaarden voor Adobe Campaign-toepassingen en het naleven van de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) voor campagnes tussen componenten.
 
 ## Presentatielaag {#presentation-layer}
 
