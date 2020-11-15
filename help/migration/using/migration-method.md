@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: migration-overview
 discoiquuid: 3ac779a7-1f91-4c1c-a439-10d01697326a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 4%
+source-wordcount: '320'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +34,7 @@ In v6.02 was de modus &quot;multi timezone&quot; alleen beschikbaar voor Postgre
 >
 >Sommige softwareversies die worden ondersteund in Adobe Campaign 5.11 en 6.02, worden niet meer ondersteund in Adobe Campaign v7.
 >
->Raadpleeg de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html)voor meer informatie over de versies die door Adobe Campaign worden ondersteund.
+>Raadpleeg de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md)voor meer informatie over de versies die door Adobe Campaign worden ondersteund.
 
 ## Belangrijke migratiestappen {#key-migration-steps}
 
