@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: installing-campaign-in-linux-
 discoiquuid: 3e2ccb70-6c0c-435f-9c06-f3e5e40367bb
 translation-type: tm+mt
-source-git-commit: f8539433274e531e34b7512ce1b6385d67e8e332
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 3%
+source-wordcount: '896'
+ht-degree: 2%
 
 ---
 
@@ -24,14 +24,14 @@ ht-degree: 3%
 
 In dit gedeelte worden de voorbereidende stappen beschreven die zijn vereist voor de installatie van Adobe Campaign.
 
-De technische en softwareconfiguratie die vereist is voor de installatie van Adobe Campaign wordt beschreven in de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html).
+De technische en softwareconfiguratie die vereist is voor de installatie van Adobe Campaign wordt beschreven in de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
 
 Ter herinnering, moeten de volgende componenten worden geïnstalleerd en correct worden gevormd:
 
-* Apache, raadpleeg de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html).
+* Apache, raadpleeg de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
 * Java JDK en OpenJDK, verwijs naar [Java Development Kit - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
 * Bibliotheken, zie [Bibliotheken](#libraries),
-* De toegangslagen van het gegevensbestand, verwijs naar de toegangslagen [van het](#database-access-layers)Gegevensbestand,
+* De de toegangslagen van het gegevensbestand, verwijs naar de [toegangslagen](#database-access-layers)van het Gegevensbestand,
 * LibreOffice, verwijs naar het [Installeren van LibreOffice voor Debian](#installing-libreoffice-for-debian) en het [Installeren van LibreOffice voor CentOS](#installing-libreoffice-for-centos),
 * Lettertypen, raadpleeg [Lettertypen voor MTA-statistieken](#fonts-for-mta-statistics) en [Lettertypen voor Japanse instanties](#fonts-for-japanese-instances).
 
@@ -169,7 +169,7 @@ De volgende configuraties zijn nodig met CentOS:
 
 De toegangslagen voor de database-engine die u gebruikt, moeten op de server zijn geïnstalleerd en toegankelijk zijn via de Adobe Campaign-account. Versies en installatiemodi kunnen variëren, afhankelijk van de gebruikte database-engine.
 
-De ondersteunde proefversie wordt beschreven in de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html).
+De ondersteunde proefversie wordt beschreven in de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
 
 Controleer ook de algemene sectie [Database](../../installation/using/database.md) .
 
