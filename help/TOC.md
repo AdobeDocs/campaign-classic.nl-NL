@@ -8,10 +8,10 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: b8548e8d609ed099433b97b4c0704d27234e81c0
+source-git-commit: 3d6515ca291715e5e02f9b5404803e9087555284
 workflow-type: tm+mt
-source-wordcount: '2156'
-ht-degree: 99%
+source-wordcount: '2167'
+ht-degree: 97%
 
 ---
 
@@ -82,17 +82,6 @@ ht-degree: 99%
       + [Toegangscontrole](platform/using/access-management.md)
       + [Werken met datapakketten](platform/using/working-with-data-packages.md)
       + [Opsommingen beheren](platform/using/managing-enumerations.md)
-      + [Externe accounts](platform/using/external-accounts.md)
-   + Toegang tot een externe database (FDA){#accessing-external-database}
-      + [FDA](platform/using/about-fda.md)
-      + [FDA-connectoren configureren](platform/using/specific-configuration-database.md)
-      + [Verouderde connectoren](platform/using/legacy-connectors.md)
-      + [Toegangsrechten voor externe databases](platform/using/remote-database-access-rights.md)
-      + [Verbinding maken met de database](platform/using/connecting-to-database.md)
-      + [Het dataschema maken](platform/using/creating-data-schema.md)
-      + [Datatoewijzing definiëren](platform/using/defining-data-mapping.md)
-      + [Aanvullende opties](platform/using/additional-options.md)
-      + [Bijlagen](platform/using/appendices-fda.md)
    + Connectoren {#connectors}
       + [Connectoren](platform/using/about-connectors.md)
       + [CRM-connectoren](platform/using/crm-connectors.md)
@@ -460,7 +449,7 @@ ht-degree: 99%
       + [Workfloweigenschappen](workflow/using/workflow-properties.md)
       + [Geavanceerde parameters](workflow/using/advanced-parameters.md)
       + [JavaScript-scripts en -sjablonen](workflow/using/javascript-scripts-and-templates.md)
-      + [Toegang tot een externe database (FDA)](workflow/using/accessing-an-external-database--fda-.md)
+      + [Toegang tot een externe database](workflow/using/accessing-an-external-database--fda-.md)
       + [Rechten beheren](workflow/using/managing-rights.md)
       + [Activiteitenafbeeldingen beheren](workflow/using/managing-activity-images.md)
       + [Tendensen beheren](workflow/using/managing-propensity.md)
@@ -585,7 +574,7 @@ ht-degree: 99%
    + Bijlagen {#annexes}
       + [Voorbeelden van Facebook-apps](social/using/examples-of-facebook-apps.md)
       + [Tracking](social/using/tracking.md)
-+ Campaign Classic installeren {#installing-campaign-classic}
++ Installatie- en configuratiehandleiding {#installing-campaign-classic}
    + Architectuurprincipes {#architecture-and-hosting-models}
       + [Algemene architectuur](installation/using/general-architecture.md)
       + Hostmodellen{#hosting-models-lp}
@@ -633,6 +622,23 @@ ht-degree: 99%
       + [SpamAssassin configureren](installation/using/configuring-spamassassin.md)
       + [Midsourcingserver](installation/using/mid-sourcing-server.md)
       + [Interaction - Databuffer](installation/using/interaction---data-buffer.md)
+      + [Externe accounts configureren](installation/using/external-accounts.md)
+   + Toegang tot een externe database {#accessing-external-database}
+      + [Aan de slag met FDA](installation/using/about-fda.md)
+      + Configuratierichtlijnen {#config-databases}
+         + [Configuratiestappen](installation/using/configure-fda.md)
+         + [Snowflake configureren](installation/using/configure-fda-snowflake.md)
+         + [Azure Synapse configureren](installation/using/configure-fda-synapse.md)
+         + [Hadoop configureren](installation/using/configure-fda-hadoop.md)
+         + [Oracle configureren](installation/using/configure-fda-oracle.md)
+         + [Netezza configureren](installation/using/configure-fda-netezza.md)
+         + [Sybase IQ configureren](installation/using/configure-fda-sybase.md)
+         + [Teragegevens configureren](installation/using/configure-fda-teradata.md)
+         + [SAP-HANA configureren](installation/using/configure-fda-sap-hana.md)
+      + [Externe toegangsrechten](installation/using/remote-database-access-rights.md)
+      + [Verbinding maken met de database](installation/using/connecting-to-database.md)
+      + [Het dataschema maken](installation/using/creating-data-schema.md)
+      + [Datatoewijzing definiëren](installation/using/defining-data-mapping.md)
    + Bijlagen {#appendices}
       + [Serverconfiguratiebestand](installation/using/the-server-configuration-file.md)
       + [Campaign-netwerkeindpunten](installation/using/campaign-network-endpoints.md)
@@ -640,7 +646,7 @@ ht-degree: 99%
       + [Nieuwe instanties maken](installation/using/creating-new-instances.md)
       + [Lijst met Campaign-opties](installation/using/configuring-campaign-options.md)
       + [Installatie van Campaign verwijderen](installation/using/uninstalling-campaign.md)
-+ Campaign Classic controleren {#monitoring-campaign-classic}
++ Monitoringgids {#monitoring-campaign-classic}
    + Inleiding {#introduction}
       + [Voorwoord](production/using/foreword.md)
       + [Algemene architectuur](production/using/general-architecture.md)
@@ -688,7 +694,7 @@ ht-degree: 99%
       + [Console-update](production/using/console-update.md)
       + [Wachtwoord verloren](production/using/lost-password.md)
       + [JSP-gedrag](production/using/jsp-behavior.md)
-+ Campaign Classic configureren {#configuring-campaign-classic}
++ Handleiding voor ontwikkelaars {#configuring-campaign-classic}
    + Datamodel {#data-model}
       + [Het datamodel](configuration/using/about-data-model.md)
       + [Beschrijving van het datamodel](configuration/using/data-model-description.md)
@@ -746,7 +752,7 @@ ht-degree: 99%
       + [Tags op uw site invoegen](configuration/using/inserting-tags-in-your-site.md)
       + [Alle bezoeken verzamelen](configuration/using/collecting-all-visits.md)
       + [Anonieme tracking](configuration/using/anonymous-tracking.md)
-+ Migreren naar een nieuwe versie {#migrating-to-a-new-version}
++ Migratiehandleiding {#migrating-to-a-new-version}
    + Migratieoverzicht {#migration-overview}
       + [Migratie](migration/using/about-migration.md)
       + [Migratiemethode](migration/using/migration-method.md)
