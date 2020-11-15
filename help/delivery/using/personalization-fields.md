@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: 27c8e443-ee6b-4d58-bc2d-81cf8391c5de
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -26,7 +26,7 @@ Personalisatievelden worden gebruikt voor personalisatie op het eerste niveau va
 
 In het verpersoonlijkingsveld met de syntaxis **&lt;%= receiving.LastName %>** geeft Adobe Campaign bijvoorbeeld de opdracht de naam van de ontvanger in te voegen in de database (tabel met ontvangers).
 
-![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](#personalization-fields-video)
+![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](#personalization-fields-video)
 
 >[!CAUTION]
 >
@@ -86,7 +86,7 @@ U kunt personalisatie optimaliseren met behulp van een speciale optie: **[!UICON
 
 Tijdens de leveringsanalyse, leidt deze optie automatisch tot en voert een werkschema uit dat alle gegevens met betrekking tot het doel in een tijdelijke lijst, met inbegrip van gegevens van lijsten verbonden in FDA opslaat.
 
-Als u deze optie inschakelt, kunnen de prestaties van de leveringsanalyse aanzienlijk worden verbeterd wanneer een groot aantal gegevens wordt verwerkt, vooral als de personalisatiegegevens afkomstig zijn van een externe tabel via FDA. Zie [Toegang tot een externe database (FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data)voor meer informatie.
+Als u deze optie inschakelt, kunnen de prestaties van de leveringsanalyse aanzienlijk worden verbeterd wanneer een groot aantal gegevens wordt verwerkt, vooral als de personalisatiegegevens afkomstig zijn van een externe tabel via FDA. Zie [Toegang tot een externe database (FDA)](../../installation/using/about-fda.md)voor meer informatie.
 
 Bijvoorbeeld, als u prestatieskwesties wanneer het leveren aan een hoog aantal ontvangers terwijl het gebruiken van veel verpersoonlijkingsgebieden en/of verpersoonlijkingsblokken in de inhoud van uw berichten ervaart, kan deze optie de behandeling van verpersoonlijking en daarom het leveren van uw berichten versnellen.
 
