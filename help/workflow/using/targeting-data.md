@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: 79f1e85a-b5e6-4875-ac57-ab979fc57079
 translation-type: tm+mt
-source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '1904'
 ht-degree: 4%
@@ -180,7 +180,7 @@ Om het te vormen, moet u eerst criteria selecteren:
 
    ![](assets/split-subset-config-add_external_data.png)
 
-   Raadpleeg deze [sectie](../../platform/using/about-fda.md) voor meer informatie.
+   Raadpleeg deze [sectie](../../installation/using/about-fda.md) voor meer informatie.
 
 Vervolgens moeten nieuwe subsets worden toegevoegd:
 
