@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 3d6515ca291715e5e02f9b5404803e9087555284
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 8%
@@ -107,7 +107,7 @@ _2 december 2019_
 
 * Geheugenverbruik optimaliseren voor pushmeldingen.
 * Voor optimalisatie van prestaties en opslag is de verwerking van het bestand **logins.log** verbeterd. Het bestand wordt nu in meerdere bestanden gesplitst, elke dag met maximaal 365 bestanden. [Meer informatie](../../production/using/log-files.md)
-* De externe rekening van CRM van de Dynamica van Microsoft kan nu worden gevormd gebruikend wachtwoordgeloofsbrieven (wachtwoord + gebruikersbenaming) of certificaat (privé sleutel). [Meer informatie](../../platform/using/external-accounts.md#microsoft-dynamics-crm-external-account)
+* De externe rekening van CRM van de Dynamica van Microsoft kan nu worden gevormd gebruikend wachtwoordgeloofsbrieven (wachtwoord + gebruikersbenaming) of certificaat (privé sleutel). [Meer informatie](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
 * Er zijn enkele verbeteringen toegevoegd aan de Hadoop FDA-connector om de betrouwbaarheid te verbeteren
 * Er is een specifieke hulplijn toegevoegd om schijfruimte te controleren voordat u openbare bronnen op de server kunt uploaden.
 * Er zijn nieuwe [campagneopties](../../installation/using/configuring-campaign-options.md) toegevoegd:
