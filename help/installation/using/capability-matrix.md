@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: architecture-and-hosting-models
 discoiquuid: 582f7ac6-cebe-4b47-8730-bbc16fd6b1bd
 translation-type: tm+mt
-source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 18%
@@ -18,7 +18,7 @@ ht-degree: 18%
 ---
 
 
-# Capability matrix {#capability-matrix-per-model}
+# Capaciteitsmatrix {#capability-matrix-per-model}
 
 Adobe Campaign Classic wordt geleverd met een reeks modules en opties. De beschikbaarheid van deze modules en hun gebruik kunnen van het type van plaatsing van uw installatie afhangen. In dit artikel worden enkele details weergegeven over de belangrijkste verschillen tussen volledig gehoste (Managed Services) en on-premise implementaties voor bepaalde functies.
 
@@ -46,11 +46,11 @@ De verschillende hostingmodellen worden geïntroduceerd [in deze sectie](../../i
 
 ## Federated Data Access{#fda}
 
-Adobe Campaign provides the **Federated Data Access** (FDA) option in order to process information stored in one or more external databases: you can access external data without changing the structure of Adobe Campaign data. [Meer informatie](../../platform/using/about-fda.md)
+Adobe Campaign provides the **Federated Data Access** (FDA) option in order to process information stored in one or more external databases: you can access external data without changing the structure of Adobe Campaign data. [Meer informatie](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->Toegang tot een externe database via FDA is alleen mogelijk voor installaties op locatie of hybride installaties, behalve met de [Snowflake-aansluiting](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
+>Toegang tot een externe database via FDA is alleen mogelijk voor installaties op locatie of hybride installaties, behalve met de [Snowflake-aansluiting](../../installation/using/configure-fda-snowflake.md).
 
 
 **Zie ook**
