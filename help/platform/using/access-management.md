@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: administration-basics
 discoiquuid: c0eb06fd-192c-4ee4-9a38-c9bedbe6aea0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '2955'
 ht-degree: 2%
@@ -103,7 +103,7 @@ Nadat het profiel van de operator is gemaakt, kunt u de gegevens ervan toevoegen
 
 >[!NOTE]
 >
->In het **[!UICONTROL Session timeout]** veld kunt u de vertraging vóór de FDA-sessietime-out aanpassen. Raadpleeg voor meer informatie [over Federated Data Access](../../platform/using/about-fda.md).
+>In het **[!UICONTROL Session timeout]** veld kunt u de vertraging vóór de FDA-sessietime-out aanpassen. Raadpleeg voor meer informatie [over Federated Data Access](../../installation/using/about-fda.md).
 
 ### Tijdzone van de operator {#time-zone-of-the-operator}
 
