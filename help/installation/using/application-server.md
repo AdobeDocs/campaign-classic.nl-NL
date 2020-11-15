@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 7a9e028c-255d-4aad-9827-d19f9a7897b2
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 2%
+source-wordcount: '500'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +32,7 @@ U moet eerst een JDK installeren op de computers waarop u de Adobe Campaign-toep
 
 De toepassing is goedgekeurd voor de Java Development Kit (JDK) die door Oracle is ontwikkeld en voor **OpenJDK**.
 
-De ondersteunde versies worden gedetailleerd beschreven in de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html).
+De ondersteunde versies zijn gedetailleerd in de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md)voor campagne.
 
 >[!NOTE]
 >
