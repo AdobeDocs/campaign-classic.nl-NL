@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 72e974b8-415a-47ab-9804-b15957787198
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 3d6515ca291715e5e02f9b5404803e9087555284
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 8%
@@ -41,7 +41,7 @@ Voor gehoste en hybride clients wordt de InBox-rendering op uw exemplaar geconfi
 Voor on-premise installaties, volg de stappen hieronder om Inbox teruggeven te vormen.
 
 1. Installeer het **[!UICONTROL Inbox rendering (IR)]** pakket via **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** menu. Zie [Standaardpakketten](../../installation/using/installing-campaign-standard-packages.md)voor Campaign Classic installeren voor meer informatie.
-1. Configureer een externe account van het HTTP-type via **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]** . Zie [Een externe account](../../platform/using/external-accounts.md#creating-an-external-account)maken voor meer informatie.
+1. Configureer een externe account van het HTTP-type via **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]** . Zie [Een externe account](../../installation/using/external-accounts.md#creating-an-external-account)maken voor meer informatie.
 1. Stel de parameters voor de externe account als volgt in:
    * **[!UICONTROL Label]**: Informatie over de leveringsserver
    * **[!UICONTROL Internal name]**: DeliabilityInstance
