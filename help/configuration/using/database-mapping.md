@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: bc06c00d-f421-452e-bde0-b4ecc12c72c8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '1976'
 ht-degree: 0%
@@ -373,7 +373,7 @@ Voor join-relaties met gebruik van Federated Database Access:
 * ![](assets/join_fda_11.png) : Kardinaliteit 1-1
 * ![](assets/join_fda_1m.png) : Kardinaliteit 1-N
 
-Raadpleeg [Toegang tot een externe database](../../platform/using/about-fda.md)voor meer informatie over FDA-tabellen.
+Raadpleeg [Toegang tot een externe database](../../installation/using/about-fda.md)voor meer informatie over FDA-tabellen.
 
 Een koppeling moet worden gedeclareerd in het schema met de externe sleutel van de tabel die is gekoppeld via het hoofdelement:
 
