@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: action-activities
 discoiquuid: 18d6f5e1-308f-4080-b7c4-ebf836f74842
 translation-type: tm+mt
-source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 1%
+source-wordcount: '394'
+ht-degree: 3%
 
 ---
 
@@ -26,9 +26,9 @@ Met de activiteit **SQL-gegevensbeheer** kunt u uw eigen SQL-scripts schrijven o
 
 Voordat u de activiteit configureert, moet u controleren of aan de volgende voorwaarden is voldaan:
 
-* De activiteit is beschikbaar voor verre slechts gegevensbronnen. Het pakket **[!UICONTROL FDA]** (Federated Data Access) moet daarom op uw exemplaar worden geïnstalleerd (zie [deze sectie](../../platform/using/about-fda.md)).
-* Het uitgaande schema moet in het gegevensbestand bestaan en met een gegevensbestand FDA (voor meer op gegevensschema&#39;s, verwijs naar [deze sectie](../../configuration/using/about-schema-reference.md)) worden verbonden.
-* De exploitant die het werkschema uitvoert moet het **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** genoemde recht hebben. For more on named rights, refer to [this section](../../platform/using/access-management.md#named-rights).
+* De activiteit is beschikbaar voor verre slechts gegevensbronnen. Het pakket **[!UICONTROL FDA]** (Federated Data Access) moet daarom op uw exemplaar worden geïnstalleerd. [Meer informatie](../../installation/using/about-fda.md).
+* Het uitgaande schema moet in het gegevensbestand bestaan en met een gegevensbestand FDA worden verbonden. [Meer informatie](../../configuration/using/about-schema-reference.md).
+* De exploitant die het werkschema uitvoert moet het **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** genoemde recht hebben. [Meer informatie](../../platform/using/access-management.md#named-rights).
 
 ## De SQL-gegevensbeheeractiviteit configureren {#configuring-the-sql-data-management-activity}
 
