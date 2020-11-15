@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '3932'
 ht-degree: 98%
@@ -148,7 +148,7 @@ De pagina over de integratie van Experience Cloud Triggers en Adobe Campaign Cla
 
 Ondersteuning voor emoticons - [Meer informatie](../../delivery/using/customizing-emoticon-list.md)
 
-Azure Synapse FDA Connector - [Meer informatie](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse)
+Azure Synapse FDA Connector - [Meer informatie](../../installation/using/configure-fda-synapse.md)
 
 Privacywetten voor Thailand en Brazilië - [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
@@ -189,7 +189,7 @@ De sectie met best practices voor datapakketten is verplaatst en bijgewerkt. [Me
 
 ## April 2020 {#april-2020}
 
-De tabel met FDA-rechten is verplaatst naar de documentatie voor toegang tot een externe database (FDA). [Meer informatie](../../platform/using/remote-database-access-rights.md)
+De tabel met FDA-rechten is verplaatst naar de documentatie voor toegang tot een externe database (FDA). [Meer informatie](../../installation/using/remote-database-access-rights.md)
 
 De veelgestelde vragen zijn bijgewerkt met tips over het wissen van de soft en de hard cache. [Meer informatie](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)
 
@@ -233,9 +233,9 @@ De sectie over e-mailarchivering is verbeterd. [Meer informatie](../../installat
 
 **Nieuwe mogelijkheden in de 20.1-release**
 
-Snowflake FDA-connector - [Meer informatie](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake)
+Snowflake FDA-connector - [Meer informatie](../../installation/using/configure-fda-snowflake.md)
 
-Verbeteringen voor de Hadoop FDA-connector - [Meer informatie](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3)
+Verbeteringen voor de Hadoop FDA-connector - [Meer informatie](../../installation/using/configure-fda-hadoop.md)
 
 **Overige documentatie-updates die bij de release worden geleverd**
 
@@ -293,7 +293,7 @@ Er is een voorbeeld toegevoegd over het gebruik van een instantievariabele in ee
 
 De optie WdbcOptions_TempDbName is toegevoegd aan de lijst met Campaign-opties. [Meer informatie](../../installation/using/configuring-campaign-options.md)
 
-De pagina over de FDA-matrix is [hier](../../platform/using/remote-database-access-rights.md) geplaatst.
+De pagina over de FDA-matrix is [hier](../../installation/using/remote-database-access-rights.md) geplaatst.
 
 De pagina over de matrix voor toegangsrechten is [hier](https://docs.adobe.com/content/help/nl-NL/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf) geplaatst.
 
