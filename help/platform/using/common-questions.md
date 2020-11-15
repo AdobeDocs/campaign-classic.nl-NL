@@ -9,10 +9,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: ht
-source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
-workflow-type: ht
-source-wordcount: '539'
+translation-type: tm+mt
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+workflow-type: tm+mt
+source-wordcount: '525'
 ht-degree: 100%
 
 ---
@@ -66,11 +66,11 @@ Als u verbinding wilt maken met Adobe Campaign Classic, moet u de Adobe Campaign
 
 ## 7. Met welke systemen en onderdelen is Campaign Classic compatibel? {#which-systems-and-components-campaign-classic-is-compatible-with-}
 
-U vindt de lijst met alle systemen en onderdelen die voor de recentste build van Campaign worden ondersteund in de [Adobe Campaign Classic-compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html).
+U vindt de lijst met alle systemen en onderdelen die voor de recentste build van Campaign worden ondersteund in de [Adobe Campaign Classic-compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
 
 ## 8. Waar vind ik de Campaign Classic-release-opmerkingen? {#where-are-campaign-classic-release-notes-}
 
-U vindt de recentste Campaign Classic-release-opmerkingen [op deze pagina](https://docs.adobe.com/content/help/nl-NL/campaign-classic/using/release-notes/latest-release.html).
+U vindt de recentste Campaign Classic-release-opmerkingen [op deze pagina](../../rn/using/latest-release.md).
 
 ## 9. Wat is de procedure voor domeinconfiguratie? {#what-is-the-procedure-for-domain-delegation-}
 
