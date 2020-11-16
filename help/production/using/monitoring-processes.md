@@ -1,8 +1,6 @@
 ---
 title: Processen opvolgen
-seo-title: Processen opvolgen
-description: Processen opvolgen
-seo-description: null
+description: Leer hoe u Campagne-processen kunt controleren
 page-status-flag: never-activated
 uuid: 9dc1461f-5e95-454d-8df5-19baab85f184
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: 968d0ee3-5efc-46d8-b408-b9cce3e730c4
 translation-type: tm+mt
-source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '3600'
+source-wordcount: '3602'
 ht-degree: 0%
 
 ---
