@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: f449ccd5-3965-4ab8-b5a9-993f3260aba9
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 12%
+source-wordcount: '1007'
+ht-degree: 11%
 
 ---
 
@@ -37,7 +37,7 @@ Om dergelijke problemen te voorkomen, raadt Adobe aan de onderstaande beste prak
 * De mogelijkheden voor servergrootte variëren afhankelijk van uw licentie. In elk geval moet u de minimale gegevens mogelijk houden en de gegevens slechts zo lang bewaren als nodig is (15 dagen is de maximale termijn).
 * Gebruik op sleutels gebaseerde authentificatie eerder dan wachtwoordauthentificatie, om wachtwoordvervalsing te vermijden (de wachtwoorden hebben een geldigheidsperiode van 90 dagen). Bovendien kunt u met op sleutels gebaseerde verificatie meerdere sleutels genereren, bijvoorbeeld wanneer u meerdere entiteiten beheert. Integendeel, voor wachtwoordverificatie moet u het wachtwoord delen met alle entiteiten die u beheert.
 
-   De gesteunde zeer belangrijke indeling is SSH-2 RSA 2048. De sleutels kunnen met hulpmiddelen zoals PyTTY (Vensters), of ssh-keygen (Unix) worden geproduceerd.U zult de openbare sleutel aan het team van de Steun van Adobe via een [steunkaartje](https://support.neolane.net) moeten verstrekken om het op de server van de Campagne te hebben geupload.
+   De gesteunde zeer belangrijke indeling is SSH-2 RSA 2048. De sleutels kunnen met hulpmiddelen zoals PyTTY (Vensters), of ssh-keygen (Unix) worden geproduceerd.U zult de openbare sleutel aan het team van de Steun van de Adobe via de Zorg [van de Klant van](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Adobe moeten verstrekken om het op de server van de Campagne te hebben geupload.
 
 * Gebruik workflows om de data op de juiste manier te verwijderen (beheer de retentie van workflows die de data verbruiken).
 * Gebruik batchverwerking in SFTP-uploads en in workflows.
@@ -45,7 +45,7 @@ Om dergelijke problemen te voorkomen, raadt Adobe aan de onderstaande beste prak
 * Meld u af en toe aan bij de SFTP om de content rechtstreeks te controleren.
 * Vergeet niet dat SFTP-schijfbeheer in de eerste plaats uw verantwoordelijkheid is.
 * Standaard staan alle mappen die u maakt alleen in de modus Lezen/Schrijven voor uw id. Wanneer het creëren van omslagen die door Campagne moeten worden betreden, zorg ervoor om hen te vormen met lees/schrijf rechten voor de volledige groep. Anders kunnen workflows mogelijk geen bestanden maken of verwijderen omdat deze om beveiligingsredenen onder een andere id binnen dezelfde groep worden uitgevoerd.
-* Openbare IPs waarvan u probeert om de verbinding in werking te stellen SFTP moet aan de lijst van gewenste personen op de instantie van de Campagne worden toegevoegd. Het toevoegen van IP adressen aan de lijst van gewenste personen kan via een [steunkaartje](https://support.neolane.net)worden gevraagd.
+* Openbare IPs waarvan u probeert om de verbinding in werking te stellen SFTP moet aan de lijst van gewenste personen op de instantie van de Campagne worden toegevoegd. Het toevoegen van IP adressen aan de lijst van gewenste personen kan via de Zorg van de Klant van [Adobe worden gevraagd](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 >[!CAUTION]
 >
@@ -53,7 +53,7 @@ Om dergelijke problemen te voorkomen, raadt Adobe aan de onderstaande beste prak
 
 ## Verbindingsproblemen met door Adobe gehoste SFTP-server {#sftp-server-troubleshooting}
 
-De sectie hieronder maakt een lijst van de informatie om aan het team van de Steun van de Adobe via een [steunkaartje](https://support.neolane.net) te controleren en te verstrekken wanneer het ontmoeten van verbindingskwesties met Adobe ontvangen servers SFTP.
+In de onderstaande sectie wordt de informatie weergegeven die via [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) aan het Adobe Support-team moet worden gecontroleerd en verstrekt wanneer er verbindingsproblemen optreden met door Adobe gehoste SFTP-servers.
 
 1. Controleer of de instantie actief is. Om dit te doen, open uw browser, dan doe een **[!UICONTROL GET]** vraag op het instantie **[!UICONTROL /r/test]** eindpunt:
 
