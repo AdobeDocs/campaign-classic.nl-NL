@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 translation-type: tm+mt
-source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
+source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
 workflow-type: tm+mt
 source-wordcount: '2802'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -157,7 +157,7 @@ De items die in quarantaine worden geplaatst, zijn apparaattokens.
 **Voor iOS - binaire connector**
 
 >[!NOTE]
-Vanaf de release van Campagne 20.3 is de verouderde binaire connector van iOS verouderd. Als u deze schakelaar gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. [Meer informatie](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
+Vanaf Campaign versie 20.3 is de verouderde binaire iOS-connector van iOS afgeschaft. Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. [Meer informatie](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
 
 Voor elk bericht ontvangt Adobe Campaign de synchrone en asynchrone fouten van de APNs-server. Bij de volgende synchrone fouten genereert Adobe Campaign schermfouten:
 
