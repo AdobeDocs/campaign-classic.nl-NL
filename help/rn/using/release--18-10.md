@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '2371'
-ht-degree: 8%
+source-wordcount: '2367'
+ht-degree: 7%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->Er is al op gewezen dat dit een bouwwerk is. Voer een [upgrade uit naar de nieuwste build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) of neem contact op met de [technische ondersteuning](https://support.neolane.net/).
+>Er is al op gewezen dat dit een bouwwerk is. Voer een [upgrade uit naar de nieuwste build](../../production/using/build-upgrade.md) of neem contact op met de [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Verbeteringen**
 
@@ -87,7 +87,7 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->Er is al op gewezen dat dit een bouwwerk is. Voer een [upgrade uit naar de nieuwste build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) of neem contact op met de [technische ondersteuning](https://support.neolane.net/).
+>Er is al op gewezen dat dit een bouwwerk is. Voer een [upgrade uit naar de nieuwste build](../../production/using/build-upgrade.md) of neem contact op met de [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Verbeteringen**
 
@@ -109,7 +109,7 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->Er is al op gewezen dat dit een bouwwerk is. Voer een [upgrade uit naar de nieuwste build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) of neem contact op met de [technische ondersteuning](https://support.neolane.net/).
+>Er is al op gewezen dat dit een bouwwerk is. Voer een [upgrade uit naar de nieuwste build](../../production/using/build-upgrade.md) of neem contact op met de [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Nieuwe functies**
 
@@ -151,7 +151,7 @@ ht-degree: 8%
 
 **Verbeteringen**
 
-* Campaign Classic API’s zijn nu beschikbaar op een [speciale pagina](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html). Als u het bestand jsapi.chm gebruikte, moet u nu naar de nieuwe onlineversie verwijzen.
+* Campaign Classic API’s zijn nu beschikbaar op een [speciale pagina](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html). Als u het bestand jsapi.chm gebruikte, moet u nu naar de nieuwe onlineversie verwijzen.
 * PostgreSQL 10, Debian 9 en Teradata 16.20 worden nu ondersteund. Raadpleeg de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html).
 * Wanneer u een SFTP-verbinding maakt, kunt u nu proxyverificatie gebruiken. For more information, refer to the [detailed documentation](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868)
 * De optie **van de de berekeningsformule** van de Datum is nu beschikbaar in de leveringseigenschappen wanneer het creëren van één enkele levering gebruikend het direct-mailleveringsmalplaatje. (NEO-9792)
