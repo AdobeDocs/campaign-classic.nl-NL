@@ -10,7 +10,7 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
+source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
 workflow-type: tm+mt
 source-wordcount: '1621'
 ht-degree: 99%
@@ -62,7 +62,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
   <td>Verouderd binair iOS<br></td>
   <td><p>Vanaf Campaign versie 20.3 is de verouderde binaire iOS-connector van iOS afgeschaft.<p>
   <p> Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen.
-  <a href="https://helpx.adobe.com/campaign/kb/migrate-to-http2.html">Meer informatie</a></p>
+  <a href="https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html">Meer informatie</a></p>
   <p><em>Doeldatum voor verwijdering: 2021</em></p>
   </td>
  </tr>
