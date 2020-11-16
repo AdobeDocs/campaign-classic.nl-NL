@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: c7395094-c635-45ab-8455-a050f7d16b64
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6d6f63fb6ac99c3a9e58a8670bc9bc59e6cfd420
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 4%
@@ -46,7 +46,7 @@ Ga als volgt te werk om een nieuwe instantie te maken:
 
 1. Geef een verbinding met uw Adobe Campaign-toepassingsserver op via een URL. Gebruik of DNS of een alias van de machine, of uw IP adres.
 
-   U kunt bijvoorbeeld het [`https://<machine>.<domain>.com`](https://machine) type URL gebruiken.
+   U kunt bijvoorbeeld het [`https://<machine>.<domain>.com`](https://myserver.adobe.com) type URL gebruiken.
 
    >[!CAUTION]
    >
