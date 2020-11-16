@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 7e56e4f98ffab752f0b86bb8620fb1b4af6a3dca
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 1%
+source-wordcount: '1158'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +73,7 @@ Voer de volgende stappen uit om het upgradebestand uit te voeren:
 
 1. Voer **setup.exe** uit.
 
-   Als u dit bestand wilt downloaden, gaat u naar de pagina Adobe Campaign Support ( [https://support.neolane.net/](https://support.neolane.net/)) via de koppeling **Download Center** .
+   Als u dit bestand wilt downloaden, maakt u via uw gebruikersgegevens verbinding met de portal [voor](https://experience.adobe.com/downloads) softwaredistributie. Meer informatie over softwaredistributie vindt u op [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 1. Selecteer de installatiemodus: kiezen **[!UICONTROL Update or repair]**
 1. Klik op **[!UICONTROL Next]** .
@@ -127,7 +127,7 @@ Raadpleeg [deze sectie](../../installation/using/client-console-availability-for
 
 ### Bijgewerkte pakketten ophalen {#obtain-updated-packages}
 
-Begin door beide bijgewerkte pakketten van Adobe Campaign te herstellen: Ga naar de pagina Adobe Campaign Support ( [https://support.neolane.net/](https://support.neolane.net/)) via de link **Download Center** .
+Begin door beide bijgewerkte pakketten van Adobe Campaign te herstellen: Maak verbinding met de portal [voor](https://experience.adobe.com/downloads) softwaredistributie met uw gebruikersgegevens. Meer informatie over softwaredistributie vindt u op [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 Het bestand is **nlserver6-v7-XXX.rpm**
 
