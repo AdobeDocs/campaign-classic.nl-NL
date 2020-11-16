@@ -1,8 +1,6 @@
 ---
 title: Technische workflows
-seo-title: Technische workflows
-description: Technische workflows
-seo-description: null
+description: Lijst met technische workflows voor campagnes
 page-status-flag: never-activated
 uuid: 60b66853-ae4f-458d-bd62-076f2d7c965f
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: technical-workflows
 discoiquuid: 0d65d47f-1f51-4757-8b1d-7d4a8ddc3c97
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 38%
+source-wordcount: '137'
+ht-degree: 35%
 
 ---
 
@@ -38,7 +36,7 @@ Dit deel bevat informatie over technische werkstromen die betrekking hebben op d
 * [Gedistribueerde marketing](../../workflow/using/distributed-marketing.md)
 * [Leverbaarheidscontrole (e-mailleverbaarheid)](../../workflow/using/email-deliverability.md)
 * [Inbox Rendering (IR)](../../workflow/using/inbox-rendering.md)
-* [Interactie](../../workflow/using/interaction.md)
+* [Interaction](../../workflow/using/interaction.md)
 * [Controle van de aanbiedingsengine](../../workflow/using/control-of-offer-engine.md)
 * [Berichtencentrum (controle)](../../workflow/using/message-center--control-.md)
 * [Berichtencentrum (uitvoering)](../../workflow/using/message-center--execution-.md)
