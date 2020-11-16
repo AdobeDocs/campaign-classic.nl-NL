@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: aa37bdc6-0f85-4eca-859f-e8b15083cfb5
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-SpamAssassin is software die is ontworpen om ongewenste e-mails te filteren. In combinatie met deze software kan Adobe Campaign een score toewijzen aan e-mailberichten en bepalen of een bericht waarschijnlijk ongewenst wordt geacht voordat de levering wordt gestart. Hiertoe moet SpamAssassin op de toepassingsserver(s) van Adobe Campaign zijn geïnstalleerd en geconfigureerd en is een bepaald aantal aanvullende Perl-modules vereist om te kunnen werken.
+SpamAssassin is software die is ontworpen om ongewenste e-mails te filteren. In combinatie met deze software kan Adobe Campaign een score toewijzen aan e-mailberichten en bepalen of een bericht waarschijnlijk ongewenst wordt geacht voordat de levering wordt gestart. Hiervoor moet SpamAssassin op de toepassingsserver(s) van Adobe Campaign zijn geïnstalleerd en geconfigureerd en een bepaald aantal aanvullende Perl-modules zijn vereist.
 
 De plaatsing en de integratie van SpamAssassin zoals die in dit hoofdstuk wordt beschreven zijn gebaseerd op standaardsoftwareinstallatie, zoals filtreren en het scoren regels, die die door SpamAssassin zonder enige veranderingen of optimalisaties worden verstrekt. De attributie van de score en de berichtkwalificatie zijn uitsluitend gebaseerd op de configuratie van opties SpamAssassin en op het filtreren regels. De beheerders van het netwerk zijn verantwoordelijk voor het aanpassen van hen aan de behoeften van hun bedrijf.
 
@@ -53,8 +53,7 @@ Voer de volgende stappen uit om SpamAssassin in Windows te installeren en te con
 
 ### SpamAssassin installeren {#installing-spamassassin}
 
-1. Maak verbinding met het [Extranetportaal](http://support.neolane.net) met uw gebruikersgegevens.
-1. Ga naar het **Downloadcentrum** en blader op de pagina naar de sectie **Tools** .
+1. Maak verbinding met de portal [voor](https://experience.adobe.com/downloads) softwaredistributie met uw gebruikersgegevens. Meer informatie over softwaredistributie vindt u op [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 1. Download het bestand **Neolane Spam Assassin (Windows-installatie) (2.0)** (neolane_spammurin.2.0.zip).
 1. Kopieer dit bestand naar de Adobe Campaign-server en decomprimeer het vervolgens.
 
