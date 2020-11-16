@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
 translation-type: tm+mt
-source-git-commit: 16985c1ddcd380cfc1ca4960b35bb5e78628f464
+source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
 workflow-type: tm+mt
 source-wordcount: '824'
-ht-degree: 1%
+ht-degree: 7%
 
 ---
 
@@ -38,7 +38,7 @@ Om deze schakelaar te vormen, volg deze stappen:
 
    >[!NOTE]
    >
-   > Vanaf de release van Campagne 20.3 is de verouderde binaire connector van iOS verouderd. Als u deze schakelaar gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. [Meer informatie](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
+   > Vanaf Campaign versie 20.3 is de verouderde binaire iOS-connector van iOS afgeschaft. Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. [Meer informatie](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
 
    ![](assets/nmac_connectors.png)
 
@@ -110,7 +110,7 @@ In het volgende voorbeeld voegen we **mediaURl** en **mediaExt** toe om uitgebre
 
 1. Selecteer het **[!UICONTROL Authentication mode]**. U kunt de verificatiemodus altijd later wijzigen op het **[!UICONTROL Certificate]** tabblad van uw mobiele toepassing.
    * **[!UICONTROL Certificate-based authentication]**: Klik **[!UICONTROL Enter the certificate...]** dan uw p12 sleutel selecteren en ga het wachtwoord in dat door de mobiele toepassingsontwikkelaar werd verstrekt.
-   * **[!UICONTROL Token-based authentication]**: Vul de verbindingsinstellingen in **[!UICONTROL Key ID]**, **[!UICONTROL Team ID]** en **[!UICONTROL Bundle ID]** selecteer uw p8-certificaat door op **[!UICONTROL Enter the private key]**. For more on **[!UICONTROL Token-based authentication]**, refer to [Apple documentation](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apnsToken-based).
+   * **[!UICONTROL Token-based authentication]**: Vul de verbindingsinstellingen in **[!UICONTROL Key ID]**, **[!UICONTROL Team ID]** en **[!UICONTROL Bundle ID]** selecteer uw p8-certificaat door op **[!UICONTROL Enter the private key]**. For more on **[!UICONTROL Token-based authentication]**, refer to [Apple documentation](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns).
 
    >[!NOTE]
    >
