@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 6b3fe8b9-dae6-4f8e-83e1-3376c0fe72a5
 translation-type: tm+mt
-source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
+source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
 workflow-type: tm+mt
 source-wordcount: '753'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -95,7 +95,7 @@ De Adobe Campaign-server moet contact kunnen opnemen met de APNs-server op de vo
 
    >[!NOTE]
    >
-   > Vanaf de release van Campagne 20.3 is de verouderde binaire connector van iOS verouderd. Als u deze schakelaar gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. [Meer informatie](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
+   > Vanaf Campaign versie 20.3 is de verouderde binaire iOS-connector van iOS afgeschaft. Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. [Meer informatie](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
 
 Om te controleren dat het correct werkt, gebruik de volgende bevelen:
 
