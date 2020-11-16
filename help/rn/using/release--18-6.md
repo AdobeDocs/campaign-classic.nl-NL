@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 79a6d3cf-2425-49b9-9b92-b56be26438bf
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 8%
+source-wordcount: '795'
+ht-degree: 6%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->Er is al op gewezen dat dit een bouwwerk is. Voer een [upgrade uit naar de nieuwste build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) of neem contact op met de [technische ondersteuning](https://support.neolane.net/).
+>Er is al op gewezen dat dit een bouwwerk is. Voer een [upgrade uit naar de nieuwste build](../../production/using/build-upgrade.md) of neem contact op met de [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Nieuwe functies**
 
@@ -42,7 +42,7 @@ ht-degree: 8%
  <tbody> 
   <tr> 
    <td> Query-streepjescodes<br /> </td> 
-   <td> <p>Wanneer meerdere Campagnegebruikers verbinding maken met dezelfde externe FDA Teradata-account, kunt u nu een queryband (sleutel/waarde-paren) doorgeven die specifiek is voor elke gebruiker. Elke keer dat een campagnegebruiker een query uitvoert in de Teradata-database, kan Adobe Campaign nu metagegevens verzenden die aan de gebruiker zijn gekoppeld. Deze gegevens, die bestaan uit een lijst met sleutels en waarden, kunnen vervolgens door Teradata-beheerders worden gebruikt voor auditdoeleinden of voor het beheren van toegangsrechten, bijvoorbeeld.</p><p>Raadpleeg de <a href="https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html#Teradata_external_account">gedetailleerde documentatie</a> voor meer informatie.</p> </td>
+   <td> <p>Wanneer meerdere Campagnegebruikers verbinding maken met dezelfde externe FDA Teradata-account, kunt u nu een queryband (sleutel/waarde-paren) doorgeven die specifiek is voor elke gebruiker. Elke keer dat een campagnegebruiker een query uitvoert in de Teradata-database, kan Adobe Campaign nu metagegevens verzenden die aan de gebruiker zijn gekoppeld. Deze gegevens, die bestaan uit een lijst met sleutels en waarden, kunnen vervolgens door Teradata-beheerders worden gebruikt voor auditdoeleinden of voor het beheren van toegangsrechten, bijvoorbeeld.</p><p>Raadpleeg de <a href="../../installation/using/external-accounts.md">gedetailleerde documentatie</a> voor meer informatie.</p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -84,7 +84,7 @@ Raadpleeg de volgende artikelen voor meer informatie over querybinding:
 
 >[!CAUTION]
 >
->Er is al op gewezen dat dit een bouwwerk is. Voer een [upgrade uit naar de nieuwste build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) of neem contact op met de [technische ondersteuning](https://support.neolane.net/).
+>Er is al op gewezen dat dit een bouwwerk is. Voer een [upgrade uit naar de nieuwste build](../../production/using/build-upgrade.md) of neem contact op met de [technische ondersteuning](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Nieuwe functies**
 
