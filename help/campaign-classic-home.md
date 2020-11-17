@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;popular topics
 title: Adobe Campaign Classic-productdocumentatie
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 75ab345e3b9360229ecc3ba9529a33e320228fa0
+source-git-commit: 30eaabba8962c518c734cc4e9ad27065cfe9d467
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 70%
@@ -17,9 +17,9 @@ ht-degree: 70%
 
 ## Nieuwe functies
 
-* **[De Adobe Experience Cloud Triggers-integratie](integrations/using/configuring-adobe-io.md)**<br/> bijwerken De service voor oudere Auth-verificatie heeft het einde van de levensduur bereikt. Leer hoe u naar Adobe I/O migreert.
+* **[De Adobe Experience Cloud Triggers-integratie](integrations/using/configuring-adobe-io.md)**<br/> bijwerken De service voor oudere Auth-verificatie heeft het einde van de levensduur bereikt. Leer hoe u naar Adobe I/O migreert
 
-* **[Ga naar API](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/> voor op HTTP/2 gebaseerde APNs-providers Leer hoe u van het oude binaire protocol naar de op HTTP/2 gebaseerde APIs-provider kunt migreren.
+* **[Ga naar API](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/> voor op HTTP/2 gebaseerde APNs-providers Leer hoe u van het oude binaire protocol naar de op HTTP/2 gebaseerde API voor APNs-providers kunt migreren
 
 * **[emoticons toevoegen aan uw berichten](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/> U kunt nu emoticons invoegen in berichten en onderwerpregel
 
