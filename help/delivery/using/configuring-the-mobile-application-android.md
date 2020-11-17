@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dfa3938433fcd67eb8f38269e82ee1102eda41ce
+source-git-commit: a69c9132a776eac5591bbbac0c89d6374047bb17
 workflow-type: tm+mt
 source-wordcount: '1593'
 ht-degree: 2%
@@ -102,25 +102,22 @@ Nadat u de service hebt gemaakt, moet u nu uw Android-toepassing maken:
    >
    > De eigenschap **[!UICONTROL Integration key]** is volledig aanpasbaar met tekenreekswaarde, maar moet exact hetzelfde zijn als de waarde die in de SDK is opgegeven.
 
-1. Selecteer het **[!UICONTROL API version]**:
-
-   * HTTPV1. De configuratie wordt gedetailleerd in deze [sectie](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
-   * HTTP (verouderd). De configuratie wordt gedetailleerd in deze [sectie](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
-
+1. Selecteer de **[!UICONTROL API version]**: HTTP v1 of HTTP (verouderd). Deze configuraties worden beschreven in [deze sectie](#select-api-version)
 
 1. Fill in the **[!UICONTROL Firebase Cloud Messaging the Android connection settings]** fields.
 
 1. Klik op **[!UICONTROL Finish]** en vervolgens op **[!UICONTROL Save]**. Uw Android-toepassing kan nu worden gebruikt in Campaign Classic.
 
-Standaard slaat Adobe Campaign een toets op in het veld **[!UICONTROL User identifier]** (@userKey) van de **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** tabel. Met deze sleutel kunt u een abonnement koppelen aan een ontvanger. Als u aanvullende gegevens wilt verzamelen (zoals een complexe afstemmingssleutel), moet u de volgende configuratie toepassen:
+Standaard slaat Adobe Campaign een sleutel op in het veld **[!UICONTROL User identifier]** (@userKey) van de **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** tabel. Met deze sleutel kunt u een abonnement koppelen aan een ontvanger. Als u aanvullende gegevens wilt verzamelen (zoals een complexe afstemmingssleutel), moet u de volgende configuratie toepassen:
 
 ### Selecteer de API-versie{#select-api-version}
 
 Nadat u de service en een nieuwe mobiele toepassing hebt gemaakt, moet u de mobiele toepassing configureren, afhankelijk van de gekozen API-versie.
 
-Raadpleeg deze [sectie voor meer informatie over het maken van services en mobiele toepassingen](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service)
+* **De configuratie van HTTP v1** wordt gedetailleerd in deze [sectie](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
+* **De (erfenis)** configuratie van HTTP is gedetailleerd in deze [sectie](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
 
-#### HTTP v1 API-versie gebruiken{#android-service-httpv1}
+#### HTTP v1-API configureren{#android-service-httpv1}
 
 Voer de volgende stappen uit om de HTTP v1 API-versie te configureren:
 
@@ -157,7 +154,7 @@ Hieronder vindt u de namen van FCM-ladingen om uw pushmelding verder aan te pass
 <br>
 <br>
 
-#### HTTP API-versie{#android-service-http}
+#### HTTP-API (verouderd) configureren{#android-service-http}
 
 Voer de volgende stappen uit om de HTTP-versie (verouderd) te configureren:
 
