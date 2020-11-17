@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: c2c7398c27f1bc7edf9adb0fc07409d2e525b168
+source-git-commit: e0ca252aceb0f2abca4a1324c5e4ece038927533
 workflow-type: tm+mt
-source-wordcount: '2443'
-ht-degree: 1%
+source-wordcount: '2444'
+ht-degree: 0%
 
 ---
 
@@ -82,7 +82,7 @@ Voordat u privacyverzoeken maakt, moet u de naamruimte definiëren die u wilt ge
 
 Drie naamruimten zijn beschikbaar buiten de box: e-mail, telefoon en mobiele telefoon. Als u een andere naamruimte nodig hebt (bijvoorbeeld een aangepast veld voor ontvangers), kunt u een nieuwe naamruimte maken via **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**.
 
-## Een privacyaanvraag maken {#create-privacy-request-ui}
+## Creating a Privacy request {#create-privacy-request-ui}
 
 Met de **Adobe Campaign-interface** kunt u uw privacyverzoeken maken en de ontwikkeling ervan volgen. Volg de onderstaande instructies om een nieuw privacyverzoek te maken:
 
@@ -129,7 +129,7 @@ Als u douanetabellen creeerde die een verbinding aan de ontvankelijke lijst (eig
 >Als u aanvragen voor privacybatch uitvoert met workflows voor het verwijderen van profielen, moet u rekening houden met de volgende opmerkingen:
 >* De schrapping van het profiel via werkschema&#39;s verwerkt geen kindlijsten.
 >* U moet de schrapping voor alle kindlijsten behandelen.
->* Adobe adviseert dat u een ETL- werkschema creeert dat de lijnen toevoegt om in de lijst van de Toegang van de Privacy te schrappen en de schrapping laat **[!UICONTROL Delete privacy requests data]** uitvoeren. We stellen voor om profielen per dag te beperken tot 200 profielen om redenen van prestaties.
+>* Adobe adviseert dat u een ETL- werkschema creeert dat de lijnen toevoegt om in de lijst van de Toegang van de Privacy te schrappen en het **[!UICONTROL Delete privacy requests data]** werkschema laat de schrapping uitvoeren. We stellen voor om profielen per dag te beperken tot 200 profielen om redenen van prestaties.
 
 
 ### Status van privacyverzoek {#privacy-request-statuses}
@@ -443,14 +443,14 @@ U kunt verschillende methoden gebruiken om de waarden te vullen:
 
 Vervolgens moet u ervoor zorgen dat u nooit de persoonlijke gegevens van profielen die u hebt afgewezen aan derden verkoopt.
 
-Als u de status van de optie Weigeren wilt wijzigen, gaat u naar **[!UICONTROL Profiles and Target]** > **[!UICONTROL Recipients]** en selecteert u een ontvanger. Op het **[!UICONTROL General]** lusje, zult u het gebied zien dat in de vorige sectie wordt gevormd.
+1. Als u de status van de optie Weigeren wilt wijzigen, gaat u naar **[!UICONTROL Profiles and Target]** > **[!UICONTROL Recipients]** en selecteert u een ontvanger. Op het **[!UICONTROL General]** lusje, zult u het gebied zien dat in de vorige sectie wordt gevormd.
 
-![](assets/privacy-ccpa-5.png)
+   ![](assets/privacy-ccpa-5.png)
 
-Vorm de lijst van ontvangers om de op-uit kolom te tonen. Leren hoe te om lijsten te vormen, verwijs naar de [gedetailleerde documentatie](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
+1. Vorm de lijst van ontvangers om de op-uit kolom te tonen. Leren hoe te om lijsten te vormen, verwijs naar de [gedetailleerde documentatie](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
 
-![](assets/privacy-ccpa-6.png)
+   ![](assets/privacy-ccpa-6.png)
 
-U kunt op de kolom klikken om ontvangers te sorteren op basis van de gegevens voor niet-deelname. U kunt ook een filter maken om alleen ontvangers weer te geven die hebben uitgeschakeld. For more on creating filters, see [this section](../../platform/using/creating-filters.md).
+1. U kunt op de kolom klikken om ontvangers te sorteren op basis van de gegevens voor niet-deelname. U kunt ook een filter maken om alleen ontvangers weer te geven die hebben uitgeschakeld. For more on creating filters, see [this section](../../platform/using/creating-filters.md).
 
-![](assets/privacy-ccpa-7.png)
+   ![](assets/privacy-ccpa-7.png)
