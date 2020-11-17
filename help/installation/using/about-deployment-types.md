@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 298d9b9f-220f-4862-bc4c-1ad7f8d51049
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: 12bb3b4ba833d2c265350167be61bd916e8b3fc8
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 8%
@@ -28,9 +28,7 @@ In het geval van een configuratie op veelvoudige computers, moet u niet het zelf
 
 >[!NOTE]
 >
->De belangrijkste stappen van de installatieconfiguratie kunnen slechts door worden uitgevoerd
->Adobe voor plaatsingen die door Adobe worden ontvangen. Bijvoorbeeld:
->configureer de server- en instantieconfiguratiebestanden.
+>De belangrijkste stappen van de installatieconfiguratie kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen, om de server en de dossiers van de instantieconfiguratie bijvoorbeeld te vormen.
 >
 >Meer over de belangrijkste verschillen tussen plaatsingen leren, verwijs naar de het [Ontvangen modellensectie](../../installation/using/hosting-models.md) of naar de verschillen van de [Eigenschap voor ontvangen en op-gebouw plaatsingen](../../installation/using/capability-matrix.md).
 
