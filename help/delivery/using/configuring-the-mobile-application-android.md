@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9844616f417608051bbff2593d6124d8ff83008c
+source-git-commit: dfa3938433fcd67eb8f38269e82ee1102eda41ce
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 1%
+source-wordcount: '1593'
+ht-degree: 2%
 
 ---
 
@@ -29,6 +29,14 @@ Nadat het pakket is geïnstalleerd, kunt u de instellingen voor uw Android-app d
 >
 >Raadpleeg deze [sectie](../../delivery/using/configuring-the-mobile-application.md)voor meer informatie over het configureren van uw app voor iOS en het maken van een levering voor iOS.
 
+De belangrijkste stappen zijn:
+
+1. [De externe Android-account configureren](#configuring-external-account-android)
+1. [De Android-service configureren](#configuring-android-service)
+1. [De mobiele app maken in Campagne](#creating-android-app)
+1. [Het app-schema uitbreiden met aanvullende gegevens](#extend-subscription-schema)
+
+Vervolgens kunt u een uitgebreide Android-melding [maken](#creating-android-delivery).
 
 ## Externe Android-account configureren {#configuring-external-account-android}
 
@@ -94,23 +102,17 @@ Nadat u de service hebt gemaakt, moet u nu uw Android-toepassing maken:
    >
    > De eigenschap **[!UICONTROL Integration key]** is volledig aanpasbaar met tekenreekswaarde, maar moet exact hetzelfde zijn als de waarde die in de SDK is opgegeven.
 
-1. Selecteer een van de **[!UICONTROL API version]** volgende opties:
-   * HTTP. For more information refer to this [section](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
-   * HTTPV1. For more information refer to this [section](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
+1. Selecteer het **[!UICONTROL API version]**:
 
-1. Fill in the **[!UICONTROL Firebase Cloud Messaging settings for the Android connection]** fields.
+   * HTTPV1. De configuratie wordt gedetailleerd in deze [sectie](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
+   * HTTP (verouderd). De configuratie wordt gedetailleerd in deze [sectie](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
+
+
+1. Fill in the **[!UICONTROL Firebase Cloud Messaging the Android connection settings]** fields.
 
 1. Klik op **[!UICONTROL Finish]** en vervolgens op **[!UICONTROL Save]**. Uw Android-toepassing kan nu worden gebruikt in Campaign Classic.
 
 Standaard slaat Adobe Campaign een toets op in het veld **[!UICONTROL User identifier]** (@userKey) van de **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** tabel. Met deze sleutel kunt u een abonnement koppelen aan een ontvanger. Als u aanvullende gegevens wilt verzamelen (zoals een complexe afstemmingssleutel), moet u de volgende configuratie toepassen:
-
-1. Maak een extensie van het **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schema en definieer de nieuwe velden.
-
-1. Definieer de toewijzing op het **[!UICONTROL Subscription parameters]** tabblad.
-
-   >[!CAUTION]
-   >
-   >Zorg ervoor dat de configuratienamen op het **[!UICONTROL Subscription parameters]** tabblad gelijk zijn aan die in de code van de mobiele toepassing. Raadpleeg de [Integrating Campaign SDK in de sectie over mobiele toepassingen](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) .
 
 ### Selecteer de API-versie{#select-api-version}
 
@@ -126,7 +128,7 @@ Voer de volgende stappen uit om de HTTP v1 API-versie te configureren:
 
 1. Klik **[!UICONTROL Load project json file to extract projet details...]** om het JSON-sleutelbestand rechtstreeks te laden. Raadpleeg deze [pagina](https://firebase.google.com/docs/admin/setup#initialize-sdk)voor meer informatie over het uitpakken van uw JSON-bestand.
 
-1. U kunt ook handmatig de volgende gegevens invoeren:
+   U kunt ook handmatig de volgende gegevens invoeren:
    * **[!UICONTROL Project Id]**
    * **[!UICONTROL Private Key]**
    * **[!UICONTROL Client Email]**
@@ -179,6 +181,19 @@ Hieronder vindt u de namen van FCM-ladingen om uw pushmelding verder aan te pass
 | meldingsbericht | title, body, android_channel_id, icon, sound, tag, color, click_action <br> | dryRun |
 
 <br>
+
+## Het schema appsubscriptionRcp uitbreiden {#extend-subscription-schema}
+
+U moet het **appsubscriptionRcp** uitbreiden om nieuwe extra gebieden te bepalen om parameters van app in het gegevensbestand van de Campagne op te slaan. Deze velden worden bijvoorbeeld gebruikt voor personalisatie. Dit doet u als volgt:
+
+1. Maak een extensie van het **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schema en definieer de nieuwe velden. Meer informatie over schema-extensies vindt u op [deze pagina](../../configuration/using/about-schema-edition.md)
+
+1. Definieer de toewijzing op het **[!UICONTROL Subscription parameters]** tabblad.
+
+   >[!CAUTION]
+   >
+   >Zorg ervoor dat de configuratienamen op het **[!UICONTROL Subscription parameters]** tabblad gelijk zijn aan die in de code van de mobiele toepassing. Raadpleeg de [Integrating Campaign SDK in de sectie over mobiele toepassingen](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) .
+
 
 ## Android-berichten maken {#creating-android-delivery}
 
