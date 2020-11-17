@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 34ee3d99-4ffb-4279-b994-5ab7abc7cf06
 translation-type: tm+mt
-source-git-commit: 270c86a8a15ebe38907be258aed9d245d2a49b6d
+source-git-commit: 544fa260f9b35239a8fa8fbc141463a7b1898026
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '999'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ In deze sectie worden de installatie en configuratie van een server voor midsour
 De &quot;mid-sourcing&quot;-architectuur wordt gepresenteerd in [mid-sourcing-implementatie](../../installation/using/mid-sourcing-deployment.md).
 
 Voor de installatie van een server voor midsourcing wordt hetzelfde proces gevolgd als voor de installatie van een server op de normale manier (zie de standaardconfiguratie). Het is een onafhankelijke instantie met zijn eigen gegevensbestand dat kan worden gebruikt om leveringen in werking te stellen. Eenvoudig gezet, bevat het een extra configuratie om verre instanties toe te staan leveringen door het in midsourcingswijze uitvoeren.
+
+>[!CAUTION]
+>
+>Zodra de server voor midsourcing is ingesteld en de [synchronisatieworkflows](../../workflow/using/transfer-to-mid-sourcing.md) voor het eerst zijn uitgevoerd, moet u de interne naam van de externe accounts voor midsourcing niet bijwerken.
 
 ## Stappen voor het installeren en configureren van een instantie {#steps-for-installing-and-configuring-an-instance}
 
