@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 translation-type: tm+mt
-source-git-commit: 022fe39e849ceafa6678120ff455d07432fb9a1f
+source-git-commit: 30eaabba8962c518c734cc4e9ad27065cfe9d467
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 0%
@@ -96,11 +96,9 @@ Met de externe account Teradata kunt u uw Campagne-instantie verbinden met uw ex
 
    * **[!UICONTROL Database]**: Naam van de database (optioneel)
 
-   * 
-      * **[!UICONTROL Options]**: Opties die door Teradata moeten worden doorgegeven. Gebruik de volgende indeling: &#39;parameter=value&#39;. Gebruik een halve kolom als scheidingsteken tussen waarden.
-   * 
-      * **[!UICONTROL Timezone]**: Tijdzone ingesteld in metagegevens. [Meer informatie](#timezone)
+   * **[!UICONTROL Options]**: Opties die door Teradata moeten worden doorgegeven. Gebruik de volgende indeling: &#39;parameter=value&#39;. Gebruik een halve kolom als scheidingsteken tussen waarden.
 
+   * **[!UICONTROL Timezone]**: Tijdzone ingesteld in metagegevens. [Meer informatie](#timezone)
 
 ### Query-streepjescodes
 
