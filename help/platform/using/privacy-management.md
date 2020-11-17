@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: c2c7398c27f1bc7edf9adb0fc07409d2e525b168
+source-git-commit: 9240b6e194dbc26fbf37a9ecf88a1ae03f9e7a75
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '897'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Adobe Campaign biedt een reeks hulpmiddelen aan om u te helpen aan de verordenin
 
 * In dit gedeelte wordt algemene informatie gegeven over wat het privacybeheer is en over de functies die Adobe Campaign biedt om het [recht op toegang en het recht om te worden vergeten](#right-access-forgotten)te beheren.
 
-* Het bevat ook informatie over belangrijke functies voor het beheer van privacy ([toestemming, gegevensbewaring en gebruikersrollen](#consent-retention-roles)), en tips en trucs om u te helpen bij het naleven van uw privacyregels wanneer u Adobe Campaign gebruikt.
+* Het bevat ook informatie over belangrijke functies voor het beheer van privacy ([toestemming, retentie en rollen](#consent-retention-roles)), en tips en trucs om u te helpen bij het naleven van uw privacyregels wanneer u Adobe Campaign gebruikt.
 
 ## Regels inzake privacybeheer {#privacy-management-regulations}
 
@@ -74,7 +74,7 @@ Adobe Campaign kent sinds het begin van zijn goedkeuring de kenmerken die het mo
 
 Raadpleeg de [gedetailleerde documentatie](../../delivery/using/managing-subscriptions.md)voor meer informatie over contentbeheer.
 
-Naast de hulpprogramma&#39;s voor het beheer van toestemming die Adobe Campaign biedt, kunt u nagaan of een consument heeft gekozen voor de verkoop van persoonlijke gegevens. Zie [deze sectie](../../platform/using/privacy-requests.md#sale-of-personal-information).
+Naast de hulpprogramma&#39;s voor het beheer van toestemmingen die Adobe Campaign biedt, kunt u nagaan of een consument heeft gekozen voor de verkoop van persoonlijke gegevens. Zie [deze sectie](../../platform/using/privacy-requests.md##sale-of-personal-information-ccpa).
 
 ### Dataretentie {#data-retention}
 
