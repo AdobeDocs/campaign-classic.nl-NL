@@ -10,21 +10,37 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: f449ccd5-3965-4ab8-b5a9-993f3260aba9
 translation-type: tm+mt
-source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+source-git-commit: ebec481d5a018d06e47c782627e9a9064cb0dd64
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 11%
+source-wordcount: '1086'
+ht-degree: 9%
 
 ---
 
 
 # Aanbevolen werkwijzen en probleemoplossing voor SFTP-servers {#sftp-server-usage}
 
-## Aanbevolen werkwijzen SFTP-server {#sftp-server-best-practices}
+## Algemene aanbevelingen voor SFTP-server {#global-recommendations}
 
-Als u bestanden en data beheert voor ETL-doeleinden, worden deze bestanden opgeslagen op een gehoste SFTP-server die door Adobe wordt geleverd. Deze SFTP is ontworpen als een tijdelijke opslagruimte waarop u het bewaren en verwijderen van bestanden kunt regelen.
+Als u bestanden en data beheert voor ETL-doeleinden, worden deze bestanden opgeslagen op een gehoste SFTP-server die door Adobe wordt geleverd. Volg de onderstaande aanbevelingen bij het gebruik van SFTP-servers.
 
-Als deze ruimte niet correct wordt gebruikt of gecontroleerd, kan deze snel de fysieke ruimte vullen die op de server beschikbaar is en leiden tot het afbreken van bestanden bij volgende uploads. Zodra de ruimte verzadigd is, kunnen bestanden die het oudst zijn in de SFTP-opslag worden geactiveerd en verwijderd door automatische verwijdering.
+* Gebruik op sleutels gebaseerde authentificatie eerder dan wachtwoordauthentificatie, om wachtwoordvervalsing te vermijden (de wachtwoorden hebben een geldigheidsperiode van 90 dagen). Bovendien kunt u met op sleutels gebaseerde verificatie meerdere sleutels genereren, bijvoorbeeld wanneer u meerdere entiteiten beheert. Integendeel, voor wachtwoordverificatie moet u het wachtwoord delen met alle entiteiten die u beheert.
+
+   De gesteunde zeer belangrijke indeling is SSH-2 RSA 2048. De sleutels kunnen met hulpmiddelen zoals PyTTY (Vensters), of ssh-keygen (Unix) worden geproduceerd.U zult de openbare sleutel aan het team van de Steun van de Adobe via de Zorg [van de Klant van](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Adobe moeten verstrekken om het op de server van de Campagne te hebben geupload.
+
+* Gebruik batchverwerking in SFTP-uploads en in workflows.
+
+* Verwerk fouten/uitzonderingen.
+
+* Standaard staan alle mappen die u maakt alleen in de modus Lezen/Schrijven voor uw id. Wanneer het creëren van omslagen die door Campagne moeten worden betreden, zorg ervoor om hen te vormen met lees/schrijf rechten voor de volledige groep. Anders kunnen workflows mogelijk geen bestanden maken of verwijderen omdat deze om beveiligingsredenen onder een andere id binnen dezelfde groep worden uitgevoerd.
+
+* Openbare IPs waarvan u probeert om de verbinding in werking te stellen SFTP moet aan de lijst van gewenste personen op de instantie van de Campagne worden toegevoegd. Het toevoegen van IP adressen aan de lijst van gewenste personen kan via de Zorg van de Klant van [Adobe worden gevraagd](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+
+## Best practices voor databasegebruik {#sftp-server-best-practices}
+
+SFTP-servers zijn ontworpen als tijdelijke opslagruimten waarop u het bewaren en verwijderen van bestanden kunt beheren.
+
+Als deze spaties niet correct worden gebruikt of gecontroleerd, kunnen ze snel de fysieke ruimte op de server vullen en leiden tot het afbreken van bestanden bij volgende uploads. Zodra de ruimte verzadigd is, kunnen bestanden die het oudst zijn in de SFTP-opslag worden geactiveerd en verwijderd door automatische verwijdering.
 
 Om dergelijke problemen te voorkomen, raadt Adobe aan de onderstaande beste praktijken te volgen.
 
@@ -35,21 +51,21 @@ Om dergelijke problemen te voorkomen, raadt Adobe aan de onderstaande beste prak
 >Als u wilt controleren of uw instantie wordt gehost op AWS, voert u de stappen uit die in [deze sectie](https://docs.adobe.com/content/help/en/control-panel/using/faq.html#ims-org-id) worden beschreven .
 
 * De mogelijkheden voor servergrootte variëren afhankelijk van uw licentie. In elk geval moet u de minimale gegevens mogelijk houden en de gegevens slechts zo lang bewaren als nodig is (15 dagen is de maximale termijn).
-* Gebruik op sleutels gebaseerde authentificatie eerder dan wachtwoordauthentificatie, om wachtwoordvervalsing te vermijden (de wachtwoorden hebben een geldigheidsperiode van 90 dagen). Bovendien kunt u met op sleutels gebaseerde verificatie meerdere sleutels genereren, bijvoorbeeld wanneer u meerdere entiteiten beheert. Integendeel, voor wachtwoordverificatie moet u het wachtwoord delen met alle entiteiten die u beheert.
-
-   De gesteunde zeer belangrijke indeling is SSH-2 RSA 2048. De sleutels kunnen met hulpmiddelen zoals PyTTY (Vensters), of ssh-keygen (Unix) worden geproduceerd.U zult de openbare sleutel aan het team van de Steun van de Adobe via de Zorg [van de Klant van](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Adobe moeten verstrekken om het op de server van de Campagne te hebben geupload.
 
 * Gebruik workflows om de data op de juiste manier te verwijderen (beheer de retentie van workflows die de data verbruiken).
-* Gebruik batchverwerking in SFTP-uploads en in workflows.
-* Verwerk fouten/uitzonderingen.
-* Meld u af en toe aan bij de SFTP om de content rechtstreeks te controleren.
-* Vergeet niet dat SFTP-schijfbeheer in de eerste plaats uw verantwoordelijkheid is.
-* Standaard staan alle mappen die u maakt alleen in de modus Lezen/Schrijven voor uw id. Wanneer het creëren van omslagen die door Campagne moeten worden betreden, zorg ervoor om hen te vormen met lees/schrijf rechten voor de volledige groep. Anders kunnen workflows mogelijk geen bestanden maken of verwijderen omdat deze om beveiligingsredenen onder een andere id binnen dezelfde groep worden uitgevoerd.
-* Openbare IPs waarvan u probeert om de verbinding in werking te stellen SFTP moet aan de lijst van gewenste personen op de instantie van de Campagne worden toegevoegd. Het toevoegen van IP adressen aan de lijst van gewenste personen kan via de Zorg van de Klant van [Adobe worden gevraagd](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
->[!CAUTION]
->
->Als u uw eigen SFTP-server gebruikt, moet u de bovenstaande aanbevelingen zoveel mogelijk opvolgen.
+* Meld u af en toe aan bij de SFTP om de content rechtstreeks te controleren.
+
+* Vergeet niet dat SFTP-schijfbeheer in de eerste plaats uw verantwoordelijkheid is.
+
+## Extern SFTP-servergebruik {#external-SFTP-server}
+
+Als u uw eigen SFTP-server gebruikt, moet u de bovenstaande aanbevelingen zoveel mogelijk opvolgen.
+
+Wanneer u bovendien in Campaign Classic een pad naar een externe SFTP-server opgeeft, verschilt de padsyntaxis per besturingssysteem van de SFTP-server:
+
+* Als uw SFTP-server zich in **Windows** bevindt, moet u altijd een relatief pad gebruiken.
+* Als uw STP-server zich op **Linux** bevindt, moet u altijd een pad gebruiken dat relatief is ten opzichte van de thuisserver (te beginnen met &quot;~/&quot;) of een absoluut pad (te beginnen met &quot;/&quot;).
 
 ## Verbindingsproblemen met door Adobe gehoste SFTP-server {#sftp-server-troubleshooting}
 
