@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 58b7070ad765ba072b9c82e75ab1100f8cb38f3a
+source-git-commit: ebec481d5a018d06e47c782627e9a9064cb0dd64
 workflow-type: tm+mt
-source-wordcount: '3568'
+source-wordcount: '3588'
 ht-degree: 96%
 
 ---
@@ -37,6 +37,8 @@ De FDA-documentatie (Campaign Federated Data Access) is verbeterd met details vo
 De sectie Privacy is verplaatst en verrijkt met twee nieuwe pagina&#39;s: [Privacybeheer](../../platform/using/privacy-management.md) en [privacyverzoeken](../../platform/using/privacy-requests.md)beheren.
 
 Er is een opmerking toegevoegd aan de configuratiepagina van de server voor de midsourcing om op te geven dat de interne naam van de externe account niet moet worden bijgewerkt als de server eenmaal is ingesteld. [Meer informatie](../../installation/using/mid-sourcing-server.md)
+
+Er is informatie toegevoegd aan de syntaxis die moet worden gebruikt wanneer u een pad naar een externe SFTP-server opgeeft. [Meer informatie](../../platform/using/sftp-server-usage.md#external-SFTP-server)
 
 ## Oktober 2020 {#oct-2020}
 
