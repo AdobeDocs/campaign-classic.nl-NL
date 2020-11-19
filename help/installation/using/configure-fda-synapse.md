@@ -18,14 +18,14 @@ ht-degree: 1%
 ---
 
 
-# Toegang tot Azure Synapse configureren {#configure-access-to-azure-synapse}
+# Toegang tot Azure synapse configureren {#configure-access-to-azure-synapse}
 
-Gebruik de optie Campagne [Federated Data Access](../../installation/using/about-fda.md) (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Microsoft Azure Synapse Analytics te configureren.
+Gebruik de optie Campagne [Federated Data Access](../../installation/using/about-fda.md) (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Microsoft Azure synapse Analytics te configureren.
 
-1. Azure Synapse configureren op [CentOS](#azure-centos), [Windows](#azure-windows) of [Debian](#azure-debian)
-1. De [externe account](#azure-external) Azure Synapse configureren in Campagne
+1. Azure synapse configureren op [CentOS](#azure-centos), [Windows](#azure-windows) of [Debian](#azure-debian)
+1. De [externe Azure synapse-account](#azure-external) configureren in Campagne
 
-## Azure Synapse op CentOS {#azure-centos}
+## azure synapse op CentOS {#azure-centos}
 
 >[!CAUTION]
 >
@@ -34,7 +34,7 @@ Gebruik de optie Campagne [Federated Data Access](../../installation/using/about
 >* Versie 13.0 werkt met Red Hat 6 en 7.
 
 
-Volg onderstaande stappen om Azure Synapse op CentOS te configureren:
+Volg onderstaande stappen om Azure synapse op CentOS te configureren:
 
 1. Installeer eerst het ODBC-stuurprogramma. U vindt deze op deze [pagina](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
 
@@ -92,7 +92,7 @@ Volg onderstaande stappen om Azure Synapse op CentOS te configureren:
 
 1. In Campagne, kunt u uw [!DNL Azure Synapse] externe rekening dan vormen. Raadpleeg [deze sectie](#azure-external)voor meer informatie over het configureren van uw externe account.
 
-1. Aangezien Azure Synapse Analytics via de haven van TCP 1433 communiceert, moet u deze haven op uw firewall openen. Gebruik de volgende opdracht:
+1. Aangezien Azure synapse Analytics via de TCP 1433-poort communiceert, moet u deze poort openen op uw firewall. Gebruik de volgende opdracht:
 
    ```
    firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="[server_ip_here]/32" port port="1433" protocol="tcp" accept'
@@ -101,7 +101,7 @@ Volg onderstaande stappen om Azure Synapse op CentOS te configureren:
 
    >[!NOTE]
    >
-   >Om communicatie van de zijde van Analytics van de Stedelijke Synapse toe te staan zou u uw openbare IP aan de lijst van gewenste personen kunnen moeten toevoegen. Raadpleeg de [Azure-documentatie](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)om dit te doen.
+   >Om communicatie van de zijde van Analytics van Azure synapse toe te staan zou u uw openbare IP aan de lijst van gewenste personen kunnen moeten toevoegen. Raadpleeg de [Azure-documentatie](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)om dit te doen.
 
 1. Voer in het geval van iptables de volgende opdracht uit:
 
@@ -109,13 +109,13 @@ Volg onderstaande stappen om Azure Synapse op CentOS te configureren:
    iptables -A OUTPUT -p tcp -d [server_hostname_here] --dport 1433 -j ACCEPT
    ```
 
-## Azure Synapse in Windows {#azure-windows}
+## azure synapse in Windows {#azure-windows}
 
 >[!NOTE]
 >
 >Dit is exclusief aan versie 13 van de Bestuurder ODBC maar Adobe Campaign Classic kan SQL de Inheemse bestuurders van de Cliënt van de Server 11.0 en 10.0 ook gebruiken.
 
-Om Azure Synapse op Vensters te vormen:
+Azure synapse in Windows configureren:
 
 1. Installeer eerst het Microsoft ODBC-stuurprogramma. U vindt deze op [deze pagina](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
 
@@ -129,9 +129,9 @@ Om Azure Synapse op Vensters te vormen:
 
 1. In Campaign Classic kunt u vervolgens uw [!DNL Azure Synapse] externe account configureren. Raadpleeg [deze sectie](#azure-external)voor meer informatie over het configureren van uw externe account.
 
-1. Aangezien Azure Synapse Analytics door de haven van TCP 1433 communiceert, moet u deze haven op de Firewall van de Verdediger van Vensters openen. For more on this, refer to [Windows documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
+1. Aangezien de Analytics van Azure synapse door de haven van TCP 1433 communiceert, moet u deze haven op de Firewall van de Verdediger van Vensters openen. For more on this, refer to [Windows documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
-## Azure Synapse on Debian {#azure-debian}
+## azure synapse op Debian {#azure-debian}
 
 **Vereisten:**
 
@@ -142,7 +142,7 @@ Om Azure Synapse op Vensters te vormen:
    sudo apt-get install curl
    ```
 
-Om Azure Synapse op Debian te vormen:
+Azure synapse configureren op Debian:
 
 1. Installeer eerst het Microsoft ODBC-stuurprogramma voor SQL Server. Gebruik de volgende bevelen om Bestuurder ODBC 13.1 voor SQL Server te installeren:
 
@@ -184,7 +184,7 @@ Om Azure Synapse op Debian te vormen:
 
 1. In Campaign Classic kunt u nu uw [!DNL Azure Synapse] externe account configureren. Raadpleeg [deze sectie](#azure-external)voor meer informatie over het configureren van uw externe account.
 
-1. Om iptables op Debian te vormen om de verbinding met Azure Analytics van de Synapse te verzekeren, laat de uitgaande haven TCP 1433 voor uw hostname met het volgende bevel toe:
+1. Om iptables op Debian te vormen om de verbinding met Analytics van Azure synapse te verzekeren, laat de uitgaande haven van TCP 1433 voor uw hostname met het volgende bevel toe:
 
    ```
    iptables -A OUTPUT -p tcp -d [server_hostname_here] --dport 1433 -j ACCEPT
@@ -192,12 +192,12 @@ Om Azure Synapse op Debian te vormen:
 
    >[!NOTE]
    >
-   >Om communicatie van de zijde van Analytics van de Stedelijke Synapse toe te staan zou u uw openbare IP aan de lijst van gewenste personen kunnen moeten toevoegen. Raadpleeg de [Azure-documentatie](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)om dit te doen.
+   >Om communicatie van de zijde van Analytics van Azure synapse toe te staan zou u uw openbare IP aan de lijst van gewenste personen kunnen moeten toevoegen. Raadpleeg de [Azure-documentatie](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)om dit te doen.
 
 
-## Azure Synapse external account {#azure-external}
+## Externe azure synapse-account {#azure-external}
 
-Met de [!DNL Azure Synapse] externe account kunt u uw Campagne-instantie verbinden met uw externe database van Azure Synapse.
+Met de [!DNL Azure Synapse] externe account kunt u uw Campagne-instantie verbinden met uw externe Azure synapse-database.
 
 Volg onderstaande stappen om uw [!DNL Azure Synapse] externe account te maken:
 
@@ -211,9 +211,9 @@ Volg onderstaande stappen om uw [!DNL Azure Synapse] externe account te maken:
 
 1. Configureer de [!DNL Azure Synapse] externe account. Geef de volgende instellingen op:
 
-   * **[!UICONTROL Type]**: Azure Synapse Analytics
+   * **[!UICONTROL Type]**: azure synapse Analytics
 
-   * **[!UICONTROL Server]**: URL van de Azure Synapse-server
+   * **[!UICONTROL Server]**: URL van de Azure synapse-server
 
    * **[!UICONTROL Account]**: Naam van de gebruiker
 
