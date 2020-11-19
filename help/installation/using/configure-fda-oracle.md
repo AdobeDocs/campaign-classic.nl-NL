@@ -1,6 +1,6 @@
 ---
 title: Toegang tot Oracle configureren
-description: Leer hoe u toegang tot Oracle configureert in FDA
+description: Leer hoe u toegang tot Oracle kunt configureren in FDA
 page-status-flag: never-activated
 uuid: b84359b9-c584-431d-80d5-71146d9b6854
 contentOwner: sauviat
@@ -20,21 +20,21 @@ ht-degree: 0%
 
 # Toegang tot Oracle configureren {#configure-access-to-oracle}
 
-Gebruik de optie Campagne [Federated Data Access](../../installation/using/about-fda.md) (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om de toegang tot Oracle te configureren.
+Gebruik de optie Campagne [Federated Data Access](../../installation/using/about-fda.md) (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Oracle te configureren.
 
-1. Oracle configureren op [Linux](#oracle-linux) of [Windows](#azure-windows)
-1. De Oracle- [externe account](#oracle-external) configureren in Campagne
+1. Oracle configureren in [Linux](#oracle-linux) of [Windows](#azure-windows)
+1. De [externe Oracle-account](#oracle-external) configureren in Campagne
 
 ## Oracle op Linux {#oracle-linux}
 
-Voor verbinding met een externe Oracle-database in FDA zijn hieronder aanvullende configuraties op de Adobe Campaign-server vereist.
+Als u verbinding maakt met een externe Oracle-database in FDA, hebt u hieronder aanvullende configuraties op de Adobe Campaign-server nodig.
 
 1. Installeer de volledige Oracle-client die overeenkomt met uw versie van Oracle.
-1. Voeg uw definities TNS aan uw installatie toe. Om dit te doen, specificeer hen in een **tnsnames.ora** - dossier in de /etc/oracle bewaarplaats. Als deze gegevensopslagruimte niet bestaat, maakt u deze.
+1. Voeg uw definities TNS aan uw installatie toe. Hiervoor geeft u ze op in een bestand **tnsnames.ora** in de opslagruimte /etc/oracle. Als deze gegevensopslagruimte niet bestaat, maakt u deze.
 
    Maak vervolgens een nieuwe omgevingsvariabele TNS_ADMIN: Exporteer TNS_ADMIN=/etc/oracle en start de computer opnieuw op.
 
-1. Integreer Oracle in uw Adobe Campaign-server (nlserver). Hiervoor controleert u of het bestand **customer.sh** aanwezig is in de map &quot;nl6&quot; van de structuur van de Adobe Campaign-serverstructuur en of het bestand de koppelingen naar de Oracle-bibliotheken bevat.
+1. Integreer Oracle in uw Adobe Campaign-server (nlserver). Hiervoor controleert u of het bestand **customer.sh** aanwezig is in de map &quot;nl6&quot; van de structuur van de Adobe Campaign-serverstructuur en of dit bestand de koppelingen naar de Oracle-bibliotheken bevat.
 
    Bijvoorbeeld voor een client in 11.2:
 
@@ -48,7 +48,7 @@ Voor verbinding met een externe Oracle-database in FDA zijn hieronder aanvullend
    >
    >Deze waarden (in het bijzonder ORACLE_HOME) zijn afhankelijk van de installatieregisters. Controleer de boomstructuur voordat u naar deze waarden verwijst.
 
-1. Installeer de bibliotheken die nodig zijn voor Oracle:
+1. De bibliotheken installeren die nodig zijn voor Oracle:
 
    * **libclntsh.so**
 
@@ -69,7 +69,7 @@ Voor verbinding met een externe Oracle-database in FDA zijn hieronder aanvullend
 
 ## Oracle in Windows {#oracle-windows}
 
-Voor verbinding met een externe Oracle-database in FDA zijn hieronder aanvullende configuraties op de Adobe Campaign-server vereist.
+Als u verbinding maakt met een externe Oracle-database in FDA, hebt u hieronder aanvullende configuraties op de Adobe Campaign-server nodig.
 
 1. Installeer de Oracle-client.
 
@@ -79,7 +79,7 @@ Voor verbinding met een externe Oracle-database in FDA zijn hieronder aanvullend
 
 1. In Campaign Classic kunt u vervolgens uw [!DNL Oracle] externe account configureren. Raadpleeg [deze sectie](#oracle-external)voor meer informatie over het configureren van uw externe account.
 
-## Externe Oracle-account {#oracle-external}
+## Externe oracle-account {#oracle-external}
 
 Met de [!DNL Oracle] externe account kunt u uw Campagne-instantie verbinden met uw externe Oracle-database.
 
