@@ -1,6 +1,6 @@
 ---
 title: Toegang tot SAP HANA configureren
-description: Leer hoe u toegang tot SAP HANA configureert in FDA
+description: Leer hoe u toegang tot SAP HANA kunt configureren in FDA
 page-status-flag: never-activated
 uuid: b84359b9-c584-431d-80d5-71146d9b6854
 contentOwner: sauviat
@@ -22,14 +22,14 @@ ht-degree: 0%
 
 Gebruik de optie Campagne [Federated Data Access](../../installation/using/about-fda.md) (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot SAP HANA te configureren.
 
-1. SAP [HANA-database configureren](#sap-config)
-1. SAP HANA- [externe account](#sap-external) configureren in campagne
+1. SAP HANA- [database configureren](#sap-config)
+1. De [externe SAP HANA-account](#sap-external) configureren in Campagne
 
 ## SAP HANA-stuurprogramma&#39;s {#sap-config}
 
-Voor het verbinden met een externe SAP HANA-database in FDA zijn bepaalde aanvullende configuraties op de Adobe Campaign-server vereist:
+Voor verbinding met een externe SAP HANA-database in FDA zijn bepaalde aanvullende configuraties op de Adobe Campaign-server vereist:
 
-1. Installeer de ODBC-stuurprogramma&#39;s voor SAP HANA, afhankelijk van het besturingssysteem dat u gebruikt:
+1. Installeer de ODBC-stuurprogramma&#39;s voor SAP HANA volgens het besturingssysteem dat u gebruikt:
 
    * **hdb_client_linux.tgz** voor Linux. Nadat u de installatie hebt beëindigd, start u de hdbinst-opdracht en volgt u de instructies om de installatie van de stuurprogramma&#39;s te voltooien.
    * **hdb_client_windows.zip** voor Windows. Pak het bestand uit en start het uitvoerbare bestand: **hdbinst.exe**. Volg de aanwijzingen van de wizard om de installatie van de stuurprogramma&#39;s te voltooien.
@@ -63,7 +63,7 @@ Voor het verbinden met een externe SAP HANA-database in FDA zijn bepaalde aanvul
    * **LD_LIBRARY_PATH**: Het zou de verbinding aan uw cliënt van SAP Hana (/usr/sap/hdbclient/libodbcHDB.so) door gebrek moeten omvatten.
    * **ODBCINI**: locatie van het bestand odbc.ini (bijvoorbeeld /etc/odbc.ini).
 
-## Externe account SAP HANA{#sap-external}
+## Externe SAP HANA-account{#sap-external}
 
 Met de externe SAP HANA-account kunt u uw Campagne-instantie verbinden met uw externe SAP HANA-database.
 
