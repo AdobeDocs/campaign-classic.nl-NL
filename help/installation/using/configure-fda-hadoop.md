@@ -20,10 +20,10 @@ ht-degree: 0%
 
 # Toegang tot Hadoop configureren {#configure-access-to-hadoop}
 
-Gebruik de optie Campagne **Federated Data Access** (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om de toegang tot Hadoop te configureren.
+Gebruik de optie Campagne **Federated Data Access** (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Hadoop te configureren.
 
 1. Hadoop- [database configureren](#configuring-hadoop)
-1. De [externe account](#hadoop-external) van Hadoop configureren in Campagne
+1. De [externe Hadoop-account](#hadoop-external) configureren in Campagne
 
 ## Hadoop 3.0 configureren {#configuring-hadoop}
 
@@ -42,9 +42,9 @@ Als u verbinding wilt maken met een externe Hadoop-database in FDA, hebt u de vo
 
 1. In Campaign Classic kunt u vervolgens uw [!DNL Hadoop] externe account configureren. Raadpleeg [deze sectie](#hadoop-external)voor meer informatie over het configureren van uw externe account.
 
-## Externe rekening {#hadoop-external}
+## Externe hadoop-account {#hadoop-external}
 
-Met de [!DNL Hadoop] externe account kunt u uw Campagne-instantie verbinden met uw externe database van Hadoop.
+Met de [!DNL Hadoop] externe account kunt u uw Campagne-instantie verbinden met uw externe Hadoop-database.
 
 1. In Campaign Classic, vorm uw [!DNL Hadoop] externe rekening. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
@@ -103,7 +103,7 @@ Als u verbinding wilt maken met Hadoop 2.1, voert u de onderstaande stappen voor
    User/Password: admin/<your password here>
    ```
 
-1. Maak de externe account van Hadoop, zoals beschreven in [deze sectie](#hadoop-external).
+1. Maak de externe Hadoop-account, zoals beschreven in [deze sectie](#hadoop-external).
 
 ### Hadoop 2.1 voor Linux {#for-linux}
 
@@ -158,7 +158,7 @@ Als u verbinding wilt maken met Hadoop 2.1, voert u de onderstaande stappen voor
    >
    >De parameter **UseNativeQuery** is hier erg belangrijk. De campagne is Hive-bewust en zal niet correct werken tenzij UseNativeQuery wordt geplaatst. Doorgaans herschrijft het stuurprogramma of de SQL-connector van Hive query&#39;s en wordt de kolomvolgorde gewijzigd.
 
-   De authenticatie-instelling is afhankelijk van de Hive/Hadoop-configuratie. Bijvoorbeeld, voor HD Insight, gebruik AuthMech=6 voor gebruiker/wachtwoordauthentificatie, zoals [hier](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm)beschreven.
+   De verificatie-instelling is afhankelijk van de configuratie Hive/Hadoop. Bijvoorbeeld, voor HD Insight, gebruik AuthMech=6 voor gebruiker/wachtwoordauthentificatie, zoals [hier](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm)beschreven.
 
 1. Exporteer de variabelen.
 
@@ -190,5 +190,5 @@ Als u verbinding wilt maken met Hadoop 2.1, voert u de onderstaande stappen voor
    isql vorac -v
    ```
 
-1. Maak de externe account van Hadoop, zoals beschreven in [deze sectie](#hadoop-external).
+1. Maak de externe Hadoop-account, zoals beschreven in [deze sectie](#hadoop-external).
 
