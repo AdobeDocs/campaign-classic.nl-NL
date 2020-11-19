@@ -1,6 +1,6 @@
 ---
 title: Toegang tot Sybase IQ configureren
-description: Leer hoe u toegang tot Sybase IQ in FDA configureert
+description: Leer hoe u toegang tot Sybase IQ kunt configureren in FDA
 page-status-flag: never-activated
 uuid: b84359b9-c584-431d-80d5-71146d9b6854
 contentOwner: sauviat
@@ -23,11 +23,11 @@ ht-degree: 0%
 Gebruik de optie Campagne **Federated Data Access** (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Sybase IQ te configureren.
 
 1. Sybase IQ- [database configureren](#configuring-sybase)
-1. Vorm de [externe rekening](#sybase-external) van Sybase IQ in Campagne
+1. De [externe Sybase IQ-account](#sybase-external) configureren in Campagne
 
-## Sybase IQ-configuratie {#configuring-sybase}
+## sybase IQ-configuratie {#configuring-sybase}
 
-Voor verbinding met een externe Sybase-IQ-database in FDA zijn hieronder aanvullende configuraties op de Adobe Campaign-server vereist.
+Als u verbinding maakt met een externe Sybase IQ-database in FDA, hebt u hieronder aanvullende configuraties op de Adobe Campaign-server nodig.
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Voor verbinding met een externe Sybase-IQ-database in FDA zijn hieronder aanvull
    * Als u een bestand customer.sh gebruikt om het pad te declareren: Voeg het pad /opt/sybase/IQ-16_0/lib64 toe voor de variabele LD_LIBRARY_PATH.
    * Gebruik anders een Unix-opdracht.
 
-## Externe account voor IQ van Sybase {#sybase-external}
+## Externe sybase IQ-account {#sybase-external}
 
 Met de externe Sybase IQ-account kunt u uw Campagne-instantie verbinden met uw externe Sybase IQ-database.
 
