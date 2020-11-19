@@ -1,6 +1,6 @@
 ---
 title: Toegang tot Netezza configureren
-description: Leer hoe u toegang tot Netezza configureert in FDA
+description: Leer hoe u toegang tot Netezza kunt configureren in FDA
 page-status-flag: never-activated
 uuid: b84359b9-c584-431d-80d5-71146d9b6854
 contentOwner: sauviat
@@ -22,8 +22,8 @@ ht-degree: 0%
 
 Gebruik de optie Campagne [Federated Data Access](../../installation/using/about-fda.md) (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Netezza te configureren.
 
-1. Netezza- [stuurprogramma&#39;s installeren en configureren](#netezza-config)
-1. Vorm de [externe rekening](#netezza-external) Netezza in Campagne
+1. Netezza-stuurprogramma&#39;s installeren en configureren [](#netezza-config)
+1. De [externe Netezza-account](#netezza-external) configureren in Campagne
 
 ## Netezza-configuratie {#netezza-config}
 
@@ -70,11 +70,11 @@ Als u verbinding maakt met een externe Netezza-database in FDA, hebt u hieronder
 
    * **LD_LIBRARY_PATH**: /usr/local/nz/lib en /usr/local/nz/lib64. &quot;/usr/local/nz&quot; komt overeen met de standaardopslagplaats voor de installatie van de stuurprogramma&#39;s. Hier moet u de opslagplaats specificeren die u voor de installatie hebt geselecteerd.
    * **ODBCINI**: locatie van het bestand odbc.ini (bijvoorbeeld /etc/odbc.ini).
-   * **NZ_ODBC_INI_PATH**: locatie van het bestand odbc.ini. Netezza vereist ook deze tweede variabele voor het gebruiken van het odbc.ini- dossier.
+   * **NZ_ODBC_INI_PATH**: locatie van het bestand odbc.ini. Netezza heeft deze tweede variabele ook nodig voor het gebruik van het bestand odbc.ini.
 
-## Netezza externe account {#netezza-external}
+## Externe netezza-account {#netezza-external}
 
-De externe rekening Netezza staat u toe om uw instantie van de Campagne met uw extern gegevensbestand te verbinden Netezza.
+Met de externe Netezza-account kunt u uw Campagne-instantie verbinden met uw externe Netezza-database.
 
 1. Klik in Campagne **[!UICONTROL Explorer]** op **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
@@ -96,4 +96,4 @@ De externe rekening Netezza staat u toe om uw instantie van de Campagne met uw e
 >
 >Bewerkingen op schema&#39;s die automatisch gegenereerde primaire sleutels bevatten, worden niet in aanmerking genomen.
 >
->De tabel gebruikt de component **Indelen op** de eerste index die in het schema is gedefinieerd. Aangezien deze clausule tot 1 tot 4 kolommen met Netezza beperkt is, kan deze index niet meer dan 4 kolommen bevatten.
+>De tabel gebruikt de component **Indelen op** de eerste index die in het schema is gedefinieerd. Aangezien deze clausule tot 1 tot 4 kolommen met Netezza wordt beperkt, kan deze index niet meer dan 4 kolommen bevatten.
