@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Campagneopties configureren
 description: Leer hoe u de opties voor campagne configureert
-page-status-flag: never-activated
-uuid: 32e85e41-6898-4fb3-90c8-2201ceea2e91
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: appendices
-discoiquuid: 9c1884f6-1dd8-41ab-b8dc-604c8cc2dc89
 translation-type: tm+mt
-source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 1%
@@ -682,7 +679,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
    <td> Tijdens migratie wordt de boomstructuur automatisch opnieuw ingedeeld op basis van de nieuwe versienormen.<br /> Met deze optie kunt u de automatische migratie van de boomstructuur uitschakelen. Als u het gebruikt, moet u na migratie verouderde mappen verwijderen, de nieuwe mappen toevoegen en alle noodzakelijke controles uitvoeren.<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">Gegevenstype:</span> Geheel</p> </li> 
-     <li> <p> <span class="uicontrol">Waarde (tekst)</span> : 1 </p> </li> 
+     <li> <p> <span class="uicontrol">Waarde (tekst)</span> : 3 </p> </li> 
     </ul> Deze optie mag alleen worden gebruikt als de uit-de-box navigatieboom te veel wijzigingen heeft ondergaan.<br /> Raadpleeg <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">deze sectie</a> voor meer informatie.<br /> </td> 
   </tr> 
   <tr> 
@@ -744,7 +741,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Teradata</span> <br /> </td> 
-   <td> Verbindingsopties voor teragegevens.<br /> </td> 
+   <td> Teradata-connectoropties.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Hive</span> <br /> </td> 
