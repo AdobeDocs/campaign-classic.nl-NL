@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Compatibiliteitsmatrix voor Gold Standard
 description: Campaign Classic-compatibiliteitsmatrix voor Gold Standard-release
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fd
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7p
 translation-type: tm+mt
-source-git-commit: 7f8b0458f947ae1863c2afb6e67cabf2d23200e1
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 15%
@@ -94,7 +91,7 @@ Adobe Campaign Classic is compatibel met alle systemen en gereedschappen die op 
 <td>Java Development Kit (JDK)</td>
 <td>
 <p>8</p>
-<p>De toepassing is goedgekeurd voor de Java Development Kit (JDK) die door Oracle is ontwikkeld en voor OpenJDK.</p>
+<p>De aanvraag is goedgekeurd voor de Java Development Kit (JDK) die is ontwikkeld door Oracle en voor OpenJDK.</p>
 </td>
 </tr>
 <tr>
@@ -182,7 +179,7 @@ Adobe Campaign Classic is compatibel met alle systemen en gereedschappen die op 
 <p>API-versie 15</p>
 </td>
 </tr>
-<tr><td>Oracle On Demand-API</td>
+<tr><td>Oracle On-demand-API</td>
 <td>
 <p>Web Services v1.0 API</p>
 </td>
@@ -232,7 +229,7 @@ Adobe Campaign Classic is compatibel met alle systemen en gereedschappen die op 
 </td>
 </tr>
 <tr>
-<td>TeraData</td>
+<td>Teradata</td>
 <td>
 <p>16.20</p>
 <p>16</p>
