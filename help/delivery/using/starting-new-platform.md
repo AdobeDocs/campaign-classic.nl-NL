@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Een nieuw platform starten met Adobe Campaign Classic
 description: Meer informatie over het beheren van de leverbaarbaarheid bij het starten van een nieuw platform met Adobe Campaign Classic.
-page-status-flag: never-activated
-uuid: 2681042b-3018-42ae-b252-2367b56616bd
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 1%
@@ -38,7 +35,7 @@ Het beginnen van een platform gebeurt vaak wanneer het gebruiken van een lijst v
 
    Voor meer op dit, zie het [Optimaliseren van uw levering door quarantines](../../delivery/using/understanding-quarantine-management.md#optimizing-your-delivery-through-quarantines).
 * **Beperk de productiesnelheid** door het aantal tapes te beperken. Neem contact op met de Adobe Campaign-beheerder voor meer informatie over het aanpassen van deze technische instelling.
-* **De verzonden** volumes progressief verhogen om te voorkomen dat ze als spam worden gemarkeerd. Wijs niet de hele database vanaf het begin aan, maar voeg een extra fractie van de lijst toe telkens wanneer u de gegevens verzendt. Dit zou u moeten toelaten om het volume bij elke stap te verhogen terwijl het verminderen van het algemene tarief van ongeldige adressen. U kunt golven gebruiken om een vloeiende ontwikkeling van de opstartfase te garanderen. Zie [Verzenden met meerdere golven](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)voor meer informatie.
+* **De verzonden** volumes progressief verhogen om te voorkomen dat ze als spam worden gemarkeerd. Wijs niet de hele database vanaf het begin aan, maar voeg een extra fractie van de lijst toe telkens als u de gegevens verzendt. Dit zou u moeten toelaten om het volume bij elke stap te verhogen terwijl het verminderen van het algemene tarief van ongeldige adressen. U kunt golven gebruiken om een vloeiende ontwikkeling van de opstartfase te garanderen. Zie [Verzenden met meerdere golven](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)voor meer informatie.
 * **Verzend regelmatig**. In zekere zin is het beter om regelmatig kleine opnamen te sturen in plaats van sporadisch grote campagnes.
 * **Let goed op de leveringsrapporten**. De hoge foutenindicatoren kunnen betekenen een technisch plaatsen slecht gevormd is. Zie [Levering](../../delivery/using/monitoring-a-delivery.md)controleren voor meer informatie.
 
