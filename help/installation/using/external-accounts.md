@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Externe accounts
 description: Meer informatie over het maken van externe accounts
-page-status-flag: never-activated
-uuid: e06e7a36-b449-4ab0-a4f6-fa82dbb8de11
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: administration-basics
-discoiquuid: da60b9ca-4b51-4bff-affc-2b12c576973a
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 10%
@@ -37,7 +34,7 @@ U kunt de volgende typen externe accounts instellen:
 * [Extern Adobe Experience Manager-account](#adobe-experience-manager-external-account)
 * [Amazon Simple Storage Service (S3) externe account](#amazon-simple-storage-service--s3--external-account)
 * [Externe account voor Microsoft Dynamics CRM](#microsoft-dynamics-crm-external-account)
-* [Oracle op verzoek externe account](#oracle-on-demand-external-account)
+* [Oracle op verzoek externe rekening](#oracle-on-demand-external-account)
 * [Externe rekening Salesforce CRM](#salesforce-crm-external-account)
 
 ## Een extern account maken {#creating-an-external-account}
@@ -151,14 +148,14 @@ Externe databases die compatibel zijn met Campagne, worden vermeld in de [compat
 
 De instellingen voor externe accountconfiguratie zijn afhankelijk van de database-engine. Meer informatie vindt u in de volgende secties:
 
-* Toegang tot [Azure Synapse configureren](../../installation/using/configure-fda-synapse.md)
+* Toegang tot [Azure synapse configureren](../../installation/using/configure-fda-synapse.md)
 * Toegang tot [Hadoop configureren](../../installation/using/configure-fda-hadoop.md)
 * Toegang tot [Oracle configureren](../../installation/using/configure-fda-oracle.md)
 * Toegang tot [Netezza configureren](../../installation/using/configure-fda-netezza.md)
 * Toegang tot [SAP HANA configureren](../../installation/using/configure-fda-sap-hana.md)
 * Toegang tot [Snowflake configureren](../../installation/using/configure-fda-snowflake.md)
 * Toegang tot [Sybase IQ configureren](../../installation/using/configure-fda-sybase.md)
-* Toegang tot [metagegevens configureren](../../installation/using/configure-fda-teradata.md)
+* Toegang tot [Teradata configureren](../../installation/using/configure-fda-teradata.md)
 
 ## Externe account voor webanalyse {#web-analytics-external-account}
 
@@ -410,17 +407,17 @@ Met **[!UICONTROL Web API]** plaatsingstype en **[!UICONTROL Certificate]** auth
 
 For more information on this configuration, refer to this [page](../../platform/using/crm-connectors.md#example-for-microsoft-dynamics).
 
-## Oracle op verzoek externe account {#oracle-on-demand-external-account}
+## Oracle op verzoek externe rekening {#oracle-on-demand-external-account}
 
 Met de **[!UICONTROL Oracle on demand]** externe account kunt u Oracle-gegevens importeren en exporteren naar Adobe Campaign.
 
 ![](assets/ext_account_18.png)
 
-Als u de externe Oracle-account op aanvraag wilt configureren voor samenwerking met Adobe Campaign, moet u de volgende gegevens opgeven:
+Als u de externe Oracle-account op aanvraag wilt configureren voor gebruik met Adobe Campaign, moet u de volgende gegevens opgeven:
 
 * **[!UICONTROL Account]**
 
-   Account gebruikt om u aan te melden bij Oracle CRM op verzoek.
+   Account gebruikt om u aan te melden bij Oracle CRM op aanvraag.
 
 * **[!UICONTROL Server]**
 
@@ -428,7 +425,7 @@ Als u de externe Oracle-account op aanvraag wilt configureren voor samenwerking 
 
 * **[!UICONTROL Password]**
 
-   Wachtwoord gebruikt om u aan te melden bij Oracle CRM op verzoek.
+   Wachtwoord gebruikt om u aan te melden bij Oracle CRM op aanvraag.
 
 For more information on this configuration, refer to this [page](../../platform/using/crm-connectors.md#example-for-oracle-on-demand).
 
