@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Schemastructuur
-seo-title: Schemastructuur
 description: Schemastructuur
-seo-description: null
-page-status-flag: never-activated
-uuid: 9be70907-6154-4890-91e8-fd0fac30ab05
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-discoiquuid: b5c8faf7-d0ae-4d95-b7fe-6ef9674a33d2
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1564'
 ht-degree: 1%
 
 ---
@@ -183,7 +178,7 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
    <td> <strong>Adobe Campaign</strong><br /> </td> 
    <td> <strong>PosgreSQL</strong><br /> </td> 
    <td> <strong>Oracle</strong><br /> </td> 
-   <td> <strong>TeraData</strong><br /> </td> 
+   <td> <strong>Teradata</strong><br /> </td> 
    <td> <strong>DB2</strong><br /> </td> 
    <td> <strong>MS SQL</strong><br /> </td> 
   </tr> 
