@@ -1,18 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Verouderde en verwijderde functies van Campaign Classic
 description: Deze pagina bevat de verouderde en verwijderde functies van Adobe Campaign Classic
-page-status-flag: never-activated
-uuid: null
-contentOwner: simonetn
-products: SG_CAMPAIGN/CLASSIC
 audience: rn
 content-type: reference
 topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 3402212bc6904dd5587d3b5a16fca7f4857fb908
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 100%
 
@@ -49,7 +47,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
   </tr>
    <tr>
   <td>Sms-connectoren<br></td>
-  <td><p> Vanaf de Campaign 20.2-release worden de volgende sms-connectoren afgeschaft.<p>
+  <td><p> Vanaf Campaign-release 20.2 worden de volgende sms-connectoren afgeschaft.<p>
    <ul>
    <li>NetSize</li>
    <li>Generic SMPP (SMPP versie 3.4 die de binaire modus ondersteunt)</li>
@@ -66,7 +64,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
  </tr>
   <tr>  
    <td>Faxkanaal<br></td>
-   <td><p>Vanaf de Campaign 20.2-release is het faxkanaal afgeschaft.</p> 
+   <td><p>Vanaf Campaign 20.2-release is het faxkanaal afgeschaft.</p> 
    <p>Als u dit kanaal gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Ontdek meer</a> over Campaign-kanalen.</p>
    <p><em>Doeldatum voor verwijdering: 2021</em></p></td>
   </tr>
