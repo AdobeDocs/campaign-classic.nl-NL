@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Doorlopende levering
-seo-title: Doorlopende levering
 description: Doorlopende levering
-seo-description: null
-page-status-flag: never-activated
-uuid: af8b4582-299e-47f9-9819-987b35db94ab
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-discoiquuid: 9d80be19-8dde-4278-ab5f-23f364fe422e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 2%
+source-wordcount: '343'
+ht-degree: 3%
 
 ---
 
@@ -51,7 +46,7 @@ Deze reeks van drie waarden identificeert het doel dat uit de levering tijdens d
 
 De overgang verbonden aan het complement heeft de zelfde parameters.
 
-## Hoe te opstelling een ononderbroken levering
+## Een doorlopende levering instellen
 
 Deze sectie verklaart hoe te opstelling een ononderbroken levering.
 
