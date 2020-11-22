@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: CRM-connectoren
-seo-title: CRM-connectoren
 description: CRM-connectoren
-seo-description: null
-page-status-flag: never-activated
-uuid: ef3d88a1-b0fd-4790-b6e8-63fa339ef991
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: connectors
-discoiquuid: dbe9080c-66e3-4ff6-8f16-959f9748f666
 translation-type: tm+mt
-source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2539'
 ht-degree: 4%
 
 ---
@@ -55,19 +50,19 @@ Ondersteunde versies worden gedetailleerd beschreven in de [compatibiliteitsmatr
    >    * Meerdere selectienumeraties worden niet ondersteund door Adobe Campaign.
 
 
-* **Oracle On Demand**
+* **Oracle On-demand**
 
    Raadpleeg [deze sectie](#example-for-oracle-on-demand) voor meer informatie over het instellen van de verbinding met Oracle On Demand.
 
    >[!IMPORTANT]
    >
-   >Bij de verbinding van Adobe Campaign met Oracle On Demand gelden de volgende beperkingen:
+   >Bij het verbinden van Adobe Campaign met Oracle On Demand gelden de volgende beperkingen:
    >
    >    
    >    
    >    * Adobe Campaign kan elk object dat beschikbaar is in de standaard Oracle On Demand-sjablonen synchroniseren. Als u persoonlijke tabellen hebt toegevoegd in Oracle On Demand, worden deze niet hersteld in Adobe Campaign.
    >    * Met API-versie v1.0 kunt u gegevens sorteren of filteren tijdens een query, maar niet tegelijkertijd.
-   >    * De door Oracle On Demand verzonden data bevatten geen informatie over de tijdzone.
+   >    * De data die door Oracle On Demand worden verzonden, bevatten geen informatie over de tijdzone.
    >    * Meerdere selectienumeraties worden niet ondersteund door Adobe Campaign.
 
 
@@ -143,7 +138,7 @@ Volg onderstaande stappen om de **Salesforce.com** -aansluiting met Adobe Campai
 
 ### Voorbeeld voor Oracle On Demand {#example-for-oracle-on-demand}
 
-Voer de volgende stappen uit om de **Oracle On Demand** -connector te configureren voor gebruik met Adobe Campaign:
+Voer de volgende stappen uit om de **Oracle On Demand** -aansluiting te configureren voor gebruik met Adobe Campaign:
 
 1. Maak een nieuwe externe account via het **[!UICONTROL Administration > Platform > External accounts]** knooppunt van de Adobe Campaign-structuur.
 
@@ -177,7 +172,7 @@ Voer de volgende stappen uit om de **Oracle On Demand** -connector te configurer
 
    ![](assets/crm_connectors_ood_7.png)
 
-   Deze workflow verzamelt de relevante gegevens met behulp van query&#39;s en exporteert deze vervolgens naar de Oracle On Demand-lijst met contactpersonen.
+   Deze workflow verzamelt de relevante gegevens met behulp van query&#39;s en exporteert deze vervolgens naar de tabel met Oracle On Demand-contactpersonen.
 
 ### Voorbeeld voor Microsoft Dynamics {#example-for-microsoft-dynamics}
 
@@ -439,7 +434,7 @@ Afwijzingen worden verzameld met hun foutcode en het bijbehorende bericht. Dit b
 
 Met de **[!UICONTROL Reject]** uitvoerovergang hebt u toegang tot het uitvoerschema dat de specifieke kolommen bevat die relevant zijn voor foutberichten en -codes. Deze kolommen zijn:
 
-* Voor Oracle On Demand: **errorLogFilename** (naam van het logboekdossier op Oracle kant), **errorCode** (foutencode), **errorSymbol** (foutensymbool, verschillend van de foutencode), **errorMessage** (beschrijving van de foutencontext).
+* Voor Oracle On Demand: **errorLogFilename** (naam van het logboekdossier op de kant van Oracle), **errorCode** (foutencode), **errorSymbol** (foutensymbool, verschillend van de foutencode), **errorMessage** (beschrijving van de foutencontext).
 * Voor Salesforce.com: **errorSymbol** (foutsymbool, anders dan de foutcode), **errorMessage** (beschrijving van de foutcontext).
 
 ### Objecten importeren die zijn verwijderd in de CRM {#importing-objects-deleted-in-the-crm}
