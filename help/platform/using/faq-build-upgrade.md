@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Veelgestelde vragen over upgrades samenstellen
 description: Algemene vragen met betrekking tot upgrades van de Campagne-build
-page-status-flag: never-activated
-uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '2020'
 ht-degree: 2%
@@ -20,7 +17,7 @@ ht-degree: 2%
 
 # Veelgestelde vragen over upgrade maken {#build-upgrade-faq}
 
-Adobe Campaign wordt regelmatig bijgewerkt. Als u bekend bent met onze gepubliceerde [opmerkingen](../../rn/using/rn-overview.md)bij de release, weet u waarschijnlijk dat gemiddeld 2/3 kleine versies met nieuwe functies, verbeteringen en oplossingen elk jaar worden uitgebracht. Bovendien brengen wij periodiek bouwt met cumulatieve moeilijke situaties slechts vrij. Deze regelmatige afwezigheid van updates is erop gericht om de nieuwste en grootste in uw handen te krijgen, uw omgeving volledig veilig te houden en duidelijk uw ervaring met ons product te verbeteren.
+Adobe Campaign wordt regelmatig bijgewerkt. Als u bekend bent met onze gepubliceerde [opmerkingen](../../rn/using/rn-overview.md)bij de release, weet u waarschijnlijk dat gemiddeld 2/3 kleine versies met nieuwe functies, verbeteringen en oplossingen elk jaar worden uitgebracht. Bovendien brengen wij periodiek versies uit met uitsluitend cumulatieve oplossingen. Deze regelmatige afwezigheid van updates is erop gericht om de nieuwste en grootste in uw handen te krijgen, uw omgeving volledig veilig te houden en duidelijk uw ervaring met ons product te verbeteren.
 
 Het is essentieel dat onze klanten de meest recente versie van Adobe Campaign uitvoeren. Het staat ook Adobe toe om veel efficiënter te helpen in het geval u op kwesties loopt - het identificeren van, het reproduceren van en het bevestigen van een kwestie op een oude bouwstijl typisch meer tijd vergt, om niet te vermelden dat sommige kwesties u zou kunnen ontmoeten reeds zeer goed in een recente bouwstijl zijn opgelost.
 
