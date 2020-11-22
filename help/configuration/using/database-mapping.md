@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Databasetoewijzing
-seo-title: Databasetoewijzing
 description: Databasetoewijzing
-seo-description: null
-page-status-flag: never-activated
-uuid: a51df3eb-cae6-4e8d-8386-d62defc1b610
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-discoiquuid: bc06c00d-f421-452e-bde0-b4ecc12c72c8
 translation-type: tm+mt
-source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1976'
+source-wordcount: '1974'
 ht-degree: 0%
 
 ---
@@ -310,7 +305,7 @@ Van ACC 18.10, is **XtkNewId** niet meer de standaardwaarde voor de opeenvolging
 
 >[!NOTE]
 >
->Een reeks waarnaar in een Adobe Campaign-schema wordt verwezen (bijvoorbeeld **NmsTrackingLogId** ), moet worden gekoppeld aan een SQL-functie die het aantal id&#39;s in de parameters retourneert, gescheiden door komma&#39;s. Deze functie moet ******GetNewXXXIds** worden genoemd, waar **XXX** de naam van de opeenvolging (**GetNewNmsTrackingLogIds** bijvoorbeeld) is. Bekijk de **postgres-nms.sql**-, **mssql-nms.sql** - of **oracle-nms.sql** -bestanden die bij de toepassing worden geleverd in de map **datakit/nms/eng/sql/** om het voorbeeld van een &#39;NmsTrackingLogId&#39;-sequentie voor elke database-engine te herstellen.
+>Een reeks waarnaar in een Adobe Campaign-schema wordt verwezen (bijvoorbeeld **NmsTrackingLogId** ), moet worden gekoppeld aan een SQL-functie die het aantal id&#39;s in de parameters retourneert, gescheiden door komma&#39;s. Deze functie moet ******GetNewXXXIds** worden genoemd, waar **XXX** de naam van de opeenvolging (**GetNewNmsTrackingLogIds** bijvoorbeeld) is. Bekijk de **postgres-nms.sql**-, **mssql-nms.sql** - of **oracle-nms.sql** -bestanden die bij de toepassing worden geleverd in de map **datakit/nms/eng/sql/** om het voorbeeld van het maken van een reeks &#39;NmsTrackingLogId&#39; voor elke database-engine te herstellen.
 
 Als u een unieke sleutel wilt declareren, vult u het kenmerk **Automatisch** (met de waarde &quot;true&quot;) in op het hoofdelement van het gegevensschema.
 
