@@ -1,24 +1,21 @@
 ---
-title: Driemaandelijkse lijstupdate die een stijgende vraag gebruikt
+solution: Campaign Classic
+product: campaign
+title: Driemaandelijkse lijstupdate met een incrementele query
 description: In dit geval wordt een incrementele query gebruikt om een lijst met ontvangers automatisch bij te werken.
-page-status-flag: never-activated
-uuid: 24d322e8-172c-4faa-8a1f-59085b390a76
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-discoiquuid: 31071cd2-7d97-4a4f-a6cc-5ac5b6178be5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# Driemaandelijkse lijstupdate die een stijgende vraag gebruikt {#quarterly-list-update}
+# Driemaandelijkse lijstupdate met een incrementele query {#quarterly-list-update}
 
 In het volgende voorbeeld wordt een [incrementele query](../../workflow/using/incremental-query.md) gebruikt om een lijst met ontvangers automatisch bij te werken. Deze ontvangers zijn gericht op seizoensgebonden marketingcampagnes.
 
