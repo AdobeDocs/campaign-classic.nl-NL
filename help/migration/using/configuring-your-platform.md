@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Uw platform configureren
-seo-title: Uw platform configureren
 description: Uw platform configureren
-seo-description: null
-page-status-flag: never-activated
-uuid: e6255e4b-c9c8-4ac9-9ee3-aaa4dc9e5ecf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
-discoiquuid: 4d2e765b-750b-457f-ad55-8bd6faaa86af
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 2%
+source-wordcount: '940'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +27,7 @@ Voorbeeldelementen om te controleren:
 * Het **tabelruimteattribuut** neemt standaard zijn waarden terug, met andere woorden die in de plaatsingstovenaar worden bepaald.
 * Als u een verwijzingsmening aan de lijst NmsRecipient hebt toegevoegd, moet u het schrappen alvorens zich te migreren.
 
-Deze waarschuwing geldt ook voor Oracle-gebruikers: als u de optie **usetimestamptz:1** tijdens een postupgrade hebt toegevoegd (zie [Tijdzones](../../migration/using/general-configurations.md#time-zones)), worden alle tabellen met ten minste één **datum+tijd** -veld opnieuw samengesteld.
+Deze waarschuwing heeft ook betrekking op Oracle-gebruikers: als u de optie **usetimestamptz:1** tijdens een postupgrade hebt toegevoegd (zie [Tijdzones](../../migration/using/general-configurations.md#time-zones)), worden alle tabellen met ten minste één **datum+tijd** -veld opnieuw samengesteld.
 
 ## Voor de migratie {#before-the-migration}
 
@@ -44,7 +39,7 @@ Bij het migreren naar Adobe Campaign v7 moeten de volgende elementen worden geco
 
    Raadpleeg de sectie [Tijdzones](../../migration/using/general-configurations.md#time-zones) als u de modus Meerdere tijdzones wilt gebruiken.
 
-   Als u Oracle als een database gebruikt, moet u controleren of de Oracle-tijdzonebestanden correct zijn gesynchroniseerd tussen de toepassingsserver en de databaseserver. For more on this, refer to the [Oracle](../../migration/using/general-configurations.md#oracle) section.
+   Als u Oracle als database gebruikt, moet u controleren of de Oracle-tijdzonebestanden correct zijn gesynchroniseerd tussen de toepassingsserver en de databaseserver. For more on this, refer to the [Oracle](../../migration/using/general-configurations.md#oracle) section.
 
 * Beveiligingszones
 
@@ -66,7 +61,7 @@ Bij het migreren naar Adobe Campaign v7 moeten de volgende elementen worden geco
 
    Als u migreert vanaf een v5.11-platform, moet u de structuurmappen opnieuw ordenen volgens de Adobe Campaign v6-normen. Raadpleeg de sectie Structuur [van de](../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure) Adobe Campaign v7-structuur voor meer informatie.
 
-* Interactie
+* Interaction
 
    Als u **Interactie** gebruikt, moet u alle 6.02 schemaverwijzingen schrappen die niet meer in v7 bestaan. For more information, refer to the [Interaction](../../migration/using/general-configurations.md#interaction) section.
 
@@ -132,7 +127,7 @@ Na het runnen van **postupgrade**, moeten de volgende elementen in aanmerking wo
 
    Als u migreert vanaf een v6.02-platform, kunt u aanvullende parameters definiëren om uw oude startpagina vanaf v6.02 te houden. Raadpleeg voor meer informatie de [gebruiksvriendelijkheid: Homepage en navigatiegedeelte](../../migration/using/specific-configurations-in-v6-02.md#user-friendliness--home-page-and-navigation) .
 
-* Interactie
+* Interaction
 
    Als u **Interactie** gebruikt, moet u om het even welke parameters na de migratie aanpassen. For more on this, refer to the [Interaction](../../migration/using/general-configurations.md#interaction) section.
 
