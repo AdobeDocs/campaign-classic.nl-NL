@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Machtigingen voor toegang tot een externe database
 description: Toegangsbevoegdheden externe database
-page-status-flag: never-activated
-uuid: b84359b9-c584-431d-80d5-71146d9b6854
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: connectors
-discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 translation-type: tm+mt
-source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 1%
@@ -32,7 +29,7 @@ Ten eerste, zodat de gebruiker bewerkingen kan uitvoeren op een externe database
 
       >[!NOTE]
       >
-      >Het **:base** -onderdeel is optioneel in Oracle.
+      >Het **:basisdeel** is optioneel in Oracle.
 
 1. Sla het benoemde recht op en koppel het aan de gekozen gebruiker vanuit het **[!UICONTROL Administration > Access Management > Operators]** knooppunt van de Adobe Campaign Explorer.
 
@@ -66,7 +63,7 @@ De gegevensbestandbeheerder moet deze rechten met de rechten aanpassen specifiek
 | **Toegang tot clientgegevens** | SELECTEREN OP (TOEKOMSTIGE) TABLE(S)- OF WEERGAVEBEVOEGDHEDEN | SELECT, bevoegdheid | SELECTEER OF SELECTEER EEN TABELBEVOEGDHEID | machtiging SELECTEREN | SELECT, bevoegdheid | SELECT, bevoegdheid |
 | **Toegang tot metagegevens** | SELECTEER INFORMATIE_SCHEMA-SCHEMA-voorrecht | SELECT, bevoegdheid | Geen bevoegdheid vereist voor gebruik van DESCRIBE-instructie | machtiging DEFINITIE WEERGEVEN | Geen bevoegdheid vereist voor het gebruik van de opdracht &quot;\d table&quot; | SELECT, bevoegdheid |
 
-|   | DB2 UDB | TeraData | InfiniDB | Sybase IQ / Sybase ASE | Netezza | Groenblauw | AsterData |
+|   | DB2 UDB | teradata | InfiniDB | sybase IQ/Sybase ASE | Netezza | Groenblauw | AsterData |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | **Verbinding maken met externe database** | CONNECT-autoriteit | CONNECT-bevoegdheid | Een gebruiker maken die is gekoppeld aan een externe host die ALLE PRIVILEGES heeft | Geen toestemming vereist om de instructie CONNECT te gebruiken | Geen bevoegdheid vereist | CONNECT-bevoegdheid | CONNECT-bevoegdheid |
 | **Tabellen maken** | CREATETAB-instantie | CREATE TABLE or TABLE, trefwoord | BEVOEGDHEID MAKEN | RESOURCE Authority en CREATE permission | TABLE-bevoegdheid | BEVOEGDHEID MAKEN | BEVOEGDHEID MAKEN |
