@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Voorwaardelijke content
-seo-title: Voorwaardelijke content
 description: Voorwaardelijke content
-seo-description: null
-page-status-flag: never-activated
-uuid: d1c38263-a163-448c-8822-8b3e776e45cf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
-discoiquuid: 167cc61a-fbc7-48cb-89ff-fbdbf9321c01
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 2%
+source-wordcount: '471'
+ht-degree: 4%
 
 ---
 
@@ -24,7 +19,7 @@ ht-degree: 2%
 
 Door voorwaardelijke inhoudsgebieden te vormen, kunt u dynamische verpersoonlijking tot stand brengen die op het profiel van de ontvanger bijvoorbeeld wordt gebaseerd. Tekstblokken en/of afbeeldingen worden vervangen wanneer aan een bepaalde voorwaarde wordt voldaan.
 
-![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](#conditionnal-content-video)
+![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](#conditionnal-content-video)
 
 
 ## Voorwaarden in een e-mail gebruiken {#using-conditions-in-an-email}
@@ -114,7 +109,7 @@ In het onderstaande voorbeeld leert u hoe u een meertalige e-mail kunt maken. De
    >
    >Aangezien er geen alternatieve versie is gedefinieerd in de e-mailinhoud, moet u de doelpopulatie filteren voordat u de e-mail verzendt.
 
-## Een meertalige nieuwsbrief met voorwaardelijke inhoud maken {#conditionnal-content-video}
+## Een meertalige nieuwsbrief maken met voorwaardelijke content {#conditionnal-content-video}
 
 Leer hoe u voorwaardelijke inhoud aan een levering kunt toevoegen op het voorbeeld van een meertalige nieuwsbrief.
 
