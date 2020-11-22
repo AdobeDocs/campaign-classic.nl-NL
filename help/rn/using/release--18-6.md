@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Release 18.6
-seo-title: Release 18.6
 description: Release 18.6
-seo-description: null
-page-status-flag: never-activated
-uuid: 72941f8f-0b84-4868-a768-8aa972459ef2
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rn
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 79a6d3cf-2425-49b9-9b92-b56be26438bf
 translation-type: tm+mt
-source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '794'
 ht-degree: 6%
 
 ---
@@ -42,7 +37,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> Query-streepjescodes<br /> </td> 
-   <td> <p>Wanneer meerdere Campagnegebruikers verbinding maken met dezelfde externe FDA Teradata-account, kunt u nu een queryband (sleutel/waarde-paren) doorgeven die specifiek is voor elke gebruiker. Elke keer dat een campagnegebruiker een query uitvoert in de Teradata-database, kan Adobe Campaign nu metagegevens verzenden die aan de gebruiker zijn gekoppeld. Deze gegevens, die bestaan uit een lijst met sleutels en waarden, kunnen vervolgens door Teradata-beheerders worden gebruikt voor auditdoeleinden of voor het beheren van toegangsrechten, bijvoorbeeld.</p><p>Raadpleeg de <a href="../../installation/using/external-accounts.md">gedetailleerde documentatie</a> voor meer informatie.</p> </td>
+   <td> <p>Wanneer meerdere Campagnegebruikers verbinding maken met dezelfde externe FDA Teradata-account, kunt u nu een queryband (sleutel-/waardeparen) doorgeven die specifiek is voor elke gebruiker. Elke keer dat een campagnegebruiker een query uitvoert op de Teradata-database, kan Adobe Campaign nu metagegevens verzenden die aan de gebruiker zijn gekoppeld. Deze gegevens, die bestaan uit een lijst met sleutels en waarden, kunnen vervolgens door Teradata-beheerders worden gebruikt voor controledoeleinden of om toegangsrechten te beheren, bijvoorbeeld.</p><p>Raadpleeg de <a href="../../installation/using/external-accounts.md">gedetailleerde documentatie</a> voor meer informatie.</p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -65,12 +60,12 @@ ht-degree: 6%
 
 Query-streepjescodes
 
-Een specifieke sleutel (PROXYUSER of PROXYROLE) wordt gebruikt om een gebruiker of rol van Tera-gegevens aan een gebruiker van de Campagne te associëren. Er is een nieuwe machtiging toegevoegd om deze proxygebruiker/rol te gebruiken. U moet de GRANT CONNECT via het toegangsrecht toevoegen aan de databaseaccount (de die is gedefinieerd in de externe account van Teradata).
+Een specifieke sleutel (PROXYUSER of PROXYROLE) wordt gebruikt om een Teradata-gebruiker of -rol te koppelen aan een Campagnegebruiker. Er is een nieuwe machtiging toegevoegd om deze proxygebruiker/rol te gebruiken. U moet de GRANT CONNECT via het toegangsrecht toevoegen aan de databaseaccount (de die is gedefinieerd in de externe Teradata-account).
 
-Er is een nieuw tabblad toegevoegd aan de externe accounts van Teradata. Het **[!UICONTROL Query banding]** tabblad bevat de volgende opties:
+Er is een nieuw tabblad toegevoegd aan de externe Teradata-accounts. Het **[!UICONTROL Query banding]** tabblad bevat de volgende opties:
 
 * **[!UICONTROL Active]**: Schakel dit selectievakje in om de functie te activeren.
-* **[!UICONTROL Default]**: Voer een standaardquerybinding in die wordt gebruikt als een gebruiker geen querybinding heeft. Als er geen standaardvraagband wordt bepaald, zullen de gebruikers die geen bijbehorende vraagband hebben geen Tera-gegevens kunnen gebruiken.
+* **[!UICONTROL Default]**: Voer een standaardquerybinding in die wordt gebruikt als een gebruiker geen querybinding heeft. Als er geen standaardquerybanding is gedefinieerd, kunnen de gebruikers die geen querybanding hebben, Teradata niet gebruiken.
 * **[!UICONTROL Users]**: voor elke gebruiker, specificeer een vraagband. U kunt zoveel sleutel-/waardeparen toevoegen als u nodig hebt. Bijvoorbeeld: &quot;priority=1;workload=high;&quot;
 
 Raadpleeg de volgende artikelen voor meer informatie over querybinding:
