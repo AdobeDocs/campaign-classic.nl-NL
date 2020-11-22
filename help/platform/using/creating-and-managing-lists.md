@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Lijsten maken en beheren
 description: Leer lijsten maken en beheren
-page-status-flag: never-activated
-uuid: 17d1a7d0-a728-490e-a820-19f469fddbcd
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: profile-management
-discoiquuid: 9fc243b2-7b7b-4083-83f6-04c12336492d
 translation-type: tm+mt
-source-git-commit: 208bac758542db8dd514bda80c8c735897fcefec
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '789'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -38,7 +35,7 @@ Er zijn twee typen lijsten beschikbaar in Adobe Campaign:
 
    In tegenstelling tot de **[!UICONTROL Group]** typelijst, kan deze typelijst automatisch met een **[!UICONTROL Scheduler]** activiteit worden bijgewerkt. Raadpleeg de pagina **[!UICONTROL List]** voor een voorbeeld van het maken van [](../../workflow/using/list-update.md)typelijsten.
 
-![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](#create-list-video)
+![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](#create-list-video)
 
 ## Een profiellijst maken op basis van een groep {#creating-a-profile-list-from-a-group}
 
