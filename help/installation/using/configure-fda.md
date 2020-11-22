@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: FDA-connectors configureren
 description: Meer informatie over configuratiestappen voor FDA
-page-status-flag: never-activated
-uuid: b84359b9-c584-431d-80d5-71146d9b6854
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: connectors
-discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 translation-type: tm+mt
-source-git-commit: 3d6515ca291715e5e02f9b5404803e9087555284
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 3%
@@ -46,7 +43,7 @@ Afhankelijk van de externe databases die u vanuit Adobe Campaign wilt kunnen ope
 
 Volg de onderstaande koppelingen voor meer informatie:
 
-* [Azure Synapse](../../installation/using/configure-fda-synapse.md)
+* [azure synapse](../../installation/using/configure-fda-synapse.md)
 
 * [Snowflake](../../installation/using/configure-fda-snowflake.md)
 
@@ -56,8 +53,8 @@ Volg de onderstaande koppelingen voor meer informatie:
 
 * [Netezza](../../installation/using/configure-fda-netezza.md)
 
-* [Sybase IQ](../../installation/using/configure-fda-sybase.md)
+* [sybase IQ](../../installation/using/configure-fda-sybase.md)
 
-* [TeraData](../../installation/using/configure-fda-teradata.md)
+* [Teradata](../../installation/using/configure-fda-teradata.md)
 
 * [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
