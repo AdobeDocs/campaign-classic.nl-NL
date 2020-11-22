@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Pakketten installeren met Linux
-seo-title: Pakketten installeren met Linux
 description: Pakketten installeren met Linux
-seo-description: null
-page-status-flag: never-activated
-uuid: d83f00b5-500b-406a-a3d6-ea5639f244f0
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
-discoiquuid: 04faa9f3-d160-4060-b26e-44333f2faf71
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
@@ -257,7 +252,7 @@ systemctl stop nlserver
 systemctl start nlserver
 ```
 
-### Oracle-client in Linux {#oracle-client-in-linux}
+### Oracle Client in Linux {#oracle-client-in-linux}
 
 Wanneer u Oracle met Adobe Campaign gebruikt, moet u de Oracle-clientlagen in Linux configureren.
 
@@ -288,7 +283,7 @@ Wanneer u Oracle met Adobe Campaign gebruikt, moet u de Oracle-clientlagen in Li
    ln -s libclntsh.so.10.1 libclntsh.so
    ```
 
-Als u een probleem ondervindt, moet u ervoor zorgen dat de pakketten die in de installatiedocumentatie [van](https://www.oracle.com/pls/db112/portal.portal_db?selected=11) Oracle worden vermeld, correct zijn geïnstalleerd.
+Als u problemen ondervindt, moet u ervoor zorgen dat de pakketten die in de installatiedocumentatie [van](https://www.oracle.com/pls/db112/portal.portal_db?selected=11) Oracle worden vermeld, correct zijn geïnstalleerd.
 
 ## Installatiecontroles {#installation-checks}
 
