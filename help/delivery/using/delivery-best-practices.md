@@ -1,19 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Aanbevolen werkwijzen voor het leveren van campagnes
-seo-title: Best practices voor levering
-page-status-flag: never-activated
-uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 6%
+source-wordcount: '94'
+ht-degree: 24%
 
 ---
 
@@ -71,7 +67,7 @@ Leer beste praktijken met betrekking tot leveringsontwerp en verzendend met Adob
     </a>
     <div>
       <a href="define-the-right-audience.md">
-    <strong>Het juiste publiek definiëren</strong>
+    <strong>De juiste doelgroep definiëren</strong>
     </a>
     </div>
     <p>
@@ -97,7 +93,7 @@ Leer beste praktijken met betrekking tot leveringsontwerp en verzendend met Adob
     </a>
     <div>
       <a href="track-and-monitor.md">
-    <strong>Track en monitor</strong>
+    <strong>Bijhouden en bewaken</strong>
     </a>
     </div>
     <p>
