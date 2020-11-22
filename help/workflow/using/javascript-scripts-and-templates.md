@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: JavaScript-scripts en -sjablonen
-seo-title: JavaScript-scripts en -sjablonen
 description: JavaScript-scripts en -sjablonen
-seo-description: null
-page-status-flag: never-activated
-uuid: d341a892-dc71-4413-acb8-9cba372b38cf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
-discoiquuid: 8867d9c3-2ce4-4611-8c88-ce505c3a01d1
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1234'
 ht-degree: 2%
 
 ---
@@ -162,7 +157,7 @@ In dit voorbeeld wordt een instantievariabele gebruikt om dynamisch het gesplits
 
 In dit voorbeeld wordt getoond dat de activiteit na **JavaScript-code** de instantievariabelen en gebeurtenisvariabelen benadert, maar dat de taakvariabelen van buitenaf niet toegankelijk zijn (&#39;undefined&#39;).
 
-### Instantievariabelen aanroepen in een query {#calling-an-instance-variable-in-a-query}
+### Een instantievariabele in een query aanroepen {#calling-an-instance-variable-in-a-query}
 
 Nadat u een instantievariabele hebt opgegeven in een activiteit, kunt u deze opnieuw gebruiken in een workflowquery.
 
