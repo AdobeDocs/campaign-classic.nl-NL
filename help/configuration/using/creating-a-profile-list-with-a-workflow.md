@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Een profiellijst maken met een workflow
 description: Leer hoe u een profiellijst maakt in een workflow
-page-status-flag: never-activated
-uuid: a30f7217-fe82-4290-b1e6-e7a126a316c1
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-discoiquuid: ba42c3cf-31fc-4fbc-b230-a2b3982328c5
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 7%
+ht-degree: 10%
 
 ---
 
@@ -24,7 +21,7 @@ Als u een **[!UICONTROL List]** typelijst wilt maken op basis van de nieuwe tabe
 
 Raadpleeg [deze sectie](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign)voor meer informatie over lijsten in Campagne.
 
-![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
+![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
 
 Voer de onderstaande stappen uit om een doelworkflow te maken en ontvangers bij te werken in een aangepaste tabel voor ontvangers:
 
