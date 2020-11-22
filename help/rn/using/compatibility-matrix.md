@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Compatibiliteitsmatrix
 description: Campaign Classic-compatibiliteitsmatrix
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 75ab345e3b9360229ecc3ba9529a33e320228fa0
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 13%
@@ -105,7 +102,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>De toepassing is goedgekeurd voor de Java Development Kit (JDK) die door Oracle is ontwikkeld en voor OpenJDK.</p>
+<p>De aanvraag is goedgekeurd voor de Java Development Kit (JDK) die is ontwikkeld door Oracle en voor OpenJDK.</p>
 </td>
 </tr>
 <tr>
@@ -187,7 +184,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 <p>API-versie 15</p>
 </td>
 </tr>
-<tr><td>Oracle On Demand-API</td>
+<tr><td>Oracle On-demand-API</td>
 <td>
 <p>Web Services v1.0 API</p>
 </td>
@@ -206,7 +203,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 <table>
 <tbody>
 <tr>
-<td>Microsoft Azure Synapse Analytics</td>
+<td>Microsoft Azure synapse Analytics</td>
 <td> </td>
 </tr>
 <tr>
@@ -248,7 +245,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 </td>
 </tr>
 <tr>
-<td>TeraData</td>
+<td>Teradata</td>
 <td>
 <p>16.20</p>
 <p>16</p>
