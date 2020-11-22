@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Een levering controleren
-seo-title: Een levering controleren
 description: Een levering controleren
-seo-description: null
-page-status-flag: never-activated
-uuid: 7cb409eb-a01c-4b4d-bb62-760e0bafdc8a
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2562'
+source-wordcount: '2559'
 ht-degree: 2%
 
 ---
@@ -200,7 +195,7 @@ Tijdens het verzenden van een levering krijgt u mogelijk de volgende status op h
  </tbody> 
 </table>
 
-Raadpleeg de handleiding [over de beste praktijken bij](../../delivery/using/deliverability-key-points.md) Adobe Campaign- [levering en naar](../../delivery/using/about-deliverability.md)deze paginavoor meer informatie over het optimaliseren van de leverbaarheid van uw Adobe Campaign-e-mails.
+Raadpleeg de handleiding [over de beste praktijken bij](../../delivery/using/deliverability-key-points.md) Adobe Campaign- [levering en naar](../../delivery/using/about-deliverability.md)deze paginavoor meer informatie over de manier waarop u de leverbaarheid van uw Adobe Campaign-e-mails kunt optimaliseren.
 
 ### Status in behandeling {#pending-status}
 
