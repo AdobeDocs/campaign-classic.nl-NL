@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Algemene import- en exportbewerkingen
-seo-title: Algemene import- en exportbewerkingen
 description: Algemene import- en exportbewerkingen
-seo-description: null
-page-status-flag: never-activated
-uuid: e98753bb-1f14-4ec7-aa3b-d5e4f1ebaef7
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-discoiquuid: a21576c7-e94c-4fe1-9e31-d89116e427f6
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '485'
 ht-degree: 3%
 
 ---
@@ -40,7 +35,7 @@ U kunt:
 >
 >Gegevensimport in campagne moet via workflows worden uitgevoerd om de consistentie van gegevens te waarborgen en de efficiëntie te verbeteren. Raadpleeg voor meer informatie de secties [Gegevens](../../workflow/using/importing-data.md)importeren, Beste werkwijzen [](../../workflow/using/importing-data.md#best-practices-when-importing-data) importeren en Sjabloonvoorbeeld [](../../workflow/using/importing-data.md#setting-up-a-recurring-import) importeren.
 
-![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
+![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
 
 ## Creating a job template {#creating-a-job-template}
 
