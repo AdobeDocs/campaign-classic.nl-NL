@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Splitsen
 description: Meer informatie over de activiteit van de gesplitste workflow
-page-status-flag: never-activated
-uuid: 00dc3436-e271-4512-8f29-71a55213afc3
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-discoiquuid: 9eadfda0-0614-4e4e-aed0-26f0b9222fbd
 translation-type: tm+mt
-source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 0%
@@ -216,7 +213,7 @@ Check the **[!UICONTROL Generate complement]** option if you wish to exploit the
 
 Deze optie werkt alleen correct als de binnenkomende gegevens een primaire sleutel hebben.
 
-Bijvoorbeeld, als de gegevens direct van een extern gegevensbestand zoals Netezza (die het begrip van een index niet steunt) via een **[!UICONTROL Data loading (RDBMS)]** activiteit worden gelezen, zal de aanvulling die door de **[!UICONTROL Split]** activiteit wordt geproduceerd onjuist zijn.
+Als de gegevens bijvoorbeeld rechtstreeks worden gelezen vanuit een externe database, zoals Netezza (die het begrip index niet ondersteunt) via een **[!UICONTROL Data loading (RDBMS)]** activiteit, is de aanvulling die door de **[!UICONTROL Split]** activiteit wordt gegenereerd onjuist.
 
 U voorkomt dit door een **[!UICONTROL Enrichment]** activiteit vlak voor de **[!UICONTROL Split]** activiteit te slepen en neer te zetten. In de **[!UICONTROL Enrichment]** activiteit, controleer **[!UICONTROL Keep all additional data from the main set]** en specificeer in de extra gegevens de kolommen die u voor het vormen van de filters van de **[!UICONTROL Split]** activiteit wilt gebruiken. De gegevens van de binnenkomende overgang van de **[!UICONTROL Split]** activiteit worden dan plaatselijk opgeslagen in een tijdelijke lijst op de server van Adobe Campaign en de aanvulling kan correct worden geproduceerd.
 
