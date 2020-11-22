@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Seed-adressen
-seo-title: Seed-adressen
 description: Seed-adressen
-seo-description: null
-page-status-flag: never-activated
-uuid: 80ab5abc-3ae0-484d-88c0-be039aac360d
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-discoiquuid: b49acfd0-b601-4694-88e3-cc0a169cb866
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 9%
 
 ---
@@ -28,7 +23,7 @@ Een van de belangrijkste redenen om ze te gebruiken is de bescherming **van** je
 
 Bovendien laten de zaadadressen u **voorproef en test de leveringenverpersoonlijking en het teruggeven** alvorens zij verzenden, door hen proefdrukken te verzenden (zie het [Gebruiken van zaadadressen als proef](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof).
 
-![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](../../delivery/using/steps-defining-the-target-population.md#seeds-and-proofs-video)
+![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](../../delivery/using/steps-defining-the-target-population.md#seeds-and-proofs-video)
 
 De zaadadreseigenschap heeft de volgende voordelen:
 
