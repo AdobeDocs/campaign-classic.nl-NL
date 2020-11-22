@@ -1,16 +1,13 @@
 ---
-title: Interactie- en aanbiedingsbeheer
+solution: Campaign Classic
+product: campaign
+title: Interaction en aanbiedingenbeheer
 description: Verzend de beste voorstellen naar uw contacten die op geschiktheidsregels worden gebaseerd.
-page-status-flag: never-activated
-uuid: 70720baa-e64e-4fb6-8301-fe3920791f79
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
-discoiquuid: 9fe22450-057c-44b4-ab73-4027a2ddb20c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 6%
@@ -18,7 +15,7 @@ ht-degree: 6%
 ---
 
 
-# Interactie- en aanbiedingsbeheer{#interaction-and-offer-management}
+# Interaction en aanbiedingenbeheer{#interaction-and-offer-management}
 
 De interactie laat u in echt - tijd tijdens een interactie met een bepaald contact (een klant of een doel) antwoorden door hen één of verscheidene aangepaste aanbiedingen te maken. Dit kunnen bijvoorbeeld eenvoudige communicatieberichten, speciale aanbiedingen voor een of meerdere producten of een service zijn.
 
