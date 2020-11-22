@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Release 19.2
-seo-title: Release 19.2
 description: Release 19.2
-seo-description: null
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 3d6515ca291715e5e02f9b5404803e9087555284
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1317'
 ht-degree: 8%
 
 ---
@@ -108,7 +103,7 @@ _2 december 2019_
 * Geheugenverbruik optimaliseren voor pushmeldingen.
 * Voor optimalisatie van prestaties en opslag is de verwerking van het bestand **logins.log** verbeterd. Het bestand wordt nu in meerdere bestanden gesplitst, elke dag met maximaal 365 bestanden. [Meer informatie](../../production/using/log-files.md)
 * De externe rekening van CRM van de Dynamica van Microsoft kan nu worden gevormd gebruikend wachtwoordgeloofsbrieven (wachtwoord + gebruikersbenaming) of certificaat (privé sleutel). [Meer informatie](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
-* Er zijn enkele verbeteringen toegevoegd aan de Hadoop FDA-connector om de betrouwbaarheid te verbeteren
+* Er zijn enkele verbeteringen toegevoegd aan de Hadoop FDA-aansluiting om de betrouwbaarheid te verbeteren
 * Er is een specifieke hulplijn toegevoegd om schijfruimte te controleren voordat u openbare bronnen op de server kunt uploaden.
 * Er zijn nieuwe [campagneopties](../../installation/using/configuring-campaign-options.md) toegevoegd:
    * Met de **configuratieoptie WdbcKillSessionPolicy** kunt u het **gedrag Onvoorwaardelijk stoppen** op alle workflows en PostSQL-databasequery&#39;s toepassen.
@@ -137,7 +132,7 @@ De build 1.0.26 van de iOS SDK is nu beschikbaar. In deze nieuwe build hebben we
 
 * Probleem verholpen waarbij het programma vastloopt als het veld Gekoppelde tabel **toevoegen leeg was in de activiteit van de workflow voor het laden van** gegevens (RDBMS) **** . (NEO-12213)
 * Probleem verholpen dat ertoe kon leiden dat bepaalde berichten niet werden verwerkt door de server voor middeluitgaven. (NEO-12395)
-* Probleem verholpen in de workflow voor het opschonen van databases bij gebruik van de optie voor het weergeven van query&#39;s met metagegevens. (NEO-12399)
+* Probleem verholpen in de workflow voor het opschonen van databases bij gebruik van de optie voor het weergeven van query&#39;s met Teradata. (NEO-12399)
 * Probleem opgelost dat invloed had op de leveringsanalyse met typologieregel, waaronder ne.jp domain. (NEO-12609)
 * Probleem verholpen met betrekking tot SMS over TLS-updates die een restrictiever certificaatbeleid impliceerden. Deze updates kunnen leiden tot een verbindingsfout tussen marketing- en midsourcingservers in het geval van een verouderd certificaat. (NEO-17698)
 * Probleem verholpen met het gebruik van de knop Verbinding **** testen op een externe account in een omgeving voor midsourcing met vault-verificatie. (NEO-12722)
@@ -162,7 +157,7 @@ De build 1.0.26 van de iOS SDK is nu beschikbaar. In deze nieuwe build hebben we
 * Probleem verholpen dat invloed had op de CRM-connector met Salesforce. (NEO-17712)
 * Probleem met time-out verholpen bij het importeren van gegevens uit een externe SFTP. (NEO-19723)
 * Probleem verholpen bij toegang tot voorspellende modellen. (NEO-19713)
-* Probleem verholpen dat invloed had op willekeurige steekproeven in de **gesplitste** werkstroomactiviteit met de Hadoop FDA-database. (NEO-16636)
+* Probleem verholpen dat invloed had op willekeurige steekproeven in de **gesplitste** workflowactiviteit met de Hadoop FDA-database. (NEO-16636)
 * Oplossing voor een regressie op Oracle waarbij sommige functies na de upgrade als ongeldig werden beschouwd. (NEO-12759)
 
 
