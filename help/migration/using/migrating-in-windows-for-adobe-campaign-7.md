@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Migreren in Windows voor Adobe Campaign 7
-seo-title: Migreren in Windows voor Adobe Campaign 7
 description: Migreren in Windows voor Adobe Campaign 7
-seo-description: null
-page-status-flag: never-activated
-uuid: 74464400-bdd4-42f8-bcbe-ace7095ae4e4
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
-discoiquuid: f459dc07-b7db-4526-b428-852b51c9c00e
 translation-type: tm+mt
-source-git-commit: d509dc584cd4ae17c6dda85c09fceee8c6162dba
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1534'
 ht-degree: 1%
 
 ---
@@ -82,7 +77,7 @@ In de eerste plaats moeten alle processen met toegang tot de database op alle be
    taskkill /IM nlserver* /T
    ```
 
-1. Als sommige processen na een paar minuten nog actief zijn, kunt u ze forceren te sluiten met de opdracht:
+1. Als sommige processen na een paar minuten nog actief zijn, kunt u ze dwingen te sluiten met de opdracht:
 
    ```
    taskkill /F /IM nlserver* /T
