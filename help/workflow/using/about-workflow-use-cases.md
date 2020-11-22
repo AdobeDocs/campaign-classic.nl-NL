@@ -1,21 +1,18 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Gebruiksscenario’s voor workflows
 description: Lees meer over gebruiksgevallen die u kunt uitvoeren met Campaign Classic-workflows.
-page-status-flag: never-activated
-uuid: 7c1e8cea-90d0-491f-ab8f-6cd69f8a6c3b
-contentOwner: sauviat
-products: SG_CAMPAIGN/STANDARD
 audience: workflow
 content-type: reference
 topic-tags: about-workflows-and-data-management
-discoiquuid: 40503917-7a53-4d99-96a4-57aa9e98ec87
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 00a9b7def9d0ad0190c389c6bcde431f8e2f2b44
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 46%
+ht-degree: 66%
 
 ---
 
@@ -36,7 +33,7 @@ Ze helpen u de verschillende contexten te ontdekken waarin workflows kunnen word
 * [Leveringscontent laden](../../workflow/using/loading-delivery-content.md)
 * [Workflow voor levering tussen kanalen](../../workflow/using/cross-channel-delivery-workflow.md)
 * [E-mailverrijking met aangepaste datumvelden](../../workflow/using/email-enrichment-with-custom-date-fields.md)
-* [Automatisch content maken, editie en publiceren automatiseren](../../delivery/using/automating-via-workflows.md#examples)
+* [Het maken, bewerken en publiceren van content automatiseren](../../delivery/using/automating-via-workflows.md#examples)
 
 ## Controle {#monitoring}
 
@@ -57,9 +54,9 @@ Ze helpen u de verschillende contexten te ontdekken waarin workflows kunnen word
 * [Werken met samenvoegingen](../../workflow/using/using-aggregates.md)
 * [Gegevens importeren die zijn versleuteld met een toets die is gegenereerd door het Configuratiescherm](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
 * [Gegevens coderen en exporteren met een sleutel die is geïnstalleerd in het Configuratiescherm](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
-* [Driemaandelijkse lijstupdate die een stijgende vraag gebruikt](../../workflow/using/quarterly-list-update.md)
+* [Driemaandelijkse lijstupdate met een incrementele query](../../workflow/using/quarterly-list-update.md)
 
-## Doelstelling {#designing-queries}
+## Targeting {#designing-queries}
 
 <img src="assets/do-not-localize/icon_filter.svg" width="60px">
 
@@ -71,5 +68,5 @@ Ze helpen u de verschillende contexten te ontdekken waarin workflows kunnen word
 * [Een berekend veld voor een opsommingstype toevoegen](../../workflow/using/adding-enumeration-type-calculated-field.md)
 * [Een filter maken](../../workflow/using/creating-a-filter.md)
 * [Gedupliceerde ontvangers filteren](../../workflow/using/filtering-duplicated-recipients.md)
-* [Instantievariabelen aanroepen in een query](../../workflow/using/javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)
+* [Een instantievariabele in een query aanroepen](../../workflow/using/javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)
 * [Een gesplitst percentage toepassen op een populatie](../../workflow/using/javascript-scripts-and-templates.md#example)
