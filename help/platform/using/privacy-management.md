@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Privacybeheer
 description: Meer informatie over privacybeheer
-page-status-flag: never-activated
-uuid: a044bbea-521d-4c1e-8aab-7d51a87fc94b
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: 9240b6e194dbc26fbf37a9ecf88a1ae03f9e7a75
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 1%
@@ -74,7 +71,7 @@ Adobe Campaign kent sinds het begin van zijn goedkeuring de kenmerken die het mo
 
 Raadpleeg de [gedetailleerde documentatie](../../delivery/using/managing-subscriptions.md)voor meer informatie over contentbeheer.
 
-Naast de hulpprogramma&#39;s voor het beheer van toestemmingen die Adobe Campaign biedt, kunt u nagaan of een consument heeft gekozen voor de verkoop van persoonlijke gegevens. Zie [deze sectie](../../platform/using/privacy-requests.md##sale-of-personal-information-ccpa).
+Naast de hulpprogramma&#39;s voor het beheer van toestemming die Adobe Campaign biedt, kunt u nagaan of een consument heeft gekozen voor de verkoop van persoonlijke gegevens. Zie [deze sectie](../../platform/using/privacy-requests.md##sale-of-personal-information-ccpa).
 
 ### Dataretentie {#data-retention}
 
