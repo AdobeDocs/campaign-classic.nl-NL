@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Interactieve inhoud definiëren in Adobe Campaign Classic
 description: Leer hoe u interactieve en dynamische e-mailinhoud kunt definiëren met AMP in Adobe Campaign Classic.
-page-status-flag: never-activated
-uuid: ddcc2e3b-e251-4a7a-a22a-28701522839f
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 translation-type: tm+mt
-source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -47,7 +44,7 @@ AMP for Email is compatibel met bestaande e-mails. De AMP-versie van het bericht
 
 Raadpleeg de documentatie bij [](https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email)AMP-ontwikkelaars voor meer informatie over de AMP voor e-mailindeling, specificatie en vereisten.
 
-![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](#amp-email-video)
+![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](#amp-email-video)
 
 ## Belangrijke stappen voor het gebruik van AMP voor e-mail met Adobe Campaign {#key-steps-to-use-amp}
 
