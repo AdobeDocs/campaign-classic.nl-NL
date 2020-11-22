@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Profielen exporteren en importeren
-seo-title: Profielen exporteren en importeren
 description: Profielen exporteren en importeren
-seo-description: null
-page-status-flag: never-activated
-uuid: 94915370-d9b4-4c03-be8f-c30c3006171a
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: profile-management
-discoiquuid: 0325ab0f-394e-404b-9f4a-db3cc18d2493
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 14%
+source-wordcount: '132'
+ht-degree: 15%
 
 ---
 
@@ -24,7 +19,7 @@ ht-degree: 14%
 
 U kunt workflows [gebruiken](#use-workflows) om ontvangersprofielen te importeren of te exporteren naar een Adobe Campaign-database, of om [generieke import- of exporttaken](#create-jobs)in te stellen.
 
-![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](#import-profiles-video)
+![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](#import-profiles-video)
 
 ## Workflows gebruiken{#use-workflows}
 
