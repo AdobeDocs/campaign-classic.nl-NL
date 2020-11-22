@@ -1,26 +1,21 @@
 ---
-title: Gehoste model
-seo-title: Gehoste model
-description: Gehoste model
-seo-description: null
-page-status-flag: never-activated
-uuid: b8db3c93-ccba-465a-8b75-921d7266c4e4
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
+solution: Campaign Classic
+product: campaign
+title: Gehost model
+description: Gehost model
 audience: installation
 content-type: reference
 topic-tags: hybrid-and-hosted-models
-discoiquuid: ada27825-42bd-48c7-bc03-a619f1fa9463
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 9%
+source-wordcount: '86'
+ht-degree: 6%
 
 ---
 
 
-# Gehoste model{#hosted-model}
+# Gehost model{#hosted-model}
 
 Als ontvangen klant, worden de meeste installatie en configuratiestappen uitgevoerd door Adobe. U kunt de volgende secties openen om uw implementatie aan te passen:
 
