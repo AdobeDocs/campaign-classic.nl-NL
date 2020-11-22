@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Lijstupdate
-seo-title: Lijstupdate
 description: Lijstupdate
-seo-description: null
-page-status-flag: never-activated
-uuid: 1446f115-3f64-4b95-8e04-6426ab1b8dab
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-discoiquuid: ca2cd5bf-78a2-4e43-955d-206f4474d1e0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 1%
+source-wordcount: '445'
+ht-degree: 3%
 
 ---
 
@@ -61,7 +56,7 @@ In het volgende voorbeeld volgt de activiteit van de lijstupdate een vraag die m
 
    De lijst met overeenkomende ontvangers wordt vervolgens gemaakt of bijgewerkt.
 
-Raadpleeg voor meer informatie de video [Een lijst met ontvangers](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) maken.
+Raadpleeg voor meer informatie de video [Een lijst met ontvangers](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) maken.
 
 ## Invoerparameters {#input-parameters}
 
