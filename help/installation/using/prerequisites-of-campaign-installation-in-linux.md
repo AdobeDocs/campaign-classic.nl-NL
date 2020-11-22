@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Vereisten voor installatie van Campaign in Linux
 description: Vereisten voor installatie van Campaign in Linux
-page-status-flag: never-activated
-uuid: 65c7af3f-ca1d-4255-b54a-6a3c83af40ae
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
-discoiquuid: 3e2ccb70-6c0c-435f-9c06-f3e5e40367bb
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 2%
@@ -191,19 +188,19 @@ U kunt een Linux RPM-pakket verkrijgen van het Oracle Technology Network.
 
 **Problemen oplossen en best practices**
 
-Problemen kunnen optreden na een Oracle-client of een serverupdate, wijziging van versie of bij de eerste installatie van de instantie.
+Problemen kunnen optreden na een Oracle-client of een serverupdate, een versiewijziging of bij de eerste installatie van de instantie.
 
-Als u op de clientconsole opmerkt dat er sprake is van onverwachte tijdsvertraging (een of meer uren) in logboeken, laatste verwerking van de workflow, volgende verwerking enzovoort, kan er een probleem zijn tussen de bibliotheek van de Oracle-client en de Oracle-server. Dergelijke problemen voorkomen
+Als u op de cliëntconsole opmerkt dat er onverwachte tijdvertraging (één of meerdere uren) in logboeken, werkschema laatste verwerking, volgende verwerking, etc. zijn, zou er een probleem tussen de bibliotheek van de cliënt van Oracle en de Server van Oracle kunnen zijn. Dergelijke problemen voorkomen
 
 1. Gebruik de **volledige client**.
 
-   Er zijn verschillende problemen vastgesteld bij het gebruik van de Oracle Instant Client-versie. Bovendien is het onmogelijk om het dossier van de Tijdzone op onmiddellijke cliënt te veranderen.
+   Er zijn verschillende problemen geïdentificeerd bij het gebruik van de Oracle Instant Client-versie. Bovendien is het onmogelijk om het dossier van de Tijdzone op onmiddellijke cliënt te veranderen.
 
 1. Zorg ervoor dat de **clientversie** en de versie **van de** databaseserver **hetzelfde** zijn.
 
-   Het is bekend dat het mixen van versies ondanks de compatibiliteitsmatrix en de aanbeveling van Oracle om client- en serverversies uit te lijnen problemen veroorzaakt.
+   Het is bekend dat het mengen van versies ondanks de compatibiliteitsmatrix van Oracle en de aanbeveling om client- en serverversies uit te lijnen problemen kan veroorzaken.
 
-   Controleer ook de waarde ORACLE_HOME om te controleren of deze naar de verwachte clientversie verwijst (voor het geval er meerdere versies op de computer zijn geïnstalleerd).
+   Controleer ook de ORACLE_HOME-waarde om te controleren of deze naar de verwachte clientversie verwijst (als er meerdere versies op de computer zijn geïnstalleerd).
 
 1. Zorg ervoor dat de client en de server hetzelfde **tijdzonebestand** gebruiken.
 
