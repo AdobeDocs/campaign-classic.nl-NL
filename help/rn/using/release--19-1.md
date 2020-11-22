@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Release 19.1
-seo-title: Release 19.1
 description: Release 19.1
-seo-description: null
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2623'
-ht-degree: 5%
+source-wordcount: '2622'
+ht-degree: 7%
 
 ---
 
@@ -62,8 +57,8 @@ _3 oktober 2019_
 
 **Verbeteringen**
 
-* Probleem verholpen bij gebruik van de CRM-connector voor Salesforce. (NEO-17712)
-* Probleem verholpen met een index die prestatieproblemen kan veroorzaken bij het verzenden van transactieberichten.
+* Er is een probleem verholpen met het gebruik van de CRM-connector voor Salesforce. (NEO-17712)
+* Er is een indexprobleem verholpen dat prestatieproblemen kon veroorzaken bij het verzenden van transactieberichten.
 * Oplossing voor een prestatieprobleem bij het verzenden van berichten. (NEO-17558)
 * Probleem verholpen dat ertoe kon leiden dat bepaalde berichten niet werden verwerkt door de server voor middeluitgaven. (NEO-12395)
 * Probleem verholpen waardoor de SQL-gegevensbeheeractiviteit niet volledig kon worden gebruikt (het genoemde recht SQL-gegevensbeheer ontbreekt).
@@ -122,7 +117,7 @@ _30 mei 2019_
  <tbody> 
   <tr> 
    <td> Configuratiescherm<br /> </td> 
-   <td> <p>Om uw werk als Admin gebruiker efficiënter te maken, beheer montages van uw servers SFTP door opslag te controleren, voeg IP adressen aan lijst van gewenste personen toe, en installeer de sleutels van SSH voor elke instantie. Houd er rekening mee dat het Configuratiescherm vanaf vandaag alleen beschikbaar is voor klanten die op AWS worden gehost (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">meld u vandaag</a>aan via de Experience Cloud).</p> <p>Raadpleeg voor meer informatie de <a href="https://docs.adobe.com/content/help/nl-NL/control-panel/using/control-panel-home.html">gedetailleerde documentatie</a> en de <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/control-panel/control-panel-overview.html">Hoe kan ik-video</a>. </p><p>Opmerking: U hoeft niet te upgraden naar de nieuwste build voor campagnes om toegang te krijgen tot het Configuratiescherm.</p> </td> 
+   <td> <p>Om uw werk als Admin gebruiker efficiënter te maken, beheer montages van uw servers SFTP door opslag te controleren, voeg IP adressen aan lijst van gewenste personen toe, en installeer de sleutels van SSH voor elke instantie. Houd er rekening mee dat het Configuratiescherm vanaf vandaag alleen beschikbaar is voor klanten die op AWS worden gehost (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">meld u vandaag</a>aan via de Experience Cloud).</p> <p>Raadpleeg voor meer informatie de <a href="https://docs.adobe.com/content/help/nl-NL/control-panel/using/control-panel-home.html">gedetailleerde documentatie</a> en de <a href="https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/control-panel/control-panel-overview.html">Hoe kan ik-video</a>. </p><p>Opmerking: U hoeft niet te upgraden naar de nieuwste build voor campagnes om toegang te krijgen tot het Configuratiescherm.</p> </td> 
   </tr> 
     <tr> 
    <td> Audittrail<br /> </td> 
@@ -211,7 +206,7 @@ _30 mei 2019_
 * Probleem verholpen waarbij u een webtoepassing niet kon verwijderen, zelfs als u de juiste toegangsrechten had. (NEO-12072)
 * Probleem verholpen waarbij enkele waarden zouden kunnen worden overschreven bij het exporteren en vervolgens importeren van een object via XML. De optie XtkExport_IncludeDefaultValues is toegevoegd. Wanneer ingesteld op Waar (standaardgedrag), worden alle waarden geëxporteerd. Wanneer ingesteld op Onwaar, worden wijzigingen overschreven met de standaardwaarde. (NEO-11979)
 * Probleem verholpen waarbij de **[!UICONTROL Alert]** workflowactiviteit mislukte wanneer een verrijkingsactiviteit werd toegevoegd na een query. (NEO-12132)
-* Probleem verholpen met Oracle-instellingen waarbij verschuivingen van de pijplijn (triggers) niet met succes zijn opgehaald uit de database waardoor duplicaten werden veroorzaakt. (NEO-12121)
+* Probleem verholpen met Oracle-instellingen waarbij verschuivingen van pijplijnen (triggers) niet correct zijn opgehaald uit de database waardoor duplicaten werden veroorzaakt. (NEO-12121)
 * Correctie van een probleem dat weergavefouten kon veroorzaken in draaitabellen bij gebruik van de integratie Analytics (NEO-12103)
 * Probleem opgelost met het rapport van de beschrijvende analyse. (NEO-11414)
 * Probleem verholpen met CRM-connectors wanneer de externe tabel een veld met een onderstrepingsteken in de naam bevatte.
