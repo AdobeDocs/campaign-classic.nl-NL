@@ -1,24 +1,20 @@
 ---
-title: Aangepaste inhoud maken
-seo-title: Aangepaste inhoud maken
-page-status-flag: never-activated
-uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
+solution: Campaign Classic
+product: campaign
+title: Gepersonaliseerde content maken
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1266'
 ht-degree: 7%
 
 ---
 
 
-# Aangepaste inhoud maken {#build-personalized-content}
+# Gepersonaliseerde content maken {#build-personalized-content}
 
 Probeer bij het ontwerpen van de inhoud van uw bericht algemene problemen te vermijden die ertoe kunnen leiden dat u de levering niet kunt uitvoeren. Meestal hebben mogelijke fouten te maken met [personalisatie](../../delivery/using/about-personalization.md), [opmaak](../../delivery/using/defining-the-email-content.md#message-content) en [afbeeldingen](../../delivery/using/defining-the-email-content.md#adding-images).
 
