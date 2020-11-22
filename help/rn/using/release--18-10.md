@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Release 18.10
-seo-title: Release 18.10
 description: Release 18.10
-seo-description: null
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2366'
 ht-degree: 7%
 
 ---
@@ -52,7 +47,7 @@ ht-degree: 7%
 
 * Probleem verholpen met het rekenproces van het volgen van indicatoren voor transactieberichten. (NEO-12529, NEO-12581)
 * Probleem verholpen met de HTTPRequest-API, die niet wachtte op alle callbacks om te voltooien. (NEO-12628)
-* Er zijn indexen toegevoegd aan de tijdelijke tabellen met coupons om het verzenden van leveringen te optimaliseren. (NEO-12437)
+* In de tijdelijke tabellen met coupons zijn indexen toegevoegd om het verzenden van leveringen te optimaliseren. (NEO-12437)
 * Probleem verholpen tijdens het analyseren van een bericht waarin ontvangers voor Japanse (.JP) domeinen als doel werden ingesteld. (NEO-12246)
 * In de integratie Analytics is het nu toegestaan AAM segmentgegevens op te halen met het teken %. (NEO-12025)
 * Probleem verholpen waarbij Tomcat vastliep tijdens het verzenden van pushberichten via HTTP2. (NEO-12701)
@@ -96,7 +91,7 @@ ht-degree: 7%
 * Probleem verholpen met uitputting van id&#39;s bij gebruik van zaadadressen in een levering. (NEO-11842)
 * Oplossing voor een probleem met de blokkering van clients dat zich kon voordoen bij het gebruik van complexe workflows. (NEO-11847)
 * Oplossing voor een weergaveprobleem bij het gebruik van een verdeling van waarden met een 1:N-koppeling. (NEO-11820)
-* Oracle-fout in Workflow Heatmap verholpen.
+* Probleem verholpen met een Oracle-fout in Workflow Heatmap.
 * Probleem opgelost bij het toevoegen van een voorstel in een verrijkingsactiviteit.
 * Probleem verholpen met een verbinding voor SQL-gegevensbeheer.
 * Probleem verholpen met het genereren van tabelnamen voor tijdelijke werkstromen in het geval van negatieve id&#39;s.
@@ -242,7 +237,7 @@ Deze indexveranderingen kunnen tot een toename van de tijd leiden die wordt vere
 * Probleem verholpen waarbij URL&#39;s werden gecodeerd als bijgehouden URL&#39;s in de aanvullende parameters van de levering van een Android-pushmelding. (NEO-11468)
 * Oplossing voor een scriptfout die optrad in het rapport Gebruikersactiviteiten bij het instellen van de parameters op &quot;Intervallen van één dag&quot; en &quot;Openen&quot;. (NEO-11655)
 * Probleem verholpen die optrad wanneer verbinding werd gemaakt met de server voor midsourcing of met Message Center via een geverifieerde webproxy. (NEO-11309)
-* Oplossing voor een Oracle-fout die optrad wanneer een nieuwe leveringscompositie werd opgeslagen na het selecteren van een element van een specifiek schema **op basis van een SQL-weergave**. (NEO-11682)
+* Probleem verholpen met een Oracle-fout die optrad wanneer een nieuwe compositie voor levering werd opgeslagen nadat een element van een specifiek schema was geselecteerd **op basis van een SQL-weergave**. (NEO-11682)
 * Probleem verholpen waarbij bestanden met foutieve positieven werden gegenereerd die een ZIP-bestand met een CSV-bestand verwerkten via een activiteit voor het laden van bestanden met de optie Decompressie.
 * xtkjoblog wordt nu gezuiverd door de opschoonfunctie.
 
