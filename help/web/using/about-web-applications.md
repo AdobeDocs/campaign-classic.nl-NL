@@ -1,24 +1,21 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Webapplicaties
 description: Maak en deel dynamische webtoepassingen, landingspagina's en enquêtes.
-page-status-flag: never-activated
-uuid: acfa6e5e-b503-4a1a-871e-e70007874f57
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: web
 content-type: reference
 topic-tags: web-applications
-discoiquuid: 3af763ad-6b0d-4f4c-aed1-c5e12efd4760
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '687'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
 
-# Aan de slag met webtoepassingen{#about-web-applications}
+# Aan de slag met webapplicaties{#about-web-applications}
 
 Met Adobe Campaign kunt u dynamische en interactieve webtoepassingen maken en publiceren met gegevens uit de database en inhoud die zijn aangepast aan de rechten van de verbonden gebruiker.
 
