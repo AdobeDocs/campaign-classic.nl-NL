@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Compatibiliteitsmatrix
 description: Compatibiliteitsmatrix
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 3402212bc6904dd5587d3b5a16fca7f4857fb908
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 16%
+ht-degree: 19%
 
 ---
 
@@ -98,7 +95,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 <td>
 <p>8</p>
 <p>9</p>
-<p>De toepassing is goedgekeurd voor de Java Development Kit (JDK) die door Oracle is ontwikkeld en voor OpenJDK.</p>
+<p>De aanvraag is goedgekeurd voor de Java Development Kit (JDK) die is ontwikkeld door Oracle en voor OpenJDK.</p>
 </td>
 </tr>
 <tr>
@@ -176,7 +173,7 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 >
 >PostgreSQL is de standaarddatabaseserver voor gehoste omgevingen.
 
-## CRM connectors{#CRMconnectors}
+## CRM-connectoren{#CRMconnectors}
 
 <table>
 <tbody>
@@ -193,7 +190,7 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 <p>API-versie 21</p>
 </td>
 </tr>
-<tr><td>Oracle On Demand-API</td>
+<tr><td>Oracle On-demand-API</td>
 <td>
 <p>Web Services v1.0 API</p>
 </td>
@@ -201,8 +198,8 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 <tr>
 <td>MS Dynamics</td>
 <td>
-<p>Soap API - Op locatie: 2007, 2015, 2016</p>
-<p>Soap API - Online: 2015, 2016</p>
+<p>Soap-API - On-premise: 2007, 2015, 2016</p>
+<p>Soap-API - Online: 2015, 2016</p>
 <p>Web API - Op locatie en online: 365, 2016, 2016 Update 1</p>
 </td>
 </tr>
@@ -214,7 +211,7 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 <table>
 <tbody>
 <tr>
-<td>Microsoft Azure Synapse Analytics</td>
+<td>Microsoft Azure synapse Analytics</td>
 <td> </td>
 </tr>
 <tr>
@@ -254,7 +251,7 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 </td>
 </tr>
 <tr>
-<td>TeraData</td>
+<td>Teradata</td>
 <td>
 <p>15.0</p>
 <p>15.10</p>
