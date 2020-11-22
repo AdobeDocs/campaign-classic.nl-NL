@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Campagnetypologieën
-seo-title: Campagnetypologieën
 description: Campagnetypologieën
-seo-description: null
-page-status-flag: never-activated
-uuid: ec89fb14-7e2f-4e9f-b7ab-3c2caf93a697
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
-discoiquuid: 72c5151c-ce1e-425a-9aee-beefe9f21a67
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 11%
+source-wordcount: '481'
+ht-degree: 12%
 
 ---
 
@@ -24,7 +19,7 @@ ht-degree: 11%
 
 De Optimalisering van de campagne is de module van Adobe Campaign die u de verzendende leveringen laat controleren, filtreren en controleren. Om conflicten tussen campagnes te vermijden kan Adobe Campaign diverse combinaties testen door specifieke beperkingsregels toe te passen. Dit garandeert dat de verzonden berichten voldoen aan de behoeften en verwachtingen van klanten en het communicatiebeleid van het bedrijf.
 
-![](assets/do-not-localize/how-to-video.png) [Deze functie in video detecteren](#typologies-video)
+![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](#typologies-video)
 
 >[!NOTE]
 >
