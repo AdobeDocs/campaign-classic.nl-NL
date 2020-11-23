@@ -167,7 +167,7 @@ Voor deze externe account moet de berekeningsformule voor bijgehouden URL&#39;s 
 
 ## Externe account voor Facebook connect {#facebook-connect-external-account}
 
-Met de **[!UICONTROL Facebook Connect]** externe account kunt u persoonlijke inhoud weergeven in uw Facebook-toepassingen, waardoor het eenvoudiger wordt om vooruitzichten te krijgen via dit sociale netwerk.
+Met de **[!UICONTROL Facebook Connect]** externe account kunt u gepersonaliseerde inhoud weergeven in uw Facebook-toepassingen, waardoor het eenvoudiger wordt om vooruitzichten te krijgen via dit sociale netwerk.
 
 Voor elke Facebook-toepassing moet u een **[!UICONTROL Facebook Connect]** type extern account maken. For more on this, refer to [page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
