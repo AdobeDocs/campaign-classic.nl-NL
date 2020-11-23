@@ -72,7 +72,7 @@ Met campagnes kunt u een reeks programma&#39;s beheren die uit verschillende mar
 
 Wanneer u een programma bewerkt, gebruikt u de onderstaande tabbladen om door het programma te bladeren en het te configureren.
 
-* Op het tabblad **Planning** wordt de agenda van de programma&#39;s weergegeven voor een maand, week of dag, afhankelijk van het tabblad waarop u klikt in de kalenderkop.
+* Op het tabblad **Planning** wordt de agenda van de programma&#39;s weergegeven voor een maand, week of dag, afhankelijk van het tabblad waarop u in de kalenderkop klikt.
 
    Indien nodig, kunt u een campagne, een programma, of een taak door deze pagina tot stand brengen.
 
