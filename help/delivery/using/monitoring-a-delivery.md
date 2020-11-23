@@ -195,7 +195,7 @@ Tijdens het verzenden van een levering krijgt u mogelijk de volgende status op h
  </tbody> 
 </table>
 
-Raadpleeg de handleiding [over de beste praktijken bij](../../delivery/using/deliverability-key-points.md) Adobe Campaign- [levering en naar](../../delivery/using/about-deliverability.md)deze paginavoor meer informatie over de manier waarop u de leverbaarheid van uw Adobe Campaign-e-mails kunt optimaliseren.
+Raadpleeg de handleiding [over de beste praktijken bij](../../delivery/using/deliverability-key-points.md) Adobe Campaign- [levering en naar](../../delivery/using/about-deliverability.md)deze paginavoor meer informatie over het optimaliseren van de leverbaarheid van uw Adobe Campaign-e-mails.
 
 ### Status in behandeling {#pending-status}
 
