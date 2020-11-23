@@ -47,7 +47,7 @@ ht-degree: 7%
 
 * Probleem verholpen met het rekenproces van het volgen van indicatoren voor transactieberichten. (NEO-12529, NEO-12581)
 * Probleem verholpen met de HTTPRequest-API, die niet wachtte op alle callbacks om te voltooien. (NEO-12628)
-* In de tijdelijke tabellen met coupons zijn indexen toegevoegd om het verzenden van leveringen te optimaliseren. (NEO-12437)
+* Er zijn indexen toegevoegd aan de tijdelijke tabellen met coupons om het verzenden van leveringen te optimaliseren. (NEO-12437)
 * Probleem verholpen tijdens het analyseren van een bericht waarin ontvangers voor Japanse (.JP) domeinen als doel werden ingesteld. (NEO-12246)
 * In de integratie Analytics is het nu toegestaan AAM segmentgegevens op te halen met het teken %. (NEO-12025)
 * Probleem verholpen waarbij Tomcat vastliep tijdens het verzenden van pushberichten via HTTP2. (NEO-12701)
