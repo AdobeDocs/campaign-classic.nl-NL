@@ -167,7 +167,7 @@ Het bestaat uit drie bijkantoren:
 
 ### Mededingingspagina {#competition-page}
 
-Als u de weergavefout wilt negeren die aan Facebook is gekoppeld, moet u ook de pagina voor concurrentie selecteren **[!UICONTROL Parent window]** of **[!UICONTROL In the top window]** in het **[!UICONTROL Window]** veld plaatsen.
+Als u de weergavefout wilt negeren die aan Facebook is gekoppeld, moet u ook de pagina voor concurrentie selecteren **[!UICONTROL Parent window]** of **[!UICONTROL In the top window]** in het **[!UICONTROL Window]** veld.
 
 ![](assets/social_webapp_028.png)
 
