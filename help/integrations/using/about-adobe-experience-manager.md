@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Informatie over Adobe Experience Manager
-description: Informatie over Adobe Experience Manager
+description: About Adobe Experience Manager
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
