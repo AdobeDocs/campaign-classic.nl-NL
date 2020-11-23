@@ -77,7 +77,7 @@ In de eerste plaats moeten alle processen met toegang tot de database op alle be
    taskkill /IM nlserver* /T
    ```
 
-1. Als sommige processen na een paar minuten nog actief zijn, kunt u ze dwingen te sluiten met de opdracht:
+1. Als sommige processen na een paar minuten nog actief zijn, kunt u ze forceren te sluiten met de opdracht:
 
    ```
    taskkill /F /IM nlserver* /T
