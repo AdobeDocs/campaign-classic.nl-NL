@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6e0741d13aa954e81fe6416663399ffd1a81012f
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 1%
@@ -162,7 +162,7 @@ Het **`<nodemodel>`** element bevat de beschrijving van het maptype met de volge
 * **naam**: interne naam
 * **label**: gebruikt in het **[!UICONTROL Add new folder]** menu en als standaardlabel bij het invoegen van een map.
 * **img**: standaardafbeelding bij het invoegen van de map.
-* **hiddenCommands**: lijst met opdrachten (gescheiden door een komma) die moeten worden gemaskeerd. Mogelijke waarden: &quot;insert&quot;, &quot;delete&quot;, &quot;update&quot; en &quot;duplicate&quot;.
+* **hiddenCommands**: lijst met opdrachten (gescheiden door een komma) die moeten worden gemaskeerd. Mogelijke waarden: &quot;adbnew&quot;, &quot;adbsave&quot;, &quot;adbcancel&quot; en &quot;adbdup&quot;.
 * **newFolderShortCuts**: lijst met sneltoetsen op modellen (**`<nodemodel>`** gescheiden door een komma) in het maken van mappen.
 * **insertRight**, **editRight**, **deleteRight**: rechten voor het invoegen, bewerken en verwijderen van mappen.
 
