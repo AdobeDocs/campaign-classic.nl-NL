@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: affc541c480ad7e618120fe90270841add06b711
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 5%
+source-wordcount: '153'
+ht-degree: 3%
 
 ---
 
@@ -34,6 +34,7 @@ De hieronder beschreven workflows worden standaard geïnstalleerd met de module 
    <tr> 
    <td> <span class="uicontrol">MessageCenter volledige geaggregeerde berekening</span> <br /> </td> 
    <td> <span class="uicontrol">agg_messageCenter_full</span> <br /> </td> 
+   <td> Deze werkstroom werkt het <strong>Volledige</strong> aggregaat voor de kubus van het <strong>Centrum</strong> van het Bericht bij. Deze wordt standaard elke dag om 3 uur geactiveerd. In dit aggregaat worden de volgende afmetingen vastgelegd: Het type Kanaal, Datum, Status en Gebeurtenis.<br /> De kubus van het centrum <strong>van het</strong> Bericht wordt dan gebruikt om rapporten te produceren die op gebeurtenissen worden gebaseerd. Meer informatie over kubussen vindt u in <a href="../../reporting/using/about-cubes.md">deze sectie</a>.<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
