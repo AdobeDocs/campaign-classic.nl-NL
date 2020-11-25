@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: fc5a44fe7bf4c88eca4634a67eaae48c722d8e5e
+source-git-commit: 85fae38f864b031f069058dae79ce6753dc4bf03
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '370'
 ht-degree: 2%
 
 ---
@@ -57,7 +57,11 @@ U kunt de volgende tests uitproberen. Neem contact op met de **Adobe Campaign-on
 </tr>
 <tr>
 <td>Controleer de algemene configuratie van de beveiligingszones.</td>
-<td>Raadpleeg voor meer informatie over het configureren van beveiligingszones [dit gedeelte] (../../installation/using/configuring-campaign-server.md#define-security-zones)</td>
+<td>Raadpleeg <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=en#configuring-campaign-server"/>deze sectie voor meer informatie over het configureren van beveiligingszones.</a></td>
+</tr>
+<tr>
+<td>De pdump van de bevelserver keert <b>Geen taken terug</b></td>
+<td>U moet de hele Adobe Campaign-toepassing opnieuw starten. Hiervoor gebruikt u de volgende opdracht: <b>nlserver watchdog -svc -noconsole</b></td>
 </tr>
 </tbody> 
 </table>
