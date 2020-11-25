@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: eb7e1c98f69ba20ef4222bfefea74fdaf6072397
+source-git-commit: 6464a61148fd12738d95953161aea4ac4d19c04b
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 2%
@@ -55,32 +55,31 @@ U kunt de volgende tests uitproberen. Neem contact op met de **Adobe Campaign-on
 </tr>
   <tr> 
    <td>Is de module Adobe Campaign Web gestart?</td> 
-   <td>
-   Maak verbinding met de volgende URL: <b>http(s)://&gt;URLSERVER&lt;/nl/jsp/logon.jsp</b>* Als u een Tomcat Java-fout verkrijgt:
+   <td>Maak verbinding met de volgende URL: <b>http(s)://&gt;URLSERVER&lt;/nl/jsp/logon.jsp</b>* Als u een Tomcat Java-fout verkrijgt:
 
     Is de integratie van JAVA correct uitgevoerd? Adobe Campaign heeft een SUN JDK nodig.
     
     Het is geïntegreerd in het bestand [pad van toepassing]/nl6/customer.sh
-    
-    * Als u een lege pagina krijgt:
-    
-    Is de Adobe Campaign-module Web gestart? U moet:
-    
-    &lt;pre>
-    nlserver
-    pdumpHH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) van DD/MM/YYYY
-    [...]
-    web@default (27515) - 55,2 MB
-    [...]
-    &lt;/pre>
-    
-    * als dit niet het geval is, opnieuw starten met de volgende command:
-    
-    &lt;pre>
-    
-    
-    nlserver start web&lt;/pre>&lt;/td>
-</tr>
+
+* Als u een lege pagina krijgt:
+
+       Is de module Adobe Campaign Web gestart? U zou moeten verkrijgen:
+       
+       &lt;pre>
+     nlserver pdump
+     HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) van DD/MM/YYYY
+     [...]
+     web@default (27515) - 55,2 MB
+     
+     [...]&lt;/pre>
+   
+* Zo niet, start u de toepassing opnieuw met de volgende opdracht:
+
+       &lt;pre>
+     nlserver start web
+     &lt;/pre>
+     &lt;/td>
+   </tr>
   <tr>
   	<td>Controleer de algemene configuratie van de beveiligingszones.</td>
   	<td>Raadpleeg voor meer informatie over het configureren van beveiligingszones [dit gedeelte] (../../installation/using/configuring-campaign-server.md#define-security-zones)</td>
