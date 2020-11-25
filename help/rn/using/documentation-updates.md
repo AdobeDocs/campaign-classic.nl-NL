@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
 workflow-type: tm+mt
-source-wordcount: '3588'
-ht-degree: 96%
+source-wordcount: '3631'
+ht-degree: 95%
 
 ---
 
@@ -36,6 +36,10 @@ De sectie Privacy is verplaatst en verrijkt met twee nieuwe pagina&#39;s: [Priva
 Er is een opmerking toegevoegd aan de configuratiepagina van de server voor de midsourcing om op te geven dat de interne naam van de externe account niet moet worden bijgewerkt als de server eenmaal is ingesteld. [Meer informatie](../../installation/using/mid-sourcing-server.md)
 
 Er is informatie toegevoegd aan de syntaxis die moet worden gebruikt wanneer u een pad naar een externe SFTP-server opgeeft. [Meer informatie](../../platform/using/sftp-server-usage.md#external-SFTP-server)
+
+De sectie Persoonlijke Gegevens en Persona&#39;s is bijgewerkt met een gebruiksscenario om te illustreren hoe de verschillende personen interactie hebben wanneer het over Privacy aankomt. [Meer informatie](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
+
+Er is een nieuwe sectie toegevoegd met veelgestelde vragen over privacy. [Meer informatie](../../platform/using/privacy-faq.md)
 
 ## Oktober 2020 {#oct-2020}
 
