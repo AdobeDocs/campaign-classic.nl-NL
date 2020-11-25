@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 6464a61148fd12738d95953161aea4ac4d19c04b
+source-git-commit: 2cc4ab52f3cbdd00831d0b5104690b7adf6091ce
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '343'
 ht-degree: 2%
 
 ---
@@ -48,38 +48,33 @@ U kunt de volgende tests uitproberen. Neem contact op met de **Adobe Campaign-on
    <td>Aanmelden bij: <b>http(s):///&lt;urlserver&gt;/r/test</b> URL. De server moet het volgende berichttype retourneren:
 
     &lt;pre>
-    &lt;redir status=&#39;OK&#39; date=&#39;YYY/MM/DD HH:MM:SS&#39; build=&#39;XXXX&#39; host=&#39;&lt;hostname>&#39; localHost=&#39;&lt;server>&#39;/>
+    &lt;redir status=&#39;OK&#39; date=&#39;YYYY/MM/DD HH:MM:SS&#39; build=&#39;XXXX&#39; host=&#39;&lt;hostname>&#39; localHost=&#39;&lt;server>&#39;/>
     &lt;/pre>
-    
-    Als u dit resultaat niet verkrijgt, controleert u uw webserverconfiguratie of er rekening is gehouden met integratie.&lt;/td>
+Als u dit resultaat niet verkrijgt, controleer in uw de serverconfiguratie van het Web dat de integratie in acht wordt genomen.</td>
 </tr>
   <tr> 
    <td>Is de module Adobe Campaign Web gestart?</td> 
    <td>Maak verbinding met de volgende URL: <b>http(s)://&gt;URLSERVER&lt;/nl/jsp/logon.jsp</b>* Als u een Tomcat Java-fout verkrijgt:
 
-    Is de integratie van JAVA correct uitgevoerd? Adobe Campaign heeft een SUN JDK nodig.
-    
-    Het is geïntegreerd in het bestand [pad van toepassing]/nl6/customer.sh
+Is de integratie van JAVA correct uitgevoerd? Adobe Campaign heeft een SUN JDK nodig.
+
+Het is geïntegreerd in het bestandspad [van de toepassing]/nl6/customer.sh
 
 * Als u een lege pagina krijgt:
 
-       Is de module Adobe Campaign Web gestart? U zou moeten verkrijgen:
-       
-       &lt;pre>
-     nlserver pdump
-     HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) van DD/MM/YYYY
-     [...]
-     web@default (27515) - 55,2 MB
-     
-     [...]&lt;/pre>
-   
+Is de module Adobe Campaign Web gestart? U zou moeten verkrijgen:
+
+<pre>
+nlserver pdumpHH:MM:SS &gt; Toepassingsserver voor Adobe Campaign Classic (7.X YY.R build XXX@SHA1) van DD/MM/YYYY[...]web@default (27515) - 55,2 Mb[...]
+</pre>
+
 * Zo niet, start u de toepassing opnieuw met de volgende opdracht:
 
-       &lt;pre>
-     nlserver start web
-     &lt;/pre>
-     &lt;/td>
-   </tr>
+<pre>        
+nlserver start web
+</pre>
+</td>
+</tr>
   <tr>
   	<td>Controleer de algemene configuratie van de beveiligingszones.</td>
   	<td>Raadpleeg voor meer informatie over het configureren van beveiligingszones [dit gedeelte] (../../installation/using/configuring-campaign-server.md#define-security-zones)</td>
