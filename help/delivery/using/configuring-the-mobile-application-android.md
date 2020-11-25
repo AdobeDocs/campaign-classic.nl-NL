@@ -10,9 +10,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1d7d48f52f69e4902eafa6806c2cd9170c21fe5a
 workflow-type: tm+mt
-source-wordcount: '1593'
+source-wordcount: '1648'
 ht-degree: 2%
 
 ---
@@ -62,6 +62,8 @@ Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
 ## Android-service configureren {#configuring-android-service}
 
+![](assets/do-not-localize/how-to-video.png) [Leer hoe u een Android-service configureert in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=en#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign)
+
 1. Ga naar het **[!UICONTROL Profiles and Targets > Services and subscriptions]** knooppunt en klik **[!UICONTROL New]**.
 
    ![](assets/nmac_service_1.png)
@@ -105,7 +107,7 @@ Nadat u de service hebt gemaakt, moet u nu uw Android-toepassing maken:
 
 1. Klik op **[!UICONTROL Finish]** en vervolgens op **[!UICONTROL Save]**. Uw Android-toepassing kan nu worden gebruikt in Campaign Classic.
 
-Standaard slaat Adobe Campaign een toets op in het veld **[!UICONTROL User identifier]** (@userKey) van de **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** tabel. Met deze sleutel kunt u een abonnement koppelen aan een ontvanger. Als u aanvullende gegevens wilt verzamelen (zoals een complexe afstemmingssleutel), moet u de volgende configuratie toepassen:
+Standaard slaat Adobe Campaign een sleutel op in het veld **[!UICONTROL User identifier]** (@userKey) van de **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** tabel. Met deze sleutel kunt u een abonnement koppelen aan een ontvanger. Als u aanvullende gegevens wilt verzamelen (zoals een complexe afstemmingssleutel), moet u de volgende configuratie toepassen:
 
 ### Selecteer de API-versie{#select-api-version}
 
@@ -178,6 +180,8 @@ Hieronder vindt u de namen van FCM-ladingen om uw pushmelding verder aan te pass
 
 ## Het schema appsubscriptionRcp uitbreiden {#extend-subscription-schema}
 
+![](assets/do-not-localize/how-to-video.png) [Leer hoe u het schema appsubscriptionRcp in video kunt uitbreiden](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=en#extending-the-app-subscription-schema-to-personalize-push-notifications)
+
 U moet het **appsubscriptionRcp** uitbreiden om nieuwe extra gebieden te bepalen om parameters van app in het gegevensbestand van de Campagne op te slaan. Deze velden worden bijvoorbeeld gebruikt voor personalisatie. Dit doet u als volgt:
 
 1. Maak een extensie van het **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schema en definieer de nieuwe velden. Meer informatie over schema-extensies vindt u op [deze pagina](../../configuration/using/about-schema-edition.md)
@@ -187,7 +191,6 @@ U moet het **appsubscriptionRcp** uitbreiden om nieuwe extra gebieden te bepalen
    >[!CAUTION]
    >
    >Zorg ervoor dat de configuratienamen op het **[!UICONTROL Subscription parameters]** tabblad gelijk zijn aan die in de code van de mobiele toepassing. Raadpleeg de [Integrating Campaign SDK in de sectie over mobiele toepassingen](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) .
-
 
 ## Android-berichten maken {#creating-android-delivery}
 
@@ -241,6 +244,8 @@ De afbeelding en webpagina moeten worden weergegeven in het pushbericht wanneer 
 >[!NOTE]
 >
 >Aanvullende opties voor berichten zijn alleen beschikbaar bij de HTTP v1 API-configuratie. Raadpleeg deze [sectie](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1) voor meer informatie.
+
+![](assets/do-not-localize/how-to-video.png) [Leer hoe u een Android-pushmelding maakt in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=en#additional-resources)
 
 1. Ga naar **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
