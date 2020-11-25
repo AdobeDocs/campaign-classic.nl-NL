@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 2cc4ab52f3cbdd00831d0b5104690b7adf6091ce
+source-git-commit: 57063c1ed0100b171bda93e273c399c40d8e980a
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 2%
@@ -61,13 +61,11 @@ Is de integratie van JAVA correct uitgevoerd? Adobe Campaign heeft een SUN JDK n
 Het is geïntegreerd in het bestandspad [van de toepassing]/nl6/customer.sh
 
 * Als u een lege pagina krijgt:
-
 Is de module Adobe Campaign Web gestart? U zou moeten verkrijgen:
 
 <pre>
 nlserver pdumpHH:MM:SS &gt; Toepassingsserver voor Adobe Campaign Classic (7.X YY.R build XXX@SHA1) van DD/MM/YYYY[...]web@default (27515) - 55,2 Mb[...]
 </pre>
-
 * Zo niet, start u de toepassing opnieuw met de volgende opdracht:
 
 <pre>        
