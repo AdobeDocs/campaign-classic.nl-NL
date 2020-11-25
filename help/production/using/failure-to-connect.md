@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 57063c1ed0100b171bda93e273c399c40d8e980a
+source-git-commit: 68fee697b65b2ba69f456803e0a7cebca9be3760
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '337'
 ht-degree: 2%
 
 ---
@@ -45,35 +45,17 @@ U kunt de volgende tests uitproberen. Neem contact op met de **Adobe Campaign-on
   </tr>
   <tr> 
    <td>Is Adobe Campaign correct geïntegreerd?</td> 
-   <td>Aanmelden bij: <b>http(s):///&lt;urlserver&gt;/r/test</b> URL. De server moet het volgende berichttype retourneren:
-
-    &lt;pre>
-    &lt;redir status=&#39;OK&#39; date=&#39;YYYY/MM/DD HH:MM:SS&#39; build=&#39;XXXX&#39; host=&#39;&lt;hostname>&#39; localHost=&#39;&lt;server>&#39;/>
-    &lt;/pre>
-Als u dit resultaat niet verkrijgt, controleer in uw de serverconfiguratie van het Web dat de integratie in acht wordt genomen.</td>
-</tr>
+   <td>Aanmelden bij: <b>http(s):///&lt;urlserver&gt;/r/test</b> URL. De server moet het volgende berichttype retourneren: &lt;redir status='OK' date='YYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt; Als u dit resultaat niet verkrijgt, controleert u uw webserverconfiguratie of er rekening is gehouden met integratie.</td>
+  </tr>
   <tr> 
-   <td>Is de module Adobe Campaign Web gestart?</td> 
-   <td>Maak verbinding met de volgende URL: <b>http(s)://&gt;URLSERVER&lt;/nl/jsp/logon.jsp</b>* Als u een Tomcat Java-fout verkrijgt:
-
-Is de integratie van JAVA correct uitgevoerd? Adobe Campaign heeft een SUN JDK nodig.
-
-Het is geïntegreerd in het bestandspad [van de toepassing]/nl6/customer.sh
-
-* Als u een lege pagina krijgt:
-Is de module Adobe Campaign Web gestart? U zou moeten verkrijgen:
-
-<pre>
-nlserver pdumpHH:MM:SS &gt; Toepassingsserver voor Adobe Campaign Classic (7.X YY.R build XXX@SHA1) van DD/MM/YYYY[...]web@default (27515) - 55,2 Mb[...]
-</pre>
-* Zo niet, start u de toepassing opnieuw met de volgende opdracht:
-
-<pre>        
-nlserver start web
-</pre>
-</td>
-</tr>
-  <tr>
+   <td>Maak verbinding met de volgende URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+   <td>Als u een Tomcat Java-fout verkrijgt, controleert u of de JAVA-integratie correct wordt uitgevoerd. Het is geïntegreerd in het bestand [pad van toepassing]/nl6/customer.sh</td>
+  </tr>
+  <tr> 
+   <td>Maak verbinding met de volgende URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+   <td>Als u een lege pagina krijgt, controleer of de module van het Web van Adobe Campaign is begonnen. Het PDump-bestand van de opdrachtserver moet de toepassingsserver retourneren voor Adobe Campaign Classic (7.X YY.R build XXX@SHA1) van DD/MM/YYYY. Zo niet, start de module opnieuw met het opdrachtendserver-startweb</td>
+  </tr>
+   <tr>
   	<td>Controleer de algemene configuratie van de beveiligingszones.</td>
   	<td>Raadpleeg voor meer informatie over het configureren van beveiligingszones [dit gedeelte] (../../installation/using/configuring-campaign-server.md#define-security-zones)</td>
   </tr>
