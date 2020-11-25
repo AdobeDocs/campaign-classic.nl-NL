@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ae342f41b9b74159607b313e1c29549b17488db5
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '840'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ De groepen van marktdeelnemers voor goedkeuringen moeten worden aangewezen als r
 
 ## Verlopen {#expirations}
 
-Verlopen zijn specifieke overgangen die worden gebruikt in verschillende soorten activiteiten, en met name in goedkeuringen. Een vervaldatum kan worden gebruikt om een actie na een bepaald tijdsverloop te activeren als er geen reactie is, of om de werkstroom voort te zetten (en bijvoorbeeld een goedkeuring toe te wijzen aan een andere groep).
+Verlopen zijn specifieke overgangen die worden gebruikt in verschillende soorten activiteiten, en met name in goedkeuringen. U kunt een vervaldatum gebruiken om een actie na een bepaalde tijd zonder reactie teweeg te brengen. Het kan bijvoorbeeld ook worden gebruikt om de workflow voort te zetten en een goedkeuring toe te wijzen aan een andere groep.
 
 Op het tweede tabblad in de eigenschappen voor activiteitengoedkeuring kunt u een of meer vervaldatums definiëren. In feite kunt u meerdere vervaltypen definiëren.
 
