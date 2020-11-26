@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
 workflow-type: tm+mt
 source-wordcount: '2171'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -55,9 +55,9 @@ ht-degree: 97%
          + [Ontwikkeling](platform/using/faq-developers.md)
       + [Zelfstudies](platform/using/tutorials.md)
    + Privacy {#privacy}
-      + [Privacy en instemming](platform/using/privacy-and-recommendations.md)
+      + [Privacy en toestemming](platform/using/privacy-and-recommendations.md)
       + [Privacybeheer](platform/using/privacy-management.md)
-      + [Privacyverzoeken](platform/using/privacy-requests.md)
+      + [Verzoeken om toegang tot persoonsgegevens](platform/using/privacy-requests.md)
       + [Veelgestelde vragen over privacy](platform/using/privacy-faq.md)
    + Profielbeheer {#profile-management}
       + [Profielen](platform/using/about-profiles.md)
@@ -335,7 +335,7 @@ ht-degree: 97%
    + Experience Cloud Triggers {#experience-triggers}
       + [Aan de slag met [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Pipeline configureren](integrations/using/configuring-pipeline.md)
-      + [Adobe I/O configureren voor Adobe Experience Cloud-triggers](integrations/using/configuring-adobe-io.md)
+      + [Adobe I/O configureren voor Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)
       + [Gebeurtenissen configureren voor aangepaste implementatie](integrations/using/events.md)
       + [Pipelinecontrole](integrations/using/pipeline-monitoring.md)
       + [Problemen met pipelines oplossen](integrations/using/pipeline-troubleshooting.md)
