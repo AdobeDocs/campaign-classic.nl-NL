@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,13 +29,13 @@ Aan elke build wordt een status gekoppeld. Hieronder vindt u een lijst met statu
 
 ![](assets/do-not-localize/green3.png) **Algemene beschikbaarheid** (GA) - Gevalideerd in productie en aanbevolen door Adobe.
 
-De **laatste GA-builds** zijn: [Gold Standard - release](../../rn/using/gold-standard.md#gs-10) en [campagne 20.2.3](../../rn/using/release--20-2.md#release-20-2-3-build-9182)
+De **laatste GA-builds** zijn: [Gold Standard 10-release](../../rn/using/gold-standard.md#gs-10) en [Campaign 20.2.3-release](../../rn/using/release--20-2.md#release-20-2-3-build-9182)
 
 ![](assets/do-not-localize/limited3.png) **Beperkte beschikbaarheid** (LA) - Alleen on-demand implementatie.
 
 ![](assets/do-not-localize/blue3.png) **Releasekandidaat** (RC) - recentste versie met nieuwe mogelijkheden.
 
-The **last RC build** is [Campaign Classic 20.3 release](../../rn/using/latest-release.md)
+De **laatste RC-build** is [Campaign Classic 20.3-release](../../rn/using/latest-release.md)
 
 ![](assets/do-not-localize/orange3.png) **Niet meer beschikbaar** - U moet een update naar een nieuwere build uitvoeren.
 
@@ -62,7 +62,7 @@ Als Gold Standard-gebruiker profiteert u automatisch van de Gold Standard-upgrad
 
 ## Ondersteuning en andere handige koppelingen{#support}
 
-* [Help en ondersteuning](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
+* [Help en ondersteuning](https://helpx.adobe.com/nl/campaign/kb/ac-support.html#acc-support)
 * [Configuratiescherm-releases](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html)
 * [Nieuwste documentatie-updates](../../rn/using/documentation-updates.md)
 * [Verouderde en verwijderde functies](../../rn/using/deprecated-features.md)
