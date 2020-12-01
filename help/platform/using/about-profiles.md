@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '952'
 ht-degree: 16%
 
 ---
@@ -107,13 +107,15 @@ Er wordt geen rekening gehouden met de profielen die tijdens de voorbereiding va
 
 U kunt een overzicht van het **[!UICONTROL Number of active profiles]** van het menu van de Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]** hebben. Het daadwerkelijke aantal wordt uitgevoerd door het **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technische werkschema](../../workflow/using/deliveries.md), dat elke dag loopt en de nieuwe gegevens aan het bestaande rapport voor de huidige periode in het **[!UICONTROL Customer metrics]** menu toevoegt. Elke periode duurt 12 maanden.
 
-## Profielen maken en beheren {#create-profiles-video}
+## Video over zelfstudie {#create-profiles-video}
 
 Leer hoe u toegang krijgt tot profielgegevens, profielen kunt sorteren en filteren en profielen handmatig kunt maken en beheren.
 
 In deze video wordt ook uitgelegd of Adobe Campaign Classic voldoet aan de algemene gegevensbeschermingsregels.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
+
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
 
 **Zie ook**
 
