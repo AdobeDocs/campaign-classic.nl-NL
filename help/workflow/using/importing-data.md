@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 translation-type: tm+mt
-source-git-commit: e43a14a8be179dd4793176d15e2c30b3e778d3e0
+source-git-commit: 49f3c123cb8e91b3a2a2a1eb6bd593a242b8bbfe
 workflow-type: tm+mt
-source-wordcount: '2473'
+source-wordcount: '2476'
 ht-degree: 0%
 
 ---
@@ -257,7 +257,7 @@ In het onderstaande gebruiksgeval wordt een voorbeeld gegeven.
 
 In dit geval, zullen wij een werkschema bouwen om gegevens in te voeren die in een extern systeem zijn gecodeerd, gebruikend een sleutel die in het Controlebord wordt geproduceerd.
 
-In [deze sectie](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/instance-settings/gpg-key-management/decrypting-data.html?lang=en#instance-settings)is ook een zelfstudievideo beschikbaar die laat zien hoe u een GPG-sleutel kunt gebruiken voor het decoderen van gegevens.
+![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](#video)
 
 De volgende stappen worden uitgevoerd:
 
@@ -302,3 +302,11 @@ De volgende stappen worden uitgevoerd:
 1. U kunt de workflow nu uitvoeren. Nadat de decodering is uitgevoerd, kunt u in de werkstroomlogboeken controleren of de decodering is uitgevoerd en of de gegevens uit het bestand zijn geïmporteerd.
 
    ![](assets/gpg_run.png)
+
+### Video over zelfstudie {#video}
+
+In deze video wordt getoond hoe u een GPG-sleutel kunt gebruiken voor het decoderen van gegevens.
+
+>[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
+
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
