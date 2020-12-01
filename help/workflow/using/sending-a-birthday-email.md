@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Voor het instellen van dit gebruiksgeval hebben we de volgende workflow voor doe
 
 Met deze (dagelijkse) workflow worden alle ontvangers geselecteerd die op de huidige datum jarig zijn.
 
-Deze manier van werken kan ook worden gevonden in de vorm van een video. For more on this, refer to the [Creating a workflow](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html) video.
+![](assets/do-not-localize/how-to-video.png) Deze manier van werken kan ook worden gevonden in de vorm van een video. For more on this, refer to the [Creating a workflow](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html) video.
 
 Hiertoe maakt u een campagne en klikt u op het **[!UICONTROL Targeting and workflows]** tabblad. Raadpleeg voor meer informatie het hoofddoel [Samenstellen in een workflowsectie](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) .
 
