@@ -7,9 +7,9 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '286'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,7 @@ Met interactie kunt u een catalogus met aanbiedingen maken en beheren en de rege
 
 ![](assets/Offermgt2.png)
 
-Bekijk deze video om uzelf vertrouwd te maken met de interactiefunctie en de terminologieën die worden gebruikt in Campagne Interaction: [Overzicht](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)van Adobe Campaign-interactie.
+![](assets/do-not-localize/how-to-video.png) Kijk naar [deze video](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)om uzelf vertrouwd te maken met de interactiefunctie en de terminologieën die worden gebruikt in Campagne Interaction.
 
 ## Verwante onderwerpen
 
