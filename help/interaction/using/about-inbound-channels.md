@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 4%
@@ -19,9 +19,7 @@ ht-degree: 4%
 
 De aanbiedingen kunnen op diverse aanbiedingsruimten worden voorgesteld gebruikend een binnenkomend of uitgaand kanaal. In dit hoofdstuk worden enkele specifieke functies voor binnenkomende kanalen beschreven.
 
->[!NOTE]
->
->U kunt deze [video](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-inbound-channel-in-acv6.html) ook bekijken die hoe te om een aanbieding op een binnenkomend kanaal te leveren specificeert.
+![](assets/do-not-localize/how-to-video.png) U kunt deze [video](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-inbound-channel-in-acv6.html) ook bekijken die hoe te om een aanbieding op een binnenkomend kanaal te leveren specificeert.
 
 Om een aanbieding door de aanbiedingsmotor te kunnen selecteren, moet het worden goedgekeurd en in een levende milieu beschikbaar zijn Voor meer op dit, verwijs naar het [goedkeuren en het activeren van een aanbieding](../../interaction/using/approving-and-activating-an-offer.md).
 
