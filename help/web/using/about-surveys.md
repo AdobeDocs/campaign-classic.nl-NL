@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Enquêtes
-description: Enquêtes
+title: Aan de slag met enquêtes
+description: Aan de slag met campagneenquêtes
 audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 1%
+source-wordcount: '590'
+ht-degree: 0%
 
 ---
 
 
-# Enquêtes{#about-surveys}
+# Get started with surveys{#about-surveys}
 
 Adobe Campaign bevat een grafische module voor het definiëren en publiceren van webtoepassingen. Hiermee maakt u pagina&#39;s, zoals een bewerkingsformulier op een extranet, of meldingsformulieren, inclusief gegevens uit de database met tabellen, grafieken, invoerformulieren, enz. Met deze functionaliteit kunt u webpagina&#39;s ontwerpen en plaatsen waar gebruikers informatie kunnen opzoeken of invoeren.
 
@@ -31,7 +31,7 @@ Het toepassingsbeheer van het Web is gedetailleerd in [deze sectie](../../web/us
 >
 >Om privacyredenen raden we aan HTTPS te gebruiken voor alle externe bronnen.
 
-## Bereik van campagneenquêtes {#campaign-surveys-scope}
+## Functiebereik {#campaign-surveys-scope}
 
 In Adobe Campaign hebben webtoepassingen in het algemeen toegang tot de volgende functies:
 
