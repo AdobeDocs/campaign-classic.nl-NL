@@ -7,10 +7,10 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '259'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,9 @@ Met de module **Simulatie** kunt u de distributie testen van aanbiedingen die to
 
 De simulatie houdt rekening met de context en de toelatingsregels die eerder op aanbiedingen van toepassing waren (verwijs naar het overzicht [van de](../../interaction/using/offer-catalog-overview.md)catalogus van de Aanbieding), evenals hun presentatieregels (verwijs naar de presentatie [van de Aanbieding van het](../../interaction/using/managing-offer-presentation.md)Beheer). Dit laat u diverse versies van uw aanbiedingsvoorstel testen en verfijnen zonder eigenlijk een aanbieding of over/onder het eisen van een doel te gebruiken, aangezien de simulatie geen effect op de gerichte ontvangers heeft.
 
-Lees de onderstaande stappen voor meer informatie over het simuleren van een aanbieding. You can also watch this [video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com).
+Lees de onderstaande stappen voor meer informatie over het simuleren van een aanbieding.
+
+![](assets/do-not-localize/how-to-video.png)[ U kunt ook deze video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com) bekijken.
 
 ## Belangrijkste stappen voor het creëren van een simulatie {#main-steps-for-creating-a-simulation}
 
