@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1263'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 0%
 # Setting up marketing campaigns{#setting-up-marketing-campaigns}
 
 De campagnes omvatten acties (leveringen) en processen (het invoeren of het halen van dossiers), evenals middelen (marketing documenten, leveringsoverzichten). Ze worden gebruikt in marketingcampagnes. Campagnes maken deel uit van een programma en programma&#39;s zijn opgenomen in een campagneplan.
+
+![](assets/do-not-localize/how-to-video.png) Ontdek hoe u een marketingplan, programma&#39;s en campagnes kunt maken [in video](#video)
 
 Een marketingcampagne maken:
 
@@ -45,7 +47,7 @@ Een marketingcampagne maken:
 
    Zie [Dienstverleners en hun kostenstructuren](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)creëren.
 
-Wanneer deze stappen zijn voltooid, kunt u de leveringen starten (zie [Een levering](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)starten), de gegevens, processen en informatie met betrekking tot de leveringen controleren en, indien nodig, de bijbehorende documenten beheren (zie [Gekoppelde documenten](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)beheren). U kunt ook de uitvoering van de verwerkingsfasen van campagnes en leveringen volgen (zie [Tracking](../../campaign/using/marketing-campaign-monitoring.md).
+Wanneer deze stappen zijn voltooid, kunt u de leveringen starten (zie [Een levering](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)starten), de gegevens, processen en informatie met betrekking tot de leveringen controleren en, indien nodig, de bijbehorende documenten beheren (zie [Gekoppelde documenten](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)beheren). U kunt ook de uitvoering van de verwerkingsfasen van campagnes en leveringen volgen (zie [Tracking](../../campaign/using/marketing-campaign-monitoring.md)).
 
 ## Plan- en programmahiërarchie maken {#creating-plan-and-program-hierarchy}
 
@@ -230,3 +232,11 @@ Een periodieke campagne is een campagne die op een specifiek malplaatje wordt ge
    ![](assets/s_ncs_user_op_template_period_planning.png)
 
 Elke periodieke campagne bevat dezelfde elementen. Zodra gecreeerd, wordt het beheerd als standaardcampagne.
+
+## Video over zelfstudie {#video}
+
+In deze video ziet u hoe u een marketingplan, programma&#39;s en campagnes kunt maken.
+
+>[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
+
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
