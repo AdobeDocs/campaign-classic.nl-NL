@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '523'
 ht-degree: 2%
 
 ---
@@ -39,9 +39,9 @@ In het bovenstaande voorbeeld ziet de rendering er als volgt uit:
 
 ## De velden op de pagina plaatsen {#positioning-the-fields-on-the-page}
 
-De indeling van het webformulier wordt per pagina gedefinieerd in elke container en kan voor elke controle worden overgeladen.
+De indeling van het webformulier wordt per pagina gedefinieerd in elke container en kan zo nodig worden overgeladen.
 
-Pagina&#39;s worden opgesplitst in kolommen: elke pagina bevat een bepaald aantal kolommen . Elk veld van de pagina neemt **in cellen** in beslag. Containers nemen ook een bepaald aantal kolommen in en de velden die ze bevatten bezetten een bepaald aantal cellen
+Pagina&#39;s worden opgesplitst in kolommen: elke pagina bevat een bepaald aantal kolommen . Elk veld van de pagina neemt **in cellen** in beslag. Containers nemen ook een bepaald aantal kolommen in en de velden die deze bevatten, bezetten een bepaald aantal cellen.
 
 Pagina&#39;s worden standaard op één kolom gebouwd en elk element neemt één cel in beslag. Dit betekent dat velden onder elkaar worden weergegeven, waarbij elke regel een hele regel beslaat, zoals hieronder wordt getoond:
 
