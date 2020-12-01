@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '2171'
-ht-degree: 98%
+source-wordcount: '2179'
+ht-degree: 96%
 
 ---
 
@@ -273,7 +273,7 @@ ht-degree: 98%
       + [Een webapplicatie opvolgen](web/using/tracking-a-web-application.md)
       + [Opt-out voor tracking van een webapplicatie](web/using/web-application-tracking-opt-out.md)
    + HTML-content bewerken {#editing-html-content}
-      + [De HTML-editor van Campaign](web/using/about-campaign-html-editor.md)
+      + [Aan de slag met de HTML-editor](web/using/about-campaign-html-editor.md)
       + [Sjabloonbeheer](web/using/template-management.md)
       + [Interface van de content-editor](web/using/content-editor-interface.md)
       + [Content bewerken](web/using/editing-content.md)
@@ -281,7 +281,7 @@ ht-degree: 98%
       + [Een landingspagina maken](web/using/creating-a-landing-page.md)
       + [Gebruiksscenario: een e-maillevering maken](web/using/use-case--creating-an-email-delivery.md)
    + Webformulieren {#web-forms}
-      + [Webformulieren](web/using/about-web-forms.md)
+      + [Aan de slag met webformulieren](web/using/about-web-forms.md)
       + [Een webformuliersjabloon gebruiken](web/using/using-a-web-form-template.md)
       + [Velden toevoegen aan een webformulier](web/using/adding-fields-to-a-web-form.md)
       + [Statische elementen in een webformulier](web/using/static-elements-in-a-web-form.md)
@@ -294,9 +294,9 @@ ht-degree: 98%
       + [Een webformulier vertalen](web/using/translating-a-web-form.md)
       + [Gebruiksscenario: webformulieren](web/using/use-cases--web-forms.md)
    + Online enquêtes {#online-surveys}
-      + [Enquêtes](web/using/about-surveys.md)
-      + [Aan de slag met enquêtes](web/using/getting-started-with-surveys.md)
-      + [Een enquête maken](web/using/building-a-survey.md)
+      + [Aan de slag met enquêtes](web/using/about-surveys.md)
+      + [Belangrijke stappen voor het maken van een enquête](web/using/getting-started-with-surveys.md)
+      + [Een enquête ontwerpen](web/using/building-a-survey.md)
       + [Antwoorden beheren](web/using/managing-answers.md)
       + [Verzamelde data publiceren, bijhouden en gebruiken](web/using/publish--track-and-use-collected-data.md)
       + [Enquêtes configureren](web/using/configuring-surveys.md)
