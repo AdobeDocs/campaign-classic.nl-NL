@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 2%
@@ -36,7 +36,7 @@ De belangrijkste verbeteringen in deze versie zijn:
 
    * **Conversiesnelheid**: aantal personen dat alle stappen van een navigatiepad heeft weergegeven.
    * **Stuitsnelheid**: aantal personen dat alleen de eerste stap heeft getoond
-   * **Conversietunnel**: verliespercentage tussen elke stap.
+   * **Conversietrechter**: verliespercentage tussen elke stap.
 
    Bovendien wordt de populatie volgens de bron in een **sectorkaart** weergegeven.
 
