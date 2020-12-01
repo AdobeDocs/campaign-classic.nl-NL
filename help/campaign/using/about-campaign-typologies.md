@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '497'
 ht-degree: 12%
 
 ---
@@ -63,17 +63,21 @@ De stappen voor het maken en toepassen van een typologie voor uw leveringen word
 
 Tijdens de voorbereiding van de levering worden ontvangers uitgesloten wanneer aan het criterium wordt voldaan. U kunt logboeken controleren om toezicht te houden op uitsluitingen. In [deze pagina](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules)vindt u voorbeelden van situaties voor de druktypologische regels.
 
-## Hoe stelt u vermoeidheidsbeheer in met behulp van typologische regels {#typologies-video}
+## Tutorialvideo’s {#typologies-video}
+
+### Hoe stelt u vermoeidheidsbeheer in met behulp van typologische regels
 
 In deze video wordt uitgelegd hoe u vermoeidheidsbeheer in Adobe Campaign Classic kunt implementeren door gebruik te maken van typologische regels.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
 
-## Hoe stelt u vermoeidheidsbeheer in met behulp van vooraf gedefinieerde filters
+### Hoe stelt u vermoeidheidsbeheer in met behulp van vooraf gedefinieerde filters
 
 Het beheer van de vermoeidheid controleert frequentie en hoeveelheid overseinen om te vermijden overdrijving van ontvangers. Als u niet de module van de campagnoptimalisering in uw campagneinstantie hebt, kunt u een vooraf bepaald filter vormen dat de doelbevolking door het aantal ontvangen berichten zal filtrerenDeze video verklaart hoe te om vermoeidheidsbeheer in Adobe Campaign Classic uit te voeren door filters te gebruiken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
+
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
 
 **Verwant onderwerp**
 
