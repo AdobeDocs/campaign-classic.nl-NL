@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '957'
 ht-degree: 1%
 
 ---
@@ -133,7 +133,7 @@ Volg de onderstaande stappen om dit te doen:
 
 1. Configureer de **[!UICONTROL Storage]** activiteit om de informatie op te slaan die op de formulierpagina is ingevoerd.
 
-   Deze activiteit laat u ontvankelijke profielen in een specifiek tijdelijk tot stand brengen om hen los van de profielen in het gegevensbestand te plaatsen, waarnaar de mededelingen kunnen worden verzonden.
+   Deze activiteit laat u ontvankelijke profielen in een specifieke tijdelijke omslag tot stand brengen om hen los van de profielen in het gegevensbestand te plaatsen, waarnaar de mededelingen kunnen worden verzonden.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5g.png)
 
