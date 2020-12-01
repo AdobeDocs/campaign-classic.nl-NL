@@ -7,17 +7,21 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 3%
+source-wordcount: '364'
+ht-degree: 4%
 
 ---
 
 
 # Doorlopende levering{#continuous-delivery}
 
-Met een actie **Ononderbroken leveringstype** kunt u nieuwe ontvangers toevoegen aan een bestaande levering. Met dit leveringstype hoeft u niet telkens een nieuwe levering te maken: Deze modus is vaak efficiënter, met name voor kleine waarschuwingen of meldingen die zo nodig worden verzonden. Op een niveau van het leveringsmalplaatje, kunt u een manuscript specificeren om het etiket (en de campagnemap) van de bijbehorende levering te berekenen. Als in het script een levering wordt berekend die nog niet bestaat, wordt deze direct gemaakt.
+Met een actie **Ononderbroken leveringstype** kunt u nieuwe ontvangers toevoegen aan een bestaande levering. Met dit leveringstype hoeft u niet telkens een nieuwe levering te maken: Deze modus is vaak efficiënter, met name voor kleine waarschuwingen of meldingen die zo nodig worden verzonden.
+
+![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](#continuous-delivery-video)
+
+Op een niveau van het leveringsmalplaatje, kunt u een manuscript specificeren om het etiket (en de campagnemap) van de bijbehorende levering te berekenen. Als in het script een levering wordt berekend die nog niet bestaat, wordt deze direct gemaakt.
 
 ![](assets/edit_diffusion_fil.png)
 
@@ -56,6 +60,10 @@ Een ononderbroken levering zal tot één enkele levering en leveringslogboeken (
 
 ![Doorlopende levering](assets/delivery_continuous.jpg)
 
+## Video over zelfstudie {#continuous-delivery-video}
+
 Deze video toont hoe te om een ononderbroken levering met een stijgende vraag te vormen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
+
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
