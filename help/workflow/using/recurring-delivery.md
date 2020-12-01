@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 7%
+source-wordcount: '221'
+ht-degree: 9%
 
 ---
 
@@ -18,6 +18,8 @@ ht-degree: 7%
 # Terugkerende levering{#recurring-delivery}
 
 Een **[!UICONTROL Recurring delivery]** activiteit laat u een voorkomen van het leveringsmalplaatje vormen die voor een campagne specifiek is.
+
+![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](#recurring-delivery-video)
 
 Deze activiteit is slechts beschikbaar van het **[!UICONTROL Targeting and workflows]** lusje dat in een campagne wordt gevonden.
 
@@ -39,11 +41,16 @@ Elke keer dat een **terugkerende levering** wordt uitgevoerd, wordt een nieuwe l
 
 ![Terugkerende aflevering](assets/delivery_recurring.jpg)
 
-Deze video verklaart hoe te om een terugkomende levering en een planneractiviteit te vormen.
-
->[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
-
 >[!NOTE]
 >
 >Het is niet mogelijk een bewijs van een **[!UICONTROL Recurring delivery]** type activiteit te verzenden.\
 >Om een levering via een campagnewerkschema direct tot stand te brengen, gebruik de kanaal specifieke activiteiten die (b.v. **[!UICONTROL Email delivery]**).
+
+## Tutorial video (#repeat-delivery-video)
+
+Deze video verklaart hoe te om een terugkomende levering en een planneractiviteit te vormen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
+
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
+
