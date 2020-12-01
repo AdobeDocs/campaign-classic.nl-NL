@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 95%
+source-wordcount: '911'
+ht-degree: 93%
 
 ---
 
@@ -25,6 +25,8 @@ Met Adobe Campaign kunt u het maken van conversationele marketingcampagnes coör
 >
 >Adobe Campaign Classic is beschikbaar in v6.11 en v7. Except when mentioned, help materials apply to both versions, in the [latest build](../../rn/using/latest-release.md). Schermafbeeldingen geven de gebruikersinterface van Campaign Classic v7 weer.
 
+![](assets/do-not-localize/how-to-video.png) [Belangrijkste kenmerken en mogelijkheden in video ontdekken](#video)
+
 ## Belangrijkste mogelijkheden {#key-capabilities}
 
 Adobe Campaign biedt een platform voor het ontwerpen van klantervaringen op alle kanalen en levert een omgeving voor de visuele orkestrering van campagnes, realtime-interactiebeheer en uitvoering via meerdere kanalen.
@@ -32,8 +34,6 @@ Adobe Campaign biedt een platform voor het ontwerpen van klantervaringen op alle
 De marketingcampagnecyclus in Adobe Campaign illustreert de belangrijkste aspecten van de functionaliteit van het product:
 
 ![](assets/d_ncs_user_emarketing.png)
-
-![](assets/do-not-localize/how-to-video.png) [Belangrijkste kenmerken en mogelijkheden in video ontdekken](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/introduction-to-adobe-campaign-classic.html)
 
 ### Integrated Customer Profile {#integrated-customer-profile}
 
@@ -87,3 +87,10 @@ De volgende mogelijkheden zijn beschikbaar. Afhankelijk van uw licentieovereenko
 * [Webservices](../../configuration/using/about-web-services.md) - gebruiken van Campaign via API’s/webservices,
 * [Rapportage](../../reporting/using/about-adobe-campaign-reporting-tools.md) - toegang krijgen tot ingebouwde rapporten, analyseren van data en ontwerpen van uw eigen rapporten.
 
+## Video over zelfstudie {#video}
+
+In deze video ziet u de belangrijkste functies en mogelijkheden van Campaign Classic.
+
+>[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
+
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
