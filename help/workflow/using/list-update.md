@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 49f3c123cb8e91b3a2a2a1eb6bd593a242b8bbfe
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 3%
+source-wordcount: '465'
+ht-degree: 1%
 
 ---
 
@@ -35,6 +35,8 @@ Als u deze optie wilt gebruiken, moeten de desbetreffende tabellen zijn geconfig
 
 Over het algemeen betekent het opslaan van een doel in een lijst het einde van een workflow. Door gebrek, heeft de **[!UICONTROL List update]** activiteit daarom geen uitgaande overgang. Schakel de **[!UICONTROL Generate an outbound transition]** optie in om er een toe te voegen.
 
+![](assets/do-not-localize/how-to-video.png) [Ontdek hoe u in video een lijst met ontvangers van de Verkenner kunt maken](#video)
+
 ## Voorbeeld: Lijstupdate {#example--list-update}
 
 In het volgende voorbeeld volgt de activiteit van de lijstupdate een vraag die mannen meer dan 30 richt die in Frankrijk wonen. De lijst wordt eerst gemaakt op basis van de resultaten van de query. Het zal dan worden bijgewerkt telkens als het van het werkschema wordt gelanceerd. Het kan bijvoorbeeld regelmatig worden gebruikt voor gerichte promotieaanbiedingen voor campagnes.
@@ -56,8 +58,6 @@ In het volgende voorbeeld volgt de activiteit van de lijstupdate een vraag die m
 
    De lijst met overeenkomende ontvangers wordt vervolgens gemaakt of bijgewerkt.
 
-Raadpleeg voor meer informatie de video [Een lijst met ontvangers](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) maken.
-
 ## Invoerparameters {#input-parameters}
 
 * tableName
@@ -68,3 +68,11 @@ Hiermee wordt de populatie aangegeven die in de groep moet worden opgeslagen.
 ## Uitvoerparameters {#output-parameters}
 
 * groupId: Groep-id.
+
+## Video over zelfstudie {#video}
+
+Deze video laat zien hoe u een lijst met ontvangers in de Verkenner kunt maken.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
+
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
