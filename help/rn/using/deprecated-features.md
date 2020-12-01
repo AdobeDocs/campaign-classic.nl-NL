@@ -9,9 +9,9 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 82c5f4f4c37f295a6c206eb33616ae9223740f36
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1626'
 ht-degree: 99%
 
 ---
@@ -54,7 +54,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    <li>Web API - de Dynamica CRM van Microsoft op-gebouw: 2016, 2016 Update 1</li>
    <li>Web API - Microsoft Dynamics CRM Online: 2016, 2016 Update 1</li>
    </ul>
-  <p><em>Doeldatum voor verwijdering: 2021</em></p>
+  <p><em>Doeldatum voor verwijdering: april 2021</em></p>
   </td>
  </tr>
   <tr>
@@ -62,14 +62,14 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
   <td><p>Vanaf Campaign versie 20.3 is de verouderde binaire iOS-connector van iOS afgeschaft.<p>
   <p> Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen.
   <a href="https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html">Meer informatie</a></p>
-  <p><em>Doeldatum voor verwijdering: 2021</em></p>
+  <p><em>Doeldatum voor verwijdering: april 2021</em></p>
   </td>
  </tr>
    <tr>
   <td>Demdex-domein<br></td>
   <td><p> Vanaf Campaign versie 20.3 is het demdex-domein afgeschaft. Dit werd gebruikt voor het importeren en exporteren van doelgroepen naar Adobe Experience Cloud.<p>
   <p>Als u het demdex-domein voor uw externe import/export-accounts gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Meer informatie</a></p> 
-  <p><em>Doeldatum voor verwijdering: 2021</em></p>
+  <p><em>Doeldatum voor verwijdering: april 2021</em></p>
   </td>
   <tr>
   <td>OAuth-verificatie (OAuth en JWT)<br></td>
@@ -92,14 +92,14 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    </ul>
   <p>Als u één van deze connectoren gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../delivery/using/sms-channel.md">Meer informatie</a></p> 
   <p>Ontdek in <a href="https://helpx.adobe.com/nl/campaign/kb/sms-connector.html">deze technische opmerking</a> hoe u verouderde connectoren kunt migreren.</p>
-  <p><em>Doeldatum voor verwijdering: 2021</em></p>
+  <p><em>Doeldatum voor verwijdering: april 2021</em></p>
   </td> 
  </tr>
   <tr>  
    <td>Faxkanaal<br></td>
    <td><p>Vanaf Campaign 20.2-release is het faxkanaal afgeschaft.</p> 
    <p>Als u dit kanaal gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Ontdek meer</a> over Campaign-kanalen.</p>
-   <p><em>Doeldatum voor verwijdering: 2021</em></p></td>
+   <p><em>Doeldatum voor verwijdering: april 2021</em></p></td>
   </tr>
  </tbody> 
 </table>
