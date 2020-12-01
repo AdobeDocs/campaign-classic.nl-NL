@@ -1,63 +1,56 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: De HTML-editor van Campaign
-description: De HTML-editor van Campaign
+title: Aan de slag met de HTML-editor voor campagnes
+description: Aan de slag met campagne-DCE
 audience: web
 content-type: reference
 topic-tags: editing-html-content
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 3%
+source-wordcount: '256'
+ht-degree: 0%
 
 ---
 
 
-# De HTML-editor van Campaign{#about-campaign-html-editor}
+# Aan de slag met de HTML-editor voor campagnes{#about-campaign-html-editor}
 
-De **Digital Content Editor (DCE)** is een HTML-inhoudeditor waarmee u eenvoudig sjablonen of inhoud in HTML-indeling kunt maken of wijzigen in Adobe Campaign.
+De **Digital Content Editor (DCE)** is een HTML-inhoudeditor waarmee u in Adobe Campaign eenvoudig inhoud en sjablonen in HTML-indeling kunt maken.
 
-Met de Digital Content Editor kunt u pagina-elementen invoegen en opmaken en databasevelden koppelen aan elementen van een HTML-pagina. Het wordt aangeboden door gebrek wanneer het creëren van een pagina voor een toepassing van het Web, of beschikbaar wanneer het creëren van leveringen die op een malplaatje worden gebaseerd waarin het actief is.
+Met de Digital Content Editor kunt u pagina-elementen invoegen en opmaken en databasevelden toewijzen met elementen van een HTML-pagina. Deze editor is beschikbaar wanneer u een pagina voor een webtoepassing maakt of wanneer u leveringen maakt op basis van een DCE-sjabloon.
 
 >[!NOTE]
+>>Als u JavaScript-code aan de serverzijde wilt toevoegen, gebruikt u verpersoonlijkingsblokken. [Meer informatie](../../delivery/using/personalization-blocks.md).
 >
->Met DCE kunt u alleen de bewerkingen uitvoeren die in deze sectie worden beschreven.
->
->Als u JavaScript-code aan de serverzijde wilt toevoegen, is het beter om deze code toe te voegen in aanpassingsblokken. Raadpleeg [deze pagina](../../delivery/using/personalization-blocks.md)voor meer informatie over het maken en wijzigen van aanpassingsblokken.
-
 >[!CAUTION]
->
->Om privacyredenen raden we aan HTTPS te gebruiken voor alle externe bronnen.
+Er moet naar alle externe bronnen worden verwezen met een HTTPS-URL.
 
-## Algemene bewerking van de Inhoudeditor {#content-editor-general-operation}
+## Belangrijkste stappen voor het gebruik van de Digital Content Editor {#content-editor-general-operation}
 
-In deze sectie worden de belangrijkste stappen beschreven voor het bewerken en uploaden van inhoud die is bewerkt met de DCE in het kader van een webtoepassing en in de context van een levering.
+In deze sectie worden de belangrijkste stappen beschreven voor het bewerken en uploaden van inhoud die met de DCE is bewerkt, in de context van een webtoepassing en leveringsontwerp.
 
 De algemene operatie is als volgt:
 
 ![](assets/dce_schema.png)
 
-Om een eenvoudige toepassing van het Web tot stand te brengen, zijn de stappen als volgt:
+Als u een eenvoudige **webtoepassing** wilt maken, moet u:
 
-* Creeer een toepassing van het Web, voor meer op dit, verwijs naar het [Creëren van een het landen pagina](../../web/using/creating-a-landing-page.md),
-* Selecteer bestaande inhoud of creërend inhoud van een standaardmalplaatje, voor meer op dit, verwijs naar het beheer [van het](../../web/using/template-management.md)Malplaatje,
-* Inhoud bewerken en configureren, voor meer informatie hierover, verwijst naar Inhoud [](../../web/using/editing-content.md)bewerken.
-* Publiceer de toepassing van het Web, voor meer op dit, verwijs naar het [Publiceren van inhoud](../../web/using/creating-a-landing-page.md#step-3---publishing-content) en [deze pagina](../../web/using/publishing-a-web-form.md#managing-web-forms-delivery-and-tracking).
-
->[!NOTE]
->
->Voor een volledig voorbeeld die de implementatie van DCE binnen het kader van een toepassing van het Web detailleert, verwijs naar het [Creëren van een het landen pagina](../../web/using/creating-a-landing-page.md).
-
-Als u een e-maillevering wilt maken, gaat u als volgt te werk:
-
-* Creeer een levering van een malplaatje van het e-mailtype waarin DCE actief is,
-* Selecteer bestaande inhoud of maak inhoud van een standaardsjabloon.
-* Online-inhoud bewerken en configureren
-* Verzend de levering, voor meer op dit verwijs naar [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md).
+1. Een webtoepassing maken - [Meer informatie](../../web/using/creating-a-landing-page.md)
+1. Bestaande inhoud selecteren of inhoud maken op basis van een standaardsjabloon - Meer [informatie](../../web/using/template-management.md)
+1. Inhoud bewerken en configureren - [Meer informatie](../../web/using/editing-content.md)
+1. De webtoepassing publiceren - [Meer informatie](../../web/using/creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
->
->Voor een volledig voorbeeld waarin de implementatie van DCE binnen het kader van een e-maillevering wordt gespecificeerd, verwijs naar [dit gebruiksgeval](../../web/using/use-case--creating-an-email-delivery.md).
+In [deze sectie](../../web/using/creating-a-landing-page.md)vindt u een volledige implementatiemonster in de context van een webtoepassing.
 
+Als u een **e-maillevering** wilt maken, moet u:
+
+1. Een levering maken op basis van een DCE-sjabloon - [Meer informatie](../../web/using/use-case--creating-an-email-delivery.md)
+1. Bestaande inhoud selecteren of inhoud maken op basis van een [standaardsjabloon](../../web/using/template-management.md)
+1. Online-inhoud bewerken en configureren
+1. De levering verzenden - [Meer informatie](../../delivery/using/steps-about-delivery-creation-steps.md)
+
+>[!NOTE]
+In [dit geval](../../web/using/use-case--creating-an-email-delivery.md)is een volledige implementatiemonster beschikbaar in de context van een e-maillevering.
