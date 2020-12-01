@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '489'
 ht-degree: 5%
 
 ---
@@ -24,6 +24,8 @@ Voordat u begint, moet u de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/
 >[!CAUTION]
 >
 >De console van de Cliënt van de campagne en de toepassingsserver van de Campagne moeten op de zelfde productversie lopen. Adobe raadt ook aan om dezelfde productbuild te gebruiken.
+
+![](assets/do-not-localize/how-to-video.png) Ontdek hoe u de Adobe Campaign Client in [video kunt installeren en instellen](#video)
 
 ## Download de console{#download-the-client-console}
 
@@ -93,4 +95,11 @@ Volg onderstaande stappen om u aan te melden bij een bestaande instantie:
 
 * [Een instantie maken en aanmelden](../../installation/using/creating-an-instance-and-logging-on.md).
 * [Compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html)
-* [De Adobe Campaign-client](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/install-and-setup-the-adobe-campaign-client.html) installeren en instellen (video)
+
+## Video over zelfstudie
+
+In deze video ziet u hoe u de Adobe Campaign-client installeert en instelt.
+
+>[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
+
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
