@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1579'
 ht-degree: 2%
 
 ---
@@ -225,15 +225,16 @@ U kunt de proefdrukken als doel **[!UICONTROL Seed addresses]** gebruiken: met d
 
 U kunt de definitie van een specifiek proefdrukdoel en het gebruik van zaadadressen combineren gebruikend de **[!UICONTROL Specific target and Seed addresses]** optie. De gerelateerde configuraties worden vervolgens in twee aparte subtabbladen gedefinieerd.
 
-## Seeds en proeven in een e-mail beheren {#seeds-and-proofs-video}
+Zie ook:
+
+* [Het proefdrukdoel selecteren](#selecting-the-proof-target)
+* [Seed-adressen](../../delivery/using/about-seed-addresses.md)
+* [Gebruiksscenario: seed-adressen selecteren op criteria](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+
+## Video over zelfstudie {#seeds-and-proofs-video}
 
 In deze video leert u hoe u zaden en proefdrukken aan een bestaande e-mail kunt toevoegen en hoe u deze kunt verzenden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
-Zie ook:
-* [Het proefdrukdoel selecteren](#selecting-the-proof-target)
-
-* [Seed-adressen](../../delivery/using/about-seed-addresses.md)
-
-* [Gebruiksscenario: seed-adressen selecteren op criteria](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
