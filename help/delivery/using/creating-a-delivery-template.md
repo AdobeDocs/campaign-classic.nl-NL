@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6335c1cd327a83dbc8c4d43c4ab795b84531c3e1
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 5%
+source-wordcount: '378'
+ht-degree: 6%
 
 ---
 
@@ -68,20 +68,24 @@ Voer de volgende stappen uit om een leveringssjabloon te configureren:
 >
 >Om configuratiefouten te vermijden, adviseren wij dat u een inheemse malplaatje dupliceert en zijn eigenschappen veranderen eerder dan een nieuw malplaatje tot stand te brengen.
 
-## Hoe te om een leveringsmalplaatje te vormen {#delivery-template-video}
+## Tutorialvideo’s {#delivery-template-video}
+
+### Hoe te om een leveringsmalplaatje te vormen
 
 In de volgende video ziet u hoe u een sjabloon voor een ad-hoclevering configureert.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
 
-## Eigenschappen voor leveringssjablonen instellen
+### Eigenschappen voor leveringssjablonen instellen
 
 In de volgende video ziet u hoe u de eigenschappen van de leveringssjabloon instelt en wordt elke eigenschap in detail uitgelegd.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
 
-## Hoe te om een ad hoc leveringsmalplaatje op te stellen
+### Hoe te om een ad hoc leveringsmalplaatje op te stellen
 
 In deze video wordt uitgelegd hoe u een sjabloon voor ad-hoc e-maillevering kunt implementeren. In deze video wordt het verschil tussen een e-maillevering en een leveringsworkflow uitgelegd.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
+
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
