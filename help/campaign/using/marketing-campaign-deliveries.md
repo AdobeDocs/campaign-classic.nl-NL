@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '2917'
+source-wordcount: '2925'
 ht-degree: 1%
 
 ---
@@ -457,8 +457,10 @@ Het exportmodel moet worden gekoppeld aan de dienstverlener die voor de betrokke
 >
 >Raadpleeg de sectie Aan de [slag](../../platform/using/generic-imports-and-exports.md) voor meer informatie over exporteren.
 
-#### Een e-mail maken in een campagne {#create-email-video}
+#### Video over zelfstudie {#create-email-video}
 
 In deze video wordt uitgelegd hoe u een campagne en een e-mail maakt in Adobe Campaign Classic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
