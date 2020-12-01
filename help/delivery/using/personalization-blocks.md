@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 3%
+source-wordcount: '896'
+ht-degree: 2%
 
 ---
 
@@ -154,8 +154,10 @@ Ga naar de verkenner en voer de volgende stappen uit om een verpersoonlijkingsbl
 
    * Voer de inhoud in (in HTML, tekst, JavaScript, enz.) van het (de) verpersoonlijkingsblok(ken) en klik **[!UICONTROL Save]**.
 
-## E-mails personaliseren met behulp van dynamische contentblokken {#personalization-blocks-video}
+## Video over zelfstudie {#personalization-blocks-video}
 
-Leer hoe u dynamische inhoudsblokken hebt gemaakt en hoe u deze kunt gebruiken om de inhoud van uw e-maillevering aan te passen.
+Leer hoe u dynamische inhoudsblokken maakt en hoe u deze kunt gebruiken om de inhoud van uw e-maillevering aan te passen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
+
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
