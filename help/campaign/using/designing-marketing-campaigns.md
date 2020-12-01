@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 6%
+source-wordcount: '448'
+ht-degree: 5%
 
 ---
 
@@ -25,6 +25,8 @@ Bovendien laat de module van het Beheer van het Middel van de **Marketing (MRM)*
 >
 >Raadpleeg de sectie Aan de [slag](../../platform/using/about-adobe-campaign-classic.md) voor meer informatie over de kernfuncties van Adobe Campaign.\
 >De mogelijkheden met betrekking tot het richten van de bevolking, berichtverpersoonlijking en berichtlevering op de diverse kanalen zijn gedetailleerd in [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md).
+
+![](assets/do-not-localize/how-to-video.png) [Concepten van marketingcampagnes ontdekken in video](#video)
 
 ## Basisbegrippen {#core-concepts}
 
@@ -62,3 +64,10 @@ De volgende concepten moeten bekend zijn in het kader van de campagne:
 
    Zie [Bronnen koppelen en structureren via een overzichtstabel](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)voor meer informatie hierover.
 
+## Zelfstudie {#video}
+
+In deze video worden de belangrijkste concepten van marketingcampagnes gepresenteerd.
+
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
+
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
