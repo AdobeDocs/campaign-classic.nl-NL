@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 3%
+source-wordcount: '2157'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ Vanuit het centrale gedeelte van de homepage kunt u koppelingen gebruiken om toe
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png) [Campaign-werkruimte ontdekken in video](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png)[ Campaign-werkruimte ontdekken in video](#video)
 
 >[!NOTE]
 >
@@ -389,3 +389,11 @@ Op de velden die een duur uitdrukken (bv. geldigheidsperiode van de middelen van
 * **[!UICONTROL d]** dagen.
 
 ![](assets/enter_unit_sample.png)
+
+## Video over zelfstudie {#video}
+
+In deze video wordt de werkruimte Campaign Classic weergegeven.
+
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
+
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
