@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 9%
+source-wordcount: '880'
+ht-degree: 8%
 
 ---
 
@@ -118,8 +118,10 @@ De standaardwaarde is 5 seconden.
 
 Als u deze optie instelt op 0, is er geen tijdslimiet voor de verpersoonlijkingsfase.
 
-## E-mails personaliseren met personalisatievelden {#personalization-fields-video}
+## Video over zelfstudie {#personalization-fields-video}
 
 Leer hoe u een verpersoonlijkingsveld toevoegt aan de onderwerpregel en de inhoud van een e-maillevering.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
+
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
