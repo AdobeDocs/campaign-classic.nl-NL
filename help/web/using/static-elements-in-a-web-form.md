@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1269'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # Statische elementen in een webformulier{#static-elements-in-a-web-form}
 
-U kunt elementen opnemen waarmee de gebruiker geen interactie heeft op de pagina&#39;s van het formulier. Dit zijn statische elementen, zoals afbeeldingen, HTML-inhoud, een horizontale balk of een hypertekstkoppeling. Deze elementen worden gemaakt met de eerste knop op de werkbalk door op het **[!UICONTROL Add static element]** menu te klikken.
+U kunt elementen opnemen waarmee de gebruiker geen interactie heeft op de pagina&#39;s van het formulier. Dit zijn statische elementen, zoals afbeeldingen, HTML-inhoud, een horizontale balk of een hypertekstkoppeling. Deze elementen worden gemaakt met de eerste knop op de werkbalk door **[!UICONTROL Static elements]** te selecteren.
 
 ![](assets/s_ncs_admin_survey_add_static_element.png)
 
@@ -36,7 +36,7 @@ De volgende veldtypen zijn beschikbaar:
 
 U kunt HTML-inhoud opnemen in een formulierpagina: hypertextkoppelingen, afbeeldingen, opgemaakte alinea&#39;s, video- of Flash-objecten, enz.
 
-Met de HTML-editor kunt u de inhoud invoeren die u in de formulierpagina wilt invoegen. Ga naar **[!UICONTROL Static elements>HTML]** .
+Met de HTML-editor kunt u de inhoud invoeren die u in de formulierpagina wilt invoegen. To open the editor, click **[!UICONTROL Static elements]** > **[!UICONTROL HTML]** .
 
 U kunt de inhoud rechtstreeks invoeren en opmaken of het venster met de broncode weergeven om deze in externe inhoud te plakken. Als u wilt overschakelen naar de modus &quot;broncode&quot;, klikt u op het eerste pictogram op de werkbalk:
 
@@ -54,7 +54,7 @@ Om een gegevensbestandgebied op te nemen, gebruik de verpersoonlijkingsknoop.
 
 Vul de velden in het bewerkingsvenster in, zoals in het volgende voorbeeld wordt getoond:
 
-Ga naar **[!UICONTROL Static elements>Link]** om een hypertekstkoppeling toe te voegen.
+Ga naar **[!UICONTROL Static elements]** > **[!UICONTROL Link]**.
 
 ![](assets/s_ncs_admin_survey_add_link.png)
 
@@ -174,7 +174,7 @@ Gebruik personalisatievelden om de gebruikersnaam en het geselecteerde merk opni
 
 >[!NOTE]
 >
->Om veiligheidsredenen wordt de in de **`<%=`** formule ingevoerde waarde vervangen door escape-tekens. Gebruik de volgende syntaxis om dit te voorkomen en alleen als dat nodig is: **`<%=`**.
+>Om veiligheidsredenen wordt de waarde die in de **`<%=`** formule is ingevoerd, vervangen door escape-tekens.
 
 In ons voorbeeld, worden de voornaam en de familienaam van de ontvanger opgeslagen in een gebied van het gegevensbestand, terwijl het merk van hun auto in een variabele wordt opgeslagen. De syntaxis van het bericht op bladzijde 2 is als volgt:
 
@@ -210,19 +210,19 @@ U kunt bijvoorbeeld een veld **Contactpersoon** maken waarmee u de tekenreeks &q
 
    >[!CAUTION]
    >
-   >Als u deze tekens invoert in de HTML-editor, worden de velden **&lt;** en **>** vervangen door de escape-tekens. In dit geval moet u de broncode corrigeren door op het **[!UICONTROL Display source code]** pictogram van de HTML-teksteditor te klikken.
+   >Als u deze tekens invoert in de HTML-editor, worden de velden **&lt;** en **>** vervangen door de tekens die eraan zijn ontsnapt. In dit geval moet u de broncode corrigeren door op het **[!UICONTROL Display source code]** pictogram van de HTML-teksteditor te klikken.
 
 1. Open het **[!UICONTROL Preview]** label van het formulier om de waarde weer te geven die in de HTML is ingevoerd:
 
    ![](assets/s_ncs_admin_survey_html_content_preview.png)
 
-In deze modus kunt u de tekst van webformulieren factoriseren en vertalingen beheren met het geïntegreerde vertaalgereedschap. Raadpleeg [Een webformulier](../../web/using/translating-a-web-form.md)vertalen voor meer informatie.
+In deze modus kunt u de tekst van webformulieren slechts eenmaal definiëren en vertalingen beheren met het geïntegreerde vertaalgereedschap. Raadpleeg [Een webformulier](../../web/using/translating-a-web-form.md)vertalen voor meer informatie.
 
 ## Inserting images {#inserting-images}
 
 Afbeeldingen die u in formulieren wilt opnemen, moeten worden opgeslagen op een server die van buitenaf toegankelijk is.
 
-Selecteer het **[!UICONTROL Static elements>Image]** menu.
+Selecteer het menu **[!UICONTROL Static elements]** > **[!UICONTROL Image]** .
 
 Selecteer de bron van de afbeelding die u wilt invoegen: het kan uit de openbare middelbibliotheek komen of op een externe server worden opgeslagen die van buiten toegankelijk is.
 
