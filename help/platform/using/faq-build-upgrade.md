@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '2020'
 ht-degree: 2%
@@ -61,7 +61,7 @@ Bijvoorbeeld, gebruikend de serverinformatie van het het schermschot in de vorig
 
 Adobe zal een steun van uw systeem alvorens om het even welke veranderingen nemen. Nochtans, als er kritiek aanpassingswerk is dat in uw niet productiesysteem (ontwikkeling of het opvoeren servers) is, wordt het HIGH AANBEVOLEN u dat werk als pakket voorafgaand aan om het even welke verbetering uitvoert.
 
-Kijk [naar deze manier van video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html)voor meer informatie.
+![](assets/do-not-localize/how-to-video.png) Kijk [naar deze manier van video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html)voor meer informatie.
 
 ## Wanneer zullen de upgrades plaatsvinden?
 
