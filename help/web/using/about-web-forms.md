@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Webformulieren
-description: Webformulieren
+title: Aan de slag met webformulieren
+description: Aan de slag met webformulieren in campagne
 audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 5%
+source-wordcount: '497'
+ht-degree: 3%
 
 ---
 
 
-# Webformulieren{#about-web-forms}
+# Get started with web forms{#about-web-forms}
 
 Adobe Campaign integreert een grafische module voor het definiëren en publiceren van webformulieren om pagina&#39;s te maken die invoer- en selectievelden bevatten en die mogelijk gegevens in de database bevatten. Zo kunt u webpagina&#39;s ontwerpen en plaatsen die gebruikers kunnen openen om informatie weer te geven of in te voeren.
 
@@ -53,7 +53,7 @@ Op het **[!UICONTROL Edit]** tabblad kunt u uw inhoud maken.
 
 Om de configuratie en de inhoud van de vorm van het Web te bepalen, pas de volgende stappen toe:
 
-* Begin door de vereiste pagina&#39;s en controles te maken: invoervelden, vervolgkeuzelijsten, HTML-inhoud, enz.
+* Begin door de vereiste pagina&#39;s en controles te creëren: invoervelden, vervolgkeuzelijsten, HTML-inhoud, enz.
 
    Deze stap wordt hieronder beschreven.
 
