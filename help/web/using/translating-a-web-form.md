@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 1%
@@ -105,7 +105,7 @@ Het is mogelijk tekenreeksen te exporteren en te importeren om deze te vertalen 
 
 ### Bestanden exporteren {#exporting-files}
 
-1. Selecteer de webtoepassing(en) waarvan u de tekenreeksen wilt importeren, klik met de rechtermuisknop en selecteer **[!UICONTROL Actions > Export strings for translation...]**
+1. Selecteer de webtoepassing(en) waarvan u de tekenreeksen wilt exporteren, klik met de rechtermuisknop en selecteer **[!UICONTROL Actions > Export strings for translation...]**
 
    ![](assets/s_ncs_admin_survey_trad_export.png)
 
@@ -454,7 +454,7 @@ Voer de volgende stappen uit om een taal toe te voegen:
 
    ![](assets/s_ncs_admin_survey_trad_system_translation.png)
 
-1. Selecteer de vertaaltaal en voer een vertaling voor de tekenreeks in. U kunt de vertaling goedkeuren door de **[!UICONTROL Translation validated]** optie te controleren.
+1. Selecteer de vertaaltaal en voer een vertaling voor de tekenreeks in. U kunt de vertaling goedkeuren door de **[!UICONTROL Translation approved]** optie te controleren.
 
    ![](assets/s_ncs_admin_survey_trad_system_translation2.png)
 
@@ -470,7 +470,7 @@ Voer de volgende stappen uit om een taal toe te voegen:
 
 Als u webtoepassingen wilt vertalen in andere talen dan de standaardtalen (zie [Weergavetaal](#changing-forms-display-language)van formulieren wijzigen), moet u een nieuwe vertaaltaal toevoegen.
 
-1. Klik op het **[!UICONTROL Administration > Platform > Itemized lists]** knooppunt van de Adobe Campaign-structuur en selecteer een optie in de **[!UICONTROL Languages available for translation]** lijst. De lijst met beschikbare vertalingen wordt weergegeven in de onderste sectie van het venster.
+1. Klik op het **[!UICONTROL Administration > Platform > Enumerations]** knooppunt van de Adobe Campaign-structuur en selecteer een optie in de **[!UICONTROL Languages available for translation]** lijst. De lijst met beschikbare vertalingen wordt weergegeven in de onderste sectie van het venster.
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
 
