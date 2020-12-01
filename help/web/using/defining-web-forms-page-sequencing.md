@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # De volgorde van webformulierpagina’s definiëren{#defining-web-forms-page-sequencing}
 
-Het formulier kan een of meer pagina&#39;s bevatten. Het wordt gebouwd door een diagram dat u opeenvolgende pagina&#39;s en het testen, manuscriptuitvoering en de stadia van de paginakijlopname laat. De wijze van de diagramconstructie is het zelfde als voor een werkschema.
+Het formulier kan een of meer pagina&#39;s bevatten. Het wordt gebouwd door een diagram dat u opeenvolgende pagina&#39;s, het testen, manuscriptuitvoering, paginakijl en opnamestappen laat. De globale wijze van het diagramontwerp is het zelfde als voor een werkschema van de Campagne.
 
 ## Vorige pagina en volgende pagina {#about-previous-page-and-next-page}
 
