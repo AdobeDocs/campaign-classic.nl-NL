@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '805'
 ht-degree: 8%
 
 ---
@@ -126,7 +126,9 @@ U kunt een of meer lijsten verwijderen uit de lijst met groepen in de Adobe Camp
 >
 >Wanneer u een lijst verwijdert, worden de profielen in de lijst niet gewijzigd, maar worden de gegevens in het bijbehorende profiel bijgewerkt.
 
-## Hoe te om een lijst van ontvangers tot stand te brengen {#create-list-video}
+## Video over zelfstudie {#create-list-video}
+
+### Hoe te om een lijst van ontvangers tot stand te brengen
 
 Een lijst is een statische reeks ontvangers die doelgericht kan worden benaderd in leveringsacties of die tijdens importbewerkingen of de uitvoering van een workflow kan worden bijgewerkt. Een lijst met ontvangers wordt ook wel een doelgroep genoemd.
 
@@ -134,8 +136,10 @@ Leer hoe te om een publiek tot stand te brengen door een lijst van ontvangers va
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-## How to create a list of recipients with a workflow {#create-list-in-a-wf-video}
+### How to create a list of recipients with a workflow {#create-list-in-a-wf-video}
 
 Leer hoe u een workflow maakt om ontvangers als doel in te stellen en hoe u deze terugkeert voordat u de lijst in een e-maildoel gebruikt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
+
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
