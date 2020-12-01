@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2457'
 ht-degree: 1%
 
 ---
@@ -196,7 +196,7 @@ Met keuzerondjes kunt u de gebruiker een aantal exclusieve opties bieden waaruit
 
 ![](assets/s_ncs_admin_survey_radio_button.png)
 
-U kunt keuzerondjes afzonderlijk maken (eenheidsknoppen) of via een meerkeuzevelijst, maar aangezien het doel van de keuzerondjes is een van de opties te selecteren, maken we altijd minstens één keuzerondje, nooit slechts één keuzerondje.
+U kunt keuzerondjes afzonderlijk maken (eenheidsknoppen) of via een keuzelijst met meerdere keuzerondjes, maar aangezien het doel van de keuzerondjes is een optie of een andere optie te selecteren, maken we altijd ten minste een paar keuzerondjes, nooit slechts één knop.
 
 >[!CAUTION]
 >
@@ -251,7 +251,7 @@ De inhoud van de formuliervelden kan worden opgemaakt op basis van de gegevens d
 
 ![](assets/s_ncs_admin_survey_date_calendar.png)
 
-Als u wilt dat de gebruiker een datum op een formulierpagina kan invoeren, selecteert u deze **[!UICONTROL Add input field > Date...]** op de werkbalk of in de paginaeditor.
+Als u wilt toestaan dat de gebruiker een datum op een formulierpagina invoert, voegt u een invoerveld toe en selecteert u het type **[!UICONTROL Date...]**.
 
 Voer een label in voor het veld en configureer de gegevensopslagmodus.
 
@@ -388,11 +388,13 @@ U kunt de koppeling naar deze bestanden opslaan in een lokale variabele of in ee
 
 ## Een verborgen constante invoegen {#inserting-a-hidden-constant}
 
-U kunt een veld markeren wanneer de gebruiker een van de pagina&#39;s van het formulier doorgeeft. Hiervoor plaatst u een constante op de pagina en geeft u de waarde en de opslaglocatie op.
+Wanneer de gebruiker een van de pagina&#39;s van het formulier valideert, kunt u een specifieke waarde instellen op een veld van zijn profiel of op een variabele.
 
 Dit veld is niet zichtbaar voor de gebruiker, maar kan worden gebruikt om de gegevens in het gebruikersprofiel te verrijken.
 
-In het volgende voorbeeld wordt het **oorspronkelijke** bestand van het ontvangende profiel automatisch ingevuld wanneer een gebruiker deze pagina goedkeurt. De constante wordt niet weergegeven op de pagina.
+U doet dit door een **constante** op de pagina te plaatsen en de waarde en opslaglocatie op te geven.
+
+In het volgende voorbeeld wordt het veld **Oorsprong** van het ontvangende profiel automatisch ingevuld wanneer een gebruiker deze pagina goedkeurt. De constante wordt niet weergegeven op de pagina.
 
 ![](assets/s_ncs_admin_survey_constante.png)
 
