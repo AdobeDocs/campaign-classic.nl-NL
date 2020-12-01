@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 4%
+source-wordcount: '1580'
+ht-degree: 3%
 
 ---
 
@@ -203,8 +203,10 @@ Bijvoorbeeld, als u een productlijst in uw e-mail opnam, wanneer het uitgeven va
 >
 >Standaard is de **[!UICONTROL AMP inclusion]** optie ingesteld op **[!UICONTROL No]**.
 
-## AMP activeren en gebruiken voor e-mailberichten {#amp-email-video}
+## Video over zelfstudie {#amp-email-video}
 
 In de onderstaande video wordt uitgelegd hoe u AMP kunt activeren in Adobe Campaign Classic en wordt u het gebruik ervan voorgesteld.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
+
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
