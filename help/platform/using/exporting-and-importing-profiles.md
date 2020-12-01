@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 15%
+source-wordcount: '144'
+ht-degree: 11%
 
 ---
 
@@ -34,8 +34,10 @@ Als u taken voor het importeren en exporteren van gegevens wilt configureren en 
 ![](assets/s_ncs_user_interface_import_link.png)
 
 
-## Hoe kan ik profielen importeren{#import-profiles-video}
+## Video over zelfstudie {#import-profiles-video}
 
 In deze video wordt uitgelegd hoe u profielen in Adobe Campaign kunt importeren, zodat u deze af en toe kunt importeren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
+
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
