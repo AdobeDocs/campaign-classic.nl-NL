@@ -1,16 +1,16 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: '"Gebruiksscenario: een e-maillevering maken"'
-description: '"Gebruiksscenario: een e-maillevering maken"'
+title: Hoofdletters gebruiken - een e-maillevering maken
+description: Gebruiksscenario voor e-maillevering maken
 audience: web
 content-type: reference
 topic-tags: editing-html-content
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 46aa896929c960abeb501642a5ffbbb56de4802e
 workflow-type: tm+mt
 source-wordcount: '734'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
