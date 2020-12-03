@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9cf995fe58b6afd89ee54724c97681f39994eba9
 workflow-type: tm+mt
-source-wordcount: '2183'
+source-wordcount: '2201'
 ht-degree: 80%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 80%
 
 # Release 20.2{#release-20-2}
 
-![](assets/do-not-localize/cp-icon.png) **De nieuwe versie** van oktober van het Controlebord met domeinconfiguratie die CNAMEs en nieuwe gegevensbestand controlemogelijkheden gebruikt. [Meer informatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Release van nieuw Configuratiescherm in oktober** met domeinconfiguratie met CNAME-records en nieuwe mogelijkheden voor databasecontrole. [Meer informatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/green_2.png) Release 20.2.3 - build 9182 {#release-20-2-3-build-9182}
 
@@ -52,10 +52,10 @@ _22 juli 2020_
 * De iOS HTTP2-connector is verbeterd (updates van derden en foutbeheer). (NEO-25904, NEO-25903)
 * De lijst jarsToSkip in catalina.properties is bijgewerkt om de verwijzing naar een jar-bestand te verwijderen dat niet meer werd gebruikt (iOS-meldingen).
 * Probleem verholpen waarbij de voorbereiding van de levering na de upgrade werd geblokkeerd.
-* Na de schakelaar aan het [nieuwe mechanisme](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)van opeenvolging ID, worden alle Webtoepassingen die de ontvankelijke lijst bijwerken opnieuw gepubliceerd tijdens postupgrade.
+* Na de schakelaar aan [nieuw opeenvolgingsID mechanisme](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence), worden alle Webtoepassingen die de ontvankelijke lijst bijwerken opnieuw gepubliceerd tijdens postupgrade.
 * Oplossing voor een mogelijke XSS-kwetsbaarheid in de leveringsinhoud. (NEO-17987, NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **Release van nieuw configuratiescherm in juni** met controle van actieve profielen, controle van de leverbaarheid van subdomeinen en beheer van GPG-sleutels. [Meer informatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Release van nieuw configuratiescherm in juni** met controle van actieve profielen, controle van de leverbaarheid van subdomeinen en beheer van GPG-sleutels. [Meer informatie](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/orange_2.png) Release 20.2.1 - build 9178 {#release-20-2-1-build-9178}
 
@@ -155,6 +155,8 @@ Kom meer te weten in de [Campaign-compatibiliteitsmatrix](https://helpx.adobe.co
 * Certificaten voor mobiele iOS-applicaties met de iOS HTTP2-connector worden nu gevalideerd voordat pushmeldingen worden verzonden, zodat leveringen niet mislukken vanwege verlopen certificaten.
 
 * Het beheer van HTTP-proxyverbindingen is verbeterd. [Meer informatie](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
+
+* Nieuwe optie in **[!UICONTROL Javascript Code]** en **[!UICONTROL Advanced Javascript Code]** werkschemaactiviteiten om uitvoering na een grens tegen te houden. De standaardwaarde is 1 uur. [Meer informatie](../../workflow/using/sql-code-and-javascript-code.md#javascript-code).
 
 **Overige wijzigingen**
 
