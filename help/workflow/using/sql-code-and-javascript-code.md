@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 8bcfc8826a66517e6a648dbc57b681778718c33c
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 5%
+source-wordcount: '226'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 5%
 
 ## SQL-code {#sql-code}
 
-Een **[!UICONTROL SQL code]** activiteit voert een SQL manuscript uit. Het script is een JST-sjabloon.
+Een activiteit **[!UICONTROL SQL code]** voert een SQL manuscript uit. Het script is een JST-sjabloon.
 
 ![](assets/sql_code.png)
 
@@ -29,30 +29,33 @@ Een **[!UICONTROL SQL code]** activiteit voert een SQL manuscript uit. Het scrip
 
 * **[!UICONTROL Processing errors]**
 
-   Raadpleeg [Verwerkingsfouten](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+   Zie [Fouten verwerken](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
 
 ## JavaScript-code en geavanceerde JavaScript-code {#javascript-code}
 
-**[!UICONTROL JavaScript code]** en **[!UICONTROL Advanced JavaScript code]** activiteiten voeren een JavaScript-script uit in de context van een workflow. Raadpleeg de sectie [JavaScript-scripts en -sjablonen](../../workflow/using/javascript-scripts-and-templates.md) voor meer informatie over scripts.
+**[!UICONTROL JavaScript code]** en  **[!UICONTROL Advanced JavaScript code]** activiteiten voeren een JavaScript-script uit in de context van een workflow. Raadpleeg de sectie [JavaScript-scripts en sjablonen](../../workflow/using/javascript-scripts-and-templates.md) voor meer informatie over scripts.
 
->[!NOTE]
->
->Standaard kan de uitvoeringsfase van **[!UICONTROL JavaScript code]** en de **[!UICONTROL Advanced JavaScript code]** activiteiten niet langer duren dan 1 uur. Na deze vertraging wordt het proces afgebroken met een foutbericht en mislukt de uitvoering van de activiteit.
->
->U kunt deze vertraging wijzigen in het **[!UICONTROL Stop execution after]** veld dat beschikbaar is in de eigenschappen van de activiteiten.
+### Uitvoeringstijd {#exec-delay}
 
-* **[!UICONTROL JavaScript code]**
+Vanaf release 20.2 is een uitvoeringstijd toegevoegd aan de **[!UICONTROL JavaScript code]**- en **[!UICONTROL Advanced JavaScript code]**-activiteiten. Standaard kan de uitvoeringsfase niet langer duren dan 1 uur. Na deze vertraging wordt het proces afgebroken met een foutbericht en mislukt de uitvoering van de activiteit.
 
-   ![](assets/javascript_code.png)
+U kunt deze vertraging wijzigen in het veld **[!UICONTROL Stop execution after]** dat beschikbaar is in deze activiteiten.
 
-   * **[!UICONTROL Script]**: Het centrale gebied van de editor bevat het script dat moet worden uitgevoerd.
-   * **[!UICONTROL Processing errors]**: Raadpleeg [Verwerkingsfouten](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+Als u deze limiet wilt negeren, moet u de waarde instellen op **0**.
 
-* **[!UICONTROL Advanced JavaScript code]**
+### JavaScript-code {#js-code-desc}
 
-   ![](assets/advanced_javascript_code.png)
+![](assets/javascript_code.png)
 
-   * **[!UICONTROL First call]**: De eerste streek van de redacteur bevat het manuscript om tijdens de eerste vraag uit te voeren.
-   * **[!UICONTROL Next calls]**: De tweede streek van de redacteur bevat het manuscript om tijdens de volgende vraag uit te voeren.
-   * **[!UICONTROL Transitions]**: U kunt verschillende uitvoerovergangen voor activiteiten definiëren.
-   * **[!UICONTROL Schedule]**: Op het **[!UICONTROL Schedule]** tabblad kunt u plannen wanneer de activiteit moet worden geactiveerd.
+* **[!UICONTROL Script]**: Het centrale gebied van de editor bevat het script dat moet worden uitgevoerd.
+
+* **[!UICONTROL Process errors]**: Raadpleeg  [Verwerkingsfouten](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+
+### Geavanceerde JavaScript-code {#adv-js-code-desc}
+
+![](assets/advanced_javascript_code.png)
+
+* **[!UICONTROL First call]**: De eerste streek van de redacteur bevat het manuscript om tijdens de eerste vraag uit te voeren.
+* **[!UICONTROL Next calls]**: De tweede streek van de redacteur bevat het manuscript om tijdens de volgende vraag uit te voeren.
+* **[!UICONTROL Transitions]**: U kunt verschillende uitvoerovergangen voor activiteiten definiëren.
+* **[!UICONTROL Schedule]**: Op het  **[!UICONTROL Schedule]** tabblad kunt u plannen wanneer de activiteit moet worden geactiveerd.
