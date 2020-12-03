@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Adobe Campaign biedt standaard een standaard ontvangende tabel aan waaraan funct
 
 Als deze extensiemethode voldoende flexibiliteit biedt om een tabel uit te breiden, is het niet mogelijk het aantal velden of koppelingen in de tabel te beperken. Het gebruiken van een niet-standaardlijst, of &quot;externe ontvankelijke lijst&quot;, staat voor een grotere flexibiliteit toe maar vereist bepaalde voorzorgsmaatregelen wanneer het uitvoeren van het.
 
-## Voorzorgsmaatregelen {#precisions}
+## Voorschriften {#precisions}
 
 Met deze functionaliteit kan Adobe Campaign gegevens uit een externe database verwerken: deze gegevens worden gebruikt als een reeks profielen voor leveringen . Bij de implementatie van dit proces zijn verschillende definities nodig die relevant kunnen zijn voor de behoeften van de klant. Bijvoorbeeld:
 
@@ -47,34 +47,34 @@ Het gebruiken van een externe ontvankelijke lijst heeft de volgende beperkingen:
 
    We raden aan:
 
-   * De schema&#39;s **[!UICONTROL nms:BroadLogRcp]** en schema&#39;s aan de out-of-the-box **[!UICONTROL nms:TrackingLogRcp]** **[!UICONTROL nms:Recipientschema]**. Die twee logboeklijsten zouden niet aan een extra douane ontvankelijke lijst moeten worden verbonden.
-   * Het bepalen van specifieke douanerelogboek en trackinglogschema&#39;s voor elk nieuw douane ontvankelijk schema. Dit kan automatisch worden gedaan wanneer vestiging de doelafbeelding, zie [Afbeelding](../../configuration/using/target-mapping.md)van het Doel.
+   * De schema&#39;s **[!UICONTROL nms:BroadLogRcp]** en **[!UICONTROL nms:TrackingLogRcp]** verwijzen naar de schema&#39;s **[!UICONTROL nms:Recipientschema]** die buiten de doos liggen. Die twee logboeklijsten zouden niet aan een extra douane ontvankelijke lijst moeten worden verbonden.
+   * Het bepalen van specifieke douanerelogboek en trackinglogschema&#39;s voor elk nieuw douane ontvankelijk schema. Dit kan automatisch worden gedaan wanneer vestiging de doelafbeelding, zie [Doelafbeelding](../../configuration/using/target-mapping.md).
 
-* U kunt de standaard **[!UICONTROL Services and Subscriptions]** die in het product wordt aangeboden niet gebruiken.
+* U kunt de standaard **[!UICONTROL Services and Subscriptions]** niet gebruiken die in het product wordt aangeboden.
 
-   Dit betekent dat de in [dit punt](../../delivery/using/managing-subscriptions.md) beschreven algemene bewerking niet van toepassing is.
+   Dit betekent dat de algemene bewerking die in [deze sectie](../../delivery/using/managing-subscriptions.md) wordt beschreven, niet van toepassing is.
 
-* De koppeling met de **[!UICONTROL visitor]** tabel werkt niet.
+* De koppeling met de tabel **[!UICONTROL visitor]** werkt niet.
 
-   Aldus, om de **[!UICONTROL Social Marketing]** module te gebruiken moet u de opslagstap vormen om de correcte lijst van verwijzingen te voorzien.
+   Als u dus de module **[!UICONTROL Social Marketing]** wilt gebruiken, moet u de opslagstap configureren om naar de juiste tabel te verwijzen.
 
    Op dezelfde manier moet bij het gebruik van verwijzingsfuncties het standaard eerste berichtoverdrachtmodel worden aangepast.
 
 * U kunt niet handmatig profielen toevoegen aan een lijst.
 
-   Daarom is de in [dit deel](../../platform/using/creating-and-managing-lists.md) beschreven procedure niet van toepassing zonder een extra configuratie.
+   Daarom is de in [dit sectie](../../platform/using/creating-and-managing-lists.md) gedetailleerde procedure niet van toepassing zonder een extra configuratie.
 
    >[!NOTE]
    >
-   >Met behulp van workflows kunt u nog steeds lijsten met ontvangers maken. Zie Een profiellijst [maken met een workflow](../../configuration/using/creating-a-profile-list-with-a-workflow.md)voor meer informatie.
+   >Met behulp van workflows kunt u nog steeds lijsten met ontvangers maken. Raadpleeg [Een profiellijst maken met een workflow](../../configuration/using/creating-a-profile-list-with-a-workflow.md) voor meer informatie.
 
 Wij adviseren ook controlerend de standaardwaarden die in de verschillende uit-van-de-doos configuraties worden gebruikt: afhankelijk van de gebruikte functies moeten verschillende aanpassingen worden uitgevoerd .
 
 Bijvoorbeeld:
 
-* Bepaalde standaardrapporten, met name die van **Interaction** en de **Mobiele Toepassingen** , moeten opnieuw worden ontwikkeld. Raadpleeg de sectie [Rapporten](../../configuration/using/managing-reports.md) beheren.
-* De standaardconfiguraties voor bepaalde workflowactiviteiten verwijzen naar de standaardtabel met ontvangers (**[!UICONTROL nms:recipient]**): deze configuraties moeten worden veranderd wanneer gebruikt voor een externe ontvangerslijst. Raadpleeg de sectie [Workflows](../../configuration/using/managing-workflows.md) beheren.
+* Bepaalde standaardrapporten, met name die welke worden aangeboden door **Interactie** en **Mobiele toepassingen** moeten opnieuw worden ontwikkeld. Raadpleeg de sectie [Rapporten beheren](../../configuration/using/managing-reports.md).
+* De standaardconfiguraties voor bepaalde workflowactiviteiten verwijzen naar de standaardtabel met ontvangers (**[!UICONTROL nms:recipient]**): deze configuraties moeten worden veranderd wanneer gebruikt voor een externe ontvangerslijst. Raadpleeg de sectie [Workflows beheren](../../configuration/using/managing-workflows.md).
 * Het standaard **[!UICONTROL Unsubscription link]** verpersoonlijkingsblok moet worden aangepast.
 * De doelafbeelding van de standaardleveringsmalplaatjes moet worden gewijzigd.
-* V4-formulieren zijn niet compatibel met een tabel met externe ontvangers: u moet de toepassingen van het Web gebruiken.
+* V4-formulieren zijn niet compatibel met een tabel met externe ontvangers: u moet webtoepassingen gebruiken.
 
