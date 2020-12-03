@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 3%
@@ -17,11 +17,11 @@ ht-degree: 3%
 
 # Een collaboratieve campagne maken{#creating-a-collaborative-campaign-intro}
 
-De centrale entiteit creeert samenwerkingscampagnes van de **Verdeelde de campagnemalplaatjes van de Marketing** . Zie [deze pagina](../../campaign/using/about-distributed-marketing.md#collaborative-campaign).
+De centrale entiteit creeert samenwerkingscampagnes van **Distributed Marketing** campagnemalplaatjes. Zie [deze pagina](../../campaign/using/about-distributed-marketing.md#collaborative-campaign).
 
 ## Een collaboratieve campagne maken {#creating-a-collaborative-campaign}
 
-Als u een samenwerkingscampagne wilt configureren, klikt u op het **[!UICONTROL Campaign management > Campaigns]** knooppunt en vervolgens op het **[!UICONTROL New]** pictogram.
+Als u een samenwerkingscampagne wilt configureren, klikt u op het knooppunt **[!UICONTROL Campaign management > Campaigns]** en vervolgens op het pictogram **[!UICONTROL New]**.
 
 >[!NOTE]
 >
@@ -31,23 +31,23 @@ Het configuratieproces voor een samenwerkingscampagnecadatabase is gelijkaardig 
 
 ### Op formulier {#by-form}
 
-Als u een samenwerkingscampagne wilt maken (op formulier), moet u de **[!UICONTROL Collaborative campaign (by form)]** sjabloon selecteren.
+Als u een samenwerkingscampagne wilt maken (op formulier), moet de sjabloon **[!UICONTROL Collaborative campaign (by form)]** zijn geselecteerd.
 
 ![](assets/mkg_dist_mutual_op_form2.png)
 
-Klik op het **[!UICONTROL Edit]** tabblad op de **[!UICONTROL Advanced campaign settings...]** koppeling voor toegang tot het tabblad **Distributed Marketing** .
+Klik op het tabblad **[!UICONTROL Edit]** op de koppeling **[!UICONTROL Advanced campaign settings...]** om het tabblad **Distributed Marketing** te openen.
 
-Selecteer de **webinterface Op formulier** . Met dit type interface kunt u verpersoonlijkingsvelden maken die door lokale entiteiten worden gebruikt wanneer ze een campagne bestellen. Zie Een lokale campagne [maken (op formulier)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
+Selecteer de **Op vorm** Webinterface. Met dit type interface kunt u verpersoonlijkingsvelden maken die door lokale entiteiten worden gebruikt wanneer ze een campagne bestellen. Zie [Een lokale campagne maken (op formulier)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
 
-Sla uw campagne op. U kunt het nu gebruiken vanuit de **Campagnepakketweergave** in het **Campagneuniversum** door op de **[!UICONTROL Create]** knop te klikken.
+Sla uw campagne op. U kunt het van **Campagnepakketten** nu gebruiken mening in **Campagne** universum, door **[!UICONTROL Create]** knoop te klikken.
 
-In de **[!UICONTROL Campaign Package]** weergave kunt u lokale campagnemasjablonen (out-of-the-box of gedupliceerd) gebruiken, evenals referentiecampagnes voor samenwerkingscampagnes, met als doel campagnes voor uw verschillende organisatorische entiteiten te maken.
+In de weergave **[!UICONTROL Campaign Package]** kunt u lokale campagnemalplaatjes (out-of-the-box of gedupliceerd) gebruiken, evenals referentiecampagnes voor samenwerkingscampagnes, met als doel campagnes voor uw verschillende organisatorische entiteiten te maken.
 
 ![](assets/mkg_dist_mutual_op_form1b.png)
 
 ### Op campagne {#by-campaign}
 
-Als u een samenwerkingscampagne wilt maken (per campagne), moet u de **[!UICONTROL Collaborative campaign (by campaign) (opCollaborativeByCampaign)]** sjabloon selecteren.
+Om een samenwerkingscampagne (door campagne) tot stand te brengen, moet **[!UICONTROL Collaborative campaign (by campaign) (opCollaborativeByCampaign)]** malplaatje worden geselecteerd.
 
 ![](assets/mkg_dist_mutual_op_by_op2.png)
 
@@ -61,13 +61,13 @@ Zodra een orde voor een **Samenwerken campagne (door campagne)** door de central
 
 De lokale entiteit voert de onderliggende campagne uit. De centrale entiteit voert de bovenliggende campagne uit.
 
-De centrale entiteit kan alle kindcampagnes bekijken verbonden aan een **Collaborative campagne (door campagne)** van dit dashboard (via de **[!UICONTROL List of associated campaigns]** verbinding).
+De centrale entiteit kan alle kindcampagnes bekijken verbonden aan een **Samenwerken campagne (door campagne)** van dit dashboard (via **[!UICONTROL List of associated campaigns]** verbinding).
 
 ![](assets/mkg_dist_mutual_op_by_op.png)
 
 ### Op doelgoedkeuring {#by-target-approval}
 
-Als u een samenwerkingscampagne wilt maken (door goedkeuring als doel), moet de **[!UICONTROL Collaborative campaign (by target approval)]** sjabloon zijn geselecteerd.
+Om een samenwerkingscampagne (door doelgoedkeuring) tot stand te brengen, moet **[!UICONTROL Collaborative campaign (by target approval)]** malplaatje worden geselecteerd.
 
 ![](assets/mkg_dist_mutual_op_by_valid.png)
 
@@ -75,23 +75,23 @@ Als u een samenwerkingscampagne wilt maken (door goedkeuring als doel), moet de 
 >
 >In deze modus hoeft de centrale entiteit de lokale entiteiten niet op te geven.
 
-De campagneworkflow moet activiteiten van het type **Lokale goedkeuring** integreren. De activiteitsparameters zijn als volgt:
+De campagnewerkstroom moet **Lokale goedkeuring** typeactiviteit integreren. De activiteitsparameters zijn als volgt:
 
 * **[!UICONTROL Action to perform]** : Doelgoedkeuringsmelding.
 * **[!UICONTROL Distribution context]** : Expliciet.
 * **[!UICONTROL Data distribution]** : Distributie van lokale entiteiten.
 
-**De verdeling** van het type gegevens van de lokale entiteitdistributie moet worden gecreeerd. Met de sjabloon voor gegevensdistributie kunt u het aantal records uit een lijst met groeperingswaarden beperken. Klik **[!UICONTROL Resources > Campaign management > Data distribution]** in op het **[!UICONTROL New]** pictogram om een nieuwe afbeelding te maken **[!UICONTROL Data distribution]**. Raadpleeg de handleiding voor [workflows](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-) voor meer informatie over gegevensdistributie.
+**De lokale entiteit** distributi de verspreiding van contacttypegegevens moet worden gecreeerd. Met de sjabloon voor gegevensdistributie kunt u het aantal records uit een lijst met groeperingswaarden beperken. Klik in **[!UICONTROL Resources > Campaign management > Data distribution]** op het pictogram **[!UICONTROL New]** om een nieuwe **[!UICONTROL Data distribution]** te maken. Raadpleeg de handleiding [Workflows](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-) voor meer informatie over gegevensdistributie.
 
 ![](assets/mkg_dist_data_distribution.png)
 
-Select the **Targeting dimension** and the **[!UICONTROL Distribution field]**. Selecteer voor de **[!UICONTROL Assignment type]** optie **Lokale entiteit**.
+Selecteer **Doeldimensie** en **[!UICONTROL Distribution field]**. Selecteer **Lokale entiteit** voor **[!UICONTROL Assignment type]**.
 
-Voeg op het **[!UICONTROL Distribution]** tabblad een veld toe voor elke lokale entiteit en geef de waarde op.
+Voeg op het tabblad **[!UICONTROL Distribution]** een veld toe voor elke lokale entiteit en geef de waarde op.
 
 ![](assets/mkg_dist_data_distribution2.png)
 
-U kunt een tweede goedkeuring **van het** Doel na de het type van **Levering** activiteit toevoegen om een rapport over het te vormen.
+U kunt een tweede **Goedkeuring van het Doel** na **Levering** typeactiviteit toevoegen om een rapport over het te vormen.
 
 In het bericht van de campagneverwezenlijking, ontvangt de lokale entiteit een contactlijst die door de centrale entiteitparameters vooraf is bepaald.
 
@@ -103,17 +103,17 @@ De lokale entiteit kan bepaalde contacten schrappen die op de campagneinhoud wor
 
 ### Eenvoudig {#simple}
 
-Als u een eenvoudige samenwerkingscampagne wilt maken, moet u de **[!UICONTROL Collaborative campaign (simple)]** sjabloon selecteren.
+Als u een eenvoudige samenwerkingscampagne wilt maken, moet de sjabloon **[!UICONTROL Collaborative campaign (simple)]** zijn geselecteerd.
 
-## Creating a collaborative campaign package {#creating-a-collaborative-campaign-package}
+## Een gezamenlijk campagnemakket maken {#creating-a-collaborative-campaign-package}
 
 Om een campagne ter beschikking te stellen van lokale entiteiten moet de centrale entiteit een campagnepakket maken.
 
 Voer de volgende stappen uit:
 
-1. Klik in de **[!UICONTROL Navigation]** sectie op de pagina **Campagnes** op de **[!UICONTROL Campaign packages]** koppeling.
+1. Klik in de sectie **[!UICONTROL Navigation]** op de pagina **Campagnes** op de koppeling **[!UICONTROL Campaign packages]**.
 1. Klik op de knop **[!UICONTROL Create]**.
-1. In het gedeelte boven in het venster kunt u de **[!UICONTROL New collaborative package (mutualizedEmpty)]** sjabloon selecteren.
+1. Met de sectie boven in het venster kunt u de sjabloon **[!UICONTROL New collaborative package (mutualizedEmpty)]** selecteren.
 1. Selecteer de referentiecampagne.
 1. Geef het label, de map en het uitvoeringsschema voor het campagnemakket op.
 
@@ -121,11 +121,11 @@ Voer de volgende stappen uit:
 
 De begin- en einddatum bepalen de zichtbaarheidsperiode van de campagne in de lijst met campagnepakketten.
 
-Voor **samenwerkingscampagnes** moet de centrale entiteit de registratie- en personalisatietermijn specificeren.
+Voor **samenwerkingscampagnes**, moet de centrale entiteit de registratie en verpersoonlijkingsdeadline specificeren.
 
 >[!NOTE]
 >
->De **[!UICONTROL Personalization deadline]** methode stelt de centrale entiteit in staat een deadline te kiezen waarbinnen de lokale entiteiten de documenten (spreadsheets, afbeeldingen) moeten hebben afgeleverd die moeten worden gebruikt om de campagne te configureren. Dit is geen verplichte optie. Zijdelingse datums hebben geen invloed op de uitvoering van de campagne.
+>Met **[!UICONTROL Personalization deadline]** kan de centrale entiteit een deadline kiezen waarbinnen de lokale entiteiten de documenten (spreadsheets, afbeeldingen) moeten hebben afgeleverd om de campagne te configureren. Dit is geen verplichte optie. Zijdelingse datums hebben geen invloed op de uitvoering van de campagne.
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry.png)
 
@@ -141,7 +141,7 @@ De centrale entiteit moet de betrokken lokale entiteiten per campagne specificer
 
 ### Goedkeuringsmodi {#approval-modes}
 
-Voor **samenwerkingscampagnes** kunt u de goedkeuringsmodus voor bestellingen opgeven.
+Voor **samenwerkingscampagnes**, kunt u de wijze van de ordegoedkeuring specificeren.
 
 ![](assets/mkg_dist_edit_kit1.png)
 
@@ -155,7 +155,7 @@ In de automatische modus wordt de lokale entiteit vooraf geabonneerd op de campa
 
 Configuratie voor meldingen is identiek aan meldingen voor een lokale entiteit. Zie [deze sectie](../../campaign/using/creating-a-local-campaign.md#notifications).
 
-## Een campagne bestellen {#ordering-a-campaign}
+## Bestellen van een campagne {#ordering-a-campaign}
 
 Wanneer een samenwerkingscampagne aan de lijst van campagnepakketten wordt toegevoegd, worden de lokale entiteiten die tot het publiek behoren dat door de centrale entiteit wordt bepaald op de hoogte gebracht (de **samenwerkingscampagnes (door doelgoedkeuring)** hebben geen vooraf bepaald publiek). Het verzonden bericht bevat een koppeling waarmee u zich voor de campagne kunt registreren, zoals hieronder wordt getoond:
 
@@ -171,8 +171,8 @@ Nadat een lokale entiteit de registratie heeft voltooid, worden centrale entitei
 
 ![](assets/mkg_dist_mutual_op_valid_command.png)
 
-For more on this, refer to the [Approval process](../../campaign/using/creating-a-local-campaign.md#approval-process) section.
+Raadpleeg voor meer informatie de sectie [Goedkeuringsproces](../../campaign/using/creating-a-local-campaign.md#approval-process).
 
-## Een bestelling goedkeuren {#approving-an-order}
+## Een bestelling {#approving-an-order} goedkeuren
 
 Het proces voor het goedkeuren van een collectieve campagnepakketorde is het zelfde als wanneer het doen van dit voor een lokale campagne. Zie [deze sectie](../../campaign/using/creating-a-local-campaign.md#approving-an-order).
