@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 4%
@@ -21,12 +21,12 @@ ht-degree: 4%
 
 De Adobe Campaign-toepassingsserver is ontworpen voor openheid en eenvoudige integratie met steeds meer uiteenlopende en complexe bedrijfsinformatiesystemen.
 
-Adobe Campaign API&#39;s worden gebruikt in JavaScript binnen de toepassing en in SOAP daarbuiten. Ze vormen een bibliotheek van algemene functies die kunnen worden verrijkt. Zie [SOAP-methoden](../../configuration/using/implementing-soap-methods.md)implementeren voor meer informatie.
+Adobe Campaign API&#39;s worden gebruikt in JavaScript binnen de toepassing en in SOAP daarbuiten. Ze vormen een bibliotheek van algemene functies die kunnen worden verrijkt. Raadpleeg [SOAP-methoden implementeren](../../configuration/using/implementing-soap-methods.md) voor meer informatie.
 
 >[!IMPORTANT]
 >
 >Het aantal geoorloofde Vraag van de Motor varieert per dag op uw vergunningscontract. Raadpleeg [deze pagina](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html) voor meer informatie.\
->In [deze specifieke documentatie](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)vindt u een lijst met alle API&#39;s, inclusief de volledige beschrijving ervan.
+>Een lijst van alle APIs met hun volledige beschrijving is beschikbaar in [deze specifieke documentatie](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
 ## Vereisten {#prerequisites}
 
@@ -36,14 +36,14 @@ Voordat u de Adobe Campaign API&#39;s kunt gebruiken, moet u vertrouwd zijn met 
 * SOAP-protocol
 * Adobe Campaign datamodel
 
-## Adobe Campaign API&#39;s gebruiken {#using-adobe-campaign-apis}
+## Adobe Campaign API&#39;s {#using-adobe-campaign-apis} gebruiken
 
 Adobe Campaign gebruikt twee typen API&#39;s:
 
-* Algemene gegevens krijgen toegang tot API&#39;s voor het opvragen van gegevens in het datamodel. Zie API&#39;s [die zijn gericht op gegevens](../../configuration/using/data-oriented-apis.md).
-* Bedrijfs specifieke APIs die u op elk voorwerp laten handelen: leveringen, workflows, abonnementen, enz. Raadpleeg de [bedrijfsgerichte API&#39;s](../../configuration/using/business-oriented-apis.md).
+* Algemene gegevens krijgen toegang tot API&#39;s voor het opvragen van gegevens in het datamodel. Zie [Gegevensgeoriënteerde API&#39;s](../../configuration/using/data-oriented-apis.md).
+* Bedrijfs specifieke APIs die u op elk voorwerp laten handelen: leveringen, workflows, abonnementen, enz. Raadpleeg [Zakelijke georiënteerde API&#39;s](../../configuration/using/business-oriented-apis.md).
 
-Om APIs te ontwikkelen en met Adobe Campaign in wisselwerking te staan, moet u met uw datamodel vertrouwd zijn. Met Adobe Campaign kunt u een volledige beschrijving van de basis genereren. Zie de [beschrijving van het model](../../configuration/using/data-oriented-apis.md#description-of-the-model).
+Om APIs te ontwikkelen en met Adobe Campaign in wisselwerking te staan, moet u met uw datamodel vertrouwd zijn. Met Adobe Campaign kunt u een volledige beschrijving van de basis genereren. Zie [Beschrijving van het model](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
 ## SOAP-aanroepen {#soap-calls}
 
@@ -58,7 +58,7 @@ De structuur van een SOAP-bericht is als volgt:
 * een instantie die de informatie over de oproep en de reactie bevat;
 * foutbeheer dat de foutvoorwaarde definieert.
 
-## Middelen en uitwisselingen {#resources-and-exchanges}
+## Bronnen en uitwisselingen {#resources-and-exchanges}
 
 In het volgende schema ziet u de verschillende bronnen die betrokken zijn bij het gebruik van Adobe Campaign API&#39;s:
 
@@ -68,7 +68,7 @@ In het volgende schema ziet u de verschillende bronnen die betrokken zijn bij he
 
 In dit voorbeeld, roept een vraag van de ZEEP de &quot;ExecuteQuery&quot;methode aan, die een karakterkoord als parameter voor authentificatie (zittingsteken) en een inhoud van XML voor de beschrijving van de uit te voeren vraag neemt.
 
-Zie [ExecuteQuery (xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-)voor meer informatie.
+Raadpleeg [ExecuteQuery (xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-) voor meer informatie.
 
 >[!NOTE]
 >
@@ -92,11 +92,11 @@ Zie [ExecuteQuery (xtk:queryDef)](../../configuration/using/data-oriented-apis.m
 </SOAP-ENV:Envelope>
 ```
 
-Het `<soap-env:envelope>` element is het eerste element van het bericht dat de envelop van de ZEEP vertegenwoordigt.
+Het element `<soap-env:envelope>` is het eerste element van het bericht dat de envelop van de ZEEP vertegenwoordigt.
 
-Het `<soap-env:body>` element is het eerste onderliggende element van de omhulling. Het bevat de beschrijving van het bericht, d.w.z. de inhoud van de vraag of de reactie.
+Het `<soap-env:body>` element is het eerste kindelement van de envelop. Het bevat de beschrijving van het bericht, d.w.z. de inhoud van de vraag of de reactie.
 
-De methode die moet worden aangeroepen, wordt in het `<executequery>` element ingevoerd vanuit de hoofdtekst van het SOAP-bericht.
+De aan te roepen methode is ingegaan in het `<executequery>` element van het lichaam van het bericht van de ZEEP.
 
 In SOAP worden de parameters op volgorde van weergave herkend. De eerste parameter, `<__sessiontoken>`, neemt de authentificatieketen, de tweede parameter is de beschrijving van XML van de vraag van het `<querydef>` element.
 
@@ -115,9 +115,9 @@ In SOAP worden de parameters op volgorde van weergave herkend. De eerste paramet
 </SOAP-ENV:Envelope>
 ```
 
-Het resultaat van de query wordt ingevoerd vanuit het `<pdomoutput>` element.
+Het resultaat van de query wordt ingevoerd vanuit het element `<pdomoutput>`.
 
-## Error management {#error-management}
+## Foutbeheer {#error-management}
 
 Voorbeeld van reactie SOAP-fout:
 
@@ -135,7 +135,7 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 </SOAP-ENV:Envelope>
 ```
 
-Het `<soap-env:fault>` element in het lichaam van het bericht van de ZEEP wordt gebruikt om de foutensignalen over te brengen die tijdens de verwerking van de dienst van het Web voortkomen. Dit bestaat uit de volgende subelementen:
+Het element `<soap-env:fault>` in de hoofdtekst van het SOAP-bericht wordt gebruikt om de foutsignalen over te brengen die optreden tijdens de verwerking van de webservice. Dit bestaat uit de volgende subelementen:
 
 * `<faultcode>` : Hiermee wordt het type fout aangegeven. De fouttypen zijn:
 
@@ -169,7 +169,7 @@ catch (SoapException e)
 }
 ```
 
-## URL van de de dienstserver van het Web (of EndPoint) {#url-of-web-service-server--or-endpoint-}
+## URL van webserviceserver (of EndPoint) {#url-of-web-service-server--or-endpoint-}
 
 Om de dienst van het Web voor te leggen, moet de server van Adobe Campaign die de overeenkomstige de dienstmethode uitvoert worden gecontacteerd.
 
@@ -177,4 +177,4 @@ De server-URL is als volgt:
 
 https://serverName/nl/jsp/soaprouter.jsp
 
-Met **`<server>`** de Adobe Campaign-toepassingsserver (**nlserver-web**).
+Met **`<server>`** de Adobe Campaign-toepassingsserver (**nlserver web**).
