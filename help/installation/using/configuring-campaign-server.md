@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d0ae3d597f9ee30515437d94901cb034d0ca3d5
 workflow-type: tm+mt
-source-wordcount: '3579'
+source-wordcount: '3600'
 ht-degree: 3%
 
 ---
@@ -21,9 +21,9 @@ In de onderstaande sectie vindt u informatie over configuraties aan de serverzij
 
 >[!IMPORTANT]
 >
->Deze configuraties moeten alleen door beheerders worden uitgevoerd en voor **hostmodellen op locatie** .
+>Deze configuraties moeten alleen door beheerders worden uitgevoerd en voor **On-premise**-hostmodellen.
 >
->Voor **Gehoste** plaatsingen, server-zijmontages kunnen door slechts Adobe worden gevormd. Sommige instellingen kunnen echter worden ingesteld in het Configuratiescherm (bijvoorbeeld IP-lijst van gewenste personen of URL-machtigingen).
+>Voor **Hosted**-implementaties kunnen instellingen aan de serverzijde alleen door Adobe worden geconfigureerd. Sommige instellingen kunnen echter worden ingesteld in het Configuratiescherm (bijvoorbeeld IP-lijst van gewenste personen of URL-machtigingen).
 
 Raadpleeg de volgende secties voor meer informatie:
 
@@ -32,20 +32,20 @@ Raadpleeg de volgende secties voor meer informatie:
 * [Campaign Classic On-premisse en gehoste capaciteitmatrix](../../installation/using/capability-matrix.md)
 * [Configuratiestappen voor hybride en gehoste modellen](../../installation/using/hosting-models.md)
 
-Campaign Classic-configuratiebestanden worden opgeslagen in de map **conf** in de installatiemap van Adobe Campaign. De configuratie wordt verspreid over twee bestanden:
+Campaign Classic-configuratiebestanden worden opgeslagen in de map **conf** van de installatiemap van Adobe Campaign. De configuratie wordt verspreid over twee bestanden:
 
 * **serverConf.xml**: algemene configuratie voor alle instanties. In dit bestand worden de technische parameters van de Adobe Campaign-server gecombineerd: deze worden door alle instanties gedeeld . Hieronder wordt een beschrijving van een aantal van deze parameters gegeven. De verschillende knooppunten en parameters en vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
-* **config-`<instance>`.xml** (waarbij **instantie** de naam van de instantie is): specifieke configuratie van de instantie. Als u uw server onder verschillende exemplaren deelt, gelieve de parameters specifiek voor elke instantie in hun relevant dossier in te gaan.
+* **config-`<instance>`.xml**  (waarbij  **** instantie de naam van de instantie is): specifieke configuratie van de instantie. Als u uw server onder verschillende exemplaren deelt, gelieve de parameters specifiek voor elke instantie in hun relevant dossier in te gaan.
 
-## Beveiligingszones definiëren {#defining-security-zones}
+## Beveiligingszones {#defining-security-zones} definiëren
 
-### Beveiligingszones {#about-security-zones}
+### Informatie over beveiligingszones {#about-security-zones}
 
 Elke exploitant moet met een streek worden verbonden om aan een geval te login en exploitant IP moet in de adressen of adresreeksen worden omvat die in de veiligheidsstreek worden bepaald. Configuratie van de beveiligingszone wordt uitgevoerd in het configuratiebestand van de Adobe Campaign-server.
 
-De exploitanten zijn verbonden met een veiligheidsstreek van zijn profiel in de console ( **[!UICONTROL Administration > Access management > Operators]** knoop). Leer hoe u zones kunt koppelen aan Campagneontwikkelaars in [deze sectie](#linking-a-security-zone-to-an-operator).
+Operatoren zijn vanuit hun profiel gekoppeld aan een beveiligingszone in de console ( **[!UICONTROL Administration > Access management > Operators]**-knooppunt). Leer hoe u zones koppelt aan Campagneontwikkelaars in [deze sectie](#linking-a-security-zone-to-an-operator).
 
-### Beveiligingszones maken {#creating-security-zones}
+### Bezig met maken van beveiligingszones {#creating-security-zones}
 
 Een zone wordt gedefinieerd door:
 
@@ -54,7 +54,7 @@ Een zone wordt gedefinieerd door:
 
 Beveiligingszones zijn onderling vergrendeld, wat betekent dat het definiëren van een nieuwe zone binnen een andere zone het aantal operatoren verlaagt dat zich daarop kan aanmelden, terwijl de rechten die aan elke operator zijn toegewezen, worden vergroot.
 
-De zones moeten tijdens serverconfiguratie, in het **serverConf.xml** - dossier worden bepaald. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+De zones moeten tijdens serverconfiguratie, in **serverConf.xml** dossier worden bepaald. Alle parameters die beschikbaar zijn in **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
 Elke zone definieert rechten, zoals:
 
@@ -67,15 +67,15 @@ Elke zone definieert rechten, zoals:
 >[!NOTE]
 >
 >**Elke exploitant moet met een zone** worden verbonden. Als het IP adres van de exploitant tot de waaier behoort die door de streek wordt bepaald, kan de exploitant aan de instantie het programma openen.\
->Het IP van de exploitant adres kan in verscheidene streken worden bepaald. In dit geval ontvangt de exploitant de **reeks** beschikbare rechten voor elke zone.
+>Het IP van de exploitant adres kan in verscheidene streken worden bepaald. In dit geval ontvangt de operator de **set** beschikbare rechten voor elke zone.
 
-Het uit-van-de-doos **serverConf.xml** - dossier omvat drie streken: **public, VPN en LAN**.
+Het uit-van-de-doos **serverConf.xml** dossier omvat drie streken: **public, VPN en LAN**.
 
 >[!NOTE]
 >
 >**De uit-van-de-doos configuratie is veilig**. Het kan echter nodig zijn de beveiliging tijdelijk te verlagen om de nieuwe regels te migreren en goed te keuren, voordat een eerdere versie van Adobe Campaign naar een andere versie gaat.
 
-Voorbeeld van het definiëren van een zone in het bestand **serverConf.xml** :
+Voorbeeld van het definiëren van een zone in het bestand **serverConf.xml**:
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" name="public">
@@ -110,13 +110,13 @@ Alle rechten die een zone definiëren, zijn als volgt:
 
 >[!IMPORTANT]
 >
->In een zonedefinitie, vermindert elk attribuut met de **ware** waarde veiligheid.
+>In een streekdefinitie, vermindert elk attribuut met **true** waarde veiligheid.
 
-Wanneer het gebruiken van het Centrum van het Bericht, als er verscheidene uitvoeringsinstanties zijn, moet u een extra veiligheidsstreek met de **sessionTokenOnly** attributen tot stand brengen die als **waar** worden bepaald, waar slechts de noodzakelijke IP adressen moeten worden toegevoegd. Raadpleeg [dit document](../../message-center/using/creating-a-shared-connection.md)voor meer informatie over het configureren van instanties.
+Wanneer het gebruiken van het Centrum van het Bericht, als er verscheidene uitvoeringsinstanties zijn, moet u een extra veiligheidsstreek met **sessionTokenOnly** attributen tot stand brengen die als **true** worden bepaald, waar slechts de noodzakelijke IP adressen moeten worden toegevoegd. Raadpleeg [dit document](../../message-center/using/creating-a-shared-connection.md) voor meer informatie over het configureren van instanties.
 
 ### Aanbevolen procedures voor beveiligingszones {#best-practices-for-security-zones}
 
-In de definitie van de **LAN** veiligheidsstreek, is het mogelijk om een IP adresmasker toe te voegen dat technische toegang bepaalt. Hierdoor wordt toegang mogelijk tot alle instanties die op de server worden gehost.
+In de definitie van **lan** veiligheidsstreek, is het mogelijk om een IP adresmasker toe te voegen dat technische toegang bepaalt. Hierdoor wordt toegang mogelijk tot alle instanties die op de server worden gehost.
 
 ```
 <securityZone allowDebug="true" allowEmptyPassword="false" allowHTTP="true"
@@ -137,7 +137,7 @@ In de definitie van de **LAN** veiligheidsstreek, is het mogelijk om een IP adre
 
 Wij adviseren direct bepalend IP adreswaaiers in het configuratiedossier dat aan de instantie voor exploitanten wordt gewijd die tot slechts een specifieke instantie toegang hebben.
 
-In het **`config-<instance>.xml`** bestand:
+In het **`config-<instance>.xml`**-bestand:
 
 ```
   <securityZone name="public">
@@ -148,7 +148,7 @@ In het **`config-<instance>.xml`** bestand:
 
 ### Subnetwerken en proxy&#39;s in een beveiligingszone {#sub-networks-and-proxies-in-a-security-zone}
 
-De **volmachtsparameter** kan in een **subNetwork** element worden gebruikt om volmachtsgebruik in een veiligheidsstreek te specificeren.
+De **proxy** parameter kan in een **subNetwork** element worden gebruikt om volmachtsgebruik in een veiligheidsstreek te specificeren.
 
 Wanneer naar een proxy wordt verwezen en een verbinding via deze proxy wordt ingeschakeld (zichtbaar via de HTTP X-Forwarded-For-header), is de geverifieerde zone die van de clients van de proxy en niet die van de proxy.
 
@@ -174,7 +174,7 @@ Er kunnen verschillende gevallen optreden:
 
    ![](assets/8101_proxy3.png)
 
-De IP adressen van volmachten die waarschijnlijk tot de server van Adobe Campaign zullen toegang hebben moeten in zowel **`<subnetwork>`** betrokken als eerste niveau subnetwork zijn ingegaan **`<subnetwork name="all"/>`**. Bijvoorbeeld, hier voor een volmacht de waarvan IP adres 10.131.146.102 is:
+De IP adressen van volmachten die waarschijnlijk tot de server van Adobe Campaign zullen toegang hebben moeten in zowel **`<subnetwork>`** betrokken als eerste niveau subnetwork **`<subnetwork name="all"/>`** zijn ingegaan. Bijvoorbeeld, hier voor een volmacht de waarvan IP adres 10.131.146.102 is:
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" 
@@ -203,17 +203,17 @@ Zodra de streken worden bepaald, moet elke exploitant met één van hen worden v
 
 De technische configuratie van de zones wordt uitgevoerd in het configuratiebestand van de Campagneserver: **serverConf.xml**.
 
-Voorafgaand aan dit, moet u beginnen door de uit-van-de-doos **[!UICONTROL Security zone]** opsomming te vormen om een etiket met de interne naam van de streek te verbinden die in het **serverConf.xml** - dossier wordt bepaald.
+Voorafgaand aan dit, moet u beginnen door de uit-van-de-doos **[!UICONTROL Security zone]** opsomming te vormen om een etiket met de interne naam van de streek te verbinden die in **serverConf.xml** dossier wordt bepaald.
 
 Deze configuratie wordt gedaan in de ontdekkingsreiziger van de Campagne:
 
-1. Klik op het **[!UICONTROL Administration > Platform > Enumerations]** knooppunt.
+1. Klik op het knooppunt **[!UICONTROL Administration > Platform > Enumerations]**.
 1. Selecteer de **[!UICONTROL Security zone (securityZone)]** systeemopsomming.
 
    ![](assets/enum_securityzone.png)
 
-1. Voor elke veiligheidsstreek die in het configuratiedossier van de server wordt bepaald, klik de **[!UICONTROL Add]** knoop.
-1. Voer in het **[!UICONTROL Internal name]** veld de naam in van de zone die is gedefinieerd in het bestand **serverConf.xml** . Het komt overeen met het kenmerk **@name** van het `<securityzone>` element. Voer in het **** veld Labelveld het label in dat is gekoppeld aan de interne naam.
+1. Voor elke veiligheidsstreek die in het configuratiedossier van de server wordt bepaald, klik **[!UICONTROL Add]** knoop.
+1. Voer in het veld **[!UICONTROL Internal name]** de naam in van de zone die is gedefinieerd in het bestand **serverConf.xml**. Het komt overeen met het **@name**-kenmerk van het `<securityzone>`-element. Typ het label dat is gekoppeld aan de interne naam in het veld **Label**.
 
    ![](assets/enum_addsecurityvalue.png)
 
@@ -221,25 +221,25 @@ Deze configuratie wordt gedaan in de ontdekkingsreiziger van de Campagne:
 
 Zodra de streken worden bepaald en de **[!UICONTROL Security zone]** opsomming wordt gevormd, moet u elke exploitant aan een veiligheidsstreek verbinden:
 
-1. Klik op het **[!UICONTROL Administration > Access management > Operators]** knooppunt.
-1. Selecteer de operator waaraan u een beveiligingszone wilt koppelen en klik op het **[!UICONTROL Edit]** tabblad.
-1. Ga naar het **[!UICONTROL Access rights]** tabblad en klik op de **[!UICONTROL Edit access parameters...]** koppeling.
+1. Klik op het knooppunt **[!UICONTROL Administration > Access management > Operators]**.
+1. Selecteer de operator waaraan u een beveiligingszone wilt koppelen en klik op het tabblad **[!UICONTROL Edit]**.
+1. Ga naar het **[!UICONTROL Access rights]** lusje en klik **[!UICONTROL Edit access parameters...]** verbinding.
 
    ![](assets/zone_operator.png)
 
-1. Een zone selecteren in de **[!UICONTROL Authorized connection zone]** vervolgkeuzelijst
+1. Selecteer een zone in de vervolgkeuzelijst **[!UICONTROL Authorized connection zone]**
 
    ![](assets/zone_operator_selection.png)
 
-1. Klik op de wijzigingen **[!UICONTROL OK]** en sla deze op.
+1. Klik op **[!UICONTROL OK]** en sla de wijzigingen op om deze wijzigingen toe te passen.
 
-## Tomcat configureren {#configuring-tomcat}
+## Tomcat {#configuring-tomcat} configureren
 
 ### Standaardpoort voor Tomcat {#default-port-for-tomcat}
 
 Wanneer de 8080 luisterpoort van de Tomcat-server al bezig is met een andere toepassing die vereist is voor uw configuratie, moet u de 8080-poort vervangen door een gratis poort (bijvoorbeeld 8090). Als u dit wilt wijzigen, bewerkt u het bestand **server.xml** dat is opgeslagen in de map **/tomcat-8/conf** van de installatiemap van Adobe Campaign.
 
-Pas dan de haven van de JSP relaispagina&#39;s aan. Hiervoor wijzigt u het bestand **serverConf.xml** dat is opgeslagen in de map **/conf** van de installatiemap van Adobe Campaign. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+Pas dan de haven van de JSP relaispagina&#39;s aan. Hiervoor wijzigt u het bestand **serverConf.xml** dat is opgeslagen in de map **/conf** van de installatiemap van Adobe Campaign. Alle parameters die beschikbaar zijn in **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
 ```
 <serverConf>
@@ -250,7 +250,7 @@ Pas dan de haven van de JSP relaispagina&#39;s aan. Hiervoor wijzigt u het besta
 
 ### Een map toewijzen in Tomcat {#mapping-a-folder-in-tomcat}
 
-Als u klantspecifieke instellingen wilt definiëren, kunt u een bestand **user_context.xml** maken in de map **/tomcat-8/conf** , dat ook het bestand **context.xml** bevat.
+Als u klantspecifieke instellingen wilt definiëren, kunt u een bestand **user_context.xml** maken in de map **/tomcat-8/conf**, die ook het bestand **context.xml** bevat.
 
 Dit bestand bevat het volgende type informatie:
 
@@ -262,9 +262,9 @@ Deze bewerking kan zo nodig op de server worden gereproduceerd.
 
 ## Leveringsparameters aanpassen {#personalizing-delivery-parameters}
 
-De leveringsparameters worden gedefinieerd in het configuratiebestand **serverConf.xml** . Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+De leveringsparameters worden gedefinieerd in het configuratiebestand **serverConf.xml**. Alle parameters die beschikbaar zijn in **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
-De algemene serverconfiguratie en de bevelen zijn gedetailleerd in de [serverconfiguratie](../../installation/using/campaign-server-configuration.md)van de Campagne.
+Algemene serverconfiguratie en opdrachten worden beschreven in [Configuratie campagnemeserver](../../installation/using/campaign-server-configuration.md).
 
 Afhankelijk van uw behoeften en instellingen kunt u ook de volgende configuraties uitvoeren.
 
@@ -274,7 +274,7 @@ De module MTA doet dienst als inheemse agent van de postoverdracht voor uitzendi
 
 Het is echter mogelijk deze te vervangen door een relaisserver als dit voor uw beveiligingsbeleid is vereist. In dat geval, zal de globale productie relais zijn één (op voorwaarde dat de productie van de relaisserver aan Adobe Campaign minder is).
 
-In dit geval, worden deze parameters geplaatst door de server SMTP in de **`<relay>`** sectie te vormen. U moet het IP adres (of de gastheer) van de server specificeren SMTP die wordt gebruikt om post en zijn bijbehorende haven (25 door gebrek) over te brengen.
+In dit geval, worden deze parameters geplaatst door de server SMTP in **`<relay>`** sectie te vormen. U moet het IP adres (of de gastheer) van de server specificeren SMTP die wordt gebruikt om post en zijn bijbehorende haven (25 door gebrek) over te brengen.
 
 ```
 <relay address="192.0.0.3" port="25"/>
@@ -292,9 +292,9 @@ Het is mogelijk om de populatie van kindprocessen (maxSpareServers door gebrek 2
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
 ```
 
-Raadpleeg ook optimalisatie voor verzending [via e-mail](../../installation/using/email-deliverability.md#email-sending-optimization).
+Zie ook [Optimalisatie voor verzenden via e-mail](../../installation/using/email-deliverability.md#email-sending-optimization).
 
-### Het leiden van uitgaand verkeer SMTP met affiniteiten {#managing-outbound-smtp-traffic-with-affinities}
+### Het leiden van uitgaande verkeer SMTP met affiniteiten {#managing-outbound-smtp-traffic-with-affinities}
 
 >[!IMPORTANT]
 >
@@ -304,9 +304,9 @@ U kunt uitgaand verkeer SMTP door affiniteiten met IP adressen verbeteren.
 
 Hiervoor voert u de volgende stappen uit:
 
-1. Voer de affiniteiten in de **`<ipaffinity>`** sectie van het bestand **serverConf.xml** in.
+1. Voer de affiniteiten in de sectie **`<ipaffinity>`** van het bestand **serverConf.xml** in.
 
-   Een affiniteit kan verschillende namen hebben: om ze te scheiden, gebruik de **;** teken.
+   Een affiniteit kan verschillende namen hebben: om hen te scheiden, gebruik **;** karakter.
 
    Voorbeeld:
 
@@ -317,13 +317,13 @@ Hiervoor voert u de volgende stappen uit:
 
    Raadpleeg het bestand **serverConf.xml** om de relevante parameters weer te geven.
 
-1. Als u affiniteitselectie wilt inschakelen in de vervolgkeuzelijsten, moet u de affiniteitsnaam of -namen toevoegen aan de **IPAffinity** -opsomming.
+1. Als u affiniteitselectie wilt inschakelen in de vervolgkeuzelijsten, moet u de affiniteitsnaam of -namen toevoegen in de **IPAffinity**-opsomming.
 
    ![](assets/ipaffinity_enum.png)
 
    >[!NOTE]
    >
-   >Opsommingen worden in [dit document](../../platform/using/managing-enumerations.md)beschreven.
+   >Opsommingen worden beschreven in [dit document](../../platform/using/managing-enumerations.md).
 
    Vervolgens kunt u de affiniteit selecteren die u wilt gebruiken, zoals hieronder voor typologieën wordt getoond:
 
@@ -331,7 +331,7 @@ Hiervoor voert u de volgende stappen uit:
 
    >[!NOTE]
    >
-   >U kunt ook naar de configuratie [van de](../../installation/using/email-deliverability.md#delivery-server-configuration)leveringsserver verwijzen.
+   >U kunt ook naar [Configuratie leveringsserver](../../installation/using/email-deliverability.md#delivery-server-configuration) verwijzen.
 
 ## URL-machtigingen {#url-permissions}
 
@@ -343,10 +343,10 @@ Wanneer een URL is toegevoegd, wordt hiernaar verwezen in het configuratiebestan
 
 De manier waarop u URL-machtigingen kunt beheren, is afhankelijk van uw hostingmodel:
 
-* **Hybride** of **op locatie**: Voeg de toe te staan URLs in het **serverConf.xml- dossier** toe. Gedetailleerde informatie is beschikbaar in de onderstaande sectie.
-* **Gehost**: Voeg de URL&#39;s toe die u via het **Configuratiescherm** wilt toestaan. Raadpleeg de [desbetreffende documentatie](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html) voor meer informatie.
+* **** Hybridor  **op locatie**: Voeg de toe te staan URLs in het  **serverConf.xml- dossier** toe. Gedetailleerde informatie is beschikbaar in de onderstaande sectie.
+* **Gehost**: Voeg de URL&#39;s toe die u via het  **Configuratiescherm** wilt toestaan. Raadpleeg de [desbetreffende documentatie](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html) voor meer informatie.
 
-Met **Hybride** en **Op-gebouw** het ontvangen modellen, moet de beheerder een nieuwe **urlPermission** in het **serverConf.xml** - dossier van verwijzingen voorzien. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+Met **Hybride** en **On-premise** het ontvangen modellen, moet de beheerder een nieuwe **urlPermission** in **serverConf.xml** dossier van verwijzingen voorzien. Alle parameters die beschikbaar zijn in **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
 Er zijn drie modi voor verbindingsbeveiliging:
 
@@ -364,15 +364,15 @@ Er zijn drie modi voor verbindingsbeveiliging:
 
 >[!IMPORTANT]
 >
->Standaard gebruikt de client van nieuwe klanten de **blokkeermodus**. Als zij een nieuwe URL moeten toestaan, zouden zij hun beheerder moeten contacteren om het aan de lijst van gewenste personen toe te voegen.
+>Standaard gebruikt de client van nieuwe klanten de **blokkeringsmodus**. Als zij een nieuwe URL moeten toestaan, zouden zij hun beheerder moeten contacteren om het aan de lijst van gewenste personen toe te voegen.
 >
->Bestaande klanten die uit een migratie komen, kunnen de **waarschuwingsmodus** een tijdje gebruiken. Ondertussen moeten zij het uitgaande verkeer analyseren alvorens URLs toe te laten. Zodra de lijst van geoorloofde URLs wordt bepaald, zouden zij hun beheerder moeten contacteren om URLs aan de lijst van gewenste personen toe te voegen en de **blokkerende wijze** te activeren.
+>Bestaande klanten die afkomstig zijn van een migratie kunnen de **waarschuwingsmodus** een tijdje gebruiken. Ondertussen moeten zij het uitgaande verkeer analyseren alvorens URLs toe te laten. Zodra de lijst van erkende URLs wordt bepaald, zouden zij hun beheerder moeten contacteren om URLs aan de lijst van gewenste personen toe te voegen en **blokkerende wijze te activeren**.
 
-## Dynamische paginabeveiliging en -bedekkingen {#dynamic-page-security-and-relays}
+## Dynamische paginabeveiliging en -relays {#dynamic-page-security-and-relays}
 
-Door gebrek, zijn alle dynamische pagina&#39;s automatisch verwant met de **lokale** server van Tomcat van de machine de waarvan module van het Web is begonnen. Deze configuratie is ingegaan in de **`<url>`** sectie van de configuratie van het vraagrelais voor het **ServerConf.xml** - dossier. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+Door gebrek, zijn alle dynamische pagina&#39;s automatisch verwant aan **local** de server van de Tomcat van de machine de waarvan module van het Web is begonnen. Deze configuratie is ingegaan in de **`<url>`** sectie van de configuratie van het vraagrelais voor het **ServerConf.xml** dossier. Alle parameters die beschikbaar zijn in **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
-Om uitvoering van de dynamische pagina op een **verre** server terug te geven; als de module Web niet op de computer wordt geactiveerd. Om dit te doen, moet u **localhost** met de naam van de verre computer voor JSP en JSSP, de toepassingen van het Web, rapporten en koorden vervangen.
+Om uitvoering van de dynamische pagina op een **verre** server af te lossen; als de module Web niet op de computer wordt geactiveerd. Om dit te doen, moet u **localhost** met de naam van de verre computer voor JSP en JSSP, de toepassingen van het Web, rapporten en koorden vervangen.
 
 Raadpleeg het configuratiebestand **serverConf.xml** voor meer informatie over de verschillende beschikbare parameters.
 
@@ -386,8 +386,8 @@ Adobe Campaign gebruikt de volgende JSP-pagina&#39;s:
 
 * /nl/jsp/**soaprouter.jsp**: client console- en webserviceverbindingen (SOAP API&#39;s);
 * /nl/jsp/**m.jsp**: spiegelpagina&#39;s,
-* /nl/jsp/**opening van een sessie.jsp**: Web-based toegang tot rapporten en tot plaatsing van de cliëntconsole,
-* /nl/jsp/**s.jsp** : Het gebruik van virale marketing (sponsoring en sociale netwerken).
+* /nl/jsp/**aanmeldings.jsp**: Web-based toegang tot rapporten en tot plaatsing van de cliëntconsole,
+* /nl/jsp/**s.jsp**: Het gebruik van virale marketing (sponsoring en sociale netwerken).
 
 De JSSPs die voor het Mobiele Kanaal van de App wordt gebruikt zijn als volgt:
 
@@ -396,7 +396,7 @@ De JSSPs die voor het Mobiele Kanaal van de App wordt gebruikt zijn als volgt:
 
 **Voorbeeld:**
 
-Het is mogelijk om clientmachineverbindingen van buitenaf te verhinderen. Om dit te doen, eenvoudig de uitvoering van **soaprouter.jsp** beperken en slechts de uitvoering van spiegel pagina&#39;s, virale verbindingen, Webvormen en openbare middelen toestaan.
+Het is mogelijk om clientmachineverbindingen van buitenaf te verhinderen. Om dit te doen, eenvoudig de uitvoering van **soaprouter.jsp** te beperken en slechts de uitvoering van spiegelpagina&#39;s, virale verbindingen, Webvormen en openbare middelen toe te staan.
 
 De parameters zijn als volgt:
 
@@ -414,7 +414,7 @@ De parameters zijn als volgt:
 <url IPMask=""               deny="true" hostMask="" relayHost="false" relayPath="false" targetUrl="http://localhost:8080" timeout="" urlPath="*.jssp"/>
 ```
 
-In dit voorbeeld valt de **`<IP_addresses>`** waarde samen met de lijst met IP-adressen (gescheiden door komma&#39;s) die zijn geautoriseerd om de relaismodule voor dit masker te gebruiken.
+In dit voorbeeld, valt de **`<IP_addresses>`** waarde met de lijst van IP adressen (die door komma&#39;s worden gescheiden) die worden gemachtigd om de relaismodule voor dit masker te gebruiken.
 
 >[!NOTE]
 >
@@ -447,9 +447,9 @@ sh
 >
 >Deze lijst is niet limitatief.
 
-In de **exec** knoop van het dossier van de serverconfiguratie, moet u het eerder gecreeerd dossier in het **blacklistFile** attribuut van verwijzingen voorzien.
+In **exec** knoop van het dossier van de serverconfiguratie, moet u het eerder gecreeerd dossier in **blacklistFile** attributen van verwijzingen voorzien.
 
-**Alleen** voor Linux: in het dossier van de serverconfiguratie, adviseren wij dat u een gebruiker specificeert die aan het uitvoeren van externe bevelen wordt gewijd om uw veiligheidsconfiguratie te verbeteren. Deze gebruiker wordt geplaatst in de **exec** knoop van het configuratiedossier. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+**Alleen** voor Linux: in het dossier van de serverconfiguratie, adviseren wij dat u een gebruiker specificeert die aan het uitvoeren van externe bevelen wordt gewijd om uw veiligheidsconfiguratie te verbeteren. Deze gebruiker wordt geplaatst in **exec** knoop van het configuratiedossier. Alle parameters die beschikbaar zijn in **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
 >[!NOTE]
 >
@@ -469,13 +469,13 @@ Deze gebruiker moet worden toegevoegd aan de sudoerlijst van de &#39;neolane&#39
 >
 >Gebruik geen aangepast sudo. Er moet een standaardsudo op het systeem worden geïnstalleerd.
 
-## HTTP-headers beheren {#managing-http-headers}
+## HTTP-headers {#managing-http-headers} beheren
 
 Standaard worden niet alle HTTP-headers weergegeven. U kunt specifieke kopballen in de antwoorden toevoegen die door relais worden verzonden. Dit doet u als volgt:
 
-1. Ga naar het bestand **serverConf.xml** . Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
-1. Ga in het **`<relay>`** knooppunt naar de lijst met afgeloste HTTP-headers.
-1. Voeg een **`<responseheader>`** element toe met de volgende kenmerken:
+1. Ga naar het **serverConf.xml** dossier. Alle parameters die beschikbaar zijn in **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+1. Ga in de **`<relay>`** knoop, naar de lijst van afgeloste kopballen van HTTP.
+1. Voeg een **`<responseheader>`** element met de volgende attributen toe:
 
    * **naam**: koptekstnaam
    * **waarde**: naam van waarde.
@@ -494,7 +494,7 @@ Wanneer de veelvoudige servers voor redirection worden gebruikt, moeten zij met 
 >
 >Wanneer u de standaard- of bedrijfsarchitectuur gebruikt, moet de hoofdtoepassingsserver zijn geautoriseerd om trackinggegevens te uploaden naar elke computer.
 
-De URL&#39;s van de redundante servers moeten worden opgegeven in de omleidingsconfiguratie via het bestand **serverConf.xml** . Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+De URL&#39;s van de redundante servers moeten worden opgegeven in de omleidingsconfiguratie via het bestand **serverConf.xml**. Alle parameters die beschikbaar zijn in **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
 **Voorbeeld:**
 
@@ -507,15 +507,15 @@ De eigenschap **enableIf** is optioneel (standaard leeg) en stelt u in staat de 
 
 Voer de volgende opdracht uit om de hostnaam van de computer op te halen: **hostnaam -s**.
 
-## Openbare middelen beheren {#managing-public-resources}
+## Openbare bronnen beheren {#managing-public-resources}
 
-Overheidsmiddelen worden gepresenteerd in het [beheer van openbare middelen](../../installation/using/deploying-an-instance.md#managing-public-resources).
+De openbare middelen worden voorgesteld in [Beheer van openbare middelen](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
-Ze worden opgeslagen in de map **/var/res/instance** in de installatiemap van Adobe Campaign.
+Ze worden opgeslagen in de map **/var/res/instance** van de installatiemap van Adobe Campaign.
 
-De overeenkomende URL is: **http://server/res/instance** , waarbij de **instantie** de naam van de instantie tracking is.
+De overeenkomende URL is: **http://server/res/instance** waarbij **instance** de naam van de volgende instantie is.
 
-U kunt een andere map opgeven door een knooppunt toe te voegen aan het bestand **conf-`<instance>`.xml** om de opslag op de server te configureren. Dit betekent dat de volgende regels moeten worden toegevoegd:
+U kunt een andere folder specificeren door een knoop aan **conf-`<instance>`.xml** dossier toe te voegen om opslag op de server te vormen. Dit betekent dat de volgende regels moeten worden toegevoegd:
 
 ```
 <serverconf>
@@ -530,17 +530,17 @@ U kunt een andere map opgeven door een knooppunt toe te voegen aan het bestand *
 
 In dit geval, zou nieuwe URL voor de openbare middelen die in het hogere gedeelte van het venster van de plaatsingstovenaar worden gegeven aan deze omslag moeten richten.
 
-## Workflows en affiniteiten met hoge beschikbaarheid {#high-availability-workflows-and-affinities}
+## Workflows en affiniteiten voor hoge beschikbaarheid {#high-availability-workflows-and-affinities}
 
 U kunt verschillende workflowservers (wfserver) configureren en deze op twee of meer computers distribueren. Als u dit type architectuur kiest, configureert u de verbindingsmodus van de taakverdelingsmechanisme op basis van de Adobe Campaign-toegang.
 
-Voor toegang van het Web, selecteer de wijze van het **ladingsverdelingsmechanisme** om verbindingstijden te beperken.
+Selecteer voor toegang vanaf het web de modus **load balancer** om de verbindingstijden te beperken.
 
-Als de toegang via de console van Adobe Campaign, kies **knoeiboel** of **kleverige ip** wijze. Zo kunt u de verbinding tussen de rijke client en de server onderhouden en voorkomen dat een gebruikerssessie wordt onderbroken tijdens bijvoorbeeld het importeren of exporteren.
+Kies **hash** of **sticky ip** modus als u toegang wilt tot de Adobe Campaign-console. Zo kunt u de verbinding tussen de rijke client en de server onderhouden en voorkomen dat een gebruikerssessie wordt onderbroken tijdens bijvoorbeeld het importeren of exporteren.
 
 U kunt ervoor kiezen de uitvoering van een workflow of een workflowactiviteit op een bepaalde computer af te dwingen. Hiervoor moet u een of meer affiniteiten definiëren voor de betreffende workflow of activiteit.
 
-1. Maak de affiniteiten van de workflow of activiteit door deze in het **[!UICONTROL Affinity]** veld in te voeren.
+1. Maak de affiniteiten van de workflow of activiteit door deze in te voeren in het veld **[!UICONTROL Affinity]**.
 
    U kunt de affiniteitsnamen vrij kiezen. Zorg er echter voor dat u geen spaties of leestekens gebruikt. Geef verschillende namen op als u verschillende servers gebruikt.
 
@@ -550,8 +550,8 @@ U kunt ervoor kiezen de uitvoering van een workflow of een workflowactiviteit op
 
    De vervolgkeuzelijst bevat eerder gebruikte affiniteiten. Het wordt voltooid in tijd met de verschillende ingegaan waarden.
 
-1. Open het bestand **nl6/conf/config-`<instance>.xml`** .
-1. Wijzig de lijn die met de **[!UICONTROL wfserver]** module overeenkomt als volgt:
+1. Open het bestand **nl6/conf/config-`<instance>.xml`**.
+1. Wijzig de lijn die de **[!UICONTROL wfserver]** module als volgt aanpast:
 
    ```
    <wfserver autoStart="true" affinity="XXX,"/>
@@ -571,15 +571,15 @@ U kunt ervoor kiezen de uitvoering van een workflow of een workflowactiviteit op
    <wfserver autoStart="true" affinity="XXX"/>
    ```
 
-## Automatisch proces opnieuw opstarten {#automatic-process-restart}
+## Automatisch proces opnieuw starten {#automatic-process-restart}
 
 Standaard worden de verschillende Adobe Campaign-processen elke dag om zes uur (servertijd) automatisch opnieuw gestart.
 
 U kunt deze configuratie echter wijzigen.
 
-Hiervoor gaat u naar het bestand **serverConf.xml** in de **conf** -opslagruimte van uw installatie. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+Hiervoor gaat u naar het bestand **serverConf.xml** in de opslagplaats **conf** van uw installatie. Alle parameters die beschikbaar zijn in **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
-Elk in dit bestand geconfigureerd proces heeft een **processRestartTime** -kenmerk. U kunt de waarde van dit kenmerk wijzigen om de opstarttijd van elk proces aan te passen aan uw wensen.
+Elk proces dat in dit dossier wordt gevormd heeft een **processRestartTime** attribuut. U kunt de waarde van dit kenmerk wijzigen om de opstarttijd van elk proces aan te passen aan uw wensen.
 
 >[!IMPORTANT]
 >
@@ -587,11 +587,11 @@ Elk in dit bestand geconfigureerd proces heeft een **processRestartTime** -kenme
 
 ## Uploadbare bestanden beperken {#limiting-uploadable-files}
 
-Met een nieuw kenmerk **uploadWhiteList** kunt u de bestandstypen beperken die beschikbaar zijn voor uploaden naar de Adobe Campaign-server.
+Met een nieuw kenmerk **uploadWhiteList** kunt u de bestandstypen beperken die beschikbaar zijn voor uploaden op de Adobe Campaign-server.
 
-Dit kenmerk is beschikbaar in het element **dataStore** van het bestand **serverConf.xml** . Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+Dit kenmerk is beschikbaar in het **dataStore**-element van het **serverConf.xml**-bestand. Alle parameters die beschikbaar zijn in **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
-De standaardwaarde van dit kenmerk is **.+** en u kunt elk bestandstype uploaden.
+De standaardwaarde van dit kenmerk is **.+** en het laat u om het even welk dossiertype uploaden.
 
 Als u de mogelijke indelingen wilt beperken, moet u de kenmerkwaarde vervangen door een geldige reguliere Java-expressie. U kunt verschillende waarden invoeren door deze met een komma te scheiden.
 
@@ -603,15 +603,18 @@ Bijvoorbeeld: **uploadWhiteList=&quot;.*.png,.Met *.jpg&quot;** kunt u PNG- en J
 
 ## Configuratie proxyverbinding {#proxy-connection-configuration}
 
-Als u de server van de Campagne met de buitenkant door een volmacht (gebruikend een activiteit van het dossieroverdrachtwerkschema bijvoorbeeld) moet verbinden, moet u de volmachtConfig sectie van serverConf via een bevel vormen. De volgende proxyverbindingen zijn mogelijk: HTTP, HTTPS, FTP, SFTP. Alle parameters beschikbaar in **serverConf.xml** zijn vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
+U kunt de Campagneserver met een extern systeem door een volmacht verbinden, gebruikend een **de werkschemaactiviteit van de Overdracht van het Dossier** bijvoorbeeld. Hiervoor moet u de sectie **proxyConfig** van het bestand **serverConf.xml** via een specifieke opdracht configureren. Alle parameters die beschikbaar zijn in **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
->[!NOTE]
+De volgende proxyverbindingen zijn mogelijk: HTTP, HTTPS, FTP, SFTP. Houd er rekening mee dat de HTTP- en HTTPS-protocolparameters **niet langer beschikbaar zijn** vanaf de campagneversie 20.2. Deze parameters worden nog steeds hieronder vermeld, aangezien ze in eerdere gebouwen beschikbaar blijven - waaronder 9032.
+
+>[!CAUTION]
 >
->Vanaf 20.2 zijn de parameters van het HTTP- en HTTPS-protocol niet meer beschikbaar. In de volgende informatie worden deze parameters nog steeds vermeld, aangezien ze beschikbaar blijven voor eerdere gebouwen, waaronder 9032.
+>Alleen de standaardverificatiemodus wordt ondersteund. NTLM-verificatie wordt niet ondersteund.
 >
 >SOCKS-proxy&#39;s worden niet ondersteund.
 
-Gebruik de volgende opdracht:
+
+U kunt de volgende opdracht gebruiken:
 
 ```
 nlserver config -setproxy:[protocol]/[serverIP]:[port]/[login][:‘https’|'http’]
