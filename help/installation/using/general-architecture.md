@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 0%
@@ -41,14 +41,14 @@ Adobe Campaign is gebaseerd op een servicegerichte architectuur (SOA) en bestaat
 
 >[!CAUTION]
 >
->Indien niet uitdrukkelijk anders vermeld, vallen de installatie, updates en het onderhoud op alle componenten van een Adobe Campaign-platform onder de verantwoordelijkheid van de systeembeheerder(s) die deze host(s). Dit omvat het implementeren van de voorwaarden voor Adobe Campaign-toepassingen en het naleven van de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) voor campagnes tussen componenten.
+>Indien niet uitdrukkelijk anders vermeld, vallen de installatie, updates en het onderhoud op alle componenten van een Adobe Campaign-platform onder de verantwoordelijkheid van de systeembeheerder(s) die deze host(s). Dit omvat het implementeren van de voorwaarden voor Adobe Campaign-toepassingen en het voldoen aan Campagne [Compatibility matrix](../../rn/using/compatibility-matrix.md) tussen componenten.
 
 ## Presentatielaag {#presentation-layer}
 
 De toepassing kan op verschillende manieren worden benaderd, afhankelijk van de behoeften van de gebruikers: Rich client-, thin client- of API-integratie.
 
 * **Rijke client**: De hoofdgebruikersinterface van de toepassing is een rijke client, met andere woorden een native toepassing (Windows) die alleen communiceert met de Adobe Campaign-toepassingsserver met standaard internetprotocollen (SOAP, HTTP, enzovoort). Deze console biedt grote gebruiksvriendelijkheid voor productiviteit, gebruikt zeer weinig bandbreedte (door het gebruik van een lokale cache) en is ontworpen voor eenvoudige implementatie. Deze console kan vanuit een internetbrowser worden geïmplementeerd, kan automatisch worden bijgewerkt en vereist geen specifieke netwerkconfiguratie omdat alleen HTTP(S)-verkeer wordt gegenereerd.
-* **Dunne client**: Bepaalde delen van de toepassing kunnen via eenvoudige browser van het Web worden betreden gebruikend een HTML- gebruikersinterface, met inbegrip van de rapporteringsmodule, de stadia van de leveringsgoedkeuring, functionaliteit van de Verdeelde module van de Marketing (centraal/lokaal), instantie controle, enz. Met deze modus kunt u Adobe Campaign-functies opnemen in een intranet of extranet.
+* **Dunne client**: Bepaalde delen van de toepassing zijn toegankelijk via een eenvoudige webbrowser met behulp van een HTML-gebruikersinterface, zoals de rapporteringsmodule, de goedkeuringsfasen voor levering, de functies van de module Distributed Marketing (centraal/lokaal), de Instance Monitoring, enz. Met deze modus kunt u Adobe Campaign-functies opnemen in een intranet of extranet.
 * **Integratie via de API**&#39;s: In bepaalde gevallen, kan het systeem van externe toepassing worden geroepen gebruikend de Diensten APIs van het Web die via het protocol van de ZEEP worden blootgesteld.
 
 ## Logische toepassingslaag {#logical-application-layer}
@@ -59,11 +59,11 @@ Adobe Campaign vertrouwt op een reeks server-zijprocessen die samenwerken.
 
 De belangrijkste processen zijn:
 
-**Toepassingsserver** (extern web)
+**Toepassingsserver**  (extern web)
 
 Dit proces stelt de volledige waaier van de functionaliteit van Adobe Campaign via de APIs van de Diensten van het Web (ZEEP - HTTP + XML) bloot. Bovendien kan het de Web-pagina&#39;s dynamisch produceren die voor op HTML-Gebaseerde toegang (rapporten, de vormen van het Web, enz.) worden gebruikt. Hiertoe bevat dit proces een Apache Tomcat JSP-server. Dit is het proces waaraan de console verbindt.
 
-**Workflow-engine** (nlserver wfserver)
+**Workflow-engine**  (nlserver wfserver)
 
 Het voert de werkschemaprocessen uit die in de toepassing worden bepaald.
 
@@ -73,13 +73,13 @@ Het behandelt ook periodiek uitgevoerde technische werkschema&#39;s, die omvatte
 * Overbodig verwijderen: Database reinigen. Wordt gebruikt om oude records leeg te maken en te voorkomen dat de database exponentieel groeit.
 * Facturering: Automatisch verzenden van een activiteitenverslag voor het platform (databasegrootte, aantal marketingacties, enz.).
 
-**Leveringsserver** (nlserver mta)
+**Leveringsserver**  (nlserver-mta)
 
 Adobe Campaign heeft native functionaliteit voor e-mailuitzending. Dit proces functioneert als SMTP agent van de postoverdracht (MTA). Het voert &quot;één-op-één&quot;verpersoonlijking van berichten uit en behandelt hun fysieke levering. Het werkt met leveringstaken en handelt automatische pogingen af. Wanneer reeksspatiëring is ingeschakeld, worden de URL&#39;s automatisch vervangen, zodat ze naar de omleidingsserver verwijzen.
 
 Dit proces kan de aanpassing en het automatische verzenden naar een derderouter voor SMS, fax en directe post behandelen.
 
-**Redirection server** (nlserver webmdl)
+**Redirection server**  (nlserver webmdl)
 
 Voor e-mail, behandelt Adobe Campaign automatisch open en klikt het volgen (transactie het volgen op het niveau van de Website is een verdere mogelijkheid). Hiertoe worden de URL&#39;s die in de e-mailberichten zijn opgenomen, herschreven zodat ze naar deze module verwijzen. Deze module registreert het doorgeven van de internetgebruiker voordat deze naar de vereiste URL wordt doorgestuurd.
 
@@ -87,39 +87,39 @@ Om de hoogste beschikbaarheid te garanderen, is dit proces volledig onafhankelij
 
 Er zijn ook andere meer technische processen beschikbaar:
 
-**Bounce-e-mailberichten** beheren (nlserver inMail)
+**Bounce-e-mailberichten**  beheren (nlserver inMail)
 
 Dit proces laat u toe om e-mail van brievenbussen automatisch op te nemen die worden gevormd om teruggestuurde berichten te ontvangen die in het geval van leveringsmislukking zijn teruggekeerd. Deze berichten worden dan op regel-gebaseerde verwerking ondergaan om de redenen voor niet levering (onbekende ontvanger, quota overschreden, etc.) te bepalen en de leveringsstatus in de database bij te werken.
 
 Al deze verrichtingen zijn volledig automatisch en vooraf gevormd.
 
-**Leveringsstatus** van SMS (nlserver sms)
+**Leveringsstatus**  van SMS (nlserver sms)
 
 Dit proces pollt de router van SMS om vooruitgangsstatus te verzamelen en het gegevensbestand bij te werken.
 
-**Logberichten** schrijven (nlserver-syslogd)
+**Logberichten**  schrijven (nlserver-syslogd)
 
 Dit technische proces vangt logboekberichten en sporen die door de andere processen worden geproduceerd en schrijft hen aan de harde schijf. Dit maakt ruime informatie beschikbaar voor diagnose in het geval van problemen.
 
-**Logbestanden voor** tekstspatiëring schrijven (logd voor reeksspatiëring)
+**Logboeken**  voor het bijhouden van gegevens schrijven (logd voor reeksspatiëring)
 
 Dit proces bewaart aan schijf de volgende logboeken die door het omleidingsproces worden geproduceerd.
 
-**Inbound-gebeurtenissen** schrijven (nlserver-interactie)
+**Inbound-gebeurtenissen**  schrijven (nlserver-interactie)
 
 Dit proces verzekert de opname aan de schijf van binnenkomende gebeurtenissen, binnen het kader van Interactie.
 
-**Controlemodules** (nlserver watchdog)
+**Controlemodules**  (nlserver watchdog)
 
 Dit technische proces fungeert als een primair proces dat de anderen voortbrengt. Het bewaakt ze ook en start ze automatisch opnieuw in geval van incidenten, zodat het systeem maximaal uptime kan blijven.
 
-**Statistische server** (nlserver stat)
+**Statistische server**  (nlserver stat)
 
 Dit proces handhaaft statistieken over het aantal verbindingen, de berichten die voor elke postserver worden verzonden die berichten worden verzonden naar, evenals hun beperkingen (hoogste aantal gelijktijdige verbindingen, berichten per uur/en of verbinding). Het laat u ook verscheidene instanties of machines federeren als zij de zelfde openbare IP adressen delen.
 
 >[!NOTE]
 >
->De volledige lijst met Adobe Campaign-modules is beschikbaar in [dit document](../../production/using/operating-principle.md).
+>De volledige lijst van modules van Adobe Campaign is beschikbaar in [dit document](../../production/using/operating-principle.md).
 
 ## Persistentielaag {#persistence-layer}
 
