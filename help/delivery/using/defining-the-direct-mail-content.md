@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 9%
+ht-degree: 14%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 9%
 
 ## Extractiebestand {#extraction-file}
 
-De naam van het bestand met de geëxtraheerde gegevens wordt in het **[!UICONTROL File]** veld gedefinieerd. Met de knop rechts van het veld kunt u aanpassingsvelden gebruiken om de bestandsnaam te maken.
+De naam van het bestand dat de geëxtraheerde gegevens bevat, wordt gedefinieerd in het veld **[!UICONTROL File]**. Met de knop rechts van het veld kunt u aanpassingsvelden gebruiken om de bestandsnaam te maken.
 
-Standaard wordt het extractiebestand gemaakt en opgeslagen op de server. U kunt het opslaan op uw computer. Om dit te doen, controleer het **[!UICONTROL Download the generated file after the analysis of the delivery]**. In dit geval moet u het toegangspad naar de lokale opslagmap en de bestandsnaam aangeven.
+Standaard wordt het extractiebestand gemaakt en opgeslagen op de server. U kunt het opslaan op uw computer. Om dit te doen, controleer **[!UICONTROL Download the generated file after the analysis of the delivery]**. In dit geval moet u het toegangspad naar de lokale opslagmap en de bestandsnaam aangeven.
 
 ![](assets/s_ncs_user_mail_delivery_local_file.png)
 
-Voor direct-maillevering wordt de inhoud van de extractie gedefinieerd in de **[!UICONTROL Edit the extraction file format...]** koppeling.
+Voor directe postlevering, wordt de inhoud van de extractie bepaald in **[!UICONTROL Edit the extraction file format...]** verbinding.
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 
@@ -33,8 +33,8 @@ Met deze koppeling hebt u toegang tot de wizard Exporteren en definieert u de ge
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-Het is mogelijk om een gepersonaliseerde URL in het extractiebestand in te voegen. For more on this, refer to [Web functionality](../../web/using/publishing-a-web-form.md).
+Het is mogelijk om een gepersonaliseerde URL in het extractiebestand in te voegen. Raadpleeg [deze sectie](../../web/using/publishing-a-web-form.md) voor meer informatie.
 
 >[!NOTE]
 >
->Deze wizard bevat de stappen van de exportwizard die worden beschreven in de sectie Aan de [slag](../../platform/using/exporting-data.md#export-wizard) .
+>Deze tovenaar omvat de stappen van de uitvoertovenaar die in [worden wordt beschreven Begonnen ](../../platform/using/exporting-data.md#export-wizard) sectie.
