@@ -6,11 +6,11 @@ description: Deze pagina bevat een overzicht van alle nieuwe functies en documen
 audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3631'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,21 +23,21 @@ U kunt ook de [Adobe Campaign Classic-release-opmerkingen](../../rn/using/latest
 
 ## November 2020 {#nov-2020}
 
-Overzicht van het campagnegegevensmodel is verbeterd en opnieuw ingedeeld. [Meer informatie](../../configuration/using/about-data-model.md).
+Het overzicht van het Campaign-gegevensmodel is verbeterd en opnieuw ingedeeld. [Meer informatie](../../configuration/using/about-data-model.md).
 
-Configuratie externe account is verplaatst naar [deze sectie](../../installation/using/external-accounts.md).
+De configuratie van externe accounts is verplaatst naar [deze sectie](../../installation/using/external-accounts.md).
 
-De FDA-documentatie (Campaign Federated Data Access) is verbeterd met details voor elke externe databaseconfiguratie en is naar [deze sectie](../../installation/using/about-fda.md)verplaatst.
+De FDA-documentatie (Federated Data Access) van Campaign is verbeterd met details voor elke externe databaseconfiguratie en is verplaatst naar [deze sectie](../../installation/using/about-fda.md).
 
-[Campagne 20.2.3-release](../../rn/using/release--20-2.md#release-20-2-3-build-9182) is verplaatst naar General Availability (GA).
+[Campaign 20.2.3-release](../../rn/using/release--20-2.md#release-20-2-3-build-9182) is verplaatst naar Algemene beschikbaarheid (General Availability, ofwel GA).
 
-De sectie Privacy is verplaatst en verrijkt met twee nieuwe pagina&#39;s: [Privacybeheer](../../platform/using/privacy-management.md) en [privacyverzoeken](../../platform/using/privacy-requests.md)beheren.
+De sectie Privacy is verplaatst en aangevuld met twee nieuwe pagina’s: [Privacybeheer](../../platform/using/privacy-management.md) en [Verzoeken om toegang tot persoonsgegevens beheren](../../platform/using/privacy-requests.md).
 
-Er is een opmerking toegevoegd aan de configuratiepagina van de server voor de midsourcing om op te geven dat de interne naam van de externe account niet moet worden bijgewerkt als de server eenmaal is ingesteld. [Meer informatie](../../installation/using/mid-sourcing-server.md)
+Er is een opmerking toegevoegd aan de configuratiepagina van de mid-sourcingserver om op te geven dat de interne naam van het externe account niet meer moet worden bijgewerkt als de server eenmaal is ingesteld. [Meer informatie](../../installation/using/mid-sourcing-server.md)
 
-Er is informatie toegevoegd aan de syntaxis die moet worden gebruikt wanneer u een pad naar een externe SFTP-server opgeeft. [Meer informatie](../../platform/using/sftp-server-usage.md#external-SFTP-server)
+Er is informatie toegevoegd over de syntaxis die moet worden gebruikt bij het opgeven van een pad naar een externe SFTP-server. [Meer informatie](../../platform/using/sftp-server-usage.md#external-SFTP-server)
 
-De sectie Persoonlijke Gegevens en Persona&#39;s is bijgewerkt met een gebruiksscenario om te illustreren hoe de verschillende personen interactie hebben wanneer het over Privacy aankomt. [Meer informatie](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
+De sectie Persoonlijke gegevens en persona&#39;s is bijgewerkt met een gebruiksscenario om te laten zien hoe de verschillende persona&#39;s interactie hebben als het om privacy gaat. [Meer informatie](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
 
 Er is een nieuwe sectie toegevoegd met veelgestelde vragen over privacy. [Meer informatie](../../platform/using/privacy-faq.md)
 
@@ -58,7 +58,7 @@ De pagina met verouderde en verwijderde functies is bijgewerkt. [Meer informatie
 Opmerkingen bij de release en de compatibiliteitsmatrix voor de Gold Standard-release zijn nu beschikbaar in een speciale sectie.
 [Meer informatie](../../rn/using/gold-standard.md#gs-10).
 
-Triggers integration originally based on oAUTH authentication setup to access pipeline has now been changed and moved to Adobe I/O. [Read more](../../integrations/using/configuring-adobe-io.md)
+De Triggers-integratie die oorspronkelijk was gebaseerd op de oAUTH-verificatieset-up voor toegang tot de pipeline, is nu gewijzigd en verplaatst naar Adobe I/O. [Meer informatie](../../integrations/using/configuring-adobe-io.md)
 
 **Overige updates**
 
@@ -473,7 +473,7 @@ De belangrijkste stappen bij het maken en verzenden van een levering zijn opnieu
 
 De sectie [E-mailarchivering](../../installation/using/email-archiving.md) is verplaatst, opnieuw ingedeeld en verbeterd met duidelijkere informatie:
 
-* Er zijn best practices toegevoegd betreffende e-mails per verbinding en parameters voor BCC-verzendende IP-adressen.
+* Er zijn best practices toegevoegd betreffende e-mails per verbinding en parameters voor BCC verzendende IP-adressen.
 
 * We hebben de stappen bijgewerkt voor de upgrade naar het nieuwe e-mailarchiveringssysteem (BCC) als u al e-mailarchivering gebruikt met een oudere build (vóór Adobe Campaign 17.2 - build 8795).
 
