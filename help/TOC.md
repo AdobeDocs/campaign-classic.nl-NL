@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
 source-wordcount: '2179'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 96%
          + [Ontwikkeling](platform/using/faq-developers.md)
       + [Zelfstudies](platform/using/tutorials.md)
    + Privacy {#privacy}
-      + [Privacy en toestemming](platform/using/privacy-and-recommendations.md)
+      + [Privacy en instemming](platform/using/privacy-and-recommendations.md)
       + [Privacybeheer](platform/using/privacy-management.md)
       + [Verzoeken om toegang tot persoonsgegevens](platform/using/privacy-requests.md)
       + [Veelgestelde vragen over privacy](platform/using/privacy-faq.md)
@@ -630,7 +630,7 @@ ht-degree: 96%
       + Configuratierichtlijnen {#config-databases}
          + [Configuratiestappen](installation/using/configure-fda.md)
          + [Snowflake configureren](installation/using/configure-fda-snowflake.md)
-         + [Azure synapse configureren](installation/using/configure-fda-synapse.md)
+         + [Azure Synapse configureren](installation/using/configure-fda-synapse.md)
          + [Hadoop configureren](installation/using/configure-fda-hadoop.md)
          + [Oracle configureren](installation/using/configure-fda-oracle.md)
          + [Netezza configureren](installation/using/configure-fda-netezza.md)
@@ -648,7 +648,7 @@ ht-degree: 96%
       + [Nieuwe instanties maken](installation/using/creating-new-instances.md)
       + [Lijst met Campaign-opties](installation/using/configuring-campaign-options.md)
       + [Installatie van Campaign verwijderen](installation/using/uninstalling-campaign.md)
-+ Monitoringgids {#monitoring-campaign-classic}
++ Bewakingshandleiding{#monitoring-campaign-classic}
    + Inleiding {#introduction}
       + [Voorwoord](production/using/foreword.md)
       + [Algemene architectuur](production/using/general-architecture.md)
