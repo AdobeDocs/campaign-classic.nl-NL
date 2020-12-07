@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 82c5f4f4c37f295a6c206eb33616ae9223740f36
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -51,8 +51,8 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    <ul>
    <li>Soap-API - On-premise: 2007, 2015, 2016</li>
    <li>Soap-API - Online: 2015, 2016</li>
-   <li>Web API - de Dynamica CRM van Microsoft op-gebouw: 2016, 2016 Update 1</li>
-   <li>Web API - Microsoft Dynamics CRM Online: 2016, 2016 Update 1</li>
+   <li>Web-API – Microsoft Dynamics CRM on-premise: 2016, 2016 Update 1</li>
+   <li>Web-API – Microsoft Dynamics CRM online: 2016, 2016 Update 1</li>
    </ul>
   <p><em>Doeldatum voor verwijdering: april 2021</em></p>
   </td>
