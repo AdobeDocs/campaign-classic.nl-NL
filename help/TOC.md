@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
+source-git-commit: b78c9dc9112893f2b203eccf0bd2d92fa299425d
 workflow-type: tm+mt
-source-wordcount: '2179'
+source-wordcount: '2182'
 ht-degree: 98%
 
 ---
@@ -697,6 +697,8 @@ ht-degree: 98%
       + [Wachtwoord verloren](production/using/lost-password.md)
       + [JSP-gedrag](production/using/jsp-behavior.md)
 + Handleiding voor ontwikkelaars {#configuring-campaign-classic}
++ 
+   + [Informatie over de configuratie van campagnes](configuration/using/about-config-guide.md)
    + Datamodel {#data-model}
       + [Het datamodel](configuration/using/about-data-model.md)
       + [Beschrijving van het datamodel](configuration/using/data-model-description.md)
