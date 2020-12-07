@@ -6,9 +6,9 @@ description: Nieuwste opmerkingen bij de release van Campaign Classic
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1820'
 ht-degree: 100%
 
@@ -57,7 +57,7 @@ _27 oktober 2020_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p><a href="../../delivery/using/configuring-the-mobile-application-android.md#creating-notification-message">Android-pushmeldingen zijn verbeterd en bieden nu ondersteuning voor FCM HTTP v1 API voor Android-pushkanaalverificatie.</a> </p>
+<td> <p><a href="../../delivery/using/configuring-the-mobile-application-android.md#creating-notification-message">Android-pushmeldingen zijn verbeterd en bieden nu ondersteuning voor de FCM HTTP v1-API voor Android-pushkanaalverificatie.</a> </p>
 <p>Met de nieuwe ondersteunde API-versie kunt u nu FCM-meldingsberichten verzenden die uitgebreide mogelijkheden voor pushmeldingen bieden. <a href="https://firebase.google.com/docs/cloud-messaging/migrate-v1">Meer informatie</a></p> 
 <p>Ontdek in <a href="../../delivery/using/configuring-the-mobile-application-android.md">deze sectie</a> hoe u FCM HTTP v1 API voor Android in Adobe Campaign configureert.</p>
 </td> 
