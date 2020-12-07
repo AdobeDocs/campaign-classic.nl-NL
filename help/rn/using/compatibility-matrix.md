@@ -6,11 +6,11 @@ description: Campaign Classic-compatibiliteitsmatrix
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ff3d18b104a8dba7cd813aa698f9c27b4e25e244
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '537'
-ht-degree: 14%
+ht-degree: 100%
 
 ---
 
@@ -19,21 +19,21 @@ ht-degree: 14%
 
 Dit document bevat een lijst met alle systemen en onderdelen die worden ondersteund voor [de nieuwste build](../../rn/using/latest-release.md) van **Adobe Campaign Classic**. Producten en versies die geen deel uitmaken van deze lijst, zijn niet compatibel met Adobe Campaign.
 
-Raadpleeg de [Gold Standard-compatibiliteitsmatrix](../../rn/using/compatibility-matrix-gs.md)als u Gold Standard gebruikt.
+Raadpleeg de [Gold Standard-compatibiliteitsmatrix](../../rn/using/compatibility-matrix-gs.md) als u Gold Standard gebruikt.
 
 ## Belangrijke opmerkingen{#important-notes}
 
-Tenzij anders vermeld, worden alle kleine releases ondersteund.
+Tenzij anders vermeld worden alle kleine releases ondersteund.
 
-Adobe Campaign Classic is in de [meest recente build](../../rn/using/latest-release.md)compatibel met alle systemen en gereedschappen die op deze pagina worden vermeld. Aangezien specifieke versies van deze systemen en hulpmiddelen van derden het einde van de levensduur (EOL) met hun respectieve makers bereiken, zal Adobe Campaign niet meer compatibel zijn met die versies en zullen zij uit onze verenigbaarheidsmatrijs in de verdere productversie worden verwijderd. Zorg ervoor dat u ondersteunde versies van alle systemen in de compatibiliteitsmatrix gebruikt om problemen te voorkomen.
+De [meest recente build](../../rn/using/latest-release.md) van Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagina worden vermeld. Wanneer specifieke versies van deze externe systemen en tools het einde van de levensduur bereiken bij hun respectieve makers, is Adobe Campaign niet meer compatibel met deze versies. Ze worden dan in de volgende productrelease uit onze compatibiliteitsmatrix verwijderd. Zorg ervoor dat u ondersteunde versies van alle systemen in de compatibiliteitsmatrix gebruikt om problemen te voorkomen.
 
-Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie over afgekeurde items.
+Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informatie over verouderde items.
 
 >[!CAUTION]
 >
->Deze matrix wordt regelmatig bijgewerkt met nieuwe ondersteunde items die worden toegevoegd en vervangen door items die worden verwijderd.
+>Deze matrix wordt regelmatig bijgewerkt door toevoeging van nieuwe ondersteunde items en verwijdering van verouderde items.
 
-## Operating Systems{#OperatingSystems}
+## Besturingssystemen{#OperatingSystems}
 
 <table> 
 <tbody> 
@@ -57,7 +57,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 <td>
 <p>8.x (64 bits)</p>
 <p>7.x (64 bits)</p>
-<p><strong>Belangrijk:</strong> Als u RHEL gebruikt, moet u bereid zijn om SELinux onbruikbaar te maken of uw architecten te hebben aangepaste SELinux regels schrijven om te controleren dat toegelaten SELinux geen kwesties met de verrichtingen van de Campagne veroorzaakt.</p>
+<p><strong>Belangrijk:</strong> als u RHEL gebruikt, moet u bereid zijn om SELinux uit te schakelen of uw architecten aangepaste SELinux-regels te laten schrijven om te controleren of een ingeschakelde SELinux-versie geen problemen veroorzaakt met Campaign-activiteiten.</p>
 </td>
 </tr>
 <tr>
@@ -71,7 +71,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 </tbody>
 </table>
 
-## Web Servers{#WebServers}
+## Webservers{#WebServers}
 
 <table>
 <tbody>
@@ -102,7 +102,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>De aanvraag is goedgekeurd voor de Java Development Kit (JDK) die is ontwikkeld door Oracle en voor OpenJDK.</p>
+<p>De applicatie is goedgekeurd voor zowel de Java Development Kit (JDK) die is ontwikkeld door Oracle als voor OpenJDK.</p>
 </td>
 </tr>
 <tr>
@@ -114,7 +114,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 <tr>
 <td>SpamAssassin</td>
 <td>
-<p>3,4 x</p>
+<p>3.4.x</p>
 </td>
 </tr>
 </tbody>
@@ -124,7 +124,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 
 >[!NOTE]
 >
->RDBMS-stuurprogramma moet overeenkomen met RDBMS-serverversie.
+>Het RDBMS-stuurprogramma moet overeenkomen met de RDBMS-serverversie.
 
 <table>
 <tbody>
@@ -143,10 +143,10 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 <p>12.x</p>
 <p>11.x</p>
 <p>10.x</p>
-<p>9,6 x</p>
-<p>9,5 x</p>
-<p>9,4 x</p>
-<p>Opmerking: u kunt ook Amazon RDS voor PostgreSQL gebruiken met de hierboven gespecificeerde versies.</p>
+<p>9.6.x</p>
+<p>9.5.x</p>
+<p>9.4.x</p>
+<p>Opmerking: u kunt ook Amazon RDS voor PostgreSQL gebruiken met de hierboven vermelde versies.</p>
 </td>
 </tr>
 <tr>
@@ -157,7 +157,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 en SP2</p>
-<p>Waarschuwing: Microsoft SQL Server wordt niet ondersteund als de primaire database wanneer de Campagneserver op Linux wordt uitgevoerd. <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Meer informatie</a>.</p>
+<p>Waarschuwing: Microsoft SQL Server wordt niet als de primaire database ondersteund wanneer de Campaign-server op Linux wordt uitgevoerd. <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Meer informatie</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -165,7 +165,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 
 >[!NOTE]
 >
->PostgreSQL is de standaarddatabaseserver voor gehoste omgevingen.
+>PostgreSQL is de standaard databaseserver voor gehoste omgevingen.
 
 ## CRM-connectoren{#CRMconnectors}
 
@@ -178,7 +178,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 </td>
 </tr>
 <tr>
-<td>SFDC API</td>
+<td>SFDC-API</td>
 <td>
 <p>API-versie 21</p>
 <p>API-versie 15</p>
@@ -186,13 +186,13 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 </tr>
 <tr><td>Oracle On-demand-API</td>
 <td>
-<p>Web Services v1.0 API</p>
+<p>Web Services v1.0-API</p>
 </td>
 </tr>
 <tr>
 <td>MS Dynamics</td>
 <td>
-<p>Web-API: Dynamics 365 On-premise en Online</p>
+<p>Web-API: Dynamics 365 on-premise en online</p>
 </td>
 </tr>
 </tbody>
@@ -203,7 +203,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 <table>
 <tbody>
 <tr>
-<td>Microsoft Azure synapse Analytics</td>
+<td>Microsoft Azure Synapse Analytics</td>
 <td> </td>
 </tr>
 <tr>
@@ -226,9 +226,9 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 <p>12.x</p>
 <p>11.x</p>
 <p>10.x</p>
-<p>9,6 x</p>
-<p>9,5 x</p>
-<p>9,4 x</p>
+<p>9.6.x</p>
+<p>9.5.x</p>
+<p>9.4.x</p>
 </td>
 </tr>
 <tr><td>SQL Server</td>
@@ -237,7 +237,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 <p>2017</p>
 <p>2016</p>
 <p>2014</p>
-<p>SP1 en SP2 2012</p>
+<p>2012 SP1 en SP2</p>
 </td>
 </tr>
 <tr><td>MySQL</td>
@@ -308,7 +308,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 </tbody>
 </table>
 
-## Mobile SDK{#MobileSDK}
+## Mobiele SDK{#MobileSDK}
 
 <table>
 <tbody>
@@ -316,14 +316,14 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 <td>Android</td>
 <td>
 <p>7.x, 8.x, 9.0</p>
-<p>met mobiele SDK build 1.0.27.</p>
+<p>met mobiele SDK-build 1.0.27.</p>
 </td>
 </tr>
 <tr>
 <td>iOS</td>
 <td>
 <p>iOS 9 - 14</p>
-<p>met mobiele SDK build 1.0.26, compatibel met 32- en 64-bits versies.</p>
+<p>met mobiele SDK-build 1.0.26, compatibel met de 32-bits en de 64-bits versie.</p>
 </td>
 </tr>
 </tbody>
@@ -331,13 +331,13 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 
 ## Browsers{#Browsers}
 
-Voor de volgende browsers wordt de nieuwste versie ondersteund: Microsoft Edge, Mozilla Firefox, Google Chrome, Safari.
+Voor de volgende browsers wordt de nieuwste versie ondersteund: Microsoft Edge, Mozilla Firefox, Google Chrome en Safari.
 
 Internet Explorer 11 wordt ondersteund.
 
-## Meer als dit{#Morelikethis}
+## Wellicht ook interessant{#Morelikethis}
 
-* [Opmerkingen bij de release Campaign Classic](../../rn/using/latest-release.md)
+* [Opmerkingen bij de release van Campaign Classic](../../rn/using/latest-release.md)
 * [Installatiehandleiding](../../installation/using/general-architecture.md)
 * [Verouderde functies en systemen](../../rn/using/deprecated-features.md)
-* [Upgradeprocedure bouwen](../../production/using/build-upgrade.md)
+* [Upgradeprocedure opstellen](../../production/using/build-upgrade.md)
