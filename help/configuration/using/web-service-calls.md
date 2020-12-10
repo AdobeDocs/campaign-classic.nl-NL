@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 1%
@@ -31,7 +31,7 @@ De diensten van het Web laten u vele toepassingen van een derdesysteem tot stand
 
 De definitie van de diensten van het Web die op de de toepassingsserver van Adobe Campaign worden uitgevoerd is beschikbaar bij de gegevensschema&#39;s.
 
-De dienst van het Web wordt beschreven in de grammatica van de gegevensschema&#39;s en is beschikbaar bij het **`<methods>`** element.
+Een dienst van het Web wordt beschreven in de grammatica van de gegevensschema&#39;s en is beschikbaar bij het **`<methods>`** element.
 
 ```
 <methods>
@@ -46,15 +46,15 @@ De dienst van het Web wordt beschreven in de grammatica van de gegevensschema&#3
 </methods>
 ```
 
-Hier is een voorbeeld van de definitie van de methode genoemd **GenerateForm**.
+Hier hebben wij een voorbeeld van de definitie van de methode genoemd **GenerateForm**.
 
-De beschrijving van de dienst begint met het `<method>` element. De lijst met parameters van de methode wordt vanuit het `<parameters>` element voltooid. Elke parameter wordt opgegeven door een naam, een type (Boolean, tekenreeks, DOMElement, enz.) en een beschrijving. Het &quot;inout&quot;attribuut met de &quot;uit&quot;waarde laat u specificeren dat de &quot;resultaat&quot;parameter bij de vraagoutput van de ZEEP is.
+De beschrijving van de service begint met het element `<method>`. De lijst van parameters van de methode wordt voltooid van het `<parameters>` element. Elke parameter wordt opgegeven door een naam, een type (Boolean, tekenreeks, DOMElement, enz.) en een beschrijving. Het &quot;inout&quot;attribuut met de &quot;uit&quot;waarde laat u specificeren dat de &quot;resultaat&quot;parameter bij de vraagoutput van de ZEEP is.
 
 De aanwezigheid van het attribuut &quot;static&quot; (met de waarde &quot;true&quot;) beschrijft deze methode als statisch, wat betekent dat alle parameters van de methode moeten worden gedeclareerd.
 
 Een &quot;const&quot;methode heeft impliciet een document van XML in het formaat van zijn bijbehorend schema als input.
 
-Een volledige beschrijving van het `<method>` element van een Adobe Campaign-schema is beschikbaar in het hoofdstuk &quot;Schema references&quot; onder  <a href="../../configuration/using/elements-and-attributes.md#method--element" target="_blank">  `<method>`    element.
+Een volledige beschrijving van het element `<method>` van een Adobe Campaign-schema is beschikbaar in het hoofdstuk &quot;Schemaverwijzingen&quot; onder <a href="../../configuration/using/schema/method.md)" target="_blank">  `<method>`    element.
 
 Voorbeeld van de methode &quot;const&quot;-type &quot;ExecuteQuery&quot; in het schema &quot;xtk:queryDef&quot;:
 
@@ -73,7 +73,7 @@ De invoerparameter van deze methode is een XML-document in de indeling van het s
 
 Een WSDL-bestand (Web Service Description Library) is beschikbaar voor elke service. In dit XML-bestand wordt een metaal gebruikt om de service te beschrijven en de beschikbare methoden, parameters en server op te geven waarmee contact moet worden opgenomen voor het uitvoeren van de service.
 
-### WSDL-bestanden genereren {#wsdl-file-generation}
+### WSDL-bestand genereren {#wsdl-file-generation}
 
 Als u een WSDL-bestand wilt genereren, moet u de volgende URL vanuit een webbrowser invoeren:
 
@@ -130,7 +130,7 @@ De typedefinities zijn gebaseerd op de schema&#39;s van XML. In ons voorbeeld ge
 
 #### Berichten {#messages}
 
-In het `<message>` rapport worden de namen en typen beschreven van een set velden die moet worden verzonden. De methode gebruikt twee berichten om als parameter (&quot;ExecuteQueryIn&quot;) en de terugkeerwaarde (&quot;ExecuteQueryOut&quot;) over te gaan.
+Met `<message>` worden de namen en typen beschreven van een set velden die moeten worden verzonden. De methode gebruikt twee berichten om als parameter (&quot;ExecuteQueryIn&quot;) en de terugkeerwaarde (&quot;ExecuteQueryOut&quot;) over te gaan.
 
 ```
 <message name="ExecuteQueryIn">
@@ -144,7 +144,7 @@ In het `<message>` rapport worden de namen en typen beschreven van een set velde
 
 #### PortType {#porttype}
 
-De `<porttype>` associeert de berichten op de &quot;UitvoerenQuery&quot;verrichting die door de vraag (&quot;input&quot;) wordt teweeggebracht die een reactie (&quot;output&quot;) produceert.
+`<porttype>` associeert de berichten op de &quot;UitvoerenQuery&quot;verrichting die door de vraag (&quot;input&quot;) wordt teweeggebracht die een reactie (&quot;output&quot;produceren).
 
 ```
 <portType name="queryDefMethodsSoap">
@@ -157,7 +157,7 @@ De `<porttype>` associeert de berichten op de &quot;UitvoerenQuery&quot;verricht
 
 #### Binding {#binding}
 
-In het `<binding>` deel worden het SOAP-communicatieprotocol ( `<soap:binding>` ), het gegevensvervoer in HTTP (waarde van het kenmerk &quot;transport&quot;) en de gegevensindeling voor de bewerking &quot;ExecuteQuery&quot; opgegeven. De hoofdtekst van de SOAP-envelop bevat de berichtsegmenten direct zonder transformatie.
+Het `<binding>` deel specificeert het de communicatie protocol van de ZEEP ( `<soap:binding>`), gegevensvervoer in HTTP (waarde van het &quot;vervoer&quot;attribuut) en het gegevensformaat voor de &quot;UitvoerenQuery&quot;verrichting. De hoofdtekst van de SOAP-envelop bevat de berichtsegmenten direct zonder transformatie.
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -176,7 +176,7 @@ In het `<binding>` deel worden het SOAP-communicatieprotocol ( `<soap:binding>` 
 
 #### Service {#service}
 
-In het `<service>` deel wordt de service &quot;XtkQueryDef&quot; beschreven met de URI op de URL van de Adobe Campaign-toepassingsserver.
+In het deel `<service>` wordt de service &quot;XtkQueryDef&quot; beschreven met de URI op de URL van de Adobe Campaign-toepassingsserver.
 
 ```
 <service name="XtkQueryDef">
@@ -188,7 +188,7 @@ In het `<service>` deel wordt de service &quot;XtkQueryDef&quot; beschreven met 
 
 ## Connectiviteit {#connectivity}
 
-Adobe Campaign heeft de beveiliging voor verificatiemechanismen verbeterd door beveiligingszones in te voeren (zie het hoofdstuk **Beveiligingszones** definiëren in [deze sectie](../../installation/using/configuring-campaign-server.md#defining-security-zones)) en door instellingen voor sessiebeheer in te voeren.
+Adobe Campaign heeft de beveiliging voor verificatiemechanismen verhoogd door beveiligingszones in te voeren (zie het hoofdstuk **Beveiligingszones definiëren** in [deze sectie](../../installation/using/configuring-campaign-server.md#defining-security-zones)) en door instellingen voor sessiebeheer in te voeren.
 
 Er zijn twee beschikbare verificatiemodi:
 
@@ -196,9 +196,9 @@ Er zijn twee beschikbare verificatiemodi:
 
 of
 
-* **via Adobe Campaign login + wachtwoord** dat tot een zittingsteken leidt. Het sessietoken verloopt automatisch na een ingestelde periode. Deze modus wordt niet aanbevolen en vereist dat de beveiligingsinstellingen van de toepassing voor bepaalde zone-instellingen worden verminderd (allowUserPassword=&quot;true&quot; en sessionTokenOnly=&quot;true&quot;).
+* **via Adobe Campaign login +** wachtwoord dat tot een zittingsteken leidt. Het sessietoken verloopt automatisch na een ingestelde periode. Deze modus wordt niet aanbevolen en vereist dat de beveiligingsinstellingen van de toepassing voor bepaalde zone-instellingen worden verminderd (allowUserPassword=&quot;true&quot; en sessionTokenOnly=&quot;true&quot;).
 
-### Sessietekenmerken {#session-token-characteristics}
+### Kenmerken van sessietoken {#session-token-characteristics}
 
 Het zittingsteken heeft de volgende kenmerken:
 
@@ -209,7 +209,7 @@ Het zittingsteken heeft de volgende kenmerken:
    * het sessietoken wordt een permanent token, het wordt niet vernietigd wanneer de browser wordt gesloten
    * het wordt geplaatst in een HTTP-ONLY koekje (de koekjes moeten voor exploitanten worden geactiveerd)
 
-### Kenmerken beveiligingstoken {#security-token-characteristics}
+### Kenmerken van beveiligingstoken {#security-token-characteristics}
 
 Het beveiligingstoken heeft de volgende kenmerken:
 
@@ -222,7 +222,7 @@ Het beveiligingstoken heeft de volgende kenmerken:
    * de pagina-URL&#39;s worden bijgewerkt om het beveiligingstoken bij te werken
    * de formulieren worden ook bijgewerkt via een verborgen veld dat de token bevat
 
-#### Beveiliging van tokens {#security-token-movement}
+#### Beweging van beveiligingstoken {#security-token-movement}
 
 Wanneer deze via de console wordt benaderd, is de volgende code beschikbaar:
 
@@ -238,7 +238,7 @@ Van een SOAP-aanroep:
 
 * het wordt toegevoegd aan vraagkopballen
 
-### Voorbeelden bellen {#call-examples}
+### Voorbeelden van oproepen {#call-examples}
 
 * Met **HttpSoapConnection/SoapService**:
 
@@ -273,11 +273,11 @@ Van een SOAP-aanroep:
   logInfo(queryRes[0].toXMLString())
 ```
 
-* Gebruikend **HttpServletRequest**:
+* Met **HttpServletRequest**:
 
 >[!NOTE]
 >
->De URLs die in de volgende vraag **HttpServletRequest** wordt gebruikt moet op lijst van gewenste personen in de url toestemmingensectie van het **serverConf.xml** - dossier zijn. Dit geldt ook voor de URL van de server zelf.
+>De URL&#39;s die in de volgende **HttpServletRequest**-aanroepen worden gebruikt, moeten zich op de lijst van gewenste personen bevinden in de sectie met url-machtigingen van het bestand **serverConf.xml**. Dit geldt ook voor de URL van de server zelf.
 
 Uitvoering aanmelding():
 
