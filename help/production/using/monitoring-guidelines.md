@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9aa0ecd423bfbf1082e9ce5bdb36aaf1611dea54
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 6%
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 ## Instance Monitoring dashboard {#instance-monitoring-dashboard}
 
-Het **[!UICONTROL Monitoring]** tabblad, dat toegankelijk is vanaf de startpagina van Campaign Classic, is het belangrijkste toegangspunt waarmee u uw instantie kunt controleren.
+Het tabblad **[!UICONTROL Monitoring]**, dat toegankelijk is vanaf de startpagina van Campaign Classic, is het belangrijkste ingangspunt waarmee u uw instantie kunt controleren.
 
 Het verstrekt een dashboard van wat op uw geval voorkomt: de status (versie van de build, geïnstalleerde pakketten, enz.), systeemindicatoren, logboeken, workflows die momenteel worden uitgevoerd, de status van de laatst verzonden leveringen, enz.
 
@@ -27,7 +27,7 @@ Gedetailleerde informatie is [hier](../../production/using/monitoring-processes.
 
 ![](assets/monitoring_tab.png)
 
-## Monitoring Campaign Classic processes {#monitoring-campaign-classic-processes}
+## Bewaking van Campaign Classic-processen {#monitoring-campaign-classic-processes}
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Uw instantie controleren</a></p></td>
@@ -38,21 +38,21 @@ Gedetailleerde informatie is [hier](../../production/using/monitoring-processes.
 
 Er zijn aanvullende manieren beschikbaar om de verschillende campagneprocessen te controleren. Zij verstrekken verscheidene manieren om uw instanties te controleren om ervoor te zorgen dat uw systeem gezond is en uiteindelijk problemen problemen op te lossen die zich kunnen voordoen wanneer vestiging werkschema&#39;s, verzendende leveringen, enz.
 
-### Uw exemplaar controleren {#monitoring-instance}
+### Uw instantie {#monitoring-instance} controleren
 
 <img src="assets/do-not-localize/icon_system.svg" width="60px">
 
 **Automatische bewakingsgereedschappen**
 
-Er zijn verschillende automatische methoden beschikbaar. om u te helpen uw instantie controleren. U kunt bijvoorbeeld e-mailrapporten instellen met opgespoorde anomalieën, een lijst met indicatoren ophalen in XML-indeling, enzovoort. [Klik hier](../../production/using/monitoring-processes.md#automatic-monitoring) voor meer informatie.
+Er zijn verschillende automatische methoden beschikbaar. om u te helpen uw instantie controleren. U kunt bijvoorbeeld e-mailrapporten instellen met opgespoorde anomalieën, een lijst met indicatoren ophalen in XML-indeling, enzovoort. [Klik ](../../production/using/monitoring-processes.md#automatic-monitoring) hier voor meer informatie.
 
 **Audittrail**
 
-Met het audittrail kunt u de volledige geschiedenis van wijzigingen met betrekking tot opties, workflows en schema&#39;s binnen uw instantie visualiseren. [Klik hier](../../production/using/audit-trail.md) voor meer informatie.
+Met het audittrail kunt u de volledige geschiedenis van wijzigingen met betrekking tot opties, workflows en schema&#39;s binnen uw instantie visualiseren. [Klik ](../../production/using/audit-trail.md) hier voor meer informatie.
 
 **Configuratiescherm**
 
-In het Configuratiescherm kunt u verschillende instellingen van uw exemplaar beheren: beheer URL toestemmingen, controleer uw instantiedetails zoals de bouwstijlversies van uw servers, enz. Hiermee kunt u ook de beschikbare ruimte op de SFTP-servers controleren die met uw instantie zijn verbonden. [Klik hier](https://docs.adobe.com/content/help/nl-NL/control-panel/using/control-panel-home.html) voor meer informatie.
+In het Configuratiescherm kunt u verschillende instellingen van uw exemplaar beheren: beheer URL toestemmingen, controleer uw instantiedetails zoals de bouwstijlversies van uw servers, enz. Hiermee kunt u ook de beschikbare ruimte op de SFTP-servers controleren die met uw instantie zijn verbonden. [Klik ](https://docs.adobe.com/content/help/nl-NL/control-panel/using/control-panel-home.html) hier voor meer informatie.
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ In het Configuratiescherm kunt u verschillende instellingen van uw exemplaar beh
 
 **Workflow HeatMap**
 
-De Werkstroom HeatMap verstrekte een visuele vertegenwoordiging van alle werkschema&#39;s die op uw instantie lopen. Het staat u toe om de lading op de instantie gemakkelijk te controleren en werkschema&#39;s dienovereenkomstig te plannen. [Klik hier](../../workflow/using/heatmap.md) voor meer informatie.
+De Werkstroom HeatMap verstrekte een visuele vertegenwoordiging van alle werkschema&#39;s die op uw instantie lopen. Het staat u toe om de lading op de instantie gemakkelijk te controleren en werkschema&#39;s dienovereenkomstig te plannen. [Klik ](../../workflow/using/heatmap.md) hier voor meer informatie.
 
 **Audittrail**
 
@@ -72,11 +72,11 @@ Met het audittrail kunt u alle wijzigingen visualiseren die in workflows zijn aa
 
 **Problemen met werkstromen oplossen**
 
-Er kunnen specifieke acties worden uitgevoerd wanneer er problemen optreden met de uitvoering van een workflow. [Klik hier](../../production/using/workflow-execution.md) voor meer informatie
+Er kunnen specifieke acties worden uitgevoerd wanneer er problemen optreden met de uitvoering van een workflow. [Klik ](../../production/using/workflow-execution.md) hier voor meer informatie
 
 **Workflow Status Monitoring**
 
-Naast de heatmap kunt u ook een workflow maken waarmee u de status van een set workflows kunt controleren en terugkerende berichten naar supervisors kunt verzenden. [Klik hier](../../workflow/using/supervising-workflows.md) voor meer informatie.
+Naast de heatmap kunt u ook een workflow maken waarmee u de status van een set workflows kunt controleren en terugkerende berichten naar supervisors kunt verzenden. [Klik ](../../workflow/using/supervising-workflows.md) hier voor meer informatie.
 
 **Algemene richtsnoeren**
 
@@ -94,37 +94,38 @@ In SMTP-rapporten worden leveringsstatistieken en SMTP-fouten per domein weergeg
 
 **Best practices**
 
-[De beste praktijken voor levering verzenden en ontwerpen](../../delivery/using/delivery-best-practices.md) kunnen u helpen hun prestaties verbeteren.
+[De beste praktijken voor levering verzenden en ](../../delivery/using/delivery-best-practices.md) ontwerpen kunnen u helpen hun prestaties verbeteren.
 
-**De het oplossen van problemen** Specifieke acties van de levering kunnen worden uitgevoerd wanneer het ontmoeten van kwesties met leveringen:
+**Het**
+oplossen van problemen van de leveringSpecifieke acties kunnen worden uitgevoerd wanneer het ontmoeten van kwesties met leveringen:
 * [Leverbaarheidsproblemen](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemen met weergave van afbeeldingen](../../production/using/image-display-issues.md)
-* [Leveringsprestaties](../../delivery/using/monitoring-a-delivery.md#performance_issues)
-* [Uitgave van tijdelijke bestanden](../../production/using/temporary-files.md) - alleen *op locatie voor hostingmodellen*
+* [Leveringsprestaties](../../delivery/using/delivery-performances.md)
+* [Uitgave](../../production/using/temporary-files.md)  van tijdelijke bestanden - alleen  *op locatie voor hostingmodellen*
 
-### Toezicht op de database {#monitoring-database}
+### De database {#monitoring-database} controleren
 
 <img src="assets/do-not-localize/icon_database.svg" width="60px">
 
 **Workflow voor opschonen van databases**
 
-Met de workflow voor het opschonen van databases kunt u verouderde gegevens uit uw database verwijderen. Het wordt aanbevolen exponentiële groei van de database te vermijden. [Klik hier](../../production/using/database-cleanup-workflow.md) voor meer informatie.
+Met de workflow voor het opschonen van databases kunt u verouderde gegevens uit uw database verwijderen. Het wordt aanbevolen exponentiële groei van de database te vermijden. [Klik ](../../production/using/database-cleanup-workflow.md) hier voor meer informatie.
 
 **Problemen met databaseprestaties oplossen**
 
-Specifieke acties kunnen worden uitgevoerd wanneer er problemen optreden met databaseprestaties. [Klik hier](../../production/using/database-performances.md) voor meer informatie.
+Specifieke acties kunnen worden uitgevoerd wanneer er problemen optreden met databaseprestaties. [Klik ](../../production/using/database-performances.md) hier voor meer informatie.
 
 **Databaseonderhoud**
 
 *alleen op locatie en hybride hostingmodellen*
 
-Wij adviseren dat u gegevensbestandonderhoud op een regelmatige basis uitvoert om overconsumptie van schijfruimte te vermijden, waarbij gegevensbestandtoegang wordt beïnvloed. [Klik hier](../../production/using/recommendations.md) voor meer informatie.
+Wij adviseren dat u gegevensbestandonderhoud op een regelmatige basis uitvoert om overconsumptie van schijfruimte te vermijden, waarbij gegevensbestandtoegang wordt beïnvloed. [Klik ](../../production/using/recommendations.md) hier voor meer informatie.
 
 **Back-up en herstel**
 
 *alleen op locatie en hybride hostingmodellen*
 
-Back-up is van essentieel belang om gegevensverlies te voorkomen in geval van een fysiek of systeemgerelateerd probleem op een computer. [Klik hier](../../production/using/backup.md) voor meer informatie. De herstelprocedure wordt beschreven in [dit gedeelte](../../production/using/restoration.md).
+Back-up is van essentieel belang om gegevensverlies te voorkomen in geval van een fysiek of systeemgerelateerd probleem op een computer. [Klik ](../../production/using/backup.md) hier voor meer informatie. De herstelprocedure wordt beschreven in [deze sectie](../../production/using/restoration.md).
 
 ## Technische beginselen van Campaign Classic {#campaign-classic-technical-principles}
 
