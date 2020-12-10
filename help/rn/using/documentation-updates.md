@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 3c82e30cdc1057be6357d48170b959fb89c79528
+source-git-commit: 5406b1cd6f9cf4f87071a9976be1728ba9d4fcef
 workflow-type: tm+mt
-source-wordcount: '3663'
+source-wordcount: '3660'
 ht-degree: 99%
 
 ---
@@ -312,7 +312,7 @@ De optie WdbcOptions_TempDbName is toegevoegd aan de lijst met Campaign-opties. 
 
 De pagina over de FDA-matrix is [hier](../../installation/using/remote-database-access-rights.md) geplaatst.
 
-De pagina over de matrix voor toegangsrechten is [hier](https://docs.adobe.com/content/help/nl-NL/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf) geplaatst.
+De pagina over de matrix voor toegangsrechten is [hier](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=en) geplaatst.
 
 De sectie waarin wordt beschreven hoe u interactieve content met AMP definieert, is verplaatst. [Meer informatie](../../delivery/using/defining-interactive-content.md)
 
