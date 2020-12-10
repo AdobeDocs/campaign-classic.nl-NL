@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 12%
@@ -22,8 +22,8 @@ Met Adobe Campaign kunt u op grote schaal gepersonaliseerde elektronische berich
 Voordat u begint met het verzenden van e-mails:
 
 * Zorg ervoor dat de ontvangende profielen minstens een e-mailadres bevatten.
-* Klik hier als je meer wilt weten over de beste praktijken [voor Adobe Campaign-](../../delivery/using/delivery-best-practices.md)levering.
-* Lees meer over [aflevering](../../delivery/using/about-deliverability.md) en [Leverbaarheid](https://helpx.adobe.com/campaign/kb/acc-deliverability.html)beheren.
+* Meer informatie over de Adobe Campaign [Best practices voor levering](../../delivery/using/delivery-best-practices.md).
+* Lees meer over [Leverbaarheid](../../delivery/using/about-deliverability.md) en [Leesbaarheid beheren](https://helpx.adobe.com/campaign/kb/acc-deliverability.html).
 
 De belangrijkste stappen voor het verzenden van een e-mail zijn:
 
@@ -31,6 +31,6 @@ De belangrijkste stappen voor het verzenden van een e-mail zijn:
 * [De doelpopulatie definiëren](../../delivery/using/steps-defining-the-target-population.md)
 * [De e-mailcontent definiëren](../../delivery/using/defining-the-email-content.md)
 * [De e-mail verzenden](../../delivery/using/sending-messages.md)
-* [Toezicht op de levering](../../delivery/using/monitoring-a-delivery.md)
+* [Toezicht op de levering](../../delivery/using/about-delivery-monitoring.md)
 
-In de onderstaande secties vindt u specifieke informatie over het e-mailkanaal. Raadpleeg [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md)voor algemene informatie over het maken van een levering.
+In de onderstaande secties vindt u specifieke informatie over het e-mailkanaal. Voor globale informatie over hoe te om een levering tot stand te brengen, verwijs naar [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md).
