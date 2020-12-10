@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 7%
@@ -32,8 +32,8 @@ De belangrijkste stappen bij het maken van een levering zijn als volgt:
 
 1. **Verzend de levering**. [Meer informatie](../../delivery/using/steps-sending-the-delivery.md)
 
-1. **Controleer de levering** (volgen, quarantaine, rapporten, enz.). Raadpleeg voor meer informatie de secties [Leveringen](../../delivery/using/monitoring-a-delivery.md) controleren en Leveringen [bijhouden](../../delivery/using/about-message-tracking.md) .
+1. **De levering**  controleren (bijhouden, quarantaine, rapporten, enz.). Raadpleeg voor meer informatie de secties [Leveringen controleren](../../delivery/using/about-delivery-monitoring.md) en [Leveringen bijhouden](../../delivery/using/about-message-tracking.md).
 
 >[!NOTE]
 >
->De stappen die in dit hoofdstuk worden beschreven veronderstellen dat alle doelontvangers en hun profielen in het gegevensbestand, behalve in het geval van externe levering worden opgeslagen (zie het [Selecteren van externe ontvangers](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)).
+>In de stappen die in dit hoofdstuk worden beschreven, wordt ervan uitgegaan dat alle doelontvangers en hun profielen in de database worden opgeslagen, behalve in het geval van externe levering (zie [Externe ontvangers selecteren](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)).
