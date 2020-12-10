@@ -7,9 +7,9 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 translation-type: tm+mt
-source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
+source-git-commit: 4c3a2184ab09b1e1ed91d0127adc636a51808aec
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1007'
 ht-degree: 7%
 
 ---
@@ -146,12 +146,13 @@ Voorbeeld van het definiëren van een standaardwaarde:
 
 ```
 <attribute name="transactionDate" label="Transaction Date" type="datetime" default="GetDate()"/>
-`
+```
 
-Example of using a common attribute as a template for a field also marked as mandatory:
+Voorbeeld van het gebruik van een gemeenschappelijk kenmerk als een sjabloon voor een veld dat ook als verplicht is gemarkeerd:
+
 ```
 <attribute name="mobile" label="Mobile" template="nms:common:phone" required="true" />
-"
+```
 
 Voorbeeld van een berekend veld dat is verborgen met het kenmerk **@advanced**:
 
