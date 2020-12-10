@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 100%
@@ -49,7 +49,7 @@ De selfservice-interface voor beveiligingszones kan worden gebruikt om vermeldin
 
 Adobe Campaign wordt geleverd met een reeks dashboards en tools om uw e-mailleveringen te controleren.
 
-[Klik hier om te leren](../../delivery/using/monitoring-a-delivery.md) hoe u ervoor kunt zorgen dat uw berichten worden verzonden, hoe u de uitvoering kunt controleren en hoe u actie kunt ondernemen als er een fout optreedt.
+[Klik hier om te leren](../../delivery/using/about-delivery-monitoring.md) hoe u ervoor kunt zorgen dat uw berichten worden verzonden, hoe u de uitvoering kunt controleren en hoe u actie kunt ondernemen als er een fout optreedt.
 
 ## 5. Kan ik de uitvoering van de workflow controleren? {#can-i-monitor-workflow-execution}
 
