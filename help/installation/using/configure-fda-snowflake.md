@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 535339b5a9b39625100d630b0b831df143dbeb01
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 10%
@@ -15,12 +15,12 @@ ht-degree: 10%
 ---
 
 
-# Toegang tot Snowflake configureren {#configure-access-to-snowflake}
+# Toegang tot Snowflake {#configure-access-to-snowflake} configureren
 
-Gebruik de optie Campagne **Federated Data Access** (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot te configureren [!DNL Snowflake].
+De Campagne van het gebruik **Federated Data Access** (FDA) optie om informatie te verwerken die in een extern gegevensbestand wordt opgeslagen. Voer de onderstaande stappen uit om toegang tot [!DNL Snowflake] te configureren.
 
-1. Configureren [!DNL Snowflake] op [CentOS](#snowflake-centos), [Windows](#snowflake-windows) of [Debian](#snowflake-debian)
-1. De [!DNL Snowflake] externe account [](#snowflake-external) configureren in Campagne
+1. [!DNL Snowflake] configureren op [CentOS](#snowflake-centos), [Windows](#snowflake-windows) of [Debian](#snowflake-debian)
+1. [!DNL Snowflake] [externe account](#snowflake-external) configureren in campagne
 
 
 >[!NOTE]
@@ -31,9 +31,9 @@ Gebruik de optie Campagne **Federated Data Access** (FDA) om informatie te verwe
 
 ## Snowflake op CentOS {#snowflake-centos}
 
-Volg onderstaande stappen om CentOS te configureren: [!DNL Snowflake]
+Volg onderstaande stappen om [!DNL Snowflake] op CentOS te configureren:
 
-1. Download de ODBC-stuurprogramma&#39;s voor [!DNL Snowflake]. [Klik hier](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/snowflake-odbc-2.20.2.x86_64.rpm) om te beginnen met downloaden.
+1. Download de ODBC-stuurprogramma&#39;s voor [!DNL Snowflake]. [Klik ](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/snowflake-odbc-2.20.2.x86_64.rpm) hier om te beginnen met downloaden.
 1. Vervolgens moet u de ODBC-stuurprogramma&#39;s op CentOs installeren met de volgende opdracht:
 
    ```
@@ -48,7 +48,7 @@ Volg onderstaande stappen om CentOS te configureren: [!DNL Snowflake]
    /etc/init.d/nlserver6 start
    ```
 
-1. In Campagne, kunt u uw [!DNL Snowflake] externe rekening dan vormen. Raadpleeg [deze sectie](#snowflake-external)voor meer informatie over het configureren van uw externe account.
+1. In Campagne, kunt u uw [!DNL Snowflake] externe rekening dan vormen. Raadpleeg [deze sectie](#snowflake-external) voor meer informatie over het configureren van uw externe account.
 
 ## Snowflake in Windows {#snowflake-windows}
 
@@ -56,11 +56,11 @@ Volg onderstaande stappen om CentOS te configureren: [!DNL Snowflake]
 
 1. Configureer het ODBC-stuurprogramma. Raadpleeg [deze pagina](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver) voor meer informatie
 
-1. In Campagne, kunt u uw [!DNL Snowflake] externe rekening dan vormen. Raadpleeg [deze sectie](#snowflake-external)voor meer informatie over het configureren van uw externe account.
+1. In Campagne, kunt u uw [!DNL Snowflake] externe rekening dan vormen. Raadpleeg [deze sectie](#snowflake-external) voor meer informatie over het configureren van uw externe account.
 
 ## Snowflake op Debian {#snowflake-debian}
 
-1. Download de ODBC-stuurprogramma&#39;s voor [!DNL Snowflake]. [Klik hier](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) om te downloaden.
+1. Download de ODBC-stuurprogramma&#39;s voor [!DNL Snowflake]. [Klik op ](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) Opnieuw downloaden.
 
 1. Vervolgens moet u de ODBC-stuurprogramma&#39;s op Debian installeren met de volgende opdracht:
 
@@ -76,23 +76,23 @@ Volg onderstaande stappen om CentOS te configureren: [!DNL Snowflake]
    systemctl start nlserver.service
    ```
 
-1. In Campagne, kunt u uw [!DNL Snowflake] externe rekening dan vormen. Raadpleeg [deze sectie](#snowflake-external)voor meer informatie over het configureren van uw externe account.
+1. In Campagne, kunt u uw [!DNL Snowflake] externe rekening dan vormen. Raadpleeg [deze sectie](#snowflake-external) voor meer informatie over het configureren van uw externe account.
 
-## Snowflake externe rekening {#snowflake-external}
+## Snowflake externe account {#snowflake-external}
 
-U moet een [!DNL Snowflake] externe account maken om uw Campagne-instantie te verbinden met uw [!DNL Snowflake] externe database.
+U moet een [!DNL Snowflake] externe rekening tot stand brengen om uw instantie van de Campagne met uw [!DNL Snowflake] externe gegevensbestand te verbinden.
 
 1. Klik in Campagne **[!UICONTROL Explorer]** op **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. Klik op **[!UICONTROL New]**.
 
-1. Selecteren **[!UICONTROL External database]** als externe account **[!UICONTROL Type]**.
+1. Selecteer **[!UICONTROL External database]** als **[!UICONTROL Type]** van uw externe rekening.
 
-1. Configureer de **[!UICONTROL Snowflake]** externe account. Geef de volgende instellingen op:
+1. Configureer de externe account **[!UICONTROL Snowflake]**. Geef de volgende instellingen op:
 
    * **[!UICONTROL Type]**: [!DNL Snowflake]
 
-   * **[!UICONTROL Server]**: URL van de [!DNL Snowflake] server
+   * **[!UICONTROL Server]**: URL van de  [!DNL Snowflake] server
 
    * **[!UICONTROL Account]**: Naam van de gebruiker
 
@@ -102,7 +102,7 @@ U moet een [!DNL Snowflake] externe account maken om uw Campagne-instantie te ve
 
    ![](assets/snowflake.png)
 
-1. Klik op het **[!UICONTROL Parameters]** tabblad en vervolgens op de **[!UICONTROL Deploy functions]** knop om functies te maken.
+1. Klik op de tab **[!UICONTROL Parameters]** en vervolgens op de knop **[!UICONTROL Deploy functions]** om functies te maken.
 
    ![](assets/snowflake_2.png)
 
