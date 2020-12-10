@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 854d509315f1d8585cb041575908df896468cc77
+source-git-commit: 1818bd2aeb60689b2ce0e59cb0bd157f000de513
 workflow-type: tm+mt
-source-wordcount: '2196'
+source-wordcount: '2215'
 ht-degree: 97%
 
 ---
@@ -710,7 +710,24 @@ ht-degree: 97%
       + [Schemaverwijzing](configuration/using/about-schema-reference.md)
       + [Schemastructuur](configuration/using/schema-structure.md)
       + [Databasetoewijzing](configuration/using/database-mapping.md)
-      + [Elementen en kenmerken](configuration/using/elements-and-attributes.md)
+      + Elementen en kenmerken {#elements-and-attributes}
+         + [Kenmerk](configuration/using/schema/attribute.md)
+         + [Rekenreeks](configuration/using/schema/compute-string.md)
+         + [Voorwaarde](configuration/using/schema/condition.md)
+         + [DB-index](configuration/using/schema/db-index.md)
+         + [Element](configuration/using/schema/element.md)
+         + [Opsomming](configuration/using/schema/enumeration.md)
+         + [Help](configuration/using/schema/help.md)
+         + [Verbinden](configuration/using/schema/join.md)
+         + [Sleutel](configuration/using/schema/key.md)
+         + [Keyfield](configuration/using/schema/keyfield.md)
+         + [Methode](configuration/using/schema/method.md)
+         + [Methoden](configuration/using/schema/methods.md)
+         + [Param](configuration/using/schema/param.md)
+         + [Parameters](configuration/using/schema/parameters.md)
+         + [SrcSchema](configuration/using/schema/srcschema.md)
+         + [Sysfilter](configuration/using/schema/sysfilter.md)
+         + [Waarde](configuration/using/schema/value.md)
    + Schema’s bewerken {#editing-schemas}
       + [De schema-editor](configuration/using/about-schema-edition.md)
       + [Dataschema’s](configuration/using/data-schemas.md)
