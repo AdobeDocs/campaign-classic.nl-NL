@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 13cc481606ffb78f9a755ef8aa8a9d7cbb5d44c2
+source-git-commit: 854d509315f1d8585cb041575908df896468cc77
 workflow-type: tm+mt
-source-wordcount: '2179'
-ht-degree: 98%
+source-wordcount: '2196'
+ht-degree: 97%
 
 ---
 
@@ -153,7 +153,12 @@ ht-degree: 98%
       + [Lidmaatschappen beheren](delivery/using/managing-subscriptions.md)
       + [Viral en social marketing](delivery/using/viral-and-social-marketing.md)
    + Leveringen controleren{#monitoring-deliveries}
-      + [Een levering controleren](delivery/using/monitoring-a-delivery.md)
+      + [Aan de slag met leveringscontrole](delivery/using/about-delivery-monitoring.md)
+      + [Toegang tot de lijst met leveringen](delivery/using/list-of-deliveries.md)
+      + [Delivery dashboard](delivery/using/delivery-dashboard.md)
+      + [Aanbevolen werkwijzen voor prestaties](delivery/using/delivery-performances.md)
+      + [Problemen met levering oplossen](delivery/using/delivery-troubleshooting.md)
+      + [Leveringsstatus](delivery/using/delivery-statuses.md)
       + [Leveringsfouten begrijpen](delivery/using/understanding-delivery-failures.md)
       + [Quarantainebeheer begrijpen](delivery/using/understanding-quarantine-management.md)
    + Berichten traceren {#tracking-messages}
