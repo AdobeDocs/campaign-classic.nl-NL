@@ -6,11 +6,11 @@ description: Deze pagina bevat een overzicht van alle nieuwe functies en documen
 audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
-translation-type: ht
-source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
-workflow-type: ht
-source-wordcount: '3631'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3c82e30cdc1057be6357d48170b959fb89c79528
+workflow-type: tm+mt
+source-wordcount: '3663'
+ht-degree: 99%
 
 ---
 
@@ -20,6 +20,12 @@ ht-degree: 100%
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates per maand en per Campaign-release.
 
 U kunt ook de [Adobe Campaign Classic-release-opmerkingen](../../rn/using/latest-release.md) raadplegen voor meer updates.
+
+## December 2020 {#dec-2020}
+
+De rubriek &quot;monitoring van de levering&quot; is gereorganiseerd in thematische onderwerpen. [Meer informatie](../../delivery/using/about-delivery-monitoring.md)
+
+Een gebruiksgeval is toegevoegd op hoe te om IP van afzenders adressen aan de leveringslogboeken toe te voegen. [Meer informatie](../../delivery/using/delivery-dashboard.md#use-case)
 
 ## November 2020 {#nov-2020}
 
@@ -254,7 +260,7 @@ De handleidingen inzake [installatie](../../installation/using/general-architect
 
 De installatiehandleiding is bijgewerkt en gesynchroniseerd met de nieuwste versie van de compatibiliteitsmatrix. Er zijn nieuwe ondersteunde systemen toegevoegd. Informatie over verouderde en niet-ondersteunde systemen is verwijderd. [Meer informatie](../../installation/using/general-architecture.md)
 
-De compatibiliteitsmatrix is bijgewerkt met de Hadoop 3.0- en Snowflake FDA-connectoren. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html)
+De compatibiliteitsmatrix is bijgewerkt met de Hadoop 3.0- en Snowflake FDA-connectoren. [Meer informatie](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
 Een best practice over IP-affiniteit is toegevoegd aan de installatiehandleiding. [Meer informatie](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -272,7 +278,7 @@ De nieuwe parameter voor rapportconfiguratie van URL’s is [hier](../../reporti
 
 De pagina over de **On-premise &amp; gehoste capaciteitsmatrix van Campaign Classic** is bijgewerkt met de nieuwe FDA-connectoren. [Meer informatie](../../installation/using/capability-matrix.md).
 
-De pagina over de **capaciteitsmatrix van Campaign Classic** is bijgewerkt. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html)
+De pagina over de **capaciteitsmatrix van Campaign Classic** is bijgewerkt. [Meer informatie](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
 De nieuwe workflow **[!UICONTROL Cleanup of Nmsaddress]** is [hier](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress) gedocumenteerd.
 
@@ -322,7 +328,7 @@ Beveiligde sms-berichten (TLS) - [Meer informatie](https://helpx.adobe.com/nl/ca
 
 **Overige documentatie-updates die bij de release worden geleverd**
 
-De documentatie over de Adobe Campaign Enhanced MTA is nu beschikbaar. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/acc-campaign-enhanced-mta.html)
+De documentatie over de Adobe Campaign Enhanced MTA is nu beschikbaar. [Meer informatie](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 Er is een nieuwe sectie toegevoegd over het oplossen van problemen met een workflow die in de status Zo snel mogelijk starten blijft in een campagne. [Meer informatie](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -378,13 +384,13 @@ Informatie over workflowcontrole is gecentraliseerd in een nieuwe specifieke sec
 
 Er is een nieuwe pagina toegevoegd met algemene richtlijnen voor tracking in Adobe Campaign Classic. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/acc-tracking.html).
 
-De best practices voor prestatiesverbeteringen van workflows en leveringen zijn bijgewerkt. [Lees meer over workflows](../../workflow/using/workflow-best-practices.md) en [leveringen](../../delivery/using/monitoring-a-delivery.md#best-practices-performance).
+De best practices voor prestatiesverbeteringen van workflows en leveringen zijn bijgewerkt. [Lees meer over workflows](../../workflow/using/workflow-best-practices.md) en [leveringen](../../delivery/using/delivery-performances.md#best-practices-performance).
 
 ## Mei 2019 {#release-19-1}
 
 **Nieuwe mogelijkheden in de 19.1-release**
 
-Configuratiescherm - [Meer informatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/control-panel-home.html)
+Configuratiescherm - [Meer informatie](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
 
 Audittrail - [Meer informatie](../../production/using/audit-trail.md)
 
@@ -392,7 +398,7 @@ Audittrail - [Meer informatie](../../production/using/audit-trail.md)
 
 Er is een nieuwe lijst met veelgestelde vragen voor een buildupgrade gemaakt. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/build-upgrade-faq.html)
 
-De [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html) is bijgewerkt. De lijst met ondersteunde databasesystemen is bijgewerkt, evenals Android/iOS-versies en verwante SDK’s. De [19.0-compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix-19-0.html) is gearchiveerd.
+De [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) is bijgewerkt. De lijst met ondersteunde databasesystemen is bijgewerkt, evenals Android/iOS-versies en verwante SDK’s. De [19.0-compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix-19-0.html) is gearchiveerd.
 
 De pagina met verouderde en verwijderde functies in Campaign Classic is bijgewerkt. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/deprecated-and-removed-features.html)
 
@@ -447,7 +453,7 @@ Er is informatie toegevoegd over het factureringsrapport.
 De documentatie over de integratie van gedeelde doelgroepen is bijgewerkt.
 [Meer informatie](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-De volgende technische opmerkingen zijn bijgewerkt: [Protocol en instellingen van de sms-connector](https://helpx.adobe.com/nl/campaign/kb/sms-connector-protocol-and-settings.html) en [Automatisch genereren van reeksen](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+De volgende technische opmerkingen zijn bijgewerkt: [Protocol en instellingen van de sms-connector](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) en [Automatisch genereren van reeksen](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
 De sectie over technische workflows is bijgewerkt. [Meer informatie](../../workflow/using/about-technical-workflows.md)
 
