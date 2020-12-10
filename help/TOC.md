@@ -9,7 +9,7 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 1818bd2aeb60689b2ce0e59cb0bd157f000de513
+source-git-commit: 1b498e9f47dc3cfc108ee182829b83442819629d
 workflow-type: tm+mt
 source-wordcount: '2215'
 ht-degree: 97%
@@ -710,7 +710,7 @@ ht-degree: 97%
       + [Schemaverwijzing](configuration/using/about-schema-reference.md)
       + [Schemastructuur](configuration/using/schema-structure.md)
       + [Databasetoewijzing](configuration/using/database-mapping.md)
-      + Elementen en kenmerken {#elements-and-attributes}
+      + [Elementen en kenmerken](configuration/using/elements-and-attributes.md)
          + [Kenmerk](configuration/using/schema/attribute.md)
          + [Rekenreeks](configuration/using/schema/compute-string.md)
          + [Voorwaarde](configuration/using/schema/condition.md)
