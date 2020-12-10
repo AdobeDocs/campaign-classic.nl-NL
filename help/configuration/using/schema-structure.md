@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 1%
@@ -60,7 +60,7 @@ De basisstructuur van een `<srcschema>` is als volgt:
 </srcSchema>
 ```
 
-Het document van XML van een gegevensschema moet het **`<srcschema>`** wortelelement met de **naam** en **namespace** attributen bevatten om de schemanaam en zijn namespace te bevolken.
+Het document van XML van een gegevensschema moet **`<srcschema>`** wortelelement met **name** en **namespace** attributen bevatten om de schemanaam en zijn namespace te bevolken.
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -101,7 +101,7 @@ In ons voorbeeld wordt het hoofdelement vertegenwoordigd door de volgende regel:
 <element name="recipient">
 ```
 
-Met de elementen **`<attribute>`** en **`<element>`** die volgen op het hoofdelement kunt u de locaties en namen van de gegevensitems in de XML-structuur definiëren.
+Met de elementen **`<attribute>`** en **`<element>`** die het hoofdelement volgen, kunt u de locaties en namen van de gegevensitems in de XML-structuur definiëren.
 
 In ons voorbeeldschema zijn deze:
 
@@ -116,23 +116,23 @@ In ons voorbeeldschema zijn deze:
 
 De volgende regels moeten in acht worden genomen:
 
-* Elk **`<element>`** en **`<attribute>`** moet door naam via het **naamattribuut** worden geïdentificeerd.
+* Elke **`<element>`** en **`<attribute>`** moeten door naam via het **name** attribuut worden geïdentificeerd.
 
    >[!IMPORTANT]
    >
    >De naam van het element moet beknopt zijn, bij voorkeur in het Engels, en alleen geoorloofde tekens bevatten in overeenstemming met de XML-naamgevingsregels.
 
-* Alleen **`<element>`** elementen kunnen **`<attribute>`** elementen en **`<element>`** elementen in de XML-structuur bevatten.
-* Een **`<attribute>`** element moet een unieke naam binnen een element hebben **`<element>`**.
-* Het gebruik van gegevensreeksen met meerdere regels wordt aanbevolen. **`<elements>`**
+* Alleen **`<element>`**-elementen kunnen **`<attribute>`**-elementen en **`<element>`**-elementen in de XML-structuur bevatten.
+* Een **`<attribute>`** element moet een unieke naam binnen **`<element>`** hebben.
+* Het gebruik van **`<elements>`** in gegevensreeksen met meerdere regels wordt aanbevolen.
 
 ## Datatypen {#data-types}
 
-Het gegevenstype wordt ingevoerd via het **kenmerk type** in de **`<attribute>`** en **`<element>`** elementen.
+Het gegevenstype wordt ingevoerd via het **type**-kenmerk in de elementen **`<attribute>`** en **`<element>`**.
 
-Een gedetailleerde lijst is beschikbaar in de beschrijving van het [`<attribute>` element](../../configuration/using/elements-and-attributes.md#attribute--element) en het [`<element>` element](../../configuration/using/elements-and-attributes.md#element--element).
+Een gedetailleerde lijst is beschikbaar in de beschrijving van [`<attribute>` element](../../configuration/using/schema/attribute.md) en [`<element>` element](../../configuration/using/schema/element.md)).
 
-Wanneer dit kenmerk niet is gevuld, is **tekenreeks** het standaardgegevenstype, tenzij het element onderliggende elementen bevat. Als dit het geval is, wordt het alleen gebruikt om de elementen hiërarchisch te structureren (**`<location>`** element in ons voorbeeld).
+Wanneer dit kenmerk niet is gevuld, is **string** het standaardgegevenstype tenzij het element onderliggende elementen bevat. Als dit het geval is, wordt het alleen gebruikt om de elementen hiërarchisch te structureren (**`<location>`** element in ons voorbeeld).
 
 De volgende gegevenstypen worden ondersteund in schema&#39;s:
 
@@ -141,17 +141,17 @@ De volgende gegevenstypen worden ondersteund in schema&#39;s:
    De grootte kan worden opgegeven via het kenmerk **length** (optioneel, standaardwaarde &quot;255&quot;).
 
 * **Booleaans**: Booleaans veld. Voorbeeld van mogelijke waarden: true/false, 0/1, ja/neen, enz.
-* **byte**, **kort**, **lang**: gehele getallen (1 byte, 2 bytes, 4 bytes). Voorbeelden: leeftijd, rekeningnummer, aantal punten enz.
+* **byte**,  **kort**,  **lang**: gehele getallen (1 byte, 2 bytes, 4 bytes). Voorbeelden: leeftijd, rekeningnummer, aantal punten enz.
 * **dubbel**: drijvende-kommagetal met dubbele precisie. Voorbeelden: een prijs, een tarief enz.
-* **datum**, **datetime**: datums en datums + tijden. Voorbeelden: een geboortedatum, een aankoopdatum enz.
+* **datum**,  **datetime**: datums en datums + tijden. Voorbeelden: een geboortedatum, een aankoopdatum enz.
 * **datetimenotz**: datum en tijd zonder tijdzonegegevens.
 * **tijdspan**: duur. Voorbeeld: anciënniteit.
-* **memo**: lange tekstvelden (meerdere regels). Voorbeelden: een beschrijving, een opmerking enz.
+* **memo** : lange tekstvelden (meerdere regels). Voorbeelden: een beschrijving, een opmerking enz.
 * **uuuid**: &quot;uniqueidentifier&quot;gebieden om een GUID (die in de Server van Microsoft SQL slechts wordt gesteund) te steunen.
 
    >[!NOTE]
    >
-   >Als u een **uuid** -veld wilt opnemen in andere engines dan Microsoft SQL Server, moet de functie &quot;newuid()&quot; worden toegevoegd en aangevuld met de standaardwaarde.
+   >Om een **uuid** gebied in motoren buiten de Server van Microsoft te bevatten SQL, moet de &quot;newuid ()&quot;functie met zijn standaardwaarde worden toegevoegd en worden voltooid.
 
 Hier is ons voorbeeldschema met de ingevoerde types:
 
@@ -185,37 +185,37 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
   <tr> 
    <td> Tekenreeks<br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
-   <td> VARCHAR2 (NVARCHAR2 als unicode)<br /> </td> 
-   <td> VARCHAR (VARCHAR TEKEN STELT UNICODE IN ALS Unicode.<br /> </td> 
+   <td> VARCHAR2 (NVARCHAR2 if unicode)<br /> </td> 
+   <td> VARCHAR (VARCHAR TEKEN STELT UNICODE IN als Unicode)<br /> </td> 
    <td> VARCHAR<br /> </td> 
-   <td> VARCHAR (NVARCHAR indien unicode)<br /> </td> 
+   <td> VARCHAR (NVARCHAR if unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Boolean<br /> </td> 
    <td> SMALLINT<br /> </td> 
-   <td> NUMMER(3)<br /> </td> 
-   <td> NUMERIEK(3)<br /> </td> 
+   <td> NUMBER(3)<br /> </td> 
+   <td> NUMERIC(3)<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Byte<br /> </td> 
    <td> SMALLINT<br /> </td> 
-   <td> NUMMER(3)<br /> </td> 
-   <td> NUMERIEK(3)<br /> </td> 
+   <td> NUMBER(3)<br /> </td> 
+   <td> NUMERIC(3)<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Kort<br /> </td> 
    <td> SMALLINT<br /> </td> 
-   <td> NUMMER(5)<br /> </td> 
+   <td> NUMBER(5)<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> SMALLINT<br /> </td> 
   </tr> 
   <tr> 
-   <td> Dubbel<br /> </td> 
+   <td> Double<br /> </td> 
    <td> DUBBELE PRECISIE<br /> </td> 
    <td> FLOAT<br /> </td> 
    <td> FLOAT<br /> </td> 
@@ -223,9 +223,9 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
-   <td> Lang<br /> </td> 
+   <td> Long<br /> </td> 
    <td> INTEGER<br /> </td> 
-   <td> NUMMER(10)<br /> </td> 
+   <td> NUMBER(10)<br /> </td> 
    <td> INTEGER<br /> </td> 
    <td> INTEGER<br /> </td> 
    <td> INT<br /> </td> 
@@ -233,7 +233,7 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
   <tr> 
    <td> Int64<br /> </td> 
    <td> BIGINT<br /> </td> 
-   <td> NUMMER(20)<br /> </td> 
+   <td> NUMBER(20)<br /> </td> 
    <td> NUMERIC(20)<br /> </td> 
    <td> BIGINT<br /> </td> 
    <td> BIGINT<br /> </td> 
@@ -242,12 +242,12 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
    <td> Datum<br /> </td> 
    <td> DATE<br /> </td> 
    <td> DATE<br /> </td> 
-   <td> TIJDSTEMPEL<br /> </td> 
+   <td> TIMESTAMP<br /> </td> 
    <td> DATE<br /> </td> 
    <td> DATETIME<br /> </td> 
   </tr> 
   <tr> 
-   <td> Time<br /> </td> 
+   <td> Tijd<br /> </td> 
    <td> TIME<br /> </td> 
    <td> FLOAT<br /> </td> 
    <td> TIME<br /> </td> 
@@ -255,19 +255,19 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
-   <td> Datumtijd<br /> </td> 
+   <td> Datetime<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATE<br /> </td> 
-   <td> TIJDSTEMPEL<br /> </td> 
-   <td> TIJDSTEMPEL<br /> </td> 
+   <td> TIMESTAMP<br /> </td> 
+   <td> TIMESTAMP<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIMEOFFSET<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATE<br /> </td> 
-   <td> TIJDSTEMPEL<br /> </td> 
-   <td> TIJDSTEMPEL<br /> </td> 
+   <td> TIMESTAMP<br /> </td> 
+   <td> TIMESTAMP<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIME2<br /> </td> 
   </tr> 
   <tr> 
@@ -282,16 +282,16 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
    <td> Memo<br /> </td> 
    <td> TEXT<br /> </td> 
    <td> CLOB (NCLOB als Unicode)<br /> </td> 
-   <td> CLOB (CLOB-TEKEN STELT UNICODE IN ALS Unicode.)<br /> </td> 
-   <td> CLOB(6 MB)<br /> </td> 
+   <td> CLOB (CLOB-TEKEN STEL UNICODE IN ALS Unicode)<br /> </td> 
+   <td> CLOB(6M)<br /> </td> 
    <td> TEXT (NTEXT als Unicode)<br /> </td> 
   </tr> 
   <tr> 
-   <td> Klodder<br /> </td> 
+   <td> Blob<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
-   <td> BLOB(4 MB)<br /> </td> 
+   <td> BLOB(4M)<br /> </td> 
    <td> IMAGE<br /> </td> 
   </tr> 
  </tbody> 
@@ -299,7 +299,7 @@ In de onderstaande tabel staan de toewijzingen voor de typen gegevens die door A
 
 ## Properties {#properties}
 
-De **`<elements>`** en **`<attributes>`** elementen van het gegevensschema kunnen met diverse eigenschappen worden verrijkt. U kunt een label vullen om het huidige element te beschrijven.
+De elementen **`<elements>`** en **`<attributes>`** van het gegevensschema kunnen met diverse eigenschappen worden verrijkt. U kunt een label vullen om het huidige element te beschrijven.
 
 ### Labels en beschrijvingen {#labels-and-descriptions}
 
@@ -335,9 +335,9 @@ De **`<elements>`** en **`<attributes>`** elementen van het gegevensschema kunne
 
 ### Standaardwaarden {#default-values}
 
-Met de **standaardeigenschap** kunt u een expressie definiëren die een standaardwaarde retourneert bij het maken van inhoud.
+Met de eigenschap **default** kunt u een expressie definiëren die een standaardwaarde retourneert bij het maken van inhoud.
 
-De waarde moet een expressie zijn die compatibel is met XPath-taal. Raadpleeg [Verwijzen naar XPath](../../configuration/using/schema-structure.md#referencing-with-xpath)voor meer informatie.
+De waarde moet een expressie zijn die compatibel is met XPath-taal. Voor meer op dit, verwijs naar [Verwijzen met XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
 
 **Voorbeeld**:
 
@@ -348,9 +348,9 @@ De waarde moet een expressie zijn die compatibel is met XPath-taal. Raadpleeg [V
 
    >[!NOTE]
    >
-   >In de Adobe Campaign clientconsole wordt het **[!UICONTROL Administration>Counters]** knooppunt gebruikt om tellers te beheren.
+   >In de Adobe Campaign clientconsole wordt het knooppunt **[!UICONTROL Administration>Counters]** gebruikt om tellers te beheren.
 
-Als u een standaardwaarde aan een veld wilt koppelen, kunt u de opdracht `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
+Als u een standaardwaarde aan een veld wilt koppelen, kunt u de `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
 `<default>` : Hiermee kunt u het veld vooraf vullen met een standaardwaarde wanneer u entiteiten maakt. De waarde wordt geen standaard SQL-waarde.
 
@@ -360,7 +360,7 @@ Als u een standaardwaarde aan een veld wilt koppelen, kunt u de opdracht `<defau
 
 #### Vrije opsomming {#free-enumeration}
 
-Met de eigenschap **userEnum** kunt u een gratis opsomming definiëren voor het onthouden en weergeven van de waarden die via dit veld worden ingevoerd. De syntaxis is als volgt:
+Met de eigenschap **userEnum** kunt u een gratis opsomming definiëren voor het onthouden en weergeven van de waarden die via dit veld zijn ingevoerd. De syntaxis is als volgt:
 
 **userEnum=&quot;naam van opsomming&quot;**
 
@@ -372,13 +372,13 @@ Deze waarden worden weergegeven in een vervolgkeuzelijst van het invoerformulier
 
 >[!NOTE]
 >
->In de Adobe Campaign-clientconsole wordt het **[!UICONTROL Administration > Enumerations]** knooppunt gebruikt om opsommingen te beheren.
+>In de Adobe Campaign-clientconsole wordt het knooppunt **[!UICONTROL Administration > Enumerations]** gebruikt om opsommingen te beheren.
 
-#### Opsomming instellen {#set-enumeration}
+#### Opsomming {#set-enumeration} instellen
 
-Met de eigenschap **enum** kunt u een vaste opsomming definiëren die wordt gebruikt wanneer de lijst met mogelijke waarden vooraf bekend is.
+Met de eigenschap **enum** kunt u een vaste opsomming definiëren die wordt gebruikt wanneer de lijst met mogelijke waarden van tevoren bekend is.
 
-Het **enum** -kenmerk verwijst naar de definitie van een opsommingsklasse die in het schema buiten het hoofdelement is geplaatst.
+Het **enum** attribuut verwijst naar de definitie van een opsommingsklasse die in het schema buiten het belangrijkste element wordt bevolkt.
 
 Met opsommingen kan de gebruiker een waarde in een vervolgkeuzelijst selecteren in plaats van de waarde in te voeren in een gewoon invoerveld:
 
@@ -394,7 +394,7 @@ Voorbeeld van een opsommingsdeclaratie in het gegevensschema:
 </enumeration>
 ```
 
-Een opsomming wordt buiten het hoofdelement gedeclareerd via het **`<enumeration>`** element.
+Een opsomming wordt gedeclareerd buiten het hoofdelement via het element **`<enumeration>`**.
 
 De opsommingseigenschappen zijn als volgt:
 
@@ -403,18 +403,18 @@ De opsommingseigenschappen zijn als volgt:
 * **naam**: naam van de opsomming;
 * **standaard**: standaardwaarde van de opsomming.
 
-De opsommingswaarden worden gedeclareerd in het **`<value>`** element met de volgende kenmerken:
+De opsommingswaarden worden gedeclareerd in het element **`<value>`** met de volgende kenmerken:
 
 * **naam**: naam van de intern opgeslagen waarde;
 * **label**: label dat via de grafische interface wordt weergegeven.
 
-#### dbenum-opsomming {#dbenum-enumeration}
+#### dbenumopsomming {#dbenum-enumeration}
 
-* Met de eigenschap **dbenum** kunt u een opsomming definiëren waarvan de eigenschappen overeenkomen met die van de eigenschap **enum** .
+* Met de eigenschap **dbenum** kunt u een opsomming definiëren waarvan de eigenschappen overeenkomen met die van de eigenschap **enum**.
 
-   In het kenmerk **name** wordt de waarde echter niet intern opgeslagen. Er wordt een code opgeslagen waarmee u de betreffende tabellen kunt uitbreiden zonder het schema te wijzigen.
+   Nochtans, slaat het **name** attribuut niet intern de waarde op, het slaat een code op die u de betrokken lijsten zonder hun schema uit te breiden laat uitbreiden.
 
-   De waarden worden gedefinieerd via het **[!UICONTROL Administration>Enumerations]** knooppunt.
+   De waarden worden gedefinieerd via het knooppunt **[!UICONTROL Administration>Enumerations]**.
 
    Deze opsomming wordt bijvoorbeeld gebruikt om de aard van campagnes op te geven.
 
@@ -447,9 +447,9 @@ Hier volgt ons voorbeeldschema met de eigenschappen die zijn ingevuld:
 
 Een verzameling is een lijst met elementen met dezelfde naam en hetzelfde hiërarchische niveau.
 
-Met het **niet-gebonden** kenmerk met de waarde &quot;true&quot; kunt u een verzamelingselement vullen.
+Met het **unbound**-kenmerk met de waarde &quot;true&quot; kunt u een verzamelingselement vullen.
 
-**Voorbeeld**: definitie van het **`<group>`** inzamelingselement in het schema.
+**Voorbeeld**: definitie van het  **`<group>`** inzamelingselement in het schema.
 
 ```
 <element name="group" unbound="true" label="List of groups">
@@ -475,17 +475,17 @@ Elementen worden aangeduid met hun naam en kenmerken worden aangeduid met de naa
 **Voorbeeld**:
 
 * **@email**: selecteert de e-mail;
-* **location/@city**: selecteert het kenmerk &quot;city&quot; onder het **`<location>`** element
+* **location/@city**: selecteert het kenmerk &quot;city&quot; onder het  **`<location>`** element
 * **../@email**: selecteert het e-mailadres in het bovenliggende element van het huidige element
-* **groep`[1]/@label`**: selecteert het kenmerk &quot;label&quot; dat het onderliggende element van het eerste **`<group>`** verzamelingselement is
-* **groep`[@label='test1']`**: selecteert het kenmerk &quot;label&quot; dat het onderliggende element van het **`<group>`** element is en de waarde &quot;test1&quot; bevat
+* **groep`[1]/@label`**: selecteert het kenmerk &quot;label&quot; dat het onderliggende element is van het eerste  **`<group>`** verzamelingselement
+* **groep`[@label='test1']`**: selecteert het kenmerk &quot;label&quot; dat het onderliggende element van het  **`<group>`** element is en de waarde &quot;test1&quot; bevat
 
 >[!NOTE]
 >
 >Er wordt een extra beperking toegevoegd wanneer het pad een subelement kruist. In dit geval moet de volgende expressie tussen haakjes worden geplaatst:
 >
->* **location/@city** is ongeldig; gebruiken **`[location/@city]`**
->* **`[@email]`** en **@email** is gelijk
+>* **location/@** cityis not valid; gebruiken  **`[location/@city]`**
+>* **`[@email]`** en  **@** e-mailequivalent
 
 >
 
@@ -493,7 +493,7 @@ Elementen worden aangeduid met hun naam en kenmerken worden aangeduid met de naa
 
 Het is ook mogelijk complexe expressies te definiëren, zoals de volgende rekenkundige bewerkingen:
 
-* **@gender+1**: voegt 1 toe aan de inhoud van het kenmerk **gender** ;
+* **@gender+1**: voegt 1 toe aan de inhoud van het  **** genderkenmerk;
 * **@email + &#39;(&#39;+@created+&#39;)&#39;**: construeert een koord door de waarde van het e-mailadres te nemen dat aan de aanmaakdatum tussen haakjes wordt toegevoegd (voor het koordtype, zet de constante in citaten).
 
 Er zijn functies op hoog niveau toegevoegd aan de expressies om het potentieel van deze taal te verrijken.
@@ -508,11 +508,11 @@ U hebt toegang tot de lijst met beschikbare functies via een expressie-editor in
 * **Jaar (@gemaakt)**: retourneert het jaar van de datum in het kenmerk &quot;created&quot;.
 * **GetEmailDomain(@email)**: retourneert het domein van het e-mailadres.
 
-## Een tekenreeks samenstellen via de compute string {#building-a-string-via-the-compute-string}
+## Een tekenreeks maken via de compute tekenreeks {#building-a-string-via-the-compute-string}
 
-Een **rekenreeks** is een XPath-expressie die wordt gebruikt om een tekenreeks samen te stellen die een record vertegenwoordigt in een tabel die aan het schema is gekoppeld. **Compute string** wordt vooral gebruikt in de grafische interface om het label van een geselecteerde record weer te geven.
+Een **Berekende tekenreeks** is een XPath-expressie die wordt gebruikt om een tekenreeks samen te stellen die een record vertegenwoordigt in een tabel die is gekoppeld aan het schema. **Compute** stringt wordt vooral gebruikt in de grafische interface om het label van een geselecteerde record weer te geven.
 
-De tekenreeks **** Berekenen wordt gedefinieerd via het **`<compute-string>`** element onder het hoofdelement van het gegevensschema. Een **expr** -kenmerk bevat een XPath-expressie waarmee de weergave wordt berekend.
+De **Berekende tekenreeks** wordt gedefinieerd via het element **`<compute-string>`** onder het hoofdelement van het gegevensschema. Een **expr** attribuut bevat een uitdrukking van XPath om de vertoning te berekenen.
 
 **Voorbeeld**: berekend koord van de ontvankelijke lijst.
 
