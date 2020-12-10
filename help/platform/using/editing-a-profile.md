@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 5%
@@ -29,11 +29,11 @@ De tabbladen en hun inhoud zijn afhankelijk van uw configuratie en geïnstalleer
 
 >[!CAUTION]
 >
->Het XML-schema en het formulier dat betrekking heeft op de velden in de tabel met profielen, zijn toegankelijk via het **[!UICONTROL Administration > Configuration > Data schemas]** knooppunt van de Adobe Campaign-structuur. Alleen deskundige gebruikers kunnen wijzigingen aanbrengen in deze schema&#39;s.
+>Het XML-schema en het formulier dat betrekking heeft op de velden in de profielentabel, zijn toegankelijk via het knooppunt **[!UICONTROL Administration > Configuration > Data schemas]** van de Adobe Campaign-structuur. Alleen deskundige gebruikers kunnen wijzigingen aanbrengen in deze schema&#39;s.
 >
->For further information, refer to [this page](../../configuration/using/about-schema-edition.md).
+>Zie [deze pagina](../../configuration/using/about-schema-edition.md) voor meer informatie.
 
-## Tabblad Algemeen {#general-tab}
+## Algemeen tabblad {#general-tab}
 
 Dit scherm bevat alle algemene gegevens over het geselecteerde profiel. Het bevat met name de achternaam, voornaam, e-mailadres, e-mailontvangstnotatie, enz. Het ziet er zo uit:
 
@@ -41,7 +41,7 @@ Dit scherm bevat alle algemene gegevens over het geselecteerde profiel. Het beva
 
 >[!NOTE]
 >
->Wanneer de **[!UICONTROL No longer contact (by any channel)]** optie is geselecteerd, betekent dit dat het profiel op lijst van afgewezen personen is, d.w.z. dat het profiel de wens heeft geuit om niet te worden benaderd (bijvoorbeeld door op een koppeling voor niet-abonnementen in een nieuwsbrief te klikken). Deze zullen niet meer het doelwit zijn van leveringen via welke kanalen dan ook (e-mail, direct mail, enz.). Raadpleeg [deze pagina](../../delivery/using/understanding-quarantine-management.md) voor meer informatie.
+>Wanneer de optie **[!UICONTROL No longer contact (by any channel)]** is geselecteerd, betekent dit dat het profiel op lijst van afgewezen personen staat, d.w.z. dat in het profiel de wens is geuit dat geen contact wordt opgenomen (bijvoorbeeld door op een koppeling voor niet-abonnementen in een nieuwsbrief te klikken). Deze zullen niet meer het doelwit zijn van leveringen via welke kanalen dan ook (e-mail, direct mail, enz.). Raadpleeg [deze pagina](../../delivery/using/understanding-quarantine-management.md) voor meer informatie.
 
 ## Tabblad Contactgegevens {#contact-information-tab}
 
@@ -53,21 +53,21 @@ Dit scherm toont de kwaliteitsindex van het adres, evenals hoeveel fouten het ad
 
 ## Ander tabblad {#other-tab}
 
-Dit scherm bevat door de gebruiker gedefinieerde velden die op basis van vereisten kunnen worden aangepast. U kunt ook de namen van de velden wijzigen en de indeling van de velden definiëren, zoals hieronder **[!UICONTROL Field properties...]** wordt weergegeven:
+Dit scherm bevat door de gebruiker gedefinieerde velden die op basis van vereisten kunnen worden aangepast. U kunt ook de namen van de velden wijzigen en de indeling ervan definiëren via **[!UICONTROL Field properties...]**, zoals hieronder wordt weergegeven:
 
 ![](assets/s_ncs_user_profile_others_tab.png)
 
 >[!NOTE]
 >
->Raadpleeg [deze pagina](../../configuration/using/new-field-wizard.md)voor meer informatie over veldeigenschappen en over het toevoegen van velden.
+>Raadpleeg [deze pagina](../../configuration/using/new-field-wizard.md) voor meer informatie over veldeigenschappen en het toevoegen van velden.
 
-## Tabblad Lijsten {#lists-tab}
+## Lijsten, tabblad {#lists-tab}
 
-In dit scherm worden de groep(en) weergegeven waartoe het geselecteerde profiel behoort. Klik **[!UICONTROL Add]** om het profiel in te schrijven op een lijst. Klik **[!UICONTROL Detail]** om de beschrijving en de lijst met profielen in de geselecteerde lijst weer te geven.
+In dit scherm worden de groep(en) weergegeven waartoe het geselecteerde profiel behoort. Klik op **[!UICONTROL Add]** om het profiel in te schrijven op een lijst. Klik op **[!UICONTROL Detail]** om de beschrijving en de lijst met profielen in de geselecteerde lijst weer te geven.
 
 ![](assets/s_ncs_user_profile_groups_tab_details.png)
 
-Raadpleeg Lijsten [](../../platform/using/creating-and-managing-lists.md)maken en beheren voor meer informatie hierover.
+Raadpleeg [Lijsten maken en beheren](../../platform/using/creating-and-managing-lists.md) voor meer informatie.
 
 ## Tabblad Abonnementen {#subscriptions-tab}
 
@@ -75,7 +75,7 @@ Dit scherm bevat de informatiediensten waarop het profiel heeft geabonneerd.
 
 ![](assets/s_ncs_user_profile_subscript_tab_details.png)
 
-De **[!UICONTROL Detail]** knop geeft de eigenschappen van het geselecteerde abonnement weer. Met de **[!UICONTROL Add]** knop kunt u handmatig een nieuw abonnement toevoegen.
+Met de knop **[!UICONTROL Detail]** worden de eigenschappen van het geselecteerde abonnement weergegeven. De **[!UICONTROL Add]** knoop wordt gebruikt om een nieuw abonnement manueel toe te voegen.
 
 Raadpleeg [deze pagina](../../delivery/using/managing-subscriptions.md) voor meer informatie.
 
@@ -85,7 +85,7 @@ In dit scherm worden de leveringslogboeken voor het geselecteerde profiel weerge
 
 ![](assets/s_ncs_user_profile_delivery_tab.png)
 
-## Tabblad Tekstspatiëring {#tracking-tab}
+## Tabblad {#tracking-tab} bijhouden
 
 In dit scherm kunt u de trackinglogboeken voor het geselecteerde profiel weergeven. Deze informatie wordt gebruikt om profielgedrag na leveringen te volgen.
 
@@ -97,5 +97,5 @@ De lijst is configureerbaar, en bevat gewoonlijk: klikte URL, datum en tijd van 
 
 >[!NOTE]
 >
->Raadpleeg [deze pagina](../../delivery/using/monitoring-a-delivery.md)voor meer informatie over trackingfunctionaliteit.
+>Raadpleeg [deze pagina](../../delivery/using/delivery-dashboard.md) voor meer informatie over trackingfunctionaliteit.
 
