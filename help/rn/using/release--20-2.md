@@ -6,11 +6,11 @@ description: Release 20.2
 audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9cf995fe58b6afd89ee54724c97681f39994eba9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2201'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -23,39 +23,39 @@ ht-degree: 80%
 
 _11 september 2020_
 
-* Oplossing voor een regressie waarbij de voorbereiding van de levering werd geblokkeerd als gevolg van één foutieve functie op het leveringsonderdeel, wat tot geheugenoverbelasting leidde. (NEO-27346)
-* Probleem verholpen waarbij Apache en de webserver werden uitgeschakeld voordat de webtoepassing opnieuw werd gepubliceerd. (NEO-27155)
-* Oplossing voor een regressie in HTML-sjabloonbeheer die ertoe leidde dat URL&#39;s werden bijgehouden omdat tabs verkeerd werden geïnterpreteerd. (NEO-25909)
-* Probleem opgelost met de workflow voor het opschonen van databases die zou kunnen mislukken als gevolg van niet-beheerde gegevensbron. (NEO-23160, NEO-23364)
-* De opschoningsworkflow wordt nu verwijderd door verlopen lijsten met 100 batches in plaats van één voor één.
-* Probleem verholpen waarbij de interne naam van een externe account niet kon worden gewijzigd. (NEO-27323)
-* Een regressie herstellen tijdens een postupgrade, wat een onjuiste start van nlserver veroorzaakt (foutlogboeken).
-* Het updatebeheer voor gedeeld geheugen is verbeterd. De extra stappen die in 20.2 worden vereist zijn niet meer nodig.
+* Oplossing voor een regressie die ertoe leidde dat een leveringsvoorbereiding werd geblokkeerd als gevolg van één foutieve functie in het leveringsonderdeel, wat tot geheugenoverbelasting leidde. (NEO-27346)
+* Probleem verholpen met een post-upgrade waarbij Apache en de webserver werden uitgeschakeld voordat de webapplicatie opnieuw werd gepubliceerd. (NEO-27155)
+* Oplossing voor een regressie bij HTML-sjabloonbeheer die ertoe leidde dat tracking-URL&#39;s zichtbaar werden vanwege een foute interpretatie van tabs. (NEO-25909)
+* Probleem verholpen met de opschoningsworkflow voor databases die zou kunnen mislukken als gevolg van een niet-beheerde gegevensbron. (NEO-23160, NEO-23364)
+* Tijdens de opschoningsworkflow worden nu verlopen lijsten in batches van 100 verwijderd in plaats van één voor één.
+* Oplossing voor een regressie waardoor u niet de interne naam van een extern account kon wijzigen. (NEO-27323)
+* Oplossing voor een regressie tijdens een post-upgrade die een onjuiste start van nlserver (foutenlogboeken) veroorzaakte.
+* Het updatebeheer voor gedeeld geheugen is verbeterd. De extra stappen die zijn vereist in 20.2, zijn niet meer nodig.
 
 ## ![](assets/do-not-localize/orange_2.png) Release 20.2.2 - build 9180 {#release-20-2-2-build-9180}
 
-_22 juli 2020_
+_woensdag 22 juli 2020_
 
 * Er is een probleem verholpen waarbij tracking niet werkte als de handtekeningfunctie was uitgeschakeld. (NEO-26411)
-* Probleem verholpen waarbij niet-ondertekende koppelingen van gepersonaliseerde domeinen werden geblokkeerd op het moment dat ze moesten worden toegestaan. (NEO-25210)
+* Probleem verholpen waarbij niet-ondertekende koppelingen van gepersonaliseerde domeinen werden geblokkeerd terwijl ze moesten worden toegestaan. (NEO-25210)
 * Er is een probleem verholpen waardoor u tracking-URL’s niet kon openen of er niet op kon klikken bij gebruik van bepaalde oudere versies van Outlook. (NEO-25688)
-* Probleem verholpen waarbij pagina-URL&#39;s die niet correct zijn gedefinieerd in e-mailleveringen werden gespiegeld (vanwege onjuiste ASCII-tekenbesturing). (NEO-26084)
-* Probleem met coderen van URL-beheer in de service voor anti-phishing is opgelost. (NEO-25283)
+* Probleem verholpen waarbij URL&#39;s van spiegelpagina&#39;s onjuist werden gedefinieerd in e-mailleveringen (vanwege onjuiste ASCII-tekenbesturing). (NEO-26084)
+* Probleem verholpen met de codering van URL-beheer in de service voor antiphishing. (NEO-25283)
 * Er is een probleem verholpen waarbij de tracking van URL’s met fragmenten in personalisatieparameters (ankerlabels met pondteken) niet werkte. (NEO-25774)
 * Er is een probleem verholpen met tracking bij gebruik van specifieke aangepaste trackingformules. (NEO-25277)
 * Er is een probleem verholpen waardoor tracking van ‘berichtklikken’ niet kon worden uitgevoerd (iOS- en Android-pushmeldingen). (NEO-25965)
-* Oplossing voor een regressie die invloed had op berekende velden in een werkstroom waardoor de werkstroom mislukte. (NEO-25194)
-* Oplossing voor een regressie die ervoor zorgde dat het direct maken van URL&#39;s voor webtracering niet werkte. (NEO-20999)
-* Probleem met regressie verholpen met leveringsrapporten buiten de doos die werden afgekapt tijdens het exporteren naar PDF. (NEO-25757)
-* Probleem verholpen waarbij de toepassing vastliep in de wizard voor implementatie.
-* Probleem verholpen waardoor de workflow voor het melden van voorstellen na een postupgrade niet correct kon werken.
+* Oplossing voor een regressie die invloed had op berekende velden in een workflow waardoor de workflow mislukte. (NEO-25194)
+* Oplossing voor een regressie waardoor het direct kunnen maken van webtracking-URL’s niet werkte. (NEO-20999)
+* Oplossing voor een regressieprobleem met standaard leveringsrapporten die afgekapt leken te zijn bij het exporteren naar PDF. (NEO-25757)
+* Probleem verholpen waarbij de implementatiewizard vastliep.
+* Probleem verholpen waarbij de workflow voor het melden van aanbiedingen niet goed kon werken nadat een post-upgrade was uitgevoerd.
 * De iOS HTTP2-connector is verbeterd (updates van derden en foutbeheer). (NEO-25904, NEO-25903)
-* De lijst jarsToSkip in catalina.properties is bijgewerkt om de verwijzing naar een jar-bestand te verwijderen dat niet meer werd gebruikt (iOS-meldingen).
-* Probleem verholpen waarbij de voorbereiding van de levering na de upgrade werd geblokkeerd.
-* Na de schakelaar aan [nieuw opeenvolgingsID mechanisme](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence), worden alle Webtoepassingen die de ontvankelijke lijst bijwerken opnieuw gepubliceerd tijdens postupgrade.
-* Oplossing voor een mogelijke XSS-kwetsbaarheid in de leveringsinhoud. (NEO-17987, NEO-26073)
+* De lijst jarsToSkip in catalina.properties is bijgewerkt om de verwijzing naar een jar-bestand dat niet meer werd gebruikt, te verwijderen (iOS-meldingen).
+* Probleem verholpen waarbij de leveringsvoorbereiding na het uitvoeren van de post-upgrade werd geblokkeerd.
+* Na de overstap naar het [nieuwe ID-mechanisme voor reeksen](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) worden alle webapplicaties waarmee de tabel met ontvangers worden bijgewerkt, opnieuw gepubliceerd tijdens de post-upgrade.
+* Een mogelijke XSS-kwetsbaarheid in de leveringscontent is verholpen. (NEO-17987, NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **Release van nieuw configuratiescherm in juni** met controle van actieve profielen, controle van de leverbaarheid van subdomeinen en beheer van GPG-sleutels. [Meer informatie](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Release van nieuw configuratiescherm in juni** met controle van actieve profielen, controle van de leverbaarheid van subdomeinen en beheer van GPG-sleutels. [Meer informatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/orange_2.png) Release 20.2.1 - build 9178 {#release-20-2-1-build-9178}
 
@@ -102,7 +102,7 @@ _8 juni 2020_
  <tbody> 
   <tr> 
    <td> <p>De Thaise wet inzake de bescherming van persoonsgegevens (PDPA) is de nieuwe privacywet die de vereisten inzake databescherming voor Thailand harmoniseert en moderniseert. </p>
-   <p>Lei Geral de Proteção de Dados (LGPD) van Brazilië zal begin 2021 in werking treden voor alle bedrijven die in Brazilië persoonsgegevens verzamelen of verwerken.</p>
+   <p>De Braziliaanse wet inzake gegevensbescherming (Lei Geral de Proteção de Dados, LGPD) wordt begin 2021 van kracht voor alle bedrijven die in Brazilië persoonsgegevens verzamelen of verwerken.</p>
    <p>Deze voorschriften zijn van toepassing op Adobe Campaign-klanten die data bewaren voor in deze landen wonende betrokken personen. Naast de privacymogelijkheden die reeds beschikbaar zijn in Campaign (met inbegrip van toestemmingsbeheer, instellingen voor dataretentie en gebruikersrollen), grijpen wij deze kans om extra mogelijkheden op te nemen om u te helpen uw gereedheid voor PDPA en LGPD te vergemakkelijken:</p>
    <ul> 
      <li><p>Recht op toegang en recht op verwijdering: wij gebruiken de mogelijkheden die voor AVG en CCPA zijn toegevoegd. <a href="https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html">Meer informatie</a></p></li> 
@@ -156,7 +156,7 @@ Kom meer te weten in de [Campaign-compatibiliteitsmatrix](https://helpx.adobe.co
 
 * Het beheer van HTTP-proxyverbindingen is verbeterd. [Meer informatie](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
 
-* Nieuwe optie in **[!UICONTROL Javascript Code]** en **[!UICONTROL Advanced Javascript Code]** werkschemaactiviteiten om uitvoering na een grens tegen te houden. De standaardwaarde is 1 uur. [Meer informatie](../../workflow/using/sql-code-and-javascript-code.md#javascript-code).
+* Nieuwe optie in workflowactiviteiten **[!UICONTROL Javascript Code]** en **[!UICONTROL Advanced Javascript Code]** om uitvoering na een bepaalde limiet te stoppen. Standaardwaarde is 1 uur. [Meer informatie](../../workflow/using/sql-code-and-javascript-code.md#javascript-code).
 
 **Overige wijzigingen**
 
@@ -238,7 +238,7 @@ Een voorbeeld voor Linux is beschikbaar op deze [pagina](../../configuration/usi
 * Probleem verholpen dat invloed zou kunnen hebben op pushmeldingen wanneer deze op een hoge frequentie worden verzonden. (NEO-20516)
 * Probleem verholpen waarbij bij de volgende trackingdata duplicaten werden opgenomen, ook al werden deze niet bijgehouden in de trackinglogboeken. (NEO-20040)
 * Probleem verholpen waarbij dubbele transactionele e-mails werden verzonden nadat een fout met de communicatie van de trackingserver was verholpen. (NEO-23640)
-* Probleem verholpen waarbij de waarde van de coderingsparameter werd verwijderd bij omleiding van een URL voor reeksspatiëring (invloed op Japanse tekens). (NEO-25637)
+* Probleem verholpen waarbij de parameterwaarde voor codering tijdens het omleiden van een tracking-URL werd verwijderd (van invloed op Japanse tekens). (NEO-25637)
 * Probleem verholpen waarbij een query niet werkte bij het vergelijken van getallen met drijvende komma’s. (NEO-23243)
 * Probleem verholpen waarbij de weergave van de content van de kolom **Modified by** kon worden verhinderd nadat een workflow opnieuw was gestart. (NEO-23035)
 * Probleem opgelost waarbij het downloaden van logboekbestanden uit een tweede container tot mislukken van de technische workflow voor tracking leidde. (NEO-23159)
@@ -248,7 +248,7 @@ Een voorbeeld voor Linux is beschikbaar op deze [pagina](../../configuration/usi
 * Probleem verholpen met extra opslagvelden tijdens het maken van leveringen via de optie **Computed by a script** in de workflowactiviteit **Script**. (NEO-20609)
 * Probleem verholpen waarbij dubbele workflows niet werden verwijderd binnen de opschoningstaken voor de database.
 * Probleem verholpen waarbij de technische workflow voor **facturering (actieve profielen)** mislukte. (NEO-19777)
-* Oplossing voor een regressieprobleem bij gebruik van de ACS-connectorfunctie die de verbinding met een Campaign Standard-instantie heeft verhinderd (onjuist beheer van de FOH/FOH2-verbinding). (NEO-23433)
+* Oplossing voor een regressieprobleem tijdens het gebruik van de ACS-connectorfunctie waardoor er geen verbinding kon worden gemaakt met een Campaign Standard-instantie (onjuist beheer van de FOH/FOH2-verbinding). (NEO-23433)
 * Probleem verholpen waardoor u geen schema-extensie voor een primaire sleutel met meerdere kolommen met een Hadoop-tabel kon maken. (NEO-17390)
 * Probleem verholpen in de activiteit **Laden (SOAP)** waardoor WSDL-bestanden soms niet niet vanaf een URL konden worden geladen. (NEO-16924)
 * Probleem verholpen waardoor u geen **onvoorwaardelijke stop** kon uitvoeren via de console wanneer meerdere actieve workflowservers een gelijke taakverdeling hadden. (NEO-19556)
@@ -262,4 +262,4 @@ Een voorbeeld voor Linux is beschikbaar op deze [pagina](../../configuration/usi
 * Probleem verholpen waarbij een foutbericht kon worden weergegeven wanneer op een koppeling voor een webapplicatie in een Line-bericht werd geklikt.
 * Probleem verholpen waarbij de geschiedenis van de activiteit **Incrementele query** werd verwijderd na het uitvoeren van de opschoningsworkflow.
 * Probleem verholpen bij het maken van een extern account voor midsourcing waarbij de optie NmsMidSourcing_LastBroadLog_&lt;InternalName> ontbrak..
-* Probleem met regressie bij databaseverbinding verholpen waarbij de webserver voortdurend opnieuw werd opgestart als gevolg van een probleem met de databasecodering. Dit kan leiden tot overconsumptie. (NEO-23264)
+* Oplossing voor een regressieprobleem met een databaseverbinding waarbij de webserver voortdurend opnieuw werd opgestart vanwege een probleem met de databasecodering. Dit kan leiden tot overmatig verbruik. (NEO-23264)
