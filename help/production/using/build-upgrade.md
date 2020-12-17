@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2368'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Deze sectie zal u van een diepgaande analyse op het verbeteringsproces en de stappen voorzien om conflicten te identificeren en op te lossen.
 
-De verbetering van de bouw moet met voorzichtigheid worden uitgevoerd, de gevolgen ervan moeten vooraf volledig in overweging worden genomen en de procedure moet met een hoge mate van discipline worden afgerond. Zorg ervoor dat alleen deskundige gebruikers de hieronder beschreven stappen uitvoeren om ervoor te zorgen dat de upgrade is geslaagd. Daarnaast raden we u ten zeerste aan contact op te nemen met de [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) voordat u een upgrade start.
+De verbetering van de bouw moet met voorzichtigheid worden uitgevoerd, de gevolgen ervan moeten vooraf volledig in overweging worden genomen en de procedure moet met een hoge mate van discipline worden afgerond. Zorg ervoor dat alleen deskundige gebruikers de hieronder beschreven stappen uitvoeren om ervoor te zorgen dat de upgrade is geslaagd. Daarnaast raden we u ten zeerste aan contact op te nemen met [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) voordat u een upgrade start.
 
 De volgende voorwaarden zijn vereist:
 
@@ -27,16 +27,16 @@ De volgende voorwaarden zijn vereist:
 * Kennis van systemen en servers
 * Administratieve rechten en machtigingen
 
-Meer informatie vindt u in de volgende secties: [Adobe Campaign](../../production/using/upgrading.md)bijwerken, [migreren naar een nieuwe versie](../../migration/using/about-migration.md).
+Meer informatie vindt u in de volgende secties: [Adobe Campaign](../../production/using/upgrading.md) bijwerken, [Migreren naar een nieuwe versie](../../migration/using/about-migration.md).
 
-Voor ontvangen en hybride instanties, moet u om de bouwstijlverbetering aan het team van de Technische Verrichtingen van Adobe verzoeken. Raadpleeg voor meer informatie de sectie Veelgestelde vragen onderaan op deze pagina. Raadpleeg ook de veelgestelde vragen over [upgrades voor](../../platform/using/faq-build-upgrade.md)build.
+Voor ontvangen en hybride instanties, moet u om de bouwstijlverbetering aan het team van de Technische Verrichtingen van Adobe verzoeken. Raadpleeg voor meer informatie de sectie Veelgestelde vragen onderaan op deze pagina. Raadpleeg ook [Veelgestelde vragen over upgrades voor build](../../platform/using/faq-build-upgrade.md).
 
 ## De upgrade voorbereiden
 
 ![](assets/do-not-localize/icon_planification.png)
 
 Voordat u de upgrade van de build start, moet u een volledige voorbereiding uitvoeren zoals hieronder wordt beschreven.
-Zodra het systeem klaar is om te worden bevorderd, duurt een bouwstijlverbetering **minstens** 2 uren.
+Wanneer het systeem klaar is om te worden geüpgraded, duurt een upgrade **ten minste** 2 uur.
 
 Voor het upgradeproces voor build zijn de volgende bronnen vereist:
 
@@ -53,7 +53,7 @@ Hier zijn de belangrijkste punten op hoe te om een bouwstijlverbetering te plann
 1. Verdeel contactdetails voor Adobe en klantenpersoneel.
 1. Voor gehoste instanties: Adobe en het klantenpersoneel zullen de tijd voor de verbetering coördineren en wie zal uitvoeren.
 1. Voor instanties op locatie: het personeel van de klant beheert het gehele proces - als hulp bij het testen van aangepaste workflows en leveringslogica nodig is , moeten consultingservices worden ingevoerd .
-1. Bepaal en bevestig welke versie van Adobe Campaign u wilt upgraden naar - raadpleeg de [Adobe Campaign Classic-releaseopmerkingen](../../rn/using/rn-overview.md).
+1. Bepaal en bevestig welke versie van Adobe Campaign u wilt bevorderen aan - raadpleeg [de versienota&#39;s van Adobe Campaign Classic](../../rn/using/rn-overview.md).
 1. Bevestig bezit van verbeterings uitvoerbare voorwerpen.
 
 ### Belangrijke mensen
@@ -82,11 +82,11 @@ Alvorens de bouwstijlverbetering te beginnen, moeten de klanten op-gebouw de vol
 
 1. Voer een volledige steun van de gegevensbestanden voor alle instanties van de bron en doelmilieu&#39;s uit.
 
-1. Haal de nieuwste versie van het [serverconfiguratiebestand](../../installation/using/the-server-configuration-file.md)op.
+1. Krijg de recentste versie van uw [dossier van de serverconfiguratie](../../installation/using/the-server-configuration-file.md).
 
 1. Download de nieuwste build. [Meer weten over het Downloadcentrum](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)?
 
-U moet ook alle [nuttige bevellijnen](../../installation/using/command-lines.md) kennen alvorens een bouwstijlverbetering te beginnen:
+U moet ook alle [nuttige bevellijnen ](../../installation/using/command-lines.md) kennen alvorens een bouwstijlverbetering te beginnen:
 
 * **pdump** nlserver: lijsten lopende processen
 * **nlserver pdump -who**: lijsten actieve cliëntzittingen
@@ -101,7 +101,7 @@ U moet ook alle [nuttige bevellijnen](../../installation/using/command-lines.md)
 
 ![](assets/do-not-localize/icon_process.png)
 
-De onderstaande procedures worden alleen door **on-premise** klanten uitgevoerd. Voor gehoste klanten is dit een taak van het hostingteam. Om Adobe Campaign bij te werken naar een nieuwe build, wordt de gedetailleerde procedure hieronder beschreven.
+De onderstaande procedures worden alleen uitgevoerd door **on-premise** klanten. Voor gehoste klanten is dit een taak van het hostingteam. Om Adobe Campaign bij te werken naar een nieuwe build, wordt de gedetailleerde procedure hieronder beschreven.
 
 ### De omgeving dupliceren
 
@@ -113,7 +113,7 @@ Volg de onderstaande stappen om dit te doen:
 
 1. Herstel deze kopieën op alle exemplaren van de doelomgeving.
 
-1. Voer het **script nms:freeseInstance.js** cauterization op de doelomgeving uit voordat u het opstart. Hiermee wordt een einde gemaakt aan alle processen die op de buitenkant reageren: logboeken, tracering, leveringen, campagneworkflows, enz.
+1. Voer het **nms:vriesinstance.js**-waarschuwingsscript uit op de doelomgeving voordat u het opstart. Hiermee wordt een einde gemaakt aan alle processen die op de buitenkant reageren: logboeken, tracering, leveringen, campagneworkflows, enz.
 
    ```
    nlserverjavacsriptnms:freezeInstance.js–instance:<dev> -arg:run
@@ -147,13 +147,13 @@ Als u alle bestanden wilt vervangen door de nieuwe versie, moet u alle instantie
 1. Sluit de volgende services af:
 
    * Webservices (IIS): **iisreset /stop**
-   * Adobe Campaign-service: **netstop nlserver6**
+   * Adobe Campaign-service: **net stop nlserver6**
 
    >[!NOTE]
    >
    >Controleer of de omleidingsserver (webmdl) is gestopt, zodat het bestand nlsrvmod.dll dat door IIS wordt gebruikt, kan worden vervangen door de nieuwe versie.
 
-1. Valideer dat geen taken door het **nlserver** bevel PDump actief zijn. Als er geen taken zijn, dan zou de output op het volgende moeten lijken:
+1. Valideer dat geen taken door **nlserver PDump** bevel in werking te stellen actief zijn. Als er geen taken zijn, dan zou de output op het volgende moeten lijken:
 
    ```
    C:\<installation path>\bin>nlserverpdump HH:MM:SS > Application Server for Adobe Campaign version x.x (build xxx) dated xx/xx/xxxx No tasks
@@ -163,13 +163,13 @@ Als u alle bestanden wilt vervangen door de nieuwe versie, moet u alle instantie
 
 ### De Adobe Campaign Server-toepassing upgraden
 
-1. Voer het bestand **Setup.exe** uit. Als u dit bestand wilt downloaden, opent u [het Downloadcentrum](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html).
+1. Voer het bestand **Setup.exe** uit. Als u dit bestand moet downloaden, opent u [het Downloadcentrum](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html).
 
-1. Selecteer de installatiemodus: **Bijwerken** of **repareren**.
+1. Selecteer de installatiemodus: **Bijwerken** of **Herstellen**.
 
-1. Klik op **Volgende**.
+1. Klik **Volgende**.
 
-1. Klik op **Voltooien**: de nieuwe bestanden worden gekopieerd in het installatieprogramma .
+1. Klik **Voltooien**: de nieuwe bestanden worden gekopieerd in het installatieprogramma .
 
 1. Als de bewerking is voltooid, klikt u op **Voltooien**.
 
@@ -200,16 +200,17 @@ Als u alle bestanden wilt vervangen door de nieuwe versie, moet u alle instantie
 De volgende diensten moeten opnieuw worden opgestart:
 
 * Webservices (IIS): **issreset /start**
-* Adobe Campaign-service: **netwerkbeginserver6**
+* Adobe Campaign-service: **net start nlserver6**
 
 ### Update voor clientconsoles
+
+De cliëntconsole moet op de zelfde bouwstijl zoals de serverinstantie zijn.
 
 Download en kopieer het bestand op de computer waarop de Adobe Campaign-toepassingsserver is geïnstalleerd (nlserverweb):
 
 ```
 Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 ```
-
 
 De volgende keer dat clientconsoles worden aangesloten, wordt gebruikers in een venster geïnformeerd over de beschikbaarheid van een nieuwe update en kunnen ze deze downloaden en installeren.
 
@@ -245,7 +246,7 @@ Wanneer het Transactionele Overseinen (het Centrum van het Bericht) op uw instan
 
 In de context van een omgeving voor midsourcing moet u de volgende aanvullende stappen uitvoeren om te upgraden:
 
-1. Neem contact op met de klantenservice [van](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Adobe om de upgrade van de Midden-Bronserver te coördineren.
+1. Neem contact op met de [Adobe-klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de upgrade van de Midden-Bronserver te coördineren.
 1. Valideer of de versie is bijgewerkt door een testkoppeling uit te voeren. Bijvoorbeeld:
 
    ```
@@ -276,7 +277,7 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 Als de waarschuwing een conflict van middelen betreft, wordt de aandacht van de gebruiker vereist om het op te lossen.
 
-Het **postupgrade_ServerVersionNumber_TimeOfPoint.log** -bestand bevat het synchronisatieresultaat. Deze is standaard beschikbaar in de volgende map: **installationDirectory/var/instanceName/postupgrade**. Fouten en waarschuwingen worden aangegeven door de fout- en waarschuwingskenmerken.
+Het **postupgrade_ServerVersionNumber_TimeOfPoint.log**-bestand bevat het synchronisatieresultaat. Deze is standaard beschikbaar in de volgende map: **installationDirectory/var/instanceName/postupgrade**. Fouten en waarschuwingen worden aangegeven door de fout- en waarschuwingskenmerken.
 
 ### Conflicten analyseren
 
@@ -312,10 +313,10 @@ Als geen van beide voorwaarden van toepassing is, is dit een fout-positief. Als 
 
 Pas het volgende proces toe om conflicten op te lossen:
 
-1. Ga in Adobe Campaign Explorer naar **Beheer > Configuratie > Pakketbeheer > Conflicten** bewerken.
+1. Ga in de Adobe Campaign-verkenner naar **Beheer > Configuratie > Pakketbeheer > Conflicten bewerken**.
 
 1. Selecteer het conflict dat u wilt oplossen in de lijst.
-Er zijn drie opties om conflicten op te lossen: **Accepteer de nieuwe versie**, **houd de huidige versie**, **voeg de code samen (en verklaar als opgelost)**, **negeer het conflict (niet geadviseerd)**.
+Er zijn drie opties om conflicten op te lossen: **Accepteer de nieuwe versie**, **De huidige versie** behouden, **De code samenvoegen (en declareren als opgelost)**, **Het conflict negeren (niet aanbevolen)**.
 
 **Wanneer kan ik de nieuwe versie accepteren?**
 
@@ -333,7 +334,7 @@ Er zijn drie opties om conflicten op te lossen: **Accepteer de nieuwe versie**, 
 * Alleen formulieren, rapporten en webtoepassingen kunnen worden samengevoegd.
 * Sommige kleine fusies kunnen worden opgelost zonder de code te begrijpen.
 * Complexere fusies moeten worden uitgevoerd door iemand met de juiste vaardigheden en bekwaamheid.
-* Zie Samenvoegen [uitvoeren](#perform-a-merge).
+* Zie [Samenvoegen](#perform-a-merge) uitvoeren.
 
 **Wat als ik de conflicten negeer?**
 
@@ -345,7 +346,7 @@ Er zijn drie opties om conflicten op te lossen: **Accepteer de nieuwe versie**, 
 >Het wordt ten zeerste aanbevolen conflicten op te lossen.
 
 
-### Samenvoegen uitvoeren{#perform-a-merge}
+### Samenvoegen{#perform-a-merge} uitvoeren
 
 Er zijn verschillende soorten samenvoegingen:
 
@@ -365,7 +366,7 @@ Er zijn verschillende soorten samenvoegingen:
 
 1. De ingebouwde code wordt opgeslagen in de dossiers van XML in de datakit omslag. Zoek het XML-bestand dat overeenkomt met het conflicterende object. Voorbeeld: installationDirectory\datakit\nms\fra\form\recipient.xml
 1. De originele versie ophalen: via het [Downloadcentrum](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html) of een andere niet-geüpgrade installatie van het product.
-1. De nieuwe versie ophalen: via het [Downloadcentrum](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html) of de door de klant geïnstalleerde bestanden.
+1. De nieuwe versie ophalen: via het [Downloadcentrum](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html) of de geïnstalleerde bestanden van de klant.
 1. De aangepaste versie ophalen: Haal de broncode van het object op vanuit de campagneclient.
 
 ### Hoe maak je een diff?
@@ -384,9 +385,9 @@ Er zijn verschillende soorten samenvoegingen:
 
 Ga als volgt te werk als u het conflict handmatig wilt oplossen:
 
-1. Zoek in de onderste sectie van het venster naar de **_conflict_string_** om de entiteiten met conflicten te vinden. De entiteit die met de nieuwe versie is geïnstalleerd, bevat het nieuwe argument. De entiteit die met de vorige versie overeenkomt, bevat het aangepaste argument.
-1. Verwijder de versie die u niet wilt behouden. Verwijder de **_conflict_argument_** -tekenreeks van de entiteit die u bewaart.
-1. Ga naar het conflict dat u hebt opgelost. Klik op het pictogram **Handelingen** en selecteer **Declareer als opgelost**.
+1. Zoek in de onderste sectie van het venster naar **_conflict_string_** om de entiteiten met conflicten te zoeken. De entiteit die met de nieuwe versie is geïnstalleerd, bevat het nieuwe argument. De entiteit die met de vorige versie overeenkomt, bevat het aangepaste argument.
+1. Verwijder de versie die u niet wilt behouden. Verwijder de **_conflict_argument_**-tekenreeks van de entiteit die u bewaart.
+1. Ga naar het conflict dat u hebt opgelost. Klik op het pictogram **Acties** en selecteer **Als opgelost declareren**.
 1. Sla uw wijzigingen op: het conflict is nu opgelost .
 
 #### Complexe samenvoegingen{#complex-merges}
