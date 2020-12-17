@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+source-git-commit: fa8e63051b4c8bbcfd4000a1e59fa6d91422149d
 workflow-type: tm+mt
-source-wordcount: '2216'
-ht-degree: 97%
+source-wordcount: '2215'
+ht-degree: 98%
 
 ---
 
@@ -46,6 +46,7 @@ ht-degree: 97%
          + [Algemene vragen](platform/using/common-questions.md)
          + [Belangrijkste concepten](platform/using/faq-key-concepts.md)
          + [Buildupgrade](platform/using/faq-build-upgrade.md)
+         + [Privacy](platform/using/privacy-faq.md)
          + [Doelgroepen](platform/using/faq-audiences.md)
          + [Berichten ontwerpen](platform/using/faq-designing.md)
          + [Berichten verzenden](platform/using/faq-messages.md)
@@ -58,7 +59,6 @@ ht-degree: 97%
       + [Privacy en instemming](platform/using/privacy-and-recommendations.md)
       + [Privacybeheer](platform/using/privacy-management.md)
       + [Verzoeken om toegang tot persoonsgegevens](platform/using/privacy-requests.md)
-      + [Veelgestelde vragen over privacy](platform/using/privacy-faq.md)
    + Profielbeheer {#profile-management}
       + [Profielen](platform/using/about-profiles.md)
       + [Een profiel bewerken](platform/using/editing-a-profile.md)
@@ -299,8 +299,8 @@ ht-degree: 97%
       + [Een webformulier vertalen](web/using/translating-a-web-form.md)
       + [Gebruiksscenario: webformulieren](web/using/use-cases--web-forms.md)
    + Online enquêtes {#online-surveys}
-      + [Aan de slag met enquêtes](web/using/about-surveys.md)
-      + [Belangrijke stappen voor het maken van een enquête](web/using/getting-started-with-surveys.md)
+      + [Aan de slag met enquêtes ](web/using/about-surveys.md)
+      + [Belangrijke stappen bij het maken van een enquête](web/using/getting-started-with-surveys.md)
       + [Een enquête ontwerpen](web/using/building-a-survey.md)
       + [Antwoorden beheren](web/using/managing-answers.md)
       + [Verzamelde data publiceren, bijhouden en gebruiken](web/using/publish--track-and-use-collected-data.md)
