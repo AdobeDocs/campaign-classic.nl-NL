@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 7353abfe07bc177d103c83c7f2a5d57d7fb415a3
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '909'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ De triggers worden gebruikt voor het activeren van een campagneworkflow die e-ma
 
 Voordat u deze configuratie start, moet u controleren of u deze configuratie gebruikt:
 
-* Minimaal Adobe Campaign 20.3-release
+* Minimaal Adobe Campaign 20.3 of Gold Standard 11-release
 * Adobe Analytics Standard-versie
 
 U hebt ook het volgende nodig:
@@ -43,24 +43,24 @@ U hebt ook het volgende nodig:
 
 De authentificatie wordt vereist aangezien de pijpleiding in Adobe Experience Cloud wordt ontvangen.
 Het gebruikt een paar openbare en privé sleutels. Dit proces heeft dezelfde functie als een gebruiker/wachtwoord, maar is veiliger.
-Verificatie wordt ondersteund voor de Marketing Cloud via Adobe I/O-project.
+Verificatie wordt ondersteund voor de Marketing Cloud via Adobe I/O Project.
 
-## Stap 1: Adobe I/O-project maken/bijwerken {#creating-adobe-io-project}
+## Stap 1: Adobe I/O-project {#creating-adobe-io-project} maken/bijwerken
 
 Voor Gehoste klanten, kunt u een kaartje van de klantenzorg tot stand brengen om uw organisatie met de Tokens van de Technische Rekening van Adobe I/O voor de integratie van Triggers toe te laten.
 
-Raadpleeg voor klanten op locatie de pagina [Adobe I/O configureren voor Adobe Experience Cloud-triggers](../../integrations/using/configuring-adobe-io.md) . Merk op dat u moet selecteren **[!UICONTROL Adobe Analytics]** terwijl het toevoegen van API aan de Adobe I/O referentie.
+Raadpleeg voor klanten op locatie de pagina [Adobe I/O for Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) configureren. Let erop dat u **[!UICONTROL Adobe Analytics]** moet selecteren terwijl u API toevoegt aan de Adobe I/O-referentie.
 
-## Stap 2: De pijplijnoptie NmsPipeline_Config configureren {#configuring-nmspipeline}
+## Stap 2: NmsPipeline_Config pijpleidingsoptie {#configuring-nmspipeline} configureren
 
 Zodra de authentificatie wordt geplaatst, zal de pijpleiding de gebeurtenissen terugwinnen. Het zal slechts trekkers verwerken die in Adobe Campaign worden gevormd. De trekker moet van Adobe Analytics zijn geproduceerd en aan de pijpleiding geduwd die slechts trekkers zal verwerken die in Adobe Campaign worden gevormd.
 De optie kan ook met een vervanging worden gevormd om alle trekkers ongeacht de naam te vangen.
 
-1. In Adobe Campaign opent u het optiemenu onder **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** in de **[!UICONTROL Explorer]**.
+1. Open in Adobe Campaign het optiemenu onder **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** in **[!UICONTROL Explorer]**.
 
-1. Selecteer de **[!UICONTROL NmsPipeline_Config]** optie.
+1. Selecteer de optie **[!UICONTROL NmsPipeline_Config]**.
 
-1. In het **[!UICONTROL Value (long text)]** veld kunt u de volgende JSON-code plakken, die twee triggers opgeeft. U moet ervoor zorgen dat opmerkingen worden verwijderd.
+1. In het veld **[!UICONTROL Value (long text)]** kunt u de volgende JSON-code plakken, die twee triggers opgeeft. U moet ervoor zorgen dat opmerkingen worden verwijderd.
 
    ```
    {
@@ -105,16 +105,16 @@ De optie kan ook met een vervanging worden gevormd om alle trekkers ongeacht de 
 
 De pijpleiding werkt als een leverancier- en consumentenmodel. Berichten worden alleen voor een individuele consument verbruikt: elke consument krijgt zijn eigen exemplaar van de berichten .
 
-De **consumentenparameter** identificeert het geval als één van deze consumenten. De identiteit van de instantie zal de pijpleiding roepen. U kunt deze vullen met de instantienaam die u kunt vinden op de pagina Bewaking van de clientconsole.
+De **Consumer** parameter identificeert de instantie als één van deze consumenten. De identiteit van de instantie zal de pijpleiding roepen. U kunt deze vullen met de instantienaam die u kunt vinden op de pagina Bewaking van de clientconsole.
 
 De pijpleidingsdienst houdt spoor van de berichten die door elke consument worden teruggewonnen. Door verschillende consumenten voor verschillende instanties te gebruiken, kunt u ervoor zorgen dat elk bericht naar elke instantie wordt verzonden.
 
-### Aanbevelingen voor de optie Pipet {#pipeline-option-recommendation}
+### Aanbevelingen voor optie Pipet {#pipeline-option-recommendation}
 
 Om de optie van de Pijl te vormen, zou u deze aanbevelingen moeten volgen:
 
-* Voeg triggers toe of bewerk triggers onder **[!UICONTROL Triggers]**, u moet de rest niet bewerken.
-* Controleer of de JSON geldig is. U kunt een JSON-validatie gebruiken. Raadpleeg bijvoorbeeld deze [website](http://jsonlint.com/) .
+* Voeg of geef trekkers onder **[!UICONTROL Triggers]** uit, zou u niet de rest moeten uitgeven.
+* Controleer of de JSON geldig is. U kunt een JSON-validatie gebruiken. Raadpleeg bijvoorbeeld deze [website](http://jsonlint.com/).
 * &quot;name&quot; komt overeen met de trigger-id. Met jokerteken &quot;*&quot; worden alle triggers afgevangen.
 * &quot;Consumenten&quot; komt overeen met de naam van de oproepende instantie of toepassing.
 * Pijpleidingen ondersteunen ook het onderwerp &quot;aliassen&quot;.
@@ -133,7 +133,7 @@ De lijst met optionele parameters is hieronder te vinden:
 | authPrivateKey(Verouderd) | De persoonlijke sleutel, het openbare deel dat in de Oudere Oath-toepassing wordt geüpload, AES gecodeerd met de optie XtkKey: ```cryptString("PRIVATE_KEY")``` |
 | disableAuth(Legacy) | Schakel authentificatie uit, verbindend zonder gatewaytokens slechts door sommige eindpunten van de ontwikkelingsPijpleiding zal worden goedgekeurd. |
 | findPipelineEndpoint | URL om het eindpunt te vinden van de Diensten van de Pijpleiding dat voor deze huurder moet worden gebruikt. Standaard: ```https://producer-pipeline-pnw.adobe.net``` |
-| dumpStatePeriodSec | De periode tussen twee dumps van het proces van de interne staat in ```var/INSTANCE/pipelined.json.```<br> intern land is hier ook op verzoek toegankelijk: ```http://INSTANCE:7781/pipelined/status``` |
+| dumpStatePeriodSec | De periode tussen twee dumps van het interne staatsproces in ```var/INSTANCE/pipelined.json.``` <br> Interne staat is ook hier op bestelling toegankelijk: ```http://INSTANCE:7781/pipelined/status``` |
 | forcePipelineEndpoint | Maak de opsporing van PipelineServicesEndpoint onbruikbaar om het te dwingen |
 | monitorServerPort | Met behulp van een leidinggevend proces wordt naar deze poort geluisterd om het interne statusproces hier te verzorgen: ```http://INSTANCE:PORT/pipelined/status```. <br>Standaard is 7781 |
 | pointerFlushMessageCount | Wanneer dit aantal berichten wordt verwerkt, zullen de compensatie in het gegevensbestand worden bewaard. <br> Standaard is 1000 |
@@ -153,7 +153,7 @@ Voor dit, plaats het &lt; pijpleiding > element in het config dossier aan autost
  <pipelined autoStart="true" ... "/>
 ```
 
-### Opnieuw opstarten van het pijlproces {#pipelined-process-restart}
+### Start van pijplijnproces {#pipelined-process-restart}
 
 De wijzigingen worden pas van kracht als u de toepassing opnieuw start:
 
@@ -165,6 +165,6 @@ nlserver restart pipelined@instance
 
 Volg onderstaande stappen om de installatie van de pijplijn voor provisioning te valideren:
 
-* Zorg ervoor dat het [!DNL pipelined] proces wordt uitgevoerd.
+* Zorg ervoor het [!DNL pipelined] proces loopt.
 * Controleer pipelined.log voor de logboeken van de pijpleidingsverbinding.
 * Controleer de verbinding en of pingelt wordt ontvangen. Gehoste klanten kunnen de Controle van de Console van de Cliënt gebruiken.
