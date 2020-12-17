@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '191'
 ht-degree: 1%
 
 ---
@@ -36,9 +36,13 @@ Adobe Campaign is gebaseerd op verschillende processen die aan de serverzijde wo
 * Leveringsserver (nlserver mta)
 * Redirection-server (webmdl)
 
+>[!CAUTION]
+>
+>De cliëntconsole zou op de zelfde bouwstijl moeten zijn zoals de serverinstantie.
+
 >[!NOTE]
 >
->Raadpleeg [deze sectie](../../installation/using/general-architecture.md#logical-application-layer)voor meer informatie over de verschillende Adobe Campaign-processen.\
+>Raadpleeg [deze sectie](../../installation/using/general-architecture.md#logical-application-layer) voor meer informatie over de verschillende Adobe Campaign-processen.\
 >Wanneer u de architectuur van het type Power Booster of Power Cluster gebruikt, moet u dit proces toepassen op alle Power Booster-/Cluster-servers.
 
 Als de nieuwe versie een wijziging van de gegevensbestandstructuur impliceert, adviseren wij opnieuw beginnend de servers in de volgende orde:
