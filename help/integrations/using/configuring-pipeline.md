@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 7353abfe07bc177d103c83c7f2a5d57d7fb415a3
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '906'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ De triggers worden gebruikt voor het activeren van een campagneworkflow die e-ma
 
 Voordat u deze configuratie start, moet u controleren of u deze configuratie gebruikt:
 
-* Minimaal Adobe Campaign 20.3 of Gold Standard 11-release
+* Minimaal Adobe Campaign 20.3-release
 * Adobe Analytics Standard-versie
 
 U hebt ook het volgende nodig:
