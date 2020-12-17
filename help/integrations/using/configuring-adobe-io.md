@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Adobe I/O configureren voor Adobe Experience Cloud-triggers
-description: Leer hoe u Adobe I/O voor Adobe Experience Cloud-triggers configureert
+title: Adobe I/O configureren voor Adobe Experience Cloud Triggers
+description: Leer hoe u Adobe I/O for Adobe Experience Cloud Triggers configureert
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
@@ -10,23 +10,23 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 7353abfe07bc177d103c83c7f2a5d57d7fb415a3
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 0%
+source-wordcount: '423'
+ht-degree: 4%
 
 ---
 
 
-# Configuring Adobe I/O for Adobe Experience Cloud Triggers {#configuring-adobe-io}
+# Adobe I/O configureren voor Adobe Experience Cloud Triggers {#configuring-adobe-io}
 
 >[!CAUTION]
 >
->Als u een oudere versie van de integratie van Triggers door authentificatie Auth gebruikt, moet **u naar Adobe I/O bewegen zoals hieronder** beschreven. De oude Auth-verificatiemodus wordt op 30 april 2021 afgesloten. [Meer informatie](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>Als u een oudere versie van de integratie van Triggers door Authentificatie Auth gebruikt, **moet u naar Adobe I/O bewegen zoals hieronder beschreven**. De oude Auth-verificatiemodus wordt op 30 april 2021 afgesloten. [Meer informatie](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 
 ## Vereisten {#adobe-io-prerequisites}
 
-Deze integratie geldt alleen voor de **Campaign Classic 20.3-release**.
+Deze integratie geldt alleen voor de eerste **Campaign Classic 20.3- en Gold Standard 11-releases**.
 
 Controleer voordat u met deze implementatie begint of:
 
@@ -35,10 +35,10 @@ Controleer voordat u met deze implementatie begint of:
 
 >[!NOTE]
 >
->Als u de bevoegdheden van de systeembeheerder van de IMS-organisatie moet aanvragen, volgt u de procedure die [in deze pagina](https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/manage-developers.ug.html) wordt beschreven om deze toegang te bieden aan alle productprofielen.
+>Als u om de voorrechten van de Beheerder van het Systeem van IMS Org moet verzoeken, volg de procedure [op deze pagina](https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/manage-developers.ug.html) om deze toegang voor alle Profielen van het Product te verlenen.
 
 
-## Stap 1: Adobe I/O-project maken/bijwerken {#creating-adobe-io-project}
+## Stap 1: Adobe I/O-project {#creating-adobe-io-project} maken/bijwerken
 
 1. Open Adobe I/O en meld u aan met de System Administrator-rechten voor IMSorg.
 
@@ -50,7 +50,7 @@ Controleer voordat u met deze implementatie begint of:
 
    >[!NOTE]
    >
-   >Als uw client-id leeg is, kunt u deze rechtstreeks **[!UICONTROL Create a New project]** in Adobe I/O gebruiken.
+   >Als uw client-id leeg is, kunt u direct **[!UICONTROL Create a New project]** in Adobe I/O.
 
 1. Identificeer het bestaande project gebruikend gehaalde cliënt ID. Zoek bestaande projecten met dezelfde client-id als de projecten die u in de vorige stap hebt uitgepakt.
 
@@ -60,7 +60,7 @@ Controleer voordat u met deze implementatie begint of:
 
    ![](assets/do-not-localize/adobe_io_1.png)
 
-1. In the **[!UICONTROL Add an API]** window, select **[!UICONTROL Adobe Analytics]**.
+1. Selecteer **[!UICONTROL Adobe Analytics]** in het venster **[!UICONTROL Add an API]**.
 
    ![](assets/do-not-localize/adobe_io_2.png)
 
@@ -68,7 +68,7 @@ Controleer voordat u met deze implementatie begint of:
 
    ![](assets/do-not-localize/adobe_io_3.png)
 
-1. Als uw identiteitskaart van de Cliënt leeg was, selecteer **[!UICONTROL Generate a key pair]** om een Openbaar en Privé sleutelpaar tot stand te brengen.
+1. Als uw client-id leeg was, selecteert u **[!UICONTROL Generate a key pair]** om een openbaar en privé sleutelpaar te maken.
 
    ![](assets/do-not-localize/adobe_io_4.png)
 
@@ -80,7 +80,7 @@ Controleer voordat u met deze implementatie begint of:
 
    ![](assets/do-not-localize/adobe_io_6.png)
 
-1. Selecteer in uw project de volgende gegevens **[!UICONTROL Service Account (JWT)]** en kopieer deze:
+1. Van uw project, selecteer **[!UICONTROL Service Account (JWT)]** en kopieer de volgende informatie:
    * **[!UICONTROL Client ID]**
    * **[!UICONTROL Client Secret]**
    * **[!UICONTROL Technical account ID]**
@@ -88,9 +88,9 @@ Controleer voordat u met deze implementatie begint of:
 
    ![](assets/do-not-localize/adobe_io_7.png)
 
-## Stap 2: De referenties van het project toevoegen in Adobe Campaign {#add-credentials-campaign}
+## Stap 2: Voeg de projectgeloofsbrieven in Adobe Campaign {#add-credentials-campaign} toe
 
-Om de projectgeloofsbrieven in Adobe Campaign toe te voegen, stel het volgende bevel als &quot;neolane&quot;gebruiker op alle containers van de instantie van Adobe Campaign in werking om de **[!UICONTROL Technical Account]** geloofsbrieven in het dossier van de instantieconfiguratie op te nemen.
+Om de projectgeloofsbrieven in Adobe Campaign toe te voegen, stel het volgende bevel als &quot;neolane&quot;gebruiker op alle containers van de instantie van Adobe Campaign in werking om **[!UICONTROL Technical Account]** geloofsbrieven in het dossier van de instantieconfiguratie op te nemen.
 
 ```
 nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID[/Client_Secret[/Base64_encoded_Private_Key]]
@@ -100,9 +100,9 @@ nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_
 >
 >Codeer de persoonlijke sleutel in base64 UTF-8-indeling. Vergeet niet de nieuwe regel uit de sleutel te verwijderen voordat u deze codeert, behalve voor de persoonlijke sleutel. De persoonlijke sleutel moet dezelfde zijn als die waarmee de integratie is gemaakt.
 
-## Stap 3: Label voor pijplijnen bijwerken {#update-pipelined-tag}
+## Stap 3: Door buizen uitgelijnde tag {#update-pipelined-tag} bijwerken
 
-Om [!DNL pipelined] markering bij te werken, moet u het authentificatietype aan Adobe I/O project in het configuratiedossier **config-&lt; instance-name >.xml** als volgt bijwerken:
+Als u de tag [!DNL pipelined] wilt bijwerken, moet u het verificatietype bijwerken naar het Adobe I/O-project in het configuratiebestand **config-&lt; instance-name >.xml** als volgt:
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
