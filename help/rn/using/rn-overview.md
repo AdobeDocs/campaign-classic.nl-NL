@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 96%
+source-wordcount: '429'
+ht-degree: 100%
 
 ---
 
@@ -44,8 +44,6 @@ De **laatste RC-build** is [Campaign Classic 20.3-release](../../rn/using/latest
 ## Aanbevelingen{#recommendations}
 
 Voor een stabiele configuratie adviseren we u dezelfde stabiele build te installeren op alle servers die op dezelfde clientconfiguratie worden uitgevoerd.
-
-Bovendien zou de cliëntconsole op de zelfde bouwstijl moeten zijn zoals de serverinstantie.
 
 Houd uw implementatie up-to-date door de pagina’s [Verouderde en verwijderde functies](../../rn/using/deprecated-features.md) en [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) te lezen bij elke nieuwe release.
 
