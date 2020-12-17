@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
 source-wordcount: '2020'
 ht-degree: 2%
@@ -15,13 +15,13 @@ ht-degree: 2%
 ---
 
 
-# Veelgestelde vragen over upgrade maken {#build-upgrade-faq}
+# Veelgestelde vragen over upgrades maken {#build-upgrade-faq}
 
-Adobe Campaign wordt regelmatig bijgewerkt. Als u bekend bent met onze gepubliceerde [opmerkingen](../../rn/using/rn-overview.md)bij de release, weet u waarschijnlijk dat gemiddeld 2/3 kleine versies met nieuwe functies, verbeteringen en oplossingen elk jaar worden uitgebracht. Bovendien brengen wij periodiek versies uit met uitsluitend cumulatieve oplossingen. Deze regelmatige afwezigheid van updates is erop gericht om de nieuwste en grootste in uw handen te krijgen, uw omgeving volledig veilig te houden en duidelijk uw ervaring met ons product te verbeteren.
+Adobe Campaign wordt regelmatig bijgewerkt. Als u bekend bent met onze gepubliceerde [Opmerkingen bij de release](../../rn/using/rn-overview.md), bent u zich waarschijnlijk bewust van het feit dat gemiddeld 2/3 kleine versies met nieuwe functies, verbeteringen en oplossingen elk jaar worden uitgebracht. Bovendien brengen wij periodiek versies uit met uitsluitend cumulatieve oplossingen. Deze regelmatige afwezigheid van updates is erop gericht om de nieuwste en grootste in uw handen te krijgen, uw omgeving volledig veilig te houden en duidelijk uw ervaring met ons product te verbeteren.
 
 Het is essentieel dat onze klanten de meest recente versie van Adobe Campaign uitvoeren. Het staat ook Adobe toe om veel efficiënter te helpen in het geval u op kwesties loopt - het identificeren van, het reproduceren van en het bevestigen van een kwestie op een oude bouwstijl typisch meer tijd vergt, om niet te vermelden dat sommige kwesties u zou kunnen ontmoeten reeds zeer goed in een recente bouwstijl zijn opgelost.
 
-Daarom zijn we begonnen met het [Gold Standard](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html) -programma om samen te werken met onze klanten om hun omgevingen proactief en regelmatig te upgraden.
+Daarom zijn we begonnen met het programma [Gold Standard](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html) om samen te werken met onze klanten om hun omgevingen proactief en regelmatig te upgraden.
 
 ## Wat is een bouwstijlverbetering?
 
@@ -31,11 +31,11 @@ Meer informatie [in deze sectie](../../rn/using/rn-overview.md).
 
 ## Wat is de nieuwste versie van Adobe Campaign Classic?
 
-De nieuwste versie van Campaign Classic, inclusief nieuwe functies en documentatie, wordt beschreven in de meest recente [releaseopmerkingen](../../rn/using/latest-release.md).
+De meest recente versie van Campaign Classic, inclusief nieuwe functies en documentatie, vindt u in de meest recente [Release-notities](../../rn/using/latest-release.md).
 
 ## Hoe weet ik welke versie ik heb?
 
-Controleer uw versie via **[!UICONTROL Help > About...]** het menu in de Adobe Campaign Client Console. Het **[!UICONTROL About]** vakje bevat gedetailleerde informatie over de versie en bouwt u zowel voor de console als de server in werking stelt.
+Controleer uw versie via het menu **[!UICONTROL Help > About...]** in de Adobe Campaign Client Console. Het tekstvak **[!UICONTROL About]** bevat gedetailleerde informatie over de versie en build die u uitvoert voor zowel de console als de server.
 
 Meer informatie [in deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -61,7 +61,7 @@ Bijvoorbeeld, gebruikend de serverinformatie van het het schermschot in de vorig
 
 Adobe zal een steun van uw systeem alvorens om het even welke veranderingen nemen. Nochtans, als er kritiek aanpassingswerk is dat in uw niet productiesysteem (ontwikkeling of het opvoeren servers) is, wordt het HIGH AANBEVOLEN u dat werk als pakket voorafgaand aan om het even welke verbetering uitvoert.
 
-![](assets/do-not-localize/how-to-video.png) Kijk [naar deze manier van video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html)voor meer informatie.
+![](assets/do-not-localize/how-to-video.png) Kijk  [naar deze manier van video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html) voor meer informatie.
 
 ## Wanneer zullen de upgrades plaatsvinden?
 
@@ -83,7 +83,7 @@ De verbetering van de bouw is een proces in twee stappen:
 
 1. De upgrade zelf: de productieomgeving wordt verbeterd. Deze fase wordt meestal binnen een paar uur uitgevoerd. Voor zeer complexe omgevingen moet een langere downtime worden verwacht. Als er iets verkeerd gaat, wordt een terugdraaistrategie gedefinieerd en kan deze worden uitgevoerd.
 
-For more information, [refer to this document](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html).
+[Raadpleeg dit document](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html) voor meer informatie.
 
 ## Welke middelen zijn nodig voor de bouwstijlverbetering?
 
@@ -96,15 +96,15 @@ Voor het upgradeproces voor build zijn de volgende bronnen vereist:
 
 ## Hoe kan ik voorbereidingen treffen voor de bouwstijlverbetering?
 
-Exporteer in uw ontwikkelings- en staging-systemen werk dat essentieel is en dat behouden moet blijven. Kijk voor meer informatie [naar deze video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
+Exporteer in uw ontwikkelings- en staging-systemen werk dat essentieel is en dat behouden moet blijven. Voor meer informatie, [bekijk dit hoe te video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
 
 Vernieuw uw kennis van de kritieke wegwerkschema&#39;s en leveringen die in uw loopboeken (of door uw raadplegend team/partner) worden ontwikkeld door de documentatie te herzien die aan uw team aan het eind van uw implementatie wordt verstrekt.
 
 Identificeer laag volume of lage verkeerstijden die voor onderhoudsvensters ideaal zouden zijn aangezien zij het laagste bedrijfseffect zullen veroorzaken.
 
-Controleer hieronder [onze controlelijst voor](#check-list) het upgraden van de build en uw testplannen en zorg ervoor dat bronnen die deze tests kunnen uitvoeren, binnen 24 tot 48 uur beschikbaar zijn. van de voltooiing van een upgrade.
+Controleer onze [controlelijst voor upgrades hieronder](#check-list) en uw testplannen en zorg ervoor dat bronnen die deze tests kunnen uitvoeren, binnen 24 tot 48 uur beschikbaar zijn. van de voltooiing van een upgrade.
 
-For more information, [refer to this document](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html).
+[Raadpleeg dit document](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) voor meer informatie.
 
 ## Kunnen upgrades worden uitgevoerd &#39;s nachts of tijdens buiten kantooruren?
 
@@ -148,13 +148,13 @@ Dit is afhankelijk van de back-upgrootte van de database. De gemiddelde tijd die
 
 ## Welke types van tests worden uitgevoerd op mijn systeem na de verbetering?
 
-Raadpleeg de onderstaande [checklist voor upgrades voor](#check-list)build.
+Raadpleeg de [checklist voor upgrades hieronder](#check-list).
 
 ## Welk type test moet ik uitvoeren na mijn upgrade?
 
 Ontwikkeling- en werkgebiedomgevingen worden op volgorde of samen geüpgraded, maar er is een aftekening nodig voordat de productie-instantie wordt bijgewerkt. Dit staat elke klant toe om grondig het testen te leiden alvorens uit te tekenen op om het even welke veranderingen in productie.
 
-Zie de onderstaande [lijst voor het controleren van upgrades voor](#check-list)build. Klanten moeten soortgelijke tests uitvoeren als andere die ze nodig hebben voor de omgeving.
+Zie de lijst [Controlelijst voor upgrades hieronder](#check-list). Klanten moeten soortgelijke tests uitvoeren als andere die ze nodig hebben voor de omgeving.
 
 ## Hoe vaak moet ik een upgrade uitvoeren?
 
@@ -166,11 +166,11 @@ Ja. De server wordt afgesloten tijdens een upgrade om ervoor te zorgen dat de ge
 
 ## Wie zou ik moeten contacteren om het bouwstijlverbeteringskaartje te openen?
 
-Neem contact op met de [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)als u problemen ondervindt na een upgrade van de build. De Zorg van de klant plant de bouwstijldata en opent bouwstijlgerelateerde kaartjes.
+Als u problemen ondervindt na een upgrade van de build, neemt u contact op met [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De Zorg van de klant plant de bouwstijldata en opent bouwstijlgerelateerde kaartjes.
 
-Meer informatie over de opties voor [Help en ondersteuning voor Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+Meer informatie over de Help- en ondersteuningsopties voor Campaign Classic[](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
 
-## Controlelijst voor upgrades samenstellen {#check-list}
+## Controlelijst voor upgrades maken {#check-list}
 
 ### Checklist voor post-upgrade van de cloudberichtenserver
 
@@ -185,9 +185,12 @@ Meer informatie over de opties voor [Help en ondersteuning voor Campaign Classic
 
 * Kan u zich aanmelden bij de server? De Client Console van de Campagne van de controle werkt zonder enige fout/waarschuwingspopups.
 * Zorg ervoor om de zelfde consoleversie zoals bouwstijlversie na de verbetering te gebruiken.
-* Hebt u Webtoepassingen die gegevens in het Gegevensbestand van de Campagne opnemen? Als dat het geval is, voert u deze uit en controleert u of ze nieuwe records kunnen invoegen via de API.
-* Kan je een test-e-mail verzenden? Creeer nieuwe levering gebruikend een bekend malplaatje, verzend het naar één testontvanger, verifieer verpersoonlijking, unsublink, spiegel pagina al werk.
-* Werken al uw kritieke padworkflows? Workflows controleren, werkstroomjournaal openen, controleren of er geen fouten zijn.
+* Hebt u Webtoepassingen die gegevens in het Gegevensbestand van de Campagne opnemen? Indien dit het geval is, voert u ze uit en
+controleren of ze nieuwe records kunnen invoegen via de API.
+* Kan je een test-e-mail verzenden? Nieuwe levering maken met een bekende sjabloon, verzenden naar
+één testontvanger, verifieer verpersoonlijking, unsublink, spiegel alle werk.
+* Werken al uw kritieke padworkflows? Workflows controleren, werkstroomjournaal openen, controleren
+dat er geen fouten zijn.
 * Zijn al uw mappen aanwezig, zichtbaar en toegankelijk? Blader door verschillende mappen en controleer deze.
 alle inhoud wordt weergegeven en weergegeven.
 * Komt uw leveringen door met de correcte tijdzone?
@@ -206,4 +209,4 @@ alle inhoud wordt weergegeven en weergegeven.
 * [Een build-upgrade uitvoeren](../../production/using/build-upgrade.md)
 * [Opmerkingen bij de release Campaign Classic](../../rn/using/rn-overview.md)
 * [Help- en ondersteuningsopties voor Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
-* [Gold Standard-programma](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html)
+* [Gold Standard-programma](https://helpx.adobe.com/campaign/kb/gold-standard.html)
