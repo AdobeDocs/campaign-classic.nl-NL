@@ -17,9 +17,9 @@ ht-degree: 2%
 
 # Typen onderhoud{#types-of-maintenance}
 
-## Toepassingsonderhoud {#application-maintenance}
+## Onderhoud van toepassingen {#application-maintenance}
 
-Adobe Campaign biedt een ingebouwde workflow waarmee u bepaalde onderhoudstaken voor databases kunt plannen: de workflow voor het opschonen van **databases**. Deze workflow voert de volgende taken uit:
+Adobe Campaign biedt een ingebouwde workflow waarmee u bepaalde onderhoudstaken voor databases kunt plannen: de **workflow voor het opschonen van databases**. Deze workflow voert de volgende taken uit:
 
 * verwijdering van verlopen records;
 * verwijdering van zwevende records en herinitialisatie van status voor verlopen objecten;
@@ -71,14 +71,14 @@ Er zijn verschillende strategieën beschikbaar:
   </tr> 
   <tr> 
    <td> Reliëf en herstel<br /> </td> 
-   <td> Zet de lijst aan een dossier, schrapt de lijst in het gegevensbestand en herstelt van de stortplaats.<br /> </td> 
+   <td> Zet de lijst aan een dossier neer, schrap de lijst in het gegevensbestand en herstel van de stortplaats.<br /> </td> 
    <td> Dit is de eenvoudigste manier om een tabel te defragmenteren. Ook de enige oplossing wanneer het gegevensbestand bijna volledig is.<br /> </td> 
    <td> Aangezien de tabel wordt verwijderd en opnieuw gemaakt, kan de toepassing niet online worden gelaten, zelfs niet in de modus Alleen-lezen (de tabel is niet beschikbaar tijdens de terugzetfase).<br /> </td> 
   </tr> 
   <tr> 
    <td> Dupliceren, naam wijzigen en neerzetten<br /> </td> 
-   <td> Hierdoor wordt een kopie van een tabel en de bijbehorende indexen gemaakt, wordt de bestaande tabel verwijderd en wordt de naam van de kopie gewijzigd zodat deze in de plaats komt.<br /> </td> 
-   <td> Deze methode is sneller dan de eerste methode, omdat er minder IO's worden gegenereerd (geen kopie als bestand en lezen van dit bestand).<br /> </td> 
+   <td> Dit leidt tot een exemplaar van een lijst en zijn indexen, dan laat vallen bestaande en noemt het exemplaar anders om zijn plaats te nemen.<br /> </td> 
+   <td> Deze methode is sneller dan de eerste benadering aangezien het minder IOs (geen exemplaar als dossier en gelezen van dit dossier) produceert.<br /> </td> 
    <td> Vereist tweemaal de hoeveelheid ruimte.<br /> Alle actieve processen die tijdens het proces naar de tabel worden geschreven, moeten worden gestopt. Dit heeft echter geen invloed op het leesproces, aangezien de tabel op het laatste moment na de heropbouw wordt omgewisseld. <br /> </td> 
   </tr> 
  </tbody> 
