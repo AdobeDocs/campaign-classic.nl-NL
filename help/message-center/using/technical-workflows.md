@@ -23,11 +23,11 @@ De diverse technische werkschema&#39;s met betrekking tot transactioneel oversei
 
 ## Workflows voor besturingsinstanties {#control-instance-workflows}
 
-In de besturingsinstantie moet u voor elke **[!UICONTROL Message Center execution instance]** externe account één archiveringsworkflow maken, ongeacht of u een of meerdere uitvoeringsinstanties hebt geregistreerd. Klik op de **[!UICONTROL Create the archiving workflow]** knop om de workflow te maken en te starten.
+Op de controle instantie, of u één of verscheidene uitvoeringsinstanties hebt geregistreerd, moet u één archiveringswerkschema voor elke **[!UICONTROL Message Center execution instance]** externe rekening creëren. Klik op de knop **[!UICONTROL Create the archiving workflow]** om de workflow te maken en te starten.
 
 ![](assets/messagecenter_archiving_002.png)
 
-Deze workflows zijn dan toegankelijk via de map **Beheer > Productie > Berichtencentrum** . Nadat de workflows voor archivering zijn gemaakt, worden deze automatisch gestart.
+Deze workflows zijn vervolgens toegankelijk via de map **Beheer > Productie > Message Center**. Nadat de workflows voor archivering zijn gemaakt, worden deze automatisch gestart.
 
 <!--**Minimal architecture**
 
@@ -37,11 +37,11 @@ Once the control and execution modules are installed on the same instance, you m
 
 ## Workflows voor uitvoeringsinstanties {#execution-instance-workflows}
 
-Op de uitvoeringsinstantie(s) zijn de technische workflows voor transactiemelding toegankelijk via de map **Beheer > Productie > Berichtencentrum** . Je moet ze gewoon starten. De workflows in de lijst zijn:
+Op de uitvoeringsinstantie(s) zijn de technische workflows voor transactiemelding toegankelijk via de map **Beheer > Productie > Berichtcentrum**. Je moet ze gewoon starten. De workflows in de lijst zijn:
 
-* **[!UICONTROL Processing batch events]** (interne naam: **[!UICONTROL batchEventsProcessing]** ): met deze workflow kunt u batchgebeurtenissen in een wachtrij onderverdelen voordat deze aan een berichtsjabloon zijn gekoppeld.
-* **[!UICONTROL Processing real time events]** (interne naam: **[!UICONTROL rtEventsProcessing]** ): met deze workflow kunt u real-time gebeurtenissen in een wachtrij onderverdelen voordat deze aan een berichtsjabloon zijn gekoppeld.
-* **[!UICONTROL Update event status]** (interne naam: **[!UICONTROL updateEventStatus]** ): in deze workflow kunt u een status aan de gebeurtenis toewijzen.
+* **[!UICONTROL Processing batch events]** (interne naam:  **[!UICONTROL batchEventsProcessing]** ): met deze workflow kunt u batchgebeurtenissen in een wachtrij onderverdelen voordat deze aan een berichtsjabloon zijn gekoppeld.
+* **[!UICONTROL Processing real time events]** (interne naam:  **[!UICONTROL rtEventsProcessing]** ): met deze workflow kunt u real-time gebeurtenissen in een wachtrij onderverdelen voordat deze aan een berichtsjabloon zijn gekoppeld.
+* **[!UICONTROL Update event status]** (interne naam:  **[!UICONTROL updateEventStatus]** ): in deze workflow kunt u een status aan de gebeurtenis toewijzen.
 
    De volgende gebeurtenisstatussen zijn beschikbaar:
 
