@@ -23,7 +23,7 @@ Het is mogelijk om SOAP-methoden te maken in JavaScript. Deze functie laat eenvo
 
 Deze SOAP-methoden gedragen zich op dezelfde manier als de methoden die native in de toepassing worden gedefinieerd. Dezelfde kenmerken worden ondersteund: statisch, alleen sleutel en const.
 
-## Een methodebibliotheek definiëren {#defining-a-method-library}
+## Een methodebibliotheek {#defining-a-method-library} definiëren
 
 Het maken van een methodebibliotheek bestaat uit twee fasen:
 
