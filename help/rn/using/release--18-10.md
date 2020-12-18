@@ -58,7 +58,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Er is al op gewezen dat dit een bouwwerk is. Voer een [upgrade uit naar de nieuwste build](../../production/using/build-upgrade.md) of neem contact op met de [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Er is al op gewezen dat dit een bouwwerk is. [upgrade naar de nieuwste build](../../production/using/build-upgrade.md) of neem contact op met [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Verbeteringen**
 
@@ -82,7 +82,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Er is al op gewezen dat dit een bouwwerk is. Voer een [upgrade uit naar de nieuwste build](../../production/using/build-upgrade.md) of neem contact op met de [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Er is al op gewezen dat dit een bouwwerk is. [upgrade naar de nieuwste build](../../production/using/build-upgrade.md) of neem contact op met [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Verbeteringen**
 
@@ -104,7 +104,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Er is al op gewezen dat dit een bouwwerk is. Voer een [upgrade uit naar de nieuwste build](../../production/using/build-upgrade.md) of neem contact op met de [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Er is al op gewezen dat dit een bouwwerk is. [upgrade naar de nieuwste build](../../production/using/build-upgrade.md) of neem contact op met [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Nieuwe functies**
 
@@ -123,15 +123,15 @@ ht-degree: 7%
      <li> <p>Stil meldingen bijhouden in iOS </p> </li> 
      <li> <p>Feedback op registratieaanroepen in iOS implementeren</p> </li> 
      <li> <p>De voorbereidingssnelheid voor iOS-levering verbeteren</p> </li> 
-    </ul> <p>Als onderdeel van GCM-afschrijving door Google staat Android V2-connector nu alleen verbindingen met de FCM-server toe.</p><p>Raadpleeg de <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">gedetailleerde documentatie</a> voor meer informatie. De handmatige upgrade naar FCM vindt u in dit <a href="https://helpx.adobe.com/nl/campaign/kb/migrate-to-fcm.html">artikel</a>. </p> </td> 
+    </ul> <p>Als onderdeel van GCM-afschrijving door Google staat Android V2-connector nu alleen verbindingen met de FCM-server toe.</p><p>Raadpleeg de <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">gedetailleerde documentatie</a> voor meer informatie. De handmatige upgrade naar FCM wordt beschreven in dit <a href="https://helpx.adobe.com/nl/campaign/kb/migrate-to-fcm.html">artikel</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td> SQL-gegevensbeheer<br /> </td> 
+   <td> SQL-gegevensbeheeractiviteit<br /> </td> 
    <td> <p>Er is een nieuwe werkstroomactiviteit voor gegevensbeheer toegevoegd. Met de activiteit <strong>SQL-gegevensbeheer</strong> kunt u uw eigen SQL-scripts schrijven of kopiëren en plakken om werktabellen te maken en te vullen (alleen FDA). </p> <p>Raadpleeg de <a href="../../workflow/using/sql-data-management.md">gedetailleerde documentatie</a> voor meer informatie.</p></td> 
   </tr> 
   <tr> 
    <td> Workflowbewaking<br /> </td> 
-   <td> <p>Met de nieuwe Adobe Campaign Workflow HeatMap beschikken de platformbeheerders over een snelle grafische weergave van alle gelijktijdige workflows, waardoor ze de belasting op de instantie kunnen controleren en de workflows dienovereenkomstig kunnen plannen.</p> <p>Raadpleeg de <a href="../../workflow/using/heatmap.md">gedetailleerde documentatie</a> voor meer informatie.</p> <p>Het Workflow HeatMap-pakket is ook beschikbaar op aanvraag voor builds vóór 8977 (vanaf build 8700). Raadpleeg <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">deze pagina</a>voor meer informatie over aanvragen en installeren.</p> </td> 
+   <td> <p>Met de nieuwe Adobe Campaign Workflow HeatMap beschikken de platformbeheerders over een snelle grafische weergave van alle gelijktijdige workflows, waardoor ze de belasting op de instantie kunnen controleren en de workflows dienovereenkomstig kunnen plannen.</p> <p>Raadpleeg de <a href="../../workflow/using/heatmap.md">gedetailleerde documentatie</a> voor meer informatie.</p> <p>Het Workflow HeatMap-pakket is ook beschikbaar op aanvraag voor builds vóór 8977 (vanaf build 8700). Raadpleeg <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">deze pagina</a> voor meer informatie over het aanvragen en installeren van de pagina.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -148,8 +148,8 @@ ht-degree: 7%
 
 * Campaign Classic API’s zijn nu beschikbaar op een [speciale pagina](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html). Als u het bestand jsapi.chm gebruikte, moet u nu naar de nieuwe onlineversie verwijzen.
 * PostgreSQL 10, Debian 9 en Teradata 16.20 worden nu ondersteund. Raadpleeg de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html).
-* Wanneer u een SFTP-verbinding maakt, kunt u nu proxyverificatie gebruiken. For more information, refer to the [detailed documentation](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868)
-* De optie **van de de berekeningsformule** van de Datum is nu beschikbaar in de leveringseigenschappen wanneer het creëren van één enkele levering gebruikend het direct-mailleveringsmalplaatje. (NEO-9792)
+* Wanneer u een SFTP-verbinding maakt, kunt u nu proxyverificatie gebruiken. Raadpleeg de [gedetailleerde documentatie](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868) voor meer informatie.
+* De **De berekeningsformule van de Datum** optie is nu beschikbaar in de leveringseigenschappen wanneer het creëren van één enkele levering gebruikend het direct-mailleveringsmalplaatje. (NEO-9792)
 * Het beheer van domeinnamen is verbeterd voor het bijhouden van cookies en webtoepassingen. Zie de sectie &#39;Technische ontwikkelingen&#39; hieronder voor meer informatie.
 * De import van gedeelde Adobe Marketing Cloud-middelen op een bezorgings- of landingspagina is verbeterd op het gebied van beveiliging en prestaties.
 * Er is een nieuw selectievakje beschikbaar in de externe account van het mobiele kanaal om uitgebreide SMPP-sporen in te schakelen in het logbestand, waardoor deze uitvoer rechtstreeks toegankelijk wordt via de Adobe Campaign-interface.
@@ -170,7 +170,7 @@ Domeinnaambeheer
 
 Het beheer van domeinnamen is verbeterd voor het bijhouden van cookies en webtoepassingen.
 
-Nu worden alle domeinnamen van het tweede niveau met twee letters standaard ondersteund (bijvoorbeeld .aa.com). Voor complexere domeinnamen (bijvoorbeeld tweefasige domeinen met drie letters zoals .com.au), moet u deze toevoegen in de optie **cookieDomains** van de serverConf (onder de omrichtingstag). Hier volgt een voorbeeld:
+Nu worden alle domeinnamen van het tweede niveau met twee letters standaard ondersteund (bijvoorbeeld .aa.com). Voor complexere domeinnamen (bijvoorbeeld tweedelige domeinen met drie letters zoals .com.au), moet u deze toevoegen in de optie **cookieDomains** van de serverConf (onder de redirection markering). Hier volgt een voorbeeld:
 
 ```
 <redirection cookiedomain="http://toureiffel.paris">
@@ -197,8 +197,8 @@ Deze indexveranderingen kunnen tot een toename van de tijd leiden die wordt vere
 
 **Patches**
 
-* Correctie van een fout die ervoor zorgde dat bestanden niet konden worden gedownload van de **webdownloadworkflowactiviteit** . (NEO-11105)
-* Correctie van een fout die het **verzenden van indicatoren en de workflow voor campagnerekenmerken** af en toe in de toestand Niet geslaagd liet (NEO-10820).
+* Oplossing voor een fout die ervoor zorgde dat bestanden van de **webdownload**-workflowactiviteit niet konden worden gedownload. (NEO-11105)
+* Oplossing voor een fout waarbij de **Bezig met verzenden van indicatoren en campagnerekenmerken**-workflow soms in de status Mislukt (NEO-10820).
 * Probleem verholpen waarbij de lijst met ontvangers die is gemaakt nadat de List-updateactiviteit in een workflow was uitgevoerd, werd verwijderd. (NEO-11696)
 * Probleem verholpen waarbij de campagnes een maand eerder in de Campagne-kalender onjuist werden weergegeven (op een Japans exemplaar). (NEO-11445)
 * Probleem verholpen waardoor de configuratie Analytics niet kon worden weergegeven op het tabblad Web Analytics van de leveringseigenschappen. (NEO-11619)
@@ -217,7 +217,7 @@ Deze indexveranderingen kunnen tot een toename van de tijd leiden die wordt vere
 * Probleem verholpen die optrad bij het instellen van een externe account voor een mobiel kanaal met behulp van de uitgebreide algemene SMPP-connector: als u het gebruiken van verschillende parameters voor de ontvanger specificeerde, zou de zender die parameters verkeerd gebruiken in plaats van zijn eigen parameters.
 * Probleem opgelost waarbij geplande leveringen mislukten bij het instellen van een frequentie voor de drukregel, omdat de leveringen na de eerste arbitrage voortdurend opnieuw werden berekend. (NEO-10016)
 * Probleem verholpen waarbij de IIS-webserver vastliep tijdens het recyclingproces van de toepassingspool (in de bibliotheek nlsrvmod.dll). (NEO-10862)
-* Probleem verholpen waarbij niet kon worden gezocht naar een ontvanger in het scherm **Profielen en Doel** . (NEO-8228)
+* Probleem verholpen waarbij het zoeken naar een ontvanger in het scherm **Profielen en Doel** niet kon worden voorkomen. (NEO-8228)
 * Probleem verholpen waarbij een time-outfout kon optreden bij het openen van de map Gebeurtenisgeschiedenis in het geval van een groot aantal records. (NEO-11738)
 * Probleem opgelost waarbij ontvangers van lijnbezorging onjuist werden geretourneerd als &quot;Onbereikbaar&quot;. (NEO-10833)
 * Probleem verholpen bij het uitvoeren van een workflowquery met een extra kolom op Oracle. (NEO-11615)
@@ -237,7 +237,7 @@ Deze indexveranderingen kunnen tot een toename van de tijd leiden die wordt vere
 * Probleem verholpen waarbij URL&#39;s werden gecodeerd als bijgehouden URL&#39;s in de aanvullende parameters van de levering van een Android-pushmelding. (NEO-11468)
 * Oplossing voor een scriptfout die optrad in het rapport Gebruikersactiviteiten bij het instellen van de parameters op &quot;Intervallen van één dag&quot; en &quot;Openen&quot;. (NEO-11655)
 * Probleem verholpen die optrad wanneer verbinding werd gemaakt met de server voor midsourcing of met Message Center via een geverifieerde webproxy. (NEO-11309)
-* Probleem verholpen met een Oracle-fout die optrad wanneer een nieuwe compositie voor levering werd opgeslagen nadat een element van een specifiek schema was geselecteerd **op basis van een SQL-weergave**. (NEO-11682)
+* Oplossing voor een fout van Oracle die optrad wanneer een nieuwe leveringssamenstelling na het selecteren van een element van een specifiek schema **op basis van een SQL mening** werd bewaard. (NEO-11682)
 * Probleem verholpen waarbij bestanden met foutieve positieven werden gegenereerd die een ZIP-bestand met een CSV-bestand verwerkten via een activiteit voor het laden van bestanden met de optie Decompressie.
 * xtkjoblog wordt nu gezuiverd door de opschoonfunctie.
 
