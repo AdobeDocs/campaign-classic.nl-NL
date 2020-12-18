@@ -62,6 +62,6 @@ De algemene communicatie tussen servers en processen wordt uitgevoerd volgens he
 * Toegang tot een databaseserver op de toepassingsserver.
 * Firewall geconfigureerd voor het openen van HTTP- (80) of HTTPS-poorten (443) naar de server voor midsourcing.
 
-### Installeren en configureren (implementatie van midsourcing) {#installing-and-configuring--mid-sourcing-deployment-}
+### Installeren en configureren (mid-sourcingimplementatie) {#installing-and-configuring--mid-sourcing-deployment-}
 
-Raadpleeg de [server](../../installation/using/mid-sourcing-server.md)voor midsourcing.
+Zie [Midden-sourcingserver](../../installation/using/mid-sourcing-server.md).
