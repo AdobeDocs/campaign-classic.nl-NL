@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Systeemfilters {#system-filters}
 
-U kunt de schematoegang tot specifieke gebruikers, afhankelijk van hun toestemmingen filtreren. Met systeemfilters kunt u de lees- en schrijfmachtigingen beheren van entiteiten die in schema&#39;s worden beschreven, met behulp van **parameters readAccess** en **writeAccess** .
+U kunt de schematoegang tot specifieke gebruikers, afhankelijk van hun toestemmingen filtreren. Met systeemfilters kunt u de lees- en schrijfmachtigingen beheren van entiteiten die in schema&#39;s worden beschreven, met behulp van de parameters **readAccess** en **writeAccess**.
 
 >[!NOTE]
 >
@@ -27,11 +27,11 @@ U kunt de schematoegang tot specifieke gebruikers, afhankelijk van hun toestemmi
 
 * **readAccess**: biedt alleen-lezen toegang tot schemagegevens.
 
-   **Waarschuwing** - Alle gekoppelde tabellen moeten met dezelfde beperking zijn ingesteld. Deze configuratie kan van invloed zijn op prestaties.
+   **Waarschuwing** : alle gekoppelde tabellen moeten met dezelfde beperking zijn ingesteld. Deze configuratie kan van invloed zijn op prestaties.
 
 * **writeAccess**: biedt schrijftoegang tot schemagegevens.
 
-Deze filters zijn ingegaan op het belangrijkste **elementniveau** van de schema&#39;s en, zoals aangetoond in de volgende voorbeelden, kunnen worden gevormd om toegang te beperken.
+Deze filters zijn ingegaan op het belangrijkste **element** niveau van de schema&#39;s en, zoals aangetoond in de volgende voorbeelden, kunnen worden gevormd om toegang te beperken.
 
 * SCHRIJFmachtigingen beperken
 
@@ -45,7 +45,7 @@ Deze filters zijn ingegaan op het belangrijkste **elementniveau** van de schema&
 
 * Lezen- en schrijfmachtigingen beperken:
 
-   Hier, wordt de filter gebruikt om zowel LEZEN als SCHRIJVEN toestemmingen op het schema voor alle exploitanten toe te staan. Alleen de **interne** account, vertegenwoordigd door de expressie &quot;$(loginId)!=0&quot;, heeft deze toestemmingen.
+   Hier, wordt de filter gebruikt om zowel LEZEN als SCHRIJVEN toestemmingen op het schema voor alle exploitanten toe te staan. Alleen de **internal**-account, vertegenwoordigd door de expressie &quot;$(loginId)!=0&quot;, heeft deze toestemmingen.
 
    ```
    <sysFilter name="readAccess"> 
@@ -57,7 +57,7 @@ Deze filters zijn ingegaan op het belangrijkste **elementniveau** van de schema&
    </sysFilter>
    ```
 
-   Mogelijke **expr** -kenmerkwaarden die worden gebruikt om de voorwaarde te definiëren, zijn TRUE of FALSE.
+   Mogelijke **expr** kenmerkwaarden die worden gebruikt om de voorwaarde te definiëren, zijn TRUE of FALSE.
 
 >[!NOTE]
 >
@@ -100,9 +100,9 @@ Door gebrek, zijn de ingebouwde schema&#39;s slechts toegankelijk met SCHRIJVEN 
 
 >[!IMPORTANT]
 >
->De LEZEN en SCHRIJVEN toestemmingen voor het schema **xtk:sessionInfo** zijn slechts toegankelijk door de interne rekening van een instantie van Adobe Campaign.
+>De LEZEN en SCHRIJVEN toestemmingen voor het **xtk:sessionInfo** schema zijn slechts toegankelijk door de interne rekening van een instantie van Adobe Campaign.
 
-## Systeemfilters van ingebouwde schema&#39;s wijzigen {#modifying-system-filters-of-built-in-schemas}
+## Systeemfilters van ingebouwde schema&#39;s {#modifying-system-filters-of-built-in-schemas} wijzigen
 
 U kunt nog steeds de systeemfilters wijzigen van de out-of-the-box schema&#39;s die standaard beveiligd zijn vanwege compatibiliteitsproblemen met oudere versies.
 
