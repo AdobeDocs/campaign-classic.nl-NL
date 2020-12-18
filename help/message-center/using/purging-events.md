@@ -19,7 +19,7 @@ ht-degree: 6%
 
 U kunt de plaatsingstovenaar gebruiken om te vormen hoe lang de gegevens in het gegevensbestand moeten worden opgeslagen.
 
-Gebeurtenissen worden automatisch door de **[!UICONTROL Database cleanup]** workflow verwijderd. Dit werkschema zuiveert de gebeurtenissen die op de uitvoeringsinstanties en de gebeurtenissen worden ontvangen en worden opgeslagen die op een controleinstantie worden gearchiveerd.
+Gebeurtenissen worden automatisch gewist door de **[!UICONTROL Database cleanup]**-workflow. Dit werkschema zuiveert de gebeurtenissen die op de uitvoeringsinstanties en de gebeurtenissen worden ontvangen en worden opgeslagen die op een controleinstantie worden gearchiveerd.
 
 Gebruik de pijlen naar wens om de instellingen voor leegmaken te wijzigen.
 
@@ -31,4 +31,4 @@ Instellingen voor het opschonen van gebeurtenissen op een uitvoeringsinstantie:
 
 ![](assets/messagecenter_delete_events_002.png)
 
-Raadpleeg [deze sectie](../../production/using/database-cleanup-workflow.md)voor meer informatie over de workflow voor het opschonen van databases.
+Raadpleeg [deze sectie](../../production/using/database-cleanup-workflow.md) voor meer informatie over de workflow voor het opschonen van databases.
