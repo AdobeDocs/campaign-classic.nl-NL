@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1341'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -29,16 +29,16 @@ In Adobe Campaign is er een configuratie voor het aantal e-mails per uur dat kan
 
 Dit betekent dat een verbinding een MX-regel kan gebruiken zonder dat een e-mail is verzonden. In dit geval, zal een configuratie met IP of een domein met een lage reputatie verscheidene verbindingen moeten proberen alvorens een e-mail te verzenden. Voor elke poging, zal een berichten per uurkrediet worden gebruikt. Als gevolg hiervan zullen de prestaties van de marketingcampagne aanzienlijk worden beïnvloed.
 
-Daarom is &#39;met quota&#39;s tegemoet gekomen&#39; niet alleen een configuratieprobleem, maar kan het ook worden gekoppeld aan reputatie. Het is belangrijk om foutenmeldingen in het logboek [te analyseren](../../production/using/monitoring-processes.md#smtp-errors-per-domain)SMTP.
+Daarom is &#39;met quota&#39;s tegemoet gekomen&#39; niet alleen een configuratieprobleem, maar kan het ook worden gekoppeld aan reputatie. Het is belangrijk om foutenmeldingen in [SMTP logboek](../../production/using/monitoring-processes.md#smtp-errors-per-domain) te analyseren.
 
-For more on MX configuration, see [this section](../../installation/using/email-deliverability.md#mx-configuration).
+Zie [deze sectie](../../installation/using/email-deliverability.md#mx-configuration) voor meer informatie over MX-configuratie.
 
 ## Hetzelfde foutbericht voor een ISP {#same-error-for-an-isp}
 
 **Waarom krijg ik altijd het zelfde foutenbericht voor bepaalde ISP?**
 
 Als u altijd het zelfde foutenbericht voor ISP krijgt, kan uw e-mail of IP als gebrek door ISP worden ontdekt. Voer de volgende aanbevelingen uit:
-* Controleer of u een groot percentage mislukkingen ontvangt die zijn gekoppeld aan onbestaande e-mailadressen (**Onbekende** fouten van gebruiker).
+* Controleer of u een groot percentage fouten ontvangt die zijn gekoppeld aan onbestaande e-mailadressen (**Onbekende gebruiker** fouten).
 * Werk uw abonnementsformulieren bij om fouten in de ingevoerde domeinnamen op te sporen (bijvoorbeeld: gmaul.com of yaho.com).
 * Als u fouten opmerkt die verklaren dat uw berichten als spam worden verklaard, of dat uw berichten constant worden geblokkeerd, probeer exclusief de ontvangers die niet in één van uw berichten in de laatste 12 maanden van het doel hebben geopend of geklikt.
 
@@ -57,14 +57,14 @@ Neem contact op met de services voor commercieel gebruik of levering, Adobe Camp
 
    Hier volgen tien mogelijke redenen: niet bepaald, gebruiker onbekend, ongeldig domein, op lijst van afgewezen personen, geweigerd, fout genegeerd, onbereikbaar, rekening gehandicapt, brievenbus volledig, niet verbonden.
 
-   For more on this, see [Understanding quarantine management](../../delivery/using/understanding-quarantine-management.md).
+   Voor meer op dit, zie [Het begrip quarantainebeheer](../../delivery/using/understanding-quarantine-management.md).
 
 ## Verwijderen uit lijst van afgewezen personen {#remove-from-denylist}
 
-* **Een van mijn ontvangers is per ongeluk aan de lijst van afgewezen personen toegevoegd. Hoe verwijder ik ze uit de denyist zodat ik ze opnieuw berichten kan sturen?**
+* **Een van mijn ontvangers is per ongeluk aan de lijst van afgewezen personen toegevoegd. Hoe verwijder ik hen uit ontkenner zodat ik kan beginnen hen berichten opnieuw te verzenden?**
 
    * Ga naar **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
-   * Stel in de details van de corresponderende record de waarde van het **[!UICONTROL Status]** veld in op **[!UICONTROL Valid]**.
+   * Stel in de details van de corresponderende record de waarde van het veld **[!UICONTROL Status]** in op **[!UICONTROL Valid]**.
    * Sla de record op.
 
 * **Hoe kan ik te weten komen of één van mijn IPs op een lijst van afgewezen personen is? Hoe verwijder ik mijn IP(s) uit een lijst van afgewezen personen?**
@@ -85,7 +85,7 @@ Neem contact op met de services voor commercieel gebruik of levering, Adobe Camp
 
 Hieronder vindt u een aantal tips en trucs die u kunnen helpen om problemen met betrekking tot de prestaties op te sporen en aan te pakken.
 
-### Identificeer een leveringsprobleem {#identify-deliverability-issue}
+### Identificeer een probleem van de leverbaarheid {#identify-deliverability-issue}
 
 De volgende elementen kunnen uw aandacht vestigen:
 
@@ -93,7 +93,7 @@ De volgende elementen kunnen uw aandacht vestigen:
 * Abonnementsactiviteiten: openen, klikken en/of transacties zijn lager dan normaal.
 * Zaadaccounts geven gefilterde of niet-geleverde mails weer.
 
-### Mogelijke hypothetische oorzaken {#potential-causes}
+### Mogelijke oorzaken voor hypothetisch formaat{#potential-causes}
 
 Stel uzelf de volgende vragen om de mogelijke oorzaken van het probleem van de leverbaarheid te achterhalen:
 
@@ -106,17 +106,17 @@ Stel uzelf de volgende vragen om de mogelijke oorzaken van het probleem van de l
 * Wat is het &#39;veilige&#39; segment in mijn bestand wat betreft recentie?
 * Beschikt ik over strategieën voor reactivering en herbevestiging voor segmenten die niet als veilig worden gedefinieerd?
 
-### Het probleem verhelpen {#address-issue}
+### Het probleem {#address-issue} aanpakken
 
 **Klachten**
 
-Klachten worden gedefinieerd door abonnees die e-mail **rapporteren als spam** door op de bijbehorende knop te drukken vanuit hun inbox.
+Klachten worden gedefinieerd door abonnees die **e-mail rapporteren als spam** door de bijbehorende knop vanuit hun Postvak IN te drukken.
 
 Als uw bezorgingsprobleem is veroorzaakt door klachten:
 * U moet proberen te bepalen waarom de ontvangers klagen.
 * Je kunt ook overwegen om je afmeldingskoppeling naar de bovenkant van je e-mail te verplaatsen. Dit zal abonnees aanmoedigen om zich af te melden in plaats van met de spamknoop te klagen.
 
-Afzenders kunnen een schat aan informatie uit hun [feedback loop](../../delivery/using/technical-recommendations.md#feedback-loop) klachten genereren:
+Afzenders kunnen een schat aan informatie uit hun [terugkoppelingslus](../../delivery/using/technical-recommendations.md#feedback-loop) klachten genereren:
 * Het is belangrijk om de gegevens op te nemen en te zoeken naar patronen in zaken als opt-in-bron, hoe lang het adres is ingetekend, of zelfs bepaalde gedrags-demografie.
 * Klachten kunnen vaak een riskante gegevensbron of segment in het bestand identificeren. Risky wordt gedefinieerd als het meest waarschijnlijk om te klagen, wat reputatie, en beurtelings, inbox tarieven kan beschadigen.
 
@@ -127,19 +127,19 @@ De klachten zijn ook afkomstig van abonnees die gewoon geen e-mail meer willen o
 
 **Geldigheid van gegevens**
 
-**De harde stuitingen** komen voor wanneer u naar een **niet te leveren adres** bij ISP verzendt. Een adres kan om vele redenen zoals:
+**De harde** grenzen komen voor wanneer u naar een  **niet te leveren** adres ISP verzendt. Een adres kan om vele redenen zoals:
 * Onjuist gespeld adres. Dit kan worden opgelost met een realtime service voor gegevensvalidatie, of door een bevestigde aanmeldingsprocedure te vereisen voordat marketinge-mails naar dat adres worden verzonden.
 * Onjuiste lijst of gegevensbron. Als het uit een nieuwe bron komt, herzie hoe de adressen werden verzameld en zorg ervoor dat er toestemming was.
 * Verzenden naar een adres dat op een bepaald moment actief was, maar na een periode van inactiviteit is gesloten of beëindigd.
 
 **Betrokkenheid**
 
-Naast klachten en gegevensgeldigheid concentreren ISPs zich meer dan ooit op **positieve betrokkenheid** om leveringsbesluiten te nemen. Ze kijken of je abonnees je e-mails openen of ze verwijderen zonder ze te lezen. Omdat deze gegevens niet worden gedeeld met afzenders, moeten we de beschikbare informatie gebruiken en de taken voor het openen, klikken en uitvoeren als betrokkenheid vertalen.
+Naast klachten en gegevensgeldigheid concentreren ISPs zich meer dan ooit op **positieve overeenkomst** om leveringsbesluiten te nemen. Ze kijken of je abonnees je e-mails openen of ze verwijderen zonder ze te lezen. Omdat deze gegevens niet worden gedeeld met afzenders, moeten we de beschikbare informatie gebruiken en de taken voor het openen, klikken en uitvoeren als betrokkenheid vertalen.
 
-Als deel van aan de gang zijnde reputatie, is het belangrijk om te begrijpen hoe betrokken abonnees op uw lijst zijn en een **recency risicopiërarchie** voor de abonnees op elk dossier te ontwikkelen. Recentie wordt gedefinieerd als laatste open-/klikdatum, -datum of -datum. Dit tijdkader kan verticaal verschillen. Dit doet u als volgt:
+Als deel van aan de gang zijnde reputatie het onderhoud, is het belangrijk om te begrijpen hoe betrokken abonnees op uw lijst zijn en een **recency risicopiërarchie** voor de abonnees op elk dossier ontwikkelen. Recentie wordt gedefinieerd als laatste open-/klikdatum, -datum of -datum. Dit tijdkader kan verticaal verschillen. Dit doet u als volgt:
 
 1. Bepaal actieve (&quot;veilige&quot;) segmenten voor elke verticaal. Dit zijn typisch abonnees die binnen de laatste 3-6 maanden actief zijn geweest.
 1. Verminder de frequentie tot inactieven.
-1. Maak een [herbetrokkenheidsreeks](../../delivery/using/re-engagement-best-practices.md) voor inactieven met matige risico&#39;s. Dit is doorgaans 6 tot 9 maanden zonder betrokkenheid.
+1. Maak een [re-engagement](../../delivery/using/re-engagement-best-practices.md) reeks voor matige risico-inactieven. Dit is doorgaans 6 tot 9 maanden zonder betrokkenheid.
 1. Ontwikkelen van een herbevestigingscampagne voor inactieven met een hoger risico. Dit zijn doorgaans abonnees die in 9 tot 12 maanden geen e-mailberichten hebben ontvangen.
 1. Stel ten slotte een keuzeregel in en verwijder abonnees die uw e-mails niet hebben geopend in &#39;x&#39; maanden. We raden doorgaans 12+ maanden aan, maar dit kan verschillen afhankelijk van de verkoop- en aankoopcyclus.
