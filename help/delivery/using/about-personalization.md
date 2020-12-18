@@ -17,13 +17,13 @@ ht-degree: 49%
 
 # Personalisatie{#about-personalization}
 
-Berichten die door Adobe Campaign worden geleverd, kunnen op verschillende manieren worden gepersonaliseerd, met betrekking tot de content of de weergave van berichten. Deze methoden kunnen worden gecombineerd aan de hand van criteria die met name uit de profielen van de ontvangers zijn afgeleid. Voor e-mailleveringen kunt u de elementen en voorwaarden voor de personalisatie van een levering direct in JavaScript vanaf het **[!UICONTROL Source]** tabblad van het bericht definiëren. In het algemeen kunt u met Adobe Campaign:
+Berichten die door Adobe Campaign worden geleverd, kunnen op verschillende manieren worden gepersonaliseerd, met betrekking tot de content of de weergave van berichten. Deze methoden kunnen worden gecombineerd aan de hand van criteria die met name uit de profielen van de ontvangers zijn afgeleid. Voor e-mailleveringen kunt u de elementen en voorwaarden voor de personalisatie van een levering rechtstreeks in JavaScript definiëren via het tabblad **[!UICONTROL Source]** van het bericht. In het algemeen kunt u met Adobe Campaign:
 
 * Het berichtformaat aanpassen. Zie [Berichtinhoud](../../delivery/using/defining-the-email-content.md#message-content).
-* Dynamische personalisatievelden invoegen. Zie [Aanpassingsvelden](../../delivery/using/personalization-fields.md).
-* Vooraf gedefinieerde personalisatieblokken invoegen. Zie [Gepersonaliseerde blokken](../../delivery/using/personalization-blocks.md).
-* Voorwaardelijke content maken. Raadpleeg de sectie [Voorwaardelijke inhoud](../../delivery/using/conditional-content.md) .
+* Dynamische personalisatievelden invoegen. Zie [Velden voor personalisatie](../../delivery/using/personalization-fields.md).
+* Vooraf gedefinieerde personalisatieblokken invoegen. Zie [Persoonlijke blokken](../../delivery/using/personalization-blocks.md).
+* Voorwaardelijke content maken. Raadpleeg de sectie [Voorwaardelijke inhoud](../../delivery/using/conditional-content.md).
 
 >[!CAUTION]
 >
->De volgende variabelen zijn interne variabelen die voor verpersoonlijking kunnen worden gebruikt maar niet moeten worden gewijzigd: **levering**, **bericht**, **gegevensbron**, **targetData**, **provider**, ************ coupon, couponValue, proposition.
+>De volgende variabelen zijn interne variabelen die voor verpersoonlijking kunnen worden gebruikt maar niet moeten worden gewijzigd: **levering**, **message**, **dataSource**, **targetData**, **provider**, **coupon**, **couponValue&lt;a1 3/>,** proposition **.**
