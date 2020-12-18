@@ -17,7 +17,7 @@ ht-degree: 7%
 
 # Een webformuliersjabloon gebruiken{#using-a-web-form-template}
 
-Formuliersjablonen zijn herbruikbare configuraties waarmee u nieuwe formulieren kunt maken. Door gebrek, worden de vormmalplaatjes opgeslagen met de toepassingsmalplaatjes van het Web in de **[!UICONTROL Resources > Templates > Web application templates]** knoop.
+Formuliersjablonen zijn herbruikbare configuraties waarmee u nieuwe formulieren kunt maken. Door gebrek, worden de vormmalplaatjes opgeslagen met de toepassingsmalplaatjes van het Web in **[!UICONTROL Resources > Templates > Web application templates]** knoop.
 
 Hier kunt u nieuwe sjablonen maken of een bestaand formulier converteren naar een sjabloon.
 
@@ -31,14 +31,14 @@ Deze actie opent het venster voor het creëren van de toepassingen van het Web. 
 
 ## Een nieuwe formuliersjabloon maken {#create-a-new-form-template}
 
-Als u een webformuliersjabloon wilt maken, klikt u met de rechtermuisknop op de lijst met webtoepassingssjablonen en selecteert u **[!UICONTROL New]**. U kunt ook de **[!UICONTROL New]** knop boven de lijst met sjablonen gebruiken.
+Als u een webformuliersjabloon wilt maken, klikt u met de rechtermuisknop op de lijst met webtoepassingssjablonen en selecteert u **[!UICONTROL New]**. U kunt ook de knop **[!UICONTROL New]** boven de lijst met sjablonen gebruiken.
 
 ![](assets/s_ncs_admin_survey_createtemplate.png)
 
-Voer de naam van de sjabloon in. Selecteer in het **[!UICONTROL Instance folder]** veld de map waarin de webformulieren zijn opgeslagen die op deze sjabloon zijn gebaseerd. In het **[!UICONTROL Nature]** veld kunt u beschrijvende informatie toevoegen om uw verschillende webtoepassingssjablonen te sorteren en/of filteren.
+Voer de naam van de sjabloon in. Selecteer in het veld **[!UICONTROL Instance folder]** de map waarin de webformulieren zijn opgeslagen die op deze sjabloon zijn gebaseerd. Met het veld **[!UICONTROL Nature]** kunt u beschrijvende informatie toevoegen om uw verschillende webtoepassingssjablonen te sorteren en/of filteren.
 
 ![](assets/s_ncs_admin_survey_createtemplate_details.png)
 
-Klik op de **[!UICONTROL Save]** knop om de sjabloon te maken, maak vervolgens de inhoud van deze sjabloon en definieer de parameters ervan.
+Klik **[!UICONTROL Save]** knoop om het malplaatje tot stand te brengen, dan de inhoud van dit malplaatje te bouwen en zijn parameters te bepalen.
 
 U kunt deze sjabloon nu selecteren wanneer u een nieuw formulier maakt.
