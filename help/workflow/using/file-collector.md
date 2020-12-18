@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Bestandsophaler{#file-collector}
 
-De **Bestandsverzamelaar** controleert de aankomst van een of meer bestanden in een map en activeert de overgang ervan voor elk ontvangen bestand. Voor elke gebeurtenis bevat een **[!UICONTROL filename]** variabele de volledige naam van het ontvangen bestand. De verzamelde bestanden worden naar een andere map verplaatst voor archiveringsdoeleinden en om ervoor te zorgen dat ze maar één keer worden geteld.
+De **Bestandsverzamelaar** bewaakt de aankomst van een of meer bestanden in een map en activeert de overgang ervan voor elk ontvangen bestand. Voor elke gebeurtenis, bevat een **[!UICONTROL filename]** variabele de volledige naam van het ontvangen dossier. De verzamelde bestanden worden naar een andere map verplaatst voor archiveringsdoeleinden en om ervoor te zorgen dat ze maar één keer worden geteld.
 
 Standaard is de bestandscollector een permanente taak waarmee de aanwezigheid van bestanden wordt getest op de tijdstippen die in de planning zijn opgegeven.
 
@@ -25,7 +25,7 @@ De bestanden moeten zich op de server bevinden waarop de wfserver-module die voo
 
 ## Properties {#properties}
 
-Op het eerste tabblad van de **[!UICONTROL File collector]** activiteit kunt u de bronmap selecteren en, indien nodig, de verzamelde bestanden filteren. De andere tabbladen worden beschreven in [Binnenkomende e-mails](../../workflow/using/inbound-emails.md) (**[!UICONTROL Schedule]** en **[!UICONTROL Expiry]** tabbladen).
+Op het eerste tabblad van de activiteit **[!UICONTROL File collector]** kunt u de bronmap selecteren en, indien nodig, de verzamelde bestanden filteren. De andere tabbladen worden beschreven in [Binnenkomende e-mails](../../workflow/using/inbound-emails.md) (**[!UICONTROL Schedule]** en **[!UICONTROL Expiry]** tabs).
 
 ![](assets/file_collect_edit.png)
 
@@ -43,11 +43,11 @@ Op het eerste tabblad van de **[!UICONTROL File collector]** activiteit kunt u d
 
       Als deze optie is ingeschakeld, wordt de taak beëindigd na ontvangst van het eerste bestand. Als de map meerdere bestanden bevat die overeenkomen met het filter, wordt er slechts één bestand in aanmerking genomen. Deze optie garandeert dat slechts één gebeurtenis wordt verzonden. Het in aanmerking genomen bestand is het eerste in de lijst in alfabetische volgorde.
 
-      Als er voor een niet-geplande activiteit geen bestand wordt gevonden dat overeenkomt met het filter in de opgegeven map en als de **[!UICONTROL Process file nonexistence]** optie niet is ingeschakeld, wordt een fout gegenereerd.
+      Als er voor een niet-geplande activiteit geen bestand wordt gevonden dat overeenkomt met het filter in de opgegeven map en als de optie **[!UICONTROL Process file nonexistence]** niet is ingeschakeld, wordt een fout gegenereerd.
 
    * **[!UICONTROL Execution schedule]**
 
-      Hiermee bepaalt u de frequentie van de controle op de aanwezigheid van het bestand via de parameters van het **[!UICONTROL Schedule]** tabblad.
+      Bepaalt de frequentie van de controle van de dossieraanwezigheid via de parameters van **[!UICONTROL Schedule]** tabel.
 
 1. **Foutafhandeling**
 
@@ -69,9 +69,9 @@ Op het eerste tabblad van de **[!UICONTROL File collector]** activiteit kunt u d
 
 1. **Historiatie**
 
-   Raadpleeg de **[!UICONTROL File historization]** volgende stap: [Webdownload](../../workflow/using/web-download.md).
+   Raadpleeg de onderstaande stap **[!UICONTROL File historization]**: [Webdownload](../../workflow/using/web-download.md).
 
-De volgorde van de bestandsverwerking kan niet worden bepaald. Als u een set bestanden opeenvolgend wilt verwerken, gebruikt u de **[!UICONTROL Stop as soon as a file has been processed]** optie en maakt u een lus. In dit geval worden de bestanden in alfabetische volgorde verwerkt. Met de **[!UICONTROL Process file nonexistence]** optie kunt u de herhaling voltooien.
+De volgorde van de bestandsverwerking kan niet worden bepaald. Als u een set bestanden opeenvolgend wilt verwerken, gebruikt u de optie **[!UICONTROL Stop as soon as a file has been processed]** en maakt u een lus. In dit geval worden de bestanden in alfabetische volgorde verwerkt. Met de optie **[!UICONTROL Process file nonexistence]** kunt u de herhaling voltooien.
 
 ![](assets/file_collect_loop.png)
 
