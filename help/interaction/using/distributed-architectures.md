@@ -56,13 +56,13 @@ Er wordt een workflow gemaakt voor elke omgeving en externe account voor proposi
 
 ## Pakketconfiguratie {#packages-configuration}
 
-Schema-extensies die rechtstreeks zijn gekoppeld aan **interactie** (aanbiedingen, voorstellen, ontvangers, enz.) moeten worden ingezet op de uitvoeringsinstanties.
+Eventuele schema-extensies die rechtstreeks zijn gekoppeld aan **Interactie** (aanbiedingen, voorstellen, ontvangers, enz.) moeten worden ingezet op de uitvoeringsinstanties.
 
 Het interactiepakket moet in alle gevallen (besturing en uitvoering) zijn geïnstalleerd. Er zijn twee extra pakketten beschikbaar: één pakket dat op de controleinstanties moet worden geïnstalleerd, en een ander dat op elke uitvoeringsinstantie moet worden geïnstalleerd.
 
 >[!NOTE]
 >
->Wanneer u het pakket installeert, worden de **lange** tekstvelden van de tabel **nms:proposition** , zoals de propositie-id, **int64** -tekstvelden. Dit type gegevens wordt beschreven in [deze sectie](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+>Bij de installatie van het pakket worden de **long**-tekstvelden van de tabel **nms:proposition**, zoals de propositie-id, gewijzigd in **int64**-tekstvelden. Dit type gegevens wordt beschreven in [deze sectie](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
 De duur van het gegevensbehoud moet op elke instantie (via het **[!UICONTROL Data purge]** venster in de plaatsingstovenaar) worden gevormd. Bij uitvoering moet deze periode overeenstemmen met de historische diepte die nodig is voor de berekening van de typologische regels (verschuivingstermijn) en de subsidiabiliteitsregels.
 
@@ -76,7 +76,7 @@ Op besturingsinstanties:
    * Selecteer **[!UICONTROL Execution instance]**.
    * Schakel de optie **[!UICONTROL Enabled]** in.
    * Voltooi de verbindingsparameters voor de uitvoeringsinstantie.
-   * Elke uitvoeringsinstantie moet aan een identiteitskaart worden verbonden. Deze id wordt toegewezen wanneer u op de **[!UICONTROL Initialize connection]** knop klikt.
+   * Elke uitvoeringsinstantie moet aan een identiteitskaart worden verbonden. Deze id wordt toegewezen wanneer u op de **[!UICONTROL Initialize connection]** knoop klikt.
    * Controleer het gebruikte type toepassing: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** of beide.
    * Voer de gebruikte FDA-account in. Een exploitant moet op de uitvoeringsinstanties worden gecreeerd en moet de volgende lees- en schrijfrechten op het gegevensbestand van de betrokken instantie hebben:
 
@@ -166,7 +166,7 @@ ALTER TABLE nmspropositionrcp
 
 ### Oracle {#oracle}
 
-Als u de grootte van een **getaltype** bewerkt, worden de waarden niet gewijzigd of wordt de index opnieuw geschreven. Het is dus onmiddellijk.
+Als u de grootte van een type **Number** bewerkt, worden de waarden niet gewijzigd of wordt de index opnieuw geschreven. Het is dus onmiddellijk.
 
 De uit te voeren query is als volgt:
 
