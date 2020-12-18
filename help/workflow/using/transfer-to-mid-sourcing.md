@@ -17,7 +17,7 @@ ht-degree: 7%
 
 # Overdracht naar midsourcing{#transfer-to-mid-sourcing}
 
-De hieronder beschreven workflows worden standaard geïnstalleerd met de module **Overstappen naar middelste bron** . For more on this module, refer to this [section](../../installation/using/mid-sourcing-deployment.md).
+De hieronder beschreven workflows worden geïnstalleerd met de module **Overbrengen naar middelbron** standaard. Voor meer op deze module, verwijs naar dit [sectie](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 
@@ -34,7 +34,7 @@ De hieronder beschreven workflows worden standaard geïnstalleerd met de module 
   <tr> 
    <td> <span class="uicontrol">Midden-sourcing (leveringslogboeken)</span> <br /> </td> 
    <td> <span class="uicontrol">defaultMidSourcingLog</span> <br /> </td> 
-   <td> Deze workflow verzamelt leveringslogboeken op de server voor midsourcing. Deze wordt standaard elke uur geactiveerd.<br /> </td> 
+   <td> Deze workflow verzamelt leveringslogboeken op de server voor midsourcing. Het wordt teweeggebracht elk uur door gebrek.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
