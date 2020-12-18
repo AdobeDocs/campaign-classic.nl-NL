@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Adobe Campaign-werkruimte{#adobe-campaign-workspace}
 
-## Adobe Campaign-interface verkennen {#about-adobe-campaign-interface}
+## Adobe Campaign-interface {#about-adobe-campaign-interface} verkennen
 
 Zodra u met het gegevensbestand wordt verbonden, zult u tot de homepage van Adobe Campaign toegang hebben, die een dashboard is: het bestaat uit verbindingen en kortere weg die u tot mogelijkheden, afhankelijk van uw installatie en algemene platformconfiguraties kunnen toegang hebben.
 
@@ -33,7 +33,7 @@ Vanuit het centrale gedeelte van de homepage kunt u koppelingen gebruiken om toe
 >
 >Voordat u een module of invoegtoepassing kunt installeren, moet u de licentieovereenkomst controleren of contact opnemen met de Adobe-accountmanager.
 
-### Console en webtoegang {#console-and-web-access}
+### Console- en webtoegang {#console-and-web-access}
 
 Het Adobe Campaign-platform is toegankelijk via een console of via een internetbrowser.
 
@@ -63,7 +63,7 @@ U kunt kiezen uit vijf verschillende talen:
 
 De taal die u voor uw Adobe Campaign Classic-exemplaar hebt gekozen, kan van invloed zijn op de datum- en tijdnotatie. Raadpleeg deze [sectie](../../platform/using/adobe-campaign-workspace.md#date-and-time) voor meer informatie.
 
-For more information on how to create an instance, refer to this [page](../../installation/using/creating-an-instance-and-logging-on.md).
+Raadpleeg deze [pagina](../../installation/using/creating-an-instance-and-logging-on.md) voor meer informatie over het maken van een instantie.
 
 >[!CAUTION]
 >
@@ -79,15 +79,15 @@ De verschillende functies van het platform zijn onderverdeeld in kernmogelijkhed
 
 De lijst met kernmogelijkheden waartoe u toegang hebt, is afhankelijk van de pakketten en invoegtoepassingen die u hebt geïnstalleerd en van uw toegangsrechten.
 
-Elk vermogen omvat een reeks functionaliteiten die op taak betrekking hebbende behoeften en gebruikscontext worden gebaseerd. Met de **[!UICONTROL Profiles and targets]** koppeling wordt u bijvoorbeeld naar de lijsten met ontvangers, abonnementsservices, bestaande workflows voor activering en de sneltoetsen voor het maken van deze elementen.
+Elk vermogen omvat een reeks functionaliteiten die op taak betrekking hebbende behoeften en gebruikscontext worden gebaseerd. Met de koppeling **[!UICONTROL Profiles and targets]** krijgt u bijvoorbeeld toegang tot de lijsten met ontvangers, abonnementsservices, bestaande workflows voor activering en de sneltoetsen voor het maken van deze elementen.
 
 De lijsten zijn beschikbaar via de **[!UICONTROL Lists]** verbinding in de linkersectie van de **[!UICONTROL Profiles and Targets]** interface.
 
 ![](assets/recipient_list_overview.png)
 
-### Tabs gebruiken {#using-tabs}
+### Tabs {#using-tabs} gebruiken
 
-* Wanneer u op een kernfunctie of een koppeling klikt, wordt de huidige pagina vervangen door de relevante pagina. Klik op de **[!UICONTROL Back]** knop op de werkbalk om terug te gaan naar de vorige pagina. Klik op de **[!UICONTROL Home]** knop om terug te keren naar de startpagina.
+* Wanneer u op een kernfunctie of een koppeling klikt, wordt de huidige pagina vervangen door de relevante pagina. Als u wilt teruggaan naar de vorige pagina, klikt u op de knop **[!UICONTROL Back]** op de werkbalk. Als u wilt terugkeren naar de startpagina, klikt u op de knop **[!UICONTROL Home]**.
 
    ![](assets/d_ncs_user_interface_back_home_buttons.png)
 
@@ -95,23 +95,23 @@ De lijsten zijn beschikbaar via de **[!UICONTROL Lists]** verbinding in de linke
 
    ![](assets/d_ncs_user_interface_tabs.png)
 
-### Een element maken {#creating-an-element}
+### Element {#creating-an-element} maken
 
-In elke sectie met kernmogelijkheden kunt u bladeren door de beschikbare elementen. Hiervoor gebruikt u de sneltoetsen in de **[!UICONTROL Browsing]** sectie. Met de **[!UICONTROL Other choices]** koppeling hebt u toegang tot alle andere pagina&#39;s, ongeacht de omgeving.
+In elke sectie met kernmogelijkheden kunt u bladeren door de beschikbare elementen. Hiervoor gebruikt u de sneltoetsen in de sectie **[!UICONTROL Browsing]**. Met de koppeling **[!UICONTROL Other choices]** hebt u toegang tot alle andere pagina&#39;s, ongeacht de omgeving.
 
-U kunt een nieuw element maken (levering, webtoepassing, workflow, enz.) met de sneltoetsen in de **[!UICONTROL Create]** sectie links van het scherm. Gebruik de **[!UICONTROL Create]** knop boven de lijst om nieuwe elementen aan de lijst toe te voegen.
+U kunt een nieuw element maken (levering, webtoepassing, workflow, enz.) met de sneltoetsen in de sectie **[!UICONTROL Create]** links van het scherm. Gebruik de knop **[!UICONTROL Create]** boven de lijst om nieuwe elementen aan de lijst toe te voegen.
 
-Gebruik bijvoorbeeld op de leveringspagina de **[!UICONTROL Create]** knop om een nieuwe levering te maken.
+Gebruik bijvoorbeeld op de leveringspagina de knop **[!UICONTROL Create]** om een nieuwe levering te maken.
 
 ![](assets/d_ncs_user_interface_tab_add_del.png)
 
-## Adobe Campaign Explorer gebruiken {#using-adobe-campaign-explorer}
+## Adobe Campaign-verkenner {#using-adobe-campaign-explorer} gebruiken
 
-### About Adobe Campaign explorer {#about-adobe-campaign-explorer}
+### Informatie over Adobe Campaign-verkenner {#about-adobe-campaign-explorer}
 
 De Adobe Campaign-verkenner is toegankelijk via het werkbalkpictogram. Hiermee hebt u toegang tot de Adobe Campaign, alle Adobe Campaign-mogelijkheden, configuratieschermen en een gedetailleerdere weergave van enkele platformelementen.
 
-De **[!UICONTROL Explorer]** werkruimte bestaat uit drie zones:
+De werkruimte **[!UICONTROL Explorer]** is verdeeld in drie zones:
 
 ![](assets/s_ncs_user_navigation.png)
 
@@ -129,33 +129,33 @@ Voor optimale navigatie en bruikbaarheid raadt Adobe u aan een minimale schermre
 >
 >Resoluties van minder dan 1600 x 900 pixels worden mogelijk niet ondersteund door Adobe Campaign.
 
-Als bepaalde delen van de **[!UICONTROL Explorer]** zone in de **[!UICONTROL Details]** werkruimte zijn afgekapt, vouwt u deze uit met de pijl boven de zone of klikt u op de **[!UICONTROL Enlarge]** knop.
+Als in de **[!UICONTROL Explorer]** werkruimte sommige delen van de **[!UICONTROL Details]** streek lijken te zijn afgekapt, breidt u deze uit met de pijl boven de zone of klikt u op de **[!UICONTROL Enlarge]** knop.
 
 ![](assets/s_ncs_user_resolution.png)
 
 ### Bladeren door lijsten {#browsing-lists}
 
-Als u door een lijst wilt bladeren, kunt u **de schuifbalken** (horizontaal en verticaal) gebruiken om er doorheen te schuiven zonder de recordselectie, **het muiswiel** of **de pijltoetsen** te wijzigen.
+Als u door een lijst wilt bladeren, kunt u **de schuifbalken** (horizontaal en verticaal) gebruiken om er doorheen te schuiven zonder de recordselectie te wijzigen, **het muiswiel** of **de pijltoetsen**.
 
 >[!NOTE]
 >
->De configuratie en de verpersoonlijking van lijstinhoud worden voorgesteld in het [Vormen lijsten](#configuring-lists).
+>De configuratie en de verpersoonlijking van lijstinhoud worden voorgesteld in [Het vormen lijsten](#configuring-lists).
 >
 >U kunt gegevens ook sorteren en filteren. Zie [Filteropties](../../platform/using/filtering-options.md).
 
-### Records tellen {#counting-records}
+### Records {#counting-records} tellen
 
 Standaard laadt Adobe Campaign de eerste 200 records van een lijst. Dit betekent dat niet noodzakelijkerwijs alle records van de tabel worden weergegeven die u bekijkt. U kunt een telling van het aantal verslagen in de lijst in werking stellen en meer verslagen laden.
 
-In het onderste rechtergedeelte van het lijstscherm, **[!UICONTROL counter]** toont een hoeveel verslagen zijn geladen en het totale aantal verslagen in het gegevensbestand (na het toepassen van om het even welke filters):
+In het onderste rechtergedeelte van het lijstscherm, toont **[!UICONTROL counter]** hoeveel verslagen zijn geladen en het totale aantal verslagen in het gegevensbestand (na het toepassen van om het even welke filters):
 
 ![](assets/s_ncs_user_nb_200_0.png)
 
 Als een &quot;**?**&quot; wordt weergegeven in plaats van het nummer aan de rechterkant, klikt u op de teller om de berekening te starten.
 
-### Meer records laden {#loading-more-records}
+### Meer records {#loading-more-records} laden
 
-Als u aanvullende records wilt laden (en dus wilt weergeven) (standaard 200 regels) klikt u **[!UICONTROL Continue loading]**.
+Als u aanvullende records (standaard 200 regels) wilt laden (en dus wilt weergeven), klikt u op **[!UICONTROL Continue loading]**.
 
 ![](assets/s_ncs_user_load_list.png)
 
@@ -167,7 +167,7 @@ Als u alle records wilt laden, klikt u met de rechtermuisknop op de lijst en sel
 
 ### Standaardaantal records wijzigen {#change-default-number-of-records}
 
-Als u het standaardaantal geladen records wilt wijzigen, klikt u **[!UICONTROL Configure list]** in de rechteronderhoek van de lijst.
+Als u het standaardaantal geladen records wilt wijzigen, klikt u op **[!UICONTROL Configure list]** rechtsonder in de lijst.
 
 ![](assets/s_ncs_user_configure_list.png)
 
@@ -175,9 +175,9 @@ Klik in het lijstconfiguratievenster op Geavanceerde parameters (linksonder) en 
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
-## Lijsten configureren {#configuring-lists}
+## Lijsten {#configuring-lists} configureren
 
-### Kolommen toevoegen {#add-columns}
+### Kolommen {#add-columns} toevoegen
 
 Er zijn twee manieren om een kolom in een lijst toe te voegen.
 
@@ -192,23 +192,23 @@ U kunt snel een kolom aan een lijst van het detail van een verslag toevoegen. Di
 
 Een andere manier om kolommen toe te voegen, bijvoorbeeld als u gegevens wilt tonen die niet op het detailscherm worden getoond, is het venster van de lijstconfiguratie te gebruiken. Dit doet u als volgt:
 
-1. Klik **[!UICONTROL Configure list]** hieronder en rechts van de lijst.
+1. Klik op **[!UICONTROL Configure list]** hieronder en rechts van de lijst.
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. Dubbelklik in het configuratievenster van de lijst op het veld dat u wilt toevoegen aan de **[!UICONTROL Available fields]** lijst om deze toe te voegen aan de lijst **[!UICONTROL Output columns]**.
+1. Dubbelklik in het lijstconfiguratievenster op het veld dat u wilt toevoegen in de lijst **[!UICONTROL Available fields]** om het veld toe te voegen aan **[!UICONTROL Output columns]**.
 
    ![](assets/s_ncs_user_configurelist.png)
 
    >[!NOTE]
    >
-   >Geavanceerde velden worden standaard niet weergegeven. Klik hieronder op Geavanceerde velden **** weergeven en rechts van de lijst met beschikbare velden om deze weer te geven.
+   >Geavanceerde velden worden standaard niet weergegeven. Klik **Geavanceerde velden weergeven** hieronder en rechts van de lijst met beschikbare velden om deze weer te geven.
    >
    >De labels worden weergegeven als een tabel en vervolgens in alfabetische volgorde.
    >
-   >Gebruik het veld **Zoeken** om een zoekopdracht uit te voeren in de beschikbare velden. Zie Een lijst [](#sorting-a-list)sorteren voor meer informatie.
+   >Gebruik het veld **Zoeken** om een zoekopdracht uit te voeren in de beschikbare velden. Zie [Een lijst sorteren](#sorting-a-list) voor meer informatie.
    >
-   >Velden worden aangegeven met specifieke pictogrammen: SQL-velden, gekoppelde tabellen, berekende velden, enzovoort. Voor elk geselecteerd veld wordt de beschrijving weergegeven onder de lijst met beschikbare velden. [Lijsten](#configuring-lists)configureren.
+   >Velden worden aangegeven met specifieke pictogrammen: SQL-velden, gekoppelde tabellen, berekende velden, enzovoort. Voor elk geselecteerd veld wordt de beschrijving weergegeven onder de lijst met beschikbare velden. [Lijsten](#configuring-lists) configureren.
    >
    >U kunt gegevens ook sorteren en filteren. Zie [Filteropties](../../platform/using/filtering-options.md).
 
@@ -217,43 +217,43 @@ Een andere manier om kolommen toe te voegen, bijvoorbeeld als u gegevens wilt to
 
    ![](assets/s_ncs_user_columns_order_down.png)
 
-1. Indien nodig, kunt u klikken **[!UICONTROL Distribution of values]** om de verdeling van waarden voor het geselecteerde veld in de huidige map weer te geven.
+1. Indien nodig, kunt u **[!UICONTROL Distribution of values]** klikken om de verdeling van waarden voor het geselecteerde gebied in de huidige omslag te bekijken.
 
    ![](assets/s_ncs_user_configurelist_values.png)
 
 1. Klik **[!UICONTROL OK]** om de configuratie te bevestigen en het resultaat te tonen.
 
-### Een nieuwe kolom maken {#create-a-new-column}
+### Nieuwe kolom maken {#create-a-new-column}
 
 U kunt nieuwe kolommen maken om extra velden in de lijst weer te geven. Dit doet u als volgt:
 
-1. Klik **[!UICONTROL Configure the list]** bij hieronder en rechts van de lijst.
-1. Klik **[!UICONTROL Add]** om een nieuw veld in de lijst weer te geven.
+1. Klik op **[!UICONTROL Configure the list]** hieronder en rechts van de lijst.
+1. Klik **[!UICONTROL Add]** om een nieuw gebied in de lijst te tonen.
 
-### Een kolom verwijderen {#remove-a-column}
+### Een kolom {#remove-a-column} verwijderen
 
-U kunt een of meer kolommen in een lijst met records maskeren aan de hand van de kolommen onder en rechts van de lijst. **[!UICONTROL Configure list]**
+U kunt een of meer kolommen in een lijst met records maskeren met behulp van **[!UICONTROL Configure list]** die zich onder en rechts van de lijst bevindt.
 
 ![](assets/s_ncs_user_configure_list.png)
 
-In het venster van de lijstconfiguratie, selecteer de kolom die van de **[!UICONTROL Output columns]** streek moet worden gemaskeerd, en klik de schrappingsknoop.
+Selecteer in het lijstconfiguratievenster de kolom die u wilt maskeren in de zone **[!UICONTROL Output columns]** en klik op de knop Verwijderen.
 
 ![](assets/s_ncs_user_removecolumn_icon.png)
 
 Herhaal deze bewerking voor elke kolom die u wilt maskeren. Klik **[!UICONTROL OK]** om de configuratie te bevestigen en het resultaat te tonen.
 
-### Kolombreedte aanpassen {#adjust-column-width}
+### Kolombreedte {#adjust-column-width} aanpassen
 
 Wanneer een lijst actief is, d.w.z. minstens één lijn wordt geselecteerd, kunt u F9 gebruiken om de breedte van de kolommen aan te passen zodat alle kolommen op het scherm kunnen worden getoond.
 
-### Submappen weergeven {#display-sub-folders-records}
+### Submappen records {#display-sub-folders-records} weergeven
 
 Lijsten kunnen worden weergegeven:
 
 * Alleen de records in de geselecteerde map,
 * Of de records in de geselecteerde map EN de bijbehorende submappen.
 
-Als u van de ene weergavemodus naar de andere wilt schakelen, klikt u op **[!UICONTROL Display sub-levels]** de werkbalk.
+Als u van de ene weergavemodus naar de andere wilt schakelen, klikt u op **[!UICONTROL Display sub-levels]** in de werkbalk.
 
 ![](assets/s_ncs_user_display_children_icon.png)
 
@@ -273,31 +273,31 @@ Volg onderstaande stappen om deze lijstconfiguratie op te slaan zodat deze opnie
 
 1. Klik met de rechtermuisknop op de map met de weergegeven gegevens.
 1. Selecteer **[!UICONTROL Properties]**.
-1. Klik **[!UICONTROL Advanced settings]** en geef een naam op in het **[!UICONTROL Configuration]** veld.
+1. Klik op **[!UICONTROL Advanced settings]** en geef een naam op in het veld **[!UICONTROL Configuration]**.
 
    ![](assets/s_ncs_user_folder_save_config_2.png)
 
-1. Click **[!UICONTROL OK]** and then click **[!UICONTROL Save]**.
+1. Klik **[!UICONTROL OK]** en klik dan **[!UICONTROL Save]**.
 
-U kunt deze configuratie vervolgens toepassen op een andere **leveringsmap** :
+U kunt deze configuratie dan toepassen op een andere **Delivery** omslag:
 
 ![](assets/s_ncs_user_folder_save_config_3.png)
 
-Klik **[!UICONTROL Save]** in het venster met de mapeigenschappen. De lijstweergave wordt aangepast aan de opgegeven configuratie:
+Klik **[!UICONTROL Save]** in het venster van omslageigenschappen. De lijstweergave wordt aangepast aan de opgegeven configuratie:
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
-## Een lijst exporteren {#exporting-a-list}
+## Een lijst {#exporting-a-list} exporteren
 
-Als u gegevens uit een lijst wilt exporteren, moet u een wizard voor exporteren gebruiken. Als u het wilt openen, selecteert u de elementen die u wilt exporteren in de lijst, klikt u met de rechtermuisknop en selecteert u **[!UICONTROL Export...]**.
+Als u gegevens uit een lijst wilt exporteren, moet u een wizard voor exporteren gebruiken. Als u deze wilt openen, selecteert u de elementen die u wilt exporteren in de lijst, klikt u met de rechtermuisknop en selecteert u **[!UICONTROL Export...]**.
 
-Het gebruik van de invoer- en uitvoerfuncties wordt toegelicht in [Algemene invoer en uitvoer](../../platform/using/generic-imports-and-exports.md).
+Het gebruik van de invoer- en uitvoerfuncties wordt uitgelegd in [Algemene invoer en uitvoer](../../platform/using/generic-imports-and-exports.md).
 
 >[!CAUTION]
 >
 >Elementen uit een lijst mogen niet worden geëxporteerd met de functie Kopiëren/Plakken.
 
-## Een lijst sorteren {#sorting-a-list}
+## Een lijst {#sorting-a-list} sorteren
 
 Lijsten kunnen een grote hoeveelheid gegevens bevatten. U kunt deze gegevens sorteren of eenvoudige of geavanceerde filters toepassen. Door te sorteren kunt u gegevens in oplopende of aflopende volgorde weergeven. Met filters kunt u alleen geselecteerde gegevens definiëren en combineren.
 
@@ -309,7 +309,7 @@ U kunt ook sorteren configureren of sorteercriteria combineren. Volg de ondersta
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. Klik in het lijstconfiguratievenster op het **[!UICONTROL Sorting]** tabblad.
+1. Klik in het lijstconfiguratievenster op het tabblad **[!UICONTROL Sorting]**.
 1. Selecteer de velden die u wilt sorteren en de sorteerrichting (oplopend of aflopend).
 
    ![](assets/s_ncs_user_configurelist_sort.png)
@@ -328,9 +328,9 @@ U kunt een onderzoek van de beschikbare gebieden in een redacteur in werking ste
 
 >[!NOTE]
 >
->U kunt filters maken om slechts enkele gegevens in een lijst weer te geven. Zie [Filters](../../platform/using/creating-filters.md)maken.
+>U kunt filters maken om slechts enkele gegevens in een lijst weer te geven. Zie [Filters maken](../../platform/using/creating-filters.md).
 
-## Indelingen en eenheden {#formats-and-units}
+## Opmaak en eenheden {#formats-and-units}
 
 ### Datum en tijd {#date-and-time}
 
@@ -343,7 +343,7 @@ De belangrijkste verschillen tussen het Engels van de VS en het Engels van het V
 <table> 
  <thead> 
   <tr> 
-   <th> Indelingen<br /> </th> 
+   <th> Formaten<br /> </th> 
    <th> Engels (VS)<br /> </th> 
    <th> Engels (EN)<br /> </th> 
   </tr> 
@@ -367,21 +367,21 @@ De belangrijkste verschillen tussen het Engels van de VS en het Engels van het V
  </tbody> 
 </table>
 
-### Waarden toevoegen aan een opsomming {#add-values-in-an-enumeration}
+### Waarden toevoegen in een opsomming {#add-values-in-an-enumeration}
 
-Met de invoervelden in een vervolgkeuzelijst kunt u een opsommingswaarde invoeren die u kunt opslaan en vervolgens als optie kunt aanbieden in de vervolgkeuzelijst. U kunt bijvoorbeeld in het **[!UICONTROL City]** veld op het **[!UICONTROL General]** tabblad van een ontvangend profiel Londen invoeren. Wanneer u op Enter drukt om deze waarde te bevestigen, wordt u gevraagd of u deze waarde wilt opslaan voor de opsomming die aan het veld is gekoppeld.
+Met de invoervelden in een vervolgkeuzelijst kunt u een opsommingswaarde invoeren die u kunt opslaan en vervolgens als optie kunt aanbieden in de vervolgkeuzelijst. In het veld **[!UICONTROL City]** van het tabblad **[!UICONTROL General]** van een ontvankelijk profiel kunt u bijvoorbeeld Londen invoeren. Wanneer u op Enter drukt om deze waarde te bevestigen, wordt u gevraagd of u deze waarde wilt opslaan voor de opsomming die aan het veld is gekoppeld.
 
 ![](assets/s_ncs_user_wizard_email_bat_substitute_email.png)
 
-Als u klikt, **[!UICONTROL Yes]** is deze waarde beschikbaar in de keuzelijst met invoervak van het desbetreffende veld (in dit geval: **[!UICONTROL London]**).
+Als u op **[!UICONTROL Yes]** klikt, is deze waarde beschikbaar in de keuzelijst met invoervak van het desbetreffende veld (in dit geval: **[!UICONTROL London]**).
 
 >[!NOTE]
 >
->Opsommingen (ook wel &#39;gespecificeerde lijsten&#39; genoemd) worden beheerd door de beheerder via de **[!UICONTROL Administration > Platform > Enumerations]** sectie. For more on this, refer to [Managing enumerations](../../platform/using/managing-enumerations.md).
+>Opsommingen (ook wel &#39;gespecificeerde lijsten&#39; genoemd) worden beheerd door de beheerder via de sectie **[!UICONTROL Administration > Platform > Enumerations]**. Raadpleeg [Opsommingen beheren](../../platform/using/managing-enumerations.md) voor meer informatie.
 
 ### Standaardeenheden {#default-units}
 
-Op de velden die een duur uitdrukken (bv. geldigheidsperiode van de middelen van een levering, goedkeuringstermijn voor een taak enz.), kan de waarde worden uitgedrukt in de volgende **eenheden**:
+In de velden die een duur uitdrukken (bijvoorbeeld de geldigheidsperiode van de bronnen van een levering, de goedkeuringstermijn voor een taak, enz.), kan de waarde worden uitgedrukt in de volgende **eenheden**:
 
 * **[!UICONTROL s]** gedurende seconden,
 * **[!UICONTROL mn]** gedurende minuten,
@@ -396,4 +396,4 @@ In deze video wordt de werkruimte Campaign Classic weergegeven.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) extra Campaign Classic hoe kan ik-video&#39;s beschikbaar.
