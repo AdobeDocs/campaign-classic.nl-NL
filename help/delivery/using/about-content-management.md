@@ -17,11 +17,11 @@ ht-degree: 3%
 
 # Contentmanagement{#about-content-management}
 
-De Adobe Campaign Content Manager-module is een specifiek Campaign Classic- [standaardpakket](../../installation/using/installing-campaign-standard-packages.md) dat u kunt installeren om terugkerende nieuwsbrieven of websites te maken. Het kan u helpen om uw berichten tot stand te brengen, te bevestigen en te publiceren.
+De Adobe Campaign Content Manager-module is een specifiek Campaign Classic [standaardpakket](../../installation/using/installing-campaign-standard-packages.md) dat u kunt installeren om terugkerende nieuwsbrieven of websites te maken. Het kan u helpen om uw berichten tot stand te brengen, te bevestigen en te publiceren.
 
 >[!NOTE]
 >
->In deze sectie wordt verwezen naar de module Inhoudsbeheer. Raadpleeg [deze sectie](../../delivery/using/defining-the-email-content.md)voor meer informatie over het ontwerpen van inhoud voor e-mailleveringen.
+>In deze sectie wordt verwezen naar de module Inhoudsbeheer. Raadpleeg [deze sectie](../../delivery/using/defining-the-email-content.md) voor meer informatie over het ontwerpen van inhoud voor e-mailleveringen.
 
 De module Inhoudsbeheer bevat de functionaliteit voor werkgroepen, werkstromen en aggregatie van inhoud. Hierdoor kan een bericht automatisch worden opgemaakt: e-mail, post, SMS, web, enz.
 
