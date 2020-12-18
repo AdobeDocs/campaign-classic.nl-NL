@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Tracking
-description: Tracking
+description: Tekstspatiëring
 audience: social
 content-type: reference
 topic-tags: annexes
@@ -19,15 +19,15 @@ ht-degree: 4%
 
 Social Marketing levert rapporten waarmee u het reactiepercentage van Facebook- en Twitter-leveringen kunt meten en de aanschaf van Facebook-profielen kunt analyseren. De volgende rapporten zijn beschikbaar:
 
-* Het **[!UICONTROL Reactivity rate]** rapport is beschikbaar via het **[!UICONTROL Summary]** tabblad Facebook of Twitter.
+* Het **[!UICONTROL Reactivity rate]**-rapport is beschikbaar via het tabblad **[!UICONTROL Summary]** van een Facebook- of Twitter-levering.
 
    ![](assets/social_report_3.png)
 
-* Het **[!UICONTROL Reactivity rate]** rapport is beschikbaar op het **[!UICONTROL Dashboard]** tabblad van een Twitter- of Facebook-service.
+* Het **[!UICONTROL Reactivity rate]**-rapport is beschikbaar via het tabblad **[!UICONTROL Dashboard]** van een Twitter- of Facebook-service.
 
    ![](assets/social_report_2.png)
 
-* Het **[!UICONTROL Fan acquisition]** rapport, beschikbaar via het **[!UICONTROL Dashboard]** tabblad van een Facebook-service.
+* Het **[!UICONTROL Fan acquisition]**-rapport is beschikbaar via het tabblad **[!UICONTROL Dashboard]** van een Facebook-service.
 
    ![](assets/social_report_1.png)
 
