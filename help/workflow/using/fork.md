@@ -19,7 +19,7 @@ ht-degree: 2%
 
 Met een vork kunt u alle uitgaande activiteiten parallel activeren.
 
-U kunt de activiteit bijvoorbeeld gebruiken in de context van het maken van inhoud en het verzenden van inhoud, zodat u de doelberekening en het maken van inhoud tegelijkertijd kunt starten. Er is een speciale gebruiksaanwijzing beschikbaar in [deze sectie](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content).
+U kunt de activiteit bijvoorbeeld gebruiken in de context van het maken van inhoud en het verzenden van inhoud, zodat u de doelberekening en het maken van inhoud tegelijkertijd kunt starten. Er is een speciaal geval voor gebruik beschikbaar in [deze sectie](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content).
 
 Om de activiteit te vormen, open het dan het aantal en het etiket van de gewenste uitgaande overgangen bepaalt.
 
