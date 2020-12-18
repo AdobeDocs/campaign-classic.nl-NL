@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Sharing audiences with Adobe Experience Cloud{#sharing-audiences-with-adobe-experience-cloud}
+# Soorten publiek delen met Adobe Experience Cloud{#sharing-audiences-with-adobe-experience-cloud}
 
 >[!CAUTION]
 >
@@ -26,11 +26,11 @@ Met Adobe Campaign kunt u soorten publiek en segmenten delen met Adobe Experienc
 1. Verzend Adobe Experience Platform-segmentgegevens naar Adobe Campaign. Om deze integratie uit te voeren, moet u uw Platform van Gegevens van de Klant in real time met Campagne (RTCDP) verbinden. [Meer informatie vindt u in deze sectie](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html).
 
 
-1. Integreer **Adobe Campaign** met de kernservice **** Mensen (ook wel de kernservice **** Profielen en Soorten publiek genoemd) of Adobe Audience Manager. Dan kunt u:
+1. Integreer **Adobe Campaign** met **People core service** (ook bekend als **Profiles &amp; Audiences core service**) of Adobe Audience Manager. Dan kunt u:
 
    * Importeer gedeelde soorten publiek/segmenten van verschillende Adobe Experience Cloud-oplossingen naar Adobe Campaign. Soorten publiek kan via lijsten in Adobe Campaign worden geïmporteerd.
 
-   * Exportlijsten in de vorm van een gedeeld publiek in Adobe Experience Cloud. Deze doelgroepen kunnen worden gebruikt in de verschillende Adobe Experience Cloud-oplossingen die u gebruikt. Soorten publiek kunnen worden geëxporteerd nadat het doelpubliek zich in een workflow heeft gericht, met behulp van een speciale **[!UICONTROL Update shared audience]** activiteit.
+   * Exportlijsten in de vorm van een gedeeld publiek in Adobe Experience Cloud. Deze doelgroepen kunnen worden gebruikt in de verschillende Adobe Experience Cloud-oplossingen die u gebruikt. Soorten publiek kunnen worden geëxporteerd nadat het doel is ingesteld in een workflow, met behulp van een speciale **[!UICONTROL Update shared audience]**-activiteit.
 
 Deze integratie ondersteunt twee typen Adobe Experience Cloud-id&#39;s:
 
