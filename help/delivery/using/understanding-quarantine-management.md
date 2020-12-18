@@ -324,115 +324,115 @@ Android V2-quarantainemomechanisme gebruikt hetzelfde proces als Android V1. Het
   </tr> 
   <tr> 
    <td> Afkeuring van FCM-berichten: Fout bij het verifiëren van het senderaccount<br /> </td> 
-   <td> Fout<br /> </td> 
-   <td> Kan het ontwikkelaarsaccount niet identificeren. Controleer uw id en wachtwoord<br /> </td> 
-   <td> Zacht<br /> </td> 
+   <td> Mislukt<br /> </td> 
+   <td> Kan de ontwikkelaarsaccount niet identificeren. Controleer uw id en wachtwoord<br /> </td> 
+   <td> Zwak<br /> </td> 
    <td> Geweigerd<br /> </td> 
-   <td> Nee<br /> </td> 
+   <td> Geen<br /> </td> 
   </tr> 
   <tr> 
-   <td> Afwijzing van FCM-bericht: Apparaatquota overschreden<br /> </td> 
-   <td> Fout<br /> </td> 
+   <td> Afkeuring van FCM-berichten: Apparaatquota overschreden<br /> </td> 
+   <td> Mislukt<br /> </td> 
    <td> </td> 
-   <td> Zacht<br /> </td> 
+   <td> Zwak<br /> </td> 
    <td> Geweigerd<br /> </td> 
    <td> Ja<br /> </td> 
   </tr> 
   <tr> 
-   <td> Afwijzing van FCM-bericht: Ongeldige registratie / niet geregistreerd<br /> </td> 
-   <td> Fout<br /> </td> 
+   <td> Afkeuring van FCM-berichten: Ongeldige registratie / niet geregistreerd<br /> </td> 
+   <td> Mislukt<br /> </td> 
    <td> </td> 
    <td> Hard<br /> </td> 
    <td> Gebruiker onbekend<br /> </td> 
-   <td> Nee<br /> </td> 
+   <td> Geen<br /> </td> 
   </tr> 
   <tr> 
-   <td> Afwijzing van FCM-bericht: Alle andere fouten<br /> </td> 
-   <td> Fout<br /> </td> 
+   <td> Afkeuring van FCM-berichten: Alle andere fouten<br /> </td> 
+   <td> Mislukt<br /> </td> 
    <td> De Firebase Cloud Messaging-server heeft een onverwachte foutcode geretourneerd: {1} </td> 
    <td> </td> 
    <td> Geweigerd<br /> </td> 
-   <td> Nee<br /> </td> 
+   <td> Geen<br /> </td> 
   </tr> 
     <tr> 
-   <td> Afwijzing van FCM-bericht: Ongeldig argument<br /> </td> 
-   <td> Fout<br /> </td> 
+   <td> Afkeuring van FCM-berichten: Ongeldig argument<br /> </td> 
+   <td> Mislukt<br /> </td> 
    <td> INVALID_ARGUMENT </td> 
    <td> Genegeerd</td> 
    <td> Ongedefinieerd<br /> </td> 
-   <td> Nee<br /> </td> 
+   <td> Geen<br /> </td> 
   </tr>
     <tr> 
-   <td> Afwijzing van FCM-bericht: Verificatiefout van derden<br /> </td> 
-   <td> Fout<br /> </td> 
+   <td> Afkeuring van FCM-berichten: Verificatiefout van derden<br /> </td> 
+   <td> Mislukt<br /> </td> 
    <td> THIRD_PARTY_AUTH_ERROR </td> 
    <td> Genegeerd</td>
    <td> Geweigerd<br /> </td> 
    <td> Ja<br /> </td> 
   </tr>
     <tr> 
-   <td> Afwijzing van FCM-bericht: Afzender-id komt niet overeen<br /> </td> 
-   <td> Fout<br /> </td> 
+   <td> Afkeuring van FCM-berichten: Afzender-id komt niet overeen<br /> </td> 
+   <td> Mislukt<br /> </td> 
    <td> SENDER_ID_MISMATCH </td> 
    <td> Zacht</td>
    <td> Gebruiker onbekend<br /> </td> 
-   <td> Nee<br /> </td> 
+   <td> Geen<br /> </td> 
   </tr>
     <tr> 
-   <td> Afwijzing van FCM-bericht: Niet geregistreerd<br /> </td> 
-   <td> Fout<br /> </td>
+   <td> Afkeuring van FCM-berichten: Niet geregistreerd<br /> </td> 
+   <td> Mislukt<br /> </td>
    <td> ONGEREGISTREERD </td> 
    <td> Hard</td> 
    <td> Gebruiker onbekend<br /> </td> 
-   <td> Nee<br /> </td> 
+   <td> Geen<br /> </td> 
   </tr>
     <tr> 
-   <td> Afwijzing van FCM-bericht: Intern<br /> </td> 
-   <td> Fout<br /> </td> 
+   <td> Afkeuring van FCM-berichten: Intern<br /> </td> 
+   <td> Mislukt<br /> </td> 
    <td> INTERN </td> 
    <td> Genegeerd</td> 
    <td> Geweigerd<br /> </td> 
    <td> Ja<br /> </td> 
   </tr>
     <tr> 
-   <td> Afwijzing van FCM-bericht: Niet beschikbaar<br /> </td> 
-   <td> Fout<br /> </td> 
-   <td> ONBESCHIKBAAR</td> 
+   <td> Afkeuring van FCM-berichten: Niet beschikbaar<br /> </td> 
+   <td> Mislukt<br /> </td> 
+   <td> NIET BESCHIKBAAR</td> 
    <td> Genegeerd</td> 
    <td> Geweigerd<br /> </td> 
    <td> Ja<br /> </td> 
   </tr>
     <tr> 
-   <td> Afwijzing van FCM-bericht: onverwachte foutcode<br /> </td> 
-   <td> Fout<br /> </td> 
+   <td> Afkeuring van FCM-berichten: onverwachte foutcode<br /> </td> 
+   <td> Mislukt<br /> </td> 
    <td> onverwachte foutcode</td> 
    <td> Genegeerd</td> 
    <td> Geweigerd<br /> </td> 
-   <td> Nee<br /> </td> 
+   <td> Geen<br /> </td> 
   </tr>
   <tr> 
    <td> Verificatie: Verbindingsprobleem<br /> </td> 
-   <td> Fout<br /> </td> 
+   <td> Mislukt<br /> </td> 
    <td> Kan geen verbinding maken met verificatieserver </td> 
    <td> Genegeerd</td>
    <td> Geweigerd<br /> </td> 
    <td> Ja<br /> </td> 
   </tr>
     <tr> 
-   <td> Verificatie: Niet-geautoriseerde client of bereik in verzoek.<br /> </td> 
-   <td> Fout<br /> </td> 
+   <td> Verificatie: Onbevoegde cliënt of werkingsgebied in verzoek.<br /> </td> 
+   <td> Mislukt<br /> </td> 
    <td> onbevoegd_client </td> 
    <td> Genegeerd</td>
    <td> Geweigerd<br /> </td> 
-   <td> Nee<br /> </td> 
+   <td> Geen<br /> </td> 
   </tr>
     <tr> 
-   <td> Verificatie: De client is niet geautoriseerd om toegangstokens op te halen met deze methode of de client is niet geautoriseerd voor een van de gevraagde bereiken.<br /> </td> 
-   <td> Fout<br /> </td> 
+   <td> Verificatie: De client is niet geautoriseerd om toegangstokens op te halen met deze methode of de client is niet geautoriseerd voor een van de gevraagde bereikinstellingen.<br /> </td> 
+   <td> Mislukt<br /> </td> 
    <td> onbevoegd_client </td> 
    <td> Genegeerd</td>
    <td> Geweigerd<br /> </td> 
-   <td> Nee<br /> </td> 
+   <td> Geen<br /> </td> 
   </tr>
     <tr> 
    <td> Verificatie: Toegang geweigerd<br /> </td> 
