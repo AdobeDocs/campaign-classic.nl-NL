@@ -15,7 +15,7 @@ ht-degree: 31%
 ---
 
 
-# Informatie over Adobe ID{#about-adobe-id}
+# Info over Adobe ID{#about-adobe-id}
 
 Campagnegebruikers kunnen via hun Adobe ID verbinding maken met de Adobe Campaign-console. Deze integratie biedt de volgende voordelen:
 
@@ -24,7 +24,7 @@ Campagnegebruikers kunnen via hun Adobe ID verbinding maken met de Adobe Campaig
 * Veiliger beleid voor wachtwoordbeheer.
 * Gebruik van Federated ID-accounts (externe id-provider).
 
-Met Adobe Identity Management System (IMS) kunnen beheerders de toegang van gebruikers tot toepassingen en services maken en beheren. Raadpleeg [deze pagina](https://helpx.adobe.com/enterprise/using/identity.html)voor meer informatie over de verschillende typen Adobe-id&#39;s.
+Met Adobe Identity Management System (IMS) kunnen beheerders de toegang van gebruikers tot toepassingen en services maken en beheren. Raadpleeg [deze pagina](https://helpx.adobe.com/enterprise/using/identity.html) voor meer informatie over de verschillende typen Adobe-id&#39;s.
 
 >[!IMPORTANT]
 >
