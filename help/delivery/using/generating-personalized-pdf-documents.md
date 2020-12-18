@@ -25,7 +25,7 @@ De volgende extensies worden ondersteund: &quot;.docx&quot;, &quot;.doc&quot; en
 
 Voor het aanpassen van uw documenten zijn dezelfde JavaScript-functies beschikbaar als voor het aanpassen van e-mails.
 
-U moet de **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]** optie activeren. Deze optie is toegankelijk wanneer u het bestand bijvoegt bij de e-mail voor levering. Raadpleeg de sectie [Bestanden](../../delivery/using/attaching-files.md) koppelen voor meer informatie over het bijvoegen van een berekend bestand.
+U moet de optie **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]** activeren. Deze optie is toegankelijk wanneer u het bestand bijvoegt bij de e-mail voor levering. Raadpleeg de sectie [Bestanden koppelen](../../delivery/using/attaching-files.md) voor meer informatie over het koppelen van een berekend bestand.
 
 Voorbeeld van een personalisatie van de factuurheader:
 
@@ -33,12 +33,12 @@ Voorbeeld van een personalisatie van de factuurheader:
 
 Als u dynamische tabellen wilt genereren of afbeeldingen wilt opnemen via een URL, moet u een specifiek proces volgen.
 
-## Dynamische tabellen genereren {#generating-dynamic-tables}
+## Dynamische tabellen {#generating-dynamic-tables} genereren
 
 De procedure voor het genereren van dynamische tabellen is als volgt:
 
 * Maak een tabel met drie regels en zoveel kolommen als nodig zijn en configureer de indeling (randen, enzovoort).
-* Plaats de cursor op de tabel en klik op het **[!UICONTROL Table > Table properties]** menu. Ga naar het **[!UICONTROL Table]** lusje en ga een naam in die met **NlJsTable** begint.
+* Plaats de cursor op de tabel en klik op het menu **[!UICONTROL Table > Table properties]**. Ga naar het **[!UICONTROL Table]** lusje en ga een naam in die met **NlJsTable** begint.
 * Definieer in de eerste cel van de eerste regel een lus (&quot;for&quot;, bijvoorbeeld) die herhaling mogelijk maakt voor de waarden die u in de tabel wilt weergeven.
 * Voeg in elke cel van de tweede regel van de tabel scripts in die de waarden retourneren die u wilt weergeven.
 * Sluit de lus in de derde en laatste regel van de tabel.
@@ -47,7 +47,7 @@ De procedure voor het genereren van dynamische tabellen is als volgt:
 
    ![](assets/s_ncs_pdf_table.png)
 
-## Externe afbeeldingen invoegen {#inserting-external-images}
+## Externe afbeeldingen {#inserting-external-images} invoegen
 
 Het invoegen van externe afbeeldingen is handig als u bijvoorbeeld een document wilt personaliseren met een afbeelding waarvan de URL is ingevoerd in een veld van de ontvanger.
 
@@ -64,15 +64,15 @@ Om dit te doen, moet u een verpersoonlijkingsblok vormen, dan een vraag aan het 
 
 **Stap 2: Maak het verpersoonlijkingsblok:**
 
-* Ga naar het **[!UICONTROL Resources > Campaign management > Personalization blocks]** menu van de Adobe Campaign console.
+* Ga naar **[!UICONTROL Resources > Campaign management > Personalization blocks]** menu van de console van Adobe Campaign.
 * Maak een nieuw &#39;Mijn logo&#39;-personalisatieblok met &#39;Mijn logo&#39; als interne naam.
-* Klik op de **[!UICONTROL Advanced parameters...]** koppeling en controleer vervolgens de **[!UICONTROL "The content of the block is included in an attachment"]** optie. Hiermee kunt u de definitie van het verpersoonlijkingsblok rechtstreeks naar de inhoud van het OpenOffice-bestand kopiëren.
+* Klik op de **[!UICONTROL Advanced parameters...]** verbinding dan controleren **[!UICONTROL "The content of the block is included in an attachment"]** optie. Hiermee kunt u de definitie van het verpersoonlijkingsblok rechtstreeks naar de inhoud van het OpenOffice-bestand kopiëren.
 
    ![](assets/s_ncs_pdf_bloc_option.png)
 
    U moet twee soorten verklaringen binnen het verpersoonlijkingsblok onderscheiden:
 
-   * De Adobe Campaign-code van de personalisatievelden waarvoor de &quot;open&quot; en &quot;gesloten&quot; haakjes moeten worden vervangen door escape-tekens (respectievelijk `&lt;` en `&gt;`).
+   * De Adobe Campaign-code van de verpersoonlijkingsvelden waarvoor de &quot;open&quot; en &quot;gesloten&quot; tekens moeten worden vervangen door escape-tekens (respectievelijk `&lt;` en `&gt;`).
    * De volledige XML-code van OpenOffice wordt naar het OpenOffice-document gekopieerd.
 
 In het voorbeeld ziet het verpersoonlijkingsblok er als volgt uit:
