@@ -17,9 +17,9 @@ ht-degree: 1%
 
 # Hooks{#hooks}
 
-Met Hooks in Interaction kunt u het **standaardmotorgedrag** wijzigen.
+Met Hooks in Interaction kunt u het standaardmotorgedrag **wijzigen.**
 
-De **[!UICONTROL Target loading]** haken en **[!UICONTROL Proposition post-processing]** haken zijn in Adobe Campaign geconfigureerd in de aanbiedingsruimte:
+De **[!UICONTROL Target loading]** en **[!UICONTROL Proposition post-processing]** haken worden, in Adobe Campaign, in de aanbiedingsruimte gevormd:
 
 ![](assets/interaction_hooks_1.png)
 
@@ -27,7 +27,7 @@ De **[!UICONTROL Dynamic offer]** haak wordt gevormd met het aanbiedingsgewicht 
 
 ![](assets/interaction_hooks_2.png)
 
-## Doel laden {#target-loading}
+## Doelladen {#target-loading}
 
 Deze haak laat u het profiel van het contact (dat door uit-van-de-doosvraag) met extra gegevens van een extern systeem werd geladen verrijken.
 
@@ -46,7 +46,7 @@ De verzamelde gegevens moeten in de knoop van vraaggegevens (de knoop van de Int
 
 >[!NOTE]
 >
->De parameter **xmlInteraction** bevat zowel de vraaggegevens als het profiel van het contact dat door de uit-van-de-doos vraag werd geladen.
+>De **xmlInteraction** parameter bevat zowel de vraaggegevens als het profiel van het contact dat door de uit-van-de-doos vraag werd geladen.
 
 **Voorbeeld:**
 
@@ -119,7 +119,7 @@ return aReturnedProps;
 
 Deze haak staat u toe om een vraag aan een externe motor te maken om een lijst van producten te selecteren verbonden aan een aanbieding. Het wordt gevormd in de aanbieding na toelatingsregels, en vóór de toepassing van de typologieregels.
 
-Vooreerst moet de integrator het **PropositionRcp** -schema uitbreiden met de aanvullende informatie over het product. Als u wilt opgeven waar deze gegevens worden opgeslagen, vindt u een **[!UICONTROL Proposition being processed]** koppeling op het **[!UICONTROL Storage]** tabblad van de ruimte
+Voordien, zou de integrator de voorstellen **PropositionRcp** schema met de extra informatie over het product moeten uitbreiden. Als u wilt opgeven waar deze gegevens worden opgeslagen, is een **[!UICONTROL Proposition being processed]**-koppeling beschikbaar op het tabblad **[!UICONTROL Storage]** van de ruimte
 
 ![](assets/interaction_hooks_3.png)
 
