@@ -19,27 +19,27 @@ ht-degree: 1%
 
 Met het **leveringsoverzicht** kunt u een omtrek gebruiken in een campagneworkflow. De contouren moeten vooraf in de campagne zijn gemaakt.
 
-Zie deze [sectie](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)voor meer informatie over de leveringscontouren in Adobe Campaign.
+Voor meer informatie over leveringsoverzichten in Adobe Campaign, verwijs naar dit [sectie](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 Om de activiteit te vormen, moet u eenvoudig het overzicht selecteren u evenals de geplande contactdatum houdt van. U kunt het filtreren regels toevoegen door typologieën of typologieregels toe te voegen.
 
-## Voorbeeld: Een voorstel invoegen via een leveringsoverzicht {#example--inserting-an-offer-via-a-delivery-outline}
+## Voorbeeld: Een aanbieding invoegen via een leveringsoverzicht {#example--inserting-an-offer-via-a-delivery-outline}
 
-De activiteit van het **leveringsoverzicht** , beschikbaar in de campagnewerkschema&#39;s, laat u aanbiedingen voorstellen voorstellen die in een leveringsoverzicht van de huidige lopende campagne van verwijzingen worden voorzien.
+De **leveringsoverzicht** activiteit, beschikbaar in de campagnewerkschema&#39;s, laat u aanbiedingen voorstellen voorstellen voorstellen die in een leveringsoverzicht van de huidige lopende campagne van verwijzingen worden voorzien.
 
 >[!NOTE]
 >
->Het **interactiepakket** moet zijn geïnstalleerd.
+>Het **Interaction**-pakket moet worden geïnstalleerd.
 
 1. Voeg in een workflow een overzichtsactiviteit toe voordat u een leveringsactiviteit toevoegt.
 1. Geef in de overzichtsactiviteit van de levering de omtrek op die u wilt gebruiken.
 
-   Raadpleeg deze [sectie](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)voor meer informatie over het opgeven van leveringscontouren.
+   Voor meer informatie bij het specificeren van leveringsoverzichten, verwijs naar dit [sectie](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 1. Vul de beschikbare velden in op basis van uw levering.
 1. Er zijn twee mogelijke gevallen:
 
-   * Schakel het **[!UICONTROL Restrict the number of propositions selected]** selectievakje in als je de aanbiedingsengine wilt bellen. Geef de aanbiedingsruimte en het aantal voorstellen op dat in de levering wordt weergegeven.
+   * Als u de aanbiedingsmotor zou willen roepen, controleer **[!UICONTROL Restrict the number of propositions selected]** doos. Geef de aanbiedingsruimte en het aantal voorstellen op dat in de levering wordt weergegeven.
 
       De aanbiedingsmotor zal rekening houden met het gewicht van de aanbieding en de subsidiabiliteitsregels.
 
