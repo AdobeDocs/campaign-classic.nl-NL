@@ -35,7 +35,7 @@ De wizardschermen bevatten de volgende stappen:
 
    ![](assets/d_ncs_integration_schema_addfield2.png)
 
-1. Klik op de **[!UICONTROL Finish]** knop om de wijzigingen te bevestigen.
+1. Klik op de knop **[!UICONTROL Finish]** om de wijzigingen te bevestigen.
 
 In ons voorbeeld wordt automatisch een extensiebestand met de naam &#39;cus:receiver&#39; gemaakt en wordt het bijbehorende SQL-script uitgevoerd:
 
@@ -49,5 +49,5 @@ In ons voorbeeld wordt automatisch een extensiebestand met de naam &#39;cus:rece
 
 >[!NOTE]
 >
->Standaard worden de toegevoegde velden gedeclareerd met de **gebruiker** van de eigenschap (met de waarde &quot;true&quot;). Hiermee kunt u het veld in de invoervorm van het uitgebreide schema weergeven en bewerken met behulp van een &quot;treeEdit&quot;-type besturingselement (zie Invoerformulier).
+>Standaard worden de toegevoegde velden gedeclareerd met de eigenschap **user** (met de waarde &quot;true&quot;). Hiermee kunt u het veld in de invoervorm van het uitgebreide schema weergeven en bewerken met behulp van een &quot;treeEdit&quot;-type besturingselement (zie Invoerformulier).
 
