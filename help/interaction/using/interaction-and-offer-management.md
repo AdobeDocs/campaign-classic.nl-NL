@@ -27,7 +27,7 @@ Met interactie kunt u een catalogus met aanbiedingen maken en beheren en de rege
 
 ![](assets/Offermgt2.png)
 
-![](assets/do-not-localize/how-to-video.png) Kijk naar [deze video](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)om uzelf vertrouwd te maken met de interactiefunctie en de terminologieën die worden gebruikt in Campagne Interaction.
+![](assets/do-not-localize/how-to-video.png) Kijk naar  [deze video](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) om uzelf vertrouwd te maken met de interactiefunctie en de terminologieën die worden gebruikt in Campagne Interaction.
 
 ## Verwante onderwerpen
 
