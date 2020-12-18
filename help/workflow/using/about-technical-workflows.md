@@ -21,9 +21,9 @@ De workflows die in deze sectie worden beschreven, worden geïnstalleerd met de 
 
 >[!NOTE]
 >
->Technische workflows die betrekking hebben op de module Message Center zijn standaard beschikbaar in het knooppunt **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]** .
+>Technische workflows die betrekking hebben op de module Message Center zijn standaard beschikbaar in het knooppunt **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]**.
 
-Raadpleeg de [desbetreffende sectie](../../workflow/using/monitoring-technical-workflows.md)voor meer informatie over het bewaken van technische workflows.
+Raadpleeg de [specifieke sectie](../../workflow/using/monitoring-technical-workflows.md) voor meer informatie over het bewaken van technische workflows.
 
 Dit deel bevat informatie over technische werkstromen die betrekking hebben op de volgende pakketten:
 
