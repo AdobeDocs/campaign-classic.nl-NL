@@ -34,18 +34,18 @@ De vraag wordt bepaald op de zelfde manier zoals voor standaardvragen, maar zijn
 
 Dit doet u als volgt:
 
-1. In the **[!UICONTROL Scheduling & History]** tab, select the **[!UICONTROL Schedule execution]** option. De taak blijft actief zodra het is gecreeerd en zal slechts op de tijden worden teweeggebracht die door het programma voor het uitvoeren van de vraag worden gespecificeerd. Als de optie echter is uitgeschakeld, wordt de query onmiddellijk **en in één keer** uitgevoerd.
+1. Selecteer op het tabblad **[!UICONTROL Scheduling & History]** de optie **[!UICONTROL Schedule execution]**. De taak blijft actief zodra het is gecreeerd en zal slechts op de tijden worden teweeggebracht die door het programma voor het uitvoeren van de vraag worden gespecificeerd. Nochtans, als de optie gehandicapt is, wordt de vraag uitgevoerd onmiddellijk **en in één go**.
 1. Klik op de knop **[!UICONTROL Change]**.
 
-   In het **[!UICONTROL Schedule editing wizard]** venster kunt u het type frequentie, de terugkerende gebeurtenis en de geldigheidsperiode van de gebeurtenis configureren.
+   In het **[!UICONTROL Schedule editing wizard]** venster, kunt u het type van frequentie, gebeurtenisherhaling en gebeurtenisgeldigheid vormen.
 
    ![](assets/s_user_segmentation_wizard_11.png)
 
-1. Click **[!UICONTROL Finish]** to save the schedule.
+1. Klik **[!UICONTROL Finish]** om het programma te bewaren.
 
    ![](assets/s_user_segmentation_wizard_valid.png)
 
-1. In de onderste sectie van het **[!UICONTROL Scheduling & History]** tabblad kunt u het aantal dagen selecteren waarmee u rekening wilt houden in de geschiedenis.
+1. In de onderste sectie van het tabblad **[!UICONTROL Scheduling & History]** kunt u het aantal dagen selecteren waarmee u rekening wilt houden in de geschiedenis.
 
    ![](assets/edit_request_inc.png)
 
@@ -67,4 +67,4 @@ Dit doet u als volgt:
 * schema
 * recCount
 
-Deze reeks van drie waarden identificeert de bevolking die door de vraag wordt gericht. **[!UICONTROL tableName]** is de naam van de lijst die de doelherkenningstekens registreert, **[!UICONTROL schema]** is het schema van de bevolking (gewoonlijk nms:ontvanger) en **[!UICONTROL recCount]** is het aantal elementen in de lijst.
+Deze reeks van drie waarden identificeert de bevolking die door de vraag wordt gericht. **[!UICONTROL tableName]** is de naam van de lijst die de doelherkenningstekens registreert,  **[!UICONTROL schema]** is het schema van de bevolking (gewoonlijk nms:ontvanger) en  **[!UICONTROL recCount]** is het aantal elementen in de lijst.
