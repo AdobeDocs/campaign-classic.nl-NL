@@ -24,7 +24,7 @@ _7 februari 2020_
 **Verbeteringen**
 
 * Probleem met regressie verholpen als gevolg van de implementatie van SSL-certificering, waardoor de gebruikersverbinding op de Windows-server is mislukt. (NEO-20629)
-* Probleem verholpen waarbij een onjuist versietnummer in het menu **Info** werd weergegeven.
+* Probleem verholpen waarbij een onjuist versietnummer werd weergegeven in het menu **Info**.
 
 ## ![](assets/do-not-localize/orange_2.png) Release 19.2 - build 9080 {#release-19-2-build-9080}
 
@@ -72,7 +72,7 @@ _2 december 2019_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>Met Adobe Campaign kunt u de nieuwe interactieve <a href="https://amp.dev/about/email/">AMP uitproberen voor de indeling E-mail</a> , waarmee marketers AMP-componenten in berichten kunnen opnemen om de e-mailbeleving te verbeteren met rijke, dynamische en interactieve inhoud die rechtstreeks in het bericht zelf kan worden geactiveerd.</p>
+<td> <p>Met Adobe Campaign kunt u de nieuwe interactieve <a href="https://amp.dev/about/email/">AMP for Email</a>-indeling uitproberen. Hiermee kunnen marketers AMP-componenten in berichten opnemen om de e-mailbeleving te verbeteren met rijke, dynamische en interactieve inhoud, die rechtstreeks in het bericht zelf kan worden geactiveerd.</p>
    <p>Dit vermogen wordt vrijgegeven als openbare bèta.</p>
    <p>Raadpleeg de <a href="../../delivery/using/defining-interactive-content.md">gedetailleerde documentatie</a> en de <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">videotutorial</a>voor meer informatie.</p><br /></td> 
   </tr> 
@@ -88,7 +88,7 @@ _2 december 2019_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>Beveiligd SMS wordt nu ondersteund via de uitgebreide algemene SMPP-connector. Hierdoor is een gecodeerde verbinding met de provider mogelijk.</p> <p><strong>Waarschuwing</strong> Voor deze functie is een bijgewerkt certificaat op alle servers vereist. Ongeldige, ingetrokken of verlopen certificaten genereren fouten die de algemene mogelijkheden voor het verzenden van SMS beïnvloeden.</p><p>Raadpleeg de <a href="https://helpx.adobe.com/nl/campaign/kb/sms-connector-protocol-and-settings.html">gedetailleerde documentatie</a> voor meer informatie. </p> </td> 
+<td> <p>Beveiligd SMS wordt nu ondersteund via de uitgebreide algemene SMPP-connector. Hierdoor is een gecodeerde verbinding met de provider mogelijk.</p> <p><strong></strong> WaarschuwingDeze functie vereist een bijgewerkt certificaat op alle servers. Ongeldige, ingetrokken of verlopen certificaten genereren fouten die de algemene mogelijkheden voor het verzenden van SMS beïnvloeden.</p><p>Raadpleeg de <a href="https://helpx.adobe.com/nl/campaign/kb/sms-connector-protocol-and-settings.html">gedetailleerde documentatie</a> voor meer informatie. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -105,20 +105,20 @@ _2 december 2019_
 * De externe rekening van CRM van de Dynamica van Microsoft kan nu worden gevormd gebruikend wachtwoordgeloofsbrieven (wachtwoord + gebruikersbenaming) of certificaat (privé sleutel). [Meer informatie](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
 * Er zijn enkele verbeteringen toegevoegd aan de Hadoop FDA-aansluiting om de betrouwbaarheid te verbeteren
 * Er is een specifieke hulplijn toegevoegd om schijfruimte te controleren voordat u openbare bronnen op de server kunt uploaden.
-* Er zijn nieuwe [campagneopties](../../installation/using/configuring-campaign-options.md) toegevoegd:
-   * Met de **configuratieoptie WdbcKillSessionPolicy** kunt u het **gedrag Onvoorwaardelijk stoppen** op alle workflows en PostSQL-databasequery&#39;s toepassen.
+* Nieuwe [Campagneopties](../../installation/using/configuring-campaign-options.md) zijn toegevoegd:
+   * Met de configuratieoptie **WdbcKillSessionPolicy** kunt u het gedrag **Onvoorwaardelijk Stoppen** op alle workflows en PostSQL-databasequery&#39;s beïnvloeden.
    * Met de optie **NmsOperation_DeliveryPreparationWindow** kunt u het aantal dagen definiëren waarboven leveringen met een inconsistente status worden uitgesloten van het aantal actieve leveringen.
-   * Met de optie **WdbcOptions_TempDbName** kunt u een afzonderlijke database configureren voor het werken van tabellen op Microsoft SQL Server. Hierdoor worden back-ups en replicatie geoptimaliseerd. [Meer informatie](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
+   * Met de optie **WdbcOptions_TempDbName** kunt u een aparte database configureren voor het werken van tabellen op Microsoft SQL Server. Hierdoor worden back-ups en replicatie geoptimaliseerd. [Meer informatie](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
    * De optie **XtkCleanup_NoStats** is verbeterd voor PostgreSQL om het gedrag van de stap van de opslagoptimalisering van het gegevensbestand schoonmaakwerkschema beter te controleren. [Meer informatie](../../production/using/database-cleanup-workflow.md#statistics-update)
-* Er is een afsluitmechanisme voor de account toegevoegd aan de API **voor aanmelding()** . Het verhindert verdere login pogingen na een bepaald aantal opeenvolgende ontbroken login pogingen binnen een gespecificeerd tijdsbestek.
-* Een nieuwe optie van de **Maximum de runtime** van de verpersoonlijking in de leveringseigenschappen staat u toe om een onderbreking voor de verpersoonlijkingsruntime te bepalen, om de verpersoonlijkingsfase te verhinderen te lang te lopen. [Meer informatie](../../delivery/using/personalization-fields.md#timing-out-personalization)
-* De optie **FTP-protocol** is toegevoegd zodat u een proxyconfiguratie kunt gebruiken voor SFTP-verbindingen. [Meer informatie](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)
+* Er is een afsluitmechanisme voor de account toegevoegd aan de **aanmeldingsnaam()**-API. Het verhindert verdere login pogingen na een bepaald aantal opeenvolgende ontbroken login pogingen binnen een gespecificeerd tijdsbestek.
+* Met een nieuwe optie **Maximale verpersoonlijkingstijd** in de leveringseigenschappen kunt u een time-outperiode voor de verpersoonlijkingstijd definiëren, om te voorkomen dat de verpersoonlijkingsfase te lang doorloopt. [Meer informatie](../../delivery/using/personalization-fields.md#timing-out-personalization)
+* De optie **ftp protocol** is toegevoegd om u toe te staan om een volmachtsconfiguratie voor verbindingen te gebruiken SFTP. [Meer informatie](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)
 * Nieuwe ondersteuning van proxytoegang tot een externe SFTP-server voor on-premise omgevingen.
 * Er is een specifieke hulplijn toegevoegd om te voorkomen dat pakketten worden geïnstalleerd die niet compatibel zijn met de instantie Campagne. [Meer informatie](../../installation/using/installing-campaign-standard-packages.md)
 
 _Verouderde systemen_
 
-The following systems are now [deprecated](https://helpx.adobe.com/nl/campaign/kb/deprecated-and-removed-features.html) for Campaign Classic implementations:
+De volgende systemen zijn nu [afgekeurd](https://helpx.adobe.com/nl/campaign/kb/deprecated-and-removed-features.html) voor Campaign Classic-implementaties:
 * Apache 2.2
 * Centos 6
 
@@ -130,21 +130,21 @@ De build 1.0.26 van de iOS SDK is nu beschikbaar. In deze nieuwe build hebben we
 
 **Patches**
 
-* Probleem verholpen waarbij het programma vastloopt als het veld Gekoppelde tabel **toevoegen leeg was in de activiteit van de workflow voor het laden van** gegevens (RDBMS) **** . (NEO-12213)
+* Probleem verholpen waarbij het programma vastloopt als het veld **Gekoppelde tabel toevoegen** leeg was in de werkstroomactiviteit **Gegevens laden (RDBMS)**. (NEO-12213)
 * Probleem verholpen dat ertoe kon leiden dat bepaalde berichten niet werden verwerkt door de server voor middeluitgaven. (NEO-12395)
 * Probleem verholpen in de workflow voor het opschonen van databases bij gebruik van de optie voor het weergeven van query&#39;s met Teradata. (NEO-12399)
 * Probleem opgelost dat invloed had op de leveringsanalyse met typologieregel, waaronder ne.jp domain. (NEO-12609)
 * Probleem verholpen met betrekking tot SMS over TLS-updates die een restrictiever certificaatbeleid impliceerden. Deze updates kunnen leiden tot een verbindingsfout tussen marketing- en midsourcingservers in het geval van een verouderd certificaat. (NEO-17698)
-* Probleem verholpen met het gebruik van de knop Verbinding **** testen op een externe account in een omgeving voor midsourcing met vault-verificatie. (NEO-12722)
+* Probleem verholpen bij het gebruik van de knop **Verbinding testen** op een externe account in een omgeving voor midsourcing met Vault-verificatie. (NEO-12722)
 * Probleem verholpen bij query&#39;s waarbij gebruik werd gemaakt van datumfuncties met een FDA Hadoop-verbinding. (NEO-12847)
 * Probleem verholpen bij het vervangen van een afbeelding in de e-maileditor. (NEO-13098)
 * Probleem verholpen waarbij na de upgrade fouten konden optreden in mappen die waren verwijderd of verplaatst naar een andere locatie. (NEO-13118)
-* Probleem verholpen met betrekking tot de weergave van afbeeldingen bij gebruik van de optie **Afbeelding definiëren per schermgrootte** van apparaat bij LIJNEN-berichten. (NEO-13228)
-* Probleem met voorbereiding van levering verholpen waarbij de optie Dubbel adres **uitsluiten tijdens levering** is uitgeschakeld. (NEO-13240)
-* Probleem verholpen in workflows wanneer de activiteit **Bestandsoverdracht** wordt gebruikt om bestanden te downloaden met de optie Bronbestanden **verwijderen na overdracht** , met een naam die een spatieteken bevat. (NEO-13411)
+* Probleem verholpen met de optie **Afbeelding per schermgrootte van apparaat definiëren** bij LIJNEN-berichten. (NEO-13228)
+* Probleem met voorbereiding van levering verholpen wanneer de optie **Dubbel adres uitsluiten tijdens levering** niet is geselecteerd. (NEO-13240)
+* Probleem verholpen in workflows wanneer de activiteit **Bestandsoverdracht** wordt gebruikt om bestanden te downloaden met de optie **Bronbestanden verwijderen na overdracht**, met naam die een spatieteken bevat. (NEO-13411)
 * Probleem verholpen waarbij Tomcat-cache werd opgeschoond en dit tot geheugenproblemen kon leiden. (NEO-13456)
-* Probleem verholpen bij het installeren van de **Controle van de aanbiedingsmotor met het ingebouwde pakket van de uitvoeringsinstantie** op een bestaande controleinstantie die in Microsoft SQL 2017 loopt. (NEO-13539)
-* Oplossing voor een probleem met een crash van de console dat zich kon voordoen wanneer bijgehouden URL&#39;s in een e-mail werden uitgeschakeld, op het tabblad **Tekstinhoud** vanwege een niet-geïnitialiseerde variabele. (NEO-13545)
+* Probleem verholpen bij het installeren van de **Besturing van de aanbiedingsmotor met uitvoeringsinstantie** ingebouwde pakket op een bestaande besturingsinstantie die in Microsoft SQL 2017 wordt uitgevoerd. (NEO-13539)
+* Oplossing voor een probleem met een crash van de console dat zich zou kunnen voordoen wanneer bijgehouden URL&#39;s in een e-mail werden uitgeschakeld, op het tabblad **Tekstinhoud** vanwege een niet-geïnitialiseerde variabele. (NEO-13545)
 * Probleem verholpen met codering van Chinese afzendernaam. (NEO-13837)
 * Oplossing voor een fout die kan optreden bij het weergeven van enquêteresolutiegegevens in de Verkenner. (NEO-14590)
 * Probleem verholpen dat tot een discrepantie tussen de indeling van het leveringslogboek en de quarantainetabel kon leiden. (NEO-16547)
@@ -157,7 +157,7 @@ De build 1.0.26 van de iOS SDK is nu beschikbaar. In deze nieuwe build hebben we
 * Probleem verholpen dat invloed had op de CRM-connector met Salesforce. (NEO-17712)
 * Probleem met time-out verholpen bij het importeren van gegevens uit een externe SFTP. (NEO-19723)
 * Probleem verholpen bij toegang tot voorspellende modellen. (NEO-19713)
-* Probleem verholpen dat invloed had op willekeurige steekproeven in de **gesplitste** workflowactiviteit met de Hadoop FDA-database. (NEO-16636)
+* Probleem verholpen dat invloed had op willekeurige sampling in **Split**-workflowactiviteit met Hadoop FDA-database. (NEO-16636)
 * Oplossing voor een regressie op Oracle waarbij sommige functies na de upgrade als ongeldig werden beschouwd. (NEO-12759)
 
 
