@@ -33,9 +33,9 @@ XML-documenten worden opgeslagen in MEMO-tekstvelden van de database.
 
 U moet bekend zijn met het Adobe Campaign-gegevensmodel om de velden van de database in uw scripts te kunnen verwerken.
 
-Voor een presentatie van het gegevensmodel raadpleegt u de beschrijving [van het](../../configuration/using/data-model-description.md)Adobe Campaign-gegevensmodel.
+Voor een presentatie van het gegevensmodel, verwijs naar [Beschrijving van het gegevensmodel van Adobe Campaign](../../configuration/using/data-model-description.md).
 
-Raadpleeg dit artikel voor informatie over het genereren van de structuur: [Een gegevensmodel of gegevenswoordenboek](https://helpx.adobe.com/campaign/kb/generate-data-model.html)genereren.
+Raadpleeg dit artikel voor informatie over het genereren van de structuur: [Een gegevensmodel of gegevenswoordenboek](https://helpx.adobe.com/campaign/kb/generate-data-model.html) genereren.
 
 ## Query en schrijver {#query-and-writer}
 
@@ -53,15 +53,15 @@ Voor meer op dit, verwijs naar [Voorbeeld op de methode &#39;ExecuteQuery&#39; v
 
 De methode **ExecuteQuery** wordt weergegeven in [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-).
 
-### Schrijven {#write}
+### {#write} schrijven
 
 Met schrijfopdrachten kunt u eenvoudige of complexe documenten schrijven met items in een of meer tabellen van de basis.
 
-Met de Transaction API&#39;s kunt u aansluitingen beheren via de opdracht **updateOrInsert** : Met één opdracht kunt u gegevens maken of bijwerken. U kunt ook samenvoeging van wijzigingen configureren (**samenvoegen**): in deze modus kunt u gedeeltelijke updates toestaan.
+Met de transnationale API&#39;s kunt u aansluitingen beheren via de opdracht **updateOrInsert**: Met één opdracht kunt u gegevens maken of bijwerken. U kunt ook samenvoeging van wijzigingen configureren (**merge**): in deze modus kunt u gedeeltelijke updates toestaan.
 
 De structuur van XML biedt een logische mening van de gegevens aan en laat u de fysieke structuur van de SQL lijst negeren.
 
-De schrijfmethode wordt voorgesteld in [Write/WriteCollection (xtk:zitting)](#write---writecollection--xtk-session-).
+De schrijfmethode wordt voorgesteld in [Write/WriteCollection (xtk:session)](#write---writecollection--xtk-session-).
 
 ## ExecuteQuery (xtk:queryDef) {#executequery--xtk-querydef-}
 
@@ -81,7 +81,7 @@ Definitie van de methode &quot;ExecuteQuery&quot; in het schema &quot;xtk:queryD
 >
 >Dit is een const-methode. De invoerparameters worden in een XML-document opgenomen in de indeling van het schema &quot;xtk:queryDef&quot;.
 
-### Indeling van het XML-document van de invoerquery {#format-of-the-xml-document-of-the-input-query}
+### Opmaak van het XML-document van de invoerquery {#format-of-the-xml-document-of-the-input-query}
 
 De structuur van het XML-document van de query wordt beschreven in het schema &quot;xtk:queryDef&quot;. In dit document worden de clausules van een SQL-query beschreven: &quot;select&quot;, &quot;where&quot;, &quot;order by&quot;, &quot;group by&quot;, &quot;have&quot;.
 
@@ -115,7 +115,7 @@ De structuur van het XML-document van de query wordt beschreven in het schema &q
 </queryDef>
 ```
 
-Een subquery ( `<subquery>` ) kan worden gedefinieerd in een `<condition> ` element. De syntaxis voor een `<subquery> ` element is gebaseerd op de syntaxis van een `<querydef>`.
+Een subquery ( `<subquery>`) kan worden gedefinieerd in een `<condition> `-element. De syntaxis voor een   `<subquery> `   element is gebaseerd op de syntaxis van een    `<querydef>`.
 
 Voorbeeld van een `<subquery>  : </subquery>`
 
@@ -133,18 +133,18 @@ Voorbeeld van een `<subquery>  : </subquery>`
   
 ```
 
-Een vraag moet een beginschema van het **schemaattribuut** van verwijzingen voorzien.
+Een vraag moet een beginschema van **schema** attributen van verwijzingen voorzien.
 
-Het gewenste type bewerking wordt ingevoerd in het kenmerk **operation** en bevat een van de volgende waarden:
+Het gewenste type bewerking wordt ingevoerd in het **operation**-kenmerk en bevat een van de volgende waarden:
 
 * **get**: Hiermee wordt een record uit de tabel opgehaald en wordt een fout geretourneerd als de gegevens niet bestaan,
 * **getIfExists**: Hiermee wordt een record uit de tabel opgehaald en wordt een leeg document geretourneerd als de gegevens niet bestaan,
 * **selecteren**: maakt een cursor die meerdere records retourneert en een leeg document retourneert als er geen gegevens zijn,
 * **aantal**: retourneert een gegevenstelling.
 
-De **XPath** -syntaxis wordt gebruikt om gegevens te zoeken op basis van het invoerschema. Raadpleeg [Gegevensschema&#39;s voor meer informatie over XPath](../../configuration/using/data-schemas.md).
+De syntaxis **XPath** wordt gebruikt om van gegevens de plaats te bepalen die op het inputschema worden gebaseerd. Raadpleeg [Gegevensschema&#39;s](../../configuration/using/data-schemas.md) voor meer informatie over XPath.
 
-#### Voorbeeld met de bewerking &#39;get&#39; {#example-with-the--get--operation}
+#### Voorbeeld met de &#39;get&#39;-bewerking {#example-with-the--get--operation}
 
 Haalt de achternaam en voornaam van een ontvanger (&quot;nms:ontvanger&quot;-schema) op met een filter op de e-mail.
 
@@ -163,7 +163,7 @@ Haalt de achternaam en voornaam van een ontvanger (&quot;nms:ontvanger&quot;-sch
 </queryDef>
 ```
 
-#### Voorbeeld met de bewerking &#39;select&#39; {#example-with-the--select--operation}
+#### Voorbeeld met de &#39;select&#39;-bewerking {#example-with-the--select--operation}
 
 Retourneert de lijst met ontvangers die zijn gefilterd in een map en het e-maildomein met een sortering in aflopende volgorde op de geboortedatum.
 
@@ -190,7 +190,7 @@ Retourneert de lijst met ontvangers die zijn gefilterd in een map en het e-maild
 
 Expressies kunnen eenvoudige velden of complexe expressies zijn, zoals rekenkundige bewerkingen of het samenvoegen van tekenreeksen.
 
-Om het aantal verslagen te beperken die moeten worden teruggekeerd, voeg de **lineCount** attributen aan het `<querydef>` element toe.
+Als u het aantal records dat moet worden geretourneerd wilt beperken, voegt u het kenmerk **lineCount** toe aan het element `<querydef>`.
 
 Om het aantal verslagen te beperken die door de vraag aan 100 zijn teruggekeerd:
 
@@ -199,7 +199,7 @@ Om het aantal verslagen te beperken die door de vraag aan 100 zijn teruggekeerd:
 ...
 ```
 
-Om de volgende 100 verslagen terug te winnen, stel de zelfde vraag opnieuw in werking, toevoegend het **startLine** attribuut.
+Om de volgende 100 verslagen terug te winnen, stel de zelfde vraag opnieuw in werking, toevoegend **startLine** attribuut.
 
 ```
 <queryDef schema="nms:recipient" operation="select" lineCount="100" startLine="100">
@@ -221,7 +221,7 @@ Om het aantal verslagen op een vraag te tellen:
 
 >[!NOTE]
 >
->Ook hier gebruiken we de voorwaarde uit het vorige voorbeeld. De clausules `<select>` en clausules worden niet gebruikt. `</select>`
+>Ook hier gebruiken we de voorwaarde uit het vorige voorbeeld. De `<select>` en de clausules worden niet gebruikt. `</select>`
 
 #### Gegevensgroepering {#data-grouping}
 
@@ -257,9 +257,9 @@ De query kan worden vereenvoudigd door het kenmerk **groupBy** rechtstreeks toe 
 
 >[!NOTE]
 >
->Het `<groupby>` element hoeft niet meer te worden gevuld.
+>Het is niet langer nodig om het element `<groupby>` te vullen.
 
-#### Bracketing in omstandigheden {#bracketing-in-conditions}
+#### Accoleren in omstandigheden {#bracketing-in-conditions}
 
 Hier volgen twee voorbeelden van haakjes op dezelfde voorwaarde.
 
@@ -322,7 +322,7 @@ Deze syntaxis vereenvoudigt de query wanneer meer dan twee gegevens in de voorwa
    </select>
    ```
 
-* Verzamelingskoppelingen (1N): het filtreren op de gebieden van een inzamelingstabel moet via **BESTAAT** of **NIET BESTAAT** exploitant worden uitgevoerd.
+* Verzamelingskoppelingen (1N): het filtreren op de gebieden van een inzamelingstabel moet via **EXISTS** of **NOT EXISTS** exploitant worden uitgevoerd.
 
    Om de ontvangers te filtreren die aan de de informatiedienst van de &quot;Krantenbrief&quot;zijn geabonneerd:
 
@@ -334,7 +334,7 @@ Deze syntaxis vereenvoudigt de query wanneer meer dan twee gegevens in de voorwa
    </where>
    ```
 
-   Directe herwinning van de gebieden van een inzamelingsverbinding van de `<select>` clausule wordt niet geadviseerd omdat de vraag een kardinaal product terugkeert. Deze wordt alleen gebruikt wanneer de gekoppelde tabel slechts één record bevat (voorbeeld `<node expr="">`).
+   Directe herwinning van de gebieden van een inzamelingsverbinding van `<select>` wordt clausule niet geadviseerd omdat de vraag een kardinaal product terugkeert. Deze wordt alleen gebruikt wanneer de gekoppelde tabel slechts één record bevat (bijvoorbeeld `<node expr="">`).
 
    Voorbeeld op de verzamelingskoppeling &quot;Abonnement&quot;:
 
@@ -344,9 +344,9 @@ Deze syntaxis vereenvoudigt de query wanneer meer dan twee gegevens in de voorwa
    </select>
    ```
 
-   Het is mogelijk om een sublijst terug te winnen die de elementen van een inzamelingsverbinding in de `<select>` clausule bevat. De XPath van de gebieden waarnaar wordt verwezen zijn contextueel van het inzamelingselement.
+   Het is mogelijk om een sublijst terug te winnen die de elementen van een inzamelingsverbinding in `<select>` clausule bevat. De XPath van de gebieden waarnaar wordt verwezen zijn contextueel van het inzamelingselement.
 
-   De filterelementen ( `<orderby>` ) en de beperkingselementen ( `<where>` ) kunnen aan het inzamelingselement worden toegevoegd.
+   De filterelementen ( `<orderby>`) en de beperkingselementen ( `<where>`) kunnen aan het inzamelingselement worden toegevoegd.
 
    In dit voorbeeld, voor elke ontvanger keert de vraag e-mail en de lijst van informatiediensten terug waarop de ontvanger zich abonneert:
 
@@ -370,7 +370,7 @@ Deze syntaxis vereenvoudigt de query wanneer meer dan twee gegevens in de voorwa
    </queryDef>
    ```
 
-#### De parameters van de component &#39;where&#39; en &#39;select&#39; binden {#binding-the-parameters-of-the--where--and--select--clause}
+#### De parameters binden van de componenten &#39;where&#39; en &#39;select&#39; van de component {#binding-the-parameters-of-the--where--and--select--clause}
 
 Door de binding van parameters kan de engine de waarden instellen van de parameters die in de query worden gebruikt. Dit is zeer nuttig, aangezien de motor voor het ontsnappen van waarden verantwoordelijk is, en er het extra voordeel van een geheime voorgeheugen voor de parameters is die moeten worden teruggewonnen.
 
@@ -393,7 +393,7 @@ Als u wilt voorkomen dat een parameter wordt gebonden, moet het kenmerk &quot;no
 
 #### Tip voor het samenstellen van query&#39;s: {#query-building-tip-}
 
-Om met de syntaxis van een vraag te helpen, kunt u de vraag schrijven gebruikend de generische vraagredacteur in de de cliëntconsole van Adobe Campaign ( **[!UICONTROL Tools/ Generic query editor...]** menu). Dit doet u als volgt:
+Om met de syntaxis van een vraag te helpen, kunt u de vraag schrijven gebruikend de generische vraagredacteur in de cliëntconsole van Adobe Campaign ( **[!UICONTROL Tools/ Generic query editor...]** menu). Dit doet u als volgt:
 
 1. Selecteer de gegevens die u wilt ophalen:
 
@@ -407,7 +407,7 @@ Om met de syntaxis van een vraag te helpen, kunt u de vraag schrijven gebruikend
 
    ![](assets/s_ncs_integration_webservices_queyr3.png)
 
-### Documentindeling uitvoeren {#output-document-format}
+### Documentindeling {#output-document-format} uitvoeren
 
 De retourparameter is een XML-document in de indeling van het schema dat aan de query is gekoppeld.
 
@@ -436,7 +436,7 @@ Voorbeeld van een document dat wordt geretourneerd voor bewerking van het type &
 
 #### Alias {#alias}
 
-Met een alias kunt u de locatie van gegevens in het uitvoerdocument wijzigen. Het **alias** -kenmerk moet een XPath opgeven in het corresponderende veld.
+Met een alias kunt u de locatie van gegevens in het uitvoerdocument wijzigen. Het **alias** attribuut moet XPath op het overeenkomstige gebied specificeren.
 
 ```
 <queryDef schema="nms:recipient" operation="get">
@@ -539,9 +539,9 @@ De afstemming van gegevens werkt op basis van de definitie van de sleutels die z
 
 De sleutel van het schema van de te bijwerken entiteit wordt voltooid gebaseerd op het **xtkschema** attribuut.
 
-De afstemmingssleutel kan daarom worden afgedwongen met het kenmerk **_key** dat de lijst met XPails bevat waaruit de sleutel bestaat (gescheiden door komma&#39;s).
+De verzoeningssleutel kan daarom worden gedwongen met het **_key** attribuut dat de lijst van XPails bevat die omhoog de sleutel (die door komma&#39;s wordt gescheiden) maken.
 
-Het is mogelijk om het type bewerking te forceren door het kenmerk **_operation** te vullen met de volgende waarden:
+Het is mogelijk om het type van verrichting te dwingen door **_operation** attributen met de volgende waarden te bevolken:
 
 * **invoegen**: de opname van de record forceert (de verzoeningssleutel wordt niet gebruikt);
 * **insertOrUpdate**: werkt de record bij of voegt deze in, afhankelijk van de reconciliatietoets (standaardmodus);
@@ -569,7 +569,7 @@ Een ontvanger verwijderen:
 >
 >Voor een verwijderingsbewerking moet het invoerdocument alleen de velden bevatten waaruit de afstemmingssleutel bestaat.
 
-### Voorbeeld met de methode WriteCollection {#example-with-the--writecollection--method}
+### Voorbeeld met de methode &#39;WriteCollection&#39; {#example-with-the--writecollection--method}
 
 Bijwerken of invoegen voor verschillende ontvangers:
 
@@ -583,7 +583,7 @@ Bijwerken of invoegen voor verschillende ontvangers:
 
 ### Voorbeeld van koppelingen {#example-on-links}
 
-#### Example 1 {#example-1}
+#### Voorbeeld 1 {#example-1}
 
 De map koppelen aan een ontvanger op basis van de interne naam (@name).
 
@@ -595,13 +595,13 @@ De map koppelen aan een ontvanger op basis van de interne naam (@name).
 
 De kenmerken &quot;_key&quot; en &quot;_operation&quot; kunnen worden ingevoerd op een gekoppeld element. Het gedrag op dit element is hetzelfde als op het hoofdelement van het invoerschema.
 
-De definitie van de sleutel van de hoofdentiteit (&quot;nms:ontvanger&quot;) bestaat uit een veld van een gekoppelde tabel (elementschema &quot;xtk:folder&quot;) en de e-mail. `<folder>`
+De definitie van de sleutel van de hoofdentiteit (&quot;nms:ontvanger&quot;) bestaat uit een veld van een gekoppelde tabel (element `<folder>` schema &quot;xtk:folder&quot;) en de e-mail.
 
 >[!NOTE]
 >
 >De bewerking &quot;none&quot; die in het mappenelement is ingevoerd, definieert een afstemming in de map zonder update of invoeging.
 
-#### Example 2 {#example-2}
+#### Voorbeeld 2 {#example-2}
 
 Het bijwerken van het bedrijf (verbonden lijst in &quot;cus:bedrijf&quot;schema) van een ontvanger:
 
@@ -611,7 +611,7 @@ Het bijwerken van het bedrijf (verbonden lijst in &quot;cus:bedrijf&quot;schema)
 </recipient>
 ```
 
-#### Example 3 {#example-3}
+#### Voorbeeld 3 {#example-3}
 
 Een ontvanger aan een groep toevoegen met de groeprelatietabel (&quot;nms:rcpGrpRel&quot;):
 
