@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Een externe database openen
-description: Een externe database openen
+title: Toegang tot een externe database
+description: Toegang tot een externe database
 audience: platform
 content-type: reference
 topic-tags: connectors
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '126'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 Een schema maken voor een externe database:
 
-1. Klik op de **[!UICONTROL New]** knop boven de lijst met gegevensschema&#39;s en kies **[!UICONTROL Access external data]**.
+1. Klik op de knop **[!UICONTROL New]** boven de lijst met gegevensschema&#39;s en kies **[!UICONTROL Access external data]**.
 
    ![](assets/wf_new_schema_fda.png)
 
@@ -29,7 +29,7 @@ Een schema maken voor een externe database:
 
 1. Klik **[!UICONTROL OK]** om te bevestigen. Adobe Campaign detecteert automatisch de structuur van de geselecteerde tabel en genereert het logische schema. Adobe Campaign genereert geen koppelingen.
 
-1. Klik **[!UICONTROL Save]** om het maken te bevestigen.
+1. Klik op **[!UICONTROL Save]** om het maken te bevestigen.
 
    >[!CAUTION]
    >
