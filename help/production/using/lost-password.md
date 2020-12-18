@@ -23,16 +23,16 @@ Er zijn twee mogelijke scenario&#39;s:
 
 * Wachtwoord verloren door een Adobe Campaign-operator.
 
-   In dat geval kunt u het wachtwoord van de betreffende operator wijzigen. U doet dit door verbinding te maken via een operator met beheerdersrechten, met de rechtermuisknop op een operator te klikken, **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** te selecteren en het nieuwe wachtwoord van de operator in te stellen. We raden operatoren aan hun wachtwoord te wijzigen wanneer ze opnieuw verbinden.
+   In dat geval kunt u het wachtwoord van de betreffende operator wijzigen. Om dit te doen, verbind via een exploitant met beheerderrechten, klik op een exploitant met de rechtermuisknop aan, selecteer **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** en plaats het nieuwe wachtwoord van de exploitant. We raden operatoren aan hun wachtwoord te wijzigen wanneer ze opnieuw verbinden.
 
    ![](assets/operator-passwd.png)
 
-* **Verlies van intern** wachtwoord (alleen on-premise klanten).
+* **Verlies van** intern wachtwoord (alleen on-premise klanten).
 
-   Als het **interne** wachtwoord verloren gaat, moet u het opnieuw initialiseren. Hiervoor volgt u de volgende procedure:
+   Als het **internal** wachtwoord verloren gaat, moet u het opnieuw initialiseren. Hiervoor volgt u de volgende procedure:
 
-   1. Bewerk het bestand **/usr/local/neolane/nl6/conf/serverConf.xml** .
-   1. Ga naar de regel **internalPassword** .
+   1. Bewerk het bestand **/usr/local/neolane/nl6/conf/serverConf.xml**.
+   1. Ga naar **internalPassword** lijn.
 
       ```
       <!-- XTK authentication mode internalPassword : Password of internal account -->
@@ -61,5 +61,5 @@ Er zijn twee mogelijke scenario&#39;s:
       Confirmation 
       ```
 
-   1. U kunt nu uw nieuwe wachtwoord gebruiken om verbinding te maken in de **interne** modus.
+   1. U kunt uw nieuw wachtwoord nu gebruiken om op **Interne** wijze te verbinden.
 
