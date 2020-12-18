@@ -33,7 +33,7 @@ Om multibranding te vormen, moet u zowel uitvoeringsinstanties als controleinsta
 
    >[!NOTE]
    >
-   >Het maken van een externe account van het type uitvoeringsinstantie wordt weergegeven in de sectie [Control-instantie](../../message-center/using/creating-a-shared-connection.md#control-instance) .
+   >Het creëren van een uitvoerinstantie type externe rekening wordt voorgesteld in [de sectie van de Controle instantie](../../message-center/using/creating-a-shared-connection.md#control-instance).
 
 1. Breid het schema nms:extAccount uit om het volgen URL toe te voegen:
 
@@ -44,7 +44,7 @@ Om multibranding te vormen, moet u zowel uitvoeringsinstanties als controleinsta
 
    >[!NOTE]
    >
-   >Het uitbreiden van een bestaand schema wordt voorgesteld in het [Uitbreiden van een schemasectie](../../configuration/using/extending-a-schema.md) .
+   >Het uitbreiden van een bestaand schema wordt voorgesteld in [het Uitbreiden van een schema](../../configuration/using/extending-a-schema.md) sectie.
 
 1. Wijzig de vorm nms:extAccount:
 
@@ -80,5 +80,5 @@ Voor de controleinstantie, moet u leveringsmalplaatjes en externe rekeningen ver
 
 1. Maak één extern account per merk met dezelfde interne naam als in stap 1.
 1. Eén standaardleveringssjabloon per merk maken.
-1. In de leveringsmalplaatje **[!UICONTROL Properties]** , plaats het verpletteren aan de externe rekening van het merk.
+1. In de leveringsmalplaatje **[!UICONTROL Properties]**, plaats het verpletteren aan de externe rekening van het merk.
 
