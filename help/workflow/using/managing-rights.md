@@ -23,22 +23,22 @@ In het algemeen moeten operatoren die op workflows reageren, toegang krijgen tot
 
 Ze moeten ook worden toegewezen aan de benoemde rechten die samenvallen met de acties die worden uitgevoerd door workflows die ze beïnvloeden (importeren van ontvangers, bestandstoegang, fusie, uitvoering van SQL-scripts, enzovoort).
 
-Raadpleeg deze [sectie](../../platform/using/access-management.md)voor meer informatie over het beheren van operatoren en machtigingen.
+Voor meer over het beheren van exploitanten en toestemmingen, verwijs naar dit [sectie](../../platform/using/access-management.md).
 
 ## Exploitantgroepen {#operator-groups}
 
 De volgende groepen operatoren zijn gekoppeld aan de workflow:
 
-* Met de **[!UICONTROL Workflow execution]** groep kunt u de uitvoering en goedkeuring van doelworkflows beheren: De WORKFLOW met de naam right wordt toegewezen aan de operatoren van deze groep. Dit is vereist voor alle handelingen met betrekking tot workflows, naast toegangsrechten tot de gegevensbestanden. Standaard heeft de **[!UICONTROL Workflow execution]** groep alleen-lezen toegang tot standaarddoelworkbestanden en werkstroomsjablonen. Operatoren in deze groep hebben ook lees- en schrijftoegang tot het goedkeuringsbestand dat in behandeling is.
-* De **[!UICONTROL Workflow supervisors]** groep laat exploitanten werkschemagoedkeuringen beheren.
-* De **[!UICONTROL Operation Managers]** groep voor toegang tot workflows voor campagnes.
+* Met de groep **[!UICONTROL Workflow execution]** kunt u de uitvoering en goedkeuring van doelworkflows beheren: De WORKFLOW met de naam right wordt toegewezen aan de operatoren van deze groep. Dit is vereist voor alle handelingen met betrekking tot workflows, naast toegangsrechten tot de gegevensbestanden. Standaard heeft de groep **[!UICONTROL Workflow execution]** alleen-lezen toegang tot standaard doelworkflowbestanden en werkstroomsjablonen. Operatoren in deze groep hebben ook lees- en schrijftoegang tot het goedkeuringsbestand dat in behandeling is.
+* Met de groep **[!UICONTROL Workflow supervisors]** kunnen operatoren workflowgoedkeuringen beheren.
+* De **[!UICONTROL Operation Managers]** groep om tot campagnewerkschema&#39;s toegang te hebben.
 
 ## Benoemde rechten {#named-rights}
 
-Alleen de WORKFLOW met de naam right is specifiek voor workflows: hiermee kunt u workflows maken, starten en stoppen. Het genoemde recht is alleen van toepassing als het workflowbestand leesrechten bevat. Voor doelworkflows is het lezen van het **[!UICONTROL Profiles and Targets]** bestand naar rechts nodig.
+Alleen de WORKFLOW met de naam right is specifiek voor workflows: hiermee kunt u workflows maken, starten en stoppen. Het genoemde recht is alleen van toepassing als het workflowbestand leesrechten bevat. Voor het richten van werkschema&#39;s, is het lezen recht op het **[!UICONTROL Profiles and Targets]** dossier noodzakelijk.
 
-## Workflow-uitvoeringsaccount {#workflow-execution-account}
+## Rekening {#workflow-execution-account} voor workflowuitvoering
 
 U kunt de uitvoeringsrekening vormen die op het niveau van het werkschemamalplaatje moet worden gebruikt. Met de uitvoeringsaccount kunt u machtigingen rechtstreeks aan de workflow toewijzen, ongeacht de Adobe Campaign-operator die de uitvoering start. Standaard wordt elke workflow uitgevoerd met de rechten van de operator die de workflow heeft gestart.
 
-Als u een uitvoeringsaccount wilt toewijzen aan een workflow, gaat u naar de lijst met workflowsjablonen en klikt u met de rechtermuisknop op de sjabloon die is gekoppeld aan de workflow. Kies **[!UICONTROL Action > Change execution account...]** vervolgens het account dat u wilt gebruiken.
+Als u een uitvoeringsaccount wilt toewijzen aan een workflow, gaat u naar de lijst met workflowsjablonen en klikt u met de rechtermuisknop op de sjabloon die is gekoppeld aan de workflow. Kies **[!UICONTROL Action > Change execution account...]** en selecteer het account dat u wilt gebruiken.
