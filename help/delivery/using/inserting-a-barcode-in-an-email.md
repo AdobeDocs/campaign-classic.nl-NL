@@ -50,25 +50,25 @@ Dan vorm de volgende elementen om uw behoeften aan te passen:
       ![](assets/barcode_insert_12.png)
 
 1. Voer de grootte in van de streepjescode die u in de e-mail wilt invoegen: Door de schaal te configureren kunt u de grootte van de streepjescode verhogen of verlagen, van x1 tot x10.
-1. In het **[!UICONTROL Value]** veld kunt u de waarde van de streepjescode definiëren. Een waarde kan een speciale aanbieding aanpassen en kan de functie van criteria zijn, het kan de waarde van een gegevensbestandgebied zijn verbonden met de klanten.
+1. In het veld **[!UICONTROL Value]** kunt u de waarde van de streepjescode definiëren. Een waarde kan een speciale aanbieding aanpassen en kan de functie van criteria zijn, het kan de waarde van een gegevensbestandgebied zijn verbonden met de klanten.
 
-   In dit voorbeeld wordt een streepjescode van het type EAN-8 getoond, waaraan het rekeningnummer van een ontvanger is toegevoegd. Als u dit accountnummer wilt toevoegen, klikt u op de aanpassingsknop rechts van het **[!UICONTROL Value]** veld en selecteert u **[!UICONTROL Recipient > Account number]**.
+   In dit voorbeeld wordt een streepjescode van het type EAN-8 getoond, waaraan het rekeningnummer van een ontvanger is toegevoegd. Als u dit accountnummer wilt toevoegen, klikt u op de aanpassingsknop rechts van het veld **[!UICONTROL Value]** en selecteert u **[!UICONTROL Recipient > Account number]**.
 
    ![](assets/barcode_insert_15.png)
 
-1. In het **[!UICONTROL Height]** veld kunt u de hoogte van de streepjescode configureren zonder de breedte te wijzigen door de hoeveelheid ruimte tussen de streepjes te wijzigen.
+1. Met het veld **[!UICONTROL Height]** kunt u de hoogte van de streepjescode configureren zonder de breedte te wijzigen door de hoeveelheid ruimte tussen de streepjes te wijzigen.
 
-   Er is geen restrictief besturingselement voor invoer afhankelijk van het type streepjescode. Als een streepjescodewaarde onjuist is, is deze alleen zichtbaar in de modus **Voorbeeld** , waarin de streepjescode in het rood wordt doorgestreept.
+   Er is geen restrictief besturingselement voor invoer afhankelijk van het type streepjescode. Als een streepjescodewaarde onjuist is, is deze alleen zichtbaar in de modus **Voorvertoning** waarin de streepjescode rood wordt doorgestreept.
 
    >[!NOTE]
    >
    >De waarde die aan een streepjescode wordt toegewezen, is afhankelijk van het type. Een type EAN-8 moet bijvoorbeeld precies 8 cijfers hebben.
    >
-   >Met de aanpassingsknop rechts van het **[!UICONTROL Value]** veld kunt u naast de waarde zelf ook gegevens toevoegen. Hiermee wordt de streepjescode verrijkt, op voorwaarde dat de streepjescodestandaard dit accepteert.
+   >Met de aanpassingsknop rechts van het veld **[!UICONTROL Value]** kunt u naast de waarde zelf ook gegevens toevoegen. Hiermee wordt de streepjescode verrijkt, op voorwaarde dat de streepjescodestandaard dit accepteert.
    >
    >Als u bijvoorbeeld een streepjescode van het type GS1-128 gebruikt en als u naast de waarde het rekeningnummer van een ontvanger wilt invoeren, klikt u op de knop Verpersoonlijken en selecteert u **[!UICONTROL Recipient > Account number]**. Als het accountnummer van de geselecteerde ontvanger correct is ingevoerd, wordt hiermee rekening gehouden in de streepjescode.
 
-Zodra deze elementen zijn gevormd, kunt u uw e-mail voltooien en het verzenden. U voorkomt fouten door op het **[!UICONTROL Preview]** tabblad te klikken om ervoor te zorgen dat de inhoud correct wordt weergegeven voordat u de levering uitvoert.
+Zodra deze elementen zijn gevormd, kunt u uw e-mail voltooien en het verzenden. Als u fouten wilt voorkomen, moet u ervoor zorgen dat de inhoud correct wordt weergegeven voordat u de levering uitvoert door op het tabblad **[!UICONTROL Preview]** te klikken.
 
 ![](assets/barcode_insert_10.png)
 
