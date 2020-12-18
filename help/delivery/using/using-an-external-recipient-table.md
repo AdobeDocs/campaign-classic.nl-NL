@@ -17,7 +17,7 @@ ht-degree: 18%
 
 # Een externe tabel voor ontvangers gebruiken{#using-an-external-recipient-table}
 
-Als de leveringstabel een externe lijst is, zult u extra configuraties moeten maken. Het **[!UICONTROL nms:seedmember]** schema moet worden uitgebreid. Er wordt een tabblad toegevoegd aan de adressen van de zaadadressen om de juiste velden te definiëren, zoals hieronder wordt getoond:
+Als de leveringstabel een externe lijst is, zult u extra configuraties moeten maken. Het schema **[!UICONTROL nms:seedmember]** moet worden uitgebreid. Er wordt een tabblad toegevoegd aan de adressen van de zaadadressen om de juiste velden te definiëren, zoals hieronder wordt getoond:
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
@@ -25,4 +25,4 @@ In dit geval, om zaadadressen aan de levering toe te voegen, ga de adequate gebi
 
 ![](assets/s_ncs_user_seedlist_add_new_tab.png)
 
-De **extensie nms:seedMember** schema is [deze sectie](../../configuration/using/seed-addresses.md).
+De **nms:seedMember** schemaverlenging is [deze sectie](../../configuration/using/seed-addresses.md).
