@@ -15,7 +15,7 @@ ht-degree: 1%
 ---
 
 
-# Marketingscampagnes {#monitoring-marketing-campaigns}
+# Marketingscampagnes volgen {#monitoring-marketing-campaigns}
 
 ## Een campagne opvolgen {#tracking-a-campaign}
 
@@ -25,21 +25,21 @@ Voor elke campagne, laat het **[!UICONTROL Tracking]** lusje u alle banen en hun
 
    ![](assets/s_ncs_user_op_edit_exe_tab_a.png)
 
-* Het **[!UICONTROL Deliveries]** subtabblad bevat alle leveringen van de campagne die vanuit deze weergave kunnen worden bewerkt. Selecteer hiertoe de levering en klik op het **[!UICONTROL Detail]** pictogram.
+* Het subtabblad **[!UICONTROL Deliveries]** bevat alle leveringen van de campagne die vanuit deze weergave kunnen worden bewerkt. Selecteer hiertoe de levering en klik op het pictogram **[!UICONTROL Detail]**.
 
    ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
 
-* In het **[!UICONTROL Tasks]** subtabblad worden alle taken gegroepeerd die aan de campagne zijn gekoppeld. In deze weergave kunt u ze bewerken of verwijderen. De taken zijn beschikbaar met de toepassing MRM. Ze worden gedetailleerd beschreven in [Taken](../../campaign/using/creating-and-managing-tasks.md)maken en beheren.
+* In het subtabblad **[!UICONTROL Tasks]** worden alle taken gegroepeerd die aan de campagne zijn gekoppeld. In deze weergave kunt u ze bewerken of verwijderen. De taken zijn beschikbaar met de toepassing MRM. Ze worden beschreven in [Taken maken en beheren](../../campaign/using/creating-and-managing-tasks.md).
 
    ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
-* De workflows die worden gemaakt om berichten voor serviceproviders te genereren, worden weergegeven op het **[!UICONTROL Jobs on service providers]** subtabblad. Klik op het **[!UICONTROL Detail]** pictogram om de geselecteerde workflow weer te geven.
+* De workflows die worden gemaakt om berichten voor serviceproviders te genereren, worden weergegeven op het subtabblad **[!UICONTROL Jobs on service providers]**. Klik op het pictogram **[!UICONTROL Detail]** om de geselecteerde workflow weer te geven.
 
    ![](assets/s_ncs_user_op_edit_exe_tab_d.png)
 
-## Aflevering volgen {#delivery-tracking}
+## Aflevering bijhouden {#delivery-tracking}
 
-De lijst met leveringen is beschikbaar via de **[!UICONTROL Deliveries]** koppeling van het knooppunt Campagne.
+De lijst met leveringen is beschikbaar via de koppeling **[!UICONTROL Deliveries]** van het knooppunt Campagne.
 
 ![](assets/s_ncs_user_op_del_state_from_homepage.png)
 
@@ -49,10 +49,10 @@ Als u de status van een levering wilt controleren, bewerkt u deze en bekijkt u h
 
 >[!NOTE]
 >
->Informatie over leveringsdetails is beschikbaar in de sectie [Verzendberichten](../../delivery/using/about-message-tracking.md) .
+>Informatie over leveringsdetails is beschikbaar in [Verzendberichten](../../delivery/using/about-message-tracking.md) sectie.
 
-## Uitvoering bijhouden {#execution-tracking}
+## Reeksspatiëring {#execution-tracking}
 
-U kunt de status van de leveringen opzoeken door op de pagina **[!UICONTROL Deliveries]** te klikken, die toegankelijk is via de startpagina van Adobe Campaign. Zie [Aflevering volgen](#delivery-tracking).
+U kunt de status van leveringen opzoeken door op de **[!UICONTROL Deliveries]** te klikken, die toegankelijk is via de Adobe Campaign-startpagina. Zie [Aflevering bijhouden](#delivery-tracking).
 
-Informatie over de processen die in een campagne worden uitgevoerd, wordt verzameld op het **[!UICONTROL Edit > Audit]** tabblad van de campagne. Daar kunt u de lijst met leveringen weergeven in de campagne. See [Tracking a campaign](#tracking-a-campaign).
+Informatie over de processen die in een campagne worden uitgevoerd, wordt verzameld op het tabblad **[!UICONTROL Edit > Audit]** van de campagne. Daar kunt u de lijst met leveringen weergeven in de campagne. Zie [Een campagne bijhouden](#tracking-a-campaign).
