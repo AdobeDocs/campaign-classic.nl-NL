@@ -15,14 +15,14 @@ ht-degree: 0%
 ---
 
 
-# Toegang tot Hadoop configureren {#configure-access-to-hadoop}
+# Toegang tot Hadoop {#configure-access-to-hadoop} configureren
 
 Gebruik de optie Campagne **Federated Data Access** (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Hadoop te configureren.
 
-1. Hadoop- [database configureren](#configuring-hadoop)
-1. De [externe Hadoop-account](#hadoop-external) configureren in Campagne
+1. [Hadoop-database](#configuring-hadoop) configureren
+1. Hadoop [externe account](#hadoop-external) configureren in campagne
 
-## Hadoop 3.0 configureren {#configuring-hadoop}
+## Hadoop 3.0 {#configuring-hadoop} configureren
 
 Als u verbinding wilt maken met een externe Hadoop-database in FDA, hebt u de volgende configuraties op de Adobe Campaign-server nodig. Deze configuratie is zowel voor Windows als voor Linux beschikbaar.
 
@@ -37,19 +37,19 @@ Als u verbinding wilt maken met een externe Hadoop-database in FDA, hebt u de vo
    systemctl start nlserver.service
    ```
 
-1. In Campaign Classic kunt u vervolgens uw [!DNL Hadoop] externe account configureren. Raadpleeg [deze sectie](#hadoop-external)voor meer informatie over het configureren van uw externe account.
+1. In Campaign Classic kunt u vervolgens uw [!DNL Hadoop] externe account configureren. Raadpleeg [deze sectie](#hadoop-external) voor meer informatie over het configureren van uw externe account.
 
-## Externe hadoop-account {#hadoop-external}
+## Hadoop externe account {#hadoop-external}
 
-Met de [!DNL Hadoop] externe account kunt u uw Campagne-instantie verbinden met uw externe Hadoop-database.
+Met de externe [!DNL Hadoop]-account kunt u uw Campagne-instantie verbinden met uw externe Hadoop-database.
 
-1. In Campaign Classic, vorm uw [!DNL Hadoop] externe rekening. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic, vorm uw [!DNL Hadoop] externe rekening. Klik in het **[!UICONTROL Explorer]** op **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Klik op **[!UICONTROL New]**.
 
-1. Selecteren **[!UICONTROL External database]** als externe account **[!UICONTROL Type]**.
+1. Selecteer **[!UICONTROL External database]** als **[!UICONTROL Type]** van uw externe rekening.
 
-1. Configureer de **[!UICONTROL Hadoop]** externe account. Geef de volgende instellingen op:
+1. Configureer de externe account **[!UICONTROL Hadoop]**. Geef de volgende instellingen op:
 
    * **[!UICONTROL Type]**: ODBC (Sybase ASE, Sybase IQ)
 
@@ -70,7 +70,7 @@ De schakelaar steunt de volgende opties ODBC:
 | Naam | Waarde |
 |---|---|
 | ODBCMgr | iODBC |
-| entrepot | 1/2/4 |
+| entrepot | 02-01-4 |
 
 De aansluiting ondersteunt ook de volgende opties voor Hive:
 
@@ -82,13 +82,13 @@ De aansluiting ondersteunt ook de volgende opties voor Hive:
 | fileFormat | PARQUET | Standaardbestandsindeling voor werktabellen. |
 
 
-## Hadoop 2.1 configureren {#configure-access-hadoop-2}
+## Hadoop 2.1 {#configure-access-hadoop-2} configureren
 
-Als u verbinding wilt maken met Hadoop 2.1, voert u de onderstaande stappen voor [Windows](#for-windows) of [Linux](#for-linux)uit.
+Als u verbinding moet maken met Hadoop 2.1, voert u de onderstaande stappen uit voor [Windows](#for-windows) of [Linux](#for-linux).
 
 ### Hadoop 2.1 voor Windows {#for-windows}
 
-1. Installeer ODBC- en [Azure HD Insight](https://www.microsoft.com/en-us/download/details.aspx?id=40886) -stuurprogramma&#39;s voor Windows.
+1. Installeer ODBC- en [Azure HD Insight](https://www.microsoft.com/en-us/download/details.aspx?id=40886)-stuurprogramma&#39;s voor Windows.
 1. Creeer DSN (de Naam van de Gegevensbron) door het hulpmiddel van de Beheerder van ODBC DataSource in werking te stellen. Een steekproef van DSN van het Systeem voor Hive wordt verstrekt voor u om te wijzigen.
 
    ```
@@ -155,7 +155,7 @@ Als u verbinding wilt maken met Hadoop 2.1, voert u de onderstaande stappen voor
    >
    >De parameter **UseNativeQuery** is hier erg belangrijk. De campagne is Hive-bewust en zal niet correct werken tenzij UseNativeQuery wordt geplaatst. Doorgaans herschrijft het stuurprogramma of de SQL-connector van Hive query&#39;s en wordt de kolomvolgorde gewijzigd.
 
-   De verificatie-instelling is afhankelijk van de configuratie Hive/Hadoop. Bijvoorbeeld, voor HD Insight, gebruik AuthMech=6 voor gebruiker/wachtwoordauthentificatie, zoals [hier](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm)beschreven.
+   De verificatie-instelling is afhankelijk van de configuratie Hive/Hadoop. Voor HD Insight gebruikt u bijvoorbeeld AuthMech=6 voor gebruikers-/wachtwoordverificatie, zoals [hier](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm) wordt beschreven.
 
 1. Exporteer de variabelen.
 
