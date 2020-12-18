@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Lijst van afgewezen personen databases{#denylist-databases}
+# databases met Lijst van afgewezen personen{#denylist-databases}
 
 Verscheidene organisaties handhaven gegevensbestanden van IP adressen en domeinen die worden genoemd om door spammers worden gebruikt. Het raadplegen van deze sites kan nuttig zijn om te begrijpen waarom bepaalde berichten zijn afgewezen als spam. Over het algemeen is het mogelijk te verzoeken dat een adres wordt verwijderd dat ten onrechte aan deze lijsten is toegevoegd.
 
@@ -25,7 +25,7 @@ Deze databases worden RBL&#39;s (Real-Time Blackgat Lists) genoemd en ze worden 
 * Op senderdomein: maakt een lijst van afzenderdomeinen (volledig domein van het stuiterende postadres) die spam verzenden of verkeerd gevormd.
 * Op webdomein: geeft een lijst weer van de domeinen (domeinen op hoog niveau zoals geregistreerd met de registrars) die in URLs van de verbindingen en beelden worden gevonden bevat in spaminhoud. In Adobe Campaign is het domein waarmee rekening moet worden gehouden doorgaans het adres dat wordt gebruikt voor het bijhouden van gegevens.
 
-Hieronder volgt een lijst van de meest gebruikte RBL&#39;s. Een uitgebreidere lijst vindt u op [https://www.dnsstuff.com/](https://tools.dnsstuff.com/).
+Hieronder volgt een lijst van de meest gebruikte RBL&#39;s. Voor een uitgebreidere lijst kunt u [https://www.dnsstuff.com/](https://tools.dnsstuff.com/) raadplegen.
 
 * **Spamhaus**
 
