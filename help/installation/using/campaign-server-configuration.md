@@ -19,15 +19,15 @@ ht-degree: 1%
 
 In de volgende secties worden verplichte serverconfiguraties beschreven die de efficiënte werking van Adobe Campaign voor de meeste sets garanderen.
 
-Er worden extra configuraties aangeboden in de [Campagneserver](../../installation/using/configuring-campaign-server.md)configureren.
+Aanvullende configuraties worden aangeboden in [Campagneserver configureren](../../installation/using/configuring-campaign-server.md).
 
 >[!NOTE]
 >
->Serverconfiguraties kunnen alleen worden uitgevoerd door Adobe voor implementaties die worden gehost door Adobe. Meer over de verschillende plaatsingen leren, verwijs naar de het [Ontvangen modelsectie](../../installation/using/hosting-models.md) of naar [de vermogensmatrijs](../../installation/using/capability-matrix.md).
+>Serverconfiguraties kunnen alleen worden uitgevoerd door Adobe voor implementaties die worden gehost door Adobe. Voor meer informatie over de verschillende plaatsingen, verwijs naar [Het ontvangen modellen](../../installation/using/hosting-models.md) sectie of aan [de capaciteitmatrijs](../../installation/using/capability-matrix.md).
 
 ## Interne id {#internal-identifier}
 
-De **interne** identificatiecode is een technische aanmelding die voor installatie-, beheer- en onderhoudsdoeleinden moet worden gebruikt. Deze aanmelding is niet gekoppeld aan een instantie.
+De **interne**-id is een technische aanmelding die moet worden gebruikt voor installatie-, beheer- en onderhoudsdoeleinden. Deze aanmelding is niet gekoppeld aan een instantie.
 
 Operatoren die verbinding hebben met deze aanmelding, beschikken over alle rechten. Deze aanmelding heeft geen wachtwoord in het geval van een nieuwe installatie. U moet dit wachtwoord handmatig definiëren.
 
@@ -51,34 +51,34 @@ Confirmation: XXXX
 
 ## Configuratiebestanden {#configuration-files}
 
-De configuratiebestanden worden opgeslagen in de map **conf** in de installatiemap van Adobe Campaign. De configuratie wordt verspreid over twee bestanden:
+De configuratiebestanden worden opgeslagen in de map **conf** van de installatiemap van Adobe Campaign. De configuratie wordt verspreid over twee bestanden:
 
-* **`config-<instance>.xml`** (waarbij de **instantie** de naam van de instantie is): specifieke configuratie van de instantie. Als u uw server onder verschillende exemplaren deelt, gelieve de parameters specifiek voor elke instantie in hun relevant dossier in te gaan.
+* **`config-<instance>.xml`** (waarbij  **** instantie de naam van de instantie is): specifieke configuratie van de instantie. Als u uw server onder verschillende exemplaren deelt, gelieve de parameters specifiek voor elke instantie in hun relevant dossier in te gaan.
 * **serverConf.xml**: algemene configuratie voor alle instanties. In dit bestand worden de technische parameters van de Adobe Campaign-server gecombineerd: deze worden door alle instanties gedeeld . Hieronder wordt een beschrijving van een aantal van deze parameters gegeven. Raadpleeg het bestand zelf om alle beschikbare parameters weer te geven. De verschillende knooppunten en parameters en vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
-U kunt de opslagdirectory (**var** directory) van Adobe Campaign-gegevens (logbestanden, downloads, omleidingen, enz.) configureren. Hiervoor gebruikt u de **systeemvariabele XTK_VAR_DIR** :
+U kunt de opslagdirectory (**var** directory) van Adobe Campaign-gegevens (logbestanden, downloads, omleidingen, enz.) configureren. Hiervoor gebruikt u de systeemvariabele **XTK_VAR_DIR**:
 
-* Geef in Windows de volgende waarde op in de **systeemvariabele XTK_VAR_DIR**
+* Geef in Windows de volgende waarde op in de systeemvariabele **XTK_VAR_DIR**
 
    ```
    D:\log\AdobeCampaign
    ```
 
-* Ga in Linux naar het bestand **customer.sh** en geef aan: **XTK_VAR_DIR=/app/log/AdobeCampaign** exporteren.
+* Ga in Linux naar het bestand **customer.sh** en geef aan: **exporteer XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
-   For more on this, refer to [Personalizing parameters](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
+   Raadpleeg [Parameters aanpassen](../../installation/using/installing-packages-with-linux.md#personalizing-parameters) voor meer informatie.
 
-## Processen inschakelen {#enabling-processes}
+## Bezig met inschakelen van processen {#enabling-processes}
 
-Adobe Campaign-processen op de server worden ingeschakeld (en uitgeschakeld) via **config-default.xml** en **`config-<instance>.xml`** bestanden.
+Adobe Campaign-processen op de server worden ingeschakeld (en uitgeschakeld) via de bestanden **config-default.xml** en **`config-<instance>.xml`**.
 
 Als u de wijzigingen op deze bestanden wilt toepassen en de Adobe Campaign-service is gestart, moet u de opdracht **nlserver config -reload** uitvoeren.
 
 Er zijn twee soorten processen: meerdere instanties en één instantie.
 
-* **meerdere instanties**: één proces is voor alle gevallen gestart . Dit geldt voor **web**-, **syslogd** - en **trackinglogd** -processen.
+* **meerdere instanties**: één proces is voor alle gevallen gestart . Dit is het geval voor **web**, **syslogd** en **trackinglogd** processen.
 
-   Enablement kan van het **config-default.xml** - dossier worden gevormd.
+   Enablement kan van het **config-default.xml** dossier worden gevormd.
 
    Adobe Campaign-server declareren voor toegang tot clientconsoles en voor omleiding (tracking):
 
@@ -89,9 +89,9 @@ Er zijn twee soorten processen: meerdere instanties en één instantie.
    <trackinglogd autoStart="true"/>
    ```
 
-   In dit voorbeeld wordt het bestand bewerkt met de opdracht **vi** in Linux. Deze kan worden bewerkt met elke **.txt** - of **.xml** -editor.
+   In dit voorbeeld wordt het bestand bewerkt met de opdracht **vi** in Linux. Het kan worden uitgegeven gebruikend om het even welke **.txt** of **.xml** redacteur.
 
-* **mono-instantie**: voor elke instantie wordt één proces gestart (modules: **mta**, **wfserver**, **inMail**, **sms** en **stat**).
+* **mono-instantie**: voor elke instantie wordt één proces gestart (modules:  **mta**,  **wfserver**,  **inMail**,  **** smand  **stat**).
 
    Enablement kan worden gevormd gebruikend het configuratiedossier van de instantie:
 
@@ -110,18 +110,18 @@ Er zijn twee soorten processen: meerdere instanties en één instantie.
 
 ## Afleveringsinstellingen {#delivery-settings}
 
-De leveringsparameters moeten worden geconfigureerd in de map **serverConf.xml** .
+De leveringsparameters moeten worden geconfigureerd in de map **serverConf.xml**.
 
-* **DNS-configuratie**: specificeer het leveringsdomein en de IP adressen (of gastheer) van de DNS servers die worden gebruikt om aan MX-type DNS vragen te antwoorden die door de MTA module van **`<dnsconfig>`** vanaf worden gemaakt.
+* **DNS-configuratie**: specificeer het leveringsdomein en de IP adressen (of gastheer) van de DNS servers die worden gebruikt om aan MX-type DNS vragen te antwoorden die door de MTA module van de  **`<dnsconfig>`** vanaf worden gemaakt.
 
    >[!NOTE]
    >
-   >De parameter **nameServers** is essentieel voor een installatie in Windows. Voor een installatie in Linux, moet het leeg worden verlaten.
+   >De **nameServers** parameter is essentieel voor een installatie in Vensters. Voor een installatie in Linux, moet het leeg worden verlaten.
 
    ```
    <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
    ```
 
-De andere leveringsparameters in dit bestand worden weergegeven in [leveringsparameters](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)aanpassen.
+De andere leveringsparameters in dit bestand worden weergegeven in [Leveringsparameters aanpassen](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
-Raadpleeg ook de [e-mailleverbaarheid](../../installation/using/email-deliverability.md).
+Raadpleeg ook [E-mailleverbaarbaarheid](../../installation/using/email-deliverability.md).
