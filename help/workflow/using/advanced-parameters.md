@@ -19,15 +19,15 @@ ht-degree: 2%
 
 Het eigenschappenscherm van een activiteit heeft een **[!UICONTROL Advanced]** lusje dat u een gedrag in het geval van fouten, de uitvoeringsperiode voor de activiteit laat bepalen; en kunt u een initialisatiescript invoeren. Er zijn twee versies van dit tabblad:
 
-* een vereenvoudigde versie ( bijvoorbeeld voor **[!UICONTROL Start]** en **[!UICONTROL End]** activiteiten )
+* een vereenvoudigde versie (bijvoorbeeld voor **[!UICONTROL Start]** en **[!UICONTROL End]** activiteiten)
 
    ![](assets/wf-advanced-basic.png)
 
-* een gedetailleerdere versie (bijvoorbeeld voor de **[!UICONTROL Query]** activiteit)
+* een gedetailleerdere versie (bijvoorbeeld voor de **[!UICONTROL Query]**-activiteit)
 
    ![](assets/wf-advanced-full.png)
 
-De velden die op het **[!UICONTROL Advanced]** tabblad moeten worden ingevoerd, worden in de volgende secties beschreven.
+De velden die moeten worden ingevoerd op het tabblad **[!UICONTROL Advanced]** worden in de volgende secties beschreven.
 
 ## Naam {#name}
 
@@ -35,7 +35,7 @@ Dit veld bevat de interne naam van de activiteit.
 
 ## Image {#image}
 
-In dit veld kunt u de afbeelding wijzigen die aan een activiteit is gekoppeld. Raadpleeg voor meer informatie: [Afbeeldingen](../../workflow/using/managing-activity-images.md)met activiteiten beheren.
+In dit veld kunt u de afbeelding wijzigen die aan een activiteit is gekoppeld. Raadpleeg voor meer informatie: [Activiteitenafbeeldingen beheren](../../workflow/using/managing-activity-images.md).
 
 ## Uitvoering {#execution}
 
@@ -47,13 +47,13 @@ Deze opties worden over het algemeen geselecteerd in het winkelwagentje door met
 * **[!UICONTROL Do not activate]**: deze taak en alle volgende taken (in dezelfde vertakking) worden niet uitgevoerd.
 * **[!UICONTROL Activate but do not execute]**: deze taak en alle volgende taken (in dezelfde vertakking) worden automatisch gestopt. Dit kan handig zijn als u er wilt zijn wanneer de taak wordt gestart. Als u de taak handmatig wilt uitvoeren, klikt u met de rechtermuisknop op de activiteit en selecteert u **[!UICONTROL Normal execution]**.
 
-## affiniteit {#affinity}
+## Affiniteit {#affinity}
 
-In dit veld kunt u de uitvoering van een activiteit op een specifieke computer forceren. For more on this, refer to: [Managing propensity](../../workflow/using/managing-propensity.md).
+In dit veld kunt u de uitvoering van een activiteit op een specifieke computer forceren. Raadpleeg voor meer informatie: [Propensiteit beheren](../../workflow/using/managing-propensity.md).
 
 ## Max. uitvoeringstermijn {#max--execution-period}
 
-In dit veld kunt u een waarschuwing instellen wanneer de taak te lang duurt. Het heeft geen invloed op de workflowbewerking. Als de taak niet tegen de tijd wordt gebeëindigd **[!UICONTROL Max. execution period]** is, zal de **[!UICONTROL Instance monitoring]** pagina een waarschuwing voor dit werkschema tonen. Deze pagina is toegankelijk via het **[!UICONTROL Monitoring]** tabblad van de startpagina.
+In dit veld kunt u een waarschuwing instellen wanneer de taak te lang duurt. Het heeft geen invloed op de workflowbewerking. Als de taak niet tegen de tijd wordt gebeëindigd **[!UICONTROL Max. execution period]** is, **[!UICONTROL Instance monitoring]** zal de pagina een waarschuwing voor dit werkschema tonen. Deze pagina is toegankelijk via het tabblad **[!UICONTROL Monitoring]** van de startpagina.
 
 ## Gedrag {#behavior}
 
@@ -64,7 +64,7 @@ In dit veld kunt u het gedrag definiëren dat moet worden toegepast bij het gebr
 
 ## Tijdzone {#time-zone}
 
-In dit veld kunt u de tijdzone van de activiteit selecteren. Voor meer informatie hierover: [Tijdzones](../../workflow/using/managing-time-zones.md)beheren.
+In dit veld kunt u de tijdzone van de activiteit selecteren. Voor meer informatie hierover: [Tijdzones beheren](../../workflow/using/managing-time-zones.md).
 
 ## Bij fouten {#in-case-of-errors}
 
@@ -79,4 +79,4 @@ In dit veld kunt u variabelen initialiseren of eigenschappen van activiteit wijz
 
 ## Opmerking {#comment}
 
-Het **[!UICONTROL Comment]** veld is een gratis veld waarin u een beschrijving kunt toevoegen.
+Het veld **[!UICONTROL Comment]** is een gratis veld waarin u een beschrijving kunt toevoegen.
