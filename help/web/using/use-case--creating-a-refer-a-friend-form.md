@@ -29,13 +29,13 @@ Om het verwijzingsblok te vormen en tot stand te brengen, pas de volgende stappe
 
    ![](assets/s_ncs_admin_survey_viral_sample_2.png)
 
-   In het veld **Uw bericht** kunt u een bericht voor de referentie invoeren. De referentie moet ook zijn **achternaam**, **voornaam** en **e-mail** invoeren.
+   Met het veld **Uw bericht** kunt u een bericht voor de referentie invoeren. De referentie moet ook zijn **Achternaam**, **Voornaam** en **E-mail** invoeren.
 
    De informatie die in de velden wordt ingevoerd, wordt opgeslagen in een specifieke tabel die de bezoekerstabel wordt genoemd.
 
    >[!NOTE]
    >
-   >Zolang de ontvanger zijn toestemming niet heeft gegeven, kunt u hen niet met de ontvangers in het gegevensbestand opslaan. Ze worden tijdelijk opgeslagen in de **bezoekerstabel** (**nms:bezoeker**) die is ontworpen voor virale marketingcampagnes. Deze tabel wordt regelmatig gezuiverd door **reinigingswerkzaamheden** .
+   >Zolang de ontvanger zijn toestemming niet heeft gegeven, kunt u hen niet met de ontvangers in het gegevensbestand opslaan. Ze worden tijdelijk opgeslagen in de tabel **bezoeker** (**nms:bezoeker**) die is ontworpen voor virale marketingcampagnes. Deze tabel wordt regelmatig gewist dankzij **reinigingsbewerkingen**.
    >
    >In dit voorbeeld willen we ontvangers aansporen om mee te doen aan de concurrentie die door hun referentie wordt aanbevolen. In dit bericht willen we ze echter ook een abonnement op een van onze informatiediensten aanbieden. Als zij zich abonneren, kunnen zij in het gegevensbestand worden opgeslagen.
 
@@ -65,7 +65,7 @@ Om het verwijzingsblok te vormen en tot stand te brengen, pas de volgende stappe
 
    ![](assets/s_ncs_admin_survey_viral_sample_4b.png)
 
-1. Dan creeer het leveringsmalplaatje verbonden aan de informatiedienst die tijdens stap 1 wordt gecreeerd. Deze wordt geselecteerd op het **[!UICONTROL Choose scenario]** gebied van de informatiedienst.
+1. Dan creeer het leveringsmalplaatje verbonden aan de informatiedienst die tijdens stap 1 wordt gecreeerd. Deze wordt geselecteerd in het veld **[!UICONTROL Choose scenario]** van de informatieservice.
 
    De leveringstemplate die wordt gebruikt om het verwijzingsaanbiedingsbericht te maken, bevat de volgende informatie:
 
@@ -83,7 +83,7 @@ Om het verwijzingsblok te vormen en tot stand te brengen, pas de volgende stappe
 
    * Deze sjabloon bevat een koppeling naar het concurrentieformulier en de abonnementskoppeling waarmee de scheidsrechter zich op de nieuwsbrief kan abonneren.
 
-      De abonnementskoppeling wordt ingevoegd via een aanpassingsblok. Standaard kunt u hiermee profielen abonneren op de **nieuwsbrief** . Dit verpersoonlijkingsblok kan worden veranderd om uw behoefte aan te passen, bijvoorbeeld om de ontvanger aan een verschillende dienst in te tekenen.
+      De abonnementskoppeling wordt ingevoegd via een aanpassingsblok. Door gebrek, laat het u profielen aan de **nieuwsbrief** dienst intekenen. Dit verpersoonlijkingsblok kan worden veranderd om uw behoefte aan te passen, bijvoorbeeld om de ontvanger aan een verschillende dienst in te tekenen.
 
    * De interne naam (&#39;referrer&#39; hier) zal in het manuscript van de berichtlevering worden gebruikt zoals hieronder getoond.
    >[!NOTE]
@@ -117,11 +117,11 @@ Om het verwijzingsblok te vormen en tot stand te brengen, pas de volgende stappe
     </delivery>)
    ```
 
-1. Publiceer het concurrentieformulier en verzend een uitnodiging aan de ontvangers van het oorspronkelijke doel. Wanneer één van hen een vriend uitnodigt, wordt een levering die op het malplaatje van de **Verwijzing wordt gebaseerd** gecreeerd.
+1. Publiceer het concurrentieformulier en verzend een uitnodiging aan de ontvangers van het oorspronkelijke doel. Wanneer één van hen een vriend uitnodigt, wordt een levering gebaseerd op **Referral aanbieding** malplaatje gecreeerd.
 
    ![](assets/s_ncs_admin_survey_viral_sample_8.png)
 
-   De referentie wordt toegevoegd aan de bezoekersmap in de **[!UICONTROL Administration > Visitors node]**:
+   De referentie wordt toegevoegd aan de bezoekersmap in **[!UICONTROL Administration > Visitors node]**:
 
    ![](assets/s_ncs_admin_survey_viral_sample_9.png)
 
