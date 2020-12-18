@@ -19,11 +19,11 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->In dit document wordt beschreven hoe u uw mobiele toepassing kunt integreren met het Adobe Campaign-platform. De klasse biedt geen informatie over hoe de mobiele toepassing moet worden gemaakt of hoe deze moet worden geconfigureerd voor het beheer van meldingen. Raadpleeg de officiële Apple- [documentatie](https://developer.apple.com/) en de Android- [documentatie](https://developer.android.com/index.html)voor meer informatie hierover.
+>In dit document wordt beschreven hoe u uw mobiele toepassing kunt integreren met het Adobe Campaign-platform. De klasse biedt geen informatie over hoe de mobiele toepassing moet worden gemaakt of hoe deze moet worden geconfigureerd voor het beheer van meldingen. Raadpleeg de officiële documentatie [van Apple](https://developer.apple.com/) en Android [documentatie](https://developer.android.com/index.html) als u hierover meer informatie wilt.
 
 In de onderstaande secties vindt u informatie die specifiek is voor het mobiele toepassingskanaal.
 
-Raadpleeg[deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md)voor algemene informatie over het maken van een levering.
+Voor globale informatie over hoe te om een levering tot stand te brengen, verwijs naar [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 Met het **Mobile App Channel** kunt u het Adobe Campaign-platform gebruiken om gepersonaliseerde meldingen naar iOS- en Android-terminals te verzenden via apps. Er zijn twee leveringskanalen beschikbaar:
 
@@ -54,9 +54,9 @@ U kunt het toepassingsgedrag bepalen voor wanneer de gebruiker het bericht activ
 >* Waarschuwing: in sommige landen vereist de wet dat u de gebruikers informeert over uw verzamelde datatype mobiele toepassingen en het doel van hun verwerking . U moet de wetgeving controleren.
 
 
-Met de **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt)-workflow worden afmeldingsopties op mobiele apparaten bijgewerkt. For more information on this workflow, refer to the [Workflows guide](../../workflow/using/mobile-app-channel.md).
+Met de **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt)-workflow worden abonnementen op mobiele apparaten bijgewerkt. Raadpleeg de [Workflows-handleiding](../../workflow/using/mobile-app-channel.md) voor meer informatie over deze workflow.
 
-Adobe Campaign is compatibel met zowel binaire als HTTP/2 APNs. Raadpleeg de sectie Een mobiele toepassing [configureren in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) voor meer informatie over de configuratiestappen.
+Adobe Campaign is compatibel met zowel binaire als HTTP/2 APNs. Raadpleeg de sectie [Een mobiele toepassing configureren in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) voor meer informatie over de configuratiestappen.
 
 ## Gegevenspad {#data-path}
 
@@ -74,7 +74,7 @@ De mobiele toepassing wordt door de gebruiker gedownload van de App Store of van
 
 ![](assets/nmac_register_view.png)
 
-### Stap 2: Aflevering {#step-2--delivery}
+### Stap 2: Levering {#step-2--delivery}
 
 Marketers richten zich op toepassingsabonnees. Het leveringsproces verzendt de verbindingsmontages naar de berichtdienst (iOS certificaat en projectsleutel voor Android), bericht identiteitskaart (duw identiteitskaart) en de inhoud van het bericht. De kennisgevingsdienst stuurt meldingen naar de beoogde terminals.
 
