@@ -19,13 +19,13 @@ ht-degree: 4%
 
 Ingebouwde objecten moeten worden gecontroleerd en voorkomen dat ze te veel groeien is belangrijk.
 
-## Volgorde van id&#39;s {#sequence-of-ids}
+## Reeks id&#39;s {#sequence-of-ids}
 
 Adobe Campaign gebruikt een id-reeks die dienovereenkomstig moet worden gebruikt: **xtkNewId**. Als de reeks zeer snel wordt verbruikt (d.w.z. van 100.000 per dag), moet u verifiëren dat het met uw bedrijfsvereisten, zoals het verzenden van miljoenen e-mails per dag verenigbaar is. Het is mogelijk om een specifieke opeenvolging voor bepaalde lijsten te bepalen. U kunt een workflow instellen om het gebruik van de id te controleren.
 
 Wanneer de opeenvolging meer dan 2 miljard (2.147.483.648 is het nauwkeurige aantal) bereikt, gaat het terug naar nul. Het moet worden vermeden en er moeten problemen ontstaan, en daarom moet deze volgorde worden bewaakt.
 
-Als u dit met grote tabellen wilt voorkomen, kunt u een specifieke reeks gebruiken. Dit kan met het **pkSequence** attribuut in het schema worden gedaan.
+Als u dit met grote tabellen wilt voorkomen, kunt u een specifieke reeks gebruiken. Dit kan met **pkSequence** attributen in het schema worden gedaan.
 
 Workflows met hoge frequentie die veel logbestanden maken, verbruiken veel id&#39;s. Daarom wordt het ten zeerste aanbevolen te veel logbestanden en hoge frequenties in workflows te vermijden.
 
@@ -47,11 +47,11 @@ Leveringen ouder dan twee jaar moeten uit het geval worden verwijderd.
 
 Het aantal bestanden op de schijf van de toepassingsserver mag niet oneindig toenemen.
 
-De werkschema&#39;s van de invoer leiden tot dossiers en veroorzaken daarom schijfuitbreiding. Dit kan worden voorkomen door de standaardactiviteit van de [inzamelaar](../../workflow/using/file-collector.md) van het Dossier te gebruiken. De bestandscollector verplaatst bestanden naar een tijdelijke map en schoont deze automatisch op.
+De werkschema&#39;s van de invoer leiden tot dossiers en veroorzaken daarom schijfuitbreiding. Dit kan worden voorkomen door de standaardactiviteit [Bestandscollector](../../workflow/using/file-collector.md) te gebruiken. De bestandscollector verplaatst bestanden naar een tijdelijke map en schoont deze automatisch op.
 
 Als een werkstroom bestanden importeert en geen gebruik maakt van de standaardfuncties, moet deze worden leeggemaakt om schijfruimte tot een minimum te beperken.
 
-## Transactionele gegevens en logboeken {#transactional-data-and-logs}
+## Transactiegegevens en -logbestanden {#transactional-data-and-logs}
 
 Elke [werkstroom](../../workflow/using/data-life-cycle.md#work-table) die gegevens in Adobe Campaign invoert veroorzaakt de grootte van het gegevensbestand om te groeien.
 
