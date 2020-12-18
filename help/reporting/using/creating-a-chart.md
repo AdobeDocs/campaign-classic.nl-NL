@@ -21,7 +21,7 @@ De gegevens in het gegevensbestand kunnen ook in een grafiek worden verzameld en
 
 grafieken worden rechtstreeks in een rapportpagina ingevoegd via het snelmenu of de werkbalk.
 
-## Aanmaakstappen {#creation-steps}
+## Stappen {#creation-steps} maken
 
 Pas de volgende stappen toe om een grafiek in een rapport te maken:
 
@@ -33,15 +33,15 @@ Pas de volgende stappen toe om een grafiek in een rapport te maken:
 
    ![](assets/s_ncs_advuser_report_wizard_018.png)
 
-1. Klik op het **[!UICONTROL Data]** tabblad om de gegevensbron en de te berekenen reeks te definiëren.
+1. Klik op het tabblad **[!UICONTROL Data]** om de gegevensbron en de te berekenen reeks te definiëren.
 
-   De statistieken die in de grafiek moeten worden getoond kunnen worden berekend gebaseerd op een vraag of op de contextgegevens, d.w.z. de gegevens die door de binnenkomende overgang van de huidige pagina worden verstrekt (voor meer op dit, verwijs naar het [Gebruiken van contextgegevens](../../reporting/using/using-the-context.md#using-context-data)).
+   De statistieken die in de grafiek moeten worden getoond kunnen worden berekend gebaseerd op een vraag of op de contextgegevens, d.w.z. de gegevens die door de binnenkomende overgang van de huidige pagina worden verstrekt (voor meer op dit, verwijs naar [Using contextgegevens](../../reporting/using/using-the-context.md#using-context-data)).
 
-   * Klik op de **[!UICONTROL Filter data...]** koppeling om filtercriteria voor de gegevens in de database te definiëren.
+   * Klik op de koppeling **[!UICONTROL Filter data...]** om filtercriteria voor de gegevens in de database te definiëren.
 
       ![](assets/reporting_graph_add_filter.png)
 
-   * Als u contextafhankelijke gegevens wilt gebruiken, selecteert u deze optie en klikt u op de **[!UICONTROL Advanced settings...]** koppeling. Selecteer vervolgens de gegevens waarop de statistieken betrekking hebben.
+   * Als u contextafhankelijke gegevens wilt gebruiken, selecteert u deze optie en klikt u op de koppeling **[!UICONTROL Advanced settings...]**. Selecteer vervolgens de gegevens waarop de statistieken betrekking hebben.
 
       ![](assets/reporting_graph_from_context.png)
 
@@ -57,13 +57,13 @@ Het grafiektype wordt geselecteerd wanneer het in de pagina wordt opgenomen.
 
 ![](assets/s_advuser_report_page_activity_04.png)
 
-Het kan ook worden gewijzigd via de **[!UICONTROL Chart type]** sectie van het **[!UICONTROL General]** tabblad in het diagram.
+Het kan ook worden gewijzigd via de sectie **[!UICONTROL Chart type]** van het tabblad **[!UICONTROL General]** in het diagram.
 
 ![](assets/reporting_change_graph_type.png)
 
-Varianten zijn afhankelijk van het geselecteerde diagramtype. Ze worden via de **[!UICONTROL Variants...]** koppeling geselecteerd.
+Varianten zijn afhankelijk van het geselecteerde diagramtype. Ze worden geselecteerd via de koppeling **[!UICONTROL Variants...]**.
 
-### Indeling: cirkeldiagrammen {#breakdown--pie-charts}
+### Indeling: schijfgrafieken {#breakdown--pie-charts}
 
 Met dit type grafische weergave kunt u een overzicht van de gemeten elementen weergeven.
 
@@ -71,7 +71,7 @@ Met schijfgrafieken kunt u slechts één variabele analyseren.
 
 ![](assets/reporting_graph_type_sector_1.png)
 
-Met de **[!UICONTROL Variants]** koppeling kunt u de algemene rendering van het diagram aanpassen.
+Met de koppeling **[!UICONTROL Variants]** kunt u de algemene rendering van de grafiek aanpassen.
 
 ![](assets/reporting_graph_type_sector_2.png)
 
@@ -101,11 +101,11 @@ Met dit type grafische weergave kunt u de evolutie van een of meer maatstaven in
 
 Met histogrammen kunt u de waarden van een of meer variabelen vergelijken.
 
-Voor deze typen grafieken worden de volgende opties aangeboden in het **[!UICONTROL Variants]** venster:
+Voor deze typen grafieken worden de volgende opties aangeboden in het venster **[!UICONTROL Variants]**:
 
 ![](assets/reporting_select_graph_var.png)
 
-Schakel de **[!UICONTROL Display caption]** optie in om het bijschrift met het diagram weer te geven en de positie ervan te kiezen:
+Schakel de optie **[!UICONTROL Display caption]** in om het bijschrift met het diagram te tonen en de positie ervan te kiezen:
 
 ![](assets/reporting_select_graph_legend.png)
 
@@ -113,13 +113,13 @@ Indien van toepassing, kunt u waarden samen stapelen.
 
 ![](assets/reporting_graph_type_histo.png)
 
-Indien nodig kunt u de weergavevolgorde van waarden omkeren. To do this, select the **[!UICONTROL Reverse stacking]** option.
+Indien nodig kunt u de weergavevolgorde van waarden omkeren. Selecteer de optie **[!UICONTROL Reverse stacking]** om dit te doen.
 
 ### Conversie: trechter {#conversion--funnel}
 
 Dit type van grafiek laat u het gesprekstarief van gemeten elementen volgen.
 
-### Voortgang: profiel {#progress--gauge}
+### Voortgang: omgrenzing {#progress--gauge}
 
 Met dit diagramtype kunt u de voortgang van een waarde ten opzichte van een gedefinieerd doel weergeven. In het onderstaande voorbeeld toont de zwarte wijzerplaat het aantal met succes verzonden leveringen (76) van een doel van 100 leveringen. Het omgrenzingsprofiel is verdeeld in drie bereiken die overeenkomen met specifieke statussen.
 
@@ -130,36 +130,36 @@ Deze elementen worden bepaald wanneer het vormen van de grafiek.
 ![](assets/reporting_graph_type_gauge1.png)
 
 * Het **[!UICONTROL Value]** gebied wordt vertegenwoordigd door een zwarte wijzerplaat in de grafiek. Het vertegenwoordigt het element waarvan vooruitgang u zou willen berekenen. De waarde die moet worden weergegeven, moet al zijn opgeslagen om te kunnen worden gebruikt.
-* Het **[!UICONTROL Goal]** veld vertegenwoordigt de maximale waarde die moet worden bereikt.
-* Met behulp van het **[!UICONTROL Other mark]** veld kunt u een tweede indicator aan het diagram toevoegen.
-* In de **[!UICONTROL Display range]** velden kunt u de waarden opgeven waartussen het rapport wordt berekend.
-* In het **[!UICONTROL Value ranges]** veld kunt u statussen (Geen, Slecht, Aanvaardbaar, Goed) toewijzen aan een set waarden om de voortgang beter te illustreren.
+* Het veld **[!UICONTROL Goal]** vertegenwoordigt de maximale waarde die moet worden bereikt.
+* Met het veld **[!UICONTROL Other mark]** kunt u een tweede indicator aan het diagram toevoegen.
+* In de velden **[!UICONTROL Display range]** kunt u de waarden opgeven waartussen het rapport wordt berekend.
+* In het veld **[!UICONTROL Value ranges]** kunt u statussen (Geen, Slecht, Acceptabel, Goed) toewijzen aan een set waarden om de voortgang beter te kunnen illustreren.
 
-In de **[!UICONTROL Display settings]** sectie, **[!UICONTROL Change appearance...]** laat u de manier vormen de grafiek wordt getoond.
+In **[!UICONTROL Display settings]** sectie, **[!UICONTROL Change appearance...]** laat u vormen de manier de grafiek wordt getoond.
 
 ![](assets/reporting_graph_type_gauge2.png)
 
-Met de **[!UICONTROL Display the value below the gauge]** optie kunt u de voortgang van de waarde onder het diagram weergeven.
+Met de optie **[!UICONTROL Display the value below the gauge]** kunt u de voortgang van de waarde onder het diagram weergeven.
 
-In het **[!UICONTROL Aperture ratio]** veld, dat tussen 0 en 1 moet liggen, kunt u de lensopening van het rapport in een meer of minder volledige cirkel bewerken. In het bovenstaande voorbeeld komt de waarde 0,50 overeen met een halve cirkel.
+Het **[!UICONTROL Aperture ratio]** gebied, dat tussen 0 en 1 moet zijn, laat u de opening van het rapport in een meer of minder volledige cirkel uitgeven. In het bovenstaande voorbeeld komt de waarde 0,50 overeen met een halve cirkel.
 
-In het **[!UICONTROL Width]** veld kunt u de diagramgrootte bewerken.
+In het veld **[!UICONTROL Width]** kunt u de diagramgrootte bewerken.
 
 ## Interactie met de grafiek {#interaction-with-the-chart}
 
-U kunt een actie bepalen wanneer de gebruiker de grafiek klikt. Open het **[!UICONTROL Interaction events]** venster en selecteer de handeling die u wilt uitvoeren.
+U kunt een actie bepalen wanneer de gebruiker de grafiek klikt. Open het venster **[!UICONTROL Interaction events]** en selecteer de handeling die u wilt uitvoeren.
 
-Mogelijke interactietypen en de bijbehorende configuraties worden in [deze sectie](../../web/using/static-elements-in-a-web-form.md#inserting-html-content)beschreven.
+Mogelijke interactietypen en hun configuraties worden beschreven in [deze sectie](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
 
 ![](assets/s_ncs_advuser_report_wizard_017.png)
 
-## Berekening van statistieken {#calculating-statistics}
+## Statistieken {#calculating-statistics} berekenen
 
-Met grafieken kunt u statistieken weergeven over de verzamelde gegevens.
+Met grafieken kunt u statistieken van de verzamelde gegevens weergeven.
 
-Deze statistieken worden bepaald via de **[!UICONTROL Series parameters]** sectie van het **[!UICONTROL Data]** lusje.
+Deze statistieken worden gedefinieerd via de sectie **[!UICONTROL Series parameters]** van het tabblad **[!UICONTROL Data]**.
 
-Als u een nieuwe statistiek wilt maken, klikt u op het **[!UICONTROL Add]** pictogram en configureert u het desbetreffende venster. De beschikbare berekeningstypen worden hieronder beschreven.
+Als u een nieuwe statistiek wilt maken, klikt u op het pictogram **[!UICONTROL Add]** en configureert u het desbetreffende venster. De beschikbare berekeningstypen worden hieronder beschreven.
 
 ![](assets/reporting_add_statistics.png)
 
