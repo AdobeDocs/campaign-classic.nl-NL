@@ -29,7 +29,7 @@ Dit hoofdstuk verstrekt een overzicht van hoe te om de toepassingen van het Web 
 
 >[!NOTE]
 >
->Raadpleeg de checklist [voor](https://helpx.adobe.com/nl/campaign/kb/acc-security.html) beveiliging en privacy voor meer informatie over het optimaliseren van beveiliging voor webtoepassingen.
+>Raadpleeg [Controlelijst Beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html) voor informatie over het optimaliseren van beveiliging voor webtoepassingen.
 
 >[!CAUTION]
 >
@@ -52,7 +52,7 @@ Webtoepassingen in Adobe Campaign bieden toegang tot de volgende mogelijkheden:
 * Gebruik van afbeeldingen, video&#39;s, hypertextkoppelingen, captcha, enzovoort. Raadpleeg [deze pagina](../../web/using/editing-content.md) voor meer informatie.
 * Monitoring van reacties in real time. Raadpleeg [deze pagina](../../web/using/publish--track-and-use-collected-data.md#response-tracking) voor meer informatie.
 
-De optionele module voor het maken van **enquêtes** biedt de volgende aanvullende functies:
+De optionele **Beoordelingsmodule** aanmaakmodule biedt de volgende aanvullende functies:
 
 * Dynamische extensie van de database: het maken van reacties die niet in de oorspronkelijke gegevenssjabloon zijn opgenomen. Raadpleeg [deze pagina](../../web/using/managing-answers.md#storing-collected-answers) voor meer informatie.
 * Speciale rapporten genereren. Raadpleeg [deze pagina](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys) voor meer informatie.
@@ -61,26 +61,26 @@ Vergeleken met de toepassingen van het Web, hebben de onderzoeken een vereenvoud
 
 >[!NOTE]
 >
->Enquêtes worden in [deze sectie](../../web/using/about-surveys.md)beschreven.
+>Enquêtes worden beschreven in [deze sectie](../../web/using/about-surveys.md).
 >
->De algemene functies van webformulieren in Adobe Campaign worden in [deze sectie](../../web/using/about-web-forms.md)beschreven.
+>De algemene functies van webformulieren in Adobe Campaign worden beschreven in [deze sectie](../../web/using/about-web-forms.md).
 
-## Implementatie van webtoepassingen {#web-application-implementation}
+## Implementatie van webtoepassing {#web-application-implementation}
 
 Om een toepassing van het Web tot stand te brengen en te posten, moet u:
 
 1. Maak de inhoud (velden, lijsten, tabellen, grafieken, enz.).
 
-   U kunt ook de sectie weergeven waarin de beschikbare velden voor formulieren worden weergegeven: al deze gebieden zijn ook beschikbaar voor de toepassingen van het Web. Deze informatie is beschikbaar op [deze pagina](../../web/using/adding-fields-to-a-web-form.md).
+   U kunt ook de sectie weergeven waarin de beschikbare velden voor formulieren worden weergegeven: al deze gebieden zijn ook beschikbaar voor de toepassingen van het Web. Deze informatie is beschikbaar in [deze pagina](../../web/using/adding-fields-to-a-web-form.md).
 
 1. Zoals vereist, kunt u het vooraf laden toevoegen, testen, en besparingsstappen, en het toegangsbeheersysteem (hoofdzakelijk binnen het kader van een Extranetpublicatie) vormen.
 1. Het publiceren van de toepassing van het Web om het op een Extranet of in Adobe Campaign ter beschikking te stellen.
 
-## Aanvankelijke configuratie webtoepassing {#web-application-initial-configuration}
+## Aanvankelijke configuratie van webtoepassing {#web-application-initial-configuration}
 
 De toepassing van het Web wordt gecreeerd via de **[!UICONTROL Web Applications]** verbinding in **[!UICONTROL Campaigns]** en **[!UICONTROL Profiles and targets]** lusjes.
 
-Webtoepassingen worden opgeslagen in het **[!UICONTROL Resources > Online > Web Applications]** knooppunt van de Adobe Campaign-structuur. Configuraties worden uitgesplitst in de volgende mappen:
+Webtoepassingen worden opgeslagen in het knooppunt **[!UICONTROL Resources > Online > Web Applications]** van de Adobe Campaign-structuur. Configuraties worden uitgesplitst in de volgende mappen:
 
 * **[!UICONTROL Administration > Configuration > Form renderings]**: bevat de renderingsjablonen voor de webformulierpresentatie (toepassingen en enquêtes). Met de sjabloon kunt u het formulier genereren. Er wordt ook een CSS-stijlpagina gebruikt. Deze stijlpagina kan op sjabloonniveau worden overgeladen. Raadpleeg [deze pagina](../../web/using/form-rendering.md#selecting-the-form-rendering-template) voor meer informatie.
 * **[!UICONTROL Resources > Templates > Web application templates]**: bevat formuliersjablonen. Als u een formulier of een webtoepassing wilt maken, moet u beginnen met een sjabloon.
@@ -93,7 +93,7 @@ Adobe Campaign biedt standaard één sjabloon per beschikbare webtoepassing.
 >
 >U kunt een bestaande toepassing van het Web in een malplaatje omzetten. Selecteer hiertoe het formulier en klik met de rechtermuisknop. Selecteer **[!UICONTROL Actions > Save as template...]**.
 
-U kunt nieuwe sjablonen maken via het **[!UICONTROL Resources > Templates > Web Application templates]** knooppunt van de Adobe Campaign-structuur.
+U kunt nieuwe sjablonen maken via het knooppunt **[!UICONTROL Resources > Templates > Web Application templates]** van de Adobe Campaign-structuur.
 
 Met de wizard Maken kunt u de opties selecteren die u wilt inschakelen, zoals hieronder wordt weergegeven.
 
