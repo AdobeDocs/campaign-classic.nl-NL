@@ -24,19 +24,19 @@ U kunt het bijhouden van wijzigingen testen op spiegelpagina&#39;s, e-maillogboe
 1. Voeg een spiegelpagina (MirrorPage) verpersoonlijkingsblok in de e-mailinhoud toe.
 1. Verzend de levering die een verbinding aan de spiegelpagina bevat.
 1. Nadat u het e-mailbericht hebt ontvangen, opent u het en klikt u op de koppeling naar de spiegelpagina.
-1. Nadat u correct aan de spiegelpagina wordt opnieuw gericht, open het **Beleid > de omslag van Technische werkschema** en open het **Volgen** werkschema.
-1. Start de workflow, klik met de rechtermuisknop op de activiteit **Planner** en selecteer **Taak die in behandeling is nu** uitvoeren.
-1. Wacht ongeveer 30 seconden, dan selecteer de **Controle** tabel. Zorg ervoor dat ten minste één logrecord voor bijhouden is gevonden.
+1. Nadat u correct aan de spiegelpagina wordt opnieuw gericht, heb toegang tot **Beheer > Technische werkschema&#39;s** omslag en open **Tracking** werkschema.
+1. Start de workflow, klik met de rechtermuisknop op **Scheduler** en selecteer **Taak in behandeling nu uitvoeren**.
+1. Wacht ongeveer 30 seconden, dan selecteer **Audit** tabel. Zorg ervoor dat ten minste één logrecord voor bijhouden is gevonden.
 
-   Klik op **Vernieuwen** als er geen nieuwe logbestanden worden weergegeven.
+   Klik **Vernieuwen** als u geen nieuwe logboeken ziet.
 
-1. Ga naar de profielpagina van de ontvanger u voor de test gebruikte, en selecteer het **Volgen** lusje. Sommige records moeten worden weergegeven met de waarde voor **Pagina** spiegelen in de kolom **Type** .
+1. Ga naar de profielpagina van de ontvanger u voor de test gebruikte, en selecteer **Tracking** tabel. Sommige records moeten worden weergegeven met de waarde **Pagina spiegelen** in de kolom **Type**.
 
    >[!NOTE]
    >
-   >De profielpagina van de ontvanger bevindt zich standaard in de map **Profielen en doelen > Ontvangers** .
+   >De profielpagina van de ontvanger bevindt zich standaard in de map **Profielen en doelen > Ontvangers**.
 
-   Als u het bijhouden van e-maillogbestanden wilt controleren, zoekt u de waarden **Open** en **[!UICONTROL Email click]** in de kolom **Type** .
+   Als u het bijhouden van e-maillogbestanden wilt controleren, zoekt u de waarden **Open** en **[!UICONTROL Email click]** in de kolom **Type**.
 
-   Als de geopende logboeken niet worden weergegeven, gaat u naar de levering en opent u de bijbehorende **eigenschappen** om ervoor te zorgen dat zowel de optie **Tekstspatiëring** activeren als de **[!UICONTROL Opens tracking]** opties zijn ingeschakeld.
+   Als de open logboeken niet verschijnen, ga naar de levering en open zijn **Eigenschappen** om ervoor te zorgen dat zowel **het volgen** als **[!UICONTROL Opens tracking]** opties wordt gecontroleerd.
 
