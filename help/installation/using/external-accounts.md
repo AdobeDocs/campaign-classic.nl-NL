@@ -41,7 +41,7 @@ U kunt de volgende typen externe accounts instellen:
 
 Voer de onderstaande stappen uit om een nieuwe externe account te maken. Gedetailleerde instellingen zijn afhankelijk van het type externe account.
 
-1. Selecteer in Campagne **[!UICONTROL Explorer]** de optie **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Selecteer **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**&#39; in Campagne **[!UICONTROL Explorer]**.
 
    ![](assets/ext_account_1.png)
 
@@ -49,26 +49,26 @@ Voer de onderstaande stappen uit om een nieuwe externe account te maken. Gedetai
 
    ![](assets/ext_account_2.png)
 
-1. Enter a **[!UICONTROL Label]** and an **[!UICONTROL Internal Name]**.
-1. Selecteer de externe account **[!UICONTROL Type]** die u wilt maken.
+1. Voer een **[!UICONTROL Label]** en een **[!UICONTROL Internal Name]** in.
+1. Selecteer uw externe account **[!UICONTROL Type]** die u wilt maken.
 1. Configureer de toegang tot de account door referenties op te geven, afhankelijk van het gekozen type externe account.
 
    De benodigde informatie wordt meestal verstrekt door de provider van de server waarmee u verbinding maakt.
 
-1. Schakel de **[!UICONTROL Enabled]** optie in om de verbinding te activeren.
+1. Schakel de optie **[!UICONTROL Enabled]** in om de verbinding te activeren.
 1. Klik op **[!UICONTROL Save]**.
 
 De externe account wordt gemaakt en toegevoegd aan de lijst met externe accounts.
 
 ## Externe account voor stuiterende berichten {#bounce-mails-external-account}
 
-Met de externe account **Bounce mails** wordt de externe POP3-account opgegeven die moet worden gebruikt om verbinding te maken met de e-mailservice. For more on this external account, refer to this [page](../../workflow/using/inbound-emails.md).
+Met de externe account **Bounce mails** wordt de externe POP3-account opgegeven die moet worden gebruikt om verbinding te maken met de e-mailservice. Raadpleeg deze [pagina](../../workflow/using/inbound-emails.md) voor meer informatie over deze externe account.
 
 Alle servers die voor POP3 toegang worden gevormd kunnen worden gebruikt om terugkeerpost te ontvangen.
 
 ![](assets/ext_account_6.png)
 
-De **[!UICONTROL Bounce mails (defaultPopAccount)]** externe account configureren:
+Om de **[!UICONTROL Bounce mails (defaultPopAccount)]** externe rekening te vormen:
 
 * **[!UICONTROL Server]**
 
@@ -88,11 +88,11 @@ De **[!UICONTROL Bounce mails (defaultPopAccount)]** externe account configurere
 
 * **[!UICONTROL Encryption]**
 
-   Type van gekozen encryptie tussen **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** of **[!UICONTROL POP3S]**.
+   Type gekozen codering tussen **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** of **[!UICONTROL POP3S]**.
 
-## Externe account routeren {#routing-external-account}
+## Externe account {#routing-external-account} routeren
 
-Met de **[!UICONTROL Routing]** externe account kunt u elk kanaal configureren dat beschikbaar is in Adobe Campaign, afhankelijk van de geïnstalleerde pakketten.
+Met de externe account **[!UICONTROL Routing]** kunt u elk kanaal dat beschikbaar is in Adobe Campaign configureren, afhankelijk van de geïnstalleerde pakketten.
 
 ![](assets/ext_account_7.png)
 
@@ -108,7 +108,7 @@ De volgende kanalen kunnen worden gevormd:
 * [iOS-kanaal](../../delivery/using/configuring-the-mobile-application.md)
 * [Android-kanaal](../../delivery/using/configuring-the-mobile-application-android.md)
 
-## Externe FTP-account {#ftp-external-account}
+## FTP externe account {#ftp-external-account}
 
 Met de externe FTP-account kunt u toegang tot een server buiten Adobe Campaign configureren en testen. Als u verbindingen wilt instellen met externe systemen, zoals FTP-servers 898 die worden gebruikt voor bestandsoverdracht, kunt u uw eigen externe accounts maken. Raadpleeg [deze pagina](../../workflow/using/file-transfer.md) voor meer informatie.
 
@@ -134,48 +134,48 @@ Hiertoe geeft u in deze externe account het adres en de referenties op waarmee d
 
 * **[!UICONTROL Encryption]**
 
-   Type gekozen encryptie tussen **[!UICONTROL None]** of **[!UICONTROL SSL]**.
+   Type van gekozen encryptie tussen **[!UICONTROL None]** of **[!UICONTROL SSL]**.
 
-Op deze [pagina](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials)vindt u de locatie van deze referenties.
+Om te weten waar te om van deze geloofsbrieven de plaats te bepalen, verwijs naar deze [pagina](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials).
 
 ## Externe externe database-account {#external-database-external-account}
 
-Gebruik het **externe databasetype** externe account om verbinding te maken met een externe database. Meer informatie over de FDA-optie (Federated Data Access) vindt u in [deze sectie](../../installation/using/about-fda.md).
+Gebruik de **External database** type external account om verbinding te maken met een externe database. Meer informatie over de optie Federated Data Access (FDA) in [deze sectie](../../installation/using/about-fda.md).
 
-Externe databases die compatibel zijn met Campagne, worden vermeld in de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md)
+Externe databases die compatibel zijn met Campagne worden vermeld in de [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md)
 
 ![](assets/ext_account_11.png)
 
 De instellingen voor externe accountconfiguratie zijn afhankelijk van de database-engine. Meer informatie vindt u in de volgende secties:
 
-* Toegang tot [Azure synapse configureren](../../installation/using/configure-fda-synapse.md)
-* Toegang tot [Hadoop configureren](../../installation/using/configure-fda-hadoop.md)
-* Toegang tot [Oracle configureren](../../installation/using/configure-fda-oracle.md)
-* Toegang tot [Netezza configureren](../../installation/using/configure-fda-netezza.md)
-* Toegang tot [SAP HANA configureren](../../installation/using/configure-fda-sap-hana.md)
-* Toegang tot [Snowflake configureren](../../installation/using/configure-fda-snowflake.md)
-* Toegang tot [Sybase IQ configureren](../../installation/using/configure-fda-sybase.md)
-* Toegang tot [Teradata configureren](../../installation/using/configure-fda-teradata.md)
+* Toegang tot [Azure synapse](../../installation/using/configure-fda-synapse.md) configureren
+* Toegang tot [Hadoop](../../installation/using/configure-fda-hadoop.md) configureren
+* Toegang tot [Oracle](../../installation/using/configure-fda-oracle.md) configureren
+* Toegang tot [Netezza](../../installation/using/configure-fda-netezza.md) configureren
+* Toegang tot [SAP HANA](../../installation/using/configure-fda-sap-hana.md) configureren
+* Toegang tot [Snowflake](../../installation/using/configure-fda-snowflake.md) configureren
+* Toegang tot [Sybase IQ](../../installation/using/configure-fda-sybase.md) configureren
+* Toegang tot [Teradata](../../installation/using/configure-fda-teradata.md) configureren
 
 ## Externe account voor webanalyse {#web-analytics-external-account}
 
-Met de **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** externe account kunt u gegevens van Adobe Analytics naar Adobe Campaign doorsturen in de vorm van segmenten. Omgekeerd verzendt het programma indicatoren en kenmerken van e-mailcampagnes die door Adobe Campaign worden geleverd aan Adobe Analytics - Gegevensconnector.
+Met de externe account **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** kunt u gegevens van Adobe Analytics naar Adobe Campaign doorsturen in de vorm van segmenten. Omgekeerd verzendt het programma indicatoren en kenmerken van e-mailcampagnes die door Adobe Campaign worden geleverd aan Adobe Analytics - Gegevensconnector.
 
 ![](assets/ext_account_10.png)
 
 Voor deze externe account moet de berekeningsformule voor bijgehouden URL&#39;s worden verrijkt en moet de verbinding tussen de twee oplossingen worden goedgekeurd. Raadpleeg [deze pagina](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign) voor meer informatie.
 
-## Externe account voor Facebook connect {#facebook-connect-external-account}
+## Facebook connect external account {#facebook-connect-external-account}
 
-Met de **[!UICONTROL Facebook Connect]** externe account kunt u gepersonaliseerde inhoud weergeven in uw Facebook-toepassingen, waardoor het eenvoudiger wordt om vooruitzichten te krijgen via dit sociale netwerk.
+Met de externe account **[!UICONTROL Facebook Connect]** kunt u gepersonaliseerde inhoud weergeven in uw Facebook-toepassingen, waardoor het eenvoudiger wordt om vooruitzichten te krijgen via dit sociale netwerk.
 
-Voor elke Facebook-toepassing moet u een **[!UICONTROL Facebook Connect]** type extern account maken. For more on this, refer to [page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+Voor elke Facebook-toepassing moet u een **[!UICONTROL Facebook Connect]** type extern account maken. Raadpleeg [page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts) voor meer informatie.
 
 ![](assets/ext_account_12.png)
 
 * **[!UICONTROL Hosting mode]**
 
-   De hostingmodus van de toepassing tussen **[!UICONTROL hosted by a partner]** of **[!UICONTROL hosted by this instance]**.
+   Hosting mode of the application between **[!UICONTROL hosted by a partner]** or **[!UICONTROL hosted by this instance]**.
 
 * **[!UICONTROL Application ID]**
 
@@ -187,7 +187,7 @@ Voor elke Facebook-toepassing moet u een **[!UICONTROL Facebook Connect]** type 
 
 Als u de host kiest in deze instantiemodus, moet de URL van het beveiligde canvas worden geplakt in het veld **Facebook-webgames (https)** op Facebook
 
-Op deze [pagina](https://developers.facebook.com/docs/facebook-login/access-tokens)vindt u de locatie van deze referenties.
+Om te weten waar te om van deze geloofsbrieven de plaats te bepalen, verwijs naar deze [pagina](https://developers.facebook.com/docs/facebook-login/access-tokens).
 
 ## Uitvoerinstantie externe account {#execution-instance-external-account}
 
@@ -207,11 +207,11 @@ Als u een opgesplitste architectuur hebt, moet u de uitvoeringsinstanties specif
 
    Wachtwoord van de account zoals gedefinieerd in de map met operatoren.
 
-For more information on this configuration, refer to this [page](../../message-center/using/creating-a-shared-connection.md#control-instance).
+Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../message-center/using/creating-a-shared-connection.md#control-instance).
 
-## Adobe Experience Cloud external account {#adobe-experience-cloud-external-account}
+## Adobe Experience Cloud externe account {#adobe-experience-cloud-external-account}
 
-Als u verbinding wilt maken met de Adobe Campaign-console via een Adobe ID, moet u de **[!UICONTROL Adobe Experience Cloud (MAC)]** externe account configureren.
+Als u verbinding wilt maken met de Adobe Campaign-console met een Adobe ID, moet u de externe account **[!UICONTROL Adobe Experience Cloud (MAC)]** configureren.
 
 ![](assets/ext_account_9.png)
 
@@ -237,7 +237,7 @@ Als u verbinding wilt maken met de Adobe Campaign-console via een Adobe ID, moet
 
 * **[!UICONTROL IMS organization ID]**
 
-   ID van uw IMS-organisatie. Raadpleeg deze [pagina](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) om uw organisatie-id te zoeken (**Waar vind ik mijn IMS-organisatie-id?**).
+   ID van uw IMS-organisatie. Als u uw organisatie-id wilt zoeken, raadpleegt u deze [pagina](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) (**Waar kan ik mijn IMS-organisatie-id vinden?**).
 
 * **[!UICONTROL Association mask]**
 
@@ -251,7 +251,7 @@ Als u verbinding wilt maken met de Adobe Campaign-console via een Adobe ID, moet
 
    Naam van je Adobe Experience Cloud Tenant.
 
-For more information on this configuration, refer to this [page](../../integrations/using/configuring-ims.md).
+Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../integrations/using/configuring-ims.md).
 
 ## Extern SFTP-account {#sftp-external-account}
 
@@ -277,7 +277,7 @@ Met de externe SFTP-account kunt u toegang tot een server buiten Adobe Campaign 
 
 ## Extern Adobe Experience Manager-account {#adobe-experience-manager-external-account}
 
-Met het **[!UICONTROL AEM (AEM instance)]** externe account kunt u de inhoud van uw e-mailleveringen en uw formulieren rechtstreeks in Adobe Experience Manager beheren.
+Met de externe account **[!UICONTROL AEM (AEM instance)]** kunt u de inhoud van uw e-mailleveringen en uw formulieren rechtstreeks in Adobe Experience Manager beheren.
 
 ![](assets/ext_account_5.png)
 
@@ -313,23 +313,23 @@ Wanneer u dit nieuwe externe account instelt, moet u de volgende data opgeven:
 
 * **[!UICONTROL AWS access key ID]**
 
-   Raadpleeg deze [pagina](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) om te weten waar u uw AWS-toegangstoets-id kunt vinden.
+   Om te weten waar te om uw AWS toegangs belangrijkste identiteitskaart te vinden, verwijs naar deze [pagina](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
 
 * **[!UICONTROL Secret access key to AWS]**
 
-   Raadpleeg deze [pagina](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/)om te weten waar u uw geheime toegangssleutel voor AWS vindt.
+   Om te weten waar te om uw geheime toegangssleutel aan AWS te vinden, verwijs naar deze [pagina](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
 * **[!UICONTROL AWS Region]**
 
-   Raadpleeg deze [pagina](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)voor meer informatie over het AWS-gebied.
+   Voor meer informatie over AWS-gebied raadpleegt u deze [pagina](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
 
-* Met het **[!UICONTROL Use server side encryption]** selectievakje kunt u het bestand opslaan in de modus S3.
+* Met het selectievakje **[!UICONTROL Use server side encryption]** kunt u het bestand opslaan in de gecodeerde modus van S3.
 
-Leer waar te om toegangs zeer belangrijke identiteitskaart en geheime toegangssleutel te vinden, verwijs naar de [documentatie](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) van de Diensten van het Web van Amazon.
+Om te leren waar te om toegangs belangrijkste identiteitskaart en geheime toegangssleutel te vinden, verwijs naar de diensten [documentatie](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) van het Web van Amazon.
 
-## Externe account voor Microsoft Dynamics CRM {#microsoft-dynamics-crm-external-account}
+## Externe account van Microsoft Dynamics CRM {#microsoft-dynamics-crm-external-account}
 
-Met de **[!UICONTROL Microsoft Dynamics CRM]** externe account kunt u Microsoft Dynamics-gegevens importeren en exporteren naar Adobe Campaign.
+Met de externe account **[!UICONTROL Microsoft Dynamics CRM]** kunt u Microsoft Dynamics-gegevens importeren en exporteren naar Adobe Campaign.
 
 De configuratie voor de schakelaar van de Dynamiek van Microsoft om met Adobe Campaign te werken hangt van uw plaatsingstype af.
 Met **[!UICONTROL On-premise]** en **[!UICONTROL Office 365]** plaatsingstypes, moet u de volgende details verstrekken:
@@ -355,7 +355,7 @@ Met **[!UICONTROL On-premise]** en **[!UICONTROL Office 365]** plaatsingstypes, 
 * **[!UICONTROL Organization name]** voor on-premise implementatie
 
    Naam van uw organisatie.
-De naam van de organisatie die in het dashboard van de Middelen van Ontwikkelaars op de Dynamica van Microsoft, **[!UICONTROL Unique Name]** gebied kan worden gevonden.
+De naam van de organisatie die in het dashboard van de Middelen van Ontwikkelaars in de Dynamica van Microsoft, **[!UICONTROL Unique Name]** gebied kan worden gevonden.
 
 * **[!UICONTROL CRM version]** voor on-premise
 
@@ -375,7 +375,7 @@ Met **[!UICONTROL Web API]** plaatsingstype en **[!UICONTROL Password credential
 
 * **[!UICONTROL Client identifier]**
 
-   Client-id die u kunt vinden op de Microsoft Azure-beheerportal in de **[!UICONTROL Update your code]** categorie en het **[!UICONTROL Client ID]** veld.
+   Client-id die u kunt vinden op de Microsoft Azure-beheerportal in het veld **[!UICONTROL Update your code]**.**[!UICONTROL Client ID]**
 
 * **[!UICONTROL CRM version]**
 
@@ -399,17 +399,17 @@ Met **[!UICONTROL Web API]** plaatsingstype en **[!UICONTROL Certificate]** auth
 
 * **[!UICONTROL Client identifier]**
 
-   Client-id die u kunt vinden op de Microsoft Azure-beheerportal in de **[!UICONTROL Update your code]** categorie en het **[!UICONTROL Client ID]** veld.
+   Client-id die u kunt vinden op de Microsoft Azure-beheerportal in het veld **[!UICONTROL Update your code]**.**[!UICONTROL Client ID]**
 
 * **[!UICONTROL CRM version]**
 
    Versie van de CRM tussen **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** of **[!UICONTROL Dynamics CRM 2016]**.
 
-For more information on this configuration, refer to this [page](../../platform/using/crm-connectors.md#example-for-microsoft-dynamics).
+Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../platform/using/crm-connectors.md#example-for-microsoft-dynamics).
 
-## Oracle op verzoek externe rekening {#oracle-on-demand-external-account}
+## Oracle op verzoek externe account {#oracle-on-demand-external-account}
 
-Met de **[!UICONTROL Oracle on demand]** externe account kunt u Oracle-gegevens importeren en exporteren naar Adobe Campaign.
+Met de externe account **[!UICONTROL Oracle on demand]** kunt u Oracle-gegevens importeren en exporteren naar Adobe Campaign.
 
 ![](assets/ext_account_18.png)
 
@@ -427,11 +427,11 @@ Als u de externe Oracle-account op aanvraag wilt configureren voor gebruik met A
 
    Wachtwoord gebruikt om u aan te melden bij Oracle CRM op aanvraag.
 
-For more information on this configuration, refer to this [page](../../platform/using/crm-connectors.md#example-for-oracle-on-demand).
+Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../platform/using/crm-connectors.md#example-for-oracle-on-demand).
 
 ## Externe rekening Salesforce CRM {#salesforce-crm-external-account}
 
-Met de **[!UICONTROL Salesforce CRM]** externe account kunt u Salesforce-gegevens importeren en exporteren naar Adobe Campaign.
+Met de externe account **[!UICONTROL Salesforce CRM]** kunt u Salesforce-gegevens importeren en exporteren naar Adobe Campaign.
 
 ![](assets/ext_account_17.png)
 
@@ -447,11 +447,11 @@ Om de externe rekening van Salesforce CRM te vormen om met Adobe Campaign te wer
 
 * **[!UICONTROL Client identifier]**
 
-   Raadpleeg deze [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1)om te weten waar u uw client-id kunt vinden.
+   Als u wilt weten waar de client-id moet worden gevonden, raadpleegt u deze [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL Security token]**
 
-   Als u wilt weten waar u uw beveiligingstoken vindt, raadpleegt u deze [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+   Om te weten waar te om uw veiligheidstoken te vinden, verwijs naar dit [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL API version]**
 
@@ -459,4 +459,4 @@ Om de externe rekening van Salesforce CRM te vormen om met Adobe Campaign te wer
 
 Voor deze externe rekening, moet u u Salesforce CRM met de configuratietovenaar vormen.
 
-For more information on this configuration, refer to this [page](../../platform/using/crm-connectors.md#example-for-salesforce-com).
+Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../platform/using/crm-connectors.md#example-for-salesforce-com).
