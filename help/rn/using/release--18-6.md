@@ -23,7 +23,7 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->Er is al op gewezen dat dit een bouwwerk is. Voer een [upgrade uit naar de nieuwste build](../../production/using/build-upgrade.md) of neem contact op met de [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Er is al op gewezen dat dit een bouwwerk is. [upgrade naar de nieuwste build](../../production/using/build-upgrade.md) of neem contact op met [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Nieuwe functies**
 
@@ -36,7 +36,7 @@ ht-degree: 6%
  </thead> 
  <tbody> 
   <tr> 
-   <td> Query-streepjescodes<br /> </td> 
+   <td> Query-streepvorming<br /> </td> 
    <td> <p>Wanneer meerdere Campagnegebruikers verbinding maken met dezelfde externe FDA Teradata-account, kunt u nu een queryband (sleutel-/waardeparen) doorgeven die specifiek is voor elke gebruiker. Elke keer dat een campagnegebruiker een query uitvoert op de Teradata-database, kan Adobe Campaign nu metagegevens verzenden die aan de gebruiker zijn gekoppeld. Deze gegevens, die bestaan uit een lijst met sleutels en waarden, kunnen vervolgens door Teradata-beheerders worden gebruikt voor controledoeleinden of om toegangsrechten te beheren, bijvoorbeeld.</p><p>Raadpleeg de <a href="../../installation/using/external-accounts.md">gedetailleerde documentatie</a> voor meer informatie.</p> </td>
   </tr> 
  </tbody> 
@@ -48,13 +48,13 @@ ht-degree: 6%
 * Probleem verholpen dat leidde tot de weergave van IP&#39;s van het taakverdelingsmechanisme in plaats van IP&#39;s van de klant in de weblogs voor het bijhouden van berichten. (NEO-11295)
 * Probleem verholpen waarbij een willekeurig probleem werd opgelost waardoor de eigenschappen van een levering onjuist werden overschreven. (NEO-11015)
 * Oplossing voor een syntaxisfout bij het sorteren van de resultaten van verrijkingsactiviteiten. (NEO-11394)
-* Probleem verholpen bij het gebruik van berekende velden in een **[!UICONTROL Survey answers]** workflowactiviteit. (NEO-11382)
+* Probleem verholpen bij het gebruik van berekende velden in een **[!UICONTROL Survey answers]**-workflowactiviteit. (NEO-11382)
 * Tomcat is bijgewerkt om misbruik van kwetsbaarheden te voorkomen. (NEO-11503)
 * Oplossing voor een fout met LATIN1-codering bij gebruik van een FDA-verbinding met een PostSQL-database. (NEO-11299)
-* Probleem verholpen dat optrad bij gebruik van de **[!UICONTROL Prepare the personalization data with a workflow]** leveringsoptie. (NEO-11047)
+* Probleem verholpen die optrad bij gebruik van de leveringsoptie **[!UICONTROL Prepare the personalization data with a workflow]**. (NEO-11047)
 * Probleem verholpen waarbij het verzenden van SMS tijdens het gebruik van een uitgebreide connector werd verhinderd.
 * Verbeterde import/export van pakketten (logboek en regio zijn toegevoegd aan de interface).
-* Probleem verholpen waarbij nutteloze fouten in het postupgradelogboek werden weergegeven wanneer een **[!UICONTROL Survey answers]** workflowactiviteit niet volledig was geconfigureerd.
+* Probleem verholpen waarbij nutteloze fouten in het postupgradelogboek werden weergegeven wanneer een **[!UICONTROL Survey answers]**-workflowactiviteit niet volledig was geconfigureerd.
 
 **Technische ontwikkelingen**
 
@@ -62,7 +62,7 @@ Query-streepjescodes
 
 Een specifieke sleutel (PROXYUSER of PROXYROLE) wordt gebruikt om een Teradata-gebruiker of -rol te koppelen aan een Campagnegebruiker. Er is een nieuwe machtiging toegevoegd om deze proxygebruiker/rol te gebruiken. U moet de GRANT CONNECT via het toegangsrecht toevoegen aan de databaseaccount (de die is gedefinieerd in de externe Teradata-account).
 
-Er is een nieuw tabblad toegevoegd aan de externe Teradata-accounts. Het **[!UICONTROL Query banding]** tabblad bevat de volgende opties:
+Er is een nieuw tabblad toegevoegd aan de externe Teradata-accounts. Het tabblad **[!UICONTROL Query banding]** bevat de volgende opties:
 
 * **[!UICONTROL Active]**: Schakel dit selectievakje in om de functie te activeren.
 * **[!UICONTROL Default]**: Voer een standaardquerybinding in die wordt gebruikt als een gebruiker geen querybinding heeft. Als er geen standaardquerybanding is gedefinieerd, kunnen de gebruikers die geen querybanding hebben, Teradata niet gebruiken.
@@ -79,7 +79,7 @@ Raadpleeg de volgende artikelen voor meer informatie over querybinding:
 
 >[!CAUTION]
 >
->Er is al op gewezen dat dit een bouwwerk is. Voer een [upgrade uit naar de nieuwste build](../../production/using/build-upgrade.md) of neem contact op met de [technische ondersteuning](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Er is al op gewezen dat dit een bouwwerk is. [upgrade naar de nieuwste build](../../production/using/build-upgrade.md) of neem contact op met [technische ondersteuning](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Nieuwe functies**
 
@@ -93,11 +93,11 @@ Raadpleeg de volgende artikelen voor meer informatie over querybinding:
  <tbody> 
   <tr> 
    <td> Beveiligingsverbeteringen<br /> </td> 
-   <td> Aan Campaign Classic is een aantal verbeteringen op het gebied van beveiliging toegevoegd. Hieronder vindt u verbeteringen en correcties.<br /> </td> 
+   <td> Aan Campaign Classic is een aantal verbeteringen op het gebied van beveiliging toegevoegd. De verbeteringen en de moeilijke situaties worden hieronder vermeld.<br /> </td> 
   </tr> 
   <tr> 
    <td> Ondersteuning voor Windows Server 2016<br /> </td> 
-   <td> Adobe Campaign is nu compatibel met Windows Server 2016. Zie <a href="https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html">Campaign Classic Compatibility matrix</a>.<br /> </td> 
+   <td> Adobe Campaign is nu compatibel met Windows Server 2016. Zie <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Campaign Classic Compatibility matrix</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -106,21 +106,21 @@ Raadpleeg de volgende artikelen voor meer informatie over querybinding:
 
 decryptString
 
-De functie **decryptString** is afgekeurd. Raadpleeg het artikel [Vervangen en verwijderde functies](https://helpx.adobe.com/nl/campaign/kb/deprecated-and-removed-features.html) .
+De functie **decryptString** is afgekeurd. Verwijs naar [Vervangen en Verwijderde Eigenschappen](https://helpx.adobe.com/nl/campaign/kb/deprecated-and-removed-features.html) artikel.
 
 Voor nieuwe klanten, wordt deze functie nu slechts gebruikt om crypt identiteitskaart van de ontvanger in het landen pagina&#39;s te decoderen. Om wachtwoorden te decrypteren die in een externe rekening worden opgeslagen, gebruik de nieuwe **decryptPassword** functie.
 
-Voor bestaande klanten, wordt het gedrag van deze functie niet veranderd maar wij adviseren dat u **decryptPassword** in plaats van **decryptString** gebruikt. De **compatibiliteitsoptie XtkSecurity_Unsafe_DecryptString** wordt toegevoegd door de postupgrade en standaard geactiveerd, zodat u de functie kunt blijven gebruiken. Als u **decryptString** wilt deactiveren, deactiveer de optie.
+Voor bestaande klanten, wordt het gedrag van deze functie niet veranderd maar wij adviseren dat u **decryptPassword** in plaats van **decryptString** gebruikt. De compatibiliteitsoptie **XtkSecurity_Unsafe_DecryptString** wordt toegevoegd door de postupgrade en standaard geactiveerd, zodat u de functie kunt blijven gebruiken. Als u **decryptString** wilt deactiveren, deactiveer de optie.
 
 decryptPassword
 
-De functie **decryptPassword** is toegevoegd. Hiermee kunt u een wachtwoord decoderen dat is opgeslagen in een externe account. Raadpleeg de [JSAPI](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html) -documentatie voor meer informatie.
+De functie **decryptPassword** is toegevoegd. Hiermee kunt u een wachtwoord decoderen dat is opgeslagen in een externe account. Raadpleeg de [JSAPI](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html) documentatie voor meer informatie.
 
 Bestand-API&#39;s
 
-Voor nieuwe installaties is maptoegang via bestand-API&#39;s beperkt tot de **var**-, **sftp** - en tijdelijke mappen van Adobe Campaign.
+Voor nieuwe installaties, is de omslagtoegang via dossier APIs beperkt tot **var**, **sftp** en tijdelijke omslagen van Adobe Campaign.
 
-Bestands-API&#39;s hebben voor bestaande klanten geen toegang meer tot de map **conf** van Adobe Campaign. De compatibiliteitsoptie **XtkSecurity_Disable_JSFileSandboxing** wordt toegevoegd door de postupgrade en standaard geactiveerd, zodat u de andere mappen kunt blijven gebruiken. Als u de toegang tot de **var**-, **sftp** - en tijdelijke mappen van Adobe Campaign wilt beperken, deactiveert u de optie.
+Voor bestaande klanten hebben bestands-API&#39;s geen toegang meer tot de map **conf** van Adobe Campaign. De compatibiliteitsoptie **XtkSecurity_Disable_JSFileSandboxing** wordt toegevoegd door de postupgrade en standaard geactiveerd, zodat u de andere mappen kunt blijven gebruiken. Als u de toegang tot **var**, **sftp** en tijdelijke omslagen van Adobe Campaign wilt beperken, deactiveer de optie.
 
 **Reparatie**
 
