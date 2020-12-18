@@ -21,7 +21,7 @@ Met een zaadadres kunt u een voorbeeld van uw bericht weergeven, een proefdruk v
 
 ## Seed-adressen maken {#creating-a-seed-address}
 
-1. Klik in de transactiemalplaatje van het bericht, op het **[!UICONTROL Seed addresses]** lusje.
+1. Klik in de transactiemalplaatje van het bericht, op **[!UICONTROL Seed addresses]** tabel.
 
    ![](assets/messagecenter_create_seedaddr_001.png)
 
@@ -42,7 +42,7 @@ Met een zaadadres kunt u een voorbeeld van uw bericht weergeven, een proefdruk v
    ![](assets/messagecenter_create_custo_001.png)
 
    <!--## Creating several seed addresses {#creating-several-seed-addresses}-->
-1. Klik op de **[!UICONTROL Add other seed addresses]** koppeling en klik vervolgens op de **[!UICONTROL Add]** knop.
+1. Klik op de koppeling **[!UICONTROL Add other seed addresses]** en klik vervolgens op de knop **[!UICONTROL Add]**.
 
    ![](assets/messagecenter_create_seedaddr_004.png)
 
@@ -51,4 +51,4 @@ Met een zaadadres kunt u een voorbeeld van uw bericht weergeven, een proefdruk v
 
    ![](assets/messagecenter_create_seedaddr_008.png)
 
-Zodra de adressen worden gecreeerd, kunt u hun voorproef en verpersoonlijking tonen. Zie [Transactiebericht voorvertonen](../../message-center/using/transactional-message-preview.md).
+Zodra de adressen worden gecreeerd, kunt u hun voorproef en verpersoonlijking tonen. Zie [Voorvertoning van het transactiebericht](../../message-center/using/transactional-message-preview.md).
