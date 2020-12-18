@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # Simulatietracking{#simulation-tracking}
 
-Zodra de simulatie wordt gebeëindigd, kunt u zijn resultaat via het **[!UICONTROL Results]** lusje analyseren dat aan het simulatievenster en het **[!UICONTROL Breakdown of offers by rank]** rapport wordt toegevoegd, beschikbaar via in het simulatiedashboard.
+Zodra de simulatie wordt gebeëindigd, kunt u zijn resultaat analyseren via het **[!UICONTROL Results]** lusje dat aan het simulatievenster en **[!UICONTROL Breakdown of offers by rank]** rapport wordt toegevoegd, beschikbaar via in het simulatiedashboard.
 
 De simulatieresultaten bevatten een uitsplitsing van de voorstellingen per rang en per ontvanger. De rapportageassen worden ook in aanmerking genomen en op dit tabblad weergegeven.
 
