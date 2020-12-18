@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1272'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
 # De lokale goedkeuringsactiviteit gebruiken{#using-the-local-approval-activity}
 
-Met de **[!UICONTROL Local approval]** activiteit die in een gericht werkschema wordt geïntegreerd, kunt u een goedkeuringsproces voor ontvangers instellen voordat de levering wordt verzonden.
+Met de **[!UICONTROL Local approval]**-activiteit die is geïntegreerd in een doelworkflow kunt u een goedkeuringsproces voor ontvangers instellen voordat de levering wordt verzonden.
 
 >[!CAUTION]
 >
@@ -29,7 +29,7 @@ Voor het instellen van dit gebruiksgeval hebben we de volgende workflow voor doe
 
 De belangrijkste stappen in het lokale goedkeuringsproces zijn:
 
-1. De populatie die het gevolg is van doelgerichte acties, kan worden beperkt door een **[!UICONTROL Split]** soort activiteit waarbij gebruik wordt gemaakt van een gegevensdistributiemodel.
+1. De populatie die het resultaat is van het richten kan worden beperkt dankzij een **[!UICONTROL Split]** type activiteit die een model van de gegevensdistributie gebruikt.
 
    ![](assets/local_validation_intro_1.png)
 
@@ -37,7 +37,7 @@ De belangrijkste stappen in het lokale goedkeuringsproces zijn:
 
    ![](assets/local_validation_intro_4.png)
 
-1. Wanneer de deadline voor goedkeuring is bereikt, wordt de workflow opnieuw gestart. In dit voorbeeld begint de **[!UICONTROL Delivery]** activiteit en wordt de levering verzonden naar de goedgekeurde doelen.
+1. Wanneer de deadline voor goedkeuring is bereikt, wordt de workflow opnieuw gestart. In dit voorbeeld wordt de **[!UICONTROL Delivery]**-activiteit gestart en wordt de levering verzonden naar de goedgekeurde doelen.
 
    >[!NOTE]
    >
@@ -45,17 +45,17 @@ De belangrijkste stappen in het lokale goedkeuringsproces zijn:
 
    ![](assets/local_validation_intro_6.png)
 
-1. Een paar dagen later verzendt de tweede **[!UICONTROL Local approval]** typeactiviteit een bericht e-mail naar elke lokale supervisor met een samenvatting van de acties die door hun contacten worden uitgevoerd (kliks, opent, enz.).
+1. Een paar dagen later, verzendt de tweede **[!UICONTROL Local approval]** typeactiviteit een bericht e-mail naar elke lokale supervisor met een samenvatting van de acties die door hun contacten worden uitgevoerd (kliks, opent, etc.).
 
    ![](assets/local_validation_intro_5.png)
 
-## Stap 1: De sjabloon voor gegevensdistributie maken {#step-1--creating-the-data-distribution-template-}
+## Stap 1: Het creëren van het malplaatje van de gegevensdistributie {#step-1--creating-the-data-distribution-template-}
 
-Met de sjabloon voor gegevensdistributie kunt u de populatie beperken die het resultaat is van het richten op basis van gegevensgroepering, terwijl u elke waarde kunt toewijzen aan een lokale toezichthouder. In dit voorbeeld hebben we het **[!UICONTROL Email address domain]** veld gedefinieerd als een distributieveld en een domein toegewezen aan elke lokale toezichthouder
+Met de sjabloon voor gegevensdistributie kunt u de populatie beperken die het resultaat is van het richten op basis van gegevensgroepering, terwijl u elke waarde kunt toewijzen aan een lokale toezichthouder. In dit voorbeeld hebben we het veld **[!UICONTROL Email address domain]** gedefinieerd als een distributieveld en een domein toegewezen aan elke lokale toezichthouder
 
-Voor meer informatie over het creëren van een malplaatje van de gegevensdistributie, verwijs naar het [Beperken van het aantal subsetverslagen per gegevensdistributie](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution).
+Raadpleeg [Het aantal subsetrecords per gegevensdistributie beperken](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution) voor meer informatie over het maken van een sjabloon voor gegevensdistributie.
 
-1. Om het malplaatje van de gegevensdistributie tot stand te brengen, ga naar de **[!UICONTROL Resources > Campaign management > Data distribution]** knoop en klik **[!UICONTROL New]**.
+1. Als u de sjabloon voor gegevensdistributie wilt maken, gaat u naar het knooppunt **[!UICONTROL Resources > Campaign management > Data distribution]** en klikt u op **[!UICONTROL New]**.
 
    ![](assets/local_validation_data_distribution_1.png)
 
@@ -63,18 +63,18 @@ Voor meer informatie over het creëren van een malplaatje van de gegevensdistrib
 
    ![](assets/local_validation_data_distribution_2.png)
 
-1. Voer de **[!UICONTROL Label]** en de **[!UICONTROL Distribution context]** gegevens in. In dit voorbeeld, hebben wij het het **[!UICONTROL Recipient]** richten schema en het **[!UICONTROL Email domain]** gebied als distributieveld geselecteerd. De lijst met ontvangers wordt uitgesplitst naar domein.
-1. Selecteer in het **[!UICONTROL Distribution type]** veld hoe de waarde van de doelbeperking wordt uitgedrukt op het **[!UICONTROL Distribution]** tabblad. Hier hebben we gekozen **[!UICONTROL Percentage]**.
-1. Voer in het **[!UICONTROL Approval storage]** veld het opslagschema in van de goedkeuringen die overeenkomen met het doelschema in gebruik. Hier gaan wij het standaardopslagschema gebruiken: **[!UICONTROL Local approval of recipients]**.
-1. Klik vervolgens op de **[!UICONTROL Advanced parameters]** koppeling.
+1. Voer **[!UICONTROL Label]** en **[!UICONTROL Distribution context]** in. In dit voorbeeld hebben we het **[!UICONTROL Recipient]**-doelschema en het **[!UICONTROL Email domain]**-veld geselecteerd als een distributieveld. De lijst met ontvangers wordt uitgesplitst naar domein.
+1. Selecteer in het veld **[!UICONTROL Distribution type]** hoe de waarde voor de doelbeperking wordt uitgedrukt op het tabblad **[!UICONTROL Distribution]**. Hier hebben we **[!UICONTROL Percentage]** gekozen.
+1. Voer in het veld **[!UICONTROL Approval storage]** het opslagschema in van de goedkeuringen die overeenkomen met het doelschema in gebruik. Hier gaan wij het standaardopslagschema gebruiken: **[!UICONTROL Local approval of recipients]**.
+1. Klik vervolgens op de koppeling **[!UICONTROL Advanced parameters]**.
 
    ![](assets/local_validation_data_distribution_3.png)
 
-1. Laat de **[!UICONTROL Approve the targeted messages]** optie ingeschakeld zodat alle ontvangers vooraf zijn geselecteerd in de lijst met goed te keuren ontvangers.
-1. Op het **[!UICONTROL Delivery label]** gebied, hebben wij de standaarduitdrukking verlaten (rekenings koord van de levering). Het standaardlabel van de levering wordt gebruikt in de feedbackmelding.
-1. In de **[!UICONTROL Grouping field]** sectie hebben we het **[!UICONTROL Gender]** veld geselecteerd als een groeperingsveld voor het weergeven van ontvangers in goedkeurings- en feedbackberichten.
-1. In de **[!UICONTROL Edit targeted messages]** sectie hebben we de **[!UICONTROL Edit recipients]** webtoepassing en de **[!UICONTROL recipientId]** parameter geselecteerd. In de goedkeurings- en feedbackberichten kunnen ontvangers klikken en verwijzen ze naar de URL van de webtoepassing. De extra URL-parameter wordt **[!UICONTROL recipientId]** gebruikt.
-1. Klik vervolgens op het **[!UICONTROL Distribution]** tabblad. Voer voor elk domein de volgende velden in:
+1. Laat de optie **[!UICONTROL Approve the targeted messages]** ingeschakeld zodat alle ontvangers vooraf zijn geselecteerd in de lijst met goed te keuren ontvangers.
+1. In het **[!UICONTROL Delivery label]** gebied, hebben wij de standaarduitdrukking verlaten (rekenreeks van de levering). Het standaardlabel van de levering wordt gebruikt in de feedbackmelding.
+1. In **[!UICONTROL Grouping field]** sectie, hebben wij **[!UICONTROL Gender]** gebied als groeperingsgebied voor het tonen van ontvangers in de goedkeuring en terugkoppelen berichten geselecteerd.
+1. In **[!UICONTROL Edit targeted messages]** sectie, hebben wij **[!UICONTROL Edit recipients]** Webtoepassing en **[!UICONTROL recipientId]** parameter geselecteerd. In de goedkeurings- en feedbackberichten kunnen ontvangers klikken en verwijzen ze naar de URL van de webtoepassing. De extra URL-parameter is **[!UICONTROL recipientId]**.
+1. Klik vervolgens op het tabblad **[!UICONTROL Distribution]**. Voer voor elk domein de volgende velden in:
 
    ![](assets/local_validation_data_distribution_4.png)
 
@@ -87,7 +87,7 @@ Voor meer informatie over het creëren van een malplaatje van de gegevensdistrib
       >
       >Controleer of de juiste rechten aan de exploitanten zijn toegekend.
 
-## Stap 2: De doelworkflow maken {#step-2--creating-the-targeting-workflow}
+## Stap 2: De doelworkflow {#step-2--creating-the-targeting-workflow} maken
 
 Voor het instellen van dit gebruiksgeval hebben we de volgende workflow voor doelversie gemaakt:
 
@@ -95,36 +95,36 @@ Voor het instellen van dit gebruiksgeval hebben we de volgende workflow voor doe
 
 De volgende activiteiten zijn toegevoegd:
 
-* Two **[!UICONTROL Query]** activities,
+* Twee **[!UICONTROL Query]** activiteiten
 * Eén **[!UICONTROL Intersection]** activiteit
 * Eén **[!UICONTROL Split]** activiteit
 * Eén **[!UICONTROL Local approval]** activiteit
 * Eén **[!UICONTROL Delivery]** activiteit
 * Eén **[!UICONTROL Wait]** activiteit
-* een tweede **[!UICONTROL Local approval]** activiteit,
+* Een tweede **[!UICONTROL Local approval]** activiteit
 * Eén **[!UICONTROL End]** activiteit.
 
 ### Zoekopdrachten, doorsnede en Splitsen {#queries--intersection-and-split}
 
-Het stroomopwaartse richten bestaat uit twee vragen, één doorsnede en één spleet. De populatie die het gevolg is van het richten van een doelgroep kan worden beperkt door een **[!UICONTROL Split]** activiteit te gebruiken die een sjabloon voor gegevensverspreiding gebruikt.
+Het stroomopwaartse richten bestaat uit twee vragen, één doorsnede en één spleet. De populatie die het gevolg is van het richten kan worden beperkt gebruikend een **[!UICONTROL Split]** activiteit gebruikend een malplaatje van de gegevensdistributie.
 
-Voor meer bij het vormen van een gespleten activiteit, verwijs naar [Gesplitst](../../workflow/using/split.md). Het maken van een sjabloon voor gegevensdistributie wordt gedetailleerd beschreven in het [beperken van het aantal subsetrecords per gegevensdistributie](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution).
+Raadpleeg [Splitsen](../../workflow/using/split.md) voor meer informatie over het configureren van een gesplitste activiteit. Het maken van een sjabloon voor gegevensdistributie wordt beschreven in [Het aantal subsetrecords per gegevensdistributie beperken](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
-Als u niet de bevolking van de vraag wilt beperken, moet u niet de **[!UICONTROL Query]**, **[!UICONTROL Intersection]**, en **[!UICONTROL Split]** activiteiten gebruiken. Vul in dit geval de sjabloon voor gegevensdistributie in de eerste **[!UICONTROL Local approval]** activiteit in.
+Als u niet de populatie van de vraag wilt beperken, moet u niet **[!UICONTROL Query]**, **[!UICONTROL Intersection]**, en **[!UICONTROL Split]** activiteiten gebruiken. In dit geval voert u de sjabloon voor gegevensdistributie in de eerste **[!UICONTROL Local approval]**-activiteit in.
 
-1. Selecteer de **[!UICONTROL Record count limitation]** optie in de **[!UICONTROL Limit the selected records]** sectie en klik op de **[!UICONTROL Edit]** koppeling.
+1. Selecteer in de sectie **[!UICONTROL Record count limitation]** de optie **[!UICONTROL Limit the selected records]** en klik op de koppeling **[!UICONTROL Edit]**.
 
    ![](assets/local_validation_split_1.png)
 
-1. Select the **[!UICONTROL Keep only the first records after sorting]** option and click **[!UICONTROL Next]**.
+1. Selecteer de optie **[!UICONTROL Keep only the first records after sorting]** en klik **[!UICONTROL Next]**.
 
    ![](assets/local_validation_split_1bis.png)
 
-1. Voeg in de **[!UICONTROL Sort columns]** sectie het veld toe waarop de sortering wordt toegepast. Hier hebben we het **[!UICONTROL Email]** veld gekozen. Klik op **[!UICONTROL Next]**.
+1. Voeg in de sectie **[!UICONTROL Sort columns]** het veld toe waarop de sortering wordt toegepast. Hier hebben we het veld **[!UICONTROL Email]** gekozen. Klik op **[!UICONTROL Next]**.
 
    ![](assets/local_validation_split_2.png)
 
-1. Selecteer de **[!UICONTROL By data distribution]** optie, selecteer eerder gecreeerd distributiemalplaatje (verwijs naar [Stap 1: Het creëren van het malplaatje](#step-1--creating-the-data-distribution-template-)van de gegevensdistributie) en klik **[!UICONTROL Finish]**.
+1. Selecteer de optie **[!UICONTROL By data distribution]** en selecteer de eerder gemaakte distributiesjabloon (zie [Stap 1: Het creëren van het malplaatje van de gegevensdistributie](#step-1--creating-the-data-distribution-template-)) en klik **[!UICONTROL Finish]**.
 
    ![](assets/local_validation_split_3.png)
 
@@ -136,27 +136,27 @@ In het distributiemalplaatje, hebben wij ervoor gekozen om de bevolking tot 10% 
 
 De **[!UICONTROL Local approval]** activiteit laat u een bericht naar elke lokale supervisor verzenden.
 
-Voor meer bij het vormen van de **[!UICONTROL Local approval]** activiteit, verwijs naar [Lokale goedkeuring](../../workflow/using/local-approval.md).
+Raadpleeg [Lokale goedkeuring](../../workflow/using/local-approval.md) voor meer informatie over het configureren van de **[!UICONTROL Local approval]**-activiteit.
 
 ![](assets/local_validation_workflow_2.png)
 
 De volgende velden moeten worden ingevuld:
 
-1. In the **[!UICONTROL Action to execute]** section, select the **[!UICONTROL Target approval notification]** option.
-1. In the **[!UICONTROL Distribution context]** section, select the **[!UICONTROL Specified in the transition]** option.
+1. Selecteer in de sectie **[!UICONTROL Action to execute]** de optie **[!UICONTROL Target approval notification]**.
+1. Selecteer in de sectie **[!UICONTROL Distribution context]** de optie **[!UICONTROL Specified in the transition]**.
 
-   Als u de beoogde populatie niet wilt beperken, selecteert u hier de **[!UICONTROL Explicit]** optie en voert u de eerder gemaakte distributiesjabloon in het **[!UICONTROL Data distribution]** veld in.
+   Als u de beoogde populatie niet wilt beperken, selecteert u hier de optie **[!UICONTROL Explicit]** en voert u de eerder gemaakte distributiesjabloon in het veld **[!UICONTROL Data distribution]** in.
 
-1. Selecteer in de **[!UICONTROL Notification]** sectie de leveringssjabloon en het onderwerp dat voor de e-mailmelding moet worden gebruikt. Hier hebben we de standaardsjabloon gekozen: **[!UICONTROL Local approval notification]**.
-1. In de **[!UICONTROL Approval schedule]** sectie hebben we de standaardgoedkeuringsdeadline (3 dagen) behouden en een herinnering toegevoegd. De levering duurt 3 dagen na de aanvang van de goedkeuring. Zodra de goedkeuringsdeadline is bereikt, worden de ontvangers die niet zijn goedgekeurd niet in aanmerking genomen door zich te richten.
+1. Selecteer in de sectie **[!UICONTROL Notification]** de leveringssjabloon en het onderwerp dat voor de e-mailmelding moet worden gebruikt. Hier hebben we de standaardsjabloon gekozen: **[!UICONTROL Local approval notification]**.
+1. In **[!UICONTROL Approval schedule]** sectie, hebben wij de standaardgoedkeuringstermijn (3 dagen) behouden en een herinnering toegevoegd. De levering duurt 3 dagen na de aanvang van de goedkeuring. Zodra de goedkeuringsdeadline is bereikt, worden de ontvangers die niet zijn goedgekeurd niet in aanmerking genomen door zich te richten.
 
-De door de **[!UICONTROL Local approval]** activiteit aan lokale toezichthouders verzonden e-mail met kennisgeving ziet er als volgt uit:
+Het meldingsbericht dat de activiteit **[!UICONTROL Local approval]** aan lokale toezichthouders heeft verzonden is als volgt:
 
 ![](assets/local_validation_intro_2.png)
 
 ### Wait {#wait}
 
-Met de wachtactiviteiten kunt u het starten van de tweede lokale goedkeuringsactiviteit uitstellen die de feedbackmelding voor levering verzendt. In het **[!UICONTROL Duration]** veld hebben we de **[!UICONTROL 5d]** waarde (5 dagen) ingevoerd. De acties die de ontvangers gedurende vijf dagen na de verzending van de levering uitvoeren, worden in de feedbackmelding opgenomen.
+Met de wachtactiviteiten kunt u het starten van de tweede lokale goedkeuringsactiviteit uitstellen die de feedbackmelding voor levering verzendt. In het **[!UICONTROL Duration]** gebied, zijn wij ingegaan **[!UICONTROL 5d]** waarde (5 dagen). De acties die de ontvangers gedurende vijf dagen na de verzending van de levering uitvoeren, worden in de feedbackmelding opgenomen.
 
 ![](assets/local_validation_workflow_3.png)
 
@@ -168,9 +168,9 @@ De tweede **[!UICONTROL Local approval]** activiteit laat u een levering verzend
 
 De volgende velden moeten worden ingevoerd.
 
-1. Kies in de **[!UICONTROL Action to execute]** sectie **[!UICONTROL Delivery feedback report]**.
-1. Kies in de **[!UICONTROL Delivery]** sectie **[!UICONTROL Specified in the transition]**.
-1. Selecteer in de **[!UICONTROL Notification]** sectie de leveringssjabloon en het onderwerp dat voor de e-mailmelding moet worden gebruikt.
+1. Kies **[!UICONTROL Delivery feedback report]** in de sectie **[!UICONTROL Action to execute]**.
+1. Kies **[!UICONTROL Specified in the transition]** in de sectie **[!UICONTROL Delivery]**.
+1. Selecteer in de sectie **[!UICONTROL Notification]** de leveringssjabloon en het onderwerp dat voor de e-mailmelding moet worden gebruikt.
 
 Zodra de termijn die in de wachttijdactiviteit wordt gevormd wordt bereikt, verzendt de tweede **[!UICONTROL Local approval]** typeactiviteit het volgende bericht e-mail naar elke lokale supervisor:
 
@@ -180,15 +180,15 @@ Zodra de termijn die in de wachttijdactiviteit wordt gevormd wordt bereikt, verz
 
 Telkens wanneer de lokale goedkeuringsactiviteit begint, wordt een goedkeuringstaak gecreeerd. De beheerder kan elk van deze goedkeuringstaken controleren.
 
-Ga naar de doelworkflow van uw campagne en klik op het **[!UICONTROL Local approval tasks]** tabblad.
+Ga naar de doelworkflow van uw campagne en klik op het tabblad **[!UICONTROL Local approval tasks]**.
 
 ![](assets/local_validation_admin_1.png)
 
-De lijst van lokale goedkeuringstaken kan ook via het **[!UICONTROL Approval tasks]** lusje van het malplaatje van de gegevensdistributie worden betreden.
+De lijst met lokale goedkeuringstaken kan ook worden geopend via het tabblad **[!UICONTROL Approval tasks]** van de sjabloon voor gegevensdistributie.
 
 ![](assets/local_validation_admin_2.png)
 
-Selecteer de taak die u wilt controleren en klik op de **[!UICONTROL Detail]** knop. Op het **[!UICONTROL General]** tabblad van de lokale goedkeuringstaak kunt u informatie over de taak weergeven. Indien nodig kunt u de goedkeuringsdatums en de herinneringsdatums wijzigen.
+Selecteer de taak u wilt controleren en de **[!UICONTROL Detail]** knoop klikken. Op het tabblad **[!UICONTROL General]** van de lokale goedkeuringstaak kunt u informatie over de taak weergeven. Indien nodig kunt u de goedkeuringsdatums en de herinneringsdatums wijzigen.
 
 ![](assets/local_validation_admin_3.png)
 
@@ -200,11 +200,11 @@ Dit tabblad bevat de volgende informatie:
 * de gekoppelde workflow en campagne
 * het taakschema
 
-Op het **[!UICONTROL Distribution]** tabblad voor de taak kunt u de goedkeuringslogboeken, hun status, het aantal berichten dat u wilt ontvangen, de goedkeuringsdatum en de operator die de levering heeft goedgekeurd, weergeven.
+Het **[!UICONTROL Distribution]** lusje voor de taak laat u de goedkeuringslogboeken, hun status, het aantal gerichte berichten, de goedkeuringsdatum, evenals de exploitant bekijken die de levering goedkeurde.
 
 ![](assets/local_validation_admin_4.png)
 
-Selecteer een goedkeuringslogboek en klik op de **[!UICONTROL Detail]** knop om meer informatie weer te geven. Op het **[!UICONTROL General]** tabblad van het lokale goedkeuringslogboek kunt u algemene logboekgegevens weergeven. U kunt ook de goedkeuringsstatus wijzigen.
+Selecteer een goedkeuringslogboek en klik **[!UICONTROL Detail]** knoop om meer informatie te tonen. Op het tabblad **[!UICONTROL General]** van het lokale goedkeuringslogboek kunt u algemene logboekgegevens weergeven. U kunt ook de goedkeuringsstatus wijzigen.
 
 ![](assets/local_validation_admin_5.png)
 
@@ -216,7 +216,7 @@ Dit tabblad bevat de volgende informatie:
 * de lokale toezichthouder die de goedkeuring heeft verleend en de goedkeuringsdatum
 * het aantal gerichte en goedgekeurde berichten
 
-Op het **[!UICONTROL Targeted]** tabblad van het goedkeuringslogboek worden de lijst met beoogde ontvangers en hun goedkeuringsstatus weergegeven. U kunt deze status desgewenst wijzigen.
+Op het tabblad **[!UICONTROL Targeted]** van het goedkeuringslogboek worden de lijst met beoogde ontvangers en hun goedkeuringsstatus weergegeven. U kunt deze status desgewenst wijzigen.
 
 ![](assets/local_validation_admin_6.png)
 
