@@ -19,23 +19,23 @@ ht-degree: 1%
 
 Webformulieren zijn volledig configureerbaar en aanpasbaar om aan uw vereisten te voldoen. De parameters moeten in het eigenschappenvenster worden ingevoerd.
 
-Het eigenschappenvenster is toegankelijk via de **[!UICONTROL Properties]** knop op de werkbalk van het webformulier. In dit venster hebt u toegang tot een reeks instellingen die specifiek zijn voor het webformulier. Sommige instellingen zijn mogelijk afkomstig uit de sjabloonconfiguratie.
+Het eigenschappenvenster is toegankelijk via de knop **[!UICONTROL Properties]** op de werkbalk van het webformulier. In dit venster hebt u toegang tot een reeks instellingen die specifiek zijn voor het webformulier. Sommige instellingen zijn mogelijk afkomstig uit de sjabloonconfiguratie.
 
 ![](assets/s_ncs_admin_survey_properties_general.png)
 
 ## Algemene formuliereigenschappen {#overall-form-properties}
 
-Op het **[!UICONTROL General]** tabblad van het venster Eigenschappen kunt u het **label** van het formulier wijzigen. Het wordt ten zeerste aanbevolen de **interne naam** niet te wijzigen.
+Op het tabblad **[!UICONTROL General]** van het eigenschappenvenster kunt u de **Label** van het formulier wijzigen. Het wordt sterk geadviseerd om **Interne naam** niet te veranderen.
 
 ![](assets/s_ncs_admin_survey_properties_general_tab.png)
 
-De formuliersjabloon wordt gekozen tijdens het maken van het formulier. Deze kan later niet worden gewijzigd. Zie Een webformuliersjabloon [](../../web/using/using-a-web-form-template.md)gebruiken voor meer informatie over het maken en beheren van formuliersjablonen.
+De formuliersjabloon wordt gekozen tijdens het maken van het formulier. Deze kan later niet worden gewijzigd. Raadpleeg [Een webformuliersjabloon gebruiken](../../web/using/using-a-web-form-template.md) voor meer informatie over het maken en beheren van formuliersjablonen.
 
 ## Opslag van formuliergegevens {#form-data-storage}
 
-De gebieden van de vormen van het Web worden opgeslagen in de ontvangenlijst door gebrek. U kunt de tabel wijzigen door een nieuwe tabel in het **[!UICONTROL Document type]** veld te selecteren. Met het **[!UICONTROL Zoom]** pictogram kunt u de inhoud van de geselecteerde tabel weergeven.
+De gebieden van de vormen van het Web worden opgeslagen in de ontvangenlijst door gebrek. U kunt de tabel wijzigen door een nieuwe tabel te selecteren in het veld **[!UICONTROL Document type]**. Met het pictogram **[!UICONTROL Zoom]** kunt u de inhoud van de geselecteerde tabel weergeven.
 
-Standaard worden antwoorden opgeslagen in het **antwoord op een tabel met het** ontvangende formulier.
+Door gebrek, worden de antwoorden opgeslagen in **Antwoord aan een ontvankelijke vorm** lijst.
 
 ## Een foutpagina instellen {#setting-up-an-error-page}
 
@@ -47,19 +47,19 @@ Standaard wordt de volgende informatie weergegeven:
 
 ![](assets/s_ncs_admin_survey_default_error_page.png)
 
-De inhoud van de weergegeven tekenreeksen wordt gedefinieerd op het **[!UICONTROL Error page]** tabblad van het eigenschappenvenster. Op het **[!UICONTROL HTML]** **[!UICONTROL Texts]** tabblad wordt de rendering weergegeven en kunt u de tekstreeksen wijzigen en zo nodig tekst toevoegen:
+De inhoud van de weergegeven tekenreeksen wordt gedefinieerd op het tabblad **[!UICONTROL Error page]** van het eigenschappenvenster. Op het tabblad **[!UICONTROL HTML]** wordt de rendering weergegeven en op het tabblad **[!UICONTROL Texts]** kunt u de tekstreeksen wijzigen en zo nodig tekst toevoegen:
 
 ![](assets/s_ncs_admin_survey_error_page.png)
 
 ## Formulierlokalisatie {#form-localization}
 
-Op het **[!UICONTROL Localization]** tabblad kunt u de ontwerp- en weergavetalen voor het webformulier selecteren.
+Op het tabblad **[!UICONTROL Localization]** kunt u de ontwerp- en weergavetalen voor het webformulier selecteren.
 
-See [Translating a web form](../../web/using/translating-a-web-form.md).
+Zie [Een webformulier vertalen](../../web/using/translating-a-web-form.md).
 
-## Bladeren en weergeven van formulieren {#form-browsing-and-rendering}
+## Door formulieren bladeren en weergeven {#form-browsing-and-rendering}
 
-Op het **[!UICONTROL Rendering]** tabblad kunt u het type bladeren tussen pagina&#39;s van het webformulier en de gebruikte renderingsjabloon definiëren.
+Met het tabblad **[!UICONTROL Rendering]** kunt u het type bladeren tussen pagina&#39;s van het webformulier en de gebruikte renderingsjabloon definiëren.
 
 U kunt navigeren via koppelingen of knoppen.
 
@@ -69,45 +69,45 @@ Knoppen zijn standaard de navigatie-elementen. Hiermee kunt u de volgende handel
 
 * Goedkeuren van de huidige pagina en de volgende pagina weergeven door op **[!UICONTROL Next]** te klikken. Deze knop wordt op alle pagina&#39;s weergegeven, behalve op de laatste.
 * Geef de vorige pagina weer door op **[!UICONTROL Previous]** te klikken. Deze knop wordt op alle pagina&#39;s weergegeven, behalve op de eerste.
-* Sla de formulierreacties op door op de **[!UICONTROL Approve]** knop te klikken. Deze knop wordt alleen op de laatste pagina weergegeven.
+* Sla de formulierreacties op door op de knop **[!UICONTROL Approve]** te klikken. Deze knop wordt alleen op de laatste pagina weergegeven.
 
 Deze elementen worden onder aan elke pagina weergegeven. Hun standpunten kunnen worden gewijzigd. Hiervoor moet u het stijlblad wijzigen.
 
 >[!NOTE]
 >
->Het is mogelijk om de **[!UICONTROL Previous]** knop op sommige pagina&#39;s te verbergen. Ga hiertoe naar de desbetreffende pagina en controleer de **[!UICONTROL Disallow returning to the previous page]** optie. Deze optie is toegankelijk wanneer de hoofdmap van de paginastructuur is geselecteerd.
+>Het is mogelijk om de **[!UICONTROL Previous]** knoop op sommige pagina&#39;s te verbergen. Ga hiertoe naar de desbetreffende pagina en controleer de optie **[!UICONTROL Disallow returning to the previous page]**. Deze optie is toegankelijk wanneer de hoofdmap van de paginastructuur is geselecteerd.
 
-In het **[!UICONTROL Template]** veld op het **[!UICONTROL Rendering]** tabblad kunt u een thema kiezen uit de beschikbare thema&#39;s.
+In het veld **[!UICONTROL Template]** van het tabblad **[!UICONTROL Rendering]** kunt u een thema selecteren uit de beschikbare thema&#39;s.
 
-Thema&#39;s worden opgeslagen in het **[!UICONTROL Administration>Configuration>Form rendering]** knooppunt van de structuur. Zie Het renderingsjabloon van het formulier [selecteren](../../web/using/form-rendering.md#selecting-the-form-rendering-template)
+Thema&#39;s worden opgeslagen in het knooppunt **[!UICONTROL Administration>Configuration>Form rendering]** van de boomstructuur. Zie [De rendersjabloon van het formulier selecteren](../../web/using/form-rendering.md#selecting-the-form-rendering-template)
 
-In het onderste gedeelte van het eigenschappenvenster wordt een voorbeeld van rendering weergegeven. Met het **[!UICONTROL Edit link]** pictogram kunt u de configuratie voor het geselecteerde thema weergeven.
+In het onderste gedeelte van het eigenschappenvenster wordt een voorbeeld van rendering weergegeven. Met het pictogram **[!UICONTROL Edit link]** kunt u de configuratie voor het geselecteerde thema weergeven.
 
 ![](assets/s_ncs_admin_survey_properties_render.png)
 
 ## Teksten in de vorm {#texts-in-the-form}
 
-Op het **[!UICONTROL Page]** tabblad kunt u de inhoud van de kop- en voettekst van het formulier definiëren. Zie Kop- en [voetteksten](../../web/using/form-rendering.md#defining-headers-and-footers)definiëren.
+Op het tabblad **[!UICONTROL Page]** kunt u de inhoud van de kop- en voettekst van het formulier definiëren. Zie [Kop- en voetteksten definiëren](../../web/using/form-rendering.md#defining-headers-and-footers).
 
-U kunt hiermee ook vertalingen beheren. See [Translating a web form](../../web/using/translating-a-web-form.md).
+U kunt hiermee ook vertalingen beheren. Zie [Een webformulier vertalen](../../web/using/translating-a-web-form.md).
 
 ## Toegankelijkheid van het formulier {#accessibility-of-the-form}
 
-Een webformulier is toegankelijk voor gebruikers als dit zo is **[!UICONTROL Online]** en als de huidige datum binnen de geldigheidsperiode valt. De status van het formulier wordt gewijzigd tijdens de publicatiefase (zie [Een formulier](../../web/using/publishing-a-web-form.md#publishing-a-form)publiceren). De status wordt weergegeven in de sectie **Project** van het **[!UICONTROL General]** tabblad Eigenschappen van het venster Eigenschappen.
+Een webformulier is toegankelijk voor gebruikers als het **[!UICONTROL Online]** is en als de huidige datum binnen de geldigheidsperiode valt. De status van het formulier wordt gewijzigd tijdens de publicatiefase (zie [Een formulier publiceren](../../web/using/publishing-a-web-form.md#publishing-a-form)). De status wordt weergegeven in de sectie **Project** van het tabblad **[!UICONTROL General]** van het eigenschappenvenster.
 
-De geldigheidsperiode loopt van de **[!UICONTROL Start]** datum tot en met de **[!UICONTROL End date]**. Als er in deze velden geen datums zijn opgegeven, is het formulier blijvend geldig.
+De geldigheidsperiode loopt van **[!UICONTROL Start]** datum tot **[!UICONTROL End date]**. Als er in deze velden geen datums zijn opgegeven, is het formulier blijvend geldig.
 
 ![](assets/s_ncs_admin_survey_properties_date.png)
 
 >[!NOTE]
 >
->Als het formulier wordt gesloten en de geldigheidsperiode ervan niet is bereikt of verlopen, of als het formulier is gesloten door de Adobe Campaign-operator, wordt een bericht weergegeven wanneer de gebruiker toegang probeert te krijgen tot het formulier. U kunt dit bericht personaliseren door te klikken **[!UICONTROL Personalize the message displayed if the form is closed...]**.
+>Als het formulier wordt gesloten en de geldigheidsperiode ervan niet is bereikt of verlopen, of als het formulier is gesloten door de Adobe Campaign-operator, wordt een bericht weergegeven wanneer de gebruiker toegang probeert te krijgen tot het formulier. U kunt dit bericht personaliseren door **[!UICONTROL Personalize the message displayed if the form is closed...]** te klikken.
 
 ## Toegangsbeheer voor formulieren {#form-access-control}
 
 Standaard wordt toegang tot webformulieren uitgevoerd in anonieme modus: aan alle operatoren die toegang krijgen tot het formulier, worden de rechten van de WebApp-operator toegewezen.
 
-U kunt toegangsbeheer inschakelen voor de weergave van het formulier, bijvoorbeeld wanneer u een formulier op een intranetsite levert, om gebruikers te verifiëren. U doet dit door het **[!UICONTROL Properties]** venster van het desbetreffende formulier weer te geven en op de **[!UICONTROL Enable access control]** optie te klikken, zoals hieronder wordt weergegeven:
+U kunt toegangsbeheer inschakelen voor de weergave van het formulier, bijvoorbeeld wanneer u een formulier op een intranetsite levert, om gebruikers te verifiëren. Hiervoor geeft u het venster **[!UICONTROL Properties]** van het betreffende formulier weer en klikt u op de optie **[!UICONTROL Enable access control]**, zoals hieronder wordt weergegeven:
 
 ![](assets/s_ncs_admin_survey_access_ctrl.png)
 
@@ -117,7 +117,7 @@ Als de pagina wordt geopend, wordt het volgende verificatieformulier weergegeven
 
 Aanmelding en wachtwoord zijn die welke door Adobe Campaign-operatoren worden gebruikt. Raadpleeg [deze sectie](../../platform/using/access-management.md) voor meer informatie.
 
-Met de **[!UICONTROL Use a specific account]** optie kunt u de lees- of schrijfmachtigingen beperken van de operator die het formulier benadert. Gebruik de vervolgkeuzelijst om een operator of groep operatoren te selecteren die verantwoordelijk zijn voor het verlenen van deze machtigingen.
+Met de optie **[!UICONTROL Use a specific account]** kunt u de lees- of schrijfmachtigingen beperken van de operator die het formulier benadert. Gebruik de vervolgkeuzelijst om een operator of groep operatoren te selecteren die verantwoordelijk zijn voor het verlenen van deze machtigingen.
 
 ![](assets/s_ncs_admin_survey_access_op_select.png)
 
@@ -131,32 +131,32 @@ Standaard biedt Adobe Campaign parameters voor het weergeven van een voorbeeld v
 
 De volgende parameters zijn standaard beschikbaar:
 
-* **id** om de gecodeerde id aan te geven.
-* **lang** om de weergavetaal te wijzigen.
-* **oorsprong** om de oorsprong van de geënquêteerde aan te geven.
-* **Met _uuid** kunt u formulieren vóór publicatie weergeven en fouten bijhouden. Deze parameter is bestemd voor intern gebruik (maken en fouten opsporen): wanneer u tot het formulier van het Web via dit URL toegang hebt, worden de gecreeerde verslagen niet in het volgen (rapporten) in aanmerking genomen. De oorsprong wordt gedwongen tot de **[!UICONTROL Adobe Campaign]** waarde.
+* **Hiermee geeft u** de gecodeerde id aan.
+* **om de** weergavetaal te wijzigen.
+* **van** oorsprong de oorsprong van de geënquêteerde aangeven.
+* **_** Hiermee wordt het weergeven van formulieren vóór publicatie en het bijhouden van fouten ondersteund. Deze parameter is bestemd voor intern gebruik (maken en fouten opsporen): wanneer u tot het formulier van het Web via dit URL toegang hebt, worden de gecreeerde verslagen niet in het volgen (rapporten) in aanmerking genomen. De oorsprong wordt afgedwongen tot de waarde **[!UICONTROL Adobe Campaign]**.
 
-   Wordt gebruikt met de parameters **_preview** en/of **_debug**:
+   Deze wordt gebruikt met de parameters **_preview** en/of **_debug**:
 
-   **_preview** om de laatst opgeslagen versie weer te geven. Deze parameter mag alleen in de testfase worden gebruikt.
+   **_** voorvertoning om de laatst opgeslagen versie weer te geven. Deze parameter mag alleen in de testfase worden gebruikt.
 
-   **_debug** om het spoor van de gegevensinvoer of berekend in de pagina&#39;s van de vorm te tonen. Hiermee wordt meer informatie over fouten opgehaald, ook als het formulier eenmaal is gepubliceerd.
+   **_** debuggen om het spoor van de gegevensinvoer of berekend in de pagina&#39;s van de vorm te tonen. Hiermee wordt meer informatie over fouten opgehaald, ook als het formulier eenmaal is gepubliceerd.
 
    >[!CAUTION]
    >
-   >Wanneer het formulier via een URL met de parameter **_uuid** wordt weergegeven, wordt de waarde van de **[!UICONTROL origin]** parameter naar **Adobe Campaign** gedwongen.
+   >Wanneer het formulier via een URL wordt weergegeven met de parameter **_uuid**, wordt de waarde van de parameter **[!UICONTROL origin]** gedwongen naar **Adobe Campaign**.
 
-## Parameters toevoegen {#adding-parameters}
+## Parameters {#adding-parameters} toevoegen
 
-Parameters kunnen worden toegevoegd via het **[!UICONTROL Parameters...]** tabblad in het venster Eigenschappen van het formulier. Zij kunnen verplicht worden gesteld, zoals hieronder wordt getoond:
+Parameters kunnen worden toegevoegd via het tabblad **[!UICONTROL Parameters...]** in het venster Eigenschappen van het formulier. Zij kunnen verplicht worden gesteld, zoals hieronder wordt getoond:
 
 ![](assets/s_ncs_admin_survey_properties_param.png)
 
-U moet een opslagplaats specificeren waarvan de waarde van de parameter zal worden teruggewonnen. U doet dit door een van de opslagopties te selecteren en vervolgens op het **[!UICONTROL Storage]** tabblad te klikken om het desbetreffende veld of de variabele te selecteren. De opslagopties worden gedetailleerd beschreven in de opslagvelden [](../../web/using/web-forms-answers.md#response-storage-fields)Reactie.
+U moet een opslagplaats specificeren waarvan de waarde van de parameter zal worden teruggewonnen. Hiervoor selecteert u een van de opslagopties en klikt u op het tabblad **[!UICONTROL Storage]** om het betreffende veld of de betreffende variabele te selecteren. De opslagopties worden beschreven in [Opslagvelden van de Reactie](../../web/using/web-forms-answers.md#response-storage-fields).
 
 De status van de geënquêteerde (0, 1 of een andere waarde) kan vervolgens aan de URL worden toegevoegd om het formulier te openen. Deze informatie kan opnieuw worden gebruikt op de pagina&#39;s van het formulier of in een testvak. De weergegeven pagina&#39;s kunnen worden geconditioneerd op basis van de waarde van de context, zoals hieronder wordt weergegeven:
 
-1. Homepage voor klanten (**status=1**):
+1. Startpagina voor klanten (**status=1**):
 
    ![](assets/s_ncs_admin_survey_test_client.png)
 
