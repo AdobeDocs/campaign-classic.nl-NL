@@ -17,11 +17,11 @@ ht-degree: 2%
 
 # Voorbeelden van schemabewerking{#examples-of-schemas-edition}
 
-## Een tabel uitbreiden {#extending-a-table}
+## Een tabel {#extending-a-table} uitbreiden
 
-Pas de volgende procedure toe om de tabel **nms:ontvanger** schema ontvanger uit te breiden:
+Pas de volgende procedure toe om de **nms:receiving** schema ontvankelijke lijst uit te breiden:
 
-1. Maak het extensieschema (**cus:extension**) met de volgende gegevens:
+1. Maak het extensieschema (**cus:extension**) met behulp van de volgende gegevens:
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -42,13 +42,13 @@ Pas de volgende procedure toe om de tabel **nms:ontvanger** schema ontvanger uit
    </srcSchema>
    ```
 
-   In dit voorbeeld wordt een geïndexeerd veld (**getrouwheid**) toegevoegd en wordt het **locatie** -element (dat al bestond in het schema **nms:ontvanger** ) aangevuld met een opgesomd veld (**gebied**).
+   In dit voorbeeld wordt een geïndexeerd veld (**fidelity**) toegevoegd en wordt het element **location** (dat al bestond in het schema **nms:receiving**) aangevuld met een opgesomd veld (**area**).
 
    >[!IMPORTANT]
    >
    >Vergeet niet het kenmerk **extendedSchema** toe te voegen om naar het extensieschema te verwijzen.
 
-1. Controleer of het uitgebreide schema het **nms:ontvangerschema** is en of de aanvullende gegevens aanwezig zijn:
+1. Controleer of het uitgebreide schema het schema **nms:receiving** is en of de aanvullende gegevens aanwezig zijn:
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -103,7 +103,7 @@ Bronschema van tabel bestellen:
 </srcSchema>
 ```
 
-Het lijsttype is **automatische** controle om een auto-geproduceerde primaire sleutel tot stand te brengen die door de verbinding van de verbinding aan de ontvankelijke lijst moet worden gebruikt.
+Het tabeltype is **automatische** om een automatisch gegenereerde primaire sleutel te maken die moet worden gebruikt door de samenvoeging van de koppeling naar de ontvangende tabel.
 
 Gegenereerd schema:
 
@@ -155,7 +155,7 @@ Met een extensietabel kunt u de inhoud van een bestaande tabel in een gekoppelde
 
 Het doel van een extensietabel is het voorkomen van beperkingen op het aantal velden dat in een tabel wordt ondersteund, of het optimaliseren van de ruimte die wordt ingenomen door de gegevens, die op verzoek worden gebruikt.
 
-Het schema van de extensietabel maken (**focus:feature**):
+Het creëren van het schema van de uitbreidingslijst (**cus:feature**):
 
 ```
 <srcSchema mappingType="sql" name="feature" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -205,7 +205,7 @@ Een overlooplijst is een uitbreidingslijst (kardinaliteit 1-1), maar de verklari
 
 De overlooptabel bevat de vreemde sleutel voor de uit te breiden tabel. De uit te breiden tabel wordt derhalve niet gewijzigd. De relatie tussen de twee tabellen is de waarde van de primaire sleutel van de uit te breiden tabel.
 
-Het overlooptabelschema maken (**focus:overloop**):
+Het creëren van het schema van de overlooplijst (**cus:overflow**):
 
 ```
 <srcSchema label="Overflow" name="overflow" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -321,7 +321,7 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-Definieer een koppeling in een tabel die deze referentietabel gebruikt en voeg het kenmerk **displayAsField=&quot;true&quot;** toe.
+In om het even welke lijst die deze verwijzingstabel gebruikt, bepaal een verbinding en voeg **displayAsField=&quot;waar&quot;** toe attribuut.
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
@@ -333,7 +333,7 @@ In de gebruikersinterface wordt geen koppeling maar een veld weergegeven. Wannee
 
 * Als de instructie automatisch moet worden voltooid, moet u een compute-string definiëren in de referentietabel.
 
-* Voeg het kenmerk **noDbIndex=&quot;true&quot;** toe aan de koppelingsdefinitie om te voorkomen dat Adobe Campaign een index maakt voor de waarden die zijn opgeslagen in de brontabel van de koppeling.
+* Voeg het **noDbIndex=&quot;waar&quot;** attribuut in de verbindingsdefinitie toe om Adobe Campaign te verhinderen een index op de waarden te creëren die in de bronlijst van de verbinding worden opgeslagen.
 
 ## Verwante onderwerpen
 
