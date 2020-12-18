@@ -6,9 +6,9 @@ description: Campaign Classic-compatibiliteitsmatrix voor Gold Standard-release
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: aabab5367ea4a26837fa3dc94a36fbbfa48d59e3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 100%
 
@@ -202,7 +202,7 @@ Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagi
 <tr>
 <td>Oracle</td>
 <td>
-<p>12c</p>
+<p>12 quater</p>
 <p>11g</p>
 </td>
 </tr>
@@ -211,8 +211,8 @@ Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagi
 <td>
 <p>11.x</p>
 <p>10.x</p>
-<p>9.6.x</p>
-<p>9.4.x</p>
+<p>9,6 x</p>
+<p>9,4 x</p>
 </td>
 </tr>
 <tr><td>SQL Server</td>
