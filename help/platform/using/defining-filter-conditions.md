@@ -17,7 +17,7 @@ ht-degree: 37%
 
 # Filtervoorwaarden definiëren{#defining-filter-conditions}
 
-## De operator kiezen {#choosing-the-operator}
+## De operator {#choosing-the-operator} kiezen
 
 Binnen het filtreren voorwaarden, moet u twee waarden verbinden samen gebruikend een exploitant.
 
@@ -37,7 +37,7 @@ Hieronder volgt een lijst met de beschikbare operatoren:
   <tr> 
    <td> <span class="uicontrol">Equal to</span> <br /> </td> 
    <td> Retourneert een resultaat dat identiek is aan de gegevens die zijn ingevoerd in de tweede kolom Waarde.<br /> </td> 
-   <td> <strong>Achternaam (@lastName) gelijk aan 'Jones'</strong>retourneert alleen ontvangers met als achternaam Jones.<br /> </td> 
+   <td> <strong>Achternaam (@lastName) gelijk aan 'Jones'</strong> retourneert alleen ontvangers met als achternaam Jones.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Greater than</span> <br /> </td> 
@@ -51,12 +51,12 @@ Hieronder volgt een lijst met de beschikbare operatoren:
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Greater than or equal to</span> <br /> </td> 
-   <td> Retourneert alle waarden die gelijk zijn aan of groter zijn dan de ingevoerde waarde.<br /> </td> 
+   <td> Retourneert alle waarden gelijk aan of groter dan de ingevoerde waarde.<br /> </td> 
    <td> <strong>Leeftijd (@age) groter dan of gelijk aan '30'</strong>, retourneert alle ontvangers van 30 jaar of ouder.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Less than or equal to</span> <br /> </td> 
-   <td> Retourneert alle waarden die gelijk zijn aan of lager zijn dan de ingevoerde waarde.<br /> </td> 
+   <td> Retourneert alle waarden gelijk aan of lager dan de ingevoerde waarde.<br /> </td> 
    <td> <strong>Leeftijd (@age) kleiner dan of gelijk aan '60'</strong>, retourneert alle ontvangers van 60 jaar of ouder.<br /> </td> 
   </tr> 
   <tr> 
@@ -71,7 +71,7 @@ Hieronder volgt een lijst met de beschikbare operatoren:
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Begint niet met</span> <br /> </td> 
-   <td> Retourneert de resultaten die niet beginnen met de ingevoerde waarde.<br /> </td> 
+   <td> Retourneert de resultaten die niet beginnen met de ingevoerde waarde<br /> </td> 
    <td> <strong>Account # (@account) begint niet met '20'</strong>.<br /> </td> 
   </tr> 
   <tr> 
@@ -82,12 +82,12 @@ Hieronder volgt een lijst met de beschikbare operatoren:
   <tr> 
    <td> <span class="uicontrol">Bevat niet</span> <br /> </td> 
    <td> Retourneert resultaten die niet de ingevoerde waarde bevatten.<br /> </td> 
-   <td> <strong>E-maildomein (@domein) bevat geen 'vo'</strong>. In dit geval worden domeinnamen die 'vo' bevatten, niet geretourneerd. De domeinnaam voila.fr wordt niet weergegeven in de resultaten.<br /> </td> 
+   <td> <strong>E-maildomein (@domein) bevat geen 'vo'</strong>. In dit geval worden domeinnamen die 'vo' bevatten, niet geretourneerd. De domeinnaam 'voila.fr' wordt niet weergegeven in de resultaten.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Like</span> <br /> </td> 
-   <td> <span class="uicontrol">Like</span> lijkt heel sterk op de operator <span class="uicontrol">Contains</span>. Hiermee kunt u een <span class="uicontrol">%</span> jokerteken in de waarde invoegen.<br /> </td> 
-   <td> <strong>Achternaam (@lastName) zoals 'Jon%s'</strong>. Hier wordt het jokerteken gebruikt als een joker om de naam Jones te vinden, mocht de operator de ontbrekende letter tussen de 'n' en 's' vergeten hebben.<br /> </td> 
+   <td> <span class="uicontrol">Like</span> lijkt heel sterk op de operator <span class="uicontrol">Contains</span>. Hiermee kunt u een jokerteken <span class="uicontrol">%</span> in de waarde invoegen.<br /> </td> 
+   <td> <strong>Achternaam (@lastName) zoals 'Jon%s'</strong>. Hier wordt het jokerteken gebruikt als een joker om de naam "Jones" te zoeken, mocht de operator de ontbrekende letter tussen 'n' en 's' vergeten hebben.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Not like</span> <br /> </td> 
@@ -96,28 +96,28 @@ Hieronder volgt een lijst met de beschikbare operatoren:
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Is empty</span> <br /> </td> 
-   <td> In dit geval komt het resultaat dat we zoeken overeen met een lege waarde in de tweede kolom Waarde.<br /> </td> 
-   <td> <strong>Mobiele (@mobilePhone) is leeg</strong> en retourneert alle ontvangers die geen mobiel nummer hebben.<br /> </td> 
+   <td> In dit geval, past het resultaat wij zoeken een lege waarde in de tweede kolom van de Waarde aan.<br /> </td> 
+   <td> <strong>Met Mobile (@mobilePhone) worden alle ontvangers zonder mobiel nummer </strong> geretourneerd.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Is niet leeg</span> <br /> </td> 
-   <td> Werkt in omgekeerde volgorde naar de operator <span class="uicontrol">Is leeg</span> . Het is niet nodig gegevens in te voeren in de tweede kolom Waarde.<br /> </td> 
+   <td> Werkt in omgekeerde volgorde naar de operator <span class="uicontrol">Is leeg</span>. U hoeft geen gegevens in te voeren in de tweede kolom Waarde.<br /> </td> 
    <td> <strong>E-mail (@email) is niet leeg</strong>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Is opgenomen in</span> <br /> </td> 
    <td> Retourneert resultaten die zijn opgenomen in de aangegeven waarden. Deze waarden moeten door een komma worden gescheiden.<br /> </td> 
-   <td> <strong>Geboortedatum (@geboortedatum) is opgenomen in 12-10-1979.12-10-1984'</strong>, en retourneert de ontvangers die geboren zijn tussen deze data. <br /> </td> 
+   <td> <strong>Geboortedatum (@geboortedatum) is opgenomen in 12-10-1979.12-10-1984'</strong>, en retourneert de ontvangers die geboren zijn tussen deze data.  <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Is niet opgenomen in</span> <br /> </td> 
-   <td> Werkt zoals <span class="uicontrol">Is inbegrepen in</span> exploitant. Hier, willen wij ontvangers uitsluiten die op de ingegane waarden worden gebaseerd.<br /> </td> 
-   <td> <strong>Geboortedatum (@geboortedatum) is niet opgenomen in 10-12-1979.12-10-1984"</strong>. Anders dan in het vorige voorbeeld worden ontvangers die binnen deze datums geboren zijn, niet geretourneerd.<br /> </td> 
+   <td> Werkt zoals de <span class="uicontrol">Is inbegrepen in</span> exploitant. Hier, willen wij ontvangers uitsluiten die op de ingegane waarden worden gebaseerd.<br /> </td> 
+   <td> <strong>Geboortedatum (@geboortedatum) is niet opgenomen in 10-12-1979.12-10-1984"</strong>. In tegenstelling tot het vorige voorbeeld worden ontvangers die binnen deze datums geboren zijn, niet geretourneerd.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## EN, OF, BEHALVE {#using-and--or--except}
+## EN, OF, BEHALEN {#using-and--or--except}
 
 Voor vragen die verscheidene het filtreren voorwaarden gebruiken, moet u verbindingen tussen de voorwaarden bepalen. Er zijn drie mogelijke koppelingen:
 
@@ -125,7 +125,7 @@ Voor vragen die verscheidene het filtreren voorwaarden gebruiken, moet u verbind
 * **[!UICONTROL Or]** laat u een alternatief aanbieden,
 * **[!UICONTROL Except]** Hiermee kunt u een uitzondering definiëren.
 
-Klik op **[!UICONTROL And]** (standaard aangeboden) en kies een optie in de vervolgkeuzelijst.
+Klik **[!UICONTROL And]** (standaard aangeboden) en kies een optie in de vervolgkeuzelijst.
 
 ![](assets/query_condition_modif_01.png)
 
@@ -146,7 +146,7 @@ In dit voorbeeld ziet u een filter waarmee u het volgende kunt weergeven: ontvan
 
 ![](assets/query_editor_nveau_31.png)
 
-## Prioriteitsvoorwaarden {#prioritizing-conditions}
+## Voorwaarden {#prioritizing-conditions} prioriteren
 
 In deze sectie wordt uitgelegd hoe u voorwaarden kunt prioriteren dankzij de blauwe pijlen op de werkbalk.
 
@@ -159,31 +159,31 @@ In deze sectie wordt uitgelegd hoe u voorwaarden kunt prioriteren dankzij de bla
 
 In dit voorbeeld ziet u hoe u de pijl kunt gebruiken om een haakjesniveau te verwijderen. Begin bij de volgende filtervoorwaarde: **[!UICONTROL City equal to London OR gender equal to male and mobile not indicated OR account # starts with "95" and company name starts with "A"]**.
 
-Plaats de cursor op de filtervoorwaarde en klik op de **[!UICONTROL Gender (@gender) equal to Male]** **[!UICONTROL Remove a parenthesis level]** pijl.
+Plaats de cursor op de filtervoorwaarde **[!UICONTROL Gender (@gender) equal to Male]** en klik op de pijl **[!UICONTROL Remove a parenthesis level]**.
 
 ![](assets/query_editor_nveau_32.png)
 
-De **[!UICONTROL Gender (@gender) equal to Male]** voorwaarde is uit het haakje verwijderd. Het is op hetzelfde niveau gegaan als de voorwaarde &quot;Stad is gelijk aan Londen&quot;. Deze voorwaarden zijn met elkaar verbonden (**[!UICONTROL And]**).
+De voorwaarde **[!UICONTROL Gender (@gender) equal to Male]** is uit zijn haakje genomen. Het is op hetzelfde niveau gegaan als de voorwaarde &quot;Stad is gelijk aan Londen&quot;. Deze voorwaarden zijn met elkaar verbonden (**[!UICONTROL And]**).
 
-## Gegevens selecteren om te extraheren {#selecting-data-to-extract}
+## Te extraheren gegevens selecteren {#selecting-data-to-extract}
 
-De beschikbare velden verschillen per tabel. Alle velden worden opgeslagen in een hoofdknooppunt dat bekend staat als de **[!UICONTROL Main element]**. In het volgende voorbeeld bevinden de beschikbare velden zich in de ontvangende tabel. Velden worden altijd in alfabetische volgorde weergegeven.
+De beschikbare velden verschillen per tabel. Alle velden worden opgeslagen in een hoofdknooppunt dat **[!UICONTROL Main element]** wordt genoemd. In het volgende voorbeeld bevinden de beschikbare velden zich in de ontvangende tabel. Velden worden altijd in alfabetische volgorde weergegeven.
 
-Het detail van het geselecteerde veld wordt onder in het venster weergegeven. Het **[!UICONTROL Email domain]** veld is bijvoorbeeld een **[!UICONTROL Calculated SQL field]** en de extensie is **[!UICONTROL (@domain)]**.
+Het detail van het geselecteerde veld wordt onder in het venster weergegeven. Het veld **[!UICONTROL Email domain]** is bijvoorbeeld een **[!UICONTROL Calculated SQL field]** en de extensie is **[!UICONTROL (@domain)]**.
 
 ![](assets/query_editor_nveau_59.png)
 
 >[!NOTE]
 >
->Gebruik het **[!UICONTROL Search]** gereedschap om een beschikbaar veld te zoeken.
+>Gebruik het gereedschap **[!UICONTROL Search]** om een beschikbaar veld te zoeken.
 
-Dubbelklik op een beschikbaar veld om dit toe te voegen aan de uitvoerkolommen. Aan het einde van de query maakt elk geselecteerd veld een kolom in het **[!UICONTROL Data preview]** venster.
+Dubbelklik op een beschikbaar veld om dit toe te voegen aan de uitvoerkolommen. Aan het einde van de query maakt elk geselecteerd veld een kolom in het venster **[!UICONTROL Data preview]**.
 
 ![](assets/query_editor_nveau_01.png)
 
-Geavanceerde velden worden niet standaard weergegeven. Klik **[!UICONTROL Display advanced fields]** in de rechterbenedenhoek van de beschikbare velden om alles weer te geven. Klik nogmaals om terug te keren naar de vorige weergave.
+Geavanceerde velden worden niet standaard weergegeven. Klik op **[!UICONTROL Display advanced fields]** in de rechteronderhoek van de beschikbare velden om alles weer te geven. Klik nogmaals om terug te keren naar de vorige weergave.
 
-In de tabel voor ontvangers zijn de geavanceerde velden bijvoorbeeld **Boolean 1**, **[!UICONTROL Boolean 2]**, **[!UICONTROL Boolean 3]**, **[!UICONTROL Foreign key of "Folder" link]** enzovoort.
+In de ontvangende tabel zijn de geavanceerde velden bijvoorbeeld **Boolean 1**, **[!UICONTROL Boolean 2]**, **[!UICONTROL Boolean 3]**, **[!UICONTROL Foreign key of "Folder" link]**, enz.
 
 Het volgende voorbeeld toont de geavanceerde gebieden van de ontvankelijke lijst.
 
@@ -207,23 +207,23 @@ De verschillende categorieën velden:
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_48.png" /> </td> 
-   <td> Primaire sleutel. Met dit SQL-veld kunt u een record in een tabel identificeren.<br /> </td> 
+   <td> Primaire sleutel. Dit SQL-veld is een manier om een record in een tabel te identificeren.<br /> </td> 
    <td> Ontvangers van id's zijn primaire sleutels en id's zijn per definitie uniek.<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_02.png" /> </td> 
    <td> Buitenlandse sleutel. Wordt gebruikt als een koppeling naar een andere tabel.<br /> </td> 
-   <td> Ontvanger buitenlandse sleutel, buitenlandse servicesleutel, enz.<br /> </td> 
+   <td> Ontvanger buitenlandse sleutel, service buitenlandse sleutel, enz.<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_46.png" /> </td> 
-   <td> Berekend veld. Dit type veld wordt op verzoek berekend met behulp van de waarden in de database.<br /> </td> 
+   <td> Berekend veld. Dit type van gebied wordt berekend op verzoek gebruikend de waarden in het gegevensbestand.<br /> </td> 
    <td> Leeftijd, e-maildomein, enz.<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_49.png" /> </td> 
    <td> Veld met lange teksten.<br /> </td> 
-   <td> Opmerking, volledig adres, enzovoort.<br /> </td> 
+   <td> Opmerking, volledig adres, enz.<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_50.png" /> </td> 
@@ -246,26 +246,26 @@ Koppeling maken naar een tabel en verzamelingselement:
  <tbody> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_51.png" /> </td> 
-   <td> Met name koppelingen naar een tabel. Deze komen overeen met 1-1 type associaties. Een instantie van de brontabel kan slechts één instantie van de doeltabel bevatten. Er kan bijvoorbeeld slechts één ontvanger aan een land zijn gekoppeld.<br /> </td> 
+   <td> Met name koppelingen naar een tabel. Deze komen overeen met 1-1 type associaties. Een instantie van de brontabel kan slechts één instantie van de doeltabel bevatten. Er kan bijvoorbeeld slechts één ontvanger zijn gekoppeld aan een land.<br /> </td> 
    <td> Map, provincie, land, enz. <br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_52.png" /> </td> 
-   <td> Het element van de inzameling op een specifieke lijst. Deze komen overeen met 1-N type associaties. Eén exemplaar van de brontabel valt samen met meerdere exemplaren van de doeltabel, maar één instantie van de doeltabel kan slechts één instantie van de brontabel bevatten. Eén ontvanger kan bijvoorbeeld een abonnement nemen op 'n'-abonnementbrieven.<br /> </td> 
-   <td> Abonnementen, lijsten, uitsluitingslogboeken, enz.<br /> </td> 
+   <td> Het element van de inzameling op een specifieke lijst. Deze komen overeen met 1-N type associaties. Eén exemplaar van de brontabel valt samen met meerdere exemplaren van de doeltabel, maar één instantie van de doeltabel kan slechts één instantie van de brontabel bevatten. Eén ontvanger kan zich bijvoorbeeld abonneren op 'n'-abonnementbrieven.<br /> </td> 
+   <td> Abonnementen, lijsten, logboeken van uitsluitingen, enz.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->* Gebruik de **[!UICONTROL Add]** knop (boven de zijpictogrambalk) om een uitvoerkolom toe te voegen waarin u de expressie wilt bewerken. Raadpleeg [Building-expressies](#building-expressions)voor meer informatie over het bewerken van een expressie.
->* Verwijder een uitvoerkolom door op rood &#39;x&#39; te klikken (**Verwijderen**).
+>* Gebruik de knop **[!UICONTROL Add]** (boven de zijpictogrambalk) om een uitvoerkolom toe te voegen waarin u de expressie wilt bewerken. Raadpleeg [Expressies maken](#building-expressions) voor meer informatie over het bewerken van een expressie.
+>* Verwijder een uitvoerkolom door op de rode letter &#39;x&#39; (**Delete**) te klikken.
 >* Wijzig de volgorde van de uitvoerkolommen met de pijlen.
->* Het **[!UICONTROL Distribution of values]** dient als een manier om de verdeling van de waarden van het geselecteerde veld te bekijken (bijvoorbeeld de distributies die gekoppeld zijn aan de ontvangende steden, de ontvangende talen, enz.).
+>* De **[!UICONTROL Distribution of values]** dient als een manier om de verdeling van de waarden van het geselecteerde veld te bekijken (bijvoorbeeld de distributies die gekoppeld zijn aan de ontvangende steden, de ontvangende talen, enz.).
 
 
-## Berekende velden maken {#creating-calculated-fields}
+## Berekende velden {#creating-calculated-fields} maken
 
 Voeg zo nodig een kolom toe tijdens het opmaken van gegevens. Een berekend veld voegt een kolom toe aan de sectie met de voorvertoning van gegevens. Klik op **[!UICONTROL Add a calculated field]**.
 
@@ -293,16 +293,16 @@ Er zijn vier typen berekende velden:
 
    ![](assets/query_editor_nveau_63.png)
 
-   Het berekende **[!UICONTROL Enumerations]** type veld kan vier voorwaarden bevatten:
+   Het berekende veld van het type **[!UICONTROL Enumerations]** kan vier voorwaarden bevatten:
 
    * **[!UICONTROL Keep the source value]** Hiermee herstelt u de bronwaarde in het doel zonder deze te wijzigen.
    * **[!UICONTROL Use the following value]** Hiermee kunt u een standaarddoelwaarde voor niet-gedefinieerde bronwaarden invoeren.
    * **[!UICONTROL Generate a warning and continue]** waarschuwt de gebruiker dat de bronwaarde niet kan worden gewijzigd.
    * **[!UICONTROL Generate an error and reject the line]** voorkomt dat de regel wordt berekend en geïmporteerd.
 
-Klik op het veld **[!UICONTROL Detail of calculated field]** om de details van het ingevoegde veld weer te geven.
+Klik op **[!UICONTROL Detail of calculated field]** om de details van het ingevoegde veld weer te geven.
 
-Klik op het **[!UICONTROL Remove the calculated field]** kruisje om dit berekende veld te verwijderen.
+Klik op het kruisje **[!UICONTROL Remove the calculated field]** om dit berekende veld te verwijderen.
 
 ![](assets/query_editor_nveau_58.png)
 
@@ -314,11 +314,11 @@ In het volgende voorbeeld ziet u hoe u een telling op een primaire toets uitvoer
 
 Voer de volgende stappen uit:
 
-1. Klik **[!UICONTROL Add]** in het **[!UICONTROL Data to extract]** venster. Selecteer in het **[!UICONTROL Formula type]** venster een type formule om de expressie in te voeren.
+1. Klik **[!UICONTROL Add]** in het **[!UICONTROL Data to extract]** venster. Selecteer in het venster **[!UICONTROL Formula type]** een type formule om de expressie in te voeren.
 
    Er zijn verschillende typen beschikbare formules: **[!UICONTROL Field only]**, **[!UICONTROL Aggregate]**, **[!UICONTROL Expression]**.
 
-   Select **[!UICONTROL Process on an aggregate function]**, and **[!UICONTROL Count]**. Click **[!UICONTROL Next]**.
+   Selecteer **[!UICONTROL Process on an aggregate function]** en **[!UICONTROL Count]**. Klik op **[!UICONTROL Next]**.
 
    ![](assets/query_editor_nveau_54.png)
 
@@ -326,11 +326,11 @@ Voer de volgende stappen uit:
 
    ![](assets/query_editor_nveau_88.png)
 
-Hier volgt een gedetailleerde weergave van de opties die beschikbaar zijn in het **[!UICONTROL Formula types]** venster:
+Hier volgt een gedetailleerde weergave van de opties in het venster **[!UICONTROL Formula types]**:
 
 ![](assets/query_editor_nveau_05.png)
 
-1. **[!UICONTROL Field only]** Hiermee kunt u terugkeren naar het **[!UICONTROL Field to select]** venster.
+1. **[!UICONTROL Field only]** Hiermee kunt u terugkeren naar het  **[!UICONTROL Field to select]** venster.
 1. **[!UICONTROL Aggregate (Process on an aggregate function)]**. Hier volgen enkele voorbeelden van het gebruik van aggregaten:
 
    * **[!UICONTROL Count]** Hiermee kunt u een aantal primaire sleutels uitvoeren.
@@ -339,17 +339,17 @@ Hier volgt een gedetailleerde weergave van de opties die beschikbaar zijn in het
    * **[!UICONTROL Minimum value]** Hiermee kunt u klanten doorzoeken en zoeken naar klanten die zich onlangs op een aanbieding hebben geabonneerd.
    * **[!UICONTROL Average]**. Met deze functie kunt u de gemiddelde leeftijd van de ontvangers berekenen.
 
-      Met het **[!UICONTROL Distinct]** vak kunt u unieke en niet-nulwaarden van een kolom herstellen. Bijvoorbeeld, kunt u alle het volgen logboeken van een ontvanger terugkrijgen en deze het volgen logboeken worden veranderd in waarde 1 aangezien zij allen de zelfde ontvanger aangaan.
+      Met het vak **[!UICONTROL Distinct]** kunt u unieke en niet-nulwaarden van een kolom herstellen. Bijvoorbeeld, kunt u alle het volgen logboeken van een ontvanger terugkrijgen en deze het volgen logboeken worden veranderd in waarde 1 aangezien zij allen de zelfde ontvanger aangaan.
 
-1. **[!UICONTROL Expression]** opent het **[!UICONTROL Edit the expression]** venster. Zo kunt u telefoonnummers met te veel cijfers detecteren. Dit kunnen invoerfouten zijn.
+1. **[!UICONTROL Expression]** opent het  **[!UICONTROL Edit the expression]** venster. Zo kunt u telefoonnummers met te veel cijfers detecteren. Dit kunnen invoerfouten zijn.
 
    ![](assets/query_editor_nveau_71.png)
 
-   Zie [Lijst met functies](#list-of-functions)voor een lijst met alle beschikbare functies.
+   Voor een lijst van alle beschikbare functies, verwijs naar [Lijst van functies](#list-of-functions).
 
 ## Lijst met functies {#list-of-functions}
 
-Als u een **[!UICONTROL Expression]** typeformule kiest, wordt u doorgestuurd naar het venster &quot;De expressie bewerken&quot;. Verschillende categorieën functies kunnen aan de beschikbare velden worden gekoppeld: **[!UICONTROL Aggregates]**, **[!UICONTROL String]**, **[!UICONTROL Date]**, **[!UICONTROL Numerical]**, **[!UICONTROL Currency]**, **[!UICONTROL Geomarketing]**, **[!UICONTROL Windowing function]** en **[!UICONTROL Others]**.
+Als een **[!UICONTROL Expression]** typeformule wordt gekozen, zult u aan het &quot;uitgeeft de uitdrukking&quot;venster worden genomen. Verschillende categorieën functies kunnen aan de beschikbare velden worden gekoppeld: **[!UICONTROL Aggregates]**, **[!UICONTROL String]**, **[!UICONTROL Date]**, **[!UICONTROL Numerical]**, **[!UICONTROL Currency]**, **[!UICONTROL Geomarketing]**, **[!UICONTROL Windowing function]** en **[!UICONTROL Others]**.
 
 De expressie-editor ziet er als volgt uit:
 
@@ -368,12 +368,12 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   </tr> 
   <tr> 
    <td> <strong>Avg</strong><br /> </td> 
-   <td> Hiermee wordt het gemiddelde van een kolom met getaltypen geretourneerd<br /> </td> 
+   <td> Hiermee wordt het gemiddelde geretourneerd van een kolom van het type Number<br /> </td> 
    <td> Avg(&lt;waarde&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Aantal</strong><br /> </td> 
-   <td> Counts the non-null values of a column<br /> </td> 
+   <td> Telt de niet-null waarden van een kolom<br /> </td> 
    <td> Count(&lt;waarde&gt;)<br /></td>  
   </tr> 
   <tr> 
@@ -383,27 +383,27 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   </tr> 
   <tr> 
    <td> <strong>Aftelbaar</strong><br /> </td> 
-   <td> Counts the distinct non-null values of a column<br /> </td> 
+   <td> Telt de verschillende niet-null waarden van een kolom<br /> </td> 
    <td> Countdistinct(&lt;waarde&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Max</strong><br /> </td> 
-   <td> Returns the maximum value of a number, string, or date type column<br /> </td> 
+   <td> Retourneert de maximumwaarde van een getal, tekenreeks of datumtekstkolom<br /> </td> 
    <td> Max(&lt;waarde&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>Min</strong><br /> </td> 
-   <td> Returns the minimum value of a number, string or date type column<br /> </td> 
+   <td> Hiermee wordt de minimumwaarde van een kolom met het getal, tekenreeks of datumtype geretourneerd<br /> </td> 
    <td> Min(&lt;waarde&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>StdDev</strong><br /> </td> 
-   <td> Hiermee wordt de standaardafwijking van een getal, tekenreeks of datumkolom geretourneerd<br /> </td> 
+   <td> Retourneert de standaardafwijking van een getal, tekenreeks of datumkolom<br /> </td> 
    <td> StdDev(&lt;value&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Som</strong><br /> </td> 
-   <td> Hiermee wordt de som van de waarden van een getal, tekenreeks of kolom met het gegevenstype geretourneerd<br /> </td> 
+   <td> Retourneert de som van de waarden van een getal, tekenreeks of datumtekstkolom<br /> </td> 
    <td> Sum(&lt;waarde&gt;)<br /></td> 
   </tr> 
  </tbody> 
@@ -450,7 +450,7 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   </tr> 
   <tr> 
    <td> <strong>IfEquals</strong><br /> </td> 
-   <td> Retourneert de derde parameter als de eerste twee parameters gelijk zijn. Indien niet, wordt de laatste parameter geretourneerd<br /> </td> 
+   <td> Retourneert de derde parameter als de eerste twee parameters gelijk zijn. Als niet, keert de laatste parameter<br /> terug </td> 
    <td> IfEquals(&lt;tekenreeks&gt;, &lt;tekenreeks&gt;, &lt;tekenreeks&gt;, &lt;tekenreeks&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -465,7 +465,7 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   </tr> 
   <tr> 
    <td> <strong>JuxtWords3</strong><br /> </td> 
-   <td> Voegt de doorgegeven tekenreeksen samen als parameters. Voegt indien nodig spaties tussen de tekenreeksen toe<br /> </td> 
+   <td> Voegt de doorgegeven tekenreeksen samen als parameters. Hiermee voegt u, indien nodig, spaties toe tussen de tekenreeksen<br /> </td> 
    <td> JuxtWords3(&lt;tekenreeks&gt;, &lt;tekenreeks&gt;, &lt;tekenreeks&gt;)<br /></td>  
   </tr> 
   <tr> 
@@ -525,7 +525,7 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   </tr> 
   <tr> 
    <td> <strong>Substring</strong><br /> </td> 
-   <td> Extracts the substring starting at character n1 of the string and of length n2<br /> </td> 
+   <td> Hiermee wordt de subtekenreeks opgehaald die begint op teken n1 van de tekenreeks en lengte n2<br /> </td> 
    <td> Substring(&lt;tekenreeks&gt;, &lt;offset&gt;, &lt;lengte&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -550,7 +550,7 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   </tr> 
   <tr> 
    <td> <strong>dataLength</strong><br /> </td> 
-   <td> Returns the string size<br /> </td> 
+   <td> Hiermee wordt de tekenreeksgrootte<br /> geretourneerd </td> 
    <td> dataLength(&lt;string&gt;)<br /> </td>  
   </tr> 
  </tbody> 
@@ -607,17 +607,17 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   </tr> 
   <tr> 
    <td> <strong>DayOfYear</strong><br /> </td> 
-   <td> Returns the number of the day in the year of the date<br /> </td> 
+   <td> Retourneert het getal van de dag in het jaar van de datum<br /> </td> 
    <td> DayOfYear(&lt;datum&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DaysAgo</strong><br /> </td> 
-   <td> Returns the date corresponding to the current date minus n days<br /> </td> 
+   <td> Retourneert de datum die overeenkomt met de huidige datum minus n dagen<br /> </td> 
    <td> DaysAgo(&lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DaysAgoInt</strong><br /> </td> 
-   <td> Returns the date (integer yyyymmdd) corresponding to the current date minus n days<br /> </td> 
+   <td> Retourneert de datum (geheel getal jjjjmmdd) die overeenkomt met de huidige datum minus n dagen<br /> </td> 
    <td> DaysAgoInt(&lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -785,7 +785,7 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
 
 >[!NOTE]
 >
->Merk op dat de functie van **Dateonly** rekening houdt met timezone van de server, niet de exploitant.
+>Merk op dat de **functie Dateonly** rekening houdt met de tijdzone van de server, niet de exploitant.
 
 **Numerieke waarden**
 
@@ -808,7 +808,7 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   </tr> 
   <tr> 
    <td> <strong>Floor</strong><br /> </td> 
-   <td> Returns the greatest integer greater than or equal to a number<br /> </td> 
+   <td> Hiermee wordt het grootste gehele getal geretourneerd dat groter is dan of gelijk is aan een getal<br /> </td> 
    <td> Floor(&lt;nummer&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -823,7 +823,7 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   </tr> 
   <tr> 
    <td> <strong>Mod</strong><br /> </td> 
-   <td> Returns the remainder of the integer division of n1 by n2<br /> </td> 
+   <td> Retourneert de rest van de integer-deling van n1 door n2<br /> </td> 
    <td> Mod(&lt;nummer 1&gt;, &lt;nummer 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -885,7 +885,7 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   </tr> 
   <tr> 
    <td> <strong>FormatCurrency</strong><br /> </td> 
-   <td> Maakt het weergegeven bedrag op basis van de geselecteerde valutainstellingen op<br /> </td> 
+   <td> Maakt het weergegeven bedrag op basis van de geselecteerde valutainstellingen<br /> </td> 
    <td> FormatCurrency(&lt;bedrag&gt;, &lt;currency&gt;)<br /> </td>  
   </tr> 
  </tbody> 
@@ -902,7 +902,7 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   </tr> 
   <tr> 
    <td> <strong>Distance</strong><br /> </td> 
-   <td> Returns the distance between two points defined by their longitude and latitude, expressed in degrees.<br /> </td> 
+   <td> Retourneert de afstand tussen twee punten die worden gedefinieerd door hun lengte en breedte, uitgedrukt in graden.<br /> </td> 
    <td> Distance(&lt;Lengtegraad A&gt;, &lt;Breedtegraad A&gt;, &lt;Lengtegraad B&gt;, &lt;Breedtegraad B&gt;)<br /> </td>  
   </tr> 
  </tbody> 
@@ -919,7 +919,7 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   </tr> 
   <tr> 
    <td> <strong>Case</strong><br /> </td> 
-   <td> Retourneert waarde 1 als de voorwaarde true is. Zo niet, dan wordt waarde 2 geretourneerd.<br /> </td> 
+   <td> Retourneert waarde 1 als de voorwaarde true is. Als niet, keert het waarde 2.<br /> terug </td> 
    <td> Case(When(&lt;voorwaarde&gt;, &lt;waarde 1&gt;), Else(&lt;waarde 2&gt;))<br /> </td> 
   </tr> 
   <tr> 
@@ -944,7 +944,7 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   </tr> 
   <tr> 
    <td> <strong>GetEmailDomain</strong><br /> </td> 
-   <td> Extracts the domain from an e-mail address<br /> </td> 
+   <td> Extraheert het domein uit een e-mailadres<br /> </td> 
    <td> GetEmailDomain(&lt;waarde&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -964,7 +964,7 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   </tr> 
   <tr> 
    <td> <strong>IsEmptyString</strong><br /> </td> 
-   <td> Returns value 2 if string 1 is empty, otherwise returns value 3<br /> </td> 
+   <td> Retourneert waarde 2 als tekenreeks 1 leeg is. Retourneert anders waarde 3<br /> </td> 
    <td> IsEmptyString(&lt;value 1&gt;, &lt;value 2&gt;, &lt;value 3&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -989,7 +989,7 @@ Hiermee kunt u velden in de databasetabellen selecteren en er geavanceerde funct
   </tr> 
   <tr> 
    <td> <strong>When</strong><br /> </td> 
-   <td> Retourneert waarde 1 als de expressie true is. If not, it returns value 2 (may only be used as a parameter of the case function)<br /> </td> 
+   <td> Retourneert waarde 1 als de expressie true is. Als niet, keert het waarde 2 terug (kan slechts als parameter van de case functie worden gebruikt)<br /> </td> 
    <td> When(&lt;voorwaarde&gt;, &lt;waarde 1&gt;)<br /> </td>  
   </tr> 
  </tbody> 
