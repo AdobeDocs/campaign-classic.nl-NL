@@ -17,7 +17,7 @@ ht-degree: 7%
 
 # Berichtencentrum (controle){#message-center-control}
 
-De hieronder beschreven workflow wordt elk uur uitgevoerd. Het wordt geïnstalleerd met het Centrum van het **Bericht - de module van de Controle** door gebrek. For more on this module, refer to this [section](../../message-center/using/about-transactional-messaging.md).
+De hieronder beschreven workflow wordt elk uur uitgevoerd. Het wordt geïnstalleerd met **Centrum van het Bericht - Control** module door gebrek. Voor meer op deze module, verwijs naar dit [sectie](../../message-center/using/about-transactional-messaging.md).
 
 Meer over hoe te om technische werkschema&#39;s met betrekking tot de module van het Centrum van het Bericht te vormen, verwijs naar [deze pagina](../../message-center/using/technical-workflows.md).
 
