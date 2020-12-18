@@ -30,11 +30,11 @@ Controleer of de eerste configuratie van het Adobe Campaign-platform nog geldig 
 
 >[!NOTE]
 >
->U kunt de handleiding [voor](https://helpx.adobe.com/nl/campaign/kb/hardware-sizing-guide.html) Adobe Campaign Harware Sizing raadplegen voor inzichten.
+>U kunt [Adobe Campaign Harware Sizing guide](https://helpx.adobe.com/nl/campaign/kb/hardware-sizing-guide.html) voor inzichten raadplegen.
 
-## Platform configureren {#platform-configuration}
+## Configuratie van Platform {#platform-configuration}
 
-Onjuiste configuratie kan de prestaties van het platform beïnvloeden. Wij adviseren dat u netwerkconfiguratie, de opties van de platformleverantie evenals configuratie MTA in het **serverConf.xml** - dossier controleert.
+Onjuiste configuratie kan de prestaties van het platform beïnvloeden. Wij adviseren dat u netwerkconfiguratie, de opties van de platformLeesbaarheid evenals configuratie MTA in het **serverConf.xml** dossier controleert.
 
 ## Databaseonderhoud {#database-maintenance}
 
@@ -60,9 +60,9 @@ Raadpleeg [deze sectie](../../production/using/recommendations.md) voor meer inf
 
 Controleer het aantal en de grootte van werktabellen. Wanneer zij een bepaalde grootte overschrijden, worden de gegevensbestandprestaties beïnvloed. Deze tabellen worden gemaakt door workflows en leveringen. Ze blijven in de database terwijl workflows en leveringen actief zijn. Als u de grootte van werktabellen wilt beperken, kunt u de volgende bewerkingen uitvoeren:
 
-* leveringen met de volgende statussen stoppen of verwijderen: **[!UICONTROL Failed]** , **[!UICONTROL In progress]** , **[!UICONTROL Ready for delivery]** of **[!UICONTROL Paused]** .
+* leveringen met de volgende statussen stoppen of verwijderen: **[!UICONTROL Failed]** , **[!UICONTROL In progress]** , **[!UICONTROL Ready for delivery]** of **[!UICONTROL Paused]**.
 * werkstromen die wegens een fout zijn gepauzeerd, stoppen of verwijderen;
-* alle werkstromen te stoppen die worden gebruikt voor tests die geen **[!UICONTROL End]** activiteit bevatten en waarvan de status derhalve behouden blijft **[!UICONTROL Paused]** .
+* alle workflows stoppen die worden gebruikt voor tests die geen **[!UICONTROL End]** activiteit bevatten en waarvan de status daarom **[!UICONTROL Paused]** blijft.
 
 >[!IMPORTANT]
 >
@@ -72,8 +72,8 @@ Controleer het aantal en de grootte van werktabellen. Wanneer zij een bepaalde g
 
 Afhankelijk van de installatie-instellingen van Adobe Campaign kunnen twee tools worden gebruikt voor platformbewaking:
 
-* de pagina voor de productie van exemplaren. For more on this, refer to [Manual monitoring](../../production/using/monitoring-processes.md#manual-monitoring).
-* het netreport script. Raadpleeg [Automatische controle via Adobe Campaign-scripts](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts)voor meer informatie.
+* de pagina voor de productie van exemplaren. Raadpleeg [Handmatige bewaking](../../production/using/monitoring-processes.md#manual-monitoring) voor meer informatie.
+* het netreport script. Raadpleeg [Automatische bewaking via Adobe Campaign-scripts](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts) voor meer informatie.
 
 ## Specificaties {#specifics}
 
