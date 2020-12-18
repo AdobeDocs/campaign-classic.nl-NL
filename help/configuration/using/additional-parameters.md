@@ -24,7 +24,7 @@ Uw Adobe Campaign-platform biedt standaard twee webtrackingparameters van het ty
 * **bedrag**: het bedrag van een transactie vertegenwoordigt;
 * **artikel**: geeft het aantal items in een transactie aan.
 
-Deze parameters worden gedefinieerd in het **nms:webTrackingLog** -schema en zijn enkele van de indicatoren die worden weergegeven in de rapportage.
+Deze parameters worden gedefinieerd in het schema **nms:webTrackingLog** en zijn enkele van de indicatoren die worden gezien in de rapportage.
 
 Als u aanvullende parameters wilt definiëren, moet u dit schema uitbreiden.
 
@@ -52,11 +52,11 @@ In de serverconfiguratie, kunt u het maximumaantal karakters bepalen waarmee voo
 >
 >Als u het maximumaantal tekens verhoogt waarmee rekening moet worden gehouden, kan dit van invloed zijn op de webprestaties van uw platform.
 
-Hiervoor wijzigt u het **kenmerk webTrackingParamSize** van het **`<trackinglogd>`** element in het bestand **serverConf.xml** . Dit bestand wordt opgeslagen in de submap **conf** van de installatiemap van Adobe Campaign.
+Hiervoor wijzigt u het **webTrackingParamSize**-kenmerk van het **`<trackinglogd>`**-element in het **serverConf.xml**-bestand. Dit bestand wordt opgeslagen in de submap **conf** van de installatiemap van Adobe Campaign.
 
 **Voorbeeld**:
 
-De standaardwaarde is 64 tekens. Met deze waarde kunt u rekening houden met de standaardparameters **voor Hoeveelheid** en **Artikel** (&quot;bedrag=xxxxxxxx&amp;article=xxxxxxxx&quot;).
+De standaardwaarde is 64 tekens. Met deze waarde kunt u rekening houden met de standaardparameters **amount** en **article** (&quot;amount=xxxxxxxx&amp;article=xxxxxxxx&quot;).
 
 Door rekening te houden met beide parameters (grootte van naam + grootte van waarde) die in het bovenstaande voorbeeld van het extensieschema worden vermeld, kunt u de configuratie wijzigen om 100 tekens in aanmerking te nemen (&quot;bedrag=xxxxxxxx&amp;article=xxxxxxxx&amp;mode=xxxxxxxx&amp;code=xxxxxxx&quot;).
 
@@ -70,18 +70,18 @@ webTrackingParamSize="64"/>
 Wanneer de configuratie is gewijzigd, moet u:
 
 * Stop de webserver die als host fungeert voor de omleidingsmodule (Apache, IIS, enz.),
-* Stop de Adobe Campaign-server: **netstop nlserver6** in Windows, **/etc/init.d/nlserver6 stop** in Linux;
+* Stop de Adobe Campaign-server: **net stop nlserver6** in Windows, **/etc/init.d/nlserver6 stop** in Linux,
 
    >[!NOTE]
    >
    >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl stop nlserver**
 
-* Verwijder in Linux de gedeelde geheugensegmenten met behulp van de **IPcrm** -opdracht.
-* Start de Adobe Campaign-server opnieuw: **Net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux,
+* Verwijder in Linux de gedeelde geheugensegmenten met de opdracht **ipcrm**.
+* Start de Adobe Campaign-server opnieuw: **net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux,
 
    >[!NOTE]
    >
-   >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systeemserver voor opstarten**
+   >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl start nlserver**
 
 * Start de webserver opnieuw.
 
@@ -111,5 +111,5 @@ adobe@selma:~$ systemctl start apache2
 
 >[!NOTE]
 >
->Als u voor Linux de grootte van de parameters **webTrackingParamSize** of **maxSharedLogs** verhoogt, moet u mogelijk de grootte van het gedeelde geheugen (SHM) verhogen.
+>Voor Linux, als u de grootte van **webTrackingParamSize** of **maxSharedLogs** parameters verhoogt, kunt u de grootte van het gedeelde geheugen (SHM) moeten verhogen.
 
