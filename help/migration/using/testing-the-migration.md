@@ -27,7 +27,7 @@ U moet over een test-/ontwikkelomgeving beschikken om migratietests uit te voere
 1. Maak een steun van het gegevensbestand van de ontwikkelomgeving.
 1. Stop alle Adobe Campaign-processen op de ontwikkelingsinstantie.
 1. Maak een back-up van de database van de productieomgeving en herstel deze als ontwikkelomgeving.
-1. Alvorens de diensten van Adobe Campaign te beginnen, stel het **vriesinstance.js** voorzichtigheidsmanuscript in werking dat u het gegevensbestand van om het even welke voorwerpen laat ontruimen die toen de steun werd begonnen in werking.
+1. Alvorens de diensten van Adobe Campaign te beginnen, stel **vriesinstance.js** voorzichtigheidsmanuscript in werking dat u het gegevensbestand van om het even welke voorwerpen laat ontruimen die toen de steun werd begonnen in werking.
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -35,12 +35,12 @@ U moet over een test-/ontwikkelomgeving beschikken om migratietests uit te voere
 
    >[!NOTE]
    >
-   >De opdracht wordt standaard gestart in de **droge** modus en geeft alle aanvragen weer die door die opdracht zijn uitgevoerd, zonder deze te starten. Gebruik **in de opdracht om opdrachten voor waarschuwingen uit te voeren** .
+   >Het bevel lanceert door gebrek op **dry** wijze, en maakt een lijst van alle verzoeken die door dat bevel werden uitgevoerd, zonder hen te lanceren. Als u waarschuwingen wilt uitvoeren, gebruikt u **run** in de opdracht.
 
 1. Zorg ervoor dat uw back-ups correct zijn door ze te herstellen. Zorg ervoor dat u toegang hebt tot uw database, tabellen, gegevens, enzovoort.
 1. Test de migratieprocedure in de ontwikkelomgeving.
 
-   De volledige procedures worden beschreven in het gedeelte [Voorwaarden voor migratie naar Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
+   De volledige procedures worden beschreven in de sectie [Voorwaarden voor migratie naar Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md).
 
 1. Als de migratie van de ontwikkelomgeving succesvol is, kunt u de productieomgeving migreren.
 
@@ -50,7 +50,7 @@ U moet over een test-/ontwikkelomgeving beschikken om migratietests uit te voere
 
 >[!NOTE]
 >
->Met de Adobe Campaign-opdracht voor bijwerken (**na upgrade**) kunt u bronnen synchroniseren en schema&#39;s en de database bijwerken. Deze bewerking kan slechts eenmaal en alleen op de toepassingsserver worden uitgevoerd. Na het synchroniseren van middelen, laat het **postupgrade** bevel u ontdekken of de synchronisatie om het even welke fouten of waarschuwingen produceert.
+>Met de Adobe Campaign-updateopdracht (**postupgrade**) kunt u bronnen synchroniseren en schema&#39;s en de database bijwerken. Deze bewerking kan slechts eenmaal en alleen op de toepassingsserver worden uitgevoerd. Na het synchroniseren van middelen, laat **postupgrade** bevel u ontdekken of de synchronisatie om het even welke fouten of waarschuwingen produceert.
 
 ## Migratiehulpmiddelen {#migration-tools}
 
@@ -70,9 +70,9 @@ Met verschillende opties kunt u de impact van een migratie meten en de mogelijke
 
 >[!NOTE]
 >
->U moet de **-instantie gebruiken:`<instanceame>`** optie. We raden u niet aan de optie **-Alles** te gebruiken.
+>U moet de **-instantie:`<instanceame>`** optie gebruiken. We raden u niet aan de optie **-allinstances** te gebruiken.
 
-### -showCustomEntities en -showDeletteEntities options {#showcustomentities-and--showdeletedentities-options}
+### -showCustomEntities and -showDeletteEntities options {#showcustomentities-and--showdeletedentities-options}
 
 * Met de optie **-showCustomEntities** wordt de lijst met alle niet-standaardobjecten weergegeven:
 
@@ -117,9 +117,9 @@ De volgende expressies worden gezocht (hoofdlettergevoelig):
 <table> 
  <thead> 
   <tr> 
-   <th> Uitdrukking<br /> </th> 
+   <th> Expressie<br /> </th> 
    <th> Foutcode<br /> </th> 
-   <th> Het type Log<br /> </th> 
+   <th> Logtype<br /> </th> 
    <th> Opmerkingen<br /> </th> 
   </tr> 
  </thead> 
@@ -128,7 +128,7 @@ De volgende expressies worden gezocht (hoofdlettergevoelig):
    <td> .@<br /> </td> 
    <td> PU-0001<br /> </td> 
    <td> Waarschuwing<br /> </td> 
-   <td> Dit type syntaxis wordt niet meer ondersteund in de personalisatie van de levering. Zie <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. Anders moet u controleren of het waardetype correct is.<br /> </td> 
+   <td> Dit type syntaxis wordt niet meer ondersteund in de personalisatie van de levering. Zie <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. Anders, controleer dat het waardetype correct is.<br /> </td> 
   </tr> 
   <tr> 
    <td> common.js<br /> </td> 
@@ -143,10 +143,10 @@ De volgende expressies worden gezocht (hoofdlettergevoelig):
    <td> Deze verbindingsmethode mag niet meer worden gebruikt. Zie <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">Identified web applications</a>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> new SoapMethodCall()<br /> </td> 
+   <td> new SoapMethodCall(<br /> </td> 
    <td> PU-0004<br /> </td> 
    <td> Waarschuwing<br /> </td> 
-   <td> Deze functie wordt alleen ondersteund wanneer deze wordt gebruikt in JavaScript-code die wordt uitgevoerd vanuit een beveiligingszone in de modus <strong>sessionTokenOnly</strong> .<br /> </td> 
+   <td> Deze functie wordt alleen ondersteund wanneer deze wordt gebruikt in JavaScript-code die wordt uitgevoerd vanuit een beveiligingszone in de modus <strong>sessionTokenOnly</strong>.<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
@@ -158,14 +158,14 @@ De volgende expressies worden gezocht (hoofdlettergevoelig):
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
    <td> Fout<br /> </td> 
-   <td> Dit type fout leidt tot een migratiefout. Zie <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Raadpleeg <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">webtoepassingen</a>als u foutlogbestanden voor webtoepassingen met een overzichtstype krijgt (migratie vanuit v6.02).<br /> </td> 
+   <td> Dit type fout leidt tot een migratiefout. Zie <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Raadpleeg <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Webtoepassingen</a>.<br /> als u foutlogbestanden van webtoepassingen met een overzicht-type krijgt (migratie vanuit v6.02). </td> 
   </tr> 
  </tbody> 
 </table>
 
 Er wordt ook een coherentiecontrole van de database en het schema uitgevoerd.
 
-### Herstellen, optie {#restoration-option}
+### Hersteloptie {#restoration-option}
 
 Met deze optie kunt u objecten uit de doos herstellen als ze waren gewijzigd. Voor elk hersteld object wordt een back-up van de wijzigingen opgeslagen in de geselecteerde map:
 
@@ -177,6 +177,6 @@ nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<insta
 >
 >We raden u ten zeerste aan absolute mappaden te gebruiken en de structuur van de mappenstructuur te behouden. Bijvoorbeeld: backupFolder\nms\srcSchema\billing.xml.
 
-### Hervatten van migratie {#resuming-migration}
+### Migratie {#resuming-migration} hervatten
 
 Als u na een migratiemislukking opnieuw begint, hervat het van de zelfde plaats het werd tegengehouden.
