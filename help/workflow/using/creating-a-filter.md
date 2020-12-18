@@ -21,19 +21,19 @@ De filters die beschikbaar zijn in Adobe Campaign worden gedefinieerd door filte
 
 >[!NOTE]
 >
->For more on creating filters, refer to [this section](../../platform/using/filtering-options.md).
+>Raadpleeg [deze sectie](../../platform/using/filtering-options.md) voor meer informatie over het maken van filters.
 
-Het **[!UICONTROL Administration > Configuration > Predefined filters]** knooppunt bevat alle filters die worden gebruikt in de lijsten en overzichten.
+Het knooppunt **[!UICONTROL Administration > Configuration > Predefined filters]** bevat alle filters die worden gebruikt in de lijsten en overzichten.
 
-De lijst met operatoren kan bijvoorbeeld worden gefilterd met **[!UICONTROL Active accounts]**:
+De lijst met operatoren kan bijvoorbeeld worden gefilterd door **[!UICONTROL Active accounts]**:
 
 ![](assets/query_editor_filter_sample_1.png)
 
-Het passende filter bevat de vraag over de **[!UICONTROL Account disabled]** waarde van het **[!UICONTROL Operators]** schema:
+Het passende filter bevat de vraag op de **[!UICONTROL Account disabled]** waarde van het **[!UICONTROL Operators]** schema:
 
 ![](assets/query_editor_filter_sample_2.png)
 
-Voor dezelfde lijst kunt u met het **[!UICONTROL By login or label]** filter de gegevens in de lijst filteren op basis van de waarde die u in het filterveld hebt ingevoerd:
+Voor dezelfde lijst kunt u met het filter **[!UICONTROL By login or label]** de gegevens in de lijst filteren op basis van de waarde die u in het filterveld hebt ingevoerd:
 
 ![](assets/query_editor_filter_sample_3.png)
 
@@ -49,12 +49,12 @@ Om de filtervoorwaarden aan te passen, moet de exploitantrekening één van de v
 
 >[!NOTE]
 >
->Met de **[!UICONTROL Upper]** functie kunt u de hoofdlettergevoelige functie deactiveren.
+>Met de functie **[!UICONTROL Upper]** kunt u de hoofdlettergevoelige functie deactiveren.
 
-In de **[!UICONTROL Taken into account if]** kolom kunt u de toepassingscriteria voor deze filtervoorwaarden definiëren. Hier geven de tekens **$(/tmp/@text)** de inhoud weer van het invoerveld dat aan het filter is gekoppeld:
+Met de kolom **[!UICONTROL Taken into account if]** kunt u de toepassingscriteria voor deze filtervoorwaarden definiëren. Hier geven de tekens **$(/tmp/@text)** de inhoud van het invoerveld weer dat aan het filter is gekoppeld:
 
 ![](assets/query_editor_filter_sample_5.png)
 
 Hier, **$(/tmp/@text)=&#39;office&#39;**
 
-De **$(/tmp/@text)!=&#39;&#39;** expressie past elke voorwaarde toe wanneer het invoerveld niet leeg is.
+De **$(/tmp/@text)!=&#39;** expression past elke voorwaarde toe wanneer het inputgebied niet leeg is.
