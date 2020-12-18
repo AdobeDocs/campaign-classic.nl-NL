@@ -22,9 +22,9 @@ Op elke pagina van de site die u wilt bijhouden, moet in uw Adobe Campaign-platf
 1. Handmatige definitie van URL&#39;s die moeten worden bijgehouden,
 1. Aanmaken van URL&#39;s die u ter plaatse wilt bijhouden.
 
-## De URL&#39;s definiëren die in de toepassing moeten worden bijgehouden {#defining-the-urls-to-be-tracked-in-the-application}
+## De URL&#39;s definiëren die in de toepassing {#defining-the-urls-to-be-tracked-in-the-application} moeten worden bijgehouden
 
-Met deze methode kunt u handmatig de pagina&#39;s definiëren die moeten worden bijgehouden en vervolgens een voorbeeld genereren van de bijbehorende tag voor webtracering. Deze bewerking wordt gedefinieerd in het **[!UICONTROL Campaign execution>Resources>Web tracking tags]** knooppunt van de clientconsole.
+Met deze methode kunt u handmatig de pagina&#39;s definiëren die moeten worden bijgehouden en vervolgens een voorbeeld genereren van de bijbehorende tag voor webtracering. Deze bewerking wordt gedefinieerd in het knooppunt **[!UICONTROL Campaign execution>Resources>Web tracking tags]** van de clientconsole.
 
 ![](assets/d_ncs_integration_webtracking_screen.png)
 
@@ -37,9 +37,9 @@ De HTML-code genereren die op de pagina moet worden ingevoegd:
 
 Vervolgens kopieert u de gegenereerde code en plakt u deze in de pagina die u wilt bijhouden.
 
-## Tijdens het maken van URL&#39;s die moeten worden bijgehouden {#on-the-fly-creation-of-urls-to-be-tracked}
+## Aanmaak van URL&#39;s die {#on-the-fly-creation-of-urls-to-be-tracked} moet worden bijgehouden tijdens de vlucht
 
-U kunt URL&#39;s voor webspatiëring direct maken door informatie toe te voegen aan de waarde van de parameter **tagid** :
+U kunt URL&#39;s voor webspatiëring direct maken door informatie toe te voegen aan de waarde van de parameter **tagid**:
 
 * Type bijgehouden pagina: &quot;w&quot; voor WEB of &quot;t&quot; voor TRANSACTIE,
 * De interne naam van de map waarin de URL moet worden gemaakt.
@@ -52,7 +52,7 @@ tagid=<identifier>|<type>|<foldername>
 
 >[!IMPORTANT]
 >
->Vergeet niet de waarde van de **tagid** -parameter te coderen wanneer deze wordt gebruikt als een URL-parameter.
+>Vergeet niet de waarde van de parameter **tagid** te coderen wanneer deze wordt gebruikt als een URL-parameter.
 
 **Voorbeeld**: het maken van een URL voor webtracering van het transactietype.
 
