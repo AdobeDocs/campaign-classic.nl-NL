@@ -17,10 +17,10 @@ ht-degree: 8%
 
 # Profielen toevoegen{#adding-profiles}
 
-In de meeste gevallen worden profielen via een workflow [naar Campagne](../../workflow/using/importing-data.md)geïmporteerd. U kunt echter een of meer profielen rechtstreeks vanuit de interface toevoegen door op de **[!UICONTROL Create]** knop te klikken. Zij zullen dan aan het gegevensbestand worden toegevoegd.
+In de meeste gevallen worden profielen [geïmporteerd in Campagne via een workflow](../../workflow/using/importing-data.md). U kunt echter een of meer profielen rechtstreeks vanuit de interface toevoegen door op de knop **[!UICONTROL Create]** te klikken. Zij zullen dan aan het gegevensbestand worden toegevoegd.
 
 ![](assets/s_ncs_user_profile_add.png)
 
-Voer de informatie voor dit profiel in. De tabbladen en velden die moeten worden ingevuld, worden beschreven in [Een profiel](../../platform/using/editing-a-profile.md)bewerken.
+Voer de informatie voor dit profiel in. De tabbladen en velden die moeten worden ingevuld, worden beschreven in [Een profiel bewerken](../../platform/using/editing-a-profile.md).
 
-Klik **[!UICONTROL Save]** om het maken van profielen te valideren. Het profiel wordt vervolgens toegevoegd aan de Adobe Campaign-database.
+Klik op **[!UICONTROL Save]** om het maken van profielen te valideren. Het profiel wordt vervolgens toegevoegd aan de Adobe Campaign-database.
