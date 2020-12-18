@@ -31,11 +31,11 @@ Hier volgt een lijst met modules die worden beïnvloed door frequente problemen:
   <tr> 
    <td> export </td> 
    <td> Uitvoering van een exportproces<br /> </td> 
-   <td> De operator die deze export heeft gepland, moet deze opnieuw starten. Delta of volledige herstart.<br /> </td> 
+   <td> De operator die deze export heeft gepland, moet deze opnieuw starten. delta of volledige herstart.<br /> </td> 
   </tr> 
   <tr> 
    <td> import </td> 
-   <td> Uitvoering van een invoerproces<br /> </td> 
+   <td> Uitvoering van een importproces<br /> </td> 
    <td> De operator die deze export heeft gepland, moet deze opnieuw starten. Controleer de database op duplicaten.<br /> </td> 
   </tr> 
   <tr> 
@@ -46,16 +46,16 @@ Hier volgt een lijst met modules die worden beïnvloed door frequente problemen:
   <tr> 
    <td> mta </td> 
    <td> Levert e-mails<br /> </td> 
-   <td> Schakel deze module in als er geen e-mailberichten meer worden verzonden.<br /> </td> 
+   <td> Controleer deze module als de post niet meer wordt verzonden.<br /> </td> 
   </tr> 
   <tr> 
    <td> stat </td> 
-   <td> Handhaaft MTA verbindingsstatistieken<br /> </td> 
-   <td> Schakel deze module in als er geen e-mailberichten meer worden verzonden.<br /> </td> 
+   <td> Behoudt MTA verbindingsstatistieken<br /> </td> 
+   <td> Controleer deze module als de post niet meer wordt verzonden.<br /> </td> 
   </tr> 
   <tr> 
    <td> syslogd </td> 
-   <td> Log schrijven<br /> </td> 
+   <td> Logboek schrijven<br /> </td> 
    <td> Als sommige logboeken in de logboekdossiers ontbreken, controleer om ervoor te zorgen dat de module haven 6666 gebruikt. Zie <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">Lijst met open poorten</a>.<br /> </td> 
   </tr> 
   <tr> 
@@ -66,22 +66,22 @@ Hier volgt een lijst met modules die worden beïnvloed door frequente problemen:
   <tr> 
    <td> trackinglogd </td> 
    <td> Logboek bijhouden bij schrijven en wissen van server<br /> </td> 
-   <td> Controleer deze module als het volgen logboeken niet meer door:sturen en er geen sporen van logboeken in de dossiers op de server zijn. Raadpleeg Problemen met <a href="../../production/using/tracking-logs-issues.md" target="_blank">bijhouden van logbestanden</a>.<br /> </td> 
+   <td> Controleer deze module als het volgen logboeken niet meer door:sturen en er geen sporen van logboeken in de dossiers op de server zijn. Raadpleeg <a href="../../production/using/tracking-logs-issues.md" target="_blank">Problemen met bijhouden van logbestanden</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> waakhond </td> 
    <td> Instantie voor opstarten en controleren<br /> </td> 
-   <td> Controleer deze module als er geen processen starten.<br /> </td> 
+   <td> Controleer deze module als geen processen beginnen.<br /> </td> 
   </tr> 
   <tr> 
    <td> web </td> 
    <td> Toepassingsserver (HTTP en SOAP)<br /> </td> 
-   <td> Controleer deze module als de console en de Webverbindingen niet werken en teweegbrengen een fout van het <strong>xtk:zitingstype</strong> teweeg<br /> </td> 
+   <td> Controleer deze module als de console en de Webverbindingen niet werken en een <strong>xtk activeren:session</strong> typefout<br /> </td> 
   </tr> 
   <tr> 
    <td> wfserver </td> 
    <td> Bepaalt de uitvoering van workflowinstanties.<br /> </td> 
-   <td> Start deze module opnieuw als u problemen ondervindt. Indien nodig past u de procedure toe om de nauwkeurigheid van de logbestanden te verbeteren die in de sectie <a href="../../production/using/log-precision.md" target="_blank">Logprecisie</a> wordt beschreven.<br /> </td> 
+   <td> Start deze module opnieuw als u problemen ondervindt. Indien nodig past u de procedure toe om de nauwkeurigheid van de logbestanden te verhogen die in de sectie <a href="../../production/using/log-precision.md" target="_blank">Logprecisie</a> worden beschreven.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
