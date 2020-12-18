@@ -17,7 +17,7 @@ ht-degree: 16%
 
 # JSP-gedrag{#jsp-behavior}
 
-Als bepaalde **jsp** -taken niet met succes worden uitgevoerd, moet u ze dwingen opnieuw te compileren.
+Als bepaalde **jsp** taken niet met succes worden uitgevoerd, moet u hen dwingen opnieuw te compileren.
 
 Voer hiervoor de volgende opdrachten in:
 
@@ -28,4 +28,4 @@ rm -r work/
 nlserver start web
 ```
 
-De **jsp** -taken worden opnieuw gegenereerd wanneer u de volgende keer verbinding maakt.
+De **jsp** banen worden opnieuw geproduceerd de volgende tijd u verbindt.
