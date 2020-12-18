@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Responsopslagvelden {#response-storage-fields}
 
-Antwoorden op formulieren kunnen worden opgeslagen in een veld van de database of tijdelijk in een lokale variabele. De opslagmodus voor antwoorden wordt gekozen tijdens het maken van velden. U kunt de koppeling bewerken via de **[!UICONTROL Edit storage...]** koppeling.
+Antwoorden op formulieren kunnen worden opgeslagen in een veld van de database of tijdelijk in een lokale variabele. De opslagmodus voor antwoorden wordt gekozen tijdens het maken van velden. Het kan via de **[!UICONTROL Edit storage...]** verbinding worden uitgegeven.
 
 Voor elk invoerveld in een formulier zijn de volgende opslagopties beschikbaar:
 
@@ -27,21 +27,21 @@ Voor elk invoerveld in een formulier zijn de volgende opslagopties beschikbaar:
 
 * **[!UICONTROL Edit a recipient]**
 
-   U kunt een veld van de database selecteren: de antwoorden van de gebruikers zullen op dit gebied worden opgeslagen. Voor elke gebruiker wordt alleen de laatste ingevoerde waarde opgeslagen: het wordt toegevoegd aan hun profiel: Zie Gegevens [opslaan in de database](#storing-data-in-the-database).
+   U kunt een veld van de database selecteren: de antwoorden van de gebruikers zullen op dit gebied worden opgeslagen. Voor elke gebruiker wordt alleen de laatste ingevoerde waarde opgeslagen: het wordt toegevoegd aan hun profiel: Zie [Gegevens opslaan in de database](#storing-data-in-the-database).
 
 * **[!UICONTROL Variable]**
 
-   Als u geen informatie in het gegevensbestand wilt opslaan, kunt u een variabele gebruiken. Lokale variabelen kunnen upstream worden gedeclareerd. Zie Gegevens [opslaan in een lokale variabele](#storing-data-in-a-local-variable).
+   Als u geen informatie in het gegevensbestand wilt opslaan, kunt u een variabele gebruiken. Lokale variabelen kunnen upstream worden gedeclareerd. Zie [Gegevens opslaan in een lokale variabele](#storing-data-in-a-local-variable).
 
 ### Gegevens opslaan in de database {#storing-data-in-the-database}
 
-Als u de gegevens in een bestaand veld van de database wilt opslaan, klikt u op het **[!UICONTROL Edit expression]** pictogram en selecteert u deze in de lijst met beschikbare velden.
+Als u de gegevens in een bestaand veld van de database wilt opslaan, klikt u op het pictogram **[!UICONTROL Edit expression]** en selecteert u deze in de lijst met beschikbare velden.
 
 ![](assets/s_ncs_admin_survey_storage_type1.png)
 
 >[!NOTE]
 >
->Het standaardreferentiedocument is het schema **nms:ontvanger** . Als u het formulier wilt weergeven of een nieuw formulier wilt kiezen, selecteert u het in de lijst en klikt u op de **[!UICONTROL Properties]** knop.
+>Het standaardreferentiedocument is het schema **nms:receiver**. Als u het formulier wilt weergeven of een nieuw formulier wilt kiezen, selecteert u het in de lijst en klikt u op de knop **[!UICONTROL Properties]**.
 
 ### Gegevens opslaan in een lokale variabele {#storing-data-in-a-local-variable}
 
@@ -51,11 +51,11 @@ Dit betekent dat u de waarde van een niet-opgeslagen veld kunt gebruiken om de w
 
 ![](assets/s_ncs_admin_survey_no_storage_variable.png)
 
-Het wordt opgeslagen in een variabele die moet worden geselecteerd wanneer de drop-down doos, of via de **[!UICONTROL Edit storage...]** verbinding wordt gecreeerd.
+Het wordt opgeslagen in een variabele die moet worden geselecteerd wanneer de drop-down doos wordt gecreeerd, of via de **[!UICONTROL Edit storage...]** verbinding.
 
 ![](assets/s_ncs_admin_survey_no_storage_variable2.png)
 
-Via de **[!UICONTROL Edit variables...]** koppeling kunt u bestaande variabelen weergeven en nieuwe variabelen maken. Klik op de **[!UICONTROL Add]** knop om een nieuwe variabele te maken.
+U kunt bestaande variabelen weergeven en nieuwe maken via de koppeling **[!UICONTROL Edit variables...]**. Klik op de knop **[!UICONTROL Add]** om een nieuwe variabele te maken.
 
 ![](assets/s_ncs_admin_survey_add_a_variable.png)
 
@@ -63,11 +63,11 @@ De toegevoegde variabele is beschikbaar in de lijst met lokale variabelen wannee
 
 >[!NOTE]
 >
->Voor elk formulier kunt u variabelen upstream maken. Selecteer het formulier en klik op de **[!UICONTROL Properties]** knop om dit te doen. Het **[!UICONTROL Variables]** tabblad bevat de lokale variabelen voor het formulier.
+>Voor elk formulier kunt u variabelen upstream maken. Selecteer het formulier en klik op de knop **[!UICONTROL Properties]** om dit te doen. Het tabblad **[!UICONTROL Variables]** bevat de lokale variabelen voor het formulier.
 
 **Voorbeeld van lokale opslag met conditionering**
 
-In het bovenstaande voorbeeld wordt de container met gegevens over particuliere voertuigen alleen weergegeven als de **[!UICONTROL Private]** optie is geselecteerd in de vervolgkeuzelijst, zoals aangegeven in de zichtbaarheidsvoorwaarde:
+In het bovenstaande voorbeeld wordt de container met gegevens over privévoertuigen alleen weergegeven als de optie **[!UICONTROL Private]** is geselecteerd in de vervolgkeuzelijst, zoals aangegeven in de zichtbaarheidsvoorwaarde:
 
 ![](assets/s_ncs_admin_survey_add_a_condition.png)
 
@@ -83,7 +83,7 @@ Dit betekent dat als de gebruiker een bedrijfsvoertuig selecteert, het formulier
 
 ![](assets/s_ncs_admin_survey_no_storage_condb.png)
 
-## Gezamelde gegevens gebruiken {#using-collected-information}
+## Informatie gebruiken {#using-collected-information}
 
 Voor elk formulier kunnen de gegeven antwoorden opnieuw worden gebruikt in de velden of de labels. De volgende syntaxis moet worden gebruikt:
 
@@ -107,9 +107,9 @@ Voor elk formulier kunnen de gegeven antwoorden opnieuw worden gebruikt in de ve
 
    >[!NOTE]
    >
-   >In tegenstelling tot de andere velden waarvoor `<%=` tekens worden vervangen door escape-tekens, wordt de HTML-inhoud op dezelfde manier opgeslagen met behulp van de `<%==` syntaxis.
+   >In tegenstelling tot de andere velden waarvoor `<%=`-tekens worden vervangen door escape-tekens, wordt de HTML-inhoud op dezelfde manier opgeslagen met de syntaxis `<%==`.
 
-## Webformulieren opslaan {#saving-web-forms-answers}
+## Bezig met opslaan van webformulierantwoorden {#saving-web-forms-answers}
 
 Als u de informatie wilt opslaan die op de pagina&#39;s van een formulier wordt verzameld, moet u een opslagvak in het diagram plaatsen.
 
@@ -117,9 +117,9 @@ Als u de informatie wilt opslaan die op de pagina&#39;s van een formulier wordt 
 
 U kunt dit vak op twee manieren gebruiken:
 
-* Als het formulier Web wordt geopend via een koppeling die in een e-mail wordt verzonden en als de gebruiker die toegang heeft tot de toepassing zich al in de database bevindt, kunt u de **[!UICONTROL Update the preloaded record]** optie controleren. Raadpleeg [Een formulier via e-mail](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email)verzenden voor meer informatie.
+* Als het formulier Web wordt geopend via een koppeling die in een e-mail wordt verzonden en als de gebruiker die toegang heeft tot de toepassing zich al in de database bevindt, kunt u de optie **[!UICONTROL Update the preloaded record]** controleren. Raadpleeg [Formulieren verzenden via e-mail](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email) voor meer informatie.
 
-   In dit geval gebruikt Adobe Campaign de gecodeerde primaire sleutel van het gebruikersprofiel, een unieke id die aan elk profiel is toegewezen door Adobe Campaign. U moet de informatie vormen om via de preloaddoos vooraf te laden. Zie [De formuliergegevens](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data)vooraf laden voor meer informatie.
+   In dit geval gebruikt Adobe Campaign de gecodeerde primaire sleutel van het gebruikersprofiel, een unieke id die aan elk profiel is toegewezen door Adobe Campaign. U moet de informatie vormen om via de preloaddoos vooraf te laden. Zie [De formuliergegevens vooraf laden](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data) voor meer informatie.
 
    >[!CAUTION]
    >
@@ -129,7 +129,7 @@ U kunt dit vak op twee manieren gebruiken:
 
    ![](assets/s_ncs_admin_survey_save_box_edit.png)
 
-Standaard worden de gegevens in de database geïmporteerd door een **[!UICONTROL Update or insertion]** bewerking: als het element in de database aanwezig is, wordt het element bijgewerkt (bijvoorbeeld de geselecteerde nieuwsbrief of het ingevoerde e-mailadres). Als deze niet bestaat, wordt de informatie toegevoegd.
+Standaard worden de gegevens in de database geïmporteerd door een bewerking **[!UICONTROL Update or insertion]**: als het element in de database aanwezig is, wordt het element bijgewerkt (bijvoorbeeld de geselecteerde nieuwsbrief of het ingevoerde e-mailadres). Als deze niet bestaat, wordt de informatie toegevoegd.
 
 U kunt dit gedrag echter wijzigen. Selecteer hiertoe de basis van het element en selecteer de uit te voeren bewerking in de vervolgkeuzelijst:
 
