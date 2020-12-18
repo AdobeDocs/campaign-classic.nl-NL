@@ -26,13 +26,13 @@ Om dubbel werk zoveel mogelijk te voorkomen, moeten de volgende acties worden ui
 * Let op bij automatisch importeren
 * Profielen moeten in verschillende mappen worden gesorteerd
 
-Het quarantainebeheer wordt weergegeven in [deze sectie](../../delivery/using/understanding-quarantine-management.md).
+Quarantainebeheer wordt weergegeven in [deze sectie](../../delivery/using/understanding-quarantine-management.md).
 
 Hieronder vindt u meer informatie over duplicaat- en quarantainebeheer.
 
 U kunt het verzonden e-mailvolume op IP adres controleren. Hiervoor is een schema-extensie nodig. U moet de uitlogingtabel uitbreiden om de &#39;public identifier&#39; toe te voegen en een workflow maken om de gegevens te extraheren en weer te geven. Neem contact op met de Adobe als u dit nodig hebt.
 
-## Duplicaten {#duplicates}
+## Dupliceert {#duplicates}
 
 Het hebben van dubbele e-mailadressen kan veelvoudige gevolgen hebben:
 
@@ -54,4 +54,4 @@ Er zijn echter gevallen waarin duplicaten tussen de verschillende partities norm
 
 Adobe Campaign beheert een lijst met in quarantaine geplaatste adressen. De ontvangers de waarvan adressen quarantined zijn uitgesloten door gebrek tijdens de leveringsanalyse: zij zijn niet gericht . Een e-mailadres kan in quarantaine worden geplaatst bijvoorbeeld wanneer inbox volledig is of als het adres niet bestaat. In alle gevallen komt quarantining overeen met de specifieke regels die hieronder worden beschreven.
 
-Het quarantainebeheer wordt weergegeven in [deze sectie](../../delivery/using/understanding-quarantine-management.md).
+Quarantainebeheer wordt weergegeven in [deze sectie](../../delivery/using/understanding-quarantine-management.md).
