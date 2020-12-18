@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Adobe Campaign Classic
-description: Belangrijke mogelijkheden, gebruikersinterface en globale richtlijnen ontdekken.
+description: Leer meer over belangrijke functies, de gebruikersinterface en algemene richtlijnen.
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
 source-wordcount: '911'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
 
-# Get Started with Campaign Classic{#about-adobe-campaign-classic}
+# Aan de slag met Campaign Classic{#about-adobe-campaign-classic}
 
 Om een hoge mate van klantbetrokkenheid en fantastische ervaringen te bieden moeten merken consistente klantreizen op alle contactpunten tot stand brengen. Marketeers kunnen nu efficiënt marketingcampagnes op alle kanalen ontwerpen, plannen, uitvoeren, beheren en optimaliseren die een hoog rendement op marketinginvesteringen opleveren en loyaliteit stimuleren.
 
@@ -23,7 +23,7 @@ Met Adobe Campaign kunt u het maken van conversationele marketingcampagnes coör
 
 >[!NOTE]
 >
->Adobe Campaign Classic is beschikbaar in v6.11 en v7. Except when mentioned, help materials apply to both versions, in the [latest build](../../rn/using/latest-release.md). Schermafbeeldingen geven de gebruikersinterface van Campaign Classic v7 weer.
+>Adobe Campaign Classic is beschikbaar in v6.11 en v7. Behalve wanneer vermeld, zijn de hulpmaterialen op beide versies, in [recentste bouwstijl](../../rn/using/latest-release.md) van toepassing. Schermafbeeldingen geven de gebruikersinterface van Campaign Classic v7 weer.
 
 ![](assets/do-not-localize/how-to-video.png) [Belangrijkste kenmerken en mogelijkheden in video ontdekken](#video)
 
@@ -93,4 +93,4 @@ In deze video ziet u de belangrijkste functies en mogelijkheden van Campaign Cla
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) extra Campaign Classic hoe kan ik-video&#39;s beschikbaar.
