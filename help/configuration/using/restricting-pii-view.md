@@ -23,7 +23,7 @@ Sommige klanten hebben marketinggebruikers nodig om toegang te krijgen tot gegev
 
 ## Implementatie {#implementation}
 
-Een nieuw attribuut dat op om het even welk element of attribuut kan worden toegepast is toegevoegd aan de schema&#39;s, vult het bestaande attribuut aan **[!UICONTROL visibleIf]** . Dit kenmerk is: **[!UICONTROL accessibleIf]** . Als een XTK-expressie wordt opgenomen die gerelateerd is aan de huidige gebruikerscontext, kan deze bijvoorbeeld hefboomwerking **[!UICONTROL HasNamedRight]** of **[!UICONTROL $(login)]** .
+Een nieuw attribuut dat op om het even welk element of attribuut kan worden toegepast is toegevoegd aan de schema&#39;s, vult het bestaande attribuut **[!UICONTROL visibleIf]** aan. Dit kenmerk is: **[!UICONTROL accessibleIf]** . Wanneer een XTK-expressie wordt opgenomen die gerelateerd is aan de huidige gebruikerscontext, kan deze bijvoorbeeld **[!UICONTROL HasNamedRight]** of **[!UICONTROL $(login)]** gebruiken.
 
 U kunt een voorbeeld van een ontvankelijke schemauitbreiding vinden die dit gebruik hieronder toont:
 
@@ -43,7 +43,7 @@ U kunt een voorbeeld van een ontvankelijke schemauitbreiding vinden die dit gebr
 De belangrijkste eigenschappen zijn:
 
 * **[!UICONTROL visibleIf]** : verbergt de gebieden van de meta-gegevens, zodat kunnen zij niet binnen een schemamening, kolomselectie, of een uitdrukkingsbouwer worden betreden. Maar dit verbergt geen gegevens, als de veldnaam handmatig wordt ingevoerd in een expressie, wordt de waarde weergegeven.
-* **[!UICONTROL accessibleIf]** : Hiermee verbergt u de gegevens (en vervangt u deze door lege waarden) uit de resulterende query. Als visibleIf leeg is, krijgt het dezelfde expressie als **[!UICONTROL accessibleIf]** .
+* **[!UICONTROL accessibleIf]** : Hiermee verbergt u de gegevens (en vervangt u deze door lege waarden) uit de resulterende query. Als visibleIf leeg is, krijgt het de zelfde uitdrukking zoals **[!UICONTROL accessibleIf]**.
 
 Hier volgen de gevolgen van het gebruik van dit kenmerk in Campagne:
 
@@ -58,7 +58,7 @@ Hier volgen de gevolgen van het gebruik van dit kenmerk in Campagne:
 
 ## Aanbevelingen {#recommendations}
 
-In elke levering worden e-mailadressen gekopieerd naar de **[!UICONTROL broadLog]** en de **[!UICONTROL forecastLog]** tabellen: bijgevolg moeten deze velden ook worden beschermd .
+In elke levering worden e-mailadressen gekopieerd naar de tabellen **[!UICONTROL broadLog]** en **[!UICONTROL forecastLog]**: bijgevolg moeten deze velden ook worden beschermd .
 
 Hieronder ziet u een voorbeeld van de extensie van een logtabel voor het implementeren van deze extensie:
 
