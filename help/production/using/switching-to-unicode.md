@@ -17,7 +17,7 @@ ht-degree: 7%
 
 # Overschakelen naar Unicode{#switching-to-unicode}
 
-Voor een bestaande **prod** -instantie in Linux/PostgreSQL zijn de stappen voor het schakelen naar unicode als volgt:
+Voor een bestaande **prod** instantie in Linux/PostgreSQL, zijn de stappen voor omschakeling aan unicode als volgt:
 
 1. Stop de processen die naar de database schrijven:
 
@@ -60,7 +60,7 @@ Voor een bestaande **prod** -instantie in Linux/PostgreSQL zijn de stappen voor 
    vi config-prod.xml
    ```
 
-   Voeg het **uu** -teken toe vóór de waarde met betrekking tot de database-id (**databaseId**):
+   Voeg het **u** karakter vóór de waarde met betrekking tot het gegevensbestandherkenningsteken (**databaseId**) toe:
 
    ```
    <web>
