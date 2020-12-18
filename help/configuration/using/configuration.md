@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Configuratie{#configuration}
 
-De typen mappen die door de navigatielijst worden gebruikt, worden beschreven in een XML-document dat voldoet aan de grammatica van het schema **xtk:navtree** .
+De typen mappen die door de navigatielijst worden gebruikt, worden beschreven in een XML-document dat voldoet aan de grammatica van het schema **xtk:navtree**.
 
 Het XML-document is als volgt gestructureerd:
 
@@ -41,9 +41,9 @@ Het XML-document is als volgt gestructureerd:
 </navtree>
 ```
 
-Het XML-document bevat het **`<navtree>`** hoofdelement met de kenmerken **name** en **namespace** om de documentnaam en naamruimte op te geven. De naam en naamruimte vormen de documentidentificatietoets.
+Het XML-document bevat het hoofdelement **`<navtree>`** met de kenmerken **name** en **namespace** om de documentnaam en naamruimte op te geven. De naam en naamruimte vormen de documentidentificatietoets.
 
-De algemene opdrachten van de toepassing worden in het document gedeclareerd vanuit het **`<commands>`** element.
+De algemene opdrachten van de toepassing worden in het document gedeclareerd vanuit het element **`<commands>`**.
 
 De declaratie van bestandstypen is in het document gestructureerd met de volgende elementen: **`<model>`** en **`<nodemodel>`**.
 
@@ -51,7 +51,7 @@ De declaratie van bestandstypen is in het document gestructureerd met de volgend
 
 Met een algemene opdracht kunt u een handeling starten. Deze handeling kan een invoerformulier of een SOAP-aanroep zijn.
 
-Algemene opdrachten zijn toegankelijk via het **[!UICONTROL Tools]** hoofdmenu.
+Algemene opdrachten zijn toegankelijk via het hoofdmenu **[!UICONTROL Tools]**.
 
 De structuur van de bevelconfiguratie is als volgt:
 
@@ -82,18 +82,18 @@ De beschrijving van een globale opdracht is ingegaan in het **`<command>`** elem
 * **label**: label van de opdracht.
 * **desc**: een beschrijving die zichtbaar is op de statusbalk van het hoofdscherm.
 * **formulier**: te lanceren formulier: de in te voeren waarde is de identificatiecode van het invoerformulier (bv. &quot;cus:ontvanger&quot;)
-* **rechten**: lijst met benoemde rechten (gescheiden door een komma) die toegang geven tot deze opdracht. De lijst met beschikbare rechten is toegankelijk vanuit de **[!UICONTROL Administration > Access management > Named rights]** map.
+* **rechten**: lijst met benoemde rechten (gescheiden door een komma) die toegang geven tot deze opdracht. De lijst met beschikbare rechten is toegankelijk via de map **[!UICONTROL Administration > Access management > Named rights]**.
 * **promptLabel**: geeft een bevestigingsvak weer voordat de opdracht wordt uitgevoerd.
 
-Een **`<command>`** element kan **`<command>`** subelementen bevatten. In dit geval kunt u met het bovenliggende element een submenu weergeven dat bestaat uit deze onderliggende elementen.
+Een **`<command>`**-element kan **`<command>`**-subelementen bevatten. In dit geval kunt u met het bovenliggende element een submenu weergeven dat bestaat uit deze onderliggende elementen.
 
 De opdrachten worden in dezelfde volgorde weergegeven als in het XML-document.
 
-Met een opdrachtscheidingsteken kunt u een scheidingsbalk tussen opdrachten weergeven. Deze wordt aangegeven met de **&#39;-&#39;** waarde in het opdrachtlabel.
+Met een opdrachtscheidingsteken kunt u een scheidingsbalk tussen opdrachten weergeven. Het wordt geïdentificeerd door **&#39;-&#39;** waarde in het beveletiket.
 
-De facultatieve aanwezigheid van de **`<soapcall>`** markering met zijn inputparameters bepaalt de vraag van een methode van de ZEEP die moet worden uitgevoerd. Raadpleeg de documentatie [van](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)Campagne JSAPI voor meer informatie over de SOAP API.
+De facultatieve aanwezigheid van de **`<soapcall>`** markering met zijn inputparameters bepaalt de vraag van een methode van de ZEEP die moet worden uitgevoerd. Raadpleeg [Campagne JSAPI-documentatie](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) voor meer informatie over de SOAP API.
 
-De formuliercontext kan via de **`<enter>`** tag worden bijgewerkt bij de initialisatie. Raadpleeg de documentatie bij invoerformulieren voor meer informatie over deze tag.
+De formuliercontext kan bij initialisatie worden bijgewerkt met de tag **`<enter>`**. Raadpleeg de documentatie bij invoerformulieren voor meer informatie over deze tag.
 
 **Voorbeeld**:
 
@@ -103,7 +103,7 @@ De formuliercontext kan via de **`<enter>`** tag worden bijgewerkt bij de initia
    <command desc="Start the data import wizard" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
    ```
 
-   Een sneltoets wordt op het teken &#39;I&#39; gedeclareerd door de aanwezigheid van **&amp;** in het opdrachtlabel.
+   Een sneltoets wordt gedeclareerd op het teken &#39;I&#39; door de aanwezigheid van **&amp;** in het opdrachtlabel.
 
 * Voorbeeld van een submenu met een scheidingsteken:
 
@@ -153,22 +153,22 @@ De configuratiestructuur van het maptype is als volgt:
 </model>
 ```
 
-De verklaring van het omslagtype moet onder een **`<model>`** element zijn ingegaan. Met dit element kunt u een hiërarchische organisatie definiëren die zichtbaar is vanuit het **[!UICONTROL Add new folder]** menu. Een **`<model>`** element moet **`<nodemodel>`** elementen en andere **`<model>`** elementen bevatten.
+De verklaring van het omslagtype moet onder een **`<model>`** element zijn ingegaan. Met dit element kunt u een hiërarchische organisatie definiëren die zichtbaar is vanuit het menu **[!UICONTROL Add new folder]**. Een **`<model>`**-element moet **`<nodemodel>`**-elementen en andere **`<model>`**-elementen bevatten.
 
-De **naam** en de **etiketattributen** bevolken de interne naam van het element en het etiket dat in het **[!UICONTROL Add new folder]** menu wordt getoond.
+De **name** en **label** attributen bevolken de interne naam van het element en het etiket dat in **[!UICONTROL Add new folder]** menu wordt getoond.
 
-Het **`<nodemodel>`** element bevat de beschrijving van het maptype met de volgende eigenschappen:
+Het element **`<nodemodel>`** bevat de beschrijving van het maptype met de volgende eigenschappen:
 
 * **naam**: interne naam
-* **label**: gebruikt in het **[!UICONTROL Add new folder]** menu en als standaardlabel bij het invoegen van een map.
+* **label**: gebruikt in het  **[!UICONTROL Add new folder]** menu en als standaardlabel bij het invoegen van een map.
 * **img**: standaardafbeelding bij het invoegen van de map.
 * **hiddenCommands**: lijst met opdrachten (gescheiden door een komma) die moeten worden gemaskeerd. Mogelijke waarden: &quot;adbnew&quot;, &quot;adbsave&quot;, &quot;adbcancel&quot; en &quot;adbdup&quot;.
-* **newFolderShortCuts**: lijst met sneltoetsen op modellen (**`<nodemodel>`** gescheiden door een komma) in het maken van mappen.
-* **insertRight**, **editRight**, **deleteRight**: rechten voor het invoegen, bewerken en verwijderen van mappen.
+* **newFolderShortCuts**: lijst met sneltoetsen op modellen (**`<nodemodel>`** gescheiden door een komma) bij het maken van mappen.
+* **insertRight**,  **editRight**,  **deleteRight**: rechten voor het invoegen, bewerken en verwijderen van mappen.
 
-Het **`<view>`** element onder het **`<nodemodel>`** element bevat de configuratie van de lijst die aan de weergave is gekoppeld. Het schema van de lijst is ingegaan in de **schemaattributen** van het **`<view>`** element.
+Het **`<view>`** element onder het **`<nodemodel>`** element bevat de configuratie van de lijst verbonden aan de mening. Het schema van de lijst is ingegaan in het **schema** attribuut van **`<view>`** element.
 
-Als u de records van de lijst wilt bewerken, wordt impliciet het invoerformulier met dezelfde naam als het lijstschema gebruikt. Het **kenmerk type** op het **`<view>`** element is van invloed op de weergave van het formulier. Mogelijke waarden zijn:
+Als u de records van de lijst wilt bewerken, wordt impliciet het invoerformulier met dezelfde naam als het lijstschema gebruikt. Het **type**-kenmerk op het **`<view>`**-element beïnvloedt de weergave van het formulier. Mogelijke waarden zijn:
 
 * **keuzelijst**: Hiermee geeft u het formulier onder aan de lijst weer.
 * **lijst**: geeft alleen de lijst weer. Het formulier wordt gestart door te dubbelklikken of door te klikken op Openen in het menu om de lijst te selecteren.
@@ -177,9 +177,9 @@ Als u de records van de lijst wilt bewerken, wordt impliciet het invoerformulier
 
 >[!NOTE]
 >
->De naam van het invoerformulier kan worden overbelast door het **formulierkenmerk** in het **`<view>`** element in te voeren.
+>De naam van het invoerformulier kan worden overbelast door het kenmerk **form** in te voeren in het element **`<view>`**.
 
-De standaardconfiguratie van de lijstkolommen is ingegaan via het **`<columns>`** element. Een kolom wordt gedeclareerd op een **`<node>`** element dat het kenmerk **xpath** bevat en waarnaar in het schema moet worden verwezen als waarde.
+De standaardconfiguratie van de lijstkolommen is ingegaan via het **`<columns>`** element. Een kolom wordt gedeclareerd op een **`<node>`**-element dat het **xpath**-kenmerk bevat met het veld waarnaar in het schema moet worden verwezen als de waarde ervan.
 
 **Voorbeeld**: verklaring van een omslagtype op het &quot;nms:ontvanger&quot;schema.
 
@@ -226,7 +226,7 @@ Filteren en sorteren kan worden toegepast wanneer de lijst wordt geladen:
 
 Met een sneltoetsopdracht kunt u een handeling starten om de lijst te selecteren. De handeling kan een invoerformulier of een SOAP-aanroep zijn.
 
-Opdrachten zijn toegankelijk via het **[!UICONTROL Action]** menu van de lijst of de bijbehorende menuknop.
+Opdrachten zijn toegankelijk via het menu **[!UICONTROL Action]** van de lijst of de bijbehorende menuknop.
 
 De structuur van de bevelconfiguratie is als volgt:
 
@@ -245,28 +245,28 @@ De structuur van de bevelconfiguratie is als volgt:
 </nodeModel>
 ```
 
-De beschrijving van een opdracht is ingevoerd voor het **`<command>`** element met de volgende eigenschappen:
+De beschrijving van een bevel is ingegaan op het **`<command>`** element met de volgende eigenschappen:
 
 * **naam**: interne naam van de opdracht: de naam moet worden ingevoerd en uniek zijn.
 * **label**: label van de opdracht.
 * **desc**: een beschrijving die zichtbaar is op de statusbalk van het hoofdscherm.
 * **formulier**: te lanceren formulier: de in te voeren waarde is de identificatiecode van het invoerformulier (bv. &quot;cus:ontvanger&quot;).
-* **rechten**: lijst met benoemde rechten (gescheiden door een komma) die toegang geven tot deze opdracht. De lijst met beschikbare rechten is toegankelijk vanuit de **[!UICONTROL Administration > Access management > Named rights]** map.
+* **rechten**: lijst met benoemde rechten (gescheiden door een komma) die toegang geven tot deze opdracht. De lijst met beschikbare rechten is toegankelijk via de map **[!UICONTROL Administration > Access management > Named rights]**.
 * **promptLabel**: geeft een bevestigingsvak weer voordat de opdracht wordt uitgevoerd
 * **monoSelection**: Hiermee wordt monoselectie geforceerd (standaard meerdere selecties).
 * **refreshView**: dwingt het opnieuw laden van de lijst na uitvoering van het bevel.
 * **enabledIf**: activeert de opdracht afhankelijk van de ingevoerde expressie.
 * **img**: voert een afbeelding in die toegang geeft tot de opdracht via de lijstwerkbalk.
 
-Een **`<command>`** element kan **`<command>`** subelementen bevatten. In dit geval kunt u met het bovenliggende element een submenu weergeven dat bestaat uit deze onderliggende elementen.
+Een **`<command>`**-element kan **`<command>`**-subelementen bevatten. In dit geval kunt u met het bovenliggende element een submenu weergeven dat bestaat uit deze onderliggende elementen.
 
 De opdrachten worden in dezelfde volgorde weergegeven als in het XML-document.
 
-Met een opdrachtscheidingsteken kunt u een scheidingsbalk tussen opdrachten weergeven. Deze wordt aangegeven met de **&#39;-&#39;** waarde in het opdrachtlabel.
+Met een opdrachtscheidingsteken kunt u een scheidingsbalk tussen opdrachten weergeven. Het wordt geïdentificeerd door **&#39;-&#39;** waarde in het beveletiket.
 
-De facultatieve aanwezigheid van de **`<soapcall>`** markering met zijn inputparameters bepaalt de vraag van een methode van de ZEEP die moet worden uitgevoerd. Raadpleeg de documentatie [van](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)Campagne JSAPI voor meer informatie over SOAP API&#39;s.
+De facultatieve aanwezigheid van de **`<soapcall>`** markering met zijn inputparameters bepaalt de vraag van een methode van de ZEEP die moet worden uitgevoerd. Raadpleeg [Campagne JSAPI-documentatie](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) voor meer informatie over SOAP API&#39;s.
 
-De formuliercontext kan worden bijgewerkt bij initialisatie via de **`<enter>`** tag. Raadpleeg de documentatie bij het invoerformulier voor meer informatie over deze tag.
+De formuliercontext kan bij initialisatie worden bijgewerkt met de tag **`<enter>`**. Raadpleeg de documentatie bij het invoerformulier voor meer informatie over deze tag.
 
 **Voorbeeld**:
 
@@ -292,7 +292,7 @@ Er zijn twee typen bewerkingen voor mapbeheer:
 1. De map is een weergave: in de lijst worden alle records weergegeven die aan het schema zijn gekoppeld, met de mogelijkheid om het systeem te filteren dat in de mapeigenschappen is ingevoerd.
 1. De map is gekoppeld: de records in de lijst worden impliciet gefilterd op de mapkoppeling.
 
-Voor een verbonden omslag, moet de **folderLink** attributen op het **`<nodemodel>`** element worden bevolkt. Dit kenmerk bevat de naam van de koppeling in de map die in het gegevensschema is geconfigureerd.
+Voor een verbonden omslag, moet **folderLink** attribuut op **`<nodemodel>`** element worden bevolkt. Dit kenmerk bevat de naam van de koppeling in de map die in het gegevensschema is geconfigureerd.
 
 Voorbeeld van declaratie van een gekoppelde map in het gegevensschema:
 
@@ -300,7 +300,7 @@ Voorbeeld van declaratie van een gekoppelde map in het gegevensschema:
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
 ```
 
-De configuratie van de map **`<nodemodel>`** op de koppeling van de map met de naam &quot;map&quot; is als volgt:
+De configuratie van **`<nodemodel>`** op de verbinding van de omslag genoemd &quot;omslag&quot;is als volgt:
 
 ```
 <nodeModel deleteRight="folderDelete" editRight="folderEdit" folderLink="folder"
