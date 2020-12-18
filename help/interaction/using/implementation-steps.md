@@ -17,16 +17,16 @@ ht-degree: 3%
 
 # Implementatiestappen{#implementation-steps}
 
-## Interactie configureren {#configuring-interaction}
+## Interactie {#configuring-interaction} configureren
 
 >[!NOTE]
 >
->De volgende stappen moeten worden uitgevoerd door een **beheerdersprofiel** en alleen in ontwerpomgevingen.
+>De volgende stappen moeten worden uitgevoerd door een profiel **Administrator** en alleen in ontwerpomgevingen.
 
-1. Gebruikersprofielen maken. For more on this, refer to [Operator profiles](../../interaction/using/operator-profiles.md).
-1. Creërend een aanbiedingsmilieu door dimensie te richten. Raadpleeg [Een aanbiedingsomgeving](../../interaction/using/live-design-environments.md#creating-an-offer-environment)maken voor meer informatie hierover.
-1. Typologische regels maken voor elke omgeving. Voor meer op dit, verwijs naar het [Creëren van en het van verwijzingen voorzien van een de presentatieregel](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule)van de aanbieding.
-1. Het creëren van aanbiedingsruimten voor elke milieu en het vormen van teruggevende functies. Raadpleeg [Aanbiedingsruimten](../../interaction/using/creating-offer-spaces.md)maken voor meer informatie hierover.
+1. Gebruikersprofielen maken. Raadpleeg [Operator-profielen](../../interaction/using/operator-profiles.md) voor meer informatie.
+1. Creërend een aanbiedingsmilieu door dimensie te richten. Voor meer op dit, verwijs naar [Creërend een aanbiedingsmilieu](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+1. Typologische regels maken voor elke omgeving. Raadpleeg [Een aanbiedingspresentatieregel maken en ernaar verwijzen](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule) voor meer informatie.
+1. Het creëren van aanbiedingsruimten voor elke milieu en het vormen van teruggevende functies. Raadpleeg [Aanbiedingsruimten maken](../../interaction/using/creating-offer-spaces.md) voor meer informatie.
 
    >[!NOTE]
    >
@@ -34,27 +34,27 @@ ht-degree: 3%
 
 1. Het vormen van de aanbiedingsmotor voor binnenkomende interactie om één of verscheidene aanbiedingen voor te stellen en bij te werken.
 
-   De verschillende integratiemodi worden gedetailleerd beschreven in [Over binnenkomende kanalen](../../interaction/using/about-inbound-channels.md).
+   De verschillende integratiemodi worden gedetailleerd in [Info over binnenkomende kanalen](../../interaction/using/about-inbound-channels.md).
 
    >[!NOTE]
    >
    >Wanneer een ruimte op het binnenkomende kanaal van het Web wordt gecreeerd, is een configuratie ook noodzakelijk op de plaats waarop de aanbieding zal worden getoond.
 
-## Managing the offer catalog {#managing-the-offer-catalog-}
+## De aanbiedingscatalogus beheren {#managing-the-offer-catalog-}
 
 >[!NOTE]
 >
->De volgende stappen moeten worden uitgevoerd door een **Offertenbeheerder**.
+>De volgende stappen moeten worden uitgevoerd door een **Aanbiedingsmanager**.
 
-1. Het creëren van aanbiedingscategorieën in ontwerpmilieu&#39;s. Zie Aanbiedingscategorieën [maken voor meer informatie](../../interaction/using/creating-offer-categories.md).
-1. Aanbiedingen maken in ontwerpomgevingen. Raadpleeg [Een aanbieding](../../interaction/using/creating-an-offer.md)maken voor meer informatie.
-1. Aanbiedingen goedkeuren en publiceren op één of meerdere ruimten om deze beschikbaar te maken in live omgevingen voor de leveringsmanager. Raadpleeg [Goedkeuring en activering van een aanbieding](../../interaction/using/approving-and-activating-an-offer.md)voor meer informatie.
+1. Het creëren van aanbiedingscategorieën in ontwerpmilieu&#39;s. Raadpleeg [Aanbiedingscategorieën maken](../../interaction/using/creating-offer-categories.md) voor meer informatie.
+1. Aanbiedingen maken in ontwerpomgevingen. Raadpleeg [Een aanbieding maken](../../interaction/using/creating-an-offer.md) voor meer informatie.
+1. Aanbiedingen goedkeuren en publiceren op één of meerdere ruimten om deze beschikbaar te maken in live omgevingen voor de leveringsmanager. Raadpleeg [Een aanbieding goedkeuren en activeren](../../interaction/using/approving-and-activating-an-offer.md) voor meer informatie.
 
-## De aanbiedingencatalogus gebruiken {#using-the-offer-catalog-}
+## De aanbiedingscatalogus {#using-the-offer-catalog-} gebruiken
 
 >[!NOTE]
 >
->De volgende stappen moeten worden uitgevoerd door een **Delivery Manager** -profiel. Ze kunnen alleen aanbiedingen in live omgevingen bewerken.
+>De volgende stappen moeten worden uitgevoerd door een profiel **Delivery Manager**. Ze kunnen alleen aanbiedingen in live omgevingen bewerken.
 
 1. Een campagne maken.
 1. Verwijzen naar een aanbieding in een campagne of een campagnelevering. Voor meer op dit, verwijs naar [Ongeveer uitgaande kanalen](../../interaction/using/about-outbound-channels.md).
