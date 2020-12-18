@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Inbox rendering (IR){#inbox-rendering}
 
-De hieronder beschreven workflow wordt standaard geïnstalleerd met de **Inbox Rendering (IR)** -module. For more on Inbox rendering, refer to this [section](../../delivery/using/inbox-rendering.md).
+De hieronder beschreven workflow wordt standaard geïnstalleerd met de **Inbox rendering (IR)** module. Voor meer op Inbox het teruggeven, verwijs naar dit [sectie](../../delivery/using/inbox-rendering.md).
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ De hieronder beschreven workflow wordt standaard geïnstalleerd met de **Inbox R
   <tr> 
    <td> <strong>Zaadnetwerk bijwerken voor renderen in Postvak</strong><br /> </td> 
    <td> <span class="uicontrol">updateRenderingSeeds</span> <br /> </td> 
-   <td> Deze workflow werkt e-mailadressen bij die worden gebruikt voor de weergave van Postvakken en werkt alleen als de HTTPS-poort open is voor <strong>leverability.neolane.net</strong>.<br /> </td> 
+   <td> Deze workflow werkt e-mailadressen bij die worden gebruikt voor het renderen van Postvakken en werkt alleen als de HTTPS-poort open is voor <strong>leverability.neolane.net</strong>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
