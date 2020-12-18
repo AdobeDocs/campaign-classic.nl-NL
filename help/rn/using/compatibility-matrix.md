@@ -6,9 +6,9 @@ description: Campaign Classic-compatibiliteitsmatrix
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ff3d18b104a8dba7cd813aa698f9c27b4e25e244
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 100%
 
@@ -214,9 +214,9 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <tr>
 <td>Oracle</td>
 <td>
-<p>19c</p>
-<p>18c</p>
-<p>12c</p>
+<p>19 quater</p>
+<p>18 quater</p>
+<p>12 quater</p>
 <p>11g</p>
 </td>
 </tr>
@@ -226,9 +226,9 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <p>12.x</p>
 <p>11.x</p>
 <p>10.x</p>
-<p>9.6.x</p>
-<p>9.5.x</p>
-<p>9.4.x</p>
+<p>9,6 x</p>
+<p>9,5 x</p>
+<p>9,4 x</p>
 </td>
 </tr>
 <tr><td>SQL Server</td>
@@ -331,13 +331,13 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 
 ## Browsers{#Browsers}
 
-Voor de volgende browsers wordt de nieuwste versie ondersteund: Microsoft Edge, Mozilla Firefox, Google Chrome en Safari.
+Voor de volgende browsers wordt de nieuwste versie ondersteund: Microsoft Edge, Mozilla Firefox, Google Chrome, Safari.
 
 Internet Explorer 11 wordt ondersteund.
 
 ## Wellicht ook interessant{#Morelikethis}
 
-* [Opmerkingen bij de release van Campaign Classic](../../rn/using/latest-release.md)
+* [Opmerkingen bij de release van Campaign Classic ](../../rn/using/latest-release.md)
 * [Installatiehandleiding](../../installation/using/general-architecture.md)
 * [Verouderde functies en systemen](../../rn/using/deprecated-features.md)
 * [Upgradeprocedure opstellen](../../production/using/build-upgrade.md)
