@@ -26,4 +26,4 @@ Met meerdere activiteiten kunt u werken met gegevens uit een externe database:
 * Verrijking
 * Gegevens laden
 
-Het gebruik van de FDA-optie is afhankelijk van uw Adobe Campaign-licentie. Het configureren van deze optie en de aanbevolen werkwijzen en beperkingen die aan het gebruik ervan zijn gekoppeld, worden in deze [sectie](../../installation/using/about-fda.md)beschreven.
+Het gebruik van de FDA-optie is afhankelijk van uw Adobe Campaign-licentie. Het vormen van deze optie evenals de beste praktijken en de beperkingen verbonden aan het gebruiken van het zijn gedetailleerd in dit [sectie](../../installation/using/about-fda.md).
