@@ -29,7 +29,7 @@ Het script dat URL aanroept ziet er als volgt uit:
 <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=" type="text/javascript"></script>
 ```
 
-De &quot;**env**&quot;parameter ontvangt de interne naam van het levende milieu gewijd aan anonieme interactie.
+De parameter &quot;**env**&quot;ontvangt de interne naam van het levende milieu gewijd aan anonieme interactie.
 
 Om een aanbieding te presenteren, moeten wij een milieu en een aanbiedingsruimte in Adobe Campaign creëren, dan de HTML- pagina vormen.
 
@@ -37,7 +37,7 @@ In de volgende gebruiksgevallen worden de mogelijke opties beschreven voor het i
 
 ## HTML-modus {#html-mode}
 
-### Een anonieme aanbieding presenteren {#presenting-an-anonymous-offer}
+### Een anonieme aanbieding {#presenting-an-anonymous-offer} presenteren
 
 1. **De interactie-engine voorbereiden**
 
@@ -51,7 +51,8 @@ In de volgende gebruiksgevallen worden de mogelijke opties beschreven voor het i
 
    De HTML-pagina moet een
 
-   element met een @id-kenmerk met de waarde van de interne naam van de gemaakte aanbiedingsruimte (&quot;i_internal name space&quot;). Het aanbod zal in dit element door Interaction worden opgenomen.
+   element met een @id-kenmerk met de waarde van de interne naam van de gemaakte aanbiedingsruimte (&quot;i_internal name space&quot;). Het aanbod wordt in dit
+element op interactie.
 
    In ons voorbeeld ontvangt het kenmerk @id de waarde &quot;i_SPC12&quot;, waarbij &quot;SPC12&quot; de interne naam is van de eerder gemaakte aanbiedingsruimte:
 
@@ -67,7 +68,7 @@ In de volgende gebruiksgevallen worden de mogelijke opties beschreven voor het i
 
    >[!IMPORTANT]
    >
-   >De `<script>` tag mag niet zelfsluitend zijn.
+   >De tag `<script>` mag niet zelfsluitend zijn.
 
    Deze statische vraag zal automatisch een dynamische vraag produceren die alle parameters bevat nodig door de motor van de Interactie.
 
@@ -99,9 +100,9 @@ In de volgende gebruiksgevallen worden de mogelijke opties beschreven voor het i
    </div>
    ```
 
-### Een geïdentificeerd aanbod presenteren {#presenting-an-identified-offer}
+### Een geïdentificeerde aanbieding {#presenting-an-identified-offer} presenteren
 
-Om een aanbieding aan een geïdentificeerde contact voor te stellen, is het proces gelijkaardig zoals hier beschreven: [Een anonieme aanbieding](#presenting-an-anonymous-offer)presenteren. In de inhoud van de webpagina moet u het volgende script toevoegen waarmee de contactpersoon tijdens de aanroep naar de engine wordt geïdentificeerd:
+Om een aanbieding aan een geïdentificeerde contact voor te stellen, is het proces gelijkaardig zoals hier beschreven: [Een anonieme aanbieding presenteren](#presenting-an-anonymous-offer). In de inhoud van de webpagina moet u het volgende script toevoegen waarmee de contactpersoon tijdens de aanroep naar de engine wordt geïdentificeerd:
 
 ```
 <script type="text/javascript">
@@ -109,7 +110,7 @@ Om een aanbieding aan een geïdentificeerde contact voor te stellen, is het proc
 </script>
 ```
 
-1. Ga naar de aanbiedingsruimte die door de webpagina wordt opgeroepen, klik **[!UICONTROL Advanced parameters]** en voeg een of meer identificatietoetsen toe.
+1. Ga naar de aanbiedingsruimte die door de Web-pagina omhoog zal worden geroepen, klik **[!UICONTROL Advanced parameters]** en voeg één of meerdere identificatietoetsen toe.
 
    ![](assets/interaction_htmlmode_001.png)
 
@@ -125,13 +126,13 @@ Om een aanbieding aan een geïdentificeerde contact voor te stellen, is het proc
    </script>
    ```
 
-### Een HTML-renderfunctie gebruiken {#using-an-html-rendering-function}
+### Een HTML-renderfunctie {#using-an-html-rendering-function} gebruiken
 
 Als u de representatie van de HTML-aanbieding automatisch wilt genereren, kunt u een renderfunctie gebruiken.
 
-1. Ga naar de aanbiedingsruimte en klik op de **[!UICONTROL Edit functions]** koppeling.
+1. Ga naar de aanbiedingsruimte en klik op de koppeling **[!UICONTROL Edit functions]**.
 1. Selecteer **[!UICONTROL Overload the HTML rendering function]**.
-1. Ga naar het **[!UICONTROL HTML rendering]** lusje en neem de variabelen op die de gebieden aanpassen voor de aanbiedingsinhoud in de aanbiedingsruimte worden bepaald.
+1. Ga naar het **[!UICONTROL HTML rendering]** lusje en neem de variabelen op die de gebieden aanpassen die voor de aanbiedingsinhoud in de aanbiedingsruimte worden bepaald.
 
    ![](assets/interaction_htmlmode_002.png)
 
@@ -139,7 +140,7 @@ Als u de representatie van de HTML-aanbieding automatisch wilt genereren, kunt u
 
 ## XML-modus {#xml-mode}
 
-### Een voorstel presenteren {#presenting-an-offer}
+### Een aanbieding {#presenting-an-offer} presenteren
 
 De interactie laat u een knoop van XML aan de HTML- pagina terugkeren die omhoog de aanbiedingsmotor roept. Dit XML-knooppunt kan worden verwerkt door functies die aan de kant van de klant moeten worden ontwikkeld.
 
@@ -151,15 +152,15 @@ De vraag aan de motor van de Interactie kijkt als dit:
 
 De parameter &quot;**env**&quot; ontvangt de interne naam van de live omgeving.
 
-De parameter &quot;**cb**&quot; ontvangt de naam van de functie die het XML-knooppunt leest dat wordt geretourneerd door de engine die het (callback) proposition(s) bevat. Deze parameter is optioneel.
+De parameter &quot;**cb**&quot; ontvangt de naam van de functie die de XML-node zal lezen die wordt geretourneerd door de engine die de (callback) propositie(s) bevat. Deze parameter is optioneel.
 
-De parameter &quot;**t**&quot; ontvangt de waarde van het doel, alleen voor een geïdentificeerde interactie. Deze parameter kan ook met de **interactionTarget** variabele worden overgegaan. Deze parameter is optioneel.
+De parameter &quot;**t**&quot;ontvangt de waarde van het doel, slechts voor een geïdentificeerde interactie. Deze parameter kan ook met **interactionTarget** variabele worden overgegaan. Deze parameter is optioneel.
 
-De parameter &quot;**c**&quot; ontvangt de lijst met interne namen van de categorieën. Deze parameter is optioneel.
+De parameter &quot;**c**&quot;ontvangt de lijst van interne namen van de categorieën. Deze parameter is optioneel.
 
-De parameter &quot;**th**&quot; ontvangt de lijst met thema&#39;s. Deze parameter is optioneel.
+De parameter &quot;**th**&quot;ontvangt de lijst van thema&#39;s. Deze parameter is optioneel.
 
-De parameter &quot;**gctx**&quot;ontvangt globale vraaggegevens (context) aan de volledige pagina. Deze parameter is optioneel.
+De &quot;**gctx**&quot;parameter ontvangt de vraaggegevens globaal (context) aan de volledige pagina. Deze parameter is optioneel.
 
 Het geretourneerde XML-knooppunt ziet er als volgt uit:
 
@@ -176,15 +177,15 @@ In het volgende gebruiksgeval worden de configuraties beschreven die in Adobe Ca
 
 1. **Een omgeving en een aanbiedingsruimte maken**
 
-   Raadpleeg [Live/Design-omgevingen](../../interaction/using/live-design-environments.md)voor meer informatie over het maken van een omgeving.
+   Raadpleeg [Live/Design-omgevingen](../../interaction/using/live-design-environments.md) voor meer informatie over het maken van een omgeving.
 
-   Raadpleeg [Aanbiedingsruimten](../../interaction/using/creating-offer-spaces.md)maken voor meer informatie over het maken van een aanbiedingsruimte.
+   Voor meer bij het creëren van een aanbiedingsruimte, verwijs naar [het Creëren van aanbiedingsruimten](../../interaction/using/creating-offer-spaces.md).
 
 1. **Het aanbiedingsschema uitbreiden om nieuwe velden toe te voegen**
 
    Met dit schema worden de volgende velden gedefinieerd: Titel nummer 2 en prijs.
 
-   De naam van het schema in het voorbeeld is **focus:aanbieding**
+   De naam van het schema in het voorbeeld is **cus:aanbieding**
 
    ```
    <srcSchema _cs="Marketing offers (cus)" created="2013-01-18 17:14:20.762Z" createdBy-id="0"
@@ -221,7 +222,7 @@ In het volgende gebruiksgeval worden de configuraties beschreven die in Adobe Ca
 
 1. **De aanbiedingsformule uitbreiden om nieuwe velden te bewerken en een bestaand veld te wijzigen**
 
-   Bewerk het invoerformulier **Aanbieding (nsm)** .
+   Bewerk het invoerformulier **Aanbieding (nsm)**.
 
    Voeg in de sectie Weergaven de twee nieuwe velden in met de volgende inhoud:
 
@@ -261,17 +262,17 @@ In het volgende gebruiksgeval worden de configuraties beschreven die in Adobe Ca
 
    >[!IMPORTANT]
    >
-   >De velden van het formulier ( `<input>`) moeten verwijzen naar de CDATA-typeelementen die in het gemaakte schema zijn gedefinieerd.
+   >De velden van het formulier ( `<input>`) moeten verwijzen naar de CDATA-typeelementen die zijn gedefinieerd in het gemaakte schema.
 
    De rendering in het formulier met aanbiedingsweergaven ziet er als volgt uit:
 
    ![](assets/interaction_xmlmode_form.png)
 
-   De velden **[!UICONTROL Title 2]** en **[!UICONTROL Price]** zijn toegevoegd en het **[!UICONTROL Destination URL]** veld wordt niet meer weergegeven.
+   De velden **[!UICONTROL Title 2]** en **[!UICONTROL Price]** zijn toegevoegd en het veld **[!UICONTROL Destination URL]** wordt niet meer weergegeven.
 
 1. **Een aanbieding maken**
 
-   Raadpleeg Een aanbieding [maken voor meer informatie over het maken van aanbiedingen](../../interaction/using/creating-an-offer.md).
+   Raadpleeg [Een aanbieding maken](../../interaction/using/creating-an-offer.md) voor meer informatie over het maken van aanbiedingen.
 
    In het volgende gebruiksgeval wordt de aanbieding als volgt vermeld:
 
@@ -308,13 +309,13 @@ In het volgende gebruiksgeval worden de configuraties beschreven die in Adobe Ca
    </propositions>
    ```
 
-### Een renderfunctie gebruiken {#using-a-rendering-function-}
+### Een renderfunctie {#using-a-rendering-function-} gebruiken
 
 Het is mogelijk een XML-renderfunctie te gebruiken om een aanbiedingspresentatie te maken. Deze functie wijzigt het XML-knooppunt dat tijdens de aanroep naar de engine wordt geretourneerd naar de HTML-pagina.
 
-1. Ga naar de aanbiedingsruimte en klik op de **[!UICONTROL Edit functions]** koppeling.
+1. Ga naar de aanbiedingsruimte en klik op de koppeling **[!UICONTROL Edit functions]**.
 1. Selecteer **[!UICONTROL Overload the XML rendering function]**.
-1. Ga naar het **[!UICONTROL XML rendering]** lusje en neem de gewenste functie op.
+1. Ga naar het tabblad **[!UICONTROL XML rendering]** en voeg de gewenste functie in.
 
    De functie kan er als volgt uitzien:
 
