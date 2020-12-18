@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # De integratie configureren{#configuring-the-integration}
 
-## Configuring in Adobe Campaign {#configuring-in-adobe-campaign}
+## Configureren in Adobe Campaign {#configuring-in-adobe-campaign}
 
 Om deze twee oplossingen samen te gebruiken, moet u hen vormen om met elkaar te verbinden.
 
@@ -27,44 +27,44 @@ Voer de onderstaande stappen uit om de configuratie in Adobe Campaign te starten
 1. [De externe account configureren](#configure-the-external-account)
 1. [Filteren van AEM configureren](#configure-aem-resources-filtering)
 
-Voor geavanceerde configuraties zoals het beheren van verpersoonlijkingsgebieden en blokken. Raadpleeg de Adobe Experience Manager- [documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html).
+Voor geavanceerde configuraties zoals het beheren van verpersoonlijkingsgebieden en blokken. Raadpleeg de [documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html) van Adobe Experience Manager.
 
 ### Installeer het AEM integratiepakket in Adobe Campaign {#install-the-aem-integration-package-in-adobe-campaign}
 
 U moet eerst het **[!UICONTROL AEM integration]** pakket installeren.
 
-1. Selecteer in uw Adobe Campaign-exemplaar **[!UICONTROL Tools]** op de bovenste werkbalk.
+1. Selecteer **[!UICONTROL Tools]** in uw Adobe Campaign-exemplaar op de bovenste werkbalk.
 1. Selecteer **[!UICONTROL Tools > Advanced > Import package...]**.
 
    ![](assets/aem_config_1.png)
 
 1. Selecteer **[!UICONTROL Install a standard package]**.
-1. Schakel **[!UICONTROL AEM integration]** vervolgens in en klik op de **[!UICONTROL Next]** knop.
+1. Schakel **[!UICONTROL AEM integration]** in en klik op de knop **[!UICONTROL Next]**.
 
    ![](assets/aem_config_2.png)
 
-1. Klik in het volgende venster op de **[!UICONTROL Start]** knop om de installatie van het pakket te starten. Sluit het venster als de installatie is voltooid.
+1. Klik in het volgende venster op de knop **[!UICONTROL Start]** om de installatie van het pakket te starten. Sluit het venster als de installatie is voltooid.
 
-### De beveiligingszone voor AEM operator configureren {#configure-the-security-zone-for-aem-operator}
+### De beveiligingszone voor AEM operator {#configure-the-security-zone-for-aem-operator} configureren
 
-Het **[!UICONTROL AEM integration]** pakket stelt de **[!UICONTROL aemserver]** operator in Campaign in. Deze operator wordt gebruikt om de Adobe Experience Manager-server te verbinden met Adobe Campaign.
+Met het pakket **[!UICONTROL AEM integration]** wordt de operator **[!UICONTROL aemserver]** in Campagne ingesteld. Deze operator wordt gebruikt om de Adobe Experience Manager-server te verbinden met Adobe Campaign.
 
 U moet een beveiligingszone configureren voor deze operator om verbinding te maken met Adobe Campaign via Adobe Experience Manager.
 
 >[!CAUTION]
 >
->We raden u ten zeerste aan een beveiligingszone in te stellen die is gewijd aan AEM om beveiligingsproblemen te voorkomen. For more on this, refer to the Installation [guide](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+>We raden u ten zeerste aan een beveiligingszone in te stellen die is gewijd aan AEM om beveiligingsproblemen te voorkomen. Raadpleeg de Installatiehandleiding [a1/> voor meer informatie.](../../installation/using/configuring-campaign-server.md#defining-security-zones)
 
 Als uw instantie van de Campagne door Adobe wordt ontvangen, contacteer het team van de Steun van de Adobe. Voer de onderstaande stappen uit als u campagne op locatie gebruikt:
 
-1. Open het configuratiebestand **serverConf.xml** .
-1. Open het **allowUserPassword** -kenmerk van de geselecteerde beveiligingszone en stel dit in op **true**.
+1. Open het configuratiebestand **serverConf.xml**.
+1. Open het **allowUserPassword** attribuut van de geselecteerde veiligheidsstreek en plaats het aan **true**.
 
    Hierdoor kan Adobe Experience Manager verbinding maken met Adobe Campaign via aanmelding/wachtwoord.
 
-### De externe account configureren {#configure-the-external-account}
+### De externe account {#configure-the-external-account} configureren
 
-Het **[!UICONTROL AEM integration]** pakket heeft de externe account voor Adobe Experience Cloud gemaakt. U moet het nu configureren om verbinding te maken met uw Adobe Experience Manager-instantie.
+Met het **[!UICONTROL AEM integration]**-pakket is de externe account voor Adobe Experience Cloud gemaakt. U moet het nu configureren om verbinding te maken met uw Adobe Experience Manager-instantie.
 
 Voer de volgende stappen uit om de AEM externe account te configureren:
 
@@ -73,7 +73,7 @@ Voer de volgende stappen uit om de AEM externe account te configureren:
    ![](assets/aem_config_3.png)
 
 1. Selecteer **[!UICONTROL Administration > Platform > External accounts]**.
-1. From the **[!UICONTROL External account]** list, select **[!UICONTROL AEM instance]**.
+1. Selecteer **[!UICONTROL AEM instance]** in de lijst **[!UICONTROL External account]**.
 1. Voer de parameters in voor de AEM ontwerpinstantie:
 
    * **[!UICONTROL Server]**
@@ -82,23 +82,23 @@ Voer de volgende stappen uit om de AEM externe account te configureren:
 
    >[!NOTE]
    >
-   >Zorg ervoor dat het **[!UICONTROL Server]** adres niet eindigt met een slash.
+   >Zorg ervoor dat uw **[!UICONTROL Server]** adres niet met een het slepen schuine streep beëindigt.
 
    ![](assets/aem_config_4.png)
 
-1. Schakel het **[!UICONTROL Enabled]** selectievakje in.
+1. Schakel het selectievakje **[!UICONTROL Enabled]** in.
 1. Klik op de knop **[!UICONTROL Save]**.
 
-### Filteren van AEM configureren {#configure-aem-resources-filtering}
+### Filteren van AEM bronnen {#configure-aem-resources-filtering} configureren
 
-De **optie AEMResourceTypeFilter** wordt gebruikt om types van Experience Manager middelen te filtreren die in Adobe Campaign kunnen worden gebruikt. Op deze manier kan Adobe Campaign inhoud van Experience Managers ophalen die specifiek is ontworpen voor gebruik in alleen Adobe Campaign.
+De optie **AEMResourceTypeFilter** wordt gebruikt om typen bronnen van de Experience Manager te filteren die in Adobe Campaign kunnen worden gebruikt. Op deze manier kan Adobe Campaign inhoud van Experience Managers ophalen die specifiek is ontworpen voor gebruik in alleen Adobe Campaign.
 
-Controleren of de **[!UICONTROL AEMResourceTypeFilter]** optie is geconfigureerd:
+Om te controleren of wordt de optie **[!UICONTROL AEMResourceTypeFilter]** gevormd:
 
 1. Klik op de knop **[!UICONTROL Explorer]**.
 1. Selecteer **[!UICONTROL Administration > Platform > Options]**.
-1. From the **[!UICONTROL Options]** list, select **[!UICONTROL AEMResourceTypeFilter]**.
-1. In het **[!UICONTROL Value (text)]** veld moet het pad als volgt zijn:
+1. Selecteer **[!UICONTROL AEMResourceTypeFilter]** in de lijst **[!UICONTROL Options]**.
+1. In het veld **[!UICONTROL Value (text)]** moet het pad als volgt zijn:
 
    ```
    mcm/campaign/components/newsletter,mcm/campaign/components/campaign_newsletterpage,mcm/neolane/components/newsletter
@@ -116,19 +116,19 @@ Controleren of de **[!UICONTROL AEMResourceTypeFilter]** optie is geconfigureerd
 
 Voer de onderstaande stappen uit om de configuratie in Adobe Experience Manager te starten:
 
-1. Vorm de **replicatie** om van de AEM auteursinstantie aan de AEM het publiceren instantie te herhalen.
+1. Configureer de **replicatie** om van de AEM ontwerpinstantie naar de AEM publicatieinstantie te repliceren.
 
-   Raadpleeg de Adobe Experience Manager- [documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html)voor meer informatie over het configureren van replicatie.
+   Meer informatie over het configureren van replicatie vindt u in Adobe Experience Manager [documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html).
 
 1. Installeer de integratie **FeaturePack** op uw auteursinstantie dan repliceer de installatie op uw het publiceren instantie. (Alleen voor AEM versies 5.6.1 en 6.0).
 
-   Raadpleeg de Adobe Experience Manager- [documentatie](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)voor meer informatie over het installeren van FeaturePack.
+   Raadpleeg de documentatie bij Adobe Experience Manager [voor meer informatie over het installeren van FeaturePack.](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)
 
 1. Verbind Adobe Experience Manager met Adobe Campaign door een specifieke **Cloud Service** te vormen.
 
-   Raadpleeg de Adobe Experience Manager- [documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) voor informatie over het tot stand brengen van een verbinding tussen beide oplossingen via Cloud Services.
+   Raadpleeg de Adobe Experience Manager [documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) voor informatie over het verbinden van beide oplossingen via Cloud Services.
 
 1. Configureer de **Externalzer-service**.
 
-   Raadpleeg de Adobe Experience Manager- [documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html)voor meer informatie over het configureren ervan.
+   Raadpleeg de documentatie [van Adobe Experience Manager voor meer informatie over het configureren van de documentatie.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html)
 
