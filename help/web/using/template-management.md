@@ -23,14 +23,14 @@ Wanneer het leiden van tot een Landing van het typeWeb van Pagina toepassing, ka
 
 ![](assets/dce_popup_templatechoice.png)
 
-Als u een sjabloon wilt toevoegen, raadpleegt u de [algemene opties](../../web/using/content-editor-interface.md#global-options).
+Als u een sjabloon wilt toevoegen, raadpleegt u [Algemene opties](../../web/using/content-editor-interface.md#global-options).
 
 ## Een levering opslaan als een sjabloon {#saving-a-delivery-as-a-template}
 
 Na het vormen van een levering, kunt u het als malplaatje bewaren om het voor toekomstige leveringen opnieuw te gebruiken.
 
-Open in het **Campagne** universum de gekozen levering. Klik op de knop **Opslaan als sjabloon** , geef de sjabloon een naam en sla deze op.
+Open in het universum **Campagnes** de gekozen levering. Klik op de **knop Opslaan als sjabloon**, geef de sjabloon een naam en sla deze op.
 
 ![](assets/dce_save_model.png)
 
-De nieuwe sjabloon wordt opgeslagen onder **Bronnen > Sjablonen > Knop Inhoudssjablonen** in de verkenner.
+De nieuwe sjabloon wordt opgeslagen onder **Bronnen > Sjablonen > Inhoudssjablonen**-knooppunt in de verkenner.
