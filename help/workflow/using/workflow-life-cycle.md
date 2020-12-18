@@ -31,16 +31,16 @@ De workflowcyclus bestaat uit drie hoofdstappen.
 
    Een workflow is &#39;voltooid&#39; wanneer er geen taken meer worden uitgevoerd of wanneer een operator de instantie expliciet heeft gestopt.
 
-De activiteiten **Start** en **Levering** worden bijvoorbeeld beschreven terwijl de activiteit **Goedkeuring** in de onderstaande workflow knippert.
+De activiteiten **Start** en **Delivery** worden bijvoorbeeld beschreven terwijl de activiteit **Approval** in de onderstaande workflow knippert.
 
 ![](assets/new-workflow-6.png)
 
 Dit betekent dat de eerste twee activiteiten met succes zijn uitgevoerd en dat de goedkeuring in uitvoering is, d.w.z. dat zij is gecreëerd maar nog niet is voltooid.
 
-De tekens **574 -Ok** boven de overgang na de **leveringsactiviteit** betekenen dat de voorbereiding van de levering gericht is op 574 ontvangers en dat de bewerking is voltooid. Deze informatie, die aan de overgangen wordt toegevoegd wanneer zij worden uitgevoerd, wordt berekend door de activiteiten die gegevens verwerken.
+De tekens **574 -Ok** die boven de overgang na de activiteit **Delivery** worden weergegeven, betekenen dat de voorbereiding van de levering gericht is op 574 ontvangers en dat de bewerking met succes is voltooid. Deze informatie, die aan de overgangen wordt toegevoegd wanneer zij worden uitgevoerd, wordt berekend door de activiteiten die gegevens verwerken.
 
-De workflow wordt gestart en er wordt gewacht tot een operator die behoort tot de groep die is opgegeven in de activiteit **Goedkeuring** , een beslissing neemt. De tot de groep behorende exploitanten die een e-mailadres of mobiel telefoonnummer hebben, worden op de hoogte gesteld.
+De werkstroom is begonnen en wacht op een exploitant die tot de groep behoort die in **Goedkeuring** activiteit wordt gespecificeerd om een besluit te nemen. De tot de groep behorende exploitanten die een e-mailadres of mobiel telefoonnummer hebben, worden op de hoogte gesteld.
 
-Het beheer van de exploitant wordt gedetailleerd in deze [sectie](../../platform/using/access-management.md).
+Operator management is gedetailleerd in deze [sectie](../../platform/using/access-management.md).
 
-Raadpleeg [deze sectie](../../workflow/using/monitoring-workflow-execution.md)voor meer informatie over hoe u de workflows kunt controleren.
+Raadpleeg [deze sectie](../../workflow/using/monitoring-workflow-execution.md) voor meer informatie over hoe u workflows kunt controleren.
