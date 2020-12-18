@@ -17,26 +17,26 @@ ht-degree: 5%
 
 # Simulatie van aanbiedingen{#about-offers-simulation}
 
-Met de module **Simulatie** kunt u de distributie testen van aanbiedingen die tot een categorie of omgeving behoren voordat u uw voorstel naar ontvangers verzendt.
+Met de module **Simulatie** kunt u de distributie testen van aanbiedingen die tot een categorie of een omgeving behoren voordat u uw voorstel naar ontvangers verzendt.
 
-De simulatie houdt rekening met de context en de toelatingsregels die eerder op aanbiedingen van toepassing waren (verwijs naar het overzicht [van de](../../interaction/using/offer-catalog-overview.md)catalogus van de Aanbieding), evenals hun presentatieregels (verwijs naar de presentatie [van de Aanbieding van het](../../interaction/using/managing-offer-presentation.md)Beheer). Dit laat u diverse versies van uw aanbiedingsvoorstel testen en verfijnen zonder eigenlijk een aanbieding of over/onder het eisen van een doel te gebruiken, aangezien de simulatie geen effect op de gerichte ontvangers heeft.
+Bij de simulatie wordt rekening gehouden met de context en de regels om in aanmerking te komen voor aanbiedingen (zie [Catalogusoverzicht van aanbieding](../../interaction/using/offer-catalog-overview.md)) en de presentatieregels (zie [Presentatie beheren](../../interaction/using/managing-offer-presentation.md)). Dit laat u diverse versies van uw aanbiedingsvoorstel testen en verfijnen zonder eigenlijk een aanbieding of over/onder het eisen van een doel te gebruiken, aangezien de simulatie geen effect op de gerichte ontvangers heeft.
 
 Lees de onderstaande stappen voor meer informatie over het simuleren van een aanbieding.
 
 ![](assets/do-not-localize/how-to-video.png)[ U kunt ook deze video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com) bekijken.
 
-## Belangrijkste stappen voor het creëren van een simulatie {#main-steps-for-creating-a-simulation}
+## Belangrijkste stappen voor het maken van een simulatie {#main-steps-for-creating-a-simulation}
 
 Voer de volgende stappen uit om een simulatie van uw aanbiedingen uit te voeren:
 
-1. Klik in het **[!UICONTROL Profiles and Targets]** universum op de **[!UICONTROL Simulations]** koppeling en klik vervolgens op de **[!UICONTROL Create]** knop.
+1. Klik in het **[!UICONTROL Profiles and Targets]** universum op de koppeling **[!UICONTROL Simulations]** en klik vervolgens op de knop **[!UICONTROL Create]**.
 
    ![](assets/offer_simulation_001.png)
 
 1. Sla de simulatie op en bewerk deze die u zojuist hebt gemaakt.
-1. Ga naar het **[!UICONTROL Edit]** tabblad en geef de instellingen voor de uitvoering op.
+1. Ga naar het tabblad **[!UICONTROL Edit]** en geef de uitvoeringsinstellingen op.
 
-   For more on this, refer to [Execution settings](../../interaction/using/execution-settings.md).
+   Raadpleeg [Uitvoerinstellingen](../../interaction/using/execution-settings.md) voor meer informatie hierover.
 
    ![](assets/offer_simulation_003.png)
 
@@ -46,13 +46,13 @@ Voer de volgende stappen uit om een simulatie van uw aanbiedingen uit te voeren:
 
 1. Geef het simulatiebereik op.
 
-   Zie voor meer informatie de [definitie van het toepassingsgebied](../../interaction/using/simulation-scope.md#definition-of-the-scope).
+   Voor meer op dit, verwijs naar [Definitie van het werkingsgebied](../../interaction/using/simulation-scope.md#definition-of-the-scope).
 
    ![](assets/offer_simulation_004.png)
 
-1. Voeg rapportassen toe om het **[!UICONTROL Offer distribution by rank]** rapport te verbeteren (facultatief).
+1. Voeg rapportassen toe om het **[!UICONTROL Offer distribution by rank]** rapport (facultatief) te verbeteren.
 
-   Zie [Rapportassen](../../interaction/using/simulation-scope.md#adding-reporting-axes)toevoegen voor meer informatie hierover.
+   Raadpleeg [Rapporterende assen toevoegen](../../interaction/using/simulation-scope.md#adding-reporting-axes) voor meer informatie.
 
    ![](assets/offer_simulation_005.png)
 
@@ -63,6 +63,6 @@ Voer de volgende stappen uit om een simulatie van uw aanbiedingen uit te voeren:
 
 1. Controleer het simulatieresultaat en toon het analyserapport.
 
-   For more on this, refer to [Simulation tracking](../../interaction/using/simulation-tracking.md).
+   Raadpleeg [Simulatie bijhouden](../../interaction/using/simulation-tracking.md) voor meer informatie hierover.
 
    ![](assets/offer_simulation_007.png)
