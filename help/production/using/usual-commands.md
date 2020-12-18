@@ -19,16 +19,16 @@ ht-degree: 3%
 
 In deze sectie worden de gebruikelijke opdrachten in Adobe Campaign weergegeven.
 
-De opdrachtserver **** is de invoeropdracht voor de hele Adobe Campaign-toepassing.
+De opdracht **nlserver** is de invoeropdracht voor de hele Adobe Campaign-toepassing.
 
 Deze opdracht heeft de volgende syntaxis: **nlserver **`<command>`****`<arguments>`****
 
-De parameter **`<command>`** komt overeen met de module.
+De parameter **`<command>`** beantwoordt aan de module.
 
 >[!NOTE]
 >
->* In elk geval, kunt u het **-noconsole** argument toevoegen om commentaren te schrappen die worden getoond zodra de modules zijn begonnen.
->* Omgekeerd kunt u het argument **-verbose** toevoegen om meer informatie weer te geven.
+>* In elk geval, kunt u **-noconsole** argument toevoegen om commentaren te schrappen die worden getoond zodra de modules zijn begonnen.
+>* Omgekeerd, kunt u het argument **-verbose** toevoegen om meer informatie te tonen.
 
 >
 
@@ -38,9 +38,9 @@ De parameter **`<command>`** komt overeen met de module.
 
 >[!NOTE]
 >
->Om van alle modules een lijst te maken, moet u het **nlserver** bevel gebruiken.
+>Als u alle modules wilt weergeven, moet u de opdracht **nlserver pdump** gebruiken.
 
-U kunt parameter **-wie** toevoegen om van de lopende verbindingen (gegevensbestand en toepassing) een lijst te maken.
+U kunt de parameter **-who** toevoegen om van de lopende verbindingen (gegevensbestand en toepassing) een lijst te maken.
 
 ```
 nlserver pdump -who
@@ -62,9 +62,9 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-Een andere handige opdracht is **Nlserver-monitor**. Het bevat het XML-bestand voor controle (verkregen in de Adobe Campaign-client of via de **website monitor.jsp** ).
+Een andere handige opdracht is **nlserver monitor**. Het bevat het XML-bestand voor controle (verkregen in de Adobe Campaign-client of via de webpagina **monitor.jsp**).
 
-U kunt de parameter toevoegen **-mist** om van de afwezige modules (fout in modules, modules sluiten enz.) een lijst te maken
+U kunt de parameter **-missing** toevoegen om van de ontbrekende modules (fout in modules, modules sluiten, enz.) een lijst te maken
 
 ```
 nlserver monitor -missing
@@ -90,9 +90,9 @@ nlserver stop <module>@<INSTANCE>
 
 >[!NOTE]
 >
->**`<instance>`** komt overeen met de naam van de instantie zoals die is ingevoerd in de configuratiebestanden of **standaard** voor monoinstantiemodules.
+>**`<instance>`** komt overeen met de naam van de instantie zoals die is ingevoerd in de configuratiebestanden of  **** standaardinstellingen voor monoinstantiemodules.
 
-## Afsluiten van services {#shut-down-services}
+## Afsluitservices {#shut-down-services}
 
 Als u de Adobe Campaign-services wilt stoppen, gebruikt u een van de volgende opdrachten:
 
@@ -120,7 +120,7 @@ Als u de Adobe Campaign-services wilt stoppen, gebruikt u een van de volgende op
    nlserver shutdown 
    ```
 
-## Herstartservices {#restart-services}
+## Services {#restart-services} opnieuw starten
 
 Op dezelfde manier kunt u een van de volgende opdrachten gebruiken om Adobe Campaign opnieuw te starten:
 
@@ -130,7 +130,7 @@ Op dezelfde manier kunt u een van de volgende opdrachten gebruiken om Adobe Camp
 
       >[!NOTE]
       >
-      >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systeemserver voor opstarten**
+      >Vanaf 20.1 raden we u aan in plaats daarvan de volgende opdracht te gebruiken (voor Linux): **systemctl start nlserver**
 
    * In Windows: netwerkbeginserver6
 
@@ -138,9 +138,9 @@ Op dezelfde manier kunt u een van de volgende opdrachten gebruiken om Adobe Camp
 
 ## Het configuratiebevel {#the-config-command}
 
-Met de **opdracht config** kunt u de serverconfiguratie beheren, inclusief de herconfiguratie van de databaseverbinding.
+Met de opdracht **config** kunt u de serverconfiguratie beheren, inclusief de herconfiguratie van de databaseverbinding.
 
-Gebruik het **config** bevel van het uitvoerbare dossier **nlserver** met de **-vastgestelde parameter** .
+Gebruik **config** bevel van **nlserver** uitvoerbaar dossier met **-setdblogin** parameter.
 
 ```
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
@@ -152,16 +152,16 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 Voer het wachtwoord in.
 
-Het **interne** wachtwoord wijzigen: **nlserver config - intern wachtwoord**
+Het **internal** wachtwoord wijzigen: **nlserver config -internalpassword**
 
 >[!IMPORTANT]
 >
->Als u zich wilt aanmelden met de **interne** id, moet u vooraf een wachtwoord hebben gedefinieerd. Raadpleeg [deze sectie](../../installation/using/campaign-server-configuration.md#internal-identifier) voor meer informatie.
+>Als u zich wilt aanmelden met de **Internal**-id, moet u vooraf een wachtwoord hebben gedefinieerd. Raadpleeg [deze sectie](../../installation/using/campaign-server-configuration.md#internal-identifier) voor meer informatie.
 
 >[!NOTE]
 >
->* In het algemeen, in plaats van het wijzigen van de configuratiedossiers door hand, kunt u het **config** bevel gebruiken
->* Als u de lijst met parameters wilt ophalen, gebruikt u de **-?** parameter: **nlserver config -?**
+>* In het algemeen, in plaats van het wijzigen van de configuratiedossiers door hand, kunt u **config** bevel gebruiken
+>* Om de lijst van parameters te krijgen, gebruik **-?** parameter:  **nlserver config -?**
 >* In het geval van een Oracle-database mag u het account niet opgeven. De syntaxis ziet er als volgt uit:
 
 >
