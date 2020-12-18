@@ -23,6 +23,6 @@ Met Social Marketing kunt u leveringen verzenden naar uw verschillende Facebook-
 >
 >Adobe Campaign vraagt dat je voldoet aan de servicevoorwaarden die Facebook en Twitter hebben meegedeeld met betrekking tot het verzenden van berichten.
 >
->Voordat u publicaties verzendt, moet u voldoen aan de configuratiestappen die worden beschreven in Workflows [](../../social/using/starting-workflows.md)starten.
+>Voordat u publicaties verzendt, moet u voldoen aan de configuratiestappen die worden beschreven in [Workflows starten](../../social/using/starting-workflows.md).
 
 In deze sectie worden de specifieke elementen van een levering via Facebook en Twitter beschreven. Alle elementen die identiek zijn aan e-mailleveringen worden beschreven in [deze sectie](../../delivery/using/about-email-channel.md).
