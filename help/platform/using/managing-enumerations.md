@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Opsommingen beheren{#managing-enumerations}
 
-## Opsommingen {#about-enumerations}
+## Informatie over opsommingen {#about-enumerations}
 
 Een opsomming (ook wel &#39;gespecificeerde lijst&#39; genoemd) is een lijst met waarden die door het systeem worden voorgesteld om bepaalde velden te vullen. Met opsommingen kunt u de waarden van deze velden standaardiseren en informatie invoeren of gebruiken binnen query&#39;s.
 
@@ -27,7 +27,7 @@ Sommige consolevelden zijn gedefinieerd met dit type opsommingen. Opsommingen wo
 
 ## Toegang tot waarden {#access-to-values}
 
-De waarden voor dit type veld worden gedefinieerd en het algemene beheer van deze velden (het toevoegen/verwijderen van een waarde) wordt uitgevoerd via het **[!UICONTROL Administration > Platform > Enumerations]** knooppunt van de structuur.
+De waarden voor dit type veld worden gedefinieerd en het algemene beheer van deze velden (het toevoegen/verwijderen van een waarde) wordt uitgevoerd via het knooppunt **[!UICONTROL Administration > Platform > Enumerations]** van de structuur.
 
 ![](assets/s_ncs_user_itemized_list_node.png)
 
@@ -36,19 +36,19 @@ De waarden voor dit type veld worden gedefinieerd en het algemene beheer van dez
 
    ![](assets/s_ncs_user_itemized_list_values.png)
 
-   Als u een nieuwe opsommingswaarde wilt maken, klikt u **[!UICONTROL Add]** op.
+   Als u een nieuwe opsommingswaarde wilt maken, klikt u op **[!UICONTROL Add]**.
 
    ![](assets/s_ncs_user_itemized_list.png)
 
-   Als de **[!UICONTROL Open]** optie is geselecteerd, kan de gebruiker een nieuwe gespecificeerde lijstwaarde direct op het overeenkomstige gebied toevoegen. Met een bevestigingsbericht kunt u deze waarde maken.
+   Als de optie **[!UICONTROL Open]** is geselecteerd, kan de gebruiker een nieuwe gespecificeerde lijstwaarde direct op het overeenkomstige gebied toevoegen. Met een bevestigingsbericht kunt u deze waarde maken.
 
    ![](assets/s_ncs_user_itemized_list_new_value.png)
 
-* Als de **[!UICONTROL Closed]** optie is geselecteerd, kunnen gebruikers geen nieuwe waarden maken, maar alleen een keuze maken uit de beschikbare waarden.
+* Als de optie **[!UICONTROL Closed]** is geselecteerd, kunnen gebruikers geen nieuwe waarden maken, maar alleen een keuze maken uit de beschikbare waarden.
 
-## Gegevens standaardiseren {#standardizing-data}
+## Gegevens {#standardizing-data} standaardiseren
 
-### Informatie over het opschonen van aliassen {#about-alias-cleansing}
+### Informatie over het opschonen van alias {#about-alias-cleansing}
 
 In de gespecificeerde lijstgebieden, kunt u waarden buiten opsommingswaarden ingaan. Deze kunnen worden opgeslagen zoals ze zijn of worden gereinigd.
 
@@ -58,27 +58,27 @@ In de gespecificeerde lijstgebieden, kunt u waarden buiten opsommingswaarden ing
 
 De ingevoerde waarde is dan:
 
-* Toegevoegd aan de gespecificeerde lijstwaarden: in dat geval moet de **[!UICONTROL Open]** optie worden geselecteerd;
-* of automatisch vervangen door de overeenkomstige alias: In dat geval moet dit geval worden gedefinieerd op het **[!UICONTROL Alias]** tabblad van de gespecificeerde lijst,
+* Toegevoegd aan de gespecificeerde lijstwaarden: in dat geval moet de optie **[!UICONTROL Open]** zijn geselecteerd,
+* of automatisch vervangen door de overeenkomstige alias: In dit geval moet dit geval worden gedefinieerd op het tabblad **[!UICONTROL Alias]** van de gespecificeerde lijst,
 * of is opgeslagen in de lijst met aliassen: er wordt later een alias aan toegewezen.
 
    >[!NOTE]
    >
-   >Als u mogelijkheden voor gegevenszuivering wilt gebruiken, selecteert u de **[!UICONTROL Alias cleansing]** optie in de gespecificeerde lijst.
+   >Als u mogelijkheden voor gegevenszuivering moet gebruiken, selecteert u de optie **[!UICONTROL Alias cleansing]** in de gespecificeerde lijst.
 
-### Aliassen gebruiken {#using-aliases}
+### Aliassen {#using-aliases} gebruiken
 
-Met deze optie **[!UICONTROL Alias cleansing]** kunt u aliassen gebruiken voor de geselecteerde gespecificeerde lijst. Als deze optie is geselecteerd, wordt het **[!UICONTROL Alias]** tabblad onder in het venster weergegeven.
+Met de optie **[!UICONTROL Alias cleansing]** kunt u aliassen gebruiken voor de geselecteerde gespecificeerde lijst. Als deze optie is geselecteerd, wordt de tab **[!UICONTROL Alias]** onder in het venster weergegeven.
 
 ![](assets/s_ncs_user_itemized_list_alias_option.png)
 
-#### Een alias maken {#creating-an-alias}
+#### Een alias {#creating-an-alias} maken
 
-Klik op een alias om een alias te maken **[!UICONTROL Add]**.
+Klik op **[!UICONTROL Add]** om een alias te maken.
 
 ![](assets/s_ncs_user_itemized_list_alias_create.png)
 
-Voer de alias die u wilt omzetten en de waarde in die u wilt toepassen en klik op **[!UICONTROL Ok]**.
+Voer de alias die u wilt omzetten en de waarde die u wilt toepassen in en klik op **[!UICONTROL Ok]**.
 
 ![](assets/s_ncs_user_itemized_list_alias_create_2.png)
 
@@ -90,7 +90,7 @@ Controleer parameters voordat u deze bewerking bevestigt.
 
 ![](assets/s_ncs_user_itemized_list_alias_create_3.png)
 
-Wanneer een gebruiker de waarde **NEILSEN** invoert in een veld &quot;bedrijf&quot; (in de Adobe Campaign-console of in een formulier), wordt deze automatisch vervangen door de waarde **NIELSEN Ltd**. Waardevervanging wordt uitgevoerd door de workflow **Alias-zuivering** . Zie Gegevens [uitvoeren opschonen](#running-data-cleansing).
+Wanneer een gebruiker de waarde **NEILSEN** invoert in een veld &quot;company&quot; (in de Adobe Campaign-console of in een formulier), wordt deze automatisch vervangen door de waarde **NIELSEN Ltd**. De vervanging van de waarde wordt uitgevoerd door **Alias het zuiveren** werkschema. Zie [Gegevens opschonen](#running-data-cleansing) uitvoeren.
 
 ![](assets/s_ncs_user_itemized_list_alias_use.png)
 
@@ -104,7 +104,7 @@ Kies de waarden die u wilt omzetten en klik op **[!UICONTROL Next]**.
 
 ![](assets/s_ncs_user_itemized_list_alias_transform.png)
 
-Klik **[!UICONTROL Start]** om de conversie uit te voeren.
+Klik op **[!UICONTROL Start]** om de conversie uit te voeren.
 
 ![](assets/s_ncs_user_itemized_list_alias_detail1.png)
 
@@ -112,37 +112,37 @@ Zodra de uitvoering is voltooid, wordt de alias toegevoegd aan de lijst met alia
 
 ![](assets/s_ncs_user_itemized_list_alias_detail2.png)
 
-#### Aliashits ophalen {#retrieving-alias-hits}
+#### Aliashits {#retrieving-alias-hits} ophalen
 
-De waarden die door de gebruikers worden ingevoerd, kunnen in aliassen worden omgezet. Wanneer de gebruiker een waarde invoert die niet in de gespecificeerde lijst staat, wordt de waarde op het **[!UICONTROL Alias]** tabblad opgeslagen.
+De waarden die door de gebruikers worden ingevoerd, kunnen in aliassen worden omgezet. Als de gebruiker een waarde invoert die niet is opgenomen in de gespecificeerde lijst, wordt de waarde opgeslagen op het tabblad **[!UICONTROL Alias]**.
 
-De technische workflow voor **Alias-zuivering** herstelt deze waarden elke avond om de gespecificeerde lijst bij te werken. Raadpleeg Gegevensverwijdering [uitvoeren](#running-data-cleansing)
+De **technische workflow voor Alias-zuivering** herstelt deze waarden elke avond om de gespecificeerde lijst bij te werken. Zie [Gegevensverwijdering uitvoeren](#running-data-cleansing)
 
-Indien nodig kan in de **[!UICONTROL Hits]** kolom het aantal keren worden weergegeven dat deze waarde is ingevoerd. Het berekenen van deze waarde kan tijd en geheugen vergen. Zie [Invoergebeurtenissen](#calculating-entry-occurrences)berekenen voor meer informatie.
+Indien nodig kan in de kolom **[!UICONTROL Hits]** het aantal keren worden weergegeven dat deze waarde is ingevoerd. Het berekenen van deze waarde kan tijd en geheugen vergen. Raadpleeg [Invoerinstanties berekenen](#calculating-entry-occurrences) voor meer informatie hierover.
 
-### Gegevens opschonen uitvoeren {#running-data-cleansing}
+### Gegevens opschonen {#running-data-cleansing} uitvoeren
 
-De gegevens worden gewist door de **[!UICONTROL Alias cleansing]** technische workflow. De configuraties die voor opsommingen worden gedefinieerd, worden tijdens de uitvoering toegepast. Raadpleeg de workflow [Alias Clearing](#alias-cleansing-workflow).
+De gegevens worden schoongemaakt door het **[!UICONTROL Alias cleansing]** technische werkschema. De configuraties die voor opsommingen worden gedefinieerd, worden tijdens de uitvoering toegepast. Raadpleeg [Workflow voor Aliasreiniging](#alias-cleansing-workflow).
 
-Het opschonen kan via de **[!UICONTROL Cleanse values...]** koppeling worden geactiveerd.
+Reiniging kan worden geactiveerd via de koppeling **[!UICONTROL Cleanse values...]**.
 
 ![](assets/s_ncs_user_itemized_list_alias_start_normalize.png)
 
-Met de **[!UICONTROL Advanced parameters...]** koppeling kunt u de datum instellen vanaf welke verzamelde waarden in aanmerking worden genomen.
+Met de koppeling **[!UICONTROL Advanced parameters...]** kunt u de datum instellen vanaf welke verzamelde waarden in aanmerking worden genomen.
 
 ![](assets/s_ncs_user_itemized_list_alias_normalize.png)
 
-Klik op de **[!UICONTROL Start]** knop om gegevens te wissen.
+Klik op de knop **[!UICONTROL Start]** om gegevens te wissen.
 
 #### Voorvallen van item berekenen {#calculating-entry-occurrences}
 
-Op het **[!UICONTROL Alias]** subtabblad van een gespecificeerde lijst kunt u het aantal exemplaren van een alias weergeven voor alle ingevoerde waarden. Deze informatie is een schatting en wordt in de **[!UICONTROL Hits]** kolom weergegeven.
+Het **[!UICONTROL Alias]** subtabblad van een gespecificeerde lijst kan het aantal exemplaren van een alias onder alle ingevoerde waarden tonen. Deze informatie is een schatting en wordt weergegeven in de kolom **[!UICONTROL Hits]**.
 
 >[!CAUTION]
 >
 >Het berekenen van voorvallen van aliasinggegevens kan lang duren. Daarom is voorzichtigheid geboden wanneer het gebruiken van deze functie.
 
-U kunt de aanraakberekening handmatig uitvoeren via de **[!UICONTROL Cleanse values...]** koppeling. Klik hiertoe op de **[!UICONTROL Advanced parameters...]** koppeling en selecteer de gewenste optie(s).
+U kunt aanraakberekening handmatig uitvoeren via de koppeling **[!UICONTROL Cleanse values...]**. Klik hiertoe op de koppeling **[!UICONTROL Advanced parameters...]** en selecteer de gewenste optie(s).
 
 ![](assets/s_ncs_user_itemized_list_alias_hits.png)
 
@@ -151,14 +151,14 @@ U kunt de aanraakberekening handmatig uitvoeren via de **[!UICONTROL Cleanse val
 
 U kunt ook een specifieke workflow maken, zodat de berekening automatisch gedurende een bepaalde periode wordt uitgevoerd, bijvoorbeeld eenmaal per week.
 
-Om dit te doen, creeer een exemplaar van het **[!UICONTROL Alias cleansing]** werkschema, verander de planner en gebruik de volgende montages in de **[!UICONTROL Enumeration value cleansing]** activiteit:
+Hiertoe maakt u een kopie van de **[!UICONTROL Alias cleansing]**-workflow, wijzigt u de planner en gebruikt u de volgende instellingen in de **[!UICONTROL Enumeration value cleansing]**-activiteit:
 
-* **-updateHits** om het aantal aliashits bij te werken,
-* **-updateHits:full** om alle aliashits opnieuw te berekenen.
+* **-** updateHitsto het aantal aliashits bij te werken,
+* **-updateHits:alle** aliashits opnieuw berekenen.
 
 #### Workflow voor Aliasverwijdering {#alias-cleansing-workflow}
 
-In de workflow voor **Aliaszuivering** wordt het opschonen van opsommingswaarden uitgevoerd. Standaard wordt de transactie dagelijks uitgevoerd.
+Met de **Alias-reinigingsmethode**-workflow worden opsommingswaarden gewist. Standaard wordt de transactie dagelijks uitgevoerd.
 
 Het wordt betreden via de **[!UICONTROL Administration > Production > Technical workflows]** knoop.
 
