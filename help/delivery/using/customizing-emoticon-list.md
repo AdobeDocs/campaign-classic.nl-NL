@@ -19,7 +19,7 @@ ht-degree: 3%
 
 De emoticonlijst die in pop-up wordt getoond wordt bepaald door een opsomming die u toestaat om waarden in een lijst te tonen om de keuzen te beperken die de gebruiker voor een bepaald gebied heeft.
 U kunt de volgorde van de emoticonlijst aanpassen en u kunt ook andere emoticons aan uw lijst toevoegen.
-Er zijn emoticons beschikbaar voor e-mail en druk op deze [pagina](../../delivery/using/defining-the-email-content.md#inserting-emoticons)op om meer.
+De moticons zijn beschikbaar voor e-mail en duw voor meer op dit verwijs naar [pagina](../../delivery/using/defining-the-email-content.md#inserting-emoticons).
 
 ## Een nieuw emoticon toevoegen {#add-new-emoticon}
 
@@ -27,9 +27,9 @@ Er zijn emoticons beschikbaar voor e-mail en druk op deze [pagina](../../deliver
 >
 >De emoticonlijst kan niet meer dan 81 items weergeven.
 
-1. Kies het nieuwe emoticon dat u van deze [pagina](https://unicode.org/emoji/charts/full-emoji-list.html)wilt toevoegen. Let op: deze moet compatibel zijn met de verschillende platforms, zoals de browser en het besturingssysteem.
+1. Kies het nieuwe emoticon dat u uit deze [pagina](https://unicode.org/emoji/charts/full-emoji-list.html) wilt toevoegen. Let op: deze moet compatibel zijn met de verschillende platforms, zoals de browser en het besturingssysteem.
 
-1. Selecteer in het **[!UICONTROL Explorer]** vak **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Enumerations]** en klik op de **[!UICONTROL Emoticon list]** opsomming.
+1. Selecteer **[!UICONTROL Explorer]** > **[!UICONTROL Platform]** > **[!UICONTROL Enumerations]** en klik op de **[!UICONTROL Emoticon list]** opsomming in de doos.**[!UICONTROL Administration]**
 
    >[!NOTE]
    >
@@ -41,7 +41,7 @@ Er zijn emoticons beschikbaar voor e-mail en druk op deze [pagina](../../deliver
 
 1. Vul de velden in:
 
-   * **[!UICONTROL U+]**: Code van je nieuwe emoticon. De lijst met emoticons-codes vindt u op deze [pagina](https://unicode.org/emoji/charts/full-emoji-list.html).
+   * **[!UICONTROL U+]**: Code van je nieuwe emoticon. U kunt de lijst met emoticons&#39; codes vinden in deze [pagina](https://unicode.org/emoji/charts/full-emoji-list.html).
 Om compatibiliteitsproblemen te voorkomen, raden we u aan emoticons te kiezen die worden ondersteund door browsers en op elk besturingssysteem.
 
    * **[!UICONTROL Label]**: Label van uw nieuwe emoticon.
@@ -51,22 +51,22 @@ Om compatibiliteitsproblemen te voorkomen, raden we u aan emoticons te kiezen di
 1. Klik **[!UICONTROL Ok]** dan **[!UICONTROL Save]** wanneer uw configuratie wordt gebeëindigd.
 Uw nieuwe emoticon wordt automatisch in de winkel geplaatst.
 
-1. Als u het element wilt weergeven in het **[!UICONTROL Insert emoticon]** venster van uw leveringen, selecteert u het nieuwe emoticon door erop te dubbelklikken.
+1. Als u het element in het venster **[!UICONTROL Insert emoticon]** van uw leveringen wilt weergeven, selecteert u het nieuwe emoticon door erop te dubbelklikken.
 
-1. Kies in de **[!UICONTROL Display order]** vervolgkeuzelijst in welke volgorde het nieuwe emoticon wordt weergegeven. Door een reeds toegewezen weergavevolgorde te selecteren, wordt het bestaande emoticon automatisch naar de winkel verplaatst.
+1. Kies in **[!UICONTROL Display order]** drop-down waarin orde uw nieuw emoticon zal worden getoond. Door een reeds toegewezen weergavevolgorde te selecteren, wordt het bestaande emoticon automatisch naar de winkel verplaatst.
 
    <br>In dit voorbeeld hebben we de weergavevolgorde 61 gekozen. Dit houdt in dat als een item al deze volgorde had, dit item automatisch naar de winkel wordt verplaatst en dat onze nieuwe vermelding in de opsommingslijst wordt geplaatst.
 
    ![](assets/emoticon_2.png)
 
-1. Uw nieuwe emoticon is nu toegevoegd aan de **[!UICONTROL Insert emoticon list]** opsomming uit de doos. U kunt het **[!UICONTROL Display order]** op elk gewenst moment wijzigen of naar de winkel verplaatsen als u het niet meer nodig hebt.
+1. Uw nieuwe emoticon is nu toegevoegd aan **[!UICONTROL Insert emoticon list]** uit-van-de-doosopsomming. U kunt zijn **[!UICONTROL Display order]** op elk ogenblik veranderen of het verplaatsen naar de opslag als u het niet meer nodig hebt.
 
-1. Als u rekening wilt houden met uw wijzigingen, verbreekt u de verbinding en maakt u opnieuw verbinding met Adobe Campaign Classic. Als het nieuwe emoticon nog steeds niet in het pop- **[!UICONTROL Insert emoticon]** upvenster wordt weergegeven, moet u mogelijk de cache wissen. Raadpleeg deze [sectie](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear) voor meer informatie.
+1. Als u rekening wilt houden met uw wijzigingen, verbreekt u de verbinding en maakt u opnieuw verbinding met Adobe Campaign Classic. Als uw nieuwe emoticon nog steeds niet in **[!UICONTROL Insert emoticon]** pop-up venster verschijnt, zou u uw geheime voorgeheugen kunnen moeten ontruimen. Raadpleeg deze [sectie](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear) voor meer informatie.
 
-1. Uw nieuwe emoticon kunt u nu vinden in uw leveringen in het pop- **[!UICONTROL Insert emoticon]** upvenster op de 61ste positie zoals die in de vorige stappen wordt gevormd. Raadpleeg deze [pagina](../../delivery/using/defining-the-email-content.md#inserting-emoticons)voor meer informatie over het gebruik van emoticons in uw leveringen.
+1. Uw nieuwe emoticon kan nu in uw leveringen in **[!UICONTROL Insert emoticon]** pop-up venster in de 61ste positie zoals gevormd in de vorige stappen worden gevonden. Voor meer informatie over hoe te om emoticons in uw leveringen te gebruiken, verwijs naar dit [pagina](../../delivery/using/defining-the-email-content.md#inserting-emoticons).
 
    ![](assets/emoticon_4.png)
 
-1. Als de volgende emoticons in uw pop- **[!UICONTROL Insert emoticon]** up venster verschijnen, betekent dit dat zij niet correct werden gevormd. Controleer of uw **[!UICONTROL U+]** code of **[!UICONTROL Display order]** de code correct is in de **[!UICONTROL Emoticon list]**.
+1. Als de volgende emoticons in uw **[!UICONTROL Insert emoticon]** pop-up venster verschijnen, betekent dit dat zij niet correct werden gevormd. Controleer of uw **[!UICONTROL U+]**-code of **[!UICONTROL Display order]** correct is in **[!UICONTROL Emoticon list]**.
 
    ![](assets/emoticon_6.png)
