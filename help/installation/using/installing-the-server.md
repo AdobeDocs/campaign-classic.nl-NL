@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # De server installeren{#installing-the-server}
 
-## Het installatieprogramma uitvoeren {#executing-the-installation-program}
+## Installatieprogramma {#executing-the-installation-program} uitvoeren
 
 Installeer Adobe Campaign 32-bits voor een Windows 32-bits platform. Installeer Adobe Campaign 64-bits voor een Windows 64-bits platform.
 
@@ -38,7 +38,7 @@ De installatiestappen voor de Adobe Campaign-server zijn als volgt:
    * **[!UICONTROL Installation of a client]** : Installatie van de vereiste componenten voor de Adobe Campaign-client.
    * **[!UICONTROL Custom installation]** : De gebruiker kiest de te installeren elementen.
 
-   Selecteer **Installatie van een toepassingsserver** en voer de volgende stappen uit:
+   Selecteer **Installatie van een toepassingsserver** en doorloop de verschillende stappen zoals hieronder getoond:
 
    ![](assets/s_ncs_install_installer_02.png)
 
@@ -62,9 +62,9 @@ De installatiestappen voor de Adobe Campaign-server zijn als volgt:
    >
    >Wanneer de serverinstallatie is voltooid, moet de server opnieuw worden opgestart om mogelijke netwerkproblemen te voorkomen.
 
-   Als de installatie is voltooid, start u Adobe Campaign om de configuratiebestanden te maken. Zie [Eerste start-up van de server](#first-start-up-of-the-server).
+   Als de installatie is voltooid, start u Adobe Campaign om de configuratiebestanden te maken. Zie [Eerste start van de server](#first-start-up-of-the-server).
 
-## Samenvattende installatietests {#summary-installation-testing}
+## Samenvattende installatietest {#summary-installation-testing}
 
 U kunt de eerste installatie testen met de volgende opdracht:
 
@@ -80,7 +80,7 @@ No task
 
 ## Eerste start van de server {#first-start-up-of-the-server}
 
-Nadat de installatietest is voltooid, opent u een opdrachtregel via het **[!UICONTROL Start > Programs > Adobe Campaign]** menu en voert u de volgende opdracht in:
+Nadat de installatietest is voltooid, opent u een opdrachtregel via het menu **[!UICONTROL Start > Programs > Adobe Campaign]** en voert u de volgende opdracht in:
 
 ```
 nlserver web
@@ -137,11 +137,11 @@ De volgende informatie wordt weergegeven:
 
 ## Wachtwoord voor de interne id {#password-for-the-internal-identifier}
 
-De Adobe Campaign-server definieert een technische aanmelding met de naam **internal** die alle rechten in alle gevallen heeft. Vlak na de installatie heeft de aanmelding geen wachtwoord. Het is verplicht om er een te definiëren.
+De Adobe Campaign-server definieert een technische aanmelding met de naam **internal** die alle rechten heeft op alle instanties. Vlak na de installatie heeft de aanmelding geen wachtwoord. Het is verplicht om er een te definiëren.
 
-Zie de sectie [Interne id](../../installation/using/campaign-server-configuration.md#internal-identifier).
+Zie sectie [Interne id](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
-## Adobe Campaign-services starten {#starting-adobe-campaign-services}
+## Adobe Campaign-services {#starting-adobe-campaign-services} starten
 
 Om de diensten van Adobe Campaign te beginnen, kunt u de de dienstmanager gebruiken of het volgende bij de bevellijn (met de aangewezen rechten) ingaan:
 
@@ -155,7 +155,7 @@ Als u de processen van Adobe Campaign later moet tegenhouden, gebruik het bevel:
 net stop nlserver6
 ```
 
-## LibreOffice installeren {#installing-libreoffice}
+## LibreOffice {#installing-libreoffice} installeren
 
 Download LibreOffice, bijvoorbeeld via [https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/) en volg de gebruikelijke installatiestappen.
 
