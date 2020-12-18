@@ -26,18 +26,18 @@ Met simulatie kunt u het effect van leveringen controleren en vergelijken.
 >[!NOTE]
 >
 >Leveringen die in de testmodus worden voorbereid, hebben geen invloed op elkaar, bijvoorbeeld wanneer een campagne wordt beoordeeld in gedistribueerde marketing, of zolang de leveringen niet in de voorlopige kalender zijn gepland.\
->Dit betekent dat druk- en capaciteitsregels alleen worden toegepast op leveringen in **[!UICONTROL Target estimation and message personalization]** modus. Leveringen in **[!UICONTROL Estimation and approval of the provisional target]** en in de **[!UICONTROL Target evaluation]** modus worden niet in aanmerking genomen.\
->De leveringswijze wordt gekozen op het **[!UICONTROL Typology]** sublusje van de leveringseigenschappen.
+>Dit betekent dat druk- en capaciteitsregels alleen worden toegepast op leveringen in **[!UICONTROL Target estimation and message personalization]**-modus. Leveringen in **[!UICONTROL Estimation and approval of the provisional target]** en in **[!UICONTROL Target evaluation]** modus worden niet in aanmerking genomen.\
+>De leveringswijze wordt gekozen op **[!UICONTROL Typology]** sublusje van de leveringseigenschappen.
 
 ![](assets/simu_campaign_select_delivery_mode.png)
 
 ## Een simulatie instellen {#setting-up-a-simulation}
 
-### Een simulatie maken {#creating-a-simulation}
+### Een simulatie {#creating-a-simulation} maken
 
 Voer de volgende stappen uit om een simulatie te maken:
 
-1. Ga naar het **[!UICONTROL Campaigns]** universum, klik de **[!UICONTROL More]** verbinding binnen de **[!UICONTROL Create]** sectie en selecteer de **[!UICONTROL Simulation]** optie.
+1. Ga naar het **[!UICONTROL Campaigns]** universum, klik **[!UICONTROL More]** verbinding binnen **[!UICONTROL Create]** sectie en selecteer **[!UICONTROL Simulation]** optie.
 
    ![](assets/simu_campaign_opti_01.png)
 
@@ -45,11 +45,11 @@ Voer de volgende stappen uit om een simulatie te maken:
 
    ![](assets/simu_campaign_opti_02.png)
 
-1. Klik op het **[!UICONTROL Edit]** tabblad om het te configureren.
+1. Klik op het tabblad **[!UICONTROL Edit]** om het te configureren.
 
    ![](assets/simu_campaign_opti_edit.png)
 
-1. Geef op het **[!UICONTROL Scope]** tabblad de leveringen op die u voor deze simulatie wilt gebruiken. Klik hiertoe op de **[!UICONTROL Add]** knop en geef de selectiemodus op waarmee u rekening wilt houden.
+1. Geef op het tabblad **[!UICONTROL Scope]** de leveringen op die u voor deze simulatie wilt overwegen. Om dit te doen, klik **[!UICONTROL Add]** knoop en specificeer de wijze van de leveringsselectie om rekening mee te houden.
 
    ![](assets/simu_campaign_opti_edit_scope.png)
 
@@ -57,7 +57,7 @@ Voer de volgende stappen uit om een simulatie te maken:
 
    >[!NOTE]
    >
-   >Als u leveringen selecteert via een plan, programma of campagne, kan Adobe Campaign de lijst met leveringen automatisch vernieuwen om hiermee rekening te houden wanneer een simulatie wordt gestart. Schakel de **[!UICONTROL Refresh the selection of deliveries each time the simulation is started]** optie in om dit te doen.
+   >Als u leveringen selecteert via een plan, programma of campagne, kan Adobe Campaign de lijst met leveringen automatisch vernieuwen om hiermee rekening te houden wanneer een simulatie wordt gestart. Om dit te doen, controleer de **[!UICONTROL Refresh the selection of deliveries each time the simulation is started]** optie.
    >  
    >Als u dit niet doet, zullen om het even welke leveringen die niet beschikbaar in het plan, het programma, of de campagne zijn wanneer de simulatie wordt gecreeerd niet in aanmerking worden genomen: leveringen die later worden toegevoegd, worden genegeerd.
 
@@ -67,21 +67,21 @@ Voer de volgende stappen uit om een simulatie te maken:
 
    ![](assets/simu_campaign_opti_edit_scope_select.png)
 
-   Click **[!UICONTROL Finish]** to approve the selection.
+   Klik **[!UICONTROL Finish]** om de selectie goed te keuren.
 
    U kunt geselecteerde leveringen en leveringen die bij plannen, programma&#39;s of campagnes horen, handmatig combineren.
 
    ![](assets/simu_campaign_opti_edit_scope_save.png)
 
-   Indien nodig kunt u een dynamische voorwaarde gebruiken via de **[!UICONTROL Edit the dynamic condition...]** koppeling.
+   Indien nodig, kunt u een dynamische voorwaarde via de **[!UICONTROL Edit the dynamic condition...]** verbinding gebruiken.
 
    Klik **[!UICONTROL Save]** om deze configuratie goed te keuren.
 
    >[!NOTE]
    >
-   >Alleen leveringen waarvan het doel is berekend, worden in aanmerking genomen bij de berekening van de simulaties (statussen: **Klaar** of **klaar voor levering**).
+   >Alleen leveringen waarvan het doel is berekend, worden in aanmerking genomen bij de berekening van de simulaties (statussen: **Doel gereed** of **Klaar om te leveren**).
 
-1. Selecteer op het **[!UICONTROL Calculations]** tabblad bijvoorbeeld een analysedimensie, zoals het ontvangende schema.
+1. Selecteer op het tabblad **[!UICONTROL Calculations]** bijvoorbeeld een analysedimensie, zoals het ontvangende schema.
 
    ![](assets/simu_campaign_opti_dimension.png)
 
@@ -91,15 +91,15 @@ Voer de volgende stappen uit om een simulatie te maken:
 
 ### Instellingen voor uitvoering {#execution-settings}
 
-Op het **[!UICONTROL General]** tabblad van de simulatie kunt u uitvoeringsinstellingen invoeren:
+Op het tabblad **[!UICONTROL General]** van de simulatie kunt u uitvoeringsinstellingen invoeren:
 
-* De **[!UICONTROL Schedule execution for down-time]** optie versleept de simulatielancering aan een minder drukke tijdspanne, die op het gekozen niveau van prioriteit wordt gebaseerd. De simulaties gebruiken significante gegevensbestandmiddelen, dat is waarom de niet-urgente simulaties zouden moeten worden gepland om bij nacht, bijvoorbeeld te lopen.
-* Het niveau **[!UICONTROL Priority]** is het niveau dat op de simulatie wordt toegepast om zijn teweegbrengen uit te stellen.
-* **[!UICONTROL Save SQL queries in the log]**. Met SQL-logboeken kunt u een simulatie diagnosticeren als deze eindigt met fouten. Ze kunnen u ook helpen te achterhalen waarom een simulatie te langzaam is. Deze berichten worden weergegeven na de simulatie op het **[!UICONTROL SQL logs]** subtabblad van het **[!UICONTROL Audit]** tabblad.
+* Met de optie **[!UICONTROL Schedule execution for down-time]** wordt de simulatie-opstart uitgesteld tot een minder drukke tijdsperiode, op basis van het gekozen prioriteitsniveau. De simulaties gebruiken significante gegevensbestandmiddelen, dat is waarom de niet-urgente simulaties zouden moeten worden gepland om bij nacht, bijvoorbeeld te lopen.
+* **[!UICONTROL Priority]** is het niveau dat op de simulatie wordt toegepast om zijn teweegbrengen uit te stellen.
+* **[!UICONTROL Save SQL queries in the log]**. Met SQL-logboeken kunt u een simulatie diagnosticeren als deze eindigt met fouten. Ze kunnen u ook helpen te achterhalen waarom een simulatie te langzaam is. Deze berichten worden weergegeven na de simulatie op het subtabblad **[!UICONTROL SQL logs]** van het tabblad **[!UICONTROL Audit]**.
 
 ## Een simulatie uitvoeren {#executing-a-simulation}
 
-### Een simulatie starten {#starting-a-simulation}
+### Een simulatie {#starting-a-simulation} starten
 
 Zodra het simulatiewerkingsgebied wordt bepaald, kunt u het uitvoeren.
 
@@ -107,45 +107,45 @@ Open hiertoe het dashboard voor de simulatie en klik op **[!UICONTROL Start simu
 
 ![](assets/simu_campaign_opti_start.png)
 
-Als de uitvoering is voltooid, opent u de simulatie en klikt u op het **[!UICONTROL Results]** tabblad om de doelen weer te geven die voor elke levering zijn berekend.
+Zodra de uitvoering volledig is, open de simulatie en klik **[!UICONTROL Results]** lusje om de doelstellingen te bekijken die voor elke levering worden berekend.
 
 ![](assets/simu_campaign_opti_results.png)
 
-1. Het **[!UICONTROL Deliveries]** subtabblad bevat een lijst met alle leveringen die in aanmerking worden genomen door de simulatie. Er zijn twee punten:
+1. Het subtabblad **[!UICONTROL Deliveries]** bevat een lijst met alle leveringen waarmee rekening is gehouden in de simulatie. Er zijn twee punten:
 
-   * Het **[!UICONTROL Initial count]** is het streefcijfer zoals het werd berekend bij de schatting van de levering.
-   * Het **[!UICONTROL Final count]** is het aantal ontvangers dat na simulatie wordt geteld.
+   * De **[!UICONTROL Initial count]** is het doel zoals het tijdens zijn raming in de levering werd berekend.
+   * **[!UICONTROL Final count]** is het aantal ontvangers geteld na simulatie.
 
       Het verschil tussen aanvankelijke en definitieve tellingen wijst op de toepassing van de diverse regels of de filters die voorafgaand aan de simulatie worden gevormd.
 
-      Bewerk het **[!UICONTROL Exclusions]** subtabblad voor meer informatie over deze berekening.
+      Als u meer wilt weten over deze berekening, bewerkt u het subtabblad **[!UICONTROL Exclusions]**.
 
-1. In het **[!UICONTROL Exclusions]** subtabblad kunt u de onderbreking van de uitsluiting weergeven.
+1. Met het subtabblad **[!UICONTROL Exclusions]** kunt u de uitsplitsing naar uitsluiting weergeven.
 
    ![](assets/simu_campaign_opti_14.png)
 
 1. De **[!UICONTROL Alerts]** subtab groepeert alle waarschuwingsberichten die tijdens de simulatie worden gegenereerd. Waarschuwingsberichten kunnen worden verzonden in geval van capaciteitsoverbelasting (als het aantal beoogde ontvangers de ingestelde capaciteit overschrijdt, bijvoorbeeld).
-1. Met het **[!UICONTROL Exploration of the exclusions]** subtabblad kunt u een tabel voor resultaatanalyse maken. De gebruiker moet variabelen in de abscis/ordinates-assen aangeven.
+1. Met het subtabblad **[!UICONTROL Exploration of the exclusions]** kunt u een tabel voor resultaatanalyse maken. De gebruiker moet variabelen in de abscis/ordinates-assen aangeven.
 
-   Voor een voorbeeld van de verwezenlijking van de analystabel, verwijs naar het eind van het [Verkennen van resultaten](#exploring-results).
+   Voor een voorbeeld van de verwezenlijking van de analystabel, verwijs naar het eind van [het Verkennen van resultaten](#exploring-results).
 
 ### Resultaten weergeven {#viewing-results}
 
 #### Audit {#audit}
 
-Op het **[!UICONTROL Audit]** tabblad kunt u de uitvoering van de simulatie controleren. Het **[!UICONTROL SQL Logs]** subtabblad is handig voor ervaren gebruikers. Er worden uitvoerlogbestanden in SQL-indeling weergegeven. Deze logbestanden worden alleen weergegeven als de **[!UICONTROL Save SQL queries in the log]** optie vóór de simulatie is geselecteerd op het **[!UICONTROL General]** tabblad.
+Met het tabblad **[!UICONTROL Audit]** kunt u de uitvoering van de simulatie controleren. Het subtabblad **[!UICONTROL SQL Logs]** is handig voor ervaren gebruikers. Er worden uitvoerlogbestanden in SQL-indeling weergegeven. Deze logboeken worden alleen weergegeven als de optie **[!UICONTROL Save SQL queries in the log]** is geselecteerd op het tabblad **[!UICONTROL General]** voordat de simulatie wordt uitgevoerd.
 
 ![](assets/simu_campaign_opti_11.png)
 
 #### Resultaten verkennen {#exploring-results}
 
-Met het **[!UICONTROL Exploration of the exclusions]** subtabblad kunt u de gegevens analyseren die het resultaat zijn van een simulatie.
+Met het subtabblad **[!UICONTROL Exploration of the exclusions]** kunt u de gegevens analyseren die het resultaat zijn van een simulatie.
 
-De beschrijvende analyse wordt in [deze paragraaf](../../reporting/using/about-adobe-campaign-reporting-tools.md)beschreven.
+Beschrijvende analyse wordt beschreven in [deze sectie](../../reporting/using/about-adobe-campaign-reporting-tools.md).
 
 ## Resultaten van een simulatie {#results-of-a-simulation}
 
-De indicatoren op de tabbladen **[!UICONTROL Log]** en **[!UICONTROL Results]** tabbladen bieden een eerste overzicht van de simulatieresultaten. Open het **[!UICONTROL Reports]** tabblad voor een gedetailleerdere weergave van de resultaten.
+De indicatoren in **[!UICONTROL Log]** en **[!UICONTROL Results]** lusjes verstrekken een eerste overzicht van simulatieresultaten. Open het tabblad **[!UICONTROL Reports]** voor een gedetailleerdere weergave van de resultaten.
 
 ### Rapporten {#reports}
 
@@ -161,11 +161,11 @@ De volgende rapporten worden standaard geleverd:
 >
 >U kunt nieuwe rapporten creëren en hen toevoegen aan aangeboden degenen. Raadpleeg [deze sectie](../../reporting/using/about-adobe-campaign-reporting-tools.md) voor meer informatie.
 
-Klik op de **[!UICONTROL Reports]** koppeling van de doelsimulatie via het dashboard om rapporten te openen.
+Klik op de koppeling **[!UICONTROL Reports]** van de doelsimulatie via het dashboard om rapporten te openen.
 
 ![](assets/campaign_opt_reporting_edit_from_board.png)
 
-U kunt rapporten ook uitgeven gebruikend de **[!UICONTROL Reports]** verbinding die van het simulatiedashboard toegankelijk is.
+U kunt rapporten ook uitgeven gebruikend de **[!UICONTROL Reports]** verbinding toegankelijk van het simulatiedashboard.
 
 ### Simulaties vergelijken {#comparing-simulations-}
 
@@ -175,33 +175,33 @@ Om resultaten te vergelijken, moet u rapporten gebruiken. In Adobe Campaign kunt
 
 **Voorbeeld:**
 
-1. Maak een simulatie op een levering waarop typologie **A** wordt toegepast.
-1. Bewerk op het **[!UICONTROL Reports]** tabblad een van de beschikbare rapporten, zoals **[!UICONTROL Detail of simulation exclusions]** bijvoorbeeld.
+1. Creeer een simulatie op een levering welke typologie **A** wordt toegepast op.
+1. Bewerk op het tabblad **[!UICONTROL Reports]** een van de beschikbare rapporten, zoals bijvoorbeeld **[!UICONTROL Detail of simulation exclusions]**.
 1. Klik in de rechterbovensectie van het rapport op het pictogram om een nieuwe geschiedenis te maken.
 
    ![](assets/campaign_opt_reporting_create_hist.png)
 
-1. Sluit de simulatie en wijzig de configuratie van typologie **A**.
+1. Sluit de simulatie en verander de configuratie van typologie **A**.
 1. Voer opnieuw de simulatie uit en vergelijk het resultaat met dat in het rapport wordt getoond waarvoor een geschiedenis werd gecreeerd.
 
    ![](assets/campaign_opt_reporting_edit_hist.png)
 
    U kunt zoveel rapporthistorie opslaan als nodig is.
 
-### Assen rapporteren {#reporting-axes}
+### Assen {#reporting-axes} rapporteren
 
-Op het **[!UICONTROL Calculations]** tabblad kunt u rapportassen voor het doel definiëren. Deze assen worden tijdens de resultaatanalyse gebruikt (zie [Resultaten](#exploring-results)verkennen).
+Met het tabblad **[!UICONTROL Calculations]** kunt u rapportassen op het doel definiëren. Deze assen worden tijdens resultaatanalyse gebruikt (zie [Resultaten verkennen](#exploring-results)).
 
 >[!NOTE]
 >
 >Wij adviseren bepalende berekeningsassen in de simulatiesjablonen eerder dan individueel voor elke simulatie.\
->Simulatiesjablonen worden opgeslagen in het **[!UICONTROL Resources > Templates > Simulation templates]** knooppunt van de Adobe Campaign-structuur.
+>Simulatiesjablonen worden opgeslagen in het knooppunt **[!UICONTROL Resources > Templates > Simulation templates]** van de Adobe Campaign-structuur.
 
 **Voorbeeld:**
 
 In het onderstaande voorbeeld willen we een extra rapportas maken op basis van de status van de ontvangers (&quot;Klant&quot;, &quot;Vooruitziend&quot; of geen).
 
-1. Als u een rapportas wilt definiëren, selecteert u de tabel met de gegevens die in het **[!UICONTROL Analysis dimension]** veld moeten worden verwerkt. Deze informatie is verplicht.
+1. Als u een rapportas wilt definiëren, selecteert u de tabel met de gegevens die in het veld **[!UICONTROL Analysis dimension]** moeten worden verwerkt. Deze informatie is verplicht.
 1. Hier, willen wij het gebied van het Segment van de ontvankelijke lijst selecteren.
 
    ![](assets/simu_campaign_opti_09.png)
@@ -220,7 +220,7 @@ In het onderstaande voorbeeld willen we een extra rapportas maken op basis van d
       >
       >Voor het automatisch opslaan van deze tabellen is een aanzienlijke opslagcapaciteit vereist: zorg ervoor dat de database groot genoeg is.
 
-Wanneer de simulatieresultaten worden weergegeven, wordt de informatie over de geselecteerde expressie weergegeven op het **[!UICONTROL Overlaps]** subtabblad.
+Wanneer de simulatieresultaten worden weergegeven, wordt de informatie over de geselecteerde expressie weergegeven op het subtabblad **[!UICONTROL Overlaps]**.
 
 De doeloverlappingen van de levering geven de beoogde ontvangers aan in ten minste twee leveringen van een simulatie.
 
@@ -228,6 +228,6 @@ De doeloverlappingen van de levering geven de beoogde ontvangers aan in ten mins
 
 >[!NOTE]
 >
->Dit subtabblad wordt alleen weergegeven als de **[!UICONTROL Generate target recovery statistics]** optie is ingeschakeld.
+>Dit subtabblad wordt alleen weergegeven als de optie **[!UICONTROL Generate target recovery statistics]** is ingeschakeld.
 
-De informatie over rapportageassen kan worden verwerkt in uitsluitingsanalysegerelateerde rapporten die op het **[!UICONTROL Exploring exclusions]** subtabblad worden opgesteld. For more on this, refer to [Exploring results](#exploring-results).
+De informatie over rapportageassen kan worden verwerkt in uitsluitingsanalyserapporten die worden gemaakt op het subtabblad **[!UICONTROL Exploring exclusions]**. Raadpleeg [Resultaten verkennen](#exploring-results) voor meer informatie.
