@@ -31,7 +31,7 @@ Adobe Campaign biedt u twee sets vooraf verpakte architecturale opties voor het 
 
 ![](assets/architectural_options_diagram.png)
 
-## Subsidiabele aanvragen {#eligible-applications}
+## In aanmerking komende toepassingen {#eligible-applications}
 
 De opties voor Power Booster en Power Cluster kunnen door de volgende toepassingen worden gebruikt:
 
@@ -65,26 +65,26 @@ De opties voor Power Booster en Power Cluster kunnen door de volgende toepassing
    <td> Beschikbaarheid<br /> </td> 
    <td> Dat van de primaire database<br /> </td> 
    <td> 24/7 behalve onderhoudsvensters en downtimes voor de uitvoeringsinstantie<br /> </td> 
-   <td> 24-07-365 service mogelijk<br /> </td> 
+   <td> 24-7-365 service mogelijk<br /> </td> 
   </tr> 
   <tr> 
    <td> Beveiliging<br /> </td> 
-   <td> Gegevensmarkt is mogelijk toegankelijk via het openbare internet<br /> </td> 
+   <td> De SmartData is mogelijk toegankelijk via het openbare internet<br /> </td> 
    <td> Gegevensmarkt is geïsoleerd van frontale, internetgerichte componenten<br /> </td> 
    <td> Gegevensmarkt is geïsoleerd van frontale, internetgerichte componenten<br /> </td> 
   </tr> 
   <tr> 
    <td> Implementatiesjabloon<br /> </td> 
-   <td> Alles op één site (kan zich op locatie bevinden of in de cloud)<br /> </td> 
+   <td> Alles op één site (bevindt zich op locatie of in de cloud)<br /> </td> 
    <td> Marketing op locatie met uitvoering in de cloud mogelijk<br /> </td> 
-   <td> marketing op locatie met uitvoering in de cloud; uitvoering in verschillende geo ' s mogelijk<br /> </td> 
+   <td> marketing op locatie met uitvoering in de cloud; uitvoering in verschillende geo's mogelijk<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Aanbevelingen {#recommendations}
 
-* Een uitvoeringsinstantie moet aan de dienst worden gewijd. U kunt geen pakket installeren voor een service waarop u zich niet hebt geabonneerd. Als u bijvoorbeeld een abonnement neemt op de optie **Power Booster** voor de service **Message Center** , mag u het **[!UICONTROL Execution of transactional messages]** pakket alleen op de toegewezen uitvoeringsinstantie installeren. Controleer hiervoor uw licentieovereenkomst.
-* Aangezien specifieke instanties (of clusters) Adobe Campaign-instanties zijn, zijn de aanbevelingen hetzelfde als voor een hoofdinstantie. For more on this, refer to [this document](../../production/using/foreword.md).
+* Een uitvoeringsinstantie moet aan de dienst worden gewijd. U kunt geen pakket installeren voor een service waarop u zich niet hebt geabonneerd. Als u zich bijvoorbeeld abonneert op de optie **Power Booster** voor de service **Message Center**, mag u het **[!UICONTROL Execution of transactional messages]**-pakket alleen op de toegewezen uitvoeringsinstantie installeren. Controleer hiervoor uw licentieovereenkomst.
+* Aangezien specifieke instanties (of clusters) Adobe Campaign-instanties zijn, zijn de aanbevelingen hetzelfde als voor een hoofdinstantie. Raadpleeg [dit document](../../production/using/foreword.md) voor meer informatie hierover.
 * Neem contact op met Adobe Campaign Professional Services om de instantie correct te configureren vanuit het gezichtspunt van database-/hardwarecomponenten.
 
