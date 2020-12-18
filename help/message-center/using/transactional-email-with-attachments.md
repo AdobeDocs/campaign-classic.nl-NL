@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Het doel van dit gebruiksgeval is het toevoegen van e-mailbijlagen tijdens de vlucht aan uitgaande verzendingen.
 
-## Belangrijkste stappen {#key-steps}
+## Belangrijke stappen {#key-steps}
 
 In dit scenario leert u hoe u transactie-e-mails met individuele en/of gepersonaliseerde bijlagen kunt verzenden. De bijlagen worden niet vooraf geüpload naar de Transactieberichten-server: in plaats daarvan worden ze tijdens de vlucht gegenereerd .
 
@@ -41,7 +41,7 @@ In dit scenario worden de bijlagen niet vooraf gemaakt, maar direct toegevoegd a
 
 >[!NOTE]
 >
->Om prestatieproblemen te voorkomen moet elke afbeeldingsgrootte standaard niet groter zijn dan 100.000 bytes als u direct gedownloade afbeeldingen van een gepersonaliseerde URL opneemt als bijlage. Deze aanbevolen drempelwaarde kan worden geconfigureerd [in de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
+>Om prestatieproblemen te voorkomen moet elke afbeeldingsgrootte standaard niet groter zijn dan 100.000 bytes als u direct gedownloade afbeeldingen van een gepersonaliseerde URL opneemt als bijlage. Deze geadviseerde drempel kan van [de lijst van Campaign Classic opties](../../installation/using/configuring-campaign-options.md#delivery) worden gevormd.
 
 ## Aanbevelingen {#important-notes}
 
@@ -54,7 +54,7 @@ Lees de onderstaande richtlijnen zorgvuldig door voordat u dit scenario implemen
 
 >[!NOTE]
 >
->Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De aanbevolen drempelwaarde kan worden geconfigureerd [in de lijst met Campaign Classic-opties](../../installation/using/configuring-campaign-options.md#delivery).
+>Om prestatieproblemen te voorkomen, wordt aanbevolen niet meer dan één bijlage per e-mail op te nemen. De geadviseerde drempel kan van [de lijst van Campaign Classic opties](../../installation/using/configuring-campaign-options.md#delivery) worden gevormd.
 
 ## Implementatie {#implementation}
 
@@ -70,11 +70,11 @@ Voer de onderstaande stappen uit om een e-mailbijlage direct toe te voegen aan e
 
 1. U kunt e-mailberichten verzenden via een SOAP-berichttrigger. In de SOAP-aanroep is er een URL-parameter (bijlageURL).
 
-   Zie [Gebeurtenisbeschrijving](../../message-center/using/event-description.md)voor meer informatie over SOAP-aanvragen.
+   Zie [Gebeurtenisbeschrijving](../../message-center/using/event-description.md) voor meer informatie over SOAP-aanvragen.
 
-1. Klik tijdens het ontwerpen van uw e-mail op **[!UICONTROL Attachment]**.
+1. Klik **[!UICONTROL Attachment]** bij het ontwerpen van uw e-mail.
 
-1. Voer in het **[!UICONTROL Attachment definition]** scherm de parameter SOAP-bijlage in:
+1. Voer in het scherm **[!UICONTROL Attachment definition]** de parameter SOAP-bijlage in:
 
    ```
    <%= rtEvent.ctx.attachementUrl %>
