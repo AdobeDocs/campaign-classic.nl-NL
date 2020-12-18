@@ -45,10 +45,10 @@ Voorbeeld van een JavaScript HTML-opmaaksjabloon op basis van het schema &quot;c
 
 De verschillende JavaScript-instructies worden in de volgende vorm weergegeven:
 
-* Velden samenvoegen: Hiermee geeft u de inhoud van de gegevens weer met de **`<%= <source> %>`** syntaxis waarin het bronveld `<source>`staat van de gegevens die moeten worden weergegeven.
+* Velden samenvoegen: geeft de inhoud van de gegevens weer met de syntaxis **`<%= <source> %>`**, waarbij `<source>`het bronveld is van de gegevens die moeten worden weergegeven.
 * Instructieblokken: voert een reeks JavaScript-instructies uit die tussen de tags &lt;% en %> staan.
 
-Het **inhoudsobject** vertegenwoordigt het hoofdelement van het XML-invoerdocument.
+Het **content**-object vertegenwoordigt het hoofdelement van het XML-invoerdocument.
 
 In ons voorbeeld geeft de volgende regel de inhoud van de naam van het naamboek weer:
 
@@ -69,15 +69,15 @@ De kenmerken en elementen van de inhoud worden weergegeven als JavaScript-object
 **Voorbeeld**:
 
 * **inhoud.@name**: Hiermee wordt de waarde van het kenmerk &quot;name&quot; van het hoofdelement opgehaald
-* **inhoud.@`['name']`**: identiek aan de **inhoud.@name** syntaxis
-* **content.chapter.length**: retourneert het aantal elementen in het `<chapter` verzamelingselement
+* **inhoud.@`['name']`**: gelijk aan de **inhoud.@name** syntaxis
+* **content.chapter.length**: retourneert het aantal elementen in het  `<chapter` verzamelingselement
 * **content.chapter`[0]`.@name**: wint de naam van het eerste `<chapter>` element terug
-* **hoofdstuk.name()**: retourneert de naam van het `<chapter>` element
-* **hoofdstuk.parent().name()**: retourneert de naam van het bovenliggende element van `<chapter>`
+* **hoofdstuk.name()**: retourneert de naam van het  `<chapter>` element
+* **hoofdstuk.parent().name()**: retourneert de naam van het bovenliggende element van  `<chapter>`
 
 >[!CAUTION]
 >
->Omdat het &#39;-&#39;-teken is gereserveerd in de JavaScript-taal, moet het herstel van de waarde van elk kenmerk of element dat dit teken bevat, worden uitgevoerd via de `['<field>']` syntaxis.
+>Omdat het teken &#39;-&#39; is gereserveerd in de JavaScript-taal, moet het herstel van de waarde van elk kenmerk of element dat dit teken bevat, worden uitgevoerd via de syntaxis `['<field>']`.
 >
 >Bijvoorbeeld: `content.@['offer-id']`.
 
@@ -157,11 +157,11 @@ Voorbeelden:
    <%= recipient.@lastName %>
    ```
 
-### Een JavaScript-sjabloon opnemen {#including-a-javascript-template}
+### Een JavaScript-sjabloon {#including-a-javascript-template} opnemen
 
-U kunt een bibliotheek van functies of variabelen voor later gebruik vormen. Hiertoe importeert u de JavaScript-sjabloon met de functie **eval** . Hiermee kunt u contexten verrijken met extra functies die zijn gedeclareerd in andere JavaScript-sjablonen.
+U kunt een bibliotheek van functies of variabelen voor later gebruik vormen. Hiertoe importeert u de JavaScript-sjabloon met de functie **eval**. Hiermee kunt u contexten verrijken met extra functies die zijn gedeclareerd in andere JavaScript-sjablonen.
 
-**Voorbeeld**: het invoeren van het **common.jsp** malplaatje.
+**Voorbeeld**: het invoeren van  **common.** jsptemplate.
 
 ```
 <% eval(xtk.javascript.get("cus:common.js").data);  %>
@@ -177,7 +177,7 @@ In de bewerkingszone kunt u de inhoud van de JavaScript-sjabloon vullen:
 >
 >Het bijbehorende schema van het gegevensmodel moet worden ingevuld voor de initialisatie van JavaScript-objecten.
 
-Als u de voorvertoning van het uitvoerdocument wilt genereren, selecteert u op elk gewenst moment een inhoud en een uitvoerindeling (HTML, Tekst, XML) en klikt u op **[!UICONTROL Generate]** :
+Als u de voorvertoning van het uitvoerdocument wilt genereren, selecteert u op elk gewenst moment een inhoud en een uitvoerindeling (HTML, Tekst, XML) en klikt u op **[!UICONTROL Generate]**:
 
 ![](assets/d_ncs_content_form17.png)
 
@@ -232,7 +232,7 @@ In dit voorbeeld worden de volgende stappen uitgevoerd:
    </srcSchema>
    ```
 
-1. Het gekoppelde **[!UICONTROL Content management]** tekstformulier maken (**neo:news**)
+1. Het gekoppelde **[!UICONTROL Content management]**-tekstformulier maken (**neo:news**)
 
    ```
    <form _cs="News (neo)" entitySchema="xtk:form"  img="xtk:form.png" label="News"  name="news" namespace="neo" type="contentForm" xtkschema="xtk:form">
@@ -366,17 +366,17 @@ In dit voorbeeld worden de volgende stappen uitgevoerd:
 
 1. U kunt deze inhoudssjabloon dan gebruiken in uw leveringen.
 
-   Raadpleeg [Een inhoudssjabloon](../../delivery/using/using-a-content-template.md)gebruiken voor meer informatie.
+   Voor meer op dit, verwijs naar [Gebruikend een inhoudsmalplaatje](../../delivery/using/using-a-content-template.md).
 
-## XSL Stylesheets {#xsl-stylesheets}
+## XSL-stijlbladen {#xsl-stylesheets}
 
 Met de XSLT-taal kunt u een XML-document wijzigen in een uitvoerdocument. Afhankelijk van de uitvoermethode van de stijlpagina kan het resulterende document worden gegenereerd in HTML, platte tekst of een andere XML-structuur.
 
 Deze transformatie wordt op zijn beurt in XML in een document gedetaillerd dat als stylesheet wordt bekend.
 
-### Een stijlpagina identificeren {#identifying-a-stylesheet}
+### Een stijlblad {#identifying-a-stylesheet} identificeren
 
-Een stijlpagina wordt geïdentificeerd door zijn naam en namespace, enkel als schema&#39;s en vormen. Het wordt echter aanbevolen de extensie **.xsl** toe te voegen aan de naam van het stijlblad.
+Een stijlpagina wordt geïdentificeerd door zijn naam en namespace, enkel als schema&#39;s en vormen. Het wordt echter aanbevolen de extensie **.xsl** toe te voegen aan de naam van de stijlpagina.
 
 De identificatiecode van een stijlpagina is een tekenreeks die wordt gevormd door de naamruimte en de naam die wordt gescheiden door een dubbele punt. bijvoorbeeld: **cus:book.xsl**.
 
@@ -410,16 +410,16 @@ Een stijlpagina is een XML-document dat aan de volgende regels voldoet:
 
 * de kenmerkwaarden liggen tussen aanhalingstekens;
 * een element moet een openingsmarkering en een sluitmarkering hebben;
-* de tekens &#39;&lt;&#39; of &#39;&amp;&#39; vervangen door de entiteiten **&#39;&lt;&#39;** of **&#39;&amp;&#39;** ;
+* de tekens &#39;&lt;&#39; of &#39;&amp;&#39; vervangen door de entiteiten **&#39;&lt;&#39;** of **&#39;&amp;&#39;**;
 * elk XSL-element moet de naamruimte **xsl** gebruiken.
 
-Een stijlpagina moet beginnen met de markering voor het XSL-basiselement **`<xsl:stylesheet>`** en eindigen met de **`</xsl:stylesheet>`** markering. De XSL-naamruimte moet als volgt worden gedefinieerd in de openingsmarkering:
+Een stijlpagina moet beginnen met de markering **`<xsl:stylesheet>`** voor het XSL-basiselement en eindigen met de markering **`</xsl:stylesheet>`**. De XSL-naamruimte moet als volgt worden gedefinieerd in de openingsmarkering:
 
 ```
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 ```
 
-Het **`<xsl:output>`** element geeft de indeling van het gegenereerde document aan. Geef de gewenste set tekens en de uitvoerindeling op.
+Met het element **`<xsl:output>`** geeft u de indeling op van het gegenereerde document. Geef de gewenste set tekens en de uitvoerindeling op.
 
 ```
 <xsl:output encoding="ISO-8859-1" method="html"/>
@@ -444,7 +444,7 @@ In de volgende instructies wordt de configuratie van de stijlpagina voor de opma
 </xsl:template>
 ```
 
-Standaard zoekt de XSLT-processor naar de **sjabloon** die van toepassing is op het hoofd- of hoofdknooppunt van het XML-invoerdocument. De constructie van het uitvoerdocument begint met deze **sjabloon**.
+Standaard zoekt de XSLT-processor naar de **sjabloon** die van toepassing is op het hoofd- of hoofdknooppunt van het XML-invoerdocument. De bouw van het outputdocument begint met dit **malplaatje**.
 
 In ons voorbeeld wordt een HTML-pagina gegenereerd vanuit het schema &quot;cus:book&quot; door de naam van het boek en de lijst met hoofdstukken weer te geven.
 
@@ -452,11 +452,11 @@ In ons voorbeeld wordt een HTML-pagina gegenereerd vanuit het schema &quot;cus:b
 >
 >Raadpleeg een XSLT-referentiedocument voor meer informatie over de XSLT-taal.
 
-### HTML/XML weergeven {#displaying-html-xml}
+### HTML/XML {#displaying-html-xml} weergeven
 
-Als u een **HTML** -veld wilt weergeven, gebruikt u de optie **disable-output-escape=&quot;yes&quot;** uit de **`<xsl:value-of>`** instructie. Zo voorkomt u dat tekens door hun XML-entiteit worden vervangen (bijvoorbeeld &lt; met &lt;).
+Als u een **html**-veld wilt weergeven, gebruikt u de optie **disable-output-escape=&quot;yes&quot;** uit de **`<xsl:value-of>`**-instructie. Zo voorkomt u dat tekens door hun XML-entiteit worden vervangen (bijvoorbeeld &lt; met &lt;).
 
-Met de **`<xsl:text>`** instructie **disable-output-escape=&quot;yes&quot;** kunt u JavaScript-tags invoegen voor verpersoonlijkingsvelden of voorwaardelijke tests.
+Met de instructie **`<xsl:text>`** met de optie **disable-output-escape=&quot;yes&quot;** kunt u JavaScript-tags invoegen voor verpersoonlijkingsvelden of voorwaardelijke tests.
 
 Voorbeelden:
 
@@ -466,13 +466,13 @@ Voorbeelden:
    <xsl:value-of select="summary" disable-output-escaping="yes"/>
    ```
 
-* Het aanpassingsveld **&lt;%= receiving.email %>** invoegen:
+* Het aanpassingsveld **&lt;%= receiver.email %>** invoegen:
 
    ```
    <xsl:text disable-output-escaping="yes"><%= recipient.email %></xsl:text>
    ```
 
-* De voorwaardelijke test toevoegen **&lt;% if (receiving.language == &#39;en&#39;) `{` %>**:
+* De voorwaardelijke test **&lt;% if (receiving.language == &#39;en&#39;) `{` %>** toevoegen:
 
    ```
    <xsl:text disable-output-escaping="yes"><% if (recipient.language == 'en') { %></xsl:text>
@@ -480,9 +480,9 @@ Voorbeelden:
 
 ### Inclusief stijlbladen {#including-stylesheets}
 
-Het is mogelijk om een bibliotheek van malplaatjes of variabelen op te bouwen die onder verscheidene stylesheets moeten worden gedeeld. De **sjabloon**&quot;longMonth&quot;, die hierboven wordt weergegeven, is een typisch voorbeeld van het voordeel dat een sjabloon extern in een stijlpagina kan worden gevonden, zodat het later opnieuw kan worden gebruikt.
+Het is mogelijk om een bibliotheek van malplaatjes of variabelen op te bouwen die onder verscheidene stylesheets moeten worden gedeeld. De &quot;longMonth&quot;**template**, hierboven voorgesteld, is een typisch voorbeeld van het voordeel om van een malplaatje ver in een stijlblad de plaats te bepalen zodat het later kan worden opnieuw gebruikt.
 
-De **`<xsl:include>`** instructie geeft de naam aan van de stijlpagina die in het document moet worden opgenomen.
+De instructie **`<xsl:include>`** geeft de naam aan van de stijlpagina die in het document moet worden opgenomen.
 
 **Voorbeeld**: inclusief het stijlblad &quot;common.xsl&quot;.
 
@@ -505,7 +505,7 @@ Met de bewerkingszone kunt u de inhoud van het stijlblad vullen:
 
 ![](assets/d_ncs_content_form14.png)
 
-Als u een voorvertoning van het uitvoerdocument wilt genereren, selecteert u een inhoudsinstantie en de indeling (HTML, Tekst, XML) en klikt u op **[!UICONTROL Generate]** :
+Als u een voorvertoning van het uitvoerdocument wilt genereren, selecteert u een inhoudsinstantie en de indeling (HTML, Tekst, XML) en klikt u op **[!UICONTROL Generate]**:
 
 ![](assets/d_ncs_content_form15.png)
 
@@ -515,20 +515,20 @@ Als u een voorvertoning van het uitvoerdocument wilt genereren, selecteert u een
 
 ## Afbeeldingsbeheer {#image-management}
 
-### Verwijzing naar afbeelding {#image-referencing}
+### Afbeelding met verwijzing naar {#image-referencing}
 
 Naar de afbeeldingen die u opgeeft in het HTML-uitvoerdocument, kan worden verwezen met absolute of relatieve verwijzingen.
 
-Met relatieve verwijzing kunt u de URL invoeren van de server die de afbeeldingen bevat in de opties **NcmRessourcesDir** en **NcmRessourcesDirPreview** . Deze opties bevatten de locatie van afbeeldingen die u wilt publiceren en voorvertonen in de Adobe Campaign-clientconsole.
+Met relatieve verwijzing kunt u de URL invoeren van de server die de afbeeldingen bevat in de opties **NcmRessourcesDir** en **NcmRessourcesDirPreview**. Deze opties bevatten de locatie van afbeeldingen die u wilt publiceren en voorvertonen in de Adobe Campaign-clientconsole.
 
-Deze twee opties zijn toegankelijk via het scherm voor optiebeheer in de **[!UICONTROL Administration > Platform > Options]** map.
+Deze twee opties zijn toegankelijk via het optiebeheerscherm in de map **[!UICONTROL Administration > Platform > Options]**.
 
 **Voorbeeld**:
 
 * NcmResourcesDir = &quot;https://server/images/&quot;
 * NcmResourcesDirPreview = &quot;x:/images/&quot;
 
-Tijdens het opmaken van stijlpagina&#39;s wordt het kenmerk **_resPath** op het hoofdelement van het XML-invoerdocument automatisch ingevuld met een of meer van de opties, afhankelijk van de context (voorvertoning of publicatie).
+Tijdens de verwerking van stijlpagina&#39;s wordt het **_resPath** attribuut op het belangrijkste element van het document van inputXML automatisch gevuld met één of andere opties afhankelijk van context (voorproef of publicatie).
 
 Voorbeeld van het gebruik van de plaatsingsoptie voor afbeeldingen en het gebruik ervan voor een afbeelding:
 
@@ -540,9 +540,9 @@ Voorbeeld van het gebruik van de plaatsingsoptie voor afbeeldingen en het gebrui
 >
 >We raden u aan een variabele te declareren die de referentie bevat van de server waar de afbeeldingen zijn opgeslagen (&quot;resPath&quot; in ons voorbeeld).
 
-### Overheidsmiddelen gebruiken {#using-public-resources}
+### Openbare bronnen gebruiken {#using-public-resources}
 
-U kunt ook gebruiken **[!UICONTROL Public resources]** om afbeeldingen te declareren en deze naar de server te uploaden, afhankelijk van de instantie-instellingen die u hebt ingevoerd in de implementatietovenaar.
+U kunt **[!UICONTROL Public resources]** ook gebruiken om beelden te verklaren en hen te uploaden op de server afhankelijk van de instantie montages ingegaan in de plaatsingstovenaar.
 
 Vervolgens kunt u deze afbeeldingen in de inhoud oproepen. Hiervoor gebruikt u de volgende syntaxis in het inhoudsbeheerschema:
 
@@ -562,7 +562,7 @@ In het formulier wordt het veld voor het selecteren van de afbeelding toegevoegd
 
 >[!NOTE]
 >
->Voor meer op **[!UICONTROL Public resources]** en hoe te om hen te vormen en te gebruiken, verwijs naar [deze sectie](../../installation/using/deploying-an-instance.md#managing-public-resources).
+>Voor meer op **[!UICONTROL Public resources]** en hoe te om hen te vormen en te gebruiken, verwijs [deze sectie](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
 ## Datumweergave {#date-display}
 
@@ -570,19 +570,19 @@ In het XML-invoerdocument worden de datums opgeslagen in de interne XML-indeling
 
 Adobe Campaign biedt functies voor datumnotatie voor de JavaScript-sjablonen en XSL-opmaakmodellen die hieronder worden beschreven.
 
-### JavaScript-datumopmaak {#javascript-date-formatting}
+### JavaScript-datumnotatie {#javascript-date-formatting}
 
-Als u een datum in de gewenste notatie wilt weergeven, biedt Adobe Campaign de **formatDate** -functie die als invoer de inhoud van de datum opgeeft, en een tekenreeks die de uitvoerindeling opgeeft, met de volgende syntaxis: **%4Y/%2M/%2D %2H%2N%2S**
+Als u een datum in de gewenste notatie wilt weergeven, biedt Adobe Campaign de functie **formatDate** die als invoer de inhoud van de datum gebruikt en een tekenreeks die de uitvoerindeling opgeeft, met de volgende syntaxis: **%4Y/%2M/%2D %2H%2N%2S**
 
 Voorbeelden:
 
-* De datum weergeven in de **notatie 31/10/2018** :
+* Geef de datum weer in de **31/10/2018**-indeling:
 
    ```
     <%= formatDate(content.@date, "%2D/%2M/%4Y") %>
    ```
 
-* De datum weergeven in de notatie **juli 2018** :
+* Geef de datum weer in de notatie **juli 2018**:
 
    ```
    <%
@@ -601,19 +601,19 @@ Voorbeelden:
    <%= displayDate(content.@date) %>
    ```
 
-### XSL-datumopmaak {#xsl-date-formatting}
+### XSL-datumnotatie {#xsl-date-formatting}
 
-Er is geen standaardfunctie voor datumbeheer in XSLT-syntaxis. Als u een datum in de gewenste notatie wilt weergeven, biedt Adobe Campaign de externe **datumnotatie** voor de functie. Deze functie neemt als input de inhoud van de datum en een koord die het outputformaat met de volgende syntaxis specificeren: **%4Y/%2M/%2D %2H%2N%2S**
+Er is geen standaardfunctie voor datumbeheer in XSLT-syntaxis. Adobe Campaign biedt de externe functie **date-format** om een datum in de gewenste notatie weer te geven. Deze functie neemt als input de inhoud van de datum en een koord die het outputformaat met de volgende syntaxis specificeren: **%4Y/%2M/%2D %2H%2N%2S**
 
 Voorbeelden:
 
-* De datum weergeven in de notatie **01/10/2018** :
+* De datum weergeven in de **01/10/2018**-indeling:
 
    ```
    <xsl:value-of select="external:date-format(@date, '%2D/%2M/%4Y')"/>
    ```
 
-* De datum weergeven in de notatie **juli 2018** :
+* De datum weergeven in de notatie **juli 2018**:
 
    ```
    <!-- Returns the month in the form of a string with the month number as input -->
