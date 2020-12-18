@@ -29,7 +29,7 @@ Bij vluchtuitvoeringen zijn alle stadia die goedkeuring vereisen, gebaseerd op h
 
 ![](assets/validation-1-in-op.png)
 
-In deze [sectie](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)vindt u voorbeelden van goedkeuring.
+Goedkeuringsvoorbeelden vindt u in deze [sectie](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 Een operator kan op twee manieren reageren: valideren met de webpagina die is gekoppeld in het e-mailbericht of via de console.
 
@@ -41,17 +41,17 @@ Een operator kan op twee manieren reageren: valideren met de webpagina die is ge
 
 Het is mogelijk om een goedkeuringsbericht te ontvangen die een verbinding met een Web-pagina bevat waarmee het mogelijk is te antwoorden. Voor de beoogde exploitant om een goedkeuringse-mail te ontvangen, moet het exploitant e-mailadres volledig zijn. Als dit niet het geval is, moet de exploitant de console gebruiken om te antwoorden
 
-Het beheer van de exploitant wordt gedetailleerd in deze [sectie](../../platform/using/access-management.md).
+Operator management is gedetailleerd in deze [sectie](../../platform/using/access-management.md).
 
-Goedkeuringse-mails worden voortdurend verzonden. De standaardleveringssjabloon is **[!UICONTROL notifyAssignee]**: Deze wordt opgeslagen in de **[!UICONTROL Administration > Campaign management > Technical delivery templates]** map. Dit scenario kan worden aangepast en het wordt ook aanbevolen een kopie te maken en sjablonen te wijzigen voor elke activiteit.
+Goedkeuringse-mails worden voortdurend verzonden. De standaardleveringssjabloon is **[!UICONTROL notifyAssignee]**: Deze wordt opgeslagen in de map **[!UICONTROL Administration > Campaign management > Technical delivery templates]**. Dit scenario kan worden aangepast en het wordt ook aanbevolen een kopie te maken en sjablonen te wijzigen voor elke activiteit.
 
-Leveringen die met deze sjabloon zijn gemaakt, worden opgeslagen in de **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** map.
+Leveringen die met deze sjabloon zijn gemaakt, worden opgeslagen in de map **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**.
 
 ## Goedkeuring via de console {#approval-via-the-console}
 
 Bij bewerkingen worden elementen die moeten worden goedgekeurd, weergegeven op het campagnemdashboard.
 
-Voor technische workflows zijn de taken die de gebruiker kan goedkeuren toegankelijk vanuit de boomstructuur in de **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]** map.
+Voor technische workflows zijn de taken die de gebruiker kan goedkeuren toegankelijk vanuit de boomstructuur in de map **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]**.
 
 ![](assets/validation-node.png)
 
@@ -60,7 +60,7 @@ Voor technische workflows zijn de taken die de gebruiker kan goedkeuren toeganke
 Een goedkeuring wordt toegekend aan een groep operatoren, één exploitant of een reeks operatoren die via een filtervoorwaarde zijn geselecteerd.
 
 1. Voor de eenvoudigste vorm van goedkeuring, wordt de taak gebeëindigd zodra een exploitant antwoordt. Elke andere exploitant die probeert te reageren, wordt op de hoogte gebracht dat iemand het al heeft gedaan.
-1. Raadpleeg [Meerdere goedkeuringen](#multiple-approval)voor meerdere goedkeuringen.
+1. Raadpleeg [Meerdere goedkeuringen](#multiple-approval) voor meerdere goedkeuringen.
 
 De groepen van marktdeelnemers voor goedkeuringen moeten worden aangewezen als rollen of functies in plaats van als benoemde personen. Een groep ‘Campagne budget’ verdient bijvoorbeeld de voorkeur boven &#39;Harry&#39;s group&#39;. We raden aan ten minste twee personen in een groep te hebben die een taak kunnen goedkeuren. Op deze manier, als één afwezig is, kan de andere antwoorden.
 
@@ -72,16 +72,16 @@ Op het tweede tabblad in de eigenschappen voor activiteitengoedkeuring kunt u ee
 
 ![](assets/expiration.png)
 
-Als u een nieuwe vervaldatum wilt toevoegen, klikt u **[!UICONTROL Add]** op. Er wordt een overgang toegevoegd aan elk van de gemaakte vervaldatums. U kunt:
+Als u een nieuwe vervaldatum wilt toevoegen, klikt u op **[!UICONTROL Add]**. Er wordt een overgang toegevoegd aan elk van de gemaakte vervaldatums. U kunt:
 
 * de typische parameters rechtstreeks wijzigen door op een cel in de lijst te klikken (of door op F2 te drukken);
-* U kunt de expressie ook bewerken door op de **[!UICONTROL Detail...]** knop te klikken.
+* of bewerk de expressie door op de knop **[!UICONTROL Detail...]** te klikken.
 
 >[!NOTE]
 >
 >Het is niet nodig een volgorde voor de vervaldata vast te stellen, aangezien deze in chronologische volgorde worden verwerkt.
 
-De **[!UICONTROL Do not terminate the task]** optie laat de goedkeuring actief wanneer de vertraging wordt overschreden. In deze modus kunt u herinneringen beheren terwijl de goedkeuring actief blijft: operatoren kunnen nog steeds reageren. Deze optie is standaard uitgeschakeld. Dit betekent dat de taak bij het verlopen als voltooid wordt beschouwd en dat de operatoren niet langer mogen reageren.
+Met de optie **[!UICONTROL Do not terminate the task]** blijft de goedkeuring actief wanneer de vertraging wordt overschreden. In deze modus kunt u herinneringen beheren terwijl de goedkeuring actief blijft: operatoren kunnen nog steeds reageren. Deze optie is standaard uitgeschakeld. Dit betekent dat de taak bij het verlopen als voltooid wordt beschouwd en dat de operatoren niet langer mogen reageren.
 
 U kunt vier typen vervaldatums maken:
 
@@ -90,7 +90,7 @@ U kunt vier typen vervaldatums maken:
 * **Vertraging vóór een bepaalde datum**: De vervaldatum wordt berekend door een tijdsduur af te trekken van een datum die u opgeeft.
 * **Vervaldatum berekend door script**: De vervaldatum wordt berekend met behulp van JavaScript.
 
-   In het volgende voorbeeld wordt een vervaldatum berekend 24 uur voordat de levering wordt gestart (geïdentificeerd door **vars.deliveryId**):
+   In het volgende voorbeeld wordt een vervaldatum berekend 24 uur voordat de levering wordt gestart (aangeduid door **vars.deliveryId**):
 
    ```
    var delivery = nms.delivery.get(vars.deliveryId)
