@@ -17,28 +17,28 @@ ht-degree: 8%
 
 # Inboxrendering{#inbox-rendering}
 
-## Inbox-rendering {#about-inbox-rendering}
+## Over het renderen in Postvak {#about-inbox-rendering}
 
-Before hitting the **Send** button, make sure that your message will be displayed to the recipients in an optimal way on a variety of web clients, web mails and devices.
+Voordat u op de knop **Verzenden** drukt, moet u ervoor zorgen dat uw bericht op een optimale manier aan de ontvangers wordt weergegeven op verschillende webclients, webmails en apparaten.
 
-Om dit mogelijk te maken, gebruikt Adobe Campaign de [Litmus](https://litmus.com/email-testing) webgebaseerde e-mailtestoplossing om de renderingen vast te leggen en deze beschikbaar te maken in een speciaal rapport. Hierdoor kunt u een voorvertoning van het verzonden bericht weergeven in de verschillende contexten waarin het kan worden ontvangen en de compatibiliteit van grote desktops en toepassingen controleren.
+Om dit toe te staan, gebruikt Adobe Campaign [Litmus](https://litmus.com/email-testing) web-based e-mailtestoplossing om de teruggaven te vangen en hen beschikbaar te maken in een specifiek rapport. Hierdoor kunt u een voorvertoning van het verzonden bericht weergeven in de verschillende contexten waarin het kan worden ontvangen en de compatibiliteit van grote desktops en toepassingen controleren.
 
 Litmus is een functie-rijke e-mailbevestiging en previewing toepassing. Hiermee kunnen makers van e-mailinhoud hun berichtinhoud voorvertonen in meer dan 70 e-mailrenderers, zoals de Gmail inbox of de Apple Mail-client.
 
-The mobile, messaging and webmail clients available for **Inbox rendering** in Adobe Campaign are listed on the [Litmus website](https://litmus.com/email-testing) (click **View all email clients**).
+De mobiele clients, berichten en webmailclients die beschikbaar zijn voor **Inbox-rendering** in Adobe Campaign, worden vermeld op de [Litmus-website](https://litmus.com/email-testing) (klik **Alle e-mailclients weergeven**).
 
 >[!NOTE]
 >
->Rendering in doos is niet nodig om personalisatie in leveringen te testen. Personalisatie kan worden gecontroleerd met Adobe Campaign-gereedschappen zoals **[!UICONTROL Preview]** en [proefdrukken](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+>Rendering in doos is niet nodig om personalisatie in leveringen te testen. Personalisatie kan worden gecontroleerd met Adobe Campaign-gereedschappen zoals **[!UICONTROL Preview]** en [Proofs](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-## Inbox-rendering activeren {#activating-inbox-rendering}
+## Inbox-rendering activeren {#activating-inbox-rendering}
 
 Voor gehoste en hybride clients wordt de InBox-rendering op uw exemplaar geconfigureerd door technische ondersteuning van Adobe en consultants. Neem voor meer informatie contact op met de manager van uw Adobe-account.
 
 Voor on-premise installaties, volg de stappen hieronder om Inbox teruggeven te vormen.
 
-1. Installeer het **[!UICONTROL Inbox rendering (IR)]** pakket via **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** menu. Zie [Standaardpakketten](../../installation/using/installing-campaign-standard-packages.md)voor Campaign Classic installeren voor meer informatie.
-1. Configureer een externe account van het HTTP-type via **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]** . Zie [Een externe account](../../installation/using/external-accounts.md#creating-an-external-account)maken voor meer informatie.
+1. Installeer het **[!UICONTROL Inbox rendering (IR)]**-pakket via het menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Zie [Campaign Classic-standaardpakketten installeren](../../installation/using/installing-campaign-standard-packages.md) voor meer informatie.
+1. Configureer een externe account van het HTTP-type via het knooppunt **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**. Zie [Een externe account maken](../../installation/using/external-accounts.md#creating-an-external-account) voor meer informatie.
 1. Stel de parameters voor de externe account als volgt in:
    * **[!UICONTROL Label]**: Informatie over de leveringsserver
    * **[!UICONTROL Internal name]**: DeliabilityInstance
@@ -49,8 +49,8 @@ Voor on-premise installaties, volg de stappen hieronder om Inbox teruggeven te v
 
    ![](assets/s_tn_inbox_rendering_external-account.png)
 
-1. Go to the **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** node. Zoek naar de **[!UICONTROL DmRendering_cuid]** optie en contacteer steun om uw levering te krijgen rapporteert herkenningsteken dat aan het **[!UICONTROL Value (text)]** gebied moet worden gekopieerd.
-1. Bewerk het bestand **serverConf.xml** om een aanroep naar de Litmus-server toe te staan. Voeg de volgende regel toe aan de `<urlPermission>` sectie:
+1. Ga naar **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** knoop. Zoek naar de optie **[!UICONTROL DmRendering_cuid]** en contacteer steun om uw levering te krijgen rapporteert herkenningsteken dat aan **[!UICONTROL Value (text)]** gebied moet worden gekopieerd.
+1. Bewerk het bestand **serverConf.xml** om een aanroep naar de Litmus-server toe te staan. Voeg de volgende regel toe aan de sectie `<urlPermission>`:
 
    ```
    <url dnsSuffix="deliverability-app.neolane.net" urlRegEx="https://.*"/>
@@ -76,7 +76,7 @@ In Adobe Campaign komt het krediet overeen met het aantal beschikbare renderinge
 >
 >Het aantal beschikbare Litmus tokens hangt af van de campagnelicentie die u hebt aangeschaft. Controleer uw licentieovereenkomst.
 
-Telkens wanneer u de **[!UICONTROL Inbox rendering]** functie in een levering gebruikt, vermindert elke gegenereerde rendering de beschikbare tokens met één.
+Telkens wanneer u de functie **[!UICONTROL Inbox rendering]** in een levering gebruikt, vermindert elke gegenereerde rendering uw beschikbare tokens met één.
 
 >[!IMPORTANT]
 >
@@ -89,40 +89,40 @@ Telkens wanneer u de **[!UICONTROL Inbox rendering]** functie in een levering ge
 
 
 
-Het aantal resterende beschikbare tokens wordt weergegeven in het **[!UICONTROL General summary]** Inbox- [renderrapport](#inbox-rendering-report).
+Het aantal resterende beschikbare tokens wordt weergegeven in het **[!UICONTROL General summary]** van het [Inbox-renderrapport](#inbox-rendering-report).
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
 Doorgaans wordt de renderfunctie Inbox gebruikt om het HTML-framework van een nieuw ontworpen e-mail te testen. Voor elke rendering zijn ongeveer 70 tokens nodig (afhankelijk van het aantal omgevingen dat doorgaans wordt getest). In sommige gevallen hebt u echter meerdere renderingrapporten in postvak nodig om de levering volledig te testen. Het zou dus meer tokens kunnen vergen om meerdere controles te voltooien.
 
-## Toegang tot het renderrapport in Postvak IN {#accessing-the-inbox-rendering-report}
+## Toegang tot het inbox-renderrapport {#accessing-the-inbox-rendering-report}
 
 Voer onderstaande stappen uit als u de e-maillevering hebt gemaakt en de content en de doelpopulatie ervan hebt bepaald.
 
-Raadpleeg [deze sectie](../../delivery/using/about-email-channel.md)voor meer informatie over het maken, ontwerpen en richten van een levering.
+Raadpleeg [deze sectie](../../delivery/using/about-email-channel.md) voor meer informatie over het maken, ontwerpen en richten van een levering.
 
-1. Klik op de **[!UICONTROL Inbox rendering]** knop op de bovenste balk van de levering.
-1. Selecteer deze optie **[!UICONTROL Analyze]** om het vastlegproces te starten.
+1. Klik op de bovenste balk van de levering op de knop **[!UICONTROL Inbox rendering]**.
+1. Selecteer **[!UICONTROL Analyze]** om het vastlegproces te starten.
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Er wordt een bewijs verzonden. De renderingminiaturen zijn enkele minuten na het verzenden van de e-mails toegankelijk in die proefdruk. For more on sending proofs, refer to [this section](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+   Er wordt een bewijs verzonden. De renderingminiaturen zijn enkele minuten na het verzenden van de e-mails toegankelijk in die proefdruk. Raadpleeg [deze sectie](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) voor meer informatie over het verzenden van proefdrukken.
 
 1. Na verzending wordt de proefdruk weergegeven in de leveringslijst. Dubbelklik erop.
 
    ![](assets/s_tn_inbox_rendering_delivery_list.png)
 
-1. Ga naar het tabblad **Inbox Rendering** van de proefdruk.
+1. Ga naar **Inbox Rendering** tabel van de proefdruk.
 
    ![](assets/s_tn_inbox_rendering_tab.png)
 
    Het renderrapport Inbox wordt weergegeven.
 
-## Inbox rendering report {#inbox-rendering-report}
+## Rapport {#inbox-rendering-report} voor renderen in vak
 
 In dit rapport worden de inbox-weergaven weergegeven zoals deze aan de ontvanger worden weergegeven. De renderingen kunnen afwijken, afhankelijk van de manier waarop de ontvanger de e-maillevering opent: in een browser, op een mobiel apparaat of via een e-mailtoepassing.
 
-Het **[!UICONTROL General summary]** aantal ontvangen berichten, ongewenste (spam), ontvangen niet, of hangende ontvangst, als lijst en door een grafische kleur-gecodeerde vertegenwoordiging voor.
+**[!UICONTROL General summary]** stelt het aantal ontvangen, ongewenste (spam), niet ontvangen, of hangende ontvangst, als lijst en door een grafische kleur-gecodeerde vertegenwoordiging voor.
 
 ![](assets/s_tn_inbox_rendering_summary.png)
 
