@@ -21,21 +21,21 @@ In dit voorbeeld willen we ontvangers filteren die twee of meer in een levering 
 
 U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
-1. Sleep een **[!UICONTROL Query]** activiteit naar een werkstroom en open de activiteit.
-1. Klik **[!UICONTROL Edit query]** en plaats de doel en het filtreren afmetingen aan **[!UICONTROL Recipients]**.
+1. Sleep een **[!UICONTROL Query]** activiteit in een werkstroom en open de activiteit.
+1. Klik op **[!UICONTROL Edit query]** en stel de doel- en filterafmetingen in op **[!UICONTROL Recipients]**.
 
    ![](assets/query_recipients_1.png)
 
-1. Bepaal de volgende filtervoorwaarde aan doelontvanger die in het leveringslogboek bestaat. Kies **Ontvanger leveringslogboek (broadlog)** in de kolom **Uitdrukking** , kies **bestaan zoals** in de kolom **Exploitant** .
+1. Bepaal de volgende filtervoorwaarde aan doelontvanger die in het leveringslogboek bestaat. Kies **Ontvangersleveringslogboek (broadlog)** in de **Expressie** kolom, kies **bestaan zoals** in **Operator** kolom.
 
    ![](assets/query_recipients_2.png)
 
-1. Bepaal de volgende filtervoorwaarde om uw levering te richten. Kies **[!UICONTROL Internal name]** in de kolom Expressie en **[!UICONTROL equal to]** in de kolom Operator.
+1. Bepaal de volgende filtervoorwaarde om uw levering te richten. Kies **[!UICONTROL Internal name]** in de kolom van de Uitdrukking en **[!UICONTROL equal to]** in de kolom van de Exploitant.
 1. Voeg in de waardekolom de interne naam van de beoogde levering toe.
 
    ![](assets/query_recipients_3.png)
 
-1. Herhaal dezelfde bewerkingen met een **[!UICONTROL AND]** operator om andere leveringen als doel in te stellen.
+1. Met een **[!UICONTROL AND]** exploitant, herhaal de zelfde verrichtingen om andere leveringen te richten.
 
    ![](assets/query_recipients_4.png)
 
