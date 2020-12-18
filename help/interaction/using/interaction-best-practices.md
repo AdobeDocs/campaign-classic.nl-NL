@@ -46,7 +46,7 @@ Hieronder staan enkele beste praktijken met betrekking tot subsidiabiliteitsrege
 * Aanbevolen wordt een beperkt aantal aanbiedingen per aanbiedingsruimte te hebben. Hierdoor worden aanbiedingen in een bepaalde ruimte sneller opgehaald.
 * Gebruik indexen, vooral bij veelgebruikte opzoekkolommen.
 
-### Provisietabel {#proposition-table}
+### Propositietabel {#proposition-table}
 
 Hieronder staan enkele aanbevolen procedures voor de tabel met voorstellen.
 
@@ -66,7 +66,7 @@ Wanneer aanbiedingen in leveringen worden opgenomen, worden de aanbiedingen door
 
 Als u aanbiedingen in een verrijkingsactiviteit selecteert, kunt u kiezen welke ruimte u wilt gebruiken. Ongeacht de geselecteerde aanbiedingsruimte, hangt het menu voor de aanpassing van de levering echter af van de aanbiedingsruimte die in de levering is ingesteld.
 
-In het onderstaande voorbeeld is de ruimte voor het aanbieden geselecteerd in de levering **[!UICONTROL Email (Environment - Recipient)]**:
+In het onderstaande voorbeeld is **[!UICONTROL Email (Environment - Recipient)]** geselecteerd als aanbiedingsruimte:
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
@@ -78,7 +78,7 @@ In het onderstaande voorbeeld is de HTML-renderfunctie beschikbaar in de vervolg
 
 Deze functie voegt code in zoals: `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
 
-Wanneer u het voorstel selecteert, is de waarde van het **[!UICONTROL view]** kenmerk als volgt:
+Wanneer u het voorstel selecteert, is de waarde van het **[!UICONTROL view]** attribuut als volgt:
 * &quot;rendering/html&quot;: html-rendering. De HTML-renderfunctie wordt gebruikt.
 * &quot;aanbieding/weergave/html&quot;: html-inhoud. De klasse maakt geen gebruik van de HTML-renderfunctie. Het bevat alleen het HTML-veld.
 
@@ -86,7 +86,7 @@ Wanneer u meerdere aanbiedingsruimten opneemt in één e-mailbestelling en sommi
 
 Daarom wordt u aangeraden voor alle aanbiedingsruimten een HTML-renderfunctie te definiëren, zelfs als uw aanbiedingsruimte alleen HTML-inhoud vereist.
 
-### De positie in de tabel in het propositielogboek instellen {#rank-proposition-log-table}
+### De positie instellen in de tabel in het propositielogbestand {#rank-proposition-log-table}
 
 De ruimten van de aanbieding hebben de capaciteit om gegevens in de propositietabel op te slaan wanneer de voorstellen worden geproduceerd of goedgekeurd:
 
@@ -108,7 +108,7 @@ U kunt extra velden toevoegen, zoals een veld @rank:
 
 Omdat er een veld in de tabel met voorstellen staat met de naam @rank, wordt de waarde in de tabel met werkstroomsjablonen gekopieerd.
 
-Zie Een aanbieding [integreren via een workflow](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights)voor meer informatie over het opslaan van extra velden in de tabel met profielen.
+Zie [Een aanbieding integreren via een workflow](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights) voor meer informatie over het opslaan van extra velden in de tabel met profielen.
 
 Voor uitgaande aanbiedingen met interactie is dit handig wanneer er meerdere aanbiedingen zijn geselecteerd en u wilt opnemen in welke volgorde deze in een e-mail worden weergegeven.
 
@@ -120,7 +120,7 @@ Wanneer de gebruiker Interactie gebruikt en manueel aanbiedingen selecteert, kan
 
 ![](assets/Interaction-best-practices-manual-offer-combined.png)
 
-### NMS uitbreiden:aanbiedingsschema {#extending-nms-offer-schema}
+### Nms&#39;en uitbreiden:aanbiedingsschema {#extending-nms-offer-schema}
 
 Wanneer het uitbreiden van nms:aanbiedingsschema, zorg ervoor u de uit-van-de-doosstructuur reeds opstelling volgt:
 * Definieer een nieuw veld voor de opslag van inhoud onder `<element name="view">`.
@@ -131,4 +131,4 @@ Wanneer het uitbreiden van nms:aanbiedingsschema, zorg ervoor u de uit-van-de-do
    <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
    ```
 
-* Alle velden die URL&#39;s bevatten die moeten worden bijgehouden, moeten worden geplaatst onder `<element name="trackedUrls">` de URL `<element name="view" >`.
+* Alle velden die URL&#39;s bevatten die moeten worden bijgehouden, moeten worden geplaatst onder `<element name="trackedUrls">` die zich onder `<element name="view" >` bevindt.
