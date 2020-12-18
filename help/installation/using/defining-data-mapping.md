@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Een externe database openen
-description: Een externe database openen
+title: Toegang tot een externe database
+description: Toegang tot een externe database
 audience: platform
 content-type: reference
 topic-tags: connectors
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '188'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -35,12 +35,12 @@ Hiervoor voert u de volgende stappen uit:
 
    ![](assets/wf_new_mapping_define_names.png)
 
-   U kunt kiezen of u uitsluitingen (**excludelog**), berichten (**broadlog**) of in een aparte tabel wilt opslaan.
+   U kunt kiezen of om uitsluitingen (**excludelog**), met berichten (**broadlog**) of in een afzonderlijke lijst op te slaan.
 
-   U kunt ook kiezen of u het bijhouden van gegevens voor deze leveringstoewijzing (**trackinglog**) wilt beheren.
+   U kunt ook kiezen of het volgen voor deze leveringsafbeelding (**trackinglog**) te beheren.
 
 1. Selecteer vervolgens de extensies waarmee u rekening wilt houden. Het extensietype is afhankelijk van de parameters en opties van uw platform (uw licentiecontract weergeven).
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   Klik op de **[!UICONTROL Save]** knop om het maken van de leveringstoewijzing te starten: alle gekoppelde tabellen worden automatisch gemaakt op basis van de geselecteerde parameters.
+   Klik op de knop **[!UICONTROL Save]** om het maken van de leveringstoewijzing te starten: alle gekoppelde tabellen worden automatisch gemaakt op basis van de geselecteerde parameters.
