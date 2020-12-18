@@ -74,7 +74,7 @@ Bijvoorbeeld:
 
 * Bepaalde standaardrapporten, met name die welke worden aangeboden door **Interactie** en **Mobiele toepassingen** moeten opnieuw worden ontwikkeld. Raadpleeg de sectie [Rapporten beheren](../../configuration/using/managing-reports.md).
 * De standaardconfiguraties voor bepaalde workflowactiviteiten verwijzen naar de standaardtabel met ontvangers (**[!UICONTROL nms:recipient]**): deze configuraties moeten worden veranderd wanneer gebruikt voor een externe ontvangerslijst. Raadpleeg de sectie [Workflows beheren](../../configuration/using/managing-workflows.md).
-* Het standaard **[!UICONTROL Unsubscription link]** verpersoonlijkingsblok moet worden aangepast.
+* Het standaardverpersoonlijkingsblok **[!UICONTROL Unsubscription link]** moet worden aangepast.
 * De doelafbeelding van de standaardleveringsmalplaatjes moet worden gewijzigd.
 * V4-formulieren zijn niet compatibel met een tabel met externe ontvangers: u moet webtoepassingen gebruiken.
 
