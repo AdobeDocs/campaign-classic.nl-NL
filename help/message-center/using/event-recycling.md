@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Als de levering van een bericht op een specifiek kanaal mislukt, kan Adobe Campaign het bericht opnieuw verzenden via een ander kanaal. Als een levering op het SMS-kanaal bijvoorbeeld mislukt, wordt het bericht opnieuw verzonden via het e-mailkanaal.
 
-Hiervoor moet u een workflow configureren die alle gebeurtenissen opnieuw maakt met de status **Leveringsfout** en er een ander kanaal aan toewijst.
+Hiervoor moet u een workflow configureren die alle gebeurtenissen opnieuw maakt met de status **Delivery error** en er een ander kanaal aan toewijst.
 
 >[!CAUTION]
 >
