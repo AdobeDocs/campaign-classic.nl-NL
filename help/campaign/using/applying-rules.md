@@ -23,15 +23,15 @@ Om de gemaakte typologische regels toe te passen, moet u deze koppelen aan een t
 
 1. Maak een campagnetypologie.
 
-   Typologieën zijn toegankelijk via het knooppunt **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** .
+   Typologieën zijn toegankelijk via het knooppunt **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]**.
 
-1. Ga naar het **[!UICONTROL Rules]** tabblad, klik op de **[!UICONTROL Add]** knop en selecteer de regels die u met deze typologie wilt toepassen.
+1. Ga naar het **[!UICONTROL Rules]** lusje, klik **[!UICONTROL Add]** knoop en selecteer de regels om met deze typologie toe te passen.
 
    ![](assets/campaign_opt_pressure_sample_1_6.png)
 
 1. Sla de typologie op: wordt toegevoegd aan de lijst van bestaande typologieën.
 1. Open de levering waarop u de regels wilt toepassen.
-1. Open de leveringseigenschappen en open het **[!UICONTROL Typology]** lusje.
+1. Open de leveringseigenschappen en open **[!UICONTROL Typology]** tabel.
 1. Selecteer de typologie in de vervolgkeuzelijst.
 
    ![](assets/campaign_opt_pressure_sample_1_7.png)
@@ -40,13 +40,13 @@ Om de gemaakte typologische regels toe te passen, moet u deze koppelen aan een t
    >
    >De typologie kan in de leveringssjabloon worden gedefinieerd, en wordt dan automatisch toegepast op alle leveringen die met deze sjabloon zijn gemaakt.
 
-## Toepassingsvoorwaarden definiëren {#defining-application-conditions}
+## Toepassingsvoorwaarden {#defining-application-conditions} definiëren
 
 U kunt het toepassingsgebied van een regel afhankelijk van uw behoeften beperken (behalve controleregels).
 
 Het is mogelijk om typologische regels zodanig te configureren dat deze alleen betrekking hebben op bepaalde leveringen die zij aan elkaar koppelen, of op bepaalde ontvangers onder het doel van een levering.
 
-Als u de toepassingsvoorwaarden van een regel wilt definiëren, klikt u op de **[!UICONTROL Edit the rule application conditions...]** koppeling op het **[!UICONTROL General]** tabblad.
+Als u de toepassingsvoorwaarden van een regel wilt definiëren, klikt u op de koppeling **[!UICONTROL Edit the rule application conditions...]** op het tabblad **[!UICONTROL General]**.
 
 Dan gebruik de vraagredacteur om het filtreren voorwaarden te bepalen. In het volgende voorbeeld heeft de capaciteitsregel alleen betrekking op leveringen met het woord &quot;aanbieding&quot; op het etiket of op leveringen die vóór 1 april 2013 zijn gemaakt.
 
@@ -54,25 +54,25 @@ Dan gebruik de vraagredacteur om het filtreren voorwaarden te bepalen. In het vo
 
 >[!NOTE]
 >
->Voor filterregels kunt u de toepassingsvoorwaarde van filtercriteria selecteren: zij kunnen afhangen van de levering of het leveringsoverzicht . Voor meer op dit, verwijs naar het [Conditioning een het filtreren regel](../../campaign/using/filtering-rules.md#conditioning-a-filtering-rule).
+>Voor filterregels kunt u de toepassingsvoorwaarde van filtercriteria selecteren: zij kunnen afhangen van de levering of het leveringsoverzicht . Voor meer op dit, verwijs naar [Conditioning een het filtreren regel](../../campaign/using/filtering-rules.md#conditioning-a-filtering-rule).
 
-## Rekenfrequentie aanpassen {#adjusting-calculation-frequency}
+## Rekenfrequentie {#adjusting-calculation-frequency} aanpassen
 
 Arbitrages worden elke avond automatisch opnieuw uitgevoerd via de workflow voor het opschonen van databases. Waarden kunnen echter ook na deze periode worden opgeslagen.
 
 Sommige berekeningen gebruiken namelijk waarden die niet dagelijks veranderen. Het zou daarom irrelevant zijn om de gegevens elke dag opnieuw te berekenen en de database voor niets te overladen. Bijvoorbeeld, als een proces het marketing gegevensbestand met klantennestscores verrijkt en informatie op een wekelijkse basis koopt, te hoeven de gegevens die op deze waarden worden gebaseerd niet elke dag opnieuw te worden berekend.
 
-Hiervoor definieert u in het **[!UICONTROL Frequency]** veld van het **[!UICONTROL General]** tabblad een maximumperiode waarin het doel wordt opgeslagen. Standaard geeft de waarde **0** aan dat de berekening geldig blijft tot de volgende uitvoering van de dagelijkse herarbitrage.
+Hiervoor definieert u in het veld **[!UICONTROL Frequency]** van het tabblad **[!UICONTROL General]** een maximumperiode waarin het doel wordt opgeslagen. Standaard geeft de waarde **0** aan dat de berekening geldig blijft tot de volgende uitvoering van dagelijkse herarbitrage.
 
-Als u de resultaten na deze periode wilt opslaan, geeft u een waarde groter dan 12 op in het **[!UICONTROL Frequency]** veld: zodra deze termijn is verstreken, worden alle regels opnieuw toegepast.
+Als u de resultaten na deze periode wilt opslaan, geeft u een waarde groter dan 12 op in het veld **[!UICONTROL Frequency]**: zodra deze termijn is verstreken, worden alle regels opnieuw toegepast.
 
-Met de **[!UICONTROL Re-apply the rule at the start of personalization]** optie kunt u de regel automatisch toepassen tijdens de verpersoonlijkingsfase, ook als de in het **[!UICONTROL Frequency]** veld vermelde periode nog geldig is.
+Met de optie **[!UICONTROL Re-apply the rule at the start of personalization]** kunt u de regel automatisch toepassen tijdens de verpersoonlijkingsfase, ook als de punt in het veld **[!UICONTROL Frequency]** nog steeds geldig is.
 
 ## Het selecteren van de fase van de regeltoepassing {#selecting-the-rule-application-phase}
 
 De typologieregels worden in een specifieke volgorde toegepast tijdens de fase waarin de producten waarop zij betrekking hebben, worden gericht, geanalyseerd en gepersonaliseerd.
 
-### Uitvoeringsopdracht {#execution-order}
+### Uitvoeringsvolgorde {#execution-order}
 
 In de standaardbewerkingsmodus worden de regels in de volgende volgorde toegepast:
 
@@ -99,7 +99,7 @@ Bijvoorbeeld, zal een drukregel met een uitvoeringsorde van 20 vóór een drukre
 
 ### Controleregels {#control-rules}
 
-Voor **[!UICONTROL Control]** regels, kunt u beslissen op welk punt van de leveringslevenscyclus de regel zal worden toegepast (vóór of na het richten, bij het begin van verpersoonlijking, aan het eind van de analyse). Selecteer de waarde die u wilt toepassen in de vervolgkeuzelijst van het **[!UICONTROL Phase]** veld op het **[!UICONTROL General]** tabblad van de typologieregel.
+Voor **[!UICONTROL Control]** regels, kunt u beslissen op welk punt van de cyclus van het leveringsleven de regel zal worden toegepast (vóór of na het richten, bij het begin van verpersoonlijking, aan het eind van de analyse). Selecteer de waarde die u wilt toepassen in de vervolgkeuzelijst van het veld **[!UICONTROL Phase]** op het tabblad **[!UICONTROL General]** van de typologieregel.
 
 ![](assets/campaign_opt_define_control_phase.png)
 
@@ -113,7 +113,7 @@ Mogelijke waarden zijn:
 
    Als u het volume van het doel moet kennen om de controleregel toe te passen, selecteer deze fase.
 
-   De **[!UICONTROL Check proof size]** besturingsregel geldt bijvoorbeeld na elk doelstadium: deze regel verhindert berichtverpersoonlijking als er teveel proefontvangers zijn.
+   De besturingsregel **[!UICONTROL Check proof size]** wordt bijvoorbeeld toegepast na elk doelstadium: deze regel verhindert berichtverpersoonlijking als er teveel proefontvangers zijn.
 
 * **[!UICONTROL At the start of personalization]**
 
@@ -125,7 +125,7 @@ Mogelijke waarden zijn:
 
 ## Aanvullende configuraties {#additional-configurations}
 
-### Het uitgaande verkeer SMTP van de controle {#control-outgoing-smtp-traffic}
+### Uitgaand verkeer SMTP van de controle {#control-outgoing-smtp-traffic}
 
 Als optie, kunt u het **[!UICONTROL Managing affinities with IP addresses]** gebied gebruiken om leveringen aan de leveringsserver (MTA) deze affiniteit te verbinden. Hiermee kunt u het aantal e-mails voor specifieke leveringen beperken tot computers of uitvoeradressen.
 
@@ -133,17 +133,17 @@ Als optie, kunt u het **[!UICONTROL Managing affinities with IP addresses]** geb
 
 >[!NOTE]
 >
->Affinity management is niet van toepassing op **[!UICONTROL Filtering]** typologieën.\
+>Affinity-beheer is niet van toepassing op typologieën **[!UICONTROL Filtering]**.\
 >Affinities worden gedefinieerd in het configuratiebestand van de instantie, op de Adobe Campaign-server. Raadpleeg [deze sectie](../../installation/using/about-initial-configuration.md) voor meer informatie.
 
-### Campagne optimaliseren en Distribueren {#campaign-optimization-and-distributed-marketing}
+### De Optimalisering van de campagne en de Verdeelde Marketing {#campaign-optimization-and-distributed-marketing}
 
-Op het **[!UICONTROL Distributed Marketing]** tabblad kunt u de typologieën en/of regels opnieuw toewijzen die van toepassing zijn wanneer een gedeelde campagne wordt besteld en/of gereserveerd. Voor een lokale entiteit gedefinieerde typologieën/regels (gekoppeld aan die welke voor de centrale entiteit zijn gedefinieerd) vervangen regels/typologieën die aan de centrale entiteit zijn gekoppeld. Met Opnieuw toewijzen kunt u de regels van de centrale entiteit aanpassen aan de lokale entiteiten die de campagne bestellen.
+Met het tabblad **[!UICONTROL Distributed Marketing]** kunt u typologieën en/of regels opnieuw toewijzen die van toepassing zijn wanneer een gedeelde campagne wordt besteld en/of gereserveerd. Voor een lokale entiteit gedefinieerde typologieën/regels (gekoppeld aan die welke voor de centrale entiteit zijn gedefinieerd) vervangen regels/typologieën die aan de centrale entiteit zijn gekoppeld. Met Opnieuw toewijzen kunt u de regels van de centrale entiteit aanpassen aan de lokale entiteiten die de campagne bestellen.
 
 ![](assets/simu_campaign_opti_distrib_mkg.png)
 
 >[!NOTE]
 >
->In typologieën en typologieregels wordt het **[!UICONTROL Distributed Marketing]** tabblad toegevoegd als uw licentie deze optie bevat: gelieve uw vergunningsovereenkomst te controleren.\
->Voor meer informatie over Verdeelde Marketing, verwijs naar [Ongeveer verdeelde marketing](../../campaign/using/about-distributed-marketing.md).
+>In typologieën en typologieregels wordt het tabblad **[!UICONTROL Distributed Marketing]** toegevoegd als uw licentie deze optie bevat: gelieve uw vergunningsovereenkomst te controleren.\
+>Raadpleeg [Informatie over gedistribueerde marketing](../../campaign/using/about-distributed-marketing.md) voor meer informatie over gedistribueerde marketing.
 
