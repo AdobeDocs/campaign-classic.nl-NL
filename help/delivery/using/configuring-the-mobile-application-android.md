@@ -24,7 +24,7 @@ Nadat het pakket is geïnstalleerd, kunt u de instellingen voor uw Android-app d
 
 >[!NOTE]
 >
->Raadpleeg deze [sectie](../../delivery/using/configuring-the-mobile-application.md)voor meer informatie over het configureren van uw app voor iOS en het maken van een levering voor iOS.
+>Raadpleeg deze [sectie](../../delivery/using/configuring-the-mobile-application.md) voor meer informatie over het configureren van uw app voor iOS en het maken van een levering voor iOS.
 
 De belangrijkste stappen zijn:
 
@@ -33,9 +33,9 @@ De belangrijkste stappen zijn:
 1. [De mobiele app maken in Campagne](#creating-android-app)
 1. [Het app-schema uitbreiden met aanvullende gegevens](#extend-subscription-schema)
 
-Vervolgens kunt u een uitgebreide Android-melding [maken](#creating-android-delivery).
+Vervolgens kunt u [een uitgebreide Android-melding maken](#creating-android-delivery).
 
-## Externe Android-account configureren {#configuring-external-account-android}
+## Externe Android-account {#configuring-external-account-android} configureren
 
 Voor Android zijn twee connectors beschikbaar:
 
@@ -45,8 +45,8 @@ Voor Android zijn twee connectors beschikbaar:
 Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
 1. Ga naar **[!UICONTROL Administration > Platform > External accounts]**.
-1. Select the **[!UICONTROL Android routing]** external account.
-1. Vul op het **[!UICONTROL Connector]** tabblad het **[!UICONTROL JavaScript used in the connector]** veld in:
+1. Selecteer de externe account **[!UICONTROL Android routing]**.
+1. Vul op het tabblad **[!UICONTROL Connector]** het veld **[!UICONTROL JavaScript used in the connector]** in:
 
    Voor Android V2: https://localhost:8080/nms/jsp/androidPushConnectorV2.js
 
@@ -60,69 +60,69 @@ Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
    * **maxGCMConnectPerChild**: Maximale limiet van parallelle HTTP-aanvragen voor de FCM die door elke onderliggende server worden geïnitieerd (standaard 8).
 
-## Android-service configureren {#configuring-android-service}
+## Android-service {#configuring-android-service} configureren
 
 ![](assets/do-not-localize/how-to-video.png) [Leer hoe u een Android-service configureert in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=en#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign)
 
-1. Ga naar het **[!UICONTROL Profiles and Targets > Services and subscriptions]** knooppunt en klik **[!UICONTROL New]**.
+1. Ga naar **[!UICONTROL Profiles and Targets > Services and subscriptions]** knoop en klik **[!UICONTROL New]**.
 
    ![](assets/nmac_service_1.png)
 
-1. Define a **[!UICONTROL Label]** and an **[!UICONTROL Internal name]**.
-1. Ga naar het **[!UICONTROL Type]** veld en selecteer **[!UICONTROL Mobile application]**.
+1. Definieer een **[!UICONTROL Label]** en een **[!UICONTROL Internal name]**.
+1. Ga naar het **[!UICONTROL Type]** gebied en selecteer **[!UICONTROL Mobile application]**.
 
    >[!NOTE]
    >
-   >De standaarddoelafbeelding is gekoppeld aan de tabel met ontvangers. **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** Als u een verschillende doelafbeelding wilt gebruiken, moet u een nieuwe doelafbeelding tot stand brengen en het ingaan op het **[!UICONTROL Target mapping]** gebied van de dienst. Voor meer bij het creëren van doelafbeelding, verwijs naar de gids [van de](../../configuration/using/about-custom-recipient-table.md)Configuratie.
+   >De standaard **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** doelafbeelding is gekoppeld aan de tabel met ontvangers. Als u een verschillende doelafbeelding wilt gebruiken, moet u een nieuwe doelafbeelding maken en deze invoeren in het veld **[!UICONTROL Target mapping]** van de service. Voor meer bij het creëren van doelafbeelding, verwijs naar [de gids van de Configuratie](../../configuration/using/about-custom-recipient-table.md).
 
    ![](assets/nmac_ios.png)
 
-1. Klik vervolgens op de **[!UICONTROL Add]** knop om het toepassingstype te selecteren.
+1. Klik vervolgens op de knop **[!UICONTROL Add]** om het toepassingstype te selecteren.
 
    ![](assets/nmac_service_2.png)
 
 1. Maak uw Android-toepassing. Raadpleeg deze [sectie](../../delivery/using/configuring-the-mobile-application-android.md#creating-android-app) voor meer informatie.
 
-## Android mobiele toepassing maken {#creating-android-app}
+## Mobiele Android-toepassing {#creating-android-app} maken
 
 Nadat u de service hebt gemaakt, moet u nu uw Android-toepassing maken:
 
-1. Klik vanuit de nieuwe service op de **[!UICONTROL Add]** knop om het toepassingstype te selecteren.
+1. Klik op de knop **[!UICONTROL Add]** van de zojuist gemaakte service om het toepassingstype te selecteren.
 
    ![](assets/nmac_service_2.png)
 
-1. Selecteer **[!UICONTROL Create an Android application]** en typ een **[!UICONTROL Label]**.
+1. Selecteer **[!UICONTROL Create an Android application]** en ga **[!UICONTROL Label]** in.
 
    ![](assets/nmac_android.png)
 
-1. Zorg ervoor dat dit in Adobe Campaign en in de toepassingscode via de SDK **[!UICONTROL Integration key]** is gedefinieerd. Raadpleeg voor meer informatie: [Campagne SDK integreren in de mobiele toepassing](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
+1. Zorg ervoor dat **[!UICONTROL Integration key]** in Adobe Campaign en in de toepassingscode via de SDK wordt gedefinieerd. Raadpleeg voor meer informatie: [De campagne-SDK integreren in de mobiele toepassing](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
 
    >[!NOTE]
    >
-   > De eigenschap **[!UICONTROL Integration key]** is volledig aanpasbaar met tekenreekswaarde, maar moet exact hetzelfde zijn als de waarde die in de SDK is opgegeven.
+   > **[!UICONTROL Integration key]** is volledig aanpasbaar met koordwaarde maar moet precies het zelfde zijn zoals gespecificeerd in SDK.
 
-1. Selecteer de **[!UICONTROL API version]**: HTTP v1 of HTTP (verouderd). Deze configuraties worden beschreven in [deze sectie](#select-api-version)
+1. Selecteer **[!UICONTROL API version]**: HTTP v1 of HTTP (verouderd). Deze configuraties worden beschreven in [deze sectie](#select-api-version)
 
-1. Fill in the **[!UICONTROL Firebase Cloud Messaging the Android connection settings]** fields.
+1. Vul de **[!UICONTROL Firebase Cloud Messaging the Android connection settings]** gebieden in.
 
 1. Klik op **[!UICONTROL Finish]** en vervolgens op **[!UICONTROL Save]**. Uw Android-toepassing kan nu worden gebruikt in Campaign Classic.
 
-Standaard slaat Adobe Campaign een sleutel op in het veld **[!UICONTROL User identifier]** (@userKey) van de **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** tabel. Met deze sleutel kunt u een abonnement koppelen aan een ontvanger. Als u aanvullende gegevens wilt verzamelen (zoals een complexe afstemmingssleutel), moet u de volgende configuratie toepassen:
+Standaard slaat Adobe Campaign een toets op in het veld **[!UICONTROL User identifier]** (@userKey) van de tabel **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**. Met deze sleutel kunt u een abonnement koppelen aan een ontvanger. Als u aanvullende gegevens wilt verzamelen (zoals een complexe afstemmingssleutel), moet u de volgende configuratie toepassen:
 
 ### Selecteer de API-versie{#select-api-version}
 
 Nadat u de service en een nieuwe mobiele toepassing hebt gemaakt, moet u de mobiele toepassing configureren, afhankelijk van de gekozen API-versie.
 
-* **De configuratie van HTTP v1** wordt gedetailleerd in deze [sectie](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
-* **De (erfenis)** configuratie van HTTP is gedetailleerd in deze [sectie](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
+* **De HTTP v1** configuratie is gedetailleerd in deze  [sectie](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
+* **De (erfenis)** configuratie van HTTP is gedetailleerd in deze  [sectie](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
 
-#### HTTP v1-API configureren{#android-service-httpv1}
+#### HTTP v1 API{#android-service-httpv1} configureren
 
 Voer de volgende stappen uit om de HTTP v1 API-versie te configureren:
 
-1. Selecteer in uw **[!UICONTROL Mobile application creation wizard]** venster **[!UICONTROL HTTPV1]** de **[!UICONTROL API version]** vervolgkeuzelijst.
+1. Selecteer **[!UICONTROL HTTPV1]** in de vervolgkeuzelijst **[!UICONTROL API version]** in het venster **[!UICONTROL Mobile application creation wizard]**.
 
-1. Klik **[!UICONTROL Load project json file to extract projet details...]** om het JSON-sleutelbestand rechtstreeks te laden. Raadpleeg deze [pagina](https://firebase.google.com/docs/admin/setup#initialize-sdk)voor meer informatie over het uitpakken van uw JSON-bestand.
+1. Klik **[!UICONTROL Load project json file to extract projet details...]** om uw JSON-sleutelbestand rechtstreeks te laden. Raadpleeg deze [pagina](https://firebase.google.com/docs/admin/setup#initialize-sdk) voor meer informatie over het uitpakken van uw JSON-bestand.
 
    U kunt ook handmatig de volgende gegevens invoeren:
    * **[!UICONTROL Project Id]**
@@ -135,11 +135,11 @@ Voer de volgende stappen uit om de HTTP v1 API-versie te configureren:
 
    >[!CAUTION]
    >
-   >Voor Mid-sourcing Plaatsing, zal de **[!UICONTROL Test connection]** knoop niet controleren of de server MID toegang tot de server FCM heeft.
+   >Voor Mid-sourcing-implementatie controleert de knop **[!UICONTROL Test connection]** niet of de MID-server toegang heeft tot de FCM-server.
 
    ![](assets/nmac_android_11.png)
 
-1. U kunt desgewenst ook de inhoud van een pushbericht verrijken met andere inhoud **[!UICONTROL Application variables]** . Deze zijn volledig aanpasbaar en een deel van de berichtlading wordt verzonden naar het mobiele apparaat.
+1. Als optie kunt u de inhoud van een pushbericht desgewenst verrijken met **[!UICONTROL Application variables]**. Deze zijn volledig aanpasbaar en een deel van de berichtlading wordt verzonden naar het mobiele apparaat.
 
 1. Klik op **[!UICONTROL Finish]** en vervolgens op **[!UICONTROL Save]**. Uw Android-toepassing kan nu worden gebruikt in Campaign Classic.
 
@@ -157,13 +157,13 @@ Hieronder vindt u de namen van FCM-ladingen om uw pushmelding verder aan te pass
 
 Voer de volgende stappen uit om de HTTP-versie (verouderd) te configureren:
 
-1. Selecteer in uw **[!UICONTROL Mobile application creation wizard]** venster **[!UICONTROL HTTP (legacy)]** de **[!UICONTROL API version]** vervolgkeuzelijst.
+1. Selecteer **[!UICONTROL HTTP (legacy)]** in de vervolgkeuzelijst **[!UICONTROL API version]** in het venster **[!UICONTROL Mobile application creation wizard]**.
 
-1. Voer de gegevens in **[!UICONTROL Project key]** die door de ontwikkelaar van de mobiele toepassing zijn opgegeven.
+1. Voer de **[!UICONTROL Project key]** in die door de ontwikkelaar van de mobiele toepassing is opgegeven.
 
-1. U kunt desgewenst ook de inhoud van een pushbericht verrijken met andere inhoud **[!UICONTROL Application variables]** . Deze zijn volledig aanpasbaar en een deel van de berichtlading wordt verzonden naar het mobiele apparaat.
+1. Als optie kunt u de inhoud van een pushbericht desgewenst verrijken met **[!UICONTROL Application variables]**. Deze zijn volledig aanpasbaar en een deel van de berichtlading wordt verzonden naar het mobiele apparaat.
 
-   In het volgende voorbeeld voegen we een **titel**, **imageURL** en **iconURL** toe om uitgebreide pushmeldingen te maken. Vervolgens krijgen de toepassing de afbeelding, titel en het pictogram te zien die binnen het bericht worden weergegeven.
+   In het volgende voorbeeld voegen we **title**, **imageURL** en **iconURL** toe om een uitgebreide pushmelding te maken en geven we de toepassing vervolgens de afbeelding, titel en het pictogram weer die binnen de melding worden weergegeven.
 
    ![](assets/nmac_android_2.png)
 
@@ -178,21 +178,21 @@ Hieronder vindt u de namen van FCM-ladingen om uw pushmelding verder aan te pass
 
 <br>
 
-## Het schema appsubscriptionRcp uitbreiden {#extend-subscription-schema}
+## Het schema appsubscriptionRcp {#extend-subscription-schema} uitbreiden
 
 ![](assets/do-not-localize/how-to-video.png) [Leer hoe u het schema appsubscriptionRcp in video kunt uitbreiden](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=en#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
-U moet het **appsubscriptionRcp** uitbreiden om nieuwe extra gebieden te bepalen om parameters van app in het gegevensbestand van de Campagne op te slaan. Deze velden worden bijvoorbeeld gebruikt voor personalisatie. Dit doet u als volgt:
+U moet **appsubscriptionRcp** uitbreiden om nieuwe extra gebieden te bepalen om parameters van app in het gegevensbestand van de Campagne op te slaan. Deze velden worden bijvoorbeeld gebruikt voor personalisatie. Dit doet u als volgt:
 
-1. Maak een extensie van het **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schema en definieer de nieuwe velden. Meer informatie over schema-extensies vindt u op [deze pagina](../../configuration/using/about-schema-edition.md)
+1. Maak een extensie van het schema **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** en definieer de nieuwe velden. Meer informatie over schemaextensie in [deze pagina](../../configuration/using/about-schema-edition.md)
 
-1. Definieer de toewijzing op het **[!UICONTROL Subscription parameters]** tabblad.
+1. Definieer de toewijzing op het tabblad **[!UICONTROL Subscription parameters]**.
 
    >[!CAUTION]
    >
-   >Zorg ervoor dat de configuratienamen op het **[!UICONTROL Subscription parameters]** tabblad gelijk zijn aan die in de code van de mobiele toepassing. Raadpleeg de [Integrating Campaign SDK in de sectie over mobiele toepassingen](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) .
+   >Zorg ervoor dat de configuratienamen op het tabblad **[!UICONTROL Subscription parameters]** gelijk zijn aan die in de code van de mobiele toepassing. Raadpleeg de sectie [Campagne SDK integreren in de mobiele toepassing](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
 
-## Android-berichten maken {#creating-android-delivery}
+## Android-waarschuwingen maken {#creating-android-delivery}
 
 Met Firebase Cloud Messaging kunt u kiezen uit twee typen berichten:
 
@@ -202,9 +202,9 @@ Met Firebase Cloud Messaging kunt u kiezen uit twee typen berichten:
 * **[!UICONTROL Notification message]**, automatisch afgehandeld door de FCM SDK.
    <br> FCM geeft automatisch het bericht weer op de apparaten van uw gebruikers namens de client-app. Meldingsberichten bevatten een vooraf gedefinieerde set parameters en opties, maar kunnen nog steeds verder worden aangepast met aangepaste toepassingsvariabelen.
 
-Raadpleeg de [FCM-documentatie](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages)voor meer informatie over de berichttypen in Firebase Cloud Messaging.
+Raadpleeg [FCM-documentatie](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages) voor meer informatie over de berichttypen in Firebase Cloud Messaging.
 
-### Een gegevensbericht maken {#creating-data-message}
+### Gegevensbericht {#creating-data-message} maken
 
 1. Ga naar **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
@@ -212,28 +212,28 @@ Raadpleeg de [FCM-documentatie](https://firebase.google.com/docs/cloud-messaging
 
    ![](assets/nmac_android_3.png)
 
-1. Selecteer **[!UICONTROL Deliver on Android (android)]** in de **[!UICONTROL Delivery template]** drop-down. Voeg een **[!UICONTROL Label]** object toe aan uw levering.
+1. Selecteer **[!UICONTROL Deliver on Android (android)]** in **[!UICONTROL Delivery template]** drop-down. Voeg een **[!UICONTROL Label]** aan uw levering toe.
 
-1. Klik **[!UICONTROL To]** om de populatie te bepalen die moet worden gericht. Standaard wordt de **[!UICONTROL Subscriber application]** doeltoewijzing toegepast. Klik **[!UICONTROL Add]** om uw service te selecteren.
+1. Klik op **[!UICONTROL To]** om de doelpopulatie te definiëren. Standaard wordt de **[!UICONTROL Subscriber application]**-doeltoewijzing toegepast. Klik **[!UICONTROL Add]** om uw dienst te selecteren.
 
    ![](assets/nmac_android_7.png)
 
-1. Selecteer in het **[!UICONTROL Target type]** venster **[!UICONTROL Subscribers of an Android mobile application]** en klik op **[!UICONTROL Next]**.
+1. Selecteer **[!UICONTROL Target type]** in het venster &lt;a0/> en klik **[!UICONTROL Next]**.**[!UICONTROL Subscribers of an Android mobile application]**
 
-1. Selecteer in de **[!UICONTROL Service]** vervolgkeuzelijst eerst de eerder gemaakte service en vervolgens de toepassing en klik op **[!UICONTROL Finish]**.
-Het **[!UICONTROL Application variables]** wordt automatisch toegevoegd afhankelijk van wat tijdens de configuratiestappen werd toegevoegd.
+1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Service]** de eerder gemaakte service en klik vervolgens op **[!UICONTROL Finish]**.
+**[!UICONTROL Application variables]** worden automatisch toegevoegd afhankelijk van wat tijdens de configuratiestappen werd toegevoegd.
 
    ![](assets/nmac_android_6.png)
 
-1. Selecteren **[!UICONTROL data message]** als **[!UICONTROL Message Type]**.
+1. Selecteer **[!UICONTROL data message]** als **[!UICONTROL Message Type]**.
 
 1. Bewerk uw uitgebreide melding.
 
    ![](assets/nmac_android_5.png)
 
-1. U kunt informatie in eerder gevormd toevoegen **[!UICONTROL Application variables]** indien nodig. **[!UICONTROL Application variables]** moet worden geconfigureerd in de Android-service en maakt deel uit van de berichtlading die naar het mobiele apparaat wordt verzonden.
+1. U kunt informatie in uw eerder gevormde **[!UICONTROL Application variables]** indien nodig toevoegen. **[!UICONTROL Application variables]** moet worden geconfigureerd in de Android-service en maakt deel uit van de berichtlading die naar het mobiele apparaat wordt verzonden.
 
-1. Klik en verzend uw levering. **[!UICONTROL Save]**
+1. Klik **[!UICONTROL Save]** en verzend uw levering.
 
 De afbeelding en webpagina moeten worden weergegeven in het pushbericht wanneer deze worden ontvangen op de mobiele Android-apparaten van de abonnees.
 
@@ -253,19 +253,19 @@ De afbeelding en webpagina moeten worden weergegeven in het pushbericht wanneer 
 
    ![](assets/nmac_android_3.png)
 
-1. Selecteer **[!UICONTROL Deliver on Android (android)]** in de **[!UICONTROL Delivery template]** drop-down. Voeg een **[!UICONTROL Label]** object toe aan uw levering.
+1. Selecteer **[!UICONTROL Deliver on Android (android)]** in **[!UICONTROL Delivery template]** drop-down. Voeg een **[!UICONTROL Label]** aan uw levering toe.
 
-1. Klik **[!UICONTROL To]** om de populatie te bepalen die moet worden gericht. Standaard wordt de **[!UICONTROL Subscriber application]** doeltoewijzing toegepast. Klik **[!UICONTROL Add]** om uw service te selecteren.
+1. Klik op **[!UICONTROL To]** om de doelpopulatie te definiëren. Standaard wordt de **[!UICONTROL Subscriber application]**-doeltoewijzing toegepast. Klik **[!UICONTROL Add]** om uw dienst te selecteren.
 
    ![](assets/nmac_android_7.png)
 
-1. Selecteer in het **[!UICONTROL Target type]** venster **[!UICONTROL Subscribers of an Android mobile application]** en klik op **[!UICONTROL Next]**.
+1. Selecteer **[!UICONTROL Target type]** in het venster &lt;a0/> en klik **[!UICONTROL Next]**.**[!UICONTROL Subscribers of an Android mobile application]**
 
-1. Selecteer in de **[!UICONTROL Service]** vervolgkeuzelijst eerst de eerder gemaakte service en vervolgens de toepassing en klik op **[!UICONTROL Finish]**.
+1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Service]** de eerder gemaakte service en klik vervolgens op **[!UICONTROL Finish]**.
 
    ![](assets/nmac_android_6.png)
 
-1. Selecteren **[!UICONTROL notification message]** als **[!UICONTROL Message Type]**.
+1. Selecteer **[!UICONTROL notification message]** als **[!UICONTROL Message Type]**.
 
 1. Voeg een titel toe en bewerk uw bericht. Pas uw pushmelding aan met de **[!UICONTROL Notification options]**:
 
@@ -276,25 +276,25 @@ De afbeelding en webpagina moeten worden weergegeven in het pushbericht wanneer 
    * **[!UICONTROL Tag]**: Stel de id in die wordt gebruikt om bestaande meldingen in de meldingslade te vervangen.
    * **[!UICONTROL Click action]**: Stel de handeling in die aan een gebruiker is gekoppeld, en klik op het bericht.
 
-   Raadpleeg de **[!UICONTROL Notification options]** FCM-documentatie [voor meer informatie over het invullen van deze velden](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification)en hoe u deze kunt invullen.
+   Raadpleeg [FCM-documentatie](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification) voor meer informatie over **[!UICONTROL Notification options]** en hoe u deze velden invult.
 
    ![](assets/nmac_android_8.png)
 
-1. Als uw toepassing is geconfigureerd met het HTTP v1 API-protocol, kunt u uw pushmelding verder aanpassen met het volgende **[!UICONTROL HTTPV1 additional options]**:
+1. Als uw toepassing met het protocol van HTTP v1 API wordt gevormd, kunt u uw dupmelding verder personaliseren met het volgende **[!UICONTROL HTTPV1 additional options]**:
 
    * **[!UICONTROL Ticker]**: Stel de tekst van de markering in voor uw melding. Alleen beschikbaar voor apparaten die zijn ingesteld op Android 5.0 Lollipop.
    * **[!UICONTROL Image]**: Stel de URL van de afbeelding in die in uw melding moet worden weergegeven.
    * **[!UICONTROL Notification Count]**: Stel het aantal nieuwe ongelezen gegevens in dat u rechtstreeks op het toepassingspictogram wilt weergeven.
    * **[!UICONTROL Sticky]**: Ingesteld op true of false. Indien ingesteld op false, wordt het bericht automatisch genegeerd wanneer de gebruiker erop klikt. Indien ingesteld op true, wordt het bericht nog steeds weergegeven, zelfs wanneer de gebruiker erop klikt.
-   * **[!UICONTROL Notification Priority]**: Plaats de prioritaire niveaus van uw bericht aan gebrek, minimum, laag of hoog. For more on this, refer to [FCM documentation](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
-   * **[!UICONTROL Visibility]**: Stel de zichtbaarheidsniveaus van uw melding in op openbaar, privé of geheim. For more on this, refer to [FCM documentation](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
+   * **[!UICONTROL Notification Priority]**: Plaats de prioritaire niveaus van uw bericht aan gebrek, minimum, laag of hoog. Raadpleeg [FCM-documentatie](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority) voor meer informatie.
+   * **[!UICONTROL Visibility]**: Stel de zichtbaarheidsniveaus van uw melding in op openbaar, privé of geheim. Raadpleeg [FCM-documentatie](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility) voor meer informatie.
 
-   Raadpleeg de **[!UICONTROL HTTP v1 additional options]** FCM-documentatie [voor meer informatie over het invullen van deze velden](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification)en hoe u deze kunt invullen.
+   Raadpleeg [FCM-documentatie](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification) voor meer informatie over **[!UICONTROL HTTP v1 additional options]** en hoe u deze velden invult.
 
    ![](assets/nmac_android_9.png)
 
-1. U kunt informatie in eerder gevormd toevoegen **[!UICONTROL Application variables]** indien nodig. **[!UICONTROL Application variables]** moet worden geconfigureerd in de Android-service en maakt deel uit van de berichtlading die naar het mobiele apparaat wordt verzonden.
+1. U kunt informatie in uw eerder gevormde **[!UICONTROL Application variables]** indien nodig toevoegen. **[!UICONTROL Application variables]** moet worden geconfigureerd in de Android-service en maakt deel uit van de berichtlading die naar het mobiele apparaat wordt verzonden.
 
-1. Klik en verzend uw levering. **[!UICONTROL Save]**
+1. Klik **[!UICONTROL Save]** en verzend uw levering.
 
 De afbeelding en webpagina moeten worden weergegeven in het pushbericht wanneer deze worden ontvangen op de mobiele Android-apparaten van de abonnees.
