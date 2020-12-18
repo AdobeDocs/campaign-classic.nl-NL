@@ -35,4 +35,4 @@ Er zijn twee typen sjablonen:
 
 >[!NOTE]
 >
->De beschikbare malplaatjes hangen van uw toegangsrechten, van uw instantieconfiguratie, en van de context af. Wanneer u bijvoorbeeld een informatiedienst maakt, kunt u een leveringssjabloon koppelen voor bevestigingsberichten: u kunt dan slechts tot de malplaatjes toegang hebben waarvan doelafbeelding de abonnementstoewijzing is. Raadpleeg voor meer informatie [Een doeltoewijzing](../../delivery/using/selecting-a-target-mapping.md) en [Informatie over services en abonnementen](../../delivery/using/about-services-and-subscriptions.md)selecteren.
+>De beschikbare malplaatjes hangen van uw toegangsrechten, van uw instantieconfiguratie, en van de context af. Wanneer u bijvoorbeeld een informatiedienst maakt, kunt u een leveringssjabloon koppelen voor bevestigingsberichten: u kunt dan slechts tot de malplaatjes toegang hebben waarvan doelafbeelding de abonnementstoewijzing is. Raadpleeg [Een doeltoewijzing selecteren](../../delivery/using/selecting-a-target-mapping.md) en [Informatie over services en abonnementen](../../delivery/using/about-services-and-subscriptions.md) voor meer informatie.
