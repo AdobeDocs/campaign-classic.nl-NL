@@ -50,7 +50,7 @@ De mappen waarvan een back-up moet worden gemaakt, zijn daarom:
 
 * nl6/var/`<instanceName>`/log (optioneel)
 
-* nl6/var/`<instanceName>`/relais (facultatief)
+* nl6/var/`<instanceName>`/relais (optioneel)
 
 >[!IMPORTANT]
 >
