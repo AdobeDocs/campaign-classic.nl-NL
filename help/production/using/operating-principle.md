@@ -23,17 +23,17 @@ Er zijn veel Adobe Campaign-modules. Sommige werken onophoudelijk, terwijl ander
 
 Er zijn drie typen Adobe Campaign-modules:
 
-* Modules met meerdere instanties: er wordt één proces voor alle instanties uitgevoerd. Dit geldt voor de volgende modules: **web**, **syslogd**, **trackinglogd** en **watchdog** (activiteiten uit het bestand **config-default.xml** ).
-* Monoinstantiemodules: één proces wordt per instantie uitgevoerd. Dit geldt voor de volgende modules: **mta**, **wfserver**, **inMail**, **sms** en **stat** (activiteiten van het **`<instance>`** config-.xml-bestand).
-* Hulpprogrammamodules: dit zijn modules die af en toe worden in werking gesteld om af en toe of terugkerende verrichtingen (**schoonmaakbeurt**, **config**, het downloaden het volgen logboeken, enz.) uit te voeren.
+* Modules met meerdere instanties: er wordt één proces voor alle instanties uitgevoerd. Dit geldt voor de volgende modules: **web**, **syslogd**, **trackinglogd** en **watchdog** (activiteiten uit het bestand **config-default.xml**).
+* Monoinstantiemodules: één proces wordt per instantie uitgevoerd. Dit geldt voor de volgende modules: **mta**, **wfserver**, **inMail**, **sms** en **stat** (activiteiten uit het bestand **config-`<instance>`.xml**).
+* Hulpprogrammamodules: Dit zijn modules die af en toe worden uitgevoerd om af en toe of terugkerende bewerkingen uit te voeren (**opschoning**, **config**, het downloaden van trackinglogbestanden, enz.).
 
-Het beleid van de module wordt uitgevoerd gebruikend het **hulpmiddel** van de bevellijn die in de **bin** folder van de installatiemap wordt geïnstalleerd.
+Het beheer van de module wordt uitgevoerd met het opdrachtregelprogramma **nlserver** geïnstalleerd in de map **bin** van de installatiemap.
 
-De algemene syntaxis van het gereedschap **Nlserver** is als volgt:
+De algemene syntaxis van het **nlserver** hulpmiddel is als volgt:
 
-**nlserver `<command>``<command arguments>`**
+**nlserver  `<command>``<command arguments>`**
 
-Voor de lijst van beschikbare modules, gebruik het **nlserver** bevel.
+Voor de lijst van beschikbare modules, gebruik **nlserver** bevel.
 
 De beschikbare modules worden in de volgende tabel beschreven:
 
