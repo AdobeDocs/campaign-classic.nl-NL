@@ -19,9 +19,9 @@ ht-degree: 3%
 
 Adobe Campaign Workflow HeatMap bestaat uit een grafische voorstelling met kleurcodes van alle workflows die momenteel worden uitgevoerd. Het is alleen beschikbaar voor de Instance Administrators.
 
-In [deze pagina](../../production/using/monitoring-guidelines.md)worden extra manieren weergegeven om de verschillende campagneprocessen te controleren.
+Aanvullende manieren om de verschillende campagneprocessen te controleren worden weergegeven op [deze pagina](../../production/using/monitoring-guidelines.md).
 
-## Over de workflow HeatMap {#about-the-workflow-heatmap}
+## Over de Workflow HeatMap {#about-the-workflow-heatmap}
 
 Door een snel overzicht te geven van het aantal gelijktijdige workflows, stelt de Workflow HeatMap de beheerders van het Adobe Campaign-platform in staat de belasting op de instantie te controleren en de workflows dienovereenkomstig te plannen.
 
@@ -36,11 +36,11 @@ Meer bepaald, helpt het de platformbeheerders om:
 
 >[!NOTE]
 >
->Naast de Heatmap **van het** Werkschema, kunt u een werkschema tot stand brengen dat u de status van een reeks werkschema&#39;s zal laten controleren en terugkomende berichten naar supervisors zal verzenden. For more on this, refer to the [dedicated section](../../workflow/using/supervising-workflows.md).
+>Naast **Workflow Heatmap**, kunt u een werkschema tot stand brengen dat u de status van een reeks werkschema&#39;s zal laten controleren en terugkomende berichten naar supervisors zal verzenden. Raadpleeg voor meer informatie de [toegewezen sectie](../../workflow/using/supervising-workflows.md).
 
-Het gebruiken van het Werkschema HeatMap vereist om een goed inzicht in de volgende concepten te hebben: [Workflows](../../workflow/using/about-workflows.md), [activiteiten](../../workflow/using/about-activities.md) en best practices voor [workflows](../../workflow/using/workflow-best-practices.md).
+Het gebruiken van het Werkschema HeatMap vereist om een goed inzicht in de volgende concepten te hebben: [Workflows](../../workflow/using/about-workflows.md), [Activiteiten](../../workflow/using/about-activities.md) en [Best practices voor workflow](../../workflow/using/workflow-best-practices.md).
 
-De Workflow HeatMap is standaard beschikbaar in Adobe Campaign vanaf versie 18.10. Als u een build tussen 8700 en 8977 (18.10) hebt, kunt u ook van deze mogelijkheid profiteren. Als u het corresponderende pakket wilt aanvragen, neemt u contact op met de [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) en volgt u de instructies van [deze pagina](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) om te begrijpen hoe u het pakket kunt installeren.
+De Workflow HeatMap is standaard beschikbaar in Adobe Campaign vanaf versie 18.10. Als u een build tussen 8700 en 8977 (18.10) hebt, kunt u ook van deze mogelijkheid profiteren. Als u het corresponderende pakket wilt aanvragen, neemt u contact op met de [Adobe-klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) en volgt u de instructies van [deze pagina](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) om te begrijpen hoe u het pakket kunt installeren.
 
 Wanneer u voor het eerst toegang krijgt tot Worklow HeatMap, wordt het volgende pop-upvenster weergegeven. Met deze overeenkomst kunnen in de Verenigde Staten gegevens worden overgedragen en opgeslagen, zodat Adobe Campaign:
 
@@ -55,17 +55,17 @@ Er zijn drie opties beschikbaar:
 
 * **[!UICONTROL Accept]** : Door deze overeenkomst te accepteren, machtigt u Adobe Campaign om uw gegevens te verzamelen en deze naar de Verenigde Staten over te brengen om u te kunnen helpen in geval van afwijkende detecties.
 * **[!UICONTROL Refuse]** : Door de overeenkomst te weigeren, worden uw gegevens niet overgedragen, maar kunt u nog wel Workflowoverzicht gebruiken.
-* **[!UICONTROL Do not show this message again]** : Door te klikken **[!UICONTROL Do not show this message again]** , zal het pop-up venster ophouden tonen wanneer het toegang tot van het Werkschema Heatmap maar nog beschikbaar bij de **[!UICONTROL Term of use]** knoop.
+* **[!UICONTROL Do not show this message again]** : Door te klikken  **[!UICONTROL Do not show this message again]** , zal het pop-up venster ophouden tonen wanneer het toegang tot van het Werkschema Heatmap maar nog beschikbaar bij de  **[!UICONTROL Term of use]** knoop.
 
-Deze keuze is niet definitief, u kunt deze altijd wijzigen door op de **[!UICONTROL Term of use]** knop te klikken.
+Deze keuze is niet definitief, u kunt deze altijd wijzigen door op de knop **[!UICONTROL Term of use]** te klikken.
 
-## HeatMap gebruiken {#using-the-heatmap}
+## HeatMap {#using-the-heatmap} gebruiken
 
 >[!NOTE]
 >
 >Alleen gebruikers met beheerrechten hebben toegang tot de HeatMap van de Campagne-werkstroom.
 
-1. Ga naar **[!UICONTROL Monitoring]** en klik op de **[!UICONTROL Workflow HeatMap]** koppeling om de **[!UICONTROL Campaign Workflow HeatMap]** pagina weer te geven.
+1. Ga naar **[!UICONTROL Monitoring]** en klik op de koppeling **[!UICONTROL Workflow HeatMap]** om de pagina **[!UICONTROL Campaign Workflow HeatMap]** weer te geven.
 
    ![](assets/wkf_monitoring_path.png)
 
@@ -75,7 +75,7 @@ Deze keuze is niet definitief, u kunt deze altijd wijzigen door op de **[!UICONT
 
    >[!NOTE]
    >
-   >Alleen de workflows die niet door de **[!UICONTROL Database cleanup]** workflow zijn verwijderd, zijn zichtbaar. Raadpleeg [deze sectie](../../production/using/database-cleanup-workflow.md)voor meer informatie over de workflow voor het opschonen van databases.\
+   >Alleen de workflows die niet zijn verwijderd door de **[!UICONTROL Database cleanup]**-workflow zijn zichtbaar. Raadpleeg [deze sectie](../../production/using/database-cleanup-workflow.md) voor meer informatie over de workflow voor het opschonen van databases.\
    >Door gebrek, is de de tijdzone van de Werkstroom HeatMap die voor de huidige beheerdergebruiker wordt bepaald. U kunt deze bijvoorbeeld wijzigen als u zich niet in hetzelfde gebied bevindt als de marketinggebruikers waarmee u werkt.
 
 1. Klik op de knop **[!UICONTROL Filters]**.
@@ -86,33 +86,33 @@ Deze keuze is niet definitief, u kunt deze altijd wijzigen door op de **[!UICONT
 
    ![](assets/wkf_monitoring_filters_duration.png)
 
-1. U kunt ook een specifieke workflow kiezen in de **[!UICONTROL Workflows]** lijst.
+1. U kunt ook een specifieke workflow kiezen in de lijst **[!UICONTROL Workflows]**.
 
    ![](assets/wkf_monitoring_filters_workflows.png)
 
    >[!NOTE]
    >
-   >Het **[!UICONTROL Min duration]** filter wordt toegepast. Als u geen specifieke workflow kunt vinden, stelt u de minimale duur in op 0, zodat alle workflows in de lijst worden weergegeven.
+   >Het filter **[!UICONTROL Min duration]** wordt toegepast. Als u geen specifieke workflow kunt vinden, stelt u de minimale duur in op 0, zodat alle workflows in de lijst worden weergegeven.
 
-1. U kunt ook filteren op het volgende **[!UICONTROL Workflow type]** :
+1. U kunt ook filteren op **[!UICONTROL Workflow type]**:
 
-   * **[!UICONTROL Technical]** : Alleen [out-of-the-box-technische workflows](../../workflow/using/building-a-workflow.md#technical-workflows) en [gegevensbeheerworkflows](../../workflow/using/targeting-data.md#data-management) worden weergegeven.
-   * **[!UICONTROL Marketing]** : Alleen workflows die zijn gekoppeld aan een marketingcampagne, ook wel [campagneworkflows](../../workflow/using/building-a-workflow.md#campaign-workflows)genoemd, worden weergegeven.
+   * **[!UICONTROL Technical]** : Alleen  [out-of-the-box-technische ](../../workflow/using/building-a-workflow.md#technical-workflows) workflows en  [gegevensbeheerworkflows ](../../workflow/using/targeting-data.md#data-management) worden weergegeven.
+   * **[!UICONTROL Marketing]** : Alleen workflows die zijn gekoppeld aan een marketingcampagne, ook wel  [campagneworkflows](../../workflow/using/building-a-workflow.md#campaign-workflows) genoemd, worden weergegeven.
 
-1. Als u een specifieke workflow op naam wilt doorzoeken, kunt u ook het **[!UICONTROL Workflow name filter]** veld gebruiken.
+1. Als u een specifieke workflow op naam wilt doorzoeken, kunt u ook het veld **[!UICONTROL Workflow name filter]** gebruiken.
 
    ![](assets/wkf_monitoring_filters_name.png)
 
-1. Als u enkele workflows hebt bewerkt in de tussenliggende tijd, klikt u op de **[!UICONTROL Reload data]** knop om de gegevens die in het raster worden weergegeven, te vernieuwen.
+1. Als u enkele workflows hebt bewerkt in de tussenliggende tijd, klikt u op de knop **[!UICONTROL Reload data]** om de gegevens te vernieuwen die in het raster worden weergegeven.
 
-## De HeatMap lezen {#reading-the-heatmap}
+## HeatMap {#reading-the-heatmap} lezen
 
 De Campagne Workflow HeatMap is een raster dat van linksboven naar rechtsonder kan worden gelezen, zodat de &#39;hot zones&#39; kunnen worden gevonden met een groen tot rood kleurgecodeerd bereik.
 
 * De donkerdere rode cellen komen overeen met de periodes waarin een groot aantal workflows tegelijkertijd wordt uitgevoerd.
 * De grijze cellen komen overeen met periodes waarin geen workflow wordt uitgevoerd.
 
-Als u wilt weten hoe de kleurcode wordt toegepast en hoe u door de HeatMap kunt navigeren, klikt u op de **[!UICONTROL Help]** knop.
+Als u wilt weten hoe de kleurcode wordt toegepast en hoe u door de HeatMap kunt navigeren, klikt u op de knop **[!UICONTROL Help]**.
 
 ![](assets/wkf_monitoring_legend.png)
 
@@ -131,17 +131,17 @@ In het onderstaande voorbeeld worden tussen 8.00 uur en 8.05 uur drie workflows 
    Voor elke werkstroom worden alle activiteiten in de werkstroom vermeld, met hun duur.
 
 1. Klik op de werkstroom-id of naam om een werkstroom rechtstreeks te openen.
-1. Klik op de **[!UICONTROL Campaign Workflow HeatMap]** knop om terug te gaan naar de **[!UICONTROL Home]** weergave.
+1. Klik op de knop **[!UICONTROL Home]** om terug te gaan naar de weergave **[!UICONTROL Campaign Workflow HeatMap]**.
 
-## Gebruik hoofdletters/kleine letters: het gebruiken van HeatMap om acties te voeren {#use-cases--using-the-heatmap-to-take-actions}
+## Gebruik hoofdletters/kleine letters: HeatMap gebruiken om handelingen {#use-cases--using-the-heatmap-to-take-actions} uit te voeren
 
 Er zijn twee belangrijke gevallen waar het de werkschema HeatMap van de Campagne nuttig kan zijn.
 
-### Het aantal gelijktijdige workflows verminderen {#reducing-the-number-of-concurrent-workflows}
+### Het aantal gelijktijdige workflows reduceren {#reducing-the-number-of-concurrent-workflows}
 
 Als beheerder van de Campagne, kan het Werkschema HeatMap u helpen om de lading op de instantie te begrijpen en bestaande of nieuwe werkschema&#39;s op aangewezen tijden te plannen.
 
-1. Klik in de **[!UICONTROL Campaign Workflow HeatMap]** weergave op de **[!UICONTROL Filters]** knop.
+1. Klik in de weergave **[!UICONTROL Campaign Workflow HeatMap]** op de knop **[!UICONTROL Filters]**.
 1. Stel de duur in op een paar seconden of een paar minuten.
 1. Sluit de kortste werkstromen uit die niet significant zijn door het duurfilter te verhogen.
 
@@ -152,31 +152,31 @@ Als beheerder van de Campagne, kan het Werkschema HeatMap u helpen om de lading 
    * Als er prestatieproblemen optreden en er een of meer rode cellen in het raster worden weergegeven, kunt u de begintijd van verschillende workflows wijzigen. Vraag de marketinggebruikers om de werkstromen handmatig van bezige (&quot;hot&quot;) perioden naar meer beschikbare tijdsleuven te verplaatsen. Dit moet de dag een stabiel niveau van activiteit handhaven.
    * Om pieken te vermijden en de instantie te verhinderen overbelasting, bekijk HeatMap alvorens nieuwe werkschema&#39;s te plannen en de beste tijd te kiezen. Overweeg tijdsleuven die overeenkomen met grijze of groene cellen in het raster om nieuwe workflows te starten.
 
-### Langlopende workflows zoeken die invloed hebben op de prestaties {#finding-long-running-workflows-that-impact-performance}
+### Langlopende workflows zoeken die van invloed zijn op de prestaties {#finding-long-running-workflows-that-impact-performance}
 
 Als Campagnebeheerder, helpt het Werkschema HeatMap u om de langste werkschema&#39;s te vinden die de activiteit kunnen vertragen.
 
-1. Klik in de **[!UICONTROL Campaign Workflow HeatMap]** weergave op de **[!UICONTROL Filters]** knop.
+1. Klik in de weergave **[!UICONTROL Campaign Workflow HeatMap]** op de knop **[!UICONTROL Filters]**.
 1. Stel de duur in op 1 uur.
 
    ![](assets/wkf_monitoring_long_duration.png)
 
-1. Neem meer resultaten op door het **[!UICONTROL Min duration]** filter te verlagen.
+1. Neem meer resultaten op door het filter **[!UICONTROL Min duration]** te verlagen.
 1. Onderzoek de resultaten om de langste werkschema&#39;s te vinden, die potentieel meer invloed op de server en gegevensbestandmiddelen (cpu, RAM, netwerk, IOPS, etc.) kunnen hebben.
 1. Voer passende maatregelen uit:
 
    * Adviseer marketinggebruikers om de langste workflows te splitsen om de verwerkingstijd te verminderen.
    * Start een diepgaande analyse van specifieke workflows en specifieke activiteiten (zoals JavaScript, importeren, exporteren, enzovoort) om de problemen te isoleren en eenvoudiger op te lossen.
 
-## Voorbeeld: Het gebruiken van HeatMap om werkschemaplanning te verbeteren {#example--using-the-heatmap-to-improve-workflow-planning}
+## Voorbeeld: HeatMap gebruiken om de werkstroomplanning te verbeteren {#example--using-the-heatmap-to-improve-workflow-planning}
 
 In het onderstaande voorbeeld ziet u hoe planning efficiënter kan zijn en hoe de prestaties kunnen worden verbeterd bij gebruik van de Adobe Campaign Workflow HeatMap.
 
 In dit geval klagen veel gebruikers over workflowprestaties. U moet controleren wat de activiteit vertraagt en hoe te om het probleem op te lossen.
 
-1. Ga naar **[!UICONTROL Monitoring]** en klik op de **[!UICONTROL Workflows]** koppeling om de **[!UICONTROL Campaign Workflow HeatMap]** pagina weer te geven.
-1. Stel het **[!UICONTROL Min duration]** filter in op 5 minuten.
-1. Stel het **[!UICONTROL Workflow type]** filter in op **[!UICONTROL Marketing]** .
+1. Ga naar **[!UICONTROL Monitoring]** en klik op de koppeling **[!UICONTROL Workflows]** om de pagina **[!UICONTROL Campaign Workflow HeatMap]** weer te geven.
+1. Stel het filter **[!UICONTROL Min duration]** in op 5 minuten.
+1. Stel het filter **[!UICONTROL Workflow type]** in op **[!UICONTROL Marketing]**.
 1. Neem het volgende in acht vanaf het HeatMap-raster:
 
    ![](assets/wkf_monitoring_without.png)
@@ -187,7 +187,7 @@ In dit geval klagen veel gebruikers over workflowprestaties. U moet controleren 
    * De prestaties zijn laag.
 
 1. In plaats van vijftig workflows te hebben die om 10.00 uur beginnen, verdeel de werkstromen&#39; beginnende tijden gelijkelijk over de rest van de dag.
-1. Ga terug naar de **[!UICONTROL Campaign Workflow HeatMap]** pagina en klik op de **[!UICONTROL Reload data]** knop.
+1. Ga terug naar de **[!UICONTROL Campaign Workflow HeatMap]** pagina en klik **[!UICONTROL Reload data]** knoop.
 1. Neem nu het volgende in acht:
 
    ![](assets/wkf_monitoring_with.png)
