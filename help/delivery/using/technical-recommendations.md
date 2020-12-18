@@ -27,7 +27,7 @@ Adobe Campaign controleert of omgekeerde DNS voor een IP adres wordt gegeven en 
 
 Een belangrijk punt in de netwerkconfiguratie zorgt ervoor dat correcte omgekeerde DNS voor elk van de IP adressen voor uitgaande berichten wordt bepaald. Dit betekent dat voor een bepaald IP adres, er een omgekeerd DNS verslag (PTR verslag) met een passende DNS (een verslag van A) die terug naar het aanvankelijke IP adres van een lus voorzien is.
 
-De domeinkeus voor omgekeerde DNS heeft een effect wanneer het behandelen van bepaalde ISPs. AOL, in het bijzonder, keurt slechts terugkoppelt lijnen met een adres in het zelfde domein als omgekeerde DNS (zie de lijn [van de](#feedback-loop)Terugkoppeling) goed.
+De domeinkeus voor omgekeerde DNS heeft een effect wanneer het behandelen van bepaalde ISPs. AOL, in het bijzonder, keurt slechts terugkoppelt lijnen met een adres in het zelfde domein als omgekeerde DNS (zie [Terugkoppelen lijn](#feedback-loop)) goed.
 
 Een hulpmiddel is beschikbaar om de configuratie van een domein te verifiëren: [https://mxtoolbox.com/SuperTool.aspx](https://mxtoolbox.com/SuperTool.aspx).
 
@@ -37,7 +37,7 @@ MX-regels (Mail eXchanger) zijn de regels die de communicatie tussen een verzend
 
 Meer bepaald, worden zij gebruikt om de snelheid te controleren waarbij de Campagne MTA (de Agent van de Overdracht van het Bericht) e-mail naar elk individueel e-maildomein of ISP (b.v. hotmail.com, comcast.net) verzendt. Deze regels zijn typisch gebaseerd op grenzen die door ISPs worden gepubliceerd (bijvoorbeeld omvatten niet meer dan 20 berichten per elke verbinding SMTP).
 
-For more on MX management, refer to [this section](../../installation/using/email-deliverability.md#mx-configuration).
+Raadpleeg [deze sectie](../../installation/using/email-deliverability.md#mx-configuration) voor meer informatie over MX-beheer.
 
 ### TLS {#tls}
 
@@ -53,7 +53,7 @@ Er is een hulpprogramma beschikbaar om een SPF-record te controleren: [https://w
 
 SPF is een techniek die, tot op zekere hoogte, u toelaat om ervoor te zorgen dat de domeinnaam die in een e-mail wordt gebruikt niet wordt vervalst. Wanneer een bericht van een domein wordt ontvangen, wordt de DNS server van het domein gevraagd. De reactie is een kort verslag (het SPF verslag) dat details welke servers worden gemachtigd om e-mail van dit domein te verzenden. Als wij veronderstellen dat slechts de eigenaar van het domein de middelen heeft om dit verslag te veranderen, kunnen wij in overweging nemen dat deze techniek niet het afzenderadres om toelaat te vervalsen, minstens niet het deel van het recht van &quot;@&quot;.
 
-In de definitieve specificatie [](https://www.rfc-editor.org/info/rfc4408)RFC 4408, worden twee elementen van het bericht gebruikt om het domein te bepalen dat als afzender wordt beschouwd: Het domein dat door het bevel van SMTP &quot;HELO&quot;(of &quot;EHLO&quot;) wordt gespecificeerd en het domein dat door het adres van de &quot;terugkeer-Weg&quot;(of &quot;MAIL VAN&quot;) kopbal wordt gespecificeerd, die ook het stuiteradres is. Op grond van verschillende overwegingen kan slechts met een van deze waarden rekening worden gehouden; wij adviseren ervoor te zorgen dat beide bronnen het zelfde domein specificeren.
+In het definitieve [RFC 4408 specificatie](https://www.rfc-editor.org/info/rfc4408), worden twee elementen van het bericht gebruikt om het domein te bepalen dat als afzender wordt beschouwd: Het domein dat door het bevel van SMTP &quot;HELO&quot;(of &quot;EHLO&quot;) wordt gespecificeerd en het domein dat door het adres van de &quot;terugkeer-Weg&quot;(of &quot;MAIL VAN&quot;) kopbal wordt gespecificeerd, die ook het stuiteradres is. Op grond van verschillende overwegingen kan slechts met een van deze waarden rekening worden gehouden; wij adviseren ervoor te zorgen dat beide bronnen het zelfde domein specificeren.
 
 Het controleren van SPF verstrekt een evaluatie van de geldigheid van het domein van de afzender:
 
@@ -73,24 +73,24 @@ De (DomainKeys Identified Mail) authentificatie DKIM is een opvolger van SPF en 
 
 DKIM komt uit een combinatie DomainKeys, Yahoo! en Cisco identificeerde de authentificatieprincipes van de Post van Internet en wordt gebruikt om de authenticiteit van het afzenderdomein te controleren en de integriteit van het bericht te waarborgen.
 
-DKIM heeft **DomainKeys** -verificatie vervangen.
+DKIM heeft **DomainKeys**-verificatie vervangen.
 
 Voor het gebruik van DKIM zijn enkele voorwaarden vereist:
 
 * **Beveiliging**: encryptie is een zeer belangrijk element van DKIM en om het veiligheidsniveau van DKIM sinds het voorjaar 2013 te verzekeren, is 1024b de Beste praktijken geadviseerde encryptiegrootte. De lagere sleutels DKIM zullen niet als geldig door de meerderheid van toegangsleveranciers worden beschouwd.
-* **Reputatie**: de reputatie is gebaseerd op IP en/of het domein, maar de minder transparante selecteur DKIM is ook een zeer belangrijk element dat in aanmerking moet worden genomen. Het is belangrijk dat u de kiezer kiest: vermijden dat de &quot; wanbetaling &quot; , die door iedereen gebruikt zou kunnen worden , behouden blijft en dus een zeer zwakke reputatie heeft . U moet een verschillende selecteur voor **behoud vs. verwervingsmededelingen** en voor authentificatie uitvoeren.
+* **Reputatie**: de reputatie is gebaseerd op IP en/of het domein, maar de minder transparante selecteur DKIM is ook een zeer belangrijk element dat in aanmerking moet worden genomen. Het is belangrijk dat u de kiezer kiest: vermijden dat de &quot; wanbetaling &quot; , die door iedereen gebruikt zou kunnen worden , behouden blijft en dus een zeer zwakke reputatie heeft . U moet een verschillende selecteur voor **behoud versus verwervingsmededelingen** en voor authentificatie uitvoeren.
 * **Optiedeclaratie** Adobe Campaign: in de campagne van Adobe is de privé sleutel DKIM gebaseerd op een selecteur DKIM en een domein. Het is momenteel niet mogelijk om meerdere persoonlijke sleutels voor hetzelfde domein of subdomein te maken met verschillende kiezers. Het is niet mogelijk om te bepalen welk selecteerdomein/subdomein voor de authentificatie in noch het platform noch e-mail moet worden gebruikt. Het platform zal alternatief één van de privé sleutels selecteren, wat betekent de authentificatie een hoge kans heeft om te ontbreken.
 
 >[!NOTE]
 >
->* Als u DomainKeys voor uw instantie van Adobe Campaign hebt gevormd, moet u enkel **dkim** in de het beheersregels [van het](../../delivery/using/understanding-delivery-failures.md#domain-management)Domein selecteren. Indien niet, volg de zelfde configuratiestappen (privé/openbare sleutel) zoals voor DomainKeys.
+>* Als u DomainKeys voor uw instantie van Adobe Campaign hebt gevormd, moet u enkel **dkim** in [Regels van het Domeinbeheer ](../../delivery/using/understanding-delivery-failures.md#domain-management) selecteren. Indien niet, volg de zelfde configuratiestappen (privé/openbare sleutel) zoals voor DomainKeys.
 >* Het is niet noodzakelijk om zowel DomainKeys als DKIM voor het zelfde domein toe te laten aangezien DKIM een betere versie van DomainKeys is.
 >* De volgende domeinen valideren momenteel DKIM: AOL, Gmail.
 
 
 >[!IMPORTANT]
 >
->Voor ontvangen of hybride installaties, als u aan [Verbeterde MTA](https://helpx.adobe.com/nl/campaign/kb/acc-campaign-enhanced-mta.html)hebt bevorderd, wordt het e-mailauthentificeren DKIM gedaan door Verbeterde MTA voor alle berichten met alle domeinen.
+>Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](https://helpx.adobe.com/nl/campaign/kb/acc-campaign-enhanced-mta.html) hebt bevorderd, wordt het e-mailauthentificeren DKIM gedaan door Verbeterde MTA voor alle berichten met alle domeinen.
 
 ### DMARC {#dmarc}
 
@@ -99,7 +99,7 @@ DMARC (Domain-based Message Authentication, Reporting and Conformance) is de mee
 * Conformiteit - het staat de afzender toe om ISPs te instrueren over wat met om het even welk bericht te doen dat er niet in slaagt voor authentiek te verklaren (b.v. keurt het niet goed).
 * Het melden - het verstrekt de afzender van een gedetailleerd rapport dat alle berichten toont die authentificatie DMARC, samen met het &quot;Van&quot;domein en IP adres ontbrak dat voor elk wordt gebruikt. Dit staat een bedrijf toe om wettige e-mail te identificeren die authentificatie ontbreekt en één of ander type van &quot;moeilijke situatie&quot;(b.v. het toevoegen van IP adressen aan hun SPF verslag), evenals de bronnen en de prevalentie van phishingpogingen op hun e-maildomeinen vereist.
 
-DMARC kan de rapporten gebruiken die door [250ok](https://250ok.com/)worden geproduceerd.
+DMARC kan hefboomwerking de rapporten die door [250ok](https://250ok.com/) worden geproduceerd.
 
 <!--#### Configuring the application {#configuring-the-application}
 
@@ -143,8 +143,8 @@ Het implementeren van een feedbacklus voor een instantie vereist:
 
 Bij het implementeren van een eenvoudige feedbacklus in Adobe Campaign wordt de functionaliteit voor het stuiterende bericht gebruikt. De terugkoppelt lijnbrievenbus wordt gebruikt als stuiterende brievenbus en een regel wordt bepaald om deze berichten te ontdekken. De e-mailadressen van de ontvangers die het bericht als spam hebben gemeld, worden toegevoegd aan de quarantainelijst.
 
-* Creeer of wijzig een stuiterende postregel, **Feedback_loop**, in **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** met de reden **Verworpen** en het type **Hard**.
-* Als een brievenbus speciaal voor de terugkoppel lijn is bepaald, bepaal de parameters om tot het toegang te hebben door een nieuwe externe rekening van Stuitbeelden binnen te creëren **[!UICONTROL Administration > Platform > External accounts]**.
+* Creeer of wijzig een stuiterende postregel, **Feedback_loop**, in **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** met de reden **Afgewezen** en het type **Hard**.
+* Als een brievenbus speciaal voor de terugkoppel lijn is bepaald, bepaal de parameters om tot het toegang te hebben door een nieuwe externe rekening van de Steekproef te creëren Mails in **[!UICONTROL Administration > Platform > External accounts]**.
 
 Het mechanisme is onmiddellijk operationeel voor het verwerken van kennisgevingen van klachten. Om ervoor te zorgen deze regel correct werkt, kunt u de rekeningen tijdelijk deactiveren zodat zij deze berichten niet verzamelen, dan controleren de inhoud van terugkoppelt lijnbrievenbus manueel. Voer op de server de volgende opdrachten uit:
 
@@ -171,7 +171,7 @@ Met de Adobe Campaign Deliverability-service wordt uw abonnement op feedbackluss
 
 ### Info over List-Unsubscribe {#about-list-unsubscribe}
 
-Het toevoegen van een kopbal SMTP genoemd **lijst-Unsubscribe** is verplicht om optimaal leveringsbeheer te verzekeren.
+Het toevoegen van een kopbal SMTP genoemd **List-Unsubscribe** is verplicht om optimaal leveringsbeheer te verzekeren.
 
 Deze kopbal kan als alternatief aan het &quot;Rapport als SPAM&quot;pictogram worden gebruikt. De koppeling wordt als een koppeling zonder abonnement weergegeven in de e-mailinterface.
 
@@ -191,7 +191,7 @@ List-Unsubscribe: mailto: client@newsletter.example.com?subject=unsubscribe?body
 >
 >Het bovenstaande voorbeeld is gebaseerd op de tabel met ontvangers. Als de gegevensbestandimplementatie van een andere lijst wordt gedaan, zorg ervoor om de bevellijn met de correcte informatie te herformuleren.
 
-De volgende bevellijn kan worden gebruikt om een dynamische **lijst-op te zeggen** tot stand te brengen:
+De volgende bevellijn kan worden gebruikt om tot een dynamisch **List-Unsubscribe** te leiden:
 
 ```
 List-Unsubscribe: mailto: %=errorAddress%?subject=unsubscribe%=message.mimeMessageId%
@@ -203,10 +203,10 @@ Gmail, Outlook.com en Microsoft Outlook ondersteunen deze methode en een knop vo
 
 ![](assets/s_tn_del_gmail_unsubscribe_list.png)
 
-U kunt **lijst-opzeggen** uitvoeren door:
+U kunt **List-Unsubscribe** uitvoeren door:
 
 * direct toevoegend de bevellijn in het leveringsmalplaatje - zie [deze sectie](#adding-a-command-line-in-a-delivery-template),
-* of, het creëren van een typologieregel - zie [deze sectie](#creating-a-typology-rule).
+* of, creërend een typologieregel - zie [deze sectie](#creating-a-typology-rule).
 
 ### Een opdrachtregel toevoegen in een leveringssjabloon {#adding-a-command-line-in-a-delivery-template}
 
@@ -224,11 +224,11 @@ De regel moet het manuscript bevatten dat de bevellijn produceert en het moet in
 
 1. List-Unsubscribe: &lt;mailto:unsubscribe@domain.com>
 
-   Als u op de koppeling **Abonnement opzeggen** klikt, wordt de standaard e-mailclient van de gebruiker geopend. Deze typologieregel moet worden toegevoegd aan een typologie die wordt gebruikt voor het maken van e-mail.
+   Als u op de koppeling **unsubscribe** klikt, wordt de standaard e-mailclient van de gebruiker geopend. Deze typologieregel moet worden toegevoegd aan een typologie die wordt gebruikt voor het maken van e-mail.
 
 1. List-Unsubscribe: `<https://domain.com/unsubscribe.jsp>`
 
-   Als u op de koppeling **Abonnement opzeggen** klikt, wordt de gebruiker omgeleid naar het formulier voor het opzeggen van het abonnement.
+   Als u op de koppeling **unsubscribe** klikt, wordt de gebruiker omgeleid naar het formulier voor het niet-abonneren.
 
    Voorbeeld:
 
@@ -240,9 +240,9 @@ De regel moet het manuscript bevatten dat de bevellijn produceert en het moet in
 
 SMTP (Simple Mail Transfer Protocol) is een internetstandaard voor e-mailverzending.
 
-De SMTP fouten die niet door een regel worden gecontroleerd zijn vermeld in **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Delivery log qualification]** omslag. Deze foutberichten worden standaard geïnterpreteerd als onbereikbare schermfouten. De meest voorkomende fouten moeten worden geïdentificeerd en er moet een corresponderende regel worden toegevoegd in **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Mail rule sets]** als u de feedback van de SMTP-servers correct wilt kwalificeren. Zonder deze methode zal het platform onnodige herhalingen (bij onbekende gebruikers) uitvoeren of ten onrechte bepaalde ontvangers in quarantaine plaatsen na een bepaald aantal tests.
+De SMTP fouten die niet door een regel worden gecontroleerd zijn vermeld in **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Delivery log qualification]** omslag. Deze foutberichten worden standaard geïnterpreteerd als onbereikbare schermfouten. De meest voorkomende fouten moeten worden geïdentificeerd en er moet een corresponderende regel worden toegevoegd in **[!UICONTROL Administration]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Mail rule sets]** als u de feedback van de SMTP-servers correct wilt kwalificeren. **[!UICONTROL Campaign Management]** Zonder deze methode zal het platform onnodige herhalingen (bij onbekende gebruikers) uitvoeren of ten onrechte bepaalde ontvangers in quarantaine plaatsen na een bepaald aantal tests.
 
-### Specifieke IPs {#dedicated-ips}
+### Specifieke IP&#39;s {#dedicated-ips}
 
 Adobe verstrekt een specifieke IP strategie voor elke klant van een oprijplaat-omhoog IP om een reputatie te bouwen en leveringsprestaties te optimaliseren.
 
@@ -254,7 +254,7 @@ Momenteel bieden twee leveranciers IP Certificatie aan: Return Path en Certified
 
 Gecertificeerde afzenders worden toegevoegd aan lijsten van gewenste personen voor e-mail die worden gebruikt door wereldwijde postbusproviders en e-mailbeveiligingsbedrijven. Deze commerciële lijsten van gewenste personen zijn gebaseerd op een systeem dat de afzender toelaat om antispamfilters volledig te mijden of stijgende punten worden toegewezen aangezien zij het systeem ingaan.
 
-Het [programma voor de certificering](https://www.validity.com/products/returnpath/certification/) van retourpaden biedt een aantal voordelen, waaronder:
+Het [Return Path Certification](https://www.validity.com/products/returnpath/certification/)-programma biedt een aantal voordelen, waaronder de volgende:
 
 * Een meetbare toename van plaatsing in postvakken op de belangrijkste leveranciers van postvakken, zoals Microsoft, AOL, Yahoo, Gmail, Comcast, Orange, Mail.ru en meer
 * Favoriete reputatie en behandeling bij kritieke filters zoals Cloudmark, SpamAssassin, en Cisco Ironport
