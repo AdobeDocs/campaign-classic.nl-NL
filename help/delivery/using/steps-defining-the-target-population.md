@@ -24,7 +24,7 @@ Voor elke levering kunt u verschillende typen doelpopulaties definiëren. In de 
 * De belangrijkste ontvangers van de levering. [Meer informatie](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
 * De ontvangers van bewijsberichten, om een validatiecyclus op te zetten. [Meer informatie](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
 
-Bovendien, als de levering in een marketing campagne inbegrepen is, kunt u [zaadadressen](../../delivery/using/about-seed-addresses.md), en [controlegroepen](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)ook bepalen.
+Bovendien, als de levering in een marketing campagne inbegrepen is, kunt u [zaadadressen ](../../delivery/using/about-seed-addresses.md), en [controlegroepen](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group) ook bepalen.
 
 ## De belangrijkste ontvangers van de levering selecteren {#selecting-the-main-target}
 
@@ -32,22 +32,22 @@ In de meeste gevallen wordt het hoofddoel opgehaald uit de Adobe Campaign-databa
 
 Volg onderstaande stappen om de ontvangers van een levering te selecteren:
 
-1. Selecteer in de leveringseditor **[!UICONTROL To]**.
+1. Selecteer **[!UICONTROL To]** in de leveringseditor.
 1. Als de ontvangers in het gegevensbestand worden opgeslagen, kies de eerste optie.
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. Selecteer de doelafbeelding in de **[!UICONTROL Target mapping]** vervolgkeuzelijst. Standaard Adobe Campaign-doeltoewijzing is **[!UICONTROL Recipients]**, gebaseerd op **nms:ontvangerschema** .
+1. Selecteer de doelafbeelding in de vervolgkeuzelijst **[!UICONTROL Target mapping]**. Standaard Adobe Campaign-doeltoewijzing is **[!UICONTROL Recipients]**, gebaseerd op schema **nms:ontvanger**.
 
-   Andere doeltoewijzingen zijn beschikbaar, en sommige kunnen met uw specifieke configuratie verwant zijn. Zie [Doeltoewijzing](../../delivery/using/selecting-a-target-mapping.md)selecteren voor meer informatie over doeltoewijzingen.
+   Andere doeltoewijzingen zijn beschikbaar, en sommige kunnen met uw specifieke configuratie verwant zijn. Raadpleeg [Een doeltoewijzing selecteren](../../delivery/using/selecting-a-target-mapping.md) voor meer informatie over doeltoewijzingen.
 
-1. Klik op de **[!UICONTROL Add]** knop om beperkingsfilters te definiëren.
+1. Klik op de knop **[!UICONTROL Add]** om beperkingsfilters te definiëren.
 
    Vervolgens kunt u het type filter selecteren dat u wilt toepassen:
 
    ![](assets/s_ncs_user_wizard_email02b.png)
 
-   U kunt ontvangers selecteren aan de hand van de doeltypen die in de database zijn gedefinieerd. Als u een doeltype wilt gebruiken, selecteert u het en klikt u **[!UICONTROL Next]**. Voor elk doel kunt u de betrokken ontvangers weergeven door op het **[!UICONTROL Preview]** tabblad te klikken. Voor bepaalde soorten doel kunt u met de **[!UICONTROL Refine target]** knop verschillende doelcriteria combineren.
+   U kunt ontvangers selecteren aan de hand van de doeltypen die in de database zijn gedefinieerd. Als u een doeltype wilt gebruiken, selecteert u het en klikt u op **[!UICONTROL Next]**. Voor elk doel, kunt u de betrokken ontvangers tonen door **[!UICONTROL Preview]** tabel te klikken. Voor bepaalde soorten doel, laat de **[!UICONTROL Refine target]** knoop u verscheidene het richten criteria combineren.
 
    De volgende doeltypen worden standaard aangeboden:
 
@@ -70,41 +70,41 @@ Volg onderstaande stappen om de ontvangers van een levering te selecteren:
 
       >[!NOTE]
       >
-      >Met de **[!UICONTROL Include sub-folders]** optie kunt u ook de leveringen in mappen in de boomstructuur onder het geselecteerde knooppunt als doel instellen.
+      >Met de optie **[!UICONTROL Include sub-folders]** kunt u ook leveringen uitvoeren in mappen in de boomstructuur onder het geselecteerde knooppunt.
 
    * **[!UICONTROL Recipients included in a folder]** : met deze optie kunt u de profielen in een specifieke map van de boomstructuur als doel instellen.
    * **[!UICONTROL A recipient]** : met deze optie kunt u een specifieke ontvanger selecteren uit de profielen in de database.
-   * **[!UICONTROL A list of recipients]** : met deze optie kunt u een lijst met ontvangers als doel instellen. Lijsten worden weergegeven in de [onderhavige sectie](../../platform/using/creating-and-managing-lists.md).
-   * **[!UICONTROL User filters]** : met deze optie hebt u toegang tot de vooraf geconfigureerde filters om deze te gebruiken als filtercriteria voor profielen in de database. Vooraf geconfigureerde filters worden in [deze sectie](../../platform/using/creating-filters.md#saving-a-filter)weergegeven.
-   * Met deze optie **[!UICONTROL Exclude recipients corresponding to this segment]** kunt u zich richten op ontvangers die niet aan de gedefinieerde doelcriteria voldoen. Als u deze optie wilt gebruiken, selecteert u het desbetreffende vak en past u vervolgens de focus toe, zoals eerder is gedefinieerd, om de resulterende profielen uit te sluiten.
+   * **[!UICONTROL A list of recipients]** : met deze optie kunt u een lijst met ontvangers als doel instellen. Lijsten worden weergegeven in de [deze sectie](../../platform/using/creating-and-managing-lists.md).
+   * **[!UICONTROL User filters]** : met deze optie hebt u toegang tot de vooraf geconfigureerde filters om deze te gebruiken als filtercriteria voor profielen in de database. Vooraf geconfigureerde filters worden weergegeven in [deze sectie](../../platform/using/creating-filters.md#saving-a-filter).
+   * Met de optie **[!UICONTROL Exclude recipients corresponding to this segment]** kunt u zich richten op ontvangers die niet aan de gedefinieerde doelcriteria voldoen. Als u deze optie wilt gebruiken, selecteert u het desbetreffende vak en past u vervolgens de focus toe, zoals eerder is gedefinieerd, om de resulterende profielen uit te sluiten.
 
       ![](assets/s_ncs_user_wizard_email02g.png)
 
-1. Voer in het **[!UICONTROL Label]** veld een naam in voor dit doel. Standaard is het label het label van het eerste doelcriterium. Voor een combinatie is het beter om een expliciete naam te gebruiken.
+1. Voer in het veld **[!UICONTROL Label]** een naam in voor dit doel. Standaard is het label het label van het eerste doelcriterium. Voor een combinatie is het beter om een expliciete naam te gebruiken.
 1. Klik **[!UICONTROL Finish]** om het gevormde richten te bevestigen.
 
    De gedefinieerde doelcriteria worden samengevat in het centrale gedeelte van het hoofdtabblad voor doelconfiguratie. Klik op een criterium om de inhoud ervan weer te geven (configuratie en voorvertoning). Als u een criterium wilt verwijderen, klikt u op het kruisje dat zich na het label bevindt.
 
    ![](assets/s_ncs_user_wizard_email02h.png)
 
-### Externe ontvangers selecteren {#selecting-external-recipients}
+### Externe ontvangers {#selecting-external-recipients} selecteren
 
 U kunt een levering starten bij ontvangers die niet in de database zijn opgeslagen, maar wel in een extern bestand. We sturen hier bijvoorbeeld een levering naar ontvangers die zijn geïmporteerd uit een tekstbestand.
 
 Dit doet u als volgt:
 
-1. Klik op de **[!UICONTROL To]** koppeling om de ontvangers van de levering te selecteren.
-1. Selecteer de **[!UICONTROL Defined in an external file]** optie.
+1. Klik op de koppeling **[!UICONTROL To]** om de ontvangers van de levering te selecteren.
+1. Selecteer de optie **[!UICONTROL Defined in an external file]**.
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
-1. Ontvangers worden standaard in de database geïmporteerd. U moet de **[!UICONTROL Target mapping]** optie selecteren. Raadpleeg Een doeltoewijzing [selecteren voor meer informatie over doeltoewijzingen](../../delivery/using/selecting-a-target-mapping.md)
+1. Ontvangers worden standaard in de database geïmporteerd. U moet **[!UICONTROL Target mapping]** selecteren. Raadpleeg [Een doeltoewijzing selecteren](../../delivery/using/selecting-a-target-mapping.md) voor meer informatie over doeltoewijzingen
 
-   U kunt ook kiezen **[!UICONTROL Do not import the recipients into the database]**.
+   U kunt ook **[!UICONTROL Do not import the recipients into the database]** kiezen.
 
-1. Wanneer het invoeren van de ontvangers, klik de **[!UICONTROL File format definition...]** verbinding om het externe dossier te selecteren en te vormen.
+1. Wanneer het invoeren van de ontvangers, klik **[!UICONTROL File format definition...]** verbinding om het externe dossier te selecteren en te vormen.
 
-   For more information on data import, refer to [this section](../../platform/using/importing-data.md#step-2---source-file-selection).
+   Raadpleeg [deze sectie](../../platform/using/importing-data.md#step-2---source-file-selection) voor meer informatie over het importeren van gegevens.
 
 1. Klik **[!UICONTROL Finish]** en vorm uw levering als standaardlevering.
 
@@ -112,7 +112,7 @@ Dit doet u als volgt:
 >
 >Neem bij het definiëren van de inhoud van het bericht voor verzending via e-mail niet de koppeling naar de spiegelpagina op; het kan niet op deze leveringswijze worden geproduceerd.
 
-### Uitsluitingsinstellingen instellen {#customizing-exclusion-settings}
+### Uitsluitingsinstellingen {#customizing-exclusion-settings} instellen
 
 Adresfouten en kwaliteitsbeoordelingen worden geleverd door de serviceprovider (IAP). Deze informatie wordt automatisch bijgewerkt in het ontvangende profiel na leveringsacties en met dossiers die door dienstverleners zijn teruggekeerd. Deze kan alleen-lezen in het profiel worden weergegeven.
 
@@ -122,13 +122,13 @@ U kunt adressen uitsluiten die een bepaald aantal opeenvolgende fouten hebben be
 >
 >Als twee ontvangers dezelfde voornaam, achternaam, postcode en plaats in een directe postbestelling hebben, zal een dubbele fout voorkomen en zal het duplicaat niet in aanmerking worden genomen.
 
-Het **[!UICONTROL Exclusions]** tabblad wordt gebruikt om het aantal berichten te beperken.
+Het tabblad **[!UICONTROL Exclusions]** wordt gebruikt om het aantal berichten te beperken.
 
 >[!NOTE]
 >
 >Standaardparameters worden aanbevolen, maar u kunt de instellingen naar wens aanpassen. Deze opties mogen echter alleen door een deskundige gebruiker worden gewijzigd om elk misbruik en elke fout te voorkomen.
 
-Klik op de **[!UICONTROL Edit...]** koppeling om de standaardconfiguratie te wijzigen.
+Klik op de koppeling **[!UICONTROL Edit...]** om de standaardconfiguratie te wijzigen.
 
 ![](assets/s_ncs_user_wizard_email02i.png)
 
@@ -152,13 +152,13 @@ De volgende opties zijn beschikbaar:
 
    >[!NOTE]
    >
-   >Voor meer informatie over quarantainebeheer, verwijs naar het [Begrip van quarantainebeheer](../../delivery/using/understanding-quarantine-management.md).
+   >Raadpleeg [quarantainebeheer](../../delivery/using/understanding-quarantine-management.md) voor meer informatie over quarantainebeheer.
 
 * **[!UICONTROL Limit delivery]** naar een bepaald aantal berichten. Met deze optie kunt u het maximum aantal berichten invoeren dat moet worden verzonden. Als de inhoud van het doel het aangegeven aantal berichten overschrijdt, wordt een willekeurige selectie toegepast op het doel.
 
-### De omvang van de doelpopulatie verminderen {#reducing-the-size-of-the-target-population}
+### De omvang van de doelpopulatie reduceren {#reducing-the-size-of-the-target-population}
 
-U kunt de grootte van de doelpopulatie verminderen. Hiervoor geeft u het aantal ontvangers op dat in het **[!UICONTROL Requested quantity]** veld moet worden geëxporteerd.
+U kunt de grootte van de doelpopulatie verminderen. Hiertoe geeft u in het veld **[!UICONTROL Requested quantity]** het aantal ontvangers op dat u wilt exporteren.
 
 ![](assets/s_ncs_user_edit_del_exe_tab.png)
 
@@ -171,27 +171,27 @@ De proef is een speciaal bericht dat u een levering laat testen alvorens het naa
 
 Voer de onderstaande stappen uit om het doel van de proefdrukken te selecteren:
 
-1. Klik op de **[!UICONTROL To]** koppeling.
-1. Klik op het **[!UICONTROL Target of the proofs]** tabblad.
-1. Klik op het **[!UICONTROL Targeting mode]** veld om de toe te passen methode te kiezen: **[!UICONTROL Definition of a specific proof target]** , **[!UICONTROL Substitution of the address]** , **[!UICONTROL Seed addresses]** of **[!UICONTROL Specific target and seed addresses]**.
+1. Klik op de koppeling **[!UICONTROL To]**.
+1. Klik op het tabblad **[!UICONTROL Target of the proofs]**.
+1. Klik op het veld **[!UICONTROL Targeting mode]** om de toe te passen methode te kiezen: **[!UICONTROL Definition of a specific proof target]**, **[!UICONTROL Substitution of the address]**, **[!UICONTROL Seed addresses]** of **[!UICONTROL Specific target and seed addresses]**.
 
 >[!NOTE]
 >
->Gewoonlijk kan het doel voor de proefdruk worden toegevoegd aan het hoofddoel. Selecteer hiertoe de gewenste optie in de onderste sectie van het **[!UICONTROL Main target]** tabblad.
+>Gewoonlijk kan het doel voor de proefdruk worden toegevoegd aan het hoofddoel. Selecteer hiertoe de gewenste optie in de onderste sectie van het tabblad **[!UICONTROL Main target]**.
 
 ## Een specifiek proefdrukdoel definiëren {#defining-a-specific-proof-target}
 
-Als u het proefdrukdoel selecteert, kunt u met de **[!UICONTROL Definition of a specific proof target]** optie de proefdrukontvangers selecteren in de profielen in de database.
+Als u het proefdrukdoel selecteert, kunt u met de optie **[!UICONTROL Definition of a specific proof target]** de proefdrukontvangers selecteren uit de profielen in de database.
 
-Selecteer deze optie om ontvangers te kiezen met de **[!UICONTROL Add]** knop, zoals bij het definiëren van het hoofddoel. Zie [Het hoofddoel](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)selecteren.
+Selecteer deze optie om ontvangers te kiezen met de knop **[!UICONTROL Add]**, zoals bij het definiëren van het hoofddoel. Zie [Het hoofddoel selecteren](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target).
 
 ![](assets/s_ncs_user_wizard_email01_143.png)
 
-For more on proof sending, refer to [this section](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+Raadpleeg [deze sectie](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) voor meer informatie over het verzenden van bewijzen.
 
-### Het vervangen van adressen gebruiken in proef {#using-address-substitution-in-proof}
+### Het gebruiken van adressubstitutie in proef {#using-address-substitution-in-proof}
 
-In plaats van speciale ontvangers in de database te selecteren, kunt u de **[!UICONTROL Substitution of the address]** optie gebruiken.
+In plaats van specifieke ontvangers in de database te selecteren, kunt u de optie **[!UICONTROL Substitution of the address]** gebruiken.
 
 Met deze optie kunt u de profielen van de ontvangers van de levering gebruiken en hun e-mailadressen vervangen door een of meer andere adressen waarop de proefdruk wordt uitgevoerd.
 
@@ -201,13 +201,13 @@ Als deze optie is geselecteerd, worden de proefdrukadressen ingevuld in een spec
 
 De configuratie wordt uitgevoerd als volgt:
 
-1. Klik op het **[!UICONTROL Add]** pictogram om een vervanging te definiëren.
+1. Klik op het pictogram **[!UICONTROL Add]** om een vervanging te definiëren.
 1. Voer het gewenste adres in dat u wilt gebruiken of selecteer het adres in de lijst.
-1. Selecteer het profiel dat u wilt gebruiken in de proefdruk: Sla de **[!UICONTROL Random]** waarde in de **[!UICONTROL Profile to use]** kolom op als u de gegevens van een willekeurig profiel van het doel in de proefdruk wilt gebruiken.
+1. Selecteer het profiel dat u wilt gebruiken in de proefdruk: Sla de waarde **[!UICONTROL Random]** in de kolom **[!UICONTROL Profile to use]** op om de gegevens van om het even welk profiel van het doel in de proef te gebruiken.
 
    ![](assets/s_ncs_user_wizard_email_bat_substitute_choose.png)
 
-1. Klik op het **[!UICONTROL Detail]** pictogram om een profiel in het hoofddoel te selecteren, zoals in het volgende voorbeeld:
+1. Klik op het pictogram **[!UICONTROL Detail]** om een profiel van het hoofddoel te selecteren, zoals in het volgende voorbeeld:
 
    ![](assets/s_ncs_user_wizard_email_bat_substitute_select.png)
 
@@ -215,7 +215,7 @@ De configuratie wordt uitgevoerd als volgt:
 
 ## zaadadressen gebruiken als proef {#using-seed-addresses-as-proof}
 
-U kunt de proefdrukken als doel **[!UICONTROL Seed addresses]** gebruiken: met deze optie kunt u een lijst met bestaande zaadadressen gebruiken of importeren.
+U kunt **[!UICONTROL Seed addresses]** als doel van de proefdrukken gebruiken: met deze optie kunt u een lijst met bestaande zaadadressen gebruiken of importeren.
 
 ![](assets/s_ncs_user_wizard_email_bat_control_address.png)
 
@@ -237,4 +237,4 @@ In deze video leert u hoe u zaden en proefdrukken aan een bestaande e-mail kunt 
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
-Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) extra Campaign Classic hoe kan ik-video&#39;s beschikbaar.
