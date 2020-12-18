@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Grondbeginselen{#fundamental-principles}
 
-## Omgevingen implementeren {#deploying-environments}
+## Omgevingen {#deploying-environments} implementeren
 
 Er zijn twee milieu&#39;s voor elke het richten dimensie die wordt gebruikt wanneer het beheren van aanbiedingen:
 
@@ -25,7 +25,7 @@ Er zijn twee milieu&#39;s voor elke het richten dimensie die wordt gebruikt wann
 
    Categorieën kunnen ook handmatig worden gepubliceerd in de online omgeving.
 
-   Het proces voor het goedkeuren van aanbiedingen wordt gedetailleerd beschreven in de sectie [Goedkeuring en activering van een aanbieding](../../interaction/using/approving-and-activating-an-offer.md) .
+   Het proces voor het goedkeuren van aanbiedingen wordt gedetailleerd in [Het goedkeuren en activeren van een aanbieding](../../interaction/using/approving-and-activating-an-offer.md) sectie.
 
 * Een live omgeving waarin goedgekeurde aanbiedingen van de ontwerpomgeving en de verschillende aanbiedingsruimten, filters, categorieën en regels die in de ontwerpomgeving zijn geconfigureerd, kunnen worden gevonden. Tijdens een vraag aan de aanbiedingsmotor, zal de motor altijd aanbiedingen van het levende milieu gebruiken.
 
@@ -37,7 +37,7 @@ Een aanbieding wordt slechts opgesteld op de aanbiedingsruimten die tijdens het 
 
 Er zijn twee mogelijke typen interactie: binnenkomende interacties (geïnitieerd door een contactpersoon) en uitgaande interacties (geïnitieerd door de aanbiedingsmaker).
 
-Deze twee soorten interactie kunnen worden uitgevoerd in monitaire modus (het aanbod wordt berekend voor één contactpersoon) of in batchmodus (het aanbod wordt berekend voor een reeks contactpersonen). Over het algemeen worden binnenkomende interacties uitgevoerd in monitaire modus en uitgaande interacties in batchmodus. Er kunnen echter bepaalde uitzonderingen zijn, bijvoorbeeld voor transactiemeldingen, waarbij de uitgaande interactie in de eenheidsmodus wordt uitgevoerd (zie [deze paragraaf](../../message-center/using/about-transactional-messaging.md)).
+Deze twee soorten interactie kunnen worden uitgevoerd in monitaire modus (het aanbod wordt berekend voor één contactpersoon) of in batchmodus (het aanbod wordt berekend voor een reeks contactpersonen). Over het algemeen worden binnenkomende interacties uitgevoerd in monitaire modus en uitgaande interacties in batchmodus. Er kunnen echter bepaalde uitzonderingen zijn, bijvoorbeeld voor transactieberichten, waarbij de uitgaande interactie in de eenheidsmodus wordt uitgevoerd (zie [deze sectie](../../message-center/using/about-transactional-messaging.md)).
 
 Zodra een aanbieding kan of moet worden ingediend (volgens de uitgevoerde configuraties), speelt de aanbiedingsmotor de intermediaire rol: het berekent automatisch de best mogelijke aanbieding voor een contact tussen beschikbare die door ontvangen gegevens over het contact en de verschillende regels te combineren die kunnen worden toegepast zoals gespecificeerd in de toepassing.
 
