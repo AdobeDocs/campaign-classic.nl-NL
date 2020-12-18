@@ -27,11 +27,11 @@ Wanneer u het XML-document en de XSL- of JavaScript-sjabloonopmaakmodellen combi
 
 De volgende middelen worden vereist voor inhoudsconfiguratie:
 
-* Gegevensschema&#39;s: beschrijving van de XML-inhoudsstructuur. For more on this, refer to [Data schemas](../../delivery/using/data-schemas.md).
-* Formulieren voor gegevensinvoer: bouw van gegevensinvoerschermen. For more on this, refer to [Input forms](../../delivery/using/input-forms.md).
-* Afbeeldingen: afbeeldingen die worden gebruikt in formulieren voor gegevensinvoer. For more on this, refer to [Image management](../../delivery/using/formatting.md#image-management).
-* Stylesheets: opmaak van uitvoerdocumenten met XSLT-taal. For more on this, refer to [Formatting](../../delivery/using/formatting.md).
-* JavaScript-sjablonen: opmaak van uitvoerdocumenten met gebruik van JavaScript-taal. For more on this, refer to [Publication templates](../../delivery/using/publication-templates.md).
-* JavaScript-codes: JavaScript-codes voor gegevensaggregatie. For more on this, refer to [Aggregator](../../delivery/using/publication-templates.md#aggregator).
-* Publicatiesjablonen: definitie van publicatiesjablonen. For more on this, refer to [Publication templates](../../delivery/using/publication-templates.md).
-* Inhoud: te maken en te publiceren inhoudsinstanties. Raadpleeg [Een inhoudssjabloon](../../delivery/using/using-a-content-template.md)gebruiken voor meer informatie.
+* Gegevensschema&#39;s: beschrijving van de XML-inhoudsstructuur. Voor meer op dit, verwijs naar [Gegevensschema&#39;s](../../delivery/using/data-schemas.md).
+* Formulieren voor gegevensinvoer: bouw van gegevensinvoerschermen. Raadpleeg [Invoerformulieren](../../delivery/using/input-forms.md) voor meer informatie.
+* Afbeeldingen: afbeeldingen die worden gebruikt in formulieren voor gegevensinvoer. Raadpleeg [Afbeeldingsbeheer](../../delivery/using/formatting.md#image-management) voor meer informatie.
+* Stylesheets: opmaak van uitvoerdocumenten met XSLT-taal. Raadpleeg [Opmaak](../../delivery/using/formatting.md) voor meer informatie hierover.
+* JavaScript-sjablonen: opmaak van uitvoerdocumenten met gebruik van JavaScript-taal. Raadpleeg [Publicatiesjablonen](../../delivery/using/publication-templates.md) voor meer informatie.
+* JavaScript-codes: JavaScript-codes voor gegevensaggregatie. Raadpleeg [Samenvoegtoepassing](../../delivery/using/publication-templates.md#aggregator) voor meer informatie hierover.
+* Publicatiesjablonen: definitie van publicatiesjablonen. Raadpleeg [Publicatiesjablonen](../../delivery/using/publication-templates.md) voor meer informatie.
+* Inhoud: te maken en te publiceren inhoudsinstanties. Voor meer op dit, verwijs naar [Gebruikend een inhoudsmalplaatje](../../delivery/using/using-a-content-template.md).
