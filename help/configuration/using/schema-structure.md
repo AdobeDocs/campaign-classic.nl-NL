@@ -477,7 +477,7 @@ Elementen worden aangeduid met hun naam en kenmerken worden aangeduid met de naa
 * **@email**: selecteert de e-mail;
 * **location/@city**: selecteert het kenmerk &quot;city&quot; onder het  **`<location>`** element
 * **../@email**: selecteert het e-mailadres in het bovenliggende element van het huidige element
-* **groep`[1]/@label`**: selecteert het kenmerk &quot;label&quot; dat het onderliggende element is van het eerste  **`<group>`** verzamelingselement
+* **groep`[1]/@label`**: selecteert het kenmerk &quot;label&quot; dat het onderliggende element van het eerste  **`<group>`** verzamelingselement is
 * **groep`[@label='test1']`**: selecteert het kenmerk &quot;label&quot; dat het onderliggende element van het  **`<group>`** element is en de waarde &quot;test1&quot; bevat
 
 >[!NOTE]
