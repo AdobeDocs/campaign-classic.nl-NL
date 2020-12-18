@@ -17,11 +17,11 @@ ht-degree: 3%
 
 # Een aanbieding maken{#creating-an-offer}
 
-## De aanbieding maken {#creating-the-offer}
+## De aanbieding {#creating-the-offer} maken
 
 Voer de volgende stappen uit om een aanbieding te maken:
 
-1. Ga naar het **[!UICONTROL Campaigns]** universum en klik op de **[!UICONTROL Offers]** link.
+1. Ga naar het **[!UICONTROL Campaigns]** universum en klik **[!UICONTROL Offers]** verbinding.
 
    ![](assets/offer_create_001.png)
 
@@ -33,7 +33,7 @@ Voer de volgende stappen uit om een aanbieding te maken:
 
    ![](assets/offer_create_002.png)
 
-1. Klik **[!UICONTROL Save]** om het voorstel te maken.
+1. Klik **[!UICONTROL Save]** om de aanbieding tot stand te brengen.
 
    ![](assets/offer_create_003.png)
 
@@ -41,9 +41,9 @@ Voer de volgende stappen uit om een aanbieding te maken:
 
    ![](assets/offer_create_004.png)
 
-## Geschiktheid van aanbieding configureren {#configuring-offer-eligibility}
+## Aanbiedingsgeschiktheid configureren {#configuring-offer-eligibility}
 
-Definieer op het **[!UICONTROL Eligibility]** tabblad de periode waarin de aanbieding geldig is en kan worden weergegeven, de filters die op het doel en het aanbiedingsgewicht moeten worden toegepast.
+Definieer op het tabblad **[!UICONTROL Eligibility]** voor welke periode de aanbieding geldig is en kan worden weergegeven, welke filters op het doel en het aanbiedingsgewicht moeten worden toegepast.
 
 ### Vaststelling van de subsidiabiliteitsperiode van een aanbieding {#defining-the-eligibility-period-of-an-offer}
 
@@ -57,11 +57,11 @@ Buiten deze datums wordt de aanbieding niet geselecteerd door de interactie-engi
 
 U kunt filters op het aanbiedingsdoel toepassen.
 
-Klik hiertoe op de **[!UICONTROL Edit query]** koppeling en selecteer het filter dat u wilt toepassen. (Zie [deze sectie](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
+Klik hiertoe op de koppeling **[!UICONTROL Edit query]** en selecteer het filter dat u wilt toepassen. (Zie [deze sectie](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
 
 ![](assets/offer_eligibility_create_003.png)
 
-Als er al vooraf gedefinieerde filters zijn gemaakt, kunt u deze selecteren in de lijst met gebruikersfilters. Zie Vooraf gedefinieerde filters [maken voor meer informatie over dit onderwerp](../../interaction/using/creating-predefined-filters.md).
+Als er al vooraf gedefinieerde filters zijn gemaakt, kunt u deze selecteren in de lijst met gebruikersfilters. Raadpleeg [Vooraf gedefinieerde filters maken](../../interaction/using/creating-predefined-filters.md) voor meer informatie.
 
 ![](assets/offer_eligibility_create_004.png)
 
@@ -75,7 +75,7 @@ Bijvoorbeeld, kan een aanbieding een gewicht van A voor contacten hebben tussen 
 
 >[!NOTE]
 >
->Het toegewezen gewicht kan tijdelijk worden gewijzigd op basis van de parameters van de categorie waartoe de aanbieding behoort. Zie Aanbiedingscategorieën [maken voor meer informatie](../../interaction/using/creating-offer-categories.md).
+>Het toegewezen gewicht kan tijdelijk worden gewijzigd op basis van de parameters van de categorie waartoe de aanbieding behoort. Raadpleeg [Aanbiedingscategorieën maken](../../interaction/using/creating-offer-categories.md) voor meer informatie.
 
 Voer de volgende stappen uit om een dikte in een aanbieding te maken:
 
@@ -103,7 +103,7 @@ Voer de volgende stappen uit om een dikte in een aanbieding te maken:
 
    ![](assets/offer_weight_create_004.png)
 
-1. Click **[!UICONTROL OK]** to save the weight.
+1. Klik **[!UICONTROL OK]** om de dikte op te slaan.
 
    ![](assets/offer_weight_create_005.png)
 
@@ -111,26 +111,26 @@ Voer de volgende stappen uit om een dikte in een aanbieding te maken:
    >
    >Als een doel in aanmerking komt voor meerdere gewichten voor een geselecteerde aanbieding, behoudt de motor het beste (hoogste) gewicht. Bij het oproepen van de aanbiedingsmotor, wordt een aanbieding een maximum van eens per contact geselecteerd.
 
-### Samenvatting van de regels inzake de subsidiabiliteit van aanbiedingen {#a-summary-of-offer-eligibility-rules}
+### Overzicht van de regels voor het in aanmerking komen voor aanbiedingen {#a-summary-of-offer-eligibility-rules}
 
 Zodra de configuratie is voltooid, zal een samenvatting van de subsidiabiliteitsregels beschikbaar zijn op het biederdashboard.
 
-Klik op de **[!UICONTROL Schedule and eligibility rules]** koppeling om deze weer te geven.
+Klik op de koppeling **[!UICONTROL Schedule and eligibility rules]** om deze weer te geven.
 
 ![](assets/offer_eligibility_create_005.png)
 
-## De inhoud van de aanbieding maken {#creating-the-offer-content}
+## Aanbiedingsinhoud maken {#creating-the-offer-content}
 
-1. Klik op het **[!UICONTROL Edit]** tabblad en klik vervolgens op het **[!UICONTROL Content]** tabblad.
+1. Klik op de tab **[!UICONTROL Edit]** en klik vervolgens op de tab **[!UICONTROL Content]**.
 
    ![](assets/offer_content_create_001.png)
 
 1. Vul de verschillende velden van de inhoud van de aanbieding in.
 
-   * **[!UICONTROL Title]** : Geef de titel op die je wilt maken en die je in je voorstel wilt opnemen. Waarschuwing: dit verwijst niet naar het label van de aanbieding, dat in het **[!UICONTROL General]** lusje wordt bepaald.
+   * **[!UICONTROL Title]** : Geef de titel op die je wilt maken en die je in je voorstel wilt opnemen. Waarschuwing: dit verwijst niet naar het label van de aanbieding, dat in **[!UICONTROL General]** tabel wordt bepaald.
    * **[!UICONTROL Destination URL]** : Geef de URL van je voorstel op. Om correct te worden verwerkt, moet het met &quot;http://&quot;of &quot;https://&quot;beginnen.
    * **[!UICONTROL Image URL]** : Geef een URL of een toegangspad op naar de afbeelding van uw aanbieding.
-   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** : Voer de tekst van je voorstel in op het tabblad dat je wilt. Voor het genereren van reeksspatiëring **[!UICONTROL HTML content]** moet de URL bestaan uit HTML-elementen die kunnen worden ingesloten in een `<div>` tekstelement. Het resultaat van een `<table>` element in de HTML-pagina is bijvoorbeeld als volgt:
+   * **[!UICONTROL HTML content]** /  **[!UICONTROL Text content]** : Voer de tekst van je voorstel in op het tabblad dat je wilt. Voor het genereren van tekstspatiëring moet de **[!UICONTROL HTML content]** bestaan uit HTML-elementen die kunnen worden ingesloten in een tekstelement `<div>`. Het resultaat van een element `<table>` in de HTML-pagina is bijvoorbeeld als volgt:
 
    ```
       <div> 
@@ -147,21 +147,21 @@ Klik op de **[!UICONTROL Schedule and eligibility rules]** koppeling om deze wee
       </div>
    ```
 
-   Het bepalen van goedkeurings URL wordt voorgesteld in het [Vormen van de status wanneer het voorstel wordt goedgekeurd](../../interaction/using/creating-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted) sectie.
+   Het bepalen van acceptatie URL wordt voorgesteld in [het Vormen van de status wanneer het voorstel ](../../interaction/using/creating-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted) sectie wordt goedgekeurd.
 
    ![](assets/offer_content_create_002.png)
 
-   Als u de vereiste velden wilt zoeken zoals deze tijdens de configuratie van de aanbiedingsruimte zijn gedefinieerd, klikt u op de **[!UICONTROL Content definitions]** koppeling om de lijst weer te geven. Raadpleeg [Aanbiedingsruimten](../../interaction/using/creating-offer-spaces.md)maken voor meer informatie hierover.
+   Om de vereiste gebieden te vinden aangezien zij tijdens de configuratie van de aanbiedingsruimte werden bepaald, klik **[!UICONTROL Content definitions]** verbinding om de lijst te tonen. Raadpleeg [Aanbiedingsruimten maken](../../interaction/using/creating-offer-spaces.md) voor meer informatie.
 
    ![](assets/offer_content_create_003.png)
 
    In dit voorbeeld moet de aanbieding een titel, een afbeelding, HTML-inhoud en een doel-URL bevatten.
 
-## Voorbeeld van de aanbieding bekijken {#previewing-the-offer}
+## Voorvertoning van de aanbieding {#previewing-the-offer}
 
 Zodra de inhoud van uw voorstel is geconfigureerd, kunt u een voorbeeld van het voorstel bekijken zoals het voor de ontvanger wordt weergegeven. Dit doet u als volgt:
 
-1. Klik op het **[!UICONTROL Preview]** tabblad.
+1. Klik op het tabblad **[!UICONTROL Preview]**.
 
    ![](assets/offer_preview_create_001.png)
 
@@ -173,7 +173,7 @@ Zodra de inhoud van uw voorstel is geconfigureerd, kunt u een voorbeeld van het 
 
    ![](assets/offer_preview_create_003.png)
 
-## Het creëren van een hypothese over een aanbieding {#creating-a-hypothesis-on-an-offer}
+## Een hypothese maken over een aanbieding {#creating-a-hypothesis-on-an-offer}
 
 Je kunt hypothesen maken voor je voorstellen. Hiermee kunt u de gevolgen van uw aanbiedingen voor de aankopen van het betrokken product bepalen.
 
@@ -181,7 +181,7 @@ Je kunt hypothesen maken voor je voorstellen. Hiermee kunt u de gevolgen van uw 
 >
 >Deze hypothesen worden uitgevoerd via Response Manager. Controleer hiervoor uw licentieovereenkomst.
 
-Op hun **[!UICONTROL Measure]** tabblad wordt verwezen naar de hypothesen die zijn uitgevoerd op een aanbiedingsvoorstel.
+Op het tabblad **[!UICONTROL Measure]** wordt verwezen naar hypothesen die zijn uitgevoerd op een aanbiedingsvoorstel.
 
 Het maken van hypothesen wordt beschreven in [deze pagina](../../campaign/using/about-response-manager.md).
 
