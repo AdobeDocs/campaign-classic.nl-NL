@@ -25,7 +25,7 @@ Met de werkbalk kunt u het rapport bijvoorbeeld exporteren, afdrukken, archivere
 
 ![](assets/s_ncs_advuser_report_wizard_04.png)
 
-## Een rapport exporteren {#exporting-a-report}
+## Een rapport {#exporting-a-report} exporteren
 
 Selecteer de indeling waarin u het rapport wilt exporteren in de vervolgkeuzelijst. (.xls, .pdf of .ods).
 
@@ -35,15 +35,15 @@ Wanneer een rapport meerdere pagina&#39;s bevat, moet u de bewerking voor elke p
 
 U kunt uw rapport configureren met het oog op het exporteren ervan in PDF-, Excel- of OpenOffice-indeling. Open de explorator van Adobe Campaign en selecteer het betrokken rapport.
 
-Exportopties zijn toegankelijk via de **[!UICONTROL Page]** activiteiten van het rapport op het **[!UICONTROL Advanced]** tabblad.
+Exportopties zijn toegankelijk via de **[!UICONTROL Page]**-activiteiten van het rapport op het tabblad **[!UICONTROL Advanced]**.
 
-Wijzig de instellingen van **[!UICONTROL Paper]** en **[!UICONTROL Margins]** naar wens. U kunt het exporteren van een pagina alleen in PDF-indeling toestaan. Schakel de **[!UICONTROL Activate OpenOffice/Microsoft Excel export]** optie uit om dit te doen.
+Wijzig de instellingen van **[!UICONTROL Paper]** en **[!UICONTROL Margins]** om aan uw wensen te voldoen. U kunt het exporteren van een pagina alleen in PDF-indeling toestaan. Om dit te doen, uncheck de **[!UICONTROL Activate OpenOffice/Microsoft Excel export]** optie.
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
 ### Exporteren naar Microsoft Excel {#exporting-into-microsoft-excel}
 
-Voor **[!UICONTROL List with group]** typerapporten die naar Excel worden geëxporteerd, gelden de volgende aanbevelingen en beperkingen:
+Voor **[!UICONTROL List with group]** typerapporten die bestemd zijn om naar Excel te worden uitgevoerd, zijn de volgende aanbevelingen en beperkingen van toepassing:
 
 * Deze rapporten mogen geen lege regels bevatten.
 
@@ -53,12 +53,12 @@ Voor **[!UICONTROL List with group]** typerapporten die naar Excel worden geëxp
 
    ![](assets/export_limitations_hide_label.png)
 
-* In de rapporten hoeft geen specifieke opmaak te worden gebruikt die op celniveau is gedefinieerd. U kunt het beste de indeling van de cellen in de tabel definiëren **[!UICONTROL Form rendering]** . De **[!UICONTROL Form rendering]** gegevens zijn toegankelijk via **[!UICONTROL Administration > Configuration > Form rendering]**.
+* In de rapporten hoeft geen specifieke opmaak te worden gebruikt die op celniveau is gedefinieerd. Het is raadzaam **[!UICONTROL Form rendering]** te gebruiken om de indeling van de cellen in de tabel te definiëren. De **[!UICONTROL Form rendering]** kan via **[!UICONTROL Administration > Configuration > Form rendering]** worden betreden.
 * We raden u niet aan HTML-inhoud in te voegen.
 * Als een rapport meerdere tabellen, grafieken enzovoort bevat. typeelementen, zullen zij onder andere worden uitgevoerd.
-* U kunt de regelterugloop in cellen forceren: deze configuratie zal in Excel worden gehouden. Zie deze celindeling [](../../reporting/using/creating-a-table.md#defining-cell-format)definiëren voor meer informatie.
+* U kunt de regelterugloop in cellen forceren: deze configuratie zal in Excel worden gehouden. Voor meer op dit, verwijs naar [Bepalend celformaat](../../reporting/using/creating-a-table.md#defining-cell-format).
 
-### Exporteren uitstellen {#postpone-the-export}
+### Exporteren {#postpone-the-export} uitstellen
 
 U kunt het uitvoeren van een rapport uitstellen, bijvoorbeeld om op asynchrone vraag te wachten. Hiervoor voert u de volgende parameter in het initialisatiescript van de pagina in:
 
@@ -72,19 +72,19 @@ Als u het exporteren wilt activeren en de conversie naar een PDF wilt starten, g
 
 Bij het exporteren van bepaalde grote rapporten kunnen fouten in de geheugentoewijzing optreden.
 
-In bepaalde gevallen is de standaardwaarde **maxMB** (**SKMS** voor gehoste instanties) van het JavaScript dat in het configuratiebestand **serverConf.xml** wordt aangegeven, ingesteld op 64 MB. Als er onvoldoende geheugenfouten optreden tijdens het exporteren van een rapport, kunt u dit aantal verhogen tot 512 MB:
+In bepaalde gevallen is de standaardwaarde **maxMB** (**SKMS** voor gehoste instanties) van het JavaScript dat wordt aangegeven in het configuratiebestand **serverConf.xml** ingesteld op 64 MB. Als er onvoldoende geheugenfouten optreden tijdens het exporteren van een rapport, kunt u dit aantal verhogen tot 512 MB:
 
 ```
 <javaScript maxMB="512" stackSizeKB="8"/>
 ```
 
-Om veranderingen toe te passen die aan de configuratie worden aangebracht, moet de **dienst van de server** opnieuw worden begonnen.
+Als u wijzigingen wilt toepassen die in de configuratie zijn aangebracht, moet de service **nlserver** opnieuw worden gestart.
 
-Raadpleeg **deze sectie** voor meer informatie over het bestand [serverConf.xml](../../production/using/configuration-principle.md).
+Raadpleeg [deze sectie](../../production/using/configuration-principle.md) voor meer informatie over het bestand **serverConf.xml.**
 
-Raadpleeg **deze sectie** voor meer informatie over de service [nlserver](../../production/using/administration.md).
+Raadpleeg [deze sectie](../../production/using/administration.md) voor meer informatie over de **nlserver** service.
 
-## Een rapport afdrukken {#printing-a-report}
+## Een rapport {#printing-a-report} afdrukken
 
 U kunt uw rapport afdrukken: Klik hiertoe op het printerpictogram: hiermee wordt het dialoogvenster geopend.
 
@@ -108,7 +108,7 @@ De archiefdatums worden weergegeven onder het pictogram voor tonen/verbergen. Kl
 
 ![](assets/s_ncs_advuser_report_history_04.png)
 
-Het is mogelijk om een rapportarchief te schrappen. Ga hiertoe naar het Adobe Campaign-knooppunt waar uw rapporten zijn opgeslagen. Klik op het **[!UICONTROL Archives]** tabblad, selecteer het tabblad dat u wilt verwijderen en klik op **[!UICONTROL Delete]**.
+Het is mogelijk om een rapportarchief te schrappen. Ga hiertoe naar het Adobe Campaign-knooppunt waar uw rapporten zijn opgeslagen. Klik op de tab **[!UICONTROL Archives]**, selecteer de tab die u wilt verwijderen en klik op **[!UICONTROL Delete]**.
 
 ![](assets/s_ncs_advuser_report_history_01.png)
 
