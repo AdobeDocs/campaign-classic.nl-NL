@@ -29,11 +29,11 @@ Een gebruiker die aan het platform wordt bekend is een ontvanger die reeds door 
 
 ## Serverconfiguratie {#server-configuration}
 
-De servers worden gevormd door bepaalde elementen van het **serverConf.xml** - dossier te laden. Deze bestanden worden opgeslagen in de submap **conf** van de installatiemap van Adobe Campaign.
+De servers worden gevormd door bepaalde elementen van het **serverConf.xml** dossier te overbelasten. Deze bestanden worden opgeslagen in de submap **conf** van de installatiemap van Adobe Campaign.
 
-### Redirection-server {#redirection-server}
+### Omleidingsserver {#redirection-server}
 
-Voor de redirection server, plaats de **trackWebVisitors** attributen van het **redirection** element aan **waar**.
+Voor de omleidingsserver, plaats **trackWebVisitors** attributen van **redirection** element aan **true**.
 
 ```
 <redirection P3PCompactPolicy="CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"
@@ -42,11 +42,11 @@ startRedirection="true" startRedirectionInModule="true" trackWebVisitors="true"
 trackingPassword=""
 ```
 
-## Een standaard overeenkomende campagne configureren {#configuring-a-default-matching-campaign}
+## Een standaardaanpassingscampagne {#configuring-a-default-matching-campaign} configureren
 
 Als u de trackinggegevens via uw clientconsole wilt weergeven, moet u:
 
-* Maak een **dummylevering** (de leveringstoewijzing moet identiek zijn aan de toewijzing van het doelschema);
-* Ga de **interne naam** van deze levering in de **optie NmsTracking_WebTrackingDelivery** in.
+* een **dummylevering** maken (de leveringstoewijzing moet identiek zijn aan de toewijzing van het doelschema);
+* Voer de **interne naam** van deze levering in de optie **NmsTracking_WebTrackingDelivery** in.
 
 Alle informatie over het bijhouden van de site die niet direct na een klik in een e-mail wordt weergegeven, kunt u bekijken in de gemaakte dummylevering.
