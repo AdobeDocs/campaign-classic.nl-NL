@@ -23,7 +23,7 @@ Voor gehoste klanten heeft dit geen gevolgen. Lees het volgende voor installatie
 
 **Apache-gebruikers:**
 
-Er is geen effect voor Apache-gebruikers als ze de meegeleverde **apache_neolane.conf gebruiken**
+Er is geen effect voor Apache-gebruikers als ze de meegeleverde **apache_neolane.conf** gebruiken
 
 **IIS-gebruikers:**
 
