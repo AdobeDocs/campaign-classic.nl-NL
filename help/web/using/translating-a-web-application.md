@@ -19,11 +19,11 @@ ht-degree: 5%
 
 U kunt webtoepassingspagina&#39;s die zijn gemaakt met de Adobe Campaign Digital Content Editor (DCE), vertalen.
 
-Als u via het **[!UICONTROL Localization]** **[!UICONTROL Properties]** tabblad in een webtoepassing ten minste één extra taal selecteert, wordt een nieuwe optie beschikbaar wanneer u een HTML-inhoudsblok toevoegt aan een pagina die met DCE wordt bewerkt.
+Als u via het tabblad **[!UICONTROL Localization]** in **[!UICONTROL Properties]** van een webtoepassing ten minste één extra taal selecteert, wordt een nieuwe optie beschikbaar wanneer u een HTML-inhoudsblok toevoegt aan een pagina die is bewerkt met DCE.
 
 Met deze optie kunt u aangeven of de blokinhoud moet worden vertaald of niet.
 
-Tekenreeksen die moeten worden vertaald, worden op dezelfde manier verzameld als de andere tekenreeksen van de webtoepassing, via het **[!UICONTROL Translations]** tabblad van de toepassing. Raadpleeg [deze pagina](../../web/using/translating-a-web-form.md) voor meer informatie.
+Tekenreeksen die moeten worden vertaald, worden op dezelfde manier verzameld als de andere tekenreeksen van de webtoepassing, via het tabblad **[!UICONTROL Translations]** van de toepassing. Raadpleeg [deze pagina](../../web/using/translating-a-web-form.md) voor meer informatie.
 
 De tekenreeksen markeren die moeten worden vertaald:
 
@@ -51,7 +51,7 @@ De tekenreeksen markeren die moeten worden vertaald:
 
       ![](assets/dce_translation_2.png)
 
-1. Wanneer u de tekenreeksen hebt gemarkeerd, gaat u terug naar de webtoepassing en selecteert u het **[!UICONTROL Translations]** tabblad.
+1. Wanneer u de tekenreeksen hebt gemarkeerd, gaat u terug naar de webtoepassing en selecteert u het tabblad **[!UICONTROL Translations]**.
 1. Selecteer **[!UICONTROL Collect the strings to translate]**. De tekenreeksen die in DCE worden gemarkeerd, worden toegevoegd aan de tekenreeksen van de webtoepassing.
 
    >[!NOTE]
@@ -60,5 +60,5 @@ De tekenreeksen markeren die moeten worden vertaald:
 
 1. Vertaal en keur de tekenreeksen goed.
 
-   U kunt dan een voorvertoning van de vertalingen bekijken door de gewenste taal te selecteren op het **[!UICONTROL Preview]** tabblad in de webtoepassing.
+   U kunt dan voorproef de vertalingen door de gewenste taal van **[!UICONTROL Preview]** lusje in de toepassing van het Web te selecteren.
 
