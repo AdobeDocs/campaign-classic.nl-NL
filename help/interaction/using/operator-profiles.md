@@ -19,7 +19,7 @@ ht-degree: 5%
 
 Er zijn twee soorten operatoren die Interactie gebruiken: bieden managers en leveringsmanagers aan. Ze hebben elk specifieke rechten die ze slechts toegang geven tot bepaalde delen van de boom en het platform.
 
-* **[!UICONTROL Offer manager]** : aanbiedingen maken en onderhouden. Als aanbiedingen worden gebruikt in de workflow, moet de operator zich in de **[!UICONTROL Administrator]** of **[!UICONTROL Offer managers]** operatorgroep bevinden om de workflow uit te voeren.
+* **[!UICONTROL Offer manager]** : aanbiedingen maken en onderhouden. Als aanbiedingen worden gebruikt in de workflow, moet de operator zich in de operatorgroep **[!UICONTROL Administrator]** of **[!UICONTROL Offer managers]** bevinden om de workflow uit te voeren.
 * **[!UICONTROL Delivery manager]** : goedkeurt en gebruikt voorstellen
 
 De stappen voor het maken van operatoren die specifiek zijn voor Interactie zijn identiek aan de stappen die worden gebruikt om alle andere operatoren op het platform te maken. Raadpleeg [deze sectie](../../platform/using/access-management.md#creating-an-operator) voor meer informatie. De rechten worden gevormd tijdens de verwezenlijking van de exploitant.
@@ -27,14 +27,14 @@ De stappen voor het maken van operatoren die specifiek zijn voor Interactie zijn
 ## Aanbiedingsmanager {#offer-manager}
 
 1. Maak een nieuwe operator.
-1. Ga naar het **[!UICONTROL Groups and named rights]** venster, klik **[!UICONTROL Add]** en selecteer de **[!UICONTROL Offer manager]** groep.
+1. Ga naar het **[!UICONTROL Groups and named rights]** venster, klik **[!UICONTROL Add]** en selecteer **[!UICONTROL Offer manager]** groep.
 
    ![](assets/offer_operators_create_001.png)
 
 De aan de aanbiedingsmanager toegewezen rechten stellen hen in staat de volgende taken uit te voeren:
 
-* Pas **[!UICONTROL Design]** omgevingen aan.
-* Bekijk **[!UICONTROL Live]** omgevingen.
+* Wijzig **[!UICONTROL Design]** milieu&#39;s.
+* **[!UICONTROL Live]**-omgevingen weergeven.
 * Vorm beleidsfuncties (vooraf bepaalde ruimten en filters).
 * Categorieën maken en wijzigen.
 * Maak voorstellen.
@@ -48,13 +48,13 @@ De aan de aanbiedingsmanager toegewezen rechten stellen hen in staat de volgende
 ## Leveringsmanager {#delivery-manager}
 
 1. Maak een nieuwe operator.
-1. Ga naar het **[!UICONTROL Groups and named rights]** venster, klik **[!UICONTROL Add]** en selecteer de **[!UICONTROL Delivery manager]** groep.
+1. Ga naar het **[!UICONTROL Groups and named rights]** venster, klik **[!UICONTROL Add]** en selecteer **[!UICONTROL Delivery manager]** groep.
 
    ![](assets/offer_operators_create_002.png)
 
 De aan de leveringsmanager toegewezen rechten zijn/laten hen toe om de volgende taken uit te voeren:
 
-* Weergaveomgevingen **[!UICONTROL Live]** .
+* Geef **[!UICONTROL Live]** omgevingen weer.
 * Categorieën voorstellen weergeven en wijzigen.
 * Aanbiedingen goedkeuren als s/he is opgegeven als een van de controleurs.
 
@@ -62,7 +62,7 @@ De aan de leveringsmanager toegewezen rechten zijn/laten hen toe om de volgende 
    >
    >De leveringsmanager kan een aanbieding slechts goedkeuren als hij als recensent tijdens de aanbiedingsconfiguratie is bepaald.
 
-## Reparatie van rechten volgens exploitant {#recap-of-rights-according-to-operator}
+## Reparatie van rechten volgens operator {#recap-of-rights-according-to-operator}
 
 <table> 
  <tbody> 
@@ -82,7 +82,7 @@ De aan de leveringsmanager toegewezen rechten zijn/laten hen toe om de volgende 
    <td> Lezen<br /> </td> 
   </tr> 
   <tr> 
-   <td> Ontvanger - Milieu<br /> </td> 
+   <td> Ontvanger - Omgeving<br /> </td> 
    <td> Lezen/Schrijven<br /> </td> 
    <td> Lezen<br /> </td> 
   </tr> 
@@ -112,7 +112,7 @@ De aan de leveringsmanager toegewezen rechten zijn/laten hen toe om de volgende 
    <td> Lezen<br /> </td> 
   </tr> 
   <tr> 
-   <td> Aanbiedingscatalogus<br /> </td> 
+   <td> Catalogus aanbod<br /> </td> 
    <td> Lezen/Schrijven<br /> </td> 
    <td> Lezen<br /> </td> 
   </tr> 
@@ -142,7 +142,7 @@ De aan de leveringsmanager toegewezen rechten zijn/laten hen toe om de volgende 
    <td> Lezen<br /> </td> 
   </tr> 
   <tr> 
-   <td> Ontvanger - Milieu<br /> </td> 
+   <td> Ontvanger - Omgeving<br /> </td> 
    <td> </td> 
    <td> Lezen<br /> </td> 
   </tr> 
@@ -172,7 +172,7 @@ De aan de leveringsmanager toegewezen rechten zijn/laten hen toe om de volgende 
    <td> Lezen<br /> </td> 
   </tr> 
   <tr> 
-   <td> Aanbiedingscatalogus<br /> </td> 
+   <td> Catalogus aanbod<br /> </td> 
    <td> Lezen<br /> </td> 
    <td> Lezen<br /> </td> 
   </tr> 
