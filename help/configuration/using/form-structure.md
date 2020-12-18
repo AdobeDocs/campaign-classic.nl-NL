@@ -19,7 +19,7 @@ ht-degree: 0%
 
 De beschrijving van een formulier is een gestructureerd XML-document waarin de grammatica van het formulierschema **xtk:form** wordt gevolgd.
 
-Het XML-document van het invoerformulier moet het `<form>` hoofdelement bevatten met de kenmerken **name** en **namespace** om de naam en naamruimte van het formulier te vullen.
+Het XML-document van het invoerformulier moet het basiselement `<form>` bevatten met de kenmerken **name** en **namespace** om de formuliernaam en naamruimte te vullen.
 
 ```
 <form name="form_name" namespace="name_space">
@@ -27,7 +27,7 @@ Het XML-document van het invoerformulier moet het `<form>` hoofdelement bevatten
 </form>
 ```
 
-Een formulier is standaard gekoppeld aan het gegevensschema met dezelfde naam en naamruimte. Als u een formulier wilt koppelen aan een andere naam, stelt u het kenmerk **entiteit-schema** van het `<form>` element in op de naam van de schemasleutel. Als u de structuur van een invoerformulier wilt illustreren, kunt u een interface beschrijven met het voorbeeldschema &quot;focus:receiver&quot;:
+Een formulier is standaard gekoppeld aan het gegevensschema met dezelfde naam en naamruimte. Om een vorm met een verschillende naam te associëren, plaats **entiteit-schema** attributen van het `<form>` element aan de naam van de schemasleutel. Als u de structuur van een invoerformulier wilt illustreren, kunt u een interface beschrijven met het voorbeeldschema &quot;focus:receiver&quot;:
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -57,13 +57,13 @@ Het invoerformulier op basis van het voorbeeldschema:
 </form>
 ```
 
-De beschrijving van de bewerkingsbesturingselementen begint bij het `<form>` hoofdelement. Een bewerkingsbesturingselement wordt ingevoerd in een **`<input>`** element met het kenmerk **xpath** dat het pad van het veld in het schema bevat.
+De beschrijving van de bewerkingsbesturingselementen begint bij het basiselement `<form>`. Een bewerkingscontrole is ingegaan in een **`<input>`** element met het **xpath** attribuut dat de weg van het gebied in zijn schema bevat.
 
 Het bewerkingsbesturingselement past zich automatisch aan het overeenkomstige gegevenstype aan en gebruikt het label dat in het schema is gedefinieerd.
 
 >[!NOTE]
 >
->U kunt het label dat in het gegevensschema is gedefinieerd, overladen door het **labelkenmerk** aan het `<input>` element toe te voegen:\
+>U kunt het label dat in zijn gegevensschema wordt bepaald overladen door het **label** attribuut aan `<input>` element toe te voegen:\
 >`<input label="E-mail address" xpath="@name" />`
 
 Elk veld wordt standaard weergegeven op één regel en neemt alle beschikbare ruimte in beslag, afhankelijk van het type gegevens.
@@ -86,7 +86,7 @@ De besturingselementen van het bovenstaande voorbeeld in twee kolommen weergeven
 </form>
 ```
 
-Met het **`<container>`** element met het kenmerk **colcount** kunt u de weergave van onderliggende besturingselementen op twee kolommen forceren.
+Met het **`<container>`**-element met het **colcount**-kenmerk kunt u de weergave van onderliggende besturingselementen op twee kolommen forceren.
 
 Het **colspan** attribuut op een controle breidt de controle door het aantal kolommen uit ingegaan in zijn waarde:
 
@@ -102,7 +102,7 @@ Het **colspan** attribuut op een controle breidt de controle door het aantal kol
 </form> 
 ```
 
-Door het **type=&quot;frame&quot;** attribuut te vullen, voegt de container een kader rond de kindcontroles met het etiket in het **etiketattribuut** toe:
+Door het **type=&quot;frame&quot;** attribuut te vullen, voegt de container een kader rond de kindcontroles met het etiket toe in het **label** attribuut:
 
 ![](assets/d_ncs_integration_form_exemple4.png)
 
@@ -116,7 +116,7 @@ Door het **type=&quot;frame&quot;** attribuut te vullen, voegt de container een 
 </form>
 ```
 
-Een **`<static>`** element kan worden gebruikt om het invoerformulier op te maken:
+Een **`<static>`**-element kan worden gebruikt om het invoerformulier op te maken:
 
 ![](assets/d_ncs_integration_form_exemple5.png)
 
@@ -130,15 +130,15 @@ Een **`<static>`** element kan worden gebruikt om het invoerformulier op te make
 </form>
 ```
 
-Met de **`<static>`** tag met het **scheidingsteken** kunt u een scheidingsbalk toevoegen met een label in het **labelkenmerk** .
+Met de tag **`<static>`** met het type **separator** kunt u een scheidingsbalk toevoegen met een label in het kenmerk **label**.
 
-Er is een Help-tekst toegevoegd met de `<static>` tag met het type help. De inhoud van de tekst wordt ingevoerd in het **labelkenmerk** .
+Er is een Help-tekst toegevoegd met de tag `<static>` met het type help. De inhoud van de tekst wordt ingevoerd in het **label**-kenmerk.
 
 ## Containers {#containers}
 
 Met containers kunt u een set besturingselementen groeperen. Zij worden vertegenwoordigd door het **`<container>`** element. Deze werden hierboven gebruikt om besturingselementen in te delen in meerdere kolommen.
 
-Het **xpath** attribuut op een `<container>` laat u het van verwijzingen voorzien van kindcontroles vereenvoudigen. De verwijzing van controles is dan met betrekking tot de ouder `<container>` ouder.
+Met het kenmerk **xpath** op een `<container>` kunt u de verwijzing van onderliggende besturingselementen vereenvoudigen. Het verwijzen van controles is dan met betrekking tot de ouder `<container>` ouder.
 
 Voorbeeld van een container zonder &quot;xpath&quot;:
 
@@ -181,7 +181,7 @@ Met een tabcontainer worden gegevens op pagina&#39;s opgemaakt die toegankelijk 
 </container>
 ```
 
-De hoofdcontainer wordt gedefinieerd door het kenmerk **type=&quot;notebook&quot;** . Tabs worden gedeclareerd in de onderliggende containers en het label van de tabbladen wordt gevuld vanuit het **labelkenmerk** .
+De hoofdcontainer wordt gedefinieerd door het **type=&quot;laptop&quot;**-kenmerk. Tabs worden gedeclareerd in de onderliggende containers en het label van de tabbladen wordt gevuld met het kenmerk **label**.
 
 >[!NOTE]
 >
@@ -208,11 +208,11 @@ In deze container wordt een verticale pictogrambalk weergegeven waarmee u de pag
 </container>
 ```
 
-De hoofdcontainer wordt gedefinieerd door het kenmerk **type=&quot;iconbox&quot;** . De pagina&#39;s die aan de pictogrammen zijn gekoppeld, worden gedeclareerd in de onderliggende containers. Het label van de pictogrammen wordt gevuld vanuit het **labelkenmerk** .
+De hoofdcontainer wordt gedefinieerd door het **type=&quot;iconbox&quot;**-kenmerk. De pagina&#39;s die aan de pictogrammen zijn gekoppeld, worden gedeclareerd in de onderliggende containers. Het label van de pictogrammen wordt gevuld van het **label** attribuut.
 
-Het pictogram van een pagina wordt gevuld vanuit het `img="<image>"` kenmerk, waarbij `<image>` de naam van de afbeelding overeenkomt met de sleutel die uit de naam en naamruimte bestaat (bijvoorbeeld &quot;xtk:properties.png&quot;).
+Het pictogram van een pagina wordt gevuld met het kenmerk `img="<image>"`, waarbij `<image>` de naam is van de afbeelding die overeenkomt met de sleutel die uit de naam en naamruimte bestaat (bijvoorbeeld &quot;xtk:properties.png&quot;).
 
-De afbeeldingen zijn beschikbaar via het **[!UICONTROL Administration > Configuration > Images]** knooppunt.
+De afbeeldingen zijn beschikbaar via het knooppunt **[!UICONTROL Administration > Configuration > Images]**.
 
 #### Visibility container {#visibility-container}
 
@@ -229,7 +229,7 @@ Dit voorbeeld illustreert de zichtbaarheid van besturingselementen voor de waard
 </container>
 ```
 
-Een zichtbaarheidscontainer wordt gedefinieerd door het attribuut **type=&quot;visibleGroup&quot;**. Het **kenmerk visibleIf** bevat de zichtbaarheidsvoorwaarde.
+Een zichtbaarheidscontainer wordt bepaald door het attribuut **type=&quot;visibleGroup&quot;**. Het **visibleIf**-kenmerk bevat de zichtbaarheidsvoorwaarde.
 
 Voorbeelden van syntaxis van voorwaarde:
 
@@ -237,7 +237,7 @@ Voorbeelden van syntaxis van voorwaarde:
 * **visibleIf=&quot;@gender >= 1 en @gender != 2&quot;**: voorwaarde op een numerieke waarde.
 * **visibleIf=&quot;@boolean1==true of @boolean2==false&quot;**: testen op Booleaanse velden.
 
-#### Container inschakelen {#enabling-container}
+#### Container {#enabling-container} inschakelen
 
 Met deze container kunt u een set gegevens in- of uitschakelen vanuit een dynamische voorwaarde. Als u een besturingselement uitschakelt, wordt het niet bewerkt. In het volgende voorbeeld wordt getoond hoe besturingselementen kunnen worden ingeschakeld met behulp van de waarde van het veld &quot;Geslacht&quot;:
 
@@ -252,7 +252,7 @@ Met deze container kunt u een set gegevens in- of uitschakelen vanuit een dynami
 
 Een toelatende container wordt bepaald door het **type=&quot;enabledGroup&quot;** attribuut. Het **enabledIf** attribuut bevat de activeringsvoorwaarde.
 
-## Een koppeling bewerken {#editing-a-link}
+## Een koppeling {#editing-a-link} bewerken
 
 Vergeet niet dat een koppeling als volgt in het gegevensschema wordt gedeclareerd:
 
@@ -268,17 +268,17 @@ De bewerkingscontrole voor de koppeling in de invoervorm is als volgt:
 <input xpath="company"/>
 ```
 
-Doelselectie is toegankelijk via het bewerkingsveld. Invoer wordt ondersteund door &#39;type-ahead&#39;, zodat een doelelement gemakkelijk kan worden gevonden op basis van de eerste paar ingevoerde tekens. Het onderzoek wordt dan gebaseerd op het **Compute koord** dat in het gerichte schema wordt bepaald. Als het schema niet bestaat na bevestiging in de controle, wordt een bevestigingsbericht van de verwezenlijking van het on-the-fly doel getoond. De bevestiging leidt tot een nieuw verslag in de doellijst en associeert het met de verbinding.
+Doelselectie is toegankelijk via het bewerkingsveld. Invoer wordt ondersteund door &#39;type-ahead&#39;, zodat een doelelement gemakkelijk kan worden gevonden op basis van de eerste paar ingevoerde tekens. Het onderzoek wordt dan gebaseerd op **Berekend koord** die in het gerichte schema wordt bepaald. Als het schema niet bestaat na bevestiging in de controle, wordt een bevestigingsbericht van de verwezenlijking van het on-the-fly doel getoond. De bevestiging leidt tot een nieuw verslag in de doellijst en associeert het met de verbinding.
 
 Een vervolgkeuzelijst wordt gebruikt om een doelelement te selecteren in de lijst met records die al zijn gemaakt.
 
-Met het pictogram **[!UICONTROL Modify the link]** (map) wordt een selectieformulier gestart met de lijst met doelelementen en een filterzone:
+Met het pictogram **[!UICONTROL Modify the link]** (map) wordt een selectievorm gestart met de lijst met doelelementen en een filterzone:
 
 ![](assets/d_ncs_integration_form_exemple10.png)
 
-Met het pictogram **[!UICONTROL Edit link]** (vergroting) wordt de bewerkvorm van het gekoppelde element gestart. Het gebruikte formulier wordt standaard afgetrokken op de sleutel van het doelschema. Met het **formulierkenmerk** kunt u de naam van het bewerkingsformulier afdwingen (bijvoorbeeld &quot;cus:company2&quot;).
+Met het pictogram **[!UICONTROL Edit link]** (vergrootglas) wordt de bewerkvorm van het gekoppelde element gestart. Het gebruikte formulier wordt standaard afgetrokken op de sleutel van het doelschema. Met het kenmerk **form** kunt u de naam van het bewerkingsformulier afdwingen (bijvoorbeeld &quot;cus:company2&quot;).
 
-U kunt de keuze van doelelementen beperken door het **`<sysfilter>`** element uit de koppelingsdefinitie in het invoerformulier toe te voegen:
+U kunt de keuze van doelelementen beperken door het element **`<sysfilter>`** van de koppelingsdefinitie in het invoerformulier toe te voegen:
 
 ```
 <input xpath="company">
@@ -288,7 +288,7 @@ U kunt de keuze van doelelementen beperken door het **`<sysfilter>`** element ui
 </input>
 ```
 
-U kunt de lijst ook sorteren met het **`<orderby>`** element:
+U kunt de lijst ook sorteren met het element **`<orderby>`**:
 
 ```
 <input xpath="company">
@@ -335,17 +335,17 @@ De lijst in de invoervorm:
 </input>
 ```
 
-De controle van de lijst wordt bepaald door het **type=&quot;linklist&quot;** attribuut. Het lijstpad moet naar de verzamelingskoppeling verwijzen.
+Lijstbesturingselement wordt gedefinieerd door het **type=&quot;linklist&quot;**-kenmerk. Het lijstpad moet naar de verzamelingskoppeling verwijzen.
 
-De kolommen worden gedeclareerd via de **`<input>`** elementen van de lijst. Het kenmerk **xpath** verwijst naar het pad van het veld in het doelschema.
+De kolommen worden gedeclareerd via de elementen **`<input>`** van de lijst. Het **xpath** attribuut verwijst naar de weg van het gebied in het doelschema.
 
 Een werkbalk met een label (gedefinieerd op de koppeling in het schema) wordt automatisch boven de lijst geplaatst.
 
 De lijst kan via de **[!UICONTROL Filters]** knoop worden gefiltreerd en worden gevormd om de kolommen toe te voegen en te sorteren.
 
-Met de **[!UICONTROL Add]** knoppen en **[!UICONTROL Delete]** knoppen kunt u verzamelingselementen aan de koppeling toevoegen en verwijderen. Standaard wordt bij het toevoegen van een element de bewerkingsvorm van het doelschema gestart.
+Met de knoppen **[!UICONTROL Add]** en **[!UICONTROL Delete]** kunt u verzamelingselementen aan de koppeling toevoegen en verwijderen. Standaard wordt bij het toevoegen van een element de bewerkingsvorm van het doelschema gestart.
 
-De **[!UICONTROL Detail]** knop wordt automatisch toegevoegd wanneer het kenmerk **zoom=&quot;true&quot;** is ingevuld in het **`<input>`** label van de lijst: hiermee kunt u het bewerkingsformulier van de geselecteerde regel starten.
+De **[!UICONTROL Detail]** knoop wordt automatisch toegevoegd wanneer **zoom=&quot;waar&quot;** attribuut op **`<input>`** markering van de lijst wordt voltooid: hiermee kunt u het bewerkingsformulier van de geselecteerde regel starten.
 
 Filteren en sorteren kan worden toegepast wanneer de lijst wordt geladen:
 
@@ -388,24 +388,24 @@ Bij ons voorbeeld beginnen we met de invoervorm van het schema &#39;cus:receiver
 </input>
 ```
 
-Met het **kenmerk xpathChoiceTarget** kunt u een selectievorm starten vanuit de ingevoerde koppeling. Het creëren van het verslag van de relatietabel zal automatisch de verbinding aan de huidige ontvanger en de geselecteerde dienst bijwerken.
+Met het kenmerk **xpathChoiceTarget** kunt u een selectievorm starten vanuit de ingevoerde koppeling. Het creëren van het verslag van de relatietabel zal automatisch de verbinding aan de huidige ontvanger en de geselecteerde dienst bijwerken.
 
 >[!NOTE]
 >
->Met het **kenmerk xpathEditTarget** kunt u het bewerken van de geselecteerde regel op de ingevoerde koppeling forceren.
+>Met het kenmerk **xpathEditTarget** kunt u het bewerken van de geselecteerde regel op de ingevoerde koppeling forceren.
 
-### Eigenschappen van List {#list-properties}
+### Lijsteigenschappen {#list-properties}
 
 * **noToolbar**: verbergt de werkbalk (met de waarde &quot;true&quot;)
 * **toolbarCaption**: Hiermee wordt het werkbalklabel overbelast
 * **toolbarAlign**: wijzigt de verticale of horizontale geometrie van de werkbalk (mogelijke waarden: &quot;vertical&quot;|&quot;horizontal&quot;)
 * **img**: Hiermee geeft u de afbeelding weer die aan de lijst is gekoppeld
 * **formulier**: Hiermee wordt de bewerkingsvorm van het doelelement overbelast
-* **zoomen**: voegt de **[!UICONTROL Zoom]** knop toe om het doelelement te bewerken
+* **zoomen**: voegt de  **[!UICONTROL Zoom]** knop toe om het doelelement te bewerken
 * **xpathEditTarget**: sets die de ingevoerde koppeling bewerken
 * **xpathChoiceTarget**: start bovendien het selectievorm op de ingevoerde koppeling
 
-## Besturingselementen geheugenlijst {#memory-list-controls}
+## Besturingselementen voor geheugenlijsten {#memory-list-controls}
 
 Met geheugenlijsten kunt u de verzamelingselementen bewerken door de lijstelementen vooraf te laden. Deze lijst kan niet worden gefilterd of worden gevormd.
 
@@ -424,9 +424,9 @@ Met dit besturingselement wordt een bewerkbare kolomlijst weergegeven met een we
 </input>
 ```
 
-De lijstcontrole moet met het **type=&quot;list&quot;** attribuut worden ingevuld, en de weg van de lijst moet naar het inzamelingselement verwijzen.
+De lijstcontrole moet met **type= &quot;lijst&quot;** attributen worden ingevuld, en de weg van de lijst moet naar het inzamelingselement verwijzen.
 
-De kolommen worden gedeclareerd in de onderliggende **`<input>`** codes van de lijst. Kolomlabel en -grootte kunnen worden geforceerd met de kenmerken **label** en **colSize** .
+De kolommen worden gedeclareerd in de onderliggende **`<input>`**-tags van de lijst. Kolomlabel en -grootte kunnen worden geforceerd met de kenmerken **label** en **colSize**.
 
 >[!NOTE]
 >
@@ -443,9 +443,9 @@ De werkbalkknoppen kunnen horizontaal worden uitgelijnd:
 </input>
 ```
 
-Het **kenmerk toolbarCaption** forceert de horizontale uitlijning van de werkbalk en voert de titel boven de lijst in.
+Het **toolbarCaption** attribuut dwingt de horizontale groepering van de toolbar af en gaat de titel boven de lijst in.
 
-#### Inzoomen op een lijst {#zoom-in-a-list}
+#### Een lijst inzoomen {#zoom-in-a-list}
 
 U kunt de gegevens in een lijst invoegen en bewerken in een afzonderlijk bewerkingsformulier.
 
@@ -463,26 +463,26 @@ U kunt de gegevens in een lijst invoegen en bewerken in een afzonderlijk bewerki
 </input>
 ```
 
-Het bewerkingsformulier wordt ingevuld vanaf het `<form>` element onder de lijstdefinitie. De structuur is identiek aan die van een invoerformulier. De **[!UICONTROL Detail]** knop wordt automatisch toegevoegd wanneer het kenmerk **zoom=&quot;true&quot;** is ingevuld in het **`<input>`** label van de lijst. Met dit kenmerk kunt u het bewerkingsformulier van de geselecteerde regel starten.
+Het bewerkingsformulier wordt ingevuld vanuit het element `<form>` onder lijstdefinitie. De structuur is identiek aan die van een invoerformulier. De **[!UICONTROL Detail]** knoop wordt automatisch toegevoegd wanneer **zoom=&quot;waar&quot;** attribuut op **`<input>`** markering van de lijst wordt voltooid. Met dit kenmerk kunt u het bewerkingsformulier van de geselecteerde regel starten.
 
 >[!NOTE]
 >
->Als u het kenmerk **zoomOnAdd=&quot;true&quot;** toevoegt, wordt het bewerkingsformulier automatisch opgeroepen wanneer een lijstelement wordt ingevoegd.
+>Als u het kenmerk **zoomOnAdd=&quot;true&quot;** toevoegt, moet het bewerkingsformulier worden opgevraagd wanneer een lijstelement wordt ingevoegd.
 
-### Eigenschappen van List {#list-properties-1}
+### Lijsteigenschappen {#list-properties-1}
 
 * **noToolbar**: verbergt de werkbalk (met de waarde &quot;true&quot;)
 * **toolbarCaption**: Hiermee wordt het werkbalklabel overbelast
 * **toolbarAlign**: wijzigt de positie van de werkbalk (mogelijke waarden: &quot;vertical&quot;|&quot;horizontal&quot;)
 * **img**: Hiermee geeft u de afbeelding weer die aan de lijst is gekoppeld
 * **formulier**: Hiermee wordt de bewerkingsvorm van het doelelement overbelast
-* **zoomen**: voegt de **[!UICONTROL Zoom]** knop toe om het doelelement te bewerken
+* **zoomen**: voegt de  **[!UICONTROL Zoom]** knop toe om het doelelement te bewerken
 * **zoomOnAdd**: Hiermee wordt het bewerkingsformulier gestart als het wordt toegevoegd
 * **xpathChoiceTarget**: start bovendien het selectievorm op de ingevoerde koppeling
 
 ## Niet-bewerkbare velden {#non-editable-fields}
 
-Als u een veld wilt weergeven en wilt voorkomen dat het wordt bewerkt, gebruikt u de **`<value>`** tag of vult u het kenmerk **readOnly=&quot;true&quot;** in op de **`<input>`** tag.
+Als u een veld wilt weergeven en wilt voorkomen dat het wordt bewerkt, gebruikt u de tag **`<value>`** of vult u het kenmerk **readOnly=&quot;true&quot;** in op de tag **`<input>`**.
 
 Voorbeeld op het veld &quot;Geslacht&quot;:
 
@@ -509,7 +509,7 @@ Voorbeeld op het veld &quot;Geslacht&quot;:
 
 ## Selectievakje {#checkbox}
 
-Een selectievakje geeft een Booleaanse status weer (geselecteerd of niet). Dit besturingselement wordt standaard gebruikt door Booleaanse velden (true/false). Een variabele met de standaardwaarde 0 of 1 kan aan deze knop worden gekoppeld. Deze waarde kan worden overbelast via de **kenmerken checkValue** .
+Een selectievakje geeft een Booleaanse status weer (geselecteerd of niet). Dit besturingselement wordt standaard gebruikt door Booleaanse velden (true/false). Een variabele met de standaardwaarde 0 of 1 kan aan deze knop worden gekoppeld. Deze waarde kan worden overbelast via de kenmerken **checkValue**.
 
 ```
 <input xpath="@boolean1"/>
@@ -518,11 +518,11 @@ Een selectievakje geeft een Booleaanse status weer (geselecteerd of niet). Dit b
 
 ![](assets/d_ncs_integration_form_exemple20.png)
 
-## Navigatiehiërarchie bewerken {#navigation-hierarchy-edit}
+## Bewerken van {#navigation-hierarchy-edit} in navigatiehiërarchie
 
 Deze controle bouwt een boom op een reeks gebieden om uit te geven.
 
-De te bewerken besturingselementen worden gegroepeerd in een **`<container>`** item dat onder het **`<input>`** label van het structuurbesturingselement wordt ingevoerd:
+De besturingselementen die moeten worden bewerkt, worden gegroepeerd in een **`<container>`** die wordt ingevoerd onder de **`<input>`**-tag van het structuurbesturingselement:
 
 ```
 <input nolabel="true" type="treeEdit">
@@ -541,7 +541,7 @@ De te bewerken besturingselementen worden gegroepeerd in een **`<container>`** i
 
 ## Expressieveld {#expression-field}
 
-Een expressieveld werkt een veld dynamisch bij vanuit een expressie. de **`<input>`** tag wordt gebruikt met een **xpath** -kenmerk om het pad in te voeren van het veld dat moet worden bijgewerkt en een **expr** -kenmerk dat de update-expressie bevat.
+Een expressieveld werkt een veld dynamisch bij vanuit een expressie. De **`<input>`**-tag wordt gebruikt met een **xpath**-kenmerk om het pad in te voeren van het veld dat moet worden bijgewerkt en een **expr**-kenmerk met de update-expressie.
 
 ```
 <!-- Example: updating the boolean1 field from the value contained in the field with path /tmp/@flag -->
@@ -553,18 +553,18 @@ Een expressieveld werkt een veld dynamisch bij vanuit een expressie. de **`<inpu
 
 Door het uitvoeren van een invoerformulier wordt een XML-document geïnitialiseerd dat de gegevens bevat van de entiteit die wordt bewerkt. Dit document vertegenwoordigt de context van het formulier en kan als werkruimte worden gebruikt.
 
-### De context bijwerken {#updating-the-context}
+### De context {#updating-the-context} bijwerken
 
-Als u de context van het formulier wilt wijzigen, gebruikt u de **`<set expr="<value>" xpath="<field>"/>`** code, waar **`<field>`** is het doelveld, en **`<value>`** is dit de update-expressie of waarde.
+Als u de context van het formulier wilt wijzigen, gebruikt u de tag **`<set expr="<value>" xpath="<field>"/>`**, waarbij **`<field>`** het doelveld is en **`<value>`** de update-expressie of -waarde.
 
-Voorbeelden van het gebruik van de **`<set>`** tag:
+Voorbeelden van het gebruik van de tag **`<set>`**:
 
 * **`<set expr="'Test'" xpath="/tmp/@test" />`**: Hiermee wordt de waarde &#39;Testen&#39; op de tijdelijke locatie geplaatst. /tmp/@test1
 * **`<set expr="'Test'" xpath="@lastName" />`**: Hiermee wordt de entiteit in het kenmerk &quot;lastName&quot; bijgewerkt met de waarde &quot;Test&quot;
 * **`<set expr="true" xpath="@boolean1" />`**: stelt de waarde van het veld &quot;boolean1&quot; in op &quot;true&quot;
 * **`<set expr="@lastName" xpath="/tmp/@test" />`**: updates met de inhoud van het kenmerk &quot;lastName&quot;
 
-De context van het formulier kan worden bijgewerkt tijdens het initialiseren en sluiten van het formulier via de **`<enter>`** tags en **`<leave>`** codes.
+De context van het formulier kan worden bijgewerkt tijdens het initialiseren en sluiten van het formulier via de codes **`<enter>`** en **`<leave>`**.
 
 ```
 <form name="recipient" namespace="cus">
@@ -580,13 +580,13 @@ De context van het formulier kan worden bijgewerkt tijdens het initialiseren en 
 
 >[!NOTE]
 >
->De `<enter>` - en `<leave>` `<container>` -tags kunnen worden gebruikt op pagina&#39;s (&#39;notebook&#39; en &#39;iconbox&#39;-typen).
+>De `<enter>` en `<leave>`   -tags kunnen worden gebruikt op de `<container>` pagina&#39;s (&quot;laptop&quot;- en &quot;iconbox&quot;-typen).
 
 ### Expressietaal {#expression-language-}
 
 Een macrotaal kan in formulierdefinitie worden gebruikt om voorwaardelijke tests uit te voeren.
 
-De **`<if expr="<expression>" />`** tag voert de instructies uit die onder de tag zijn opgegeven als de expressie wordt geverifieerd:
+De tag **`<if expr="<expression>" />`** voert de instructies uit die onder de tag zijn opgegeven als de expressie wordt geverifieerd:
 
 ```
 <if expr="([/tmp/@test] == 'Test' or @lastName != 'Doe') and @boolean2 == true">
@@ -594,7 +594,7 @@ De **`<if expr="<expression>" />`** tag voert de instructies uit die onder de ta
 </if>
 ```
 
-De **`<check expr="<condition>" />`** tag in combinatie met de **`<error>`** tag voorkomt validatie van het formulier en geeft een foutbericht weer als niet aan de voorwaarde wordt voldaan:
+De tag **`<check expr="<condition>" />`** in combinatie met de tag **`<error>`** voorkomt validatie van het formulier en geeft een foutbericht weer als niet aan de voorwaarde wordt voldaan:
 
 ```
 <leave>
@@ -625,15 +625,15 @@ Een wizard heeft de volgende structuur:
 
 ![](assets/d_ncs_integration_form_exemple19.png)
 
-Met de aanwezigheid van het kenmerk **type=&quot;wizard&quot;** op het `<form>` element kunt u de wizardmodus definiëren in de constructie van het formulier. De pagina&#39;s worden voltooid met `<container>` elementen, onderliggende elementen van het `<form>` element. Het `<container>` element van een pagina wordt gevuld met de titelkenmerken voor de titel en het desc om de beschrijving onder de paginatitel weer te geven. De knoppen **[!UICONTROL Previous]** en **[!UICONTROL Next]** worden automatisch toegevoegd om te kunnen bladeren tussen pagina&#39;s.
+Met de aanwezigheid van het **type=&quot;wizard&quot;**-kenmerk op het `<form>`-element kunt u de wizardmodus definiëren in de constructie van het formulier. De pagina&#39;s worden voltooid van `<container>`-elementen, onderliggende elementen van het `<form>`-element. Het element `<container>` van een pagina is gevuld met de titelkenmerken voor de titel en desc om de beschrijving onder de paginatitel weer te geven. De knoppen **[!UICONTROL Previous]** en **[!UICONTROL Next]** worden automatisch toegevoegd om bladeren tussen pagina&#39;s mogelijk te maken.
 
-Met de **[!UICONTROL Finish]** knop slaat u de ingevoerde gegevens op en sluit u het formulier.
+Met de knop **[!UICONTROL Finish]** slaat u de ingevoerde gegevens op en sluit u het formulier.
 
 ### SOAP-methoden {#soap-methods}
 
-De uitvoering van de SOAP-methode kan worden gestart vanuit een gevulde **`<leave>`** tag aan het einde van een pagina.
+De uitvoering van de SOAP-methode kan worden gestart vanuit een gevulde **`<leave>`**-tag aan het einde van een pagina.
 
-De **`<soapcall>`** tag bevat de aanroep van de methode met de volgende invoerparameters:
+De tag **`<soapcall>`** bevat de aanroep van de methode met de volgende invoerparameters:
 
 ```
 <soapCall name="<name>" service="<schema>">
@@ -642,11 +642,11 @@ De **`<soapcall>`** tag bevat de aanroep van de methode met de volgende invoerpa
 </soapCall>
 ```
 
-De naam van de dienst en zijn implementatieschema zijn ingegaan via de **naam** en de **dienstattributen** van de **`<soapcall>`** markering.
+De naam van de service en het implementatieschema worden ingevoerd via de kenmerken **name** en **service** van de tag **`<soapcall>`**.
 
-De invoerparameters worden beschreven op de **`<param>`** elementen onder de **`<soapcall>`** tag.
+De invoerparameters worden beschreven in de **`<param>`**-elementen onder de tag **`<soapcall>`**.
 
-Het parametertype moet via het **typeattribuut** worden gespecificeerd. De mogelijke typen zijn:
+Het parametertype moet via het **type** attribuut worden gespecificeerd. De mogelijke typen zijn:
 
 * **tekenreeks**: tekenreeks
 * **Booleaans**: Boolean
@@ -657,7 +657,7 @@ Het parametertype moet via het **typeattribuut** worden gespecificeerd. De mogel
 * **dubbel**: drijvende-kommagetal met dubbele precisie
 * **DOMElement**: elementtype node
 
-Het **kenmerk exprIn** bevat de locatie van de gegevens die als parameter moeten worden doorgegeven.
+Het **exprIn** attribuut bevat de plaats van de gegevens die als parameter moeten worden overgegaan.
 
 **Voorbeeld**:
 
