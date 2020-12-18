@@ -19,11 +19,11 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Eerst en vooral, zou u moeten controleren dat u de recentste bouwstijl hebt geïnstalleerd. Dit zorgt ervoor dat u de recentste eigenschappen en insectenmoeilijke situaties hebt. Raadpleeg de [opmerkingen bij](../../rn/using/latest-release.md) de release voor meer informatie over de inhoud van elke release.
+>Eerst en vooral, zou u moeten controleren dat u de recentste bouwstijl hebt geïnstalleerd. Dit zorgt ervoor dat u de recentste eigenschappen en insectenmoeilijke situaties hebt. Raadpleeg de [Opmerkingen bij de release](../../rn/using/latest-release.md) voor meer informatie over de inhoud van elke release.
 
 ## Hardware en infrastructuur {#hardware-and-infrastructure}
 
-Algemene richtlijnen voor hardwarevereisten voor on-premise Campaign Classic worden in dit [artikel](https://helpx.adobe.com/nl/campaign/kb/hardware-sizing-guide.html)beschreven.
+Algemene richtlijnen voor hardwarevereisten voor on-premise Campaign Classic worden beschreven in dit [artikel](https://helpx.adobe.com/nl/campaign/kb/hardware-sizing-guide.html).
 
 Het raadplegende team kan ontvangen klanten een hulpmiddel verstrekken dat u toestaat om gemakkelijk te bekijken hoeveel ruimte door diverse types van lijsten in het gegevensbestand evenals de ruimte wordt gebruikt die op de plaats SFTP wordt gebruikt. Daarnaast beschikt de toepassing over gereedschappen waarmee u overbodige gegevens kunt opschonen. Neem contact op met de consulteer- of supportteams als u dit hulpprogramma nodig hebt. Hier volgen enkele belangrijke zaken die u met dit gereedschap kunt controleren:
 
@@ -31,7 +31,7 @@ Het raadplegende team kan ontvangen klanten een hulpmiddel verstrekken dat u toe
 * Controleer de tabellen die het maximale bloat hebben. Als deze tabellen vaak worden gebruikt, moeten ze worden opgevuld.
 * Door databaseblokkering kunnen e-mails niet meer worden verzonden.
 
-Adobe Campaign beschikt ook over een [programma](../../production/using/monitoring-processes.md#manual-monitoring) om het CPU- en RAM-verbruik te controleren. Gebruik dit hulpmiddel en bekijk specifieke indicatoren zoals: **Geheugen**, **Geheugen** wisselen, **Schijf**, **Actieve Processen**. Als de waarden te hoog zijn, kunt u proberen het aantal werkstromen te verminderen of werkschema&#39;s plannen om op verschillende tijden te beginnen.
+Adobe Campaign biedt ook een [tool](../../production/using/monitoring-processes.md#manual-monitoring) om het CPU- en RAM-gebruik te controleren. Gebruik dit hulpmiddel en bekijk specifieke indicatoren zoals: **Geheugen**, **Geheugen omwisselen**, **Schijf**, **Actieve processen**. Als de waarden te hoog zijn, kunt u proberen het aantal werkstromen te verminderen of werkschema&#39;s plannen om op verschillende tijden te beginnen.
 
 ## Databaseprestaties {#database-performances}
 
@@ -44,28 +44,28 @@ Meestal zijn prestatieproblemen gekoppeld aan databaseonderhoud. Hier volgen de 
 
 >[!NOTE]
 >
->For more information, refer to this section: [Database performances](../../production/using/database-performances.md).
+>Zie deze sectie voor meer informatie: [Databaseprestaties](../../production/using/database-performances.md).
 
 ## Toepassingsconfiguratie {#application-configuration}
 
 Hier volgt een lijst met artikelen die betrekking hebben op de aanbevolen werkwijzen voor toepassingsconfiguratie:
 
-* MTA en MTAChild processen en geheugen: de **mta** module verspreidt berichten aan zijn **mtachild** modules. Elk **mtachild** bereidt berichten voor alvorens om een vergunning van de statistiekserver te verzoeken, en hen te verzenden. Refer to this [page](../../installation/using/email-deliverability.md) for more information.
-* TLS-configuratie: het wereldwijd inschakelen van TLS wordt afgeraden omdat dit de doorvoer kan verminderen. In plaats daarvan moeten de TLS-instellingen per domein, beheerd door het leveringsteam, worden afgestemd op de behoeften. Refer to this [page](../../installation/using/email-deliverability.md#mx-configuration) for more information.
-* DKIM: Om het veiligheidsniveau van DKIM te verzekeren, is 1024b de Beste praktijken geadviseerde encryptiegrootte. De lagere sleutels DKIM zullen niet als geldig door de meerderheid van toegangsleveranciers worden beschouwd. Zie deze [pagina](../../delivery/using/technical-recommendations.md#dkim) en dit [technische artikel](https://helpx.adobe.com/nl/campaign/kb/domain-name-delegation.html).
+* MTA en MTAChild processen en geheugen: de **mta** module verspreidt berichten aan zijn **mtachild** kindmodules. Elk **mtachild** bereidt berichten voor alvorens om een vergunning van de statistiekserver te verzoeken, en hen te verzenden. Raadpleeg deze [pagina](../../installation/using/email-deliverability.md) voor meer informatie.
+* TLS-configuratie: het wereldwijd inschakelen van TLS wordt afgeraden omdat dit de doorvoer kan verminderen. In plaats daarvan moeten de TLS-instellingen per domein, beheerd door het leveringsteam, worden afgestemd op de behoeften. Raadpleeg deze [pagina](../../installation/using/email-deliverability.md#mx-configuration) voor meer informatie.
+* DKIM: Om het veiligheidsniveau van DKIM te verzekeren, is 1024b de Beste praktijken geadviseerde encryptiegrootte. De lagere sleutels DKIM zullen niet als geldig door de meerderheid van toegangsleveranciers worden beschouwd. Zie deze [pagina](../../delivery/using/technical-recommendations.md#dkim) en deze [technologie](https://helpx.adobe.com/nl/campaign/kb/domain-name-delegation.html).
 
-## Leverbaarheidsproblemen {#deliverability-issues}
+## Problemen met de aflevering {#deliverability-issues}
 
 Hier volgt een lijst met best practices en artikelen met betrekking tot de te leveren items:
 
-* IP-reputatie: als de IP reputatie niet goed genoeg is, zal er een effect op prestaties zijn. De module **Leverbaarheidscontrole** biedt verschillende tools om de prestaties van uw platform bij te houden. Refer to this [page](../../delivery/using/monitoring-deliverability.md).
+* IP-reputatie: als de IP reputatie niet goed genoeg is, zal er een effect op prestaties zijn. De **Deliverability Monitoring** module biedt diverse hulpmiddelen aan om de leverbaarheidsprestaties van uw platform te volgen. Zie deze [pagina](../../delivery/using/monitoring-deliverability.md).
 * Opwarmen IP: IP warm-up wordt uitgevoerd door het leveringsteam. Dit houdt in dat het aantal e-mails over een periode van een paar weken geleidelijk wordt verhoogd via nieuwe IP&#39;s.
-* Instellen IP-affiniteit: Een onjuiste IP affiniteitopstelling kan de e-mail volledig tegenhouden (onjuiste exploitant/affiniteitsnaam in configuratie) of de productie (klein aantal IPs in de affiniteit) verminderen. Refer to this [page](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* E-mailformaat: De e-mailgrootte speelt een belangrijke rol in productie. De aanbevolen maximale e-mailgrootte is 60 kB. Refer to this [page](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Controleer in het rapport [Leveringsdoorvoer](../../reporting/using/global-reports.md#delivery-throughput) het aantal bytes dat per uur is overgedragen.
+* Instellen IP-affiniteit: Een onjuiste IP affiniteitopstelling kan de e-mail volledig tegenhouden (onjuiste exploitant/affiniteitsnaam in configuratie) of de productie (klein aantal IPs in de affiniteit) verminderen. Zie deze [pagina](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
+* E-mailformaat: De e-mailgrootte speelt een belangrijke rol in productie. De aanbevolen maximale e-mailgrootte is 60 kB. Zie deze [pagina](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Controleer in het rapport [Delivery doorvoer](../../reporting/using/global-reports.md#delivery-throughput) het aantal bytes dat per uur is overgedragen.
 * Groot aantal ongeldige ontvangers: wanneer er een groot aantal ongeldige ontvangers is, kan het effect op de productie hebben. De MTA blijft het verzenden van e-mails naar ongeldige ontvangers opnieuw proberen. Controleer of de database goed wordt onderhouden.
 * Hoeveelheid personalisatie: als een levering in &quot;Personalisatie lopend&quot;blijft, controleer JavaScript die in verpersoonlijkingsblokken wordt gebruikt.
 
 >[!NOTE]
 >
->Zie ook [sectie met hoofdpunten](../../delivery/using/deliverability-key-points.md) voor de aflevering.
+>Zie ook [Belangrijke punten van de leveringssleutel](../../delivery/using/deliverability-key-points.md) sectie.
 
