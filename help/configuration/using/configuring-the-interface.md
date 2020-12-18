@@ -25,11 +25,11 @@ Voer de volgende stappen uit om de nieuwe tabel met ontvangers in de Adobe Campa
 
 Adobe Campaign gebruikt een globale variabele &quot;Nms_DefaultRcpSchema&quot;aan dialoog met het standaard ontvankelijke gegevensbestand (nms:ontvanger). Deze variabele moet daarom worden gewijzigd.
 
-1. Ga naar het **[!UICONTROL Administration>Platform>Options]** knooppunt van de verkenner.
-1. Wijzig de waarde van de **variabele Nms_DefaultRcpSchema** met de naam van het schema dat overeenkomt met de externe tabel voor ontvangers (in dit geval: focus:individu).
+1. Ga naar de **[!UICONTROL Administration>Platform>Options]** knoop van de ontdekkingsreiziger.
+1. Wijzig de waarde van de variabele **Nms_DefaultRcpSchema** met de naam van het schema dat overeenkomt met de externe ontvangende tabel (in dit geval: focus:individu).
 1. Wijzigingen opslaan.
 
-## Creating a new form {#creating-a-new-form-}
+## Een nieuw formulier maken {#creating-a-new-form-}
 
 Als u een nieuw formulier maakt, kunt u de gegevens van de externe tabel met ontvangers weergeven en bewerken.
 
@@ -37,15 +37,15 @@ Als u een nieuw formulier maakt, kunt u de gegevens van de externe tabel met ont
 >
 >De naam van het formulier moet gelijk zijn aan de naam van het schema waarop het betrekking heeft.
 
-1. Ga naar het knooppunt **Beheer > Configuratie > Invoerformulieren** van de verkenner.
-1. Maak een nieuw **xtk:formuliertype** - **formulierbestand** .
+1. Ga naar **Beheer > Configuratie > Invoerformulieren** van de verkenner.
+1. Maak een nieuw **xtk:form** type **form** bestand.
 1. Beschrijf alle controles en gebieden die u afhankelijk van uw lijstmalplaatje nodig hebt.
 
    >[!NOTE]
    >
-   >Meer informatie over **formuliertypebestanden** vindt u op [deze pagina](../../configuration/using/identifying-a-form.md).
+   >Als u meer wilt weten over **form**-tekstbestanden, raadpleegt u [deze pagina](../../configuration/using/identifying-a-form.md).
 
-   In ons huidige voorbeeld moet het **formulierbestand** zijn gebaseerd op het **schema focus:individual** en daarom de volgende indeling hebben:
+   In ons huidige voorbeeld moet het **form** bestand zijn gebaseerd op het schema **cus:individual** en daarom de volgende indeling hebben:
 
    ```
    <container colspan="2">
@@ -64,15 +64,15 @@ Als u een nieuw formulier maakt, kunt u de gegevens van de externe tabel met ont
 
 ## Een nieuw type map maken in de navigatiehiërarchie {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
 
-1. Go to the **[!UICONTROL Administration>Configuration>Navigation hierarchies]** node.
-1. Maak een nieuw **xtk:navtree** - **document van het type navtree** .
+1. Ga naar de **[!UICONTROL Administration>Configuration>Navigation hierarchies]** knoop.
+1. Maak een nieuw **xtk:navtree** type **navtree** document.
 1. Beschrijf alle controles en gebieden die u afhankelijk van uw lijstmalplaatje nodig hebt.
 
    >[!NOTE]
    >
-   >Raadpleeg **deze pagina** voor meer informatie over bestanden van het type navtree [](../../configuration/using/about-navigation-hierarchy.md).
+   >Raadpleeg [deze pagina](../../configuration/using/about-navigation-hierarchy.md) voor meer informatie over **navtree**-tekstbestanden.
 
-   In het huidige voorbeeld moet het **navigatiestructuurbestand** zijn gebaseerd op het schema **focus:individual** en moet het daarom de volgende vorm hebben:
+   In het huidige voorbeeld moet het **navtree** bestand zijn gebaseerd op het schema **cus:individual** en daarom de volgende vorm hebben:
 
    ```
     <model name="root">
