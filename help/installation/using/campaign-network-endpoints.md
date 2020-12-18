@@ -21,7 +21,7 @@ Hier volgen de verschillende eindpunten die worden gebruikt in Campaign Classic.
 
 | Context | URL |
 |--- |--- |
-| Eindpunten browser | `https://*.experiencecloud.adobe.com` (SSO-provider)<br>`https://*.campaign.adobe.com` (Campagne-instantie)<br>`https://adobeid-na1.services.adobe.com` (aanmelding bij Adobe) |
+| Eindpunten browser | `https://*.experiencecloud.adobe.com` (SSO-provider)<br>`https://*.campaign.adobe.com` (Campagne-instantie)<br>`https://adobeid-na1.services.adobe.com` (aanmeldnaam Adobe) |
 | Leverbaarheidsrapporten | `https://deliverablity.neolane.net` |
 | Inbox rendering (Litmus) | `https://deliverability-app.neolane.net/deliverability` |
 | Branding URL, spiegelpagina&#39;s, tekstspatiëring, fileref (implementatietovenaar) | Controleer de URL&#39;s die voor u zijn geconfigureerd. |
