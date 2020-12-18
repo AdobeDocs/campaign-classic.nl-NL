@@ -26,27 +26,27 @@ De interactie werkt met twee soorten aanbiedingsmilieu&#39;s:
 
 ![](assets/offer_environments_overview_001.png)
 
-Elke **[!UICONTROL Design]** omgeving is gekoppeld aan een **[!UICONTROL Live]** omgeving. Wanneer een aanbieding is voltooid, worden de inhoud en de subsidiabiliteitsregels ervan onderworpen aan een goedkeuringscyclus. Zodra deze cyclus is voltooid, wordt het desbetreffende aanbod automatisch in de **[!UICONTROL Live]** omgeving geïmplementeerd. Vanaf dat moment is het beschikbaar voor levering.
+Elke **[!UICONTROL Design]**-omgeving is gekoppeld aan een **[!UICONTROL Live]**-omgeving. Wanneer een aanbieding is voltooid, worden de inhoud en de subsidiabiliteitsregels ervan onderworpen aan een goedkeuringscyclus. Zodra deze cyclus volledig is, wordt de betrokken aanbieding automatisch opgesteld aan het **[!UICONTROL Live]** milieu. Vanaf dat moment is het beschikbaar voor levering.
 
-Interactie wordt standaard geleverd met een **[!UICONTROL Design]** omgeving en een **[!UICONTROL Live]** omgeving die eraan gekoppeld zijn. Beide milieu&#39;s worden pre-gevormd om de uit-van-de-doos ontvankelijke lijst te richten.
+Door gebrek, komt de Interactie met een **[!UICONTROL Design]** milieu en een **[!UICONTROL Live]** milieu verbonden aan het. Beide milieu&#39;s worden pre-gevormd om de uit-van-de-doos ontvankelijke lijst te richten.
 
 >[!NOTE]
 >
->Als u een andere tabel als doel wilt instellen (bezoekerstabel voor anonieme aanbiedingen of een specifieke tabel voor ontvangers), moet u de wizard voor doeltoewijzing gebruiken om de omgevingen te maken. Raadpleeg [Een aanbiedingsomgeving](#creating-an-offer-environment)maken voor meer informatie hierover.
+>Als u een andere tabel als doel wilt instellen (bezoekerstabel voor anonieme aanbiedingen of een specifieke tabel voor ontvangers), moet u de wizard voor doeltoewijzing gebruiken om de omgevingen te maken. Voor meer op dit, verwijs naar [Creërend een aanbiedingsmilieu](#creating-an-offer-environment).
 
 ![](assets/offer_environments_overview_002.png)
 
-De managers van de aanbieding en de leveringsmanagers hebben toegang tot verschillende meningen van het milieu. Leveringsmanagers kunnen de **[!UICONTROL Live]** aanbiedingsomgeving en de gebruiksaanbiedingen alleen bekijken om deze te leveren. De managers van de aanbieding kunnen het **[!UICONTROL Design]** milieu bekijken en veranderen en het **[!UICONTROL Live]** milieu bekijken. For more on this, refer to [Operator profiles](../../interaction/using/operator-profiles.md).
+De managers van de aanbieding en de leveringsmanagers hebben toegang tot verschillende meningen van het milieu. Leveringsmanagers kunnen de **[!UICONTROL Live]** aanbiedingsomgeving en gebruiksaanbiedingen alleen bekijken om deze te leveren. De managers van de aanbieding kunnen het **[!UICONTROL Design]** milieu bekijken en veranderen en het **[!UICONTROL Live]** milieu bekijken. Raadpleeg [Operator-profielen](../../interaction/using/operator-profiles.md) voor meer informatie.
 
-## Een aanbiedingsomgeving maken {#creating-an-offer-environment}
+## Aanbiedingsomgeving {#creating-an-offer-environment} maken
 
 Door gebrek, komt de Interactie met een vooraf gevormd milieu om de ontvankelijke lijst (geïdentificeerde aanbiedingen) te richten. Als u een andere tabel (bezoekerstabel voor anonieme aanbiedingen of een specifieke tabel voor ontvangers) als doel wilt instellen, moet u de volgende configuraties toepassen:
 
-1. Plaats de cursor op het knooppunt **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Delivery mappings]** . Klik met de rechtermuisknop op de leveringstoewijzing die u wilt gebruiken (**[!UICONTROL Visitors]** als u anonieme aanbiedingen wilt gebruiken) en selecteer **[!UICONTROL Actions]** > **[!UICONTROL Modify the options of the targeting dimension]**.
+1. Plaats de cursor op het knooppunt **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Delivery mappings]**. Klik met de rechtermuisknop op de leveringstoewijzing die u wilt gebruiken (**[!UICONTROL Visitors]** als u anonieme aanbiedingen wilt gebruiken) en selecteer **[!UICONTROL Actions]** > **[!UICONTROL Modify the options of the targeting dimension]**.
 
    ![](assets/offer_env_anonymous_001.png)
 
-1. Klik **[!UICONTROL Next]** om door te gaan naar het volgende scherm in de tovenaar, controleer het **[!UICONTROL Generate a storage schema for propositions]** vakje en klik **[!UICONTROL Save]**.
+1. Klik **[!UICONTROL Next]** om aan het volgende scherm in de tovenaar te werk te gaan, **[!UICONTROL Generate a storage schema for propositions]** doos te controleren en **[!UICONTROL Save]** te klikken.
 
    ![](assets/offer_env_anonymous_002.png)
 
@@ -54,17 +54,17 @@ Door gebrek, komt de Interactie met een vooraf gevormd milieu om de ontvankelijk
    >
    >Als het selectievakje al is ingeschakeld, schakelt u het uit en controleert u het opnieuw.
 
-1. Adobe Campaign maakt twee omgevingen (**[!UICONTROL Design]** en **[!UICONTROL Live]** ) met doelinformatie uit de eerder ingeschakelde doeltoewijzing. Het milieu wordt preconfigured met het richten informatie.
+1. Adobe Campaign maakt twee omgevingen (**[!UICONTROL Design]** en **[!UICONTROL Live]**) met doelinformatie uit de eerder ingeschakelde doeltoewijzing. Het milieu wordt preconfigured met het richten informatie.
 
-   Als u **[!UICONTROL Visitor]** toewijzing hebt geactiveerd, wordt het **[!UICONTROL Environment dedicated to incoming anonymous interactions]** vakje automatisch gecontroleerd in het **[!UICONTROL General]** lusje van het milieu.
+   Als u **[!UICONTROL Visitor]**-toewijzing hebt geactiveerd, wordt de **[!UICONTROL Environment dedicated to incoming anonymous interactions]**-doos automatisch ingeschakeld op de tab **[!UICONTROL General]** van de omgeving.
 
    Met deze optie kunt u anonieme interactiespecifieke functies activeren, vooral wanneer u omgevingen configureert die spaties bieden. U kunt opties ook vormen die u toestaan om van een &quot;geïdentificeerd&quot;milieu aan een &quot;anonieme&quot;milieu over te schakelen.
 
-   U kunt bijvoorbeeld een koppeling tot stand brengen tussen een ontvankelijke omgeving en een aanbiedingsruimte (geïdentificeerd contact) die overeenkomt met een bezoekersomgeving (niet-geïdentificeerd contact). Op deze manier zullen verschillende aanbiedingen aan de contactpersoon beschikbaar worden gesteld, afhankelijk van of s/he al dan niet wordt geïdentificeerd. Raadpleeg [Aanbiedingsruimten](../../interaction/using/creating-offer-spaces.md)maken voor meer informatie hierover.
+   U kunt bijvoorbeeld een koppeling tot stand brengen tussen een ontvankelijke omgeving en een aanbiedingsruimte (geïdentificeerd contact) die overeenkomt met een bezoekersomgeving (niet-geïdentificeerd contact). Op deze manier zullen verschillende aanbiedingen aan de contactpersoon beschikbaar worden gesteld, afhankelijk van of s/he al dan niet wordt geïdentificeerd. Raadpleeg [Aanbiedingsruimten maken](../../interaction/using/creating-offer-spaces.md) voor meer informatie.
 
    ![](assets/offer_env_anonymous_003.png)
 
 >[!NOTE]
 >
->Raadpleeg [Anonieme interacties](../../interaction/using/anonymous-interactions.md)voor meer informatie over anonieme interacties op een binnenkomend kanaal.
+>Voor meer informatie over anonieme interacties op een binnenkomend kanaal, verwijs naar [Anonieme interacties](../../interaction/using/anonymous-interactions.md).
 
