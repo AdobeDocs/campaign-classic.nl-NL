@@ -40,7 +40,7 @@ In deze sectie wordt het gebruik van de services &quot;Abonneren&quot;, &quot;Un
 
 >[!IMPORTANT]
 >
->[De documentatie](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) van JSAPI van de campagne bevat extra informatie over de vraag van de ZEEP en het gebruiken van Javascript in Adobe Campaign, evenals een volledige verwijzing naar alle methodes en functies die in de toepassing worden gebruikt.
+>[De ](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) documentatie van JSAPI van de campagne bevat extra informatie over de vraag van de ZEEP en het gebruiken van Javascript in Adobe Campaign, evenals een volledige verwijzing naar alle methodes en functies die in de toepassing worden gebruikt.
 
 ## Abonneren (nms:abonnement) {#subscribe--nms-subscription-}
 
@@ -65,7 +65,7 @@ Beschrijving van de methode &quot;subscribe&quot; in het schema &quot;nms:subscr
 </method>
 ```
 
-De definitie van de afstemmingssleutel moet worden ingevoerd via het kenmerk _**key** op het `<recipient>` element van het XML-document. De inhoud van dit kenmerk is een XPath-lijst met komma&#39;s als scheidingsteken.
+De definitie van de afstemmingssleutel moet worden ingevoerd via het kenmerk _**key** op het element `<recipient>` van het XML-document. De inhoud van dit kenmerk is een XPath-lijst met komma&#39;s als scheidingsteken.
 
 Deze aanroep retourneert geen gegevens, behalve fouten.
 
@@ -136,7 +136,7 @@ Beschrijving van de methode &quot;Unsubscribe&quot; in het schema &quot;nms:subs
 </method>
 ```
 
-De definitie van de afstemmingssleutel moet worden ingevoerd via het kenmerk _key op het `<recipient>` element van het XML-document. De inhoud van dit kenmerk is een XPath-lijst met komma&#39;s als scheidingsteken.
+De definitie van de afstemmingssleutel moet worden ingevoerd via het _key-kenmerk op het `<recipient>`-element van het XML-document. De inhoud van dit kenmerk is een XPath-lijst met komma&#39;s als scheidingsteken.
 
 Als de ontvanger niet aanwezig in het gegevensbestand is of niet aan de betrokken informatiedienst geabonneerd, voert de dienst geen actie uit en produceert geen fout.
 
