@@ -15,19 +15,19 @@ ht-degree: 0%
 ---
 
 
-# De inhoud van uw bericht beheren{#control-message-content}
+# De inhoud van uw bericht besturen{#control-message-content}
 
 Om de e-mailleverbaarheid te verbeteren en ervoor te zorgen dat de e-mails bij de ontvangers terechtkomen, moet het e-mailbericht voldoen aan een aantal onderstaande regels.
 
 ## Adres van afzender {#sender-address}
 
-Bepaalde ISPs controleert de geldigheid van het afzenderadres (van) alvorens berichten goed te keuren. Een slecht geformuleerd adres kan ertoe leiden dat het door de ontvangende server wordt verworpen. U moet ervoor zorgen dat een correct adres op instantieniveau (menu **[!UICONTROL Tools > Advanced > Deployment wizard...]**) of in de meest gebruikte scenario&#39;s wordt gegeven.
+Bepaalde ISPs controleert de geldigheid van het afzenderadres (van) alvorens berichten goed te keuren. Een slecht geformuleerd adres kan ertoe leiden dat het door de ontvangende server wordt verworpen. U moet ervoor zorgen dat een correct adres op instantieniveau (menu **[!UICONTROL Tools > Advanced > Deployment wizard...]**) of in de het vaakst gebruikte scenario&#39;s wordt gegeven.
 
-## Koppeling en formulier uitschakelen {#opt-out}
+## Koppeling en formulier {#opt-out} uitschakelen
 
 Wanneer het bericht wordt geanalyseerd, controleert standaard een typologische regel of een opt-out-koppeling is opgenomen en wordt een waarschuwing gegenereerd als deze ontbreekt. U kunt deze regel zodanig wijzigen dat er een fout optreedt in plaats van een eenvoudige waarschuwing en dat een levering wordt gestopt zonder deze koppeling.
 
-U moet controleren of de koppeling om te weigeren correct werkt voordat u de koppeling verzendt. Als u bijvoorbeeld de proefdruk verzendt, controleert u of de koppeling geldig is, of het formulier online is en of door deze controle de waarde van het **[!UICONTROL No longer contact this recipient]** veld wordt gewijzigd in **[!UICONTROL Yes]**. Deze controle moet u systematisch uitvoeren, omdat een menselijke fout altijd mogelijk is bij het invoeren van de koppeling of bij het wijzigen van het formulier.
+U moet controleren of de koppeling om te weigeren correct werkt voordat u de koppeling verzendt. Wanneer u bijvoorbeeld de proefdruk verzendt, moet u controleren of de koppeling geldig is, of het formulier online is en of bij validatie de waarde van het veld **[!UICONTROL No longer contact this recipient]** wordt gewijzigd in **[!UICONTROL Yes]**. Deze controle moet u systematisch uitvoeren, omdat een menselijke fout altijd mogelijk is bij het invoeren van de koppeling of bij het wijzigen van het formulier.
 
 Als er een probleem wordt vastgesteld met betrekking tot het opzeggen van een abonnement nadat de levering is gestart, is het nog steeds mogelijk om handmatig een abonnement op te zeggen (met behulp van bijvoorbeeld de functie voor het bijwerken van de massa) voor de ontvangers die op de koppeling om te weigeren klikken, zelfs als zij hun keuze niet konden bevestigen.
 
@@ -39,4 +39,4 @@ Adobe Campaign kan worden gevormd om met SpamAssassin te werken. Dit maakt het m
 
 Voordat u met de levering begint, kunt u op het tabblad Voorbeeld de risico&#39;s evalueren. Het resultaat van de test wordt aangegeven met een waarschuwingsbericht.
 
-Meer weten in deze [sectie](../../delivery/using/spamassassin.md)?
+Meer informatie vindt u in deze [sectie](../../delivery/using/spamassassin.md).
