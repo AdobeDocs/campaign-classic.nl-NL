@@ -45,7 +45,7 @@ De verdeling van modules over verschillende machines biedt grote flexibiliteit b
 
 >[!NOTE]
 >
->For more on the various architectures, refer to [this section](../../installation/using/general-architecture.md).
+>Raadpleeg [deze sectie](../../installation/using/general-architecture.md) voor meer informatie over de verschillende architecturen.
 
 ## Lijst met open poorten {#list-of-open-ports}
 
