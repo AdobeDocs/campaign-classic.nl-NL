@@ -23,11 +23,11 @@ De volgende typen rapporten zijn beschikbaar:
 
 * Rapporten over het volledige platform, zie [Globale rapporten](../../reporting/using/global-reports.md).
 * Leveringsrapporten, zie [Leveringsrapporten](../../reporting/using/delivery-reports.md).
-* Gecumuleerde verslagen, zie [Cumulatieve verslagen](../../reporting/using/cumulative-reports.md).
+* Gecumuleerde rapporten, zie [Cumulatieve rapporten](../../reporting/using/cumulative-reports.md).
 
 U kunt tot rapporten van de homepage van de cliëntconsole, het rapportdashboard of de leveringslijst toegang hebben. De vertoningswijze van een rapport hangt van zijn context af. De lijst met hoofdrapporten is beschikbaar op de homepage en biedt u snel toegang tot leveringsgegevens. U kunt deze lijst naar wens wijzigen. Zie [deze sectie](../../reporting/using/about-reports-creation-in-campaign.md) voor meer informatie.
 
-## Rapporten gebruiken {#using-reports}
+## Rapporten {#using-reports} gebruiken
 
 Een onderzoeksgebied is beschikbaar via het rapportdashboard voor snelle toegang tot één van de rapporten op de lijst.
 
@@ -49,4 +49,4 @@ U kunt:
 >
 >Sommige rapporten bevatten grafieken (kromme, bar, trechter, enz.). Plaats de cursor boven een diagram om de waarden ervan weer te geven.
 
-For more information on these options, refer to [this section](../../reporting/using/about-adobe-campaign-reporting-tools.md).
+Raadpleeg [deze sectie](../../reporting/using/about-adobe-campaign-reporting-tools.md) voor meer informatie over deze opties.
