@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Data-extractie (bestand){#extraction-file}
 
-U kunt gegevens uit een werkstroomtabel in een extern bestand extraheren met behulp van de **[!UICONTROL Data extraction (file)]** activiteit.
+U kunt gegevens uit een werkschematabel in een extern dossier halen gebruikend **[!UICONTROL Data extraction (file)]** activiteit.
 
 >[!CAUTION]
 >
@@ -26,17 +26,17 @@ U kunt gegevens uit een werkstroomtabel in een extern bestand extraheren met beh
 Voer de volgende stappen uit om gegevensextractie te configureren:
 
 1. Geef de naam van het uitvoerbestand op: deze naam kan variabelen bevatten die via de verpersoonlijkingsknoop rechts van het gebied worden opgenomen.
-1. Klik **[!UICONTROL Edit the file format...]** om de gegevens te selecteren die u wilt extraheren.
+1. Klik op **[!UICONTROL Edit the file format...]** om de gegevens te selecteren die u wilt extraheren.
 
    ![](assets/s_advuser_extract_file_param.png)
 
-   De **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** optie voegt een extra stap toe om het uiteindelijke resultaat van het aggregaat te filteren, bijvoorbeeld op een bepaald type inkooporder, klanten die meer dan tien keer hebben besteld, enz.
+   Met de optie **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** voegt u een extra stap toe om het uiteindelijke resultaat van het aggregaat te filteren, bijvoorbeeld op een bepaald type inkooporder, klanten die meer dan tien keer hebben besteld, enz.
 
-1. Indien nodig kunt u nieuwe kolommen aan het uitvoerbestand toevoegen, zoals bijvoorbeeld berekeningen of verwerkingsresultaten. Klik hiertoe op het **[!UICONTROL Add]** pictogram.
+1. Indien nodig kunt u nieuwe kolommen aan het uitvoerbestand toevoegen, zoals bijvoorbeeld berekeningen of verwerkingsresultaten. Klik hiertoe op het pictogram **[!UICONTROL Add]**.
 
    ![](assets/s_advuser_extract_file_add_col.png)
 
-   Klik op de extra regel op het **[!UICONTROL Edit expression]** pictogram om de inhoud van de nieuwe kolom te definiëren.
+   Klik op de extra regel op het pictogram **[!UICONTROL Edit expression]** om de inhoud van de nieuwe kolom te definiëren.
 
    ![](assets/s_advuser_extract_file_add_exp.png)
 
@@ -48,13 +48,13 @@ Voer de volgende stappen uit om gegevensextractie te configureren:
 
    ![](assets/s_advuser_extract_file_agregate_values.png)
 
-U kunt een postproces bepalen dat tijdens de gegevensextractie wordt uitgevoerd, toestaand u om de dossiers te zip of te coderen. Hiervoor moet de gewenste opdracht worden toegevoegd op het **[!UICONTROL Script]** tabblad van de activiteit.
+U kunt een postproces bepalen dat tijdens de gegevensextractie wordt uitgevoerd, toestaand u om de dossiers te zip of te coderen. Hiervoor moet de gewenste opdracht worden toegevoegd op het tabblad **[!UICONTROL Script]** van de activiteit.
 
-Raadpleeg voor meer informatie deze sectie: [Een bestand](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file)bekijken of versleutelen.
+Raadpleeg voor meer informatie deze sectie: [Een bestand uitzetten of versleutelen](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ![](assets/postprocessing_dataextraction.png)
 
-## List of aggregate functions {#list-of-aggregate-functions}
+## Lijst van geaggregeerde functies {#list-of-aggregate-functions}
 
 Hieronder volgt een lijst met beschikbare statistische functies:
 
