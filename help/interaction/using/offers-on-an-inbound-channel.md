@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Aanbiedingen op een binnenkomend kanaal{#offers-on-an-inbound-channel}
 
-## Een voorstel aan een anonieme bezoeker presenteren {#presenting-an-offer-to-an-anonymous-visitor}
+## Een aanbieding aan een anonieme bezoeker {#presenting-an-offer-to-an-anonymous-visitor} presenteren
 
 De Neobank-site wil op zijn website een aanbieding weergeven die gericht is op onbekende bezoekers die door de pagina bladeren.
 
@@ -29,9 +29,9 @@ Om deze interactie op te zetten, gaan we:
 1. [Anonieme voorstellen maken.](#creating-anonymous-offers)
 1. [Webaanbiedingsruimten op de website configureren](#configure-the-web-offer-space-on-the-website)
 
-### Een anonieme omgeving maken {#creating-an-anonymous-environment}
+### Een anonieme omgeving {#creating-an-anonymous-environment} maken
 
-Volg de procedure die in het [Creëren van een aanbiedingsmilieu](../../interaction/using/live-design-environments.md#creating-an-offer-environment) wordt beschreven om uw anonieme milieu tot stand te brengen die op de afmetingen van de **Bezoekers** wordt gebaseerd.
+Volg de procedure in [Creërend een aanbiedingsmilieu](../../interaction/using/live-design-environments.md#creating-an-offer-environment) om uw anonieme milieu tot stand te brengen die op **Bezoekers**&#39; dimensies wordt gebaseerd.
 
 U krijgt een boomstructuur met uw nieuwe omgeving:
 
@@ -39,7 +39,7 @@ U krijgt een boomstructuur met uw nieuwe omgeving:
 
 ### Anonieme aanbiedingsruimten maken {#creating-anonymous-offer-spaces}
 
-1. Ga in uw anonieme omgeving (**Bezoekers**) naar het **[!UICONTROL Administration]** >- **[!UICONTROL Spaces]** knooppunt.
+1. In uw anonieme milieu (**Bezoekers**) ga naar **[!UICONTROL Administration]** > **[!UICONTROL Spaces]** knoop.
 1. Klik **[!UICONTROL New]** om vraagkanalen tot stand te brengen.
 
    ![](assets/offer_inbound_anonymous_example_010.png)
@@ -48,7 +48,7 @@ U krijgt een boomstructuur met uw nieuwe omgeving:
    >
    >De ruimte wordt automatisch gekoppeld aan de anonieme omgeving.
 
-1. Wijzig het label en selecteer het **[!UICONTROL Inbound Web]** kanaal. U moet ook het **[!UICONTROL Enable unitary mode]** selectievakje inschakelen.
+1. Wijzig het label en selecteer het kanaal **[!UICONTROL Inbound Web]**. U moet ook het vakje **[!UICONTROL Enable unitary mode]** controleren.
 
    ![](assets/offer_inbound_anonymous_example_006.png)
 
@@ -84,16 +84,16 @@ U krijgt een boomstructuur met uw nieuwe omgeving:
 
 ### Een aanbiedingscategorie en een thema maken {#creating-an-offer-category-and-a-theme}
 
-1. Ga naar het **[!UICONTROL Offer catalog]** knooppunt in de omgeving die u zojuist hebt gemaakt.
-1. Klik met de rechtermuisknop op het **[!UICONTROL Offer catalog]** knooppunt en selecteer **[!UICONTROL Create a new 'Offer category' folder]**.
+1. Ga naar de **[!UICONTROL Offer catalog]** knoop binnen het milieu u enkel hebt gecreeerd.
+1. Klik met de rechtermuisknop op het knooppunt **[!UICONTROL Offer catalog]** en selecteer **[!UICONTROL Create a new 'Offer category' folder]**.
 
-   Geef de nieuwe categorie bijvoorbeeld de naam **Financiële producten** .
+   Noem de nieuwe categorie, **Financiële producten** bijvoorbeeld.
 
-1. Ga naar het **[!UICONTROL Eligibility]** tabblad van de categorie en voer **financiering** in als thema en sla de wijzigingen op.
+1. Ga naar het **[!UICONTROL Eligibility]** lusje van de categorie en ga **financiering** als thema in, dan sparen veranderingen.
 
    ![](assets/offer_inbound_anonymous_example_023.png)
 
-### Anonieme aanbiedingen maken {#creating-anonymous-offers}
+### Anonieme aanbiedingen {#creating-anonymous-offers} maken
 
 1. Ga naar de rubriek die je zojuist hebt gemaakt.
 1. Klik op **[!UICONTROL New]**.
@@ -108,17 +108,17 @@ U krijgt een boomstructuur met uw nieuwe omgeving:
 
    ![](assets/offer_inbound_anonymous_example_015.png)
 
-1. Ga naar het **[!UICONTROL Eligibility]** tabblad en geef het gewicht van de aanbiedingen op volgens de toepassingscontext.
+1. Ga naar het tabblad **[!UICONTROL Eligibility]** en geef het gewicht van de aanbiedingen op volgens de toepassingscontext.
 
    In dit voorbeeld, wordt de aanbieding gevormd om op de homepage van de plaats als prioriteit tot het eind van het jaar worden getoond.
 
    ![](assets/offer_inbound_anonymous_example_016.png)
 
-1. Ga naar het **[!UICONTROL Content]** tabblad en definieer de inhoud van de aanbieding.
+1. Ga naar het tabblad **[!UICONTROL Content]** en definieer de inhoud van de aanbieding.
 
    >[!NOTE]
    >
-   >U kunt selecteren **[!UICONTROL Content definitions]** om de lijst met elementen weer te geven die nodig zijn voor de webruimte.
+   >U kunt **[!UICONTROL Content definitions]** selecteren om de lijst van elementen te tonen die voor de Webruimte worden vereist.
 
    ![](assets/offer_inbound_anonymous_example_017.png)
 
@@ -126,14 +126,14 @@ U krijgt een boomstructuur met uw nieuwe omgeving:
 
    ![](assets/offer_inbound_anonymous_example_018.png)
 
-1. Ga naar het **[!UICONTROL Eligibility]** tabblad en pas hetzelfde gewicht toe als voor de eerste aanbieding.
+1. Ga naar het tabblad **[!UICONTROL Eligibility]** en pas hetzelfde gewicht toe als voor de eerste aanbieding.
 1. Voer de goedkeuringscyclus voor elke aanbieding uit om deze, evenals de goedgekeurde aanbiedingsruimten, beschikbaar te maken in de online omgeving.
 
 ### Webaanbiedingsruimte op de website configureren {#configure-the-web-offer-space-on-the-website}
 
-Als u de aanbiedingen die u net hebt geconfigureerd zichtbaar wilt maken op de website, voegt u een JavaScript-code in op de HTML-pagina van uw site om de Interactie-engine op te roepen (zie voor meer informatie [over binnenkomende kanalen](../../interaction/using/about-inbound-channels.md)).
+Om de aanbiedingen die u net hebt gevormd zichtbaar op de website te maken, neem een code JavaScript in de HTML- pagina van uw plaats op om de motor van de Interactie (voor meer op dit, verwijs naar [over binnenkomende kanalen](../../interaction/using/about-inbound-channels.md)) te roepen.
 
-1. Ga naar de HTML-pagina en voeg een @id-kenmerk in met een waarde die overeenkomt met de interne naam van de anonieme aanbiedingsruimte die eerder is gemaakt (zie [Anonieme aanbiedingsruimten](#creating-anonymous-offer-spaces)maken), voorafgegaan door **i_**.
+1. Ga naar de HTML-pagina en voeg een @id-kenmerk in met een waarde die overeenkomt met de interne naam van de anonieme aanbiedingsruimte die eerder is gemaakt (zie [Anonieme aanbiedingsruimten maken](#creating-anonymous-offer-spaces)), voorafgegaan door **i_**.
 
    ![](assets/offer_inbound_anonymous_example_019.png)
 
@@ -141,15 +141,15 @@ Als u de aanbiedingen die u net hebt geconfigureerd zichtbaar wilt maken op de w
 
    ![](assets/offer_inbound_anonymous_example_020.png)
 
-   De blauwe URL-vakken hierboven komen overeen met de instantienaam, de interne naam van de omgeving (zie [Een anonieme omgeving](#creating-an-anonymous-environment)maken) en het thema dat aan de categorie is gekoppeld (een aanbiedingencategorie en een thema[](#creating-an-offer-category-and-a-theme)maken). De laatste optie is facultatief.
+   De blauwe vakken URL hierboven corresponderen met de instantienaam, de interne naam van de omgeving (zie [Een anonieme omgeving maken](#creating-an-anonymous-environment)) en het thema dat is gekoppeld aan de categorie ([Een aanbiedingscategorie en een thema maken](#creating-an-offer-category-and-a-theme)). De laatste optie is facultatief.
 
-Wanneer een bezoeker de homepage van de website opent, worden de aanbiedingen met het **financieringsthema** getoond zoals gevormd op de HTML- pagina.
+Wanneer een bezoeker toegang krijgt tot de homepage van de website, worden de aanbiedingen met het **financieringsthema** weergegeven zoals deze op de HTML-pagina zijn geconfigureerd.
 
 ![](assets/offer_inbound_anonymous_example_022.png)
 
 Een gebruiker die de pagina meerdere keren bezoekt, ziet een van beide aanbiedingen in de categorie omdat aan beide hetzelfde gewicht is toegewezen.
 
-## Overschakelen op een anonieme omgeving in het geval van niet-geïdentificeerde contacten {#switching-to-an-anonymous-environment-in-case-of-unidentified-contacts}
+## Overschakelen naar een anonieme omgeving in het geval van niet-geïdentificeerde contactpersonen {#switching-to-an-anonymous-environment-in-case-of-unidentified-contacts}
 
 Het Neobank-bedrijf wil marketingaanbiedingen voor twee verschillende doelen maken. Het wil algemene aanbiedingen voor zijn anonieme websitebrowsers tonen. Als één van deze gebruikers een klant met herkenningstekens blijkt te zijn die door Neobank worden verstrekt, zou het bedrijf hen willen om gepersonaliseerde aanbiedingen te ontvangen zodra zij login.
 
@@ -159,7 +159,7 @@ Deze casestudy is gebaseerd op het volgende scenario:
 
    ![](assets/offer_inbound_fallback_example_050.png)
 
-   Er worden drie anonieme voorstellen weergegeven op de pagina: twee **beste aanbiedingen** voor Neobank producten en één aanbieding van een Neobank partner.
+   Er worden drie anonieme voorstellen weergegeven op de pagina: twee **Beste voorstel** aanbiedingen voor Neobank producten en één aanbieding van een Neobank partner.
 
    ![](assets/offer_inbound_fallback_example_051.png)
 
@@ -193,9 +193,9 @@ Voer de volgende stappen uit:
    1. [Aanbiedingsruimten op de webpagina configureren](#configuring-offer-spaces-on-the-web-page)
    1. [De geavanceerde instellingen van de opgegeven aanbiedingsruimten opgeven](#specifying-the-advanced-settings-of-the-identified-offer-spaces)
 
-### Een omgeving voor anonieme contactpersonen maken {#creating-an-environment-for-anonymous-contacts}
+### Een omgeving maken voor anonieme contactpersonen {#creating-an-environment-for-anonymous-contacts}
 
-1. Creeer een aanbiedingsmilieu voor anonieme binnenkomende interacties via de tovenaar van de leveringstoewijzing (**afbeelding van de Bezoeker** ). Raadpleeg [Een aanbiedingsomgeving](../../interaction/using/live-design-environments.md#creating-an-offer-environment)maken voor meer informatie hierover.
+1. Creeer een aanbiedingsmilieu voor anonieme binnenkomende interacties via de tovenaar van de leveringsafbeelding (**Visitor** afbeelding). Voor meer op dit, verwijs naar [Creërend een aanbiedingsmilieu](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
    ![](assets/offer_env_anonymous_003.png)
 
@@ -203,17 +203,17 @@ Voer de volgende stappen uit:
 
 De aanbiedingen die op de website moeten worden gepresenteerd, behoren tot twee verschillende categorieën: **Beste voorstel** en **Partner**. In dit voorbeeld maken we een specifieke aanbiedingsruimte voor elke categorie.
 
-Pas het volgende proces toe om de aanbiedingsruimte aan te passen aan de **rubriek Beste voorstel** :
+Als u de aanbiedingsruimte wilt aanpassen aan de categorie **Beste voorstel**, past u het volgende proces toe:
 
 1. Ga in de Adobe Campaign-structuur naar de anonieme omgeving die u zojuist hebt gemaakt en voeg een aanbiedingsruimte toe.
 
    ![](assets/offer_inbound_fallback_example_023.png)
 
-1. Maak een nieuwe **[!UICONTROL Inbound web]** tekstruimte.
+1. Maak een nieuwe **[!UICONTROL Inbound web]**-tekstruimte.
 
    ![](assets/offer_inbound_fallback_example_024.png)
 
-1. Voer een label in voor dit item: **Beste anonieme webaanbieding** bijvoorbeeld.
+1. Voer een label in voor dit item: **Beste anonieme aanbieding van het Web** bijvoorbeeld.
 1. Voeg de velden met aanbiedingsinhoud die voor deze aanbiedingsruimte worden gebruikt toe en configureer de renderfuncties.
 
    ![](assets/offer_inbound_fallback_example_025.png)
@@ -222,16 +222,16 @@ Pas het volgende proces toe om de aanbiedingsruimte aan te passen aan de **rubri
    >
    >De renderfunctie moet de velden die voor de ruimte worden gebruikt een naam geven in de volgorde waarin deze eerder zijn geselecteerd, zodat de aanbiedingen correct worden weergegeven.
 
-1. Gebruik het zelfde proces om een binnenkomend Webkanaalaanbiedingsruimte tot stand te brengen om de categorie van de **Partner** aan te passen.
+1. Gebruik het zelfde proces om een binnenkomend Webkanaalaanbiedingsruimte tot stand te brengen om de **Partner** categorie aan te passen.
 
    ![](assets/offer_inbound_fallback_example_026.png)
 
 ### Aanbiedingscategorieën maken in een anonieme omgeving {#creating-offer-categories-in-an-anonymous-environment}
 
-Begin met het maken van twee categorieën voorstellen: de categorie **Beste voorstel** en de categorie **Partner** . Elke categorie zal twee aanbiedingen voor anonieme contacten bevatten.
+Begin met het maken van twee categorieën voorstellen: de categorie **Beste voorstel** en de categorie **Partner**. Elke categorie zal twee aanbiedingen voor anonieme contacten bevatten.
 
-1. Ga naar de **[!UICONTROL Offer catalog]** anonieme omgeving die je net hebt gemaakt.
-1. Voeg een **[!UICONTROL Offer category]** map met **Beste voorstel** als label toe.
+1. Ga naar **[!UICONTROL Offer catalog]** in het anonieme milieu dat u enkel hebt gecreeerd.
+1. Voeg een **[!UICONTROL Offer category]** omslag met **Beste Aanbieding** als etiket toe.
 
    ![](assets/offer_inbound_fallback_example_027.png)
 
@@ -243,57 +243,57 @@ Begin met het maken van twee categorieën voorstellen: de categorie **Beste voor
 
 We gaan nu twee aanbiedingen maken voor elk van de hierboven geschetste rubrieken.
 
-1. Ga naar de rubriek **Beste voorstel** en maak een anoniem voorstel.
+1. Ga naar de categorie **Beste voorstel** en maak een anonieme aanbieding.
 
    ![](assets/offer_inbound_fallback_example_029.png)
 
-1. Ga naar het **[!UICONTROL Eligibility]** tabblad en geef het gewicht van de aanbiedingen op volgens de toepassingscontext.
+1. Ga naar het tabblad **[!UICONTROL Eligibility]** en geef het gewicht van de aanbiedingen op volgens de toepassingscontext.
 
    ![](assets/offer_inbound_fallback_example_030.png)
 
-1. Ga naar het **[!UICONTROL Content]** tabblad en definieer de inhoud van de aanbieding.
+1. Ga naar het tabblad **[!UICONTROL Content]** en definieer de inhoud van de aanbieding.
 
    ![](assets/offer_inbound_fallback_example_032.png)
 
-1. Maak een tweede voorstel in de rubriek **Beste voorstel** .
+1. Maak een tweede aanbieding in de categorie **Beste voorstel**.
 
    ![](assets/offer_inbound_fallback_example_031.png)
 
-1. Ga naar de categorie **Partner** en creeer een anonieme aanbieding.
-1. Ga naar het **[!UICONTROL Content]** tabblad en definieer de inhoud van de aanbieding.
+1. Ga naar **Partner** categorie en creeer een anonieme aanbieding.
+1. Ga naar het tabblad **[!UICONTROL Content]** en definieer de inhoud van de aanbieding.
 
    ![](assets/offer_inbound_fallback_example_033.png)
 
-1. Ga naar het **[!UICONTROL Eligibility]** tabblad en geef het gewicht van de aanbiedingen op volgens de toepassingscontext.
+1. Ga naar het tabblad **[!UICONTROL Eligibility]** en geef het gewicht van de aanbiedingen op volgens de toepassingscontext.
 
    ![](assets/offer_inbound_fallback_example_034.png)
 
-1. Creeer een tweede aanbieding voor de categorie van de **Partner** .
+1. Creeer een tweede aanbieding voor de **Partner** categorie.
 
    ![](assets/offer_inbound_fallback_example_035.png)
 
-1. Ga naar het **[!UICONTROL Eligibility]** tabblad en pas het gewicht toe dat u op de eerste aanbieding in deze categorie hebt toegepast, zodat de aanbiedingen achtereenvolgens op de website worden weergegeven.
+1. Ga naar het tabblad **[!UICONTROL Eligibility]** en pas het gewicht toe dat u op de eerste aanbieding in deze categorie hebt toegepast, zodat de aanbiedingen achtereenvolgens op de website worden weergegeven.
 
    ![](assets/offer_inbound_fallback_example_036.png)
 
-1. Voer de goedkeuringscyclus voor elke aanbieding uit om ze live te laten gaan. Wanneer het goedkeuren van inhoud, activeer de **Partner** of de **Beste aanbieding** van de Aanbieding, volgens de aanbieding.
+1. Voer de goedkeuringscyclus voor elke aanbieding uit om ze live te laten gaan. Bij het goedkeuren van inhoud, activeer **Partner** of **Beste Aanbiedingsruimte**, volgens de aanbieding.
 
 ### Vorm de aanbiedingsruimten in het geïdentificeerde milieu {#configure-the-offer-spaces-in-the-identified-environment}
 
 De voorstellen die u op de website gaat presenteren, zijn afkomstig uit twee verschillende categorieën: **Beste voorstel** en **Partner**. In dit voorbeeld willen we een specifieke spatie maken voor elke categorie.
 
-Om de twee aanbiedingsruimten tot stand te brengen, pas de zelfde procedure toe zoals voor anonieme aanbiedingsruimten. Verwijs naar het [Vormen aanbiedingsruimten voor het anonieme milieu](#configuring-offer-spaces-for-the-anonymous-environment).
+Om de twee aanbiedingsruimten tot stand te brengen, pas de zelfde procedure toe zoals voor anonieme aanbiedingsruimten. Verwijs naar [Het vormen aanbiedingsruimten voor het anonieme milieu](#configuring-offer-spaces-for-the-anonymous-environment).
 
-1. Ga in de boomstructuur van Adobe Campaign naar de omgeving die u net hebt gemaakt en voeg **Beste voorstel** en **Partner** -aanbiedingsruimten toe.
-1. Pas het proces toe dat in het [Vormen aanbiedingsruimten voor het anonieme milieu](#configuring-offer-spaces-for-the-anonymous-environment)wordt gedetailleerd.
+1. In de boom van Adobe Campaign, ga naar het milieu u enkel hebt gecreeerd en **Beste Aanbieding** en **Partner** aanbiedt ruimten.
+1. Pas het proces toe dat in [het Vormen aanbiedingsruimten voor het anonieme milieu](#configuring-offer-spaces-for-the-anonymous-environment) wordt gedetailleerd.
 
    ![](assets/offer_inbound_fallback_example_005.png)
 
-1. Selecteer de **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]** optie.
+1. Selecteer de optie **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]**.
 
    ![](assets/offer_inbound_fallback_example_006.png)
 
-1. Gebruikend de drop-down lijst, selecteer de anonieme eerder gecreeerd ruimte van de Webaanbieding (verwijs naar het [Vormen aanbiedingsruimten voor het anonieme milieu](#configuring-offer-spaces-for-the-anonymous-environment)).
+1. Gebruikend de drop-down lijst, selecteer de anonieme eerder gecreeerd ruimte van de Webaanbieding (verwijs naar [het Vormen aanbiedingsruimten voor het anonieme milieu](#configuring-offer-spaces-for-the-anonymous-environment)).
 
    ![](assets/offer_inbound_fallback_example_007.png)
 
@@ -302,7 +302,7 @@ Om de twee aanbiedingsruimten tot stand te brengen, pas de zelfde procedure toe 
 In dit voorbeeld vindt de identificatie van de contactpersoon plaats via het e-mailadres in de Adobe Campaign-database. Pas het volgende proces toe om de e-mail voor ontvangers aan de ruimte toe te voegen:
 
 1. Ga in de geïdentificeerde omgeving naar de map met aanbiedingsruimte.
-1. Selecteer de ruimte voor **beste voorstel** en klik op **[!UICONTROL Advanced parameters]**.
+1. Selecteer **Beste voorstel** aanbiedingsruimte en klik **[!UICONTROL Advanced parameters]**.
 
    ![](assets/offer_inbound_fallback_example_044.png)
 
@@ -310,20 +310,20 @@ In dit voorbeeld vindt de identificatie van de contactpersoon plaats via het e-m
 
    ![](assets/offer_inbound_fallback_example_046.png)
 
-1. Klik, ga **[!UICONTROL Edit expression]** naar de lijst van ontvangers en selecteer het **[!UICONTROL Email]** gebied.
+1. Klik op **[!UICONTROL Edit expression]**, ga naar de tabel met ontvangers en selecteer het veld **[!UICONTROL Email]**.
 
    ![](assets/offer_inbound_fallback_example_047.png)
 
-1. Klik **[!UICONTROL OK]** om het **[!UICONTROL Advanced parameters]** venster te sluiten en klaar te zijn met het configureren van de ruimte voor **beste voorstel** .
-1. Pas het zelfde proces voor de **Partner** aan aanbiedingsruimte toe.
+1. Klik op **[!UICONTROL OK]** om het venster **[!UICONTROL Advanced parameters]** te sluiten en de **Aanbiedingsruimte** te voltooien.
+1. Pas het zelfde proces voor **Partner** aanbiedingsruimte toe.
 
    ![](assets/offer_inbound_fallback_example_048.png)
 
 ### Aanbiedingscategorieën maken in een geïdentificeerde omgeving {#creating-offer-categories-in-an-identified-environment}
 
-We gaan twee aparte categorieën maken: de categorie **Beste voorstel** en de categorie **Partner** , elk met twee gepersonaliseerde aanbiedingen.
+We gaan twee aparte categorieën maken: de **Beste aanbieding** categorie en de **Partner** categorie, elk met twee gepersonaliseerde aanbiedingen.
 
-1. Ga naar het **[!UICONTROL Offer catalogs]** knooppunt in de geïdentificeerde omgeving.
+1. Ga naar de **[!UICONTROL Offer catalogs]** knoop in het geïdentificeerde milieu.
 1. Zoals in het anonieme milieu, voeg twee **[!UICONTROL Offer category]** omslagen met **Beste Aanbieding** en **Partner** als etiketten toe.
 
    ![](assets/offer_inbound_fallback_example_009.png)
@@ -332,40 +332,40 @@ We gaan twee aparte categorieën maken: de categorie **Beste voorstel** en de ca
 
 We willen voor elke categorie twee persoonlijke aanbiedingen maken, dat wil zeggen vier aanbiedingen.
 
-1. Ga naar de rubriek **Beste voorstel** en maak een eerste persoonlijke aanbieding.
+1. Ga naar de categorie **Beste voorstel** en maak een eerste persoonlijke aanbieding.
 
    ![](assets/offer_inbound_fallback_example_011.png)
 
-1. Ga naar het **[!UICONTROL Eligibility]** tabblad en geef het gewicht van de aanbiedingen op volgens de toepassingscontext.
+1. Ga naar het tabblad **[!UICONTROL Eligibility]** en geef het gewicht van de aanbiedingen op volgens de toepassingscontext.
 
    ![](assets/offer_inbound_fallback_example_012.png)
 
-1. Ga naar het **[!UICONTROL Content]** tabblad en definieer de inhoud van de aanbieding.
+1. Ga naar het tabblad **[!UICONTROL Content]** en definieer de inhoud van de aanbieding.
 
    ![](assets/offer_inbound_fallback_example_013.png)
 
-1. Maak een tweede voorstel in de rubriek **Beste voorstel** .
+1. Maak een tweede aanbieding in de categorie **Beste voorstel**.
 
    ![](assets/offer_inbound_fallback_example_014.png)
 
-1. Ga naar de categorie **Partner** en creeer een gepersonaliseerde aanbieding.
+1. Ga naar **Partner** categorie en creeer een gepersonaliseerde aanbieding.
 
    ![](assets/offer_inbound_fallback_example_015.png)
 
-1. Ga naar het **[!UICONTROL Eligibility]** tabblad en geef het gewicht van de aanbiedingen op volgens de toepassingscontext.
+1. Ga naar het tabblad **[!UICONTROL Eligibility]** en geef het gewicht van de aanbiedingen op volgens de toepassingscontext.
 
    ![](assets/offer_inbound_fallback_example_016.png)
 
-1. Creeer een tweede aanbieding voor de categorie van de **Partner** .
+1. Creeer een tweede aanbieding voor de **Partner** categorie.
 
    ![](assets/offer_inbound_fallback_example_017.png)
 
-1. Ga naar het **[!UICONTROL Eligibility]** tabblad en pas het gewicht toe dat u op de eerste aanbieding in deze categorie hebt toegepast, zodat de aanbiedingen achtereenvolgens op de website worden weergegeven.
-1. Voer de goedkeuringscyclus voor elke aanbieding uit om deze bij te werken. Tijdens inhoudsgoedkeuring, activeer de **Partner** of de **Beste aanbieding** ruimten.
+1. Ga naar het tabblad **[!UICONTROL Eligibility]** en pas het gewicht toe dat u op de eerste aanbieding in deze categorie hebt toegepast, zodat de aanbiedingen achtereenvolgens op de website worden weergegeven.
+1. Voer de goedkeuringscyclus voor elke aanbieding uit om deze bij te werken. Tijdens inhoudsgoedkeuring, activeer **Partner** of **Beste Aanbieding** aanbiedingsruimten.
 
-### Aanbiedingsruimten op de webpagina configureren {#configuring-offer-spaces-on-the-web-page}
+### Aanbiedingsruimten configureren op de webpagina {#configuring-offer-spaces-on-the-web-page}
 
-Op de website van Neobank vindt u drie mogelijkheden: twee voor aan banken gerelateerde aanbiedingen uit de categorie **Beste voorstel** en één voor aanbiedingen uit de categorie **Partner** .
+Op de website van Neobank vindt u drie mogelijkheden: twee voor aan bank gerelateerde aanbiedingen uit de categorie **Beste voorstel** en één voor aanbiedingen uit de categorie **Partner**.
 
 ![](assets/offer_inbound_fallback_example_038.png)
 
@@ -381,19 +381,19 @@ Pas het volgende proces toe om deze aanbiedingsruimten op de HTML-pagina van de 
 
    ![](assets/offer_inbound_fallback_example_040.png)
 
-   In dit voorbeeld ontvangen **ContBO1** en **ContBO2** de waarde **OsWebBestOfferIdentified**, d.w.z. de interne naam van de **Beste aanbieding** ruimte die eerder in het geïdentificeerde milieu wordt gecreeerd. De waarden **CatBestOffer** en **CatBestOfferAnoniem** komen overeen met de interne naam van de categorieën **Beste voorstel** voor anonieme en geïdentificeerde omgevingen.
+   In dit voorbeeld ontvangen **ContBO1** en **ContBO2** de waarde **OsWebBestOfferIdentified**, d.w.z. de interne naam van de **Best Offer** biedt ruimte die eerder in de geïdentificeerde omgeving is gemaakt. De waarden **CatBestOffer** en **CatBestOfferAnonym** komen overeen met de interne naam van de categorieën **Best Offer** voor anonieme en geïdentificeerde omgevingen.
 
    ![](assets/offer_inbound_fallback_example_041.png)
 
-   Eveneens, ontvangt **ContPtn** de **waarde OSWebPartnerIdentified** , die de interne naam van de **Partner** aanbiedt ruimte die in het geïdentificeerde milieu wordt gecreeerd. **CatPartner** en **CatPartnerAnonym** passen de interne naam van de categorieën van de **Partner** voor anonieme en geïdentificeerde milieu&#39;s aan.
+   Op dezelfde manier ontvangt **ContPtn** de waarde **OSWebPartnerIdentified**, die overeenkomt met de interne naam van de **Partner** die ruimte aanbiedt die in de geïdentificeerde omgeving is gemaakt. **** CatPartnerand  **** CatPartnerAnonymmatch de interne naam van de  **** Partnercategorieën voor anonieme en geïdentificeerde milieu&#39;s.
 
    ![](assets/offer_inbound_fallback_example_042.png)
 
-1. Wijs de informatie toe die u de persoon zal identificeren die aan de Neobank plaats aan de **interactionTarget** variabele het programma opent.
+1. Wijs de informatie toe die u de persoon zal identificeren die aan de Neobank plaats aan **interactionTarget** variabele het programma opent.
 
    ![](assets/offer_inbound_fallback_example_043.png)
 
-   De identificatie van de persoon kan op een browser koekje, een lezingsparameter in URL, e-mail, of herkenningsteken van de persoon worden gebaseerd. Als een gebied van de ontvankelijke lijst buiten de primaire sleutel wordt gebruikt, moet het in de geavanceerde parameters van de ruimte worden bepaald (verwijs naar het [Specificeren van de geavanceerde montages van de geïdentificeerde aanbiedingsruimten](#specifying-the-advanced-settings-of-the-identified-offer-spaces)).
+   De identificatie van de persoon kan op een browser koekje, een lezingsparameter in URL, e-mail, of herkenningsteken van de persoon worden gebaseerd. Als een gebied van de ontvankelijke lijst buiten de primaire sleutel wordt gebruikt, moet het in de geavanceerde parameters van de ruimte worden bepaald (verwijs naar [specificerend de geavanceerde montages van de geïdentificeerde aanbiedingsruimten](#specifying-the-advanced-settings-of-the-identified-offer-spaces)).
 
 1. Voeg de URL van de aanroep in.
 
@@ -403,6 +403,6 @@ Pas het volgende proces toe om deze aanbiedingsruimten op de HTML-pagina van de 
 
 Wanneer u de webpagina opent; Met het script kunt u de Interactie-engine opvragen om de inhoud van aanbiedingen in de relevante ruimten van de webpagina weer te geven. Bij één aanroep naar de Adobe Campaign-server bepaalt de engine de omgeving, de aanbiedingsruimte en de categorieën die moeten worden geselecteerd.
 
-In dit voorbeeld herkent de engine de geïdentificeerde omgeving (**EnvNeobankIdnRecip**). Het identificeert de aanbiedingsruimte (**OSWebBestOfferIdentified**) en de categorie **Beste aanbieding** (**CatBestOffer**) voor de eerste en tweede aanbiedingsruimten op de Web-pagina, evenals (**OSWebPartnerIdentified**) aanbieden ruimte en de **Partner****** categorie (het bevestigen van de PartnerPartner) de derde aanbiedingsruimte op de site.
+In dit voorbeeld herkent de engine de geïdentificeerde omgeving (**EnvNeobankIdnRecip**). Het identificeert de aanbiedingsruimte (**OSWebBestOfferIdentified**) en de **Beste aanbieding** categorie (**CatBestOffer**) voor de eerste en tweede aanbiedingsruimten op de webpagina, evenals (**OSWebPartnerIdentified a7/>) biedt ruimte en de** Partner **categorie (** CatPartner **) aan voor de derde aanbiedingsruimte op de site.**
 
-Als de motor niet de ontvanger kan identificeren, schakelt het aan de anonieme aanbiedingsruimten van verwijzingen voorzien in de geïdentificeerde aanbiedingsruimten en naar de anonieme categorieën (**CatPartner** en **CatPartnerAnoniem**) zoals die in het manuscript worden gespecificeerd.
+Als de motor niet de ontvanger kan identificeren, schakelt het aan de anonieme aanbiedingsruimten van verwijzingen voorzien in de geïdentificeerde aanbiedingsruimten en naar de anonieme categorieën (**CatPartner** en **CatPartnerAnonym**) zoals gespecificeerd in het manuscript.
