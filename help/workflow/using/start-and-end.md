@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # Start- en Einde-activiteiten{#start-and-end}
 
-Met de **[!UICONTROL Start]** en **[!UICONTROL End]** activiteiten kunt u het begin en einde van een werkstroom grafisch markeren. Deze activiteiten hebben geen functioneel effect en zijn derhalve facultatief.
+Met de activiteiten **[!UICONTROL Start]** en **[!UICONTROL End]** kunt u het begin en einde van een workflow grafisch markeren. Deze activiteiten hebben geen functioneel effect en zijn derhalve facultatief.
 
 * **[!UICONTROL Start]**
 
