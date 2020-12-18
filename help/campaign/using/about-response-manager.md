@@ -21,13 +21,13 @@ ht-degree: 3%
 
 Adobe Campaign biedt een toepassing voor responsbeheer (Response Manager) waarmee u het succes en de rentabiliteit van marketingcampagnes kunt meten of voorstellen kunt bieden voor alle communicatiekanalen (e-mail, mobiel, telefoon, direct mail, fax, agentschap, enz.).
 
-## Hypothetisch concept {#hypothesis-concept}
+## Hypotheconcept {#hypothesis-concept}
 
-De hypothesen kunnen over een bepaalde periode van de contactdatum worden gevormd om het gedrag van degenen te verminderen die na het ontvangen van een levering worden gericht. Deze hypothesen zijn gebaseerd op een **transactietabel** die aankopen en details van deze aankopen bewaart.
+De hypothesen kunnen over een bepaalde periode van de contactdatum worden gevormd om het gedrag van degenen te verminderen die na het ontvangen van een levering worden gericht. Deze hypothesen zijn gebaseerd op een **transactie** tabel die aankopen en details van deze aankopen bewaart.
 
 Hypothesen zijn beperkt in de tijd en kunnen worden toegepast op een controlegroep die moet worden vergeleken met de doelpopulatie. De resultaten van de hypothese worden verstrekt door **indicatoren** die automatisch worden bijgewerkt zodra de berekening volledig is. In de campagnerapporten zal rekening worden gehouden met de ROI die aan de hypothesen is gekoppeld.
 
-Ook, laten de **rapporten** die met de Manager van de Reactie worden verstrekt u toe om de informatie samen te vatten met betrekking tot omzetverhoging, margeberekening, evenals het rendement van de levering of de aanbieding.
+Bovendien **reports** die van de Manager van de Reactie wordt voorzien laat u toe om de informatie samen te vatten verbonden aan omzetverhoging, margeberekening, evenals het rendement van de levering of de aanbieding.
 
 Bovendien kunt u dankzij de detailregels voor aankopen uw hypothesen zo instellen dat deze zich bijvoorbeeld op één bepaald product concentreren.
 
@@ -35,7 +35,7 @@ Zo willen we bijvoorbeeld na een levering die een post promoot de gegenereerde i
 
 >[!CAUTION]
 >
->Responsbeheer is een **[!UICONTROL Campaign]** optie. Controleer hiervoor uw licentieovereenkomst.
+>De Manager van de reactie is een **[!UICONTROL Campaign]** optie. Controleer hiervoor uw licentieovereenkomst.
 
 U kunt ook alle reacties berekenen voor het hele huishouden van de ontvanger die de levering of het aanbod heeft ontvangen.
 
@@ -49,12 +49,12 @@ Om een hypothese over een levering of een aanbieding te lanceren, moet u zijn co
 
 U definieert en maakt meethypothesen door het volgende proces toe te passen:
 
-1. Definieer een hypothesemodel. Zie [Een hypothesemodel](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model)maken.
+1. Definieer een hypothesemodel. Zie [Een hypothesemodel maken](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model).
 1. Maak een of meer hypothesen van een bestaande levering. Zie [Verwijzen naar een hypothese in een campagnelevering](../../campaign/using/creating-hypotheses.md#referencing-a-hypothesis-in-a-campaign-delivery).
 
    of
 
-   Maak een of meer hypothesen voor aanbiedingen. Zie [Een hypothese over een aanbod](../../campaign/using/creating-hypotheses.md#creating-a-hypothesis-on-an-offer)maken.
+   Maak een of meer hypothesen voor aanbiedingen. Zie [Een hypothese maken over een aanbieding](../../campaign/using/creating-hypotheses.md#creating-a-hypothesis-on-an-offer).
 
 1. Controleer de resultaten van hypothesen. Zie [Hypothese bijhouden](../../campaign/using/hypothesis-tracking.md).
 1. Herstart indien nodig hypothesen. Zie [Een hypothese maken tijdens een levering](../../campaign/using/creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery).
