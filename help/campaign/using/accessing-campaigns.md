@@ -29,12 +29,12 @@ Deze wordt toegevoegd aan de details van de overeenkomende volgorde en kan worde
 
 ![](assets/mkg_dist_local_op_edit_new_op1.png)
 
-De campagne blijft toegankelijk in het campagneoverzicht, dat via de **[!UICONTROL Campaigns]** koppeling op de homepage wordt gevestigd.
+De campagne blijft toegankelijk in het overzicht van de Campagne, dat via de **[!UICONTROL Campaigns]** verbinding op de homepage wordt gevestigd.
 
 ## Beschikbare instellingen {#available-settings}
 
 Lokale entiteiten kunnen de inhoud van de campagne aan hun behoeften aanpassen, met behulp van alle elementen van het campagnemdashboard. Hun belangrijkste taak zal zijn het richten werkschema aan te passen en misschien leveringsinhoud te personaliseren.
 
-## Campagne uitvoeren {#campaign-execution}
+## Uitvoering campagne {#campaign-execution}
 
 Elke lokale entiteit kan de campagneworkflow uitvoeren en de vereiste goedkeuringen uitvoeren op basis van het proces dat in de sjabloon van de campagne is gedefinieerd.
