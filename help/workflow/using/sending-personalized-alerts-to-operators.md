@@ -19,20 +19,20 @@ ht-degree: 2%
 
 In dit voorbeeld willen wij een alarm naar een exploitant verzenden die de naam van profielen zal bevatten die een nieuwsbrief opende maar niet de verbinding klikte het bevat.
 
-De velden voor de voornaam en achternaam van de profielen zijn gekoppeld aan de **[!UICONTROL Recipients]** doeldimensie, terwijl de **[!UICONTROL Alert]** activiteit is gekoppeld aan de **[!UICONTROL Operator]** doeldimensie. Als gevolg hiervan is er geen veld beschikbaar tussen de twee doeldimensies om een afstemming uit te voeren en de velden voor de voornaam en achternaam op te halen en deze weer te geven in de activiteit Waarschuwing.
+De voornaam- en achternaamvelden van de profielen zijn gekoppeld aan de **[!UICONTROL Recipients]**-doeldimensie, terwijl de **[!UICONTROL Alert]**-activiteit is gekoppeld aan de **[!UICONTROL Operator]**-doeldimensie. Als gevolg hiervan is er geen veld beschikbaar tussen de twee doeldimensies om een afstemming uit te voeren en de velden voor de voornaam en achternaam op te halen en deze weer te geven in de activiteit Waarschuwing.
 
 Het proces bestaat uit het ontwikkelen van een workflow zoals hieronder:
 
 1. Gebruik een **[!UICONTROL Query]** activiteit om gegevens te richten.
 1. Voeg een **[!UICONTROL JavaScript code]** activiteit in het werkschema toe om de bevolking van de vraag aan de instantievariabele te bewaren.
-1. Gebruik een **[!UICONTROL Test]** activiteit om het aantal inwoners te controleren.
+1. Gebruik een **[!UICONTROL Test]** activiteit om het aantal populaties te controleren.
 1. Gebruik een **[!UICONTROL Alert]** activiteit om een alarm naar een exploitant, afhankelijk van het **[!UICONTROL Test]** activiteitenresultaat te verzenden.
 
 ![](assets/uc_operator_1.png)
 
 ## De populatie opslaan in de instantievariabele {#saving-the-population-to-the-instance-variable}
 
-Voeg de onderstaande code toe aan de **[!UICONTROL JavaScript code]** activiteit.
+Voeg de code hieronder in **[!UICONTROL JavaScript code]** activiteit toe.
 
 ```
 var query = xtk.queryDef.create(  
@@ -48,18 +48,18 @@ var query = xtk.queryDef.create(
 
 Zorg ervoor dat de Javascript-code overeenkomt met uw workflowgegevens:
 
-* De **[!UICONTROL queryDef schema]** tag moet overeenkomen met de naam van de doeldimensie die wordt gebruikt in de queryactiviteit.
-* De **[!UICONTROL node expr]** tag moet overeenkomen met de naam van de velden die u wilt ophalen.
+* De **[!UICONTROL queryDef schema]** markering zou aan de naam van de het richten dimensie moeten beantwoorden die in de vraagactiviteit wordt gebruikt.
+* De tag **[!UICONTROL node expr]** moet overeenkomen met de naam van de velden die u wilt ophalen.
 
 ![](assets/uc_operator_3.png)
 
 Volg onderstaande stappen om deze gegevens op te halen:
 
-1. Klik met de rechtermuisknop op de uitgaande overgang van de **[!UICONTROL Query]** activiteit en selecteer **[!UICONTROL Display the target]**.
+1. Klik met de rechtermuisknop op de uitgaande overgang van de activiteit **[!UICONTROL Query]** en selecteer **[!UICONTROL Display the target]**.
 
    ![](assets/uc_operator_4.png)
 
-1. Klik met de rechtermuisknop op de lijst en selecteer vervolgens **[!UICONTROL Configure list]**.
+1. Klik met de rechtermuisknop op de lijst en selecteer **[!UICONTROL Configure list]**.
 
    ![](assets/uc_operator_5.png)
 
@@ -67,9 +67,9 @@ Volg onderstaande stappen om deze gegevens op te halen:
 
    ![](assets/uc_operator_6.png)
 
-## Het aantal inwoners testen {#testing-the-population-count}
+## Het aantal populaties testen {#testing-the-population-count}
 
-Voeg de onderstaande code toe aan de **[!UICONTROL Test]** activiteit om te controleren of de doelpopulatie ten minste 1 profiel bevat.
+Voeg de code hieronder in **[!UICONTROL Test]** activiteit toe om te controleren of bevat de gerichte bevolking minstens 1 profiel.
 
 ```
 var.recCount>0
@@ -77,11 +77,11 @@ var.recCount>0
 
 ![](assets/uc_operator_7.png)
 
-## De waarschuwing instellen {#setting-up-the-alert}
+## De waarschuwing {#setting-up-the-alert} instellen
 
-Nu de populatie met de gewenste velden is toegevoegd aan de instantievariabele, kunt u deze informatie toevoegen aan de **[!UICONTROL Alert]** activiteit.
+Nu de populatie aan de instantievariabele met de gewenste gebieden is toegevoegd, kunt u deze informatie in **[!UICONTROL Alert]** activiteit toevoegen.
 
-Hiervoor voegt u de onderstaande code toe aan het **[!UICONTROL Source]** tabblad:
+Hiervoor voegt u op het tabblad **[!UICONTROL Source]** de onderstaande code toe:
 
 ```
 <ul>
@@ -96,7 +96,7 @@ for each (var item in items){
 
 >[!NOTE]
 >
->Met de **[!UICONTROL <%= item.target.recipient.@fieldName %>]** opdracht kunt u een van de velden toevoegen die via de **[!UICONTROL JavaScript code]** activiteit aan de instantievariabele zijn opgeslagen.\
+>Met de opdracht **[!UICONTROL <%= item.target.recipient.@fieldName %>]** kunt u een van de velden toevoegen die via de activiteit **[!UICONTROL JavaScript code]** aan de instantievariabele zijn opgeslagen.\
 >U kunt zo veel velden toevoegen als u wilt, mits deze zijn ingevoegd in de JavaScript-code.
 
 ![](assets/uc_operator_8.png)
