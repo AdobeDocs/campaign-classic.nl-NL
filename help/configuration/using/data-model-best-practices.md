@@ -19,9 +19,9 @@ ht-degree: 1%
 
 Dit document bevat belangrijke aanbevelingen bij het ontwerpen van uw Adobe Campaign-gegevensmodel.
 
-Raadpleeg de sectie over het gegevensmodel [van de](../../configuration/using/about-data-model.md) Campaign Classic voor een beter begrip van ingebouwde tabellen en hun interactie.
+Raadpleeg de sectie [Campaign Classic gegevensmodel](../../configuration/using/about-data-model.md) voor een beter begrip van ingebouwde tabellen en hun interactie voor campagnes.
 
-Lees [deze documentatie](../../configuration/using/about-schema-reference.md) om aan de slag te gaan met campagnereschema&#39;s. Leer hoe te om uitbreidingsschema&#39;s te vormen om het conceptuele gegevensmodel van het gegevensbestand van Adobe Campaign in [dit document](../../configuration/using/about-schema-edition.md)uit te breiden.
+Lees [deze documentatie](../../configuration/using/about-schema-reference.md) om aan de slag te gaan met de schema&#39;s van de Campagne. Leer hoe te om uitbreidingsschema&#39;s te vormen om het conceptuele gegevensmodel van het gegevensbestand van Adobe Campaign in [dit document](../../configuration/using/about-schema-edition.md) uit te breiden.
 
 ## Overzicht {#overview}
 
@@ -29,25 +29,25 @@ Het Adobe Campaign-systeem is uiterst flexibel en kan verder worden uitgebreid d
 
 Dit document bevat veelgebruikte praktijkvoorbeelden en aanbevolen procedures voor het op de juiste wijze archiveren van uw Adobe Campaign-programma.
 
-## Gegevensmodelarchitectuur {#data-model-architecture}
+## Architectuur van gegevensmodellen {#data-model-architecture}
 
 Adobe Campaign Standard is een krachtig campagnebeheersysteem voor meerdere kanalen waarmee u uw online- en offlinestrategieën kunt uitlijnen en persoonlijke ervaringen voor klanten kunt creëren.
 
-### klantgerichte benadering {#customer-centric-approach}
+### Klantgerichte benadering {#customer-centric-approach}
 
 Hoewel de meeste e-mailserviceproviders via een lijstgerichte aanpak communiceren met klanten, vertrouwt Adobe Campaign op een relationele database om een bredere visie op de klanten en hun kenmerken te kunnen gebruiken.
 
-Deze klantgerichte benadering wordt getoond in de grafiek hieronder. De grijze tabel **Ontvanger** vertegenwoordigt de hoofdtabel van de klant waarin alles wordt samengesteld:
+Deze klantgerichte benadering wordt getoond in de grafiek hieronder. De grijze **Ontvanger**-tabel geeft de hoofdtabel van de klant aan waarop alles wordt gebouwd:
 
 ![](assets/customer-centric-data-model.png)
 
-Om tot de beschrijving van elke lijst toegang te hebben, ga naar **[!UICONTROL Admin > Configuration > Data schemas]**, selecteer een middel van de lijst en klik de **[!UICONTROL Documentation]** tabel.
+Om tot de beschrijving van elke lijst toegang te hebben, ga naar **[!UICONTROL Admin > Configuration > Data schemas]**, selecteer een middel van de lijst en klik **[!UICONTROL Documentation]** tabel.
 
-Het standaardgegevensmodel van Adobe Campaign wordt in [dit document](../../configuration/using/data-model-description.md)weergegeven.
+Het standaardgegevensmodel van Adobe Campaign wordt weergegeven in [dit document](../../configuration/using/data-model-description.md).
 
 >[!NOTE]
 >
->Adobe Campaign Classic staat toe om een lijst van de douaneklanten te bouwen. In de meeste gevallen wordt echter aanbevolen de standaard [ontvangertabel](../../configuration/using/about-data-model.md#default-recipient-table) te gebruiken, die al vooraf gebouwde aanvullende tabellen en functies bevat.
+>Adobe Campaign Classic staat toe om een lijst van de douaneklanten te bouwen. In de meeste gevallen wordt echter aanbevolen de standaard [Ontvangertabel](../../configuration/using/about-data-model.md#default-recipient-table) te gebruiken, die al vooraf gebouwde aanvullende tabellen en functies bevat.
 
 ### Gegevens voor Adobe Campaign {#data-for-campaign}
 
@@ -59,9 +59,9 @@ Welke gegevens moeten naar Adobe Campaign worden verzonden? Het is van essentiee
 
 Om te beslissen of een attribuut al dan niet nodig zou zijn in Adobe Campaign, vraag uzelf of het onder één van deze categorieën zou vallen:
 
-* Kenmerk dat wordt gebruikt voor **segmentatie**
-* Kenmerk dat wordt gebruikt voor **gegevensbeheerprocessen** (bijvoorbeeld geaggregeerde berekening)
-* Kenmerk dat wordt gebruikt voor **personalisatie**
+* Kenmerk gebruikt voor **segmentatie**
+* Kenmerk dat wordt gebruikt voor **gegevensbeheerprocessen** (geaggregeerde berekening bijvoorbeeld)
+* Kenmerk gebruikt voor **personalisatie**
 
 Als er niet in een van deze elementen valt, hebt u deze eigenschap waarschijnlijk niet nodig in Adobe Campaign.
 
@@ -73,18 +73,18 @@ Volg de onderstaande aanbevolen procedures om gegevens in te stellen in Adobe Ca
 * Met het kenmerk **expr** kunt u een schemakenmerk definiëren als een berekend veld in plaats van als een fysieke setwaarde in een tabel. Op deze manier hebt u toegang tot informatie in een andere indeling (bijvoorbeeld voor leeftijd en geboortedatum) zonder dat u beide waarden hoeft op te slaan. Dit is een goede manier om te voorkomen dat velden worden gedupliceerd. De tabel Ontvanger gebruikt bijvoorbeeld een expressie voor het domein, die al aanwezig is in het e-mailveld.
 * Wanneer de expressieberekening echter complex is, wordt het niet aanbevolen het kenmerk **expr** te gebruiken omdat de berekening ter plekke de prestaties van uw query&#39;s kan beïnvloeden.
 * Het type **XML** is een goede manier om te voorkomen dat u te veel velden maakt. Maar het neemt ook schijfruimte op aangezien het een kolom CLOB in het gegevensbestand gebruikt. Het kan ook tot complexe SQL vragen leiden en prestaties kunnen beïnvloeden.
-* De lengte voor een **tekenreeksveld** moet altijd met de kolom worden gedefinieerd. Standaard is de maximumlengte in Adobe Campaign 255, maar Adobe raadt u aan het veld korter te houden als u al weet dat de grootte een kortere lengte niet overschrijdt.
+* De lengte voor een **string** gebied zou altijd met de kolom moeten worden bepaald. Standaard is de maximumlengte in Adobe Campaign 255, maar Adobe raadt u aan het veld korter te houden als u al weet dat de grootte een kortere lengte niet overschrijdt.
 * Het is acceptabel om in Adobe Campaign een veld te hebben dat korter is dan in het bronsysteem als u er zeker van bent dat de grootte in het bronsysteem is overschat en niet zou worden bereikt. Dit kan een kortere tekenreeks of een kleiner geheel getal in Adobe Campaign betekenen.
 
 ### Keuze van velden {#choice-of-fields}
 
 Een veld moet in een tabel worden opgeslagen als het een doel of een doel voor personalisatie heeft. Met andere woorden, als een veld niet wordt gebruikt om een gepersonaliseerde e-mail te verzenden of als criterium wordt gebruikt in een query, neemt het schijfruimte in beslag terwijl het nutteloos is.
 
-Voor hybride en op-gebouw instanties, behandelt FDA (Federated Data Access, een facultatieve eigenschap die om tot externe gegevens) toegang te hebben de behoefte om een gebied &quot;op-de&quot;tijdens een campagneproces toe te voegen. U hoeft niet alles te importeren als u FDA hebt. Voor meer op dit, zie [over Federated Toegang](../../installation/using/about-fda.md)van Gegevens.
+Voor hybride en op-gebouw instanties, behandelt FDA (Federated Data Access, een facultatieve eigenschap die om tot externe gegevens) toegang te hebben de behoefte om een gebied &quot;op-de&quot;tijdens een campagneproces toe te voegen. U hoeft niet alles te importeren als u FDA hebt. Zie [Informatie over Federated Data Access](../../installation/using/about-fda.md) voor meer informatie.
 
-### Keuze van sleutels {#choice-of-keys}
+### Keuze van toetsen {#choice-of-keys}
 
-Naast de **automatische controle** die door gebrek in de meeste lijsten wordt bepaald, zou u moeten overwegen wat logische of bedrijfssleutels (rekeningsaantal, cliëntaantal, etc.) toe te voegen. Het kan later worden gebruikt voor invoer/verzoening of gegevenspakketten. For more on this, see [Identifiers](#identifiers).
+Naast **automatische controles** die door gebrek in de meeste lijsten worden bepaald, zou u moeten overwegen wat logische of bedrijfssleutels (rekeningsaantal, cliëntaantal, etc.) toe te voegen. Het kan later worden gebruikt voor invoer/verzoening of gegevenspakketten. Zie [Identifiers](#identifiers) voor meer informatie.
 
 Efficiënte toetsen zijn essentieel voor de prestaties. Numerieke gegevenstypen verdienen altijd de voorkeur als toetsen voor tabellen.
 
@@ -106,8 +106,8 @@ In de volgende tabel worden deze id&#39;s en hun doel beschreven.
 
 | Id | Beschrijving | Best practices |
 |--- |--- |--- |
-| Id | <ul><li>De id is de fysieke primaire sleutel van een Adobe Campaign-tabel. Voor out-of-the-box lijsten, is het een geproduceerd aantal met 32 bits van een opeenvolging</li><li>Deze id is gewoonlijk uniek voor een specifieke Adobe Campaign-instantie. </li><li>Een automatisch gegenereerde id kan zichtbaar zijn in een schemadefinitie. Zoek in het *attribuut &quot;* true&quot; van de automatische controle.</li></ul> | <ul><li>Automatisch gegenereerde id&#39;s mogen niet worden gebruikt als een referentie in een workflow of in een pakketdefinitie.</li><li>Er mag niet worden aangenomen dat de id altijd een toenemend aantal zal zijn.</li><li>De id in een tabel buiten het vak is een 32-bits getal en dit type mag niet worden gewijzigd. Dit nummer is afkomstig uit een &#39;reeks&#39; die in de sectie met dezelfde naam is opgenomen.</li></ul> |
-| Naam (of interne naam) | <ul><li>Deze informatie is een unieke id van een record in een tabel. Deze waarde kan handmatig worden bijgewerkt, meestal met een gegenereerde naam.</li><li>Deze id behoudt zijn waarde wanneer deze wordt geïmplementeerd in een andere instantie van Adobe Campaign en mag niet leeg zijn.</li></ul> | <ul><li>Wijzig de naam van de record die wordt gegenereerd door Adobe Campaign als het object moet worden geïmplementeerd vanuit een omgeving naar een andere.</li><li>Wanneer een object een naamruimteattribuut heeft (bijvoorbeeld *schema* ), wordt deze gemeenschappelijke naamruimte benut voor alle aangepaste objecten die zijn gemaakt. Bepaalde gereserveerde naamruimten mogen niet worden gebruikt: *nms*, *xtk*.</li><li>Wanneer een object geen naamruimte heeft (bijvoorbeeld *workflow* of *levering* ), wordt dit naamruimtebegrip toegevoegd als voorvoegsel van een intern naamobject: *namespaceMyObjectName*.</li><li>Gebruik geen speciale tekens zoals spatie &quot;&quot;, puntkolom &quot;:&quot; of afbreekstreepje &quot;-&quot;. Al deze tekens worden vervangen door een onderstrepingsteken &quot;_&quot; (toegestaan teken). &quot;abc-def&quot; en &quot;abc:def&quot; worden bijvoorbeeld opgeslagen als &quot;abc_def&quot; en worden elkaar overschreven.</li></ul> |
+| Id | <ul><li>De id is de fysieke primaire sleutel van een Adobe Campaign-tabel. Voor out-of-the-box lijsten, is het een geproduceerd aantal met 32 bits van een opeenvolging</li><li>Deze id is gewoonlijk uniek voor een specifieke Adobe Campaign-instantie. </li><li>Een automatisch gegenereerde id kan zichtbaar zijn in een schemadefinitie. Zoek in het *autopk=&quot;true&quot;*-kenmerk.</li></ul> | <ul><li>Automatisch gegenereerde id&#39;s mogen niet worden gebruikt als een referentie in een workflow of in een pakketdefinitie.</li><li>Er mag niet worden aangenomen dat de id altijd een toenemend aantal zal zijn.</li><li>De id in een tabel buiten het vak is een 32-bits getal en dit type mag niet worden gewijzigd. Dit nummer is afkomstig uit een &#39;reeks&#39; die in de sectie met dezelfde naam is opgenomen.</li></ul> |
+| Naam (of interne naam) | <ul><li>Deze informatie is een unieke id van een record in een tabel. Deze waarde kan handmatig worden bijgewerkt, meestal met een gegenereerde naam.</li><li>Deze id behoudt zijn waarde wanneer deze wordt geïmplementeerd in een andere instantie van Adobe Campaign en mag niet leeg zijn.</li></ul> | <ul><li>Wijzig de naam van de record die wordt gegenereerd door Adobe Campaign als het object moet worden geïmplementeerd vanuit een omgeving naar een andere.</li><li>Wanneer een voorwerp een namespace attribuut (*schema* bijvoorbeeld) heeft, zal deze gemeenschappelijke namespace over alle gemaakte douanevoorwerpen leveraged worden. Bepaalde gereserveerde naamruimten mogen niet worden gebruikt: *nms*, *xtk*.</li><li>Wanneer een object geen naamruimte heeft (*workflow* of *delivery* bijvoorbeeld), wordt dit naamruimtebegrip toegevoegd als voorvoegsel van een intern naamobject: *namespaceMyObjectName*.</li><li>Gebruik geen speciale tekens zoals spatie &quot;&quot;, puntkolom &quot;:&quot; of afbreekstreepje &quot;-&quot;. Al deze tekens worden vervangen door een onderstrepingsteken &quot;_&quot; (toegestaan teken). &quot;abc-def&quot; en &quot;abc:def&quot; worden bijvoorbeeld opgeslagen als &quot;abc_def&quot; en worden elkaar overschreven.</li></ul> |
 | Label | <ul><li>Het label is de bedrijfsidentificatie van een object of record in Adobe Campaign.</li><li>Voor dit object zijn spaties en speciale tekens toegestaan.</li><li>Het garandeert niet dat een record uniek is.</li></ul> | <ul><li>Het wordt aanbevolen een structuur voor de objectlabels te bepalen.</li><li>Dit is de meest gebruikersvriendelijke oplossing om een record of object voor een Adobe Campaign-gebruiker te identificeren.</li></ul> |
 
 ## Aangepaste interne sleutels {#custom-internal-keys}
@@ -132,10 +132,10 @@ Bij het maken van een aangepaste tabel hebt u twee opties:
 
 De primaire sleutel van Adobe Campaign is auto-geproduceerde identiteitskaart voor alle uit-van-de-doos lijsten en kan het zelfde voor douanetabellen zijn. Zie [deze sectie](#identifiers)voor meer informatie.
 
-Deze waarde is ontleend aan wat een **opeenvolging** wordt genoemd, die een gegevensbestandvoorwerp is dat wordt gebruikt om een aantalopeenvolging te produceren.
+Deze waarde wordt ontleend aan wat een **opeenvolging** wordt genoemd, die een gegevensbestandvoorwerp is dat wordt gebruikt om een aantalopeenvolging te produceren.
 
 Er zijn twee typen reeksen:
-* **Gedeeld**: meerdere tabellen zouden hun id uit dezelfde reeks kiezen . Dit betekent dat als id &#39;X&#39; door één tabel wordt gebruikt, geen andere tabel die dezelfde reeks deelt, een record met die id &#39;X&#39; heeft. **XtkNewId** is de standaard gedeelde reeks die beschikbaar is in Adobe Campaign.
+* **Gedeeld**: meerdere tabellen zouden hun id uit dezelfde reeks kiezen . Dit betekent dat als id &#39;X&#39; door één tabel wordt gebruikt, geen andere tabel die dezelfde reeks deelt, een record met die id &#39;X&#39; heeft. **** XtkNewID is de standaard gedeelde reeks die beschikbaar is in Adobe Campaign.
 * **Specifiek**: maar één tafel haalt zijn id uit de reeks . De reeksnaam bevat gewoonlijk de tabelnaam.
 
 >[!IMPORTANT]
@@ -151,8 +151,8 @@ Wanneer in Adobe Campaign een aangepaste tabel wordt gemaakt met een primaire sl
 Een aangepaste reeks heeft standaard waarden tussen +1.000 en +2.1BB. Technisch gezien is het mogelijk om een volledig bereik van 4BB te krijgen door negatieve id&#39;s toe te staan. Dit moet voorzichtig worden gebruikt en er zal één id verloren gaan bij het oversteken van negatieve naar positieve getallen: record 0 wordt doorgaans genegeerd door Adobe Campaign Classic in gegenereerde SQL-query&#39;s.
 
 **Verwante onderwerpen:**
-* Zie **dit document** voor meer informatie over de functie voor automatisch genereren [](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html)van reeksen.
-* Kijk naar [deze video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)voor meer informatie over de uitputting van reeksen.
+* Zie [dit document](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html) voor meer informatie over de functie **Volgorde automatisch genereren**.
+* Voor meer op opeenvolgingen uitputting, bekijk [deze video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Indexen {#indexes}
 
@@ -176,19 +176,19 @@ Houd echter rekening met het volgende:
 ### Voorbeeld
 
 Het beheren van indexen kan zeer complex worden, daarom is het belangrijk om te begrijpen hoe zij werken. Om deze ingewikkeldheid te illustreren, nemen een basisvoorbeeld zoals het zoeken ontvangers door op de voornaam en achternaam te filtreren. Dit doet u als volgt:
-1. Ga naar de map met alle ontvangers in de database. For more on this, see [Managing profiles](../../platform/using/managing-profiles.md).
-1. Klik met de rechtermuisknop op het **[!UICONTROL First name]** veld.
+1. Ga naar de map met alle ontvangers in de database. Zie [Profielen beheren](../../platform/using/managing-profiles.md) voor meer informatie.
+1. Klik met de rechtermuisknop op het veld **[!UICONTROL First name]**.
 1. Selecteer **[!UICONTROL Filter on this field]**.
 
    ![](assets/data-model-index-example.png)
 
-1. Herhaal deze bewerking voor het **[!UICONTROL Last name]** veld.
+1. Herhaal deze bewerking voor het veld **[!UICONTROL Last name]**.
 
 De twee bijbehorende filters worden boven op het scherm toegevoegd.
 
 ![](assets/data-model-index-search.png)
 
-U kunt nu zoekfilters toepassen op de velden **[!UICONTROL First name]** **[!UICONTROL Last name]** en op basis van de verschillende filtervoorwaarden.
+U kunt nu zoekfilters toepassen op de velden **[!UICONTROL First name]** en **[!UICONTROL Last name]** volgens de verschillende filtervoorwaarden.
 
 Nu kunt u indexen toevoegen om het zoeken op deze filters te versnellen. Maar welke indexen moeten worden gebruikt?
 
@@ -228,9 +228,9 @@ Adobe Campaign maakt standaard een koppeling met de primaire sleutel van de exte
 
 Er wordt een index toegevoegd aan de kenmerken die in een koppeling worden gebruikt.
 
-De gemaakte en laatst gewijzigde koppelingen zijn aanwezig in veel tabellen. Het is mogelijk om de index onbruikbaar te maken door het attribuut noDbIndex op de verbinding te gebruiken, als deze informatie niet door de zaken wordt gebruikt.
+De   Gemaakt-door en laatst gewijzigd-door verbindingen zijn aanwezig in vele lijsten. Het is mogelijk om de index onbruikbaar te maken door het attribuut noDbIndex op de verbinding te gebruiken, als deze informatie niet door de zaken wordt gebruikt.
 
-### Kardinaal {#cardinality}
+### Kardinaliteit {#cardinality}
 
 Wanneer u een verbinding ontwerpt, zorg ervoor dat het doelverslag uniek is wanneer een 1-1 verhouding is verklaard. Anders kan verbinden veelvoudige verslagen terugkeren wanneer slechts één wordt verwacht. Dit resulteert in fouten tijdens leveringsvoorbereiding wanneer de vraag meer rijen dan verwacht terugkeert. Stel de naam van de koppeling in op dezelfde naam als het doelschema.
 
@@ -242,7 +242,7 @@ Als de omgekeerde verbinding niet aan de gebruiker zichtbaar zou moeten zijn, ku
 
 Koppelingen die een externe verbinding (1-0..1) uitvoeren, moeten met de nodige voorzichtigheid worden gebruikt omdat dit van invloed is op de systeemprestaties.
 
-## Bewaren van gegevens - opschonen en wissen {#data-retention}
+## Bewaren van gegevens - opschonen en verwijderen {#data-retention}
 
 Adobe Campaign is geen data-entrepot of rapportageinstrument. Om goede prestaties van de oplossing van Adobe Campaign te verzekeren, zou de gegevensbestandgroei daarom onder controle moeten blijven. Om dit te bereiken, kan het volgen van een aantal van de onderstaande beste praktijken helpen.
 
@@ -251,9 +251,9 @@ Standaard hebben Adobe Campaign-leverings- en trackinglogboeken een retentieduur
 * Als u logboeken langer wilt houden, zou dit besluit zorgvuldig afhankelijk van de gegevensbestandgrootte en het volume van verzonden berichten moeten worden genomen. Ter herinnering: Adobe Campaign-reeks is een 32-bits geheel getal.
 * Aanbevolen wordt niet meer dan 1 miljard records tegelijk in deze tabellen te hebben (ongeveer 50% van de 2,14 miljard beschikbare ids) om het risico van het gebruik van alle beschikbare id&#39;s te beperken. Dit zal voor sommige klanten vereisen om de bewaarduur onder 180 dagen te verminderen.
 
-Meer informatie over het bewaren van gegevens vindt u in de richtlijnen [Privacy en beveiliging van](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent)campagnes.
+Meer informatie over gegevensbewaring vindt u in [Richtlijnen ](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent) betreffende privacy en beveiliging van campagnes.
 
-Meer informatie over de opschoonworkflow voor Campagnegegevens vindt u [in deze sectie](../../production/using/database-cleanup-workflow.md).
+Meer informatie over de opschoonworkflow [in deze sectie](../../production/using/database-cleanup-workflow.md)..
 
 >[!IMPORTANT]
 >
@@ -302,12 +302,12 @@ Hieronder vindt u een aantal aanbevolen procedures die moeten worden gevolgd bij
 
 De tabelgrootte is een combinatie van het aantal records en het aantal kolommen per record. Beide kunnen de prestaties van vragen beïnvloeden.
 
-* Een **kleine** tabel is vergelijkbaar met de leveringstabel.
-* Een tabel van **gemiddelde grootte** is hetzelfde als de grootte van de tabel Ontvanger. Het heeft één verslag per klant.
-* Een **grote** tabel lijkt op de grote logtabel. Het heeft vele verslagen per klant.
+* Een **small-size** lijst is gelijkaardig aan de lijst van de Levering.
+* Een **middelgroot formaat** tabel is het zelfde als de grootte van de Ontvankelijke lijst. Het heeft één verslag per klant.
+* Een **grote tabel** komt overeen met de grote logtabel. Het heeft vele verslagen per klant.
 Bijvoorbeeld, als uw gegevensbestand 10 miljoen ontvangers bevat, bevat de Grote logboeklijst ongeveer 100 tot 200 miljoen berichten, en de lijst van de Levering bevat een paar duizend verslagen.
 
-Voor PostgreSQL, zou een rij 8 KB moeten niet overschrijden om [TOAST](https://wiki.postgresql.org/wiki/TOAST) mechanisme te vermijden. Probeer daarom om het aantal kolommen en de grootte van elke rij zo veel mogelijk te verminderen om optimale prestaties van het systeem (geheugen en cpu) te bewaren.
+In PostSQL, zou een rij 8KB niet moeten overschrijden om [TOAST](https://wiki.postgresql.org/wiki/TOAST) mechanisme te vermijden. Probeer daarom om het aantal kolommen en de grootte van elke rij zo veel mogelijk te verminderen om optimale prestaties van het systeem (geheugen en cpu) te bewaren.
 
 Het aantal rijen heeft ook invloed op de prestaties. De Adobe Campaign-database is niet bedoeld voor het opslaan van historische gegevens die niet actief worden gebruikt voor het maken van doelen of het maken van persoonlijke gegevens. Dit is een operationele database.
 
@@ -326,8 +326,8 @@ Hier volgt een voorbeeld:
 
 In dit voorbeeld:
 * De tabellen *Transactie* en *Transactie-item* zijn groot: meer dan 10 miljoen.
-* De tabellen *Product* en *Winkel* zijn kleiner: minder dan 10.000.
-* Het etiket en de referentie van het product zijn in de *producttabel* opgenomen.
-* De tabel *Transactie-item* heeft alleen een koppeling naar de tabel *Product* . Deze tabel is numeriek.
+* De *Product* en *Store* tabellen zijn kleiner: minder dan 10.000.
+* Het productlabel en de referentie zijn in de tabel *Product* geplaatst.
+* De tabel *Transactiepunt* heeft alleen een koppeling naar de tabel *Product*, die numeriek is.
 
 <!--For more detailed best practices on how to optimize the database design for larger volumes, see [Campaign Classic Data model Best practices](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html).-->
