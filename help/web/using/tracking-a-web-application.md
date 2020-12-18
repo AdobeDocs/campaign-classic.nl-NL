@@ -38,9 +38,9 @@ De belangrijkste verbeteringen in deze versie zijn:
    * **Stuitsnelheid**: aantal personen dat alleen de eerste stap heeft getoond
    * **Conversietrechter**: verliespercentage tussen elke stap.
 
-   Bovendien wordt de populatie volgens de bron in een **sectorkaart** weergegeven.
+   Bovendien toont een **Sectordiagram** de populatie volgens zijn bron.
 
-## Identificerend de verkeersbron {#identifying-the-traffic-source}
+## De verkeersbron {#identifying-the-traffic-source} identificeren
 
 Twee verschillende wijzen kunnen worden gebruikt om te identificeren waar de bezoeker van komt wanneer het toegang tot van een toepassing van het Web:
 
@@ -59,11 +59,11 @@ Om de verkeersbron in een toepassing van het Web te identificeren, zoekt Adobe C
 >
 >Herinner dat het anonieme volgen slechts mogelijk is als de overeenkomstige optie in de plaatsingstovenaar is geactiveerd.
 >
->For more on this, refer to the [Installation guide](../../installation/using/deploying-an-instance.md).
+>Raadpleeg voor meer informatie de [Installatiegids](../../installation/using/deploying-an-instance.md).
 
 ## Webtoepassingen die zijn ontworpen met Digital Content Editor (DCE) {#web-applications-designed-with-digital-content-editor--dce-}
 
-Wanneer een webtoepassing wordt gemaakt met de HTML-inhoudeditor - **Digital Content Editor (DCE)** - worden trackingtags ingevoegd op het **[!UICONTROL Properties]** tabblad van de editor. Raadpleeg [deze sectie](../../web/using/about-campaign-html-editor.md)voor meer informatie over de Digital Content Editor (DCE).
+Als een webtoepassing wordt gemaakt met de HTML-inhoudeditor - **Digital Content Editor (DCE)** - worden trackingtags ingevoegd op het tabblad **[!UICONTROL Properties]** van de editor. Raadpleeg [deze sectie](../../web/using/about-campaign-html-editor.md) voor meer informatie over de Digital Content Editor (DCE).
 
 ![](assets/trackers_2.png)
 
@@ -71,7 +71,7 @@ Wanneer het gebruiken van de interface van het Web, moet het volgen markeringen 
 
 ![](assets/trackers_3.png)
 
-Met het **[!UICONTROL Display blocks]** pictogram kunt u het aantal trackinglabels weergeven dat voor de pagina is gedefinieerd.
+Met het pictogram **[!UICONTROL Display blocks]** kunt u het aantal trackinglabels weergeven dat voor de pagina is gedefinieerd.
 
 ![](assets/trackers_4.png)
 
