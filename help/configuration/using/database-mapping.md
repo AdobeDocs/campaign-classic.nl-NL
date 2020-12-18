@@ -50,7 +50,7 @@ De SQL-naamgevingsregels zijn als volgt:
 
 * tabel: samenvoeging van de naamruimte en naam van het schema
 
-   In ons voorbeeld wordt de naam van de tabel ingevoerd via het hoofdelement van het schema in het kenmerk **sqltable** :
+   In ons voorbeeld, is de naam van de lijst ingegaan via het belangrijkste element van het schema in **sqltable** attribuut:
 
    ```
    <element name="recipient" sqltable="CusRecipient">
@@ -58,7 +58,7 @@ De SQL-naamgevingsregels zijn als volgt:
 
 * veld: naam van het element, voorafgegaan door een voorvoegsel dat is gedefinieerd volgens het type (&#39;i&#39; voor geheel getal, &#39;d&#39; voor dubbel, &#39;s&#39; voor tekenreeks, &#39;ts&#39; voor datums, enz.)
 
-   De veldnaam wordt ingevoerd via het **sqlname** -kenmerk voor elk type **`<attribute>`** en **`<element>`**:
+   De veldnaam wordt ingevoerd via het **sqlname**-attribuut voor elk getypt **`<attribute>`** en **`<element>`**:
 
    ```
    <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
@@ -85,9 +85,9 @@ De beperkingen voor het SQL-veld zijn als volgt:
 
 ## XML-velden {#xml-fields}
 
-Door gebrek, wordt om het even welk getypt **`<attribute>`** en **`<element>`** element in kaart gebracht op een SQL gebied van de lijst van het gegevensschema. U kunt echter naar dit veld verwijzen in XML in plaats van naar SQL, wat betekent dat de gegevens worden opgeslagen in een geheugenveld (&quot;mData&quot;) van de tabel dat de waarden van alle XML-velden bevat. De opslag van deze gegevens is een XML-document dat de schemastructuur in acht neemt.
+Standaard worden getypte **`<attribute>`**- en **`<element>`**-elementen toegewezen aan een SQL-veld van de tabel met het gegevensschema. U kunt echter naar dit veld verwijzen in XML in plaats van naar SQL, wat betekent dat de gegevens worden opgeslagen in een geheugenveld (&quot;mData&quot;) van de tabel dat de waarden van alle XML-velden bevat. De opslag van deze gegevens is een XML-document dat de schemastructuur in acht neemt.
 
-Als u een veld in XML wilt vullen, moet u het kenmerk **xml** met de waarde &quot;true&quot; aan het desbetreffende element toevoegen.
+Als u een veld in XML wilt vullen, moet u het **xml**-kenmerk met de waarde &quot;true&quot; toevoegen aan het desbetreffende element.
 
 **Voorbeeld**: Hier volgen twee voorbeelden van het gebruik van XML-velden.
 
@@ -126,7 +126,7 @@ Een index wordt gedeclareerd vanuit het hoofdelement van het gegevensschema.
 Indexen houden zich aan de volgende regels:
 
 * Een index kan verwijzen naar een of meer velden in de tabel.
-* Een index kan uniek zijn (om dubbele waarden te voorkomen) in alle velden als het **unieke** kenmerk de waarde &quot;true&quot; bevat.
+* Een index kan uniek zijn (om dubbele waarden te voorkomen) in alle velden als het **unique**-kenmerk de waarde &quot;true&quot; bevat.
 * De SQL-naam van de index wordt bepaald door de SQL-naam van de tabel en de naam van de index.
 
 >[!NOTE]
@@ -193,7 +193,7 @@ Een sleutel wordt verklaard van het belangrijkste element van het gegevensschema
 Toetsen houden zich aan de volgende regels:
 
 * Een toets kan naar een of meer velden in de tabel verwijzen.
-* Een sleutel wordt bekend als &#39;primair&#39; (of &#39;prioriteit&#39;) wanneer het de eerste in het te vullen schema is of wanneer het het **interne** kenmerk met de waarde &#39;true&#39; bevat.
+* Een sleutel is gekend als &quot;primair&quot;(of &quot;prioriteit&quot;) wanneer het eerste in het te vullen schema is of als het **internal** attribuut met de waarde &quot;waar&quot; bevat.
 * Een unieke index wordt impliciet gedeclareerd voor elke sleuteldefinitie. Het maken van een index op de toets kan worden voorkomen door het kenmerk **noDbIndex** met de waarde &quot;true&quot; toe te voegen.
 
 >[!NOTE]
@@ -289,15 +289,15 @@ Toetsen houden zich aan de volgende regels:
    </schema>
    ```
 
-### Automatische incrementele toets {#auto-incremental-key}
+### Automatische incrementele sleutel {#auto-incremental-key}
 
-De primaire sleutel van de meeste Adobe Campaign-tabellen is een 32-bits lang geheel getal dat automatisch wordt gegenereerd door de database-engine. De berekening van de sleutelwaarde hangt van een opeenvolging (door gebrek, de functie **XtkNewId** SQL) af die een aantal produceert dat in het volledige gegevensbestand uniek is. De inhoud van de toets wordt automatisch ingevoerd bij het invoegen van de record.
+De primaire sleutel van de meeste Adobe Campaign-tabellen is een 32-bits lang geheel getal dat automatisch wordt gegenereerd door de database-engine. De berekening van de sleutelwaarde hangt van een opeenvolging (door gebrek, **XtkNewId** SQL functie) af die een aantal produceert dat in het volledige gegevensbestand uniek is. De inhoud van de toets wordt automatisch ingevoerd bij het invoegen van de record.
 
 Het voordeel van een stijgende sleutel is dat het een niet wijzigbare technische sleutel voor de verbindingen tussen lijsten verstrekt. Bovendien neemt deze sleutel niet veel geheugen in beslag omdat er een dubbel-byte geheel getal wordt gebruikt.
 
-U kunt in het bronschema de naam van de opeenvolging specificeren die met het **pkSequence** attribuut moet worden gebruikt. Als dit attribuut niet in het bronschema wordt gegeven, zal de **XtkNewId** standaardopeenvolging worden gebruikt. De toepassing gebruikt specifieke reeksen voor de **nms:wideLog** en **nms:trackingLog** schema&#39;s (respectievelijk **NmsBroadLogId** en **NmsTrackingLogId** ) omdat dit de tabellen zijn die de meeste records bevatten.
+U kunt in het bronschema de naam van de opeenvolging specificeren die met **pkSequence** attributen moet worden gebruikt. Als dit attribuut niet in het bronschema wordt gegeven, zal **XtkNewId** standaardopeenvolging worden gebruikt. De toepassing gebruikt specifieke reeksen voor de schema&#39;s **nms:wideLog** en **nms:trackingLog** (**NmsBroadLogId** en **NmsTrackingLogId** respectievelijk) omdat deze tabellen de meeste records bevatten.
 
-Van ACC 18.10, is **XtkNewId** niet meer de standaardwaarde voor de opeenvolging in de uit-van-de-doosschema&#39;s. U kunt nu schema bouwen of bestaand schema met een specifieke opeenvolging uitbreiden.
+Van ACC 18.10, **XtkNewId** is niet meer de standaardwaarde voor de opeenvolging in de uit-van-de-doosschema&#39;s. U kunt nu schema bouwen of bestaand schema met een specifieke opeenvolging uitbreiden.
 
 >[!IMPORTANT]
 >
@@ -305,9 +305,9 @@ Van ACC 18.10, is **XtkNewId** niet meer de standaardwaarde voor de opeenvolging
 
 >[!NOTE]
 >
->Een reeks waarnaar in een Adobe Campaign-schema wordt verwezen (bijvoorbeeld **NmsTrackingLogId** ), moet worden gekoppeld aan een SQL-functie die het aantal id&#39;s in de parameters retourneert, gescheiden door komma&#39;s. Deze functie moet ******GetNewXXXIds** worden genoemd, waar **XXX** de naam van de opeenvolging (**GetNewNmsTrackingLogIds** bijvoorbeeld) is. Bekijk de **postgres-nms.sql**-, **mssql-nms.sql** - of **oracle-nms.sql** -bestanden die bij de toepassing worden geleverd in de map **datakit/nms/eng/sql/** om het voorbeeld van het maken van een reeks &#39;NmsTrackingLogId&#39; voor elke database-engine te herstellen.
+>Een opeenvolging die in een schema van Adobe Campaign (**NmsTrackingLogId** bijvoorbeeld) van verwijzingen wordt voorzien moet aan een SQL functie worden geassocieerd die het aantal IDs in de parameters terugkeert, die door komma&#39;s wordt gescheiden. Deze functie moet **GetNew** XXX **Ids** worden genoemd, waarbij **XXX** de naam van de opeenvolging is (**GetNewNmsTrackingLogIds** bijvoorbeeld). Bekijk de **postgres-nms.sql**-, **mssql-nms.sql**- of **oracle-nms.sql**-bestanden die bij de toepassing worden geleverd in de map **datakit/nms/eng/sql/** om het voorbeeld te herstellen een opeenvolgingsverwezenlijking &quot;NmsTrackingLogId&quot;voor elke gegevensbestandmotor.
 
-Als u een unieke sleutel wilt declareren, vult u het kenmerk **Automatisch** (met de waarde &quot;true&quot;) in op het hoofdelement van het gegevensschema.
+Om een unieke sleutel te verklaren, bevolk **automatisch** attribuut (met waarde &quot;waar&quot;) op het belangrijkste element van het gegevensschema.
 
 **Voorbeeld**:
 
@@ -368,7 +368,7 @@ Voor join-relaties met gebruik van Federated Database Access:
 * ![](assets/join_fda_11.png) : Kardinaliteit 1-1
 * ![](assets/join_fda_1m.png) : Kardinaliteit 1-N
 
-Raadpleeg [Toegang tot een externe database](../../installation/using/about-fda.md)voor meer informatie over FDA-tabellen.
+Raadpleeg [Toegang tot een externe database](../../installation/using/about-fda.md) voor meer informatie over FDA-tabellen.
 
 Een koppeling moet worden gedeclareerd in het schema met de externe sleutel van de tabel die is gekoppeld via het hoofdelement:
 
@@ -382,35 +382,35 @@ Een koppeling moet worden gedeclareerd in het schema met de externe sleutel van 
 
 Koppelingen voldoen aan de volgende regels:
 
-* De definitie van een koppeling wordt ingevoerd in een **koppelingstype****`<element>`** met de volgende kenmerken:
+* De definitie van een koppeling wordt ingevoerd op een **link**-type **`<element>`** met de volgende kenmerken:
 
    * **naam**: naam van de koppeling uit de brontabel;
    * **doel**: naam van het doelschema;
    * **label**: koppelingslabel,
-   * **revLink** (optioneel): naam van de omgekeerde koppeling van het doelschema (standaard automatisch afgetrokken);
-   * **integriteit** (optioneel): de referentiële integriteit van het voorkomen van de bronlijst aan het voorkomen van de doellijst. Mogelijke waarden zijn:
+   * **revLink**  (optioneel): naam van de omgekeerde koppeling van het doelschema (standaard automatisch afgetrokken);
+   * **integriteit**  (optioneel): de referentiële integriteit van het voorkomen van de bronlijst aan het voorkomen van de doellijst. Mogelijke waarden zijn:
 
       * **definiëren**: het is mogelijk om de bron-instantie te verwijderen als er niet langer naar wordt verwezen door een doelinstantie;
       * **normaal**: als u de broninstantie verwijdert, worden de sleutels van de koppeling naar de doelinstantie (standaardmodus) geïnitialiseerd, worden met dit type integriteit alle externe toetsen geïnitialiseerd.
       * **eigen**: het verwijderen van de broninstantie leidt tot het verwijderen van de doelinstantie;
-      * **kopie**: hetzelfde als **eigen** (in geval van verwijdering) of dupliceert de voorvallen (in geval van duplicatie);
+      * **kopie**: hetzelfde als  **eigen**  (in geval van verwijdering) of een duplicaat van de voorvallen (in geval van duplicatie);
       * **neutraal**: doet niets.
-   * **revIntegrity** (optioneel): integriteit in het doelschema (optioneel, standaard &quot;normaal&quot;);
-   * **revCardinality** (optioneel): met waarde &quot;single&quot; wordt kardinaliteit gevuld met type 1-1 (standaard 1-N).
-   * **externalJoin** (optioneel): forceert de buitenste verbinding
-   * **revExternalJoin** (optioneel): Hiermee wordt de buitenste verbinding op de omgekeerde koppeling gedwongen
+   * **revIntegrity**  (optioneel): integriteit in het doelschema (optioneel, standaard &quot;normaal&quot;);
+   * **revCardinality**  (optioneel): met waarde &quot;single&quot; wordt kardinaliteit gevuld met type 1-1 (standaard 1-N).
+   * **externalJoin**  (optioneel): forceert de buitenste verbinding
+   * **revExternalJoin**  (optioneel): Hiermee wordt de buitenste verbinding op de omgekeerde koppeling gedwongen
 
 
-* Een koppeling verwijst naar een of meer velden van de brontabel naar de doeltabel. De velden waaruit de samenvoeging ( `<join>` element) bestaat, hoeven niet te worden gevuld, omdat ze standaard automatisch worden afgetrokken met de interne sleutel van het doelschema.
+* Een koppeling verwijst naar een of meer velden van de brontabel naar de doeltabel. De velden waaruit de samenvoeging bestaat ( `<join>` element) hoeven niet te worden gevuld omdat ze standaard automatisch worden afgetrokken met de interne sleutel van het doelschema.
 * Er wordt automatisch een index toegevoegd aan de externe sleutel van de koppeling in het uitgebreide schema.
 * Een verbinding bestaat uit twee half-verbindingen, waar het eerste van het bronschema wordt verklaard en het tweede automatisch in het uitgebreide schema van het doelschema wordt gecreeerd.
-* Een join kan een outer join zijn als het **externalJoin** -kenmerk is toegevoegd, met de waarde &quot;true&quot; (ondersteund in PostSQL).
+* Een samenvoeging kan een buitenste samenvoeging zijn als het **externalJoin** attribuut wordt toegevoegd, met de waarde &quot;true&quot; (ondersteund in PostSQL).
 
 >[!NOTE]
 >
 >Standaard zijn koppelingen de elementen die aan het einde van het schema worden gedeclareerd.
 
-### Example 1 {#example-1}
+### Voorbeeld 1 {#example-1}
 
 1-N met betrekking tot de &quot;cus:company&quot;schemalijst:
 
@@ -473,7 +473,7 @@ Er is een omgekeerde koppeling naar de tabel &quot;cus:receiving&quot; toegevoeg
 * **niet geconsolideerd**: de koppeling wordt gedeclareerd als een verzamelingselement voor een kardinaliteit van 1 N (standaard)
 * **integriteit**: &quot;define&quot;door gebrek (kan met het &quot;revIntegrity&quot;attribuut in de verbindingsdefinitie op het bronschema worden gedwongen).
 
-### Example 2 {#example-2}
+### Voorbeeld 2 {#example-2}
 
 In dit voorbeeld, zullen wij een verbinding naar de &quot;nms:adres&quot;schemalijst verklaren. De join is een buitenste verbinding en wordt expliciet gevuld met het e-mailadres van de ontvanger en het veld &quot;@address&quot; van de gekoppelde tabel (&quot;nms:address&quot;).
 
@@ -488,7 +488,7 @@ In dit voorbeeld, zullen wij een verbinding naar de &quot;nms:adres&quot;schemal
 </srcSchema>
 ```
 
-### Example 3 {#example-3}
+### Voorbeeld 3 {#example-3}
 
 1-1 met betrekking tot de tabel in het schema &quot;cus:extension&quot;:
 
@@ -496,7 +496,7 @@ In dit voorbeeld, zullen wij een verbinding naar de &quot;nms:adres&quot;schemal
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
-### Example 4 {#example-4}
+### Voorbeeld 4 {#example-4}
 
 Koppeling naar een map (&quot;xtk:folder&quot;-schema):
 
@@ -506,9 +506,9 @@ Koppeling naar een map (&quot;xtk:folder&quot;-schema):
 
 De standaardwaarde retourneert de id van het eerste toepasselijke parametertype-bestand dat is ingevoerd in de functie &quot;DefaultFolder(&#39;nmsFolder&#39;)&quot;.
 
-### Example 5 {#example-5}
+### Voorbeeld 5 {#example-5}
 
-In dit voorbeeld willen we een sleutel maken voor een koppeling (&quot;bedrijf&quot; naar het schema &quot;focus:bedrijf&quot;) met het kenmerk **xlink** en een veld van de tabel (&quot;e-mail&quot;):
+In dit voorbeeld willen wij een sleutel op een verbinding (&quot;bedrijf&quot;aan &quot;focus:bedrijf&quot;schema) met het **xlink** attribuut en een gebied van de (&quot;e-mail&quot;) lijst tot stand brengen:
 
 ```
 <srcSchema name="recipient" namespace="cus">
