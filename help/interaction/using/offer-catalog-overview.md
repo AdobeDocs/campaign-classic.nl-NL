@@ -23,8 +23,8 @@ Een aanbiedingscatalogus maakt deel uit van één omgeving, die vooraf moet word
 
 Het beheer van aanbiedingen wordt uitgevoerd via een boom mappen in de Adobe Campaign.
 
-Voordat u uw aanbiedingen kunt maken, moet u eerst een omgeving opgeven (zie [Overzicht](../../interaction/using/environments-overview.md)van omgevingen). Het zal alle kenmerken (subsidiabiliteit, beperkingen van het doel, presentatieregels) van een reeks aanbiedingen bevatten, uitgesplitst in categorieën, alsmede de lijst van de ruimten waarin zij zich bevinden.
+Voordat u uw aanbiedingen maakt, moet u eerst een omgeving opgeven (zie [Overzicht van omgevingen](../../interaction/using/environments-overview.md)). Het zal alle kenmerken (subsidiabiliteit, beperkingen van het doel, presentatieregels) van een reeks aanbiedingen bevatten, uitgesplitst in categorieën, alsmede de lijst van de ruimten waarin zij zich bevinden.
 
 >[!IMPORTANT]
 >
->De verantwoordelijkheid voor de opstelling van de aanbiedingencatalogus, d.w.z. de categorieën en de aanbiedingen, ligt bij de **[!UICONTROL Offer manager]** Commissie.
+>Het maken van de aanbiedingencatalogus, d.w.z. de categorieën en de aanbiedingen, valt onder de verantwoordelijkheid van **[!UICONTROL Offer manager]**.
