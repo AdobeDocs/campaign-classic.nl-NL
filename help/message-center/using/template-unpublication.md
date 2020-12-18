@@ -25,11 +25,11 @@ Zodra een berichtmalplaatje op de uitvoeringsinstanties wordt gepubliceerd, kan 
 
 Een gepubliceerde sjabloon kan zelfs nog steeds worden aangeroepen. Daarom als u niet meer een berichtmalplaatje gebruikt, wordt het geadviseerd om het unpublish. Dit om te voorkomen dat er per ongeluk een ongewenste transactiemelding wordt verzonden. U hebt bijvoorbeeld een berichtsjabloon gepubliceerd die u alleen gebruikt voor kerstcampagnes. Misschien wilt u de publicatie ongedaan maken nadat de kerstperiode is afgelopen en deze volgend jaar opnieuw publiceren.
 
-U kunt ook geen transactiemalplaatje verwijderen dat de **[!UICONTROL Published]** status heeft. U moet eerst de publicatie ongedaan maken.
+U kunt ook geen transactiemalplaatje verwijderen dat de status **[!UICONTROL Published]** heeft. U moet eerst de publicatie ongedaan maken.
 
 Volg onderstaande stappen om de publicatie van een transactiemalplaatje ongedaan te maken.
 
-1. Ga in de besturingsinstantie naar de **[!UICONTROL Message Center > Transactional message templates]** map van de boomstructuur.
+1. Ga in de besturingsinstantie naar de map **[!UICONTROL Message Center > Transactional message templates]** van de boomstructuur.
 1. Selecteer de sjabloon die u wilt verwijderen.
 1. Klik op **[!UICONTROL Unpublish]**.
 
@@ -39,10 +39,10 @@ Volg onderstaande stappen om de publicatie van een transactiemalplaatje ongedaan
 
 ![](assets/message-center-unpublish.png)
 
-De status van de transactiemeldsjabloon verandert van **[!UICONTROL Published]** naar **[!UICONTROL Being edited]**.
+De status van de transactioneleberichtsjabloon verandert weer van **[!UICONTROL Published]** in **[!UICONTROL Being edited]**.
 
 Zodra de publicatie is voltooid:
 
-* Beide berichtmalplaatjes (die op partij en real-time typegebeurtenissen worden toegepast) worden geschrapt van elke uitvoeringsinstantie. Ze worden niet meer in de **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** map weergegeven.
+* Beide berichtmalplaatjes (die op partij en real-time typegebeurtenissen worden toegepast) worden geschrapt van elke uitvoeringsinstantie. Zij verschijnen niet meer in **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** omslag.
 
-* Zodra een malplaatje unpublished is, kunt u het van de controleinstantie indien nodig schrappen. U doet dit door het in de lijst te selecteren en op de **[!UICONTROL Delete]** knop rechtsboven in het scherm te klikken.
+* Zodra een malplaatje unpublished is, kunt u het van de controleinstantie indien nodig schrappen. Selecteer dit in de lijst en klik op de knop **[!UICONTROL Delete]** rechtsboven in het scherm.
