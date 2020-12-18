@@ -19,47 +19,47 @@ ht-degree: 3%
 
 In dit voorbeeld willen we een e-mail met aangepaste gegevensvelden verzenden aan ontvangers die deze maand hun verjaardagen vieren. Het e-mailbericht bevat een coupon die een week voor en na hun verjaardagen geldig is.
 
-We moeten ontvangers van een lijst die hun verjaardagen deze maand vieren, aanspreken met een **[!UICONTROL Split]** activiteit. Vervolgens gebruikt u de **[!UICONTROL Enrichment]** activiteit en fungeert het veld met aangepaste gegevens als geldigheidsdatums in de e-mail voor de speciale aanbieding van de klant.
+Wij moeten ontvangers van een lijst richten die hun verjaardagen deze maand met een **[!UICONTROL Split]** activiteit vieren. Vervolgens gebruikt u de activiteit **[!UICONTROL Enrichment]** om het veld met aangepaste gegevens als geldigheidsdatums op te nemen in de e-mail voor de speciale aanbieding van de klant.
 
 ![](assets/uc_enrichment.png)
 
 U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
-1. Sleep op het **[!UICONTROL Targeting and workflows]** tabblad van de campagne een **[!UICONTROL Read list]** activiteit naar de lijst met ontvangers.
+1. Op **[!UICONTROL Targeting and workflows]** lusje van uw campagne, belemmering en laat vallen **[!UICONTROL Read list]** activiteit om uw lijst van ontvangers te richten.
 1. De lijst die moet worden verwerkt, kan expliciet worden opgegeven, door een script worden berekend of dynamisch worden gelokaliseerd, afhankelijk van de geselecteerde opties en de hier gedefinieerde parameters.
 
    ![](assets/uc_enrichment_1.png)
 
-1. Voeg een **[!UICONTROL Split]** activiteit toe om ontvangers te onderscheiden die hun verjaardagen deze maand zullen vieren van andere ontvangers.
-1. Als je de lijst wilt splitsen, selecteer je in de **[!UICONTROL Filtering of selected records]** rubriek **[!UICONTROL Add a filtering condition on the inbound population]**. Then, click **[!UICONTROL Edit]**.
+1. Voeg een **[!UICONTROL Split]** activiteit toe om ontvangers te onderscheiden die hun verjaardagen deze maand van andere ontvangers zullen vieren.
+1. Als u de lijst wilt splitsen, selecteert u **[!UICONTROL Add a filtering condition on the inbound population]** in de categorie **[!UICONTROL Filtering of selected records]**. Klik vervolgens op **[!UICONTROL Edit]**.
 
    ![](assets/uc_enrichment_2.png)
 
-1. Selecteer **[!UICONTROL Filtering conditions]** en klik op de **[!UICONTROL Edit expression]** knop om de maand van de verjaardag van de ontvanger te filteren.
+1. Selecteer **[!UICONTROL Filtering conditions]** dan klik **[!UICONTROL Edit expression]** knoop om de maand van de verjaardag van de ontvanger te filtreren.
 
    ![](assets/uc_enrichment_3.png)
 
-1. Klik **[!UICONTROL Advanced Selection]** **[!UICONTROL Edit the formula using an expression]** en voeg dan de volgende uitdrukking toe: Maand (@geboorteDate).
-1. Selecteer in de **[!UICONTROL Operator]** kolom de optie **[!UICONTROL equal to]**.
+1. Klik **[!UICONTROL Advanced Selection]** dan **[!UICONTROL Edit the formula using an expression]** en voeg de volgende uitdrukking toe: Maand (@geboorteDate).
+1. Selecteer **[!UICONTROL equal to]** in de kolom **[!UICONTROL Operator]**.
 1. Filter de voorwaarde verder door de **[!UICONTROL Value]** maand van de huidige datum toe te voegen: Month(GetDate()).
 
    Hierdoor worden ontvangers gevraagd van wie de geboortemaand overeenkomt met de huidige maand.
 
    ![](assets/uc_enrichment_4.png)
 
-1. Klik op **[!UICONTROL Finish]**. Klik vervolgens op het **[!UICONTROL General]** tabblad van uw **[!UICONTROL Split]** activiteit op de **[!UICONTROL Generate complement]** categorie in de **[!UICONTROL Results]** categorie.
+1. Klik op **[!UICONTROL Finish]**. Klik vervolgens op het tabblad **[!UICONTROL General]** van uw **[!UICONTROL Split]**-activiteit op **[!UICONTROL Generate complement]** in de categorie **[!UICONTROL Results]**.
 
-   Met het **[!UICONTROL Complement]** resultaat kunt u een leveringsactiviteit toevoegen of een lijst bijwerken. Hier hebben we zojuist een **[!UICONTROL End]** activiteit toegevoegd.
+   Met het **[!UICONTROL Complement]** resultaat, kunt u een leveringsactiviteit toevoegen of een lijst bijwerken. Hier hebben we zojuist een **[!UICONTROL End]**-activiteit toegevoegd.
 
    ![](assets/uc_enrichment_6.png)
 
 U moet nu uw **[!UICONTROL Enrichment]** activiteit vormen:
 
-1. Voeg een **[!UICONTROL Enrichment]** activiteit na uw ondergroep toe om uw gebieden van de douanedatum toe te voegen.
+1. Voeg een **[!UICONTROL Enrichment]** activiteit na uw subset toe om uw gebieden van de douanedatum toe te voegen.
 
    ![](assets/uc_enrichment_7.png)
 
-1. Open je **[!UICONTROL Enrichment]** activiteit. In the **[!UICONTROL Complementary information]** category, click **[!UICONTROL Add data]**.
+1. Open uw **[!UICONTROL Enrichment]** activiteit. Klik in de categorie **[!UICONTROL Complementary information]** op **[!UICONTROL Add data]**.
 
    ![](assets/uc_enrichment_8.png)
 
@@ -68,15 +68,15 @@ U moet nu uw **[!UICONTROL Enrichment]** activiteit vormen:
 
    ![](assets/uc_enrichment_9.png)
 
-1. Voeg een **[!UICONTROL Label]**. Klik vervolgens in de **[!UICONTROL Expression]** kolom op **[!UICONTROL Edit expression]**.
+1. Voeg een **[!UICONTROL Label]** toe. Klik vervolgens in de kolom **[!UICONTROL Expression]** op **[!UICONTROL Edit expression]**.
 
    ![](assets/uc_enrichment_10.png)
 
-1. Eerst, moeten wij de week vóór de geboortedatum als begindatum **van de** Geldigheid met het volgende richten **[!UICONTROL Expression]**: `SubDays([target/@birthDate], 7)`.
+1. Eerst, moeten wij de week vóór de geboortedatum als **Geldigheidsbegindatum** met het volgende richten **[!UICONTROL Expression]**: `SubDays([target/@birthDate], 7)`.
 
    ![](assets/uc_enrichment_11.png)
 
-1. Als u vervolgens het aangepaste datumveld **Geldigheid wilt maken met als einddatum** de week na de geboortedatum als doel, moet u het volgende toevoegen **[!UICONTROL Expression]**: `AddDays([target/@birthDate], 7)`.
+1. Als u vervolgens het aangepaste datumveld **Einddatum geldigheid** wilt maken dat de week na de geboortedatum als doel instelt, moet u **[!UICONTROL Expression]** toevoegen: `AddDays([target/@birthDate], 7)`.
 
    U kunt een label aan uw expressie toevoegen.
 
@@ -84,24 +84,24 @@ U moet nu uw **[!UICONTROL Enrichment]** activiteit vormen:
 
 1. Klik op **[!UICONTROL Ok]**. Uw verrijking is nu klaar.
 
-Na je **[!UICONTROL Enrichment]** activiteit kunt je een levering toevoegen. In dit geval hebben we een e-maillevering toegevoegd om ontvangers een speciaal voorstel met geldigheidsdata te sturen naar klanten die deze maand hun verjaardagen vieren.
+Na uw **[!UICONTROL Enrichment]** activiteit, kunt u een levering toevoegen. In dit geval hebben we een e-maillevering toegevoegd om ontvangers een speciaal voorstel met geldigheidsdata te sturen naar klanten die deze maand hun verjaardagen vieren.
 
-1. Sleep en zet een **[!UICONTROL Email delivery]** activiteit neer na uw **[!UICONTROL Enrichment]** activiteit.
+1. Sleep een **[!UICONTROL Email delivery]** activiteit na uw **[!UICONTROL Enrichment]** activiteit.
 
    ![](assets/uc_enrichment_15.png)
 
 1. Dubbelklik op uw **[!UICONTROL Email delivery]** activiteit om uw levering aan te passen.
-1. Voeg een **[!UICONTROL Label]** object toe aan uw levering en klik op **[!UICONTROL Continue]**.
-1. Klik **[!UICONTROL Save]** om uw e-maillevering te maken.
-1. Schakel het **[!UICONTROL Approval]** tabblad in van de e-maillevering **[!UICONTROL Properties]** die **[!UICONTROL Confirm delivery before sending option]** is ingeschakeld.
+1. Voeg een **[!UICONTROL Label]** aan uw levering toe en klik **[!UICONTROL Continue]**.
+1. Klik **[!UICONTROL Save]** om uw e-maillevering tot stand te brengen.
+1. Schakel op het tabblad **[!UICONTROL Approval]** van de e-maillevering **[!UICONTROL Properties]** in dat **[!UICONTROL Confirm delivery before sending option]** is ingeschakeld.
 
    Start vervolgens de workflow om de uitgaande overgang te verrijken met de doelgegevens.
 
    ![](assets/uc_enrichment_18.png)
 
-U kunt nu uw e-maillevering ontwerpen met de aangepaste datumvelden die in de **[!UICONTROL Enrichment]** activiteit zijn gemaakt.
+U kunt nu uw e-maillevering ontwerpen met de aangepaste datumvelden die in de activiteit **[!UICONTROL Enrichment]** zijn gemaakt.
 
-1. Dubbelklik op uw **[!UICONTROL Email delivery]** activiteit.
+1. Dubbelklik op uw **[!UICONTROL Email delivery]**-activiteit.
 1. Voeg uw doelextensies toe aan uw e-mail. Het zou binnen de volgende uitdrukking moeten zijn om het formaat van uw geldigheidsdata te vormen:
 
    ```
@@ -109,7 +109,7 @@ U kunt nu uw e-maillevering ontwerpen met de aangepaste datumvelden die in de **
            formatDate(targetData.alias of your expression,"%2D.%2M")  %>
    ```
 
-1. Klik op ![](assets/uc_enrichment_16.png) . Selecteer **[!UICONTROL Target extension]** vervolgens de eerder gemaakte aangepaste geldigheidsdatums met de **[!UICONTROL Enrichment]** activiteit om uw extensie toe te voegen aan de formatDate-expressie.
+1. Klik op ![](assets/uc_enrichment_16.png) . Selecteer **[!UICONTROL Target extension]** dan de eerder gemaakte aangepaste geldigheidsdata met de **[!UICONTROL Enrichment]** activiteit om uw uitbreiding aan de formatDate uitdrukking toe te voegen.
 
    ![](assets/uc_enrichment_19.png)
 
