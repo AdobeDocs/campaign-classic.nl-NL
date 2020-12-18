@@ -19,7 +19,7 @@ ht-degree: 2%
 
 De redenen voor een verbindingsprobleem kunnen meerdere zijn en zijn afhankelijk van verschillende contexten.
 
-U kunt de volgende tests uitproberen. Neem contact op met de **Adobe Campaign-ondersteuning** als de verbindingsfout zich blijft voordoen.
+U kunt de volgende tests proberen en als de verbindingsmislukking voortduurt, gelieve **Adobe Campaign steun** te contacteren.
 
 
 
@@ -45,7 +45,8 @@ U kunt de volgende tests uitproberen. Neem contact op met de **Adobe Campaign-on
 </tr>
 <tr> 
 <td>Is Adobe Campaign correct geïntegreerd?</td> 
-<td>Aanmelden bij: <b>http(s):///&lt;urlserver&gt;/r/test</b> URL. De server moet het volgende berichttype retourneren: &lt;redir status='OK' date='YYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;Als u dit resultaat niet verkrijgt, controleert u uw webserverconfiguratie of er rekening is gehouden met integratie.</td>
+<td>Aanmelden bij: <b>http(s)://&lt;urlserver&gt;/r/test</b> URL. De server moet het volgende berichttype retourneren: &lt;redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;
+Als u dit resultaat niet verkrijgt, controleer in uw de serverconfiguratie van het Web dat de integratie in acht wordt genomen.</td>
 </tr>
 <tr> 
 <td>Maak verbinding met de volgende URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
@@ -60,7 +61,7 @@ U kunt de volgende tests uitproberen. Neem contact op met de **Adobe Campaign-on
 <td>Raadpleeg <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=en#configuring-campaign-server"/>deze sectie voor meer informatie over het configureren van beveiligingszones.</a></td>
 </tr>
 <tr>
-<td>De pdump van de bevelserver keert <b>Geen taken terug</b></td>
+<td>De PDM van de opdrachtserver retourneert <b>Geen taken</b></td>
 <td>U moet de hele Adobe Campaign-toepassing opnieuw starten. Hiervoor gebruikt u de volgende opdracht: <b>nlserver watchdog -svc -noconsole</b></td>
 </tr>
 </tbody> 
