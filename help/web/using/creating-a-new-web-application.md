@@ -19,19 +19,19 @@ ht-degree: 19%
 
 Toepassingstypen voor het web worden tijdens het maken geselecteerd.
 
-Ga naar het tabblad **Campagnes** en selecteer het **[!UICONTROL Web Applications]** menu. Klik op de knop **[!UICONTROL Create]**. Selecteer het de toepassingsmalplaatje van het Web u wilt gebruiken:
+Ga naar het tabblad **Campagnes** en selecteer het menu **[!UICONTROL Web Applications]**. Klik op de knop **[!UICONTROL Create]**. Selecteer het de toepassingsmalplaatje van het Web u wilt gebruiken:
 
 ![](assets/webapp_create_from_campaign.png)
 
 >[!NOTE]
 >
->Beveilig altijd de pagina&#39;s die persoonlijke gegevens kunnen bevatten. Raadpleeg de checklist [Beveiliging en Privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
+>Beveilig altijd de pagina&#39;s die persoonlijke gegevens kunnen bevatten. Raadpleeg [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
 
 Dit malplaatje bepaalt het type van toepassing van het Web. U kunt:
 
 1. Webformulieren (+ profielwijziging)
 
-   Met webformulieren kunt u webpagina&#39;s met invoer- of selectievelden aanbieden: de informatie die gebruikers invoeren, kan in de Adobe Campaign-database worden opgeslagen. For more on this, refer to [Web forms](../../web/using/about-web-forms.md).
+   Met webformulieren kunt u webpagina&#39;s met invoer- of selectievelden aanbieden: de informatie die gebruikers invoeren, kan in de Adobe Campaign-database worden opgeslagen. Raadpleeg [Webformulieren](../../web/using/about-web-forms.md) voor meer informatie.
 
 1. Webapplicaties
 
@@ -47,7 +47,7 @@ Dit malplaatje bepaalt het type van toepassing van het Web. U kunt:
 
    >[!CAUTION]
    >
-   >**Beoordelingsmanager** is een optionele Adobe Campaign-module. Controleer hiervoor uw licentieovereenkomst.
+   >**Survey** Manageris een optionele Adobe Campaign-module. Controleer hiervoor uw licentieovereenkomst.
 
 1. Facebook-toepassingen
 
@@ -55,6 +55,6 @@ Dit malplaatje bepaalt het type van toepassing van het Web. U kunt:
 
    >[!CAUTION]
    >
-   >**Sociale marketing** is een optionele Adobe Campaign module. Controleer hiervoor uw licentieovereenkomst.
+   >**Sociale** markt is een optionele Adobe Campaign-module. Controleer hiervoor uw licentieovereenkomst.
 
 De wijze van de paginasonfiguratie evenals de beschikbare configuraties kunnen voor verscheidene de toepassingstypes van het Web identiek zijn. Raadpleeg [deze sectie](../../web/using/about-web-forms.md) voor meer informatie.
