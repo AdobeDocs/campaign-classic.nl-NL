@@ -17,29 +17,29 @@ ht-degree: 5%
 
 # Aanbiedingssjablonen beheren{#managing-offer-templates}
 
-Aanbiedingssjablonen worden in Adobe Campaign offline geleverd. U kunt ze gebruiken nadat u uw aanbiedingen hebt gemaakt, gedupliceerd of de configuratie ervan hebt aangepast aan uw behoeften. U kunt ook uw eigen sjablonen maken. Sjabloonaanbiedingen worden opgeslagen in de map **Bronnen** > **Sjablonen** > **Aanbiedingssjablonen**.
+Aanbiedingssjablonen worden in Adobe Campaign offline geleverd. U kunt ze gebruiken nadat u uw aanbiedingen hebt gemaakt, gedupliceerd of de configuratie ervan hebt aangepast aan uw behoeften. U kunt ook uw eigen sjablonen maken. Sjabloonaanbiedingen worden opgeslagen in de map **Bronnen** > **Sjablonen** > **Sjablonen aanbieden**.
 
 ## Een aanbiedingstemplate maken {#creating-an-offer-template}
 
 Voer de volgende stappen uit om een sjabloonaanbieding te maken:
 
-1. Ga naar **Bronnen** > **Sjablonen** > **Aanbiedingssjablonen**.
-1. Klik op het pictogram **Nieuw** .
+1. Ga naar **Bronnen** > **Sjablonen** > **Sjablonen aanbieden**.
+1. Klik op het pictogram **Nieuw**.
 
    ![](assets/offer_model_001.png)
 
-1. Configureer uw sjabloon door hetzelfde proces toe te passen als voor een normale aanbieding en sla de sjabloon vervolgens op door op **Opslaan** te klikken.
+1. Vorm uw malplaatje door het zelfde proces toe te passen zoals voor een normale aanbieding, dan sparen het door **sparen** te klikken.
 
 ## Een bestaande sjabloon dupliceren {#duplicate-an-existing-template}
 
 Ga als volgt te werk om een aanbiedingstemplate (al dan niet buiten de box) te dupliceren:
 
-1. Ga naar **Bronnen > Sjablonen > Aanbiedingssjablonen**.
+1. Ga naar **Bronnen > Sjablonen > Sjablonen aanbieden**.
 1. Klik met de muis met de rechtermuisknop op de sjabloon die u wilt dupliceren en selecteer **Dupliceren** in het keuzemenu.
 
    ![](assets/offer_model_002.png)
 
-1. Indien nodig, vorm de montages u wenst om te zien verschijnen in het malplaatje, dan sparen het malplaatje door te klikken **sparen**.
+1. Indien nodig, vorm de montages u wenst om te zien verschijnen in het malplaatje, dan sparen het malplaatje door **sparen** te klikken.
 
 Deze template wordt nu aangeboden bij het maken van een aanbieding.
 
