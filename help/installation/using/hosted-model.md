@@ -19,9 +19,9 @@ ht-degree: 6%
 
 Als ontvangen klant, worden de meeste installatie en configuratiestappen uitgevoerd door Adobe. U kunt de volgende secties openen om uw implementatie aan te passen:
 
-* Configureer URL&#39;s voor bijhouden en spiegelen per merk. Raadpleeg [deze sectie](../../message-center/using/configuring-multibranding.md)voor transactieberichten.
-* De clientconsole installeren: Zie [deze paragraaf](../../installation/using/installing-the-client-console.md).
-* Lees voor meer informatie over de gereedschappen en de aanbevolen procedures voor [de levering de gids](../../delivery/using/deliverability-key-points.md) Aan de slag en [gedetailleerde documentatie](../../delivery/using/about-deliverability.md).
-* Campagneopties configureren: Zie [deze paragraaf](../../installation/using/configuring-campaign-options.md).
-* CRM-connectors configureren: Zie [deze paragraaf](../../platform/using/crm-connectors.md).
+* Configureer URL&#39;s voor bijhouden en spiegelen per merk. Raadpleeg [voor transactieberichten deze sectie](../../message-center/using/configuring-multibranding.md).
+* De clientconsole installeren: zie [deze sectie](../../installation/using/installing-the-client-console.md).
+* Lees voor meer informatie over de gereedschappen en de beste werkwijzen van de service de [gids Aan de slag](../../delivery/using/deliverability-key-points.md) en [gedetailleerde documentatie](../../delivery/using/about-deliverability.md).
+* Campagneopties configureren: zie [deze sectie](../../installation/using/configuring-campaign-options.md).
+* CRM-connectors configureren: zie [deze sectie](../../platform/using/crm-connectors.md).
 
