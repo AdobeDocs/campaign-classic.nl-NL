@@ -19,7 +19,7 @@ ht-degree: 86%
 
 U vindt de Adobe Campaign-querytool op meerdere niveaus van de software: om een doelpopulatie te maken, klanten te segmenteren, trackinglogboeken te extraheren en filteren, filters te bouwen, enzovoort.
 
-Met het Adobe Campaign-queryprogramma kunt u een database opvragen met een speciale wizard: de generische vraagredacteur. It is accessed via the **[!UICONTROL Tools > Generic query editor...]** menu. Hiermee kunt u gegevens ophalen die in een database zijn opgeslagen en deze gegevens ordenen, groeperen, sorteren, enzovoort. De gebruiker kan bijvoorbeeld ontvangers ophalen die gedurende een bepaalde periode meer dan ‘n’ keer op de koppeling van een nieuwsbrief hebben geklikt. Met deze tool kunt u resultaten verzamelen, sorteren en weergeven op basis van uw behoeften.
+Met het Adobe Campaign-queryprogramma kunt u een database opvragen met een speciale wizard: de generische vraagredacteur. Het wordt betreden via het **[!UICONTROL Tools > Generic query editor...]** menu. Hiermee kunt u gegevens ophalen die in een database zijn opgeslagen en deze gegevens ordenen, groeperen, sorteren, enzovoort. De gebruiker kan bijvoorbeeld ontvangers ophalen die gedurende een bepaalde periode meer dan ‘n’ keer op de koppeling van een nieuwsbrief hebben geklikt. Met deze tool kunt u resultaten verzamelen, sorteren en weergeven op basis van uw behoeften.
 
 Met deze tool combineert u alle querymogelijkheden van Adobe Campaign. Zo kunt u bijvoorbeeld beperkingsfilters maken en opslaan. Dit betekent dat een gebruikersfilter dat in de generieke query-editor is gemaakt, in het vakje Query van een targetingworkflow, enzovoort, kan worden gebruikt.
 
