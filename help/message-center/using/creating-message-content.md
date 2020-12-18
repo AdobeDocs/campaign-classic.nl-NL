@@ -17,12 +17,12 @@ ht-degree: 3%
 
 # Berichtcontent maken{#creating-message-content}
 
-De definitie van de inhoud van het transactiebericht is gelijk aan die voor normale leveringen in Adobe Campaign. U kunt bijvoorbeeld voor een e-maillevering inhoud in HTML- of tekstindeling maken, bijlagen toevoegen of het bezorgingsobject aanpassen. Raadpleeg voor meer informatie het hoofdstuk over [e-maillevering](../../delivery/using/about-email-channel.md).
+De definitie van de inhoud van het transactiebericht is gelijk aan die voor normale leveringen in Adobe Campaign. U kunt bijvoorbeeld voor een e-maillevering inhoud in HTML- of tekstindeling maken, bijlagen toevoegen of het bezorgingsobject aanpassen. Raadpleeg voor meer informatie het hoofdstuk over [E-maillevering](../../delivery/using/about-email-channel.md).
 
 >[!IMPORTANT]
 >
 >Afbeeldingen in het bericht moeten openbaar toegankelijk zijn. Adobe Campaign biedt geen mechanisme voor het uploaden van afbeeldingen voor transactieberichten.\
->In tegenstelling tot JSSP of webApp, heeft `<%=` geen standaardescaping.
+>In tegenstelling tot JSSP of webApp heeft `<%=` geen standaardescaping.
 >
 >In dit geval moet u alle gegevens die uit de gebeurtenis komen, op de juiste wijze verwijderen. Deze escape is afhankelijk van de manier waarop dit veld wordt gebruikt. Gebruik in een URL bijvoorbeeld encodeURIComponent. U kunt escapeXMLString gebruiken om in de HTML te worden weergegeven.
 
@@ -37,11 +37,11 @@ Voer de volgende stappen uit om personalisatietags in te voegen in de tekst van 
 
 1. Klik in de berichtsjabloon op het tabblad dat overeenkomt met de e-mailindeling (HTML of tekst).
 1. Voer de tekst van het bericht in.
-1. Voeg in de tekst de tag in met behulp van de **[!UICONTROL Real time events>Event XML]** menu&#39;s.
+1. Voeg de tag in de tekst in met de menu&#39;s **[!UICONTROL Real time events>Event XML]**.
 
    ![](assets/messagecenter_create_custo_002.png)
 
-1. Vul de tag in met de volgende syntaxis: **elementnaam**.@**kenmerknaam** , zoals hieronder wordt weergegeven.
+1. Vul de tag in met de volgende syntaxis: **elementnaam**.@**kenmerknaam** zoals hieronder getoond.
 
    ![](assets/messagecenter_create_custo_003.png)
 
