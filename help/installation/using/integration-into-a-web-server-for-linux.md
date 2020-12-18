@@ -23,7 +23,7 @@ U kunt deze geïntegreerde Tomcat-server gebruiken om HTTP-aanvragen te bedienen
 
 In dit geval:
 
-* de standaard luisterpoort is 8080. Om het te veranderen, verwijs naar het [Vormen Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat).
+* de standaard luisterpoort is 8080. Om het te veranderen, verwijs naar [het Vormen Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat).
 * De clientconsoles maken vervolgens verbinding met een URL, zoals:
 
    ```
@@ -52,7 +52,7 @@ Voer de volgende stappen uit:
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
    ```
 
-   Zorg ervoor dat de modules **alias**, **authz_host** en **mime** nog steeds zijn ingeschakeld. Hiervoor gebruikt u de volgende opdracht:
+   Zorg ervoor dat de **alias**, **authz_host** en **mime** modules nog steeds zijn ingeschakeld. Hiervoor gebruikt u de volgende opdracht:
 
    ```
    a2enmod  alias authz_host mime
@@ -78,13 +78,13 @@ Voer de volgende stappen uit:
     a2enmod nlsrv
    ```
 
-   Als u de module **mod_rewrite** voor Adobe Campaign-pagina&#39;s gebruikt, moet u de bestanden **nlsrv.load** en **nlsrv.conf** hernoemen naar **zz-nlsrv.load** en **zz-nlsrv.conf**. Voer de volgende opdracht uit om de module te activeren:
+   Als u de **mod_rewrite** module voor Adobe Campaign-pagina&#39;s gebruikt, moet u de bestanden **nlsrv.load** en **nlsrv.conf** hernoemen naar **zz-nlsrv.load** en **zz-nlsrv.load conf**. Voer de volgende opdracht uit om de module te activeren:
 
    ```
    a2enmod zz-nlsrv
    ```
 
-1. Bewerk het bestand **/etc/apache2/envars** en voeg de volgende regels toe:
+1. Voeg de volgende regels toe aan het bestand **/etc/apache2/envars**:
 
    ```
    # Added Neolane
@@ -113,7 +113,7 @@ Deze procedure is van toepassing als u Apache hebt geïnstalleerd en beveiligd o
 
 Voer de volgende stappen uit:
 
-1. Activeer in het `httpd.conf` bestand de volgende Apache-modules:
+1. Activeer in het `httpd.conf`-bestand de volgende Apache-modules:
 
    ```
    alias
@@ -152,9 +152,9 @@ Voer de volgende stappen uit:
    ForceLanguagePriority
    ```
 
-1. Maak een Adobe Campaign-specifiek configuratiebestand in de `/etc/httpd/conf.d/` map. Bijvoorbeeld `CampaignApache.conf`
+1. Maak een Adobe Campaign-specifiek configuratiebestand in de map `/etc/httpd/conf.d/`. Bijvoorbeeld `CampaignApache.conf`
 
-1. Voeg voor **RHEL7** de volgende instructies toe aan het bestand:
+1. Voeg voor **RHEL7** de volgende instructies toe in het bestand:
 
    ```
    LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
@@ -163,7 +163,7 @@ Voer de volgende stappen uit:
 
 1. Voor **RHEL7**:
 
-   Voeg het `/etc/systemd/system/httpd.service` bestand toe met de volgende inhoud:
+   Voeg het `/etc/systemd/system/httpd.service` dossier met de volgende inhoud toe:
 
    ```
    .include /usr/lib/systemd/system/httpd.service
@@ -196,7 +196,7 @@ Voer de volgende stappen uit:
    systemctl start nlserver
    ```
 
-## De server van het Web lanceren en de configuratie testen{#launching-the-web-server-and-testing-the-configuration}
+## De server van het Web lanceren en het testen van de configuratie{#launching-the-web-server-and-testing-the-configuration}
 
 U kunt de configuratie nu testen door Apache te starten. De Adobe Campaign-module moet nu zijn banner op de console weergeven (twee banners op bepaalde besturingssystemen):
 
@@ -244,4 +244,4 @@ De volgende informatie wordt weergegeven:
 Connection closed by foreign host.
 ```
 
-U kunt de URL ook aanvragen [`https://<computer>`](https://myserver.adobe.com/r/test) vanuit een webbrowser.
+U kunt URL [`https://<computer>`](https://myserver.adobe.com/r/test) van browser van het Web ook verzoeken.
