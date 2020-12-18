@@ -31,15 +31,15 @@ Voordat u met dit gebruiksgeval begint, hebt u toegang nodig tot een enquête en
 
 >[!NOTE]
 >
->Dit gebruiksgeval mag alleen worden geïmplementeerd als u de optie **Beoordelingsmanager** hebt verkregen. Controleer hiervoor uw licentieovereenkomst.
+>Dit gebruiksgeval kan slechts worden uitgevoerd als u **de optie van de Manager van het Onderzoek** hebt verworven. Controleer hiervoor uw licentieovereenkomst.
 
 ## Stap 1 - Het creëren van de gegevensinzameling en de opslagwerkschema {#step-1---creating-the-data-collection-and-storage-workflow}
 
 Voer de volgende stappen uit om de antwoorden op de enquête te verzamelen:
 
-1. Maak een workflow en plaats een **[!UICONTROL Answers to a survey]** activiteit. For more on using this activity, refer to [this section](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
+1. Maak een workflow en plaats een **[!UICONTROL Answers to a survey]**-activiteit. Raadpleeg [deze sectie](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data) voor meer informatie over het gebruik van deze activiteit.
 1. Bewerk de activiteit en selecteer de enquête waarvan u de antwoorden wilt analyseren.
-1. Schakel de **[!UICONTROL Select all the answer data]** optie in om alle informatie te verzamelen.
+1. Schakel de optie **[!UICONTROL Select all the answer data]** in om alle informatie te verzamelen.
 
    ![](assets/reporting_usecase_1_01.png)
 
@@ -47,11 +47,11 @@ Voer de volgende stappen uit om de antwoorden op de enquête te verzamelen:
 
    ![](assets/reporting_usecase_1_02.png)
 
-1. Zodra het vakje van de antwoordinzameling wordt gevormd, plaats een **[!UICONTROL List update]** typeactiviteit om de gegevens te bewaren.
+1. Zodra het vakje van de antwoordinzameling wordt gevormd, plaats **[!UICONTROL List update]** typeactiviteit om de gegevens te bewaren.
 
    ![](assets/reporting_usecase_1_04.png)
 
-   Geef in deze activiteit de lijst op die moet worden bijgewerkt en schakel de **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]** optie uit: antwoorden worden toegevoegd aan de bestaande tabel. Met deze optie kunt u verwijzen naar de lijst in een kubus. Het schema dat aan de lijst wordt gekoppeld, wordt niet opnieuw gegenereerd voor elke update. Dit garandeert de integriteit van de kubus die deze lijst gebruikt.
+   Geef in deze activiteit de lijst op die moet worden bijgewerkt en schakel de optie **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]** uit: antwoorden worden toegevoegd aan de bestaande tabel. Met deze optie kunt u verwijzen naar de lijst in een kubus. Het schema dat aan de lijst wordt gekoppeld, wordt niet opnieuw gegenereerd voor elke update. Dit garandeert de integriteit van de kubus die deze lijst gebruikt.
 
    ![](assets/reporting_usecase_1_03.png)
 
@@ -63,11 +63,11 @@ Voer de volgende stappen uit om de antwoorden op de enquête te verzamelen:
 
 1. Voeg een planner toe om de dagelijkse inzameling van antwoorden en de lijstupdate te automatiseren.
 
-   De **[!UICONTROL List update]** en de **[!UICONTROL Scheduler]** activiteiten worden nader toegelicht in .
+   De **[!UICONTROL List update]**- en **[!UICONTROL Scheduler]**-activiteiten worden beschreven in .
 
-## Stap 2 - De kubus, de maatregelen en de indicatoren ervan maken {#step-2---creating-the-cube--its-measures-and-its-indicators}
+## Stap 2 - Het creëren van de kubus, zijn maatregelen en zijn indicatoren {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-U kunt dan de kubus tot stand brengen en zijn maatregelen vormen: zij zullen worden gebruikt om de indicatoren te creëren die in het verslag zullen worden getoond . Voor meer bij het creëren van en het vormen van kubussen, verwijs naar [Ongeveer kubussen](../../reporting/using/about-cubes.md).
+U kunt dan de kubus tot stand brengen en zijn maatregelen vormen: zij zullen worden gebruikt om de indicatoren te creëren die in het verslag zullen worden getoond . Raadpleeg [Informatie over kubussen](../../reporting/using/about-cubes.md) voor meer informatie over het maken en configureren van kubussen.
 
 In dit voorbeeld is de kubus gebaseerd op de gegevens in de lijst die worden gevoed door de eerder gemaakte workflow.
 
@@ -77,7 +77,7 @@ Definieer de afmetingen en de maatregelen die in het rapport moeten worden weerg
 
 ![](assets/reporting_usecase_2_02.png)
 
-Op het **[!UICONTROL Preview]** tabblad kunt u de rendering van het rapport bepalen.
+Met het tabblad **[!UICONTROL Preview]** kunt u de rendering van het rapport beheren.
 
 ## Stap 3 - het creëren van het rapport en het vormen van de gegevenslay-out binnen de lijst {#step-3---creating-the-report-and-configuring-the-data-layout-within-the-table}
 
