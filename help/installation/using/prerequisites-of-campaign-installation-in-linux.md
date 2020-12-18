@@ -21,15 +21,15 @@ ht-degree: 2%
 
 In dit gedeelte worden de voorbereidende stappen beschreven die zijn vereist voor de installatie van Adobe Campaign.
 
-De technische en softwareconfiguratie die vereist is voor de installatie van Adobe Campaign wordt beschreven in de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
+De technische en softwareconfiguratie die vereist is voor de installatie van Adobe Campaign wordt beschreven in de [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
 
 Ter herinnering, moeten de volgende componenten worden geïnstalleerd en correct worden gevormd:
 
-* Apache, raadpleeg de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
+* Apache, zie [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md),
 * Java JDK en OpenJDK, verwijs naar [Java Development Kit - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
 * Bibliotheken, zie [Bibliotheken](#libraries),
-* De de toegangslagen van het gegevensbestand, verwijs naar de [toegangslagen](#database-access-layers)van het Gegevensbestand,
-* LibreOffice, verwijs naar het [Installeren van LibreOffice voor Debian](#installing-libreoffice-for-debian) en het [Installeren van LibreOffice voor CentOS](#installing-libreoffice-for-centos),
+* De de toegangslagen van het gegevensbestand, verwijs naar [de toegangslagen van het Gegevensbestand](#database-access-layers),
+* LibreOffice, verwijs naar [Installing LibreOffice for Debian](#installing-libreoffice-for-debian) en [Installing LibreOffice for CentOS](#installing-libreoffice-for-centos);
 * Lettertypen, raadpleeg [Lettertypen voor MTA-statistieken](#fonts-for-mta-statistics) en [Lettertypen voor Japanse instanties](#fonts-for-japanese-instances).
 
 >[!NOTE]
@@ -42,7 +42,7 @@ Als u Adobe Campaign in Linux wilt installeren, moet u de vereiste bibliotheken 
 
 * Bibliotheek C moet de TLS-modus (Thread Local Storage) kunnen ondersteunen. Deze modus is in de meeste gevallen actief, behalve bij sommige kernels waarvoor Xen-ondersteuning is uitgeschakeld.
 
-   Om dit te controleren, kunt u gebruiken **uname - a | bijvoorbeeld de opdracht grep xen** .
+   Om dit te controleren, kunt u **uname -a gebruiken | grep xen** opdracht bijvoorbeeld.
 
    Als het bevel om het even wat (lege lijn) niet terugkeert, betekent het configuratie correct is.
 
@@ -50,7 +50,7 @@ Als u Adobe Campaign in Linux wilt installeren, moet u de vereiste bibliotheken 
 
    Voor RHEL 7-distributies is versie 1.0 van OpenSSL vereist.
 
-* Als u Adobe Campaign wilt gebruiken, moet de **libicu** -bibliotheek zijn geïnstalleerd.
+* Als u Adobe Campaign wilt gebruiken, moet de bibliotheek **libicu** zijn geïnstalleerd.
 
    De volgende versies van **libicu** worden ondersteund (32-bits of 64-bits):
 
@@ -90,7 +90,7 @@ In RHEL en CentOS werden compatibiliteitsproblemen met de clientlagen van databa
 
 **Pas het volgende proces toe:**
 
-* Het bestand **/etc/selinux/config bewerken**
+* Het bestand **/etc/selinux/config** bewerken
 
 * Wijzig de regel SELINUX als volgt:
 
@@ -130,7 +130,7 @@ Voeg de opdracht in Rode hoed toe:
 yum install ipa-gothic-fonts ipa-mincho-fonts
 ```
 
-### LibreOffice voor Debian installeren {#installing-libreoffice-for-debian}
+### LibreOffice voor Debian {#installing-libreoffice-for-debian} installeren
 
 Voor Debian zijn de volgende configuraties vereist:
 
@@ -146,7 +146,7 @@ Voor Debian zijn de volgende configuraties vereist:
    apt-get install fonts-ipafont
    ```
 
-### LibreOffice voor CentOS installeren {#installing-libreoffice-for-centos}
+### LibreOffice installeren voor CentOS {#installing-libreoffice-for-centos}
 
 De volgende configuraties zijn nodig met CentOS:
 
@@ -166,15 +166,15 @@ De volgende configuraties zijn nodig met CentOS:
 
 De toegangslagen voor de database-engine die u gebruikt, moeten op de server zijn geïnstalleerd en toegankelijk zijn via de Adobe Campaign-account. Versies en installatiemodi kunnen variëren, afhankelijk van de gebruikte database-engine.
 
-De ondersteunde proefversie wordt beschreven in de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
+De ondersteunde proefversie wordt beschreven in de [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
 
-Controleer ook de algemene sectie [Database](../../installation/using/database.md) .
+Controleer ook de algemene [Database](../../installation/using/database.md) sectie.
 
 ### PostgreSQL {#postgresql}
 
 Adobe Campaign biedt ondersteuning voor alle versies van de PostgreSQL-clientbibliotheken uit versie 7.2: (**libpq.so.5**, **libpq.so.4**, **libpq.so.3.2** en **libpq.so.3.1**).
 
-Als u PostSQL met Adobe Campaign gebruikt, moet u ook de bijbehorende **pgcrypto** -bibliotheken installeren.
+Als u PostSQL met Adobe Campaign gebruikt, moet u ook de bijbehorende **pgcrypto**-bibliotheken installeren.
 
 ### Oracle {#oracle}
 
@@ -184,7 +184,7 @@ U kunt een Linux RPM-pakket verkrijgen van het Oracle Technology Network.
 
 >[!NOTE]
 >
->Als u de Oracle-client al hebt geïnstalleerd, maar de algemene omgeving (bijvoorbeeld: /etc/profile) niet correct wordt gevormd, kunt u ontbrekende informatie aan het **nl6/customer.sh** manuscript toevoegen voor meer op dit, verwijs naar de variabelen [van het](../../installation/using/installing-packages-with-linux.md#environment-variables)Milieu.
+>Als u de Oracle-client al hebt geïnstalleerd, maar de algemene omgeving (bijvoorbeeld: /etc/profile) niet behoorlijk wordt gevormd, kunt u ontbrekende informatie aan **nl6/customer.sh** manuscript voor meer op dit toevoegen, verwijs naar [de variabelen van het Milieu](../../installation/using/installing-packages-with-linux.md#environment-variables).
 
 **Problemen oplossen en best practices**
 
@@ -192,11 +192,11 @@ Problemen kunnen optreden na een Oracle-client of een serverupdate, een versiewi
 
 Als u op de cliëntconsole opmerkt dat er onverwachte tijdvertraging (één of meerdere uren) in logboeken, werkschema laatste verwerking, volgende verwerking, etc. zijn, zou er een probleem tussen de bibliotheek van de cliënt van Oracle en de Server van Oracle kunnen zijn. Dergelijke problemen voorkomen
 
-1. Gebruik de **volledige client**.
+1. Zorg ervoor dat u de **volledige client** gebruikt.
 
    Er zijn verschillende problemen geïdentificeerd bij het gebruik van de Oracle Instant Client-versie. Bovendien is het onmogelijk om het dossier van de Tijdzone op onmiddellijke cliënt te veranderen.
 
-1. Zorg ervoor dat de **clientversie** en de versie **van de** databaseserver **hetzelfde** zijn.
+1. Zorg ervoor dat de **clientversie** en de **databaseserverversie** **same** zijn.
 
    Het is bekend dat het mengen van versies ondanks de compatibiliteitsmatrix van Oracle en de aanbeveling om client- en serverversies uit te lijnen problemen kan veroorzaken.
 
@@ -214,7 +214,7 @@ Adobe Campaign-installaties voor Linux moeten in de volgende volgorde worden uit
 
 Het installatieproces wordt in dit hoofdstuk beschreven. De installatiestappen zijn als volgt:
 
-* Stap 1: Als u de toepassingsserver installeert, raadpleegt u [Pakketten met Linux](../../installation/using/installing-packages-with-linux.md)installeren.
+* Stap 1: Als u de toepassingsserver wilt installeren, raadpleegt u [Pakketten installeren met Linux](../../installation/using/installing-packages-with-linux.md).
 * Stap 2: Integratie met een webserver (optioneel, afhankelijk van de gebruikte componenten).
 
 Zodra de installatiestappen volledig zijn, moet u de instanties, het gegevensbestand en de server vormen. Voor meer op dit, verwijs naar [Ongeveer aanvankelijke configuratie](../../installation/using/about-initial-configuration.md).
