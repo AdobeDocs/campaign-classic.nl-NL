@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # Integraties met Adobe Experience Cloud-oplossingen{#integrations-with-adobe-experience-cloud-solutions}
 
-De hieronder beschreven workflows worden standaard geïnstalleerd met de module **Integratie met de Adobe Experience Cloud** . For more on this module, refer to this [section](../../integrations/using/configuring-ims.md#installing-the-package).
+De hieronder beschreven workflows worden standaard geïnstalleerd met de **integratie met de Adobe Experience Cloud**-module. Voor meer op deze module, verwijs naar dit [sectie](../../integrations/using/configuring-ims.md#installing-the-package).
 
 <table> 
  <tbody> 
