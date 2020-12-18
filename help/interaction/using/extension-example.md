@@ -19,7 +19,7 @@ ht-degree: 3%
 
 In het geval van een binnenkomend contact (callcenter of website) worden de meest relevante aanbiedingen aan een bepaald contact voorgesteld met behulp van een reeks subsidiabiliteitsregels. Als u de geschiktheidscriteria van uw aanbiedingen wilt verrijken, breidt u het schema **nms:interaction** uit.
 
-* Als u een nieuwe interactiecontext wilt toevoegen, breidt u het **nms:interactieschema** uit en maakt u zoveel **kenmerkelementen** als nodig is in het schema.
+* Als u een nieuwe interactiecontext wilt toevoegen, breidt u het schema **nms:interaction** uit en maakt u zo veel **attribute** elementen als nodig in het schema.
 
    In het volgende voorbeeld zijn de toegevoegde criteria de landcode en de laatste bezochte pagina.
 
@@ -31,5 +31,5 @@ In het geval van een binnenkomend contact (callcenter of website) worden de mees
 
    ![](assets/s_ncs_configuration_offer_context.png)
 
-* Wanneer het vormen van de vraag van de ZEEP, neem het **** contextXML element aan verwijzingscontextinformatie op die in het interactieschema wordt toegevoegd. Voor meer informatie, verwijs naar [Integratie via ZEEP (server kant)](../../interaction/using/integration-via-soap--server-side-.md).
+* Wanneer het vormen van de vraag van de ZEEP, neem **context** het element van XML op om de informatie van de verwijzingscontext in te voegen die in het interactieschema wordt toegevoegd. Raadpleeg [Integratie via SOAP (serverzijde)](../../interaction/using/integration-via-soap--server-side-.md) voor meer informatie.
 
