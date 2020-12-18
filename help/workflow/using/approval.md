@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Goedkeuring{#approval}
 
-Voor een **goedkeuringstaak** is de deelname van een exploitant vereist. De operator krijgt een taak toegewezen en kan per e-mail reageren met de webpagina die is gekoppeld in het e-mailbericht of via de console.
+Een **Goedkeuring** taak vereist de participatie van een exploitant. De operator krijgt een taak toegewezen en kan per e-mail reageren met de webpagina die is gekoppeld in het e-mailbericht of via de console.
 
 ## Taaktoewijzing {#task-assignment}
 
@@ -25,7 +25,7 @@ Standaard wordt de goedkeuring toegewezen aan een groep operatoren. Deze groep v
 
 Indien nodig, kunt u de goedkeuringstaak aan één enkele exploitant of een reeks exploitanten toewijzen die door een filter worden bepaald.
 
-* Als u één operator wilt selecteren, selecteert u de **[!UICONTROL Operator]** waarde in het **[!UICONTROL Assignment type]** veld en selecteert u de relevante operator in de vervolgkeuzelijst van het **[!UICONTROL Assignee]** veld.
+* Als u één operator wilt selecteren, selecteert u de waarde **[!UICONTROL Operator]** in het veld **[!UICONTROL Assignment type]** en selecteert u de relevante operator in de vervolgkeuzelijst van het veld **[!UICONTROL Assignee]**.
 
    ![](assets/s_advuser_validation_box_assign.png)
 
@@ -33,7 +33,7 @@ Indien nodig, kunt u de goedkeuringstaak aan één enkele exploitant of een reek
    >
    >Alleen de gekozen exploitant wordt gemachtigd de taak goed te keuren.
 
-* U kunt een query definiëren voor het filteren van goedkeurende operatoren. Selecteer hiertoe de **[!UICONTROL Filter]** waarde in het **[!UICONTROL Assignment type]** veld en klik op de **[!UICONTROL Advanced parameters...]** koppeling om filtervoorwaarden te definiëren, zoals in het volgende voorbeeld wordt getoond:
+* U kunt een query definiëren voor het filteren van goedkeurende operatoren. Hiervoor selecteert u de waarde **[!UICONTROL Filter]** in het veld **[!UICONTROL Assignment type]** en klikt u op de koppeling **[!UICONTROL Advanced parameters...]** om filtervoorwaarden te definiëren, zoals in het volgende voorbeeld wordt getoond:
 
    ![](assets/s_advuser_validation_box_filter.png)
 
@@ -47,7 +47,7 @@ Een exploitant kan de taken goedkeuren die aan die exploitant van de console wor
 
 Het wijzigen van de titel of de berichttekst van de activiteit beïnvloedt niet de huidige taken, maar anderzijds, beïnvloedt het wijzigen van de mogelijke keuzen direct de huidige taken, die automatisch de nieuwe lijst van keuzen erven.
 
-**Taken voor het type goedkeuring** zijn toegankelijk via het **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** knooppunt: operatoren hebben rechtstreeks via deze weergave toegang tot het goedkeuringsformulier.
+**De taken van** het Goedkeuringstype zijn toegankelijk van de  **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** knoop: operatoren hebben rechtstreeks via deze weergave toegang tot het goedkeuringsformulier.
 
 ![](assets/s_advuser_validation_from_console.png)
 
@@ -57,15 +57,15 @@ Aanpassingsvariabelen kunnen worden gebruikt in het bericht dat naar revisoren w
 
 ![](assets/edit_validation.png)
 
-Dit **[!UICONTROL Title]** veld bevat de titel van het bericht: Dit is het onderwerp van het verzonden e-mailbericht. De titel en de berichttekst zijn JavaScript-sjablonen en kunnen daarom waarden bevatten die zijn berekend op basis van de context van de workflow.
+Dit **[!UICONTROL Title]** gebied bevat de titel van het bericht: Dit is het onderwerp van het verzonden e-mailbericht. De titel en de berichttekst zijn JavaScript-sjablonen en kunnen daarom waarden bevatten die zijn berekend op basis van de context van de workflow.
 
 In het onderste gedeelte van de editor kunt u de lijst met mogelijke antwoorden definiëren. Er is een overgang die overeenkomt met elk antwoord. De naam is de interne id en het label is de tekst die in de keuzelijst wordt weergegeven.
 
-Klik op de **[!UICONTROL Advanced parameters...]** koppeling om de leveringssjabloon te selecteren die moet worden gebruikt om operatoren op de hoogte te brengen. De standaardsjabloon (interne naam &#39;notifyAssignee&#39;) neemt de titel en het bericht en voegt een koppeling toe aan de webpagina die wordt gebruikt om te antwoorden.
+Klik op de koppeling **[!UICONTROL Advanced parameters...]** om de leveringssjabloon te selecteren die moet worden gebruikt om operatoren op de hoogte te brengen. De standaardsjabloon (interne naam &#39;notifyAssignee&#39;) neemt de titel en het bericht en voegt een koppeling toe aan de webpagina die wordt gebruikt om te antwoorden.
 
 Deze sjabloon kan worden gewijzigd om de berichtlay-out aan te passen, maar u kunt het beste een kopie maken. Het doelmechanisme (extern bestand, doeltoewijzing) mag niet worden gewijzigd omdat meldingen correct moeten werken.
 
-Een goedkeuringsvoorbeeld wordt getoond in het [Definiëren van goedkeuringen](../../workflow/using/defining-approvals.md).
+Een goedkeuringsvoorbeeld wordt getoond in [Bepalend goedkeuringen](../../workflow/using/defining-approvals.md).
 
 ## Uitvoerparameters {#output-parameters}
 
@@ -75,5 +75,5 @@ Een goedkeuringsvoorbeeld wordt getoond in het [Definiëren van goedkeuringen](.
 
 * **[!UICONTROL responseOperator]**
 
-   Identifier van de operator die heeft gereageerd. Dit veld is een numerieke waarde, maar een **[!UICONTROL String]** veld.
+   Identifier van de operator die heeft gereageerd. Dit veld is een numerieke waarde, maar een veld **[!UICONTROL String]**.
 
