@@ -19,15 +19,15 @@ ht-degree: 3%
 
 Met Adobe Campaign kunt u de tijd tussen verschillende landen beheren die bij hetzelfde geval betrokken zijn. De toegepaste configuratie wordt gevormd tijdens instantieverwezenlijking.
 
-Raadpleeg deze [sectie](../../installation/using/time-zone-management.md)voor meer informatie over het configureren van tijdzones in Adobe Campaign.
+Raadpleeg deze [sectie](../../installation/using/time-zone-management.md) voor meer informatie over het configureren van tijdzones in Adobe Campaign.
 
 In een werkschema, kunt u de programma&#39;s van de activiteitenuitvoering aanpassen en een specifieke tijdzone verbinden met een activiteit of met het volledige werkschema. Deze configuratie kan nuttig zijn wanneer het invoeren van het dossier, of binnen het kader van levering het plannen.
 
 ## Uitvoerings planning {#execution-scheduling}
 
-U kunt de uitvoering van taken plannen gebruikend de planner (verwijs naar [Planner](../../workflow/using/scheduler.md)). U kunt ook de planningsopties gebruiken die beschikbaar zijn in de activiteiten die deze functionaliteit aanbieden. Deze activiteiten bieden een **[!UICONTROL Schedule]** tabblad aan: **[!UICONTROL File collector]**, **[!UICONTROL File transfer]**, **[!UICONTROL Web download]**, **[!UICONTROL Email reception]** &amp; **[!UICONTROL SMS]**, enzovoort.
+U kunt de uitvoering van taken plannen gebruikend de planner (verwijs naar [Planner](../../workflow/using/scheduler.md)). U kunt ook de planningsopties gebruiken die beschikbaar zijn in de activiteiten die deze functionaliteit aanbieden. Deze activiteiten bieden een **[!UICONTROL Schedule]** tabel aan: **[!UICONTROL File collector]**, **[!UICONTROL File transfer]**, **[!UICONTROL Web download]**, **[!UICONTROL Email reception]** &amp; **[!UICONTROL SMS]**, enz.
 
-Voor alle geplande taken, d.w.z. alle activiteiten met het plannen opties, kunt u de tijdzone selecteren om toe te passen. De tijdzone wordt geselecteerd via het **[!UICONTROL Advanced]** tabblad van de desbetreffende activiteit:
+Voor alle geplande taken, d.w.z. alle activiteiten met het plannen opties, kunt u de tijdzone selecteren om toe te passen. De tijdzone wordt geselecteerd via het tabblad **[!UICONTROL Advanced]** van de betreffende activiteit:
 
 ![](assets/wf-timezone-in-a-box.png)
 
@@ -49,8 +49,8 @@ Mogelijke waarden zijn:
 
    Hiermee gebruikt u de geselecteerde tijdzone.
 
-Als de **[!UICONTROL By default]** waarde wordt geselecteerd, wordt de tijdzone van het werkschema toegepast, of anders, dat van de toepassingsserver.
+Als de waarde **[!UICONTROL By default]** wordt geselecteerd, wordt de tijdzone van het werkschema toegepast, of anders, die van de toepassingsserver.
 
 ## Een tijdzone koppelen aan een activiteit {#linking-a-time-zone-to-an-activity}
 
-Op het **[!UICONTROL Advanced]** tabblad van de workflowactiviteiten kunt u de tijdzone selecteren. Hoewel de tijdzone van de workflows meestal voldoende is, kan het nodig zijn om deze nu en opnieuw te overladen voor een specifieke activiteit, zoals het importeren van gegevens, om datums te koppelen aan hun juiste tijdzone.
+Op het tabblad **[!UICONTROL Advanced]** van de workflowactiviteiten kunt u de tijdzone selecteren. Hoewel de tijdzone van de workflows meestal voldoende is, kan het nodig zijn om deze nu en opnieuw te overladen voor een specifieke activiteit, zoals het importeren van gegevens, om datums te koppelen aan hun juiste tijdzone.
