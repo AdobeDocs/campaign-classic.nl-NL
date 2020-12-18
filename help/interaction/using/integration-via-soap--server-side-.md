@@ -21,11 +21,11 @@ De SOAP-webservices die worden aangeboden voor aanbiedingsbeheer, verschillen va
 
 ## Voorstel {#offer-proposition}
 
-Voor een aanbiedingsvoorstel via ZEEP, voeg het **nms:proposition#Propose** bevel toe dat door de volgende parameters wordt gevolgd:
+Voor een aanbiedingsvoorstel via ZEEP, voeg **nms:proposition#Propose** bevel toe dat door de volgende parameters wordt gevolgd:
 
 * **targetId**: primaire sleutel van de ontvanger (kan een samengestelde sleutel zijn).
 * **maxCount**: geeft het aantal voorstellen voor de contactpersoon aan.
-* **context**: Hiermee kunt u contextinformatie toevoegen in het ruimteschema. Als het gebruikte schema **nms:interactie** is, **`<empty>`** zou moeten worden toegevoegd.
+* **context**: Hiermee kunt u contextinformatie toevoegen in het ruimteschema. Als het gebruikte schema **nms:interaction** is, moet **`<empty>`** worden toegevoegd.
 * **categorieën**: geeft de categorie(ën) aan waartoe de aanbiedingen moeten behoren.
 * **thema**&#39;s: geeft het thema of de thema&#39;s aan waartoe de aanbieding(en) moeten behoren.
 * **uuuid**: waarde van de permanente cookie van Adobe Campaign (&quot;uuid230&quot;).
@@ -34,7 +34,7 @@ Voor een aanbiedingsvoorstel via ZEEP, voeg het **nms:proposition#Propose** beve
 
 >[!NOTE]
 >
->De instellingen **targetId** en **maxCount** zijn verplicht. De andere zijn optioneel.
+>De **targetId** en **maxCount** montages zijn verplicht. De andere zijn optioneel.
 
 In antwoord op de vraag, zal de dienst van de ZEEP de volgende parameters terugkeren:
 
@@ -43,11 +43,11 @@ In antwoord op de vraag, zal de dienst van de ZEEP de volgende parameters terugk
 
 ## Aanbieding bijwerken {#offer-update}
 
-Voeg de **nms:interaction#UpdateStatus** bevel aan URL toe, die door deze parameters wordt gevolgd:
+Voeg het **nms:interaction#UpdateStatus** bevel aan URL toe, die door deze parameters wordt gevolgd:
 
-* **voorstel**: Tekenreeks, bevat deze de voorstel-id die als uitvoer is opgegeven tijdens een aanbiedingsvoorstel. Zie Voorstel [voorstel](#offer-proposition).
-* **status**: tekenreekstype, geeft het de nieuwe status van de aanbieding aan. De mogelijke waarden worden vermeld in de **propositionStatus** opsomming, in **nms:common** schema. Het getal 3 komt bijvoorbeeld overeen met de status **Geaccepteerd** .
-* **context**: Met XML-element kunt u contextinformatie toevoegen in het ruimteschema. Als het gebruikte schema **nms:interactie** is, **`<empty>`** zou moeten worden toegevoegd.
+* **voorstel**: Tekenreeks, bevat deze de voorstel-id die als uitvoer is opgegeven tijdens een aanbiedingsvoorstel. Zie [Voorstel aanbieden](#offer-proposition).
+* **status**: tekenreekstype, geeft het de nieuwe status van de aanbieding aan. De mogelijke waarden worden vermeld in de **propositionStatus** opsomming, in **nms:common** schema. Bijvoorbeeld, out-of-the-box, beantwoordt het aantal 3 aan de status **Accepted**.
+* **context**: Met XML-element kunt u contextinformatie toevoegen in het ruimteschema. Als het gebruikte schema **nms:interaction** is, moet **`<empty>`** worden toegevoegd.
 
 ## Voorbeeld met een SOAP-aanroep {#example-using-a-soap-call}
 
