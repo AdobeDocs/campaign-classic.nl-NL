@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Belangrijke stappen voor het maken van een enquête
+title: Belangrijke stappen bij het maken van een enquête
 description: Uw eerste enquête maken met Campagne
 audience: web
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Belangrijke stappen voor het maken van een enquête{#getting-started-with-surveys}
+# Belangrijke stappen bij het maken van een enquête{#getting-started-with-surveys}
 
 Hier volgt een snel overzicht van de belangrijkste stappen om een eenvoudig onderzoek tot stand te brengen, gebruikend het volgende malplaatje:
 
@@ -23,60 +23,60 @@ Hier volgt een snel overzicht van de belangrijkste stappen om een eenvoudig onde
 
 Deze stappen zijn:
 
-1. [Stap 1 - Een enquête](#step-1---creating-a-survey)maken,
-1. [Stap 2 - De sjabloon](#step-2---selecting-the-template)selecteren
+1. [Stap 1 - Een enquête](#step-1---creating-a-survey) maken,
+1. [Stap 2 - De sjabloon](#step-2---selecting-the-template) selecteren
 1. [Stap 3 - Opbouw van de enquête](#step-3---building-the-survey),
-1. [Stap 4 - De pagina-inhoud](#step-4---creating-the-page-content)maken,
+1. [Stap 4 - De pagina-inhoud](#step-4---creating-the-page-content) maken,
 1. [Stap 5 - Opslag van de enquêtegegevens](#step-5---storing-the-survey-data-),
-1. [Stap 6 - De pagina&#39;s](#step-6---publishing-the-pages)publiceren,
-1. [Stap 7 - Uw online enquête](#step-7---sharing-your-online-survey)delen.
+1. [Stap 6 - De pagina&#39;s](#step-6---publishing-the-pages) publiceren,
+1. [Stap 7 - Uw online enquête](#step-7---sharing-your-online-survey) delen.
 
-## Stap 1 - Een enquête maken {#step-1---creating-a-survey}
+## Stap 1 - het Creëren van een onderzoek {#step-1---creating-a-survey}
 
-Als u een nieuwe enquête wilt maken, gaat u naar het **[!UICONTROL Campaigns]** tabblad of **[!UICONTROL Profiles and targets]** klikt u op het **[!UICONTROL Web Applications]** menu. Klik op de **[!UICONTROL Create]** knop boven de lijst met formulieren.
+Als u een nieuwe enquête wilt maken, gaat u naar het tabblad **[!UICONTROL Campaigns]** of **[!UICONTROL Profiles and targets]** en klikt u op het menu **[!UICONTROL Web Applications]**. Klik op de knop **[!UICONTROL Create]** boven de lijst met formulieren.
 
 ![](assets/s_ncs_admin_survey_create.png)
 
-## Stap 2 - De sjabloon selecteren {#step-2---selecting-the-template}
+## Stap 2 - Het selecteren van het malplaatje {#step-2---selecting-the-template}
 
 Selecteer een enquêtemalplaatje, dan geef het onderzoek een naam. Deze naam is niet zichtbaar voor de eindgebruikers, maar maakt het mogelijk de enquête te identificeren binnen Adobe Campaign. Klik **[!UICONTROL Save]** om het onderzoek aan de lijst van de toepassingen van het Web toe te voegen.
 
 ![](assets/s_ncs_admin_survey_wz_00.png)
 
-## Stap 3 - Opbouw van de enquête {#step-3---building-the-survey}
+## Stap 3 - De enquête opbouwen {#step-3---building-the-survey}
 
 De onderzoeken worden gebouwd in een diagram waar de volgende elementen worden geplaatst: de pagina(&#39;s) waarop de inhoud wordt gemaakt, de stappen voor het vooraf laden en opslaan van gegevens en de testfasen. Scripts en query&#39;s kunnen ook worden ingevoegd.
 
-Klik op de **[!UICONTROL Edit]** vorm van de enquête om de grafiek te maken.
+Als u het diagram wilt samenstellen, klikt u op de **[!UICONTROL Edit]**-vorm van de enquête.
 
-Een enquête moet ten **minste** de volgende drie onderdelen bevatten: een pagina, een opslagvak en een eindpagina.
+Een onderzoek moet **ten minste** de volgende drie componenten bevatten: een pagina, een opslagvak en een eindpagina.
 
-* Als u een pagina wilt maken, selecteert u het **[!UICONTROL Page]** object in het linkergedeelte van de editor en plaatst u het object in het middelste gedeelte, zoals hieronder wordt getoond:
+* Als u een pagina wilt maken, selecteert u het object **[!UICONTROL Page]** in het linkergedeelte van de editor en plaatst u het object in het middelste gedeelte, zoals hieronder wordt getoond:
 
    ![](assets/s_ncs_admin_survey_new_page.png)
 
-* Selecteer vervolgens het **[!UICONTROL Storage]** object en plaats het op de uitvoerovergang van de pagina.
-* Tot slot selecteer het **[!UICONTROL End]** voorwerp en plaats het op het eind van de outputovergang van de opslagdoos om het volgende diagram te verkrijgen:
+* Selecteer vervolgens het object **[!UICONTROL Storage]** en plaats dit op de uitvoerovergang van de pagina.
+* Tot slot selecteer **[!UICONTROL End]** voorwerp en plaats het op het eind van de outputovergang van de opslagdoos om het volgende diagram te verkrijgen:
 
    ![](assets/s_ncs_admin_survey_end.png)
 
 ## Stap 4 - De pagina-inhoud maken {#step-4---creating-the-page-content}
 
-In het volgende voorbeeld gebruiken we een **[!UICONTROL Page (v5 compatibility)]** typepagina. Dit type pagina is toegankelijk via het geavanceerde menu van het **[!UICONTROL Edit]** tabblad.
+In het volgende voorbeeld gebruiken we een tekstpagina **[!UICONTROL Page (v5 compatibility)]**. Dit type pagina is toegankelijk via het geavanceerde menu op het tabblad **[!UICONTROL Edit]**.
 
 ![](assets/s_ncs_admin_survey_pagev5.png)
 
 * Invoervelden toevoegen
 
-   Als u de inhoud van de pagina wilt maken, moet u deze bewerken: Dubbelklik op het **[!UICONTROL Page]** object om dit te doen. Klik op het eerste pictogram op de werkbalk om de wizard voor het maken van velden te openen. Als u een invoerveld wilt maken waarin de gebruikersnaam wordt opgeslagen in het overeenkomende veld van het profiel van de ontvanger, selecteert u **[!UICONTROL Edit a recipient]**.
+   Als u de inhoud van de pagina wilt maken, moet u deze bewerken: Dubbelklik hiertoe op het object **[!UICONTROL Page]**. Klik op het eerste pictogram op de werkbalk om de wizard voor het maken van velden te openen. Selecteer **[!UICONTROL Edit a recipient]** om een invoerveld te maken voor de gebruikersnaam die moet worden opgeslagen in het overeenkomende veld van het profiel van de ontvanger.
 
    ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
-   Klik op de **[!UICONTROL Next]** knop om het veld voor gegevensopslag in de database te selecteren. In dit geval het veld Achternaam.
+   Klik op de knop **[!UICONTROL Next]** om het veld voor gegevensopslag in de database te selecteren. In dit geval het veld Achternaam.
 
    ![](assets/s_ncs_admin_survey_choose_field.png)
 
-   Klik **[!UICONTROL Finish]** om het maken van velden te bevestigen.
+   Klik op **[!UICONTROL Finish]** om het maken van velden te bevestigen.
 
    Wanneer de informatie wordt opgeslagen in een veld dat al in de database bestaat, neemt het veld standaard de naam van het geselecteerde veld over, d.w.z. &#39;Achternaam&#39; in dit voorbeeld. U kunt dit label wijzigen zoals hieronder wordt getoond:
 
@@ -86,11 +86,11 @@ In het volgende voorbeeld gebruiken we een **[!UICONTROL Page (v5 compatibility)
 
    Pas dezelfde procedure toe om een veld toe te voegen waarin de gebruiker een e-mailadres kan invoeren.
 
-* Als u een vraag wilt maken, klikt u met de rechtermuisknop op het laatste element in de structuur en selecteert u **[!UICONTROL Containers > Question]** of klikt u op het **[!UICONTROL Containers]** pictogram en selecteert u **[!UICONTROL Question]**.
+* Als u een vraag wilt maken, klikt u met de rechtermuisknop op het laatste element in de structuur en selecteert u **[!UICONTROL Containers > Question]** of klikt u op het pictogram **[!UICONTROL Containers]** en selecteert u **[!UICONTROL Question]**.
 
    ![](assets/s_ncs_admin_survey_add_qu.png)
 
-   Voer het label van de vraag in en voeg het (de) antwoordveld(en) in als een subvertakking van de vraag. Hiervoor moet het knooppunt dat aan de vraag is gekoppeld, zijn geselecteerd wanneer u het antwoordveld maakt. Voeg een pictogram toe **[!UICONTROL drop-down listx]** met behulp van het **[!UICONTROL Selection controls]** pictogram of door met de rechtermuisknop te klikken, zoals hieronder wordt getoond:
+   Voer het label van de vraag in en voeg het (de) antwoordveld(en) in als een subvertakking van de vraag. Hiervoor moet het knooppunt dat aan de vraag is gekoppeld, zijn geselecteerd wanneer u het antwoordveld maakt. Voeg een **[!UICONTROL drop-down listx]** toe gebruikend **[!UICONTROL Selection controls]** pictogram of door met de rechtermuisknop aan te klikken, zoals hieronder getoond:
 
    ![](assets/s_ncs_admin_survey_add_list.png)
 
@@ -98,17 +98,17 @@ In het volgende voorbeeld gebruiken we een **[!UICONTROL Page (v5 compatibility)
 
    ![](assets/s_ncs_admin_survey_add_itz_list.png)
 
-   Klik op het **[!UICONTROL General]** tabblad op de **[!UICONTROL Initialize the list of values from the database]** koppeling: de waardetabel wordt automatisch ingevoerd.
+   Klik op het tabblad **[!UICONTROL General]** op de koppeling **[!UICONTROL Initialize the list of values from the database]**: de waardetabel wordt automatisch ingevoerd.
 
    ![](assets/s_ncs_admin_survey_add_value.png)
 
-   Klik **[!UICONTROL OK]** om de redacteur te sluiten, en veranderingen **[!UICONTROL Save]** te bewaren.
+   Klik **[!UICONTROL OK]** om de redacteur te sluiten, en **[!UICONTROL Save]** om veranderingen te bewaren.
 
    >[!NOTE]
    >
-   >Voor elk veld of elke vraag kunt u de paginalay-out aan uw wensen aanpassen, dankzij de opties op het **[!UICONTROL Advanced]** tabblad. De indeling van enquêteschermen wordt in [deze sectie](../../web/using/about-web-forms.md)nader beschreven.
+   >Voor elk veld of elke vraag kunt u de paginalay-out aan uw wensen aanpassen, dankzij de opties op het tabblad **[!UICONTROL Advanced]**. De indeling van enquêteschermen wordt beschreven in [deze sectie](../../web/using/about-web-forms.md).
 
-   Klik in het detailscherm op het **[!UICONTROL Preview]** tabblad om de rendering weer te geven van de enquête die u zojuist hebt gemaakt.
+   Klik in het detailscherm op het tabblad **[!UICONTROL Preview]** om de rendering weer te geven van de enquête die u zojuist hebt gemaakt.
 
    ![](assets/s_ncs_admin_survey_preview.png)
 
@@ -122,14 +122,14 @@ In het onderstaande voorbeeld wordt het profiel bijgewerkt wanneer het opslaan (
 
 ![](assets/s_ncs_admin_survey_save_edit.png)
 
-Klik **[!UICONTROL OK]** om te bevestigen en klik vervolgens **[!UICONTROL Save]** om de enquête op te slaan
+Klik **[!UICONTROL OK]** om te bevestigen, dan klik **[!UICONTROL Save]** om het onderzoek te bewaren
 
-## Stap 6 - De pagina&#39;s publiceren {#step-6---publishing-the-pages}
+## Stap 6 - Pagina&#39;s {#step-6---publishing-the-pages} publiceren
 
 Gebruikers kunnen de HTML-pagina&#39;s alleen openen als de toepassing beschikbaar is. Het moet zich niet meer in de bewerkingsfase bevinden, maar in productie. Als u een enquête in productie wilt plaatsen, moet u deze publiceren. Dit doet u als volgt:
 
-* Klik op de **[!UICONTROL Publish]** knop boven het enquêtedashboard.
-* Klik **[!UICONTROL Start]** om de publicatie te starten en de wizard te sluiten.
+* Klik op de knop **[!UICONTROL Publish]** boven het dashboard voor de enquête.
+* Klik op **[!UICONTROL Start]** om de publicatie te starten en de wizard te sluiten.
 
    ![](assets/s_ncs_admin_survey_start_publ.png)
 
