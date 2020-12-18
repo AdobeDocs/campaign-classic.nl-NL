@@ -17,7 +17,7 @@ ht-degree: 11%
 
 # Marketingresources (MRM){#marketing-resources-mrm}
 
-De hieronder gedetailleerde workflows worden geïnstalleerd met de module **Marketing Resources (MRM)** standaard. For more on this module, refer to this [section](../../campaign/using/designing-marketing-campaigns.md).
+De hieronder beschreven workflows worden geïnstalleerd met de **Marketingbronnen (MRM)** module standaard. Voor meer op deze module, verwijs naar dit [sectie](../../campaign/using/designing-marketing-campaigns.md).
 
 <table> 
  <tbody> 
@@ -39,7 +39,7 @@ De hieronder gedetailleerde workflows worden geïnstalleerd met de module **Mark
   <tr> 
    <td> <span class="uicontrol">Discussieformeprocessen</span> <br /> </td> 
    <td> <span class="uicontrol">newsgroupMgt</span> <br /> </td> 
-   <td> Deze workflow beheert de levering van meldingen van discussieforums. Het wordt geactiveerd wanneer een goedkeuringssignaal wordt ontvangen.<br /> </td> 
+   <td> Deze workflow beheert de levering van meldingen van discussieforums. Het wordt teweeggebracht wanneer een goedkeuringssignaal wordt ontvangen.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
