@@ -19,11 +19,11 @@ ht-degree: 16%
 
 Zodra u één of meerdere zaadadressen en het berichtlichaam hebt gecreeerd, kunt u voorproef het bericht en zijn verpersoonlijking controleren.
 
-1. Klik in de berichtsjabloon op de **[!UICONTROL Preview]** tab.
+1. Klik in de berichtsjabloon op het tabblad **[!UICONTROL Preview]**.
 
    ![](assets/messagecenter_preview_001.png)
 
-1. Select **[!UICONTROL A seed address]** in the drop-down list.
+1. Selecteer **[!UICONTROL A seed address]** in de drop-down lijst.
 
    ![](assets/messagecenter_preview_002.png)
 
