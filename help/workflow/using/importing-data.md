@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 49f3c123cb8e91b3a2a2a1eb6bd593a242b8bbfe
 workflow-type: tm+mt
 source-wordcount: '2476'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -27,15 +27,15 @@ ht-degree: 0%
 
 De gegevens die in een werkstroom worden verzonden, kunnen afkomstig zijn van lijsten waarin de gegevens vooraf zijn voorbereid en gestructureerd.
 
-Deze lijst kan direct in Adobe Campaign zijn gemaakt of door de **[!UICONTROL Import a list]** optie zijn geïmporteerd. For more on this option, refer to this [page](../../platform/using/generic-imports-and-exports.md).
+Deze lijst is mogelijk rechtstreeks gemaakt in Adobe Campaign of geïmporteerd door de optie **[!UICONTROL Import a list]**. Voor meer op deze optie, verwijs naar deze [pagina](../../platform/using/generic-imports-and-exports.md).
 
-Raadpleeg de [lijst](../../workflow/using/read-list.md)Lezen voor meer informatie over het gebruik van de activiteit in de lijst met lezen in een workflow.
+Raadpleeg [Lijst lezen](../../workflow/using/read-list.md) voor meer informatie over het gebruik van de activiteit in de lijst met lezen in een workflow.
 
-### Gegevens uit een bestand laden {#loading-data-from-a-file}
+### Gegevens laden uit een bestand {#loading-data-from-a-file}
 
 De gegevens die in een werkstroom worden verwerkt, kunnen uit een gestructureerd bestand worden geëxtraheerd, zodat het bestand in Adobe Campaign kan worden geïmporteerd.
 
-Een beschrijving van de activiteit van de ladende gegevens kan in de het laden van [Gegevens (dossier)](../../workflow/using/data-loading--file-.md) sectie worden gevonden.
+Een beschrijving van de activiteit van de ladingsgegevens kan in [het laden van gegevens (dossier)](../../workflow/using/data-loading--file-.md) sectie worden gevonden.
 
 Voorbeeld van gestructureerd bestand dat moet worden geïmporteerd:
 
@@ -51,19 +51,19 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 
 Voorzichtig zijn en het volgen van de weinige hieronder gedetailleerde eenvoudige regels zullen veel helpen om gegevensconsistentie binnen het gegevensbestand te verzekeren en gemeenschappelijke fouten tijdens gegevensbestandupdate of gegevensuitvoer te vermijden.
 
-### Importsjablonen gebruiken {#using-import-templates}
+### Importsjablonen {#using-import-templates} gebruiken
 
 De meeste importworkflows moeten de volgende activiteiten bevatten: **[!UICONTROL Data loading (file)]**, **[!UICONTROL Enrichment]**, **[!UICONTROL Split]**, **[!UICONTROL Deduplication]**, **[!UICONTROL Update data]**.
 
-Door het gebruik van importsjablonen is het heel handig om vergelijkbare importbewerkingen voor te bereiden en te zorgen voor consistentie van de gegevens in de database. Leer hoe u workflowsjablonen kunt maken in de sectie [Workflowsjablonen](../../workflow/using/building-a-workflow.md#workflow-templates) .
+Door het gebruik van importsjablonen is het heel handig om vergelijkbare importbewerkingen voor te bereiden en te zorgen voor consistentie van de gegevens in de database. Leer hoe u werkstroomsjablonen maakt in de sectie [Workflowsjablonen](../../workflow/using/building-a-workflow.md#workflow-templates).
 
-In veel projecten wordt geïmporteerd zonder **[!UICONTROL Deduplication]** activiteit, omdat de bestanden die in het project worden gebruikt geen duplicaten hebben. Soms worden duplicaten weergegeven van het importeren van verschillende bestanden. De-duplicatie is dan moeilijk. Daarom is een deduplicatiestap een goede voorzorgsmaatregel in alle importworkflows.
+In vele projecten, wordt de invoer gebouwd zonder **[!UICONTROL Deduplication]** activiteit omdat de dossiers die in het project worden gebruikt geen duplicaten hebben. Soms worden duplicaten weergegeven van het importeren van verschillende bestanden. De-duplicatie is dan moeilijk. Daarom is een deduplicatiestap een goede voorzorgsmaatregel in alle importworkflows.
 
 Ga niet uit van de veronderstelling dat de inkomende gegevens consistent en correct zijn, of dat de afdeling van IT of de supervisor van Adobe Campaign het zal behandelen. Houd tijdens het project rekening met het opschonen van gegevens. U kunt gegevens dedupliceren, op elkaar afstemmen en de consistentie behouden bij het importeren van gegevens.
 
-Een voorbeeld van een importsjabloon is beschikbaar in de sectie [Herhalende importbewerkingen](#setting-up-a-recurring-import) instellen.
+Een voorbeeld van een importsjabloon is beschikbaar in de sectie [Een terugkerende import](#setting-up-a-recurring-import) instellen.
 
-### Vlakke bestandsindelingen gebruiken {#using-flat-file-formats}
+### Vlakke bestandsindelingen {#using-flat-file-formats} gebruiken
 
 De meest efficiënte indeling voor importeren is platte bestanden. Vlakke bestanden kunnen in de bulkmodus op databaseniveau worden geïmporteerd.
 
@@ -76,7 +76,7 @@ Bijvoorbeeld:
 
 Adobe Campaign kan XML-bestanden niet importeren met behulp van standaard importactiviteiten. U kunt XML-bestanden importeren met JavaScript, maar alleen met kleine volumes: minder dan 10.000 records per bestand.
 
-### Compressie en codering gebruiken {#using-compression-and-encryption}
+### Compressie en codering {#using-compression-and-encryption} gebruiken
 
 Gebruik indien mogelijk gecomprimeerde bestanden voor importeren en exporteren.
 
@@ -88,7 +88,7 @@ zcat nl6/var/vp/import/filename.gz
 
 Het is ook een goede praktijk om dossiers te coderen die over het netwerk worden verzonden als het onveilig is. Hiervoor kan GPG worden gebruikt.
 
-### Gegevens in batch uit bestanden laden {#loading-data-in-batch-from-files}
+### Gegevens in batch laden uit bestanden {#loading-data-in-batch-from-files}
 
 Het laden van gegevens in partij van een dossier is effectiever dan het laden van één lijn tegelijkertijd en in real time (bijvoorbeeld via de dienst van het Web).
 
@@ -98,13 +98,13 @@ Het roepen van de externe diensten van het Web om profielen in real time te verr
 
 Als u gegevens moet invoeren, is het beter om het in partij te doen, gebruikend een werkschema, dan in echt - tijd, gebruikend een toepassing van het Web of de dienst van het Web.
 
-### Gegevensbeheer gebruiken {#using-data-management}
+### Gegevensbeheer {#using-data-management} gebruiken
 
 Het laden in de iteratieve modus (regel voor regel) met JavaScript moet worden beperkt tot kleine volumes.
 
-Gebruik altijd de **[!UICONTROL Data Loading (File)]** activiteit in workflows voor gegevensbeheer voor een betere efficiëntie.
+Gebruik voor een betere efficiëntie altijd de **[!UICONTROL Data Loading (File)]**-activiteit in workflows voor gegevensbeheer.
 
-### Importeren in de Delta-modus {#importing-in-delta-mode}
+### Importeren in Deltamodus {#importing-in-delta-mode}
 
 Regelmatige invoer moet plaatsvinden in de deltamodus. Dit betekent dat alleen gewijzigde of nieuwe gegevens telkens naar Adobe Campaign worden verzonden in plaats van naar de hele tabel.
 
@@ -112,12 +112,12 @@ Volledige invoer mag alleen voor eerste lading worden gebruikt.
 
 Importeer gegevens met gegevensbeheer in plaats van met JavaScript.
 
-### Behoud van consistentie {#maintaining-consistency}
+### Consistentie {#maintaining-consistency} behouden
 
 Om de consistentie van de gegevens in de Adobe Campaign-database te waarborgen, volgt u de volgende beginselen:
 
 * Als de geïmporteerde gegevens overeenkomen met een referentietabel in Adobe Campaign, moet de tabel in de workflow overeenkomen met die tabel. Records die niet overeenkomen, moeten worden afgewezen.
-* Zorg ervoor dat de geïmporteerde gegevens altijd **&quot;genormaliseerd&quot;** zijn (e-mail, telefoonnummer, direct-mailadres) en dat deze normalisatie betrouwbaar is en in de loop der jaren niet zal veranderen. Als dit niet het geval is, zullen sommige duplicaten waarschijnlijk in het gegevensbestand verschijnen, en aangezien Adobe Campaign geen hulpmiddelen verstrekt om &quot;vage&quot;aanpassing te doen, zal het zeer moeilijk zijn om hen te beheren en te verwijderen.
+* Zorg ervoor dat de geïmporteerde gegevens altijd **&quot;genormaliseerd&quot;** (e-mail, telefoonnummer, direct-mailadres) zijn en dat deze normalisatie betrouwbaar is en in de loop der jaren niet zal veranderen. Als dit niet het geval is, zullen sommige duplicaten waarschijnlijk in het gegevensbestand verschijnen, en aangezien Adobe Campaign geen hulpmiddelen verstrekt om &quot;vage&quot;aanpassing te doen, zal het zeer moeilijk zijn om hen te beheren en te verwijderen.
 * Transactionele gegevens moeten een afstemmingssleutel hebben en in overeenstemming zijn met de bestaande gegevens om het creëren van duplicaten te voorkomen.
 * **Verwante bestanden op volgorde** importeren.
 
@@ -125,13 +125,13 @@ Om de consistentie van de gegevens in de Adobe Campaign-database te waarborgen, 
 
 * **U kunt gegevens dedupliceren**, combineren en de consistentie behouden wanneer u ze importeert.
 
-## Hoofdlettergebruik: terugkerende import instellen {#setting-up-a-recurring-import}
+## Hoofdlettergebruik: terugkerende importbewerkingen {#setting-up-a-recurring-import} instellen
 
 Het gebruik van een importsjabloon is de beste manier als u regelmatig bestanden met dezelfde structuur moet importeren.
 
-In dit voorbeeld ziet u hoe u een workflow instelt die opnieuw kan worden gebruikt voor het importeren van profielen die afkomstig zijn van een CRM in de Adobe Campaign-database. Zie deze [sectie](../../workflow/using/about-activities.md)voor meer informatie over alle mogelijke instellingen voor elke activiteit.
+In dit voorbeeld ziet u hoe u een workflow instelt die opnieuw kan worden gebruikt voor het importeren van profielen die afkomstig zijn van een CRM in de Adobe Campaign-database. Raadpleeg deze [sectie](../../workflow/using/about-activities.md) voor meer informatie over alle mogelijke instellingen voor elke activiteit.
 
-1. Een nieuw werkstroomsjabloon maken op basis van **[!UICONTROL Resources > Templates > Workflow templates]**.
+1. Creeer een nieuw werkschemamalplaatje van **[!UICONTROL Resources > Templates > Workflow templates]**.
 1. Voeg de volgende activiteiten toe:
 
    * **[!UICONTROL Data loading (file)]**: Definieer de verwachte structuur van het bestand met de gegevens die u wilt importeren.
@@ -142,7 +142,7 @@ In dit voorbeeld ziet u hoe u een workflow instelt die opnieuw kan worden gebrui
 
    ![](assets/import_template_example0.png)
 
-1. Configureer de **[!UICONTROL Data Loading (file)]** activiteit:
+1. Configureer de **[!UICONTROL Data Loading (file)]**-activiteit:
 
    * Definieer de verwachte structuur door een voorbeeldbestand te uploaden. Het voorbeeldbestand mag slechts een paar regels bevatten, maar alle kolommen die nodig zijn voor het importeren. Controleer en bewerk de bestandsindeling om te controleren of het type van elke kolom correct is ingesteld: tekst, datum, geheel getal, enz. Bijvoorbeeld:
 
@@ -151,30 +151,30 @@ In dit voorbeeld ziet u hoe u een workflow instelt die opnieuw kan worden gebrui
       Smith;Hayden;23/05/1989;hayden.smith@mailtest.com;123456
       ```
 
-   * Selecteer in de **[!UICONTROL Name of the file to load]** sectie de velden **[!UICONTROL Upload a file from the local machine]** en laat deze leeg. Telkens wanneer een nieuwe werkstroom van dit malplaatje wordt gecreeerd, kunt u hier het dossier specificeren u wilt, zolang het aan de bepaalde structuur beantwoordt.
+   * Selecteer **[!UICONTROL Upload a file from the local machine]** in de sectie **[!UICONTROL Name of the file to load]** en laat het veld leeg. Telkens wanneer een nieuwe werkstroom van dit malplaatje wordt gecreeerd, kunt u hier het dossier specificeren u wilt, zolang het aan de bepaalde structuur beantwoordt.
 
-      U kunt alle opties gebruiken, maar u moet de sjabloon dienovereenkomstig aanpassen. Als u bijvoorbeeld een optie selecteert **[!UICONTROL Specified in the transition]**, kunt u een **[!UICONTROL File Transfer]** activiteit toevoegen voordat u het bestand ophaalt dat u wilt importeren van een FTP-/SFTP-server. Met S3- of SFTP-verbinding kunt u ook segmentgegevens importeren naar Adobe Campaign met het Adobe Real-Time Customer Data-platform. For more on this, refer to this [documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html).
+      U kunt alle opties gebruiken, maar u moet de sjabloon dienovereenkomstig aanpassen. Als u bijvoorbeeld **[!UICONTROL Specified in the transition]** selecteert, kunt u een **[!UICONTROL File Transfer]**-activiteit toevoegen voordat u het bestand ophaalt dat u wilt importeren vanaf een FTP-/SFTP-server. Met S3- of SFTP-verbinding kunt u ook segmentgegevens importeren naar Adobe Campaign met het Adobe Real-Time Customer Data-platform. Raadpleeg voor meer informatie deze [documentatie](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html).
 
       ![](assets/import_template_example1.png)
 
-1. Configureer de **[!UICONTROL Enrichment]** activiteit. Het doel van deze activiteit in dit verband is de identificatie van de binnenkomende gegevens.
+1. Configureer de **[!UICONTROL Enrichment]**-activiteit. Het doel van deze activiteit in dit verband is de identificatie van de binnenkomende gegevens.
 
-   * Selecteer op het **[!UICONTROL Enrichment]** **[!UICONTROL Add data]** tabblad een koppeling tussen de geïmporteerde gegevens en de ontvangers voor dimensie. In dit voorbeeld, wordt het de douaneveld van identiteitskaart van **CRM** gebruikt om te creëren toetreedt voorwaarde. Gebruik het veld of de combinatie van velden die u nodig hebt, zolang u unieke records kunt identificeren.
-   * Laat op het **[!UICONTROL Reconciliation]** tabblad de **[!UICONTROL Identify the document from the working data]** optie uitgeschakeld.
+   * Selecteer **[!UICONTROL Enrichment]** op het tabblad &lt;a0/> en definieer een koppeling tussen de geïmporteerde gegevens en de ontvangers voor dimensie. **[!UICONTROL Add data]** In dit voorbeeld wordt het aangepaste veld **CRM ID** gebruikt om de verbindingsvoorwaarde te maken. Gebruik het veld of de combinatie van velden die u nodig hebt, zolang u unieke records kunt identificeren.
+   * Laat op het tabblad **[!UICONTROL Reconciliation]** de optie **[!UICONTROL Identify the document from the working data]** uitgeschakeld.
 
    ![](assets/import_template_example2.png)
 
-1. Configureer de **[!UICONTROL Split]** activiteit om onderling afgestemde ontvangers in één overgang en ontvangers op te halen die niet in overeenstemming konden worden gebracht maar die voldoende gegevens in een tweede overgang hebben.
+1. Configureer de **[!UICONTROL Split]**-activiteit om onderling afgestemde ontvangers in één overgang en ontvangers op te halen die niet in overeenstemming konden worden gebracht, maar die voldoende gegevens in een tweede overgang hebben.
 
    De overgang met onderling verzochte ontvangers kan dan worden gebruikt om het gegevensbestand bij te werken. De overgang met onbekende ontvangers kan dan worden gebruikt om nieuwe ontvankelijke ingangen in het gegevensbestand tot stand te brengen als een minimumreeks informatie in het dossier beschikbaar is.
 
    Ontvangers die niet in overeenstemming kunnen worden gebracht en niet genoeg gegevens hebben, worden in een complementaire uitgaande overgang geselecteerd en kunnen in een afzonderlijk bestand worden geëxporteerd of eenvoudig worden genegeerd.
 
-   * Selecteer op het **[!UICONTROL General]** tabblad van de activiteit de optie **[!UICONTROL Use the additional data only]** Filteren en zorg ervoor dat de instelling automatisch **[!UICONTROL Targeting dimension]** is ingesteld op **[!UICONTROL Enrichment]**.
+   * Selecteer **[!UICONTROL Use the additional data only]** als filterinstelling op het tabblad **[!UICONTROL General]** van de activiteit en zorg ervoor dat **[!UICONTROL Targeting dimension]** automatisch wordt ingesteld op **[!UICONTROL Enrichment]**.
 
-      Controleer de **[!UICONTROL Generate complement]** optie om te kunnen zien of om het even welk verslag niet in het gegevensbestand kan worden opgenomen. Indien nodig kunt u de aanvullende gegevens verder verwerken: bestand exporteren, lijst bijwerken, enz.
+      Controleer de optie **[!UICONTROL Generate complement]** om te kunnen zien of kan om het even welk verslag niet in het gegevensbestand worden opgenomen. Indien nodig kunt u de aanvullende gegevens verder verwerken: bestand exporteren, lijst bijwerken, enz.
 
-   * In de eerste ondergroep van het **[!UICONTROL Subsets]** lusje, voeg een het filtreren voorwaarde op de binnenkomende bevolking toe om slechts verslagen te selecteren waarvoor de ontvankelijke primaire sleutel niet gelijk aan 0 is. Op deze manier worden gegevens uit het bestand die in overeenstemming zijn met ontvangers uit de database, geselecteerd in die subset.
+   * In de eerste ondergroep van **[!UICONTROL Subsets]** tabel, voeg een het filtreren voorwaarde op de binnenkomende bevolking toe om slechts verslagen te selecteren waarvoor de ontvankelijke primaire sleutel niet gelijk aan 0 is. Op deze manier worden gegevens uit het bestand die in overeenstemming zijn met ontvangers uit de database, geselecteerd in die subset.
 
       ![](assets/import_template_example3.png)
 
@@ -184,51 +184,51 @@ In dit voorbeeld ziet u hoe u een workflow instelt die opnieuw kan worden gebrui
 
       ![](assets/import_template_example3_2.png)
 
-   * Alle records die niet in de eerste twee subsets zijn geselecteerd, worden in de **[!UICONTROL Complement]** subset geselecteerd.
+   * Alle verslagen die niet in de eerste twee subsets worden geselecteerd worden geselecteerd in **[!UICONTROL Complement]**.
 
-1. Vorm de **[!UICONTROL Update data]** activiteit die na de eerste uitgaande overgang van de eerder gevormde **[!UICONTROL Split]** activiteit wordt gevestigd.
+1. Vorm de **[!UICONTROL Update data]** activiteit die na de eerste uitgaande overgang van de **[!UICONTROL Split]** eerder gevormde activiteit wordt gevestigd.
 
-   * Selecteren **[!UICONTROL Update]** alsof **[!UICONTROL Operation type]** de binnenkomende overgang alleen ontvangers bevat die al in de database aanwezig zijn.
-   * Selecteer in de **[!UICONTROL Record identification]** sectie **[!UICONTROL Using reconciliation keys]** en definieer een sleutel tussen de doeldimensie en de koppeling die in de **[!UICONTROL Enrichment]** sectie wordt gemaakt. In dit voorbeeld wordt het aangepaste veld **CRM-id** gebruikt.
-   * Geef in de **[!UICONTROL Fields to update]** sectie de velden van de afmeting ontvangers op die moeten worden bijgewerkt met de waarde van de corresponderende kolom in het bestand. Als de namen van de bestandskolommen identiek of bijna identiek zijn aan de namen van de afmetingsvelden van de ontvangers, kunt u de toverknop gebruiken om de verschillende velden automatisch aan te passen.
+   * Selecteer **[!UICONTROL Update]** als **[!UICONTROL Operation type]** omdat de binnenkomende overgang alleen ontvangers bevat die al in de database aanwezig zijn.
+   * Selecteer **[!UICONTROL Record identification]** in de sectie &lt;a0/> en definieer een sleutel tussen de doeldimensie en de koppeling die wordt gemaakt in **[!UICONTROL Enrichment]**. **[!UICONTROL Using reconciliation keys]** In dit voorbeeld wordt het aangepaste veld **CRM ID** gebruikt.
+   * Geef in de sectie **[!UICONTROL Fields to update]** de velden van de afmeting ontvangers op die moeten worden bijgewerkt met de waarde van de corresponderende kolom in het bestand. Als de namen van de bestandskolommen identiek of bijna identiek zijn aan de namen van de afmetingsvelden van de ontvangers, kunt u de toverknop gebruiken om de verschillende velden automatisch aan te passen.
 
       ![](assets/import_template_example6.png)
 
 1. Vorm de **[!UICONTROL Deduplication]** activiteit die na de overgang wordt gevestigd die onverzoende ontvangers bevat:
 
-   * Selecteer **[!UICONTROL Edit configuration]** en stel de doeldimensie in op het tijdelijke schema dat is gegenereerd op basis van de **[!UICONTROL Enrichment]** activiteit van de workflow.
+   * Selecteer **[!UICONTROL Edit configuration]** en plaats het richten afmeting aan het tijdelijke schema dat van **[!UICONTROL Enrichment]** activiteit van het werkschema wordt geproduceerd.
 
       ![](assets/import_template_example4.png)
 
    * In dit voorbeeld wordt het e-mailveld gebruikt om unieke profielen te zoeken. U kunt elk veld gebruiken waarvan u zeker weet dat het is ingevuld en deel uitmaakt van een unieke combinatie.
-   * Selecteer in het **[!UICONTROL Deduplication method]** scherm **[!UICONTROL Advanced parameters]** en controleer de **[!UICONTROL Disable automatic filtering of 0 ID records]** optie om ervoor te zorgen dat records met een primaire sleutel gelijk aan 0 (die alle records van deze overgang moeten zijn) niet worden uitgesloten.
+   * Selecteer **[!UICONTROL Deduplication method]** in het scherm &lt;a0/> en controleer de optie **[!UICONTROL Disable automatic filtering of 0 ID records]** om ervoor te zorgen dat records met een primaire sleutel gelijk aan 0 (die alle records van deze overgang moeten zijn) niet worden uitgesloten.**[!UICONTROL Advanced parameters]**
 
    ![](assets/import_template_example7.png)
 
-1. Vorm de **[!UICONTROL Update data]** activiteit die na de eerder gevormde **[!UICONTROL Deduplication]** activiteit wordt gevestigd.
+1. Vorm **[!UICONTROL Update data]** activiteit die na **[!UICONTROL Deduplication]** eerder gevormde activiteit wordt gevestigd.
 
-   * Selecteren **[!UICONTROL Insert]** alsof **[!UICONTROL Operation type]** de inkomende overgang alleen ontvangers bevat die niet in de database aanwezig zijn.
-   * Selecteer in de **[!UICONTROL Record identification]** sectie de **[!UICONTROL Directly using the targeting dimension]** dimensie **[!UICONTROL Recipients]** en kies deze.
-   * Geef in de **[!UICONTROL Fields to update]** sectie de velden van de afmeting ontvangers op die moeten worden bijgewerkt met de waarde van de corresponderende kolom in het bestand. Als de namen van de bestandskolommen identiek of bijna identiek zijn aan de namen van de afmetingsvelden van de ontvangers, kunt u de toverknop gebruiken om de verschillende velden automatisch aan te passen.
+   * Selecteer **[!UICONTROL Insert]** als **[!UICONTROL Operation type]** aangezien de binnenkomende overgang slechts ontvangers bevat die niet in het gegevensbestand aanwezig zijn.
+   * Selecteer **[!UICONTROL Record identification]** in de sectie &lt;a0/> en kies de **[!UICONTROL Recipients]**-dimensie.**[!UICONTROL Directly using the targeting dimension]**
+   * Geef in de sectie **[!UICONTROL Fields to update]** de velden van de afmeting ontvangers op die moeten worden bijgewerkt met de waarde van de corresponderende kolom in het bestand. Als de namen van de bestandskolommen identiek of bijna identiek zijn aan de namen van de afmetingsvelden van de ontvangers, kunt u de toverknop gebruiken om de verschillende velden automatisch aan te passen.
 
       ![](assets/import_template_example8.png)
 
-1. Na de derde overgang van de **[!UICONTROL Split]** activiteit, voeg een **[!UICONTROL Data extraction (file)]** activiteit en een **[!UICONTROL File transfer]** activiteit toe als u spoor van gegevens wilt houden die niet in het gegevensbestand worden opgenomen. Configureer die activiteiten om de kolom die u nodig hebt te exporteren en om het bestand over te brengen naar een FTP- of SFTP-server waar u het bestand kunt ophalen.
+1. Na de derde overgang van de **[!UICONTROL Split]** activiteit, voeg **[!UICONTROL Data extraction (file)]** activiteit en **[!UICONTROL File transfer]** activiteit toe als u spoor van gegevens wilt houden die niet in het gegevensbestand worden opgenomen. Configureer die activiteiten om de kolom die u nodig hebt te exporteren en om het bestand over te brengen naar een FTP- of SFTP-server waar u het bestand kunt ophalen.
 1. Voeg een **[!UICONTROL End]** activiteit toe en sla het werkschemamalplaatje op.
 
-De sjabloon kan nu worden gebruikt en is beschikbaar voor elke nieuwe workflow. Alles is dan nodig om het bestand op te geven dat de gegevens bevat die in de **[!UICONTROL Data loading (file)]** activiteit moeten worden geïmporteerd.
+De sjabloon kan nu worden gebruikt en is beschikbaar voor elke nieuwe workflow. Alles is dan nodig om het bestand op te geven dat de gegevens bevat die in de **[!UICONTROL Data loading (file)]**-activiteit moeten worden geïmporteerd.
 
 ![](assets/import_template_example9.png)
 
-## Een bestand decoderen of decoderen voordat het wordt verwerkt {#unzipping-or-decrypting-a-file-before-processing}
+## Een bestand decoderen of uitpakken voordat het wordt verwerkt{#unzipping-or-decrypting-a-file-before-processing}
 
-### Voorbereidende verwerkingsfasen {#about-pre-processing-stages}
+### Voorverwerkingsstadia {#about-pre-processing-stages}
 
-Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden importeren. Voordat ze kunnen worden gelezen in een activiteit die [gegevens laadt (bestand)](../../workflow/using/data-loading--file-.md) , kunt u een voorbewerking definiëren voor decoderen of decoderen.
+Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden importeren. Voordat ze kunnen worden gelezen in een [activiteit voor het laden van gegevens (bestand)](../../workflow/using/data-loading--file-.md), kunt u een voorbewerking definiëren voor decoderen of decoderen van het bestand.
 
 Om dit te kunnen doen:
 
-1. Met het [Configuratiescherm](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) kunt u een combinatie van openbare en persoonlijke sleutels genereren.
+1. Gebruik [Controlebord](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) om een openbaar/privé zeer belangrijk paar te produceren.
 
    >[!NOTE]
    >
@@ -239,7 +239,7 @@ Om dit te kunnen doen:
 
 Vervolgens kunt u de gewenste voorverwerkingsopdrachten in uw workflows gebruiken:
 
-1. Voeg een **[!UICONTROL File transfer]** activiteit in uw werkschema toe en vorm.
+1. Voeg en vorm een **[!UICONTROL File transfer]** activiteit in uw werkschema toe.
 1. Voeg een **[!UICONTROL Data loading (file)]** activiteit toe en bepaal het dossierformaat.
 1. Schakel de optie **[!UICONTROL Pre-process the file]** in.
 1. Geef de voorverwerkingsopdracht op die u wilt toepassen.
@@ -250,10 +250,10 @@ In het onderstaande gebruiksgeval wordt een voorbeeld gegeven.
 
 **Verwante onderwerpen:**
 
-* [Activiteit](../../workflow/using/data-loading--file-.md)bij laden van gegevens (bestand).
-* [Een bestand](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file)bekijken of versleutelen.
+* [Activiteit](../../workflow/using/data-loading--file-.md) bij laden van gegevens (bestand).
+* [Een bestand](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file) bekijken of versleutelen.
 
-### Hoofdlettergebruik: Gegevens importeren die zijn versleuteld met een toets die is gegenereerd door het Configuratiescherm {#use-case-gpg-decrypt}
+### Hoofdlettergebruik: Gegevens importeren die zijn versleuteld met een toets die is gegenereerd door Configuratiescherm {#use-case-gpg-decrypt}
 
 In dit geval, zullen wij een werkschema bouwen om gegevens in te voeren die in een extern systeem zijn gecodeerd, gebruikend een sleutel die in het Controlebord wordt geproduceerd.
 
@@ -261,7 +261,7 @@ In dit geval, zullen wij een werkschema bouwen om gegevens in te voeren die in e
 
 De volgende stappen worden uitgevoerd:
 
-1. Gebruik het Configuratiescherm om een sleutelpaar (openbaar/privé) te genereren. Gedetailleerde stappen zijn beschikbaar in de documentatie [van het](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)Configuratiescherm.
+1. Gebruik het Configuratiescherm om een sleutelpaar (openbaar/privé) te genereren. Gedetailleerde stappen zijn beschikbaar in [documentatie van het Configuratiescherm](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
 
    * De openbare sleutel zal met het externe systeem worden gedeeld, dat het zal gebruiken om de gegevens te coderen om naar Campagne te verzenden.
    * De persoonlijke sleutel wordt door Campaign Classic gebruikt om de inkomende gecodeerde gegevens te decoderen.
@@ -277,7 +277,7 @@ De volgende stappen worden uitgevoerd:
    * **[!UICONTROL File transfer]** activiteit: Hiermee wordt het bestand van een externe bron naar Campaign Classic overgedragen. In dit voorbeeld willen we het bestand overbrengen van een SFTP-server.
    * **[!UICONTROL Data loading (file)]** activiteit: Laadt de gegevens van het dossier in het gegevensbestand en decrypteert het gebruikend de privé sleutel die in het Controlebord wordt geproduceerd.
 
-1. Open de **[!UICONTROL File transfer]** activiteit en geef vervolgens het externe account op waaruit u het gecodeerde gpg-bestand wilt importeren.
+1. Open de **[!UICONTROL File transfer]** activiteit dan specificeer de externe rekening waarvan u het gecodeerde .gpg dossier wilt invoeren.
 
    ![](assets/gpg_key_transfer.png)
 
@@ -285,7 +285,7 @@ De volgende stappen worden uitgevoerd:
 
 1. Open de **[!UICONTROL Data loading (file)]** activiteit, dan vorm het op uw behoeften. De globale concepten op hoe te om de activiteit te vormen zijn beschikbaar in [deze sectie](../../workflow/using/data-loading--file-.md).
 
-   Voeg een voorbewerkingsstadium aan de activiteit toe, om de inkomende gegevens te decrypteren. U doet dit door de **[!UICONTROL Pre-process the file]** optie te selecteren en deze decoderingsopdracht vervolgens in het **[!UICONTROL Command]** veld te kopiëren en te plakken:
+   Voeg een voorbewerkingsstadium aan de activiteit toe, om de inkomende gegevens te decrypteren. Om dit te doen, selecteer **[!UICONTROL Pre-process the file]** optie, dan kopieer-kleef dit decryptiebevel in het **[!UICONTROL Command]** gebied:
 
    `gpg --batch --passphrase passphrase --decrypt <%=vars.filename%>`
 
@@ -309,4 +309,4 @@ In deze video wordt getoond hoe u een GPG-sleutel kunt gebruiken voor het decode
 
 >[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
 
-Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) extra Campaign Classic hoe kan ik-video&#39;s beschikbaar.
