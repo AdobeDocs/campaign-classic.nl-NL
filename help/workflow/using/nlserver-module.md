@@ -17,7 +17,7 @@ ht-degree: 27%
 
 # Nlserver-module{#nlserver-module}
 
-Een activiteit van de **nlserver module** lanceert een nlserver module met de parameters die in het centrale venster worden gespecificeerd.
+Een **nlserver module** activiteit lanceert een nlserver module met de parameters die in het centrale venster worden gespecificeerd.
 
 ![](assets/nlserver_module_edit.png)
 
