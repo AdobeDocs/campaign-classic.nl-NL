@@ -31,13 +31,13 @@ Aangezien voor het bewerken van de Javascript-code technische vaardigheden verei
 
 Pipeline gebruikt een functie JavaScript om elk bericht te verwerken. Deze functie is door de gebruiker gedefinieerd.
 
-Het wordt gevormd in de **[!UICONTROL NmsPipeline_Config]** optie onder het &quot;JSConnector&quot;attribuut. Deze javascript wordt geroepen telkens als een gebeurtenis wordt ontvangen. Het wordt door het [!DNL pipelined] proces geleid.
+Het wordt gevormd in de **[!UICONTROL NmsPipeline_Config]** optie onder het attribuut &quot;JSConnector&quot;. Deze javascript wordt geroepen telkens als een gebeurtenis wordt ontvangen. Het wordt in werking gesteld door het [!DNL pipelined] proces.
 
 Het Javascript-voorbeeldbestand is cus:triggers.js.
 
-### JavaScript, functie {#function-js}
+### JavaScript-functie {#function-js}
 
-Het [!DNL pipelined] Javascript moet met een specifieke functie beginnen.
+Javascript [!DNL pipelined] moet met een specifieke functie beginnen.
 
 Deze functie wordt één keer aangeroepen voor elke gebeurtenis:
 
@@ -51,14 +51,14 @@ Het moet terugkeren zoals
 <undefined/>
 ```
 
-Nadat u de JavaScript-code hebt bewerkt, moet u de toepassing opnieuw starten. [!DNL pipelined]
+Nadat u het JavaScript-bestand hebt bewerkt, moet u [!DNL pipelined] opnieuw starten.
 
-### Gegevensindeling activeren {#trigger-format}
+### Gegevensindeling {#trigger-format} activeren
 
-De [!DNL trigger] gegevens worden doorgegeven aan de JS-functie in XML-indeling.
+De [!DNL trigger] gegevens worden overgegaan tot de functie JS in het formaat van XML.
 
-* Het **[!UICONTROL @triggerId]** kenmerk bevat de naam van het [!DNL trigger]object.
-* Het element **Verrijdingen** in JSON-indeling bevat de gegevens die door Adobe Analytics zijn gegenereerd en is gekoppeld aan de trigger.
+* Het **[!UICONTROL @triggerId]** attribuut bevat de naam van [!DNL trigger].
+* Het element **enrichments** in JSON-indeling bevat de gegevens die door Adobe Analytics zijn gegenereerd en is aan de trigger gekoppeld.
 * **[!UICONTROL @offset]** is de &quot;wijzer&quot;aan het bericht. Het wijst op de orde van het bericht binnen de rij.
 * **[!UICONTROL @partition]** is een container van berichten binnen de rij. De verschuiving is relatief ten opzichte van een partitie. <br>De wachtrij bevat ongeveer 15 partities.
 
@@ -71,7 +71,7 @@ Voorbeeld:
  </trigger>
 ```
 
-### Verrijking gegevensindeling {#enrichment-format}
+### Verrijking van gegevensindeling {#enrichment-format}
 
 >[!NOTE]
 >
@@ -110,24 +110,24 @@ Voorbeeld:
 
 ### Volgorde voor verwerking van gebeurtenissen{#order-events}
 
-De gebeurtenissen worden één voor één verwerkt, in volgorde van verschuiving. Elke draad van de [!DNL pipelined] processen een verschillende verdeling.
+De gebeurtenissen worden één voor één verwerkt, in volgorde van verschuiving. Elke draad van [!DNL pipelined] verwerkt een verschillende verdeling.
 
 De &quot;verschuiving&quot; van de laatste opgehaalde gebeurtenis wordt opgeslagen in de database. Daarom als het proces wordt tegengehouden, begint het van het laatste bericht opnieuw. Dit gegeven wordt opgeslagen in het ingebouwde schema xtk:pipeOffset.
 
 Deze aanwijzer is specifiek voor elk exemplaar en elke consument. Daarom wanneer vele instanties tot de zelfde pijpleiding met verschillende consumenten toegang hebben, krijgen zij elk alle berichten en in de zelfde orde.
 
-De **consument** parameter van de pijpleidingsoptie identificeert de roepende instantie.
+De **consumer** parameter van de pijpleidingsoptie identificeert de roepende instantie.
 
 Er is momenteel geen manier om verschillende wachtrijen te hebben voor afzonderlijke omgevingen zoals &#39;staging&#39; of &#39;dev&#39;.
 
 ### Logboekregistratie en foutafhandeling {#logging-error-handling}
 
-Logbestanden zoals logInfo() worden naar het [!DNL pipelined] logbestand gestuurd. Fouten zoals logError() worden naar het [!DNL pipelined] logbestand geschreven en zorgen ervoor dat de gebeurtenis in de wachtrij voor opnieuw proberen wordt geplaatst. In dit geval dient u het gepipetteerde log te controleren.
-Foutberichten worden verschillende keren opnieuw geprobeerd in de duur die in de [!DNL pipelined] opties is ingesteld.
+Logbestanden zoals logInfo() worden naar het logbestand [!DNL pipelined] geleid. Fouten zoals logError() worden naar het logbestand [!DNL pipelined] geschreven en zorgen ervoor dat de gebeurtenis in de wachtrij voor opnieuw proberen wordt geplaatst. In dit geval dient u het gepipetteerde log te controleren.
+Foutberichten worden verschillende keren opnieuw geprobeerd in de duur die is ingesteld bij de opties [!DNL pipelined].
 
 Voor foutopsporing en bewaking worden de volledige triggergegevens in XML-indeling naar de triggertabel in het veld &quot;data&quot; geschreven. U kunt ook een logInfo() met de triggergegevens gebruiken voor hetzelfde doel.
 
-### De gegevens parseren {#data-parsing}
+### Gegevens {#data-parsing} parseren
 
 Deze voorbeeldcode voor JavaScript parseert de eVar01 in de verrijkingen.
 
@@ -151,7 +151,7 @@ function processPipelineMessage(xmlTrigger)
 Wees voorzichtig bij het parseren om fouten te voorkomen.
 Aangezien deze code voor alle triggers wordt gebruikt, zijn de meeste gegevens niet vereist. Daarom kan het leeg worden gelaten wanneer niet aanwezig.
 
-### De trigger opslaan {#storing-triggers-js}
+### De trigger {#storing-triggers-js} opslaan
 
 >[!NOTE]
 >
@@ -179,7 +179,7 @@ function processPipelineMessage(xmlTrigger)
  }
 ```
 
-### Restricties {#constraints}
+### Beperkingen {#constraints}
 
 De prestaties voor deze code moeten optimaal zijn, omdat deze op hoge frequenties wordt uitgevoerd en mogelijke negatieve effecten voor andere marketingactiviteiten kan hebben. Vooral als het verwerken van meer dan één miljoen triggergebeurtenissen per uur op de marketingserver of als het niet correct wordt ingesteld.
 
@@ -193,7 +193,7 @@ Om snellere verwerking toe te laten, worden verscheidene draden van dit manuscri
 >
 >Het is een specifiek voorbeeld van verschillende mogelijke implementaties.
 
-### Gebeurtenisschema van Pipeline {#pipeline-event-schema}
+### Tijdlijngebeurtenisschema {#pipeline-event-schema}
 
 Gebeurtenissen worden opgeslagen in een databasetabel. Het wordt gebruikt door marketing campagnes om klanten te richten en e-mails te verrijken gebruikend trekkers.
 Hoewel elke trigger een afzonderlijke gegevensstructuur kan hebben, kunnen alle triggers in één tabel worden gehouden.
@@ -212,19 +212,19 @@ Hier volgt een voorbeeldschemacode voor deze tabel:
 | lastModified | Datumtijd | Laatst gewijzigd | De laatste keer dat de gebeurtenis werd gewijzigd in Adobe. |
 | timeGMT | Datumtijd | Tijdstempel | De tijd waarop de gebeurtenis in Analytics is gegenereerd. |
 
-### Gebeurtenissen weergeven {#display-events}
+### Gebeurtenissen {#display-events} weergeven
 
 De gebeurtenissen kunnen worden weergegeven met een eenvoudig formulier dat is gebaseerd op het gebeurtenissenschema.
 
 >[!NOTE]
 >
->Het knooppunt voor gebeurtenissen via de pijpleiding is niet ingebouwd en moet worden toegevoegd. Het gerelateerde formulier moet ook in Campagne worden gemaakt. Deze bewerkingen zijn alleen bestemd voor deskundige gebruikers. Raadpleeg de volgende secties voor meer informatie: [Navigatiehiërarchie](../../configuration/using/about-navigation-hierarchy.md) en formulieren [bewerken](../../configuration/using/editing-forms.md).
+>Het knooppunt voor gebeurtenissen via de pijpleiding is niet ingebouwd en moet worden toegevoegd. Het gerelateerde formulier moet ook in Campagne worden gemaakt. Deze bewerkingen zijn alleen bestemd voor deskundige gebruikers. Raadpleeg de volgende secties voor meer informatie: [Navigatiehiërarchie](../../configuration/using/about-navigation-hierarchy.md) en [Formulieren bewerken](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 
-## Gebeurtenissen verwerken {#processing-the-events}
+## Gebeurtenissen {#processing-the-events} verwerken
 
-### Verzoeningsworkflow {#reconciliation-workflow}
+### Afstemmingsworkflow {#reconciliation-workflow}
 
 Verzoening is het proces waarbij de klant van Adobe Analytics in de Adobe Campaign-database wordt opgenomen. De criteria voor overeenkomsten kunnen bijvoorbeeld de shopper_id zijn.
 
@@ -237,7 +237,7 @@ Het is mogelijk om de verzoeningsvraag voor elke trekker in JavaScript in werkin
 
 Het kan moeilijk zijn om uit te voeren als geen index op shopper_id wordt geplaatst. Als de criteria op een afzonderlijke gegevensbestandserver dan de marketing server zijn, gebruikt het een gegevensbestandverbinding, die slechte prestaties heeft.
 
-### Werkstroom leegmaken {#purge-workflow}
+### Workflow {#purge-workflow} wissen
 
 Triggers worden binnen een uur verwerkt. Het volume kan ongeveer 1 miljoen triggers per uur zijn. Er wordt uitgelegd waarom er een zuiveringsworkflow moet worden opgezet. De purge wordt eenmaal per dag uitgevoerd en verwijdert alle triggers die ouder zijn dan drie dagen.
 
