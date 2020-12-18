@@ -17,7 +17,7 @@ ht-degree: 13%
 
 # Formulieren bewerken{#editing-forms}
 
-Het scherm voor het maken en configureren van invoerformulieren is toegankelijk via de map **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** op de Adobe Campaign-clientconsole:
+Het aanmaak- en configuratiescherm van het invoerformulier is toegankelijk via de map **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** van de Adobe Campaign-clientconsole:
 
 ![](assets/d_ncs_integration_form_arbo.png)
 
