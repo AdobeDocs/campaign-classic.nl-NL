@@ -25,7 +25,7 @@ De LIJN kan ook met de transactionele berichtmodule worden gecombineerd om beric
 
 ![](assets/line_message.png)
 
-De onderstaande secties bevatten specifieke informatie over het lijnkanaal. Raadpleeg[deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md)voor algemene informatie over het maken van een levering.
+De onderstaande secties bevatten specifieke informatie over het lijnkanaal. Voor globale informatie over hoe te om een levering tot stand te brengen, verwijs naar [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 De stappen voor het gebruiken van het kanaal van de LIJN zijn:
 
@@ -35,7 +35,7 @@ De stappen voor het gebruiken van het kanaal van de LIJN zijn:
 1. De berichten verzenden
 1. Controle van de levering (volgen, quarantining, rapporten, enz.).
 
-## Regelkanaal instellen {#setting-up-line-channel}
+## Regelkanaal {#setting-up-line-channel} instellen
 
 ### Een LINE-account en een externe account maken {#creating-a-line-account-and-an-external-account-}
 
@@ -45,52 +45,52 @@ De stappen voor het gebruiken van het kanaal van de LIJN zijn:
 
 U moet eerst een LINE-account maken, zodat u deze aan Adobe Campaign kunt koppelen. Vervolgens kunt u LIJNberichten verzenden naar de gebruikers die uw LIJNaccount in hun mobiele toepassing hebben toegevoegd. Externe accounts en LINE-account kunnen alleen worden beheerd door de functionele beheerder van het platform.
 
-Zie [https://developers.line.me/](https://developers.line.me/)voor informatie over het maken en configureren van een LINE-account.
+Zie [https://developers.line.me/](https://developers.line.me/) om een LINE-account te maken en te configureren.
 
-Om de dienst van de LIJN tot stand te brengen en te vormen, zie het [Leiden abonnementen](../../delivery/using/managing-subscriptions.md).
+Zie [Abonnementen beheren](../../delivery/using/managing-subscriptions.md) voor informatie over het maken en configureren van een LINE-service.
 
 ![](assets/line_service.png)
 
 Ten slotte een externe account maken op Adobe Campaign:
 
-1. Klik in de boomstructuur **Beheer** > **Platform** op het tabblad **Externe accounts** .
-1. Klik vervolgens op het pictogram **Nieuw** .
+1. Klik in **Beheer** > **Platform** boomstructuur op het tabblad **Externe accounts**.
+1. Klik vervolgens op het pictogram **Nieuw**.
 
    ![](assets/line_config.png)
 
 1. Vul de velden **Label** en **Interne naam** in.
-1. Op het **[!UICONTROL Type]** gebied, selecteert het uitgezochte Verpletteren en op het gebied van het **Kanaal** , LIJN.
-1. Klik **[!UICONTROL Save]** om uw externe LINE-account te maken.
-1. Vervolgens wordt onder het pictogram **Algemeen** een veld **Lijneigenschappen** weergegeven en worden de volgende velden ingevuld:
+1. Selecteer in het veld **[!UICONTROL Type]** de optie Verpletteren en selecteer REGEL in het veld **Kanaal**.
+1. Klik op **[!UICONTROL Save]** om uw externe LINE-account te maken.
+1. Een **LINE** verpersoonlijkingsgebied verschijnt dan onder het **Algemene** pictogram, vult de volgende gebieden:
 
    ![](assets/line_config_2.png)
 
-   * **Kanaalalias**: wordt via uw LINE-account opgegeven op het tabblad **[!UICONTROL Channels]** > **[!UICONTROL Technical configuration]** .
-   * **Kanaal-id**: wordt via uw LINE-account weergegeven op het tabblad **Kanalen** > **Basisinformatie** .
-   * **Kanaalgeheime sleutel**: wordt via uw LINE-account weergegeven op het tabblad **Kanalen** > **Basisinformatie** .
-   * **Toegangstoken**: wordt verstrekt via uw rekening van de LIJN in het ontwikkelaarsportaal of door de **[!UICONTROL Get access token]** knoop te klikken.
+   * **Kanaalalias**: wordt via uw LINE-account op het  **[!UICONTROL Channels]** tabblad  **[!UICONTROL Technical configuration]** > aangeboden.
+   * **Kanaal-id**: wordt via uw LINE-account opgegeven op het tabblad  **Kanalen**  >  **Basisinformatie** .
+   * **Kanaalgeheime sleutel**: wordt via uw LINE-account opgegeven op het tabblad  **Kanalen**  >  **Basisinformatie** .
+   * **Toegangstoken**: wordt verstrekt via uw rekening van de LIJN in het ontwikkelaarsportaal of door de  **[!UICONTROL Get access token]** knoop te klikken.
    * **Vervaldatum** toegangstoken: staat u toe om de vervaldatum van het teken van de Toegang te specificeren.
    * **Service** voor lijnabonnement: staat u toe om de diensten te specificeren waarop de gebruikers zullen worden ingetekend.
 
 >[!NOTE]
 >
->U moet controleren of de **[!UICONTROL LINE access token update (updateLineAccessToken)]** en **[!UICONTROL Delete blocked LINE users (deleteBlockedLineUsers)]** workflows zijn gestart. Klik in de verkenner **[!UICONTROL Administration > Production > Technical workflows > LINE workflows]** om de status van de workflows te controleren.
+>U moet verifiëren dat de **[!UICONTROL LINE access token update (updateLineAccessToken)]** en **[!UICONTROL Delete blocked LINE users (deleteBlockedLineUsers)]** werkschema&#39;s zijn begonnen. Klik in de verkenner op **[!UICONTROL Administration > Production > Technical workflows > LINE workflows]** om de status van de workflows te controleren.
 
 ## De levering maken {#creating-the-delivery}
 
-Voer de volgende stappen uit als u een **LIJNlevering** wilt maken:
+Als u een **LINE** levering wilt maken, moet u de volgende stappen volgen:
 
 >[!NOTE]
 >
->Algemene concepten voor het maken van leveringen worden in [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md)beschreven.
+>Algemene concepten voor het maken van leveringen worden weergegeven in [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-1. Selecteer op het **[!UICONTROL Campaigns]** tabblad de optie **[!UICONTROL Deliveries]** en klik op de **[!UICONTROL Create]** knop.
-1. Selecteer de **[!UICONTROL LINE V2 delivery]** leveringssjabloon in het venster dat wordt weergegeven.
+1. Selecteer **[!UICONTROL Campaigns]** op het tabblad &lt;a0/> en klik op de knop **[!UICONTROL Create]**.**[!UICONTROL Deliveries]**
+1. Selecteer in het venster dat wordt weergegeven de leveringssjabloon **[!UICONTROL LINE V2 delivery]**.
 
    ![](assets/line_message_01.png)
 
 1. Identificeer uw levering met een etiket, code, en beschrijving. Raadpleeg [deze sectie](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery) voor meer informatie.
-1. Klik **[!UICONTROL Continue]** om de levering te maken.
+1. Klik **[!UICONTROL Continue]** om uw levering tot stand te brengen.
 
 ## De content definiëren {#defining-the-content}
 
@@ -101,29 +101,29 @@ U kunt kiezen uit twee berichttypen:
 * Tekstbericht
 * Afbeelding en koppeling
 
-### De levering van een tekstbericht configureren {#configuring-a-text-message-delivery}
+### Het vormen van een bericht van de Tekst levering {#configuring-a-text-message-delivery}
 
-Een **tekstbericht** LINE levering is een bericht dat in tekstvorm naar ontvangers wordt verzonden.
+Een **Tekstbericht** Regellevering is een bericht dat naar ontvangers in tekstvorm wordt verzonden.
 
 ![](assets/line_message_02.png)
 
-De configuratie voor dit type van bericht is gelijkaardig aan de configuratie van de **tekst** in e-mail. For more information, refer to this [page](../../delivery/using/defining-the-email-content.md#message-content).
+De configuratie voor dit type van bericht is gelijkaardig aan de configuratie van **text** in e-mail. Raadpleeg deze [pagina](../../delivery/using/defining-the-email-content.md#message-content) voor meer informatie.
 
-### Afbeelding en koppelingslevering configureren {#configuring-an-image-and-link-delivery}
+### Een afbeelding configureren en levering van koppelingen {#configuring-an-image-and-link-delivery} configureren
 
-Een **afbeelding en koppelingslijn** is een bericht dat naar ontvangers wordt verzonden in de vorm van een afbeelding die een of meer URL&#39;s kan bevatten.
+Een **Afbeelding en koppeling** Regellevering is een bericht dat naar ontvangers wordt verzonden in de vorm van een afbeelding die een of meerdere URL&#39;s kan bevatten.
 
 U kunt het volgende gebruiken:
 
-* een **persoonlijke afbeelding**,
+* a **Gepersonaliseerde afbeelding**,
 
    >[!NOTE]
    >
-   >U kunt de variabele **%SIZE%** gebruiken: met deze variabele kunt u de beeldweergave optimaliseren op basis van de schermgrootte van het mobiele apparaat van de ontvanger.
+   >U kunt de **%SIZE%** variabele gebruiken: met deze variabele kunt u de beeldweergave optimaliseren op basis van de schermgrootte van het mobiele apparaat van de ontvanger.
 
    ![](assets/line_message_04.png)
 
-* een **afbeeldings-URL**,
+* een **URL van afbeelding**,
 
    ![](assets/line_message_03.png)
 
@@ -131,11 +131,11 @@ U kunt het volgende gebruiken:
 
    Afbeeldingen kunnen worden gedefinieerd op basis van de schermgrootte:
 
-   * 1040px
-   * 700px
-   * 460px
-   * 300px
-   * 240px
+   * 1040 px
+   * 700 px
+   * 460 px
+   * 300 px
+   * 240 px
 
    >[!NOTE]
    >
@@ -147,7 +147,7 @@ U kunt het volgende gebruiken:
 
    ![](assets/line_message_05.png)
 
-   In de **[!UICONTROL Links]** sectie kunt u kiezen tussen verschillende lay-outs waarmee u de afbeelding opdeelt in meerdere gebieden waarop u kunt klikken. Vervolgens kunt u aan elk onderdeel een specifieke koppeling toewijzen.
+   In de sectie **[!UICONTROL Links]** kunt u kiezen tussen verschillende lay-outs die de afbeelding verdelen in meerdere klikbare gebieden. Vervolgens kunt u aan elk onderdeel een specifieke koppeling toewijzen.
 
 >[!NOTE]
 >
@@ -159,35 +159,35 @@ U kunt het volgende gebruiken:
 
 ## De doelpopulatie selecteren {#selecting-the-target-population}
 
-Het selecteren van ontvangers van een LINE levering is gelijkaardig aan het bepalen van e-mailleveringsontvangers. Zie [Doelpopulaties](../../delivery/using/steps-defining-the-target-population.md)identificeren voor meer informatie.
+Het selecteren van ontvangers van een LINE levering is gelijkaardig aan het bepalen van e-mailleveringsontvangers. Raadpleeg [Doelpopulaties identificeren](../../delivery/using/steps-defining-the-target-population.md) voor meer informatie.
 
-Er wordt gerichte aandacht besteed aan **bezoekers**.
+Het richten wordt uitgevoerd op **bezoekers**.
 
 ## Berichten verzenden {#sending-messages}
 
 Wanneer uw levering correct wordt gecreeerd en gevormd, kunt u het naar het vroeger bepaalde doel verzenden.
 
-Het verzenden van LIJNleveringen lijkt op het verzenden van een e-maillevering. Voor meer informatie bij het verzenden van een levering, verwijs naar het [Verzenden van berichten](../../delivery/using/sending-messages.md).
+Het verzenden van LIJNleveringen lijkt op het verzenden van een e-maillevering. Voor meer informatie bij het verzenden van een levering, verwijs naar [Verzendende berichten](../../delivery/using/sending-messages.md).
 
-## Toegang tot rapporten {#accessing-reports}
+## Rapporten openen {#accessing-reports}
 
-U kunt rapporten over de dienst van de LIJN bekijken door **[!UICONTROL Profiles and Targets > Services and Subscriptions > LINE]** in ontdekkingsreiziger te klikken. Klik vervolgens op het **[!UICONTROL Reports]** pictogram in de LINE-service.
+U kunt rapporten over de dienst van de LIJN bekijken door **[!UICONTROL Profiles and Targets > Services and Subscriptions > LINE]** in de ontdekkingsreiziger te klikken. Klik vervolgens op het pictogram **[!UICONTROL Reports]** in de LINE-service.
 
 ![](assets/line_reports.png)
 
-Als u rapporten over lijnleveringen wilt weergeven, klikt u op **[!UICONTROL Campaign Management > Deliveries]** en selecteert u de gewenste levering. De volgende rapporten wijzen op het klikthrough tarief. De lijn houdt geen rekening met het open tarief.
+Als u rapporten wilt weergeven over lijnleveringen, klikt u op **[!UICONTROL Campaign Management > Deliveries]** en selecteert u de gewenste levering. De volgende rapporten wijzen op het klikthrough tarief. De lijn houdt geen rekening met het open tarief.
 
 ![](assets/line_reports_01.png)
 
-## Voorbeeld: een gepersonaliseerd lijnbericht maken en verzenden {#example--create-and-send-a-personalized-line-message}
+## Voorbeeld: een gepersonaliseerd lijnbericht {#example--create-and-send-a-personalized-line-message} maken en verzenden
 
 In dit voorbeeld, gaan wij een tekstbericht en een beeld tot stand brengen en vormen die gegevens bevatten die volgens de ontvanger zullen worden gepersonaliseerd.
 
-1. Maak uw lijnlevering door op de **[!UICONTROL Create]** knop op het **[!UICONTROL Campaign]** tabblad te klikken.
+1. Creeer uw levering van de LIJN door de **[!UICONTROL Create]** knoop van **[!UICONTROL Campaign]** tabel te klikken.
 
    ![](assets/line_usecase.png)
 
-1. Selecteer de **[!UICONTROL LINE V2 delivery]** leveringstemplate en geef een naam op voor uw levering.
+1. Selecteer de leveringssjabloon **[!UICONTROL LINE V2 delivery]** en geef uw levering een naam.
 
    ![](assets/line_usecase_01.png)
 
@@ -195,28 +195,28 @@ In dit voorbeeld, gaan wij een tekstbericht en een beeld tot stand brengen en vo
 
    ![](assets/line_usecase_02.png)
 
-1. Klik **[!UICONTROL Add]** om uw bericht te creëren en de **[!UICONTROL Message type]** te selecteren.
+1. Klik **[!UICONTROL Add]** om uw bericht tot stand te brengen en **[!UICONTROL Message type]** te selecteren.
 
    Hier willen we eerst een tekstbericht maken.
 
    ![](assets/line_usecase_03.png)
 
-1. Plaats de cursor op de plaats waar u de gepersonaliseerde tekst wilt invoegen en klik op het vervolgkeuzepictogram en selecteer vervolgens **[!UICONTROL Visitor > First name]**.
+1. Plaats de cursor op de plaats waar u de gepersonaliseerde tekst wilt invoegen en klik op het vervolgkeuzepictogram en selecteer **[!UICONTROL Visitor > First name]**.
 
    ![](assets/line_usecase_05.png)
 
-1. Volg dezelfde procedure om een afbeelding toe te voegen en selecteer deze **[!UICONTROL Image and links]** in de **[!UICONTROL Message type]** vervolgkeuzelijst.
+1. Volg dezelfde procedure om een afbeelding toe te voegen door **[!UICONTROL Image and links]** te selecteren in de vervolgkeuzelijst **[!UICONTROL Message type]**.
 
    Voeg de URL van de afbeelding toe.
 
    ![](assets/line_usecase_07.png)
 
-1. Selecteer in de **[!UICONTROL Links]** sectie de lay-out waarmee de afbeelding wordt verdeeld in meerdere klikbare gebieden.
+1. Selecteer in de sectie **[!UICONTROL Links]** de lay-out die de afbeelding in meerdere klikbare gebieden zal verdelen.
 1. Wijs een URL toe aan elk gebied van uw afbeelding.
 
    ![](assets/line_usecase_08.png)
 
-1. Sla de levering op en klik **[!UICONTROL Send]** om de levering te analyseren en naar het doel te verzenden.
+1. Sla de levering op en klik op **[!UICONTROL Send]** om de levering te analyseren en naar het doel te verzenden.
 
    De levering wordt verzonden naar het doel.
 
