@@ -19,7 +19,7 @@ ht-degree: 5%
 
 ## Eenvoudige methode {#simple-method}
 
-Deze methode bestaat uit het verzenden van een HTTP-aanroep naar de omleidingsserver door een **`<img>`** HTML-tag in te voegen in de HTML-broncode van de webpagina die u wilt bijhouden.
+Deze methode bestaat uit het verzenden van een HTTP-aanroep naar de omleidingsserver door het invoegen van een HTML-tag **`<img>`** in de HTML-broncode van de webpagina die u wilt bijhouden.
 
 >[!IMPORTANT]
 >
@@ -128,7 +128,7 @@ Wanneer uw webpagina&#39;s dynamisch worden gegenereerd, kunt u de tag web track
 
 Als u wenst om de informatie te controleren die naar de omleidingsserver wordt verzonden, is de betrouwbaarste manier de vraag van HTTP synchroon uit te voeren zelf gebruikend een pagina die taal produceert.
 
-De URL die u bouwt, moet de syntaxisregels naleven die in de volgende markering van het [Web worden bepaald: definitie](../../configuration/using/web-tracking-tag--definition.md).
+De URL die u bouwt, moet de syntaxisregels volgen die in [Web volgende markering worden bepaald: definitie](../../configuration/using/web-tracking-tag--definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 
