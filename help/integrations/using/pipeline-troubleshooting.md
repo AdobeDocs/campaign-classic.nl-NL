@@ -17,14 +17,14 @@ ht-degree: 1%
 
 # Problemen met pipelines oplossen {#pipeline-troubleshooting}
 
-**Pipelined ontbreekt met fout &quot;Geen taak beantwoordt aan het masker pipelined@&lt; instantie >&quot;**
+**Pipelined ontbreekt met fout &quot;Geen taak beantwoordt aan het masker pipelined@&lt;>&quot;**
 
 De pijpleiding wordt niet ondersteund door uw versie van Adobe Campaign Classic.
 
-1. Controleer of het [!DNL pipelined] element aanwezig is in het configuratiebestand. Als dat niet het geval is, betekent dit dat dit niet wordt ondersteund.
+1. Controleer of het element [!DNL pipelined] aanwezig is in het configuratiebestand. Als dat niet het geval is, betekent dit dat dit niet wordt ondersteund.
 1. Upgrade naar versie 6.11 build 8705 of hoger.
 
-**Pipelined failed with &#39;&#39; aurait dû commencer par `[` ou `{` (iRc=16384)&quot;**
+**Pipelined failed with &#39;&#39; aurait dû commencer par  `[` ou  `{` (iRc=16384)&quot;**
 
 De optie **NmsPipeline_Config** is niet ingesteld. Het is eigenlijk een JSON-parseringsfout.
 Stel de JSON-configuratie in de optie **NmsPipeline_Config** in. Zie &quot;verpletterende optie&quot;in deze pagina.
@@ -57,13 +57,13 @@ De persoonlijke sleutel heeft een ongeldige indeling.
 
 **Er worden geen triggers opgehaald**
 
-Wanneer het [!DNL pipelined] proces wordt uitgevoerd en er geen triggers worden opgehaald:
+Wanneer het [!DNL pipelined] proces loopt en geen trekkers worden teruggewonnen:
 
 1. Zorg ervoor dat de trigger actief is in Analytics en gebeurtenissen genereert.
-1. Zorg ervoor dat het [!DNL pipelined] proces wordt uitgevoerd.
+1. Zorg ervoor dat het [!DNL pipelined] proces loopt.
 1. Zoek naar fouten in het [!DNL pipelined] logboek.
-1. Zoek naar fouten in de [!DNL pipelined] statuspagina. trigger-discarted, trigger-failure moet nul zijn.
-1. Controleer of de triggernaam in de **[!UICONTROL NmsPipeline_Config]** optie is geconfigureerd. Als er twijfel bestaat, gebruikt u de jokertekenoptie.
+1. Zoek naar fouten op de [!DNL pipelined] statuspagina. trigger-discarted, trigger-failure moet nul zijn.
+1. Controleer of de triggernaam is geconfigureerd in de optie **[!UICONTROL NmsPipeline_Config]**. Als er twijfel bestaat, gebruikt u de jokertekenoptie.
 1. Controleer of Analytics een actieve trigger heeft en gebeurtenissen genereert. Er kan een vertraging van een paar uur optreden nadat de configuratie is gemaakt in Analytics voordat deze actief is.
 
 **Gebeurtenissen zijn niet gekoppeld aan een klant**
@@ -81,7 +81,7 @@ Wanneer de tijdstempel van Analytics veel ouder is dan de aanmaakdatum van de ge
 
 Over het algemeen kan het 15 tot 90 minuten duren voordat een marketingcampagne wordt gestart. Dit varieert afhankelijk van de implementatie van gegevensinzameling, lading op de pijpleiding, douaneconfiguratie van de bepaalde trekker, en het werkschema in Adobe Campaign.
 
-1. Controleer of het [!DNL pipelined] proces actief is geweest.
+1. Controleer of het proces [!DNL pipelined] is uitgevoerd.
 1. Zoek naar fouten in pipelined.log die nieuwe pogingen kunnen veroorzaken. Corrigeer de fouten, indien van toepassing.
 1. Controleer de [!DNL pipelined] statuspagina voor de rijgrootte. Als de wachtrij groot is, verbetert u de prestaties van de JS.
 1. Aangezien een vertraging met volume lijkt te stijgen, vorm de trekkers op Analytics gebruikend minder berichten.
