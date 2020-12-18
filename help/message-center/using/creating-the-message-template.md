@@ -17,8 +17,8 @@ ht-degree: 9%
 
 # De berichtsjabloon maken{#creating-the-message-template}
 
-1. Ga naar de **[!UICONTROL Message Center >Transactional message templates]** map in de Adobe Campaign-structuur.
-1. Klik in de lijst met transactiemalplaatjes met de rechtermuisknop en selecteer **[!UICONTROL New]** in het vervolgkeuzemenu of klik op de **[!UICONTROL New]** knop boven de lijst met transactionele berichtsjablonen.
+1. Ga naar de **[!UICONTROL Message Center >Transactional message templates]** omslag in de boom van Adobe Campaign.
+1. Klik in de lijst met transactiemalplaatjes met de rechtermuisknop en selecteer **[!UICONTROL New]** in het vervolgkeuzemenu of klik op de knop **[!UICONTROL New]** boven de lijst met transactionele berichtsjablonen.
 
    ![](assets/messagecenter_create_model_001.png)
 
@@ -31,13 +31,13 @@ ht-degree: 9%
 
    ![](assets/messagecenter_create_model_003.png)
 
-   Gebeurtenistypen moeten vooraf in de console worden gemaakt. Zie Gebeurtenistypen [maken voor meer informatie hierover](../../message-center/using/creating-event-types.md).
+   Gebeurtenistypen moeten vooraf in de console worden gemaakt. Raadpleeg [Gebeurtenistypen maken](../../message-center/using/creating-event-types.md) voor meer informatie.
 
    >[!NOTE]
    >
    >Een gebeurtenistype mag nooit aan meerdere sjablonen worden gekoppeld.
 
-1. Ga een aard en een beschrijving in, dan klik **[!UICONTROL Continue]** om het berichtlichaam tot stand te brengen (verwijs naar het [Creëren van berichtinhoud](../../message-center/using/creating-message-content.md)).
+1. Voer een aard en een beschrijving in en klik vervolgens op **[!UICONTROL Continue]** om de berichttekst te maken (zie [Berichtinhoud maken](../../message-center/using/creating-message-content.md)).
 
    ![](assets/messagecenter_create_model_004.png)
 
