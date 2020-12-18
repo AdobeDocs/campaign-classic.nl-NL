@@ -23,7 +23,7 @@ De weergegeven weergave is een lijst die is gekoppeld aan een schema en een invo
 
 ![](assets/d_ncs_integration_navigation.png)
 
-Als u een nieuwe map aan de structuur wilt toevoegen, klikt u met de rechtermuisknop op de map in de vertakking waar u een map wilt invoegen en selecteert u **[!UICONTROL Add new folder]** . Selecteer in het snelmenu het type bestand dat u wilt maken.
+Als u een nieuwe map aan de structuur wilt toevoegen, klikt u met de rechtermuisknop op de map in de vertakking waar u een map wilt invoegen en selecteert u **[!UICONTROL Add new folder]**. Selecteer in het snelmenu het type bestand dat u wilt maken.
 
 ![](assets/d_ncs_integration_navigation_create.png)
 
