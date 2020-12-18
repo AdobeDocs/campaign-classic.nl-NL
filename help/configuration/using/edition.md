@@ -29,7 +29,7 @@ Het bewerkingsveld bevat de inhoud van het XML-document:
 
 >[!NOTE]
 >
->Met het besturingselement Naam bewerken kunt u de documentsleutel invoeren die bestaat uit de naam en naamruimte. De kenmerken &quot;name&quot; en &quot;namespace&quot; van het **`<navtree>`** element worden automatisch bijgewerkt in het XML-bewerkingsveld van het schema.
+>Met het besturingselement Naam bewerken kunt u de documentsleutel invoeren die bestaat uit de naam en naamruimte. De kenmerken &quot;name&quot; en &quot;namespace&quot; van het element **`<navtree>`** worden automatisch bijgewerkt in het XML-bewerkingsveld van het schema.
 
 In de voorvertoning wordt automatisch het samengevoegde document met de volledige configuratie gegenereerd:
 
