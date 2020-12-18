@@ -32,7 +32,7 @@ Hiervoor voert u de volgende stappen uit:
 
 1. Maak een nieuw gegevensschema waarin de velden van de aangepaste tabel die u wilt gebruiken, zijn geïntegreerd.
 
-   Zie [Schema reference (xtk:srcSchema)](../../configuration/using/about-schema-reference.md)voor meer informatie.
+   Zie [Schemaverwijzing (xtk:srcSchema)](../../configuration/using/about-schema-reference.md) voor meer informatie.
 
    In ons voorbeeld, zullen wij een klantenschema, een zeer eenvoudige lijst tot stand brengen die de volgende gebieden bevat: ID, voornaam, achternaam, e-mailadres, mobiele-telefoonnummer. Het doel is om e-mail- of SMS-berichten te kunnen verzenden naar de personen die in deze tabel zijn opgeslagen.
 
@@ -53,7 +53,7 @@ Hiervoor voert u de volgende stappen uit:
    </srcSchema>
    ```
 
-1. Declareer uw schema als externe mening gebruikend het = &quot;ware&quot;attribuut. Raadpleeg [het weergavekenmerk](../../configuration/using/schema-characteristics.md#the-view-attribute).
+1. Declareer uw schema als externe mening gebruikend het = &quot;ware&quot;attribuut. Zie [Het weergavekenmerk](../../configuration/using/schema-characteristics.md#the-view-attribute).
 
    ```
     <srcSchema desc="External recipient table" namespace="cus" view="true"....>
@@ -82,21 +82,21 @@ Hiervoor voert u de volgende stappen uit:
       </element>
    ```
 
-1. Klik op het **[!UICONTROL Administration > Campaign management > Target mappings]** knooppunt.
+1. Klik op het knooppunt **[!UICONTROL Administration > Campaign management > Target mappings]**.
 1. Klik op de knop **Nieuw** om de wizard Doeltoewijzing maken te openen.
-1. Voer het veld **Label** in en selecteer het schema dat u zojuist hebt gemaakt in het veld **Doeldimensie** .
+1. Voer het veld **Label** in en selecteer het schema dat u zojuist hebt gemaakt in het veld **Doeldimensie**.
 
    ![](assets/mapping_diffusion_wizard_1.png)
 
-1. Selecteer in het venster Adresformulieren **** bewerken de velden van het schema die overeenkomen met de verschillende bezorgadressen. Hier kunnen we de velden **@email** en **@mobile** in kaart brengen.
+1. Selecteer in het venster **Adresformulieren bewerken** de velden van het schema die overeenkomen met de verschillende leveringsadressen. Hier, kunnen wij **@email** en **@mobile** gebieden in kaart brengen.
 
    ![](assets/mapping_diffusion_wizard_2.png)
 
-1. In het volgende venster van de **Opslag** , ga het **Achtervoegsel van het gebied van uitbreidingsschema** in om de nieuwe schema&#39;s van de uit-van-de-doosschema&#39;s te onderscheiden die door Adobe Campaign worden verstrekt.
+1. In het volgende **Storage** venster, ga **Achtervoegsel van de uitbreidingsschema&#39;s** gebied in om de nieuwe schema&#39;s van de uit-van-de-doosschema&#39;s te onderscheiden die door Adobe Campaign worden verstrekt.
 
    Klik **[!UICONTROL Define new additional fields]** om de dimensie te selecteren u in uw levering wilt richten.
 
-   Standaard wordt uitsluitingsbeheer opgeslagen in dezelfde tabellen als berichten. Schakel het selectievakje **Een opslagschema genereren voor bijhouden** in als u opslag wilt configureren voor het bijhouden van de koppeling naar de doeltoewijzing.
+   Standaard wordt uitsluitingsbeheer opgeslagen in dezelfde tabellen als berichten. Controleer **Genereer een opslagschema voor het volgen** doos als u opslag voor het volgen verbonden aan uw doelafbeelding wilt vormen.
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
@@ -114,7 +114,7 @@ Hiervoor voert u de volgende stappen uit:
 
    ![](assets/mapping_schema_list.png)
 
-## Doeltoewijzing gebruiken {#using-target-mapping}
+## Doeltoewijzing {#using-target-mapping} gebruiken
 
 Er zijn twee manieren om het nieuwe schema als doel van een levering te gebruiken:
 
