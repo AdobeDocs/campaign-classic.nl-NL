@@ -21,12 +21,12 @@ Voer de onderstaande stappen uit om een nieuwe e-maillevering te maken:
 
 >[!NOTE]
 >
->Algemene concepten voor het maken van leveringen worden in [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md)beschreven.
+>Algemene concepten voor het maken van leveringen worden weergegeven in [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 1. Maak een nieuwe levering, bijvoorbeeld via het dashboard Levering.
-1. Selecteer de leveringssjabloon **E-maillevering (e-mail)** of een sjabloon voor e-maillevering die u hebt gemaakt. For more on delivery templates, refer to [this section](../../delivery/using/about-templates.md).
+1. Selecteer de leveringssjabloon **E-maillevering (e-mail)** of een sjabloon voor e-maillevering die u hebt gemaakt. Raadpleeg [deze sectie](../../delivery/using/about-templates.md) voor meer informatie over leveringssjablonen.
 
    ![](assets/s_ncs_user_wizard_email01_1.png)
 
 1. Identificeer uw levering met een etiket, code, en beschrijving. Raadpleeg [deze sectie](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery) voor meer informatie.
-1. Klik op **Doorgaan** om deze informatie te bevestigen en het venster voor berichtconfiguratie weer te geven.
+1. Klik **Doorgaan** om deze informatie te bevestigen en het venster van de berichtconfiguratie te tonen.
