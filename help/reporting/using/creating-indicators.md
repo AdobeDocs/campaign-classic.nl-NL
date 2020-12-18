@@ -21,10 +21,10 @@ Om een kubus functioneel te maken, moet u de relevante afmetingen en de maatrege
 
 Voer de volgende stappen uit om een kubus te maken:
 
-1. Selecteer de werktabel. Zie De werktabel [](#selecting-the-work-table)selecteren.
-1. Definieer de afmetingen. Zie [Afmetingen](#defining-dimensions)definiëren.
-1. Bepaal maatregelen. Zie [Gebouwenindicatoren](#building-indicators).
-1. Maak aggregaten (optioneel). Zie [Berekenen en gebruiken van aggregaten](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
+1. Selecteer de werktabel. Zie [De werktabel selecteren](#selecting-the-work-table).
+1. Definieer de afmetingen. Zie [Afmetingen definiëren](#defining-dimensions).
+1. Bepaal maatregelen. Zie [Building indicators](#building-indicators).
+1. Maak aggregaten (optioneel). Zie [aggregaten berekenen en gebruiken](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
 
 In dit voorbeeld ziet u hoe u snel een eenvoudige kubus in een rapport kunt maken om de bijbehorende maatregelen te exporteren.
 
@@ -32,39 +32,39 @@ De implementatiestappen worden hieronder beschreven. In de andere secties van di
 
 ## De werktabel selecteren {#selecting-the-work-table}
 
-Als u een kubus wilt maken, klikt u op de **[!UICONTROL New]** knop boven de lijst met kubussen.
+Als u een kubus wilt maken, klikt u op de knop **[!UICONTROL New]** boven de lijst met kubussen.
 
 ![](assets/s_advuser_cube_create.png)
 
-Selecteer het feitenschema, d.w.z. het schema dat de elementen bevat u wilt onderzoeken. In dit voorbeeld wordt de tabel **Ontvanger** geselecteerd.
+Selecteer het feitenschema, d.w.z. het schema dat de elementen bevat u wilt onderzoeken. In dit voorbeeld, gaan wij de **Ontvanger** lijst selecteren.
 
 ![](assets/s_advuser_cube_wz_02.png)
 
-Klik **[!UICONTROL Save]** om de kubus te maken: het zal op de lijst van Kubussen verschijnen en kan dan worden gevormd gebruikend de aangewezen lusjes.
+Klik **[!UICONTROL Save]** om de kubus tot stand te brengen: het zal op de lijst van Kubussen verschijnen en kan dan worden gevormd gebruikend de aangewezen lusjes.
 
-Klik op de **[!UICONTROL Filter the source data...]** koppeling om de berekeningen van deze kubus toe te passen op een selectie gegevens in de database.
+Klik op de koppeling **[!UICONTROL Filter the source data...]** om de berekeningen van deze kubus toe te passen op een selectie gegevens in de database.
 
 ![](assets/s_advuser_cube_wz_03.png)
 
-## Afmetingen definiëren {#defining-dimensions}
+## Afmetingen {#defining-dimensions} definiëren
 
 Dimension vallen samen met analysegassen die voor elke kubus zijn gedefinieerd op basis van het bijbehorende feitenschema. Dit zijn de dimensies die in de analyse worden onderzocht, zoals tijd (jaar, maand, datum...), een classificatie van producten of contracten (familie, referentie, enz.), een bevolkingssegment (per stad, leeftijdsgroep, status, enz.).
 
-Deze analysegassen worden gedefinieerd op het **[!UICONTROL Dimension]** tabblad Kubus.
+Deze analysegassen worden gedefinieerd op het tabblad **[!UICONTROL Dimension]** van de kubus.
 
-Klik op de **[!UICONTROL Add]** knop om een nieuwe dimensie te maken en klik vervolgens in het **[!UICONTROL Expression field]** pictogram op het **[!UICONTROL Edit expression]** pictogram om het veld te selecteren dat de betrokken gegevens bevat.
+Klik op de knop **[!UICONTROL Add]** om een nieuwe dimensie te maken en klik vervolgens in **[!UICONTROL Expression field]** op het pictogram **[!UICONTROL Edit expression]** om het veld te selecteren dat de betrokken gegevens bevat.
 
 ![](assets/s_advuser_cube_wz_04.png)
 
-* Selecteer eerst de **leeftijd** van de ontvanger. Voor dit gebied, kunt u het binden aan groepspagina&#39;s bepalen en informatie het lezen gemakkelijker maken. We raden u aan binden te gebruiken wanneer er meerdere afzonderlijke waarden mogelijk zijn.
+* Begin door de ontvanger **Leeftijd** te selecteren. Voor dit gebied, kunt u het binden aan groepspagina&#39;s bepalen en informatie het lezen gemakkelijker maken. We raden u aan binden te gebruiken wanneer er meerdere afzonderlijke waarden mogelijk zijn.
 
-   Schakel de **[!UICONTROL Enable binning]** optie in om dit te doen. Bindingsmodi worden gedetailleerd weergegeven in [Gegevensbinding](../../reporting/using/concepts-and-methodology.md#data-binning).
+   Om dit te doen, controleer de **[!UICONTROL Enable binning]** optie. Bindingsmodi worden beschreven in [Gegevensbinding](../../reporting/using/concepts-and-methodology.md#data-binning).
 
    ![](assets/s_advuser_cube_wz_05.png)
 
-* Voeg een dimensie van het type **Datum** toe. Hier willen we datums weergeven waarop het ontvangende profiel is gemaakt
+* Voeg een **Datum** typeafmeting toe. Hier willen we datums weergeven waarop het ontvangende profiel is gemaakt
 
-   Klik hiertoe op het **[!UICONTROL Add]** veld in de tabel met ontvangers **[!UICONTROL Creation date]** en selecteer dit.
+   Om dit te doen, klik **[!UICONTROL Add]** en selecteer **[!UICONTROL Creation date]** gebied in de ontvankelijke lijst.
 
    ![](assets/s_advuser_cube_wz_06.png)
 
@@ -88,24 +88,24 @@ Klik op de **[!UICONTROL Add]** knop om een nieuwe dimensie te maken en klik ver
 
    ![](assets/s_advuser_cube_wz_10.png)
 
-   Alleen de waarden in de opsomming worden weergegeven. De overige worden gegroepeerd onder het label dat in het **[!UICONTROL Label of the other values]** veld is gedefinieerd.
+   Alleen de waarden in de opsomming worden weergegeven. De overige worden gegroepeerd onder het label dat is gedefinieerd in het veld **[!UICONTROL Label of the other values]**.
 
-   Raadpleeg [Dynamisch beheren van bins](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins)voor meer informatie hierover.
+   Voor meer op dit, verwijs naar [dynamisch het beheren van bins](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
 
 ## Bouwindicatoren {#building-indicators}
 
-Wanneer de afmetingen zijn gedefinieerd, moet u een berekeningsmodus opgeven voor de waarden die in de cellen moeten worden weergegeven. Hiertoe maakt u de overeenkomende indicatoren op het **[!UICONTROL Measures]** tabblad: zoveel maatregelen te treffen als er kolommen in het rapport staan die de kubus zullen gebruiken.
+Wanneer de afmetingen zijn gedefinieerd, moet u een berekeningsmodus opgeven voor de waarden die in de cellen moeten worden weergegeven. Hiertoe maakt u de overeenkomende indicatoren op het tabblad **[!UICONTROL Measures]**: zoveel maatregelen te treffen als er kolommen in het rapport staan die de kubus zullen gebruiken.
 
 Hiervoor voert u de volgende stappen uit:
 
 1. Klik op de knop **[!UICONTROL Add]**.
 1. Selecteer het type maatregel en de formule die u wilt toepassen. Hier willen we het aantal vrouwen bij de ontvangers tellen.
 
-   Onze maatregel is gebaseerd op het feitenschema en gebruikt de **[!UICONTROL Count]** exploitant.
+   Onze maatregel is gebaseerd op het feitenschema en gebruikt **[!UICONTROL Count]** exploitant.
 
    ![](assets/s_advuser_cube_wz_11.png)
 
-   Met de **[!UICONTROL Filter the measure data...]** koppeling kunt u alleen vrouwen selecteren. Voor meer informatie over het bepalen van maatregelen en de beschikbare opties, verwijs naar het [Definiëren van maatregelen](../../reporting/using/concepts-and-methodology.md#defining-measures).
+   Met de koppeling **[!UICONTROL Filter the measure data...]** kunt u alleen vrouwen selecteren. Raadpleeg [Metingen definiëren](../../reporting/using/concepts-and-methodology.md#defining-measures) voor meer informatie over het definiëren van maatstaven en de beschikbare opties.
 
    ![](assets/s_advuser_cube_wz_12.png)
 
@@ -121,17 +121,17 @@ Zodra de kubus wordt gevormd, kan het als malplaatje worden gebruikt voor het cr
 
 Dit doet u als volgt:
 
-1. Klik op de **[!UICONTROL Create]** knop van het **[!UICONTROL Reports]** universum en selecteer de kubus die u zojuist hebt gemaakt.
+1. Klik op de knop **[!UICONTROL Create]** van het **[!UICONTROL Reports]** universum en selecteer de kubus die u zojuist hebt gemaakt.
 
    ![](assets/s_advuser_cube_wz_14.png)
 
-1. Klik op de **[!UICONTROL Create]** knop ter bevestiging: dit zal u aan de rapportconfiguratie en het bekijken pagina brengen.
+1. Klik op de knop **[!UICONTROL Create]** om te bevestigen: dit zal u aan de rapportconfiguratie en het bekijken pagina brengen.
 
    Standaard worden de eerste twee beschikbare afmetingen aangeboden in lijnen en kolommen, maar er wordt geen waarde weergegeven in de tabel. Klik op het hoofdpictogram om de tabel te genereren:
 
    ![](assets/s_advuser_cube_wz_15.png)
 
-1. U kunt de assen van de dimensie veranderen, hen schrappen, nieuwe maatregelen toevoegen, etc. Hier worden mogelijke bewerkingen beschreven: [Kubussen gebruiken om gegevens](../../reporting/using/using-cubes-to-explore-data.md)te verkennen.
+1. U kunt de assen van de dimensie veranderen, hen schrappen, nieuwe maatregelen toevoegen, etc. Hier worden mogelijke bewerkingen beschreven: [Kubussen gebruiken om gegevens te verkennen](../../reporting/using/using-cubes-to-explore-data.md).
 
    Gebruik hiervoor de juiste pictogrammen.
 
