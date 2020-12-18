@@ -17,15 +17,15 @@ ht-degree: 4%
 
 # Binnenkomende sms{#inbound-sms}
 
-Met de **binnenkomende SMS** -activiteit kunt u tekstberichten downloaden en verwerken van een externe account.
+Met de activiteit **Inbound SMS** kunt u tekstberichten downloaden en verwerken van een externe account.
 
 ## Properties {#properties}
 
 ![](assets/sms_rec_edit.png)
 
-Het eerste lusje van de **Binnenkomende activiteit van SMS** laat u de verpletterende parameters voor de berichten van SMS ingaan en het manuscript ingaan dat bij het ontvangen van elk bericht moet worden uitgevoerd. Het tweede lusje laat u een programma aan de activiteit toewijzen, en het derde lusje bepaalt de vervalvoorwaarden van de activiteit.
+Het eerste lusje van **Binnenkomende SMS** activiteit laat u de verpletterende parameters voor de berichten van SMS ingaan en het manuscript ingaan dat bij het ontvangen van elk bericht moet worden uitgevoerd. Het tweede lusje laat u een programma aan de activiteit toewijzen, en het derde lusje bepaalt de vervalvoorwaarden van de activiteit.
 
-1. **[!UICONTROL SMS routing]**: Selecteer de externe account die moet worden gebruikt voor SMS-herstel. Externe accounts worden geconfigureerd via het **[!UICONTROL Administration > Platform > External accounts]** knooppunt van de structuur.
+1. **[!UICONTROL SMS routing]**: Selecteer de externe account die moet worden gebruikt voor SMS-herstel. Externe accounts worden geconfigureerd via het knooppunt **[!UICONTROL Administration > Platform > External accounts]** van de structuur.
 1. **[!UICONTROL Script]**
 1. **[!UICONTROL Schedule]**
 
@@ -33,4 +33,4 @@ Het eerste lusje van de **Binnenkomende activiteit van SMS** laat u de verplette
 
 1. **[!UICONTROL Expiration]**
 
-De **[!UICONTROL Script]**, **[!UICONTROL Schedule]** en de **[!UICONTROL Expiry]** lusjes zijn gedetailleerd in [Binnenkomende E-mail](../../workflow/using/inbound-emails.md).
+De tabbladen **[!UICONTROL Script]**, **[!UICONTROL Schedule]** en **[!UICONTROL Expiry]** worden beschreven in [Binnenkomende e-mails](../../workflow/using/inbound-emails.md).
