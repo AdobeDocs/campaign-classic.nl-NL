@@ -19,11 +19,11 @@ ht-degree: 5%
 
 U kunt de afbeeldingen wijzigen die worden gebruikt in de diagrammen van de verschillende workflows. Zij moeten echter wel aan bepaalde voorwaarden voldoen. Hier volgen de fasen van de implementatie:
 
-* Als u de achtergrondafbeelding wilt wijzigen, selecteert u de gewenste doelworkflow en klikt u op het **[!UICONTROL Properties]** tabblad.
+* Als u de achtergrondafbeelding wilt wijzigen, selecteert u de gewenste doelworkflow en klikt u op het tabblad **[!UICONTROL Properties]**.
 
    ![](assets/s_user_segmentation_properties_tab.png)
 
-   Als u de afbeelding wilt selecteren die u wilt gebruiken, klikt u op het **[!UICONTROL Select link]** pictogram rechts van het **[!UICONTROL Background image]** veld.
+   Als u de te gebruiken afbeelding wilt selecteren, klikt u op het pictogram **[!UICONTROL Select link]** rechts van het veld **[!UICONTROL Background image]**.
 
    >[!NOTE]
    >
@@ -31,21 +31,21 @@ U kunt de afbeeldingen wijzigen die worden gebruikt in de diagrammen van de vers
 
    ![](assets/s_user_segmentation_background_select.png)
 
-   Met het **[!UICONTROL Edit link]** pictogram kunt u de geselecteerde afbeelding bekijken.
+   Met het pictogram **[!UICONTROL Edit link]** kunt u de geselecteerde afbeelding bekijken.
 
-* Als u de afbeelding wilt wijzigen die aan een activiteit is gekoppeld, dubbelklikt u op het object en klikt u op het **[!UICONTROL Advanced]** tabblad.
+* Als u de afbeelding wilt wijzigen die aan een activiteit is gekoppeld, dubbelklikt u op het object en klikt u op het tabblad **[!UICONTROL Advanced]**.
 
-   Als u de afbeelding wilt selecteren die u wilt gebruiken, klikt u op het **[!UICONTROL Select link]** pictogram rechts van het **[!UICONTROL Image]** veld.
+   Als u de te gebruiken afbeelding wilt selecteren, klikt u op het pictogram **[!UICONTROL Select link]** rechts van het veld **[!UICONTROL Image]**.
 
    ![](assets/s_user_segmentation_activity_image.png)
 
-   Met het **[!UICONTROL Edit link]** pictogram kunt u de geselecteerde afbeelding bekijken.
+   Met het pictogram **[!UICONTROL Edit link]** kunt u de geselecteerde afbeelding bekijken.
 
    ![](assets/s_user_segmentation_activity_image_select.png)
 
 >[!NOTE]
 >
->De afbeeldingen die in het **[!UICONTROL Administration > Configuration > Images]** knooppunt van de structuur zijn opgeslagen, kunnen worden geselecteerd.
+>De afbeeldingen die zijn opgeslagen in het knooppunt **[!UICONTROL Administration > Configuration > Images]** van de structuur zijn beschikbaar voor selectie.
 >  
 >Afbeeldingen moeten de PNG-indeling hebben, met 48 x 48 pixels, 16 miljoen kleuren en een transparante achtergrond.
 
