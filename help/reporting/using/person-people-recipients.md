@@ -27,7 +27,7 @@ Dit voorbeeld helpt u het verschil te begrijpen tussen een persoon/persoon en ee
 
 >[!NOTE]
 >
->Deze indicatoren worden in het **[!UICONTROL Tracking indicators]** verslag gebruikt. For more on this, refer to [Tracking indicators](../../reporting/using/delivery-reports.md#tracking-indicators).
+>Deze indicatoren worden gebruikt in het **[!UICONTROL Tracking indicators]** rapport. Raadpleeg [Trackingindicatoren](../../reporting/using/delivery-reports.md#tracking-indicators) voor meer informatie.
 
 Er worden drie koppelingen toegevoegd aan een levering. Het wordt verzonden naar 4 ontvangers:
 
@@ -77,7 +77,7 @@ Openen wordt toegewezen aan een ontvanger: Marie. Adobe Campaign voegt daarom ee
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
-| Tussentotaal | 0 | 0 | 1 |
+| Tussentotaal | 0 | 0 | 3 |
 
 ## Stap 3: Florian {#step-3--florian}
 
@@ -100,7 +100,7 @@ Personen: Aangezien de browser van deze ontvanger cookies accepteert, kunnen we 
 | John | - | - | - |
 | Marie | - | - | +1 |
 | Florian | +1 | +1 | +1 |
-| Tussentotaal | 1 | 1 | 2 |
+| Tussentotaal | 3 | 3 | 2 |
 
 De volgende logboeken vallen samen met de open en twee klikken die worden uitgevoerd door de persoon die Florian de e-mail heeft doorgestuurd naar:
 
@@ -110,7 +110,7 @@ De volgende logboeken vallen samen met de open en twee klikken die worden uitgev
 
 ![](assets/s_ncs_user_indicators_example_12.png)
 
-**Personen**: met betrekking tot kliks, kunnen wij zien dat het zelfde herkenningsteken (UUID) aan alle logboeken wordt toegewezen: **`9ab648f9 [...]`**. Deze id is nog niet meegeteld. Er wordt dus een nieuwe persoon aan het tellen toegevoegd.
+**Personen**: met betrekking tot kliks, kunnen wij zien dat het zelfde herkenningsteken (UUID) aan alle logboeken wordt toegewezen:  **`9ab648f9 [...]`**. Deze id is nog niet meegeteld. Er wordt dus een nieuwe persoon aan het tellen toegevoegd.
 
 ![](assets/s_ncs_user_indicators_example_13.png)
 
@@ -122,7 +122,7 @@ De volgende logboeken vallen samen met de open en twee klikken die worden uitgev
 | Marie | - | - | +1 |
 | Florian | +1 | +1 | +1 |
 | Onbekende persoon | - | +1 | - |
-| Tussentotaal | 1 | 2 | 2 |
+| Tussentotaal | 3 | 2 | 2 |
 
 ## Stap 4: Henry {#step-4--henry}
 
@@ -163,13 +163,13 @@ De ruwe reactiviteit en de raming van de forwards worden als volgt berekend:
 
 ![](assets/s_ncs_user_indicators_example11.png)
 
-* **[!UICONTROL Estimation of forwards]** = **B - A** (dus 6 - 2 = 4)
-* **[!UICONTROL Raw reactivity]** = **A / C** (dus 2 / 3 = 66,67%)
+* **[!UICONTROL Estimation of forwards]** =  **B - A**  (dus 6 - 2 = 4)
+* **[!UICONTROL Raw reactivity]** =  **A / C**  (dus 2 / 3 = 66,67%)
 
 >[!NOTE]
 >
 >In de volgende formules:
 >
 >* A vertegenwoordigt de **[!UICONTROL Clicks]** indicator (ontvangers die klikte).
->* B staat voor de **[!UICONTROL Distinct clicks for the population reached]** indicator (mensen die hebben geklikt).
->* C staat voor de **[!UICONTROL Distinct opens for the population reached]** indicator (ontvangers die geopend zijn).
+>* B vertegenwoordigt de **[!UICONTROL Distinct clicks for the population reached]** indicator (mensen die klikte).
+>* C staat voor de **[!UICONTROL Distinct opens for the population reached]**-indicator (ontvangers die zijn geopend).
