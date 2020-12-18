@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Een webapplicatie ontwerpen{#designing-a-web-application}
 
-Webtoepassingen worden volgens hetzelfde principe als [onlineenquêtes](../../web/using/about-surveys.md)gemaakt en beheerd.
+Webtoepassingen worden volgens hetzelfde principe gemaakt en beheerd als [online enquêtes](../../web/using/about-surveys.md).
 
 De functionele verschillen zijn echter als volgt:
 
@@ -27,17 +27,17 @@ De functionele verschillen zijn echter als volgt:
 
 >[!CAUTION]
 >
->Het wordt hoogst geadviseerd dat de toegepaste configuraties voortdurend worden gecontroleerd om het even welke fouten vroeg in het de toepassingsbouwproces van het Web te ontdekken. Als u de rendering van een wijziging wilt controleren, slaat u de toepassing op en klikt u op het **[!UICONTROL Preview]** subtabblad.
+>Het wordt hoogst geadviseerd dat de toegepaste configuraties voortdurend worden gecontroleerd om het even welke fouten vroeg in het de toepassingsbouwproces van het Web te ontdekken. Als u de rendering van een wijziging wilt controleren, slaat u de toepassing op en klikt u op het subtabblad **[!UICONTROL Preview]**.
 >
 >Totdat de toepassing van het Web wordt gepubliceerd, kunnen de veranderingen niet door het eind worden gezien - gebruiker.
 
-## Het opnemen van grafieken in een toepassing van het Web {#inserting-charts-in-a-web-application}
+## Het opnemen van grafieken in een toepassing {#inserting-charts-in-a-web-application}
 
 U kunt grafieken in de toepassingen van het Web omvatten. Hiervoor selecteert u met de vervolgkeuzelijst met grafieken in de taakbalk het type diagram dat u wilt invoegen.
 
 ![](assets/s_ncs_admin_webapps_bar_graph.png)
 
-U kunt ook het **[!UICONTROL Add a chart]** menu selecteren.
+U kunt ook het menu **[!UICONTROL Add a chart]** selecteren.
 
 ![](assets/s_ncs_admin_webapps_graph.png)
 
