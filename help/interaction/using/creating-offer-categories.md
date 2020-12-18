@@ -17,21 +17,21 @@ ht-degree: 3%
 
 # Categorieën voor aanbiedingen maken{#creating-offer-categories}
 
-Het creëren van categorieën aanbiedingen kan alleen in de **[!UICONTROL Design]** omgeving plaatsvinden. Zij worden automatisch in de **[!UICONTROL Live]** omgeving (d.w.z. beschikbaar gesteld) ingezet wanneer de gecreëerde/gewijzigde aanbieding(en) die zij bevatten, worden goedgekeurd. Standaard bevat de **[!UICONTROL Design]** omgeving een categorie voor alle aanbiedingen. U kunt subcategorieën maken om een hiërarchie toe te voegen aan de catalogusaanbiedingen.
+Het creëren van aanbiedingscategorieën kan slechts in het **[!UICONTROL Design]** milieu plaatsvinden. Ze worden automatisch geïmplementeerd in de **[!UICONTROL Live]**-omgeving (d.w.z. beschikbaar gesteld) wanneer de gemaakte/gewijzigde aanbieding(en) die ze bevatten, worden goedgekeurd. Standaard bevat de **[!UICONTROL Design]**-omgeving een categorie voor het ontvangen van alle aanbiedingen. U kunt subcategorieën maken om een hiërarchie toe te voegen aan de catalogusaanbiedingen.
 
 Voor elke categorie kunt u de toelatingsdata bepalen, d.w.z. een periode waarna de aanbiedingen in de categorie niet langer aan hun doel mogen worden gepresenteerd. Als u wilt dat de aanbiedingen van een bepaalde categorie als prioriteit door de aanbiedingsmotor worden geselecteerd, om een product bijvoorbeeld beter toegankelijk te maken, kunt u hun gewicht gedurende een bepaalde periode verhogen door een vermenigvuldigingsgewicht aan de categorie toe te voegen.
 
 Voer de volgende stappen uit om een extra categorie te maken:
 
-1. Go to the **[!UICONTROL Offer catalog]** folder.
+1. Ga naar de **[!UICONTROL Offer catalog]** omslag.
 
    ![](assets/offer_cat_create_001.png)
 
-1. Klik met de rechtermuisknop en selecteer een optie in de **[!UICONTROL Create a new "Offer category" folder]** vervolgkeuzelijst.
+1. Klik met de rechtermuisknop en selecteer **[!UICONTROL Create a new "Offer category" folder]** in de vervolgkeuzelijst.
 
    ![](assets/offer_cat_create_002.png)
 
-1. Geef de categorie een nieuwe naam. U kunt het label later bewerken met het **[!UICONTROL General]** tabblad.
+1. Geef de categorie een nieuwe naam. U kunt het label later bewerken met het tabblad **[!UICONTROL General]**.
 
    ![](assets/offer_cat_create_003.png)
 
@@ -41,11 +41,11 @@ Voer de volgende stappen uit om een extra categorie te maken:
 
    Daarna kunt u zo nodig:
 
-   * U kunt toelatingsdatums toewijzen vanaf het **[!UICONTROL Eligibility]** tabblad.
+   * Wijs toelatingsdata van **[!UICONTROL Eligibility]** tabel toe.
 
       ![](assets/offer_cat_create_004.png)
 
-   * Voer in het **[!UICONTROL Themes]** veld trefwoorden in waarmee voorstellen in deze categorie kunnen worden geselecteerd.
+   * Voer sleutelwoorden in die u kunt gebruiken om aanbiedingen te selecteren vanuit deze categorie. Gebruik hiervoor het veld **[!UICONTROL Themes]**.
 
       ![](assets/offer_cat_create_005.png)
 
@@ -53,11 +53,11 @@ Voer de volgende stappen uit om een extra categorie te maken:
       >
       >Wanneer u de aanbiedingsengine aanroept, wordt alleen het gedeelte van de catalogus geselecteerd waarin de thema&#39;s of categorieën overeenkomen met de parameters.
 
-   * Het aanbiedingsgewicht van een categorie gedurende een bepaalde periode tijdelijk via het **[!UICONTROL Multiplier weight]** veld verhogen.
+   * Het aanbiedingsgewicht van een categorie gedurende een bepaalde periode tijdelijk verhogen via het veld **[!UICONTROL Multiplier weight]**.
 
       ![](assets/offer_cat_create_006.png)
 
-Op het dashboard van de aanbiedingen in de categorie staat een overzicht van de subsidiabiliteitsregels. Klik op de **[!UICONTROL Schedule and eligibility rules of the offer]** koppeling om deze weer te geven.
+Op het dashboard van de aanbiedingen in de categorie staat een overzicht van de subsidiabiliteitsregels. Klik op de koppeling **[!UICONTROL Schedule and eligibility rules of the offer]** om deze weer te geven.
 
 ![](assets/offer_create_006.png)
 
