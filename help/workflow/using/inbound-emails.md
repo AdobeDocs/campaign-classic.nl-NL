@@ -17,17 +17,17 @@ ht-degree: 1%
 
 # Binnenkomende e-mails{#inbound-emails}
 
-Met de activiteit **Binnenkomende e-mailberichten** kunt u e-mailberichten downloaden en verwerken vanaf een POP3-mailserver.
+Met de activiteit **Binnenkomende e-mails** kunt u e-mailberichten downloaden en verwerken vanaf een POP3-mailserver.
 
 ![](assets/email_rec_edit_1.png)
 
-Het eerste lusje van de **Binnenkomende E-mails** activiteit laat u de parameters van de POP3 server ingaan en het manuscript ingaan dat op ontvangstbewijs van elk bericht moet worden uitgevoerd. Het tweede lusje laat u een programma aan de activiteit toewijzen, en het derde lusje bepaalt de voorwaarden van de activiteitenvervaldatum.
+Het eerste lusje van **Binnenkomende E-mail** activiteit laat u de parameters van de POP3 server ingaan en het manuscript ingaan dat op ontvangstbewijs van elk bericht moet worden uitgevoerd. Het tweede lusje laat u een programma aan de activiteit toewijzen, en het derde lusje bepaalt de voorwaarden van de activiteitenvervaldatum.
 
 1. **[!UICONTROL Inbound Emails]**
 
    * **[!UICONTROL Use an external account]**
 
-      Wanneer deze optie is geactiveerd, kunt u een externe POP3-account selecteren in plaats van de verbindingsparameters in te voeren. In het **[!UICONTROL External account]** veld wordt de externe POP3-account opgegeven die moet worden gebruikt om verbinding te maken met de e-mailservice. Dit veld is alleen zichtbaar als de optie Een externe account gebruiken is ingeschakeld.
+      Wanneer deze optie is geactiveerd, kunt u een externe POP3-account selecteren in plaats van de verbindingsparameters in te voeren. In het veld **[!UICONTROL External account]** wordt de externe POP3-account opgegeven die moet worden gebruikt om verbinding te maken met de e-mailservice. Dit veld is alleen zichtbaar als de optie Een externe account gebruiken is ingeschakeld.
 
       Als deze optie niet is geselecteerd, moet u de volgende parameters opgeven:
 
@@ -64,17 +64,17 @@ Het eerste lusje van de **Binnenkomende E-mails** activiteit laat u de parameter
    * 3 - Hiermee verwijdert u het bericht van de server.
    * 4 - Laat het bericht op de server achter.
 
-   De inhoud van het bericht is toegankelijk vanuit de algemene **[!UICONTROL mailMessage]** variabele.
+   De inhoud van het bericht is toegankelijk vanuit de algemene variabele **[!UICONTROL mailMessage]**.
 
 1. **[!UICONTROL Schedule]**
 
-   Als u een schema voor de activiteit wilt definiëren, klikt u op het **[!UICONTROL Scheduling]** tabblad en schakelt u **[!UICONTROL Plan execution]** het selectievakje in. Klik de **[!UICONTROL Change]** knoop om het programma te vormen.
+   Als u een schema voor de activiteit wilt definiëren, klikt u op het tabblad **[!UICONTROL Scheduling]** en schakelt u **[!UICONTROL Plan execution]** in. Klik **[!UICONTROL Change]** knoop om het programma te vormen.
 
    De configuratie van het programma is het zelfde als voor de het plannen activiteit. Zie [Planner](../../workflow/using/scheduler.md).
 
 1. **[!UICONTROL Expiration]**
 
-   Via het **[!UICONTROL Expiration]** tabblad kunt u verlopen definiëren.
+   U kunt vertragingen bij verlopen definiëren via het tabblad **[!UICONTROL Expiration]**.
 
    ![](assets/email_rec_edit_3.png)
 
