@@ -24,4 +24,4 @@ Met Adobe Campaign kunt u bestanden maken die op grote schaal persoonlijke lette
 >Postadressen zijn berekende velden. Een adres kan maximaal zes lijnen door gebrek bevatten: de eerste regel bevat de voornaam en achternaam, de volgende regels bevatten het postadres (weg enz.) en de laatste regel bevat de postcode en de stad of plaats.\
 >Een adres wordt als volledig beschouwd als de naam, het gebied van de code van ZIP/Postal, en stad/stad gebieden niet leeg zijn.
 
-In de onderstaande secties vindt u informatie die specifiek is voor het directe-mailkanaal. Raadpleeg[deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md)voor algemene informatie over het maken en verzenden van een levering.
+In de onderstaande secties vindt u informatie die specifiek is voor het directe-mailkanaal. Voor globale informatie over om een levering tot stand te brengen en te verzenden, verwijs naar [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md).
