@@ -21,7 +21,7 @@ U kunt in deze sectie een configuratiemonster vinden die op een bedrijf wordt ge
 
 Als u pushberichten wilt verzenden in Adobe Campaign, moet u:
 
-* Maak een **[!UICONTROL Mobile application]** tekstinformatieservice voor de mobiele toepassing Neotrips. Zie [deze sectie voor iOS](../../delivery/using/configuring-the-mobile-application.md#configuring-ios-service). en [deze sectie voor Android](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service).
+* Maak een **[!UICONTROL Mobile application]**-tekstinformatieservice voor de mobiele toepassing Neotrips. Zie [deze sectie voor iOS](../../delivery/using/configuring-the-mobile-application.md#configuring-ios-service). en [deze sectie voor Android](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service).
 * Voeg de iOS- en Android-versies van de toepassing toe aan deze service.
 * Maak een levering voor zowel iOS als Android. [Zie deze pagina](../../delivery/using/creating-notifications.md).
 
@@ -29,9 +29,9 @@ Als u pushberichten wilt verzenden in Adobe Campaign, moet u:
 
 >[!NOTE]
 >
->Ga naar het **[!UICONTROL Subscriptions]** tabblad van de service om de lijst met abonnees van de service weer te geven, dat wil zeggen alle personen die de toepassing op hun mobiele telefoon hebben geïnstalleerd en ermee hebben ingestemd meldingen te ontvangen.
+>Ga naar het tabblad **[!UICONTROL Subscriptions]** van de service om de lijst met abonnees van de service weer te geven, d.w.z. alle personen die de toepassing op hun mobiele telefoon hebben geïnstalleerd en ermee hebben ingestemd meldingen te ontvangen.
 
-## Het pakket installeren {#installing-package-ios}
+## Het pakket {#installing-package-ios} installeren
 
 ![](assets/do-not-localize/how-to-video.png) [Leer hoe u het pakket voor de mobiele app in video installeert](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
 
@@ -39,19 +39,19 @@ Als hybride/gehoste klant neemt u contact op met het Adobe Customer Care-team vo
 
 Als klant op locatie moet u de volgende installatiestappen uitvoeren:
 
-1. Open de wizard voor het importeren van pakketten vanuit **[!UICONTROL Tools > Advanced > Package import...]** de Adobe Campaign-clientconsole.
+1. Open de wizard voor het importeren van pakketten vanuit **[!UICONTROL Tools > Advanced > Package import...]** in de Adobe Campaign-clientconsole.
 
    ![](assets/package_ios.png)
 
 1. Selecteer **[!UICONTROL Install a standard package]**.
 
-1. Controleer in de lijst die wordt weergegeven **[!UICONTROL Mobile App Channel]**.
+1. Controleer **[!UICONTROL Mobile App Channel]** in de lijst die wordt weergegeven.
 
    ![](assets/package_ios_2.png)
 
-1. Klik **[!UICONTROL Next]** en vervolgens **[!UICONTROL Start]** om de pakketinstallatie te starten.
+1. Klik **[!UICONTROL Next]**, dan **[!UICONTROL Start]** om de pakketinstallatie te beginnen.
 
-   Nadat de pakketten zijn geïnstalleerd, wordt op de voortgangsbalk **100%** weergegeven. In de installatielogboeken ziet u het volgende bericht: **[!UICONTROL Installation of packages successful]**.
+   Zodra de pakketten worden geïnstalleerd, toont de vooruitgangsbar **100%** en u kunt het volgende bericht in de installatielogboeken zien: **[!UICONTROL Installation of packages successful]**.
 
    ![](assets/package_ios_3.png)
 
