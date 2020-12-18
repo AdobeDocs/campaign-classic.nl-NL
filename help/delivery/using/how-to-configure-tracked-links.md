@@ -23,11 +23,11 @@ Voor elke levering kunt u de ontvangst van berichten en de activering van de kop
 >
 >Het volgen is op berichten van toepassing, maar het Web volgen laat u controleren hoe de ontvangers door een website (bezochte pagina&#39;s, aankopen) doorbladeren.
 >
->De configuratie van webtracering wordt weergegeven in [deze sectie](../../configuration/using/about-web-tracking.md).
+>De configuratie van web tracking wordt weergegeven in [deze sectie](../../configuration/using/about-web-tracking.md).
 
 Berichten bijhouden is standaard ingeschakeld. Volg onderstaande stappen om de manier waarop URL&#39;s worden bijgehouden aan te passen:
 
-1. Selecteer de **[!UICONTROL Display URLs]** optie in de onderste sectie van de leveringstovenaar, onder de berichtinhoud.
+1. Selecteer de optie **[!UICONTROL Display URLs]** in de onderste sectie van de leveringstovenaar, onder de berichtinhoud.
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 
@@ -49,7 +49,7 @@ Berichten bijhouden is standaard ingeschakeld. Volg onderstaande stappen om de m
    >
    >De labels van de bijgehouden URL&#39;s en de labels kunnen worden gewijzigd om het lezen van informatie bij het bijhouden van leveringen te vereenvoudigen. Twee URL&#39;s of twee labels met dezelfde naam worden bij het berekenen van het aantal klikken opgeteld.
 
-1. Wijzig zo nodig de modus Tekstspatiëring en selecteer een nieuwe modus in de **[!UICONTROL Tracking]** kolom die overeenkomt met de doelkoppeling, zoals hieronder wordt getoond:
+1. Wijzig zo nodig de modus Tekstspatiëring en selecteer een nieuwe modus in de kolom **[!UICONTROL Tracking]** die overeenkomt met de doelkoppeling, zoals hieronder wordt getoond:
 
    ![](assets/s_ncs_user_select_tracking_mode.png)
 
@@ -62,4 +62,4 @@ Berichten bijhouden is standaard ingeschakeld. Volg onderstaande stappen om de m
    * **[!UICONTROL Opt-out]** : beschouwt deze URL als een opt-out- of niet-abonnements-URL.
    * **[!UICONTROL Mirror page]** : beschouwt deze URL als een URL van een spiegelpagina.
 
-1. Bovendien kunt u een categorie selecteren voor elke bijgehouden URL in de vervolgkeuzelijst van de **[!UICONTROL Category]** kolom. Deze categorieën kunnen rapporten worden getoond, zoals bijvoorbeeld in **[!UICONTROL URLs and click streams]** (zie [deze sectie](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Categorieën worden gedefinieerd in een specifieke opsomming: **[!UICONTROL urlCategory]** (Zie [Opsommingen](../../platform/using/managing-enumerations.md)beheren).
+1. Daarnaast kunt u een categorie selecteren voor elke bijgehouden URL in de vervolgkeuzelijst van de kolom **[!UICONTROL Category]**. Deze categorieën kunnen rapporten, zoals bijvoorbeeld in **[!UICONTROL URLs and click streams]** (zie [deze sectie](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)) worden getoond. Categorieën worden gedefinieerd in een specifieke opsomming: **[!UICONTROL urlCategory]** (zie [Opsommingen beheren](../../platform/using/managing-enumerations.md)).
