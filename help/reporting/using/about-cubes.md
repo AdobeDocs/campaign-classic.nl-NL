@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # Kubussen{#about-cubes}
 
-De exploratie van gegevens in het gegevensbestand wordt aangeboden via de module van de Analyse van de **Marketing** . Het laat u toe om gegevens te analyseren en te meten, statistieken te berekenen, en rapportverwezenlijking en berekening te vereenvoudigen en te optimaliseren. Daarnaast kunt u met Marketing Analytics rapporten maken en doelpopulaties maken. Zodra deze worden geïdentificeerd, worden zij opgeslagen in lijsten die in Adobe Campaign (gericht, segmentatie, enz.) kunnen worden gebruikt.
+De exploratie van gegevens in het gegevensbestand wordt aangeboden via **de Analytics van de Marketing** module. Het laat u toe om gegevens te analyseren en te meten, statistieken te berekenen, en rapportverwezenlijking en berekening te vereenvoudigen en te optimaliseren. Daarnaast kunt u met Marketing Analytics rapporten maken en doelpopulaties maken. Zodra deze worden geïdentificeerd, worden zij opgeslagen in lijsten die in Adobe Campaign (gericht, segmentatie, enz.) kunnen worden gebruikt.
 
 De kubussen worden gebruikt voor het produceren van bepaalde ingebouwde rapporten, met inbegrip van leveringsrapporten (levering het volgen, klikt, opent, enz.). Rapporten op basis van kubussen mogen alleen worden gebruikt als standaard voor gegevensvolumes onder 5 miljoen feitenlijnen.
 
@@ -27,7 +27,7 @@ Zodra kubussen zijn gemaakt en geconfigureerd, worden ze gebruikt in vakken voor
 
 >[!CAUTION]
 >
->**Marketing Analytics** is een Adobe Campaign-module. Het moet op uw instantie worden geïnstalleerd zodat u de hieronder beschreven mogelijkheden kunt gebruiken.
+>**Marketing** Analytics en Adobe Campaign module. Het moet op uw instantie worden geïnstalleerd zodat u de hieronder beschreven mogelijkheden kunt gebruiken.
 
 Met de module van de Analyse van de Marketing, laat de Campagne u toe:
 
@@ -37,7 +37,7 @@ Met de module van de Analyse van de Marketing, laat de Campagne u toe:
    * vermindering van de hoeveelheid gegevens die betrokken is bij de verschillende berekeningen die voor rapporten en vragen worden gebruikt, waardoor de berekeningstijden van de indicatoren aanzienlijk worden geoptimaliseerd;
    * het vereenvoudigen van de toegang tot gegevens, waardoor gebruikers gegevens (al dan niet vooraf geaggregeerd) kunnen manipuleren, afhankelijk van verschillende dimensies.
 
-   For more on this, refer to [Creating indicators](../../reporting/using/creating-indicators.md).
+   Raadpleeg [Indicatoren maken](../../reporting/using/creating-indicators.md) voor meer informatie.
 
 1. Draai-tabellen maken met de volgende weergave:
 
@@ -46,7 +46,7 @@ Met de module van de Analyse van de Marketing, laat de Campagne u toe:
    * aanpassing van de gebruikte maatregelen en indicatoren;
    * het aanbieden van interactieve analysehulpmiddelen aan gebruikers met een niet-technische achtergrond.
 
-   Voor meer op dit, verwijs naar het [Gebruiken van kubussen om gegevens](../../reporting/using/using-cubes-to-explore-data.md)te onderzoeken.
+   Voor meer op dit, verwijs naar [Gebruikend kubussen om gegevens](../../reporting/using/using-cubes-to-explore-data.md) te onderzoeken.
 
 1. Bouw een vraag gebruikend gegevens die in een kubus worden berekend en worden samengevoegd.
 1. Identificeer populaties en verwijs hen in lijsten.
@@ -81,7 +81,7 @@ Wanneer het werken met kubussen, moeten de volgende concepten gekend zijn:
 
    De maatregelen kunnen worden berekend: zo is het aanvaardingspercentage van een aanbieding bijvoorbeeld de verhouding tussen het aantal ingediende aanbiedingen en het aantal aanvaarde inschrijvingen .
 
-## De werkruimte Kubus {#cube-workspace}
+## Kubus-werkruimte {#cube-workspace}
 
 De kubussen worden opgeslagen in de **[!UICONTROL Administration > Configuration > Cubes]** knoop.
 
@@ -89,25 +89,25 @@ De kubussen worden opgeslagen in de **[!UICONTROL Administration > Configuration
 
 De belangrijkste gebruikscontext voor kubussen is als volgt:
 
-* De uitvoer van gegevens kan rechtstreeks worden uitgevoerd in een rapport dat is ontworpen in het **[!UICONTROL Reports]** universum van het Adobe Campaign-platform.
+* De uitvoer van gegevens kan direct in een rapport worden uitgevoerd, dat in het **[!UICONTROL Reports]** universum van het platform van Adobe Campaign wordt ontworpen.
 
    Hiertoe maakt u een nieuw rapport en selecteert u de kubus die u wilt gebruiken.
 
    ![](assets/cube_create_new.png)
 
-   De kubussen verschijnen als malplaatjes die op welke rapporten worden gebaseerd worden gecreeerd. Zodra u een malplaatje hebt gekozen, klik **[!UICONTROL Create]** om het passende rapport te vormen en te bekijken.
+   De kubussen verschijnen als malplaatjes die op welke rapporten worden gebaseerd worden gecreeerd. Nadat u een sjabloon hebt gekozen, klikt u op **[!UICONTROL Create]** om het bijbehorende rapport te configureren en weer te geven.
 
    U kunt maatregelen aanpassen, de vertoningswijze veranderen of de lijst vormen, dan het rapport tonen gebruikend de belangrijkste knoop.
 
    ![](assets/cube_display_new.png)
 
-* U kunt ook naar een kubus in het **[!UICONTROL Query]** vak van een rapport verwijzen om de bijbehorende indicatoren te gebruiken, zoals hieronder wordt getoond:
+* U kunt ook naar een kubus in de doos **[!UICONTROL Query]** van een rapport verwijzen om zijn indicatoren, zoals hieronder getoond te gebruiken:
 
    ![](assets/s_advuser_query_using_a_cube.png)
 
-* U kunt een spillijst ook opnemen die op een kubus wordt gebaseerd in om het even welke pagina van een rapport. Hiervoor verwijst u naar de kubus die u wilt gebruiken op het **[!UICONTROL Data]** tabblad van de draaitabel op de betreffende pagina.
+* U kunt een spillijst ook opnemen die op een kubus wordt gebaseerd in om het even welke pagina van een rapport. Hiervoor verwijst u naar de kubus die u wilt gebruiken op het tabblad **[!UICONTROL Data]** van de draaitabel op de betreffende pagina.
 
    ![](assets/s_advuser_cube_in_report.png)
 
-   Voor meer op dit, verwijs naar het [Verkennen van de gegevens in een rapport](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report).
+   Voor meer op dit, verwijs naar [Verkennend de gegevens in een rapport](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report).
 
