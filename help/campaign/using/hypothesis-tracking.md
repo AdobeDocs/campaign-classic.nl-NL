@@ -23,7 +23,7 @@ Het resultaat van hypotheseberekeningen is beschikbaar op verschillende niveaus 
 
 ### Indicatoren {#indicators}
 
-Zodra de hypothese is berekend, worden verschillende meetindicatoren automatisch bijgewerkt. Deze zijn beschikbaar op het **[!UICONTROL General]** tabblad van de hypothese.
+Zodra de hypothese is berekend, worden verschillende meetindicatoren automatisch bijgewerkt. Deze zijn beschikbaar op het **[!UICONTROL General]** lusje van de hypothese.
 
 ![](assets/response_hypothesis_delivery_example_010.png)
 
@@ -35,7 +35,7 @@ Deze indicatoren zijn:
 * **Responspercentage van de controlegroep**: aantal respondentencontrolegroepen / totaal aantal leveringscontrolegroepen.
 * **Aantal reacties**: aantal records in de tabel die de relatie tussen personen, de hypothese en de transactietabel bevat.
 
-Klik op de **[!UICONTROL Display the list]** koppeling voor de volledige lijst met indicatoren:
+Klik op de koppeling **[!UICONTROL Display the list]** voor de volledige lijst met indicatoren:
 
 ![](assets/response_hypothesis_indicators_002.png)
 
@@ -58,21 +58,21 @@ De indicatoren geven de volgende informatie:
 
 ### Reacties {#reactions}
 
-U kunt de reacties van de ontvangers op de hypothesen bekijken via het **[!UICONTROL Reactions]** tabblad.
+U kunt de reacties van ontvangers op de hypothesen bekijken via het tabblad **[!UICONTROL Reactions]**.
 
-1. Als de hypotheseberekening is voltooid, gaat u naar het **[!UICONTROL Campaign management > Measurement hypotheses]** knooppunt van de Adobe Campaign-structuur.
-1. Selecteer de gewenste hypothese en klik op het **[!UICONTROL Reactions]** tabblad om de lijst weer te geven met ontvangers die na de marketingcampagne waarschijnlijk iets zullen kopen.
+1. Als de hypotheseberekening is voltooid, gaat u naar de **[!UICONTROL Campaign management > Measurement hypotheses]**-node van de Adobe Campaign-boomstructuur.
+1. Selecteer de gewenste hypothese en klik op het tabblad **[!UICONTROL Reactions]** om de lijst weer te geven met ontvangers die waarschijnlijk iets kopen na de marketingcampagne.
 
    ![](assets/response_hypothesis_reactions_001.png)
 
 ## Rapporten {#reports}
 
-In de sectie **[!UICONTROL Hypothesis report]** kunt u de resultaten bekijken van de hypotheses die zijn uitgevoerd voor campagnes en leveringen. Dit verslag bevat de indicatoren die door de hypothese zijn berekend (zie voor meer informatie de [indicatoren](#indicators)).
+Met **[!UICONTROL Hypothesis report]** kunt u de resultaten bekijken van de hypothesen die zijn uitgevoerd op campagnes en leveringen. Dit rapport bevat de indicatoren die door de hypothese worden berekend (zie [Indicatoren](#indicators) voor meer informatie).
 
-* **Op campagnereniveau**: Klik op de **[!UICONTROL Reports]** koppeling van de desbetreffende campagne en selecteer de **[!UICONTROL Hypothesis report]** koppeling. Dit verslag bevat de lijst van de campagneleveringen en de hypothesen die voor elke levering zijn berekend.
+* **Op campagnereniveau**: Klik op de  **[!UICONTROL Reports]** koppeling van de desbetreffende campagne en selecteer de  **[!UICONTROL Hypothesis report]** koppeling. Dit verslag bevat de lijst van de campagneleveringen en de hypothesen die voor elke levering zijn berekend.
 
    ![](assets/response_hypothesis_campaign_report_001.png)
 
-* **Op leveringsniveau**: om tot het rapport toegang te hebben, open de betrokken levering, klik **[!UICONTROL Reports]** in het **[!UICONTROL Summary]** lusje en selecteer **[!UICONTROL Hypothesis report]**. Indien voor dezelfde levering meerdere hypothesen zijn berekend, bevat het verslag alle hypothesen.
+* **Op leveringsniveau**: om tot het rapport toegang te hebben, open de betrokken levering, klik  **[!UICONTROL Reports]** in het  **[!UICONTROL Summary]** lusje en selecteer  **[!UICONTROL Hypothesis report]**. Indien voor dezelfde levering meerdere hypothesen zijn berekend, bevat het verslag alle hypothesen.
 
    ![](assets/response_hypothesis_delivery_report_001.png)
