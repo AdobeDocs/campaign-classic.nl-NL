@@ -29,16 +29,16 @@ De kenmerken van een schema dat verwijzingen een bestaande lijst zijn als volgt:
 
 ## Het weergavekenmerk {#the-view-attribute}
 
-De bronschema&#39;s keuren de **meningsattributen** voor het **srcSchema** wortelelement goed. Deze moet worden gebruikt wanneer Adobe Campaign wordt gemanipuleerd in aangepaste tabellen. Het **kenmerk view=&quot;true&quot;** vertelt de updatetovenaar van de databasestructuur om dit schema te negeren. Het is daarom niet toegestaan dat de toepassing de tabel, de kolommen en de indexen synchroniseert met het corresponderende schema.
+Bronschema&#39;s accepteren het **view**-kenmerk voor het **srcSchema**-basiselement. Deze moet worden gebruikt wanneer Adobe Campaign wordt gemanipuleerd in aangepaste tabellen. Het **view= &quot;waar&quot;** attribuut vertelt de updatetovenaar van de gegevensbestandstructuur om dit schema te negeren. Het is daarom niet toegestaan dat de toepassing de tabel, de kolommen en de indexen synchroniseert met het corresponderende schema.
 
-Wanneer dit kenmerk is ingesteld op **true**, wordt het schema alleen gebruikt om SQL-query&#39;s te genereren voor toegang tot de gegevens van deze tabel.
+Wanneer dit attribuut aan **true** wordt geplaatst, wordt het schema gebruikt slechts om SQL vragen te produceren om tot de gegevens van deze lijst toegang te hebben.
 
 ## Namen van tabellen en kolommen {#names-of-tables-and-columns}
 
 Wanneer tabellen worden gemaakt door de wizard voor tabelupdates, worden de namen van tabellen en kolommen automatisch gegenereerd op basis van de namen van de respectievelijke schema&#39;s en kenmerken. Het is echter mogelijk om de SQL-namen te forceren die moeten worden gebruikt door de volgende kenmerken in te voeren:
 
-* **sqltable** binnen het belangrijkste element van het schema, om de lijst te specificeren,
-* **sqlname** binnen elk attribuut, om de kolommen te specificeren.
+* **** sqltable binnen het belangrijkste element van het schema, om de lijst te specificeren,
+* **** sqlname binnen elk attribuut, om de kolommen te specificeren.
 
 **Voorbeeld**:
 
