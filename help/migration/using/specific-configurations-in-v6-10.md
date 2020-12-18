@@ -25,4 +25,4 @@ Als u vanaf een 6.10-platform migreert en uw clientconsole ouder is dan de 8104-
 >
 >Als u de update afwijst, kunt u geen verbinding maken.
 
-Als u migreert vanaf een v6.10-platform dat ouder is dan de 8104-build, moet u ook de sectie [Nieuwe functies in v7](../../migration/using/general-configurations.md#new-features-in-v7) raadplegen.
+Als u migreert vanaf een v6.10-platform dat ouder is dan de 8104-build, moet u ook de [Nieuwe functies in v7](../../migration/using/general-configurations.md#new-features-in-v7)-sectie raadplegen.
