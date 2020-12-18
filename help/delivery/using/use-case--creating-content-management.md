@@ -19,12 +19,12 @@ ht-degree: 2%
 
 Voor het maken van contentbeheer in Adobe Campaign zijn de volgende stappen nodig:
 
-* [Stap 1 - De te produceren](#step-1---analyzing-the-content-to-be-produced)inhoud analyseren,
+* [Stap 1 - De te produceren](#step-1---analyzing-the-content-to-be-produced) inhoud analyseren,
 * [Stap 2 - het creëren van het gegevensschema](#step-2---creating-the-data-schema),
-* [Stap 3 - Het invoerformulier](#step-3---creating-the-input-form)maken,
-* [Stap 4 - Het bouwsjabloon](#step-4---creating-the-construction-template)maken,
+* [Stap 3 - Het invoerformulier](#step-3---creating-the-input-form) maken,
+* [Stap 4 - Het bouwsjabloon](#step-4---creating-the-construction-template) maken,
 * [Stap 5 - het creëren van het publicatiesjabloon](#step-5---creating-the-publication-template),
-* [Stap 6 - Inhoud](#step-6---creating-contents)maken.
+* [Stap 6 - Inhoud](#step-6---creating-contents) maken.
 
 ## Stap 1 - De te produceren inhoud analyseren {#step-1---analyzing-the-content-to-be-produced}
 
@@ -52,23 +52,23 @@ De verschillende elementen van deze nieuwsbrief worden samengesteld op basis van
 
 Deze elementen worden gemaakt via een speciaal schema dat de volgende elementen voor elke inhoud opgeeft: naam, etiket, type, grootte en alle andere informatie die relevant is voor de verwerking ervan in Adobe Campaign.
 
-## Step 2 - Creating the data schema {#step-2---creating-the-data-schema}
+## Stap 2 - het creëren van het gegevensschema {#step-2---creating-the-data-schema}
 
 Een gegevensschema is een XML-document dat is gekoppeld aan inhoud. Hierin wordt de XML-structuur van de gegevens in deze inhoud beschreven.
 
 >[!NOTE]
 >
->Raadpleeg [deze sectie](../../configuration/using/about-schema-edition.md)voor meer informatie over het maken en configureren van gegevensschema&#39;s in Adobe Campaign.
+>Raadpleeg [deze sectie](../../configuration/using/about-schema-edition.md) voor meer informatie over het maken en configureren van gegevensschema&#39;s in Adobe Campaign.
 >
 >De elementen van de configuratie specifiek voor inhoudsbeheer zijn gedetailleerd in [Gegevensschema&#39;s](../../delivery/using/data-schemas.md).
 
 Voer de volgende stappen uit om een gegevensschema te maken:
 
-1. Open Adobe Campaign Explorer en selecteer het **[!UICONTROL Administration > Configuration > Data schemas]** knooppunt.
+1. Open de Ontdekkingsreiziger van Adobe Campaign en selecteer **[!UICONTROL Administration > Configuration > Data schemas]** knoop.
 
-   Klik op het **[!UICONTROL New]** pictogram boven de lijst met gegevensschema&#39;s.
+   Klik op het pictogram **[!UICONTROL New]** boven de lijst met gegevensschema&#39;s.
 
-1. Selecteer de **[!UICONTROL Create a schema]** optie voor inhoudsbeheer en klik op **[!UICONTROL Next]**.
+1. Selecteer de optie **[!UICONTROL Create a schema]** voor inhoudsbeheer en klik vervolgens op **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_content_create_schema.png)
 
@@ -76,15 +76,15 @@ Voer de volgende stappen uit om een gegevensschema te maken:
 
    ![](assets/s_ncs_content_param_schema.png)
 
-   Klik **[!UICONTROL Next]** om te valideren.
+   Klik **[!UICONTROL Next]** om te bevestigen.
 
-1. Voer de inhoud van het schema in het **[!UICONTROL Edit schema]** venster in.
+1. Typ de inhoud van het schema in het venster **[!UICONTROL Edit schema]**.
 
-   Gebruik de **[!UICONTROL Insert]** knop om de schema-inhoud te maken.
+   Gebruik de **[!UICONTROL Insert]** knoop om de schemainhoud tot stand te brengen.
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   For more on this, refer to [Editing schemas](../../delivery/using/data-schemas.md#editing-schemas).
+   Raadpleeg [Schema&#39;s bewerken](../../delivery/using/data-schemas.md#editing-schemas) voor meer informatie.
 
    Voor elk element waarnaar in de inhoud wordt verwezen, moet u een overeenkomend type selecteren.
 
@@ -107,7 +107,7 @@ Voer de volgende stappen uit om een gegevensschema te maken:
    <td> Titel<br /> </td> 
   </tr> 
   <tr> 
-   <td> Ondertitel<br /> </td> 
+   <td> Subtitel<br /> </td> 
    <td> Kenmerk<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> Naam<br /> </td> 
@@ -119,7 +119,7 @@ Voer de volgende stappen uit om een gegevensschema te maken:
    <td> Datum<br /> </td> 
   </tr> 
   <tr> 
-   <td> Inleiding<br /> </td> 
+   <td> Inleiding alinea<br /> </td> 
    <td> Element<br /> </td> 
    <td> HTML<br /> </td> 
    <td> Overzicht<br /> </td> 
@@ -137,7 +137,7 @@ Voer de volgende stappen uit om een gegevensschema te maken:
    <td> Auteur<br /> </td> 
   </tr> 
   <tr> 
-   <td> Koptekstlogo (opgeslagen in publieke middelen van Adobe Campaign)<br /> </td> 
+   <td> Koptekstlogo (opgeslagen in openbare bronnen van Adobe Campaign)<br /> </td> 
    <td> Kenmerk<br /> </td> 
    <td> Koppeling<br /> </td> 
    <td> Image<br /> </td> 
@@ -162,7 +162,7 @@ Het schema bevat de volgende informatie:
 
 1. Klik **[!UICONTROL Save]** om het gegevensschema tot stand te brengen.
 
-## Stap 3 - Het invoerformulier maken {#step-3---creating-the-input-form}
+## Stap 3 - Het creëren van de inputvorm {#step-3---creating-the-input-form}
 
 Met het invoerformulier kunt u een inhoudsinstantie bewerken via een invoerinterface vanuit de Adobe Campaign-clientconsole.
 
@@ -170,23 +170,23 @@ De beschrijving van een formulier is een gestructureerd XML-document waarin de g
 
 >[!NOTE]
 >
->Raadpleeg [deze sectie](../../configuration/using/identifying-a-form.md)voor meer informatie over het maken en configureren van formulieren in Adobe Campaign.
+>Raadpleeg [deze sectie](../../configuration/using/identifying-a-form.md) voor meer informatie over het maken en configureren van formulieren in Adobe Campaign.
 >
->De configuratieelementen die specifiek zijn voor inhoudsbeheer, worden beschreven in [Invoerformulieren](../../delivery/using/input-forms.md).
+>De configuratieelementen specifiek voor inhoudsbeheer worden beschreven in [Invoerformulieren](../../delivery/using/input-forms.md).
 
 Voer de volgende stappen uit om een invoerformulier te maken voor inhoudsbeheer:
 
-1. Open Adobe Campaign Explorer en selecteer het **[!UICONTROL Administration > Configuration > Input forms]** knooppunt.
+1. Open de Ontdekkingsreiziger van Adobe Campaign en selecteer **[!UICONTROL Administration > Configuration > Input forms]** knoop.
 
-   Klik op het **[!UICONTROL New]** pictogram boven de lijst met formulieren.
+   Klik op het pictogram **[!UICONTROL New]** boven de lijst met formulieren.
 
-1. Voer de naam in van het formulier en het label dat aan het formulier is gekoppeld en selecteer vervolgens het **[!UICONTROL Content management]** type.
+1. Voer de naam in van het formulier en het label dat aan het formulier is gekoppeld en selecteer vervolgens het type **[!UICONTROL Content management]**.
 
    ![](assets/s_ncs_content_param_form_edit.png)
 
    >[!NOTE]
    >
-   >Als u wilt dat beide elementen automatisch overeenkomen, kunt u het beste dezelfde naam gebruiken als voor het gekoppelde gegevensschema. Gebruik de **[!UICONTROL Insert]** knop boven de invoerzone om velden toe te voegen van het schema dat is gekoppeld aan het formulier.
+   >Als u wilt dat beide elementen automatisch overeenkomen, kunt u het beste dezelfde naam gebruiken als voor het gekoppelde gegevensschema. Gebruik de knop **[!UICONTROL Insert]** boven de invoerzone om velden toe te voegen vanuit het schema dat is gekoppeld aan het formulier.
 
    ![](assets/s_ncs_content_param_form_edit_step2.png)
 
@@ -208,11 +208,11 @@ Voer de volgende stappen uit om een invoerformulier te maken voor inhoudsbeheer:
      </input>
    ```
 
-   Op het **[!UICONTROL Preview]** tabblad kunt u de weergave van het formulier controleren terwijl u het bewerkt:
+   Op het tabblad **[!UICONTROL Preview]** kunt u de weergave van het formulier controleren terwijl u het bewerkt:
 
    ![](assets/s_ncs_content_param_form_preview.png)
 
-1. Klik **[!UICONTROL Save]** om het invoerformulier te maken.
+1. Klik op **[!UICONTROL Save]** om het invoerformulier te maken.
 
 ## Stap 4 - Het creëren van het bouwmalplaatje {#step-4---creating-the-construction-template}
 
@@ -226,14 +226,14 @@ In dit voorbeeld willen we een JavaScript-sjabloon gebruiken om de gegevensconst
 
 Als u een JavaScript-sjabloon wilt gebruiken in Adobe Campaign, voert u de volgende stappen uit:
 
-1. Open Adobe Campaign Explorer en selecteer het **[!UICONTROL Administration > Configuration > JavaScript Templates]** knooppunt.
+1. Open de Ontdekkingsreiziger van Adobe Campaign en selecteer **[!UICONTROL Administration > Configuration > JavaScript Templates]** knoop.
 
-   Klik op het **[!UICONTROL New]** pictogram boven de lijst met sjablonen.
+   Klik op het pictogram **[!UICONTROL New]** boven de lijst met sjablonen.
 
 1. Voer een sjabloonnaam in en selecteer het schema dat u voor inhoudsbeheer hebt gemaakt.
 1. Importeer de setinhoud die u in het bericht wilt weergeven.
 
-   Voeg de elementen van de variabele toe met inachtneming van de syntaxis die in [JavaScript-sjablonen](../../delivery/using/formatting.md#javascript-templates)wordt beschreven.
+   Voeg de elementen van de variabele toe met inachtneming van de syntaxis in [JavaScript-sjablonen](../../delivery/using/formatting.md#javascript-templates).
 
    Als u de inhoud wilt weergeven die in ons voorbeeld wordt weergegeven, moet de JavaScript-sjabloon de volgende elementen bevatten:
 
@@ -326,7 +326,7 @@ Als u een JavaScript-sjabloon wilt gebruiken in Adobe Campaign, voert u de volge
    </html>
    ```
 
-   Als u een functie oproept aan het begin van een sjabloon, kunt u een aanroep instellen naar verpersoonlijkingsgegevens uit de Adobe Campaign-database (in dit geval: receiving.firstName en receiving.lastName), zodat het kan worden geïnterpreteerd wanneer gebruikt in een levering. Raadpleeg [Een JavaScript-sjabloon](../../delivery/using/formatting.md#including-a-javascript-template)opnemen voor meer informatie.
+   Als u een functie oproept aan het begin van een sjabloon, kunt u een aanroep instellen naar verpersoonlijkingsgegevens uit de Adobe Campaign-database (in dit geval: receiving.firstName en receiving.lastName), zodat het kan worden geïnterpreteerd wanneer gebruikt in een levering. Raadpleeg [Including a JavaScript template](../../delivery/using/formatting.md#including-a-javascript-template) voor meer informatie.
 
    In dit voorbeeld bevat de functie de volgende code:
 
@@ -345,35 +345,35 @@ Als u een JavaScript-sjabloon wilt gebruiken in Adobe Campaign, voert u de volge
    }
    ```
 
-   De JavaScript-sjabloon is alleen geldig als deze functie vooraf van het **[!UICONTROL JavaScript codes]** knooppunt in de boomstructuur is gemaakt, zoals hieronder wordt beschreven:
+   De JavaScript-sjabloon is alleen geldig als deze functie vooraf wordt gemaakt op basis van het knooppunt **[!UICONTROL JavaScript codes]** in de boomstructuur, zoals hieronder:
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
-## Stap 5 - Het creëren van het publicatiemalplaatje {#step-5---creating-the-publication-template}
+## Stap 5 - het Creëren van het publicatiemalplaatje {#step-5---creating-the-publication-template}
 
 De volgende stap bestaat uit het maken van een publicatiesjabloon voor inhoud om het schema, het formulier en de constructiesjabloon voor inhoud te koppelen. Deze publicatiesjabloon kan verschillende uitvoerindelingen hebben.
 
 >[!NOTE]
 >
->Raadpleeg de sjablonen [voor](../../delivery/using/publication-templates.md)publicaties over inhoud voor meer informatie over sjablonen voor inhoudspublicatie.
+>Raadpleeg [Publicatiesjablonen](../../delivery/using/publication-templates.md) voor meer informatie over publicatiesjablonen voor inhoud.
 
 In dit voorbeeld zijn de stappen als volgt:
 
-1. Maak een nieuwe publicatiesjabloon via het **[!UICONTROL Administration > Configuration > Publication templates]** knooppunt.
+1. Maak een nieuwe publicatiesjabloon via het knooppunt **[!UICONTROL Administration > Configuration > Publication templates]**.
 1. Voer een naam en een label in en selecteer het schema en het formulier dat u wilt gebruiken.
-1. Voer vervolgens de naam van de sjabloon in en kies de renderingmodus die u wilt toepassen. Hier hebben we een **[!UICONTROL JavaScript]** type rendering op basis van de hierboven gemaakte sjabloon.
+1. Voer vervolgens de naam van de sjabloon in en kies de renderingmodus die u wilt toepassen. Hier is een rendering van het type **[!UICONTROL JavaScript]** gebaseerd op de hierboven gemaakte sjabloon.
 
    ![](assets/s_ncs_content_param_form_publish.png)
 
    >[!NOTE]
    >
-   >De **[!UICONTROL DOM interface]** optie is standaard ingeschakeld. Dit betekent dat dit document niet toegankelijk is als u de syntaxis E4X gebruikt. De DOM-interface moet worden gebruikt wanneer deze optie is ingeschakeld. Dit is de aanbevolen syntaxis.
+   >De optie **[!UICONTROL DOM interface]** is standaard ingeschakeld. Dit betekent dat dit document niet toegankelijk is als u de syntaxis E4X gebruikt. De DOM-interface moet worden gebruikt wanneer deze optie is ingeschakeld. Dit is de aanbevolen syntaxis.
    >
    >U kunt nog steeds de syntaxis E4X gebruiken. Als dat het geval is, schakelt u deze optie uit.
 
-   Gebruik de **[!UICONTROL Add]** knop om andere transformatiesjablonen te maken.
+   Gebruik de knop **[!UICONTROL Add]** om andere transformatiesjablonen te maken.
 
-1. Klik **[!UICONTROL Save]** om de publicatiesjabloon te maken.
+1. Klik op **[!UICONTROL Save]** om de publicatiesjabloon te maken.
 
 ## Stap 6 - Inhoud maken {#step-6---creating-contents}
 
@@ -381,13 +381,13 @@ U kunt nu inhoud maken op basis van deze publicatiesjabloon.
 
 >[!NOTE]
 >
->Raadpleeg [Een inhoudssjabloon](../../delivery/using/using-a-content-template.md)gebruiken voor meer informatie over het maken van inhoud.
+>Raadpleeg [Een inhoudssjabloon gebruiken](../../delivery/using/using-a-content-template.md) voor meer informatie over het maken van inhoud.
 
-### Inhoud maken in de wizard voor levering {#creating-content-in-the-delivery-wizard}
+### Inhoud maken in de wizard {#creating-content-in-the-delivery-wizard}
 
 Voer de volgende stappen uit om inhoud rechtstreeks in de leveringen te maken:
 
-1. Begin door het publicatiesjabloon via het **[!UICONTROL Advanced]** lusje van de leveringseigenschappen van verwijzingen te voorzien.
+1. Begin door het publiceren malplaatje via het **[!UICONTROL Advanced]** lusje van de leveringseigenschappen van verwijzingen te voorzien.
 
    ![](assets/s_ncs_content_in_delivery.png)
 
@@ -397,6 +397,6 @@ Voer de volgende stappen uit om inhoud rechtstreeks in de leveringen te maken:
 
    ![](assets/s_ncs_content_in_delivery_edition_tab.png)
 
-1. Klik op het **[!UICONTROL HTML preview]** tabblad om de rendering weer te geven. U moet een ontvanger selecteren om verpersoonlijking te testen.
+1. Klik op het tabblad **[!UICONTROL HTML preview]** om de rendering weer te geven. U moet een ontvanger selecteren om verpersoonlijking te testen.
 
    ![](assets/s_ncs_content_use_in_delivery_preview.png)
