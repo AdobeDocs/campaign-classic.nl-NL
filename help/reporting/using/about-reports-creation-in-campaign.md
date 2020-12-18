@@ -25,10 +25,10 @@ Om statistieken over de gegevens in uw gegevensbestand van de Campagne te produc
 
 Voer de volgende stappen uit om een analyserapport over uw gegevens te maken, te publiceren en te leveren:
 
-1. Maak een nieuw rapport: verwijs naar het [Creëren van een nieuw rapport](../../reporting/using/creating-a-new-report.md),
-1. Verzamel de gegevens die u wilt analyseren: verwijs naar het [Verzamelen van gegevens om de context](../../reporting/using/collecting-data-to-analyze.md) te analyseren [en te](../../reporting/using/using-the-context.md)gebruiken,
-1. Bepaal de inhoud van het verslag met de activiteiten en de containers: verwijzen naar het [maken van een tabel](../../reporting/using/creating-a-table.md), het [maken van een grafiek](../../reporting/using/creating-a-chart.md) en de lay-out [Element](../../reporting/using/element-layout.md),
-1. Configureer de weergaveopties: weergavetype, gedeelde rapporten: verwijs naar de vertoningscontext [van het](../../reporting/using/configuring-access-to-the-report.md#report-display-context)Rapport, [Bepalend een voorwaardelijke inhoud](../../reporting/using/defining-a-conditional-content.md) en [het Vormen toegang tot het rapport](../../reporting/using/configuring-access-to-the-report.md),
-1. Publiceer het rapport (publicatiewizard): verwijs naar het [Publiceren van het rapport](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report),
-1. Converteer het rapport: exporteren, historie, weergeven in een browser: Zie [Acties in rapporten](../../reporting/using/actions-on-reports.md).
+1. Maak een nieuw rapport: verwijzen naar [Een nieuw rapport maken](../../reporting/using/creating-a-new-report.md),
+1. Verzamel de gegevens die u wilt analyseren: verwijst naar [Gegevens verzamelen om te analyseren](../../reporting/using/collecting-data-to-analyze.md) en [De context gebruiken](../../reporting/using/using-the-context.md),
+1. Bepaal de inhoud van het verslag met de activiteiten en de containers: verwijzen naar [Een tabel maken](../../reporting/using/creating-a-table.md), [Een grafiek maken](../../reporting/using/creating-a-chart.md) en [Element layout](../../reporting/using/element-layout.md);
+1. Configureer de weergaveopties: weergavetype, gedeelde rapporten: verwijzen naar [De vertoningscontext van het Rapport](../../reporting/using/configuring-access-to-the-report.md#report-display-context), [Bepalend een voorwaardelijke inhoud](../../reporting/using/defining-a-conditional-content.md) en [Het vormen toegang tot het rapport](../../reporting/using/configuring-access-to-the-report.md),
+1. Publiceer het rapport (publicatiewizard): verwijzen naar [Publiceren van het rapport](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report),
+1. Converteer het rapport: exporteren, historie, weergeven in een browser: Raadpleeg [Handelingen in rapporten](../../reporting/using/actions-on-reports.md).
 
