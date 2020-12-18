@@ -15,11 +15,11 @@ ht-degree: 0%
 ---
 
 
-# IMS implementeren{#implementing-ims}
+# IMS{#implementing-ims} implementeren
 
-## De IMS-verbinding inschakelen {#enabling-the-ims-connection}
+## De IMS-verbinding {#enabling-the-ims-connection} inschakelen
 
-1. Als u verbinding wilt maken via de IMS, checkt u het verbindingsvenster van de console **[!UICONTROL Connect with an Adobe ID]** in.
+1. Om het verbinden via IMS toe te laten, controleer **[!UICONTROL Connect with an Adobe ID]** in het de aansluitingsvenster van de console.
 
    ![](assets/ims_1.png)
 
@@ -27,9 +27,9 @@ ht-degree: 0%
 
    ![](assets/ims_2.png)
 
-## De IMS-verbinding uitschakelen {#disabling-the-ims-connection}
+## De IMS-verbinding {#disabling-the-ims-connection} uitschakelen
 
-Als u de verbinding via de Adobe ID wilt uitschakelen, verbreekt u de verbinding, klikt u **[!UICONTROL File > Connections]** en schakelt u de optie uit **[!UICONTROL Connect with an Adobe ID]**.
+Als u verbinding via de Adobe ID wilt uitschakelen, verbreekt u de verbinding, klikt u op **[!UICONTROL File > Connections]** en schakelt u **[!UICONTROL Connect with an Adobe ID]** uit.
 
 ![](assets/ims_4.png)
 
