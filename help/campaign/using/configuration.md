@@ -21,9 +21,9 @@ Deze sectie is bedoeld voor personen die verantwoordelijk zijn voor het configur
 
 Dit laat u begrijpen hoe te om het standaardgegevensmodel aan de specifieke aard van een transactietabel buiten Adobe Campaign met de lijst van individuen aan te passen. Deze tabel met personen kan samenvallen met de tabel met beschikbare personen in Adobe Campaign of met een andere tabel
 
-De meethypothese wordt gestart door de workflow van het bewerkingsproces ( **[!UICONTROL operationMgt]** ). Elke hypothese vertegenwoordigt een afzonderlijk proces dat asynchroon wordt uitgevoerd met een uitvoeringsstatus (Bewerkt, In behandeling, Voltooid, Mislukt, enz.) en gecontroleerd door een planner die prioritaire beperkingen, beperking van het aantal gelijktijdige processen, de lage activiteitenpagina en automatische uitvoering met frequentie beheert.
+De meethypothese wordt gestart door de workflow van het bewerkingsproces ( **[!UICONTROL operationMgt]**). Elke hypothese vertegenwoordigt een afzonderlijk proces dat asynchroon wordt uitgevoerd met een uitvoeringsstatus (Bewerkt, In behandeling, Voltooid, Mislukt, enz.) en gecontroleerd door een planner die prioritaire beperkingen, beperking van het aantal gelijktijdige processen, de lage activiteitenpagina en automatische uitvoering met frequentie beheert.
 
-## Schema&#39;s configureren {#configuring-schemas}
+## Schema&#39;s {#configuring-schemas} configureren
 
 >[!CAUTION]
 >
@@ -33,11 +33,11 @@ De integratie van de toepassing is vereist alvorens de reactiemodule te gebruike
 
 ### Standaardschema&#39;s {#standard-schemas}
 
-Het out-of-the-box **[!UICONTROL nms:remaMatch]** schema bevat de tabel met het reactielogboek, d.w.z. de relatie tussen individuen, hypothese en transactietabel. Dit schema wordt gebruikt als overervingsschema voor de definitieve bestemmingstabel van de reactielogboeken.
+Het schema **[!UICONTROL nms:remaMatch]** uit de doos bevat de lijst van het reactielogboek, d.w.z. de verhouding tussen individuen, hypothese en transactietabel. Dit schema wordt gebruikt als overervingsschema voor de definitieve bestemmingstabel van de reactielogboeken.
 
-Het **[!UICONTROL nms:remaMatchRcp]** schema wordt ook standaard geleverd en bevat de opslag van reactielogboeken voor Adobe Campaign-ontvangers ( **[!UICONTROL nms:recipient]** ). Om te kunnen worden gebruikt, moet het worden uitgebreid tot een transactietabel (met aankopen enz.).
+Het schema **[!UICONTROL nms:remaMatchRcp]** wordt ook standaard geleverd en bevat de opslag van reactielogboeken voor Adobe Campaign-ontvangers ( **[!UICONTROL nms:recipient]** ). Om te kunnen worden gebruikt, moet het worden uitgebreid tot een transactietabel (met aankopen enz.).
 
-### Transactietabellen en transactiegegevens {#transaction-tables-and-transaction-details}
+### Transactietabellen en transactiedetails {#transaction-tables-and-transaction-details}
 
 De transactietabel moet directe koppelingen naar personen bevatten.
 
@@ -57,22 +57,22 @@ In het volgende schema ziet u hoe u verbinding maakt tussen de verschillende tab
 
 ### Responsbeheer met Adobe Campaign-ontvangers {#response-management-with-adobe-campaign-recipients}
 
-In dit voorbeeld integreren we een aankooptabel in onze responsbeheermodule met behulp van de tabel voor Adobe Campaign-ontvangers ( **[!UICONTROL nms:recipient]** ).
+In dit voorbeeld integreren we een aankooptabel in onze responsbeheermodule met behulp van de Adobe Campaign-tabel voor ontvangers ( **[!UICONTROL nms:recipient]** ).
 
-De lijst van reactielogboeken op een **[!UICONTROL nms:remaMatchRcp]** ontvanger wordt uitgebreid om een verbinding aan het schema van de kooplijst toe te voegen. In het volgende voorbeeld wordt de aankooptabel **demo:purchase** genoemd.
+De lijst van reactie meldt op een **[!UICONTROL nms:remaMatchRcp]** ontvanger wordt uitgebreid om een verbinding aan het schema van de kooplijst toe te voegen. In het volgende voorbeeld wordt de aankooptabel **demo:purchase** genoemd.
 
-1. Selecteer via de Adobe Campaign-verkenner de optie **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**.
-1. Klik met de rechtermuisknop op **Ontvanger** en selecteer **[!UICONTROL Actions]** en **[!UICONTROL Modify the options of the targeting dimensions]**.
+1. Selecteer via de Adobe Campaign-verkenner **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**.
+1. Klik met de rechtermuisknop **Ontvanger** en selecteer **[!UICONTROL Actions]** en **[!UICONTROL Modify the options of the targeting dimensions]**.
 
    ![](assets/delivery_mapping1.png)
 
-1. U kunt de afbeelding aanpassen **[!UICONTROL Extension namespace]** in het volgende venster en vervolgens klikken **[!UICONTROL Next]**.
+1. U kunt **[!UICONTROL Extension namespace]** in het volgende venster personaliseren, dan klik **[!UICONTROL Next]**.
 
    ![](assets/delivery_mapping2.png)
 
-1. Controleer in de **[!UICONTROL Response management]** categorie of het **[!UICONTROL Generate a storage schema for reactions]** selectievakje is ingeschakeld.
+1. Controleer of in de categorie **[!UICONTROL Response management]** het selectievakje **[!UICONTROL Generate a storage schema for reactions]** is ingeschakeld.
 
-   Klik vervolgens **[!UICONTROL Define additional fields...]** om de gerelateerde transactietabellen te selecteren en voeg de gewenste velden toe aan de extensie van het schema nms:remaMatchRcp.
+   Klik vervolgens op **[!UICONTROL Define additional fields...]** om de gerelateerde transactietabellen te selecteren en voeg de gewenste velden toe aan de extensie van het schema nms:remaMatchRcp.
 
    ![](assets/delivery_mapping3.png)
 
@@ -100,15 +100,15 @@ name="remaMatchRcp" namespace="cus">
 </srcSchema>
 ```
 
-### Het beheer van de reactie met een gepersonaliseerde ontvankelijke lijst {#response-management-with-a-personalized-recipient-table}
+### Responsbeheer met een gepersonaliseerde tabel voor ontvangers {#response-management-with-a-personalized-recipient-table}
 
 In dit voorbeeld integreren we een aankooptabel in onze responsbeheermodule met een andere individuele tabel dan de tabel voor ontvangers die beschikbaar is in Adobe Campaign.
 
-* Creërend een nieuw schema van het reactielogboek dat van het **[!UICONTROL nms:remaMatch]** schema wordt afgeleid.
+* Creërend een nieuw schema van het reactielogboek dat uit het **[!UICONTROL nms:remaMatch]** schema wordt afgeleid.
 
    Aangezien de lijst van individuen van de lijst van ontvangers van Adobe Campaign verschillend is, is het noodzakelijk om een nieuw schema van de reactielogboeken tot stand te brengen die op het **[!UICONTROL nms:remaMatch]** schema worden gebaseerd. Vul vervolgens het bestand in met koppelingen naar de leveringslogboeken en de aankooptabel.
 
-   In het volgende voorbeeld gebruiken we het schema **demo:wideLogPers** en de **demo:purchase** transactie:
+   In het volgende voorbeeld gebruiken we het schema **demo:wideLogPers** en de transactietabel **demo:purchase**:
 
    ```
    <srcSchema desc="Linking of a recipient transaction to a hypothesis"    
@@ -127,7 +127,7 @@ In dit voorbeeld integreren we een aankooptabel in onze responsbeheermodule met 
    </srcSchema>
    ```
 
-* De vorm van de hypothese wijzigen in het **[!UICONTROL nms:remaHypothesis]** schema.
+* Het wijzigen van de hypothesevorm in het schema **[!UICONTROL nms:remaHypothesis]**.
 
    Standaard is de lijst met responslogboeken zichtbaar in de logboeken van de geadresseerde. U moet daarom het hypotheseformulier wijzigen om de nieuwe reactielogboeken te bekijken die tijdens de vorige stap zijn gemaakt.
 
@@ -144,7 +144,7 @@ In dit voorbeeld integreren we een aankooptabel in onze responsbeheermodule met 
       </container> 
    ```
 
-## Beheer van indicatoren {#managing-indicators}
+## Indicatoren {#managing-indicators} beheren
 
 De module van de Manager van de Reactie komt met een lijst van vooraf bepaalde indicatoren. U kunt echter ook andere maatindicatoren toevoegen.
 
