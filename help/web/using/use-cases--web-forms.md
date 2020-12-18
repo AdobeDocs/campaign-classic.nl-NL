@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Gebruiksscenario: webformulieren{#use-cases-web-forms}
 
-## Abonnementsformulieren met dubbele aanmelding maken {#create-a-subscription--form-with-double-opt-in}
+## Abonnementsformulier maken met dubbele aanmelding {#create-a-subscription--form-with-double-opt-in}
 
 Wanneer u de informatiediensten aanbiedt, moeten de ontvangers intekenen om alle verbonden mededelingen te ontvangen. Om onjuiste mededelingen te vermijden en ervoor te zorgen de ontvanger opzettelijk wordt ingetekend, adviseren wij het verzenden van een verzoek van de abonnementsbevestiging om tot een dubbele opt-in te leiden. Het abonnement wordt pas van kracht nadat de gebruiker op de koppeling klikt die in het bevestigingsbericht is opgenomen.
 
@@ -26,9 +26,9 @@ Dit voorbeeld is gebaseerd op het volgende scenario:
 1. Een abonnementsformulier voor nieuwsbrieven maken op een website die een selectievakje bevat voor het abonneren op een tijdelijke service. Met deze service kunt u berichten voor abonnementsbevestiging verzenden.
 1. Het creëren van de levering van de abonnementsbevestiging met een leveringsmalplaatje verbonden aan de vorm van het Web. Het bevat de bevestigingskoppeling die het formulier oproept voor een abonnement op een nieuwsbrief en een goedkeuringsbericht voor een abonnement weergeeft.
 
-### Stap 1 - Informatiediensten maken {#step-1---creating-information-services}
+### Stap 1 - Informatieservices maken {#step-1---creating-information-services}
 
-1. Maak de service voor abonnementen op nieuwsbrieven die aan uw ontvangers moet worden aangeboden. Raadpleeg [deze sectie](../../delivery/using/about-services-and-subscriptions.md)voor meer informatie over het maken van een nieuwsbrief.
+1. Maak de service voor abonnementen op nieuwsbrieven die aan uw ontvangers moet worden aangeboden. Raadpleeg [deze sectie](../../delivery/using/about-services-and-subscriptions.md) voor meer informatie over het maken van een nieuwsbrief.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
@@ -40,17 +40,17 @@ Dit voorbeeld is gebaseerd op het volgende scenario:
 
 De berichten van de bevestiging worden verzonden via een specifiek leveringsmalplaatje dat op het tijdelijke de dienstniveau van verwijzingen wordt voorzien.
 
-1. In the **[!UICONTROL Explorer]** , select **[!UICONTROL Resources > Templates > Delivery templates]**.
+1. Selecteer **[!UICONTROL Resources > Templates > Delivery templates]** in **[!UICONTROL Explorer]**.
 1. Maak een leveringssjabloon voor het verzenden van de bevestigingsberichten voor abonnementen.
-1. Klik op de **[!UICONTROL To]** knop in het dialoogvenster **[!UICONTROL Email parameters]** om de leveringssjabloon te koppelen aan de doeltoewijzing voor abonnementen in plaats van aan ontvangers.
+1. Klik op de knop **[!UICONTROL To]** in **[!UICONTROL Email parameters]** om de leveringssjabloon te koppelen aan de doeltoewijzing voor abonnementen in plaats van aan ontvangers.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
 1. Aangezien de ontvangers van deze levering hun goedkeuring niet hebben bevestigd, zijn zij nog op de lijst van afgewezen personen van het gegevensbestand. Voor hen om deze mededeling te ontvangen, moet u leveringen toelaten die op dit malplaatje aan doelontvangers op lijst van afgewezen personen worden gebaseerd.
 
-   Klik hiertoe op het **[!UICONTROL Exclusions]** tabblad.
+   Klik hiertoe op het tabblad **[!UICONTROL Exclusions]**.
 
-1. Klik op de **[!UICONTROL Edit...]** koppeling en schakel de **[!UICONTROL Exclude recipients who no longer want to be contacted]** optie uit.
+1. Klik op de koppeling **[!UICONTROL Edit...]** en schakel de optie **[!UICONTROL Exclude recipients who no longer want to be contacted]** uit.
 
    <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
@@ -70,7 +70,7 @@ De berichten van de bevestiging worden verzonden via een specifiek leveringsmalp
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_3c.png)
 
-### Stap 3 - Het abonnementsformulier maken {#step-3---creating-the-subscription-form}
+### Stap 3 - het creëren van de abonnementsvorm {#step-3---creating-the-subscription-form}
 
 In het webformulier zijn zowel een abonnement als een bevestiging van een abonnement voor de ontvanger ingeschakeld.
 
@@ -84,9 +84,9 @@ Volg de onderstaande stappen om dit te doen:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5a.png)
 
-1. Op het **[!UICONTROL Edit]** lusje, moeten wij het bestaande werkschema vormen aangezien wij een bevestigingsbericht aan de ontvangers willen toevoegen die zich willen abonneren.
+1. Op het tabblad **[!UICONTROL Edit]** moeten we de bestaande workflow configureren omdat we een bevestigingsbericht willen toevoegen aan de ontvangers die zich willen abonneren.
 
-   Dubbelklik hiertoe op het **[!UICONTROL Preloading]** vak en configureer het als volgt.
+   Dubbelklik hiertoe op de doos **[!UICONTROL Preloading]** en configureer deze als volgt.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5b.png)
 
@@ -96,11 +96,11 @@ Volg de onderstaande stappen om dit te doen:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6e.png)
 
-   De **[!UICONTROL Test]** activiteit kan op de ontvankelijke e-mail betrekking hebben. In dit geval, vorm het als volgt:
+   De activiteit **[!UICONTROL Test]** kan de ontvankelijke e-mail betreffen. In dit geval, vorm het als volgt:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6d.png)
 
-1. Voeg twee **[!UICONTROL Script]** activiteiten toe aan uw workflow.
+1. Voeg twee **[!UICONTROL Script]** activiteiten aan uw werkschema toe.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
@@ -112,7 +112,7 @@ Volg de onderstaande stappen om dit te doen:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
 
-   De tweede **[!UICONTROL Script]** activiteit staat leveringen toe om aan de gebruikers te worden verzonden en hen aan de nieuwsbrief in te schrijven. Met de laatste twee regels van het script kunt u de ontvangers van de tijdelijke map overbrengen naar een andere map en worden ze afgestemd op bestaande profielen zodra ze het abonnement hebben bevestigd.
+   De tweede activiteit **[!UICONTROL Script]** staat leveringen toe om aan de gebruikers te worden verzonden en hen aan nieuwsbrief te intekenen. Met de laatste twee regels van het script kunt u de ontvangers van de tijdelijke map overbrengen naar een andere map en worden ze afgestemd op bestaande profielen zodra ze het abonnement hebben bevestigd.
 
    ```
    ctx.recipient.@blackList=0
@@ -123,15 +123,15 @@ Volg de onderstaande stappen om dit te doen:
 
    >[!NOTE]
    >
-   >De **[!UICONTROL Temp]** partitie kan ook regelmatig worden gewist met behulp van een workflow.
+   >De **[!UICONTROL Temp]**-partitie kan ook regelmatig worden gewist met behulp van een workflow.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6b.png)
 
-1. Dubbelklik op de **[!UICONTROL Subscription]** activiteit om het abonnementsformulier aan te passen en schakel een selectievakje in met de eerder gemaakte tijdelijke service.
+1. Dubbelklik op de activiteit **[!UICONTROL Subscription]** om het abonnementsformulier aan te passen en schakel een selectievakje in met de eerder gemaakte tijdelijke service.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5c.png)
 
-1. Configureer de **[!UICONTROL Storage]** activiteit om de informatie op te slaan die op de formulierpagina is ingevoerd.
+1. Configureer de activiteit **[!UICONTROL Storage]** om de informatie op te slaan die op de formulierpagina is ingevoerd.
 
    Deze activiteit laat u ontvankelijke profielen in een specifieke tijdelijke omslag tot stand brengen om hen los van de profielen in het gegevensbestand te plaatsen, waarnaar de mededelingen kunnen worden verzonden.
 
@@ -143,7 +143,7 @@ Volg de onderstaande stappen om dit te doen:
 
 1. Voeg twee **[!UICONTROL End]** activiteiten toe om een bericht voor de gebruiker te tonen.
 
-   In het tweede **[!UICONTROL End]** vak wordt het bevestigingsbericht weergegeven wanneer het abonnement is voltooid.
+   Het tweede vakje **[!UICONTROL End]** zal het bevestigingsbericht tonen zodra het abonnement volledig is.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5h.png)
 
@@ -167,7 +167,7 @@ Het abonnement op de nieuwsbrief omvat de volgende stappen:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   De gebruiker wordt toegevoegd aan de Adobe Campaign-database in de **[!UICONTROL Temp]** map en zijn profiel staat op de lijst van afgewezen personen totdat hij of zij zijn of haar abonnement met de e-mail bevestigt.
+   De gebruiker wordt toegevoegd aan de Adobe Campaign-database in de map **[!UICONTROL Temp]** en het profiel van de gebruiker is in de lijst van afgewezen personen totdat deze zijn abonnement met de e-mail bevestigt.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
