@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Aanbiedingen op een uitgaand kanaal{#offers-on-an-outbound-channel}
 
-## E-mailaanbieding {#email-offer-delivery}
+## Aanbieding via e-mail {#email-offer-delivery}
 
 In onze database is er een categorie reisaanbiedingen voor Afrika. De geschiktheid, context en representaties van elk aanbod zijn geconfigureerd. We willen nu een campagne opzetten om onze aanbiedingen via e-mail te presenteren.
 
@@ -25,7 +25,7 @@ In onze database is er een categorie reisaanbiedingen voor Afrika. De geschikthe
 
    ![](assets/offer_delivery_example_001.png)
 
-1. Bewerk de e-maillevering en klik op het **[!UICONTROL Offers]** pictogram.
+1. Bewerk de e-maillevering en klik op het pictogram **[!UICONTROL Offers]**.
 
    ![](assets/offer_delivery_example_002.png)
 
@@ -53,18 +53,18 @@ In onze database is er een categorie reisaanbiedingen voor Afrika. De geschikthe
 
    ![](assets/offer_delivery_example_008.png)
 
-1. Klik **[!UICONTROL Preview]** om een voorvertoning van uw voorstellen in de levering weer te geven en selecteer vervolgens een ontvanger om een voorvertoning van de voorstellen te bekijken zodra deze ontvangen.
+1. Klik op **[!UICONTROL Preview]** om een voorvertoning van uw voorstellen in de levering weer te geven en selecteer vervolgens een ontvanger om een voorvertoning van de voorstellen weer te geven zodra deze worden ontvangen.
 
    ![](assets/offer_delivery_example_009.png)
 
 1. Sla uw levering op en start de doelworkflow.
-1. Open de levering en klik op het **[!UICONTROL Audit]** tabblad van de levering: u kunt zien dat de aanbiedingsmotor de voorstellen heeft geselecteerd die uit de diverse aanbiedingen in de catalogus moeten worden gemaakt.
+1. Open de levering en klik op het tabblad **[!UICONTROL Audit]** van de levering: u kunt zien dat de aanbiedingsmotor de voorstellen heeft geselecteerd die uit de diverse aanbiedingen in de catalogus moeten worden gemaakt.
 
    ![](assets/offer_delivery_example_010.png)
 
-## Voer een aanbiedingssimulatie uit {#perform-an-offer-simulation}
+## Een aanbiedingssimulatie uitvoeren {#perform-an-offer-simulation}
 
-1. Klik in het **[!UICONTROL Profiles and Targets]** universum op de **[!UICONTROL Simulations]** koppeling en klik vervolgens op de **[!UICONTROL Create]** knop.
+1. Klik in het **[!UICONTROL Profiles and Targets]** universum op de koppeling **[!UICONTROL Simulations]** en klik vervolgens op de knop **[!UICONTROL Create]**.
 
    ![](assets/offer_simulation_001.png)
 
@@ -76,7 +76,7 @@ In onze database is er een categorie reisaanbiedingen voor Afrika. De geschikthe
 
    ![](assets/offer_simulation_example_003.png)
 
-1. Klik vervolgens op het **[!UICONTROL Edit]** tabblad **[!UICONTROL Scope]**.
+1. Klik op de tab **[!UICONTROL Edit]** en vervolgens **[!UICONTROL Scope]**.
 
    ![](assets/offer_simulation_example_004.png)
 
@@ -91,7 +91,7 @@ In onze database is er een categorie reisaanbiedingen voor Afrika. De geschikthe
 1. Voer geldigheidsdatums in. U moet ten minste een begindatum invoeren. Hiermee kan het filter voor de aanbiedingsengine worden aangeboden en worden de opties gekozen die op een bepaalde datum geldig zijn.
 1. Geef zo nodig een of meer thema&#39;s op om het aantal aanbiedingen te beperken tot de thema&#39;s die dit trefwoord in hun instellingen bevatten.
 
-   In ons voorbeeld bevat de categorie **Reizen** twee subcategorieën met twee aparte thema&#39;s. We willen een simulatie uitvoeren voor aanbiedingen met het thema **Klanten > 1 jaar** .
+   In ons voorbeeld bevat de categorie **Reizen** twee subcategorieën met twee aparte thema&#39;s. Wij willen een simulatie voor aanbiedingen met **Klanten>1 jaar** thema in werking stellen.
 
    ![](assets/offer_simulation_example_007.png)
 
@@ -105,21 +105,21 @@ In onze database is er een categorie reisaanbiedingen voor Afrika. De geschikthe
 
    ![](assets/offer_simulation_example_009.png)
 
-1. Sla de instellingen op en klik vervolgens op **[!UICONTROL Start]** het **[!UICONTROL Dashboard]** tabblad om de simulatie uit te voeren.
+1. Sla uw instellingen op en klik vervolgens op **[!UICONTROL Start]** op het tabblad **[!UICONTROL Dashboard]** om de simulatie uit te voeren.
 
    ![](assets/offer_simulation_example_010.png)
 
-1. Als de simulatie is voltooid, raadpleegt u de **[!UICONTROL Results]** informatie voor een gedetailleerde uitsplitsing van de voorstellen per aanbieding.
+1. Als de simulatie is voltooid, raadpleegt u **[!UICONTROL Results]** voor een gedetailleerde uitsplitsing van de voorstellen per aanbieding.
 
    In ons voorbeeld heeft de aanbiedingsmotor de uitsplitsing van het aanbod gebaseerd op drie voorstellen.
 
    ![](assets/offer_simulation_example_011.png)
 
-1. Geef de selectie weer **[!UICONTROL Breakdown of offers by rank]** om de lijst met aanbiedingen weer te geven die door de aanbiedingsengine is geselecteerd.
+1. Geef **[!UICONTROL Breakdown of offers by rank]** weer om de lijst met aanbiedingen weer te geven die door de aanbiedingsengine zijn geselecteerd.
 
    ![](assets/offer_simulation_example_012.png)
 
-1. Indien nodig, kunt u de werkingsgebiedmontages veranderen en de simulatie opnieuw in werking stellen door te klikken **[!UICONTROL Start simulation]**.
+1. Indien nodig, kunt u de werkingsgebiedmontages veranderen en de simulatie opnieuw in werking stellen door **[!UICONTROL Start simulation]** te klikken.
 
    ![](assets/offer_simulation_example_010.png)
 
