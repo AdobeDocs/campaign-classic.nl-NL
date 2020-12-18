@@ -27,7 +27,7 @@ Met de Digital Content Editor kunt u pagina-elementen invoegen en opmaken en dat
 >[!CAUTION]
 Er moet naar alle externe bronnen worden verwezen met een HTTPS-URL.
 
-## Belangrijkste stappen voor het gebruik van de Digital Content Editor {#content-editor-general-operation}
+## Belangrijke stappen voor het gebruik van de Editor voor digitale inhoud {#content-editor-general-operation}
 
 In deze sectie worden de belangrijkste stappen beschreven voor het bewerken en uploaden van inhoud die met de DCE is bewerkt, in de context van een webtoepassing en leveringsontwerp.
 
@@ -38,19 +38,19 @@ De algemene operatie is als volgt:
 Als u een eenvoudige **webtoepassing** wilt maken, moet u:
 
 1. Een webtoepassing maken - [Meer informatie](../../web/using/creating-a-landing-page.md)
-1. Bestaande inhoud selecteren of inhoud maken op basis van een standaardsjabloon - Meer [informatie](../../web/using/template-management.md)
+1. Bestaande inhoud selecteren of inhoud maken op basis van een standaardsjabloon - [Meer informatie](../../web/using/template-management.md)
 1. Inhoud bewerken en configureren - [Meer informatie](../../web/using/editing-content.md)
 1. De webtoepassing publiceren - [Meer informatie](../../web/using/creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
-In [deze sectie](../../web/using/creating-a-landing-page.md)vindt u een volledige implementatiemonster in de context van een webtoepassing.
+In [deze sectie](../../web/using/creating-a-landing-page.md) vindt u een volledige implementatiemonster in de context van een webtoepassing.
 
 Als u een **e-maillevering** wilt maken, moet u:
 
 1. Een levering maken op basis van een DCE-sjabloon - [Meer informatie](../../web/using/use-case--creating-an-email-delivery.md)
 1. Bestaande inhoud selecteren of inhoud maken op basis van een [standaardsjabloon](../../web/using/template-management.md)
 1. Online-inhoud bewerken en configureren
-1. De levering verzenden - [Meer informatie](../../delivery/using/steps-about-delivery-creation-steps.md)
+1. Verstuur de levering - [Meer informatie](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
-In [dit geval](../../web/using/use-case--creating-an-email-delivery.md)is een volledige implementatiemonster beschikbaar in de context van een e-maillevering.
+In [dit gebruiksgeval](../../web/using/use-case--creating-an-email-delivery.md) vindt u een volledige implementatiemonster in de context van een e-maillevering.
