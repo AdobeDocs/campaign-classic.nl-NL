@@ -19,7 +19,7 @@ ht-degree: 4%
 
 De volgende opdrachtregels vereisen toegang tot de toepassingsserver. Voor plaatsingen die door Adobe worden ontvangen, kunnen deze bevelen slechts door Adobe worden uitgevoerd.
 
-## Een instantie maken {#creating-an-instance}
+## Een instantie {#creating-an-instance} maken
 
 Het maken van instanties kan worden uitgevoerd met behulp van opdrachtregels, met de syntaxis:
 
@@ -27,11 +27,11 @@ Het maken van instanties kan worden uitgevoerd met behulp van opdrachtregels, me
 nlserver config -addinstance:instance/masques DNS[/lang]
 ```
 
-(waarbij **eng** en **fra** mogelijke waarden voor de `[lang]` parameter zijn)
+(waarbij **eng** en **fra** mogelijke waarden zijn voor de parameter `[lang]`)
 
-Met de command **nlserver config -addinstance:instance1/demo*/eng** kunt u een instantie met de naam **instance1** in het Engels maken met de DNS-maskerdemo*.
+Met de opdracht **nlserver config -addinstance:instance1/demo*/eng** kunt u een instantie maken met de naam **instance1** in het Engels met de DNS-maskerdemo*.
 
-## Database declareren {#declaring-a-database}
+## Database {#declaring-a-database} declareren
 
 U kunt een bestaande database aan een instantie koppelen via de opdrachtregel door de volgende syntaxis te gebruiken:
 
@@ -39,14 +39,14 @@ U kunt een bestaande database aan een instantie koppelen via de opdrachtregel do
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 ```
 
-De volgende waarden zijn mogelijk voor de **`[rdbms]`** parameter:
+De volgende waarden zijn mogelijk voor de parameter **`[rdbms]`**:
 
 * **postgresql**: voor PostgreSQL,
 * **oracle**: voor Oracle,
 * **mssql**: voor Microsoft SQL Server,
 * **DB2**: voor de DB2-engine.
 
-Het volgende bevel vormt de **demo** instantie met SQL typeserver die als **base6** wordt bekend, met de **campagnerekening** en zijn **wachtwoord** op de **dbsrv** server wordt verbonden:
+Met de volgende opdracht configureert u de **demo**-instantie met de SQL-typeserver die bekend staat als **base6**, gekoppeld aan de **campagne**-account en zijn **password** op de **dbsrv**-server:
 
 ```
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo
