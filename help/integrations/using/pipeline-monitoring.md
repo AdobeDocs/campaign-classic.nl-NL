@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Pipelinecontrole {#pipeline-monitoring}
 
-De [!DNL pipelined] statuswebservice geeft informatie over de status van het [!DNL pipelined] proces.
+De [!DNL pipelined] status webservice geeft informatie over de status van het [!DNL pipelined] proces.
 
 U kunt deze functie handmatig openen in een browser of automatisch met een bewakingstoepassing.
 
@@ -42,7 +42,7 @@ Aanbevolen indicatoren voor de bewaking worden gemarkeerd.
    * next-offsets-flush: tijd om tot de volgende partij te wachten, wanneer gebeëindigd.
    * verwerkt-sinds-laatste-flush: aantal triggers verwerkt in de laatste batch.
 * verpletteren
-   * triggers: lijst met opgehaalde triggers. In de [!DNL pipelined] optie geconfigureerd.
+   * triggers: lijst met opgehaalde triggers. Gevormd in [!DNL pipelined] optie.
 * stats
    * average-pointer-flush-time-ms: gemiddelde verwerkingstijd voor één partij triggers.
    * gemiddelde-trigger-processing-time-ms: gemiddelde tijd die wordt doorgebracht het ontleden van de trekkergegevens.
@@ -72,7 +72,7 @@ Deze stats worden weergegeven per verwerkingsthread.
    * hertry-validity-duration-ms: duur van de tijdverwerking wordt opnieuw geprobeerd tot het bericht wordt verworpen.
    * Rapport pijpleidingberichten
 
-## Pijplijnberichten {#pipeline-report}
+## Rapport {#pipeline-report} Pijpleidingberichten
 
 Dit rapport geeft het aantal berichten per uur in de afgelopen vijf dagen weer.
 
