@@ -26,5 +26,5 @@ Op een schone server is de herstelprocedure als volgt:
 * de database te creëren en opnieuw op te bouwen;
 * start Adobe Campaign.
 
-For more information, refer to the **Installation Guide**.
+Raadpleeg de **Installatiegids** voor meer informatie.
 
