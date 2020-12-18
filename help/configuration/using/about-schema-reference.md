@@ -19,9 +19,9 @@ ht-degree: 7%
 
 In dit hoofdstuk wordt beschreven hoe u extensieschema&#39;s configureert om het conceptuele gegevensmodel van de Adobe Campaign-database uit te breiden.
 
-Raadpleeg het gegevensmodel [](https://helpx.adobe.com/nl/campaign/kb/acc-datamodel.html)Campaign Classic voor een beter begrip van ingebouwde tabellen en hun interactie.
+Voor een beter begrip van ingebouwde lijsten van de Campagne en hun interactie, verwijs naar [Campaign Classic gegevensmodel](https://helpx.adobe.com/nl/campaign/kb/acc-datamodel.html).
 
-De fysieke en logische structuur van de data die in de applicatie worden overgedragen, wordt in XML beschreven. It obeys a grammar specific to Adobe Campaign, called a **schema**.
+De fysieke en logische structuur van de data die in de applicatie worden overgedragen, wordt in XML beschreven. Het volgt een grammatica specifiek voor Adobe Campaign, genoemd a **schema**.
 
 Een schema is een XML-document dat is gekoppeld aan een databasetabel. De code definieert de gegevensstructuur en beschrijft de SQL-definitie van de tabel:
 
@@ -48,7 +48,7 @@ In de volgende afbeelding ziet u de locatie van schema&#39;s in het Adobe Campai
 
 Het hoofdelement van het schema is **`<srcschema>`**. Het bevat de **`<element>`** en **`<attribute>`** subelementen.
 
-Het eerste **`<element>`** subelement valt samen met de hoofdmap van de entiteit.
+Het eerste **`<element>`** subelement valt samen met de wortel van de entiteit.
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -68,13 +68,13 @@ Het eerste **`<element>`** subelement valt samen met de hoofdmap van de entiteit
 
 ![](assets/s_ncs_configuration_schema_and_entity.png)
 
-De **`<element>`** tags definiëren de namen van entiteitselementen. **`<attribute>`** tags in het schema de namen definiëren van de kenmerken in de **`<element>`** tags waaraan ze zijn gekoppeld.
+Met de **`<element>`**-tags worden de namen van entiteitselementen gedefinieerd. **`<attribute>`** tags in het schema de namen definiëren van de kenmerken in de  **`<element>`** tags waaraan ze zijn gekoppeld.
 
 ## Identificatie van een schema {#identification-of-a-schema}
 
 Een gegevensschema wordt geïdentificeerd door zijn naam en zijn namespace.
 
-Met een naamruimte kunt u een set schema&#39;s groeperen op interessegebied. Bijvoorbeeld, wordt **concentraat** namespace gebruikt voor klant-specifieke configuratie (**klanten**).
+Met een naamruimte kunt u een set schema&#39;s groeperen op interessegebied. De naamruimte **cus** wordt bijvoorbeeld gebruikt voor klantspecifieke configuratie (**klanten**).
 
 >[!IMPORTANT]
 >
@@ -90,4 +90,4 @@ Bepaalde naamruimten zijn gereserveerd voor beschrijvingen van de systeementitei
 * **ncm**: met betrekking tot inhoudsbeheer,
 * **temp**: gereserveerd voor tijdelijke regelingen.
 
-De identificatiesleutel van een schema is een tekenreeks die is opgebouwd met behulp van de naamruimte en de naam gescheiden door een dubbele punt. bijvoorbeeld: **focus:ontvanger**.
+De identificatiesleutel van een schema is een tekenreeks die is opgebouwd met behulp van de naamruimte en de naam gescheiden door een dubbele punt. bijvoorbeeld: **cus:ontvanger**.
