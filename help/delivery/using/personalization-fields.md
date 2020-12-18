@@ -19,7 +19,7 @@ ht-degree: 8%
 
 Personalisatievelden worden gebruikt voor personalisatie op het eerste niveau van de content van geleverde berichten. De velden die u in hoofdcontent invoegt, geven de positie aan waar de gegevens uit de geselecteerde gegevensbron moeten worden ingevoegd.
 
-In het verpersoonlijkingsveld met de syntaxis **&lt;%= receiving.LastName %>** geeft Adobe Campaign bijvoorbeeld de opdracht de naam van de ontvanger in te voegen in de database (tabel met ontvangers).
+Bijvoorbeeld, vertelt het verpersoonlijkingsgebied met **&lt;%= receiving.LastName %>** syntaxis Adobe Campaign om de naam van de ontvanger in het gegevensbestand (ontvankelijke lijst) op te nemen.
 
 ![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](#personalization-fields-video)
 
@@ -44,20 +44,20 @@ Als u verpersoonlijkingsvelden wilt invoegen, klikt u op het vervolgkeuzepictogr
 
 ![](assets/s_ncs_user_add_custom_field.png)
 
-Na de selectie van een gegevensbron (ontvangende velden of bestandsveld) neemt deze invoeging de vorm aan van een opdracht die wordt geïnterpreteerd door Adobe Campaign en wordt vervangen door de waarde van het veld voor een bepaalde ontvanger. De fysieke vervanging kan dan op het **[!UICONTROL Preview]** lusje worden bekeken.
+Na de selectie van een gegevensbron (ontvangende velden of bestandsveld) neemt deze invoeging de vorm aan van een opdracht die wordt geïnterpreteerd door Adobe Campaign en wordt vervangen door de waarde van het veld voor een bepaalde ontvanger. De fysieke vervanging kan dan op **[!UICONTROL Preview]** tabel worden bekeken.
 
-## Voorbeeld van personalisatievelden {#personalization-fields-example}
+## Voorbeeld van aanpassingsvelden {#personalization-fields-example}
 
 We maken een e-mail waarin we eerst de naam van de ontvanger invoegen en vervolgens de aanmaakdatum van het profiel in de hoofdtekst van het bericht toevoegen. Dit doet u als volgt:
 
 1. Maak een nieuwe levering of open een bestaande e-maillevering.
-1. Klik in de wizard voor aflevering **[!UICONTROL Subject]** om het onderwerp van het bericht te bewerken en voer een onderwerp in.
-1. Typ &quot; **[!UICONTROL Special offer for]** &quot; en gebruik de knop op de werkbalk om een verpersoonlijkingsveld in te voegen. Selecteer **[!UICONTROL Recipients>Title]**.
+1. Klik in de wizard voor aflevering op **[!UICONTROL Subject]** om het onderwerp van het bericht te bewerken en een onderwerp in te voeren.
+1. Voer &quot; **[!UICONTROL Special offer for]** &quot; in en gebruik de knop op de werkbalk om een aanpassingsveld in te voegen. Selecteer **[!UICONTROL Recipients>Title]**.
 
    ![](assets/s_ncs_user_insert_custom_field.png)
 
 1. Herhaal de bewerking om de naam van de ontvanger in te voegen. Voeg spaties in tussen alle verpersoonlijkingsvelden.
-1. Klik **[!UICONTROL OK]** om te valideren.
+1. Klik **[!UICONTROL OK]** om te bevestigen.
 1. Voeg de personalisatie in de berichttekst in. Klik hiertoe in de inhoud van het bericht en klik op de knop voor het invoegen van het veld.
 1. Selecteer **[!UICONTROL Recipient>Other...]**.
 
@@ -67,30 +67,30 @@ We maken een e-mail waarin we eerst de naam van de ontvanger invoegen en vervolg
 
    ![](assets/s_ncs_user_insert_custom_field_c.png)
 
-1. Klik op het **[!UICONTROL Preview]** tabblad om het resultaat van de aanpassing weer te geven. U moet een ontvanger selecteren om het bericht van die ontvanger te tonen.
+1. Klik op het tabblad **[!UICONTROL Preview]** om het verpersoonlijkingsresultaat weer te geven. U moet een ontvanger selecteren om het bericht van die ontvanger te tonen.
 
    ![](assets/s_ncs_user_insert_custom_field_d.png)
 
    >[!NOTE]
    >
-   >Wanneer een levering deel uitmaakt van een workflow, kunt u de gegevens uit de tabel met tijdelijke werkstromen gebruiken. Deze gegevens worden gegroepeerd in het **[!UICONTROL Target extension]** menu. Raadpleeg [deze sectie](../../workflow/using/data-life-cycle.md#target-data) voor meer informatie.
+   >Wanneer een levering deel uitmaakt van een workflow, kunt u de gegevens uit de tabel met tijdelijke werkstromen gebruiken. Deze gegevens worden gegroepeerd in het menu **[!UICONTROL Target extension]**. Raadpleeg [deze sectie](../../workflow/using/data-life-cycle.md#target-data) voor meer informatie.
 
 ## Aanpassing optimaliseren {#optimizing-personalization}
 
-U kunt personalisatie optimaliseren met behulp van een speciale optie: **[!UICONTROL Prepare the personalization data with a workflow]**, beschikbaar op het **[!UICONTROL Analysis]** tabblad van de leveringseigenschappen. Zie [deze sectie](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)voor meer informatie over het analyseren van de aflevering.
+U kunt personalisatie optimaliseren met behulp van een speciale optie: **[!UICONTROL Prepare the personalization data with a workflow]**, beschikbaar op het **[!UICONTROL Analysis]** lusje van de leveringseigenschappen. Zie [deze sectie](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery) voor meer informatie over het analyseren van de aflevering.
 
 Tijdens de leveringsanalyse, leidt deze optie automatisch tot en voert een werkschema uit dat alle gegevens met betrekking tot het doel in een tijdelijke lijst, met inbegrip van gegevens van lijsten verbonden in FDA opslaat.
 
-Als u deze optie inschakelt, kunnen de prestaties van de leveringsanalyse aanzienlijk worden verbeterd wanneer een groot aantal gegevens wordt verwerkt, vooral als de personalisatiegegevens afkomstig zijn van een externe tabel via FDA. Zie [Toegang tot een externe database (FDA)](../../installation/using/about-fda.md)voor meer informatie.
+Als u deze optie inschakelt, kunnen de prestaties van de leveringsanalyse aanzienlijk worden verbeterd wanneer een groot aantal gegevens wordt verwerkt, vooral als de personalisatiegegevens afkomstig zijn van een externe tabel via FDA. Zie [Toegang tot een externe database (FDA)](../../installation/using/about-fda.md) voor meer informatie.
 
 Bijvoorbeeld, als u prestatieskwesties wanneer het leveren aan een hoog aantal ontvangers terwijl het gebruiken van veel verpersoonlijkingsgebieden en/of verpersoonlijkingsblokken in de inhoud van uw berichten ervaart, kan deze optie de behandeling van verpersoonlijking en daarom het leveren van uw berichten versnellen.
 
 Volg onderstaande stappen om deze optie te gebruiken:
 
 1. Een campagne maken. Raadpleeg [deze sectie](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign) voor meer informatie.
-1. Voeg op het **[!UICONTROL Targeting and workflows]** tabblad van uw campagne een **query** -activiteit toe aan uw workflow. For more on using this activity, refer to [this section](../../workflow/using/query.md).
-1. Voeg een **[!UICONTROL Email delivery]** activiteit aan het werkschema toe en open het. For more on using this activity, refer to [this section](../../workflow/using/delivery.md).
-1. Ga naar het **[!UICONTROL Analysis]** tabblad van de optie **[!UICONTROL Delivery properties]** en selecteer de **[!UICONTROL Prepare the personalization data with a workflow]** optie.
+1. Voeg op het tabblad **[!UICONTROL Targeting and workflows]** van uw campagne een **Query**-activiteit toe aan uw workflow. Raadpleeg [deze sectie](../../workflow/using/query.md) voor meer informatie over het gebruik van deze activiteit.
+1. Voeg een **[!UICONTROL Email delivery]** activiteit aan het werkschema toe en open het. Raadpleeg [deze sectie](../../workflow/using/delivery.md) voor meer informatie over het gebruik van deze activiteit.
+1. Ga naar het **[!UICONTROL Analysis]** lusje van **[!UICONTROL Delivery properties]** en selecteer **[!UICONTROL Prepare the personalization data with a workflow]** optie.
 
    ![](assets/perso_optimization.png)
 
@@ -100,15 +100,15 @@ Zodra de analyse wordt gedaan, worden de verpersoonlijkingsgegevens opgeslagen i
 
 Deze workflow is niet zichtbaar in de Adobe Campaign-interface. Het is alleen bedoeld als een technisch middel om personalisatiegegevens snel op te slaan en af te handelen.
 
-Wanneer de analyse is voltooid, gaat u naar de workflow **[!UICONTROL Properties]** en selecteert u het **[!UICONTROL Variables]** tabblad. Daar kunt u de naam van de tijdelijke lijst zien die u kunt gebruiken om een SQL vraag te maken om identiteitskaarts te tonen die het bevat.
+Wanneer de analyse is voltooid, gaat u naar de workflow **[!UICONTROL Properties]** en selecteert u het tabblad **[!UICONTROL Variables]**. Daar kunt u de naam van de tijdelijke lijst zien die u kunt gebruiken om een SQL vraag te maken om identiteitskaarts te tonen die het bevat.
 
 ![](assets/perso_optimization_temp_table.png)
 
-## Timing uit verpersoonlijkingsfase {#timing-out-personalization}
+## Timing out personalization phase {#timing-out-personalization}
 
 Om leveringsbescherming te verbeteren, kunt u een onderbreking voor de verpersoonlijkingsfase plaatsen.
 
-Selecteer op het **[!UICONTROL Delivery]** tabblad van de optie **[!UICONTROL Delivery properties]** een maximumwaarde in seconden voor de **[!UICONTROL Maximum personalization run time]** optie.
+Selecteer op het tabblad **[!UICONTROL Delivery]** van **[!UICONTROL Delivery properties]** een maximumwaarde in seconden voor de optie **[!UICONTROL Maximum personalization run time]**.
 
 Als tijdens de voorvertoning of het verzenden de maximale tijd die u in dit veld instelt, wordt overschreden, wordt het proces afgebroken met een foutbericht en mislukt de levering.
 
@@ -124,4 +124,4 @@ Leer hoe u een verpersoonlijkingsveld toevoegt aan de onderwerpregel en de inhou
 
 >[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
-Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) extra Campaign Classic hoe kan ik-video&#39;s beschikbaar.
