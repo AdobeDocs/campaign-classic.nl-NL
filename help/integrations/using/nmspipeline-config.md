@@ -20,7 +20,7 @@ ht-degree: 2%
 Zodra de authentificatie werkt, [!DNL pipelined] kan de gebeurtenissen terugwinnen en hen verwerken. Het verwerkt slechts trekkers die in Adobe Campaign worden gevormd, die anderen negeren. De trigger moet van Analytics zijn gegenereerd en vooraf naar de pijplijn zijn geduwd.
 De optie kan ook met een vervanging worden gevormd om alle trekkers ongeacht naam te vangen.
 
-De triggers worden geconfigureerd in een optie onder **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. De optienaam is **[!UICONTROL NmsPipeline_Config]**. Het gegevenstype is &#39;lange tekst&#39; in JSON-indeling.
+De configuratie van de triggers wordt uitgevoerd in een optie, onder **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. De optienaam is **[!UICONTROL NmsPipeline_Config]**. Het gegevenstype is &#39;lange tekst&#39; in JSON-indeling.
 
 In dit voorbeeld worden twee triggers opgegeven.
 
@@ -67,21 +67,21 @@ In dit tweede voorbeeld worden alle triggers afgevangen.
 
 >[!NOTE]
 >
->De waarde [!DNL Trigger] UID aan een specifieke trekkernaam in de interface van Analytics kan als deel van de parameters van het URL querystring in de interface Triggers worden gevonden. De triggerType UID wordt overgegaan in de stroom van pijpleidingsgegevens en de code kan in pipe.JS worden geschreven om trekkerUID aan een gebruikersvriendelijk etiket in kaart te brengen dat in een kolom van de Naam van de Trekker in het pijpleidingsschemaEvents kan worden opgeslagen.
+>De waarde [!DNL Trigger] UID aan een specifieke trekkernaam in de interface van Analytics kan als deel van de URL querystring parameters in de interface van Triggers worden gevonden. De triggerType UID wordt overgegaan in de stroom van pijpleidingsgegevens en de code kan in pipe.JS worden geschreven om trekkerUID aan een gebruikersvriendelijk etiket in kaart te brengen dat in een kolom van de Naam van de Trekker in het pijpleidingsschemaEvents kan worden opgeslagen.
 
-## De parameter voor de consument {#consumer-parameter}
+## De parameter voor consumenten {#consumer-parameter}
 
 De pijpleiding werkt met een &quot;leverancier en consument&quot;-model. Er kunnen veel consumenten op dezelfde rij staan. Berichten worden alleen voor een individuele consument &quot;verbruikt&quot;. Elke consument krijgt zijn eigen &quot;exemplaar&quot;van de berichten.
 
 De parameter &quot;consument&quot; identificeert het geval als een van deze consumenten. Het is de identiteit van de instantie die de pijpleiding roept. U kunt deze vullen met de instantienaam. De pijpleidingsdienst houdt spoor van de berichten die door elke consument worden teruggewonnen. Het gebruiken van verschillende consumenten voor verschillende instanties zorgt ervoor dat elk bericht wordt verzonden naar elke instantie.
 
-## Hoe te om de optie van de Pijpleiding te vormen {#configure-pipeline-option}
+## Hoe te om de optie van de Pijpleiding {#configure-pipeline-option} te vormen
 
 Experience Cloud-triggers toevoegen of bewerken onder de &quot;triggers&quot;-array; de rest niet bewerken.
-Controleer of de JSON geldig is met behulp van deze [website](http://jsonlint.com/).
+Zorg ervoor dat de JSON geldig is met behulp van deze [website](http://jsonlint.com/).
 
 * &quot;name&quot; is de trigger-id. Met een jokerteken &quot;*&quot; worden alle triggers afgevangen.
 * &quot;Consumer&quot; is een unieke tekenreeks die de instantie van de server uniek identificeert. Dit kan doorgaans de instantienaam zelf zijn. Voor meerdere omgevingen (dev/stage/prod) dient u ervoor te zorgen dat deze uniek zijn voor elk van deze omgevingen, zodat elke instantie een kopie van het bericht krijgt.
 * [!DNL Pipelined] ondersteunt ook het onderwerp &#39;&#39;aliassen&#39;&#39;.
 
-Start opnieuw [!DNL pipelined] nadat u wijzigingen hebt aangebracht.
+Start [!DNL pipelined] opnieuw nadat u wijzigingen hebt aangebracht.
