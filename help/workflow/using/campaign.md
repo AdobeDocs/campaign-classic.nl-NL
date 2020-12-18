@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Campaign
-description: Campaign
+description: Campagne
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Campaign{#campaign}
 
-De hieronder beschreven workflows worden standaard geïnstalleerd met de module **Campagne** . For more on this module, refer to this [section](../../campaign/using/designing-marketing-campaigns.md).
+De hieronder beschreven workflows worden standaard geïnstalleerd met de **Campagne**-module. Voor meer op deze module, verwijs naar dit [sectie](../../campaign/using/designing-marketing-campaigns.md).
 
 >[!CAUTION]
 >
@@ -33,12 +33,12 @@ De hieronder beschreven workflows worden standaard geïnstalleerd met de module 
   <tr> 
    <td> <span class="uicontrol">Kostprijsberekening</span> <br /> </td> 
    <td> <span class="uicontrol">budgetMgt</span> <br /> </td> 
-   <td> Deze workflow start de berekening van kosten en kostenposten voor de begrotingen, plannen, programma's, campagnes, leveringen en taken.<br /> </td> 
+   <td> Deze workflow start de berekening van kosten en kostenposten voor de budgetten, plannen, programma's, campagnes, leveringen en taken.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Voorraad: Orders en waarschuwingen</span> <br /> </td> 
    <td> <span class="uicontrol">stockMgt</span> <br /> </td> 
-   <td> Deze workflow start voorraadberekening op de orderregels en beheert drempelwaarden voor waarschuwingen.<br /> </td> 
+   <td> Deze workflow start voorraadberekening op de bestelregels en beheert drempelwaarden voor waarschuwingen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Banen op leveringen in campagnes</span> <br /> </td> 
