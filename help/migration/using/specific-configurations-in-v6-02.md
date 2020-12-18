@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Specifieke configuraties in v6.02{#specific-configurations-in-v6-02}
 
-In de volgende sectie wordt beschreven welke aanvullende configuratie is vereist voor het migreren van versie 6.02. U zou ook de montages moeten vormen die in de [Algemene configuratiesectie](../../migration/using/general-configurations.md) worden gedetailleerd.
+In de volgende sectie wordt beschreven welke aanvullende configuratie is vereist voor het migreren van versie 6.02. U zou ook de montages moeten vormen die in [Algemene configuraties](../../migration/using/general-configurations.md) sectie worden gedetailleerd.
 
 ## Webapplicaties {#web-applications}
 
@@ -37,13 +37,13 @@ Als u deze webtoepassingen niet hebt gebruikt, voert u het volgende opschoonscri
 Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/xtk/fra/js/removeOldWebApp.js
 ```
 
-Als u deze webtoepassingen hebt gewijzigd en deze wilt blijven gebruiken in v7, moet u de optie **allowSQLInjection** activeren in uw verschillende beveiligingszones en de postupgrade opnieuw starten. Raadpleeg de sectie [SQLData](../../migration/using/general-configurations.md#sqldata) voor meer informatie hierover.
+Als u deze webtoepassingen hebt gewijzigd en deze wilt blijven gebruiken in v7, moet u de optie **allowSQLInjection** in uw verschillende beveiligingszones activeren en de postupgrade opnieuw starten. Raadpleeg de sectie [SQLData](../../migration/using/general-configurations.md#sqldata) voor meer informatie hierover.
 
-## Gebruikersvriendelijkheid: Homepage en navigatie {#user-friendliness--home-page-and-navigation}
+## Gebruikersvriendelijkheid: Startpagina en navigatie {#user-friendliness--home-page-and-navigation}
 
 >[!IMPORTANT]
 >
->Als u v6.02-webtoepassingen van het overzichtstype wilt blijven gebruiken, moet u de optie **allowSQLInjection** activeren in uw verschillende beveiligingszones voordat de upgrade wordt uitgevoerd. Raadpleeg [webtoepassingen](#web-applications).
+>Als u v6.02 overzicht-type van Web toepassingen wilt blijven gebruiken, moet u **allowSQLInjection** optie in uw verschillende veiligheidsstreken vóór de postupgrade activeren. Zie [Webtoepassingen](#web-applications).
 
 Na een migratie van versie 6.02 wordt de Adobe Campaign v6.02-startpagina niet meer weergegeven, maar is deze nog steeds toegankelijk en compatibel met Adobe Campaign v7.
 
@@ -51,9 +51,9 @@ Als u de v6.02-startpagina wilt blijven gebruiken, moet u na de migratie een pak
 
 Hiertoe importeert u het compatibiliteitspakket:
 
-Klik **[!UICONTROL Tools > Advanced > Import package]** en kies het **pakket campagneMigration.xml** in **`\nl\datakit\nms\[Your language]\package\optional`**.
+Klik **[!UICONTROL Tools > Advanced > Import package]** en kies **campagneMigration.xml** pakket in **`\nl\datakit\nms\[Your language]\package\optional`**.
 
-Om toegang tot de v6.02 het type van Toepassing van het Web interfaces toe te staan, moet de **sessionTokenOnly** optie van de serverconfiguratie in het **serverConf.xml** - dossier worden geactiveerd:
+Om toegang tot de v6.02 het type van Toepassing van het Web interfaces toe te staan, moet **sessionTokenOnly** de optie van de serverconfiguratie in **serverConf.xml** dossier worden geactiveerd:
 
 ```
 sessionTokenOnly="true"
@@ -65,7 +65,7 @@ Nadat het pakket is geïnstalleerd, wordt de Adobe Campaign v7-startpagina verva
 
 ![](assets/dashboards.png)
 
-Alle koppelingen op deze homepage zijn gekoppeld aan v7-schermen, behalve de lijsten (**[!UICONTROL operation list]**, **[!UICONTROL delivery tracking in operations]** enz.) die een koppeling vormen naar het overzicht van versie 6.02 (webtoepassingen).
+Alle koppelingen op deze homepage zijn gekoppeld aan v7-schermen, behalve de lijsten (**[!UICONTROL operation list]**, **[!UICONTROL delivery tracking in operations]**, enz.) die een koppeling vormen naar het overzicht van versie 6.02 (webtoepassingen).
 
 ![](assets/dashboards2.png)
 
@@ -75,8 +75,8 @@ Als u een ander overzicht wilt toevoegen dat is geconfigureerd in v6.02, moet u 
 >
 >Vergeet niet de verbinding te verbreken en vervolgens de console opnieuw te verbinden om de wijzigingen te registreren.
 
-## Berichtencentrum {#message-center}
+## Berichtmidden {#message-center}
 
 Na een migratie van de controleinstantie van het Centrum van het Bericht, moet u de transactionele berichtmalplaatjes voor hen opnieuw publiceren om te werken.
 
-In v7 zijn de namen van transactionele berichtsjablonen op uitvoeringsinstanties gewijzigd. Zij worden momenteel vooraf bepaald door de exploitantnaam die aan de controleinstantie beantwoordt waarop zij, bijvoorbeeld **control1_template1_rt** worden gecreeerd (waar **control1** de naam van de exploitant is). Als u een significant volume van malplaatjes hebt, adviseren wij schrappend oude malplaatjes op controleinstanties.
+In v7 zijn de namen van transactionele berichtsjablonen op uitvoeringsinstanties gewijzigd. Ze worden momenteel voorafgegaan door de naam van de operator die overeenkomt met de besturingsinstantie waarop ze zijn gemaakt, bijvoorbeeld **control1_template1_rt** (waarbij **control1** de naam van de operator is). Als u een significant volume van malplaatjes hebt, adviseren wij schrappend oude malplaatjes op controleinstanties.
