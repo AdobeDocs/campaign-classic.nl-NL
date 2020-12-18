@@ -19,23 +19,23 @@ ht-degree: 0%
 
 ## Over het gegevensmodel voor transactieberichten {#about-transactional-messaging-datamodel}
 
-Transactioneel overseinen baseert zich op het de gegevensmodel van Adobe Campaign, en gebruikt twee extra afzonderlijke lijsten. Deze [tabellen](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** en **NmsBatchEvent**, bevatten dezelfde velden en laten u gebeurtenissen in real time aan de ene kant en gebeurtenissen in batch aan de andere kant beheren.
+Transactioneel overseinen baseert zich op het de gegevensmodel van Adobe Campaign, en gebruikt twee extra afzonderlijke lijsten. Deze [tabellen](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** en **NmsBatchEvent** bevatten dezelfde velden en u kunt realtime-gebeurtenissen aan de ene kant beheren en gebeurtenissen in batch aan de andere kant.
 
 ## SOAP-methoden {#soap-methods}
 
 Deze sectie detailleert de methodes van de ZEEP verbonden aan de schema&#39;s van de transactionele berichtmodule.
 
-Twee **PushEvent** - of **PushEvents** SOAP-methoden zijn gekoppeld aan de twee **nms:rtEvent** en **nms:BatchEvent** -gegevensschema&#39;s. Het is het informatiesysteem dat bepaalt of een gebeurtenis een &quot;partij&quot;of &quot;real time&quot;type is.
+Twee **PushEvent** of **PushEvents** SOAP-methoden zijn gekoppeld aan de twee **nms:rtEvent** en **nms:BatchEvent** dataschemas. Het is het informatiesysteem dat bepaalt of een gebeurtenis een &quot;partij&quot;of &quot;real time&quot;type is.
 
-* **Met PushEvent** kunt u één gebeurtenis in het bericht invoegen.
-* **Met PushEvents** kunt u een reeks gebeurtenissen in het bericht invoegen.
+* **Met** PushEvent kunt u één gebeurtenis in het bericht invoegen.
+* **** PushEvent laat u een reeks gebeurtenissen in het bericht opnemen.
 
 Het WSDL-pad voor toegang tot beide methoden is:
 
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** om tot het typeschema in real time toegang te hebben.
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** voor toegang tot het batchtypeschema.
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:** rtEvent om tot het typeschema in real time toegang te hebben.
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:** batchEvent om het batchtypeschema te openen.
 
-Beide methodes bevatten een **`<urn:sessiontoken>`** element voor het het programma openen aan de transactionele overseinenmodule. Wij adviseren gebruikend een identificatiemethode via vertrouwde op IP adressen. Om het zittingsteken terug te winnen, voer een vraag van de ZEEP van de opening van een sessie uit, dan krijgt het teken gevolgd door een logoff. Gebruik het zelfde teken voor verscheidene vraag van RT. De voorbeelden inbegrepen in deze sectie gebruiken de methode van het zittingsteken die geadviseerd is.
+Beide methodes bevatten een **`<urn:sessiontoken>`** element voor het programma openen aan de transactionele overseinenmodule. Wij adviseren gebruikend een identificatiemethode via vertrouwde op IP adressen. Om het zittingsteken terug te winnen, voer een vraag van de ZEEP van de opening van een sessie uit, dan krijgt het teken gevolgd door een logoff. Gebruik het zelfde teken voor verscheidene vraag van RT. De voorbeelden inbegrepen in deze sectie gebruiken de methode van het zittingsteken die geadviseerd is.
 
 Als u een taakgebalanceerde server gebruikt, kunt u de gebruiker/Wachtwoord authentificatie (op het niveau van het bericht van RT) gebruiken. Voorbeeld:
 
@@ -51,9 +51,9 @@ Als u een taakgebalanceerde server gebruikt, kunt u de gebruiker/Wachtwoord auth
 </PushEvent>
 ```
 
-De **methode PushEvent** bestaat uit een **`<urn:domevent>`** parameter die de gebeurtenis bevat.
+De **PushEvent** methode bestaat uit een **`<urn:domevent>`** parameter die de gebeurtenis bevat.
 
-De methode **PushEvents** bestaat uit een **`<urn:domeventcollection>`** parameter die gebeurtenissen bevat.
+De **PushEvents** methode wordt samengesteld uit een **`<urn:domeventcollection>`** parameter die gebeurtenissen bevat.
 
 Voorbeeld met PushEvent:
 
@@ -77,7 +77,7 @@ Voorbeeld met PushEvent:
 
 >[!NOTE]
 >
->Bij een aanroep van de methode **PushEvents** moeten we een bovenliggend XML-element toevoegen om te voldoen aan standaard-XML. In dit XML-element worden de verschillende **`<rtevent>`** elementen in de gebeurtenis beschreven.
+>In het geval van een vraag aan de **methode PushEvents**, moeten wij een element van ouderXML toevoegen om aan standaardXML te voldoen. In dit XML-element worden de verschillende **`<rtevent>`**-elementen in de gebeurtenis in een kader geplaatst.
 
 Voorbeeld met PushEvents:
 
@@ -103,13 +103,13 @@ Voorbeeld met PushEvents:
 </urn:PushEvents>
 ```
 
-De **`<rtevent>`** en **`<batchevent>`** elementen hebben een set kenmerken en een verplicht onderliggend element: **`<ctx>`** voor het integreren van berichtgegevens.
+De elementen **`<rtevent>`** en **`<batchevent>`** hebben een set kenmerken en een verplicht onderliggend element: **`<ctx>`** voor het integreren van berichtgegevens.
 
 >[!NOTE]
 >
->Met het **`<batchevent>`** element kunt u de gebeurtenis toevoegen aan de &quot;batch&quot;-wachtrij. De gebeurtenis **`<rtevent>`** voegt de &quot;real-time&quot; wachtrij toe.
+>Met het element **`<batchevent>`** kunt u de gebeurtenis toevoegen aan de &quot;batch&quot;-wachtrij. De **`<rtevent>`** voegt de gebeurtenis aan de &quot;real time&quot;rij toe.
 
-De verplichte kenmerken van de elementen **`<rtevent>`** en **`<batchevent>`** elementen zijn @type en @email. De waarde van @type moet gelijk zijn aan de gespecificeerde lijstwaarde die wordt bepaald wanneer het vormen van de uitvoeringsinstantie. Met deze waarde kunt u de sjabloon definiëren die tijdens de levering aan de inhoud van de gebeurtenis moet worden gekoppeld.
+De verplichte kenmerken van de elementen **`<rtevent>`** en **`<batchevent>`** zijn @type en @email. De waarde van @type moet gelijk zijn aan de gespecificeerde lijstwaarde die wordt bepaald wanneer het vormen van de uitvoeringsinstantie. Met deze waarde kunt u de sjabloon definiëren die tijdens de levering aan de inhoud van de gebeurtenis moet worden gekoppeld.
 
 `<rtevent> configuration example:`
 
@@ -117,17 +117,17 @@ De verplichte kenmerken van de elementen **`<rtevent>`** en **`<batchevent>`** e
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
 ```
 
-In dit voorbeeld zijn twee kanalen beschikbaar: het e-mailadres en het mobiele telefoonnummer. Met **wishedChannel** kunt u het kanaal selecteren dat u wilt gebruiken wanneer u de gebeurtenis omzet in een bericht. De waarde 0 komt overeen met het e-mailkanaal, de waarde 1 voor het mobiele kanaal, enzovoort.
+In dit voorbeeld zijn twee kanalen beschikbaar: het e-mailadres en het mobiele telefoonnummer. Met **wishedChannel** kunt u het kanaal selecteren dat u wilt gebruiken bij het omzetten van de gebeurtenis in een bericht. De waarde 0 komt overeen met het e-mailkanaal, de waarde 1 voor het mobiele kanaal, enzovoort.
 
-Als u de levering van een gebeurtenis wilt uitstellen, voegt u het **[!UICONTROL scheduled]** veld toe, gevolgd door de datum van voorkeur. De gebeurtenis wordt op deze datum omgezet in een bericht.
+Als u een gebeurtenis wilt uitstellen, voegt u het veld **[!UICONTROL scheduled]** toe, gevolgd door de datum van voorkeur. De gebeurtenis wordt op deze datum omgezet in een bericht.
 
 We raden u aan de kenmerken @wishedChannel en @emailFormat in te vullen met numerieke waarden. De functietabel die numerieke waarden en labels koppelt, vindt u in de beschrijving van het gegevensschema.
 
 >[!NOTE]
 >
->Een gedetailleerde beschrijving van alle toegestane kenmerken en hun waarden is beschikbaar in de beschrijving van de **nms:rtEvent** en **nms:BatchEvent** dataschema.
+>Een gedetailleerde beschrijving van alle toegestane kenmerken en hun waarden is beschikbaar in de beschrijving van de gegevenschema **nms:rtEvent** en **nms:BatchEvent**.
 
-Het **`<ctx>`** element bevat de berichtgegevens. De XML-inhoud is open, wat betekent dat deze kan worden geconfigureerd op basis van de inhoud die moet worden geleverd.
+Het element **`<ctx>`** bevat de berichtgegevens. De XML-inhoud is open, wat betekent dat deze kan worden geconfigureerd op basis van de inhoud die moet worden geleverd.
 
 >[!NOTE]
 >
