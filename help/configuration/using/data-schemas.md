@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Beginselen {#principles}
 
-Als u de schema&#39;s wilt bewerken, maken en configureren, klikt u op het **[!UICONTROL Administration > Configuration > Data schemas]** knooppunt van de Adobe Campaign-clientconsole.
+Als u de schema&#39;s wilt bewerken, maken en configureren, klikt u op het knooppunt **[!UICONTROL Administration > Configuration > Data schemas]** van de Adobe Campaign-clientconsole.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ In de voorvertoning wordt het uitgebreide schema automatisch gegenereerd:
 >
 >Wanneer het bronschema wordt opgeslagen, wordt het genereren van het uitgebreide schema automatisch gestart.
 
-Als u de volledige structuur van een schema moet controleren, kunt u het voorproeflusje gebruiken. Als het schema is uitgebreid, zult u al zijn uitbreidingen dan kunnen visualiseren. Als aanvulling geeft het tabblad Documentatie alle schemakenmerken en -elementen weer, en de bijbehorende eigenschappen (SQL-veld, type/lengte, label, beschrijving). Het tabblad Documentatie is alleen van toepassing op gegenereerde schema&#39;s. For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.
+Als u de volledige structuur van een schema moet controleren, kunt u het voorproeflusje gebruiken. Als het schema is uitgebreid, zult u al zijn uitbreidingen dan kunnen visualiseren. Als aanvulling geeft het tabblad Documentatie alle schemakenmerken en -elementen weer, en de bijbehorende eigenschappen (SQL-veld, type/lengte, label, beschrijving). Het tabblad Documentatie is alleen van toepassing op gegenereerde schema&#39;s. Raadpleeg voor meer informatie de sectie [Regenererende schema&#39;s](../../configuration/using/regenerating-schemas.md).
 
 ## Voorbeeld: het creëren van een contractlijst {#example--creating-a-contract-table}
 
@@ -51,8 +51,8 @@ In het volgende voorbeeld, willen wij een nieuwe lijst voor **contracten** in he
 
 Hiervoor moet u het schema van de tabel maken en de databasestructuur bijwerken om de bijbehorende tabel te genereren. Pas de volgende stappen toe:
 
-1. Bewerk het **[!UICONTROL Administration > Configuration > Data schemas]** knooppunt van de Adobe Campaign-structuur en klik **[!UICONTROL New]** .
-1. Kies de **[!UICONTROL Create a new table in the data model]** optie en klik **[!UICONTROL Next]** .
+1. Bewerk het knooppunt **[!UICONTROL Administration > Configuration > Data schemas]** van de Adobe Campaign-structuur en klik op **[!UICONTROL New]**.
+1. Kies de optie **[!UICONTROL Create a new table in the data model]** en klik **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
@@ -62,9 +62,9 @@ Hiervoor moet u het schema van de tabel maken en de databasestructuur bijwerken 
 
    >[!NOTE]
    >
-   >Standaard worden schema&#39;s die door gebruikers worden gemaakt, opgeslagen in de naamruimte &#39;cus&#39;. Raadpleeg [Identificatie van een schema](../../configuration/using/about-schema-reference.md#identification-of-a-schema)voor meer informatie hierover.
+   >Standaard worden schema&#39;s die door gebruikers worden gemaakt, opgeslagen in de naamruimte &#39;cus&#39;. Voor meer op dit, verwijs naar [Identificatie van een schema](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 
-1. Maak de inhoud van de tabel. We raden u aan om de wizard Invoer te gebruiken om er zeker van te zijn dat er geen instellingen ontbreken. Klik hiertoe op de **[!UICONTROL Insert]** knop en kies het type instelling dat u wilt toevoegen.
+1. Maak de inhoud van de tabel. We raden u aan om de wizard Invoer te gebruiken om er zeker van te zijn dat er geen instellingen ontbreken. Klik hiertoe op de knop **[!UICONTROL Insert]** en kies het type instelling dat u wilt toevoegen.
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 
@@ -120,5 +120,5 @@ Hiervoor moet u het schema van de tabel maken en de databasestructuur bijwerken 
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. Werk de databasestructuur bij om de tabel te maken waarnaar het schema wordt gekoppeld. For more on this, refer to [Updating the database structure](../../configuration/using/updating-the-database-structure.md).
+1. Werk de databasestructuur bij om de tabel te maken waarnaar het schema wordt gekoppeld. Raadpleeg [De databasestructuur bijwerken](../../configuration/using/updating-the-database-structure.md) voor meer informatie.
 
