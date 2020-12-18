@@ -15,9 +15,9 @@ ht-degree: 2%
 ---
 
 
-# Leverbaarheidscontrole (e-maillevering){#email-deliverability}
+# Bewaking van de aflevering (e-maillevering){#email-deliverability}
 
-De hieronder gedetailleerde workflow wordt standaard op alle instanties geïnstalleerd en u kunt de lijst met regels voor stuiterende mailkwalificatie, de lijst met domeinen en de lijst met MX&#39;s initialiseren. Zodra het pakket **Leverbaarheid controleren (E-mailDeliverability)** is geïnstalleerd, loopt deze workflow elke avond. For more on Deliverability monitoring, refer to this [section](../../delivery/using/about-deliverability.md).
+De hieronder gedetailleerde workflow wordt standaard op alle instanties geïnstalleerd en u kunt de lijst met regels voor stuiterende mailkwalificatie, de lijst met domeinen en de lijst met MX&#39;s initialiseren. Zodra het **Deliverability monitoring (E-mailDeliverability)** pakket wordt geïnstalleerd, loopt deze werkstroom elke avond. Raadpleeg voor meer informatie over het controleren van de aflevering deze [sectie](../../delivery/using/about-deliverability.md).
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ De hieronder gedetailleerde workflow wordt standaard op alle instanties geïnsta
   <tr> 
    <td> <strong>Vernieuwen voor leverbaarheid</strong><br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
-   <td>  Zodra het pakket <strong>Leverbaarheidscontrole (E-mail Deliverability)</strong> is geïnstalleerd, wordt deze workflow elke avond uitgevoerd om de lijst met regels regelmatig bij te werken en kan de leverbaarheid van het platform actief worden beheerd.<br /> </td> 
+   <td>  Als het <strong>Deliverability Monitoring (Email Deliverability)</strong>-pakket is geïnstalleerd, wordt deze workflow elke avond uitgevoerd om de lijst met regels regelmatig bij te werken en kunt u de leverbaarbaarheid van het platform actief beheren.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
