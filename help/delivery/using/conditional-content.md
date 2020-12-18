@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -22,11 +22,11 @@ Door voorwaardelijke inhoudsgebieden te vormen, kunt u dynamische verpersoonlijk
 ![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](#conditionnal-content-video)
 
 
-## Voorwaarden in een e-mail gebruiken {#using-conditions-in-an-email}
+## Voorwaarden gebruiken in een e-mail {#using-conditions-in-an-email}
 
 In het onderstaande voorbeeld leert u hoe u een boodschap kunt maken die dynamisch is gepersonaliseerd op basis van het geslacht en de belangen van de ontvanger.
 
-* Weergave met &quot;Mr&quot; of &quot;Mej.&quot; afhankelijk van de waarde van het **[!UICONTROL Gender]** veld (M of F) in de gegevensbron,
+* Weergave met &quot;Mr&quot; of &quot;Mej.&quot; volgens de waarde van het veld **[!UICONTROL Gender]** (M of F) in de gegevensbron,
 * Persoonlijke vergadering van een nieuwsbrief of een promotieaanbod volgens de aangegeven of geconstateerde belangen:
 
    * Rente 1 — > Blok 1
@@ -46,16 +46,16 @@ Voer de volgende stappen uit om voorwaardelijke inhoud te maken op basis van de 
 
    Dit doet u als volgt:
 
-   * Selecteer het eerste element van de expressie **`<field>`**(dit element wordt standaard gemarkeerd tijdens het invoegen van de expressie **if** ) en klik op het verpersoonlijkingspictogram om het te vervangen door het testveld.
+   * Selecteer het eerste element van de expressie **`<field>`** (dit element wordt standaard gemarkeerd tijdens het invoegen van de expressie **if**) en klik op het verpersoonlijkingspictogram om het te vervangen door het testveld.
 
       ![](assets/s_ncs_user_conditional_content03.png)
 
-   * Vervangen door **`<value>`** de waarde van het veld waaraan aan de voorwaarde wordt voldaan. Deze waarde moet tussen aanhalingstekens staan.
+   * Vervang **`<value>`** door de waarde van het veld waaraan aan de voorwaarde wordt voldaan. Deze waarde moet tussen aanhalingstekens staan.
    * Geef de inhoud op die moet worden ingevoegd wanneer aan de voorwaarde wordt voldaan. Dit kan tekst, een afbeelding, een formulier, een hypertekstkoppeling enzovoort zijn.
 
       ![](assets/s_ncs_user_conditional_content04.png)
 
-1. Klik op het **[!UICONTROL Preview]** tabblad om de inhoud van het bericht weer te geven op basis van de ontvanger van de zending:
+1. Klik op het tabblad **[!UICONTROL Preview]** om de inhoud van het bericht weer te geven op basis van de ontvanger van de levering:
 
    * Een ontvanger selecteren waarvoor de voorwaarde waar is:
 
@@ -65,24 +65,24 @@ Voer de volgende stappen uit om voorwaardelijke inhoud te maken op basis van de 
 
       ![](assets/s_ncs_user_conditional_content06.png)
 
-U kunt andere gevallen toevoegen en verschillende inhoud definiëren op basis van de waarden van een of meer velden. Om dit te doen, gebruik **[!UICONTROL Conditional content > Else]** en **[!UICONTROL Conditional content > Else if]**. Deze expressies worden op dezelfde manier geconfigureerd als de expressie **if** .
+U kunt andere gevallen toevoegen en verschillende inhoud definiëren op basis van de waarden van een of meer velden. Hiervoor gebruikt u **[!UICONTROL Conditional content > Else]** en **[!UICONTROL Conditional content > Else if]**. Deze expressies worden op dezelfde manier geconfigureerd als de expressie **if**.
 
 ![](assets/s_ncs_user_conditional_content07.png)
 
 >[!CAUTION]
 >
->Als u de JavaScript-syntaxis wilt respecteren, moeten de tekens **%> &lt;%** worden verwijderd nadat u **Else** en **Else if** hebt toegevoegd.
+>Als u de JavaScript-syntaxis wilt respecteren, moeten de &lt;%**tekens worden verwijderd nadat u** Anders **en** Anders if **voorwaarden hebt toegevoegd.**
 
-Klik **[!UICONTROL Preview]** en selecteer een ontvanger om de voorwaardelijke inhoud weer te geven.
+Klik op **[!UICONTROL Preview]** en selecteer een ontvanger om de voorwaardelijke inhoud weer te geven.
 
 ![](assets/s_ncs_user_conditional_content08.png)
 
-## Meertalige e-mail maken {#creating-multilingual-email}
+## Meertalige e-mail {#creating-multilingual-email} maken
 
 In het onderstaande voorbeeld leert u hoe u een meertalige e-mail kunt maken. De inhoud wordt in de ene of de andere taal weergegeven, afhankelijk van de voorkeurstaal van de ontvanger.
 
-1. Maak een e-mail en selecteer de doelpopulatie. In dit voorbeeld wordt de voorwaarde voor het weergeven van de ene of de andere versie gebaseerd op de **taalwaarde** van het profiel van de ontvanger. In dit voorbeeld zijn deze waarden ingesteld op **EN**, **FR**, **ES**.
-1. Klik in de HTML-inhoud voor e-mail op het **[!UICONTROL Source]** tabblad en plak de volgende code:
+1. Maak een e-mail en selecteer de doelpopulatie. In dit voorbeeld wordt de voorwaarde voor het weergeven van de ene versie of de andere gebaseerd op de waarde **Language** van het profiel van de ontvanger. In dit voorbeeld worden deze waarden ingesteld op **EN**, **FR**, **ES**.
+1. Klik in de HTML-inhoud van de e-mail op het tabblad **[!UICONTROL Source]** en plak de volgende code:
 
    ```
    <% if (language == "EN" ) { %>
@@ -103,7 +103,7 @@ In het onderstaande voorbeeld leert u hoe u een meertalige e-mail kunt maken. De
    <% } %>
    ```
 
-1. Test e-mailinhoud op het **[!UICONTROL Preview]** tabblad door ontvangers met verschillende voorkeurstalen te selecteren.
+1. Test e-mailinhoud op het tabblad **[!UICONTROL Preview]** door ontvangers met verschillende voorkeurstalen te selecteren.
 
    >[!NOTE]
    >
@@ -115,4 +115,4 @@ Leer hoe u voorwaardelijke inhoud aan een levering kunt toevoegen op het voorbee
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
-Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html)aanvullende Campaign Classic-instructievideo&#39;s beschikbaar.
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) extra Campaign Classic hoe kan ik-video&#39;s beschikbaar.
