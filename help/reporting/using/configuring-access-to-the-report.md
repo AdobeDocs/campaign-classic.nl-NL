@@ -17,13 +17,13 @@ ht-degree: 1%
 
 # Toegang tot het rapport configureren{#configuring-access-to-the-report}
 
-## Weergavecontext rapporteren {#report-display-context}
+## Weergavecontext {#report-display-context} rapporteren
 
-Bepaal de vertoningscontext van het rapport in het platform van Adobe Campaign gebruikend het **[!UICONTROL Display]** lusje. De toegang tot een rapport hangt van zijn selectietype, vertoningsvoorwaarden en toegangsvergunningen af.
+Bepaal de vertoningscontext van het rapport in het platform van Adobe Campaign gebruikend **[!UICONTROL Display]** tabel. De toegang tot een rapport hangt van zijn selectietype, vertoningsvoorwaarden en toegangsvergunningen af.
 
-### Type selectie {#selection-type}
+### Selectietype {#selection-type}
 
-De toegang tot het rapport kan worden beperkt tot een specifieke context of ruimte bieden, bijvoorbeeld een levering, een ontvanger, een selectie van ontvangers, enz. Deze toegang wordt gevormd in de **[!UICONTROL Selection type]** sectie van het **[!UICONTROL Display]** lusje.
+De toegang tot het rapport kan worden beperkt tot een specifieke context of ruimte bieden, bijvoorbeeld een levering, een ontvanger, een selectie van ontvangers, enz. Deze toegang wordt gevormd in de **[!UICONTROL Selection type]** sectie van **[!UICONTROL Display]** tabel.
 
 ![](assets/s_ncs_advuser_report_visibility_4.png)
 
@@ -33,7 +33,7 @@ De toegang tot het rapport kan worden beperkt tot een specifieke context of ruim
 
 ### Weergavevolgorde {#display-sequence}
 
-In het **[!UICONTROL Sequence]** veld kunt u een numerieke waarde invoeren die de weergavevolgorde van het rapport in de lijst aangeeft.
+In het veld **[!UICONTROL Sequence]** kunt u een numerieke waarde invoeren die de weergavevolgorde van het rapport in de lijst aangeeft.
 
 Standaard worden rapporten weergegeven op relevantie: Met de waarde die u in dit veld opgeeft, kunt u rapporten sorteren van de meest (hoogste waarde) naar de minst (laagste waarde) relevante.
 
@@ -51,19 +51,19 @@ In het volgende voorbeeld wordt het rapport weergegeven als het hoofdcampagnekan
 
 Dit betekent dat als het hoofdkanaal van de campagne direct mail is, het rapport niet beschikbaar zal zijn in de campagnerapporten.
 
-### Toegangsvergunning {#access-authorization}
+### Toegangsmachtiging {#access-authorization}
 
 Het rapport kan met andere exploitanten worden gedeeld.
 
-Selecteer de **[!UICONTROL Report shared with other operators]** optie om het rapport toegankelijk te maken. Als deze optie niet wordt geselecteerd, slechts kan de exploitant die het rapport creeerde tot het rapport toegang hebben.
+Als u het rapport toegankelijk wilt maken, selecteert u de optie **[!UICONTROL Report shared with other operators]**. Als deze optie niet wordt geselecteerd, slechts kan de exploitant die het rapport creeerde tot het rapport toegang hebben.
 
 Het rapport kan ook worden gedeeld met specifieke operatoren of groepen operatoren die via het venster voor machtigingen zijn toegevoegd.
 
 ![](assets/s_ncs_advuser_report_visibility_8.png)
 
-### Filteropties definiëren {#defining-the-filtering-options}
+### Filteropties {#defining-the-filtering-options} definiëren
 
-Het **[!UICONTROL Reports]** universum geeft alle beschikbare rapporten weer in het platform en waarvoor de verbonden operator een toegangsrecht heeft.
+Het **[!UICONTROL Reports]** universum toont alle beschikbare rapporten in het platform en waarvoor de verbonden exploitant een toegangsrecht heeft.
 
 Standaard worden ze gesorteerd op relevantie, maar u kunt andere typen filters toepassen: alfabetisch, naar leeftijd, enz.
 
@@ -71,13 +71,13 @@ U kunt de weergave ook filteren op basis van de rapportcategorie:
 
 ![](assets/report_ovv_select_type.png)
 
-Om de categorie van een rapport te bepalen, selecteer het via het **[!UICONTROL Display]** lusje, zoals hieronder getoond:
+Om de categorie van een rapport te bepalen, selecteer het via **[!UICONTROL Display]** lusje, zoals hieronder getoond:
 
 ![](assets/report_select_category.png)
 
 Je kunt hier een nieuwe rubriek invoeren en deze toevoegen aan de lijst met beschikbare rubrieken. De overeenkomstige opsomming wordt automatisch bijgewerkt.
 
-## Een koppeling naar een rapport maken {#creating-a-link-to-a-report-}
+## Een koppeling maken naar een rapport {#creating-a-link-to-a-report-}
 
 Het is mogelijk om een rapport toegankelijk te maken via een specifiek knooppunt van de boom, zoals een lijst, een ontvanger, een levering, enz. Hiertoe maakt u gewoon een koppeling naar het betreffende rapport en geeft u de entiteit op waar u het wilt aanbieden.
 
@@ -87,7 +87,7 @@ Als voorbeeld zullen wij een verbinding aan een rapport creëren om het via een 
 
    ![](assets/s_ncs_advuser_report_wizard_link_01.png)
 
-1. Selecteer het rapport waarnaar u een koppeling wilt maken in de vervolgkeuzelijst. In dit voorbeeld gaan we het rapport **Onderverdeling per land** selecteren.
+1. Selecteer het rapport waarnaar u een koppeling wilt maken in de vervolgkeuzelijst. In dit voorbeeld, gaan wij **Uitsplitsing door land** rapport selecteren.
 
    ![](assets/s_ncs_advuser_report_wizard_link_02.png)
 
@@ -103,31 +103,31 @@ Als voorbeeld zullen wij een verbinding aan een rapport creëren om het via een 
    ![](assets/s_ncs_advuser_report_wizard_link_04.png)
 
 1. Publiceer uw rapport.
-1. Ga naar een van uw lijsten met ontvangers en klik op de **[!UICONTROL Reports]** koppeling: het rapport dat u zojuist hebt gemaakt, is toegankelijk.
+1. Ga naar een van uw lijsten met ontvangers en klik op de koppeling **[!UICONTROL Reports]**: het rapport dat u zojuist hebt gemaakt, is toegankelijk.
 
    ![](assets/s_ncs_advuser_report_wizard_link_05.png)
 
-## Voorbeeld van het rapport {#preview-of-the-report}
+## Voorvertoning van het rapport {#preview-of-the-report}
 
-Alvorens uw rapport te publiceren, zorg ervoor het correct op het **[!UICONTROL Preview]** lusje wordt getoond.
+Alvorens uw rapport te publiceren, zorg ervoor het correct op **[!UICONTROL Preview]** tabel wordt getoond.
 
 ![](assets/s_ncs_advuser_report_preview_01.png)
 
-Als u de voorvertoning van het rapport wilt weergeven, selecteert u de optie **[!UICONTROL Global]** of de **[!UICONTROL Selection]** optie.
+Als u de voorvertoning van het rapport wilt weergeven, selecteert u de optie **[!UICONTROL Global]** of **[!UICONTROL Selection]**.
 
-Deze twee opties worden geselecteerd gebaseerd op de vertoningsmontages van het rapport. Als de weergave-instelling **[!UICONTROL Global]** is, moet u de **[!UICONTROL Global]** voorvertoningsoptie selecteren. Als de weergave-instellingen worden gebruikt **[!UICONTROL Single selection]** of **[!UICONTROL Multiple selection]** moet de **[!UICONTROL Selection]** voorvertoningsoptie zijn geselecteerd.
+Deze twee opties worden geselecteerd gebaseerd op de vertoningsmontages van het rapport. Als de weergave-instelling **[!UICONTROL Global]** is, moet u de voorvertoningsoptie **[!UICONTROL Global]** selecteren. Als de weergave-instellingen **[!UICONTROL Single selection]** of **[!UICONTROL Multiple selection]** zijn, moet de voorvertoningsoptie **[!UICONTROL Selection]** zijn geselecteerd.
 
-Voor meer op dit, verwijs naar de vertoningscontext [van het](#report-display-context)Rapport.
+Voor meer op dit, verwijs naar [de vertoningscontext van het Rapport](#report-display-context).
 
-Met specifieke instellingen kunt u fouten beheren. De instelling **_uuid** vindt u in de URL van het rapport. U kunt de instellingen **&amp;_preview** of **&amp;_debug** eraan toevoegen.
+Met specifieke instellingen kunt u fouten beheren. De instelling **_uuid** vindt u in de URL van het rapport. U kunt de **&amp;_preview** of **&amp;_debug** montages aan het toevoegen.
 
-Meer informatie over deze instellingen vindt u in het gedeelte Eigenschappen **van webformulieren** definiëren van het hoofdstuk [Webformulieren](../../web/using/about-web-forms.md) .
+Meer informatie over deze instellingen vindt u in de sectie **Eigenschappen van webformulieren definiëren** van het hoofdstuk [Webformulieren](../../web/using/about-web-forms.md).
 
-## Het rapport publiceren {#publishing-the-report}
+## Het rapport {#publishing-the-report} publiceren
 
-Publiceren van het rapport is verplicht om deze te delen met andere operatoren en weer te geven in de lijst met beschikbare rapporten (zie ook de weergavecontext [](#report-display-context)Rapport). Deze operatie moet telkens opnieuw worden uitgevoerd wanneer het verslag wordt gewijzigd.
+Het publiceren van het rapport is verplicht om hen met andere exploitanten te delen en hen te tonen in de lijst van beschikbare rapporten (verwijs ook naar [de vertoningscontext van het Rapport](#report-display-context)). Deze operatie moet telkens opnieuw worden uitgevoerd wanneer het verslag wordt gewijzigd.
 
-1. Open de publicatiewizard door op **[!UICONTROL Publish]** de werkbalk te klikken.
+1. Open de publicatietovenaar door **[!UICONTROL Publish]** in de toolbar te klikken.
 
    ![](assets/s_ncs_advuser_report_publish_01.png)
 
@@ -135,5 +135,5 @@ Publiceren van het rapport is verplicht om deze te delen met andere operatoren e
 
    ![](assets/s_ncs_advuser_report_publish_02.png)
 
-1. Klik op het **[!UICONTROL Enlarge]** pictogram om het rapport in een webbrowser te openen.
+1. Klik op het pictogram **[!UICONTROL Enlarge]** om het rapport te openen in een webbrowser.
 
