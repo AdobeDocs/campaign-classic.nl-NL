@@ -34,8 +34,8 @@ Om de creatie, het gebruik en de duurzaamheid van een rapport te optimaliseren, 
    * Onderzoek de gegevens in het gegevensbestand en bepaal metingen. Meer informatie [in deze sectie](../../reporting/using/about-cubes.md)
    * Voeg indicatoren aan een bestaand rapport toe. Meer informatie [in deze sectie](../../reporting/using/about-reports-creation-in-campaign.md)
    * Bekijk de gegevens in de database. Meer informatie [in deze sectie](../../reporting/using/about-descriptive-analysis.md)
-   * Maak een nieuw leveringsrapport. Meer informatie [in deze sectie](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Gegevens exporteren uit de Adobe Campaign-database (via een workflow, raadpleeg [deze sectie](../../workflow/using/about-workflows.md)
+   * Maak een nieuw leveringsrapport. Meer [in deze sectie](../../reporting/using/about-reports-creation-in-campaign.md)) leren,
+   * Gegevens exporteren uit de Adobe Campaign-database (via een workflow). Raadpleeg [deze sectie](../../workflow/using/about-workflows.md)
    * Maak een draaitabel. Meer informatie [in deze sectie](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
    * Samengevoegde gegevens verkennen. Meer informatie [in deze sectie](../../reporting/using/about-cubes.md)
    * Gebruik een wizard om gegevens te analyseren. Meer informatie [in deze sectie](../../reporting/using/about-descriptive-analysis.md)
@@ -62,7 +62,7 @@ Om de creatie, het gebruik en de duurzaamheid van een rapport te optimaliseren, 
 
    De kwesties die verband houden met gegevensvolumes en updates moeten zorgvuldig worden bestudeerd om weergaveproblemen, met name in termen van tijd, te vermijden. Daarom raden we u aan aggregaten te maken om bepaalde gegevens buiten het rapport vooraf te berekenen. Tabellen die de tracerings- en leveringslogboeken bevatten, kunnen miljoenen records bevatten: dit betekent dat de gegevens moeten worden samengevoegd via een werkstroom die in een rapport moet worden gebruikt .
 
-## Rapport maken optimaliseren{#optimizing-report-creation}
+## Het optimaliseren van rapportverwezenlijking{#optimizing-report-creation}
 
 ### Gegevensvolume {#data-volume}
 
@@ -80,7 +80,7 @@ We raden ook aan &#39;s nachts aggregaten te berekenen en deze geaggregeerde geg
 
 U kunt ook &#39;s nachts rapporten berekenen en automatisch een geschiedenis maken die op elk moment kan worden weergegeven zonder de database te overladen.
 
-### Zoekopdrachten {#queries}
+### Vragen {#queries}
 
 We raden u aan om waar mogelijk SQL-query&#39;s te gebruiken en JavaScript-naverwerking te vermijden. Gebruik indien nodig een scriptactiviteit in een workflow en verwijder de gegevens die voor de berekening worden gebruikt. U kunt gearchiveerde gegevens ook gebruiken om de verwerkingstijd te versnellen.
 
@@ -102,7 +102,7 @@ Daarnaast beveelt Adobe Campaign de volgende verbeteringen aan:
 
    Als u snel een geïndexeerd veld wilt zoeken, bekijkt u de naam van de kolom in de Adobe Campaign-interface: de sorteerpijl wordt rood onderstreept als het veld wordt geïndexeerd.
 
-   For more on indexes, refer to [this section](../../configuration/using/data-model-best-practices.md#indexes).
+   Raadpleeg [deze sectie](../../configuration/using/data-model-best-practices.md#indexes) voor meer informatie over indexen.
 
 * Zorg ervoor het rapport scalable is: het gegevensvolume kan in de loop der tijd aanzienlijk toenemen.
 
@@ -110,8 +110,8 @@ Daarnaast beveelt Adobe Campaign de volgende verbeteringen aan:
 
    Tot slot moeten vertragingen bij het wissen van gegevens bekend zijn en waar nodig worden aangepast voor een gemakkelijke gegevensmanipulatie.
 
-   Raadpleeg [deze sectie](../../configuration/using/data-model-best-practices.md#data-retention)voor meer informatie over opschonen en het bewaren van gegevens.
+   Raadpleeg [deze sectie](../../configuration/using/data-model-best-practices.md#data-retention) voor meer informatie over opschonen en het bewaren van gegevens.
 
 ### Rapporten exporteren {#exporting-reports}
 
-Recommendations-specifieke exportrapporten worden in [deze sectie](../../reporting/using/actions-on-reports.md#exporting-a-report)beschreven.
+Recommendations specifiek voor het exporteren van rapporten wordt beschreven in [deze sectie](../../reporting/using/actions-on-reports.md#exporting-a-report).
