@@ -25,15 +25,15 @@ Het doel is te controleren of het updateproces is beëindigd voordat een andere 
 
 Deze workflow bestaat uit:
 
-* een activiteit van de **Planner** , die het werkschema op een specifieke frequentie uitvoert.
-* een **testactiviteit** die controleert of de workflow al wordt uitgevoerd.
-* **De activiteiten van de vraag** en van de **Update gegevens** voor het geval de werkschema niet reeds uitvoert, gevolgd door een activiteit van het **Eind** die de veranderlijke van de werkschemainstantie aan vals herinitialiseert.
-* Een activiteit van het **Eind** als het werkschema reeds uitvoert.
+* a **Planner** activiteit, die de werkstroom op een specifieke frequentie uitvoert.
+* a **Test** activiteit die controleert of de werkstroom reeds uitvoert.
+* **** Queryen  **Update** gegevensactiviteiten voor het geval de werkstroom niet reeds uitvoert, die door een  **** Eindactiviteit wordt gevolgd die de variabele van de werkschemainstantie aan vals herinitialiseert.
+* Een **End** activiteit als de werkstroom reeds uitvoert.
 
 Volg onderstaande stappen om de workflow te maken:
 
-1. Voeg een activiteit van de **Planner** toe, dan vorm zijn frequentie volgens uw behoeften.
-1. Voeg een activiteit van de **Test** toe om te controleren of het werkschema reeds uitvoert, dan vorm het zoals hieronder.
+1. Voeg een **Planner** activiteit toe, dan vorm zijn frequentie volgens uw behoeften.
+1. Voeg een **Test** activiteit toe om te controleren of het werkschema reeds uitvoert, dan vorm het zoals hieronder.
 
    >[!NOTE]
    >
@@ -41,13 +41,13 @@ Volg onderstaande stappen om de workflow te maken:
 
    ![](assets/uc_dataupdate_test.png)
 
-1. Voeg een activiteit van het **Eind** aan **Geen** vork toe. Op deze manier wordt niets uitgevoerd als de workflow al wordt uitgevoerd.
-1. Voeg de gewenste activiteiten toe aan de **Ja** -vork. In ons geval, **vraag** en **werk de activiteiten van Gegevens** bij.
-1. Open de eerste activiteit, dan voeg **instance.vars.isRunning = ware** bevel op het **[!UICONTROL Advanced]** lusje toe. Op deze manier wordt de instantievariabele ingesteld als actief.
+1. Voeg een **End** activiteit aan **No** vork toe. Op deze manier wordt niets uitgevoerd als de workflow al wordt uitgevoerd.
+1. Voeg de gewenste activiteiten toe aan de **Yes** vork. In ons geval, **Vraag** en **Werk Gegevens** activiteiten bij.
+1. Open de eerste activiteit, dan voeg **instance.vars.isRunning = waar** bevel op **[!UICONTROL Advanced]** tabel toe. Op deze manier wordt de instantievariabele ingesteld als actief.
 
    ![](assets/uc_dataupdate_query.png)
 
-1. Voeg een activiteit van het **Eind** aan het eind van de **[!UICONTROL Yes]** vork toe, dan voeg **instance.vars.isRunning = vals** bevel op het **[!UICONTROL Advanced]** lusje toe.
+1. Voeg een **End** activiteit aan het eind van **[!UICONTROL Yes]** vork toe, dan voeg **instance.vars.isRunning = vals** bevel in **[!UICONTROL Advanced]** tabel toe.
 
    Op deze manier wordt geen actie uitgevoerd zolang de workflow wordt uitgevoerd.
 
