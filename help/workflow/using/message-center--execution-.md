@@ -17,7 +17,7 @@ ht-degree: 6%
 
 # Berichtencentrum (uitvoering){#message-center-execution}
 
-De hieronder beschreven workflows worden standaard geïnstalleerd met de module **Message Center - Execution** . For more on this module, refer to this [section](../../message-center/using/about-transactional-messaging.md).
+De hieronder beschreven workflows worden geïnstalleerd met **Message Center - Execution** module door gebrek. Voor meer op deze module, verwijs naar dit [sectie](../../message-center/using/about-transactional-messaging.md).
 
 Meer over hoe te om technische werkschema&#39;s met betrekking tot de module van het Centrum van het Bericht te vormen, verwijs naar [deze pagina](../../message-center/using/technical-workflows.md).
 
