@@ -17,16 +17,16 @@ ht-degree: 0%
 
 # Upgraden naar een nieuwe build (on-premise){#upgrading}
 
-Voordat u het upgradeproces start, bepaalt en bevestigt u welke versie van Adobe Campaign moet worden bijgewerkt naar en raadpleegt u de [releaseopmerkingen](../../rn/using/latest-release.md) .
+Voordat u het upgradeproces start, bepaalt en bevestigt u welke versie van Adobe Campaign moet worden bijgewerkt naar en raadpleegt u de [Opmerkingen bij de release](../../rn/using/latest-release.md).
 
 >[!IMPORTANT]
 >
->Wij adviseren sterk makend een gegevensbestandsteun op elke instantie alvorens bij te werken. Raadpleeg [Back-up](../../production/using/backup.md)voor meer informatie.\
+>Wij adviseren sterk makend een gegevensbestandsteun op elke instantie alvorens bij te werken. Raadpleeg [Back-up](../../production/using/backup.md) voor meer informatie.\
 >Om een verbetering uit te voeren, zorg ervoor u de capaciteit en de toestemmingen hebt om tot instanties en logboeken toegang te hebben.
 
 >[!NOTE]
 >
->Raadpleeg ook de [installatiegids](../../installation/using/general-architecture.md) en de [build-upgrade](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html) die aan de slag gaat.
+>Raadpleeg ook de [installatiehandleiding](../../installation/using/general-architecture.md) en de [upgrade voor de build](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html) om aan de slag te gaan.
 
 ## Windows {#in-windows}
 
@@ -34,12 +34,12 @@ Om Adobe Campaign in een nieuwe versie bij te werken wanneer het leveren van een
 
 * [Afsluitdiensten](#shut-down-services),
 * [Een upgrade uitvoeren van de Adobe Campaign-servertoepassing](#upgrade-the-adobe-campaign-server-application),
-* [Bronnen](#synchronize-resources)synchroniseren
-* [Start de services](#restart-services)opnieuw.
+* [Bronnen](#synchronize-resources) synchroniseren
+* [Start de services](#restart-services) opnieuw.
 
-Raadpleeg [deze sectie](../../installation/using/client-console-availability-for-windows.md)voor informatie over het bijwerken van de clientconsole.
+Zie [deze sectie](../../installation/using/client-console-availability-for-windows.md) voor informatie over het bijwerken van de clientconsole.
 
-### Afsluiten van services {#shut-down-services}
+### Afsluitservices {#shut-down-services}
 
 Als u alle bestanden wilt vervangen door de nieuwe versie, moet u alle instanties van de NLSereservice afsluiten.
 
@@ -49,12 +49,12 @@ Als u alle bestanden wilt vervangen door de nieuwe versie, moet u alle instantie
 
       **iisreset /stop**
 
-   * Adobe Campaign-service: **netstop nlserver6**
+   * Adobe Campaign-service: **net stop nlserver6**
    >[!IMPORTANT]
    >
-   >U moet er ook voor zorgen dat de omleidingsserver (webmdl) wordt gestopt, zodat het bestand **nlsrvmod.dll** dat door IIS wordt gebruikt, kan worden vervangen door de nieuwe versie.
+   >U moet ook ervoor zorgen dat de omleidingsserver (webmdl) wordt tegengehouden, zodat het **nlsrvmod.dll** dossier dat door IIS wordt gebruikt met de nieuwe versie kan worden vervangen.
 
-1. Controleer of geen taken actief zijn door de opdracht **pdump** van de server uit te voeren. Het volgende moet naar voren komen:
+1. Controleer of geen taken actief zijn door de opdracht **nlserver pdump** uit te voeren. Het volgende moet naar voren komen:
 
    ```
    C:<installation path>Adobe Campaign v7bin>nlserver pdump
@@ -64,23 +64,23 @@ Als u alle bestanden wilt vervangen door de nieuwe versie, moet u alle instantie
 
    U kunt de Manager van de Taak van Vensters gebruiken om ervoor te zorgen alle processen worden tegengehouden.
 
-### De Adobe Campaign-servertoepassing upgraden {#upgrade-the-adobe-campaign-server-application}
+### Een upgrade uitvoeren van de Adobe Campaign-servertoepassing {#upgrade-the-adobe-campaign-server-application}
 
 Voer de volgende stappen uit om het upgradebestand uit te voeren:
 
 1. Voer **setup.exe** uit.
 
-   Als u dit bestand wilt downloaden, maakt u via uw gebruikersgegevens verbinding met de portal [voor](https://experience.adobe.com/downloads) softwaredistributie. Meer informatie over softwaredistributie vindt u op [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+   Als u dit bestand wilt downloaden, maakt u via uw gebruikersgegevens verbinding met het [portal voor softwaredistributie](https://experience.adobe.com/downloads). Meer informatie over softwaredistributie vindt u op [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
-1. Selecteer de installatiemodus: kiezen **[!UICONTROL Update or repair]**
+1. Selecteer de installatiemodus: kies **[!UICONTROL Update or repair]**
 1. Klik op **[!UICONTROL Next]** .
 1. Klik op **[!UICONTROL Finish]** .
 
    Het installatieprogramma kopieert vervolgens de nieuwe bestanden.
 
-1. Wanneer de bewerking is voltooid, klikt u op **[!UICONTROL Finish]** .
+1. Wanneer de bewerking is voltooid, klikt u op **[!UICONTROL Finish]**.
 
-### Bronnen synchroniseren {#synchronize-resources}
+### Bronnen {#synchronize-resources} synchroniseren
 
 Gebruik de volgende opdrachtregel:
 
@@ -94,11 +94,11 @@ Op deze manier kunt u de volgende bewerkingen uitvoeren:
 
 >[!NOTE]
 >
->Deze bewerking mag maar één keer worden uitgevoerd en alleen op een (**nlserver-web**) toepassingsserver.
+>Deze bewerking moet slechts eenmaal worden uitgevoerd en alleen op een toepassingsserver (**nlserver web**).
 
-Controleer vervolgens of de synchronisatie fouten of waarschuwingen heeft gegenereerd. Raadpleeg [Verbeteringsconflicten](#resolving-upgrade-conflicts)oplossen voor meer informatie.
+Controleer vervolgens of de synchronisatie fouten of waarschuwingen heeft gegenereerd. Voor meer op dit, verwijs naar [Het oplossen van verbeteringsconflicten](#resolving-upgrade-conflicts).
 
-### Herstartservices {#restart-services}
+### Services {#restart-services} opnieuw starten
 
 De volgende diensten moeten opnieuw worden opgestart:
 
@@ -106,25 +106,25 @@ De volgende diensten moeten opnieuw worden opgestart:
 
    **iisreset /start**
 
-* Adobe Campaign-service: **netwerkbeginserver6**
+* Adobe Campaign-service: **net start nlserver6**
 
 ## Linux {#in-linux}
 
 Als u Adobe Campaign wilt bijwerken in een nieuwe versie wanneer een nieuwe build wordt geleverd, volgt de procedure voor Linux:
 
-* [Updates](#obtain-updated-packages)verkrijgen,
-* [Een update](#perform-an-update)uitvoeren
-* [Start de webserver](#reboot-the-web-server)opnieuw op.
+* [Updates](#obtain-updated-packages) verkrijgen,
+* [Een update](#perform-an-update) uitvoeren
+* [Start de webserver](#reboot-the-web-server) opnieuw op.
 
-Raadpleeg [deze sectie](../../installation/using/client-console-availability-for-linux.md)voor informatie over het bijwerken van de clientconsole.
+Zie [deze sectie](../../installation/using/client-console-availability-for-linux.md) voor informatie over het bijwerken van de clientconsole.
 
 >[!NOTE]
 >
 >Vanaf build 8757 is de bibliotheek van derden niet meer nodig.
 
-### Bijgewerkte pakketten ophalen {#obtain-updated-packages}
+### Updates ophalen {#obtain-updated-packages}
 
-Begin door beide bijgewerkte pakketten van Adobe Campaign te herstellen: Maak verbinding met de portal [voor](https://experience.adobe.com/downloads) softwaredistributie met uw gebruikersgegevens. Meer informatie over softwaredistributie vindt u op [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+Begin door beide bijgewerkte pakketten van Adobe Campaign te herstellen: Maak verbinding met de [portal Softwaredistributie](https://experience.adobe.com/downloads) met behulp van uw gebruikersgegevens. Meer informatie over softwaredistributie vindt u op [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 Het bestand is **nlserver6-v7-XXX.rpm**
 
@@ -156,9 +156,9 @@ Het bestand is **nlserver6-v7-XXX.rpm**
 
 >[!NOTE]
 >
->De volledige installatieprocedures worden in [dit gedeelte](../../installation/using/installing-campaign-standard-packages.md)beschreven. De middelen worden automatisch gesynchroniseerd, nochtans moet u ervoor zorgen geen fouten voorkwamen. Raadpleeg [Verbeteringsconflicten](#resolving-upgrade-conflicts)oplossen voor meer informatie.
+>De volledige installatieprocedures worden beschreven in [deze sectie](../../installation/using/installing-campaign-standard-packages.md). De middelen worden automatisch gesynchroniseerd, nochtans moet u ervoor zorgen geen fouten voorkwamen. Voor meer op dit, verwijs naar [Het oplossen van verbeteringsconflicten](#resolving-upgrade-conflicts).
 
-### De webserver opnieuw opstarten {#reboot-the-web-server}
+### De webserver {#reboot-the-web-server} opnieuw opstarten
 
 U moet Apache afsluiten voordat de nieuwe bibliotheek van toepassing wordt.
 
@@ -170,7 +170,7 @@ Hiervoor voert u de volgende opdracht uit:
 
 >[!IMPORTANT]
 >
->* Uw script wordt mogelijk **httpd** genoemd in plaats van **apache**.
+>* Uw script kan **httpd** worden genoemd in plaats van **apache**.
 >* U MOET dit bevel uitvoeren tot u het volgende antwoord verkrijgt:
 
    >
@@ -186,13 +186,13 @@ Start vervolgens Apache opnieuw:
 
 ## Oplossen van upgradeconflicten {#resolving-upgrade-conflicts}
 
-Tijdens middelsynchronisatie, laat het **postupgrade** bevel u toe om te ontdekken of de synchronisatie fouten of waarschuwingen heeft geproduceerd.
+Tijdens middelsynchronisatie, laat **postupgrade** bevel u toe om te ontdekken of de synchronisatie fouten of waarschuwingen heeft geproduceerd.
 
-### Het synchronisatieresultaat weergeven {#view-the-synchronization-result}
+### Het synchronisatieresultaat {#view-the-synchronization-result} weergeven
 
 Er zijn twee manieren om het synchronisatieresultaat weer te geven:
 
-* In de opdrachtregelinterface worden fouten geconcretiseerd door een drievoudig chevron **>>** en wordt de synchronisatie automatisch gestopt. Waarschuwingen worden geconcretiseerd door een dubbel chevron **>>** en moeten worden opgelost zodra de synchronisatie is voltooid. Aan het eind van postupgrade, wordt een samenvatting getoond in de bevelherinnering. Het kan er als volgt uitzien:
+* In de bevel-lijn interface, worden de fouten materialized door een drievoudig chevron **>>** en de synchronisatie wordt automatisch tegengehouden. Waarschuwingen worden geconcretiseerd door een dubbel chevron **>** en moeten worden opgelost zodra de synchronisatie is voltooid. Aan het eind van postupgrade, wordt een samenvatting getoond in de bevelherinnering. Het kan er als volgt uitzien:
 
    ```
    2013-04-09 07:48:39.749Z 00002E7A 1 info log =========Summary of the update==========
@@ -205,13 +205,13 @@ Er zijn twee manieren om het synchronisatieresultaat weer te geven:
 
    Als de waarschuwing een conflict van middelen betreft, wordt de aandacht van de gebruiker vereist om het op te lossen.
 
-* Het logbestand **postupgrade_`<server version number>_<time of postupgrade>`.log** bevat het synchronisatieresultaat. Deze is standaard beschikbaar in de volgende map: **`<installation directory>/var/<instance/postupgrade`**. Fouten en waarschuwingen worden aangegeven door de fout- en waarschuwingskenmerken.
+* Het **postupgrade_`<server version number>_<time of postupgrade>`.log** logboekdossier bevat het synchronisatieresultaat. Deze is standaard beschikbaar in de volgende map: **`<installation directory>/var/<instance/postupgrade`**. Fouten en waarschuwingen worden aangegeven door de fout- en waarschuwingskenmerken.
 
 ### Conflicten oplossen {#resolving-conflicts}
 
 Pas het volgende proces toe om conflicten op te lossen:
 
-1. Ga in de Adobe Campaign boom naar **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]** .
+1. Ga in de Adobe Campaign-structuur naar **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]**.
 1. Selecteer het conflict dat u wilt oplossen in de lijst.
 
 Er zijn drie manieren om een conflict op te lossen:
@@ -226,15 +226,15 @@ Er zijn drie manieren om een conflict op te lossen:
 
 Ga als volgt te werk als u het conflict handmatig wilt oplossen:
 
-1. Zoek in de onderste sectie van het venster naar de **_conflictreeks_** om de entiteiten met conflicten te vinden. De entiteit die met de nieuwe versie is geïnstalleerd, bevat het **nieuwe** argument. De entiteit die met de vorige versie overeenkomt, bevat het **focusargument** .
+1. Zoek in de onderste sectie van het venster naar de tekenreeks **_conflict_** om de entiteiten met conflicten te zoeken. De entiteit die met de nieuwe versie is geïnstalleerd, bevat het argument **new**, de entiteit die met de vorige versie overeenkomt, bevat het argument **cus**.
 
    ![](assets/s_ncs_production_conflict002.png)
 
-1. Verwijder de versie die u niet wilt behouden. Verwijder de **_conflict_argument_** -tekenreeks van de entiteit die u bewaart.
+1. Verwijder de versie die u niet wilt behouden. Verwijder de **_conflict_argument_**-tekenreeks van de entiteit die u bewaart.
 
    ![](assets/s_ncs_production_conflict003.png)
 
-1. Ga naar het conflict dat u hebt opgelost. Klik op het **[!UICONTROL Actions]** pictogram en selecteer **[!UICONTROL Declare as resolved]** .
+1. Ga naar het conflict dat u hebt opgelost. Klik op het pictogram **[!UICONTROL Actions]** en selecteer **[!UICONTROL Declare as resolved]**.
 1. Sla uw wijzigingen op: het conflict is nu opgelost .
 
 ### Aanbevolen procedures {#best-practices}
@@ -243,7 +243,7 @@ Er kan een updatefout worden gekoppeld aan de databaseconfiguratie. Zorg ervoor 
 
 Een unicode-database mag bijvoorbeeld niet alleen de opslag van LATIN1-gegevens, enzovoort, toestaan.
 
-## Waarschuwen als de clientconsoles van de beschikbare update {#warn-the-client-consoles-of-the-available-update}
+## Waarschuwen op de clientconsoles van de beschikbare update {#warn-the-client-consoles-of-the-available-update}
 
 ### Windows {#in-windows-1}
 
@@ -257,15 +257,15 @@ De volgende keer dat clientconsoles worden aangesloten, wordt gebruikers in een 
 
 >[!NOTE]
 >
->Zorg ervoor de gebruiker IIS_XPG de aangewezen leesrechten voor dit installatiedossier heeft en verwijs naar de [installatiegids](../../installation/using/general-architecture.md) voor meer informatie.
+>Zorg ervoor de gebruiker IIS_XPG de aangewezen leesrechten voor dit installatiedossier heeft en verwijs naar [installatiegids](../../installation/using/general-architecture.md) voor meer informatie.
 
 ### Linux {#in-linux-1}
 
-Op de computer waarop de Adobe Campaign-toepassingsserver (**nlserver-web**) is geïnstalleerd, haalt u het volgende pakket op:
+Op de computer waarop de Adobe Campaign-toepassingsserver (**nlserver web**) is geïnstalleerd, haalt u het volgende pakket op:
 
 **setup-client-6.XXXX.exe**
 
-en kopieer het bestand en sla het op als **/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
+en kopieer het bestand, en sla het op als **/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
 
 ```
  cp setup-client-6.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp
