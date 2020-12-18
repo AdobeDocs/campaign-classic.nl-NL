@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## Definitie van het toepassingsgebied {#definition-of-the-scope}
 
-Open het **[!UICONTROL Scope]** tabblad om uw instellingen te kiezen.
+Open het tabblad **[!UICONTROL Scope]** om uw instellingen te kiezen.
 
 De volgende punten zijn verplicht:
 
@@ -44,11 +44,11 @@ U kunt er ook voor kiezen om de simulatie uit te voeren voor alle aanbiedingen o
 >
 >U moet een contactdatum opgeven. Hierdoor kan de interactie-engine de aanbiedingen sorteren in de geselecteerde omgeving of categorie. Als geen datum wordt gevormd, zal de simulatie een fout opheffen.
 
-## Rapportassen toevoegen {#adding-reporting-axes}
+## Rapportassen {#adding-reporting-axes} toevoegen
 
-U kunt de simulatieanalyse verbeteren door rapportassen op het doel of de aanbiedingen zelf via het **[!UICONTROL Calculations]** lusje toe te voegen.
+U kunt de simulatieanalyse verbeteren door rapportassen op het doel of de aanbiedingen zelf via **[!UICONTROL Calculations]** tabel toe te voegen.
 
-Klik hiertoe op de **[!UICONTROL Add]** knop en kies de gewenste velden. De assen zullen voor de berekening van de simulatie worden gebruikt en worden getoond in het analyseverslag. For more on this, refer to [Simulation tracking](../../interaction/using/simulation-tracking.md).
+Om dit te doen, klik **[!UICONTROL Add]** knoop en kies de aangewezen gebieden. De assen zullen voor de berekening van de simulatie worden gebruikt en worden getoond in het analyseverslag. Raadpleeg [Simulatie bijhouden](../../interaction/using/simulation-tracking.md) voor meer informatie hierover.
 
 ![](assets/offer_simulation_011.png)
 
