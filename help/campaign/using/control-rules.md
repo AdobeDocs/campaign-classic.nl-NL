@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Controleregels{#control-rules}
 
-## Regels inzake analyse en arbitrage {#analysis-and-arbitration-control-rules}
+## Regels voor analyse en arbitrage {#analysis-and-arbitration-control-rules}
 
 Met de controleregels kunt u de geldigheid en kwaliteit van berichten vóór levering garanderen: tekenweergave, SMS-grootte, adresnotatie, enz.
 
@@ -32,9 +32,9 @@ Met een set regels voor verduistering kunt u gebruikelijke controles uitvoeren. 
 * **[!UICONTROL Wave scheduling check]** (e-mail): controleert of de laatste leveringsgolf volgens de planning vóór het einde van de geldigheidsperiode zal beginnen, als de levering in verschillende golven is opgesplitst.
 * **[!UICONTROL Unsubscription link approval]** (e-mail): controleert op de aanwezigheid van ten minste één niet-abonnements-URL (opt-out) in elke inhoud (HTML en Tekst).
 
-## Creating a control rule {#creating-a-control-rule}
+## Een besturingsregel {#creating-a-control-rule} maken
 
-Het is mogelijk om nieuwe controleregels tot stand te brengen om uw behoeften aan te passen. Om dit te doen, creeer een **[!UICONTROL Control]** typologieregel en ga de controleformule in SQL op het **[!UICONTROL Code]** lusje in.
+Het is mogelijk om nieuwe controleregels tot stand te brengen om uw behoeften aan te passen. Om dit te doen, creeer een **[!UICONTROL Control]** typologieregel en ga de controleformule in SQL op **[!UICONTROL Code]** tabel in.
 
 **Voorbeeld:**
 
@@ -42,11 +42,11 @@ In het volgende voorbeeld, gaan wij een regel tot stand brengen om een aanbiedin
 
 Voer de volgende stappen uit:
 
-1. Maak een **[!UICONTROL Control]** typologieregel. Selecteer een **[!UICONTROL Warning]** waarschuwingsniveau.
+1. Maak een **[!UICONTROL Control]**-typologieregel. Selecteer een **[!UICONTROL Warning]** alarmniveau.
 
    ![](assets/campaign_opt_create_control_01.png)
 
-1. Voer op het **[!UICONTROL Code]** tabblad het script in om de gewenste drempelwaarde toe te passen, zoals hieronder wordt weergegeven:
+1. Voer op het tabblad **[!UICONTROL Code]** het script in om de gewenste drempelwaarde toe te passen, zoals hieronder wordt weergegeven:
 
    ![](assets/campaign_opt_create_control_02.png)
 
@@ -70,7 +70,7 @@ Voer de volgende stappen uit:
 
    ![](assets/campaign_opt_create_control_05.png)
 
-   Aan het einde van de analyse is de **[!UICONTROL Confirm delivery]** knop niet beschikbaar.
+   Aan het einde van de analyse is de knop **[!UICONTROL Confirm delivery]** niet beschikbaar.
 
    ![](assets/campaign_opt_create_control_06.png)
 
