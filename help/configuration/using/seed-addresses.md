@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Seed-adressen{#seed-addresses}
 
-Als de ontvankelijke lijst een douanetabel is, worden de extra configuraties vereist. Het **[!UICONTROL nms:seedMember]** schema moet worden uitgebreid. Er wordt een extra tabblad toegevoegd aan de podadressen voor het definiëren van de juiste velden, zoals hieronder wordt getoond:
+Als de ontvankelijke lijst een douanetabel is, worden de extra configuraties vereist. Het schema **[!UICONTROL nms:seedMember]** moet worden uitgebreid. Er wordt een extra tabblad toegevoegd aan de podadressen voor het definiëren van de juiste velden, zoals hieronder wordt getoond:
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
@@ -25,7 +25,7 @@ Voor meer bij het gebruiken van zaadadressen, verwijs [deze sectie](../../delive
 
 ## Implementatie {#implementation}
 
-Het schema **nms:seedMember** en de gekoppelde vorm die uit-van-de-doos komen moeten voor klantenconfiguratie worden uitgebreid, om alle noodzakelijke gebieden van verwijzingen te voorzien. De schemadefinitie bevat commentaren detailleert zijn configuratiewijze.
+Het schema **nms:seedMember** en de gekoppelde vorm die uit-van-de-doos komen zijn bedoeld om voor klantenconfiguratie worden uitgebreid, om naar alle noodzakelijke gebieden te verwijzen. De schemadefinitie bevat commentaren detailleert zijn configuratiewijze.
 
 Definitie van het uitgebreide schema van de lijst van ontvangers:
 
@@ -44,14 +44,14 @@ Definitie van het uitgebreide schema van de lijst van ontvangers:
 
 Voer de volgende stappen uit:
 
-1. Maak een extensie van het schema **nms:seedMember** . Raadpleeg [Een schema](../../configuration/using/extending-a-schema.md)uitbreiden voor meer informatie.
-1. Voeg in deze nieuwe extensie een nieuw element toe aan de basis van **[!UICONTROL seedMember]** de volgende parameters:
+1. Maak een extensie van het schema **nms:seedMember**. Voor meer op dit, verwijs naar [Uitbreidend een schema](../../configuration/using/extending-a-schema.md).
+1. In deze nieuwe uitbreiding, voeg een nieuw element bij de wortel van **[!UICONTROL seedMember]** met de volgende parameters toe:
 
    ```
    name="custom_customNamespace_customSchema"
    ```
 
-   Dit element moet de velden bevatten die vereist zijn om de campagnes te exporteren. Deze velden moeten dezelfde naam hebben als de corresponderende velden in het externe schema. Als het schema bijvoorbeeld is **[!UICONTROL cus:person]** , moet het **[!UICONTROL nms:seedMember]** schema als volgt worden uitgebreid:
+   Dit element moet de velden bevatten die vereist zijn om de campagnes te exporteren. Deze velden moeten dezelfde naam hebben als de corresponderende velden in het externe schema. Als het schema bijvoorbeeld **[!UICONTROL cus:person]** is, moet het schema **[!UICONTROL nms:seedMember]** als volgt worden uitgebreid:
 
    ```
      <srcSchema extendedSchema="nms:seedMember" label="Seed addresses" labelSingular="Seed address" name="seedMember" namespace="cus">
@@ -79,10 +79,10 @@ Voer de volgende stappen uit:
    >    
    >    * Tijdens de extensie moet u een **SQL-naam (@sqlname)** opgeven voor het veld E-mail. De SQL-naam moet afwijken van de &#39;sEmail&#39;-naam die is gereserveerd voor het ontvangende schema.
    >    * U moet de databasestructuur bijwerken met het gemaakte schema wanneer u **nms:seedMember** uitbreidt.
-   >    * In de extensie **nms:seedMember** moet het veld met het e-mailadres **name=&quot;email&quot;** hebben als kenmerk. De SQL-naam moet anders zijn dan &#39;sEmail&#39;, dat al wordt gebruikt voor het ontvangende schema. Dit kenmerk moet onmiddellijk onder het **`<element name="custom_cus_person" />`** element worden gedeclareerd.
+   >    * In de extensie **nms:zaadlid** moet het veld met het e-mailadres **name=&quot;email&quot;** hebben als kenmerk. De SQL-naam moet anders zijn dan &#39;sEmail&#39;, dat al wordt gebruikt voor het ontvangende schema. Dit kenmerk moet onmiddellijk worden gedeclareerd onder het element **`<element name="custom_cus_person" />`**.
 
 
-1. Wijzig het **[!UICONTROL seedMember]** formulier dienovereenkomstig om een nieuw tabblad &quot;Interne ontvanger&quot; in het **[!UICONTROL Seed addresses]** venster te definiëren. For more on this, refer to [Form structure](../../configuration/using/form-structure.md).
+1. Wijzig het formulier **[!UICONTROL seedMember]** dienovereenkomstig om een nieuw tabblad &quot;Interne ontvanger&quot; in het venster **[!UICONTROL Seed addresses]** te definiëren. Raadpleeg [Formulierstructuur](../../configuration/using/form-structure.md) voor meer informatie.
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"
