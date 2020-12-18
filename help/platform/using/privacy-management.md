@@ -10,24 +10,24 @@ translation-type: tm+mt
 source-git-commit: 8ff5450cc35153e61048c2671f6d52fbc5ffc5b9
 workflow-type: tm+mt
 source-wordcount: '891'
-ht-degree: 86%
+ht-degree: 93%
 
 ---
 
 
 # Privacybeheer {#privacy-management}
 
-Adobe Campaign biedt een reeks hulpmiddelen aan om u te helpen aan [Privacyverordeningen ](#privacy-management-regulations) (met inbegrip van GDPR, CCPA, PDPA, LGPD) voldoen.
+Adobe Campaign biedt een reeks tools om u te helpen voldoen aan de [privacyverordeningen](#privacy-management-regulations) (zoals AVG, CCPA, PDPA, LGPD).
 
-Hier volgen de vijf belangrijkste mogelijkheden die Adobe Campaign biedt om ervoor te zorgen dat de GDPR en andere privacyregels klaar zijn:
+Hier volgen de vijf voornaamste mogelijkheden die Adobe Campaign biedt om u gereed te maken voor de AVG en andere privacyregels:
 
 ![](assets/privacy-gdpr-use-cases.png)
 
 * **Recht op toegang**
 
-* **Rechts om te verwijderen**
+* **Recht op verwijdering**
 
-Voor meer op dit, zie [Recht op Toegang en Recht om worden vergeten](#right-access-forgotten).
+Zie [Recht op toegang en recht om te worden vergeten](#right-access-forgotten) voor meer informatie.
 
 * **Toestemmingsbeheer**
 
@@ -35,7 +35,7 @@ Voor meer op dit, zie [Recht op Toegang en Recht om worden vergeten](#right-acce
 
 * **Rights Management**
 
-Zie [Goedkeuring, Behoud en Rollen](#consent-retention-roles) voor meer informatie.
+Zie [Toestemming, retentie en rollen](#consent-retention-roles) voor meer informatie.
 
 <!--This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
 
