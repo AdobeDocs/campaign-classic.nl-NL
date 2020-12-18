@@ -28,12 +28,12 @@ ht-degree: 16%
 Het staat voor meer flexibele integratie toe aangezien de configuratie minimaal is en een derde niet betrokken is.
 Ook wordt steun verleend aan grote verkeersvolumes zonder dat dit van invloed is op de prestaties van marketingactiviteiten. De integratie kan bijvoorbeeld een miljoen triggers per uur verwerken.
 
-## [!DNL Triggers] architectuur {#triggers-architecture}
+## [!DNL Triggers] architectuur  {#triggers-architecture}
 
-Het [!DNL pipelined] proces wordt altijd uitgevoerd op de Adobe Campaign-marketingserver. Het verbindt met de pijpleiding, wint de gebeurtenissen terug, en verwerkt hen onmiddellijk.
+Het [!DNL pipelined]-proces wordt altijd uitgevoerd op de Adobe Campaign-marketingserver. Het verbindt met de pijpleiding, wint de gebeurtenissen terug, en verwerkt hen onmiddellijk.
 
 ![](assets/triggers_2.png)
 
-Het [!DNL pipelined] proces logt aan de Experience Cloud binnen gebruikend een authentificatiedienst en verzendt een privé sleutel. De verificatieservice retourneert een token. Het token wordt gebruikt voor verificatie bij het ophalen van de gebeurtenissen.
+Het [!DNL pipelined] proces meldt zich aan bij de Experience Cloud gebruikend de authentificatieservice en verzendt een privé sleutel. De verificatieservice retourneert een token. Het token wordt gebruikt voor verificatie bij het ophalen van de gebeurtenissen.
 
-For more information on authentication, refer to this [page](../../integrations/using/configuring-adobe-io.md).
+Raadpleeg deze [pagina](../../integrations/using/configuring-adobe-io.md) voor meer informatie over verificatie.
