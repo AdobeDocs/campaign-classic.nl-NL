@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Een externe database openen
+title: Toegang tot een externe database
 description: Leer hoe u verbinding maakt met een externe database
 audience: platform
 content-type: reference
@@ -21,7 +21,7 @@ Als u een verbinding met de externe database wilt inschakelen, moet u de verbind
 
 >[!CAUTION]
 >
->De Adobe Campaign-gebruiker heeft specifieke rechten nodig voor de externe database en de Adobe Campaign-toepassingsserver om gegevens uit een externe database te verwerken. Voor meer op dit, verwijs naar de [Verre sectie van de de toegangsrechten](../../installation/using/remote-database-access-rights.md) van het gegevensbestandtoegang.
+>De Adobe Campaign-gebruiker heeft specifieke rechten nodig voor de externe database en de Adobe Campaign-toepassingsserver om gegevens uit een externe database te verwerken. Voor meer op dit, verwijs naar [Verre de sectie van de gegevensbestandtoegang](../../installation/using/remote-database-access-rights.md).
 >
 >Om storingen te voorkomen, moeten operatoren die toegang krijgen tot externe, gedeelde gegevens werken vanuit aparte ruimten.
 
@@ -30,34 +30,34 @@ Als u een verbinding met de externe database wilt inschakelen, moet u de verbind
 Als u een verbinding met een gedeelde externe database wilt inschakelen, zolang deze verbinding actief is, kunt u de database openen via Adobe Campaign.
 
 1. De configuratie moet vooraf via de **[!UICONTROL Administration > Platform > External accounts]** knoop worden bepaald.
-1. Klik op de **[!UICONTROL New]** knop en selecteer het **[!UICONTROL External database]** type.
-1. Definieer de **[!UICONTROL Connection]** parameters van de externe database.
+1. Klik op de knop **[!UICONTROL New]** en selecteer het type **[!UICONTROL External database]**.
+1. Definieer de **[!UICONTROL Connection]**-parameters van de externe database.
 
-   Voor verbindingen met een **ODBC** typedatabase moet het **[!UICONTROL Server]** veld de naam van de ODBC-gegevensbron bevatten en niet de servernaam. Bovendien kunnen bepaalde aanvullende configuraties noodzakelijk zijn, afhankelijk van de gebruikte databanken. Raadpleeg de sectie [Specifieke configuraties per databasetype](../../installation/using/configure-fda.md) .
+   Voor verbindingen met een **ODBC** typegegevensbestand moet het **[!UICONTROL Server]** gebied de naam van de ODBC gegevensbron en niet de servernaam bevatten. Bovendien kunnen bepaalde aanvullende configuraties noodzakelijk zijn, afhankelijk van de gebruikte databanken. Verwijs naar [Specifieke configuraties door gegevensbestandtype](../../installation/using/configure-fda.md) sectie.
 
-1. Wanneer de parameters zijn ingevoerd, klikt u op de **[!UICONTROL Test the connection]** knop om deze goed te keuren.
+1. Nadat de parameters zijn ingevoerd, klikt u op de knop **[!UICONTROL Test the connection]** om deze goed te keuren.
 
    ![](assets/wf-external-account-create.png)
 
-1. Schakel indien nodig de **[!UICONTROL Enabled]** optie uit om toegang tot deze database uit te schakelen zonder de configuratie ervan te verwijderen.
-1. Als u Adobe Campaign toegang wilt geven tot deze database, moet u de SQL-functies implementeren. Klik op het **[!UICONTROL Parameters]** tabblad en vervolgens op de **[!UICONTROL Deploy functions]** knop.
+1. Schakel indien nodig de optie **[!UICONTROL Enabled]** uit om toegang tot deze database uit te schakelen zonder de configuratie ervan te verwijderen.
+1. Als u Adobe Campaign toegang wilt geven tot deze database, moet u de SQL-functies implementeren. Klik op het tabblad **[!UICONTROL Parameters]** en vervolgens op de knop **[!UICONTROL Deploy functions]**.
 
    ![](assets/wf-external-account-functions.png)
 
-U kunt specifieke werktabelruimten definiëren voor de tabellen en voor de index op het **[!UICONTROL Parameters]** tabblad.
+U kunt specifieke werktabelruimten definiëren voor de tabellen en voor de index op het tabblad **[!UICONTROL Parameters]**.
 
-## Tijdelijke verbinding maken {#creating-a-temporary-connection}
+## Tijdelijke verbinding {#creating-a-temporary-connection} maken
 
-U kunt rechtstreeks vanuit workflowactiviteiten een verbinding met een externe database definiëren. In dit geval bevindt het bestand zich in een lokale externe database die is gereserveerd voor gebruik in een huidige workflow: het wordt niet opgeslagen op de externe accounts. Dit type punctuele verbinding kan op verschillende activiteiten van het werkschema worden tot stand gebracht, met name de **[!UICONTROL Query]**, de **[!UICONTROL Data loading (RDBMS)]**, de **[!UICONTROL Enrichment]** activiteit of de **[!UICONTROL Split]** activiteit.
+U kunt rechtstreeks vanuit workflowactiviteiten een verbinding met een externe database definiëren. In dit geval bevindt het bestand zich in een lokale externe database die is gereserveerd voor gebruik in een huidige workflow: het wordt niet opgeslagen op de externe accounts. Dit type punctuele verbinding kan op verschillende activiteiten van het werkschema worden tot stand gebracht, met name **[!UICONTROL Query]**, **[!UICONTROL Data loading (RDBMS)]**, **[!UICONTROL Enrichment]** activiteit of **[!UICONTROL Split]** activiteit.
 
 >[!CAUTION]
 >
->Dit type configuratie wordt niet aanbevolen, maar kan periodiek worden gebruikt om gegevens te verzamelen. Desalniettemin moet u een externe account maken, zoals wordt weergegeven in de sectie [Een gedeelde verbinding](#creating-a-shared-connection) maken.
+>Dit type configuratie wordt niet aanbevolen, maar kan periodiek worden gebruikt om gegevens te verzamelen. Desalniettemin moet u een externe account maken, zoals wordt weergegeven in de sectie [Een gedeelde verbinding maken](#creating-a-shared-connection).
 
 In de queryactiviteit ziet u bijvoorbeeld de volgende stappen voor het maken van een periodieke verbinding met een externe database:
 
-1. Klik op de knop **[!UICONTROL Add data...]** en selecteer de **[!UICONTROL External data]** opties.
-1. Selecteer de **[!UICONTROL Locally defining the data source]** optie.
+1. Klik op **[!UICONTROL Add data...]** en selecteer de opties **[!UICONTROL External data]**.
+1. Selecteer de optie **[!UICONTROL Locally defining the data source]**.
 
    ![](assets/wf_add_data_local_external_data.png)
 
@@ -75,12 +75,12 @@ In de queryactiviteit ziet u bijvoorbeeld de volgende stappen voor het maken van
 
    ![](assets/wf_add_data_local_external_data_select_table.png)
 
-1. Klik op de **[!UICONTROL Add]** knop om een of meerdere afstemmingsvelden te definiëren tussen de externe databasegegevens en de gegevens in de Adobe Campaign-database. De **[!UICONTROL Edit expression]** pictogrammen van de tabel **[!UICONTROL Remote field]** en **[!UICONTROL Local field]** bieden u toegang tot de lijst met velden van elk van de tabellen.
+1. Klik op de knop **[!UICONTROL Add]** om een of meerdere afstemmingsvelden te definiëren tussen de externe databasegegevens en de gegevens in de Adobe Campaign-database. Met de pictogrammen **[!UICONTROL Edit expression]** van **[!UICONTROL Remote field]** en **[!UICONTROL Local field]** hebt u toegang tot de lijst met velden van elk van de tabellen.
 
    ![](assets/wf_add_data_local_external_data_join.png)
 
 1. Geef zo nodig een filtervoorwaarde en de gegevenssorteermodus op.
-1. Selecteer de aanvullende gegevens die in de externe database moeten worden verzameld. Dubbelklik hiertoe op de velden die u wilt toevoegen om deze weer te geven in het **[!UICONTROL Output columns]** deelvenster.
+1. Selecteer de aanvullende gegevens die in de externe database moeten worden verzameld. Dubbelklik hiertoe op de velden die u wilt toevoegen om deze weer te geven in de **[!UICONTROL Output columns]**.
 
    ![](assets/wf_add_data_local_external_data_select.png)
 
@@ -104,4 +104,4 @@ Indien nodig, kunt u het schema voor de verwerking van gegevens in een extern ge
 
 >[!NOTE]
 >
->Raadpleeg [deze pagina](../../configuration/using/about-schema-edition.md)voor meer informatie over het maken van schema&#39;s in Adobe Campaign en het definiëren van een nieuwe gegevenstoewijzing.
+>Raadpleeg [deze pagina](../../configuration/using/about-schema-edition.md) voor meer informatie over het maken van schema&#39;s in Adobe Campaign en het definiëren van een nieuwe gegevenstoewijzing.
