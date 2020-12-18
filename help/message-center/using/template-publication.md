@@ -27,13 +27,13 @@ Zodra het berichtmalplaatje op de controleinstantie wordt gecreeerd volledig is,
 >
 >Wanneer het publiceren van transactiemalplaatjes van het berichtbericht, worden de typologische regels automatisch gepubliceerd op de uitvoeringsinstanties.
 
-1. Ga in de besturingsinstantie naar de **[!UICONTROL Message Center > Transactional message templates]** map van de boomstructuur.
+1. Ga in de besturingsinstantie naar de map **[!UICONTROL Message Center > Transactional message templates]** van de boomstructuur.
 1. Selecteer de sjabloon die u op de uitvoeringsinstanties wilt publiceren.
 1. Klik op **[!UICONTROL Publish]**.
 
    ![](assets/messagecenter_publish_model_008.png)
 
-Wanneer de publicatie is voltooid, worden zowel berichtsjablonen die moeten worden toegepast op batchgebeurtenissen als realtime-typegebeurtenissen gemaakt in de structuur van de productieinstantie in de **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** map.
+Wanneer de publicatie is voltooid, worden zowel berichtsjablonen die moeten worden toegepast op batchgebeurtenissen als realtime-typegebeurtenissen gemaakt in de structuur van de productieinstantie in de map **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]**.
 
 ![](assets/messagecenter_deployed_model_001.png)
 
