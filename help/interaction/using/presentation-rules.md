@@ -17,14 +17,14 @@ ht-degree: 1%
 
 # Presentatieregels{#presentation-rules}
 
-## Creating a presentation rule {#creating-a-presentation-rule}
+## Presentatieregel {#creating-a-presentation-rule} maken
 
 In onze databank staan verschillende reisaanbiedingen voor Europa, Afrika, de Verenigde Staten en Canada. We willen voorstellen verzenden voor een reis naar Canada, maar als de ontvanger dit soort aanbiedingen weigert, willen we ze niet meer sturen
 
 We gaan onze regels zodanig configureren dat de reis naar Canada slechts één keer per ontvanger wordt aangeboden en niet opnieuw wordt aangeboden als ze wordt afgewezen.
 
-1. Ga in de Adobe Campaign-structuur naar **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** knooppunt.
-1. Create a new **[!UICONTROL Offer presentation]** type rule.
+1. Ga in de Adobe Campaign-structuur naar **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]**.
+1. Creeer een nieuwe **[!UICONTROL Offer presentation]** typeregel.
 
    ![](assets/offer_typology_example_001.png)
 
@@ -32,19 +32,19 @@ We gaan onze regels zodanig configureren dat de reis naar Canada slechts één k
 
    ![](assets/offer_typology_example_002.png)
 
-1. Kies de **[!UICONTROL All channels]** optie om de lijn tot alle kanalen uit te breiden.
+1. Kies de optie **[!UICONTROL All channels]** om de regel tot alle kanalen uit te breiden.
 
    ![](assets/offer_typology_example_003.png)
 
-1. Klik op de **[!UICONTROL Edit expression]** koppeling en kies het **[!UICONTROL Category]** knooppunt als een expressie.
+1. Klik op de koppeling **[!UICONTROL Edit expression]** en kies het knooppunt **[!UICONTROL Category]** als een expressie.
 
    ![](assets/offer_typology_example_004.png)
 
-1. Kies de categorie die overeenkomt met uw reisaanbieding voor Canada en klik **[!UICONTROL OK]** om het venster met zoekopdrachten te sluiten.
+1. Kies de categorie die overeenkomt met uw reisaanbieding voor Canada en klik op **[!UICONTROL OK]** om het venster met de query te sluiten.
 
    ![](assets/offer_typology_example_005.png)
 
-1. Kies op het **[!UICONTROL Offer presentation]** tabblad dezelfde afmetingen als de afmetingen die in de omgeving zijn geconfigureerd.
+1. Kies op het tabblad **[!UICONTROL Offer presentation]** dezelfde afmetingen als de afmetingen die in de omgeving zijn geconfigureerd.
 
    ![](assets/offer_typology_example_006.png)
 
@@ -56,17 +56,17 @@ We gaan onze regels zodanig configureren dat de reis naar Canada slechts één k
 
    ![](assets/offer_typology_example_008.png)
 
-1. Selecteer het **[!UICONTROL Offers for the same category]** filter om alle aanbiedingen uit te sluiten van de categorie **Canada** .
+1. Selecteer het filter **[!UICONTROL Offers for the same category]** om alle aanbiedingen van de **categorie Canada** uit te sluiten.
 
    ![](assets/offer_typology_example_020.png)
 
-1. Selecteer het **[!UICONTROL Rejected propositions]** filter om alleen rekening te houden met voorstellen die door de ontvanger zijn afgewezen.
+1. Selecteer het filter **[!UICONTROL Rejected propositions]** om alleen rekening te houden met voorstellen die door de ontvanger zijn afgewezen.
 
    ![](assets/offer_typology_example_021.png)
 
 1. Kies de ontvangers waarop deze regel van toepassing is.
 
-   In ons voorbeeld kiezen we de ontvangers van de **frequente reizigers** .
+   In ons voorbeeld kiezen wij de **Frequente reizigers** ontvangers.
 
    ![](assets/offer_typology_example_009.png)
 
@@ -74,26 +74,26 @@ We gaan onze regels zodanig configureren dat de reis naar Canada slechts één k
 
    ![](assets/offer_typology_example_013.png)
 
-1. Ga naar het aanbiedingsmilieu, (**Milieu - Ontvanger** in dit geval) en verwijs de nieuwe typologie net gecreeerd gebruikend de drop-down lijst in het **[!UICONTROL Eligibility]** lusje.
+1. Ga naar het aanbiedingsmilieu, (**Milieu - Ontvanger** in dit geval) en verwijs de nieuwe typologie net gecreeerd gebruikend de drop-down lijst in **[!UICONTROL Eligibility]** tabel.
 
    ![](assets/offer_typology_example_014.png)
 
-## De presentatieregel toepassen {#applying-the-presentation-rule}
+## De presentatieregel {#applying-the-presentation-rule} toepassen
 
 Hier volgt een voorbeeld van de eerder gemaakte typologieregel.
 
 We willen een eerste voorstel verzenden dat tot de categorie Canada behoort. Indien het aanbod eenmaal door een van de ontvangers wordt afgewezen, wordt het niet opnieuw aan hen aangeboden.
 
-1. Kies in de map **Ontvanger frequente reizigers** een van de profielen om de aanbiedingen te controleren waarvoor ze in aanmerking komen: Klik op het **[!UICONTROL Propositions]** tabblad en klik vervolgens op het **[!UICONTROL Preview]** tabblad.
+1. Kies in de map **Frequente reizigers** ontvanger een van de profielen om de aanbiedingen te controleren waarvoor ze in aanmerking komen: Klik op de tab **[!UICONTROL Propositions]** en vervolgens op de tab **[!UICONTROL Preview]**.
 
-   In ons voorbeeld komt **Tim Ramsey** in aanmerking voor een aanbod dat deel uitmaakt van de categorie **Amerika** .
+   In ons voorbeeld komt **Tim Ramsey** in aanmerking voor een aanbieding die deel uitmaakt van de categorie **Americas**.
 
    ![](assets/offer_typology_example_015.png)
 
-1. Begin door een e-maillevering te creëren die uw **Frequente reizigers** ontvangers met voorstellen zal richten.
+1. Begin door een e-maillevering te creëren die uw **Frequente reizigers** ontvangers met aanbiedingen zal richten.
 1. Selecteer de vraagparameters van de aanbiedingsmotor.
 
-   In ons voorbeeld wordt de categorie **Reizen in Amerika** gekozen, die de subcategorieën **Canada** en de **Verenigde Staten** bevat.
+   In ons voorbeeld wordt de categorie **Reizen in Amerika** gekozen, die de subcategorieën **Canada** en **United States** bevat.
 
    ![](assets/offer_typology_example_016.png)
 
