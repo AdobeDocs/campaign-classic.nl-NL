@@ -29,40 +29,40 @@ In dit voorbeeld willen we een query uitvoeren om alle e-maildomeinen te zoeken 
 
 * Gegevensgroepering?
 
-   Gebaseerd op e-maildomein met een aantal primaire sleutels boven 30. Deze bewerking wordt uitgevoerd met de **[!UICONTROL Group by + Having]** optie. **[!UICONTROL Group by + Having]** Hiermee kunt u gegevens groeperen (&quot;groeperen door&quot;) en een selectie maken van gegroepeerde objecten (&quot;hebben&quot;).
+   Gebaseerd op e-maildomein met een aantal primaire sleutels boven 30. Deze bewerking wordt uitgevoerd met de optie **[!UICONTROL Group by + Having]**. **[!UICONTROL Group by + Having]** Hiermee kunt u gegevens groeperen (&quot;groeperen door&quot;) en een selectie maken van gegroepeerde objecten (&quot;hebben&quot;).
 
 U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
-1. Open de tabel **[!UICONTROL Generic query editor]** en kies de tabel Ontvanger (**nms:ontvanger**).
+1. Open **[!UICONTROL Generic query editor]** en kies de Ontvanger lijst (**nms:ontvanger**).
 
    ![](assets/query_editor_02.png)
 
-1. Selecteer in het **[!UICONTROL Data to extract]** venster de velden **[!UICONTROL Email domain]** en **[!UICONTROL Primary key]** velden. Een telling uitvoeren op het **[!UICONTROL Primary key]** veld.
+1. Selecteer in het venster **[!UICONTROL Data to extract]** de velden **[!UICONTROL Email domain]** en **[!UICONTROL Primary key]**. Een telling op het **[!UICONTROL Primary key]** gebied in werking stellen.
 
-   Raadpleeg [deze sectie](../../platform/using/defining-filter-conditions.md#building-expressions)voor meer informatie over primaire sleutels.
+   Voor meer op primaire zeer belangrijke tellingen, verwijs naar [deze sectie](../../platform/using/defining-filter-conditions.md#building-expressions).
 
-1. Schakel het **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** selectievakje in.
+1. Schakel het selectievakje **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** in.
 
    ![](assets/query_editor_nveau_29.png)
 
-1. Sorteer de e-maildomeinen in aflopende volgorde in het **[!UICONTROL Sorting]** venster. Controleer **[!UICONTROL Yes]** de **[!UICONTROL Descending sort]** kolom om dit te doen. Klik op **[!UICONTROL Next]**.
+1. Sorteer de e-maildomeinen in aflopende volgorde in het venster **[!UICONTROL Sorting]**. Om dit te doen, controleer **[!UICONTROL Yes]** in **[!UICONTROL Descending sort]** kolom. Klik op **[!UICONTROL Next]**.
 
    ![](assets/query_editor_nveau_70.png)
 
 1. In **[!UICONTROL Data filtering]** selecteert u **[!UICONTROL Filtering conditions]**. Ga naar het **[!UICONTROL Target elements]** venster en klik **[!UICONTROL Next]**.
-1. Selecteer in het **[!UICONTROL Data grouping]** venster de **[!UICONTROL Email domain]** knop door te klikken **[!UICONTROL Add]**.
+1. Selecteer **[!UICONTROL Data grouping]** in het venster &lt;a0/> door op **[!UICONTROL Add]** te klikken.**[!UICONTROL Email domain]**
 
    Dit venster voor gegevensgroepering wordt alleen weergegeven als het vak **[!UICONTROL Handle groupings (GROUP BY + HAVING]**) is ingeschakeld.
 
    ![](assets/query_editor_blocklist_04.png)
 
-1. Geef in het **[!UICONTROL Grouping condition]** venster een aantal primaire sleutels op dat groter is dan 30, aangezien we alleen willen dat e-maildomeinen die meer dan 30 keer zijn bedoeld als resultaten worden geretourneerd.
+1. Geef in het venster **[!UICONTROL Grouping condition]** een aantal primaire sleutels op dat groter is dan 30, aangezien we alleen willen dat e-maildomeinen die meer dan 30 keer zijn aangewezen als resultaat worden geretourneerd.
 
-   Dit venster wordt weergegeven wanneer het **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** selectievakje is ingeschakeld: Hier wordt het groeperingsresultaat gefilterd (HAVING).
+   Dit venster wordt weergegeven wanneer het selectievakje **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** is ingeschakeld: Hier wordt het groeperingsresultaat gefilterd (HAVING).
 
    ![](assets/query_editor_blocklist_05.png)
 
-1. Klik in het **[!UICONTROL Data formatting]** venster op **[!UICONTROL Next]**: hier is geen opmaak nodig .
-1. Klik in het venster met de gegevensvoorvertoning op **[!UICONTROL Launch data preview]**: hier worden drie verschillende e-maildomeinen geretourneerd die meer dan 30 keer als doel hebben.
+1. Klik in het venster **[!UICONTROL Data formatting]** op **[!UICONTROL Next]**: hier is geen opmaak nodig .
+1. Klik in het venster met gegevensvoorvertoning op **[!UICONTROL Launch data preview]**: hier worden drie verschillende e-maildomeinen geretourneerd die meer dan 30 keer als doel hebben.
 
    ![](assets/query_editor_blocklist_06.png)
