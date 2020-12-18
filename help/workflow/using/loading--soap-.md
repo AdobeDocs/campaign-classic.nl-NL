@@ -19,9 +19,9 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->De activiteit van de **Lading (ZEEP)** is slechts beschikbaar als u de **FDA (Federated Data Access)** module geïnstalleerd hebt. Controleer hiervoor uw licentieovereenkomst.
+>De **Loading (ZEEP)** activiteit is slechts beschikbaar als u **FDA (Federated Data Access)** module geïnstalleerd hebt. Controleer hiervoor uw licentieovereenkomst.
 
-De **activiteit van de Lading (ZEEP)** wordt gebruikt naast de activiteit van het laden van **gegevens (RDBMS)** wanneer het niet mogelijk is om gegevens direct via FDA in een externe gegevensbestand te verzamelen.
+De activiteit **Laden (SOAP)** wordt gebruikt naast de activiteit **gegevens laden (RDBMS)** wanneer het niet mogelijk is om gegevens rechtstreeks via de FDA in een externe database te verzamelen.
 
 De bewerking is als volgt:
 
@@ -37,13 +37,13 @@ De bewerking is als volgt:
 
    ![](assets/soap_load_003.png)
 
-1. Selecteer deze optie **[!UICONTROL Click here to view and edit analysis results]** om elke opgegeven kolom op te geven.
+1. Selecteer **[!UICONTROL Click here to view and edit analysis results]** om elke geïdentificeerde kolom te specificeren.
 
    ![](assets/soap_load_001.png)
 
-   Selecteer **[!UICONTROL Re-analyze the example]**.
+   Selecteer **[!UICONTROL Re-analyze the example]** als u het voorbeeld wilt bijwerken.
 
-   U kunt de indeling van kolomgegevens ook aanpassen via de **[!UICONTROL Advanced parameters]** koppeling. Raadpleeg deze [sectie](../../platform/using/importing-data.md#import-wizard)voor meer informatie over het opmaken van geïmporteerde gegevens.
+   U kunt de indeling van kolomgegevens ook aanpassen via de koppeling **[!UICONTROL Advanced parameters]**. Raadpleeg deze [sectie](../../platform/using/importing-data.md#import-wizard) voor meer informatie over het opmaken van geïmporteerde gegevens.
 
 1. U kunt het lijnaantal als herkenningsteken gebruiken en/of specificeren dat de vraag van de ZEEP verscheidene elementen terugkeert.
 1. Voer de volgende tabscripts in op basis van hun functie:
