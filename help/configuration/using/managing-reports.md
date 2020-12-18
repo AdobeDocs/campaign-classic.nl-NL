@@ -17,9 +17,9 @@ ht-degree: 4%
 
 # Rapporten beheren{#managing-reports}
 
-Rapporten die zijn gebaseerd op een schema dat specifiek is voor de standaard Adobe Campaign-ontvangers (NM:ontvanger of gekoppeld schema) moeten opnieuw worden ontwikkeld om rekening te houden met de gegevens uit de aangepaste tabel en de tabellen die via de doeltoewijzing zijn gekoppeld (zie de sectie [Doeltoewijzing](../../configuration/using/target-mapping.md) ).
+Rapporten die zijn gebaseerd op een schema dat specifiek is voor de standaard Adobe Campaign-ontvangers (Nm:ontvanger of gekoppeld schema) moeten opnieuw worden ontwikkeld om rekening te houden met de gegevens uit de aangepaste tabel en de bijbehorende tabellen die via de doeltoewijzing zijn gekoppeld (zie de sectie [Doeltoewijzing](../../configuration/using/target-mapping.md)).
 
-Raadpleeg [deze sectie](../../reporting/using/about-reports-creation-in-campaign.md)voor het maken van nieuwe rapporten.
+Als u nieuwe rapporten wilt maken, raadpleegt u [deze sectie](../../reporting/using/about-reports-creation-in-campaign.md).
 
 In sommige gevallen moet u ook nieuwe blokjes plaatsen die specifiek zijn voor deze tabellen. De kubussen worden gedetailleerd in [deze sectie](../../reporting/using/about-cubes.md).
 
