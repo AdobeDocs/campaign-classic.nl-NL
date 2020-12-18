@@ -23,21 +23,21 @@ Acties die betrekking hebben op het uitvoeren van de workflow (starten, stoppen,
 
 Met de werkbalk kunt u de uitvoering van de workflow starten en volgen.
 
-De lijst met opties in het **[!UICONTROL Actions]** menu en in het snelmenu dat met de rechtermuisknop wordt geopend, wordt hieronder beschreven.
+De lijst met opties die beschikbaar zijn in het menu **[!UICONTROL Actions]** en in het menu Klikken met de rechtermuisknop vindt u hieronder in detail.
 
 >[!IMPORTANT]
 >
->Houd er rekening mee dat wanneer een operator een handeling uitvoert op een werkstroom (starten, stoppen, pauzeren, enz.), de handeling niet direct wordt uitgevoerd, maar in plaats daarvan in een wachtrij wordt geplaatst om te worden verwerkt door de [werkstroommodule](../../workflow/using/architecture.md).
+>Houd er rekening mee dat wanneer een operator een handeling uitvoert op een werkstroom (starten, stoppen, pauzeren, enz.), de handeling niet direct wordt uitgevoerd, maar in plaats daarvan in een wachtrij wordt geplaatst om te worden verwerkt door de [workflowmodule](../../workflow/using/architecture.md).
 
 ## Werkbalk Handelingen {#actions-toolbar}
 
-De werkbalkknoppen worden in deze [sectie](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)beschreven. Met de **[!UICONTROL Actions]** knop hebt u toegang tot extra opties voor het uitvoeren van geselecteerde workflows. U kunt ook het **[!UICONTROL File > Actions]** menu gebruiken of met de rechtermuisknop op een workflow klikken en **[!UICONTROL Actions]** selecteren.
+De werkbalkknoppen worden beschreven in deze [sectie](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow). Met de knop **[!UICONTROL Actions]** hebt u toegang tot extra uitvoeringsopties voor het werken met geselecteerde workflows. U kunt ook het menu **[!UICONTROL File > Actions]** gebruiken of met de rechtermuisknop op een workflow klikken en **[!UICONTROL Actions]** selecteren.
 
 ![](assets/purge_historique.png)
 
 * **[!UICONTROL Start]**
 
-   Met deze actie kunt u de uitvoering van een workflow starten: Als een werkstroom **voltooid** is, **wordt Bewerkt** of **Gepauzeerd** , verandert de status in **Gestart**. De workflow-engine handelt vervolgens de uitvoering van deze workflow af. Als de werkstroom is gepauzeerd, wordt deze hervat, anders wordt de werkstroom van het begin gestart en worden de initiële activiteiten geactiveerd.
+   Met deze actie kunt u de uitvoering van een workflow starten: Als een workflow **Voltooid**, **Wordt bewerkt** of **Gepauzeerd** de status wijzigt in **Gestart**. De workflow-engine handelt vervolgens de uitvoering van deze workflow af. Als de werkstroom is gepauzeerd, wordt deze hervat, anders wordt de werkstroom van het begin gestart en worden de initiële activiteiten geactiveerd.
 
    De aanvang is een asynchroon proces: Het verzoek wordt opgeslagen en zo snel mogelijk verwerkt door een workflowserver.
 
@@ -47,7 +47,7 @@ De werkbalkknoppen worden in deze [sectie](../../campaign/using/marketing-campai
 
 * **[!UICONTROL Stop]**
 
-   Met deze handeling wordt een workflow gestopt die momenteel wordt uitgevoerd. De status van de instantie is ingesteld op **Voltooid**. Bewerkingen die worden uitgevoerd, worden indien mogelijk gestopt. Importeren en SQL-query&#39;s worden onmiddellijk geannuleerd.
+   Met deze handeling wordt een workflow gestopt die momenteel wordt uitgevoerd. De status van de instantie wordt ingesteld op **Voltooid**. Bewerkingen die worden uitgevoerd, worden indien mogelijk gestopt. Importeren en SQL-query&#39;s worden onmiddellijk geannuleerd.
 
    Stoppen is een asynchroon proces. Het verzoek is geregistreerd en vervolgens worden bewerkingen door de workflowserver of servers geannuleerd. Het stoppen van een werkstroominstantie kan daarom tijd in beslag nemen, vooral als de werkstroom op meerdere servers wordt uitgevoerd, die elk de controle moeten krijgen om de actieve taken te annuleren.
 
@@ -55,11 +55,11 @@ De werkbalkknoppen worden in deze [sectie](../../campaign/using/marketing-campai
 
    Deze actie stopt en start de workflow opnieuw. Doorgaans kunt u sneller opnieuw opstarten. Het is ook nuttig om opnieuw beginnen te automatiseren wanneer het tegenhouden een bepaalde hoeveelheid tijd neemt: De reden hiervoor is dat de opdracht Stoppen niet beschikbaar is wanneer de workflow wordt gestopt.
 
-   De **[!UICONTROL Start / Pause / Stop / Restart]** acties zijn ook beschikbaar via de uitvoeringspictogrammen op de werkbalk. Raadpleeg deze [sectie](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow) voor meer informatie.
+   De **[!UICONTROL Start / Pause / Stop / Restart]** acties zijn ook beschikbaar via de uitvoeringspictogrammen in de toolbar. Raadpleeg deze [sectie](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow) voor meer informatie.
 
 * **[!UICONTROL Purge history]**
 
-   Met deze handeling kunt u de historie van de workflow wissen. Raadpleeg voor meer informatie de logboeken [leegmaken](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
+   Met deze handeling kunt u de historie van de workflow wissen. Raadpleeg [Logbestanden leegmaken](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs) voor meer informatie.
 
 * **[!UICONTROL Start in simulation mode]**
 
@@ -79,11 +79,11 @@ De werkbalkknoppen worden in deze [sectie](../../campaign/using/marketing-campai
 
 * **[!UICONTROL Save as template]**
 
-   Met deze actie maakt u een nieuw werkstroomsjabloon op basis van de geselecteerde workflow. U moet de map opgeven waarin deze wordt opgeslagen (in het **[!UICONTROL Folder]** veld).
+   Met deze actie maakt u een nieuw werkstroomsjabloon op basis van de geselecteerde workflow. U moet de map opgeven waarin deze wordt opgeslagen (in het veld **[!UICONTROL Folder]**).
 
-   De **[!UICONTROL Mass update of selected lines]** en de **[!UICONTROL Merge selected lines]** opties zijn algemene platformopties beschikbaar in alle **[!UICONTROL Actions]** menu&#39;s. Raadpleeg deze [sectie](../../platform/using/updating-data.md) voor meer informatie.
+   De opties **[!UICONTROL Mass update of selected lines]** en **[!UICONTROL Merge selected lines]** zijn algemene platformopties beschikbaar in alle **[!UICONTROL Actions]** menu&#39;s. Raadpleeg deze [sectie](../../platform/using/updating-data.md) voor meer informatie.
 
-## Klikken met rechtermuisknop {#right-click-menu}
+## Klikken met rechtermuisknop op menu {#right-click-menu}
 
 Wanneer een of meer workflowactiviteiten zijn geselecteerd, kunt u met de rechtermuisknop klikken om op uw selectie te reageren.
 
@@ -93,7 +93,7 @@ De volgende opties zijn beschikbaar in het klikmenu met de rechtermuisknop:
 
 **[!UICONTROL Open]**: met deze optie hebt u toegang tot de eigenschappen van de activiteit.
 
-**[!UICONTROL Display logs:]** met deze optie kunt u het logboek voor taakuitvoering weergeven voor de geselecteerde activiteit. Zie Logboeken [weergeven](../../workflow/using/monitoring-workflow-execution.md#displaying-logs).
+**[!UICONTROL Display logs:]** met deze optie kunt u het logboek voor taakuitvoering weergeven voor de geselecteerde activiteit. Zie [Logbestanden weergeven](../../workflow/using/monitoring-workflow-execution.md#displaying-logs).
 
 **[!UICONTROL Execute pending task(s) now:]** met deze actie kunt u taken die in behandeling zijn zo snel mogelijk starten.
 
@@ -103,7 +103,7 @@ De volgende opties zijn beschikbaar in het klikmenu met de rechtermuisknop:
 
 **[!UICONTROL Copy as bitmap:]** met deze optie kunt u een screenshot maken van alle activiteiten.
 
-**[!UICONTROL Normal execution / Enable but do not execute / Do not enable:]** deze opties zijn ook beschikbaar op het **[!UICONTROL Advanced]** tabblad van de eigenschappen activity . Ze worden in detail beschreven in [Executie](../../workflow/using/advanced-parameters.md#execution).
+**[!UICONTROL Normal execution / Enable but do not execute / Do not enable:]** deze opties zijn ook beschikbaar op het  **[!UICONTROL Advanced]** tabblad van de eigenschappen activity . Deze worden beschreven in [Execution](../../workflow/using/advanced-parameters.md#execution).
 
 **[!UICONTROL Save / Cancel:]** Hiermee kunt u de wijzigingen in een workflow opslaan of annuleren.
 
@@ -111,4 +111,4 @@ De volgende opties zijn beschikbaar in het klikmenu met de rechtermuisknop:
 >
 >U kunt een groep activiteiten selecteren en er een van deze opdrachten op toepassen.
 
-Het contextmenu wordt ook beschreven in deze [sectie](../../campaign/using/marketing-campaign-deliveries.md#executing-a-workflow).
+Het met de rechtermuisknop aanklikken menu is ook gedetailleerd in dit [sectie](../../campaign/using/marketing-campaign-deliveries.md#executing-a-workflow).
