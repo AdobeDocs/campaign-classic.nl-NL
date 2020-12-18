@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Troubleshooting the ACS Connector{#troubleshooting-the-acs-connector}
+# Het oplossen van problemen de Schakelaar ACS{#troubleshooting-the-acs-connector}
 
 Afhankelijk van uw implementatie kunt u met meerdere veelvoorkomende problemen worden geconfronteerd.
 
@@ -33,23 +33,23 @@ Afhankelijk van uw implementatie kunt u met meerdere veelvoorkomende problemen w
  <tbody> 
   <tr> 
    <td> ontvangers (of een andere profieldimensie)<br /> </td> 
-   <td> profiles<br /> </td> 
+   <td> profielen<br /> </td> 
   </tr> 
   <tr> 
    <td> list<br /> </td> 
-   <td> audience<br /> </td> 
+   <td> publiek<br /> </td> 
   </tr> 
   <tr> 
-   <td> campagneworkflows, doelgericht werken<br /> </td> 
+   <td> campagneworkflows, gericht op workflows<br /> </td> 
    <td> workflows<br /> </td> 
   </tr> 
   <tr> 
    <td> bewerkingen<br /> </td> 
-   <td> campaigns<br /> </td> 
+   <td> campagnes<br /> </td> 
   </tr> 
   <tr> 
-   <td> web applications<br /> </td> 
-   <td> landing pages<br /> </td> 
+   <td> webtoepassingen<br /> </td> 
+   <td> openingspagina's<br /> </td> 
   </tr> 
   <tr> 
    <td> aangepaste tabel- en schema-extensie<br /> </td> 
@@ -57,7 +57,7 @@ Afhankelijk van uw implementatie kunt u met meerdere veelvoorkomende problemen w
   </tr> 
   <tr> 
    <td> zaadleden<br /> </td> 
-   <td> test profiles<br /> </td> 
+   <td> testprofielen<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -74,25 +74,25 @@ Afhankelijk van uw implementatie kunt u met meerdere veelvoorkomende problemen w
 
    Standaard worden 20 velden van de nms:tabel ontvanger gesynchroniseerd met Campaign Standard. Raadpleeg de gedetailleerde lijst met gesynchroniseerde velden. Alle extra velden die u in Campaign Standard wilt ophalen, moeten door uw consultant worden toegewezen en geconfigureerd.
 
-   Om ervoor te zorgen dat het veld dat u wilt gebruiken beschikbaar is, kunt u de definitie van de profielbron controleren **[!UICONTROL Administration > Development > Diagnosis > Data schemas]**.
+   Om ervoor te zorgen dat het gebied u wilt gebruiken beschikbaar is, kunt u de definitie van het profielmiddel van **[!UICONTROL Administration > Development > Diagnosis > Data schemas]** controleren.
 
    Bovendien worden alle gegevens die aan ontvangers zijn gekoppeld en zijn opgeslagen in tabellen met betrekking tot nms:ontvangers niet standaard gesynchroniseerd met Campaign Standard.
 
-   Om verwante gegevens nog te kunnen gebruiken, kunt u uw richten in Campagne v7 uitvoeren en extra gegevens toevoegen zoals die in de het [Synchroniseren sectie van publiek](../../integrations/using/synchronizing-audiences.md) worden verklaard, of u kunt naar uw consultant verwijzen om aanpassingsmogelijkheden te onderzoeken.
+   Om verwante gegevens nog te kunnen gebruiken, kunt u uw richten in Campagne v7 uitvoeren en extra gegevens toevoegen zoals die in [het synchroniseren van publiek ](../../integrations/using/synchronizing-audiences.md) sectie worden verklaard, of u kunt naar uw consultant verwijzen om aanpassingsmogelijkheden te onderzoeken.
 
 * **Ik gebruik een andere profieldimensie dan de standaardnms:ontvanger in Campagne v7, hoe kan ik hen met Campaign Standard synchroniseren?**
 
-   Campaign Standard gebruikt een unieke resource voor het toewijzen van doelen die **profielen** zijn genoemd. De basisimplementatie van de functie Campaign Standard Connect biedt een standaardtoewijzing tussen de ontvangers van Campagne v7 en de profielen Campaign Standard.
+   Campaign Standard gebruikt een unieke doelbron met de naam **profiles**. De basisimplementatie van de functie Campaign Standard Connect biedt een standaardtoewijzing tussen de ontvangers van Campagne v7 en de profielen Campaign Standard.
 
    Als u een andere profieldimensie gebruikt in Campagne v7, of als u verscheidene degenen gebruikt, moeten zij allen met Campaign Standard profielen in kaart worden gebracht. Raadpleeg uw consultant om aan deze specifieke behoefte tegemoet te komen.
 
 * **Ik wil een lijst van profielen met Campaign Standard door een werkschema delen maar kan mijn publiek niet in Campaign Standard** vinden.
 
-   Soorten publiek vindt u in het **[!UICONTROL Audiences]** menu in Campaign Standard. Zij hebben het etiket dat in de activiteit in uw werkschema van de Campagne v7 wordt gespecificeerd. **[!UICONTROL List update]** Ze zijn onderworpen aan de maptoewijzing die tijdens de implementatie is gedefinieerd.
+   Soorten publiek vindt u in het menu **[!UICONTROL Audiences]** in Campaign Standard. Zij hebben het etiket dat in **[!UICONTROL List update]** activiteit in uw werkschema van de Campagne v7 wordt gespecificeerd. Ze zijn onderworpen aan de maptoewijzing die tijdens de implementatie is gedefinieerd.
 
-   Het eerste wat u moet controleren is of de workflow zonder fouten is voltooid. Als er een fout optreedt in de **[!UICONTROL List update]** activiteit, betekent dit dat de synchronisatie met Campaign Standard mogelijk is mislukt. Ga naar **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. Deze map bevat synchronisatieworkflows die worden geactiveerd door het uitvoeren van de **[!UICONTROL List update]** activiteit.
+   Het eerste wat u moet controleren is of de workflow zonder fouten is voltooid. Als u een fout op **[!UICONTROL List update]** activiteit opmerkt, betekent het dat de synchronisatie met Campaign Standard kan ontbroken hebben. Als u meer details wilt zien over wat er fout is gegaan, gaat u naar **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. Deze map bevat synchronisatieworkflows die worden geactiveerd door de uitvoering van de **[!UICONTROL List update]**-activiteit.
 
-   Controleer ook of de **[!UICONTROL Share with ACS]** optie is ingecheckt in de **[!UICONTROL List update]** activiteit en of de workflow correct is uitgevoerd.
+   Zorg er ook voor dat de optie **[!UICONTROL Share with ACS]** is ingeschakeld in de **[!UICONTROL List update]**-activiteit en dat de workflow correct is uitgevoerd.
 
    Ontvangersprofielen in de lijst moeten vóór de uitvoering van de workflow met Campaign Standard zijn gesynchroniseerd. Wanneer de lijst is gedeeld met Campaign Standard, worden de ontvangers van de lijst verbonden met de profielen Campaign Standard, wat betekent dat ze daar moeten bestaan. Ontvangers in de lijst die niet kunnen worden gecombineerd met profielen in Campaign Standard, worden genegeerd.
 
@@ -107,7 +107,7 @@ Afhankelijk van uw implementatie kunt u met meerdere veelvoorkomende problemen w
 
 * **Ik heb geen veiligheidsgroep beschikbaar wanneer het in kaart brengen van omslagen tussen Campagne v7 en Campaign Standard.**
 
-   U moet eerst uw beveiligingsgroepen synchroniseren vanuit **[!UICONTROL Administration > ACS Connector > Rights management > Security groups]**. Deze actie controleert de veiligheidsgroepen beschikbaar in Campaign Standard. Nadat de map is gesynchroniseerd, kunt u de beveiligingsgroepen vinden wanneer u de maptoewijzing configureert.
+   U moet uw veiligheidsgroepen van **[!UICONTROL Administration > ACS Connector > Rights management > Security groups]** eerst synchroniseren. Deze actie controleert de veiligheidsgroepen beschikbaar in Campaign Standard. Nadat de map is gesynchroniseerd, kunt u de beveiligingsgroepen vinden wanneer u de maptoewijzing configureert.
 
 * **Ik kan een profiel, een publiek of een openingspagina niet bewerken in Campaign Standard. Wat betekent het?**
 
