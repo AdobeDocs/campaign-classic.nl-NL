@@ -21,13 +21,13 @@ De databaseserver kan op elk besturingssysteem worden uitgevoerd, ongeacht het b
 
 Het besturingssysteem van de databaseserver is niet belangrijk zolang er verbinding met de verschillende componenten van Adobe Campaign beschikbaar is.
 
-Controleer ook de sectie van de de toegangslagen [van het](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) Gegevensbestand.
+Controleer ook de [sectie van de Toegang van het Gegevensbestand](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
 De native client moet op de Adobe Campaign-toepassingsservers zijn geïnstalleerd.
 
-U kunt controleren op de inheemse cliënt op de server via het ODBC bestuurdersconfiguratievenster, onder **SQL de Inheemse Cliënt 11.0** van de Server.
+U kunt controleren op de native client op de server via het configuratiescherm van het ODBC-stuurprogramma, onder **SQL Server Native Client 11.0**.
 
 De volgende toegang DLL moet aanwezig zijn: **sqlncli11.dll**.
 
@@ -47,7 +47,7 @@ De parameters **NLS_NCHAR_CHARACTERSET** en **NLS_CHARACTERSET** moeten correct 
 
 Adobe Campaign gebruikt standaard Oracle-codering. Het gebruik van andere codering kan compatibiliteitsproblemen veroorzaken: in dit geval kunt u contact opnemen met de technische ondersteuning .
 
-Gebruik de volgende opdracht **sqlplus** om meer te weten te komen over uw codering:
+Als u meer wilt weten over uw codering, gebruikt u de volgende **sqlplus**-opdracht:
 
 ```
 SELECT * FROM nls_database_parameters ;
@@ -74,7 +74,7 @@ sqlplus
 [login] [password]
 ```
 
-U kunt ook naar [Oracle Client in Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux)verwijzen.
+U kunt ook naar [Oracle Client in Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux) verwijzen.
 
 ## PostgresSQL {#postgressql}
 
