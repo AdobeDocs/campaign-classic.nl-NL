@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Filteropties{#filtering-options}
 
-## Filteren {#about-filtering}
+## Informatie over filteren {#about-filtering}
 
 Standaard geeft Adobe Campaign alle gegevens weer in de database waarvoor de betrokken operator leestrechten heeft.
 
@@ -27,14 +27,14 @@ Deze gegevens kunnen worden gefilterd via de opties in de bovenste sectie van he
 
 Er zijn verschillende manieren om de gegevens te filteren die moeten worden weergegeven. Indien nodig kunnen deze samen worden gebruikt:
 
-* Filter op mappen, raadpleeg [Filteren op map](#filter-by-folder).
+* Filter op mappen. Raadpleeg [Filteren op map](#filter-by-folder).
 * Filter op status, verwijs naar [Filter op status](#filter-by-status),
-* Gegevenssortering, verwijs naar [Volgorde door](#order-by),
-* Zoeken, raadpleegt u [Snel zoeken](#quick-search).
+* Gegevenssortering, verwijs naar [Order by](#order-by),
+* Zoek, verwijs naar [Snelle onderzoek](#quick-search).
 
 ## Filteren op map {#filter-by-folder}
 
-Klik op het **[!UICONTROL Folder]** pictogram om de map met de gegevens te selecteren die u wilt weergeven.
+Klik op het pictogram **[!UICONTROL Folder]** om de map te selecteren die de gegevens bevat die u wilt weergeven.
 
 ![](assets/filter_web_select_folder.png)
 
