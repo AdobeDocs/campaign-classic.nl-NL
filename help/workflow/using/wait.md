@@ -23,13 +23,13 @@ U kunt het label invoeren en tijd wachten met de editor, zoals in het onderstaan
 
 ![](assets/edit_wait.png)
 
-In het **[!UICONTROL Duration]** veld kan de waarde worden uitgedrukt in de eenheid van uw keuze: (volgens de regionale instellingen van de exploitant):
+In het veld **[!UICONTROL Duration]** kan de waarde worden uitgedrukt in de eenheid van uw keuze: (volgens de regionale instellingen van de exploitant):
 
 * Als er geen regionale instellingen zijn opgegeven: **s** voor seconden, **m** voor minuten, **h** voor uren, **d** voor dagen, **y** voor jaren. Op het moment van goedkeuring wordt de waarde automatisch omgezet in de best leesbare eenheid.
 
    De standaardeenheid is de dag (**d**).
 
-* Als bijvoorbeeld de regionale instellingen worden ingesteld op &quot;Français&quot;: **s** voor seconden, **mn** voor minuten, **h** voor uren, **j** voor dagen, **m** voor maanden, **** a voor jaren. Op het moment van goedkeuring wordt de waarde automatisch geconverteerd naar de meest leesbare eenheid, zoals in het voorbeeld boven **de jaren 90** werd omgezet in **1 mn 30s**.
+* Als bijvoorbeeld de regionale instellingen worden ingesteld op &quot;Français&quot;: **s** voor seconden, **mn** voor minuten, **h** voor uren, **j** voor dagen, **m** voor maanden, **a** voor jaren. Op het moment van goedkeuring wordt de waarde automatisch omgezet in de meest leesbare eenheid, zoals in het voorbeeld hierboven **90s** werd omgezet in **1mn 30s**.
 
    De standaardeenheid is de dag (**d**).
 
