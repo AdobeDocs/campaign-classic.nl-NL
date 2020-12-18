@@ -43,11 +43,11 @@ Elke werkstroom bevat:
 
 * **[!UICONTROL Activities]**
 
-   Een activiteit beschrijft een taakmalplaatje. De verschillende beschikbare activiteiten worden op het diagram weergegeven door pictogrammen. Elk type heeft gemeenschappelijke eigenschappen en specifieke eigenschappen. Terwijl alle activiteiten bijvoorbeeld een naam en label hebben, heeft alleen de **[!UICONTROL Approval]** activiteit een toewijzing.
+   Een activiteit beschrijft een taakmalplaatje. De verschillende beschikbare activiteiten worden op het diagram weergegeven door pictogrammen. Elk type heeft gemeenschappelijke eigenschappen en specifieke eigenschappen. Terwijl alle activiteiten bijvoorbeeld een naam en label hebben, heeft alleen de activiteit **[!UICONTROL Approval]** een toewijzing.
 
    In een workflowdiagram kan een bepaalde activiteit meerdere taken produceren, met name wanneer er een lus of terugkerende (periodieke) handelingen zijn.
 
-   Alle workflowactiviteiten worden vermeld in [deze sectie](../../workflow/using/about-activities.md), inclusief gebruiksgevallen en voorbeelden.
+   Alle werkstroomactiviteiten worden vermeld in [deze sectie](../../workflow/using/about-activities.md), met inbegrip van gebruiksgevallen en steekproeven.
 
 * **[!UICONTROL Transitions]**
 
@@ -59,7 +59,7 @@ Elke werkstroom bevat:
    >
    >Een workflow met niet-afgesloten overgangen kan nog steeds worden uitgevoerd: er wordt een waarschuwingsbericht gegenereerd en de workflow wordt gepauzeerd zodra de overgang is bereikt , maar er wordt geen fout gegenereerd . Het is dus mogelijk om een werkstroom te starten zonder dat deze is voltooid en om deze tijdens het proces toe te voegen.
 
-   Raadpleeg [deze sectie](../../workflow/using/building-a-workflow.md)voor meer informatie over het maken van een workflow.
+   Voor meer informatie over hoe te om een werkschema te bouwen, verwijs naar [deze sectie](../../workflow/using/building-a-workflow.md).
 
 * **[!UICONTROL Worktables]**
 
@@ -72,9 +72,9 @@ Elke werkstroom bevat:
 Raadpleeg de volgende secties voor hulp en tips en trucs om processen te automatiseren met workflows:
 
 * Meer informatie over workflowactiviteiten vindt u op [deze pagina](../../workflow/using/how-to-use-workflow-data.md).
-* Leer hoe u een workflow maakt in [deze sectie](../../workflow/using/building-a-workflow.md).
-* Ontdek in [deze sectie](../../workflow/using/importing-data.md)hoe u workflows kunt gebruiken om gegevens te importeren in Campagne.
-* Best practices voor workflows worden in [deze pagina](../../workflow/using/workflow-best-practices.md)beschreven.
+* Leer hoe u een workflow bouwt in [deze sectie](../../workflow/using/building-a-workflow.md).
+* Ontdek hoe u workflows kunt gebruiken om gegevens te importeren in Campagne in [deze sectie](../../workflow/using/importing-data.md).
+* Best practices voor workflows worden beschreven in [deze pagina](../../workflow/using/workflow-best-practices.md).
 * Raadpleeg de instructies over het uitvoeren van workflows in [deze sectie](../../workflow/using/starting-a-workflow.md).
-* Leer hoe u workflows in [deze pagina](../../workflow/using/monitoring-workflow-execution.md)kunt controleren.
-* Leer hoe u gebruikers toegang biedt om workflows te gebruiken op [deze pagina](../../workflow/using/managing-rights.md).
+* Leer hoe u workflows in [deze pagina](../../workflow/using/monitoring-workflow-execution.md) kunt controleren.
+* Leer hoe u gebruikers toegang biedt om workflows te gebruiken in [deze pagina](../../workflow/using/managing-rights.md).
