@@ -17,18 +17,18 @@ ht-degree: 0%
 
 # Leverbaarheid{#about-deliverability}
 
-**De leverbaarheid** bestaat uit het meten van het succes van uw campagnes die uw ontvangers&#39; inbox bereiken zonder te stuiteren, of als spam worden gemerkt.
+**De** leverbaarheid bestaat uit het meten van het succes van uw campagnes die uw ontvangers&#39; inbox zonder stuiterend bereiken, of als spam worden gemerkt.
 
 Adobe Campaign biedt een aantal tools om de prestaties van uw platform bij te houden. In dit gedeelte worden ook de belangrijkste beginselen beschreven waarmee u rekening moet houden bij het beheren en optimaliseren van de leverbaarbaarheid.
 
 ## Configuratie {#configuration}
 
 Deze functie is beschikbaar via een speciaal pakket in Adobe Campaign. Dit pakket moet geïnstalleerd zijn om het te kunnen gebruiken. Start vervolgens de server opnieuw om rekening te houden met het pakket.
-* Voor gehoste en hybride clients wordt de **leveringsbewaking** op uw exemplaar geconfigureerd door technische ondersteuning en consultants van Adobe. Neem voor meer informatie contact op met de manager van uw Adobe-account.
+* Voor gehoste en hybride clients wordt **Deliverability monitoring** op uw exemplaar geconfigureerd door technische support en consultants van Adobe. Neem voor meer informatie contact op met de manager van uw Adobe-account.
 
-* Voor installaties op locatie moet u het **[!UICONTROL Deliverability monitoring (Email Deliverability)]** pakket installeren via **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Zie [Standaardpakketten](../../installation/using/installing-campaign-standard-packages.md)voor Campaign Classic installeren voor meer informatie.
+* Voor installaties op locatie moet u het **[!UICONTROL Deliverability monitoring (Email Deliverability)]**-pakket installeren via het menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Zie [Campaign Classic-standaardpakketten installeren](../../installation/using/installing-campaign-standard-packages.md) voor meer informatie.
 
-In Adobe Campaign Classic wordt de **leveringscontrole** beheerd door de **[!UICONTROL Refresh for deliverability]** workflow. Het wordt geïnstalleerd door gebrek op alle instanties en laat u de lijst van de bounce kwalificatieregels van de post, de lijst van domeinen en de lijst van MXs initialiseren. Nadat het **[!UICONTROL Deliverability monitoring (Email Deliverability)]** pakket is geïnstalleerd, wordt deze workflow elke avond uitgevoerd om de lijst met regels regelmatig bij te werken en kunt u de leverbaarheid van het platform actief beheren.
+In Adobe Campaign Classic wordt **Deliverability monitoring** beheerd door de **[!UICONTROL Refresh for deliverability]** workflow. Het wordt geïnstalleerd door gebrek op alle instanties en laat u de lijst van de bounce kwalificatieregels van de post, de lijst van domeinen en de lijst van MXs initialiseren. Nadat het **[!UICONTROL Deliverability monitoring (Email Deliverability)]**-pakket is geïnstalleerd, wordt deze workflow elke avond uitgevoerd om de lijst met regels regelmatig bij te werken en kunt u de leverbaarheid van het platform actief beheren.
 
 ## Achtergrond {#background}
 
