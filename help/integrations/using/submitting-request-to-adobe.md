@@ -21,7 +21,7 @@ ht-degree: 10%
 >
 >Om verder te kunnen gaan, zorg ervoor dat IMS op uw systeem wordt toegelaten. Raadpleeg de sectie over [IMS](../../integrations/using/about-adobe-id.md).
 
-Zodra IMS wordt toegelaten, kunt u levering van de de kerndienst/Audience Manager van Mensen integratie met Campagne verzoeken. Daartoe stuurt u een e-mail naar [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) met de volgende informatie:
+Zodra IMS wordt toegelaten, kunt u levering van de de kerndienst/Audience Manager van Mensen integratie met Campagne verzoeken. Om dat te doen, verzend een e-mail naar [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) met de volgende informatie:
 
 <table> 
  <tbody> 
