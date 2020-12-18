@@ -15,7 +15,7 @@ ht-degree: 9%
 ---
 
 
-# Aanbevolen werkwijzen en probleemoplossing voor SFTP-servers {#sftp-server-usage}
+# Aanbevolen procedures voor SFTP-server en problemen oplossen {#sftp-server-usage}
 
 ## Algemene aanbevelingen voor SFTP-server {#global-recommendations}
 
@@ -23,7 +23,7 @@ Als u bestanden en data beheert voor ETL-doeleinden, worden deze bestanden opges
 
 * Gebruik op sleutels gebaseerde authentificatie eerder dan wachtwoordauthentificatie, om wachtwoordvervalsing te vermijden (de wachtwoorden hebben een geldigheidsperiode van 90 dagen). Bovendien kunt u met op sleutels gebaseerde verificatie meerdere sleutels genereren, bijvoorbeeld wanneer u meerdere entiteiten beheert. Integendeel, voor wachtwoordverificatie moet u het wachtwoord delen met alle entiteiten die u beheert.
 
-   De gesteunde zeer belangrijke indeling is SSH-2 RSA 2048. De sleutels kunnen met hulpmiddelen zoals PyTTY (Vensters), of ssh-keygen (Unix) worden geproduceerd.U zult de openbare sleutel aan het team van de Steun van de Adobe via de Zorg [van de Klant van](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Adobe moeten verstrekken om het op de server van de Campagne te hebben geupload.
+   De gesteunde zeer belangrijke indeling is SSH-2 RSA 2048. Sleutels kunnen met hulpmiddelen zoals PyTTY (Vensters), of ssh-keygen (Unix) worden geproduceerd.U zult de openbare sleutel aan het team van de Steun van de Adobe via [de Zorg van de Klant van de Adobe moeten verstrekken ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om het op de server van de Campagne te hebben geupload.
 
 * Gebruik batchverwerking in SFTP-uploads en in workflows.
 
@@ -31,7 +31,7 @@ Als u bestanden en data beheert voor ETL-doeleinden, worden deze bestanden opges
 
 * Standaard staan alle mappen die u maakt alleen in de modus Lezen/Schrijven voor uw id. Wanneer het creëren van omslagen die door Campagne moeten worden betreden, zorg ervoor om hen te vormen met lees/schrijf rechten voor de volledige groep. Anders kunnen workflows mogelijk geen bestanden maken of verwijderen omdat deze om beveiligingsredenen onder een andere id binnen dezelfde groep worden uitgevoerd.
 
-* Openbare IPs waarvan u probeert om de verbinding in werking te stellen SFTP moet aan de lijst van gewenste personen op de instantie van de Campagne worden toegevoegd. Het toevoegen van IP adressen aan de lijst van gewenste personen kan via de Zorg van de Klant van [Adobe worden gevraagd](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+* Openbare IPs waarvan u probeert om de verbinding in werking te stellen SFTP moet aan de lijst van gewenste personen op de instantie van de Campagne worden toegevoegd. Het toevoegen van IP adressen aan de lijst van gewenste personen kan via [Adobe de Zorg van de Klant ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) worden gevraagd.
 
 ## Best practices voor databasegebruik {#sftp-server-best-practices}
 
@@ -43,7 +43,7 @@ Om dergelijke problemen te voorkomen, raadt Adobe aan de onderstaande beste prak
 
 >[!NOTE]
 >
->Als uw instantie wordt gehost op AWS, kunt u de opslagruimte van uw SFTP-server controleren met het [Configuratiescherm](https://docs.adobe.com/content/help/en/control-panel/using/sftp-management/sftp-storage-management.html)van Campaign Classic.
+>Als uw instantie wordt gehost op AWS, kunt u de opslagruimte van uw SFTP-server controleren met de Campaign Classic [Configuratiescherm](https://docs.adobe.com/content/help/en/control-panel/using/sftp-management/sftp-storage-management.html).
 >
 >Als u wilt controleren of uw instantie wordt gehost op AWS, voert u de stappen uit die in [deze sectie](https://docs.adobe.com/content/help/en/control-panel/using/faq.html#ims-org-id) worden beschreven .
 
@@ -61,14 +61,14 @@ Als u uw eigen SFTP-server gebruikt, moet u de bovenstaande aanbevelingen zoveel
 
 Wanneer u bovendien in Campaign Classic een pad naar een externe SFTP-server opgeeft, verschilt de padsyntaxis per besturingssysteem van de SFTP-server:
 
-* Als uw SFTP-server zich in **Windows** bevindt, moet u altijd een relatief pad gebruiken.
+* Als uw server SFTP op **Vensters** is, gebruik altijd een relatieve weg.
 * Als uw STP-server zich op **Linux** bevindt, moet u altijd een pad gebruiken dat relatief is ten opzichte van de thuisserver (te beginnen met &quot;~/&quot;) of een absoluut pad (te beginnen met &quot;/&quot;).
 
 ## Verbindingsproblemen met door Adobe gehoste SFTP-server {#sftp-server-troubleshooting}
 
-In de onderstaande sectie wordt de informatie weergegeven die via [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) aan het Adobe Support-team moet worden gecontroleerd en verstrekt wanneer er verbindingsproblemen optreden met door Adobe gehoste SFTP-servers.
+In de onderstaande sectie wordt de informatie weergegeven die via [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) moet worden gecontroleerd en doorgegeven aan het Adobe-ondersteuningsteam wanneer er verbindingsproblemen optreden met door Adobe gehoste SFTP-servers.
 
-1. Controleer of de instantie actief is. Om dit te doen, open uw browser, dan doe een **[!UICONTROL GET]** vraag op het instantie **[!UICONTROL /r/test]** eindpunt:
+1. Controleer of de instantie actief is. Om dit te doen, open uw browser, dan maak een **[!UICONTROL GET]** vraag op het instantie **[!UICONTROL /r/test]** eindpunt:
 
    ```
    https://instanceUrl/r/test
@@ -101,7 +101,7 @@ In de onderstaande sectie wordt de informatie weergegeven die via [Adobe Custome
    Als de poort niet is geopend, moet u uitgaande verbindingen aan uw zijde openen en het opnieuw proberen. Als u nog steeds verbindingsproblemen ondervindt, deelt u de uitvoer van de opdracht met het team van Adobe Support.
 
 1. Controleer dat openbare IP waarvan u probeert om de verbinding in werking te stellen SFTP is die u aan de Steun van de Adobe voor de lijst van gewenste personen verstrekte.
-1. Als u een op een wachtwoord gebaseerde verificatie gebruikt, is uw wachtwoord mogelijk verlopen (wachtwoorden hebben een geldigheidsduur van 90 dagen). Daarom adviseren wij sterk gebruikend een zeer belangrijke gebaseerde authentificatie (zie de beste praktijken [van de server](#sftp-server-best-practices)SFTP).
+1. Als u een op een wachtwoord gebaseerde verificatie gebruikt, is uw wachtwoord mogelijk verlopen (wachtwoorden hebben een geldigheidsduur van 90 dagen). Daarom raden we u ten zeerste aan een op sleutels gebaseerde verificatie te gebruiken (zie [best practices voor SFTP-servers](#sftp-server-best-practices)).
 1. Als u een zeer belangrijke gebaseerde authentificatie gebruikt, controleer dat de sleutel u gebruikt het zelfde is dat u aan het team van de Steun van Adobe voor de instantieconfiguratie verstrekte.
 1. Als u FileZilla of een gelijkwaardig hulpmiddel van FTP gebruikt, verstrek de details van verbindingslogboeken in het steunkaartje.
 
@@ -123,7 +123,7 @@ Deze fout treedt op wanneer u probeert verbinding te maken met de FTP-server van
 
 Deze fout geeft aan dat de domeinnaam van de FTP-server niet correct kan worden omgezet. Ga als volgt te werk om problemen op te lossen:
 
-1. Los **DNS serverconfiguratie** problemen op:
+1. **DNS-serverconfiguratie** oplossen:
 
    1. Controleer of de servernaam is toegevoegd aan de lokale DNS-server.
    1. Als ja, stel het volgende bevel op de server van Adobe Campaign in werking om het IP adres te krijgen:
@@ -132,10 +132,10 @@ Deze fout geeft aan dat de domeinnaam van de FTP-server niet correct kan worden 
 
       Dit bevestigt dat de FTP-server werkt en bereikbaar is vanaf de Adobe Campaign-toepassingsserver.
 
-1. Problemen met **sessielogboeken** oplossen:
+1. **sessielogboeken** oplossen:
 
-   1. Dubbelklik in de workflow op de activiteit [Bestandsoverdracht](../../workflow/using/file-transfer.md) .
-   1. Ga naar **[!UICONTROL File Transfer]** tabblad en klik vervolgens op **[!UICONTROL Advanced Parameters]**.
+   1. Dubbelklik in de workflow op de activiteit [Bestandsoverdracht](../../workflow/using/file-transfer.md).
+   1. Ga naar **[!UICONTROL File Transfer]** tabel en klik vervolgens op **[!UICONTROL Advanced Parameters]**.
    1. Schakel de optie **[!UICONTROL Display the session logs]** in.
 
       ![](assets/sftp-error-display-logs.png)
