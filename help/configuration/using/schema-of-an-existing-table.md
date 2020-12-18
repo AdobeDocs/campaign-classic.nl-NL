@@ -31,8 +31,8 @@ Wanneer de toepassing toegang moet krijgen tot de gegevens van een bestaande tab
 
 Pas de volgende stappen toe om het bijbehorende schema te maken:
 
-1. Bewerk het **[!UICONTROL Administration>Configuration>Data schemas]** knooppunt van de Adobe Campaign-structuur en klik **[!UICONTROL New]** .
-1. Select the **[!UICONTROL Access data from an existing table or an SQL view]** option and click **[!UICONTROL Next]** .
+1. Bewerk het knooppunt **[!UICONTROL Administration>Configuration>Data schemas]** van de Adobe Campaign-structuur en klik op **[!UICONTROL New]**.
+1. Selecteer de optie **[!UICONTROL Access data from an existing table or an SQL view]** en klik **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 
@@ -44,7 +44,7 @@ Pas de volgende stappen toe om het bijbehorende schema te maken:
 
    ![](assets/s_ncs_configuration_view_create_schema.png)
 
-   Het schema moet worden gevuld met het kenmerk view=&quot;true&quot; op het `<srcSchema>` basiselement om geen SQL-script voor het maken van tabellen te genereren.
+   Het schema moet worden gevuld met het kenmerk view=&quot;true&quot; op het basiselement `<srcSchema>` om geen SQL-script voor het maken van een tabel te genereren.
 
 **Voorbeeld** :
 
