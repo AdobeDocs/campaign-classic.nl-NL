@@ -17,15 +17,15 @@ ht-degree: 8%
 
 # Cellen{#cells}
 
-De **[!UICONTROL Cells]** activiteit verstrekt een mening van de diverse subsets in de vorm van gegevenskolommen. Het vergemakkelijkt manipulatie van subsets en is ook ontworpen om personalisatiemogelijkheden aan te moedigen.
+De activiteit **[!UICONTROL Cells]** verstrekt een mening van de diverse subsets in de vorm van gegevenskolommen. Het vergemakkelijkt manipulatie van subsets en is ook ontworpen om personalisatiemogelijkheden aan te moedigen.
 
 ![](assets/wf_split_cells.png)
 
-Deze activiteit kan worden gevormd om specifieke parameters in te gaan die op gebruikersbehoeften worden gebaseerd. Standaard worden de details van elke subset via de tabbladen **[!UICONTROL Selection]** **[!UICONTROL Advanced]** en in een speciaal venster weergegeven. In het onderstaande voorbeeld is het formulier gewijzigd: er is een **[!UICONTROL Data]** tabblad toegevoegd om het koppelen van een aanbieding en een prioriteitsniveau voor elke subset mogelijk te maken.
+Deze activiteit kan worden gevormd om specifieke parameters in te gaan die op gebruikersbehoeften worden gebaseerd. Standaard wordt de details van elke subset in een speciaal venster beschreven via de tabbladen **[!UICONTROL Selection]** en **[!UICONTROL Advanced]**. In het onderstaande voorbeeld is het formulier gewijzigd: Er is een **[!UICONTROL Data]** tabblad toegevoegd om het koppelen van een aanbieding en een prioriteitsniveau voor elke subset mogelijk te maken.
 
 ![](assets/wf_split_cells_with_customization.png)
 
-Voor deze configuratie is de volgende informatie toegevoegd aan het werkstroomformulier (in het **[!UICONTROL Administration > Configurations > Input forms]** knooppunt van de Adobe Campaign-structuur):
+Voor deze configuratie is de volgende informatie toegevoegd aan het werkstroomformulier (in het knooppunt **[!UICONTROL Administration > Configurations > Input forms]** van de Adobe Campaign-structuur):
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">
