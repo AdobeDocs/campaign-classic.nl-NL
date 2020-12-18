@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Specifieke configuraties in v5.11{#specific-configurations-in-v5-11}
 
-In deze sectie wordt beschreven welke aanvullende configuratie is vereist voor het migreren van versie 5.11. U zou ook de montages moeten vormen die in de [Algemene configuratiesectie](../../migration/using/general-configurations.md) worden gedetailleerd.
+In deze sectie wordt beschreven welke aanvullende configuratie is vereist voor het migreren van versie 5.11. U zou ook de montages moeten vormen die in [Algemene configuraties](../../migration/using/general-configurations.md) sectie worden gedetailleerd.
 
 ## Webapplicaties {#web-applications}
 
@@ -29,7 +29,7 @@ The webApp ids have been modified during the migration process. Please make sure
 
 Sommige componenten van webtoepassingen, bijvoorbeeld de verschillende formulevelden, hebben @id-kenmerken. Deze worden gebruikt in de XML-code van webtoepassingen en worden niet meer op dezelfde manier gegenereerd. Ze zijn niet zichtbaar in de interface en u moet ze normaal niet gebruiken. In sommige gevallen kunnen @id-kenmerken echter zijn gebruikt om de weergave van webtoepassingen aan te passen, bijvoorbeeld via een stijlpagina of met JavaScript-code.
 
-Tijdens de migratie **moet** u het pad van het logbestand controleren dat in de waarschuwing is opgegeven:
+Tijdens migratie, **must** controleert de weg van het logboekdossier die in de waarschuwing wordt gespecificeerd:
 
 * **Het bestand is niet leeg**: het bevat waarschuwingen die betrekking hebben op inconsistenties die vóór de migratie zijn geconstateerd en die nog steeds bestaan . Dit kan JavaScript-code zijn in een webtoepassing die naar een niet-bestaande id verwijst. Elke fout moet worden gecontroleerd en gecorrigeerd.
 * **Het bestand is leeg**: dit betekent dat Adobe Campaign geen problemen heeft ontdekt.
@@ -38,7 +38,7 @@ Of het dossier of niet leeg is, moet u controleren dat deze IDs niet voor config
 
 ## Workflows {#workflows}
 
-Aangezien de naam van de Adobe Campaign-installatiemap is gewijzigd, werken sommige workflows mogelijk niet meer na de migratie. Als een workflow naar de map nl5 in een van de activiteiten ervan verwijst, treedt er een fout op. Vervang deze referentie door **build**. U kunt een SQL-query uitvoeren om deze workflows te identificeren (voorbeeld PostSQL):
+Aangezien de naam van de Adobe Campaign-installatiemap is gewijzigd, werken sommige workflows mogelijk niet meer na de migratie. Als een workflow naar de map nl5 in een van de activiteiten ervan verwijst, treedt er een fout op. Vervang deze verwijzing door **build**. U kunt een SQL-query uitvoeren om deze workflows te identificeren (voorbeeld PostSQL):
 
 ```
 SELECT   iWorkflowId, sInternalName, sLabel 
@@ -68,17 +68,17 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 >
 >Raadpleeg de pagina [https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html) voor meer informatie.
 
-Als de databasestructuur bijvoorbeeld tijdens de configuratie is gewijzigd (specifieke indexen maken, SQL-weergaven maken, enz.), moeten er bepaalde voorzorgsmaatregelen worden getroffen bij het migreren. Bepaalde wijzigingen kunnen immers worden veroorzaakt door onverenigbaarheden met de migratieprocedure. Het maken van SQL-weergaven met **tijdstempelvelden** is bijvoorbeeld niet compatibel met de optie **usetimestamptz** . Daarom raden wij u aan onderstaande aanbevelingen op te volgen:
+Als de databasestructuur bijvoorbeeld tijdens de configuratie is gewijzigd (specifieke indexen maken, SQL-weergaven maken, enz.), moeten er bepaalde voorzorgsmaatregelen worden getroffen bij het migreren. Bepaalde wijzigingen kunnen immers worden veroorzaakt door onverenigbaarheden met de migratieprocedure. Het maken van SQL-weergaven met **Tijdstempel**-velden is bijvoorbeeld niet compatibel met de optie **usetimestamptz**. Daarom raden wij u aan onderstaande aanbevelingen op te volgen:
 
 1. Maak een back-up van de database voordat u de migratie start.
 1. SQL-wijzigingen verwijderen.
-1. Voer de postupgrade uit volgens de procedure die is beschreven in de sectie [Voorwaarden voor migratie naar Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
+1. Voer de postupgrade uit volgens de procedure die is beschreven in de sectie [Voorwaarden voor migratie naar Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md).
    >[!NOTE]
    >
-   >U moet de migratiestappen volgen die worden weergegeven in het gedeelte [Voorwaarden voor migratie naar Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
+   >Het is absoluut noodzakelijk dat u de migratiestappen volgt die in [Vereisten voor migratie aan Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) sectie worden voorgesteld.
 1. SQL-wijzigingen opnieuw integreren.
 
-In dit voorbeeld is een **weergave NmcTrackingLogMessages** gemaakt en heeft dit veld een **tijdstempelveld** met de naam **tslog**. In dit geval mislukt de migratieprocedure en verschijnt het volgende foutbericht:
+In dit voorbeeld is een **NmcTrackingLogMessages**-weergave gemaakt en heeft dit veld een **Tijdstempel** met de naam **tslog**. In dit geval mislukt de migratieprocedure en verschijnt het volgende foutbericht:
 
 ```
 2011-10-04 11:57:51.804Z B67B28C0 1 info log Updating table 'NmcTrackingLogMessages'
@@ -90,7 +90,7 @@ Om ervoor te zorgen dat de postupgrade werkt, moet u de weergave vóór de migra
 
 ## Tracking {#tracking}
 
-De volgende formule is gewijzigd. Bij het migreren wordt de oude formule (v5) vervangen door de nieuwe (v7). Als u een gepersonaliseerde formule in Adobe Campaign v5 gebruikt, moet deze configuratie in Adobe Campaign v7 (**opties NmsTracking_ClickFormula** en **NmsTracking_OpenFormula** ) worden aangepast.
+De volgende formule is gewijzigd. Bij het migreren wordt de oude formule (v5) vervangen door de nieuwe (v7). Als u een gepersonaliseerde formule in Adobe Campaign v5 gebruikt, moet deze configuratie in Adobe Campaign v7 (**NmsTracking_ClickFormula** en **NmsTracking_OpenFormula** opties) worden aangepast.
 
 Het beheer voor webtracering is ook gewijzigd. Nadat de migratie naar v7 is uitgevoerd, moet u de implementatietovenaar starten om de webtracering te voltooien.
 
@@ -98,19 +98,19 @@ Het beheer voor webtracering is ook gewijzigd. Nadat de migratie naar v7 is uitg
 
 Er zijn drie modi beschikbaar:
 
-* **Webtracering** sessie: Als het **[!UICONTROL Leads]** pakket niet is geïnstalleerd, is deze optie standaard geselecteerd. Deze optie is het ideale in termen van prestaties en staat u toe om de grootte van het volgen logboeken te beperken.
+* **Webtracering** sessie: Als het  **[!UICONTROL Leads]** pakket niet is geïnstalleerd, is deze optie standaard geselecteerd. Deze optie is het ideale in termen van prestaties en staat u toe om de grootte van het volgen logboeken te beperken.
 * **Permanente webtracering**
-* **Anonieme webtracering**: Als het **[!UICONTROL Leads]** pakket is geïnstalleerd, is deze optie standaard geselecteerd. Het is de meest hulpbronnenverbruikende optie. Zoals hierboven, moet de **sSourceId** kolom (in de volgende lijst en de **CrmIncomingLead** lijst) worden geïndexeerd.
+* **Anonieme webtracering**: Als het  **[!UICONTROL Leads]** pakket is geïnstalleerd, is deze optie standaard geselecteerd. Het is de meest hulpbronnenverbruikende optie. Zoals hierboven, moet de **sSourceId** kolom worden geïndexeerd (in de volgende lijst en **CrmIncomingLead** lijst).
 
 >[!NOTE]
 >
->Raadpleeg [deze sectie](../../configuration/using/about-web-tracking.md)voor meer informatie over deze drie modi.
+>Raadpleeg [deze sectie](../../configuration/using/about-web-tracking.md) voor meer informatie over deze drie modi.
 
 ## Adobe Campaign v7-boomstructuur {#campaign-vseven-tree-structure}
 
 Tijdens de migratie wordt de boomstructuur automatisch gereorganiseerd op basis van de v7-standaarden. De nieuwe mappen worden toegevoegd, de verouderde mappen worden verwijderd en de inhoud ervan wordt in de map &quot;To move&quot; geplaatst. Alle items in deze map moeten na de migratie worden gecontroleerd en de consultant moet besluiten of de map behouden blijft of dat ze worden verwijderd. Items die vervolgens moeten worden bewaard, moeten naar de juiste plaats worden verplaatst.
 
-Er is een optie toegevoegd voor het uitschakelen van de automatische migratie van de boomstructuur. Deze bewerking is nu handmatig. Verouderde mappen worden niet verwijderd en er worden geen nieuwe mappen toegevoegd. Deze optie mag alleen worden gebruikt als de v5-navigatiestructuur buiten het vak te veel is gewijzigd. Voeg de optie aan de console toe, alvorens, in de **[!UICONTROL Administration > Options]** knoop te migreren:
+Er is een optie toegevoegd voor het uitschakelen van de automatische migratie van de boomstructuur. Deze bewerking is nu handmatig. Verouderde mappen worden niet verwijderd en er worden geen nieuwe mappen toegevoegd. Deze optie mag alleen worden gebruikt als de v5-navigatiestructuur buiten het vak te veel is gewijzigd. Voeg de optie aan de console toe, alvorens, in **[!UICONTROL Administration > Options]** knoop te migreren:
 
 * Interne naam: NlMigration_KeepFolderStructure
 * Gegevenstype: Geheel
