@@ -21,7 +21,7 @@ In deze sectie worden alle beschikbare activiteiten beschreven. Afhankelijk van 
 
 Workflowactiviteiten worden gegroepeerd op categorie. Er zijn vier tabbladen tegelijk beschikbaar.
 
-In de campagneworkflows wordt het **[!UICONTROL Events]** tabblad vervangen door het **[!UICONTROL Deliveries]** tabblad. De activiteiten op dit tabblad worden beschreven in de sectie [Actie-activiteiten](../../workflow/using/about-action-activities.md) .
+In de campagneworkflows wordt het tabblad **[!UICONTROL Events]** vervangen door het tabblad **[!UICONTROL Deliveries]**. De activiteiten op dit tabblad worden beschreven in de sectie [Handelingsactiviteiten](../../workflow/using/about-action-activities.md).
 
 ![](assets/wf-activity-tabs.png)
 
