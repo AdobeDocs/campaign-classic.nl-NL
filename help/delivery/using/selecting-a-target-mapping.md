@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # Een doeltoewijzing selecteren{#selecting-a-target-mapping}
 
-Standaard wordt voor leveringssjablonen het doel **[!UICONTROL Recipients]**. Hun doelafbeelding gebruikt daarom de gebieden van de **nms:ontvankelijke** lijst. Adobe Campaign biedt andere doeltoewijzingen voor uw leveringen, die op basis van uw behoeften worden gebruikt.
+Standaard richten leveringssjablonen zich op **[!UICONTROL Recipients]**. Hun doelafbeelding gebruikt daarom de gebieden van **nms:ontvanger** lijst. Adobe Campaign biedt andere doeltoewijzingen voor uw leveringen, die op basis van uw behoeften worden gebruikt.
 
 ![](assets/delivery_select_mapping.png)
 
@@ -35,4 +35,4 @@ Deze toewijzingen zijn als volgt:
 
 >[!NOTE]
 >
->U kunt ook nieuwe doeltoewijzingen maken. Deze bewerking is gereserveerd voor professionele gebruikers. For more information, refer to the [Configuration guide](../../configuration/using/target-mapping.md).
+>U kunt ook nieuwe doeltoewijzingen maken. Deze bewerking is gereserveerd voor professionele gebruikers. Voor meer informatie, verwijs naar [de gids van de Configuratie](../../configuration/using/target-mapping.md).
