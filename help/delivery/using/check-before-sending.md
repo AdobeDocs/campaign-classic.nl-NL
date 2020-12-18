@@ -14,19 +14,19 @@ ht-degree: 4%
 ---
 
 
-# Alle controles uitvoeren voordat ze worden verzonden {#perform-all-checks}
+# Alle controles uitvoeren voordat {#perform-all-checks} wordt verzonden
 
 Zodra uw bericht klaar is, zorg ervoor zijn inhoud correct, op alle apparaten wordt getoond, en bevat geen fouten zoals verkeerde verpersoonlijking of gebroken verbindingen.
 
 Alvorens uw bericht te verzenden, zorg ook dat de parameters en de configuratie met de levering verenigbaar zijn.
 
-## Waarom validatie de sleutel is {#validation-is-key}
+## Waarom validatie belangrijk is {#validation-is-key}
 
 Alvorens een levering te verzenden, moet u ervoor zorgen dat uw ontvangers het bericht zullen ontvangen dat u echt hen wilt verzenden. Hiervoor moet u de inhoud en de leveringsparameters van het bericht valideren.
 
 Met deze stap kunt u mogelijke fouten detecteren en corrigeren voordat u deze aan uw hoofddoel kunt leveren.
 
-De stappen voor het valideren van een levering worden weergegeven [in deze sectie](../../delivery/using/steps-validating-the-delivery.md).
+De stappen voor het valideren van een levering worden [weergegeven in deze sectie](../../delivery/using/steps-validating-the-delivery.md).
 
 ## Inboxrendering {#inbox-and-email-rendering}
 
@@ -58,7 +58,7 @@ Als u meerdere inhoud voor een e-maillevering hebt, kunt u A/B-tests gebruiken o
 
 Meer informatie [in deze sectie](../../workflow/using/a-b-testing.md).
 
-## Controleer of je bericht is bezorgd {#make-sure-your-message-is-delivered}
+## Zorg ervoor dat uw bericht {#make-sure-your-message-is-delivered} wordt geleverd
 
 Als laatste stap maximaliseert u uw kansen en gebruikt u de kracht van Adobe Campaign Classic om ervoor te zorgen dat uw bericht ook daadwerkelijk aan de relevante ontvangers wordt bezorgd.
 
@@ -74,9 +74,9 @@ U kunt het verzonden volume progressief verhogen gebruikend golven. Zo voorkomt 
 
 U kunt de verzendende orde voor uw leveringen plaatsen door het prioritaire niveau te verklaren. Dit doet u als volgt:
 
-1. Bewerk de leveringseigenschappen en selecteer het **[!UICONTROL Delivery]** tabblad.
+1. Bewerk de leveringseigenschappen en selecteer het tabblad **[!UICONTROL Delivery]**.
 
-1. Definieer het prioriteitsniveau voor de levering op een schaal van **[!UICONTROL Very low]** naar **[!UICONTROL Very high]**.
+1. Definieer het prioriteitsniveau voor de levering op een schaal van **[!UICONTROL Very low]** tot **[!UICONTROL Very high]**.
 
 >[!NOTE]
 >
@@ -92,7 +92,7 @@ U kunt:
 
 * Voor elk element IPAffinity, verklaar de IP adressen die kunnen worden gebruikt. [Meer informatie](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* In de [typologie](../../campaign/using/about-campaign-typologies.md) van uw keuze, gebruik het **[!UICONTROL Managing affinities with IP addresses]** gebied om leveringen aan de leveringsserver (MTA) te verbinden die bovengenoemde affiniteit beheert. [Meer informatie](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic).
+* In [typologie](../../campaign/using/about-campaign-typologies.md) van uw keus, gebruik **[!UICONTROL Managing affinities with IP addresses]** gebied om leveringen aan de leveringsserver (MTA) te verbinden die bovengenoemde affiniteit beheert. [Meer informatie](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic).
 
 * Zodra e-mail wordt verzonden, controleer de kopbal om te verifiëren welk IP adres de levering van werd verzonden. De e-mailbeheerder moet u helpen de koptekstgegevens op te halen.
 
@@ -102,7 +102,7 @@ U kunt:
 
 ### Typologieën gebruiken
 
-U kunt typologische regels gebruiken om een deel van het doel uit te sluiten op basis van specifieke criteria. Dit garandeert dat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid inzake bedrijfscommunicatie. U kunt bijvoorbeeld de ontvangers die jonger zijn, filteren van het doel van de nieuwsbrief. Meer informatie [in dit voorbeeld](../../campaign/using/filtering-rules.md).
+U kunt typologische regels gebruiken om een deel van het doel uit te sluiten op basis van specifieke criteria. Dit garandeert dat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid inzake bedrijfscommunicatie. U kunt bijvoorbeeld de ontvangers die jonger zijn, filteren van het doel van de nieuwsbrief. Meer [in dit voorbeeld](../../campaign/using/filtering-rules.md) leren.
 
 ### Bijlagen voorkomen
 
