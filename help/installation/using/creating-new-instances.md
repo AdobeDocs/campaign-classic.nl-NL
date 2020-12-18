@@ -23,9 +23,9 @@ U doet dit door u aan te melden bij een bestaande database en de volgende stappe
 
 1. Een nieuwe instantie declareren
 
-   Ga naar **[!UICONTROL Tools > Advanced > Declare a new instance...]** om de wizard te starten.
+   Ga naar **[!UICONTROL Tools > Advanced > Declare a new instance...]** om de tovenaar te beginnen.
 
    ![](assets/s_ncs_install_declare_instance_menu.png)
 
-   Geef de parameters van de nieuwe instantie op. Raadpleeg [Een instantie maken en aanmelden](../../installation/using/creating-an-instance-and-logging-on.md)voor meer informatie hierover.
+   Geef de parameters van de nieuwe instantie op. Voor meer op dit, verwijs naar [Creërend een instantie en het programma openen](../../installation/using/creating-an-instance-and-logging-on.md).
 
