@@ -19,7 +19,7 @@ ht-degree: 2%
 
 We raden u aan de onderstaande aanbevolen procedures te gebruiken om de leverbaarheid van je Adobe Campaign-e-mails te optimaliseren. De leveringsproblemen zijn over het algemeen verbonden met maatregelen van bescherming tegen spam die door de dienstverleners van Internet en de beheerders van de postserver worden uitgevoerd.
 
-**De e-mailleverbaarheid** verwijst naar de reeks kenmerken die bepalen of een bericht zijn bestemming kan bereiken, via een persoonlijk e-mailadres, binnen een korte tijd, en met de verwachte kwaliteit in termen van inhoud en formaat.
+**De e-** mailleverbaarheid verwijst naar de reeks eigenschappen die de capaciteit van een bericht bepalen om zijn bestemming, via een persoonlijk e-mailadres, binnen een korte tijd, en met de verwachte kwaliteit in termen van inhoud en formaat te bereiken.
 
 Deze kenmerken vallen in vier hoofdcategorieën:
 * Gegevenskwaliteit
@@ -29,7 +29,7 @@ Deze kenmerken vallen in vier hoofdcategorieën:
 
 Samen vormen ze de basis voor een succesvol e-mailprogramma.
 
-Het **leveringspercentage** is het aantal verzonden e-mailberichten dat is bezorgd aan de ontvangers.
+De **leverbaarheidsgraad** is het aantal verzonden e-mails dat met succes aan zijn ontvangers is geleverd.
 
 Het percentage te leveren producten hangt af van een groot aantal factoren, met name:
 * Correcte configuratie van uw instanties
@@ -42,7 +42,7 @@ Het percentage te leveren producten hangt af van een groot aantal factoren, met 
 
 Hieronder ziet u een lijst met de belangrijkste punten die moeten worden gecontroleerd om te zorgen voor goede prestaties.
 
-## Netwerkconfiguratie controleren {#network-configuration}
+## Netwerkconfiguratie {#network-configuration} controleren
 
 Spammers proberen hun echte identiteit te verhullen en maken hun servers daardoor moeilijk te identificeren. Een wettige netwerkconfiguratie die niet probeert om de identiteit van de server te verbergen is essentieel voor het verzenden van e-mails in grote volumes.
 
@@ -50,15 +50,15 @@ Spammers proberen hun echte identiteit te verhullen en maken hun servers daardoo
 
 Spammers gebruiken vaak adresgeneratoren op basis van lijsten met frequente namen en voornamen; bovendien verwerken zij zelden technische kennisgevingen die door mailservers worden teruggestuurd . Een hoog tarief van ongeldige adressen wordt vaak geïnterpreteerd als teken van spam. Dubbele &quot;opt-in&quot;-mechanismen en een effectieve verwerking van technische &quot;bounce&quot;-berichten maken het mogelijk dit te voorkomen.
 
-## Verminder klachten en stuiterende tarieven {#reduce-complaint-rates}
+## Verminder klachten en stuitende tarieven {#reduce-complaint-rates}
 
 ISPs heeft gewoonlijk een duidelijk middel om een ontvangen bericht als spam te melden. Hierdoor kunnen onbetrouwbare bronnen worden geïdentificeerd. Door opt-outverzoeken snel na te leven, regelmatig gebruik te maken van een bepaalde lijst, toestemming te controleren via een systeem met dubbele opt-in en terugkoppelingsmogelijkheden te implementeren, kunt u de klachtentarieven verlagen.
 
-## Verzenden naar honingsteunadressen {#honeypot-addresses}
+## Naar honingsteunadressen {#honeypot-addresses} verzenden
 
-ISP&#39;s en andere organisaties (zie de website van de [Projecthoningpoort](https://www.projecthoneypot.org/) ) maken gebruik van postvakken die niet overeenkomen met fysieke personen maar die zijn gemaakt om spammers te bedriegen. Deze zogenaamde &quot;honingpot&quot;-adressen worden op het web gepubliceerd om door spambots te worden verzameld en aldus illegale afzenders te vangen. Het gebruik van een dubbele opt-in-mechanisme sluit het toevoegen van dit adres aan een lijst uit. Wanneer u een lijst van derden gebruikt, moet u zeker zijn van de methoden die door de onderhoudsleider worden gebruikt.
+ISP&#39;s en andere organisaties (zie de website [Projecthoningpunt](https://www.projecthoneypot.org/)) maken gebruik van mailboxes die niet overeenkomen met fysieke personen maar die zijn gemaakt om spammers te bedriegen. Deze zogenaamde &quot;honingpot&quot;-adressen worden op het web gepubliceerd om door spambots te worden verzameld en aldus illegale afzenders te vangen. Het gebruik van een dubbele opt-in-mechanisme sluit het toevoegen van dit adres aan een lijst uit. Wanneer u een lijst van derden gebruikt, moet u zeker zijn van de methoden die door de onderhoudsleider worden gebruikt.
 
-## De inhoud van het bericht aanpassen {#message-content}
+## De berichtinhoud aanpassen {#message-content}
 
 In mindere mate kan de inhoud van bepaalde berichten ertoe leiden dat bepaalde filters de inhoud als spam detecteren. Het gebruik van bepaalde woorden, het gebruik van uitroeptekens in de onderwerpregel en in de berichten worden gelezen als verklikkersignalen van spam. Spammers kunnen ook tekst vervangen door afbeeldingen om te voorkomen dat onregelmatige tekst automatisch wordt geanalyseerd door anti-spamfilters. Als reactie hierop kan een bericht (in HTML-indeling) met een groot aantal afbeeldingen of afbeeldingen als bijlagen worden geblokkeerd.
 
