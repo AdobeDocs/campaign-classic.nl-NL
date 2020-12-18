@@ -15,12 +15,12 @@ ht-degree: 0%
 ---
 
 
-# Toegang tot Sybase IQ configureren {#configure-access-to-sybase-iq}
+# Toegang tot Sybase IQ {#configure-access-to-sybase-iq} configureren
 
 Gebruik de optie Campagne **Federated Data Access** (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Sybase IQ te configureren.
 
-1. Sybase IQ- [database configureren](#configuring-sybase)
-1. De [externe Sybase IQ-account](#sybase-external) configureren in Campagne
+1. [Sybase IQ-database](#configuring-sybase) configureren
+1. Sybase IQ [externe account](#sybase-external) configureren in campagne
 
 ## sybase IQ-configuratie {#configuring-sybase}
 
@@ -28,7 +28,7 @@ Als u verbinding maakt met een externe Sybase IQ-database in FDA, hebt u hierond
 
 >[!NOTE]
 >
->Voordat u begint, moet u controleren of het **unxodbc** -pakket zich op de server bevindt.
+>Controleer voordat u begint of het **unxodbc**-pakket zich op de server bevindt.
 
 1. Installeer **iq_odbc**. Er kan een fout optreden aan het einde van de installatie. Deze fout kan worden genegeerd.
 
@@ -36,7 +36,7 @@ Als u verbinding maakt met een externe Sybase IQ-database in FDA, hebt u hierond
 
 1. Configureer het ODBC-stuurprogramma. De configuratie kan in de standaarddossiers worden uitgevoerd: /etc/odbc.ini voor algemene parameters en /etc/odbcinst.ini voor het declareren van stuurprogramma&#39;s:
 
-   * **/etc/odbc.ini** (vervang uw eigen waarden, zoals `<server_alias>` tekens):
+   * **/etc/odbc.ini** (vervang uw eigen waarden, zoals  `<server_alias>` tekens):
 
       ```
       [ODBC Data Sources]
@@ -66,13 +66,13 @@ Als u verbinding maakt met een externe Sybase IQ-database in FDA, hebt u hierond
    * Als u een bestand customer.sh gebruikt om het pad te declareren: Voeg het pad /opt/sybase/IQ-16_0/lib64 toe voor de variabele LD_LIBRARY_PATH.
    * Gebruik anders een Unix-opdracht.
 
-## Externe sybase IQ-account {#sybase-external}
+## sybase IQ externe account {#sybase-external}
 
 Met de externe Sybase IQ-account kunt u uw Campagne-instantie verbinden met uw externe Sybase IQ-database.
 
 1. Klik in Campagne **[!UICONTROL Explorer]** op **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
-1. Click **[!UICONTROL New]** and select **[!UICONTROL External database]** as **[!UICONTROL Type]**.
+1. Klik **[!UICONTROL New]** en selecteer **[!UICONTROL External database]** als **[!UICONTROL Type]**.
 
 1. Om de **[!UICONTROL Sybase IQ]** externe rekening te vormen, moet u specificeren:
 
