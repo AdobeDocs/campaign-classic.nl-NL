@@ -22,25 +22,25 @@ De centrale entiteitexploitanten kunnen campagneorden in de lijst van campagnepa
 Hierdoor kunnen ze:
 
 * [Filterpakketten](#filter-packages),
-* [Pakketten](#edit-packages)bewerken
-* [Een pakket](#cancel-a-package)annuleren,
-* [Een pakket](#reinitializing-a-package)opnieuw initialiseren.
+* [Pakketten](#edit-packages) bewerken
+* [Een pakket](#cancel-a-package) annuleren,
+* [Een pakket](#reinitializing-a-package) opnieuw initialiseren.
 
 ## Filterpakketten {#filter-packages}
 
-Van **[!UICONTROL Campaigns universe]**, kunt u de lijst tonen waarvan **[!UICONTROL Campaign packages]** alle bestaande Verdeelde campagnes van de Marketing hergroepeert. U kunt deze lijst zo filteren dat alleen campagnes worden weergegeven die worden gepubliceerd, laat, in afwachting van goedkeuring, enzovoort. Klik hiertoe op de koppelingen in de bovenste sectie van deze weergave of gebruik de **[!UICONTROL Filter list]** koppeling en selecteer de status van het campagnepakket die u wilt weergeven.
+Van **[!UICONTROL Campaigns universe]**, kunt u de lijst van **[!UICONTROL Campaign packages]** tonen die alle bestaande Verdeelde campagnes van de Marketing hergroepeert. U kunt deze lijst zo filteren dat alleen campagnes worden weergegeven die worden gepubliceerd, laat, in afwachting van goedkeuring, enzovoort. Om dit te doen, klik de verbindingen in de hogere sectie van deze mening, of gebruik **[!UICONTROL Filter list]** verbinding en selecteer de status van het campagnepakket aan vertoning.
 
 ![](assets/mkg_dist_catalog_filter.png)
 
-## Pakketten bewerken {#edit-packages}
+## Pakketten {#edit-packages} bewerken
 
-Op de **[!UICONTROL Campaign packages]** pagina kunt u de samenvatting van elk pakket weergeven.
+Op de pagina **[!UICONTROL Campaign packages]** kunt u de samenvatting van elk pakket weergeven.
 
 Deze samenvatting bevat de volgende informatie: label, type campagne, alsmede de naam van de campagne waaruit deze is gemaakt en de map.
 
 Klik op de pakketnaam om deze te bewerken. U kunt ook bestellingen bekijken door de lokale entiteiten en door hun status.
 
-Deze informatie wordt ook aangeboden in de **[!UICONTROL Campaign orders]** weergave waarin alle bestellingen worden vermeld.
+Deze informatie wordt ook aangeboden in de weergave **[!UICONTROL Campaign orders]** waarin alle bestellingen worden vermeld.
 
 ![](assets/mkg_dist_catalog_op_command_details.png)
 
@@ -50,7 +50,7 @@ De centrale operator kan de volgorde bewerken. Er zijn twee manieren om dit te d
 
    ![](assets/mkg_dist_catalog_op_command_edit1.png)
 
-   Op het **[!UICONTROL Edit > General]** tabblad kunt u informatie weergeven die door de lokale entiteit is ingevoerd toen deze de campagne heeft besteld.
+   Op het tabblad **[!UICONTROL Edit > General]** kunt u informatie weergeven die door de lokale entiteit is ingevoerd toen deze de campagne heeft besteld.
 
    ![](assets/mkg_dist_catalog_op_command_edit1a.png)
 
@@ -58,7 +58,7 @@ De centrale operator kan de volgorde bewerken. Er zijn twee manieren om dit te d
 
    ![](assets/mkg_dist_catalog_op_command_edit2.png)
 
-## Een pakket annuleren {#cancel-a-package}
+## Een pakket {#cancel-a-package} annuleren
 
 De centrale entiteit kan een campagnepakket op elk ogenblik annuleren.
 
@@ -66,11 +66,11 @@ Klik **[!UICONTROL Cancel]** in het campagnepakket **[!UICONTROL Dashboard]**.
 
 ![](assets/mkg_dist_cancel_op_from_dashboard.png)
 
-In het **[!UICONTROL Comment]** veld kunt u de annulering uitvullen.
+In het veld **[!UICONTROL Comment]** kunt u de annulering uitvullen.
 
 Als u een pakket annuleert voor **lokale campagnes**, wordt dit verwijderd uit de lijst met beschikbare marketingcampagnes.
 
-Bij **samenwerkingscampagnes** leidt het annuleren van een pakket tot een groot aantal acties:
+Voor **samenwerkingscampagnes** leidt het annuleren van een pakket tot talrijke acties:
 
 1. Alle bestellingen met betrekking tot dit pakket worden geannuleerd.
 
@@ -91,11 +91,11 @@ Geannuleerde pakketten kunnen desgewenst nog steeds door de centrale entiteit wo
 Campagnepakketten die al zijn gepubliceerd, kunnen opnieuw worden geïnitialiseerd, gewijzigd en ter beschikking van lokale entiteiten worden gesteld.
 
 1. Selecteer het betreffende pakket.
-1. Klik op de **[!UICONTROL Reinitialize the package to reuse it]** koppeling en klik **[!UICONTROL OK]**.
+1. Klik op de koppeling **[!UICONTROL Reinitialize the package to reuse it]** en klik **[!UICONTROL OK]**.
 
    ![](assets/mkg_dist_mutual_op_reinit.png)
 
-1. Klik op de **[!UICONTROL Save]** knop om pakketherinitialisatie goed te keuren.
+1. Klik op de knop **[!UICONTROL Save]** om pakketherinitialisatie goed te keuren.
 
    ![](assets/mkg_dist_mutual_op_reinit2.png)
 
