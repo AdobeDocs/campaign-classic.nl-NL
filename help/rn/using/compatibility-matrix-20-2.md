@@ -10,26 +10,26 @@ translation-type: tm+mt
 source-git-commit: aabab5367ea4a26837fa3dc94a36fbbfa48d59e3
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 19%
+ht-degree: 83%
 
 ---
 
 
 # Compatibiliteitsmatrix{#compatibility-matrix}
 
-Dit document bevat een lijst met alle systemen en onderdelen die worden ondersteund voor de nieuwste build van **Adobe Campaign Classic (v6.11 en v7)**. Producten en versies die geen deel uitmaken van deze lijst, zijn niet compatibel met Adobe Campaign.
+Dit document bevat een lijst met alle systemen en componenten die worden ondersteund voor de nieuwste build van **Adobe Campaign Classic (v6.11 en v7)**. Producten en versies die geen deel uitmaken van deze lijst, zijn niet compatibel met Adobe Campaign.
 
 ## Belangrijke opmerkingen{#important-notes}
 
-Deze matrix wordt regelmatig bijgewerkt met nieuwe ondersteunde items die worden toegevoegd en vervangen door items die worden verwijderd.
+Deze matrix wordt regelmatig bijgewerkt door toevoeging van nieuwe ondersteunde items en verwijdering van verouderde items.
 
-Tenzij anders vermeld, worden alle kleine releases ondersteund.
+Tenzij anders vermeld worden alle kleine releases ondersteund.
 
-Adobe Campaign Classic is compatibel met alle systemen en gereedschappen die op deze pagina worden vermeld. Aangezien specifieke versies van deze systemen en hulpmiddelen van derden het einde van de levensduur (EOL) met hun respectieve makers bereiken, zal Adobe Campaign niet meer compatibel zijn met die versies en zullen zij uit onze verenigbaarheidsmatrijs in de verdere productversie worden verwijderd. Zorg ervoor dat u ondersteunde versies van alle systemen in de compatibiliteitsmatrix gebruikt om problemen te voorkomen.
+Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagina worden vermeld. Wanneer specifieke versies van deze externe systemen en tools het einde van de levensduur bereiken bij hun respectieve makers, is Adobe Campaign niet meer compatibel met deze versies. Ze worden dan in de volgende productrelease uit onze compatibiliteitsmatrix verwijderd. Zorg ervoor dat u ondersteunde versies van alle systemen in de compatibiliteitsmatrix gebruikt om problemen te voorkomen.
 
-Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie over afgekeurde items.
+Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informatie over verouderde items.
 
-## Operating Systems{#OperatingSystems}
+## Besturingssystemen{#OperatingSystems}
 
 <table> 
 <tbody> 
@@ -51,7 +51,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 <td>RHEL</td>
 <td>
 <p>7.x (64 bits)</p>
-<p><strong>Belangrijk:</strong> Als u RHEL gebruikt, moet u bereid zijn om SELinux onbruikbaar te maken of uw architecten te hebben aangepaste SELinux regels schrijven om te controleren dat toegelaten SELinux geen kwesties met de verrichtingen van de Campagne veroorzaakt.</p>
+<p><strong>Belangrijk:</strong> als u RHEL gebruikt, moet u bereid zijn om SELinux uit te schakelen of uw architecten aangepaste SELinux-regels te laten schrijven om te controleren of een ingeschakelde SELinux-versie geen problemen veroorzaakt met Campaign-activiteiten.</p>
 </td>
 </tr>
 <tr>
@@ -65,7 +65,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 </tbody>
 </table>
 
-## Web Servers{#WebServers}
+## Webservers{#WebServers}
 
 <table>
 <tbody>
@@ -95,7 +95,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 <td>
 <p>8</p>
 <p>9</p>
-<p>De aanvraag is goedgekeurd voor de Java Development Kit (JDK) die is ontwikkeld door Oracle en voor OpenJDK.</p>
+<p>De applicatie is goedgekeurd voor zowel de Java Development Kit (JDK) die is ontwikkeld door Oracle als voor OpenJDK.</p>
 </td>
 </tr>
 <tr>
@@ -107,7 +107,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md)voor meer informatie
 <tr>
 <td>SpamAssassin</td>
 <td>
-<p>3,4 x</p>
+<p>3.4.x</p>
 </td>
 </tr>
 </tbody>
@@ -130,7 +130,7 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 
 >[!NOTE]
 >
->RDBMS-stuurprogramma moet overeenkomen met RDBMS-serverversie.
+>Het RDBMS-stuurprogramma moet overeenkomen met de RDBMS-serverversie.
 
 ## RDBMS-servers{#RDBMSservers}
 
@@ -148,12 +148,12 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 <tr>
 <td>PostgreSQL</td>
 <td>
-<p>9,4 x</p>
-<p>9,5 x</p>
-<p>9,6 x</p>
+<p>9.4.x</p>
+<p>9.5.x</p>
+<p>9.6.x</p>
 <p>10.x</p>
 <p>11.x</p>
-<p>Opmerking: u kunt ook Amazon RDS voor PostgreSQL gebruiken met de hierboven gespecificeerde versies.</p>
+<p>Opmerking: u kunt ook Amazon RDS voor PostgreSQL gebruiken met de hierboven vermelde versies.</p>
 </td>
 </tr>
 <tr>
@@ -163,7 +163,7 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 <p>2014</p>
 <p>2016</p>
 <p>2017</p>
-<p>Waarschuwing: Microsoft SQL Server wordt niet ondersteund als de primaire database wanneer de Campagneserver op Linux wordt uitgevoerd. <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Meer informatie</a>.</p>
+<p>Waarschuwing: Microsoft SQL Server wordt niet als de primaire database ondersteund wanneer de Campaign-server op Linux wordt uitgevoerd. <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Meer informatie</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -171,7 +171,7 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 
 >[!NOTE]
 >
->PostgreSQL is de standaarddatabaseserver voor gehoste omgevingen.
+>PostgreSQL is de standaard databaseserver voor gehoste omgevingen.
 
 ## CRM-connectoren{#CRMconnectors}
 
@@ -184,7 +184,7 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 </td>
 </tr>
 <tr>
-<td>SFDC API</td>
+<td>SFDC-API</td>
 <td>
 <p>API-versie 15</p>
 <p>API-versie 21</p>
@@ -192,7 +192,7 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 </tr>
 <tr><td>Oracle On-demand-API</td>
 <td>
-<p>Web Services v1.0 API</p>
+<p>Web Services v1.0-API</p>
 </td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 <td>
 <p>Soap-API - On-premise: 2007, 2015, 2016</p>
 <p>Soap-API - Online: 2015, 2016</p>
-<p>Web API - Op locatie en online: 365, 2016, 2016 Update 1</p>
+<p>Web-API - on-premise en online: 365, 2016, 2016 Update 1</p>
 </td>
 </tr>
 </tbody>
@@ -211,7 +211,7 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 <table>
 <tbody>
 <tr>
-<td>Microsoft Azure synapse Analytics</td>
+<td>Microsoft Azure Synapse Analytics</td>
 <td> </td>
 </tr>
 <tr>
@@ -223,8 +223,8 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 <td>Oracle</td>
 <td>
 <p>11g</p>
-<p>12c</p>
-<p>18c</p>
+<p>12 quater</p>
+<p>18 quater</p>
 </td>
 </tr>
 <tr>
@@ -239,7 +239,7 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 </tr>
 <tr><td>SQL Server</td>
 <td>
-<p>SP1 en SP2 2012</p>
+<p>2012 SP1 en SP2</p>
 <p>2014</p>
 <p>2016</p>
 <p>2017</p>
@@ -313,7 +313,7 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 </tbody>
 </table>
 
-## Mobile SDK{#MobileSDK}
+## Mobiele SDK{#MobileSDK}
 
 <table>
 <tbody>
@@ -322,8 +322,8 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 <td>
 <p>7.x</p>
 <p>8.x</p>
-<p>9.0</p>
-<p>met mobiele SDK build 1.0.27.</p>
+<p>9,0</p>
+<p>met mobiele SDK-build 1.0.27.</p>
 </td>
 </tr>
 <tr>
@@ -334,7 +334,7 @@ De volgende RDBMS-stuurprogramma&#39;s worden ondersteund:
 <p>iOS 11</p>
 <p>iOS 12</p>
 <p>iOS 13</p>
-<p>met mobiele SDK build 1.0.26, compatibel met 32- en 64-bits versies.</p>
+<p>met mobiele SDK-build 1.0.26, compatibel met de 32-bits en de 64-bits versie.</p>
 </td>
 </tr>
 </tbody>
@@ -356,14 +356,14 @@ Voor de volgende browsers wordt de nieuwste versie ondersteund:
 
 ## Experience Cloud-integraties{#ExperienceCloudintegrations}
 
-Raadpleeg deze [sectie](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/about-campaign-integrations.html#experience-cloud-integrations)voor integratie met Adobe-oplossingen.
+Voor integratie met Adobe oplossingen, verwijs naar dit [sectie](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/about-campaign-integrations.html#experience-cloud-integrations).
 
-## Meer als dit{#Morelikethis}
+## Wellicht ook interessant{#Morelikethis}
 
-* [Opmerkingen bij de release Campaign Classic](https://docs.adobe.com/content/help/nl-NL/campaign-classic/using/release-notes/latest-release.html)
+* [Opmerkingen bij de release van Campaign Classic ](https://docs.adobe.com/content/help/nl-NL/campaign-classic/using/release-notes/latest-release.html)
 * [Installatiehandleiding](https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/general-architecture.html)
 * [Verouderde functies en systemen](https://helpx.adobe.com/nl/campaign/kb/deprecated-and-removed-features.html)
-* [Upgradeprocedure bouwen](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html)
+* [Upgradeprocedure opstellen](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html)
 * [Campaign Classic-compatibiliteitsmatrix voor 19.0-release](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix-19-0.html)
 * [Campaign Classic-compatibiliteitsmatrix voor 19.1-release](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix-19-1.html)
 
