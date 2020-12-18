@@ -19,9 +19,9 @@ ht-degree: 0%
 
 Gegevens die in een werkstroom worden verwerkt, kunnen afkomstig zijn van lijsten waarin de gegevens vooraf zijn voorbereid of gestructureerd (na een eerdere segmentatie of het uploaden van bestanden).
 
-Met de **[!UICONTROL Read list]** activiteit kunt u de gegevens kopiëren uit een lijst in de werktabel van de workflow, zoals gegevens uit een query. Het is dan toegankelijk door het werkschema.
+Met de activiteit **[!UICONTROL Read list]** kunt u de gegevens uit een lijst in de werkschemawerklijst kopiëren, zoals gegevens van een vraag. Het is dan toegankelijk door het werkschema.
 
-De lijst die moet worden verwerkt, kan expliciet worden opgegeven, door een script worden berekend of dynamisch worden gelokaliseerd, afhankelijk van de geselecteerde opties en de parameters die in een **[!UICONTROL Read list]** activiteit zijn gedefinieerd.
+De lijst die moet worden verwerkt, kan expliciet worden opgegeven, door een script worden berekend of dynamisch worden gelokaliseerd, afhankelijk van de geselecteerde opties en parameters die zijn gedefinieerd in een activiteit **[!UICONTROL Read list]**.
 
 ![](assets/list_edit_select_option_01.png)
 
@@ -37,7 +37,7 @@ Zodra de lijstselectie is gevormd, kunt u een filter toevoegen gebruikend de **[
 >
 >Als u een filter wilt maken in een leeslijstactiviteit, moet de relevante lijst een &quot;bestandstype&quot;zijn.
 
-De lijsten kunnen direct in Adobe Campaign via de **[!UICONTROL Profiles and Targets > Lists]** verbinding van de homepage worden gecreeerd. Ze kunnen ook in een workflow worden gemaakt met behulp van de **[!UICONTROL List update]** activiteit.
+De lijsten kunnen direct in Adobe Campaign via **[!UICONTROL Profiles and Targets > Lists]** verbinding van de homepage worden gecreeerd. Ze kunnen ook in een workflow worden gemaakt met de activiteit **[!UICONTROL List update]**.
 
 **Voorbeeld: Een lijst met verzendadressen uitsluiten**
 
@@ -45,27 +45,27 @@ In het volgende voorbeeld kunt u een lijst met e-mailadressen gebruiken om gegev
 
 ![](assets/s_advuser_list_read_sample_1.png)
 
-De profielen in de map **Nieuwe contactpersonen** moeten worden geactiveerd door een leveringsactie. De e-mailadressen die van het doel moeten worden uitgesloten, worden opgeslagen in een externe lijst. In ons voorbeeld is alleen de informatie over e-mailadressen vereist voor uitsluiting.
+De profielen in **Nieuwe Contacten** omslag moeten door een leveringsactie worden gericht. De e-mailadressen die van het doel moeten worden uitgesloten, worden opgeslagen in een externe lijst. In ons voorbeeld is alleen de informatie over e-mailadressen vereist voor uitsluiting.
 
-1. Met de selectievraag voor de map **Nieuwe contactpersonen** kunt u de e-mailadressen van de geselecteerde profielen laden om uitlijning met de gegevens in de lijst in te schakelen.
+1. De **Nieuwe Contacten** vraag van de omslagselectie moet u toelaten om de e-mailadressen van geselecteerde profielen te laden, om groepering met de informatie in de lijst toe te laten.
 
    ![](assets/s_advuser_list_read_sample_0.png)
 
-1. Hier wordt de lijst opgeslagen in de map **Lijsten** en wordt het label ervan berekend.
+1. Hier wordt de lijst opgeslagen in de map **Lists** en wordt het label berekend.
 
    ![](assets/s_advuser_list_read_sample_2.png)
 
-1. Als u de e-mailadressen van de externe lijst wilt uitsluiten van het hoofddoel, moet u de uitsluitingsactiviteit configureren en opgeven dat de map **Nieuwe contactpersonen** de gegevens bevat die moeten worden bewaard. De gezamenlijke gegevens tussen deze set en andere binnenkomende sets uit de uitsluitingsactiviteit worden uit het doel verwijderd.
+1. Om de e-mailadressen van de externe lijst van het belangrijkste doel uit te sluiten, moet u de uitsluitingsactiviteit vormen en specificeren dat **Nieuwe Contacten** omslag de te houden gegevens bevat. De gezamenlijke gegevens tussen deze set en andere binnenkomende sets uit de uitsluitingsactiviteit worden uit het doel verwijderd.
 
    ![](assets/s_advuser_list_read_sample_3.png)
 
-   De uitsluitingsregels worden geconfigureerd in de centrale sectie van het bewerkingsgereedschap. Klik op de **[!UICONTROL Add]** knop om het type uitsluiting te definiëren dat u wilt toepassen.
+   De uitsluitingsregels worden geconfigureerd in de centrale sectie van het bewerkingsgereedschap. Klik op de knop **[!UICONTROL Add]** om het type uitsluiting te definiëren dat moet worden toegepast.
 
    U kunt verschillende uitsluitingen definiëren afhankelijk van het aantal inkomende overgangen van de activiteit.
 
-1. Selecteer in het **[!UICONTROL Exclusion set]** veld de **[!UICONTROL Read list]** activiteit: de gegevens in deze activiteit moeten van de hoofdreeks worden uitgesloten .
+1. Selecteer in het veld **[!UICONTROL Exclusion set]** de activiteit **[!UICONTROL Read list]**: de gegevens in deze activiteit moeten van de hoofdreeks worden uitgesloten .
 
-   In ons voorbeeld hebben we een uitzondering op joins: de gegevens in de lijst worden in overeenstemming gebracht met de gegevens van de hoofdset via het veld met het e-mailadres . Om de verbinding te vormen, selecteer **[!UICONTROL Joins]** op het **[!UICONTROL Change dimension]** gebied.
+   In ons voorbeeld hebben we een uitzondering op joins: de gegevens in de lijst worden in overeenstemming gebracht met de gegevens van de hoofdset via het veld met het e-mailadres . Selecteer **[!UICONTROL Joins]** in het veld **[!UICONTROL Change dimension]** om de samenvoeging te configureren.
 
    ![](assets/s_advuser_list_read_sample_4.png)
 
