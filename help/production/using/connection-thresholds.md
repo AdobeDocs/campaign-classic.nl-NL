@@ -27,7 +27,7 @@ Er zijn drie verschillende drempels:
 
    * Tomcat-zijde: alle vragen die daadwerkelijk op de Adobe Campaign Tomcat-client aankomen.
 
-      Deze drempelwaarde is geconfigureerd in het bestand **nl6/tomcat-8/conf/server.xml** . Het **maxThreads** attribuut laat u de drempel van het aantal vragen verhogen die tegelijkertijd worden verwerkt. Het kan bijvoorbeeld worden gewijzigd in 250.
+      Deze drempel wordt gevormd in **nl6/tomcat-8/conf/server.xml** dossier. Met het kenmerk **maxThreads** kunt u de drempel verhogen voor het aantal query&#39;s dat tegelijkertijd wordt verwerkt. Het kan bijvoorbeeld worden gewijzigd in 250.
 
       ```
       <Connector protocol="HTTP/1.1" port="8080"
@@ -43,7 +43,7 @@ Er zijn drie verschillende drempels:
 
    * Database: reeks van alle verbindingen opent tezelfdertijd op het gegevensbestand door een proces.
 
-      Deze drempelwaarde is geconfigureerd in het bestand **nl6/conf/serverConf.xml**. De **attributen maxCnx** die in **datasource pool** worden gevestigd laten u de drempel van gelijktijdig verwerkte vragen verhogen.
+      Deze drempel wordt gevormd in het dossier **nl6/conf/serverConf.xml**. Met het **maxCnx**-kenmerk in **datasource pool** kunt u de drempel verhogen voor gelijktijdig verwerkte query&#39;s.
 
       ```
           <!-- Data source
