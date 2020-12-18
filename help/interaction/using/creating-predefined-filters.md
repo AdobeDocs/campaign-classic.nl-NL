@@ -21,7 +21,7 @@ Met vooraf gedefinieerde filters kunt u geschiktheidsregels voor de doelpopulati
 
 Pas het volgende proces toe om een filter te maken:
 
-1. Ga naar de **[!UICONTROL Administration]** map en selecteer **[!UICONTROL Pre-defined offer filters]**.
+1. Ga naar **[!UICONTROL Administration]** omslag en selecteer **[!UICONTROL Pre-defined offer filters]**.
 
    ![](assets/offer_filter_create_005.png)
 
@@ -41,7 +41,7 @@ Pas het volgende proces toe om een filter te maken:
 
    ![](assets/offer_filter_create_004.png)
 
-1. Klik **[!UICONTROL Preview]** om het resultaat van het filter weer te geven.
+1. Klik **[!UICONTROL Preview]** om het resultaat van de filter te bekijken.
 
    ![](assets/offer_filter_create_006.png)
 
