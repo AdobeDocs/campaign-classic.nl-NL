@@ -32,7 +32,7 @@ In Campaign Classic, door gebrek, richten de leveringsmalplaatjes **Ontvangers**
 
 U kunt bijvoorbeeld leveren aan bezoekers van wie de profielen via sociale netwerken zijn verzameld of aan bezoekers die zijn geabonneerd op een informatieservice.
 
-Deze toewijzingen worden weergegeven [in deze sectie](../../delivery/using/selecting-a-target-mapping.md).
+Deze toewijzingen worden [in deze sectie](../../delivery/using/selecting-a-target-mapping.md) voorgesteld.
 
 U kunt ook een aangepaste doeltoewijzing maken en gebruiken. Raadpleeg [deze sectie](../../configuration/using/target-mapping.md) voor meer informatie.
 
@@ -40,18 +40,18 @@ U kunt ook een aangepaste doeltoewijzing maken en gebruiken. Raadpleeg [deze sec
 
 U kunt leveren aan ontvangers die in een extern dossier eerder dan opgeslagen in het gegevensbestand worden opgeslagen. Meer informatie [in deze sectie](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
 
-## Verzenden naar uw abonnees {#send-to-subscribers}
+## Verzend naar uw abonnees {#send-to-subscribers}
 
 Om berichten naar de abonnees van een nieuwsbrief te verzenden, kunt u de abonnees aan de overeenkomstige informatiedienst direct richten. Meer informatie [in deze sectie](../../delivery/using/managing-subscriptions.md#delivering-to-the-subscribers-of-a-service).
 
 
-## Ontvangers en zaadadressen testen {#test-recipients-seed-addresses}
+## Ontvangers en zaadadressen van de test {#test-recipients-seed-addresses}
 
 Om uw levering te testen, gebruik proef alvorens naar het belangrijkste doel te verzenden.
 
-Zorg ervoor dat u de juiste ontvangers voor het bewijs selecteert, omdat deze het formulier en de inhoud van het bericht valideren. De stappen voor het definiëren van de ontvangers van het bewijs worden [in deze sectie](../../delivery/using/steps-defining-the-target-population.md#selecting-the-proof-target)weergegeven.
+Zorg ervoor dat u de juiste ontvangers voor het bewijs selecteert, omdat deze het formulier en de inhoud van het bericht valideren. De stappen voor het definiëren van de proefontvangers worden [in deze sectie](../../delivery/using/steps-defining-the-target-population.md#selecting-the-proof-target) weergegeven.
 
-De zaadadressen worden gebruikt aan doelontvangers die niet aan de bepaalde doelcriteria voldoen om een levering te testen alvorens naar het belangrijkste doel te verzenden. Ze worden [in deze rubriek](../../delivery/using/about-seed-addresses.md)weergegeven.
+De zaadadressen worden gebruikt aan doelontvangers die niet aan de bepaalde doelcriteria voldoen om een levering te testen alvorens naar het belangrijkste doel te verzenden. Zij worden [in deze sectie ](../../delivery/using/about-seed-addresses.md) voorgesteld.
 
 ## Gedupliceerde adressen {#deduplicate-addresses}
 
@@ -63,10 +63,10 @@ Het is belangrijk om dubbele e-mailadressen te vermijden, omdat dit van invloed 
 
 Deduplicating adressen beschermt uw verzendende reputatie en verzekert goed quarantainebeheer.
 
-Klik hier als je meer wilt weten [over deze kwestie](../../workflow/using/deduplication.md#example--identify-the-duplicates-before-a-delivery).
+Lees meer [in dit gebruiksgeval](../../workflow/using/deduplication.md#example--identify-the-duplicates-before-a-delivery).
 
-## E-mailadressen indexeren {#index-addresses}
+## E-mailadressen {#index-addresses} indexeren
 
 Om de prestaties van de SQL vragen te optimaliseren die in de toepassing worden gebruikt, kan een index van het belangrijkste element van het gegevensschema worden verklaard.
 
-De stappen voor het toevoegen van een index aan het e-mailadres worden beschreven [in deze sectie](../../configuration/using/database-mapping.md#indexed-fields).
+De stappen voor het toevoegen van een index aan het e-mailadres worden [in deze sectie](../../configuration/using/database-mapping.md#indexed-fields) voorgesteld.
