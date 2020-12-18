@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Abonnementen beheren{#managing-subscriptions}
 
-## Informatie over informatiediensten {#about-information-services}
+## Informatie over services {#about-information-services}
 
 Een informatiedienst omvat:
 
@@ -38,55 +38,55 @@ Er zijn drie modi voor abonnementen/abonnementen op services:
 
 >[!NOTE]
 >
->In [deze sectie](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in)wordt een voorbeeld beschreven voor het maken van een abonnementsformulier met dubbele aanmelding.
+>In [deze sectie](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in) wordt een voorbeeld gegeven voor het maken van een abonnementsformulier met dubbele aanmelding.
 
-## Een informatiedienst maken {#creating-an-information-service}
+## Informatieservice {#creating-an-information-service} maken
 
 U kunt abonnementen op informatiediensten met bijbehorende bevestigingsberichten of automatische leveringen aan abonnees tot stand brengen en beheren.
 
-Ga naar het **[!UICONTROL Profiles and Targets]** universum en klik op de **[!UICONTROL Services and Subscriptions]** koppeling om toegang te krijgen tot de kaart met informatiediensten.
+Ga naar het **[!UICONTROL Profiles and Targets]** universum en klik op de koppeling **[!UICONTROL Services and Subscriptions]** om de kaart met informatieservices te openen.
 
 ![](assets/s_ncs_user_services_new.png)
 
-Als u een bestaande service wilt bewerken, klikt u op de naam van de service. Als u een service wilt maken, klikt u op de **[!UICONTROL Create]** knop boven de lijst.
+Als u een bestaande service wilt bewerken, klikt u op de naam van de service. Als u een service wilt maken, klikt u op de knop **[!UICONTROL Create]** boven de lijst.
 
 ![](assets/s_ncs_user_services_add.png)
 
-* Voer de naam van de service in het **[!UICONTROL Label]** veld in en selecteer het leveringskanaal: e-mail-, mobiele, Facebook-, Twitter- of mobiele toepassingen.
+* Voer in het veld **[!UICONTROL Label]** de naam van de service in en selecteer het leveringskanaal: e-mail-, mobiele, Facebook-, Twitter- of mobiele toepassingen.
 
    >[!NOTE]
    >
-   >Facebook- en Twitter-abonnementen worden in [deze sectie](../../social/using/about-social-marketing.md)beschreven. Abonnementen voor mobiele toepassingen worden beschreven in [Informatie over het mobiele toepassingskanaal](../../delivery/using/about-mobile-app-channel.md).
+   >Facebook- en Twitter-abonnementen worden beschreven in [deze sectie](../../social/using/about-social-marketing.md). Abonnementen voor mobiele toepassingen worden beschreven in [Mobiel toepassingskanaal](../../delivery/using/about-mobile-app-channel.md).
 
-* Selecteer de **leveringsmodus** voor een service van het type E-mail. De mogelijke modi zijn: **[!UICONTROL Newsletter]** of **[!UICONTROL Viral]**.
-* U kunt **bevestigingsberichten** voor een abonnement of een abonnement verzenden. Hiervoor selecteert u de leveringssjablonen die u wilt gebruiken om de corresponderende leveringen te maken vanuit de **[!UICONTROL Subscription]** velden en de **[!UICONTROL Unsubscription]** velden. Deze malplaatjes moeten met een **[!UICONTROL Subscription]** typedoelafbeelding, zonder een bepaald doel worden gevormd. Zie de sectie [Over e-mailkanaal](../../delivery/using/about-email-channel.md).
-* Abonnementen zijn standaard onbeperkt. U kunt de **[!UICONTROL Unlimited]** optie uitschakelen om een geldigheidsduur voor de service te definiëren. De duur kan worden opgegeven in dagen (**[!UICONTROL d]** ) of maanden (**[!UICONTROL m]** ).
+* Voor een E-mailtypeservice selecteert u de **leveringsmodus**. De mogelijke modi zijn: **[!UICONTROL Newsletter]** of **[!UICONTROL Viral]**.
+* U kunt **bevestigingsberichten** voor een abonnement of een unsubscription verzenden. Hiervoor selecteert u de leveringssjablonen die u wilt gebruiken om de corresponderende leveringen te maken in de velden **[!UICONTROL Subscription]** en **[!UICONTROL Unsubscription]**. Deze malplaatjes moeten met een **[!UICONTROL Subscription]** type doelafbeelding, zonder een bepaald doel worden gevormd. Zie sectie [Informatie over e-mailkanaal](../../delivery/using/about-email-channel.md).
+* Abonnementen zijn standaard onbeperkt. U kunt de optie **[!UICONTROL Unlimited]** uitschakelen om een geldigheidsduur voor de service te definiëren. De duur kan worden opgegeven in dagen (**[!UICONTROL d]**) of maanden (**[!UICONTROL m]** ).
 
-Zodra de dienst is opgeslagen, wordt het toegevoegd aan de lijst van de Diensten en van Abonnementen: Klik op de naam van het bestand om het te bewerken. Er zijn verschillende tabbladen beschikbaar. Op het **[!UICONTROL Subscriptions]** tabblad kunt u de lijst met abonnees van de informatiedienst (**[!UICONTROL Active subscriptions]** tabblad) of de abonnements-/**[!UICONTROL History]** uitstapgeschiedenis bekijken. U kunt ook abonnees toevoegen en verwijderen van dit tabblad. Zie [Abonnees](#adding-and-deleting-subscribers)toevoegen en verwijderen.
+Zodra de dienst is opgeslagen, wordt het toegevoegd aan de lijst van de Diensten en van Abonnementen: Klik op de naam van het bestand om het te bewerken. Er zijn verschillende tabbladen beschikbaar. Op het tabblad **[!UICONTROL Subscriptions]** kunt u de lijst met abonnees van de informatieservice (**[!UICONTROL Active subscriptions]** tabblad) of de abonnements-/uitstapgeschiedenis (**[!UICONTROL History]** tabblad) bekijken. U kunt ook abonnees toevoegen en verwijderen van dit tabblad. Zie [Abonnees toevoegen en verwijderen](#adding-and-deleting-subscribers).
 
 ![](assets/s_ncs_user_services_subscriptions.png)
 
-Met de **[!UICONTROL Detail...]** knop kunt u de abonnementseigenschappen voor de geselecteerde ontvanger bekijken.
+Met de knop **[!UICONTROL Detail...]** kunt u de abonnementseigenschappen voor de geselecteerde ontvanger bekijken.
 
 U kunt de abonnementseigenschappen voor een ontvanger wijzigen.
 
 ![](assets/s_ncs_user_services_modify.png)
 
-Klik op het dashboard op het **[!UICONTROL Reports]** tabblad om abonnementen bij te houden: wijzigingen in het abonnementsniveau, het totale aantal abonnees, enz. U kunt rapporten archiveren en historie bekijken van dit lusje.
+Klik op het dashboard op het tabblad **[!UICONTROL Reports]** om abonnementen bij te houden: wijzigingen in het abonnementsniveau, het totale aantal abonnees, enz. U kunt rapporten archiveren en historie bekijken van dit lusje.
 
-## Abonnees toevoegen en verwijderen {#adding-and-deleting-subscribers}
+## Abonnees {#adding-and-deleting-subscribers} toevoegen en verwijderen
 
-Klik op het **[!UICONTROL Subscriptions]** tabblad van een informatieservice **[!UICONTROL Add]** om abonnees toe te voegen. U kunt ook met de rechtermuisknop op de lijst met abonnees klikken en selecteren **[!UICONTROL Add]**. Selecteer de map waarin de profielen zijn opgeslagen die u wilt abonneren, selecteer vervolgens de profielen die u wilt abonneren en klik **[!UICONTROL OK]** om te valideren.
+Klik op het tabblad **[!UICONTROL Subscriptions]** van een informatieservice op **[!UICONTROL Add]** om abonnees toe te voegen. U kunt ook met de rechtermuisknop op de lijst met abonnees klikken en **[!UICONTROL Add]** selecteren. Selecteer de map waarin de profielen zijn opgeslagen die u wilt abonneren, selecteer vervolgens de profielen die u wilt abonneren en klik op **[!UICONTROL OK]** om te valideren.
 
-Als u abonnees wilt verwijderen, selecteert u de abonnees en klikt u op **[!UICONTROL Delete]**. U kunt ook met de rechtermuisknop op de abonnementenlijst klikken en selecteren **[!UICONTROL Delete]**.
+Als u abonnees wilt verwijderen, selecteert u deze en klikt u op **[!UICONTROL Delete]**. U kunt ook met de rechtermuisknop op de abonnementenlijst klikken en **[!UICONTROL Delete]** selecteren.
 
-In beide gevallen kunt u een bevestigingsbericht naar de betrokken gebruikers sturen als er een leveringssjabloon voor abonnementen aan de service is gekoppeld (zie [Een informatiedienst](#creating-an-information-service)maken). Met een waarschuwing kunt u deze levering valideren of niet valideren:
+In beide gevallen kunt u een bevestigingsbericht naar de betrokken gebruikers sturen als er een leveringssjabloon voor abonnementen aan de service is gekoppeld (zie [Een informatieservice maken](#creating-an-information-service)). Met een waarschuwing kunt u deze levering valideren of niet valideren:
 
 ![](assets/s_ncs_user_services_update.png)
 
-Zie [Abonnementsmechanismen en disabonnementmechanismen](#subscription-and-unsubscription-mechanisms).
+Zie [Abonnementsmechanismen](#subscription-and-unsubscription-mechanisms).
 
-## Het leveren aan de abonnees van een dienst {#delivering-to-the-subscribers-of-a-service}
+## Levering aan de abonnees van een dienst {#delivering-to-the-subscribers-of-a-service}
 
 Om aan de abonnees van een informatiedienst te leveren, kunt u de abonnees aan de betrokken informatiedienst richten, zoals in het volgende voorbeeld:
 
@@ -94,7 +94,7 @@ Om aan de abonnees van een informatiedienst te leveren, kunt u de abonnees aan d
 
 >[!CAUTION]
 >
->De doeltoewijzing moet zijn **[!UICONTROL Subscriptions]**.
+>De doelafbeelding moet **[!UICONTROL Subscriptions]** zijn.
 
 Selecteer **[!UICONTROL Subscribers of an information service]** en klik op **[!UICONTROL Next]**.
 
@@ -104,30 +104,30 @@ Selecteer de beoogde informatieservice en klik op **[!UICONTROL Finish]**.
 
 ![](assets/s_ncs_user_wizard_target_is_a_service03.png)
 
-Op het **[!UICONTROL Preview]** tabblad kunt u de lijst met abonnees van de geselecteerde informatiedienst weergeven.
+Op het tabblad **[!UICONTROL Preview]** kunt u de lijst met abonnees van de geselecteerde informatieservice weergeven.
 
-## Abonnementsmechanismen en regelingen voor niet-inschrijving {#subscription-and-unsubscription-mechanisms}
+## Mechanismen {#subscription-and-unsubscription-mechanisms} voor abonnementen en afschrijving
 
 U kunt abonnements- en uitstapmechanismen instellen om de processen en het abonneebeheer te automatiseren.
 
 >[!NOTE]
 >
 >Je kunt een bevestigingsbericht naar nieuwe abonnees sturen.\
->De inhoud van dit bericht wordt bepaald in de configuratie van de informatiedienst via **[!UICONTROL Subscription]** of gebieden **[!UICONTROL Unsubscription]** .
+>De inhoud van dit bericht wordt gedefinieerd in de configuratie van de informatieservice via de velden **[!UICONTROL Subscription]** of **[!UICONTROL Unsubscription]**.
 >
->De bevestigingsberichten worden gecreeerd via de leveringsmalplaatjes die in deze gebieden worden gespecificeerd. Deze doeltoewijzingen moeten zijn **[!UICONTROL Subscriptions]**.
+>De bevestigingsberichten worden gecreeerd via de leveringsmalplaatjes die in deze gebieden worden gespecificeerd. Deze doeltoewijzingen moeten **[!UICONTROL Subscriptions]** zijn.
 
 ![](assets/s_ncs_user_subscribe_confirmation.png)
 
-### Een ontvanger aan de dienst abonneren {#subscribing-a-recipient-to-a-service}
+### Een ontvanger abonneren op een service {#subscribing-a-recipient-to-a-service}
 
 Als u ontvangers wilt registreren voor een informatieservice, kunt u:
 
-* Voeg de service handmatig toe: hiertoe klikt u op het **[!UICONTROL Subscriptions]** tabblad van hun profiel op de betreffende informatiedienst **[!UICONTROL Add]** en selecteert u deze.
+* Voeg de service handmatig toe: om dit te doen, van **[!UICONTROL Subscriptions]** lusje van hun profiel, klik **[!UICONTROL Add]** en selecteer de betrokken informatiedienst.
 
    Raadpleeg voor meer informatie de sectie over het bewerken van profielen in [deze sectie](../../platform/using/editing-a-profile.md).
 
-* Schrijf automatisch een reeks ontvangers in op deze service. De lijst met ontvangers kan afkomstig zijn van een filterbewerking, een groep, een map, een import of een directe selectie met de muis. Als u zich op deze ontvangers wilt abonneren, selecteert u de profielen en klikt u met de rechtermuisknop. Selecteer **[!UICONTROL Actions > Subscribe selection to a service...]** de desbetreffende service, selecteer deze en start de bewerking.
+* Schrijf automatisch een reeks ontvangers in op deze service. De lijst met ontvangers kan afkomstig zijn van een filterbewerking, een groep, een map, een import of een directe selectie met de muis. Als u zich op deze ontvangers wilt abonneren, selecteert u de profielen en klikt u met de rechtermuisknop. Selecteer **[!UICONTROL Actions > Subscribe selection to a service...]**, selecteer de betreffende service en start de bewerking.
 * Importeer ontvangers en meld ze automatisch aan bij een informatieservice. Selecteer hiertoe de desbetreffende service in de laatste stap van de wizard Importeren.
 
    Raadpleeg [deze sectie](../../platform/using/importing-data.md#import-wizard) voor meer informatie.
@@ -136,36 +136,36 @@ Als u ontvangers wilt registreren voor een informatieservice, kunt u:
 
    Raadpleeg [deze sectie](../../web/using/about-web-applications.md) voor meer informatie.
 
-* Een doelworkflow maken en een **[!UICONTROL Subscription service]** vak gebruiken.
+* Het creëren van een het richten werkschema en het gebruiken van een **[!UICONTROL Subscription service]** doos.
 
    ![](assets/s_ncs_user_subscribe_from_wf.png)
 
-   De workflows en hoe deze te gebruiken worden in [deze sectie](../../workflow/using/about-workflows.md)beschreven.
+   Workflows en het gebruik ervan worden beschreven in [deze sectie](../../workflow/using/about-workflows.md).
 
-### Een ontvanger afmelden bij een service {#unsubscribing-a-recipient-from-a-service}
+### Abonnement op een ontvanger opzeggen {#unsubscribing-a-recipient-from-a-service}
 
 #### Handmatig afmelden {#manual-unsubscribing}
 
 e-mailleveringen moeten wettelijk gezien een link zonder abonnement bevatten. Ontvangers kunnen op deze koppeling klikken om hun profiel bij te werken en worden uitgesloten van de doelstellingen voor toekomstige leveringen.
 
-De standaardkoppeling voor het ongedaan maken van abonnementen wordt ingevoegd via de laatste knop op de werkbalk van de inhoudseditor die wordt geleverd in de wizard voor levering (zie [Informatie over personalisatie](../../delivery/using/about-personalization.md)). Wanneer de ontvanger op deze koppeling klikt, wordt het profiel toegevoegd aan de lijst van afgewezen personen (opt-out), wat betekent dat deze ontvanger niet langer het doelwit is van een leveringsactie.
+De standaardkoppeling voor het ongedaan maken van abonnementen wordt ingevoegd via de laatste knop op de werkbalk van de inhoudeditor die wordt geleverd in de wizard voor levering (zie [Informatie over personalisatie](../../delivery/using/about-personalization.md)). Wanneer de ontvanger op deze koppeling klikt, wordt het profiel toegevoegd aan de lijst van afgewezen personen (opt-out), wat betekent dat deze ontvanger niet langer het doelwit is van een leveringsactie.
 
-Ontvangers kunnen echter besluiten hun abonnement op een service op te zeggen zonder zich af te melden bij alle services. U kunt dit toestaan door een webformulier te gebruiken (zie [deze sectie](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) of een gepersonaliseerde koppeling voor niet-abonnementen in te voegen (zie [Aanpassingsblokken](../../delivery/using/personalization-blocks.md)).
+Ontvangers kunnen echter besluiten hun abonnement op een service op te zeggen zonder zich af te melden bij alle services. Om dit toe te staan, kunt u een Webvorm gebruiken (verwijs naar [deze sectie](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) of een gepersonaliseerde unsubscription verbinding (zie [Persoonlijke blokken](../../delivery/using/personalization-blocks.md)) opnemen.
 
-U kunt het abonnement op een ontvanger ook handmatig opzeggen vanuit het ontvangende profiel. Klik hiertoe op het **[!UICONTROL Subscriptions]** tabblad van de betrokken ontvanger, selecteer de betrokken informatiedienst(en) en klik op **[!UICONTROL Delete]**.
+U kunt het abonnement op een ontvanger ook handmatig opzeggen vanuit het ontvangende profiel. Klik hiertoe op het tabblad **[!UICONTROL Subscriptions]** van de betrokken ontvanger, selecteer de desbetreffende informatieservice(s) en klik op **[!UICONTROL Delete]**.
 
-U kunt de abonnement op een of meer ontvangers opzeggen via de betreffende informatiedienst. Klik hiertoe op het **[!UICONTROL Subscriptions]** tabblad van de service, selecteer de betrokken ontvangers en klik op **[!UICONTROL Delete]**.
+U kunt de abonnement op een of meer ontvangers opzeggen via de betreffende informatiedienst. Klik hiertoe op het tabblad **[!UICONTROL Subscriptions]** van de service, selecteer de betrokken ontvangers en klik op **[!UICONTROL Delete]**.
 
-#### Automatisch uitschakelen {#automatic-unsubscription}
+#### Abonnement automatisch opzeggen {#automatic-unsubscription}
 
-Een informatiedienst kan een beperkte duur hebben. Ontvangers worden automatisch afgemeld wanneer de geldigheidsperiode is verlopen. Deze periode wordt gespecificeerd op het **[!UICONTROL Edit]** lusje van de de diensteigenschappen. Het wordt uitgedrukt in dagen.
+Een informatiedienst kan een beperkte duur hebben. Ontvangers worden automatisch afgemeld wanneer de geldigheidsperiode is verlopen. Deze periode wordt opgegeven op het tabblad **[!UICONTROL Edit]** van de service-eigenschappen. Het wordt uitgedrukt in dagen.
 
 ![](assets/s_ncs_user_services_delay.png)
 
-U kunt ook een workflow zonder abonnement instellen voor een populatie. Hiervoor volgt u dezelfde procedure als voor een abonnementswerkstroom, maar selecteert u de **[!UICONTROL Unsubscription]** optie. Zie [Abonneren een ontvanger aan de dienst](#subscribing-a-recipient-to-a-service).
+U kunt ook een workflow zonder abonnement instellen voor een populatie. Hiervoor volgt u dezelfde procedure als voor een abonnementsworkflow, maar selecteert u de optie **[!UICONTROL Unsubscription]**. Zie [Een ontvanger abonneren op een service](#subscribing-a-recipient-to-a-service).
 
-### Abonnementen bijhouden {#subscriber-tracking}
+### Abonnementstracering {#subscriber-tracking}
 
-U kunt de wijzigingen in abonnementen op de informatieservices bijhouden met de **[!UICONTROL Reports]** koppeling op het dashboard.
+U kunt de wijzigingen in abonnementen op de informatieservices bijhouden met de koppeling **[!UICONTROL Reports]** op het dashboard.
 
 ![](assets/s_ncs_user_services_report.png)
