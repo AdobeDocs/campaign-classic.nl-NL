@@ -17,18 +17,18 @@ ht-degree: 11%
 
 # Stacktracering in Linux{#stack-trace-in-linux}
 
-Een **stapelspoor** vertegenwoordigt een spoor in een **kerntypedossier** . Dit bestand wordt gegenereerd als er een computerfout optreedt. De oorsprong van de fout kan worden geïdentificeerd.
+Een **stackspoor** vertegenwoordigt een spoor in een **core** typedossier. Dit bestand wordt gegenereerd als er een computerfout optreedt. De oorsprong van de fout kan worden geïdentificeerd.
 
 >[!NOTE]
 >
->* Een **kernbestand** krijgt de naam **core.`<num>`**.
->* **gdb - De GNU-foutopsporing** moet op de computer zijn geïnstalleerd.
+>* Een **core**-bestand krijgt de naam **core.`<num>`**.
+>* **gdb - De GNU-** foutopsporing moet op de computer zijn geïnstalleerd.
 
 >
 
 
 
-Technische ondersteuning van Adobe Campaign kan u vragen om deze **stacktracering**. Voer de volgende opdrachten in Linux in om deze te verkrijgen:
+Technische ondersteuning van Adobe Campaign kan u om deze **stacktracering** vragen. Voer de volgende opdrachten in Linux in om deze te verkrijgen:
 
 ```
 su - neolane
