@@ -27,44 +27,44 @@ Voor het instellen van dit gebruiksgeval hebben we de volgende workflow voor doe
 
 Met deze (dagelijkse) workflow worden alle ontvangers geselecteerd die op de huidige datum jarig zijn.
 
-![](assets/do-not-localize/how-to-video.png) Deze manier van werken kan ook worden gevonden in de vorm van een video. For more on this, refer to the [Creating a workflow](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html) video.
+![](assets/do-not-localize/how-to-video.png) Deze manier van werken kan ook worden gevonden in de vorm van een video. Raadpleeg voor meer informatie de [Video over het maken van een workflow](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html).
 
-Hiertoe maakt u een campagne en klikt u op het **[!UICONTROL Targeting and workflows]** tabblad. Raadpleeg voor meer informatie het hoofddoel [Samenstellen in een workflowsectie](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) .
+Hiertoe maakt u een campagne en klikt u op het tabblad **[!UICONTROL Targeting and workflows]**. Raadpleeg voor meer informatie de sectie [Het hoofddoel maken in een workflow](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
 Voer vervolgens de volgende stappen uit:
 
-## Het plannen van het verzenden {#configuring-the-scheduler}
+## Het verzenden {#configuring-the-scheduler} plannen
 
-1. Eerst, voeg een **Planner** toe om het verzenden van de levering in werking te stellen elke dag. In het onderstaande voorbeeld wordt de levering elke dag om 18.00 uur gemaakt.
+1. Voeg eerst een **Planner** toe om het verzenden van de levering elke dag te activeren. In het onderstaande voorbeeld wordt de levering elke dag om 18.00 uur gemaakt.
 
    ![](assets/recur_delivery2.png)
 
 
-## Ontvangers identificeren van wie de verjaardag het is {#identifying-recipients-whose-birthday-it-is}
+## Ontvangers identificeren waarvan de verjaardag {#identifying-recipients-whose-birthday-it-is} is
 
-Na het vormen van de **[!UICONTROL Scheduler]** activiteit zodat het werkschema elke dag begint, identificeer alle ontvangers waarvan geboortedatum de huidige datum evenaart.
+Na het vormen van **[!UICONTROL Scheduler]** activiteit zodat het werkschema elke dag begint, identificeer alle ontvangers de waarvan geboortedatum de huidige datum evenaart.
 
 Hiervoor voert u de volgende stappen uit:
 
-1. Sleep een **[!UICONTROL Query]** activiteit naar de werkstroom en dubbelklik erop.
-1. Klik op de koppeling Query **** bewerken en selecteer **[!UICONTROL Filtering conditions]**.
+1. Sleep een **[!UICONTROL Query]**-activiteit naar de werkstroom en dubbelklik erop.
+1. Klik op de koppeling **Query** bewerken en selecteer **[!UICONTROL Filtering conditions]**.
 
    ![](assets/s_ncs_user_create_exp_exple00.png)
 
-1. Klik op de eerste cel van de **[!UICONTROL Expression]** kolom en klik **[!UICONTROL Edit expression]** om de expressie-editor te openen.
+1. Klik op de eerste cel van de kolom **[!UICONTROL Expression]** en klik **[!UICONTROL Edit expression]** om de expressieeditor te openen.
 
    ![](assets/s_ncs_user_create_exp_exple.png)
 
-1. Klik **[!UICONTROL Advanced selection]** om de filtermodus te selecteren.
+1. Klik **[!UICONTROL Advanced selection]** om de het filtreren wijze te selecteren.
 
    ![](assets/s_ncs_user_create_exp_exple_a.png)
 
 1. Selecteer **[!UICONTROL Edit the formula using an expression]** en klik **[!UICONTROL Next]** om de uitdrukkingsredacteur te tonen.
-1. Dubbelklik in de lijst met functies **[!UICONTROL Day]** op de knop **[!UICONTROL Date]** . Deze functie retourneert het getal dat de dag vertegenwoordigt die overeenkomt met de datum die als parameter is doorgegeven.
+1. Dubbelklik in de lijst met functies op **[!UICONTROL Day]**, die toegankelijk is via het knooppunt **[!UICONTROL Date]**. Deze functie retourneert het getal dat de dag vertegenwoordigt die overeenkomt met de datum die als parameter is doorgegeven.
 
    ![](assets/s_ncs_user_create_exp_exple01.png)
 
-1. Dubbelklik in de lijst met beschikbare velden **[!UICONTROL Birth date]**. In het bovenste gedeelte van de editor wordt dan de volgende formule weergegeven:
+1. Dubbelklik in de lijst met beschikbare velden op **[!UICONTROL Birth date]**. In het bovenste gedeelte van de editor wordt dan de volgende formule weergegeven:
 
    ```
    Day(@birthDate)
@@ -72,13 +72,13 @@ Hiervoor voert u de volgende stappen uit:
 
    Klik **[!UICONTROL Finish]** om te bevestigen.
 
-1. Selecteer in de query-editor in de eerste cel van de **[!UICONTROL Operator]** kolom **[!UICONTROL equal to]**.
+1. In de vraagredacteur, in de eerste cel van de **[!UICONTROL Operator]** kolom, uitgezochte **[!UICONTROL equal to]**.
 
    ![](assets/s_ncs_user_create_exp_exple02.png)
 
-1. Klik vervolgens op de eerste cel van de tweede kolom (**[!UICONTROL Value]**) en klik **[!UICONTROL Edit expression]** om de editor voor de expressie te openen.
-1. Dubbelklik in de lijst met functies **[!UICONTROL Day]** op de knop **[!UICONTROL Date]** .
-1. Dubbelklik op de **[!UICONTROL GetDate]** functie om de huidige datum op te halen.
+1. Klik vervolgens op de eerste cel van de tweede kolom (**[!UICONTROL Value]**) en klik op **[!UICONTROL Edit expression]** om de expressie-editor te openen.
+1. Dubbelklik in de lijst met functies op **[!UICONTROL Day]**, die toegankelijk is via het knooppunt **[!UICONTROL Date]**.
+1. Dubbelklik op de functie **[!UICONTROL GetDate]** om de huidige datum op te halen.
 
    ![](assets/s_ncs_user_create_exp_exple04.png)
 
@@ -90,13 +90,13 @@ Hiervoor voert u de volgende stappen uit:
 
    Klik **[!UICONTROL Finish]** om te bevestigen.
 
-1. Herhaal deze procedure om de geboortemaand van de huidige maand op te halen. Klik hiertoe op de **[!UICONTROL Add]** knop en herhaal stap 3 tot en met 10, waarbij u de waarde vervangt **[!UICONTROL Day]** door **[!UICONTROL Month]**.
+1. Herhaal deze procedure om de geboortemaand van de huidige maand op te halen. Klik hiertoe op de knop **[!UICONTROL Add]** en herhaal stap 3 tot en met 10, waarbij **[!UICONTROL Day]** wordt vervangen door **[!UICONTROL Month]**.
 
    De volledige vraag is als volgt:
 
    ![](assets/s_ncs_user_create_exp_exple03.png)
 
-Koppel het resultaat van de **[!UICONTROL Query]** activiteit aan een **[!UICONTROL Email delivery]** activiteit om een e-mail naar de lijst van al uw ontvangers op hun verjaardag te verzenden.
+Koppel het resultaat van de **[!UICONTROL Query]** activiteit aan **[!UICONTROL Email delivery]** activiteit om een e-mail naar de lijst van al uw ontvangers op hun verjaardag te verzenden.
 
 ## Met inbegrip van ontvangers geboren op 29 februari (facultatief) {#including-recipients-born-on-february-29th--optional-}
 
@@ -112,11 +112,11 @@ Voor het instellen van dit gebruiksgeval hebben we de volgende workflow voor doe
 
 
 
-Als het huidige jaar geen schrikkeljaar **** is en de workflow op 1 maart wordt uitgevoerd, moeten we alle ontvangers selecteren die hun verjaardag gisteren (29 februari) zouden hebben gehad en ze toevoegen aan de lijst met ontvangers. In alle andere gevallen is geen aanvullende actie vereist.
+Als het huidige jaar **geen schrikkeljaar is** en de werkstroom op 1 Maart wordt in werking gesteld, moeten wij alle ontvangers selecteren die hun verjaardag gisteren (29 februari) zouden hebben gehad en hen toevoegen aan de lijst van ontvangers. In alle andere gevallen is geen aanvullende actie vereist.
 
-### Stap 1: De ontvangers selecteren {#step-1--selecting-the-recipients}
+### Stap 1: Ontvangers selecteren {#step-1--selecting-the-recipients}
 
-Na het vormen van de **[!UICONTROL Scheduler]** activiteit zodat het werkschema elke dag begint, identificeer alle ontvangers de waarvan verjaardag de huidige dag is.
+Na het vormen van **[!UICONTROL Scheduler]** activiteit zodat het werkschema elke dag begint, identificeer alle ontvangers de waarvan verjaardag de huidige dag is.
 
 >[!NOTE]
 >
@@ -124,15 +124,15 @@ Na het vormen van de **[!UICONTROL Scheduler]** activiteit zodat het werkschema 
 
 ![](assets/birthday-workflow_usecase_2.png)
 
-Ontvangers selecteren waarvan de verjaardag overeenkomt met de huidige datum, wordt weergegeven in de sectie [Ontvangers identificeren waarvan de verjaardag](#identifying-recipients-whose-birthday-it-is) overeenkomt met de huidige datum.
+Ontvangers selecteren waarvan de verjaardag overeenkomt met de huidige datum, wordt weergegeven in de sectie [Ontvangers identificeren waarvan de verjaardag ](#identifying-recipients-whose-birthday-it-is) is.
 
 ### Stap 2: Selecteer of het een schrikkeljaar is {#step-2--select-whether-or-not-it-is-a-leap-year}
 
-Met deze **[!UICONTROL Test]** activiteit kunt u controleren of het een schrikkeljaar is en of de huidige datum 1 maart is.
+Met de activiteit **[!UICONTROL Test]** kunt u controleren of het een schrikkeljaar is en of de huidige datum 1 maart is.
 
-Als de test wordt geverifieerd (het jaar is geen schrikkeljaar - er is geen 29 februari - en de huidige datum is inderdaad 1 maart), wordt de **[!UICONTROL True]** overgang mogelijk gemaakt en worden de ontvangers die op 29 februari geboren zijn toegevoegd aan de eerste levering van 1 maart. Anders, wordt de **[!UICONTROL False]** overgang toegelaten en slechts zullen de ontvangers die op de huidige datum worden geboren de levering ontvangen.
+Als de test wordt geverifieerd (het jaar is geen schrikkeljaar - er is geen 29 februari - en de huidige datum is inderdaad 1 maart), wordt de overgang **[!UICONTROL True]** ingeschakeld en worden de ontvangers die op 29 februari geboren worden toegevoegd aan de eerste levering van 1 maart. Anders, wordt de **[!UICONTROL False]** overgang toegelaten en slechts zullen de ontvangers die op de huidige datum worden geboren de levering ontvangen.
 
-Kopieer en plak de onderstaande code in de **[!UICONTROL Initialization script]** sectie van het **[!UICONTROL Advanced]** tabblad.
+Kopieer en plak de onderstaande code in de sectie **[!UICONTROL Initialization script]** van het tabblad **[!UICONTROL Advanced]**.
 
 ```
 function isLeapYear(iYear)
@@ -178,7 +178,7 @@ vars.firstOfMarch = 1;
 
 ![](assets/birthday-workflow_usecase_3.png)
 
-Voeg de volgende voorwaarde in de **[!UICONTROL Conditional forks]** sectie toe:
+Voeg de volgende voorwaarde in **[!UICONTROL Conditional forks]** sectie toe:
 
 ```
 vars.currentIsALeapYear == 0 && vars.firstOfMarch == 1
@@ -186,9 +186,9 @@ vars.currentIsALeapYear == 0 && vars.firstOfMarch == 1
 
 ![](assets/birthday-workflow_usecase_4.png)
 
-### Stap 3: Selecteer de ontvangers die op 29 februari zijn geboren {#step-3--select-any-recipients-born-on-february-29th}
+### Stap 3: Selecteer ontvangers die op 29 februari {#step-3--select-any-recipients-born-on-february-29th} zijn geboren
 
-Maak een **[!UICONTROL Fork]** activiteit en koppel een van de uitgaande overgangen aan een **[!UICONTROL Query]** activiteit.
+Maak een **[!UICONTROL Fork]**-activiteit en koppel een van de uitgaande overgangen aan een **[!UICONTROL Query]**-activiteit.
 
 Selecteer in deze query alle ontvangers waarvan de geboortedatum 29 februari is.
 
@@ -196,16 +196,16 @@ Selecteer in deze query alle ontvangers waarvan de geboortedatum 29 februari is.
 
 Combineer de resultaten met een **[!UICONTROL Union]** activiteit.
 
-Koppel de resultaten van de twee **[!UICONTROL Test]** activiteitfilialen aan een **[!UICONTROL Email delivery]** activiteit om een e-mail naar de lijst van al uw ontvangers op hun verjaardag te verzenden, zelfs aan die geboren op 29 februari tijdens een niet-schrikkeljaar.
+Koppel de resultaten van de twee **[!UICONTROL Test]** activiteitsvertakkingen aan een **[!UICONTROL Email delivery]** activiteit om een e-mail naar de lijst van al uw ontvangers op hun verjaardag te verzenden, zelfs aan die op 29 februari tijdens een niet-schrikkeljaar geboren.
 
-## Een terugkerende levering maken {#creating-a-recurring-delivery-in-a-targeting-workflow}
+## Een terugkerende levering {#creating-a-recurring-delivery-in-a-targeting-workflow} maken
 
-Voeg een **Terugkomende leveringsactiviteit** toe die op het malplaatje wordt gebaseerd van de verjaardags e-mail dat u wilt verzenden.
+Voeg een **Terugkerende levering** activiteit toe die op het malplaatje wordt gebaseerd van verjaardags e-mail dat u wilt verzenden.
 
 >[!CAUTION]
 >
->Om de workflows uit te voeren, moeten de technische workflows met betrekking tot het campagneproces worden gestart. For more on this, refer to the [List of campaign process workflows](../../workflow/using/campaign.md) section.
+>Om de workflows uit te voeren, moeten de technische workflows met betrekking tot het campagneproces worden gestart. Raadpleeg voor meer informatie de sectie [Lijst met workflows voor campagneprocessen](../../workflow/using/campaign.md).
 >
->Als de goedkeuringsstappen voor de campagne zijn ingeschakeld, worden de leveringen pas verzonden nadat deze stappen zijn bevestigd. Raadpleeg voor meer informatie de [sectie De processen kiezen die moeten worden goedgekeurd](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved) .
+>Als de goedkeuringsstappen voor de campagne zijn ingeschakeld, worden de leveringen pas verzonden nadat deze stappen zijn bevestigd. Raadpleeg voor meer informatie de sectie [De processen kiezen die moeten worden goedgekeurd](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved).
 
 ![](assets/birthday-workflow_usecase_1.png)
