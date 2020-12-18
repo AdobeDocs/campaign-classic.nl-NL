@@ -17,15 +17,15 @@ ht-degree: 3%
 
 # Personalisatiedata{#personalization-data}
 
-Het is mogelijk om gegevens in het berichtmalplaatje te gebruiken om transactionele berichtverpersoonlijking te testen. Deze functie wordt gebruikt om een voorvertoning te genereren of een proefdruk te verzenden. Als u de module **Leverbaarheid** installeert, kunt u met deze gegevens een weergave van de berichten weergeven voor verschillende providers van internettoegang (**Inbox-rendering**: zie voor meer informatie [deze sectie](../../delivery/using/inbox-rendering.md)).
+Het is mogelijk om gegevens in het berichtmalplaatje te gebruiken om transactionele berichtverpersoonlijking te testen. Deze functie wordt gebruikt om een voorvertoning te genereren of een proefdruk te verzenden. Als u de **Deliverability** module installeert, staat dit gegeven u toe om een teruggave van de berichten voor diverse leveranciers van de internettoegang (**Inbox teruggeven**: Zie [deze sectie](../../delivery/using/inbox-rendering.md)) voor meer informatie hierover.
 
 Het doel van deze gegevens is om uw berichten vóór hun definitieve levering te testen. Deze berichten vallen niet samen met werkelijke gegevens die door Message Center moeten worden verwerkt. De XML-structuur moet echter gelijk zijn aan die van de gebeurtenis die in de uitvoeringsinstantie is opgeslagen, zoals hieronder wordt weergegeven.
 
 ![](assets/messagecenter_create_custo_006.png)
 
-Met deze informatie kunt u de inhoud van berichten personaliseren met personalisatietags (zie [Berichtinhoud](../../message-center/using/creating-message-content.md)maken voor meer informatie).
+Deze informatie laat u toe om berichtinhoud te personaliseren gebruikend verpersoonlijkingsmarkeringen (voor meer op dit, verwijs naar [het Creëren van berichtinhoud](../../message-center/using/creating-message-content.md)).
 
-1. Klik in de berichtsjabloon op de **[!UICONTROL Seed addresses]** tab.
+1. Klik in de berichtsjabloon op het tabblad **[!UICONTROL Seed addresses]**.
 1. Voer in de inhoud van de gebeurtenis de testinformatie in XML-indeling in.
 
    ![](assets/messagecenter_create_custo_001.png)
