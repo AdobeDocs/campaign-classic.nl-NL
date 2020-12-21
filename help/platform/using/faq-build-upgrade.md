@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '2020'
+source-wordcount: '2017'
 ht-degree: 2%
 
 ---
@@ -136,7 +136,7 @@ Ja. Klanten dienen Adobe een contactpunt te bieden dat beschikbaar is tijdens of
 
 ## Moet ik de clientconsole bijwerken?
 
-Ja. De cliëntconsole moet op de zelfde bouwstijl of nieuwere bouwstijl zoals de serverinstantie zijn. Zodra de verbetering is voltooid, zou uw cliëntconsole u moeten ertoe aanzetten om aan recentste bouwstijl te bevorderen om ervoor te zorgen dat het gericht op de server bouwt blijft.
+Ja. De cliëntconsole moet op de zelfde bouwstijl zoals de serverinstantie zijn. Zodra de verbetering is voltooid, zou uw cliëntconsole u moeten ertoe aanzetten om aan recentste bouwstijl te bevorderen om ervoor te zorgen dat het gericht op de server bouwt blijft.
 
 ## Wat is het terugdraaiplan? Worden back-ups van mijn gegevens bewaard?
 
