@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2368'
 ht-degree: 0%
 
 ---
@@ -204,12 +204,13 @@ De volgende diensten moeten opnieuw worden opgestart:
 
 ### Update voor clientconsoles
 
+De cliëntconsole moet op de zelfde bouwstijl zoals de serverinstantie zijn.
+
 Download en kopieer het bestand op de computer waarop de Adobe Campaign-toepassingsserver is geïnstalleerd (nlserverweb):
 
 ```
 Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 ```
-
 
 De volgende keer dat clientconsoles worden aangesloten, wordt gebruikers in een venster geïnformeerd over de beschikbaarheid van een nieuwe update en kunnen ze deze downloaden en installeren.
 
