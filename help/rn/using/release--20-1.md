@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 6%
@@ -17,19 +17,19 @@ ht-degree: 6%
 
 # Release 20.1{#release-20-1}
 
-## ![](assets/do-not-localize/orange_2.png) Release 20.1.3 - build 9124{#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/red_2.png) Release 20.1.3 - build 9124{#release-20-1-3-build-9124}
 
 _6 mei 2020_
 
 * Probleem verholpen met de activiteit **Bestand overdragen** waardoor verificatie op basis van SFTP-sleutels niet kon werken op Debian 9. (NEO-23183)
 
-## ![](assets/do-not-localize/orange_2.png) Release 20.1.2 - build 9123{#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/red_2.png) Release 20.1.2 - build 9123{#release-20-1-2-build-9123}
 
 _13 maart 2020_
 
 * Probleem verholpen waarbij implementatie van versies op Red Hat 7-servers werd voorkomen. (NEO-23332)
 
-## ![](assets/do-not-localize/orange_2.png) Release 20.1 - build 9122{#release-20-1-build-9122}
+## ![](assets/do-not-localize/red_2.png) Release 20.1 - build 9122{#release-20-1-build-9122}
 
 _17 februari 2020_
 
