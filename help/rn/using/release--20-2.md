@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 9cf995fe58b6afd89ee54724c97681f39994eba9
+source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
 workflow-type: tm+mt
 source-wordcount: '2201'
 ht-degree: 100%
@@ -32,7 +32,7 @@ _11 september 2020_
 * Oplossing voor een regressie tijdens een post-upgrade die een onjuiste start van nlserver (foutenlogboeken) veroorzaakte.
 * Het updatebeheer voor gedeeld geheugen is verbeterd. De extra stappen die zijn vereist in 20.2, zijn niet meer nodig.
 
-## ![](assets/do-not-localize/orange_2.png) Release 20.2.2 - build 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/red_2.png) Release 20.2.2 - build 9180 {#release-20-2-2-build-9180}
 
 _woensdag 22 juli 2020_
 
@@ -57,7 +57,7 @@ _woensdag 22 juli 2020_
 
 ![](assets/do-not-localize/cp-icon.png) **Release van nieuw configuratiescherm in juni** met controle van actieve profielen, controle van de leverbaarheid van subdomeinen en beheer van GPG-sleutels. [Meer informatie](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/orange_2.png) Release 20.2.1 - build 9178 {#release-20-2-1-build-9178}
+## ![](assets/do-not-localize/red_2.png) Release 20.2.1 - build 9178 {#release-20-2-1-build-9178}
 
 _8 juni 2020_
 
