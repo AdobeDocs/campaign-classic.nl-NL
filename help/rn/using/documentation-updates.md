@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '3660'
-ht-degree: 99%
+source-wordcount: '3668'
+ht-degree: 98%
 
 ---
 
@@ -26,6 +26,8 @@ U kunt ook de [Adobe Campaign Classic-release-opmerkingen](../../rn/using/latest
 De rubriek &quot;monitoring van de levering&quot; is gereorganiseerd in thematische onderwerpen. [Meer informatie](../../delivery/using/about-delivery-monitoring.md)
 
 Een gebruiksgeval is toegevoegd op hoe te om IP van afzenders adressen aan de leveringslogboeken toe te voegen. [Meer informatie](../../delivery/using/delivery-dashboard.md#use-case)
+
+De veelgestelde vragen over privacy zijn verplaatst naar [deze sectie](../../platform/using/privacy-faq.md).
 
 ## November 2020 {#nov-2020}
 
