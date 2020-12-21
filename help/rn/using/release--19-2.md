@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
 workflow-type: tm+mt
 source-wordcount: '1317'
 ht-degree: 8%
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # Release 19.2{#release-19-2}
 
-## ![](assets/do-not-localize/orange_2.png) Release 19.2.3 - build 9081 {#release-19-2-3-build-9081}
+## ![](assets/do-not-localize/red_2.png) Release 19.2.3 - build 9081 {#release-19-2-3-build-9081}
 
 _7 februari 2020_
 
@@ -26,7 +26,7 @@ _7 februari 2020_
 * Probleem met regressie verholpen als gevolg van de implementatie van SSL-certificering, waardoor de gebruikersverbinding op de Windows-server is mislukt. (NEO-20629)
 * Probleem verholpen waarbij een onjuist versietnummer werd weergegeven in het menu **Info**.
 
-## ![](assets/do-not-localize/orange_2.png) Release 19.2 - build 9080 {#release-19-2-build-9080}
+## ![](assets/do-not-localize/red_2.png) Release 19.2 - build 9080 {#release-19-2-build-9080}
 
 _2 december 2019_
 
