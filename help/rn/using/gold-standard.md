@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: f9584342d81b53ad5854b30b7c4970b0aba6d4ff
+source-git-commit: e4cdeddaeb19f3ab7d601343d2a2c91f1c27822b
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 100%
@@ -78,7 +78,7 @@ De build 9032@3a9dc9c bevat de volgende oplossingen:
 * Oplossing voor een regressie die ertoe leidde dat de opschoningsworkflow vastliep.
 * Oplossing voor een kleine regressie in de logboeken van de opschoningsworkflow.
 
-## ![](assets/do-not-localize/orange_2.png) De Gold Standard 6-release{#gs-6}
+## ![](assets/do-not-localize/red_2.png) De Gold Standard 6-release{#gs-6}
 
 _9 maart 2020_
 
@@ -86,7 +86,7 @@ De build 9032@19f73c5 bevat de volgende oplossing:
 
 * Probleem met externe accounts met FTP via SSL opgelost. (NEO-20498)
 
-## ![](assets/do-not-localize/orange_2.png) De Gold Standard 5-release{#gs-5}
+## ![](assets/do-not-localize/red_2.png) De Gold Standard 5-release{#gs-5}
 
 _17 december 2019_
 
@@ -94,7 +94,7 @@ De build 9032@d6b8062 bevat de volgende oplossing:
 
 * Er is een trackingprobleem verholpen op de volgende communicatiekanalen: mobiel (sms, mms), push (iOS, Android) en sociale netwerken (Facebook, Twitter). (NEO-19595)
 
-## ![](assets/do-not-localize/orange_2.png) De Gold Standard 4-release{#gs-4}
+## ![](assets/do-not-localize/red_2.png) De Gold Standard 4-release{#gs-4}
 
 _11 december 2019_
 
@@ -102,7 +102,7 @@ De build 9032@bc4a935 bevat de volgende oplossing:
 
 * Er is een prestatieprobleem verholpen met het verzenden van berichten met een MSSQL-database. (NEO-17558)
 
-## ![](assets/do-not-localize/orange_2.png) De Gold Standard 3-release{#gs-3}
+## ![](assets/do-not-localize/red_2.png) De Gold Standard 3-release{#gs-3}
 
 _20 november 2019_
 
