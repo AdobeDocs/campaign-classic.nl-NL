@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 99%
+source-wordcount: '809'
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ Dit zijn een paar veelgestelde vragen over privacy en toestemming bij het gebrui
 
 ## Belangrijke termen {#key-terms}
 
-**Wat zijn de belangrijkste termen in verband met privacy?**
+### Wat zijn de belangrijkste termen in verband met privacy?
 
 De onderstaande items zijn gekoppeld aan de belangrijkste termen en begrippen in verband met privacy en toestemming in Adobe Campaign:
 
@@ -32,7 +32,7 @@ De onderstaande items zijn gekoppeld aan de belangrijkste termen en begrippen in
 
 ## Gereedheid voor privacywetgeving {#privacy-regulations-readiness}
 
-**Wat stelt Adobe Campaign voor om te voldoen aan de nieuwste privacyregels?**
+### Wat stelt Adobe Campaign voor om te voldoen aan de nieuwste privacyregels?
 
 Adobe geeft geen juridisch advies. U kunt het beste samenwerken met uw eigen juridisch adviseurs om ervoor te zorgen dat alle noodzakelijke stappen worden gezet in de aanloop naar gereedheid voor de AVG, CCPA, PDPA, LGPD of andere toepasselijke wetgeving.
 
@@ -68,7 +68,7 @@ Adobe geeft geen juridisch advies. U kunt het beste samenwerken met uw eigen jur
 
 ## Gebruikersbetrokkenheid behouden {#preserve-user-engagement}
 
-**Hoe kunnen gegevenscontrollers toestemming krijgen met minimale gevolgen voor gebruikersbetrokkenheid?**
+### Hoe kunnen gegevenscontrollers toestemming krijgen met minimale gevolgen voor gebruikersbetrokkenheid?
 
 In gevallen waarin voor bepaalde marketingactiviteiten toestemming nodig is, moet de toestemming van de consument actief zijn (d.w.z. geen stilzwijgende toestemming of van tevoren geselecteerde vakjes). De toestemming mag niet gebundeld zijn en ook geen voorwaarde zijn voor het aanbieden van de services.
 
@@ -78,7 +78,7 @@ In plaats van deze strengere toestemmingsvereisten als een risico te zien voor h
 
 ## Toestemming beheren {#manage-consent}
 
-**Hoe kunnen gegevenscontrollers in Adobe Campaign toestemming beheren?**
+### Hoe kunnen gegevenscontrollers in Adobe Campaign toestemming beheren?
 
 Adobe Campaign biedt al mogelijkheden om op meer niveaus dan de meeste marketeers toestemming te beheren via aangepaste gegevensvelden of via een of meer services.
 
@@ -88,7 +88,7 @@ Dat kan bijvoorbeeld door het gegevensmodel in Adobe Campaign zodanig uit te bre
 
 ## Gegevensverwijdering {#data-deletion}
 
-**Welke gegevens kunnen gegevenscontrollers in Adobe Campaign verwijderen als reactie op een klantverzoek van een betrokkene?**
+### Welke gegevens kunnen gegevenscontrollers in Adobe Campaign verwijderen als reactie op een klantverzoek van een betrokkene?
 
 Alle gegevens die aan de betrokkene zijn gekoppeld, worden verwijderd, inclusief ingebouwde en aangepaste tabellen.
 
@@ -96,19 +96,21 @@ Technisch gezien worden alle gegevens verwijderd die met `integrity="own"` aan d
 
 Als gegevenscontroller kunt u dit aanpassen door de integriteit te wijzigen van koppelingen die in de gegevensplanningen zijn gedefinieerd (bijvoorbeeld als u een zakelijke rechtvaardiging hebt om bepaalde gegevens niet te verwijderen).
 
-**Welke invloed heeft het verwijderen van verzendings- en trackinglogs op rapporten?**
+### Welke invloed heeft het verwijderen van verzendings- en trackinglogs op rapporten?
 
 Rapporten in Adobe Campaign zijn gebaseerd op indicatoren die worden berekend aan de hand van samengevoegde gegevens uit verzendings- en trackinglogs. Daardoor zou de verwijdering van individuele logboeken geen invloed moeten hebben op de cijfers die in de rapporten worden weergegeven.
 
 ## Gegevens opnieuw importeren {#re-import-data}
 
-**In Adobe Campaign worden records vaak geüpload vanuit een externe gegevensbron. Moet ik er rekening mee houden dat gegevens op een later tijdstip opnieuw kunnen worden geïmporteerd?**
+### Moet ik er rekening mee houden dat gegevens op een later tijdstip opnieuw kunnen worden geïmporteerd?
+
+In Adobe Campaign worden records vaak geüpload vanuit een externe gegevensbron.
 
 Als gegevenscontroller moet u ervoor zorgen dat u, wanneer u een verwijderingsverzoek ontvangt, alle noodzakelijke gegevens over de betrokkene van al uw systemen verwijdert.
 
 ## Opnieuw aanmelden {#opt-in-again}
 
-**Kan een betrokkene van wie de gegevens uit Adobe Campaign zijn gewist, zich later opnieuw aanmelden?**
+**Kan een betrokkene, wiens gegevens uit Adobe Campaign zijn gewist, zich later opnieuw aanmelden?**
 
 Een betrokkene kan zich opnieuw aanmelden of als nieuwe ontvanger worden toegevoegd nadat zijn of haar gegevens uit Adobe Campaign zijn gewist.
 
