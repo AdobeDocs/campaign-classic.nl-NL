@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '191'
 ht-degree: 1%
 
 ---
@@ -35,6 +35,10 @@ Adobe Campaign is gebaseerd op verschillende processen die aan de serverzijde wo
 * Toepassingsserver (extern web)
 * Leveringsserver (nlserver mta)
 * Redirection-server (webmdl)
+
+>[!CAUTION]
+>
+>De cliëntconsole zou op de zelfde bouwstijl moeten zijn zoals de serverinstantie.
 
 >[!NOTE]
 >
