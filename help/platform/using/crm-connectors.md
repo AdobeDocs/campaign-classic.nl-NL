@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: c511c1ac4b9fccff30f73fcfd0db650d860514d2
 workflow-type: tm+mt
 source-wordcount: '2539'
 ht-degree: 4%
@@ -186,13 +186,13 @@ Om de schakelaar van de Dynamiek van Microsoft te vormen om met Adobe Campaign t
 
    Adobe Campaign Classic steunt de Dynamica 365 REST interface met het protocol OAuth voor authentificatie.
 
-   Als u een **[!UICONTROL WebAPI]** plaatsing selecteert, moet u een app op Azure Folder registreren en **clientId** van de Azure Folder krijgen. Deze registratie wordt beschreven in [deze pagina](https://docs.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/mt622431(v=crm.8)?redirectedfrom=MSDN).
+   Als u een **[!UICONTROL WebAPI]** plaatsing selecteert, moet u een app op Azure Folder registreren en **clientId** van de Azure Folder krijgen. Deze registratie wordt beschreven in [deze pagina](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
 
    >[!NOTE]
    >
    >Adobe Campaign Classic vereist de parameter redirectURL niet.
 
-   De waarde **clientId** wordt gebruikt met de gebruikersnaam/het wachtwoord om toonder token op te halen met het wachtwoord voor het type gift. Dit wordt genoemd **De Verantwoordelijkheden van het Wachtwoord van de Eigenaar van het Middel Grant**. Raadpleeg [deze pagina](https://blogs.msdn.microsoft.com/wushuai/2016/09/25/resource-owner-password-credentials-grant-in-azure-ad-oauth/) voor meer informatie.
+   De waarde **clientId** wordt gebruikt met de gebruikersnaam/het wachtwoord om toonder token op te halen met het wachtwoord voor het type gift. Dit wordt genoemd **De Verantwoordelijkheden van het Wachtwoord van de Eigenaar van het Middel Grant**. Raadpleeg [deze pagina](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc) voor meer informatie.
 
    ![](assets/crm_connectors_msdynamics_01_3.png)
 
