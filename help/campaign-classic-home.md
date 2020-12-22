@@ -5,10 +5,10 @@ product: campaign
 title: Adobe Campaign Classic-productdocumentatie
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 588e1e465eb5ba06f3a7310f70fe958ec2ec334f
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 70%
+source-wordcount: '255'
+ht-degree: 66%
 
 ---
 
@@ -19,17 +19,16 @@ ht-degree: 70%
 
 ## Nieuwe functies
 
-* **[De Adobe Experience Cloud Triggers-integratie](integrations/using/configuring-adobe-io.md)**<br/> bijwerken De service voor oudere Auth-verificatie heeft het einde van de levensduur bereikt. Leer hoe u naar Adobe I/O migreert
+* **[Onjuiste harde ](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> grenzen verwijderenLeer hoe u onjuiste harde grenzen kunt bijwerken na Gmail-uitgang
 
-* **[Ga naar API](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/> voor op HTTP/2 gebaseerde APNs-providers Leer hoe u van het oude binaire protocol naar de op HTTP/2 gebaseerde API voor APNs-providers kunt migreren
+* **[Werk uw Adobe Experience Cloud Triggers-](integrations/using/configuring-adobe-io.md)**<br/> integratie bij. De verouderde Auth-verificatieservice heeft het einde van de levensduur bereikt. Meer informatie over migreren naar Adobe I/O
 
-* **[emoticons toevoegen aan uw berichten](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/> U kunt nu emoticons invoegen in berichten en onderwerpregel
+* **[Ga naar de op HTTP/2 gebaseerde APNs-provider ](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/> APILearn om te migreren van het oude binaire protocol naar de op HTTP/2 gebaseerde API voor de APNs-provider
+
+* **[emoticons toevoegen aan uw ](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/> berichtenU kunt nu emoticons invoegen in berichten en onderwerpregel
 
 * **[Ondersteuning krijgen](https://helpx.adobe.com/nl/campaign/kb/ac-support.html)**<br/>
 Krijg toegang tot veelgestelde vragen, best practices en Help-resources en vraag hulp
-
-* **[Trackingmogelijkheden](https://helpx.adobe.com/nl/campaign/kb/acc-tracking.html)**<br/>
-Begrijp de mogelijkheden en processen voor tracking in Campaign
 
 [Meer updates](/help/rn/using/documentation-updates.md)
 
@@ -84,7 +83,7 @@ Begrijp de mogelijkheden en processen voor tracking in Campaign
 | Nuttige pagina’s | Resources voor ontwikkelaars |
 |---|---|
 | [Release-opmerkingen](/help/rn/using/latest-release.md) | [Lijst met foutberichten](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
-| [Instructievideo’s](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html) | [Campaign-datamodel](configuration/using/about-data-model.md) |
+| [Instructievideo’s](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) | [Campaign-datamodel](configuration/using/about-data-model.md) |
 | [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md) | [Campaign-JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [Aan de slag met Campaign](platform/using/about-adobe-campaign-classic.md) | [Implementatiehandleiding](https://helpx.adobe.com/nl/campaign/kb/acc-implementation.html) |
 | [Gold Standard-upgrade](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html) | [Handleiding voor tracking](https://helpx.adobe.com/nl/campaign/kb/acc-tracking.html) |
