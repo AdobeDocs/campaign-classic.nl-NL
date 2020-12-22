@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
-source-wordcount: '2925'
+source-wordcount: '2926'
 ht-degree: 1%
 
 ---
@@ -281,7 +281,7 @@ Zodra alle goedkeuringen zijn verleend, verandert de leveringsstatus in **[!UICO
 
 >[!NOTE]
 >
->De technische workflows met betrekking tot campagneprocessen worden weergegeven in [Lijst met workflows voor campagneprocessen](../../workflow/using/campaign.md).
+>De technische workflows met betrekking tot het campagnepakket worden weergegeven in [Lijst van technische workflows](../../workflow/using/about-technical-workflows.md).
 
 **Stap 1 - Goedkeuring van bestanden**
 
