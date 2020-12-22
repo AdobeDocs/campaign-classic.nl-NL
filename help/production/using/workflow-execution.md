@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 3%
@@ -32,7 +32,7 @@ In sommige gevallen, beginnen de werkschema&#39;s die van een campagne worden ui
 
 Dit probleem kan verschillende oorzaken hebben: volg de onderstaande stappen om het op te lossen:
 
-1. Controleer de status van de [**[!UICONTROL operationMgt]**](../../workflow/using/campaign.md) technische workflow. Deze workflow beheert taken of workflows in een campagne. Als dit mislukt, worden workflows niet gestart of gestopt. Start de toepassing opnieuw om de workflows voor de campagne te hervatten.
+1. Controleer de status van de [**[!UICONTROL operationMgt]**](../../workflow/using/about-technical-workflows.md) technische workflow. Deze workflow beheert taken of workflows in een campagne. Als dit mislukt, worden workflows niet gestart of gestopt. Start de toepassing opnieuw om de workflows voor de campagne te hervatten.
 
    Raadpleeg [deze pagina](../../workflow/using/monitoring-technical-workflows.md) voor meer informatie over technische workflows.
 
