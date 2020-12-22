@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '755'
 ht-degree: 5%
 
 ---
@@ -54,7 +54,7 @@ U kunt het toepassingsgedrag bepalen voor wanneer de gebruiker het bericht activ
 >* Waarschuwing: in sommige landen vereist de wet dat u de gebruikers informeert over uw verzamelde datatype mobiele toepassingen en het doel van hun verwerking . U moet de wetgeving controleren.
 
 
-Met de **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt)-workflow worden abonnementen op mobiele apparaten bijgewerkt. Raadpleeg de [Workflows-handleiding](../../workflow/using/mobile-app-channel.md) voor meer informatie over deze workflow.
+Met de **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt)-workflow worden abonnementen op mobiele apparaten bijgewerkt. Raadpleeg de [lijst met technische workflows](../../workflow/using/about-technical-workflows.md) voor meer informatie over deze workflow.
 
 Adobe Campaign is compatibel met zowel binaire als HTTP/2 APNs. Raadpleeg de sectie [Een mobiele toepassing configureren in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) voor meer informatie over de configuratiestappen.
 
