@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: b1d75ff748bab08b45c55621b63e7565564e113d
 workflow-type: tm+mt
-source-wordcount: '3668'
-ht-degree: 98%
+source-wordcount: '3729'
+ht-degree: 97%
 
 ---
 
@@ -28,6 +28,12 @@ De rubriek &quot;monitoring van de levering&quot; is gereorganiseerd in thematis
 Een gebruiksgeval is toegevoegd op hoe te om IP van afzenders adressen aan de leveringslogboeken toe te voegen. [Meer informatie](../../delivery/using/delivery-dashboard.md#use-case)
 
 De veelgestelde vragen over privacy zijn verplaatst naar [deze sectie](../../platform/using/privacy-faq.md).
+
+Er is een gebruiksscenario toegevoegd voor het gebruik van de samenvoegfunctie van Deduplication activity. [Meer informatie](../../workflow/using/deduplication-merge.md)
+
+Het de schakelaarprotocol en montagespagina van SMS zijn verplaatst [hier](../../delivery/using/sms-protocol.md).
+
+Er is een notitie toegevoegd aan de sectie Transactieberichten om te waarschuwen dat de gebeurtenismappen niet moeten worden ingesteld als weergaven van de uitvoeringsinstanties om problemen met toegangsrechten te voorkomen. [Meer informatie](../../message-center/using/event-collection.md)
 
 ## November 2020 {#nov-2020}
 
