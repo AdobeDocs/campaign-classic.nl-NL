@@ -2,22 +2,26 @@
 solution: Campaign Classic
 product: campaign
 title: Technische workflows
-description: Lijst met technische workflows voor campagnes
+description: Meer informatie over de technische workflows die beschikbaar zijn bij Campaign Classic-pakketten.
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3f2e984f85e517777751e3c36dc96437eefb3010
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 35%
+source-wordcount: '1839'
+ht-degree: 5%
 
 ---
 
 
 # Technische workflows{#about-technical-workflows}
 
-De workflows die in deze sectie worden beschreven, worden geïnstalleerd met de verschillende ingebouwde Adobe Campaign-pakketten. Deze pakketten en de bijbehorende technische workflows zijn afhankelijk van uw licentieovereenkomst. Deze bestanden zijn standaard beschikbaar in een submap van het volgende knooppunt: **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
+## Technische workflows {#overview}
+
+De workflows die in deze sectie worden beschreven, worden geïnstalleerd met de verschillende ingebouwde Adobe Campaign-pakketten. Deze pakketten en de bijbehorende technische workflows zijn afhankelijk van uw licentieovereenkomst. Ingebouwde pakketten worden beschreven in [deze sectie](../../installation/using/installing-campaign-standard-packages.md).
+
+Standaard zijn technische workflows beschikbaar in een submap van het volgende knooppunt: **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
 >[!NOTE]
 >
@@ -25,23 +29,55 @@ De workflows die in deze sectie worden beschreven, worden geïnstalleerd met de 
 
 Raadpleeg de [specifieke sectie](../../workflow/using/monitoring-technical-workflows.md) voor meer informatie over het bewaken van technische workflows.
 
-Dit deel bevat informatie over technische werkstromen die betrekking hebben op de volgende pakketten:
+## Lijst met technische workflows{#list-technical-workflows}
 
-* [Leveringen](../../workflow/using/deliveries.md)
-* [Campaign](../../workflow/using/campaign.md)
-* [Web Analytics](../../workflow/using/web-analytics.md)
-* [Gedistribueerde marketing](../../workflow/using/distributed-marketing.md)
-* [Leverbaarheidscontrole (e-mailleverbaarheid)](../../workflow/using/email-deliverability.md)
-* [Inbox Rendering (IR)](../../workflow/using/inbox-rendering.md)
-* [Interaction](../../workflow/using/interaction.md)
-* [Controle van de aanbiedingsengine](../../workflow/using/control-of-offer-engine.md)
-* [Berichtencentrum (controle)](../../workflow/using/message-center--control-.md)
-* [Berichtencentrum (uitvoering)](../../workflow/using/message-center--execution-.md)
-* [Kanaal voor mobiele apps](../../workflow/using/mobile-app-channel.md)
-* [LINE-kanaal](../../workflow/using/line-channel.md)
-* [Marketingresources (MRM)](../../workflow/using/marketing-resources--mrm-.md)
-* [Social marketing](../../workflow/using/social-marketing.md)
-* [Integraties met Adobe Experience Cloud-oplossingen](../../workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
-* [Verordening inzake bescherming van privacydata](../../workflow/using/general-data-protection-regulation--gdpr-.md)
-* [Overdracht naar midsourcing](../../workflow/using/transfer-to-mid-sourcing.md)
-* [Midsourcingplatform](../../workflow/using/mid-sourcing-platform.md)
+| Technische workflow | Pakket | Beschrijving |
+|------|--------|-----------|
+| **Alias Cleansing**  (aliasCleansing) | Levering | Deze werkstroom normaliseert opsommingswaarden. Deze wordt standaard elke dag om 3 uur geactiveerd. |
+| **Facturering**  (facturering) | Levering | Deze workflow stuurt het systeemactiviteitenrapport per e-mail naar de &#39;factureringsoperator&#39;. Deze wordt standaard geactiveerd op de 25e van elke maand. |
+| **Berekening van Twitter-statistieken**  (statsTwitter) | Sociale netwerken (sociale marketing) | Deze workflow berekent statistieken over retweets en bezoeken op Twitter. |
+| **Campagnebanen**  (operationMgt) | Marketingcampagnes (Campagne) | In deze workflow worden de taken voor marketingcampagnes beheerd (starttaken, bestanden uitpakken, enz.). Het leidt ook tot werkschema&#39;s met betrekking tot terugkomende en periodieke campagnes. |
+| **Verzamel privacyverzoeken**  (collectPrivacyRequests) | Verordening inzake bescherming van privacydata | Met deze workflow worden de gegevens van de ontvanger gegenereerd die in Adobe Campaign zijn opgeslagen en kunnen deze worden gedownload op het scherm van de privacyaanvraag. |
+| **Kostenberekening**  (budgetMgt) | Marketingcampagnes (Campagne) | Deze workflow start de berekening van kosten en kostenposten voor de begrotingen, plannen, programma&#39;s, campagnes, leveringen en taken. |
+| **Database opschonen**  (opschonen) | Levering | Deze workflow is de workflow voor databaseonderhoud: het maakt verschillende berekeningen van de statistieken en de processen, en schrapt verouderde gegevens van het gegevensbestand volgens de bepaalde configuratie in de plaatsingsmedewerker. Het wordt teweeggebracht elke dag om 4am door gebrek. Raadpleeg [deze sectie](../../production/using/database-cleanup-workflow.md#monitoring-campaign-classic) voor meer informatie. |
+| **Geblokkeerde lijngebruikers**  verwijderen (deleteBlockedLineUsersV2) | LINE-kanaal | Deze workflow zorgt ervoor dat de gegevens van de gebruikers van de LIJN V2 worden verwijderd nadat ze de officiële account van de LIJN gedurende 180 dagen hebben geblokkeerd. |
+| **Gegevens**  uit privacyverzoeken verwijderen (deletePrivacyRequestsData) | Verordening inzake bescherming van privacydata | Deze workflow verwijdert de gegevens die de ontvanger in Adobe Campaign heeft opgeslagen. |
+| **Leveringsindicatoren**  (leveringsindicatoren) | Midsourcingplatform | Deze werkstroom werkt leveringsvolgindicatoren voor een levering bij. Deze workflow wordt standaard elke uur geactiveerd. |
+| **Discussieforumprocessen**  (newsgroupMgt) | Marketing resources (MRM) | Deze workflow beheert de levering van meldingen van discussieforums. Deze gebeurtenis wordt geactiveerd wanneer een goedkeuringssignaal wordt ontvangen |
+| **Distributed marketing processes**  (centralLocalMgt) | Centrale/lokale Marketing (Distributed Marketing) | Deze workflow begint met het verwerken van de gedistribueerde marketingmodule. Het lanceert de verwezenlijking van lokale campagnes en beheert berichten met betrekking tot orden en campagnepakketbeschikbaarheid. |
+| **Gebeurtenispurge** (webAnalyticsPurgeWebEvents) | Webanalytische connectors | Met deze workflow kunt u elke gebeurtenis uit het databaseveld verwijderen op basis van de periode die is geconfigureerd in het veld Lifespan. |
+| **Soorten publiek exporteren naar de Adobe Experience Cloud**  (exportSharedAudience) | Integratie met Adobe Experience Cloud | Deze workflow exporteert soorten publiek als gedeeld publiek/segmenten. Deze doelgroepen kunnen worden gebruikt in de verschillende Adobe Experience Cloud-oplossingen die u gebruikt. |
+| **Prognosering**  (prognose) | Levering | Deze workflow analyseert leveringen die zijn opgeslagen in de voorlopige kalender (maakt voorlopige logbestanden). Het wordt teweeggebracht elke dag bij 1am door gebrek. |
+| **Volledige geaggregeerde berekening (propositionrcp kube)** (agg_nmspropositionrcp_full) | Aanbiedingsengine (interactie) | Deze workflow werkt het volledige aggregaat voor de keuzelijst met voorstellen van aanbiedingen bij. Het wordt teweeggebracht elke dag om 6 uur door gebrek. In dit aggregaat worden de volgende afmetingen vastgelegd: Kanaal, levering, marketingaanbieding en datum. De blokje van het voorstel van het Voorstel van het Voorstel wordt dan gebruikt om rapporten te produceren die op voorstellen worden gebaseerd. U kunt meer over kubussen in [deze sectie](../../reporting/using/about-cubes.md) leren. |
+| **Identificatie van omgezette contactpersonen**  (webAnalyticsFindConverted) | Webanalytische connectors | Deze workflow indexeert bezoekers van de site die hun aankoop hebben voltooid na een campagne voor het opnieuw op de markt brengen van producten. De gegevens die door deze workflow worden hersteld, zijn toegankelijk via het efficiëntierapport voor opnieuw in de handel brengen (zie deze pagina). |
+| **Soorten publiek importeren uit de Adobe Experience Cloud**  (importSharedAudience) | Integratie met Adobe Experience Cloud | Met deze workflow kunt u soorten publiek/segmenten van verschillende Adobe Experience Cloud-oplossingen importeren in Adobe Campaign. |
+| **Banen op leveringen in campagnes**  (bezorgingsbeheer) | Marketingcampagnes (Campagne) | Deze workflow activeert de goedgekeurde leveringen en start de naverwerking van de serviceprovider voor een externe levering. Het verzendt ook goedkeuringsberichten en herinneringen. |
+| **Banen op dienstverleners**  (leveranciersbeheer) | Marketingcampagnes (Campagne) | Dit werkschema begint de leverancier (e-mail aan de router en post-verwerking) te verwerken zodra de leveringen zijn goedgekeurd. |
+| **Update**  van toegangstoken van LIJN V2 (updateLineV2AccessToken) | LINE-kanaal | Deze werkstroom verfrist het toegangstoken aan LIJN V2. |
+| **MID naar migratie naar LineUserID**  (MIDToUserIDMigration) | LINE-kanaal | Deze workflow genereert de LINE V2-gebruikers-id voor migratie van LIJN V1 naar LIJN V2. |
+| **Meldingen**  over marketingbronnen (assetMgt) | Marketing resources (MRM) | Deze workflow beheert meldingen die verband houden met de goedkeuring en publicatie van marketingbronnen. |
+| **Berichtcentrum  &lt;external_account_name>** (mcSynch_&lt;external_account_name>) | Transactionaal berichtenbeheer (Berichtcentrum - Controle) | Deze workflow: <ul><li>Hiermee wordt de lijst met gebeurtenissen hersteld die door de bewerking(en) zijn verwerkt.</li><li>synchroniseert met de tabel NmsBroadLogMsg om de kwalificaties van de leveringsberichten te herstellen.</li><li>Hiermee worden de logbestanden voor gebeurtenislevering hersteld zodra de synchronisatie met de tabel NmsBroadLogMsg is voltooid.</li><li>synchroniseert met de tabel NmsTrackingUrl om de tracking voor bezorgings-URL&#39;s te herstellen.</li><li>Hiermee worden URL&#39;s voor het bijhouden van gebeurtenissen hersteld zodra de synchronisatie met de tabel NmsTrackingUrl is voltooid.</li><li>Hiermee kunt u alle e-mailadressen herstellen die elke drie uur nadat een levering is verzonden, in quarantaine zijn geplaatst.</ul> |
+| **MessageCenter volledige geaggregeerde berekening**  (agg_messageCenter_full) | Aanbiedingsengine (interactie) | Deze werkstroom werkt het Volledige aggregaat voor de kubus van het Centrum van het Bericht bij. Deze wordt standaard elke dag om 3 uur geactiveerd. In dit aggregaat worden de volgende afmetingen vastgelegd: Het type Kanaal, Datum, Status en Gebeurtenis. De kubus van het centrum van het Bericht wordt dan gebruikt om rapporten te produceren die op gebeurtenissen worden gebaseerd. U kunt meer over kubussen in [deze sectie](../../reporting/using/about-cubes.md) leren |
+| **Midden-sourcing (leveringstellers)** (defaultMidSourcingDlv) | Overdracht naar midsourcing | Deze workflow verzamelt tellingsinformatie voor leveringen op de server voor midsourcing. De telgegevens omvatten algemene leveringsindicatoren zoals het aantal verzonden leveringen, enz. Trackinggegevens zoals die worden geopend, worden niet opgenomen. Deze wordt standaard om de tien minuten geactiveerd. |
+| **Midden-sourcing (leveringslogboeken)** (defaultMidSourcingLog) | Overdracht naar midsourcing | Deze workflow verzamelt leveringslogboeken op de server voor midsourcing. Deze wordt standaard elke uur geactiveerd. |
+| **NMAC-opt-out-beheer** (mobileAppOptOutMgt) | Kanaal voor mobiele apps | Met deze workflow worden afmeldingsopties op mobiele apparaten bijgewerkt. Het wordt teweeggebracht om de 6 uur tussen 1am en middernacht. Raadpleeg [deze sectie](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines) voor meer informatie. |
+| **Aantal actieve factureringsprofielen**  (billingActiveContactCount) | aanbiedingsengine (interactie) | Deze workflow telt het aantal actieve profielen. Het wordt elke nacht teweeggebracht om 1 uur door gebrek. ‘Profiel’ betreft een datarecord (bijv. een record in de nmsRecipient-tabel of een externe tabel met een cookie-id, klant-id, mobiele id of andere informatie die relevant is voor een bepaald kanaal) die een eindklant, prospect of lead vertegenwoordigt. Facturering heeft alleen betrekking op profielen die &quot;actief&quot; zijn. Een profiel wordt als &quot;actief&quot; beschouwd als het profiel in de afgelopen twaalf maanden via een kanaal is geactiveerd of gecommuniceerd. Er wordt geen rekening gehouden met de kanalen Facebook en Twitter. U kunt een overzicht van het Aantal actieve profielen van het Beleid > het Beheer van de Campagne > het menu van de Metriek van de Klant hebben. |
+| **Melding**  van voorstel (aanbiedingsbeheer) | Levering | Deze workflow implementeert goedgekeurde aanbiedingen in de onlineomgeving en in elke categorie in de aanbiedingencatalogus. |
+| **Opschonen van gepauzeerde workflows**  (schoonmaakbeurtenGepauzeerdeWorkflows) | Levering | In deze workflow worden gepauzeerde workflows geanalyseerd waarvoor de ernst is ingesteld op Normaal en worden waarschuwingen en meldingen geactiveerd wanneer deze al te lang zijn gepauzeerd. Na een maand worden gepauzeerde technische workflows onvoorwaardelijk gestopt. Standaard wordt de activering elke maandag om 17.00 uur gestart. Raadpleeg [Handling van gepauzeerde workflows](../../workflow/using/monitoring-workflow-execution.md#handling-of-paused-workflows) voor meer informatie. |
+| **Correctie**  van privacyverzoek (CleupPrivacyRequests) | Verordening inzake bescherming van privacydata | Deze workflow wist de bestanden met toegangsverzoeken die ouder zijn dan 90 dagen. |
+| **Batchgebeurtenissen**  verwerken (batchEventsProcessing) | Transactiebericht uitvoeren (Berichtcentrum - Uitvoering) | Met deze workflow kunt u batchgebeurtenissen in een wachtrij plaatsen voordat u ze aan een berichtsjabloon koppelt. |
+| **Real-time gebeurtenissen**  verwerken (rtEventsProcessing) | Transactiebericht uitvoeren (Berichtcentrum - Uitvoering) | Dit werkschema laat u gebeurtenissen in real time in een rij zetten alvorens hen met een berichtmalplaatje te associëren. |
+| **Propositiesynchronisatie** (propositionSynch) | Besturing van de aanbiedingsengine met uitvoeringsinstantie | Deze workflow synchroniseert voorstellingen tussen de marketinginstantie en de uitvoeringsinstantie die voor interacties wordt gebruikt. |
+| **Herstel van webgebeurtenissen**  (webAnalyticsGetWebEvents) | Webanalytische connectors | Elk uur downloadt deze workflow segmenten op het gedrag van internetgebruikers op een bepaalde site, plaatst deze in de Adobe Campaign-database en start de workflow voor het opnieuw in de handel brengen. |
+| **Vernieuwen voor leverbaarheid**  (LoesbaarheidUpdate) | Leverbaarheidscontrole (e-maillevering) | Nadat het pakket voor het controleren van de aflevering (e-mail Deliverability) is geïnstalleerd, wordt deze workflow elke avond uitgevoerd om de lijst met regels regelmatig bij te werken en kan de leverbaarheid van het platform actief worden beheerd. |
+| **Rapporterende aggregaten**  (reportingAggregates) | Levering | Deze workflow werkt aggregaten bij die worden gebruikt in rapporten. Het wordt teweeggebracht elke dag om 2 uur door gebrek. |
+| **Verzenden van indicatoren en campagnerekenmerken**  (webAnalyticsSendMetrics) | Webanalytische connectors | Met deze workflow kunt u e-mailcampagne-indicatoren verzenden van Adobe Campaign naar Adobe Experience Cloud Suite via de Adobe® Genesis-connector. De betrokken indicatoren zijn als volgt: Verzonden (Verzonden), Totaal aantal van opent (iTotalRecipientOpen), Totaal aantal ontvangers die klikte (iTotalRecipientClick), Fouten (iError), Opt-Out (opt-out) (iOptOut). |
+| **Voorraad: Bestellingen en waarschuwingen**  (stockMgt) | Marketingcampagnes (Campagne) | Deze workflow start voorraadberekening op de orderregels en beheert drempelwaarden voor waarschuwingen. |
+| **Facebook-fans**  synchroniseren (FacebookFans synchroniseren) | Sociale netwerken (sociale marketing) | Deze workflow importeert elke dag om 7.00 uur Facebook-fans naar Adobe Campaign. |
+| **Facebook-pagina** &#39;s synchroniseren (Facebook synchroniseren) | Sociale netwerken (sociale marketing) | Deze workflow synchroniseert elke dag om 7.00 uur Facebook-pagina&#39;s met Adobe Campaign. |
+| **Twitter-pagina** &#39;s synchroniseren (Twitter synchroniseren) | Sociale netwerken (sociale marketing) | Deze workflow importeert elke dag om 7.00 uur Twitter-volgers naar Adobe Campaign. |
+| **Taakmelding**  (taskMgt) | Marketing resources (MRM) | Met deze workflow kunt u meldingen verzenden met betrekking tot taken in marketingcampagnes. |
+| **Tekstspatiëring**  (reeksspatiëring) | Levering | Deze workflow voert het herstel en de consolidatie van trackinggegevens uit. Het verzekert ook de herberekening van het volgen en leveringsstatistieken, vooral die gebruikt door het archiveren van het Centrum van het Bericht werkschema. Deze wordt standaard één keer per uur geactiveerd. |
+| **Status**  van gebeurtenis bijwerken (updateEventsStatus) | Transactiebericht uitvoeren (Berichtcentrum - Uitvoering) | Met deze workflow kunt u een status aan een gebeurtenis toewijzen. Gebeurtenisstatussen zijn als volgt:<ul><li>In behandeling: de gebeurtenis bevindt zich in een wachtrij. Er is nog geen berichtsjabloon aan gekoppeld.</li><li>In afwachting van levering: Als de gebeurtenis zich in een wachtrij bevindt, is er een berichtsjabloon aan gekoppeld en wordt deze momenteel verwerkt door de levering.</li><li>Verzonden: deze status wordt gekopieerd uit de leveringslogboeken. Dit betekent dat de levering is verzonden.</li><li>Genegeerd door de levering: deze status wordt gekopieerd uit de leveringslogboeken. Het betekent dat de levering is genegeerd.</li><li>Afleveringsfout: deze status wordt gekopieerd uit de leveringslogboeken. Het betekent dat de levering is mislukt.</li><li>Gebeurtenis niet gedekt: de gebeurtenis is niet gekoppeld aan een berichtsjabloon. De gebeurtenis wordt niet opnieuw verwerkt.</li></ul> |
+| **Update voor leverability** (DeliabilityUpdate) | Levering | Met deze workflow kunt u een lijst maken met regels voor stuiterende mailkwalificatie en een lijst met domeinen en MX&#39;s in het platform. Deze workflow werkt alleen als de HTTPS-poort geopend is. Deze lijsten worden alleen bijgewerkt als de module Leverbaarheid is geïnstalleerd. |
+| **Zaadnetwerk bijwerken voor Inbox Rendering**  (updateRenderingSeeds) | Inbox Rendering (IR) | Deze workflow werkt e-mailadressen bij die worden gebruikt voor de weergave van postvakken en werkt alleen als de HTTPS-poort open is voor de weergave van.neolane.net. |
