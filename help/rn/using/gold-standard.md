@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: e4cdeddaeb19f3ab7d601343d2a2c91f1c27822b
+source-git-commit: 87d9196fac69b549014a8acb5f13b9bff97a846b
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 100%
+source-wordcount: '937'
+ht-degree: 90%
 
 ---
 
@@ -24,6 +24,24 @@ Als u van een oude build migreert, adviseren wij u eerst bij te werken naar deze
 Deze pagina vermeldt de Gold Standard-releases.
 
 Raadpleeg [dit artikel](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html)voor meer informatie over het Campaign Gold Standard-programma.
+
+## ![](assets/do-not-localize/limited_2.png) De Gold Standard 11-release{#gs-11}
+
+_22 december 2020_
+
+>[!CAUTION]
+>
+>Deze versie wordt geleverd met een nieuw verbindingsprotocol: De upgrade is verplicht voor zowel de campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na 21 maart 2020
+
+De build 9032@2a2a028 bevat de volgende verbeteringen en oplossingen:
+
+* Het verbindingsprotocol is bijgewerkt om het nieuwe IMS authentificatiemechanisme te volgen.
+
+* De Triggers-integratieverificatie die oorspronkelijk was gebaseerd op de oAUTH-verificatieset-up voor toegang tot de pipeline is nu gewijzigd en verplaatst naar Adobe I/O. [Meer informatie](../../integrations/using/configuring-adobe-io.md)
+
+* Na het einde van de ondersteuning voor het oudere binaire protocol voor iOS APNs worden alle instanties die dit protocol gebruiken bijgewerkt naar het HTTP/2-protocol tijdens de postupgrade.
+
+* Oplossing voor een beveiligingsprobleem dat de beveiliging tegen SSRF-problemen (Server Side Request Smeery) moet versterken. (NEO-27777)
 
 ## ![](assets/do-not-localize/green_2.png) De Gold Standard 10-release{#gs-10}
 
