@@ -9,10 +9,10 @@ topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 66%
+source-wordcount: '201'
+ht-degree: 64%
 
 ---
 
@@ -55,6 +55,7 @@ Ze helpen u de verschillende contexten te ontdekken waarin workflows kunnen word
 * [Gegevens importeren die zijn versleuteld met een toets die is gegenereerd door het Configuratiescherm](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
 * [Gegevens coderen en exporteren met een sleutel die is geïnstalleerd in het Configuratiescherm](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Driemaandelijkse lijstupdate met een incrementele query](../../workflow/using/quarterly-list-update.md)
+* [De samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken](../../workflow/using/deduplication-merge.md)
 
 ## Targeting {#designing-queries}
 
