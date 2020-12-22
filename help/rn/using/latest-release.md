@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 787beef89325340cc1d46faa03e9cfae7f1c705c
 workflow-type: tm+mt
 source-wordcount: '1852'
 ht-degree: 98%
@@ -148,7 +148,7 @@ In Linux is _apache_neolane.conf_ nu geïnstalleerd in de map `conf`.
 * Er is een probleem verholpen met het gebruik van de Snowflake FDA-connector. Een gebruiker met Snowflake FDA-toegangsnaamrechten kon geen query uitvoeren op een Snowflake-schema. Er werd een fout van het type ‘Wachtwoord niet gevonden’ in de logboeken weergegeven. (NEO-23851)
 * Er is een probleem verholpen met het gebruik van een FDA-connector dat optrad wanneer de gekoppelde FDA-schemanaam een subtekenreeks was van een elementnaam van het huidige schema. Dit gebeurde bijvoorbeeld wanneer het FDA-schema ‘cust’ was en een van de elementen binnen het ontvangerschema ‘customer’ was. Bij het ophalen van de kolom in het element ‘customer’ en het toevoegen van een kolom uit het FDA-schema ‘cust’ ontbrak de waarde voor de lokale kolom. (NEO-20193)
 * Er is een probleem verholpen in workflows tijdens het ophalen van records uit een externe database en het invoegen van records in de Campaign-database. (NEO-26359)
-* Er is een probleem verholpen in de technische workflow **Evenementstatus bijwerken**: voor het matchen van het formaat van binnenkomende corresponderende velden in de activiteit **Leveringsstatistieken** werd het formaat van drie bestemmingsvelden in de activiteit **Leveringsstatistieken bijwerken** gewijzigd van 32 in 64 bits. (NEO-11557) Meer informatie over de workflow **Evenementstatus bijwerken** vindt u in [deze sectie](../../workflow/using/message-center--execution-.md).
+* Er is een probleem verholpen in de technische workflow **Evenementstatus bijwerken**: voor het matchen van het formaat van binnenkomende corresponderende velden in de activiteit **Leveringsstatistieken** werd het formaat van drie bestemmingsvelden in de activiteit **Leveringsstatistieken bijwerken** gewijzigd van 32 in 64 bits. (NEO-11557) Meer informatie over de workflow **Evenementstatus bijwerken** vindt u in [deze sectie](../../workflow/using/about-technical-workflows.md).
 * Er is een probleem verholpen in het rapport **Geschiedenis van gebeurtenissen in het Berichtencentrum** dat scriptfouten veroorzaakte bij het toepassen van filters, waardoor filteren op datumbereik onmogelijk was. (NEO-23365)
 * Er is een interferentieprobleem verholpen tussen de technische workflows **Campaign-taken** (operationMgt) en **Voorvertoning** (forecasting). Dit gebeurde wanneer geplande leveringen in de status ‘Target gereed’ of ‘Gereed voor levering’ bleven staan. (NEO-20819)
 * Er is een probleem met XML-parsering verholpen waarbij de XML-id niet aanwezig was in het veld mdata in xtkOperator. Dit veroorzaakte een postupgradefout. (NEO-26113)
