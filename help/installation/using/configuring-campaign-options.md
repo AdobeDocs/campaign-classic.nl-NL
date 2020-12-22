@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 1%
@@ -204,7 +204,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>Deze optie wordt gebruikt door de technische workflow <span class="uicontrol"><a href="../../workflow/using/campaign.md">operationMgt</a></span> wanneer het tellen van het aantal actieve leveringen.</p>Hiermee kunt u het aantal dagen definiëren waarboven leveringen met een inconsistente status worden uitgesloten van het aantal lopende leveringen.</p><p>De standaardwaarde is "7", wat betekent dat inconsistente leveringen ouder dan 7 dagen worden uitgesloten.</p></td> 
+   <td><p>Deze optie wordt gebruikt door de technische workflow <span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span> wanneer het tellen van het aantal actieve leveringen.</p>Hiermee kunt u het aantal dagen definiëren waarboven leveringen met een inconsistente status worden uitgesloten van het aantal lopende leveringen.</p><p>De standaardwaarde is "7", wat betekent dat inconsistente leveringen ouder dan 7 dagen worden uitgesloten.</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -360,7 +360,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> Staat u toe om <a href="../../workflow/using/campaign.md">operationMgt</a> technische werkschemauitvoering te controleren. Wanneer geactiveerd (waarde "1"), wordt de uitvoeringsinformatie geregistreerd in de logboeken van de werkschemacontrole.<br /> </td> 
+   <td> Staat u toe om <a href="../../workflow/using/about-technical-workflows.md">operationMgt</a> technische werkschemauitvoering te controleren. Wanneer geactiveerd (waarde "1"), wordt de uitvoeringsinformatie geregistreerd in de logboeken van de werkschemacontrole.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
