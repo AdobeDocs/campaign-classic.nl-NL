@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 8%
@@ -58,7 +58,7 @@ Voor **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
 
 Voor **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
-1. Bekijk alle workflows onder de map **[!UICONTROL Campaign process]**. Raadpleeg [deze pagina](../../workflow/using/campaign.md) voor meer informatie.
+1. Bekijk alle workflows onder de map **[!UICONTROL Campaign process]**. Raadpleeg [deze pagina](../../workflow/using/about-technical-workflows.md) voor meer informatie.
 1. Controleer of de workflows worden uitgevoerd zoals gepland en of het dagboek geen terugkerende fouten markeert.
 
 ## Workflowtoezicht {#workflow-supervision}
