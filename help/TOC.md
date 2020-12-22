@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: c55897a4daf184b886d4e626d9216a4d43581ea1
 workflow-type: tm+mt
-source-wordcount: '2215'
-ht-degree: 98%
+source-wordcount: '2181'
+ht-degree: 97%
 
 ---
 
@@ -114,6 +114,8 @@ ht-degree: 98%
    + Berichten verzenden op mobiele apparaten {#sending-messages-on-mobiles}
       + [Sms-kanaal](delivery/using/sms-channel.md)
       + [LINE-kanaal](delivery/using/line-channel.md)
+      + [Protocol en instellingen voor SMS-aansluiting](delivery/using/sms-protocol.md)
+      + [Problemen met SMS oplossen](delivery/using/troubleshooting-sms.md)
    + Pushmeldingen verzenden {#sending-push-notifications}
       + [Kanaal voor mobiele apps](delivery/using/about-mobile-app-channel.md)
       + [De Campaign-SDK integreren in de mobiele applicatie](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
@@ -438,6 +440,8 @@ ht-degree: 98%
          + [Een overzichtslijst maken](workflow/using/creating-a-summary-list.md)
          + [Data verrijken](workflow/using/enriching-data.md)
          + [Werken met samenvoegingen](workflow/using/using-aggregates.md)
+         + [De samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken](workflow/using/deduplication-merge.md)
+      + Query’s ontwerpen {#designing-queries}
          + [Driemaandelijkse lijstupdate met een incrementele query](workflow/using/quarterly-list-update.md)
       + Targeting {#designing-queries}
          + [Query’s uitvoeren op de tabel met ontvangers](workflow/using/querying-recipient-table.md)
@@ -461,26 +465,7 @@ ht-degree: 98%
       + [Activiteitenafbeeldingen beheren](workflow/using/managing-activity-images.md)
       + [Tendensen beheren](workflow/using/managing-propensity.md)
       + [Tijdzones beheren](workflow/using/managing-time-zones.md)
-   + Technische workflows {#technical-workflows}
       + [Technische workflows](workflow/using/about-technical-workflows.md)
-      + [Leveringen](workflow/using/deliveries.md)
-      + [Campaign](workflow/using/campaign.md)
-      + [Web Analytics](workflow/using/web-analytics.md)
-      + [Gedistribueerde marketing](workflow/using/distributed-marketing.md)
-      + [Leverbaarheidscontrole](workflow/using/email-deliverability.md)
-      + [Inboxrendering](workflow/using/inbox-rendering.md)
-      + [Interaction](workflow/using/interaction.md)
-      + [Controle van de aanbiedingsengine](workflow/using/control-of-offer-engine.md)
-      + [Berichtencentrum (controle)](workflow/using/message-center--control-.md)
-      + [Berichtencentrum (uitvoering)](workflow/using/message-center--execution-.md)
-      + [Kanaal voor mobiele apps](workflow/using/mobile-app-channel.md)
-      + [LINE-kanaal](workflow/using/line-channel.md)
-      + [Marketingresources (MRM)](workflow/using/marketing-resources--mrm-.md)
-      + [Social marketing](workflow/using/social-marketing.md)
-      + [Integraties met Adobe Experience Cloud-oplossingen](workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
-      + [Verordening inzake bescherming van privacydata](workflow/using/general-data-protection-regulation--gdpr-.md)
-      + [Overdracht naar midsourcing](workflow/using/transfer-to-mid-sourcing.md)
-      + [Midsourcingplatform](workflow/using/mid-sourcing-platform.md)
 + Aanbiedingen beheren {#managing-offers}
    + Aan de slag met Interaction {#interaction-overview}
       + [Interaction en aanbiedingenbeheer](interaction/using/interaction-and-offer-management.md)
@@ -619,7 +604,7 @@ ht-degree: 98%
       + [De database maken en configureren](installation/using/creating-and-configuring-the-database.md)
       + [Configuratie van de Campaign-server](installation/using/campaign-server-configuration.md)
       + [Een instantie implementeren](installation/using/deploying-an-instance.md)
-      + [Campaign Classic-standaardpakketten installeren](installation/using/installing-campaign-standard-packages.md)
+      + [Ingebouwde Campaign Classic-pakketten installeren](installation/using/installing-campaign-standard-packages.md)
    + Aanvullende configuraties {#additional-configurations}
       + [Campaign-server configureren](installation/using/configuring-campaign-server.md)
       + [Verbinding maken via LDAP](installation/using/connecting-through-ldap.md)
