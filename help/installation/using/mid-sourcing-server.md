@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Voor de installatie van een server voor midsourcing wordt hetzelfde proces gevol
 
 >[!CAUTION]
 >
->Nadat de server voor midsourcing is ingesteld en de [synchronisatieworkflows](../../workflow/using/transfer-to-mid-sourcing.md) voor het eerst zijn uitgevoerd, moet u de interne naam van de externe accounts voor midsourcing niet bijwerken.
+>Nadat de server voor midsourcing is ingesteld en de [synchronisatieworkflows](../../workflow/using/about-technical-workflows.md) voor het eerst zijn uitgevoerd, moet u de interne naam van de externe accounts voor midsourcing niet bijwerken.
 
 ## Stappen voor het installeren en configureren van een exemplaar {#steps-for-installing-and-configuring-an-instance}
 
