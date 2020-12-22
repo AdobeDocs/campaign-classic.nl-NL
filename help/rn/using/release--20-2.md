@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
+source-git-commit: 26f232fafbcc39eb710135a1fc937e40a76ad0bd
 workflow-type: tm+mt
-source-wordcount: '2201'
-ht-degree: 100%
+source-wordcount: '2483'
+ht-degree: 91%
 
 ---
 
@@ -19,7 +19,30 @@ ht-degree: 100%
 
 ![](assets/do-not-localize/cp-icon.png) **Release van nieuw Configuratiescherm in oktober** met domeinconfiguratie met CNAME-records en nieuwe mogelijkheden voor databasecontrole. [Meer informatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/green_2.png) Release 20.2.3 - build 9182 {#release-20-2-3-build-9182}
+## ![](assets/do-not-localize/green_2.png) Release 20.2.4 - build 9187 {#release-20-2-4-build-9187}
+
+_22 december 2020_
+
+>[!CAUTION]
+>
+>Deze versie wordt geleverd met een nieuw verbindingsprotocol:  De upgrade is verplicht voor zowel de campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na 21 maart 2020
+
+**Verbeteringen**
+
+* Het verbindingsprotocol is bijgewerkt om het nieuwe IMS authentificatiemechanisme te volgen.
+* De de integratieauthentificatie van trekkers oorspronkelijk die op de authentificatie van AUTH wordt gebaseerd om tot pijpleiding toegang te hebben is veranderd en naar Adobe I/O verplaatst. [Meer informatie](../../integrations/using/configuring-adobe-io.md)
+* Na het einde van de ondersteuning voor het oudere binaire protocol voor iOS APNs worden alle instanties die dit protocol gebruiken bijgewerkt naar het HTTP/2-protocol tijdens de postupgrade.
+* Oplossing voor een beveiligingsprobleem dat de beveiliging tegen SSRF-problemen (Server Side Request Smeery) moet versterken. (NEO-27777)
+* Probleem verholpen waarbij de SMPP-connector werd gedeactiveerd na een verbindingsfout, waardoor andere SMS-leveringen niet werden verzonden en prestatieproblemen optraden. (NEO-28609)
+* Er is een probleem verholpen waarbij de server vastliep door geheugenbeschadiging te voorkomen tijdens het opschonen van de expressieparser. (NEO-26856)
+* Er is een probleem verholpen waarbij de server vastliep bij het weergeven van de doeldata van de rest van een **Splitsen**-activiteit in een workflow.
+* Er is een probleem verholpen waarbij soms een foutbericht werd weergegeven wanneer werd geprobeerd sms-berichten weer te geven na een query op een ander schema dan **Ontvanger** (nms:recipient). (NEO-27517)
+* Probleem verholpen bij het indienen van een HTTPS-verbindingsaanvraag met het poortnummer dat expliciet in de hostnaam is gedefinieerd, het aanroepen is mislukt vanwege een certificaatfout. (NEO-29146)
+* Probleem opgelost in POSIX-draadbeheer dat grote core dump-bestanden heeft gegenereerd voor de marketinginstantie. (NEO-28117, NEO-29281)
+* Correctie van problemen die ertoe kunnen leiden dat het webproces vastloopt bij het voorbereiden van leveringen of bij terugkerende voorvertoning van levering. (NEO-27790, NEO-27517)
+* Probleem verholpen waarbij leveringen of het verzenden van bewijzen mislukten wanneer deze door een niet-beheerder werden geactiveerd. (NEO-28597)
+
+## ![](assets/do-not-localize/red_2.png) Release 20.2.3 - build 9182 {#release-20-2-3-build-9182}
 
 _11 september 2020_
 
