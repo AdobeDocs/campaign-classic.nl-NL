@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '881'
 ht-degree: 1%
 
 ---
@@ -204,7 +204,7 @@ Voeg een **Terugkerende levering** activiteit toe die op het malplaatje wordt ge
 
 >[!CAUTION]
 >
->Om de workflows uit te voeren, moeten de technische workflows met betrekking tot het campagneproces worden gestart. Raadpleeg voor meer informatie de sectie [Lijst met workflows voor campagneprocessen](../../workflow/using/campaign.md).
+>Om de workflows uit te voeren, moeten de technische workflows met betrekking tot het campagnepakket worden gestart. Raadpleeg voor meer informatie de sectie [Lijst met technische workflows](../../workflow/using/about-technical-workflows.md).
 >
 >Als de goedkeuringsstappen voor de campagne zijn ingeschakeld, worden de leveringen pas verzonden nadat deze stappen zijn bevestigd. Raadpleeg voor meer informatie de sectie [De processen kiezen die moeten worden goedgekeurd](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved).
 
