@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 5%
+source-wordcount: '137'
+ht-degree: 4%
 
 ---
 
@@ -25,3 +25,7 @@ Gebeurtenissen die door het informatiesysteem worden gegenereerd, kunnen in twee
 Zodra zij worden verzameld, worden de gebeurtenissen uitgesplitst - door technische werkschema&#39;s - tussen echt - tijd en partijrijen van de uitvoeringsinstanties, terwijl het wachten om aan een berichtmalplaatje worden verbonden.
 
 ![](assets/messagecenter_events_queues_001.png)
+
+>[!NOTE]
+>
+>Bij de uitvoeringsinstanties moeten de mappen **[!UICONTROL Real time events]** of **[!UICONTROL Batch events]** niet worden ingesteld als weergaven, omdat dit kan leiden tot [toegangsrechten](../../platform/using/access-management.md#about-permissions)-problemen. Zie [Informatie over weergaven](../../platform/using/access-management.md#about-views) voor meer informatie over het instellen van een map als weergave.
