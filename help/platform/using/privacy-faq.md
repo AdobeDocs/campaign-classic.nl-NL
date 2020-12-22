@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 450889f845b7c5adad1085d7eba70e23030e6609
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 97%
@@ -110,7 +110,7 @@ Als gegevenscontroller moet u ervoor zorgen dat u, wanneer u een verwijderingsve
 
 ## Opnieuw aanmelden {#opt-in-again}
 
-**Kan een betrokkene, wiens gegevens uit Adobe Campaign zijn gewist, zich later opnieuw aanmelden?**
+### Kan een betrokkene, wiens gegevens uit Adobe Campaign zijn gewist, zich later opnieuw aanmelden?
 
 Een betrokkene kan zich opnieuw aanmelden of als nieuwe ontvanger worden toegevoegd nadat zijn of haar gegevens uit Adobe Campaign zijn gewist.
 
