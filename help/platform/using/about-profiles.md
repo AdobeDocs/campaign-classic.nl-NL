@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 17%
@@ -105,7 +105,7 @@ Er wordt geen rekening gehouden met de profielen die tijdens de voorbereiding va
 >
 >Er wordt geen rekening gehouden met de kanalen Facebook en Twitter.
 
-U kunt een overzicht van **[!UICONTROL Number of active profiles]** van het menu van Campaign Standard hebben **[!UICONTROL Administration > Campaign Management > Customer metrics]**. Het daadwerkelijke aantal wordt uitgevoerd door **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technische werkschema](../../workflow/using/deliveries.md), die elke dag loopt en de nieuwe gegevens aan het bestaande rapport voor de huidige periode in **[!UICONTROL Customer metrics]** menu toevoegt. Elke periode duurt 12 maanden.
+U kunt een overzicht van **[!UICONTROL Number of active profiles]** van het menu van Campaign Standard hebben **[!UICONTROL Administration > Campaign Management > Customer metrics]**. Het daadwerkelijke aantal wordt uitgevoerd door **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technische werkschema](../../workflow/using/about-technical-workflows.md), die elke dag loopt en de nieuwe gegevens aan het bestaande rapport voor de huidige periode in **[!UICONTROL Customer metrics]** menu toevoegt. Elke periode duurt 12 maanden.
 
 ## Video over zelfstudie {#create-profiles-video}
 
