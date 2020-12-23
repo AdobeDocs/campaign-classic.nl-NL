@@ -7,7 +7,7 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 De pijpleiding wordt niet ondersteund door uw versie van Adobe Campaign Classic.
 
 1. Controleer of het element [!DNL pipelined] aanwezig is in het configuratiebestand. Als dat niet het geval is, betekent dit dat dit niet wordt ondersteund.
-1. Upgrade naar versie 6.11 build 8705 of hoger.
+1. Voer een upgrade uit naar Campagne 20.3 of Gold Standard 11.
 
 **Pipelined failed with &#39;&#39; aurait dû commencer par  `[` ou  `{` (iRc=16384)&quot;**
 
@@ -31,7 +31,7 @@ Stel de JSON-configuratie in de optie **NmsPipeline_Config** in. Zie &quot;verpl
 
 **Pipelined ontbreekt met &quot;het onderwerp moet een geldige organisatie of een cliënt zijn&quot;**
 
-De configuratie IMSOrgid is ongeldig.
+De configuratie van de Organisatie-id is ongeldig.
 
 1. Controleer of de IMSOrgId is ingesteld in de serverConf.xml.
 1. Zoek een lege IMSOrgId in het instantie config dossier dat het gebrek kan met voeten treden. Als dat het geval is, verwijdert u het.
@@ -85,4 +85,3 @@ Over het algemeen kan het 15 tot 90 minuten duren voordat een marketingcampagne 
 1. Zoek naar fouten in pipelined.log die nieuwe pogingen kunnen veroorzaken. Corrigeer de fouten, indien van toepassing.
 1. Controleer de [!DNL pipelined] statuspagina voor de rijgrootte. Als de wachtrij groot is, verbetert u de prestaties van de JS.
 1. Aangezien een vertraging met volume lijkt te stijgen, vorm de trekkers op Analytics gebruikend minder berichten.
-Bijlagen
