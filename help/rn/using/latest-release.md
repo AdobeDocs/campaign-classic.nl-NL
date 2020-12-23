@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 787beef89325340cc1d46faa03e9cfae7f1c705c
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
-source-wordcount: '1852'
-ht-degree: 98%
+source-wordcount: '1875'
+ht-degree: 97%
 
 ---
 
@@ -65,6 +65,10 @@ _27 oktober 2020_
 </tbody> 
 </table>
 
+>[!CAUTION]
+>
+>Deze versie wordt geleverd met een nieuw verbindingsprotocol: De upgrade is verplicht voor zowel de campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na 21 maart 2021.
+
 **Verbeterde beveiliging**
 
 * Beveiligd laden van bibliotheken: ter bescherming tegen dll-voorafladingsaanvallen laadt Campaign Windows-dll’s nu alleen vanaf het Windows-standaardsysteempad naar dll’s tijdens het laden van de Campaign Client (nlclient). [Meer informatie](https://support.microsoft.com/en-us/help/2389418/secure-loading-of-libraries-to-prevent-dll-preloading-attacks) (NEO-24147)
@@ -94,11 +98,7 @@ Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](../..
 **Verbeteringen**
 
 * Er zijn verschillende verbeteringen aangebracht in de **clientconsole**:
-   * Het verbindingsprotocol is bijgewerkt om het nieuwe IMS authentificatiemechanisme te volgen.
-
-      >[!CAUTION]
-      >
-      >Na de update van het verbindingsprotocol is een upgrade verplicht (server en console) om vanaf 21 maart 2020 verbinding te kunnen maken.
+   * Het verbindingsprotocol is bijgewerkt om het nieuwe IMS authentificatiemechanisme te volgen. De upgrade van de server- en clientconsole is verplicht om verbinding te kunnen maken na 21 maart 2021.
    * Om incompatibiliteit met bepaalde GPO-regelbeperkingen voor internetbeveiliging te voorkomen is het aanmeldingsscherm van de Campaign-clientconsole vervangen door een ingebouwd standaard Windows-formulier.
    * Er is een probleem verholpen met het kopiëren/plakken van activiteiten in een workflow op een 64-bits clientconsole. (NEO-27635)
    * In het menu **Info** is informatie toegevoegd om 64- en 32-bitsconsoles van elkaar te onderscheiden.
