@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: d7c590333b03b2448d37e58e194f3b9d1383fbb7
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 6%
@@ -23,7 +23,7 @@ _23 december 2020_
 
 >[!CAUTION]
 >
->Deze versie wordt geleverd met een nieuw verbindingsprotocol:  De upgrade is verplicht voor zowel de campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na 21 maart 2020
+>Deze versie wordt geleverd met een nieuw verbindingsprotocol:  De upgrade is verplicht voor zowel de campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na 21 maart 2021.
 
 * Het verbindingsprotocol is bijgewerkt om het nieuwe IMS authentificatiemechanisme te volgen.
 * Oplossing voor een beveiligingsprobleem dat de beveiliging tegen SSRF-problemen (Server Side Request Smeery) moet versterken. (NEO-27777)
