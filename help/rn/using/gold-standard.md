@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 87d9196fac69b549014a8acb5f13b9bff97a846b
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 90%
@@ -31,7 +31,7 @@ _22 december 2020_
 
 >[!CAUTION]
 >
->Deze versie wordt geleverd met een nieuw verbindingsprotocol: De upgrade is verplicht voor zowel de campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na 21 maart 2020
+>Deze versie wordt geleverd met een nieuw verbindingsprotocol: De upgrade is verplicht voor zowel de campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na 21 maart 2021.
 
 De build 9032@2a2a028 bevat de volgende verbeteringen en oplossingen:
 
