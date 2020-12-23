@@ -10,10 +10,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 4%
+source-wordcount: '431'
+ht-degree: 5%
 
 ---
 
@@ -30,29 +30,24 @@ Deze integratie geldt alleen voor de eerste **Campaign Classic 20.3- en Gold Sta
 
 Controleer voordat u met deze implementatie begint of:
 
-* een geldige IMSOrgID: de identificatiecode van de Identity Management System (IMS)-organisatie is de unieke identificatie binnen de Adobe Experience Cloud, die bijvoorbeeld wordt gebruikt voor de VisitorID-service en de IMS Single-Sign On (SSO);
-* een ontwikkelaar toegang tot de IMS-organisatie.
-
->[!NOTE]
+* een geldige **Organisatie-id**: de identificatiecode van de Identity Management System (IMS)-organisatie is de unieke identificatie binnen de Adobe Experience Cloud, die bijvoorbeeld wordt gebruikt voor de VisitorID-service en de IMS Single-Sign On (SSO). [Meer informatie](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
+* a **Toegang voor ontwikkelaars** tot uw organisatie.  Als u om de voorrechten van de Beheerder van het Systeem van IMS Org moet verzoeken, volg de procedure [op deze pagina](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) om deze toegang voor alle Profielen van het Product te verlenen.
 >
->Als u om de voorrechten van de Beheerder van het Systeem van IMS Org moet verzoeken, volg de procedure [op deze pagina](https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/manage-developers.ug.html) om deze toegang voor alle Profielen van het Product te verlenen.
-
-
 ## Stap 1: Adobe I/O-project {#creating-adobe-io-project} maken/bijwerken
 
-1. Open Adobe I/O en meld u aan met de System Administrator-rechten voor IMSorg.
+1. Open Adobe I/O en meld u aan met de System Administrator-rechten voor de IMS-organisatie.
 
    >[!NOTE]
    >
-   > Controleer of u bent aangemeld bij de juiste IMSorg-portal.
+   > Zorg ervoor u in het correcte portaal van de Organisatie wordt geregistreerd.
 
 1. Extraheer de bestaande ID van de integratieclient uit het dossier van de instantieconfiguratie ims/authIMSTAClientId. Niet bestaand of leeg kenmerk geeft aan dat de client-id niet is geconfigureerd.
 
    >[!NOTE]
    >
-   >Als uw client-id leeg is, kunt u direct **[!UICONTROL Create a New project]** in Adobe I/O.
+   >Als uw client-id leeg is, kunt u deze direct **[!UICONTROL Create a New project]** in Adobe I/O gebruiken.
 
-1. Identificeer het bestaande project gebruikend gehaalde cliënt ID. Zoek bestaande projecten met dezelfde client-id als de projecten die u in de vorige stap hebt uitgepakt.
+1. Identificeer het bestaande project gebruikend het gehaalde cliëntherkenningsteken. Zoek naar bestaande projecten met het zelfde cliëntherkenningsteken zoals die in vorige stap wordt gehaald.
 
    ![](assets/do-not-localize/adobe_io_8.png)
 
