@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 6%
+source-wordcount: '190'
+ht-degree: 5%
 
 ---
 
@@ -22,6 +22,10 @@ Verbinden teweegbrengt zijn uitgaande overgang slechts teweeg wanneer alle binne
 U kunt bijvoorbeeld een AND-join-activiteit gebruiken in de context van het maken van inhoud en het verzenden van inhoud en automatisering, om ervoor te zorgen dat een levering pas wordt gestart wanneer de stappen voor het opvragen van doelen en het bijwerken van inhoud zijn voltooid. Er is een speciale gebruikscase beschikbaar in [deze sectie](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)
 
 ![](assets/and-join-usage.png)
+
+>[!NOTE]
+>
+>Merk op dat de binnenkomende overgangen die met verschillende het richten dimensies worden gevormd niet samen kunnen worden gebracht gebruikend een **[!UICONTROL AND-join]** activiteit.
 
 De uitgaande verzonden populatie van de activiteit wordt bepaald door een hoofdreeks onder de binnenkomende overgangen in de activiteit te kiezen.
 
