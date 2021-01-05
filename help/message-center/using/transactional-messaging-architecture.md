@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d45f393083ec540025a9e001b089a8b1241a8c99
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1025'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,15 @@ Als u meerdere kanalen moet gebruiken, moet u gerelateerde pakketten installeren
 
 ## Een leveringskanaal {#adding-a-delivery-channel} toevoegen
 
-Een leveringskanaal toevoegen (mobiel kanaal, Mobile App-kanaal, enz.) moet worden uitgevoerd voordat het Transactiebericht-pakket wordt geïnstalleerd. Als u een transactie overseinenproject op het e-mailkanaal bent begonnen, dan besluit tijdens het project om een nieuw kanaal toe te voegen, moet u deze stappen volgen:
+Een leveringskanaal toevoegen (mobiel kanaal, Mobile App-kanaal, enz.) moet worden uitgevoerd voordat het Transactiebericht-pakket wordt geïnstalleerd.
+
+Adobe raadt u altijd aan het pakket met het leveringskanaal toe te voegen voordat u het Transactieberichtpakket installeert.
+
+Nochtans, als u een transactie overseinenproject op het e-mailkanaal bent begonnen, dan besluit tijdens het project om een nieuw kanaal toe te voegen, kunt u de hieronder stappen volgen.
+
+>[!NOTE]
+>
+>Deze procedure is alleen van toepassing op klanten die een Windows NLServer gebruiken die op dezelfde computer is geïnstalleerd als waarop zij werken.
 
 1. Installeer het kanaal dat u nodig hebt, bijvoorbeeld het **Mobiel kanaal**, met de wizard Pakket importeren ( **[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]** ).
 1. Voer een dossier de invoer ( **[!UICONTROL Tools > Advanced > Import package... > File]**) uit, en selecteer **datakitnms **`[Your language]`**packmanagementCenter.xml** dossier.
