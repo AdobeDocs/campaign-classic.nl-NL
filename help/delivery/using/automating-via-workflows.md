@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1186'
 ht-degree: 1%
 
 ---
@@ -200,7 +200,7 @@ In dit voorbeeld wordt hetzelfde concept gebruikt als in het eerste voorbeeld, a
 
 De eerste **Create levering** taak leidt tot de leveringsactie.
 
-Met de vorkactiviteit kunt u de doelberekening starten en tegelijkertijd de inhoudsinstantie maken.
+Met de vorkactiviteit kunt u de doelberekening starten en de inhoudsinstantie parallel maken.
 
 Nadat de taken zijn uitgevoerd, activeert het vak AND-join de taak **Delivery** om de eerder gemaakte levering op inhoud en doelgericht te starten.
 
