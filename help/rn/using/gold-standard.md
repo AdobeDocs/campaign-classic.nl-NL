@@ -7,19 +7,19 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+source-git-commit: 802818fcd27e0dc40cc640092da1ef70ff21a191
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 91%
+ht-degree: 86%
 
 ---
 
 
-# Gold Standard-release{#gold-standard}
+# Gold Standard-releases{#gold-standard}
 
-Gold Standard is de ondersteuningsrelease van Campaign Classic voor de lange termijn. Als Gold Standard-gebruiker profiteert u automatisch van de Gold Standard-upgrade met de nieuwste stabiele versie zonder actie te hoeven ondernemen. On-premise- en hybride klanten kunnen ook profiteren van Gold Standard-releases.
+Gold Standard is de ondersteuningsrelease van Campaign Classic voor de lange termijn. Als gehoste gebruiker van de Gold Standard profiteert u automatisch van de Gold Standard-upgrade met de nieuwste stabiele versie zonder enige actie. Klanten op locatie en Hybride kunnen ook profiteren van Gold Standard-releases.
 
-Als u van een oude build migreert, adviseren wij u eerst bij te werken naar deze versie.
+Als u van een oude bouwstijl migreert, adviseren wij dat u aan deze versie eerst bevordert.
 
 Deze pagina vermeldt de Gold Standard-releases.
 
