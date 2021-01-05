@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: c55897a4daf184b886d4e626d9216a4d43581ea1
+source-git-commit: 404ff67207f8c126e44736fe565cf57afcc6397e
 workflow-type: tm+mt
-source-wordcount: '2181'
-ht-degree: 97%
+source-wordcount: '2202'
+ht-degree: 98%
 
 ---
 
@@ -156,9 +156,9 @@ ht-degree: 97%
       + [Viral en social marketing](delivery/using/viral-and-social-marketing.md)
    + Leveringen controleren{#monitoring-deliveries}
       + [Aan de slag met leveringscontrole](delivery/using/about-delivery-monitoring.md)
-      + [Toegang tot de lijst met leveringen](delivery/using/list-of-deliveries.md)
-      + [Delivery dashboard](delivery/using/delivery-dashboard.md)
-      + [Aanbevolen werkwijzen voor prestaties](delivery/using/delivery-performances.md)
+      + [De lijst met leveringen openen](delivery/using/list-of-deliveries.md)
+      + [Leveringsdashboard](delivery/using/delivery-dashboard.md)
+      + [Best practices voor levering](delivery/using/delivery-performances.md)
       + [Problemen met levering oplossen](delivery/using/delivery-troubleshooting.md)
       + [Leveringsstatus](delivery/using/delivery-statuses.md)
       + [Leveringsfouten begrijpen](delivery/using/understanding-delivery-failures.md)
@@ -669,23 +669,31 @@ ht-degree: 97%
       + [Typen onderhoud](production/using/types-of-maintenance.md)
       + [RDBMS - Specifieke aanbevelingen](production/using/rdbms-specific-recommendations.md)
       + [Applicatieobjecten](production/using/application-objects.md)
-   + Problemen oplossen {#troubleshooting}
-      + [Problemen met prestaties en doorvoer](production/using/performance-and-throughput-issues.md)
-      + [Ontbrekende afbeeldingen](production/using/images-missing.md)
-      + [Problemen met weergave van afbeeldingen](production/using/image-display-issues.md)
-      + [Tijdelijke bestanden](production/using/temporary-files.md)
-      + [Databaseprestaties](production/using/database-performances.md)
-      + [Modules en frequente problemen](production/using/modules-and-frequent-issues.md)
-      + [Logboekprecisie](production/using/log-precision.md)
-      + [Problemen met het bijhouden van logboeken](production/using/tracking-logs-issues.md)
-      + [Workflowuitvoering](production/using/workflow-execution.md)
-      + [Mislukte verbinding](production/using/failure-to-connect.md)
-      + [Drempelwaarden voor verbinding](production/using/connection-thresholds.md)
-      + [Stacktracering in Linux](production/using/stack-trace-in-linux.md)
-      + [Codering van de Oracle-database](production/using/encoding-of-the-oracle-database.md)
-      + [Console-update](production/using/console-update.md)
-      + [Wachtwoord verloren](production/using/lost-password.md)
-      + [JSP-gedrag](production/using/jsp-behavior.md)
+   + Problemen oplossen {#troubleshooting-toc}
+      + [Overzicht van productieproblemen](production/using/troubleshooting.md)
+      + Algemene en algemene kwesties {#common-general-issues-toc}
+         + [Modules en frequente problemen](production/using/modules-and-frequent-issues.md)
+         + [Workflowuitvoering](production/using/workflow-execution.md)
+         + [Wachtwoord verloren](production/using/lost-password.md)
+         + [Console-update](production/using/console-update.md)
+      + Problemen met levering oplossen {#delivery-troubleshooting-toc}
+         + [Problemen met prestaties en doorvoer](production/using/performance-and-throughput-issues.md)
+         + [Problemen met weergave van afbeeldingen](production/using/image-display-issues.md)
+         + [Ontbrekende afbeeldingen](production/using/images-missing.md)
+         + [Tijdelijke bestanden](production/using/temporary-files.md)
+      + Werken met logbestanden {#working-with-log-toc}
+         + [Logboekprecisie](production/using/log-precision.md)
+         + [Problemen met het bijhouden van logboeken](production/using/tracking-logs-issues.md)
+      + Databaseproblemen {#database-issues-toc}
+         + [Databaseprestaties](production/using/database-performances.md)
+         + [Codering van de Oracle-database](production/using/encoding-of-the-oracle-database.md)
+      + Verbindingsverbeteringen {#connection-improvements-toc}
+         + [Mislukte verbinding](production/using/failure-to-connect.md)
+         + [Drempelwaarden voor verbinding](production/using/connection-thresholds.md)
+      + Technische problemen {#technical-troubleshooting-toc}
+         + [Stacktracering in Linux](production/using/stack-trace-in-linux.md)
+         + [JSP-gedrag](production/using/jsp-behavior.md)
+         + [Tomcat-versie zoeken](production/using/locate-tomcat-version.md)
 + Handleiding voor ontwikkelaars {#configuring-campaign-classic}
    + Datamodel {#data-model}
       + [Het datamodel](configuration/using/about-data-model.md)
@@ -697,23 +705,23 @@ ht-degree: 97%
       + [Databasetoewijzing](configuration/using/database-mapping.md)
       + Elementen en kenmerken {#elements-attributes}
          + [Inleiding](configuration/using/schema-introduction.md)
-         + [Kenmerk](configuration/using/schema/attribute.md)
-         + [Rekenreeks](configuration/using/schema/compute-string.md)
-         + [Voorwaarde](configuration/using/schema/condition.md)
-         + [DB-index](configuration/using/schema/db-index.md)
+         + [Attribute](configuration/using/schema/attribute.md)
+         + [Compute string](configuration/using/schema/compute-string.md)
+         + [Condition](configuration/using/schema/condition.md)
+         + [DB index](configuration/using/schema/db-index.md)
          + [Element](configuration/using/schema/element.md)
-         + [Opsomming](configuration/using/schema/enumeration.md)
+         + [Enumeration](configuration/using/schema/enumeration.md)
          + [Help](configuration/using/schema/help.md)
-         + [Verbinden](configuration/using/schema/join.md)
-         + [Sleutel](configuration/using/schema/key.md)
+         + [Join](configuration/using/schema/join.md)
+         + [Key](configuration/using/schema/key.md)
          + [Keyfield](configuration/using/schema/keyfield.md)
-         + [Methode](configuration/using/schema/method.md)
-         + [Methoden](configuration/using/schema/methods.md)
+         + [Method](configuration/using/schema/method.md)
+         + [Methods](configuration/using/schema/methods.md)
          + [Param](configuration/using/schema/param.md)
          + [Parameters](configuration/using/schema/parameters.md)
          + [SrcSchema](configuration/using/schema/srcschema.md)
          + [Sysfilter](configuration/using/schema/sysfilter.md)
-         + [Waarde](configuration/using/schema/value.md)
+         + [Value](configuration/using/schema/value.md)
    + Schema’s bewerken {#editing-schemas}
       + [De schema-editor](configuration/using/about-schema-edition.md)
       + [Dataschema’s](configuration/using/data-schemas.md)
