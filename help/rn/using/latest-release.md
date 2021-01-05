@@ -98,7 +98,7 @@ Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](../..
 **Verbeteringen**
 
 * Er zijn verschillende verbeteringen aangebracht in de **clientconsole**:
-   * Het verbindingsprotocol is bijgewerkt om het nieuwe IMS authentificatiemechanisme te volgen. De upgrade van de server- en clientconsole is verplicht om verbinding te kunnen maken na 21 maart 2021.
+   * Het verbindingsprotocol is bijgewerkt en aangepast aan het nieuwe IMS-verificatiemechanisme. De upgrade van de server- en clientconsole is verplicht om verbinding te kunnen maken na 21 maart 2021.
    * Om incompatibiliteit met bepaalde GPO-regelbeperkingen voor internetbeveiliging te voorkomen is het aanmeldingsscherm van de Campaign-clientconsole vervangen door een ingebouwd standaard Windows-formulier.
    * Er is een probleem verholpen met het kopiëren/plakken van activiteiten in een workflow op een 64-bits clientconsole. (NEO-27635)
    * In het menu **Info** is informatie toegevoegd om 64- en 32-bitsconsoles van elkaar te onderscheiden.
