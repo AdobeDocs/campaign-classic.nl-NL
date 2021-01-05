@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: b1d75ff748bab08b45c55621b63e7565564e113d
+source-git-commit: 88172a79aad37e6a311b144f4ea685bb4846825b
 workflow-type: tm+mt
-source-wordcount: '3729'
-ht-degree: 98%
+source-wordcount: '3814'
+ht-degree: 96%
 
 ---
 
@@ -20,6 +20,16 @@ ht-degree: 98%
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates per maand en per Campaign-release.
 
 U kunt ook de [Adobe Campaign Classic-release-opmerkingen](../../rn/using/latest-release.md) raadplegen voor meer updates.
+
+## Januari 2021 {#jan,2021}
+
+De sectie **[!UICONTROL Fork]** activiteit is verrijkt met extra informatie. Er is een opmerking toegevoegd om aan te geven dat de uitgaande overgangen niet gelijktijdig worden uitgevoerd en dat de activiteit daarom niet mag worden gebruikt om de prestaties van de workflows te verbeteren. [Meer informatie](../../workflow/using/fork.md)
+
+De sectie Locating Tomcat-versie is [hier](../../production/using/locate-tomcat-version.md) geplaatst.
+
+De lijst van technische werkstromen met de bijbehorende pakketten is gereorganiseerd in één enkele pagina. [Meer informatie](../../workflow/using/about-technical-workflows.md)
+
+Het gedeelte Problemen oplossen van problemen in de handleiding voor bewaking is gereorganiseerd en verbeterd met een bestemmingspagina. [Meer informatie](../../production/using/troubleshooting.md).
 
 ## December 2020 {#dec-2020}
 
@@ -149,7 +159,7 @@ De [Opmerkingen bij de release](../../rn/using/latest-release.md) zijn opnieuw i
 
 Er is een nieuwe sectie toegevoegd met richtlijnen voor Campaign Classic-bewaking. [Meer informatie](../../production/using/monitoring-guidelines.md)
 
-De sectie Privacy en instemming is verbeterd met meer gedetailleerde informatie en handige koppelingen. [Meer informatie](../../platform/using/privacy-and-recommendations.md).
+De sectie Privacy en instemming is verbeterd met meer gedetailleerde informatie en handige koppelingen. [Meer informatie](../../platform/using/privacy-and-recommendations.md)
 
 De pagina Privacybeheer in Campaign Classic is bijgewerkt met informatie over het veld Regulation, dat nu beschikbaar is wanneer de API wordt gebruikt waarmee het automatische proces voor het verzoek om toegang tot persoonsgegevens kan worden ingesteld. [Meer informatie](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
