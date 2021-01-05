@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 86dab2e03aa7a07d88d9a1df5e4015b001451d2e
 workflow-type: tm+mt
 source-wordcount: '434'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -37,13 +37,13 @@ De **laatste GA-builds** zijn: [Gold Standard 10-release](../../rn/using/gold-st
 
 De **laatste RC-build** is [Campaign Classic 20.3-release](../../rn/using/latest-release.md)
 
-![](assets/do-not-localize/red3.png) **Vervangen**  - Geen implementatie. Bestaande implementaties moeten worden verbeterd.
+![](assets/do-not-localize/red3.png) **Afgeschaft** - Geen implementatie. Bestaande implementaties moeten worden opgewaardeerd.
 
 ## Aanbevelingen{#recommendations}
 
 Voor een stabiele configuratie adviseren we u dezelfde stabiele build te installeren op alle servers die op dezelfde clientconfiguratie worden uitgevoerd.
 
-Bovendien zou de cliëntconsole op de zelfde bouwstijl moeten zijn zoals de serverinstantie.
+Bovendien moet de clientconsole op dezelfde build worden uitgevoerd als de serverinstantie.
 
 Houd uw implementatie up-to-date door de pagina’s [Verouderde en verwijderde functies](../../rn/using/deprecated-features.md) en [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) te lezen bij elke nieuwe release.
 
