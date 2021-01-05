@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -35,7 +35,7 @@ _22 december 2020_
 
 De build 9032@2a2a028 bevat de volgende verbeteringen en oplossingen:
 
-* Het verbindingsprotocol is bijgewerkt om het nieuwe IMS authentificatiemechanisme te volgen.
+* Het verbindingsprotocol is bijgewerkt en aangepast aan het nieuwe IMS-verificatiemechanisme.
 
 * De Triggers-integratieverificatie die oorspronkelijk was gebaseerd op de oAUTH-verificatieset-up voor toegang tot de pipeline is nu gewijzigd en verplaatst naar Adobe I/O. [Meer informatie](../../integrations/using/configuring-adobe-io.md)
 
