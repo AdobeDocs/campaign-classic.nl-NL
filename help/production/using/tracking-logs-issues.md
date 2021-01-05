@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 13%
@@ -19,15 +19,16 @@ ht-degree: 13%
 
 Er kunnen veelvoudige redenen voor het volgen van logboeken zijn niet door:sturen. We raden u aan de volgende gegevens te controleren:
 
-* Heeft de **Tracking**-workflow fouten?
+* **Heeft de****traceringsworkflow fouten?**
 
-   Zie [Technische workflows controleren](../../workflow/using/monitoring-technical-workflows.md).
+Zie [Technische workflows controleren](../../workflow/using/monitoring-technical-workflows.md).
 
-   ![](assets/tracking_scheduled_task.png)
+![](assets/tracking_scheduled_task.png)
 
-* Wordt de module **trackinglogd** uitgevoerd op de server?
+* **Wordt de module****die logardrunning op de server volgt?**
 
-   Zie [Logbestanden](../../production/using/log-files.md).
+Zie [Logbestanden](../../production/using/log-files.md).
 
-* Zijn er wijzigingen aangebracht? Zij kunnen een verlies van verbinding aan de servers teweegbrengen gebruikend de volgende alias.
+* **Zijn er wijzigingen aangebracht?**
 
+Zij kunnen een verlies van verbinding aan de servers teweegbrengen gebruikend de volgende alias.
