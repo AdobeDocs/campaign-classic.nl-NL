@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: b1d75ff748bab08b45c55621b63e7565564e113d
 workflow-type: tm+mt
 source-wordcount: '3729'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -23,9 +23,9 @@ U kunt ook de [Adobe Campaign Classic-release-opmerkingen](../../rn/using/latest
 
 ## December 2020 {#dec-2020}
 
-De rubriek &quot;monitoring van de levering&quot; is gereorganiseerd in thematische onderwerpen. [Meer informatie](../../delivery/using/about-delivery-monitoring.md)
+De sectie over leveringscontrole is opnieuw ingedeeld in thematische onderwerpen. [Meer informatie](../../delivery/using/about-delivery-monitoring.md)
 
-Een gebruiksgeval is toegevoegd op hoe te om IP van afzenders adressen aan de leveringslogboeken toe te voegen. [Meer informatie](../../delivery/using/delivery-dashboard.md#use-case)
+Er is een gebruiksscenario toegevoegd met informatie over het toevoegen van IP-adressen van afzenders aan de verzendingslogs. [Meer informatie](../../delivery/using/delivery-dashboard.md#use-case)
 
 De veelgestelde vragen over privacy zijn verplaatst naar [deze sectie](../../platform/using/privacy-faq.md).
 
