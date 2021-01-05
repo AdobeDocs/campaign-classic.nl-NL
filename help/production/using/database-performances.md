@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 8%
@@ -19,10 +19,10 @@ ht-degree: 8%
 
 De meeste prestatieproblemen houden verband met databaseonderhoud. Hier volgen vier belangrijke aanwijzingen om u te helpen de oorzaak van langzame prestaties te vinden:
 
-* Configuratie,
-* Installatie en configuratie van het Adobe Campaign-platform;
-* Databaseonderhoud,
-* Realtime diagnose.
+* Configuratie
+* Installatie en configuratie van het Adobe Campaign-platform
+* Databaseonderhoud
+* Realtime diagnose
 
 ## Configuratie {#configuration}
 
