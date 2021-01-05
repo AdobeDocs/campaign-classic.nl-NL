@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 3%
@@ -17,13 +17,13 @@ ht-degree: 3%
 
 # Problemen met prestaties en doorvoer{#performance-and-throughput-issues}
 
->[!NOTE]
->
->Eerst en vooral, zou u moeten controleren dat u de recentste bouwstijl hebt geïnstalleerd. Dit zorgt ervoor dat u de recentste eigenschappen en insectenmoeilijke situaties hebt. Raadpleeg de [Opmerkingen bij de release](../../rn/using/latest-release.md) voor meer informatie over de inhoud van elke release.
+Eerst en vooral, zou u moeten controleren dat u de recentste bouwstijl hebt geïnstalleerd. Dit zorgt ervoor dat u de recentste eigenschappen en insectenmoeilijke situaties hebt.
+
+Raadpleeg de [Opmerkingen bij de release](../../rn/using/latest-release.md) voor meer informatie over de inhoud van elke release.
 
 ## Hardware en infrastructuur {#hardware-and-infrastructure}
 
-Algemene richtlijnen voor hardwarevereisten voor on-premise Campaign Classic worden beschreven in dit [artikel](https://helpx.adobe.com/nl/campaign/kb/hardware-sizing-guide.html).
+Algemene richtlijnen voor hardwarevereisten voor on-premise Campaign Classic worden gedetailleerd op deze [pagina](https://helpx.adobe.com/nl/campaign/kb/hardware-sizing-guide.html).
 
 Het raadplegende team kan ontvangen klanten een hulpmiddel verstrekken dat u toestaat om gemakkelijk te bekijken hoeveel ruimte door diverse types van lijsten in het gegevensbestand evenals de ruimte wordt gebruikt die op de plaats SFTP wordt gebruikt. Daarnaast beschikt de toepassing over gereedschappen waarmee u overbodige gegevens kunt opschonen. Neem contact op met de consulteer- of supportteams als u dit hulpprogramma nodig hebt. Hier volgen enkele belangrijke zaken die u met dit gereedschap kunt controleren:
 
@@ -33,7 +33,7 @@ Het raadplegende team kan ontvangen klanten een hulpmiddel verstrekken dat u toe
 
 Adobe Campaign biedt ook een [tool](../../production/using/monitoring-processes.md#manual-monitoring) om het CPU- en RAM-gebruik te controleren. Gebruik dit hulpmiddel en bekijk specifieke indicatoren zoals: **Geheugen**, **Geheugen omwisselen**, **Schijf**, **Actieve processen**. Als de waarden te hoog zijn, kunt u proberen het aantal werkstromen te verminderen of werkschema&#39;s plannen om op verschillende tijden te beginnen.
 
-## Databaseprestaties {#database-performances}
+## Databasecontrole {#database-performances}
 
 Meestal zijn prestatieproblemen gekoppeld aan databaseonderhoud. Hier volgen de belangrijkste onderdelen:
 
@@ -68,4 +68,3 @@ Hier volgt een lijst met best practices en artikelen met betrekking tot de te le
 >[!NOTE]
 >
 >Zie ook [Belangrijke punten van de leveringssleutel](../../delivery/using/deliverability-key-points.md) sectie.
-
