@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 86dab2e03aa7a07d88d9a1df5e4015b001451d2e
+source-git-commit: 802818fcd27e0dc40cc640092da1ef70ff21a191
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 100%
+source-wordcount: '437'
+ht-degree: 94%
 
 ---
 
@@ -55,7 +55,7 @@ Als on-premise gebruiker kunt u de upgrade zelf uitvoeren. Hiervoor moet u de [n
 
 ### Gold Standard{#upgrade-for-gold-standard-users}
 
-Als Gold Standard-gebruiker profiteert u automatisch van de Gold Standard-upgrade met de [nieuwste GA-build](../../rn/using/gold-standard.md#gs-10) zonder actie te hoeven ondernemen. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html).
+Als gehoste gebruiker van de Gold Standard profiteert u automatisch van de Gold Standard-upgrade met de [nieuwste versie van de GA Gold Standard build](../../rn/using/gold-standard.md#gs-10) zonder enige actie. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html).
 
 >[!NOTE]
 >De compatibiliteitsmatrix voor Gold Standard is beschikbaar in de [GA-compatibiliteitsmatrix](../../rn/using/compatibility-matrix-gs.md).
