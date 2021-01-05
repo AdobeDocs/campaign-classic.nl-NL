@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 translation-type: tm+mt
-source-git-commit: 5bc6c8a824929c6a61cf562fc961e5bdd1867837
+source-git-commit: 1788346f7dfe2c18c490363c90358fcb737f1646
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 8%
+source-wordcount: '236'
+ht-degree: 4%
 
 ---
 
@@ -37,11 +37,17 @@ Standaard worden ze in submappen gesorteerd op leveringsmaand. Deze soort kan in
 >
 >Voor ontvangen of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, kunnen alle transactionele berichten ook met Adobe Campaign Verbeterde MTA voor betere leverability, productie, en stuitbehandeling worden verzonden. Alle effecten zijn gelijk aan die voor standaardmarketingberichten en worden beschreven in het document [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/nl/campaign/kb/acc-campaign-enhanced-mta.html).
 
-<!--## Transactional message monitoring {#transactional-message-monitoring}
+## Controle van het transactiebericht {#transactional-message-monitoring}
 
-To monitor your transactional messages, check the delivery logs. Accessing the delivery logs is presented in [this section](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history).
+Controleer de leveringslogboeken om de transactiemeldingen te controleren. De toegang tot de leveringslogboeken wordt voorgesteld in [deze sectie](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 
-The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
+De transactionele leveringen die van de uitvoeringsinstantie worden verzonden worden gesynchroniseerd terug naar de controleinstantie door een technisch werkschema (**[!UICONTROL Message Center execution instance]**) dat elk uur in werking stelt.
+
+>[!NOTE]
+>
+>De leveringenwekelijkse accumulatie van de gebeurtenissen op basis van de meest recente update van de gebeurtenis en niet op de aanmaakdatum van de gebeurtenis. Daarom wanneer het halen van transactioneel overseinenleveringslogboeken van de controleinstantie, levert identiteitskaart verbonden aan elke identiteitskaart van het leveringslogboek kan in tijd veranderen aangezien het logboek wordt bijgewerkt (bijvoorbeeld, wanneer een binnenkomende stuit voor de gebeurtenis wordt ontvangen).
+
+<!--The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
 
 Let's take a [delivery template](../../message-center/using/introduction.md) labelled *Template_1*.
 
