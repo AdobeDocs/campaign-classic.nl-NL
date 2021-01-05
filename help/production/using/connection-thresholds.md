@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 3%
@@ -21,11 +21,13 @@ Voor zwaar geladen servers, zou de verbindingsdrempel kunnen worden overschreden
 
 Er zijn drie verschillende drempels:
 
-1. De verbindingsdrempel van het Web, die in uw Webserver wordt gevormd. Neem contact op met de systeembeheerder om het bestand te wijzigen.
-1. De drempel voor databaseverbinding. Neem contact op met de databasebeheerder om deze te wijzigen.
-1. De Adobe Campaign-verbindingsdrempel, beschikbaar op twee plaatsen:
+* De **Webverbindingsdrempel**, geconfigureerd in uw webserver. Neem contact op met de systeembeheerder om het bestand te wijzigen.
 
-   * Tomcat-zijde: alle vragen die daadwerkelijk op de Adobe Campaign Tomcat-client aankomen.
+* De **drempel voor databaseverbinding**. Neem contact op met de databasebeheerder om deze te wijzigen.
+
+* De **Adobe Campaign-verbindingsdrempel**, beschikbaar op twee plaatsen:
+
+   * **** Tomcatside: alle vragen die daadwerkelijk op de Adobe Campaign Tomcat-client aankomen.
 
       Deze drempel wordt gevormd in **nl6/tomcat-8/conf/server.xml** dossier. Met het kenmerk **maxThreads** kunt u de drempel verhogen voor het aantal query&#39;s dat tegelijkertijd wordt verwerkt. Het kan bijvoorbeeld worden gewijzigd in 250.
 
@@ -41,7 +43,7 @@ Er zijn drie verschillende drempels:
                   unpackWARs="true" autoDeploy="true">
       ```
 
-   * Database: reeks van alle verbindingen opent tezelfdertijd op het gegevensbestand door een proces.
+   * **Database**: reeks van alle verbindingen opent tezelfdertijd op het gegevensbestand door een proces.
 
       Deze drempel wordt gevormd in het dossier **nl6/conf/serverConf.xml**. Met het **maxCnx**-kenmerk in **datasource pool** kunt u de drempel verhogen voor gelijktijdig verwerkte query&#39;s.
 
