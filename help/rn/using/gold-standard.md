@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 802818fcd27e0dc40cc640092da1ef70ff21a191
+source-git-commit: dcef36c3ce14c45cb08a79180938ad8d26fa6549
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '938'
 ht-degree: 86%
 
 ---
@@ -25,7 +25,7 @@ Deze pagina vermeldt de Gold Standard-releases.
 
 Raadpleeg [dit artikel](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html)voor meer informatie over het Campaign Gold Standard-programma.
 
-## ![](assets/do-not-localize/limited_2.png) De Gold Standard 11-release{#gs-11}
+## ![](assets/do-not-localize/green_2.png) De Gold Standard 11-release{#gs-11}
 
 _22 december 2020_
 
@@ -33,7 +33,7 @@ _22 december 2020_
 >
 >Deze versie wordt geleverd met een nieuw verbindingsprotocol: De upgrade is verplicht voor zowel de campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na 21 maart 2021.
 
-De build 9032@2a2a028 bevat de volgende verbeteringen en oplossingen:
+De build 9032@d3b452f bevat de volgende verbeteringen en oplossingen:
 
 * Het verbindingsprotocol is bijgewerkt en aangepast aan het nieuwe IMS-verificatiemechanisme.
 
@@ -43,7 +43,7 @@ De build 9032@2a2a028 bevat de volgende verbeteringen en oplossingen:
 
 * Oplossing voor een beveiligingsprobleem dat de beveiliging tegen SSRF-problemen (Server Side Request Smeery) moet versterken. (NEO-27777)
 
-## ![](assets/do-not-localize/green_2.png) De Gold Standard 10-release{#gs-10}
+## ![](assets/do-not-localize/red_2.png) De Gold Standard 10-release{#gs-10}
 
 _7 juli 2020_
 
