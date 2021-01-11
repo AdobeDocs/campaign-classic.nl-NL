@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+source-git-commit: 5b7639e7e64d4cb42d3ae77b04ba90a45fb58159
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 97%
+source-wordcount: '1911'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,14 @@ Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden 
 
 Voor de Campaign Classic Gold Standard-versie (nieuwste GA-build) [raadpleegt u deze pagina](../../rn/using/gold-standard.md).
 
-## ![](assets/do-not-localize/blue_2.png) Release 20.3.1 - build 9228 {#release-20-3-1-build-9228}
+## ![](assets/do-not-localize/blue_2.png) Release 20.3.3 - build 9234 {#release-20-3-3-build-9234}
+
+_11 januari 2021_
+
+* Oplossing voor een beveiligingsprobleem dat de beveiliging tegen SSRF-problemen (Server Side Request Smeery) moet versterken. (NEO-27777)
+* Oplossing van een regressieprobleem met betrekking tot het proces van de breedtegeneratie dat het proces MTA kon veroorzaken om te crashen.
+
+## ![](assets/do-not-localize/red_2.png) Release 20.3.1 - build 9228 {#release-20-3-1-build-9228}
 
 _27 oktober 2020_
 
