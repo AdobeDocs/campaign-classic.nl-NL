@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: b7f44f4c18bef4cc412af878846b2c4305a17787
+source-git-commit: f24642223a2ec9f3d8e78e2f7e71a55bf14b80c7
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 9%
@@ -20,7 +20,7 @@ ht-degree: 9%
 U kunt een verloren wachtwoord wijzigen of herstellen.
 Er zijn twee mogelijke scenario&#39;s:
 
-* **Wachtwoord verloren door een Adobe Campaign-operator**
+**Wachtwoord verloren door een Adobe Campaign-operator**
 
 In dat geval kunt u het wachtwoord van de betreffende operator wijzigen.
 Volg de onderstaande stappen om dit te doen:
@@ -33,7 +33,7 @@ Volg de onderstaande stappen om dit te doen:
 
 1. Stel het nieuwe wachtwoord van de operator in. We raden aan dat de operatoren hun wachtwoord wijzigen wanneer ze opnieuw verbinden.
 
-* **Verlies van intern wachtwoord (alleen on-premise klanten)**
+**Verlies van intern wachtwoord (alleen on-premise klanten)**
 
 Als het interne wachtwoord verloren gaat, moet u het opnieuw initialiseren.
 Hiervoor volgt u de volgende procedure:
