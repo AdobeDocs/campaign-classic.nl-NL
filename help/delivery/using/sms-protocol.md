@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 09a79330e1ff951898d1559d5765818c12dc497a
+source-git-commit: 9a104fdc7bed89f56178d5ab638e1440e6342efc
 workflow-type: tm+mt
 source-wordcount: '8424'
 ht-degree: 0%
@@ -102,7 +102,7 @@ In gescheiden **Transmitter+receiver** wijze, hangt de gebruikte verbinding van 
 
 Bijvoorbeeld, wanneer het verzenden van MT, wordt de transmissieverbinding gebruikt en `RESP` die erkent wordt MT ook verzonden door het transmissiekanaal. Wanneer u een MO (of een SR) ontvangt, wordt de ontvangerverbinding gebruikt om MO te ontvangen en `RESP` te verzenden die MO erkent.
 
-![](assets/sms_protocol_1.png)
+![](assets/do-not-localize/sms_protocol_1.png)
 
 In Adobe Campaign Classic, om SR met hun overeenkomstige MT te verbinden, is identiteitskaart teruggekeerd door SMSC met `SUBMIT_SM_RESP` en `DELIVER_SM` stappen. De id wordt opgeslagen in het veld `providerId` van de tabel `nms::providerMsgId` en is gekoppeld aan `broadLogId` en `deliveryId`. Deze passende verrichting wordt gedaan door het proces van SMS wanneer het schrijven aan het gegevensbestand.
 
@@ -299,7 +299,7 @@ In dit voorbeeld wordt het geval van een implementatie weergegeven volgens de aa
 id:1234567890 sub:001 dlvrd:001 submit date:1608011415 done date:1608011417 stat:DELIVRD err:000 Text:Hello Adobe world
 ```
 
-Eerst, wordt `id extraction` regex toegepast om identiteitskaart te halen en het met overeenkomstige MT te verzoenen.
+Eerst, wordt `id extraction` regex toegepast om identiteitskaart te halen en het met overeenkomstige MT in overeenstemming te brengen.
 
 Vervolgens worden de `status extraction` regex en `error code extraction` regex toegepast om deze velden te extraheren en worden deze aan de tekenreeks toegevoegd.
 
@@ -505,7 +505,7 @@ Het venster is het aantal `SUBMIT_SM PDU`s dat kan worden verzonden zonder te wa
 
 Voorbeeld van een transmissie met een maximum venster van 4:
 
-![](assets/sms_protocol_2.png)
+![](assets/do-not-localize/sms_protocol_2.png)
 
 De vensterhulp verhoogt de productie wanneer de netwerkverbinding een hoge latentie heeft.  De waarde van het venster moet ten minste het aantal SMS/s zijn, vermenigvuldigd met de latentie van de koppeling
 in seconden zodat wacht de schakelaar nooit op `SUBMIT_SM_RESP` alvorens het volgende bericht te verzenden.
@@ -772,7 +772,7 @@ De geldigheidsperiode wordt doorgegeven in het veld `validity_period` van `SUBMI
 
 ## Uitgebreide algemene SMPP-aansluiting {#acc-extended-connector}
 
-![](assets/sms_protocol_4.png)
+![](assets/do-not-localize/sms_protocol_4.png)
 
 Pijlen vertegenwoordigen gegevensstromen.
 
