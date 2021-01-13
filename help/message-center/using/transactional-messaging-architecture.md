@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: d45f393083ec540025a9e001b089a8b1241a8c99
+source-git-commit: 2d30a70f8fbfb7a916638697c0f7a5060c2458ee
 workflow-type: tm+mt
 source-wordcount: '1025'
 ht-degree: 1%
@@ -74,9 +74,9 @@ Nochtans, als u een transactie overseinenproject op het e-mailkanaal bent begonn
 >
 >Deze procedure is alleen van toepassing op klanten die een Windows NLServer gebruiken die op dezelfde computer is geïnstalleerd als waarop zij werken.
 
-1. Installeer het kanaal dat u nodig hebt, bijvoorbeeld het **Mobiel kanaal**, met de wizard Pakket importeren ( **[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]** ).
-1. Voer een dossier de invoer ( **[!UICONTROL Tools > Advanced > Import package... > File]**) uit, en selecteer **datakitnms **`[Your language]`**packmanagementCenter.xml** dossier.
-1. Bewaar in **[!UICONTROL XML content of the data to import]** alleen de leversjabloon die overeenkomt met het toegevoegde kanaal. Als u bijvoorbeeld het **Mobiel kanaal** hebt toegevoegd, dient u alleen het element **entities** te behouden dat overeenkomt met het **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Als u **Mobiel App Channel** hebt toegevoegd, bewaart u alleen het **iOS-transactiebericht** (iosTriggerMessage) en het **Android-transactiebericht** (androidTriggerMessage).
+1. Installeer het kanaal dat u nodig hebt, bijvoorbeeld het **Mobiel kanaal**, met de wizard Pakket importeren (**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**).
+1. Voer een dossierinvoer (**[!UICONTROL Tools > Advanced > Import package... > File]**) uit, en selecteer **datakitnms **`[Your language]`**packmanagementCenter.xml** dossier.
+1. Bewaar in het **[!UICONTROL XML content of the data to import]** alleen de leveringssjabloon die overeenkomt met het toegevoegde kanaal. Als u bijvoorbeeld het **Mobiel kanaal** hebt toegevoegd, dient u alleen het element **entities** te behouden dat overeenkomt met het **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Als u **Mobiel App Channel** hebt toegevoegd, bewaart u alleen het **iOS-transactiebericht** (iosTriggerMessage) en het **Android-transactiebericht** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
 
