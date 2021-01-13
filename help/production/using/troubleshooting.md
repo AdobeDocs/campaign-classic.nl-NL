@@ -7,30 +7,31 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: a490744e4a94a498fbd0205f119617137910d40c
+source-git-commit: 0f2986f88f72c191262248029ec620fad538c218
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 13%
+source-wordcount: '219'
+ht-degree: 11%
 
 ---
 
 
 # Problemen met productie oplossen{#troubleshooting}
 
-Dit gedeelte bevat procedures voor het oplossen van problemen met betrekking tot algemene Adobe Campaign-productieproblemen, zoals levering en workflowuitvoering, bewaking, databaseonderhoud of verbinding.
+Dit gedeelte bevat procedures voor het oplossen van problemen met betrekking tot algemene Adobe Campaign-productieproblemen, zoals levering en workflowuitvoering, bewaking, databaseonderhoud, verbinding, enzovoort.
 
 ## Algemene en algemene kwesties {#common-and-general-issues}
 
 * Deze [pagina](../../production/using/modules-and-frequent-issues.md) presenteert de frequentste problemen die voor de vermelde modules worden ontmoet.
-* Deze [pagina](../../production/using/workflow-execution.md) maakt een lijst van gemeenschappelijke het oplossen van problemenprocedures u zou moeten volgen wanneer het ontmoeten van kwesties met werkschemauitvoering.
+* Deze [pagina](../../production/using/workflow-execution.md) maakt een lijst van gemeenschappelijke het oplossen van problemenprocedures u zou moeten volgen wanneer het onder ogen zien van kwesties met werkschemauitvoering.
 * Deze [pagina](../../production/using/lost-password.md) details om een verloren wachtwoord te veranderen of terug te krijgen.
 * Deze [pagina](../../production/using/console-update.md) details hoe te om het verzoek van de consoleupdate opnieuw te activeren als u de overeenkomstige optie onbruikbaar maakt.
 
 ## Problemen met levering oplossen {#delivery-troubleshooting}
 
-Specifieke acties kunnen worden uitgevoerd wanneer problemen met leveringen optreden:
+Specifieke acties kunnen worden uitgevoerd bij problemen met leveringen:
 * [Leverbaarheidsproblemen](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
-* [Afbeeldingsweergaveproblemen ](../../production/using/image-display-issues.md) en  [afbeelding ontbreekt](../../production/using/images-missing.md)
+* [Problemen met weergave van afbeeldingen](../../production/using/image-display-issues.md)
+* [Afbeelding ontbreekt](../../production/using/images-missing.md)
 * [Problemen met](../../production/using/temporary-files.md)  tijdelijke bestanden (alleen ** hostingmodellen op locatie)
 
 **Verwant onderwerp**:
@@ -39,21 +40,29 @@ Specifieke acties kunnen worden uitgevoerd wanneer problemen met leveringen optr
 
 ## Werken met logbestanden {#working-with-logs}
 
+Hier volgen enkele tips voor het verbeteren van uw ervaring met logboeken:
+
 * [Logboekprecisie](../../production/using/log-precision.md)
 * [Logboekproblemen bijhouden](../../production/using/tracking-logs-issues.md)
 
 ## Databaseproblemen {#database-issues}
+
+Ontdek hoe u prestatieproblemen kunt oplossen door de volgende secties uit te lezen:
 
 * [Databaseprestaties](../../production/using/database-performances.md)
 * [Codering van de Oracle-database](../../production/using/encoding-of-the-oracle-database.md)
 
 ## Verbindingsverbeteringen {#connection-improvements}
 
+Als u verbindingsproblemen tegenkomt, kunt u deze op een aantal manieren verhelpen:
+
 * [Mislukte verbinding](../../production/using/failure-to-connect.md)
 * [Drempelwaarden voor verbinding](../../production/using/connection-thresholds.md)
 
 ## Technische problemen {#technical-troubleshooting}
 
+Ga naar de volgende secties voor meer informatie over specifieke problemen:
+
 * [Stacktracering in Linux](../../production/using/stack-trace-in-linux.md)
 * [JSP-gedrag](../../production/using/jsp-behavior.md)
-<!-- * [Locating Tomcat version](../../production/using/locate-tomcat-version.md)-->
+* [Tomcat-versie zoeken](../../production/using/locate-tomcat-version.md)
