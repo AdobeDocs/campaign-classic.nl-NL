@@ -7,7 +7,7 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5d5d4b87bae44ce0a93458f79179434a5bf315c3
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 1%
@@ -68,5 +68,6 @@ Wanneer u afbeeldingen invoegt in de inhoud van een levering die op deze sjabloo
 
 >[!NOTE]
 >
->Als het **[!UICONTROL Integration with the Adobe Experience Cloud]**-pakket ook op uw Adobe Campaign-instantie is geïnstalleerd, kunt u alleen de elementen gebruiken die beschikbaar zijn in de Adobe Experience Cloud-bibliotheek. Als u ook toegang wilt tot de elementen in uw AEM Assets-bibliotheek, moet u AEM Assets en Adobe Experience Cloud synchroniseren. De middelen in AEM Assets zijn dan ook beschikbaar in de Adobe Experience Cloud-bibliotheek. In dit geval hoeft u geen specifieke leveringssjabloon te maken. Raadpleeg de [gedetailleerde documentatie](https://docs.adobe.com/docs/en/aod/overview/collaborating/aem-assets-aod-sync.html) voor meer informatie over het synchroniseren tussen AEM Assets en Adobe Experience Cloud.
+>Als het **[!UICONTROL Integration with the Adobe Experience Cloud]**-pakket ook op uw Adobe Campaign-instantie is geïnstalleerd, kunt u alleen de elementen gebruiken die beschikbaar zijn in de Adobe Experience Cloud-bibliotheek. Als u ook toegang wilt tot de elementen in uw AEM Assets-bibliotheek, moet u AEM Assets en Adobe Experience Cloud synchroniseren. De middelen in AEM Assets zijn dan ook beschikbaar in de Adobe Experience Cloud-bibliotheek. In dit geval hoeft u geen specifieke leveringssjabloon te maken. Raadpleeg de [gedetailleerde documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/configure-assets-cc-integration.html#integration) voor meer informatie over het synchroniseren tussen AEM Assets en Adobe Experience Cloud.
+
 
