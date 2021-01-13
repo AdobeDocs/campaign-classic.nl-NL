@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 translation-type: tm+mt
-source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
+source-git-commit: d35b22386bd2681ba02e4379c627821b35a7d04e
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%
@@ -26,7 +26,7 @@ U kunt bijvoorbeeld de activiteit na een query gebruiken om twee acties parallel
 
 U kunt de activiteit ook gebruiken in de context van het creëren van inhoud en levering verzendend automatisering, om de doelberekening en de verwezenlijking van inhoud parallel te lanceren. Er is een speciaal geval voor gebruik beschikbaar in [deze sectie](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content).
 
->[!WARNING]
+>[!IMPORTANT]
 >
 >Onthoud dat de uitgaande overgangen die na een vorkactiviteit worden toegevoegd, niet tegelijkertijd worden uitgevoerd.
 >
