@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1214'
 ht-degree: 1%
 
 ---
@@ -211,17 +211,6 @@ De beschikbare opties zijn als volgt:
 ## Afbeeldingen en animaties beheren {#managing-images-and-animations}
 
 Met de Digital Content Editor kunt u aan **elk type afbeelding** werken dat compatibel is met browsers.
-
-Om compatibel te zijn met de DCE, moeten het type **&quot;Flash&quot;animaties** op de volgende manier in een HTML- pagina worden opgenomen:
-
-```
-<object type="application/x-shockwave-flash" data="https://www.mydomain.com/flash/your_animation.swf" width="200" height="400">
- <param name="movie" value="https://www.mydomain.com/flash/your_animation.swf" />
- <param name="quality" value="high" />
- <param name="play" value="true"/>
- <param name="loop" value="true"/> 
-</object>
-```
 
 >[!CAUTION]
 >
