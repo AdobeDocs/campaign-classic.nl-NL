@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
 workflow-type: tm+mt
-source-wordcount: '1675'
-ht-degree: 10%
+source-wordcount: '1525'
+ht-degree: 11%
 
 ---
 
@@ -34,7 +34,6 @@ U kunt de volgende typen externe accounts instellen:
 * [Extern Adobe Experience Manager-account](#adobe-experience-manager-external-account)
 * [Amazon Simple Storage Service (S3) externe account](#amazon-simple-storage-service--s3--external-account)
 * [Externe account voor Microsoft Dynamics CRM](#microsoft-dynamics-crm-external-account)
-* [Oracle op verzoek externe rekening](#oracle-on-demand-external-account)
 * [Externe rekening Salesforce CRM](#salesforce-crm-external-account)
 
 ## Een extern account maken {#creating-an-external-account}
@@ -331,35 +330,11 @@ Om te leren waar te om toegangs belangrijkste identiteitskaart en geheime toegan
 
 Met de externe account **[!UICONTROL Microsoft Dynamics CRM]** kunt u Microsoft Dynamics-gegevens importeren en exporteren naar Adobe Campaign.
 
-De configuratie voor de schakelaar van de Dynamiek van Microsoft om met Adobe Campaign te werken hangt van uw plaatsingstype af.
-Met **[!UICONTROL On-premise]** en **[!UICONTROL Office 365]** plaatsingstypes, moet u de volgende details verstrekken:
+Meer informatie over Campagne - de schakelaar van CRM van de Dynamica van Microsoft in deze [pagina](../../platform/using/crm-ms-dynamics.md).
 
-![](assets/ext_account_21.png)
-
-* **[!UICONTROL Account]**
-
-   Account gebruikt om u aan te melden bij Microsoft CRM.
-
-* **[!UICONTROL Server]**
-
-   URL van uw Microsoft CRM-server.
-
-* **[!UICONTROL Password]**
-
-   Wachtwoord gebruikt om binnen aan Microsoft CRM te ondertekenen.
-
-* **[!UICONTROL Company name]** voor on-premise en de plaatsing van Office 365
-
-   Naam van uw bedrijf.
-
-* **[!UICONTROL Organization name]** voor on-premise implementatie
-
-   Naam van uw organisatie.
-De naam van de organisatie die in het dashboard van de Middelen van Ontwikkelaars in de Dynamica van Microsoft, **[!UICONTROL Unique Name]** gebied kan worden gevonden.
-
-* **[!UICONTROL CRM version]** voor on-premise
-
-   Versie van de CRM tussen **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** of **[!UICONTROL Dynamics CRM 2016]**.
+>[!NOTE]
+>
+> **[!UICONTROL On-premise]** en de  **[!UICONTROL Office 365]** plaatsingstypes zijn nu verouderd. [Meer informatie](../../rn/using/deprecated-features.md).
 
 Met **[!UICONTROL Web API]** plaatsingstype en **[!UICONTROL Password credentials]** authentificatie, moet u de volgende details verstrekken:
 
@@ -405,29 +380,7 @@ Met **[!UICONTROL Web API]** plaatsingstype en **[!UICONTROL Certificate]** auth
 
    Versie van de CRM tussen **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** of **[!UICONTROL Dynamics CRM 2016]**.
 
-Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../platform/using/crm-connectors.md#example-for-microsoft-dynamics).
-
-## Oracle op verzoek externe account {#oracle-on-demand-external-account}
-
-Met de externe account **[!UICONTROL Oracle on demand]** kunt u Oracle-gegevens importeren en exporteren naar Adobe Campaign.
-
-![](assets/ext_account_18.png)
-
-Als u de externe Oracle-account op aanvraag wilt configureren voor gebruik met Adobe Campaign, moet u de volgende gegevens opgeven:
-
-* **[!UICONTROL Account]**
-
-   Account gebruikt om u aan te melden bij Oracle CRM op aanvraag.
-
-* **[!UICONTROL Server]**
-
-   URL van uw Oracle CRM op aanvraag-server.
-
-* **[!UICONTROL Password]**
-
-   Wachtwoord gebruikt om u aan te melden bij Oracle CRM op aanvraag.
-
-Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../platform/using/crm-connectors.md#example-for-oracle-on-demand).
+Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../platform/using/crm-connectors.md).
 
 ## Externe rekening Salesforce CRM {#salesforce-crm-external-account}
 
@@ -459,4 +412,4 @@ Om de externe rekening van Salesforce CRM te vormen om met Adobe Campaign te wer
 
 Voor deze externe rekening, moet u u Salesforce CRM met de configuratietovenaar vormen.
 
-Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../platform/using/crm-connectors.md#example-for-salesforce-com).
+Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../platform/using/crm-connectors.md).
