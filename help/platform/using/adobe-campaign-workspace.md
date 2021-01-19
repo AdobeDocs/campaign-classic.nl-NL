@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '2157'
 ht-degree: 2%
@@ -291,7 +291,7 @@ Klik **[!UICONTROL Save]** in het venster van omslageigenschappen. De lijstweerg
 
 Als u gegevens uit een lijst wilt exporteren, moet u een wizard voor exporteren gebruiken. Als u deze wilt openen, selecteert u de elementen die u wilt exporteren in de lijst, klikt u met de rechtermuisknop en selecteert u **[!UICONTROL Export...]**.
 
-Het gebruik van de invoer- en uitvoerfuncties wordt uitgelegd in [Algemene invoer en uitvoer](../../platform/using/generic-imports-and-exports.md).
+Het gebruik van de invoer- en uitvoerfuncties wordt uitgelegd in [Algemene invoer en uitvoer](../../platform/using/about-generic-imports-exports.md).
 
 >[!CAUTION]
 >
