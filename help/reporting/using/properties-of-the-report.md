@@ -7,9 +7,9 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '441'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ De bewerkingstaal is de taal waarin u schrijft. Wanneer u een taal toevoegt, wor
 
 Op het tabblad **[!UICONTROL Rendering]** kunt u de weergavemodus voor de pagina aanpassen. U kunt selecteren:
 
-* De engine voor het renderen van grafieken: Adobe Campaign biedt twee verschillende modi voor het genereren van diagramrendering. De renderingengine is standaard HTML 5. Indien nodig, kunt u de rendering Flash selecteren.
+* De engine voor het renderen van grafieken: standaard is de renderingengine HTML 5.
 * Het navigatietype in het rapport: via knoppen of koppelingen.
 * De standaardpositie van labels voor rapportelementen. Deze positie kan voor elk element worden overbelast.
 * De sjabloon of het thema dat wordt gebruikt voor het genereren van rapportpagina&#39;s.
