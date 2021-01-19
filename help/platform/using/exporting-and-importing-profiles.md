@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '145'
 ht-degree: 15%
 
 ---
@@ -23,13 +23,13 @@ U kunt [workflows gebruiken](#use-workflows) om ontvangersprofielen te importere
 
 ## Workflows gebruiken{#use-workflows}
 
-De uitvoer en de invoer worden gevormd in specifieke malplaatjes die door werkschema&#39;s via **[!UICONTROL Import]** en **[!UICONTROL Export]** activiteiten worden uitgevoerd. Ze kunnen automatisch volgens een schema worden herhaald, bijvoorbeeld om de gegevensuitwisseling tussen verschillende informatiesystemen te automatiseren. [Meer informatie](../../workflow/using/importing-data.md#best-practices-when-importing-data)
+Exporteren en importeren worden geconfigureerd in speciale sjablonen die via workflows via import- en exportactiviteiten worden uitgevoerd. Ze kunnen automatisch volgens een schema worden herhaald, bijvoorbeeld om de gegevensuitwisseling tussen verschillende informatiesystemen te automatiseren. [Meer informatie](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
 
 Indien nodig kunt u een incidentele import- of exporttaak maken via de hieronder beschreven functie **[!UICONTROL Generic imports and exports]**.
 
 ## Taken maken{#create-jobs}
 
-Als u taken voor het importeren en exporteren van gegevens wilt configureren en uitvoeren, gaat u naar het tabblad **[!UICONTROL Profiles and targets]** en klikt u op de koppeling **[!UICONTROL Jobs]**. [Meer informatie](../../platform/using/generic-imports-and-exports.md)
+Als u taken voor het importeren en exporteren van gegevens wilt configureren en uitvoeren, gaat u naar het tabblad **[!UICONTROL Profiles and targets]** en klikt u op de koppeling **[!UICONTROL Jobs]**. [Meer informatie](../../platform/using/about-generic-imports-exports.md)
 
 ![](assets/s_ncs_user_interface_import_link.png)
 
