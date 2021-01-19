@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 2%
@@ -92,7 +92,7 @@ De inhoud van een lijst kan worden geëxporteerd. Het exporteren configureren en
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   Voor meer op hoe te om de uitvoertovenaar te vormen, verwijs naar [tovenaar van de Uitvoer](../../platform/using/exporting-data.md#export-wizard).
+   Voor meer op hoe te om de uitvoertovenaar te vormen, verwijs naar [deze sectie](../../platform/using/executing-export-jobs.md).
 
 ## Abonneren op een service {#subscribing-to-a-service}
 
