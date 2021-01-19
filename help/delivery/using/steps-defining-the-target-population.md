@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '1579'
 ht-degree: 2%
@@ -104,7 +104,7 @@ Dit doet u als volgt:
 
 1. Wanneer het invoeren van de ontvangers, klik **[!UICONTROL File format definition...]** verbinding om het externe dossier te selecteren en te vormen.
 
-   Raadpleeg [deze sectie](../../platform/using/importing-data.md#step-2---source-file-selection) voor meer informatie over het importeren van gegevens.
+   Raadpleeg [deze sectie](../../platform/using/executing-import-jobs.md#step-2---source-file-selection) voor meer informatie over het importeren van gegevens.
 
 1. Klik **[!UICONTROL Finish]** en vorm uw levering als standaardlevering.
 
