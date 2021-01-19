@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1266'
 ht-degree: 4%
 
 ---
@@ -34,7 +34,7 @@ De volgende veldtypen zijn beschikbaar:
 
 ## HTML-inhoud {#inserting-html-content} invoegen
 
-U kunt HTML-inhoud opnemen in een formulierpagina: hypertextkoppelingen, afbeeldingen, opgemaakte alinea&#39;s, video- of Flash-objecten, enz.
+U kunt HTML-inhoud opnemen in een formulierpagina: hypertextkoppelingen, afbeeldingen, opgemaakte alinea&#39;s, video&#39;s, enzovoort.
 
 Met de HTML-editor kunt u de inhoud invoeren die u in de formulierpagina wilt invoegen. Klik op **[!UICONTROL Static elements]** > **[!UICONTROL HTML]** om de editor te openen.
 
