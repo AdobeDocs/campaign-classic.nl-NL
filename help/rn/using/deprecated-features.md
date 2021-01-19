@@ -9,10 +9,10 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 82c5f4f4c37f295a6c206eb33616ae9223740f36
+source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
 workflow-type: tm+mt
-source-wordcount: '1626'
-ht-degree: 100%
+source-wordcount: '1632'
+ht-degree: 99%
 
 ---
 
@@ -47,12 +47,13 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
   </tr>
   <tr>
   <td>CRM-connectoren<br></td>
-   <td><p>Vanaf Campaign versie 20.3 zijn de volgende CRM-connectoren afgeschaft:</p>
+   <td><p>De aanvang van Campagne 20.3 versie, de volgende schakelaars van CRM worden verouderd met Campagne:</p>
    <ul>
    <li>Soap-API - On-premise: 2007, 2015, 2016</li>
    <li>Soap-API - Online: 2015, 2016</li>
    <li>Web-API – Microsoft Dynamics CRM on-premise: 2016, 2016 Update 1</li>
    <li>Web-API – Microsoft Dynamics CRM online: 2016, 2016 Update 1</li>
+   <li>Oracle On-demand-API</li>
    </ul>
   <p><em>Doeldatum voor verwijdering: april 2021</em></p>
   </td>
