@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 15%
@@ -35,7 +35,7 @@ U kunt een vooraf uitgevoerd proces definiëren tijdens het importeren van besta
 
 ![](assets/preprocessing-dataloading.png)
 
-Raadpleeg voor meer informatie deze sectie: [Een bestand decoderen of decoderen voordat het wordt verwerkt](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing).
+Raadpleeg voor meer informatie deze sectie: [Een bestand decoderen of decoderen voordat het wordt verwerkt](../../platform/using/unzip-decrypt.md).
 
 ## Bestandsindeling {#defining-the-file-format} definiëren
 
@@ -113,7 +113,7 @@ In het volgende voorbeeld kunt u elke dag een bestand op de server verzamelen, d
    * de eerste kolom bevat een code die samenvalt met de gebeurtenis: aankoop (meer of minder dan 3000 euro), geen aankoop of terugbetaling voor een of meer aankopen.
    * de vier volgende kolommen bevatten de voornaam, achternaam, e-mail en het rekeningnummer van de klant.
 
-   De indelingsconfiguratie van het te laden bestand valt samen met de configuratie die is gedefinieerd tijdens het importeren van gegevens in Adobe Campaign. Raadpleeg deze [sectie](../../platform/using/importing-data.md#step-2---source-file-selection) voor meer informatie.
+   De indelingsconfiguratie van het te laden bestand valt samen met de configuratie die is gedefinieerd tijdens het importeren van gegevens in Adobe Campaign. Raadpleeg deze [sectie](../../platform/using/executing-import-jobs.md#step-2---source-file-selection) voor meer informatie.
 
 1. Geef in de splitsingsactiviteit de subsets op die moeten worden gemaakt, volgens de kolomwaarde **Event**.
 
