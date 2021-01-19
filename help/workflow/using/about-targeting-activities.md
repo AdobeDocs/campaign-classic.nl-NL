@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 4%
@@ -21,7 +21,7 @@ Met deze activiteiten kunt u een of meer doelen maken door sets te definiëren e
 
 * **Query**: Hiermee kunt u een query uitvoeren. Zie [Een query](../../workflow/using/query.md#creating-a-query) maken.
 * **Incrementele query**: laat u een vraag uitvoeren en zijn uitvoering plannen. Raadpleeg de sectie [Incrementele query](../../workflow/using/incremental-query.md).
-* **Leeslijst**: Hiermee kunt u gegevens in een lijst gebruiken. Zie [Gegevens uit een lijst gebruiken: Leeslijst](../../workflow/using/importing-data.md#using-data-from-a-list--read-list) sectie.
+* **Leeslijst**: Hiermee kunt u gegevens in een lijst gebruiken. Zie [Gegevens uit een lijst gebruiken: Leeslijst](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list) sectie.
 * **Unie**: Hiermee kunt u het resultaat van verschillende activiteiten groeperen in één doel. Raadpleeg de sectie [Union](../../workflow/using/union.md).
 * **Doorsnede**: laat u slechts de bevolking met de zelfde binnenkomende activiteitenresultaten halen. Raadpleeg de sectie [Intersection](../../workflow/using/intersection.md).
 * **Uitsluiting**: Hiermee kunt u een doel maken op basis van een hoofddoel waaruit een of meer andere doelen worden gehaald. Raadpleeg de sectie [Intersection](../../workflow/using/intersection.md).
