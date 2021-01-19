@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 14%
@@ -37,4 +37,4 @@ Het is mogelijk om een gepersonaliseerde URL in het extractiebestand in te voege
 
 >[!NOTE]
 >
->Deze tovenaar omvat de stappen van de uitvoertovenaar die in [worden wordt beschreven Begonnen ](../../platform/using/exporting-data.md#export-wizard) sectie.
+>Deze tovenaar omvat de stappen van de uitvoertovenaar die in [worden wordt beschreven Begonnen ](../../platform/using/executing-export-jobs.md) sectie.
