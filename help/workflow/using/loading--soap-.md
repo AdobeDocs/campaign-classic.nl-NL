@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 4%
@@ -43,7 +43,7 @@ De bewerking is als volgt:
 
    Selecteer **[!UICONTROL Re-analyze the example]** als u het voorbeeld wilt bijwerken.
 
-   U kunt de indeling van kolomgegevens ook aanpassen via de koppeling **[!UICONTROL Advanced parameters]**. Raadpleeg deze [sectie](../../platform/using/importing-data.md#import-wizard) voor meer informatie over het opmaken van geïmporteerde gegevens.
+   U kunt de indeling van kolomgegevens ook aanpassen via de koppeling **[!UICONTROL Advanced parameters]**. Raadpleeg deze [sectie](../../platform/using/executing-import-jobs.md) voor meer informatie over het opmaken van geïmporteerde gegevens.
 
 1. U kunt het lijnaantal als herkenningsteken gebruiken en/of specificeren dat de vraag van de ZEEP verscheidene elementen terugkeert.
 1. Voer de volgende tabscripts in op basis van hun functie:
