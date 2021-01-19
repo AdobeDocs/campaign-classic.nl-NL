@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1173'
 ht-degree: 5%
 
 ---
@@ -122,6 +122,11 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   <tr> 
    <td> Mobiel kanaal (SMS) <br /> </td> 
    <td> Verstuurt leveringen via het mobiele/sms-kanaal met Adobe Campaign. Optioneel. <a href="../../delivery/using/sms-channel.md">Meer informatie</a> <br /> </td> 
+   <td> Alles<br /> </td> 
+  </tr> 
+   <tr> 
+   <td> Telefoonkanaal<br /> </td> 
+   <td> Verzendt leveringen via het telefoonkanaal met Adobe Campaign. Gebruikt voor callcenter. Optioneel. <a href="../../delivery/using/communication-channels.md">Meer informatie</a> <br /> </td> 
    <td> Alles<br /> </td> 
   </tr> 
   <tr> 
