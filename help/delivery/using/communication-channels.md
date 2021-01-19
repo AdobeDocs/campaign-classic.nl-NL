@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1210'
 ht-degree: 11%
 
 ---
@@ -88,7 +88,11 @@ Met online kanalen kunt u uw berichten (e-mail, sms, levering van mobiele apps, 
 
 ## Andere kanalen {#other-channels}
 
-Adobe Campaign biedt leveringssjablonen van het Bureau of de Telefoon aan, die worden gebruikt om externe leveringen tot stand te brengen. Als u deze kanalen gebruikt, moet u speciale methoden instellen voor het verwerken van uitvoerbestanden. De stappen van de configuratie zijn het zelfde als voor [Directe postkanaal](../../delivery/using/about-direct-mail-channel.md).
+Adobe Campaign biedt een sjabloon voor telefonische levering, die wordt gebruikt om externe leveringen te maken. Als u dit kanaal gebruikt, moet u speciale methoden instellen voor het verwerken van uitvoerbestanden. De stappen van de configuratie zijn het zelfde als voor [Directe postkanaal](../../delivery/using/about-direct-mail-channel.md).
+
+>[!NOTE]
+>
+>Het telefoonkanaal is niet beschikbaar buiten de doos. De implementatie ervan vereist dat Adobe Consulting of een Adobe-partner wordt ingeschakeld. Neem contact op met uw Adobe-vertegenwoordiger voor meer informatie.
 
 Bovendien gebruiken de &quot;Andere&quot;typeleveringen een specifiek technisch malplaatje dat geen proces uitvoert: hiermee kunnen ze marketingacties beheren die buiten het Adobe Campaign-platform worden uitgevoerd.
 
