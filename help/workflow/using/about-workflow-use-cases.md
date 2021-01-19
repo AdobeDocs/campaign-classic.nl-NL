@@ -9,10 +9,10 @@ topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 64%
+source-wordcount: '207'
+ht-degree: 62%
 
 ---
 
@@ -52,10 +52,11 @@ Ze helpen u de verschillende contexten te ontdekken waarin workflows kunnen word
 * [Een overzichtslijst maken](../../workflow/using/creating-a-summary-list.md)
 * [Data verrijken](../../workflow/using/enriching-data.md)
 * [Werken met samenvoegingen](../../workflow/using/using-aggregates.md)
-* [Gegevens importeren die zijn versleuteld met een toets die is gegenereerd door het Configuratiescherm](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
+* [Gegevens importeren die zijn versleuteld met een toets die is gegenereerd door het Configuratiescherm](../../platform/using/unzip-decrypt.md)
 * [Gegevens coderen en exporteren met een sleutel die is geïnstalleerd in het Configuratiescherm](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Driemaandelijkse lijstupdate met een incrementele query](../../workflow/using/quarterly-list-update.md)
 * [De samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken](../../workflow/using/deduplication-merge.md)
+* [Een terugkerende importworkflow instellen](../../workflow/using/recurring-import-workflow.md)
 
 ## Targeting {#designing-queries}
 
