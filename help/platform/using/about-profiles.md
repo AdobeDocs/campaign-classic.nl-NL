@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 17%
@@ -45,7 +45,7 @@ De belangrijkste methoden voor het maken van profielen voor ontvangers zijn:
 
 >[!NOTE]
 >
->Als u wilt weten hoe bestanden en webformulieren worden geïmporteerd, raadpleegt u [Algemene import en export](../../platform/using/generic-imports-and-exports.md).
+>Als u wilt weten hoe bestanden en webformulieren worden geïmporteerd, raadpleegt u [Algemene import en export](../../platform/using/get-started-data-import-export.md).
 
 ## Profielen en doelen {#profiles-and-targets}
 
@@ -58,7 +58,7 @@ Het geeft u ook toegang tot:
 * lijsten; zie [Lijsten maken en beheren](../../platform/using/creating-and-managing-lists.md),
 * abonnementsdiensten; verwijzen naar [deze pagina](../../delivery/using/managing-subscriptions.md),
 * webtoepassingen; verwijzen naar [deze pagina](../../web/using/about-web-applications.md),
-* invoer en uitvoer ( werkgelegenheid ) ; zie [Algemene invoer en uitvoer](../../platform/using/generic-imports-and-exports.md);
+* invoer en uitvoer ( werkgelegenheid ) ; zie [Algemene invoer en uitvoer](../../platform/using/about-generic-imports-exports.md);
 * doelgerichte werkstromen; verwijst naar [deze pagina](../../workflow/using/building-a-workflow.md#implementation-steps-).
 
 Op de pagina met ontvangers kunt u veelvuldige bewerkingen uitvoeren op profielen: bewerkingen, updates, toevoegingen, verwijderingen, sorteren.
