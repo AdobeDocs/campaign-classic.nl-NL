@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 100%
@@ -25,7 +25,7 @@ U kunt ontvangers importeren of ze handmatig maken met de Campaign-clientconsole
 
 ## Hoe kan ik profielen importeren? {#how-to-import-profiles-}
 
-Ontdek gemakkelijke gebruikersscenario’s voor het [importeren van profielen](../../platform/using/importing-data.md#generic-import-samples) in uw database.
+Ontdek gemakkelijke gebruikersscenario’s voor het [importeren van profielen](../../platform/using/import-operations-samples.md) in uw database.
 
 ![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/importing-profiles.html)
 
