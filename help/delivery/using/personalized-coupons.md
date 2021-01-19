@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Door coupons toe te voegen aan uw leveringen kunnen uw ontvangers meer waarde kr
 >
 >Couponbeheer is een pakket dat moet worden geïnstalleerd. Om te bevestigen dat u Coupon beheer hebt, controleer **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 >
->Coupongegevens kunnen worden geïmporteerd en geëxporteerd in CSV- en XML-indeling. Raadpleeg [deze sectie](../../platform/using/generic-imports-and-exports.md) voor meer informatie over importeren en exporteren.
+>Coupongegevens kunnen worden geïmporteerd en geëxporteerd in CSV- en XML-indeling. Raadpleeg [deze sectie](../../platform/using/get-started-data-import-export.md) voor meer informatie over importeren en exporteren.
 
 ## Een coupon {#creating-a-coupon} maken
 
@@ -58,7 +58,7 @@ Voordat u de onderstaande stappen uitvoert, moet u weten welk type coupon u wilt
 
    >[!NOTE]
    >
-   >Individuele coupons kunnen bulksgewijs worden ingevoerd. Raadpleeg [deze sectie](../../platform/using/generic-imports-and-exports.md) voor meer informatie over importeren en exporteren.
+   >Individuele coupons kunnen bulksgewijs worden ingevoerd. Raadpleeg [deze sectie](../../platform/using/get-started-data-import-export.md) voor meer informatie over importeren en exporteren.
 
 ### Afzonderlijke coupons {#configuring-individual-coupons} configureren
 
