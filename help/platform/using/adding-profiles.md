@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 8%
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # Profielen toevoegen{#adding-profiles}
 
-In de meeste gevallen worden profielen [geïmporteerd in Campagne via een workflow](../../workflow/using/importing-data.md). U kunt echter een of meer profielen rechtstreeks vanuit de interface toevoegen door op de knop **[!UICONTROL Create]** te klikken. Zij zullen dan aan het gegevensbestand worden toegevoegd.
+In de meeste gevallen worden profielen [geïmporteerd in Campagne via een workflow](../../platform/using/import-export-workflows.md). U kunt echter een of meer profielen rechtstreeks vanuit de interface toevoegen door op de knop **[!UICONTROL Create]** te klikken. Zij zullen dan aan het gegevensbestand worden toegevoegd.
 
 ![](assets/s_ncs_user_profile_add.png)
 
