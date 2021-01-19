@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 3%
@@ -111,7 +111,7 @@ Antwoorden op een enquête kunnen worden geëxporteerd in een extern bestand dat
 
    >[!NOTE]
    >
-   >De uitvoer van gegevens en de stadia van hun configuratie zijn gedetailleerd in [dit sectie](../../platform/using/generic-imports-and-exports.md).
+   >De uitvoer van gegevens en de stadia van hun configuratie zijn gedetailleerd in [dit sectie](../../platform/using/about-generic-imports-exports.md).
 
 ## De verzamelde gegevens {#using-the-collected-data} gebruiken
 
