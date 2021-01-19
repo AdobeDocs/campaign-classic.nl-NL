@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 16%
+source-wordcount: '94'
+ht-degree: 14%
 
 ---
 
@@ -28,6 +28,5 @@ In de campagneworkflows wordt het tabblad **[!UICONTROL Events]** vervangen door
 Meer informatie:
 
 * [Informatie over doelactiviteiten](../../workflow/using/about-targeting-activities.md)
-* [Data importeren](../../workflow/using/importing-data.md)
 * [Een workflow uitvoeren](../../workflow/using/starting-a-workflow.md)
 * [Best practices voor workflows](../../workflow/using/workflow-best-practices.md)
