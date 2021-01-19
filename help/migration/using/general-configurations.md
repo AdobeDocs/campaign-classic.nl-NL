@@ -7,9 +7,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
 workflow-type: tm+mt
-source-wordcount: '2820'
+source-wordcount: '2786'
 ht-degree: 0%
 
 ---
@@ -616,11 +616,11 @@ Alle standaardrapporten maken momenteel gebruik van de renderingengine v6.x. Als
 
 ### Speciale rapporten {#personalized-reports}
 
-Als u de blauwe banner vanaf v7 wilt hebben (zodat u toegang hebt tot de universa), moet u rapporten opnieuw publiceren. Als u problemen ondervindt, kunt u de v6.0-renderingengine forceren. Om dit te doen, ga naar **[!UICONTROL Properties]** binnen het rapport, klik **[!UICONTROL Rendering]** en kies **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** teruggevende motor.
+<!--If you want to have the blue banner from v7 (allowing you access to the universes), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
 ![](assets/migration_reports_1.png)
-
-Als u wilt profiteren van de nieuwe rapportfuncties, moet u de v.6.x-renderingengine selecteren. Controleer in dit geval al uw scripts en wijzig deze zo nodig. Als u een specifiek script voor OpenOffice hebt toegevoegd voor het exporteren van PDF-bestanden, werkt dit niet meer met de nieuwe PDF-exportengine (PhantomJS).
+-->
+Als u van de nieuwe rapportfuncties wilt profiteren, moet u rapporten opnieuw publiceren. Hiervoor bewerkt u het rapport **[!UICONTROL Properties]**, klikt u op **[!UICONTROL Rendering]** en selecteert u de v.6.x-renderingengine. Controleer in dit geval al uw scripts en wijzig deze zo nodig. Als u een specifiek script voor Open Office hebt toegevoegd voor het exporteren van PDF-bestanden, werkt dit niet meer met de nieuwe PDF-exportengine (PhantomJS).
 
 ## Webapplicaties {#web-applications}
 
