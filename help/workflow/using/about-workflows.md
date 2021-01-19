@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 18%
@@ -73,7 +73,7 @@ Raadpleeg de volgende secties voor hulp en tips en trucs om processen te automat
 
 * Meer informatie over workflowactiviteiten vindt u op [deze pagina](../../workflow/using/how-to-use-workflow-data.md).
 * Leer hoe u een workflow bouwt in [deze sectie](../../workflow/using/building-a-workflow.md).
-* Ontdek hoe u workflows kunt gebruiken om gegevens te importeren in Campagne in [deze sectie](../../workflow/using/importing-data.md).
+* Ontdek hoe u workflows kunt gebruiken om gegevens te importeren in Campagne in [deze sectie](../../platform/using/import-export-workflows.md).
 * Best practices voor workflows worden beschreven in [deze pagina](../../workflow/using/workflow-best-practices.md).
 * Raadpleeg de instructies over het uitvoeren van workflows in [deze sectie](../../workflow/using/starting-a-workflow.md).
 * Leer hoe u workflows in [deze pagina](../../workflow/using/monitoring-workflow-execution.md) kunt controleren.
