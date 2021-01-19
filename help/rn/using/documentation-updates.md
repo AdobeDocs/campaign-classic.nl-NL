@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 88172a79aad37e6a311b144f4ea685bb4846825b
+source-git-commit: 759346587e3ce98c408a0a17218341118dbceb82
 workflow-type: tm+mt
-source-wordcount: '3814'
-ht-degree: 96%
+source-wordcount: '3869'
+ht-degree: 94%
 
 ---
 
@@ -19,31 +19,39 @@ ht-degree: 96%
 
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates per maand en per Campaign-release.
 
-U kunt ook de [Adobe Campaign Classic-release-opmerkingen](../../rn/using/latest-release.md) raadplegen voor meer updates.
+Raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/using/latest-release.md) voor releasegerelateerde updates.
 
-## Januari 2021 {#jan,2021}
+## Januari 2021 {#jan-2021}
 
-De sectie **[!UICONTROL Fork]** activiteit is verrijkt met extra informatie. Er is een opmerking toegevoegd om aan te geven dat de uitgaande overgangen niet gelijktijdig worden uitgevoerd en dat de activiteit daarom niet mag worden gebruikt om de prestaties van de workflows te verbeteren. [Meer informatie](../../workflow/using/fork.md)
+De sectie **[!UICONTROL Fork]** activiteit is verrijkt met beste praktijken. [Meer informatie](../../workflow/using/fork.md)
 
-De sectie Locating Tomcat-versie is [hier](../../production/using/locate-tomcat-version.md) geplaatst.
+De sectie **CRM Connectors** is bijgewerkt, verbeterd en gereorganiseerd. [Meer informatie](../../platform/using/crm-connectors.md).
 
-De lijst van technische werkstromen met de bijbehorende pakketten is gereorganiseerd in één enkele pagina. [Meer informatie](../../workflow/using/about-technical-workflows.md)
+De stappen om **Adobe Campaign en de Dynamica van Microsoft** te verbinden zijn nu gedetailleerd in een specifieke pagina. [Meer informatie](../../platform/using/crm-ms-dynamics.md).
 
-Het gedeelte Problemen oplossen van problemen in de handleiding voor bewaking is gereorganiseerd en verbeterd met een bestemmingspagina. [Meer informatie](../../production/using/troubleshooting.md).
+Oracle On Demand API is nu verouderd als een CRM-verbinding die is verbonden met Campagne. [Meer informatie](../../rn/using/deprecated-features.md).
+
+Leer hoe u de huidige versie van de ingesloten Tomcat-webservlet kunt achterhalen die in een exemplaar van Adobe Campaign [hier](../../production/using/locate-tomcat-version.md) wordt gebruikt.
+
+De lijst van technische werkstromen met de bijbehorende pakketten is uitgebreid en in één enkele pagina gecentraliseerd. [Meer informatie](../../workflow/using/about-technical-workflows.md)
+
+Het gedeelte Problemen oplossen in de **Monitoring**-handleiding is gereorganiseerd en verbeterd met een bestemmingspagina. [Meer informatie](../../production/using/troubleshooting.md).
+
+Er is een nieuwe **sectie Gegevens importeren en exporteren** beschikbaar met nieuwe pagina&#39;s die betrekking hebben op workflows, gegevenscompressie, codering en aanbevolen procedures voor importeren. [Meer informatie](../../platform/using/get-started-data-import-export.md)
 
 ## December 2020 {#dec-2020}
 
-De sectie over leveringscontrole is opnieuw ingedeeld in thematische onderwerpen. [Meer informatie](../../delivery/using/about-delivery-monitoring.md)
+De sectie **Leveringscontrole** is gereorganiseerd in thematische onderwerpen. [Meer informatie](../../delivery/using/about-delivery-monitoring.md)
 
 Er is een gebruiksscenario toegevoegd met informatie over het toevoegen van IP-adressen van afzenders aan de verzendingslogs. [Meer informatie](../../delivery/using/delivery-dashboard.md#use-case)
 
 De veelgestelde vragen over privacy zijn verplaatst naar [deze sectie](../../platform/using/privacy-faq.md).
 
-Er is een gebruiksscenario toegevoegd voor het gebruik van de samenvoegfunctie van Deduplication activity. [Meer informatie](../../workflow/using/deduplication-merge.md)
+Er is een gebruiksscenario toegevoegd voor het gebruik van de samenvoegfunctionaliteit van de activiteit **[!UICONTROL Deduplication]**. [Meer informatie](../../workflow/using/deduplication-merge.md)
 
-Het de schakelaarprotocol en montagespagina van SMS zijn verplaatst [hier](../../delivery/using/sms-protocol.md).
+De volledige beschrijving van het de schakelaarprotocol en montagespagina van SMS is nu beschikbaar [hier](../../delivery/using/sms-protocol.md).
 
-Er is een notitie toegevoegd aan de sectie Transactieberichten om te waarschuwen dat de gebeurtenismappen niet moeten worden ingesteld als weergaven van de uitvoeringsinstanties om problemen met toegangsrechten te voorkomen. [Meer informatie](../../message-center/using/event-collection.md)
+Er is een notitie toegevoegd aan de sectie **Transactioneel overseinen** om te waarschuwen dat de gebeurtenismappen niet moeten worden ingesteld als weergaven over de uitvoeringsinstanties, om problemen met toegangsrechten te voorkomen. [Meer informatie](../../message-center/using/event-collection.md)
 
 ## November 2020 {#nov-2020}
 
@@ -173,7 +181,7 @@ Er zijn best practices toegevoegd in de **[!UICONTROL Scheduler]**-activiteitens
 
 De sectie over het verwijderen van een in quarantaine geplaatste adres is bijgewerkt. Hieronder valt ook een verduidelijking van de gevallen waarin adressen automatisch uit de quarantainelijst worden verwijderd. [Meer informatie](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
-Er zijn gebruiksscenario’s toegevoegd voor het [versleutelen](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) en [ontsleutelen](../../workflow/using/importing-data.md#use-case-gpg-decrypt) van data met workflows voor Configuratiescherm en Campaign.
+Er zijn gebruiksscenario’s toegevoegd voor het [versleutelen](../../platform/using/zip-encrypt.md) en [ontsleutelen](../../platform/using/unzip-decrypt.md) van data met workflows voor Configuratiescherm en Campaign.
 
 De pagina over de integratie van Experience Cloud Triggers en Adobe Campaign Classic is [hier](../../integrations/using/about-triggers.md) geplaatst.
 
