@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '362'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Ontdek hoe u processen en taken kunt organiseren met Adobe Campaign-workflows.
 
 ## Hoe kan ik data importeren in Campaign? {#how-can-i-import-data-in-campaign-}
 
-Ontdek [in deze sectie](../../workflow/using/importing-data.md) best practices om data te importeren via een Campaign-workflow.
+Leer beste praktijken om gegevens in [dit sectie](../../platform/using/import-export-best-practices.md) in te voeren.
 
 ## Kan ik de uitvoering van de workflow controleren? {#can-i-monitor-workflow-execution-}
 
@@ -59,7 +59,7 @@ Ontdek [in deze sectie](../../workflow/using/split.md) hoe u een doel kunt split
 
 U kunt bepaalde velden in een Campaign-tabel wijzigen met waarden uit een extern tekstbestand.
 
-[Klik hier voor meer informatie](../../platform/using/importing-data.md#example--enrich-the-values-with-those-of-an-external-file).
+[Klik hier voor meer informatie](../../platform/using/import-operations-samples.md#example--enrich-the-values-with-those-of-an-external-file).
 
 ## Hoe kan ik nieuwe ontvangers identificeren en doelgericht benaderen? {#how-can-i-identify-and-target-new-recipients-}
 
