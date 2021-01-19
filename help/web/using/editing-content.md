@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Content bewerken{#editing-content}
 
-## Een zichtbaarheidsvoorwaarde {#defining-a-visibility-condition} definiëren
+## Een zichtbaarheidsvoorwaardedefiniëren {#defining-a-visibility-condition}
 
 U kunt een zichtbaarheidsvoorwaarde opgeven voor een webpagina-element: dit element is alleen zichtbaar als aan de voorwaarde wordt voldaan .
 
@@ -37,7 +37,7 @@ Deze voorwaarden passen de syntaxis van de XTK-expressie toe (bijvoorbeeld **ctx
 >
 >Niet-zichtbare dynamische blokken, zoals vervolgkeuzemenu&#39;s, kunnen niet worden bewerkt.
 
-## Rand en achtergrond {#adding-a-border-and-background} toevoegen
+## Rand en achtergrondtoevoegen {#adding-a-border-and-background}
 
 U kunt een **border** aan een geselecteerd blok toevoegen. De randen worden gedefinieerd met behulp van drie opties: stijl, grootte en kleur.
 
@@ -81,7 +81,7 @@ Dit doet u als volgt:
 
    ![](assets/dce_sidebar_completeoptionradio.png)
 
-### Formuliervelden {#modifying-form-fields} wijzigen
+### Formulierveldenwijzigen {#modifying-form-fields}
 
 Formuliervelden zoals keuzerondjes, invoerzones, vervolgkeuzelijsten, enz. kan worden gewijzigd op basis van de werkbalken.
 
@@ -111,7 +111,7 @@ De beschikbare acties zijn als volgt:
 
 U kunt het label dat aan de knop is gekoppeld, wijzigen in het desbetreffende veld.
 
-## Een koppeling {#adding-a-link} toevoegen
+## Een koppelingtoevoegen {#adding-a-link}
 
 U kunt een koppeling invoegen in elk pagina-element: afbeelding, woord, groep woorden, tekstblok, enz.
 
@@ -137,7 +137,6 @@ U kunt alleen aanpassingsblokken en velden invoegen in tekstblokken.
 >* Nieuw venster (_leeg)
 >* Huidig venster (_zelf)
 >* Standaardbrowsergedrag
-
 >
 
 
@@ -170,7 +169,7 @@ De **Verbinding die een actie** optie bepaalt laat u een actie vormen wanneer he
 >
 >Beschikbare acties worden beschreven in de sectie [Een handeling toevoegen aan een knop](#adding-an-action-to-a-button).
 
-### Een koppeling {#delete-a-link} verwijderen
+### Een koppelingverwijderen {#delete-a-link}
 
 Wanneer een koppeling is ingevoegd, bevat de werkbalk twee nieuwe pictogrammen: **Koppeling bewerken** en **De koppeling** verbreken, zodat u kunt communiceren met de gemaakte koppeling.
 
@@ -203,9 +202,8 @@ De beschikbare opties zijn als volgt:
 >[!NOTE]
 >
 >* **Pictogram** Verwijderen: Hiermee verwijdert u het blok en alle inhoud ervan.
-   >
-   >
-* **Pictogram** Dupliceren: dupliceert het blok evenals alle stijlen met betrekking tot het blok.
+>
+>* **Pictogram** Dupliceren: dupliceert het blok evenals alle stijlen met betrekking tot het blok.
 
 
 ## Afbeeldingen en animaties beheren {#managing-images-and-animations}
@@ -216,7 +214,7 @@ Met de Digital Content Editor kunt u aan **elk type afbeelding** werken dat comp
 >
 >U mag externe bestanden niet oproepen in een **script**-tag van de HTML-pagina. Deze bestanden worden niet geïmporteerd op de Adobe Campaign-server.
 
-### Een afbeelding {#adding---deleting---duplicating-an-image} toevoegen/verwijderen/dupliceren
+### Een afbeeldingtoevoegen/verwijderen/dupliceren {#adding---deleting---duplicating-an-image}
 
 Als u een afbeelding wilt invoegen, selecteert u een blok Afbeeldingstype en klikt u op het pictogram **Afbeelding**.
 
@@ -234,7 +232,7 @@ Met het pictogram **Dupliceren** worden de tag ![]() en de inhoud ervan geduplic
 >
 >Wanneer u een afbeelding dupliceert, worden de id&#39;s voor de nieuwe afbeelding verwijderd.
 
-### Afbeeldingseigenschappen {#editing-image-properties} bewerken
+### Afbeeldingseigenschappenbewerken {#editing-image-properties}
 
 Wanneer u een blok selecteert dat een afbeelding bevat, hebt u toegang tot de volgende eigenschappen:
 
@@ -257,7 +255,7 @@ De veldnaam wordt in de editor weergegeven en geel gemarkeerd. Deze wordt vervan
 
 Een voorbeeld wordt voorgesteld in [Het opnemen van een verpersoonlijkingsgebied](../../web/using/creating-a-landing-page.md#inserting-a-personalization-field) sectie.
 
-### Een aanpassingsblok {#inserting-a-personalization-block} invoegen
+### Een aanpassingsblokinvoegen {#inserting-a-personalization-block}
 
 Met de optie **Personaliseringsblok** kunt u dynamische en gepersonaliseerde blokken in de inhoud invoegen. U kunt bijvoorbeeld een logo of een begroetingsbericht toevoegen. Deze optie is niet beschikbaar voor tekstblokken.
 
