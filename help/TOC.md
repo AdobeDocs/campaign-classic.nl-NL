@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 404ff67207f8c126e44736fe565cf57afcc6397e
+source-git-commit: ef502c023918baa1ae56b9619c7ab488ddf909e3
 workflow-type: tm+mt
-source-wordcount: '2202'
-ht-degree: 98%
+source-wordcount: '2293'
+ht-degree: 94%
 
 ---
 
@@ -68,10 +68,22 @@ ht-degree: 98%
       + [Profielen exporteren en importeren](platform/using/exporting-and-importing-profiles.md)
       + [Lijsten maken en beheren](platform/using/creating-and-managing-lists.md)
    + Data importeren en exporteren {#importing-and-exporting-data}
-      + [Algemene import- en exportbewerkingen](platform/using/generic-imports-and-exports.md)
-      + [Data exporteren](platform/using/exporting-data.md)
-      + [Data importeren](platform/using/importing-data.md)
-      + [SFTP-servergebruik](platform/using/sftp-server-usage.md)
+      + [Aan de slag met het importeren en exporteren van gegevens](platform/using/get-started-data-import-export.md)
+      + [Gegevens importeren en exporteren met behulp van workflows](platform/using/import-export-workflows.md)
+      + Werken met algemene import en export {generic-import-export}
+         + [Aan de slag met algemene import en export](platform/using/about-generic-imports-exports.md)
+         + [Importeren- en exportsjablonen maken](platform/using/creating-import-export-templates.md)
+         + [Import- en exporttaken maken](platform/using/creating-import-export-jobs.md)
+         + [Importtaken configureren](platform/using/executing-import-jobs.md)
+         + [Exporttaken configureren](platform/using/executing-export-jobs.md)
+         + [Uitvoering van taken controleren](platform/using/monitoring-jobs-execution.md)
+         + [Algemene importvoorbeelden](platform/using/import-operations-samples.md)
+      + Gegevenscodering en compressie beheren {beheren-gegevenscodering-compressie}
+         + [Een bestand decoderen of decoderen voordat het wordt verwerkt](platform/using/unzip-decrypt.md)
+         + [Een bestand bekijken of versleutelen voordat het wordt verwerkt](platform/using/zip-encrypt.md)
+      + Aanbevolen werkwijzen en problemen oplossen {aanbevolen werkwijzen}
+         + [Beste werkwijzen importeren en exporteren](platform/using/import-export-best-practices.md)
+         + [Aanbevolen werkwijzen en probleemoplossing voor SFTP-servers](platform/using/sftp-server-usage.md)
    + Data filteren {#filtering-data}
       + [Filteropties](platform/using/filtering-options.md)
       + [Filters maken](platform/using/creating-filters.md)
@@ -86,7 +98,10 @@ ht-degree: 98%
       + [Opsommingen beheren](platform/using/managing-enumerations.md)
    + Connectoren {#connectors}
       + [Connectoren](platform/using/about-connectors.md)
-      + [CRM-connectoren](platform/using/crm-connectors.md)
+      + CRM-connectoren{#crm-connectors}
+         + [Aan de slag met CRM-connectors](platform/using/crm-connectors.md)
+         + [Verbinding maken met Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
+         + [Gegevens synchroniseren met de CRM](platform/using/crm-data-sync.md)
       + [Adobe Analytics-dataconnector](platform/using/adobe-analytics-data-connector.md)
 + Berichten verzenden {#sending-messages}
    + [Aan de slag met berichten](delivery/using/communication-channels.md)
@@ -114,8 +129,8 @@ ht-degree: 98%
    + Berichten verzenden op mobiele apparaten {#sending-messages-on-mobiles}
       + [Sms-kanaal](delivery/using/sms-channel.md)
       + [LINE-kanaal](delivery/using/line-channel.md)
-      + [Protocol en instellingen voor SMS-aansluiting](delivery/using/sms-protocol.md)
-      + [Problemen met SMS oplossen](delivery/using/troubleshooting-sms.md)
+      + [Protocol en instellingen voor sms-connector](delivery/using/sms-protocol.md)
+      + [Problemen met sms oplossen](delivery/using/troubleshooting-sms.md)
    + Pushmeldingen verzenden {#sending-push-notifications}
       + [Kanaal voor mobiele apps](delivery/using/about-mobile-app-channel.md)
       + [De Campaign-SDK integreren in de mobiele applicatie](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
@@ -347,13 +362,11 @@ ht-degree: 98%
       + [Pipelinecontrole](integrations/using/pipeline-monitoring.md)
       + [Problemen met pipelines oplossen](integrations/using/pipeline-troubleshooting.md)
 + Automatiseren met workflows {#automating-with-workflows}
-   + Inleiding {#introduction}
-      + [Aan de slag met workflows](workflow/using/about-workflows.md)
+   + Aan de slag met workflows {#introduction}
+      + [Workflows](workflow/using/about-workflows.md)
       + [Activiteiten](workflow/using/about-activities.md)
-   + Algemene werking {#general-operation}
       + [Een workflow maken](workflow/using/building-a-workflow.md)
       + [Targetingdata](workflow/using/targeting-data.md)
-      + [Data importeren](workflow/using/importing-data.md)
       + [Workflowdata gebruiken](workflow/using/how-to-use-workflow-data.md)
       + [Best practices voor workflows](workflow/using/workflow-best-practices.md)
    + Een workflow uitvoeren {#executing-a-workflow}
@@ -441,6 +454,7 @@ ht-degree: 98%
          + [Data verrijken](workflow/using/enriching-data.md)
          + [Werken met samenvoegingen](workflow/using/using-aggregates.md)
          + [De samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken](workflow/using/deduplication-merge.md)
+         + [Een terugkerende importworkflow instellen](workflow/using/recurring-import-workflow.md)
       + Query’s ontwerpen {#designing-queries}
          + [Driemaandelijkse lijstupdate met een incrementele query](workflow/using/quarterly-list-update.md)
       + Targeting {#designing-queries}
