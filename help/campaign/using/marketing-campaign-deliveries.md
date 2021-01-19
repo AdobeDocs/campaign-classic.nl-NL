@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
 source-wordcount: '2926'
 ht-degree: 1%
@@ -455,7 +455,7 @@ Het exportmodel moet worden gekoppeld aan de dienstverlener die voor de betrokke
 
 >[!NOTE]
 >
->Raadpleeg de sectie [Aan de slag](../../platform/using/generic-imports-and-exports.md) voor meer informatie over exporteren.
+>Raadpleeg de sectie [Aan de slag](../../platform/using/get-started-data-import-export.md) voor meer informatie over exporteren.
 
 #### Video over zelfstudie {#create-email-video}
 
