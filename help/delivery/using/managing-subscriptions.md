@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 2%
@@ -130,7 +130,7 @@ Als u ontvangers wilt registreren voor een informatieservice, kunt u:
 * Schrijf automatisch een reeks ontvangers in op deze service. De lijst met ontvangers kan afkomstig zijn van een filterbewerking, een groep, een map, een import of een directe selectie met de muis. Als u zich op deze ontvangers wilt abonneren, selecteert u de profielen en klikt u met de rechtermuisknop. Selecteer **[!UICONTROL Actions > Subscribe selection to a service...]**, selecteer de betreffende service en start de bewerking.
 * Importeer ontvangers en meld ze automatisch aan bij een informatieservice. Selecteer hiertoe de desbetreffende service in de laatste stap van de wizard Importeren.
 
-   Raadpleeg [deze sectie](../../platform/using/importing-data.md#import-wizard) voor meer informatie.
+   Raadpleeg [deze sectie](../../platform/using/executing-import-jobs.md) voor meer informatie.
 
 * Gebruik een webformulier zodat ontvangers zich op een service kunnen abonneren.
 
