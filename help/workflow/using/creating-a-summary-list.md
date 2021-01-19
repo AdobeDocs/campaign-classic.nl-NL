@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
@@ -61,7 +61,7 @@ Deze gegevens staan in het tekstbestand &quot;Purchases.txt&quot;.
 
    Met de activiteit **Gegevens laden(bestand)** kunt u de werktabel van de workflow verrijken met de verzamelde gegevens.
 
-   Raadpleeg [Gegevens laden uit een bestand](../../workflow/using/importing-data.md#loading-data-from-a-file) voor meer informatie over deze activiteit.
+   Raadpleeg [Gegevens laden uit een bestand](../../platform/using/import-export-workflows.md#loading-data-from-a-file) voor meer informatie over deze activiteit.
 
 1. Configureer de **Bestandsverzamelaar** activiteit om tekstbestanden (*.txt) te verzamelen uit de geselecteerde map.
 
