@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 translation-type: tm+mt
-source-git-commit: d35b22386bd2681ba02e4379c627821b35a7d04e
+source-git-commit: e5f718908d0bb6893e54c51700865ecda09c80db
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 0%
+source-wordcount: '196'
+ht-degree: 1%
 
 ---
 
@@ -28,12 +28,10 @@ U kunt de activiteit ook gebruiken in de context van het creëren van inhoud en 
 
 >[!IMPORTANT]
 >
->Onthoud dat de uitgaande overgangen die na een vorkactiviteit worden toegevoegd, niet tegelijkertijd worden uitgevoerd.
->
->De activiteit moet daarom niet worden gebruikt om de prestaties van de werkstroom te verbeteren, maar om meerdere activiteiten onafhankelijk uit te voeren en uiteindelijk samen te voegen voordat de rest van de werkstroom wordt uitgevoerd.
+>Uitgaande overgangen die worden toegevoegd na een **[!UICONTROL Fork]** activiteit **zullen niet** gelijktijdig uitvoeren. Dit gedrag kan van invloed zijn op de prestaties van de workflow. Gebruik deze activiteit als u verscheidene activiteiten onafhankelijk moet uitvoeren, en uiteindelijk samen hen alvorens de rest van de werkstroom uit te voeren.
 
-Om de activiteit te vormen, open het dan het aantal en het etiket van de gewenste uitgaande overgangen bepaalt.
+Om de **[!UICONTROL Fork]** activiteit te vormen, open het het aantal en het etiket van de uitgaande overgangen bepaalt.
 
 ![](assets/s_user_segmentation_fork.png)
 
-U kunt elke uitgaande overgangen dan vormen, dan hen samenvoegen gebruikend een [AND-join](../../workflow/using/and-join.md) activiteit, indien nodig. Op deze manier wordt de rest van de workflow alleen uitgevoerd wanneer de uitgaande overgangen van de activiteit **[!UICONTROL Fork]** zijn voltooid.
+U kunt elke uitgaande overgangen dan vormen, dan hen samenvoegen gebruikend een [AND-join](../../workflow/using/and-join.md) activiteit, indien nodig. Op deze manier wordt de rest van de workflow alleen uitgevoerd als de uitgaande overgangen van de activiteit **[!UICONTROL Fork]** zijn voltooid.
