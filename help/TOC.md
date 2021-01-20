@@ -78,10 +78,10 @@ ht-degree: 94%
          + [Exporttaken configureren](platform/using/executing-export-jobs.md)
          + [Uitvoering van taken controleren](platform/using/monitoring-jobs-execution.md)
          + [Algemene importvoorbeelden](platform/using/import-operations-samples.md)
-      + Gegevenscodering en compressie beheren {beheren-gegevenscodering-compressie}
+      + Gegevenscodering en compressie beheren {managing-data-encryption-compression}
          + [Een bestand decoderen of decoderen voordat het wordt verwerkt](platform/using/unzip-decrypt.md)
          + [Een bestand bekijken of versleutelen voordat het wordt verwerkt](platform/using/zip-encrypt.md)
-      + Aanbevolen werkwijzen en problemen oplossen {aanbevolen werkwijzen}
+      + Aanbevolen werkwijzen en problemen oplossen {best-practices}
          + [Beste werkwijzen importeren en exporteren](platform/using/import-export-best-practices.md)
          + [Aanbevolen werkwijzen en probleemoplossing voor SFTP-servers](platform/using/sftp-server-usage.md)
    + Data filteren {#filtering-data}
