@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: ef502c023918baa1ae56b9619c7ab488ddf909e3
+source-git-commit: 048ceef9e4498b557601f3eb2db839e415d6e8c5
 workflow-type: tm+mt
-source-wordcount: '2293'
-ht-degree: 94%
+source-wordcount: '2290'
+ht-degree: 95%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 94%
    + Data importeren en exporteren {#importing-and-exporting-data}
       + [Aan de slag met het importeren en exporteren van gegevens](platform/using/get-started-data-import-export.md)
       + [Gegevens importeren en exporteren met behulp van workflows](platform/using/import-export-workflows.md)
-      + Werken met algemene import en export {generic-import-export}
+      + Werken met generieke import en export {#generic-imports-exports}
          + [Aan de slag met algemene import en export](platform/using/about-generic-imports-exports.md)
          + [Importeren- en exportsjablonen maken](platform/using/creating-import-export-templates.md)
          + [Import- en exporttaken maken](platform/using/creating-import-export-jobs.md)
@@ -78,10 +78,10 @@ ht-degree: 94%
          + [Exporttaken configureren](platform/using/executing-export-jobs.md)
          + [Uitvoering van taken controleren](platform/using/monitoring-jobs-execution.md)
          + [Algemene importvoorbeelden](platform/using/import-operations-samples.md)
-      + Gegevenscodering en compressie beheren {managing-data-encryption-compression}
+      + Gegevenscodering en -compressie beheren {#managing-data-encryption-compression}
          + [Een bestand decoderen of decoderen voordat het wordt verwerkt](platform/using/unzip-decrypt.md)
          + [Een bestand bekijken of versleutelen voordat het wordt verwerkt](platform/using/zip-encrypt.md)
-      + Aanbevolen werkwijzen en problemen oplossen {best-practices}
+      + Aanbevolen procedures en problemen oplossen {#best-practices}
          + [Beste werkwijzen importeren en exporteren](platform/using/import-export-best-practices.md)
          + [Aanbevolen werkwijzen en probleemoplossing voor SFTP-servers](platform/using/sftp-server-usage.md)
    + Data filteren {#filtering-data}
@@ -618,7 +618,7 @@ ht-degree: 94%
       + [De database maken en configureren](installation/using/creating-and-configuring-the-database.md)
       + [Configuratie van de Campaign-server](installation/using/campaign-server-configuration.md)
       + [Een instantie implementeren](installation/using/deploying-an-instance.md)
-      + [Ingebouwde Campaign Classic-pakketten installeren](installation/using/installing-campaign-standard-packages.md)
+      + [In Campaign Classic ingebouwde pakketten installeren](installation/using/installing-campaign-standard-packages.md)
    + Aanvullende configuraties {#additional-configurations}
       + [Campaign-server configureren](installation/using/configuring-campaign-server.md)
       + [Verbinding maken via LDAP](installation/using/connecting-through-ldap.md)
@@ -684,8 +684,8 @@ ht-degree: 94%
       + [RDBMS - Specifieke aanbevelingen](production/using/rdbms-specific-recommendations.md)
       + [Applicatieobjecten](production/using/application-objects.md)
    + Problemen oplossen {#troubleshooting-toc}
-      + [Overzicht van productieproblemen](production/using/troubleshooting.md)
-      + Algemene en algemene kwesties {#common-general-issues-toc}
+      + [Overzicht van het oplossen van productieproblemen](production/using/troubleshooting.md)
+      + Veel voorkomende en algemene problemen {#common-general-issues-toc}
          + [Modules en frequente problemen](production/using/modules-and-frequent-issues.md)
          + [Workflowuitvoering](production/using/workflow-execution.md)
          + [Wachtwoord verloren](production/using/lost-password.md)
@@ -701,10 +701,10 @@ ht-degree: 94%
       + Databaseproblemen {#database-issues-toc}
          + [Databaseprestaties](production/using/database-performances.md)
          + [Codering van de Oracle-database](production/using/encoding-of-the-oracle-database.md)
-      + Verbindingsverbeteringen {#connection-improvements-toc}
+      + De verbinding verbeteren {#connection-improvements-toc}
          + [Mislukte verbinding](production/using/failure-to-connect.md)
          + [Drempelwaarden voor verbinding](production/using/connection-thresholds.md)
-      + Technische problemen {#technical-troubleshooting-toc}
+      + Technische problemen oplossen {#technical-troubleshooting-toc}
          + [Stacktracering in Linux](production/using/stack-trace-in-linux.md)
          + [JSP-gedrag](production/using/jsp-behavior.md)
          + [Tomcat-versie zoeken](production/using/locate-tomcat-version.md)
