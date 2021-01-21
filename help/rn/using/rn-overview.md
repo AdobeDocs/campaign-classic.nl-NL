@@ -6,11 +6,11 @@ description: Meer informatie over Campaign Classic-upgrades
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 51993e6f606132e425553da67687aca76e166dbd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '437'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Aan elke build wordt een status gekoppeld. Hieronder vindt u een lijst met statu
 
 ![](assets/do-not-localize/green3.png) **Algemene beschikbaarheid** (GA) - Gevalideerd in productie en aanbevolen door Adobe.
 
-De **laatste GA-builds** zijn: [Gold Standard 11-release](../../rn/using/gold-standard.md#gs-11) en [Campaign 20.2.4-release](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
+De **nieuwste GA-builds** zijn: [Gold Standard 11-release](../../rn/using/gold-standard.md#gs-11) en [Campaign 20.2.4-release](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
 
 ![](assets/do-not-localize/limited3.png) **Beperkte beschikbaarheid** (LA) - Alleen on-demand implementatie.
 
@@ -55,7 +55,7 @@ Als on-premise gebruiker kunt u de upgrade zelf uitvoeren. Hiervoor moet u de [n
 
 ### Gold Standard{#upgrade-for-gold-standard-users}
 
-Als gehoste gebruiker van de Gold Standard profiteert u automatisch van de Gold Standard-upgrade met de [nieuwste versie van de GA Gold Standard build](../../rn/using/gold-standard.md#gs-10) zonder enige actie. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html).
+Als gehoste Gold Standard-gebruiker profiteert u automatisch van de Gold Standard-upgrade met de [nieuwste GA Gold Standard-build](../../rn/using/gold-standard.md#gs-10) zonder actie te hoeven ondernemen. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html).
 
 >[!NOTE]
 >De compatibiliteitsmatrix voor Gold Standard is beschikbaar in de [GA-compatibiliteitsmatrix](../../rn/using/compatibility-matrix-gs.md).
