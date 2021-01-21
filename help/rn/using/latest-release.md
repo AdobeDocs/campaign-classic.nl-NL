@@ -6,11 +6,11 @@ description: Nieuwste opmerkingen bij de release van Campaign Classic
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5b7639e7e64d4cb42d3ae77b04ba90a45fb58159
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1911'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,8 +25,8 @@ Voor de Campaign Classic Gold Standard-versie (nieuwste GA-build) [raadpleegt u 
 
 _11 januari 2021_
 
-* Oplossing voor een beveiligingsprobleem dat de beveiliging tegen SSRF-problemen (Server Side Request Smeery) moet versterken. (NEO-27777)
-* Oplossing van een regressieprobleem met betrekking tot het proces van de breedtegeneratie dat het proces MTA kon veroorzaken om te crashen.
+* Er is een beveiligingsprobleem opgelost ter versterking van de bescherming tegen SSRF-aanvallen (Server Side Request Forgery). (NEO-27777)
+* Oplossing van een regressieprobleem bij het genereren van de broadlog waarbij het MTA-proces kon crashen.
 
 ## ![](assets/do-not-localize/red_2.png) Release 20.3.1 - build 9228 {#release-20-3-1-build-9228}
 
@@ -74,7 +74,7 @@ _27 oktober 2020_
 
 >[!CAUTION]
 >
->Deze versie wordt geleverd met een nieuw verbindingsprotocol: De upgrade is verplicht voor zowel de campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na 21 maart 2021.
+>Deze versie wordt geleverd met een nieuw verbindingsprotocol: de upgrade is verplicht voor zowel de Campaign-server als de clientconsole om na 21 maart 2021 verbinding met Campaign te kunnen maken.
 
 **Verbeterde beveiliging**
 
@@ -105,7 +105,7 @@ Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](../..
 **Verbeteringen**
 
 * Er zijn verschillende verbeteringen aangebracht in de **clientconsole**:
-   * Het verbindingsprotocol is bijgewerkt en aangepast aan het nieuwe IMS-verificatiemechanisme. De upgrade van de server- en clientconsole is verplicht om verbinding te kunnen maken na 21 maart 2021.
+   * Het verbindingsprotocol is bijgewerkt en aangepast aan het nieuwe IMS-verificatiemechanisme. De upgrade van de server- en clientconsole is verplicht om na 21 maart 2021 verbinding te kunnen maken.
    * Om incompatibiliteit met bepaalde GPO-regelbeperkingen voor internetbeveiliging te voorkomen is het aanmeldingsscherm van de Campaign-clientconsole vervangen door een ingebouwd standaard Windows-formulier.
    * Er is een probleem verholpen met het kopiëren/plakken van activiteiten in een workflow op een 64-bits clientconsole. (NEO-27635)
    * In het menu **Info** is informatie toegevoegd om 64- en 32-bitsconsoles van elkaar te onderscheiden.
