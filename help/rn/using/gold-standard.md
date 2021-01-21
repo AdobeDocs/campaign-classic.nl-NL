@@ -6,20 +6,20 @@ description: Opmerkingen bij de release van Campaign Classic Gold Standard
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dcef36c3ce14c45cb08a79180938ad8d26fa6549
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '938'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
 # Gold Standard-releases{#gold-standard}
 
-Gold Standard is de ondersteuningsrelease van Campaign Classic voor de lange termijn. Als gehoste gebruiker van de Gold Standard profiteert u automatisch van de Gold Standard-upgrade met de nieuwste stabiele versie zonder enige actie. Klanten op locatie en Hybride kunnen ook profiteren van Gold Standard-releases.
+Gold Standard is de ondersteuningsrelease van Campaign Classic voor de lange termijn. Als gehoste Gold Standard-gebruiker profiteert u automatisch van de Gold Standard-upgrade met de nieuwste stabiele versie zonder actie te hoeven ondernemen. On-Premise- en hybride klanten kunnen ook profiteren van Gold Standard-releases.
 
-Als u van een oude bouwstijl migreert, adviseren wij dat u aan deze versie eerst bevordert.
+Als u van een oude build migreert, adviseren wij u eerst bij te werken naar deze versie.
 
 Deze pagina vermeldt de Gold Standard-releases.
 
@@ -31,7 +31,7 @@ _22 december 2020_
 
 >[!CAUTION]
 >
->Deze versie wordt geleverd met een nieuw verbindingsprotocol: De upgrade is verplicht voor zowel de campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na 21 maart 2021.
+>Deze versie wordt geleverd met een nieuw verbindingsprotocol: de upgrade is verplicht voor zowel de Campaign-server als de clientconsole om na 21 maart 2021 verbinding met Campaign te kunnen maken.
 
 De build 9032@d3b452f bevat de volgende verbeteringen en oplossingen:
 
@@ -39,9 +39,9 @@ De build 9032@d3b452f bevat de volgende verbeteringen en oplossingen:
 
 * De Triggers-integratieverificatie die oorspronkelijk was gebaseerd op de oAUTH-verificatieset-up voor toegang tot de pipeline is nu gewijzigd en verplaatst naar Adobe I/O. [Meer informatie](../../integrations/using/configuring-adobe-io.md)
 
-* Na het einde van de ondersteuning voor het oudere binaire protocol voor iOS APNs worden alle instanties die dit protocol gebruiken bijgewerkt naar het HTTP/2-protocol tijdens de postupgrade.
+* Nu het verouderde binaire protocol voor iOS APN’s niet meer wordt ondersteund, zijn alle instanties die dit protocol gebruiken, bijgewerkt naar het HTTP/2-protocol tijdens de postupgrade.
 
-* Oplossing voor een beveiligingsprobleem dat de beveiliging tegen SSRF-problemen (Server Side Request Smeery) moet versterken. (NEO-27777)
+* Er is een beveiligingsprobleem opgelost ter versterking van de bescherming tegen SSRF-aanvallen (Server Side Request Forgery). (NEO-27777)
 
 ## ![](assets/do-not-localize/red_2.png) De Gold Standard 10-release{#gs-10}
 
