@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 translation-type: tm+mt
-source-git-commit: 7478ae37aee5e8b0d9c904f5b9d810375d9d6481
+source-git-commit: 521bc3bf9b2507947007d7f458679275d407f910
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
@@ -188,3 +188,22 @@ Campagne en de Dynamica van Microsoft zijn nu verbonden. U kunt gegevenssynchron
 Bekijk deze video om te leren hoe u Dynamics 365 met Adobe Campaign Classic kunt integreren, in de context van een Office 365-implementatie.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23837?quality=12)
+
+
+## Ondersteunde veldgegevenstypen {#ms-dyn-supported-types}
+
+Voor Microsoft Dynamics 365 worden de ondersteunde/niet-ondersteunde kenmerktypen hieronder vermeld:
+
+
+| Type kenmerk | Ondersteund |
+| --------------------------------------------------------------------------------- | --------- |
+| Basistypen: boolean, datetime, decimal, float, double, integer, bigint , string | Ja |
+| Geld (als dubbel) | Ja |
+| memo, entiteitsnaam, primarykey, uniqueidentifier (als tekenreeksen) | Ja |
+| Status, picklist (we slaan de mogelijke waarden op in opsommingen), state (string) | Ja |
+| owner (als string) | Ja |
+| Opzoeken (alleen zoeken naar verwijzingen naar één entiteit) | Ja |
+| klant | Nee |
+| Betreffende | Nee |
+| PartyList | Nee |
+| ManagedProperty | Nee |
