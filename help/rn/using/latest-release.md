@@ -6,11 +6,11 @@ description: Nieuwste opmerkingen bij de release van Campaign Classic
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
-source-git-commit: 5b7639e7e64d4cb42d3ae77b04ba90a45fb58159
-workflow-type: ht
-source-wordcount: '1911'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+workflow-type: tm+mt
+source-wordcount: '1937'
+ht-degree: 97%
 
 ---
 
@@ -31,6 +31,17 @@ _11 januari 2021_
 ## ![](assets/do-not-localize/red_2.png) Release 20.3.1 - build 9228 {#release-20-3-1-build-9228}
 
 _27 oktober 2020_
+
+>[!CAUTION]
+>
+> * Deze versie wordt geleverd met een nieuw verbindingsprotocol: Als u verbinding maakt met Campagne via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **21 maart 2021**.
+   >
+   > 
+* Deze release wordt geleverd met een beveiligingsoplossing: een upgrade is verplicht om de beveiliging van uw omgeving te versterken.
+
+>
+
+
 
 **Nieuwe functies**
 
@@ -71,10 +82,6 @@ _27 oktober 2020_
 </tr> 
 </tbody> 
 </table>
-
->[!CAUTION]
->
->Deze versie wordt geleverd met een nieuw verbindingsprotocol: de upgrade is verplicht voor zowel de Campaign-server als de clientconsole om na 21 maart 2021 verbinding met Campaign te kunnen maken.
 
 **Verbeterde beveiliging**
 
