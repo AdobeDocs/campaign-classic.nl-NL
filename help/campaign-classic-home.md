@@ -5,10 +5,10 @@ product: campaign
 title: Adobe Campaign Classic-productdocumentatie
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 588e1e465eb5ba06f3a7310f70fe958ec2ec334f
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 66%
+source-wordcount: '291'
+ht-degree: 60%
 
 ---
 
@@ -19,13 +19,15 @@ ht-degree: 66%
 
 ## Nieuwe functies
 
+* **[Verbinding maken via IMS/Adobe ID? Voer een upgrade uit naar de nieuwste builds](integrations/using/about-adobe-id.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne na** 21 maart 2021 **.
+
+* **[Campagne Security ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> BulletinUpdate aan recentste bouwt om uw platform van de Campagne te beveiligen.
+
 * **[Onjuiste harde ](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> grenzen verwijderenLeer hoe u onjuiste harde grenzen kunt bijwerken na Gmail-uitgang
 
-* **[Werk uw Adobe Experience Cloud Triggers-](integrations/using/configuring-adobe-io.md)**<br/> integratie bij. De verouderde Auth-verificatieservice heeft het einde van de levensduur bereikt. Meer informatie over migreren naar Adobe I/O
+* **[Werk uw Adobe Experience Cloud Triggers-](integrations/using/configuring-adobe-io.md)**<br/> integratie bij. De verouderde Auth-verificatieservice heeft het einde van de levensduur bereikt. Leer hoe u naar Adobe I/O kunt migreren.
 
 * **[Ga naar de op HTTP/2 gebaseerde APNs-provider ](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/> APILearn om te migreren van het oude binaire protocol naar de op HTTP/2 gebaseerde API voor de APNs-provider
-
-* **[emoticons toevoegen aan uw ](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/> berichtenU kunt nu emoticons invoegen in berichten en onderwerpregel
 
 * **[Ondersteuning krijgen](https://helpx.adobe.com/nl/campaign/kb/ac-support.html)**<br/>
 Krijg toegang tot veelgestelde vragen, best practices en Help-resources en vraag hulp
