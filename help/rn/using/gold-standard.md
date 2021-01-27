@@ -6,11 +6,11 @@ description: Opmerkingen bij de release van Campaign Classic Gold Standard
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
-source-git-commit: dcef36c3ce14c45cb08a79180938ad8d26fa6549
-workflow-type: ht
-source-wordcount: '938'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+workflow-type: tm+mt
+source-wordcount: '984'
+ht-degree: 92%
 
 ---
 
@@ -31,7 +31,14 @@ _22 december 2020_
 
 >[!CAUTION]
 >
->Deze versie wordt geleverd met een nieuw verbindingsprotocol: de upgrade is verplicht voor zowel de Campaign-server als de clientconsole om na 21 maart 2021 verbinding met Campaign te kunnen maken.
+> * Deze versie wordt geleverd met een nieuw verbindingsprotocol: Als u verbinding maakt met Campagne via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **21 maart 2021**.
+   >
+   > 
+* Deze release wordt geleverd met een [beveiligingsoplossing](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw omgeving te versterken.
+>
+>
+Meer informatie vindt u in [Gold Standard 11 upgrade FAQ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html).
+
 
 De build 9032@d3b452f bevat de volgende verbeteringen en oplossingen:
 
