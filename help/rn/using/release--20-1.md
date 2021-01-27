@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
 workflow-type: tm+mt
-source-wordcount: '1403'
-ht-degree: 6%
+source-wordcount: '1429'
+ht-degree: 8%
 
 ---
 
@@ -23,10 +23,17 @@ _23 december 2020_
 
 >[!CAUTION]
 >
->Deze versie wordt geleverd met een nieuw verbindingsprotocol:  De upgrade is verplicht voor zowel de campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na 21 maart 2021.
+> * Deze versie wordt geleverd met een nieuw verbindingsprotocol: Als u verbinding maakt met Campagne via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **21 maart 2021**.
+   >
+   > 
+* Deze release wordt geleverd met een beveiligingsoplossing: een upgrade is verplicht om de beveiliging van uw omgeving te versterken.
 
-* Het verbindingsprotocol is bijgewerkt om het nieuwe IMS authentificatiemechanisme te volgen.
-* Oplossing voor een beveiligingsprobleem dat de beveiliging tegen SSRF-problemen (Server Side Request Smeery) moet versterken. (NEO-27777)
+>
+
+
+
+* Het verbindingsprotocol is bijgewerkt en aangepast aan het nieuwe IMS-verificatiemechanisme.
+* Er is een beveiligingsprobleem opgelost ter versterking van de bescherming tegen SSRF-aanvallen (Server Side Request Forgery). (NEO-27777)
 
 ## ![](assets/do-not-localize/red_2.png) Release 20.1.3 - build 9124{#release-20-1-3-build-9124}
 
