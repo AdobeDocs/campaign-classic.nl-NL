@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 1d7d48f52f69e4902eafa6806c2cd9170c21fe5a
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '280'
 ht-degree: 9%
 
 ---
@@ -35,7 +35,7 @@ Als u pushberichten wilt verzenden in Adobe Campaign, moet u:
 
 ![](assets/do-not-localize/how-to-video.png) [Leer hoe u het pakket voor de mobiele app in video installeert](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
 
-Als hybride/gehoste klant neemt u contact op met het Adobe Customer Care-team voor toegang tot het pushmeldkanaal in de campagne.
+Als hybride/gehoste klant neemt u contact op met het team van [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om toegang te krijgen tot het pushmeldingskanaal in Campagne.
 
 Als klant op locatie moet u de volgende installatiestappen uitvoeren:
 
