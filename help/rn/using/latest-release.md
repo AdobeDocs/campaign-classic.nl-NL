@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 075bb4f97899053a664576c447605f17a033d5d9
+source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
 source-wordcount: '1977'
 ht-degree: 95%
@@ -34,7 +34,7 @@ _27 oktober 2020_
 
 >[!CAUTION]
 >
-> * Deze versie wordt geleverd met een nieuw verbindingsprotocol: Als u verbinding maakt met Campagne via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **21 maart 2021**.
+> * Deze versie wordt geleverd met een nieuw verbindingsprotocol: Als u verbinding maakt met Campagne via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **31 maart 2021**.
 > * Deze release wordt geleverd met een [beveiligingsoplossing](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw omgeving te versterken.
 > * Als u via Auth-verificatie de integratie Experience Cloug Triggers gebruikt, moet u naar Adobe I/O gaan zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De oude Auth-verificatiemodus wordt op **30 april 2021** beëindigd.
 
@@ -108,7 +108,7 @@ Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](../..
 **Verbeteringen**
 
 * Er zijn verschillende verbeteringen aangebracht in de **clientconsole**:
-   * Het verbindingsprotocol is bijgewerkt en aangepast aan het nieuwe IMS-verificatiemechanisme. De upgrade van de server- en clientconsole is verplicht om na 21 maart 2021 verbinding te kunnen maken.
+   * Het verbindingsprotocol is bijgewerkt en aangepast aan het nieuwe IMS-verificatiemechanisme. De upgrade van de server- en clientconsole is verplicht om na 31 maart 2021 verbinding te kunnen maken.
    * Om incompatibiliteit met bepaalde GPO-regelbeperkingen voor internetbeveiliging te voorkomen is het aanmeldingsscherm van de Campaign-clientconsole vervangen door een ingebouwd standaard Windows-formulier.
    * Er is een probleem verholpen met het kopiëren/plakken van activiteiten in een workflow op een 64-bits clientconsole. (NEO-27635)
    * In het menu **Info** is informatie toegevoegd om 64- en 32-bitsconsoles van elkaar te onderscheiden.
