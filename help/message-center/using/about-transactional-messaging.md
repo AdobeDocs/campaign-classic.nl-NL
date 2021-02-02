@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '171'
 ht-degree: 3%
 
 ---
@@ -29,4 +29,4 @@ In deze specifieke architectuur, wordt de uitvoeringscel gescheiden van de contr
 
 >[!NOTE]
 >
->Als u nieuwe gebruikers wilt maken voor de uitvoering van Message Center-berichten die worden gehost op Adobe Cloud, dient u contact op te nemen met de klantenservice van Adobe. De gebruikers van het Centrum van het bericht zijn specifieke exploitanten die specifieke toestemmingen vereisen om tot omslagen &quot;Real time&quot;(nmsRtEvent) toegang te hebben.
+>Als u nieuwe gebruikers wilt maken voor de uitvoering van Message Center-instanties die worden gehost op Adobe Cloud, moet u contact opnemen met [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De gebruikers van het Centrum van het bericht zijn specifieke exploitanten die specifieke toestemmingen vereisen om tot omslagen &quot;Real time&quot;(nmsRtEvent) toegang te hebben.
