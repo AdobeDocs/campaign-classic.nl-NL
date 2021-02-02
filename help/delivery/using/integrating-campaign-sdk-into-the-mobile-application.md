@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Campagne-SDK&#39;s voor iOS en Android zijn een van de onderdelen van de module 
 
 >[!NOTE]
 >
->Neem contact op met de klantenservice van Adobe om de Campagne SDK (voorheen bekend als Neolane SDK) op te halen.
+>Neem contact op met de [klantenservice van Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de Campagne SDK (voorheen bekend als Neolane SDK) op te halen.
 
 Het doel van de SDK is de integratie van een mobiele toepassing in het Adobe Campaign-platform te vergemakkelijken.
 
