@@ -1,20 +1,20 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Protocol en instellingen voor SMS-aansluiting
+title: Protocol en instellingen voor sms-connector
 description: Leer meer op de schakelaar van SMS en hoe te om het te vormen.
 audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 9a104fdc7bed89f56178d5ab638e1440e6342efc
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '8424'
+source-wordcount: '8433'
 ht-degree: 0%
 
 ---
 
-# Protocol en instellingen voor SMS-aansluiting {#sms-connector-protocol}
+# Protocol en instellingen voor sms-connector {#sms-connector-protocol}
 
 >[!NOTE]
 >
@@ -299,7 +299,7 @@ In dit voorbeeld wordt het geval van een implementatie weergegeven volgens de aa
 id:1234567890 sub:001 dlvrd:001 submit date:1608011415 done date:1608011417 stat:DELIVRD err:000 Text:Hello Adobe world
 ```
 
-Eerst, wordt `id extraction` regex toegepast om identiteitskaart te halen en het met overeenkomstige MT in overeenstemming te brengen.
+Eerst, wordt `id extraction` regex toegepast om identiteitskaart te halen en het met overeenkomstige MT te verzoenen.
 
 Vervolgens worden de `status extraction` regex en `error code extraction` regex toegepast om deze velden te extraheren en worden deze aan de tekenreeks toegevoegd.
 
@@ -819,7 +819,7 @@ Als u meerdere accounts op dezelfde Adobe Campaign-instantie hebt die verbinding
 ### Brede SMPP-sporen inschakelen tijdens controles {#enable-verbose}
 
 U zou uitgebreide sporen SMPP tijdens controles altijd moeten toelaten.
-Zelfs als u de logboeken niet zelf kunt controleren, is het gemakkelijker voor Steun om u te helpen.
+Zelfs als u de logbestanden niet zelf kunt controleren, is het voor [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) eenvoudiger om u te helpen.
 
 ### Uw SMS {#test} testen
 
