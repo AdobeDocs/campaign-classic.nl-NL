@@ -1,13 +1,13 @@
 ---
-keywords: Campaign Classic;home;popular topics
+keywords: Campaign Classic;home;populaire onderwerpen
 solution: Campaign Classic
 product: campaign
 title: Adobe Campaign Classic-productdocumentatie
 topic: Premium
 translation-type: tm+mt
-source-git-commit: f6099fa9c8d1df7bc82dd9be0b575ca7f20b6645
+source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '296'
 ht-degree: 59%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 59%
 
 ## Nieuwe functies
 
-* **[Verbinding maken via IMS/Adobe ID? Voer een upgrade uit naar de nieuwste builds](integrations/using/about-adobe-id.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne na** 21 maart 2021 **.
+* **[Verbinding maken via IMS/Adobe ID? Voer een upgrade uit naar de nieuwste builds](integrations/using/about-adobe-id.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne na** 31 maart 2021 **.
 
 * **[Beveilig uw Campagne ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> instancesUpdate aan recentste bouwt om uw platform van de Campagne te beveiligen.
 
