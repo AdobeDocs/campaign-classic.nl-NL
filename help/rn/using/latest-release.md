@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+source-git-commit: 075bb4f97899053a664576c447605f17a033d5d9
 workflow-type: tm+mt
-source-wordcount: '1937'
-ht-degree: 97%
+source-wordcount: '1977'
+ht-degree: 95%
 
 ---
 
@@ -35,12 +35,8 @@ _27 oktober 2020_
 >[!CAUTION]
 >
 > * Deze versie wordt geleverd met een nieuw verbindingsprotocol: Als u verbinding maakt met Campagne via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **21 maart 2021**.
-   >
-   > 
-* Deze release wordt geleverd met een beveiligingsoplossing: een upgrade is verplicht om de beveiliging van uw omgeving te versterken.
-
->
-
+> * Deze release wordt geleverd met een [beveiligingsoplossing](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw omgeving te versterken.
+> * Als u via Auth-verificatie de integratie Experience Cloug Triggers gebruikt, moet u naar Adobe I/O gaan zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De oude Auth-verificatiemodus wordt op **30 april 2021** beëindigd.
 
 
 **Nieuwe functies**
