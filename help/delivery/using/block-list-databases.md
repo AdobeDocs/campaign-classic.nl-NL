@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Hieronder volgt een lijst van de meest gebruikte RBL&#39;s. Voor een uitgebreide
 
    Zie [https://www.spamhaus.org/](https://www.spamhaus.org/)
 
-   De database is belangrijker. De indeling op deze lijst is over het algemeen een ernstige situatie. Als dit gebeurt, moet u ONMIDDELLIJK handelen en commerciële diensten, leverbaarheid, en de steun van Adobe Campaign waarschuwen.
+   De database is belangrijker. De indeling op deze lijst is over het algemeen een ernstige situatie. Als dit gebeurt, moet u ONMIDDELLIJK handelen en de commerciële diensten, de leverbaarheid, en [Adobe klantenZorg ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) waarschuwen.
 
 * **SpamCop**
 
@@ -43,13 +43,13 @@ Hieronder volgt een lijst van de meest gebruikte RBL&#39;s. Voor een uitgebreide
 
    Zie [https://www.uribl.com/](https://www.uribl.com/)
 
-   Deze lijst identificeert de domeinen die regelmatig in berichten verschijnen die als spam worden verklaard. Als uw domein in deze lijst wordt weergegeven, kan dit van invloed zijn op de leesbaarheid. U moet de services voor levering en Adobe Campaign-ondersteuning onmiddellijk op de hoogte stellen.
+   Deze lijst identificeert de domeinen die regelmatig in berichten verschijnen die als spam worden verklaard. Als uw domein in deze lijst wordt weergegeven, kan dit van invloed zijn op de leesbaarheid. U moet de services voor de levering en [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) onmiddellijk op de hoogte stellen.
 
 * **SURBL**
 
    Zie [http://www.surbl.org/](http://www.surbl.org/)
 
-   De SURBL identificeert de websites die regelmatig in spam verschijnen. Als uw domein in deze lijst wordt weergegeven, kan dit van invloed zijn op de leesbaarheid. U moet de services voor levering en Adobe Campaign-ondersteuning onmiddellijk op de hoogte stellen.
+   De SURBL identificeert de websites die regelmatig in spam verschijnen. Als uw domein in deze lijst wordt weergegeven, kan dit van invloed zijn op de leesbaarheid. U moet de services voor de levering en [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) onmiddellijk op de hoogte stellen.
 
 * **iX Manitu**
 
