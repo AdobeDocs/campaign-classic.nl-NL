@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
+source-git-commit: c24cdd21c2426ea12a1cbd76d78154256bc814c8
 workflow-type: tm+mt
-source-wordcount: '2984'
+source-wordcount: '3019'
 ht-degree: 2%
 
 ---
@@ -123,6 +123,11 @@ Gebruik het tabblad **[!UICONTROL Access rights]** om de groepen en benoemde rec
 Met de koppeling **[!UICONTROL Edit the access parameters...]** hebt u toegang tot de volgende opties:
 
 * Met de optie **[!UICONTROL Disable account]** kunt u de account van de operator uitschakelen: Hij heeft geen toegang meer tot Adobe Campaign.
+
+   >[!NOTE]
+   >
+   >Zelfs als zijn account is uitgeschakeld, kan de operator nog steeds waarschuwingen of meldingen ontvangen van Campagne. Adobe raadt u aan het e-mailadres uit zijn profiel te verwijderen om te stoppen met het verzenden van campagnemeldingen naar deze operator.
+
 * Met de optie **[!UICONTROL Forbid access from the rich client]** kunt u het gebruik van Adobe Campaign beperken tot [Webtoegang](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) of via API&#39;s: toegang tot de Adobe Campaign-clientconsole is niet meer beschikbaar.
 * Het is mogelijk om een veiligheidszone aan de exploitant te verbinden. Raadpleeg [deze pagina](../../installation/using/configuring-campaign-server.md#defining-security-zones) voor meer informatie.
 * U kunt een vertrouwd IP masker ook bepalen gebruikend de aangewezen verbinding.
