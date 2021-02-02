@@ -10,10 +10,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+source-git-commit: ec03e5bfdacc16ce148b24e200b517d73fae00b3
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 5%
+source-wordcount: '484'
+ht-degree: 4%
 
 ---
 
@@ -23,10 +23,12 @@ ht-degree: 5%
 >[!CAUTION]
 >
 >Als u een oudere versie van de integratie van Triggers door Authentificatie Auth gebruikt, **moet u naar Adobe I/O bewegen zoals hieronder beschreven**. De oude Auth-verificatiemodus wordt op 30 april 2021 afgesloten. [Meer informatie](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>
+>Houd er rekening mee dat tijdens deze overgang naar Adobe I/O bepaalde inkomende triggers verloren kunnen gaan.
 
 ## Vereisten {#adobe-io-prerequisites}
 
-Deze integratie geldt alleen voor de eerste **Campaign Classic 20.3- en Gold Standard 11-releases**.
+Deze integratie is alleen van toepassing vanaf **Campaign Classic 20.3, 20.2.4, 19.1.8 en Gold Standard 11-releases**.
 
 Controleer voordat u met deze implementatie begint of:
 
@@ -41,7 +43,7 @@ Controleer voordat u met deze implementatie begint of:
    >
    > Zorg ervoor u in het correcte portaal van de Organisatie wordt geregistreerd.
 
-1. Extraheer de bestaande ID van de integratieclient uit het dossier van de instantieconfiguratie ims/authIMSTAClientId. Niet bestaand of leeg kenmerk geeft aan dat de client-id niet is geconfigureerd.
+1. Extraheer de bestaande id van de integratieclient (client-id) uit het Instance Configuration-bestand ims/authIMSTAClientId. Niet bestaand of leeg kenmerk geeft aan dat de client-id niet is geconfigureerd.
 
    >[!NOTE]
    >
@@ -63,7 +65,7 @@ Controleer voordat u met deze implementatie begint of:
 
    ![](assets/do-not-localize/adobe_io_3.png)
 
-1. Als uw client-id leeg was, selecteert u **[!UICONTROL Generate a key pair]** om een openbaar en privé sleutelpaar te maken.
+1. Als uw client-id leeg was, selecteert u **[!UICONTROL Generate a key pair]** om een combinatie van openbare en persoonlijke sleutels te maken.
 
    ![](assets/do-not-localize/adobe_io_4.png)
 
@@ -83,17 +85,21 @@ Controleer voordat u met deze implementatie begint of:
 
    ![](assets/do-not-localize/adobe_io_7.png)
 
+>[!NOTE]
+>
+>Adobe I/O-certificaat verloopt na twaalf maanden. Je moet elk jaar een nieuw sleutelpaar genereren.
+
 ## Stap 2: Voeg de projectgeloofsbrieven in Adobe Campaign {#add-credentials-campaign} toe
 
 Om de projectgeloofsbrieven in Adobe Campaign toe te voegen, stel het volgende bevel als &quot;neolane&quot;gebruiker op alle containers van de instantie van Adobe Campaign in werking om **[!UICONTROL Technical Account]** geloofsbrieven in het dossier van de instantieconfiguratie op te nemen.
 
 ```
-nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID[/Client_Secret[/Base64_encoded_Private_Key]]
+nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
 ```
 
 >[!NOTE]
 >
->Codeer de persoonlijke sleutel in base64 UTF-8-indeling. Vergeet niet de nieuwe regel uit de sleutel te verwijderen voordat u deze codeert, behalve voor de persoonlijke sleutel. De persoonlijke sleutel moet dezelfde zijn als die waarmee de integratie is gemaakt.
+>Codeer de persoonlijke sleutel in base64 UTF-8-indeling. Vergeet niet de nieuwe regel uit de sleutel te verwijderen voordat u deze codeert, behalve voor de persoonlijke sleutel. De persoonlijke sleutel moet dezelfde zijn als die waarmee de integratie is gemaakt. Als u de base64-codering van de persoonlijke sleutel wilt testen, kunt u [deze website](https://www.base64encode.org/) gebruiken.
 
 ## Stap 3: Door buizen uitgelijnde tag {#update-pipelined-tag} bijwerken
 
