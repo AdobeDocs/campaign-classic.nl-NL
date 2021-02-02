@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '563'
 ht-degree: 2%
 
 ---
@@ -55,7 +55,7 @@ U moet een beveiligingszone configureren voor deze operator om verbinding te mak
 >
 >We raden u ten zeerste aan een beveiligingszone in te stellen die is gewijd aan AEM om beveiligingsproblemen te voorkomen. Raadpleeg de Installatiehandleiding [a1/> voor meer informatie.](../../installation/using/configuring-campaign-server.md#defining-security-zones)
 
-Als uw instantie van de Campagne door Adobe wordt ontvangen, contacteer het team van de Steun van de Adobe. Voer de onderstaande stappen uit als u campagne op locatie gebruikt:
+Als uw instantie van de Campagne door Adobe wordt ontvangen, contacteer [Adobe klantenZorg](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team. Voer de onderstaande stappen uit als u campagne op locatie gebruikt:
 
 1. Open het configuratiebestand **serverConf.xml**.
 1. Open het **allowUserPassword** attribuut van de geselecteerde veiligheidsstreek en plaats het aan **true**.
