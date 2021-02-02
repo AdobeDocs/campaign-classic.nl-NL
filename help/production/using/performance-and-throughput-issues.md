@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '692'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ Raadpleeg de [Opmerkingen bij de release](../../rn/using/latest-release.md) voor
 
 Algemene richtlijnen voor hardwarevereisten voor on-premise Campaign Classic worden gedetailleerd op deze [pagina](https://helpx.adobe.com/nl/campaign/kb/hardware-sizing-guide.html).
 
-Het raadplegende team kan ontvangen klanten een hulpmiddel verstrekken dat u toestaat om gemakkelijk te bekijken hoeveel ruimte door diverse types van lijsten in het gegevensbestand evenals de ruimte wordt gebruikt die op de plaats SFTP wordt gebruikt. Daarnaast beschikt de toepassing over gereedschappen waarmee u overbodige gegevens kunt opschonen. Neem contact op met de consulteer- of supportteams als u dit hulpprogramma nodig hebt. Hier volgen enkele belangrijke zaken die u met dit gereedschap kunt controleren:
+Het raadplegende team kan ontvangen klanten een hulpmiddel verstrekken dat u toestaat om gemakkelijk te bekijken hoeveel ruimte door diverse types van lijsten in het gegevensbestand evenals de ruimte wordt gebruikt die op de plaats SFTP wordt gebruikt. Daarnaast beschikt de toepassing over gereedschappen waarmee u overbodige gegevens kunt opschonen. Neem contact op met de [Adobe-klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) als u dit hulpprogramma nodig hebt. Hier volgen enkele belangrijke zaken die u met dit gereedschap kunt controleren:
 
 * Als de indexgrootte groter is dan de tabelgrootte, is een vacuüm vereist.
 * Controleer de tabellen die het maximale bloat hebben. Als deze tabellen vaak worden gebruikt, moeten ze worden opgevuld.
