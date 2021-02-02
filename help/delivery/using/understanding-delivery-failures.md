@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 9ee7ef1faf06c31ec6659734582caac099a01bc1
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '2440'
-ht-degree: 16%
+source-wordcount: '2446'
+ht-degree: 15%
 
 ---
 
@@ -297,7 +297,7 @@ De het overseinenserver van Adobe Campaign past één enkele **regel van het Dom
 * U kunt kiezen of u bepaalde identificatienormen en coderingssleutels wilt activeren om de domeinnaam te controleren, zoals **Verzender ID**, **DomainKeys**, **DKIM** en **S/MIME**.
 * Met de parameters **SMTP relais** kunt u het IP-adres en de poort van een relaisserver voor een bepaald domein configureren. Zie [deze sectie](../../installation/using/configuring-campaign-server.md#smtp-relay)voor meer informatie.
 
-Als uw berichten in Vooruitzichten met **[!UICONTROL on behalf of]** in het afzenderadres worden getoond, zorg ervoor u niet uw e-mails met **identiteitskaart van de Afzender** ondertekent, die de verouderde merkgebonden standaard van de e-mailauthentificatie van Microsoft is. Als de optie **[!UICONTROL Sender ID]** is ingeschakeld, schakelt u het betreffende vakje uit en neemt u contact op met de Adobe Campaign-ondersteuning. De leverbaarheid wordt niet beïnvloed.
+Als uw berichten in Vooruitzichten met **[!UICONTROL on behalf of]** in het afzenderadres worden getoond, zorg ervoor u niet uw e-mails met **identiteitskaart van de Afzender** ondertekent, die de verouderde merkgebonden standaard van de e-mailauthentificatie van Microsoft is. Als de optie **[!UICONTROL Sender ID]** is ingeschakeld, schakelt u het betreffende vakje uit en neemt u contact op met [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De leverbaarheid wordt niet beïnvloed.
 
 >[!IMPORTANT]
 >
