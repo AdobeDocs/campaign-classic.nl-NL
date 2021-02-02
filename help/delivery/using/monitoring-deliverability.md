@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 11377b0218e20da9b1a5398539ebaa192801b283
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '773'
 ht-degree: 2%
 
 ---
@@ -71,17 +71,12 @@ De verstrekte informatie is real-time, wat een pro-actieve bijstand mogelijk maa
 
 ## Technisch rapport van de bewaking van de aflevering {#technical-deliverability-monitoring}
 
-Het technische rapport voor de bewaking van de leverantie wordt dagelijks bijgewerkt en is beschikbaar door naar **[!UICONTROL Monitoring]** > **[!UICONTROL Overview]** te navigeren en op de koppeling **[!UICONTROL Technical monitoring]** op het tabblad Adobe Campaign **[!UICONTROL Home]** te klikken. Het bevat een aantal kwaliteitsindicatoren voor de prestaties van uw platform.
+Het **Technical Deliverability Monitoring**-rapport bevat een aantal kwaliteitsindicatoren voor de prestaties van uw platform. Je kunt dit dagelijkse rapport per e-mail ontvangen. Om het te verzoeken, open een specifiek [Geval van de Steun](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) en specificeer:
 
-Deze indicatoren worden dagelijks om 9.00 uur bijgewerkt.
+* de naam van de instantie
+* de e-mailadressen waarnaar het rapport wordt verzonden
 
->[!NOTE]
->
->Bovendien kunt u een dagelijks rapport per e-mail op een bepaald adres ontvangen. Laat ons het gewenste e-mailadres weten via e-mail of via het Adobe Campaign Extranet.
-
-![](assets/s_tn_del_monitoring.png)
-
-In het verslag worden de volgende indicatoren gebruikt:
+Deze verslagen bevatten de volgende indicatoren:
 
 * **[!UICONTROL Reverse DNS]** : Adobe Campaign controleert of omgekeerde DNS voor een IP adres wordt gegeven en dat dit correct naar IP wijst.
 
@@ -92,6 +87,9 @@ In het verslag worden de volgende indicatoren gebruikt:
 * **[!UICONTROL IP and RBL domain]** (Lijst voor realtime zwarte gaten): Een lijst van IP adressen en domeinen die door de organisaties van de lijst van afgewezen personen voor slechte verzendende reputatie zijn gemarkeerd. Deze lijsten worden bijgehouden door speciale organisaties zoals Spamhaus, Spamcop, SURBL/URIBL, enz. Adobe Campaign verwerkt momenteel controles tegen RBL&#39;s die een significant effect op de leverbaarbaarheid hebben. Deze RBLs wijzen op het verzenden van reputatie, en kan door ISPs worden van verwijzingen voorzien alvorens om uw e-mails te aanvaarden.
 
 * **[!UICONTROL SNDS]** (Smart Network Data Services): Een  [Windows Live Hotmail-service](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx) tegen spam. Hotmail is enige ISP die dit type van informatie verstrekt. Benchmarkscores zijn een groen filterresultaat, een klachtenpercentage van minder dan 0,1% en geen spamvallen.
+
+Deze indicatoren worden dagelijks om 9.00 uur bijgewerkt.
+
 
 <!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
 
