@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+source-git-commit: 075bb4f97899053a664576c447605f17a033d5d9
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1436'
 ht-degree: 8%
 
 ---
@@ -26,10 +26,7 @@ _23 december 2020_
 > * Deze versie wordt geleverd met een nieuw verbindingsprotocol: Als u verbinding maakt met Campagne via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **21 maart 2021**.
    >
    > 
-* Deze release wordt geleverd met een beveiligingsoplossing: een upgrade is verplicht om de beveiliging van uw omgeving te versterken.
-
->
-
+* Deze release wordt geleverd met een [beveiligingsoplossing](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw omgeving te versterken.
 
 
 * Het verbindingsprotocol is bijgewerkt en aangepast aan het nieuwe IMS-verificatiemechanisme.
