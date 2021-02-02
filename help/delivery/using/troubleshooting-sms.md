@@ -1,15 +1,15 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Protocol en instellingen voor SMS-aansluiting
+title: Protocol en instellingen voor sms-connector
 description: Leer meer op de schakelaar van SMS en hoe te om het te vormen.
 audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 96ad3208c792efb47097768bc779bec59d9ca313
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '2745'
+source-wordcount: '2751'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,7 @@ Met hexadecimaal kunt u het verschil zien tussen vergelijkbare tekens. Een L in 
 
 Om unicode in hexadecimaal om te zetten, kunt u online hulpmiddelen zoals [de code van Unicode converter](https://r12a.github.io/app-conversion/) website gebruiken. Typ uw tekst, controleer of er geen PII zoals telefoonnummers is en klik op **Omzetten**. De hexadecimale waarden worden onderaan weergegeven (UTF-32-zone).
 
-Wanneer het openen van kaartjes over coderingsproblemen, of met de leverancier of de steun van Adobe Campaign, altijd een hexadecimale versie omvat van wat u typt en wat u ziet.
+Wanneer het openen van kaartjes over coderingsproblemen, of met de leverancier of [Adobe de Zorg van de Klant ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), altijd een hexadecimale versie omvat van wat u typt en wat u ziet.
 
 **Stap 3: Weet wat u moet verzenden**
 
