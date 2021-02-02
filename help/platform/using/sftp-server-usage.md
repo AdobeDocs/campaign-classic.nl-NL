@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 9%
+source-wordcount: '1102'
+ht-degree: 8%
 
 ---
 
@@ -98,11 +98,11 @@ In de onderstaande sectie wordt de informatie weergegeven die via [Adobe Klanten
    >
    >Met het gereedschap Netcat kunt u eenvoudig netwerkverbindingen beheren op verschillende besturingssystemen (zie [https://eternallybored.org/misc/netcat/](https://eternallybored.org/misc/netcat/)).
 
-   Als de poort niet is geopend, moet u uitgaande verbindingen aan uw zijde openen en het opnieuw proberen. Als u nog steeds verbindingsproblemen ondervindt, deelt u de uitvoer van de opdracht met het team van Adobe Support.
+   Als de poort niet is geopend, moet u uitgaande verbindingen aan uw zijde openen en het opnieuw proberen. Als u nog steeds verbindingsproblemen ondervindt, deelt u de uitvoer van de opdracht met het team [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 1. Controleer dat openbare IP waarvan u probeert om de verbinding in werking te stellen SFTP is die u aan de Steun van de Adobe voor de lijst van gewenste personen verstrekte.
 1. Als u een op een wachtwoord gebaseerde verificatie gebruikt, is uw wachtwoord mogelijk verlopen (wachtwoorden hebben een geldigheidsduur van 90 dagen). Daarom raden we u ten zeerste aan een op sleutels gebaseerde verificatie te gebruiken (zie [best practices voor SFTP-servers](#sftp-server-best-practices)).
-1. Als u een zeer belangrijke gebaseerde authentificatie gebruikt, controleer dat de sleutel u gebruikt het zelfde is dat u aan het team van de Steun van Adobe voor de instantieconfiguratie verstrekte.
+1. Als u een zeer belangrijke gebaseerde authentificatie gebruikt, controleer dat de sleutel u gebruikt het zelfde is dat u aan [Adobe klantenzorg ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team voor de instantieconfiguratie verstrekte.
 1. Als u FileZilla of een gelijkwaardig hulpmiddel van FTP gebruikt, verstrek de details van verbindingslogboeken in het steunkaartje.
 
 ## Fout &quot;Kan hostnaam niet oplossen&quot;
