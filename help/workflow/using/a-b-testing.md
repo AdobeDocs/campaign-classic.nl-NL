@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 98a2c5aa01b4d45ceeb14fb1ad7a607b236c2817
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1337'
 ht-degree: 1%
 
 ---
@@ -34,6 +34,7 @@ Voer de volgende stappen uit om de A/B-test te maken:
 * [Stap 3: Twee leveringssjablonen maken](#step-3--creating-two-delivery-templates)
 * [Stap 4: De leveringen in de workflow configureren](#step-4--configuring-the-deliveries-in-the-workflow)
 * [Stap 5: Script maken](#step-5--creating-the-script)
+* [Stap 6: Definiëren van de uiteindelijke levering](#step-6--defining-the-final-delivery)
 * [Stap 7: De workflow starten](#step-7--starting-the-workflow)
 * [Stap 8: Het resultaat](#step-8--analyzing-the-result) analyseren.
 
@@ -49,7 +50,7 @@ U moet uw workflow maken op het tabblad **[!UICONTROL Targeting and Workflows]**
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
-1. Wijzig het label van de bestaande workflow of klik op **[!UICONTROL Add]** om een nieuwe te maken (voor meer informatie hierover raadpleegt u deze [sectie](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)).
+1. Wijzig het label van de bestaande workflow of klik op **[!UICONTROL Add]** om een nieuwe te maken.
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 
@@ -183,7 +184,7 @@ De keus van de leveringsinhoud die voor de resterende bevolking wordt bestemd wo
 
 ### Voorbeeld van een script {#example-of-a-script}
 
-Het volgende script kan worden gebruikt zoals in de doelworkflow. Raadpleeg [Implementatie](#implementation) voor meer informatie hierover.
+Het volgende manuscript kan worden gebruikt zoals in het richten werkschema (zie [Vormend het manuscript](../../workflow/using/a-b-testing.md#configuring-script)) is.
 
 ```
  // query the database to find the winner (best open rate)
@@ -229,12 +230,12 @@ Het volgende script kan worden gebruikt zoals in de doelworkflow. Raadpleeg [Imp
    vars.deliveryId = delivery.id
 ```
 
-Raadpleeg [Details van het script](#details-of-the-script) voor een gedetailleerde uitleg van het script.
+Raadpleeg [deze sectie](../../workflow/using/a-b-testing.md#details-of-the-script) voor een gedetailleerde uitleg van het script.
 
-### Implementatie {#implementation}
+### Script {#configuring-script} configureren
 
 1. Open uw **[!UICONTROL JavaScript code]** activiteit.
-1. Kopieer het script dat wordt aangeboden in [Voorbeeld van een script](#example-of-a-script) naar het venster **[!UICONTROL JavaScript code]**.
+1. Kopieer het [eerder ](../../workflow/using/a-b-testing.md#example-of-a-script) voorgestelde manuscript in het **[!UICONTROL JavaScript code]** venster.
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
