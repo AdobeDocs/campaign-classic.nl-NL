@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d34435b0b8714a87add6a5e3f82e4f94376f205b
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 3%
+source-wordcount: '1189'
+ht-degree: 4%
 
 ---
 
@@ -41,23 +41,6 @@ Meer bepaald, helpt het de platformbeheerders om:
 Het gebruiken van het Werkschema HeatMap vereist om een goed inzicht in de volgende concepten te hebben: [Workflows](../../workflow/using/about-workflows.md), [Activiteiten](../../workflow/using/about-activities.md) en [Best practices voor workflow](../../workflow/using/workflow-best-practices.md).
 
 De Workflow HeatMap is standaard beschikbaar in Adobe Campaign vanaf versie 18.10. Als u een build tussen 8700 en 8977 (18.10) hebt, kunt u ook van deze mogelijkheid profiteren. Als u het corresponderende pakket wilt aanvragen, neemt u contact op met de [Adobe-klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) en volgt u de instructies van [deze pagina](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) om te begrijpen hoe u het pakket kunt installeren.
-
-Wanneer u voor het eerst toegang krijgt tot Worklow HeatMap, wordt het volgende pop-upvenster weergegeven. Met deze overeenkomst kunnen in de Verenigde Staten gegevens worden overgedragen en opgeslagen, zodat Adobe Campaign:
-
-* controleren instanties om eventuele prestatieproblemen te onderzoeken.
-* gegevens verzamelen voor afwijkingsdetectie.
-
-De gegevensoverdracht is alleen beschikbaar voor gebruikers die verbinding maken met Adobe Campaign via hun Adobe ID.
-
-![](assets/wf_monitoring_agreement.png)
-
-Er zijn drie opties beschikbaar:
-
-* **[!UICONTROL Accept]** : Door deze overeenkomst te accepteren, machtigt u Adobe Campaign om uw gegevens te verzamelen en deze naar de Verenigde Staten over te brengen om u te kunnen helpen in geval van afwijkende detecties.
-* **[!UICONTROL Refuse]** : Door de overeenkomst te weigeren, worden uw gegevens niet overgedragen, maar kunt u nog wel Workflowoverzicht gebruiken.
-* **[!UICONTROL Do not show this message again]** : Door te klikken  **[!UICONTROL Do not show this message again]** , zal het pop-up venster ophouden tonen wanneer het toegang tot van het Werkschema Heatmap maar nog beschikbaar bij de  **[!UICONTROL Term of use]** knoop.
-
-Deze keuze is niet definitief, u kunt deze altijd wijzigen door op de knop **[!UICONTROL Term of use]** te klikken.
 
 ## HeatMap {#using-the-heatmap} gebruiken
 
