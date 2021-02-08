@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 3105372bc020057727e28d26e7969c31ac290115
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1039'
 ht-degree: 86%
 
 ---
@@ -48,6 +48,8 @@ De build 9032@d3b452f bevat de volgende verbeteringen en oplossingen:
 * Na [einde van steun voor iOS APNs erfenis binair protocol](https://developer.apple.com/news/?id=c88acm2b), worden alle instanties die dit protocol gebruiken bijgewerkt aan HTTP/2 protocol tijdens postupgrade.
 
 * Er is een beveiligingsprobleem opgelost ter versterking van de bescherming tegen SSRF-aanvallen (Server Side Request Forgery). (NEO-27777)
+
+* Probleem verholpen waarbij workflows konden mislukken wanneer een activiteit **Verrijking** werd uitgevoerd. (NEO-17338)
 
 ## ![](assets/do-not-localize/red_2.png) De Gold Standard 10-release{#gs-10}
 
