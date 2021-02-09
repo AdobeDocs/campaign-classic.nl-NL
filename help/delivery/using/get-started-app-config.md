@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 965aee2e310dd7e35d7a65bf9a1bda5dc8eb0959
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 9%
+source-wordcount: '295'
+ht-degree: 8%
 
 ---
 
@@ -37,7 +37,13 @@ Als u pushberichten wilt verzenden in Adobe Campaign, moet u:
 
 Als hybride/gehoste klant neemt u contact op met het team van [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om toegang te krijgen tot het pushmeldingskanaal in Campagne.
 
-Als klant op locatie moet u de volgende installatiestappen uitvoeren:
+Als klant op locatie moet u een ingebouwd pakket installeren.
+
+>[!CAUTION]
+>
+>Meer informatie over ingebouwde pakketten, beste praktijken en aanbevelingen van de Campagne in [deze pagina](../../installation/using/installing-campaign-standard-packages.md).
+
+Installatiestappen zijn:
 
 1. Open de wizard voor het importeren van pakketten vanuit **[!UICONTROL Tools > Advanced > Package import...]** in de Adobe Campaign-clientconsole.
 
