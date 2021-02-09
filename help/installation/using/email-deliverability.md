@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: fd6195ca447fa0345189f3153f44ad2f9a067210
 workflow-type: tm+mt
 source-wordcount: '2973'
 ht-degree: 0%
@@ -131,15 +131,15 @@ Door gebrek, luistert de statistiekserver op haven 7777. Deze poort kan worden g
 
 ## MX-configuratie {#mx-configuration}
 
+>[!IMPORTANT]
+>
+>Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, worden de **[!UICONTROL MX management]** leveringsproductieregels niet meer gebruikt. Verbeterde MTA gebruikt zijn eigen MX regels die het toestaan om uw productie door domein aan te passen die op uw eigen historische e-mailreputatie wordt gebaseerd, en op real time terugkoppelen die uit de domeinen komt waar u e-mails verzendt.
+
+De onderstaande secties zijn alleen van toepassing op installaties op locatie en op gehoste/hybride installaties die gebruikmaken van de oude Campagne MTA.
+
 ### Informatie over MX-regels {#about-mx-rules}
 
 MX-regels (Mail eXchanger) zijn de regels die de communicatie tussen een verzendende server en een ontvangende server beheren.
-
->[!IMPORTANT]
->
->Voor gehoste of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, worden **[!UICONTROL MX management]** de regels van de leveringsproductie niet meer gebruikt. Verbeterde MTA gebruikt zijn eigen MX regels die het toestaan om uw productie door domein aan te passen die op uw eigen historische e-mailreputatie wordt gebaseerd, en op real time terugkoppelen die uit de domeinen komt waar u e-mails verzendt.
->
->Raadpleeg dit [document](https://helpx.adobe.com/nl/campaign/kb/acc-campaign-enhanced-mta.html) voor meer informatie over de Adobe Campaign Enhanced MTA.
 
 Deze regels worden automatisch elke ochtend om 6AM (servertijd) opnieuw geladen om de cliëntinstantie regelmatig te leveren.
 
