@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 1330d4658d039f27a98535bf9885bffbfa0be3c9
+source-git-commit: a341980e9d940857388bb2755e5eaa74824cf6ea
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -23,7 +23,7 @@ In deze sectie wordt beschreven hoe u een workflow bouwt om A/B-tests uit te voe
 
 1. Voeg een [Gesplitste ](../../workflow/using/split.md) activiteit toe om de doelpopulatie in veelvoudige ondergroepen te verdelen.
 
-1. Open de activiteit, dan vorm elke ondergroep volgens uw behoeften. Voor meer op hoe te om een **[!UICONTROL Split]** activiteit te vormen, verwijs naar deze sectie.
+1. Open de activiteit, dan vorm elke ondergroep volgens uw behoeften. Raadpleeg [deze sectie](../../workflow/using/split.md) voor meer informatie over het configureren van een **[!UICONTROL Split]**-activiteit.
 
    In dit voorbeeld willen we twee nieuwe onderwerpen testen voor een nieuwsbrief door ze allemaal te presenteren aan 10 procent van de doelgroep.
 
