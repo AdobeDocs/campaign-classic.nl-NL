@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 759346587e3ce98c408a0a17218341118dbceb82
+source-git-commit: 7473a64a7f3865d1e1eefde9607c539c2f632138
 workflow-type: tm+mt
-source-wordcount: '3869'
-ht-degree: 94%
+source-wordcount: '3914'
+ht-degree: 93%
 
 ---
 
@@ -20,6 +20,14 @@ ht-degree: 94%
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates per maand en per Campaign-release.
 
 Raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/using/latest-release.md) voor releasegerelateerde updates.
+
+## Februari 2021 {#feb-2021}
+
+Er is een nieuwe sectie toegevoegd met gedetailleerde informatie over hoe u A/B-tests kunt uitvoeren met behulp van workflows. [Meer informatie](../../delivery/using/get-started-a-b-testing.md)
+
+De Adobe Campaign Enhanced MTA-sectie is [hier](../../delivery/using/sending-with-enhanced-mta.md) verplaatst.
+
+De sectie **Het verzenden van een e-mail** is gereorganiseerd en verduidelijkt met nieuwe subsecties. [Meer informatie](../../delivery/using/sending-messages.md)
 
 ## Januari 2021 {#jan-2021}
 
@@ -197,7 +205,7 @@ Privacywetten voor Thailand en Brazilië - [Meer informatie](https://helpx.adobe
 
 **Overige documentatie-updates die bij de release worden geleverd**
 
-De nieuwe optie voor het ongedaan maken van de publicatie van een transactionele berichtsjabloon is gedocumenteerd in
+De nieuwe optie voor het ongedaan maken van de publicatie van een transactionele-berichtsjabloon wordt beschreven in
 [deze sectie](../../message-center/using/template-unpublication.md).
 
 De nieuwe opties waarmee u beperkingen kunt instellen voor het verzenden van e-mails met afbeeldingen die zijn gedownload van een gepersonaliseerde URL en bijlagen, zijn toegevoegd aan de lijst met Campaign Classic-opties. [Meer informatie](../../installation/using/configuring-campaign-options.md#delivery)
