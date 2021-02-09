@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1330d4658d039f27a98535bf9885bffbfa0be3c9
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 4%
@@ -56,7 +56,7 @@ Als u meerdere inhoud voor een e-maillevering hebt, kunt u A/B-tests gebruiken o
 
 * Selecteer het bestand met de hoogste successnelheid en stuur het naar de rest van het doel
 
-Meer informatie [in deze sectie](../../workflow/using/a-b-testing.md).
+Meer informatie [in deze sectie](../../delivery/using/get-started-a-b-testing.md).
 
 ## Zorg ervoor dat uw bericht {#make-sure-your-message-is-delivered} wordt geleverd
 
