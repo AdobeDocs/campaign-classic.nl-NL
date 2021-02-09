@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2427'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,10 @@ Opgemerkt zij dat de verslagen die op het niveau van de DNS servers worden gemaa
 
 ### DKIM {#dkim}
 
+>[!IMPORTANT]
+>
+>Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, wordt het e-mailauthentificeren DKIM gedaan door Verbeterde MTA voor alle berichten met alle domeinen.
+
 De (DomainKeys Identified Mail) authentificatie DKIM is een opvolger van SPF en gebruikt openbare zeer belangrijke cryptografie die de ontvangende e-mailserver toestaat om te verifiëren dat een bericht in feite werd verzonden door de persoon of de entiteit het beweert werd verzonden door, en of de berichtinhoud binnen tussen de tijd werd veranderd het oorspronkelijk werd verzonden (en DKIM &quot;ondertekend&quot;) en de tijd het werd ontvangen. Deze standaard gebruikt doorgaans het domein in de kop &quot;Van&quot; of &quot;Afzender&quot;. Om het veiligheidsniveau van DKIM te verzekeren, is 1024b de Beste praktijken geadviseerde encryptiegrootte. De lagere sleutels DKIM zullen niet als geldig door de meerderheid van toegangsleveranciers worden beschouwd.
 
 DKIM komt uit een combinatie DomainKeys, Yahoo! en Cisco identificeerde de authentificatieprincipes van de Post van Internet en wordt gebruikt om de authenticiteit van het afzenderdomein te controleren en de integriteit van het bericht te waarborgen.
@@ -87,10 +91,6 @@ Voor het gebruik van DKIM zijn enkele voorwaarden vereist:
 >* Het is niet noodzakelijk om zowel DomainKeys als DKIM voor het zelfde domein toe te laten aangezien DKIM een betere versie van DomainKeys is.
 >* De volgende domeinen valideren momenteel DKIM: AOL, Gmail.
 
-
->[!IMPORTANT]
->
->Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](https://helpx.adobe.com/nl/campaign/kb/acc-campaign-enhanced-mta.html) hebt bevorderd, wordt het e-mailauthentificeren DKIM gedaan door Verbeterde MTA voor alle berichten met alle domeinen.
 
 ### DMARC {#dmarc}
 
