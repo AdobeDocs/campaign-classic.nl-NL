@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 5%
@@ -19,9 +19,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Alleen de eigenaar van de levering kan een levering starten. Als een andere operator (of operatorgroep) een levering wil starten, moet u deze als controleurs toevoegen in het veld **[!UICONTROL Delivery start:]**.
->
->Zie [deze sectie](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers) voor meer informatie.
+>Alleen de eigenaar van de levering kan een levering starten. Als een andere operator (of operatorgroep) een levering wil starten, moet u deze als controleurs toevoegen in het veld **[!UICONTROL Delivery start:]**. Zie [deze sectie](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers) voor meer informatie.
 
 ## Aanvullende parameters voor levering {#delivery-additiona-parameters}
 
@@ -31,27 +29,31 @@ Alvorens de levering te verzenden, kunt u de verzendende parameters in de leveri
 
 * **[!UICONTROL Delivery priority]**: Met deze optie kunt u de verzendvolgorde voor uw leveringen beïnvloeden door hun prioriteitsniveau (normaal, hoog of laag) op te geven. Hierdoor kunt u de volgorde voor bepaalde, meer urgente leveringen voorrang geven boven andere.
 
-* **[!UICONTROL Message batch quantity]**: Met deze optie kunt u het aantal berichten definiëren dat binnen hetzelfde XML-leveringspakket wordt gegroepeerd. Als de parameter op 0 wordt geplaatst, worden de berichten automatisch gegroepeerd. De pakketgrootte wordt gedefinieerd door de berekening `<delivery size>/1024`, met minimaal 8 en maximaal 256 berichten per pakket.
+* **[!UICONTROL Message batch quantity]**: Met deze optie kunt u het aantal berichten definiëren dat is gegroepeerd binnen hetzelfde XML-leveringspakket. Als de parameter op 0 wordt geplaatst, worden de berichten automatisch gegroepeerd. De pakketgrootte wordt gedefinieerd door de berekening `<delivery size>/1024`, met minimaal 8 en maximaal 256 berichten per pakket.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Wanneer de levering wordt gedupliceerd, wordt de parameter opnieuw ingesteld.
 
-* **[!UICONTROL Send using multiple waves]**: Meer informatie hierover vindt u in  [Verzenden met meerdere golven](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**: Raadpleeg  [Verzenden met meerdere golven](#sending-using-multiple-waves) voor meer informatie.
 
 * **[!UICONTROL Test SMTP delivery]**: Deze optie staat u toe om het verzenden van een levering via SMTP te testen. De levering wordt verwerkt tot verbinding aan de server SMTP maar niet verzonden.
 
    >[!NOTE]
    >
-   >Het wordt niet aangeraden deze optie te gebruiken wanneer u medio-sourcing gebruikt om mta niet aan te roepen.
-   >
-   >Voor meer informatie bij het vormen van een server SMTP, verwijs [naar deze sectie](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
+   >Het wordt niet aangeraden deze optie te gebruiken wanneer u medio-sourcing gebruikt om mta niet aan te roepen. Voor meer bij het vormen van een server SMTP, verwijs [naar deze sectie](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
-* **[!UICONTROL Email BCC]**: Met deze optie kunt u e-mailberichten op een extern systeem opslaan via BCC door eenvoudig een BCC-e-mailadres toe te voegen aan uw berichtdoel. Raadpleeg [voor meer informatie deze sectie](../../delivery/using/sending-messages.md#archiving-emails).
+* **[!UICONTROL Email BCC]**: Met deze optie kunt u e-mailberichten op een extern systeem opslaan via BCC door eenvoudig een BCC-e-mailadres toe te voegen aan uw berichtdoel. Raadpleeg [deze sectie](../../delivery/using/sending-messages.md#archiving-emails) voor meer informatie.
 
-Zodra de levering wordt gevormd en klaar om worden verzonden, zorg ervoor u [leveringsanalyse](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery) in werking hebt gesteld. Klik eenmaal op **[!UICONTROL Confirm delivery]** om de levering van berichten te starten.
+## Levering {#confirming-delivery} bevestigen
+
+Wanneer de levering wordt gevormd en klaar om worden verzonden, zorg ervoor u de leveringsanalyse in werking hebt gesteld.
+
+Om dit te doen, klik **[!UICONTROL Send]**, selecteer de gewenste actie en klik **[!UICONTROL Analyze]**. Zie [De analyse starten](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery) voor meer informatie.
 
 ![](assets/s_ncs_user_email_del_send.png)
+
+Klik eenmaal op **[!UICONTROL Confirm delivery]** om de levering van berichten te starten.
 
 U kunt de leveringstovenaar dan sluiten en de uitvoering van de levering van het **[!UICONTROL Delivery]** lusje volgen, dat via de details van deze levering of via de lijst van leveringen toegankelijk is.
 
@@ -73,7 +75,7 @@ U kunt de levering van berichten uitstellen om de levering te plannen of om de s
 
 1. U kunt dan de leveringsanalyse beginnen, dan bevestig de levering verzendend. De verzending van de levering begint echter pas op de datum die in het veld **[!UICONTROL Contact date]** is opgegeven.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Wanneer u met de analyse bent begonnen, is de contactdatum die u hebt bepaald vast. Als u deze datum wijzigt, moet u de analyse opnieuw starten, zodat rekening wordt gehouden met uw wijzigingen.
 
@@ -133,7 +135,7 @@ Als u de lading in evenwicht wilt brengen, kunt u leveringen in verscheidene par
       ![](assets/s_ncs_user_wizard_waves_create.png)
    Een specifieke typologieregel, **[!UICONTROL Wave scheduling check]**, zorgt ervoor dat de laatste golf vóór de grens van de leveringsgeldigheid wordt gepland. De typologieën van de campagne en hun regels, die op het **[!UICONTROL Typology]** lusje van de leveringseigenschappen worden gevormd, worden voorgesteld in [Validatieproces met typologieën](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Zorg ervoor de laatste golven niet de leveringsdeadline overschrijden, die in **[!UICONTROL Validity]** tabel wordt bepaald. Anders kunnen sommige berichten niet worden verzonden.
    >
@@ -169,18 +171,15 @@ De twee onderstaande voorbeelden zijn de meest gebruikte voorbeelden voor het ge
 
 Tijdelijk niet-geleverde berichten als gevolg van een fout **Soft** of **Genegeerde** worden automatisch opnieuw geprobeerd. De types en de redenen van de leveringsmislukking worden voorgesteld in dit [sectie](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
-De centrale sectie van het **[!UICONTROL Delivery]** lusje voor leveringsparameters wijst op hoeveel herpogingen de dag na de levering en de minimumvertraging tussen herpogingen zouden moeten worden uitgevoerd.
+>[!IMPORTANT]
+>
+>Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, worden de heruitzettingsmontages in de levering niet meer gebruikt door Campagne. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
+
+Voor installaties op locatie en gehoste/hybride installaties die gebruikmaken van de oude Campagne MTA, geeft het centrale gedeelte van het tabblad **[!UICONTROL Delivery]** voor leveringsparameters aan hoeveel pogingen de dag na de levering en de minimale vertraging tussen pogingen moeten worden uitgevoerd.
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-Door gebrek, zijn vijf herpogingen gepland voor de eerste dag van de levering met een minimuminterval van één uur uitgespreid over de 24 uren van de dag. Elke dag opnieuw proberen wordt geprogrammeerd na dat en tot de leveringsdeadline, die in **[!UICONTROL Validity]** tabel (zie [Geldigheidsperiode bepalen](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)) wordt bepaald.
-
->[!NOTE]
->
->Voor gehoste of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, worden de retry montages in de levering niet meer gebruikt door Campagne. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
->
->Alle effecten worden beschreven in het document [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/nl/campaign/kb/acc-campaign-enhanced-mta.html).
-
+Door gebrek, zijn vijf herpogingen gepland voor de eerste dag van de levering met een minimuminterval van één uur uitgespreid over de 24 uren van de dag. Elke dag opnieuw proberen wordt geprogrammeerd na dat en tot de leveringsdeadline, die in **[!UICONTROL Validity]** tabel (zie [Geldigheidsperiode bepalen](#defining-validity-period)) wordt bepaald.
 
 ## Geldigheidsperiode {#defining-validity-period} definiëren
 
@@ -192,12 +191,10 @@ Wanneer de levering is gestart, kunnen de berichten (en eventuele nieuwe poginge
 
    U kunt ook datums opgeven. Selecteer **[!UICONTROL Explicitly set validity dates]** om dit te doen. In dit geval kunt u ook de tijd opgeven op basis van de uiterste datum voor levering en geldigheid. De huidige tijd wordt standaard gebruikt, maar u kunt deze rechtstreeks wijzigen in het invoerveld.
 
+   >[!IMPORTANT]
+   >
+   >Als u voor gehoste of hybride installaties een upgrade hebt uitgevoerd naar [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md), wordt de **[!UICONTROL Delivery duration]**-instelling in uw e-mailleveringen voor campagne alleen gebruikt als deze is ingesteld op **3,5 dagen of minder**. Als u een waarde definieert die hoger is dan 3,5 dagen, wordt hiermee geen rekening gehouden.
+
 * **Geldigheidslimiet van middelen**: Het  **[!UICONTROL Validity limit]** veld wordt gebruikt voor geüploade bronnen, voornamelijk voor de spiegelpagina en afbeeldingen. De bronnen op deze pagina zijn gedurende een beperkte tijd geldig (om schijfruimte te besparen).
 
    De waarden in dit veld kunnen worden uitgedrukt in de eenheden in [dit deel](../../platform/using/adobe-campaign-workspace.md#default-units).
-
->[!NOTE]
->
->Voor gehoste of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, zal **[!UICONTROL Delivery duration]** plaatsend in uw levering van de Campagne slechts worden gebruikt indien geplaatst aan **3.5** dagen of minder. Als u een waarde definieert die hoger is dan 3,5 dagen, wordt hiermee geen rekening gehouden.
->
->Alle effecten worden beschreven in het document [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
