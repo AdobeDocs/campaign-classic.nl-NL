@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5fa848d86f951cb9dc40eb7981abea29c1092291
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 2%
@@ -102,7 +102,7 @@ Zorg ervoor u deze parameters volgens de e-mailverzendende productie aanpast. Bi
 
 ## Het BCC e-mailadres (op gebouw) {#configuring-the-bcc-email-address--on-premise-} vormen
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Om privacyredenen moeten BCC-e-mails worden verwerkt door een archiveringssysteem dat veilig identificeerbare informatie (PII) kan opslaan.
 
@@ -125,7 +125,7 @@ In **config-`<instance name>.xml`** dossier, gebruik de volgende parameters om d
 
 ## Naar de nieuwe e-mail-BCC {#updated-email-archiving-system--bcc-} gaan
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Het e-mailarchiveringssysteem (BCC) is gewijzigd met Adobe Campaign 17.2 (build 8795). Als u een upgrade uitvoert vanaf een oudere build en al gebruikmaakt van e-mailarchiveringsmogelijkheden, moet u de upgrade handmatig uitvoeren naar het nieuwe e-mailarchiveringssysteem (BCC).
 
