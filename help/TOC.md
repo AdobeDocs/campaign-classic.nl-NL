@@ -1,6 +1,6 @@
 ---
 audience: end-user
-breadcrumb-title: Campaign Classic
+breadcrumb-title: Help Center
 product: campaign
 title: Campaign Classic - handleiding
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 048ceef9e4498b557601f3eb2db839e415d6e8c5
+source-git-commit: 7351912ed34525479401ef4983a0bc8a78de85f8
 workflow-type: tm+mt
-source-wordcount: '2290'
-ht-degree: 95%
+source-wordcount: '2347'
+ht-degree: 93%
 
 ---
 
@@ -124,7 +124,11 @@ ht-degree: 95%
       + [Een e-maillevering maken](delivery/using/creating-an-email-delivery.md)
       + [De e-mailcontent definiëren](delivery/using/defining-the-email-content.md)
       + [Interactieve content definiëren](delivery/using/defining-interactive-content.md)
-      + [Berichten verzenden](delivery/using/sending-messages.md)
+      + E-mail {#sending-an-email} verzenden
+         + [E-maillevering bevestigen](delivery/using/sending-messages.md)
+         + [E-mailparameters](delivery/using/email-parameters.md)
+         + [Verzenden met de verbeterde MTA](delivery/using/sending-with-enhanced-mta.md)
+         + [Verzenden op Japanse mobiele telefoons](delivery/using/sending-emails-on-japanese-mobiles.md)
       + [Bestanden bijvoegen](delivery/using/attaching-files.md)
    + Berichten verzenden op mobiele apparaten {#sending-messages-on-mobiles}
       + [Sms-kanaal](delivery/using/sms-channel.md)
@@ -165,6 +169,19 @@ ht-degree: 95%
       + [Een externe tabel voor ontvangers gebruiken](delivery/using/using-an-external-recipient-table.md)
       + [Gebruiksscenario: seed-adressen selecteren op criteria](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
       + [Gebruiksscenario: de veldvervanging configureren](delivery/using/use-case--configuring-the-field-substitution.md)
+   + A/B-tests {#a-b-testing}
+      + [Aan de slag met A/B-tests](delivery/using/get-started-a-b-testing.md)
+      + [A/B-tests configureren](delivery/using/configuring-a-b-testing.md)
+      + Gebruiksscenario {#use-case}
+         + [Over dit gebruiksgeval](delivery/using/a-b-testing-use-case.md)
+         + [Een doelworkflow maken](delivery/using/a-b-testing-uc-targeting-workflow.md)
+         + [Bezig met configureren van populatiemonsters](delivery/using/a-b-testing-uc-population-samples.md)
+         + [De leveringssjablonen maken](delivery/using/a-b-testing-uc-delivery-templates.md)
+         + [De leveringen configureren](delivery/using/a-b-testing-uc-configuring-deliveries.md)
+         + [Script maken](delivery/using/a-b-testing-uc-script.md)
+         + [Definiëren van de uiteindelijke levering](delivery/using/a-b-testing-uc-final-delivery.md)
+         + [De workflow starten](delivery/using/a-b-testing-uc-start-workflow.md)
+         + [Het resultaat analyseren](delivery/using/a-b-testing-uc-analyzing.md)
    + Lidmaatschappen en verwijzingen {#subscriptions-and-referrals}
       + [Services en lidmaatschappen](delivery/using/about-services-and-subscriptions.md)
       + [Lidmaatschappen beheren](delivery/using/managing-subscriptions.md)
@@ -195,7 +212,7 @@ ht-degree: 95%
       + [Inboxrendering](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Best practices voor hernieuwde betrokkenheid](delivery/using/re-engagement-best-practices.md)
-      + [Databases van blokkeringslijsten](delivery/using/block-list-databases.md)
+      + [Lijst van afgewezen personen databases](delivery/using/block-list-databases.md)
       + [Problemen oplossen](delivery/using/deliverability-faq.md)
    + Module voor contentmanagement{#content-management}
       + [Contentmanagement](delivery/using/about-content-management.md)
@@ -439,7 +456,6 @@ ht-degree: 95%
       + [Gebruiksscenario’s voor workflows](workflow/using/about-workflow-use-cases.md)
       + Leveringen {#deliveries}
          + [De lokale goedkeuringsactiviteit gebruiken](workflow/using/using-the-local-approval-activity.md)
-         + [A/B-tests](workflow/using/a-b-testing.md)
          + [Een verjaardags-e-mail verzenden](workflow/using/sending-a-birthday-email.md)
          + [Leveringscontent laden](workflow/using/loading-delivery-content.md)
          + [Workflow voor levering tussen kanalen](workflow/using/cross-channel-delivery-workflow.md)
