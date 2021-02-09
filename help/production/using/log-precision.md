@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 1%
@@ -62,13 +62,13 @@ De logboeken van deze bevelen worden opgeslagen in het logboekdossier van de mod
 
 Hier is een voorbeeld specifiek voor de module van het Web. De overige modules werken zoals hierboven aangegeven.
 
-Voordat u deze opdracht verzendt, moet u controleren of de actieve taak hierdoor niet wordt beïnvloed.
+Voordat u deze opdracht verzendt, controleert u of dit invloed heeft op geen actieve taak:
 
 ```
 nlserver pdump -who
 ```
 
-Vervolgens sluit u de module af en start u deze opnieuw in de modus **TraceFilter**.
+Vervolgens sluit u de module af en start u deze opnieuw in de modus **TraceFilter**:
 
 ```
 nlserver stop web; LD_PRELOAD=libjsig.so nlserver web -tomcat -verbose -tracefilter:* -tracefile:web_debug@default
