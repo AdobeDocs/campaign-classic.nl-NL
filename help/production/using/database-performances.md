@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 8%
@@ -46,9 +46,9 @@ Controleer of de opschoontaak van de database actief is. U doet dit door de logb
 
 Zorg ervoor dat het databaseonderhoud correct is gepland en uitgevoerd. Neem hiervoor contact op met uw databasebeheerder voor meer informatie over:
 
-* hun onderhoudsschema;
-* eerder uitgevoerde onderhoudsplannen;
-* bekijk de manuscriptlogboeken.
+* Hun onderhoudsschema
+* Eerder uitgevoerde onderhoudsplannen
+* Scriptlogboeken weergeven
 
 Raadpleeg [deze sectie](../../production/using/recommendations.md) voor meer informatie.
 
@@ -60,9 +60,9 @@ Raadpleeg [deze sectie](../../production/using/recommendations.md) voor meer inf
 
 Controleer het aantal en de grootte van werktabellen. Wanneer zij een bepaalde grootte overschrijden, worden de gegevensbestandprestaties beïnvloed. Deze tabellen worden gemaakt door workflows en leveringen. Ze blijven in de database terwijl workflows en leveringen actief zijn. Als u de grootte van werktabellen wilt beperken, kunt u de volgende bewerkingen uitvoeren:
 
-* leveringen met de volgende statussen stoppen of verwijderen: **[!UICONTROL Failed]** , **[!UICONTROL In progress]** , **[!UICONTROL Ready for delivery]** of **[!UICONTROL Paused]**.
-* werkstromen die wegens een fout zijn gepauzeerd, stoppen of verwijderen;
-* alle workflows stoppen die worden gebruikt voor tests die geen **[!UICONTROL End]** activiteit bevatten en waarvan de status daarom **[!UICONTROL Paused]** blijft.
+* Leveringen met de volgende statussen stoppen of verwijderen: **[!UICONTROL Failed]**, **[!UICONTROL In progress]**, **[!UICONTROL Ready for delivery]** of **[!UICONTROL Paused]**.
+* Workflows stoppen of verwijderen die zijn gepauzeerd vanwege een fout.
+* Stop alle workflows die worden gebruikt voor tests die geen **[!UICONTROL End]**-activiteit bevatten en waarvan de status daarom **[!UICONTROL Paused]** blijft.
 
 >[!IMPORTANT]
 >
@@ -72,14 +72,13 @@ Controleer het aantal en de grootte van werktabellen. Wanneer zij een bepaalde g
 
 Afhankelijk van de installatie-instellingen van Adobe Campaign kunnen twee tools worden gebruikt voor platformbewaking:
 
-* de pagina voor de productie van exemplaren. Raadpleeg [Handmatige bewaking](../../production/using/monitoring-processes.md#manual-monitoring) voor meer informatie.
-* het netreport script. Raadpleeg [Automatische bewaking via Adobe Campaign-scripts](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts) voor meer informatie.
+* De pagina voor instantieproductie. Raadpleeg [Handmatige bewaking](../../production/using/monitoring-processes.md#manual-monitoring) voor meer informatie.
+* Het *netreport* manuscript. Raadpleeg [Automatische bewaking via Adobe Campaign-scripts](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts) voor meer informatie.
 
 ## Specificaties {#specifics}
 
 Het kan nodig zijn een real-time diagnose uit te voeren om de oorzaak van het probleem vast te stellen. Begin door het proces en de dossiers van het platformlogboek te controleren, dan controlegegevensbestandactiviteit terwijl het ontspannen van de kwestie. Let met name op het volgende:
 
-* het uitvoeringsplan voor het onderhoud;
-* SQL query&#39;s die worden uitgevoerd,
-* de vraag of er tegelijkertijd externe processen plaatsvinden (reiniging, invoer, berekening van aggregaten, enz.).
-
+* Uitvoeringsplan voor onderhoud
+* SQL-query&#39;s uitgevoerd
+* Of de externe processen tegelijkertijd worden uitgevoerd (reiniging, invoer, berekening van aggregaten, enz.).
