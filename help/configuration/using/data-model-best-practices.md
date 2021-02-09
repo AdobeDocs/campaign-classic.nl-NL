@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
 source-wordcount: '4014'
 ht-degree: 1%
@@ -251,9 +251,9 @@ Standaard hebben Adobe Campaign-leverings- en trackinglogboeken een retentieduur
 * Als u logboeken langer wilt houden, zou dit besluit zorgvuldig afhankelijk van de gegevensbestandgrootte en het volume van verzonden berichten moeten worden genomen. Ter herinnering: Adobe Campaign-reeks is een 32-bits geheel getal.
 * Aanbevolen wordt niet meer dan 1 miljard records tegelijk in deze tabellen te hebben (ongeveer 50% van de 2,14 miljard beschikbare ids) om het risico van het gebruik van alle beschikbare id&#39;s te beperken. Dit zal voor sommige klanten vereisen om de bewaarduur onder 180 dagen te verminderen.
 
-Meer informatie over gegevensbewaring vindt u in [Richtlijnen ](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent) betreffende privacy en beveiliging van campagnes.
+Meer informatie over gegevensbewaring vindt u in [Richtlijnen ](https://helpx.adobe.com/nl/campaign/kb/campaign-privacy-overview.html#consent) betreffende privacy en beveiliging van campagnes.
 
-Meer informatie over de opschoonworkflow [in deze sectie](../../production/using/database-cleanup-workflow.md)..
+Meer informatie over de opschoonworkflow [in deze sectie](../../production/using/database-cleanup-workflow.md) voor het opruimen van de Campagnegegevens.
 
 >[!IMPORTANT]
 >
