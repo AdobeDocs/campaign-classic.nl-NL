@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 translation-type: tm+mt
-source-git-commit: 1788346f7dfe2c18c490363c90358fcb737f1646
+source-git-commit: fd6195ca447fa0345189f3153f44ad2f9a067210
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 4%
+source-wordcount: '220'
+ht-degree: 7%
 
 ---
 
@@ -35,7 +35,7 @@ Standaard worden ze in submappen gesorteerd op leveringsmaand. Deze soort kan in
 
 >[!NOTE]
 >
->Voor ontvangen of hybride installaties, als u aan Verbeterde MTA hebt bevorderd, kunnen alle transactionele berichten ook met Adobe Campaign Verbeterde MTA voor betere leverability, productie, en stuitbehandeling worden verzonden. Alle effecten zijn gelijk aan die voor standaardmarketingberichten en worden beschreven in het document [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/nl/campaign/kb/acc-campaign-enhanced-mta.html).
+>Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, kunnen alle transactionele berichten ook met Adobe Campaign Verbeterde MTA voor betere leverability, productie, en stuitbehandeling worden verzonden. Alle effecten zijn hetzelfde als bij standaardmarketingberichten.
 
 ## Controle van het transactiebericht {#transactional-message-monitoring}
 
