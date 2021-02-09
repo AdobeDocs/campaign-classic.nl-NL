@@ -2,110 +2,39 @@
 solution: Campaign Classic
 product: campaign
 title: Een e-mail verzenden met Adobe Campaign Classic
-description: Meer informatie over parameters voor e-maillevering
+description: Leer hoe u de levering van een e-mail kunt bevestigen en de specifieke kenmerken van het verzenden van e-mailberichten kunt ontdekken.
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e2dfc34b35e6ce03715bd5723cff578a1aacd559
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 8%
+source-wordcount: '210'
+ht-degree: 0%
 
 ---
 
 
-# Een e-mail verzenden{#sending-an-email}
+# E-maillevering {#confirming-email-delivery} bevestigen
 
-Klik op **[!UICONTROL Send]** als u uw e-mail wilt goedkeuren en verzenden naar de ontvangers van de levering die wordt gemaakt.
+Zodra uw e-mail is gecreeerd en gevormd, kunt u het naar het belangrijkste doel verzenden. In deze sectie worden de belangrijkste stappen beschreven om de levering van een e-mail te bevestigen.
 
-Het gedetailleerde proces voor het valideren en verzenden van een levering wordt in de volgende secties weergegeven:
+1. Controleer of u alle instellingen hebt geconfigureerd die specifiek zijn voor het verzenden van e-mail. Zie [E-mailparameters](../../delivery/using/email-parameters.md) voor meer informatie.
+1. Als de e-mail gereed is en u deze naar het hoofddoel verzendt, wordt aangeraden eventuele fouten op te sporen door proefdrukken te verzenden. Zie [Een proefdruk verzenden](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) voor meer informatie.
 
-* [De levering valideren](../../delivery/using/steps-validating-the-delivery.md)
-* [De levering verzenden](../../delivery/using/steps-sending-the-delivery.md)
+1. Als u klaar bent, moet u de e-mail valideren door de analyse te starten. Om dit te doen, klik **[!UICONTROL Send]**, selecteer een actie en klik **[!UICONTROL Analyze]**. Zie [De analyse starten](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery) voor meer informatie.
 
-In de onderstaande secties worden de parameters beschreven die specifiek zijn voor het verzenden van e-mails.
+1. Wanneer de analyse is voltooid, klikt u op **[!UICONTROL Confirm delivery]** om de levering van berichten aan de beoogde ontvangers te starten. Zie [Levering bevestigen](../../delivery/using/steps-sending-the-delivery.md#confirming-delivery) voor meer informatie.
 
-## E-mailBCC {#archiving-emails}
-
-Met Adobe Campaign kunt u e-mailberichten op een extern systeem opslaan via BCC door eenvoudig een BCC-e-mailadres toe te voegen aan uw berichtdoel. Zodra de optie geactiveerd is, wordt een exacte kopie van alle verzonden berichten bewaard voor deze levering.
-
-Raadpleeg [deze sectie](../../installation/using/email-archiving.md) voor meer informatie over de BCC-configuratie en best practices voor e-mail.
+   <!--Add screenshot with analysis done and Confirm delivery button activated.-->
 
 >[!NOTE]
 >
->E-mail BCC is een optionele mogelijkheid. Controleer uw licentieovereenkomst en neem contact op met uw accountmanager om deze te activeren.
+>Het hele proces voor het valideren van een levering wordt beschreven in [deze sectie](../../delivery/using/steps-validating-the-delivery.md). De volledige gedetailleerde stappen om een levering te vormen en te verzenden worden voorgesteld in [deze sectie](../../delivery/using/steps-sending-the-delivery.md).
 
-Bij het maken van een nieuwe bezorgings- of leveringssjabloon is E-mail BCC niet standaard ingeschakeld. U moet het manueel op het niveau van de e-maillevering of leveringsmalplaatje toelaten.
-
-Voer de onderstaande stappen uit om e-mailblokcode in te schakelen voor een sjabloon voor e-maillevering:
-
-1. Ga naar **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** of **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
-1. Selecteer de levering van uw keus of dupliceer uit-van-de-doos **E-mail levering** malplaatje, dan selecteer het gedupliceerde malplaatje.
-1. Klik op de knop **Eigenschappen**.
-1. Selecteer het tabblad **[!UICONTROL Delivery]**. 
-1. Schakel de optie **E-mailBCC** in. Een kopie van alle verzonden berichten voor elke levering op basis van deze sjabloon wordt verzonden naar het e-mailadres BCC dat is geconfigureerd.
-
-   ![](assets/s_ncs_user_wizard_archiving.png)
-
-   >[!NOTE]
-   >
-   >Als de e-mails die naar het BCC-adres worden verzonden, worden geopend en doorgeklikt, wordt hiermee rekening gehouden in de **[!UICONTROL Total opens]** en **[!UICONTROL Clicks]** van de verzendanalyse, wat tot onjuiste berekeningen kan leiden.
-
-## De spiegelpagina {#generating-the-mirror-page} genereren
-
-De spiegelpagina is een HTML-pagina die online toegankelijk is via een webbrowser. De inhoud is identiek aan de e-mail.
-
-Standaard wordt de spiegelpagina gegenereerd als de koppeling wordt ingevoegd in de inhoud van de e-mail. Voor meer op verpersoonlijkingsblokkeringen toevoeging, verwijs naar [Personaliseringsblokken](../../delivery/using/personalization-blocks.md).
-
-In de leveringseigenschappen, laat het **[!UICONTROL Mode]** gebied van **[!UICONTROL Validity]** lusje u de generatiemodus voor deze pagina wijzigen.
-
-![](assets/s_ncs_user_wizard_miror_page_mode.png)
-
->[!CAUTION]
->
->Er moet een HTML-inhoud zijn gedefinieerd voordat de spiegelpagina kan worden gemaakt.
-
-Naast de standaardmodus zijn ook de volgende opties beschikbaar:
-
-* **[!UICONTROL Force the generation of the mirror page]** : zelfs als geen verbinding aan de spiegelpagina in de levering wordt opgenomen, zal de spiegelpagina worden gecreeerd.
-* **[!UICONTROL Do not generate the mirror page]** : er wordt geen spiegelpagina gegenereerd, zelfs niet als de koppeling aanwezig is in de levering.
-* **[!UICONTROL Generates a mirror page accessible using only the message identifier]** : deze optie laat u tot de inhoud van de spiegelpagina, met verpersoonlijkingsinformatie, in het venster van het leveringslogboek toegang hebben. Om dit, na het eind van de levering te doen, klik **[!UICONTROL Delivery]** tabel en selecteer de lijn van de ontvanger waarvan spiegelpagina u wenst om te bekijken. Klik op de koppeling **[!UICONTROL Display the mirror page for this message...]**.
-
-   ![](assets/s_ncs_user_wizard_miror_page_link.png)
-
-## Bounce-e-mailberichten beheren {#managing-bounce-emails}
-
-Met het tabblad **[!UICONTROL SMTP]** van de leveringsparameters kunt u het beheer van stuiterende mails configureren.
-
-![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
-
-Standaard worden teruggestuurde e-mailberichten ontvangen in het standaardfoutvak van het platform, maar u kunt een specifiek foutadres voor een levering definiëren.
-
-U kunt ook een specifiek adres vanuit dit scherm definiëren om de redenen voor stuiterende berichten te onderzoeken wanneer deze niet automatisch door de toepassing kunnen worden gekwalificeerd. Voor elk van deze velden kunt u met het pictogram &#39;Aangepaste velden toevoegen&#39; personalisatieparameters toevoegen.
-
-## Tekencodering {#character-encoding}
-
-Op het tabblad **[!UICONTROL SMTP]** van de leveringsparameters kunt u met de sectie **[!UICONTROL Character encoding]** een specifieke codering instellen.
-
-De standaardcodering is UTF-8. Als sommige e-mailproviders van uw ontvangers de standaardcodering UTF-8 niet ondersteunen, kunt u een specifieke codering instellen om de speciale tekens correct weer te geven aan de ontvangers van uw e-mail.
-
-U wilt bijvoorbeeld een e-mail verzenden met Japanse tekens. Om ervoor te zorgen dat alle tekens correct worden weergegeven aan ontvangers in Japan, kunt u een codering gebruiken die de Japanse tekens ondersteunt in plaats van de standaard UTF-8.
-
-Hiervoor selecteert u de optie **[!UICONTROL Force the encoding used for messages]** in de sectie **[!UICONTROL Character encoding]** en kiest u een codering in de vervolgkeuzelijst die wordt weergegeven.
-
-![](assets/s_ncs_user_email_del_properties_smtp_tab_encoding.png)
-
-## SMTP-koppen {#adding-smtp-headers} toevoegen
-
-Het is mogelijk om kopballen SMTP aan uw leveringen toe te voegen. Hiervoor gebruikt u de desbetreffende sectie van het tabblad **[!UICONTROL SMTP]** in de levering.
-
-Het script dat in dit venster wordt ingevoerd, moet in het volgende formulier verwijzen naar één koptekst per regel: **naam:waarde**.
-
-Waarden worden indien nodig automatisch gecodeerd.
-
->[!CAUTION]
->
->Het toevoegen van een script voor het opnemen van extra SMTP-kopteksten is gereserveerd voor gevorderde gebruikers.
->
->De syntaxis van dit script moet voldoen aan de vereisten van dit type content: geen ongebruikte ruimte, geen lege regel, enz.
+In de volgende secties vindt u gedetailleerde instellingen en configuraties die specifiek zijn voor het leveren van e-mails:
+<!--* [Generating the mirror page](../../delivery/using/generating-mirror-page.md)
+* [Email BCC](../../delivery/using/email-bcc.md)-->
+* [E-mailparameters](../../delivery/using/email-parameters.md)
+* [E-mailberichten verzenden met de verbeterde MTA](../../delivery/using/sending-with-enhanced-mta.md)
+* [E-mails verzenden naar Japanse mobiele telefoons](../../delivery/using/sending-emails-on-japanese-mobiles.md)
