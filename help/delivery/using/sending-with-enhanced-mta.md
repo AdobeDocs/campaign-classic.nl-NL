@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
+source-git-commit: 07ed17a093cb6fb2d7aae376325a127c61b1dcc2
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 2%
@@ -147,7 +147,7 @@ Daarom moet u wachten tot het einde van de geldigheidsperiode om het laatste **[
 
 <!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
 
-## Leveringsdoorvoer
+### Leveringsdoorvoer
 
 De grafiek van de productie van de Levering van de Campagne zal niet meer de productie aan uw e-mailontvangers tonen. Die grafiek zal nu de productiesnelheid voor het relais van uw berichten van Campaign over aan Verbeterde MTA tonen.
 
@@ -163,7 +163,7 @@ Wanneer een bericht gedurende 3,5 dagen in de wachtrij van de Enhanced MTA heeft
 
 Zie [deze sectie](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period) voor meer informatie over de geldigheidsperiode.
 
-## DKIM-ondertekening
+### DKIM-ondertekening
 
 DKIM (DomainKeys Identified Mail) e-mailverificatie wordt ondertekend door de Enhanced MTA. DKIM-signing door de native Campagne MTA zal worden uitgezet binnen de beheerlijst van het Domein als deel van de Verbeterde verbetering MTA.
 Zie [deze sectie](../../delivery/using/technical-recommendations.md#dkim) voor meer informatie over DKIM.
