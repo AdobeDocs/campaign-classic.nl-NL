@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 7351912ed34525479401ef4983a0bc8a78de85f8
+source-git-commit: efa36dc08ce4dd59805bb9eba63a4249e14609d7
 workflow-type: tm+mt
-source-wordcount: '2347'
+source-wordcount: '2349'
 ht-degree: 93%
 
 ---
@@ -201,6 +201,7 @@ ht-degree: 93%
       + [URL-tracking personaliseren](delivery/using/personalizing-url-tracking.md)
       + [De trackinglogboeken openen](delivery/using/accessing-the-tracking-logs.md)
       + [Tracking van tests](delivery/using/testing-tracking.md)
+      + [Problemen bijhouden](delivery/using/tracking-troubleshooting.md)
    + Leverbaarheidsbeheer {#deliverability-management}
       + [Leverbaarheid](delivery/using/about-deliverability.md)
       + [Belangrijkste punten om te controleren](delivery/using/deliverability-key-points.md)
@@ -212,7 +213,7 @@ ht-degree: 93%
       + [Inboxrendering](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Best practices voor hernieuwde betrokkenheid](delivery/using/re-engagement-best-practices.md)
-      + [Lijst van afgewezen personen databases](delivery/using/block-list-databases.md)
+      + [Lijst van gewezen personen databases](delivery/using/block-list-databases.md)
       + [Problemen oplossen](delivery/using/deliverability-faq.md)
    + Module voor contentmanagement{#content-management}
       + [Contentmanagement](delivery/using/about-content-management.md)
