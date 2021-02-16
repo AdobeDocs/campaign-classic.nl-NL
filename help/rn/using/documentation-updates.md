@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 7473a64a7f3865d1e1eefde9607c539c2f632138
+source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
 workflow-type: tm+mt
-source-wordcount: '3914'
+source-wordcount: '3947'
 ht-degree: 93%
 
 ---
@@ -26,6 +26,10 @@ Raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/us
 Er is een nieuwe sectie toegevoegd met gedetailleerde informatie over hoe u A/B-tests kunt uitvoeren met behulp van workflows. [Meer informatie](../../delivery/using/get-started-a-b-testing.md)
 
 De Adobe Campaign Enhanced MTA-sectie is [hier](../../delivery/using/sending-with-enhanced-mta.md) verplaatst.
+
+Er is een nieuwe pagina toegevoegd voor een overzicht van de trackingsmogelijkheden in [!DNL Campaign Classic]. [Meer informatie](../../delivery/using/about-message-tracking.md)
+
+Er is een sectie voor probleemoplossing toegevoegd om u te helpen algemene problemen met betrekking tot bijhouden op te lossen. [Meer informatie](../../delivery/using/tracking-troubleshooting.md)
 
 De sectie **Het verzenden van een e-mail** is gereorganiseerd en verduidelijkt met nieuwe subsecties. [Meer informatie](../../delivery/using/sending-messages.md)
 
