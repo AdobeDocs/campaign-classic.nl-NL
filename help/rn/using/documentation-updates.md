@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
 workflow-type: tm+mt
 source-wordcount: '3947'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 93%
 
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates per maand en per Campaign-release.
 
-Raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/using/latest-release.md) voor releasegerelateerde updates.
+Raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/using/latest-release.md) voor aan de release gerelateerde updates.
 
 ## Februari 2021 {#feb-2021}
 
@@ -35,35 +35,35 @@ De sectie **Het verzenden van een e-mail** is gereorganiseerd en verduidelijkt m
 
 ## Januari 2021 {#jan-2021}
 
-De sectie **[!UICONTROL Fork]** activiteit is verrijkt met beste praktijken. [Meer informatie](../../workflow/using/fork.md)
+De sectie **[!UICONTROL Fork]**-activiteit bevat nu ook best practices. [Meer informatie](../../workflow/using/fork.md)
 
-De sectie **CRM Connectors** is bijgewerkt, verbeterd en gereorganiseerd. [Meer informatie](../../platform/using/crm-connectors.md).
+De sectie **CRM-connectoren** is bijgewerkt, verbeterd en opnieuw ingedeeld. [Meer informatie](../../platform/using/crm-connectors.md).
 
-De stappen om **Adobe Campaign en de Dynamica van Microsoft** te verbinden zijn nu gedetailleerd in een specifieke pagina. [Meer informatie](../../platform/using/crm-ms-dynamics.md).
+De stappen om **Adobe Campaign te verbinden met Microsoft Dynamics** worden nu gedetailleerd beschreven op een specifieke pagina. [Meer informatie](../../platform/using/crm-ms-dynamics.md).
 
-Oracle On Demand API is nu verouderd als een CRM-verbinding die is verbonden met Campagne. [Meer informatie](../../rn/using/deprecated-features.md).
+De Oracle On Demand-API is nu verouderd als een CRM die verbonden is met Campaign. [Meer informatie](../../rn/using/deprecated-features.md).
 
-Leer hoe u de huidige versie van de ingesloten Tomcat-webservlet kunt achterhalen die in een exemplaar van Adobe Campaign [hier](../../production/using/locate-tomcat-version.md) wordt gebruikt.
+Ontdek [hier](../../production/using/locate-tomcat-version.md) hoe u de huidige versie kunt achterhalen van de ingesloten Tomcat-webservlet die wordt gebruikt in een instantie van Adobe Campaign.
 
-De lijst van technische werkstromen met de bijbehorende pakketten is uitgebreid en in één enkele pagina gecentraliseerd. [Meer informatie](../../workflow/using/about-technical-workflows.md)
+De lijst van technische workflows met de bijbehorende pakketten is verbeterd en wordt gecentraliseerd weergegeven op één pagina. [Meer informatie](../../workflow/using/about-technical-workflows.md)
 
-Het gedeelte Problemen oplossen in de **Monitoring**-handleiding is gereorganiseerd en verbeterd met een bestemmingspagina. [Meer informatie](../../production/using/troubleshooting.md).
+De sectie over probleemoplossing in de **Bewakingshandleiding** is gereorganiseerd en uitgebreid met een introductiepagina. [Meer informatie](../../production/using/troubleshooting.md).
 
-Er is een nieuwe **sectie Gegevens importeren en exporteren** beschikbaar met nieuwe pagina&#39;s die betrekking hebben op workflows, gegevenscompressie, codering en aanbevolen procedures voor importeren. [Meer informatie](../../platform/using/get-started-data-import-export.md)
+Er is een nieuwe sectie over het **importeren en exporteren van data** beschikbaar met nieuwe pagina&#39;s die betrekking hebben op workflows, gegevenscompressie, codering en best practices voor importeren. [Meer informatie](../../platform/using/get-started-data-import-export.md)
 
 ## December 2020 {#dec-2020}
 
-De sectie **Leveringscontrole** is gereorganiseerd in thematische onderwerpen. [Meer informatie](../../delivery/using/about-delivery-monitoring.md)
+De sectie over **leveringscontrole** is opnieuw ingedeeld in thematische onderwerpen. [Meer informatie](../../delivery/using/about-delivery-monitoring.md)
 
 Er is een gebruiksscenario toegevoegd met informatie over het toevoegen van IP-adressen van afzenders aan de verzendingslogs. [Meer informatie](../../delivery/using/delivery-dashboard.md#use-case)
 
 De veelgestelde vragen over privacy zijn verplaatst naar [deze sectie](../../platform/using/privacy-faq.md).
 
-Er is een gebruiksscenario toegevoegd voor het gebruik van de samenvoegfunctionaliteit van de activiteit **[!UICONTROL Deduplication]**. [Meer informatie](../../workflow/using/deduplication-merge.md)
+Er is een gebruiksscenario toegevoegd voor het gebruik van de samenvoegfunctie van de **[!UICONTROL Deduplication]**-activiteit. [Meer informatie](../../workflow/using/deduplication-merge.md)
 
-De volledige beschrijving van het de schakelaarprotocol en montagespagina van SMS is nu beschikbaar [hier](../../delivery/using/sms-protocol.md).
+De volledige beschrijving van de pagina over protocol en instellingen voor de sms-connector is nu [hier](../../delivery/using/sms-protocol.md) beschikbaar.
 
-Er is een notitie toegevoegd aan de sectie **Transactioneel overseinen** om te waarschuwen dat de gebeurtenismappen niet moeten worden ingesteld als weergaven over de uitvoeringsinstanties, om problemen met toegangsrechten te voorkomen. [Meer informatie](../../message-center/using/event-collection.md)
+Er is een opmerking toegevoegd aan de sectie **Transactionele berichten** om te waarschuwen dat de gebeurtenismappen niet moeten worden ingesteld als weergaven van de uitvoeringsinstanties om problemen met toegangsrechten te voorkomen. [Meer informatie](../../message-center/using/event-collection.md)
 
 ## November 2020 {#nov-2020}
 
@@ -169,7 +169,7 @@ Er staan nieuwe gebruiksscenario’s in de lijst met [workflowgebruiksscenario�
 * Een instantievariabele in een query aanroepen
 * Een gesplitst percentage toepassen op een populatie
 
-De **[!UICONTROL AND-join]**-activiteitensectie is verrijkt met aanvullende informatie over het gebruik ervan, en met een opmerking over het gebruik van variabelen. [Meer informatie](../../workflow/using/and-join.md)
+De sectie **[!UICONTROL AND-join]**-activiteit is verrijkt met aanvullende informatie over het gebruik ervan, en met een opmerking over het gebruik van variabelen. [Meer informatie](../../workflow/using/and-join.md)
 
 ## Juli 2020 {#july-2020}
 
@@ -209,8 +209,7 @@ Privacywetten voor Thailand en Brazilië - [Meer informatie](https://helpx.adobe
 
 **Overige documentatie-updates die bij de release worden geleverd**
 
-De nieuwe optie voor het ongedaan maken van de publicatie van een transactionele-berichtsjabloon wordt beschreven in
-[deze sectie](../../message-center/using/template-unpublication.md).
+De nieuwe optie voor het ongedaan maken van de publicatie van een transactionele-berichtsjabloon wordt beschreven in [deze sectie](../../message-center/using/template-unpublication.md).
 
 De nieuwe opties waarmee u beperkingen kunt instellen voor het verzenden van e-mails met afbeeldingen die zijn gedownload van een gepersonaliseerde URL en bijlagen, zijn toegevoegd aan de lijst met Campaign Classic-opties. [Meer informatie](../../installation/using/configuring-campaign-options.md#delivery)
 
