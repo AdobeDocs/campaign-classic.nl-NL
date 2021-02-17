@@ -6,11 +6,11 @@ description: Nieuwste opmerkingen bij de release van Campaign Classic
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1977'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -34,9 +34,9 @@ _27 oktober 2020_
 
 >[!CAUTION]
 >
-> * Deze versie wordt geleverd met een nieuw verbindingsprotocol: Als u verbinding maakt met Campagne via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **31 maart 2021**.
-> * Deze release wordt geleverd met een [beveiligingsoplossing](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw omgeving te versterken.
-> * Als u via Auth-verificatie de integratie Experience Cloug Triggers gebruikt, moet u naar Adobe I/O gaan zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De oude Auth-verificatiemodus wordt op **30 april 2021** beëindigd.
+> * Deze versie wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **31 maart 2021** verbinding te kunnen maken met Campaign.
+> * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
+> * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overgaan op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De oude oAuth-verificatiemodus wordt op **30 april 2021** buiten gebruik gesteld.
 
 
 **Nieuwe functies**
@@ -142,7 +142,7 @@ In Linux is _apache_neolane.conf_ nu geïnstalleerd in de map `conf`.
 * Er is een probleem verholpen waardoor leveringsstatistieken niet opnieuw konden worden berekend.
 * Er is een probleem verholpen waarbij een foutbericht werd weergegeven tijdens het uploaden van een CSV-bestand bij het gebruik van een Campaign Classic 9080-build die was verbonden met een server die gebruikmaakte van een oudere build. (NEO-23218)
 * Er is een probleem verholpen waarbij soms een foutbericht werd weergegeven tijdens het configureren van de CRM Microsoft Dynamics-wizard voor een extern account. Dit kwam door een compatibiliteitsprobleem met de nieuwste versie van de MS Dynamics CRM-API. (NEO-24528)
-* Er is een probleem verholpen waardoor u opzoekrecords (data die bestaan uit records met vreemde sleutels die zijn verbonden met met andere tabellen) niet kon exporteren van Campaign Classic naar Microsoft Dynamics met de CRM-connector. (NEO-23864)
+* Er is een probleem verholpen waardoor u opzoekrecords (data die bestaan uit records met vreemde sleutels die zijn verbonden met andere tabellen) niet kon exporteren van Campaign Classic naar Microsoft Dynamics met de CRM-connector. (NEO-23864)
 * Er is een probleem verholpen waardoor Microsoft Dynamics-data niet konden worden opgehaald als de optie **Automatische index** was ingeschakeld in de CRM-connector. (NEO-25981)
 * Er is een probleem verholpen met IMS-verificatie waardoor verbindingen soms geopend bleven, zelfs als ze waren beëindigd. Beëindigde verbindingen worden nu automatisch afgesloten om een opeenstapeling van verbindingen en het verbruik van systeembronnen te vermijden. (NEO-25996)
 * Er is een probleem verholpen waarbij geen foutbericht werd weergegeven wanneer de synchronisatie van Adobe Experience Manager-content voor een levering mislukte als gevolg van een onjuiste configuratie van het externe account (onjuist account of wachtwoord). Er wordt nu een bericht weergegeven bij een fout, zodat u het probleem gemakkelijker kunt identificeren. (NEO-25586)
