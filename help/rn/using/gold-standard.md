@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 3105372bc020057727e28d26e7969c31ac290115
 workflow-type: tm+mt
 source-wordcount: '1039'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -31,13 +31,13 @@ _22 december 2020_
 
 >[!CAUTION]
 >
-> * Deze versie wordt geleverd met een nieuw verbindingsprotocol: Als u verbinding maakt met Campagne via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **31 maart 2021**.
-> * Deze release wordt geleverd met een [beveiligingsoplossing](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw omgeving te versterken.
-> * Als u via Auth-verificatie de integratie Experience Cloug Triggers gebruikt, moet u naar Adobe I/O gaan zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De oude Auth-verificatiemodus wordt op **30 april 2021** beëindigd.
+> * Deze versie wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **31 maart 2021** verbinding te kunnen maken met Campaign.
+> * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
+> * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overgaan op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De oude oAuth-verificatiemodus wordt op **30 april 2021** buiten gebruik gesteld.
 
 >
 >
-Meer informatie vindt u in [Gold Standard 11 upgrade FAQ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html).
+Meer informatie vindt u in de [veelgestelde vragen over de Gold Standard 11-upgrade](https://helpx.adobe.com/nl/campaign/kb/gold-standard-upgrade.html).
 
 De build 9032@d3b452f bevat de volgende verbeteringen en oplossingen:
 
@@ -45,7 +45,7 @@ De build 9032@d3b452f bevat de volgende verbeteringen en oplossingen:
 
 * De Triggers-integratieverificatie die oorspronkelijk was gebaseerd op de oAUTH-verificatieset-up voor toegang tot de pipeline is nu gewijzigd en verplaatst naar Adobe I/O. [Meer informatie](../../integrations/using/configuring-adobe-io.md)
 
-* Na [einde van steun voor iOS APNs erfenis binair protocol](https://developer.apple.com/news/?id=c88acm2b), worden alle instanties die dit protocol gebruiken bijgewerkt aan HTTP/2 protocol tijdens postupgrade.
+* Nu het [verouderde binaire protocol voor iOS APN’s niet meer wordt ondersteund](https://developer.apple.com/news/?id=c88acm2b), zijn alle instanties die dit protocol gebruiken, bijgewerkt naar het HTTP/2-protocol tijdens de postupgrade.
 
 * Er is een beveiligingsprobleem opgelost ter versterking van de bescherming tegen SSRF-aanvallen (Server Side Request Forgery). (NEO-27777)
 
