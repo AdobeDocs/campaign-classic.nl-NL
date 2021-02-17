@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: efa36dc08ce4dd59805bb9eba63a4249e14609d7
 workflow-type: tm+mt
 source-wordcount: '2349'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -68,22 +68,22 @@ ht-degree: 93%
       + [Profielen exporteren en importeren](platform/using/exporting-and-importing-profiles.md)
       + [Lijsten maken en beheren](platform/using/creating-and-managing-lists.md)
    + Data importeren en exporteren {#importing-and-exporting-data}
-      + [Aan de slag met het importeren en exporteren van gegevens](platform/using/get-started-data-import-export.md)
-      + [Gegevens importeren en exporteren met behulp van workflows](platform/using/import-export-workflows.md)
-      + Werken met generieke import en export {#generic-imports-exports}
-         + [Aan de slag met algemene import en export](platform/using/about-generic-imports-exports.md)
-         + [Importeren- en exportsjablonen maken](platform/using/creating-import-export-templates.md)
+      + [Aan de slag met het importeren en exporteren van data](platform/using/get-started-data-import-export.md)
+      + [Data importeren en exporteren met behulp van workflows](platform/using/import-export-workflows.md)
+      + Werken met algemene import- en exportactiviteiten {#generic-imports-exports}
+         + [Aan de slag met algemene import- en exportactiviteiten](platform/using/about-generic-imports-exports.md)
+         + [Import- en exportsjablonen maken](platform/using/creating-import-export-templates.md)
          + [Import- en exporttaken maken](platform/using/creating-import-export-jobs.md)
          + [Importtaken configureren](platform/using/executing-import-jobs.md)
          + [Exporttaken configureren](platform/using/executing-export-jobs.md)
          + [Uitvoering van taken controleren](platform/using/monitoring-jobs-execution.md)
-         + [Algemene importvoorbeelden](platform/using/import-operations-samples.md)
+         + [Voorbeelden van algemene importactiviteiten](platform/using/import-operations-samples.md)
       + Gegevenscodering en -compressie beheren {#managing-data-encryption-compression}
-         + [Een bestand decoderen of decoderen voordat het wordt verwerkt](platform/using/unzip-decrypt.md)
-         + [Een bestand bekijken of versleutelen voordat het wordt verwerkt](platform/using/zip-encrypt.md)
-      + Aanbevolen procedures en problemen oplossen {#best-practices}
-         + [Beste werkwijzen importeren en exporteren](platform/using/import-export-best-practices.md)
-         + [Aanbevolen werkwijzen en probleemoplossing voor SFTP-servers](platform/using/sftp-server-usage.md)
+         + [Een bestand uitpakken of decoderen voordat het wordt verwerkt](platform/using/unzip-decrypt.md)
+         + [Een bestand comprimeren of coderen voordat het wordt verwerkt](platform/using/zip-encrypt.md)
+      + Best practices en probleemoplossing {#best-practices}
+         + [Best practices voor importeren en exporteren](platform/using/import-export-best-practices.md)
+         + [Best practices en probleemoplossing voor SFTP-servers](platform/using/sftp-server-usage.md)
    + Data filteren {#filtering-data}
       + [Filteropties](platform/using/filtering-options.md)
       + [Filters maken](platform/using/creating-filters.md)
@@ -99,9 +99,9 @@ ht-degree: 93%
    + Connectoren {#connectors}
       + [Connectoren](platform/using/about-connectors.md)
       + CRM-connectoren{#crm-connectors}
-         + [Aan de slag met CRM-connectors](platform/using/crm-connectors.md)
+         + [Aan de slag met CRM-connectoren](platform/using/crm-connectors.md)
          + [Verbinding maken met Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
-         + [Gegevens synchroniseren met de CRM](platform/using/crm-data-sync.md)
+         + [Data synchroniseren met CRM](platform/using/crm-data-sync.md)
       + [Adobe Analytics-dataconnector](platform/using/adobe-analytics-data-connector.md)
 + Berichten verzenden {#sending-messages}
    + [Aan de slag met berichten](delivery/using/communication-channels.md)
@@ -471,7 +471,7 @@ ht-degree: 93%
          + [Data verrijken](workflow/using/enriching-data.md)
          + [Werken met samenvoegingen](workflow/using/using-aggregates.md)
          + [De samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken](workflow/using/deduplication-merge.md)
-         + [Een terugkerende importworkflow instellen](workflow/using/recurring-import-workflow.md)
+         + [Een workflow instellen voor terugkerende importactiviteiten](workflow/using/recurring-import-workflow.md)
       + Query’s ontwerpen {#designing-queries}
          + [Driemaandelijkse lijstupdate met een incrementele query](workflow/using/quarterly-list-update.md)
       + Targeting {#designing-queries}
