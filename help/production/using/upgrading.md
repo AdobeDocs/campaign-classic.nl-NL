@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Upgraden naar een nieuwe build (on-premise){#upgrading}
 
-Voordat u het upgradeproces start, bepaalt en bevestigt u welke versie van Adobe Campaign moet worden bijgewerkt naar en raadpleegt u de [Opmerkingen bij de release](../../rn/using/latest-release.md).
+Voordat u het upgradeproces start, bepaalt en bevestigt u welke versie van Adobe Campaign moet worden bijgewerkt naar en raadpleegt u de [Release-notities](../../rn/using/latest-release.md).
 
 >[!IMPORTANT]
 >
