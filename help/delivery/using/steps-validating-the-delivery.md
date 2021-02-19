@@ -175,7 +175,7 @@ Met het tabblad **[!UICONTROL Advanced]** van leveringseigenschappen kunt u de e
 De volgende opties zijn beschikbaar:
 
 * Met de eerste optie kunt u de proefdrukverdubbelingen behouden.
-* Beide volgende opties laten u ontvangers houden die op lijst van afgewezen personen en adressen in quarantaine zijn. Zie de beschrijving van deze opties voor het hoofddoel in [Uitsluitingsinstellingen aanpassen](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings). In tegenstelling tot het doel van een levering, waar deze adressen door gebrek worden uitgesloten, worden zij gehouden door gebrek voor het doel van een proef.
+* Beide volgende opties laten u ontvangers houden die op lijst van gewezen personen en adressen in quarantaine zijn. Zie de beschrijving van deze opties voor het hoofddoel in [Uitsluitingsinstellingen aanpassen](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings). In tegenstelling tot het doel van een levering, waar deze adressen door gebrek worden uitgesloten, worden zij gehouden door gebrek voor het doel van een proef.
 * Met de optie **[!UICONTROL Keep the delivery code for the proof]** kunt u dezelfde leveringscode opgeven als de code die is gedefinieerd voor de levering waarop deze betrekking heeft. Deze code wordt gespecificeerd in de eerste stap van de leveringstovenaar.
 * Standaard wordt het onderwerp van de proefdruk voorafgegaan door &#39;Bewijs nr.&#39;, waarbij # het nummer van de proefdruk is. U kunt dit voorvoegsel wijzigen in het veld **[!UICONTROL Label prefix]**.
 
