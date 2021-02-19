@@ -227,7 +227,7 @@ Om de configuratie opnieuw te laden zonder de statistiekenserver opnieuw te begi
 
 >[!NOTE]
 >
->Deze opdrachtregel heeft de voorkeur boven **Nlserver opnieuw opstarten**. Het voorkomt dat statistische gegevens die zijn verzameld voordat het opnieuw opstarten verloren gaat en voorkomt pieken in gebruik die in strijd kunnen zijn met de in de MX-regels vastgestelde quota.
+>Deze opdrachtregel heeft de voorkeur boven **Nlserver opnieuw opstarten**. Zo wordt voorkomen dat statistische gegevens die zijn verzameld voordat het opnieuw opstarten verloren gaat en worden pieken in gebruik voorkomen die in strijd kunnen zijn met de quota die in de MX-regels zijn vastgelegd.
 
 ### Het vormen MX regels {#configuring-mx-rules}
 
