@@ -232,7 +232,7 @@ Om de configuratie van het gegevensbestand van het doelmilieu (dev) in te voeren
 
 ### Stap 9 - Start alle processen opnieuw en wijzig gebruikers (dev) {#step-9---restart-all-processes-and-change-users--dev-}
 
-Gebruik de volgende opdrachten om de Adobe Campaign-processen te starten:
+Gebruik de volgende opdrachten om Adobe Campaign-processen te starten:
 
 * In Windows:
 
