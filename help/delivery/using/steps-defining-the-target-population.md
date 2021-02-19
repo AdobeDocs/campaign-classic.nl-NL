@@ -147,7 +147,7 @@ De volgende opties zijn beschikbaar:
 
       ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , d.w.z. ontvangers waarvan het e-mailadres in de lijst van afgewezen personen staat (&#39;Weigeren&#39;). Deze optie moet geselecteerd blijven om de beroepsethiek van e-marketing en de wetgeving inzake e-handel te eerbiedigen.
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , d.w.z. ontvangers waarvan het e-mailadres in de lijst van gewezen personen staat (&#39;Weigeren&#39;). Deze optie moet geselecteerd blijven om de beroepsethiek van e-marketing en de wetgeving inzake e-handel te eerbiedigen.
 * **[!UICONTROL Exclude quarantined recipients]**. Met deze optie kunt u profielen met een adres dat niet reageert, uitsluiten van het doel. We raden u ten zeerste aan deze optie geselecteerd te houden.
 
    >[!NOTE]
