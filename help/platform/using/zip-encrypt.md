@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -34,7 +34,7 @@ Vervolgens kunt u opdrachten of code gebruiken op het tabblad **[!UICONTROL Scri
 
 **Verwante onderwerpen:**
 
-* [Een bestand decoderen of decoderen voordat het wordt verwerkt](../../platform/using/unzip-decrypt.md)
+* [Een bestand uitpakken of decoderen voordat het wordt verwerkt](../../platform/using/unzip-decrypt.md)
 * [Activiteit](../../workflow/using/extraction--file-.md) voor gegevensextractie (bestand).
 
 ## Hoofdlettergebruik: Gegevens coderen en exporteren met behulp van een sleutel die is geïnstalleerd in het Configuratiescherm {#use-case-gpg-encrypt}
