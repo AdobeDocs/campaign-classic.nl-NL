@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 9%
+ht-degree: 14%
 
 ---
 
@@ -23,10 +23,10 @@ _23 december 2020_
 
 >[!CAUTION]
 >
-> * Deze versie wordt geleverd met een nieuw verbindingsprotocol: Als u verbinding maakt met Campagne via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **31 maart 2021**.
+> * Deze versie wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **31 maart 2021** verbinding te kunnen maken met Campaign.
    >
    > 
-* Deze release wordt geleverd met een [beveiligingsoplossing](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw omgeving te versterken.
+* Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
 
 
 
@@ -127,7 +127,7 @@ _2 december 2019_
    * Met de optie **WdbcOptions_TempDbName** kunt u een aparte database configureren voor het werken van tabellen op Microsoft SQL Server. Hierdoor worden back-ups en replicatie geoptimaliseerd. [Meer informatie](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
    * De optie **XtkCleanup_NoStats** is verbeterd voor PostgreSQL om het gedrag van de stap van de opslagoptimalisering van het gegevensbestand schoonmaakwerkschema beter te controleren. [Meer informatie](../../production/using/database-cleanup-workflow.md#statistics-update)
 * Er is een afsluitmechanisme voor de account toegevoegd aan de **aanmeldingsnaam()**-API. Het verhindert verdere login pogingen na een bepaald aantal opeenvolgende ontbroken login pogingen binnen een gespecificeerd tijdsbestek.
-* Met een nieuwe optie **Maximale verpersoonlijkingstijd** in de leveringseigenschappen kunt u een time-outperiode voor de verpersoonlijkingstijd definiëren, om te voorkomen dat de verpersoonlijkingsfase te lang doorloopt. [Meer informatie](../../delivery/using/personalization-fields.md#timing-out-personalization)
+* Met een nieuwe optie **Maximale verpersoonlijkingsruntime** in de leveringseigenschappen kunt u een time-outperiode voor de verpersoonlijkingsruntime definiëren om te voorkomen dat de verpersoonlijkingsfase te lang doorloopt. [Meer informatie](../../delivery/using/personalization-fields.md#timing-out-personalization)
 * De optie **ftp protocol** is toegevoegd om u toe te staan om een volmachtsconfiguratie voor verbindingen te gebruiken SFTP. [Meer informatie](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)
 * Nieuwe ondersteuning van proxytoegang tot een externe SFTP-server voor on-premise omgevingen.
 * Er is een specifieke hulplijn toegevoegd om te voorkomen dat pakketten worden geïnstalleerd die niet compatibel zijn met de instantie Campagne. [Meer informatie](../../installation/using/installing-campaign-standard-packages.md)
