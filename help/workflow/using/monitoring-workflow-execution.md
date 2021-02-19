@@ -213,7 +213,7 @@ De activiteit direct na **[!UICONTROL Test]** in de **yes** tak moet de instanti
 instance.vars.isRunning = true
 ```
 
-De allerlaatste activiteit in de **yes** tak moet de variabele aan vals in zijn **Initialisatiescript** terugkeren:
+De allerlaatste activiteit in de **yes** tak moet de variabele in zijn **Initialisatiescript** terugkeren naar false:
 
 ```
 instance.vars.isRunning = false
