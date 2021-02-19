@@ -32,7 +32,7 @@ Ons uiteindelijke doel is om een levering te maken met een gepersonaliseerde sja
 >
 >Zorg er bij levering **[!UICONTROL Properties]** voor dat **[!UICONTROL Content editing mode]** (op het tabblad **[!UICONTROL Advanced]**) is ingesteld op **[!UICONTROL DCE]**. Om de optimale verrichting van de redacteur te verzekeren, verwijs naar [Inhoud het uitgeven beste praktijken](../../web/using/content-editing-best-practices.md).
 
-## Stap 1 - het Creëren van een levering {#step-1---creating-a-delivery}
+## Stap 1 - Het creëren van een levering {#step-1---creating-a-delivery}
 
 Als u een nieuwe levering wilt maken, plaatst u de cursor in het tabblad **Campagnes** en klikt u op **Leveringen**. Klik vervolgens op de knop **Maken** boven de lijst met bestaande leveringen. Raadpleeg [deze pagina](../../delivery/using/about-email-channel.md) voor meer informatie over het maken van leveringen.
 
