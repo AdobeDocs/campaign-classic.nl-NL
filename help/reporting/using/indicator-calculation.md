@@ -559,7 +559,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery and tracking statistics]**
   <tr> 
    <td> Klachten<br /> </td> 
    <td> @Letters<br /> </td> 
-   <td> Aantal berichten met een status gelijk aan "Ontbroken"en een reden gelijk aan "adres op lijst van afgewezen personen".<br /> </td> 
+   <td> Aantal berichten met een status gelijk aan "Ontbroken"en een reden gelijk aan "adres op lijst van gewezen personen".<br /> </td> 
    <td> Count(@status=2 en msg/@failureReason=8)<br /> </td> 
   </tr> 
   <tr> 
@@ -761,7 +761,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** lijst (nms:levering).
   <tr> 
    <td> Berichten die door de regel worden verworpen<br /> </td> 
    <td> @reject<br /> </td> 
-   <td> Aantal adressen genegeerd tijdens de analyse in overeenstemming met typologieregels: adres niet gespecificeerd, quarantined, op lijst van afgewezen personen, enz.<br /> </td> 
+   <td> Aantal adressen genegeerd tijdens de analyse in overeenstemming met typologieregels: adres niet gespecificeerd, quarantined, op lijst van gewezen personen, enz.<br /> </td> 
    <td> sum([eigenschappen/@weiger])<br /> </td> 
   </tr> 
   <tr> 
