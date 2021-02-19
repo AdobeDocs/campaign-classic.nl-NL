@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 65%
+ht-degree: 68%
 
 ---
 
@@ -56,7 +56,7 @@ Ze helpen u de verschillende contexten te ontdekken waarin workflows kunnen word
 * [Gegevens coderen en exporteren met een sleutel die is geïnstalleerd in het Configuratiescherm](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Driemaandelijkse lijstupdate met een incrementele query](../../workflow/using/quarterly-list-update.md)
 * [De samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken](../../workflow/using/deduplication-merge.md)
-* [Een terugkerende importworkflow instellen](../../workflow/using/recurring-import-workflow.md)
+* [Een workflow instellen voor terugkerende importactiviteiten](../../workflow/using/recurring-import-workflow.md)
 
 ## Targeting {#designing-queries}
 
