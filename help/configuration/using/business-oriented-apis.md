@@ -142,7 +142,7 @@ Als de ontvanger niet aanwezig in het gegevensbestand is of niet aan de betrokke
 
 >[!NOTE]
 >
->Als de de dienstnaam niet als parameter wordt gespecificeerd, is de ontvanger dan automatisch op lijst van afgewezen personen (@blackList=&quot;1&quot;).
+>Als de de dienstnaam niet als parameter wordt gespecificeerd, is de ontvanger dan automatisch op lijst van gewezen personen (@blackList=&quot;1&quot;).
 
 Deze aanroep retourneert geen gegevens, behalve fouten.
 
