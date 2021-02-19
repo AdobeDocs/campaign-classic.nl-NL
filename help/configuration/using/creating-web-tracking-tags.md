@@ -37,7 +37,7 @@ De HTML-code genereren die op de pagina moet worden ingevoegd:
 
 Vervolgens kopieert u de gegenereerde code en plakt u deze in de pagina die u wilt bijhouden.
 
-## Aanmaak van URL&#39;s die {#on-the-fly-creation-of-urls-to-be-tracked} moet worden bijgehouden tijdens de vlucht
+## Aanmaak van URL&#39;s die {#on-the-fly-creation-of-urls-to-be-tracked} moet worden bijgehouden tijdens het gebruik
 
 U kunt URL&#39;s voor webspatiëring direct maken door informatie toe te voegen aan de waarde van de parameter **tagid**:
 
