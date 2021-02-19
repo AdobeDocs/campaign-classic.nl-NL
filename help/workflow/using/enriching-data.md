@@ -35,7 +35,7 @@ Een contactpersoon in de tabel **[!UICONTROL Recipients]** kan aan meerdere rege
 
 ![](assets/uc1_enrich_2.png)
 
-Het doel van dit gebruik is om persoonlijke leveringen te sturen naar mensen die, afhankelijk van hun hoogste scores, aan de meest recente wedstrijd hebben deelgenomen. De ontvanger met de hoogste score krijgt de eerste prijs, de ontvanger met de op één na hoogste score krijgt een troostprijs en alle anderen krijgen een boodschap die hen de volgende keer meer geluk wil wensen.
+Het doel van dit gebruik is om persoonlijke leveringen te sturen naar mensen die aan de meest recente wedstrijd hebben deelgenomen, afhankelijk van hun hoogste scores. De ontvanger met de hoogste score krijgt de eerste prijs, de ontvanger met de op één na hoogste score krijgt een troostprijs en alle anderen krijgen een boodschap die hen de volgende keer meer geluk wil wensen.
 
 Voor het instellen van dit gebruiksgeval hebben we de volgende workflow voor doelversie gemaakt:
 
