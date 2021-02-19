@@ -23,7 +23,7 @@ Middelen die door Adobe Experience Cloud worden gedeeld, kunnen als volgt op uw 
 
    Als u elementen uit de Adobe Experience Manager-elementenbibliotheek gebruikt, gebruikt u een leveringssjabloon die wordt gemaakt bij [het configureren van de integratie](../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets).
 
-   Als u dit specifieke malplaatje niet hebt, zorg ervoor dat in levering **Eigenschappen**, **[!UICONTROL Content editing mode]** (**[!UICONTROL Advanced]** lusje) aan **DCE** wordt geplaatst en dat de AEM externe rekening die u voor de toegang tot van uw het middelbibliotheek van AEM Assets wilt gebruiken wordt verstrekt.
+   Als u dit specifieke malplaatje niet hebt, zorg ervoor dat in levering **Eigenschappen**, **[!UICONTROL Content editing mode]** (**[!UICONTROL Advanced]** lusje) aan **DCE** wordt geplaatst en dat de AEM externe rekening wordt verstrekt die u voor de toegang tot van uw het middelbibliotheek van AEM Assets wilt gebruiken.
 
 1. Selecteer in het bewerkingsvenster de optie om een afbeelding toe te voegen:
 
