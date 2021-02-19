@@ -47,7 +47,7 @@ ht-degree: 7%
 
 * Probleem verholpen met het rekenproces van het volgen van indicatoren voor transactieberichten. (NEO-12529, NEO-12581)
 * Probleem verholpen met de HTTPRequest-API, die niet wachtte op alle callbacks om te voltooien. (NEO-12628)
-* Er zijn indexen toegevoegd aan de tijdelijke tabellen met coupons om het verzenden van leveringen te optimaliseren. (NEO-12437)
+* In de tijdelijke tabellen met coupons zijn indexen toegevoegd om het verzenden van leveringen te optimaliseren. (NEO-12437)
 * Probleem verholpen tijdens het analyseren van een bericht waarin ontvangers voor Japanse (.JP) domeinen als doel werden ingesteld. (NEO-12246)
 * In de integratie Analytics is het nu toegestaan AAM segmentgegevens op te halen met het teken %. (NEO-12025)
 * Probleem verholpen waarbij Tomcat vastliep tijdens het verzenden van pushberichten via HTTP2. (NEO-12701)
@@ -211,7 +211,7 @@ Deze indexveranderingen kunnen tot een toename van de tijd leiden die wordt vere
 * Probleem verholpen waarbij sommige trackinglogboeken werden gekoppeld aan de verkeerde levering. (NEO-11412)
 * Probleem verholpen waarbij sommige delen van de leveringslogs langer dan verwacht in behandeling zouden kunnen blijven. (NEO-11336)
 * Oplossing voor een fout die optrad bij het bewerken van een query om een coupon aan een levering toe te voegen. (NEO-11037)
-* Probleem verholpen in rapporten die ervoor zorgden dat de grafieken altijd de som van de waarden berekenden, ongeacht de geaggregeerde operator die werd geselecteerd. (NEO-10913)
+* Probleem verholpen in rapporten die ervoor zorgden dat de grafieken altijd de som van de waarden berekenden, ongeacht welke geaggregeerde operator werd geselecteerd. (NEO-10913)
 * Aangezien de &quot;request.scheme&quot;functie wordt afgekeurd, is het verwijderd uit de documentatie JSAPI. (NEO-10828)
 * Probleem verholpen waardoor sommige gebruikers met specifieke configuraties voor tijdzones zich niet konden aanmelden bij Adobe Campaign. (NEO-10712)
 * Probleem verholpen die optrad bij het instellen van een externe account voor een mobiel kanaal met behulp van de uitgebreide algemene SMPP-connector: als u het gebruiken van verschillende parameters voor de ontvanger specificeerde, zou de zender die parameters verkeerd gebruiken in plaats van zijn eigen parameters.
@@ -238,6 +238,6 @@ Deze indexveranderingen kunnen tot een toename van de tijd leiden die wordt vere
 * Oplossing voor een scriptfout die optrad in het rapport Gebruikersactiviteiten bij het instellen van de parameters op &quot;Intervallen van één dag&quot; en &quot;Openen&quot;. (NEO-11655)
 * Probleem verholpen die optrad wanneer verbinding werd gemaakt met de server voor midsourcing of met Message Center via een geverifieerde webproxy. (NEO-11309)
 * Oplossing voor een fout van Oracle die optrad wanneer een nieuwe leveringssamenstelling na het selecteren van een element van een specifiek schema **op basis van een SQL mening** werd bewaard. (NEO-11682)
-* Probleem verholpen waarbij bestanden met foutieve positieven werden gegenereerd die een ZIP-bestand met een CSV-bestand verwerkten via een activiteit voor het laden van bestanden met de optie Decompressie.
+* Probleem verholpen waarbij bestanden met fout positieven werden gegenereerd die een ZIP-bestand met een CSV-bestand verwerkten via een bestandsactiviteit voor laden met de optie Decompressie.
 * xtkjoblog wordt nu gezuiverd door de opschoonfunctie.
 
