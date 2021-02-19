@@ -29,21 +29,21 @@ Adobe Campaign beheert een lijst met in quarantaine geplaatste adressen. Ontvang
 
 De profielen waarvan de e-mailadressen of telefoonnummers in quarantaine zijn geplaatst, worden automatisch uitgesloten tijdens de voorbereiding van berichten (zie [In quarantaine geplaatste adressen voor een levering identificeren](#identifying-quarantined-addresses-for-a-delivery)). Hierdoor wordt de levering versneld, omdat het foutenpercentage een belangrijk effect heeft op de leveringssnelheid.
 
-Sommige internetproviders beschouwen e-mails automatisch als spam als het aantal ongeldige adressen te hoog is. Met quarantaine kunt u dus voorkomen dat u door deze providers aan de lijst van afgewezen personen wordt toegevoegd.
+Sommige internetproviders beschouwen e-mails automatisch als spam als het aantal ongeldige adressen te hoog is. Met quarantaine kunt u dus voorkomen dat u door deze providers aan de lijst van gewezen personen wordt toegevoegd.
 
 Bovendien zijn de verzendkosten voor sms-berichten lager doordat onjuiste telefoonnummers van de levering worden uitgesloten. Raadpleeg [deze pagina](../../delivery/using/delivery-best-practices.md) voor meer informatie over de best practices voor het beveiligen en optimaliseren van uw leveringen .
 
-### Quarantaine versus lijst van afgewezen personen {#quarantine-vs-denylist}
+### Quarantaine versus lijst van gewezen personen {#quarantine-vs-denylist}
 
 **Quarantaine** is alleen van toepassing op een adres, niet op het profiel zelf. Wanneer twee profielen hetzelfde e-mailadres hebben, worden ze dus allebei beïnvloed als het adres in quarantaine wordt geplaatst.
 
 Op dezelfde manier kan een profiel waarvan het e-mailadres in quarantaine is geplaatst, zijn profiel bijwerken en een nieuw adres invoeren. Dit profiel kan dan opnieuw worden getarget door leveringsacties.
 
-Als u op de **lijst van afgewezen personen** staat, wordt het profiel echter niet meer gericht op levering, bijvoorbeeld na een abonnement (opt-out).
+Als u op de **lijst van gewezen personen** staat, wordt het profiel echter niet meer gericht op levering, bijvoorbeeld na een abonnement (opt-out).
 
 >[!NOTE]
 >
->Wanneer een gebruiker op een SMS-bericht reageert met een trefwoord zoals &quot;STOP&quot; om zich af te melden voor SMS-leveringen, wordt dit profiel niet toegevoegd aan de lijst van afgewezen personen, zoals in het e-mailuitschakelproces. Het profieltelefoonnummer wordt naar quarantaine verzonden, zodat de gebruiker e-mailberichten blijft ontvangen.
+>Wanneer een gebruiker op een SMS-bericht reageert met een trefwoord zoals &quot;STOP&quot; om zich af te melden voor SMS-leveringen, wordt dit profiel niet toegevoegd aan de lijst van gewezen personen, zoals in het e-mailuitschakelproces. Het profieltelefoonnummer wordt naar quarantaine verzonden, zodat de gebruiker e-mailberichten blijft ontvangen.
 
 ## In quarantaine geplaatste adressen identificeren {#identifying-quarantined-addresses}
 
