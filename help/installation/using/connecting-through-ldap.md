@@ -175,7 +175,7 @@ Deze sectie biedt een aantal eenvoudige gebruiksgevallen om u te helpen de meest
 
 1. Er is een gebruiker gemaakt in de LDAP-directory, maar niet in Adobe Campaign.
 
-   Adobe Campaign kan zo worden geconfigureerd dat de gebruiker toegang krijgt tot het platform via de LDAP-verificatie. Adobe Campaign moet de geldigheid van de combinatie ID/wachtwoord in de LDAP-directory kunnen controleren, zodat de operator in Adobe Campaign direct kan worden gemaakt. Om dit te doen, controleer de **[!UICONTROL Enable the connection of users declared in the LDAP directory if the operator is not declared in Adobe Campaign]** optie. In dit geval, moet de groepssynchronisatie ook worden gevormd: de optie **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** moet worden geselecteerd.
+   Adobe Campaign kan zo worden geconfigureerd dat de gebruiker toegang krijgt tot het platform via de LDAP-verificatie. Adobe Campaign moet de geldigheid van de combinatie id/wachtwoord in de LDAP-directory kunnen controleren, zodat de operator in Adobe Campaign direct kan worden gemaakt. Om dit te doen, controleer de **[!UICONTROL Enable the connection of users declared in the LDAP directory if the operator is not declared in Adobe Campaign]** optie. In dit geval, moet de groepssynchronisatie ook worden gevormd: de optie **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** moet worden geselecteerd.
 
 1. De gebruiker is gemaakt in Adobe Campaign, maar niet in de LDAP-directory.
 
