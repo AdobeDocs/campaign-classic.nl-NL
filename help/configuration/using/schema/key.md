@@ -46,7 +46,7 @@ Een tabel moet minstens één sleutel hebben.
 
 ## Gebruik en gebruikscontext {#use-and-context-of-use-6}
 
-Normaliter worden toetsen gedeclareerd na het hoofdelement van het schema en de indexen.
+Normaliter worden sleutels gedeclareerd na het hoofdelement van het schema en de indexen.
 
 Een sleutel wordt bekend als een samengestelde sleutel als deze verschillende velden bevat (d.w.z. verschillende `<keyfield>` onderliggende items). Gebruik geen samengestelde sleutel om een primaire sleutel te definiëren.
 
