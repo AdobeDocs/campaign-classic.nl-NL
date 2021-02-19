@@ -99,7 +99,7 @@ Als u een deduplicatie wilt configureren, voert u het label, de methode en de cr
 
 1. Klik **[!UICONTROL Finish]** om de geselecteerde deduplicatiemethode goed te keuren.
 
-   De middelste sectie van het venster vat de bepaalde configuratie samen.
+   Het middelste gedeelte van het venster geeft een overzicht van de gedefinieerde configuratie.
 
    In de onderste sectie van het venster van de activiteitenredacteur, kunt u het etiket voor de uitgaande overgang van het grafische voorwerp wijzigen en een segmentcode ingaan die met het resultaat van de activiteit zal worden geassocieerd. Deze code kan later als het richten criterium worden gebruikt.
 
