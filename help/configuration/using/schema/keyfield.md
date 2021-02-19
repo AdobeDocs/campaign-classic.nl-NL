@@ -45,7 +45,7 @@ Dit element definieert de velden die moeten worden geïntegreerd in een index of
 
 ## Voorbeelden {#examples-}
 
-Selectie van het veld &#39;sName&#39; in een index met een Xpath-element op &#39;@name&#39;:
+Selectie van het veld &#39;sName&#39; in een index met een Xpath-bewerking voor &quot;@name&quot;:
 
 ```
 <keyfield xpath="@name"/>
