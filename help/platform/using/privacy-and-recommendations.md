@@ -124,7 +124,7 @@ Met Adobe Campaign kunt u gegevens verzamelen, waaronder persoonlijke en gevoeli
 
 ## Privacybeheer {#privacy-management}
 
-Privacybeheer verwijst naar alle processen en tools die u kunnen helpen te voldoen aan de privacywetgeving (AVG, CCPA, enz.). Hiermee krijgt u een overzicht van het privacybeheer op [deze pagina](https://helpx.adobe.com/nl/campaign/kb/campaign-privacy-overview.html).
+Privacybeheer verwijst naar alle processen en tools die u kunnen helpen te voldoen aan de privacywetgeving (AVG, CCPA, enz.). Bekijk een overzicht van privacybeheer op [deze pagina](https://helpx.adobe.com/nl/campaign/kb/campaign-privacy-overview.html).
 
 Adobe Campaign biedt u verschillende functiesets voor privacybeheer:
 * toestemmingsbeheer, dataretentie en gebruikersrollen. Zie [deze sectie](#consent).
@@ -184,4 +184,4 @@ Met Adobe Campaign kunt u ook controleren hoe ontvangers door uw website bladere
 
 De configuratie van web tracking wordt weergegeven in [deze sectie](../../configuration/using/about-web-tracking.md).
 
-Voor verder beheer van tracering kunt u in Adobe Campaign een uitschakelingsbanner weergeven om het webgedrag van eindgebruikers die zich afmelden voor het volgen van gedragingen, niet meer te volgen. Voor meer op dit, zie [De toepassing van het Web volgzich opt-out](../../web/using/web-application-tracking-opt-out.md).
+Om het bijhouden van wijzigingen verder te beheren, kunt u in Adobe Campaign een uitschakelbanner weergeven om het webgedrag van eindgebruikers die zich afmelden voor het volgen van gedragingen, niet meer te volgen. Voor meer op dit, zie [De toepassing van het Web volgzich opt-out](../../web/using/web-application-tracking-opt-out.md).
