@@ -156,7 +156,7 @@ Het **[!UICONTROL Breakdown per version]**-diagram geeft de uitsplitsing weer va
 In de waardetabel worden de volgende indicatoren gebruikt:
 
 * **[!UICONTROL Global rate]** : Dit percentage geeft de uitsplitsing van bezoekers per versie weer ten opzichte van het totale aantal bezoekers (in alle browsers).
-* **[!UICONTROL Relative rate]** : Deze frequentie geeft de uitsplitsing van bezoekers per versie weer in vergelijking met het totale aantal bezoekers (in deze browser).
+* **[!UICONTROL Relative rate]** : Dit percentage geeft de uitsplitsing van bezoekers per versie weer in vergelijking met het totale aantal bezoekers (in deze browser).
 
 ### Delen naar sociale netwerken {#sharing-to-social-networks}
 
