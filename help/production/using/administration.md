@@ -52,7 +52,7 @@ Hier volgt een lijst met de gebruikelijke beheeropdrachten die in Linux toeganke
    >    * een andere waarde als er een fout is.
 
 
-* Een module voor meerdere instanties of mono-instanties starten/stoppen (**web**, **trackinglogd**, **syslogd**, **mta**, **wfserver**, **inmail&lt;a11>):**
+* Een module voor meerdere instanties of mono-instanties starten/stoppen (**web**, **trackinglogd**, **syslogd**, **mta**, **wfserver**, **inmail**):
 
    **nlserver start`<module>[@<instance>]`**
 
