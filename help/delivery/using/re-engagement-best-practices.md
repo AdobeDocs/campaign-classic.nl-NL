@@ -47,7 +47,7 @@ Volgens een studie over het retourpad werden er herplaatsingscampagnes uitgevoer
 ### Fase 1 {#phase-1}
 
 * De eerste stap is abonnees te identificeren die zeer weinig aan geen open of klikactiviteit hebben, en dienovereenkomstig deze groep te segmenteren die op een vastgestelde tijdkader wordt gebaseerd. De duimregel is om abonnees te bekijken die geen e-mail binnen de afgelopen 90 dagen hebben geopend of geklikt. Dit varieert echter afhankelijk van de aard van de activiteit (bijvoorbeeld seizoensgebonden verzending).
-* Een ander punt om in mening te houden terwijl het bepalen van timeframes is dat ISPs en de bedrijven van de lijst van afgewezen personen de betrokkenheid om tussen 1.5 en 1.8 jaar overwegen overal te zijn. Daarnaast worden gedragsactiviteiten zoals aankopen en website-activiteit, of andere aanraakpunten, zoals voorkeuren tijdens de aanmeldfase of het eerste contactpunt, uitgevoerd.
+* Een ander punt om in mening te houden terwijl het bepalen van timeframes is dat ISPs en de bedrijven van de lijst van gewezen personen de betrokkenheid om tussen 1.5 en 1.8 jaar overwegen overal te zijn. Daarnaast worden gedragsactiviteiten zoals aankopen en website-activiteit, of andere aanraakpunten, zoals voorkeuren tijdens de aanmeldfase of het eerste contactpunt, uitgevoerd.
 
 ### Fase 2 {#phase-2}
 
