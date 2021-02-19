@@ -103,7 +103,7 @@ Een verbinding wordt als instabiel beschouwd als om het even welke volgend gebeu
 
 Verbindingsstabiliteitsproblemen oplossen:
 
-* De instabiele verbindingen zijn zelden de worteloorzaak, het is vaak het resultaat van een ander probleem dat een losmaken veroorzaakt. Het vinden van de worteloorzaak is de prioriteit.
+* De instabiele verbindingen zijn zelden de worteloorzaak, het is vaak het resultaat van een ander probleem die tot een losmaken leidt. Het vinden van de worteloorzaak is de prioriteit.
 
 * Brede SMPP-sporen inschakelen. U zult hen nodig hebben om te zien wat gebeurt wanneer de verbinding opnieuw begint.
 
@@ -173,7 +173,7 @@ Als u alles hebt gecorrigeerd, maar sommige ongeldige SR nog steeds in de buffer
 
 * Als de MO (`DELIVER_SM PDU`) niet in de sporen verschijnt, is het probleem op de leverancierskant. Zij zullen het oplossen van problemen op hun platform moeten doen.
 
-* Als `DELIVER_SM PDU` verschijnt, controleer dat het door Adobe Campaign met succes `DELIVER_SM_RESP PDU` (code 0) wordt erkend. Dit RESP garandeert dat alle verwerkingslogica is toegepast door Adobe Campaign (automatisch antwoord en allow/lijst van afgewezen personen). Als het niet het geval is, zoek naar een foutenmelding in de het proceslogboeken van SMS.
+* Als `DELIVER_SM PDU` verschijnt, controleer dat het door Adobe Campaign met succes `DELIVER_SM_RESP PDU` (code 0) wordt erkend. Dit RESP garandeert dat alle verwerkingslogica is toegepast door Adobe Campaign (automatisch antwoord en allow/lijst van gewezen personen). Als het niet het geval is, zoek naar een foutenmelding in de het proceslogboeken van SMS.
 
 * Als automatische reacties zijn ingeschakeld, controleert u of `SUBMIT_SM` naar de provider is verzonden. Als niet, is het gegarandeerd om een foutenmelding in de het proceslogboeken van SMS te vinden.
 
