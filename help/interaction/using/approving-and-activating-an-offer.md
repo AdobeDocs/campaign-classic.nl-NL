@@ -25,7 +25,7 @@ De banner op het aanbiedingsdashboard vertelt u of de aanbieding de goedkeurings
 
 ## Aanbiedingsinhoud {#approving-offer-content} goedkeuren
 
-Als u de inhoud van het aanbod goedkeurt, selecteert u de representatie(s) die u in de live omgeving beschikbaar wilt maken.
+Als u inhoud van het aanbod goedkeurt, selecteert u de representatie(s) die u in de live omgeving beschikbaar wilt maken.
 
 De inhoud van een aanbieding heeft één representatie per ruimte. Aangezien elke aanbiedingsruimte zijn eigen structuur en zijn eigen renderingfuncties heeft, kan de aanbiedingsvertegenwoordiging variëren.
 
@@ -121,7 +121,7 @@ Klik op het aanbiedingslabel om het aanbod weer te geven dat beschikbaar is in d
 
 Zodra de aanbieding wordt goedgekeurd, kunt u het onbruikbaar maken.
 
-Ga hiertoe naar het dashboard voor een online aanbieding of een aanbieding die wacht om online te gaan, en klik vervolgens op **[!UICONTROL Disable offer]**.
+Ga hiertoe naar het dashboard voor een online aanbieding of een aanbieding die wacht om online te gaan en klik op **[!UICONTROL Disable offer]**.
 
 U kunt een categorie ook rechtstreeks uitschakelen door naar het tabblad **[!UICONTROL Eligibility]** te gaan en het vak **[!UICONTROL Enabled]** te selecteren.
 
