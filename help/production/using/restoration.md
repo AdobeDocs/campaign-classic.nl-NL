@@ -21,7 +21,7 @@ Op een schone server is de herstelprocedure als volgt:
 
 * op een geïnstalleerd en geconfigureerd besturingssysteem (netwerken),
 * toepassingen van andere leveranciers installeren: Webserver, JDK (indien nodig),
-* adobe campaign-binaire bestanden installeren met dezelfde build als het bronsysteem,
+* Adobe Campaign-binaire bestanden installeren met dezelfde build als het bronsysteem,
 * configuratiebestanden kopiëren, logbestanden bijhouden en bestanden omleiden,
 * de database te creëren en opnieuw op te bouwen;
 * start Adobe Campaign.
