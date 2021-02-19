@@ -175,7 +175,7 @@ Tijdelijk niet-geleverde berichten als gevolg van een fout **Soft** of **Genegee
 >
 >Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, worden de heruitzettingsmontages in de levering niet meer gebruikt door Campagne. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
 
-Voor installaties op locatie en gehoste/hybride installaties die gebruikmaken van de oude Campagne MTA, geeft het centrale gedeelte van het tabblad **[!UICONTROL Delivery]** voor leveringsparameters aan hoeveel pogingen de dag na de levering en de minimale vertraging tussen pogingen moeten worden uitgevoerd.
+Voor installaties op locatie en gehoste/hybride installaties die gebruikmaken van de oude Campagne MTA, geeft het centrale gedeelte van het tabblad **[!UICONTROL Delivery]** voor leveringsparameters aan hoeveel pogingen de dag na de levering moeten worden uitgevoerd en hoeveel vertraging er minimaal is tussen pogingen.
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
