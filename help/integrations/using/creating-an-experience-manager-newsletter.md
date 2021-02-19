@@ -37,7 +37,7 @@ Voor een meer gedetailleerd voorbeeld over hoe te om deze integratie te gebruike
 
    ![](assets/aem_uc_3.png)
 
-1. Selecteer **[!UICONTROL Cloud Services]** op het tabblad &lt;a0/> als **[!UICONTROL Cloud service configuration]** en uw Adobe Campaign-instantie in de tweede vervolgkeuzelijst.**[!UICONTROL Adobe Campaign]**
+1. Selecteer **[!UICONTROL Cloud Services]** op het tabblad **[!UICONTROL Adobe Campaign]** als **[!UICONTROL Cloud service configuration]** en uw Adobe Campaign-instantie in de tweede vervolgkeuzelijst.
 
    ![](assets/aem_uc_4.png)
 
