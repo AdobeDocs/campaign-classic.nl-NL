@@ -200,7 +200,7 @@ De submap **[!UICONTROL Campaign process]** centraliseert de workflows die nodig
 
 U kunt andere technische werkschema&#39;s in de **[!UICONTROL Administration > Production > Technical workflows]** knoop van de boomstructuur tot stand brengen. Dit proces is echter voorbehouden aan professionele gebruikers.
 
-De aangeboden activiteiten zijn hetzelfde als voor workflows die zich richten. [Meer informatie](#implementation-steps-)
+De aangeboden activiteiten zijn dezelfde als voor workflows die zich op de werkstroom richten. [Meer informatie](#implementation-steps-)
 
 ## Workflowsjablonen {#workflow-templates}
 
