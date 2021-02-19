@@ -21,7 +21,7 @@ Berichten die door Adobe Campaign worden geleverd, kunnen op verschillende manie
 
 * Het berichtformaat aanpassen. Zie [Berichtinhoud](../../delivery/using/defining-the-email-content.md#message-content).
 * Dynamische personalisatievelden invoegen. Zie [Velden voor personalisatie](../../delivery/using/personalization-fields.md).
-* Vooraf gedefinieerde personalisatieblokken invoegen. Zie [Persoonlijke blokken](../../delivery/using/personalization-blocks.md).
+* Vooraf gedefinieerde personalisatieblokken invoegen. Zie [Aanpassingsblokken](../../delivery/using/personalization-blocks.md).
 * Voorwaardelijke content maken. Raadpleeg de sectie [Voorwaardelijke inhoud](../../delivery/using/conditional-content.md).
 
 >[!CAUTION]
