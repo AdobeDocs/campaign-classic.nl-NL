@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
 source-wordcount: '1102'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
 
-# Aanbevolen procedures voor SFTP-server en problemen oplossen {#sftp-server-usage}
+# Best practices en probleemoplossing voor SFTP-servers {#sftp-server-usage}
 
 ## Algemene aanbevelingen voor SFTP-server {#global-recommendations}
 
