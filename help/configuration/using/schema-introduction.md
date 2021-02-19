@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
 source-wordcount: '91'
-ht-degree: 7%
+ht-degree: 27%
 
 ---
 
@@ -23,20 +23,20 @@ Standaard zijn in Adobe Campaign-schema&#39;s alle Booleaanse tekstkenmerken &qu
 
 Referentielijst:
 
-* [Kenmerk](schema/attribute.md)
-* [Rekenreeks](schema/compute-string.md)
-* [Voorwaarde](schema/condition.md)
-* [DB-index](schema/db-index.md)
+* [Attribute](schema/attribute.md)
+* [Compute string](schema/compute-string.md)
+* [Condition](schema/condition.md)
+* [DB index](schema/db-index.md)
 * [Element](schema/element.md)
-* [Opsomming](schema/enumeration.md)
+* [Enumeration](schema/enumeration.md)
 * [Help](schema/help.md)
-* [Verbinden](schema/join.md)
-* [Sleutel](schema/key.md)
+* [Join](schema/join.md)
+* [Key](schema/key.md)
 * [Keyfield](schema/keyfield.md)
-* [Methode](schema/method.md)
-* [Methoden](schema/methods.md)
+* [Method](schema/method.md)
+* [Methods](schema/methods.md)
 * [Param](schema/param.md)
 * [Parameters](schema/parameters.md)
 * [SrcSchema](schema/srcschema.md)
 * [Sysfilter](schema/sysfilter.md)
-* [Waarde](schema/value.md)
+* [Value](schema/value.md)
