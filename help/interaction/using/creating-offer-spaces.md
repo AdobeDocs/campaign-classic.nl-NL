@@ -122,7 +122,7 @@ Hiervoor gebruikt u het volgende proces:
 
 **Binnenkomende interactie**
 
-Met het tabblad **[!UICONTROL Storage]** kunt u statussen definiëren voor **proposed** en **acceptable** biedt alleen proposities aan. Voor binnenkomende interactie, zou de status van aanbiedingsvoorstellen direct in URL voor het roepen van de aanbiedingsmotor, eerder dan door de interface moeten worden gespecificeerd. Op deze manier kunt u opgeven welke status in andere gevallen moet worden toegepast, bijvoorbeeld als een voorstel voor een aanbieding wordt afgewezen.
+Met het tabblad **[!UICONTROL Storage]** kunt u statussen definiëren voor **proposed** en **acceptable** biedt alleen proposities aan. Voor binnenkomende interactie, zou de status van aanbiedingsvoorstellen direct in URL voor het roepen van de aanbiedingsmotor, eerder dan door de interface moeten worden gespecificeerd. Op deze manier kunt u opgeven welke status in andere gevallen moet worden toegepast, bijvoorbeeld wanneer een voorstel voor een aanbieding wordt afgewezen.
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
