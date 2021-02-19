@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Lijst van afgewezen personen databases
-description: Lijst van afgewezen personen databases
+title: Lijst van gewezen personen databases
+description: Lijst van gewezen personen databases
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# databases met Lijst van afgewezen personen{#denylist-databases}
+# databases met Lijst van gewezen personen{#denylist-databases}
 
 Verscheidene organisaties handhaven gegevensbestanden van IP adressen en domeinen die worden genoemd om door spammers worden gebruikt. Het raadplegen van deze sites kan nuttig zijn om te begrijpen waarom bepaalde berichten zijn afgewezen als spam. Over het algemeen is het mogelijk te verzoeken dat een adres wordt verwijderd dat ten onrechte aan deze lijsten is toegevoegd.
 
