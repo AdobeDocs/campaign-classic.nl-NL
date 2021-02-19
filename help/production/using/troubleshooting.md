@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 0f2986f88f72c191262248029ec620fad538c218
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 11%
+ht-degree: 19%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 11%
 
 Dit gedeelte bevat procedures voor het oplossen van problemen met betrekking tot algemene Adobe Campaign-productieproblemen, zoals levering en workflowuitvoering, bewaking, databaseonderhoud, verbinding, enzovoort.
 
-## Algemene en algemene kwesties {#common-and-general-issues}
+## Veel voorkomende en algemene problemen {#common-and-general-issues}
 
 * Deze [pagina](../../production/using/modules-and-frequent-issues.md) presenteert de frequentste problemen die voor de vermelde modules worden ontmoet.
 * Deze [pagina](../../production/using/workflow-execution.md) maakt een lijst van gemeenschappelijke het oplossen van problemenprocedures u zou moeten volgen wanneer het onder ogen zien van kwesties met werkschemauitvoering.
@@ -52,14 +52,14 @@ Ontdek hoe u prestatieproblemen kunt oplossen door de volgende secties uit te le
 * [Databaseprestaties](../../production/using/database-performances.md)
 * [Codering van de Oracle-database](../../production/using/encoding-of-the-oracle-database.md)
 
-## Verbindingsverbeteringen {#connection-improvements}
+## De verbinding verbeteren {#connection-improvements}
 
 Als u verbindingsproblemen tegenkomt, kunt u deze op een aantal manieren verhelpen:
 
 * [Mislukte verbinding](../../production/using/failure-to-connect.md)
 * [Drempelwaarden voor verbinding](../../production/using/connection-thresholds.md)
 
-## Technische problemen {#technical-troubleshooting}
+## Technische problemen oplossen {#technical-troubleshooting}
 
 Ga naar de volgende secties voor meer informatie over specifieke problemen:
 
