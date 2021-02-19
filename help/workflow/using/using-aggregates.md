@@ -65,7 +65,7 @@ Het aggregatieresultaat is daarom gekoppeld aan elke ontvanger.
 Zodra de verbinding is gevestigd, maken het gezamenlijke resultaat en de ontvangers deel uit van het zelfde tijdelijke schema. Het is daarom mogelijk om een filter op het schema tot stand te brengen om de aanmaakdatum van ontvangers en de laatst bekende aanmaakdatum te vergelijken, die door de samenvoegingsfunctie wordt vertegenwoordigd. Dit filter wordt uitgevoerd met behulp van een splitsingsactiviteit.
 
 1. Selecteer **[!UICONTROL General]** op het tabblad **Ontvangers** als doeldimensie en **Schema** bewerken als filterdimensie (om te filteren op de binnenkomende activiteit van het overgangsschema).
-1. Selecteer **[!UICONTROL subsets]** op het tabblad &lt;a0/> en klik vervolgens **[!UICONTROL Edit...]**.**[!UICONTROL Add a filtering condition on the inbound population]**
+1. Selecteer **[!UICONTROL subsets]** op het tabblad **[!UICONTROL Add a filtering condition on the inbound population]** en klik vervolgens **[!UICONTROL Edit...]**.
 1. Voeg met behulp van de expressie-editor een gelijkheidscriterium toe tussen de aanmaakdatum van de ontvangers en de aanmaakdatum die wordt berekend door het aggregaat.
 
    De datumtekstvelden in de database worden over het algemeen tot op de milliseconde opgeslagen. Daarom moet u deze voor de hele dag verlengen om te voorkomen dat ontvangers worden opgehaald die slechts die milliseconde hebben gemaakt.
