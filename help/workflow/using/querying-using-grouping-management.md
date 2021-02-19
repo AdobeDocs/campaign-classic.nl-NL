@@ -50,7 +50,7 @@ U kunt dit voorbeeld maken door de volgende stappen toe te passen:
    ![](assets/query_editor_nveau_70.png)
 
 1. In **[!UICONTROL Data filtering]** selecteert u **[!UICONTROL Filtering conditions]**. Ga naar het **[!UICONTROL Target elements]** venster en klik **[!UICONTROL Next]**.
-1. Selecteer **[!UICONTROL Data grouping]** in het venster &lt;a0/> door op **[!UICONTROL Add]** te klikken.**[!UICONTROL Email domain]**
+1. Selecteer **[!UICONTROL Data grouping]** in het venster **[!UICONTROL Email domain]** door op **[!UICONTROL Add]** te klikken.
 
    Dit venster voor gegevensgroepering wordt alleen weergegeven als het vak **[!UICONTROL Handle groupings (GROUP BY + HAVING]**) is ingeschakeld.
 
