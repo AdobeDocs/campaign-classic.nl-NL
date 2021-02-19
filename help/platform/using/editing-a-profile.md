@@ -41,7 +41,7 @@ Dit scherm bevat alle algemene gegevens over het geselecteerde profiel. Het beva
 
 >[!NOTE]
 >
->Wanneer de optie **[!UICONTROL No longer contact (by any channel)]** is geselecteerd, betekent dit dat het profiel op lijst van afgewezen personen staat, d.w.z. dat in het profiel de wens is geuit dat geen contact wordt opgenomen (bijvoorbeeld door op een koppeling voor niet-abonnementen in een nieuwsbrief te klikken). Deze zullen niet meer het doelwit zijn van leveringen via welke kanalen dan ook (e-mail, direct mail, enz.). Raadpleeg [deze pagina](../../delivery/using/understanding-quarantine-management.md) voor meer informatie.
+>Wanneer de optie **[!UICONTROL No longer contact (by any channel)]** is geselecteerd, betekent dit dat het profiel op lijst van gewezen personen staat, d.w.z. dat in het profiel de wens is geuit dat geen contact wordt opgenomen (bijvoorbeeld door op een koppeling voor niet-abonnementen in een nieuwsbrief te klikken). Deze zullen niet meer het doelwit zijn van leveringen via welke kanalen dan ook (e-mail, direct mail, enz.). Raadpleeg [deze pagina](../../delivery/using/understanding-quarantine-management.md) voor meer informatie.
 
 ## Tabblad Contactgegevens {#contact-information-tab}
 
