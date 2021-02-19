@@ -24,14 +24,14 @@ Bovendien, zorg ervoor u de beste praktijken en controlelijst volgt die in [deze
 **Verwante onderwerpen:**
 
 * [Leveringsstatus](../../delivery/using/delivery-statuses.md)
-* [Delivery dashboard](../../delivery/using/delivery-dashboard.md)
+* [Leveringsdashboard](../../delivery/using/delivery-dashboard.md)
 * [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
 
 ## Trage leveringen {#slow-deliveries}
 
 Nadat u op de knop **[!UICONTROL Send]** hebt geklikt, lijkt het langer te duren voordat de levering is uitgevoerd. Dit kan worden veroorzaakt door verschillende elementen:
 
-* Sommige e-mailproviders hebben mogelijk uw IP-adressen aan een lijst van afgewezen personen toegevoegd. In dit geval, controleer uw uitzendingen en raadpleeg [deze sectie](../../delivery/using/about-deliverability.md).
+* Sommige e-mailproviders hebben mogelijk uw IP-adressen aan een lijst van gewezen personen toegevoegd. In dit geval, controleer uw uitzendingen en raadpleeg [deze sectie](../../delivery/using/about-deliverability.md).
 
 * Uw levering is mogelijk te groot om snel te worden verwerkt, dit kan gebeuren met een hoge mate van personalisatie in JavaScript of als uw levering meer dan 60 kbytes weegt. Raadpleeg de Adobe Campaign [Best practices voor levering](../../delivery/using/delivery-best-practices.md) voor meer informatie over richtlijnen voor inhoud.
 
@@ -39,7 +39,7 @@ Nadat u op de knop **[!UICONTROL Send]** hebt geklikt, lijkt het langer te duren
 
    * Gebeëindigde berichten (**[!UICONTROL quotas met]** bericht): er is voldaan aan de quota die zijn aangegeven in de declaratieve MX-regels die in de campagne zijn vastgesteld. Raadpleeg [deze pagina](../../delivery/using/deliverability-faq.md) voor meer informatie over dit bericht. Meer over MX regels leren, verwijs naar [deze pagina](../../delivery/using/technical-recommendations.md#mx-rules).
 
-   * Gebeëindigde berichten (**[!UICONTROL dynamic flow control]** bericht): Campagne MTA heeft fouten ontmoet wanneer het proberen om berichten voor bepaalde ISP te leveren die een vertraging veroorzaakt om te grote van een foutendichtheid te vermijden en zo potentiële lijst van afgewezen personen onder ogen te zien.
+   * Gebeëindigde berichten (**[!UICONTROL dynamic flow control]** bericht): Campagne MTA heeft fouten ontmoet wanneer het proberen om berichten voor bepaalde ISP te leveren die een vertraging veroorzaakt om te grote van een foutendichtheid te vermijden en zo potentiële lijst van gewezen personen onder ogen te zien.
 
 * Door een systeemprobleem kunnen servers niet met elkaar communiceren: dit kan het hele verzendingsproces vertragen . Controleer de servers om ervoor te zorgen dat er geen geheugen of middelkwesties zijn die Campagne in het proces kunnen beïnvloeden om de verpersoonlijkingsgegevens bijvoorbeeld te krijgen.
 
@@ -63,7 +63,7 @@ De logboeken van de levering zijn zeer belangrijk om te leren waarom een leverin
 
    De oorzaak van deze kwestie is bijna altijd een verpersoonlijking binnen HTML die op een lijst of een gebied probeert te roepen dat niet is bepaald of in het stroomopwaartse richten of in de het doelafbeelding van de levering in kaart gebracht.
 
-   Om dit te verbeteren, moeten de werkschema en leveringsinhoud worden herzien om specifiek te bepalen welke verpersoonlijking probeert om de lijst in kwestie te roepen en of de lijst of niet kan worden in kaart gebracht. Van daar, of het verwijderen van de vraag aan deze lijst in HTML of het bevestigen van de afbeelding aan de levering zou de weg aan resolutie zijn.
+   Om dit te verbeteren, moeten de werkschema en leveringsinhoud worden herzien om specifiek te bepalen welke verpersoonlijking probeert om de lijst in kwestie te roepen en of de lijst of niet in kaart kan worden gebracht. Van daar, of het verwijderen van de vraag aan deze lijst in HTML of het bevestigen van de afbeelding aan de levering zou de weg aan resolutie zijn.
 
 * In het midsourcingimplementatiemodel kan het volgende bericht worden weergegeven in de leveringslogboeken:
 
