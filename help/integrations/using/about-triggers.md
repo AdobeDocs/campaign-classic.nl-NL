@@ -15,7 +15,7 @@ ht-degree: 16%
 ---
 
 
-# Aan de slag met Adobe Experience Cloud-triggers{#about-adobe-experience-triggers}
+# Aan de slag met Adobe Experience Cloud Triggers{#about-adobe-experience-triggers}
 
 [!DNL Triggers] is een integratie tussen Adobe Campaign en Adobe Analytics die de pijpleiding gebruikt. De pijplijn haalt gebruikersacties of trekkers van uw website terug. Een achterlating van een winkelwagen is een voorbeeld van een trigger. Triggers worden in Adobe Campaign verwerkt om e-mails in bijna real-time te verzenden.
 
