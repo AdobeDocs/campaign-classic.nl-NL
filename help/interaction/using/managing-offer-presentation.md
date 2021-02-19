@@ -77,7 +77,7 @@ De **[!UICONTROL Targeting dimension]** valt samen met de lijst van ontvangers (
 
 Dit is een verschuivende periode die begint op de presentatiedatum van de aanbieding. Er wordt een termijn vastgesteld voor de geldigheid van de voorstellen. De regel geldt niet voor voorstellen die na deze periode worden gedaan.
 
-De periode begint **n** dagen voor de propositiedatum en eindigt **n** dagen daarna, waarbij **n** overeenkomt met het getal dat is ingevoerd in het veld **[!UICONTROL Period considered]**:
+De periode begint **n** dagen vóór de propositiedatum en eindigt **n** dagen daarna, waarbij **n** overeenkomt met het getal dat is ingevoerd in het veld **[!UICONTROL Period considered]**:
 
 * Voor binnenkomende ruimten, is de voorstellingsdatum de datum van de aanbiedingspresentatie.
 * Voor uitgaande ruimten, is de voorstellingsdatum de datum van het leveringscontact (bijvoorbeeld de leveringsdatum ingegaan in een het richten werkschema).
