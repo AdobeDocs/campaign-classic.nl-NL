@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 59%
+ht-degree: 60%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 59%
 
 * **[Verbinding maken via IMS/Adobe ID? Voer een upgrade uit naar de nieuwste builds](integrations/using/about-adobe-id.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne na** 31 maart 2021 **.
 
-* **[Beveilig uw Campagne ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> instancesUpdate aan recentste bouwt om uw platform van de Campagne te beveiligen.
+* **[Beveilig uw Campagne ](https://helpx.adobe.com/nl/campaign/kb/gold-standard-upgrade.html)**<br/> instancesUpdate aan recentste bouwt om uw platform van de Campagne te beveiligen.
 
 * **[Onjuiste harde ](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> grenzen verwijderenLeer hoe u onjuiste harde grenzen kunt bijwerken na Gmail-uitgang
 
