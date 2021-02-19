@@ -29,7 +29,7 @@ Wanneer een bericht (e-mail, SMS, pushmelding) niet naar een profiel kan worden 
 
 Zodra een bericht wordt verzonden, staat de leveringslogboeken u toe om de leveringsstatus voor elk profiel en het bijbehorende mislukkingstype en de reden te bekijken.
 
-De berichten kunnen ook tijdens de leveringsvoorbereiding worden uitgesloten als een adres quarantined is of als een profiel op lijst van afgewezen personen is. Uitgesloten berichten worden vermeld in het leveringsdashboard.
+De berichten kunnen ook tijdens de leveringsvoorbereiding worden uitgesloten als een adres quarantined is of als een profiel op lijst van gewezen personen is. Uitgesloten berichten worden vermeld in het leveringsdashboard.
 
 **Verwante onderwerpen:**
 
@@ -83,7 +83,7 @@ De mogelijke redenen van een leveringsfout zijn:
    <td> Op de lijst met ongewenste personen staan adres </td> 
    <td> Hard </td> 
    <td> 8 </td> 
-   <td> Het adres werd toegevoegd aan de lijst van afgewezen personen toen het verzenden. Deze status wordt gebruikt voor het importeren van gegevens van externe lijsten en externe systemen naar de lijst in Adobe Campaign Quarantine.<br /> </td> 
+   <td> Het adres werd toegevoegd aan de lijst van gewezen personen toen het verzenden. Deze status wordt gebruikt voor het importeren van gegevens van externe lijsten en externe systemen naar de lijst in Adobe Campaign Quarantine.<br /> </td> 
   </tr> 
   <tr> 
    <td> Besturingsadres </td> 
@@ -166,7 +166,7 @@ De mogelijke redenen van een leveringsfout zijn:
   <tr> 
    <td> Onbereikbaar </td> 
    <td> Zacht/Hard </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> Er is een fout opgetreden in de berichtleveringsketen. Het zou een incident op het relais SMTP, een domein kunnen zijn dat tijdelijk onbereikbaar is, etc. Volgens de fout, zal het adres opnieuw worden geprobeerd tot de foutenteller 5 bereikt, of het zal direct naar quarantines worden verzonden.<br /> </td> 
   </tr> 
   <tr> 
@@ -198,14 +198,14 @@ De standaardconfiguratie staat vijf herpogingen toe met intervallen van één uu
 
 Een bericht kan onmiddellijk (synchrone fout), of later op ontbreken, nadat het is verzonden (asynchrone fout).
 
-* Synchrone fout: Als de externe mailserver waarmee contact is opgenomen door de Adobe Campaign-leveringsserver onmiddellijk een foutbericht heeft geretourneerd, mag de levering niet naar de server van het profiel worden verzonden. Adobe Campaign kwalificeert elke fout om te bepalen of de e-mailadressen in kwestie al dan niet in quarantaine moeten worden geplaatst. Zie [Kwalificatie van niet-bezorgde e-mails](#bounce-mail-qualification).
+* Synchrone fout: Als de externe mailserver waarmee contact is opgenomen door de Adobe Campaign-bezorgingsserver onmiddellijk een foutbericht heeft geretourneerd, mag de levering niet naar de server van het profiel worden verzonden. Adobe Campaign kwalificeert elke fout om te bepalen of de e-mailadressen in kwestie al dan niet in quarantaine moeten worden geplaatst. Zie [Kwalificatie van niet-bezorgde e-mails](#bounce-mail-qualification).
 * Asynchrone fout: Een niet-bezorgde e-mail of een SR is later opnieuw verzonden door de ontvangende server. Deze post wordt geladen in een technische brievenbus de toepassing gebruikt om berichten met een fout te etiketteren. Asynchrone fouten kunnen optreden tot een week nadat een levering is verzonden.
 
    >[!NOTE]
    >
    >De configuratie van de stuiterende brievenbus is gedetailleerd in [deze sectie](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
 
-   De [feedbacklus](../../delivery/using/technical-recommendations.md#feedback-loop) werkt als e-mailberichten die stuiteren. Wanneer een gebruiker een e-mail als spam kwalificeert, kunt u e-mailregels in Adobe Campaign configureren om alle leveringen aan deze gebruiker te blokkeren. Berichten die worden verzonden naar gebruikers die een e-mailbericht hebben gekwalificeerd als spam, worden automatisch omgeleid naar een e-mailvak dat speciaal voor dit doel is gemaakt. De adressen van deze gebruikers zijn op lijst van afgewezen personen alhoewel zij niet de unsubscription verbinding klikten. De adressen zijn in lijst van afgewezen personen in de (**NmsAddress**) quarantainetabel en niet in (**NmsRecipient**) ontvankelijke lijst.
+   De [feedbacklus](../../delivery/using/technical-recommendations.md#feedback-loop) werkt als e-mailberichten die stuiteren. Wanneer een gebruiker een e-mail als spam kwalificeert, kunt u e-mailregels in Adobe Campaign configureren om alle leveringen aan deze gebruiker te blokkeren. Berichten die worden verzonden naar gebruikers die een e-mailbericht hebben gekwalificeerd als spam, worden automatisch omgeleid naar een e-mailvak dat speciaal voor dit doel is gemaakt. De adressen van deze gebruikers zijn op lijst van gewezen personen alhoewel zij niet de unsubscription verbinding klikten. De adressen zijn in lijst van gewezen personen in de (**NmsAddress**) quarantainetabel en niet in (**NmsRecipient**) ontvankelijke lijst.
 
    >[!NOTE]
    >
@@ -229,7 +229,7 @@ Voor installaties op locatie en gehoste/hybride installaties die gebruikmaken va
 >
 >Voor gehoste of hybride installaties, als u tot [Verbeterde MTA](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd:
 >
->* De stuiterkwalificaties in de **[!UICONTROL Delivery log qualification]** lijst worden niet meer gebruikt voor **synchrone** de foutenmeldingen van de leveringsmislukking. Verbeterde MTA bepaalt het stuittype en de kwalificatie, en stuurt die informatie terug naar Campagne.
+>* De stuiterende kwalificaties in de **[!UICONTROL Delivery log qualification]** lijst worden niet meer gebruikt voor **synchrone** de foutenmeldingen van de leveringsmislukking. Verbeterde MTA bepaalt het stuittype en de kwalificatie, en stuurt die informatie terug naar Campagne.
    >
    >
 * **** Asynchrone niet-bezorgingen worden nog steeds gekwalificeerd door het inMail-proces aan de hand van de regels voor **[!UICONTROL Inbound email]**. Zie [Regels voor e-mailbeheer](#email-management-rules) voor meer informatie.
