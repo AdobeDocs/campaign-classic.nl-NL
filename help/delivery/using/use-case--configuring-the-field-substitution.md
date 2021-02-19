@@ -29,7 +29,7 @@ De leveringsmanager heeft een verpersoonlijkingsgebied met favoriete genre in zi
 
 Als u een willekeurige veldvervanging wilt gebruiken, moet u beschikken over:
 
-* een levering met een of meer personalisatievelden;
+* een levering met één of meerdere verpersoonlijkingsgebieden,
 * zaadadressen de waarvan **gegevensschema** volgens de verpersoonlijkingsgebieden wordt gewijzigd die in de levering worden gebruikt.
 
 ## Een levering {#step-1---creating-a-delivery} maken
