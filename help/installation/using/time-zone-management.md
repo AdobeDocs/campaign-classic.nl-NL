@@ -23,7 +23,7 @@ Met Adobe Campaign kunt u datums uitdrukken als een functie van de tijdzone: dit
 
 Om het gebruik van het Adobe Campaign-platform op internationale schaal mogelijk te maken, moeten alle data die door de systemen worden gebruikt, aan een tijdzone kunnen worden gekoppeld. Een datum waarvan de tijdzone gekend is kan zo in om het even welke andere tijdzone, of ongeacht tijdzone worden ingevoerd.
 
-Met Adobe Campaign kunt u datums/tijden opslaan in UTC-indeling (Coordinated Universal Time). Wanneer gegevens worden weergegeven, worden deze omgezet in de lokale datum/tijd van de operator. De omzetting wordt uitgevoerd automatisch wanneer het gegevensbestand in UTC (verwijs naar [Configuratie](#configuration)) wordt gevormd. Als het gegevensbestand niet in UTC wordt gevormd, wordt de informatie over de tijdzone van de data in het platform opgeslagen in een optie.
+Met Adobe Campaign kunt u datums/tijden opslaan in UTC-indeling (Coordinated Universal Time). Wanneer gegevens worden weergegeven, worden deze omgezet in de lokale datum/tijd van de operator. De omzetting wordt automatisch uitgevoerd wanneer het gegevensbestand in UTC (verwijs naar [Configuratie](#configuration)) wordt gevormd. Als het gegevensbestand niet in UTC wordt gevormd, wordt de informatie over de tijdzone van de data in het platform opgeslagen in een optie.
 
 De belangrijkste platformfuncties voor het beheer van tijdzones zijn: invoer/uitvoer gegevens en exploitant en werkstroombeheer. Het **overervingsconcept** is beschikbaar voor import/export of Workflows. Door gebrek, worden zij gevormd voor de tijdzone van de gegevensbestandserver, nochtans kunt u nieuwe tijdstreken voor een werkschema en zelfs voor één enkele activiteit opnieuw bepalen.
 
