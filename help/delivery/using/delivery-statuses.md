@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: de0e4555d3e2c5dff8d86a22ff4db85953105db1
 workflow-type: tm+mt
 source-wordcount: '592'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -29,7 +29,7 @@ Raadpleeg [deze pagina](../../delivery/using/understanding-delivery-failures.md)
 
 **Verwante onderwerpen:**
 
-* [Delivery dashboard](../../delivery/using/delivery-dashboard.md)
+* [Leveringsdashboard](../../delivery/using/delivery-dashboard.md)
 * [Problemen met levering oplossen](../../delivery/using/delivery-troubleshooting.md)
 * [Leverbaarheid](../../delivery/using/about-deliverability.md)
 
@@ -49,7 +49,7 @@ Raadpleeg [deze pagina](../../delivery/using/understanding-delivery-failures.md)
   </tr> 
   <tr> 
    <td> Genegeerd<br /> </td> 
-   <td> De levering is niet naar de ontvanger verzonden vanwege een fout met zijn adres. Het was of op lijst van afgewezen personen, quarantined, niet verstrekt of een duplicaat. <br /> </td> 
+   <td> De levering is niet naar de ontvanger verzonden vanwege een fout met zijn adres. Het was of op lijst van gewezen personen, quarantined, niet verstrekt of een duplicaat. <br /> </td> 
   </tr> 
   <tr> 
    <td> Mislukt<br /> </td> 
