@@ -496,7 +496,7 @@ In dit voorbeeld, zullen wij een verbinding naar de &quot;nms:adres&quot;schemal
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
-### Voorbeeld 4 {#example-4}
+### Voorbeeld 5 {#example-4}
 
 Koppeling naar een map (&quot;xtk:folder&quot;-schema):
 
