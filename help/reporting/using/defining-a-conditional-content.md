@@ -54,4 +54,4 @@ Deze activiteit is gebaseerd op het volgende operationele beginsel:
 
    Raadpleeg [deze sectie](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display) voor meer informatie.
 
-Een **[!UICONTROL Test]** activiteit kan bij het begin van de grafiek worden geplaatst om de vertoning afhankelijk van context of exploitantprofiel bijvoorbeeld te conditioneren.
+Een **[!UICONTROL Test]** activiteit kan aan het begin van de grafiek worden geplaatst om de vertoning afhankelijk van context of exploitantprofiel bijvoorbeeld te voorwaarde.
