@@ -148,7 +148,7 @@ Als u ontvangers wilt registreren voor een informatieservice, kunt u:
 
 e-mailleveringen moeten wettelijk gezien een link zonder abonnement bevatten. Ontvangers kunnen op deze koppeling klikken om hun profiel bij te werken en worden uitgesloten van de doelstellingen voor toekomstige leveringen.
 
-De standaardkoppeling voor het ongedaan maken van abonnementen wordt ingevoegd via de laatste knop op de werkbalk van de inhoudeditor die wordt geleverd in de wizard voor levering (zie [Informatie over personalisatie](../../delivery/using/about-personalization.md)). Wanneer de ontvanger op deze koppeling klikt, wordt het profiel toegevoegd aan de lijst van afgewezen personen (opt-out), wat betekent dat deze ontvanger niet langer het doelwit is van een leveringsactie.
+De standaardkoppeling voor het ongedaan maken van abonnementen wordt ingevoegd via de laatste knop op de werkbalk van de inhoudeditor die wordt geleverd in de wizard voor levering (zie [Informatie over personalisatie](../../delivery/using/about-personalization.md)). Wanneer de ontvanger op deze koppeling klikt, wordt het profiel toegevoegd aan de lijst van gewezen personen (opt-out), wat betekent dat deze ontvanger niet langer het doelwit is van een leveringsactie.
 
 Ontvangers kunnen echter besluiten hun abonnement op een service op te zeggen zonder zich af te melden bij alle services. Om dit toe te staan, kunt u een Webvorm gebruiken (verwijs naar [deze sectie](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) of een gepersonaliseerde unsubscription verbinding (zie [Persoonlijke blokken](../../delivery/using/personalization-blocks.md)) opnemen.
 
