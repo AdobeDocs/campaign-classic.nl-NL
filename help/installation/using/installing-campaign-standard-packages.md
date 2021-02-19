@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Ingebouwde Campaign Classic-pakketten installeren
+title: In Campaign Classic ingebouwde pakketten installeren
 description: Leer hoe u geïntegreerde pakketten voor campagnes kunt installeren
 audience: installation
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
 workflow-type: tm+mt
 source-wordcount: '1173'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
 
-# Ingebouwde Campaign Classic-pakketten installeren{#installing-campaign-standard-packages}
+# In Campaign Classic ingebouwde pakketten installeren{#installing-campaign-standard-packages}
 
 ## Ingebouwde pakketten {#campaign-standard-packages}
 
