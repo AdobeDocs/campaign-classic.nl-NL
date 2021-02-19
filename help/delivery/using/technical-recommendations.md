@@ -87,7 +87,7 @@ Voor het gebruik van DKIM zijn enkele voorwaarden vereist:
 
 >[!NOTE]
 >
->* Als u DomainKeys voor uw instantie van Adobe Campaign hebt gevormd, moet u enkel **dkim** in [Regels van het Domeinbeheer ](../../delivery/using/understanding-delivery-failures.md#domain-management) selecteren. Indien niet, volg de zelfde configuratiestappen (privé/openbare sleutel) zoals voor DomainKeys.
+>* Als u DomainKeys voor uw instantie van Adobe Campaign hebt gevormd, moet u enkel **dkim** in [Regels van het Domeinbeheer ](../../delivery/using/understanding-delivery-failures.md#domain-management) selecteren. Als niet, volg de zelfde configuratiestappen (privé/openbare sleutel) zoals voor DomainKeys.
 >* Het is niet noodzakelijk om zowel DomainKeys als DKIM voor het zelfde domein toe te laten aangezien DKIM een betere versie van DomainKeys is.
 >* De volgende domeinen valideren momenteel DKIM: AOL, Gmail.
 
@@ -132,7 +132,7 @@ Recommendations for defining an SPF record:
 
 ## Feedbacklus {#feedback-loop}
 
-Een feedbacklijn werkt door op het ISP niveau een bepaald e-mailadres voor een waaier van IP adressen te verklaren die voor het verzenden van berichten worden gebruikt. ISP zal naar deze brievenbus, op een gelijkaardige manier verzenden zoals wat voor stuitberichten wordt gedaan, die berichten die door ontvangers als spam worden gemeld. Het platform moet zo worden geconfigureerd dat toekomstige leveringen aan gebruikers die een klacht hebben ingediend, worden geblokkeerd. Het is belangrijk dat zij niet langer contact met hen opnemen, ook al hebben zij niet de juiste opt-out-link gebruikt. Het is op basis van deze klachten dat ISP een IP adres aan zijn lijst van afgewezen personen zal toevoegen. Afhankelijk van ISP, zal een klachtentarief van rond 1% in het blokkeren van een IP adres resulteren.
+Een feedbacklijn werkt door op het ISP niveau een bepaald e-mailadres voor een waaier van IP adressen te verklaren die voor het verzenden van berichten worden gebruikt. ISP zal naar deze brievenbus, op een gelijkaardige manier verzenden zoals wat voor stuitberichten wordt gedaan, die berichten die door ontvangers als spam worden gemeld. Het platform moet zo worden geconfigureerd dat toekomstige leveringen aan gebruikers die een klacht hebben ingediend, worden geblokkeerd. Het is belangrijk dat zij niet langer contact met hen opnemen, ook al hebben zij niet de juiste opt-out-link gebruikt. Het is op basis van deze klachten dat ISP een IP adres aan zijn lijst van gewezen personen zal toevoegen. Afhankelijk van ISP, zal een klachtentarief van rond 1% in het blokkeren van een IP adres resulteren.
 
 Er wordt momenteel een standaard ontwikkeld voor het definiëren van de indeling van feedbacklusberichten: de [Misbruikrapportage-indeling (ARF)](https://tools.ietf.org/html/rfc6650).
 
