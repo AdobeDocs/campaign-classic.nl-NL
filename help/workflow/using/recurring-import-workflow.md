@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Herhalende importbewerkingen instellen
+title: Een instellen voor terugkerende importactiviteiten
 description: Leer hoe u een workflowsjabloon voor terugkerende import configureert.
 audience: workflow
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
 source-wordcount: '1023'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Een terugkerende importworkflow instellen {#setting-up-a-recurring-import}
+# Een workflow instellen voor terugkerende importactiviteiten {#setting-up-a-recurring-import}
 
 Het gebruik van een werkstroomsjabloon is de beste manier als u regelmatig bestanden met dezelfde structuur moet importeren.
 
