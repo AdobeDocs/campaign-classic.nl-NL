@@ -108,7 +108,7 @@ De volgende opties zijn beschikbaar:
 
 * **[!UICONTROL Delivery duration of messages]** : Daarna wordt de levering gestopt (standaard 5 dagen),
 * **[!UICONTROL Online resources validity duration]** : Tijdstip waarop informatie uit het ontvangende profiel wordt bewaard om spiegelpagina&#39;s te genereren;
-* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Als deze optie is ingeschakeld, wordt bij lijsten van afgewezen personen geen contact opgenomen met de ontvangers van de
+* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Als deze optie is ingeschakeld, wordt bij lijsten van gewezen personen geen contact opgenomen met de ontvangers van de
 * **[!UICONTROL Automatically ignore doubles]** : Als deze optie is geselecteerd, wordt de levering niet uitgevoerd naar dubbele adressen.
 
 ### Parameters {#retry-parameters} opnieuw proberen
@@ -323,7 +323,7 @@ Gebruik deze pagina om de server-URL&#39;s te vullen met:
 1. Open de toepassingsserver voor bronnen die niet op het web beschikbaar zijn: formulieren, intranet, bevestigingspagina&#39;s.
 1. Open de spiegelpagina&#39;s van leveringen.
 
-   Een spiegelpagina is een dynamische pagina waarop de inhoud van het e-mailbericht wordt weergegeven. Het wordt betreden via een verbinding die in het bericht wordt opgenomen dat naar de ontvanger wordt verzonden en kan gepersonaliseerde elementen bevatten. De spiegelpagina biedt de ontvanger de mogelijkheid om het bericht in Internet browser in plaats van de e-mailsoftware te lezen, ongeacht het leveringsformaat (tekst of HTML). Er worden echter alleen spiegelpagina&#39;s gegenereerd voor een bepaalde levering als de vereiste HTML-inhoud is gedefinieerd.
+   Een spiegelpagina is een dynamische pagina waarop de inhoud van het e-mailbericht wordt weergegeven. Het wordt betreden via een verbinding die in het bericht wordt opgenomen dat naar de ontvanger wordt verzonden en kan gepersonaliseerde elementen bevatten. De spiegelpagina geeft de ontvanger de mogelijkheid om het bericht in Internet browser in plaats van de e-mailsoftware te lezen, ongeacht het leveringsformaat (tekst of HTML). Er worden echter alleen spiegelpagina&#39;s gegenereerd voor een bepaalde levering als de vereiste HTML-inhoud is gedefinieerd.
 
 Met Adobe Campaign kunt u deze drie URL&#39;s onderscheiden om de laadbewerking over meerdere platforms te spreiden.
 
@@ -451,7 +451,7 @@ Het kenmerk status kan een van de volgende drie waarden hebben:
 
 * normaal: Bestaand gedrag (zonder synchronisatie)
 
-* zwarte lijst: De URL wordt toegevoegd aan de lijst van afgewezen personen als deze een fout van 404 retourneert. De duur (in seconden) van URL die in de lijst van afgewezen personen is wordt bepaald door een **timeout** attribuut de waarvan standaardwaarde 60s is.
+* zwarte lijst: De URL wordt toegevoegd aan de lijst van gewezen personen als deze een fout van 404 retourneert. De duur (in seconden) van URL die in de lijst van gewezen personen is wordt bepaald door een **timeout** attribuut de waarvan standaardwaarde 60s is.
 
 De uit-van-de-doos configuratie van de synchronisatie is:
 
