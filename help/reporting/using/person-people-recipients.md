@@ -100,7 +100,7 @@ Personen: Aangezien de browser van deze ontvanger cookies accepteert, kunnen we 
 | John | - | - | - |
 | Marie | - | - | +1 |
 | Florian | +1 | +1 | +1 |
-| Tussentotaal | 3 | 3 | 2 |
+| Tussentotaal | 3 | 1 | 2 |
 
 De volgende logboeken vallen samen met de open en twee klikken die worden uitgevoerd door de persoon die Florian de e-mail heeft doorgestuurd naar:
 
