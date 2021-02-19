@@ -91,7 +91,7 @@ Raadpleeg [Details van het script](#details-of-the-script) voor een gedetailleer
 
 In deze sectie worden de verschillende delen van het script en de bijbehorende uitvoermodus beschreven.
 
-* Het eerste deel van het script is een query. Met de opdracht **queryDef** kunt u de leveringen herstellen die zijn gemaakt door de doelworkflow uit te voeren en deze te sorteren op basis van de geschatte snelheid van de openen. De informatie van de levering met de hoogste snelheid van de opening wordt dan hersteld.****
+* Het eerste deel van het script is een query. Met de opdracht **queryDef** kunt u de leveringen herstellen die zijn gemaakt door de doelworkflow uit te voeren en deze te sorteren op basis van de geschatte snelheid van de openen, waarna de informatie van de levering met de hoogste snelheid van de opening wordt hersteld.****
 
    ```
    // query the database to find the winner (best open rate)
