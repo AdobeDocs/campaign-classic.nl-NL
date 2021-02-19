@@ -169,7 +169,7 @@ In dit geval klagen veel gebruikers over workflowprestaties. U moet controleren 
    * De werkstromen in behandeling moeten elke dag handmatig opnieuw worden gestart.
    * De prestaties zijn laag.
 
-1. In plaats van vijftig workflows te hebben die om 10.00 uur beginnen, verdeel de werkstromen&#39; beginnende tijden gelijkelijk over de rest van de dag.
+1. In plaats van vijftig workflows te hebben die om 10.00 uur beginnen, verdeel de werkstromen&#39; beginnende tijden gelijkmatig over de rest van de dag.
 1. Ga terug naar de **[!UICONTROL Campaign Workflow HeatMap]** pagina en klik **[!UICONTROL Reload data]** knoop.
 1. Neem nu het volgende in acht:
 
