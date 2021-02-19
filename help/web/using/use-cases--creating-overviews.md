@@ -158,7 +158,7 @@ Wanneer u een lijst in uw overzicht vormt, kunt u verkiezen om extra details voo
 
 >[!NOTE]
 >
->JavaScript-bibliotheken vernieuwen zich vijf minuten op de server. U kunt de server opnieuw starten om te voorkomen dat wordt gewacht tot deze vertraging optreedt.
+>JavaScript-bibliotheken vernieuwen zich vijf minuten op de server. U kunt de server opnieuw starten om te voorkomen dat er op deze vertraging wordt gewacht.
 
 ## De lijst {#filtering-and-updating-the-list} filteren en bijwerken
 
