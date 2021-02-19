@@ -256,7 +256,7 @@ De beschrijving van een bevel is ingegaan op het **`<command>`** element met de 
 * **monoSelection**: Hiermee wordt monoselectie geforceerd (standaard meerdere selecties).
 * **refreshView**: dwingt het opnieuw laden van de lijst na uitvoering van het bevel.
 * **enabledIf**: activeert de opdracht afhankelijk van de ingevoerde expressie.
-* **img**: voert een afbeelding in die toegang geeft tot de opdracht via de lijstwerkbalk.
+* **img**: voert een afbeelding in die toegang biedt tot de opdracht via de lijstwerkbalk.
 
 Een **`<command>`**-element kan **`<command>`**-subelementen bevatten. In dit geval kunt u met het bovenliggende element een submenu weergeven dat bestaat uit deze onderliggende elementen.
 
