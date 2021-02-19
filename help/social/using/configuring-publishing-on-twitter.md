@@ -95,7 +95,7 @@ Voor deze stap hebt u gelijktijdig toegang tot uw Adobe Campaign-console en een 
 
       ![](assets/social_twitter_service_010.png)
 
-1. Selecteer in het veld **[!UICONTROL Visitor folder]** de bezoekersmap waarin de volgers worden gemaakt. Raadpleeg [Bedrijfsbeginsel](../../social/using/publishing-on-twitter.md#operating-principle) voor meer informatie hierover. Standaard worden volgers gemaakt in de hoofdmap van de map **[!UICONTROL Visitors]**.
+1. Selecteer in het veld **[!UICONTROL Visitor folder]** de map van de bezoeker waarin de volgers worden gemaakt. Raadpleeg [Bedrijfsbeginsel](../../social/using/publishing-on-twitter.md#operating-principle) voor meer informatie hierover. Standaard worden volgers gemaakt in de hoofdmap van de map **[!UICONTROL Visitors]**.
 
    ![](assets/social_twitter_service_010_b.png)
 
