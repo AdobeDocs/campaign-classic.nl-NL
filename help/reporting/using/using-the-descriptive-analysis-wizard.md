@@ -120,7 +120,7 @@ U kunt de naam van de statistieken en de subtotalen weergeven of verbergen en de
 
 ### Gegevens weergeven in het diagram {#displaying-data-in-the-chart}
 
-In de eerste stap van de beschrijvende analysewizard kunt u ervoor kiezen de gegevens alleen in diagramvorm weer te geven, zonder een tabel. In dit geval moet variabele selectie plaatsvinden tijdens het configureren van de afbeelding. U moet eerst het aantal variabelen selecteren dat u wilt weergeven en de velden in de desbetreffende database selecteren.
+In de eerste stap van de wizard voor beschrijvende analyse kunt u ervoor kiezen de gegevens alleen in diagramvorm weer te geven, zonder een tabel. In dit geval moet variabele selectie plaatsvinden tijdens het configureren van de afbeelding. U moet eerst het aantal variabelen selecteren dat u wilt weergeven en de velden in de desbetreffende database selecteren.
 
 ![](assets/s_ncs_user_report_wizard_023.png)
 
