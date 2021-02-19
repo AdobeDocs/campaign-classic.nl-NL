@@ -45,7 +45,7 @@ Selecteer een enquêtemalplaatje, dan geef het onderzoek een naam. Deze naam is 
 
 ## Stap 3 - De enquête opbouwen {#step-3---building-the-survey}
 
-De onderzoeken worden gebouwd in een diagram waar de volgende elementen worden geplaatst: de pagina(&#39;s) waarop de inhoud wordt gemaakt, de stappen voor het vooraf laden en opslaan van gegevens en de testfasen. Scripts en query&#39;s kunnen ook worden ingevoegd.
+De onderzoeken worden gebouwd in een diagram waar de volgende elementen worden geplaatst: de pagina(&#39;s) waar de inhoud wordt gemaakt, de stappen voor het vooraf laden en opslaan van gegevens en de testfasen. Scripts en query&#39;s kunnen ook worden ingevoegd.
 
 Als u het diagram wilt samenstellen, klikt u op de **[!UICONTROL Edit]**-vorm van de enquête.
 
