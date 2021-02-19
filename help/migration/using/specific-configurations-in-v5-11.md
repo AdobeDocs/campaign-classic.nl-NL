@@ -114,7 +114,7 @@ Er is een optie toegevoegd voor het uitschakelen van de automatische migratie va
 
 * Interne naam: NlMigration_KeepFolderStructure
 * Gegevenstype: Geheel
-* Waarde (tekst): 3
+* Waarde (tekst): 1
 
 Als u deze optie gebruikt, moet u na de migratie verouderde mappen verwijderen, de nieuwe mappen toevoegen en alle vereiste controles uitvoeren.
 
@@ -122,7 +122,7 @@ Als u deze optie gebruikt, moet u na de migratie verouderde mappen verwijderen, 
 
 De volgende mappen moeten na de migratie worden toegevoegd:
 
-| Interne naam | Label | Voorwaarde |
+| Interne naam | Label | Condition |
 |---|---|---|
 | nmsAutoObjects | Automatisch gemaakte objecten | - |
 | nmsCampaignAdmin | Campagnebeheer | - |
