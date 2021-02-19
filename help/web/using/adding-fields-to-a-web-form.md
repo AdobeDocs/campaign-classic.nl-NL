@@ -317,7 +317,7 @@ Geef het label voor het selectievakje op en selecteer de desbetreffende informat
 >
 >De diensten van de informatie zijn gedetailleerd in [deze pagina](../../delivery/using/managing-subscriptions.md).
 
-De gebruiker abonneert zich op de service door de relevante optie te controleren.
+De gebruiker abonneert zich op de dienst door de relevante optie te controleren.
 
 ![](assets/s_ncs_admin_survey_subscribe.png)
 
