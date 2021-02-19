@@ -19,7 +19,7 @@ ht-degree: 2%
 
 Wanneer het creëren van een levering, zijn er twee mogelijke methodes om aanbiedingen te integreren:
 
-* De aanbiedingsmotor in de hoofdtekst van een levering aanroepen.
+* De aanbiedingsmotor aanroepen in de hoofdtekst van een levering.
 * Verwijzen naar aanbiedingen via de leveringscontouren van een campagne. Deze methode wordt over het algemeen gebruikt voor papiercampagnes.
 
 ## Het leveren met een vraag aan de aanbiedingsmotor {#delivering-with-a-call-to-the-offer-engine}
@@ -68,7 +68,7 @@ Voer de volgende stappen uit om voorstellen voor aanbiedingen in te voegen in ee
 
    ![](assets/offer_delivery_010.png)
 
-### Parameters om aanbiedingsmotor {#parameters-for-calling-offer-engine} aan te roepen
+### Parameters voor het aanroepen van de aanbiedingsengine {#parameters-for-calling-offer-engine}
 
 * **[!UICONTROL Space]** : ruimte van de aanbiedingsomgeving die moet worden geselecteerd om de aanbiedingsengine te activeren.
 * **[!UICONTROL Category]** : specifieke map waarin aanbiedingen worden gesorteerd. Als er geen categorie is opgegeven, zal de aanbiedingsengine rekening houden met alle aanbiedingen in de omgeving, tenzij een thema wordt geselecteerd.
