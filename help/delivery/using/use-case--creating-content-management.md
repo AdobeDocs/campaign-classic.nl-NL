@@ -102,7 +102,7 @@ Voer de volgende stappen uit om een gegevensschema te maken:
  <tbody> 
   <tr> 
    <td> Titel<br /> </td> 
-   <td> Kenmerk<br /> </td> 
+   <td> Attribute<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> Titel<br /> </td> 
   </tr> 
