@@ -110,7 +110,7 @@ Maak een nieuwe workflow en voeg activiteiten toe zoals in de onderstaande afbee
 
 Open de activiteit **Delivery** en definieer de eigenschappen als volgt:
 
-* Selecteer **[!UICONTROL Delivery]** in de sectie &lt;a0/> en selecteer een leveringssjabloon.**[!UICONTROL New, created from a template]**
+* Selecteer **[!UICONTROL Delivery]** in de sectie **[!UICONTROL New, created from a template]** en selecteer een leveringssjabloon.
 * Selecteer **[!UICONTROL Specified in the delivery]** in de sectie **[!UICONTROL Recipients]**.
 * Houd in de sectie **[!UICONTROL Action to execute]** de optie **[!UICONTROL Prepare]**.
 
