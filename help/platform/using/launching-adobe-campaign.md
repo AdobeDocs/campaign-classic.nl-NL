@@ -90,7 +90,7 @@ Met het menu **[!UICONTROL Help > About...]** hebt u toegang tot de volgende inf
 
 ![](assets/about-acc.png)
 
-Telkens wanneer u het team van de Zorg van de Adobe klant bereikt, moet u het versieaantal verstrekken en aantal van uw de cliëntconsole en toepassingsserver van Adobe Campaign bouwen.
+Wanneer u het team van de Zorg van de Adobe klant bereikt, moet u het versieaantal verstrekken en aantal van uw de cliëntconsole en toepassingsserver van Adobe Campaign bouwen.
 
 Als u op [Campagne Gouden Standaard versie](../../rn/using/gold-standard.md) loopt, moet u ook de karakters delen SHA/1 die in **[!UICONTROL About]** doos worden getoond. Als voorbeeld, voor Gouden **Standaard 10 versie**, zal het bouwstijlaantal **build 9032@efd8a94** tonen, zoals hieronder getoond:
 
