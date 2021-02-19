@@ -37,7 +37,7 @@ Controleer onder Systeemindicatoren en kernbestanden of er geen rode indicatoren
 
 Technische workflows zijn beschikbaar via **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
-Afhankelijk van de technische werkstroom, volg de hieronder beschreven stappen om ervoor te zorgen dat alles zoals verwacht werkt.
+Afhankelijk van de technische workflow voert u de onderstaande stappen uit om ervoor te zorgen dat alles werkt zoals u had verwacht.
 
 Om beter te begrijpen wat elke technische werkstroom wordt verondersteld te doen, verwijs naar dit [sectie](../../workflow/using/about-technical-workflows.md).
 
