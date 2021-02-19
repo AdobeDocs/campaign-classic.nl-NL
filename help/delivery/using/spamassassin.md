@@ -26,7 +26,7 @@ SpamAssassin maakt gebruik van diverse spamdetectietechnieken, waaronder:
 * DNS-gebaseerde en op vage controlesom gebaseerde spamdetectie
 * Bayesiaans filteren
 * Externe programma&#39;s
-* Lijsten van afgewezen personen
+* Lijsten van gewezen personen
 * Online databases
 
 >[!NOTE]
