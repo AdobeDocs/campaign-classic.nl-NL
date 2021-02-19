@@ -53,7 +53,7 @@ Hier volgen enkele aanvullende richtlijnen voor het controleren van de leverbaar
 * Controleer elke leveringsproductie om ervoor te zorgen dat het met de geldigheid van de leveringsinhoud (b.v. &#39;Flash-verkoop&#39; moet in minuten worden geleverd, niet in dagen).
 * Wanneer het gebruiken van [golven](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves), verifieer dat elke golf genoeg tijd heeft om te beëindigen alvorens volgende wordt teweeggebracht.
 * Controleer of het aantal fouten en het aantal nieuwe [quarantines](../../delivery/using/understanding-quarantine-management.md) consistent zijn met andere leveringen.
-* Raadpleeg de [leveringslogboeken](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) zorgvuldig om het soort fouten te controleren die worden benadrukt (lijsten van afgewezen personen, DNS kwesties, anti-spamregels, enz.).
+* Raadpleeg de [leveringslogboeken](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) zorgvuldig om het soort fouten te controleren die worden benadrukt (lijsten van gewezen personen, DNS kwesties, anti-spamregels, enz.).
 
 ## Spam {#signal-spam}
 
@@ -65,7 +65,7 @@ Spam van het signaal is de Franse dienst die anonymized terugkoppel meldt voor F
 
 ## 250ok {#deliverability-250ok}
 
-[250](https://250ok.com/) okis een complementaire controleoplossing aan de interne hulpmiddelen van de Adobe leverbaarheid die IP en domeinlijsten van afgewezen personen, en reputatie-indicatoren verstrekken.
+[250](https://250ok.com/) okis een complementaire controleoplossing aan de interne hulpmiddelen van de Adobe leverbaarheid die IP en domeinlijsten van gewezen personen, en reputatie-indicatoren verstrekken.
 
 De verstrekte informatie is real-time, wat een pro-actieve bijstand mogelijk maakt.
 
@@ -84,7 +84,7 @@ Deze verslagen bevatten de volgende indicatoren:
 
 * **[!UICONTROL DomainKeys]** : Een service die door Yahoo is ontwikkeld en waarmee de identiteit van een e-mailafzender wordt gecertificeerd.
 
-* **[!UICONTROL IP and RBL domain]** (Lijst voor realtime zwarte gaten): Een lijst van IP adressen en domeinen die door de organisaties van de lijst van afgewezen personen voor slechte verzendende reputatie zijn gemarkeerd. Deze lijsten worden bijgehouden door speciale organisaties zoals Spamhaus, Spamcop, SURBL/URIBL, enz. Adobe Campaign verwerkt momenteel controles tegen RBL&#39;s die een significant effect op de leverbaarbaarheid hebben. Deze RBLs wijzen op het verzenden van reputatie, en kan door ISPs worden van verwijzingen voorzien alvorens om uw e-mails te aanvaarden.
+* **[!UICONTROL IP and RBL domain]** (Lijst voor realtime zwarte gaten): Een lijst van IP adressen en domeinen die door de organisaties van de lijst van gewezen personen voor slechte verzendende reputatie zijn gemarkeerd. Deze lijsten worden bijgehouden door speciale organisaties zoals Spamhaus, Spamcop, SURBL/URIBL, enz. Adobe Campaign verwerkt momenteel controles tegen RBL&#39;s die een significant effect op de leverbaarbaarheid hebben. Deze RBLs wijzen op het verzenden van reputatie, en kan door ISPs worden van verwijzingen voorzien alvorens om uw e-mails te aanvaarden.
 
 * **[!UICONTROL SNDS]** (Smart Network Data Services): Een  [Windows Live Hotmail-service](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx) tegen spam. Hotmail is enige ISP die dit type van informatie verstrekt. Benchmarkscores zijn een groen filterresultaat, een klachtenpercentage van minder dan 0,1% en geen spamvallen.
 
