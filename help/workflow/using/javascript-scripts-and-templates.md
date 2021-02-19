@@ -107,7 +107,7 @@ In dit voorbeeld wordt een instantievariabele gebruikt om dynamisch het gesplits
 
 1. Voeg een activiteit van de Vraag en doelontvangers volgens uw behoeften toe.
 
-1. Voeg een gesplitste activiteit toe en vorm het om een willekeurige steekproef van de inkomende bevolking uit te voeren. U kunt het gewenste percentage kiezen. Deze wordt in dit voorbeeld ingesteld op 50%.
+1. Voeg een gesplitste activiteit toe en vorm het om een willekeurige steekproef van de inkomende bevolking uit te voeren. U kunt het gewenste percentage kiezen. Deze wordt in dit voorbeeld op 50% ingesteld.
 
    Dit percentage wordt dynamisch bijgewerkt dankzij de eerder gedefinieerde instantievariabele.
 
