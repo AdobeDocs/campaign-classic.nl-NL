@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
 source-wordcount: '2556'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
@@ -25,9 +25,9 @@ _22 december 2020_
 
 >[!CAUTION]
 >
-> * Deze versie wordt geleverd met een nieuw verbindingsprotocol: Als u verbinding maakt met Campagne via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **31 maart 2021**.
-> * Deze release wordt geleverd met een [beveiligingsoplossing](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw omgeving te versterken.
-> * Als u via Auth-verificatie de integratie Experience Cloug Triggers gebruikt, moet u naar Adobe I/O gaan zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De oude Auth-verificatiemodus wordt op **30 april 2021** beëindigd.
+> * Deze versie wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **31 maart 2021** verbinding te kunnen maken met Campaign.
+> * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
+> * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overgaan op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De oude oAuth-verificatiemodus wordt op **30 april 2021** buiten gebruik gesteld.
 
 
 
@@ -35,7 +35,7 @@ _22 december 2020_
 
 * Het verbindingsprotocol is bijgewerkt en aangepast aan het nieuwe IMS-verificatiemechanisme.
 * De de integratieauthentificatie van trekkers oorspronkelijk die op de authentificatie van AUTH wordt gebaseerd om tot pijpleiding toegang te hebben is veranderd en naar Adobe I/O verplaatst. [Meer informatie](../../integrations/using/configuring-adobe-io.md)
-* Na [einde van steun voor iOS APNs erfenis binair protocol](https://developer.apple.com/news/?id=c88acm2b), worden alle instanties die dit protocol gebruiken bijgewerkt aan HTTP/2 protocol tijdens postupgrade.
+* Nu het [verouderde binaire protocol voor iOS APN’s niet meer wordt ondersteund](https://developer.apple.com/news/?id=c88acm2b), zijn alle instanties die dit protocol gebruiken, bijgewerkt naar het HTTP/2-protocol tijdens de postupgrade.
 * Er is een beveiligingsprobleem opgelost ter versterking van de bescherming tegen SSRF-aanvallen (Server Side Request Forgery). (NEO-27777)
 * Probleem verholpen waarbij de SMPP-connector werd gedeactiveerd na een verbindingsfout, waardoor andere SMS-leveringen niet werden verzonden en prestatieproblemen optraden. (NEO-28609)
 * Er is een probleem verholpen waarbij de server vastliep door geheugenbeschadiging te voorkomen tijdens het opschonen van de expressieparser. (NEO-26856)
