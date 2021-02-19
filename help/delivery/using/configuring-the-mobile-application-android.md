@@ -218,7 +218,7 @@ Raadpleeg [FCM-documentatie](https://firebase.google.com/docs/cloud-messaging/co
 
    ![](assets/nmac_android_7.png)
 
-1. Selecteer **[!UICONTROL Target type]** in het venster &lt;a0/> en klik **[!UICONTROL Next]**.**[!UICONTROL Subscribers of an Android mobile application]**
+1. Selecteer **[!UICONTROL Target type]** in het venster **[!UICONTROL Subscribers of an Android mobile application]** en klik **[!UICONTROL Next]**.
 
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Service]** de eerder gemaakte service en klik vervolgens op **[!UICONTROL Finish]**.
 **[!UICONTROL Application variables]** worden automatisch toegevoegd afhankelijk van wat tijdens de configuratiestappen werd toegevoegd.
@@ -259,7 +259,7 @@ De afbeelding en webpagina moeten worden weergegeven in het pushbericht wanneer 
 
    ![](assets/nmac_android_7.png)
 
-1. Selecteer **[!UICONTROL Target type]** in het venster &lt;a0/> en klik **[!UICONTROL Next]**.**[!UICONTROL Subscribers of an Android mobile application]**
+1. Selecteer **[!UICONTROL Target type]** in het venster **[!UICONTROL Subscribers of an Android mobile application]** en klik **[!UICONTROL Next]**.
 
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Service]** de eerder gemaakte service en klik vervolgens op **[!UICONTROL Finish]**.
 
