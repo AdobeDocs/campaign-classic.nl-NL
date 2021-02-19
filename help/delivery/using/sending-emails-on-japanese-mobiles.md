@@ -37,7 +37,7 @@ Daarom moet u:
 
 * Alleen afbeeldingen in de JPEG- of GIF-indeling gebruiken
 * Een levering maken met tekst en HTML-secties die strikt lager zijn dan 10 000 bytes (voor KDDI AU en DoCoMo)
-* Afbeeldingen met een totale grootte (vóór codering) van minder dan 100 kB gebruiken
+* Afbeeldingen gebruiken waarvan de totale grootte (vóór codering) lager is dan 100 kB
 * Gebruik niet meer dan 20 afbeeldingen per bericht
 * Een HTML-indeling van beperkte grootte gebruiken (een beperkt aantal tags is beschikbaar voor elke operator)
 
