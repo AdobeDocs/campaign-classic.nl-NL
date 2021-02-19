@@ -84,7 +84,7 @@ Als u een **LINE** levering wilt maken, moet u de volgende stappen volgen:
 >
 >Algemene concepten voor het maken van leveringen worden weergegeven in [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-1. Selecteer **[!UICONTROL Campaigns]** op het tabblad &lt;a0/> en klik op de knop **[!UICONTROL Create]**.**[!UICONTROL Deliveries]**
+1. Selecteer **[!UICONTROL Campaigns]** op het tabblad **[!UICONTROL Deliveries]** en klik op de knop **[!UICONTROL Create]**.
 1. Selecteer in het venster dat wordt weergegeven de leveringssjabloon **[!UICONTROL LINE V2 delivery]**.
 
    ![](assets/line_message_01.png)
@@ -119,7 +119,7 @@ U kunt het volgende gebruiken:
 
    >[!NOTE]
    >
-   >U kunt de **%SIZE%** variabele gebruiken: met deze variabele kunt u de beeldweergave optimaliseren op basis van de schermgrootte van het mobiele apparaat van de ontvanger.
+   >U kunt de **%SIZE%** variabele gebruiken: Met deze variabele kunt u de weergave van de afbeelding optimaliseren op basis van de schermgrootte van het mobiele apparaat van de ontvanger.
 
    ![](assets/line_message_04.png)
 
