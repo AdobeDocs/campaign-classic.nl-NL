@@ -198,7 +198,7 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 * Probleem verholpen na upgrade waarbij het Hive-pakket automatisch werd geïnstalleerd (nodig voor Hadoop) als het FDA-pakket is geïnstalleerd. (NEO-10592)
 * Probleem verholpen waarbij ongeldige domeinen werden behandeld als een **Niet gedefinieerd** fout. (NEO-10248)
 * Probleem verholpen waarbij logboekbestanden in de tabel deliveryLogStats werden gedupliceerd bij het verzenden van Anroid-pushleveringen. (NEO-10234)
-* Probleem verholpen waarbij bepaalde streepjescode-indelingen mogelijk niet leesbaar werden door streepjescodescanners. (NEO-10125)
+* Probleem verholpen waarbij bepaalde streepjescode-indelingen niet leesbaar werden door streepjescodescanners. (NEO-10125)
 * Probleem verholpen met de JavaScript-functie urlEncode wanneer niet-ASCII-tekens werden gebruikt. Zie de sectie &#39;Technische ontwikkelingen&#39; voor meer informatie. (NEO-10123)
 * Probleem verholpen bij het uitvoeren van een query inclusief sha256-functies in Teradata-databases. (NEO-10119)
 * De fouten van het werkschemamegeheugen die in de activiteit SalesForce konden voorkomen wanneer het gebruiken van zeer grote lijsten SalesForce. (NEO-9900)
