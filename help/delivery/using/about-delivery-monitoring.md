@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 54ba9d2ee05b1bd7de7616142e8ad6bcbac5f8eb
 workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 8%
+ht-degree: 14%
 
 ---
 
 
-# Aan de slag met leveringsbewaking {#about-delivery-monitoring}
+# Aan de slag met leveringscontrole {#about-delivery-monitoring}
 
 Het controleren van uw leveringen nadat deze zijn verzonden, is een belangrijke stap om ervoor te zorgen dat uw marketingcampagnes efficiënt zijn en uw klanten bereiken.
 
@@ -29,8 +29,8 @@ Met de lijst met leveringen kunt u alle gemaakte leveringen op één locatie bek
 
 Voor elke levering is een speciaal dashboard beschikbaar. Het staat u toe om uiteindelijke kwesties te controleren die tijdens het verzenden worden ontmoet evenals diverse soorten informatie betreffende de levering: rapporten, spiegelpagina&#39;s, uitsluitingen, logboeken bijhouden, renderen, enz.
 
-* [Toegang tot de lijst met leveringen](../../delivery/using/list-of-deliveries.md)
-* [Delivery dashboard](../../delivery/using/delivery-dashboard.md)
+* [De lijst met leveringen openen](../../delivery/using/list-of-deliveries.md)
+* [Leveringsdashboard](../../delivery/using/delivery-dashboard.md)
 
 <img src="assets/do-not-localize/icon_guidelines.svg" width="60px">
 
