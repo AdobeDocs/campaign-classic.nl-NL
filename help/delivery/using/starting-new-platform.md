@@ -21,7 +21,7 @@ Het handhaven van uw domein en IP adresreputatie is essentieel wanneer vestiging
 
 * Het verzenden van e-mails is een gevoelige stap omdat het platform geen geschiedenis van gebruik heeft en, wanneer de verzendende IP&#39;s nooit voor dit doel zijn gebruikt, geen reputatie.
 
-* ISPs is natuurlijk verdacht van IP adressen die nooit zijn gebruikt om e-mail te verzenden en die plotseling beginnen grote volumes van e-mailverkeer te verzenden. Spammers gebruiken over het algemeen &quot;onbekende&quot;IP adressen (adressen die nooit op lijst van afgewezen personen zijn geweest) om het grootste mogelijke aantal berichten vóór opsporing te verzenden.
+* ISPs is natuurlijk verdacht van IP adressen die nooit zijn gebruikt om e-mail te verzenden en die plotseling beginnen grote volumes van e-mailverkeer te verzenden. Spammers gebruiken over het algemeen &quot;onbekende&quot;IP adressen (adressen die nooit op lijst van gewezen personen zijn geweest) om het grootste mogelijke aantal berichten vóór opsporing te verzenden.
 
 * Je kunt niet verwachten dat je aan het begin van de productiefase een operationele snelheid bereikt in termen van productie. Bovendien zou u niet moeten proberen om berichten aan dit tarief te verzenden aangezien het ISPs zou kunnen leiden om de verzendende adressen te blokkeren en de rest van de aanloopfase ernstig te compromitteren.
 
