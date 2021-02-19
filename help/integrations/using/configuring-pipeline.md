@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 531eb23ff8fe1b77c37a51e7f99921b0bc071f0f
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '908'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ De triggers worden gebruikt voor het activeren van een campagneworkflow die e-ma
 
 Voordat u deze configuratie start, moet u controleren of u deze configuratie gebruikt:
 
-* Minimaal Adobe Campaign 20.3 of Gold Standard 11-release
+* Adobe Campaign 20.3, 20.2.4, 19.1.8 of Gold Standard 11 minimaal
 * Adobe Analytics Standard-versie
 
 U hebt ook het volgende nodig:
@@ -49,7 +49,7 @@ Verificatie wordt ondersteund voor de Marketing Cloud via Adobe I/O Project.
 
 Voor Gehoste klanten, kunt u een kaartje van de klantenzorg tot stand brengen om uw organisatie met de Tokens van de Technische Rekening van Adobe I/O voor de integratie van Triggers toe te laten.
 
-Raadpleeg voor klanten op locatie de pagina [Adobe I/O for Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) configureren. Let erop dat u **[!UICONTROL Adobe Analytics]** moet selecteren terwijl u API toevoegt aan de Adobe I/O-referentie.
+Raadpleeg voor klanten op locatie de pagina [Adobe I/O configureren voor Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md). Let erop dat u **[!UICONTROL Adobe Analytics]** moet selecteren terwijl u API toevoegt aan de Adobe I/O-referentie.
 
 ## Stap 2: NmsPipeline_Config pijpleidingsoptie {#configuring-nmspipeline} configureren
 
