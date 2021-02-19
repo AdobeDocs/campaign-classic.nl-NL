@@ -31,7 +31,7 @@ Dit malplaatje bepaalt het type van toepassing van het Web. U kunt:
 
 1. Webformulieren (+ profielwijziging)
 
-   Met webformulieren kunt u webpagina&#39;s met invoer- of selectievelden aanbieden: de informatie die gebruikers invoeren, kan in de Adobe Campaign-database worden opgeslagen. Raadpleeg [Webformulieren](../../web/using/about-web-forms.md) voor meer informatie.
+   Met webformulieren kunt u webpagina&#39;s met invoer- of selectievelden aanbieden: de informatie die gebruikers invoeren, kan in de Adobe Campaign-database worden opgeslagen. Raadpleeg [Webformulieren](../../web/using/about-web-forms.md) voor meer informatie hierover.
 
 1. Webapplicaties
 
