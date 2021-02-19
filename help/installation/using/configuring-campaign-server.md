@@ -35,7 +35,7 @@ Raadpleeg de volgende secties voor meer informatie:
 Campaign Classic-configuratiebestanden worden opgeslagen in de map **conf** van de installatiemap van Adobe Campaign. De configuratie wordt verspreid over twee bestanden:
 
 * **serverConf.xml**: algemene configuratie voor alle instanties. In dit bestand worden de technische parameters van de Adobe Campaign-server gecombineerd: deze worden door alle instanties gedeeld . Hieronder wordt een beschrijving van een aantal van deze parameters gegeven. De verschillende knooppunten en parameters en vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
-* **config-`<instance>`.xml**  (waarbij  **** instantie de naam van de instantie is): specifieke configuratie van de instantie. Als u uw server onder verschillende exemplaren deelt, gelieve de parameters specifiek voor elke instantie in hun relevant dossier in te gaan.
+* **config-`<instance>`.xml**  (waarbij  **** instantie de naam van de instantie is): specifieke configuratie van de instantie. Als u uw server onder verschillende exemplaren deelt, gelieve de parameters specifiek voor elk geval in hun relevant dossier in te gaan.
 
 ## Beveiligingszones {#defining-security-zones} definiëren
 
@@ -384,7 +384,7 @@ Voor JSP-pagina&#39;s is de standaardconfiguratie:
 
 Adobe Campaign gebruikt de volgende JSP-pagina&#39;s:
 
-* /nl/jsp/**soaprouter.jsp**: client console- en webserviceverbindingen (SOAP API&#39;s);
+* /nl/jsp/**soaprouter.jsp**: client console- en webserviceverbindingen (SOAP API&#39;s),
 * /nl/jsp/**m.jsp**: spiegelpagina&#39;s,
 * /nl/jsp/**aanmeldings.jsp**: Web-based toegang tot rapporten en tot plaatsing van de cliëntconsole,
 * /nl/jsp/**s.jsp**: Het gebruik van virale marketing (sponsoring en sociale netwerken).
@@ -605,7 +605,7 @@ Bijvoorbeeld: **uploadWhiteList=&quot;.*.png,.Met *.jpg&quot;** kunt u PNG- en J
 
 U kunt de Campagneserver met een extern systeem door een volmacht verbinden, gebruikend een **de werkschemaactiviteit van de Overdracht van het Dossier** bijvoorbeeld. Hiervoor moet u de sectie **proxyConfig** van het bestand **serverConf.xml** via een specifieke opdracht configureren. Alle parameters die beschikbaar zijn in **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
-De volgende proxyverbindingen zijn mogelijk: HTTP, HTTPS, FTP, SFTP. Houd er rekening mee dat de HTTP- en HTTPS-protocolparameters **niet langer beschikbaar zijn** vanaf de campagneversie 20.2. Deze parameters worden nog steeds hieronder vermeld, aangezien ze in eerdere gebouwen beschikbaar blijven - waaronder 9032.
+De volgende proxyverbindingen zijn mogelijk: HTTP, HTTPS, FTP, SFTP. Houd er rekening mee dat de HTTP- en HTTPS-protocolparameters **niet meer beschikbaar zijn** vanaf de campagneversie 20.2. Deze parameters worden nog steeds hieronder vermeld, aangezien ze in eerdere gebouwen beschikbaar blijven - waaronder 9032.
 
 >[!CAUTION]
 >
