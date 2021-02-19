@@ -30,7 +30,7 @@ Als u de dynamische voorwaarde wilt gebruiken, moet u beschikken over:
 * een levering klaar om te worden verzonden,
 * zaadadressen die een gemeenschappelijke waarde hebben. Deze waarde kan een veld zijn dat al bestaat in Adobe Campaign. In dit voorbeeld hebben de zaadadressen dezelfde waarde als &quot;Aanschaffen&quot; in het veld &quot;Afdeling&quot;, die standaard niet in de toepassing aanwezig is.
 
-## Stap 1 - het Creëren van een levering {#step-1---creating-a-delivery}
+## Stap 1 - Het creëren van een levering {#step-1---creating-a-delivery}
 
 De stappen voor het maken van een levering worden beschreven in de sectie [Een e-maillevering maken](../../delivery/using/creating-an-email-delivery.md).
 
