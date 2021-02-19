@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Verzenden met de verbeterde MTA {#sending-with-enhanced-mta}
 
-De **Adobe Campaign Enhanced MTA** (Mail Transfer Agent) biedt een geüpgrade verzendende infrastructuur die verbeterde prestaties, reputatie, doorvoer, rapportering, stuiterende afhandeling, IP-upgrade en beheer van verbindingsinstellingen mogelijk maakt.
+De **Adobe Campaign Enhanced MTA** (Mail Transfer Agent) biedt een geüpgrade verzendende infrastructuur die verbeterde prestaties, reputatie, doorvoer, rapportering, stuiteringsafhandeling, IP-opruiming en beheer van verbindingsinstellingen mogelijk maakt.
 
 Het is geïmplementeerd om de schaalbaarheid te verbeteren, de doorvoer van de levering te verhogen en meer e-mails sneller te verzenden. Dit wordt bereikt met nieuwe adaptieve leveringstechnieken die e-mailverzendende montages in real time veranderen gebaseerd op terugkoppelen van de Dienstverleners van Internet.
 
