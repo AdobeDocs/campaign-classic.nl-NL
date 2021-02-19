@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Toegang tot de lijst met leveringen
+title: De lijst met leveringen openen
 description: Leer hoe u toegang krijgt tot de lijst met gemaakte leveringen.
 audience: delivery
 content-type: reference
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: f2a126d0aa471831f84d4c8457cfd6f0fae7b14f
 workflow-type: tm+mt
 source-wordcount: '160'
-ht-degree: 1%
+ht-degree: 10%
 
 ---
 
@@ -33,5 +33,5 @@ Standaard bevat de lijst met leveringen de namen en statussen van de leveringen 
 
 **Verwante onderwerpen:**
 
-* [Delivery dashboard](../../delivery/using/delivery-dashboard.md)
+* [Leveringsdashboard](../../delivery/using/delivery-dashboard.md)
 * [Leveringsstatus](../../delivery/using/delivery-statuses.md)
