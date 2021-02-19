@@ -1,7 +1,7 @@
 ---
 solution: Campaign Standard
 product: campaign
-title: Beste werkwijzen importeren en exporteren
+title: Best practices voor importeren en exporteren
 description: Meer informatie over de aanbevolen procedures voor het importeren of exporteren van gegevens.
 audience: automating
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: a2a99135bdd74d87c04262b53e074b6aa05e7915
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Beste werkwijzen importeren en exporteren {#import-export-best-practices}
+# Best practices voor importeren en exporteren {#import-export-best-practices}
 
 Voorzichtig zijn en het volgen van de weinige hieronder gedetailleerde eenvoudige regels zullen veel helpen om gegevensconsistentie binnen het gegevensbestand te verzekeren en gemeenschappelijke fouten tijdens gegevensbestandupdate of gegevensuitvoer te vermijden.
 
