@@ -138,7 +138,7 @@ Er is een Help-tekst toegevoegd met de tag `<static>` met het type help. De inho
 
 Met containers kunt u een set besturingselementen groeperen. Zij worden vertegenwoordigd door het **`<container>`** element. Deze werden hierboven gebruikt om besturingselementen in te delen in meerdere kolommen.
 
-Met het kenmerk **xpath** op een `<container>` kunt u de verwijzing van onderliggende besturingselementen vereenvoudigen. Het verwijzen van controles is dan met betrekking tot de ouder `<container>` ouder.
+Met het kenmerk **xpath** op een `<container>` kunt u de verwijzing van onderliggende besturingselementen vereenvoudigen. De verwijzing van controles is dan met betrekking tot de ouder `<container>` ouder.
 
 Voorbeeld van een container zonder &quot;xpath&quot;:
 
