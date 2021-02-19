@@ -263,7 +263,7 @@ In ons voorbeeld wordt **bedankt** gebruikt.
 
 Net als voor Twitter-volgers (zie: [Operationeel principe](../../social/using/publishing-on-twitter.md#operating-principle)), herstelde Facebook-profielen worden opgeslagen in de tabel met bezoekers. Ga naar het knooppunt **[!UICONTROL Profiles and Targets > Visitors]** om de lijst met bezoekers weer te geven.
 
-Elk Facebook-perspectief dat ermee instemt hun profielgegevens te delen, wordt toegevoegd aan de lijst met bezoekers. Als de **[!UICONTROL Friends]** doos in **[!UICONTROL Pre-load]** activiteit wordt gecontroleerd (verwijs naar: [Aan het vooraf laden worden ook vrienden toegevoegd.](#pre-loading-activity)
+Elk Facebook-perspectief dat ermee instemt hun profielgegevens te delen, wordt toegevoegd aan de lijst met bezoekers. Als de **[!UICONTROL Friends]** doos in **[!UICONTROL Pre-load]** activiteit wordt gecontroleerd (verwijs naar: [Vooraf laden activiteit](#pre-loading-activity)), worden ook vrienden toegevoegd.
 
 ![](assets/social_webapp_037.png)
 
