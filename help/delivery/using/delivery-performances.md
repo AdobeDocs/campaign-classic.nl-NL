@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Aanbevolen werkwijzen voor prestaties
+title: Best practices voor levering
 description: Meer informatie over leveringsprestaties en aanbevolen procedures.
 audience: delivery
 content-type: reference
@@ -10,18 +10,18 @@ translation-type: tm+mt
 source-git-commit: 5b43412286762977c416665d296908a9bfc9b20a
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
 
-# Aanbevolen werkwijzen voor prestaties van levering {#delivery-performances}
+# Best practices voor levering {#delivery-performances}
 
 We raden u aan de onderstaande richtlijnen te volgen om ervoor te zorgen dat uw leveringen goed functioneren en dat de prestaties worden gecontroleerd als er problemen met leveringen optreden.
 
 **Verwante onderwerpen:**
 
-* [Delivery dashboard](../../delivery/using/delivery-dashboard.md)
+* [Leveringsdashboard](../../delivery/using/delivery-dashboard.md)
 * [Problemen met levering oplossen](../../delivery/using/delivery-troubleshooting.md)
 * [Leverbaarheid](../../delivery/using/about-deliverability.md)
 
