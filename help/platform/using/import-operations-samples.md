@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Algemene importvoorbeelden
+title: Voorbeelden van algemene importactiviteiten
 description: Meer informatie over generieke importbewerkingen die u kunt uitvoeren met importtaken.
 audience: platform
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 37cc6cd8b71ec82cd4e6a910d6664a51ed5c091e
 workflow-type: tm+mt
 source-wordcount: '995'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Algemene importvoorbeelden {#import-operations-samples}
+# Voorbeelden van algemene importactiviteiten {#import-operations-samples}
 
 ## Importeren uit een lijst met ontvangers {#example--import-from-a-list-of-recipients}
 
