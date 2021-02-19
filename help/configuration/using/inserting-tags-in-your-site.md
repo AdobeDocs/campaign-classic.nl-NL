@@ -37,7 +37,7 @@ De ingevoegde tag neemt contact op met de omleidingsserver.
 
 Wanneer u een pagina definieert die in de console moet worden bijgehouden, kunt u een voorbeeld van een webtrackingtag genereren om deze te kopiëren en in de broncode van uw webpagina te plakken.
 
-Als u echter tags van het type TRANSACTION gebruikt, moet u de voorbeeldtag wijzigen met JavaScript om de transactiegegevens (hoeveelheid, aantal items) en informatie die in een extensieschema is gedefinieerd in te voegen.
+Als u echter tags van het type TRANSACTION gebruikt, moet u de voorbeeldtag wijzigen met JavaScript om de transactiegegevens (hoeveelheid, aantal items) en alle informatie die in een extensieschema is gedefinieerd in te voegen.
 
 ### Statische invoeging van tags {#static-insertion-of-tags}
 
