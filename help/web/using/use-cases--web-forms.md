@@ -46,7 +46,7 @@ De berichten van de bevestiging worden verzonden via een specifiek leveringsmalp
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Aangezien de ontvangers van deze levering hun goedkeuring niet hebben bevestigd, zijn zij nog op de lijst van afgewezen personen van het gegevensbestand. Voor hen om deze mededeling te ontvangen, moet u leveringen toelaten die op dit malplaatje aan doelontvangers op lijst van afgewezen personen worden gebaseerd.
+1. Aangezien de ontvangers van deze levering hun goedkeuring niet hebben bevestigd, zijn zij nog op de lijst van gewezen personen van het gegevensbestand. Voor hen om deze mededeling te ontvangen, moet u leveringen toelaten die op dit malplaatje aan doelontvangers op lijst van gewezen personen worden gebaseerd.
 
    Klik hiertoe op het tabblad **[!UICONTROL Exclusions]**.
 
@@ -104,7 +104,7 @@ Volg de onderstaande stappen om dit te doen:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   De eerste **[!UICONTROL Script]** activiteit zal ontvangers op lijst van afgewezen personen toevoegen tot zij hun abonnement op nieuwsbrief bevestigen. De inhoud ervan moet als volgt zijn:
+   De eerste **[!UICONTROL Script]** activiteit zal ontvangers op lijst van gewezen personen toevoegen tot zij hun abonnement op nieuwsbrief bevestigen. De inhoud ervan moet als volgt zijn:
 
    ```
    ctx.recipient.@blackList=1
@@ -167,7 +167,7 @@ Het abonnement op de nieuwsbrief omvat de volgende stappen:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   De gebruiker wordt toegevoegd aan de Adobe Campaign-database in de map **[!UICONTROL Temp]** en het profiel van de gebruiker is in de lijst van afgewezen personen totdat deze zijn abonnement met de e-mail bevestigt.
+   De gebruiker wordt toegevoegd aan de Adobe Campaign-database in de map **[!UICONTROL Temp]** en het profiel van de gebruiker is in de lijst van gewezen personen totdat deze zijn abonnement met de e-mail bevestigt.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -181,7 +181,7 @@ Het abonnement op de nieuwsbrief omvat de volgende stappen:
 
    In Adobe Campaign wordt het gebruikersprofiel bijgewerkt:
 
-   * zij niet langer in de lijst van afgewezen personen zijn,
+   * zij niet langer in de lijst van gewezen personen zijn,
    * zij zijn geabonneerd op de informatiedienst .
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
