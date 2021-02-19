@@ -65,7 +65,7 @@ In de eerste plaats moeten alle processen met toegang tot de database op alle be
    killall nlserver
    ```
 
-1. Als sommige processen na een paar minuten nog actief zijn, kunt u ze forceren te sluiten met de opdracht:
+1. Als sommige processen na een paar minuten nog actief zijn, kunt u ze dwingen te sluiten met de opdracht:
 
    ```
    killall -9 nlserver
@@ -337,7 +337,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
    >
    >Wanneer u configuraties van Adobe Campaign v5 naar Adobe Campaign v7 rapporteert, moet u ervoor zorgen dat de paden naar de fysieke mappen leiden naar Adobe Campaign v7 en niet naar Adobe Campaign v5.
 
-1. Aangezien migratie geen algemene installatie is, moet u het opnieuw beginnen van de **trackinglogd** dienst dwingen. Hiervoor opent u het bestand **nl6/conf/config-default.xml** en controleert u of de service **trackinglogd** is geactiveerd (alleen op de trackingserver(s)):
+1. Aangezien migratie geen generieke installatie is, moet u het opnieuw beginnen van de **trackinglogd** dienst dwingen. Hiervoor opent u het bestand **nl6/conf/config-default.xml** en controleert u of de service **trackinglogd** is geactiveerd (alleen op de trackingserver(s)):
 
    ```
    <trackinglogd autoStart="true"/>
@@ -412,7 +412,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
    >
    >Raadpleeg [deze sectie](../../installation/using/installing-campaign-standard-packages.md) voor meer informatie over het installeren van Adobe Campaign in Linux.
 
-1. Aangezien migratie geen algemene installatie is, moet u het opnieuw beginnen van de **trackinglogd** dienst dwingen. Hiervoor opent u het bestand **nl6/conf/config-default.xml** en controleert u of de service **trackinglogd** is geactiveerd (alleen op de trackingserver(s)):
+1. Aangezien migratie geen generieke installatie is, moet u het opnieuw beginnen van de **trackinglogd** dienst dwingen. Hiervoor opent u het bestand **nl6/conf/config-default.xml** en controleert u of de service **trackinglogd** is geactiveerd (alleen op de trackingserver(s)):
 
    ```
    <trackinglogd autoStart="true"/>
