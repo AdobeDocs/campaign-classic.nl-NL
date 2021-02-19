@@ -201,7 +201,7 @@ Het triggerType-veld identificeert waaruit de gegevens afkomstig zijn.
 
 Hier volgt een voorbeeldschemacode voor deze tabel:
 
-| Kenmerk | Type | Label | Beschrijving |
+| Attribute | Type | Label | Beschrijving |
 |:-:|:-:|:-:|:-:|
 | pipeEventId | Lang | Primaire sleutel | De interne primaire sleutel van de trigger. |
 | data | Memo | Gegevens activeren | De volledige inhoud van triggergegevens in XML-indeling. Voor foutopsporing en controle. |
