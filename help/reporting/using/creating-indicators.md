@@ -26,7 +26,7 @@ Voer de volgende stappen uit om een kubus te maken:
 1. Bepaal maatregelen. Zie [Building indicators](#building-indicators).
 1. Maak aggregaten (optioneel). Zie [aggregaten berekenen en gebruiken](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
 
-In dit voorbeeld ziet u hoe u snel een eenvoudige kubus in een rapport kunt maken om de bijbehorende maatregelen te exporteren.
+In dit voorbeeld wordt getoond hoe u snel een eenvoudige kubus in een rapport kunt maken om de bijbehorende maatregelen te exporteren.
 
 De implementatiestappen worden hieronder beschreven. In de andere secties van dit hoofdstuk vindt u uitgebreide opties en beschrijvingen.
 
