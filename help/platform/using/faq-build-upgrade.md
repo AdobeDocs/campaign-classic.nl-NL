@@ -168,7 +168,7 @@ Ja. De server wordt afgesloten tijdens een upgrade om ervoor te zorgen dat de ge
 
 Als u problemen ondervindt na een upgrade van de build, neemt u contact op met [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De Zorg van de klant plant de bouwstijldata en opent bouwstijlgerelateerde kaartjes.
 
-Meer informatie over de Help- en ondersteuningsopties voor Campaign Classic[](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+Meer informatie over de Help- en ondersteuningsopties voor Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)[
 
 ## Controlelijst voor upgrades maken {#check-list}
 
