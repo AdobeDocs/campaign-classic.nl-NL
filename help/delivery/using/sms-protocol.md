@@ -483,7 +483,7 @@ Het opgeven van korte code is handig voor twee functies:
 
 * In de voorvertoning wordt de korte code weergegeven als er geen bronnummer is opgegeven. Het zal het echte gedrag op de mobiele telefoon weerspiegelen.
 
-* De lijst van afgewezen personen die van de auto antwoordeigenschap plaatst verzendt slechts naar quarantaine de gebruiker voor een specifieke korte code.
+* De lijst van gewezen personen die van de auto antwoordeigenschap plaatst verzendt slechts naar quarantaine de gebruiker voor een specifieke korte code.
 
 #### Bron TON/NPI, TON/NPI bestemming {#ton-npi}
 
@@ -588,7 +588,7 @@ Als dit selectievakje niet is ingeschakeld, worden alleen cijfers van het telefo
 
 Als het selectievakje is ingeschakeld, wordt het telefoonnummer ongewijzigd verzonden, zonder voorbehandeling en mogelijke spaties, plus voorvoegsel- of hekje-/sterborden.
 
-Deze functie heeft ook een effect op het gedrag van de functie lijst van afgewezen personen voor automatisch reageren: wanneer checkbox niet wordt gecontroleerd, zal a + prefix aan telefoonaantallen worden toegevoegd die in de quarantainelijst worden opgenomen om te compenseren + prefix die van het telefoonaantal door het protocol SMPP zelf wordt verwijderd.
+Deze functie heeft ook een effect op het gedrag van de functie lijst van gewezen personen voor automatisch reageren: wanneer checkbox niet wordt gecontroleerd, zal a + prefix aan telefoonaantallen worden toegevoegd die in de quarantainelijst worden opgenomen om te compenseren + prefix die van het telefoonaantal door het protocol SMPP zelf wordt verwijderd.
 
 #### Controle van TLS-certificaat overslaan {#skip-tls}
 
@@ -714,7 +714,7 @@ Met deze instelling kunt u slechts één TLV-optie per bericht toevoegen.
 >
 >In Adobe Campaign Classic en in een hybride architectuur, vereist het toepassen van auto-antwoord voor de uitgebreide schakelaar SMPP om schrijftoegang voor de middelste exploitant op **External account** omslag toe te voegen.
 
-Met deze functie kunt u snel tekst op de MO beantwoorden en per korte code naar de lijst van afgewezen personen verzenden.
+Met deze functie kunt u snel tekst op de MO beantwoorden en per korte code naar de lijst van gewezen personen verzenden.
 
 Met de kolommen **Trefwoord** en **Korte code** worden voorwaarden gedefinieerd om de automatische reactie te activeren. Als beide velden overeenkomen, wordt de MO verzonden en wordt de aanvullende actie geactiveerd. Als u een jokerteken wilt opgeven, laat u het veld leeg. Trefwoorden komen overeen met het eerste alfanumerieke woord in de MO-tekst, waarbij leestekens en voorloopruimten worden genegeerd. Het betekent dat het **Trefwoord** gebied geen ruimten kan bevatten en één enkel woord moet zijn.
 
