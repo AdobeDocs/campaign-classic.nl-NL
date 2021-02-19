@@ -36,7 +36,7 @@ Dit voorbeeld toont ook hoe te om een filter met betrekking tot de keus van een 
 Voer de volgende stappen uit:
 
 1. Open de Algemene vraagredacteur en selecteer de Ontvangende lijst **[!UICONTROL (nms:recipient)]**.
-1. Selecteer **[!UICONTROL Data to extract]**, **[!UICONTROL First name]**, **[!UICONTROL Last name]** en **[!UICONTROL Email]** in het venster &lt;a0/>.**[!UICONTROL Primary key]**
+1. Selecteer **[!UICONTROL Data to extract]**, **[!UICONTROL First name]**, **[!UICONTROL Last name]** en **[!UICONTROL Email]** in het venster **[!UICONTROL Primary key]**.
 
    ![](assets/query_editor_nveau_33.png)
 
@@ -57,7 +57,7 @@ Voer de volgende stappen uit:
 
       ![](assets/query_editor_nveau_36.png)
 
-      Selecteer **[!UICONTROL Event date]** met de **[!UICONTROL greater than or equal to]** exploitant. Selecteer de waarde **[!UICONTROL DaysAgo (7)]**. Klik hiertoe op **[!UICONTROL Edit expression]** in het veld **[!UICONTROL Value]**. Selecteer **[!UICONTROL Formula type]** en **[!UICONTROL Current date minus n days]** in het venster &lt;a0/> en geef &quot;7&quot; als een waarde.**[!UICONTROL Process on dates]**
+      Selecteer **[!UICONTROL Event date]** met de **[!UICONTROL greater than or equal to]** exploitant. Selecteer de waarde **[!UICONTROL DaysAgo (7)]**. Klik hiertoe op **[!UICONTROL Edit expression]** in het veld **[!UICONTROL Value]**. Selecteer **[!UICONTROL Formula type]** en **[!UICONTROL Current date minus n days]** in het venster **[!UICONTROL Process on dates]** en geef &quot;7&quot; als een waarde.
 
       ![](assets/query_editor_nveau_37.png)
 
