@@ -34,7 +34,7 @@ Hier willen wij een vraag met een **[!UICONTROL Enumerations]** type berekend ge
 Voer de volgende stappen uit:
 
 1. Open de Algemene vraagredacteur en selecteer de Ontvangerlijst (**[!UICONTROL nms:recipient]**).
-1. Selecteer **[!UICONTROL Data to extract]**, **[!UICONTROL First name]** en **[!UICONTROL Gender]** in het venster &lt;a0/>.**[!UICONTROL Last name]**
+1. Selecteer **[!UICONTROL Data to extract]**, **[!UICONTROL First name]** en **[!UICONTROL Gender]** in het venster **[!UICONTROL Last name]**.
 
    ![](assets/query_editor_nveau_73.png)
 
