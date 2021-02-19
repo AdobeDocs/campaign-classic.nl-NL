@@ -272,7 +272,7 @@ De vooraf gedefinieerde filters zijn:
   </tr> 
   <tr> 
  <td> Op de lijst met ongewenste personen staan e-mailadres<br /> </td> 
-    <td> Hiermee selecteert u ontvangers waarvan het e-mailadres zich op de lijst van afgewezen personen bevindt.<br/> </td>
+    <td> Hiermee selecteert u ontvangers waarvan het e-mailadres zich op de lijst van gewezen personen bevindt.<br/> </td>
   </tr> 
   <tr> 
    <td> Gegarandeerd e-mailadres<br /> </td> 
@@ -365,7 +365,7 @@ Klik op het tabblad **[!UICONTROL Settings]** voor toegang tot de volgende optie
 
 * **[!UICONTROL Default filter for the associated document type]**: met deze optie kunt u dit filter standaard voorstellen in de editor van de lijsten waarop de sortering betrekking heeft.
 
-   Het filter **[!UICONTROL By name or login]** wordt bijvoorbeeld toegepast op operatoren. Deze optie is geselecteerd en het filter wordt daarom altijd aangeboden in alle operatorlijsten.
+   Het filter **[!UICONTROL By name or login]** wordt bijvoorbeeld toegepast op operatoren. Deze optie is geselecteerd en het filter wordt dus altijd aangeboden in alle operatorlijsten.
 
 * **[!UICONTROL Filter shared with other operators]**: Met deze optie kunt u het filter beschikbaar maken voor alle andere operatoren in de huidige database.
 * **[!UICONTROL Use parameter entry form]**: Met deze optie kunt u de filtervelden definiëren die boven de lijst worden weergegeven wanneer dit filter wordt geselecteerd. Met deze velden kunt u de filterinstellingen definiëren. Dit formulier moet worden ingevoerd in XML-indeling via de knop **[!UICONTROL Form]**. Het vooraf geconfigureerde filter **[!UICONTROL Recipients who have opened]**, dat beschikbaar is in de lijst met ontvangers, geeft bijvoorbeeld een filterveld weer waarmee u de levering kunt selecteren waarop het filter is gericht.
