@@ -159,7 +159,7 @@ Dit rapport bevat alle belangrijke informatie over de levering.
 Deze sectie heeft twee indicatoren:
 
 * **[!UICONTROL Initial population]** : Het totale aantal ontvangers waarop de levering betrekking heeft.
-* **[!UICONTROL Messages rejected by the rule]** : Aantal adressen genegeerd tijdens de analyse wanneer het toepassen van typologieregels: het adres ontbreekt, quarantined, op lijst van afgewezen personen, enz. Raadpleeg deze [pagina](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) voor meer informatie over typologische regels.
+* **[!UICONTROL Messages rejected by the rule]** : Aantal adressen genegeerd tijdens de analyse wanneer het toepassen van typologieregels: het adres ontbreekt, quarantined, op lijst van gewezen personen, enz. Raadpleeg deze [pagina](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) voor meer informatie over typologische regels.
 
 **[!UICONTROL Causes of exclusion]**
 
