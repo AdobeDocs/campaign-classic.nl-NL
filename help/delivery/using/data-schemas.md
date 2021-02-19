@@ -152,7 +152,7 @@ Het **ref** attribuut op het element waarnaar moet worden verwezen moet met de w
 
 De hoofdstukstructuur wordt verplaatst naar het element met de naam &quot;sectie&quot; buiten het hoofdelement. Het hoofdstuk en de sectie verwijzen naar het element &quot;section&quot;.
 
-## Tekenreeks {#compute-string} berekenen
+## Compute string {#compute-string}
 
 Een **Berekende tekenreeks** is een XPath-expressie die wordt gebruikt om een tekenreeks samen te stellen die een inhoudsinstantie vertegenwoordigt.
 
