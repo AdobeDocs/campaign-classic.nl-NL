@@ -38,7 +38,7 @@ Om u te helpen bij het instellen van onderhoudsplannen, worden in deze sectie en
     ORDER BY 3 DESC, 1, 2 DESC;
    ```
 
-1. Als u de volgende opdracht uitvoert, kunt u grote tabellen en indexen steunken:
+1. Als u de volgende opdracht uitvoert, kunt u grote tabellen en indexen tekenen:
 
    ```
    select * from uvSpace;
