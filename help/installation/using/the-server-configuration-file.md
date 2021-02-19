@@ -581,7 +581,7 @@ Voor extra informatie, verwijs naar [Beperkend geoorloofde externe bevelen](../.
 
 ## htmlToPdf {#htmltopdf}
 
-Hier volgen de verschillende parameters van het knooppunt **htmlToPdf**. Dit is de configuratie van de service voor het converteren van webpagina&#39;s naar PDF-documenten.
+Hier volgen de verschillende parameters van het **htmlToPdf**-knooppunt. Dit is de configuratie van de service voor het converteren van webpagina&#39;s naar PDF-documenten.
 
 <table> 
  <thead> 
@@ -685,7 +685,7 @@ Hier zijn de verschillende parameters van de **mailExchanger** knoop. Dit is de 
  <tbody> 
   <tr> 
    <td> mxAddress<br /> </td> 
-   <td> SMTP-server: IP adres van server SMTP voor de overdracht van e-mail.<br /> </td> 
+   <td> SMTP-server: IP adres van server SMTP voor de overdracht van e-mails.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2085,7 +2085,7 @@ Hier zijn de verschillende parameters van **pipelined** knoop. Dit is de configu
   </tr> 
   <tr> 
    <td> retryValiditySec<br /> </td> 
-   <td> Na deze periode vervalt: de gebeurtenis laten vallen als de verwerking na deze periode nog ontbreekt.<br /> </td> 
+   <td> Na deze periode vervalt: De gebeurtenis beëindigen als de verwerking na deze periode nog steeds mislukt.<br /> </td> 
    <td> Long<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
@@ -3075,7 +3075,7 @@ Raadpleeg [Dynamische paginabeveiliging en -relays](../../installation/using/con
   </tr> 
   <tr> 
    <td> status<br /> </td> 
-   <td> Synchronisatiestatus van een openbare bron (opsomming). Mogelijke waarden zijn 'normal' (normal execute), 'blacklist' (url added to lijst van afgewezen personen in case of error 404) en 'reserve' (file upload on reserve server if existing).<br /> </td> 
+   <td> Synchronisatiestatus van een openbare bron (opsomming). Mogelijke waarden zijn 'normal' (normal execute), 'blacklist' (url added to lijst van gewezen personen in case of error 404) en 'reserve' (file upload on reserve server if existing).<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> normal<br /> </td> 
   </tr> 
