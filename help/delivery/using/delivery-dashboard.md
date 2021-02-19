@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Delivery dashboard
+title: Leveringsdashboard
 description: Meer informatie over hoe u het dashboard voor levering kunt gebruiken om uw leveringen te controleren.
 audience: delivery
 content-type: reference
@@ -15,7 +15,7 @@ ht-degree: 4%
 ---
 
 
-# Delivery dashboard {#delivery-dashboard}
+# Leveringsdashboard {#delivery-dashboard}
 
 Het **leveringsdashboard** is van essentieel belang om uw leveringen en eventuele problemen te controleren die tijdens het verzenden van berichten worden ondervonden.
 
