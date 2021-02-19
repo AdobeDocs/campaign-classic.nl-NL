@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Aan de slag met het importeren en exporteren van gegevens
+title: Aan de slag met het importeren en exporteren van data
 description: Meer informatie over het importeren en exporteren van gegevens in Campaign Classic.
 audience: platform
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 37cc6cd8b71ec82cd4e6a910d6664a51ed5c091e
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 6%
+ht-degree: 12%
 
 ---
 
 
-# Aan de slag met het importeren en exporteren van gegevens {#get-started-data-import-export}
+# Aan de slag met het importeren en exporteren van data {#get-started-data-import-export}
 
 Adobe Campaign Classic biedt mogelijkheden voor gegevensbeheer waarmee u gegevens kunt importeren en exporteren. Deze bewerkingen kunnen worden uitgevoerd met behulp van workflows of generieke import en export.
 
@@ -59,7 +59,7 @@ Raadpleeg deze secties voor meer informatie hierover:
 * [Een bestand ontsleutelen of ontsleutelen](../../platform/using/unzip-decrypt.md)
 * [Een bestand zoeken of versleutelen](../../platform/using/zip-encrypt.md)
 
-## Aanbevolen procedures en problemen oplossen {#best-practices-troubleshooting}
+## Best practices en probleemoplossing {#best-practices-troubleshooting}
 
 <img src="assets/do-not-localize/icon_bestpractices.svg" width="60px">
 
