@@ -57,7 +57,7 @@ Er zijn twee methoden om een bestaand schema uit te breiden:
    </schema>
    ```
 
-   Het **afhankelijkSchemas** attribuut op het wortelelement van het schema verwijzingen de gebiedsdelen op de uitbreidingsschema&#39;s.
+   Het **AfhankelijkSchemas** attribuut op het wortelelement van het schema verwijzingen de gebiedsdelen op de uitbreidingsschema&#39;s.
 
    Het **behoortTo** attribuut op het gebied vult in het schema waar het wordt verklaard.
 
