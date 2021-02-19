@@ -82,7 +82,7 @@ Wanneer u het voorstel selecteert, is de waarde van het **[!UICONTROL view]** at
 * &quot;rendering/html&quot;: html-rendering. De HTML-renderfunctie wordt gebruikt.
 * &quot;aanbieding/weergave/html&quot;: html-inhoud. De klasse maakt geen gebruik van de HTML-renderfunctie. Het bevat alleen het HTML-veld.
 
-Wanneer u meerdere aanbiedingsruimten opneemt in één e-mailbestelling en sommige daarvan renderingfuncties hebben en andere niet, moet u onthouden welke functies ruimtes bieden en welke ruimten renderfuncties bieden.
+Wanneer u meerdere aanbiedingsruimten opneemt in één e-mailbestelling en sommige daarvan renderingfuncties hebben en andere niet, moet u onthouden welke functies spaties bieden en welke ruimten renderfuncties bieden.
 
 Daarom wordt u aangeraden voor alle aanbiedingsruimten een HTML-renderfunctie te definiëren, zelfs als uw aanbiedingsruimte alleen HTML-inhoud vereist.
 
