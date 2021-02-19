@@ -272,7 +272,7 @@ De stappen zijn als volgt:
    * Voor Linux: [Integratie in een webserver voor Linux](../../installation/using/integration-into-a-web-server-for-linux.md),
    * Voor Windows: [Integratie in een server van het Web voor Vensters](../../installation/using/integration-into-a-web-server-for-windows.md).
 
-1. Kopieer **config-demo.xml** en **serverConf.xml** dossiers die tijdens installatie worden gecreeerd. Activeer in het **config-demo.xml**-bestand het **trackinglogd**-proces en deactiveer de **mta**-, **inmail**-, **wfserver**- en **stat&lt;a1/>-processen.**
+1. Kopieer **config-demo.xml** en **serverConf.xml** dossiers die tijdens installatie worden gecreeerd. Activeer in het **config-demo.xml**-bestand het **trackinglogd**-proces en deactiveer de **mta**-, **inmail**-, **wfserver**- en **stat**-processen.
 1. Bewerk het bestand **serverConf.xml** en vul de redundante trackingservers in de parameters van de omleiding:
 
    ```
