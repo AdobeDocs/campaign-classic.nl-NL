@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Personalisatiedata{#personalization-data}
 
-Het is mogelijk om gegevens in het berichtmalplaatje te gebruiken om transactionele berichtverpersoonlijking te testen. Deze functie wordt gebruikt om een voorvertoning te genereren of een proefdruk te verzenden. Als u de **Deliverability** module installeert, staat dit gegeven u toe om een teruggave van de berichten voor diverse leveranciers van de internettoegang (**Inbox teruggeven**: Zie [deze sectie](../../delivery/using/inbox-rendering.md)) voor meer informatie hierover.
+Het is mogelijk om gegevens in het berichtmalplaatje te gebruiken om transactionele berichtverpersoonlijking te testen. Deze functie wordt gebruikt om een voorvertoning te genereren of een proefdruk te verzenden. Als u de **Deliverability** module installeert, staat dit gegeven u toe om een teruggave van de berichten voor diverse dienstverleners van de Internet toegang (**Inbox teruggeven** te tonen: Zie [deze sectie](../../delivery/using/inbox-rendering.md)) voor meer informatie hierover.
 
 Het doel van deze gegevens is om uw berichten vóór hun definitieve levering te testen. Deze berichten vallen niet samen met werkelijke gegevens die door Message Center moeten worden verwerkt. De XML-structuur moet echter gelijk zijn aan die van de gebeurtenis die in de uitvoeringsinstantie is opgeslagen, zoals hieronder wordt weergegeven.
 
