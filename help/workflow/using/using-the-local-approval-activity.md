@@ -150,7 +150,7 @@ De volgende velden moeten worden ingevuld:
 1. Selecteer in de sectie **[!UICONTROL Notification]** de leveringssjabloon en het onderwerp dat voor de e-mailmelding moet worden gebruikt. Hier hebben we de standaardsjabloon gekozen: **[!UICONTROL Local approval notification]**.
 1. In **[!UICONTROL Approval schedule]** sectie, hebben wij de standaardgoedkeuringstermijn (3 dagen) behouden en een herinnering toegevoegd. De levering duurt 3 dagen na de aanvang van de goedkeuring. Zodra de goedkeuringsdeadline is bereikt, worden de ontvangers die niet zijn goedgekeurd niet in aanmerking genomen door zich te richten.
 
-Het meldingsbericht dat de activiteit **[!UICONTROL Local approval]** aan lokale toezichthouders heeft verzonden is als volgt:
+Het e-mailbericht dat de activiteit **[!UICONTROL Local approval]** aan lokale toezichthouders verzendt is als volgt:
 
 ![](assets/local_validation_intro_2.png)
 
