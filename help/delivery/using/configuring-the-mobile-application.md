@@ -143,7 +143,7 @@ U moet nu een nieuwe levering maken en deze koppelen aan de mobiele toepassing d
 
    ![](assets/nmac_ios_9.png)
 
-1. Selecteer **[!UICONTROL Target type]** in het venster &lt;a0/> en klik **[!UICONTROL Next]**.**[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**
+1. Selecteer **[!UICONTROL Target type]** in het venster **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** en klik **[!UICONTROL Next]**.
 
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Service]** de eerder gemaakte service, selecteer vervolgens de toepassing die u als doel wilt instellen en klik op **[!UICONTROL Finish]**.
 **[!UICONTROL Application variables]** worden automatisch toegevoegd afhankelijk van wat tijdens de configuratiestappen werd toegevoegd.
