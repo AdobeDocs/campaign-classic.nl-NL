@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 2aa1a1c5da7b552cae916885c011aa4aaf9b61db
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 7%
@@ -158,6 +158,6 @@ Om van buitenaf toegankelijk te zijn, moeten de beelden die in e-mail en openbar
 
 Adobe raadt u aan een voorbeeld van uw bericht te bekijken om na te gaan wat de personalisatie is en hoe de ontvangers uw bericht zullen bekijken.
 
-* In het bezorgingsbericht kunt u met het subtabblad **[!UICONTROL Preview]** de rendering van elke inhoud voor een ontvanger weergeven. De verpersoonlijkingsgebieden en de voorwaardelijke elementen van inhoud worden vervangen met de overeenkomstige informatie voor het geselecteerde profiel. [Meer informatie](../../delivery/using/defining-the-email-content.md#message-content)
+* In de leveringstovenaar, laat **[!UICONTROL Preview]** subtab u de teruggave van elke inhoud voor een ontvanger bekijken. De verpersoonlijkingsgebieden en de voorwaardelijke elementen van inhoud worden vervangen met de overeenkomstige informatie voor het geselecteerde profiel. [Meer informatie](../../delivery/using/defining-the-email-content.md#message-content)
 
 * Tijdens elke voorvertoning wordt een automatische controle op anti-spam uitgevoerd. Schakel in het subtabblad **[!UICONTROL Preview]** de spamscoring [SpamAssassin](../../delivery/using/spamassassin.md) in.  Klik **[!UICONTROL More...]** om meer over de waarschuwing te weten te komen.  Controleer voordat u dit doet of SpamAssassin op de juiste wijze is geïnstalleerd en geconfigureerd op de Adobe Campaign-toepassingsserver. [Meer informatie](../../installation/using/configuring-spamassassin.md)
