@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 0%
+source-wordcount: '1166'
+ht-degree: 2%
 
 ---
 
@@ -50,7 +50,6 @@ Als u alle bestanden wilt vervangen door de nieuwe versie, moet u alle instantie
       **iisreset /stop**
 
    * Adobe Campaign-service: **net stop nlserver6**
-
    >[!IMPORTANT]
    >
    >U moet ook ervoor zorgen dat de omleidingsserver (webmdl) wordt tegengehouden, zodat het **nlsrvmod.dll** dossier dat door IIS wordt gebruikt met de nieuwe versie kan worden vervangen.
@@ -71,7 +70,7 @@ Voer de volgende stappen uit om het upgradebestand uit te voeren:
 
 1. Voer **setup.exe** uit.
 
-   Als u dit bestand wilt downloaden, maakt u via uw gebruikersgegevens verbinding met het [portal voor softwaredistributie](https://experience.adobe.com/downloads). Meer informatie over softwaredistributie vindt u op [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+   Als u dit bestand wilt downloaden, maakt u via uw gebruikersgegevens verbinding met het [portal voor softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). Meer informatie over softwaredistributie vindt u op [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 1. Selecteer de installatiemodus: kies **[!UICONTROL Update or repair]**
 1. Klik op **[!UICONTROL Next]** .
@@ -81,7 +80,7 @@ Voer de volgende stappen uit om het upgradebestand uit te voeren:
 
 1. Wanneer de bewerking is voltooid, klikt u op **[!UICONTROL Finish]**.
 
-### Bronnensynchroniseren {#synchronize-resources}
+### Bronnen {#synchronize-resources} synchroniseren
 
 Gebruik de volgende opdrachtregel:
 
@@ -99,7 +98,7 @@ Op deze manier kunt u de volgende bewerkingen uitvoeren:
 
 Controleer vervolgens of de synchronisatie fouten of waarschuwingen heeft gegenereerd. Voor meer op dit, verwijs naar [Het oplossen van verbeteringsconflicten](#resolving-upgrade-conflicts).
 
-### Servicesopnieuw starten {#restart-services}
+### Services {#restart-services} opnieuw starten
 
 De volgende diensten moeten opnieuw worden opgestart:
 
@@ -125,7 +124,7 @@ Zie [deze sectie](../../installation/using/client-console-availability-for-linux
 
 ### Updates ophalen {#obtain-updated-packages}
 
-Begin door beide bijgewerkte pakketten van Adobe Campaign te herstellen: Maak verbinding met de [portal Softwaredistributie](https://experience.adobe.com/downloads) met behulp van uw gebruikersgegevens. Meer informatie over softwaredistributie vindt u op [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+Begin door beide bijgewerkte pakketten van Adobe Campaign te herstellen: Maak verbinding met de [portal Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) met behulp van uw gebruikersgegevens. Meer informatie over softwaredistributie vindt u op [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 Het bestand is **nlserver6-v7-XXX.rpm**
 
@@ -159,7 +158,7 @@ Het bestand is **nlserver6-v7-XXX.rpm**
 >
 >De volledige installatieprocedures worden beschreven in [deze sectie](../../installation/using/installing-campaign-standard-packages.md). De middelen worden automatisch gesynchroniseerd, nochtans moet u ervoor zorgen geen fouten voorkwamen. Voor meer op dit, verwijs naar [Het oplossen van verbeteringsconflicten](#resolving-upgrade-conflicts).
 
-### De webserveropnieuw opstarten {#reboot-the-web-server}
+### De webserver {#reboot-the-web-server} opnieuw opstarten
 
 U moet Apache afsluiten voordat de nieuwe bibliotheek van toepassing wordt.
 
@@ -173,8 +172,10 @@ Hiervoor voert u de volgende opdracht uit:
 >
 >* Uw script kan **httpd** worden genoemd in plaats van **apache**.
 >* U MOET dit bevel uitvoeren tot u het volgende antwoord verkrijgt:
->
->   Deze bewerking is vereist om Apache de nieuwe bibliotheek te laten toepassen.
+
+   >
+   >   
+   Deze bewerking is vereist om Apache de nieuwe bibliotheek te laten toepassen.
 
 
 Start vervolgens Apache opnieuw:
@@ -187,7 +188,7 @@ Start vervolgens Apache opnieuw:
 
 Tijdens middelsynchronisatie, laat **postupgrade** bevel u toe om te ontdekken of de synchronisatie fouten of waarschuwingen heeft geproduceerd.
 
-### Het synchronisatieresultaatweergeven {#view-the-synchronization-result}
+### Het synchronisatieresultaat {#view-the-synchronization-result} weergeven
 
 Er zijn twee manieren om het synchronisatieresultaat weer te geven:
 
