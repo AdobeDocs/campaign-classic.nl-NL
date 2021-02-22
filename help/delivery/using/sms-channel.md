@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 2aa1a1c5da7b552cae916885c011aa4aaf9b61db
 workflow-type: tm+mt
-source-wordcount: '3149'
+source-wordcount: '3148'
 ht-degree: 20%
 
 ---
@@ -33,7 +33,7 @@ Als u naar een mobiele telefoon wilt verzenden, hebt u het volgende nodig:
 
 1. Een externe account die een connector en type bericht opgeeft.
 
-   Merk op dat de volgende schakelaars vanaf versie 20.2 zullen worden afgekeurd: NetSize, Generic SMPP (SMPP versie 3.4 die binaire wijze steunt), Sybase365 (SAP SMS 365), CLX Mededelingen, Tele2, O2 en iOS. Verouderde mogelijkheden zijn nog steeds beschikbaar, maar deze worden niet verder verbeterd en worden niet ondersteund. Raadpleeg [deze pagina](https://helpx.adobe.com/nl/campaign/kb/deprecated-and-removed-features.html) voor meer informatie.
+   Merk op dat de volgende schakelaars vanaf versie 20.2 zullen worden afgekeurd: Generic SMPP (SMPP versie 3.4 die binaire wijze steunt), Sybase365 (SAP SMS 365), CLX Mededelingen, Tele2, O2 en iOS. Verouderde mogelijkheden zijn nog steeds beschikbaar, maar deze worden niet verder verbeterd en worden niet ondersteund. Raadpleeg [deze pagina](https://helpx.adobe.com/nl/campaign/kb/deprecated-and-removed-features.html) voor meer informatie.
 
 1. Een leveringssjabloon waarin naar deze externe account wordt verwezen.
 
