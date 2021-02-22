@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
 workflow-type: tm+mt
-source-wordcount: '2799'
+source-wordcount: '2605'
 ht-degree: 14%
 
 ---
@@ -70,7 +70,7 @@ Voor elk adres is de volgende informatie beschikbaar:
 >De toename van het aantal quarantines is een normaal effect dat gerelateerd is aan de &quot;slijtage&quot; van de database. Als de levensduur van een e-mailadres bijvoorbeeld wordt beschouwd als drie jaar en de tabel met ontvangers elk jaar met 50% toeneemt, kan de toename van quarantaine als volgt worden berekend:
 >
 >Einde van jaar 1: (1*0,33)/(1+0,5)=22%.
->Einde van jaar 2: ((1,22*0,33)+0,33)/(1,5+0,75)=32,5%.
+Einde van jaar 2: ((1,22*0,33)+0,33)/(1,5+0,75)=32,5%.
 
 ### Het identificeren van quarantined adressen in leveringsrapporten {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -113,8 +113,7 @@ De adressen worden automatisch verwijderd uit de quarantainelijst in de volgende
 Hun status verandert dan in **[!UICONTROL Valid]**.
 
 >[!IMPORTANT]
->
->Ontvangers met een adres in de status **[!UICONTROL Quarantine]** of **[!UICONTROL On denylist]** worden nooit verwijderd, zelfs niet als ze een e-mail ontvangen.
+Ontvangers met een adres in de status **[!UICONTROL Quarantine]** of **[!UICONTROL On denylist]** worden nooit verwijderd, zelfs niet als ze een e-mail ontvangen.
 
 U kunt het aantal fouten en de periode tussen twee fouten wijzigen. Om dit te doen, verander de overeenkomstige montages in de plaatsingstovenaar (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**). Raadpleeg [deze sectie](../../installation/using/deploying-an-instance.md) voor meer informatie over de implementatietovenaar.
 
@@ -150,24 +149,7 @@ De items die in quarantaine worden geplaatst, zijn apparaattokens.
 
 ### iOS-quarantaine {#ios-quarantine}
 
-**Voor iOS - binaire connector**
-
->[!NOTE]
->
->Vanaf Campaign versie 20.3 is de verouderde binaire iOS-connector van iOS afgeschaft. Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. [Meer informatie](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
-
-Voor elk bericht ontvangt Adobe Campaign de synchrone en asynchrone fouten van de APNs-server. Bij de volgende synchrone fouten genereert Adobe Campaign schermfouten:
-
-* Problemen met de lengte van de lading: niet opnieuw proberen, is de mislukkingsreden **[!UICONTROL Unreachable]**.
-* Problemen met certificaatvervaldatum: niet opnieuw proberen, is de mislukkingsreden **[!UICONTROL Unreachable]**.
-* Verbinding verloren tijdens levering: opnieuw uitgevoerd, is de mislukkingsreden **[!UICONTROL Unreachable]**.
-* Uitgave serviceconfiguratie (ongeldig certificaat, ongeldig certificaatwachtwoord, geen certificaat): niet opnieuw proberen, is de mislukkingsreden **[!UICONTROL Unreachable]**.
-
-De APNs-server meldt Adobe Campaign asynchroon dat een apparaattoken niet is geregistreerd (wanneer de mobiele toepassing door de gebruiker is verwijderd). De **[!UICONTROL mobileAppOptOutMgt]** werkschema loopt om de 6 uur om APNs te contacteren terugkoppelt diensten om de **AppSubscriptionRcp** lijst bij te werken. Voor alle gedeactiveerde tokens, wordt het gebied **Disabled** geplaatst aan **True** en het abonnement verbonden aan dat apparatenteken zal automatisch van toekomstige leveringen worden uitgesloten.
-
-**Voor iOS - HTTP/V2-connector**
-
-Met het HTTP/V2-protocol kunt u rechtstreeks feedback geven en de status van elke push-levering bepalen. Als de HTTP/V2 protocolschakelaar wordt gebruikt, koppelt de dienst niet meer door **[!UICONTROL mobileAppOptOutMgt]** werkschema wordt geroepen. De niet-geregistreerde tokens worden verschillend afgehandeld tussen de binaire iOS-connector en de iOS HTTP/V2-connector. Een token wordt als niet-geregistreerd beschouwd wanneer een mobiele toepassing wordt verwijderd of opnieuw wordt geïnstalleerd.
+Met het HTTP/V2-protocol kunt u rechtstreeks feedback geven en de status van elke push-levering bepalen. Als de HTTP/V2 protocolschakelaar wordt gebruikt, koppelt de dienst niet meer door **[!UICONTROL mobileAppOptOutMgt]** werkschema wordt geroepen. Een token wordt als niet-geregistreerd beschouwd wanneer een mobiele toepassing wordt verwijderd of opnieuw wordt geïnstalleerd.
 
 Synchroon, als APNs een &quot;unregistered&quot;status voor een bericht terugkeert, zal het doelteken onmiddellijk in quarantaine worden geplaatst.
 
@@ -271,11 +253,10 @@ De **[!UICONTROL mobileAppOptOutMgt]** werkschema loopt om de 6 uur om de **AppS
 Tijdens de leveringsanalyse, worden alle apparaten die van het doel worden uitgesloten automatisch toegevoegd aan **excludeLogAppSubRcp** lijst.
 
 >[!NOTE]
->
->Voor klanten die de schakelaar Baidu gebruiken, zijn hier de verschillende soorten fouten:
->* Verbindingsprobleem aan het begin van de levering: type fout **[!UICONTROL Undefined]**, reden van mislukking **[!UICONTROL Unreachable]**, wordt opnieuw uitgevoerd.
->* Verbinding verloren tijdens een levering: soft error, failure reason **[!UICONTROL Refused]**, re try wordt uitgevoerd.
->* Synchrone fout die door Baidu tijdens het verzenden is geretourneerd: harde fout, mislukkingsreden **[!UICONTROL Refused]**, wordt niet opnieuw uitgevoerd.
+Voor klanten die de schakelaar Baidu gebruiken, zijn hier de verschillende soorten fouten:
+* Verbindingsprobleem aan het begin van de levering: type fout **[!UICONTROL Undefined]**, reden van mislukking **[!UICONTROL Unreachable]**, wordt opnieuw uitgevoerd.
+* Verbinding verloren tijdens een levering: soft error, failure reason **[!UICONTROL Refused]**, re try wordt uitgevoerd.
+* Synchrone fout die door Baidu tijdens het verzenden is geretourneerd: harde fout, mislukkingsreden **[!UICONTROL Refused]**, wordt niet opnieuw uitgevoerd.
 
 Adobe Campaign neemt om de 10 minuten contact op met de Baidu-server om de status van het verzonden bericht op te halen en werkt de weblogs bij. Als een bericht zoals verzonden wordt verklaard, wordt het statuut van het bericht in de uitzendingen geplaatst aan **[!UICONTROL Received]**. Als Baidu een fout declareert, wordt de status ingesteld op **[!UICONTROL Failed]**.
 
@@ -495,8 +476,7 @@ Android V2-quarantainemomechanisme gebruikt hetzelfde proces als Android V1. Het
 Het quarantainemechanisme voor SMS-berichten is over het algemeen hetzelfde als het algemene proces. Zie [Informatie over quarantines](#about-quarantines). De specifieke kenmerken voor SMS worden hieronder weergegeven.
 
 >[!NOTE]
->
->De tabel **[!UICONTROL Delivery log qualification]** is niet van toepassing op de **Extended generische SMPP**-connector.
+De tabel **[!UICONTROL Delivery log qualification]** is niet van toepassing op de **Extended generische SMPP**-connector.
 
 <table> 
  <tbody> 
@@ -554,9 +534,8 @@ De schakelaar SMPP wint gegevens van het bericht van SR (Status Report) terug da
 Voordat een nieuw type fout wordt gekwalificeerd, is de reden van de fout altijd ingesteld op **Geweigerd** standaard.
 
 >[!NOTE]
->
->De fouttypen en -redenen zijn gelijk aan die voor e-mailberichten. Zie [Typen leveringsfouten en redenen](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
->Vraag uw leverancier om een lijst van status en foutencodes om juiste mislukkingstypes en redenen voor mislukking in de de kwalificatielijst van het Logboek van de Levering te plaatsen.
+De fouttypen en -redenen zijn gelijk aan die voor e-mailberichten. Zie [Typen leveringsfouten en redenen](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Vraag uw leverancier om een lijst van status en foutencodes om juiste mislukkingstypes en redenen voor mislukking in de de kwalificatielijst van het Logboek van de Levering te plaatsen.
 
 Voorbeeld van een gegenereerd bericht:
 
