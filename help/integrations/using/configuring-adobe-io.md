@@ -2,15 +2,14 @@
 solution: Campaign Classic
 product: campaign
 title: Adobe I/O configureren voor Adobe Experience Cloud Triggers
-description: Leer hoe u Adobe I/O for Adobe Experience Cloud Triggers configureert
+description: Leer hoe u Adobe I/O voor Adobe Experience Cloud Triggers configureert
 audience: integrations
 content-type: reference
-topic-tags: adobe-experience-manager
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c5c881d6919a8715e6588fb39793f562a16873bb
+source-git-commit: 425b2e5748703a8349b6f70968d1ef4c71f72b21
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 6%
@@ -22,9 +21,9 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->Als u een oudere versie van de integratie van Triggers door Authentificatie Auth gebruikt, **moet u naar Adobe I/O bewegen zoals hieronder beschreven**. De oude oAuth-verificatiemodus wordt op 30 april 2021 buiten gebruik gesteld. [Meer informatie](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>Als u een oudere versie van de integratie van Trekkers door authentificatie Auth gebruikt, **moet u naar Adobe I/O bewegen zoals hieronder beschreven**. De oude oAuth-verificatiemodus wordt op 30 april 2021 buiten gebruik gesteld. [Meer informatie](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
->Houd er rekening mee dat tijdens deze overgang naar Adobe I/O bepaalde inkomende triggers verloren kunnen gaan.
+>Houd er rekening mee dat tijdens deze overgang naar Adobe I/O enkele inkomende triggers verloren kunnen gaan.
 
 ## Vereisten {#adobe-io-prerequisites}
 
@@ -35,7 +34,7 @@ Controleer voordat u met deze implementatie begint of:
 * een geldige **Organisatie-id**: de identificatiecode van de Identity Management System (IMS)-organisatie is de unieke identificatie binnen de Adobe Experience Cloud, die bijvoorbeeld wordt gebruikt voor de VisitorID-service en de IMS Single-Sign On (SSO). [Meer informatie](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
 * a **Toegang voor ontwikkelaars** tot uw organisatie.  Als u om de voorrechten van de Beheerder van het Systeem van IMS Org moet verzoeken, volg de procedure [op deze pagina](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) om deze toegang voor alle Profielen van het Product te verlenen.
 
-## Stap 1: Adobe I/O-project {#creating-adobe-io-project} maken/bijwerken
+## Stap 1: Adobe I/O-project maken/bijwerken {#creating-adobe-io-project}
 
 1. Open Adobe I/O en meld u aan met de System Administrator-rechten voor de IMS-organisatie.
 
@@ -47,7 +46,7 @@ Controleer voordat u met deze implementatie begint of:
 
    >[!NOTE]
    >
-   >Als uw client-id leeg is, kunt u deze direct **[!UICONTROL Create a New project]** in Adobe I/O gebruiken.
+   >Als uw client-id leeg is, kunt u direct **[!UICONTROL Create a New project]** in Adobe I/O.
 
 1. Identificeer het bestaande project gebruikend het gehaalde cliëntherkenningsteken. Zoek naar bestaande projecten met het zelfde cliëntherkenningsteken zoals die in vorige stap wordt gehaald.
 
@@ -87,7 +86,7 @@ Controleer voordat u met deze implementatie begint of:
 
 >[!CAUTION]
 >
->Adobe I/O-certificaat verloopt na twaalf maanden. Je moet elk jaar een nieuw sleutelpaar genereren.
+>Adobe I/O certificaat verloopt na twaalf maanden. Je moet elk jaar een nieuw sleutelpaar genereren.
 
 ## Stap 2: Voeg de projectgeloofsbrieven in Adobe Campaign {#add-credentials-campaign} toe
 
@@ -103,7 +102,7 @@ nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_
 
 ## Stap 3: Door buizen uitgelijnde tag {#update-pipelined-tag} bijwerken
 
-Als u de tag [!DNL pipelined] wilt bijwerken, moet u het verificatietype bijwerken naar het Adobe I/O-project in het configuratiebestand **config-&lt; instance-name >.xml** als volgt:
+Als u [!DNL pipelined]-tag wilt bijwerken, moet u het verificatietype bijwerken naar een Adobe I/O-project in het configuratiebestand **config-&lt; instance-name >.xml** als volgt:
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
