@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 14%
@@ -24,8 +24,9 @@ _23 december 2020_
 >[!CAUTION]
 >
 > * Deze versie wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **31 maart 2021** verbinding te kunnen maken met Campaign.
->
-> * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
+   >
+   > 
+* Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
 
 
 
@@ -118,7 +119,7 @@ _2 december 2019_
 * Geheugenverbruik optimaliseren voor pushmeldingen.
 * Voor optimalisatie van prestaties en opslag is de verwerking van het bestand **logins.log** verbeterd. Het bestand wordt nu in meerdere bestanden gesplitst, elke dag met maximaal 365 bestanden. [Meer informatie](../../production/using/log-files.md)
 * De externe rekening van CRM van de Dynamica van Microsoft kan nu worden gevormd gebruikend wachtwoordgeloofsbrieven (wachtwoord + gebruikersbenaming) of certificaat (privé sleutel). [Meer informatie](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
-* Er zijn enkele verbeteringen toegevoegd aan de Hadoop FDA-aansluiting om de betrouwbaarheid te verbeteren
+* Sommige verbeteringen zijn toegevoegd aan de Hadoop FDA-aansluiting om de betrouwbaarheid te verbeteren
 * Er is een specifieke hulplijn toegevoegd om schijfruimte te controleren voordat u openbare bronnen op de server kunt uploaden.
 * Nieuwe [Campagneopties](../../installation/using/configuring-campaign-options.md) zijn toegevoegd:
    * Met de configuratieoptie **WdbcKillSessionPolicy** kunt u het gedrag **Onvoorwaardelijk Stoppen** op alle workflows en PostSQL-databasequery&#39;s beïnvloeden.
@@ -147,7 +148,7 @@ De build 1.0.26 van de iOS SDK is nu beschikbaar. In deze nieuwe build hebben we
 
 * Probleem verholpen waarbij het programma vastloopt als het veld **Gekoppelde tabel toevoegen** leeg was in de werkstroomactiviteit **Gegevens laden (RDBMS)**. (NEO-12213)
 * Probleem verholpen dat ertoe kon leiden dat bepaalde berichten niet werden verwerkt door de server voor middeluitgaven. (NEO-12395)
-* Probleem verholpen in de workflow voor het opschonen van databases bij gebruik van de optie voor het weergeven van query&#39;s met Teradata. (NEO-12399)
+* Probleem verholpen in de workflow voor het opschonen van databases bij gebruik van de optie voor het binden van query&#39;s met Teradata. (NEO-12399)
 * Probleem opgelost dat invloed had op de leveringsanalyse met typologieregel, waaronder ne.jp domain. (NEO-12609)
 * Probleem verholpen met betrekking tot SMS over TLS-updates die een restrictiever certificaatbeleid impliceerden. Deze updates kunnen leiden tot een verbindingsfout tussen marketing- en midsourcingservers in het geval van een verouderd certificaat. (NEO-17698)
 * Probleem verholpen bij het gebruik van de knop **Verbinding testen** op een externe account in een omgeving voor midsourcing met Vault-verificatie. (NEO-12722)
@@ -173,6 +174,6 @@ De build 1.0.26 van de iOS SDK is nu beschikbaar. In deze nieuwe build hebben we
 * Probleem met time-out verholpen bij het importeren van gegevens uit een externe SFTP. (NEO-19723)
 * Probleem verholpen bij toegang tot voorspellende modellen. (NEO-19713)
 * Probleem verholpen dat invloed had op willekeurige sampling in **Split**-workflowactiviteit met Hadoop FDA-database. (NEO-16636)
-* Oplossing voor een regressie op Oracle waarbij sommige functies na de upgrade als ongeldig werden beschouwd. (NEO-12759)
+* Oplossing voor een regressie op het Oracle waardoor sommige functies na de upgrade als ongeldig werden beschouwd. (NEO-12759)
 
 
