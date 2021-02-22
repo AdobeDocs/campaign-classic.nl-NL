@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
-source-wordcount: '3947'
-ht-degree: 98%
+source-wordcount: '4045'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,19 @@ Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates
 
 Raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/using/latest-release.md) voor aan de release gerelateerde updates.
 
-## Februari 2021 {#feb-2021}
+## Februari 2021 {#release-21.1}
+
+**Documentatie-updates die worden geleverd bij de release 21.1**
+
+De nieuwe **e-mailfeedbackservice** mogelijkheid (persoonlijke bètaversie) wordt [hier](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service) gedocumenteerd.
+
+De sectie **Serverconfiguratiebestand** is bijgewerkt met de configuratieparameters die nodig zijn voor Campagne om verbinding te maken met een andere service met behulp van IMS. [Meer informatie](../../installation/using/the-server-configuration-file.md#ims)
+
+In de lijst met leveringsstatussen is de beschrijving voor **waarmee de dienstverlener rekening heeft gehouden** bijgewerkt: Deze status wordt nu ook gebruikt voor e-mailleveringen die worden verzonden via de [E-mailfeedbackservice](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service). [Meer informatie](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
+
+De sneltoetsen die beschikbaar zijn op het nieuwe aanmeldingsscherm om verbinding te maken met Adobe Campaign, worden nu beschreven. [Meer informatie](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
+
+**Overige updates**
 
 Er is een nieuwe sectie toegevoegd met gedetailleerde informatie over hoe u A/B-tests kunt uitvoeren met behulp van workflows. [Meer informatie](../../delivery/using/get-started-a-b-testing.md)
 
@@ -100,7 +112,7 @@ De compatibiliteitsmatrix is bijgewerkt. [Meer informatie](../../rn/using/compat
 De pagina met verouderde en verwijderde functies is bijgewerkt. [Meer informatie](../../rn/using/deprecated-features.md)
 
 Opmerkingen bij de release en de compatibiliteitsmatrix voor de Gold Standard-release zijn nu beschikbaar in een speciale sectie.
-[Meer informatie](../../rn/using/gold-standard.md#gs-10).
+[Meer informatie](../../rn/using/gold-standard.md#gs-11).
 
 De Triggers-integratie die oorspronkelijk was gebaseerd op de oAUTH-verificatieset-up voor toegang tot de pipeline, is nu gewijzigd en verplaatst naar Adobe I/O. [Meer informatie](../../integrations/using/configuring-adobe-io.md)
 
