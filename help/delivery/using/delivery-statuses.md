@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: de0e4555d3e2c5dff8d86a22ff4db85953105db1
+source-git-commit: 29801740c10dc182bdb5f00114298d04385a3e1b
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '617'
 ht-degree: 4%
 
 ---
@@ -69,7 +69,7 @@ Raadpleeg [deze pagina](../../delivery/using/understanding-delivery-failures.md)
   </tr> 
   <tr> 
    <td> In aanmerking genomen door de dienstverlener<br /> </td> 
-   <td> De dienstverlener van SMS ontving de levering.<br /> </td> 
+   <td> De SMS-serviceprovider heeft de levering ontvangen.<br /> Voor ontvangen of hybride installaties, als u aan  <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">Verbeterde MTA</a> hebt bevorderd, werd het bericht met succes van Campagne aan Verbeterde MTA afgelost.</td> 
   </tr> 
   <tr> 
    <td> Ontvangen op mobiel<br /> </td> 
@@ -129,7 +129,7 @@ Als uw levering niet wordt verzonden en zijn status **[!UICONTROL Pending]** bli
 
    In dit geval, controleer de configuratie van het verkeersbeheer (IP affiniteit) en gebruik **[!UICONTROL Managing affinities with IP addresses]** gebied om leveringen aan MTA te verbinden die de affiniteit beheert. Zie [deze sectie](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters) voor meer informatie over affiniteiten.
 
-* Wanneer te veel campagnes lopen, blijft de leveringsstatus in &quot;Hangende&quot;status.
+* Als er te veel campagnes worden uitgevoerd, blijft de status &quot;In behandeling&quot; behouden.
 
    De limiet van gelijktijdige campagnes wordt gedefinieerd in de optie **[!UICONTROL NmsOperation_LimitConcurrency]**. De standaardwaarde is 10.
 
