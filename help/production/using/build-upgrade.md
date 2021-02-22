@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
 source-wordcount: '2368'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -84,7 +84,7 @@ Alvorens de bouwstijlverbetering te beginnen, moeten de klanten op-gebouw de vol
 
 1. Krijg de recentste versie van uw [dossier van de serverconfiguratie](../../installation/using/the-server-configuration-file.md).
 
-1. Download de nieuwste build. [Meer weten over het Downloadcentrum](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)?
+1. [Download de nieuwste build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). [Meer informatie](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html).
 
 U moet ook alle [nuttige bevellijnen ](../../installation/using/command-lines.md) kennen alvorens een bouwstijlverbetering te beginnen:
 
@@ -163,7 +163,7 @@ Als u alle bestanden wilt vervangen door de nieuwe versie, moet u alle instantie
 
 ### De Adobe Campaign Server-toepassing upgraden
 
-1. Voer het bestand **Setup.exe** uit. Als u dit bestand moet downloaden, opent u [het Downloadcentrum](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html).
+1. Voer het bestand **Setup.exe** uit. Als u dit bestand moet downloaden, opent u [het Downloadcentrum](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html).
 
 1. Selecteer de installatiemodus: **Bijwerken** of **Herstellen**.
 
@@ -365,8 +365,8 @@ Er zijn verschillende soorten samenvoegingen:
 #### Waar vindt u de code?
 
 1. De ingebouwde code wordt opgeslagen in de dossiers van XML in de datakit omslag. Zoek het XML-bestand dat overeenkomt met het conflicterende object. Voorbeeld: installationDirectory\datakit\nms\fra\form\recipient.xml
-1. De originele versie ophalen: via het [Downloadcentrum](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html) of een andere niet-geüpgrade installatie van het product.
-1. De nieuwe versie ophalen: via het [Downloadcentrum](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html) of de geïnstalleerde bestanden van de klant.
+1. De originele versie ophalen: via het [Downloadcentrum](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) of een andere niet-geüpgrade installatie van het product.
+1. De nieuwe versie ophalen: via het [Downloadcentrum](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) of de geïnstalleerde bestanden van de klant.
 1. De aangepaste versie ophalen: Haal de broncode van het object op vanuit de campagneclient.
 
 ### Hoe maak je een diff?
