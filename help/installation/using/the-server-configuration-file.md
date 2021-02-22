@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: f39a84108c1f3327a469d5a230518652647ed63e
+source-git-commit: 2de8261feda6e64a84bd82e9fb71bc1fddf77113
 workflow-type: tm+mt
-source-wordcount: '7846'
+source-wordcount: '7929'
 ht-degree: 5%
 
 ---
@@ -32,6 +32,7 @@ De eerste parameters bevinden zich binnen de **shared** knoop. Deze zijn gerelat
 * [dnsConfig](#dnsconfig)
 * [exec](#exec)
 * [htmlToPdf](#htmltopdf)
+* [ims](#ims)
 * [javaScript](#javascript)
 * [mailExchanger](#mailexchanger)
 * [module](#module)
@@ -336,7 +337,7 @@ In **dataStore > dataSource > dbcnx** knoop, vorm de verbindingsmontages:
   </tr> 
   <tr> 
    <td> provider<br /> </td> 
-   <td> Type (opsomming). Mogelijke waarden zijn 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL, Greenplum), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (ODBC (Sybase, Sybase IQ)., 'Relay' (HTTP relay aan verre gegevensbestand).<br /> </td> 
+   <td> Type (opsomming). Mogelijke waarden zijn 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL, Greenplum), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (Sybase), Sybase IQ)), 'Relay' (HTTP relay aan verre gegevensbestand).<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> 'Oracle'<br /> </td> 
   </tr> 
@@ -637,6 +638,71 @@ Voorbeeld voor fantomjs:
 ```
 phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:{outPdf}' '-post:{postFile}' '-url:{originUrl}' -sessiontoken:{sessiontoken} -format:{format} -orientation:{orientation} -marginTop:{marginTop} -marginLeft:{marginLeft} -marginRight:{marginRight} -marginBottom:{marginBottom}
 ```
+
+## ims {#ims}
+
+Hier zijn de verschillende parameters van **ims** knoop. Dit is de configuratie voor Campagne die met een andere dienst gebruikend [IMS](../../integrations/using/about-adobe-id.md) verbindt.
+
+<table> 
+ <thead> 
+  <tr> 
+   <th> Parameter </th> 
+   <th> Beschrijving </th> 
+   <th> Type </th> 
+   <th> Standaardwaarde </th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td> authIMSClientId<br /> </td> 
+   <td> Client-id<br /> </td> 
+   <td> Tekenreeks<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSClientSecret<br /> </td> 
+   <td> Geheime sleutel (gecodeerd in AES)<br /> </td> 
+   <td> Tekenreeks<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSCode<br /> </td> 
+   <td> Autorisatiecode (gecodeerd in AES)<br /> </td> 
+   <td> Tekenreeks<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSEndpoint<br /> </td> 
+   <td> URL IMS-server<br /> </td> 
+   <td> Tekenreeks<br /> </td> 
+   <td> 'https://ims-na1.adobelogin.com'<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAClientId<br /> </td> 
+   <td> Client-id voor technische account<br /> </td> 
+   <td> Tekenreeks<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAClientSecret<br /> </td> 
+   <td> Technical Account Secret-sleutel (gecodeerd in AES)<br /> </td> 
+   <td> Tekenreeks<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAId<br /> </td> 
+   <td> Technische account-id<br /> </td> 
+   <td> Tekenreeks<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAPrivateKey<br /> </td> 
+   <td> Technical Account Private Key (gecodeerd in AES)<br /> </td> 
+   <td> Tekenreeks<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ## javaScript {#javascript}
 
