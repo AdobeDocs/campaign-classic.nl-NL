@@ -9,10 +9,10 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
+source-git-commit: 425b2e5748703a8349b6f70968d1ef4c71f72b21
 workflow-type: tm+mt
-source-wordcount: '1632'
-ht-degree: 99%
+source-wordcount: '1717'
+ht-degree: 94%
 
 ---
 
@@ -45,6 +45,14 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    <td><strong>Functie</strong></td>
    <td><strong>Vervanging</strong></td>
   </tr>
+    <tr>
+  <td>Technisch rapport over de aflevering<br></td>
+   <td><p>Vanaf de release van Campagne 21.1 is het rapport Technische aflevering van het Monitoring Report afgekeurd.</p>
+   <p>Indien nodig kunt u dit rapport dagelijks per e-mail ontvangen tot de datum waarop de functie is verwijderd. Om het te verzoeken, open een specifiek <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Geval van de Steun </a> en specificeer de naam van de instantie en het e-mailadres(sen) om het rapport naar te verzenden.</p> 
+   <p>Adobe raadt u aan contact op te nemen met het Leveringsteam om de beste tools te definiëren om de prestaties van de uitvoerbaarheid van de instantie te controleren.</p>
+  <p><em>Doeldatum verwijdering: Eind 2021</em></p>
+  </td>
+ </tr>
   <tr>
   <td>CRM-connectoren<br></td>
    <td><p>De aanvang van Campagne 20.3 versie, de volgende schakelaars van CRM worden verouderd met Campagne:</p>
@@ -83,7 +91,6 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
   <td>Sms-connectoren<br></td>
   <td><p> Vanaf Campaign-release 20.2 worden de volgende sms-connectoren afgeschaft.<p>
    <ul>
-   <li>NetSize</li>
    <li>Generic SMPP (SMPP versie 3.4 die de binaire modus ondersteunt)</li>
    <li>Sybase365 (SAP SMS 365)</li>
    <li>CLX Communications</li>
