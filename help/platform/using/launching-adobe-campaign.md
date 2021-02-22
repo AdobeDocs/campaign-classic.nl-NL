@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '558'
 ht-degree: 8%
 
 ---
@@ -33,7 +33,7 @@ U kunt verbinding maken met Adobe Campaign via uw Adobe ID. Raadpleeg [deze pagi
 
 U kunt ook verbinding maken met een toegewezen aanmelding/wachtwoord:
 
-1. Voer de id van de operatoraccount in het veld **[!UICONTROL login]** in.
+1. Voer de id van de operatoraccount in het veld **[!UICONTROL Login]** in.
 
    De beheerder van uw Adobe Campaign-platform geeft uw id op.
 
@@ -41,9 +41,14 @@ U kunt ook verbinding maken met een toegewezen aanmelding/wachtwoord:
 
    De eerste keer u tot het gegevensbestand toegang hebt, is uw wachtwoord dat aan u door de beheerder wordt gegeven. Nadat u verbinding hebt gemaakt, kunt u uw wachtwoord wijzigen via het menu **[!UICONTROL Tools > Change password...]**. Details over operators en verbindingen zijn beschikbaar in [Toegangsbeheer](../../platform/using/access-management.md).
 
-1. Klik **[!UICONTROL LOG IN]** om te bevestigen.
+1. Klik **[!UICONTROL LOG IN]** om te bevestigen.<!--You can also press the **Enter** key to launch connection.-->
 
 U hebt nu toegang tot [Adobe Campaign-werkruimte](../../platform/using/adobe-campaign-workspace.md).
+
+Sommige sneltoetsen zijn beschikbaar op **[!UICONTROL Sign in screen]**:
+* Alle actionable punten zijn selecteerbaar door **Lusje** sleutel (van boven naar onder) of **Lusje** + **Shift** sleutels (van onder naar boven).
+* Als u de verbinding wilt starten, drukt u ook op **Enter**.
+* Met de **Escape**-toets kunt u de velden **[!UICONTROL Login]** en **[!UICONTROL Password]** opnieuw instellen op de laatst succesvolle verbindingswaarden.
 
 ## Verbindingen {#setting-up-connections} instellen
 
@@ -101,5 +106,5 @@ Meer informatie over Gold Standard [in dit artikel](https://helpx.adobe.com/nl/c
 **Verwante onderwerpen**:
 
 * [Adobe Campaign - Opties voor Help en ondersteuning](https://helpx.adobe.com/nl/campaign/kb/ac-support.html#acc-support)
-* [Adobe-softwaredistributie](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)
+* [Adobe Campaign-softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Adobe Experience Cloud-ondersteuning en sessies met experts](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
