@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 3%
+source-wordcount: '98'
+ht-degree: 4%
 
 ---
 
@@ -22,8 +22,6 @@ Als uw mobiele apparaat is verbonden met Wi-Fi en u ontvangt geen meldingen, con
 **Android**: Het mobiele apparaat maakt verbinding met de FCM-servers op poorten 5228 tot en met 5230. Daarom moet u de firewall zo configureren dat verbinding met FCM wordt toegestaan. De open havens zijn: 5228 (de meest gebruikte), 5229 en 5230.
 
 **iOS**:
-
-Binaire aansluiting: om berichten te verzenden, moet u binnenkomend en uitgaand verkeer van TCP op haven 2195 machtigen. De apparaten die met de duwdienst worden verbonden moeten het binnenkomende en uitgaande verkeer van TCP op haven 5223 machtigen.
 
 HTTP/2-connector: u moet communicatie aan en van de volgende servers toestaan:
 
