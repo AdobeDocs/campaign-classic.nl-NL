@@ -7,11 +7,11 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: U kunt cross-channel marketingcampagnes ontwerpen, plannen, uitvoeren, beheren en optimaliseren voor een hoog rendement op marketinginvesteringen.
 solution: Campaign Classic
 sub-product: adobe campaign classic
-type: Documentation
+type: Documentatie
 translation-type: tm+mt
-source-git-commit: efa36dc08ce4dd59805bb9eba63a4249e14609d7
+source-git-commit: 4030eb1cf9aa78a10daffe9ea849aa205660e359
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2351'
 ht-degree: 97%
 
 ---
@@ -28,6 +28,7 @@ ht-degree: 97%
       + [Opmerkingen bij de Gold Standard-release](rn/using/gold-standard.md)
       + [Compatibiliteitsmatrix voor Gold Standard](rn/using/compatibility-matrix-gs.md)
    + Eerdere releases {#previous-releases}
+      + [Release 20.3](rn/using/release--20-3.md)
       + [Release 20.2](rn/using/release--20-2.md)
       + [Release 20.1](rn/using/release--20-1.md)
       + [Release 19.2](rn/using/release--19-2.md)
