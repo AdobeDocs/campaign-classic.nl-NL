@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 11377b0218e20da9b1a5398539ebaa192801b283
+source-git-commit: fa5679d91808edb8e3916d5f0e0f54c73198e934
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '479'
 ht-degree: 2%
 
 ---
@@ -25,14 +25,12 @@ Gebruik de functies van Adobe Campaign om de prestaties van uw platform te contr
 
 Met het leveringspakket hebt u toegang tot:
 
-* Technisch traceringsrapport voor de prestaties van de dagelijks te leveren prestaties (technische controle). Met dit rapport, dat op aanvraag beschikbaar is, kunt u dagelijks een rapport ontvangen via e-mail op een opgegeven adres. Neem voor meer informatie contact op met het Adobe Customer Care-team.
 * Met het [Inbox-renderrapport](../../delivery/using/inbox-rendering.md) kunt u uw berichten voorvertonen op belangrijke e-mailclients om inhoud en reputatie te scannen.
 * Overzicht van berichtkwaliteit (inbox, spam).
 
 U kunt ook de volgende gereedschappen gebruiken:
 
 * Het **[!UICONTROL Delivery throughput]** rapport geeft u een overzicht van de productie van het volledige platform voor een bepaalde periode. Zie [deze sectie](../../reporting/using/global-reports.md#delivery-throughput)voor meer informatie.
-* Het **[!UICONTROL Technical deliverability monitoring]**-rapport bevat een aantal kwaliteitsindicatoren voor de prestaties van uw platform. Zie [deze sectie](#technical-deliverability-monitoring)voor meer informatie.
 * Elke levering produceert een rapport van uitzendingsstatistieken voor de verschillende dienstverleners van Internet (ISPs). Het toont sommige gegevenskwaliteit en reputatie metriek die uw leverbaarheid, met inbegrip van de volgende aantallen kunnen beïnvloeden:
    * **[!UICONTROL Hard bounces]** de gegevenskwaliteit aangeven. Dit getal moet lager zijn dan 2%.
    * **[!UICONTROL Soft bounces]** duidt op reputatie. Dit aantal zou niet hoger moeten zijn dan 10% voor om het even welke bepaalde ISP.
@@ -68,28 +66,6 @@ Spam van het signaal is de Franse dienst die anonymized terugkoppel meldt voor F
 [250](https://250ok.com/) okis een complementaire controleoplossing aan de interne hulpmiddelen van de Adobe leverbaarheid die IP en domeinlijsten van gewezen personen, en reputatie-indicatoren verstrekken.
 
 De verstrekte informatie is real-time, wat een pro-actieve bijstand mogelijk maakt.
-
-## Technisch rapport van de bewaking van de aflevering {#technical-deliverability-monitoring}
-
-Het **Technical Deliverability Monitoring**-rapport bevat een aantal kwaliteitsindicatoren voor de prestaties van uw platform. Je kunt dit dagelijkse rapport per e-mail ontvangen. Om het te verzoeken, open een specifiek [Geval van de Steun](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) en specificeer:
-
-* de naam van de instantie
-* de e-mailadressen waarnaar het rapport wordt verzonden
-
-Deze verslagen bevatten de volgende indicatoren:
-
-* **[!UICONTROL Reverse DNS]** : Adobe Campaign controleert of omgekeerde DNS voor een IP adres wordt gegeven en dat dit correct naar IP wijst.
-
-* **[!UICONTROL SPF]** (Beleidskader voor verzender): Een authentificatiemechanisme dat ISPs en brievenbusleveranciers toelaat om te controleren of de e-mailafzender op het verzendende domein wordt gemachtigd.
-
-* **[!UICONTROL DomainKeys]** : Een service die door Yahoo is ontwikkeld en waarmee de identiteit van een e-mailafzender wordt gecertificeerd.
-
-* **[!UICONTROL IP and RBL domain]** (Lijst voor realtime zwarte gaten): Een lijst van IP adressen en domeinen die door de organisaties van de lijst van gewezen personen voor slechte verzendende reputatie zijn gemarkeerd. Deze lijsten worden bijgehouden door speciale organisaties zoals Spamhaus, Spamcop, SURBL/URIBL, enz. Adobe Campaign verwerkt momenteel controles tegen RBL&#39;s die een significant effect op de leverbaarbaarheid hebben. Deze RBLs wijzen op het verzenden van reputatie, en kan door ISPs worden van verwijzingen voorzien alvorens om uw e-mails te aanvaarden.
-
-* **[!UICONTROL SNDS]** (Smart Network Data Services): Een  [Windows Live Hotmail-service](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx) tegen spam. Hotmail is enige ISP die dit type van informatie verstrekt. Benchmarkscores zijn een groen filterresultaat, een klachtenpercentage van minder dan 0,1% en geen spamvallen.
-
-Deze indicatoren worden dagelijks om 9.00 uur bijgewerkt.
-
 
 <!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
 
