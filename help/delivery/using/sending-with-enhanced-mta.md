@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 07ed17a093cb6fb2d7aae376325a127c61b1dcc2
+source-git-commit: c64b6eccd0ad45ebcf4ecc18150f4409f5c66bc2
 workflow-type: tm+mt
-source-wordcount: '1398'
+source-wordcount: '1880'
 ht-degree: 2%
 
 ---
@@ -28,6 +28,10 @@ Het is geïmplementeerd om de schaalbaarheid te verbeteren, de doorvoer van de l
 Als u een instantie van de Campaign Classic na September 2018 provisioned was, gebruikt u Verbeterde MTA. Zie de [Veelgestelde vragen](#enhanced-mta-faq) hieronder voor alle andere Campaign Classic-klanten.
 
 De verbeterde implementatie MTA kan enkele bestaande functionaliteit van de Campagne beïnvloeden. Zie [Verbeterde specifieke kenmerken van MTA](#enhanced-mta-impacts) voor meer informatie.
+
+>[!NOTE]
+>
+>Als u een eindgebruiker van Adobe Campaign bent en u wilt weten of uw instantie aan Verbeterde MTA is bevorderd, contacteer uw interne beheerder van de Campagne.
 
 ## Veelgestelde vragen {#enhanced-mta-faq}
 
@@ -129,24 +133,6 @@ De stuiterkwalificaties in de tabel Campagne **[!UICONTROL Delivery log qualific
 
 Zie [deze sectie](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) voor meer informatie over stuitkwalificatie.
 
-### Status verzonden met verbeterde MTA
-
-In **[!UICONTROL Summary]** mening van een e-maillevering [dashboard](../../delivery/using/delivery-dashboard.md), begint **[!UICONTROL Success]** percentage bij 100% en gaat dan geleidelijk door de levering [geldigheidsperiode ](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period), aangezien de zachte en harde grenzen van Verbeterde MTA aan Campagne worden gemeld.
-
-Alle berichten worden namelijk als **[!UICONTROL Sent]** weergegeven in de [verzendende logbestanden](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) zodra deze zijn afgespeeld vanuit Campagne naar de Enhanced MTA. Zij blijven in die status tenzij of tot een [bounce](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) voor dat bericht wordt meegedeeld terug van Verbeterde MTA aan Campagne.
-
-Wanneer hard-bouncing berichten van Verbeterde MTA worden gemeld, verandert hun status van **[!UICONTROL Sent]** in **[!UICONTROL Failed]** en **[!UICONTROL Success]** percentage dienovereenkomstig wordt verminderd.
-
-Wanneer de soft-bouncing berichten terug van Verbeterde MTA worden gemeld, tonen zij nog als **[!UICONTROL Sent]** en **[!UICONTROL Success]** percentage wordt nog niet bijgewerkt. Zachte berichten worden dan [opnieuw geprobeerd](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) door de periode van de leveringsgeldigheid:
-
-* Als een nieuwe poging voor het eind van de geldigheidsperiode succesvol is, blijft de berichtstatus zoals **[!UICONTROL Sent]** en **[!UICONTROL Success]** percentage blijft onveranderd.
-
-* Anders verandert de status in **[!UICONTROL Failed]** en wordt het **[!UICONTROL Success]** percentage dienovereenkomstig verlaagd.
-
-Daarom moet u wachten tot het einde van de geldigheidsperiode om het laatste **[!UICONTROL Success]**-percentage en het uiteindelijke aantal feitelijk **[!UICONTROL Sent]**- en **[!UICONTROL Failed]**-berichten weer te geven.
-
-<!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
-
 ### Leveringsdoorvoer
 
 De grafiek van de productie van de Levering van de Campagne zal niet meer de productie aan uw e-mailontvangers tonen. Die grafiek zal nu de productiesnelheid voor het relais van uw berichten van Campaign over aan Verbeterde MTA tonen.
@@ -167,3 +153,78 @@ Zie [deze sectie](../../delivery/using/steps-sending-the-delivery.md#defining-va
 
 DKIM (DomainKeys Identified Mail) e-mailverificatie wordt ondertekend door de Enhanced MTA. DKIM-signing door de native Campagne MTA zal worden uitgezet binnen de beheerlijst van het Domein als deel van de Verbeterde verbetering MTA.
 Zie [deze sectie](../../delivery/using/technical-recommendations.md#dkim) voor meer informatie over DKIM.
+
+### Leveringssuccesrapportage
+
+In **[!UICONTROL Summary]** mening van een e-maillevering [dashboard](../../delivery/using/delivery-dashboard.md), begint **[!UICONTROL Success]** percentage bij 100% en gaat dan geleidelijk door de levering [geldigheidsperiode ](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period), aangezien de zachte en harde grenzen van Verbeterde MTA aan Campagne worden gemeld.
+
+Alle berichten worden namelijk als **[!UICONTROL Sent]** weergegeven in de [verzendende logbestanden](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) zodra deze zijn afgespeeld vanuit Campagne naar de Enhanced MTA. Zij blijven in die status tenzij of tot een [bounce](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) voor dat bericht wordt meegedeeld terug van Verbeterde MTA aan Campagne.
+
+Wanneer hard-bouncing berichten van Verbeterde MTA worden gemeld, verandert hun status van **[!UICONTROL Sent]** in **[!UICONTROL Failed]** en **[!UICONTROL Success]** percentage dienovereenkomstig wordt verminderd.
+
+Wanneer de soft-bouncing berichten terug van Verbeterde MTA worden gemeld, tonen zij nog als **[!UICONTROL Sent]** en **[!UICONTROL Success]** percentage wordt nog niet bijgewerkt. Zachte berichten worden dan [opnieuw geprobeerd](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) door de periode van de leveringsgeldigheid:
+
+* Als een nieuwe poging voor het eind van de geldigheidsperiode succesvol is, blijft de berichtstatus zoals **[!UICONTROL Sent]** en **[!UICONTROL Success]** percentage blijft onveranderd.
+
+* Anders verandert de status in **[!UICONTROL Failed]** en wordt het **[!UICONTROL Success]** percentage dienovereenkomstig verlaagd.
+
+Daarom moet u wachten tot het einde van de geldigheidsperiode om het laatste **[!UICONTROL Success]**-percentage en het uiteindelijke aantal feitelijk **[!UICONTROL Sent]**- en **[!UICONTROL Failed]**-berichten weer te geven.
+
+<!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
+
+### E-mailfeedbackservice (bèta) {#email-feedback-service}
+
+Met de e-mailfeedbackservice (EFS) wordt de status van elke e-mail correct gerapporteerd, omdat feedback rechtstreeks wordt vastgelegd via de Enhanced MTA (Message Transfer Agent).
+
+>[!IMPORTANT]
+>
+>De e-mailfeedbackservice is momenteel beschikbaar als bètafunctie.
+>
+>Als u geïnteresseerd bent in deelname aan dit bètaprogramma, vult u [dit formulier](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) in en keert u terug.
+
+Zodra de levering is begonnen, is er geen verandering in **[!UICONTROL Success]** percentage wanneer het bericht met succes van Campagne aan Verbeterde MTA wordt afgelost.
+
+<!--![](assets/efs-sending.png)-->
+
+De leveringslogboeken tonen de status **[!UICONTROL Taken into account by the service provider]** voor elk gericht adres.
+
+<!--![](assets/efs-pending.png)-->
+
+Wanneer het bericht eigenlijk aan de gerichte profielen wordt geleverd en zodra deze informatie in echt - tijd van Verbeterde MTA wordt gemeld, tonen de leveringslogboeken de status **[!UICONTROL Sent]** voor elk adres dat met succes het bericht ontving. Het percentage **[!UICONTROL Success]** wordt dienovereenkomstig verhoogd bij elke succesvolle levering.
+
+Wanneer hard-stuiterende berichten van Verbeterde MTA worden gemeld, verandert hun logboekstatus van **[!UICONTROL Taken into account by the service provider]** in **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
+
+Wanneer de zachte die berichten terug van Verbeterde MTA worden gemeld, blijft hun logboekstatus onveranderd (**[!UICONTROL Taken into account by the service provider]**): alleen de [error reason](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) wordt bijgewerkt<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. Het percentage **[!UICONTROL Success]** blijft ongewijzigd. Zachte berichten worden dan opnieuw geprobeerd door de levering [geldigheidsperiode](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period):
+
+* Als een nieuwe poging vóór het eind van de geldigheidsperiode succesvol is, verandert de berichtstatus in **[!UICONTROL Sent]** en **[!UICONTROL Success]** percentage wordt dienovereenkomstig verhoogd.
+
+* Anders verandert de status in **[!UICONTROL Failed]**. Het **[!UICONTROL Success]** <!--and **[!UICONTROL Bounces + errors]** -->percentage blijft ongewijzigd.
+
+>[!NOTE]
+>
+>Zie [deze sectie](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) voor meer informatie over harde en zachte grenzen.
+>
+>Zie [deze sectie](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) voor meer informatie over pogingen na een tijdelijke leveringsfout.
+
+
+De lijsten hieronder tonen de veranderingen in KPIs en het verzenden van logboekstatussen die door het vermogen EFS worden geïntroduceerd.
+
+**Met e-mailfeedbackservice**
+
+| Stap in het verzendende proces | KPI-overzicht | Status van logboeken verzenden |
+|--- |--- |--- |
+| Het bericht wordt met succes afgelost van Campagne aan Verbeterde MTA | **[!UICONTROL Success]** percentage wordt niet weergegeven (begint bij 0%) | Door de dienstverlener in aanmerking genomen |
+| Fel-stuiterende berichten worden gemeld terug van Verbeterde MTA | Geen wijziging in **[!UICONTROL Success]** percentage | Mislukt |
+| De zachte die berichten bewegen worden gemeld terug van Verbeterde MTA | Geen wijziging in **[!UICONTROL Success]** percentage | Door de dienstverlener in aanmerking genomen |
+| Opnieuw proberen van zachte berichten is geslaagd | **[!UICONTROL Success]** percentage dienovereenkomstig verhoogd | Verzonden |
+| Opnieuw proberen van zachte berichten mislukt | Geen wijziging in **[!UICONTROL Success]** percentage | Mislukt |
+
+**Zonder e-mailfeedbackservice**
+
+| Stap in het verzendende proces | KPI-overzicht | Status van logboeken verzenden |
+|--- |--- |--- |
+| Het bericht wordt met succes afgelost van Campagne aan Verbeterde MTA | **[!UICONTROL Success]** percentage begint bij 100% | Verzonden |
+| Fel-stuiterende berichten worden gemeld terug van Verbeterde MTA | **[!UICONTROL Success]** percentage wordt dienovereenkomstig verlaagd | Mislukt |
+| De zachte die berichten bewegen worden gemeld terug van Verbeterde MTA | Geen wijziging in **[!UICONTROL Success]** percentage | Verzonden |
+| Opnieuw proberen van zachte berichten is geslaagd | Geen wijziging in **[!UICONTROL Success]** percentage | Verzonden | **[!UICONTROL Success]** percentage dienovereenkomstig verhoogd | Verzonden |
+| Opnieuw proberen van zachte berichten mislukt | **[!UICONTROL Success]** percentage wordt dienovereenkomstig verlaagd | Mislukt |
