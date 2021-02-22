@@ -5,9 +5,8 @@ title: De pijplijn configureren
 description: Leer hoe te om de pijpleiding te vormen
 audience: integrations
 content-type: reference
-topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 531eb23ff8fe1b77c37a51e7f99921b0bc071f0f
+source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 1%
@@ -49,7 +48,7 @@ Verificatie wordt ondersteund voor de Marketing Cloud via Adobe I/O Project.
 
 Voor Gehoste klanten, kunt u een kaartje van de klantenzorg tot stand brengen om uw organisatie met de Tokens van de Technische Rekening van Adobe I/O voor de integratie van Triggers toe te laten.
 
-Raadpleeg voor klanten op locatie de pagina [Adobe I/O configureren voor Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md). Let erop dat u **[!UICONTROL Adobe Analytics]** moet selecteren terwijl u API toevoegt aan de Adobe I/O-referentie.
+Raadpleeg voor klanten op locatie de pagina [Adobe I/O configureren voor Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md). Merk op dat u **[!UICONTROL Adobe Analytics]** moet selecteren terwijl het toevoegen van API aan de referentie van de Adobe I/O.
 
 ## Stap 2: NmsPipeline_Config pijpleidingsoptie {#configuring-nmspipeline} configureren
 
