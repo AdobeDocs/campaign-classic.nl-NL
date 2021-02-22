@@ -797,7 +797,7 @@ Dit rapport is gebaseerd op de tabellen Delivery(nms:delivery) en **[!UICONTROL 
 
 Dit rapport toont de berichtinhoud (HTML en/of tekst) met, op elke verbinding, het percentage klikt op verbindingen. De belemmeringen van de verpersoonlijking unsubscription verbindingen en de verbindingen van de spiegelpagina worden in de totale gecumuleerde kliks in aanmerking genomen maar niet getoond in het rapport.
 
-## Statistieken {#tracking-statistics-1} bijhouden
+## Statistiekenbijhouden {#tracking-statistics-1}
 
 Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** lijst (nms:levering).
 

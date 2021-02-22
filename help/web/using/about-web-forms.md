@@ -80,7 +80,6 @@ In de volgende secties wordt beschreven hoe u inhoud en indeling voor formuliers
 >
 >* Tijdens het ontwerpen van een pagina kunt u de uiteindelijke rendering weergeven op het tabblad **[!UICONTROL Preview]**. Sla het formulier eerst op om de wijzigingen weer te geven. Eventuele fouten worden weergegeven op het tabblad **[!UICONTROL Log]**.
 >* Om ervoor te zorgen dat de paginavertoning en de informatieopslag in de aangewezen opeenvolging voorkomen, laat zuiveringswijze in de vorm van het Web toe. Hiervoor gaat u naar de **[!UICONTROL Preview]**-subtab en schakelt u het selectievakje **[!UICONTROL Enable debug mode]** in: alle verzamelde informatie en mogelijke uitvoeringsfouten worden onder aan elke pagina weergegeven .
-
 >
 
 

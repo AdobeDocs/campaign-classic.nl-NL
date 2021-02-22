@@ -21,7 +21,7 @@ Om u te helpen bij het instellen van onderhoudsplannen, worden in deze sectie en
 
 ## PostgreSQL {#postgresql}
 
-### Grote tabellen {#detecting-large-tables} detecteren
+### Grote tabellendetecteren {#detecting-large-tables}
 
 1. U kunt de volgende weergave aan uw database toevoegen:
 
@@ -95,12 +95,11 @@ vacuum full nmsdelivery;
 >* De **vacuum** en **re-index** bevelen zullen de lijst sluiten, die sommige processen pauzeert terwijl het onderhoud wordt uitgevoerd.
 >* Voor zeer grote tabellen (meestal boven 5 Gb) kan **vacuüm vol** behoorlijk inefficiënt worden en erg lang duren. Adobe raadt u niet aan deze te gebruiken voor de tabel **YyyNmsBroadLogXxx**.
 >* Deze onderhoudsbewerking kan worden geïmplementeerd door een Adobe Campaign-workflow met een **[!UICONTROL SQL]**-activiteit (zie [deze sectie](../../workflow/using/architecture.md) voor meer informatie). Zorg ervoor dat u onderhoud plant voor een lage activiteitstijd die niet in strijd is met uw back-upvenster.
-
 >
 
 
 
-### Database {#rebuilding-a-database} opnieuw samenstellen
+### Databaseopnieuw samenstellen {#rebuilding-a-database}
 
 PostgreSQL biedt geen eenvoudige manier om een online tabelreconstructie uit te voeren, aangezien **vacuum full** de tabel vergrendelt en zo een normale productie voorkomt. Dit betekent dat onderhoud moet worden uitgevoerd wanneer de tabel niet wordt gebruikt. U kunt:
 

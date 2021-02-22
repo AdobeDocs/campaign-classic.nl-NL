@@ -109,7 +109,7 @@ Als u een deduplicatie wilt configureren, voert u het label, de methode en de cr
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
-## Voorbeeld: Duid de duplicaten vóór een levering {#example--identify-the-duplicates-before-a-delivery} aan
+## Voorbeeld: Duid de duplicaten vóór een leveringaan {#example--identify-the-duplicates-before-a-delivery}
 
 In het volgende voorbeeld betreft de deduplicatie de samenvoeging van drie vragen.
 

@@ -21,7 +21,6 @@ ht-degree: 2%
 >
 >* De uitbreidingen van het schema die op de schema&#39;s worden gemaakt door [technische werkschema&#39;s van het Centrum van het Bericht](../../message-center/using/technical-workflows.md) op of controle of uitvoeringsinstanties worden gebruikt moeten op de andere instanties worden gedupliceerd die door de module van het de transactionele overseinen van Adobe Campaign worden gebruikt.
 >* De bedieningsinstantie en de uitvoeringsinstantie(s) moeten op verschillende computers zijn geïnstalleerd. Ze kunnen niet dezelfde Campagne-instantie delen.
-
 >
 
 
@@ -134,7 +133,7 @@ Maak in de boomstructuur van alle uitvoeringsinstanties één map per operator (
    >
    >Voor meer bij het vormen van een controleinstantie, verwijs naar [Controleinstantie](#control-instance).
 
-### Uitvoeringsinstanties {#configuring-execution-instances} configureren
+### Uitvoeringsinstantiesconfigureren {#configuring-execution-instances}
 
 Om verscheidene controleinstanties te gebruiken, moet deze configuratie op ALLE uitvoeringsinstanties worden uitgevoerd.
 

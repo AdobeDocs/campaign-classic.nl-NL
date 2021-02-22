@@ -29,7 +29,6 @@ De parameter **`<command>`** beantwoordt aan de module.
 >
 >* In elk geval, kunt u **-noconsole** argument toevoegen om commentaren te schrappen die worden getoond zodra de modules zijn begonnen.
 >* Omgekeerd, kunt u het argument **-verbose** toevoegen om meer informatie te tonen.
-
 >
 
 
@@ -120,7 +119,7 @@ Als u de Adobe Campaign-services wilt stoppen, gebruikt u een van de volgende op
    nlserver shutdown 
    ```
 
-## Services {#restart-services} opnieuw starten
+## Servicesopnieuw starten {#restart-services}
 
 Op dezelfde manier kunt u een van de volgende opdrachten gebruiken om Adobe Campaign opnieuw te starten:
 
@@ -163,8 +162,6 @@ Het **internal** wachtwoord wijzigen: **nlserver config -internalpassword**
 >* In het algemeen, in plaats van het wijzigen van de configuratiedossiers door hand, kunt u **config** bevel gebruiken
 >* Om de lijst van parameters te krijgen, gebruik **-?** parameter:  **nlserver config -?**
 >* In het geval van een Oracle-database mag u het account niet opgeven. De syntaxis ziet er als volgt uit:
-
 >
->  
-nlserver config -setdblogin:Oracle:test6@dbserver
+>  nlserver config -setdblogin:Oracle:test6@dbserver
 

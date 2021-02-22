@@ -31,7 +31,7 @@ Dit doet u als volgt:
 >
 >Beide stappen moeten noodzakelijk na elke wijziging van de berichtinhoud worden uitgevoerd.
 
-## De levering {#analyzing-the-delivery} analyseren
+## De leveringanalyseren {#analyzing-the-delivery}
 
 De analyse is het stadium waarin de doelpopulatie wordt berekend en de leveringsinhoud wordt voorbereid. Zodra het volledig is, is de levering klaar om worden verzonden.
 
@@ -111,7 +111,7 @@ Deze optie is momenteel alleen beschikbaar als aan de volgende voorwaarden is vo
 * U kunt geen populatie richten die uit een extern dossier komt. Voor één levering, klik **[!UICONTROL To]** verbinding van **[!UICONTROL Email parameters]** en controleer dat de **[!UICONTROL Defined in the database]** optie wordt geselecteerd. Voor levering die in een werkschema wordt gebruikt, controleer dat de ontvangers **[!UICONTROL Specified by the inbound event(s)]** in **[!UICONTROL Delivery]** tabel zijn.
 * U moet een PostSQL-database gebruiken.
 
-### De analyseprioriteit {#analysis-priority-} configureren
+### De analyseprioriteitconfigureren {#analysis-priority-}
 
 Wanneer de levering deel uitmaakt van een campagne, biedt het tabblad **[!UICONTROL Advanced]** een extra optie. Zo kunt u de verwerkingsvolgorde voor leveringen in dezelfde campagne ordenen.
 
@@ -135,7 +135,6 @@ Adobe raadt u ten zeerste aan een cyclus voor leveringsvalidatie in te stellen o
 >
 >* Beschikbare validatiemodi worden beschreven in [De goedkeuringsmodus wijzigen](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode).
 >* Configuratie van het proefdrukdoel wordt uitgelegd in [Een specifiek proefdrukdoel definiëren](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
-
 >
 
 
@@ -211,7 +210,7 @@ Het tabblad **[!UICONTROL Rule]** bevat een lijst met typologische regels die mo
 >
 >**[!UICONTROL Arbitration]** typologieën van het type worden gebruikt in het kader van het beheer van de verkoopdruk . Raadpleeg [deze sectie](../../campaign/using/about-marketing-resource-management.md) voor meer informatie.
 
-## De goedkeuringsmodus {#changing-the-approval-mode} wijzigen
+## De goedkeuringsmoduswijzigen {#changing-the-approval-mode}
 
 Met het tabblad **[!UICONTROL Analysis]** voor leveringseigenschappen kunt u de validatiemodus selecteren. Als tijdens de analyse waarschuwingen worden gegenereerd (bijvoorbeeld als bepaalde tekens worden geaccentueerd in het onderwerp van de levering, enz.), kunt u de levering zodanig configureren dat wordt bepaald of deze nog moet worden uitgevoerd. Door gebrek, moet de gebruiker het verzenden van berichten aan het eind van de analysefase bevestigen: Dit is **handmatige** validatie.
 

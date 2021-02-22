@@ -49,7 +49,7 @@ Hiervoor voert u de volgende stappen uit:
    >Eén omgeving kan meerdere instanties bevatten. Elke Adobe Campaign-instantie is onderworpen aan een licentieovereenkomst. Controleer uw licentieovereenkomst om te zien hoeveel omgevingen u kunt hebben.\
    >Met de onderstaande procedure kunt u een omgeving overbrengen zonder dat dit invloed heeft op het aantal omgevingen en instanties dat u hebt geïnstalleerd.
 
-### Voordat u {#before-you-start} start
+### Voordat ustart {#before-you-start}
 
 >[!IMPORTANT]
 >
@@ -69,7 +69,6 @@ De volgende stappen moeten met grote zorg worden uitgevoerd: sommige processen z
 >
 >* De volgende procedure is geldig in de taal PostgreSQL. Als de SQL-taal anders is (bijvoorbeeld Oracle), moeten de SQL-query&#39;s worden aangepast.
 >* De onderstaande opdrachten zijn van toepassing binnen de context van een **prod**-instantie en een **dev**-instantie onder PostgreSQL.
-
 >
 
 
@@ -86,7 +85,7 @@ Onder PostgreSQL, is het bevel:
 pg_dump mydatabase > mydatabase.sql
 ```
 
-### Stap 2 - de configuratie van het doelmilieu (dev) {#step-2---export-the-target-environment-configuration--dev-} uitvoeren
+### Stap 2 - de configuratie van het doelmilieu (dev)uitvoeren {#step-2---export-the-target-environment-configuration--dev-}
 
 De meeste configuratieelementen zijn verschillend voor elke milieu: externe accounts (midsourcing, routering, enz.), technische opties (platformnaam, database-id, e-mailadressen en standaard-URL&#39;s, enz.).
 
@@ -187,7 +186,7 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
    SELECT iStatus, count(*) FROM neolane.xtkworkflow GROUP BY iStatus;
    ```
 
-### Stap 7 - begin het proces van het Web van het doelmilieu (dev) {#step-7---restart-the-target-environment-web-process--dev-} opnieuw
+### Stap 7 - begin het proces van het Web van het doelmilieu (dev)opnieuw {#step-7---restart-the-target-environment-web-process--dev-}
 
 Start in de doelomgeving de Adobe Campaign-processen voor alle servers opnieuw.
 

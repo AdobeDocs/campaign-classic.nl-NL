@@ -255,12 +255,11 @@ Deze worden gegroepeerd onder **Monitoring** > &#39;SMTP-bewaking&#39;.
 >
 >* Informatie over SMTP-bewaking is alleen beschikbaar als het e-mailkanaal is geactiveerd.
 >* De **[!UICONTROL SMTP sending statistics]** worden alleen aangeboden als de statistische server op de instantie is gestart.
-
 >
 
 
 
-### SMTP die statistieken {#smtp-sending-statistics} verzenden
+### SMTP die statistiekenverzenden {#smtp-sending-statistics}
 
 Met het **[!UICONTROL SMTP sending statistics]**-rapport kunt u de serveractiviteit beheren. Er wordt een synthese van elk van de overeenkomende elementen weergegeven.
 
@@ -621,7 +620,7 @@ In **ncs**, **redir** en **http** subelements, kunt u **isSecure** (facultatief)
 
 Om het te vormen, geef dit dossier uit en wijs op welke folder JRE of JDK geïnstalleerd is.
 
-### Bewaking {#launching-monitoring} starten
+### Bewakingstarten {#launching-monitoring}
 
 Om controle te lanceren, voer **netreport.bat** of **netreport.sh** dossier met regelmatige intervallen via een manuscript uit. Een rapport wordt verzonden na de eerste uitvoering, en dan slechts in het geval van een verandering van status.
 

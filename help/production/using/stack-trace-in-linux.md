@@ -23,7 +23,6 @@ Een **stackspoor** vertegenwoordigt een spoor in een **core** typedossier. Dit b
 >
 >* Een **core**-bestand krijgt de naam **core.`<num>`**.
 >* **gdb - De GNU-** foutopsporing moet op de computer zijn geïnstalleerd.
-
 >
 
 

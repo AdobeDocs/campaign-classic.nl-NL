@@ -374,7 +374,7 @@ Deze waarden worden weergegeven in een vervolgkeuzelijst van het invoerformulier
 >
 >In de Adobe Campaign-clientconsole wordt het knooppunt **[!UICONTROL Administration > Enumerations]** gebruikt om opsommingen te beheren.
 
-#### Opsomming {#set-enumeration} instellen
+#### Opsomminginstellen {#set-enumeration}
 
 Met de eigenschap **enum** kunt u een vaste opsomming definiëren die wordt gebruikt wanneer de lijst met mogelijke waarden van tevoren bekend is.
 
@@ -486,7 +486,6 @@ Elementen worden aangeduid met hun naam en kenmerken worden aangeduid met de naa
 >
 >* **location/@** cityis not valid; gebruiken  **`[location/@city]`**
 >* **`[@email]`** en  **@** e-mailequivalent
-
 >
 
 
