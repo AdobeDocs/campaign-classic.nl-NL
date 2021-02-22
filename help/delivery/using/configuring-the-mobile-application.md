@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: a1bd8dc2b5946b74cb880eff934e3b35cadfb2d2
+source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 8%
+source-wordcount: '789'
+ht-degree: 4%
 
 ---
 
@@ -32,10 +32,6 @@ Om deze schakelaar te vormen, volg deze stappen:
 1. Ga naar **[!UICONTROL Administration > Platform > External accounts]**.
 1. Selecteer de externe account **[!UICONTROL iOS routing]**.
 1. Vul op het tabblad **[!UICONTROL Connector]** het veld **[!UICONTROL Access URL of the connector]** met de volgende URL in: ```http://localhost:8080/nms/jsp/iosHTTP2.jsp```
-
-   >[!NOTE]
-   >
-   > Vanaf Campaign versie 20.3 is de verouderde binaire iOS-connector van iOS afgeschaft. Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. [Meer informatie](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
 
    ![](assets/nmac_connectors.png)
 
