@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 32db73de8308670dfd74d974072bd96b3a22fc31
+source-git-commit: a157082070b22e3621cb81411a5ddde387fd5fcf
 workflow-type: tm+mt
-source-wordcount: '8432'
+source-wordcount: '8458'
 ht-degree: 0%
 
 ---
@@ -597,6 +597,12 @@ Wanneer TLS is ingeschakeld, slaat u alle certificaatcontroles over.
 Wanneer gecontroleerd, is de verbinding niet veilig meer, zou het niet in productie moeten worden toegelaten.
 
 Het kan nuttig voor het zuiveren of testdoeleinden zijn.
+
+U kunt kiezen uit drie verschillende waarden voor de certificaatvalidatie:
+
+* Volledige certificatiecontrole (met inbegrip van hostname), gebrek.
+* De verificatie van de hostnaam overslaan.
+* Sla de verificatie van het certificaat over.
 
 #### Bind TON/NPI {#bind-ton-npi}
 
