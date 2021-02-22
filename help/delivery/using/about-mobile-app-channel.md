@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 5%
+source-wordcount: '674'
+ht-degree: 1%
 
 ---
 
@@ -56,7 +56,7 @@ U kunt het toepassingsgedrag bepalen voor wanneer de gebruiker het bericht activ
 
 Met de **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt)-workflow worden abonnementen op mobiele apparaten bijgewerkt. Raadpleeg de [lijst met technische workflows](../../workflow/using/about-technical-workflows.md) voor meer informatie over deze workflow.
 
-Adobe Campaign is compatibel met zowel binaire als HTTP/2 APNs. Raadpleeg de sectie [Een mobiele toepassing configureren in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) voor meer informatie over de configuratiestappen.
+Adobe Campaign is compatibel met HTTP/2 APNs. Raadpleeg de sectie [Een mobiele toepassing configureren in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) voor meer informatie over de configuratiestappen.
 
 ## Gegevenspad {#data-path}
 
@@ -85,14 +85,7 @@ De volgende informatie is beschikbaar in Adobe Campaign:
 
 ![](assets/nmac_delivery_view.png)
 
-De Adobe Campaign-server moet contact kunnen opnemen met de APNs-server op de volgende poorten:
-
-* 2195 (verzenden) en 2186 (feedbackservice) voor binaire iOS-connector
-* 443 voor iOS HTTP/2-connector
-
-   >[!NOTE]
-   >
-   > Vanaf Campaign versie 20.3 is de verouderde binaire iOS-connector van iOS afgeschaft. Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. [Meer informatie](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
+De Adobe Campaign-server moet contact kunnen opnemen met de APNs-server op de 443-poort voor de iOS HTTP/2-connector.
 
 Om te controleren dat het correct werkt, gebruik de volgende bevelen:
 
@@ -108,7 +101,5 @@ Om te controleren dat het correct werkt, gebruik de volgende bevelen:
    telnet gateway.push.apple.com
    ```
 
-Als een binaire iOS-connector wordt gebruikt, moeten de MTA en de webserver contact kunnen opnemen met de APN&#39;s op poort 2195 (verzenden), moet de workflowserver contact kunnen opnemen met de APN&#39;s op poort 2196 (feedbackservice).
-
-Als een iOS HTTP/2-connector wordt gebruikt, moeten de MTA-, webserver- en workflowserver contact kunnen opnemen met de APN&#39;s op poort 443.
+Met de iOS HTTP/2-connector moeten de MTA-, webserver- en workflowserver contact kunnen opnemen met de APN&#39;s op poort 443.
 
