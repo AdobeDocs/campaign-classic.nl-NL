@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
+source-git-commit: f00c0bda0ab3f2e07c015f4cfe5e3942f5620841
 workflow-type: tm+mt
 source-wordcount: '1525'
 ht-degree: 11%
@@ -147,7 +147,7 @@ Externe databases die compatibel zijn met Campagne worden vermeld in de [Compati
 
 De instellingen voor externe accountconfiguratie zijn afhankelijk van de database-engine. Meer informatie vindt u in de volgende secties:
 
-* Toegang tot [Azure synapse](../../installation/using/configure-fda-synapse.md) configureren
+* Toegang tot [Azure Synapse](../../installation/using/configure-fda-synapse.md) configureren
 * Toegang tot [Hadoop](../../installation/using/configure-fda-hadoop.md) configureren
 * Toegang tot [Oracle](../../installation/using/configure-fda-oracle.md) configureren
 * Toegang tot [Netezza](../../installation/using/configure-fda-netezza.md) configureren
@@ -408,7 +408,7 @@ Om de externe rekening van Salesforce CRM te vormen om met Adobe Campaign te wer
 
 * **[!UICONTROL API version]**
 
-   Versie van de API tussen **[!UICONTROL Version 37]**, **[!UICONTROL Version 21]** of **[!UICONTROL Version 15]**.
+   Versie van de API tussen **[!UICONTROL Version 49]**, **[!UICONTROL Version 37]**, **[!UICONTROL Version 21]** of **[!UICONTROL Version 15]**.
 
 Voor deze externe rekening, moet u u Salesforce CRM met de configuratietovenaar vormen.
 
