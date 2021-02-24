@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -29,13 +29,14 @@ Bovendien had de in dit gebruiksgeval gedetailleerde test alleen betrekking op t
 
 De belangrijkste stappen voor dit gebruik zijn:
 
-* [Stap 1: Een doelworkflow maken](#step-1--creating-a-targeting-workflow)
-* [Stap 2: Demonstratiemonsters configureren](#step-2--configuring-population-samples)
-* [Stap 3: Twee leveringssjablonen maken](#step-3--creating-two-delivery-templates)
-* [Stap 4: De leveringen in de workflow configureren](#step-4--configuring-the-deliveries-in-the-workflow)
-* [Stap 5: Het script maken](#step-5--creating-the-script)
-* [Stap 7: De workflow starten](#step-7--starting-the-workflow)
-* [Stap 8: Analyseer het resultaat](#step-8--analyzing-the-result).
+* [Stap 1: Een doelworkflow maken](../../delivery/using/a-b-testing-uc-targeting-workflow.md)
+* [Stap 2: Demonstratiemonsters configureren](../../delivery/using/a-b-testing-uc-population-samples.md)
+* [Stap 3: Twee leveringssjablonen maken](../../delivery/using/a-b-testing-uc-delivery-templates.md)
+* [Stap 4: De leveringen in de workflow configureren](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)
+* [Stap 5: Het script maken](../../delivery/using/a-b-testing-uc-script.md)
+* [Stap 6: De uiteindelijke levering definiëren](../../delivery/using/a-b-testing-uc-final-delivery.md)
+* [Stap 7: De workflow starten](../../delivery/using/a-b-testing-uc-start-workflow.md)
+* [Stap 8: Het resultaat analyseren](../../delivery/using/a-b-testing-uc-analyzing.md)
 
 **Verwante onderwerpen:**
 
