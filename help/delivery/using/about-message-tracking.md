@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
+source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 8%
+source-wordcount: '685'
+ht-degree: 9%
 
 ---
 
@@ -57,7 +57,7 @@ Traceringsopties kunnen worden geconfigureerd door bijgehouden URL&#39;s te acti
 
 **Aanpassing van koppelingen**
 
-Met de mogelijkheden voor het bijhouden van Campaign Classic kunt u koppelingen toevoegen in e-mailberichten die kunnen worden aangepast en die het bijhouden van wijzigingen ondersteunen. [Meer informatie](https://helpx.adobe.com/campaign/kb/tracking-personnalized-links.html)
+Met de mogelijkheden voor het bijhouden van Campaign Classic kunt u koppelingen toevoegen in e-mailberichten die kunnen worden aangepast en die het bijhouden van wijzigingen ondersteunen. [Meer informatie](../../delivery/using/tracking-personalized-links.md)
 
 **Logboeken bijhouden**
 
