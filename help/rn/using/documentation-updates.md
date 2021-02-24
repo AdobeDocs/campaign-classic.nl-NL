@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
+source-git-commit: 9f898e28b981ea4257c9f4b73a579d322ddbba89
 workflow-type: tm+mt
 source-wordcount: '4066'
 ht-degree: 95%
@@ -45,6 +45,8 @@ Er is een sectie voor probleemoplossing toegevoegd om u te helpen algemene probl
 
 De sectie **Het verzenden van een e-mail** is gereorganiseerd en verduidelijkt met nieuwe subsecties. [Meer informatie](../../delivery/using/sending-messages.md)
 
+Er is informatie toegevoegd over het toevoegen van koppelingen in e-mailberichten die kunnen worden aangepast en die ondersteuning bieden voor bijhouden. [Meer informatie](../../delivery/using/tracking-personalized-links.md).
+
 ## Januari 2021 {#jan-2021}
 
 De sectie **[!UICONTROL Fork]**-activiteit bevat nu ook best practices. [Meer informatie](../../workflow/using/fork.md)
@@ -62,8 +64,6 @@ De lijst van technische workflows met de bijbehorende pakketten is verbeterd en 
 De sectie over probleemoplossing in de **Bewakingshandleiding** is gereorganiseerd en uitgebreid met een introductiepagina. [Meer informatie](../../production/using/troubleshooting.md).
 
 Er is een nieuwe sectie over het **importeren en exporteren van data** beschikbaar met nieuwe pagina&#39;s die betrekking hebben op workflows, gegevenscompressie, codering en best practices voor importeren. [Meer informatie](../../platform/using/get-started-data-import-export.md)
-
-Er is informatie toegevoegd over het toevoegen van koppelingen in e-mailberichten die kunnen worden aangepast en die ondersteuning bieden voor bijhouden. [Meer informatie](../../delivery/using/tracking-personalized-links.md).
 
 ## December 2020 {#dec-2020}
 
