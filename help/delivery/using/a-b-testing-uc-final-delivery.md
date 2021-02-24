@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '100'
+source-wordcount: '111'
 ht-degree: 0%
 
 ---
@@ -27,3 +27,5 @@ Wanneer het script is gemaakt om de testwinnaar A/B te selecteren, kunt u de par
    ![](assets/ab_test_final_delivery.png)
 
 Door de levering voor te bereiden die is opgegeven in de overgang (gedefinieerd via de **[!UICONTROL Javascript Code]**-activiteit), kunt u deze goedkeuren en het verzenden starten, zoals beschreven in de volgende stap.
+
+U kunt nu de workflow starten (zie [Stap 7: Start de workflow.](../../delivery/using/a-b-testing-uc-start-workflow.md)).
