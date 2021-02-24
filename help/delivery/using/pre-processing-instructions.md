@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 151667637a12667f5eda1590e64e01de493be9ce
+source-git-commit: 9f898e28b981ea4257c9f4b73a579d322ddbba89
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 1%
@@ -59,7 +59,7 @@ Waar:
 
 Object kan:
 
-* *&quot;levering&quot;: voor de huidige levering (zie details en beperkingen in de onderafdeling hieronder).
+* &quot;levering&quot;: voor de huidige levering (zie details en beperkingen in de onderafdeling hieronder).
 * &quot;provider&quot;: voor de huidige leverancier/het verpletteren (nms:externalAccount).
 * Een extra scriptobject: als een object in de context wordt geladen via: **Eigenschappen** > **Personalisatie** > **Objecten toevoegen in de uitvoeringscontext**.
 * Item van de foreach-lus: zie de onderstaande sectie [Foreach](#<%@-foreach).
