@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: URL-tracking personaliseren
-description: URL-tracking personaliseren
+title: Opties voor URL-tracking configureren
+description: Opties voor URL-tracking configureren
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 019c982dcf040fb2dc2a1c82d4a2ff5a964ec5fa
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 10%
+source-wordcount: '164'
+ht-degree: 4%
 
 ---
 
 
-# URL-tracking personaliseren{#personalizing-url-tracking}
+# Opties voor URL-tracking configureren{#personalizing-url-tracking}
 
 Geavanceerde instellingen voor het bijhouden van berichten zijn toegankelijk via het pictogram **[!UICONTROL Tracking & Images]** op de werkbalk van de wizard voor het verzenden van berichten.
 
