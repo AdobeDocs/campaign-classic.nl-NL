@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentatie
 translation-type: tm+mt
-source-git-commit: 4030eb1cf9aa78a10daffe9ea849aa205660e359
+source-git-commit: 6dbf77c29dddc4b718910835520e4480e01d0d4a
 workflow-type: tm+mt
-source-wordcount: '2351'
-ht-degree: 97%
+source-wordcount: '2368'
+ht-degree: 96%
 
 ---
 
@@ -199,7 +199,11 @@ ht-degree: 97%
    + Berichten traceren {#tracking-messages}
       + [Berichttracering](delivery/using/about-message-tracking.md)
       + [Getraceerde koppelingen configureren](delivery/using/how-to-configure-tracked-links.md)
-      + [URL-tracking personaliseren](delivery/using/personalizing-url-tracking.md)
+      + Het volgen van gepersonaliseerde verbindingen {#tracking-personalized-links}
+         + [Aan de slag met het bijhouden van persoonlijke koppelingen](delivery/using/tracking-personalized-links.md)
+         + [URL&#39;s bijhouden detecteren](delivery/using/detecting-tracking-urls.md)
+         + [Voorverwerkingsinstructies voor tracering](delivery/using/pre-processing-instructions.md)
+      + [Opties voor URL-tracking configureren](delivery/using/personalizing-url-tracking.md)
       + [De trackinglogboeken openen](delivery/using/accessing-the-tracking-logs.md)
       + [Tracking van tests](delivery/using/testing-tracking.md)
       + [Problemen bijhouden](delivery/using/tracking-troubleshooting.md)
