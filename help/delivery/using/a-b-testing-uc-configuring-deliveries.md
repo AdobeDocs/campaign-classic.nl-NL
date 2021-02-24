@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -51,3 +51,5 @@ De volgende stap is de leveringen te vormen. Zij zijn bestemd voor de drie popul
 1. Koppel de **[!UICONTROL Wait]** activiteit aan **[!UICONTROL JavaScript code]** activiteit.
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
+
+U kunt nu het script maken (zie [Stap 5: Maak het script (](../../delivery/using/a-b-testing-uc-script.md)).
