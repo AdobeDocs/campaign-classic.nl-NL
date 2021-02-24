@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 9%
+source-wordcount: '136'
+ht-degree: 8%
 
 ---
 
@@ -34,3 +34,5 @@ U moet uw workflow maken op het tabblad **[!UICONTROL Targeting and Workflows]**
 1. Gebruik de muis om activiteiten naar het werkstroomdiagram te slepen, inclusief een **[!UICONTROL Query]** (**[!UICONTROL Target]** tab), een **[!UICONTROL Split]** (**[!UICONTROL Target]** tab), twee **[!UICONTROL Email deliveries]** (**[!UICONTROL Deliveries]** tab), een **[!UICONTROL Wait]** activiteit (**[!UICONTROL Flow Control]** tab), een **[!UICONTROL JavaScript code]** activiteit (**[!UICONTROL Actions]** tab) en een **[!UICONTROL Delivery]** activiteit (**[!UICONTROL Actions]** tabblad).
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
+
+U kunt de bevolkingssteekproeven nu vormen (zie [Stap 2: Configureer populatiemonsters](../../delivery/using/a-b-testing-uc-population-samples.md)).
