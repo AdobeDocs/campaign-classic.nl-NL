@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
+source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
 workflow-type: tm+mt
-source-wordcount: '4045'
-ht-degree: 96%
+source-wordcount: '4066'
+ht-degree: 95%
 
 ---
 
@@ -62,6 +62,8 @@ De lijst van technische workflows met de bijbehorende pakketten is verbeterd en 
 De sectie over probleemoplossing in de **Bewakingshandleiding** is gereorganiseerd en uitgebreid met een introductiepagina. [Meer informatie](../../production/using/troubleshooting.md).
 
 Er is een nieuwe sectie over het **importeren en exporteren van data** beschikbaar met nieuwe pagina&#39;s die betrekking hebben op workflows, gegevenscompressie, codering en best practices voor importeren. [Meer informatie](../../platform/using/get-started-data-import-export.md)
+
+Er is informatie toegevoegd over het toevoegen van koppelingen in e-mailberichten die kunnen worden aangepast en die ondersteuning bieden voor bijhouden. [Meer informatie](../../delivery/using/tracking-personalized-links.md).
 
 ## December 2020 {#dec-2020}
 
