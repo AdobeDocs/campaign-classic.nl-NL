@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 10%
+source-wordcount: '92'
+ht-degree: 8%
 
 ---
 
@@ -31,3 +31,5 @@ We willen nu twee leveringssjablonen maken. Naar elke sjabloon wordt verwezen in
 1. Herhaal dit proces om een sjabloon voor levering B te maken.
 
    ![](assets/use_case_abtesting_deliverymodel_003.png)
+
+U kunt nu de leveringen in de workflow configureren (zie [Stap 4: Configureer de leveringen in de workflow.](../../delivery/using/a-b-testing-uc-configuring-deliveries.md))
