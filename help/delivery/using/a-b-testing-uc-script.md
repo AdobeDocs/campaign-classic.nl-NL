@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -169,3 +169,5 @@ In het bovenstaande voorbeeld kunt u de inhoud van een levering selecteren op ba
 * Aantal bezochte pagina&#39;s na ontvangst van een bericht: `[indicators/@totalWebPage]`,
 * Laagste abonnement: `[indicators/@optOutRatio]`,
 * Transactiebedrag: `[indicators/@amount]`.
+
+U kunt nu de uiteindelijke levering definiëren (zie [Stap 6: Bepaal de definitieve levering](../../delivery/using/a-b-testing-uc-final-delivery.md)).
