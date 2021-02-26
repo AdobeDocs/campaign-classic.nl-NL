@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 333d2221d4f86fe18232473385653ed8409adf54
+source-git-commit: 25673f33c626edd5b7f4c7ba240364b3ea8d616a
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '484'
 ht-degree: 6%
 
 ---
@@ -96,19 +96,9 @@ Om de projectgeloofsbrieven in Adobe Campaign toe te voegen, stel het volgende b
 nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
 ```
 
-De persoonlijke sleutel moet in base64 UTF-8-indeling worden gecodeerd. Dit doet u als volgt:
-
-1. Gebruik de persoonlijke sleutel die in [Stap 1 wordt geproduceerd: Sectie Adobe I/O-project maken/bijwerken](#creating-adobe-io-project). De persoonlijke sleutel moet dezelfde zijn als die waarmee de integratie is gemaakt.
-
-1. Met deze [website](https://www.base64encode.org/) kopieert u uw persoonlijke sleutel naar het corresponderende veld.
-
-   >[!NOTE]
-   >
-   >Soms wordt automatisch een extra regel toegevoegd wanneer u de persoonlijke sleutel kopieert/plakt. Vergeet niet deze te verwijderen voordat u uw persoonlijke sleutel gaat coderen.
-
-1. Klik op **[!UICONTROL Encode]**.
-
-1. Gebruik de zojuist gegenereerde persoonlijke sleutel die is gecodeerd in de indeling base64 UTF-8 om de bovenstaande opdracht uit te voeren.
+>[!NOTE]
+>
+>Codeer de persoonlijke sleutel in base64 UTF-8-indeling. Vergeet niet de nieuwe regel uit de sleutel te verwijderen voordat u deze codeert, behalve voor de persoonlijke sleutel. De persoonlijke sleutel moet dezelfde zijn als die waarmee de integratie is gemaakt. Als u de base64-codering van de persoonlijke sleutel wilt testen, kunt u [deze website](https://www.base64encode.org/) gebruiken.
 
 ## Stap 3: Door buizen uitgelijnde tag {#update-pipelined-tag} bijwerken
 
