@@ -7,17 +7,17 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: e2dfc34b35e6ce03715bd5723cff578a1aacd559
+source-git-commit: 4a56feac374506bb33ae6770aa247a197f1669fb
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
 
 
-# E-maillevering {#confirming-email-delivery} bevestigen
+# Belangrijkste stappen om een e-mail {#confirming-email-delivery} te verzenden
 
-Zodra uw e-mail is gecreeerd en gevormd, kunt u het naar het belangrijkste doel verzenden. In deze sectie worden de belangrijkste stappen beschreven om de levering van een e-mail te bevestigen.
+Zodra uw e-mail is gecreeerd en gevormd, kunt u het naar het belangrijkste doel verzenden. In deze sectie worden de belangrijkste stappen beschreven om de levering van een e-mail te controleren en te bevestigen.
 
 1. Controleer of u alle instellingen hebt geconfigureerd die specifiek zijn voor het verzenden van e-mail. Zie [E-mailparameters](../../delivery/using/email-parameters.md) voor meer informatie.
 1. Als de e-mail gereed is en u deze naar het hoofddoel verzendt, wordt aangeraden eventuele fouten op te sporen door proefdrukken te verzenden. Zie [Een proefdruk verzenden](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) voor meer informatie.
