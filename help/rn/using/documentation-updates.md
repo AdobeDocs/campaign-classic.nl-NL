@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 9f898e28b981ea4257c9f4b73a579d322ddbba89
+source-git-commit: add0efb4efd5a37129c649b942799622947f3143
 workflow-type: tm+mt
-source-wordcount: '4066'
+source-wordcount: '4092'
 ht-degree: 95%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 95%
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates per maand en per Campaign-release.
 
 Raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/using/latest-release.md) voor aan de release gerelateerde updates.
+
+## Maart 2021 {#march-2021}
+
+Er is informatie toegevoegd aan de sectie **[!UICONTROL Advanced JavaScript]** activiteit over hoe u de methode task.setCompleted() gebruikt om de taak te beëindigen en toekomstige terugroepingen te voorkomen. [Meer informatie](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
 ## Februari 2021 {#release-21.1}
 
