@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentatie
 translation-type: tm+mt
-source-git-commit: 6dbf77c29dddc4b718910835520e4480e01d0d4a
+source-git-commit: 4a56feac374506bb33ae6770aa247a197f1669fb
 workflow-type: tm+mt
-source-wordcount: '2368'
+source-wordcount: '2372'
 ht-degree: 96%
 
 ---
@@ -125,8 +125,8 @@ ht-degree: 96%
       + [Een e-maillevering maken](delivery/using/creating-an-email-delivery.md)
       + [De e-mailcontent definiëren](delivery/using/defining-the-email-content.md)
       + [Interactieve content definiëren](delivery/using/defining-interactive-content.md)
-      + E-mail {#sending-an-email} verzenden
-         + [E-maillevering bevestigen](delivery/using/sending-messages.md)
+      + De verzending van de e-mail {#sending-an-email} verzenden
+         + [Belangrijkste stappen om een e-mail te verzenden](delivery/using/sending-messages.md)
          + [E-mailparameters](delivery/using/email-parameters.md)
          + [Verzenden met de verbeterde MTA](delivery/using/sending-with-enhanced-mta.md)
          + [Verzenden op Japanse mobiele telefoons](delivery/using/sending-emails-on-japanese-mobiles.md)
