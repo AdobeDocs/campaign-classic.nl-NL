@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 8bcfc8826a66517e6a648dbc57b681778718c33c
+source-git-commit: add0efb4efd5a37129c649b942799622947f3143
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 4%
+source-wordcount: '261'
+ht-degree: 3%
 
 ---
 
@@ -59,3 +59,12 @@ Als u deze limiet wilt negeren, moet u de waarde instellen op **0**.
 * **[!UICONTROL Next calls]**: De tweede streek van de redacteur bevat het manuscript om tijdens de volgende vraag uit te voeren.
 * **[!UICONTROL Transitions]**: U kunt verschillende uitvoerovergangen voor activiteiten definiëren.
 * **[!UICONTROL Schedule]**: Op het  **[!UICONTROL Schedule]** tabblad kunt u plannen wanneer de activiteit moet worden geactiveerd.
+
+Geavanceerde JavaScript-code is een permanente taak die regelmatig wordt opgevraagd als deze niet is gemarkeerd als voltooid. Als u de taak wilt beëindigen en toekomstige terugroepingen wilt voorkomen, moet u de methode **task.setCompleted()** in de sectie **[!UICONTROL Next calls]** gebruiken:
+
+```
+task.postEvent(task.transitionByName("ok")); // to transition to Ok branch
+task.setCompleted();
+
+return 0;
+```
