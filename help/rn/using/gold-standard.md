@@ -34,10 +34,8 @@ _22 december 2020_
 > * Deze versie wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **31 maart 2021** verbinding te kunnen maken met Campaign.
 > * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
 > * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overgaan op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De oude oAuth-verificatiemodus wordt op **30 april 2021** buiten gebruik gesteld.
-
 >
->
-Meer informatie vindt u in de [veelgestelde vragen over de Gold Standard 11-upgrade](https://helpx.adobe.com/nl/campaign/kb/gold-standard-upgrade.html).
+>Meer informatie vindt u in de [veelgestelde vragen over de Gold Standard 11-upgrade](https://helpx.adobe.com/nl/campaign/kb/gold-standard-upgrade.html).
 
 De build 9032@d3b452f bevat de volgende verbeteringen en oplossingen:
 
