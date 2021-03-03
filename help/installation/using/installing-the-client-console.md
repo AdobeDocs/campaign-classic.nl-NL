@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: 1b02c3870ddc01705f01ea992e734cf0810e003a
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '494'
 ht-degree: 6%
 
 ---
@@ -47,7 +47,8 @@ Volg onderstaande stappen om de Adobe Campaign-clientconsole te downloaden en in
 
 >[!NOTE]
 >
->In Windows kunt u het bestand **nlclient.exe** rechtstreeks starten vanuit de map `[INSTALL]/bin` op een Windows-server, waarbij `[INSTALL]` het toegangspad voor de installatiemap van Adobe Campaign is.
+>U kunt de update aan de recentste versie aan alle gebruikers van de de cliëntconsole van de Campagne voorstellen door het console uitvoerbare dossier op een specifieke omslag van de server van de Marketing van de Campagne te kopiëren. [Meer informatie](../../installation/using/client-console-availability-for-windows.md).
+
 
 ## De verbinding maken{#create-the-connection}
 
