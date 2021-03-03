@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 3105372bc020057727e28d26e7969c31ac290115
+source-git-commit: 23ba4091a1ffaa0245c58e8d346c60b54f79b4a2
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 100%
+source-wordcount: '1112'
+ht-degree: 91%
 
 ---
 
@@ -27,15 +27,30 @@ Raadpleeg [dit artikel](https://helpx.adobe.com/nl/campaign/kb/gold-standard.htm
 
 ## ![](assets/do-not-localize/green_2.png) De Gold Standard 11-release{#gs-11}
 
+_2 maart 2021_
+
+De build 9032@10c2709 bevat de volgende oplossing:
+
+* Oplossing voor een regressie waardoor bepaalde componenten van de console niet konden worden gebruikt, zoals de datumkiezer en het beheer van afbeeldingen in leveringen. (NEO-31453, NEO-31454)
+
+**Alleen consoleverbetering is verplicht. Er is geen serverupgrade vereist.**
+
+>[!NOTE]
+>
+> Verbind met [Adobe de Distributie van de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) om de nieuwe versie te downloaden. Leer hoe u de console-update [op deze pagina ](../../installation/using/client-console-availability-for-windows.md) aan alle eindgebruikers kunt voorstellen.
+
+
 _22 december 2020_
 
 >[!CAUTION]
 >
 > * Deze versie wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **31 maart 2021** verbinding te kunnen maken met Campaign.
 > * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
-> * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overgaan op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De oude oAuth-verificatiemodus wordt op **30 april 2021** buiten gebruik gesteld.
+> * Als u de Experience Cloud Triggers integratie door authentificatie Auth gebruikt, moet u naar Adobe I/O gaan zoals [in deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De oude oAuth-verificatiemodus wordt op **30 april 2021** buiten gebruik gesteld.
+
 >
->Meer informatie vindt u in de [veelgestelde vragen over de Gold Standard 11-upgrade](https://helpx.adobe.com/nl/campaign/kb/gold-standard-upgrade.html).
+>
+Meer informatie vindt u in de [veelgestelde vragen over de Gold Standard 11-upgrade](https://helpx.adobe.com/nl/campaign/kb/gold-standard-upgrade.html).
 
 De build 9032@d3b452f bevat de volgende verbeteringen en oplossingen:
 
@@ -51,7 +66,7 @@ De build 9032@d3b452f bevat de volgende verbeteringen en oplossingen:
 
 ## ![](assets/do-not-localize/red_2.png) De Gold Standard 10-release{#gs-10}
 
-_7 juli 2020_
+_woensdag 7 juli 2020_
 
 De build 9032@efd8a94 bevat de volgende oplossing:
 
