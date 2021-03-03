@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
 workflow-type: tm+mt
 source-wordcount: '3127'
-ht-degree: 23%
+ht-degree: 22%
 
 ---
 
@@ -25,14 +25,14 @@ _16 december 2020_
 >
 > * Deze versie wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **31 maart 2021** verbinding te kunnen maken met Campaign.
 > * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
-> * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overgaan op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De oude oAuth-verificatiemodus wordt op **30 april 2021** buiten gebruik gesteld.
+> * Als u de Experience Cloud Triggers integratie door authentificatie Auth gebruikt, moet u naar Adobe I/O gaan zoals [in deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De oude oAuth-verificatiemodus wordt op **30 april 2021** buiten gebruik gesteld.
 
 
 
 **Verbeteringen**
 
 * Het verbindingsprotocol is bijgewerkt en aangepast aan het nieuwe IMS-verificatiemechanisme.
-* De de integratieauthentificatie van trekkers oorspronkelijk die op de authentificatie van AUTH wordt gebaseerd om tot pijpleiding toegang te hebben is veranderd en naar Adobe I/O verplaatst. [Meer informatie](../../integrations/using/configuring-adobe-io.md)
+* De de integratieauthentificatie van trekkers oorspronkelijk gebaseerd op de authentificatie van de AUTH aan toegangspijplijn is veranderd en aan Adobe I/O verplaatst. [Meer informatie](../../integrations/using/configuring-adobe-io.md)
 * Nu het verouderde binaire protocol voor iOS APN’s niet meer wordt ondersteund, zijn alle instanties die dit protocol gebruiken, bijgewerkt naar het HTTP/2-protocol tijdens de postupgrade.
 * Er is een beveiligingsprobleem opgelost ter versterking van de bescherming tegen SSRF-aanvallen (Server Side Request Forgery). (NEO-27777)
 * Probleem verholpen waarbij de SMPP-connector werd gedeactiveerd na een verbindingsfout, waardoor andere SMS-leveringen niet werden verzonden en prestatieproblemen optraden.
@@ -41,7 +41,7 @@ _16 december 2020_
 * Probleem verholpen waarbij workflows konden mislukken wanneer een activiteit **Verrijking** werd uitgevoerd. (NEO-17338)
 * Er is een probleem verholpen in workflows tijdens het ophalen van records uit een externe database en het invoegen van records in de Campaign-database. (NEO-26359)
 * Er is een probleem verholpen waarbij de server vastliep door geheugenbeschadiging te voorkomen tijdens het opschonen van de expressieparser.
-* Probleem verholpen waarbij de functie **NoNull** niet meer in Oracle-databases werkte na de upgrade naar build 9032. (NEO-26488)
+* Probleem verholpen waarbij de functie **NoNull** na de upgrade naar versie 9032 niet meer kon werken in databases met Oracles. (NEO-26488)
 * Er is een probleem verholpen met de bewerking van een campagnesjabloonbeschrijving waardoor de knop **Opslaan** niet werd weergegeven bij het kopiëren en plakken van symbolen zoals bijvoorbeeld Japanse tekens. (NEO-27071)
 * Er is een probleem verholpen waardoor de beschrijving van een campagne of campagnesjabloon niet kon worden opgeslagen wanneer er buiten het venster werd geklikt voordat op de knop **Opslaan** was geklikt. (NEO-27449)
 * Er is een probleem verholpen op het niveau van proxyconfiguratie waardoor u zich na de laatste Windows 10-update niet kon aanmelden bij Adobe Campaign. (NEO-27813)
@@ -111,7 +111,7 @@ _13 augustus 2019_
 * Probleem verholpen met de installatie van het midEmitter-pakket via de opdrachtregel.
 * Een nieuwe authentificatieoptie is toegevoegd om geloofsbrieven OAuth binnen de AC schakelaar met de Dynamica van Microsoft te steunen. (NEO-11982)
 * Probleem verholpen met UUID-beheer (Unique Universal Identifier) waardoor de workflowactiviteiten voor het laden van query&#39;s en gegevens mislukten met Hive FDA.
-* Oplossing voor een regressie op Oracle waarbij sommige functies na de upgrade als ongeldig werden beschouwd. (NEO-12759)
+* Oplossing voor een regressie op het Oracle waardoor sommige functies na de upgrade als ongeldig werden beschouwd. (NEO-12759)
 * Oplossing voor een regressie die leidde tot een onjuiste tijdzone die werd gekozen wanneer het plaatsen van de tijd in een de werkschemaactiviteit van de Planner.
 
 ## ![](assets/do-not-localize/green_2.png) Release 19.1.4 - build 9032{#release-19-1-4-build-9032}
@@ -167,7 +167,7 @@ _30 mei 2019_
    <td> Update<br /> voor compatibiliteitsmatrix </td> 
    <td> Met deze nieuwe versie ondersteunt Adobe Campaign nu de volgende databasesystemen. Raadpleeg de <a href="https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html">Compatibiliteitsmatrix</a>.<br /> 
     <ul> 
-     <li> <p>Oracle 18c</p> </li> 
+     <li> <p>Oracle 18 quater</p> </li> 
      <li> <p>MySQL 5.7 (FDA)</p> </li> 
      <li> <p>SQL Server 2017</p> </li> 
      <li> <p>Teradata 16 (FDA)</p> </li> 
@@ -212,7 +212,7 @@ _30 mei 2019_
 * Verbeterde het beheer van lange naamindexen die postupgrade-problemen kunnen veroorzaken.
 * Nu, tijdens de analyse van een decomail levering, als de publicatiemodus aan **[!UICONTROL None]** in de plaatsingstovenaar wordt geplaatst, wordt een fout geregistreerd en de analyse wordt tegengehouden: &quot;Publicatiemodus is ingesteld op &#39;none&#39;: Kan afbeelding niet insluiten. De beelden zullen niet op eigenschaptelefoon worden getoond.&quot; (NEO-12208)
 * Het breedbandbeheer is verbeterd voor transactioneel overseinen. Wanneer de uitzendingen van de uitvoeringsinstantie aan de controleinstantie worden gesynchroniseerd, wordt het @lastModified gebied bijgewerkt aan de huidige datum van het systeem. De optie MC_Update_BlLastModified is toegevoegd voor besturingsinstanties. Waar betekent dat de huidige datum op de controleinstantie (standaardgedrag) zal worden gebruikt. Onwaar betekent dat we de @lastModified-datum van de uitzendingsinstantie gebruiken. (NEO-12579)
-* In de tijdelijke tabellen met coupons zijn indexen toegevoegd om het verzenden van leveringen te optimaliseren. (NEO-12437)
+* Er zijn indexen toegevoegd aan de tijdelijke tabellen met coupons om het verzenden van leveringen te optimaliseren. (NEO-12437)
 * In de integratie Analytics is het nu toegestaan AAM segmentgegevens op te halen met het teken %. (NEO-12025)
 * Verwijderd de recordlimiet van 10.000 in WorkflowHeatmap om een probleem met ontbrekende gegevens op te lossen. (NEO-12329)
 * Open Office wordt niet ondersteund en wordt nu volledig uit de toepassing verwijderd. Als u het nog steeds gebruikt, ga naar Libre Office omdat het vanaf 19.1 niet meer werkt.
@@ -242,7 +242,7 @@ _30 mei 2019_
 * Probleem verholpen waarbij u een webtoepassing niet kon verwijderen, zelfs als u de juiste toegangsrechten had. (NEO-12072)
 * Probleem verholpen waarbij enkele waarden zouden kunnen worden overschreven bij het exporteren en vervolgens importeren van een object via XML. De optie XtkExport_IncludeDefaultValues is toegevoegd. Wanneer ingesteld op Waar (standaardgedrag), worden alle waarden geëxporteerd. Wanneer ingesteld op Onwaar, worden wijzigingen overschreven met de standaardwaarde. (NEO-11979)
 * Probleem verholpen waarbij de **[!UICONTROL Alert]**-workflowactiviteit mislukte wanneer een verrijkingsactiviteit na een query werd toegevoegd. (NEO-12132)
-* Probleem verholpen met Oracle-instellingen waarbij verschuivingen van pijplijnen (triggers) niet correct zijn opgehaald uit de database waardoor duplicaten werden veroorzaakt. (NEO-12121)
+* Probleem verholpen met instellingen van Oracles waarbij verschuivingen van pijplijnen (triggers) niet correct zijn opgehaald uit de database waardoor duplicaten werden veroorzaakt. (NEO-12121)
 * Correctie van een probleem dat weergavefouten kon veroorzaken in draaitabellen bij gebruik van de integratie Analytics (NEO-12103)
 * Probleem opgelost met het rapport van de beschrijvende analyse. (NEO-11414)
 * Probleem verholpen met CRM-connectors wanneer de externe tabel een veld met een onderstrepingsteken in de naam bevatte.
