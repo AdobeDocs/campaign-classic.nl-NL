@@ -7,15 +7,15 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
 source-wordcount: '361'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
 
-# Een webapplicatie ontwerpen{#designing-a-web-application}
+# Een webtoepassing ontwerpen{#designing-a-web-application}
 
 Webtoepassingen worden volgens hetzelfde principe gemaakt en beheerd als [online enquêtes](../../web/using/about-surveys.md).
 
