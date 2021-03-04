@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Rechten beheren
-description: Rechten beheren
+title: Workflowmachtigingen beheren
+description: Leer hoe u workflowmachtigingen beheert
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 1%
+source-wordcount: '321'
+ht-degree: 0%
 
 ---
 
 
-# Rechten beheren{#managing-rights}
+# Workflowmachtigingen beheren{#managing-rights}
 
 Als ze geen beheerder zijn, hebben Adobe Campaign-operatoren toegangsrechten nodig voor het maken, uitvoeren of wijzigen van workflows.
 
