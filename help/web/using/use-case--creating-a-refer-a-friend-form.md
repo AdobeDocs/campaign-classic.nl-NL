@@ -7,15 +7,15 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 3%
+source-wordcount: '619'
+ht-degree: 2%
 
 ---
 
 
-# Gebruiksscenario: een formulier voor de verwijzing van een vriend maken{#use-case-creating-a-refer-a-friend-form}
+# Hoofdlettergebruik: een verwijzingsformulier maken{#use-case-creating-a-refer-a-friend-form}
 
 In dit voorbeeld willen we een wedstrijd aanbieden aan de ontvangers in de database. Het webformulier bevat een sectie waarin u antwoorden kunt invoeren en een andere sectie waarin u een vriend kunt verwijzen door zijn e-mailadres in te voeren.
 
