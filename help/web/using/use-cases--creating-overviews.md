@@ -7,15 +7,15 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 1%
+source-wordcount: '948'
+ht-degree: 0%
 
 ---
 
 
-# Gebruiksscenario’s: overzichten maken{#use-cases-creating-overviews}
+# Gebruik hoofdletters/kleine letters: overzichtspagina&#39;s maken{#use-cases-creating-overviews}
 
 In het volgende voorbeeld, zullen wij overzicht-type de toepassingen van het Web tot stand brengen om alle toepassingen van het Web in uw gegevensbestand te tonen. Configureer de volgende elementen:
 
