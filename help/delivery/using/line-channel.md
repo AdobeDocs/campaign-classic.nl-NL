@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 14513d5ecbfdd5637b764c8f19bc01358e63c130
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1101'
 ht-degree: 3%
 
 ---
 
 
-# LINE-kanaal{#line-channel}
+# LINE-leveringen maken{#line-channel}
 
 LINE is een toepassing voor gratis instant messaging-, spraak- en videogesprekken die beschikbaar zijn op alle smartphones (iPhone, Android, Windows Phone, Blackberry, Nokia) en op pc&#39;s. Met Adobe Campaign kunt u LIJNberichten verzenden.
 
