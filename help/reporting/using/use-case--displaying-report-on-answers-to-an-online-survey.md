@@ -7,15 +7,15 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 7%
+source-wordcount: '475'
+ht-degree: 5%
 
 ---
 
 
-# Gebruiksscenario: een rapport weergeven over antwoorden op een online enquête{#use-case-displaying-report-on-answers-to-an-online-survey}
+# Hoofdlettergebruik: een rapport weergeven over antwoorden op een online enquête{#use-case-displaying-report-on-answers-to-an-online-survey}
 
 Antwoorden op Adobe Campaign-enquêtes kunnen worden verzameld en geanalyseerd met behulp van speciale rapporten.
 
