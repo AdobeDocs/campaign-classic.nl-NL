@@ -7,15 +7,15 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '733'
 ht-degree: 10%
 
 ---
 
 
-# Kubussen{#about-cubes}
+# Aan de slag met kubussen{#about-cubes}
 
 De exploratie van gegevens in het gegevensbestand wordt aangeboden via **de Analytics van de Marketing** module. Het laat u toe om gegevens te analyseren en te meten, statistieken te berekenen, en rapportverwezenlijking en berekening te vereenvoudigen en te optimaliseren. Daarnaast kunt u met Marketing Analytics rapporten maken en doelpopulaties maken. Zodra deze worden geïdentificeerd, worden zij opgeslagen in lijsten die in Adobe Campaign (gericht, segmentatie, enz.) kunnen worden gebruikt.
 
