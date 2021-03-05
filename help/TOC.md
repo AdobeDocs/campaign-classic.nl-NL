@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentatie
 translation-type: tm+mt
-source-git-commit: 14513d5ecbfdd5637b764c8f19bc01358e63c130
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2391'
 ht-degree: 58%
 
 ---
@@ -237,10 +237,12 @@ ht-degree: 58%
       + [Marketingcampagnes ontwerpen](campaign/using/designing-marketing-campaigns.md)
       + [Toegang tot marketingcampagnes](campaign/using/accessing-marketing-campaigns.md)
    + Campagnes orkestreren {#orchestrate-campaigns}
-      + [Marketingcampagnes instellen](campaign/using/setting-up-marketing-campaigns.md)
-      + [Sjablonen voor marketingcampagnes](campaign/using/marketing-campaign-templates.md)
-      + [Aflevering van marketingcampagnes](campaign/using/marketing-campaign-deliveries.md)
-      + [Goedkeuring van handelscampagne](campaign/using/marketing-campaign-approval.md)
+      + [Aan de slag met marketingcampagnes](campaign/using/setting-up-marketing-campaigns.md)
+      + [Sjablonen maken en configureren](campaign/using/marketing-campaign-templates.md)
+      + [Leveringen toevoegen](campaign/using/marketing-campaign-deliveries.md)
+      + [Selecteer het publiek](campaign/using/marketing-campaign-target.md)
+      + [Documenten en middelen beheren](campaign/using/marketing-campaign-assets.md)
+      + [Goedkeuringen instellen en beheren](campaign/using/marketing-campaign-approval.md)
       + [Uw campagnes bewaken](campaign/using/marketing-campaign-monitoring.md)
       + [Providers, voorraden en budgetten](campaign/using/providers--stocks-and-budgets.md)
    + Taken, resources en budgetten {#tasks--resources-and-budgets}
