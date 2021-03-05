@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Marketingcampagnes opzetten
-description: Marketingcampagnes opzetten
+title: Marketingscampagnes maken
+description: Meer informatie over het maken en uitvoeren van marketingcampagnes
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 1%
+source-wordcount: '1253'
+ht-degree: 2%
 
 ---
 
 
-# Marketing-campagnes instellen{#setting-up-marketing-campaigns}
+# Aan de slag met marketingcampagnes{#setting-up-marketing-campaigns}
 
 De campagnes omvatten acties (leveringen) en processen (het invoeren of het halen van dossiers), evenals middelen (marketing documenten, leveringsoverzichten). Ze worden gebruikt in marketingcampagnes. Campagnes maken deel uit van een programma en programma&#39;s zijn opgenomen in een campagneplan.
 
@@ -23,33 +23,21 @@ De campagnes omvatten acties (leveringen) en processen (het invoeren of het hale
 
 Een marketingcampagne maken:
 
-1. Een campagne maken: campagnes en hun kenmerken te ontdekken : label, type, begin- en einddatum, begroting, bijbehorende middelen, manager(s) en deelnemers.
+1. Een campagne maken: campagnes en hun kenmerken te ontdekken : label, type, begin- en einddatum, begroting, bijbehorende middelen, manager(s) en deelnemers. [Meer informatie](#creating-a-campaign).
 
-   Zie [Een campagne maken](#creating-a-campaign).
+1. Doelpopulatie(s) definiëren: Maak een workflow met query&#39;s als doel. [Meer informatie](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
 
-1. Doelpopulatie(s) definiëren: Maak een workflow met query&#39;s als doel.
+1. Leveringen maken: selecteert u kanalen en definieert u de inhoud die u wilt verzenden. [Meer informatie](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
 
-   Zie [De doelpopulatie selecteren](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
+1. Leveringen goedkeuren. [Meer informatie](../../campaign/using/marketing-campaign-approval.md).
 
-1. Leveringen maken: selecteert u kanalen en definieert u de inhoud die u wilt verzenden.
+1. Leveringen controleren. [Meer informatie](../../campaign/using/marketing-campaign-monitoring.md).
 
-   Zie [Leveringen maken](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
+1. Plan campagnes en bijbehorende kosten. [Meer informatie](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
-1. Leveringen goedkeuren.
+Wanneer deze stappen zijn voltooid, kunt u de leveringen starten (zie [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), de gegevens, processen en informatie met betrekking tot de leveringen controleren en, indien nodig, de bijbehorende documenten beheren (zie [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). U kunt ook de uitvoering van de verwerkingsfasen van campagnes en leveringen volgen (zie [deze sectie](../../campaign/using/marketing-campaign-monitoring.md)).
 
-   Zie [Goedkeuringsproces](../../campaign/using/marketing-campaign-approval.md#approval-process).
-
-1. Leveringen controleren.
-
-   Zie [Bewaking](../../campaign/using/marketing-campaign-monitoring.md).
-
-1. Plan campagnes en bijbehorende kosten.
-
-   Zie [Serviceproviders en hun kostenstructuren maken](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
-
-Wanneer deze stappen zijn voltooid, kunt u de leveringen starten (zie [Een levering starten](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), de gegevens, processen en informatie met betrekking tot de leveringen controleren en, indien nodig, de bijbehorende documenten beheren (zie [Gekoppelde documenten beheren](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). U kunt de uitvoering van de verwerkingsfasen van campagnes en leveringen (zie [Tracking](../../campaign/using/marketing-campaign-monitoring.md)) ook volgen.
-
-## Plan- en programmahiërarchie {#creating-plan-and-program-hierarchy} maken
+## Plan- en programmahiërarchie maken {#creating-plan-and-program-hierarchy}
 
 Om uw omslaghiërarchie voor marketing plannen en programma&#39;s te vormen:
 
@@ -197,7 +185,7 @@ Pas de volgende procedure toe om de terugkerende campagne te maken en de workflo
 
 Een periodieke campagne is een campagne die op een specifiek malplaatje wordt gebaseerd dat u campagneinstanties laat tot stand brengen die op een uitvoeringsprogramma worden gebaseerd. Campagneinstanties worden automatisch gemaakt op basis van een periodiek campagnemalplaatje, afhankelijk van de frequentie die in het sjabloonprogramma is gedefinieerd.
 
-#### Het creëren van het campagnemalplaatje {#creating-the-campaign-template-1}
+#### De campagnemalplaatje {#creating-the-campaign-template-1} maken
 
 1. Creeer een **[!UICONTROL Periodic]** campagnemalplaatje, bij voorkeur door een bestaand campagnemalplaatje te dupliceren.
 
@@ -239,4 +227,4 @@ In deze video ziet u hoe u een marketingplan, programma&#39;s en campagnes kunt 
 
 >[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
 
-Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) extra Campaign Classic hoe kan ik-video&#39;s beschikbaar.
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) extra instructievideo&#39;s voor campagnes beschikbaar.
