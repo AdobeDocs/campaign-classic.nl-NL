@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '495'
 ht-degree: 13%
 
 ---
@@ -67,7 +67,7 @@ Tijdens de voorbereiding van de levering worden ontvangers uitgesloten wanneer a
 
 ### Hoe stelt u vermoeidheidsbeheer in met behulp van typologische regels
 
-In deze video wordt uitgelegd hoe u vermoeidheidsbeheer in Adobe Campaign Classic kunt implementeren door gebruik te maken van typologische regels.
+In deze video wordt uitgelegd hoe u vermoeidheidsbeheer in Adobe Campaign kunt implementeren door gebruik te maken van typologische regels.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
 
@@ -78,7 +78,7 @@ In deze video wordt uitgelegd hoe u vermoeidheidsbeheer in Adobe Campaign Classi
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
 
-Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) extra Campaign Classic hoe kan ik-video&#39;s beschikbaar.
+Er zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) extra instructievideo&#39;s voor campagnes beschikbaar.
 
 **Verwant onderwerp**
 
