@@ -2,20 +2,20 @@
 solution: Campaign Classic
 product: campaign
 title: Hypotheses maken
-description: Hypotheses maken
+description: Leer hoe u hypothesen maakt in Campagne Response Manager
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
 
 
-# Hypotheses maken{#creating-hypotheses}
+# hypothesen maken{#creating-hypotheses}
 
 Er zijn verschillende mogelijkheden om hypothesen te creëren/te koppelen aan een campagneaanbod of levering:
 
@@ -76,11 +76,11 @@ U kunt als volgt een hypothese over een bestaande levering maken:
 
 1. Wijzig zo nodig de instellingen en start de hypothese opnieuw.
 
-## Verwijzen naar een hypothese in een campagnelevering {#referencing-a-hypothesis-in-a-campaign-delivery}
+## Verwijs naar een hypothese in een campagnelevering {#referencing-a-hypothesis-in-a-campaign-delivery}
 
 U kunt in een marketingcampagne naar een hypothese verwijzen voordat deze wordt gestart. In dit geval wordt de hypothese automatisch gestart zodra de levering is verzonden, op basis van de uitvoeringsinstellingen die in de hypothesesjabloon zijn gedefinieerd. U kunt als volgt een hypothese in een levering maken:
 
-1. Afhankelijk van uw behoeften kunt u een of meer **[!UICONTROL Delivery]** typesjablonen maken, zoals beschreven in [Een hypothesemodel maken](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model)
+1. Afhankelijk van uw behoeften, kunt u één of meerdere **[!UICONTROL Delivery]** typesjablonen tot stand brengen, zoals die in [deze sectie](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model) worden beschreven
 1. Maak een marketingcampagne en maak doelgerichte workflows.
 1. Klik in het leveringsvenster op het pictogram **[!UICONTROL Delivery measurement]**.
 1. Selecteer het hypothesemalplaatje (de vraag die in het model wordt gevormd wordt getoond in het hypothesevenster).
@@ -108,13 +108,13 @@ U kunt rechtstreeks verwijzen naar een hypothese op campagnereniveau. In dit gev
 
 De hypotheseresultaten kunnen worden bekeken op de tabbladen **[!UICONTROL General]** en **[!UICONTROL Reactions]** van de hypothese (zie [Hypothese bijhouden](../../campaign/using/hypothesis-tracking.md))
 
-Voor meer informatie kunt u ook naar [Voorbeeld verwijzen: het creëren van een hypothese verbonden aan een levering](#example--creating-a-hypothesis-linked-to-a-delivery).
+Voor meer informatie, kunt u ook naar [dit sample](#example--creating-a-hypothesis-linked-to-a-delivery) verwijzen.
 
-## Een hypothese maken over een aanbieding {#creating-a-hypothesis-on-an-offer}
+## Een hypothese maken op een aanbieding {#creating-a-hypothesis-on-an-offer}
 
 Het creëren van een hypothese over een aanbiedingsvoorstel is vergelijkbaar met het creëren van een hypothese over de levering tijdens de vlucht. De hypothese kan worden uitgevoerd zolang het aanbod actief is. De berekeningsperiode is gebaseerd op de datum van het voorstel. Wanneer de hypothese u een ontvanger aan een aankoop laat verbinden, kan de status van het aanbiedingsvoorstel waarschijnlijk worden goedgekeurd automatisch worden veranderd (voor meer op dit, verwijs naar [Transacties](../../campaign/using/hypothesis-templates.md#transactions)).
 
-1. Maak een of meer **[!UICONTROL Offer]**-typemodellen zoals beschreven in [Een hypothesemodel maken](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model).
+1. Maak een of meer **[!UICONTROL Offer]**-typemodellen zoals beschreven in [deze sectie](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model).
 1. Ga naar de **[!UICONTROL Campaign management > Measurement hypotheses]** knoop.
 1. Maak een **[!UICONTROL Offers]**-typehypothese door het eerder gemaakte model te selecteren.
 
@@ -138,11 +138,11 @@ Het creëren van een hypothese over een aanbiedingsvoorstel is vergelijkbaar met
 
    Als de optie **[!UICONTROL Update offer proposition status]** in het hypothesemalplaatje werd toegelaten, wordt de status van het aanbiedingsvoorstel automatisch veranderd, daardoor verstrekkend terugkoppel op het effect van de campagne (voor meer op dit, verwijs naar [Transacties](../../campaign/using/hypothesis-templates.md#transactions)).
 
-## Voorbeeld: het creëren van een hypothese verbonden aan een levering {#example--creating-a-hypothesis-linked-to-a-delivery}
+## Voorbeeld: een hypothese maken die verband houdt met een levering {#example--creating-a-hypothesis-linked-to-a-delivery}
 
-In dit voorbeeld willen we een hypothese creëren die gekoppeld is aan een levering. Deze hypothese is gebaseerd op het eerder gemaakte model (zie [Voorbeeld: het creëren van een hypothesemalplaatje op een levering](../../campaign/using/hypothesis-templates.md#example--creating-a-hypothesis-template-on-a-delivery)). Vervolgens wordt de query die van het model is overgenomen, verfijnd en wordt een hypothese gemaakt voor een specifiek artikel van de aankooptabel.
+In dit voorbeeld willen we een hypothese creëren die gekoppeld is aan een levering. Deze hypothese is gebaseerd op het eerder gemaakte model (zie [deze sample](../../campaign/using/hypothesis-templates.md#example--creating-a-hypothesis-template-on-a-delivery)). Vervolgens wordt de query die van het model is overgenomen, verfijnd en wordt een hypothese gemaakt voor een specifiek artikel van de aankooptabel.
 
-1. Creeer een campagne en een levering (Voor meer op dit, verwijs naar [Creërend een campagne](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)).
+1. Maak een campagne en een levering (Raadpleeg [Marketingcampagnes maken](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign) voor meer informatie hierover).
 
    In ons voorbeeld, zullen wij een directe posttype levering gebruiken.
 
@@ -152,7 +152,7 @@ In dit voorbeeld willen we een hypothese creëren die gekoppeld is aan een lever
 
    >[!NOTE]
    >
-   >Voor meer informatie, verwijs naar [Bepalend een controlegroep](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+   >Voor meer informatie, verwijs naar [Bepaal een controlegroep](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
 1. Open **[!UICONTROL Direct mail delivery]** en klik **[!UICONTROL Delivery measurement]** pictogram, dan klik **[!UICONTROL Add]**.
 
@@ -174,7 +174,7 @@ In dit voorbeeld willen we een hypothese creëren die gekoppeld is aan een lever
 
    ![](assets/response_hypothesis_delivery_example_008.png)
 
-1. Start de doelworkflow en voer de benodigde controles uit totdat de campagne is voltooid (zie [Starten van een levering](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery) voor meer informatie hierover).
+1. Start de doelworkflow en voer de benodigde controles uit totdat de campagne is voltooid (zie [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery) voor meer informatie).
 
    ![](assets/response_hypothesis_delivery_example_009.png)
 
