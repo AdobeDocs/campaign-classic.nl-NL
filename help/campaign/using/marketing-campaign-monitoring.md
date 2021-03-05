@@ -7,17 +7,17 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 1%
+source-wordcount: '245'
+ht-degree: 0%
 
 ---
 
 
-# Marketingscampagnes volgen {#monitoring-marketing-campaigns}
+# Marketingscampagnes {#monitoring-marketing-campaigns} controleren
 
-## Een campagne opvolgen {#tracking-a-campaign}
+## Een campagne bijhouden {#tracking-a-campaign}
 
 Voor elke campagne, laat het **[!UICONTROL Tracking]** lusje u alle banen en hun status bekijken. De volgende informatie is toegankelijk via dit subtabblad:
 
@@ -29,7 +29,7 @@ Voor elke campagne, laat het **[!UICONTROL Tracking]** lusje u alle banen en hun
 
    ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
 
-* In het subtabblad **[!UICONTROL Tasks]** worden alle taken gegroepeerd die aan de campagne zijn gekoppeld. In deze weergave kunt u ze bewerken of verwijderen. De taken zijn beschikbaar met de toepassing MRM. Ze worden beschreven in [Taken maken en beheren](../../campaign/using/creating-and-managing-tasks.md).
+* In het subtabblad **[!UICONTROL Tasks]** worden alle taken gegroepeerd die aan de campagne zijn gekoppeld. In deze weergave kunt u ze bewerken of verwijderen. De taken zijn beschikbaar met de toepassing MRM. Deze worden beschreven in [deze sectie](../../campaign/using/creating-and-managing-tasks.md).
 
    ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
@@ -49,10 +49,10 @@ Als u de status van een levering wilt controleren, bewerkt u deze en bekijkt u h
 
 >[!NOTE]
 >
->Informatie over leveringsdetails is beschikbaar in [Verzendberichten](../../delivery/using/about-message-tracking.md) sectie.
+>Informatie over leveringsdetails is beschikbaar in [deze sectie](../../delivery/using/about-message-tracking.md) sectie.
 
 ## Reeksspatiëring {#execution-tracking}
 
 U kunt de status van leveringen opzoeken door op de **[!UICONTROL Deliveries]** te klikken, die toegankelijk is via de Adobe Campaign-startpagina. Zie [Aflevering bijhouden](#delivery-tracking).
 
-Informatie over de processen die in een campagne worden uitgevoerd, wordt verzameld op het tabblad **[!UICONTROL Edit > Audit]** van de campagne. Daar kunt u de lijst met leveringen weergeven in de campagne. Zie [Een campagne bijhouden](#tracking-a-campaign).
+Informatie over de processen die in een campagne worden uitgevoerd, wordt verzameld op het tabblad **[!UICONTROL Edit > Audit]** van de campagne. Daar kunt u de lijst met leveringen weergeven in de campagne. [Meer informatie](#tracking-a-campaign).
