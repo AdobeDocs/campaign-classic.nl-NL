@@ -7,9 +7,9 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '803'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ Als u een aanbieding wilt presenteren tijdens een marketingcampagne, maakt u gew
 
 ![](assets/offer_delivery_009.png)
 
-Raadpleeg [Delivery](../../delivery/using/about-direct-mail-channel.md) en [Campagne](../../campaign/using/setting-up-marketing-campaigns.md) voor meer informatie over leveringen en marketingcampagnes.
+Meer informatie over directe mailleveringen [in deze sectie](../../delivery/using/about-direct-mail-channel.md). Meer informatie over marketingcampagnes [in deze sectie](../../campaign/using/setting-up-marketing-campaigns.md).
 
 ### Belangrijkste stappen voor het invoegen van een aanbieding in een levering {#main-steps-for-inserting-an-offer-into-a-delivery}
 
@@ -68,7 +68,7 @@ Voer de volgende stappen uit om voorstellen voor aanbiedingen in te voegen in ee
 
    ![](assets/offer_delivery_010.png)
 
-### Parameters voor het aanroepen van de aanbiedingsengine {#parameters-for-calling-offer-engine}
+### Parameters om aanbiedingsmotor {#parameters-for-calling-offer-engine} aan te roepen
 
 * **[!UICONTROL Space]** : ruimte van de aanbiedingsomgeving die moet worden geselecteerd om de aanbiedingsengine te activeren.
 * **[!UICONTROL Category]** : specifieke map waarin aanbiedingen worden gesorteerd. Als er geen categorie is opgegeven, zal de aanbiedingsengine rekening houden met alle aanbiedingen in de omgeving, tenzij een thema wordt geselecteerd.
