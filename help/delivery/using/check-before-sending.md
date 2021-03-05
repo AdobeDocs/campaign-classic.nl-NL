@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 1330d4658d039f27a98535bf9885bffbfa0be3c9
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 4%
@@ -64,7 +64,7 @@ Als laatste stap maximaliseert u uw kansen en gebruikt u de kracht van Adobe Cam
 
 ### Een validatieproces doorlopen
 
-U kunt een volledig validatieproces definiëren, waarbij Adobe Campaign-operatoren en -groepen betrokken zijn, om zowel de inhoud van het doel als het bericht te valideren. Dit zal zorgen voor volledige controle en controle op de verschillende processen van de campagne: het richten, inhoud, begroting, extractie, en het verzenden van een bewijs. Afhankelijk van hun machtigingen zullen gebruikers op de hoogte worden gesteld, proefdrukken ontvangen en het bericht kunnen valideren of afwijzen. Meer informatie [in deze sectie](../../campaign/using/marketing-campaign-approval.md#approval-process).
+U kunt een volledig validatieproces definiëren, waarbij Adobe Campaign-operatoren en -groepen betrokken zijn, om zowel de inhoud van het doel als het bericht te valideren. Dit zal zorgen voor volledige controle en controle op de verschillende processen van de campagne: het richten, inhoud, begroting, extractie, en het verzenden van een bewijs. Afhankelijk van hun machtigingen zullen gebruikers op de hoogte worden gesteld, proefdrukken ontvangen en het bericht kunnen valideren of afwijzen. Meer informatie [in deze sectie](../../campaign/using/marketing-campaign-approval.md).
 
 ### Golven gebruiken
 
