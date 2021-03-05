@@ -7,21 +7,31 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
 
 
-# Sjablonen voor marketingcampagnes {#campaign-templates}
+# Campagnemasjablonen maken en configureren {#campaign-templates}
 
-Campagnemalplaatjes worden gecentraliseerd in de **[!UICONTROL Resources > Templates > Campaign templates]** knoop. Een standaardsjabloon wordt standaard verschaft. U kunt hiermee een nieuwe campagne maken met alle beschikbare modules (Documenten, Taken, zaadadressen, enz.), maar de aangeboden modules zijn afhankelijk van uw rechten en de configuratie van uw Adobe Campaign-platform.
+Alle marketing campagnes zijn gebaseerd op een malplaatje, dat belangrijkste kenmerken en mogelijkheden opslaat. Campagnemalplaatjes worden gecentraliseerd in de **[!UICONTROL Resources > Templates > Campaign templates]** knoop. Een standaardsjabloon wordt standaard verschaft. U kunt hiermee een nieuwe campagne maken met alle beschikbare modules (Documenten, Taken, zaadadressen, enz.), maar de aangeboden modules zijn afhankelijk van uw rechten en de configuratie van uw Adobe Campaign-platform.
 
-## Campagnemalplaatje {#creating-or-duplicating-a-campaign-template} creëren of dupliceren
+![](assets/s_ncs_user_campaign_op_template_node.png)
 
-Voer de volgende stappen uit om een nieuwe sjabloon te maken:
+>[!NOTE]
+>
+>De structuur wordt weergegeven wanneer u op het pictogram **[!UICONTROL Explorer]** op de startpagina klikt.
+
+Een ingebouwde sjabloon wordt geleverd om een campagne te maken waarvoor geen specifieke configuratie is gedefinieerd. U kunt uw campagnemalplaatjes tot stand brengen en vormen en dan campagnes van deze malplaatjes tot stand brengen.
+
+![](assets/do-not-localize/how-to-video.png) Raadpleeg  [deze video](../../campaign/using/marketing-campaign-deliveries.md#create-email-video) voor meer informatie over het maken van campagnes.
+
+## Een campagnemalplaatje maken {#creating-or-duplicating-a-campaign-template}
+
+Volg onderstaande stappen om een campagnemalplaatje te maken:
 
 1. Open Campagne **Explorer**.
 1. In **Middelen > Malplaatjes > de malplaatjes van de Campagne**, klik **Nieuw** in de toolbar boven de lijst van malplaatjes.
@@ -47,39 +57,19 @@ Voer de volgende stappen uit om een nieuwe sjabloon te maken:
 1. Maak uw workflow naar wens.
 1. Klik **Opslaan**. Uw sjabloon is nu klaar om in een campagne te worden gebruikt.
 
-U kunt het standaardmalplaatje ook dupliceren om zijn configuratie te hergebruiken en aan te passen.
+U kunt **dupliceren** het standaardmalplaatje om zijn configuratie opnieuw te gebruiken en aan te passen.
 
 De diverse lusjes en sub-tabs van het campagnemalplaatje staan u toe om tot zijn montages toegang te hebben, die in [Algemene configuratie](#general-configuration) worden beschreven.
 
 ![](assets/s_ncs_user_new_op_template_duplicate.png)
 
-## Een campagnemalplaatje {#configuring-a-campaign-template} configureren
+## Modules {#select-modules} selecteren
 
-De campagnes zijn gebaseerd op modellen die een reeks vooraf bepaalde parameters delen.
-
-In een standaardconfiguratie, worden de campagnemalplaatjes gecentraliseerd in de **[!UICONTROL Resources > Templates > Campaign templates]** knoop van de boom van Adobe Campaign.
-
-![](assets/s_ncs_user_campaign_op_template_node.png)
-
->[!NOTE]
->
->De structuur wordt weergegeven wanneer u op het pictogram **[!UICONTROL Explorer]** op de startpagina klikt.
-
-Een out-of-the-box malplaatje wordt geleverd om een campagne tot stand te brengen waarvoor geen specifieke configuratie is bepaald. U kunt uw campagnemalplaatjes tot stand brengen en vormen en dan campagnes van deze malplaatjes tot stand brengen.
-
-De verwezenlijking en de configuratie van campagnemalplaatjes worden voorgesteld in [de malplaatjes van de Campagne](#campaign-templates).
-
-![](assets/do-not-localize/how-to-video.png) Raadpleeg  [deze video](../../campaign/using/marketing-campaign-deliveries.md#create-email-video) voor meer informatie over het maken van campagnes.
-
-## Configuratie van de beschikbare modules {#configuration-of-the-available-modules}
-
-### Moduleselectie {#module-selection}
-
-Met de koppeling **[!UICONTROL Advanced campaign settings...]** kunt u taken voor de campagnes op basis van deze sjabloon in- en uitschakelen. Selecteer de functies die u wilt inschakelen in de campagnes die op deze sjabloon zijn gebaseerd.
+Met de koppeling **[!UICONTROL Advanced campaign settings...]** kunt u taken voor de campagnes op basis van deze sjabloon in- en uitschakelen. Selecteer de mogelijkheden die u wilt inschakelen in de campagnes die op deze sjabloon zijn gebaseerd.
 
 ![](assets/s_ncs_user_op_template_tab1.3.png)
 
-Als een functionaliteit niet is geselecteerd, worden de elementen betreffende het proces (menu&#39;s, pictogrammen, opties, tabs, subtabs, enz.) zal niet in de interface van het malplaatje of in campagnes verschijnen die op dit malplaatje worden gebaseerd. De lusjes links van de campagnedetails vallen gewoonlijk met de processen samen die in het malplaatje worden geselecteerd. Als bijvoorbeeld **Uitgaven en doelstellingen** niet is geselecteerd, wordt het corresponderende tabblad **[!UICONTROL Budget]** niet weergegeven in campagnes die op deze sjabloon zijn gebaseerd.
+Als een functie niet is geselecteerd, worden de elementen betreffende het proces (menu&#39;s, pictogrammen, opties, tabs, subtabs, enz.) zal niet in de interface van het malplaatje of in campagnes verschijnen die op dit malplaatje worden gebaseerd. De lusjes links van de campagnedetails vallen gewoonlijk met de processen samen die in het malplaatje worden geselecteerd. Als bijvoorbeeld **Uitgaven en doelstellingen** niet is geselecteerd, wordt het corresponderende tabblad **[!UICONTROL Budget]** niet weergegeven in campagnes die op deze sjabloon zijn gebaseerd.
 
 Bovendien worden de kortere weg aan de configuratievensters toegevoegd aan het campagnesdashboard. Wanneer een functionaliteit wordt toegelaten, geeft een directe verbinding toegang tot het van het campagnesdashboard.
 
@@ -103,35 +93,35 @@ De volgende koppelingen en tabbladen worden weergegeven:
 
 ![](assets/s_ncs_user_op_template_tab2.3ex.png)
 
-### Typologie van ingeschakelde modules {#typology-of-enabled-modules}
+## Typologie van modules {#typology-of-enabled-modules}
 
 * **Controlegroep**
 
-   Wanneer deze module wordt geselecteerd, wordt een extra lusje toegevoegd aan de geavanceerde montages van het malplaatje en de campagnes die op dit malplaatje worden gebaseerd. De configuratie kan via het malplaatje of individueel voor elke campagne worden bepaald.
+   Wanneer deze module wordt geselecteerd, wordt een extra lusje toegevoegd aan de geavanceerde montages van het malplaatje en de campagnes die op dit malplaatje worden gebaseerd. De configuratie kan via het malplaatje of individueel voor elke campagne worden bepaald. Meer informatie over besturingsgroepen vindt u in [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
    ![](assets/s_ncs_user_op_template_activate_1.png)
 
 * **Seed-adressen**
 
-   Wanneer deze module wordt geselecteerd, wordt een extra lusje toegevoegd aan de geavanceerde montages van het malplaatje en de campagnes die op dit malplaatje worden gebaseerd. De configuratie kan via het malplaatje of individueel voor elke campagne worden bepaald.
+   Wanneer deze module wordt geselecteerd, wordt een extra lusje toegevoegd aan de geavanceerde montages van het malplaatje en de campagnes die op dit malplaatje worden gebaseerd. De configuratie kan via het malplaatje of individueel voor elke campagne worden bepaald. Meer informatie over zaadadressen in [deze sectie](../../delivery/using/about-seed-addresses.md).
 
    ![](assets/s_ncs_user_op_template_activate_2.png)
 
 * **Documenten**
 
-   Wanneer deze module wordt geselecteerd, wordt een extra lusje toegevoegd aan **[!UICONTROL Edition]** lusje van het malplaatje en de campagnes die op dit malplaatje worden gebaseerd. Bijgevoegde documenten kunnen worden toegevoegd vanuit de sjabloon of afzonderlijk voor elke campagne.
+   Wanneer deze module wordt geselecteerd, wordt een extra lusje toegevoegd aan **[!UICONTROL Edition]** lusje van het malplaatje en de campagnes die op dit malplaatje worden gebaseerd. Bijgevoegde documenten kunnen worden toegevoegd vanuit de sjabloon of afzonderlijk voor elke campagne. Meer informatie over documenten vindt u in [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
 
    ![](assets/s_ncs_user_op_template_activate_3.png)
 
 * **Omtrek**
 
-   Als deze module is geselecteerd, wordt een **[!UICONTROL Delivery outlines]** subtab toegevoegd aan het tabblad **[!UICONTROL Documents]** om leveringscontouren voor de campagne te definiëren.
+   Als deze module is geselecteerd, wordt een **[!UICONTROL Delivery outlines]** subtab toegevoegd aan het tabblad **[!UICONTROL Documents]** om leveringscontouren voor de campagne te definiëren. Meer informatie over leveringscontouren vindt u in [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
    ![](assets/s_ncs_user_op_template_activate_4.png)
 
 * **Doelstellingen en workflows**
 
-   Wanneer u de **[!UICONTROL Targeting and workflows]** module selecteert, wordt een lusje toegevoegd om u één of meerdere werkschema&#39;s voor campagnes te laten tot stand brengen die op dit malplaatje worden gebaseerd. De werkschema&#39;s kunnen ook individueel voor elke campagne worden gevormd die op dit malplaatje wordt gebaseerd.
+   Wanneer u de **[!UICONTROL Targeting and workflows]** module selecteert, wordt een lusje toegevoegd om u één of meerdere werkschema&#39;s voor campagnes te laten tot stand brengen die op dit malplaatje worden gebaseerd. Workflows kunnen ook afzonderlijk worden geconfigureerd voor elke campagne op basis van deze sjabloon.Meer informatie over campagneworkflows vindt u in [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
    ![](assets/s_ncs_user_op_template_activate_5.png)
 
@@ -141,9 +131,13 @@ De volgende koppelingen en tabbladen worden weergegeven:
 
 * **Goedkeuring**
 
-   Als u **[!UICONTROL Approval]** selecteert, kunt u zowel de processen selecteren om goed te keuren als de exploitanten verantwoordelijk voor goedkeuringen.
+   Als u **[!UICONTROL Approval]** selecteert, kunt u zowel de processen selecteren om goed te keuren als de exploitanten verantwoordelijk voor goedkeuringen. Meer informatie over goedkeuringen vindt u in [deze sectie](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
 
    ![](assets/s_ncs_user_op_template_activate_5b.png)
+
+   U kunt kiezen of u procesgoedkeuring al dan niet wilt inschakelen via het tabblad **[!UICONTROL Approvals]** van de sectie Geavanceerde instellingen voor sjablonen. De banen waarvoor goedkeuring wordt geselecteerd moeten voor berichtlevering worden goedgekeurd om te worden toegelaten.
+
+   U moet een revisoroperator of groep operatoren aan elke ingeschakelde goedkeuring koppelen.
 
 * **Uitgaven en doelstellingen**
 
@@ -151,13 +145,7 @@ De volgende koppelingen en tabbladen worden weergegeven:
 
    ![](assets/s_ncs_user_op_template_activate_7.png)
 
-### Goedkeuring van taken {#approval-of-jobs}
-
-U kunt kiezen of u procesgoedkeuring al dan niet wilt inschakelen via het tabblad **[!UICONTROL Approvals]** van de sectie Geavanceerde instellingen voor sjablonen. De banen waarvoor goedkeuring wordt geselecteerd moeten voor berichtlevering worden goedgekeurd om te worden toegelaten.
-
-U moet een revisoroperator of groep operatoren aan elke ingeschakelde goedkeuring koppelen.
-
-## Algemene configuratie {#general-configuration}
+## Eigenschappen en uitvoering {#general-configuration}
 
 ### Sjablooneigenschappen {#template-properties}
 
@@ -172,7 +160,7 @@ Wanneer u een campagnemalplaatje creeert, moet u de volgende informatie ingaan:
    >
    >Raadpleeg de sectie [Aan de slag](../../platform/using/managing-enumerations.md) voor meer informatie over opsommingen.
 
-* Selecteer het **type van campagne**: uniek, terugkerend of periodiek. Standaard worden campagnemasjablonen toegepast op unieke campagnes. De herhalings- en periodieke campagnes worden hier beschreven: [Terugkerende en periodieke campagnes](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns).
+* Selecteer het **type van campagne**: uniek, terugkerend of periodiek. Standaard worden campagnemasjablonen toegepast op unieke campagnes. Herhalings- en periodieke campagnes worden beschreven in [deze sectie](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns).
 * Geef de duur van de campagne op, d.w.z. het aantal dagen waarop de campagne zal plaatsvinden. Wanneer u een campagne maakt op basis van deze sjabloon, worden de begin- en einddatums van de campagne automatisch ingevuld.
 
    Als de campagne terugkerend is, moet u de begin en einddata van de campagne direct in het malplaatje specificeren.
@@ -185,9 +173,9 @@ Met de koppeling **[!UICONTROL Advanced campaign settings...]** kunt u de geavan
 
 ![](assets/s_ncs_user_op_template_tab1.2.png)
 
-## Omgekeerde planning van campagne {#campaign-reverse-scheduling}
+## Uitvoering van campagne bijhouden{#campaign-reverse-scheduling}
 
-U kunt een omgekeerde planning voor een campagne maken, bijvoorbeeld om een gebeurtenis voor te bereiden waarvan de datum vooraf bekend is. De malplaatjes van de campagne laten u nu de begindatum van een taak berekenen die op de einddatum van een campagne wordt gebaseerd.
+U kunt een programma voor een campagne en spoorprestaties tot stand brengen, bijvoorbeeld om een gebeurtenisprogramma voor een specifieke datum voor te bereiden. De malplaatjes van de campagne laten u nu de begindatum van een taak berekenen die op de einddatum van een campagne wordt gebaseerd.
 
 In het vakje van de taakconfiguratie, ga naar **[!UICONTROL Implementation schedule]** gebied en controleer **[!UICONTROL The start date is calculated based on the campaign end date]** doos. (Hier is &quot;begindatum&quot; de begindatum van de taak.) Ga naar het **[!UICONTROL Start]** gebied en ga een interval in: deze taak zal lang voor de einddatum van de campagne van start gaan . Als u een periode ingaat die langer is dan de campagne aan laatste wordt geplaatst, zal de taak vóór de campagne beginnen.
 
