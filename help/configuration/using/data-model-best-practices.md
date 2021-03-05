@@ -7,9 +7,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '4014'
+source-wordcount: '4010'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Dit document bevat belangrijke aanbevelingen bij het ontwerpen van uw Adobe Campaign-gegevensmodel.
 
-Raadpleeg de sectie [Campaign Classic gegevensmodel](../../configuration/using/about-data-model.md) voor een beter begrip van ingebouwde tabellen en hun interactie voor campagnes.
+Voor een beter begrip van ingebouwde lijsten van de Campagne en hun interactie, verwijs naar [deze sectie](../../configuration/using/about-data-model.md) sectie.
 
 Lees [deze documentatie](../../configuration/using/about-schema-reference.md) om aan de slag te gaan met de schema&#39;s van de Campagne. Leer hoe te om uitbreidingsschema&#39;s te vormen om het conceptuele gegevensmodel van het gegevensbestand van Adobe Campaign in [dit document](../../configuration/using/about-schema-edition.md) uit te breiden.
 
@@ -148,7 +148,7 @@ Een klant die jaarlijks 6 miljard e-mails met een bewaartermijn van 180 dagen vo
 
 Wanneer in Adobe Campaign een aangepaste tabel wordt gemaakt met een primaire sleutel als een autoPK, moet er systematisch een aangepaste, toegewijde reeks aan die tabel worden gekoppeld.
 
-Een aangepaste reeks heeft standaard waarden tussen +1.000 en +2.1BB. Technisch gezien is het mogelijk om een volledig bereik van 4BB te krijgen door negatieve id&#39;s toe te staan. Dit moet voorzichtig worden gebruikt en er zal één id verloren gaan bij het oversteken van negatieve naar positieve getallen: record 0 wordt doorgaans genegeerd door Adobe Campaign Classic in gegenereerde SQL-query&#39;s.
+Een aangepaste reeks heeft standaard waarden tussen +1.000 en +2.1BB. Technisch gezien is het mogelijk om een volledig bereik van 4BB te krijgen door negatieve id&#39;s toe te staan. Dit moet voorzichtig worden gebruikt en er zal één id verloren gaan bij het oversteken van negatieve naar positieve getallen: record 0 wordt doorgaans genegeerd door Adobe Campaign in gegenereerde SQL-query&#39;s.
 
 **Verwante onderwerpen:**
 * Zie [dit document](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html) voor meer informatie over de functie **Volgorde automatisch genereren**.
