@@ -7,9 +7,9 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 translation-type: tm+mt
-source-git-commit: 4c3a2184ab09b1e1ed91d0127adc636a51808aec
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1004'
 ht-degree: 7%
 
 ---
@@ -23,7 +23,7 @@ Adobe Campaign past gegevensschema&#39;s toe op:
 * Definiëren van koppelingen tussen de verschillende dataobjecten in de Campaign-applicatie.
 * Definiëren en beschrijven van de afzonderlijke velden die in elk object zijn opgenomen.
 
-Voor een beter begrip van ingebouwde lijsten van de Campagne en hun interactie, verwijs naar [Campaign Classic gegevensmodel](https://helpx.adobe.com/nl/campaign/kb/acc-datamodel.html).
+Raadpleeg [deze sectie](https://helpx.adobe.com/nl/campaign/kb/acc-datamodel.html) voor een beter begrip van geïntegreerde tabellen en hun interactie voor campagnes.
 
 ## Schema&#39;s uitbreiden of maken {#extending-or-creating-schemas}
 
