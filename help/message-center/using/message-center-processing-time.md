@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 # Verwerkingstijd van het Berichtencentrum{#message-center-processing-time}
 
-Dit rapport geeft de belangrijkste indicatoren weer die betrekking hebben op de real-time wachtrij. Dit rapport, gericht op technische beheerders, kan ook via **[!UICONTROL Monitoring]** universum in de controleinstantie worden betreden.
+Dit rapport geeft de belangrijkste indicatoren weer die betrekking hebben op de real-time wachtrij. Dit rapport, gericht op technische beheerders, kan ook via het **[!UICONTROL Monitoring]** lusje in de controleinstantie worden betreden.
 
 ![](assets/mc_reports_2.png)
 
