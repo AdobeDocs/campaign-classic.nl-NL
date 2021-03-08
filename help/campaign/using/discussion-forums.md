@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -95,7 +95,7 @@ Als u zich abonneert op een forum, kunt u discussies volgen. Elke keer dat een b
 
    ![](assets/platform_dashboard_operator_subscr_forums.png)
 
-   Raadpleeg [deze sectie](../../platform/using/access-management.md#operators) voor meer informatie over persoonlijke dashboards.
+   Raadpleeg [deze sectie](../../platform/using/access-management-operators.md) voor meer informatie over persoonlijke dashboards.
 
 * Om te zien wie aan een forum wordt geabonneerd, klik de **[!UICONTROL List of subscribers to this discussion forum]** verbinding boven de lijst van berichten.
 
