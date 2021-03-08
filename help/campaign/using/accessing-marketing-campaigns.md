@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1045'
 ht-degree: 1%
 
 ---
@@ -27,11 +27,11 @@ Zodra u verbinding hebt met Adobe Campaign, wordt de homepage weergegeven.
 
 ![](assets/campaign_global_view.png)
 
-Klik op de koppelingen in de navigatiebalk voor toegang tot de verschillende universa.
+Klik op de koppelingen in de navigatiebalk voor toegang tot de verschillende mogelijkheden.
 
-Campagne-elementen bevinden zich in het universum **[!UICONTROL Campaigns]**: Hier ziet u een overzicht van de marketingprogramma&#39;s en -campagnes en de bijbehorende subsets. Een marketingprogramma bestaat uit campagnes die bestaan uit leveringen, taken, gekoppelde middelen, enz. In het kader van het marketingcampagnebeheer met behulp van campagnes zijn de gegevens over leveringen, begrotingen, revisoren en bijbehorende documenten in de campagnes te vinden.
+Campagne-elementen vindt u op het tabblad **[!UICONTROL Campaigns]**: Hier ziet u een overzicht van de marketingprogramma&#39;s en -campagnes en de bijbehorende subsets. Een marketingprogramma bestaat uit campagnes die bestaan uit leveringen, taken, gekoppelde middelen, enz. In het kader van het marketingcampagnebeheer met behulp van campagnes zijn de gegevens over leveringen, begrotingen, revisoren en bijbehorende documenten in de campagnes te vinden.
 
-Het navigatieblok van het **[!UICONTROL Campaigns]** universum biedt diverse ingangen aan, afhankelijk van modules die op de instantie worden geïnstalleerd. U hebt bijvoorbeeld toegang tot:
+Het **[!UICONTROL Browsing]** blok van **[!UICONTROL Campaigns]** lusje biedt diverse ingangen, afhankelijk van modules die op de instantie worden geïnstalleerd. U hebt bijvoorbeeld toegang tot:
 
 * **Campagnekalender**: tijdschema van de plannen, marketingprogramma&#39;s, leveringen en campagnes. Raadpleeg [Campagne-kalender](#campaign-calendar).
 * **Campagnes**: toegang tot de campagnes in alle marketingprogramma&#39;s.
@@ -46,7 +46,7 @@ Het navigatieblok van het **[!UICONTROL Campaigns]** universum biedt diverse ing
 
 ### Campagnekalender {#campaign-calendar}
 
-Elke campagne behoort tot een programma dat op zijn beurt deel uitmaakt van een plan. Plannen, programma&#39;s en campagnes zijn toegankelijk via het menu **[!UICONTROL Campaign calendar]** in het **universum van Campagnes**.
+Elke campagne behoort tot een programma dat op zijn beurt deel uitmaakt van een plan. Plannen, programma&#39;s en campagnes zijn toegankelijk via het menu **[!UICONTROL Campaign calendar]** op het tabblad **Campagnes**.
 
 Als u een abonnement, programma, campagne of levering wilt bewerken, klikt u op de naam van het programma in de kalender en vervolgens op **[!UICONTROL Open...]**. Het wordt dan getoond in een nieuw lusje, zoals hieronder getoond:
 
@@ -95,7 +95,7 @@ Campagnes zijn toegankelijk via de campagnecalender, het tabblad **[!UICONTROL S
    ![](assets/campaign_op_edit.png)
 
 1. Via het tabblad **[!UICONTROL Schedule]** van het programma is de bewerkingsmodus hetzelfde als via de campagnecalender.
-1. Klik via de koppeling **[!UICONTROL Campaigns]** van het **[!UICONTROL Campaigns]** universum op de naam van de campagne die u wilt bewerken.
+1. Klik via de koppeling **[!UICONTROL Campaigns]** op het tabblad **[!UICONTROL Campaigns]** op de naam van de campagne die u wilt bewerken.
 
    ![](assets/campaign_edit_from_list.png)
 
