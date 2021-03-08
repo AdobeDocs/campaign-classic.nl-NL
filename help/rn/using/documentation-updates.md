@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: af2707c6d86215ff94911e670a1eb080572de23c
 workflow-type: tm+mt
-source-wordcount: '4092'
-ht-degree: 95%
+source-wordcount: '4151'
+ht-degree: 93%
 
 ---
 
@@ -22,6 +22,15 @@ Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates
 Raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/using/latest-release.md) voor aan de release gerelateerde updates.
 
 ## Maart 2021 {#march-2021}
+
+Het machtigingsbeheerhoofdstuk [is verbeterd en gesplitst in secties, waaronder informatie over [Operatoren](../../platform/using/access-management-operators.md), [Groepen operatoren](../../platform/using/access-management-groups.md), [Benoemde rechten](../../platform/using/access-management-named-rights.md) en [Mapbeheer](../../platform/using/access-management-folders.md).](../../platform/using/access-management.md)
+
+Leer hoe u uw campagnes kunt maken en beheren met de volgende nieuwe pagina&#39;s:
+* [Campagnemalplaatjes maken en configureren](../../campaign/using/marketing-campaign-templates.md)
+* [Aflevering van marketingcampagnes](../../campaign/using/marketing-campaign-deliveries.md)
+* [Het publiek van uw campagnes selecteren](../../campaign/using/marketing-campaign-target.md)
+* [Gekoppelde documenten beheren](../../campaign/using/marketing-campaign-assets.md)
+* [Het goedkeuringsproces instellen en beheren](../../campaign/using/marketing-campaign-approval.md)
 
 Er is informatie toegevoegd aan de sectie **[!UICONTROL Advanced JavaScript]** activiteit over hoe u de methode task.setCompleted() gebruikt om de taak te beëindigen en toekomstige terugroepingen te voorkomen. [Meer informatie](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
