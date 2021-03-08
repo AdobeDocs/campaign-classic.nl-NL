@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
@@ -29,7 +29,7 @@ De belangrijkste implementatiestappen voor dit gebruiksgeval zijn:
 
 ## Stap 1: De lijst met ontvangers maken {#step-1--creating-the-recipient-list}
 
-Ga naar **[!UICONTROL Profiles and targets]** universum, klik **[!UICONTROL Lists]** verbinding, dan **[!UICONTROL Create]** knoop. Selecteer **[!UICONTROL New list]** en creeer een nieuwe ontvankelijke lijst voor het rapport dat moet worden verzonden naar.
+Ga naar het **[!UICONTROL Profiles and targets]** lusje, klik **[!UICONTROL Lists]** verbinding, dan **[!UICONTROL Create]** knoop. Selecteer **[!UICONTROL New list]** en creeer een nieuwe ontvankelijke lijst voor het rapport dat moet worden verzonden naar.
 
 ![](assets/use_case_report_1.png)
 
