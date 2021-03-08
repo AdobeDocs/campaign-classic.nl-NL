@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1098'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ Er zijn drie modi voor abonnementen/abonnementen op services:
 
 U kunt abonnementen op informatiediensten met bijbehorende bevestigingsberichten of automatische leveringen aan abonnees tot stand brengen en beheren.
 
-Ga naar het **[!UICONTROL Profiles and Targets]** universum en klik op de koppeling **[!UICONTROL Services and Subscriptions]** om de kaart met informatieservices te openen.
+Als u toegang wilt krijgen tot het overzicht met informatieservices, opent u het tabblad **[!UICONTROL Profiles and Targets]** en klikt u op de koppeling **[!UICONTROL Services and Subscriptions]**.
 
 ![](assets/s_ncs_user_services_new.png)
 
