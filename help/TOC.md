@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentatie
 translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '2391'
-ht-degree: 58%
+source-wordcount: '2412'
+ht-degree: 57%
 
 ---
 
@@ -94,7 +94,11 @@ ht-degree: 58%
       + [Stappen om een query te maken](platform/using/steps-to-create-a-query.md)
       + [Filtervoorwaarden definiëren](platform/using/defining-filter-conditions.md)
    + Machtigingen {#permissions}
-      + [Toegangscontrole](platform/using/access-management.md)
+      + [Aan de slag met machtigingen](platform/using/access-management.md)
+      + [Operatoren maken en beheren](platform/using/access-management-operators.md)
+      + [Groepen maken en beheren](platform/using/access-management-groups.md)
+      + [Benoemde rechten gebruiken om machtigingen in te stellen](platform/using/access-management-named-rights.md)
+      + [Toegang tot mappen beheren](platform/using/access-management-folders.md)
    + Gegevenspakketten en opsommingen {#administration-basics}
       + [Gegevenspakketten](platform/using/working-with-data-packages.md)
       + [Opsommingen](platform/using/managing-enumerations.md)
