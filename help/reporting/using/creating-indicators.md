@@ -7,7 +7,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 1%
@@ -121,7 +121,7 @@ Zodra de kubus wordt gevormd, kan het als malplaatje worden gebruikt voor het cr
 
 Dit doet u als volgt:
 
-1. Klik op de knop **[!UICONTROL Create]** van het **[!UICONTROL Reports]** universum en selecteer de kubus die u zojuist hebt gemaakt.
+1. Klik op de knop **[!UICONTROL Create]** van het tabblad **[!UICONTROL Reports]** en selecteer de kubus die u zojuist hebt gemaakt.
 
    ![](assets/s_advuser_cube_wz_14.png)
 
