@@ -7,9 +7,9 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '754'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ De toegang tot het rapport kan worden beperkt tot een specifieke context of ruim
 
 * **[!UICONTROL Single selection]** : het verslag is alleen toegankelijk wanneer een specifieke entiteit is geselecteerd .
 * **[!UICONTROL Multiple selection]** : het rapport is toegankelijk wanneer meerdere entiteiten zijn geselecteerd.
-* **[!UICONTROL Global]** : het rapport is toegankelijk via de lijst van beschikbare rapporten in het universum van Rapporten.
+* **[!UICONTROL Global]** : het rapport is toegankelijk via de lijst met beschikbare rapporten op het  **[!UICONTROL Reports]** tabblad .
 
 ### Weergavevolgorde {#display-sequence}
 
@@ -63,7 +63,7 @@ Het rapport kan ook worden gedeeld met specifieke operatoren of groepen operator
 
 ### Filteropties {#defining-the-filtering-options} definiëren
 
-Het **[!UICONTROL Reports]** universum toont alle beschikbare rapporten in het platform en waarvoor de verbonden exploitant een toegangsrecht heeft.
+Op het tabblad **[!UICONTROL Reports]** worden alle beschikbare rapporten in het platform weergegeven waarvoor de verbonden operator een toegangsrecht heeft.
 
 Standaard worden ze gesorteerd op relevantie, maar u kunt andere typen filters toepassen: alfabetisch, naar leeftijd, enz.
 
