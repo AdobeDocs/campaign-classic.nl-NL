@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '229'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Elk knooppunt valt samen met een map. De gegevens van elke omslag moeten worden 
 
 >[!NOTE]
 >
->Als u de lijst met alle ontvangers in de database wilt weergeven, moet u een weergave maken. Zie [Mappen en weergaven](../../platform/using/access-management.md#folders-and-views).
+>Als u de lijst met alle ontvangers in de database wilt weergeven, moet u een weergave maken. Meer informatie vindt u in [Mappen en weergaven](../../platform/using/access-management-folders.md).
 
 ## Ontvangers {#moving-recipients} verplaatsen
 
