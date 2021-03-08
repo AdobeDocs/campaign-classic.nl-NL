@@ -7,15 +7,15 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 
-# Schema’s filteren{#filtering-schemas}
+# Filterschema&#39;s{#filtering-schemas}
 
 ## Systeemfilters {#system-filters}
 
@@ -63,7 +63,7 @@ Deze filters zijn ingegaan op het belangrijkste **element** niveau van de schema
 >
 >Als er geen filter is opgegeven, hebben alle operatoren lees- en schrijfmachtigingen voor het schema.
 
-## Ingebouwde schema&#39;s beschermen {#protecting-built-in-schemas}
+## Protect ingebouwde schema&#39;s {#protecting-built-in-schemas}
 
 Door gebrek, zijn de ingebouwde schema&#39;s slechts toegankelijk met SCHRIJVEN toestemmingen voor exploitanten met de rechten van het BEHEER:
 
@@ -102,7 +102,7 @@ Door gebrek, zijn de ingebouwde schema&#39;s slechts toegankelijk met SCHRIJVEN 
 >
 >De LEZEN en SCHRIJVEN toestemmingen voor het **xtk:sessionInfo** schema zijn slechts toegankelijk door de interne rekening van een instantie van Adobe Campaign.
 
-## Systeemfilters van ingebouwde schema&#39;s {#modifying-system-filters-of-built-in-schemas} wijzigen
+## Systeemfilters van ingebouwde schema&#39;s wijzigen {#modifying-system-filters-of-built-in-schemas}
 
 U kunt nog steeds de systeemfilters wijzigen van de out-of-the-box schema&#39;s die standaard beveiligd zijn vanwege compatibiliteitsproblemen met oudere versies.
 
