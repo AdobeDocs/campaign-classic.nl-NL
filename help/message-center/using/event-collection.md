@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 translation-type: tm+mt
-source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '138'
 ht-degree: 4%
 
 ---
@@ -28,4 +28,4 @@ Zodra zij worden verzameld, worden de gebeurtenissen uitgesplitst - door technis
 
 >[!NOTE]
 >
->Bij de uitvoeringsinstanties moeten de mappen **[!UICONTROL Real time events]** of **[!UICONTROL Batch events]** niet worden ingesteld als weergaven, omdat dit kan leiden tot [toegangsrechten](../../platform/using/access-management.md#about-permissions)-problemen. Zie [Informatie over weergaven](../../platform/using/access-management.md#about-views) voor meer informatie over het instellen van een map als weergave.
+>Bij de uitvoeringsinstanties moeten de mappen **[!UICONTROL Real time events]** of **[!UICONTROL Batch events]** niet worden ingesteld als weergaven, omdat dit tot problemen met toegangsrechten kan leiden. Raadpleeg [deze sectie](../../platform/using/access-management-folders.md) voor meer informatie over het instellen van een map als weergave.
