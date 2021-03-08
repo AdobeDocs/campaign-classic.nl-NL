@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1242'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Met simulatie kunt u het effect van leveringen controleren en vergelijken.
 
 Voer de volgende stappen uit om een simulatie te maken:
 
-1. Ga naar het **[!UICONTROL Campaigns]** universum, klik **[!UICONTROL More]** verbinding binnen **[!UICONTROL Create]** sectie en selecteer **[!UICONTROL Simulation]** optie.
+1. Open het tabblad **[!UICONTROL Campaigns]**, klik op de koppeling **[!UICONTROL More]** in de sectie **[!UICONTROL Create]** en selecteer de optie **[!UICONTROL Simulation]**.
 
    ![](assets/simu_campaign_opti_01.png)
 
