@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1296'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,7 @@ Zodra de controles zijn goedgekeurd, kan de campagne automatisch beginnen.
 
 #### De campagne {#publishing-the-campaign} publiceren
 
-U kunt nu een **campagnepakket** van **Campagnes** universum toevoegen.
+U kunt nu een **campagnepakket** van **[!UICONTROL Campaigns]** tabel toevoegen.
 
 1. Kies uw **[!UICONTROL Reference campaign]**. Op het tabblad **[!UICONTROL Edit]** van uw pakket kunt u **[!UICONTROL Approval mode]** selecteren voor uw campagne:
 
@@ -174,7 +174,7 @@ U kunt nu een **campagnepakket** van **Campagnes** universum toevoegen.
 
    ![](assets/mkg_dist_use_case_target_valid1.png)
 
-1. Goedkeuren, vervolgens start u de workflow om het pakket te publiceren en beschikbaar te maken voor alle lokale entiteiten in een lijst met pakketten.
+1. Goedkeuren, vervolgens start u de workflow om het pakket te publiceren en ter beschikking te stellen van alle lokale entiteiten in een lijst met pakketten.
 
    ![](assets/mkg_dist_use_case_target_valid2.png)
 
