@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 5%
@@ -22,7 +22,7 @@ Er zijn twee soorten operatoren die Interactie gebruiken: bieden managers en lev
 * **[!UICONTROL Offer manager]** : aanbiedingen maken en onderhouden. Als aanbiedingen worden gebruikt in de workflow, moet de operator zich in de operatorgroep **[!UICONTROL Administrator]** of **[!UICONTROL Offer managers]** bevinden om de workflow uit te voeren.
 * **[!UICONTROL Delivery manager]** : goedkeurt en gebruikt voorstellen
 
-De stappen voor het maken van operatoren die specifiek zijn voor Interactie zijn identiek aan de stappen die worden gebruikt om alle andere operatoren op het platform te maken. Raadpleeg [deze sectie](../../platform/using/access-management.md#creating-an-operator) voor meer informatie. De rechten worden gevormd tijdens de verwezenlijking van de exploitant.
+De stappen voor het maken van operatoren die specifiek zijn voor Interactie zijn identiek aan de stappen die worden gebruikt om alle andere operatoren op het platform te maken. Raadpleeg [deze sectie](../../platform/using/access-management.md) voor meer informatie. De rechten worden gevormd tijdens de verwezenlijking van de exploitant.
 
 ## Aanbiedingsmanager {#offer-manager}
 
