@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 3%
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Voer de volgende stappen uit om een aanbieding te maken:
 
-1. Ga naar het **[!UICONTROL Campaigns]** universum en klik **[!UICONTROL Offers]** verbinding.
+1. Ga naar het **[!UICONTROL Campaigns]** lusje en klik **[!UICONTROL Offers]** verbinding.
 
    ![](assets/offer_create_001.png)
 
