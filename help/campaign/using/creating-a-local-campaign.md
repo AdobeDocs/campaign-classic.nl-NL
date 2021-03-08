@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1564'
 ht-degree: 1%
 
 ---
@@ -151,7 +151,7 @@ Zoek de HTML van uw levering. Gebruik in **[!UICONTROL Delivery > Current order 
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 
-Sla uw campagnemalplaatje op. U kunt het van **Campagnepakketten** nu gebruiken mening in **Campagnes** universum, door **[!UICONTROL Create]** knoop te klikken.
+Sla uw campagnemalplaatje op. U kunt deze nu gebruiken vanuit de weergave **[!UICONTROL Campaign packages]** op het tabblad **[!UICONTROL Campaigns]** door op de knop **[!UICONTROL Create]** te klikken.
 
 ![](assets/mkt_distr_9.png)
 
@@ -270,7 +270,7 @@ Een campagne bestellen:
 
    Raadpleeg voor meer informatie de sectie [Goedkeuringsproces](#approval-process).
 
-1. De lokale exploitant wordt vervolgens op de hoogte gesteld dat de campagne beschikbaar is: de beschikbaarheid van de campagne is te vinden in de lijst van campagnepakketten binnen **Campagnes** universum. De campagne kan dan worden gebruikt. Voor meer op dit, verwijs naar [Toegang tot campagnes](../../campaign/using/accessing-campaigns.md).
+1. De lokale exploitant wordt vervolgens op de hoogte gesteld dat de campagne beschikbaar is: de beschikbaarheid van de campagne is te vinden in de lijst van campagnepakketten binnen **Campagnes** tabel. De campagne kan dan worden gebruikt. Voor meer op dit, verwijs naar [Toegang tot campagnes](../../campaign/using/accessing-campaigns.md).
 
    Met de optie **[!UICONTROL Start targeting with order approval]** kan de lokale entiteit de campagne uitvoeren zodra de bestelling is goedgekeurd.
 
@@ -280,7 +280,7 @@ Een campagne bestellen:
 
 Om een campagneorder te bevestigen, moet de centrale entiteit het goedkeuren.
 
-In het **[!UICONTROL Campaign orders]**-overzicht, dat u kunt openen via het **universum Campagnes**, kunt u de status van campagneorders bekijken en deze goedkeuren.
+In het **[!UICONTROL Campaign orders]**-overzicht, dat u kunt openen via het tabblad **Campagnes**, kunt u de status van campagneorders weergeven en deze goedkeuren.
 
 >[!NOTE]
 >
