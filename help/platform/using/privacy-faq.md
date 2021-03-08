@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 450889f845b7c5adad1085d7eba70e23030e6609
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 97%
+source-wordcount: '797'
+ht-degree: 94%
 
 ---
 
@@ -74,7 +74,7 @@ In gevallen waarin voor bepaalde marketingactiviteiten toestemming nodig is, moe
 
 Er kunnen zelfs gevallen zijn waarin bepaalde toestemmingen moeten worden vernieuwd om het gebruik van gegevens te kunnen voortzetten.
 
-In plaats van deze strengere toestemmingsvereisten als een risico te zien voor het marktwezen kunnen marketeers ze beter verwelkomen als een echte aanwijzing voor merkbetrokkenheid en loyaliteit, klanttevredenheid en vertrouwen.
+De verkopers zouden deze versterkte toestemmingsvereisten als ware indicator van merkbetrokkenheid en loyaliteit, evenals klantentevredenheid en vertrouwen moeten omarmen.
 
 ## Toestemming beheren {#manage-consent}
 
