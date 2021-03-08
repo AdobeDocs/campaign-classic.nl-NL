@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: add0efb4efd5a37129c649b942799622947f3143
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '4092'
 ht-degree: 95%
@@ -287,7 +287,7 @@ Er is een gebruiksscenario toegevoegd over het integreren van een dynamische aan
 
 Er is nu een nieuwe sectie beschikbaar waarin de verschillende talen die in Adobe Campaign beschikbaar zijn, worden beschreven. [Meer informatie](../../platform/using/adobe-campaign-workspace.md#languages)
 
-De richtlijnen voor toegangscontrole zijn bijgewerkt met meer informatie over opgegeven rechten. [Meer informatie](../../platform/using/access-management.md#named-rights)
+De richtlijnen voor toegangscontrole zijn bijgewerkt met meer informatie over opgegeven rechten. [Meer informatie](../../platform/using/access-management-named-rights.md)
 
 ## Februari 2020 {#february-2020}
 
@@ -405,7 +405,7 @@ Er is een waarschuwing toegevoegd aan de secties [Multiplexing van de midsourcin
 
 Er is een nieuwe sectie toegevoegd waarin wordt beschreven hoe de tekencodering die wordt gebruikt bij het verzenden van een e-mail, geforceerd moet worden. [Meer informatie](../../delivery/using/sending-messages.md#character-encoding)
 
-De sectie voor toegangscontrole is bijgewerkt met **rechten voor privacydata**. [Meer informatie](../../platform/using/access-management.md#named-rights)
+De sectie voor toegangscontrole is bijgewerkt met **rechten voor privacydata**. [Meer informatie](../../platform/using/access-management-named-rights.md)
 
 Er is informatie toegevoegd om aan te geven dat de content van personalisatievelden niet langer mag zijn dan 1024 tekens. [Meer informatie](../../delivery/using/personalization-fields.md)
 
