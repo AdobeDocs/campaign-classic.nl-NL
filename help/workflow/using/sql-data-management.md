@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 3%
@@ -25,7 +25,7 @@ Voordat u de activiteit configureert, moet u controleren of aan de volgende voor
 
 * De activiteit is beschikbaar voor verre slechts gegevensbronnen. Het **[!UICONTROL FDA]** (Federated Data Access)-pakket moet daarom op uw instantie worden geïnstalleerd. [Meer informatie](../../installation/using/about-fda.md).
 * Het uitgaande schema moet in het gegevensbestand bestaan en met een gegevensbestand FDA worden verbonden. [Meer informatie](../../configuration/using/about-schema-reference.md).
-* De exploitant die het werkschema uitvoert moet **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** genoemd hebben recht. [Meer informatie](../../platform/using/access-management.md#named-rights).
+* De exploitant die het werkschema uitvoert moet **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** genoemd hebben recht. [Meer informatie](../../platform/using/access-management-named-rights.md).
 
 ## De SQL-gegevensbeheeractiviteit {#configuring-the-sql-data-management-activity} configureren
 
