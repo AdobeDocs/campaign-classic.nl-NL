@@ -7,9 +7,9 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '523'
 ht-degree: 1%
 
 ---
@@ -77,5 +77,5 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->Het **interne** wachtwoord moet voor alle volgende servers identiek zijn. Raadpleeg de secties [Interne id](../../installation/using/campaign-server-configuration.md#internal-identifier) en [Informatie over machtigingen](../../platform/using/access-management.md#about-permissions) voor meer informatie.
+>Het **interne** wachtwoord moet voor alle volgende servers identiek zijn. Raadpleeg de secties [Interne id](../../installation/using/campaign-server-configuration.md#internal-identifier) en [Machtigingen](../../platform/using/access-management.md) voor meer informatie.
 
