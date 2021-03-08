@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '409'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ Hierdoor kunnen ze:
 
 ## Filterpakketten {#filter-packages}
 
-Van **[!UICONTROL Campaigns universe]**, kunt u de lijst van **[!UICONTROL Campaign packages]** tonen die alle bestaande Verdeelde campagnes van de Marketing hergroepeert. U kunt deze lijst zo filteren dat alleen campagnes worden weergegeven die worden gepubliceerd, laat, in afwachting van goedkeuring, enzovoort. Om dit te doen, klik de verbindingen in de hogere sectie van deze mening, of gebruik **[!UICONTROL Filter list]** verbinding en selecteer de status van het campagnepakket aan vertoning.
+Van **[!UICONTROL Campaigns]** tabel, kunt u de lijst van **[!UICONTROL Campaign packages]** tonen die alle bestaande Verdeelde Marketing campagnes hergroepeert. U kunt deze lijst zo filteren dat alleen campagnes worden weergegeven die worden gepubliceerd, laat, in afwachting van goedkeuring, enzovoort. Om dit te doen, klik de verbindingen in de hogere sectie van deze mening, of gebruik **[!UICONTROL Filter list]** verbinding en selecteer de status van het campagnepakket aan vertoning.
 
 ![](assets/mkg_dist_catalog_filter.png)
 
