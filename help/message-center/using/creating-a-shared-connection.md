@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 translation-type: tm+mt
-source-git-commit: 5bc6c8a824929c6a61cf562fc961e5bdd1867837
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '999'
 ht-degree: 2%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 2%
 >
 >* De uitbreidingen van het schema die op de schema&#39;s worden gemaakt door [technische werkschema&#39;s van het Centrum van het Bericht](../../message-center/using/technical-workflows.md) op of controle of uitvoeringsinstanties worden gebruikt moeten op de andere instanties worden gedupliceerd die door de module van het de transactionele overseinen van Adobe Campaign worden gebruikt.
 >* De bedieningsinstantie en de uitvoeringsinstantie(s) moeten op verschillende computers zijn geïnstalleerd. Ze kunnen niet dezelfde Campagne-instantie delen.
+
 >
 
 
@@ -133,15 +134,15 @@ Maak in de boomstructuur van alle uitvoeringsinstanties één map per operator (
    >
    >Voor meer bij het vormen van een controleinstantie, verwijs naar [Controleinstantie](#control-instance).
 
-### Uitvoeringsinstantiesconfigureren {#configuring-execution-instances}
+### Uitvoeringsinstanties {#configuring-execution-instances} configureren
 
 Om verscheidene controleinstanties te gebruiken, moet deze configuratie op ALLE uitvoeringsinstanties worden uitgevoerd.
 
-1. Maak één map per operator in het knooppunt **[!UICONTROL Administration > Production > Message Center]**: **Map 1** en **Map 2**. Raadpleeg [Platform](../../platform/using/access-management.md#folders-and-views) voor meer informatie over het maken van mappen en weergaven.
+1. Maak één map per operator in het knooppunt **[!UICONTROL Administration > Production > Message Center]**: **Map 1** en **Map 2**. Raadpleeg [deze pagina](../../platform/using/access-management-folders.md) voor meer informatie over het maken van mappen en weergaven.
 
    ![](assets/messagecenter_multi_control_3.png)
 
-1. Maak de **mc1** en **mc2** exploitanten door de exploitant van het Centrum van het Bericht te dupliceren die door gebrek (**mc**) wordt verstrekt. Raadpleeg [deze sectie](../../platform/using/access-management.md#operators) voor meer informatie over het maken van operatoren.
+1. Maak de **mc1** en **mc2** exploitanten door de exploitant van het Centrum van het Bericht te dupliceren die door gebrek (**mc**) wordt verstrekt. Raadpleeg [deze sectie](../../platform/using/access-management-operators.md) voor meer informatie over het maken van operatoren.
 
    ![](assets/messagecenter_multi_control_4.png)
 
