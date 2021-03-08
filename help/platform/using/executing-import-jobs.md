@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '2958'
+source-wordcount: '2960'
 ht-degree: 0%
 
 ---
@@ -291,7 +291,7 @@ In de volgende stap van de wizard Importeren kunt u de map selecteren of maken w
 
       >[!NOTE]
       >
-      >De standaardmap voor een operator is de eerste map waarvoor de operator schrijftoegang heeft. Zie [Beheer van maptoegang](../../platform/using/access-management.md#folder-access-management).
+      >De standaardmap voor een operator is de eerste map waarvoor de operator schrijftoegang heeft. Meer informatie vindt u in [Beheer van maptoegang](../../platform/using/access-management-folders.md).
 
       Als u de importmap wilt selecteren, klikt u op de pijl rechts van het veld **[!UICONTROL Folder]** en selecteert u de desbetreffende map. U kunt het **[!UICONTROL Select link]** pictogram ook gebruiken om de boom in een nieuw venster te tonen of een nieuwe omslag tot stand te brengen.
 
