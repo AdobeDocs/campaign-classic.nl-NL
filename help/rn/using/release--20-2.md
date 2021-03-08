@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '2556'
 ht-degree: 94%
@@ -191,7 +191,7 @@ Kom meer te weten in de [Campaign-compatibiliteitsmatrix](https://helpx.adobe.co
 
 * U kunt uw eigen Litmus-account niet meer gebruiken voor provisioning en gebruik van inboxrendering in Adobe Campaign. [Meer informatie](../../delivery/using/inbox-rendering.md).
 
-* Voor een beter onderscheid tussen weergaven en mappen is de kleur van weergavenamen gewijzigd van donkerblauw in donkercyaan. [Meer informatie](../../platform/using/access-management.md#about-views)
+* Voor een beter onderscheid tussen weergaven en mappen is de kleur van weergavenamen gewijzigd van donkerblauw in donkercyaan. [Meer informatie](../../platform/using/access-management-folders.md)
 
 * Campaign Classic kan nu worden verbonden met Microsoft Dynamics CRM-accounts die worden gehost in de regio’s Verenigd Koninkrijk, India en Canada. Dit is van toepassing op Office 365 en op on-premise implementatietypen (Dynamics 2015).
 
