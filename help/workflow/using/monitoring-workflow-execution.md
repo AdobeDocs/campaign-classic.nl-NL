@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1998'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ De werktabellen van de workflow worden automatisch verwijderd wanneer de workflo
 
 ## Fouten {#managing-errors} beheren
 
-Wanneer een fout optreedt, wordt de werkstroom gepauzeerd en wordt de activiteit uitgevoerd wanneer de fout optrad met rood. In het werkschemaoverzicht (**[!UICONTROL Monitoring]** universum > **[!UICONTROL Workflows]** verbinding) kunt u werkschema&#39;s met slechts fouten tonen, zoals hieronder getoond.
+Wanneer een fout optreedt, wordt de werkstroom gepauzeerd en wordt de activiteit uitgevoerd wanneer de fout optrad met rood. In het werkschemaoverzicht, onder **[!UICONTROL Monitoring]** tabel - **[!UICONTROL Workflows]** verbinding, kunt u werkschema&#39;s met slechts fouten tonen, zoals hieronder getoond.
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
@@ -169,7 +169,7 @@ Indien mogelijk raden we u aan de workflow opnieuw te starten nadat u wijziginge
 
 Op de pagina **[!UICONTROL Instance supervision]** kunt u de Adobe Campaign-serveractiviteit weergeven en een lijst met workflows en leveringen met fouten weergeven.
 
-Ga naar het **[!UICONTROL Monitoring]** universum en klik op de **[!UICONTROL General view]** koppeling om deze pagina te openen.
+Ga naar het tabblad **[!UICONTROL Monitoring]** en klik op de koppeling **[!UICONTROL General view]** om deze pagina te openen.
 
 ![](assets/wf-monitoring_from-homepage.png)
 
