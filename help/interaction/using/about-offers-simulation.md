@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 5%
@@ -29,7 +29,7 @@ Lees de onderstaande stappen voor meer informatie over het simuleren van een aan
 
 Voer de volgende stappen uit om een simulatie van uw aanbiedingen uit te voeren:
 
-1. Klik in het **[!UICONTROL Profiles and Targets]** universum op de koppeling **[!UICONTROL Simulations]** en klik vervolgens op de knop **[!UICONTROL Create]**.
+1. Klik op het tabblad **[!UICONTROL Profiles and Targets]** op de koppeling **[!UICONTROL Simulations]** en klik vervolgens op de knop **[!UICONTROL Create]**.
 
    ![](assets/offer_simulation_001.png)
 
