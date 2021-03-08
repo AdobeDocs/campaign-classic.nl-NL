@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 3%
@@ -39,7 +39,7 @@ Klik op het tabblad **[!UICONTROL Edit]** op de koppeling **[!UICONTROL Advanced
 
 Selecteer de **Op vorm** Webinterface. Met dit type interface kunt u verpersoonlijkingsvelden maken die door lokale entiteiten worden gebruikt wanneer ze een campagne bestellen. Zie [Een lokale campagne maken (op formulier)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
 
-Sla uw campagne op. U kunt het van **Campagnepakketten** nu gebruiken mening in **Campagne** universum, door **[!UICONTROL Create]** knoop te klikken.
+Sla uw campagne op. U kunt het van **de mening van de Campagne** in **Campagne** nu gebruiken, door **[!UICONTROL Create]** knoop te klikken.
 
 In de weergave **[!UICONTROL Campaign Package]** kunt u lokale campagnemalplaatjes (out-of-the-box of gedupliceerd) gebruiken, evenals referentiecampagnes voor samenwerkingscampagnes, met als doel campagnes voor uw verschillende organisatorische entiteiten te maken.
 
