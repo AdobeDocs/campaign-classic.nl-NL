@@ -7,7 +7,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 U kunt de uitvoering van leveringen bijhouden via verschillende rapporten die toegankelijk zijn vanuit het leveringsoverzicht. Pas de volgende procedure toe om rapporten weer te geven:
 
-1. Ga naar het **[!UICONTROL Campaigns]** universum en klik **[!UICONTROL Delivery]** verbinding om de lijst van leveringen te tonen.
+1. Ga naar de **[!UICONTROL Campaigns]** tabel en klik op de koppeling **[!UICONTROL Delivery]** om de lijst met leveringen weer te geven.
 1. Klik op de naam van de levering die u wilt weergeven om de details weer te geven.
 
    ![](assets/s_ncs_user_detailled_report.png)
