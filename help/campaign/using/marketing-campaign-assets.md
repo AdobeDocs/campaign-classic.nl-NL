@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
@@ -98,7 +98,7 @@ Een overzicht kan punten en verpersoonlijkingsgebieden, middelen en aanbiedingen
 
    ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* De bronnen zijn marketingbronnen die worden gegenereerd in het dashboard voor marketingbronnen dat wordt geopend via de koppeling **[!UICONTROL Resources]** van het **[!UICONTROL Campaigns]** universum.
+* De bronnen zijn marketingbronnen die worden gegenereerd in het dashboard voor marketingbronnen dat wordt geopend via de koppeling **[!UICONTROL Resources]** van het tabblad **[!UICONTROL Campaigns]**.
 
    ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
