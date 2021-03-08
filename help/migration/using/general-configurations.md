@@ -7,9 +7,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '2786'
+source-wordcount: '2787'
 ht-degree: 0%
 
 ---
@@ -616,7 +616,7 @@ Alle standaardrapporten maken momenteel gebruik van de renderingengine v6.x. Als
 
 ### Speciale rapporten {#personalized-reports}
 
-<!--If you want to have the blue banner from v7 (allowing you access to the universes), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
+<!--If you want to have the blue banner from v7 (allowing you access to the tabs), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
 ![](assets/migration_reports_1.png)
 -->
@@ -631,7 +631,7 @@ Er zijn twee families voor webtoepassingen:
 
 ### Geïdentificeerde webtoepassingen {#identified-web-applications}
 
-Net als voor rapporten (zie [Rapporten](#reports)), als u JavaScript hebt toegevoegd, moet u controleren en aanpassen indien nodig. Als u wilt profiteren van de blauwe banner v7 (die de universen bevat), moet u de webtoepassing opnieuw publiceren. Als uw JavaScript-code werkt, kunt u de v6.x-renderingengine selecteren. Als dit niet het geval is, kunt u de v6.0-renderingengine gebruiken terwijl u uw code aanpast en vervolgens de v6.x-renderingengine gebruiken.
+Enkel zoals voor rapporten ([leer meer](#reports)), als u JavaScript had toegevoegd, moet u controleren en aanpassen indien nodig. Als u wilt profiteren van de blauwe banner v7 (met de blauwe tabbladen), moet u de webtoepassing opnieuw publiceren. Als uw JavaScript-code werkt, kunt u de v6.x-renderingengine selecteren. Als dit niet het geval is, kunt u de v6.0-renderingengine gebruiken terwijl u uw code aanpast en vervolgens de v6.x-renderingengine gebruiken.
 
 >[!NOTE]
 De stappen voor het selecteren van de renderingengine zijn gelijk aan die voor het selecteren van rapporten. Zie [Persoonlijke rapporten](#personalized-reports).
