@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '1129'
 ht-degree: 1%
@@ -83,7 +83,7 @@ Als een lokale entiteit zich voor een campagne registreert, wordt dit in een ord
 
 ## Werkruimte {#workspace}
 
-De lijst van campagnepakketten kan van **Campagnes** universum worden betreden: Klik op de koppeling **[!UICONTROL Campaign packages]**.
+De lijst met campagnepakketten is toegankelijk via het tabblad **Campagnes**: Klik op de koppeling **[!UICONTROL Campaign packages]**.
 
 ![](assets/mkg_dist_home_local_op.png)
 
