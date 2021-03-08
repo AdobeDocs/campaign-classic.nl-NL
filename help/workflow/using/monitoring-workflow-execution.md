@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '1998'
 ht-degree: 0%
@@ -271,7 +271,7 @@ Dit doet u als volgt:
 
 1. Klik met de rechtermuisknop op de map waaraan u de weergave wilt toevoegen.
 1. Selecteer in **[!UICONTROL Add new folder]** / **[!UICONTROL Administration]** de weergave die u wilt toevoegen.
-1. Zodra de omslag aan de boom wordt toegevoegd, zorg ervoor u het als mening vormt, zodat het alle werkschema&#39;s toont, wat hun oorsprongomslag is.Voor meer op hoe te om meningen te vormen, verwijs naar [deze sectie](../../platform/using/access-management.md#adding-folders-and-creating-views).
+1. Zodra de omslag aan de boom wordt toegevoegd, zorg ervoor u het als mening vormt, zodat het alle werkschema&#39;s toont, wat hun oorsprongomslag is.Voor meer op hoe te om meningen te vormen, verwijs naar [deze sectie](../../platform/using/access-management-folders.md).
 
 Naast deze weergaven kunt u ook mappen met filters instellen waarmee u de lijst met workflows kunt filteren op basis van hun uitvoeringsstatus. Dit doet u als volgt:
 
