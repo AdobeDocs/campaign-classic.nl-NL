@@ -7,7 +7,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 2%
@@ -31,7 +31,7 @@ Met Marketing Analytics kunt u gemakkelijker rapporten maken en gegevens in de d
 
 ### Stap 1 - het Creëren van een rapport dat op een kubus {#step-1---creating-a-report-based-on-a-cube} wordt gebaseerd
 
-Als u een rapport wilt maken op basis van een kubus, klikt u op de knop **[!UICONTROL Create]** in het **[!UICONTROL Reports]** universum en selecteert u de kubus die u wilt gebruiken.
+Als u een rapport wilt maken op basis van een kubus, klikt u op de knop **[!UICONTROL Create]** op het tabblad **[!UICONTROL Reports]** en selecteert u de kubus die u wilt gebruiken.
 
 Het proces wordt hier nader beschreven: [Een rapport maken op basis van een kubus](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
 
@@ -152,7 +152,7 @@ Als u een populatie in een lijst wilt groeperen, voert u de volgende stappen uit
 
    U kunt de inhoud van het winkelwagentje opslaan of leeg maken.
 
-   De relevante lijst is toegankelijk via het universum **[!UICONTROL Profiles and targets]**.
+   De relevante lijst is toegankelijk via het tabblad **[!UICONTROL Profiles and targets]**.
 
    ![](assets/s_advuser_cube_in_report_config_02g.png)
 
