@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 17%
@@ -83,7 +83,7 @@ De algemene indeling van de Adobe Campaign-verkenner wordt weergegeven in [Adobe
 >
 >U kunt een geavanceerde weergave van deze lijst ook weergeven vanuit de Adobe Campaign-structuur door op de koppeling **[!UICONTROL Profiles and targets > Recipients]** te klikken. De lijstvertoning kan aan uw behoeften worden gevormd. U kunt kolommen toevoegen of verwijderen, de kolomvolgorde, de sorteergegevens enzovoort definiëren. De de vertoningsconfiguratie van de lijst wordt beschreven in [Gebruikend de ontdekkingsreiziger van Adobe Campaign](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
 >
->U kunt ook de weergave voor ontvangers definiëren. Raadpleeg [Mappen en weergaven](../../platform/using/access-management.md#folders-and-views) voor meer informatie over deze functionaliteit.
+>U kunt ook de weergave voor ontvangers definiëren. Raadpleeg [Mappen en weergaven](../../platform/using/access-management-folders.md) voor meer informatie over deze functionaliteit.
 
 ## Actieve profielen {#active-profiles}
 
