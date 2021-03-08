@@ -7,7 +7,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '2786'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Om TIMESTAMP MET wijze TIMEZONE te gebruiken, moet u ook **-userTimestamptz:1** 
 
 ### Oracle {#oracle}
 
-Als u een **ORA 01805** fout tijdens postupgrade krijgt, betekent dit dat de Oracle timezone-bestanden tussen de toepassingsserver en de databaseserver niet gesynchroniseerd zijn. Voer de volgende stappen uit om ze opnieuw te synchroniseren:
+Als u een **ORA 01805** fout tijdens postupgrade krijgt, betekent dit dat de dossiers van de Oracle timezone tussen de toepassingsserver en de gegevensbestandserver uit synchronisatie zijn. Voer de volgende stappen uit om ze opnieuw te synchroniseren:
 
 1. Voer de volgende opdracht uit om het gebruikte tijdzonebestand te identificeren:
 
@@ -52,13 +52,13 @@ Als u een **ORA 01805** fout tijdens postupgrade krijgt, betekent dit dat de Ora
    select * from v$timezone_file
    ```
 
-   Tijdzonebestanden bevinden zich gewoonlijk in de map **ORACLE_HOME/oracore/zoneinfo/**.
+   Tijdzonebestanden worden meestal gevonden in de map **ORACLE_HOME/oracore/zoneinfo/**.
 
 1. Zorg ervoor dat de tijdzonebestanden op beide servers identiek zijn.
 
 Ga voor meer informatie naar: [https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004).
 
-Een onjuiste uitlijning van de tijdzone tussen client en server kan ook enige vertraging veroorzaken. Daarom raden we aan om dezelfde versie van Oracle-bibliotheek aan client- en serverzijde te gebruiken. Beide tijdzones moeten hetzelfde zijn.
+Een onjuiste uitlijning van de tijdzone tussen client en server kan ook enige vertraging veroorzaken. Daarom adviseren wij het gebruiken van de zelfde versie van de bibliotheek van het Oracle op de cliënt en serverkanten, moeten beide tijdstreken het zelfde zijn.
 
 Controleren of beide zijden zich in dezelfde tijdzone bevinden:
 
@@ -104,7 +104,7 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->Het **interne** wachtwoord moet voor alle volgende servers identiek zijn. Zie [deze sectie](../../installation/using/campaign-server-configuration.md#internal-identifier) en [deze sectie](../../platform/using/access-management.md#about-permissions) voor meer informatie.
+>Het **interne** wachtwoord moet voor alle volgende servers identiek zijn. Zie [deze sectie](../../installation/using/campaign-server-configuration.md#internal-identifier) en [deze sectie](../../platform/using/access-management.md) voor meer informatie.
 
 ### Nieuwe functies in v7 {#new-features-in-v7}
 
@@ -421,7 +421,7 @@ De migratie wordt uitgevoerd via een postupgrade en conflicten kunnen optreden i
 
 Na de middelsynchronisatie, laat **postupgrade** bevel u ontdekken als de synchronisatie fouten of waarschuwingen produceert.
 
-### Het synchronisatieresultaatweergeven {#view-the-synchronization-result}
+### Het synchronisatieresultaat {#view-the-synchronization-result} weergeven
 
 Het synchronisatieresultaat kan op twee manieren worden weergegeven:
 
@@ -440,7 +440,7 @@ Het synchronisatieresultaat kan op twee manieren worden weergegeven:
 
 * Het **postupgrade_`<server version number>`_time van postupgrade`>`.log** dossier bevat het synchronisatieresultaat. Deze is standaard beschikbaar in de volgende map: **installatiemap/var/`<instance>`postupgrade**. Fouten en waarschuwingen worden aangegeven met de kenmerken **error** en **warning**.
 
-### Een conflictoplossen {#resolve-a-conflict}
+### Een conflict {#resolve-a-conflict} oplossen
 
 Conflicten oplossen moet alleen worden uitgevoerd door gevorderde operatoren en gebruikers aan wie beheerdersrechten zijn verleend.
 
@@ -456,8 +456,7 @@ Er zijn drie manieren om een conflict op te lossen:
 * **[!UICONTROL Keep the current version]**: betekent dat de bijwerking wordt afgewezen.
 
    >[!IMPORTANT]
-   >
-   >Als u deze resolutiemodus selecteert, loopt u het risico dat de patches in de nieuwe versie verloren gaan. Daarom wordt ten zeerste aanbevolen deze optie niet te gebruiken of alleen voor professionele marktdeelnemers te reserveren.
+   Als u deze resolutiemodus selecteert, loopt u het risico dat de patches in de nieuwe versie verloren gaan. Daarom wordt ten zeerste aanbevolen deze optie niet te gebruiken of alleen voor professionele marktdeelnemers te reserveren.
 
 Ga als volgt te werk als u het conflict handmatig wilt oplossen:
 
@@ -498,19 +497,17 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 * nms:mobileOfferView
 * nms:paperOfferView
 
-### Inhoudaanbieden {#offer-content}
+### Inhoud {#offer-content} aanbieden
 
 In v7 is de inhoud van het aanbod verplaatst. In v6.02 bevond de inhoud zich in elk representatieschema (**nms:emailOfferView**). In v7 bevindt de inhoud zich nu in het aanbiedingsschema. Na de postupgrade is de inhoud daarom niet zichtbaar in de interface. Na postupgrade moet u de aanbiedingsinhoud opnieuw maken of een script ontwikkelen dat de inhoud automatisch van het presentatieschema naar het aanbiedingsschema verplaatst.
 
 >[!IMPORTANT]
->
->Als sommige leveringen die geconfigureerde aanbiedingen gebruiken na de migratie moeten worden verzonden, moet u al deze leveringen in v7 verwijderen en opnieuw maken. Als u dat niet kunt, wordt een &quot;verenigbaarheidswijze&quot;aangeboden. Deze modus wordt niet aanbevolen omdat u niet van alle nieuwe functies in Interaction v7 kunt profiteren. Dit is een overgangsmodus waarmee u lopende campagnes kunt voltooien vóór de daadwerkelijke 6.1-migratie. Neem contact met ons op voor meer informatie over deze modus.
+Als sommige leveringen die geconfigureerde aanbiedingen gebruiken na de migratie moeten worden verzonden, moet u al deze leveringen in v7 verwijderen en opnieuw maken. Als u dat niet kunt, wordt een &quot;verenigbaarheidswijze&quot;aangeboden. Deze modus wordt niet aanbevolen omdat u niet van alle nieuwe functies in Interaction v7 kunt profiteren. Dit is een overgangsmodus waarmee u lopende campagnes kunt voltooien vóór de daadwerkelijke 6.1-migratie. Neem contact met ons op voor meer informatie over deze modus.
 
 Een voorbeeld van een bewegingsscript (**interactionTo610_full_XX.js**) is beschikbaar in de map **Migration** in de map Adobe Campaign v7. Dit bestand bevat een voorbeeld van een script voor een client dat gebruikmaakt van één e-mailrepresentatie per aanbieding (de velden **[!UICONTROL htmlSource]** en **[!UICONTROL textSource]**). De inhoud in de tabel **NmsEmailOfferView** is verplaatst naar de tabel met aanbiedingen.
 
 >[!NOTE]
->
->Met dit script kunt u niet profiteren van de opties voor inhoudsbeheer en renderfuncties. Om van deze functies te profiteren, moet u de catalogusaanbiedingen, in het bijzonder de aanbiedingsinhoud en configuratieruimten heroverwegen.
+Met dit script kunt u niet profiteren van de opties voor inhoudsbeheer en renderfuncties. Om van deze functies te profiteren, moet u de catalogusaanbiedingen, in het bijzonder de aanbiedingsinhoud en configuratieruimten heroverwegen.
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -609,8 +606,7 @@ Hier volgt de procedure nadat u de inhoud van het aanbod hebt verplaatst als u s
 1. Voer uitgebreide tests uit.
 
    >[!NOTE]
-   >
-   >De namen van categorieën en aanbiedingen online worden gewijzigd nadat u live bent gegaan. Werk op het binnenkomende kanaal alle verwijzingen naar aanbiedingen en categorieën bij.
+   De namen van categorieën en aanbiedingen online worden gewijzigd nadat u live bent gegaan. Werk op het binnenkomende kanaal alle verwijzingen naar aanbiedingen en categorieën bij.
 
 ## Rapporten {#reports}
 
@@ -638,8 +634,7 @@ Er zijn twee families voor webtoepassingen:
 Net als voor rapporten (zie [Rapporten](#reports)), als u JavaScript hebt toegevoegd, moet u controleren en aanpassen indien nodig. Als u wilt profiteren van de blauwe banner v7 (die de universen bevat), moet u de webtoepassing opnieuw publiceren. Als uw JavaScript-code werkt, kunt u de v6.x-renderingengine selecteren. Als dit niet het geval is, kunt u de v6.0-renderingengine gebruiken terwijl u uw code aanpast en vervolgens de v6.x-renderingengine gebruiken.
 
 >[!NOTE]
->
->De stappen voor het selecteren van de renderingengine zijn gelijk aan die voor het selecteren van rapporten. Zie [Persoonlijke rapporten](#personalized-reports).
+De stappen voor het selecteren van de renderingengine zijn gelijk aan die voor het selecteren van rapporten. Zie [Persoonlijke rapporten](#personalized-reports).
 
 Verbindingsmethoden voor webtoepassingen zijn gewijzigd in v7. Als u verbindingsproblemen tegenkomt in uw geïdentificeerde webtoepassingen, moet u tijdelijk de **allowUserPassword** en **sessionTokenOnly** opties in het **serverConf.xml** dossier activeren. Na de postupgrade wijzigt u de volgende waarden voor opties:
 
@@ -672,8 +667,7 @@ sessionTokenOnly="false"
 Als u problemen ondervindt, publiceert u de webtoepassing opnieuw. Als het probleem zich blijft voordoen, kunt u de v6.0-renderingengine selecteren. Als u JavaScript niet hebt toegevoegd, kunt u de v6.x-renderingengine selecteren en profiteren van de nieuwe functies.
 
 >[!NOTE]
->
->De stappen voor het selecteren van de renderingengine zijn gelijk aan die voor het selecteren van rapporten. Zie [Persoonlijke rapporten](#personalized-reports).
+De stappen voor het selecteren van de renderingengine zijn gelijk aan die voor het selecteren van rapporten. Zie [Persoonlijke rapporten](#personalized-reports).
 
 ## Rood-hoed {#red-hat}
 
