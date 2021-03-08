@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 3%
@@ -64,7 +64,7 @@ In onze database is er een categorie reisaanbiedingen voor Afrika. De geschikthe
 
 ## Een aanbiedingssimulatie uitvoeren {#perform-an-offer-simulation}
 
-1. Klik in het **[!UICONTROL Profiles and Targets]** universum op de koppeling **[!UICONTROL Simulations]** en klik vervolgens op de knop **[!UICONTROL Create]**.
+1. Klik op het tabblad **[!UICONTROL Profiles and Targets]** op de koppeling **[!UICONTROL Simulations]** en klik vervolgens op de knop **[!UICONTROL Create]**.
 
    ![](assets/offer_simulation_001.png)
 
