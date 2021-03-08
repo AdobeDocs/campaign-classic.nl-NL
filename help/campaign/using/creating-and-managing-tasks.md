@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '3733'
+source-wordcount: '3732'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Taken kunnen worden gemaakt, weergegeven en gecontroleerd vanuit de takenlijst o
 
 Taken worden aan de campagne gekoppeld en kunnen afhankelijkheden, d.w.z. bijbehorende taken, hebben. Elke taak heeft een status, prioriteit, geschatte belasting en bijbehorende kosten.
 
-Alle taken worden gegroepeerd in een lijst die via **Campagnes** universum toegankelijk is. Voor meer op dit, verwijs naar [Toegang tot taken](#accessing-tasks).
+Alle taken worden gegroepeerd in een lijst die via **Campagnes** tabel toegankelijk is. Voor meer op dit, verwijs naar [Toegang tot taken](#accessing-tasks).
 
 Ze kunnen worden weergegeven in het programma waartoe ze behoren.
 
@@ -35,7 +35,7 @@ Ze kunnen worden weergegeven in het programma waartoe ze behoren.
 
 ### Taken {#displaying-tasks} weergeven
 
-De taken worden weergegeven in de takenlijst die toegankelijk is via het universum **[!UICONTROL Campaigns]**.
+De taken worden weergegeven in de takenlijst die toegankelijk is via het tabblad **[!UICONTROL Campaigns]**.
 
 ![](assets/s_ncs_user_task_edit_view.png)
 
@@ -57,7 +57,7 @@ Klik op een taak om deze te bewerken.
 
 ## Nieuwe taak maken {#creating-a-new-task}
 
-Als u een taak wilt maken, klikt u op de koppeling **[!UICONTROL Tasks]** in het universum Campagnes en selecteert u **[!UICONTROL Create]**.
+Als u een taak wilt maken, klikt u op de koppeling **[!UICONTROL Tasks]** op het tabblad **[!UICONTROL Campaigns]** en selecteert u **[!UICONTROL Create]**.
 
 ![](assets/s_ncs_user_task_create_new.png)
 
@@ -97,7 +97,7 @@ Wanneer een Adobe Campaign-operator een taak maakt, wordt deze standaard automat
 >
 >Operator management wordt gepresenteerd in [deze sectie](../../platform/using/access-management.md).
 
-U kunt aangeven welke operatoren bij de uitvoering van de taak betrokken zijn. Deze operatoren zijn niet geautoriseerd om de taak te sluiten. Zij mogen alleen de hun toegewezen taak goedkeuren.
+U kunt aangeven welke operatoren bij de uitvoering van de taak betrokken zijn. Deze operatoren zijn niet geautoriseerd om de taak te sluiten. Zij kunnen alleen de hun toegewezen taak goedkeuren.
 
 Ze worden geselecteerd met het pictogram **[!UICONTROL Resources]** op de taakwerkbalk. Klik **[!UICONTROL Add]** en selecteer de betrokken exploitanten.
 
@@ -414,7 +414,7 @@ Bovendien als u het eind van een oudertaak uitstelt, kunnen sommige van zijn kin
 
 **Voorbeeld**
 
-Een oudertaak die op 9 oktober om 5 PM wordt gepland te beëindigen heeft twee kindtaken, taak A en taak B. Taak A moet op 10 oktober om 2 uur beginnen en taak B moet op 12 oktober om 8.00 uur beginnen.
+Een oudertaak die op 9 oktober om 5PM wordt gepland te beëindigen heeft twee kindtaken, taak A en taak B. Taak A moet op 10 oktober om 2 uur beginnen en taak B moet op 12 oktober om 8.00 uur beginnen.
 
 Laten we de bovenliggende taak uitstellen: het loopt nu af op 11 oktober om 13.00 uur. Alleen taak A wordt uitgesteld en begint op 11 oktober om 13.00 uur.
 
@@ -435,7 +435,7 @@ Een taak kan zijn: **[!UICONTROL Scheduled]**, **[!UICONTROL In progress]**, **[
 >[!NOTE]
 >
 >* De taakstatus wordt automatisch bijgewerkt.
->* Zelfs als de geldigheidsperiode is voltooid, worden taken die niet zijn afgesloten, nog steeds opgenomen in de lijst met actieve taken. Een waarschuwing waarschuwt exploitanten dat de taak laat is.
+>* Zelfs als de geldigheidsperiode is voltooid, worden taken die niet zijn afgesloten, nog steeds opgenomen in de lijst met lopende taken. Een waarschuwing waarschuwt exploitanten dat de taak laat is.
 
 >
 
