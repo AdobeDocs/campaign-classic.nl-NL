@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 0%
@@ -206,7 +206,7 @@ De procedure voor het opzetten van het beheer van de voorraden en de orders in A
 
 ### Bestandsbeheer {#stock-management}
 
-Adobe Campaign kan een groep operatoren waarschuwen als het bestand is uitgeput of een minimumdrempel heeft bereikt. De voorraadniveaus zijn toegankelijk via de **[!UICONTROL Stocks]** verbinding van **[!UICONTROL Campaigns]** universum via de **[!UICONTROL Other choices]** verbinding van het navigatiegebied.
+Adobe Campaign kan een groep operatoren waarschuwen als het bestand is uitgeput of een minimumdrempel heeft bereikt. De voorraadniveaus zijn toegankelijk via de verbinding **[!UICONTROL Stocks]** van het **[!UICONTROL Campaigns]** lusje via **[!UICONTROL Other choices]** verbinding van het navigatiegebied.
 
 ![](assets/s_ncs_user_stocks_view.png)
 
