@@ -7,7 +7,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 10%
@@ -89,7 +89,7 @@ De kubussen worden opgeslagen in de **[!UICONTROL Administration > Configuration
 
 De belangrijkste gebruikscontext voor kubussen is als volgt:
 
-* De uitvoer van gegevens kan direct in een rapport worden uitgevoerd, dat in het **[!UICONTROL Reports]** universum van het platform van Adobe Campaign wordt ontworpen.
+* Gegevens kunnen rechtstreeks worden geëxporteerd in een rapport dat is ontworpen op het tabblad **[!UICONTROL Reports]** van het Adobe Campaign-platform.
 
    Hiertoe maakt u een nieuw rapport en selecteert u de kubus die u wilt gebruiken.
 
