@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 5%
@@ -120,7 +120,7 @@ In de werkschemaeigenschappen, selecteer een groep van de Supervisor, of het geb
 
 Voordat u een workflow gaat maken, moet u workflowsupervisors definiëren. Zij zullen per e-mail op de hoogte worden gesteld in het geval van fouten. Raadpleeg [Fouten beheren](../../workflow/using/monitoring-workflow-execution.md#managing-errors) voor meer informatie.
 
-Controleer regelmatig het **[!UICONTROL Monitoring]** universum om de algemene status van de actieve workflows te bekijken. Voor meer op dit, verwijs naar [Instantietoezicht](../../workflow/using/monitoring-workflow-execution.md#instance-supervision).
+Controleer regelmatig het tabblad **[!UICONTROL Monitoring]** om de algemene status van de actieve workflows weer te geven. Voor meer op dit, verwijs naar [Instantietoezicht](../../workflow/using/monitoring-workflow-execution.md#instance-supervision).
 
 Met de Workflow HeatMap kunnen beheerders van het Adobe Campaign-platform de belasting op de instantie controleren en workflows dienovereenkomstig plannen. Raadpleeg [Workflowbewaking](../../workflow/using/heatmap.md) voor meer informatie hierover.
 
