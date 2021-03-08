@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 5%
@@ -29,7 +29,7 @@ Als u een sjabloon wilt toevoegen, raadpleegt u [Algemene opties](../../web/usin
 
 Na het vormen van een levering, kunt u het als malplaatje bewaren om het voor toekomstige leveringen opnieuw te gebruiken.
 
-Open in het universum **Campagnes** de gekozen levering. Klik op de **knop Opslaan als sjabloon**, geef de sjabloon een naam en sla deze op.
+Open op het tabblad **Campagnes** de gekozen levering. Klik op de **knop Opslaan als sjabloon**, geef de sjabloon een naam en sla deze op.
 
 ![](assets/dce_save_model.png)
 
