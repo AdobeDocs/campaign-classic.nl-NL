@@ -7,7 +7,7 @@ audience: social
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 1%
@@ -109,7 +109,7 @@ De configuratiestadia zijn als volgt:
 
 Met de Adobe Campaign Facebook-toepassing kunt u persoonlijke inhoud weergeven in uw Facebook-toepassing. Voor elke Facebook-toepassing moet u een webtoepassing in Adobe Campaign maken. Ga als volgt te werk om een Facebook-webtoepassing te maken:
 
-1. Ga naar **[!UICONTROL Social networks]** universum, klik **[!UICONTROL Applications]** verbinding, dan **[!UICONTROL Create]** knoop.
+1. Ga naar het **[!UICONTROL Social networks]** lusje, klik **[!UICONTROL Applications]** verbinding, dan **[!UICONTROL Create]** knoop.
 
    ![](assets/social_webapp_001.png)
 
