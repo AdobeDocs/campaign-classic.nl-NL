@@ -7,9 +7,9 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 translation-type: tm+mt
-source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '440'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ Mogelijke opties zijn:
 
 * **[!UICONTROL Anonymous access]**: deze optie maakt onbeperkte toegang tot het rapport mogelijk . Er is echter geen manipulatie mogelijk.
 
-   De rechten van de technische operator &#39;webapp&#39; worden gebruikt om rapportelementen weer te geven. Meer informatie [in deze sectie](../../platform/using/access-management.md#default-operators).
+   Machtigingen van de technische operator &#39;webapp&#39; worden gebruikt om rapportelementen weer te geven. Meer informatie [in deze sectie](../../platform/using/access-management-operators.md).
 
 * **[!UICONTROL Access control]**: met deze optie kunnen Adobe Campaign-operatoren de toepassing openen nadat ze zijn aangemeld.
 * **[!UICONTROL Specific account]**: met deze optie kunt u het rapport uitvoeren met de rechten van de operator die in het  **[!UICONTROL Operator]** veld is geselecteerd.
