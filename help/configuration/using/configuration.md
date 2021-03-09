@@ -7,15 +7,19 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 translation-type: tm+mt
-source-git-commit: 04b8287dba00adbc391d611cbaf63b36a4bc3d10
+source-git-commit: 4a17b25516bd9cec409a16cff1e336c13f0df5a4
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1191'
 ht-degree: 1%
 
 ---
 
 
-# Configuratie{#configuration}
+# Navigatieboom voor Campagne Explorer configureren{#configuration}
+
+Als deskundige gebruiker, kunt u omslagen in de ontdekkingsboomstructuur toevoegen en het aanpassen.
+
+Meer informatie over Campagneverkenner en navigatiehiërarchie [in deze sectie](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy).
 
 De typen mappen die door de navigatielijst worden gebruikt, worden beschreven in een XML-document dat voldoet aan de grammatica van het schema **xtk:navtree**.
 
