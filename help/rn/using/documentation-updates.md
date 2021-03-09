@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: af2707c6d86215ff94911e670a1eb080572de23c
+source-git-commit: 660b9ad4351fe611d99962f2b163858b1f70bc84
 workflow-type: tm+mt
-source-wordcount: '4151'
+source-wordcount: '4170'
 ht-degree: 93%
 
 ---
@@ -22,6 +22,8 @@ Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates
 Raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/using/latest-release.md) voor aan de release gerelateerde updates.
 
 ## Maart 2021 {#march-2021}
+
+Er is een nieuwe sectie toegevoegd met aanbevolen procedures en controles voor beveiliging en privacy. [Meer informatie](../../installation/using/get-started-security-privacy.md)
 
 Het machtigingsbeheerhoofdstuk [is verbeterd en gesplitst in secties, waaronder informatie over [Operatoren](../../platform/using/access-management-operators.md), [Groepen operatoren](../../platform/using/access-management-groups.md), [Benoemde rechten](../../platform/using/access-management-named-rights.md) en [Mapbeheer](../../platform/using/access-management-folders.md).](../../platform/using/access-management.md)
 
