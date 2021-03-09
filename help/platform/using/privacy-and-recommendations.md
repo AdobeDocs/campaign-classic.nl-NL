@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 660b9ad4351fe611d99962f2b163858b1f70bc84
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2038'
 ht-degree: 73%
 
 ---
@@ -25,7 +25,7 @@ Adobe Campaign is een krachtige tool voor het verzamelen en verwerken van zeer g
 
 * Stuur geen ongewenste e-mails, pushberichten en sms-berichten (&quot;spam&quot;). Adobe gelooft sterk in de principes van permission marketing, in het bevorderen van customer lifetime value en in de loyaliteit van klanten, en verbiedt daarom strikt het gebruik van Adobe Campaign voor het verzenden van ongevraagde berichten.
 
-Neem de tijd om de [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html) door te nemen om de belangrijkste elementen betreffende de controle van beveiliging en privacy te leren.
+Neem de tijd om de [Controlelijst voor beveiliging en privacy](../../installation/using/get-started-security-privacy.md) door te nemen om de belangrijkste elementen betreffende de controle van beveiliging en privacy te leren.
 
 ### Privacywetgeving{#privacy-regulations}
 
