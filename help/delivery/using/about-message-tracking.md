@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
+source-git-commit: e52d1963b72593c5dab8ced9e459d25b05044022
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 9%
@@ -41,7 +41,7 @@ Voor het configureren van tracering moet uw instantie worden gedeclareerd en ger
 
 **Tekstspatiëring opslaan**
 
-Zodra het volgen wordt gevormd en uw URLs bevolkt, moet de volgende server worden geregistreerd. [Meer informatie](../../installation/using/deploying-an-instance.md#tracking-configuration#saving-tracking)
+Zodra het volgen wordt gevormd en uw URLs bevolkt, moet de volgende server worden geregistreerd. [Meer informatie](../../installation/using/deploying-an-instance.md#saving-tracking)
 
 ## Berichten bijhouden {#message-tracking}
 
