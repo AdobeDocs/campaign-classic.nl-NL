@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 9f898e28b981ea4257c9f4b73a579d322ddbba89
+source-git-commit: 3454af2faffacd43fa1ad852529dad175340a237
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Er zijn drie typen instructies:
 
 Zij kunnen direct van de leveringstovenaar worden getest. Ze worden toegepast in de voorvertoning van de inhoud en wanneer u op de knop Tekstspatiëring klikt, wordt de lijst met URL&#39;s weergegeven.
 
-## &lt;>{#<%@-include}
+## &lt;>{#include}
 
 De volgende voorbeelden worden het meest gebruikt:
 
@@ -43,7 +43,7 @@ De volgende voorbeelden worden het meest gebruikt:
 
 Gebruik de verpersoonlijkingsknoop in de leveringstovenaar om de correcte syntaxis te krijgen.
 
-## &lt;>{#<%@-value}
+## &lt;>{#value}
 
 Deze instructie geeft toegang tot parameters van de levering die voor alle ontvangers constant zijn.
 
@@ -62,7 +62,7 @@ Object kan:
 * &quot;levering&quot;: voor de huidige levering (zie details en beperkingen in de onderafdeling hieronder).
 * &quot;provider&quot;: voor de huidige leverancier/het verpletteren (nms:externalAccount).
 * Een extra scriptobject: als een object in de context wordt geladen via: **Eigenschappen** > **Personalisatie** > **Objecten toevoegen in de uitvoeringscontext**.
-* Item van de foreach-lus: zie de onderstaande sectie [Foreach](#<%@-foreach).
+* Item van de foreach-lus: zie de onderstaande sectie [Foreach](#foreach).
 
 ### &quot;delivery&quot;-object {#delivery-object}
 
@@ -82,7 +82,7 @@ Voor de instructie `<%@ value object="delivery" xpath="@myCustomField" %>` geldt
 >
 >`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
 
-### &lt;>{#<%@-value-in-javascript}
+### &lt;>{#value-in-javascript}
 
 Als u het gebruik van &lt;%@-waarde in scriptsecties wilt toestaan, worden twee speciale objecten vervangen door &lt;% en %>:
 
@@ -96,7 +96,7 @@ Bijvoorbeeld:
 `<%@ value object='endScript' %> is expanded in something like <% var iMode = 1 if(iMode == 1) { ... } else { ... } %>.
 ```
 
-## &lt;>{#<%@-foreach}
+## &lt;>{#foreach}
 
 Met deze instructie kunt u een herhaling uitvoeren op een array van objecten die in de levering zijn geladen om afzonderlijke koppelingen bij te houden die betrekking hebben op de objecten.
 
