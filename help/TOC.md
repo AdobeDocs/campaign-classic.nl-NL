@@ -9,7 +9,7 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentatie
 translation-type: tm+mt
-source-git-commit: c256899e9b04c42df1b5938b5b0513079319cd6b
+source-git-commit: 60b4565ec6dc3e7ffc4ffcff69fbcca9fa870614
 workflow-type: tm+mt
 source-wordcount: '2457'
 ht-degree: 56%
@@ -45,18 +45,18 @@ ht-degree: 56%
       + Adobe Campaign-werkruimte{#campaign-workspace}
          + [Aan de slag met de campagnegebruikersinterface](platform/using/adobe-campaign-workspace.md)
          + [Lijsten zoeken en aanpassen](platform/using/adobe-campaign-ui-lists.md)
-         + Veelgestelde vragen {#faq}
-            + [Frequente vragen](platform/using/common-questions.md)
-            + [Algemene concepten](platform/using/faq-key-concepts.md)
-            + [Buildupgrade](platform/using/faq-build-upgrade.md)
-            + [Privacy](platform/using/privacy-faq.md)
-            + [Doelgroepen](platform/using/faq-audiences.md)
-            + [Berichten ontwerpen](platform/using/faq-designing.md)
-            + [Berichten verzenden](platform/using/faq-messages.md)
-            + [Workflows](platform/using/faq-workflows.md)
-            + [Configuratie](platform/using/faq-campaign-config.md)
-            + [Rapporten](platform/using/faq-reporting.md)
-            + [Ontwikkeling](platform/using/faq-developers.md)
+      + Veelgestelde vragen {#faq}
+         + [Frequente vragen](platform/using/common-questions.md)
+         + [Algemene concepten](platform/using/faq-key-concepts.md)
+         + [Buildupgrade](platform/using/faq-build-upgrade.md)
+         + [Privacy](platform/using/privacy-faq.md)
+         + [Doelgroepen](platform/using/faq-audiences.md)
+         + [Berichten ontwerpen](platform/using/faq-designing.md)
+         + [Berichten verzenden](platform/using/faq-messages.md)
+         + [Workflows](platform/using/faq-workflows.md)
+         + [Configuratie](platform/using/faq-campaign-config.md)
+         + [Rapporten](platform/using/faq-reporting.md)
+         + [Ontwikkeling](platform/using/faq-developers.md)
          + [Zelfstudies](platform/using/tutorials.md)
    + Privacy {#privacy}
       + [Privacy en instemming](platform/using/privacy-and-recommendations.md)
