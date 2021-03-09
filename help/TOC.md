@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentatie
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: c256899e9b04c42df1b5938b5b0513079319cd6b
 workflow-type: tm+mt
-source-wordcount: '2412'
-ht-degree: 57%
+source-wordcount: '2457'
+ht-degree: 56%
 
 ---
 
@@ -42,20 +42,22 @@ ht-degree: 57%
    + Starten met Adobe Campaign {#starting-with-adobe-campaign}
       + [Aan de slag met Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
       + [Adobe Campaign starten](platform/using/launching-adobe-campaign.md)
-      + [Adobe Campaign-werkruimte](platform/using/adobe-campaign-workspace.md)
-      + Veelgestelde vragen {#faq}
-         + [Frequente vragen](platform/using/common-questions.md)
-         + [Algemene concepten](platform/using/faq-key-concepts.md)
-         + [Buildupgrade](platform/using/faq-build-upgrade.md)
-         + [Privacy](platform/using/privacy-faq.md)
-         + [Doelgroepen](platform/using/faq-audiences.md)
-         + [Berichten ontwerpen](platform/using/faq-designing.md)
-         + [Berichten verzenden](platform/using/faq-messages.md)
-         + [Workflows](platform/using/faq-workflows.md)
-         + [Configuratie](platform/using/faq-campaign-config.md)
-         + [Rapporten](platform/using/faq-reporting.md)
-         + [Ontwikkeling](platform/using/faq-developers.md)
-      + [Zelfstudies](platform/using/tutorials.md)
+      + Adobe Campaign-werkruimte{#campaign-workspace}
+         + [Aan de slag met de campagnegebruikersinterface](platform/using/adobe-campaign-workspace.md)
+         + [Lijsten zoeken en aanpassen](platform/using/adobe-campaign-ui-lists.md)
+         + Veelgestelde vragen {#faq}
+            + [Frequente vragen](platform/using/common-questions.md)
+            + [Algemene concepten](platform/using/faq-key-concepts.md)
+            + [Buildupgrade](platform/using/faq-build-upgrade.md)
+            + [Privacy](platform/using/privacy-faq.md)
+            + [Doelgroepen](platform/using/faq-audiences.md)
+            + [Berichten ontwerpen](platform/using/faq-designing.md)
+            + [Berichten verzenden](platform/using/faq-messages.md)
+            + [Workflows](platform/using/faq-workflows.md)
+            + [Configuratie](platform/using/faq-campaign-config.md)
+            + [Rapporten](platform/using/faq-reporting.md)
+            + [Ontwikkeling](platform/using/faq-developers.md)
+         + [Zelfstudies](platform/using/tutorials.md)
    + Privacy {#privacy}
       + [Privacy en instemming](platform/using/privacy-and-recommendations.md)
       + [Privacybeheer](platform/using/privacy-management.md)
@@ -140,6 +142,7 @@ ht-degree: 57%
       + [Sms-kanaal](delivery/using/sms-channel.md)
       + [Protocol en instellingen voor sms-connector](delivery/using/sms-protocol.md)
       + [Problemen met sms oplossen](delivery/using/troubleshooting-sms.md)
+      + [Migreren naar de uitgebreide algemene SMPP-aansluiting](delivery/using/unsupported-connector-migration.md)
    + [REGELS verzenden](delivery/using/line-channel.md)
    + Pushmeldingen verzenden {#sending-push-notifications}
       + [Kanaal voor mobiele apps](delivery/using/about-mobile-app-channel.md)
@@ -674,6 +677,14 @@ ht-degree: 57%
       + [Verbinding maken met de database](installation/using/connecting-to-database.md)
       + [Het gegevensschema maken](installation/using/creating-data-schema.md)
       + [Gegevenstoewijzing definiëren](installation/using/defining-data-mapping.md)
+   + Controlelijst voor beveiliging en privacy {#security-privacy}
+      + [Aan de slag met beveiliging en privacy](installation/using/get-started-security-privacy.md)
+      + [Privacy](installation/using/privacy.md)
+      + [Toegangsbeheer](installation/using/access-management.md)
+      + [Richtlijnen voor scripts en codering](installation/using/scripting-coding-guidelines.md)
+      + [Netwerk, database en SSL/TLS](installation/using/network-database.md)
+      + [Serverconfiguratie](installation/using/server-configuration.md)
+      + [Webserverconfiguratie](installation/using/web-server-configuration.md)
    + Bijlagen {#appendices}
       + [Serverconfiguratiebestand](installation/using/the-server-configuration-file.md)
       + [Campaign-netwerkeindpunten](installation/using/campaign-network-endpoints.md)
@@ -790,9 +801,8 @@ ht-degree: 57%
       + [SOAP-methoden in JavaScript](configuration/using/soap-methods-in-javascript.md)
       + [Extra SQL-functies toevoegen](configuration/using/adding-additional-sql-functions.md)
    + Navigatiehiërarchie {#navigation-hierarchy}
-      + [De navigatiehiërarchie](configuration/using/about-navigation-hierarchy.md)
-      + [Configuratie](configuration/using/configuration.md)
-      + [Bewerking](configuration/using/edition.md)
+      + [Vorm de hiërarchie van de Ontdekkingsreiziger](configuration/using/configuration.md)
+      + [De hiërarchie van Verkenner bewerken](configuration/using/edition.md)
    + Een aangepaste tabel voor ontvangers gebruiken {#use-a-custom-recipient-table}
       + [Aangepaste tabel voor ontvangers](configuration/using/about-custom-recipient-table.md)
       + [Schema-eigenschappen](configuration/using/schema-characteristics.md)
