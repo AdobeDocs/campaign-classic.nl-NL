@@ -9,9 +9,9 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 425b2e5748703a8349b6f70968d1ef4c71f72b21
+source-git-commit: f78fa94fb4fb9236222886a167a46d252497b2aa
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1712'
 ht-degree: 94%
 
 ---
@@ -99,7 +99,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    <li>iOS</li>
    </ul>
   <p>Als u één van deze connectoren gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../delivery/using/sms-channel.md">Meer informatie</a></p> 
-  <p>Ontdek in <a href="https://helpx.adobe.com/nl/campaign/kb/sms-connector.html">deze technische opmerking</a> hoe u verouderde connectoren kunt migreren.</p>
+  <p>Ontdek in <a href="../../delivery/using/unsupported-connector-migration.md">deze technische opmerking</a> hoe u verouderde connectoren kunt migreren.</p>
   <p><em>Doeldatum voor verwijdering: april 2021</em></p>
   </td> 
  </tr>
