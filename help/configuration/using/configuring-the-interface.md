@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 2%
@@ -70,7 +70,7 @@ Als u een nieuw formulier maakt, kunt u de gegevens van de externe tabel met ont
 
    >[!NOTE]
    >
-   >Raadpleeg [deze pagina](../../configuration/using/about-navigation-hierarchy.md) voor meer informatie over **navtree**-tekstbestanden.
+   >Raadpleeg [deze pagina](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy) voor meer informatie over **navtree**-tekstbestanden.
 
    In het huidige voorbeeld moet het **navtree** bestand zijn gebaseerd op het schema **cus:individual** en daarom de volgende vorm hebben:
 
