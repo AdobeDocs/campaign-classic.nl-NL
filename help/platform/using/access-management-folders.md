@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: d6993725ed4060f2affce98c4a8a5211bda03bdf
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Toegang tot mappen beheren{#folder-access-management}
 
-Elke map van de structuur bevat toegangsrechten voor lezen, schrijven en verwijderen. Om toegang te krijgen tot een bestand, moet een operator of groep operatoren ten minste lees-toegang hebben.
+Elke omslag van de boomstructuur van de Ontdekkingsreiziger heeft gelezen, schrijft, en schrapt toegangsrechten verbonden aan het. Om toegang te krijgen tot een bestand, moet een operator of groep operatoren ten minste lees-toegang hebben.
 
 ## Machtigingen voor een map
 
@@ -71,7 +71,7 @@ Mappen zijn knooppunten in Adobe Campaign-structuur. Deze knooppunten worden gem
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-U kunt machtigingen voor deze mappen verlenen, net als voor alle andere mappen in de structuur. Zie [Beheer van maptoegang](#folder-access-management).
+U kunt de boomstructuur van de Explorer aanpassen. Leer configuratiestappen en beste praktijken [in deze sectie](adobe-campaign-workspace.md).
 
 ### Informatie over weergaven {#about-views}
 
