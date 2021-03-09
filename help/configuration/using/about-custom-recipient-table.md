@@ -7,15 +7,15 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 5871674ee26766cf08439768df3fb07ea0f99e7b
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '666'
 ht-degree: 2%
 
 ---
 
 
-# Aangepaste tabel voor ontvangers{#about-custom-recipient-table}
+# Een aangepaste tabel voor ontvangers gebruiken{#about-custom-recipient-table}
 
 In deze sectie worden de beginselen beschreven voor het gebruik van een niet-standaardtabel voor ontvangers.
 
@@ -74,7 +74,7 @@ Bijvoorbeeld:
 
 * Bepaalde standaardrapporten, met name die welke worden aangeboden door **Interactie** en **Mobiele toepassingen** moeten opnieuw worden ontwikkeld. Raadpleeg de sectie [Rapporten beheren](../../configuration/using/managing-reports.md).
 * De standaardconfiguraties voor bepaalde workflowactiviteiten verwijzen naar de standaardtabel met ontvangers (**[!UICONTROL nms:recipient]**): deze configuraties moeten worden veranderd wanneer gebruikt voor een externe ontvangerslijst. Raadpleeg de sectie [Workflows beheren](../../configuration/using/managing-workflows.md).
-* Het standaardverpersoonlijkingsblok **[!UICONTROL Unsubscription link]** moet worden aangepast.
+* Het standaard **[!UICONTROL Unsubscription link]** verpersoonlijkingsblok moet worden aangepast.
 * De doelafbeelding van de standaardleveringsmalplaatjes moet worden gewijzigd.
 * V4-formulieren zijn niet compatibel met een tabel met externe ontvangers: u moet webtoepassingen gebruiken.
 
