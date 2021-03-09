@@ -6,7 +6,7 @@ description: Leer hoe u gebeurtenissen configureert voor een aangepaste implemen
 audience: integrations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
+source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 0%
@@ -217,7 +217,7 @@ De gebeurtenissen kunnen worden weergegeven met een eenvoudig formulier dat is g
 
 >[!NOTE]
 >
->Het knooppunt voor gebeurtenissen via de pijpleiding is niet ingebouwd en moet worden toegevoegd. Het gerelateerde formulier moet ook in Campagne worden gemaakt. Deze bewerkingen zijn alleen bestemd voor deskundige gebruikers. Raadpleeg de volgende secties voor meer informatie: [Navigatiehiërarchie](../../configuration/using/about-navigation-hierarchy.md) en [Formulieren bewerken](../../configuration/using/editing-forms.md).
+>Het knooppunt voor gebeurtenissen via de pijpleiding is niet ingebouwd en moet worden toegevoegd. Het gerelateerde formulier moet ook in Campagne worden gemaakt. Deze bewerkingen zijn alleen bestemd voor deskundige gebruikers. Raadpleeg de volgende secties voor meer informatie: [Navigatiehiërarchie](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy). en [Formulieren bewerken](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 
