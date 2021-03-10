@@ -5,10 +5,10 @@ product: campaign
 title: Adobe Campaign Classic-productdocumentatie
 topic: Premium
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 832d81c02c590afbe933f9ba63accbc0ba82f180
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 60%
+source-wordcount: '312'
+ht-degree: 54%
 
 ---
 
@@ -19,13 +19,15 @@ ht-degree: 60%
 
 ## Nieuwe functies
 
+* **[Werk uw APNs-](technotes/ios-certificate-update.md)**<br/> certificaat bij. Op 29 maart 2021 is een APNs-update van invloed op het campagnekanaal van iOS. U moet uw configuratie bijwerken om uitval van iOS-pushkanalen te voorkomen.
+
 * **[Verbinding maken via IMS/Adobe ID? Voer een upgrade uit naar de nieuwste builds](integrations/using/about-adobe-id.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne na** 31 maart 2021 **.
 
 * **[Beveilig uw Campagne ](https://helpx.adobe.com/nl/campaign/kb/gold-standard-upgrade.html)**<br/> instancesUpdate aan recentste bouwt om uw platform van de Campagne te beveiligen.
 
 * **[Onjuiste harde ](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> grenzen verwijderenLeer hoe u onjuiste harde grenzen kunt bijwerken na Gmail-uitgang
 
-* **[Werk uw Adobe Experience Cloud Triggers-](integrations/using/configuring-adobe-io.md)**<br/> integratie bij. De verouderde Auth-verificatieservice heeft het einde van de levensduur bereikt. Leer hoe u naar Adobe I/O kunt migreren.
+* **[Werk uw Adobe Experience Cloud Triggers-](integrations/using/configuring-adobe-io.md)**<br/> integratie bij. De verouderde Auth-verificatieservice heeft het einde van de levensduur bereikt. Leer hoe u naar Adobe I/O migreert.
 
 * **[Ga naar de op HTTP/2 gebaseerde APNs-provider ](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/> APILearn om te migreren van het oude binaire protocol naar de op HTTP/2 gebaseerde API voor de APNs-provider
 
@@ -87,7 +89,6 @@ Krijg toegang tot veelgestelde vragen, best practices en Help-resources en vraag
 | [Release-opmerkingen](/help/rn/using/latest-release.md) | [Lijst met foutberichten](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
 | [Instructievideo’s](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) | [Campaign-datamodel](configuration/using/about-data-model.md) |
 | [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md) | [Campaign-JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
-| [Aan de slag met Campaign](platform/using/about-adobe-campaign-classic.md) | [Implementatiehandleiding](https://helpx.adobe.com/nl/campaign/kb/acc-implementation.html) |
 | [Gold Standard-upgrade](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html) | [Handleiding voor tracking](https://helpx.adobe.com/nl/campaign/kb/acc-tracking.html) |
 | [Verouderde functies](rn/using/deprecated-features.md) | [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html) |
 | [Campaign-configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html) | [Bewakingsrichtlijnen](production/using/monitoring-guidelines.md) |
