@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentatie
 translation-type: tm+mt
-source-git-commit: f170f554935700161c457bb34bace8c403f4262b
+source-git-commit: de017afc1e5d30b561ed2bb7485756f30ef8778a
 workflow-type: tm+mt
-source-wordcount: '2458'
+source-wordcount: '2461'
 ht-degree: 56%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 56%
    + [Verouderde functies](rn/using/deprecated-features.md)
    + [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md)
    + [Technotes](technotes/technote.md)
+   + [iOS-certificaatupdate](technotes/ios-certificate-update.md)
 + Aan de slag {#getting-started}
    + Starten met Adobe Campaign {#starting-with-adobe-campaign}
       + [Aan de slag met Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
