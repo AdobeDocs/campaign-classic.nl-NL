@@ -6,10 +6,10 @@ description: TechNote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 87844fae046dff69193d3462c802057499f406ef
+source-git-commit: 248c74485e8e5889ca630c8f60ac2fa085204c51
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 5%
+source-wordcount: '896'
+ht-degree: 4%
 
 ---
 
@@ -69,23 +69,33 @@ Met ingang van 30 juni 2021 zal de Adobe Identity Service (IMS) stoppen met het 
 
 **Heb je invloed op?**
 
-Als u via een Adobe ID](../integrations/using/about-adobe-id.md) verbinding maakt met Campagne via de Adobe Identity Service (IMS), is een upgrade naar een van de hierboven vermelde nieuwe versies verplicht, zodat zowel de Campagneserver als de clientconsole verbinding kunnen maken met Campagne na **30 juni 2021**.[
+Als u via een Adobe ID](../integrations/using/about-adobe-id.md) via de Adobe Identity Service (IMS) verbinding maakt met Campagne [is een upgrade naar een van de hierboven vermelde nieuwe versies verplicht. Deze versie wordt geleverd met een nieuw verbindingsprotocol: een upgrade is verplicht, zodat zowel de Campagneserver als de clientconsole verbinding kunnen maken met Campagne na **30 juni 2021**.
 
 **Hoe kan ik bijwerken?**
 
 Als gehoste klant is geen actie nodig: Adobe heeft uw exemplaar(s) al bijgewerkt naar een nieuwere versie.
 
-Als klant op locatie/hybride dient u een upgrade uit te voeren naar een van de nieuwere versies om te profiteren van de nieuwe clientconsole en een naadloze overgang **vóór 31 maart 2021** te garanderen.
+Als klant op locatie/hybride klant moet u een upgrade uitvoeren naar een van de nieuwere versies om te profiteren van de nieuwe clientconsole en een naadloze overgang **garanderen voor 30 juni 2021**.
+
+Zodra alle instanties worden bevorderd, moet de cliëntconsole ook aan deze versie worden bevorderd.
+
+* Leer hoe te om tot [de Distributie van de Software van de Adobe toegang te hebben](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+
+* [Leer hoe u de Campagne Client Console](../installation/using/installing-the-client-console.md) installeert.
 
 ## Integratie met Experience Cloud Triggers
 
-De erfenis Auth-authenticatiedienst heeft het einde van de levensduur bereikt en zal op 30 juni 2021 met pensioen gaan. [Meer informatie](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411).
+De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt. De de integratieauthentificatie van trekkers, oorspronkelijk gebaseerd op de authentificatie van AUTH om tot pijpleiding toegang te hebben, is bewogen aan Adobe I/O. Het zal op 30 juni 2021 met pensioen gaan. [Meer informatie](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411).
 
 **Heb je invloed op?**
 
 Als u een oudere versie van de integratie van Trekkers door authentificatie Auth gebruikt, **moet u naar Adobe I/O** bewegen.
 
 **Hoe kan ik bijwerken?**
+
+Als de exemplaren zijn bijgewerkt naar een nieuwere versie, moeten alle klanten de [procedure volgen en overschakelen naar de nieuwe verificatiemodus](../integrations/using/configuring-adobe-io.md). Dit vereist om het nieuwe teken van Adobe I/O te produceren en het in de implementatie te gebruiken.  
+
+Bovendien moeten klanten voor hybride omgevingen ervoor zorgen dat de pijpleiding wordt geconfigureerd op een mid-sourcing-instantie. [Meer informatie](../integrations/using/configuring-pipeline.md).
 
 [Leer hoe u naar Adobe I/O](../integrations/using/configuring-adobe-io.md) migreert.
 
@@ -119,4 +129,4 @@ Als gehoste klant is geen actie nodig: Adobe heeft het nieuwe basiscertificaat a
 
 Als klant op locatie/hybride dient u uw configuratie bij te werken voor een naadloze overgang **vóór 29 maart 2021**.
 
-[Meer informatie over het opnemen van het nieuwe certificaat](ios-certificate-update.md)
+[Leer hoe u het nieuwe certificaat](ios-certificate-update.md) invoegt.
