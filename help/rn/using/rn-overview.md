@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
+source-git-commit: e6f6cfe1c1aa0d896fb6400d63b6023a983c6192
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 100%
@@ -35,7 +35,7 @@ De **nieuwste GA-builds** zijn: [Gold Standard 11-release](../../rn/using/gold-s
 
 ![](assets/do-not-localize/blue3.png) **Releasekandidaat** (RC) - recentste versie met nieuwe mogelijkheden.
 
-De **laatste RC-build** is [Campaign Classic 20.3-release](../../rn/using/latest-release.md)
+De **laatste RC-build** is [Campaign Classic 21.1-release](../../rn/using/latest-release.md)
 
 ![](assets/do-not-localize/red3.png) **Afgeschaft** - Geen implementatie. Bestaande implementaties moeten worden opgewaardeerd.
 
