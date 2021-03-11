@@ -6,7 +6,7 @@ description: TechNote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 248c74485e8e5889ca630c8f60ac2fa085204c51
+source-git-commit: 087abb5765b089aa707f3d3a6d33ad0949b26bc8
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 4%
@@ -50,7 +50,7 @@ U moet een upgrade uitvoeren naar een van de nieuwere builds die hierboven worde
 
    De nieuwe bouwstijl is compatibel met minstens versie Campaign Classic 17.9, maar om om het even welk veiligheidstekort te verhinderen, adviseert Adobe sterk om alle instanties aan een nieuwe bouwstijl te bevorderen. 
 
-* Als klant op locatie, wordt u gevraagd om marketing- en midsourcinginstanties te upgraden naar een nieuwe build.
+* Als klant op locatie wordt u gevraagd om marketing en media-sourcing te upgraden naar een nieuwere build.
 
 >[!CAUTION]
 >
