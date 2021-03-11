@@ -5,7 +5,7 @@ product: campaign
 title: Adobe Campaign Classic-productdocumentatie
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 832d81c02c590afbe933f9ba63accbc0ba82f180
+source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 54%
@@ -21,7 +21,7 @@ ht-degree: 54%
 
 * **[Werk uw APNs-](technotes/ios-certificate-update.md)**<br/> certificaat bij. Op 29 maart 2021 is een APNs-update van invloed op het campagnekanaal van iOS. U moet uw configuratie bijwerken om uitval van iOS-pushkanalen te voorkomen.
 
-* **[Verbinding maken via IMS/Adobe ID? Voer een upgrade uit naar de nieuwste builds](integrations/using/about-adobe-id.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne na** 31 maart 2021 **.
+* **[Verbinding maken via IMS/Adobe ID? Voer een upgrade uit naar de nieuwste builds](integrations/using/about-adobe-id.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne na** 30 juni 2021 **.
 
 * **[Beveilig uw Campagne ](https://helpx.adobe.com/nl/campaign/kb/gold-standard-upgrade.html)**<br/> instancesUpdate aan recentste bouwt om uw platform van de Campagne te beveiligen.
 
