@@ -7,7 +7,7 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 24%
@@ -29,7 +29,7 @@ Campagnegebruikers kunnen via hun Adobe ID verbinding maken met de Adobe Campaig
 
 >[!IMPORTANT]
 >
->Als u met Campagne door de Dienst van de Identiteit van de Adobe (IMS) verbindt, moet u aan de recentste bouwstijl bevorderen om met Campagne na **Maart 31, 2021** te kunnen verbinden. Deze upgrade is verplicht voor zowel de campagneserver als de clientconsole. Afhankelijk van uw huidige versie moet u een upgrade uitvoeren naar een van de volgende versies:
+>Als u met Campagne door de Dienst van de Identiteit van de Adobe (IMS) verbindt, moet u aan de recentste bouwstijl bevorderen om met Campagne na **30 Juni, 2021** te kunnen verbinden. Deze upgrade is verplicht voor zowel de campagneserver als de clientconsole. Afhankelijk van uw huidige versie moet u een upgrade uitvoeren naar een van de volgende versies:
 >
 > * [Campagne Gold Standard 11](../../rn/using/gold-standard.md)
 > * [Campagne 20.3.3](../../rn/using/latest-release.md)
@@ -37,6 +37,7 @@ Campagnegebruikers kunnen via hun Adobe ID verbinding maken met de Adobe Campaig
 > * [Campagne 20.1.4](../../rn/using/release--20-1.md)
 > * [Campagne 19.2.4](../../rn/using/release--19-2.md)
 > * [Campagne 19.1.8](../../rn/using/release--19-1.md)
+
 >
 
 
