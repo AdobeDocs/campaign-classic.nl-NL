@@ -6,9 +6,9 @@ description: TechNote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: df04057716726a74196add3fbc400fffaca26fc9
+source-git-commit: 26d6e52a03d6123092c811a93612c8d05f75f6fb
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '905'
 ht-degree: 4%
 
 ---
@@ -30,9 +30,9 @@ Campagnegebruikers moeten een upgrade uitvoeren naar een van de nieuwste versies
 
 Deze gebouwen zorgen voor de continuïteit van bepaalde campagnediensten: Experience Cloud brengt integratie, APNs authentificatie en het nieuwe verbindingsprotocol teweeg dat Adobe Identity Management Service (IMS) authentificatiemechanisme beïnvloedt.
 
-Als gehoste klant is geen actie nodig: Adobe bezit de bouwstijlverbetering en configuratieupdates voor u.
+Als ontvangen klant, zal Adobe u van vereiste bouwstijlverbeteringen op regelmatige intervallen op de hoogte brengen. U moet een upgrade uitvoeren in overeenstemming met de aanbevelingen om naleving te garanderen.
 
-Als klant op locatie/hybride klant moet u een upgrade uitvoeren naar een van de hierboven vermelde versies. Bovendien moet u een aantal handmatige taken uitvoeren om ervoor te zorgen dat uw omgeving veilig is en klaar is voor toekomstige wijzigingen van Adobe- of andere systemen.
+Als klant op locatie/hybride klant moet u een upgrade uitvoeren naar een van de hierboven vermelde versies. Daarnaast moeten enkele handmatige taken worden uitgevoerd om ervoor te zorgen dat uw omgeving veilig is en klaar is voor toekomstige wijzigingen van Adobe- of externe systemen.
 
 ## Beveiligingsupdates
 
