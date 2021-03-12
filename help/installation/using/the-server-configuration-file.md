@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 2de8261feda6e64a84bd82e9fb71bc1fddf77113
+source-git-commit: 1bd40c6acaceb1bb4839807ae89c6956bc2b8d69
 workflow-type: tm+mt
-source-wordcount: '7929'
+source-wordcount: '7970'
 ht-degree: 5%
 
 ---
@@ -337,7 +337,7 @@ In **dataStore > dataSource > dbcnx** knoop, vorm de verbindingsmontages:
   </tr> 
   <tr> 
    <td> provider<br /> </td> 
-   <td> Type (opsomming). Mogelijke waarden zijn 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL, Greenplum), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (Sybase), Sybase IQ)), 'Relay' (HTTP relay aan verre gegevensbestand).<br /> </td> 
+   <td> Type (opsomming). Mogelijke waarden zijn 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL, Greenplum), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (Sybase) , Sybase IQ), 'Relay' (HTTP relay aan verre gegevensbestand).<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> 'Oracle'<br /> </td> 
   </tr> 
@@ -1690,6 +1690,8 @@ In **cache** knoop, vorm de volgende parameters. Dit is de lokale configuratie v
 ### doorgeven {#relay}
 
 In **mta > relais** knoop, vorm de volgende parameters. Dit is de configuratie van de postserver voor de berichtlevering.
+
+De lijst zal op de zelfde manier worden behandeld zoals een lijst van MX door een MX DNS vraag is teruggekeerd, gewoonlijk eerste MX wordt gebruikt zolang het beschikbaar is, dan volgende wordt gebruikt, etc.
 
 Voor extra informatie, verwijs naar [SMTP relais](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
