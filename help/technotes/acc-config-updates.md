@@ -6,19 +6,19 @@ description: TechNote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 26d6e52a03d6123092c811a93612c8d05f75f6fb
+source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Adobe Campaign-configuratieupdates - maart 2021 {#acc-config-updates}
 
-U moet uw infrastructuur en instellingen up-to-date houden met de nieuwste builds en productoplossingen. Deze correcties zijn verplicht om de continuïteit en veiligheid van de service te waarborgen.
+U moet uw infrastructuur en instellingen bijwerken met de nieuwste builds en productoplossingen. Deze correcties zijn verplicht om de continuïteit en veiligheid van de service te waarborgen.
 
-Campagnegebruikers moeten een upgrade uitvoeren naar een van de nieuwste versies hieronder:
+Campagnegebruikers moeten een upgrade uitvoeren naar een van de recentste versies hieronder:
 
 * Gold Standard 11. [Meer informatie](../rn/using/gold-standard.md)
 * Release van campagne 21.1.1. [Meer informatie](../rn/using/latest-release.md)
@@ -34,6 +34,10 @@ Als ontvangen klant, zal Adobe u van vereiste bouwstijlverbeteringen op regelmat
 
 Als klant op locatie/hybride klant moet u een upgrade uitvoeren naar een van de hierboven vermelde versies. Daarnaast moeten enkele handmatige taken worden uitgevoerd om ervoor te zorgen dat uw omgeving veilig is en klaar is voor toekomstige wijzigingen van Adobe- of externe systemen.
 
+>[!NOTE]
+>
+>Voor elke vraag over deze wijzigingen neemt u contact op met [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+
 ## Beveiligingsupdates
 
 De recentste versies van de Campagne komen met een veiligheidsmoeilijke situatie die bescherming tegen de kwesties van het Verzoek van de Server van de Zijde (SSRF) versterkt. Meer informatie [op deze pagina](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html).
@@ -48,13 +52,13 @@ U moet een upgrade uitvoeren naar een van de nieuwere builds die hierboven worde
 
 * Als hybride klant zal Adobe de mid-sourcing instantie aan de nieuwe versie bevorderen en u wordt hoogst geadviseerd om hun marketing instantie ook te bevorderen.
 
-   De nieuwe bouwstijl is compatibel met minstens versie Campaign Classic 17.9, maar om om het even welk veiligheidstekort te verhinderen, adviseert Adobe sterk om alle instanties aan een nieuwe bouwstijl te bevorderen. 
+   De nieuwe build is compatibel met minstens versie Campaign Classic 17.9, maar om een eventuele veiligheidstekortkomingen te voorkomen, raadt Adobe u ten zeerste aan alle instanties te upgraden naar een nieuwe build. 
 
 * Als klant op locatie wordt u gevraagd om marketing en media-sourcing te upgraden naar een nieuwere build.
 
 >[!CAUTION]
 >
->Als u momenteel geen upgrade kunt uitvoeren, moet u **contact opnemen met het Adobe-team van de klantenservice om een beveiligingscorrectie op uw exemplaren handmatig toe te passen**.
+>Als u momenteel geen upgrade kunt uitvoeren, moet u **contact opnemen met het team van de klantenservice van Adobe om handmatig een beveiligingscorrectie toe te passen op uw instanties**.
 
 
 ## Update voor clientconsole voor campagne
@@ -69,7 +73,7 @@ Met ingang van 30 juni 2021 zal de Adobe Identity Service (IMS) stoppen met het 
 
 **Heb je invloed op?**
 
-Als u via een Adobe ID](../integrations/using/about-adobe-id.md) via de Adobe Identity Service (IMS) verbinding maakt met Campagne [is een upgrade naar een van de hierboven vermelde nieuwe versies verplicht. Deze versie wordt geleverd met een nieuw verbindingsprotocol: een upgrade is verplicht, zodat zowel de Campagneserver als de clientconsole verbinding kunnen maken met Campagne na **30 juni 2021**.
+Als u via een Adobe ID](../integrations/using/about-adobe-id.md) via de Adobe Identity Service (IMS) verbinding maakt met Campagne [is een upgrade naar een van de hierboven vermelde nieuwe versies verplicht. Deze versies worden geleverd met een nieuw verbindingsprotocol: een upgrade is verplicht, zodat zowel de Campagneserver als de clientconsole verbinding kunnen maken met Campagne na **30 juni 2021**.
 
 **Hoe kan ik bijwerken?**
 
