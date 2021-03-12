@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: a157082070b22e3621cb81411a5ddde387fd5fcf
+source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
 workflow-type: tm+mt
-source-wordcount: '8458'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
