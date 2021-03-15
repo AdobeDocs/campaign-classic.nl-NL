@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 7a58da8fd20abbff9dcf8361536310de49a7905f
+source-git-commit: 8aab4bc23d688aa225cfc636936cf2835840e410
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -24,8 +24,8 @@ Zij zijn alleen van toepassing in de context van leveringsinhoud. Dit is de enig
 Er zijn drie typen instructies:
 
 * **[!DNL include]**: vooral om sommige code in opties, verpersoonlijkingsblokken, externe dossiers, of pagina&#39;s te factoriseren. [Meer informatie](#include)
-* &quot;**[!DNL value]**&quot;: toegang te verlenen tot velden van levering, leveringsvariabelen en aangepaste objecten die in de levering zijn geladen. [Meer informatie](#value)
-* &quot;**[!DNL foreach]**&quot;: om een array te herhalen die als een aangepast object is geladen. [Meer informatie](#foreach)
+* **[!DNL value]**: toegang te verlenen tot velden van levering, leveringsvariabelen en aangepaste objecten die in de levering zijn geladen. [Meer informatie](#value)
+* **[!DNL foreach]**: om een array te herhalen die als een aangepast object is geladen. [Meer informatie](#foreach)
 
 Zij kunnen direct van de leveringstovenaar worden getest. Ze worden toegepast in de voorvertoning van de inhoud en wanneer u op de knop Tekstspatiëring klikt, wordt de lijst met URL&#39;s weergegeven.
 
@@ -75,8 +75,8 @@ Waar:
 
 * **[!DNL object]**: naam van het object (voorbeeld: levering, provider, enzovoort).
 Object kan:
-   * &quot;levering&quot;: voor de huidige levering (zie details en beperkingen in de onderafdeling hieronder).
-   * &quot;provider&quot;: voor de huidige leverancier/het verpletteren (nms:externalAccount).
+   * **[!DNL delivery]**: voor de huidige levering (zie details en beperkingen in de onderafdeling hieronder).
+   * **[!DNL provider]**: voor de huidige leverancier/het verpletteren (nms:externalAccount).
    * Een extra scriptobject: als een object in de context wordt geladen via: **Eigenschappen** > **Personalisatie** > **Objecten toevoegen in de uitvoeringscontext**.
    * Item van de foreach-lus: zie de onderstaande sectie [Foreach](#foreach).
 * **[!DNL xpath]**: xpath of the field.
@@ -101,22 +101,28 @@ Voor personalisatie van e-mail, is het leveringsvoorwerp op twee manieren toegan
    ```
 
 
->[!NOTE]
->
->* Voor de instructie `<%@ value object="delivery" xpath="@myCustomField" %>` geldt een andere beperking voor leveringen die via mid-sourcing worden verzonden. Het aangepaste veld @myCustomField moet aan de nms worden toegevoegd:leveringsschema op zowel marketing- als midsourcingsplatforms.
-   >
-   >
-* Gebruik de volgende syntaxis voor leverparameters/variabelen (met behulp van het leveringsobject):
->
->
-`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
+**Waarschuwing**
+
+Als u de volgende instructie gebruikt voor leveringen die via mid-sourcing worden verzonden, moet het aangepaste veld **@myCustomField** aan de nms worden toegevoegd:leveringsschema op zowel marketing- als midsourcingsplatforms:
+
+```
+<%@ value object="delivery" xpath="@myCustomField" %>
+```
+
+Gebruik de volgende syntaxis voor leverparameters/variabelen (met behulp van het leveringsobject):
+
+```
+<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>
+```
 
 ### [!DNL value] in een JavaScript-sectie  {#value-in-javascript}
 
 Als u het gebruik van &lt;%@-waarde in JavaScript-secties wilt toestaan, worden twee speciale objecten vervangen door &lt;% en %>:
 
-* `<%@ value object='startScript' %>`
-* `<%@ value object='endScript' %>`
+```
+<%@ value object='startScript' %>
+<%@ value object='endScript' %>
+```
 
 Bijvoorbeeld:
 
