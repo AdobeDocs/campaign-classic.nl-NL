@@ -6,10 +6,10 @@ description: TechNote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
+source-git-commit: c9e3d12f8975b2c87f6f4aaf306fae71803786ad
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '941'
+ht-degree: 4%
 
 ---
 
@@ -44,7 +44,7 @@ De recentste versies van de Campagne komen met een veiligheidsmoeilijke situatie
 
 **Heb je invloed op?**
 
-Als uw omgeving zich op een lagere build bevindt dan Campagne 21.1, heeft dit gevolgen voor u.
+Als uw omgeving zich op een lagere build bevindt dan Campagne 19.1.8, 19.2.4, 20.1.4, 20.2.4, 20.3.3 of Gold Standard 11, heeft dit gevolgen voor u.
 
 **Hoe kan ik bijwerken?**
 
@@ -66,6 +66,11 @@ U moet een upgrade uitvoeren naar een van de nieuwere builds die hierboven worde
 De nieuwste Gold Standard 11-build verhelpt een regressie die het gebruik van bepaalde componenten van de console, zoals de datumkiezer en het beheer van afbeeldingen in leveringen, heeft verhinderd. Consoleupgrade is verplicht.
 
 [Meer informatie](../rn/using/gold-standard.md).
+
+
+>[!NOTE]
+>
+>Updates voor andere versies zijn binnenkort beschikbaar.
 
 ## Verbinding maken met Campagne via IMS
 
@@ -93,7 +98,7 @@ De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt. De de integr
 
 **Heb je invloed op?**
 
-Als u een oudere versie van de integratie van Trekkers door authentificatie Auth gebruikt, **moet u naar Adobe I/O** bewegen.
+Als uw omgeving zich op een lagere build bevindt dan Campagne 19.1.8, 20.2.4, Gold Standard 11, gebruikt u een oudere versie van Triggers-integratie via Auth-verificatie: **u moet naar Adobe I/O** bewegen.
 
 **Hoe kan ik bijwerken?**
 
