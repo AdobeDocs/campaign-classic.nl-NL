@@ -6,33 +6,21 @@ description: TechNote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 1a7ec4899bc0fab3935c25918c586a20afb88d1a
+source-git-commit: 504a948daa60155b7c4970be24bd6d2049e5395b
 workflow-type: tm+mt
-source-wordcount: '974'
-ht-degree: 5%
+source-wordcount: '989'
+ht-degree: 6%
 
 ---
 
 
 # Adobe Campaign-configuratieupdates - maart 2021 {#acc-config-updates}
 
-U moet uw infrastructuur en instellingen bijwerken met de nieuwste builds en productoplossingen. Deze correcties zijn verplicht om de continuïteit en veiligheid van de service te waarborgen.
-
-Campagnegebruikers moeten een upgrade uitvoeren naar een van de recentste versies hieronder:
-
-* Gold Standard 11. [Meer informatie](../rn/using/gold-standard.md)
-* Release van campagne 21.1.1. [Meer informatie](../rn/using/latest-release.md)
-* Release van campagne 20.3.3. [Meer informatie](../rn/using/release--20-3.md)
-* Release van campagne 20.2.4. [Meer informatie](../rn/using/release--20-2.md)
-* Release van campagne 20.1.4. [Meer informatie](../rn/using/release--20-1.md)
-* Release van campagne 19.2.4. [Meer informatie](../rn/using/release--19-2.md)
-* Release van campagne 19.1.8. [Meer informatie](../rn/using/release--19-1.md)
-
-Deze gebouwen zorgen voor de continuïteit van bepaalde campagnediensten: Experience Cloud brengt integratie, APNs authentificatie en het nieuwe verbindingsprotocol teweeg dat Adobe Identity Management Service (IMS) authentificatiemechanisme beïnvloedt.
+U moet uw infrastructuur en instellingen bijwerken met de nieuwste builds en productoplossingen. Deze correcties zijn verplicht om de continuïteit en veiligheid van de service te waarborgen. Bovendien moet u uw implementatie aanpassen om zich aan derdeveranderingen aan te passen.
 
 Als ontvangen klant, zal Adobe u van vereiste bouwstijlverbeteringen op regelmatige intervallen op de hoogte brengen. U moet een upgrade uitvoeren in overeenstemming met de aanbevelingen om naleving te garanderen.
 
-Als klant op locatie/hybride klant moet u een upgrade uitvoeren naar een van de hierboven vermelde versies. Daarnaast moeten enkele handmatige taken worden uitgevoerd om ervoor te zorgen dat uw omgeving veilig is en klaar is voor toekomstige wijzigingen van Adobe- of externe systemen.
+Als klant op locatie/hybride dient u om beveiligingsredenen een upgrade uit te voeren naar een van de versies die op deze pagina worden vermeld. Daarnaast moeten enkele handmatige taken worden uitgevoerd om ervoor te zorgen dat uw omgeving veilig is en klaar is voor toekomstige wijzigingen van Adobe- of externe systemen.
 
 >[!NOTE]
 >
@@ -44,7 +32,15 @@ De recentste versies van de Campagne komen met een veiligheidsmoeilijke situatie
 
 **Heb je invloed op?**
 
-Als uw omgeving zich op een lagere build bevindt dan Campagne 19.1.8, 19.2.4, 20.1.4, 20.2.4, 20.3.3 of Gold Standard 11, heeft dit gevolgen voor u.
+Als uw omgeving zich op een lagere build bevindt dan de hieronder vermelde, heeft dit gevolgen voor u:
+
+* Gold Standard 11. [Meer informatie](../rn/using/gold-standard.md)
+* Release van campagne 21.1.1. [Meer informatie](../rn/using/latest-release.md)
+* Release van campagne 20.3.3. [Meer informatie](../rn/using/release--20-3.md)
+* Release van campagne 20.2.4. [Meer informatie](../rn/using/release--20-2.md)
+* Release van campagne 20.1.4. [Meer informatie](../rn/using/release--20-1.md)
+* Release van campagne 19.2.4. [Meer informatie](../rn/using/release--19-2.md)
+* Release van campagne 19.1.8. [Meer informatie](../rn/using/release--19-1.md)
 
 **Hoe kan ik bijwerken?**
 
@@ -71,13 +67,25 @@ De nieuwste Gold Standard 11-build verhelpt een regressie die het gebruik van be
 >
 >De nieuwe clientconsole voor andere versies is binnenkort beschikbaar.
 
-## Verbinding maken met Campagne via IMS
+## Adobe Identity Management System (IMS)-update
 
-Adobe Identity Service (IMS) biedt geen ondersteuning meer voor oude Internet Explorer-versies vanaf **30 juni 2021**. [Meer informatie](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html). De Campagne Client Console is bijgewerkt om verenigbaarheid met Adobe IMS te verzekeren.
+Adobe Identity Service (IMS) biedt geen ondersteuning meer voor oude Internet Explorer-versies vanaf **30 juni 2021**. [Meer informatie](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
+
+De Campagne Client Console is bijgewerkt om verenigbaarheid met Adobe IMS in de volgende versies van de Campagne te verzekeren:
 
 **Heb je invloed op?**
 
-Als u via een Adobe ID](../integrations/using/about-adobe-id.md) via de Adobe Identity Service (IMS) verbinding maakt met Campagne [is een upgrade naar een van de hierboven vermelde nieuwe versies verplicht. Deze versies worden geleverd met een nieuw verbindingsprotocol: De upgrade is verplicht voor zowel de Campagneserver als de Clientconsole om verbinding te kunnen maken met Campagne na **30 juni 2021**.
+Als u via een Adobe ID](../integrations/using/about-adobe-id.md) verbinding maakt met Campagne via Adobe Identity Service (IMS), is een upgrade naar een van de onderstaande nieuwe versies verplicht:[
+
+* Gold Standard 11. [Meer informatie](../rn/using/gold-standard.md)
+* Release van campagne 21.1.1. [Meer informatie](../rn/using/latest-release.md)
+* Release van campagne 20.3.3. [Meer informatie](../rn/using/release--20-3.md)
+* Release van campagne 20.2.4. [Meer informatie](../rn/using/release--20-2.md)
+* Release van campagne 20.1.4. [Meer informatie](../rn/using/release--20-1.md)
+* Release van campagne 19.2.4. [Meer informatie](../rn/using/release--19-2.md)
+* Release van campagne 19.1.8. [Meer informatie](../rn/using/release--19-1.md)
+
+Deze versies worden geleverd met een nieuw verbindingsprotocol: De upgrade is verplicht voor zowel de Campagneserver als de Clientconsole om verbinding te kunnen maken met Campagne na **30 juni 2021**.
 
 **Hoe kan ik bijwerken?**
 
@@ -97,7 +105,7 @@ De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt. De de integr
 
 **Heb je invloed op?**
 
-Als uw omgeving zich op een lagere build bevindt dan Campagne 19.1.8, 20.2.4, Gold Standard 11, gebruikt u een oudere versie van Triggers-integratie via Auth-verificatie: **u moet naar Adobe I/O** bewegen.
+Als uw instanties op een **oudere versie dan Campagne 19.1.8, 20.2.4, Gouden Standaard 11** lopen, dan gebruikt u een oudere versie van de integratie van Triggers door authentificatie Auth: **u moet naar Adobe I/O** bewegen.
 
 **Hoe kan ik bijwerken?**
 
@@ -107,13 +115,15 @@ Bovendien moeten klanten voor hybride omgevingen ervoor zorgen dat de pijpleidin
 
 [Leer hoe u naar Adobe I/O](../integrations/using/configuring-adobe-io.md) migreert.
 
-## API voor op HTTP/2 gebaseerde APNs-providers
+## APNs-updates
+
+### API voor op HTTP/2 gebaseerde APNs-providers
 
 De Apple Push Notification service (APNs) biedt vanaf **31 maart 2021** geen ondersteuning meer voor het oudere binaire protocol. [Meer informatie](https://developer.apple.com/news/?id=c88acm2b).
 
 **Heeft u gevolgen?**
 
-Als uw instanties op een oudere versie dan Campagne 21.1 lopen, en dupberichten met het erfenis binaire protocol van Apple verzenden, moet u aan de op HTTP/2-Gebaseerde leverancier API bijwerken.
+Als uw instanties op een **oudere versie dan Campagne 21.1,** lopen en dupberichten met het erfenis binaire protocol van Apple verzenden, moet u aan de op HTTP/2-Gebaseerde leverancier API van APNs bijwerken.
 
 **Hoe kan ik bijwerken?**
 
@@ -121,7 +131,7 @@ Als gehoste klant is geen actie nodig: Adobe heeft uw instantie(s) al bijgewerkt
 
 Als op-gebouw/ontvangen klant, moet u uw configuratie bijwerken. [Leer hoe u naar HTTP/2 kunt migreren](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
 
-## Updates van APNs-basiscertificaten
+### Updates van APNs-basiscertificaten
 
 Op 29 maart 2021 is een APN-infrastructuurupdate (Apple Push Notification service) van invloed op het Adobe Campaign Classic iOS-kanaal. Een wijziging in de configuratie van het besturingssysteem is **verplicht** om uitval van het iOS-pushkanaal te voorkomen.
 
