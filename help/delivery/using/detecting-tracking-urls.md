@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: URL's bijhouden detecteren
-description: Meer informatie over aanbevolen patronen voor het bijhouden van URL's.
+title: Tracking-URL's detecteren
+description: Meer informatie over aanbevolen patronen voor het bijhouden van URL's
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 151667637a12667f5eda1590e64e01de493be9ce
+source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 0%
+source-wordcount: '297'
+ht-degree: 2%
 
 ---
 
 
-# URL&#39;s bijhouden detecteren
+# Tracking-URL&#39;s detecteren
 
 ## Voorbeeld van niet-detectie
 
@@ -35,14 +35,14 @@ Na het verwerken van `<%@` instructies heeft de URL die moet worden bijgehouden 
 >
 >Alle andere patronen worden niet ondersteund door Adobe en moeten worden vermeden om potentiële veiligheidshiaten te voorkomen.
 
-## Waarschuwingen bij http://&lt;%=myURL%>-patroon
+## Onbeveiligd patroon
 
-De syntaxis `<a href="http://<%=myURL%>">` is niet veilig en wordt niet aanbevolen omdat:
+Wanneer u persoonlijke koppelingen toevoegt aan uw inhoud, moet u altijd geen persoonlijke instellingen opgeven in het gedeelte hostnaam van de URL om mogelijke hiaten in de beveiliging te voorkomen. Meer informatie vindt u op [deze pagina](../../installation/using/privacy.md#url-personalization).
 
+De syntaxis `<a href="http://<%=myURL%>">` is bijvoorbeeld **niet beveiligd** en moet worden vermeden.
+
+* Het gebruik van deze syntaxis kan tot beveiligingsproblemen leiden als de koppeling die door Adobe Campaign wordt gegenereerd een of meer parameters bevat.
 * Tidy kan sommige koppelingen onjuist repareren, wat willekeurig kan gebeuren. Het typische symptoom is een stuk van HTML dat in de e-mailproefdrukken maar niet in de voorproef zichtbaar is.
 * Het doorsnijden van de URL is problematisch, sommige tekens in de URL kunnen problemen veroorzaken.
 * U kunt geen parameter met de naam ID hebben die in strijd is met een parameter in de URL voor omleiding.
 * Het belang van tracering is dan beperkt tot statistieken over de levering, aangezien Adobe Campaign onverschillig alle mogelijke waarden van &quot;myURL&quot; bijhoudt.
-
-Raadpleeg [deze pagina](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy) voor meer informatie.
-
