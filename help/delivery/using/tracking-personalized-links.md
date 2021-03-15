@@ -1,28 +1,32 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Aan de slag met het bijhouden van persoonlijke koppelingen
+title: Aan de slag met de tracking van aangepaste koppelingen
 description: Leer hoe u koppelingen schrijft in e-mailberichten die u kunt aanpassen en het bijhouden van koppelingen ondersteunt in Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 151667637a12667f5eda1590e64e01de493be9ce
+source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 0%
+source-wordcount: '214'
+ht-degree: 6%
 
 ---
 
 
-# Ga aan de slag met persoonlijke koppelingen die {#tracking-personalized-links} bijhouden
+# Aan de slag met de tracking van aangepaste koppelingen {#tracking-personalized-links}
 
 De koppelingen in e-mailinhoud die personalisatie bevatten, moeten specifiek worden gesynchroniseerd om te worden bijgehouden.
 
 Met JavaScript in e-mailinhoud (HTML of Tekst) kunt u dynamische inhoud genereren en verzenden naar de ontvangers, met twee beperkingen:
 
 * Het script heeft niet rechtstreeks toegang tot de database (SQL-functie en API-functies zijn niet beschikbaar).
-* Adobe Campaign moet URL&#39;s kunnen detecteren zodat koppelingen kunnen worden bijgehouden (doel van dit document).
+* Adobe Campaign moet URL&#39;s kunnen detecteren zodat koppelingen kunnen worden bijgehouden. [Meer informatie](detecting-tracking-urls.md)
+
+U kunt [specifieke voorbewerkingsinstructies](pre-processing-instructions.md) in deze URLs toevoegen
+
+voorbewerkingsinstructies.
 
 Voor traceringsdetectie sluit Adobe Campaign [Tidy](http://www.html-tidy.org/) in om de HTML-bron te parseren en het patroon te detecteren. Alle URL&#39;s van de inhoud worden weergegeven zodat ze afzonderlijk kunnen worden bijgehouden. Adobe Campaign gebruikt nogmaals Tidy om de URL (`http://myurl.com`) te vervangen door een URL die naar de Adobe Campaign-omleidingsserver wijst.
 
