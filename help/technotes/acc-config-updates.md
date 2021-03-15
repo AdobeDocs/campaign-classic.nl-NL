@@ -6,10 +6,10 @@ description: TechNote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 504a948daa60155b7c4970be24bd6d2049e5395b
+source-git-commit: 1233eef1d7b454daea021e1e3077890284813d9a
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 6%
+source-wordcount: '1026'
+ht-degree: 7%
 
 ---
 
@@ -105,7 +105,15 @@ De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt. De de integr
 
 **Heb je invloed op?**
 
-Als uw instanties op een **oudere versie dan Campagne 19.1.8, 20.2.4, Gouden Standaard 11** lopen, dan gebruikt u een oudere versie van de integratie van Triggers door authentificatie Auth: **u moet naar Adobe I/O** bewegen.
+Als uw instanties op een **oudere versie dan Campagne 19.1.8, 20.2.4, Gouden Standaard 11** lopen, dan gebruikt u een oudere versie van de integratie van Triggers door authentificatie Auth: **u moet een upgrade uitvoeren naar een nieuwere versie en overschakelen naar Adobe I/O**.
+
+U moet een upgrade uitvoeren naar een van de nieuwe versies die hieronder worden vermeld.
+
+* Gold Standard 11. [Meer informatie](../rn/using/gold-standard.md)
+* Release van campagne 21.1.1. [Meer informatie](../rn/using/latest-release.md)
+* Release van campagne 20.3.3. [Meer informatie](../rn/using/release--20-3.md)
+* Release van campagne 20.2.4. [Meer informatie](../rn/using/release--20-2.md)
+* Release van campagne 19.1.8. [Meer informatie](../rn/using/release--19-1.md)
 
 **Hoe kan ik bijwerken?**
 
