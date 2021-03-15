@@ -6,10 +6,10 @@ description: TechNote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: c9e3d12f8975b2c87f6f4aaf306fae71803786ad
+source-git-commit: 1a7ec4899bc0fab3935c25918c586a20afb88d1a
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 4%
+source-wordcount: '974'
+ht-degree: 5%
 
 ---
 
@@ -63,22 +63,21 @@ U moet een upgrade uitvoeren naar een van de nieuwere builds die hierboven worde
 
 ## Update voor clientconsole voor campagne
 
-De nieuwste Gold Standard 11-build verhelpt een regressie die het gebruik van bepaalde componenten van de console, zoals de datumkiezer en het beheer van afbeeldingen in leveringen, heeft verhinderd. Consoleupgrade is verplicht.
+De nieuwste Gold Standard 11-build verhelpt een regressie die het gebruik van bepaalde componenten van de Clien Console, zoals de datumkiezer en het beheer van afbeeldingen in leveringen, heeft verhinderd. Consoleupgrade is verplicht.
 
 [Meer informatie](../rn/using/gold-standard.md).
 
-
 >[!NOTE]
 >
->Updates voor andere versies zijn binnenkort beschikbaar.
+>De nieuwe clientconsole voor andere versies is binnenkort beschikbaar.
 
 ## Verbinding maken met Campagne via IMS
 
-Met ingang van 30 juni 2021 zal de Adobe Identity Service (IMS) stoppen met het ondersteunen van de oude Internet Explorer-versies. [Meer informatie](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html). De Campagne Console is bijgewerkt om verenigbaarheid met IMS te verzekeren.
+Adobe Identity Service (IMS) biedt geen ondersteuning meer voor oude Internet Explorer-versies vanaf **30 juni 2021**. [Meer informatie](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html). De Campagne Client Console is bijgewerkt om verenigbaarheid met Adobe IMS te verzekeren.
 
 **Heb je invloed op?**
 
-Als u via een Adobe ID](../integrations/using/about-adobe-id.md) via de Adobe Identity Service (IMS) verbinding maakt met Campagne [is een upgrade naar een van de hierboven vermelde nieuwe versies verplicht. Deze versies worden geleverd met een nieuw verbindingsprotocol: een upgrade is verplicht, zodat zowel de Campagneserver als de clientconsole verbinding kunnen maken met Campagne na **30 juni 2021**.
+Als u via een Adobe ID](../integrations/using/about-adobe-id.md) via de Adobe Identity Service (IMS) verbinding maakt met Campagne [is een upgrade naar een van de hierboven vermelde nieuwe versies verplicht. Deze versies worden geleverd met een nieuw verbindingsprotocol: De upgrade is verplicht voor zowel de Campagneserver als de Clientconsole om verbinding te kunnen maken met Campagne na **30 juni 2021**.
 
 **Hoe kan ik bijwerken?**
 
@@ -86,7 +85,7 @@ Als gehoste klant is geen actie nodig: Adobe heeft uw exemplaar(s) al bijgewerkt
 
 Als klant op locatie/hybride klant moet u een upgrade uitvoeren naar een van de nieuwere versies om te profiteren van de nieuwe clientconsole en een naadloze overgang **garanderen voor 30 juni 2021**.
 
-Zodra alle instanties worden bevorderd, moet de cliëntconsole ook aan deze versie worden bevorderd.
+Zodra alle instanties worden bevorderd, moet de Console van de Cliënt ook aan deze versie worden bevorderd.
 
 * Leer hoe te om tot [de Distributie van de Software van de Adobe toegang te hebben](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
@@ -110,7 +109,7 @@ Bovendien moeten klanten voor hybride omgevingen ervoor zorgen dat de pijpleidin
 
 ## API voor op HTTP/2 gebaseerde APNs-providers
 
-De Apple Push Notification service (APNs) biedt vanaf 31 maart 2021 geen ondersteuning meer voor het binaire oudere protocol. [Meer informatie](https://developer.apple.com/news/?id=c88acm2b).
+De Apple Push Notification service (APNs) biedt vanaf **31 maart 2021** geen ondersteuning meer voor het oudere binaire protocol. [Meer informatie](https://developer.apple.com/news/?id=c88acm2b).
 
 **Heeft u gevolgen?**
 
@@ -139,3 +138,11 @@ Als gehoste klant is geen actie nodig: Adobe heeft het nieuwe basiscertificaat a
 Als klant op locatie/hybride dient u uw configuratie bij te werken voor een naadloze overgang **vóór 29 maart 2021**.
 
 [Leer hoe u het nieuwe certificaat](ios-certificate-update.md) invoegt.
+
+
+## Nuttige koppelingen
+
+* [Upgrade uw omgeving](../production/using/build-upgrade.md)
+* [Veelgestelde vragen over upgrades samenstellen](../platform/using/faq-build-upgrade.md)
+* [Campaign Classic-build downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [De nieuwe clientconsole beschikbaar maken voor gebruikers](../installation/using/client-console-availability-for-windows.md)
