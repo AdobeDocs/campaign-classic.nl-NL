@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '772'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ Adobe Campaign biedt een reeks tools om u te helpen de privacyvereisten voor AVG
 
 Raadpleeg [deze pagina](../../platform/using/privacy-management.md) voor algemene informatie over wat het Privacybeheer is en de implementatiestappen in Adobe Campaign. U zult ook beste praktijken en een overzicht van het gebruikersproces en persona&#39;s vinden.
 
-## URL-personalisatie
+## URL-aanpassing {#url-personalization}
 
 Wanneer u persoonlijke koppelingen toevoegt aan uw inhoud, moet u altijd geen persoonlijke instellingen opgeven in het gedeelte hostnaam van de URL om mogelijke hiaten in de beveiliging te voorkomen. De volgende voorbeelden mogen nooit worden gebruikt in alle URL-kenmerken &lt;`a href="">` of `<img src="">`:
 
@@ -57,7 +57,7 @@ Om de veiligheid te verbeteren, is een nieuw handtekeningmechanisme voor het vol
 >
 >Wanneer op een onjuist ondertekende URL wordt geklikt, wordt de volgende fout geretourneerd: &quot;Aangevraagde URL &#39;...&#39; is niet gevonden.&quot;
 
-Bovendien kunnen gehoste en hybride klanten op Build 19.1.4 (9032@3a9dc9c en 9032@800be2e) en op Campagne 20.2 een verbetering gebruiken om URLs onbruikbaar te maken die van vorige bouwstijlen worden geproduceerd. Deze optie is standaard uitgeschakeld. U kunt [Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) bereiken om deze functie in te schakelen.
+Bovendien kunnen gehoste en hybride klanten met de introductie van Campagne 20.2 en Gold Standard een verbetering gebruiken om URL&#39;s die zijn gegenereerd door eerdere builds uit te schakelen. Deze optie is standaard uitgeschakeld. U kunt [Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) bereiken om deze functie in te schakelen.
 
 Om dit nieuwe mechanisme te activeren, moeten on-premise klanten deze stappen op alle servers van de Campagne volgen:
 
@@ -65,7 +65,7 @@ Om dit nieuwe mechanisme te activeren, moeten on-premise klanten deze stappen op
 1. Start de **nlserver**-service opnieuw.
 1. Start de webserver op de trackingserver opnieuw (apache2 op Debian, httpd op CentOS/RedHat, IIS op Windows).
 
-Klanten die op Build 19.1.4 (9032@3a9dc9c) werken, kunnen problemen ondervinden met de levering van pushberichten via de koppeling &#39;tracking&#39;, of leveringen via ankertags. In dat geval raadt Adobe aan het nieuwe handtekeningmechanisme voor het bijhouden van koppelingen uit te schakelen:
+Klanten die werken met de Gold Standard 19.1.4 kunnen problemen ondervinden met de levering van pushberichten via de koppeling &#39;tracking&#39; of met leveringen via ankerlabels. In dat geval raadt Adobe aan het nieuwe handtekeningmechanisme voor het bijhouden van koppelingen uit te schakelen:
 
 **Gehoste en hybride** klanten moeten contact opnemen met  [Customer ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) Cares om dit mechanisme uit te schakelen.
 
