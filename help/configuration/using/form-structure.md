@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: f82f71f4eed44f4f12ab7a65188d25ff6c552d35
 workflow-type: tm+mt
 source-wordcount: '2384'
 ht-degree: 0%
@@ -235,7 +235,7 @@ Voorbeelden van syntaxis van voorwaarde:
 
 * **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;**: test gelijkheid op koord-type gegevens. De vergelijkingswaarde moet tussen aanhalingstekens staan.
 * **visibleIf=&quot;@gender >= 1 en @gender != 2&quot;**: voorwaarde op een numerieke waarde.
-* **visibleIf=&quot;@boolean1==true of @boolean2==false&quot;**: testen op Booleaanse velden.
+* **visibleIf=&quot;@boolean1=true of @boolean2=false&quot;**: testen op Booleaanse velden.
 
 #### Container {#enabling-container} inschakelen
 
@@ -555,9 +555,9 @@ Door het uitvoeren van een invoerformulier wordt een XML-document geïnitialisee
 
 ### De context {#updating-the-context} bijwerken
 
-Als u de context van het formulier wilt wijzigen, gebruikt u de tag **`<set expr="<value>" xpath="<field>"/>`**, waarbij **`<field>`** het doelveld is en **`<value>`** de update-expressie of -waarde.
+Als u de context van het formulier wilt wijzigen, gebruikt u de tag `<set expr="<value>" xpath="<field>"/>`, waarbij `<field>` het doelveld is en `<value>` de update-expressie of -waarde.
 
-Voorbeelden van het gebruik van de tag **`<set>`**:
+Voorbeelden van het gebruik van de tag `<set>`:
 
 * **`<set expr="'Test'" xpath="/tmp/@test" />`**: Hiermee wordt de waarde &#39;Testen&#39; op de tijdelijke locatie geplaatst. /tmp/@test1
 * **`<set expr="'Test'" xpath="@lastName" />`**: Hiermee wordt de entiteit in het kenmerk &quot;lastName&quot; bijgewerkt met de waarde &quot;Test&quot;
