@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: e6f6cfe1c1aa0d896fb6400d63b6023a983c6192
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '436'
 ht-degree: 100%
 
 ---
@@ -62,7 +62,7 @@ Als gehoste Gold Standard-gebruiker profiteert u automatisch van de Gold Standar
 
 ## Ondersteuning en andere handige koppelingen{#support}
 
-* [Help en ondersteuning](https://helpx.adobe.com/nl/campaign/kb/ac-support.html#acc-support)
+* [Help en ondersteuning](https://helpx.adobe.com/nl/campaign/kb/ac-support.html)
 * [Configuratiescherm-releases](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html)
 * [Nieuwste documentatie-updates](../../rn/using/documentation-updates.md)
 * [Verouderde en verwijderde functies](../../rn/using/deprecated-features.md)
