@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 54ba9d2ee05b1bd7de7616142e8ad6bcbac5f8eb
+source-git-commit: bc35a95d7deed1f0fd432ef8639f307ecf4d8e1f
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 14%
@@ -38,8 +38,8 @@ Voor elke levering is een speciaal dashboard beschikbaar. Het staat u toe om uit
 
 Er moeten verschillende richtlijnen worden gevolgd om ervoor te zorgen dat uw leveringen goed functioneren. Gemeenschappelijke problemen die u kunt tegenkomen bij het verzenden van leveringen zijn ook beschikbaar om u te helpen leveringen efficiënt te verzenden.
 
-* [Leveringsprestaties en beste praktijken](../../delivery/using/list-of-deliveries.md)
-* [Problemen met verzenden van levering](../../delivery/using/delivery-dashboard.md)
+* [Leveringsprestaties en beste praktijken](../../delivery/using/delivery-performances.md)
+* [Problemen met verzenden van levering](../../delivery/using/delivery-troubleshooting.md)
 
 <img src="assets/do-not-localize/icon_failure.svg" width="60px">
 
