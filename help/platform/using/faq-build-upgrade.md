@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '2017'
-ht-degree: 2%
+source-wordcount: '2015'
+ht-degree: 3%
 
 ---
 
@@ -168,7 +168,7 @@ Ja. De server wordt afgesloten tijdens een upgrade om ervoor te zorgen dat de ge
 
 Als u problemen ondervindt na een upgrade van de build, neemt u contact op met [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De Zorg van de klant plant de bouwstijldata en opent bouwstijlgerelateerde kaartjes.
 
-Meer informatie over de Help- en ondersteuningsopties voor Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)[
+Meer informatie over de Help- en ondersteuningsopties voor Campaign Classic](https://helpx.adobe.com/nl/campaign/kb/ac-support.html)[
 
 ## Controlelijst voor upgrades maken {#check-list}
 
@@ -208,5 +208,5 @@ alle inhoud wordt weergegeven en weergegeven.
 
 * [Een build-upgrade uitvoeren](../../production/using/build-upgrade.md)
 * [Opmerkingen bij de release Campaign Classic](../../rn/using/rn-overview.md)
-* [Help- en ondersteuningsopties voor Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+* [Help- en ondersteuningsopties voor Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html)
 * [Gold Standard-programma](https://helpx.adobe.com/campaign/kb/gold-standard.html)
