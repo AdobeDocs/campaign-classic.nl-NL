@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 660b9ad4351fe611d99962f2b163858b1f70bc84
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '4170'
+source-wordcount: '4193'
 ht-degree: 97%
 
 ---
@@ -22,6 +22,8 @@ Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates
 Raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/using/latest-release.md) voor aan de release gerelateerde updates.
 
 ## Maart 2021 {#march-2021}
+
+Er is een nieuwe pagina toegevoegd met richtlijnen en verwijzingen voor ondersteuning van Campaign Classic. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/ac-support.html)
 
 Er is een nieuwe sectie toegevoegd met aanbevolen procedures en controles voor beveiliging en privacy. [Meer informatie](../../installation/using/get-started-security-privacy.md)
 
