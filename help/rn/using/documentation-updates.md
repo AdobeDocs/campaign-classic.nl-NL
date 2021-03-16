@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 660b9ad4351fe611d99962f2b163858b1f70bc84
 workflow-type: tm+mt
 source-wordcount: '4170'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -38,29 +38,29 @@ Er is informatie toegevoegd aan de sectie **[!UICONTROL Advanced JavaScript]** a
 
 ## Februari 2021 {#release-21.1}
 
-**Documentatie-updates die worden geleverd bij de release 21.1**
+**Documentatie-updates die bij de 21.1-release worden geleverd**
 
-De nieuwe **e-mailfeedbackservice** mogelijkheid (persoonlijke bètaversie) wordt [hier](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service) gedocumenteerd.
+De nieuwe functie **Email Feedback Service** (gesloten bèta) is [hier](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service) gedocumenteerd.
 
-De sectie **Serverconfiguratiebestand** is bijgewerkt met de configuratieparameters die nodig zijn voor Campagne om verbinding te maken met een andere service met behulp van IMS. [Meer informatie](../../installation/using/the-server-configuration-file.md#ims)
+De sectie **Serverconfiguratiebestand** is bijgewerkt met de configuratieparameters die nodig zijn voor Campaign om via IMS verbinding te maken met een andere service. [Meer informatie](../../installation/using/the-server-configuration-file.md#ims)
 
-In de lijst met leveringsstatussen is de beschrijving voor **waarmee de dienstverlener rekening heeft gehouden** bijgewerkt: Deze status wordt nu ook gebruikt voor e-mailleveringen die worden verzonden via de [E-mailfeedbackservice](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service). [Meer informatie](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
+In de lijst met verzendingsstatussen is de beschrijving voor **Taken into account by the service provider** bijgewerkt: deze status wordt nu ook gebruikt voor e-mailverzendingen die worden verzonden via de [Email Feedback Service](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service). [Meer informatie](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
 
-De sneltoetsen die beschikbaar zijn op het nieuwe aanmeldingsscherm om verbinding te maken met Adobe Campaign, worden nu beschreven. [Meer informatie](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
+De sneltoetsen op het nieuwe aanmeldingsscherm om verbinding te maken met Adobe Campaign zijn nu gedocumenteerd. [Meer informatie](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
 
 **Overige updates**
 
 Er is een nieuwe sectie toegevoegd met gedetailleerde informatie over hoe u A/B-tests kunt uitvoeren met behulp van workflows. [Meer informatie](../../delivery/using/get-started-a-b-testing.md)
 
-De Adobe Campaign Enhanced MTA-sectie is [hier](../../delivery/using/sending-with-enhanced-mta.md) verplaatst.
+De sectie Adobe Campaign Enhanced MTA vindt u nu [hier](../../delivery/using/sending-with-enhanced-mta.md).
 
-Er is een nieuwe pagina toegevoegd voor een overzicht van de trackingsmogelijkheden in [!DNL Campaign Classic]. [Meer informatie](../../delivery/using/about-message-tracking.md)
+Er is een nieuwe pagina toegevoegd met een overzicht van de trackingmogelijkheden in [!DNL Campaign Classic]. [Meer informatie](../../delivery/using/about-message-tracking.md)
 
-Er is een sectie voor probleemoplossing toegevoegd om u te helpen algemene problemen met betrekking tot bijhouden op te lossen. [Meer informatie](../../delivery/using/tracking-troubleshooting.md)
+Er is een sectie voor probleemoplossing toegevoegd om u te helpen algemene problemen met tracking op te lossen. [Meer informatie](../../delivery/using/tracking-troubleshooting.md)
 
-De sectie **Het verzenden van een e-mail** is gereorganiseerd en verduidelijkt met nieuwe subsecties. [Meer informatie](../../delivery/using/sending-messages.md)
+De sectie **Een e-mail verzenden** is gereorganiseerd en verduidelijkt met nieuwe subsecties. [Meer informatie](../../delivery/using/sending-messages.md)
 
-Er is informatie toegevoegd over het toevoegen van koppelingen in e-mailberichten die kunnen worden aangepast en die ondersteuning bieden voor bijhouden. [Meer informatie](../../delivery/using/tracking-personalized-links.md).
+Er is informatie toegevoegd over het toevoegen van koppelingen in e-mailberichten die kunnen worden aangepast en die ondersteuning bieden voor tracking. [Meer informatie](../../delivery/using/tracking-personalized-links.md).
 
 ## Januari 2021 {#jan-2021}
 
