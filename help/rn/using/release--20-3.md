@@ -77,7 +77,7 @@ _27 oktober 2020_
 
 **Verbeterde beveiliging**
 
-* Beveiligd laden van bibliotheken: ter bescherming tegen dll-voorafladingsaanvallen laadt Campaign Windows-dll’s nu alleen vanaf het Windows-standaardsysteempad naar dll’s tijdens het laden van de Campaign Client (nlclient). [Meer informatie](https://support.microsoft.com/en-us/help/2389418/secure-loading-of-libraries-to-prevent-dll-preloading-attacks) (NEO-24147)
+* Beveiligd laden van bibliotheken: ter bescherming tegen dll-voorafladingsaanvallen laadt Campaign Windows-dll’s nu alleen vanaf het Windows-standaardsysteempad naar dll’s tijdens het laden van de Campaign Client (nlclient). [Meer informatie](https://support.microsoft.com/nl-nl/topic/bibliotheken-veilig-laden-om-te-voorkomen-dat-dll-aanvallen-vooraf-worden-geladen-d41303ec-0748-9211-f317-2edc819682e1) (NEO-24147)
 * Er is een beveiligingsprobleem verholpen ter versterking van de bescherming tegen SSRF-aanvallen (Server Side Request Forgery). (NEO-25661)
 * Er is een probleem verholpen dat optrad tijdens het verwerken van GDPR-verzoeken om toegang tot persoonsgegevens waardoor records niet konden worden verwijderd uit aangepaste tabellen met een relatie op het tweede niveau tot de tabel met ontvangers. (NEO-25967)
 * Er is een beveiligingsprobleem verholpen waarbij API-aanroepen werden gebruikt van gebruikers die geen beheerder zijn tijdens een poging om Adobe Experience Manager-sjablonen te synchroniseren. (NEO-23487)
