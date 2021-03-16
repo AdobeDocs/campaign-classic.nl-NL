@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentatie
 translation-type: tm+mt
-source-git-commit: 2a82c1f67d8bc6d8499383a600a003480e82510f
+source-git-commit: 4552b8c73f0d547a9bb2dc7d8489927ea687f575
 workflow-type: tm+mt
-source-wordcount: '2464'
-ht-degree: 56%
+source-wordcount: '2467'
+ht-degree: 57%
 
 ---
 
@@ -114,6 +114,7 @@ ht-degree: 56%
          + [Verbinding maken met Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Data synchroniseren met CRM](platform/using/crm-data-sync.md)
       + [Adobe Analytics-dataconnector](platform/using/adobe-analytics-data-connector.md)
+   + [Help- en ondersteuningsopties](support.md)
 + Berichten maken en verzenden {#sending-messages}
    + [Aan de slag met berichten](delivery/using/communication-channels.md)
    + Belangrijke stappen bij het maken van een levering {#key-steps-when-creating-a-delivery}
@@ -185,7 +186,7 @@ ht-degree: 56%
       + [Aan de slag met A/B-tests](delivery/using/get-started-a-b-testing.md)
       + [A/B-tests configureren](delivery/using/configuring-a-b-testing.md)
       + Gebruiksscenario {#use-case}
-         + [Over dit gebruiksgeval](delivery/using/a-b-testing-use-case.md)
+         + [Over dit gebruiksscenario](delivery/using/a-b-testing-use-case.md)
          + [Een doelworkflow maken](delivery/using/a-b-testing-uc-targeting-workflow.md)
          + [Demonstratiemonsters configureren](delivery/using/a-b-testing-uc-population-samples.md)
          + [De leveringssjablonen maken](delivery/using/a-b-testing-uc-delivery-templates.md)
@@ -211,13 +212,13 @@ ht-degree: 56%
       + [Berichttracering](delivery/using/about-message-tracking.md)
       + [Getraceerde koppelingen configureren](delivery/using/how-to-configure-tracked-links.md)
       + Aangepaste koppelingen bijhouden {#tracking-personalized-links}
-         + [Aan de slag met het bijhouden van persoonlijke koppelingen](delivery/using/tracking-personalized-links.md)
+         + [Aan de slag met de tracking van aangepaste koppelingen](delivery/using/tracking-personalized-links.md)
          + [URL&#39;s voor bijhouden detecteren](delivery/using/detecting-tracking-urls.md)
-         + [Voorverwerkingsinstructies voor tracering](delivery/using/pre-processing-instructions.md)
+         + [Voorverwerkingsinstructies voor tracking](delivery/using/pre-processing-instructions.md)
       + [Opties voor URL-tracking configureren](delivery/using/personalizing-url-tracking.md)
       + [De trackinglogboeken openen](delivery/using/accessing-the-tracking-logs.md)
       + [Tekstspatiëring testen](delivery/using/testing-tracking.md)
-      + [Problemen bijhouden](delivery/using/tracking-troubleshooting.md)
+      + [Problemen met tracking oplossen](delivery/using/tracking-troubleshooting.md)
    + Leverbaarheidsbeheer {#deliverability-management}
       + [Leverbaarheid](delivery/using/about-deliverability.md)
       + [Belangrijkste punten om te controleren](delivery/using/deliverability-key-points.md)
@@ -229,7 +230,7 @@ ht-degree: 56%
       + [Inboxrendering](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Best practices voor hernieuwde betrokkenheid](delivery/using/re-engagement-best-practices.md)
-      + [Lijst van gewezen personen databases](delivery/using/block-list-databases.md)
+      + [Databases met lijsten van ongewenste personen](delivery/using/block-list-databases.md)
       + [Problemen oplossen](delivery/using/deliverability-faq.md)
    + Module voor contentmanagement{#content-management}
       + [Contentmanagement](delivery/using/about-content-management.md)
