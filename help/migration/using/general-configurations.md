@@ -7,7 +7,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '2787'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Adobe Campaign v7 impliceert het concept van **veiligheidszones**. Elke gebruike
 
 **Na de postupgrade**  (vóór het opnieuw opstarten van de server), moet u de veiligheidsstreken vormen.
 
-Configuratie van de veiligheidszone wordt gevonden in [deze sectie](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Configuratie van de veiligheidszone wordt gevonden in [deze sectie](../../installation/using/security-zones.md).
 
 ### Gebruikerswachtwoorden {#user-passwords}
 
