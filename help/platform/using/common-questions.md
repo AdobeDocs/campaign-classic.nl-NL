@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: baa41d876b889d2746f593e97f6b624dfffa5911
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 100%
@@ -41,7 +41,7 @@ Met de workflow voor het opschonen van databases verwijdert u verouderde data om
 
 ## 3. Hoe kan ik beveiligingszones configureren? {#how-can-i-configure-security-zones-}
 
-De selfservice-interface voor beveiligingszones kan worden gebruikt om vermeldingen in de configuratie van de VPN-beveiligingszone van een Adobe Campaign Classic-implementatie te beheren. Lees [deze sectie](../../installation/using/configuring-campaign-server.md#defining-security-zones) om over beveiligingszones in Campaign te leren.
+De selfservice-interface voor beveiligingszones kan worden gebruikt om vermeldingen in de configuratie van de VPN-beveiligingszone van een Adobe Campaign Classic-implementatie te beheren. Lees [deze sectie](../../installation/using/security-zones.md) om over beveiligingszones in Campaign te leren.
 
 [Klik hier voor meer informatie](https://helpx.adobe.com/nl/campaign/kb/configuring-security-zones-self-service.html) over de selfservicegebruikersinterface voor beveiligingszones.
 
