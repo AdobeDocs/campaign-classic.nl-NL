@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '299'
 ht-degree: 3%
 
 ---
@@ -17,9 +17,7 @@ ht-degree: 3%
 
 # Interaction - Databuffer{#interaction-data-buffer}
 
->[!NOTE]
->
->Sommige configuraties kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen. Bijvoorbeeld, om tot de server en de dossiers van de instantieconfiguratie toegang te hebben. Raadpleeg de sectie [Modellen hosten](../../installation/using/hosting-models.md) of [deze pagina](../../installation/using/capability-matrix.md) voor meer informatie over de verschillende implementaties.
+U kunt een zone van de gegevensbuffer vormen om de binnenkomende prestaties van de Interactie te verhogen door de berekeningen van de aanbiedingsvoorstel te desynchroniseren. Deze configuratie moet in het eigen configuratiedossier van de instantie (config-Instance.xml) worden uitgevoerd.
 
 In Adobe Campaign is een **gegevensbufferzone** geïntroduceerd in de Interactiemodule. Hierdoor kunt u de prestaties van inkomende interactie **verhogen door de items te desynchroniseren en berekeningen aan te bieden.**
 
@@ -27,12 +25,19 @@ Het heeft slechts betrekking op binnenkomende Interactie, hetzij door een vraag 
 
 Om een rij te vermijden wanneer het schrijven van voorstellen met betrekking tot een ontvanger, produceert een nieuw proces een **gegevensbufferzone** die voorstellen om toestaat om asynchroon **geschreven te zijn**. Deze gegevensbufferzone wordt periodiek gelezen en leeggemaakt. De standaardwaarde is ongeveer één seconde. Het schrijven van het voorstel is daarom gegroepeerd.
 
+>[!NOTE]
+>
+>Deze parameter is essentieel als u Interactie met een verdeelde architectuur gebruikt.
+
 Gegevensbufferzone **configuration** kan in het configuratiedossier van de instantie (config-Instance.xml) worden gedaan.
 
->[!NOTE]
+>[!CAUTION]
+>
+>Sommige configuraties kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen. Bijvoorbeeld, om tot de server en de dossiers van de instantieconfiguratie toegang te hebben. Raadpleeg de sectie [Modellen hosten](../../installation/using/hosting-models.md) of [deze pagina](../../installation/using/capability-matrix.md) voor meer informatie over de verschillende implementaties.
 >
 >Om het even welke veranderingen die aan de configuratie worden aangebracht vereisen een nieuw begin van de Webserver (Apache:IIS) en de processen van Adobe Campaign.\
 >Nadat u de gegevensbufferzone hebt geconfigureerd, moet u ervoor zorgen dat er een aangepaste hardwareconfiguratie beschikbaar is. (hoeveelheid aanwezig geheugen).
+
 
 Nadat u de gegevensbufferzone hebt geconfigureerd, moet u ervoor zorgen dat er een aangepaste hardwareconfiguratie beschikbaar is. (hoeveelheid aanwezig geheugen).
 
