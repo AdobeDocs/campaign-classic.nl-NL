@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1156'
 ht-degree: 3%
 
 ---
@@ -29,8 +29,6 @@ ht-degree: 3%
 >
 >
 Als u wilt controleren of uw instantie wordt gehost op AWS, voert u de stappen uit die in [deze sectie](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) worden beschreven.
-
-Leren hoe te om de Zelfbediening UI van de Zones van de Veiligheid te gebruiken om ingangen in de configuratie van de Zone van de Veiligheid van VPN te beheren, verwijs naar [dit technische ](https://helpx.adobe.com/nl/campaign/kb/configuring-security-zones-self-service.html).
 
 * Zorg ervoor dat de reverse-proxy niet is toegestaan in subNetwork. Als het het geval is, zal **all** verkeer worden ontdekt zoals komend van dit lokale IP, zodat zal worden vertrouwd.
 
@@ -127,6 +125,6 @@ Met Adobe Campaign kunt u een leeg wachtwoord instellen in het element `<dbcnx .
 
 Adobe Campaign hecht standaard geen sessie aan een specifiek IP, maar u kunt deze activeren om te voorkomen dat de sessie wordt gestolen. U doet dit door in het bestand [serverConf.xml](../../installation/using/the-server-configuration-file.md) het kenmerk checkIPConsistent in te stellen op **true** in het knooppunt `<authentication>`.
 
-Standaard gebruikt Adobe Campaign MTA geen beveiligde verbinding om inhoud naar de SMTP-server te verzenden. U moet deze functie inschakelen (dit kan de snelheid van de levering verlagen). Om dit te doen, plaats enableTLS aan tr**ue in de `<smtp ...>` knoop.
+Standaard gebruikt Adobe Campaign MTA geen beveiligde verbinding om inhoud naar de SMTP-server te verzenden. U moet deze functie inschakelen (dit kan de snelheid van de levering verlagen). Om dit te doen, plaats **enableTLS** aan **true** in de `<smtp ...>` knoop.
 
 U kunt de levensduur van een sessie in het verificatieknooppunt (kenmerk sessionTimeOutSec) verminderen.
