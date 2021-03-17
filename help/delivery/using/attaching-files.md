@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '925'
 ht-degree: 1%
 
 ---
@@ -101,11 +101,6 @@ Met de optie **[!UICONTROL The file content is personalized and converted into P
 Voor dit type van gehechtheid, pas de volgende configuratiestappen toe:
 
 1. Selecteer het bestand dat u wilt uploaden.
-
-   >[!NOTE]
-   >
-   >Het bronbestand moet in LiveOffice worden gemaakt. De instantie moet worden gevormd in overeenstemming met de eerste vereisten die in [deze sectie](../../installation/using/before-starting.md) worden gedetailleerd.
-
 1. Geef zo nodig het label op.
 1. Selecteer **[!UICONTROL Upload file on the server]**, en klik dan **[!UICONTROL Update on server]** om de overdracht te beginnen.
 1. U kunt een voorvertoning weergeven. Selecteer een ontvanger om dit te doen.
