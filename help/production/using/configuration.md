@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 1%
@@ -45,4 +45,4 @@ Elke exploitant moet met een streek worden verbonden om aan een geval te login e
 
 >[!NOTE]
 >
->Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#defining-security-zones) voor meer informatie over het configureren van beveiligingszones.
+>Raadpleeg [deze sectie](../../installation/using/security-zones.md) voor meer informatie over het configureren van beveiligingszones.
