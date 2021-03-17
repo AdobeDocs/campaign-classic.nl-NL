@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 2%
@@ -93,7 +93,7 @@ Voer de volgende stappen uit om een uitvoerinstantie van het type externe accoun
 
 Opdat de controleinstantie met de uitvoeringsinstantie kan verbinden zonder het moeten een wachtwoord geven, ga eenvoudig het IP adres van de controleinstantie in het **Centrum van het Bericht** de sectie van toegangsrechten in. Lege wachtwoorden zijn echter standaard niet toegestaan.
 
-Als u een leeg wachtwoord wilt gebruiken, gaat u naar de uitvoeringsinstanties en definieert u een beveiligingszone die is beperkt tot het IP-adres van het informatiesysteem dat de gebeurtenissen levert. Deze veiligheidszone moet lege wachtwoorden toestaan en `<identifier> / <password>` typeverbindingen goedkeuren. Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#defining-security-zones) voor meer informatie.
+Als u een leeg wachtwoord wilt gebruiken, gaat u naar de uitvoeringsinstanties en definieert u een beveiligingszone die is beperkt tot het IP-adres van het informatiesysteem dat de gebeurtenissen levert. Deze veiligheidszone moet lege wachtwoorden toestaan en `<identifier> / <password>` typeverbindingen goedkeuren. Raadpleeg [deze sectie](../../installation/using/security-zones.md) voor meer informatie.
 
 >[!NOTE]
 >
@@ -148,7 +148,7 @@ Om verscheidene controleinstanties te gebruiken, moet deze configuratie op ALLE 
 
    >[!NOTE]
    >
-   >**mc1** en  **mc2** operatoren moeten  **[!UICONTROL Message Center execution]** rechten hebben en hebben geen toegang tot de Adobe Campaign-clientconsole. Een exploitant moet altijd met een veiligheidsstreek verbonden zijn. Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#defining-security-zones) voor meer informatie.
+   >**mc1** en  **mc2** operatoren moeten  **[!UICONTROL Message Center execution]** rechten hebben en hebben geen toegang tot de Adobe Campaign-clientconsole. Een exploitant moet altijd met een veiligheidsstreek verbonden zijn. Raadpleeg [deze sectie](../../installation/using/security-zones.md) voor meer informatie.
 
 1. Voor elke exploitant, controleer **[!UICONTROL Restrict to information found in sub-folders of]** doos, en selecteer de relevante omslag (**Omslag 1** voor de **mc1** exploitant en **Omslag 2** voor **mc2** exploitant).
 
