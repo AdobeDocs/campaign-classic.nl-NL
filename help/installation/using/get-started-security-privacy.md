@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: 45a77d3fc143ab9c6f9f17ab6118f8816254f6fd
+source-git-commit: 922603492d2c98d751683d3aa481e9ab19bca70c
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '450'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Aan de slag met beveiliging en privacy {#get-started-security-privacy}
 
-Deze sectie zal u aan de belangrijkste elementen introduceren om betreffende veiligheid en privacy te controleren.
+Deze sectie zal u aan de belangrijkste elementen introduceren om betreffende veiligheid en privacy te controleren. Sommige configuraties kunnen slechts door on-premise klanten worden uitgevoerd.
 
 ## Privacy
 
@@ -52,9 +52,9 @@ Volg bij het ontwikkelen in Adobe Campaign (workflows, Javascript, JSSP, enz.) a
 
 * **Scripting**: Probeer SQL-instructies te vermijden, gebruik parameterized functies in plaats van tekenreekssamenvoeging en vermijd SQL-injectie door de SQL-functies toe te voegen die u aan de lijst van gewenste personen wilt gebruiken.
 
-* **Het gegevensmodel** beveiligen: gebruik genoemde rechten om exploitatoracties te beperken, systeemfilters toe te voegen (sysFilter)
+* **Beveilig het gegevensmodel**: gebruik genoemde rechten om exploitatoracties te beperken, systeemfilters toe te voegen (sysFilter)
 
-* **Bijschriften toevoegen in webtoepassingen**: Leer hoe u hoofdletters kunt toevoegen aan uw openbare bestemmingspagina&#39;s en abonnementspagina&#39;s.
+* **Hoofdletters toevoegen in webtoepassingen**: Leer hoe u hoofdletters kunt toevoegen aan uw openbare bestemmingspagina&#39;s en abonnementspagina&#39;s.
 
 [Meer informatie](../../installation/using/scripting-coding-guidelines.md)
 
@@ -92,9 +92,9 @@ De configuratie moet op alle servers worden uitgevoerd. De configuratiebestanden
 
 Bij het configureren van uw webserver (Apache/IIS) moeten verschillende best practices worden gevolgd:
 
-* Oude SSL-versie en -ciphers uitschakelen:
-* Verwijder de methode TRACE:
-* Verwijder de banner:
-* Beperk de querygrootte om te voorkomen dat belangrijke bestanden worden geüpload:
+* Oude SSL-versie en -ciphers uitschakelen
+* De methode TRACE verwijderen
+* De banner verwijderen
+* De vraaggrootte beperken om belangrijke dossiers te verhinderen worden geupload
 
 [Meer informatie](../../installation/using/web-server-configuration.md)
