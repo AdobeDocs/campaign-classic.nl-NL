@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: f7e4f129a96e80ec169428057f661165d8b967c9
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Met Adobe Campaign kunt u de rechten definiëren en beheren die aan de verschill
 
 De machtigingen zijn van toepassing op operatorprofielen of groepen operatoren.
 
-Zij worden aangevuld met veiligheidsparameters die gekoppeld zijn aan de verbindingsmodus van de exploitant met Adobe Campaign. Voor meer informatie over veiligheidsstreken in [deze pagina](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Zij worden aangevuld met veiligheidsparameters die gekoppeld zijn aan de verbindingsmodus van de exploitant met Adobe Campaign. Voor meer informatie over veiligheidsstreken in [deze pagina](../../installation/using/security-zones.md).
 
 Er zijn twee soorten toestemmingen u aan een gebruiker kunt verlenen:
 
