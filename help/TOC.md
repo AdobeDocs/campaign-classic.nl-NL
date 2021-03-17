@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentatie
 translation-type: tm+mt
-source-git-commit: 4552b8c73f0d547a9bb2dc7d8489927ea687f575
+source-git-commit: baa41d876b889d2746f593e97f6b624dfffa5911
 workflow-type: tm+mt
-source-wordcount: '2467'
-ht-degree: 57%
+source-wordcount: '2470'
+ht-degree: 55%
 
 ---
 
@@ -380,11 +380,6 @@ ht-degree: 57%
       + [Integreren met [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [De integratie configureren met [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Een dynamische afbeelding invoegen](integrations/using/inserting-a-dynamic-image.md)
-   + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-      + [Info [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
-      + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
-      + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
-      + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
    + ACS Connector {#acs-connector}
       + Principes en datacyclus van [[!DNL ACS Connector] ](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Profielen synchroniseren](integrations/using/synchronizing-profiles.md)
@@ -562,7 +557,7 @@ ht-degree: 57%
       + [Een testomgeving maken](interaction/using/creating-a-test-environment.md)
       + [Hooks](interaction/using/hooks.md)
       + [Gedistribueerde architecturen](interaction/using/distributed-architectures.md)
-      + [Databufferzone](interaction/using/data-buffer-zone.md)
+      + [Configuratie gegevensbuffer](installation/using/interaction---data-buffer.md)
    + Gebruiksscenario {#case-study}
       + [Presentatieregels](interaction/using/presentation-rules.md)
       + [Aanbiedingen op een binnenkomend kanaal](interaction/using/offers-on-an-inbound-channel.md)
@@ -620,16 +615,8 @@ ht-degree: 57%
    + Architectuurprincipes {#architecture-and-hosting-models}
       + [Algemene architectuur](installation/using/general-architecture.md)
       + Hostmodellen{#hosting-models-lp}
-         + [Hostmodellen](installation/using/hosting-models.md)
-         + [Hybride model](installation/using/hybrid-model.md)
-         + [Gehost model](installation/using/hosted-model.md)
+         + [Campagne-hostmodellen](installation/using/hosting-models.md)
          + [Capaciteitsmatrix](installation/using/capability-matrix.md)
-   + Richtlijnen voor implementatie {#deployment-guidelines}
-      + [Vereisten](installation/using/before-starting.md)
-      + [Databaseserver](installation/using/database.md)
-      + [Applicatieserver](installation/using/application-server.md)
-      + [Berichtenserver](installation/using/messaging-server.md)
-      + [Netwerkconfiguratie](installation/using/network-configuration.md)
    + Implementatietypen {#deployment-types-}
       + [Implementatietypen](installation/using/about-deployment-types.md)
       + [Zelfstandige implementatie](installation/using/standalone-deployment.md)
@@ -637,58 +624,70 @@ ht-degree: 57%
       + [Zakelijke implementatie](installation/using/enterprise-deployment.md)
       + [Midsourcingimplementatie](installation/using/mid-sourcing-deployment.md)
       + [Power Booster en Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + Campaign in Windows {#installing-campaign-in-windows-}
-      + [Voordat u Campaign in Windows installeert](installation/using/prerequisites-of-campaign-installation-in-windows.md)
-      + [De server installeren](installation/using/installing-the-server.md)
-      + [Integreren in een webserver (Windows)](installation/using/integration-into-a-web-server-for-windows.md)
-      + [Beschikbaarheid van clientconsole voor Windows](installation/using/client-console-availability-for-windows.md)
-      + [De clientconsole installeren](installation/using/installing-the-client-console.md)
-   + Campaign in Linux {#installing-campaign-in-linux-}
-      + [Voordat u Campaign in Linux installeert](installation/using/prerequisites-of-campaign-installation-in-linux.md)
-      + [Pakketten installeren](installation/using/installing-packages-with-linux.md)
-      + [Integreren in een webserver (Linux)](installation/using/integration-into-a-web-server-for-linux.md)
-      + [Beschikbaarheid van clientconsole voor Linux](installation/using/client-console-availability-for-linux.md)
-   + Initiële configuratie {#initial-configuration}
+   + Controlelijst voor beveiliging en privacy {#security-privacy}
+      + [Aan de slag met beveiliging en privacy](installation/using/get-started-security-privacy.md)
+      + [Personalisatie en privacy](installation/using/privacy.md)
+      + [Veilig toegangsbeheer](installation/using/access-management.md)
+      + [Richtlijnen voor scripts en codering](installation/using/scripting-coding-guidelines.md)
+      + [Netwerk, database en SSL/TLS](installation/using/network-database.md)
+      + [Beveiligingsinstellingen server](installation/using/server-configuration.md)
+      + [Beveiligingsinstellingen webserver](installation/using/web-server-configuration.md)
+   + Campagne installeren (op locatie){#install-campaign-on-prem}
+      + Richtlijnen voor implementatie {#deployment-guidelines}
+         + [Databaseserver](installation/using/database.md)
+         + [Applicatieserver](installation/using/application-server.md)
+         + [Berichtenserver](installation/using/messaging-server.md)
+         + [Netwerkconfiguratie](installation/using/network-configuration.md)
+      + Campaign in Windows {#installing-campaign-in-windows-}
+         + [Aan de slag](installation/using/prerequisites-of-campaign-installation-in-windows.md)
+         + [De server installeren](installation/using/installing-the-server.md)
+         + [Integreren in een webserver (Windows)](installation/using/integration-into-a-web-server-for-windows.md)
+         + [Beschikbaarheid van clientconsole voor Windows](installation/using/client-console-availability-for-windows.md)
+      + Campaign in Linux {#installing-campaign-in-linux-}
+         + [Vereisten](installation/using/prerequisites-of-campaign-installation-in-linux.md)
+         + [Pakketten installeren](installation/using/installing-packages-with-linux.md)
+         + [Integreren in een webserver](installation/using/integration-into-a-web-server-for-linux.md)
+      + [Tijdzonebeheer](installation/using/time-zone-management.md)
+      + [Een server voor midsourcing installeren](installation/using/mid-sourcing-server.md)
+   + Campagne implementeren (op locatie) {#initial-configuration}
       + [Initiële configuratie](installation/using/about-initial-configuration.md)
       + [Een instantie maken en aanmelden](installation/using/creating-an-instance-and-logging-on.md)
       + [De database maken en configureren](installation/using/creating-and-configuring-the-database.md)
-      + [Configuratie van de Campaign-server](installation/using/campaign-server-configuration.md)
+      + [Campagneserver configureren](installation/using/campaign-server-configuration.md)
       + [Een instantie implementeren](installation/using/deploying-an-instance.md)
-      + [Ingebouwde Campaign Classic-pakketten installeren](installation/using/installing-campaign-standard-packages.md)
-   + Aanvullende configuraties {#additional-configurations}
-      + [Campagneserver configureren](installation/using/configuring-campaign-server.md)
-      + [Verbinding maken via LDAP](installation/using/connecting-through-ldap.md)
+      + [Ingebouwde pakketten installeren](installation/using/installing-campaign-standard-packages.md)
+   + Campagne {#additional-configurations} configureren
+      + [Instellingen van campagneserver](installation/using/configuring-campaign-server.md)
+      + [Beveiligingszones definiëren](installation/using/security-zones.md)
       + [Technische e-mailconfiguraties](installation/using/email-deliverability.md)
-      + [E-mailarchivering](installation/using/email-archiving.md)
-      + [Tijdzonebeheer](installation/using/time-zone-management.md)
+      + [E-mail BCC configureren](installation/using/email-archiving.md)
       + [SpamAssassin configureren](installation/using/configuring-spamassassin.md)
-      + [Midsourcingserver](installation/using/mid-sourcing-server.md)
-      + [Interaction - Databuffer](installation/using/interaction---data-buffer.md)
+   + Verbinding maken met campagne{#connect-to-campaign}
+      + [De clientconsole installeren](installation/using/installing-the-client-console.md)
+      + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
+         + [Info [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
+         + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
+         + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
+      + [Verbinding maken via LDAP](installation/using/connecting-through-ldap.md)
+   + Campagne aansluiten op externe systemen {#accessing-external-database}
       + [Externe accounts configureren](installation/using/external-accounts.md)
-   + Een externe database {#accessing-external-database} openen
-      + [Aan de slag met FDA](installation/using/about-fda.md)
-      + Configuratierichtlijnen {#config-databases}
-         + [Configuratiestappen](installation/using/configure-fda.md)
-         + [Snowflake configureren](installation/using/configure-fda-snowflake.md)
-         + [Azure Synapse configureren](installation/using/configure-fda-synapse.md)
-         + [Hadoop configureren](installation/using/configure-fda-hadoop.md)
-         + [Oracle configureren](installation/using/configure-fda-oracle.md)
-         + [Netezza configureren](installation/using/configure-fda-netezza.md)
-         + [Sybase IQ configureren](installation/using/configure-fda-sybase.md)
-         + [Teradata configureren](installation/using/configure-fda-teradata.md)
-         + [SAP HANA configureren](installation/using/configure-fda-sap-hana.md)
-      + [Externe toegangsrechten](installation/using/remote-database-access-rights.md)
-      + [Verbinding maken met de database](installation/using/connecting-to-database.md)
-      + [Het gegevensschema maken](installation/using/creating-data-schema.md)
-      + [Gegevenstoewijzing definiëren](installation/using/defining-data-mapping.md)
-   + Controlelijst voor beveiliging en privacy {#security-privacy}
-      + [Aan de slag met beveiliging en privacy](installation/using/get-started-security-privacy.md)
-      + [Privacy](installation/using/privacy.md)
-      + [Toegangsbeheer](installation/using/access-management.md)
-      + [Richtlijnen voor scripts en codering](installation/using/scripting-coding-guidelines.md)
-      + [Netwerk, database en SSL/TLS](installation/using/network-database.md)
-      + [Serverconfiguratie](installation/using/server-configuration.md)
-      + [Webserverconfiguratie](installation/using/web-server-configuration.md)
+      + Federale gegevenstoegang configureren{#configure-fda}
+         + [Aan de slag met Federale gegevenstoegang](installation/using/about-fda.md)
+         + Configuratierichtlijnen {#config-databases}
+            + [Configuratiestappen](installation/using/configure-fda.md)
+            + [Snowflake configureren](installation/using/configure-fda-snowflake.md)
+            + [Azure Synapse configureren](installation/using/configure-fda-synapse.md)
+            + [Hadoop configureren](installation/using/configure-fda-hadoop.md)
+            + [Oracle configureren](installation/using/configure-fda-oracle.md)
+            + [Netezza configureren](installation/using/configure-fda-netezza.md)
+            + [Sybase IQ configureren](installation/using/configure-fda-sybase.md)
+            + [Teradata configureren](installation/using/configure-fda-teradata.md)
+            + [SAP HANA configureren](installation/using/configure-fda-sap-hana.md)
+         + [Externe toegangsrechten](installation/using/remote-database-access-rights.md)
+         + [Verbinding maken met de database](installation/using/connecting-to-database.md)
+         + [Het gegevensschema maken](installation/using/creating-data-schema.md)
+         + [Gegevenstoewijzing definiëren](installation/using/defining-data-mapping.md)
    + Bijlagen {#appendices}
       + [Serverconfiguratiebestand](installation/using/the-server-configuration-file.md)
       + [Campaign-netwerkeindpunten](installation/using/campaign-network-endpoints.md)
