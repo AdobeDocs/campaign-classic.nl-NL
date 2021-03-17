@@ -7,7 +7,7 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Voorbeeldelementen om te controleren:
 * Het **tabelruimte** attribuut neemt zijn waarden door gebrek terug, met andere woorden die die in de plaatsingstovenaar worden bepaald.
 * Als u een verwijzingsmening aan de lijst NmsRecipient hebt toegevoegd, moet u het schrappen alvorens zich te migreren.
 
-Deze waarschuwing heeft ook betrekking op Oracle-gebruikers: als u de optie **usetimestamptz:1** tijdens een postupgrade hebt toegevoegd (zie [Tijdzones](../../migration/using/general-configurations.md#time-zones)), worden alle tabellen met ten minste één **date+time** veld opnieuw samengesteld.
+Deze waarschuwing heeft ook betrekking op gebruikers van Oracles: als u de optie **usetimestamptz:1** tijdens een postupgrade hebt toegevoegd (zie [Tijdzones](../../migration/using/general-configurations.md#time-zones)), worden alle tabellen met ten minste één **date+time** veld opnieuw samengesteld.
 
 ## Voor de migratie {#before-the-migration}
 
@@ -39,7 +39,7 @@ Bij het migreren naar Adobe Campaign v7 moeten de volgende elementen worden geco
 
    Raadpleeg de sectie [Tijdzones](../../migration/using/general-configurations.md#time-zones) als u de modus &quot;multi timezone&quot; wilt gebruiken.
 
-   Als u Oracle als database gebruikt, moet u controleren of de Oracle-tijdzonebestanden correct zijn gesynchroniseerd tussen de toepassingsserver en de databaseserver. Raadpleeg voor meer informatie de sectie [Oracle](../../migration/using/general-configurations.md#oracle).
+   Als u Oracle als gegevensbestand gebruikt, controleer dat de dossiers van de Oracle timezone behoorlijk tussen de toepassingsserver en de gegevensbestandserver zijn gesynchroniseerd. Raadpleeg voor meer informatie de sectie [Oracle](../../migration/using/general-configurations.md#oracle).
 
 * Beveiligingszones
 
@@ -109,7 +109,7 @@ Na het uitvoeren **postupgrade**, moeten de volgende elementen in acht worden ge
 
 * Beveiligingszones.
 
-   Voordat u de server start, moet u de beveiligingszones configureren. Zie [deze sectie](../../installation/using/configuring-campaign-server.md#defining-security-zones) en de sectie [Security](../../migration/using/general-configurations.md#security) voor meer informatie.
+   Voordat u de server start, moet u de beveiligingszones configureren. Zie [deze sectie](../../installation/using/security-zones.md) en de sectie [Security](../../migration/using/general-configurations.md#security) voor meer informatie.
 
 * Schemas
 
