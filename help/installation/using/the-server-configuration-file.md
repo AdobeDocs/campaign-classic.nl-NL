@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 1bd40c6acaceb1bb4839807ae89c6956bc2b8d69
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 5%
@@ -21,7 +21,7 @@ De algemene configuratie van Adobe Campaign wordt gedefinieerd in het bestand **
 
 >[!NOTE]
 >
->De server-zijconfiguraties kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen. Raadpleeg de sectie [Modellen hosten](../../installation/using/hosting-models.md) of [deze pagina](../../installation/using/capability-matrix.md) voor meer informatie over de verschillende implementaties. De installatie- en configuratiestappen voor gehoste en hybride modellen worden beschreven in deze [sectie](../../installation/using/hosted-model.md).
+>De server-zijconfiguraties kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen. Raadpleeg de sectie [Modellen hosten](../../installation/using/hosting-models.md) of [deze pagina](../../installation/using/capability-matrix.md) voor meer informatie over de verschillende implementaties. De installatie- en configuratiestappen voor gehoste en hybride modellen worden beschreven in deze [sectie](../../installation/using/hosting-models.md).
 
 De eerste parameters bevinden zich binnen de **shared** knoop. Deze zijn gerelateerd aan het exemplaar. Deze worden mogelijk door alle nlserver-opdrachten gebruikt (nlserver, nlserver wfserver, enz.). De andere secties zijn verwant aan een specifiek nlserver sub-bevel.
 
@@ -2193,7 +2193,7 @@ Hier zijn de verschillende parameters van **repareert** knoop. Dit is de configu
 
 Hier zijn de verschillende parameters van **securityZone** knoop.
 
-Raadpleeg [Beveiligingszones definiëren](../../installation/using/configuring-campaign-server.md#defining-security-zones) voor aanvullende informatie.
+Raadpleeg [Beveiligingszones definiëren](../../installation/using/security-zones.md) voor aanvullende informatie.
 
 <table> 
  <thead> 
@@ -2291,7 +2291,7 @@ Hier is de standaardconfiguratie:
 
 Hier zijn de verschillende parameters van **securityZone > subNetwork** knoop.
 
-Raadpleeg [Beveiligingszones definiëren](../../installation/using/configuring-campaign-server.md#defining-security-zones) voor aanvullende informatie.
+Raadpleeg [Beveiligingszones definiëren](../../installation/using/security-zones.md) voor aanvullende informatie.
 
 <table> 
  <thead> 
