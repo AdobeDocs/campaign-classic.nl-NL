@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 translation-type: tm+mt
-source-git-commit: c366326f6a439dabaa42fdd799ec2e55c180a929
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 1%
@@ -188,7 +188,7 @@ In het deel `<service>` wordt de service &quot;XtkQueryDef&quot; beschreven met 
 
 ## Connectiviteit {#connectivity}
 
-Adobe Campaign heeft de beveiliging voor verificatiemechanismen verhoogd door beveiligingszones in te voeren (zie het hoofdstuk **Beveiligingszones definiëren** in [deze sectie](../../installation/using/configuring-campaign-server.md#defining-security-zones)) en door instellingen voor sessiebeheer in te voeren.
+Adobe Campaign heeft de beveiliging voor verificatiemechanismen verhoogd door beveiligingszones in te voeren (zie het hoofdstuk **Beveiligingszones definiëren** in [deze sectie](../../installation/using/security-zones.md)) en door instellingen voor sessiebeheer in te voeren.
 
 Er zijn twee beschikbare verificatiemodi:
 
