@@ -7,15 +7,15 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 
-# Vereisten voor installatie van Campaign in Linux{#prerequisites-of-campaign-installation-in-linux}
+# Vereisten om Campagne op Linux te installeren{#prerequisites-of-campaign-installation-in-linux}
 
 ## Softwarevereisten {#software-prerequisites}
 
@@ -180,17 +180,17 @@ Als u PostSQL met Adobe Campaign gebruikt, moet u ook de bijbehorende **pgcrypto
 
 Haal de bibliotheekversie op voor 64-bits Debian, dat wil zeggen: **libclntsh.so**, **libclntsh.so.11.1** en **libclntsh.so.10.1**.
 
-U kunt een Linux RPM-pakket verkrijgen van het Oracle Technology Network.
+U kunt een Linux RPM pakket van het Netwerk van de Technologie van het Oracle verkrijgen.
 
 >[!NOTE]
 >
->Als u de Oracle-client al hebt geïnstalleerd, maar de algemene omgeving (bijvoorbeeld: /etc/profile) niet behoorlijk wordt gevormd, kunt u ontbrekende informatie aan **nl6/customer.sh** manuscript voor meer op dit toevoegen, verwijs naar [de variabelen van het Milieu](../../installation/using/installing-packages-with-linux.md#environment-variables).
+>Als u al de client van het Oracle maar de algemene omgeving hebt geïnstalleerd (bijvoorbeeld: /etc/profile) niet behoorlijk wordt gevormd, kunt u ontbrekende informatie aan **nl6/customer.sh** manuscript voor meer op dit toevoegen, verwijs naar [de variabelen van het Milieu](../../installation/using/installing-packages-with-linux.md#environment-variables).
 
 **Problemen oplossen en best practices**
 
 Problemen kunnen optreden na een Oracle-client of een serverupdate, een versiewijziging of bij de eerste installatie van de instantie.
 
-Als u op de cliëntconsole opmerkt dat er onverwachte tijdvertraging (één of meerdere uren) in logboeken, werkschema laatste verwerking, volgende verwerking, etc. zijn, zou er een probleem tussen de bibliotheek van de cliënt van Oracle en de Server van Oracle kunnen zijn. Dergelijke problemen voorkomen
+Als u op de cliëntconsole opmerkt dat er onverwachte tijdvertraging (één of meerdere uren) in logboeken, werkschemalaatste verwerking, volgende verwerking, etc. zijn, zou er een probleem tussen de bibliotheek van de cliënt van het Oracle en de Server van het Oracle kunnen zijn. Dergelijke problemen voorkomen
 
 1. Zorg ervoor dat u de **volledige client** gebruikt.
 
@@ -198,9 +198,9 @@ Als u op de cliëntconsole opmerkt dat er onverwachte tijdvertraging (één of m
 
 1. Zorg ervoor dat de **clientversie** en de **databaseserverversie** **same** zijn.
 
-   Het is bekend dat het mengen van versies ondanks de compatibiliteitsmatrix van Oracle en de aanbeveling om client- en serverversies uit te lijnen problemen kan veroorzaken.
+   Het mengen van versies ondanks de verenigbaarheidsmatrijs en aanbeveling van het Oracle om cliënt en serverversies te richten is gekend om problemen te veroorzaken.
 
-   Controleer ook de ORACLE_HOME-waarde om te controleren of deze naar de verwachte clientversie verwijst (als er meerdere versies op de computer zijn geïnstalleerd).
+   Controleer ook de waarde ORACLE_HOME om te controleren of deze naar de verwachte clientversie verwijst (als er meerdere versies op de computer zijn geïnstalleerd).
 
 1. Zorg ervoor dat de client en de server hetzelfde **tijdzonebestand** gebruiken.
 
