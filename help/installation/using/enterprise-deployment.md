@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 0%
+source-wordcount: '1221'
+ht-degree: 1%
 
 ---
 
@@ -165,12 +165,7 @@ De stappen voor het installeren van de eerste server zijn:
 
    Raadpleeg [Configuratie campagneserver](../../installation/using/campaign-server-configuration.md) voor meer informatie.
 
-1. Kopieer het installatieprogramma voor de clientconsole (**setup-client-7.XX**, **YYYY.exe** voor v7 of **setup-client-6.XX**, **YYYYY.exe** voor v6.1) naar **/datakit/nl eng/jsp** map.
-
-   Raadpleeg de volgende secties voor meer informatie hierover:
-
-   * Voor Linux: [Beschikbaarheid van clientconsole voor Linux](../../installation/using/client-console-availability-for-linux.md)
-   * Voor Windows: [Beschikbaarheid van clientconsole voor Windows](../../installation/using/client-console-availability-for-windows.md).
+1. Kopieer het installatieprogramma voor de clientconsole (**setup-client-7.XX**, **YYYY.exe** voor v7 of **setup-client-6.XX**, **YYYYY.exe** voor v6.1) naar **/datakit/nl eng/jsp** map. [Meer informatie](../../installation/using/client-console-availability-for-windows.md).
 
 1. Start de Adobe Campaign-server (**net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux) en voer de opdracht **nlserver pdump** nogmaals uit om te controleren of alle ingeschakelde modules aanwezig zijn.
 
@@ -194,16 +189,11 @@ De stappen voor het installeren van de eerste server zijn:
 
 1. Test de **nlserverWeb** module gebruikend URL: [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test).
 
-   Met deze URL hebt u toegang tot de downloadpagina voor het installatieprogramma van de client.
+   Met deze URL hebt u toegang tot de downloadpagina voor het installatieprogramma van de client. [Meer informatie](../../installation/using/client-console-availability-for-windows.md).
 
    Ga **internal** login en het bijbehorende wachtwoord in wanneer u de pagina van de toegangscontrole bereikt.
 
    ![](assets/s_ncs_install_access_client.png)
-
-   Raadpleeg de volgende secties voor meer informatie hierover:
-
-   * Voor Linux: [Beschikbaarheid van clientconsole voor Linux](../../installation/using/client-console-availability-for-linux.md)
-   * Voor Windows: [Beschikbaarheid van clientconsole voor Windows](../../installation/using/client-console-availability-for-windows.md)
 
 ### De toepassingsserver 2 {#installing-and-configuring-the-application-server-2} installeren en configureren
 
