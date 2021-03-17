@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
+source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1159'
 ht-degree: 2%
 
 ---
@@ -116,7 +116,7 @@ Als u Adobe Campaign wilt bijwerken in een nieuwe versie wanneer een nieuwe buil
 * [Een update](#perform-an-update) uitvoeren
 * [Start de webserver](#reboot-the-web-server) opnieuw op.
 
-Zie [deze sectie](../../installation/using/client-console-availability-for-linux.md) voor informatie over het bijwerken van de clientconsole.
+[Meer informatie over de beschikbaarheid](../../installation/using/client-console-availability-for-windows.md) van de clientconsole.
 
 >[!NOTE]
 >
