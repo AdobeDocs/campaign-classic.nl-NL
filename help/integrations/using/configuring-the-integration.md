@@ -6,7 +6,7 @@ description: Leer hoe te om campagne-AEM integratie te vormen
 audience: integrations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: a157082070b22e3621cb81411a5ddde387fd5fcf
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 2%
@@ -52,7 +52,7 @@ U moet een beveiligingszone configureren voor deze operator om verbinding te mak
 
 >[!CAUTION]
 >
->We raden u ten zeerste aan een beveiligingszone in te stellen die is gewijd aan AEM om beveiligingsproblemen te voorkomen. Raadpleeg de Installatiehandleiding [a1/> voor meer informatie.](../../installation/using/configuring-campaign-server.md#defining-security-zones)
+>We raden u ten zeerste aan een beveiligingszone in te stellen die is gewijd aan AEM om beveiligingsproblemen te voorkomen. Raadpleeg de Installatiehandleiding [a1/> voor meer informatie.](../../installation/using/security-zones.md)
 
 Als uw instantie van de Campagne door Adobe wordt ontvangen, contacteer [Adobe klantenZorg](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team. Voer de onderstaande stappen uit als u campagne op locatie gebruikt:
 
