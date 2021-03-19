@@ -9,10 +9,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 42166334d361ffdac13842cd9d07ca7c9859bbb2
+source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 6%
+source-wordcount: '579'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->Als u een oudere versie van de integratie van Trekkers door authentificatie Auth gebruikt, **moet u naar Adobe I/O bewegen zoals hieronder beschreven**. De oude oAuth-verificatiemodus wordt op **30 april 2021** buiten gebruik gesteld. [Meer informatie](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
+>Als u een oudere versie van de integratie van Trekkers door authentificatie Auth gebruikt, **moet u naar Adobe I/O bewegen zoals hieronder beschreven**. De de authentificatiemodus van de Oudere Auth met Campagne met Campagne zal op 30 november 2021 worden gepensioneerd. [Meer informatie](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
 >Tijdens deze overgang naar [!DNL Adobe I/O] kunnen sommige inkomende triggers verloren gaan.
 
