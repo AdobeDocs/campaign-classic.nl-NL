@@ -1,15 +1,15 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Release 18.4
-description: Release 18.4
-audience: rn
-content-type: reference
-topic-tags: latest-release-notes
+title: Opmerkingen bij de release Campagne 18.4
+description: Opmerkingen bij de release voor campagne 18.4
+feature: null
+role: null
+level: null
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '2262'
+source-wordcount: '2267'
 ht-degree: 7%
 
 ---
@@ -34,11 +34,11 @@ ht-degree: 7%
 * Probleem met prestaties verholpen bij het verzenden van pushberichten. (NEO-11787)
 * Probleem verholpen waarbij webtracering niet werkte voor &#39;com.au&#39;-domeinen (NEO-4385).
 * Oplossing voor een probleem met de blokkering van clients dat zich kon voordoen bij het gebruik van complexe workflows. (NEO-11847)
-* Probleem verholpen met een Oracle-fout bij het opslaan van een nieuwe levering nadat een element van een specifiek schema was geselecteerd (NEO-11682).
-* Probleem verholpen bij het opvragen van een veld met tekens met accenten (FDA/Teradata). Met het externe account kunt u nu de codering wijzigen die wordt gebruikt voor de communicatie met het Teradata-stuurprogramma. (NEO-11818).
+* Probleem verholpen met een fout in het Oracle bij het opslaan van een nieuwe levering nadat een element van een specifiek schema was geselecteerd (NEO-11682).
+* Probleem verholpen bij het opvragen van een veld met tekens met accenten (FDA/Teradata). Met de externe account kunt u nu de codering wijzigen die wordt gebruikt voor de communicatie met het stuurprogramma voor Teradata. (NEO-11818).
 * Probleem met bijhouden bij het doorgeven van URL&#39;s in extra variabelen in een pushmelding verholpen dat kan leiden tot onjuiste of onjuiste gegevens die door de mobiele toepassing worden ontvangen. (NEO-11468, NEO-11960)
 * Probleem verholpen dat een weergaveprobleem veroorzaakte bij het gebruik van een verdeling van waarden met een koppeling 1:N. (NEO-11820)
-* Probleem verholpen waarbij bulkbelasting niet werkte op Teradata 16.
+* Probleem verholpen waardoor de bulklading niet op Teradata 16 kon werken.
 * De buffergrootte voor tijdstempel op Teradata is vergroot om problemen met de binding met 15.10-stuurprogramma te voorkomen.
 * Verbeterde het beheer van lange naamindexen die postupgrade-problemen kunnen veroorzaken.
 * Verbeterde beschikbare tijd voor gedeeld geheugen tijdens dood verwerken van kinderen (MTA).
@@ -59,7 +59,7 @@ ht-degree: 7%
 * Probleem verholpen bij het gebruik van gegevens die zijn opgeslagen in XML in een **[!UICONTROL Survey answers]**-workflowactiviteit. (NEO-10816)
 * Probleem verholpen bij het uitvoeren van de serverupgrade met build 8935.
 * Probleem verholpen waarbij nutteloze fouten in het postupgradelogboek werden weergegeven wanneer een **[!UICONTROL Survey answers]**-workflowactiviteit niet volledig was geconfigureerd.
-* FDA Teradata: Probleem verholpen met automatisch verhoogde velden en indexen in SQL-tabellen.
+* FDA-Teradata: Probleem verholpen met automatisch verhoogde velden en indexen in SQL-tabellen.
 
 ## Release 18.4.3 - build 8935{#release-18-4-3-build-8935}
 
@@ -134,7 +134,7 @@ ht-degree: 7%
 **Overige wijzigingen**
 
 * Er is een nieuwe modus beschikbaar voor het importeren van pakketten via de opdrachtregel, zodat ronde afhankelijkheden mogelijk zijn (niet aanbevolen voor grote pakketten). Zie de sectie &#39;Technische ontwikkelingen&#39; voor meer informatie. (NEO-8979)
-* Verbeterde prestaties voor het laden van grote hoeveelheden gegevens in Teradata en verholpen een probleem dat ervoor zorgde dat de juiste waarde van de in het logbestand verwerkte gegevens niet kon worden weergegeven. (NEO-10429)
+* De betere prestaties voor grote hoeveelheid gegevens die in Teradata worden geladen en verholpen een kwestie die verhinderde de juiste waarde van gegevens te tonen die in het logboek worden verwerkt. (NEO-10429)
 * Het importeren van soorten publiek uit Audience Manager werkt nu met gesplitste bestanden. Eerder werd alleen het laatste bestand van het segment geïmporteerd door de technische workflow van importSharedAudience. (NEO-10156)
 * In Windows is het standaardinstallatiepad van de Campagneserver gewijzigd. Wanneer u de installatie van de 64-bits versie start, is het standaardinstallatiepad nu: **C:\Program Files\Adobe\Adobe Campaign Classic v7** in plaats van **C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**
 * De standaard MX regels zijn verbeterd om meer domeinen te omvatten en productie te optimaliseren.
@@ -194,13 +194,13 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 **Patches**
 
 * Probleem met synchronisatie verholpen bij het repliceren van bezorgings- en trackinglogboeken van Adobe Campaign Standard naar Adobe Campaign Classic. (NEO-10023)
-* Probleem opgelost met de verwerking van Error and Log tables in Teradata toen een ETL-workflow werd hervat na een fout bij een snelle laadbewerking. De tabellen Error en Log worden nu op de juiste wijze verwijderd telkens wanneer de workflow wordt hervat. (NEO-10672)
+* Probleem verholpen met de afhandeling van Error- en Log-tabellen in Teradata toen een ETL-workflow werd hervat na een fout bij een snelle laadbewerking. De tabellen Error en Log worden nu op de juiste wijze verwijderd telkens wanneer de workflow wordt hervat. (NEO-10672)
 * Probleem verholpen na upgrade waarbij het Hive-pakket automatisch werd geïnstalleerd (nodig voor Hadoop) als het FDA-pakket is geïnstalleerd. (NEO-10592)
 * Probleem verholpen waarbij ongeldige domeinen werden behandeld als een **Niet gedefinieerd** fout. (NEO-10248)
 * Probleem verholpen waarbij logboekbestanden in de tabel deliveryLogStats werden gedupliceerd bij het verzenden van Anroid-pushleveringen. (NEO-10234)
 * Probleem verholpen waarbij bepaalde streepjescode-indelingen niet leesbaar werden door streepjescodescanners. (NEO-10125)
 * Probleem verholpen met de JavaScript-functie urlEncode wanneer niet-ASCII-tekens werden gebruikt. Zie de sectie &#39;Technische ontwikkelingen&#39; voor meer informatie. (NEO-10123)
-* Probleem verholpen bij het uitvoeren van een query inclusief sha256-functies in Teradata-databases. (NEO-10119)
+* Probleem verholpen bij het uitvoeren van een query, waaronder sha256-functies op Teradata-databases. (NEO-10119)
 * De fouten van het werkschemamegeheugen die in de activiteit SalesForce konden voorkomen wanneer het gebruiken van zeer grote lijsten SalesForce. (NEO-9900)
 * Probleem verholpen met de optie **complement** genereren bij het opgeven van workflowactiviteiten bij gebruik van FDA. (NEO-9878)
 * Probleem verholpen waarbij de meetgegevens **Verwerkt** en **Success** niet werden bijgewerkt op de marketinginstantie bij gebruik van midsourcing. (NEO-9454)
