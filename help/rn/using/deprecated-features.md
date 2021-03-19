@@ -2,17 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Verouderde en verwijderde functies van Campaign Classic
-description: Deze pagina bevat de verouderde en verwijderde functies van Adobe Campaign Classic
-audience: rn
-content-type: reference
-topic-tags: campaign-classic-deprecated-features
-internal: n
-snippet: y
+description: Deze pagina bevat vervangen en verwijderde functies in Adobe Campaign Classic
+feature: Overzicht
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
-source-git-commit: f78fa94fb4fb9236222886a167a46d252497b2aa
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '1712'
-ht-degree: 94%
+source-wordcount: '1716'
+ht-degree: 93%
 
 ---
 
