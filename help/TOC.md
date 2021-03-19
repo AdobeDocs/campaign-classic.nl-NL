@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentatie
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2473'
 ht-degree: 55%
 
 ---
@@ -651,7 +651,7 @@ ht-degree: 55%
       + [Tijdzonebeheer](installation/using/time-zone-management.md)
       + [Een server voor midsourcing installeren](installation/using/mid-sourcing-server.md)
    + Campagne implementeren (op locatie) {#initial-configuration}
-      + [Initiële configuratie](installation/using/about-initial-configuration.md)
+      + [Belangrijkste stappen](installation/using/about-initial-configuration.md)
       + [Een instantie maken en aanmelden](installation/using/creating-an-instance-and-logging-on.md)
       + [De database maken en configureren](installation/using/creating-and-configuring-the-database.md)
       + [Campagneserver configureren](installation/using/campaign-server-configuration.md)
