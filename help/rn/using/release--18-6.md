@@ -1,15 +1,18 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Release 18.6
-description: Release 18.6
+title: Opmerkingen bij de release Campagne 18.6
+description: Opmerkingen bij de release voor campagne 18.6
 audience: rn
 content-type: reference
 topic-tags: latest-release-notes
+feature: Overzicht
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '803'
 ht-degree: 6%
 
 ---
@@ -37,7 +40,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> Query-streepvorming<br /> </td> 
-   <td> <p>Wanneer meerdere Campagnegebruikers verbinding maken met dezelfde externe FDA Teradata-account, kunt u nu een queryband (sleutel-/waardeparen) doorgeven die specifiek is voor elke gebruiker. Elke keer dat een campagnegebruiker een query uitvoert op de Teradata-database, kan Adobe Campaign nu metagegevens verzenden die aan de gebruiker zijn gekoppeld. Deze gegevens, die bestaan uit een lijst met sleutels en waarden, kunnen vervolgens door Teradata-beheerders worden gebruikt voor controledoeleinden of om toegangsrechten te beheren, bijvoorbeeld.</p><p>Raadpleeg de <a href="../../installation/using/external-accounts.md">gedetailleerde documentatie</a> voor meer informatie.</p> </td>
+   <td> <p>Wanneer de veelvoudige gebruikers van de Campagne met de zelfde FDA Teradata externe rekening verbinden, kunt u een vraagband (sleutel/waardeparen) nu overgaan specifiek voor elke gebruiker. Elke keer dat een campagnegebruiker een query uitvoert op de Teradata-database, kan Adobe Campaign nu metagegevens verzenden die aan de gebruiker zijn gekoppeld. Deze gegevens, die uit een lijst van sleutels en waarden bestaan kunnen dan door de beheerders van Teradata voor controledoeleinden of om toegangsrechten, bijvoorbeeld te beheren worden gebruikt.</p><p>Raadpleeg de <a href="../../installation/using/external-accounts.md">gedetailleerde documentatie</a> voor meer informatie.</p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -60,12 +63,12 @@ ht-degree: 6%
 
 Query-streepjescodes
 
-Een specifieke sleutel (PROXYUSER of PROXYROLE) wordt gebruikt om een Teradata-gebruiker of -rol te koppelen aan een Campagnegebruiker. Er is een nieuwe machtiging toegevoegd om deze proxygebruiker/rol te gebruiken. U moet de GRANT CONNECT via het toegangsrecht toevoegen aan de databaseaccount (de die is gedefinieerd in de externe Teradata-account).
+Een specifieke sleutel (PROXYUSER of PROXYROLE) wordt gebruikt om een gebruiker of een rol van de Teradata aan een gebruiker van de Campagne te associëren. Er is een nieuwe machtiging toegevoegd om deze proxygebruiker/rol te gebruiken. U moet de GRANT CONNECT door toegangsrecht tot de gegevensbestandrekening (die in de Teradata externe rekening wordt bepaald) toevoegen.
 
-Er is een nieuw tabblad toegevoegd aan de externe Teradata-accounts. Het tabblad **[!UICONTROL Query banding]** bevat de volgende opties:
+Er is een nieuw tabblad toegevoegd aan de externe accounts van Teradata. Het tabblad **[!UICONTROL Query banding]** bevat de volgende opties:
 
 * **[!UICONTROL Active]**: Schakel dit selectievakje in om de functie te activeren.
-* **[!UICONTROL Default]**: Voer een standaardquerybinding in die wordt gebruikt als een gebruiker geen querybinding heeft. Als er geen standaardquerybanding is gedefinieerd, kunnen de gebruikers die geen querybanding hebben, Teradata niet gebruiken.
+* **[!UICONTROL Default]**: Voer een standaardquerybinding in die wordt gebruikt als een gebruiker geen querybinding heeft. Als er geen standaard bepaalde vraagband is, zullen de gebruikers die geen bijbehorende vraagband hebben geen Teradata kunnen gebruiken.
 * **[!UICONTROL Users]**: voor elke gebruiker, specificeer een vraagband. U kunt zoveel sleutel-/waardeparen toevoegen als u nodig hebt. Bijvoorbeeld: &quot;priority=1;workload=high;&quot;
 
 Raadpleeg de volgende artikelen voor meer informatie over querybinding:
