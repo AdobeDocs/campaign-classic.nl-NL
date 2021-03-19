@@ -3,14 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: Laatste release
 description: Nieuwste opmerkingen bij de release van Campaign Classic
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+feature: Overzicht
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
-source-git-commit: 14513d5ecbfdd5637b764c8f19bc01358e63c130
+source-git-commit: d1796224df95663c39fa5975e88c03a923c94878
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 99%
+source-wordcount: '908'
+ht-degree: 98%
 
 ---
 
@@ -82,7 +82,7 @@ Als u geïnteresseerd bent in deelname aan deze gesloten bèta, vult u dit [form
 IOB-090020 Error in SSL library: 'IOB-090013 error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed (code 336134278)'
 ```
 
-* Er is een probleem opgelost waardoor geen nieuwe verzendingen met personalisatie van doelgegevens konden worden verzonden.
+* Probleem verholpen waardoor geen nieuwe leveringen met doelgegevenspersonalisatie konden worden verzonden (NEO-30323).
 * Er is een probleem opgelost waarbij verschillende crashes optraden in de marketinginstantie waardoor dumpbestanden werden veroorzaakt.
 * Er is een probleem opgelost waarbij de **Tracking**-workflow mislukte met de volgende fout (NEO-25206):
 
