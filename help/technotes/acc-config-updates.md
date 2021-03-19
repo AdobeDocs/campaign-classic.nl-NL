@@ -6,7 +6,7 @@ description: TechNote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 587daebd8a779bb9d0917fd2dfab4144494809e3
+source-git-commit: cac3e22dd9aa8220f6980bef0d57c11d47c91163
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 7%
@@ -47,7 +47,7 @@ Als uw omgeving zich op een lagere build bevindt dan de hieronder vermelde, heef
 
 U moet een upgrade uitvoeren naar een van de nieuwere builds die hierboven worden vermeld.
 
-* Als hybride klant zal Adobe de mid-sourcing instantie aan de nieuwe versie bevorderen en u wordt hoogst geadviseerd om hun marketing instantie ook te bevorderen.
+* Als hybride klant, zal Adobe de marketing instantie aan de nieuwe versie bevorderen en u wordt hoogst geadviseerd om hun marketing instantie ook te bevorderen.
 
    De nieuwe build is compatibel met minstens versie Campaign Classic 17.9, maar om een eventuele veiligheidstekortkomingen te voorkomen, raadt Adobe u ten zeerste aan alle instanties te upgraden naar een nieuwe build. 
 
