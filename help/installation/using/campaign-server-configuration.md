@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 1%
@@ -68,7 +68,7 @@ U kunt de opslagdirectory (**var** directory) van Adobe Campaign-gegevens (logbe
 
    Raadpleeg [Parameters aanpassen](../../installation/using/installing-packages-with-linux.md#personalizing-parameters) voor meer informatie.
 
-## Bezig met inschakelen van processen {#enabling-processes}
+## Processen {#enabling-processes} inschakelen
 
 Adobe Campaign-processen op de server worden ingeschakeld (en uitgeschakeld) via de bestanden **config-default.xml** en **`config-<instance>.xml`**.
 
@@ -122,6 +122,6 @@ De leveringsparameters moeten worden geconfigureerd in de map **serverConf.xml**
    <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
    ```
 
-De andere leveringsparameters in dit bestand worden weergegeven in [Leveringsparameters aanpassen](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
+De andere leveringsparameters beschikbaar in dit bestand worden weergegeven in [Leveringsparameters aanpassen](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
 Raadpleeg ook [E-mailleverbaarbaarheid](../../installation/using/email-deliverability.md).
