@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: Aan de slag met upgrades
 description: Meer informatie over Campaign Classic-upgrades
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+feature: Overzicht
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '435'
 ht-degree: 100%
 
 ---
@@ -55,7 +55,7 @@ Als on-premise gebruiker kunt u de upgrade zelf uitvoeren. Hiervoor moet u de [n
 
 ### Gold Standard{#upgrade-for-gold-standard-users}
 
-Als gehoste Gold Standard-gebruiker profiteert u automatisch van de Gold Standard-upgrade met de [nieuwste GA Gold Standard-build](../../rn/using/gold-standard.md#gs-11) zonder actie te hoeven ondernemen. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html).
+Als gehoste Gold Standard-gebruiker profiteert u automatisch van de Gold Standard-upgrade met de [nieuwste GA Gold Standard-build](../../rn/using/gold-standard.md#gs-11) zonder actie te hoeven ondernemen. [Meer informatie](../../rn/using/gs-overview.md).
 
 >[!NOTE]
 >De compatibiliteitsmatrix voor Gold Standard is beschikbaar in de [GA-compatibiliteitsmatrix](../../rn/using/compatibility-matrix-gs.md).
