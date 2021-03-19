@@ -1,29 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Gold Standard-release
-description: Opmerkingen bij de release van Campaign Classic Gold Standard
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+title: Opmerkingen bij de release Gold Standard
+description: Opmerkingen bij de release Campaign Classic Gold Standard
+feature: Overzicht
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
-source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
+source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 88%
+source-wordcount: '1055'
+ht-degree: 85%
 
 ---
 
 
 # Gold Standard-releases{#gold-standard}
 
-Gold Standard is de ondersteuningsrelease van Campaign Classic voor de lange termijn. Als gehoste Gold Standard-gebruiker profiteert u automatisch van de Gold Standard-upgrade met de nieuwste stabiele versie zonder actie te hoeven ondernemen. On-Premise- en hybride klanten kunnen ook profiteren van Gold Standard-releases.
-
-Als u van een oude build migreert, adviseren wij u eerst bij te werken naar deze versie.
-
-Deze pagina vermeldt de Gold Standard-releases.
-
-Raadpleeg [dit artikel](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html)voor meer informatie over het Campaign Gold Standard-programma.
+Deze pagina vermeldt de Gold Standard-releases. Meer informatie over Campagne Gold Standard [op deze pagina](gs-overview.md).
 
 ## ![](assets/do-not-localize/green_2.png) De Gold Standard 11-release{#gs-11}
 
@@ -46,7 +40,7 @@ _22 december 2020_
 >
 > * Deze versie wordt geleverd met een nieuw verbindingsprotocol: Als u verbinding maakt met Campagne via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **30 juni 2021**.
 > * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
-> * Als u de Experience Cloud Triggers integratie door authentificatie Auth gebruikt, moet u naar Adobe I/O gaan zoals [in deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De oude oAuth-verificatiemodus wordt op **30 april 2021** buiten gebruik gesteld.
+> * Als u de Experience Cloud Triggers integratie door authentificatie Auth gebruikt, moet u naar Adobe I/O gaan zoals [in deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde Auth authentificatiemodus met Campagne zal op **30 November, 2021** worden gepensioneerd.
 
 >
 >
