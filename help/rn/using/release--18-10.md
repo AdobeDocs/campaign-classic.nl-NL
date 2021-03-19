@@ -1,15 +1,15 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Release 18.10
-description: Release 18.10
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+title: Opmerkingen bij de release van campagne 18.10
+description: Opmerkingen bij de release voor campagne 18.10
+feature: Overzicht
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '2366'
+source-wordcount: '2375'
 ht-degree: 7%
 
 ---
@@ -220,7 +220,7 @@ Deze indexveranderingen kunnen tot een toename van de tijd leiden die wordt vere
 * Probleem verholpen waarbij het zoeken naar een ontvanger in het scherm **Profielen en Doel** niet kon worden voorkomen. (NEO-8228)
 * Probleem verholpen waarbij een time-outfout kon optreden bij het openen van de map Gebeurtenisgeschiedenis in het geval van een groot aantal records. (NEO-11738)
 * Probleem opgelost waarbij ontvangers van lijnbezorging onjuist werden geretourneerd als &quot;Onbereikbaar&quot;. (NEO-10833)
-* Probleem verholpen bij het uitvoeren van een workflowquery met een extra kolom op Oracle. (NEO-11615)
+* Probleem verholpen bij het uitvoeren van een workflowquery met een extra kolom op het Oracle. (NEO-11615)
 * Er is een verbetering aangebracht om ervoor te zorgen dat gesloten verbindingen niet te lang in de verbindingspool worden gehouden. (NEO-11392)
 * Probleem verholpen bij het gebruik van een doelworkflowactiviteit (query, data loading (RDBMS) enz.) via FDA verbonden met een externe Oracle-tabel met UTF8-tekens (in de tabelnaam, veldnaam enz.) en die ook een primaire-sleutelbeperking met een door het systeem gegenereerde standaardbeperkingsnaam bevatten. (NEO-10714)
 * Probleem opgelost waarbij de HTML-inhoud van een levering niet kon worden verwijderd. (NEO-11327)
@@ -233,11 +233,11 @@ Deze indexveranderingen kunnen tot een toename van de tijd leiden die wordt vere
 * Probleem verholpen die optrad bij het gebruik van de activiteit Gegevens bij het importeren van een kolom met het gegevenstype &quot;time&quot;: het tijdscheidingsteken wordt opnieuw ingesteld, zelfs nadat het is verwijderd. (NEO-10743)
 * Probleem verholpen waardoor de map Deliveries niet kon worden weergegeven in de lijst met uitvoeringsmappen in de leveringseigenschappen tijdens het bewerken van een terugkerende levering. (NEO-11094)
 * Probleem verholpen waardoor het venster Weergavepopulatie niet meer dan 200 records kon weergeven als het resulterende doel van een query-activiteit in een workflow. (NEO-11195)
-* Probleem verholpen in Oracle waarbij een DELETE-query niet kon worden uitgevoerd met meer dan 1000 elementen geselecteerd. (NEO-11171)
+* Probleem verholpen in Oracle waardoor een DELETE-query niet kon worden uitgevoerd met meer dan 1000 geselecteerde elementen. (NEO-11171)
 * Probleem verholpen waarbij URL&#39;s werden gecodeerd als bijgehouden URL&#39;s in de aanvullende parameters van de levering van een Android-pushmelding. (NEO-11468)
 * Oplossing voor een scriptfout die optrad in het rapport Gebruikersactiviteiten bij het instellen van de parameters op &quot;Intervallen van één dag&quot; en &quot;Openen&quot;. (NEO-11655)
 * Probleem verholpen die optrad wanneer verbinding werd gemaakt met de server voor midsourcing of met Message Center via een geverifieerde webproxy. (NEO-11309)
-* Oplossing voor een fout van Oracle die optrad wanneer een nieuwe leveringssamenstelling na het selecteren van een element van een specifiek schema **op basis van een SQL mening** werd bewaard. (NEO-11682)
+* Oplossing voor een fout in het Oracle die optrad wanneer een nieuwe leveringscompositie werd opgeslagen na het selecteren van een element van een specifiek schema **gebaseerd op een SQL-weergave**. (NEO-11682)
 * Probleem verholpen waarbij bestanden met fout positieven werden gegenereerd die een ZIP-bestand met een CSV-bestand verwerkten via een bestandsactiviteit voor laden met de optie Decompressie.
 * xtkjoblog wordt nu gezuiverd door de opschoonfunctie.
 
