@@ -6,7 +6,7 @@ description: TechNote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 849a95c718f9dc58aeabc8a49d3bf8290ea79b86
+source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 7%
@@ -25,6 +25,7 @@ Als klant op locatie/hybride dient u om beveiligingsredenen een upgrade uit te v
 >[!NOTE]
 >
 >Voor elke vraag over deze wijzigingen neemt u contact op met [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+
 
 ## Beveiligingsupdates
 
@@ -101,7 +102,7 @@ Zodra alle instanties worden bevorderd, moet de Console van de Cliënt ook aan d
 
 ## Integratie met Experience Cloud Triggers
 
-De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt. De de integratieauthentificatie van trekkers, oorspronkelijk gebaseerd op Auth authentificatieopstelling om tot pijpleiding toegang te hebben, is bewogen aan Adobe I/O. Deze wordt ingetrokken op **30 april 2021**. [Meer informatie](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
+De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt. De de integratieauthentificatie van trekkers, oorspronkelijk gebaseerd op de authentificatie van AUTH om tot pijpleiding toegang te hebben, is bewogen aan Adobe I/O. Deze wordt op **30 november 2021** ingetrokken. [Meer informatie](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
 **Heb je invloed op?**
 
