@@ -6,9 +6,9 @@ description: TechNote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: 587daebd8a779bb9d0917fd2dfab4144494809e3
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1027'
 ht-degree: 7%
 
 ---
@@ -72,11 +72,11 @@ De nieuwste Gold Standard 11-build verhelpt een regressie die het gebruik van be
 
 Adobe Identity Service (IMS) biedt geen ondersteuning meer voor oude Internet Explorer-versies vanaf **30 juni 2021**. [Meer informatie](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
-De Campagne Client Console is bijgewerkt om verenigbaarheid met Adobe IMS in de volgende versies van de Campagne te verzekeren:
+De Campagne Client Console is bijgewerkt om verenigbaarheid met Adobe IMS te verzekeren.
 
 **Heb je invloed op?**
 
-Als u via een Adobe ID](../integrations/using/about-adobe-id.md) verbinding maakt met Campagne via Adobe Identity Service (IMS), is een upgrade naar een van de onderstaande nieuwe versies verplicht:[
+Als u via een Adobe ID](../integrations/using/about-adobe-id.md) via Adobe Identity Management Service (IMS) verbinding maakt met Campagne, is een upgrade naar een van de onderstaande nieuwe versies verplicht:[
 
 * Gold Standard 11. [Meer informatie](../rn/using/gold-standard.md)
 * Release van campagne 21.1.1. [Meer informatie](../rn/using/latest-release.md)
