@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 4%
@@ -31,7 +31,7 @@ nlserver config -addinstance:instance/masques DNS[/lang]
 
 Met de opdracht **nlserver config -addinstance:instance1/demo*/eng** kunt u een instantie maken met de naam **instance1** in het Engels met de DNS-maskerdemo*.
 
-## Database {#declaring-a-database} declareren
+## Een database {#declaring-a-database} declareren
 
 U kunt een bestaande database aan een instantie koppelen via de opdrachtregel door de volgende syntaxis te gebruiken:
 
