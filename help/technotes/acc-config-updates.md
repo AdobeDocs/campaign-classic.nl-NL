@@ -6,9 +6,9 @@ description: TechNote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
+source-git-commit: 9b4b1bb5d016df8a7933ac0b96c6f110b0c4d7ac
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1025'
 ht-degree: 7%
 
 ---
@@ -60,13 +60,13 @@ U moet een upgrade uitvoeren naar een van de nieuwere builds die hierboven worde
 
 ## Update voor clientconsole voor campagne
 
-De nieuwste Gold Standard 11-build verhelpt een regressie die het gebruik van bepaalde componenten van de Clien Console, zoals de datumkiezer en het beheer van afbeeldingen in leveringen, heeft verhinderd. Consoleupgrade is verplicht.
+De nieuwste Gold Standard 11-build verhelpt een regressie die het gebruik van bepaalde componenten van de Client Console, zoals de datumkiezer en het beheer van afbeeldingen in leveringen, heeft verhinderd. Consoleupgrade is verplicht.
 
 [Meer informatie](../rn/using/gold-standard.md).
 
 >[!NOTE]
 >
->Deze correctie vindt u ook in de nieuwste [19.1.8](../rn/using/release--19-1.md#release-19-1-8-build-9039), [19.2.4](../rn/using/release--19-2.md#release-19-2-4-build-9082) en [20.1.4](../rn/using/release--20-1.md#release-20-1-4-build-9126). De nieuwe clientconsole voor andere versies is binnenkort beschikbaar.
+>Deze correctie is ook beschikbaar in de recentste [19.1.8](../rn/using/release--19-1.md#release-19-1-8-build-9039), [19.2.4](../rn/using/release--19-2.md#release-19-2-4-build-9082) en [20.1.4](../rn/using/release--20-1.md#release-20-1-4-build-9126).
 
 ## Adobe Identity Management System (IMS)-update
 
