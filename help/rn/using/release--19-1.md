@@ -7,9 +7,9 @@ feature: null
 role: null
 level: null
 translation-type: tm+mt
-source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
+source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
 workflow-type: tm+mt
-source-wordcount: '3134'
+source-wordcount: '3200'
 ht-degree: 20%
 
 ---
@@ -18,6 +18,16 @@ ht-degree: 20%
 # Release 19.1{#release-19-1}
 
 ## ![](assets/do-not-localize/limited_2.png) Release 19.1.8 - build 9039 {#release-19-1-8-build-9039}
+
+_22 maart 2021_
+
+* Oplossing voor een regressie waardoor bepaalde componenten van de console niet konden worden gebruikt, zoals de datumkiezer en het beheer van afbeeldingen in leveringen. (NEO-31453, NEO-31454)
+
+**Alleen consoleverbetering is verplicht. Er is geen serverupgrade vereist.**
+
+>[!NOTE]
+>
+> Verbind met [Adobe de Distributie van de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) om de nieuwe versie te downloaden. Leer hoe u de console-update [op deze pagina ](../../installation/using/client-console-availability-for-windows.md) aan alle eindgebruikers kunt voorstellen.
 
 _16 december 2020_
 
