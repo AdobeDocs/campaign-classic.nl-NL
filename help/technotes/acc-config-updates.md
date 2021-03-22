@@ -6,9 +6,9 @@ description: TechNote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 9b4b1bb5d016df8a7933ac0b96c6f110b0c4d7ac
+source-git-commit: b036dccc012b1948837549492d9a1b0726af459d
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1068'
 ht-degree: 7%
 
 ---
@@ -43,6 +43,8 @@ Als uw omgeving zich op een lagere build bevindt dan de hieronder vermelde, heef
 * Release van campagne 19.2.4. [Meer informatie](../rn/using/release--19-2.md)
 * Release van campagne 19.1.8. [Meer informatie](../rn/using/release--19-1.md)
 
+Leer hoe u uw versie [in deze sectie ](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) controleert.
+
 **Hoe kan ik bijwerken?**
 
 U moet een upgrade uitvoeren naar een van de nieuwere builds die hierboven worden vermeld.
@@ -60,13 +62,12 @@ U moet een upgrade uitvoeren naar een van de nieuwere builds die hierboven worde
 
 ## Update voor clientconsole voor campagne
 
-De nieuwste Gold Standard 11-build verhelpt een regressie die het gebruik van bepaalde componenten van de Client Console, zoals de datumkiezer en het beheer van afbeeldingen in leveringen, heeft verhinderd. Consoleupgrade is verplicht.
+In de volgende versies wordt een regressie verholpen die het gebruik van bepaalde componenten van de clientconsole, zoals de datumkiezer en het beheer van afbeeldingen in leveringen, heeft verhinderd. **Upgrade van console** is verplicht.
 
-[Meer informatie](../rn/using/gold-standard.md).
-
->[!NOTE]
->
->Deze correctie is ook beschikbaar in de recentste [19.1.8](../rn/using/release--19-1.md#release-19-1-8-build-9039), [19.2.4](../rn/using/release--19-2.md#release-19-2-4-build-9082) en [20.1.4](../rn/using/release--20-1.md#release-20-1-4-build-9126).
+* Nieuwste Gold Standard 11 build 9032@10c2709. [Meer informatie](../rn/using/gold-standard.md)
+* Release van campagne 20.1.4. [Meer informatie](../rn/using/release--20-1.md)
+* Release van campagne 19.2.4. [Meer informatie](../rn/using/release--19-2.md)
+* Release van campagne 19.1.8. [Meer informatie](../rn/using/release--19-1.md)
 
 ## Adobe Identity Management System (IMS)-update
 
@@ -87,6 +88,8 @@ Als u via een Adobe ID](../integrations/using/about-adobe-id.md) via Adobe Ident
 * Release van campagne 19.1.8. [Meer informatie](../rn/using/release--19-1.md)
 
 Deze versies worden geleverd met een nieuw verbindingsprotocol: De upgrade is verplicht voor zowel de Campagneserver als de Clientconsole om verbinding te kunnen maken met Campagne na **30 juni 2021**.
+
+Leer hoe u uw versie [in deze sectie ](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) controleert.
 
 **Hoe kan ik bijwerken?**
 
@@ -116,6 +119,8 @@ U moet een upgrade uitvoeren naar een van de nieuwe versies die hieronder worden
 * Release van campagne 20.2.4. [Meer informatie](../rn/using/release--20-2.md)
 * Release van campagne 19.1.8. [Meer informatie](../rn/using/release--19-1.md)
 
+Leer hoe u uw versie [in deze sectie ](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) controleert.
+
 **Hoe kan ik bijwerken?**
 
 Als de exemplaren zijn bijgewerkt naar een nieuwere versie, moeten alle klanten de [procedure volgen en overschakelen naar de nieuwe verificatiemodus](../integrations/using/configuring-adobe-io.md). Dit vereist om het nieuwe teken van Adobe I/O te produceren en het in de implementatie te gebruiken.  
@@ -133,6 +138,8 @@ De Apple Push Notification service (APNs) biedt vanaf **31 maart 2021** geen ond
 **Heeft u gevolgen?**
 
 Als uw instanties op een **oudere versie dan Campagne 21.1,** lopen en dupberichten met het erfenis binaire protocol van Apple verzenden, moet u aan de op HTTP/2-Gebaseerde leverancier API van APNs bijwerken.
+
+Leer hoe u uw versie [in deze sectie ](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) controleert.
 
 **Hoe kan ik bijwerken?**
 
@@ -157,7 +164,6 @@ Als gehoste klant is geen actie nodig: Adobe heeft het nieuwe basiscertificaat a
 Als klant op locatie/hybride dient u uw configuratie bij te werken voor een naadloze overgang **vóór 29 maart 2021**.
 
 [Leer hoe u het nieuwe certificaat](ios-certificate-update.md) invoegt.
-
 
 ## Nuttige koppelingen
 
