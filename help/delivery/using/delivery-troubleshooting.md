@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: f3ba836bbb5a5f82d6a7868dcb15edc8e61b9a5b
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Nadat u op de knop **[!UICONTROL Send]** hebt geklikt, lijkt het langer te duren
 
 * Throttling zou binnen Adobe Campaign MTA kunnen voorgekomen zijn. Dit wordt veroorzaakt door:
 
-   * Gebeëindigde berichten (**[!UICONTROL quotas met]** bericht): er is voldaan aan de quota die zijn aangegeven in de declaratieve MX-regels die in de campagne zijn vastgesteld. Raadpleeg [deze pagina](../../delivery/using/deliverability-faq.md) voor meer informatie over dit bericht. Meer over MX regels leren, verwijs naar [deze pagina](../../delivery/using/technical-recommendations.md#mx-rules).
+   * Gebeëindigde berichten (**[!UICONTROL quotas met]** bericht): er is voldaan aan de quota die zijn aangegeven in de declaratieve MX-regels die in de campagne zijn vastgesteld. Raadpleeg [deze pagina](../../delivery/using/deliverability-faq.md) voor meer informatie over dit bericht. Meer over MX regels leren, verwijs naar [deze sectie](../../installation/using/email-deliverability.md#about-mx-rules).
 
    * Gebeëindigde berichten (**[!UICONTROL dynamic flow control]** bericht): Campagne MTA heeft fouten ontmoet wanneer het proberen om berichten voor bepaalde ISP te leveren die een vertraging veroorzaakt om te grote van een foutendichtheid te vermijden en zo potentiële lijst van gewezen personen onder ogen te zien.
 
