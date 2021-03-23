@@ -7,10 +7,10 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 99%
+source-wordcount: '527'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 99%
 
 Dit document bevat een lijst met alle systemen en onderdelen die worden ondersteund voor [de nieuwste build](../../rn/using/latest-release.md) van **Adobe Campaign Classic**. Producten en versies die geen deel uitmaken van deze lijst, zijn niet compatibel met Adobe Campaign.
 
-Raadpleeg de [Gold Standard-compatibiliteitsmatrix](../../rn/using/compatibility-matrix-gs.md) als u Gold Standard gebruikt.
+Als u een [!DNL Gold Standard] gebruiker bent, verwijs naar [[!DNL Gold Standard] Verenigbaarheidsmatrijs](../../rn/using/compatibility-matrix-gs.md).
 
 ## Belangrijke opmerkingen{#important-notes}
 
