@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '2015'
+source-wordcount: '2034'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ Adobe Campaign wordt regelmatig bijgewerkt. Als u bekend bent met onze gepublice
 
 Het is essentieel dat onze klanten de meest recente versie van Adobe Campaign uitvoeren. Het staat ook Adobe toe om veel efficiënter te helpen in het geval u op kwesties loopt - het identificeren van, het reproduceren van en het bevestigen van een kwestie op een oude bouwstijl typisch meer tijd vergt, om niet te vermelden dat sommige kwesties u zou kunnen ontmoeten reeds zeer goed in een recente bouwstijl zijn opgelost.
 
-Daarom zijn we begonnen met het programma [Gold Standard](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html) om samen te werken met onze klanten om hun omgevingen proactief en regelmatig te upgraden.
+[!DNL Gold Standard] is de Campaign Classic-supportrelease voor de lange termijn. Als gehoste [!DNL Gold Standard] gebruiker, profiteert u automatisch van [!DNL Gold Standard] verbetering met de recentste stabiele versie zonder enige actie. Klanten op locatie en Hybride kunnen ook profiteren van [!DNL Gold Standard]-releases. Als u van een oude build migreert, adviseren wij u eerst bij te werken naar deze versie. [Meer informatie](../../rn/using/gs-overview.md).
 
 ## Wat is een bouwstijlverbetering?
 
@@ -209,4 +209,4 @@ alle inhoud wordt weergegeven en weergegeven.
 * [Een build-upgrade uitvoeren](../../production/using/build-upgrade.md)
 * [Opmerkingen bij de release Campaign Classic](../../rn/using/rn-overview.md)
 * [Help- en ondersteuningsopties voor Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html)
-* [Gold Standard-programma](https://helpx.adobe.com/campaign/kb/gold-standard.html)
+* [[!DNL Gold Standard] programma](../../rn/using/gs-overview.md)
