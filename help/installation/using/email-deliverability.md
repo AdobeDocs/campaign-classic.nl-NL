@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: fd6195ca447fa0345189f3153f44ad2f9a067210
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '2973'
+source-wordcount: '2993'
 ht-degree: 0%
 
 ---
@@ -25,9 +25,9 @@ In de volgende sectie vindt u een overzicht van de configuratie die is vereist v
 >
 >Sommige configuraties kunnen slechts door Adobe voor plaatsingen worden uitgevoerd die door Adobe worden ontvangen, bijvoorbeeld, om tot de server en de dossiers van de instantieconfiguratie toegang te hebben. Raadpleeg de sectie [Modellen hosten](../../installation/using/hosting-models.md) of [deze pagina](../../installation/using/capability-matrix.md) voor meer informatie over de verschillende implementaties.
 
-Voor meer informatie over de concepten en beste praktijken met betrekking tot leverability, verwijs naar dit [sectie](../../delivery/using/about-deliverability.md).
+Raadpleeg dit [gedeelte](../../delivery/using/about-deliverability.md) voor meer informatie over de concepten en aanbevolen procedures met betrekking tot de leverbaarbaarheid met Adobe Campaign.
 
-Alle technische aanbevelingen met betrekking tot het efficiënt verzenden en ontvangen van e-mails door een Adobe Campaign-platform zijn beschikbaar in [sectie](../../delivery/using/technical-recommendations.md).
+Raadpleeg de [Handleiding voor best practices op het gebied van aflevering van Adobe voor een diepgaandere analyse van de afleverbaarheid, inclusief alle technische aanbevelingen met betrekking tot het efficiënt verzenden en ontvangen van e-mails door een Adobe-platform.](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)
 
 ## Werkwijze {#operating-principle}
 
