@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: c64b6eccd0ad45ebcf4ecc18150f4409f5c66bc2
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '1880'
-ht-degree: 2%
+source-wordcount: '1892'
+ht-degree: 3%
 
 ---
 
 
-# Verzenden met de verbeterde MTA {#sending-with-enhanced-mta}
+# Verzenden met de Enhanced MTA {#sending-with-enhanced-mta}
 
 De **Adobe Campaign Enhanced MTA** (Mail Transfer Agent) biedt een geüpgrade verzendende infrastructuur die verbeterde prestaties, reputatie, doorvoer, rapportering, stuiteringsafhandeling, IP-opruiming en beheer van verbindingsinstellingen mogelijk maakt.
 
@@ -152,7 +152,7 @@ Zie [deze sectie](../../delivery/using/steps-sending-the-delivery.md#defining-va
 ### DKIM-ondertekening
 
 DKIM (DomainKeys Identified Mail) e-mailverificatie wordt ondertekend door de Enhanced MTA. DKIM-signing door de native Campagne MTA zal worden uitgezet binnen de beheerlijst van het Domein als deel van de Verbeterde verbetering MTA.
-Zie [deze sectie](../../delivery/using/technical-recommendations.md#dkim) voor meer informatie over DKIM.
+Voor meer op DKIM, zie [de Gids van de Beste praktijken van de Levering van de Adobe ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Leveringssuccesrapportage
 
