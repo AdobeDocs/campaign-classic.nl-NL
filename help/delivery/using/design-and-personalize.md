@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 2aa1a1c5da7b552cae916885c011aa4aaf9b61db
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1278'
 ht-degree: 7%
 
 ---
@@ -114,7 +114,7 @@ Controleer de volgende elementen om algemene opmaakfouten te voorkomen:
 
 * Gebruik van **geoorloofde tekens** in e-mails: De lijst met geldige tekens voor e-mailadressen wordt gedefinieerd in de optie &quot;XtkEmail_Characters&quot;. Leer hoe te om tot de opties [in deze sectie ](../../installation/using/configuring-campaign-options.md) toegang te hebben. Adobe Campaign moet in Unicode zijn geïnstalleerd om speciale tekens correct te kunnen verwerken.
 
-* Configuratie van **E-mailverificatie**: zorg ervoor dat de e-mailkopteksten de DKIM-handtekening bevatten. DKIM (Domeinsleutels Identified Mail) authentificatie staat de ontvangende e-mailserver toe om te verifiëren dat een bericht inderdaad werd verzonden door de persoon of de entiteit het beweert werd verzonden door, en of de berichtinhoud binnen tussen de tijd werd veranderd het oorspronkelijk werd verzonden (en DKIM &quot;ondertekend&quot;) en de tijd het werd ontvangen. Deze standaard gebruikt doorgaans het domein in de kop Van of Afzender. Raadpleeg [deze sectie](../../delivery/using/technical-recommendations.md#dkim) voor meer informatie.
+* Configuratie van **E-mailverificatie**: zorg ervoor dat de e-mailkopteksten de DKIM-handtekening bevatten. DKIM (Domeinsleutels Identified Mail) authentificatie staat de ontvangende e-mailserver toe om te verifiëren dat een bericht inderdaad werd verzonden door de persoon of de entiteit het beweert werd verzonden door, en of de berichtinhoud binnen tussen de tijd werd veranderd het oorspronkelijk werd verzonden (en DKIM &quot;ondertekend&quot;) en de tijd het werd ontvangen. Deze standaard gebruikt doorgaans het domein in de kop Van of Afzender. Voor meer op dit, verwijs naar [Gids van de Beste praktijken van de Levering van de Adobe ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Responsief e-mailontwerp
 
