@@ -6,9 +6,9 @@ description: TechNote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: b036dccc012b1948837549492d9a1b0726af459d
+source-git-commit: 01f4e4ee841a797f4be61ffc01096b7f651ce963
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1114'
 ht-degree: 7%
 
 ---
@@ -16,15 +16,17 @@ ht-degree: 7%
 
 # Adobe Campaign-configuratieupdates - maart 2021 {#acc-config-updates}
 
-U moet uw infrastructuur en instellingen bijwerken met de nieuwste builds en productoplossingen. Deze correcties zijn verplicht om de continuïteit en veiligheid van de service te waarborgen. Bovendien moet u uw implementatie aanpassen om zich aan derdeveranderingen aan te passen.
+Infrastructuur en instellingen moeten regelmatig worden bijgewerkt met de nieuwste builds en productcorrecties. Deze fixes zijn noodzakelijk om continuïteit van de dienst en veiligheid te verzekeren. Daarnaast zijn upgrades vereist om deze uit te lijnen met wijzigingen van derden.
 
-Als ontvangen klant, zal Adobe u van vereiste bouwstijlverbeteringen op regelmatige intervallen op de hoogte brengen. U moet een upgrade uitvoeren in overeenstemming met de aanbevelingen om naleving te garanderen.
+Als **Gehoste of Managed Services klant**, zal Adobe u van bouwstijlverbeteringen op regelmatige intervallen op de hoogte brengen. U moet een upgrade uitvoeren overeenkomstig de aanbevelingen om naleving te garanderen.
 
-Als klant op locatie/hybride dient u om beveiligingsredenen een upgrade uit te voeren naar een van de versies die op deze pagina worden vermeld. Daarnaast moeten enkele handmatige taken worden uitgevoerd om ervoor te zorgen dat uw omgeving veilig is en klaar is voor toekomstige wijzigingen van Adobe- of externe systemen.
+Als **Op locatie of Hybride klant**, zou u uw implementatie met regelmatige intervallen in lijn met de recentste vrijgegeven bouwstijlen moeten bevorderen.
+
+Om veiligheidsredenen moet u nu een upgrade uitvoeren naar een van de onderstaande versies. Naast de standaard upgradestappen moeten enkele handmatige taken worden uitgevoerd om ervoor te zorgen dat uw omgeving veilig is en klaar is voor toekomstige wijzigingen van Adobe- of externe systemen.
 
 >[!NOTE]
 >
->Voor elke vraag over deze wijzigingen neemt u contact op met [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Voor vragen over deze wijzigingen neemt u contact op met [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## Beveiligingsupdates
@@ -49,20 +51,20 @@ Leer hoe u uw versie [in deze sectie ](../platform/using/launching-adobe-campaig
 
 U moet een upgrade uitvoeren naar een van de nieuwere builds die hierboven worden vermeld.
 
-* Als hybride klant, zal Adobe de marketing instantie aan de nieuwe versie bevorderen en u wordt hoogst geadviseerd om hun marketing instantie ook te bevorderen.
+* Als hybride klant, zal Adobe u van de geplande verbeteringsdata voor uw midsourcing instanties op de hoogte brengen. Adobe raadt u ten zeerste aan om ook een upgrade uit te voeren voor uw marketingexemplaar.
 
-   De nieuwe build is compatibel met minstens versie Campaign Classic 17.9, maar om een eventuele veiligheidstekortkomingen te voorkomen, raadt Adobe u ten zeerste aan alle instanties te upgraden naar een nieuwe build. 
+   De nieuwe build is achterwaarts compatibel met de release van Campaign Classic 17.9, maar Adobe raadt een upgrade van alle instanties aan om beveiligingskwetsbaarheden te verhelpen
 
-* Als klant op locatie wordt u gevraagd om marketing en media-sourcing te upgraden naar een nieuwere build.
+* Als klant op locatie wordt u gevraagd om marketing en media-sourcing te upgraden naar de nieuwste build.
 
 >[!CAUTION]
 >
->Als u momenteel geen upgrade kunt uitvoeren, moet u **contact opnemen met het team van de klantenservice van Adobe om handmatig een beveiligingscorrectie toe te passen op uw instanties**.
+>Als u niet binnen de aanbevolen periode kunt upgraden, **dient u contact op te nemen met het team van de klantenservice van Adobe om een handmatige beveiligingsoplossing voor de korte termijn toe te passen op uw exemplaar**.
 
 
-## Update voor clientconsole voor campagne
+## Campaign Classic Client Console-update
 
-In de volgende versies wordt een regressie verholpen die het gebruik van bepaalde componenten van de clientconsole, zoals de datumkiezer en het beheer van afbeeldingen in leveringen, heeft verhinderd. **Upgrade van console** is verplicht.
+De **nu beschikbare** consoleversies hieronder zouden moeten worden geïnstalleerd om een onlangs geïdentificeerde regressie op te lossen. Door deze regressie konden sommige componenten van de clientconsole niet worden gebruikt, zoals de datumkiezer en het beheer van afbeeldingen in leveringen. **Upgrade van console** is verplicht.
 
 * Nieuwste Gold Standard 11 build 9032@10c2709. [Meer informatie](../rn/using/gold-standard.md)
 * Release van campagne 20.1.4. [Meer informatie](../rn/using/release--20-1.md)
@@ -73,7 +75,7 @@ In de volgende versies wordt een regressie verholpen die het gebruik van bepaald
 
 Adobe Identity Service (IMS) biedt geen ondersteuning meer voor oude Internet Explorer-versies vanaf **30 juni 2021**. [Meer informatie](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
-De Campagne Client Console is bijgewerkt om verenigbaarheid met Adobe IMS te verzekeren.
+Een upgrade van de Campagne Client Console is vereist om compatibiliteit met Adobe IMS te garanderen.
 
 **Heb je invloed op?**
 
@@ -93,7 +95,7 @@ Leer hoe u uw versie [in deze sectie ](../platform/using/launching-adobe-campaig
 
 **Hoe kan ik bijwerken?**
 
-Als gehoste klant is geen actie nodig: Adobe heeft uw exemplaar(s) al bijgewerkt naar een nieuwere versie.
+Als gehoste klant werkt Adobe binnenkort samen met u om uw exemplaar(s) bij te werken naar de nieuwere versie.
 
 Als klant op locatie/hybride klant moet u een upgrade uitvoeren naar een van de nieuwere versies om te profiteren van de nieuwe clientconsole en een naadloze overgang **garanderen voor 30 juni 2021**.
 
@@ -123,7 +125,7 @@ Leer hoe u uw versie [in deze sectie ](../platform/using/launching-adobe-campaig
 
 **Hoe kan ik bijwerken?**
 
-Als de exemplaren zijn bijgewerkt naar een nieuwere versie, moeten alle klanten de [procedure volgen en overschakelen naar de nieuwe verificatiemodus](../integrations/using/configuring-adobe-io.md). Dit vereist om het nieuwe teken van Adobe I/O te produceren en het in de implementatie te gebruiken.  
+Als de exemplaren zijn bijgewerkt naar een nieuwere versie, moeten alle klanten de [procedure volgen en overschakelen naar de nieuwe verificatiemodus](../integrations/using/configuring-adobe-io.md). Dit vereist u om het nieuwe teken van Adobe I/O te produceren en het in de implementatie te gebruiken.  
 
 Bovendien moeten klanten voor hybride omgevingen ervoor zorgen dat de pijpleiding wordt geconfigureerd op een mid-sourcing-instantie. [Meer informatie](../integrations/using/configuring-pipeline.md).
 
@@ -137,13 +139,13 @@ De Apple Push Notification service (APNs) biedt vanaf **31 maart 2021** geen ond
 
 **Heeft u gevolgen?**
 
-Als uw instanties op een **oudere versie dan Campagne 21.1,** lopen en dupberichten met het erfenis binaire protocol van Apple verzenden, moet u aan de op HTTP/2-Gebaseerde leverancier API van APNs bijwerken.
+Als uw instanties op een **oudere versie dan Campagne 21.1,** lopen en u dupberichten met het erfenis binaire protocol van Apple verzendt, moet u aan de op HTTP/2-Gebaseerde leverancier API van APNs bijwerken.
 
 Leer hoe u uw versie [in deze sectie ](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) controleert.
 
 **Hoe kan ik bijwerken?**
 
-Als gehoste klant is geen actie nodig: Adobe heeft uw instantie(s) al bijgewerkt naar de op HTTP/2 gebaseerde API.
+Als gehoste klant, als u aan de nieuwe bouwstijl hebt bevorderd, heeft Adobe reeds uw instantie(s) aan op HTTP/2-Gebaseerde API bijgewerkt.
 
 Als op-gebouw/ontvangen klant, moet u uw configuratie bijwerken. [Leer hoe u naar HTTP/2 kunt migreren](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
 
