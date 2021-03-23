@@ -7,10 +7,10 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: d41119e61ee2088e1b8cab65354547420f8e7737
 workflow-type: tm+mt
-source-wordcount: '4194'
-ht-degree: 96%
+source-wordcount: '4250'
+ht-degree: 94%
 
 ---
 
@@ -37,6 +37,8 @@ Leer hoe u uw campagnes kunt maken en beheren met de volgende nieuwe pagina&#39;
 * [Het goedkeuringsproces instellen en beheren](../../campaign/using/marketing-campaign-approval.md)
 
 Er is informatie toegevoegd aan de sectie **[!UICONTROL Advanced JavaScript]** activiteit over hoe u de methode task.setCompleted() gebruikt om de taak te beëindigen en toekomstige terugroepingen te voorkomen. [Meer informatie](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
+
+De sectie [Leverbaarheid](../../delivery/using/about-deliverability.md) is bijgewerkt en bevat nu koppelingen naar de nieuwe [Handleiding voor beste praktijken voor Adobe-levering](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html). Alle generieke informatie met betrekking tot leverbaarheid die op diverse oplossingen van Adobe kan van toepassing zijn is verplaatst naar [Aanhangsel van de gids van Beste praktijken](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources).
 
 ## Februari 2021 {#release-21.1}
 
@@ -130,7 +132,7 @@ De compatibiliteitsmatrix is bijgewerkt. [Meer informatie](../../rn/using/compat
 
 De pagina met verouderde en verwijderde functies is bijgewerkt. [Meer informatie](../../rn/using/deprecated-features.md)
 
-Opmerkingen bij de release en de compatibiliteitsmatrix voor de Gold Standard-release zijn nu beschikbaar in een speciale sectie.
+Release-aantekeningen en compatibiliteitsmatrix voor [!DNL Gold Standard]-release zijn nu beschikbaar in een toegewezen sectie.
 [Meer informatie](../../rn/using/gold-standard.md#gs-11).
 
 De Triggers-integratie die oorspronkelijk was gebaseerd op de oAUTH-verificatieset-up voor toegang tot de pipeline, is nu gewijzigd en verplaatst naar Adobe I/O. [Meer informatie](../../integrations/using/configuring-adobe-io.md)
@@ -167,7 +169,7 @@ Er is een opmerking toegevoegd over het gebruik van aanvullende data met seed-ad
 
 Leer best practices voor leveringsontwerp en -verzending met Campaign in een speciale sectie. [Meer informatie](../../delivery/using/delivery-best-practices.md)
 
-De landingspagina met best practices voor leverbaarheid is verbeterd om de toegang tot subsecties te vergemakkelijken. [Meer informatie](../../delivery/using/deliverability-key-points.md)
+De landingspagina met best practices voor leverbaarheid is verbeterd om de toegang tot subsecties te vergemakkelijken. [Meer informatie](../../delivery/using/about-deliverability.md)
 
 Er zijn nu instructievideo’s beschikbaar over de volgende onderwerpen:
 
@@ -206,7 +208,7 @@ De sectie **[!UICONTROL AND-join]**-activiteit is verrijkt met aanvullende infor
 
 Er is een gebruiksscenario toegevoegd aan de workflowgebruiksscenario’s voor het automatisch bijwerken van een lijst met behulp van een incrementele query. [Meer informatie](../../workflow/using/about-workflow-use-cases.md)
 
-De [Opmerkingen bij de release](../../rn/using/latest-release.md) zijn opnieuw ingedeeld: er is een [overzichtspagina](../../rn/using/latest-release.md) toegevoegd met informatie over buildstatussen, upgradeproces, aanbevelingen en belangrijke koppelingen. Er is ook een speciale pagina toegevoegd voor [Gold Standard-releases](../../rn/using/gold-standard.md) en de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) is geïntegreerd.
+De [Opmerkingen bij de release](../../rn/using/latest-release.md) zijn opnieuw ingedeeld: er is een [overzichtspagina](../../rn/using/latest-release.md) toegevoegd met informatie over buildstatussen, upgradeproces, aanbevelingen en belangrijke koppelingen. Er is ook een speciale pagina voor [[!DNL Gold Standard] releases](../../rn/using/gold-standard.md) toegevoegd en de [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) is geïntegreerd.
 
 Er is een nieuwe sectie toegevoegd met richtlijnen voor Campaign Classic-bewaking. [Meer informatie](../../production/using/monitoring-guidelines.md)
 
@@ -266,7 +268,7 @@ De sectie over het controleren van de leverbaarheid is verplaatst en verbeterd. 
 
 De sectie voor het oplossen van problemen met de leverbaarheid is verplaatst en verbeterd. [Meer informatie](../../delivery/using/deliverability-faq.md)
 
-Richtlijnen voor de leverbaarheid bij het starten van een nieuwe platformsectie zijn verbeterd. [Meer informatie](../../delivery/using/starting-new-platform.md)
+De richtlijnen voor de levering bij het starten van een nieuw platform zijn verbeterd. [Meer informatie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html#transition-process)
 
 De sectie voor het verzenden van transactionele e-mails met bijlagen is verplaatst en bijgewerkt. [Meer informatie](../../message-center/using/transactional-email-with-attachments.md)
 
@@ -476,7 +478,7 @@ Er is een sectie toegevoegd waarin de installatie- en configuratiestappen voor g
 
 Er is een sectie toegevoegd waarin de stappen voor het verwijderen van de Campaign-server worden beschreven. [Meer informatie](../../installation/using/uninstalling-campaign.md)
 
-De handleidingen om aan de slag te gaan met [beveiliging](https://helpx.adobe.com/nl/campaign/kb/acc-security.html), [leverbaarheid](../../delivery/using/deliverability-key-points.md) en [privacy](../../platform/using/privacy-management.md) zijn bijgewerkt.
+De handleidingen om aan de slag te gaan met [beveiliging](https://helpx.adobe.com/nl/campaign/kb/acc-security.html), [leverbaarheid](../../delivery/using/about-deliverability.md) en [privacy](../../platform/using/privacy-management.md) zijn bijgewerkt.
 
 De beschrijving van de optie van de workflow voor voorverwerking is bijgewerkt om de productwijzigingen weer te geven. [Meer informatie](../../workflow/using/data-loading--file-.md)
 
