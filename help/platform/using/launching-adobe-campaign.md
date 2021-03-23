@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 8%
+source-wordcount: '548'
+ht-degree: 7%
 
 ---
 
@@ -97,11 +97,11 @@ Met het menu **[!UICONTROL Help > About...]** hebt u toegang tot de volgende inf
 
 Wanneer u het team van de Zorg van de Adobe klant bereikt, moet u het versieaantal verstrekken en aantal van uw de cliëntconsole en toepassingsserver van Adobe Campaign bouwen.
 
-Als u op [Campagne Gouden Standaard versie](../../rn/using/gold-standard.md) loopt, moet u ook de karakters delen SHA/1 die in **[!UICONTROL About]** doos worden getoond. Als voorbeeld, voor Gouden **Standaard 10 versie**, zal het bouwstijlaantal **build 9032@efd8a94** tonen, zoals hieronder getoond:
+Als u op [Campagne [!DNL Gold Standard] versie](../../rn/using/gold-standard.md) loopt, moet u ook SHA/1 karakters delen die in **[!UICONTROL About]** doos worden getoond. Als voorbeeld, voor Gouden **Standaard 10 versie**, zal het bouwstijlaantal **build 9032@efd8a94** tonen, zoals hieronder getoond:
 
 ![](assets/about-acc-gs.png)
 
-Meer informatie over Gold Standard [in dit artikel](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html).
+Meer informatie over [!DNL Gold Standard] [in dit artikel](../../rn/using/gs-overview.md)).
 
 **Verwante onderwerpen**:
 
