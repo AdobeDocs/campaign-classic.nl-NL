@@ -6,9 +6,9 @@ description: Leer hoe te om de pijpleiding te vormen
 audience: integrations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '906'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ De triggers worden gebruikt voor het activeren van een campagneworkflow die e-ma
 
 Voordat u deze configuratie start, moet u controleren of u deze configuratie gebruikt:
 
-* Adobe Campaign 20.3, 20.2.4, 19.1.8 of Gold Standard 11 minimaal
+* Adobe Campaign 20.3, 20.2.4, 19.1.8 of [!DNL Gold Standard] 11 minimaal
 * Adobe Analytics Standard-versie
 
 U hebt ook het volgende nodig:
