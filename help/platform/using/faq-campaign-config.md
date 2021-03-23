@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 100%
+source-wordcount: '758'
+ht-degree: 95%
 
 ---
 
@@ -41,9 +41,9 @@ Als ervaren gebruiker kunt u trackingmogelijkheden configureren op uw instantie 
 
 ## Hoe kan ik e-mailleverbaarheid configureren? {#how-to-configure-email-deliverability-}
 
-Lees naast de sectie over [Configuratie van de leverbaarheid](../../delivery/using/about-deliverability.md#configuration) ook de technische aanbevelingen inzake leverbaarheid om te begrijpen hoe u uw instantie kunt configureren om de leveringsmogelijkheden van uw instantie te maximaliseren.
+Naast de [Handleiding van de Beste praktijken van de Leverbaarheid van de Adobe ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html), lees de leverbaarheid technische aanbevelingen om te begrijpen hoe te om uw instantie te vormen om Campagne te maximaliseren leverend mogelijkheden.
 
-[Klik hier voor meer informatie](../../delivery/using/technical-recommendations.md).
+[Klik hier voor meer informatie](../../delivery/using/about-deliverability.md).
 
 ## Hoe kan ik contentgoedkeuring implementeren? {#how-can-i-implement-content-approval-}
 
