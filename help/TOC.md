@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentatie
 translation-type: tm+mt
-source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
+source-git-commit: 0b3bc9547d756352f4af5dac713f85666c96c425
 workflow-type: tm+mt
-source-wordcount: '2473'
-ht-degree: 55%
+source-wordcount: '2448'
+ht-degree: 54%
 
 ---
 
@@ -24,10 +24,10 @@ ht-degree: 55%
 + Release-opmerkingen {#release-notes}
    + [Aan de slag met upgrades](rn/using/rn-overview.md)
    + [Laatste release](rn/using/latest-release.md)
-   + Gold Standard-release {#gs-release}
-      + [Wat is Gold Standard](rn/using/gs-overview.md)
-      + [Opmerkingen bij de release Gold Standard](rn/using/gold-standard.md)
-      + [Compatibiliteitsmatrix van Gold Standard](rn/using/compatibility-matrix-gs.md)
+   + [!DNL Gold Standard] vrijgeven  {#gs-release}
+      + [Wat is [!DNL Gold Standard]](rn/using/gs-overview.md)
+      + [[!DNL Gold Standard] releaseopmerkingen](rn/using/gold-standard.md)
+      + [[!DNL Gold Standard] compatibiliteitsmatrix](rn/using/compatibility-matrix-gs.md)
    + Eerdere versies {#previous-releases}
       + [Release 20.3](rn/using/release--20-3.md)
       + [Release 20.2](rn/using/release--20-2.md)
@@ -221,17 +221,11 @@ ht-degree: 55%
       + [Tekstspatiëring testen](delivery/using/testing-tracking.md)
       + [Problemen met tracking oplossen](delivery/using/tracking-troubleshooting.md)
    + Leverbaarheidsbeheer {#deliverability-management}
-      + [Leverbaarheid](delivery/using/about-deliverability.md)
-      + [Belangrijkste punten om te controleren](delivery/using/deliverability-key-points.md)
-      + [Een nieuw platform starten](delivery/using/starting-new-platform.md)
+      + [Wat is leverbaarheid?](delivery/using/about-deliverability.md)
       + [Content van controleberichten](delivery/using/control-message-content.md)
-      + [Uw reputatie verbeteren](delivery/using/improve-reputation.md)
-      + [Technische aanbevelingen](delivery/using/technical-recommendations.md)
       + [Leverbaarheid controleren](delivery/using/monitoring-deliverability.md)
       + [Inboxrendering](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
-      + [Best practices voor hernieuwde betrokkenheid](delivery/using/re-engagement-best-practices.md)
-      + [Databases met lijsten van ongewenste personen](delivery/using/block-list-databases.md)
       + [Problemen oplossen](delivery/using/deliverability-faq.md)
    + Module voor contentmanagement{#content-management}
       + [Contentmanagement](delivery/using/about-content-management.md)
