@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 29801740c10dc182bdb5f00114298d04385a3e1b
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 4%
+source-wordcount: '629'
+ht-degree: 3%
 
 ---
 
@@ -87,7 +87,7 @@ Raadpleeg [deze pagina](../../delivery/using/understanding-delivery-failures.md)
  </tbody> 
 </table>
 
-Als u wilt weten hoe u de leverbaarheid van uw Adobe Campaign-e-mails kunt optimaliseren, raadpleegt u de Adobe Campaign [Handleiding voor best practices op het gebied van aflevering](../../delivery/using/deliverability-key-points.md) en [deze pagina](../../delivery/using/about-deliverability.md).
+Raadpleeg [deze sectie](../../delivery/using/about-deliverability.md) voor meer informatie over het optimaliseren van de leverbaarheid van uw Adobe Campaign-e-mails. Raadpleeg de [Handleiding best practices](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) voor de aflevering van Adobe voor een dieper inzicht in de aflevering.
 
 ## Status {#pending-status} in behandeling
 
