@@ -7,10 +7,10 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 100%
+source-wordcount: '423'
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,7 @@ Aan elke build wordt een status gekoppeld. Hieronder vindt u een lijst met statu
 
 ![](assets/do-not-localize/green3.png) **Algemene beschikbaarheid** (GA) - Gevalideerd in productie en aanbevolen door Adobe.
 
-De **nieuwste GA-builds** zijn: [Gold Standard 11-release](../../rn/using/gold-standard.md#gs-11) en [Campaign 20.2.4-release](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
+De **nieuwste GA-builds** zijn: [[!DNL Gold Standard]  11-release](../../rn/using/gold-standard.md#gs-11) en [Campaign 20.2.4-release](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
 
 ![](assets/do-not-localize/limited3.png) **Beperkte beschikbaarheid** (LA) - Alleen on-demand implementatie.
 
@@ -53,12 +53,12 @@ Als gehoste klant (Managed Service of hybride) moet u contact opnemen met het kl
 
 Als on-premise gebruiker kunt u de upgrade zelf uitvoeren. Hiervoor moet u de [nieuwste stabiele build downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) en al uw omgevingen upgraden. Lees meer over het [upgradeproces](../../production/using/build-upgrade.md) en raadpleeg de [veelgestelde vragen over upgrades](../../platform/using/faq-build-upgrade.md).
 
-### Gold Standard{#upgrade-for-gold-standard-users}
+### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
-Als gehoste Gold Standard-gebruiker profiteert u automatisch van de Gold Standard-upgrade met de [nieuwste GA Gold Standard-build](../../rn/using/gold-standard.md#gs-11) zonder actie te hoeven ondernemen. [Meer informatie](../../rn/using/gs-overview.md).
+Als gehoste [!DNL Gold Standard] gebruiker, zult u automatisch van [!DNL Gold Standard] verbetering met [recentste GA [!DNL Gold Standard] bouwstijl](../../rn/using/gold-standard.md#gs-11) zonder enige actie profiteren. [Meer informatie](../../rn/using/gs-overview.md).
 
 >[!NOTE]
->De compatibiliteitsmatrix voor Gold Standard is beschikbaar in de [GA-compatibiliteitsmatrix](../../rn/using/compatibility-matrix-gs.md).
+>De compatibiliteitsmatrix voor [!DNL Gold Standard] is beschikbaar in de [GA-compatibiliteitsmatrix](../../rn/using/compatibility-matrix-gs.md).
 
 ## Ondersteuning en andere handige koppelingen{#support}
 
