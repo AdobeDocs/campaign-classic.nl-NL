@@ -6,9 +6,9 @@ description: De integratie configureren
 audience: integrations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '580'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 De pijpleiding wordt niet ondersteund door uw versie van Adobe Campaign Classic.
 
 1. Controleer of het element [!DNL pipelined] aanwezig is in het configuratiebestand. Als dat niet het geval is, betekent dit dat dit niet wordt ondersteund.
-1. Voer een upgrade uit naar Campagne 20.3 of Gold Standard 11.
+1. Upgrade naar campagne 20.3 of [!DNL Gold Standard] 11.
 
 **Pipelined failed with &#39;&#39; aurait dû commencer par  `[` ou  `{` (iRc=16384)&quot;**
 
