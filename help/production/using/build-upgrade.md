@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2360'
 ht-degree: 2%
 
 ---
@@ -415,4 +415,4 @@ Hier volgen de stappen voor het uitvoeren van een complexe samenvoeging:
 * [Veelgestelde vragen over upgrades samenstellen](../../platform/using/faq-build-upgrade.md)
 * [Opmerkingen bij de release Campaign Classic](../../rn/using/rn-overview.md)
 * [Help- en ondersteuningsopties voor Campaign Classic](https://helpx.adobe.com/nl/campaign/kb/ac-support.html)
-* [Gold Standard-programma](https://helpx.adobe.com/nl/campaign/kb/gold-standard.html)
+* [[!DNL Gold Standard] programma](../../rn/using/gs-overview.md)
