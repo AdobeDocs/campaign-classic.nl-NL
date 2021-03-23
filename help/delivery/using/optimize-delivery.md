@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 6%
@@ -50,7 +50,7 @@ Om uw ontvangers&#39; te bereiken inbox zonder te stuiteren of als spam worden g
 
    * Wanneer u uw e-mail controleert op leverbaarheid, wilt u zich op vier hoofdcategorieën concentreren: gegevenskwaliteit, bericht en inhoud, verzendende infrastructuur, en reputatie. Raadpleeg [deze sectie](../../delivery/using/about-deliverability.md) voor een dieper overzicht van dit onderwerp.
 
-* Pas de aanbevelingen toe [in dit document](../../delivery/using/deliverability-key-points.md) worden gedetailleerd.
+* Pas de aanbevelingen toe [in dit document](../../delivery/using/about-deliverability.md) worden gedetailleerd.
 
 * Neem contact op met uw Adobe-vertegenwoordiger voor hulp.
 
