@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 7%
@@ -24,7 +24,7 @@ Ga aan de slag met Adobe Campaign door onze intuïtieve stapsgewijze handleiding
 * [E-mailinhoud bewerken met Adobe Experience Manager](https://helpx.adobe.com/campaign/kb/acc-aem.html): Leer over de grondbeginselen om met de integratie tussen Adobe Campaign en Experience Manager te beginnen.
 * [Privacybeheer](https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html): Ontdek wat Adobe Campaign Classic biedt om u te helpen bij het naleven van uw privacy wanneer u onze service gebruikt.
 * [Dynamische inhoud in een e-mail](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html) integreren: ontdekken de grondbeginselen om met de integratie tussen Campaign Classic en de Norm van het Doel te beginnen.
-* [Te leveren items beheren](../../delivery/using/deliverability-key-points.md): Meer informatie over de concepten en beste praktijken met betrekking tot leverbaarheid evenals de hulpmiddelen die door Adobe Campaign Classic worden aangeboden om het verzenden van uw leveringen te optimaliseren.
+* [Te leveren items beheren](../../delivery/using/about-deliverability.md): Meer informatie over de concepten en beste praktijken met betrekking tot leverbaarheid evenals de hulpmiddelen die door Adobe Campaign Classic worden aangeboden om het verzenden van uw leveringen te optimaliseren.
 * [Aanbevolen werkwijzen](../../delivery/using/delivery-best-practices.md) voor levering: Meer informatie over de beste praktijken met betrekking tot leveringsontwerp en verzendend met Adobe Campaign Classic.
 * [Een upgrade](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html) voor build uitvoeren: deze gids stelt u de belangrijkste stappen en beste praktijken voor om een bouwstijlverbetering met Campaign Classic uit te voeren.
 * [Controlelijst](https://helpx.adobe.com/nl/campaign/kb/acc-security.html) voor beveiligingsconfiguratie: ontdekt zeer belangrijke elementen om betreffende veiligheidsconfiguratie en het verharden voor plaatsing op locatie te controleren
