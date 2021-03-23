@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
+source-git-commit: cb24bc78b5cc09307ca470470464f204d9f41278
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1149'
 ht-degree: 2%
 
 ---
@@ -17,23 +17,24 @@ ht-degree: 2%
 
 # Upgraden naar een nieuwe build (on-premise){#upgrading}
 
-Voordat u het upgradeproces start, bepaalt en bevestigt u welke versie van Adobe Campaign moet worden bijgewerkt naar en raadpleegt u de [Release-notities](../../rn/using/latest-release.md).
+Voordat u het upgradeproces start, bepaalt en bevestigt u welke versie van Adobe Campaign moet worden bijgewerkt naar en raadpleegt u de [Opmerkingen bij de release](../../rn/using/latest-release.md).
 
 >[!IMPORTANT]
 >
->Wij adviseren sterk makend een gegevensbestandsteun op elke instantie alvorens bij te werken. Raadpleeg [Back-up](../../production/using/backup.md) voor meer informatie.\
->Om een verbetering uit te voeren, zorg ervoor u de capaciteit en de toestemmingen hebt om tot instanties en logboeken toegang te hebben.
+>* Adobe raadt u ten zeerste aan een databaseback-up te maken voor elke instantie voordat u deze bijwerkt. Raadpleeg [deze sectie](../../production/using/backup.md) voor meer informatie.
+>* Om een verbetering uit te voeren, zorg ervoor u de capaciteit en de toestemmingen hebt om tot instanties en logboeken toegang te hebben.
+>* Lees [deze sectie](../../installation/using/general-architecture.md) en [bouwt verbetering](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html) hoofdstuk alvorens te beginnen.
 
->[!NOTE]
 >
->Raadpleeg ook de [installatiehandleiding](../../installation/using/general-architecture.md) en de [upgrade voor de build](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html) om aan de slag te gaan.
+
+
 
 ## Windows {#in-windows}
 
-Om Adobe Campaign in een nieuwe versie bij te werken wanneer het leveren van een nieuwe bouwstijl, zou de volgende procedure in Vensters moeten worden toegepast:
+Voor een Windows-omgeving voert u de onderstaande stappen uit om Adobe Campaign bij te werken naar een nieuwe build:
 
 * [Afsluitdiensten](#shut-down-services),
-* [Een upgrade uitvoeren van de Adobe Campaign-servertoepassing](#upgrade-the-adobe-campaign-server-application),
+* [Voer een upgrade uit op de toepassingsserver](#upgrade-the-adobe-campaign-server-application),
 * [Bronnen](#synchronize-resources) synchroniseren
 * [Start de services](#restart-services) opnieuw.
 
@@ -89,8 +90,8 @@ Gebruik de volgende opdrachtregel:
 Op deze manier kunt u de volgende bewerkingen uitvoeren:
 
 * Bronnen synchroniseren
-* updateschema&#39;s,
-* de database bij te werken.
+* Schema&#39;s bijwerken
+* de database bijwerken
 
 >[!NOTE]
 >
@@ -110,10 +111,10 @@ De volgende diensten moeten opnieuw worden opgestart:
 
 ## Linux {#in-linux}
 
-Als u Adobe Campaign wilt bijwerken in een nieuwe versie wanneer een nieuwe build wordt geleverd, volgt de procedure voor Linux:
+Voor een Linux-omgeving voert u de onderstaande stappen uit om Adobe Campaign bij te werken naar een nieuwe build:
 
-* [Updates](#obtain-updated-packages) verkrijgen,
-* [Een update](#perform-an-update) uitvoeren
+* [Download de bijgewerkte pakketten](#obtain-updated-packages),
+* [Voer de update](#perform-an-update) uit,
 * [Start de webserver](#reboot-the-web-server) opnieuw op.
 
 [Meer informatie over de beschikbaarheid](../../installation/using/client-console-availability-for-windows.md) van de clientconsole.
@@ -138,7 +139,7 @@ Het bestand is **nlserver6-v7-XXX.rpm**
    $rpm -Uvh nlserver6-v7-XXXX.rpm
    ```
 
-   waarbij XXX de versie van het bestand is.
+   Hierbij is XXX de versie van het bestand.
 
    Het rpm-bestand is afhankelijk van pakketten die u kunt vinden op CentOS/Red Hat-distributies. Als u sommige van deze gebiedsdelen niet wilt gebruiken, kunt u de &quot;nodeps&quot;optie van rpm moeten gebruiken:
 
@@ -156,7 +157,7 @@ Het bestand is **nlserver6-v7-XXX.rpm**
 
 >[!NOTE]
 >
->De volledige installatieprocedures worden beschreven in [deze sectie](../../installation/using/installing-campaign-standard-packages.md). De middelen worden automatisch gesynchroniseerd, nochtans moet u ervoor zorgen geen fouten voorkwamen. Voor meer op dit, verwijs naar [Het oplossen van verbeteringsconflicten](#resolving-upgrade-conflicts).
+>De volledige installatieprocedures worden beschreven in [deze sectie](../../installation/using/installing-campaign-standard-packages.md). De middelen worden automatisch gesynchroniseerd, nochtans moet u ervoor zorgen geen fouten voorkwamen. Raadpleeg [Verbeteringsconflicten oplossen](#resolving-upgrade-conflicts) voor meer informatie hierover.
 
 ### De webserver {#reboot-the-web-server} opnieuw opstarten
 
@@ -184,7 +185,7 @@ Start vervolgens Apache opnieuw:
 /etc/init.d/apache start
 ```
 
-## Oplossen van upgradeconflicten {#resolving-upgrade-conflicts}
+## Verbeteringsconflicten oplossen {#resolving-upgrade-conflicts}
 
 Tijdens middelsynchronisatie, laat **postupgrade** bevel u toe om te ontdekken of de synchronisatie fouten of waarschuwingen heeft geproduceerd.
 
@@ -239,7 +240,7 @@ Ga als volgt te werk als u het conflict handmatig wilt oplossen:
 
 ### Aanbevolen procedures {#best-practices}
 
-Er kan een updatefout worden gekoppeld aan de databaseconfiguratie. Zorg ervoor dat de configuraties die door de technische beheerder en de gegevensbestandbeheerder worden uitgevoerd compatibel zijn.
+Er kan een updatefout worden gekoppeld aan de databaseconfiguratie. Zorg ervoor de configuraties die door de technische beheerder en de gegevensbestandbeheerder worden uitgevoerd compatibel zijn.
 
 Een unicode-database mag bijvoorbeeld niet alleen de opslag van LATIN1-gegevens, enzovoort, toestaan.
 
@@ -247,11 +248,7 @@ Een unicode-database mag bijvoorbeeld niet alleen de opslag van LATIN1-gegevens,
 
 ### Windows {#in-windows-1}
 
-Download en kopieer het bestand op de computer waarop de Adobe Campaign-toepassingsserver (**nlserver web**) is geïnstalleerd
-
-**setup-client-6.XXXX.exe**
-
-in **[pad van de toepassing]**datakitnlengjsp
+Download en kopieer het bestand **setup-client-6.XXXX.exe** op de computer waarop de Adobe Campaign-toepassingsserver is geïnstalleerd (**nlserver web**).**[]**
 
 De volgende keer dat clientconsoles worden aangesloten, wordt gebruikers in een venster geïnformeerd over de beschikbaarheid van een update en kunnen ze deze downloaden en installeren.
 
@@ -261,11 +258,7 @@ De volgende keer dat clientconsoles worden aangesloten, wordt gebruikers in een 
 
 ### Linux {#in-linux-1}
 
-Op de computer waarop de Adobe Campaign-toepassingsserver (**nlserver web**) is geïnstalleerd, haalt u het volgende pakket op:
-
-**setup-client-6.XXXX.exe**
-
-en kopieer het bestand, en sla het op als **/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
+Op de computer waarop de Adobe Campaign-toepassingsserver (**nlserver web**) is geïnstalleerd, haalt u het **setup-client-6.XXXX.exe**-pakket op en kopieert u het pakket, en slaat u het op als **/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
 
 ```
  cp setup-client-6.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp
