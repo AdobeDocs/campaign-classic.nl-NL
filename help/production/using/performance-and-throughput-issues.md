@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 3%
+source-wordcount: '711'
+ht-degree: 2%
 
 ---
 
@@ -52,7 +52,7 @@ Hier volgt een lijst met artikelen die betrekking hebben op de aanbevolen werkwi
 
 * MTA en MTAChild processen en geheugen: de **mta** module verspreidt berichten aan zijn **mtachild** kindmodules. Elk **mtachild** bereidt berichten voor alvorens om een vergunning van de statistiekserver te verzoeken, en hen te verzenden. Raadpleeg deze [pagina](../../installation/using/email-deliverability.md) voor meer informatie.
 * TLS-configuratie: het wereldwijd inschakelen van TLS wordt afgeraden omdat dit de doorvoer kan verminderen. In plaats daarvan moeten de TLS-instellingen per domein, beheerd door het leveringsteam, worden afgestemd op de behoeften. Raadpleeg deze [pagina](../../installation/using/email-deliverability.md#mx-configuration) voor meer informatie.
-* DKIM: Om het veiligheidsniveau van DKIM te verzekeren, is 1024b de Beste praktijken geadviseerde encryptiegrootte. De lagere sleutels DKIM zullen niet als geldig door de meerderheid van toegangsleveranciers worden beschouwd. Zie deze [pagina](../../delivery/using/technical-recommendations.md#dkim) en deze [technologie](https://helpx.adobe.com/nl/campaign/kb/domain-name-delegation.html).
+* DKIM: Om het veiligheidsniveau van DKIM te verzekeren, is 1024b de beste praktijken geadviseerde encryptiegrootte. De lagere sleutels DKIM zullen niet als geldig door de meerderheid van toegangsleveranciers worden beschouwd. Zie [deze pagina](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ## Problemen met de aflevering {#deliverability-issues}
 
@@ -67,4 +67,4 @@ Hier volgt een lijst met best practices en artikelen met betrekking tot de te le
 
 >[!NOTE]
 >
->Zie ook [Belangrijke punten van de leveringssleutel](../../delivery/using/deliverability-key-points.md) sectie.
+>Zie ook de [Deliverability](../../delivery/using/about-deliverability.md) sectie. Raadpleeg de [Handleiding best practices](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) voor de aflevering van Adobe voor een dieper inzicht in de aflevering.
