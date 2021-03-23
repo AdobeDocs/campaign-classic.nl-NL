@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: latest-release-notes
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 3a65bc08fd3b6cedfd7ef05a51fd8378f19daa85
+source-git-commit: 1d9c96d1cd8ba2a8099271165a1671d5589230fb
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 9%
+source-wordcount: '686'
+ht-degree: 10%
 
 ---
 
@@ -38,50 +38,58 @@ Support via onze veelgestelde vragen, best practices, online bronnen en onderste
 
 Hoe te aan een nieuwe bouwstijl te bevorderen? hoe kan de uitvoering van de workflow worden gecontroleerd? wat is de workflow voor het opschonen van databases?.. [Lees de eerste 10 vragen](platform/using/common-questions.md).
 
-### Onderwerpen
-
-Lees uit een reeks specifieke vragen en antwoorden door onderwerpen:
-
-* [Belangrijkste concepten](platform/using/faq-key-concepts.md)
-* [Campagne-instellingen](platform/using/faq-campaign-config.md)
-* [Rapporten](platform/using/faq-reporting.md)
-* [Buildupgrade](platform/using/faq-build-upgrade.md)
-* [Berichten testen, verzenden en volgen](platform/using/faq-messages.md)
-* [Workflows](platform/using/faq-workflows.md)
-* [Ontwikkelaars](platform/using/faq-developers.md)
-* [Bezorging](delivery/using/monitoring-deliverability.md)
-
-### Algemene kwesties
-
-* [Problemen met prestaties en doorvoer](production/using/performance-and-throughput-issues.md)
-* [Leveringsprestaties](delivery/using/delivery-performances.md)
-* [Workflowprestaties optimaliseren](workflow/using/workflow-best-practices.md)
-* [Problemen met workflowuitvoering](workflow/using/monitoring-workflow-execution.md)
-* [SFTP-servergebruik](platform/using/sftp-server-usage.md)
-* [Uitvoeren van fouten begrijpen](delivery/using/understanding-delivery-failures.md)
-
-### Best practices
-
-* [Best practices voor workflows](workflow/using/workflow-best-practices.md)
-* [Technische werkstroomcontrole](workflow/using/monitoring-technical-workflows.md)
-* [Beheer van bijhouden begrijpen](delivery/using/about-message-tracking.md)
-* [Controlemiddelen detecteren](production/using/monitoring-guidelines.md)
-* [Gegevens importeren met workflows](platform/using/import-export-workflows.md)
-* [Berichten verzenden in meerdere golven  ](delivery/using/steps-sending-the-delivery.md)
-* [E-mailinhoud ontwerpen](delivery/using/defining-the-email-content.md)
-* [Best practices voor levering](delivery/using/delivery-best-practices.md)
-
-### Hoe kan ik
-
-* [Upgrade naar de nieuwste build](production/using/build-upgrade.md)
-* [Veelgestelde vragen over upgrades samenstellen](platform/using/faq-build-upgrade.md)
-* [Een levering controleren](delivery/using/about-delivery-monitoring.md)
-* [quarantainebeheer begrijpen](delivery/using/understanding-quarantine-management.md)
-* [Controlelijst voor beveiliging en privacy](installation/using/get-started-security-privacy.md)
-* [Privacy- en toestemmingsbeheer](platform/using/privacy-management.md)
-* [Een query ontwerpen](platform/using/steps-to-create-a-query.md)
-* [Voorbeelden van query’s](workflow/using/querying-recipient-table.md)
-* [Een workflow maken](workflow/using/building-a-workflow.md)
+<table>
+    <tr><td><strong>Onderwerpen</strong></td><td><strong>Algemene kwesties</strong></td><td><strong>Best practices</strong></td><td><strong>Hoe kan ik</strong></td></tr>
+    <tr>
+    <td valign="top">
+        <ul>
+        <li><a href="platform/using/faq-key-concepts.md">Belangrijkste concepten</a></li>
+        <li><a href="platform/using/faq-campaign-config.md">Campagne-instellingen</a></li>
+        <li><a href="platform/using/faq-reporting.md">Rapporten</a></li>
+        <li><a href="platform/using/faq-build-upgrade.md">Buildupgrade</a></li>
+        <li><a href="platform/using/faq-messages.md">Berichten testen, verzenden en volgen</a></li>
+        <li><a href="platform/using/faq-workflows.md">Workflows</a></li>
+        <li><a href="platform/using/faq-developers.md">Ontwikkelaars</a></li>
+        <li><a href="delivery/using/monitoring-deliverability.md">Bezorging</a></li>
+        </ul>
+    </td>
+    <td valign="top">
+        <ul>
+        <li><a href="production/using/performance-and-throughput-issues.md">Problemen met prestaties en doorvoer</a></li>
+        <li><a href="delivery/using/delivery-performances.md">Leveringsprestaties</a></li>
+        <li><a href="workflow/using/workflow-best-practices.md">Workflowprestaties optimaliseren</a></li>
+        <li><a href="workflow/using/monitoring-workflow-execution.md">Problemen met workflowuitvoering</a></li>
+        <li><a href="platform/using/sftp-server-usage.md">SFTP-servergebruik</a></li>
+        <li><a href="delivery/using/understanding-delivery-failures.md">Uitvoeren van fouten begrijpen</a></li>
+        </ul>
+    </td>
+   <td valign="top">
+        <ul>
+        <li><a href="workflow/using/workflow-best-practices.md">Best practices voor workflows</a></li>
+        <li><a href="workflow/using/monitoring-technical-workflows.md">Technische werkstroomcontrole</a></li>
+        <li><a href="delivery/using/about-message-tracking.md">Beheer van bijhouden begrijpen</a></li>
+        <li><a href="production/using/monitoring-guidelines.md">Controlemiddelen detecteren</a></li>
+        <li><a href="platform/using/import-export-workflows.md">Gegevens importeren met workflows</a></li>
+        <li><a href="delivery/using/steps-sending-the-delivery.md">Berichten verzenden in meerdere golven</a></li>
+        <li><a href="delivery/using/defining-the-email-content.md">E-mailinhoud ontwerpen</a></li>
+        <li><a href="delivery/using/delivery-best-practices.md">Best practices voor levering</a></li>
+        </ul>
+    </td>
+    <td valign="top">
+        <ul>
+        <li><a href="production/using/build-upgrade.md">Upgrade naar de nieuwste build</a></li>
+        <li><a href="platform/using/faq-build-upgrade.md">Veelgestelde vragen over upgrades samenstellen</a></li>
+        <li><a href="delivery/using/about-delivery-monitoring.md">Een levering controleren</a></li>
+        <li><a href="delivery/using/understanding-quarantine-management.md">quarantainebeheer begrijpen</a></li>
+        <li><a href="installation/using/get-started-security-privacy.md">Controlelijst voor beveiliging en privacy</a></li>
+        <li><a href="platform/using/privacy-management.md">Privacy- en toestemmingsbeheer</a></li>
+        <li><a href="platform/using/steps-to-create-a-query.md">Een query ontwerpen</a></li>
+        <li><a href="workflow/using/querying-recipient-table.md">Voorbeelden van query’s</a></li>
+        <li><a href="workflow/using/building-a-workflow.md">Een workflow maken</a></li>
+        </ul>
+    </td>
+    </tr>
+</table>
 
 ## Campaign-configuratiescherm {#control-panel}
 
@@ -130,17 +138,11 @@ Gemeenschappelijke Campaign Classic-Gemeenschap: zoek naar antwoorden in bestaan
 
 ### Downloadcentrum voor campagne openen
 
-Vanaf juni 2020 vervangt de softwaredistributie van de Experience Cloud-oplossing het oude Neolane Download Center en biedt deze een efficiëntere ervaring om uw software, pakketten en tools te zoeken en te downloaden.
-
-[Klik ](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) hier voor toegang tot de softwaredistributie van Experience Cloud.
+Vanaf juni 2020 vervangt de softwaredistributie van de Experience Cloud-oplossing het oude Neolane Download Center en biedt deze een efficiëntere ervaring om uw software, pakketten en tools te zoeken en te downloaden. [Klik ](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) hier voor toegang tot de softwaredistributie van Experience Cloud.
 Meer informatie over het nieuwe Downloadcentrum [op deze pagina](https://docs.adobe.com/content/heexperience-cloud/software-distribution/home.html).
 
 ### Een ticket maken of een chat starten
 
-Door een case te maken, kunt u contact opnemen met het Adobe Customer Support Team voor alle problemen die u tegenkomt bij uw Adobe-producten.
+Door een case te maken, kunt u contact opnemen met het Adobe Customer Support Team voor alle problemen die u tegenkomt bij uw Adobe-producten. Om u te helpen uw problemen op te lossen of problemen op te lossen, kunt u met de Adobe Admin Console chatten met de klantenondersteuning van Adobe.
 
-Om u te helpen uw problemen op te lossen of problemen op te lossen, stelt de Adobe Admin Console u in staat te chatten met [Adobe Klantenondersteuning](https://adminconsole.adobe.com/overview).
-
-Als u een uitgave wilt registreren of een chatsessie wilt starten in dat nieuwe systeem, maakt u verbinding met [Adobe Admin Console](https://adminconsole.adobe.com/overview).
-
-Volg de gedetailleerde procedure die in [deze pagina](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) wordt beschreven.
+Als u een uitgave wilt registreren of een chatsessie wilt starten in dat nieuwe systeem, maakt u verbinding met [Adobe Admin Console](https://adminconsole.adobe.com/overview). Volg de gedetailleerde procedure die in [deze pagina](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) wordt beschreven.
