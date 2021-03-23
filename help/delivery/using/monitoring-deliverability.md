@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: fa5679d91808edb8e3916d5f0e0f54c73198e934
+source-git-commit: 5d1a653a9a164c34bb70efcc86ff2d7bdf1130a2
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '531'
 ht-degree: 2%
 
 ---
@@ -17,16 +17,23 @@ ht-degree: 2%
 
 # Leverbaarheid controleren{#monitoring-deliverability}
 
-Hieronder vindt u nadere informatie over de verschillende monitoringinstrumenten die door Adobe Campaign worden geleverd en enkele aanvullende richtlijnen voor de controle op de leverantie.
+Hieronder vindt u meer informatie over de verschillende bewakingstools van Adobe Campaign en enkele aanvullende richtlijnen voor het benutten van de functies die Adobe Campaign biedt om de prestaties van uw platform te controleren.
 
-## Monitoringtools {#monitoring-tools}
+## Leverbaarheidscontrole {#configuration}
 
-Gebruik de functies van Adobe Campaign om de prestaties van uw platform te controleren.
+Deze functie is beschikbaar via een speciaal pakket in Adobe Campaign. Dit pakket moet geïnstalleerd zijn om het te kunnen gebruiken. Start vervolgens de server opnieuw om rekening te houden met het pakket.
+* Voor gehoste en hybride clients wordt **Deliverability monitoring** op uw exemplaar geconfigureerd door technische support en consultants van Adobe. Neem voor meer informatie contact op met de manager van uw Adobe-account.
+
+* Voor installaties op locatie moet u het **[!UICONTROL Deliverability monitoring (Email Deliverability)]**-pakket installeren via het menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Zie [Campaign Classic-standaardpakketten installeren](../../installation/using/installing-campaign-standard-packages.md) voor meer informatie.
+
+In Adobe Campaign Classic wordt **Deliverability monitoring** beheerd door de **[!UICONTROL Refresh for deliverability]** workflow. Het wordt geïnstalleerd door gebrek op alle instanties en laat u de lijst van de bounce kwalificatieregels van de post, de lijst van domeinen en de lijst van MXs initialiseren. Nadat het **[!UICONTROL Deliverability monitoring (Email Deliverability)]**-pakket is geïnstalleerd, wordt deze workflow elke avond uitgevoerd om de lijst met regels regelmatig bij te werken en kunt u de leverbaarheid van het platform actief beheren.
 
 Met het leveringspakket hebt u toegang tot:
 
 * Met het [Inbox-renderrapport](../../delivery/using/inbox-rendering.md) kunt u uw berichten voorvertonen op belangrijke e-mailclients om inhoud en reputatie te scannen.
 * Overzicht van berichtkwaliteit (inbox, spam).
+
+## Monitoringtools {#monitoring-tools}
 
 U kunt ook de volgende gereedschappen gebruiken:
 
@@ -48,24 +55,10 @@ Hier volgen enkele aanvullende richtlijnen voor het controleren van de leverbaar
 * Controleer regelmatig de [leveringdoorvoer](../../reporting/using/global-reports.md#delivery-throughput) voor het hele platform om te controleren of deze overeenkomt met de oorspronkelijke installatie.
 * Controleer of [retry](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) correct is ingesteld (30 minuten voor herbestellingsperiode en meer dan 20 pogingen) in leveringssjablonen.
 * Verifieer regelmatig dat [bounce](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management) brievenbus toegankelijk is en dat de rekening niet op het punt staat te verlopen.
-* Controleer elke leveringsproductie om ervoor te zorgen dat het met de geldigheid van de leveringsinhoud (b.v. &#39;Flash-verkoop&#39; moet in minuten worden geleverd, niet in dagen).
+* Controleer elke leveringstijd, die van [leveringsdashboard](../../delivery/using/delivery-dashboard.md) toegankelijk is, om ervoor te zorgen dat het met de geldigheid van de leveringsinhoud (b.v. &#39;Flash-verkoop&#39; moet in minuten worden geleverd, niet in dagen).
 * Wanneer het gebruiken van [golven](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves), verifieer dat elke golf genoeg tijd heeft om te beëindigen alvorens volgende wordt teweeggebracht.
 * Controleer of het aantal fouten en het aantal nieuwe [quarantines](../../delivery/using/understanding-quarantine-management.md) consistent zijn met andere leveringen.
 * Raadpleeg de [leveringslogboeken](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) zorgvuldig om het soort fouten te controleren die worden benadrukt (lijsten van gewezen personen, DNS kwesties, anti-spamregels, enz.).
-
-## Spam {#signal-spam}
-
-Spam van het signaal is de Franse dienst die anonymized terugkoppel meldt voor Franse ISPs (Orange, SFR).
-
-* Deze dienst staat u toe om de reputatie van Franse ISPs te volgen en de activiteitenevolutie van klanten te volgen.
-
-* Spam van het signaal verstrekt ook directe klachten dat het eind - gebruikers door een specifieke interface registreren. Die klachten worden dan in quarantaine geplaatst van het e-mailadresgegevensbestand.
-
-## 250ok {#deliverability-250ok}
-
-[250](https://250ok.com/) okis een complementaire controleoplossing aan de interne hulpmiddelen van de Adobe leverbaarheid die IP en domeinlijsten van gewezen personen, en reputatie-indicatoren verstrekken.
-
-De verstrekte informatie is real-time, wat een pro-actieve bijstand mogelijk maakt.
 
 <!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
 
