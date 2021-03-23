@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '768'
 ht-degree: 4%
 
 ---
@@ -57,7 +57,7 @@ Om de veiligheid te verbeteren, is een nieuw handtekeningmechanisme voor het vol
 >
 >Wanneer op een onjuist ondertekende URL wordt geklikt, wordt de volgende fout geretourneerd: &quot;Aangevraagde URL &#39;...&#39; is niet gevonden.&quot;
 
-Bovendien kunnen gehoste en hybride klanten met de introductie van Campagne 20.2 en Gold Standard een verbetering gebruiken om URL&#39;s die zijn gegenereerd door eerdere builds uit te schakelen. Deze optie is standaard uitgeschakeld. U kunt [Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) bereiken om deze functie in te schakelen.
+Bovendien kunnen gehoste en hybride klanten met de startversie van Campagne 20.2 en [!DNL Gold Standard] een verbetering gebruiken om URL&#39;s uit eerdere builds uit te schakelen. Deze optie is standaard uitgeschakeld. U kunt [Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) bereiken om deze functie in te schakelen.
 
 Om dit nieuwe mechanisme te activeren, moeten on-premise klanten deze stappen op alle servers van de Campagne volgen:
 
@@ -65,7 +65,7 @@ Om dit nieuwe mechanisme te activeren, moeten on-premise klanten deze stappen op
 1. Start de **nlserver**-service opnieuw.
 1. Start de webserver op de trackingserver opnieuw (apache2 op Debian, httpd op CentOS/RedHat, IIS op Windows).
 
-Klanten die werken met de Gold Standard 19.1.4 kunnen problemen ondervinden met de levering van pushberichten via de koppeling &#39;tracking&#39; of met leveringen via ankerlabels. In dat geval raadt Adobe aan het nieuwe handtekeningmechanisme voor het bijhouden van koppelingen uit te schakelen:
+Klanten die op [!DNL Gold Standard] 19.1.4 worden uitgevoerd, kunnen problemen ondervinden met de levering van pushberichten via een koppeling voor bijhouden of leveringen met behulp van ankerlabels. In dat geval raadt Adobe aan het nieuwe handtekeningmechanisme voor het bijhouden van koppelingen uit te schakelen:
 
 **Gehoste en hybride** klanten moeten contact opnemen met  [Customer ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) Cares om dit mechanisme uit te schakelen.
 
