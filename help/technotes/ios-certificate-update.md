@@ -6,9 +6,9 @@ description: TechNote
 hide: false
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: a21f970b6b81105517a11bcbd7f334173acc76e4
+source-git-commit: 08c6e84e07da2811c91aa58ddf40c5781de2b163
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---
@@ -28,10 +28,11 @@ Voer de volgende stappen uit om het nieuwe certificaat op te nemen:
 
 1. Download **AACCertificateServices 5/12/2020** basiscertificaat [van deze pagina](https://support.sectigo.com/Com_KnowledgeDetailPage?Id=kA03l00000117cL).
 
-1. Voeg het toe aan de OS Trust Store.
+1. Controleer of het AAA-certificaat aanwezig is in zowel uw OS- als JAVA-betrouwbaarheid. Zo niet, voegt u deze toe.
 
 1. Start Adobe Campaign Web Service opnieuw:
 
    ```
    nlserver restart web
    ```
+
