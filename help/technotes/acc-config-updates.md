@@ -6,7 +6,7 @@ description: TechNote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 01f4e4ee841a797f4be61ffc01096b7f651ce963
+source-git-commit: bdd746120f2162cf48eeb9d519513656bd4e75aa
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 7%
@@ -29,7 +29,7 @@ Om veiligheidsredenen moet u nu een upgrade uitvoeren naar een van de onderstaan
 >Voor vragen over deze wijzigingen neemt u contact op met [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
-## Beveiligingsupdates
+## Beveiligingsupdates {#acc-security-updates}
 
 De recentste versies van de Campagne komen met een veiligheidsmoeilijke situatie die bescherming tegen de kwesties van het Verzoek van de Server van de Zijde (SSRF) versterkt. Meer informatie [op deze pagina](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html).
 
@@ -62,7 +62,7 @@ U moet een upgrade uitvoeren naar een van de nieuwere builds die hierboven worde
 >Als u niet binnen de aanbevolen periode kunt upgraden, **dient u contact op te nemen met het team van de klantenservice van Adobe om een handmatige beveiligingsoplossing voor de korte termijn toe te passen op uw exemplaar**.
 
 
-## Campaign Classic Client Console-update
+## Campaign Classic Client Console-update {#acc-cc-updates}
 
 De **nu beschikbare** consoleversies hieronder zouden moeten worden geïnstalleerd om een onlangs geïdentificeerde regressie op te lossen. Door deze regressie konden sommige componenten van de clientconsole niet worden gebruikt, zoals de datumkiezer en het beheer van afbeeldingen in leveringen. **Upgrade van console** is verplicht.
 
@@ -105,7 +105,7 @@ Zodra alle instanties worden bevorderd, moet de Console van de Cliënt ook aan d
 
 * [Leer hoe u de Campagne Client Console](../installation/using/installing-the-client-console.md) installeert.
 
-## Integratie met Experience Cloud Triggers
+## Integratie met Experience Cloud-triggers {#acc-triggers-updates}
 
 De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt. De de integratieauthentificatie van trekkers, oorspronkelijk gebaseerd op de authentificatie van AUTH om tot pijpleiding toegang te hebben, is bewogen aan Adobe I/O. Deze wordt op **30 november 2021** ingetrokken. [Meer informatie](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
@@ -131,7 +131,7 @@ Bovendien moeten klanten voor hybride omgevingen ervoor zorgen dat de pijpleidin
 
 [Leer hoe u naar Adobe I/O](../integrations/using/configuring-adobe-io.md) migreert.
 
-## APNs-updates
+## APNs-updates {#acc-apns-updates}
 
 ### API voor op HTTP/2 gebaseerde APNs-providers
 
