@@ -5,10 +5,10 @@ product: campaign
 title: Adobe Campaign Classic-productdocumentatie
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 9ce945af1ed1cabd5041a28812e540f814211071
+source-git-commit: 9f1c4110ef49c87719f1cc84ad08f687865561d1
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 52%
+source-wordcount: '295'
+ht-degree: 51%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 52%
 
 * **[Ga naar de op HTTP/2 gebaseerde APNs-provider ](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/> APILearn om te migreren van het oude binaire protocol naar de op HTTP/2 gebaseerde API voor de APNs-provider
 
-* **[Ondersteuning krijgen](https://helpx.adobe.com/nl/campaign/kb/ac-support.html)**<br/>
+* **[Ondersteuning krijgen](support.md)**<br/>
 Krijg toegang tot veelgestelde vragen, best practices en Help-resources en vraag hulp
 
 [Meer updates](/help/rn/using/documentation-updates.md)
