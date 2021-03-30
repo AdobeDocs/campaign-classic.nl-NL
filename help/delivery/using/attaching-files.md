@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '928'
 ht-degree: 1%
 
 ---
 
 
-# Bestanden bijvoegen{#attaching-files}
+# Bestanden bijvoegen bij een e-mail{#attaching-files}
 
 ## E-mailbijlagen {#about-email-attachments}
 
@@ -34,7 +34,7 @@ Er zijn twee mogelijke gevallen:
 >
 >Dit type van configuratie wordt over het algemeen uitgevoerd in de leveringsmalplaatjes. Raadpleeg [Informatie over sjablonen](../../delivery/using/about-templates.md) voor meer informatie.
 
-## Een lokaal bestand {#attaching-a-local-file} bijvoegen
+## Lokaal bestand {#attaching-a-local-file} bijvoegen
 
 Volg onderstaande stappen om een lokaal bestand aan een levering te koppelen.
 
