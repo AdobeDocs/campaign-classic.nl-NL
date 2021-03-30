@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '1102'
-ht-degree: 9%
+source-wordcount: '1158'
+ht-degree: 6%
 
 ---
 
@@ -43,9 +43,11 @@ Om dergelijke problemen te voorkomen, raadt Adobe aan de onderstaande beste prak
 
 >[!NOTE]
 >
->Als uw instantie wordt gehost op AWS, kunt u de opslagruimte van uw SFTP-server controleren met de Campaign Classic [Configuratiescherm](https://docs.adobe.com/content/help/en/control-panel/using/sftp-management/sftp-storage-management.html).
+>Als uw instantie wordt gehost op AWS, kunt u de opslagruimte van uw SFTP-server controleren met de Campaign Classic [Configuratiescherm](https://docs.adobe.com/content/help/en/control-panel/using/sftp-management/sftp-storage-management.html). Als u wilt controleren of uw instantie wordt gehost op AWS, voert u de stappen uit die worden beschreven in [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 >
->Als u wilt controleren of uw instantie wordt gehost op AWS, voert u de stappen uit die in [deze sectie](https://docs.adobe.com/content/help/en/control-panel/using/faq.html#ims-org-id) worden beschreven .
+>Het Configuratiescherm is toegankelijk voor alle beheergebruikers. De stappen om Admin toegang tot een gebruiker te verlenen zijn gedetailleerd in [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>
+>Merk op dat uw instantie moet worden geüpgraded met de nieuwste [Gold Standard](../../rn/using/gs-overview.md)-build of de [nieuwste GA-build (21.1)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 * De mogelijkheden voor servergrootte variëren afhankelijk van uw licentie. In elk geval moet u de minimale gegevens mogelijk houden en de gegevens slechts zo lang bewaren als nodig is (15 dagen is de maximale termijn).
 
