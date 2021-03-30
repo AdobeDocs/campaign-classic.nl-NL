@@ -7,10 +7,10 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 96%
+source-wordcount: '902'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,15 @@ ht-degree: 96%
 
 Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd met de **nieuwste versie van de Campaign Classic-releasekandidaat**.
 
-Voor Campaign Classic [!DNL Gold Standard]-versie (nieuwste GA-build), [raadpleegt u deze pagina](../../rn/using/gold-standard.md).
+>[!NOTE]
+>
+>Campagne **GA-builds** zijn:
+>* [[!DNL Gold Standard] 11 release](../../rn/using/gold-standard.md#gs-11)
+>* [Release van campagne 20.2.4](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
+
+>
+
+
 
 ## ![](assets/do-not-localize/blue_2.png) Release 21.1.1 - build 9277 {#release-21-1-1-build-9277}
 
