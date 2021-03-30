@@ -1,15 +1,15 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Protocol en instellingen voor sms-connector
-description: Leer meer op de schakelaar van SMS en hoe te om het te vormen.
+title: Problemen met sms oplossen
+description: Meer informatie over het oplossen van problemen met SMS-kanalen
 audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
-source-wordcount: '2751'
+source-wordcount: '2744'
 ht-degree: 0%
 
 ---
