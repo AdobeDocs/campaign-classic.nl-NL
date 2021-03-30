@@ -7,17 +7,18 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 translation-type: tm+mt
-source-git-commit: 1b02c3870ddc01705f01ea992e734cf0810e003a
+source-git-commit: c96a7faf5c65848a3f383a5721bfa45048ecea57
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 6%
+source-wordcount: '934'
+ht-degree: 4%
 
 ---
 
 
-# Campagne-clientconsole installeren{#installing-the-client-console}
+# De Campagne-clientconsole installeren en bijwerken{#installing-the-client-console}
 
-De console van de Cliënt van de campagne is een rijke cliënt die u toelaat om met uw de toepassingsserver(s) van de Campagne te verbinden.
+
+De Console van de Cliënt van de campagne is een rijke cliënt die u toelaat om met uw de toepassingsserver(s) van de Campagne te verbinden.
 
 Voordat u begint, moet u Campagne [Compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html) controleren en de URL van de campagneserver en gebruikersgegevens ophalen.
 
@@ -27,9 +28,70 @@ Voordat u begint, moet u Campagne [Compatibiliteitsmatrix](https://helpx.adobe.c
 
 ![](assets/do-not-localize/how-to-video.png) Ontdek hoe u de Adobe Campaign Client in  [video kunt installeren en instellen](#video)
 
-## Download de console{#download-the-client-console}
+Het proces voor het installeren of bijwerken van de clientconsole is afhankelijk van uw implementatie van Adobe Campaign Classic.
+Controleer de onderstaande details om te begrijpen wat nodig is voor uw implementatie.
 
-Volg onderstaande stappen om de Adobe Campaign-clientconsole te downloaden en installeren:
+
+## Adobe gehoste implementaties {#hosted-customers}
+
+Uw clientconsole(s) installeren of bijwerken:
+
+1. Adobe kan direct implementeren. Zodra de console wordt bijgewerkt, zullen de gebruikers worden ertoe aangezet om de recentste versie van de cliëntconsole in een pop-up venster te downloaden.
+
+1. U kunt aan uw cliëntconsole(s) van [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) downloaden
+
+   **Gebruikers hebben beheerderstoegang nodig om de update te voltooien. Als de gebruikers geen beheerdersrechten hebben, moet een systeembeheerder implementeren op alle clientconsoles**
+
+
+
+## Hybride en volledig op locatie implementaties {#hybrid-onprem-customers}
+
+Adobe Campaign-gebruikers kunnen zich alleen aanmelden bij de instantie die u hebt gemaakt en geconfigureerd, als ze de clientconsole gebruiken.
+
+### De console beschikbaar maken voor gebruikers {#make-console-available}
+
+Wanneer de computer die wordt gebruikt om een Adobe Campaign-toepassingsserver (nlserver-web) te starten, gebruikersverbindingen ontvangt via de clientconsole, kunt u deze configureren om het installatieprogramma voor de Adobe Campaign-client beschikbaar te maken via een HTML-interface. Wanneer een nieuwe versie van de clientconsole beschikbaar is, worden gebruikers uitgenodigd deze te downloaden wanneer ze hun clientconsole starten.
+
+Hiervoor moet u:
+
+1. Selecteer het pakket dat het consoleinstallatieprogramma bevat.
+
+   Dit bestand wordt setup-client-7.X.XXXX.exe voor v7 of setup-client-6.X.XXXX.exe voor v6.1 genoemd, waarbij X de subversie van Adobe Campaign is en XXXX de build   getal.
+
+1. Kopieer en plak dit pakket naar de installatiemap van Adobe Campaign (op de marketingserver voor hybride installaties) onder /datakit/nl/eng/jsp.
+
+1. Start Adobe Campaign-server.
+
+>[!CAUTION]
+>
+>  Adobe raadt aan de optie **[!UICONTROL No longer ask this question]** niet in te schakelen om ervoor te zorgen dat alle gebruikers worden gewaarschuwd wanneer een nieuwe versie van de console beschikbaar is.  Als deze optie is geselecteerd, wordt de gebruiker niet op de hoogte gesteld van nieuwe beschikbare versies.
+
+Als **[!UICONTROL No longer ask this question]** is geselecteerd, kunt u deze herinnering terugstellen. Alleen systeembeheerders die vertrouwd zijn met het bewerken van het Windows-register, moeten deze wijzigingen aanbrengen:
+
+1. Open de Register-editor met de opdracht **regedit** in het menu **[!UICONTROL Start > Run]**.
+
+1. Zoek het knooppunt en vouw het uit.
+
+   ```
+   \HKEY_CURRENT_USER\Software\Neolane\NL_6\nlclient
+   ```
+
+1. Verwijder het **confAdvisedUpgrade**-item en sluit de Register-editor.
+
+>[!NOTE]
+>
+>Als u een bijgewerkte console op een bestaande implementatie toepast, zullen de gebruikers automatisch een herinnering ontvangen om hun cliëntconsole bij te werken. Als u Campagne voor het eerst uitvoert, zullen de gebruikers de console moeten downloaden. Zie hieronder voor meer informatie over beide opties
+
+### Werk de console bij - bestaande implementatie{#update-the-client-console}
+
+Zodra de console in de de serveromslag van de Campagne beschikbaar is, zullen de gebruikers worden ertoe aangezet om de recentste versie van de cliëntconsole in een pop-up venster te downloaden.
+
+**Gebruikers hebben beheerderstoegang nodig om de update te voltooien. Als de gebruikers geen beheerdersrechten hebben, moet een systeembeheerder implementeren op alle clientconsoles**
+
+
+### Download de console - nieuwe implementatie{#download-the-client-console}
+
+Gebruikers moeten de console nu downloaden en installeren door de onderstaande stappen uit te voeren:
 
 1. Open een webbrowser en download de console vanaf het volgende adres:
 
@@ -45,12 +107,7 @@ Volg onderstaande stappen om de Adobe Campaign-clientconsole te downloaden en in
 1. Download en sla het instellingenbestand van de client op.
 1. Het gedownloade bestand uitvoeren op een computer in Windows: De installatie wordt gestart. Het standaardinstallatiepad van de clientconsole is **$PROGRAFinnLES$/Adobe/Adobe Campaign Classic vX Client**, waarbij &#39;X&#39; &#39;6&#39; of &#39;7&#39; is, volgens uw Adobe Campaign-versie.
 
->[!NOTE]
->
->U kunt de update aan de recentste versie aan alle gebruikers van de de cliëntconsole van de Campagne voorstellen door het console uitvoerbare dossier op een specifieke omslag van de server van de Marketing van de Campagne te kopiëren. [Meer informatie](../../installation/using/client-console-availability-for-windows.md).
-
-
-## De verbinding maken{#create-the-connection}
+### Maak de verbinding - alleen eerste gebruikers{#create-the-connection}
 
 Nadat de clientconsole is geïnstalleerd, voert u de onderstaande stappen uit om de verbinding met de toepassingsserver tot stand te brengen:
 
@@ -78,7 +135,7 @@ U kunt zo veel verbindingen toevoegen als u nodig hebt om bijvoorbeeld verbindin
 >
 >Met de knop **[!UICONTROL Add]** kunt u **[!UICONTROL folders]** maken om al uw verbindingen te organiseren. U hoeft alleen elke verbinding naar een map te slepen.
 
-## Aanmelden bij Adobe Campaign
+### Aanmelden bij Adobe Campaign
 
 Volg onderstaande stappen om u aan te melden bij een bestaande instantie:
 
@@ -91,6 +148,8 @@ Volg onderstaande stappen om u aan te melden bij een bestaande instantie:
 1. Klik op **[!UICONTROL Ok]**
 
 1. Voer uw aanmeldingsgegevens voor de gebruiker in en klik op **[!UICONTROL Log in]**
+
+
 
 **Verwante onderwerpen**
 
