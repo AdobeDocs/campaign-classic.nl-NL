@@ -7,10 +7,10 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d41119e61ee2088e1b8cab65354547420f8e7737
+source-git-commit: 57c1ca827beac9a3c95e63ca17fdb43be237eb28
 workflow-type: tm+mt
-source-wordcount: '4250'
-ht-degree: 94%
+source-wordcount: '4275'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,9 @@ Raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/us
 
 ## Maart 2021 {#march-2021}
 
-Er is een nieuwe pagina toegevoegd met richtlijnen en verwijzingen voor ondersteuning van Campaign Classic. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/ac-support.html)
+De [Aan de slag met SMS-sectie](../../delivery/using/sms-channel.md) is gereorganiseerd en verbeterd. U kunt nu leren hoe u het SMS-kanaal [configureert, [een SMS](../../delivery/using/sms-create.md), [send en track SMS](../../delivery/using/sms-send.md) in speciale secties maakt.](../../delivery/using/sms-set-up.md)
+
+De pagina &quot;Help en ondersteuningsopties&quot; voor Campaign Classic is geïntegreerd in de kerndocumentatie. [Meer informatie](../../support.md)
 
 Er is een nieuwe sectie toegevoegd met aanbevolen procedures en controles voor beveiliging en privacy. [Meer informatie](../../installation/using/get-started-security-privacy.md)
 
@@ -440,7 +442,7 @@ Er is een nieuwe pagina toegevoegd met best practices voor de Adobe Analytics-da
 
 De handleiding om aan de slag te gaan met best practices voor levering is verplaatst en bijgewerkt. [Meer informatie](../../delivery/using/delivery-best-practices.md)
 
-Er is een aanbeveling toegevoegd aan de documentatie van het sms-kanaal om problemen te voorkomen bij het gebruik van meerdere externe accounts die de uitgebreide algemene SMPP-connector gebruiken met hetzelfde provideraccount. [Meer informatie](../../delivery/using/sms-channel.md#automatic-reply)
+Er is een aanbeveling toegevoegd aan de documentatie van het sms-kanaal om problemen te voorkomen bij het gebruik van meerdere externe accounts die de uitgebreide algemene SMPP-connector gebruiken met hetzelfde provideraccount. [Meer informatie](../../delivery/using/sms-set-up.md#automatic-reply)
 
 Er is informatie toegevoegd aan de documentatie bij de activiteit Planner over hoe u gelijktijdige uitvoeringen van een workflow kunt voorkomen. [Meer informatie](../../workflow/using/scheduler.md)
 
