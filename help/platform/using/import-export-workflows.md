@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 8%
+ht-degree: 5%
 
 ---
 
 
-# Data importeren en exporteren met behulp van workflows {#import-export-workflows}
+# Gegevens importeren en exporteren met behulp van workflows {#import-export-workflows}
 
 ## Gegevens {#collecting-data-workflows} verzamelen
 
@@ -47,7 +47,7 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 
 Nadat gegevens zijn verzameld, kunt u deze gebruiken in uw workflows, bijvoorbeeld om een levering te verrijken of de database bij te werken. Raadpleeg [deze pagina](../../workflow/using/how-to-use-workflow-data.md) voor meer informatie.
 
-## Data exporteren {#exporting-data-via-a-workflow}
+## Gegevens exporteren {#exporting-data-via-a-workflow}
 
 Workflows kunnen een handige manier zijn om een aantal van uw exportprocessen te automatiseren of om nauwkeurige sets gegevens te exporteren nadat u een aantal van de beschikbare activiteiten voor gegevensbeheer hebt gebruikt om uw gegevens te transformeren.
 
