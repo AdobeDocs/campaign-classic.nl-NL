@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 7%
+source-wordcount: '543'
+ht-degree: 6%
 
 ---
 
 
-# Adobe Campaign starten{#launching-adobe-campaign}
+# Adobe Campaign{#launching-adobe-campaign} starten
 
 De console van de Cliënt van de campagne is een rijke cliënt die u toelaat om met uw de toepassingsserver(s) van de Campagne te verbinden. Leer hoe u de clientconsole downloadt en configureert in [deze pagina](../../installation/using/installing-the-client-console.md).
 
@@ -27,7 +27,7 @@ In het verbindingsvenster van de clientconsole kunt u bestaande databases select
 
 ![](assets/acc-logon.png)
 
-## Verbinding maken met Adobe Campaign {#connecting-to-adobe-campaign}
+## Verbinden met Adobe Campaign {#connecting-to-adobe-campaign}
 
 U kunt verbinding maken met Adobe Campaign via uw Adobe ID. Raadpleeg [deze pagina](../../integrations/using/about-adobe-id.md) voor meer informatie.
 
@@ -74,7 +74,7 @@ De id&#39;s en wachtwoorden van operatoren met toegang tot de software en hun re
 
 Deze functionaliteit wordt beschreven in [Toegangsbeheer](../../platform/using/access-management.md) sectie.
 
-## Verbinding met Adobe Campaign {#disconnecting-from-adobe-campaign} verbreken
+## Verbinding met Adobe Campaign verbreken {#disconnecting-from-adobe-campaign}
 
 Als u de verbinding met Adobe Campaign wilt verbreken, gebruikt u het eerste pictogram in de pictogrambalk.
 
@@ -105,6 +105,6 @@ Meer informatie over [!DNL Gold Standard] [in dit artikel](../../rn/using/gs-ove
 
 **Verwante onderwerpen**:
 
-* [Adobe Campaign - Opties voor Help en ondersteuning](https://helpx.adobe.com/nl/campaign/kb/ac-support.html)
+* [Adobe Campaign - Opties voor Help en ondersteuning](../../support.md)
 * [Adobe Campaign-softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Adobe Experience Cloud-ondersteuning en sessies met experts](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
