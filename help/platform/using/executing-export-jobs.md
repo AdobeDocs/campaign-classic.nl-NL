@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 ---
 
 
-# Exporttaken configureren {#executing-export-jobs}
+# Exporttaken {#executing-export-jobs} configureren
 
 Met de exporttaken hebt u toegang tot gegevens in de database en kunt u deze extraheren: contacten, cliënten, lijsten, segmenten, enz.
 
@@ -23,9 +23,9 @@ Het kan bijvoorbeeld handig zijn om gegevens voor het bijhouden van campagnes te
 
 Met de wizard Exporteren kunt u een exportbewerking configureren, de opties ervan definiëren en uitvoering starten. Het is een reeks schermen waarvan de inhoud afhankelijk is van het type export (eenvoudig of meerdere) en de rechten van de operator.
 
-De vertoningen van de de uitvoertovenaar na het creëren van een nieuwe de uitvoerbaan (zie [het Creëren van de invoer en de uitvoerbanen](../../platform/using/creating-import-export-jobs.md).
+De wizard Exporteren wordt weergegeven nadat een nieuwe exporttaak is gemaakt (zie [Import- en exporttaken maken](../../platform/using/creating-import-export-jobs.md).
 
-## Stap 1 - De exportsjabloon kiezen {#step-1---choosing-the-export-template}
+## Stap 1 - kies het uitvoermalplaatje {#step-1---choosing-the-export-template}
 
 Wanneer u de wizard Exporteren start, moet u eerst een sjabloon selecteren. Als voorbeeld, om de uitvoer van ontvangers te vormen die onlangs registreerden, volg de stappen hieronder:
 
@@ -63,7 +63,7 @@ Wanneer het exporteren wordt gestart vanuit het knooppunt **[!UICONTROL Jobs]**,
 
    U moet de datum van de laatste wijziging invoeren. Deze kan worden opgehaald uit een veld of berekend.
 
-## Stap 3 - De uitvoerindeling {#step-3---defining-the-output-format} definiëren
+## Stap 3 - Bepaal het outputformaat {#step-3---defining-the-output-format}
 
 Selecteer een uitvoerindeling voor het exportbestand. De volgende indelingen kunnen worden gebruikt: tekst, tekst in vaste kolommen, CSV en XML.
 
@@ -125,10 +125,10 @@ Klik op **[!UICONTROL Start the preview of the data]** voor een voorvertoning va
 
 Klik op de tabbladen onder aan de wizard om te schakelen van de voorvertoning van de resultaten in kolommen naar de resultaten in XML. U kunt de gegenereerde SQL-query&#39;s ook weergeven.
 
-## Stap 9 - De export starten {#step-9---launching-the-export}
+## Stap 9 - De export {#step-9---launching-the-export} starten
 
 Klik **[!UICONTROL Start]** om gegevensexport te starten.
 
 ![](assets/s_ncs_user_export_wizard08.png)
 
-U kunt de uitvoering van de importtaak vervolgens controleren (zie [De uitvoering van taken controleren](../../platform/using/monitoring-jobs-execution.md).
+U kunt de uitvoering van de invoertaak dan controleren (zie [Uitvoering van taken controleren](../../platform/using/monitoring-jobs-execution.md).
