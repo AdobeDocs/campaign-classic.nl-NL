@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: Lijsten maken en beheren
 description: Leer lijsten maken en beheren
-audience: platform
-content-type: reference
-topic-tags: profile-management
+feature: Profielen
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '808'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 # Lijsten maken en beheren{#creating-and-managing-lists}
 
-## Informatie over lijsten in Adobe Campaign {#about-lists-in-adobe-campaign}
+## Wat is een lijst? {#about-lists-in-adobe-campaign}
 
 Een lijst is een statische set profielen die kan worden gebruikt voor leveringsacties of die kan worden bijgewerkt tijdens importbewerkingen of tijdens workflowuitvoering. Een populatie die via een query uit de database is geëxtraheerd, kan bijvoorbeeld een lijst leveren.
 
@@ -69,7 +69,7 @@ U kunt nieuwe profielen rechtstreeks maken vanuit het venster Profielen toevoege
 
 ![](assets/s_ncs_user_new_recipient_from_group.png)
 
-De profiellijst kan net als andere lijsten worden gevormd. Zie [Lijsten configureren](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
+De profiellijst kan net als andere lijsten worden gevormd. Zie [deze sectie](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
 
 ## Gegevens koppelen aan een lijst {#linking-data-to-a-list}
 
@@ -118,7 +118,7 @@ Als u een profiel uit een lijst wilt verwijderen, kunt u:
 
    ![](assets/recipient_remove_a_list.png)
 
-## Een lijst met profielen verwijderen {#deleting-a-list-of-profiles}
+## Een lijst met profielen {#deleting-a-list-of-profiles} verwijderen
 
 U kunt een of meer lijsten verwijderen uit de lijst met groepen in de Adobe Campaign-structuur. Om dit te doen, geef de boom via de **[!UICONTROL Advanced > Explorer]** verbinding in de homepage van Adobe Campaign uit. Selecteer de desbetreffende groep(en) en klik met de rechtermuisknop. Selecteer **[!UICONTROL Delete]**. U wordt in een waarschuwingsbericht gevraagd de verwijdering te bevestigen.
 
@@ -136,7 +136,7 @@ Leer hoe te om een publiek tot stand te brengen door een lijst van ontvangers va
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-### Een lijst met ontvangers maken met een workflow {#create-list-in-a-wf-video}
+### Hoe gebruik een werkschema om een lijst van ontvangers {#create-list-in-a-wf-video} tot stand te brengen
 
 Leer hoe u een workflow maakt om ontvangers als doel in te stellen en hoe u deze terugkeert voordat u de lijst in een e-maildoel gebruikt.
 
