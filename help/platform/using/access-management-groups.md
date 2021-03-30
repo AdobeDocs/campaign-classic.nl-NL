@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: Operatorgroepen maken en beheren
 description: Leer hoe u toegang verleent aan groepen operatoren
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: Toegangsbeheer
+role: Bedrijfs Praktijk, Beheerder
+level: Beginner
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,6 @@ De standaardgroepen met operatoren zijn:
 
    * **[!UICONTROL INSERT FOLDERS]**: het recht om mappen in te voegen in de Adobe Campaign-structuur (op voorwaarde dat u bewerkingsrechten hebt voor de betrokken vertakkingen);
    * **[!UICONTROL WORKFLOW]**: recht om werkstromen te gebruiken.
-
    >[!NOTE]
    >
    >Met deze groep kunnen operatoren geen leveringen starten.
@@ -100,6 +99,3 @@ Deze groep bevat de volgende benoemde rechten:
 
    * **[!UICONTROL INSERT FOLDERS]**: Recht om mappen in te voegen in de Adobe Campaign-structuur (op voorwaarde dat u bewerkrechten hebt voor de betrokken vertakkingen).
    * **[!UICONTROL EDIT FOLDERS]**: Recht om omslageigenschappen zoals interne naam, etiket, bijbehorende beeld, subomslagorde te veranderen, etc.
-
-
-
