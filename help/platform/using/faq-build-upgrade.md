@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
 workflow-type: tm+mt
-source-wordcount: '2034'
+source-wordcount: '2024'
 ht-degree: 3%
 
 ---
@@ -168,7 +168,7 @@ Ja. De server wordt afgesloten tijdens een upgrade om ervoor te zorgen dat de ge
 
 Als u problemen ondervindt na een upgrade van de build, neemt u contact op met [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De Zorg van de klant plant de bouwstijldata en opent bouwstijlgerelateerde kaartjes.
 
-Meer informatie over de Help- en ondersteuningsopties voor Campaign Classic](https://helpx.adobe.com/nl/campaign/kb/ac-support.html)[
+Meer informatie over de Help- en ondersteuningsopties voor Campaign Classic](../../support.md)[
 
 ## Controlelijst voor upgrades maken {#check-list}
 
@@ -208,5 +208,5 @@ alle inhoud wordt weergegeven en weergegeven.
 
 * [Een build-upgrade uitvoeren](../../production/using/build-upgrade.md)
 * [Opmerkingen bij de release Campaign Classic](../../rn/using/rn-overview.md)
-* [Help- en ondersteuningsopties voor Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html)
+* [Help- en ondersteuningsopties voor Campaign Classic](../../support.md)
 * [[!DNL Gold Standard] programma](../../rn/using/gs-overview.md)
