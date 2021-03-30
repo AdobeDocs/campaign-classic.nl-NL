@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '184'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ U kunt de uitvoering van uw import- en exporttaken rechtstreeks volgen vanuit de
 ![](assets/s_ncs_user_export_list_and_details.png)
 
 * Op het tabblad **[!UICONTROL Journal]** kunt u logberichten over uitvoering bekijken.
-* Het tabblad **[!UICONTROL Rejects]** bevat de geweigerde records. Zie [Gedrag in geval van een fout](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error).
+* Het tabblad **[!UICONTROL Rejects]** bevat de geweigerde records. Zie [deze sectie](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error).
 
 Op het tabblad **[!UICONTROL General]** geeft het veld **[!UICONTROL Status]** de huidige status van een taak aan.
 
