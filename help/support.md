@@ -3,14 +3,11 @@ solution: Campaign Classic
 product: campaign
 title: 'Help- en ondersteuningsopties voor Campaign Classic '
 description: Hebt u ondersteuning voor Campaign Classic nodig? Je bent op de juiste plaats!
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 1d9c96d1cd8ba2a8099271165a1671d5589230fb
+source-git-commit: 108f6cf912bb855fd34263d9e069260769a3ef6a
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '771'
 ht-degree: 10%
 
 ---
@@ -45,7 +42,7 @@ Hoe te aan een nieuwe bouwstijl te bevorderen? hoe kan de uitvoering van de work
         <ul>
         <li><a href="platform/using/faq-key-concepts.md">Belangrijkste concepten</a></li>
         <li><a href="platform/using/faq-campaign-config.md">Campagne-instellingen</a></li>
-        <li><a href="platform/using/faq-reporting.md">Rapporten</a></li>
+        <li><a href="platform/using/faq-reporting.md">Rapportage</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">Buildupgrade</a></li>
         <li><a href="platform/using/faq-messages.md">Berichten testen, verzenden en volgen</a></li>
         <li><a href="platform/using/faq-workflows.md">Workflows</a></li>
@@ -97,8 +94,14 @@ Hoe te aan een nieuwe bouwstijl te bevorderen? hoe kan de uitvoering van de work
 
 ### Wat is het Configuratiescherm?
 
-Met het Configuratiescherm kunt u de efficiëntie van uw werk als productbeheerder van Campaign Classic verhogen, doordat u instellingen kunt beheren en het gebruik van elk van uw instanties kunt bijhouden.
+Met het Configuratiescherm kunt u de efficiëntie van uw werk als productbeheerder van Campaign Classic verhogen, doordat u de instellingen kunt beheren en het gebruik voor elk van uw instanties kunt bijhouden.
 [Klik ](https://docs.adobe.com/content/hecontrol-panel/using/discover-control-panel/key-features.html) hier voor meer informatie.
+
+>[!NOTE]
+>
+>Het Configuratiescherm is toegankelijk voor alle beheergebruikers. De stappen om Admin-toegang aan een gebruiker te verlenen, worden gedetailleerd beschreven in [deze sectie](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>
+>Merk op dat uw instantie op AWS moet worden gehost en moet worden geüpgraded met de nieuwste [Gold Standard](rn/using/gs-overview.md)-build of de [nieuwste GA-build (21.1)](rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [deze sectie](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Als u wilt controleren of uw instantie wordt gehost op AWS, voert u de stappen uit die worden beschreven in [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
 ### Toegang tot Configuratiescherm?
 
