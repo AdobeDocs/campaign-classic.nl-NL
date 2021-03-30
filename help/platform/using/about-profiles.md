@@ -3,23 +3,25 @@ solution: Campaign Classic
 product: campaign
 title: Informatie over profielen
 description: Informatie over profielen
-audience: platform
-content-type: reference
-topic-tags: profile-management
+feature: Profielen, publiek
+role: Zakelijke praktiserer, Data Architect
+level: Beginner
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 17%
+source-wordcount: '999'
+ht-degree: 12%
 
 ---
 
 
-# Informatie over profielen{#about-profiles}
+# Aan de slag met profielen{#about-profiles}
 
-Profielen (klanten, prospects, leden van nieuwsbrieven, enzovoort) zijn gecentraliseerd in de Adobe Campaign-database. Er zijn vele mogelijke mechanismen om profielen te verwerven en deze database op te bouwen: online verzameling via webformulieren, handmatig of automatisch importeren van tekstbestanden, replicatie met bedrijfsdatabases of andere informatiesystemen. Met Adobe Campaign kunt u de marketinggeschiedenis, aankoopgegevens, voorkeuren, CRM-gegevens en alle relevante PI-gegevens in een geconsolideerde weergave opnemen om te analyseren en actie te ondernemen.
+Profielen worden gecentraliseerd in de Adobe Campaign-database. Er zijn vele mogelijke mechanismen om profielen te verwerven en deze database op te bouwen: online verzameling via webformulieren, handmatig of automatisch importeren van tekstbestanden, replicatie met bedrijfsdatabases of andere informatiesystemen. Met Adobe Campaign kunt u de marketinggeschiedenis, aankoopgegevens, voorkeuren, CRM-gegevens en alle relevante PI-gegevens in een geconsolideerde weergave opnemen om te analyseren en actie te ondernemen.
 
-In Adobe Campaign zijn ontvangers de standaardprofielen voor het verzenden van leveringen (e-mails, sms’en, enzovoort). Dankzij de ontvangerdata die in de database worden opgeslagen, kunt u het doel filteren dat een bepaalde levering zal ontvangen en personalisatiedata in uw leveringscontent toevoegen. De database bevat andere typen profielen. Ze zijn ontworpen voor verschillende applicaties. Seed-profielen worden bijvoorbeeld gemaakt om de leveringen te testen voordat ze naar het uiteindelijke doel worden verzonden.
+&quot;**Profiel**&quot; betekent een record met informatie (bijvoorbeeld: een record in de nmsRecipient-tabel of een externe tabel met een cookie-id, de klant-id, de mobiele id of andere informatie die relevant is voor een bepaald kanaal) die een eindklant, perspectief of lead vertegenwoordigt.
+
+In Adobe Campaign zijn ontvangers de standaardprofielen voor het verzenden van leveringen (e-mails, sms’en, enzovoort). De ontvangende gegevens die in het gegevensbestand worden opgeslagen laten u toe om het doel te filtreren dat om het even welke bepaalde levering zal ontvangen en verpersoonlijkingsgegevens in uw leveringsinhoud toe te voegen. De database bevat andere typen profielen. Ze zijn ontworpen voor verschillende applicaties. Seed-profielen worden bijvoorbeeld gemaakt om de leveringen te testen voordat ze naar het uiteindelijke doel worden verzonden.
 
 ![](assets/do-not-localize/how-to-video.png) [Werken met het concept profielen in video](#create-profiles-video)
 
@@ -55,11 +57,11 @@ Met de koppeling **[!UICONTROL Profiles and targets]** kunt u ontvangers weergev
 
 Het geeft u ook toegang tot:
 
-* lijsten; zie [Lijsten maken en beheren](../../platform/using/creating-and-managing-lists.md),
-* abonnementsdiensten; verwijzen naar [deze pagina](../../delivery/using/managing-subscriptions.md),
-* webtoepassingen; verwijzen naar [deze pagina](../../web/using/about-web-applications.md),
-* invoer en uitvoer ( werkgelegenheid ) ; zie [Algemene invoer en uitvoer](../../platform/using/about-generic-imports-exports.md);
-* doelgerichte werkstromen; verwijst naar [deze pagina](../../workflow/using/building-a-workflow.md#implementation-steps-).
+* lijsten - [Meer informatie](../../platform/using/creating-and-managing-lists.md)
+* abonnementsservices - [Meer informatie](../../delivery/using/managing-subscriptions.md)
+* webtoepassingen - [Meer informatie](../../web/using/about-web-applications.md)
+* import en export (taken) - [Meer informatie](../../platform/using/about-generic-imports-exports.md)
+* doelgericht werken - [Meer informatie](../../workflow/using/building-a-workflow.md#implementation-steps-)
 
 Op de pagina met ontvangers kunt u veelvuldige bewerkingen uitvoeren op profielen: bewerkingen, updates, toevoegingen, verwijderingen, sorteren.
 
@@ -67,35 +69,37 @@ Voor geavanceerdere profielmanipulaties moet u de Adobe Campaign-structuur bewer
 
 Door gebrek, worden de ontvangers opgeslagen in de **[!UICONTROL Profiles and Targets > Recipients]** knoop van de boom. U kunt ontvangers maken vanuit deze weergave en ook:
 
-* de profielen van de database sorteren en filteren; zie [Filteropties](../../platform/using/filtering-options.md),
-* profielen uit de database verplaatsen, kopiëren of verwijderen; zie [Profielen beheren](../../platform/using/managing-profiles.md),
-* updateprofielen; zie [Gegevens bijwerken](../../platform/using/updating-data.md),
-* ontvangers van uitvoer; zie [Profielen exporteren en importeren](../../platform/using/exporting-and-importing-profiles.md),
-* groepen ontvangers creëren; zie [Lijsten maken en beheren](../../platform/using/creating-and-managing-lists.md).
+* de profielen van de database sorteren en filteren - [Meer informatie](../../platform/using/filtering-options.md)
+* profielen verplaatsen, kopiëren of verwijderen uit de database - [Meer informatie](../../platform/using/managing-profiles.md);
+* updateprofielen - [Meer informatie](../../platform/using/updating-data.md)
+* ontvangers exporteren - [Meer informatie](../../platform/using/exporting-and-importing-profiles.md)
+* groepen ontvangers maken - [Meer informatie](../../platform/using/creating-and-managing-lists.md)
 
 Voor toegang tot geavanceerde functies en configuraties moet u op het pictogram **[!UICONTROL Explorer]** klikken.
 
 ![](assets/d_ncs_user_interface01.png)
 
-De algemene indeling van de Adobe Campaign-verkenner wordt weergegeven in [Adobe Campaign-verkenner gebruiken](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
+De algemene indeling van de Adobe Campaign-verkenner wordt weergegeven in [deze sectie](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
 
 >[!NOTE]
 >
->U kunt een geavanceerde weergave van deze lijst ook weergeven vanuit de Adobe Campaign-structuur door op de koppeling **[!UICONTROL Profiles and targets > Recipients]** te klikken. De lijstvertoning kan aan uw behoeften worden gevormd. U kunt kolommen toevoegen of verwijderen, de kolomvolgorde, de sorteergegevens enzovoort definiëren. De de vertoningsconfiguratie van de lijst wordt beschreven in [Gebruikend de ontdekkingsreiziger van Adobe Campaign](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
+>U kunt een geavanceerde weergave van deze lijst ook weergeven vanuit de Adobe Campaign-structuur door op de koppeling **[!UICONTROL Profiles and targets > Recipients]** te klikken. De lijstvertoning kan aan uw behoeften worden gevormd. U kunt kolommen toevoegen of verwijderen, de kolomvolgorde, de sorteergegevens enzovoort definiëren. De de vertoningsconfiguratie van de lijst wordt beschreven in [deze sectie](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
 >
->U kunt ook de weergave voor ontvangers definiëren. Raadpleeg [Mappen en weergaven](../../platform/using/access-management-folders.md) voor meer informatie over deze functionaliteit.
+>U kunt ook de weergave voor ontvangers definiëren. Zie [deze sectie](../../platform/using/access-management-folders.md) voor meer informatie over deze functionaliteit.
 
 ## Actieve profielen {#active-profiles}
 
 Actieve profielen zijn de profielen die voor factureringsdoeleinden worden geteld.
 
+Het aantal actieve profielen is alleen beschikbaar voor **Marketing instances**. Het is niet beschikbaar voor instanties van de Uitvoering, betekenend MID (midsourcing) en RT (het Centrum van het Bericht / Real-time overseinen) instanties.
+
+Als u op AWS wordt gehost, kunt u het aantal actieve profielen dat op uw instanties wordt gebruikt, ook rechtstreeks via het Configuratiescherm controleren. Raadpleeg de [documentatie van het Configuratiescherm](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html) voor meer informatie.
+
 >[!NOTE]
 >
->Als u op AWS wordt gehost en Campaign Classic uit build 8931 gebruikt, kunt u het aantal actieve profielen dat op uw instanties wordt gebruikt, ook rechtstreeks via het Configuratiescherm controleren. Raadpleeg de [documentatie van het Configuratiescherm](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html) voor meer informatie.
+>Het Configuratiescherm is toegankelijk voor alle beheergebruikers. De stappen om Admin-toegang aan een gebruiker te verlenen, worden gedetailleerd beschreven in [deze sectie](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
 >
->Het aantal actieve profielen is alleen beschikbaar voor **Marketingsinstanties**. Het is niet beschikbaar voor instanties van de Uitvoering, betekenend MID (midsourcing) en RT (het Centrum van het Bericht / Real-time overseinen) instanties.
-
-&quot;**Profiel**&quot; betekent een record met informatie (bijvoorbeeld: een record in de nmsRecipient-tabel of een externe tabel met een cookie-id, de klant-id, de mobiele id of andere informatie die relevant is voor een bepaald kanaal) die een eindklant, perspectief of lead vertegenwoordigt.
+>Merk op dat uw instantie op AWS moet worden gehost en moet worden geüpgraded met de nieuwste [Gold Standard](../../rn/using/gs-overview.md)-build of de [nieuwste GA-build (21.1)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Als u wilt controleren of uw instantie wordt gehost op AWS, voert u de stappen uit die worden beschreven in [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
 Facturering heeft alleen betrekking op profielen die **actief** zijn. Een profiel wordt als actief beschouwd als het profiel de afgelopen twaalf maanden via een kanaal als doel is aangewezen of met het profiel is gecommuniceerd.
 
