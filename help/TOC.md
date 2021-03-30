@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentatie
 translation-type: tm+mt
-source-git-commit: 0b3bc9547d756352f4af5dac713f85666c96c425
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '2448'
+source-wordcount: '2462'
 ht-degree: 54%
 
 ---
@@ -144,13 +144,16 @@ ht-degree: 54%
          + [Verzenden op Japanse mobiele apparaten](delivery/using/sending-emails-on-japanese-mobiles.md)
       + [Bestanden bijvoegen](delivery/using/attaching-files.md)
    + SMS {#sending-messages-on-mobiles} verzenden
-      + [Sms-kanaal](delivery/using/sms-channel.md)
+      + [Aan de slag met SMS](delivery/using/sms-channel.md)
+      + [SMS-kanaal configureren](delivery/using/sms-set-up.md)
+      + [SMS maken](delivery/using/sms-create.md)
+      + [SMS verzenden en volgen](delivery/using/sms-send.md)
       + [Protocol en instellingen voor sms-connector](delivery/using/sms-protocol.md)
       + [Problemen met sms oplossen](delivery/using/troubleshooting-sms.md)
       + [Migreren naar de uitgebreide algemene SMPP-aansluiting](delivery/using/unsupported-connector-migration.md)
    + [REGELS verzenden](delivery/using/line-channel.md)
    + Pushmeldingen verzenden {#sending-push-notifications}
-      + [Kanaal voor mobiele apps](delivery/using/about-mobile-app-channel.md)
+      + [Aan de slag met mobiel toepassingskanaal](delivery/using/about-mobile-app-channel.md)
       + [Campagne SDK integreren in de mobiele toepassing](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + De mobiele toepassing configureren{#configure-the-mobile-app}
          + [Aan de slag met de app-configuratie](delivery/using/get-started-app-config.md)
