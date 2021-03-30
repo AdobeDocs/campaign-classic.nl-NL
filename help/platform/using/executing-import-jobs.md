@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '2960'
+source-wordcount: '2955'
 ht-degree: 0%
 
 ---
 
 
-# Importtaken configureren {#executing-import-jobs}
+# Importtaken {#executing-import-jobs} configureren
 
 Met Adobe Campaign kunt u gegevens uit een of meer bestanden in tekst-, CSV-, TAB- of XML-indeling importeren in de database. Deze bestanden zijn gekoppeld aan een tabel (hoofd of gekoppeld) en elk veld van het bronbestand of de bronbestanden is gekoppeld aan een veld van de database.
 
@@ -25,7 +25,7 @@ Met Adobe Campaign kunt u gegevens uit een of meer bestanden in tekst-, CSV-, TA
 
 Met de wizard Importeren kunt u een importbewerking configureren, de opties ervan (zoals gegevenstransformatie) definiëren en uitvoering starten. Het is een reeks schermen waarvan de inhoud afhankelijk is van het type import (enkelvoudig of meervoudig) en de rechten van de operator.
 
-De de invoertovenaar toont na het creëren van een nieuwe de invoerbaan (zie [het Creëren van de invoer en de uitvoerbanen](../../platform/using/creating-import-export-jobs.md).
+De wizard Importeren wordt weergegeven nadat een nieuwe importtaak is gemaakt (zie [Import- en exporttaken maken](../../platform/using/creating-import-export-jobs.md).
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ De de invoertovenaar toont na het creëren van een nieuwe de invoerbaan (zie [he
 
 In het bronbestand valt elke regel samen met een record. De gegevens in records worden gescheiden door scheidingstekens (spatie, tab, teken enz.). Dit betekent dat de gegevens in de vorm van kolommen worden teruggewonnen, en elke kolom wordt geassocieerd met een gebied van het gegevensbestand.
 
-## Stap 1 - Het kiezen van het invoermalplaatje {#step-1---choosing-the-import-template}
+## Stap 1 - kies het invoermalplaatje {#step-1---choosing-the-import-template}
 
 Wanneer u de wizard Importeren start, moet u eerst een sjabloon selecteren. Als voorbeeld, om de invoer van ontvangers te vormen die een nieuwsbrief ontvingen, volg de stappen hieronder:
 
@@ -115,7 +115,7 @@ Gebruik de opties boven deze weergave om het importeren te configureren. De para
 * **[!UICONTROL Auto-detect format]** wordt gebruikt om het formaat van de gegevensbron opnieuw te initialiseren. Met deze optie kunt u de oorspronkelijke indelingen opnieuw toepassen op gegevens die zijn opgemaakt met de optie **[!UICONTROL Click here to change the file format...]**.
 * Met de koppeling **[!UICONTROL Advanced parameters]** kunt u de brongegevens filteren en geavanceerde opties gebruiken. Vanuit dit scherm kunt u ervoor kiezen om slechts een deel van het bestand te importeren. U kunt ook een filter definiëren, bijvoorbeeld om alleen gebruikers van het type Prospect of Klant te importeren, op basis van de waarde van de corresponderende regel. Deze opties mogen alleen worden gebruikt door deskundige JavaScript-gebruikers.
 
-### De bestandsindeling wijzigen {#changing-the-file-format}
+### De bestandsindeling {#changing-the-file-format} wijzigen
 
 Met de optie **[!UICONTROL Click here to change the file format...]** kunt u de gegevens van het bronbestand opmaken, en met name het kolomscheidingsteken en het type gegevens voor elk veld opgeven. Deze configuratie wordt uitgevoerd via het volgende venster:
 
@@ -244,7 +244,7 @@ Deduplicatie heeft betrekking op een record die zowel in het bronbestand als in 
 
 De opties **[!UICONTROL Reject]** en **[!UICONTROL Ignore]** werken zoals hierboven beschreven.
 
-### Gedrag in geval van een fout {#behavior-in-the-event-of-an-error}
+### Bij fout {#behavior-in-the-event-of-an-error}
 
 De meeste gegevensoverdrachtsbewerkingen genereren verschillende soorten fouten (incoherente regelindeling, ongeldig e-mailadres, enz.). Alle fouten en waarschuwingen die door de importengine worden gegenereerd, worden opgeslagen en gekoppeld aan het importexemplaar.
 
@@ -311,7 +311,7 @@ In de volgende stap van de wizard Importeren kunt u de map selecteren of maken w
 
       ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      U kunt een nieuwe lijst voor deze ontvangers tot stand brengen door **[!UICONTROL Select link]**, dan **[!UICONTROL Create]** te klikken. Het maken en beheren van lijsten wordt weergegeven in [Lijsten maken en beheren](../../platform/using/creating-and-managing-lists.md).
+      U kunt een nieuwe lijst voor deze ontvangers tot stand brengen door **[!UICONTROL Select link]**, dan **[!UICONTROL Create]** te klikken. Het maken en beheren van lijsten wordt weergegeven in [deze sectie](../../platform/using/creating-and-managing-lists.md).
 
       ![](assets/s_ncs_user_import_wizard05_6.png)
 
@@ -329,10 +329,10 @@ In de volgende stap van de wizard Importeren kunt u de map selecteren of maken w
 
 Klik **[!UICONTROL Next]** om deze stap te bevestigen en de volgende stap te tonen.
 
-## Stap 6 - De import starten {#step-6---launching-the-import}
+## Stap 6 - Het importeren starten {#step-6---launching-the-import}
 
 In de laatste stap van de wizard kunt u gegevensimport starten. Klik op de knop **[!UICONTROL Start]** om dit te doen.
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 
-U kunt de uitvoering van de importtaak vervolgens controleren (zie [De uitvoering van taken controleren](../../platform/using/monitoring-jobs-execution.md).
+U kunt de uitvoering van de invoertaak dan controleren (zie [Uitvoering van taken controleren](../../platform/using/monitoring-jobs-execution.md).
