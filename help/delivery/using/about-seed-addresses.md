@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 9%
@@ -21,13 +21,13 @@ Seed-adressen worden gebruikt om ontvangers die niet aan de gedefinieerde doelcr
 
 Één van de belangrijkste reden om hen te gebruiken is **uw het posten lijstbescherming**. Door zaadadressen in te voegen in uw mailinglijst kunt u zien of het door een derde wordt gebruikt, aangezien de zaadadressen het bevat de leveringen ontvangen die naar uw postingslijst worden verzonden.
 
-Bovendien laten de zaadadressen u **voorproef en test de leveringenverpersoonlijking en het teruggeven** alvorens hun het verzenden, door hen proefdrukken te verzenden (zie [Het gebruiken van zaadadressen als proef](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof).
+Bovendien laten de zaadadressen u **voorproef en test de leveringenverpersoonlijking en het teruggeven** alvorens hun het verzenden, door hen proefdrukken te verzenden (zie [Gebruik zaadadressen als proef](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof).
 
 ![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](../../delivery/using/steps-defining-the-target-population.md#seeds-and-proofs-video)
 
 De zaadadreseigenschap heeft de volgende voordelen:
 
-* Willekeurige vervanging van velden door gegevens uit ontvangende profielen: hiermee kunt u alleen het e-mailadres invoeren, bijvoorbeeld in de sectie zaadadres, en de overige velden automatisch laten invullen door Campagne (zie [Hoofdlettergebruik: het vormen van de gebiedsvervanging](../../delivery/using/use-case--configuring-the-field-substitution.md)).
+* Willekeurige vervanging van velden door gegevens uit ontvangende profielen: hiermee kunt u alleen het e-mailadres invoeren, bijvoorbeeld in de sectie zaadadres, en de overige velden automatisch laten invullen door Campagne (zie [Hoofdlettergebruik: de veldvervanging configureren (](../../delivery/using/use-case--configuring-the-field-substitution.md)).
 * Wanneer u een workflow met functies voor gegevensbeheer gebruikt, kunnen de aanvullende gegevens die in leveringen worden verwerkt, op zaadadresniveau worden ingevoerd om waarden af te dwingen: dit negeert de vervanging van willekeurige waarden .
 * Zaadadressen worden automatisch uitgesloten van rapporten over de volgende leveringsstatistieken: **[!UICONTROL Clicks]**, **[!UICONTROL Opens]**, **[!UICONTROL Unsubscriptions]**.
 
@@ -47,6 +47,7 @@ Voor direct-mailleveringen worden de zaadadressen toegevoegd tijdens extractie e
 >
 >* De optie **[!UICONTROL Handle groupings (GROUP BY+HAVING)]** mag niet worden gebruikt.
 >* Als elementverzamelingen worden geëxtraheerd, hebben deze velden een lege waarde voor de zaadadressen, tenzij de optie **[!UICONTROL Single row (expert user)]** is geselecteerd. Raadpleeg [deze sectie](../../platform/using/executing-export-jobs.md#step-7---data-formatting) voor meer informatie.
+
 >
 
 
