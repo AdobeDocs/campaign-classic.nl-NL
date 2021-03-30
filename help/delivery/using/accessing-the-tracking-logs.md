@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
 source-wordcount: '89'
-ht-degree: 17%
+ht-degree: 13%
 
 ---
 
 
-# De trackinglogboeken openen{#accessing-the-tracking-logs}
+# De volgende logboeken openen{#accessing-the-tracking-logs}
 
 Wanneer de levering is verzonden en het volgen geactiveerd, is de **[!UICONTROL Tracking]** technische werkschema verantwoordelijk voor het terugwinnen van de het volgen gegevens. Deze wordt standaard per uur uitgevoerd.
 
