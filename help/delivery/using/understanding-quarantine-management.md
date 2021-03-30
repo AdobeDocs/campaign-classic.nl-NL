@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '2613'
 ht-degree: 14%
@@ -527,7 +527,7 @@ De tabel **[!UICONTROL Delivery log qualification]** is niet van toepassing op d
 
 **Voor de Uitgebreide generische schakelaar SMPP**
 
-Wanneer het gebruiken van het protocol SMPP om de berichten van SMS te verzenden, wordt het foutenbeheer verschillend behandeld. Voor meer informatie over de Uitgebreide generische schakelaar SMPP, verwijs naar [deze pagina](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+Wanneer het gebruiken van het protocol SMPP om de berichten van SMS te verzenden, wordt het foutenbeheer verschillend behandeld. Voor meer informatie over de Uitgebreide generische schakelaar SMPP, verwijs naar [deze pagina](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
 
 De schakelaar SMPP wint gegevens van het bericht van SR (Status Report) terug dat gebruikend regelmatige uitdrukkingen (regexes) is teruggekeerd om zijn inhoud te filtreren. Deze gegevens worden vervolgens vergeleken met de informatie in de tabel **[!UICONTROL Delivery log qualification]** (beschikbaar via het menu **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]**).
 
@@ -544,13 +544,13 @@ SR Generic DELIVRD 000|#MESSAGE#
 ```
 
 * Alle foutberichten beginnen met **SR** om SMS-foutcodes te onderscheiden van e-mailfoutcodes.
-* Het tweede deel (**Generic** in dit voorbeeld) van het foutbericht verwijst naar de naam van de SMSC-implementatie zoals gedefinieerd in het veld **[!UICONTROL SMSC implementation name]** van de externe SMS-account. Zie [deze pagina](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+* Het tweede deel (**Generic** in dit voorbeeld) van het foutbericht verwijst naar de naam van de SMSC-implementatie zoals gedefinieerd in het veld **[!UICONTROL SMSC implementation name]** van de externe SMS-account. Zie [deze pagina](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
 
    Omdat dezelfde foutcode voor elke provider een andere betekenis kan hebben, kunt u in dit veld weten welke provider de foutcode heeft gegenereerd. U kunt de fout dan vinden in de relevante documentatie van de leverancier.
 
 * Het derde deel (**DELIVRD** in dit voorbeeld) van het foutbericht komt overeen met de statuscode die wordt opgehaald uit de SR met behulp van het statusextractieoverzicht dat is gedefinieerd in de externe SMS-account.
 
-   Deze regex wordt opgegeven op het tabblad **[!UICONTROL SMSC specificities]** van de externe account. Zie [deze pagina](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+   Deze regex wordt opgegeven op het tabblad **[!UICONTROL SMSC specificities]** van de externe account. Zie [deze pagina](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
 
    ![](assets/tech_quarant_error_regex.png)
 
@@ -558,7 +558,7 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * Het vierde deel (**000** in dit voorbeeld) van het foutbericht komt overeen met de foutcode die uit de SR is geëxtraheerd met behulp van het extractieoverzicht van de foutcode dat in de externe SMS-account is gedefinieerd.
 
-   Deze regex wordt opgegeven op het tabblad **[!UICONTROL SMSC specificities]** van de externe account. Zie [deze pagina](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+   Deze regex wordt opgegeven op het tabblad **[!UICONTROL SMSC specificities]** van de externe account. Zie [deze pagina](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
 
    Standaard extraheert de regex het veld **err:** zoals gedefinieerd in de sectie **Bijlage B** van de **SMPP 3.4-specificatie**.
 
