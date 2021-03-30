@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: f00c0bda0ab3f2e07c015f4cfe5e3942f5620841
+source-git-commit: bfe2e29ed904b6a04bab28455301437c63ab8118
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1612'
 ht-degree: 11%
 
 ---
@@ -35,6 +35,7 @@ U kunt de volgende typen externe accounts instellen:
 * [Amazon Simple Storage Service (S3) externe account](#amazon-simple-storage-service--s3--external-account)
 * [Externe account voor Microsoft Dynamics CRM](#microsoft-dynamics-crm-external-account)
 * [Externe rekening Salesforce CRM](#salesforce-crm-external-account)
+* [Extern Azure Blob-opslagaccount ](#azure-blob-external-account)
 
 ## Een extern account maken {#creating-an-external-account}
 
@@ -98,7 +99,7 @@ Met de externe account **[!UICONTROL Routing]** kunt u elk kanaal dat beschikbaa
 De volgende kanalen kunnen worden gevormd:
 
 * [E-mail](../../installation/using/deploying-an-instance.md#email-channel-parameters)
-* [Mobile (SMS)](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)
+* [Mobile (SMS)](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
 * [Telefoon](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Direct mail](../../delivery/using/about-direct-mail-channel.md)
 * [Bureau](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
@@ -147,7 +148,7 @@ Externe databases die compatibel zijn met Campagne worden vermeld in de [Compati
 
 De instellingen voor externe accountconfiguratie zijn afhankelijk van de database-engine. Meer informatie vindt u in de volgende secties:
 
-* Toegang tot [Azure Synapse](../../installation/using/configure-fda-synapse.md) configureren
+* Toegang tot [Azure synapse](../../installation/using/configure-fda-synapse.md) configureren
 * Toegang tot [Hadoop](../../installation/using/configure-fda-hadoop.md) configureren
 * Toegang tot [Oracle](../../installation/using/configure-fda-oracle.md) configureren
 * Toegang tot [Netezza](../../installation/using/configure-fda-netezza.md) configureren
@@ -413,3 +414,23 @@ Om de externe rekening van Salesforce CRM te vormen om met Adobe Campaign te wer
 Voor deze externe rekening, moet u u Salesforce CRM met de configuratietovenaar vormen.
 
 Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../platform/using/crm-connectors.md).
+
+## Azure Blob-opslag, externe account (#azure-blob-external-account)
+
+De externe account **Azure Blob storage** kan worden gebruikt voor het importeren of exporteren van gegevens naar Adobe Campaign met behulp van een **[!UICONTROL Transfer file]**-workflowactiviteit. Raadpleeg deze [sectie](../../workflow/using/file-transfer.md) voor meer informatie.
+
+![](assets/ext_account_23.png)
+
+Als u **[!UICONTROL Azure external account]** wilt configureren om met Adobe Campaign te werken, moet u de volgende gegevens opgeven:
+
+* **[!UICONTROL Server]**
+
+   URL van uw Azure Blob-opslagserver.
+
+* **[!UICONTROL Encryption]**
+
+   Type van gekozen encryptie tussen **[!UICONTROL None]** of **[!UICONTROL SSL]**.
+
+* **[!UICONTROL Access key]**
+
+   Om te weten waar te om uw **[!UICONTROL Access key]** te vinden, verwijs naar deze [pagina](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
