@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '3229'
 ht-degree: 37%
@@ -17,7 +17,7 @@ ht-degree: 37%
 
 # Filtervoorwaarden definiëren{#defining-filter-conditions}
 
-## De operator {#choosing-the-operator} kiezen
+## Kies de operator {#choosing-the-operator}
 
 Binnen het filtreren voorwaarden, moet u twee waarden verbinden samen gebruikend een exploitant.
 
@@ -165,7 +165,7 @@ Plaats de cursor op de filtervoorwaarde **[!UICONTROL Gender (@gender) equal to 
 
 De voorwaarde **[!UICONTROL Gender (@gender) equal to Male]** is uit zijn haakje genomen. Het is op hetzelfde niveau gegaan als de voorwaarde &quot;Stad is gelijk aan Londen&quot;. Deze voorwaarden zijn met elkaar verbonden (**[!UICONTROL And]**).
 
-## Te extraheren gegevens selecteren {#selecting-data-to-extract}
+## Gegevens selecteren om {#selecting-data-to-extract} te extraheren
 
 De beschikbare velden verschillen per tabel. Alle velden worden opgeslagen in een hoofdknooppunt dat **[!UICONTROL Main element]** wordt genoemd. In het volgende voorbeeld bevinden de beschikbare velden zich in de ontvangende tabel. Velden worden altijd in alfabetische volgorde weergegeven.
 
@@ -259,7 +259,7 @@ Koppeling maken naar een tabel en verzamelingselement:
 
 >[!NOTE]
 >
->* Gebruik de knop **[!UICONTROL Add]** (boven de zijpictogrambalk) om een uitvoerkolom toe te voegen waarin u de expressie wilt bewerken. Raadpleeg [Expressies maken](#building-expressions) voor meer informatie over het bewerken van een expressie.
+>* Gebruik de knop **[!UICONTROL Add]** (boven de zijpictogrambalk) om een uitvoerkolom toe te voegen waarin u de expressie wilt bewerken. Raadpleeg [deze sectie](#building-expressions) voor meer informatie over het bewerken van een expressie.
 >* Verwijder een uitvoerkolom door op de rode letter &#39;x&#39; (**Delete**) te klikken.
 >* Wijzig de volgorde van de uitvoerkolommen met de pijlen.
 >* De **[!UICONTROL Distribution of values]** dient als een manier om de verdeling van de waarden van het geselecteerde veld te bekijken (bijvoorbeeld de distributies die gekoppeld zijn aan de ontvangende steden, de ontvangende talen, enz.).
@@ -306,7 +306,7 @@ Klik op het kruisje **[!UICONTROL Remove the calculated field]** om dit berekend
 
 ![](assets/query_editor_nveau_58.png)
 
-## Expressies maken {#building-expressions}
+## Expressies {#building-expressions} maken
 
 Met het gereedschap voor het bewerken van expressies kunt u aggregaten berekenen, functies genereren of een formule bewerken met behulp van een expressie.
 
