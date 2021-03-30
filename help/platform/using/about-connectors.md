@@ -3,23 +3,23 @@ solution: Campaign Classic
 product: campaign
 title: Connectoren
 description: Connectoren
-audience: platform
-content-type: reference
-topic-tags: connectors
+feature: Overzicht
+role: Zakelijke praktiserer, Data Architect
+level: Beginner
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 9%
+source-wordcount: '203'
+ht-degree: 8%
 
 ---
 
 
-# Connectoren{#about-connectors}
+# Aan de slag met connectors{#about-connectors}
 
 Adobe Campaign biedt verschillende connectors waarmee u kunt communiceren met externe toepassingen, verbinding kunt maken met database-engines en gegevens kunt delen via Adobe Analytics.
 
-Deze schakelaars zijn:
+Beschikbare connectors worden hieronder vermeld:
 
 * De Schakelaar FDA (**Federated Data Access**) laat u toe om Campagne met één of meerdere externe gegevensbestanden aan te sluiten en informatie te verwerken die in hen wordt opgeslagen zonder uw gegevens van de Campagne te beïnvloeden. [Meer informatie](../../installation/using/about-fda.md).
 * CRM-connectors maken het mogelijk gegevens uit te wisselen tussen Adobe Campaign en uw CRM-oplossing met behulp van speciale workflowactiviteiten. [Meer informatie](../../platform/using/crm-connectors.md).
