@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 2%
@@ -79,7 +79,7 @@ Klik **[!UICONTROL Compute]** om het resultaat van uw keus te tonen.
 
 Controleer de **[!UICONTROL Result]** kolommen van beide secties van het venster, en klik **[!UICONTROL Finish]** om de fusie in werking te stellen.
 
-## Data exporteren {#exporting-data}
+## Gegevens exporteren {#exporting-data}
 
 De inhoud van een lijst kan worden geëxporteerd. Het exporteren configureren en uitvoeren:
 
