@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: Toegang tot campagnemappen beheren
 description: Leer hoe u toegang kunt verlenen tot campagnemappen en weergaven kunt maken
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: Toepassingsinstellingen
+role: Bedrijfs Praktijk, Beheerder
+level: Beginner
 translation-type: tm+mt
-source-git-commit: d6993725ed4060f2affce98c4a8a5211bda03bdf
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '757'
 ht-degree: 0%
 
 ---
@@ -19,53 +19,9 @@ ht-degree: 0%
 
 Elke omslag van de boomstructuur van de Ontdekkingsreiziger heeft gelezen, schrijft, en schrapt toegangsrechten verbonden aan het. Om toegang te krijgen tot een bestand, moet een operator of groep operatoren ten minste lees-toegang hebben.
 
-## Machtigingen voor een map
-
-### Machtigingen bewerken voor een map {#edit-permissions-on-a-folder}
-
-Voer de volgende stappen uit als u machtigingen voor een specifieke map in de structuur wilt bewerken:
-
-1. Klik met de rechtermuisknop op de map en selecteer **[!UICONTROL Properties...]**.
-
-   ![](assets/s_ncs_user_folder_properties.png)
-
-1. Klik op het tabblad **[!UICONTROL Security]** om machtigingen voor deze map weer te geven.
-
-   ![](assets/s_ncs_user_folder_properties_security.png)
-
-### Machtigingen wijzigen {#modify-permissions}
-
-Als u machtigingen wilt wijzigen, kunt u:
-
-* **Een groep of operator** vervangen. Klik hiertoe op een van de groepen (of operatoren) met rechten voor de map en selecteer een nieuwe groep (of een nieuwe operator) in de vervolgkeuzelijst:
-
-   ![](assets/s_ncs_user_folder_properties_security02.png)
-
-* **Een groep of operator** autoriseren. Klik hiertoe op de knop **[!UICONTROL Add]** en selecteer de groep of operator waaraan u machtigingen voor deze map wilt toewijzen.
-* **Verbod een groep of een operator**. Om dit te doen, klik **[!UICONTROL Delete]** en selecteer de groep of de exploitant waarvan u vergunning voor deze omslag wilt verwijderen.
-* **Selecteer de rechten die aan een groep of een operator** zijn toegewezen. Klik hiertoe op de betrokken groep of operator, selecteer vervolgens de toegangsrechten die u wilt verlenen en hef de selectie van de andere rechten op.
-
-   ![](assets/s_ncs_user_folder_properties_security03.png)
-
-### Machtigingen {#propagate-permissions} doorgeven
-
-U kunt machtigingen en toegangsrechten doorgeven. Selecteer hiertoe de optie **[!UICONTROL Propagate]** in de mapeigenschappen.
-
-De in dit venster gedefinieerde autorisaties worden vervolgens toegepast op alle submappen van het huidige knooppunt. Vervolgens kunt u deze machtigingen voor elke submap te veel laden.
-
->[!NOTE]
->
->Als u deze optie voor een map wist, wordt deze niet automatisch gewist voor de submappen. U moet dit expliciet wissen voor elk van de submappen.
-
-### Toegang verlenen aan alle operatoren {#grant-access-to-all-operators}
-
-Als op het tabblad **[!UICONTROL Security]** de optie **[!UICONTROL System folder]** is geselecteerd, hebben alle operatoren toegang tot deze gegevens, ongeacht hun rechten. Als deze optie wordt ontruimd, moet u de exploitant (of hun groep) aan de lijst van toestemmingen uitdrukkelijk toevoegen om hen toegang te hebben.
-
-![](assets/s_ncs_user_folder_properties_security03b.png)
-
 ## Mappen en weergaven {#folders-and-views}
 
-### Informatie over mappen {#about-folders}
+### Wat is een map {#about-folders}
 
 Mappen zijn knooppunten in Adobe Campaign-structuur. Deze knooppunten worden gemaakt door met de rechtermuisknop op de structuur te klikken via het menu **[!UICONTROL Add new folder]**. Standaard kunt u in het eerste menu de map toevoegen die overeenkomt met de huidige context.
 
@@ -73,7 +29,7 @@ Mappen zijn knooppunten in Adobe Campaign-structuur. Deze knooppunten worden gem
 
 U kunt de boomstructuur van de Explorer aanpassen. Leer configuratiestappen en beste praktijken [in deze sectie](adobe-campaign-workspace.md).
 
-### Informatie over weergaven {#about-views}
+### Wat is een weergave {#about-views}
 
 Daarnaast kunt u weergaven maken om de toegang tot gegevens te beperken en de inhoud van de structuur aan uw wensen aan te passen. U kunt vervolgens rechten toewijzen aan de weergaven.
 
@@ -121,3 +77,49 @@ De volgende leveringen worden weergegeven in de weergave:
 >[!NOTE]
 >
 >Bij het beheren van [transactioneel overseinen](../../message-center/using/about-transactional-messaging.md) gebeurtenissen, moeten **[!UICONTROL Real time events]** of **[!UICONTROL Batch events]** omslagen niet als meningen op de uitvoeringsinstanties worden geplaatst, aangezien dit tot toegangsjuiste kwesties zou kunnen leiden. Zie [deze sectie](../../message-center/using/event-collection.md) voor meer informatie over het verzamelen van gebeurtenissen.
+
+
+
+## Machtigingen voor een map
+
+### Machtigingen bewerken voor een map {#edit-permissions-on-a-folder}
+
+Voer de volgende stappen uit als u machtigingen voor een specifieke map in de structuur wilt bewerken:
+
+1. Klik met de rechtermuisknop op de map en selecteer **[!UICONTROL Properties...]**.
+
+   ![](assets/s_ncs_user_folder_properties.png)
+
+1. Klik op het tabblad **[!UICONTROL Security]** om machtigingen voor deze map weer te geven.
+
+   ![](assets/s_ncs_user_folder_properties_security.png)
+
+### Machtigingen wijzigen {#modify-permissions}
+
+Als u machtigingen wilt wijzigen, kunt u:
+
+* **Een groep of operator** vervangen. Klik hiertoe op een van de groepen (of operatoren) met rechten voor de map en selecteer een nieuwe groep (of een nieuwe operator) in de vervolgkeuzelijst:
+
+   ![](assets/s_ncs_user_folder_properties_security02.png)
+
+* **Een groep of operator** autoriseren. Klik hiertoe op de knop **[!UICONTROL Add]** en selecteer de groep of operator waaraan u machtigingen voor deze map wilt toewijzen.
+* **Verbod een groep of een operator**. Om dit te doen, klik **[!UICONTROL Delete]** en selecteer de groep of de exploitant waarvan u vergunning voor deze omslag wilt verwijderen.
+* **Selecteer de rechten die aan een groep of een operator** zijn toegewezen. Klik hiertoe op de betrokken groep of operator, selecteer vervolgens de toegangsrechten die u wilt verlenen en hef de selectie van de andere rechten op.
+
+   ![](assets/s_ncs_user_folder_properties_security03.png)
+
+### Machtigingen {#propagate-permissions} doorgeven
+
+U kunt machtigingen en toegangsrechten doorgeven. Selecteer hiertoe de optie **[!UICONTROL Propagate]** in de mapeigenschappen.
+
+De in dit venster gedefinieerde autorisaties worden vervolgens toegepast op alle submappen van het huidige knooppunt. Vervolgens kunt u deze machtigingen voor elke submap te veel laden.
+
+>[!NOTE]
+>
+>Als u deze optie voor een map wist, wordt deze niet automatisch gewist voor de submappen. U moet dit expliciet wissen voor elk van de submappen.
+
+### Toegang verlenen aan alle operatoren {#grant-access-to-all-operators}
+
+Als op het tabblad **[!UICONTROL Security]** de optie **[!UICONTROL System folder]** is geselecteerd, hebben alle operatoren toegang tot deze gegevens, ongeacht hun rechten. Als deze optie wordt ontruimd, moet u de exploitant (of hun groep) aan de lijst van toestemmingen uitdrukkelijk toevoegen om hen toegang te hebben.
+
+![](assets/s_ncs_user_folder_properties_security03b.png)
