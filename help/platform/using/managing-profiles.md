@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -33,7 +33,7 @@ Elk knooppunt valt samen met een map. De gegevens van elke omslag moeten worden 
 
 U kunt een of meer ontvangers selecteren, deze uit de lijst met ontvangers slepen en neerzetten in de gewenste map. U wordt in een waarschuwingsbericht gevraagd deze actie te bevestigen.
 
-## Een ontvanger {#copying-a-recipient} kopiëren
+## Kopieer een ontvanger {#copying-a-recipient}
 
 U kunt een ontvanger in de zelfde omslag kopiëren door de gewenste ontvanger met de rechtermuisknop aan te klikken en **[!UICONTROL Copy]** te selecteren.
 
