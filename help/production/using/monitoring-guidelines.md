@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 9aa0ecd423bfbf1082e9ce5bdb36aaf1611dea54
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 6%
+source-wordcount: '771'
+ht-degree: 5%
 
 ---
 
@@ -56,7 +56,9 @@ In het Configuratiescherm kunt u verschillende instellingen van uw exemplaar beh
 
 >[!NOTE]
 >
->Houd er rekening mee dat het Configuratiescherm alleen toegankelijk is voor gebruikers met beheerdersrechten en beschikbaar is voor alle klanten die Adobe Managed Services gebruiken.
+>Het Configuratiescherm is toegankelijk voor alle beheergebruikers. De stappen om Admin toegang tot een gebruiker te verlenen zijn gedetailleerd in [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>
+>Merk op dat uw instantie op AWS moet worden gehost en moet worden geüpgraded met de nieuwste [Gold Standard](../../rn/using/gs-overview.md)-build of de [nieuwste GA-build (21.1)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Als u wilt controleren of uw instantie wordt gehost op AWS, voert u de stappen uit die worden beschreven in [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
 ### Workflows controleren {#monitoring-workflows}
 
