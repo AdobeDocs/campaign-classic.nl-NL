@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 11%
@@ -52,7 +52,7 @@ U moet parameters voltooien om de levering te identificeren. Dit doet u als volg
 De leveringsinhoud is klaar om te worden gevormd. De definitie van de inhoud van de levering is specifiek voor elk kanaal. Raadpleeg de desbetreffende sectie voor meer informatie hierover:
 
 * [De e-mailcontent definiëren](../../delivery/using/defining-the-email-content.md)
-* [De SMS-inhoud definiëren](../../delivery/using/sms-channel.md#defining-the-sms-content)
+* [De SMS-inhoud definiëren](../../delivery/using/sms-create.md#defining-the-sms-content)
 * [De content voor direct mail definiëren](../../delivery/using/defining-the-direct-mail-content.md)
 * [Pushmeldingen](../../delivery/using/about-mobile-app-channel.md)
 
