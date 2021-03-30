@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 64f5b108173806aff53f7240e8c9d499cc332d72
+source-git-commit: 5a084ebe5295d19de24cf92c721d4692f0f5deb8
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1677'
 ht-degree: 34%
 
 ---
 
 
-# SMS-kanaal {#setting-up-sms-channel} instellen
+# SMS-kanaal {#setting-up-sms-channel} configureren
 
 Als u naar een mobiele telefoon wilt verzenden, hebt u het volgende nodig:
 
@@ -125,7 +125,7 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
    <td> £ </td> 
    <td> _ </td> 
    <td> ! </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> A </td> 
    <td> Q </td> 
    <td> a </td> 
@@ -145,7 +145,7 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
    <td> ¥ </td> 
    <td> <img height="21px" src="assets/gamma.png" /> </td> 
    <td> Aantal </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> C </td> 
    <td> S </td> 
    <td> c </td> 
@@ -286,7 +286,7 @@ CR: Enter-teken
 
 ^ { } `[ ~ ]` | €
 
-## Informatie over tekstcoderingen {#about-text-encodings}
+## Tekstcoderingen {#about-text-encodings}
 
 Wanneer u een sms-bericht verzendt, kan Adobe Campaign een of meer tekstcoderingen gebruiken. Elke codering heeft een eigen specifieke tekenset en bepaalt het aantal tekens dat in een sms-bericht past.
 
