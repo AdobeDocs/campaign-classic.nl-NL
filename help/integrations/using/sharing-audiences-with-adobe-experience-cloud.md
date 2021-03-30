@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 40abbf1f981331b8a19d3607c57624aac22c91f2
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -36,3 +36,9 @@ Deze integratie ondersteunt twee typen Adobe Experience Cloud-id&#39;s:
 
 * **Bezoeker-id**: dit type identificator maakt Adobe Experience Cloud-bezoekers in overeenstemming met Adobe Campaign-ontvangers.
 * **Opgegeven ID**: dit type id vergelijkt alle soorten gegevens met elementen uit de Adobe Campaign-database. Het wordt in Adobe Campaign vertegenwoordigd als een vooraf gedefinieerde afstemmingssleutel.
+
+   >[!NOTE]
+   >
+   > De verklaarde gegevensbron van identiteitskaart kan nu ook met de dienstintegratie van de Kern van Mensen worden gebruikt.
+   >
+   >Als u de de dienstintegratie van de Kern van Mensen gebruikt en de integratie van de Audience Manager wilt toevoegen, zult u de hulp van een consultant van Adobe Audience Manager nodig hebben om te vermijden verlies van alle verzamelde syncs van identiteitskaart wanneer het overgaan aan het gebruiken van deze Gedeclareerde gegevensbron van identiteitskaart in een context van Adobe Audience Manager.
