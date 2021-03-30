@@ -7,9 +7,9 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '418'
 ht-degree: 93%
 
 ---
@@ -62,7 +62,7 @@ Als gehoste [!DNL Gold Standard] gebruiker, zult u automatisch van [!DNL Gold St
 
 ## Ondersteuning en andere handige koppelingen{#support}
 
-* [Help en ondersteuning](https://helpx.adobe.com/nl/campaign/kb/ac-support.html)
+* [Help en ondersteuning](../../support.md)
 * [Configuratiescherm-releases](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html)
 * [Nieuwste documentatie-updates](../../rn/using/documentation-updates.md)
 * [Verouderde en verwijderde functies](../../rn/using/deprecated-features.md)
