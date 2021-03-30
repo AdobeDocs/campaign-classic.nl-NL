@@ -7,25 +7,23 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 1%
+source-wordcount: '659'
+ht-degree: 0%
 
 ---
 
 
-# Kanaal voor mobiele apps{#about-mobile-app-channel}
+# Aan de slag met mobiel toepassingskanaal{#about-mobile-app-channel}
+
+Met het **Mobile App Channel** kunt u het Adobe Campaign-platform gebruiken om persoonlijke pushberichten naar iOS- en Android-terminals te verzenden via apps.
 
 >[!CAUTION]
 >
 >In dit document wordt beschreven hoe u uw mobiele toepassing kunt integreren met het Adobe Campaign-platform. De klasse biedt geen informatie over hoe de mobiele toepassing moet worden gemaakt of hoe deze moet worden geconfigureerd voor het beheer van meldingen. Raadpleeg de officiële documentatie [van Apple](https://developer.apple.com/) en Android [documentatie](https://developer.android.com/index.html) als u hierover meer informatie wilt.
 
-In de onderstaande secties vindt u informatie die specifiek is voor het mobiele toepassingskanaal.
-
-Voor globale informatie over hoe te om een levering tot stand te brengen, verwijs naar [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md).
-
-Met het **Mobile App Channel** kunt u het Adobe Campaign-platform gebruiken om gepersonaliseerde meldingen naar iOS- en Android-terminals te verzenden via apps. Er zijn twee leveringskanalen beschikbaar:
+Er zijn twee leveringskanalen beschikbaar:
 
 * Een iOS-kanaal waarmee u meldingen kunt verzenden naar mobiele Apple-apparaten.
 
@@ -38,6 +36,7 @@ Met het **Mobile App Channel** kunt u het Adobe Campaign-platform gebruiken om g
 Voor deze twee kanalen zijn er twee leveringsactiviteiten in de campagneworkflows:
 
 ![](assets/nmac_intro_3.png)
+
 
 >[!NOTE]
 >
@@ -56,7 +55,9 @@ U kunt het toepassingsgedrag bepalen voor wanneer de gebruiker het bericht activ
 
 Met de **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt)-workflow worden abonnementen op mobiele apparaten bijgewerkt. Raadpleeg de [lijst met technische workflows](../../workflow/using/about-technical-workflows.md) voor meer informatie over deze workflow.
 
-Adobe Campaign is compatibel met HTTP/2 APNs. Raadpleeg de sectie [Een mobiele toepassing configureren in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) voor meer informatie over de configuratiestappen.
+Adobe Campaign is compatibel met HTTP/2 APNs. Voor meer details over de configuratiestappen, verwijs naar [deze sectie](../../delivery/using/configuring-the-mobile-application.md) sectie.
+
+Voor globale informatie over hoe te om een levering tot stand te brengen, verwijs naar [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ## Gegevenspad {#data-path}
 
