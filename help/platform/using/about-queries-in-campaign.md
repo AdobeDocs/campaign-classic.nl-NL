@@ -3,19 +3,19 @@ solution: Campaign Classic
 product: campaign
 title: Query’s in Campaign
 description: Query’s in Campaign
-audience: platform
-content-type: reference
-topic-tags: creating-queries
+feature: Query-editor
+role: Zakelijke praktiserer, Data Architect
+level: Beginner
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 86%
+source-wordcount: '184'
+ht-degree: 81%
 
 ---
 
 
-# Query’s in Campaign{#about-queries-in-campaign}
+# Aan de slag met query&#39;s{#about-queries-in-campaign}
 
 U vindt de Adobe Campaign-querytool op meerdere niveaus van de software: om een doelpopulatie te maken, klanten te segmenteren, trackinglogboeken te extraheren en filteren, filters te bouwen, enzovoort.
 
