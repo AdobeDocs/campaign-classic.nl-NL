@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: sending-messages-on-mobiles
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 584c11cc46d3a0cea3dcbbaef2700200fbdb8201
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 1%
@@ -47,7 +47,7 @@ De oude schakelaars van SMS gebruiken de schakelaar van SMS van Java die het Web
 >
 >Zelfs als u de parameters kunt omzetten, vereist het vormen van de **[!UICONTROL Extended Generic SMPP]** schakelaar u om met uw leverancier te spreken die u de informatie nodig zal geven om de rest parameters in te vullen. Raadpleeg [deze pagina](../../delivery/using/sms-protocol.md) voor meer informatie.
 
-Eerst, zult u een nieuwe **[!UICONTROL Extended Generic SMPP]** externe rekening moeten creëren en dan zou u sommige parameters kunnen omzetten. U kunt de gedetailleerde stappen in deze [pagina](../../delivery/using/sms-channel.md#creating-an-smpp-external-account) vinden.
+Eerst, zult u een nieuwe **[!UICONTROL Extended Generic SMPP]** externe rekening moeten creëren en dan zou u sommige parameters kunnen omzetten. U kunt de gedetailleerde stappen in deze [pagina](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account) vinden.
 
 U moet nu de parameters van het **[!UICONTROL Mobile]** lusje van uw onlangs gecreeerd **[!UICONTROL Extended Generic SMPP]** externe rekening, afhankelijk van uw vorige schakelaar invullen.
 
