@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '1974'
+source-wordcount: '1963'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,11 @@ ht-degree: 0%
 
 # Filters maken{#creating-filters}
 
-## Inleiding {#introduction}
-
 Wanneer u in de boom van Adobe Campaign (van **[!UICONTROL Explorer]** menu in de homepage) navigeert, worden de gegevens in het gegevensbestand getoond in lijsten. Deze lijsten kunnen worden gevormd om slechts de gegevens te tonen die door de exploitant worden vereist. De acties kunnen dan op de gefiltreerde gegevens worden gelanceerd. Met filterconfiguratie kunt u gegevens selecteren in een lijst **[!UICONTROL dynamically]**. Als de gegevens worden gewijzigd, worden de gefilterde gegevens bijgewerkt.
 
 >[!NOTE]
 >
->De vertoningsconfiguratie wordt plaatselijk op het werkstationniveau bepaald. Het wordt opgeslagen in verborgen bestanden en soms is het nodig deze gegevens op te schonen, vooral als zich problemen voordoen bij het vernieuwen van gegevens. Hiervoor gebruikt u het menu **[!UICONTROL File > Clear the local cache]**.
+>De de configuratiemontages van de gebruikersinterface worden plaatselijk bepaald op het apparatenniveau. Soms kan het nodig zijn deze gegevens op te schonen, vooral als zich problemen voordoen bij het vernieuwen van gegevens. Hiervoor gebruikt u het menu **[!UICONTROL File > Clear the local cache]**.
 
 ## Typologie van beschikbare filters {#typology-of-available-filters}
 
@@ -33,7 +31,7 @@ Deze filters kunnen eenmaal worden gebruikt of u kunt ze opslaan voor toekomstig
 
 De volgende filtertypen zijn beschikbaar in Adobe Campaign:
 
-* Standaardfilters
+* **Standaardfilters**
 
    Het standaardfilter **a1/> is toegankelijk via de velden boven de lijsten.** Hiermee kunt u filteren op vooraf gedefinieerde velden (dit zijn standaard de naam en het e-mailadres voor ontvangerprofielen). U kunt de velden gebruiken om de tekens in te voeren waarop u wilt filteren of om de filtervoorwaarden in een vervolgkeuzelijst te selecteren.
 
@@ -43,9 +41,9 @@ De volgende filtertypen zijn beschikbaar in Adobe Campaign:
   >
   >The **%** character replaces any character string. For example, the string `%@yahoo.com` lets you display all the profiles with an e-mail address in the domain "yahoo.com".
 -->
-U kunt het standaardfilter van een lijst veranderen. Voor meer op dit, verwijs naar [Veranderend het standaardfilter](#altering-the-default-filter).
+U kunt het standaardfilter van een lijst veranderen. Voor meer op dit, verwijs naar [Wijzig het standaardfilter](#altering-the-default-filter).
 
-* Eenvoudige filters
+* **Eenvoudige filters**
 
    **Eenvoudige** filters zijn eenmalige filters op de kolommen. Ze worden gedefinieerd met een of meer eenvoudige zoekcriteria op de weergegeven kolommen.
 
@@ -55,7 +53,7 @@ U kunt het standaardfilter van een lijst veranderen. Voor meer op dit, verwijs n
 
    Eenvoudige filters worden beschreven in [Een eenvoudig filter maken](#creating-a-simple-filter).
 
-* Geavanceerde filters
+* **Geavanceerde filters**
 
    **Geavanceerde** filters worden gemaakt met behulp van een query of een combinatie van query&#39;s op de gegevens.
 
@@ -67,7 +65,7 @@ U kunt het standaardfilter van een lijst veranderen. Voor meer op dit, verwijs n
    >
    >Raadpleeg [deze sectie](../../platform/using/about-queries-in-campaign.md) voor meer informatie over het samenstellen van query&#39;s in Adobe Campaign.
 
-* Gebruikersfilters
+* **Gebruikersfilters**
 
    Een **toepassingsfilter** is een geavanceerd filter dat is opgeslagen, om zijn configuratie met andere exploitanten te gebruiken en te delen.
 
@@ -94,7 +92,7 @@ Voer de volgende stappen uit:
 
    >[!NOTE]
    >
-   >Het venster van de filterdefinitie wordt gedetailleerd in [Creërend een geavanceerd filter](#creating-an-advanced-filter) en [Het Opslaan van een filter](#saving-a-filter).
+   >Het venster van de filterdefinitie wordt gedetailleerd in [Creeer een geavanceerd filter](#creating-an-advanced-filter) en [sparen een filter](#saving-a-filter).
 
 ## Een eenvoudig filter maken {#creating-a-simple-filter}
 
@@ -185,7 +183,7 @@ Geavanceerde filters kunnen functies gebruiken; **filters met functies** worden 
 
    * **[!UICONTROL Field only]** om een veld te selecteren. Dit is de standaardmodus.
    * **[!UICONTROL Aggregate]** om de te gebruiken samengestelde formule te selecteren (tellingen, som, gemiddelde, maximum, minimum).
-   * **[!UICONTROL User filter]** om een van de bestaande gebruikersfilters te selecteren. Gebruikersfilters worden gedetailleerd weergegeven in [Een filter opslaan](#saving-a-filter).
+   * **[!UICONTROL User filter]** om een van de bestaande gebruikersfilters te selecteren. Gebruikersfilters worden beschreven in [Een filter opslaan](#saving-a-filter).
    * **[!UICONTROL Expression]** om toegang te krijgen tot de uitdrukkingsredacteur.
 
       Met de expressieeditor kunt u een geavanceerd filter definiëren. Het ziet er zo uit:
@@ -196,7 +194,7 @@ Geavanceerde filters kunnen functies gebruiken; **filters met functies** worden 
 
       >[!NOTE]
       >
-      >Voor een voorbeeld van filterverwezenlijking die op een uitdrukking wordt gebaseerd, verwijs naar [Het identificeren van ontvangers de waarvan verjaardag het ](../../workflow/using/sending-a-birthday-email.md#identifying-recipients-whose-birthday-it-is) is.
+      >Zie [deze sectie](../../workflow/using/sending-a-birthday-email.md#identifying-recipients-whose-birthday-it-is) voor een voorbeeld van het maken van filters op basis van een expressie.
 
 ## Een filter opslaan {#saving-a-filter}
 
