@@ -3,14 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: Aan de slag met machtigingen
 description: Leer hoe u toegang kunt verlenen tot campagnecapaciteiten
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: Toegangsbeheer
+role: Bedrijfs Praktijk, Beheerder
+level: Beginner
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 1%
+source-wordcount: '259'
+ht-degree: 2%
 
 ---
 
