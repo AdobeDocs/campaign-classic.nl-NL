@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 3%
+source-wordcount: '1206'
+ht-degree: 2%
 
 ---
 
@@ -19,16 +19,16 @@ ht-degree: 3%
 
 ## Beveiligingszones configureren
 
->[!IMPORTANT]
->
->Vanaf build 8977 is de gebruikersinterface van de Zones Self Service niet meer beschikbaar.
->
->* Als u op AWS wordt ontvangen, moet het toevoegen van IP aan de lijst van gewenste personen in Controlebord worden uitgevoerd. Raadpleeg de [desbetreffende documentatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) voor meer informatie.
->* Als u niet op AWS wordt ontvangen, bereik aan het ondersteuningsteam van Adobe om IP aan de lijst van gewenste personen toe te voegen.
+Vanaf build 8977 is de gebruikersinterface van de Zones Self Service niet meer beschikbaar. Als u niet op AWS wordt ontvangen, bereik aan het ondersteuningsteam van Adobe om IP aan de lijst van gewenste personen toe te voegen. Anders, moet het toevoegen van IP aan de lijst van gewenste personen in [Controlebord](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) worden uitgevoerd.
 
+Als u wilt controleren of uw instantie wordt gehost op AWS, voert u de stappen uit die worden beschreven in [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+
+>[!NOTE]
+> 
+>Het Configuratiescherm is toegankelijk voor alle beheergebruikers. De stappen om Admin-toegang aan een gebruiker te verlenen, worden gedetailleerd beschreven in [deze sectie](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
 >
->
-Als u wilt controleren of uw instantie wordt gehost op AWS, voert u de stappen uit die in [deze sectie](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) worden beschreven.
+>Merk op dat uw instantie op AWS moet worden gehost en moet worden geüpgraded met de nieuwste [Gold Standard](../../rn/using/gs-overview.md)-build of de [nieuwste GA-build (21.1)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+
 
 * Zorg ervoor dat de reverse-proxy niet is toegestaan in subNetwork. Als het het geval is, zal **all** verkeer worden ontdekt zoals komend van dit lokale IP, zodat zal worden vertrouwd.
 
