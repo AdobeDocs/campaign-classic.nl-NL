@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -67,7 +67,7 @@ In dit scherm worden de groep(en) weergegeven waartoe het geselecteerde profiel 
 
 ![](assets/s_ncs_user_profile_groups_tab_details.png)
 
-Raadpleeg [Lijsten maken en beheren](../../platform/using/creating-and-managing-lists.md) voor meer informatie.
+Raadpleeg [Lijsten maken en beheren](../../platform/using/creating-and-managing-lists.md) voor meer informatie hierover.
 
 ## Tabblad Abonnementen {#subscriptions-tab}
 
