@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: 40edacce1812a1722e5a23e5db7da11687c44ac8
 workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 7%
@@ -96,7 +96,7 @@ Zorg ervoor dat u wijzigingen test voordat u de definitieve verzending uitvoert
 Standaard voldoet het aantal tekens in een sms aan de gsm-standaarden (Global System for Mobile Communications). Sms-berichten met gsm-codering mogen maximaal 160 tekens bevatten of 153 tekens per sms voor berichten die in meerdere delen worden verzonden.
 
 Transliteratie houdt in dat een teken van een sms door een ander teken wordt vervangen wanneer dat teken niet in aanmerking wordt genomen door de gsm-standaard. Als u personalisatievelden in de inhoud van uw SMS-bericht invoegt, kunnen er tekens worden ingevoerd waarmee de GSM-codering geen rekening houdt. U kunt tekentransliteratie toestaan door het corresponderende vak te selecteren op het tabblad met SMPP-kanaalinstellingen van het corresponderende **[!UICONTROL External account]**.
-Meer informatie [in deze sectie](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+Meer informatie [in deze sectie](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
 
 **Tips**:
 
@@ -104,7 +104,7 @@ Meer informatie [in deze sectie](../../delivery/using/sms-channel.md#creating-an
 
 * Als uw SMS-berichten echter veel tekens bevatten waarmee de GSM-standaard geen rekening houdt, kunt u met transliteratie de verzendkosten van uw berichten beperken.
 
-Meer informatie [in deze sectie](../../delivery/using/sms-channel.md#about-character-transliteration).
+Meer informatie [in deze sectie](../../delivery/using/sms-set-up.md#about-character-transliteration).
 
 ## Werken met opmaken {#formatting}
 
