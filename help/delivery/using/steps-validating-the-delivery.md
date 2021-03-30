@@ -7,35 +7,35 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: ba50892f7b9578cface142184a287d95c0e11370
 workflow-type: tm+mt
-source-wordcount: '1667'
-ht-degree: 5%
+source-wordcount: '1663'
+ht-degree: 4%
 
 ---
 
 
-# De levering valideren {#validating-the-delivery}
+# De levering {#validating-the-delivery} valideren
 
 Wanneer een levering is gecreeerd en gevormd, moet u het bevestigen alvorens het naar het belangrijkste doel te verzenden.
 
 Dit doet u als volgt:
 
-1. **De levering** analyseren: met deze stap kunt u de te leveren berichten voorbereiden. Zie [De levering analyseren](#analyzing-the-delivery).
+1. **De levering** analyseren: met deze stap kunt u de te leveren berichten voorbereiden. [Meer informatie](#analyzing-the-delivery).
 
    De regels die tijdens de analyse worden toegepast, worden vermeld in [deze sectie](#validation-process-with-typologies). De beschikbare validatiemodi worden beschreven in de sectie [De goedkeuringsmodus wijzigen](#changing-the-approval-mode).
 
-1. **Proefdrukken** verzenden: Met deze stap kunt u inhoud, URL&#39;s, personalisatievelden, enzovoort goedkeuren. Zie [Een proefdruk verzenden](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) en [Een specifiek proefdrukdoel definiëren](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+1. **Proefdrukken** verzenden: Met deze stap kunt u inhoud, URL&#39;s, personalisatie enzovoort beheren. Meer informatie vindt u in [Een proefdruk verzenden](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) en [Een specifiek proefdrukdoel definiëren](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
 >[!IMPORTANT]
 >
->Beide stappen moeten noodzakelijk na elke wijziging van de berichtinhoud worden uitgevoerd.
+>De twee stappen hierboven MOETEN na elke wijziging op de berichtinhoud worden uitgevoerd.
 
-## De leveringanalyseren {#analyzing-the-delivery}
+## De levering {#analyzing-the-delivery} analyseren
 
 De analyse is het stadium waarin de doelpopulatie wordt berekend en de leveringsinhoud wordt voorbereid. Zodra het volledig is, is de levering klaar om worden verzonden.
 
-### De analyse starten {#launching-the-analysis}
+### Analyse {#launching-the-analysis} starten
 
 1. Klik op **[!UICONTROL Send]** om de afleveringsanalyse te starten.
 1. Selecteer **[!UICONTROL Deliver as soon as possible]**.
@@ -83,7 +83,7 @@ Na het controleren van het resultaat van de analyse, zult u **[!UICONTROL Confir
 >
 >Klik op de koppeling **[!UICONTROL Change the main delivery target]** als het aantal te verzenden berichten niet overeenkomt met uw configuratie. Zo kunt u de definitie van de doelpopulatie wijzigen en de analyse opnieuw starten.
 
-### Analyseparameters {#analysis-parameters}
+### Analyse-instellingen {#analysis-parameters}
 
 Op het tabblad **[!UICONTROL Analysis]** van de leveringseigenschappen kunt u een set gegevens definiëren voor de voorbereiding van berichten tijdens de analysefase.
 
@@ -92,9 +92,9 @@ Op het tabblad **[!UICONTROL Analysis]** van de leveringseigenschappen kunt u ee
 Op dit tabblad hebt u toegang tot de volgende opties:
 
 * **[!UICONTROL Label and code of the delivery]** : de opties in deze sectie worden gebruikt om de waarden van deze velden tijdens de fase van de leveringsanalyse te berekenen. In het veld **[!UICONTROL Compute the execution folder during the delivery analysis]** wordt de naam berekend van de map die deze leveringsactie tijdens de analysefase zal bevatten.
-* **[!UICONTROL Approval mode]** : in dit veld kunt u handmatig of automatisch afleveren definiëren wanneer de analyse is voltooid. De validatiemodi worden weergegeven in de sectie [De goedkeuringsmodus wijzigen](#changing-the-approval-mode).
+* **[!UICONTROL Approval mode]** : in dit veld kunt u handmatig of automatisch afleveren definiëren wanneer de analyse is voltooid. De validatiemodi worden weergegeven in de sectie [Wijzig de goedkeuringsmodus](#changing-the-approval-mode).
 * **[!UICONTROL Prepare the delivery parts in the database]** : met deze optie kunt u de prestaties van de leveringsanalyse verbeteren. Zie [deze sectie](#improving-delivery-analysis)voor meer informatie.
-* **[!UICONTROL Prepare the personalization data with a workflow]** : met deze optie kunt u de aanpassingsgegevens in uw levering voorbereiden in een automatische workflow, waardoor u een aanzienlijke prestatieverhoging voor het uitvoeren van personalisatie kunt realiseren. Voor meer op dit, zie [Optimizing personalization](../../delivery/using/personalization-fields.md#optimizing-personalization).
+* **[!UICONTROL Prepare the personalization data with a workflow]** : met deze optie kunt u de aanpassingsgegevens in uw levering voorbereiden in een automatische workflow, waardoor u een aanzienlijke prestatieverhoging voor het uitvoeren van personalisatie kunt realiseren. Zie [Verpersoonlijking optimaliseren](../../delivery/using/personalization-fields.md#optimizing-personalization) voor meer informatie.
 * **[!UICONTROL Start job in a detached process]** : met deze optie kunt u de leveringsanalyse in een afzonderlijk proces starten. De analysefunctie gebruikt standaard het Adobe Campaign-toepassingsserverproces (webserver). Als u deze optie selecteert, zorgt u ervoor dat de analyse ook wordt voltooid wanneer de toepassingsserver uitvalt.
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : deze optie voegt de SQL vraaglogboeken aan het leveringsdagboek tijdens de analysefase toe.
 * **[!UICONTROL Ignore personalization scripts during sending]** : Met deze optie kunt u de interpretatie van JavaScript-instructies in HTML-inhoud omzeilen. Ze worden op dezelfde manier weergegeven als in de geleverde inhoud. Deze richtlijnen worden geïntroduceerd met de tag **&lt;%=**).
@@ -111,7 +111,7 @@ Deze optie is momenteel alleen beschikbaar als aan de volgende voorwaarden is vo
 * U kunt geen populatie richten die uit een extern dossier komt. Voor één levering, klik **[!UICONTROL To]** verbinding van **[!UICONTROL Email parameters]** en controleer dat de **[!UICONTROL Defined in the database]** optie wordt geselecteerd. Voor levering die in een werkschema wordt gebruikt, controleer dat de ontvangers **[!UICONTROL Specified by the inbound event(s)]** in **[!UICONTROL Delivery]** tabel zijn.
 * U moet een PostSQL-database gebruiken.
 
-### De analyseprioriteitconfigureren {#analysis-priority-}
+### De analyseprioriteit {#analysis-priority-} configureren
 
 Wanneer de levering deel uitmaakt van een campagne, biedt het tabblad **[!UICONTROL Advanced]** een extra optie. Zo kunt u de verwerkingsvolgorde voor leveringen in dezelfde campagne ordenen.
 
@@ -127,21 +127,22 @@ Als een levering te groot is, is het beter om een lage prioriteit aan het toe te
 >
 >Om ervoor te zorgen dat de grotere leveringsanalyses de vooruitgang van uw werkschema&#39;s niet vertragen, kunt u hun uitvoeringen plannen door **[!UICONTROL Schedule execution for a time of low activity]** te tikken.
 
-## Een proef verzenden {#sending-a-proof}
+## Een proefdruk {#sending-a-proof} verzenden
 
 Adobe raadt u ten zeerste aan een cyclus voor leveringsvalidatie in te stellen om mogelijke fouten in de berichtconfiguratie op te sporen. Zorg ervoor dat de content zo vaak als nodig wordt goedgekeurd door proeven naar testontvangers te verzenden. Telkens wanneer een wijziging wordt aangebracht, moet voor de goedkeuring van de content een proef worden verzonden.
 
 >[!NOTE]
 >
->* Beschikbare validatiemodi worden beschreven in [De goedkeuringsmodus wijzigen](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode).
->* Configuratie van het proefdrukdoel wordt uitgelegd in [Een specifiek proefdrukdoel definiëren](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+>* Beschikbare validatiemodi worden beschreven in [Wijzig de goedkeuringsmodus](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode).
+>* De configuratie van het proefdrukdoel wordt verklaard in [Definieer een specifiek proefdrukdoel](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+
 >
 
 
 
 Volg onderstaande stappen om een proefdruk te verzenden:
 
-1. Zorg ervoor dat het proefdrukdoel is geconfigureerd zoals beschreven in [Een specifiek proefdrukdoel definiëren](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+1. Zorg ervoor dat het proefdrukdoel is geconfigureerd zoals beschreven in [Definieer een specifiek proefdrukdoel](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
 1. Klik **[!UICONTROL Send a proof]** op de hoogste bar van de leveringstovenaar.
 
    ![](assets/s_ncs_user_email_del_send_proof.png)
@@ -196,7 +197,7 @@ U kunt de goedkeuringsregels, hun inhoud, hun orde van uitvoering, en hun volled
 
 U kunt nieuwe regels tot stand brengen en nieuwe typologieën van deze knoop bepalen. Deze taken zijn echter voorbehouden aan ervaren gebruikers die JavaScript kennen.
 
-Voor meer op typologische regels, zie [Ongeveer campagnetypologies](../../campaign/using/about-campaign-typologies.md).
+Raadpleeg [deze pagina](../../campaign/using/about-campaign-typologies.md) voor meer informatie over typologische regels.
 
 Als u de huidige typologie wilt bewerken, klikt u op het pictogram **[!UICONTROL Edit link]** rechts van het veld **[!UICONTROL Typology]**.
 
@@ -210,7 +211,7 @@ Het tabblad **[!UICONTROL Rule]** bevat een lijst met typologische regels die mo
 >
 >**[!UICONTROL Arbitration]** typologieën van het type worden gebruikt in het kader van het beheer van de verkoopdruk . Raadpleeg [deze sectie](../../campaign/using/about-marketing-resource-management.md) voor meer informatie.
 
-## De goedkeuringsmoduswijzigen {#changing-the-approval-mode}
+## Wijzig de goedkeuringsmodus {#changing-the-approval-mode}
 
 Met het tabblad **[!UICONTROL Analysis]** voor leveringseigenschappen kunt u de validatiemodus selecteren. Als tijdens de analyse waarschuwingen worden gegenereerd (bijvoorbeeld als bepaalde tekens worden geaccentueerd in het onderwerp van de levering, enz.), kunt u de levering zodanig configureren dat wordt bepaald of deze nog moet worden uitgevoerd. Door gebrek, moet de gebruiker het verzenden van berichten aan het eind van de analysefase bevestigen: Dit is **handmatige** validatie.
 
