@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 8e0c6951be9d2f9fb0e58af213cb8db4079f2225
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1599'
 ht-degree: 2%
 
 ---
@@ -19,12 +19,12 @@ ht-degree: 2%
 
 ## Over doelpopulaties {#about-target-populations}
 
-Voor elke levering kunt u verschillende typen doelpopulaties definiëren. In de onderstaande sectie vindt u meer informatie over het selecteren van:
+Voor elke levering kunt u verschillende typen doelpopulaties definiëren:
 
-* De belangrijkste ontvangers van de levering. [Meer informatie](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
-* De ontvangers van bewijsberichten, om een validatiecyclus op te zetten. [Meer informatie](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
-
-Bovendien, als de levering in een marketing campagne inbegrepen is, kunt u [zaadadressen ](../../delivery/using/about-seed-addresses.md), en [controlegroepen](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group) ook bepalen.
+* **Hoofdpubliek**: profielen die berichten ontvangen. [Meer informatie](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
+* **Proef**: ontvangers van bewijsberichten, betrokken bij de bevestigingscyclus. [Meer informatie](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
+* **Zaadadressen**: ontvangers die buiten het leveringsdoel vallen, maar de levering zullen ontvangen (alleen in het kader van een marketingcampagne). [Meer informatie](../../delivery/using/about-seed-addresses.md)
+* **Controlegroepen**: bevolking die de levering niet zal ontvangen, gebruikt om het gedrag en de gevolgen van de campagne te volgen (alleen in het kader van een marketingcampagne). [Meer informatie](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 
 ## De belangrijkste ontvangers van de levering selecteren {#selecting-the-main-target}
 
