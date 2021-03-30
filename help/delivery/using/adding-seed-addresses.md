@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 5%
+source-wordcount: '335'
+ht-degree: 6%
 
 ---
 
 
-# Seed-adressen toevoegen{#adding-seed-addresses}
+# zaadadressen toevoegen{#adding-seed-addresses}
 
 ## Zaadadressen in een levering {#seed-addresses-in-a-delivery}
 
@@ -31,7 +31,7 @@ Er zijn drie mogelijke invoegmodi:
 
 1. Adressjablonen importeren en deze aan uw wensen aanpassen.
 
-   Om dit te doen, klik **[!UICONTROL Import seed templates...]** verbinding en selecteer de omslag die de adresmalplaatjes bevat. Voor meer op dit, verwijs naar [Creërend zaadadresmalplaatjes](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates).
+   Om dit te doen, klik **[!UICONTROL Import seed templates...]** verbinding en selecteer de omslag die de adresmalplaatjes bevat. Raadpleeg [deze sectie](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates) voor meer informatie.
 
    Indien nodig, zodra zij worden toegevoegd, kunt u hen tweemaal klikken of **[!UICONTROL Detail...]** knoop klikken om de inhoud van elk adres aan te passen.
 
@@ -39,13 +39,13 @@ Er zijn drie mogelijke invoegmodi:
 
    Om dit te doen, klik **[!UICONTROL Edit the dynamic condition...]** verbinding, dan ga de parameters van de zaadselectie in. Bijvoorbeeld, kon u alle zaadadressen omvatten in een specifieke omslag, of zaadadressen die tot een specifieke afdeling van uw organisatie behoren.
 
-   Een voorbeeld hiervan wordt in deze sectie gegeven: [Hoofdlettergebruik: het selecteren van zaadadressen op criteria](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
+   Een voorbeeld hiervan wordt in deze sectie gegeven: [Hoofdlettergebruik: zaadadressen op criteria](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md) selecteren.
 
 >[!NOTE]
 >
 >Deze optie wordt gebruikt wanneer de gebruikte ontvankelijke lijst niet het gebrek **nms:ontvanger** lijst is en u gebruikt de Inbox Rendering functionaliteit die met Adobe Campaign **[!UICONTROL Deliverability]** module wordt verstrekt.
 >
->Raadpleeg [Een externe tabel voor ontvangers gebruiken](../../delivery/using/using-an-external-recipient-table.md) en de documentatie over [Inbox-rendering](../../delivery/using/inbox-rendering.md) voor meer informatie.
+>Zie [Een externe tabel voor ontvangers gebruiken](../../delivery/using/using-an-external-recipient-table.md) en de documentatie over [Inbox-rendering](../../delivery/using/inbox-rendering.md) voor meer informatie.
 
 Voor leveringen kunt u ook de manier aanpassen waarop adressen worden ingevoegd in het extractiebestand. Deze worden standaard ingevoegd in de sorteervolgorde van het uitvoerbestand, maar u kunt ervoor kiezen ze aan het einde of het begin van het bestand in te voegen, of willekeurig onder de ontvangers van het hoofddoel.
 
