@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 translation-type: tm+mt
-source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 1%
+source-wordcount: '1185'
+ht-degree: 0%
 
 ---
 
 
-# Automatiseren via workflows{#automating-via-workflows}
+# Automatiseren met workflows{#automating-via-workflows}
 
 ## Inhoudsbeheeractiviteit {#content-management-activity}
 
@@ -78,7 +78,7 @@ Met de optie **Een uitvoerovergang genereren** kunt u een uitvoerovergang toevoe
 
 ## Voorbeelden {#examples}
 
-### Maken en leveren van inhoud automatiseren {#automating-content-creation-and-delivery}
+### Automatisch inhoud maken en leveren {#automating-content-creation-and-delivery}
 
 In het volgende voorbeeld worden het maken en leveren van een inhoudsblok geautomatiseerd.
 
@@ -160,7 +160,7 @@ De inhoud van de levering wordt via de binnenkomende gebeurtenis gevuld.
 
 De laatste stap tot het voltooien van de activiteit is het voorbereiden en dan de levering lanceren.
 
-### Inhoud maken en later publiceren {#creating-content-and-publishing-it-later}
+### Inhoud maken voor latere publicatie {#creating-content-and-publishing-it-later}
 
 In dit voorbeeld wordt een inhoudsblok gemaakt en wordt de bestandspublicatie na een bepaalde tijdvertraging gestart.
 
@@ -214,7 +214,7 @@ De inhoud van de levering wordt via de binnenkomende gebeurtenis gevuld.
 
 De laatste actie van de activiteit is het voorbereiden en lanceren van de levering.
 
-### Inhoud importeren vanuit FTP {#importing-content-from-ftp}
+### Inhoud importeren uit FTP {#importing-content-from-ftp}
 
 Als uw leveringsinhoud beschikbaar is in een HTML-bestand dat zich op FTP- of SFTP-servers bevindt, kunt u deze inhoud gemakkelijk laden in Adobe Campaign-leveringen. Zie [dit voorbeeld](../../workflow/using/loading-delivery-content.md).
 
