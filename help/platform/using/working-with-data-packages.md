@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '2458'
-ht-degree: 3%
+source-wordcount: '2442'
+ht-degree: 2%
 
 ---
 
 
-# Werken met datapakketten{#working-with-data-packages}
+# Werken met gegevenspakketten{#working-with-data-packages}
 
 ## Over gegevenspakketten {#about-data-packages}
 
@@ -89,13 +89,13 @@ Een gegevenspakket kan manueel van om het even welke tekstredacteur worden samen
 
 Pakketten kunnen op drie verschillende manieren worden geëxporteerd:
 
-* Met **[!UICONTROL Package Export Wizard]** kunt u een set objecten in één pakket exporteren. Zie [Een set objecten in een pakket exporteren](#exporting-a-set-of-objects-in-a-package) voor meer informatie hierover
+* Met **[!UICONTROL Package Export Wizard]** kunt u een set objecten in één pakket exporteren. Voor meer informatie hierover raadpleegt u [Een set objecten in een pakket exporteren](#exporting-a-set-of-objects-in-a-package)
 * Een **enkelvoudig object** kan rechtstreeks in een pakket worden geëxporteerd door er met de rechtermuisknop op te klikken en **[!UICONTROL Actions > Export in a package]** te selecteren.
-* **Met** de pakketdefinitie maakt u een pakketstructuur waarin u objecten toevoegt die later in een pakket worden geëxporteerd. Raadpleeg [Pakketdefinities beheren](#managing-package-definitions) voor meer informatie
+* **Met** de pakketdefinitie maakt u een pakketstructuur waarin u objecten toevoegt die later in een pakket worden geëxporteerd. Raadpleeg [Pakketdefinities beheren](#managing-package-definitions) voor meer informatie hierover
 
 Nadat een pakket is geëxporteerd, kunt u het pakket en alle toegevoegde entiteiten importeren in een andere Campagne-instantie.
 
-### Een set objecten in een pakket exporteren {#exporting-a-set-of-objects-in-a-package}
+### Een set objecten exporteren in een pakket {#exporting-a-set-of-objects-in-a-package}
 
 De wizard Pakket exporteren is toegankelijk via het menu **[!UICONTROL Tools > Advanced > Export package...]** van de Adobe Campaign-clientconsole.
 
@@ -141,7 +141,7 @@ Voor de drie typen pakketten biedt de wizard de volgende stappen:
 
    ![](assets/ncs_datapackage_export7.png)
 
-### Afhankelijkheden {#managing-dependencies} beheren
+### Afhankelijkheden beheren {#managing-dependencies}
 
 Met het exportmechanisme kan Adobe Campaign de koppelingen tussen de verschillende geëxporteerde elementen bijhouden.
 
@@ -154,7 +154,7 @@ Dit mechanisme wordt gedefinieerd door twee regels:
 >
 >De types van integriteit verbonden aan schemaelementen worden bepaald in [deze sectie](../../configuration/using/database-mapping.md#links--relation-between-tables).
 
-#### Een campagne {#exporting-a-campaign} exporteren
+#### Een campagne exporteren {#exporting-a-campaign}
 
 Hier volgt een voorbeeld van hoe u een campagne kunt exporteren. De uit te voeren marketingcampagne bevat een taak (label: &quot;MyTask&quot;) en een workflow (label: &quot;CampaignWorkflow&quot;) in een map &quot;MyWorkflow&quot; (knooppunt: Beheer / Productie / Technische workflows / Campagne processen / MyWorkflow).
 
@@ -224,8 +224,6 @@ Tot slot laat **@pkgStatus** attribuut u toe om de de uitvoerregels voor deze el
 
 ## Pakketdefinities beheren {#managing-package-definitions}
 
-### Informatie over pakketdefinities {#about-package-definitions}
-
 Met pakketdefinities kunt u een pakketstructuur maken waarin u entiteiten toevoegt die later in één pakket worden geëxporteerd. Vervolgens kunt u dit pakket en alle toegevoegde entiteiten importeren in een andere Campagne-instantie.
 
 **Verwante onderwerpen:**
@@ -253,7 +251,7 @@ Vervolgens kunt u entiteiten toevoegen aan de pakketdefinitie en deze exporteren
 
 ### Entiteiten toevoegen aan een pakketdefinitie {#adding-entities-to-a-package-definition}
 
-Klik op het tabblad **[!UICONTROL Content]** op de knop **[!UICONTROL Add]** om de entiteiten te selecteren die u met het pakket wilt exporteren. Aanbevolen procedures voor het selecteren van entiteiten worden weergegeven in de sectie [Een set objecten exporteren in een pakket](#exporting-a-set-of-objects-in-a-package).
+Klik op het tabblad **[!UICONTROL Content]** op de knop **[!UICONTROL Add]** om de entiteiten te selecteren die u met het pakket wilt exporteren. Aanbevolen procedures voor het selecteren van entiteiten worden weergegeven in de sectie [deze sectie](#exporting-a-set-of-objects-in-a-package).
 
 ![](assets/packagedefinition_addentities.png)
 
@@ -267,7 +265,7 @@ Entiteiten kunnen rechtstreeks vanaf hun locatie in de instantie aan een pakketd
 
    ![](assets/packagedefinition_packageselection.png)
 
-1. De entiteit wordt toegevoegd aan de pakketdefinitie, zal het met het pakket worden uitgevoerd (zie [pakketten van een pakketdefinitie uitvoeren](#exporting-packages-from-a-package-definition)).
+1. De entiteit wordt toegevoegd aan de pakketdefinitie, zal het met het pakket worden uitgevoerd (zie [deze sectie](#exporting-packages-from-a-package-definition)).
 
    ![](assets/packagedefinition_entityadded.png)
 
@@ -303,8 +301,6 @@ Voer de volgende stappen uit om een pakket uit een pakketdefinitie te exporteren
 
 ## Pakketten {#importing-packages} importeren
 
-### Over het importeren van pakketten {#about-package-import}
-
 De wizard voor het importeren van pakketten is toegankelijk via het hoofdmenu **[!UICONTROL Tools > Advanced > Package import...]** van de Adobe Campaign-clientconsole.
 
 U kunt een pakket importeren uit een eerder uitgevoerde exportbewerking, bijvoorbeeld uit een ander Adobe Campaign-exemplaar of uit een [ingebouwd pakket](../../installation/using/installing-campaign-standard-packages.md), afhankelijk van de voorwaarden van uw licentie.
@@ -323,7 +319,7 @@ Klik op **[!UICONTROL Next]** en **[!UICONTROL Start]** om het importeren te sta
 
 ![](assets/ncs_datapackage_import_2.png)
 
-### Een ingebouwd pakket installeren {#installing-a-standard-package}
+### Een ingebouwd pakket {#installing-a-standard-package} installeren
 
 Standaardpakketten zijn ingebouwde pakketten die worden geïnstalleerd wanneer de Adobe Campaign wordt geconfigureerd. Afhankelijk van uw toestemmingen en uw plaatsingsmodel, kunt u nieuwe standaardpakketten invoeren als u nieuwe opties of toe:voegen-ons verwerft, of als u aan een nieuwe aanbieding bevordert.
 
