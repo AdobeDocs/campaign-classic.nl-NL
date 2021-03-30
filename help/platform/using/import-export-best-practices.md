@@ -7,7 +7,7 @@ audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 translation-type: tm+mt
-source-git-commit: a2a99135bdd74d87c04262b53e074b6aa05e7915
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 2%
@@ -31,7 +31,7 @@ Ga niet uit van de veronderstelling dat de inkomende gegevens consistent en corr
 
 Een voorbeeld van een generiek werkschemamalplaatje dat voor het invoeren van gegevens wordt ontworpen is beschikbaar in [Voorbeeld: Workflowsjabloon voor het importeren van gegevens](../../platform/using/creating-import-export-templates.md)-sectie.
 
-## Vlakke bestandsindelingen {#using-flat-file-formats} gebruiken
+## Samengevoegde bestandsindelingen {#using-flat-file-formats} gebruiken
 
 De meest efficiënte indeling voor importeren is platte bestanden. Vlakke bestanden kunnen in de bulkmodus op databaseniveau worden geïmporteerd.
 
@@ -61,7 +61,7 @@ Gebruik indien mogelijk gecomprimeerde bestanden voor importeren en exporteren. 
 * [Activiteit bij laden van gegevens (bestand)](../../workflow/using/data-loading--file-.md)
 * [Activiteit voor gegevensextractie (bestand)](../../workflow/using/extraction--file-.md)
 
-## Importeren in Deltamodus {#importing-in-delta-mode}
+## Importeren in Delta-modus {#importing-in-delta-mode}
 
 Regelmatige invoer moet plaatsvinden in de deltamodus. Dit betekent dat alleen gewijzigde of nieuwe gegevens telkens naar Adobe Campaign worden verzonden in plaats van naar de hele tabel.
 
