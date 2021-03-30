@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 7%
@@ -24,7 +24,7 @@ De belangrijkste stappen bij het maken van een levering zijn als volgt:
 1. **Bepaal de leveringsinhoud**. De definitie van de leveringsinhoud is specifiek voor elk kanaal. Raadpleeg de desbetreffende sectie voor meer informatie hierover:
 
    * [E-mailkanaal](../../delivery/using/defining-the-email-content.md)
-   * [Sms-kanaal](../../delivery/using/sms-channel.md#defining-the-sms-content)
+   * [Sms-kanaal](../../delivery/using/sms-create.md#defining-the-sms-content)
    * [Direct mailkanaal](../../delivery/using/defining-the-direct-mail-content.md)
    * [Mobiel toepassingskanaal](../../delivery/using/about-mobile-app-channel.md)
 
