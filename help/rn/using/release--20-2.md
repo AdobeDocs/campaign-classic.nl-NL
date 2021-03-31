@@ -7,10 +7,10 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
+source-git-commit: a25f9464a762defa5d9a3b45bb60a387c65b7c97
 workflow-type: tm+mt
-source-wordcount: '2562'
-ht-degree: 92%
+source-wordcount: '2833'
+ht-degree: 84%
 
 ---
 
@@ -19,7 +19,26 @@ ht-degree: 92%
 
 ![](assets/do-not-localize/cp-icon.png) **Release van nieuw Configuratiescherm in oktober** met domeinconfiguratie met CNAME-records en nieuwe mogelijkheden voor databasecontrole. [Meer informatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/green_2.png) Release 20.2.4 - build 9187 {#release-20-2-4-build-9187}
+## ![](assets/do-not-localize/green_2.png) Release 20.2.5 - build 9188 {#release-20-2-5-build-9188}
+
+_31 maart 2020_
+
+**Verbeteringen**
+
+* Er is een verbetering aangebracht om te voorkomen dat er bij ongeldige zeepoproepen crasht. Hierdoor werkt de instantie mogelijk niet meer wanneer wordt geprobeerd specifieke complexe query&#39;s uit te voeren. (NEO-28796, NEO-30553)
+* Oplossing voor een regressie die ervoor zorgde dat SMS-leveringen met TLS niet werden verzonden vanwege de verificatie van de hostnaam. (NEO-29581)
+* Probleem verholpen waardoor ondertekende koppelingen voor bijhouden van handtekeningen niet konden werken op bepaalde e-mailclients. (NEO-28414, NEO-29615)
+* Probleem verholpen met een id-reeks voor bijhouden bij het gebruik van tags voor webApp die conflicten kunnen veroorzaken met dubbele id&#39;s. (NEO-27931)
+* Probleem verholpen waarbij actieve workflows werden gestopt door het dagelijkse opnieuw opstarten van de wfserver. (NEO-30047)
+* Er is een beveiligingsprobleem verholpen waarbij API-aanroepen werden gebruikt van gebruikers die geen beheerder zijn tijdens een poging om Adobe Experience Manager-sjablonen te synchroniseren. (NEO-32389, NEO-23487)
+* Probleem verholpen waarbij de console vastliep als een leveringsdialoogvenster wordt gesloten voor een levering die met een sjabloon is gemaakt. (NEO-31547)
+* Oplossing voor een probleem dat optrad bij het maken en opslaan van een levering op het tabblad **Doelstelling &amp; workflow** van een campagne: de voorvertoning zou mislukken met de volgende fout. (NEO-29440)
+* Probleem verholpen waarbij Tomcat 8.5 ongeldige antwoorden verzendt die fouten in Transactieberichten logboeken veroorzaakten. (NEO-30858)
+* Oplossing voor een regressieprobleem dat geheugenbeschadiging in extern draadbeheer veroorzaakt en de prestaties beïnvloedt.
+* Probleem opgelost waarbij de factureringsworkflow mogelijk mislukte bij het gebruik van een aangepaste doeltoewijzing. De primaire sleutel van het aangepaste schema wordt opgeslagen in de kolom &quot;sourceId&quot;, die alleen gehele getallen toestaat. Het staat nu geheel zowel als koordwaarden toe. (NEO-25914, NEO-28146)
+* Oplossing voor een regressie waardoor bepaalde componenten van de console niet konden worden gebruikt, zoals de datumkiezer en het beheer van afbeeldingen in leveringen. (NEO-31453)
+
+## ![](assets/do-not-localize/red_2.png) Release 20.2.4 - build 9187 {#release-20-2-4-build-9187}
 
 _22 december 2020_
 
@@ -28,7 +47,6 @@ _22 december 2020_
 > * Deze versie wordt geleverd met een nieuw verbindingsprotocol: Als u verbinding maakt met Campagne via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **30 juni 2021**.
 > * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
 > * Als u de Experience Cloud Triggers integratie door authentificatie Auth gebruikt, moet u naar Adobe I/O gaan zoals [in deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde Auth authentificatiemodus met Campagne zal op **30 November, 2021** worden gepensioneerd.
-
 
 
 **Verbeteringen**
