@@ -6,14 +6,14 @@ description: Leer beste praktijken en beperkingen wanneer het werken met een ext
 audience: platform
 content-type: reference
 topic-tags: connectors
+exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
 translation-type: tm+mt
-source-git-commit: 0a92ebd6c9400f8caf43da8f633c7755a3fb77ce
+source-git-commit: 3b5a6e6f03d9cb26ed372c3df069cbada36756a2
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 4%
 
 ---
-
 
 # Best practices en beperkingen
 
@@ -60,4 +60,3 @@ Vermijd de bewerkingen die zowel de Adobe Campaign als de externe database zovee
 Als u personalisatie in uw leveringen wilt uitvoeren gebruikend gegevens van het externe gegevensbestand, verzamel de gegevens in een werkschema te gebruiken om het ter beschikking te stellen in een tijdelijke lijst. Dan gebruik de gegevens van de tijdelijke lijst om uw levering te personaliseren.
 
 Voor de optie FDA gelden de beperkingen van het externe databasesysteem dat u gebruikt.
-
