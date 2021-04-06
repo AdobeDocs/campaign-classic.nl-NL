@@ -6,38 +6,22 @@ description: Meer informatie over het maken van externe accounts
 audience: platform
 content-type: reference
 topic-tags: administration-basics
+exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
 translation-type: tm+mt
-source-git-commit: bfe2e29ed904b6a04bab28455301437c63ab8118
+source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
 workflow-type: tm+mt
-source-wordcount: '1612'
-ht-degree: 11%
+source-wordcount: '1543'
+ht-degree: 8%
 
 ---
-
 
 # Externe accounts{#external-accounts}
 
 Adobe Campaign wordt geleverd met een set vooraf gedefinieerde externe accounts. Als u verbindingen met externe systemen wilt instellen, kunt u nieuwe externe accounts maken.
 
-Externe accounts worden gebruikt door technische processen, zoals technische workflows of workflows voor campagnes. Wanneer u een bestandsoverdracht instelt in een workflow of een data-uitwisseling met een andere applicatie (Adobe Target, Experience Manager, enz.), moet u een extern account selecteren.
+Externe accounts worden gebruikt door technische processen, zoals technische workflows of workflows voor campagnes. Als u bijvoorbeeld een bestandsoverdracht instelt in een workflow of een gegevensuitwisseling met een andere toepassing (Adobe Target, Experience Manager, enzovoort), moet u een externe account selecteren.
 
-U kunt de volgende typen externe accounts instellen:
-
-* [Externe account routeren](#routing-external-account)
-* [Externe FTP-account](#ftp-external-account)
-* [Externe externe database-account](#external-database-external-account)
-* [Externe account voor webanalyse](#web-analytics-external-account)
-* [Externe account voor Facebook connect](#facebook-connect-external-account)
-* [Uitvoerinstantie externe account](#execution-instance-external-account)
-* [Externe Adobe Experience Cloud-account](#adobe-experience-cloud-external-account)
-* [Extern SFTP-account](#sftp-external-account)
-* [Extern Adobe Experience Manager-account](#adobe-experience-manager-external-account)
-* [Amazon Simple Storage Service (S3) externe account](#amazon-simple-storage-service--s3--external-account)
-* [Externe account voor Microsoft Dynamics CRM](#microsoft-dynamics-crm-external-account)
-* [Externe rekening Salesforce CRM](#salesforce-crm-external-account)
-* [Extern Azure Blob-opslagaccount ](#azure-blob-external-account)
-
-## Een extern account maken {#creating-an-external-account}
+## Een externe account maken {#creating-an-external-account}
 
 Voer de onderstaande stappen uit om een nieuwe externe account te maken. Gedetailleerde instellingen zijn afhankelijk van het type externe account.
 
@@ -60,7 +44,9 @@ Voer de onderstaande stappen uit om een nieuwe externe account te maken. Gedetai
 
 De externe account wordt gemaakt en toegevoegd aan de lijst met externe accounts.
 
-## Externe account voor stuiterende berichten {#bounce-mails-external-account}
+## Campagne-specifieke externe rekeningen
+
+### Niet bezorgde mails {#bounce-mails-external-account}
 
 Met de externe account **Bounce mails** wordt de externe POP3-account opgegeven die moet worden gebruikt om verbinding te maken met de e-mailservice. Raadpleeg deze [pagina](../../workflow/using/inbound-emails.md) voor meer informatie over deze externe account.
 
@@ -90,7 +76,7 @@ Om de **[!UICONTROL Bounce mails (defaultPopAccount)]** externe rekening te vorm
 
    Type gekozen codering tussen **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** of **[!UICONTROL POP3S]**.
 
-## Externe account {#routing-external-account} routeren
+### Routering{#routing-external-account}
 
 Met de externe account **[!UICONTROL Routing]** kunt u elk kanaal dat beschikbaar is in Adobe Campaign configureren, afhankelijk van de geïnstalleerde pakketten.
 
@@ -108,7 +94,31 @@ De volgende kanalen kunnen worden gevormd:
 * [iOS-kanaal](../../delivery/using/configuring-the-mobile-application.md)
 * [Android-kanaal](../../delivery/using/configuring-the-mobile-application-android.md)
 
-## FTP externe account {#ftp-external-account}
+
+### Uitvoeringsinstantie {#execution-instance-external-account}
+
+Als u een opgesplitste architectuur hebt, moet u de uitvoeringsinstanties specificeren verbonden aan de controleinstantie en hen verbinden. Transactieberichtsjablonen worden geïmplementeerd in de uitvoeringsinstantie
+
+![](assets/ext_account_13.png)
+
+* **[!UICONTROL URL]**
+
+   URL van de server waarop de uitvoeringsinstantie is geïnstalleerd.
+
+* **[!UICONTROL Account]**
+
+   Naam van de rekening, moet het de Agent van het Centrum van het Bericht aanpassen zoals die in de exploitantomslag wordt bepaald.
+
+* **[!UICONTROL Password]**
+
+   Wachtwoord van de account zoals gedefinieerd in de map met operatoren.
+
+Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../message-center/using/creating-a-shared-connection.md#control-instance).
+
+
+## Toegang tot externe systeemrekeningen
+
+### FTP {#ftp-external-account}
 
 Met de externe FTP-account kunt u toegang tot een server buiten Adobe Campaign configureren en testen. Als u verbindingen wilt instellen met externe systemen, zoals FTP-servers 898 die worden gebruikt voor bestandsoverdracht, kunt u uw eigen externe accounts maken. Raadpleeg [deze pagina](../../workflow/using/file-transfer.md) voor meer informatie.
 
@@ -138,7 +148,29 @@ Hiertoe geeft u in deze externe account het adres en de referenties op waarmee d
 
 Om te weten waar te om van deze geloofsbrieven de plaats te bepalen, verwijs naar deze [pagina](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials).
 
-## Externe externe database-account {#external-database-external-account}
+### SFTP {#sftp-external-account}
+
+Met de externe SFTP-account kunt u toegang tot een server buiten Adobe Campaign configureren en testen. Als u verbindingen wilt instellen met externe systemen, zoals SFTP, die worden gebruikt voor bestandsoverdracht, kunt u uw eigen externe accounts maken. Raadpleeg [deze pagina](../../workflow/using/file-transfer.md) voor meer informatie.
+
+![](assets/ext_account_4.png)
+
+* **[!UICONTROL Server]**
+
+   URL van de SFTP-server.
+
+* **[!UICONTROL Port]**
+
+   FTP-poortnummer. De standaardpoort is 22.
+
+* **[!UICONTROL Account]**
+
+   Accountnaam gebruikt om verbinding te maken met de SFTP-server.
+
+* **[!UICONTROL Password]**
+
+   Wachtwoord gebruikt om verbinding te maken met de SFTP-server.
+
+### Externe database (FDA) {#external-database-external-account}
 
 Gebruik de **External database** type external account om verbinding te maken met een externe database. Meer informatie over de optie Federated Data Access (FDA) in [deze sectie](../../installation/using/about-fda.md).
 
@@ -157,15 +189,7 @@ De instellingen voor externe accountconfiguratie zijn afhankelijk van de databas
 * Toegang tot [Sybase IQ](../../installation/using/configure-fda-sybase.md) configureren
 * Toegang tot [Teradata](../../installation/using/configure-fda-teradata.md) configureren
 
-## Externe account voor webanalyse {#web-analytics-external-account}
-
-Met de externe account **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** kunt u gegevens van Adobe Analytics naar Adobe Campaign doorsturen in de vorm van segmenten. Omgekeerd verzendt het programma indicatoren en kenmerken van e-mailcampagnes die door Adobe Campaign worden geleverd aan Adobe Analytics - Gegevensconnector.
-
-![](assets/ext_account_10.png)
-
-Voor deze externe account moet de berekeningsformule voor bijgehouden URL&#39;s worden verrijkt en moet de verbinding tussen de twee oplossingen worden goedgekeurd. Raadpleeg [deze pagina](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign) voor meer informatie.
-
-## Facebook connect external account {#facebook-connect-external-account}
+### Facebook connect {#facebook-connect-external-account}
 
 Met de externe account **[!UICONTROL Facebook Connect]** kunt u gepersonaliseerde inhoud weergeven in uw Facebook-toepassingen, waardoor het eenvoudiger wordt om vooruitzichten te krijgen via dit sociale netwerk.
 
@@ -189,27 +213,9 @@ Als u de host kiest in deze instantiemodus, moet de URL van het beveiligde canva
 
 Om te weten waar te om van deze geloofsbrieven de plaats te bepalen, verwijs naar deze [pagina](https://developers.facebook.com/docs/facebook-login/access-tokens).
 
-## Uitvoerinstantie externe account {#execution-instance-external-account}
+## Adobe Oplossing integratie externe accounts
 
-Als u een opgesplitste architectuur hebt, moet u de uitvoeringsinstanties specificeren verbonden aan de controleinstantie en hen verbinden. Transactieberichtsjablonen worden geïmplementeerd in de uitvoeringsinstantie
-
-![](assets/ext_account_13.png)
-
-* **[!UICONTROL URL]**
-
-   URL van de server waarop de uitvoeringsinstantie is geïnstalleerd.
-
-* **[!UICONTROL Account]**
-
-   Naam van de rekening, moet het de Agent van het Centrum van het Bericht aanpassen zoals die in de exploitantomslag wordt bepaald.
-
-* **[!UICONTROL Password]**
-
-   Wachtwoord van de account zoals gedefinieerd in de map met operatoren.
-
-Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../message-center/using/creating-a-shared-connection.md#control-instance).
-
-## Adobe Experience Cloud externe account {#adobe-experience-cloud-external-account}
+### Adobe Experience Cloud {#adobe-experience-cloud-external-account}
 
 Als u verbinding wilt maken met de Adobe Campaign-console met een Adobe ID, moet u de externe account **[!UICONTROL Adobe Experience Cloud (MAC)]** configureren.
 
@@ -253,29 +259,15 @@ Als u verbinding wilt maken met de Adobe Campaign-console met een Adobe ID, moet
 
 Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../integrations/using/configuring-ims.md).
 
-## Extern SFTP-account {#sftp-external-account}
+## Web Analytics {#web-analytics-external-account}
 
-Met de externe SFTP-account kunt u toegang tot een server buiten Adobe Campaign configureren en testen. Als u verbindingen wilt instellen met externe systemen, zoals SFTP, die worden gebruikt voor bestandsoverdracht, kunt u uw eigen externe accounts maken. Raadpleeg [deze pagina](../../workflow/using/file-transfer.md) voor meer informatie.
+Met de externe account **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** kunt u gegevens van Adobe Analytics naar Adobe Campaign doorsturen in de vorm van segmenten. Omgekeerd verzendt het programma indicatoren en kenmerken van e-mailcampagnes die door Adobe Campaign worden geleverd aan Adobe Analytics - Gegevensconnector.
 
-![](assets/ext_account_4.png)
+![](assets/ext_account_10.png)
 
-* **[!UICONTROL Server]**
+Voor deze externe account moet de berekeningsformule voor bijgehouden URL&#39;s worden verrijkt en moet de verbinding tussen de twee oplossingen worden goedgekeurd. Raadpleeg [deze pagina](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign) voor meer informatie.
 
-   URL van de SFTP-server.
-
-* **[!UICONTROL Port]**
-
-   FTP-poortnummer. De standaardpoort is 22.
-
-* **[!UICONTROL Account]**
-
-   Accountnaam gebruikt om verbinding te maken met de SFTP-server.
-
-* **[!UICONTROL Password]**
-
-   Wachtwoord gebruikt om verbinding te maken met de SFTP-server.
-
-## Extern Adobe Experience Manager-account {#adobe-experience-manager-external-account}
+### Adobe Experience Manager {#adobe-experience-manager-external-account}
 
 Met de externe account **[!UICONTROL AEM (AEM instance)]** kunt u de inhoud van uw e-mailleveringen en uw formulieren rechtstreeks in Adobe Experience Manager beheren.
 
@@ -295,39 +287,11 @@ Met de externe account **[!UICONTROL AEM (AEM instance)]** kunt u de inhoud van 
 
 Raadpleeg deze [sectie](../../integrations/using/about-adobe-experience-manager.md) voor meer informatie.
 
-## Amazon Simple Storage Service (S3) externe account {#amazon-simple-storage-service--s3--external-account}
 
-De Amazon Simple Storage Service (S3)-connector kan worden gebruikt voor het importeren of exporteren van gegevens naar Adobe Campaign. Deze kan worden ingesteld in een workflowactiviteit. Raadpleeg [deze pagina](../../workflow/using/file-transfer.md) voor meer informatie.
 
-![](assets/ext_account_3.png)
+## Externe CRM-connectorrekeningen
 
-Wanneer u dit nieuwe externe account instelt, moet u de volgende data opgeven:
-
-* **[!UICONTROL AWS S3 Account Server]**
-
-   URL van uw server, zou het als volgt moeten worden gevuld:
-
-   ```
-   <S3bucket name>.s3.amazonaws.com/<s3object path>
-   ```
-
-* **[!UICONTROL AWS access key ID]**
-
-   Om te weten waar te om uw AWS toegangs belangrijkste identiteitskaart te vinden, verwijs naar deze [pagina](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
-
-* **[!UICONTROL Secret access key to AWS]**
-
-   Om te weten waar te om uw geheime toegangssleutel aan AWS te vinden, verwijs naar deze [pagina](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
-
-* **[!UICONTROL AWS Region]**
-
-   Voor meer informatie over AWS-gebied raadpleegt u deze [pagina](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
-
-* Met het selectievakje **[!UICONTROL Use server side encryption]** kunt u het bestand opslaan in de gecodeerde modus van S3.
-
-Om te leren waar te om toegangs belangrijkste identiteitskaart en geheime toegangssleutel te vinden, verwijs naar de diensten [documentatie](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) van het Web van Amazon.
-
-## Externe account van Microsoft Dynamics CRM {#microsoft-dynamics-crm-external-account}
+### Microsoft Dynamics CRM {#microsoft-dynamics-crm-external-account}
 
 Met de externe account **[!UICONTROL Microsoft Dynamics CRM]** kunt u Microsoft Dynamics-gegevens importeren en exporteren naar Adobe Campaign.
 
@@ -383,7 +347,7 @@ Met **[!UICONTROL Web API]** plaatsingstype en **[!UICONTROL Certificate]** auth
 
 Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../platform/using/crm-connectors.md).
 
-## Externe rekening Salesforce CRM {#salesforce-crm-external-account}
+### Salesforce.com CRM {#salesforce-crm-external-account}
 
 Met de externe account **[!UICONTROL Salesforce CRM]** kunt u Salesforce-gegevens importeren en exporteren naar Adobe Campaign.
 
@@ -409,13 +373,47 @@ Om de externe rekening van Salesforce CRM te vormen om met Adobe Campaign te wer
 
 * **[!UICONTROL API version]**
 
-   Versie van de API tussen **[!UICONTROL Version 49]**, **[!UICONTROL Version 37]**, **[!UICONTROL Version 21]** of **[!UICONTROL Version 15]**.
+   Selecteer de versie van de API.
 
 Voor deze externe rekening, moet u u Salesforce CRM met de configuratietovenaar vormen.
 
 Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../platform/using/crm-connectors.md).
 
-## Azure Blob-opslag, externe account (#azure-blob-external-account)
+## Externe accounts voor gegevensoverdracht
+
+### Amazon Simple Storage Service (S3) {#amazon-simple-storage-service--s3--external-account}
+
+De Amazon Simple Storage Service (S3)-connector kan worden gebruikt voor het importeren of exporteren van gegevens naar Adobe Campaign. Deze kan worden ingesteld in een workflowactiviteit. Raadpleeg [deze pagina](../../workflow/using/file-transfer.md) voor meer informatie.
+
+![](assets/ext_account_3.png)
+
+Wanneer u dit nieuwe externe account instelt, moet u de volgende data opgeven:
+
+* **[!UICONTROL AWS S3 Account Server]**
+
+   URL van uw server, zou het als volgt moeten worden gevuld:
+
+   ```
+   <S3bucket name>.s3.amazonaws.com/<s3object path>
+   ```
+
+* **[!UICONTROL AWS access key ID]**
+
+   Om te weten waar te om uw AWS toegangs belangrijkste identiteitskaart te vinden, verwijs naar deze [pagina](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
+
+* **[!UICONTROL Secret access key to AWS]**
+
+   Om te weten waar te om uw geheime toegangssleutel aan AWS te vinden, verwijs naar deze [pagina](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+
+* **[!UICONTROL AWS Region]**
+
+   Voor meer informatie over AWS-gebied raadpleegt u deze [pagina](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+
+* Met het selectievakje **[!UICONTROL Use server side encryption]** kunt u het bestand opslaan in de gecodeerde modus van S3.
+
+Om te leren waar te om toegangs belangrijkste identiteitskaart en geheime toegangssleutel te vinden, verwijs naar de diensten [documentatie](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) van het Web van Amazon.
+
+### Azure Blob Storage (#azure-blob-external-account)
 
 De externe account **Azure Blob storage** kan worden gebruikt voor het importeren of exporteren van gegevens naar Adobe Campaign met behulp van een **[!UICONTROL Transfer file]**-workflowactiviteit. Raadpleeg deze [sectie](../../workflow/using/file-transfer.md) voor meer informatie.
 
