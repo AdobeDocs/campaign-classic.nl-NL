@@ -6,14 +6,14 @@ description: Leer hoe u fouten met leveringen begrijpt
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
+exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: b7a3046600845781a7393a9d1e9659550d9bfcdd
 workflow-type: tm+mt
-source-wordcount: '2580'
+source-wordcount: '2614'
 ht-degree: 14%
 
 ---
-
 
 # Leveringsfouten begrijpen{#understanding-delivery-failures}
 
@@ -264,6 +264,10 @@ Stuitberichten kunnen de volgende kwalificatiestatus hebben:
 
 ![](assets/deliverability_qualif_status.png)
 
+>[!NOTE]
+>
+>In het geval van een stroomonderbreking van ISP, zullen de e-mails die door Campaign worden verzonden verkeerd als stegels worden gemerkt. U moet de stuiterkwalificatie bijwerken om dit te corrigeren. Ga voor meer informatie naar [deze pagina](../../delivery/using/update-bounce-qualification.md).
+
 ### E-mailbeheerregels {#email-management-rules}
 
 >[!IMPORTANT]
@@ -315,7 +319,7 @@ Voor on-premise installaties en ontvangen/hybride installaties die de erfenis MT
 * U kunt kiezen of u bepaalde identificatienormen en coderingssleutels wilt activeren om de domeinnaam te controleren, zoals **Verzender ID**, **DomainKeys**, **DKIM** en **S/MIME**.
 * Met de parameters **SMTP relais** kunt u het IP-adres en de poort van een relaisserver voor een bepaald domein configureren. Zie [deze sectie](../../installation/using/configuring-campaign-server.md#smtp-relay)voor meer informatie.
 
-Als uw berichten in Vooruitzichten met **[!UICONTROL on behalf of]** in het afzenderadres worden getoond, zorg ervoor u niet uw e-mails met **identiteitskaart van de Afzender** ondertekent, die de verouderde merkgebonden standaard van de e-mailauthentificatie van Microsoft is. Als de optie **[!UICONTROL Sender ID]** is ingeschakeld, schakelt u het betreffende vakje uit en neemt u contact op met [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De leverbaarheid wordt niet beïnvloed.
+Als uw berichten in Vooruitzichten met **[!UICONTROL on behalf of]** in het afzenderadres worden getoond, zorg ervoor u niet uw e-mails met **identiteitskaart van de Afzender** ondertekent, die de verouderde merkgebonden standaard van de e-mailauthentificatie van Microsoft is. Als de optie **[!UICONTROL Sender ID]** is ingeschakeld, schakelt u het betreffende vakje uit en neemt u contact op met [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De leverbaarheid wordt niet beïnvloed.
 
 #### MX-beheer {#mx-management}
 
