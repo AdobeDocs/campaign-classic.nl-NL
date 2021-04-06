@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentatie
 translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2481'
 ht-degree: 54%
 
 ---
@@ -113,6 +113,7 @@ ht-degree: 54%
       + CRM-connectoren{#crm-connectors}
          + [Aan de slag met CRM-connectoren](platform/using/crm-connectors.md)
          + [Verbinding maken met Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
+         + [Verbinding maken met Salesforce.com](platform/using/crm-sfdc.md)
          + [Data synchroniseren met CRM](platform/using/crm-data-sync.md)
       + [Adobe Analytics-dataconnector](platform/using/adobe-analytics-data-connector.md)
    + [Help- en ondersteuningsopties](support.md)
@@ -210,8 +211,9 @@ ht-degree: 54%
       + [Best practices voor levering](delivery/using/delivery-performances.md)
       + [Problemen met levering oplossen](delivery/using/delivery-troubleshooting.md)
       + [Leveringsstatus](delivery/using/delivery-statuses.md)
-      + [Uitvoeren van fouten begrijpen](delivery/using/understanding-delivery-failures.md)
-      + [quarantainebeheer begrijpen](delivery/using/understanding-quarantine-management.md)
+      + [Verzendingsfouten begrijpen](delivery/using/understanding-delivery-failures.md)
+      + [Bounce-kwalificatie bijwerken na een ISP-uitgang](delivery/using/update-bounce-qualification.md)
+      + [Quarantainebeheer begrijpen](delivery/using/understanding-quarantine-management.md)
    + Trackberichten {#tracking-messages}
       + [Berichttracering](delivery/using/about-message-tracking.md)
       + [Getraceerde koppelingen configureren](delivery/using/how-to-configure-tracked-links.md)
@@ -658,6 +660,7 @@ ht-degree: 54%
       + [Instellingen van campagneserver](installation/using/configuring-campaign-server.md)
       + [Beveiligingszones definiëren](installation/using/security-zones.md)
       + [Technische e-mailconfiguraties](installation/using/email-deliverability.md)
+      + [MX-servers gebruiken met campagne](installation/using/using-mx-servers.md)
       + [E-mail BCC configureren](installation/using/email-archiving.md)
       + [SpamAssassin configureren](installation/using/configuring-spamassassin.md)
    + Verbinding maken met campagne{#connect-to-campaign}
@@ -672,6 +675,7 @@ ht-degree: 54%
       + [Externe accounts configureren](installation/using/external-accounts.md)
       + Federale gegevenstoegang configureren{#configure-fda}
          + [Aan de slag met Federale gegevenstoegang](installation/using/about-fda.md)
+         + [Best practices en beperkingen](installation/using/fda-best-practices.md)
          + Configuratierichtlijnen {#config-databases}
             + [Configuratiestappen](installation/using/configure-fda.md)
             + [Snowflake configureren](installation/using/configure-fda-snowflake.md)
