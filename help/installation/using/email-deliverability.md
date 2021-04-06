@@ -1,19 +1,19 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: E-maillevering
-description: E-maillevering
+title: Technische e-mailconfiguratie
+description: Leer hoe u Campagne configureert om de uitvoer van uw instanties tijdens het verzenden van e-mails te beheren.
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
+exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: c62caeacd374b31f597f3c4b23318b8705fbda61
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '3022'
 ht-degree: 0%
 
 ---
-
 
 # Technische e-mailconfiguraties{#email-deliverability}
 
@@ -27,7 +27,7 @@ In de volgende sectie vindt u een overzicht van de configuratie die is vereist v
 
 Raadpleeg dit [gedeelte](../../delivery/using/about-deliverability.md) voor meer informatie over de concepten en aanbevolen procedures met betrekking tot de leverbaarbaarheid met Adobe Campaign.
 
-Raadpleeg de [Handleiding voor best practices op het gebied van aflevering van Adobe voor een diepgaandere analyse van de afleverbaarheid, inclusief alle technische aanbevelingen met betrekking tot het efficiënt verzenden en ontvangen van e-mails door een Adobe-platform.](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html)
+Raadpleeg de [Handleiding voor best practices op het gebied van aflevering van Adobe voor een diepgaandere analyse van de afleverbaarheid, inclusief alle technische aanbevelingen met betrekking tot het efficiënt verzenden en ontvangen van e-mails door een Adobe-platform.](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl)
 
 ## Werkwijze {#operating-principle}
 
@@ -135,9 +135,11 @@ Door gebrek, luistert de statistiekserver op haven 7777. Deze poort kan worden g
 >
 >Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, worden de **[!UICONTROL MX management]** leveringsproductieregels niet meer gebruikt. Verbeterde MTA gebruikt zijn eigen MX regels die het toestaan om uw productie door domein aan te passen die op uw eigen historische e-mailreputatie wordt gebaseerd, en op real time terugkoppelen die uit de domeinen komt waar u e-mails verzendt.
 
-De onderstaande secties zijn alleen van toepassing op installaties op locatie en op gehoste/hybride installaties die gebruikmaken van de oude Campagne MTA.
-
 ### Informatie over MX-regels {#about-mx-rules}
+
+>[!NOTE]
+>
+>Deze sectie en de onderstaande secties zijn alleen van toepassing op installaties op locatie en op gehoste/hybride installaties die gebruikmaken van de oude Campagne MTA.
 
 MX-regels (Mail eXchanger) zijn de regels die de communicatie tussen een verzendende server en een ontvangende server beheren.
 
@@ -301,6 +303,10 @@ De volgende parameters beschikbaar voor elke regel zijn:
 Voorbeeld van configuratie:
 
 ![](assets/s_ncs_install_mx_mgt_rule_details.png)
+
+>[!NOTE]
+>
+>Zie [deze sectie](../../installation/using/using-mx-servers.md) voor meer informatie over het gebruik van MX-servers met Adobe Campaign.
 
 ### E-mailindelingen beheren {#managing-email-formats}
 
