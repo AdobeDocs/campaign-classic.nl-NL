@@ -6,20 +6,20 @@ description: 'Meer informatie over Campaign Classic [!DNL Gold Standard] '
 feature: Overzicht
 role: Business Practitioner
 level: Beginner
+exl-id: c36a78f6-3332-465d-92f5-48f70b8bdddd
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 12%
+source-wordcount: '556'
+ht-degree: 88%
 
 ---
-
 
 # [!DNL Gold Standard] lozingen  {#gs-overviews}
 
 ## Wat is [!DNL Gold Standard]?
 
-Adobe en Adobe Campaign willen u de beste ervaring en waarde bieden via onze softwareoplossingen. De organisatie streeft ernaar ervoor te zorgen dat u toegang hebt tot de meest recente versies van verwante technologie die onze oplossingen gebruiken om haar taken uit te voeren.
+Adobe en Adobe Campaign willen u met onze softwareoplossing(en) de beste ervaring en waarde bieden. De organisatie doet er alles aan om ervoor te zorgen dat u toegang hebt tot de nieuwste versies van gerelateerde technologie die onze oplossingen gebruiken om taken uit te voeren.
 
 Adobe Campaign Classic gebruikt met name een scala aan technologische oplossingen om waarde te creëren. Deze combinatie van technologieën vereist dat u uw Campaign Classic-instantie(s) regelmatig upgradet, zodat de meest actuele versies worden gebruikt voor betere beveiliging, stabiliteit en prestaties.
 
@@ -27,19 +27,19 @@ Adobe Campaign Classic gebruikt met name een scala aan technologische oplossinge
 
 ## Waarom heeft mijn organisatie deze upgrade nodig?
 
-Als gehoste klant geldt dat als uw account is geïdentificeerd dat een of meer van de technologieën met betrekking tot Campaign Classic moeten worden bijgewerkt en dat de huidige build en/of versie moet worden bijgewerkt, u rechtstreeks via Adobe op de hoogte wordt gesteld.
+Als gehoste klant wordt u rechtstreeks door Adobe op de hoogte gesteld wanneer is vastgesteld dat voor uw account bepaalde technologieën voor Campaign Classic moeten worden bijgewerkt. Dit is ook het geval als u de huidige build en/of versie moet bijwerken.
 
 Als een klant op locatie of hybride die op een oudere versie werkt, raadt Adobe u aan over te stappen naar de nieuwste [!DNL Gold Standard].
 
-Hierdoor wordt ervoor gezorgd dat uw account beveiligd is tegen kwetsbaarheden en dat u gebruikmaakt van bijgewerkte prestatietechnologie. Deze upgrade plaatst uw account ook voor eenvoudige, regelmatige upgrades die u kunt uitvoeren en waarvoor minder handmatig werk en interventie vereist is.
+Zo wordt uw account beschermd tegen kwetsbaarheden en gebruikt u de nieuwste prestatietechnologie. Met deze upgrade komt uw account in de toekomst ook in aanmerking voor eenvoudige, regelmatige upgrades die minder handmatig werk en tussenkomst van de gebruiker vereisen.
 
-## Wat is het proces en de tijdlijn voor deze upgrade?
+## Wat zijn de procedure en de tijdlijn voor deze upgrade?
 
-Het team van Adobe zal uw organisatie door deze reis leiden en begeleiden.
+Het team van Adobe begeleidt uw organisatie tijdens dit traject.
 
-We hebben een team van speciale vertegenwoordigers van de klantenservice, productmanagers, technici en technici van technische medewerkers en productconsultants georganiseerd om u te helpen en ervoor te zorgen dat de ervaring soepel verloopt.
+Een speciaal team van klantenservicemedewerkers, productmanagers, engineers, technische specialisten en productconsultants biedt u ondersteuning en zorgt voor een probleemloze ervaring.
 
-We zijn vastbesloten ervoor te zorgen dat u over de relevante project- en contactgegevens beschikt.
+We doen er alles aan om u te voorzien van alle relevante project- en contactinformatie.
 
 ## Voordelen
 
@@ -50,10 +50,10 @@ We zijn vastbesloten ervoor te zorgen dat u over de relevante project- en contac
     <strong>Verbeterde beveiliging</strong>
     </div>
     <ul>
-    <li>Een combinatie van technologieën die Adobe Campaign Classic van kracht maken, werkt samen om waarde te bieden.</li>
-    <li>Al uw instanties moeten worden bijgewerkt om veiligheid te verzekeren.</li>
-    <li>De veiligheid heeft constante nadruk en pro-actief onderhoud nodig.</li>
-    <li>Beveiligingsrisico's zijn alomtegenwoordig en kunnen niet worden genegeerd: elke verbetering voor Campaign Classic verbetert veiligheid.</li>
+    <li>De verschillende technologieën van Adobe Campaign Classic werken samen om waarde te bieden.</li>
+    <li>Al uw instanties moeten worden bijgewerkt om de beveiliging te optimaliseren.</li>
+    <li>De beveiliging vereist een constante focus en proactief onderhoud. </li>
+    <li>Beveiligingsrisico's zijn overal en kunnen niet worden genegeerd: elke upgrade voor Campaign Classic verbetert de beveiliging.</li>
     </ul>
   </td>
 
@@ -63,9 +63,9 @@ We zijn vastbesloten ervoor te zorgen dat u over de relevante project- en contac
     <strong>Verbeterde ondersteuning</strong>
     </div>
     <ul>
-    <li>De meeste kritieke kwesties worden eigenlijk opgelost met verbeteringen en kunnen worden vermeden.</li>
-    <li>Regelmatige upgrades helpen het hoofd te bieden aan uitdagingen en verhogen de efficiëntie door deze uitdagingen uit te schakelen.</li>
-    <li>Het zorgvolume van de klant wordt verlaagd, zodat u sneller kunt reageren en meer aandacht kunt besteden aan uw problemen die geen verband houden met upgrades.</li>
+    <li>De meeste kritieke problemen worden gewoon opgelost met upgrades en kunnen worden vermeden.</li>
+    <li>Met regelmatige upgrades loopt u tegen minder problemen aan waardoor u ook de efficiëntie verbetert.</li>
+    <li>De klantenservice wordt minder belast waardoor we sneller kunnen reageren en meer aandacht kunnen besteden aan de problemen die geen verband houden met upgrades.</li>
     </ul>
   </td>
 </tr>
@@ -74,12 +74,12 @@ We zijn vastbesloten ervoor te zorgen dat u over de relevante project- en contac
   <td>
       <img alt="Onderhoud" src="assets/do-not-localize/maintenance.png"/>
     <div>
-    <strong>Verbeterd onderhoud en stabiliteit</strong>
+    <strong>Verbeterd onderhoud en verbeterde stabiliteit</strong>
     </div>
     <ul>
     <li>In de loop der tijd identificeert het Adobe Campaign-team manieren om de stabiliteit en de prestaties van het product te verbeteren en bekende problemen op te lossen.</li>
-    <li>Door uw exemplaar te upgraden, is het mogelijk up-to-date met deze verbeteringen en worden veelvoorkomende problemen weggenomen die organisaties ondervinden bij een snelle groei en/of complexiteit binnen hun Campaign Classic-instanties.</li>
-    <li>De verbeteringen over de technologie stapelen aandrijvend Campaign Classic zullen over zowel marketing als de teams van IT van uw organisatie worden gevoeld.</li>
+    <li>Door uw instantie te upgraden krijgt u deze nieuwste verbeteringen. U voorkomt zo bovendien veelvoorkomende problemen binnen organisaties die een snelle groei doormaken en/of tegen moeilijkheden aanlopen in hun Campaign Classic-instanties.</li>
+    <li>De verbeteringen in de technologie achter Campaign Classic zullen zowel bij de marketing- als IT-teams binnen uw organisatie merkbaar zijn.</li>
     </ul>
   </td>
 
@@ -90,9 +90,9 @@ We zijn vastbesloten ervoor te zorgen dat u over de relevante project- en contac
     </a>
     </div>
     <ul>
-    <li>De inspanningen en de complexiteit van het upgraden van uw klassieke Campagne-instantie nemen toe met de afstand tussen twee versies (v5 —&gt; v7).</li>
-    <li>Hoe langer uw organisatie wacht, des te complexer de upgrade (en des te kwetsbaarder u bent blootgesteld aan).</li>
-    <li>Regelmatige updates verminderen de downtime voor upgrades en verminderen het risico op regressie.</li>
+    <li>Hoe groter het verschil tussen twee versies (bijvoorbeeld v5 --&gt; v7), hoe complexer het is om uw Campaign Classic-instantie bij te werken.</li>
+    <li>Hoe langer uw organisatie wacht, des te complexer de upgrade wordt (en hoe kwetsbaarder u bent voor beveiligingsrisico's).</li>
+    <li>Regelmatige updates verminderen de downtime tijdens upgrades en het risico op regressie.</li>
     </ul>
   </td>
 </tr>
@@ -101,5 +101,5 @@ We zijn vastbesloten ervoor te zorgen dat u over de relevante project- en contac
 ## Aanvullende bronnen
 
 * [[!DNL Gold Standard] releaseopmerkingen](gold-standard.md)
-* [Veelgestelde vragen over upgrades samenstellen](../../platform/using/faq-build-upgrade.md)
+* [Veelgestelde vragen over buildupgrades](../../platform/using/faq-build-upgrade.md)
 * [[!DNL Gold Standard] compatibiliteitsmatrix](compatibility-matrix-gs.md)
