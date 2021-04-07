@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Verouderde en verwijderde functies van Campaign Classic
-description: Deze pagina bevat vervangen en verwijderde functies in Adobe Campaign Classic
+description: Deze pagina bevat de verouderde en verwijderde functies van Adobe Campaign Classic
 feature: Overzicht
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1716'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -44,16 +44,16 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    <td><strong>Vervanging</strong></td>
   </tr>
     <tr>
-  <td>Technisch rapport over de aflevering<br></td>
-   <td><p>Vanaf de release van Campagne 21.1 is het rapport Technische aflevering van het Monitoring Report afgekeurd.</p>
-   <p>Indien nodig kunt u dit rapport dagelijks per e-mail ontvangen tot de datum waarop de functie is verwijderd. Om het te verzoeken, open een specifiek <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Geval van de Steun </a> en specificeer de naam van de instantie en het e-mailadres(sen) om het rapport naar te verzenden.</p> 
-   <p>Adobe raadt u aan contact op te nemen met het Leveringsteam om de beste tools te definiëren om de prestaties van de uitvoerbaarheid van de instantie te controleren.</p>
-  <p><em>Doeldatum verwijdering: Eind 2021</em></p>
+  <td>Rapport over de technische afleveringscontrole<br></td>
+   <td><p>Met ingang van de 21.1-release van Campaign is het rapport over de technische afleveringscontrole afgeschaft.</p>
+   <p>U kunt dit rapport desgewenst dagelijks per e-mail ontvangen tot de datum waarop de functie wordt verwijderd. Open een <a href="https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">ondersteuningskwestie</a> om hiervoor een verzoek in te dienen. Geef de naam op van de instantie en de e-mailadressen die het rapport moeten ontvangen.</p> 
+   <p>Adobe raadt u aan contact op te nemen met het Afleverteam om te bepalen welke tools u het beste kunt gebruiken om de afleveringsprestaties van uw instantie te controleren.</p>
+  <p><em>Verwachte verwijdering: eind 2021</em></p>
   </td>
  </tr>
   <tr>
   <td>CRM-connectoren<br></td>
-   <td><p>De aanvang van Campagne 20.3 versie, de volgende schakelaars van CRM worden verouderd met Campagne:</p>
+   <td><p>Met ingang van release 20.3 van Campaign zijn de volgende CRM-connectoren voor Campaign afgeschaft:</p>
    <ul>
    <li>Soap-API - On-premise: 2007, 2015, 2016</li>
    <li>Soap-API - Online: 2015, 2016</li>
