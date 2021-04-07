@@ -10,8 +10,8 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 translation-type: tm+mt
 source-git-commit: 3db426580ba72668cd9fa274b57f925600eda27b
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 96%
+source-wordcount: '902'
+ht-degree: 98%
 
 ---
 
@@ -85,7 +85,7 @@ Als u geïnteresseerd bent in deelname aan deze gesloten bèta, vult u dit [form
 IOB-090020 Error in SSL library: 'IOB-090013 error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed (code 336134278)'
 ```
 
-* Probleem verholpen waardoor geen nieuwe leveringen met doelgegevenspersonalisatie konden worden verzonden (NEO-30323).
+* Er is een probleem opgelost waardoor geen nieuwe verzendingen met personalisatie van doelgegevens konden worden verzonden (NEO-30323).
 * Er is een probleem opgelost waarbij verschillende crashes optraden in de marketinginstantie waardoor dumpbestanden werden veroorzaakt.
 * Er is een probleem opgelost waarbij de **Tracking**-workflow mislukte met de volgende fout (NEO-25206):
 
