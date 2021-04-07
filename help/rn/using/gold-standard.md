@@ -6,14 +6,14 @@ description: Opmerkingen bij de release voor Campaign Classic [!DNL Gold Standar
 feature: Overzicht
 role: Business Practitioner
 level: Beginner
+exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 83%
+source-wordcount: '1023'
+ht-degree: 96%
 
 ---
-
 
 # [!DNL Gold Standard] releaseopmerkingen{#gold-standard}
 
@@ -25,22 +25,22 @@ _2 maart 2021_
 
 De build 9032@10c2709 bevat de volgende oplossing:
 
-* Oplossing voor een regressie waardoor bepaalde componenten van de console niet konden worden gebruikt, zoals de datumkiezer en het beheer van afbeeldingen in leveringen. (NEO-31453, NEO-31454)
+* Er is een regressie opgelost die verhinderde dat bepaalde onderdelen van de console konden worden gebruikt, zoals de datumkiezer en afbeeldingsbeheer in verzendingen. (NEO-31453, NEO-31454)
 
-**Alleen consoleverbetering is verplicht. Er is geen serverupgrade vereist.**
+**Alleen de console-upgrade is verplicht. Er is geen serverupgrade vereist.**
 
 >[!NOTE]
 >
-> Verbind met [Adobe de Distributie van de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) om de nieuwe versie te downloaden. Leer hoe u de console-update [op deze pagina ](../../installation/using/client-console-availability-for-windows.md) aan alle eindgebruikers kunt voorstellen.
+> Maak verbinding met [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/nl/campaign.html) om de nieuwe versie te downloaden. [Op deze pagina ](../../installation/using/client-console-availability-for-windows.md) leert u hoe u de console-update aan alle eindgebruikers kunt voorstellen.
 
 
 _22 december 2020_
 
 >[!CAUTION]
 >
-> * Deze versie wordt geleverd met een nieuw verbindingsprotocol: Als u verbinding maakt met Campagne via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **30 juni 2021**.
+> * Deze release wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **30 juni 2021** verbinding te kunnen maken met Campaign.
 > * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
-> * Als u de Experience Cloud Triggers integratie door authentificatie Auth gebruikt, moet u naar Adobe I/O gaan zoals [in deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde Auth authentificatiemodus met Campagne zal op **30 November, 2021** worden gepensioneerd.
+> * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overstappen op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde oAuth-verificatiemodus voor Campaign wordt op **30 november 2021** buiten gebruik gesteld.
 
 >
 >
@@ -60,7 +60,7 @@ De build 9032@d3b452f bevat de volgende verbeteringen en oplossingen:
 
 ## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 10 release{#gs-10}
 
-_woensdag 7 juli 2020_
+_7 juli 2020_
 
 De build 9032@efd8a94 bevat de volgende oplossing:
 
@@ -78,7 +78,7 @@ De build 9032@800be2e bevat de volgende oplossingen:
 
 * De iOS HTTP2-connector is verbeterd (updates van derden en foutbeheer). (NEO-25904, NEO-25903, NEO-25799)
 
-De volgende correcties betreffen het beveiligingsmechanisme voor koppelingen bijhouden (meer informatie vindt u in de [checklist voor beveiliging en privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)):
+De volgende correcties betreffen het beveiligingsmechanisme voor koppelingen bijhouden (meer informatie vindt u in de [checklist voor beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html#signature-mechanism)):
 
 * Er is een probleem verholpen waardoor tracking van ‘berichtklikken’ niet kon worden uitgevoerd (iOS- en Android-pushmeldingen). (NEO-25965)
 * Er is een probleem verholpen waardoor u tracking-URL’s niet kon openen of er niet op kon klikken bij gebruik van bepaalde oudere versies van Outlook. (NEO-25688)
