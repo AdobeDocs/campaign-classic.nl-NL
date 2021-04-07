@@ -6,14 +6,14 @@ description: Deze pagina bevat een overzicht van alle nieuwe functies en updates
 feature: Overzicht
 role: Business Practitioner
 level: Beginner
+exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 translation-type: tm+mt
-source-git-commit: 57c1ca827beac9a3c95e63ca17fdb43be237eb28
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '4275'
-ht-degree: 93%
+source-wordcount: '4272'
+ht-degree: 96%
 
 ---
-
 
 # Documentatie-updates{#documentation-updates}
 
@@ -27,18 +27,18 @@ De [Aan de slag met SMS-sectie](../../delivery/using/sms-channel.md) is gereorga
 
 De pagina &quot;Help en ondersteuningsopties&quot; voor Campaign Classic is geïntegreerd in de kerndocumentatie. [Meer informatie](../../support.md)
 
-Er is een nieuwe sectie toegevoegd met aanbevolen procedures en controles voor beveiliging en privacy. [Meer informatie](../../installation/using/get-started-security-privacy.md)
+Er is een nieuw gedeelte toegevoegd met best practices en controles voor beveiliging en privacy. [Meer informatie](../../installation/using/get-started-security-privacy.md)
 
-Het machtigingsbeheerhoofdstuk [is verbeterd en gesplitst in secties, waaronder informatie over [Operatoren](../../platform/using/access-management-operators.md), [Groepen operatoren](../../platform/using/access-management-groups.md), [Benoemde rechten](../../platform/using/access-management-named-rights.md) en [Mapbeheer](../../platform/using/access-management-folders.md).](../../platform/using/access-management.md)
+Het hoofdstuk over [het beheren van toestemmingen](../../platform/using/access-management.md) is verbeterd en opgedeeld. Zo bevat het gedeelten met informatie over [operatoren](../../platform/using/access-management-operators.md), [groepen van operatoren](../../platform/using/access-management-groups.md), [opgegeven rechten](../../platform/using/access-management-named-rights.md) en [mapbeheer](../../platform/using/access-management-folders.md) .
 
-Leer hoe u uw campagnes kunt maken en beheren met de volgende nieuwe pagina&#39;s:
-* [Campagnemalplaatjes maken en configureren](../../campaign/using/marketing-campaign-templates.md)
-* [Aflevering van marketingcampagnes](../../campaign/using/marketing-campaign-deliveries.md)
-* [Het publiek van uw campagnes selecteren](../../campaign/using/marketing-campaign-target.md)
+Leer op de volgende nieuwe pagina&#39;s hoe u campagnes maakt en beheert:
+* [Campagnesjablonen maken en configureren](../../campaign/using/marketing-campaign-templates.md)
+* [Verzendingen voor marketingcampagnes](../../campaign/using/marketing-campaign-deliveries.md)
+* [De doelgroep van uw campagnes selecteren](../../campaign/using/marketing-campaign-target.md)
 * [Gekoppelde documenten beheren](../../campaign/using/marketing-campaign-assets.md)
 * [Het goedkeuringsproces instellen en beheren](../../campaign/using/marketing-campaign-approval.md)
 
-Er is informatie toegevoegd aan de sectie **[!UICONTROL Advanced JavaScript]** activiteit over hoe u de methode task.setCompleted() gebruikt om de taak te beëindigen en toekomstige terugroepingen te voorkomen. [Meer informatie](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
+Er is informatie toegevoegd aan het activiteitsgedeelte **[!UICONTROL Advanced JavaScript]** over hoe u de methode task.setCompleted() gebruikt om de taak te beëindigen en toekomstige intrekkingen te voorkomen. [Meer informatie](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
 De sectie [Leverbaarheid](../../delivery/using/about-deliverability.md) is bijgewerkt en bevat nu koppelingen naar de nieuwe [Handleiding voor beste praktijken voor Adobe-levering](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html). Alle generieke informatie met betrekking tot leverbaarheid die op diverse oplossingen van Adobe kan van toepassing zijn is verplaatst naar [Aanhangsel van de gids van Beste praktijken](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources).
 
