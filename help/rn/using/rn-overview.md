@@ -6,14 +6,14 @@ description: Meer informatie over Campaign Classic-upgrades
 feature: Overzicht
 role: Business Practitioner
 level: Beginner
+exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '415'
 ht-degree: 93%
 
 ---
-
 
 # Aan de slag met upgrades{#rn-overview}
 
@@ -35,7 +35,7 @@ De **nieuwste GA-builds** zijn: [[!DNL Gold Standard]  11-release](../../rn/usin
 
 ![](assets/do-not-localize/blue3.png) **Releasekandidaat** (RC) - recentste versie met nieuwe mogelijkheden.
 
-De **laatste RC-build** is [Campaign Classic 21.1-release](../../rn/using/latest-release.md)
+De **laatste RC-build** is de [Campaign Classic 21.1-release](../../rn/using/latest-release.md)
 
 ![](assets/do-not-localize/red3.png) **Afgeschaft** - Geen implementatie. Bestaande implementaties moeten worden opgewaardeerd.
 
@@ -51,7 +51,7 @@ Houd uw implementatie up-to-date door de pagina’s [Verouderde en verwijderde f
 
 Als gehoste klant (Managed Service of hybride) moet u contact opnemen met het klantenserviceteam om uw omgeving te laten upgraden.
 
-Als on-premise gebruiker kunt u de upgrade zelf uitvoeren. Hiervoor moet u de [nieuwste stabiele build downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) en al uw omgevingen upgraden. Lees meer over het [upgradeproces](../../production/using/build-upgrade.md) en raadpleeg de [veelgestelde vragen over upgrades](../../platform/using/faq-build-upgrade.md).
+Als on-premise gebruiker kunt u de upgrade zelf uitvoeren. Hiervoor moet u de [nieuwste stabiele build downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/nl/campaign.html) en al uw omgevingen upgraden. Lees meer over het [upgradeproces](../../production/using/build-upgrade.md) en raadpleeg de [veelgestelde vragen over upgrades](../../platform/using/faq-build-upgrade.md).
 
 ### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
