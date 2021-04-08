@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
-source-wordcount: '2480'
+source-wordcount: '2483'
 ht-degree: 98%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 98%
       + [Adobe Campaign starten](platform/using/launching-adobe-campaign.md)
       + Adobe Campaign-werkruimte{#campaign-workspace}
          + [Aan de slag met de Campaign-gebruikersinterface](platform/using/adobe-campaign-workspace.md)
+         + [Campagneverkenner gebruiken](platform/using/adobe-campaign-explorer.md)
          + [Lijsten verkennen en aanpassen](platform/using/adobe-campaign-ui-lists.md)
       + Veelgestelde vragen {#faq}
          + [Populaire vragen](platform/using/common-questions.md)
