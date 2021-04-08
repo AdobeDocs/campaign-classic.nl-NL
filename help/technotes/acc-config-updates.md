@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 translation-type: tm+mt
-source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1107'
 ht-degree: 8%
 
 ---
@@ -117,7 +117,6 @@ U moet een upgrade uitvoeren naar een van de nieuwe versies die hieronder worden
 
 * Gold Standard 11. [Meer informatie](../rn/using/gold-standard.md)
 * Release van campagne 21.1.1. [Meer informatie](../rn/using/latest-release.md)
-* Release van campagne 20.3.3. [Meer informatie](../rn/using/release--20-3.md)
 * Release van campagne 20.2.5. [Meer informatie](../rn/using/release--20-2.md)
 * Release van campagne 19.1.8. [Meer informatie](../rn/using/release--19-1.md)
 
@@ -135,7 +134,7 @@ Bovendien moeten klanten voor hybride omgevingen ervoor zorgen dat de pijpleidin
 
 ### API voor op HTTP/2 gebaseerde APNs-providers
 
-De Apple Push Notification service (APNs) biedt vanaf **31 maart 2021** geen ondersteuning meer voor het oudere binaire protocol. [Meer informatie](https://developer.apple.com/news/?id=c88acm2b).
+Sinds **31 Maart, 2021**, steunt de dienst van het Bericht van de Push van Apple (APNs) niet meer het erfenis binaire protocol. [Meer informatie](https://developer.apple.com/news/?id=c88acm2b).
 
 **Heeft u gevolgen?**
 
@@ -151,7 +150,7 @@ Als klant op locatie/hybride klant moet u de configuratie bijwerken. [Leer hoe u
 
 ### Updates van APNs-basiscertificaten
 
-Op 29 maart 2021 is een APN-infrastructuurupdate (Apple Push Notification service) van invloed op het Adobe Campaign Classic iOS-kanaal. Een wijziging in de configuratie van het besturingssysteem is **verplicht** om uitval van het iOS-pushkanaal te voorkomen.
+Op 29 maart 2021 heeft een APN-infrastructuurupdate (Apple Push Notification service) invloed op het Adobe Campaign Classic iOS-kanaal. Een wijziging in de configuratie van het besturingssysteem is **verplicht** om uitval van het iOS-pushkanaal te voorkomen.
 
 Meer informatie over APNs verandert [op deze pagina](https://developer.apple.com/news/?id=7gx0a2lp).
 
