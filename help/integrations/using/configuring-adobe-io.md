@@ -8,14 +8,14 @@ content-type: reference
 index: y
 internal: n
 snippet: y
+exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: f3ca92325f70cb3b9cca1ec5f6b7ddb5a02f9159
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '583'
 ht-degree: 4%
 
 ---
-
 
 # Adobe I/O configureren voor Adobe Experience Cloud Triggers {#configuring-adobe-io}
 
@@ -74,9 +74,9 @@ Controleer voordat u met deze implementatie begint of:
 
    ![](assets/do-not-localize/adobe_io_5.png)
 
-1. Kies een bestaande **[!UICONTROL Product profile]** of maak indien nodig een nieuwe . Klik vervolgens op **[!UICONTROL Save configured API]**.
+1. Kies een bestaande **[!UICONTROL Product profile]** of maak indien nodig een nieuwe . Voor deze **[!UICONTROL Product profile]** is geen toestemming vereist. Raadpleeg [Adobe Analytics-documentatie](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console) voor meer informatie over [!DNL Analytics] **[!UICONTROL Product Profiles]**.
 
-   Raadpleeg [Adobe Analytics-documentatie](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console) voor meer informatie over [!DNL Analytics] **[!UICONTROL Product Profiles]**.
+   Klik vervolgens op **[!UICONTROL Save configured API]**.
 
    ![](assets/do-not-localize/adobe_io_6.png)
 
