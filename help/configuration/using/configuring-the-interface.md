@@ -6,14 +6,14 @@ description: De interface configureren
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
+exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
 translation-type: tm+mt
-source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 2%
 
 ---
-
 
 # De interface configureren{#configuring-the-interface}
 
@@ -70,7 +70,7 @@ Als u een nieuw formulier maakt, kunt u de gegevens van de externe tabel met ont
 
    >[!NOTE]
    >
-   >Raadpleeg [deze pagina](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy) voor meer informatie over **navtree**-tekstbestanden.
+   >Raadpleeg [deze pagina](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy) voor meer informatie over **navtree**-tekstbestanden.
 
    In het huidige voorbeeld moet het **navtree** bestand zijn gebaseerd op het schema **cus:individual** en daarom de volgende vorm hebben:
 
@@ -91,4 +91,3 @@ Als u een nieuw formulier maakt, kunt u de gegevens van de externe tabel met ont
    ```
 
 1. Sla het ontwerp op.
-
