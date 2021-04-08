@@ -5,14 +5,14 @@ title: TechNote
 description: TechNote
 hide: true
 hidefromtoc: true
+exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 translation-type: tm+mt
-source-git-commit: bdd746120f2162cf48eeb9d519513656bd4e75aa
+source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
-
 
 # Adobe Campaign-configuratieupdates - maart 2021 {#acc-config-updates}
 
@@ -26,7 +26,7 @@ Om veiligheidsredenen moet u nu een upgrade uitvoeren naar een van de onderstaan
 
 >[!NOTE]
 >
->Voor vragen over deze wijzigingen neemt u contact op met [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Voor vragen over deze wijzigingen neemt u contact op met [Adobe Customer Care](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## Beveiligingsupdates {#acc-security-updates}
@@ -118,7 +118,7 @@ U moet een upgrade uitvoeren naar een van de nieuwe versies die hieronder worden
 * Gold Standard 11. [Meer informatie](../rn/using/gold-standard.md)
 * Release van campagne 21.1.1. [Meer informatie](../rn/using/latest-release.md)
 * Release van campagne 20.3.3. [Meer informatie](../rn/using/release--20-3.md)
-* Release van campagne 20.2.4. [Meer informatie](../rn/using/release--20-2.md)
+* Release van campagne 20.2.5. [Meer informatie](../rn/using/release--20-2.md)
 * Release van campagne 19.1.8. [Meer informatie](../rn/using/release--19-1.md)
 
 Leer hoe u uw versie [in deze sectie ](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) controleert.
@@ -147,7 +147,7 @@ Leer hoe u uw versie [in deze sectie ](../platform/using/launching-adobe-campaig
 
 Als gehoste klant, als u aan de nieuwe bouwstijl hebt bevorderd, heeft Adobe reeds uw instantie(s) aan op HTTP/2-Gebaseerde API bijgewerkt.
 
-Als op-gebouw/ontvangen klant, moet u uw configuratie bijwerken. [Leer hoe u naar HTTP/2 kunt migreren](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
+Als klant op locatie/hybride klant moet u de configuratie bijwerken. [Leer hoe u naar HTTP/2 kunt migreren](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
 
 ### Updates van APNs-basiscertificaten
 
@@ -170,6 +170,6 @@ Als klant op locatie/hybride dient u uw configuratie bij te werken voor een naad
 ## Nuttige koppelingen
 
 * [Upgrade uw omgeving](../production/using/build-upgrade.md)
-* [Veelgestelde vragen over upgrades samenstellen](../platform/using/faq-build-upgrade.md)
-* [Campaign Classic-build downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Veelgestelde vragen over buildupgrades](../platform/using/faq-build-upgrade.md)
+* [Campaign Classic-build downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/nl/campaign.html)
 * [De nieuwe clientconsole beschikbaar maken voor gebruikers](../installation/using/client-console-availability-for-windows.md)
