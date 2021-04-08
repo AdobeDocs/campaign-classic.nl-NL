@@ -6,14 +6,14 @@ description: Meer informatie over Adobe IMS-integratie
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
+exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
 translation-type: tm+mt
-source-git-commit: 313f15a3097fa4c53c1bd802de0e73801acd410b
+source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 24%
 
 ---
-
 
 # Info over Adobe ID{#about-adobe-id}
 
@@ -33,7 +33,7 @@ Campagnegebruikers kunnen via hun Adobe ID verbinding maken met de Adobe Campaig
 >
 > * [Campagne [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
 > * [Campagne 20.3.3](../../rn/using/latest-release.md)
-> * [Campagne 20.2.4](../../rn/using/release--20-2.md)
+> * [Campagne 20.2.5](../../rn/using/release--20-2.md)
 > * [Campagne 20.1.4](../../rn/using/release--20-1.md)
 > * [Campagne 19.2.4](../../rn/using/release--19-2.md)
 > * [Campagne 19.1.8](../../rn/using/release--19-1.md)
