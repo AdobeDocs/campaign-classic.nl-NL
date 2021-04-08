@@ -6,14 +6,14 @@ description: Webserviceaanroepen
 audience: configuration
 content-type: reference
 topic-tags: api
+exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 0c83c989c7e3718a989a4943f5cde7ad4717fddc
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '939'
 ht-degree: 1%
 
 ---
-
 
 # Webserviceaanroepen{#web-service-calls}
 
@@ -188,7 +188,7 @@ In het deel `<service>` wordt de service &quot;XtkQueryDef&quot; beschreven met 
 
 ## Connectiviteit {#connectivity}
 
-Adobe Campaign heeft de beveiliging voor verificatiemechanismen verhoogd door beveiligingszones in te voeren (zie het hoofdstuk **Beveiligingszones definiëren** in [deze sectie](../../installation/using/security-zones.md)) en door instellingen voor sessiebeheer in te voeren.
+Adobe Campaign heeft de beveiliging voor verificatiemechanismen verbeterd door de invoering van [beveiligingszones](../../installation/using/security-zones.md) en instellingen voor sessiebeheer.
 
 Er zijn twee beschikbare verificatiemodi:
 
