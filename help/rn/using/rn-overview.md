@@ -8,7 +8,7 @@ role: Business Practitioner
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 translation-type: tm+mt
-source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
+source-git-commit: 8294b522efb51cb1b961c9284675c7966132e957
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 93%
@@ -29,7 +29,7 @@ Aan elke build wordt een status gekoppeld. Hieronder vindt u een lijst met statu
 
 ![](assets/do-not-localize/green3.png) **Algemene beschikbaarheid** (GA) - Gevalideerd in productie en aanbevolen door Adobe.
 
-De **nieuwste GA-builds** zijn: [[!DNL Gold Standard]  11-release](../../rn/using/gold-standard.md#gs-11) en [Campaign 20.2.5-release](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
+De **nieuwste GA-builds** zijn: [[!DNL Gold Standard]  11-release](../../rn/using/gold-standard.md) en [Campaign 20.2.5-release](../../rn/using/release--20-2.md)
 
 ![](assets/do-not-localize/limited3.png) **Beperkte beschikbaarheid** (LA) - Alleen on-demand implementatie.
 
