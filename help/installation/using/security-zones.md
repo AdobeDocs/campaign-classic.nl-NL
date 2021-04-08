@@ -8,15 +8,15 @@ content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 translation-type: tm+mt
-source-git-commit: 830ec0ed80fdc6e27a8cc782b0e4b79abf033450
+source-git-commit: e31d386af4def80cdf258457fc74205b1ca823b3
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1462'
 ht-degree: 0%
 
 ---
 
 
-# Beveiligingszones definiëren {#defining-security-zones}
+# Beveiligingszones definiëren (op locatie){#defining-security-zones}
 
 Elke exploitant moet met een streek worden verbonden om aan een geval te login en exploitant IP moet in de adressen of adresreeksen worden omvat die in de veiligheidsstreek worden bepaald. Configuratie van de beveiligingszone wordt uitgevoerd in het configuratiebestand van de Adobe Campaign-server.
 
@@ -28,7 +28,7 @@ Operatoren zijn verbonden met een beveiligingszone vanuit het profiel in de cons
 >
 >Als **ontvangen** klant, als u tot [Controlebord van de Campagne](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html) kunt toegang hebben, kunt u de zelfdienstinterface van de Zone van de Veiligheid gebruiken. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
 >
->Andere **hybride/gehoste**-klanten moeten contact opnemen met Adobe om beveiligingszones voor hun exemplaar in te stellen.
+>Andere **hybride/gehoste** klanten moeten zich tot het ondersteuningsteam van Adobe richten om IP aan de lijst van gewenste personen toe te voegen.
 
 
 ## Beveiligingszones maken {#creating-security-zones}
@@ -218,3 +218,36 @@ Zodra de streken worden bepaald en de **[!UICONTROL Security zone]** opsomming w
    ![](assets/zone_operator_selection.png)
 
 1. Klik op **[!UICONTROL OK]** en sla de wijzigingen op om deze wijzigingen toe te passen.
+
+
+
+## Aanbevelingen
+
+* Zorg ervoor dat de reverse-proxy niet is toegestaan in subNetwork. Als het het geval is, zal **all** verkeer worden ontdekt zoals komend van dit lokale IP, zodat zal worden vertrouwd.
+
+* Gebruik sessionTokenOnly=&quot;true&quot; minimaliseren:
+
+   * Waarschuwing: Als dit attribuut aan waar wordt geplaatst, kan de exploitant aan een **CRSF aanval** worden blootgesteld.
+   * Bovendien wordt het sessionToken koekje niet geplaatst met een markering httpOnly, zodat kan sommige cliënt-kant javascript code het lezen.
+   * Nochtans vereist het Centrum van het Bericht op veelvoudige uitvoeringscellen sessionTokenOnly: creeer een nieuwe veiligheidsstreek met sessionTokenOnly die aan &quot;waar&quot;wordt geplaatst en voeg **slechts noodzakelijke IP(s)** in deze streek toe.
+
+* Indien mogelijk, plaats allen allowHTTP, showErrors om vals (niet voor localhost) te zijn en hen te controleren.
+
+   * allowHTTP = &quot;false&quot;: exploitanten dwingen HTTPS te gebruiken
+   * showErrors = &quot;false&quot;: Hiermee verbergt u technische fouten (waaronder SQL-fouten). Het verhindert het tonen van teveel informatie, maar vermindert het vermogen voor de teller om fouten op te lossen (zonder om meer informatie van een beheerder te vragen)
+
+* Plaats allowDebug aan waar slechts op IPs die door marketing gebruikers/beheerders wordt gebruikt die (in feite voorproef) onderzoeken, webApps en rapporten moeten tot stand brengen. Deze vlag staat deze IPs toe om relaisregels te krijgen die worden getoond en hen te zuiveren.
+
+* Stel allowEmptyPassword, allowUserPassword, allowSQLInjection nooit in op true. Deze kenmerken zijn alleen hier voor een vloeiende migratie vanaf v5 en v6.0:
+
+   * **Operatoren** allowEmptyPasswordlets hebben een leeg wachtwoord. Als dit voor u het geval is, breng al uw exploitanten op de hoogte om hen te vragen om een wachtwoord met een deadline te plaatsen. Als deze deadline is verstreken, wijzigt u dit kenmerk in false.
+
+   * **Operatoren** allowUserPasswordlets verzenden hun gegevens als parameters (zodat deze door apache/IIS/proxy worden geregistreerd). Deze functie is in het verleden gebruikt om het gebruik van de API te vereenvoudigen. U kunt in uw kookboek (of in de specificatie) controleren of sommige derdetoepassingen dit gebruiken. Als dat het geval is, moet u de gebruiker een melding sturen om de manier waarop hij of zij de API gebruikt te wijzigen en deze functie zo snel mogelijk verwijderen.
+
+   * **Met** allowSQLInjectionnlets kan de gebruiker SQL-injecties uitvoeren met behulp van een oude syntaxis. Voer zo snel mogelijk de correcties uit die in [deze pagina](../../migration/using/general-configurations.md) worden beschreven om deze eigenschap aan vals te kunnen plaatsen. U kunt /nl/jsp/ping.jsp gebruiken?zones=true om uw configuratie van de veiligheidsstreek te controleren. Deze pagina toont de actieve status van veiligheidsmaatregelen (die met deze veiligheidsvlaggen worden gegevens verwerkt) voor huidige IP.
+
+* HttpOnly cookie/useSecurityToken: verwijs naar **sessionTokenOnly** vlag.
+
+* Minimaliseer IPs die aan de lijst van gewenste personen wordt toegevoegd: Uit de doos, in veiligheidszones, hebben wij de 3 waaiers voor privé netwerken toegevoegd. Het is onwaarschijnlijk dat u al deze IP adressen zult gebruiken. Bewaar dus alleen die dingen die je nodig hebt.
+
+* webApp/internal-operator bijwerken zodat deze alleen toegankelijk is in localhost.
