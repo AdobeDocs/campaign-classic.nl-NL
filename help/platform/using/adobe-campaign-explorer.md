@@ -1,0 +1,86 @@
+---
+solution: Campaign Classic
+product: campaign
+title: Adobe Campaign Explorer gebruiken
+description: Meer informatie over het gebruik van Campagne Explorer
+audience: platform
+content-type: reference
+topic-tags: starting-with-adobe-campaign
+exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
+translation-type: tm+mt
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+workflow-type: tm+mt
+source-wordcount: '441'
+ht-degree: 1%
+
+---
+
+
+# Adobe Campaign-verkenner {#using-adobe-campaign-explorer} gebruiken
+
+De Adobe Campaign-verkenner is toegankelijk via het werkbalkpictogram. Hiermee hebt u toegang tot de Adobe Campaign, alle Adobe Campaign-mogelijkheden, configuratieschermen en een gedetailleerdere weergave van enkele platformelementen.
+
+De werkruimte **[!UICONTROL Explorer]** is verdeeld in drie zones:
+
+![](assets/s_ncs_user_navigation.png)
+
+**1 - Boom**: U kunt de inhoud van de structuur aanpassen (knooppunten toevoegen, verplaatsen of verwijderen). Deze procedure is alleen bedoeld voor professionele gebruikers. Raadpleeg [deze sectie](#about-navigation-hierarchy).) voor meer informatie.
+
+**2 - Lijst**: u kunt deze lijst filteren, zoekopdrachten uitvoeren, informatie toevoegen of gegevens sorteren. [Meer informatie](adobe-campaign-ui-lists.md).
+
+**3 - Details**: u kunt de details van het geselecteerde element weergeven. Met het pictogram in de rechterbovensectie kunt u deze informatie op volledig scherm weergeven.
+
+## Mappen en boomstructuur{#about-navigation-hierarchy}
+
+De navigatiestructuur werkt als een bestandsbrowser (bijvoorbeeld Windows Verkenner). Mappen kunnen submappen bevatten. Als u een knooppunt selecteert, wordt de weergave weergegeven die overeenkomt met het knooppunt.
+
+De weergegeven weergave is een lijst die is gekoppeld aan een schema en een invoerformulier voor het bewerken van de geselecteerde regel.
+
+![](assets/d_ncs_integration_navigation.png)
+
+Als u een nieuwe map aan de structuur wilt toevoegen, klikt u met de rechtermuisknop op de map in de vertakking waar u een map wilt invoegen en selecteert u **[!UICONTROL Add new folder]**. Selecteer in het snelmenu het type bestand dat u wilt maken.
+
+![](assets/d_ncs_integration_navigation_create.png)
+
+Leer hoe te om de boomstructuur van de navigatie van de Campagne [in deze sectie ](../../configuration/using/configuration.md) te vormen.
+
+Leer hoe u machtigingen voor mappen [instelt in deze sectie](access-management-folders.md).
+
+## Aanbevolen werkwijzen voor mapconfiguratie
+
+* **Ingebouwde mappen gebruiken**
+
+   Door de ingebouwde mappen te gebruiken, kunt u de toepassing eenvoudiger gebruiken, onderhouden en problemen oplossen voor personen die niet bij het project zijn betrokken. U moet geen aangepaste mapstructuren maken voor ontvangers, lijsten, leveringen, enzovoort, maar u moet wel de standaardmappen gebruiken, zoals Beheer, Profielen en doelen, Campagnebeheer.
+
+* **Submappen maken**
+
+   Plaats technische workflows in de standaardmap: Beheer / Productie / Technische workflows en maak submappen per workflowtype.
+
+* **Een naamgevingsconventie instellen**
+
+   U kunt de werkstromen bijvoorbeeld in alfabetische volgorde benoemen, zodat ze in de volgorde van uitvoering gesorteerd worden weergegeven.
+
+   Bijvoorbeeld:
+
+   * A1 - ontvangers van de invoer, begint om 10:00;
+   * A2 - Importopdrachten beginnen om 11.00 uur.
+
+* **Sjablonen maken waarmee gebruikers kunnen beginnen**
+
+   Maak leveringssjablonen, workflowsjablonen, campagnemalplaatjes die specifiek zijn voor gebruikers. Deze structuur kan tijd besparen en ervoor zorgen dat de juiste leveringstoewijzing en typologieën voor elke gebruiker worden gebruikt.
+
+## Schermresolutie {#screen-resolution}
+
+Voor optimale navigatie en bruikbaarheid raadt Adobe u aan een minimale schermresolutie van 1600 x 900 pixels te gebruiken.
+
+>[!CAUTION]
+>
+>Resoluties van minder dan 1600 x 900 pixels worden door Adobe Campaign ondersteund.
+
+Als in de **[!UICONTROL Explorer]** werkruimte sommige delen van de **[!UICONTROL Details]** streek lijken te zijn afgekapt, breidt u deze uit met de pijl boven de zone of klikt u op de **[!UICONTROL Enlarge]** knop.
+
+![](assets/s_ncs_user_resolution.png)
+
+## Lijsten verkennen en aanpassen {#browsing-lists}
+
+Leer hoe u lijsten [in deze sectie](adobe-campaign-ui-lists.md) doorbladert, beheert en aanpast.
