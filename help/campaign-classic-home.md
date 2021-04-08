@@ -4,14 +4,14 @@ solution: Campaign Classic
 product: campaign
 title: Adobe Campaign Classic-productdocumentatie
 topic: Premium
+exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 translation-type: tm+mt
-source-git-commit: 9f1c4110ef49c87719f1cc84ad08f687865561d1
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '294'
 ht-degree: 51%
 
 ---
-
 
 # Help Center {#campaign-classic-documentation}
 
@@ -19,13 +19,13 @@ ht-degree: 51%
 
 ## Nieuwe functies
 
-* **[Werk uw APNs-](technotes/ios-certificate-update.md)**<br/> certificaat bij. Op 29 maart 2021 is een APNs-update van invloed op het campagnekanaal van iOS. U moet uw configuratie bijwerken om uitval van iOS-pushkanalen te voorkomen.
+* **[Werk uw APNs-](technotes/ios-certificate-update.md)**<br/> certificaat bijOp 29 maart 2021 heeft een APNs-update gevolgen voor het iOS-kanaal van de campagne. U moet uw configuratie bijwerken om uitval van iOS-pushkanalen te voorkomen.
 
 * **[Verbinding maken via IMS/Adobe ID? Voer een upgrade uit naar de nieuwste builds](integrations/using/about-adobe-id.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne na** 30 juni 2021 **.
 
 * **[Beveilig uw Campagne ](technotes/acc-config-updates.md)**<br/> instancesUpdate aan recentste bouwt om uw platform van de Campagne te beveiligen.
 
-* **[Onjuiste harde ](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> grenzen verwijderenLeer hoe u onjuiste harde grenzen kunt bijwerken na Gmail-uitgang
+* **[Onjuiste harde ](https://helpx.adobe.com/nl/campaign/kb/update-bounce-qualification.html)**<br/> grenzen verwijderenLeer hoe u onjuiste harde grenzen kunt bijwerken na Gmail-uitgang
 
 * **[Werk uw Adobe Experience Cloud Triggers-](integrations/using/configuring-adobe-io.md)**<br/> integratie bij. De verouderde Auth-verificatieservice heeft het einde van de levensduur bereikt. Leer hoe u naar Adobe I/O migreert.
 
