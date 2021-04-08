@@ -4,16 +4,16 @@ product: campaign
 title: Informatie over profielen
 description: Informatie over profielen
 feature: Profielen, publiek
-role: Zakelijke praktiserer, Data Architect
+role: Business Practitioner, Data Architect
 level: Beginner
+exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 translation-type: tm+mt
-source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 12%
+source-wordcount: '994'
+ht-degree: 14%
 
 ---
-
 
 # Aan de slag met profielen{#about-profiles}
 
@@ -79,11 +79,11 @@ Voor toegang tot geavanceerde functies en configuraties moet u op het pictogram 
 
 ![](assets/d_ncs_user_interface01.png)
 
-De algemene indeling van de Adobe Campaign-verkenner wordt weergegeven in [deze sectie](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
+De algemene indeling van de Adobe Campaign-verkenner wordt weergegeven op [deze pagina](../../platform/using/adobe-campaign-explorer.md).
 
 >[!NOTE]
 >
->U kunt een geavanceerde weergave van deze lijst ook weergeven vanuit de Adobe Campaign-structuur door op de koppeling **[!UICONTROL Profiles and targets > Recipients]** te klikken. De lijstvertoning kan aan uw behoeften worden gevormd. U kunt kolommen toevoegen of verwijderen, de kolomvolgorde, de sorteergegevens enzovoort definiëren. De de vertoningsconfiguratie van de lijst wordt beschreven in [deze sectie](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
+>U kunt een geavanceerde weergave van deze lijst ook weergeven vanuit de Adobe Campaign-structuur door op de koppeling **[!UICONTROL Profiles and targets > Recipients]** te klikken. De lijstvertoning kan aan uw behoeften worden gevormd. U kunt kolommen toevoegen of verwijderen, de kolomvolgorde, de sorteergegevens enzovoort definiëren. De de vertoningsconfiguratie van de lijst wordt beschreven in [deze pagina](../../platform/using/adobe-campaign-ui-lists.md).
 >
 >U kunt ook de weergave voor ontvangers definiëren. Zie [deze sectie](../../platform/using/access-management-folders.md) voor meer informatie over deze functionaliteit.
 
@@ -97,7 +97,7 @@ Als u op AWS wordt gehost, kunt u het aantal actieve profielen dat op uw instant
 
 >[!NOTE]
 >
->Het Configuratiescherm is toegankelijk voor alle beheergebruikers. De stappen om Admin-toegang aan een gebruiker te verlenen, worden gedetailleerd beschreven in [deze sectie](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>Het configuratiescherm is toegankelijk voor alle gebruikers met beheerdersrechten. De stappen om Admin-toegang aan een gebruiker te verlenen, worden gedetailleerd beschreven in [deze sectie](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
 >
 >Merk op dat uw instantie op AWS moet worden gehost en moet worden geüpgraded met de nieuwste [Gold Standard](../../rn/using/gs-overview.md)-build of de [nieuwste GA-build (21.1)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Als u wilt controleren of uw instantie wordt gehost op AWS, voert u de stappen uit die worden beschreven in [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
