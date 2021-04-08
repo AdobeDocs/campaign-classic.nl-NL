@@ -6,20 +6,30 @@ description: Leer hoe u beveiligingszones kunt configureren
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
+exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 830ec0ed80fdc6e27a8cc782b0e4b79abf033450
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
 
 
-# Beveiligingszones {#defining-security-zones} definiëren
+# Beveiligingszones definiëren {#defining-security-zones}
 
 Elke exploitant moet met een streek worden verbonden om aan een geval te login en exploitant IP moet in de adressen of adresreeksen worden omvat die in de veiligheidsstreek worden bepaald. Configuratie van de beveiligingszone wordt uitgevoerd in het configuratiebestand van de Adobe Campaign-server.
 
-Operatoren zijn vanuit hun profiel gekoppeld aan een beveiligingszone in de console ( **[!UICONTROL Administration > Access management > Operators]**-knooppunt). Leer hoe u zones koppelt aan Campagneontwikkelaars in [deze sectie](#linking-a-security-zone-to-an-operator).
+Operatoren zijn verbonden met een beveiligingszone vanuit het profiel in de console, toegankelijk via het knooppunt **[!UICONTROL Administration > Access management > Operators]**. [Meer informatie](#linking-a-security-zone-to-an-operator).
+
+>[!NOTE]
+>
+>Deze procedure is beperkt tot **on-premise** plaatsingen.
+>
+>Als **ontvangen** klant, als u tot [Controlebord van de Campagne](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html) kunt toegang hebben, kunt u de zelfdienstinterface van de Zone van de Veiligheid gebruiken. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
+>
+>Andere **hybride/gehoste**-klanten moeten contact opnemen met Adobe om beveiligingszones voor hun exemplaar in te stellen.
+
 
 ## Beveiligingszones maken {#creating-security-zones}
 
