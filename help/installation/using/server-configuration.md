@@ -6,58 +6,16 @@ description: Meer informatie over best practices voor serverconfiguratie.
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
+exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
 translation-type: tm+mt
-source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
+source-git-commit: e31d386af4def80cdf258457fc74205b1ca823b3
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '620'
 ht-degree: 2%
 
 ---
 
-
 # Serverconfiguratie {#server-configuration}
-
-## Beveiligingszones configureren
-
-Vanaf build 8977 is de gebruikersinterface van de Zones Self Service niet meer beschikbaar. Als u niet op AWS wordt ontvangen, bereik aan het ondersteuningsteam van Adobe om IP aan de lijst van gewenste personen toe te voegen. Anders, moet het toevoegen van IP aan de lijst van gewenste personen in [Controlebord](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) worden uitgevoerd.
-
-Als u wilt controleren of uw instantie wordt gehost op AWS, voert u de stappen uit die worden beschreven in [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
-
->[!NOTE]
-> 
->Het Configuratiescherm is toegankelijk voor alle beheergebruikers. De stappen om Admin-toegang aan een gebruiker te verlenen, worden gedetailleerd beschreven in [deze sectie](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
->
->Merk op dat uw instantie op AWS moet worden gehost en moet worden geüpgraded met de nieuwste [Gold Standard](../../rn/using/gs-overview.md)-build of de [nieuwste GA-build (21.1)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
-
-
-* Zorg ervoor dat de reverse-proxy niet is toegestaan in subNetwork. Als het het geval is, zal **all** verkeer worden ontdekt zoals komend van dit lokale IP, zodat zal worden vertrouwd.
-
-* Gebruik sessionTokenOnly=&quot;true&quot; minimaliseren:
-
-   * Waarschuwing: Als dit attribuut aan waar wordt geplaatst, kan de exploitant aan een **CRSF aanval** worden blootgesteld.
-   * Bovendien wordt het sessionToken koekje niet geplaatst met een markering httpOnly, zodat kan sommige cliënt-kant javascript code het lezen.
-   * Nochtans vereist het Centrum van het Bericht op veelvoudige uitvoeringscellen sessionTokenOnly: creeer een nieuwe veiligheidsstreek met sessionTokenOnly die aan &quot;waar&quot;wordt geplaatst en voeg **slechts noodzakelijke IP(s)** in deze streek toe.
-
-* Indien mogelijk, plaats allen allowHTTP, showErrors om vals (niet voor localhost) te zijn en hen te controleren.
-
-   * allowHTTP = &quot;false&quot;: exploitanten dwingen HTTPS te gebruiken
-   * showErrors = &quot;false&quot;: Hiermee verbergt u technische fouten (waaronder SQL-fouten). Het verhindert het tonen van teveel informatie, maar vermindert het vermogen voor de teller om fouten op te lossen (zonder om meer informatie van een beheerder te vragen)
-
-* Plaats allowDebug aan waar slechts op IPs die door marketing gebruikers/beheerders wordt gebruikt die (in feite voorproef) onderzoeken, webApps en rapporten moeten tot stand brengen. Deze vlag staat deze IPs toe om relaisregels te krijgen die worden getoond en hen te zuiveren.
-
-* Stel allowEmptyPassword, allowUserPassword, allowSQLInjection nooit in op true. Deze kenmerken zijn alleen hier voor een vloeiende migratie vanaf v5 en v6.0:
-
-   * **Operatoren** allowEmptyPasswordlets hebben een leeg wachtwoord. Als dit voor u het geval is, breng al uw exploitanten op de hoogte om hen te vragen om een wachtwoord met een deadline te plaatsen. Als deze deadline is verstreken, wijzigt u dit kenmerk in false.
-
-   * **Operatoren** allowUserPasswordlets verzenden hun gegevens als parameters (zodat deze door apache/IIS/proxy worden geregistreerd). Deze functie is in het verleden gebruikt om het gebruik van de API te vereenvoudigen. U kunt in uw kookboek (of in de specificatie) controleren of sommige derdetoepassingen dit gebruiken. Als dat het geval is, moet u de gebruiker een melding sturen om de manier waarop hij of zij de API gebruikt te wijzigen en deze functie zo snel mogelijk verwijderen.
-
-   * **Met** allowSQLInjectionnlets kan de gebruiker SQL-injecties uitvoeren met behulp van een oude syntaxis. Voer zo snel mogelijk de correcties uit die in [deze pagina](../../migration/using/general-configurations.md) worden beschreven om deze eigenschap aan vals te kunnen plaatsen. U kunt /nl/jsp/ping.jsp gebruiken?zones=true om uw configuratie van de veiligheidsstreek te controleren. Deze pagina toont de actieve status van veiligheidsmaatregelen (die met deze veiligheidsvlaggen worden gegevens verwerkt) voor huidige IP.
-
-* HttpOnly cookie/useSecurityToken: verwijs naar **sessionTokenOnly** vlag.
-
-* Minimaliseer IPs die aan de lijst van gewenste personen wordt toegevoegd: Uit de doos, in veiligheidszones, hebben wij de 3 waaiers voor privé netwerken toegevoegd. Het is onwaarschijnlijk dat u al deze IP adressen zult gebruiken. Bewaar dus alleen die dingen die je nodig hebt.
-
-* webApp/internal-operator bijwerken zodat deze alleen toegankelijk is in localhost.
 
 ## Beveiliging bestandsupload
 
