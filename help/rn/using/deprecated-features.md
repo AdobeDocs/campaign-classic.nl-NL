@@ -6,14 +6,14 @@ description: Deze pagina bevat de verouderde en verwijderde functies van Adobe C
 feature: Overzicht
 role: Business Practitioner
 level: Beginner
-translation-type: ht
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
-workflow-type: ht
-source-wordcount: '1716'
-ht-degree: 100%
+exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
+translation-type: tm+mt
+source-git-commit: 01daff5d95f4635182041b949a21c80cae5e4473
+workflow-type: tm+mt
+source-wordcount: '1713'
+ht-degree: 98%
 
 ---
-
 
 # Verouderde en verwijderde functies {#deprecated-and-removed-features}
 
@@ -61,7 +61,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    <li>Web-API – Microsoft Dynamics CRM online: 2016, 2016 Update 1</li>
    <li>Oracle On-demand-API</li>
    </ul>
-  <p><em>Doeldatum voor verwijdering: april 2021</em></p>
+  <p><em>Doeldatum verwijdering: mei 2021</em></p>
   </td>
  </tr>
   <tr>
@@ -69,21 +69,21 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
   <td><p>Vanaf Campaign versie 20.3 is de verouderde binaire iOS-connector van iOS afgeschaft.<p>
   <p> Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen.
   <a href="https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html">Meer informatie</a></p>
-  <p><em>Doeldatum voor verwijdering: april 2021</em></p>
+  <p><em>Doeldatum verwijdering: mei 2021</em></p>
   </td>
  </tr>
    <tr>
   <td>Demdex-domein<br></td>
   <td><p> Vanaf Campaign versie 20.3 is het demdex-domein afgeschaft. Dit werd gebruikt voor het importeren en exporteren van doelgroepen naar Adobe Experience Cloud.<p>
   <p>Als u het demdex-domein voor uw externe import/export-accounts gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Meer informatie</a></p> 
-  <p><em>Doeldatum voor verwijdering: april 2021</em></p>
+  <p><em>Doeldatum verwijdering: mei 2021</em></p>
   </td>
   <tr>
   <td>OAuth-verificatie (OAuth en JWT)<br></td>
   <td><p> Vanaf Campaign versie 20.3 is de Triggers-integratieverificatie die oorspronkelijk was gebaseerd op de oAUTH-verificatieset-up voor toegang tot de pipeline gewijzigd en verplaatst naar Adobe I/O. <p>
   <p>Als u Triggers-integratie gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../integrations/using/configuring-adobe-io.md">Meer informatie</a></p> 
   <p>Raadpleeg deze <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina</a> voor meer informatie over de afschaffing van OAuth-verificatie.</p> 
-  <p><em>Doeldatum voor verwijdering: april 2021</em></p>
+  <p><em>Doeldatum verwijdering: nov. 2021</em></p>
   </td>
   </tr>
   <td>Sms-connectoren<br></td>
@@ -98,14 +98,14 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    </ul>
   <p>Als u één van deze connectoren gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../delivery/using/sms-channel.md">Meer informatie</a></p> 
   <p>Ontdek in <a href="../../delivery/using/unsupported-connector-migration.md">deze technische opmerking</a> hoe u verouderde connectoren kunt migreren.</p>
-  <p><em>Doeldatum voor verwijdering: april 2021</em></p>
+  <p><em>Doeldatum verwijdering: mei 2021</em></p>
   </td> 
  </tr>
   <tr>  
    <td>Faxkanaal<br></td>
    <td><p>Vanaf Campaign 20.2-release is het faxkanaal afgeschaft.</p> 
    <p>Als u dit kanaal gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Ontdek meer</a> over Campaign-kanalen.</p>
-   <p><em>Doeldatum voor verwijdering: april 2021</em></p></td>
+   <p><em>Doeldatum verwijdering: mei 2021</em></p></td>
   </tr>
  </tbody> 
 </table>
