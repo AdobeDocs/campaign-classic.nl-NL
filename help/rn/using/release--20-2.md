@@ -6,22 +6,20 @@ description: Release 20.2
 feature: Overzicht
 role: Business Practitioner
 level: Beginner
+exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
 translation-type: tm+mt
-source-git-commit: a25f9464a762defa5d9a3b45bb60a387c65b7c97
+source-git-commit: 65662a49aefdd6b5f85b39677908696f093779e8
 workflow-type: tm+mt
-source-wordcount: '2833'
-ht-degree: 84%
+source-wordcount: '2830'
+ht-degree: 88%
 
 ---
 
-
 # Release 20.2{#release-20-2}
-
-![](assets/do-not-localize/cp-icon.png) **Release van nieuw Configuratiescherm in oktober** met domeinconfiguratie met CNAME-records en nieuwe mogelijkheden voor databasecontrole. [Meer informatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/green_2.png) Release 20.2.5 - build 9188 {#release-20-2-5-build-9188}
 
-_31 maart 2020_
+_31 maart 2021_
 
 **Verbeteringen**
 
@@ -36,7 +34,7 @@ _31 maart 2020_
 * Probleem verholpen waarbij Tomcat 8.5 ongeldige antwoorden verzendt die fouten in Transactieberichten logboeken veroorzaakten. (NEO-30858)
 * Oplossing voor een regressieprobleem dat geheugenbeschadiging in extern draadbeheer veroorzaakt en de prestaties beïnvloedt.
 * Probleem opgelost waarbij de factureringsworkflow mogelijk mislukte bij het gebruik van een aangepaste doeltoewijzing. De primaire sleutel van het aangepaste schema wordt opgeslagen in de kolom &quot;sourceId&quot;, die alleen gehele getallen toestaat. Het staat nu geheel zowel als koordwaarden toe. (NEO-25914, NEO-28146)
-* Oplossing voor een regressie waardoor bepaalde componenten van de console niet konden worden gebruikt, zoals de datumkiezer en het beheer van afbeeldingen in leveringen. (NEO-31453)
+* Er is een regressie opgelost die verhinderde dat bepaalde onderdelen van de console konden worden gebruikt, zoals de datumkiezer en afbeeldingsbeheer in verzendingen. (NEO-31453)
 
 ## ![](assets/do-not-localize/red_2.png) Release 20.2.4 - build 9187 {#release-20-2-4-build-9187}
 
@@ -44,9 +42,9 @@ _22 december 2020_
 
 >[!CAUTION]
 >
-> * Deze versie wordt geleverd met een nieuw verbindingsprotocol: Als u verbinding maakt met Campagne via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **30 juni 2021**.
+> * Deze release wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **30 juni 2021** verbinding te kunnen maken met Campaign.
 > * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
-> * Als u de Experience Cloud Triggers integratie door authentificatie Auth gebruikt, moet u naar Adobe I/O gaan zoals [in deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde Auth authentificatiemodus met Campagne zal op **30 November, 2021** worden gepensioneerd.
+> * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overstappen op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde oAuth-verificatiemodus voor Campaign wordt op **30 november 2021** buiten gebruik gesteld.
 
 
 **Verbeteringen**
@@ -63,6 +61,8 @@ _22 december 2020_
 * Probleem opgelost in POSIX-draadbeheer dat grote core dump-bestanden heeft gegenereerd voor de marketinginstantie. (NEO-28117, NEO-29281)
 * Correctie van problemen die ertoe kunnen leiden dat het webproces vastloopt bij het voorbereiden van leveringen of bij terugkerende voorvertoning van levering. (NEO-27790, NEO-27517)
 * Probleem verholpen waarbij leveringen of het verzenden van bewijzen mislukten wanneer deze door een niet-beheerder werden geactiveerd. (NEO-28597)
+
+![](assets/do-not-localize/cp-icon.png) **Release van nieuw Configuratiescherm in oktober** met domeinconfiguratie met CNAME-records en nieuwe mogelijkheden voor databasecontrole. [Meer informatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/red_2.png) Release 20.2.3 - build 9182 {#release-20-2-3-build-9182}
 
