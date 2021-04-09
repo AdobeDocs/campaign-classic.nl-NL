@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 translation-type: tm+mt
-source-git-commit: e165af411d2580d69694f1730116cb198418bfe2
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 5%
@@ -201,7 +201,7 @@ Hier zijn de verschillende parameters van **dataStore** knoop. Hier worden de ge
   </tr> 
   <tr> 
    <td> uploadAllowlist<br /> </td> 
-   <td> Geautoriseerde bestanden die moeten worden gedownload, gescheiden door ','. De tekenreeks moet een geldige, reguliere Java-expressie zijn. Zie <a href="../../installation/using/configuring-campaign-server.md#limiting-uploadable-files" target="_blank">Uploadbare bestanden beperken</a>.<br /> </td> 
+   <td> Geautoriseerde bestanden die moeten worden gedownload, gescheiden door ','. De tekenreeks moet een geldige, reguliere Java-expressie zijn. Zie <a href="file-res-management.md" target="_blank">Uploadbare bestanden beperken</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> '.+' <br /> </td> 
   </tr> 
@@ -425,7 +425,7 @@ In **dataStore > dataSource > pool** knoop, vorm de parameters van bijbehorende 
 
 Hier volgen de verschillende parameters van het knooppunt **dataStore > virtualDir**. Dit is de configuratie van de virtuele folder aan echte folderafbeelding.
 
-Voor extra informatie, verwijs naar [Beheren van openbare middelen](../../installation/using/configuring-campaign-server.md#managing-public-resources).
+Voor extra informatie, verwijs naar [Beheren van openbare middelen](file-res-management.md).
 
 <table> 
  <thead> 
@@ -867,7 +867,7 @@ Hier zijn de verschillende parameters van **ooconv** knoop. Dit is de configurat
 
 Hier zijn de verschillende parameters van **proxyConfig** knoop. Dit is de configuratie van proxyparameters.
 
-Raadpleeg [Configuratie proxyverbinding](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) voor aanvullende informatie.
+Raadpleeg [Configuratie proxyverbinding](file-res-management.md) voor aanvullende informatie.
 
 <table> 
  <thead> 
@@ -904,7 +904,7 @@ Raadpleeg [Configuratie proxyverbinding](../../installation/using/configuring-ca
 
 In **proxyConfig > de Volmacht van HTTP / Veilige volmacht** knoop, vorm de volgende parameters.
 
-Raadpleeg [Configuratie proxyverbinding](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) voor aanvullende informatie.
+Raadpleeg [Configuratie proxyverbinding](file-res-management.md) voor aanvullende informatie.
 
 <table> 
  <thead> 
