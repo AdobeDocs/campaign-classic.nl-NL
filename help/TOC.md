@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2489'
 ht-degree: 97%
 
 ---
@@ -659,7 +659,9 @@ ht-degree: 97%
       + [Configuratie van de Campaign-server](installation/using/configuring-campaign-server.md)
       + [Beveiligingszones definiëren](installation/using/security-zones.md)
       + [URL-machtigingen instellen](installation/using/url-permissions.md)
+      + [Bestanden en bronnen](installation/using/file-res-management.md)
       + [Tomcat configureren](installation/using/configure-tomcat.md)
+      + [Leveringsinstellingen configureren](installation/using/configure-delivery-settings.md)
       + [Technische e-mailconfiguraties](installation/using/email-deliverability.md)
       + [MX-servers gebruiken met campagne](installation/using/using-mx-servers.md)
       + [Bcc van e-mail configureren](installation/using/email-archiving.md)
