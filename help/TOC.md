@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '2483'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -509,7 +509,6 @@ ht-degree: 98%
       + [Een externe database openen](workflow/using/accessing-an-external-database--fda-.md)
       + [Toestemmingen beheren](workflow/using/managing-rights.md)
       + [Activiteitenafbeeldingen beheren](workflow/using/managing-activity-images.md)
-      + [Genegenheid beheren](workflow/using/managing-propensity.md)
       + [Tijdzones beheren](workflow/using/managing-time-zones.md)
       + [Technische workflows](workflow/using/about-technical-workflows.md)
 + Aanbiedingen beheren {#managing-offers}
@@ -625,7 +624,7 @@ ht-degree: 98%
       + [Zakelijke implementatie](installation/using/enterprise-deployment.md)
       + [Midsourcingimplementatie](installation/using/mid-sourcing-deployment.md)
       + [Power Booster en Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + Controlelijst voor beveiliging en privacy {#security-privacy}
+   + Beveiligings- en privacyinstellingen {#security-privacy}
       + [Aan de slag met beveiliging en privacy](installation/using/get-started-security-privacy.md)
       + [Personalisatie en privacy](installation/using/privacy.md)
       + [Veilige-toegangscontrole](installation/using/access-management.md)
@@ -654,12 +653,13 @@ ht-degree: 98%
       + [Belangrijkste stappen](installation/using/about-initial-configuration.md)
       + [Een instantie maken en aanmelden](installation/using/creating-an-instance-and-logging-on.md)
       + [De database maken en configureren](installation/using/creating-and-configuring-the-database.md)
-      + [Campaign-server configureren](installation/using/campaign-server-configuration.md)
       + [Een instantie implementeren](installation/using/deploying-an-instance.md)
       + [Ingebouwde pakketten installeren](installation/using/installing-campaign-standard-packages.md)
    + Campaign configureren {#additional-configurations}
-      + [Instellingen van Campaign-server](installation/using/configuring-campaign-server.md)
+      + [Configuratie van de Campaign-server](installation/using/configuring-campaign-server.md)
       + [Beveiligingszones definiëren](installation/using/security-zones.md)
+      + [URL-machtigingen instellen](installation/using/url-permissions.md)
+      + [Tomcat configureren](installation/using/configure-tomcat.md)
       + [Technische e-mailconfiguraties](installation/using/email-deliverability.md)
       + [MX-servers gebruiken met campagne](installation/using/using-mx-servers.md)
       + [Bcc van e-mail configureren](installation/using/email-archiving.md)
