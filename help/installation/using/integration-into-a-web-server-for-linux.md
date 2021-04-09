@@ -6,14 +6,14 @@ description: Leer hoe te om Campagne in een server van het Web te integreren (Li
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
+exl-id: 4f8ea358-a38d-4137-9dea-f398e60c5f5d
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 2%
 
 ---
-
 
 # Integratie in een webserver voor Linux{#integration-into-a-web-server-for-linux}
 
@@ -23,7 +23,7 @@ U kunt deze geïntegreerde Tomcat-server gebruiken om HTTP-aanvragen te bedienen
 
 In dit geval:
 
-* de standaard luisterpoort is 8080. Om het te veranderen, verwijs naar [het Vormen Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat).
+* de standaard luisterpoort is 8080. Als u deze wilt wijzigen, raadpleegt u [deze sectie](configure-tomcat.md).
 * De clientconsoles maken vervolgens verbinding met een URL, zoals:
 
    ```
