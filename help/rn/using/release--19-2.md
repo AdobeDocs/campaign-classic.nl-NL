@@ -6,14 +6,14 @@ description: Opmerkingen bij de release voor campagne 19.2
 feature: null
 role: null
 level: null
+exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
 translation-type: tm+mt
-source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '1484'
-ht-degree: 11%
+ht-degree: 18%
 
 ---
-
 
 # Release 19.2{#release-19-2}
 
@@ -21,19 +21,19 @@ ht-degree: 11%
 
 _22 maart 2021_
 
-* Oplossing voor een regressie waardoor bepaalde componenten van de console niet konden worden gebruikt, zoals de datumkiezer en het beheer van afbeeldingen in leveringen. (NEO-31453, NEO-31454)
+* Er is een regressie opgelost die verhinderde dat bepaalde onderdelen van de console konden worden gebruikt, zoals de datumkiezer en afbeeldingsbeheer in verzendingen. (NEO-31453, NEO-31454)
 
-**Alleen consoleverbetering is verplicht. Er is geen serverupgrade vereist.**
+**Alleen de console-upgrade is verplicht. Er is geen serverupgrade vereist.**
 
 >[!NOTE]
 >
-> Verbind met [Adobe de Distributie van de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) om de nieuwe versie te downloaden. Leer hoe u de console-update [op deze pagina ](../../installation/using/client-console-availability-for-windows.md) aan alle eindgebruikers kunt voorstellen.
+> Maak verbinding met [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/nl/campaign.html) om de nieuwe versie te downloaden. [Op deze pagina ](../../installation/using/client-console-availability-for-windows.md) leert u hoe u de console-update aan alle eindgebruikers kunt voorstellen.
 
 _23 december 2020_
 
 >[!CAUTION]
 >
-> * Deze versie wordt geleverd met een nieuw verbindingsprotocol: Als u verbinding maakt met Campagne via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **30 juni 2021**.
+> * Deze release wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **30 juni 2021** verbinding te kunnen maken met Campaign.
    >
    > 
 * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
@@ -138,7 +138,7 @@ _2 december 2019_
    * De optie **XtkCleanup_NoStats** is verbeterd voor PostgreSQL om het gedrag van de stap van de opslagoptimalisering van het gegevensbestand schoonmaakwerkschema beter te controleren. [Meer informatie](../../production/using/database-cleanup-workflow.md#statistics-update)
 * Er is een afsluitmechanisme voor de account toegevoegd aan de **aanmeldingsnaam()**-API. Het verhindert verdere login pogingen na een bepaald aantal opeenvolgende ontbroken login pogingen binnen een gespecificeerd tijdsbestek.
 * Met een nieuwe optie **Maximale verpersoonlijkingsruntime** in de leveringseigenschappen kunt u een time-outperiode voor de verpersoonlijkingsruntime definiëren om te voorkomen dat de verpersoonlijkingsfase te lang doorloopt. [Meer informatie](../../delivery/using/personalization-fields.md#timing-out-personalization)
-* De optie **ftp protocol** is toegevoegd om u toe te staan om een volmachtsconfiguratie voor verbindingen te gebruiken SFTP. [Meer informatie](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)
+* De optie **ftp protocol** is toegevoegd om u toe te staan om een volmachtsconfiguratie voor verbindingen te gebruiken SFTP. [Meer informatie](../../installation/using/file-res-management.md)
 * Nieuwe ondersteuning van proxytoegang tot een externe SFTP-server voor on-premise omgevingen.
 * Er is een specifieke hulplijn toegevoegd om te voorkomen dat pakketten worden geïnstalleerd die niet compatibel zijn met de instantie Campagne. [Meer informatie](../../installation/using/installing-campaign-standard-packages.md)
 
@@ -152,7 +152,7 @@ Zorg ervoor dat u beschikt over ondersteunde versies van alle systemen die in de
 
 _Campagne Mobile SDK_
 
-De build 1.0.26 van de iOS SDK is nu beschikbaar. In deze nieuwe build hebben we de ondersteuning van iOS 13 toegevoegd. Deze nieuwe versie ondersteunt nu meldingsprioriteit en het nieuwe beheerproces voor registratietoken voor iOS 13-pushberichten. Als u toepassingen uitvoert op een eerdere versie van de SDK, moet u de toepassingen opnieuw compileren met de nieuwe SDK. Neem contact op met [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de SDK op te halen.
+De build 1.0.26 van de iOS SDK is nu beschikbaar. In deze nieuwe build hebben we de ondersteuning van iOS 13 toegevoegd. Deze nieuwe versie ondersteunt nu meldingsprioriteit en het nieuwe beheerproces voor registratietoken voor iOS 13-pushberichten. Als u toepassingen uitvoert op een eerdere versie van de SDK, moet u de toepassingen opnieuw compileren met de nieuwe SDK. Neem contact op met [Adobe Customer Care](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de SDK op te halen.
 
 **Patches**
 
@@ -185,5 +185,3 @@ De build 1.0.26 van de iOS SDK is nu beschikbaar. In deze nieuwe build hebben we
 * Probleem verholpen bij toegang tot voorspellende modellen. (NEO-19713)
 * Probleem verholpen dat invloed had op willekeurige sampling in **Split**-workflowactiviteit met Hadoop FDA-database. (NEO-16636)
 * Oplossing voor een regressie op het Oracle waardoor sommige functies na de upgrade als ongeldig werden beschouwd. (NEO-12759)
-
-
