@@ -6,14 +6,14 @@ description: Leer hoe u de huidige versie van de ingesloten Tomcat-webservlet ku
 audience: production
 content-type: reference
 topic-tags: troubleshooting
+exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
 translation-type: tm+mt
-source-git-commit: 49e49d5e35d14a31236cc4f78188cdf77353fbbf
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
 
 ---
-
 
 # Tomcat-versie zoeken{#locate-tomcat-version}
 
