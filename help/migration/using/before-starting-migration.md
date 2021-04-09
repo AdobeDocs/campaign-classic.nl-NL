@@ -6,14 +6,14 @@ description: Voordat u de migratie start
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
+exl-id: d666bc0b-596a-4908-9364-7df5bb8d68d0
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 1%
 
 ---
-
 
 # Voordat u de migratie start{#before-starting-migration}
 
@@ -77,5 +77,4 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->Het **interne** wachtwoord moet voor alle volgende servers identiek zijn. Raadpleeg de secties [Interne id](../../installation/using/campaign-server-configuration.md#internal-identifier) en [Machtigingen](../../platform/using/access-management.md) voor meer informatie.
-
+>Het **interne** wachtwoord moet voor alle volgende servers identiek zijn. Raadpleeg de secties [Interne id](../../installation/using/configuring-campaign-server.md#internal-identifier) en [Machtigingen](../../platform/using/access-management.md) voor meer informatie.
