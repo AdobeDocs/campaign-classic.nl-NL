@@ -6,14 +6,14 @@ description: Gebruikelijke opdrachten
 audience: production
 content-type: reference
 topic-tags: production-procedures
+exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 3%
 
 ---
-
 
 # Gebruikelijke opdrachten{#usual-commands}
 
@@ -29,6 +29,7 @@ De parameter **`<command>`** beantwoordt aan de module.
 >
 >* In elk geval, kunt u **-noconsole** argument toevoegen om commentaren te schrappen die worden getoond zodra de modules zijn begonnen.
 >* Omgekeerd, kunt u het argument **-verbose** toevoegen om meer informatie te tonen.
+
 >
 
 
@@ -119,7 +120,7 @@ Als u de Adobe Campaign-services wilt stoppen, gebruikt u een van de volgende op
    nlserver shutdown 
    ```
 
-## Servicesopnieuw starten {#restart-services}
+## Services {#restart-services} opnieuw starten
 
 Op dezelfde manier kunt u een van de volgende opdrachten gebruiken om Adobe Campaign opnieuw te starten:
 
@@ -155,13 +156,15 @@ Het **internal** wachtwoord wijzigen: **nlserver config -internalpassword**
 
 >[!IMPORTANT]
 >
->Als u zich wilt aanmelden met de **Internal**-id, moet u vooraf een wachtwoord hebben gedefinieerd. Raadpleeg [deze sectie](../../installation/using/campaign-server-configuration.md#internal-identifier) voor meer informatie.
+>Als u zich wilt aanmelden met de **Internal**-id, moet u vooraf een wachtwoord hebben gedefinieerd. Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier) voor meer informatie.
 
 >[!NOTE]
 >
 >* In het algemeen, in plaats van het wijzigen van de configuratiedossiers door hand, kunt u **config** bevel gebruiken
 >* Om de lijst van parameters te krijgen, gebruik **-?** parameter:  **nlserver config -?**
->* In het geval van een Oracle-database mag u het account niet opgeven. De syntaxis ziet er als volgt uit:
+>* In het geval van een gegevensbestand van het Oracle, moet u niet de rekening specificeren. De syntaxis ziet er als volgt uit:
+
 >
->  nlserver config -setdblogin:Oracle:test6@dbserver
+>  
+nlserver config -setdblogin:Oracle:test6@dbserver
 
