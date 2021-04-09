@@ -6,14 +6,14 @@ description: Meer informatie over de statussen die beschikbaar zijn op het dashb
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
+exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 translation-type: tm+mt
-source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '629'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
-
 
 # Leveringsstatus {#delivery-statuses}
 
@@ -87,7 +87,7 @@ Raadpleeg [deze pagina](../../delivery/using/understanding-delivery-failures.md)
  </tbody> 
 </table>
 
-Raadpleeg [deze sectie](../../delivery/using/about-deliverability.md) voor meer informatie over het optimaliseren van de leverbaarheid van uw Adobe Campaign-e-mails. Raadpleeg de [Handleiding best practices](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) voor de aflevering van Adobe voor een dieper inzicht in de aflevering.
+Raadpleeg [deze sectie](../../delivery/using/about-deliverability.md) voor meer informatie over het optimaliseren van de leverbaarheid van uw Adobe Campaign-e-mails. Raadpleeg de [Handleiding best practices](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl) voor de aflevering van Adobe voor een dieper inzicht in de aflevering.
 
 ## Status {#pending-status} in behandeling
 
@@ -127,7 +127,7 @@ Als uw levering niet wordt verzonden en zijn status **[!UICONTROL Pending]** bli
 
 * De levering kan een affiniteit gebruiken die niet op de verzendende server wordt gevormd.
 
-   In dit geval, controleer de configuratie van het verkeersbeheer (IP affiniteit) en gebruik **[!UICONTROL Managing affinities with IP addresses]** gebied om leveringen aan MTA te verbinden die de affiniteit beheert. Zie [deze sectie](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters) voor meer informatie over affiniteiten.
+   In dit geval, controleer de configuratie van het verkeersbeheer (IP affiniteit) en gebruik **[!UICONTROL Managing affinities with IP addresses]** gebied om leveringen aan MTA te verbinden die de affiniteit beheert. Zie [deze sectie](../../installation/using/configuring-campaign-server.md#delivery-settings) voor meer informatie over affiniteiten.
 
 * Als er te veel campagnes worden uitgevoerd, blijft de status &quot;In behandeling&quot; behouden.
 
