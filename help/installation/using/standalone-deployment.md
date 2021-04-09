@@ -6,14 +6,14 @@ description: Zelfstandige implementatie
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
+exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
 translation-type: tm+mt
-source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 1%
+source-wordcount: '1086'
+ht-degree: 2%
 
 ---
-
 
 # Zelfstandige implementatie{#standalone-deployment}
 
@@ -112,7 +112,7 @@ Voer de volgende stappen uit:
    nlserver config -internalpassword
    ```
 
-   Raadpleeg [Interne id](../../installation/using/campaign-server-configuration.md#internal-identifier) voor meer informatie hierover.
+   Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier) voor meer informatie.
 
 1. Maak de **demo**-instantie met de DNS-maskers voor tracering (in dit geval **tracking.campagne.net**) en toegang tot clientconsoles (in dit geval **console.campagne.net**). Er zijn twee manieren om dit te doen:
 
@@ -120,7 +120,7 @@ Voer de volgende stappen uit:
 
       ![](assets/install_create_new_connexion.png)
 
-      Voor meer op dit, verwijs naar [Creërend een instantie en het programma openen](../../installation/using/creating-an-instance-and-logging-on.md).
+      Raadpleeg [Een instantie maken en aanmelden](../../installation/using/creating-an-instance-and-logging-on.md) voor meer informatie.
 
       of
 
@@ -150,7 +150,7 @@ Voer de volgende stappen uit:
    </serverconf>
    ```
 
-   Raadpleeg [Processen inschakelen](../../installation/using/campaign-server-configuration.md#enabling-processes) voor meer informatie.
+   Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#enabling-processes) voor meer informatie.
 
 1. Bewerk het bestand **serverConf.xml** en geef het leveringsdomein op. Geef vervolgens de IP-adressen (of de host) van de DNS-servers op die door de MTA-module worden gebruikt om DNS-query&#39;s van het MX-type te beantwoorden.
 
@@ -162,7 +162,7 @@ Voer de volgende stappen uit:
    >
    >De **nameServers** parameter wordt slechts gebruikt in Vensters.
 
-   Raadpleeg [Configuratie campagneserver](../../installation/using/campaign-server-configuration.md) voor meer informatie.
+   Raadpleeg [Configuratie campagneserver](../../installation/using/configuring-campaign-server.md) voor meer informatie.
 
 1. Kopieer het installatieprogramma voor de clientconsole (**setup-client-7.XX**, **YYYY.exe** voor v7 of **setup-client-6.XX**, **YYYYY.exe** voor v6.1) naar **/datakit/nl eng/jsp** map. [Meer informatie](../../installation/using/client-console-availability-for-windows.md).
 
@@ -213,7 +213,7 @@ Voer de volgende stappen uit:
 
 1. Start de Adobe Campaign-clientconsole (vanaf de vorige downloadpagina of rechtstreeks gestart op de server voor een Windows-installatie), stel de URL van de serververbinding in op https://console.campaign.net en maak verbinding met de inlognaam **internal**.
 
-   Zie [Een instantie maken en aanmelden](../../installation/using/creating-an-instance-and-logging-on.md) en [Interne id](../../installation/using/campaign-server-configuration.md#internal-identifier).
+   Zie [deze pagina](../../installation/using/creating-an-instance-and-logging-on.md) en [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
    De wizard voor het maken van de database wordt weergegeven wanneer u zich voor het eerst aanmeldt:
 
@@ -244,4 +244,3 @@ Voer de volgende stappen uit:
    * Toegang vanaf: Geef de twee URL&#39;s op voor rapporten, webformulieren en spiegel.
 
       ![](assets/d_ncs_install_web_url.png)
-
