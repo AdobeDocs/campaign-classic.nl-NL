@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
-source-wordcount: '2575'
-ht-degree: 1%
+source-wordcount: '1580'
+ht-degree: 2%
 
 ---
 
@@ -38,9 +38,6 @@ Campaign Classic-configuratiebestanden worden opgeslagen in de map **conf** van 
 * **serverConf.xml**: algemene configuratie voor alle instanties. In dit bestand worden de technische parameters van de Adobe Campaign-server gecombineerd: deze worden door alle instanties gedeeld . Hieronder wordt een beschrijving van een aantal van deze parameters gegeven. De verschillende knooppunten en parameters en vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 * **config-`<instance>`.xml**  (waarbij  **** instantie de naam van de instantie is): specifieke configuratie van de instantie. Als u uw server onder verschillende exemplaren deelt, gelieve de parameters specifiek voor elk geval in hun relevant dossier in te gaan.
 
-Algemene richtlijnen voor serverconfiguratie worden beschreven in [Configuratie campagneserver](../../installation/using/configuring-campaign-server.md).
-
-
 ## Configuratiebereik
 
 Vorm of pas de server van de Campagne afhankelijk van uw behoeften en configuratie aan. U kunt:
@@ -50,12 +47,12 @@ Vorm of pas de server van de Campagne afhankelijk van uw behoeften en configurat
 * [URL-machtigingen configureren](url-permissions.md)
 * [Beveiligingszones](security-zones.md) definiëren
 * [Tomcat-instellingen](configure-tomcat.md) configureren
-* [Leveringsparameters](#delivery-settings) aanpassen
+* [Leveringsparameters](configure-delivery-settings.md) aanpassen
 * [Dynamische paginabeveiliging en -bedekkingen definiëren](#dynamic-page-security-and-relays)
 * De lijst met [Toegestane externe opdrachten beperken](#restricting-authorized-external-commands)
 * [Overbodige tracking](#redundant-tracking) instellen
 * [Hoge beschikbaarheid en workflow-affiniteiten beheren](#high-availability-workflows-and-affinities)
-* Bestandsbeheer configureren - [Meer informatie](#file-and-resmanagement)
+* Bestandsbeheer configureren - [Meer informatie](file-res-management.md)
    * Uploadbestandsindeling beperken
    * Toegang tot openbare middelen toestaan
    * Proxyverbinding configureren
@@ -139,88 +136,6 @@ U kunt de opslagdirectory (**var** directory) van Adobe Campaign-gegevens (logbe
 * Ga in Linux naar het bestand **customer.sh** en geef aan: **exporteer XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
    Raadpleeg [Parameters aanpassen](../../installation/using/installing-packages-with-linux.md#personalizing-parameters) voor meer informatie.
-
-## Leveringsinstellingen configureren {#delivery-settings}
-
-De leveringsparameters moeten worden geconfigureerd in de map **serverConf.xml**.
-
-* **DNS-configuratie**: specificeer het leveringsdomein en de IP adressen (of gastheer) van de DNS servers die worden gebruikt om aan MX-type DNS vragen te antwoorden die door de MTA module van de  **`<dnsconfig>`** vanaf worden gemaakt.
-
-   >[!NOTE]
-   >
-   >De **nameServers** parameter is essentieel voor een installatie in Vensters. Voor een installatie in Linux, moet het leeg worden verlaten.
-
-   ```
-   <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
-   ```
-
-Afhankelijk van uw behoeften en instellingen kunt u ook de volgende configuraties uitvoeren: configureer een [SMTP relais](#smtp-relay), pas het aantal [MTA kindprocessen](#mta-child-processes), [Beheer uitgaand verkeer SMTP](#managing-outbound-smtp-traffic-with-affinities) aan.
-
-### SMTP-relais {#smtp-relay}
-
-De module MTA doet dienst als inheemse agent van de postoverdracht voor uitzending SMTP (haven 25).
-
-Het is echter mogelijk deze te vervangen door een relaisserver als dit voor uw beveiligingsbeleid is vereist. In dat geval, zal de globale productie relais zijn één (op voorwaarde dat de productie van de relaisserver aan Adobe Campaign minder is).
-
-In dit geval, worden deze parameters geplaatst door de server SMTP in **`<relay>`** sectie te vormen. U moet het IP adres (of de gastheer) van de server specificeren SMTP die wordt gebruikt om post en zijn bijbehorende haven (25 door gebrek) over te brengen.
-
-```
-<relay address="192.0.0.3" port="25"/>
-```
-
->[!IMPORTANT]
->
->Deze werkende wijze impliceert ernstige beperkingen op leveringen, aangezien het de productie wegens de intrinsieke prestaties van de relaisserver (latentie, bandbreedte...) kan zeer verminderen. Bovendien zal de capaciteit om synchrone leveringsfouten (die door het analyseren van verkeer SMTP worden ontdekt) te kwalificeren beperkt zijn, en het verzenden zal niet mogelijk zijn als de relaisserver niet beschikbaar is.
-
-### MTA onderliggende processen {#mta-child-processes}
-
-Het is mogelijk om het aantal kindprocessen (maxSpareServers door gebrek 2) te controleren om uitzendingsprestaties volgens de macht van cpu van de servers en de beschikbare netwerkmiddelen te optimaliseren. Deze configuratie moet in de **`<master>`** sectie van configuratie MTA op elke individuele computer worden gemaakt.
-
-```
-<master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
-```
-
-Zie ook [Optimalisatie voor verzenden via e-mail](../../installation/using/email-deliverability.md#email-sending-optimization).
-
-### Beheer uitgaand verkeer SMTP met affiniteiten {#managing-outbound-smtp-traffic-with-affinities}
-
->[!IMPORTANT]
->
->De affiniteitsconfiguratie moet consistent zijn van de ene server naar de andere. Wij adviseren dat u Adobe voor affiniteitsconfiguratie contacteert, aangezien de configuratieveranderingen op alle toepassingsservers zouden moeten worden herhaald die MTA in werking stellen.
-
-U kunt uitgaand verkeer SMTP door affiniteiten met IP adressen verbeteren.
-
-Hiervoor voert u de volgende stappen uit:
-
-1. Voer de affiniteiten in de sectie **`<ipaffinity>`** van het bestand **serverConf.xml** in.
-
-   Een affiniteit kan verschillende namen hebben: om hen te scheiden, gebruik **;** karakter.
-
-   Voorbeeld:
-
-   ```
-    IPAffinity name="mid.Server;WWserver;local.Server">
-             <IP address="XX.XXX.XX.XX" heloHost="myserver.us.campaign.net" publicId="123" excludeDomains="neo.*" weight="5"/
-   ```
-
-   Raadpleeg het bestand **serverConf.xml** om de relevante parameters weer te geven.
-
-1. Als u affiniteitselectie wilt inschakelen in de vervolgkeuzelijsten, moet u de affiniteitsnaam of -namen toevoegen in de **IPAffinity**-opsomming.
-
-   ![](assets/ipaffinity_enum.png)
-
-   >[!NOTE]
-   >
-   >Opsommingen worden beschreven in [dit document](../../platform/using/managing-enumerations.md).
-
-   Vervolgens kunt u de affiniteit selecteren die u wilt gebruiken, zoals hieronder voor typologieën wordt getoond:
-
-   ![](assets/ipaffinity_typology.png)
-
-   >[!NOTE]
-   >
-   >U kunt ook naar [Configuratie leveringsserver](../../installation/using/email-deliverability.md#delivery-server-configuration) verwijzen.
-
 
 
 ## Dynamische paginabeveiliging en -relays {#dynamic-page-security-and-relays}
@@ -359,118 +274,7 @@ De eigenschap **enableIf** is optioneel (standaard leeg) en stelt u in staat de 
 
 Voer de volgende opdracht uit om de hostnaam van de computer op te halen: **hostnaam -s**.
 
-## Bestands- en resourcebeheer{#file-and-resmanagement}
 
-### Bestandsindeling voor uploaden beperken {#limiting-uploadable-files}
-
-Gebruik het **uploadWhiteList** attribuut om de dossiertypes te beperken beschikbaar voor upload op de server van Adobe Campaign.
-
-Dit kenmerk is beschikbaar in het **dataStore**-element van het **serverConf.xml**-bestand. Alle parameters die beschikbaar zijn in **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
-
-De standaardwaarde van dit kenmerk is **.+** en laat u om het even welk dossiertype uploaden.
-
-Als u de mogelijke indelingen wilt beperken, vervangt u de kenmerkwaarde door een geldige reguliere Java-expressie. U kunt verschillende waarden invoeren door deze met een komma te scheiden.
-
-Bijvoorbeeld: **uploadWhiteList=&quot;.*.png,.Met *.jpg&quot;** kunt u PNG- en JPG-indelingen uploaden naar de server. Er worden geen andere indelingen geaccepteerd.
-
->[!NOTE]
->
->In Internet Explorer moet het volledige bestandspad worden gecontroleerd door de reguliere expressie.
-
-U kunt belangrijke dossiers ook verhinderen worden geupload door de Server van het Web te vormen. [Meer informatie](web-server-configuration.md)
-
-### Configuratie proxyverbinding {#proxy-connection-configuration}
-
-U kunt de Campagneserver met een extern systeem door een volmacht verbinden, gebruikend een **de werkschemaactiviteit van de Overdracht van het Dossier** bijvoorbeeld. Hiervoor moet u de sectie **proxyConfig** van het bestand **serverConf.xml** via een specifieke opdracht configureren. Alle parameters die beschikbaar zijn in **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
-
-De volgende proxyverbindingen zijn mogelijk: HTTP, HTTPS, FTP, SFTP. Houd er rekening mee dat de HTTP- en HTTPS-protocolparameters **niet meer beschikbaar zijn** vanaf de campagneversie 20.2. Deze parameters worden nog steeds hieronder vermeld, aangezien ze in eerdere gebouwen beschikbaar blijven - waaronder 9032.
-
->[!CAUTION]
->
->Alleen de standaardverificatiemodus wordt ondersteund. NTLM-verificatie wordt niet ondersteund.
->
->SOCKS-proxy&#39;s worden niet ondersteund.
-
-
-U kunt de volgende opdracht gebruiken:
-
-```
-nlserver config -setproxy:[protocol]/[serverIP]:[port]/[login][:‘https’|'http’]
-```
-
-protocolparameters zijn &quot;http&quot;, &quot;https&quot; of &quot;ftp&quot;.
-
-Als u FTP instelt op dezelfde poort als HTTP/HTTPS-verkeer, kunt u het volgende gebruiken:
-
-```
-nlserver config -setproxy:http/198.51.100.0:8080/user
-```
-
-De opties &quot;http&quot; en &quot;https&quot; worden alleen gebruikt wanneer de protocolparameter &quot;ftp&quot; is en geven aan of de tunnelmethode op de opgegeven poort via HTTPS of via HTTP wordt uitgevoerd.
-
-Als u verschillende poorten gebruikt voor FTP/SFTP- en HTTP/HTTPS-verkeer via proxyserver, moet u de parameter &#39;ftp&#39;-protocol instellen.
-
-
-Bijvoorbeeld:
-
-```
-nlserver config -setproxy:ftp/198.51.100.0:8080/user:’http’
-```
-
-Voer vervolgens het wachtwoord in.
-
-HTTP-verbindingen worden gedefinieerd in de parameter proxyHTTP:
-
-```
-<proxyConfig enabled=“1” override=“localhost*” useSingleProxy=“0”>
-<proxyHTTP address=“198.51.100.0" login=“user” password=“*******” port=“8080”/>
-</proxyConfig>
-```
-
-HTTPS-verbindingen worden gedefinieerd in de parameter proxyHTTPS:
-
-```
-<proxyConfig enabled=“1" override=“localhost*” useSingleProxy=“0">
-<proxyHTTPS address=“198.51.100.0” login=“user” password=“******” port=“8080"/>
-</proxyConfig>
-```
-
-FTP-/FTPS-verbindingen worden gedefinieerd in de proxyFTP-parameter:
-
-```
-<proxyConfig enabled=“1" override=“localhost*” useSingleProxy=“0">
-<proxyFTP address=“198.51.100.0” login=“user” password=“******” port=“5555" https=”true”/>
-</proxyConfig>
-```
-
-Als u dezelfde proxy voor verschillende verbindingstypen gebruikt, wordt alleen proxyHTTP gedefinieerd met useSingleProxy ingesteld op &quot;1&quot; of &quot;true&quot;.
-
-Als u interne verbindingen hebt die door de volmacht zouden moeten gaan, voeg hen in de opheffingsparameter toe.
-
-Als u de proxyverbinding tijdelijk wilt uitschakelen, stelt u de ingeschakelde parameter in op &quot;false&quot; of &quot;0&quot;.
-
-### Overheidsbronnen beheren {#managing-public-resources}
-
-Om voor het publiek toegankelijk te zijn, moeten de beelden die in e-mail en openbare middelen verbonden aan campagnes worden gebruikt op een extern toegankelijke server aanwezig zijn. Ze kunnen vervolgens beschikbaar zijn voor externe ontvangers of operatoren. [Meer informatie](../../installation/using/deploying-an-instance.md#managing-public-resources).
-
-Openbare bronnen worden opgeslagen in de map **/var/res/instance** van de installatiemap van Adobe Campaign.
-
-De overeenkomende URL is: **http://server/res/instance** waarbij **instance** de naam van de volgende instantie is.
-
-U kunt een andere folder specificeren door een knoop aan **conf-`<instance>`.xml** dossier toe te voegen om opslag op de server te vormen. Dit betekent dat de volgende regels moeten worden toegevoegd:
-
-```
-<serverconf>
-  <shared>
-    <dataStore hosts="media*" lang="fra">
-      <virtualDir name="images" path="/var/www/images"/>
-     <virtualDir name="publicFileRes" path="$(XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)/"/>
-    </dataStore>
-  </shared>
-</serverconf>
-```
-
-In dit geval, zou nieuwe URL voor de openbare middelen die in het hogere gedeelte van het venster van de plaatsingstovenaar worden gegeven aan deze omslag moeten richten.
 
 ## Workflows en affiniteiten voor hoge beschikbaarheid {#high-availability-workflows-and-affinities}
 
