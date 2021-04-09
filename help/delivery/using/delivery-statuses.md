@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 4%
@@ -127,7 +127,7 @@ Als uw levering niet wordt verzonden en zijn status **[!UICONTROL Pending]** bli
 
 * De levering kan een affiniteit gebruiken die niet op de verzendende server wordt gevormd.
 
-   In dit geval, controleer de configuratie van het verkeersbeheer (IP affiniteit) en gebruik **[!UICONTROL Managing affinities with IP addresses]** gebied om leveringen aan MTA te verbinden die de affiniteit beheert. Zie [deze sectie](../../installation/using/configuring-campaign-server.md#delivery-settings) voor meer informatie over affiniteiten.
+   In dit geval, controleer de configuratie van het verkeersbeheer (IP affiniteit) en gebruik **[!UICONTROL Managing affinities with IP addresses]** gebied om leveringen aan MTA te verbinden die de affiniteit beheert. Zie [deze sectie](../../installation/using/configure-delivery-settings.md) voor meer informatie over affiniteiten.
 
 * Als er te veel campagnes worden uitgevoerd, blijft de status &quot;In behandeling&quot; behouden.
 
