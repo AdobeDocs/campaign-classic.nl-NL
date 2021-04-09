@@ -8,7 +8,7 @@ role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
 translation-type: tm+mt
-source-git-commit: 65662a49aefdd6b5f85b39677908696f093779e8
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '2830'
 ht-degree: 88%
@@ -199,7 +199,7 @@ Kom meer te weten in de [Campaign-compatibiliteitsmatrix](https://helpx.adobe.co
 
 * Certificaten voor mobiele iOS-applicaties met de iOS HTTP2-connector worden nu gevalideerd voordat pushmeldingen worden verzonden, zodat leveringen niet mislukken vanwege verlopen certificaten.
 
-* Het beheer van HTTP-proxyverbindingen is verbeterd. [Meer informatie](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
+* Het beheer van HTTP-proxyverbindingen is verbeterd. [Meer informatie](../../installation/using/file-res-management.md).
 
 * Nieuwe optie in workflowactiviteiten **[!UICONTROL Javascript Code]** en **[!UICONTROL Advanced Javascript Code]** om uitvoering na een bepaalde limiet te stoppen. Standaardwaarde is 1 uur. [Meer informatie](../../workflow/using/sql-code-and-javascript-code.md#javascript-code).
 
