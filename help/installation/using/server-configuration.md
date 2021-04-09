@@ -1,25 +1,25 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Serverconfiguratie
-description: Meer informatie over best practices voor serverconfiguratie.
+title: Serverbeveiligingsconfiguratie
+description: Meer informatie over best practices voor serverconfiguratie
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
 translation-type: tm+mt
-source-git-commit: e31d386af4def80cdf258457fc74205b1ca823b3
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 2%
+source-wordcount: '625'
+ht-degree: 3%
 
 ---
 
-# Serverconfiguratie {#server-configuration}
+# Beveiligingsinstellingen van server {#server-configuration}
 
 ## Beveiliging bestandsupload
 
-Vraag de operationele gebruikers welk type bestanden zij via de client/webinterface naar de server uploaden. Ter herinnering, bedrijfsbehoeften kunnen zijn:
+Controleer met operationele gebruikers welk type bestanden zij naar de server uploaden met de Campagne Client Console of de webinterface. Ter herinnering, bedrijfsbehoeften kunnen zijn:
 
 * afbeeldingen (jpg, gif, png, ...)
 * content (zip, html, css, ...)
