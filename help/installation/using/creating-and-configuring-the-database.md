@@ -6,14 +6,14 @@ description: De database maken en configureren
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
+exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 1%
 
 ---
-
 
 # De database maken en configureren{#creating-and-configuring-the-database}
 
@@ -28,7 +28,7 @@ De configuratiestappen worden hieronder beschreven.
 >
 >Namen van databases, gebruikers en schema&#39;s mogen niet beginnen met een getal of speciale tekens bevatten.
 >
->Alleen de **internal**-id kan deze bewerkingen uitvoeren. Raadpleeg [Interne id](../../installation/using/campaign-server-configuration.md#internal-identifier) voor meer informatie hierover.
+>Alleen de **internal**-id kan deze bewerkingen uitvoeren. Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier) voor meer informatie.
 
 ## Zaak 1: Database {#case-1--creating-recycling-a-database} maken/recyclen
 
@@ -57,7 +57,7 @@ Identificeer de server en kies het type van verrichting om uit te voeren. In dit
 
 Afhankelijk van de geselecteerde database-engine kan de identificatie-informatie van de server variëren.
 
-* Voor een **Oracle** motor, bevolk **TNS naam** voor de toepassingsserver wordt bepaald die.
+* Voor een **Oracle** motor, bevolk **TNS naam** die voor de toepassingsserver wordt bepaald.
 * Voor een **PostgreSQL** of **DB2** motor, moet u de DNS naam (of IP adres) specificeren die op de toepassingsserver wordt bepaald om tot de gegevensbestandserver toegang te hebben.
 * Voor een **Microsoft SQL Server** motor, moet u bepalen: de DNS-naam (of het IP-adres) die op de toepassingsserver is gedefinieerd voor toegang tot de databaseserver: **DNS** of **DNS`\<instance>`** (instantiemodus),
 
@@ -75,7 +75,7 @@ Definieer in het venster **[!UICONTROL Server access]** de toegang tot de databa
 
 Om dit te doen, ga de naam en het wachtwoord van **het systeemrekening van het Beleid** in die toestemming heeft om tot de gegevensbestanden toegang te hebben, d.w.z.:
 
-* **** systeem voor een Oracle-database;
+* **** systeem voor een gegevensbank van Oracles;
 * **** opslaan voor een Microsoft SQL Server-database,
 * **** postgressiviteit voor een PostgreSQL-database,
 * **db2inst1**  voor een DB2-database.
@@ -101,9 +101,9 @@ U moet de volgende instellingen definiëren:
 
    >[!NOTE]
    >
-   >Met een Oracle-database kunt u met de optie **[!UICONTROL Unicode storage]** **NCLOB** en **NVARCHAR** tekstvelden gebruiken.
+   >Met een gegevensbestand van het Oracle, laat de **[!UICONTROL Unicode storage]** optie u **NCLOB** en **NVARCHAR** typegebieden gebruiken.
    > 
-   >Als u deze optie niet selecteert, moet de tekenset (charset) van de Oracle-database gegevensopslag in alle talen inschakelen (AL32UTF8 wordt aanbevolen).
+   >Als u deze optie niet selecteert, moet de tekenset (charset) van de database van het Oracle gegevensopslag in alle talen inschakelen (AL32UTF8 wordt aanbevolen).
 
 * Kies een tijdzone voor de database en geef op of u deze in UTC wilt plaatsen (indien beschikbaar).
 
@@ -123,7 +123,7 @@ In het venster **[!UICONTROL Creation steps]** kunt u het SQL-script weergeven e
 
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
-* Voor een Oracle-, Microsoft SQL Server- of PostSQL-database kan de beheerder ook de **opslagparameters** definiëren die moeten worden gebruikt bij het maken van databaseobjecten.
+* Voor een Oracle, de Server van Microsoft SQL of het gegevensbestand PostgreSQL, kan de beheerder **opslagparameters** ook bepalen die moeten worden gebruikt wanneer het creëren van gegevensbestandvoorwerpen.
 
    Deze parameters krijgen de exacte namen van de tabelruimten (waarschuwing: hoofdlettergevoelig). Ze worden respectievelijk opgeslagen in het **[!UICONTROL Administration > Platform > Options]** knooppunt in de volgende opties (zie [deze sectie](../../installation/using/configuring-campaign-options.md#database)):
 
@@ -132,7 +132,7 @@ In het venster **[!UICONTROL Creation steps]** kunt u het SQL-script weergeven e
    * **WdbcOptions_TableSpaceWork**: werktabellen zonder schema
    * **WdbcOptions_TableSpaceWorkIndex**: index van werktabellen zonder schema
 
-* Voor een Oracle-database moet de Adobe Campaign-gebruiker toegang hebben tot de Oracle-bibliotheken, meestal als lid van de **oinstall**-groep.
+* Voor een gegevensbestand van het Oracle, moet de gebruiker van Adobe Campaign toegang tot de bibliotheken van het Oracle hebben, typisch als lid van **oinstall** groep.
 * Met de optie **[!UICONTROL Set or change the administrator password]** kunt u het wachtwoord invoeren dat is gekoppeld aan de Adobe Campaign-operator met beheerdersrechten.
 
    We raden u aan om voor beveiligingsdoeleinden een Adobe Campaign-beheerderswachtwoord te definiëren.
@@ -159,7 +159,7 @@ Voorbeeld van een configuratie van de Server van Microsoft SQL op base61 gegeven
 
 Het gegevensbestand, evenals de gebruiker, moet door de gegevensbestandbeheerder en de correct gevormde toegangsrechten zijn gecreeerd.
 
-Voor een Oracle-database zijn de minimaal vereiste rechten bijvoorbeeld: GRANT CONNECT, RESOURCE en UNLIMITED TABLESPACE.
+Voor een database van Oracles zijn de minimaal vereiste rechten bijvoorbeeld: GRANT CONNECT, RESOURCE en UNLIMITED TABLESPACE.
 
 Om een bestaand gegevensbestand te gebruiken, zijn de configuratiestappen als volgt:
 
@@ -181,7 +181,7 @@ Identificeer de server en kies het type van verrichting u wilt uitvoeren. In dit
 
 Afhankelijk van de geselecteerde database-engine kan de identificatie-informatie van de server variëren.
 
-* Voor een **Oracle** motor, bevolk **TNS naam** voor de toepassingsserver wordt bepaald die.
+* Voor een **Oracle** motor, bevolk **TNS naam** die voor de toepassingsserver wordt bepaald.
 * Voor een **PostgreSQL** of **DB2** motor, moet u de DNS naam (of IP adres) specificeren die op de toepassingsserver wordt bepaald om tot de gegevensbestandserver toegang te hebben.
 * Voor een **Microsoft SQL Server** motor, moet u bepalen:
 
@@ -204,7 +204,7 @@ U moet de volgende instellingen definiëren:
    >[!NOTE]
    >
    >Zorg ervoor dat zowel de naam van het schema als de gebruikersnaam overeenkomen. De geadviseerde manier om gegevensbestand te creëren is door cliënt van de campagneconsole.
-   >Voor een Oracle-database hoeft u de accountnaam niet in te voeren.
+   >Voor een database van een Oracle hoeft u de accountnaam niet in te voeren.
 
 * Geef aan of de database Unicode moet zijn of niet.
 
@@ -223,7 +223,7 @@ In het venster **[!UICONTROL Creation steps]** kunt u het SQL-script weergeven e
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
 * Voor Oracle-, Microsoft SQL Server- of PostSQL-databases kan de beheerder de **opslagparameters** definiëren die moeten worden gebruikt bij het maken van databaseobjecten.
-* Voor een Oracle-database moet de Adobe Campaign-gebruiker toegang hebben tot de Oracle-bibliotheken, meestal als lid van de **oinstall**-groep.
+* Voor een gegevensbestand van het Oracle, moet de gebruiker van Adobe Campaign toegang tot de bibliotheken van het Oracle hebben, typisch als lid van **oinstall** groep.
 * Met de optie **[!UICONTROL Set or change the administrator password]** kunt u het wachtwoord invoeren dat is gekoppeld aan de Adobe Campaign-operator met beheerdersrechten.
 
    We raden u aan om voor beveiligingsdoeleinden een Adobe Campaign-beheerderswachtwoord te definiëren.
@@ -245,4 +245,3 @@ Voorbeeld van een configuratie van de Server van Microsoft SQL op base61 gegeven
 ```
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
 ```
-
