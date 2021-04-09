@@ -6,14 +6,14 @@ description: Pakketten installeren met Linux
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
+exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1206'
 ht-degree: 1%
 
 ---
-
 
 # Pakketten installeren met Linux{#installing-packages-with-linux}
 
@@ -56,7 +56,7 @@ Voer de volgende stappen uit om Adobe Campaign op een RPM-besturingssysteem (RHE
    yum install nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
-   Het rpm-bestand is afhankelijk van pakketten die u kunt vinden op CentOS/Red Hat-distributies. Als u sommige van deze afhankelijkheden niet wilt gebruiken (bijvoorbeeld als u Oracle JDK wilt gebruiken in plaats van OpenJDK), moet u mogelijk de optie &quot;nodeps&quot; van rpm gebruiken:
+   Het rpm-bestand is afhankelijk van pakketten die u kunt vinden op CentOS/Red Hat-distributies. Als u sommige van deze gebiedsdelen niet wilt gebruiken (bijvoorbeeld, als u Oracle JDK in plaats van OpenJDK wilt gebruiken), kunt u de &quot;nodeps&quot;optie van rpm moeten gebruiken:
 
    ```
    rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
@@ -182,7 +182,7 @@ Bepaalde combinaties vereisen wijzigingen in de omgeving die wordt gebruikt voor
 
 Bewerk zo nodig het bestand **customer.sh** met de opdracht **vi customer.sh** en pas de configuratie aan of voeg ontbrekende regels toe:
 
-* Voor de Oracle-client:
+* Voor de client Oracle:
 
    ```
    export ORACLE_HOME=/usr/local/instantclient_10_2
@@ -190,7 +190,7 @@ Bewerk zo nodig het bestand **customer.sh** met de opdracht **vi customer.sh** e
    export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH 
    ```
 
-   De inhoud van de omgevingsvariabele ORACLE_HOME komt overeen met de installatiemap van Oracle.
+   De inhoud van de omgevingsvariabele ORACLE_HOME komt overeen met de installatiemap van het Oracle.
 
    De inhoud van de TNS_ADMIN-variabele moet overeenkomen met de locatie van het **tnsnames.ora**-bestand.
 
@@ -254,7 +254,7 @@ systemctl start nlserver
 
 ### Oracle-client in Linux {#oracle-client-in-linux}
 
-Wanneer u Oracle met Adobe Campaign gebruikt, moet u de Oracle-clientlagen in Linux configureren.
+Als u Oracle gebruikt met Adobe Campaign, moet u de clientlagen van het Oracle configureren in Linux.
 
 * De volledige client gebruiken
 * TNS-definitie
@@ -274,7 +274,7 @@ Wanneer u Oracle met Adobe Campaign gebruikt, moet u de Oracle-clientlagen in Li
 
 * Configuratie voor Adobe Campaign
 
-   Als u de installatie van de Oracle-client voor Adobe Campaign wilt voltooien, moet u een symbolische koppeling maken voor het bestand **.so** dat door Adobe Campaign wordt gebruikt.
+   Als u de installatie van de client Oracle voor Adobe Campaign wilt voltooien, moet u een symbolische koppeling maken voor het bestand **.so** dat door Adobe Campaign wordt gebruikt.
 
    Hiervoor gebruikt u de volgende opdrachten:
 
@@ -283,7 +283,7 @@ Wanneer u Oracle met Adobe Campaign gebruikt, moet u de Oracle-clientlagen in Li
    ln -s libclntsh.so.10.1 libclntsh.so
    ```
 
-Als u een probleem tegenkomt, moet u ervoor zorgen dat de pakketten in de [Oracle-installatiedocumentatie](https://www.oracle.com/pls/db112/portal.portal_db?selected=11) correct zijn geïnstalleerd.
+Als u een probleem tegenkomt, zorg ervoor de pakketten die in [de installatiedocumentatie van het Oracle ](https://www.oracle.com/pls/db112/portal.portal_db?selected=11) worden vermeld correct geïnstalleerd.
 
 ## Installatiecontroles {#installation-checks}
 
@@ -359,4 +359,4 @@ De volgende informatie wordt dan getoond:
 
 De Adobe Campaign-server definieert een technische aanmelding met de naam **internal** die alle rechten heeft op alle instanties. Vlak na de installatie heeft de aanmelding geen wachtwoord. Het is verplicht om er een te definiëren.
 
-Zie sectie [Interne id](../../installation/using/campaign-server-configuration.md#internal-identifier).
+Meer informatie vindt u in [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier).
