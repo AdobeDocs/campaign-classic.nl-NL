@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: deployment-types-
 exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 3%
@@ -131,7 +131,7 @@ De stappen zijn als volgt:
       >
       >De **nameServers** parameter wordt slechts gebruikt in Vensters.
 
-      Raadpleeg [Leveringsinstellingen](configuring-campaign-server.md#delivery-settings) voor meer informatie hierover.
+      Raadpleeg [Leveringsinstellingen](configure-delivery-settings.md) voor meer informatie hierover.
 
    * de overtollige het volgen servers in de omleidingsparameters:
 
@@ -140,7 +140,7 @@ De stappen zijn als volgt:
       <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
       ```
 
-      Raadpleeg [Redundant tracking](../../installation/using/configuring-campaign-server.md#redundant-tracking) voor meer informatie hierover.
+      Raadpleeg [Redundant tracking](configuring-campaign-server.md#redundant-tracking) voor meer informatie hierover.
 
 1. Start de website en test de omleiding via de URL: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
 
