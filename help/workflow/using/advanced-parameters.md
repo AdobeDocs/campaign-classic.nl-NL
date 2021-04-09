@@ -6,14 +6,14 @@ description: Geavanceerde parameters
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
+exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '488'
 ht-degree: 2%
 
 ---
-
 
 # Geavanceerde parameters{#advanced-parameters}
 
@@ -49,7 +49,10 @@ Deze opties worden over het algemeen geselecteerd in het winkelwagentje door met
 
 ## Affiniteit {#affinity}
 
-In dit veld kunt u de uitvoering van een activiteit op een specifieke computer forceren. Raadpleeg voor meer informatie: [Propensiteit beheren](../../workflow/using/managing-propensity.md).
+U kunt ervoor kiezen de uitvoering van een workflow of workflowactiviteit op een specifieke computer af te dwingen. Hiervoor moet u een of meer eigenschappen definiëren op het niveau van de workflow of de desbetreffende activiteit.
+
+De configuratie van de hoge beschikbaarheidswerkstroom wordt gedetailleerd in dit [sectie](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
+
 
 ## Max. uitvoeringstermijn {#max--execution-period}
 
