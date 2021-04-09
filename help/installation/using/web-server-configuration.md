@@ -6,14 +6,14 @@ description: Leer meer over Web-server configuratie belangrijkste beste praktijk
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
+exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
-
 
 # Configuratie webserver {#web-server-configuration}
 
@@ -58,7 +58,7 @@ Hieronder vindt u een aantal van de belangrijkste aanbevolen werkwijzen voor Apa
    * ServerSignature **Off**
    * ServerTokens **Prod**
 
-   **Voor IIS**  (zie de  [documentatie](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)), voer de volgende configuratie uit:
+   **Voor IIS**, voer de volgende configuratie uit:
 
    * Installeer **URLScan**.
    * Bewerk het bestand **Urlscan.ini** om **RemoveServerHeader=1** te hebben
@@ -66,7 +66,7 @@ Hieronder vindt u een aantal van de belangrijkste aanbevolen werkwijzen voor Apa
 
 * Beperk de querygrootte om te voorkomen dat belangrijke bestanden worden geüpload:
 
-   **Voor Apache**  (zie de  [documentatie](http://httpd.apache.org/docs/2.2/mod/core.html#limitrequestbody)), voeg de  **** LimitRequestBodyDirective (grootte in bytes) in / directory toe.
+   **Voeg bij Apache** de  **** LimitRequestBodyDirective (grootte in bytes) toe in de map /.
 
    ```
    <Directory />
