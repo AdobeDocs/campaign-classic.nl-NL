@@ -6,14 +6,14 @@ description: In deze sectie worden de installatie en configuratie van een medio-
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
+exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '999'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # Midsourcingserver{#mid-sourcing-server}
 
@@ -61,7 +61,7 @@ U moet echter het volgende toepassen:
    </serverconf>
    ```
 
-   Raadpleeg [Processen inschakelen](../../installation/using/campaign-server-configuration.md#enabling-processes) voor meer informatie.
+   Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#enabling-processes) voor meer informatie.
 
 * Stappen **6**, **9** en **10** zijn niet nodig.
 * Tijdens stappen **12** en **13**, moet u op de haven 8080 in verbindingsURL wijzen (aangezien de console direct met Tomcat, niet via de server van het Web communiceert). De URL wordt [http://console.campaign.net:8080](http://console.campaign.net). Selecteer tijdens stap **13** zowel het **[!UICONTROL Issue towards Mid-sourcing]**-pakket als de te installeren pakketten.
@@ -180,4 +180,3 @@ U moet de server stoppen en dan opnieuw beginnen om met de wijziging rekening te
 Als de levering van berichten door verscheidene midsourcingservers moet worden beheerd, selecteer de optie **[!UICONTROL Routing with alternating mid-sourcing accounts]** en specificeer de verschillende servers.
 
 ![](assets/s_ncs_install_midsourcing_tracking04.png)
-
