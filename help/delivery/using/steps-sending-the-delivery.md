@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 5%
@@ -41,7 +41,7 @@ Alvorens de levering te verzenden, kunt u de verzendende parameters in de leveri
 
    >[!NOTE]
    >
-   >Het wordt niet aangeraden deze optie te gebruiken wanneer u medio-sourcing gebruikt om mta niet aan te roepen. Voor meer bij het vormen van een server SMTP, verwijs [naar deze sectie](../../installation/using/configuring-campaign-server.md#delivery-settings).
+   >Het wordt niet aangeraden deze optie te gebruiken wanneer u medio-sourcing gebruikt om mta niet aan te roepen. Voor meer bij het vormen van een server SMTP, verwijs [naar deze sectie](../../installation/using/configure-delivery-settings.md).
 
 * **[!UICONTROL Email BCC]**: Met deze optie kunt u e-mailberichten op een extern systeem opslaan via BCC door eenvoudig een BCC-e-mailadres toe te voegen aan uw berichtdoel. Raadpleeg [deze sectie](../../delivery/using/sending-messages.md#archiving-emails) voor meer informatie.
 
