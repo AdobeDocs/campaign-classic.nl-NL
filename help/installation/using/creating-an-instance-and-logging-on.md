@@ -6,14 +6,14 @@ description: Een instantie maken en aanmelden
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
+exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '589'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
-
 
 # Een instantie maken en aanmelden{#creating-an-instance-and-logging-on}
 
@@ -21,11 +21,11 @@ Pas het volgende proces toe om een nieuwe instantie en een Adobe Campaign-databa
 
 1. Maak de verbinding.
 1. Meld u aan om de verwante instantie te maken.
-1. Maak en configureer de database.
+1. De database maken en configureren.
 
 >[!NOTE]
 >
->Alleen de **internal**-id kan deze bewerkingen uitvoeren. Raadpleeg [Interne id](../../installation/using/campaign-server-configuration.md#internal-identifier) voor meer informatie hierover.
+>Alleen de **internal**-id kan deze bewerkingen uitvoeren. Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier) voor meer informatie.
 
 Wanneer de Adobe Campaign-console wordt gestart, opent u een aanmeldingspagina.
 
@@ -82,4 +82,3 @@ Ga als volgt te werk om een nieuwe instantie te maken:
    >[!NOTE]
    >
    >De instantie kan vanaf de opdrachtregel worden gemaakt. Voor meer op dit, verwijs naar [De lijnen van het Bevel](../../installation/using/command-lines.md).
-
