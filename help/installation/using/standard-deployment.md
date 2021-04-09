@@ -6,14 +6,14 @@ description: Standaardimplementatie
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
+exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
-
 
 # Standaardimplementatie{#standard-deployment}
 
@@ -107,7 +107,7 @@ De stappen zijn als volgt:
 
 1. Wijzig **internal** in dezelfde waarde als de toepassingsserver.
 
-   Raadpleeg [Interne id](../../installation/using/campaign-server-configuration.md#internal-identifier) voor meer informatie hierover.
+   Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier) voor meer informatie.
 
 1. Koppel de database aan de instantie:
 
@@ -117,7 +117,7 @@ De stappen zijn als volgt:
 
 1. Schakel in de bestanden **config-default.xml** en **config-demo.xml** de modules **web**, **trackinglogd** en **mta** in.
 
-   Raadpleeg [Processen inschakelen](../../installation/using/campaign-server-configuration.md#enabling-processes) voor meer informatie.
+   Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#enabling-processes) voor meer informatie.
 
 1. Bewerk het bestand **serverConf.xml** en vul:
 
@@ -131,7 +131,7 @@ De stappen zijn als volgt:
       >
       >De **nameServers** parameter wordt slechts gebruikt in Vensters.
 
-      Raadpleeg [Leveringsinstellingen](../../installation/using/campaign-server-configuration.md#delivery-settings) voor meer informatie hierover.
+      Raadpleeg [Leveringsinstellingen](configuring-campaign-server.md#delivery-settings) voor meer informatie hierover.
 
    * de overtollige het volgen servers in de omleidingsparameters:
 
@@ -177,4 +177,3 @@ De stappen zijn als volgt:
    >[!NOTE]
    >
    >We gebruiken de bestaande instantie van de twee eerder gemaakte trackingservers en gebruiken de **internal**-aanmelding.
-
