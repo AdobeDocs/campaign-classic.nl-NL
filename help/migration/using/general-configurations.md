@@ -6,14 +6,14 @@ description: Algemene configuraties
 audience: migration
 content-type: reference
 topic-tags: configuration
+exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2786'
 ht-degree: 0%
 
 ---
-
 
 # Algemene configuraties{#general-configurations}
 
@@ -104,7 +104,7 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->Het **interne** wachtwoord moet voor alle volgende servers identiek zijn. Zie [deze sectie](../../installation/using/campaign-server-configuration.md#internal-identifier) en [deze sectie](../../platform/using/access-management.md) voor meer informatie.
+>Het **interne** wachtwoord moet voor alle volgende servers identiek zijn. Zie [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier) en [deze sectie](../../platform/using/access-management.md) voor meer informatie.
 
 ### Nieuwe functies in v7 {#new-features-in-v7}
 
@@ -473,7 +473,7 @@ Ga als volgt te werk als u het conflict handmatig wilt oplossen:
 
 ## Tomcat {#tomcat}
 
-De geïntegreerde Tomcat-server in Adobe Campaign v7 is van versie veranderd (Tomcat 7). De installatiemap (tomcat-6) is daarom ook gewijzigd (tomcat 7). Controleer na de upgrade of de paden wel zijn gekoppeld aan de bijgewerkte map (in het bestand **[!UICONTROL serverConf.xml]**):
+De geïntegreerde Tomcat-server in Adobe Campaign v7 is van versie veranderd. De installatiemap (tomcat-6) is daarom ook gewijzigd (tomcat 7). Controleer na de upgrade of de paden wel zijn gekoppeld aan de bijgewerkte map (in het bestand **[!UICONTROL serverConf.xml]**):
 
 ```
 $(XTK_INSTALL_DIR)/tomcat-8/bin/bootstrap.jar 
