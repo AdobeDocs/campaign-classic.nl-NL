@@ -6,14 +6,14 @@ description: Integratie in een webserver voor Windows
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
+exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 2%
 
 ---
-
 
 # Integratie in een webserver voor Windows{#integration-into-a-web-server-for-windows}
 
@@ -23,7 +23,7 @@ U kunt deze geïntegreerde Tomcat-server gebruiken om HTTP-aanvragen te bedienen
 
 In dit geval:
 
-* de standaard luisterpoort is 8080. Om het te veranderen, verwijs naar [het Vormen Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat).
+* de standaard luisterpoort is 8080. Als u deze wilt wijzigen, raadpleegt u [deze sectie](../../installation/using/configure-tomcat.md).
 * De clientconsoles maken vervolgens verbinding met een URL zoals [https:// `<computer>`:8080](https://myserver.adobe.com:8080).
 
 Nochtans, voor veiligheid en beleidsredenen, adviseren wij gebruikend een specifieke server van het Web als belangrijkste ingangspunt voor het verkeer van HTTP wanneer de computer die Adobe Campaign in werking stelt op Internet wordt blootgesteld en u wenst om toegang tot de console buiten uw netwerk te openen.
@@ -178,4 +178,3 @@ Pas de volgende configuratie toe om dit te verhelpen en de fout correct weer te 
 1. Selecteer de waarde **PassThrough** op de regel **existingResponse**.
 
 ![](assets/ins_iis_httperrors.png)
-
