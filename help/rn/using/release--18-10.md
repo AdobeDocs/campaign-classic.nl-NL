@@ -6,14 +6,14 @@ description: Opmerkingen bij de release voor campagne 18.10
 feature: Overzicht
 role: Business Practitioner
 level: Beginner
+exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2372'
 ht-degree: 7%
 
 ---
-
 
 # Release 18.10{#release-18-10}
 
@@ -58,7 +58,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Er is al op gewezen dat dit een bouwwerk is. [upgrade naar de nieuwste build](../../production/using/build-upgrade.md) of neem contact op met [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Er is al op gewezen dat dit een bouwwerk is. [upgrade naar de nieuwste build](../../production/using/build-upgrade.md) of neem contact op met [Adobe Customer Care](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Verbeteringen**
 
@@ -148,7 +148,7 @@ ht-degree: 7%
 
 * Campaign Classic API’s zijn nu beschikbaar op een [speciale pagina](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html). Als u het bestand jsapi.chm gebruikte, moet u nu naar de nieuwe onlineversie verwijzen.
 * PostgreSQL 10, Debian 9 en Teradata 16.20 worden nu ondersteund. Raadpleeg de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html).
-* Wanneer u een SFTP-verbinding maakt, kunt u nu proxyverificatie gebruiken. Raadpleeg de [gedetailleerde documentatie](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868) voor meer informatie.
+* Wanneer u een SFTP-verbinding maakt, kunt u nu proxyverificatie gebruiken. Raadpleeg de [gedetailleerde documentatie](../../installation/using/file-res-management.md) (NEO-9868) voor meer informatie.
 * De **De berekeningsformule van de Datum** optie is nu beschikbaar in de leveringseigenschappen wanneer het creëren van één enkele levering gebruikend het direct-mailleveringsmalplaatje. (NEO-9792)
 * Het beheer van domeinnamen is verbeterd voor het bijhouden van cookies en webtoepassingen. Zie de sectie &#39;Technische ontwikkelingen&#39; hieronder voor meer informatie.
 * De import van gedeelde Adobe Marketing Cloud-middelen op een bezorgings- of landingspagina is verbeterd op het gebied van beveiliging en prestaties.
@@ -240,4 +240,3 @@ Deze indexveranderingen kunnen tot een toename van de tijd leiden die wordt vere
 * Oplossing voor een fout in het Oracle die optrad wanneer een nieuwe leveringscompositie werd opgeslagen na het selecteren van een element van een specifiek schema **gebaseerd op een SQL-weergave**. (NEO-11682)
 * Probleem verholpen waarbij bestanden met fout positieven werden gegenereerd die een ZIP-bestand met een CSV-bestand verwerkten via een bestandsactiviteit voor laden met de optie Decompressie.
 * xtkjoblog wordt nu gezuiverd door de opschoonfunctie.
-
