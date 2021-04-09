@@ -6,14 +6,14 @@ description: Zakelijke implementatie
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
+exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
 translation-type: tm+mt
-source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '1221'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
-
 
 # Zakelijke implementatie{#enterprise-deployment}
 
@@ -113,7 +113,7 @@ De stappen voor het installeren van de eerste server zijn:
    nlserver config -internalpassword
    ```
 
-   Raadpleeg [Interne id](../../installation/using/campaign-server-configuration.md#internal-identifier) voor meer informatie hierover.
+   Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier) voor meer informatie.
 
 1. Maak de **demo**-instantie met de DNS-maskers voor tracering (in dit geval **tracking.campagne.net**) en toegang tot clientconsoles (in dit geval **console.campagne.net**). Er zijn twee manieren om dit te doen:
 
@@ -151,7 +151,7 @@ De stappen voor het installeren van de eerste server zijn:
    </serverconf>
    ```
 
-   Raadpleeg [Processen inschakelen](../../installation/using/campaign-server-configuration.md#enabling-processes) voor meer informatie.
+   Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#enabling-processes) voor meer informatie.
 
 1. Bewerk het bestand **serverConf.xml** en geef het leveringsdomein op. Geef vervolgens de IP-adressen (of de host) van de DNS-servers op die door de MTA-module worden gebruikt om DNS-query&#39;s van het MX-type te beantwoorden.
 
@@ -163,7 +163,7 @@ De stappen voor het installeren van de eerste server zijn:
    >
    >De **nameServers** parameters worden slechts gebruikt in Vensters.
 
-   Raadpleeg [Configuratie campagneserver](../../installation/using/campaign-server-configuration.md) voor meer informatie.
+   Raadpleeg [Configuratie campagneserver](../../installation/using/configuring-campaign-server.md) voor meer informatie.
 
 1. Kopieer het installatieprogramma voor de clientconsole (**setup-client-7.XX**, **YYYY.exe** voor v7 of **setup-client-6.XX**, **YYYYY.exe** voor v6.1) naar **/datakit/nl eng/jsp** map. [Meer informatie](../../installation/using/client-console-availability-for-windows.md).
 
@@ -229,7 +229,7 @@ Voer de volgende stappen uit:
    </serverconf>
    ```
 
-   Raadpleeg [Processen inschakelen](../../installation/using/campaign-server-configuration.md#enabling-processes) voor meer informatie.
+   Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#enabling-processes) voor meer informatie.
 
 1. Bewerk het bestand **serverConf.xml** en vul de DNS-configuratie van de MTA-module in:
 
@@ -241,7 +241,7 @@ Voer de volgende stappen uit:
    >
    >De **nameServers** parameter wordt slechts gebruikt in Vensters.
 
-   Raadpleeg [Configuratie campagneserver](../../installation/using/campaign-server-configuration.md) voor meer informatie.
+   Raadpleeg [Configuratie campagneserver](../../installation/using/configuring-campaign-server.md) voor meer informatie.
 
 1. Start de Adobe Campaign-servers.
 
@@ -290,4 +290,3 @@ De stappen zijn als volgt:
    * Voor Windows: [De webserver starten en de configuratie testen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration).
 
 1. Start de Adobe Campaign-server.
-
