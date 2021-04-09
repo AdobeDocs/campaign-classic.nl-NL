@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 translation-type: tm+mt
-source-git-commit: 0c83c989c7e3718a989a4943f5cde7ad4717fddc
+source-git-commit: e165af411d2580d69694f1730116cb198418bfe2
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 5%
@@ -2814,7 +2814,7 @@ Hier zijn de verschillende parameters van de **trackinglogd** knoop. Dit is de c
 
 Hier zijn de verschillende parameters van **web** knoop. Dit is de configuratie van de Module van het Web.
 
-Voor extra informatie, verwijs naar dit [sectie](../../installation/using/configuring-campaign-server.md#default-port-for-tomcat).
+Voor extra informatie, verwijs naar dit [sectie](configuring-campaign-server.md#default-port-for-tomcat).
 
 <table> 
  <thead> 
@@ -2858,13 +2858,13 @@ Voor extra informatie, verwijs naar dit [sectie](../../installation/using/config
   </tr> 
   <tr> 
    <td> controlPort<br /> </td> 
-   <td> Tomcat-luistercontrolepoort: verwijzen naar <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Tomcat</a> configureren.<br /> </td> 
+   <td> Tomcat-luistercontrolepoort: verwijzen naar <a href="configure-tomcat.md" target="_blank">Tomcat</a> configureren.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 8005<br /> </td> 
   </tr> 
   <tr> 
    <td> httpPort<br /> </td> 
-   <td> Tomcat HTTP-luisterpoort: verwijzen naar <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Tomcat</a> configureren.<br /> </td> 
+   <td> Tomcat HTTP-luisterpoort: verwijzen naar <a href="configure-tomcat.md" target="_blank">Tomcat</a> configureren.<br /> </td> 
    <td> Kort<br /> </td> 
    <td> 8080<br /> </td> 
   </tr> 
@@ -3149,7 +3149,7 @@ Raadpleeg [Dynamische paginabeveiliging en -relays](../../installation/using/con
   </tr> 
   <tr> 
    <td> targetUrl<br /> </td> 
-   <td> URL van de doelpagina: verwijzen naar <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Tomcat</a> configureren.<br /> </td> 
+   <td> URL van de doelpagina: verwijzen naar <a href="configure-tomcat.md" target="_blank">Tomcat</a> configureren.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
    <td> <br /> </td> 
   </tr> 
