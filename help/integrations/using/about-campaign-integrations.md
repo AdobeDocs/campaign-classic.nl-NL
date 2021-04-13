@@ -6,14 +6,14 @@ description: Gebruik andere Adobe-oplossingen en combineer hun verschillende mog
 audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
+exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 326ccbad77f3bd03a8eba22d7714084d52d2f02b
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '772'
 ht-degree: 8%
 
 ---
-
 
 # Aan de slag met Adobe Campaign-integratie {#about-campaign-integrations}
 
@@ -60,7 +60,7 @@ De volgende lijst verleent toegang tot beschikbare documentatie van de Experienc
  <tbody> 
   <tr> 
    <td> <strong>Adobe Real-time Customer Data Platform (RTCDP)</strong><br /> </td> 
-   <td> Dankzij de integratie tussen Adobe Campaign en Adobe Real-time Customer Data Platform (RTCDP) kunt u gegevens over segmenten delen en publiek importeren naar Adobe Campaign.<br /> <p><a href="https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html">Meer </a> informatie over de campagne - Adobe integratie van klantgegevens in realtime in het Platform.</p><br /> </td> 
+   <td> Dankzij de integratie tussen Adobe Campaign en Adobe Real-time Customer Data Platform (RTCDP) kunt u gegevens over segmenten delen en publiek importeren naar Adobe Campaign.<br /> <p><a href="../../integrations/using/get-started-sources-destinations.md">Meer </a> informatie over de campagne - Adobe integratie van klantgegevens in realtime in het Platform.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Identity Management System (IMS) - Adobe ID</strong><br /> </td> 
@@ -96,4 +96,3 @@ De volgende lijst verleent toegang tot beschikbare documentatie van de Experienc
   </tr> 
  </tbody> 
 </table>
-
