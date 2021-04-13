@@ -6,14 +6,14 @@ description: Leer hoe u berichten kunt personaliseren en voorwaardelijke inhoud 
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
+exl-id: 555082a2-1b62-4aa4-b80c-77b1a1ef9491
 translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+source-git-commit: d3ef2783409a3a36badbd3f8248ba1bdf6acae7e
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 40%
 
 ---
-
 
 # Aan de slag met personalisatie{#about-personalization}
 
@@ -21,7 +21,7 @@ Berichten die door Adobe Campaign worden geleverd, kunnen op verschillende manie
 
 * Het berichtformaat aanpassen. Zie [Berichtinhoud](../../delivery/using/defining-the-email-content.md#message-content).
 * Dynamische personalisatievelden invoegen. Zie [Velden voor personalisatie](../../delivery/using/personalization-fields.md).
-* Vooraf gedefinieerde personalisatieblokken invoegen. Zie [Persoonlijke blokken](../../delivery/using/personalization-blocks.md).
+* Vooraf gedefinieerde personalisatieblokken invoegen. Zie [Aanpassingsblokken](../../delivery/using/personalization-blocks.md).
 * Voorwaardelijke content maken. Raadpleeg de sectie [Voorwaardelijke inhoud](../../delivery/using/conditional-content.md).
 
 >[!CAUTION]
