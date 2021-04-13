@@ -8,10 +8,10 @@ role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 translation-type: tm+mt
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+source-git-commit: 69630f1450241e15d385dc03a3a2b02f6f7c850b
 workflow-type: tm+mt
-source-wordcount: '4272'
-ht-degree: 96%
+source-wordcount: '4304'
+ht-degree: 97%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 96%
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates per maand en per Campaign-release.
 
 Raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/using/latest-release.md) voor aan de release gerelateerde updates.
+
+## April 2021 {#april-2021}
+
+Een nieuwe sectie is geweest op hoe te met de Bronnen en Doelen van Adobe Experience Platform te werken om gegevens tussen Campaign Classic en Adobe in real time het Platform van de Gegevens van de Klant te delen in tijd (RTCDP). [Meer informatie](../../integrations/using/get-started-sources-destinations.md)
 
 ## Maart 2021 {#march-2021}
 
@@ -40,7 +44,7 @@ Leer op de volgende nieuwe pagina&#39;s hoe u campagnes maakt en beheert:
 
 Er is informatie toegevoegd aan het activiteitsgedeelte **[!UICONTROL Advanced JavaScript]** over hoe u de methode task.setCompleted() gebruikt om de taak te beëindigen en toekomstige intrekkingen te voorkomen. [Meer informatie](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
-De sectie [Leverbaarheid](../../delivery/using/about-deliverability.md) is bijgewerkt en bevat nu koppelingen naar de nieuwe [Handleiding voor beste praktijken voor Adobe-levering](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html). Alle generieke informatie met betrekking tot leverbaarheid die op diverse oplossingen van Adobe kan van toepassing zijn is verplaatst naar [Aanhangsel van de gids van Beste praktijken](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources).
+Het gedeelte [Afleverbaarheid](../../delivery/using/about-deliverability.md) is bijgewerkt en bevat nu koppelingen naar de nieuwe [gids met best practices voor afleverbaarheid van Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl). Alle generieke informatie over afleverbaarheid die op diverse oplossingen van Adobe van toepassing kan zijn, is verplaatst naar de [bijlage van de gids met best practices](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=nl#additional-resources).
 
 ## Februari 2021 {#release-21.1}
 
