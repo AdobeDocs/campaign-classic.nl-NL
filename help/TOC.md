@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 60ab99d006599edfcb997829ea0c452a2daea219
 workflow-type: tm+mt
-source-wordcount: '2489'
-ht-degree: 97%
+source-wordcount: '2516'
+ht-degree: 96%
 
 ---
 
@@ -213,7 +213,7 @@ ht-degree: 97%
       + [Problemen met levering oplossen](delivery/using/delivery-troubleshooting.md)
       + [Leveringsstatus](delivery/using/delivery-statuses.md)
       + [Verzendingsfouten begrijpen](delivery/using/understanding-delivery-failures.md)
-      + [Bounce-kwalificatie bijwerken na een ISP-uitgang](delivery/using/update-bounce-qualification.md)
+      + [Bouncekwalificatie bijwerken na een ISP-uitval](delivery/using/update-bounce-qualification.md)
       + [Quarantainebeheer begrijpen](delivery/using/understanding-quarantine-management.md)
    + Berichten bijhouden {#tracking-messages}
       + [Berichttracering](delivery/using/about-message-tracking.md)
@@ -394,6 +394,10 @@ ht-degree: 97%
       + [Gebeurtenissen configureren voor aangepaste implementatie](integrations/using/events.md)
       + [Pipelinecontrole](integrations/using/pipeline-monitoring.md)
       + [Problemen met pipelines oplossen](integrations/using/pipeline-troubleshooting.md)
+   + Adobe Experience Platform Bronnen en doelen {#aep-sources-destinations}
+      + [Ga aan de slag met Bronnen en Doelen](integrations/using/get-started-sources-destinations.md)
+      + [Adobe Experience Platform-publiek verfraaien in campagne](integrations/using/ingest-aep-data.md)
+      + [Gegevens exporteren van campagne naar Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + Automatiseren met workflows {#automating-with-workflows}
    + Aan de slag met workflows {#introduction}
       + [Workflows](workflow/using/about-workflows.md)
