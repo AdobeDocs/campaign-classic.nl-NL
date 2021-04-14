@@ -8,10 +8,10 @@ role: Business Practitioner
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 translation-type: tm+mt
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+source-git-commit: ac01b3c064209362cc6142a716d2892c27753d76
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 96%
+source-wordcount: '1058'
+ht-degree: 94%
 
 ---
 
@@ -20,6 +20,14 @@ ht-degree: 96%
 Deze pagina bevat een lijst met [!DNL Gold Standard] releases. Meer informatie over campagne [!DNL Gold Standard] [op deze pagina](gs-overview.md).
 
 ## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] 11 release{#gs-11}
+
+_14 april 2021_
+
+De build 9032@d030c36 bevat de volgende oplossing:
+
+* Oplossing voor een regressie van de clientconsole die tot permanente foutberichten op het IMS-verbindingsscherm leidde. (NEO-34821)
+
+**Alleen de console-upgrade is verplicht. Er is geen serverupgrade vereist.**
 
 _2 maart 2021_
 
