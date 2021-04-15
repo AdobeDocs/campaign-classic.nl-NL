@@ -8,7 +8,7 @@ role: Business Practitioner
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 translation-type: tm+mt
-source-git-commit: ac01b3c064209362cc6142a716d2892c27753d76
+source-git-commit: 113a3535cd197f9b654fc1e50e20886e76ee886a
 workflow-type: tm+mt
 source-wordcount: '1058'
 ht-degree: 94%
@@ -40,7 +40,6 @@ De build 9032@10c2709 bevat de volgende oplossing:
 >[!NOTE]
 >
 > Maak verbinding met [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/nl/campaign.html) om de nieuwe versie te downloaden. [Op deze pagina ](../../installation/using/client-console-availability-for-windows.md) leert u hoe u de console-update aan alle eindgebruikers kunt voorstellen.
-
 
 _22 december 2020_
 
