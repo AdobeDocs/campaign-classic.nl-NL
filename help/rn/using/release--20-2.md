@@ -8,16 +8,26 @@ role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
 translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 1c59afc7021af604559184cd0c21129af3759a8c
 workflow-type: tm+mt
-source-wordcount: '2830'
-ht-degree: 88%
+source-wordcount: '2970'
+ht-degree: 87%
 
 ---
 
 # Release 20.2{#release-20-2}
 
 ## ![](assets/do-not-localize/green_2.png) Release 20.2.5 - build 9188 {#release-20-2-5-build-9188}
+
+_15 april 2021_
+
+* Oplossing voor een regressie van de clientconsole die tot permanente foutberichten op het IMS-verbindingsscherm leidde. (NEO-34821)
+
+**Alleen de console-upgrade is verplicht. Er is geen serverupgrade vereist.**
+
+>[!NOTE]
+>
+> Maak verbinding met [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/nl/campaign.html) om de nieuwe versie te downloaden. [Op deze pagina ](../../installation/using/client-console-availability-for-windows.md) leert u hoe u de console-update aan alle eindgebruikers kunt voorstellen.
 
 _31 maart 2021_
 
@@ -37,6 +47,17 @@ _31 maart 2021_
 * Er is een regressie opgelost die verhinderde dat bepaalde onderdelen van de console konden worden gebruikt, zoals de datumkiezer en afbeeldingsbeheer in verzendingen. (NEO-31453)
 
 ## ![](assets/do-not-localize/red_2.png) Release 20.2.4 - build 9187 {#release-20-2-4-build-9187}
+
+_15 april 2021_
+
+* Oplossing voor een regressie van de clientconsole die tot permanente foutberichten op het IMS-verbindingsscherm leidde. (NEO-34821)
+* Er is een regressie opgelost die verhinderde dat bepaalde onderdelen van de console konden worden gebruikt, zoals de datumkiezer en afbeeldingsbeheer in verzendingen. (NEO-31453, NEO-31454)
+
+**Alleen de console-upgrade is verplicht. Er is geen serverupgrade vereist.**
+
+>[!NOTE]
+>
+> Maak verbinding met [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) om de nieuwe versie te downloaden. [Op deze pagina ](../../installation/using/client-console-availability-for-windows.md) leert u hoe u de console-update aan alle eindgebruikers kunt voorstellen.
 
 _22 december 2020_
 
