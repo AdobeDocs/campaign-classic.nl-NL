@@ -1,21 +1,15 @@
 ---
 cloud: Experience Cloud
 description: Documentatie voor Campaign Classic
-solution-title: Informatie en ondersteuning
-solution-hub-url: https://helpx.adobe.com/nl/support/campaign/classic.html
-solution-image: assets/campaign-icon-24.png
-getting-started-title: Forum
-getting-started-url: https://forums.adobe.com/community/experience-cloud/marketing-cloud/campaign/classic
-tutorials-title: Tutorials
-tutorials-url: https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/overview.html
 git-repo: https://git.corp.adobe.com/AdobeDocs/campaign-classic.nl-NL
 solution: Campaign, Campaign Classic
 version: Classic v7
+feature-set: Campaign
 index: true
 translation-type: tm+mt
-source-git-commit: fa576fba1b6b2834d70242268ad0a5b04108cc76
+source-git-commit: bd6f77606517a0d3ceaa3c2b398733521af3ae43
 workflow-type: tm+mt
-source-wordcount: '38'
+source-wordcount: '12'
 ht-degree: 100%
 
 ---
