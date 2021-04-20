@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Adobe Campaign Classic
 description: Leer meer over belangrijke functies, de gebruikersinterface en algemene richtlijnen.
-feature: Overzicht
+feature: Overview
 role: Business Practitioner
 level: Beginner
 translation-type: tm+mt

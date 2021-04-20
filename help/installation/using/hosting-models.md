@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Hostmodellen
 description: Campagne-hostmodellen ontdekken
-feature: Overzicht
+feature: Overview
 role: Architect
 level: Beginner
 translation-type: tm+mt

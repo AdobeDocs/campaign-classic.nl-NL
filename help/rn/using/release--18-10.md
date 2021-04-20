@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Opmerkingen bij de release van campagne 18.10
 description: Opmerkingen bij de release voor campagne 18.10
-feature: Overzicht
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb

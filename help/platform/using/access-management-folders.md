@@ -3,8 +3,8 @@ solution: Campaign Classic
 product: campaign
 title: Toegang tot campagnemappen beheren
 description: Leer hoe u toegang kunt verlenen tot campagnemappen en weergaven kunt maken
-feature: Toepassingsinstellingen
-role: Bedrijfs Praktijk, Beheerder
+feature: Application Settings
+role: Business Practitioner, Administrator
 level: Beginner
 translation-type: tm+mt
 source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63

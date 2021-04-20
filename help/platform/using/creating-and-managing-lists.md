@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Lijsten maken en beheren
 description: Leer lijsten maken en beheren
-feature: Profielen
+feature: Profiles
 role: Business Practitioner
 level: Beginner
 translation-type: tm+mt

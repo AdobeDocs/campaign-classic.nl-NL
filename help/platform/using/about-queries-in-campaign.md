@@ -3,8 +3,8 @@ solution: Campaign Classic
 product: campaign
 title: Query’s in Campaign
 description: Query’s in Campaign
-feature: Query-editor
-role: Zakelijke praktiserer, Data Architect
+feature: Query Editor
+role: Business Practitioner, Data Architect
 level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae

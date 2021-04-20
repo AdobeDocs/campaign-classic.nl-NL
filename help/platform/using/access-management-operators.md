@@ -3,8 +3,8 @@ solution: Campaign Classic
 product: campaign
 title: Aan de slag met campagneoperatoren
 description: Meer informatie over het maken en beheren van campagnegebruikers
-feature: Toegangsbeheer
-role: Bedrijfs Praktijk, Beheerder
+feature: Access Management
+role: Business Practitioner, Administrator
 level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae

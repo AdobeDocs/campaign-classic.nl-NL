@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Verouderde en verwijderde functies van Campaign Classic
 description: Deze pagina bevat de verouderde en verwijderde functies van Adobe Campaign Classic
-feature: Overzicht
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645

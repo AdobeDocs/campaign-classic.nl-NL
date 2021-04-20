@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Laatste release
 description: Nieuwste opmerkingen bij de release van Campaign Classic
-feature: Overzicht
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c

@@ -3,8 +3,8 @@ solution: Campaign Classic
 product: campaign
 title: Operatorgroepen maken en beheren
 description: Leer hoe u toegang verleent aan groepen operatoren
-feature: Toegangsbeheer
-role: Bedrijfs Praktijk, Beheerder
+feature: Access Management
+role: Business Practitioner, Administrator
 level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae

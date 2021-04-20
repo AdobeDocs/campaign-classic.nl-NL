@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Aan de slag met upgrades
 description: Meer informatie over Campaign Classic-upgrades
-feature: Overzicht
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499

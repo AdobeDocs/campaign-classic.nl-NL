@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Profielen toevoegen
 description: Profielen toevoegen
-feature: Profielen
+feature: Profiles
 role: Business Practitioner
 level: Beginner
 translation-type: tm+mt

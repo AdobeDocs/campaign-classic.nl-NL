@@ -3,8 +3,8 @@ solution: Campaign Classic
 product: campaign
 title: Over de invoer en uitvoer van generieke producten
 description: Meer informatie over generieke import en export.
-feature: Overzicht
-role: Zakelijke praktiserer, Data Architect
+feature: Overview
+role: Business Practitioner, Data Architect
 level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae

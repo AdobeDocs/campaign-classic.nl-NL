@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Opmerkingen bij de release Campagne 20.3
 description: Opmerkingen bij de release voor campagne 20.3
-feature: Overzicht
+feature: Overview
 role: Business Practitioner
 level: Beginner
 translation-type: tm+mt

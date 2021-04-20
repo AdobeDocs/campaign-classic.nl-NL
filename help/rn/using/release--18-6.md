@@ -6,7 +6,7 @@ description: Opmerkingen bij de release voor campagne 18.6
 audience: rn
 content-type: reference
 topic-tags: latest-release-notes
-feature: Overzicht
+feature: Overview
 role: Business Practitioner
 level: Beginner
 translation-type: tm+mt
