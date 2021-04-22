@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 60ab99d006599edfcb997829ea0c452a2daea219
+source-git-commit: b741b10fd1d3a94a3e6c71e95ff43cc0ee54ebc7
 workflow-type: tm+mt
-source-wordcount: '2516'
-ht-degree: 96%
+source-wordcount: '2519'
+ht-degree: 97%
 
 ---
 
@@ -42,6 +42,7 @@ ht-degree: 96%
    + [Technische opmerkingen](technotes/technote.md)
    + [Update van iOS-certificaat](technotes/ios-certificate-update.md)
    + [Configuratie-updates voor Campaign](technotes/acc-config-updates.md)
+   + [Bijwerken van bijgehouden URL&#39;s](technotes/tracked-urls.md)
 + Aan de slag {#getting-started}
    + Starten met Adobe Campaign {#starting-with-adobe-campaign}
       + [Aan de slag met Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
@@ -394,10 +395,10 @@ ht-degree: 96%
       + [Gebeurtenissen configureren voor aangepaste implementatie](integrations/using/events.md)
       + [Pipelinecontrole](integrations/using/pipeline-monitoring.md)
       + [Problemen met pipelines oplossen](integrations/using/pipeline-troubleshooting.md)
-   + Adobe Experience Platform Bronnen en doelen {#aep-sources-destinations}
-      + [Ga aan de slag met Bronnen en Doelen](integrations/using/get-started-sources-destinations.md)
-      + [Adobe Experience Platform-publiek verfraaien in campagne](integrations/using/ingest-aep-data.md)
-      + [Gegevens exporteren van campagne naar Adobe Experience Platform](integrations/using/export-campaign-data.md)
+   + Bronnen en bestemmingen van het Adobe Experience Platform {#aep-sources-destinations}
+      + [Aan de slag met bronnen en bestemmingen](integrations/using/get-started-sources-destinations.md)
+      + [Adobe Experience Platform-doelgroepen opnemen in Campaign](integrations/using/ingest-aep-data.md)
+      + [Gegevens exporteren van Campaign naar Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + Automatiseren met workflows {#automating-with-workflows}
    + Aan de slag met workflows {#introduction}
       + [Workflows](workflow/using/about-workflows.md)
