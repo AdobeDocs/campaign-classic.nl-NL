@@ -6,10 +6,10 @@ description: TechNote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 5b552afa784b479853335daf13eb02e5e069eb4d
+source-git-commit: f47b0ecfd3e35d15a78779fd9f38cc93c798d5d2
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 Na recente wijzigingen kunnen bijgehouden URL&#39;s mislukken wanneer een URL-handtekening actief is in de campagne. Sommige mailboxes kunnen meer effect hebben dan andere, aangezien sommige bedrijven specifieke veiligheidshulpmiddelen hebben die verbindingen kunnen beïnvloeden en het URL handtekeningsmechanisme veranderen.
 
-Daarom raadt Adobe u aan het handtekeningmechanisme voor het bijhouden van koppelingen uit te schakelen. Deze procedure zal oude het volgen verbindingen behalve ontvangen met een dubbele ontsnaping bevestigen.
+Daarom raadt Adobe u aan het handtekeningmechanisme voor het bijhouden van koppelingen uit te schakelen. Deze procedure verhelpt oude het volgen verbindingen behalve degenen die met een dubbele ontsnaping worden ontvangen.
 
 Koppelingen zonder abonnement kunnen mislukken, net als andere koppelingen. De frequentie is variabel van host tot host, maar is minder dan 1%.
 
@@ -27,13 +27,13 @@ Om de beveiliging te verbeteren, is het handtekeningmechanisme voor het bijhoude
 
 Als uw omgeving wordt uitgevoerd op een van de hieronder vermelde versies, kunt u dit beïnvloeden:
 
-* Gold Standard 7 tot 11. [Meer informatie](../rn/using/gold-standard.md)
-* Campagne 21.1.1 en 21.1.2 versies. [Meer informatie](../rn/using/latest-release.md)
-* Campagne 20.3.1 tot 20.3.3 versies. [Meer informatie](../rn/using/release--20-3.md)
-* Campagne 20.2.1 tot en met 20.2.3 introducties. [Meer informatie](../rn/using/release--20-2.md)
-* Campagne 20.1.1 tot en met 21.1.3 brengt. [Meer informatie](../rn/using/release--20-1.md)
-* Campagne 19.2.2 tot en met 19.2.3 introducties. [Meer informatie](../rn/using/release--19-2.md)
-* Campagne 19.1.5 tot en met 19.1.7 introducties. [Meer informatie](../rn/using/release--19-1.md)
+* Gold Standard 7 - 11. [Meer informatie](../rn/using/gold-standard.md)
+* Campagne 21.1.1 - 21.1.2 versies. [Meer informatie](../rn/using/latest-release.md)
+* Campagne 20.3.1 - 20.3.3 versies. [Meer informatie](../rn/using/release--20-3.md)
+* Campagne 20.2.1 - 20.2.3 versies. [Meer informatie](../rn/using/release--20-2.md)
+* Campagne 20.1.1 - 21.1.3 versies. [Meer informatie](../rn/using/release--20-1.md)
+* Campagne 19.2.2 - 19.2.3 versies. [Meer informatie](../rn/using/release--19-2.md)
+* Campagne 19.1.5 - 19.1.7 versies. [Meer informatie](../rn/using/release--19-1.md)
 
 Leer hoe u uw versie [in deze sectie ](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) controleert.
 
@@ -55,12 +55,12 @@ Volg de onderstaande stap:
 
 >[!NOTE]
 >
->Het **config-`<instance>`.xml** dossier treedt **serverConf.xml** montages met voeten. Als **signEmailLinks** aanwezig is in **config-`<instance>`.xml** (waarbij **instance** de naam van uw instantie is), moet het ook worden gedraaid naar **false**.
+>Het **config-`<instance>`.xml** dossier treedt **serverConf.xml** montages met voeten. Als **signEmailLinks** aanwezig is in **config-`<instance>`.xml** (waarbij **instance** de naam van uw instantie is), moet het ook aan **false** worden gedraaid.
 
 
 **Wat is de impact?**
 
-Het onderhoud vereist maximaal 25 minuten uitvaltijd en tijdens deze periode werken alle leveringen, koppelingen en API-aanroepen niet.
+Het onderhoud vereist maximaal 25 minuten downtime en tijdens deze periode werken alle leveringen, koppelingen en API-aanroepen niet.
 
 Wanneer de update is uitgevoerd, werken alle koppelingen naar behoren.
 
