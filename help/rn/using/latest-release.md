@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Laatste release
 description: Nieuwste opmerkingen bij de release van Campaign Classic
-feature: Overview
+feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: abd5c7430c3f7a1a056a014ad46a0b94157e259f
 workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden 
 
 >[!NOTE]
 >
->Campagne **General Availability (GA)-builds** zijn: [[!DNL Gold Standard] 11 release](../../rn/using/gold-standard.md#gs-11) en [Campagne 20.2.5 release](../../rn/using/release--20-2.md).
+>Campaign **General Availability (GA)-builds** zijn: de [[!DNL Gold Standard] 11-release](../../rn/using/gold-standard.md#gs-11) en de [Campaign 20.2.5-release](../../rn/using/release--20-2.md).
 
 ## ![](assets/do-not-localize/blue_2.png) Release 21.1.2 - build 9282 {#release-21-1-2-build-9282}
 
