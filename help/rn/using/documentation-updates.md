@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Adobe Campaign Classic-documentatie-updates
 description: Deze pagina bevat een overzicht van alle nieuwe functies en updates in de documentatie van Adobe Campaign Classic
-feature: Overview
+feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 69630f1450241e15d385dc03a3a2b02f6f7c850b
 workflow-type: tm+mt
 source-wordcount: '4304'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -27,9 +27,9 @@ Een nieuwe sectie is geweest op hoe te met de Bronnen en Doelen van Adobe Experi
 
 ## Maart 2021 {#march-2021}
 
-De [Aan de slag met SMS-sectie](../../delivery/using/sms-channel.md) is gereorganiseerd en verbeterd. U kunt nu leren hoe u het SMS-kanaal [configureert, [een SMS](../../delivery/using/sms-create.md), [send en track SMS](../../delivery/using/sms-send.md) in speciale secties maakt.](../../delivery/using/sms-set-up.md)
+De sectie [Aan de slag met sms](../../delivery/using/sms-channel.md) is opnieuw ingedeeld en verbeterd. U kunt nu in speciale secties leren hoe u [het sms-kanaal configureert](../../delivery/using/sms-set-up.md), [een sms maakt](../../delivery/using/sms-create.md) en [een sms verzendt en volgt](../../delivery/using/sms-send.md).
 
-De pagina &quot;Help en ondersteuningsopties&quot; voor Campaign Classic is geïntegreerd in de kerndocumentatie. [Meer informatie](../../support.md)
+De pagina Help en ondersteuningsopties voor Campaign Classic is geïntegreerd in de belangrijkste documentatie. [Meer informatie](../../support.md)
 
 Er is een nieuw gedeelte toegevoegd met best practices en controles voor beveiliging en privacy. [Meer informatie](../../installation/using/get-started-security-privacy.md)
 
@@ -138,7 +138,7 @@ De compatibiliteitsmatrix is bijgewerkt. [Meer informatie](../../rn/using/compat
 
 De pagina met verouderde en verwijderde functies is bijgewerkt. [Meer informatie](../../rn/using/deprecated-features.md)
 
-Release-aantekeningen en compatibiliteitsmatrix voor [!DNL Gold Standard]-release zijn nu beschikbaar in een toegewezen sectie.
+Aanvullende informatie over en de compatibiliteitsmatrix voor de [!DNL Gold Standard]-release zijn nu beschikbaar in een speciale sectie.
 [Meer informatie](../../rn/using/gold-standard.md#gs-11).
 
 De Triggers-integratie die oorspronkelijk was gebaseerd op de oAUTH-verificatieset-up voor toegang tot de pipeline, is nu gewijzigd en verplaatst naar Adobe I/O. [Meer informatie](../../integrations/using/configuring-adobe-io.md)
@@ -214,7 +214,7 @@ De sectie **[!UICONTROL AND-join]**-activiteit is verrijkt met aanvullende infor
 
 Er is een gebruiksscenario toegevoegd aan de workflowgebruiksscenario’s voor het automatisch bijwerken van een lijst met behulp van een incrementele query. [Meer informatie](../../workflow/using/about-workflow-use-cases.md)
 
-De [Opmerkingen bij de release](../../rn/using/latest-release.md) zijn opnieuw ingedeeld: er is een [overzichtspagina](../../rn/using/latest-release.md) toegevoegd met informatie over buildstatussen, upgradeproces, aanbevelingen en belangrijke koppelingen. Er is ook een speciale pagina voor [[!DNL Gold Standard] releases](../../rn/using/gold-standard.md) toegevoegd en de [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) is geïntegreerd.
+De [Opmerkingen bij de release](../../rn/using/latest-release.md) zijn opnieuw ingedeeld: er is een [overzichtspagina](../../rn/using/latest-release.md) toegevoegd met informatie over buildstatussen, upgradeproces, aanbevelingen en belangrijke koppelingen. Er is ook een speciale pagina toegevoegd voor de [[!DNL Gold Standard] -releases](../../rn/using/gold-standard.md) en de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) is geïntegreerd.
 
 Er is een nieuwe sectie toegevoegd met richtlijnen voor Campaign Classic-bewaking. [Meer informatie](../../production/using/monitoring-guidelines.md)
 
@@ -274,7 +274,7 @@ De sectie over het controleren van de leverbaarheid is verplaatst en verbeterd. 
 
 De sectie voor het oplossen van problemen met de leverbaarheid is verplaatst en verbeterd. [Meer informatie](../../delivery/using/deliverability-faq.md)
 
-De richtlijnen voor de levering bij het starten van een nieuw platform zijn verbeterd. [Meer informatie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html#transition-process)
+Richtlijnen voor de afleverbaarheid bij het starten van een nieuw platform zijn verbeterd. [Meer informatie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html#transition-process?lang=nl)
 
 De sectie voor het verzenden van transactionele e-mails met bijlagen is verplaatst en bijgewerkt. [Meer informatie](../../message-center/using/transactional-email-with-attachments.md)
 
