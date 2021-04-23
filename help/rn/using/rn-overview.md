@@ -3,15 +3,15 @@ solution: Campaign Classic
 product: campaign
 title: Aan de slag met upgrades
 description: Meer informatie over Campaign Classic-upgrades
-feature: Overview
+feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8294b522efb51cb1b961c9284675c7966132e957
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '415'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Aan elke build wordt een status gekoppeld. Hieronder vindt u een lijst met statu
 
 ![](assets/do-not-localize/green3.png) **Algemene beschikbaarheid** (GA) - Gevalideerd in productie en aanbevolen door Adobe.
 
-De **nieuwste GA-builds** zijn: [[!DNL Gold Standard]  11-release](../../rn/using/gold-standard.md) en [Campaign 20.2.5-release](../../rn/using/release--20-2.md)
+De **nieuwste GA-builds** zijn: de [[!DNL Gold Standard]  11-release](../../rn/using/gold-standard.md) en de [Campaign 20.2.5-release](../../rn/using/release--20-2.md)
 
 ![](assets/do-not-localize/limited3.png) **Beperkte beschikbaarheid** (LA) - Alleen on-demand implementatie.
 
@@ -55,7 +55,7 @@ Als on-premise gebruiker kunt u de upgrade zelf uitvoeren. Hiervoor moet u de [n
 
 ### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
-Als gehoste [!DNL Gold Standard] gebruiker, zult u automatisch van [!DNL Gold Standard] verbetering met [recentste GA [!DNL Gold Standard] bouwstijl](../../rn/using/gold-standard.md#gs-11) zonder enige actie profiteren. [Meer informatie](../../rn/using/gs-overview.md).
+Als gehoste [!DNL Gold Standard]-gebruiker profiteert u automatisch van de [!DNL Gold Standard]-upgrade met de [nieuwste GA [!DNL Gold Standard] -build](../../rn/using/gold-standard.md#gs-11) zonder actie te hoeven ondernemen. [Meer informatie](../../rn/using/gs-overview.md).
 
 >[!NOTE]
 >De compatibiliteitsmatrix voor [!DNL Gold Standard] is beschikbaar in de [GA-compatibiliteitsmatrix](../../rn/using/compatibility-matrix-gs.md).
