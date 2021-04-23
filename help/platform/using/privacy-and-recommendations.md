@@ -6,14 +6,14 @@ description: Meer informatie over privacy en toestemming
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 660b9ad4351fe611d99962f2b163858b1f70bc84
-workflow-type: tm+mt
+exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '2038'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
-
 
 # Privacy en toestemming{#privacy-and-recommendations}
 
@@ -25,7 +25,7 @@ Adobe Campaign is een krachtige tool voor het verzamelen en verwerken van zeer g
 
 * Stuur geen ongewenste e-mails, pushberichten en sms-berichten (&quot;spam&quot;). Adobe gelooft sterk in de principes van permission marketing, in het bevorderen van customer lifetime value en in de loyaliteit van klanten, en verbiedt daarom strikt het gebruik van Adobe Campaign voor het verzenden van ongevraagde berichten.
 
-Neem de tijd om de [Controlelijst voor beveiliging en privacy](../../installation/using/get-started-security-privacy.md) door te nemen om de belangrijkste elementen betreffende de controle van beveiliging en privacy te leren.
+Neem de tijd om de [Controlelijst voor beveiliging en privacy](../../installation/using/get-started-security-privacy.md) door te nemen om de belangrijkste elementen over de controle van beveiliging en privacy te leren.
 
 ### Privacywetgeving{#privacy-regulations}
 
@@ -36,11 +36,11 @@ Werk binnen de wetgeving die geldt voor de regio(’s) waar u actief bent om pri
 * [CAN-SPAM Act](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business) (Amerikaanse wetgeving over regels en vereisten voor commerciële e-mail)
 * [CCPA](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&amp;division=3.&amp;title=1.81.5.&amp;part=4.&amp;chapter=&amp;article=) (California Consumer Privacy Act)
 * [PDPA](https://secureprivacy.ai/thailand-pdpa-summary-what-businesses-need-to-know/) (Thaise wet inzake de bescherming van persoonsgegevens)
-* [LGPD](https://iapp.org/media/pdf/resource_center/Brazilian_General_Data_Protection_Law.pdf)  (Braziliaanse algemene wet inzake gegevensbescherming) - wordt van kracht vanaf 16 augustus 2020
+* [LGPD](https://iapp.org/media/pdf/resource_center/Brazilian_General_Data_Protection_Law.pdf) (Algemene wet inzake gegevensbescherming in Brazilië) - wordt van kracht vanaf 16 augustus 2020
 
 >[!NOTE]
 >
->Zie [deze pagina](../../platform/using/privacy-management.md#privacy-management-regulations) voor meer informatie over hoe GDPR, CCPA, PDPA en LGPD van toepassing zijn op Adobe Campaign.
+>Zie [deze pagina](../../platform/using/privacy-management.md#privacy-management-regulations) voor meer informatie over hoe de AVG, CCPA, PDPA en LGPD van toepassing zijn op Adobe Campaign.
 
 ### Adobe Experience Cloud-privacy {#experience-cloud-privacy}
 
@@ -52,12 +52,12 @@ Adobe Campaign maakt deel uit van de Adobe Experience Cloud-oplossingen. De mani
 
    >[!NOTE]
    >
-   >Net als alle andere Adobe-producten verzamelt Campaign informatie over gebruikers van apps en websites. Zie het [Adobe-privacybeleid](https://www.adobe.com/privacy/policy.html) voor meer informatie.
+   >Net als alle andere Adobe-producten verzamelt Campaign informatie over gebruikers van apps en websites. Zie het [Adobe-privacybeleid](https://www.adobe.com/nl/privacy/policy.html) voor meer informatie.
 
 * **Hoe Adobe Experience Cloud wordt gebruikt om informatie te verzamelen**
 
    * Adobe Experience Cloud-oplossingen gebruiken cookies en vergelijkbare technologieën zoals webbakens (ook wel tags of pixels genoemd), waarmee u informatie kunt verzamelen. Zie [deze sectie](#tracking-capabilities) voor meer informatie over cookies en trackingmogelijkheden met Adobe Campaign.
-   * U kunt in uw mobiele apps ook Adobe Experience Cloud-technologieën gebruiken. Zie [SMS-kanaal](../../delivery/using/sms-channel.md) en [Mobiel app-kanaal](../../delivery/using/about-mobile-app-channel.md) voor meer informatie over het verzenden van mobiele leveringen met campagne.
+   * U kunt in uw mobiele apps ook Adobe Experience Cloud-technologieën gebruiken. Zie [Sms-kanaal](../../delivery/using/sms-channel.md) en [Kanaal voor mobiele apps](../../delivery/using/about-mobile-app-channel.md) voor meer informatie over mobiele verzendingen met Campaign.
 
 * **De privacyopties van uw gebruikers voor uw gebruik van Adobe Experience Cloud**
 
@@ -68,9 +68,9 @@ Adobe Campaign maakt deel uit van de Adobe Experience Cloud-oplossingen. De mani
 
    >[!NOTE]
    >
-   >Net als bij alle Adobe-producten kunnen Campaign-gebruikers weigeren om verzamelde informatie over hen te delen via apps en websites. Raadpleeg de [Veelgestelde vragen over Adobe Experience Cloud-gebruiksgegevens](https://www.adobe.com/privacy/experience-cloud-usage-info-faq.html) voor meer informatie daarover.
+   >Net als bij alle Adobe-producten kunnen Campaign-gebruikers weigeren om verzamelde informatie over hen te delen via apps en websites. Raadpleeg de [Veelgestelde vragen over Adobe Experience Cloud-gebruiksgegevens](https://www.adobe.com/nl/privacy/experience-cloud-usage-info-faq.html) voor meer informatie daarover.
 
-Zie [deze pagina](https://www.adobe.com/privacy/marketing-cloud.html) voor meer informatie over de Adobe Experience Cloud-privacy.
+Zie [deze pagina](https://www.adobe.com/nl/privacy/marketing-cloud.html) voor meer informatie over de Adobe Experience Cloud-privacy.
 
 ## Persoonsgegevens en persona&#39;s {#personal-data}
 
@@ -78,7 +78,7 @@ Bij privacybeheer is het belangrijk om te bepalen welke gegevens met zorg moeten
 * **Persoonsgegevens** omvatten informatie aan de hand waarvan een levende persoon direct of indirect kan worden geïdentificeerd.
 * **Gevoelige persoonsgegevens** zijn gegevens over etnische afkomst, politieke opvattingen, godsdienstige overtuiging, criminele achtergrond, genetische informatie, gezondheidsgegevens, seksuele voorkeur, biometrische informatie en lidmaatschap van een vakbond.
 
-Wanneer u Campagne integreert met andere Experience Cloud-oplossingen waarbij het publiek van het ene systeem naar het andere kan worden overgebracht, zoals [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md), [Audience Manager- of People core service](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) of met andere oplossingen via [CRM-connectors](../../platform/using/crm-connectors.md), moet u extra aandacht besteden aan de bescherming van persoonsgegevens.
+Bij de integratie van Campaign met andere Experience Cloud-oplossingen waarbij doelgroepen kunnen worden overgezet van het ene systeem naar het andere zoals [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md), [Audience Manager of de People-kernservice](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) of met andere oplossingen via [CRM-connectoren](../../platform/using/crm-connectors.md), moet u extra aandacht besteden aan de bescherming van persoonsgegevens.
 
 De [belangrijkste verordeningen](#privacy-regulations) betreffen de verschillende entiteiten die gegevens als volgt beheren:
 * Een **gegevenscontroller** is de instantie die de middelen en het doel van het verzamelen, gebruiken en delen van persoonsgegevens bepaalt.
@@ -117,8 +117,8 @@ Hier volgt de algemene workflow voor dit gebruiksscenario:
 
 Met Adobe Campaign kunt u gegevens verzamelen, waaronder persoonlijke en gevoelige informatie. Het is daarom van essentieel belang dat u de toestemming van uw ontvangers ontvangt en controleert.
 
-* Zorg ervoor dat ontvangers altijd toestemming geven voor het ontvangen van communicatie. Daarvoor moet u opt-outverzoeken altijd zo snel mogelijk verwerken en moet u toestemming controleren via een dubbele opt-inprocedure. Zie [Een abonnementsformulier maken met dubbele opt-in](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in) voor meer informatie.
-* Importeer geen frauduleuze lijsten en gebruik geen zaadadressen om te controleren of uw clientbestand niet frauduleus wordt gebruikt. Voor meer op dit, zie [Ongeveer zaadadressen](../../delivery/using/about-seed-addresses.md).
+* Zorg ervoor dat ontvangers altijd toestemming geven voor het ontvangen van communicatie. Daarvoor moet u opt-outverzoeken altijd zo snel mogelijk verwerken en moet u toestemming controleren via een dubbele opt-inprocedure. Zie [Een lidmaatschapsformulier maken met dubbele opt-in](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in) voor meer informatie.
+* Importeer geen frauduleuze lijsten en gebruik seedadressen om te controleren of uw clientbestand niet onrechtmatig wordt gebruikt. Zie [Seedadressen](../../delivery/using/about-seed-addresses.md) voor meer informatie.
 * Via toestemmings- en rechtenbeheer kunt u de voorkeuren van uw ontvangers bijhouden en beheren wie binnen uw organisatie toegang heeft tot welke gegevens. Zie [deze sectie](#consent)voor meer informatie.
 * Faciliteer en beheer de verzoeken om toegang tot persoonsgegevens van uw ontvangers. Zie [deze sectie](#privacy-requests)voor meer informatie.
 
@@ -131,13 +131,13 @@ Adobe Campaign biedt u verschillende functiesets voor privacybeheer:
 * Verzoeken om toegang tot persoonsgegevens (toegangsrecht en recht om te worden vergeten). Zie [deze sectie](#privacy-requests).
 * Opt-out voor de verkoop van persoonsgegevens (CCPA-specifiek). Zie [deze sectie](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
 
-De belangrijkste privacymogelijkheden in Campaign en een voorbeeld van de betrokken persona’s worden weergegeven in [deze sectie](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-faq.html?lang=nl#getting-started).
+De belangrijkste privacymogelijkheden in Campaign en een voorbeeld van de betrokken persona’s worden weergegeven in [deze sectie](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/faq/privacy-faq.html#getting-started).
 
 ### Toestemming, retentie en rollen {#consent}
 
 Oorspronkelijk biedt Adobe Campaign belangrijke functies die essentieel zijn voor privacy:
 
-* **Toestemmingsbeheer**: via de procedure van abonnementsbeheer kunt u de voorkeuren van uw ontvangers beheren en bijhouden welke ontvangers zich hebben aangemeld voor welke soorten abonnementen. Zie [Informatie over abonnementen](../../delivery/using/about-services-and-subscriptions.md) voor meer informatie.
+* **Toestemmingsbeheer**: via de procedure van abonnementsbeheer kunt u de voorkeuren van uw ontvangers beheren en bijhouden welke ontvangers zich hebben aangemeld voor welke soorten abonnementen. Zie [Lidmaatschappen](../../delivery/using/about-services-and-subscriptions.md) voor meer informatie hierover.
 * **Dataretentie**: alle ingebouwde standaard logtabellen bevatten vooraf ingestelde retentieperioden, waarbij de gegevensopslag over het algemeen is beperkt tot 6 maanden of korter. Er kunnen extra retentieperioden worden ingesteld met workflows. Neem hiervoor contact op met de adviseurs van Adobe of met technische beheerders.
 * **Rights Management**: Adobe Campaign biedt u de mogelijkheid om via verschillende standaard of aangepaste rollen de rechten te beheren die aan de verschillende Campaign-operators zijn toegewezen. Hierdoor kunt u bepalen wie binnen uw bedrijf toegang heeft tot verschillende typen gegevens en deze kan wijzigen of exporteren. Zie [Toegangscontrole](../../platform/using/access-management.md) voor meer informatie.
 
@@ -159,29 +159,29 @@ De implementatiestappen voor het maken van deze verzoeken worden uiteengezet in 
 
 ### Cookies {#cookies}
 
-Dankzij de trackingfuncties van Adobe Campaign kunt u het bladeren door de ontvangers van de cookies bijhouden aan de hand van drie typen cookies: een sessiecookie en twee permanente cookies.
+Dankzij de trackingfuncties van Adobe Campaign kunt u bijhouden hoe verzendingsontvangers bladeren met behulp van drie typen cookies: een sessiecookie en twee permanente cookies.
 
-* Een **session** cookie: het **nlid**-cookie bevat de id van de e-mail die naar de contactpersoon is verzonden (**broadlogId**) en de id van de berichtsjabloon (**deliveryId**). Deze wordt toegevoegd wanneer de contactpersoon op een URL klikt die is opgenomen in een e-mail die door Adobe Campaign wordt verzonden. Hiermee kunt u het gedrag van de contactpersoon op het web volgen. Deze sessiecookie wordt automatisch gewist wanneer de browser wordt gesloten. De contactpersoon kan zijn browser configureren om cookies te weigeren.
+* Een **sessiecookie**: de **nlid**-cookie bevat de id van de e-mail die is verzonden naar de contactpersoon (**broadlogId**) en de id van de berichtsjabloon (**deliveryId**). Deze wordt toegevoegd wanneer de contactpersoon op een URL klikt die is opgenomen in een e-mail die door Adobe Campaign wordt verzonden. Hiermee kunt u het gedrag van de contactpersoon op het web volgen. Deze sessiecookie wordt automatisch gewist wanneer de browser wordt gesloten. De contactpersoon kan zijn browser configureren om cookies te weigeren.
 
 * Twee **permanente** cookies:
-   * Het **UUID** (Universal Unique IDentifier)-cookie wordt gedeeld tussen Adobe Experience Cloud-oplossingen. Deze wordt één keer ingesteld totdat deze verdwijnt uit de clientbrowser wanneer een nieuwe waarde wordt gegenereerd. Met dit cookie kunt u de gebruikers identificeren die met de Experience Cloud-oplossingen werken wanneer ze een website bezoeken. Het kan door een landingspagina (om onbekende klantenactiviteiten aan een ontvanger te associëren) of door een levering worden gedeponeerd. De beschrijving van dit cookie is beschikbaar op [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=en#ec-cookies).
-   * Het **nllastdelid**-cookie (geïntroduceerd in Campaign Classic 20.3) is een permanente cookie die **deliveryId** bevat van de laatste levering waarvan de gebruiker op de koppeling heeft geklikt. Dit cookie wordt gebruikt - wanneer het sessiecookie ontbreekt - om de volgende tabel te identificeren die wordt gebruikt.
+   * Het **UUID**-cookie (Universal Unique IDentifier) wordt gedeeld tussen Adobe Experience Cloud-oplossingen. Dit wordt één keer ingesteld totdat het verdwijnt uit de clientbrowser wanneer een nieuwe waarde wordt gegenereerd. Met dit cookie kunt u de gebruikers identificeren die met de Experience Cloud-oplossingen werken wanneer ze een website bezoeken. Het kan worden geplaatst door een introductiepagina (om onbekende klantenactiviteiten aan een ontvanger te koppelen) of door een verzending. De beschrijving van dit cookie is beschikbaar op [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=nl#ec-cookies).
+   * Het **nllastdelid**-cookie (geïntroduceerd in Campaign Classic 20.3) is een permanente cookie die de **deliveryId** bevat van de laatste verzending waarvan de gebruiker op de koppeling heeft geklikt. Deze cookie wordt gebruikt wanneer de sessiecookie ontbreekt om te identificeren welke trackingtabel moet worden gebruikt.
 
 In verordeningen zoals de Algemene verordening gegevensbescherming (AVG) wordt bepaald dat bedrijven de toestemming van webgebruikers nodig hebben voordat ze cookies mogen installeren.
 
-* U moet gebruikers laten weten dat uw sites zijn uitgerust met webtraceringsprogramma&#39;s via een verzoek om toestemming (bijvoorbeeld via de pagina) met een selectievakje voor het gebruik van cookies, of u moet een banner toevoegen boven aan de eerste pagina waarop ze landen, enzovoort.
+* U moet gebruikers laten weten dat uw sites zijn uitgerust met webtrackingtools via een verzoek om toestemming (bijvoorbeeld op de pagina) met een selectievakje voor het autoriseren van het gebruik van cookies, of u moet een banner toevoegen boven aan de eerste pagina waarop ze landen, enzovoort.
 * Pop-upvensters moeten worden vermeden omdat ze vaak worden geblokkeerd door browsers.
 
-### Berichten bijhouden {#message-tracking}
+### Tracking van berichten {#message-tracking}
 
-Met Adobe Campaign kunt u de verzonden e-mails en het gedrag van de ontvangers van de levering volgen: openen, klikken op koppelingen, abonnementen enz. Zie [Informatie over bericht bijhouden](../../delivery/using/about-message-tracking.md) voor meer informatie.
+Met Adobe Campaign kunt u de verzonden e-mails en het gedrag van de ontvangers van de verzending bijhouden: het openen, het klikken op koppelingen, afmeldingen, enzovoort. Zie [Tracking van berichten](../../delivery/using/about-message-tracking.md) voor meer informatie.
 
-Om dit te doen, voeg [gevolgde verbindingen](../../delivery/using/how-to-configure-tracked-links.md) aan uw berichten toe om het effect van uw levering en ontvankelijk gedrag op [het Volgen](../../delivery/using/delivery-dashboard.md#tracking-logs) lusje van het leveringsdashboard te meten. Trackinggegevens worden geïnterpreteerd in het [Trackingindicatoren](../../reporting/using/delivery-reports.md#tracking-indicators)-rapport.
+U kunt dit doen door [trackingkoppelingen](../../delivery/using/how-to-configure-tracked-links.md) aan uw berichten toe te voegen om het effect van uw verzending en het gedrag van de ontvangers te meten in het tabblad [Tracking](../../delivery/using/delivery-dashboard.md#tracking-logs) van het verzendingsdashboard. Trackinggegevens worden geïnterpreteerd in het rapport [Trackingindicatoren](../../reporting/using/delivery-reports.md#tracking-indicators).
 
-### Webspatiëring {#web-tracking}
+### Webtracking {#web-tracking}
 
-Met Adobe Campaign kunt u ook controleren hoe ontvangers door uw website bladeren: tags voor bijhouden invoegen om informatie te verzamelen en bezoeken aan webtoepassingspagina&#39;s te meten. Zie [Een webtoepassing bijhouden](../../web/using/tracking-a-web-application.md) voor meer informatie.
+Met Adobe Campaign kunt u ook controleren hoe ontvangers op uw website bladeren: voeg trackingtags toe om informatie te verzamelen en bezoeken aan pagina&#39;s van de webapplicatie te meten. Zie [Tracking van een webapplicatie](../../web/using/tracking-a-web-application.md) voor meer informatie.
 
-De configuratie van web tracking wordt weergegeven in [deze sectie](../../configuration/using/about-web-tracking.md).
+De configuratie van webtracking wordt weergegeven in [deze sectie](../../configuration/using/about-web-tracking.md).
 
-Om het bijhouden van wijzigingen verder te beheren, kunt u in Adobe Campaign een uitschakelbanner weergeven om het webgedrag van eindgebruikers die zich afmelden voor het volgen van gedragingen, niet meer te volgen. Voor meer op dit, zie [De toepassing van het Web volgzich opt-out](../../web/using/web-application-tracking-opt-out.md).
+Met Adobe Campaign hebt u nog meer mogelijkheden om tracking te beheren, bijvoorbeeld met opt-outbanners. Hiermee stopt u met het volgen van het webgedrag van eindgebruikers die hebben aangegeven dat ze niet meer willen worden gevolgd. Zie [Afmelden voor tracking in de webapplicatie](../../web/using/web-application-tracking-opt-out.md) voor informatie hierover.
