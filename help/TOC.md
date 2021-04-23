@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: b741b10fd1d3a94a3e6c71e95ff43cc0ee54ebc7
 workflow-type: tm+mt
 source-wordcount: '2519'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -24,10 +24,10 @@ ht-degree: 97%
 + Release-opmerkingen {#release-notes}
    + [Aan de slag met upgrades](rn/using/rn-overview.md)
    + [Laatste release](rn/using/latest-release.md)
-   + [!DNL Gold Standard] vrijgeven  {#gs-release}
+   + [!DNL Gold Standard]-release {#gs-release}
       + [Wat is [!DNL Gold Standard]](rn/using/gs-overview.md)
-      + [[!DNL Gold Standard] releaseopmerkingen](rn/using/gold-standard.md)
-      + [[!DNL Gold Standard] compatibiliteitsmatrix](rn/using/compatibility-matrix-gs.md)
+      + Aanvullende informatie over[[!DNL Gold Standard] ](rn/using/gold-standard.md)
+      + [[!DNL Gold Standard] -compatibiliteitsmatrix](rn/using/compatibility-matrix-gs.md)
    + Eerdere releases {#previous-releases}
       + [Release 20.3](rn/using/release--20-3.md)
       + [Release 20.2](rn/using/release--20-2.md)
@@ -49,7 +49,7 @@ ht-degree: 97%
       + [Adobe Campaign starten](platform/using/launching-adobe-campaign.md)
       + Adobe Campaign-werkruimte{#campaign-workspace}
          + [Aan de slag met de Campaign-gebruikersinterface](platform/using/adobe-campaign-workspace.md)
-         + [Campagneverkenner gebruiken](platform/using/adobe-campaign-explorer.md)
+         + [Campaign Explorer gebruiken](platform/using/adobe-campaign-explorer.md)
          + [Lijsten verkennen en aanpassen](platform/using/adobe-campaign-ui-lists.md)
       + Veelgestelde vragen {#faq}
          + [Populaire vragen](platform/using/common-questions.md)
@@ -147,16 +147,16 @@ ht-degree: 97%
          + [Verzenden op Japanse mobiele telefoons](delivery/using/sending-emails-on-japanese-mobiles.md)
       + [Bestanden bijvoegen](delivery/using/attaching-files.md)
    + Sms verzenden {#sending-messages-on-mobiles}
-      + [Aan de slag met SMS](delivery/using/sms-channel.md)
-      + [SMS-kanaal configureren](delivery/using/sms-set-up.md)
-      + [SMS maken](delivery/using/sms-create.md)
-      + [SMS verzenden en volgen](delivery/using/sms-send.md)
+      + [Aan de slag met sms](delivery/using/sms-channel.md)
+      + [Sms-kanaal configureren](delivery/using/sms-set-up.md)
+      + [Een sms maken](delivery/using/sms-create.md)
+      + [Een sms verzenden en volgen](delivery/using/sms-send.md)
       + [Protocol en instellingen voor sms-connector](delivery/using/sms-protocol.md)
       + [Problemen met sms oplossen](delivery/using/troubleshooting-sms.md)
       + [Migreren naar de Extended Generic SMPP-connector](delivery/using/unsupported-connector-migration.md)
    + [LINE-berichten verzenden](delivery/using/line-channel.md)
    + Pushmeldingen verzenden {#sending-push-notifications}
-      + [Aan de slag met mobiel toepassingskanaal](delivery/using/about-mobile-app-channel.md)
+      + [Aan de slag met het kanaal voor mobiele apps](delivery/using/about-mobile-app-channel.md)
       + [De Campaign-SDK integreren in de mobiele applicatie](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + De mobiele applicatie configureren{#configure-the-mobile-app}
          + [Aan de slag met de app-configuratie](delivery/using/get-started-app-config.md)
@@ -227,8 +227,8 @@ ht-degree: 97%
       + [De trackinglogboeken openen](delivery/using/accessing-the-tracking-logs.md)
       + [Tracking testen](delivery/using/testing-tracking.md)
       + [Problemen met tracking oplossen](delivery/using/tracking-troubleshooting.md)
-   + Leverbaarheidsbeheer {#deliverability-management}
-      + [Wat is leverbaarheid?](delivery/using/about-deliverability.md)
+   + Afleverbaarheidsbeheer {#deliverability-management}
+      + [Wat is afleverbaarheid?](delivery/using/about-deliverability.md)
       + [Content van controleberichten](delivery/using/control-message-content.md)
       + [Leverbaarheid controleren](delivery/using/monitoring-deliverability.md)
       + [Inboxrendering](delivery/using/inbox-rendering.md)
@@ -666,9 +666,9 @@ ht-degree: 97%
       + [URL-machtigingen instellen](installation/using/url-permissions.md)
       + [Bestanden en bronnen](installation/using/file-res-management.md)
       + [Tomcat configureren](installation/using/configure-tomcat.md)
-      + [Leveringsinstellingen configureren](installation/using/configure-delivery-settings.md)
+      + [Verzendingsinstellingen configureren](installation/using/configure-delivery-settings.md)
       + [Technische e-mailconfiguraties](installation/using/email-deliverability.md)
-      + [MX-servers gebruiken met campagne](installation/using/using-mx-servers.md)
+      + [MX-servers gebruiken met Campaign](installation/using/using-mx-servers.md)
       + [Bcc van e-mail configureren](installation/using/email-archiving.md)
       + [SpamAssassin configureren](installation/using/configuring-spamassassin.md)
    + Verbinding maken met Campaign{#connect-to-campaign}
