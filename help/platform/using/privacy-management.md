@@ -6,14 +6,14 @@ description: Meer informatie over privacybeheer
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: c86b2d377c66e79cf4f10053f588796b95e6877e
-workflow-type: tm+mt
+exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '887'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
-
 
 # Privacybeheer {#privacy-management}
 
@@ -28,7 +28,7 @@ Hier volgen de vijf voornaamste mogelijkheden die Adobe Campaign biedt om u gere
 
 ![](assets/privacy-gdpr-use-cases.png)
 
-Zie [Recht op toegang en recht om te worden vergeten](#right-access-forgotten) en [Toestemming, Behoud en Rollen](#consent-retention-roles) voor meer informatie.
+Zie [Toegangsrecht en recht om te worden vergeten](#right-access-forgotten) en [Toestemming, retentie en rollen](#consent-retention-roles) voor meer informatie.
 
 <!--This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
 
@@ -80,7 +80,7 @@ Vanaf het begin hebben in Adobe Campaign functies voor het helpen beheren van be
 
 ![](assets/privacy-consent-management.png)
 
-Raadpleeg de [gedetailleerde documentatie](../../delivery/using/managing-subscriptions.md) voor meer informatie over contentbeheer.
+Raadpleeg de [gedetailleerde documentatie](../../delivery/using/managing-subscriptions.md) voor meer informatie over toestemmingsbeheer.
 
 Naast de tools voor toestemmingsbeheer van Adobe Campaign kunt u ook nagaan of een consument ervoor heeft gekozen om zich af te melden voor de verkoop van persoonsgegevens. Zie [deze sectie](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
 
@@ -90,17 +90,17 @@ Voor retentie bevatten de ingebouwde logtabellen in Campaign vooraf ingestelde r
 
 Hieronder volgen de standaardwaarden voor retentie in de ingebouwde tabellen. Houd er rekening mee dat de retentieconfiguratie tijdens de implementatie door technische beheerders van Adobe wordt ingesteld, en dat de waarden per implementatie kunnen verschillen op basis van de vereisten van de klant.
 
-* **Geconsolideerde reeksspatiëring**: 1 jaar
+* **Geconsolideerde tracking**: 1 jaar
 * **Verzendingslogs**: 6 maanden
-* **Logboeken** bijhouden: 1 jaar
-* **Verwijderde leveringen**: 1 week
-* **Import weigert**: 6 maanden
+* **Trackinglogs**: 1 jaar
+* **Verwijderde verzendingen**: 1 week
+* **Geweigerde importacties**: 6 maanden
 * **Bezoekersprofielen**: 1 maand
-* **Voorstellen** voorstel: 1 jaar
+* **Aanbiedingsvoorstellen**: 1 jaar
 * **Gebeurtenissen**: 1 maand
 * **Statistieken van gebeurtenisverwerking**: 1 jaar
 * **Gearchiveerde gebeurtenissen**: 1 jaar
-* **Gebeurtenissen van Pipeline genegeerd**: 1 maand
+* **Genegeerde pijplijngebeurtenissen**: 1 maand
 
 Net als bij verwijderen is het met de functionaliteit van de standaardworkflow mogelijk om retentieperioden in te stellen voor elke aangepaste tabel.
 
@@ -116,4 +116,4 @@ Zo kunt u met deze functionaliteit ook verschillende mogelijkheden voor elke geb
 
 ![](assets/privacy-user-management.png)
 
-Raadpleeg de [gedetailleerde documentatie](../../platform/using/access-management.md) voor meer informatie over toegangsbeheer.
+Zie de [gedetailleerde documentatie](../../platform/using/access-management.md) voor meer informatie over toegangscontrole.
