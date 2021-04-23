@@ -3,15 +3,15 @@ solution: Campaign Classic
 product: campaign
 title: Compatibiliteitsmatrix voor Campaign Classic
 description: Campaign Classic-compatibiliteitsmatrix
-feature: Overview
+feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '524'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 Dit document bevat een lijst met alle systemen en onderdelen die worden ondersteund voor [de nieuwste build](../../rn/using/latest-release.md) van **Adobe Campaign Classic**. Producten en versies die geen deel uitmaken van deze lijst, zijn niet compatibel met Adobe Campaign.
 
-Als u een [!DNL Gold Standard] gebruiker bent, verwijs naar [[!DNL Gold Standard] Verenigbaarheidsmatrijs](../../rn/using/compatibility-matrix-gs.md).
+Als u een [!DNL Gold Standard]-gebruiker bent, raadpleegt u de [[!DNL Gold Standard] -compatibiliteitsmatrix](../../rn/using/compatibility-matrix-gs.md).
 
 ## Belangrijke opmerkingen{#important-notes}
 
@@ -157,7 +157,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 en SP2</p>
-<p>Waarschuwing: Microsoft SQL Server wordt niet als de primaire database ondersteund wanneer de Campaign-server op Linux wordt uitgevoerd. <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Meer informatie</a>.</p>
+<p>Waarschuwing: Microsoft SQL Server wordt niet als de primaire database ondersteund wanneer de Campaign-server op Linux wordt uitgevoerd. <a href="https://docs.adobe.com/content/help/nl-NL/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Meer informatie</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -202,9 +202,9 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <tr>
 <td>Oracle</td>
 <td>
-<p>19 quater</p>
-<p>18 quater</p>
-<p>12 quater</p>
+<p>19c</p>
+<p>18c</p>
+<p>12c</p>
 <p>11g</p>
 </td>
 </tr>
@@ -214,9 +214,9 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <p>12.x</p>
 <p>11.x</p>
 <p>10.x</p>
-<p>9,6 x</p>
-<p>9,5 x</p>
-<p>9,4 x</p>
+<p>9.6.x</p>
+<p>9.5.x</p>
+<p>9.4.x</p>
 </td>
 </tr>
 <tr><td>SQL Server</td>
