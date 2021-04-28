@@ -6,10 +6,10 @@ description: TechNote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 65ff09dd8ded029178c4c85489bf01ef80d16e8d
+source-git-commit: e1b09767a8eed3a7dc90e4db0429238d86d39570
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 6%
+source-wordcount: '355'
+ht-degree: 5%
 
 ---
 
@@ -27,13 +27,13 @@ Om de beveiliging te verbeteren, is het handtekeningmechanisme voor het bijhoude
 
 Als uw omgeving wordt uitgevoerd op een van de hieronder vermelde versies, kunt u dit beïnvloeden:
 
-* Gold Standard 7 tot 11. [Meer informatie](../rn/using/gold-standard.md)
-* Campagne 21.1.1 tot en met 21.1.2 introducties. [Meer informatie](../rn/using/latest-release.md)
-* Campagne 20.3.1 tot 20.3.3 versies. [Meer informatie](../rn/using/release--20-3.md)
-* Campagne 20.2.1 tot en met 20.2.3 introducties. [Meer informatie](../rn/using/release--20-2.md)
-* Campagne 20.1.1 tot en met 21.1.3 brengt. [Meer informatie](../rn/using/release--20-1.md)
-* Campagne 19.2.2 tot en met 19.2.3 introducties. [Meer informatie](../rn/using/release--19-2.md)
-* Campagne 19.1.5 tot en met 19.1.7 introducties. [Meer informatie](../rn/using/release--19-1.md)
+* Gold Standard 8 tot 11. [Meer informatie](../rn/using/gold-standard.md#gs-8)
+* Campagne 21.1.1 (build 9277) tot en met 21.1.2 (build 9282). [Meer informatie](../rn/using/latest-release.md)
+* Campagne 20.3.1 (build 9228) tot 20.3.3 (build 9234)-releases. [Meer informatie](../rn/using/release--20-3.md)
+* Campagne 20.2.1 (build 9178) tot 20.2.3 (build 9182)-releases. [Meer informatie](../rn/using/release--20-2.md)
+* Campagne 20.1.1 (build 9122) tot en met 21.1.3 (build 9124). [Meer informatie](../rn/using/release--20-1.md)
+* Campagne 19.2.2 (build 9080) tot en met 19.2.3 (build 9081). [Meer informatie](../rn/using/release--19-2.md)
+* Campagne 19.1.5 (build 9033) tot en met 19.1.7 (build 9036). [Meer informatie](../rn/using/release--19-1.md)
 
 Leer hoe u uw versie [in deze sectie ](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) controleert.
 
