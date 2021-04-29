@@ -9,7 +9,7 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 9260b467119475e9e0352b6e521d6f2ca426165c
+source-git-commit: 718b490d48c6cfabdb24ab18dffb6db664f2a46c
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -53,7 +53,7 @@ Gebaseerd op het tijdkader van het incident, hieronder zijn de geadviseerde rich
 * Voor campagneinstanties met de binnenkomende informatie van de E-mailregel in het **[!UICONTROL Error text]** gebied van de quarantainelijst:
 
    * **Fouttekst (quarantainetekst)** bevat &quot;Momen_Code10_InvalidRecipient&quot;
-   * **E-maildomein (@domein)** gelijk aan icloud.com&quot; OF E-maildomein (@domein) gelijk aan me.com&quot; OF E-maildomein (@domein) gelijk aan mac.com&quot;
+   * **E-maildomein (@domein)** gelijk aan icloud.com OR  **Email domein (@domein)** gelijk aan me.com OF  **E-maildomein (@domein)** gelijk aan mac.com
    * **Status bijwerken (@lastModified)** op of na 26-4-2021 07:00:00
    * **Status bijwerken (@lastModified)** op of vóór 26-4-2021 01:00:00 PM
 
