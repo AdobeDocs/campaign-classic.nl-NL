@@ -9,9 +9,9 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: ad7f0725a5ce1dea9b5b3ab236c839a816b29382
+source-git-commit: 98f55ee27a1172ce4a0590f46affe8947fd58d0f
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '417'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,14 @@ ht-degree: 4%
 
 In het geval van een stroomonderbreking van ISP, kunnen de e-mails die door Campaign worden verzonden niet met succes aan hun ontvanger worden geleverd: deze e - mails worden ten onrechte als bounces gemarkeerd .
 
-Op 26 april 2021 leidde een wereldwijd probleem bij Apple ertoe dat sommige e-mailberichten die naar geldige Apple-e-mailadressen werden verzonden, onjuist werden teruggestuurd als ongeldige e-mailadressen door Apple-servers met de volgende stuiterende reactie: *&quot;550 5.1.1 <email address>: opzoekresultaat gebruiker is gelukt, maar er is geen gebruikersrecord gevonden.&quot;*Dit probleem is op 26-4-17-2010 opgetreden en duurde 7 uur &#39;s middags.
+Op 26 april 2021 leidde een wereldwijd probleem bij Apple ertoe dat sommige e-mailberichten die naar geldige Apple-e-mailadressen werden verzonden, onjuist werden teruggestuurd als ongeldige e-mailadressen door Apple-servers met de volgende stuiterende reactie:
+
+
+```
+“550 5.1.1 <email address>: user lookup success but no user record found.”
+```
+
+Dit probleem is op 26-4-17-2010 opgetreden en duurde 7 uur &#39;s middags.
 
 >[!NOTE]
 >
@@ -44,7 +51,7 @@ Gebaseerd op het tijdkader van het incident, hieronder zijn de geadviseerde rich
 
 * Voor de instanties van de Campagne met SMTP stuitert reactieinformatie op het **[!UICONTROL Error text]** gebied van de quarantainelijst:
 
-   * **De tekst van de fout (quarantaine tekst)** bevat &quot;het succes van de gebruikersraadpleging maar geen gevonden gebruikersverslag&quot;en de tekst van de  **Fout (quarantaine tekst)**  bevat &quot;support.apple.com&quot; **
+   * **De tekst van de fout (quarantainetekst)** bevat &quot;het succes van de gebruikersraadpleging maar geen gevonden gebruikersverslag&quot;en de tekst van de  **Fout (quarantainetekst)**  bevat &quot;support.apple.com&quot;
    * **Status bijwerken (@lastModified)** op of na 26-4-2021 07:00:00
    * **Status bijwerken (@lastModified)** op of vóór 26-4-2021 01:00:00 PM
 
