@@ -7,11 +7,11 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: abd5c7430c3f7a1a056a014ad46a0b94157e259f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '921'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,8 +27,8 @@ Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden 
 
 _15 april 2021_
 
-* Het wachtwoordbeheer is verbeterd en de beveiliging is geoptimaliseerd.
-* Probleem opgelost waarbij MTA vastliep.
+* Wachtwoordbeheer is verbeterd om de beveiliging te optimaliseren.
+* Er is een probleem opgelost waarbij MTA soms vastliep.
 
 ## ![](assets/do-not-localize/red_2.png) Release 21.1.1 - build 9277 {#release-21-1-1-build-9277}
 
