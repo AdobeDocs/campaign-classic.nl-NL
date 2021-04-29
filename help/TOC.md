@@ -8,11 +8,11 @@ user-guide-description: U kunt cross-channel marketingcampagnes ontwerpen, plann
 solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b741b10fd1d3a94a3e6c71e95ff43cc0ee54ebc7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2519'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 99%
    + [Technische opmerkingen](technotes/technote.md)
    + [Update van iOS-certificaat](technotes/ios-certificate-update.md)
    + [Configuratie-updates voor Campaign](technotes/acc-config-updates.md)
-   + [Bijwerken van bijgehouden URL&#39;s](technotes/tracked-urls.md)
+   + [Bijgehouden URL&#39;s bijwerken](technotes/tracked-urls.md)
 + Aan de slag {#getting-started}
    + Starten met Adobe Campaign {#starting-with-adobe-campaign}
       + [Aan de slag met Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
