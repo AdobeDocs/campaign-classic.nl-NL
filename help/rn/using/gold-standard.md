@@ -7,11 +7,11 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 113a3535cd197f9b654fc1e50e20886e76ee886a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1058'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ _14 april 2021_
 
 De build 9032@d030c36 bevat de volgende oplossing:
 
-* Oplossing voor een regressie van de clientconsole die tot permanente foutberichten op het IMS-verbindingsscherm leidde. (NEO-34821)
+* Er is een probleem met een regressie van de clientconsole opgelost die tot permanente foutberichten op het IMS-verbindingsscherm leidde. (NEO-34821)
 
 **Alleen de console-upgrade is verplicht. Er is geen serverupgrade vereist.**
 
@@ -39,7 +39,7 @@ De build 9032@10c2709 bevat de volgende oplossing:
 
 >[!NOTE]
 >
-> Maak verbinding met [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/nl/campaign.html) om de nieuwe versie te downloaden. [Op deze pagina ](../../installation/using/client-console-availability-for-windows.md) leert u hoe u de console-update aan alle eindgebruikers kunt voorstellen.
+> Maak verbinding met [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) om de nieuwe versie te downloaden. [Op deze pagina ](../../installation/using/client-console-availability-for-windows.md) leert u hoe u de console-update aan alle eindgebruikers kunt voorstellen.
 
 _22 december 2020_
 
@@ -99,11 +99,11 @@ _29 april 2020_
 
 De build 9032@3a9dc9c bevat de volgende oplossingen:
 
-* Verbeterde beveiliging voor tracking van koppelingen in e-mails. Dit is standaard ingeschakeld voor alle klanten. Er is een extra, verbeterde beveiligingsfunctie beschikbaar die kan worden ingeschakeld door contact op te nemen met de klantenservice. Meer informatie over de functie en de stappen die niet-gehoste klanten moeten uitvoeren, vindt u in de [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
+* Verbeterde beveiliging voor tracking van koppelingen in e-mails. Dit is standaard ingeschakeld voor alle klanten. Er is een extra, verbeterde beveiligingsfunctie beschikbaar die kan worden ingeschakeld door contact op te nemen met de klantenservice. Meer informatie over de functie en de stappen die niet-gehoste klanten moeten uitvoeren, vindt u in de [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html#signature-mechanism).
 
 >[!CAUTION]
 >
->Als u problemen hebt met pushmeldingen via trackingkoppelingen, of leveringen die ankerlabels gebruiken, raden we u aan het nieuwe handtekeningmechanisme voor tracking van koppelingen uit te schakelen. De procedure wordt [op deze pagina](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism) nader beschreven
+>Als u problemen hebt met pushmeldingen via trackingkoppelingen, of leveringen die ankerlabels gebruiken, raden we u aan het nieuwe handtekeningmechanisme voor tracking van koppelingen uit te schakelen. De procedure wordt [op deze pagina](https://helpx.adobe.com/nl/campaign/kb/acc-security.html#signature-mechanism) nader beschreven
 
 * Er is een probleem verholpen waarbij afbeeldingen niet konden worden weergegeven in Line-leveringen. (NEO-23207)
 * Probleem verholpen met de activiteit **Bestand overdragen** waardoor verificatie op basis van SFTP-sleutels niet kon werken op Debian 9. (NEO-23183)
