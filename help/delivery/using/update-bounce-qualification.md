@@ -9,9 +9,9 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 7c161862a4ce2e86e7968fd61af6b8ca28d6623f
+source-git-commit: 378be6d4ef4ff69818d45c608a61b9a3506398be
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '427'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 ## Context
 
-Op 26 april 2021 leidde een wereldwijd probleem bij Apple ertoe dat sommige e-mailberichten die naar geldige Apple-e-mailadressen werden verzonden, onjuist werden teruggestuurd als ongeldige e-mailadressen door Apple-servers met de volgende stuiterende reactie:  &quot;550 5.1.1. <email address>: opzoekresultaat gebruiker is gelukt, maar er is geen gebruikersrecord gevonden.&quot;
+Op 26 april 2021 leidde een wereldwijd probleem bij Apple ertoe dat sommige e-mailberichten die naar geldige Apple-e-mailadressen werden verzonden, onjuist werden teruggestuurd als ongeldige e-mailadressen door Apple-servers met de volgende stuiterende reactie:  &quot;550 5.1.1 &quot;E-mailadres&quot;: opzoekresultaat gebruiker is gelukt, maar er is geen gebruikersrecord gevonden.&quot;
 
 Dit probleem is op 26-4-17-2010 opgetreden en duurde 7 uur &#39;s middags.
 
