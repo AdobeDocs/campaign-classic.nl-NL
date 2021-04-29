@@ -9,7 +9,7 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 378be6d4ef4ff69818d45c608a61b9a3506398be
+source-git-commit: 9260b467119475e9e0352b6e521d6f2ca426165c
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -24,11 +24,11 @@ Op 26 april 2021 leidde een wereldwijd probleem bij Apple ertoe dat sommige e-ma
 
 Dit probleem is op 26-4-17-2010 opgetreden en duurde 7 uur &#39;s middags.
 
-In het geval van een stroomonderbreking van ISP, kunnen de e-mails die door Campaign worden verzonden niet met succes aan hun ontvanger worden geleverd: deze e - mails worden ten onrechte als bounces gemarkeerd .
-
 >[!NOTE]
 >
 >U kunt het dashboard van de Status van het Systeem van Apple op [deze pagina](https://www.apple.com/support/systemstatus/) controleren.
+
+In het geval van een stroomonderbreking van ISP, kunnen de e-mails die door Campaign worden verzonden niet met succes aan hun ontvanger worden geleverd: deze e - mails worden ten onrechte als bounces gemarkeerd .
 
 Per standaard stuitverwerkingslogica voegde Adobe Campaign deze ontvangers automatisch toe aan de quarantainelijst met een **[!UICONTROL Status]**-instelling van **[!UICONTROL Quarantine]**. Om dit te verbeteren, moet u uw quarantainetabel in Campagne bijwerken door deze ontvangers te vinden en te verwijderen, of hun **[!UICONTROL Status]** te veranderen in **[!UICONTROL Valid]** zodat de nachtelijke schoonmaakwerkschema hen zal verwijderen.
 
