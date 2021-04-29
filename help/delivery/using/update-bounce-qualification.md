@@ -9,27 +9,22 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 98f55ee27a1172ce4a0590f46affe8947fd58d0f
+source-git-commit: 7c161862a4ce2e86e7968fd61af6b8ca28d6623f
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 4%
+source-wordcount: '425'
+ht-degree: 3%
 
 ---
 
-# Bouncekwalificatie bijwerken na een ISP-uitval {#update-bounce-qualification.md}
+# Onjuiste harde grenzen bijwerken na afbreking van Apple {#update-bounce-qualification.md}
 
 ## Context
 
-In het geval van een stroomonderbreking van ISP, kunnen de e-mails die door Campaign worden verzonden niet met succes aan hun ontvanger worden geleverd: deze e - mails worden ten onrechte als bounces gemarkeerd .
-
-Op 26 april 2021 leidde een wereldwijd probleem bij Apple ertoe dat sommige e-mailberichten die naar geldige Apple-e-mailadressen werden verzonden, onjuist werden teruggestuurd als ongeldige e-mailadressen door Apple-servers met de volgende stuiterende reactie:
-
-
-```
-“550 5.1.1 <email address>: user lookup success but no user record found.”
-```
+Op 26 april 2021 leidde een wereldwijd probleem bij Apple ertoe dat sommige e-mailberichten die naar geldige Apple-e-mailadressen werden verzonden, onjuist werden teruggestuurd als ongeldige e-mailadressen door Apple-servers met de volgende stuiterende reactie:  &quot;550 5.1.1. <email address>: opzoekresultaat gebruiker is gelukt, maar er is geen gebruikersrecord gevonden.&quot;
 
 Dit probleem is op 26-4-17-2010 opgetreden en duurde 7 uur &#39;s middags.
+
+In het geval van een stroomonderbreking van ISP, kunnen de e-mails die door Campaign worden verzonden niet met succes aan hun ontvanger worden geleverd: deze e - mails worden ten onrechte als bounces gemarkeerd .
 
 >[!NOTE]
 >
