@@ -26,7 +26,7 @@ ht-degree: 100%
    + [Laatste release](rn/using/latest-release.md)
    + [!DNL Gold Standard]-release {#gs-release}
       + [Wat is [!DNL Gold Standard]](rn/using/gs-overview.md)
-      + Aanvullende informatie over[[!DNL Gold Standard] ](rn/using/gold-standard.md)
+      + [Aanvullende informatie over[!DNL Gold Standard] ](rn/using/gold-standard.md)
       + [[!DNL Gold Standard] -compatibiliteitsmatrix](rn/using/compatibility-matrix-gs.md)
    + Eerdere releases {#previous-releases}
       + [Release 20.3](rn/using/release--20-3.md)
@@ -372,7 +372,7 @@ ht-degree: 100%
       + [Doelgroepen importeren en exporteren](integrations/using/importing-and-exporting-audiences.md)
    + Assets delen {#asset-sharing}
       + [Assets delen met [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
-      + [Toegang tot [!DNL Assets]](integrations/using/configuring-access-to-assets.md) configureren
+      + [Toegang tot [!DNL Assets] configureren](integrations/using/configuring-access-to-assets.md)
       + [Een gedeelde asset invoegen](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Info [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
@@ -380,14 +380,14 @@ ht-degree: 100%
       + [Een [!DNL Experience Manager] -nieuwsbrief maken](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Integreren met [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
-      + [De integratie met [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md) configureren
+      + [De integratie met [!DNL Adobe Target] configureren](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Een dynamische afbeelding invoegen](integrations/using/inserting-a-dynamic-image.md)
    + ACS Connector {#acs-connector}
-      + Principes en datacyclus van [[!DNL ACS Connector] ](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [Principes en datacyclus van [!DNL ACS Connector] ](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Profielen synchroniseren](integrations/using/synchronizing-profiles.md)
       + [Doelgroepen synchroniseren](integrations/using/synchronizing-audiences.md)
       + [Webapplicaties synchroniseren](integrations/using/synchronizing-web-applications.md)
-      + [Problemen met de [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md) oplossen
+      + [Problemen met de [!DNL ACS Connector] oplossen](integrations/using/troubleshooting-the-acs-connector.md)
    + Adobe Experience Cloud-triggers {#experience-triggers}
       + [Aan de slag met [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Pijplijn configureren](integrations/using/configuring-pipeline.md)
