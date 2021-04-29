@@ -5,9 +5,9 @@ product: campaign
 title: Adobe Campaign Classic-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 translation-type: tm+mt
-source-git-commit: 52341396fd85e470257e37a1d9404eae775acda8
+source-git-commit: 9260b467119475e9e0352b6e521d6f2ca426165c
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '288'
 ht-degree: 51%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 51%
 
 ## Nieuwe functies
 
-* **[Onjuiste harde ](https://helpx.adobe.com/nl/campaign/kb/update-bounce-qualification.html)**<br/> grenzen verwijderenLeer hoe u onjuiste harde grenzen kunt bijwerken na een Apple-storing
+* **[Onjuiste harde ](delivery/using/update-bounce-qualification.md)**<br/> grenzen verwijderenLeer hoe u onjuiste harde grenzen kunt bijwerken na een Apple-storing
 
 * **[Werk uw APNs-](technotes/ios-certificate-update.md)**<br/> certificaat bijOp 29 maart 2021 heeft een APNs-update gevolgen voor het iOS-kanaal van de campagne. U moet uw configuratie bijwerken om uitval van iOS-pushkanalen te voorkomen.
 
