@@ -8,14 +8,14 @@ content-type: reference
 topic-tags: connectors
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
 translation-type: tm+mt
-source-git-commit: 3b5a6e6f03d9cb26ed372c3df069cbada36756a2
+source-git-commit: 3e3a5250f165677026557a4e2249fc683aa23d57
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
 
-# Connect-campagne en Microsoft Dynamics 365{#connect-to-msdyn}
+# Connect-campagne en Salesforce.com{#connect-to-sfdc}
 
 Op deze pagina leert u hoe u Campaign Classic kunt verbinden met **Salesforce**.
 
