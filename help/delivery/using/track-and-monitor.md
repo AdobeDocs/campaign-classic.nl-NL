@@ -5,14 +5,14 @@ title: Berichten bijhouden en controleren
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
+exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
 translation-type: tm+mt
-source-git-commit: 53e239c04f9c4239a5c32e4f25549cbc5f6ece50
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '430'
 ht-degree: 3%
 
 ---
-
 
 # Bijhouden en bewaken {#track-and-monitor}
 
@@ -39,7 +39,7 @@ Tip: Controleer de configuratie van verkeersbeheer (IP affiniteit). Voor meer op
 
 ## Tracking {#tracking-deliveries}
 
-Om het gedrag van uw ontvangers beter te kennen, kunt u volgen hoe zij op een levering reageren: ontvangen, openen, klikken op koppelingen, abonnementen enz. In Campaign Classic wordt deze informatie weergegeven op het tabblad Tracking van de ontvangers die de levering als doel heeft en op het tabblad Tracking van de levering. In Campaign Standard, wordt het getoond in het Volgen logboeken tabel van de levering.
+Om het gedrag van uw ontvangers beter te kennen, kunt u volgen hoe zij op een levering reageren: ontvangen, openen, klikken op koppelingen, abonnementen enz. In Campaign Classic wordt deze informatie weergegeven op het tabblad Tracking van de ontvangers die de levering als doel heeft en op het tabblad Tracking van de levering.
 
 **Tip**: Berichten bijhouden is standaard ingeschakeld. Als u URL&#39;s wilt configureren, selecteert u de optie URL&#39;s weergeven in de onderste sectie van de wizard voor levering. Voor elke URL van het bericht kunt u kiezen of u reeksspatiëring wilt activeren.
 
