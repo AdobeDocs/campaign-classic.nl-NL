@@ -6,14 +6,14 @@ description: Workflowuitvoering controleren
 audience: workflow
 content-type: reference
 topic-tags: use-cases
+exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
 source-wordcount: '2000'
 ht-degree: 0%
 
 ---
-
 
 # Workflowuitvoering controleren {#monitoring-workflow-execution}
 
@@ -261,7 +261,7 @@ De volgende weergaven zijn beschikbaar:
 * **[!UICONTROL Running]**: geeft een overzicht van alle actieve workflows.
 * **[!UICONTROL Paused]**: geeft een overzicht van alle gepauzeerde workflows.
 * **[!UICONTROL Failed]**: geeft alle mislukte workflows weer.
-* **[!UICONTROL Start Pending]**: maakt een lijst van alle werkschema&#39;s die wachten om door het operationMgt proces te worden begonnen. Deze weergave is alleen beschikbaar bij het pakket **Marketingcampagnes** (zie [Standaardpakketten voor campagne installeren](../../installation/using/installing-campaign-standard-packages.md)).
+* **[!UICONTROL Start Pending]**: maakt een lijst van alle werkschema&#39;s die wachten om door het operationMgt proces te worden begonnen. Deze weergave is alleen beschikbaar bij het pakket **Marketingcampagnes** (zie [Ingebouwde pakketten voor campagnes installeren](../../installation/using/installing-campaign-standard-packages.md)).
 
 ![](assets/workflow-monitoring-views.png)
 
