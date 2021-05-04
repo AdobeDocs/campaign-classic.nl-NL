@@ -6,14 +6,14 @@ description: Leer hoe u interactieve en dynamische e-mailinhoud kunt definiëren
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
+exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
 translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 3%
 
 ---
-
 
 # Interactieve content definiëren{#defining-interactive-content}
 
@@ -49,7 +49,7 @@ Raadpleeg de [documentatie voor AMP-ontwikkelaars](https://amp.dev/documentation
 ## Belangrijke stappen voor het gebruik van AMP voor e-mail met Adobe Campaign {#key-steps-to-use-amp}
 
 Volg onderstaande stappen om een AMP-e-mail met Adobe Campaign te testen en te verzenden:
-1. Installeer het **[!UICONTROL AMP support]**-pakket. Zie [Standaardpakketten voor campagne installeren](../../installation/using/installing-campaign-standard-packages.md).
+1. Installeer het **[!UICONTROL AMP support]**-pakket. Zie [Ingebouwde pakketten van de Campagne installeren](../../installation/using/installing-campaign-standard-packages.md).
 1. Maak een e-mail en maak uw AMP-inhoud in Adobe Campaign. Zie [AMP-e-mailinhoud samenstellen met Adobe Campaign](#build-amp-email-content).
 1. Zorg ervoor dat u voldoet aan alle leveringsvereisten van de e-mailproviders die de AMP-indeling ondersteunen. Zie [AMP voor vereisten voor e-maillevering](#amp-for-email-delivery-requirements).
 1. Wanneer u uw doel definieert, moet u ontvangers selecteren die de AMP-indeling kunnen weergeven. Zie [Een AMP-e-mail richten](#targeting-amp-email).
