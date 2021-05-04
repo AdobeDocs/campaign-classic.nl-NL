@@ -3,15 +3,15 @@ solution: Campaign Classic
 product: campaign
 title: Informatie over profielen
 description: Informatie over profielen
-feature: Profiles, Audiences
+feature: Profielen, publiek
 role: Business Practitioner, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 translation-type: tm+mt
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+source-git-commit: c733b68a06fba9bb24cd1c1995ffc99a1277be87
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 14%
+source-wordcount: '906'
+ht-degree: 12%
 
 ---
 
@@ -93,13 +93,7 @@ Actieve profielen zijn de profielen die voor factureringsdoeleinden worden getel
 
 Het aantal actieve profielen is alleen beschikbaar voor **Marketing instances**. Het is niet beschikbaar voor instanties van de Uitvoering, betekenend MID (midsourcing) en RT (het Centrum van het Bericht / Real-time overseinen) instanties.
 
-Als u op AWS wordt gehost, kunt u het aantal actieve profielen dat op uw instanties wordt gebruikt, ook rechtstreeks via het Configuratiescherm controleren. Raadpleeg de [documentatie van het Configuratiescherm](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html) voor meer informatie.
-
->[!NOTE]
->
->Het configuratiescherm is toegankelijk voor alle gebruikers met beheerdersrechten. De stappen om Admin-toegang aan een gebruiker te verlenen, worden gedetailleerd beschreven in [deze sectie](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
->
->Merk op dat uw instantie op AWS moet worden gehost en moet worden geüpgraded met de nieuwste [Gold Standard](../../rn/using/gs-overview.md)-build of de [nieuwste GA-build (21.1)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Als u wilt controleren of uw instantie wordt gehost op AWS, voert u de stappen uit die worden beschreven in [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+Als u op AWS wordt gehost, kunt u het aantal actieve profielen dat op uw instanties wordt gebruikt, ook rechtstreeks via het Configuratiescherm controleren. Raadpleeg de [documentatie van het Configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html) voor meer informatie.
 
 Facturering heeft alleen betrekking op profielen die **actief** zijn. Een profiel wordt als actief beschouwd als het profiel de afgelopen twaalf maanden via een kanaal als doel is aangewezen of met het profiel is gecommuniceerd.
 
@@ -109,7 +103,7 @@ Er wordt geen rekening gehouden met de profielen die tijdens de voorbereiding va
 >
 >Er wordt geen rekening gehouden met de kanalen Facebook en Twitter.
 
-U kunt een overzicht van **[!UICONTROL Number of active profiles]** van het menu van Campaign Standard hebben **[!UICONTROL Administration > Campaign Management > Customer metrics]**. Het daadwerkelijke aantal wordt uitgevoerd door **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technische werkschema](../../workflow/using/about-technical-workflows.md), die elke dag loopt en de nieuwe gegevens aan het bestaande rapport voor de huidige periode in **[!UICONTROL Customer metrics]** menu toevoegt. Elke periode duurt 12 maanden.
+U kunt een overzicht van **[!UICONTROL Number of active profiles]** van Campagne **[!UICONTROL Administration > Campaign Management > Customer metrics]** menu hebben. Het daadwerkelijke aantal wordt uitgevoerd door **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technische werkschema](../../workflow/using/about-technical-workflows.md), die elke dag loopt en de nieuwe gegevens aan het bestaande rapport voor de huidige periode in **[!UICONTROL Customer metrics]** menu toevoegt. Elke periode duurt 12 maanden.
 
 ## Video over zelfstudie {#create-profiles-video}
 
