@@ -6,14 +6,14 @@ description: Gepersonaliseerde coupons
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
+exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 translation-type: tm+mt
-source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 1%
 
 ---
-
 
 # Gepersonaliseerde coupons{#personalized-coupons}
 
@@ -115,7 +115,7 @@ In het onderstaande voorbeeld wordt de levering gemaakt op de startpagina. Voor 
 
       ![](assets/deliv_coup_11.png)
 
-      De coupon wordt in het bericht ingevoegd als code in plaats van de naam die u hebt toegewezen. De code wordt gebruikt binnen het standaardgegevensmodel van de Campagne.
+      De coupon wordt in het bericht ingevoegd als code in plaats van de naam die u hebt toegewezen. De code wordt gebruikt binnen het de gegevensmodel van het Mob van de Campagne.
    ![](assets/deliv_coup_12.png)
 
 1. Voer een test uit om de naam te bevestigen die u aan de coupon hebt toegewezen. Ga naar de **[!UICONTROL Preview]** tabel en klik **[!UICONTROL Test personalization]**. Kies een ontvanger voor de test.
