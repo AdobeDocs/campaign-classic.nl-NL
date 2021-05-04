@@ -1,18 +1,18 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Leveringssjablonen gebruiken
+title: Verzendingssjablonen gebruiken
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
+exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
-
 
 # Sjablonen gebruiken {#use-templates}
 
@@ -26,7 +26,7 @@ Met een [leveringssjabloon](../../delivery/using/creating-a-delivery-template.md
 
 Als u meerdere merken beheert in Adobe Campaign, raadt Adobe aan één subdomein per merk te hebben. Een bank kan bijvoorbeeld verschillende subdomeinen hebben die overeenkomen met elk van haar regionale agentschappen. Als een bank eigenaar is van het domein bluebank.com, kunnen de subdomeinen @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com, enz. zijn. Als u één leveringssjabloon per subdomein hebt, kunt u altijd de juiste vooraf geconfigureerde parameters voor elk merk gebruiken. Hierdoor worden fouten voorkomen en bespaart u tijd.
 
-**Tip**: Om configuratiefouten in Campaign Standard te vermijden, adviseren wij dat u een inheemse malplaatje dupliceert en zijn eigenschappen verandert eerder dan een nieuw malplaatje tot stand te brengen.
+**Tip**: Om configuratiefouten te vermijden, adviseren wij dat u een inheemse malplaatje dupliceert en zijn eigenschappen veranderen eerder dan een nieuw malplaatje tot stand te brengen.
 
 ## Adressen configureren
 
