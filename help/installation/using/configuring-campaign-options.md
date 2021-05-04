@@ -6,14 +6,14 @@ description: Leer hoe u de opties voor campagne configureert
 audience: installation
 content-type: reference
 topic-tags: appendices
+exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 1%
 
 ---
-
 
 # Lijst met Campaign Classic-opties{#configuring-campaign-options}
 
@@ -627,11 +627,11 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr>  
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
-   <td> Naam van de tabelruimte die de gegevens van de standaardtabellen van Adobe Campaign moet bevatten.<br />Zie De database  <a href="../../installation/using/creating-and-configuring-the-database.md">maken en configureren</a>.</td> 
+   <td> Naam van de tabelruimte die de gegevens van de Adobe Campaign-tabbladen moet bevatten.<br />Zie De database  <a href="../../installation/using/creating-and-configuring-the-database.md">maken en configureren</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
-   <td> Naam van de tabelruimte die de indexen van de Adobe Campaign-standaardtabellen moet bevatten.<br />Zie De database  <a href="../../installation/using/creating-and-configuring-the-database.md">maken en configureren</a>.</td> 
+   <td> Naam van de tabelruimte die de indexen van de Adobe Campaign-tabbladen moet bevatten.<br />Zie De database  <a href="../../installation/using/creating-and-configuring-the-database.md">maken en configureren</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWork</span> <br /> </td> 
@@ -682,7 +682,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
    <td> Tijdens migratie wordt de boomstructuur automatisch opnieuw ingedeeld op basis van de nieuwe versienormen.<br /> Met deze optie kunt u de automatische migratie van de boomstructuur uitschakelen. Als u het gebruikt, na migratie zult u verouderde omslagen moeten schrappen, de nieuwe omslagen toevoegen en alle noodzakelijke controles in werking stellen.<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">Gegevenstype:</span> Geheel getal</p> </li> 
-     <li> <p> <span class="uicontrol">Waarde (tekst)</span> : 3 </p> </li> 
+     <li> <p> <span class="uicontrol">Waarde (tekst)</span> : 1 </p> </li> 
     </ul> Deze optie mag alleen worden gebruikt als de uit-de-box navigatieboom te veel wijzigingen heeft ondergaan.<br /> Raadpleeg <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">deze sectie</a> voor meer informatie.<br /> </td> 
   </tr> 
   <tr> 
@@ -744,7 +744,7 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Teradata</span> <br /> </td> 
-   <td> Teradata-connectoropties.<br /> </td> 
+   <td> Teradata-verbindingsopties.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Hive</span> <br /> </td> 
@@ -1042,4 +1042,3 @@ Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kun
   </tr> 
  </tbody> 
 </table>
-
