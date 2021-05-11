@@ -8,7 +8,7 @@ role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 translation-type: tm+mt
-source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
+source-git-commit: 9781e313e03489d203e14ab0c426aa1001c7a257
 workflow-type: tm+mt
 source-wordcount: '4297'
 ht-degree: 99%
@@ -44,7 +44,7 @@ Leer op de volgende nieuwe pagina&#39;s hoe u campagnes maakt en beheert:
 
 Er is informatie toegevoegd aan het activiteitsgedeelte **[!UICONTROL Advanced JavaScript]** over hoe u de methode task.setCompleted() gebruikt om de taak te beëindigen en toekomstige intrekkingen te voorkomen. [Meer informatie](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
-Het gedeelte [Afleverbaarheid](../../delivery/using/about-deliverability.md) is bijgewerkt en bevat nu koppelingen naar de nieuwe [gids met best practices voor afleverbaarheid van Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl). Alle generieke informatie over afleverbaarheid die op diverse oplossingen van Adobe van toepassing kan zijn, is verplaatst naar de [bijlage van de gids met best practices](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=nl#additional-resources).
+Het gedeelte [Afleverbaarheid](../../delivery/using/about-deliverability.md) is bijgewerkt en bevat nu koppelingen naar de nieuwe [gids met best practices voor afleverbaarheid van Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl). Alle generieke informatie over afleverbaarheid die op diverse oplossingen van Adobe van toepassing kan zijn, is verplaatst naar de [bijlage van de gids met best practices](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources).
 
 ## Februari 2021 {#release-21.1}
 
