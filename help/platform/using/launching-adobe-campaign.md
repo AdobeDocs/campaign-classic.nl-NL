@@ -6,18 +6,23 @@ description: Adobe Campaign starten
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
+exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
 translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+source-git-commit: 2c275751ab86e98652820bf461c617442480c725
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 6%
+source-wordcount: '558'
+ht-degree: 7%
 
 ---
 
-
-# Adobe Campaign{#launching-adobe-campaign} starten
+# Adobe Campaign starten{#launching-adobe-campaign}
 
 De console van de Cliënt van de campagne is een rijke cliënt die u toelaat om met uw de toepassingsserver(s) van de Campagne te verbinden. Leer hoe u de clientconsole downloadt en configureert in [deze pagina](../../installation/using/installing-the-client-console.md).
+
+
+>[!CAUTION]
+>
+>Controleer de compatibiliteit van uw systeem en tools met de Adobe Campaign Client Console in de [Compatibility matrix](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 
 ## Adobe Campaign {#starting-adobe-campaign} starten
 
@@ -107,4 +112,4 @@ Meer informatie over [!DNL Gold Standard] [in dit artikel](../../rn/using/gs-ove
 
 * [Adobe Campaign - Opties voor Help en ondersteuning](../../support.md)
 * [Adobe Campaign-softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
-* [Adobe Experience Cloud-ondersteuning en sessies met experts](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Adobe Experience Cloud-ondersteuning en sessies met experts](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
