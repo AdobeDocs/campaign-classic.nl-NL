@@ -7,11 +7,11 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '509'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 2ce19e135ce1eb47d760c5407446312bc2d3c303
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 90%
 
 ---
 
@@ -206,7 +206,7 @@ Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagi
 <tr>
 <td>Oracle</td>
 <td>
-<p>12c</p>
+<p>12 quater</p>
 <p>11g</p>
 </td>
 </tr>
@@ -215,8 +215,8 @@ Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagi
 <td>
 <p>11.x</p>
 <p>10.x</p>
-<p>9.6.x</p>
-<p>9.4.x</p>
+<p>9,6 x</p>
+<p>9,4 x</p>
 </td>
 </tr>
 <tr><td>SQL Server</td>
@@ -270,21 +270,27 @@ Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagi
 </tbody>
 </table>
 
-## Besturingssystemen voor clientconsole{#ClientConsoleoperatingsystems-gs}
+
+## Clientconsole {#ClientConsoleoperatingsystems}
+
+De volgende besturingssystemen en browsers zijn vereist voor het gebruik van de Campagne Client Console.
+
+### Besturingssystemen
 
 <table>
 <tbody>
 <tr>
-<td>Windows Server</td>
+<td>Microsoft Windows Server</td>
 <td>
 <p>2016</p>
 <p>2012</p>
 </td>
+<td>
+</td>
 </tr>
 <tr>
-<td>Windows</td>
+<td>Microsoft Windows</td>
 <td>
-<p>Seven</p>
 <p>8</p>
 <p>10 (aanbevolen voor Japanse instanties)</p>
 </td>
@@ -292,7 +298,31 @@ Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagi
 </tbody>
 </table>
 
-## Mobiele SDK{#MobileSDK-gs}
+### Browsers
+
+<table>
+<tbody>
+<tr>
+<td>
+<p>Microsoft Edge</p>
+</td>
+<td>
+<p>Laatste versie</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Microsoft Internet Explorer</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+## Mobiele SDK{#MobileSDK}
 
 <table>
 <tbody>
@@ -313,11 +343,54 @@ Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagi
 </tbody>
 </table>
 
-## Browsers{#Browsers-gs}
+## Browsers{#Browsers}
 
-Voor de volgende browsers wordt de nieuwste versie ondersteund: Microsoft Edge, Mozilla Firefox, Google Chrome, Safari.
+De volgende browsers zijn compatibel met Campagne voor de Toegang van het Web.
 
-Internet Explorer 11 wordt ondersteund.
+<table>
+<tbody>
+<tr>
+<td>
+<p>Microsoft Edge</p>
+</td>
+<td>
+<p>Laatste versie</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mozilla Firefox</p>
+</td>
+<td>
+<p>Laatste versie</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Google Chrome</p>
+</td>
+<td>
+<p>Laatste versie</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Safari</p>
+</td>
+<td>
+<p>Laatste versie</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Microsoft Internet Explorer</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Wellicht ook interessant{#Morelikethis-gs}
 
