@@ -6,45 +6,45 @@ description: Leer hoe u de clientconsole installeert
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
+exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
 translation-type: tm+mt
-source-git-commit: c96a7faf5c65848a3f383a5721bfa45048ecea57
+source-git-commit: 2ce19e135ce1eb47d760c5407446312bc2d3c303
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 4%
+source-wordcount: '973'
+ht-degree: 3%
 
 ---
 
-
-# De Campagne-clientconsole installeren en bijwerken{#installing-the-client-console}
-
+# De clientconsole van de campagne installeren en bijwerken{#installing-the-client-console}
 
 De Console van de Cliënt van de campagne is een rijke cliënt die u toelaat om met uw de toepassingsserver(s) van de Campagne te verbinden.
 
-Voordat u begint, moet u Campagne [Compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html) controleren en de URL van de campagneserver en gebruikersgegevens ophalen.
+Voordat u de clientconsole gaat installeren, moet u:
 
->[!CAUTION]
->
->De console van de Cliënt van de campagne en de toepassingsserver van de Campagne moeten op de zelfde productversie lopen. Adobe raadt ook aan om dezelfde productbuild te gebruiken.
-
-![](assets/do-not-localize/how-to-video.png) Ontdek hoe u de Adobe Campaign Client in  [video kunt installeren en instellen](#video)
+* Controleer de compatibiliteit van uw systeem en gereedschappen met Adobe Campaign in de [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
+* URL van campagneserver ophalen
+* Je gebruikersgegevens ophalen
 
 Het proces voor het installeren of bijwerken van de clientconsole is afhankelijk van uw implementatie van Adobe Campaign Classic.
 Controleer de onderstaande details om te begrijpen wat nodig is voor uw implementatie.
 
+![](assets/do-not-localize/how-to-video.png) Ontdek hoe u de Adobe Campaign Client in  [video kunt installeren en instellen](#video)
+
+>[!CAUTION]
+>
+>De console van de Cliënt van de campagne en de toepassingsserver van de Campagne moeten **op de zelfde productversie** in werking stellen. Adobe raadt ook ten zeerste aan om de **zelfde productbuild** te gebruiken. Leer hoe te om uw versies van de Cliënt en van de Server van de Campagne in [deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) te controleren.
 
 ## Adobe gehoste implementaties {#hosted-customers}
 
-Uw clientconsole(s) installeren of bijwerken:
+Voor een gehoste klant hebt u twee opties om uw clientconsole(s) te installeren of bij te werken:
 
 1. Adobe kan direct implementeren. Zodra de console wordt bijgewerkt, zullen de gebruikers worden ertoe aangezet om de recentste versie van de cliëntconsole in een pop-up venster te downloaden.
 
 1. U kunt aan uw cliëntconsole(s) van [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) downloaden
 
-   **Gebruikers hebben beheerderstoegang nodig om de update te voltooien. Als de gebruikers geen beheerdersrechten hebben, moet een systeembeheerder implementeren op alle clientconsoles**
+   **Gebruikers hebben beheerdersrechten nodig om de update te voltooien. Als de gebruikers geen beheerdersrechten hebben, moet een systeembeheerder implementeren op alle clientconsoles**
 
-
-
-## Hybride en volledig op locatie implementaties {#hybrid-onprem-customers}
+## Implementaties {#hybrid-onprem-customers} op locatie
 
 Adobe Campaign-gebruikers kunnen zich alleen aanmelden bij de instantie die u hebt gemaakt en geconfigureerd, als ze de clientconsole gebruiken.
 
@@ -62,9 +62,10 @@ Hiervoor moet u:
 
 1. Start Adobe Campaign-server.
 
->[!CAUTION]
->
->  Adobe raadt aan de optie **[!UICONTROL No longer ask this question]** niet in te schakelen om ervoor te zorgen dat alle gebruikers worden gewaarschuwd wanneer een nieuwe versie van de console beschikbaar is.  Als deze optie is geselecteerd, wordt de gebruiker niet op de hoogte gesteld van nieuwe beschikbare versies.
+
+### Deze vraagoptie niet langer instellen
+
+Adobe raadt aan de optie **[!UICONTROL No longer ask this question]** niet in te schakelen om ervoor te zorgen dat alle gebruikers worden gewaarschuwd wanneer een nieuwe versie van de console beschikbaar is.  Als deze optie is geselecteerd, wordt de gebruiker niet op de hoogte gesteld van nieuwe beschikbare versies.
 
 Als **[!UICONTROL No longer ask this question]** is geselecteerd, kunt u deze herinnering terugstellen. Alleen systeembeheerders die vertrouwd zijn met het bewerken van het Windows-register, moeten deze wijzigingen aanbrengen:
 
@@ -82,14 +83,14 @@ Als **[!UICONTROL No longer ask this question]** is geselecteerd, kunt u deze he
 >
 >Als u een bijgewerkte console op een bestaande implementatie toepast, zullen de gebruikers automatisch een herinnering ontvangen om hun cliëntconsole bij te werken. Als u Campagne voor het eerst uitvoert, zullen de gebruikers de console moeten downloaden. Zie hieronder voor meer informatie over beide opties
 
-### Werk de console bij - bestaande implementatie{#update-the-client-console}
+### Werk de console voor bestaande implementatie bij{#update-the-client-console}
 
 Zodra de console in de de serveromslag van de Campagne beschikbaar is, zullen de gebruikers worden ertoe aangezet om de recentste versie van de cliëntconsole in een pop-up venster te downloaden.
 
 **Gebruikers hebben beheerderstoegang nodig om de update te voltooien. Als de gebruikers geen beheerdersrechten hebben, moet een systeembeheerder implementeren op alle clientconsoles**
 
 
-### Download de console - nieuwe implementatie{#download-the-client-console}
+### Download de console voor nieuwe implementatie{#download-the-client-console}
 
 Gebruikers moeten de console nu downloaden en installeren door de onderstaande stappen uit te voeren:
 
@@ -150,11 +151,10 @@ Volg onderstaande stappen om u aan te melden bij een bestaande instantie:
 1. Voer uw aanmeldingsgegevens voor de gebruiker in en klik op **[!UICONTROL Log in]**
 
 
-
 **Verwante onderwerpen**
 
 * [Een instantie maken en aanmelden](../../installation/using/creating-an-instance-and-logging-on.md).
-* [Compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+* [Compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html)
 
 ## Video over zelfstudie
 
