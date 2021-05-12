@@ -496,7 +496,7 @@ Er is meer informatie over SOAP-verificatiemethoden voor transactionele berichte
 
 De Apache-configuratiestappen zijn bijgewerkt. [Meer informatie](../../installation/using/integration-into-a-web-server-for-linux.md)
 
-Er is een nieuwe pagina toegevoegd met daarin de lijst met eindpunten voor Klassiek. [Meer informatie](../../installation/using/campaign-network-endpoints.md)
+Er is een nieuwe pagina toegevoegd met daarop de lijst met eindpunten voor Classic. [Meer informatie](../../installation/using/campaign-network-endpoints.md)
 
 Het artikel met best practices voor datapakketten is bijgewerkt. [Meer informatie](../../configuration/using/data-model-best-practices.md)
 
