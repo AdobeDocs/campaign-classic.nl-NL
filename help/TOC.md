@@ -8,16 +8,15 @@ user-guide-description: U kunt cross-channel marketingcampagnes ontwerpen, plann
 solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
-translation-type: ht
-source-git-commit: b741b10fd1d3a94a3e6c71e95ff43cc0ee54ebc7
-workflow-type: ht
-source-wordcount: '2519'
-ht-degree: 100%
+source-git-commit: 42040c519a9430ff0529913c1d567e9315b1a95d
+workflow-type: tm+mt
+source-wordcount: '2521'
+ht-degree: 99%
 
 ---
 
 
-# Adobe Campaign Classic-handleiding {#using}
+# Adobe Campaign Classic v7 Guide {#using}
 
 + [Productdocumentatie](campaign-classic-home.md)
 + [Laatste updates](rn/using/documentation-updates.md)
@@ -26,8 +25,8 @@ ht-degree: 100%
    + [Laatste release](rn/using/latest-release.md)
    + [!DNL Gold Standard]-release {#gs-release}
       + [Wat is [!DNL Gold Standard]](rn/using/gs-overview.md)
-      + [Aanvullende informatie over[!DNL Gold Standard] ](rn/using/gold-standard.md)
-      + [[!DNL Gold Standard] -compatibiliteitsmatrix](rn/using/compatibility-matrix-gs.md)
+      + [Aanvullende informatie over [!DNL Gold Standard]](rn/using/gold-standard.md)
+      + [[!DNL Gold Standard]-compatibiliteitsmatrix](rn/using/compatibility-matrix-gs.md)
    + Eerdere releases {#previous-releases}
       + [Release 20.3](rn/using/release--20-3.md)
       + [Release 20.2](rn/using/release--20-2.md)
@@ -37,7 +36,7 @@ ht-degree: 100%
       + [Release 18.10](rn/using/release--18-10.md)
       + [Release 18.6](rn/using/release--18-6.md)
       + [Release 18.4](rn/using/release--18-4.md)
-   + [Verouderde functies](rn/using/deprecated-features.md)
+   + [Afgeschafte functies](rn/using/deprecated-features.md)
    + [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md)
    + [Technische opmerkingen](technotes/technote.md)
    + [Update van iOS-certificaat](technotes/ios-certificate-update.md)
@@ -63,17 +62,17 @@ ht-degree: 100%
          + [Configuratie](platform/using/faq-campaign-config.md)
          + [Rapporten](platform/using/faq-reporting.md)
          + [Ontwikkeling](platform/using/faq-developers.md)
-         + [Zelfstudies](platform/using/tutorials.md)
+         + [Tutorials](platform/using/tutorials.md)
    + Privacy {#privacy}
-      + [Privacy en instemming](platform/using/privacy-and-recommendations.md)
+      + [Privacy en toestemming](platform/using/privacy-and-recommendations.md)
       + [Privacybeheer](platform/using/privacy-management.md)
       + [Verzoeken om toegang tot persoonsgegevens](platform/using/privacy-requests.md)
    + Profielbeheer {#profile-management}
-      + [Profielen](platform/using/about-profiles.md)
+      + [Informatie over profielen](platform/using/about-profiles.md)
       + [Een profiel bewerken](platform/using/editing-a-profile.md)
       + [Profielen toevoegen](platform/using/adding-profiles.md)
       + [Profielen beheren](platform/using/managing-profiles.md)
-      + [Gegevens bijwerken](platform/using/updating-data.md)
+      + [Data bijwerken](platform/using/updating-data.md)
       + [Profielen importeren en exporteren](platform/using/exporting-and-importing-profiles.md)
       + [Lijsten maken en beheren](platform/using/creating-and-managing-lists.md)
    + Gegevens importeren en exporteren {#importing-and-exporting-data}
@@ -138,7 +137,7 @@ ht-degree: 100%
    + E-mails verzenden {#sending-emails}
       + [E-mailkanaal](delivery/using/about-email-channel.md)
       + [Een e-mailverzending maken](delivery/using/creating-an-email-delivery.md)
-      + [De e-mailcontent definiëren](delivery/using/defining-the-email-content.md)
+      + [Geef de e-mailcontent op](delivery/using/defining-the-email-content.md)
       + [Interactieve content definiëren](delivery/using/defining-interactive-content.md)
       + De e-mailverzending verzenden {#sending-an-email}
          + [De belangrijkste stappen om een e-mail te verzenden](delivery/using/sending-messages.md)
@@ -200,7 +199,7 @@ ht-degree: 100%
          + [De verzendingen configureren](delivery/using/a-b-testing-uc-configuring-deliveries.md)
          + [Het script maken](delivery/using/a-b-testing-uc-script.md)
          + [De uiteindelijke verzending definiëren](delivery/using/a-b-testing-uc-final-delivery.md)
-         + [De workflow starten](delivery/using/a-b-testing-uc-start-workflow.md)
+         + [Start de workflow](delivery/using/a-b-testing-uc-start-workflow.md)
          + [Het resultaat analyseren](delivery/using/a-b-testing-uc-analyzing.md)
    + Services en lidmaatschappen {#subscriptions-and-referrals}
       + [Services en lidmaatschappen](delivery/using/about-services-and-subscriptions.md)
@@ -269,7 +268,7 @@ ht-degree: 100%
       + [Drukregels](campaign/using/pressure-rules.md)
       + [Consistentieregels](campaign/using/consistency-rules.md)
       + [Controleregels](campaign/using/control-rules.md)
-      + [Regels filteren](campaign/using/filtering-rules.md)
+      + [Filterregels](campaign/using/filtering-rules.md)
       + [Regels toepassen](campaign/using/applying-rules.md)
       + [Campagnesimulaties](campaign/using/campaign-simulations.md)
    + Gedistribueerde marketing {#distributed-marketing}
@@ -375,7 +374,7 @@ ht-degree: 100%
       + [Toegang tot [!DNL Assets] configureren](integrations/using/configuring-access-to-assets.md)
       + [Een gedeelde asset invoegen](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
-      + [Info [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
+      + [Informatie over [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [De integratie configureren](integrations/using/configuring-the-integration.md)
       + [Een [!DNL Experience Manager] -nieuwsbrief maken](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
@@ -383,7 +382,7 @@ ht-degree: 100%
       + [De integratie met [!DNL Adobe Target] configureren](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Een dynamische afbeelding invoegen](integrations/using/inserting-a-dynamic-image.md)
    + ACS Connector {#acs-connector}
-      + [Principes en datacyclus van [!DNL ACS Connector] ](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [Principes en datacyclus van [!DNL ACS Connector]](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Profielen synchroniseren](integrations/using/synchronizing-profiles.md)
       + [Doelgroepen synchroniseren](integrations/using/synchronizing-audiences.md)
       + [Webapplicaties synchroniseren](integrations/using/synchronizing-web-applications.md)
@@ -415,10 +414,10 @@ ht-degree: 100%
       + [Architectuur](workflow/using/architecture.md)
    + Targetingactiviteiten {#targeting-activities}
       + [Targetingactiviteiten](workflow/using/about-targeting-activities.md)
-      + [Query](workflow/using/query.md)
+      + [Queryactiviteit](workflow/using/query.md)
       + [Incrementele query](workflow/using/incremental-query.md)
       + [Lijst lezen](workflow/using/read-list.md)
-      + [Samenvoeging](workflow/using/union.md)
+      + [Samenvoegen](workflow/using/union.md)
       + [Doorsnede](workflow/using/intersection.md)
       + [Uitsluiting](workflow/using/exclusion.md)
       + [Splitsen](workflow/using/split.md)
@@ -431,17 +430,17 @@ ht-degree: 100%
       + [Deduplicatie](workflow/using/deduplication.md)
       + [Dimensie wijzigen](workflow/using/change-dimension.md)
       + [Lijstupdate](workflow/using/list-update.md)
-      + [Lidmaatschapsservices](workflow/using/subscription-services.md)
+      + [Abonnementsservices](workflow/using/subscription-services.md)
       + [Data bijwerken](workflow/using/update-data.md)
       + [CRM-connector](workflow/using/crm-connector.md)
    + Stroombeheeractiviteiten {#flow-control-activities}
       + [Stroombeheeractiviteiten](workflow/using/about-flow-control-activities.md)
-      + [Begin en einde](workflow/using/start-and-end.md)
-      + [Vork](workflow/using/fork.md)
-      + [AND-samenvoeging](workflow/using/and-join.md)
-      + [Planner](workflow/using/scheduler.md)
-      + [Testen](workflow/using/test.md)
-      + [Wachten](workflow/using/wait.md)
+      + [Start- en Einde-activiteiten](workflow/using/start-and-end.md)
+      + [Vertakking](workflow/using/fork.md)
+      + [AND-join](workflow/using/and-join.md)
+      + [De activiteit Planner](workflow/using/scheduler.md)
+      + [Test](workflow/using/test.md)
+      + [De activiteit Wachten](workflow/using/wait.md)
       + [Tijdsbeperking](workflow/using/time-constraint.md)
       + [Subworkflow](workflow/using/sub-workflow.md)
       + [Springen (beginpunt en eindpunt)](workflow/using/jump--start-point-and-end-point-.md)
@@ -569,7 +568,7 @@ ht-degree: 100%
       + [Aanbiedingen op een uitgaand kanaal](interaction/using/offers-on-an-outbound-channel.md)
 + Transactionele berichten {#transactional-messaging}
    + Aan de slag met transactionele berichten {#introduction}
-      + [Transactionele berichten](message-center/using/about-transactional-messaging.md)
+      + [Informatie over transactieberichten](message-center/using/about-transactional-messaging.md)
       + [Architectuur van transactionele berichten](message-center/using/transactional-messaging-architecture.md)
       + [Beschrijving van gebeurtenis](message-center/using/event-description.md)
    + De instantie configureren {#instance-configuration}
@@ -674,7 +673,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Informatie over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
@@ -736,7 +735,7 @@ ht-degree: 100%
       + [Typen onderhoud](production/using/types-of-maintenance.md)
       + [RDBMS - Specifieke aanbevelingen](production/using/rdbms-specific-recommendations.md)
       + [Applicatieobjecten](production/using/application-objects.md)
-   + Problemen oplossen {#troubleshooting-toc}
+   + Probleemoplossing {#troubleshooting-toc}
       + [Overzicht van het oplossen van productieproblemen](production/using/troubleshooting.md)
       + Veel voorkomende en algemene problemen {#common-general-issues-toc}
          + [Modules en frequente problemen](production/using/modules-and-frequent-issues.md)
