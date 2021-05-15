@@ -6,22 +6,19 @@ description: Responsbeheer
 audience: campaign
 content-type: reference
 topic-tags: response-manager
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
+source-git-commit: dc3151a77350aa2b2acd989a57f5b489c1a98962
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '434'
 ht-degree: 3%
 
 ---
 
+# Ga aan de slag met Campagne Response Manager{#about-response-manager}
 
-# Responsbeheer{#about-response-manager}
+Adobe Campaign biedt een add-on van het Beheer van de Reactie aan die u het succes en de rentabiliteit van marketing campagnes laat meten of voorstellen over communicatiekanalen aanbiedt: e-mail, mobiel, direct mail, enz.
 
-## Doelstellingen {#objectives}
-
-Adobe Campaign biedt een toepassing voor responsbeheer (Response Manager) waarmee u het succes en de rentabiliteit van marketingcampagnes kunt meten of voorstellen kunt bieden voor alle communicatiekanalen (e-mail, mobiel, telefoon, direct mail, fax, agentschap, enz.).
-
-## Hypotheconcept {#hypothesis-concept}
+## Hypothese {#hypothesis-concept}
 
 De hypothesen kunnen over een bepaalde periode van de contactdatum worden gevormd om het gedrag van degenen te verminderen die na het ontvangen van een levering worden gericht. Deze hypothesen zijn gebaseerd op een **transactie** tabel die aankopen en details van deze aankopen bewaart.
 
@@ -31,7 +28,7 @@ Bovendien **reports** die van de Manager van de Reactie wordt voorzien laat u to
 
 Bovendien kunt u dankzij de detailregels voor aankopen uw hypothesen zo instellen dat deze zich bijvoorbeeld op één bepaald product concentreren.
 
-Zo willen we bijvoorbeeld na een levering die een post promoot de gegenereerde inkomsten evalueren. We gaan ervan uit dat iedere ontvanger die in de maand na de activering van de levering ten minste één artikel heeft aangeschaft, op deze actie heeft gereageerd. Op basis van deze hypothese zal het responsbeheer bepalen welke aankoopaanvraaglijnen er aan moeten worden toegewezen. Op basis daarvan zal het dan mogelijk zijn de resulterende ontvangsten te bepalen als de som van deze begrotingslijnen.
+Zo willen we bijvoorbeeld na een levering die een post promoot de gegenereerde inkomsten evalueren. We gaan ervan uit dat iedere ontvanger die in de maand na de activering van de levering ten minste één artikel heeft aangeschaft, op deze actie heeft gereageerd. Op basis van deze hypothese zal het responsbeheer bepalen welke aankoopaanvraaglijnen er aan moeten worden toegewezen. Op basis daarvan zal het dan mogelijk zijn de daaruit voortvloeiende ontvangsten te bepalen als de som van deze begrotingslijnen.
 
 >[!CAUTION]
 >
@@ -41,7 +38,7 @@ U kunt ook alle reacties berekenen voor het hele huishouden van de ontvanger die
 
 Elke hypothese is gekoppeld aan een enkele transactietabel. Eén levering of aanbieding kan aan meerdere hypothesen worden gekoppeld.
 
-## Methode {#method}
+## Implementatiestappen {#method}
 
 Alvorens u begint de Manager van de Reactie te gebruiken, verwijs naar [Configuratie](../../campaign/using/configuration.md) en voer de noodzakelijke configuraties uit.
 
@@ -58,4 +55,3 @@ U definieert en maakt meethypothesen door het volgende proces toe te passen:
 
 1. Controleer de resultaten van hypothesen. Zie [Hypothese bijhouden](../../campaign/using/hypothesis-tracking.md).
 1. Herstart indien nodig hypothesen. Zie [Een hypothese maken tijdens een levering](../../campaign/using/creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery).
-
