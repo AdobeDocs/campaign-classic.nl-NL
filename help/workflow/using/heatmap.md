@@ -1,27 +1,26 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Workflow HeatMap
-description: Bewaak uw workflows van de Campagne met Workflow HeatMap
+title: HeatMap van de Campagne Workflow
+description: Uw workflows controleren met Workflow HeatMap
 audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-translation-type: tm+mt
-source-git-commit: 5b1c4426a0d59861aa61a7e53154b9adfda31d71
+source-git-commit: 53d8e2ff56481497c7805b92a7885a662a1924cf
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
 # Workflow HeatMap {#workflow-heatmap}
 
-Adobe Campaign Workflow HeatMap bestaat uit een grafische voorstelling met kleurcodes van alle workflows die momenteel worden uitgevoerd. Het is alleen beschikbaar voor de Instance Administrators.
+De werkstroom HeatMap van de campagne bestaat uit een kleur-gecodeerde grafische vertegenwoordiging van alle werkschema&#39;s die momenteel lopen. Deze is alleen beschikbaar voor **Campagnebeheerders**.
 
-Aanvullende manieren om de verschillende campagneprocessen te controleren worden weergegeven op [deze pagina](../../production/using/monitoring-guidelines.md).
+Ontdek extra manieren om Campagne processen in [deze pagina](../../production/using/monitoring-guidelines.md) te controleren.
 
-## Over de Workflow HeatMap {#about-the-workflow-heatmap}
+## Aan de slag met de Workflowwarmtekaart {#about-the-workflow-heatmap}
 
 Door een snel overzicht te geven van het aantal gelijktijdige workflows, stelt de Workflow HeatMap de beheerders van het Adobe Campaign-platform in staat de belasting op de instantie te controleren en de workflows dienovereenkomstig te plannen.
 
@@ -31,7 +30,7 @@ Meer bepaald, helpt het de platformbeheerders om:
 * Workflows filteren op duur om te zien in welke workflows problemen kunnen optreden
 * Filteren van activiteiten op duur om te zien welke activiteiten problemen kunnen tegenkomen
 * Gemakkelijk individuele workflows en alle verwante activiteiten (met hun duur) vinden
-* Zoeken op type workflow ([technische workflows](../../workflow/using/building-a-workflow.md#technical-workflows) of [campagneworkflows](../../workflow/using/building-a-workflow.md#campaign-workflows))
+* Filteren op workflowtype: [technische workflows](../../workflow/using/building-a-workflow.md#technical-workflows) of [campagneworkflows](../../workflow/using/building-a-workflow.md#campaign-workflows)
 * Zoeken naar een specifieke workflow die moet worden geanalyseerd
 
 >[!NOTE]
@@ -40,13 +39,11 @@ Meer bepaald, helpt het de platformbeheerders om:
 
 Het gebruiken van het Werkschema HeatMap vereist om een goed inzicht in de volgende concepten te hebben: [Workflows](../../workflow/using/about-workflows.md), [Activiteiten](../../workflow/using/about-activities.md) en [Best practices voor workflow](../../workflow/using/workflow-best-practices.md).
 
-<!--The Workflow HeatMap is available by default in Adobe Campaign starting 18.10 release. If you have a build between 8700 and 8977 (18.10), you can also benefit from this capability. To request the corresponding package, contact the [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) and follow the instructions from [this page](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) to understand how to install it.-->
-
-## HeatMap {#using-the-heatmap} gebruiken
+## Pas de Workflow HeatMap {#using-the-heatmap} aan
 
 >[!NOTE]
 >
->Alleen gebruikers met beheerrechten hebben toegang tot de HeatMap van de Campagne-werkstroom.
+>Als er geen gegevens worden weergegeven in de Workflow HeatMap, klikt u op de knop **[!UICONTROL Load data]**.
 
 1. Ga naar **[!UICONTROL Monitoring]** en klik op de koppeling **[!UICONTROL Workflow HeatMap]** om de pagina **[!UICONTROL Campaign Workflow HeatMap]** weer te geven.
 
@@ -69,7 +66,7 @@ Het gebruiken van het Werkschema HeatMap vereist om een goed inzicht in de volge
 
    ![](assets/wkf_monitoring_filters_duration.png)
 
-1. U kunt ook een specifieke workflow kiezen in de lijst **[!UICONTROL Workflows]**.
+1. U kunt ook een specifieke workflow kiezen in de vervolgkeuzelijst **[!UICONTROL Workflows]**.
 
    ![](assets/wkf_monitoring_filters_workflows.png)
 
@@ -84,11 +81,9 @@ Het gebruiken van het Werkschema HeatMap vereist om een goed inzicht in de volge
 
 1. Als u een specifieke workflow op naam wilt doorzoeken, kunt u ook het veld **[!UICONTROL Workflow name filter]** gebruiken.
 
-   ![](assets/wkf_monitoring_filters_name.png)
-
 1. Als u enkele workflows hebt bewerkt in de tussenliggende tijd, klikt u op de knop **[!UICONTROL Reload data]** om de gegevens te vernieuwen die in het raster worden weergegeven.
 
-## HeatMap {#reading-the-heatmap} lezen
+## Interpreteer de Workflow HeatMap {#reading-the-heatmap}
 
 De Campagne Workflow HeatMap is een raster dat van linksboven naar rechtsonder kan worden gelezen, zodat de &#39;hot zones&#39; kunnen worden gevonden met een groen tot rood kleurgecodeerd bereik.
 
@@ -135,7 +130,7 @@ Als beheerder van de Campagne, kan het Werkschema HeatMap u helpen om de lading 
    * Als er prestatieproblemen optreden en er een of meer rode cellen in het raster worden weergegeven, kunt u de begintijd van verschillende workflows wijzigen. Vraag de marketinggebruikers om de werkstromen handmatig van bezige (&quot;hot&quot;) perioden naar meer beschikbare tijdsleuven te verplaatsen. Dit moet de dag een stabiel niveau van activiteit handhaven.
    * Om pieken te vermijden en de instantie te verhinderen overbelasting, bekijk HeatMap alvorens nieuwe werkschema&#39;s te plannen en de beste tijd te kiezen. Overweeg tijdsleuven die overeenkomen met grijze of groene cellen in het raster om nieuwe workflows te starten.
 
-### Langlopende workflows zoeken die van invloed zijn op de prestaties {#finding-long-running-workflows-that-impact-performance}
+### Langlopende workflows zoeken die van invloed zijn op prestaties {#finding-long-running-workflows-that-impact-performance}
 
 Als Campagnebeheerder, helpt het Werkschema HeatMap u om de langste werkschema&#39;s te vinden die de activiteit kunnen vertragen.
 
@@ -151,7 +146,7 @@ Als Campagnebeheerder, helpt het Werkschema HeatMap u om de langste werkschema&#
    * Adviseer marketinggebruikers om de langste workflows te splitsen om de verwerkingstijd te verminderen.
    * Start een diepgaande analyse van specifieke workflows en specifieke activiteiten (zoals JavaScript, importeren, exporteren, enzovoort) om de problemen te isoleren en eenvoudiger op te lossen.
 
-## Voorbeeld: HeatMap gebruiken om de werkstroomplanning te verbeteren {#example--using-the-heatmap-to-improve-workflow-planning}
+## Gebruik HeatMap om de werkstroomplanning te verbeteren {#example--using-the-heatmap-to-improve-workflow-planning}
 
 In het onderstaande voorbeeld ziet u hoe planning efficiënter kan zijn en hoe de prestaties kunnen worden verbeterd bij gebruik van de Adobe Campaign Workflow HeatMap.
 
