@@ -7,11 +7,10 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-translation-type: tm+mt
 source-git-commit: 69f6fcd21b27f095781bca4a62153086382f3d7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '538'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -206,7 +205,7 @@ Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagi
 <tr>
 <td>Oracle</td>
 <td>
-<p>12 quater</p>
+<p>12c</p>
 <p>11g</p>
 </td>
 </tr>
@@ -215,8 +214,8 @@ Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagi
 <td>
 <p>11.x</p>
 <p>10.x</p>
-<p>9,6 x</p>
-<p>9,4 x</p>
+<p>9.6.x</p>
+<p>9.4.x</p>
 </td>
 </tr>
 <tr><td>SQL Server</td>
@@ -273,7 +272,7 @@ Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagi
 
 ## Clientconsole {#ClientConsoleoperatingsystems}
 
-:waarschuwing: De volgende besturingssystemen en browsers zijn vereist voor het gebruik van de Campagne Client Console.
+:waarschuwing: de volgende besturingssystemen en browsers zijn vereist om de Campaign-clientconsole te gebruiken.
 
 ### Besturingssystemen
 
@@ -334,7 +333,7 @@ Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagi
 
 ## Browsers{#Browsers}
 
-De volgende browsers zijn compatibel met Campagne voor de Toegang van het Web.
+De volgende browsers zijn compatibel met Campaign voor toegang tot internet.
 
 <table>
 <tbody>
@@ -383,7 +382,7 @@ De volgende browsers zijn compatibel met Campagne voor de Toegang van het Web.
 
 ## Wellicht ook interessant{#Morelikethis-gs}
 
-* [Opmerkingen bij de release van Campaign Classic ](../../rn/using/latest-release.md)
+* [Aanvullende informatie over Campaign Classic ](../../rn/using/latest-release.md)
 * [Installatiehandleiding](../../installation/using/general-architecture.md)
 * [Verouderde functies en systemen](../../rn/using/deprecated-features.md)
 * [Upgradeprocedure opstellen](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html)
