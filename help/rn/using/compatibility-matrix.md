@@ -7,11 +7,10 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-translation-type: tm+mt
 source-git-commit: 69f6fcd21b27f095781bca4a62153086382f3d7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '554'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -202,9 +201,9 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <tr>
 <td>Oracle</td>
 <td>
-<p>19 quater</p>
-<p>18 quater</p>
-<p>12 quater</p>
+<p>19c</p>
+<p>18c</p>
+<p>12c</p>
 <p>11g</p>
 </td>
 </tr>
@@ -214,9 +213,9 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <p>12.x</p>
 <p>11.x</p>
 <p>10.x</p>
-<p>9,6 x</p>
-<p>9,5 x</p>
-<p>9,4 x</p>
+<p>9.6.x</p>
+<p>9.5.x</p>
+<p>9.4.x</p>
 </td>
 </tr>
 <tr><td>SQL Server</td>
@@ -277,7 +276,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 
 ## Clientconsole {#ClientConsoleoperatingsystems}
 
-:waarschuwing: De volgende besturingssystemen en browsers zijn vereist voor het gebruik van de Campagne Client Console.
+:waarschuwing: de volgende besturingssystemen en browsers zijn vereist om de Campaign-clientconsole te gebruiken.
 
 ### Besturingssystemen
 
@@ -339,7 +338,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 
 ## Browsers{#Browsers}
 
-De volgende browsers zijn compatibel met Campagne voor de Toegang van het Web.
+De volgende browsers zijn compatibel met Campaign voor toegang tot internet.
 
 <table>
 <tbody>
@@ -389,7 +388,7 @@ De volgende browsers zijn compatibel met Campagne voor de Toegang van het Web.
 
 ## Wellicht ook interessant{#Morelikethis}
 
-* [Opmerkingen bij de release van Campaign Classic ](../../rn/using/latest-release.md)
+* [Aanvullende informatie over Campaign Classic ](../../rn/using/latest-release.md)
 * [Installatiehandleiding](../../installation/using/general-architecture.md)
 * [Verouderde functies en systemen](../../rn/using/deprecated-features.md)
 * [Upgradeprocedure opstellen](../../production/using/build-upgrade.md)
