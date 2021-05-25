@@ -1,24 +1,24 @@
 ---
-solution: Campaign Classic
+audience: end-user
+breadcrumb-title: Help Center
 product: campaign
-sub-product: adobe campaign classic
-title: Adobe Campaign Classic v7 Help Center
-breadcrumb-title: Campaign Classic v7
+title: Campaign Classic - handleiding
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: U kunt cross-channel marketingcampagnes ontwerpen, plannen, uitvoeren, beheren en optimaliseren voor een hoog rendement op marketinginvesteringen.
-audience: end-user
+solution: Campaign Classic
+sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 43f49ecb651e37a7e166f8823c75d938338b952c
+source-git-commit: 0bb3e853299c3ce0dc1bcbc2fd8a0bd4ef110bee
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2521'
 ht-degree: 99%
 
 ---
 
 
-# Adobe Campaign Classic v7-documentatie {#campaign-v7}
+# Adobe Campaign Classic v7 Guide {#using}
 
-+ [Campaign Classic v7-documentatie](campaign-classic-home.md)
++ [Productdocumentatie](campaign-classic-home.md)
 + [Laatste updates](rn/using/documentation-updates.md)
 + Release-opmerkingen {#release-notes}
    + [Aan de slag met upgrades](rn/using/rn-overview.md)
