@@ -7,23 +7,24 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-translation-type: tm+mt
-source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
+source-git-commit: 3413a54b1f45d23dcec9bf363bcf714a94642245
 workflow-type: tm+mt
-source-wordcount: '3927'
+source-wordcount: '3941'
 ht-degree: 1%
 
 ---
 
 # Lijst met Campaign Classic-opties{#configuring-campaign-options}
 
-Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-opties configureren.
+Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-opties configureren. Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kunnen handmatig worden toegevoegd wanneer dat nodig is. Welke opties beschikbaar zijn, is afhankelijk van de pakketten die bij de instantie worden geïnstalleerd.
 
->[!NOTE]
+>[!CAUTION]
 >
->U kunt Adobe Campaign-opties alleen wijzigen of bijwerken door experts.
+>* De opties die niet in deze pagina worden vermeld, zijn alleen intern en **mag niet worden gewijzigd**.
+   >
+   >
+* U kunt Adobe Campaign-opties alleen wijzigen of bijwerken door experts.
 
-Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kunnen handmatig worden toegevoegd wanneer dat nodig is. Welke opties beschikbaar zijn, is afhankelijk van de pakketten die bij de instantie worden geïnstalleerd.
 
 ## Levering {#delivery}
 
