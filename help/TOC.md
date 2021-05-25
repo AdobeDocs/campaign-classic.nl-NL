@@ -8,17 +8,17 @@ user-guide-description: U kunt cross-channel marketingcampagnes ontwerpen, plann
 solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 0bb3e853299c3ce0dc1bcbc2fd8a0bd4ef110bee
+source-git-commit: a9a32b383d4709d9f0adf1e886d2ec3a9d601652
 workflow-type: tm+mt
-source-wordcount: '2521'
+source-wordcount: '2522'
 ht-degree: 99%
 
 ---
 
 
-# Adobe Campaign Classic v7 Guide {#using}
+# Adobe Campaign Classic v7-documentatie {#using}
 
-+ [Productdocumentatie](campaign-classic-home.md)
++ [Campagne v7-documentatie](campaign-classic-home.md)
 + [Laatste updates](rn/using/documentation-updates.md)
 + Release-opmerkingen {#release-notes}
    + [Aan de slag met upgrades](rn/using/rn-overview.md)
