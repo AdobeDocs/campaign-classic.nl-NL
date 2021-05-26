@@ -7,9 +7,9 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 3413a54b1f45d23dcec9bf363bcf714a94642245
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '4369'
+source-wordcount: '4367'
 ht-degree: 98%
 
 ---
@@ -441,7 +441,7 @@ De sectie voor toegangscontrole is bijgewerkt met **rechten voor privacydata**. 
 
 Er is informatie toegevoegd om aan te geven dat de content van personalisatievelden niet langer mag zijn dan 1024 tekens. [Meer informatie](../../delivery/using/personalization-fields.md)
 
-De documentatie voor het Configuratiescherm is geïntegreerd in de nieuwe collaboratieve documentatieset. [Meer informatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/control-panel-home.html)
+De documentatie voor het Configuratiescherm is geïntegreerd in de nieuwe collaboratieve documentatieset. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 
 De handleiding om aan de slag te gaan met best practices voor levering is bijgewerkt. [Meer informatie](../../delivery/using/delivery-best-practices.md)
 
@@ -477,7 +477,7 @@ De best practices voor prestatiesverbeteringen van workflows en leveringen zijn 
 
 **Nieuwe mogelijkheden in de 19.1-release**
 
-Configuratiescherm - [Meer informatie](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+Configuratiescherm - [Meer informatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/control-panel-home.html)
 
 Audittrail - [Meer informatie](../../production/using/audit-trail.md)
 
