@@ -6,14 +6,13 @@ description: Doelgroepen synchroniseren
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1131'
 ht-degree: 1%
 
 ---
-
 
 # Doelgroepen synchroniseren{#synchronizing-audiences}
 
@@ -139,16 +138,15 @@ Door een leveringswerkschema in Campaign Standard te creëren, is het dan mogeli
 
 ## Uw levering {#send-and-monitor-your-delivery} verzenden en controleren
 
-Zodra de levering en zijn inhoud klaar zijn, verzend de levering, zoals die met meer details in [deze sectie](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html) wordt beschreven:
+Zodra de levering en zijn inhoud klaar zijn, verzend de levering:
 
 1. Voer de leveringswerkstroom uit. Met deze stap wordt het e-mailbericht voorbereid voor verzending.
 1. Van het leveringsdashboard, bevestig manueel dat de levering kan worden verzonden.
 1. Controleer de rapporten en logboeken van de levering:
 
-   * **In Campaign Standard**: Toegangsrapporten  [](https://docs.adobe.com/content/help/en/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html) en  [](https://docs.adobe.com/content/help/en/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html) logboeken met betrekking tot de levering zoals voor elke levering.
+   * **In Campaign Standard**: Toegangsrapporten  [](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html) en  [](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html) logboeken met betrekking tot de levering zoals voor elke levering.
    * **in Campagne v7 en Campaign Standard**: Logbestanden voor levering-id&#39;s, e-mailbrede logboeken en e-mailtracking worden gesynchroniseerd met Campagne v7. U kunt dan tot 360° mening van uw marketing campagnes van Campaign v7 krijgen.
 
       Quarantines worden automatisch opnieuw gesynchroniseerd naar Campagne v7. Hierdoor kan niet-te leveren informatie in aanmerking worden genomen voor het volgende doel dat wordt uitgevoerd in Campaign v7.
 
-      Meer informatie over quarantainebeheer vindt u in Campaign Standard in [deze sectie](https://docs.adobe.com/content/help/en/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
-
+      Meer informatie over quarantainebeheer vindt u in Campaign Standard in [deze sectie](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en).
