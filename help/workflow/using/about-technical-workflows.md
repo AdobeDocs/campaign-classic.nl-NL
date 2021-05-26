@@ -6,14 +6,13 @@ description: Meer informatie over de technische workflows die beschikbaar zijn b
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-translation-type: tm+mt
-source-git-commit: f57f52d8807eb771e2416b6648e1d746a206fa96
+exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
+source-git-commit: 214838cabeaec082080b3378f7eba837b8af89ad
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1818'
 ht-degree: 5%
 
 ---
-
 
 # Technische workflows{#about-technical-workflows}
 
@@ -34,8 +33,8 @@ Raadpleeg de [specifieke sectie](../../workflow/using/monitoring-technical-workf
 | Technische workflow | Pakket | Beschrijving |
 |------|--------|-----------|
 | **Alias Cleansing**  (aliasCleansing) | Levering | Deze werkstroom normaliseert opsommingswaarden. Deze wordt standaard elke dag om 3 uur geactiveerd. |
-| **Facturering**  (facturering) | Levering | Deze workflow stuurt het systeemactiviteitenrapport per e-mail naar de &#39;factureringsoperator&#39;. Deze wordt standaard geactiveerd op de 25e van elke maand. |
-| **Berekening van Twitter-statistieken**  (statsTwitter) | Sociale netwerken (sociale marketing) | Deze workflow berekent statistieken over retweets en bezoeken op Twitter. |
+| **Facturering**  (facturering) | Levering | Deze workflow stuurt het systeemactiviteitenrapport per e-mail naar de &#39;factureringsoperator&#39;. Het wordt teweeggebracht 25e van elke maand op de instantie van de Marketing. |
+| **Berekening van Twitter-statistieken**  (statsTwitter) | Sociale netwerken (sociale marketing) | Deze workflow berekent statistieken over retweets en bezoeken aan Twitter. |
 | **Campagnebanen**  (operationMgt) | Marketingcampagnes (Campagne) | In deze workflow worden de taken voor marketingcampagnes beheerd (starttaken, bestanden uitpakken, enz.). Het leidt ook tot werkschema&#39;s met betrekking tot terugkomende en periodieke campagnes. |
 | **Gegevens verzamelen voor HeatMap-service**  (collectDataHeatMapService) | Standaard geïnstalleerd | Deze werkstroom wint gegevens terug die door de dienst HeatMap worden vereist. |
 | **Verzamel privacyverzoeken**  (collectPrivacyRequests) | Verordening inzake bescherming van privacydata | Met deze workflow worden de gegevens van de ontvanger gegenereerd die in Adobe Campaign zijn opgeslagen en kunnen deze worden gedownload op het scherm van de privacyaanvraag. |
@@ -73,7 +72,7 @@ Raadpleeg de [specifieke sectie](../../workflow/using/monitoring-technical-workf
 | **Rapporterende aggregaten**  (reportingAggregates) | Levering | Deze workflow werkt aggregaten bij die worden gebruikt in rapporten. Het wordt teweeggebracht elke dag om 2 uur door gebrek. |
 | **Verzenden van indicatoren en campagnerekenmerken**  (webAnalyticsSendMetrics) | Webanalytische connectors | Met deze workflow kunt u e-mailcampagne-indicatoren verzenden van Adobe Campaign naar Adobe Experience Cloud Suite via de Adobe® Genesis-connector. De betrokken indicatoren zijn als volgt: Verzonden (Verzonden), Totaal aantal van opent (iTotalRecipientOpen), Totaal aantal ontvangers die klikte (iTotalRecipientClick), Fouten (iError), Opt-Out (opt-out) (iOptOut). |
 | **Voorraad: Bestellingen en waarschuwingen**  (stockMgt) | Marketingcampagnes (Campagne) | Deze workflow start voorraadberekening op de orderregels en beheert drempelwaarden voor waarschuwingen. |
-| **Facebook-fans**  synchroniseren (FacebookFans synchroniseren) | Sociale netwerken (sociale marketing) | Deze workflow importeert elke dag om 7.00 uur Facebook-fans naar Adobe Campaign. |
+| **Facebook-ventilatoren**  synchroniseren (FacebookFans synchroniseren) | Sociale netwerken (sociale marketing) | Deze workflow importeert elke dag om 7.00 uur Facebook-fans naar Adobe Campaign. |
 | **Facebook-pagina** &#39;s synchroniseren (Facebook synchroniseren) | Sociale netwerken (sociale marketing) | Deze workflow synchroniseert elke dag om 7.00 uur Facebook-pagina&#39;s met Adobe Campaign. |
 | **Twitter-pagina** &#39;s synchroniseren (Twitter synchroniseren) | Sociale netwerken (sociale marketing) | Deze workflow importeert elke dag om 7.00 uur Twitter-volgers naar Adobe Campaign. |
 | **Taakmelding**  (taskMgt) | Marketing resources (MRM) | Met deze workflow kunt u meldingen verzenden met betrekking tot taken in marketingcampagnes. |
