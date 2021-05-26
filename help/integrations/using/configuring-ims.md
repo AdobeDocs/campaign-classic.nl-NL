@@ -6,14 +6,13 @@ description: Leer hoe u verbinding maakt via een Adobe ID
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
-translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '345'
 ht-degree: 2%
 
 ---
-
 
 # IMS{#configuring-ims} configureren
 
@@ -26,7 +25,7 @@ ht-degree: 2%
 De integratie met de IMS gebruiken:
 
 * U moet beschikken over een Adobe Experience Cloud-organisatie en IMS-id&#39;s (opgegeven wanneer u voor het eerst verbinding maakt met de Adobe Experience Cloud).
-* U moet gebruikers toevoegen in de Experience Cloud. Raadpleeg [deze pagina](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html) voor meer informatie.
+* U moet gebruikers toevoegen in de Experience Cloud. Raadpleeg [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) voor meer informatie.
 
 >[!NOTE]
 >
@@ -54,7 +53,7 @@ Configureer de **Adobe Experience Cloud** externe account in **[!UICONTROL Admin
 
 Voer de volgende gegevens in:
 
-* Verbindingsgegevens voor de gebruikte IMS-server (id en geheim). Deze informatie wordt verstrekt door de steun van Adobe. Raadpleeg de [Veelgestelde vragen voor Adobe Experience Cloud-beheerders](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) voor meer informatie.
+* Verbindingsgegevens voor de gebruikte IMS-server (id en geheim). Deze informatie wordt verstrekt door de steun van Adobe. Raadpleeg de [Veelgestelde vragen voor Adobe Experience Cloud-beheerders](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) voor meer informatie.
 
    Het **[!UICONTROL Callback server]** adres moet in **https** worden gespecificeerd. Dit veld komt overeen met de toegangs-URL van uw Adobe Campaign-instantie.
 
@@ -66,4 +65,3 @@ Voer de volgende gegevens in:
    >Het associatiemasker is essentieel voor de verbinding via Adobe ID om correct te werken.
 
 * Adobe Experience Cloud-verbindingsgegevens, met name de naam van de Adobe Experience Cloud Tenant.
-
