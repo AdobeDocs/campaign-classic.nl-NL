@@ -6,14 +6,13 @@ description: Meer informatie over best practices en probleemoplossing voor SFTP-
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
+exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 6%
+source-wordcount: '1156'
+ht-degree: 14%
 
 ---
-
 
 # Best practices en probleemoplossing voor SFTP-servers {#sftp-server-usage}
 
@@ -23,7 +22,7 @@ Als u bestanden en data beheert voor ETL-doeleinden, worden deze bestanden opges
 
 * Gebruik op sleutels gebaseerde authentificatie eerder dan wachtwoordauthentificatie, om wachtwoordvervalsing te vermijden (de wachtwoorden hebben een geldigheidsperiode van 90 dagen). Bovendien kunt u met op sleutels gebaseerde verificatie meerdere sleutels genereren, bijvoorbeeld wanneer u meerdere entiteiten beheert. Integendeel, voor wachtwoordverificatie moet u het wachtwoord delen met alle entiteiten die u beheert.
 
-   De gesteunde zeer belangrijke indeling is SSH-2 RSA 2048. Sleutels kunnen met hulpmiddelen zoals PyTTY (Vensters), of ssh-keygen (Unix) worden geproduceerd.U zult de openbare sleutel aan het team van de Steun van de Adobe via [de Zorg van de Klant van de Adobe moeten verstrekken ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om het op de server van de Campagne te hebben geupload.
+   De gesteunde zeer belangrijke indeling is SSH-2 RSA 2048. Sleutels kunnen met hulpmiddelen zoals PyTTY (Vensters), of ssh-keygen (Unix) worden geproduceerd.U zult de openbare sleutel aan het team van de Steun van de Adobe via [de Zorg van de Klant van de Adobe moeten verstrekken ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om het op de server van de Campagne te hebben geupload.
 
 * Gebruik batchverwerking in SFTP-uploads en in workflows.
 
@@ -43,11 +42,11 @@ Om dergelijke problemen te voorkomen, raadt Adobe aan de onderstaande beste prak
 
 >[!NOTE]
 >
->Als uw instantie wordt gehost op AWS, kunt u de opslagruimte van uw SFTP-server controleren met de Campaign Classic [Configuratiescherm](https://docs.adobe.com/content/help/en/control-panel/using/sftp-management/sftp-storage-management.html). Als u wilt controleren of uw instantie wordt gehost op AWS, voert u de stappen uit die worden beschreven in [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>Als uw instantie wordt gehost op AWS, kunt u de opslagruimte van uw SFTP-server controleren met de Campaign Classic [Configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 >
->Het Configuratiescherm is toegankelijk voor alle beheergebruikers. De stappen om Admin toegang tot een gebruiker te verlenen zijn gedetailleerd in [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>Het configuratiescherm is toegankelijk voor alle gebruikers met beheerdersrechten. De stappen om toegang met beheerdersrechten aan een gebruiker te verlenen worden gedetailleerd beschreven op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
 >
->Merk op dat uw instantie moet worden geüpgraded met de nieuwste [Gold Standard](../../rn/using/gs-overview.md)-build of de [nieuwste GA-build (21.1)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>Merk op dat uw instantie moet worden geüpgraded met de nieuwste [Gold Standard](../../rn/using/gs-overview.md)-build of de [nieuwste GA-build (21.1)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 * De mogelijkheden voor servergrootte variëren afhankelijk van uw licentie. In elk geval moet u de minimale gegevens mogelijk houden en de gegevens slechts zo lang bewaren als nodig is (15 dagen is de maximale termijn).
 
