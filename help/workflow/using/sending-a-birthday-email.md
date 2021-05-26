@@ -6,14 +6,13 @@ description: Leer hoe u een e-mailbericht over een verjaardag verzendt met een w
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '879'
 ht-degree: 1%
 
 ---
-
 
 # Een verjaardags-e-mail verzenden{#sending-a-birthday-email}
 
@@ -27,7 +26,7 @@ Voor het instellen van dit gebruiksgeval hebben we de volgende workflow voor doe
 
 Met deze (dagelijkse) workflow worden alle ontvangers geselecteerd die op de huidige datum jarig zijn.
 
-![](assets/do-not-localize/how-to-video.png) Deze manier van werken kan ook worden gevonden in de vorm van een video. Raadpleeg voor meer informatie de [Video over het maken van een workflow](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html).
+![](assets/do-not-localize/how-to-video.png) Deze manier van werken kan ook worden gevonden in de vorm van een video. Raadpleeg voor meer informatie de [Video over het maken van een workflow](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html).
 
 Hiertoe maakt u een campagne en klikt u op het tabblad **[!UICONTROL Targeting and workflows]**. Raadpleeg voor meer informatie de sectie [Het hoofddoel maken in een workflow](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
