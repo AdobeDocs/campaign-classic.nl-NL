@@ -7,11 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '1580'
-ht-degree: 2%
+source-wordcount: '1578'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +26,7 @@ Voor **gehoste**-implementaties kunnen instellingen aan de serverzijde alleen do
 
 Raadpleeg de volgende secties voor meer informatie:
 
-* [Configuratiescherm-documentatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/control-panel-home.html)
+* [Configuratiescherm-documentatie](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 * [Hostmodellen](../../installation/using/hosting-models.md)
 * [Campaign Classic On-premisse en gehoste capaciteitmatrix](../../installation/using/capability-matrix.md)
 
