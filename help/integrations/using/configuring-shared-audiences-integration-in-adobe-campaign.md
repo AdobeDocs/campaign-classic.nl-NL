@@ -6,14 +6,13 @@ description: Leer hoe u integratie met gedeelde soorten publiek configureert
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '482'
 ht-degree: 2%
 
 ---
-
 
 # Integratie van gedeelde soorten publiek configureren in Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
 
@@ -87,6 +86,6 @@ U moet ervoor zorgen de het Volgen van de Campagne Server op het domein (CNAME) 
 
 ## Stap 4: De Bezoeker-id-service {#step-4--configure-the-visitor-id-service} configureren
 
-Als uw bezoeker-id-service nog nooit is geconfigureerd op uw wegeigenschappen of websites, raadpleegt u het volgende [document](https://docs.adobe.com/content/help/en/id-service/using/implementation/setup-aam-analytics.html) om te leren hoe u uw service of de volgende [video](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two) kunt configureren.
+Als uw bezoeker-id-service nog nooit is geconfigureerd op uw wegeigenschappen of websites, raadpleegt u het volgende [document](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html) om te leren hoe u uw service of de volgende [video](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two) kunt configureren.
 
 Uw configuratie en levering worden voltooid, kan de integratie nu worden gebruikt om publiek of segmenten in te voeren en uit te voeren.
