@@ -7,11 +7,10 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-translation-type: tm+mt
-source-git-commit: 326ccbad77f3bd03a8eba22d7714084d52d2f02b
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 8%
+source-wordcount: '764'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +18,7 @@ ht-degree: 8%
 
 Adobe Experience Cloud is een uitgebreide reeks van best-in-klasse, geïntegreerde oplossingen die op een gemeenschappelijk gegevensplatform met een gemeenschappelijke reeks krachtige kerndiensten worden voortgebouwd.
 
-Meer informatie over de beschikbare functionele integratie tussen Adobe Campaign en [Adobe Experience Cloud-oplossingen](https://docs.adobe.com/content/help/en/core-services/interface/marketing-cloud-integrations.html) en [kernservices](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html). U kunt uw oplossingsimplementaties dan moderniseren en Experience Cloud uitvoeren zodat u eigenschappen zoals klantenattributen en publiek kunt gebruiken.
+Meer informatie over de beschikbare functionele integratie tussen Adobe Campaign en [Adobe Experience Cloud-oplossingen](https://experienceleague.adobe.com/docs/core-services/interface/marketing-cloud-integrations.html) en [kernservices](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html). U kunt uw oplossingsimplementaties dan moderniseren en Experience Cloud uitvoeren zodat u eigenschappen zoals klantenattributen en publiek kunt gebruiken.
 
 ![](assets/ExCloud-solutions.png)
 
@@ -34,17 +33,17 @@ De volledige lijst van Adobe oplossingen en kerndiensten die met Adobe Campaign 
 
 U kunt meerdere oplossingen koppelen aan Adobe Experience Cloud. De **organisatie** is de klantenentiteit die een beheerder toelaat om groepen en gebruikers te vormen, en enige sign-on (SSO) in Adobe Experience Cloud te controleren. De organisatie handelt als een login bedrijf dat alle producten en oplossingen van de Experience Cloud overspant. Meestal is een organisatie uw bedrijfsnaam. Een bedrijf kan echter vele organisaties hebben.
 
-Organisatiebeheer en het koppelen van Adobe Experience Cloud-accounts vindt u in het [Adobe Experience Cloud Help-portaal](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html).
+Organisatiebeheer en het koppelen van Adobe Experience Cloud-accounts vindt u in het [Adobe Experience Cloud Help-portaal](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html).
 
 ## Identiteitsbeheer en cookie {#id-and-cookies}
 
-Wanneer u Adobe Campaign installeert of een bestaande installatie integreert met Adobe Experience Cloud, wordt [Adobe Experience Cloud Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html) ingeschakeld. Deze service vervangt het permanente cookie dat in de eerste plaats door Adobe Campaign wordt gebruikt voor de trackingfuncties.
+Wanneer u Adobe Campaign installeert of een bestaande installatie integreert met Adobe Experience Cloud, wordt [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html) ingeschakeld. Deze service vervangt het permanente cookie dat in de eerste plaats door Adobe Campaign wordt gebruikt voor de trackingfuncties.
 
 De Adobe Experience Cloud Identity Service (ID-service) biedt een universele, permanente id die uw bezoekers identificeert voor alle oplossingen in de Experience Cloud.
 
 Aan ontvangers die trackinglogboeken genereren, wordt een unieke bezoeker-id toegewezen. Deze id wordt opgeslagen in het veld **[!UICONTROL Requester UUID (@sourceID)]** van de tabel **[!UICONTROL nms:trackingLogRcp]**. **De volggegevens van ontvangers die bestonden voordat de bezoekersidentiteitsdienst werd geïmplementeerd, zijn daarom niet langer bruikbaar**.
 
-De id wordt dan herkend door de andere Adobe Experience Cloud-oplossingen met dezelfde [CNAME](https://docs.adobe.com/content/help/en/id-service/using/reference/analytics-reference/cname.html).
+De id wordt dan herkend door de andere Adobe Experience Cloud-oplossingen met dezelfde CNAME. [Meer informatie](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/cname.html)
 
 ## Experience Cloud-integraties {#experience-cloud-integrations}
 
