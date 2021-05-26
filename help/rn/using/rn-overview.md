@@ -7,11 +7,10 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-translation-type: ht
-source-git-commit: 8294b522efb51cb1b961c9284675c7966132e957
-workflow-type: ht
-source-wordcount: '415'
-ht-degree: 100%
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +50,7 @@ Houd uw implementatie up-to-date door de pagina’s [Verouderde en verwijderde f
 
 Als gehoste klant (Managed Service of hybride) moet u contact opnemen met het klantenserviceteam om uw omgeving te laten upgraden.
 
-Als on-premise gebruiker kunt u de upgrade zelf uitvoeren. Hiervoor moet u de [nieuwste stabiele build downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/nl/campaign.html) en al uw omgevingen upgraden. Lees meer over het [upgradeproces](../../production/using/build-upgrade.md) en raadpleeg de [veelgestelde vragen over upgrades](../../platform/using/faq-build-upgrade.md).
+Als on-premise gebruiker kunt u de upgrade zelf uitvoeren. Hiervoor moet u de [nieuwste stabiele build downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) en al uw omgevingen upgraden. Lees meer over het [upgradeproces](../../production/using/build-upgrade.md) en raadpleeg de [veelgestelde vragen over upgrades](../../platform/using/faq-build-upgrade.md).
 
 ### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
@@ -63,7 +62,7 @@ Als gehoste [!DNL Gold Standard]-gebruiker profiteert u automatisch van de [!DNL
 ## Ondersteuning en andere handige koppelingen{#support}
 
 * [Help en ondersteuning](../../support.md)
-* [Configuratiescherm-releases](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html)
+* [Configuratiescherm-releases](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html)
 * [Nieuwste documentatie-updates](../../rn/using/documentation-updates.md)
 * [Verouderde en verwijderde functies](../../rn/using/deprecated-features.md)
 
