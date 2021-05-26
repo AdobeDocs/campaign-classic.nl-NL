@@ -6,14 +6,13 @@ description: Leer hoe u Campagne-processen kunt controleren
 audience: production
 content-type: reference
 topic-tags: production-procedures
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
+source-git-commit: 214838cabeaec082080b3378f7eba837b8af89ad
 workflow-type: tm+mt
-source-wordcount: '3602'
+source-wordcount: '3606'
 ht-degree: 0%
 
 ---
-
 
 # Processen opvolgen{#monitoring-processes}
 
@@ -255,11 +254,12 @@ Deze worden gegroepeerd onder **Monitoring** > &#39;SMTP-bewaking&#39;.
 >
 >* Informatie over SMTP-bewaking is alleen beschikbaar als het e-mailkanaal is geactiveerd.
 >* De **[!UICONTROL SMTP sending statistics]** worden alleen aangeboden als de statistische server op de instantie is gestart.
+
 >
 
 
 
-### SMTP die statistiekenverzenden {#smtp-sending-statistics}
+### SMTP die statistieken {#smtp-sending-statistics} verzenden
 
 Met het **[!UICONTROL SMTP sending statistics]**-rapport kunt u de serveractiviteit beheren. Er wordt een synthese van elk van de overeenkomende elementen weergegeven.
 
@@ -337,7 +337,7 @@ Klik op een PublicID om meer details te bekijken.
 
 ## Factureringsrapport {#billing-report}
 
-Het technische werkschema **[!UICONTROL Billing]** verzendt het rapport van de systeemactiviteit naar de &quot;facturerings&quot;exploitant per e-mail. Deze wordt standaard geactiveerd op de 25e van elke maand.
+Het technische werkschema **[!UICONTROL Billing]** verzendt het rapport van de systeemactiviteit naar de &quot;facturerings&quot;exploitant per e-mail. Het wordt teweeggebracht door gebrek 25th van elke maand op de instantie van de Marketing.
 
 De technische workflow vindt u in een submap van het volgende knooppunt: **Beheer** > **Productie** > **Technische workflows**.
 
@@ -620,7 +620,7 @@ In **ncs**, **redir** en **http** subelements, kunt u **isSecure** (facultatief)
 
 Om het te vormen, geef dit dossier uit en wijs op welke folder JRE of JDK geïnstalleerd is.
 
-### Bewakingstarten {#launching-monitoring}
+### Bewaking {#launching-monitoring} starten
 
 Om controle te lanceren, voer **netreport.bat** of **netreport.sh** dossier met regelmatige intervallen via een manuscript uit. Een rapport wordt verzonden na de eerste uitvoering, en dan slechts in het geval van een verandering van status.
 
