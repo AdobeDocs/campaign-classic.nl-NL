@@ -6,14 +6,13 @@ description: ACS-verbindingsbeginselen en gegevenscyclus
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '1990'
+source-wordcount: '1988'
 ht-degree: 0%
 
 ---
-
 
 # ACS-verbindingsbeginselen en gegevenscyclus{#acs-connector-principles-and-data-cycle}
 
@@ -85,7 +84,7 @@ Dankzij replicatie van bezorgings-id&#39;s en e-maillogboeken hebt u toegang tot
 
 De Schakelaar ACS synchroniseert quarantines tussen Campagne v7 en Campaign Standard.
 
-Een profiel dat is gerepliceerd van Campagne v7 naar Campaign Standard, bevat bijvoorbeeld een e-mailadres. Als het e-mailadres door Campaign Standard in quarantined is, worden de gegevens overgegaan tot Campagne v7 tijdens de volgende synchronisatie. Voor meer informatie over quarantines, zie [Quarantinebeheer](../../delivery/using/understanding-quarantine-management.md) en [Campaign Standard Quarantines](https://docs.adobe.com/content/help/en/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
+Een profiel dat is gerepliceerd van Campagne v7 naar Campaign Standard, bevat bijvoorbeeld een e-mailadres. Als het e-mailadres door Campaign Standard in quarantined is, worden de gegevens overgegaan tot Campagne v7 tijdens de volgende synchronisatie. Voor meer informatie over quarantines, zie [Quarantinebeheer](../../delivery/using/understanding-quarantine-management.md) en [Campaign Standard Quarantines](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
 
 ### Gepliceerde profielen {#using-replicated-profiles} gebruiken
 
@@ -327,4 +326,3 @@ Met de basisimplementatie, wordt de uit-van-de-doos ontvankelijke lijst herhaald
 
 1. Als uw rechtenbeheer is gebaseerd op mappen, gaat u naar **[!UICONTROL Administration > ACS Connector > Rights management > Folder mapping]** en definieert u een beveiligingsgroep voor de mappen die zijn gekoppeld aan uw aangepaste tabellen. Zie [Rechtenomzetting](#rights-conversion).
 1. Gebruik de **[!UICONTROL New replication]** workflow (niet de sjabloon, maar de werkstroominstantie zelf) om de aangepaste tabel en de velden op te nemen die u wilt repliceren. Zie [Technische en replicatieworkflows](#technical-and-replication-workflows).
-
