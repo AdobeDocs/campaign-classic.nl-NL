@@ -3,14 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: Informatie over profielen
 description: Informatie over profielen
-feature: Profielen, publiek
+feature: Profielen, doelgroepen
 role: Business Practitioner, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-translation-type: tm+mt
-source-git-commit: c733b68a06fba9bb24cd1c1995ffc99a1277be87
+source-git-commit: 214838cabeaec082080b3378f7eba837b8af89ad
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '899'
 ht-degree: 12%
 
 ---
@@ -91,10 +90,6 @@ De algemene indeling van de Adobe Campaign-verkenner wordt weergegeven op [deze 
 
 Actieve profielen zijn de profielen die voor factureringsdoeleinden worden geteld.
 
-Het aantal actieve profielen is alleen beschikbaar voor **Marketing instances**. Het is niet beschikbaar voor instanties van de Uitvoering, betekenend MID (midsourcing) en RT (het Centrum van het Bericht / Real-time overseinen) instanties.
-
-Als u op AWS wordt gehost, kunt u het aantal actieve profielen dat op uw instanties wordt gebruikt, ook rechtstreeks via het Configuratiescherm controleren. Raadpleeg de [documentatie van het Configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html) voor meer informatie.
-
 Facturering heeft alleen betrekking op profielen die **actief** zijn. Een profiel wordt als actief beschouwd als het profiel de afgelopen twaalf maanden via een kanaal als doel is aangewezen of met het profiel is gecommuniceerd.
 
 Er wordt geen rekening gehouden met de profielen die tijdens de voorbereiding van de levering zijn uitgesloten (typologische regels, quarantaine). Een profiel dat voor meerdere leveringen is bestemd, wordt slechts eenmaal meegeteld.
@@ -103,7 +98,13 @@ Er wordt geen rekening gehouden met de profielen die tijdens de voorbereiding va
 >
 >Er wordt geen rekening gehouden met de kanalen Facebook en Twitter.
 
-U kunt een overzicht van **[!UICONTROL Number of active profiles]** van Campagne **[!UICONTROL Administration > Campaign Management > Customer metrics]** menu hebben. Het daadwerkelijke aantal wordt uitgevoerd door **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technische werkschema](../../workflow/using/about-technical-workflows.md), die elke dag loopt en de nieuwe gegevens aan het bestaande rapport voor de huidige periode in **[!UICONTROL Customer metrics]** menu toevoegt. Elke periode duurt 12 maanden.
+Blader vanuit Campagneverkenner naar **[!UICONTROL Administration > Campaign Management > Customer metrics]** voor een overzicht van het aantal actieve profielen. Het werkelijke aantal wordt uitgevoerd door de **[!UICONTROL Number of active billing profiles]** ([!UICONTROL billingActiveContactCount]) [technische workflow](../../workflow/using/about-technical-workflows.md). Deze werkstroom loopt elke dag en voegt de nieuwe gegevens aan het bestaande rapport voor de huidige periode in **[!UICONTROL Customer metrics]** omslag toe.
+
+Het aantal actieve profielen is alleen beschikbaar voor **Marketing instances**. Het is niet beschikbaar voor instanties van de Uitvoering, betekenend MID (midsourcing) en RT (het Centrum van het Bericht / Real-time overseinen) instanties.
+
+>[!NOTE]
+>
+>U kunt het aantal actieve profielen op uw instantie ook controleren direct van het Controlebord van de Campagne. Raadpleeg de [documentatie van het Configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html) voor meer informatie.
 
 ## Video over zelfstudie {#create-profiles-video}
 
