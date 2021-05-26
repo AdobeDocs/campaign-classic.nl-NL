@@ -7,10 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-translation-type: tm+mt
-source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1541'
 ht-degree: 8%
 
 ---
@@ -84,7 +83,7 @@ Met de externe account **[!UICONTROL Routing]** kunt u elk kanaal dat beschikbaa
 
 De volgende kanalen kunnen worden gevormd:
 
-* [E-mail](../../installation/using/deploying-an-instance.md#email-channel-parameters)
+* [Email](../../installation/using/deploying-an-instance.md#email-channel-parameters)
 * [Mobile (SMS)](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
 * [Telefoon](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Direct mail](../../delivery/using/about-direct-mail-channel.md)
@@ -193,7 +192,7 @@ De instellingen voor externe accountconfiguratie zijn afhankelijk van de databas
 
 Met de externe account **[!UICONTROL Facebook Connect]** kunt u gepersonaliseerde inhoud weergeven in uw Facebook-toepassingen, waardoor het eenvoudiger wordt om vooruitzichten te krijgen via dit sociale netwerk.
 
-Voor elke Facebook-toepassing moet u een **[!UICONTROL Facebook Connect]** type extern account maken. Raadpleeg [page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts) voor meer informatie.
+Voor elke Facebook-toepassing moet u een externe account van het type **[!UICONTROL Facebook Connect]** maken. Raadpleeg [page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts) voor meer informatie.
 
 ![](assets/ext_account_12.png)
 
@@ -207,9 +206,9 @@ Voor elke Facebook-toepassing moet u een **[!UICONTROL Facebook Connect]** type 
 
 * **[!UICONTROL Application secret]**
 
-   App-geheim van uw Facebook-toepassing.
+   Toepassingsgeheim van uw Facebook-toepassing.
 
-Als u de host kiest in deze instantiemodus, moet de URL van het beveiligde canvas worden geplakt in het veld **Facebook-webgames (https)** op Facebook
+Als u de host kiest voor deze instantiemodus, moet de URL van het beveiligde canvas worden geplakt in het veld **Facebook-webgames (https)** op Facebook
 
 Om te weten waar te om van deze geloofsbrieven de plaats te bepalen, verwijs naar deze [pagina](https://developers.facebook.com/docs/facebook-login/access-tokens).
 
@@ -243,7 +242,7 @@ Als u verbinding wilt maken met de Adobe Campaign-console met een Adobe ID, moet
 
 * **[!UICONTROL IMS organization ID]**
 
-   ID van uw IMS-organisatie. Als u uw organisatie-id wilt zoeken, raadpleegt u deze [pagina](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) (**Waar kan ik mijn IMS-organisatie-id vinden?**).
+   ID van uw IMS-organisatie. Als u uw organisatie-id wilt zoeken, raadpleegt u [deze pagina](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) (**Waar kan ik mijn IMS-organisatie-id vinden?**).
 
 * **[!UICONTROL Association mask]**
 
@@ -257,7 +256,7 @@ Als u verbinding wilt maken met de Adobe Campaign-console met een Adobe ID, moet
 
    Naam van je Adobe Experience Cloud Tenant.
 
-Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../integrations/using/configuring-ims.md).
+Raadpleeg [deze pagina](../../integrations/using/configuring-ims.md) voor meer informatie over deze configuratie.
 
 ## Web Analytics {#web-analytics-external-account}
 
