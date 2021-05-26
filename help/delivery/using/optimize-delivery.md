@@ -5,14 +5,13 @@ title: Berichtlevering optimaliseren
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: tm+mt
-source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
+exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '729'
 ht-degree: 6%
 
 ---
-
 
 # Levering optimaliseren {#optimize-delivery}
 
@@ -32,7 +31,7 @@ Verschillende factoren kunnen de serverprestaties rechtstreeks beïnvloeden en h
 
 * De workflowuitvoering: het controleren van uw workflows is essentieel om problemen met de prestaties van het platform te voorkomen. Volg de richtlijnen [in dit document](../../workflow/using/workflow-best-practices.md#execution-and-performance) worden vermeld die.
 
-* Als gehoste klant kunt u [Mogelijkheden van het bedieningspaneel voor campagnes](https://docs.adobe.com/content/help/en/control-panel/using/discover-control-panel/key-features.html) gebruiken om uw platform te bewaken met behulp van [prestatiebewaking](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/about-performance-monitoring.html) functies.
+* Als u hiervoor in aanmerking komt, kunt u [Mogelijkheden van het bedieningspaneel voor campagnes](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html) gebruiken om uw platform te bewaken met behulp van [prestatiecontrole](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html) functies.
 
 ## Netwerkconfiguratie {#network-config} controleren
 
@@ -40,7 +39,7 @@ Om levering te optimaliseren wanneer het behandelen van e-mails in grote volumes
 
 **Tip**: Gebruik een transparant verzendadres dat overeenkomt met de website van uw merk. Het bedrijf TravelAgency beheert bijvoorbeeld de hotelketen Valentino. Zijn bezit het domein valentino.com voor zijn website. Om het hotel Valentino in Parijs te promoten, gebruikt het subdomein paris.valentino.com. Daarom kan een relevant afzenderadres hotel@paris.valentino.com zijn.
 
-## Leverbaarheidsbeheer {#deliverability-management}
+## Afleverbaarheidsbeheer {#deliverability-management}
 
 Om uw ontvangers&#39; te bereiken inbox zonder te stuiteren of als spam worden gemerkt, moet u het leverbaarheidstarief van uw berichten verbeteren.
 
