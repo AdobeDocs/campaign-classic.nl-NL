@@ -7,9 +7,9 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-source-git-commit: 69f6fcd21b27f095781bca4a62153086382f3d7f
-workflow-type: ht
-source-wordcount: '538'
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+workflow-type: tm+mt
+source-wordcount: '523'
 ht-degree: 100%
 
 ---
@@ -143,7 +143,7 @@ Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagi
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 en SP2</p>
-<p>Waarschuwing: Microsoft SQL Server wordt niet als de primaire database ondersteund wanneer de Campaign-server op Linux wordt uitgevoerd. <a href="https://docs.adobe.com/content/help/nl-NL/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Meer informatie</a>.</p>
+<p>Waarschuwing: Microsoft SQL Server wordt niet als de primaire database ondersteund wanneer de Campaign-server op Linux wordt uitgevoerd.</p>
 </td>
 </tr>
 <tr>
@@ -205,7 +205,7 @@ Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagi
 <tr>
 <td>Oracle</td>
 <td>
-<p>12c</p>
+<p>12 quater</p>
 <p>11g</p>
 </td>
 </tr>
@@ -214,8 +214,8 @@ Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagi
 <td>
 <p>11.x</p>
 <p>10.x</p>
-<p>9.6.x</p>
-<p>9.4.x</p>
+<p>9,6 x</p>
+<p>9,4 x</p>
 </td>
 </tr>
 <tr><td>SQL Server</td>
