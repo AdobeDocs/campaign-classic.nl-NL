@@ -6,20 +6,19 @@ description: Leer belangrijke stappen om aan een nieuwe bouwstijl te bevorderen
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '2355'
-ht-degree: 1%
+source-wordcount: '2353'
+ht-degree: 2%
 
 ---
-
 
 # Een build-upgrade uitvoeren{#performing-a-build-upgrade}
 
 Deze sectie zal u van een diepgaande analyse op het verbeteringsproces en de stappen voorzien om conflicten te identificeren en op te lossen.
 
-De verbetering van de bouw moet met voorzichtigheid worden uitgevoerd, de gevolgen ervan moeten vooraf volledig in overweging worden genomen en de procedure moet met een hoge mate van discipline worden afgerond. Zorg ervoor dat alleen deskundige gebruikers de hieronder beschreven stappen uitvoeren om ervoor te zorgen dat de upgrade is geslaagd. Daarnaast raden we u ten zeerste aan contact op te nemen met [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) voordat u een upgrade start.
+De verbetering van de bouw moet met voorzichtigheid worden uitgevoerd, de gevolgen ervan moeten vooraf volledig in overweging worden genomen en de procedure moet met een hoge mate van discipline worden afgerond. Zorg ervoor dat alleen deskundige gebruikers de hieronder beschreven stappen uitvoeren om ervoor te zorgen dat de upgrade is geslaagd. Daarnaast raden we u ten zeerste aan contact op te nemen met [Adobe Customer Care](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) voordat u een upgrade start.
 
 De volgende voorwaarden zijn vereist:
 
@@ -84,7 +83,7 @@ Alvorens de bouwstijlverbetering te beginnen, moeten de klanten op-gebouw de vol
 
 1. Krijg de recentste versie van uw [dossier van de serverconfiguratie](../../installation/using/the-server-configuration-file.md).
 
-1. [Download de nieuwste build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). [Meer informatie](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html).
+1. [Download de nieuwste build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). [Meer informatie](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 U moet ook alle [nuttige bevellijnen ](../../installation/using/command-lines.md) kennen alvorens een bouwstijlverbetering te beginnen:
 
@@ -412,7 +411,7 @@ Hier volgen de stappen voor het uitvoeren van een complexe samenvoeging:
 
 **Verwante onderwerpen**
 
-* [Veelgestelde vragen over upgrades samenstellen](../../platform/using/faq-build-upgrade.md)
+* [Veelgestelde vragen over buildupgrades](../../platform/using/faq-build-upgrade.md)
 * [Opmerkingen bij de release Campaign Classic](../../rn/using/rn-overview.md)
 * [Help- en ondersteuningsopties voor Campaign Classic](../../support.md)
 * [[!DNL Gold Standard] programma](../../rn/using/gs-overview.md)
