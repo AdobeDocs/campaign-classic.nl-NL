@@ -6,14 +6,13 @@ description: Soorten publiek delen met Adobe Experience Cloud
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
-translation-type: tm+mt
-source-git-commit: 40abbf1f981331b8a19d3607c57624aac22c91f2
+exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 0%
+source-wordcount: '302'
+ht-degree: 4%
 
 ---
-
 
 # Soorten publiek delen met Adobe Experience Cloud{#sharing-audiences-with-adobe-experience-cloud}
 
@@ -23,7 +22,7 @@ ht-degree: 0%
 
 Met Adobe Campaign kunt u soorten publiek en segmenten delen met Adobe Experience Cloud-oplossingen en kernservices. Er zijn twee opties beschikbaar:
 
-1. Verzend Adobe Experience Platform-segmentgegevens naar Adobe Campaign. Om deze integratie uit te voeren, moet u uw Platform van Gegevens van de Klant in real time met Campagne (RTCDP) verbinden. [Meer informatie vindt u in deze sectie](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html).
+1. Verzend Adobe Experience Platform-segmentgegevens naar Adobe Campaign. Om deze integratie uit te voeren, moet u uw Platform van Gegevens van de Klant in real time met Campagne (RTCDP) verbinden. [Meer informatie vindt u in deze sectie](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
 
 
 1. Integreer **Adobe Campaign** met **People core service** (ook bekend als **Profiles &amp; Audiences core service**) of Adobe Audience Manager. Dan kunt u:
@@ -39,6 +38,6 @@ Deze integratie ondersteunt twee typen Adobe Experience Cloud-id&#39;s:
 
    >[!NOTE]
    >
-   > De verklaarde gegevensbron van identiteitskaart kan nu ook met de dienstintegratie van de Kern van Mensen worden gebruikt.
+   > De gegevensbron Declared ID kan nu ook worden gebruikt met de integratie van de People-kernservice.
    >
    >Als u de de dienstintegratie van de Kern van Mensen gebruikt en de integratie van de Audience Manager wilt toevoegen, zult u de hulp van een consultant van Adobe Audience Manager nodig hebben om te vermijden verlies van alle verzamelde syncs van identiteitskaart wanneer het overgaan aan het gebruiken van deze Gedeclareerde gegevensbron van identiteitskaart in een context van Adobe Audience Manager.
