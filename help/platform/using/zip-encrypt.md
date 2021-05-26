@@ -6,14 +6,13 @@ description: Leer hoe u een bestand in Campaign Classic kunt comprimeren of comp
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
+exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 3%
+source-wordcount: '541'
+ht-degree: 6%
 
 ---
-
 
 # Een bestand {#zipping-or-encrypting-a-file} comprimeren of versleutelen
 
@@ -21,22 +20,20 @@ Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden exporteren. Wan
 
 Om dit te kunnen doen:
 
-1. Installeer een sleutelpaar GPG voor uw instantie gebruikend [Controlebord](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
+1. Installeer een sleutelpaar GPG voor uw instantie gebruikend [Controlebord](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=en#encrypting-data).
 
    >[!NOTE]
    >
-   >Het Configuratiescherm is toegankelijk voor alle beheergebruikers. De stappen om Admin toegang tot een gebruiker te verlenen zijn gedetailleerd in [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
-   >
-   >Merk op dat uw instantie op AWS moet worden gehost en moet worden geüpgraded met de nieuwste [Gold Standard](../../rn/using/gs-overview.md)-build of de [nieuwste GA-build (21.1)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Als u wilt controleren of uw instantie wordt gehost op AWS, voert u de stappen uit die worden beschreven in [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+   >Het Configuratiescherm is beperkt tot Admin-gebruikers en is alleen beschikbaar voor bepaalde campagneversies. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html)
 
-1. Als uw installatie van Adobe Campaign wordt gehost door Adobe, neemt u contact op met [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de benodigde hulpprogramma&#39;s op de server te installeren.
+1. Als uw installatie van Adobe Campaign wordt gehost door Adobe, neemt u contact op met [Adobe Customer Care](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de benodigde hulpprogramma&#39;s op de server te installeren.
 1. Als de installatie van Adobe Campaign op locatie plaatsvindt, installeert u het hulpprogramma dat u wilt gebruiken (bijvoorbeeld: GPG, GZIP) en de benodigde sleutels (coderingssleutel) op de toepassingsserver.
 
 Vervolgens kunt u opdrachten of code gebruiken op het tabblad **[!UICONTROL Script]** van de activiteit of in een activiteit **[!UICONTROL JavaScript code]**. In het onderstaande gebruiksgeval wordt een voorbeeld gegeven.
 
 **Verwante onderwerpen:**
 
-* [Een bestand decoderen of decoderen voordat het wordt verwerkt](../../platform/using/unzip-decrypt.md)
+* [Een bestand uitpakken of ontsleutelen vóór verwerking](../../platform/using/unzip-decrypt.md)
 * [Activiteit](../../workflow/using/extraction--file-.md) voor gegevensextractie (bestand).
 
 ## Hoofdlettergebruik: Gegevens versleutelen en exporteren met een sleutel die is geïnstalleerd in het Configuratiescherm {#use-case-gpg-encrypt}
@@ -47,7 +44,7 @@ In dit geval, zullen wij een werkschema bouwen om gegevens te coderen en uit te 
 
 De volgende stappen worden uitgevoerd:
 
-1. Genereer een sleutelpaar van GPG (openbaar/privé) gebruikend een nut van GPG, dan installeer de openbare sleutel op Controlebord. Gedetailleerde stappen zijn beschikbaar in [documentatie van het Configuratiescherm](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
+1. Genereer een sleutelpaar van GPG (openbaar/privé) gebruikend een nut van GPG, dan installeer de openbare sleutel op Controlebord. Gedetailleerde stappen zijn beschikbaar in [documentatie van het Configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=en#encrypting-data).
 
 1. In Campaign Classic, bouwt een werkschema om de gegevens uit te voeren en het te coderen gebruikend de privé sleutel die via het Controlebord is geïnstalleerd. Hiervoor maken we als volgt een workflow:
 
