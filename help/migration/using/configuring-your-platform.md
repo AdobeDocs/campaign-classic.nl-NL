@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Uw platform configureren
 description: Uw platform configureren
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
-translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 1%
 
 ---
-
 
 # Uw platform configureren{#configuring-your-platform}
 
@@ -130,4 +128,3 @@ Na het uitvoeren **postupgrade**, moeten de volgende elementen in acht worden ge
 * Interactie
 
    Als u **Interactie** gebruikt, moet u om het even welke parameters na de migratie aanpassen. Raadpleeg voor meer informatie de sectie [Interactie](../../migration/using/general-configurations.md#interaction).
-
