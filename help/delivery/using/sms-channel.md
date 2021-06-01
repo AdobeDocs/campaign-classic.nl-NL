@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Aan de slag met SMS-kanaal
 description: Aan de slag met SMS-kanaal
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '154'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
-
 
 # Ga aan de slag met SMS-kanaal{#sms-channel}
 
@@ -29,7 +27,7 @@ De belangrijkste stappen om SMS te verzenden zijn als volgt:
 
 * [Het SMS-kanaal configureren](sms-set-up.md)
 * [Een sms-levering maken](sms-create.md)
-* [Het publiek definiëren](sms-create.md#selecting-the-target-population)
+* [De doelgroep definiëren](sms-create.md#selecting-the-target-population)
 * [Definieer de content van de sms](sms-create.md#defining-the-sms-content)
 * [SMS verzenden, controleren en volgen](sms-send.md)
 * [Problemen oplossen](troubleshooting-sms.md)
@@ -43,4 +41,3 @@ Voor globale informatie over hoe te om een levering tot stand te brengen, verwij
 >Met Adobe Campaign kunt u ook berichten verzenden op mobiele terminals via de optie **Adobe Campaign Mobile App Channel (NMAC)**.
 > 
 >Raadpleeg voor meer informatie de sectie [Aan de slag met mobiel toepassingskanaal](../../delivery/using/about-mobile-app-channel.md).
-
