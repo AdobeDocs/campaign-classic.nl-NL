@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Simulatie van aanbiedingen
 description: Simulatie van aanbiedingen
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 5%
 
 ---
-
 
 # Simulatie van aanbiedingen{#about-offers-simulation}
 
