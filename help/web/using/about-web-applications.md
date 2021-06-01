@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Aan de slag met webapplicaties
 description: Dynamische webtoepassingen, bestemmingspagina's en enquêtes maken en delen
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
+exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 20%
 
 ---
-
 
 # Aan de slag met webapplicaties{#about-web-applications}
 
@@ -102,4 +100,3 @@ Met de wizard Maken kunt u de opties selecteren die u wilt inschakelen, zoals hi
 >[!CAUTION]
 >
 >De beschikbare toepassingen zijn afhankelijk van uw opties en modules. Controleer hiervoor uw licentieovereenkomst.
-
