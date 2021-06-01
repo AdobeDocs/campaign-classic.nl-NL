@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Regels toepassen
 description: Regels toepassen
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 9%
 
 ---
-
 
 # Regels toepassen{#applying-rules}
 
@@ -66,7 +64,7 @@ Hiervoor definieert u in het veld **[!UICONTROL Frequency]** van het tabblad **[
 
 Als u de resultaten na deze periode wilt opslaan, geeft u een waarde groter dan 12 op in het veld **[!UICONTROL Frequency]**: zodra deze termijn is verstreken, worden alle regels opnieuw toegepast.
 
-Met de optie **[!UICONTROL Re-apply the rule at the start of personalization]** kunt u de regel automatisch toepassen tijdens de verpersoonlijkingsfase, ook als de punt in het veld **[!UICONTROL Frequency]** nog steeds geldig is.
+Met de optie **[!UICONTROL Re-apply the rule at the start of personalization]** kunt u de regel automatisch toepassen tijdens de verpersoonlijkingsfase, ook als de periode die in het veld **[!UICONTROL Frequency]** wordt vermeld, nog geldig is.
 
 ## Het selecteren van de fase van de regeltoepassing {#selecting-the-rule-application-phase}
 
@@ -79,7 +77,7 @@ In de standaardbewerkingsmodus worden de regels in de volgende volgorde toegepas
 1. Controleregels, indien toegepast aan het begin van targeting.
 1. Filterregels:
 
-   * Native toepassingsregels voor adreskwalificatie: bepaald adres / niet-geverifieerd adres / adres op de lijst van afgewezen personen / quarantined adres / adreskwaliteit.
+   * Native toepassingsregels voor adreskwalificatie: bepaald adres / niet-geverifieerd adres / adres op de lijst van gewezen personen / quarantined adres / adreskwaliteit.
    * Filterregels die door de gebruiker zijn gedefinieerd.
    * Deduplicatieregel op het adres of de id (indien nodig toegepast).
 
@@ -146,4 +144,3 @@ Met het tabblad **[!UICONTROL Distributed Marketing]** kunt u typologieën en/of
 >
 >In typologieën en typologieregels wordt het tabblad **[!UICONTROL Distributed Marketing]** toegevoegd als uw licentie deze optie bevat: gelieve uw vergunningsovereenkomst te controleren.\
 >Raadpleeg [Informatie over gedistribueerde marketing](../../campaign/using/about-distributed-marketing.md) voor meer informatie over gedistribueerde marketing.
-
