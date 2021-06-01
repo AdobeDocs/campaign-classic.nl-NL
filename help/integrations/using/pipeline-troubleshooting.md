@@ -1,20 +1,18 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: De integratie configureren
 description: De integratie configureren
 audience: integrations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 1%
 
 ---
 
-
-# Problemen met pipelines oplossen {#pipeline-troubleshooting}
+# Problemen met de pijplijn oplossen {#pipeline-troubleshooting}
 
 **Pipelined ontbreekt met fout &quot;Geen taak beantwoordt aan het masker pipelined@&lt;>&quot;**
 
