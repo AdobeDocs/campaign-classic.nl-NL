@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Interface van de content-editor
-description: Interface van de content-editor
+title: Interface van de contenteditor
+description: Interface van de contenteditor
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: tm+mt
-source-git-commit: c93931820887306c0ef64ef05d4f0ba2ca5a98aa
+exl-id: cb76f3dc-7f3a-49de-89cb-c106865ecb17
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 3%
 
 ---
 
-
-# Interface van de content-editor{#content-editor-interface}
+# Interface van de contenteditor{#content-editor-interface}
 
 ## Venster {#editing-window} bewerken
 
@@ -87,4 +85,3 @@ De toolbar is een **pop-up element** van de interface DCE die verschillende func
 >[!CAUTION]
 >
 >Met bepaalde werkbalkfuncties kunt u de HTML-content opmaken. Als de pagina echter een CSS-stijlpagina bevat, kunnen de **instructies** uit de stijlpagina **priority** overnemen op de instructies die met de werkbalk zijn opgegeven.
-
