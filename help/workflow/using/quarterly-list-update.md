@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Driemaandelijkse lijstupdate met een incrementele query
 description: In dit geval wordt een incrementele query gebruikt om een lijst met ontvangers automatisch bij te werken.
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 5%
 
 ---
-
 
 # Driemaandelijkse lijstupdate met een incrementele query {#quarterly-list-update}
 
