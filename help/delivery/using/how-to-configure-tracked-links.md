@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Getraceerde koppelingen configureren
-description: Getraceerde koppelingen configureren
+title: Bijgehouden koppelingen configureren
+description: Bijgehouden koppelingen configureren
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
-source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
+exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 11%
+ht-degree: 13%
 
 ---
 
-
-# Getraceerde koppelingen configureren{#how-to-configure-tracked-links}
+# Bijgehouden koppelingen configureren{#how-to-configure-tracked-links}
 
 Voor elke levering kunt u de ontvangst van berichten en de activering van de koppelingen die in de berichtcontent zijn opgenomen, opvolgen. Hierdoor kunt u het gedrag van ontvangers volgen na de leveringsacties waarvoor ze als doel zijn opgegeven.
 
-Het volgen is op berichten van toepassing, maar het Web volgen laat u controleren hoe de ontvangers door een website (bezochte pagina&#39;s, aankopen) doorbladeren. De configuratie van web tracking wordt weergegeven in [deze sectie](../../configuration/using/about-web-tracking.md).
+Het volgen is op berichten van toepassing, maar het Web volgen laat u controleren hoe de ontvangers door een website (bezochte pagina&#39;s, aankopen) doorbladeren. De configuratie van webtracking wordt weergegeven in [deze sectie](../../configuration/using/about-web-tracking.md).
 
 >[!NOTE]
 >
