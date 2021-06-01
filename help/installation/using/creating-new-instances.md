@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Nieuwe instanties maken
 description: Nieuwe instanties maken
 audience: installation
 content-type: reference
 topic-tags: appendices
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3b87eb3c-3b50-4ed4-80b1-4333261ffe0b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 10%
 
 ---
-
 
 # Nieuwe instanties maken{#creating-new-instances}
 
@@ -28,4 +26,3 @@ U doet dit door u aan te melden bij een bestaande database en de volgende stappe
    ![](assets/s_ncs_install_declare_instance_menu.png)
 
    Geef de parameters van de nieuwe instantie op. Voor meer op dit, verwijs naar [Creërend een instantie en het programma openen](../../installation/using/creating-an-instance-and-logging-on.md).
-
