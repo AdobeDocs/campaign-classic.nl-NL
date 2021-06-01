@@ -6,16 +6,15 @@ description: Seed-adressen toevoegen
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 6%
+source-wordcount: '327'
+ht-degree: 5%
 
 ---
 
-
-# zaadadressen toevoegen{#adding-seed-addresses}
+# Seedadressen toevoegen{#adding-seed-addresses}
 
 ## Zaadadressen in een levering {#seed-addresses-in-a-delivery}
 
@@ -27,7 +26,7 @@ Er zijn drie mogelijke invoegmodi:
 
 1. Het ingaan van enige zaadadressen.
 
-   Klik hiertoe op de knop **[!UICONTROL Add]** en definieer de inhoud van de adresvelden. Herhaal dit voor elk adres. Raadpleeg [deze sectie](../../message-center/using/managing-seed-addresses-in-transactional-messages.md#creating-a-seed-address) voor meer informatie.
+   Klik hiertoe op de knop **[!UICONTROL Add]** en definieer de inhoud van de adresvelden. Herhaal dit voor elk adres.
 
 1. Adressjablonen importeren en deze aan uw wensen aanpassen.
 
