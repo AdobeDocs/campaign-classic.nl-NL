@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Laden (SOAP)
 description: Laden (SOAP)
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+exl-id: 20414e73-2ba9-44f9-8e16-cb6604933ee0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 4%
 
 ---
-
 
 # Laden (SOAP){#loading-soap}
 
@@ -54,4 +52,3 @@ De bewerking is als volgt:
       De code van dit tabblad wordt aangeroepen in een lus door Adobe Campaign totdat een null XML-object wordt geretourneerd.
 
    * **[!UICONTROL Finalization]**: sluit verbinding en/of bevrijdt andere middelen die tijdens verwerking worden gecreeerd.
-
