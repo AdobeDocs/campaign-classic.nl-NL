@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Activiteitenafbeeldingen beheren
 description: Activiteitenafbeeldingen beheren
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 5%
 
 ---
-
 
 # Activiteitenafbeeldingen beheren{#managing-activity-images}
 
@@ -48,4 +46,3 @@ U kunt de afbeeldingen wijzigen die worden gebruikt in de diagrammen van de vers
 >De afbeeldingen die zijn opgeslagen in het knooppunt **[!UICONTROL Administration > Configuration > Images]** van de structuur zijn beschikbaar voor selectie.
 >  
 >Afbeeldingen moeten de PNG-indeling hebben, met 48 x 48 pixels, 16 miljoen kleuren en een transparante achtergrond.
-
