@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Profielen synchroniseren
 description: Profielen synchroniseren
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1201'
 ht-degree: 3%
 
 ---
-
 
 # Profielen synchroniseren{#synchronizing-profiles}
 
@@ -177,4 +175,3 @@ Volg de instructies in [Een workflow maken](#creating-a-workflow) en [Een leveri
 1. Ga naar Campaign Standard en open de profieldetails voor de ontvanger. Bevestig dat een selectievakje naast **[!UICONTROL No longer contact (by any channel)]** verschijnt. Zie [Basisbeginselen van navigatie](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html) voor meer informatie over de locatie waar u naar profielen in Campaign Standard wilt zoeken.
 
    ![](assets/acs_connect_profile_sync_23.png)
-
