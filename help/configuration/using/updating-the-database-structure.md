@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: De databasestructuur bijwerken
 description: De databasestructuur bijwerken
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 6c1e061b-8636-4285-8d83-97474544d252
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 8%
 
 ---
-
 
 # De databasestructuur bijwerken{#updating-the-database-structure}
 
@@ -40,4 +38,3 @@ Voer de stappen uit en bekijk het SQL-script voor de update van de database:
 Start vervolgens de database-update:
 
 ![](assets/d_ncs_integration_schema_update3.png)
-
