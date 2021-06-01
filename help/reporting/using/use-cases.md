@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Gebruiksscenario’s
 description: Gebruiksscenario’s
 audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 0%
 
 ---
-
 
 # Gebruiksscenario’s{#use-cases}
 
@@ -286,4 +284,3 @@ U kunt bijvoorbeeld de domeinen van alle uitgesloten adressen weergeven en deze 
 Dit zou het volgende type van rapport produceren:
 
 ![](assets/reporting_descriptive_exclusion_result.png)
-
