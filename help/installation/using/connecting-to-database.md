@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Toegang tot een externe database
 description: Leer hoe u verbinding maakt met een externe database
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 240d7e11-da3a-4d64-8986-1f1c8ebcea3c
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '643'
 ht-degree: 2%
 
 ---
-
 
 # Verbinding maken met de database {#connecting-to-the-database}
 
