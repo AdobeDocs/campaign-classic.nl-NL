@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Seed-adressen
-description: Seed-adressen
+title: Seedadressen
+description: Seedadressen
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 9%
 
 ---
 
-
-# Seed-adressen{#about-seed-addresses}
+# Seedadressen{#about-seed-addresses}
 
 Seed-adressen worden gebruikt om ontvangers die niet aan de gedefinieerde doelcriteria voldoen, doelgericht te benaderen. Op deze manier kunnen ontvangers die buiten het bereik van de levering vallen, de levering ontvangen, net als elke andere doelontvanger.
 
