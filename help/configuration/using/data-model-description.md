@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Beschrijving van Adobe Campaign Classic-gegevensmodel
 description: In dit document wordt het Adobe Campaign-gegevensmodel beschreven.
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 1%
 
 ---
-
 
 # Beschrijving van cameragegevensmodel{#data-model-description}
 
@@ -268,6 +266,6 @@ Deze set tabellen is gekoppeld aan de module **Sociale netwerken beheren**, waar
 
 * **NmsVisitor**: Deze tabel komt overeen met de  **nms:** bezoekersschema. Het bevat informatie over bezoekers.
 * **NmsVisitorSub**: Deze tabel komt overeen met de  **nms:** bezoekerSubschema. Hiermee kunt u een bezoeker koppelen aan de services waarop ze zich hebben geabonneerd (Twitter of Facebook).
-* **NmsFriendShipRel**: Deze tabel komt overeen met de  **nms:** vriendshipRelschema. Hiermee kunt u bezoekers koppelen aan hun vrienden in het kader van de Facebook-service.
+* **NmsFriendShipRel**: Deze tabel komt overeen met de  **nms:** vriendshipRelschema. Met deze service kunt u bezoekers in het kader van de Facebook-service koppelen aan hun vrienden.
 * **NmsVisitorInterestRel**: Deze tabel komt overeen met de  **nms:** bezoekorInterestRelschema. U kunt bezoekers en hun belangen met elkaar verbinden.
 * **NmsInterest**: Deze tabel komt overeen met de  **nms:** interestschema. Het bevat de lijst met belangen voor elke bezoeker.
