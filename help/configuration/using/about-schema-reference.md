@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Schema-verwijzing in Adobe Campaign Classic
 description: Leer hoe te om uitbreidingsschema's te vormen om het conceptuele gegevensmodel van het gegevensbestand van Adobe Campaign Classic uit te breiden.
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 7%
 
 ---
-
 
 # Schemaverwijzing{#about-schema-reference}
 
