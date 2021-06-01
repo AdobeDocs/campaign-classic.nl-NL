@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Veelgestelde vragen over upgrades samenstellen
+title: Veelgestelde vragen over buildupgrades
 description: Algemene vragen met betrekking tot upgrades van de Campagne-build
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2024'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
-
 
 # Veelgestelde vragen over upgrades maken {#build-upgrade-faq}
 
@@ -21,7 +19,7 @@ Adobe Campaign wordt regelmatig bijgewerkt. Als u bekend bent met onze gepublice
 
 Het is essentieel dat onze klanten de meest recente versie van Adobe Campaign uitvoeren. Het staat ook Adobe toe om veel efficiënter te helpen in het geval u op kwesties loopt - het identificeren van, het reproduceren van en het bevestigen van een kwestie op een oude bouwstijl typisch meer tijd vergt, om niet te vermelden dat sommige kwesties u zou kunnen ontmoeten reeds zeer goed in een recente bouwstijl zijn opgelost.
 
-[!DNL Gold Standard] is de Campaign Classic-supportrelease voor de lange termijn. Als gehoste [!DNL Gold Standard] gebruiker, profiteert u automatisch van [!DNL Gold Standard] verbetering met de recentste stabiele versie zonder enige actie. Klanten op locatie en Hybride kunnen ook profiteren van [!DNL Gold Standard]-releases. Als u van een oude build migreert, adviseren wij u eerst bij te werken naar deze versie. [Meer informatie](../../rn/using/gs-overview.md).
+[!DNL Gold Standard] is de ondersteuningsrelease van Campaign Classic voor de lange termijn. Als gehoste [!DNL Gold Standard]-gebruiker profiteert u automatisch van de [!DNL Gold Standard]-upgrade met de nieuwste stabiele versie zonder actie te hoeven ondernemen. On-premise- en hybride klanten kunnen ook profiteren van [!DNL Gold Standard]-releases. Als u van een oude build migreert, adviseren wij u eerst bij te werken naar deze versie. [Meer informatie](../../rn/using/gs-overview.md).
 
 ## Wat is een bouwstijlverbetering?
 
@@ -166,7 +164,7 @@ Ja. De server wordt afgesloten tijdens een upgrade om ervoor te zorgen dat de ge
 
 ## Wie zou ik moeten contacteren om het bouwstijlverbeteringskaartje te openen?
 
-Als u problemen ondervindt na een upgrade van de build, neemt u contact op met [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De Zorg van de klant plant de bouwstijldata en opent bouwstijlgerelateerde kaartjes.
+Als u problemen ondervindt na een upgrade van de build, neemt u contact op met [Adobe Customer Care](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). De Zorg van de klant plant de bouwstijldata en opent bouwstijlgerelateerde kaartjes.
 
 Meer informatie over de Help- en ondersteuningsopties voor Campaign Classic](../../support.md)[
 
