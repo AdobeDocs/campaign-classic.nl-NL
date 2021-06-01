@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Probleemoplossing voor productie
 description: Ontdek procedures voor het oplossen van problemen bij de productie met betrekking tot de configuratie, de controle, het verbeteringsproces, de gegevensverwerking, en de procedure van het gegevensbestandonderhoud van Adobe Campaign.
@@ -7,19 +6,18 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
-translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 18%
 
 ---
 
-# Problemen met productie oplossen{#troubleshooting}
+# Probleemoplossing voor productie{#troubleshooting}
 
 Dit gedeelte bevat procedures voor het oplossen van problemen met betrekking tot algemene Adobe Campaign-productieproblemen, zoals levering en workflowuitvoering, bewaking, databaseonderhoud, verbinding, enzovoort.
 
-## Veel voorkomende en algemene problemen {#common-and-general-issues}
+## Veelvoorkomende en algemene problemen {#common-and-general-issues}
 
 * Deze [pagina](../../production/using/modules-and-frequent-issues.md) presenteert de frequentste problemen die voor de vermelde modules worden ontmoet.
 * Deze [pagina](../../production/using/workflow-execution.md) maakt een lijst van gemeenschappelijke het oplossen van problemenprocedures u zou moeten volgen wanneer het onder ogen zien van kwesties met werkschemauitvoering.
@@ -38,7 +36,7 @@ Specifieke acties kunnen worden uitgevoerd bij problemen met leveringen:
 
 [Leveringsprestaties](../../delivery/using/delivery-performances.md)
 
-## Werken met logbestanden {#working-with-logs}
+## Werken met logboekbestanden {#working-with-logs}
 
 Hier volgen enkele tips voor het verbeteren van uw ervaring met logboeken:
 
