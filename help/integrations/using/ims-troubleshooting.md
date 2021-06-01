@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Problemen met IMS oplossen
 description: Problemen met IMS oplossen
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 1%
 
 ---
-
 
 # Problemen met IMS oplossen{#ims-troubleshooting}
 
@@ -82,4 +80,3 @@ Start de server opnieuw als er wijzigingen zijn aangebracht in de bovenstaande i
 * De gebruiker heeft geen toegang tot de Adobe ID-aanmeldingspagina:
 
    Verwijs naar de vorige stappen om de werkingsgebiedconfiguratie te controleren.
-
