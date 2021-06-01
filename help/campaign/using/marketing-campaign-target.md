@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Doelgroep van marketingcampagne
 description: Leer hoe u het publiek van uw marketingcampagnes definieert
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1485'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-
-# Selecteer het publiek van uw campagnes {#marketing-campaign-deliveries}
+# De doelgroep van uw campagnes selecteren {#marketing-campaign-deliveries}
 
 In een marketingcampagne kunt u voor elke levering het volgende definiëren:
 
