@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Mobiel toepassingskanaal in Adobe Campaign Classic
 description: Deze sectie bevat algemene informatie die specifiek is voor het mobiele toepassingskanaal in Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# Aan de slag met mobiel toepassingskanaal{#about-mobile-app-channel}
+# Aan de slag met het kanaal voor mobiele apps{#about-mobile-app-channel}
 
 Met het **Mobile App Channel** kunt u het Adobe Campaign-platform gebruiken om persoonlijke pushberichten naar iOS- en Android-terminals te verzenden via apps.
 
@@ -103,4 +101,3 @@ Om te controleren dat het correct werkt, gebruik de volgende bevelen:
    ```
 
 Met de iOS HTTP/2-connector moeten de MTA-, webserver- en workflowserver contact kunnen opnemen met de APN&#39;s op poort 443.
-
