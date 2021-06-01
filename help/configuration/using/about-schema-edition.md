@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: De schema-editor
 description: Aan de slag met schema-editie
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1004'
 ht-degree: 7%
 
 ---
-
 
 # De schema-editor{#about-schema-edition}
 
@@ -204,7 +202,7 @@ Voorbeeld van een externe verbinding tussen de ontvankelijke lijst en een lijst 
 
 Hier komt &#39;xpath-dst&#39; overeen met de primaire sleutel in het doelschema en &#39;xpath-src&#39; komt overeen met de externe sleutel in het bronschema.
 
-## Audittrail {#audit-trail}
+## Audit trail {#audit-trail}
 
 Eén handig element dat u onder aan het schema wilt opnemen, is een element tracking (audittrail).
 
@@ -225,4 +223,3 @@ Raadpleeg de sectie [De databasestructuur bijwerken](../../configuration/using/u
 >[!NOTE]
 >
 >Wanneer de wijzigingen niet de gegevensbestandstructuur beïnvloeden, moet u enkel schema&#39;s regenereren. Selecteer hiertoe de schema&#39;s die u wilt bijwerken, klik met de rechtermuisknop en kies **[!UICONTROL Actions > Regenerate selected schemas...]**. Raadpleeg voor meer informatie de sectie [Regenererende schema&#39;s](../../configuration/using/regenerating-schemas.md).
-
