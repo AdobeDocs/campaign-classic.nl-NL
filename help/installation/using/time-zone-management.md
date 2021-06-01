@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Tijdzonebeheer
 description: Tijdzonebeheer
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e5ed96cc-3fc7-4af4-a29e-5a4c81f4fe39
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 1%
 
 ---
-
 
 # Tijdzonebeheer{#time-zone-management}
 
@@ -68,7 +66,7 @@ Schakel de optie **[!UICONTROL UTC database (date fields with time zone)]** in o
 
 >[!IMPORTANT]
 >
->Als u **Oracle** gebruikt, moeten de timezone-bestanden (.dat) van de Oracle-clientlagen compatibel zijn met de tijdzonebestanden die op de server zijn geïnstalleerd.
+>Als u **Oracle** gebruikt, moeten de timezone dossiers (.dat) van de cliëntlagen van het Oracle compatibel zijn met de timezones dossiers die op de server worden geïnstalleerd.
 
 Als de database geen UTC is, kunt u een van de tijdzones selecteren die in de vervolgkeuzelijst worden aangeboden. U kunt ook de tijdzone van de server gebruiken of de optie UTC (Coordinated Universal Time) selecteren.
 
@@ -99,4 +97,3 @@ Voorbeeld van mogelijke waarden:
 * Amerika/New_York, enz.
 
    Deze waarden zijn afkomstig uit de tz-database (Olson). Raadpleeg [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) voor meer informatie.
-
