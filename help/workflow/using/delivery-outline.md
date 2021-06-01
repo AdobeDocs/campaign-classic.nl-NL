@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Overzicht van levering
 description: Meer informatie over de workflowactiviteit van het overzicht van de levering
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b4dee085-ccc4-43fd-850d-1501a99272aa
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 1%
 
 ---
-
 
 # Overzicht van levering{#delivery-outline}
 
@@ -48,4 +46,3 @@ De **leveringsoverzicht** activiteit, beschikbaar in de campagnewerkschema&#39;s
    In de voorvertoning wordt rekening gehouden met het aantal aanbiedingen dat in de levering is opgegeven. Bij het uitvoeren van een workflow wordt rekening gehouden met het nummer dat is opgegeven in het leveringsoverzicht.
 
    ![](assets/int_compo_offre_wf1.png)
-
