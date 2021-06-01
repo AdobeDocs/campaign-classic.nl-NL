@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Webapplicaties synchroniseren
 description: Webapplicaties synchroniseren
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 1%
 
 ---
-
 
 # Webapplicaties synchroniseren{#synchronizing-web-applications}
 
@@ -134,4 +132,3 @@ Wanneer de ontvanger zijn gegevens bijwerkt via de webtoepassing, haalt Adobe Ca
 1. Klik op het tabblad **[!UICONTROL Subscriptions]**. De nieuwsbrief wordt nu weergegeven.
 
    ![](assets/acs_connect_lp_21.png)
-
