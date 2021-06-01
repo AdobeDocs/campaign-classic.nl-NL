@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Pushmeldingen maken
 description: Meer informatie over het maken van pushmeldingen
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 4%
 
 ---
-
 
 # Meldingen maken{#creating-notifications}
 
