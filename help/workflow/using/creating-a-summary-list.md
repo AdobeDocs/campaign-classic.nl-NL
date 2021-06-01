@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een overzichtslijst maken
 description: Een overzichtslijst maken
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
 
 ---
-
 
 # Een overzichtslijst maken{#creating-a-summary-list}
 
@@ -188,4 +186,3 @@ Als de workflow eenmaal is uitgevoerd, bevat de lijst:
 * een kolom van de &quot;Verwijzing van de Code van het Postcode&quot;ingegaan voor alle opslag bevat in het schema van de archiefverwijzing.
 
 ![](assets/uc2_enrich_listfinal.png)
-
