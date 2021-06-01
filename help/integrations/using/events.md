@@ -1,13 +1,11 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Gebeurtenissen configureren
 description: Leer hoe u gebeurtenissen configureert voor een aangepaste implementatie
 audience: integrations
 content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-translation-type: tm+mt
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 0%
@@ -178,7 +176,7 @@ function processPipelineMessage(xmlTrigger)
  }
 ```
 
-### Beperkingen {#constraints}
+### Restricties {#constraints}
 
 De prestaties voor deze code moeten optimaal zijn, omdat deze op hoge frequenties wordt uitgevoerd en mogelijke negatieve effecten voor andere marketingactiviteiten kan hebben. Vooral als het verwerken van meer dan één miljoen triggergebeurtenissen per uur op de marketingserver of als het niet correct wordt ingesteld.
 
@@ -200,7 +198,7 @@ Het triggerType-veld identificeert waaruit de gegevens afkomstig zijn.
 
 Hier volgt een voorbeeldschemacode voor deze tabel:
 
-| Attribute | Type | Label | Beschrijving |
+| Kenmerk | Type | Label | Beschrijving |
 |:-:|:-:|:-:|:-:|
 | pipeEventId | Lang | Primaire sleutel | De interne primaire sleutel van de trigger. |
 | data | Memo | Gegevens activeren | De volledige inhoud van triggergegevens in XML-indeling. Voor foutopsporing en controle. |
