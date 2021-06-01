@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Drukregels
 description: Drukregels
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
-translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '3253'
 ht-degree: 4%
 
 ---
-
 
 # Drukregels{#pressure-rules}
 
@@ -88,7 +86,7 @@ Voer de volgende stappen uit om een typologieregel **[!UICONTROL Pressure]** te 
    * In de bovenste sectie van dit tabblad kunt u de betreffende ontvangers beperken.
    * In de onderste sectie van dit tabblad kunt u de berichten filteren die moeten worden geteld.
 
-      In het volgende voorbeeld wordt alleen rekening gehouden met ontvangers die zijn opgeslagen in de map **NewContacts** en met leveringen die beginnen met **Newsletter**.
+      In het volgende voorbeeld worden alleen ontvangers die zijn opgeslagen in de map **NewContacts** in aanmerking genomen en gaat het om leveringen die beginnen met **Newsletter**.
    ![](assets/campaign_opt_create_a_rule_05.png)
 
 1. Het **[!UICONTROL Typologies]** lusje laat u de campagnetypologieën bekijken die deze regel toepassen of de regel verbinden aan één of meerdere bestaande typologieën. Voor meer op dit, verwijs naar [Toepassend typologies](../../campaign/using/about-campaign-typologies.md#applying-typologies).
@@ -329,7 +327,7 @@ Eerst, vorm de drukregel.
 
    Met deze optie wordt de waarde die in het veld **[!UICONTROL Frequency]** is gedefinieerd, overschreven en wordt de regel tijdens de verpersoonlijkingsfase automatisch toegepast. Raadpleeg [Rekenfrequentie aanpassen](../../campaign/using/applying-rules.md#adjusting-calculation-frequency) voor meer informatie hierover.
 
-1. Selecteer **[!UICONTROL Pressure]** op het tabblad &lt;a0/> als **[!UICONTROL Period considered]** en **[!UICONTROL Grouping per day]** als **[!UICONTROL Period type]**.**[!UICONTROL 7d]**
+1. Selecteer **[!UICONTROL Pressure]** op het tabblad **[!UICONTROL 7d]** als **[!UICONTROL Period considered]** en **[!UICONTROL Grouping per day]** als **[!UICONTROL Period type]**.
 1. Selecteer de optie **[!UICONTROL Take the deliveries into account in the provisional calendar]** om de geplande leveringen op te nemen.
 
    ![](assets/campaign_opt_pressure_example_1.png)
