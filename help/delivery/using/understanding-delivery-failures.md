@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Leveringsfouten begrijpen
 description: Leer hoe u fouten met leveringen begrijpt
@@ -7,8 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-translation-type: tm+mt
-source-git-commit: b7a3046600845781a7393a9d1e9659550d9bfcdd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
@@ -166,13 +164,13 @@ De mogelijke redenen van een leveringsfout zijn:
   <tr> 
    <td> Onbereikbaar </td> 
    <td> Zacht/Hard </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> Er is een fout opgetreden in de berichtleveringsketen. Het zou een incident op het relais SMTP, een domein kunnen zijn dat tijdelijk onbereikbaar is, etc. Volgens de fout, zal het adres opnieuw worden geprobeerd tot de foutenteller 5 bereikt, of het zal direct naar quarantines worden verzonden.<br /> </td> 
   </tr> 
   <tr> 
    <td> Gebruiker onbekend </td> 
    <td> Hard </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> Het adres bestaat niet. Voor dit profiel worden geen verdere leveringen uitgevoerd.<br /> </td> 
   </tr> 
  </tbody> 
