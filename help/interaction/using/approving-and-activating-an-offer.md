@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een aanbieding goedkeuren en activeren
 description: Een aanbieding goedkeuren en activeren
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: cf7649fe-f62a-4dfa-a19e-9c1ca545e3e3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 2%
 
 ---
-
 
 # Een aanbieding goedkeuren en activeren{#approving-and-activating-an-offer}
 
@@ -130,4 +128,3 @@ U kunt een categorie ook rechtstreeks uitschakelen door naar het tabblad **[!UIC
 >Wanneer een aanbieding in een ontwerpomgeving wordt verwijderd, wordt deze automatisch gedeactiveerd in de gekoppelde online omgeving. Na een bewaarperiode voor voorstellen worden de gedeactiveerde aanbiedingen uit de online omgeving verwijderd.
 
 ![](assets/offer_preview_deactivate.png)
-
