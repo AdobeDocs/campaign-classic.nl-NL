@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Leveringsdashboard
 description: Meer informatie over hoe u het dashboard voor levering kunt gebruiken om uw leveringen te controleren.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
-source-git-commit: 3c82e30cdc1057be6357d48170b959fb89c79528
+exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 4%
 
 ---
-
 
 # Leveringsdashboard {#delivery-dashboard}
 
@@ -35,8 +33,8 @@ Hier volgt de informatie die u kunt controleren met de verschillende tabbladen d
 **Verwante onderwerpen:**
 
 * [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
-* [Quarantainebeheer begrijpen](../../delivery/using/understanding-quarantine-management.md)
-* [Best practices voor levering](../../delivery/using/delivery-best-practices.md)
+* [Werken met quarantainebeheer](../../delivery/using/understanding-quarantine-management.md)
+* [Best practices voor verzending](../../delivery/using/delivery-best-practices.md)
 * [Leverbaarheid beheren](../../delivery/using/about-deliverability.md)
 
 ## Leveringsoverzicht {#delivery-summary}
