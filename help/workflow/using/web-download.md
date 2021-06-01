@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Webdownload
 description: Meer informatie over de activiteiten van de webdownloadworkflow
 audience: workflow
 content-type: reference
 topic-tags: event-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 1%
 
 ---
-
 
 # Webdownload{#web-download}
 
