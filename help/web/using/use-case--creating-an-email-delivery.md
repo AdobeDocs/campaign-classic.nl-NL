@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Hoofdletters gebruiken - een e-maillevering maken
 description: Gebruiksscenario voor e-maillevering maken
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: tm+mt
-source-git-commit: 46aa896929c960abeb501642a5ffbbb56de4802e
+exl-id: e2679f12-459b-466d-9c82-60a28363b104
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 0%
 
 ---
-
 
 # Gebruiksscenario: een e-maillevering maken{#use-case-creating-an-email-delivery}
 
