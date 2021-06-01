@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: HeatMap van de Campagne Workflow
 description: Uw workflows controleren met Workflow HeatMap
@@ -7,14 +6,14 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-source-git-commit: e6969a3ed61bde692b2f72b3711f12ce46a0025f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 3%
 
 ---
 
-# Workflow HeatMap {#workflow-heatmap}
+# Workflowheatmap {#workflow-heatmap}
 
 De werkstroom HeatMap van de campagne bestaat uit een kleur-gecodeerde grafische vertegenwoordiging van alle werkschema&#39;s die momenteel lopen. Deze is alleen beschikbaar voor **Campagnebeheerders**.
 
