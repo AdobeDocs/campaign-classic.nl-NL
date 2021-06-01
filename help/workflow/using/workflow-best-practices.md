@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Best practices voor workflows
 description: Meer informatie over best practices voor de campagnereschemap
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1609'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
-
 
 # Best practices voor workflows{#workflow-best-practices}
 
@@ -23,7 +21,7 @@ Hieronder vindt u algemene richtlijnen voor het optimaliseren van de campagnepre
 
 Richtlijnen voor het oplossen van problemen met betrekking tot de uitvoering van workflows zijn ook beschikbaar in [deze sectie](../../production/using/workflow-execution.md).
 
-### Logbestanden {#logs}
+### Logboeken {#logs}
 
 De JavaScript-methode **[!UICONTROL logInfo()]** is een ideale oplossing voor het opsporen van fouten in een workflow. Het is nuttig, maar het moet zorgvuldig worden gebruikt, vooral voor activiteiten die vaak worden uitgevoerd: het kan de logboeken overladen en beduidend de grootte van de logboeklijst verhogen. Maar u zou ook meer dan **[!UICONTROL logInfo()]** kunnen nodig hebben.
 
@@ -37,7 +35,7 @@ Er zijn twee aanvullende oplossingen beschikbaar om u te helpen:
 
    >[!CAUTION]
    >
-   >Deze optie mag nooit worden ingeschakeld in een productiewerkstroom. Deze optie wordt gebruikt om de resultaten te analyseren en is alleen ontworpen voor testdoeleinden en moet daarom alleen worden gebruikt in ontwikkelings- of testomgevingen.
+   >Deze optie mag nooit worden ingeschakeld in een productieworkflow. Deze optie wordt gebruikt om de resultaten te analyseren en is alleen ontworpen voor testdoeleinden en moet daarom alleen worden gebruikt in ontwikkelings- of testomgevingen.
 
 * **SQL-query&#39;s vastleggen in het journaal**
 
