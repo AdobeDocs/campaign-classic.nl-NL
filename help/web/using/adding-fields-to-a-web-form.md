@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Velden toevoegen aan een webformulier
 description: Velden toevoegen aan een webformulier
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
+exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2457'
 ht-degree: 1%
 
 ---
-
 
 # Velden toevoegen aan een webformulier{#adding-fields-to-a-web-form}
 
@@ -60,7 +58,7 @@ Klik **[!UICONTROL Finish]** om het geselecteerde gebied in de pagina op te neme
 
 ![](assets/s_ncs_admin_webform_wz_insert_field.png)
 
-## Invoerveldentoevoegen {#adding-input-fields}
+## Invoervelden {#adding-input-fields} toevoegen
 
 Als u een invoerveld wilt toevoegen, klikt u op de knop **[!UICONTROL Input control]** en kiest u het type veld dat u wilt toevoegen.
 
@@ -108,7 +106,7 @@ U kunt vijf verschillende typen tekstvelden invoegen in een formulierpagina:
 
    ![](assets/webapp_enrich_text_max.png)
 
-### Invoerveldenconfigureren {#configure-input-fields}
+### Invoervelden {#configure-input-fields} configureren
 
 Invoervelden worden allemaal geconfigureerd op basis van dezelfde modus, waarbij de volgende opties worden gebruikt:
 
@@ -124,7 +122,7 @@ De antwoordopslagmodus kan worden gewijzigd via de koppeling **[!UICONTROL Edit 
 
 Op het tabblad **[!UICONTROL Advanced]** kunt u weergaveparameters voor het veld definiëren (positie van labels, uitlijning, enzovoort). Zie [Opmaak van webformulieren definiëren](../../web/using/defining-web-forms-layout.md).
 
-## Vervolgkeuzelijstentoevoegen {#adding-drop-down-lists}
+## Vervolgkeuzelijsten {#adding-drop-down-lists} toevoegen
 
 U kunt een vervolgkeuzelijst invoegen in een enquêtepagina. Hiermee kan de gebruiker een waarde selecteren uit de beschikbare waarden in een vervolgkeuzemenu.
 
@@ -156,7 +154,7 @@ Klik vervolgens op de koppeling **[!UICONTROL Load]** om de waarden op te halen:
 >
 >Herhaal deze bewerking telkens wanneer de lijst wordt bijgewerkt om de aangeboden waarden te vernieuwen.
 
-## Selectievakjestoevoegen {#adding-checkboxes}
+## Selectievakjes {#adding-checkboxes} toevoegen
 
 Als de gebruiker een optie kan selecteren, moet u een selectievakje gebruiken.
 
@@ -176,7 +174,7 @@ Als het opslagveld (of de variabele) Booleaans is, wordt de waarde die moet word
 
 ![](assets/s_ncs_admin_survey_check_box_enum.png)
 
-## Voorbeeld: Een waarde toewijzen aan een veld als een selectievakjeis ingeschakeld {#example--assign-a-value-to-a-field-if-a-box-is-checked}
+## Voorbeeld: Een waarde toewijzen aan een veld als een selectievakje {#example--assign-a-value-to-a-field-if-a-box-is-checked} is ingeschakeld
 
 We willen een selectievakje in een formulier invoegen om een onderhoudsaanvraag te verzenden, zoals hieronder wordt weergegeven:
 
@@ -190,7 +188,7 @@ Als het selectievakje &quot;Onderhoud vereist&quot; is ingeschakeld, bevat de ko
 
 ![](assets/s_ncs_admin_survey_check_box_ex_edit.png)
 
-## Keuzerondjestoevoegen {#adding-radio-buttons}
+## Keuzerondjes {#adding-radio-buttons} toevoegen
 
 Met keuzerondjes kunt u de gebruiker een aantal exclusieve opties bieden waaruit u kunt kiezen. Dit zijn verschillende waarden voor hetzelfde veld.
 
@@ -210,7 +208,7 @@ Als u een keuzerondje aan een formulierpagina wilt toevoegen, gaat u naar het me
 
 Keuzerondjes worden op dezelfde manier geconfigureerd als selectievakjes (zie [Selectievakjes toevoegen](#adding-checkboxes)). Er wordt echter geen waarde toegewezen als de optie niet is geselecteerd. Als u wilt dat verschillende knoppen onderling afhankelijk zijn, de andere automatisch deselecteert, moeten ze in hetzelfde veld worden opgeslagen. Als zij niet in het gegevensbestand worden opgeslagen, moet de zelfde lokale variabele voor tijdelijke opslag worden gebruikt. Zie [Opslagvelden voor reacties](../../web/using/web-forms-answers.md#response-storage-fields).
 
-### Een lijst met knoppentoevoegen {#add-a-list-of-buttons}
+### Een lijst met knoppen {#add-a-list-of-buttons} toevoegen
 
 Als u keuzerondjes wilt toevoegen via een lijst, gaat u naar het menu **[!UICONTROL Selection controls>Multiple choice]** op de werkbalk van de pagina-editor.
 
@@ -223,7 +221,7 @@ Voeg zoveel keuzerondjes toe als er labels zijn. Het voordeel van deze functie i
 >Webformulieren staan de selectie van verschillende waarden niet toe. Meerdere selecties kunnen alleen worden geactiveerd voor formulieren van het type **Beoordeling**. Raadpleeg [deze sectie](../../web/using/about-surveys.md) voor meer informatie.\
 >Het is echter mogelijk om een **[!UICONTROL Multiple choice]** typeveld in een toepassing van het Web op te nemen; maar zonder toestemming voor de keuze van verschillende waarden: u kunt de aangeboden opties selecteren met behulp van keuzerondjes.
 
-## Rasterstoevoegen {#adding-grids}
+## Rasters {#adding-grids} toevoegen
 
 Rasters worden gebruikt om stempagina&#39;s te ontwerpen in de toepassingen van het Web. Hier kunt u lijsten met keuzerondjes aanbieden voor het beantwoorden van enquêtes of het beoordelingstype Webformulieren, zoals hieronder wordt getoond:
 
@@ -243,11 +241,11 @@ Per rasterlijn kan slechts één optie worden geselecteerd.
 >
 >In ons voorbeeld is het label van het raster verborgen. Hiervoor gaat u naar het tabblad **[!UICONTROL Advanced]** en wordt de weergave **[!UICONTROL Label position]** gedefinieerd als **[!UICONTROL Hidden]**. Zie [De positie van labels definiëren](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels).
 
-## Datums en getallentoevoegen {#adding-dates-and-numbers}
+## Datums en getallen {#adding-dates-and-numbers} toevoegen
 
 De inhoud van de formuliervelden kan worden opgemaakt op basis van de gegevens die in de database zijn opgeslagen of om aan een bepaalde eis te voldoen. U kunt geschikte velden maken voor het invoeren van getallen en datums.
 
-### Datumstoevoegen {#adding-dates}
+### Datums {#adding-dates} toevoegen
 
 ![](assets/s_ncs_admin_survey_date_calendar.png)
 
@@ -281,7 +279,7 @@ Vervolgens kunt u limieten instellen voor de waarden die worden aangeboden in de
 
 ![](assets/s_ncs_admin_survey_date_first_last_y.png)
 
-### Getallentoevoegen {#adding-numbers}
+### Getallen {#adding-numbers} toevoegen
 
 U kunt geschikte velden maken voor het invoeren van getallen.
 
@@ -327,7 +325,7 @@ De gebruiker abonneert zich op de dienst door de relevante optie te controleren.
 
 Voorbeelden van abonnementen en verwijzingen zijn beschikbaar in [deze sectie](../../web/using/about-surveys.md).
 
-## Een captchainvoegen {#inserting-a-captcha}
+## Een captcha {#inserting-a-captcha} invoegen
 
 Het doel van **captcha** tests is frauduleus gebruik van uw vormen van het Web te verhinderen.
 
@@ -363,7 +361,7 @@ U kunt een foutbericht maken om weer te geven. Hiervoor gebruikt u de koppeling 
 >
 >Hoofdletters zijn altijd 8 tekens lang. U kunt deze waarde niet wijzigen.
 
-## Een bestanduploaden {#uploading-a-file}
+## Een bestand {#uploading-a-file} uploaden
 
 U kunt een uploadveld toevoegen aan een pagina. Deze functionaliteit kan bijvoorbeeld nuttig zijn voor het delen van intranetbestanden.
 
@@ -381,11 +379,12 @@ U kunt de koppeling naar deze bestanden opslaan in een lokale variabele of in ee
 >* Adobe Campaign bepaalt niet de grootte of het type geüploade bron: daarom adviseren wij hoogst gebruikend upload gebieden voor de veilige plaatsen van het typeIntranet slechts.
 >* Als verscheidene servers met de instantie (lading het in evenwicht brengen architectuur) worden verbonden, moet u ervoor zorgen vraag aan de vorm van het Web op de zelfde server aankomt.
 >* Deze implementaties vereisen de hulp van het Adobe Campaign Consulting-team.
+
 >
 
 
 
-## Een verborgen constanteinvoegen {#inserting-a-hidden-constant}
+## Een verborgen constante {#inserting-a-hidden-constant} invoegen
 
 Wanneer de gebruiker een van de pagina&#39;s van het formulier valideert, kunt u een specifieke waarde instellen op een veld van zijn profiel of op een variabele.
 
@@ -396,4 +395,3 @@ Hiervoor plaatst u een **constante** op de pagina en geeft u de waarde en de ops
 In het volgende voorbeeld wordt het veld **origin** van het ontvangende profiel automatisch ingevuld wanneer een gebruiker deze pagina goedkeurt. De constante wordt niet weergegeven op de pagina.
 
 ![](assets/s_ncs_admin_survey_constante.png)
-
