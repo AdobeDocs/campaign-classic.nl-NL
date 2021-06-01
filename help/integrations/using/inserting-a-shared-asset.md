@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een gedeelde asset invoegen
 description: Een gedeelde asset invoegen
 audience: integrations
 content-type: reference
 topic-tags: asset-sharing
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 30a94bce-6d96-4a6d-a62f-7451c822f0e3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 7%
 
 ---
-
 
 # Een gedeelde asset invoegen{#inserting-a-shared-asset}
 
@@ -48,4 +46,3 @@ Middelen die door Adobe Experience Cloud worden gedeeld, kunnen als volgt op uw 
 >[!NOTE]
 >
 >Als u de integratie met Adobe Target gebruikt, kunt u een gedeelde afbeelding als standaardafbeelding gebruiken. Zie [deze pagina](../../integrations/using/integrating-with-adobe-target.md).
-
