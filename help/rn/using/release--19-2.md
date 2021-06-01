@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Release 19.2
 description: Opmerkingen bij de release voor campagne 19.2
@@ -7,11 +6,10 @@ feature: null
 role: null
 level: null
 exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
-translation-type: tm+mt
-source-git-commit: 6f5a536a5ac1286cdf6f1c9f53377fe8d0f55bed
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1542'
-ht-degree: 20%
+ht-degree: 21%
 
 ---
 
@@ -21,13 +19,13 @@ ht-degree: 20%
 
 _15 april 2021_
 
-* Oplossing voor een regressie van de clientconsole die tot permanente foutberichten op het IMS-verbindingsscherm leidde. (NEO-34821)
+* Er is een probleem met een regressie van de clientconsole opgelost die tot permanente foutberichten op het IMS-verbindingsscherm leidde. (NEO-34821)
 
 **Alleen de console-upgrade is verplicht. Er is geen serverupgrade vereist.**
 
 >[!NOTE]
 >
-> Maak verbinding met [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/nl/campaign.html) om de nieuwe versie te downloaden. [Op deze pagina ](../../installation/using/client-console-availability-for-windows.md) leert u hoe u de console-update aan alle eindgebruikers kunt voorstellen.
+> Maak verbinding met [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) om de nieuwe versie te downloaden. [Op deze pagina ](../../installation/using/client-console-availability-for-windows.md) leert u hoe u de console-update aan alle eindgebruikers kunt voorstellen.
 
 _22 maart 2021_
 
