@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Lijsten maken en beheren
 description: Leer lijsten maken en beheren
-feature: Profiles
+feature: Profielen
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '805'
 ht-degree: 9%
 
 ---
-
 
 # Lijsten maken en beheren{#creating-and-managing-lists}
 
