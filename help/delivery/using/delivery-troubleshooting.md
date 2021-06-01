@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Problemen oplossen
 description: Leer meer over leveringsprestaties en hoe te om kwesties met betrekking tot levering controle problemen op te lossen.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 1%
 
 ---
-
 
 # Bezig met verzenden van probleemoplossing {#delivery-troubleshooting}
 
@@ -23,7 +21,7 @@ Bovendien, zorg ervoor u de beste praktijken en controlelijst volgt die in [deze
 
 **Verwante onderwerpen:**
 
-* [Leveringsstatus](../../delivery/using/delivery-statuses.md)
+* [Leveringsstatussen](../../delivery/using/delivery-statuses.md)
 * [Leveringsdashboard](../../delivery/using/delivery-dashboard.md)
 * [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
 
