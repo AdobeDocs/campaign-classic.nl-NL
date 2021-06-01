@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Waarschuwing
-description: Waarschuwing
+title: Melding
+description: Melding
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 21698e85-7b58-4bde-bbd2-0ee06ac90307
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 3%
 
 ---
 
-
-# Waarschuwing{#alert}
+# Melding{#alert}
 
 Een **Alert** activiteit verzendt een bericht naar een groep exploitanten. Zij functioneert op dezelfde manier als een goedkeuringsactiviteit, maar in dit geval wordt geen antwoord verwacht.
 
