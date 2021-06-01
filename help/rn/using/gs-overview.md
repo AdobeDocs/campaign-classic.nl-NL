@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: '[!DNL Gold Standard]-upgrade'
 description: 'Meer informatie over Campaign Classic [!DNL Gold Standard] '
@@ -7,9 +6,8 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: c36a78f6-3332-465d-92f5-48f70b8bdddd
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 100%
 
@@ -100,6 +98,6 @@ We doen er alles aan om u te voorzien van alle relevante project- en contactinfo
 
 ## Aanvullende bronnen
 
-* Aanvullende informatie over[[!DNL Gold Standard] ](gold-standard.md)
+* [Aanvullende informatie over [!DNL Gold Standard]](gold-standard.md)
 * [Veelgestelde vragen over buildupgrades](../../platform/using/faq-build-upgrade.md)
-* [[!DNL Gold Standard] -compatibiliteitsmatrix](compatibility-matrix-gs.md)
+* [[!DNL Gold Standard]-compatibiliteitsmatrix](compatibility-matrix-gs.md)
