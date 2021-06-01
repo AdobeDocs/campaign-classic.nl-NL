@@ -1,18 +1,16 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Adobe Experience Manager-integratie configureren
 description: Leer hoe te om campagne-AEM integratie te vormen
 audience: integrations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
-
 
 # De integratie configureren{#configuring-the-integration}
 
@@ -54,7 +52,7 @@ U moet een beveiligingszone configureren voor deze operator om verbinding te mak
 >
 >We raden u ten zeerste aan een beveiligingszone in te stellen die is gewijd aan AEM om beveiligingsproblemen te voorkomen. Raadpleeg de Installatiehandleiding [a1/> voor meer informatie.](../../installation/using/security-zones.md)
 
-Als uw instantie van de Campagne door Adobe wordt ontvangen, contacteer [Adobe klantenZorg](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team. Voer de onderstaande stappen uit als u campagne op locatie gebruikt:
+Als uw instantie van de Campagne door Adobe wordt ontvangen, contacteer [Adobe klantenZorg](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team. Voer de onderstaande stappen uit als u campagne op locatie gebruikt:
 
 1. Open het configuratiebestand **serverConf.xml**.
 1. Open het **allowUserPassword** attribuut van de geselecteerde veiligheidsstreek en plaats het aan **true**.
@@ -130,4 +128,3 @@ Voer de onderstaande stappen uit om de configuratie in Adobe Experience Manager 
 1. Configureer de **Externalzer-service**.
 
    Raadpleeg de documentatie [van Adobe Experience Manager voor meer informatie over het configureren van de documentatie.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html)
-
