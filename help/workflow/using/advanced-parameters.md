@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Geavanceerde parameters
 description: Geavanceerde parameters
@@ -7,8 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 2%
@@ -33,11 +31,11 @@ De velden die moeten worden ingevoerd op het tabblad **[!UICONTROL Advanced]** w
 
 Dit veld bevat de interne naam van de activiteit.
 
-## Image {#image}
+## Afbeelding {#image}
 
 In dit veld kunt u de afbeelding wijzigen die aan een activiteit is gekoppeld. Raadpleeg voor meer informatie: [Activiteitenafbeeldingen beheren](../../workflow/using/managing-activity-images.md).
 
-## Uitvoering {#execution}
+## Execution {#execution}
 
 In dit veld kunt u de actie definiëren die moet worden uitgevoerd wanneer de taak wordt geactiveerd. Er zijn drie mogelijke opties:
 
@@ -47,7 +45,7 @@ Deze opties worden over het algemeen geselecteerd in het winkelwagentje door met
 * **[!UICONTROL Do not activate]**: deze taak en alle volgende taken (in dezelfde vertakking) worden niet uitgevoerd.
 * **[!UICONTROL Activate but do not execute]**: deze taak en alle volgende taken (in dezelfde vertakking) worden automatisch gestopt. Dit kan handig zijn als u er wilt zijn wanneer de taak wordt gestart. Als u de taak handmatig wilt uitvoeren, klikt u met de rechtermuisknop op de activiteit en selecteert u **[!UICONTROL Normal execution]**.
 
-## Affiniteit {#affinity}
+## affiniteit {#affinity}
 
 U kunt ervoor kiezen de uitvoering van een workflow of workflowactiviteit op een specifieke computer af te dwingen. Hiervoor moet u een of meer eigenschappen definiëren op het niveau van de workflow of de desbetreffende activiteit.
 
