@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een workflow maken
 description: Leer hoe u een workflow kunt maken
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 3%
 
 ---
-
 
 # Een workflow maken {#building-a-workflow}
 
