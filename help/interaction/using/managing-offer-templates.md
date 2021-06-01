@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Aanbiedingssjablonen beheren
 description: Aanbiedingssjablonen beheren
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e4a6cc22-05bd-4b8a-984d-d0706fc210e1
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 5%
 
 ---
-
 
 # Aanbiedingssjablonen beheren{#managing-offer-templates}
 
@@ -44,4 +42,3 @@ Ga als volgt te werk om een aanbiedingstemplate (al dan niet buiten de box) te d
 Deze template wordt nu aangeboden bij het maken van een aanbieding.
 
 ![](assets/offer_modelcreated_001.png)
-
