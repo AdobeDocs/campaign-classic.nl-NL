@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Providers, voorraden en budgetten
 description: Providers, voorraden en budgetten
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 0%
 
 ---
-
 
 # Providers, voorraden en budgetten{#providers-stocks-and-budgets}
 
@@ -257,7 +255,7 @@ Er wordt een waarschuwing weergegeven wanneer een voorraad waarnaar in een lever
 
 ![](assets/s_ncs_user_stocks_valid_alert.png)
 
-#### Bestellingen {#orders}
+#### Orders {#orders}
 
 Met het subtabblad **[!UICONTROL Orders]** kunt u de huidige bestellingen weergeven en nieuwe bestellingen opslaan.
 
@@ -292,4 +290,3 @@ Als u in een campagne het budget selecteert, moet u het oorspronkelijke bedrag i
 >[!NOTE]
 >
 >De procedure voor het maken van budgetten wordt weergegeven in [Een budget maken](../../campaign/using/controlling-costs.md#creating-a-budget).
-
