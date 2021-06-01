@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: De workflow starten
 description: Leer hoe u een A/B-test uitvoert met een speciale praktijkcase.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
-source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
+exl-id: 9528b67a-8ba7-45d6-a2c0-06ac117d5324
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '88'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
-
-# De werkstroom starten {#step-7--starting-the-workflow}
+# De workflow starten {#step-7--starting-the-workflow}
 
 1. Klik op **[!UICONTROL Start]** de workflow.
 
