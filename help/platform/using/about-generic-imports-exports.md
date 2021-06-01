@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Over de invoer en uitvoer van generieke producten
 description: Meer informatie over generieke import en export.
-feature: Overview
+feature: Overzicht
 role: Business Practitioner, Data Architect
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+exl-id: 9ac13db3-552f-43cc-ab67-3aea82e0519e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '123'
+source-wordcount: '118'
 ht-degree: 5%
 
 ---
-
 
 # Aan de slag met import- en exporttaken {#about-generic-imports-exports}
 
@@ -29,5 +27,3 @@ De stappen voor het uitvoeren van generieke import- en exportbewerkingen zijn al
 1. [Maak een import- of exporttaak](../../platform/using/creating-import-export-jobs.md).
 1. Configureer en voer de [import](../../platform/using/executing-import-jobs.md) of [export](../../platform/using/executing-export-jobs.md) taak uit.
 1. [De ](../../platform/using/monitoring-jobs-execution.md) uitvoering van de taak controleren.
-
-
