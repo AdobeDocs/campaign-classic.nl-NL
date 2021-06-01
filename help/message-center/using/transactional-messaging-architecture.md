@@ -1,36 +1,52 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Adobe Campaign Classic-architectuur voor transactieberichten
-description: In deze sectie wordt de Adobe Campaign Classic-structuur voor transactiemeldingen beschreven.
+title: Architectuur van transactionele berichten
+description: In deze sectie worden de Adobe Campaign Classic-structuur voor transactiemeldingen en de beschikbare kanalen beschreven voor het verzenden van transactiemeldingen.
 audience: message-center
 content-type: reference
 topic-tags: introduction
-translation-type: tm+mt
-source-git-commit: 2d30a70f8fbfb7a916638697c0f7a5060c2458ee
+exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
+source-git-commit: a9054fb8e10bef37675922b2f81c7615cd04c1bb
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1100'
 ht-degree: 1%
 
 ---
 
+# Architectuur van transactionele berichten {#transactional-messaging-architecture}
 
-# Architectuur van transactionele berichten{#transactional-messaging-architecture}
+Transactioneel overseinen baseert zich op een specifieke architectuur, die uit verscheidene gevallen bestaat:
 
-## Informatie over uitvoerings- en besturingsinstanties {#about-execution-and-control-instances}
+* A **control instance**, waarop de berichtmalplaatjes worden gecreeerd.
 
-In Adobe Campaign, werden de transactionele overseinenmogelijkheden (die ook als Centrum van het Bericht worden bekend) ontworpen om scalability te steunen en de dienst te verlenen 24/7. Het bestaat uit verschillende gevallen:
-
-* een controle-instantie waarin de berichtmalplaatjes worden gecreeerd;
-* een of meer uitvoeringsinstanties die gebeurtenissen ontvangen en berichten leveren.
-
-Om deze mogelijkheden te gebruiken, de gebruikers van Adobe Campaign login aan de controleinstantie om transactionele berichtmalplaatjes tot stand te brengen, de berichtvoorproef te produceren gebruikend een zaadlijst, vertoningsrapporten en controleuitvoeringsinstanties.
-
-De instanties van de uitvoering ontvangen gebeurtenissen, koppelen hen aan transactionele berichtmalplaatjes, en verzenden een gepersonaliseerd bericht naar elke ontvanger.
+* Één of meerdere **uitvoeringsinstanties**, die gebeurtenissen ontvangen en berichten leveren.
 
 ![](assets/messagecenter_diagram.png)
 
-## Verschillende besturingsinstanties {#supporting-several-control-instances} ondersteunen
+| Control-instantie | Uitvoeringsinstantie |
+|--- |--- |
+| Adobe Campaign-gebruikers melden zich aan bij de besturingsinstantie om: <ul><li>Transactieberichtsjablonen maken</li><li>De voorvertoning van een bericht genereren met behulp van een zaadlijst</li><li>Rapporten weergeven</li><li>De uitvoeringsinstanties controleren</li></ul> | Uitvoeringsinstanties zijn hier: <ul><li>Gebeurtenissen ontvangen</li><li>Koppel ze aan transactiemalplaatjes</li><li>Verzend een gepersonaliseerd bericht naar elke ontvanger</li></ul> |
+
+## Instanties {#installing-instances} installeren
+
+Er zijn verscheidene voorzorgsmaatregelen om te nemen wanneer het installeren van de Transactieberichtpakketten. Adobe raadt u aan in een testomgeving te werken voordat u de productie start. U hebt ook een compatibele Adobe Campaign-licentie nodig. Neem voor meer informatie contact op met de manager van uw Adobe-account.
+
+>[!IMPORTANT]
+>
+>De bedieningsinstantie en de uitvoeringsinstantie(s) moeten op verschillende computers zijn geïnstalleerd. Ze kunnen niet dezelfde Campagne-instantie delen.
+
+Als u meerdere kanalen moet gebruiken, moet u gerelateerde pakketten installeren en configureren voordat u Transactieberichtpakketten installeert. Zie [Een leveringskanaal toevoegen](#adding-a-delivery-channel) voor meer informatie.
+
+## Control-instantie {#control-instance}
+
+Als u de besturingsinstantie op uw computer wilt installeren, selecteert u het **[!UICONTROL Transactional message control]**-pakket via het menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Zie [Campaign Classic-standaardpakketten installeren](../../installation/using/installing-campaign-standard-packages.md) voor meer informatie.
+
+![](assets/messagecenter_install_controlinstance_001.png)
+
+De gedetailleerde stappen om de controleinstantie te vormen worden voorgesteld in [deze sectie](../../message-center/using/configuring-instances.md#control-instance).
+
+### Verschillende besturingsinstanties {#supporting-several-control-instances} ondersteunen
 
 >[!IMPORTANT]
 >
@@ -42,31 +58,27 @@ Het is mogelijk om een uitvoeringscluster onder verscheidene controleinstanties 
 
 >[!NOTE]
 >
->Voor meer op de noodzakelijke configuratie, verwijs naar [Gebruikend verscheidene controleinstanties](../../message-center/using/creating-a-shared-connection.md#using-several-control-instances).
+>Voor meer op de noodzakelijke configuratie, verwijs naar [Gebruikend verscheidene controleinstanties](../../message-center/using/configuring-instances.md#using-several-control-instances).
 
-## Instanties {#installing-instances} installeren
+## Uitvoeringsinstantie {#execution-instance}
 
-Er zijn verscheidene voorzorgsmaatregelen om te nemen wanneer het installeren van de Transactieberichtpakketten. Adobe raadt u aan in een testomgeving te werken voordat u de productie start. U hebt ook een compatibele Adobe Campaign-licentie nodig. Neem voor meer informatie contact op met de manager van uw Adobe-account.
+Als u een uitvoeringsinstantie op uw computer wilt installeren, selecteert u het **[!UICONTROL Transactional message execution]**-pakket via het menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Zie [Campaign Classic-standaardpakketten installeren](../../installation/using/installing-campaign-standard-packages.md) voor meer informatie.
+
+![](assets/messagecenter_install_executioninstance_001.png)
+
+De gedetailleerde stappen om een uitvoeringsinstantie te vormen worden voorgesteld in [deze sectie](../../message-center/using/configuring-instances.md#execution-instance).
+
+## Beschikbare leveringskanalen
+
+Het e-mailkanaal is standaard beschikbaar. Als u uw transactieberichten op meerdere kanalen wilt verzenden, kunt u andere kanalen toevoegen (mobiel kanaal, Mobile App-kanaal, enz.).
 
 >[!IMPORTANT]
 >
->De bedieningsinstantie en de uitvoeringsinstantie(s) moeten op verschillende computers zijn geïnstalleerd. Ze kunnen niet dezelfde Campagne-instantie delen.
+>Een leveringskanaal toevoegen (mobiel kanaal, Mobile App-kanaal, enz.) moet worden uitgevoerd voordat het Transactiebericht-pakket wordt geïnstalleerd.
 
-Als u meerdere kanalen moet gebruiken, moet u gerelateerde pakketten installeren en configureren voordat u Transactieberichtpakketten installeert. Zie [Een leveringskanaal toevoegen](#adding-a-delivery-channel).
+### Een leveringskanaal {#adding-a-delivery-channel} toevoegen
 
-* Selecteer de module **[!UICONTROL Transactional message control]** om de besturingsinstantie op uw computer te installeren.
-
-   ![](assets/messagecenter_install_controlinstance_001.png)
-
-* Selecteer de module **[!UICONTROL Transactional message execution]** om de uitvoeringsinstantie op uw computer te installeren.
-
-   ![](assets/messagecenter_install_executioninstance_001.png)
-
-## Een leveringskanaal {#adding-a-delivery-channel} toevoegen
-
-Een leveringskanaal toevoegen (mobiel kanaal, Mobile App-kanaal, enz.) moet worden uitgevoerd voordat het Transactiebericht-pakket wordt geïnstalleerd.
-
-Adobe raadt u altijd aan het pakket met het leveringskanaal toe te voegen voordat u het Transactieberichtpakket installeert.
+Adobe raadt u aan het pakket voor het leveringskanaal altijd toe te voegen **voordat u het Transaction message-pakket** installeert.
 
 Nochtans, als u een transactie overseinenproject op het e-mailkanaal bent begonnen, dan besluit tijdens het project om een nieuw kanaal toe te voegen, kunt u de hieronder stappen volgen.
 
@@ -115,7 +127,7 @@ Create your delivery templates the way you would for an email campaign:
 
 You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](../../interaction/using/creating-offer-spaces.md).-->
 
-## Transactieberichten en pushmeldingen {#transactional-messaging-and-push-notifications}
+### Transactionele pushmeldingen {#transactional-messaging-and-push-notifications}
 
 In combinatie met de Mobile App Channel-module kunt u met een transactiebericht transactieberichten verzenden via meldingen op mobiele apparaten.
 
@@ -162,7 +174,7 @@ Hier volgt een voorbeeld van een gebeurtenis die deze informatie bevat:
 >
 >Het maken van berichtsjablonen blijft hetzelfde.
 
-## Transactieberichten en LIJN {#transactional-messaging-and-line}
+### Transactieberichten en LIJN {#transactional-messaging-and-line}
 
 In combinatie met het lijnkanaal kunt u met transactiemeldingen realtime berichten verzenden naar de LINE-app die is geïnstalleerd in mobiele apparaten voor consumenten. Dit wordt gebruikt om het Welkome bericht te verzenden wanneer een gebruiker van de LIJN de pagina van het merk toevoegt.
 
@@ -237,4 +249,4 @@ Vervolgens moet u in **[!UICONTROL Explorer]** in **[!UICONTROL Platform]** > **
 
 
 
-1. U kunt nu transactiemeldingen maken. Raadpleeg [deze pagina](../../message-center/using/introduction.md) voor meer informatie.
+1. U kunt nu transactiemeldingen maken. Raadpleeg [deze pagina](../../message-center/using/creating-the-message-template.md) voor meer informatie.
