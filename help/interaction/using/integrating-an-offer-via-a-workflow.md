@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een aanbieding integreren via een workflow
 description: Een aanbieding integreren via een workflow
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 3%
 
 ---
-
 
 # Een aanbieding integreren via een workflow{#integrating-an-offer-via-a-workflow}
 
@@ -24,7 +22,7 @@ Buiten de leveringsactiviteit zelf, staan verscheidene werkschemaactiviteiten u 
 * Aanbiedingsengine
 * Aanbiedingen per cel
 
-## Overzicht van levering {#delivery-outline}
+## Overzicht van levering  {#delivery-outline}
 
 Met de overzichtsactiviteit van de levering, die beschikbaar is in de workflows van de campagne, kunt u aanbiedingen presenteren waarnaar wordt verwezen in een leveringsoverzicht van de lopende campagne.
 
@@ -173,4 +171,3 @@ Hiervoor gebruikt u het volgende proces:
       ![](assets/int_offer_per_cell1.png)
 
 1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Voor meer op dit, verwijs naar [Het opnemen van een aanbiedingsvoorstel in een levering](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) sectie.
-
