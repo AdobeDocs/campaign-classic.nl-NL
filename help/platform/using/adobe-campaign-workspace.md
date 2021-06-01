@@ -1,14 +1,12 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Adobe Campaign-werkruimte
 description: Leer de werkruimte Campagne gebruiken en aanpassen
-feature: Overview
+feature: Overzicht
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-translation-type: tm+mt
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 4%
