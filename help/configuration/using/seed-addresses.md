@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Seed-adressen
-description: Seed-adressen
+title: Seedadressen
+description: Seedadressen
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 1%
 
 ---
 
-
-# Seed-adressen{#seed-addresses}
+# Seedadressen{#seed-addresses}
 
 Als de ontvankelijke lijst een douanetabel is, worden de extra configuraties vereist. Het schema **[!UICONTROL nms:seedMember]** moet worden uitgebreid. Er wordt een extra tabblad toegevoegd aan de podadressen voor het definiëren van de juiste velden, zoals hieronder wordt getoond:
 
