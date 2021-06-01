@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Over de beschikbaarheid in Campagne
 description: Tips en trucs voor levering
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
-source-git-commit: 0420de856d1506ab92d8f0e0824bf439e0ac7dc7
+exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
-
-# Wat is leverbaar{#about-deliverability}
+# Wat is afleverbaarheid?{#about-deliverability}
 
 Met de prestaties kunt u het succes meten van uw campagnes die de inbox van uw ontvangers bereiken zonder te stuiteren, of als spam worden gemerkt. [Leer waarom leverbaarheid van belang](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html#why-deliverability-matters) is.
 
 Meer bepaald, verwijst de e-maillevering naar de reeks eigenschappen die de capaciteit van een bericht bepalen om zijn bestemming, via een persoonlijk e-mailadres, binnen een korte tijd, en met de verwachte kwaliteit in termen van inhoud en formaat te bereiken.
 
-Raadpleeg de [Handleiding best practice](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) voor een dieper inzicht in wat de leverbaarbaarheid is en voor meer informatie over de belangrijkste leverbare termen, concepten en benaderingen.
+Raadpleeg de [Handleiding best practice](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl) voor een dieper inzicht in wat de leverbaarbaarheid is en voor meer informatie over de belangrijkste leverbare termen, concepten en benaderingen.
 
 ## Hoe te om leverbaarheid {#deliverability-key-points} te verbeteren
 
@@ -59,7 +57,7 @@ Adobe Campaign biedt verschillende tools om de prestaties van uw platform bij te
 
 Wanneer het vormen van, het ontwerpen van, en het testen van uw bericht, zorg ervoor u de beste praktijken volgt die in de hieronder vermelde secties worden vermeld. Door gebruik te maken van alle functies die Adobe Campaign biedt, kunt u de leverbaarheid verbeteren.
 
-* [Best practices voor levering](../../delivery/using/delivery-best-practices.md)
+* [Best practices voor verzending](../../delivery/using/delivery-best-practices.md)
 * [E-mailcontent beheren](../../delivery/using/control-message-content.md)
 * [Inboxrendering](../../delivery/using/inbox-rendering.md)
 * [Een proef verzenden](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)
@@ -68,7 +66,7 @@ Wanneer het vormen van, het ontwerpen van, en het testen van uw bericht, zorg er
 
 Om het verzenden van berichten naar ongeldige adressen te vermijden, onjuiste mededelingen te beperken en afzenderreputatie te verbeteren, adviseert Adobe het uitvoeren van een dubbel opt-in mechanisme. Met deze methode kunt u ervoor zorgen dat de ontvangers zich bewust hebben geabonneerd.
 
-Zie [Een abonnementsformulier maken met dubbele opt-in](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in) voor meer informatie.
+Zie [Een lidmaatschapsformulier maken met dubbele opt-in](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in) voor meer informatie.
 
 Raadpleeg de [Handleiding best practices voor Adobe-levering](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html#data-quality-and-hygiene) voor meer informatie over de beste praktijken bij het verzamelen van gegevens van uw klanten.
 
@@ -83,7 +81,7 @@ Sommige internetproviders beschouwen e-mails automatisch als spam als het aantal
 Raadpleeg de volgende secties voor meer informatie hierover:
 
 * [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
-* [Quarantainebeheer begrijpen](../../delivery/using/understanding-quarantine-management.md)
+* [Werken met quarantainebeheer](../../delivery/using/understanding-quarantine-management.md)
 * [Quarantine versus lijst van gewezen personen](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist)
 
 ### Gereedschappen voor bewaking en rapportage gebruiken
@@ -94,7 +92,7 @@ Met Adobe Campaign kunt u controleren hoe uw leveringen presteren aan de hand va
 
 Raadpleeg de volgende secties voor meer informatie hierover:
 
-* [Leverbaarheid controleren](../../delivery/using/monitoring-deliverability.md)
+* [Afleverbaarheid controleren](../../delivery/using/monitoring-deliverability.md)
 * [Informatie over leveringscontrole](../../delivery/using/about-delivery-monitoring.md)
 * [Ingebouwde Campaign-rapporten](../../reporting/using/about-campaign-built-in-reports.md)
 
