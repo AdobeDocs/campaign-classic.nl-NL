@@ -1,20 +1,18 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Ga aan de slag met Bronnen en Doelen
+title: Aan de slag met bronnen en bestemmingen
 description: Meer weten over Adobe Experience Platform-bronnen en -doelen?
 audience: integrations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: b4da54c122e75a175f6f586a05955b3dfed00c1e
+exl-id: 8cee52c7-ea56-4701-8ebb-eb18afffea51
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '307'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
-
-# Aan de slag met bronnen en doelen {#rtcdp}
+# Aan de slag met bronnen en bestemmingen {#rtcdp}
 
 ## Bronnen en doelen
 
@@ -44,4 +42,4 @@ Zodra de schakelaars zijn gevormd, kunt u opstelling een gegevensinvoer of uitvo
 Raadpleeg de volgende secties voor meer informatie over het instellen van deze import- en exportprocessen:
 
 * [Adobe Experience Platform-segmenten in campagne plaatsen](../../integrations/using/ingest-aep-data.md)
-* [Gegevens exporteren van campagne naar Adobe Experience Platform](../../integrations/using/export-campaign-data.md)
+* [Gegevens exporteren van Campaign naar Adobe Experience Platform](../../integrations/using/export-campaign-data.md)
