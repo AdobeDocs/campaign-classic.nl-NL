@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Binnenkomende e-mails
 description: Meer informatie over de workflowactiviteiten voor inkomende e-mails
 audience: workflow
 content-type: reference
 topic-tags: event-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 1%
 
 ---
-
 
 # Binnenkomende e-mails{#inbound-emails}
 
@@ -79,4 +77,3 @@ Het eerste lusje van **Binnenkomende E-mail** activiteit laat u de parameters va
    ![](assets/email_rec_edit_3.png)
 
    De configuratie is het zelfde als voor de het plannen activiteit. Zie [Verlopen](../../workflow/using/defining-approvals.md).
-
