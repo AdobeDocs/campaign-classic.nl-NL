@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: RDBMS - Specifieke aanbevelingen
 description: RDBMS - Specifieke aanbevelingen
 audience: production
 content-type: reference
 topic-tags: database-maintenance
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 1%
 
 ---
-
 
 # RDBMS - Specifieke aanbevelingen{#rdbms-specific-recommendations}
 
@@ -21,7 +19,7 @@ Om u te helpen bij het instellen van onderhoudsplannen, worden in deze sectie en
 
 ## PostgreSQL {#postgresql}
 
-### Grote tabellendetecteren {#detecting-large-tables}
+### Grote tabellen {#detecting-large-tables} detecteren
 
 1. U kunt de volgende weergave aan uw database toevoegen:
 
@@ -95,11 +93,12 @@ vacuum full nmsdelivery;
 >* De **vacuum** en **re-index** bevelen zullen de lijst sluiten, die sommige processen pauzeert terwijl het onderhoud wordt uitgevoerd.
 >* Voor zeer grote tabellen (meestal boven 5 Gb) kan **vacuüm vol** behoorlijk inefficiënt worden en erg lang duren. Adobe raadt u niet aan deze te gebruiken voor de tabel **YyyNmsBroadLogXxx**.
 >* Deze onderhoudsbewerking kan worden geïmplementeerd door een Adobe Campaign-workflow met een **[!UICONTROL SQL]**-activiteit (zie [deze sectie](../../workflow/using/architecture.md) voor meer informatie). Zorg ervoor dat u onderhoud plant voor een lage activiteitstijd die niet in strijd is met uw back-upvenster.
+
 >
 
 
 
-### Databaseopnieuw samenstellen {#rebuilding-a-database}
+### Database {#rebuilding-a-database} opnieuw samenstellen
 
 PostgreSQL biedt geen eenvoudige manier om een online tabelreconstructie uit te voeren, aangezien **vacuum full** de tabel vergrendelt en zo een normale productie voorkomt. Dit betekent dat onderhoud moet worden uitgevoerd wanneer de tabel niet wordt gebruikt. U kunt:
 
@@ -357,7 +356,7 @@ function sqlGetMemo(strSql)
 
 ## Oracle {#oracle}
 
-Neem contact op met uw databasebeheerder voor informatie over de procedures die het meest geschikt zijn voor uw versie van Oracle.
+Neem contact op met de databasebeheerder voor meer informatie over de procedures die het meest geschikt zijn voor uw versie van Oracle.
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
