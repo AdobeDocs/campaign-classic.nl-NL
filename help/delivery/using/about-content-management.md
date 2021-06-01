@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Contentmanagement
 description: Contentmanagement
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 3%
 
 ---
-
 
 # Contentmanagement{#about-content-management}
 
@@ -45,4 +43,3 @@ Deze manier van inhoud creëren impliceert echter een paar beperkingen; met name
 
 * Beperkte vrijheid met betrekking tot het ontwerp van het definitieve document,
 * De analyse van de eisen moet strikt zijn, zodat de eindgebruiker niet wordt gehinderd door een ontbrekende functie.
-
