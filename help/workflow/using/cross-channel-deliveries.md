@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Leveringen tussen kanalen
+title: Cross-channel leveringen
 description: Meer informatie over leveringen via meerdere kanalen
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 7%
 
 ---
 
-
-# Leveringen tussen kanalen{#cross-channel-deliveries}
+# Cross-channel leveringen{#cross-channel-deliveries}
 
 Kanaaloverschrijdende leveringen zijn beschikbaar op het tabblad **[!UICONTROL Deliveries]** van workflowactiviteiten voor campagnes.
 
@@ -23,7 +21,7 @@ Hiermee kunt u een levering maken die specifiek is voor een bepaald kanaal. U ku
 
 De verschillende beschikbare kanalen zijn:
 
-* [E-mail](../../delivery/using/about-email-channel.md)
+* [Email](../../delivery/using/about-email-channel.md)
 * [Direct mail](../../delivery/using/about-direct-mail-channel.md)
 * [Mobiel](../../delivery/using/sms-channel.md)
 * [Twitter](../../social/using/publishing-on-twitter.md)
