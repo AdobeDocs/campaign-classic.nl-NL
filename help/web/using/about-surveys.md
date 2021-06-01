@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 'Aan de slag met enquêtes '
 description: Aan de slag met campagneenquêtes
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
+exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 1%
 
 ---
-
 
 # Aan de slag met enquêtes {#about-surveys}
 
@@ -84,4 +82,3 @@ Enquêtes worden opgeslagen in het knooppunt **[!UICONTROL Resources > Online > 
 >[!NOTE]
 >
 >De informatie van de configuratie is beschikbaar in [deze sectie](../../web/using/about-web-forms.md).
-
