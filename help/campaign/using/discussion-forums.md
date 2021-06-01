@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Discussieforums
 description: Discussieforums
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
-translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
 
 ---
-
 
 # Discussieforums{#discussion-forums}
 
@@ -111,6 +109,4 @@ Als operatoren die zijn geabonneerd op een forum geen meldingen ontvangen zoals 
 
    * Ga op de startpagina van Adobe Campaign naar **[!UICONTROL Campaigns > Navigation > Deliveries]** en open vervolgens de levering **[!UICONTROL Discussion forum notification]**.
    * Ga in de verkenner naar **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** en klik vervolgens op **[!UICONTROL Discussion forum notifications]**.
-
    In de **[!UICONTROL Discussion forum notifications]** doos, worden de leveringslogboeken gevonden in **[!UICONTROL Edit > Delivery]** tabel. U kunt ook de tabbladen **[!UICONTROL Tracking > Log]** en **[!UICONTROL Exclusion causes]** weergeven.
-
