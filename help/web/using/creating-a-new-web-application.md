@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een nieuwe webapplicatie maken
 description: Een nieuwe webapplicatie maken
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: 5ccf5a21-48aa-4c0d-8cc8-457eb07d9f74
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '361'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
-
-# Een nieuwe webtoepassing maken{#creating-a-new-web-application}
+# Een nieuwe webapplicatie maken{#creating-a-new-web-application}
 
 Toepassingstypen voor het web worden tijdens het maken geselecteerd.
 
