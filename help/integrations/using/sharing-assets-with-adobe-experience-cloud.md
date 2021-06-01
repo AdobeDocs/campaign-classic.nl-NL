@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementen delen met Adobe Experience Cloud
 description: Elementen delen met Adobe Experience Cloud
 audience: integrations
 content-type: reference
 topic-tags: asset-sharing
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b28aa5a5-afba-458b-8a85-375493c6c836
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
 
 ---
-
 
 # Elementen delen met Adobe Experience Cloud{#sharing-assets-with-adobe-experience-cloud}
 
@@ -33,4 +31,3 @@ Raadpleeg de sectie [Toegang tot middelen configureren](../../integrations/using
 >[!NOTE]
 >
 >In de context van een Adobe Campaign On-Premise-omgeving is integratie met de kernservice Middelen en met AEM Assets niet beschikbaar, tenzij AEM Assets ook op locatie is.
-
