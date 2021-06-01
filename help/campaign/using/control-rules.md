@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Controleregels
 description: Controleregels
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 5a5f26f6-38da-4488-aadb-81fcb5359331
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 1%
 
 ---
-
 
 # Controleregels{#control-rules}
 
@@ -73,4 +71,3 @@ Voer de volgende stappen uit:
    Aan het einde van de analyse is de knop **[!UICONTROL Confirm delivery]** niet beschikbaar.
 
    ![](assets/campaign_opt_create_control_06.png)
-
