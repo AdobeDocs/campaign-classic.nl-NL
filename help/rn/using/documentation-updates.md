@@ -7,7 +7,7 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
 source-wordcount: '4367'
 ht-degree: 98%
@@ -113,7 +113,7 @@ Er is een gebruiksscenario toegevoegd voor het gebruik van de samenvoegfunctie v
 
 De volledige beschrijving van de pagina over protocol en instellingen voor de sms-connector is nu [hier](../../delivery/using/sms-protocol.md) beschikbaar.
 
-Er is een opmerking toegevoegd aan de sectie **Transactionele berichten** om te waarschuwen dat de gebeurtenismappen niet moeten worden ingesteld als weergaven van de uitvoeringsinstanties om problemen met toegangsrechten te voorkomen. [Meer informatie](../../message-center/using/event-collection.md)
+Er is een opmerking toegevoegd aan de sectie **Transactionele berichten** om te waarschuwen dat de gebeurtenismappen niet moeten worden ingesteld als weergaven van de uitvoeringsinstanties om problemen met toegangsrechten te voorkomen. [Meer informatie](../../message-center/using/about-event-processing.md#event-collection)
 
 ## November 2020 {#nov-2020}
 
@@ -259,7 +259,7 @@ Privacywetten voor Thailand en Brazilië - [Meer informatie](https://helpx.adobe
 
 **Overige documentatie-updates die bij de release worden geleverd**
 
-De nieuwe optie voor het ongedaan maken van de publicatie van een transactionele-berichtsjabloon wordt beschreven in [deze sectie](../../message-center/using/template-unpublication.md).
+De nieuwe optie voor het ongedaan maken van de publicatie van een transactionele-berichtsjabloon wordt beschreven in [deze sectie](../../message-center/using/publishing-message-templates.md#template-unpublication).
 
 De nieuwe opties waarmee u beperkingen kunt instellen voor het verzenden van e-mails met afbeeldingen die zijn gedownload van een gepersonaliseerde URL en bijlagen, zijn toegevoegd aan de lijst met Campaign Classic-opties. [Meer informatie](../../installation/using/configuring-campaign-options.md#delivery)
 
@@ -519,7 +519,7 @@ De sectie over de activiteit Subworkflow is uitgebreid met een gebruiksvoorbeeld
 
 De pagina over de [On-premise en gehoste capaciteitsmatrix van Campaign Classic](../../installation/using/capability-matrix.md) is bijgewerkt met informatie over Email BCC.
 
-De documentatie over transactionele berichten is bijgewerkt met een opmerking betreffende de publicatie van sjablonen. [Meer informatie](../../message-center/using/template-publication.md)
+De documentatie over transactionele berichten is bijgewerkt met een opmerking betreffende de publicatie van sjablonen. [Meer informatie](../../message-center/using/publishing-message-templates.md#template-publication)
 
 De sectie over niet-verwerkte, niet-bezorgde e-mails is bijgewerkt met meer details over het doorstuuradres en het adres voor foutenvelden. [Meer informatie](../../installation/using/deploying-an-instance.md)
 
