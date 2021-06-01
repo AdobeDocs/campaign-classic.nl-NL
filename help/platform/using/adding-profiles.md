@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Profielen toevoegen
 description: Profielen toevoegen
-feature: Profiles
+feature: Profielen
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+exl-id: befa8948-ef2e-4f4d-a002-3f26d8516a0d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 10%
+source-wordcount: '75'
+ht-degree: 9%
 
 ---
-
 
 # Profielen toevoegen{#adding-profiles}
 
