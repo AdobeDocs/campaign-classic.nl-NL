@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementen en kenmerken
 description: Elementen en kenmerken
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 0%
 
 ---
-
 
 # kenmerkelement {#attribute--element}
 
@@ -21,7 +19,7 @@ ht-degree: 0%
 
 kenmerk:==help
 
-## Kenmerken {#attributes}
+## Attributen {#attributes}
 
 _operation (string), advanced (boolean), applyIf (string), autoIncrement (boolean), behoortTo (string), dataPolicy (string), dbEnum (string), defOnDuplicate (boolean), default (string), desc (string), edit (string), enum (string), expr (string), featureDate (boolean), img (string), inout (string), label (string), length (string), localizable (boolean), name (MNTOKEN), notNull (boolean), pkgStatus (string), ref (string), required (boolean), sql (boolean), sqlDefault (string), sqlname (string), sqql ltable (string), target (MNTOKEN), template (string), translateDefault (string), translateExpr (string), type (MNTOKEN), user (boolean), userEnum (string), visibleIf (string), xml (boolean)
 
