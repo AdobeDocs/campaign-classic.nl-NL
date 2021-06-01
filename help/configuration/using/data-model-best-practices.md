@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Best practices voor het datamodel
 description: Leer hoe u met het gegevensmodel Campaign Classic werkt
@@ -7,8 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-translation-type: tm+mt
-source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '4009'
 ht-degree: 1%
@@ -230,7 +228,7 @@ Er wordt een index toegevoegd aan de kenmerken die in een koppeling worden gebru
 
 De   Gemaakt-door en laatst gewijzigd-door verbindingen zijn aanwezig in vele lijsten. Het is mogelijk om de index onbruikbaar te maken door het attribuut noDbIndex op de verbinding te gebruiken, als deze informatie niet door de zaken wordt gebruikt.
 
-### Kardinaliteit {#cardinality}
+### Kardinaal {#cardinality}
 
 Wanneer u een verbinding ontwerpt, zorg ervoor dat het doelverslag uniek is wanneer een 1-1 verhouding is verklaard. Anders kan verbinden veelvoudige verslagen terugkeren wanneer slechts één wordt verwacht. Dit resulteert in fouten tijdens leveringsvoorbereiding wanneer de vraag meer rijen dan verwacht terugkeert. Stel de naam van de koppeling in op dezelfde naam als het doelschema.
 
