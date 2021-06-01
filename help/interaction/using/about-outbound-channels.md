@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Uitgaande kanalen
-description: Uitgaande kanalen
+title: Outbound-kanalen
+description: Outbound-kanalen
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
-translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+exl-id: 6e32dadc-097f-4380-b931-88468f3cb3b1
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 5%
 
 ---
 
-
-# Uitgaande kanalen{#about-outbound-channels}
+# Outbound-kanalen{#about-outbound-channels}
 
 Aanbiedingen kunnen in diverse ruimten worden voorgesteld gebruikend binnenkomende of uitgaande kanalen. In dit hoofdstuk worden de uitgaande kanalen beschreven.
 
