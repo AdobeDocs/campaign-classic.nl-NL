@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Mislukte verbinding
 description: Mislukte verbinding
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+exl-id: 3c793dc1-9654-4289-a3d2-30c3078fd848
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
-
 
 # Mislukte verbinding{#failure-to-connect}
 
 De redenen voor een verbindingsprobleem kunnen meerdere zijn en zijn afhankelijk van verschillende contexten.
 
-U kunt de volgende tests proberen en als de verbindingsmislukking voortduurt, gelieve [Adobe klantenZorg](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) te contacteren.
+U kunt de volgende tests proberen en als de verbindingsmislukking voortduurt, gelieve [Adobe klantenZorg](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) te contacteren.
 
 
 
