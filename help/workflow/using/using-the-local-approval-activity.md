@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: De lokale goedkeuringsactiviteit gebruiken
 description: Leer hoe u de lokale goedkeuringsactiviteit gebruikt
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 2%
 
 ---
-
 
 # De lokale goedkeuringsactiviteit gebruiken{#using-the-local-approval-activity}
 
@@ -154,7 +152,7 @@ Het e-mailbericht dat de activiteit **[!UICONTROL Local approval]** aan lokale t
 
 ![](assets/local_validation_intro_2.png)
 
-### Wait {#wait}
+### Wachten {#wait}
 
 Met de wachtactiviteiten kunt u het starten van de tweede lokale goedkeuringsactiviteit uitstellen die de feedbackmelding voor levering verzendt. In het **[!UICONTROL Duration]** gebied, zijn wij ingegaan **[!UICONTROL 5d]** waarde (5 dagen). De acties die de ontvangers gedurende vijf dagen na de verzending van de levering uitvoeren, worden in de feedbackmelding opgenomen.
 
@@ -219,4 +217,3 @@ Dit tabblad bevat de volgende informatie:
 Op het tabblad **[!UICONTROL Targeted]** van het goedkeuringslogboek worden de lijst met beoogde ontvangers en hun goedkeuringsstatus weergegeven. U kunt deze status desgewenst wijzigen.
 
 ![](assets/local_validation_admin_6.png)
-
