@@ -1,31 +1,29 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Toegang tot Teradata configureren
 description: Leer hoe u toegang tot Teradata kunt configureren in FDA
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 0%
 
 ---
 
-
 # Toegang tot Teradata {#configure-access-to-teradata} configureren
 
 Gebruik de optie Campagne [Federated Data Access](../../installation/using/about-fda.md) (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Teradata te configureren.
 
 1. [Teradata-stuurprogramma&#39;s installeren en configureren](#teradata-config)
-1. Teradata [externe account](#teradata-external) configureren in campagne
-1. [extra configuratie](#teradata-additional-configurations) instellen voor Teradata en Campagneserver
+1. De Teradata [externe account](#teradata-external) configureren in campagne
+1. [extra configuratie](#teradata-additional-configurations) instellen voor Teradata- en Campagneserver
 
-## Teradata-configuratie {#teradata-config}
+## Teradata configuratie {#teradata-config}
 
-U moet stuurprogramma&#39;s installeren voordat Teradata verbinding kan maken met Campagne.
+U moet stuurprogramma&#39;s installeren voordat Teradata verbinding kan maken met de campagne.
 
 1. Installeer het [ODBC-stuurprogramma voor Teradata](https://downloads.teradata.com/download/connectivity/odbc-driver/linux).
 
@@ -68,12 +66,12 @@ U moet stuurprogramma&#39;s installeren voordat Teradata verbinding kan maken me
 
 >[!NOTE]
 >
->Voor het verbinden met een externe Teradata-database in FDA zijn aanvullende configuratiestappen op de Adobe Campaign-server vereist. [Meer informatie](#teradata-additional-configurations).
+>Als u verbinding maakt met een externe Teradata-database in FDA, hebt u aanvullende configuratiestappen nodig op de Adobe Campaign-server. [Meer informatie](#teradata-additional-configurations).
 
 
-## Teradata externe account{#teradata-external}
+## Externe account voor teradata{#teradata-external}
 
-Met de externe Teradata-account kunt u uw Campagne-instantie verbinden met uw externe Teradata-database.
+Met de externe account van Teradata kunt u uw Campagne-instantie verbinden met uw externe database van Teradata.
 
 1. Klik in Campagne **[!UICONTROL Explorer]** op **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
@@ -87,31 +85,31 @@ Met de externe Teradata-account kunt u uw Campagne-instantie verbinden met uw ex
 
    * **[!UICONTROL Server]**: URL of naam van uw Teradata-server
 
-   * **[!UICONTROL Account]**: Naam van de account die wordt gebruikt voor toegang tot de Teradata-database
+   * **[!UICONTROL Account]**: Naam van de account die wordt gebruikt voor toegang tot de database van Teradata
 
-   * **[!UICONTROL Password]**: Wachtwoord voor verbinding met de Teradata-database
+   * **[!UICONTROL Password]**: Wachtwoord gebruikt om met het gegevensbestand van Teradata te verbinden
 
    * **[!UICONTROL Database]**: Naam van de database (optioneel)
 
-   * **[!UICONTROL Options]**: Opties die door Teradata worden doorgegeven. Gebruik de volgende indeling: &#39;parameter=value&#39;. Gebruik een halve kolom als scheidingsteken tussen waarden.
+   * **[!UICONTROL Options]**: Opties die door Teradata moeten worden doorgegeven. Gebruik de volgende indeling: &#39;parameter=value&#39;. Gebruik een halve kolom als scheidingsteken tussen waarden.
 
    * **[!UICONTROL Timezone]**: Tijdzone ingesteld in Teradata. [Meer informatie](#timezone)
 
 ### Query-streepjescodes
 
-Wanneer meerdere Adobe Campaign-gebruikers verbinding maken met dezelfde externe FDA Teradata-account, kunt u op het tabblad **[!UICONTROL Query banding]** een queryband instellen, dat wil zeggen een set sleutel-/waardeparen, voor een sessie.
+Wanneer meerdere Adobe Campaign-gebruikers verbinding maken met dezelfde externe FDA Teradata-account, kunt u op het tabblad **[!UICONTROL Query banding]** een queryband instellen, dat wil zeggen een set sleutel/waardeparen, voor een sessie.
 
 ![](assets/ext_account_20.png)
 
-Wanneer deze optie wordt gevormd, telkens als een gebruiker van de Campagne een vraag op het gegevensbestand van Teradata uitvoert, zal Adobe Campaign meta- gegevens verzenden, die uit een lijst van sleutels bestaan, verbonden aan deze gebruiker. Deze gegevens kunnen vervolgens door Teradata-beheerders worden gebruikt voor auditdoeleinden of voor het beheren van toegangsrechten.
+Wanneer deze optie wordt gevormd, telkens als een gebruiker van de Campagne een vraag op het gegevensbestand van Teradata uitvoert, zal Adobe Campaign meta- gegevens verzenden, die uit een lijst van sleutels bestaan, verbonden aan deze gebruiker. Deze gegevens kunnen dan door de beheerders van Teradata voor controledoeleinden worden gebruikt of toegangsrechten beheren.
 
 >[!NOTE]
 >
->Raadpleeg de [Teradata-documentatie](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw) voor meer informatie over **[!UICONTROL Query banding]**.
+>Raadpleeg de [documentatie voor Teradata](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw) voor meer informatie over **[!UICONTROL Query banding]**.
 
 Voer de onderstaande stappen uit om querybanding te configureren:
 
-1. Gebruik **[!UICONTROL Default]** om een standaardvraagband in te gaan die zal worden gebruikt als een gebruiker geen bijbehorende vraagband heeft. Als dit veld leeg blijft, kunnen gebruikers zonder queryband Teradata niet gebruiken.
+1. Gebruik **[!UICONTROL Default]** om een standaardvraagband in te gaan die zal worden gebruikt als een gebruiker geen bijbehorende vraagband heeft. Als dit veld leeg blijft, kunnen gebruikers zonder queryband geen Teradata gebruiken.
 
 1. Gebruik het **[!UICONTROL Users]** gebied om een vraagband voor elke gebruiker te specificeren. U kunt zoveel sleutel-/waardeparen toevoegen als u nodig hebt, bijvoorbeeld priority=1;workload=high. Als aan de gebruiker geen queryband is toegewezen, wordt het veld **[!UICONTROL Default]** toegepast.
 
@@ -121,11 +119,11 @@ Voer de onderstaande stappen uit om querybanding te configureren:
 
 Als de volgende fout optreedt tijdens het testen van de verbinding **TIM-030008 Date &#39;2&#39;: ontbrekende tekens (iRc=-53)** zorgen ervoor dat het ODBC-stuurprogramma correct is geïnstalleerd en dat LD_LIBRARY_PATH (Linux) / PATH (Windows) is ingesteld voor de campagneserver.
 
-De fout **ODB-240000 ODBC-fout: [Microsoft][ODBC Driver Manager] Naam gegevensbron niet gevonden en geen standaardstuurprogramma opgegeven.** treedt met Windows op als u een 16.X-stuurprogramma gebruikt. Adobe Campaign verwacht dat de teradata in odbcinst.ini de naam &#39;{teradata}&#39; krijgt.
+De fout **ODB-240000 ODBC-fout: [Microsoft][ODBC Driver Manager] Naam gegevensbron niet gevonden en geen standaardstuurprogramma opgegeven.** treedt met Windows op als u een 16.X-stuurprogramma gebruikt. Adobe Campaign verwacht dat de teradata &#39;{teradata}&#39; in odbcinst.ini wordt genoemd.
 
-* Vanaf Campagne 18.10 kunt u ODBCDriverName=&quot;Teradata Database ODBC Driver 16.10&quot; toevoegen in de opties van de externe account. Het versienummer kan veranderen, de nauwkeurige naam kan worden gevonden door odbcad32.exe in werking te stellen en tot de Drivers tabel toegang te hebben.
+* Vanaf Campagne 18.10 kunt u ODBCDriverName=&quot;Teradata Database ODBC Driver 16.10&quot;in de opties van de externe rekening toevoegen. Het versienummer kan veranderen, de nauwkeurige naam kan worden gevonden door odbcad32.exe in werking te stellen en tot de Drivers tabel toegang te hebben.
 
-* Als u een oudere versie van de Campagne gebruikt, zult u het Teradata gedeelte van odbcinst.ini moeten kopiëren die door de bestuurdersinstallatie aan een nieuwe sectie wordt gecreeerd genoemd Teradata. In dit geval kan Regedit worden gebruikt. Als uw basis in latin1 is, zult u **APICharSize=1** in de opties moeten toevoegen.
+* Als u een oudere versie van de Campagne gebruikt, zult u de Teradata sectie van odbcinst.ini moeten kopiëren die door de bestuurdersinstallatie aan een nieuwe sectie wordt gecreeerd genoemd Teradata. In dit geval kan Regedit worden gebruikt. Als uw basis in latin1 is, zult u **APICharSize=1** in de opties moeten toevoegen.
 
 ## Aanvullende configuraties {#teradata-additional-configurations}
 
@@ -156,7 +154,7 @@ De volgende rechten zijn vereist voor de externe database: aangepaste procedures
 
 Zorg ervoor om de correcte tijdzone te vormen. Deze moet overeenkomen met wat wordt ingesteld in de externe account die wordt gemaakt in de Adobe Campaign-instantie.
 
-Adobe Campaign stelt geen beveiligingsmodus (fallback) in voor de objecten die worden gemaakt in de database. Mogelijk moet u een standaard instellen voor de gebruiker die Adobe Campaign gebruikt om verbinding te maken met de Teradata-database met behulp van de volgende query:
+Adobe Campaign stelt geen beveiligingsmodus (fallback) in voor de objecten die worden gemaakt in de database. Mogelijk moet u een standaard instellen voor de gebruiker die Adobe Campaign gebruikt om verbinding te maken met de Teradata-database via de volgende query:
 
 | standaard fallback uitschakelen |
 | :-: |
@@ -174,7 +172,7 @@ Om md5 te installeren:
 
 1. Ga naar de map md5/src.
 
-1. Maak verbinding met uw Teradata-database via bteq.
+1. Verbind met uw gegevensbestand van Teradata gebruikend bteq.
 
 1. Voer de volgende opdracht bteq uit:
 
@@ -184,17 +182,17 @@ Om md5 te installeren:
 
 ### SHA2-installatie {#sha2-installation}
 
-Als u sha2-functies wilt gebruiken in uw Adobe Campaign-instantie, moet u de gebruikersmodusfunctie installeren in uw Teradata-database via deze [pagina](https://github.com/akuroda/teradata-udf-sha2/archive/v1.0.zip) (teradata-udf-sha2-1.0.zip).
+Als u sha2 functies in uw instantie van Adobe Campaign wilt gebruiken, zult u de functie van de gebruikerswijze op uw gegevensbestand van Teradata van dit [pagina](https://github.com/akuroda/teradata-udf-sha2/archive/v1.0.zip) (teradata-udf-sha2-1.0.zip) moeten installeren.
 
 De sha1 van het gedownloade bestand is als volgt: e87438d37424836358bd3902cf1adeb629349780.
 
 Om sha2 te installeren:
 
-1. Pak het zip-bestand teradata-udf-sha2-1.0.0 uit.
+1. Pak het zip-bestand teradata-udf-sha2-1.0.zip uit.
 
 1. Ga naar de map teradata-udf-sha2-1.0/src.
 
-1. Maak verbinding met uw Teradata-database via bteq.
+1. Verbind met uw gegevensbestand van Teradata gebruikend bteq.
 
 1. Voer de twee volgende bitmapopdrachten uit:
 
@@ -205,7 +203,7 @@ Om sha2 te installeren:
 
 ### UDF_UTF16TO8-installatie {#UDF-UTF16TO8-installation}
 
-Als u udf_utf16to8-functies in uw Adobe Campaign-instantie wilt gebruiken, moet u de gebruikersmodusfunctie in uw Teradata-database installeren vanuit de **Teradata unicode tool kit** van deze [page](https://downloads.teradata.com/download/tools/unicode-tool-kit) (utk_release1.7.0.0.zip).
+Als u udf_utf16to8 functies in uw instantie van Adobe Campaign wilt gebruiken, zult u de gebruikerswijzefunctie op uw gegevensbestand van Teradata van **het hulpmiddeluitrusting van de unicode van Teradata** van deze [pagina](https://downloads.teradata.com/download/tools/unicode-tool-kit) (utk_release1.7.0.0.zip) moeten installeren.
 
 De sha1 van het gedownloade bestand is als volgt: e58235f434f52c71316a577cb48e20b97d24f470.
 
@@ -213,9 +211,9 @@ U installeert als volgt udf_utf16to8:
 
 1. Pak het zip-bestand utk_release1.7.0.0.zip uit.
 
-1. Zoek naar udf_utf16to8.o in de gehaalde dossiers en navigeer aan de folder die het dossier bevat. De naam moet utk_release1.7.0.0/utk_release1.7.0.0/04 TranslationUDFs/01 Teradata UDFs/suselinux-x8664/udf_installation/ zijn.
+1. Zoek naar udf_utf16to8.o in de gehaalde dossiers en navigeer aan de folder die het dossier bevat. Deze moet utk_release1.7.0.0/utk_release1.7.0.0/04 TranslationUDFs/01 Teradata UDFs/suselinux-x8664/udf_installation/ worden genoemd.
 
-1. Maak verbinding met uw Teradata-database via bteq.
+1. Verbind met uw gegevensbestand van Teradata gebruikend bteq.
 
 1. Typ de volgende opdracht in het vak Bteq:
 
@@ -236,9 +234,9 @@ U installeert als volgt udf_utf16to8:
 
 Voor de installatie van het stuurprogramma is het volgende vereist:
 
-* Teradata ODBC-stuurprogramma, te vinden op deze [pagina](https://downloads.teradata.com/download/connectivity/odbc-driver/linux)
+* Teradata ODBC-stuurprogramma, te vinden op [pagina](https://downloads.teradata.com/download/connectivity/odbc-driver/linux)
 
-* Teradata Tools and Utilities (gebruikt voor bulklading), te vinden op [pagina](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-linux-installation-package-0)
+* Teradata Tools and Utilities (gebruikt voor bulkload), te vinden op [pagina](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-linux-installation-package-0)
 
 Bestandsnamen en sha1:
 
@@ -264,7 +262,7 @@ ODBC-stuurprogramma installeren:
 
 1. Voer setup_wrapper.sh uit.
 
-### Installatie van teradata-gereedschappen en hulpprogramma&#39;s {#teradata-tools-installation}
+### Installatie van gereedschappen en hulpprogramma&#39;s voor teradata {#teradata-tools-installation}
 
 Gereedschappen installeren:
 
@@ -286,17 +284,17 @@ Gereedschappen installeren:
 
 ## Configuratie campagneserver voor Windows {#campaign-server-windows}
 
-U moet eerst Teradata Tools en Extra&#39;s voor Windows downloaden. U kunt het van deze [pagina](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-windows-installation-package) downloaden
+U moet eerst Teradata Tools en Hulpprogramma&#39;s voor Vensters downloaden. U kunt het van deze [pagina](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-windows-installation-package) downloaden
 
-Installeer het ODBC-stuurprogramma en de Teradata Parallel Transporter Base. Het installeert telapi.dll dat wordt gebruikt voor het laden van grote hoeveelheden in de Teradata-database.
+Zorg ervoor dat u het ODBC-stuurprogramma en de Teradata Parallel Transporter Base installeert. Het zal telapi.dll installeren die wordt gebruikt om bulklading op het gegevensbestand van Teradata te doen.
 
 Zorg ervoor dat het pad van het stuurprogramma en de hulpprogramma&#39;s zich in de PATH-variabele bevindt die de server tijdens de uitvoering zal hebben. Standaard is het pad C:\Program Files (x86)\Teradata\Client\15.10\bin on Windows 32 bits or C:\Program Files\Teradata\Client\15.10\bin on 64 bit).
 
 ## Tijdzone {#timezone}
 
-Teradata gebruikt de naam van de tijdzone die niet standaard is, u kunt de lijst op [Teradata site](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA) vinden. Adobe Campaign zal proberen de tijdzone die in de externe configuratie wordt gegeven om te zetten in iets wat Teradata begrijpt. Als er geen overeenkomst wordt gevonden, wordt de dichtstbijzijnde GMT+X (of GMT-X)-tijdzone gevonden voor de sessie, met een waarschuwing in het logbestand.
+Teradata gebruikt de naam van de tijdzone die niet standaard is, kunt u de lijst op [plaats van Teradata](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA) vinden. Adobe Campaign probeert de tijdzone die in de externe configuratie is opgegeven om te zetten in iets wat Teradata begrijpt. Als er geen overeenkomst wordt gevonden, wordt de dichtstbijzijnde GMT+X (of GMT-X)-tijdzone gevonden voor de sessie, met een waarschuwing in het logbestand.
 
-De conversie is voltooid en er wordt een bestand met de naam teradata_timezones.txt gelezen dat zich in de volgende directory Datakit moet bevinden: /usr/local/neolane/nl6/datakit under linux. Als u dit bestand bewerkt, moet u contact opnemen met het Adobe Campaign-team om de wijziging in de broncode door te voeren anders wordt dit bestand overschreven tijdens de volgende campagneupdate.
+De conversie is voltooid bij het lezen van een bestand met de naam teradata_timezones.txt dat zich in de volgende directory DataGrid moet bevinden: /usr/local/neolane/nl6/datakit under linux. Als u dit bestand bewerkt, moet u contact opnemen met het Adobe Campaign-team om de wijziging in de broncode door te voeren anders wordt dit bestand overschreven tijdens de volgende campagneupdate.
 
 De tijdzone die wordt gebruikt om te verbinden zal worden vermeld wanneer het runnen van nlserver met - verbose schakelaar, bijvoorbeeld:
 
@@ -304,9 +302,9 @@ De tijdzone die wordt gebruikt om te verbinden zal worden vermeld wanneer het ru
 15:04:04 >   ODB-240007 Teradata: will use 'Europe Central' as session time zone.
 ```
 
-Als de gebruikte tijdzone niet de juiste is, kan een optie met de naam &quot;TimeZoneName&quot; worden toegevoegd aan de externe account. In dat geval gebruikt u de Teradata-waarde, bijvoorbeeld &quot;TimeZoneName=Europe Central&quot;.
+Als de gebruikte tijdzone niet de juiste is, kan een optie met de naam &quot;TimeZoneName&quot; worden toegevoegd aan de externe account. In dat geval gebruikt u de waarde Teradata, bijvoorbeeld &quot;TimeZoneName=Europe Central&quot;.
 
-Bij het gebruik van bulkload of &#39;fast load&#39; in Teradata-documenten kan Campagne de tijdzone niet aangeven. Daarom wordt geadviseerd om de standaardtijdzone van de gebruiker te plaatsen die de Campagne zal gebruiken om te verbinden:
+Wanneer het gebruiken van bulklading, of &quot;snelle lading&quot;in de documenten van Teradata, kan de Campagne niet op de tijdzone wijzen. Daarom wordt geadviseerd om de standaardtijdzone van de gebruiker te plaatsen die de Campagne zal gebruiken om te verbinden:
 
 ```
 MODIFY USER $login$ AS TIME ZONE = 'Europe Central';
