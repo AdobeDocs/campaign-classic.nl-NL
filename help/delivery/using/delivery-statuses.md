@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Leveringsstatus
+title: Leveringsstatussen
 description: Meer informatie over de statussen die beschikbaar zijn op het dashboard voor levering.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 4%
 
 ---
 
-# Leveringsstatus {#delivery-statuses}
+# Leveringsstatussen {#delivery-statuses}
 
 <!--ajouter intro 
 
@@ -30,7 +28,7 @@ Raadpleeg [deze pagina](../../delivery/using/understanding-delivery-failures.md)
 **Verwante onderwerpen:**
 
 * [Leveringsdashboard](../../delivery/using/delivery-dashboard.md)
-* [Problemen met levering oplossen](../../delivery/using/delivery-troubleshooting.md)
+* [Problemen met een levering oplossen](../../delivery/using/delivery-troubleshooting.md)
 * [Leverbaarheid](../../delivery/using/about-deliverability.md)
 
 ## Lijst van leveringsstatussen {#list-delivery-statuses}
