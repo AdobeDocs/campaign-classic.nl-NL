@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: A/B-tests configureren
 description: Leer hoe u A/B-tests configureert in Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
-source-git-commit: a341980e9d940857388bb2755e5eaa74824cf6ea
+exl-id: 6adf2e75-63b1-44ad-8925-03beb3bc0bdd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '212'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
-
 
 # A/B-tests configureren {#configuring-a-b-testing}
 
