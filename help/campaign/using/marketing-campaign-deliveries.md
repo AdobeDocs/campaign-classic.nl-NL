@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Aflevering van marketingcampagnes
+title: Leveringen voor marketingcampagnes
 description: Meer informatie over marketingcampagneleveringen
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 2%
 
 ---
 
-
-# Marketingcampagneleveringen {#marketing-campaign-deliveries}
+# Leveringen voor marketingcampagnes {#marketing-campaign-deliveries}
 
 Leveringen kunnen worden gemaakt via het campagnedashboard, een campagneworkflow of rechtstreeks via het overzicht van leveringen.
 
