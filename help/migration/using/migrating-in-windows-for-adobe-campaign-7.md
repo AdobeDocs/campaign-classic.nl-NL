@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Migreren in Windows voor Adobe Campaign 7
 description: Migreren in Windows voor Adobe Campaign 7
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 1%
 
 ---
-
 
 # Migreren in Windows voor Adobe Campaign 7{#migrating-in-windows-for-adobe-campaign}
 
@@ -397,4 +395,3 @@ Voordat u de Adobe Campaign v6-installatie verwijdert en wist, moet u de volgend
    ![](assets/migration_wizard_2.png)
 
 1. Start de server opnieuw.
-
