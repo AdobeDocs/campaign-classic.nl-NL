@@ -8,10 +8,10 @@ user-guide-description: U kunt cross-channel marketingcampagnes ontwerpen, plann
 solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a9a32b383d4709d9f0adf1e886d2ec3a9d601652
+source-git-commit: a9054fb8e10bef37675922b2f81c7615cd04c1bb
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 99%
+source-wordcount: '2477'
+ht-degree: 98%
 
 ---
 
@@ -567,40 +567,26 @@ ht-degree: 99%
       + [Aanbiedingen op een inbound-kanaal](interaction/using/offers-on-an-inbound-channel.md)
       + [Aanbiedingen op een outbound-kanaal](interaction/using/offers-on-an-outbound-channel.md)
 + Transactionele berichten {#transactional-messaging}
-   + Aan de slag met transactionele berichten {#introduction}
-      + [Transactionele berichten](message-center/using/about-transactional-messaging.md)
+   + [Aan de slag met transactionele berichten](message-center/using/about-transactional-messaging.md)
+   + Transactieberichten {#configure-transactional-messaging} configureren
       + [Architectuur van transactionele berichten](message-center/using/transactional-messaging-architecture.md)
-      + [Beschrijving van gebeurtenis](message-center/using/event-description.md)
-   + De instantie configureren {#instance-configuration}
-      + [Een gedeelde verbinding maken](message-center/using/creating-a-shared-connection.md)
-      + [Uitvoeringsinstanties identificeren](message-center/using/identifying-execution-instances.md)
-      + [Drempels controleren](message-center/using/monitoring-thresholds.md)
-      + [Gebeurtenissen opschonen](message-center/using/purging-events.md)
-      + [Technische workflows](message-center/using/technical-workflows.md)
-      + [Gebeurtenistypen maken](message-center/using/creating-event-types.md)
-      + [Multibranding configureren](message-center/using/configuring-multibranding.md)
+      + [Instanties configureren](message-center/using/configuring-instances.md)
+      + [Aanvullende configuraties](message-center/using/additional-configurations.md)
    + Berichtensjablonen {#message-templates}
-      + [Sjablonen voor transactionele berichten](message-center/using/introduction.md)
-      + [De berichtsjabloon maken](message-center/using/creating-the-message-template.md)
-      + [Berichtcontent maken](message-center/using/creating-message-content.md)
-      + [Seedadressen in transactionele berichten beheren](message-center/using/managing-seed-addresses-in-transactional-messages.md)
-      + [Personalisatiegegevens](message-center/using/personalization-data.md)
-      + [Voorvertoning van transactionele berichten ](message-center/using/transactional-message-preview.md)
-      + [Een proef verzenden](message-center/using/sending-a-proof.md)
-      + [Sjabloonpublicatie](message-center/using/template-publication.md)
-      + [Publicatie van sjabloon ongedaan maken](message-center/using/template-unpublication.md)
-   + Gebeurtenisverwerking {#event-processing}
+      + [Gebeurtenistypen maken](message-center/using/creating-event-types.md)
+      + [Ontwerpberichtsjablonen](message-center/using/creating-the-message-template.md)
+      + [Sjablonen voor testberichten](message-center/using/testing-message-templates.md)
+      + [Berichtensjablonen publiceren](message-center/using/publishing-message-templates.md)
+   + Transactionele gebeurtenisverwerking {#processing}
+      + [Beschrijving van gebeurtenis](message-center/using/event-description.md)
       + [Gebeurtenisverwerking](message-center/using/about-event-processing.md)
-      + [Gebeurtenisverzameling](message-center/using/event-collection.md)
-      + [Routering naar een sjabloon](message-center/using/routing-towards-a-template.md)
       + [Uitvoering van levering](message-center/using/delivery-execution.md)
    + Rapporten {#reports}
-      + [Rapporten voor transactionele berichten](message-center/using/about-transactional-messaging-reports.md)
+      + [Toegang tot transactiemeldingsrapporten](message-center/using/about-transactional-messaging-reports.md)
       + [Geschiedenis van gebeurtenissen in het Berichtencentrum](message-center/using/history-of-message-center-events.md)
       + [Serviceniveau van het Berichtencentrum](message-center/using/message-center-service-level.md)
       + [Verwerkingstijd van het Berichtencentrum](message-center/using/message-center-processing-time.md)
-   + Gebruiksscenario {#use-case}
-      + [Transactionele e-mails verzenden met bijlagen](message-center/using/transactional-email-with-attachments.md)
+   + [Gebruiksscenario](message-center/using/transactional-email-with-attachments.md)
 + Integreren met social media {#integrating-with-social-media}
    + [Social marketing](social/using/about-social-marketing.md)
    + Configuratie {#configuration}
