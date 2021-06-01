@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Tags op uw site invoegen
 description: Tags op uw site invoegen
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 5%
 
 ---
-
 
 # Tags op uw site invoegen{#inserting-tags-in-your-site}
 
@@ -185,4 +183,3 @@ De URL die u bouwt, moet de syntaxisregels volgen die in [Web volgende markering
   }
   [...]
 ```
-
