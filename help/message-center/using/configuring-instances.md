@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1222'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ Als u meerdere uitvoeringsinstanties gebruikt, moet u net zoveel externe account
 
 >[!NOTE]
 >
->Wanneer uitvoeringsinstanties door verscheidene controleinstanties worden gebruikt, kunnen de gegevens door omslag en door exploitant worden verdeeld. Voor meer op dit, verwijs naar [Gebruikend verscheidene controleinstanties](#using-several-control-instances).
+>Wanneer uitvoeringsinstanties door verscheidene controleinstanties worden gebruikt, kunnen de gegevens door omslag en door exploitant worden verdeeld. Zie [Verschillende besturingsinstanties gebruiken](#using-several-control-instances) voor meer informatie.
 
 ### Een externe account maken
 
@@ -75,7 +75,7 @@ Als u een externe account van het type **[!UICONTROL Execution instance]** wilt 
 
    >[!NOTE]
    >
-   >Om te vermijden ingaand een wachtwoord telkens als u aan de instantie het programma opent, kunt u het IP adres van de controleinstantie in de uitvoeringsinstantie specificeren. Voor meer op dit, verwijs naar [vorm de uitvoeringsinstantie(s)](#execution-instance).
+   >Om te vermijden ingaand een wachtwoord telkens als u aan de instantie het programma opent, kunt u het IP adres van de controleinstantie in de uitvoeringsinstantie specificeren. Zie [De uitvoeringsinstantie(s)](#execution-instance) configureren voor meer informatie hierover.
 
 1. Geef de herstelmethode op die door de uitvoeringsinstantie moet worden gebruikt. De gegevens die moeten terugkrijgen worden door:sturen aan de controleinstantie door de uitvoeringsinstantie, om aan transactiebericht en gebeurtenisarchieven toe te voegen.
 
@@ -91,7 +91,7 @@ Als u een externe account van het type **[!UICONTROL Execution instance]** wilt 
 
    ![](assets/messagecenter_create_extaccount_008.png)
 
-   Raadpleeg [Toegang tot een externe database](../../installation/using/about-fda.md) voor meer informatie over FDA (Federated Data Access).
+   Raadpleeg [deze sectie](../../installation/using/about-fda.md) voor meer informatie over FDA (Federated Data Access).
 
 1. Klik **[!UICONTROL Test the connection]** om ervoor te zorgen de controleinstantie en de uitvoeringsinstantie omhoog worden verbonden.
 
@@ -131,7 +131,7 @@ Als u een leeg wachtwoord wilt gebruiken, gaat u naar de uitvoeringsinstanties e
 
 >[!NOTE]
 >
->Wanneer uitvoeringsinstanties door verscheidene controleinstanties worden gebruikt, kunnen de gegevens door omslag en door exploitant worden verdeeld. Voor meer op dit, verwijs naar [Gebruikend verscheidene controleinstanties](#using-several-control-instances).
+>Wanneer uitvoeringsinstanties door verscheidene controleinstanties worden gebruikt, kunnen de gegevens door omslag en door exploitant worden verdeeld. Zie [Verschillende besturingsinstanties gebruiken](#using-several-control-instances) voor meer informatie.
 
 1. Ga bij een uitvoeringsinstantie naar de operatormap ( **[!UICONTROL Administration > Access management > Operators]**).
 1. Selecteer **Message Center** agent.
@@ -162,17 +162,17 @@ Maak in de boomstructuur van alle uitvoeringsinstanties één map per operator (
 >
 >De onderstaande stappen moeten worden uitgevoerd **op de besturingsinstanties**.
 
-1. In **Control 1** controleinstantie, creeer één externe rekening per uitvoeringsinstantie, en ga **mc1** exploitant in elke externe rekening in. De **mc1** exploitant zal dan op alle uitvoeringsinstanties worden gecreeerd (verwijs naar [uitvoeringsinstanties vormen](#configuring-execution-instances)).
+1. Voor **Control 1** controleinstantie, creeer één externe rekening per uitvoeringsinstantie, en ga **mc1** exploitant in elke externe rekening in. De **mc1** exploitant zal dan op alle uitvoeringsinstanties worden gecreeerd (zie [uitvoeringsinstanties vormen](#configuring-execution-instances)).
 
    ![](assets/messagecenter_multi_control_1.png)
 
-1. In **Control 2** controleinstantie, creeer één externe rekening per uitvoeringsinstantie, en ga **mc2** exploitant in elke externe rekening in. De **mc2** exploitant zal daarna op alle uitvoeringsinstanties worden gecreeerd (verwijs naar [uitvoeringsinstanties vormen](#configuring-execution-instances)).
+1. Creëer in de besturingsinstantie **Control 2** één externe account per uitvoeringsinstantie en voer de operator **mc2** in elke externe account in. De **mc2** exploitant zal dan op alle uitvoeringsinstanties worden gecreeerd (zie [uitvoeringsinstanties vormen](#configuring-execution-instances)).
 
    ![](assets/messagecenter_multi_control_2.png)
 
    >[!NOTE]
    >
-   >Voor meer bij het vormen van een controleinstantie, verwijs naar [deze sectie](#control-instance).
+   >Voor meer bij het vormen van een controleinstantie, zie [deze sectie](#control-instance).
 
 ### Uitvoeringsinstanties {#configuring-execution-instances} configureren
 
