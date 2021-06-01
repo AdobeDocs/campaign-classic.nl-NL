@@ -1,20 +1,18 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: De integratie configureren
 description: De integratie configureren
 audience: integrations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
+exl-id: 84399496-33fd-4936-85e7-32de8503740f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 1%
 
 ---
 
-
-# Pipelinecontrole {#pipeline-monitoring}
+# Pijplijncontrole {#pipeline-monitoring}
 
 De [!DNL pipelined] status webservice geeft informatie over de status van het [!DNL pipelined] proces.
 
