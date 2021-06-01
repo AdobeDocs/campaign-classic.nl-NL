@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een bestand zoeken of versleutelen
 description: Leer hoe u een bestand in Campaign Classic kunt comprimeren of comprimeren voordat u het verwerkt.
@@ -7,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 6%
