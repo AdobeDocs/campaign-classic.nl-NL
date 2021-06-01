@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: E-mailinhoud definiëren in Adobe Campaign Classic
 description: Leer hoe u de e-mailinhoud definieert wanneer u Adobe Campaign Classic gebruikt.
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: tm+mt
-source-git-commit: fe4262a1da011cb155651c5e786f19188139cff1
+exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1990'
 ht-degree: 1%
 
 ---
-
 
 # De e-mailcontent definiëren {#defining-the-email-content}
 
