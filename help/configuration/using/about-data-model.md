@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Aan de slag met het gegevensmodel Campaign Classic
 description: Leer hoe u het gegevensmodel van de campagne kunt uitbreiden, schema's kunt bewerken, API's kunt gebruiken en meer
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 4%
 
 ---
-
 
 # Begin met het gegevensmodel van de Campagne{#about-data-model}
 
