@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Personalisatieblokken
 description: Personalisatieblokken
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
-translation-type: tm+mt
-source-git-commit: df7c27e763e7e0c02189ed972f33eb03ca2a915f
+exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 2%
 
 ---
-
 
 # Personalisatieblokken{#personalization-blocks}
 
@@ -128,7 +126,7 @@ Een lijst van verpersoonlijkingsblokken is beschikbaar door gebrek om u te helpe
    >Dit blok kan alleen worden gebruikt bij leveringen voor bezoekers.
 
 * **[!UICONTROL Registration confirmation]** : voegt een koppeling in waarmee u het abonnement kunt bevestigen.
-* **[!UICONTROL Social network sharing links]** : voegt knoppen in waarmee de ontvanger een koppeling naar de inhoud van de spiegelpagina kan delen met de e-mailclient, Facebook, Twitter en LinkedIn (zie  [Viral marketing: door naar een vriend](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
+* **[!UICONTROL Social network sharing links]** : voegt knopen in die de ontvanger toelaten om een verbinding aan de inhoud van de spiegelpagina met de e-mailcliënt, Facebook, Twitter, en LinkedIn te delen (zie  [Viral marketing: door naar een vriend](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
 * **[!UICONTROL Style of content emails]** en  **[!UICONTROL Notification style]** : genereren code waarmee een e-mailbericht wordt opgemaakt met vooraf gedefinieerde HTML-stijlen. Deze blokken moeten in de broncode van de levering, in **[!UICONTROL ...]** sectie, in **`<style>...</style>`** markeringen worden opgenomen.
 * **[!UICONTROL Offer acceptance URL in unitary mode]** : voegt een URL in waarmee een interactieaanbieding kan worden ingesteld op  **[!UICONTROL Accepted]** (zie  [deze sectie](../../interaction/using/offer-analysis-report.md)).
 
