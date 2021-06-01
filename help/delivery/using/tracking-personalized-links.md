@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Aan de slag met de tracking van aangepaste koppelingen
+title: Aan de slag met de tracking van gepersonaliseerde koppelingen
 description: Leer hoe u koppelingen schrijft in e-mailberichten die u kunt aanpassen en het bijhouden van koppelingen ondersteunt in Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
-source-git-commit: 6b81d0ea22bf9d8f33e486535b4ce02fbae7b9ae
+exl-id: d0e00b40-e7dd-4484-b37c-fd3f3ac70fda
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 7%
 
 ---
 
-
-# Aan de slag met de tracking van aangepaste koppelingen {#tracking-personalized-links}
+# Aan de slag met de tracking van gepersonaliseerde koppelingen {#tracking-personalized-links}
 
 De koppelingen in e-mailinhoud die personalisatie bevatten, moeten specifiek worden gesynchroniseerd om te worden bijgehouden.
 
