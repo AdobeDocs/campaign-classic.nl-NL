@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Het resultaat analyseren
 description: Leer hoe u een A/B-test uitvoert met een speciale praktijkcase.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+exl-id: e6f39180-d161-4226-810a-10bb1c3682ca
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '103'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-
-# Het resultaat {#step-8--analyzing-the-result} analyseren
+# Het resultaat analyseren {#step-8--analyzing-the-result}
 
 Nadat de testleveringen zijn verzonden, kunt u controleren naar welke ontvanger(s) zij zijn verzonden en of zij al dan niet zijn geopend.
 
