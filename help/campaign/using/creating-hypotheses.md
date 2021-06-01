@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Hypotheses maken
 description: Leer hoe u hypothesen maakt in Campagne Response Manager
 audience: campaign
 content-type: reference
 topic-tags: response-manager
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: e0b3bc9f-5e81-463f-a59e-cd972a47109b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 0%
 
 ---
 
-
-# hypothesen maken{#creating-hypotheses}
+# Hypothesen maken{#creating-hypotheses}
 
 Er zijn verschillende mogelijkheden om hypothesen te creëren/te koppelen aan een campagneaanbod of levering:
 
@@ -181,4 +179,3 @@ In dit voorbeeld willen we een hypothese creëren die gekoppeld is aan een lever
 1. Ga in de Adobe Campaign-structuur naar het knooppunt **[!UICONTROL Campaign management > Measurement hypotheses]** om de indicatoren te controleren die door de hypothese zijn berekend.
 
    ![](assets/response_hypothesis_delivery_example_010.png)
-
