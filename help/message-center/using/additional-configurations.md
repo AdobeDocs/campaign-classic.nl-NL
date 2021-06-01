@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '747'
 ht-degree: 7%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 7%
 
 ## Drempels controleren {#monitoring-thresholds}
 
-U kunt de waarschuwingsdrempels (oranje) en waakzame drempels (rood) van de indicatoren vormen die in **de dienstniveau van het Centrum van het Bericht** en **de verwerkingstijd van het Centrum van het Bericht** (verwijs naar [Ongeveer transactioneel overseinenrapporten](../../message-center/using/about-transactional-messaging-reports.md)) verschijnen.
+U kunt de waarschuwingsdrempels (oranje) en waakzame drempels (rood) van de indicatoren vormen die in **de dienstniveau van het Centrum van het Bericht** en **de verwerkingstijd van het Centrum van het Bericht** (verwijs naar [Transformonal overseinenrapporten van de Toegang](../../message-center/using/about-transactional-messaging-reports.md)) verschijnen.
 
 Volg de onderstaande stappen om dit te doen:
 
@@ -109,7 +109,7 @@ Voer in de uitvoeringsinstantie(s) de onderstaande stappen uit:
 
    >[!NOTE]
    >
-   >Leer hoe u een instantie-uitvoertype voor een externe account maakt in de sectie [Control instance](../../message-center/using/configuring-instances.md#control-instance).
+   >Leer hoe u in [deze sectie](../../message-center/using/configuring-instances.md#control-instance) een instantie van uitvoering kunt maken.
 
 1. Breid het schema nms:extAccount uit om het volgen URL toe te voegen:
 
