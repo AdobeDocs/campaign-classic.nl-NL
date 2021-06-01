@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: In Campaign Classic ingebouwde pakketten installeren
 description: Leer hoe u geïntegreerde pakketten voor campagnes kunt installeren
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
-translation-type: tm+mt
-source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
+exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 6%
 
 ---
-
 
 # In Campaign Classic ingebouwde pakketten installeren{#installing-campaign-standard-packages}
 
@@ -96,7 +94,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr--> 
   <tr> 
    <td> Sociale netwerken (sociale marketing) <br /> </td> 
-   <td> Synchroniseert Adobe Campaign met Twitter en Facebook. <a href="../../social/using/about-social-marketing.md">Meer informatie</a> <br /> </td> 
+   <td> Hiermee synchroniseert u Adobe Campaign met Twitter en Facebook. <a href="../../social/using/about-social-marketing.md">Meer informatie</a> <br /> </td> 
    <td> Alles</td> 
   </tr> 
   <tr> 
@@ -255,4 +253,3 @@ U moet leveringskanalen installeren (E-mail, Mobiel kanaal, Mobiel App-kanaal, e
 >[!CAUTION]
 >
 >De leveringsmalplaatjes van het Centrum van het Bericht voor LIJN zullen niet beschikbaar zijn als de pakketten van het Centrum van het Bericht vóór LIJN worden geïnstalleerd
-
