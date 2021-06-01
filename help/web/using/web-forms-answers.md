@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Antwoorden op webformulieren
 description: Antwoorden op webformulieren
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 1%
 
 ---
-
 
 # Antwoorden op webformulieren{#web-forms-answers}
 
@@ -142,4 +140,3 @@ U kunt een zoekmap selecteren voor afstemming en de map waarin nieuwe profielen 
 >Mogelijke bewerkingen zijn: **[!UICONTROL Simple reconciliation]**, **[!UICONTROL Update or insertion]**, **[!UICONTROL Insertion]**, **[!UICONTROL Update]**, **[!UICONTROL Deletion]**.\
 >De standaardmap van de operator is de eerste map waarvoor de operator schrijfmachtigingen heeft.\
 >Zie [deze sectie](../../platform/using/access-management.md).
-
