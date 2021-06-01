@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een rapport naar een lijst verzenden
 description: Leer hoe u een rapport naar een lijst met een workflow kunt verzenden
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
 
 ---
-
 
 # Een rapport naar een lijst verzenden{#sending-a-report-to-a-list}
 
@@ -128,6 +126,4 @@ De volgende workflow is gemaakt voor dit gebruik. Het heeft drie activiteiten:
    * Selecteer **[!UICONTROL Specified in the delivery]** voor de velden **[!UICONTROL Recipients]** en **[!UICONTROL Content]**.
    * **[!UICONTROL Action to execute]**: selecteren  **[!UICONTROL Prepare and start]**.
    * **[!UICONTROL Generate an outbound transition]** en **[!UICONTROL Process errors]** niet controleren.
-
    ![](assets/use_case_report_11.png)
-
