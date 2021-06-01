@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Extern signaal
 description: Meer informatie over de activiteit van de externe signaalworkflow
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: da84d3ff-1e64-45ef-bef0-da4a24d93461
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 2%
 
 ---
-
 
 # Extern signaal{#external-signal}
 
@@ -34,4 +32,3 @@ Met het veld **Vertraging** kunt u een vervalvertraging opgeven in de gewenste e
 Elke regel vertegenwoordigt een type vervaldatum en valt samen met een overgang.
 
 ![](assets/external_sign_diag.png)
-
