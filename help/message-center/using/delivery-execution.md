@@ -2,20 +2,19 @@
 solution: Campaign Classic
 product: campaign
 title: Uitvoering van levering
-description: Uitvoering van levering
+description: Meer informatie over de uitvoering en bewaking van transactieberichten.
 audience: message-center
 content-type: reference
 topic-tags: event-processing
-translation-type: tm+mt
-source-git-commit: fd6195ca447fa0345189f3153f44ad2f9a067210
+exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 7%
+source-wordcount: '233'
+ht-degree: 6%
 
 ---
 
-
-# Uitvoering van levering{#delivery-execution}
+# Uitvoering van levering {#delivery-execution}
 
 ## Transactiebericht {#transactional-message-send} verzenden
 
@@ -39,7 +38,7 @@ Standaard worden ze in submappen gesorteerd op leveringsmaand. Deze soort kan in
 
 ## Controle van het transactiebericht {#transactional-message-monitoring}
 
-Controleer de leveringslogboeken om de transactiemeldingen te controleren. De toegang tot de leveringslogboeken wordt voorgesteld in [deze sectie](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
+Om uw transactieberichten te controleren, controleer [leveringslogboeken](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 
 De transactionele leveringen die van de uitvoeringsinstantie worden verzonden worden gesynchroniseerd terug naar de controleinstantie door een technisch werkschema (**[!UICONTROL Message Center execution instance]**) dat elk uur in werking stelt.
 
@@ -73,3 +72,5 @@ Let's take a [delivery template](../../message-center/using/introduction.md) lab
 To summarize, the deliveries weekly accumulate the events based on the latest event update, and not on the event creation date.
 
 Therefore, when extracting transactional messaging delivery logs from the control instance, the delivery ID associated with each delivery log ID changes every week.-->
+
+Zie [Transactionele berichtenrapporten](../../message-center/using/about-transactional-messaging-reports.md) om de activiteit en de werking van de uitvoeringsinstantie(s) te controleren.
