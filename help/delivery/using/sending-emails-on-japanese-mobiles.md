@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: E-mails verzenden naar Japanse mobiele telefoons met Adobe Campaign Classic
 description: Leer hoe u e-mailberichten configureert, ontwerpt en verzendt die op een Japanse mobiele telefoon worden gelezen.
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: tm+mt
-source-git-commit: fe4262a1da011cb155651c5e786f19188139cff1
+exl-id: 44634227-2340-49c4-b330-740c739ea551
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
 
 ---
-
 
 # E-mails verzenden naar Japanse mobiele apparaten {#sending-emails-on-japanese-mobiles}
 
