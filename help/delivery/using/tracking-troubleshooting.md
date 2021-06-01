@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Problemen bijhouden
+title: Problemen met tracking oplossen
 description: Deze sectie biedt veelgestelde vragen over het bijhouden van configuratie en implementatie in Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
-source-git-commit: efa36dc08ce4dd59805bb9eba63a4249e14609d7
+exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '759'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# Problemen bijhouden {#tracking-troubleshooting}
+# Problemen met tracking oplossen {#tracking-troubleshooting}
 
 In deze sectie vindt u algemene vragen over het bijhouden van configuratie en implementatie in Adobe Campaign Classic.
 
@@ -128,7 +126,7 @@ Voer de volgende stappen uit wanneer u de optie NmsTracking_Pointer bijwerkt:
 
 1. Start de workflow voor bijhouden opnieuw.
 
-## Het volgen lijkt niet met sommige WebMail {#webmail} te werken
+## Het volgen lijkt niet met sommige WebMail te werken {#webmail}
 
 U kunt de formule voor het bijhouden van klikken aanpassen en een aangepaste formule voor het bijhouden van Adobe Analytics opgeven.
 
