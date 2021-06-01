@@ -1,13 +1,12 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Marketingresources beheren
-description: Marketingresources beheren
+title: Marketingbronnen beheren
+description: Marketingbronnen beheren
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 8cf4d30d-f914-438d-8836-030202b6a449
-source-git-commit: 42040c519a9430ff0529913c1d567e9315b1a95d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 3%
