@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een testomgeving maken
 description: Een testomgeving maken
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 49ac279b-bc67-4311-b0a4-0e23f2a99c52
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 10%
 
 ---
-
 
 # Een testomgeving maken{#creating-a-test-environment}
 
@@ -36,4 +34,3 @@ Voer de volgende stappen uit om een testomgeving (sandboxmodus) te maken:
 1. Nadat uw tests zijn voltooid en u de omgeving wilt gebruiken in de productie, dupliceert u de aanbiedingen en spaties in de ontwerpomgeving. (Klik met de rechtermuisknop > **[!UICONTROL Actions]** > **[!UICONTROL Deploy]** ).
 
    ![](assets/migration_interaction_5.png)
-
