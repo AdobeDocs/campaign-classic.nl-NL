@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Tutorials
 description: Tutorials
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
+exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 7%
 
 ---
-
 
 # Tutorials{#tutorials}
 
@@ -26,7 +24,7 @@ Ga aan de slag met Adobe Campaign door onze intuïtieve stapsgewijze handleiding
 * [Dynamische inhoud in een e-mail](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html) integreren: ontdekken de grondbeginselen om met de integratie tussen Campaign Classic en de Norm van het Doel te beginnen.
 * [Te leveren items beheren](../../delivery/using/about-deliverability.md): Meer informatie over de concepten en beste praktijken met betrekking tot leverbaarheid evenals de hulpmiddelen die door Adobe Campaign Classic worden aangeboden om het verzenden van uw leveringen te optimaliseren.
 * [Aanbevolen werkwijzen](../../delivery/using/delivery-best-practices.md) voor levering: Meer informatie over de beste praktijken met betrekking tot leveringsontwerp en verzendend met Adobe Campaign Classic.
-* [Een upgrade](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html) voor build uitvoeren: deze gids stelt u de belangrijkste stappen en beste praktijken voor om een bouwstijlverbetering met Campaign Classic uit te voeren.
+* [Een upgrade](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) voor build uitvoeren: deze gids stelt u de belangrijkste stappen en beste praktijken voor om een bouwstijlverbetering met Campaign Classic uit te voeren.
 * [Controlelijst](https://helpx.adobe.com/nl/campaign/kb/acc-security.html) voor beveiligingsconfiguratie: ontdekt zeer belangrijke elementen om betreffende veiligheidsconfiguratie en het verharden voor plaatsing op locatie te controleren
 
 Meer informatie over Adobe Campaign vindt u in de volgende gebruiksgevallen en -voorbeelden:
