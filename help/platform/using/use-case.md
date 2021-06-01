@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Gebruiksscenario
 description: Gebruiksscenario
 audience: platform
 content-type: reference
 topic-tags: filtering-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 2%
 
 ---
-
 
 # Gebruiksscenario{#use-case}
 
@@ -58,4 +56,3 @@ Voer de volgende stappen uit:
    De naam van het huidige filter wordt boven de lijst weergegeven. Als u het filter wilt annuleren, klikt u op het pictogram **[!UICONTROL Delete this filter]**.
 
    ![](assets/s_ncs_user_filter_on_subscriptions.png)
-
