@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Verbinding maken via LDAP
 description: 'Leer hoe u zich bij de campagne aanmeldt met LDAP '
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 1%
 
 ---
-
 
 # Verbinding maken via LDAP{#connecting-through-ldap}
 
@@ -190,4 +188,3 @@ Deze sectie biedt een aantal eenvoudige gebruiksgevallen om u te helpen de meest
    Groepen worden nooit direct gemaakt, noch door Adobe Campaign, noch door LDAP. Ze moeten afzonderlijk worden gemaakt, zowel in Adobe Campaign als in de LDAP-directory.
 
    De namen van groepen in de LDAP-directory moeten overeenkomen met de namen van Adobe Campaign-groepen. Hun verenigingsmasker wordt bepaald in het laatste configuratiestadium van de plaatsingstovenaar: Adobe Campaign_(.*), bijvoorbeeld.
-
