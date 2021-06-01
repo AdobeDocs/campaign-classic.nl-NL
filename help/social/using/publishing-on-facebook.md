@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Publiceren op Facebook
 description: Publiceren op Facebook
 audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
-translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+exl-id: 84d6cb2e-c7f9-43d7-a98c-22613d456193
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 2%
 
 ---
-
 
 # Publiceren op Facebook{#publishing-on-facebook}
 
@@ -54,7 +52,7 @@ U moet de pagina(&#39;s) selecteren waarop u uw publicatie wilt plaatsen.
 
 ## Proofingdoel {#selecting-the-proof-target} selecteren
 
-Op het tabblad **[!UICONTROL Target of the proofs]** kunt u de Facebook-pagina definiëren die u wilt gebruiken voor het testen van leveringen voordat u deze verzendt. We raden u aan hiervoor een speciale persoonlijke Facebook-pagina te maken. Raadpleeg [Een testpagina voor Facebook maken](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page) voor meer informatie over het maken van een persoonlijke Facebook-pagina. Als u het proefdrukdoel wilt selecteren, voert u dezelfde stappen uit als voor het hoofddoel: [Het hoofddoel selecteren](#selecting-the-main-target).
+Op het tabblad **[!UICONTROL Target of the proofs]** kunt u de Facebook-pagina definiëren die u wilt gebruiken voor het testen van leveringen voordat u deze verzendt. We raden u aan hiervoor een speciale persoonlijke Facebook-pagina te maken. Raadpleeg [Een Facebook-testpagina maken](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page) voor meer informatie over het maken van een Facebook-privépagina. Als u het proefdrukdoel wilt selecteren, voert u dezelfde stappen uit als voor het hoofddoel: [Het hoofddoel selecteren](#selecting-the-main-target).
 
 ![](assets/social_facebook_delivery_004.png)
 
@@ -64,7 +62,7 @@ Op het tabblad **[!UICONTROL Target of the proofs]** kunt u de Facebook-pagina d
 
 ## Het publiek {#defining-the-audience} definiëren
 
-Als u lokale segmenten wilt gebruiken om het type openbaar te verfijnen dat is geautoriseerd om de publicatie weer te geven, raden we u aan één Facebook-pagina per segment te maken (bijvoorbeeld: Adobe Campaign Paris, Adobe Campaign London, enz.).
+Als u lokale segmenten wilt gebruiken om het type openbaar te verfijnen dat is geautoriseerd om de publicatie te bekijken, raden we u aan één Facebook-pagina per segment te maken (bijvoorbeeld: Adobe Campaign Paris, Adobe Campaign London, enz.).
 
 Het is echter ook mogelijk om de publieksfilters te gebruiken die door Facebook worden gebruikt. Het tabblad **[!UICONTROL Audience]** van **[!UICONTROL Select target window]** bevat vier filters:
 
@@ -75,9 +73,9 @@ Het is echter ook mogelijk om de publieksfilters te gebruiken die door Facebook 
 
 >[!IMPORTANT]
 >
->Wees voorzichtig met deze functie. In leveringsrapporten zal de **[!UICONTROL Number of fans]** indicator niet met deze filters van Facebook rekening houden.
+>Wees voorzichtig met deze functie. In leveringsrapporten zal de **[!UICONTROL Number of fans]** indicator deze filters van Facebook niet in rekening brengen.
 >
->Facebook kan de lijst met publieksfilters en hun waarden wijzigen.
+>Facebook kan de lijst met publieksfilters en de bijbehorende waarden wijzigen.
 
 ## Inhoud van bericht {#defining-message-content} definiëren
 
@@ -125,7 +123,7 @@ Voer de verschillende velden in:
    >1. Selecteer de Facebook-toepassing [https://developers.facebook.com/apps](https://developers.facebook.com/apps) en selecteer het tabblad **[!UICONTROL Settings > Basic]**.
    >1. Voer het veld **[!UICONTROL Namespace]** in.
    >1. Voer het veld **[!UICONTROL Mobile Site URL]** in: wanneer een gebruiker op de publicatiekoppeling op zijn smartphone klikt, wordt deze automatisch door Facebook omgeleid naar de URL die in dit veld is gedefinieerd.
-   >1. Maak uw webtoepassing zodat het Facebook-scherm wordt gepersonaliseerd als een functie van het gebruikte apparaat (smartphone of pc).
+   >1. Maak uw webtoepassing zodat de Facebook-weergave wordt gepersonaliseerd als een functie van het gebruikte apparaat (smartphone of pc).
    >1. Ga naar het **[!UICONTROL Link]** gebied van de publicatie via de console van Adobe Campaign, ga URL van het **[!UICONTROL Canvas page]** gebied in.
 
 
@@ -133,7 +131,7 @@ Voer de verschillende velden in:
 
    >[!IMPORTANT]
    >
-   >Facebook kan de afbeelding alleen uploaden als deze op een openbare website wordt gehost.
+   >De afbeelding moet op een openbare website worden gehost, anders kan Facebook deze niet uploaden.
 
 1. Voer in het veld **[!UICONTROL Caption]** de tekst in die aan het einde van de publicatie wordt weergegeven.
 1. Ga naar het **[!UICONTROL Description]** gebied en ga de tekst in die onder de titel moet worden getoond.
@@ -142,7 +140,7 @@ Voer de verschillende velden in:
 
 ### Een status publiceren met een YouTube-koppeling {#publishing-a-status-with-a-youtube-link}
 
-Met dit type inhoud kunt u een koppeling naar een YouTube-video publiceren. Net als bij een status met een gewone koppeling kunt u een status, naam, bijschrift, beschrijving en aanvullende koppeling definiëren. De afbeelding wordt automatisch door Facebook toegevoegd. De symmetrieën tussen de velden van het bewerkingsscherm van de levering en de definitieve publicatie op Facebook zijn hieronder beschreven:
+Met dit type inhoud kunt u een koppeling naar een YouTube-video publiceren. Net als bij een status met een gewone koppeling kunt u een status, naam, bijschrift, beschrijving en aanvullende koppeling definiëren. De afbeelding wordt automatisch door Facebook toegevoegd. De symmetrieën tussen de velden van het bewerkingsscherm van de levering en de definitieve publicatie op Facebook worden hieronder beschreven:
 
 ![](assets/social_facebook_delivery_youtube_1.png)
 
@@ -162,7 +160,7 @@ Voer de verschillende velden in:
 
 ### Een fotoalbum {#publishing-a-photo-album} publiceren
 
-Met dit type inhoud kunt u een fotoalbum publiceren. U kunt voor elke foto een naam en een beschrijving voor het album en een bijschrift toevoegen. De symmetrieën tussen de velden van het bewerkingsscherm van de levering en de definitieve publicatie op Facebook zijn hieronder beschreven:
+Met dit type inhoud kunt u een fotoalbum publiceren. U kunt voor elke foto een naam en een beschrijving voor het album en een bijschrift toevoegen. De symmetrieën tussen de velden van het bewerkingsscherm van de levering en de definitieve publicatie op Facebook worden hieronder beschreven:
 
 ![](assets/social_facebook_delivery_photos_1.png)
 
@@ -188,13 +186,13 @@ Met het tabblad **[!UICONTROL Preview]** kunt u de rendering van de publicatie w
 
 >[!NOTE]
 >
->De voorvertoning kan enigszins afwijken van de uiteindelijke Facebook-publicatie. We raden u aan vóór de definitieve levering een bewijs te verzenden voor een exacte weergave van de publicatie. Zie [De proefdruk verzenden](#sending-the-proof).
+>De voorvertoning kan iets afwijken van de uiteindelijke Facebook-publicatie. We raden u aan vóór de definitieve levering een bewijs te verzenden voor een exacte weergave van de publicatie. Zie [De proefdruk verzenden](#sending-the-proof).
 
 ## Reeksspatiëring {#configuring-tracking} configureren
 
 Het volgen kan in de leveringsrapporten en op **[!UICONTROL Edit > Tracking]** lusje van de levering en de dienst worden bekeken.
 
-Klik op de URL in de levering wordt gemeten door Adobe Campaign. Het aantal klikken op de knop **[!UICONTROL Like]**, het aantal opmerkingen en het aantal ventilatoren worden door Facebook gemeten.
+Klik op de URL in de levering wordt gemeten door Adobe Campaign. Het aantal klikken op de knop **[!UICONTROL Like]**, het aantal opmerkingen en het aantal ventilatoren worden gemeten door Facebook.
 
 De volgende configuratie is het zelfde als voor een e-maillevering. Raadpleeg [deze sectie](../../delivery/using/about-delivery-monitoring.md) voor meer informatie.
 
@@ -204,7 +202,7 @@ De volgende configuratie is het zelfde als voor een e-maillevering. Raadpleeg [d
 
 ## De proefdruk {#sending-the-proof} verzenden
 
-We raden u ten zeerste aan een proefdruk van uw publicatie vóór de definitieve levering te verzenden om de exacte weergave van de publicatie op een persoonlijke Facebook-testpagina te bekijken. Raadpleeg [Een testpagina voor Facebook maken voor meer informatie over het maken van een persoonlijke testpagina op Facebook.](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page) De stappen voor het selecteren van de doelproef worden in [Het proefdrukdoel selecteren](#selecting-the-proof-target) in detail beschreven.
+We raden u aan een bewijs van uw publicatie vóór de uiteindelijke levering te verzenden om de exacte weergave van de publicatie op een persoonlijke Facebook-testpagina te bekijken. Raadpleeg [Een Facebook-testpagina voor tests maken](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page) voor meer informatie over het maken van een persoonlijke Facebook-testpagina. De stappen voor het selecteren van de doelproef worden in [Het proefdrukdoel selecteren](#selecting-the-proof-target) in detail beschreven.
 
 Bewijs van levering is identiek aan e-mailleveringen. Zie [deze sectie](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
@@ -223,4 +221,3 @@ Bewijs van levering is identiek aan e-mailleveringen. Zie [deze sectie](../../de
 1. Klik **[!UICONTROL Confirm delivery]**, dan klik **[!UICONTROL Yes]**.
 
    ![](assets/social_facebook_delivery_016.png)
-
