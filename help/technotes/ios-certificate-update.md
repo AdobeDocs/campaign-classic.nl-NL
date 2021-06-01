@@ -1,18 +1,16 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: TechNote
 description: TechNote
 hide: false
 hidefromtoc: true
-translation-type: tm+mt
-source-git-commit: 08c6e84e07da2811c91aa58ddf40c5781de2b163
+exl-id: 263fb4b5-ca62-4b92-a82d-8820ee998296
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
 
 ---
-
 
 # Update voor servercertificaat van Apple Push Notification-service {#apns-certificate-update}
 
@@ -35,4 +33,3 @@ Voer de volgende stappen uit om het nieuwe certificaat op te nemen:
    ```
    nlserver restart web
    ```
-
