@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Levering
 description: Meer informatie over de workflowactiviteit van het leveringstype
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 0%
 
 ---
-
 
 # Levering{#delivery}
 
@@ -168,4 +166,3 @@ De overgang verbonden aan het complement heeft de zelfde parameters.
 >[!NOTE]
 >
 >Er zijn geen uitvoerparameters wanneer de optie **[!UICONTROL Do not recover target]** wordt geselecteerd.
-
