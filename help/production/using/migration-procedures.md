@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Migratieprocedures
 description: Migratieprocedures
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 0b71a4d3-b340-4742-bd69-4073ce271cf3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 20%
 
 ---
-
 
 # Migratieprocedures{#migration-procedures}
 
@@ -26,4 +24,3 @@ Voor meer informatie over migratieprocedures en beste praktijken, verwijs naar:
 
 * [Een build-upgrade uitvoeren](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html)
 * [Migratieoverzicht](../../migration/using/about-migration.md)
-
