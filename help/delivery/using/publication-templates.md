@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Publicatiesjablonen
 description: Publicatiesjablonen
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
 
 ---
-
 
 # Publicatiesjablonen{#publication-templates}
 
@@ -99,7 +97,7 @@ Op dit tabblad kunt u een scenario selecteren om een levering rechtstreeks op de
 >
 >Raadpleeg [Inhoudsinstantie leveren](../../delivery/using/using-a-content-template.md#delivering-a-content-instance) voor een voorbeeld van het maken van een levering op basis van inhoud.
 
-### Samenvoeging {#aggregator}
+### aggregator {#aggregator}
 
 Door de gegevens uit een script of querylijst te bundelen, kunt u het XML-document verrijken met de inhoudsgegevens. Het doel is bepaalde informatie waarnaar wordt verwezen door links aan te vullen of elementen uit de database toe te voegen.
 
