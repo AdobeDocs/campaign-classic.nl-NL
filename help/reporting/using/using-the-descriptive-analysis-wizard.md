@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: De wizard voor beschrijvende analyse gebruiken
 description: De wizard voor beschrijvende analyse gebruiken
 audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 1%
 
 ---
-
 
 # De wizard voor beschrijvende analyse gebruiken{#using-the-descriptive-analysis-wizard}
 
@@ -235,4 +233,3 @@ De volgende bewerkingen zijn mogelijk:
    ![](assets/reporting_descriptive_view_report.png)
 
    Om veranderingen in het rapport aan te brengen, verwijs naar [Verwerking een rapport](../../reporting/using/processing-a-report.md).
-
