@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Het serverconfiguratiebestand
 description: Het serverconfiguratiebestand
@@ -7,8 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 5%
@@ -787,7 +785,7 @@ Hier zijn de verschillende parameters van **module** knoop. Dit is de configurat
  </tbody> 
 </table>
 
-## bewaking {#monitoring}
+## toezicht {#monitoring}
 
 Hier zijn de verschillende parameters van **monitoring** knoop. Dit is de configuratie van de controledienst.
 
@@ -1076,7 +1074,7 @@ Hier zijn de verschillende parameters van **xtkJobs** knoop. Dit is de configura
  </tbody> 
 </table>
 
-## archiveren {#archiving}
+## archivering {#archiving}
 
 Hier zijn de verschillende parameters van **archiving** knoop. Dit is de configuratie van de uitgevoerde archiveringsbewerkingen op de achtergrond.
 
@@ -1652,7 +1650,7 @@ Hier zijn de verschillende parameters van de **mta** knoop. Dit is de configurat
  </tbody> 
 </table>
 
-### cache {#cache}
+### cachegeheugen {#cache}
 
 In **cache** knoop, vorm de volgende parameters. Dit is de lokale configuratie van het dossiergeheime voorgeheugen.
 
@@ -2023,7 +2021,7 @@ Hier zijn de verschillende parameters van **name > relais** knoop. Dit vormt het
  </tbody> 
 </table>
 
-## gepipetteerd {#pipelined}
+## gelijnd {#pipelined}
 
 Hier zijn de verschillende parameters van **pipelined** knoop. Dit is de configuratie van de module van de gebeurtenisverwerking voor de Diensten van de Pijpleiding.
 
