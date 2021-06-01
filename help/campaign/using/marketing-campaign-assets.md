@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Documenten en overzichten van de marketingcampagne
 description: Meer informatie over marketingcampagnedocumenten en leveringscontouren
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '755'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# Gekoppelde documenten {#managing-associated-documents} beheren
+# Gekoppelde documenten beheren {#managing-associated-documents}
 
 U kunt verschillende documenten aan een campagne koppelen: rapporten, foto&#39;s, webpagina&#39;s, diagrammen, enz. Deze documenten kunnen elke gewenste indeling hebben (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, enzovoort).
 
