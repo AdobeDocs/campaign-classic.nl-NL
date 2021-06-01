@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Data bijwerken
 description: Data bijwerken
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 2%
 
 ---
-
 
 # Data bijwerken{#updating-data}
 
@@ -127,4 +125,3 @@ Als u het proces wilt controleren, gaat u naar het tabblad **[!UICONTROL Subscri
 >[!NOTE]
 >
 >Raadpleeg [deze pagina](../../delivery/using/managing-subscriptions.md) voor meer informatie over het maken en configureren van informatieservices.
-
