@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een profiellijst maken met een workflow
 description: Leer hoe u een profiellijst maakt in een workflow
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 6b308299-4d07-4c9e-bd2f-a0860c41cf02
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 10%
 
 ---
-
 
 # Een profiellijst maken met een workflow{#creating-a-profile-list-with-a-workflow}
 
@@ -46,5 +44,3 @@ Voer de onderstaande stappen uit om een doelworkflow te maken en ontvangers bij 
    Het dashboard specificeert het schema waarop de lijst gebaseerd is, zoals hieronder getoond:
 
    ![](assets/mapping_list_view.png)
-
-
