@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Doorlopende levering
 description: Doorlopende levering
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 6%
 
 ---
-
 
 # Doorlopende levering{#continuous-delivery}
 
