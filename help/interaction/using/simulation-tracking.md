@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Simulatietracking
 description: Simulatietracking
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 490ebbea-9bdc-453e-8a02-c02b095e55e9
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 10%
 
 ---
-
 
 # Simulatietracking{#simulation-tracking}
 
@@ -32,4 +30,3 @@ Een draaitabel geeft een snel overzicht van de uitsplitsingen van aanbiedingen p
 Raadpleeg [deze sectie](../../reporting/using/actions-on-reports.md) voor meer informatie.
 
 ![](assets/offer_simulation_013.png)
-
