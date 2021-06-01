@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Schema’s filteren
 description: Schema’s filteren
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
 
 ---
-
 
 # Filterschema&#39;s{#filtering-schemas}
 
@@ -113,4 +111,3 @@ U kunt nog steeds de systeemfilters wijzigen van de out-of-the-box schema&#39;s 
 1. Maak een extensie voor het desbetreffende schema of open een bestaande extensie.
 1. Voeg een onderliggend element **`<sysfilter name="<filter name>" _operation="delete"/>`** in het hoofdelement toe om toepassing van het filter onder het zelfde in het oorsprongschema te schrappen.
 1. U kunt desgewenst een nieuw filter toevoegen, zoals wordt beschreven in [Systeemfilters](#system-filters).
-
