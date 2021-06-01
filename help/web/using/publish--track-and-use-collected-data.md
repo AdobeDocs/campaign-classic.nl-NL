@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Verzamelde data publiceren, bijhouden en gebruiken
-description: Verzamelde data publiceren, bijhouden en gebruiken
+title: Verzamelde data gegevens publiceren, bijhouden en gebruiken
+description: Verzamelde data gegevens publiceren, bijhouden en gebruiken
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 3%
 
 ---
 
-
-# Verzamelde data publiceren, bijhouden en gebruiken{#publish-track-and-use-collected-data}
+# Verzamelde data gegevens publiceren, bijhouden en gebruiken{#publish-track-and-use-collected-data}
 
 Nadat het formulier is gemaakt, geconfigureerd en gepubliceerd, kunt u de koppeling delen met uw publiek en de reacties volgen.
 
