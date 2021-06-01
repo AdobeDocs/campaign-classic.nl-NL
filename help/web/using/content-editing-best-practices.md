@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Best practices voor het bewerken van content
 description: Best practices voor het bewerken van content
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 6%
 
 ---
-
 
 # Best practices voor het bewerken van content{#content-editing-best-practices}
 
@@ -94,4 +92,3 @@ In het bovenste gedeelte van de editor worden berichten weergegeven die betrekki
 * Er zijn geen gebieden of verpersoonlijkingsblokken om te vormen.
 * De inhoud van de levering is klaar. Voer de analyse opnieuw uit om eventuele wijzigingen toe te passen.
 * De levering is klaar om te worden verzonden.
-
