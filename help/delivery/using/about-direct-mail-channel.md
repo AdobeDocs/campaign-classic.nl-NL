@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Direct-mailkanaal
-description: Direct-mailkanaal
+title: Kanaal voor direct mail
+description: Kanaal voor direct mail
 audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 6474cf2e-c4db-4430-b001-18bf4911b0ea
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 9%
 
 ---
 
-
-# Direct-mailkanaal{#about-direct-mail-channel}
+# Kanaal voor direct mail{#about-direct-mail-channel}
 
 Met Adobe Campaign kunt u bestanden maken die op grote schaal persoonlijke letters leveren. De profielen van ontvangers moeten ten minste hun naam en postadres bevatten.
 
