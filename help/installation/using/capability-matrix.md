@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Campagne op locatie, hybride en gehoste capaciteitstabel
 description: Ontdek de belangrijkste verschillen tussen gehoste en on-premise implementaties
 audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
-translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
-
 
 # Capability matrix per model{#capability-matrix-per-model}
 
@@ -27,7 +25,7 @@ De verschillende ontvangende modellen worden geïntroduceerd [in deze sectie](..
 
 | Capaciteit | Gehost | Hybride | Op locatie | Details |
 |-----------------------------------------------|------------------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Campagneserver configureren | Op aanvraag | Beschikbaar | Beschikbaar | [Meer informatie](../../installation/using/the-server-configuration-file.md) |
+| Campaign-server configureren | Op aanvraag | Beschikbaar | Beschikbaar | [Meer informatie](../../installation/using/the-server-configuration-file.md) |
 | BCC e-mailen | Op aanvraag | Op aanvraag | Beschikbaar | [Meer informatie](../../installation/using/email-archiving.md) |
 | Uitvoerinstantie van Message Center beheren | Op aanvraag | Op aanvraag | Beschikbaar | [Meer informatie](../../message-center/using/about-transactional-messaging.md) |
 | Middelsourcingsplatform beheren | Op aanvraag | Op aanvraag | Beschikbaar | [Meer informatie](../../installation/using/mid-sourcing-server.md) |
@@ -56,5 +54,5 @@ Adobe Campaign biedt de optie **Federated Data Access** (FDA) om informatie te v
 * [Release-opmerkingen](../../rn/using/latest-release.md)
 * [Campaign Classic upgrades](../../rn/using/rn-overview.md)
 * [Verouderde en verwijderde functies](../../rn/using/deprecated-features.md)
-* [[!DNL Gold Standard] lozingen](../../rn/using/gold-standard.md)
+* [[!DNL Gold Standard]-releases ](../../rn/using/gold-standard.md)
 * [[!DNL Gold Standard] programma](../../rn/using/gs-overview.md)
