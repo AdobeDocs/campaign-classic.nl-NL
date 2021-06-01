@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een lokale campagne maken
 description: Een lokale campagne maken
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 1%
 
 ---
-
 
 # Een lokale campagne maken{#creating-a-local-campaign}
 
@@ -93,7 +91,7 @@ Vul de velden **[!UICONTROL Parent marketing program]** en **[!UICONTROL Charge]
 
 ![](assets/mkg_dist_local_op_creation3.png)
 
-### Goedkeuring {#approvals}
+### Goedkeuringen {#approvals}
 
 Via de koppeling **[!UICONTROL Advanced parameters for campaign entry]** kunt u het maximumaantal revisoren opgeven.
 
