@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Eigenschappen van het rapport
 description: Meer informatie over de instellingen van de rapporteigenschappen
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 1%
 
 ---
-
 
 # Eigenschappen van het rapport{#properties-of-the-report}
 
