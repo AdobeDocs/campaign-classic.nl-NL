@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: De volgorde van webformulierpagina’s definiëren
 description: De volgorde van webformulierpagina’s definiëren
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
+exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 2%
 
 ---
-
 
 # De volgorde van webformulierpagina’s definiëren{#defining-web-forms-page-sequencing}
 
@@ -125,4 +123,3 @@ Als u deze pagina wilt aanpassen, dubbelklikt u op **[!UICONTROL End]** en voert
 
 * U kunt bestaande HTML-inhoud kopiëren en plakken. Klik hiertoe op **[!UICONTROL Display source code]** en voeg de HTML-code in.
 * U kunt een externe URL gebruiken; Hiervoor selecteert u de desbetreffende optie en voert u de URL in van de pagina die u wilt weergeven.
-
