@@ -3,17 +3,16 @@ solution: Campaign Classic
 product: campaign
 title: Toegang tot campagnemappen beheren
 description: Leer hoe u toegang kunt verlenen tot campagnemappen en weergaven kunt maken
-feature: Application Settings
+feature: Applicatie-instellingen
 role: Business Practitioner, Administrator
 level: Beginner
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 0%
+source-wordcount: '753'
+ht-degree: 1%
 
 ---
-
 
 # Toegang tot mappen beheren{#folder-access-management}
 
@@ -76,9 +75,7 @@ De volgende leveringen worden weergegeven in de weergave:
 
 >[!NOTE]
 >
->Bij het beheren van [transactioneel overseinen](../../message-center/using/about-transactional-messaging.md) gebeurtenissen, moeten **[!UICONTROL Real time events]** of **[!UICONTROL Batch events]** omslagen niet als meningen op de uitvoeringsinstanties worden geplaatst, aangezien dit tot toegangsjuiste kwesties zou kunnen leiden. Zie [deze sectie](../../message-center/using/event-collection.md) voor meer informatie over het verzamelen van gebeurtenissen.
-
-
+>Bij het beheren van [transactioneel overseinen](../../message-center/using/about-transactional-messaging.md) gebeurtenissen, moeten **[!UICONTROL Real time events]** of **[!UICONTROL Batch events]** omslagen niet als meningen op de uitvoeringsinstanties worden geplaatst, aangezien dit tot toegangsjuiste kwesties zou kunnen leiden. Zie [deze sectie](../../message-center/using/about-event-processing.md#event-collection) voor meer informatie over het verzamelen van gebeurtenissen.
 
 ## Machtigingen voor een map
 
