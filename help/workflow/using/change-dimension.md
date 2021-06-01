@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Dimensie wijzigen
 description: Dimensie wijzigen
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 2%
 
 ---
-
 
 # Dimensie wijzigen{#change-dimension}
 
@@ -80,4 +78,3 @@ Om de activiteit van de veranderingsdimensie te vormen, pas de volgende stappen 
    ![](assets/wf_change-dimension_sample_06.png)
 
    ![](assets/wf_change-dimension_sample_07.png)
-
