@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Toegang tot een externe database (FDA)
 description: Toegang tot een externe database (FDA)
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 9500a7ba-263d-425b-8cc3-b111c6b9108f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 53%
 
 ---
-
 
 # Toegang tot een externe database (FDA){#accessing-an-external-database-fda}
 
@@ -21,7 +19,7 @@ Adobe Campaign biedt de FDA-optie (Federated Data Access) om informatie die is o
 
 Met meerdere activiteiten kunt u werken met gegevens uit een externe database:
 
-* Queryactiviteit
+* Query
 * Splitsen
 * Verrijking
 * Gegevens laden
