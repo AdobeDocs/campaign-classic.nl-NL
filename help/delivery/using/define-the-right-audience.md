@@ -1,18 +1,16 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: De juiste doelgroep definiëren
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: tm+mt
-source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
+exl-id: c0533148-b027-4158-9b95-8d2df769e963
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 3%
 
 ---
-
 
 # De juiste doelgroep definiëren {#define-the-right-audience}
 
