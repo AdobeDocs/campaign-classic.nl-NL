@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: E-mailarchivering
 description: E-mailarchivering
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-translation-type: tm+mt
-source-git-commit: 5fa848d86f951cb9dc40eb7981abea29c1092291
+exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 2%
 
 ---
-
 
 # E-mailBCC {#email-archiving}
 
@@ -147,4 +145,3 @@ Zodra e-mail BCC wordt gevormd, zorg ervoor u **[!UICONTROL Email BCC]** optie i
 
 * **E-mails per verbinding**: BCC e-mailarchivering werkt door een verbinding te openen en alle e-mails via die verbinding te verzenden. Adobe raadt u aan om met uw interne technische contactpersoon te controleren hoeveel e-mails worden geaccepteerd voor een bepaalde verbinding. Het verhogen van dit aantal kan een grote invloed op de productie BCC hebben.
 * **BCC die IPs** verzendt: BCC-e-mailberichten worden momenteel niet verzonden via de normale MTA-proxy&#39;s. In plaats daarvan is een directe verbinding geopend van de MTA-server naar de e-mailserver van het doel. Dit betekent dat u extra IPs aan de lijst van gewenste personen op uw netwerk, afhankelijk van uw configuratie van de e-mailserver kunt moeten toevoegen.
-
