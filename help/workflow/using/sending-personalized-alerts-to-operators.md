@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Gepersonaliseerde waarschuwingen verzenden naar operatoren
 description: Leer hoe u persoonlijke waarschuwingen naar operatoren kunt sturen
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 2%
 
 ---
-
 
 # Gepersonaliseerde waarschuwingen verzenden naar operatoren{#sending-personalized-alerts-to-operators}
 
@@ -100,4 +98,3 @@ for each (var item in items){
 >U kunt zo veel velden toevoegen als u wilt, mits deze zijn ingevoegd in de JavaScript-code.
 
 ![](assets/uc_operator_8.png)
-
