@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Data-extractie (bestand)
+title: Gegevensextractie (bestand)
 description: Meer informatie over de activiteit van de gegevensextractie-workflow (bestand)
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 06eafedd-6386-498f-a80d-7f57ddcccad6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 1%
 
 ---
 
-
-# Data-extractie (bestand){#extraction-file}
+# Gegevensextractie (bestand){#extraction-file}
 
 U kunt gegevens uit een werkschematabel in een extern dossier halen gebruikend **[!UICONTROL Data extraction (file)]** activiteit.
 
@@ -66,4 +64,3 @@ Hieronder volgt een lijst met beschikbare statistische functies:
 * **[!UICONTROL Minimum value]** de minimumwaarden van een veld (numeriek of anderszins) te berekenen;
 * **[!UICONTROL Maximum value]** de maximumwaarden van een veld (numeriek of anderszins) te berekenen;
 * **[!UICONTROL Average]** het gemiddelde van de waarden van een numeriek veld te berekenen.
-
