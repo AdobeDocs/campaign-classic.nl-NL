@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een schema uitbreiden
 description: Leer hoe u een schema kunt uitbreiden
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 6e3e666d-6ab3-4346-93ca-fb0155a4660d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 5%
 
 ---
-
 
 # Een schema uitbreiden{#extending-a-schema}
 
@@ -57,7 +55,7 @@ Er zijn twee methoden om een bestaand schema uit te breiden:
    </schema>
    ```
 
-   Het **AfhankelijkSchemas** attribuut op het wortelelement van het schema verwijzingen de gebiedsdelen op de uitbreidingsschema&#39;s.
+   Het **afhankelijkSchemas** attribuut op het wortelelement van het schema verwijzingen de gebiedsdelen op de uitbreidingsschema&#39;s.
 
    Het **behoortTo** attribuut op het gebied vult in het schema waar het wordt verklaard.
 
@@ -65,4 +63,3 @@ Er zijn twee methoden om een bestaand schema uit te breiden:
 >
 >Voor de wijzigingen die in aanmerking moeten worden genomen, moet u schema&#39;s opnieuw genereren. Raadpleeg voor meer informatie de sectie [Regenererende schema&#39;s](../../configuration/using/regenerating-schemas.md).\
 >Als de wijzigingen van invloed zijn op de structuur van de database, moet u een update uitvoeren. Raadpleeg de sectie [De databasestructuur bijwerken](../../configuration/using/updating-the-database-structure.md) voor meer informatie.
-
