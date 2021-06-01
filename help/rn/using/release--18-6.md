@@ -1,22 +1,20 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Opmerkingen bij de release Campagne 18.6
 description: Opmerkingen bij de release voor campagne 18.6
 audience: rn
 content-type: reference
 topic-tags: latest-release-notes
-feature: Overview
+feature: Overzicht
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+exl-id: a849ce10-0972-4c42-b10e-67a81c79bc65
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 6%
+source-wordcount: '800'
+ht-degree: 7%
 
 ---
-
 
 # Release 18.6{#release-18-6}
 
@@ -26,7 +24,7 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->Er is al op gewezen dat dit een bouwwerk is. [upgrade naar de nieuwste build](../../production/using/build-upgrade.md) of neem contact op met [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Er is al op gewezen dat dit een bouwwerk is. [upgrade naar de nieuwste build](../../production/using/build-upgrade.md) of neem contact op met [Adobe Customer Care](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Nieuwe functies**
 
