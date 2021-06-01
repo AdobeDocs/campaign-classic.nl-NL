@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Databasetoewijzing
 description: Databasetoewijzing
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 728b509f-2755-48df-8b12-449b7044e317
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1974'
 ht-degree: 0%
 
 ---
-
 
 # Databasetoewijzing{#database-mapping}
 
@@ -305,7 +303,7 @@ Van ACC 18.10, **XtkNewId** is niet meer de standaardwaarde voor de opeenvolging
 
 >[!NOTE]
 >
->Een opeenvolging die in een schema van Adobe Campaign (**NmsTrackingLogId** bijvoorbeeld) van verwijzingen wordt voorzien moet aan een SQL functie worden geassocieerd die het aantal IDs in de parameters terugkeert, die door komma&#39;s wordt gescheiden. Deze functie moet **GetNew** XXX **Ids** worden genoemd, waarbij **XXX** de naam van de opeenvolging is (**GetNewNmsTrackingLogIds** bijvoorbeeld). Bekijk de **postgres-nms.sql**-, **mssql-nms.sql**- of **oracle-nms.sql**-bestanden die bij de toepassing worden geleverd in de map **datakit/nms/eng/sql/** om het voorbeeld te herstellen een opeenvolgingsverwezenlijking &quot;NmsTrackingLogId&quot;voor elke gegevensbestandmotor.
+>Een opeenvolging die in een schema van Adobe Campaign (**NmsTrackingLogId** bijvoorbeeld) van verwijzingen wordt voorzien moet aan een SQL functie worden geassocieerd die het aantal identiteitskaart in de parameters terugkeert, die door komma&#39;s wordt gescheiden. Deze functie moet **GetNew** XXX **Ids** worden genoemd, waarbij **XXX** de naam van de opeenvolging is (**GetNewNmsTrackingLogIds** bijvoorbeeld). Bekijk de **postgres-nms.sql**-, **mssql-nms.sql**- of **oracle-nms.sql**-bestanden die bij de toepassing worden geleverd in de map **datakit/nms/eng/sql/** om het voorbeeld te herstellen van het maken van een &#39;NmsTrackingLogId&#39;-reeks voor elke database-engine.
 
 Om een unieke sleutel te verklaren, bevolk **automatisch** attribuut (met waarde &quot;waar&quot;) op het belangrijkste element van het gegevensschema.
 
@@ -496,7 +494,7 @@ In dit voorbeeld, zullen wij een verbinding naar de &quot;nms:adres&quot;schemal
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
-### Voorbeeld 5 {#example-4}
+### Voorbeeld 4 {#example-4}
 
 Koppeling naar een map (&quot;xtk:folder&quot;-schema):
 
