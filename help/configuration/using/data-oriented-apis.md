@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Datagerichte API’s
-description: Datagerichte API’s
+title: Gegevensgerichte API’s
+description: Gegevensgerichte API’s
 audience: configuration
 content-type: reference
 topic-tags: api
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1881'
 ht-degree: 0%
 
 ---
 
-
-# Datagerichte API’s{#data-oriented-apis}
+# Gegevensgerichte API’s{#data-oriented-apis}
 
 Met gegevensgeoriënteerde API&#39;s kunt u het volledige datamodel beheren.
 
@@ -53,7 +51,7 @@ Voor meer op dit, verwijs naar [Voorbeeld op de methode &#39;ExecuteQuery&#39; v
 
 De methode **ExecuteQuery** wordt weergegeven in [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-).
 
-### {#write} schrijven
+### Schrijven {#write}
 
 Met schrijfopdrachten kunt u eenvoudige of complexe documenten schrijven met items in een of meer tabellen van de basis.
 
@@ -464,7 +462,7 @@ In plaats van:
 
 ### Voorbeeld van SOAP-berichten {#example-of-soap-messages}
 
-* Queryactiviteit:
+* Query:
 
    ```
    <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -633,7 +631,7 @@ Door gebrek, moeten alle inzamelingselementen worden bevolkt om de de inzameling
 
 ### Voorbeeld van SOAP-berichten {#example-of-soap-messages-1}
 
-* Queryactiviteit:
+* Query:
 
    ```
    <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -675,4 +673,3 @@ Door gebrek, moeten alle inzamelingselementen worden bevolkt om de de inzameling
      </SOAP-ENV:Body>
    </SOAP-ENV:Envelope>
    ```
-
