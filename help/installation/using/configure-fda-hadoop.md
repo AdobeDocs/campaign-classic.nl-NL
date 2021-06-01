@@ -1,30 +1,28 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Toegang tot Hadoop configureren
-description: Leer hoe u toegang tot Hadoop kunt configureren in FDA
+description: Leer hoe te om toegang tot Hadoop in FDA te vormen
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 1%
 
 ---
 
-
 # Toegang tot Hadoop {#configure-access-to-hadoop} configureren
 
 Gebruik de optie Campagne **Federated Data Access** (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Hadoop te configureren.
 
-1. [Hadoop-database](#configuring-hadoop) configureren
-1. Hadoop [externe account](#hadoop-external) configureren in campagne
+1. [Hadoop database](#configuring-hadoop) configureren
+1. De Hadoop [externe account](#hadoop-external) configureren in campagne
 
 ## Hadoop 3.0 {#configuring-hadoop} configureren
 
-Als u verbinding wilt maken met een externe Hadoop-database in FDA, hebt u de volgende configuraties op de Adobe Campaign-server nodig. Deze configuratie is zowel voor Windows als voor Linux beschikbaar.
+Voor het verbinden met een externe database van een Hadoop in FDA zijn de volgende configuraties op de Adobe Campaign-server vereist. Deze configuratie is zowel voor Windows als voor Linux beschikbaar.
 
 1. Download de ODBC-stuurprogramma&#39;s voor Hadoop, afhankelijk van uw OS-versie. Drivers vindt u op [deze pagina](https://www.cloudera.com/downloads.html).
 
@@ -39,9 +37,9 @@ Als u verbinding wilt maken met een externe Hadoop-database in FDA, hebt u de vo
 
 1. In Campaign Classic kunt u vervolgens uw [!DNL Hadoop] externe account configureren. Raadpleeg [deze sectie](#hadoop-external) voor meer informatie over het configureren van uw externe account.
 
-## Hadoop externe account {#hadoop-external}
+## Externe rekening van hadoop {#hadoop-external}
 
-Met de externe [!DNL Hadoop]-account kunt u uw Campagne-instantie verbinden met uw externe Hadoop-database.
+Met de externe [!DNL Hadoop]-account kunt u uw Campagne-instantie verbinden met de externe database van uw Hadoop.
 
 1. In Campaign Classic, vorm uw [!DNL Hadoop] externe rekening. Klik in het **[!UICONTROL Explorer]** op **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
@@ -67,7 +65,7 @@ Met de externe [!DNL Hadoop]-account kunt u uw Campagne-instantie verbinden met 
 
 De schakelaar steunt de volgende opties ODBC:
 
-| Naam | Value |
+| Naam | Waarde |
 |---|---|
 | ODBCMgr | iODBC |
 | entrepot | 02-01-4 |
@@ -82,7 +80,7 @@ De aansluiting ondersteunt ook de volgende opties voor Hive:
 | fileFormat | PARQUET | Standaardbestandsindeling voor werktabellen. |
 
 
-## Hadoop 2.1 {#configure-access-hadoop-2} configureren
+## Het vormen Hadoop 2.1 {#configure-access-hadoop-2}
 
 Als u verbinding moet maken met Hadoop 2.1, voert u de onderstaande stappen uit voor [Windows](#for-windows) of [Linux](#for-linux).
 
@@ -100,7 +98,7 @@ Als u verbinding moet maken met Hadoop 2.1, voert u de onderstaande stappen uit 
    User/Password: admin/<your password here>
    ```
 
-1. Maak de externe Hadoop-account, zoals beschreven in [deze sectie](#hadoop-external).
+1. Maak de externe account van de Hadoop, zoals beschreven in [deze sectie](#hadoop-external).
 
 ### Hadoop 2.1 voor Linux {#for-linux}
 
@@ -155,7 +153,7 @@ Als u verbinding moet maken met Hadoop 2.1, voert u de onderstaande stappen uit 
    >
    >De parameter **UseNativeQuery** is hier erg belangrijk. De campagne is Hive-bewust en zal niet correct werken tenzij UseNativeQuery wordt geplaatst. Doorgaans herschrijft het stuurprogramma of de SQL-connector van Hive query&#39;s en wordt de kolomvolgorde gewijzigd.
 
-   De verificatie-instelling is afhankelijk van de configuratie Hive/Hadoop. Voor HD Insight gebruikt u bijvoorbeeld AuthMech=6 voor gebruikers-/wachtwoordverificatie, zoals [hier](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm) wordt beschreven.
+   De authentificatieopstelling hangt van de configuratie van de Bieg/Hadoop af. Voor HD Insight gebruikt u bijvoorbeeld AuthMech=6 voor gebruikers-/wachtwoordverificatie, zoals [hier](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm) wordt beschreven.
 
 1. Exporteer de variabelen.
 
@@ -187,5 +185,4 @@ Als u verbinding moet maken met Hadoop 2.1, voert u de onderstaande stappen uit 
    isql vorac -v
    ```
 
-1. Maak de externe Hadoop-account, zoals beschreven in [deze sectie](#hadoop-external).
-
+1. Maak de externe account van de Hadoop, zoals beschreven in [deze sectie](#hadoop-external).
