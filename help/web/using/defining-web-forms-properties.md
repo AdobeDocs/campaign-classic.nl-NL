@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Eigenschappen voor webformulieren definiëren
 description: Eigenschappen voor webformulieren definiëren
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
+exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 1%
 
 ---
-
 
 # Eigenschappen voor webformulieren definiëren{#defining-web-forms-properties}
 
@@ -175,4 +173,3 @@ Om deze vorm te vormen, creeer een testdoos en plaats het bij het begin van het 
 Met het testvak kunt u de voorwaarden voor de volgorde van pagina&#39;s configureren:
 
 ![](assets/s_ncs_admin_survey_test_box.png)
-
