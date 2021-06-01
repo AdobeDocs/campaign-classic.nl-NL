@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Targetingdata
 description: Meer informatie over doelgegevens in een workflow
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
-translation-type: tm+mt
-source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1904'
 ht-degree: 4%
 
 ---
-
 
 # Targetingdata{#targeting-data}
 
@@ -256,4 +254,3 @@ De geïdentificeerde en verzamelde gegevens kunnen worden verrijkt, geaggregeerd
 * Met de activiteit **[!UICONTROL Enrichment]** kunt u tijdelijk kolommen aan een schema toevoegen en informatie aan bepaalde elementen toevoegen. Het wordt gedetailleerd in [Verrijking](../../workflow/using/enrichment.md) sectie van de bewaarplaats van activiteiten.
 * Met de activiteit **[!UICONTROL Edit schema]** kunt u de structuur van een schema wijzigen. Het wordt gedetailleerd in [geef schema](../../workflow/using/edit-schema.md) sectie van de bewaarplaats van activiteiten uit.
 * Met de activiteit **[!UICONTROL Change dimension]** kunt u de doeldimensie tijdens de ontwerpcyclus wijzigen. Dit wordt beschreven in de sectie [Dimensie wijzigen](../../workflow/using/change-dimension.md).
-
