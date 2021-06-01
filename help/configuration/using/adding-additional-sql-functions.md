@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Extra SQL-functies toevoegen
 description: Extra SQL-functies toevoegen
 audience: configuration
 content-type: reference
 topic-tags: api
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 1%
 
 ---
-
 
 # Extra SQL-functies toevoegen{#adding-additional-sql-functions}
 
