@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Aanbevelingen voor Campaign Classic-database
 description: Aanbevelingen voor databases
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 8a0426c1-9e8d-4053-bc2b-6a550e2eed2f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 1%
 
 ---
-
 
 # Database{#database}
 
@@ -45,7 +43,7 @@ Toegang-DLL&#39;s vindt u op de Microsoft-website.
 
 De parameters **NLS_NCHAR_CHARACTERSET** en **NLS_CHARACTERSET** moeten correct worden gevormd opdat het gegevensbestand in Unicode of ANSI werkt.
 
-Adobe Campaign gebruikt standaard Oracle-codering. Het gebruik van andere codering kan compatibiliteitsproblemen veroorzaken: in dit geval kunt u contact opnemen met de technische ondersteuning .
+Adobe Campaign gebruikt standaardcodering voor Oracles. Het gebruik van andere codering kan compatibiliteitsproblemen veroorzaken: in dit geval kunt u contact opnemen met de technische ondersteuning .
 
 Als u meer wilt weten over uw codering, gebruikt u de volgende **sqlplus**-opdracht:
 
@@ -66,7 +64,7 @@ SELECT * FROM nls_database_parameters ;
   NLS_CHARACTERSET WE8MSWIN1252
 ```
 
-Als u zich wilt aanmelden bij **sqlplus**, gebruikt u het Oracle-gebruikersprofiel:
+Als u zich wilt aanmelden bij **sqlplus**, gebruikt u het gebruikersprofiel van het Oracle:
 
 ```
 su - oracle 
