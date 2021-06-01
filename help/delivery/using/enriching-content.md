@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Content verrijken
 description: Content verrijken
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
 
 ---
-
 
 # Content verrijken{#enriching-content}
 
@@ -260,4 +258,3 @@ Het resultaat dat na de uitvoering van het script wordt bereikt:
 De inhoud van de JavaScript-code wordt toegevoegd via de map **[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]** en moet voor elke transformatie worden ingevuld in de publicatiesjabloon.
 
 ![](assets/d_ncs_content_link5.png)
-
