@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Leveringscontent laden
 description: Leveringscontent laden
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 3%
 
 ---
-
 
 # Leveringscontent laden{#loading-delivery-content}
 
