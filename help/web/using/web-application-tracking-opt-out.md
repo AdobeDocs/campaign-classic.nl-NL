@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Opt-out voor tracking van een webapplicatie
 description: Opt-out voor tracking van een webapplicatie
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
+exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 2%
 
 ---
-
 
 # Opt-out voor tracking van een webapplicatie{#web-application-tracking-opt-out}
 
@@ -153,4 +151,3 @@ var webTracking = new NL.ServerWebTracking(request, 'optOutBanner');
 </body>
 </html>
 ```
-
