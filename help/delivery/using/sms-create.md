@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: SMS maken met campagne
 description: Meer informatie over het maken van SMS met campagne
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-translation-type: tm+mt
-source-git-commit: 5a084ebe5295d19de24cf92c721d4692f0f5deb8
+exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 3%
 
 ---
-
 
 # Een sms-levering maken {#creating-a-sms-delivery}
 
@@ -72,4 +70,3 @@ Het gedetailleerde proces wanneer het selecteren van de doelpopulatie van een le
 Raadpleeg [deze sectie](../../delivery/using/about-personalization.md) voor meer informatie over het gebruik van verpersoonlijkingsvelden.
 
 Raadpleeg [deze pagina](../../delivery/using/about-seed-addresses.md) voor meer informatie over het opnemen van een zaadlijst.
-
