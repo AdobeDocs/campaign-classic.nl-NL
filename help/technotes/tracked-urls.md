@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: TechNote
 description: TechNote
 hide: true
 hidefromtoc: true
-translation-type: tm+mt
-source-git-commit: 51773f48bac90febe44c6796b8cc08fce072bab3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 5%
+ht-degree: 35%
 
 ---
 
-# Probleem {#tracked-urls} met handtekening van bijgehouden URL&#39;s
+# Probleem met handtekening van bijgehouden URL&#39;s{#tracked-urls}
 
-Na recente wijzigingen kunnen bijgehouden URL&#39;s mislukken wanneer een URL-handtekening actief is in de campagne. Sommige mailboxes kunnen meer effect hebben dan andere, aangezien sommige bedrijven specifieke veiligheidshulpmiddelen hebben die verbindingen kunnen beïnvloeden en het URL handtekeningsmechanisme veranderen.
+Na recente wijzigingen kunnen bijgehouden URL&#39;s mislukken wanneer een URL-handtekening actief is in de campagne. De impact van het probleem verschilt per e-mailaccount. Sommige bedrijven hebben namelijk specifieke beveiligingstools die verbindingen kunnen beïnvloeden en het URL-handtekeningmechanisme kunnen veranderen.
 
 Daarom raadt Adobe u aan het handtekeningmechanisme voor het bijhouden van koppelingen uit te schakelen. Deze procedure verhelpt oude het volgen verbindingen behalve degenen die met een dubbele ontsnaping worden ontvangen.
 
-Koppelingen zonder abonnement kunnen mislukken, net als andere koppelingen. De frequentie is variabel van host tot host, maar is minder dan 1%.
+Afmeldkoppelingen kunnen net als andere koppelingen mislukken. De frequentie verschilt van host tot host, maar is minder dan 1%.
 
-**Heb je invloed op?**
+**Heeft dit gevolgen voor u?**
 
 Om de beveiliging te verbeteren, is het handtekeningmechanisme voor het bijhouden van koppelingen in e-mailberichten geïntroduceerd in [Campagne Gold Standard 8](../rn/using/gold-standard.md#gs8) - april 2020 - en is standaard ingeschakeld voor alle klanten die beginnen met Build 19.1.4 (9032@3a9dc9c) en Campagne 20.2.
 
@@ -60,11 +58,11 @@ Volg de onderstaande stap:
 
 **Wat is de impact?**
 
-Het onderhoud vereist maximaal 25 minuten downtime en tijdens deze periode werken alle leveringen, koppelingen en API-aanroepen niet.
+De uitvaltijd voor onderhoud bedraagt maximaal 25 minuten en tijdens deze periode werken alle verzendingen, trackingkoppelingen en API-aanroepen niet.
 
-Wanneer de update is uitgevoerd, werken alle koppelingen naar behoren.
+Zodra de update is uitgevoerd, werken alle koppelingen weer naar behoren.
 
 >[!NOTE]
 >
->Voor vragen over deze wijzigingen neemt u contact op met [Adobe Customer Care](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Voor vragen over deze wijzigingen neemt u contact op met de [Adobe-klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
