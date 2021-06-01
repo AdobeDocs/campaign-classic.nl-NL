@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Queryactiviteit
+title: Query
 description: Meer informatie over de activiteit van de Query-workflow
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1622'
 ht-degree: 0%
 
 ---
-
 
 # Query{#query}
 
@@ -24,7 +22,7 @@ Voor meer informatie over vraagsteekproeven, verwijs naar dit [deze sectie](../.
 
 >[!NOTE]
 >
->Query-activiteiten zijn niet compatibel met CLOB-velden wanneer u Oracle gebruikt.
+>De activiteiten van de vraag zijn niet compatibel met gebieden CLOB wanneer het gebruiken van Oracle.
 
 ![](assets/s_user_segmentation_wizard_9.png)
 
