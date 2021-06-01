@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Extensievoorbeeld
 description: Extensievoorbeeld
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: d4acf99b-cef4-48f7-b4cd-c032ec12592f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 3%
 
 ---
-
 
 # Extensievoorbeeld{#extension-example}
 
@@ -32,4 +30,3 @@ In het geval van een binnenkomend contact (callcenter of website) worden de mees
    ![](assets/s_ncs_configuration_offer_context.png)
 
 * Wanneer het vormen van de vraag van de ZEEP, neem **context** het element van XML op om de informatie van de verwijzingscontext in te voegen die in het interactieschema wordt toegevoegd. Raadpleeg [Integratie via SOAP (serverzijde)](../../interaction/using/integration-via-soap--server-side-.md) voor meer informatie.
-
