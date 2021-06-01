@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Profielen beheren
 description: Profielen beheren
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # Profielen beheren{#managing-profiles}
 
@@ -48,4 +46,3 @@ Als u een map wilt leegmaken, gebruikt u het menu **[!UICONTROL Actions > Purge 
 Klik **[!UICONTROL Start]** om de bewerking te starten. In het middelste gedeelte van het venster wordt de voortgangsstatus weergegeven, zoals hieronder wordt getoond:
 
 ![](assets/s_ncs_user_purge_folder_start.png)
-
