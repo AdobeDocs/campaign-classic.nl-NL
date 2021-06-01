@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Rapporten maken in Campaign
 description: Rapporten maken in Campaign
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 5%
 
 ---
-
 
 # Belangrijke stappen om een rapport te maken{#about-reports-creation-in-campaign}
 
@@ -31,4 +29,3 @@ Voer de volgende stappen uit om een analyserapport over uw gegevens te maken, te
 1. Configureer de weergaveopties: weergavetype, gedeelde rapporten: verwijzen naar [De vertoningscontext van het Rapport](../../reporting/using/configuring-access-to-the-report.md#report-display-context), [Bepalend een voorwaardelijke inhoud](../../reporting/using/defining-a-conditional-content.md) en [Het vormen toegang tot het rapport](../../reporting/using/configuring-access-to-the-report.md),
 1. Publiceer het rapport (publicatiewizard): verwijzen naar [Publiceren van het rapport](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report),
 1. Converteer het rapport: exporteren, historie, weergeven in een browser: Raadpleeg [Handelingen in rapporten](../../reporting/using/actions-on-reports.md).
-
