@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Aanmaakstappen voor leveringen in Adobe Campaign Classic
 description: Ontdek de belangrijkste stappen voor het maken van de levering in Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '132'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
-
 
 # Aanmaakstappen voor leveringen {#about-delivery-creation}
 
@@ -30,7 +28,7 @@ De belangrijkste stappen bij het maken van een levering zijn als volgt:
 
 1. **Definieer de doelpopulatie**. [Meer informatie](../../delivery/using/steps-defining-the-target-population.md)
 
-1. **Verzend de levering**. [Meer informatie](../../delivery/using/steps-sending-the-delivery.md)
+1. **De verzending verzenden**. [Meer informatie](../../delivery/using/steps-sending-the-delivery.md)
 
 1. **De levering**  controleren (bijhouden, quarantaine, rapporten, enz.). Raadpleeg voor meer informatie de secties [Leveringen controleren](../../delivery/using/about-delivery-monitoring.md) en [Leveringen bijhouden](../../delivery/using/about-message-tracking.md).
 
