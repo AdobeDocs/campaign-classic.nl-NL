@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Script maken
+title: Het script maken
 description: Leer hoe u een A/B-test uitvoert met een speciale praktijkcase.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
-source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
+exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# Het script {#step-5--creating-the-script} maken
+# Het script maken {#step-5--creating-the-script}
 
 De keus van de leveringsinhoud die voor de resterende bevolking wordt bestemd wordt berekend door een manuscript. Met dit script wordt de informatie over de levering met de hoogste snelheid van het openen hersteld en wordt de inhoud naar de uiteindelijke levering gekopieerd.
 
