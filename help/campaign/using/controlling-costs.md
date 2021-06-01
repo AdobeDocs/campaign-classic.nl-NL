@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Kosten beheren
 description: Kosten beheren
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
-translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2468'
 ht-degree: 0%
 
 ---
-
 
 # Kosten beheren{#controlling-costs}
 
