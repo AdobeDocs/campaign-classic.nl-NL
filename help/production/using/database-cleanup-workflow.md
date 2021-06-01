@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Workflow voor opschonen van databases
+title: Workflow voor het opschonen van databases
 description: Leer hoe verouderde gegevens automatisch worden opgeschoond
 audience: production
 content-type: reference
 topic-tags: data-processing
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2910'
 ht-degree: 0%
 
 ---
 
-
-# Workflow voor opschonen van databases{#database-cleanup-workflow}
+# Workflow voor het opschonen van databases{#database-cleanup-workflow}
 
 ## Inleiding {#introduction}
 
