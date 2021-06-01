@@ -1,18 +1,16 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Informatie over Adobe Experience Cloud-triggers
 description: Aan de slag met Adobe Experience Cloud Triggers-implementatie
 audience: integrations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
+exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 16%
 
 ---
-
 
 # Aan de slag met Adobe Experience Cloud Triggers{#about-adobe-experience-triggers}
 
