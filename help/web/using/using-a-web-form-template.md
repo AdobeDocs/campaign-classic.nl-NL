@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een webformuliersjabloon gebruiken
 description: Een webformuliersjabloon gebruiken
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: 0cbb8e4c-8cb4-4dd7-ad09-b8b3165c19a8
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
-
 
 # Een webformuliersjabloon gebruiken{#using-a-web-form-template}
 
