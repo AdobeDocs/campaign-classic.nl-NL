@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Verklarende woordenlijst
 description: Verklarende woordenlijst
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1094'
 ht-degree: 0%
 
 ---
-
 
 # Verklarende woordenlijst{#glossary}
 
@@ -78,4 +76,3 @@ Hieronder vindt u de definitie van de belangrijkste interactieelementen.
 * **Vooraf gedefinieerde filters**: De vooraf bepaalde het filtreren regels kunnen aanbiedingsparameters (bijvoorbeeld, een aanbiedingscode) in aanmerking nemen. Ze kunnen opnieuw worden gebruikt nadat voorstellen zijn gemaakt.
 * **Voorstelling**: informatie die door het kanaal wordt gebruikt om de aanbieding te tonen. De aanbiedingsvertegenwoordiging kan van de teruggevende functie van de ruimte worden geconstrueerd waarop de aanbieding wordt vertegenwoordigd of direct in de interface (bijvoorbeeld, in het blok van HTML) ingegaan. Een aanbieding kan door de ruimte worden vertegenwoordigd.
 * **Wijzigingsproces**: een geactiveerd proces in een geïdentificeerd milieu, verantwoordelijk voor het leiden van de vraag aan een anoniem milieu als het contact niet uitdrukkelijk en/of impliciet geïdentificeerd is.
-
