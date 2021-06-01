@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een webapplicatie ontwerpen
 description: Een webapplicatie ontwerpen
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '361'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-
-# Een webtoepassing ontwerpen{#designing-a-web-application}
+# Een webapplicatie ontwerpen{#designing-a-web-application}
 
 Webtoepassingen worden volgens hetzelfde principe gemaakt en beheerd als [online enquêtes](../../web/using/about-surveys.md).
 
