@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Beheer
 description: Beheer
 audience: production
 content-type: reference
 topic-tags: production-procedures
-translation-type: tm+mt
-source-git-commit: 9c78d8f469bade41717eb854e8cec00859c1d4e3
+exl-id: 12a255fe-66f9-40ce-b19e-c24322c2e009
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 1%
 
 ---
-
 
 # Beheer{#administration}
 
@@ -80,14 +78,19 @@ Hier volgt een lijst met de gebruikelijke beheeropdrachten die in Linux toeganke
    >* In het geval van een noodsituatie, gebruik **-direct** optie om een directe stilstand aan het proces (gelijkwaardig aan het bevel van Unix **te dwingen - 9**).
    >* Gebruik de optie **-noconsole** om ervoor te zorgen dat de gestarte module niets op de console zal tonen. Zijn logboeken zullen aan de schijf via **syslogd** module worden geschreven.
    >* Gebruik de optie **-verbose** om aanvullende informatie over proceshandelingen weer te geven.
-   >
-   >   Voorbeeld:
-   >
-   >   **webbreedbeeldscherm opnieuw starten**
-   >
-   >   **nlserver start mta@myinstance -verbose**
-   >
-   >   Met deze optie voegt u aanvullende logbestanden toe. We raden u aan om de processen opnieuw te starten zonder de optie **-verbose** als u de gewenste informatie hebt gevonden, om overbelasting van logbestanden te voorkomen.
+
+      >
+      >   
+      Voorbeeld:
+      >
+      >   
+      **webbreedbeeldscherm opnieuw starten**
+      >
+      >   
+      **nlserver start mta@myinstance -verbose**
+      >
+      >   
+      Met deze optie voegt u aanvullende logbestanden toe. We raden u aan om de processen opnieuw te starten zonder de optie **-verbose** als u de gewenste informatie hebt gevonden, om overbelasting van logbestanden te voorkomen.
 
 
 * Start alle Adobe Campaign-processen op (gelijk aan het starten van de **nlserver6**-service):
@@ -105,4 +108,3 @@ Hier volgt een lijst met de gebruikelijke beheeropdrachten die in Linux toeganke
    >[!NOTE]
    >
    >Sommige configuratieveranderingen worden niet dynamisch in aanmerking genomen; Adobe Campaign moet worden afgesloten en opnieuw worden opgestart.
-
