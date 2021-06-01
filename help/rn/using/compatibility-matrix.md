@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Compatibiliteitsmatrix voor Campaign Classic
 description: Campaign Classic-compatibiliteitsmatrix
@@ -7,8 +6,8 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 69f6fcd21b27f095781bca4a62153086382f3d7f
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 100%
 
@@ -201,9 +200,9 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <tr>
 <td>Oracle</td>
 <td>
-<p>19c</p>
-<p>18c</p>
-<p>12c</p>
+<p>19 quater</p>
+<p>18 quater</p>
+<p>12 quater</p>
 <p>11g</p>
 </td>
 </tr>
@@ -213,9 +212,9 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <p>12.x</p>
 <p>11.x</p>
 <p>10.x</p>
-<p>9.6.x</p>
-<p>9.5.x</p>
-<p>9.4.x</p>
+<p>9,6 x</p>
+<p>9,5 x</p>
+<p>9,4 x</p>
 </td>
 </tr>
 <tr><td>SQL Server</td>
