@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een nieuw rapport maken
 description: Leer belangrijke stappen om een nieuw rapport te creëren
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# Nieuw rapport maken{#creating-a-new-report}
+# Een nieuw rapport maken{#creating-a-new-report}
 
 Voer de volgende stappen uit om een rapport te maken:
 
