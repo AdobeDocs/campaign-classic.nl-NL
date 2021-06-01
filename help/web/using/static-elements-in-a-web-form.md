@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Statische elementen in een webformulier
 description: Statische elementen in een webformulier
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
+exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 4%
 
 ---
-
 
 # Statische elementen in een webformulier{#static-elements-in-a-web-form}
 
@@ -111,7 +109,7 @@ U kunt andere acties voor de koppeling definiëren, zodat de gebruiker op de kop
    >
    >Voor meer op pagina die in een vorm van het Web in volgorde plaatsen, verwijs naar [het bepalen van Web form pagina het rangschikken](../../web/using/defining-web-forms-page-sequencing.md).
 
-* Velden van het formulier vooraf laden met gegevens uit het Facebook-profiel
+* De velden van het formulier vooraf laden met gegevens uit het Facebook-profiel
 
    >[!CAUTION]
    >
@@ -121,7 +119,7 @@ U kunt andere acties voor de koppeling definiëren, zodat de gebruiker op de kop
 
    ![](assets/web_social_webapp_037.png)
 
-   Wanneer een gebruiker op de knop **[!UICONTROL Fill in automatically]** klikt, wordt het venster met bevoegdheden op Facebook geopend.
+   Wanneer een gebruiker op de knop **[!UICONTROL Fill in automatically]** klikt, wordt het Facebook-aanvraagvenster voor machtigingen geopend.
 
    ![](assets/web_social_webapp_029.png)
 
