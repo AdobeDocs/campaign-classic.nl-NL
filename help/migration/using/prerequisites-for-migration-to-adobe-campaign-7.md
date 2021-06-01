@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Vereisten voor migratie naar Adobe Campaign 7
 description: Vereisten voor migratie naar Adobe Campaign 7
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 747d8a2c-b13a-4852-a9b5-0d37b236a36f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 22%
 
 ---
-
 
 # Vereisten voor migratie naar Adobe Campaign 7{#prerequisites-for-migration-to-adobe-campaign}
 
