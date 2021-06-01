@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Privacy
 description: Klik hier als je meer wilt weten over de beste praktijken op het gebied van privacy.
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+exl-id: 0a3473bf-0528-486d-a799-8db86fece522
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
-
 
 # Privacy {#privacy}
 
@@ -57,7 +55,7 @@ Om de veiligheid te verbeteren, is een nieuw handtekeningmechanisme voor het vol
 >
 >Wanneer op een onjuist ondertekende URL wordt geklikt, wordt de volgende fout geretourneerd: &quot;Aangevraagde URL &#39;...&#39; is niet gevonden.&quot;
 
-Bovendien kunnen gehoste en hybride klanten met de startversie van Campagne 20.2 en [!DNL Gold Standard] een verbetering gebruiken om URL&#39;s uit eerdere builds uit te schakelen. Deze optie is standaard uitgeschakeld. U kunt [Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) bereiken om deze functie in te schakelen.
+Bovendien kunnen gehoste en hybride klanten met de startversie van Campagne 20.2 en [!DNL Gold Standard] een verbetering gebruiken om URL&#39;s uit eerdere builds uit te schakelen. Deze optie is standaard uitgeschakeld. U kunt [Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) bereiken om deze functie in te schakelen.
 
 Om dit nieuwe mechanisme te activeren, moeten on-premise klanten deze stappen op alle servers van de Campagne volgen:
 
