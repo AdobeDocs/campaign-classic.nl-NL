@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Power Booster en Power Cluster
 description: Power Booster en Power Cluster
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 59364cfc-9917-4057-ad5f-fbca7e261b07
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 6%
 
 ---
-
 
 # Power Booster en Power Cluster{#power-booster-and-power-cluster}
 
@@ -87,4 +85,3 @@ De opties voor Power Booster en Power Cluster kunnen door de volgende toepassing
 * Een uitvoeringsinstantie moet aan de dienst worden gewijd. U kunt geen pakket installeren voor een service waarop u zich niet hebt geabonneerd. Als u zich bijvoorbeeld abonneert op de optie **Power Booster** voor de service **Message Center**, mag u het **[!UICONTROL Execution of transactional messages]**-pakket alleen op de toegewezen uitvoeringsinstantie installeren. Controleer hiervoor uw licentieovereenkomst.
 * Aangezien specifieke instanties (of clusters) Adobe Campaign-instanties zijn, zijn de aanbevelingen hetzelfde als voor een hoofdinstantie. Raadpleeg [dit document](../../production/using/foreword.md) voor meer informatie hierover.
 * Neem contact op met Adobe Campaign Professional Services om de instantie correct te configureren vanuit het gezichtspunt van database-/hardwarecomponenten.
-
