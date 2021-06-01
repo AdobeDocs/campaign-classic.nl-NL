@@ -2,26 +2,29 @@
 solution: Campaign Classic
 product: campaign
 title: Verwerkingstijd van het Berichtencentrum
-description: Verwerkingstijd van het Berichtencentrum
+description: Meer weten over het rapport Verwerkingstijd van Message Center?
 audience: message-center
 content-type: reference
 topic-tags: reports
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: c797fd94-0c8d-480b-b22a-1489ac331e77
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 5%
+source-wordcount: '217'
+ht-degree: 3%
 
 ---
 
+# Verwerkingstijd van het Berichtencentrum {#message-center-processing-time}
 
-# Verwerkingstijd van het Berichtencentrum{#message-center-processing-time}
+Dit rapport geeft de belangrijkste indicatoren weer die betrekking hebben op de real-time wachtrij.
 
-Dit rapport geeft de belangrijkste indicatoren weer die betrekking hebben op de real-time wachtrij. Dit rapport, gericht op technische beheerders, kan ook via het **[!UICONTROL Monitoring]** lusje in de controleinstantie worden betreden.
+Dit rapport, gericht op technische beheerders, kan ook via het **[!UICONTROL Monitoring]** lusje op de controleinstantie worden betreden.
 
 ![](assets/mc_reports_2.png)
 
-Enkel zoals voor het **[!UICONTROL Message Center service level]** rapport, kunt u verkiezen om de algemene statistieken of die met betrekking tot een bepaalde uitvoeringsinstantie te tonen. U kunt de gegevens ook filteren op kanaal en over een bepaalde periode. De indicatoren die in de **[!UICONTROL Indicators over the period]** sectie worden getoond worden berekend over de geselecteerde periode:
+Enkel zoals voor het **[!UICONTROL Message Center service level]** rapport, kunt u verkiezen om de algemene statistieken of die met betrekking tot een bepaalde uitvoeringsinstantie te tonen. U kunt de gegevens ook filteren op kanaal en over een bepaalde periode.
+
+De indicatoren die in de **[!UICONTROL Indicators over the period]** sectie worden getoond worden berekend over de geselecteerde periode:
 
 * **[!UICONTROL Average queuing time]** : de gemiddelde tijd die met succes gebeurtenissen gebruikte in het Centrum van het Bericht verwerkte. Alleen de verwerkingstijd wordt in aanmerking genomen.
 * **[!UICONTROL Average message sending time (s)]** : de gemiddelde tijd die met succes gebeurtenissen gebruikte in het Centrum van het Bericht verwerkte. Alleen de levertijd van de mta wordt in aanmerking genomen.
@@ -32,5 +35,4 @@ Enkel zoals voor het **[!UICONTROL Message Center service level]** rapport, kunt
 
 >[!NOTE]
 >
->De drempelwaarden voor de waarschuwings- (oranje) en waarschuwingsindicator (rood) kunnen worden geconfigureerd in de implementatiewizard van Adobe Campaign. Zie [Monitoringdrempels](../../message-center/using/monitoring-thresholds.md).
-
+>De drempelwaarden voor de waarschuwings- (oranje) en waarschuwingsindicator (rood) kunnen worden geconfigureerd in de implementatiewizard van Adobe Campaign. Zie [Monitoringdrempels](../../message-center/using/additional-configurations.md#monitoring-thresholds).
