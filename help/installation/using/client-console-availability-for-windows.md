@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Beschikbaarheid van clientconsole voor Windows
 description: Beschikbaarheid van clientconsole voor Windows
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
-translation-type: tm+mt
-source-git-commit: 1b02c3870ddc01705f01ea992e734cf0810e003a
+exl-id: 57845eae-1f1a-42f4-b2ba-46d454677ae0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 4%
 
 ---
-
 
 # Beschikbaarheid van clientconsole voor Windows{#client-console-availability-for-windows}
 
@@ -58,4 +56,3 @@ Als de optie is geselecteerd, kunt u deze aanwijzing opnieuw instellen. Alleen s
    ```
 
 1. Verwijder het **confAdvisedUpgrade**-item en sluit de Register-editor.
-
