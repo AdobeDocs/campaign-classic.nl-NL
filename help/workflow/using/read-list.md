@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Lijst lezen
 description: Meer informatie over de activiteit van de workflow in de Leeslijst
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
 
 ---
-
 
 # Lijst lezen{#read-list}
 
@@ -70,4 +68,3 @@ De profielen in **Nieuwe Contacten** omslag moeten door een leveringsactie worde
    ![](assets/s_advuser_list_read_sample_4.png)
 
 1. Selecteer vervolgens het veld dat overeenkomt met het e-mailadres in de twee sets (bron en doel). De kolommen zullen dan worden verbonden en de ontvangers waarvan e-mailadres in de lijst van ingevoerde adressen is zullen van het doel worden uitgesloten.
-
