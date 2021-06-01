@@ -1,25 +1,24 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Beschrijving van de gebeurtenis Berichtencentrum
-description: Meer informatie over een gebeurtenis over een transactie
+title: Beschrijving van gebeurtenis
+description: Leer hoe de transactionele overseinengebeurtenissen in Adobe Campaign Classic gebruikend de methodes van de ZEEP worden beheerd.
 audience: message-center
 content-type: reference
 topic-tags: introduction
-translation-type: tm+mt
-source-git-commit: 3a9c435a6469f291c4ecdb30eceb83c4f000f5e0
+exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '751'
 ht-degree: 0%
 
 ---
 
+# Beschrijving van gebeurtenis {#event-description}
 
-# Beschrijving van gebeurtenis{#event-description}
+## Transactioneel gegevensmodel voor berichtenverkeer {#about-transactional-messaging-datamodel}
 
-## Over het gegevensmodel voor transactieberichten {#about-transactional-messaging-datamodel}
-
-Transactioneel overseinen baseert zich op het de gegevensmodel van Adobe Campaign, en gebruikt twee extra afzonderlijke lijsten. Deze [tabellen](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** en **NmsBatchEvent** bevatten dezelfde velden en u kunt realtime-gebeurtenissen aan de ene kant beheren en gebeurtenissen in batch aan de andere kant.
+Transactioneel overseinen baseert zich op het de gegevensmodel van Adobe Campaign, en gebruikt twee extra afzonderlijke lijsten. Deze [tabellen](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** en **NmsBatchEvent** bevatten dezelfde velden en u kunt realtime-gebeurtenissen aan de ene kant beheren, en batch-gebeurtenissen aan de andere kant.
 
 ## SOAP-methoden {#soap-methods}
 
@@ -228,4 +227,3 @@ Als de gebeurtenis echter niet kan worden verwerkt, retourneert de methode een f
       </SOAP-ENV:Body>
    </SOAP-ENV:Envelope>
    ```
-
