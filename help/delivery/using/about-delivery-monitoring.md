@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Aan de slag met leveringscontrole
+title: Aan de slag met verzendingscontrole
 description: Meer weten over de mogelijkheden voor het controleren van de levering van Campaign Classic?
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
-source-git-commit: bc35a95d7deed1f0fd432ef8639f307ecf4d8e1f
+exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 14%
+ht-degree: 16%
 
 ---
 
-
-# Aan de slag met leveringscontrole {#about-delivery-monitoring}
+# Aan de slag met verzendingscontrole {#about-delivery-monitoring}
 
 Het controleren van uw leveringen nadat deze zijn verzonden, is een belangrijke stap om ervoor te zorgen dat uw marketingcampagnes efficiënt zijn en uw klanten bereiken.
 
@@ -43,7 +41,7 @@ Er moeten verschillende richtlijnen worden gevolgd om ervoor te zorgen dat uw le
 
 <img src="assets/do-not-localize/icon_failure.svg" width="60px">
 
-**Uitvoeren van fouten begrijpen**
+**Verzendingsfouten begrijpen**
 
 Wanneer een bericht niet naar een profiel kan worden verzonden, verzendt de externe server automatisch een foutbericht dat door het Adobe Campaign-platform wordt opgehaald en dat is gekwalificeerd om te bepalen of het e-mailadres of telefoonnummer al dan niet in quarantaine moet worden geplaatst.
 
@@ -51,7 +49,7 @@ Wanneer een bericht niet naar een profiel kan worden verzonden, verzendt de exte
 
 <img src="assets/do-not-localize/icon_quarantine.svg" width="60px">
 
-**quarantainebeheer begrijpen**
+**Quarantainebeheer begrijpen**
 
 Adobe Campaign beheert een lijst met in quarantaine geplaatste adressen. Ontvangers van wie het adres in quarantaine is geplaatst, worden standaard tijdens de leveringsanalyse uitgesloten, en zullen niet doelgericht worden benaderd.
 
