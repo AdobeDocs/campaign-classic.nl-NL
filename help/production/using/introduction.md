@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Inleiding
 description: Inleiding
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+exl-id: 3e39a0d2-ff7e-4233-82bb-2b360f696a33
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 1%
 
 ---
-
 
 # Inleiding{#introduction}
 
@@ -50,4 +48,3 @@ Als de nieuwe versie een wijziging van de gegevensbestandstructuur impliceert, a
 1. Toepassingsserver (internet op de server),
 1. Redirection server (webmdl),
 1. Leveringsserver (nlserver mta).
-
