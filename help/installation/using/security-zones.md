@@ -7,8 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-translation-type: tm+mt
-source-git-commit: e31d386af4def80cdf258457fc74205b1ca823b3
+source-git-commit: 54d503e97a4374927c4ebe3ba4e0ec05e51d47db
 workflow-type: tm+mt
 source-wordcount: '1462'
 ht-degree: 0%
@@ -98,7 +97,7 @@ Alle rechten die een zone definiëren, zijn als volgt:
 >
 >In een streekdefinitie, vermindert elk attribuut met **true** waarde veiligheid.
 
-Wanneer het gebruiken van het Centrum van het Bericht, als er verscheidene uitvoeringsinstanties zijn, moet u een extra veiligheidsstreek met **sessionTokenOnly** attributen tot stand brengen die als **true** worden bepaald, waar slechts de noodzakelijke IP adressen moeten worden toegevoegd. Raadpleeg [dit document](../../message-center/using/creating-a-shared-connection.md) voor meer informatie over het configureren van instanties.
+Wanneer het gebruiken van het Centrum van het Bericht, als er verscheidene uitvoeringsinstanties zijn, moet u een extra veiligheidsstreek met **sessionTokenOnly** attributen tot stand brengen die als **true** worden bepaald, waar slechts de noodzakelijke IP adressen moeten worden toegevoegd. Raadpleeg [dit document](../../message-center/using/configuring-instances.md) voor meer informatie over het configureren van instanties.
 
 ## Aanbevolen procedures voor beveiligingszones {#best-practices-for-security-zones}
 
