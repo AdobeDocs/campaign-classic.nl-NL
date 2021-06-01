@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een filter maken
 description: Leer hoe u een filter maakt bij het uitvoeren van query's
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 2%
 
 ---
-
 
 # Een filter maken {#creating-a-filter}
 
