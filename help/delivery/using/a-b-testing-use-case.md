@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Over dit gebruiksgeval
+title: Over dit gebruiksscenario
 description: Leer hoe u een A/B-test uitvoert met een speciale praktijkcase.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
-source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
+exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '244'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
-
-# Over dit gebruiksgeval {#about-use-case}
+# Over dit gebruiksscenario {#about-use-case}
 
 In dit geval gaan we twee inhoud van de e-maillevering vergelijken via een doelworkflow. Het bericht en de tekst zijn identiek in beide leveringen: alleen de layout wordt gewijzigd.
 
