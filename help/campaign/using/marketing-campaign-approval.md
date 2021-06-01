@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Marketing-campagnes goedkeuren
 description: Leer hoe u goedkeuringen van marketingcampagnes beheert
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
-source-git-commit: 67364f80ddc51d4792e73bbf39d388bdf4297005
+exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2434'
 ht-degree: 0%
 
 ---
 
-
-# Goedkeuringsproces instellen en beheren {#approving-marketing-campaigns}
+# Het goedkeuringsproces instellen en beheren {#approving-marketing-campaigns}
 
 Elke leveringsstap kan worden goedgekeurd om volledige controle en controle op de verschillende processen van de campagne te waarborgen: het richten, inhoud, begroting, extractie, en het verzenden van een bewijs.
 
