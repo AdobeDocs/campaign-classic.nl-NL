@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Stappen om een query te maken
 description: Stappen om een query te maken
 audience: platform
 content-type: reference
 topic-tags: creating-queries
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 2%
 
 ---
-
 
 # Stappen om een query te maken{#steps-to-create-a-query}
 
@@ -138,4 +136,3 @@ In dit voorbeeld worden gegevens in oplopende volgorde gesorteerd op basis van d
 >[!NOTE]
 >
 >Standaard worden alleen de eerste 200 regels weergegeven in het venster **[!UICONTROL Data preview]**. Om dit te veranderen, ga een aantal in **[!UICONTROL Lines to display]** doos in en klik **[!UICONTROL Start the preview of the data]**.
-
