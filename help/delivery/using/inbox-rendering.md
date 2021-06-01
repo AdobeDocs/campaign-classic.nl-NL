@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Inbox rendering in campagne
 description: Leer hoe u e-mailweergaven vastlegt en beschikbaar maakt in een speciaal rapport
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a3294e70-ac96-4e51-865f-b969624528ce
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 8%
 
 ---
-
 
 # Inboxrendering{#inbox-rendering}
 
@@ -84,6 +82,7 @@ Telkens wanneer u de functie **[!UICONTROL Inbox rendering]** in een levering ge
 >
 >* Telkens als het Inbox teruggevende rapport wordt geproduceerd, wordt één teken per overseinencliënt afgetrokken: één token voor de rendering van Outlook 2000, één token voor de rendering van Outlook 2010, één token voor de rendering van Apple Mail 9, enzovoort.
 >* Als u voor dezelfde levering de rendering Inbox opnieuw genereert, wordt het aantal beschikbare tokens opnieuw verminderd met het aantal gegenereerde renderingen.
+
 >
 
 
@@ -117,7 +116,7 @@ Raadpleeg [deze sectie](../../delivery/using/about-email-channel.md) voor meer i
 
    Het renderrapport Inbox wordt weergegeven.
 
-## Rapportvoor renderen in vak {#inbox-rendering-report}
+## Rapport {#inbox-rendering-report} voor renderen in vak
 
 In dit rapport worden de inbox-weergaven weergegeven zoals deze aan de ontvanger worden weergegeven. De renderingen kunnen afwijken, afhankelijk van de manier waarop de ontvanger de e-maillevering opent: in een browser, op een mobiel apparaat of via een e-mailtoepassing.
 
