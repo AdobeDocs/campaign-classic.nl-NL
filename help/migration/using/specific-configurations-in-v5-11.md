@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Specifieke configuraties in v5.11
 description: Specifieke configuraties in v5.11
 audience: migration
 content-type: reference
 topic-tags: configuration
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 978e1249-f79b-4f5f-9a94-3bb2510785de
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 3%
 
 ---
-
 
 # Specifieke configuraties in v5.11{#specific-configurations-in-v5-11}
 
@@ -114,7 +112,7 @@ Er is een optie toegevoegd voor het uitschakelen van de automatische migratie va
 
 * Interne naam: NlMigration_KeepFolderStructure
 * Gegevenstype: Geheel
-* Waarde (tekst): 1
+* Waarde (tekst): 3
 
 Als u deze optie gebruikt, moet u na de migratie verouderde mappen verwijderen, de nieuwe mappen toevoegen en alle vereiste controles uitvoeren.
 
@@ -122,7 +120,7 @@ Als u deze optie gebruikt, moet u na de migratie verouderde mappen verwijderen, 
 
 De volgende mappen moeten na de migratie worden toegevoegd:
 
-| Interne naam | Label | Condition |
+| Interne naam | Label | Voorwaarde |
 |---|---|---|
 | nmsAutoObjects | Automatisch gemaakte objecten | - |
 | nmsCampaignAdmin | Campagnebeheer | - |
@@ -156,11 +154,10 @@ De verouderde mappen die na de migratie moeten worden verwijderd, zijn als volgt
 | ncmJavascript | JavaScript-codes | Inhoudsbeheer geïnstalleerd |
 | ncmJst | JavaScript-sjablonen | Inhoudsbeheer geïnstalleerd |
 | ncmParameters | Configuratie | Inhoudsbeheer geïnstalleerd |
-| ncmSrcSchema | Dataschema’s | Inhoudsbeheer geïnstalleerd |
+| ncmSrcSchema | Gegevensschema’s | Inhoudsbeheer geïnstalleerd |
 | ncmStylesheet | XSL-stijlbestanden | Inhoudsbeheer geïnstalleerd |
 | nmsAdminPlan | Beheer | Campagne geïnstalleerd |
 | nmsResourcePlan | Bronnen | Campagne geïnstalleerd |
 | nmsResourcesModels | Sjablonen | Campagne geïnstalleerd |
 | nmsRootPlan | Campagnebeheer | Campagne geïnstalleerd |
 | nmsOperator | Marketing operators | MRM geïnstalleerd |
-
