@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Best practices voor rapportage
 description: Campagne die beste praktijken meldt
 audience: reporting
 content-type: reference
 topic-tags: reporting-in-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 0%
 
 ---
-
 
 # Beste werkwijzen rapporteren{#best-practices-reporting}
 
@@ -80,7 +78,7 @@ We raden ook aan &#39;s nachts aggregaten te berekenen en deze geaggregeerde geg
 
 U kunt ook &#39;s nachts rapporten berekenen en automatisch een geschiedenis maken die op elk moment kan worden weergegeven zonder de database te overladen.
 
-### Vragen {#queries}
+### Zoekopdrachten {#queries}
 
 We raden u aan om waar mogelijk SQL-query&#39;s te gebruiken en JavaScript-naverwerking te vermijden. Gebruik indien nodig een scriptactiviteit in een workflow en verwijder de gegevens die voor de berekening worden gebruikt. U kunt gearchiveerde gegevens ook gebruiken om de verwerkingstijd te versnellen.
 
