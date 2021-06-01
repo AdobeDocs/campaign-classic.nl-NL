@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Algemene vragen
 description: Adobe Campaign Classic- Veelgestelde vragen
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 97%
 
 ---
-
 
 # Algemene vragen{#common-questions}
 
@@ -75,4 +73,3 @@ Een subdomein is een afdeling van uw domein dat kan worden gebruikt om uw merken
 Adobe houdt rekening met het DNS (Domain Name System) voor e-maillevering, dat een klant toestaat om zijn merkimago te behouden door een DNS-alias met zijn domeinnamen te gebruiken, en Adobe om autonoom alle technische best practices uit te voeren die het toestaan om de leverbaarheid tijdens het e-mailen te optimaliseren.
 
 [Klik hier voor meer informatie](https://helpx.adobe.com/nl/campaign/kb/domain-name-delegation.html).
-
