@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Gebruiksscenario’s voor workflows
 description: Lees meer over gebruiksgevallen die u kunt uitvoeren met Campaign Classic-workflows.
@@ -8,14 +7,13 @@ content-type: reference
 topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
-translation-type: tm+mt
-source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
+exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 68%
 
 ---
-
 
 # Gebruiksscenario’s voor workflows {#about-workflow-use-cases}
 
@@ -31,7 +29,7 @@ Ze helpen u de verschillende contexten te ontdekken waarin workflows kunnen word
 * [A/B-tests](../../delivery/using/a-b-testing-use-case.md)
 * [Een verjaardags-e-mail verzenden](../../workflow/using/sending-a-birthday-email.md)
 * [Leveringscontent laden](../../workflow/using/loading-delivery-content.md)
-* [Workflow voor levering tussen kanalen](../../workflow/using/cross-channel-delivery-workflow.md)
+* [Cross-channel leveringsworkflow](../../workflow/using/cross-channel-delivery-workflow.md)
 * [E-mailverrijking met aangepaste datumvelden](../../workflow/using/email-enrichment-with-custom-date-fields.md)
 * [Het maken, bewerken en publiceren van content automatiseren](../../delivery/using/automating-via-workflows.md#examples)
 
