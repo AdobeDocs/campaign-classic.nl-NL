@@ -170,7 +170,7 @@ De mogelijke redenen van een leveringsfout zijn:
   <tr> 
    <td> Gebruiker onbekend </td> 
    <td> Hard </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> Het adres bestaat niet. Voor dit profiel worden geen verdere leveringen uitgevoerd.<br /> </td> 
   </tr> 
  </tbody> 
