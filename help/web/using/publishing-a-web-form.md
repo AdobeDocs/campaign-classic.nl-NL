@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een webformulier publiceren
 description: Een webformulier publiceren
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
+exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 2%
 
 ---
-
 
 # Een webformulier publiceren{#publishing-a-web-form}
 
@@ -160,4 +158,3 @@ U kunt de antwoordlogboeken verwerken die in vragen worden verstrekt, bijvoorbee
 >[!NOTE]
 >
 >Voor een volledig volgen van de verstrekte reacties, voer de reacties uit en bekijk of creeer specifieke rapporten, gebruik de facultatieve **Enquête** module. Raadpleeg [deze sectie](../../web/using/about-surveys.md) voor meer informatie.
-
