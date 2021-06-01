@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een webapplicatie opvolgen
 description: Een webapplicatie opvolgen
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-
-# Bezoekingen bijhouden in een webtoepassing{#tracking-a-web-application}
+# Bezoeken aan een webapplicatie bijhouden{#tracking-a-web-application}
 
 Met Adobe Campaign kunt u bezoeken op webtoepassingspagina&#39;s bijhouden en meten door trackingtags in te voegen. Deze functionaliteit kan voor alle toepassingstypen van het Web (vormen, online onderzoeken, Web-pagina&#39;s worden gebruikt die gebruikend DCE worden gecreeerd, etc.).
 
@@ -74,4 +72,3 @@ Wanneer het gebruiken van de interface van het Web, moet het volgen markeringen 
 Met het pictogram **[!UICONTROL Display blocks]** kunt u het aantal trackinglabels weergeven dat voor de pagina is gedefinieerd.
 
 ![](assets/trackers_4.png)
-
