@@ -131,7 +131,7 @@ Deze elementen worden bepaald wanneer het vormen van de grafiek.
 * Het veld **[!UICONTROL Goal]** vertegenwoordigt de maximale waarde die moet worden bereikt.
 * Met het veld **[!UICONTROL Other mark]** kunt u een tweede indicator aan het diagram toevoegen.
 * In de velden **[!UICONTROL Display range]** kunt u de waarden opgeven waartussen het rapport wordt berekend.
-* In het veld **[!UICONTROL Value ranges]** kunt u statussen (Geen, Slecht, Acceptabel, Goed) toewijzen aan een set waarden om de voortgang beter te kunnen illustreren.
+* In het veld **[!UICONTROL Value ranges]** kunt u statussen (Geen, Slecht, Aanvaardbaar, Goed) toewijzen aan een set waarden om de voortgang beter te illustreren.
 
 In **[!UICONTROL Display settings]** sectie, **[!UICONTROL Change appearance...]** laat u vormen de manier de grafiek wordt getoond.
 
