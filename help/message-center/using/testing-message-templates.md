@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 2%
@@ -57,13 +57,13 @@ Zodra de adressen worden gecreeerd, kunt u hun voorproef en verpersoonlijking to
 
 ## Personalisatiegegevens {#personalization-data}
 
-Het is mogelijk om gegevens in het berichtmalplaatje te gebruiken om transactionele berichtverpersoonlijking te testen. Deze functie wordt gebruikt om een voorvertoning te genereren of een proefdruk te verzenden. U kunt de weergave van het bericht ook weergeven voor verschillende providers van internettoegang. Zie [inbox rendering](../../delivery/using/inbox-rendering.md) voor meer informatie.
+Het is mogelijk om gegevens in het berichtmalplaatje te gebruiken om transactionele berichtverpersoonlijking te testen. Deze functie wordt gebruikt om een voorvertoning te genereren of een proefdruk te verzenden. U kunt de weergave van het bericht ook weergeven voor verschillende providers van internettoegang. Zie [Inbox rendering](../../delivery/using/inbox-rendering.md) voor meer informatie.
 
 Het doel van deze gegevens is om uw berichten vóór hun definitieve levering te testen. Deze berichten komen niet overeen met de werkelijk te verwerken gegevens. De XML-structuur moet echter gelijk zijn aan die van de gebeurtenis die in de uitvoeringsinstantie is opgeslagen, zoals hieronder wordt getoond:
 
 ![](assets/messagecenter_create_custo_006.png)
 
-Deze informatie laat u toe om berichtinhoud te personaliseren gebruikend verpersoonlijkingsmarkeringen (voor meer op dit, zie [het Creëren van de berichtinhoud](../../message-center/using/creating-the-message-template.md#creating-message-content)).
+Deze informatie laat u toe om berichtinhoud te personaliseren gebruikend verpersoonlijkingsmarkeringen (voor meer op dit, zie [de berichtinhoud](../../message-center/using/creating-the-message-template.md#creating-message-content) creëren).
 
 1. Selecteer het transactiemalplaatje van het bericht.
 
@@ -91,7 +91,7 @@ Zodra u één of meerdere zaadadressen en het berichtlichaam hebt gecreeerd, kun
 
    ![](assets/messagecenter_create_seedaddr_009.png)
 
-Met zaadadressen kunt u ook de weergave van het bericht voor verschillende internettoegangsproviders weergeven. Zie [inbox rendering](../../delivery/using/inbox-rendering.md) voor meer informatie.
+Met zaadadressen kunt u ook de weergave van het bericht voor verschillende internettoegangsproviders weergeven. Zie [Inbox rendering](../../delivery/using/inbox-rendering.md) voor meer informatie.
 
 ## Een proef verzenden {#sending-a-proof}
 
