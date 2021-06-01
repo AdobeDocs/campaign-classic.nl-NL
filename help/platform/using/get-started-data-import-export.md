@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Aan de slag met het importeren en exporteren van data
+title: Aan de slag met gegevens importeren en exporteren
 description: Meer informatie over het importeren en exporteren van gegevens in Campaign Classic.
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: d6055d97-75fc-4ed7-89bd-8336157454eb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 12%
 
 ---
 
-
-# Aan de slag met het importeren en exporteren van data {#get-started-data-import-export}
+# Aan de slag met gegevens importeren en exporteren {#get-started-data-import-export}
 
 Adobe Campaign Classic biedt mogelijkheden voor gegevensbeheer waarmee u gegevens kunt importeren en exporteren. Deze bewerkingen kunnen worden uitgevoerd met behulp van workflows of generieke import en export.
 
