@@ -2,20 +2,19 @@
 solution: Campaign Classic
 product: campaign
 title: Geschiedenis van gebeurtenissen in het Berichtencentrum
-description: Geschiedenis van gebeurtenissen in het Berichtencentrum
+description: Meer informatie over het rapport Historie van Message Center-gebeurtenissen.
 audience: message-center
 content-type: reference
 topic-tags: reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 04d4791b-a1dd-4361-a469-6f5aff0f41b8
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 11%
+source-wordcount: '140'
+ht-degree: 7%
 
 ---
 
-
-# Geschiedenis van gebeurtenissen in het Berichtencentrum{#history-of-message-center-events}
+# Geschiedenis van gebeurtenissen in het Berichtencentrum {#history-of-message-center-events}
 
 Het **[!UICONTROL History of Message Center events]** rapport voorziet u van een overzicht van de activiteit van het Centrum van het Bericht, d.w.z. het aantal gebeurtenissen die als transactionele berichten worden verwerkt en geleverd.
 
