@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Hypotheses traceren
-description: Hypotheses traceren
+title: Tracking van hypothesen
+description: Tracking van hypothesen
 audience: campaign
 content-type: reference
 topic-tags: response-manager
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 1%
 
 ---
 
-
-# Hypotheses traceren{#hypothesis-tracking}
+# Tracking van hypothesen{#hypothesis-tracking}
 
 Het resultaat van hypotheseberekeningen is beschikbaar op verschillende niveaus van het Adobe Campaign-platform: De indicatoren berekend op basis van hypothesen en de reacties op de doelpopulaties zijn zichtbaar via de werkelijke hypothese, alsmede in de hypotheseverslagen die beschikbaar zijn via campagnes en leveringen.
 
