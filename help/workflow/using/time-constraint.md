@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Tijdsbeperking
 description: Meer informatie over de workflowactiviteit voor tijdbeperking
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 1dc5de05-4d36-4393-8113-d1f97bb7f732
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 5%
 
 ---
-
 
 # Tijdsbeperking{#time-constraint}
 
@@ -24,4 +22,3 @@ Voer het label voor de activiteit in en geef het tijdkader op waarin de werkstro
 Als de optie **[!UICONTROL Try again later if outside of execution period]** is geselecteerd, kunt u de taak opnieuw starten buiten het uitvoeringstijdkader. Schakel deze optie uit als u wilt dat de workflowactie na de schorsing goed wordt beëindigd.
 
 ![](assets/s_user_scheduled_wait.png)
-
