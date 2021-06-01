@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Aan de slag met bijhouden
 description: Meer weten over de algemene richtlijnen voor bijhouden in Adobe Campaign Classic?
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
-source-git-commit: e52d1963b72593c5dab8ced9e459d25b05044022
+exl-id: 43779505-9917-4e99-af25-b00a9d29a645
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 9%
 
 ---
-
 
 # Aan de slag met bericht bijhouden {#get-started-tracking}
 
@@ -43,7 +41,7 @@ Voor het configureren van tracering moet uw instantie worden gedeclareerd en ger
 
 Zodra het volgen wordt gevormd en uw URLs bevolkt, moet de volgende server worden geregistreerd. [Meer informatie](../../installation/using/deploying-an-instance.md#saving-tracking)
 
-## Berichten bijhouden {#message-tracking}
+## Tracking van berichten {#message-tracking}
 
 <img src="assets/do-not-localize/icon-message-tracking.svg" width="60px">
 
@@ -103,7 +101,7 @@ Dit rapport combineert de belangrijkste indicatoren voor het volgen van het gedr
 
 De verschillende tabellen geven u de lijst van indicatoren die in de verschillende rapporten worden gebruikt en hun berekeningsformule afhankelijk van het leveringstype. [Meer informatie](../../reporting/using/indicator-calculation.md)
 
-## Problemen bijhouden {#tracking-troubleshooting}
+## Problemen met tracking oplossen {#tracking-troubleshooting}
 
 <img src="assets/do-not-localize/icon-troubleshooting.svg" width="60px">
 
