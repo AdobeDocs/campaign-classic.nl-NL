@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: b46a483594f210c4530a934194c6d2b73deaeaf9
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 2%
@@ -85,7 +85,7 @@ Met **Gebeurtenisgeschiedenis** onder **[!UICONTROL Message Center]** > **[!UICO
    * Een gebeurtenis die zojuist is verzameld en nog niet is verwerkt. In de kolom **[!UICONTROL Number of errors]** wordt de waarde 0 weergegeven. De e-mailsjabloon is nog niet gekoppeld.
    * Een gebeurtenis die is verwerkt, maar waarvan de bevestiging onjuist is. In de kolom **[!UICONTROL Number of errors]** wordt een waarde weergegeven die niet 0 is. Als u wilt weten wanneer deze gebeurtenis opnieuw wordt verwerkt, raadpleegt u de kolom **[!UICONTROL Process requested on]**.
 
-* **In afwachting van levering**: De gebeurtenis is verwerkt en de leveringssjabloon is gekoppeld. De e-mail is in afwachting van levering en het klassieke leveringsproces wordt toegepast. Voor meer informatie, kunt u [levering](../../delivery/using/about-message-tracking.md) openen.
+* **In afwachting van levering**: De gebeurtenis is verwerkt en de leveringssjabloon is gekoppeld. De e-mail is in afwachting van levering en het klassieke leveringsproces wordt toegepast. Voor meer informatie kunt u de levering openen.
 * **Verzonden**,  **** genegeerd en  **leveringsfout**: Deze leveringsstatussen worden hersteld via de  **** updateEventsStatus-workflow. Voor meer informatie kunt u de relevante levering openen.
 * **Gebeurtenis niet behandeld**: Het transactionele overseinen die fase verplettert ontbrak. Adobe Campaign heeft bijvoorbeeld het e-mailbericht dat als sjabloon voor de gebeurtenis fungeert, niet gevonden.
 * **Gebeurtenis verlopen**: Het maximumaantal verzendpogingen is bereikt. De gebeurtenis wordt als null beschouwd.
