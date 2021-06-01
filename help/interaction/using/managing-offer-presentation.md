@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Presentatie van aanbieding beheren
 description: Presentatie van aanbieding beheren
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
 
 ---
-
 
 # Presentatie van aanbieding beheren{#managing-offer-presentation}
 
@@ -157,4 +155,3 @@ Als u de voorstellen wilt opgeven die via een query moeten worden geteld, klikt 
 In het volgende voorbeeld zijn de voorstellingen die na twee presentaties moeten worden geteld, die in de categorie **Speciale aanbiedingen** voor de ruimte **Call center**, met een gewicht onder **20**.
 
 ![](assets/offer_typology_013.png)
-
