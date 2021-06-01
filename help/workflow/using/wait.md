@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: De activiteit Wachten
+title: Wachten
 description: Meer informatie over de workflowactiviteit Wachten
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 4872f756-14d7-4e37-a9cf-b929c77e34ca
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 1%
 
 ---
 
-
-# Wait{#wait}
+# Wachten{#wait}
 
 Een **Wacht** activiteit activeert zijn overgang na een tijdvertraging van overal tussen een paar seconden en verscheidene maanden. Een wachttaak blokkeert de uitvoering van andere taken niet; de werkstroom kan taken parallel uitvoeren terwijl deze taak in behandeling is.
 
@@ -32,4 +30,3 @@ In het veld **[!UICONTROL Duration]** kan de waarde worden uitgedrukt in de eenh
 * Als bijvoorbeeld de regionale instellingen worden ingesteld op &quot;Français&quot;: **s** voor seconden, **mn** voor minuten, **h** voor uren, **j** voor dagen, **m** voor maanden, **a** voor jaren. Op het moment van goedkeuring wordt de waarde automatisch omgezet in de meest leesbare eenheid, zoals in het voorbeeld hierboven **90s** werd omgezet in **1mn 30s**.
 
    De standaardeenheid is de dag (**d**).
-
