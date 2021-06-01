@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Campagne SDK integreren
 description: Leer hoe u de campagne-SDK kunt integreren in uw mobiele app
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 0%
 
 ---
-
 
 # Campagne SDK integreren met uw app {#integrating-campaign-sdk-into-the-mobile-application}
 
@@ -21,7 +19,7 @@ Campagne-SDK&#39;s voor iOS en Android zijn een van de onderdelen van de module 
 
 >[!NOTE]
 >
->Neem contact op met de [klantenservice van Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de Campagne SDK (voorheen bekend als Neolane SDK) op te halen.
+>Neem contact op met de [klantenservice van Adobe](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de Campagne SDK (voorheen bekend als Neolane SDK) op te halen.
 
 Het doel van de SDK is de integratie van een mobiele toepassing in het Adobe Campaign-platform te vergemakkelijken.
 
