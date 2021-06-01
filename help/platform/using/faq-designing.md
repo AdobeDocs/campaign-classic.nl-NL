@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Veelgestelde vragen over het ontwerpen van berichten
 description: Veelgestelde vragen over Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 48926e87-03d9-4aa0-89cb-e3fb4f99c1f5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 100%
 
 ---
-
 
 # Veelgestelde vragen over het ontwerpen van berichten {#design-messages-faq}
 
