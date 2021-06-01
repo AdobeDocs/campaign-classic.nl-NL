@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Sjablonen voor marketingcampagnes
 description: Sjablonen voor marketingcampagnes
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 0%
 
 ---
 
-
-# Campagnemasjablonen maken en configureren {#campaign-templates}
+# Campagnesjablonen maken en configureren {#campaign-templates}
 
 Alle marketing campagnes zijn gebaseerd op een malplaatje, dat belangrijkste kenmerken en mogelijkheden opslaat. Campagnemalplaatjes worden gecentraliseerd in de **[!UICONTROL Resources > Templates > Campaign templates]** knoop. Een standaardsjabloon wordt standaard verschaft. U kunt hiermee een nieuwe campagne maken met alle beschikbare modules (Documenten, Taken, zaadadressen, enz.), maar de aangeboden modules zijn afhankelijk van uw rechten en de configuratie van uw Adobe Campaign-platform.
 
