@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Goedkeuring
 description: Goedkeuring
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
 
 ---
-
 
 # Goedkeuring{#approval}
 
@@ -76,4 +74,3 @@ Een goedkeuringsvoorbeeld wordt getoond in [Bepalend goedkeuringen](../../workfl
 * **[!UICONTROL responseOperator]**
 
    Identifier van de operator die heeft gereageerd. Dit veld is een numerieke waarde, maar een veld **[!UICONTROL String]**.
-
