@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Dataschema’s
-description: Dataschema’s
+title: Gegevensschema’s
+description: Gegevensschema’s
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
 
 ---
 
+# Gegevensschema’s{#data-schemas}
 
-# Dataschema’s{#data-schemas}
-
-## Beginselen {#principles}
+## De basis {#principles}
 
 Als u de schema&#39;s wilt bewerken, maken en configureren, klikt u op het knooppunt **[!UICONTROL Administration > Configuration > Data schemas]** van de Adobe Campaign-clientconsole.
 
@@ -121,4 +119,3 @@ Hiervoor moet u het schema van de tabel maken en de databasestructuur bijwerken 
    ![](assets/s_ncs_configuration_structure.png)
 
 1. Werk de databasestructuur bij om de tabel te maken waarnaar het schema wordt gekoppeld. Raadpleeg [De databasestructuur bijwerken](../../configuration/using/updating-the-database-structure.md) voor meer informatie.
-
