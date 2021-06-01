@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Analyserapport van aanbiedingen
 description: Analyserapport van aanbiedingen
 audience: interaction
 content-type: reference
 topic-tags: tracking-offers
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 44c57b0c-3561-4943-812f-945f5fcbb142
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 10%
 
 ---
-
 
 # Analyserapport van aanbiedingen{#offer-analysis-report}
 
@@ -40,4 +38,3 @@ Statistieken worden gesorteerd op basis van drie criteria:
 Gegevens kunnen worden gefilterd op basis van de verschillende criteria die beschikbaar zijn in de bovenste sectie van het rapport. Nadat u de gewenste criteria hebt geselecteerd, klikt u op de koppeling **[!UICONTROL Refresh]** om deze toe te passen op het rapport.
 
 ![](assets/offer_report_criteria.png)
-
