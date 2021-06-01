@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Protocol en instellingen voor sms-connector
 description: Leer meer op de schakelaar van SMS en hoe te om het te vormen.
 audience: delivery
 content-type: reference
 topic-tags: configuring-channels
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+exl-id: fded088a-11a2-4b87-a368-7b197334aca4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '8433'
 ht-degree: 0%
 
 ---
-
 
 # Protocol en instellingen voor sms-connector {#sms-connector-protocol}
 
@@ -148,7 +146,7 @@ Noteerbare velden in een `BIND_* PDU`:
 
 `BIND_*_RESP` heeft geen specifiek veld, wordt bevestigd of de verbinding is gelukt of niet.
 
-#### {#unbind}
+#### ONBINDEN {#unbind}
 
 Deze PDU moet door het systeem worden verzonden alvorens los te maken van. Het moet de passende `UNBIND_RESP` PDU wachten alvorens de verbinding te sluiten.
 
@@ -230,7 +228,7 @@ De standaardconfiguratie 60 seconden moet overeenkomen met de meeste configurati
 
 Deze PDU erkent dat de verbinding levend is.
 
-### Multipart SMS (lange SMS) {#multipart}
+### Multipart SMS (lang SMS) {#multipart}
 
 Multipart SMS, of lange SMS, zijn SMS die in veelvoudige delen worden verzonden. Vanwege technische beperkingen in het mobiele netwerkprotocol kan een SMS niet groter zijn dan 140 bytes of moet het worden gesplitst. Zie [SMS-tekstcodering](../../delivery/using/sms-protocol.md#sms-text-encoding) voor meer informatie over het aantal tekens dat in een SMS kan worden gebruikt.
 
@@ -356,7 +354,7 @@ De maximumgrootte van een bericht hangt van zijn codering af. In deze tabel word
 | Codering | Gebruikelijke gegevens_codering | Berichtgrootte (tekens) | Onderdeelformaat voor SMS met meerdere onderdelen | Beschikbare tekens |
 |:-:|:-:|:-:|:-:|:-:|
 | GSM7 | 0 | 160 | 152 | GSM7 basis tekenset + extensie (uitgebreide tekens nemen 2 tekens in beslag) |
-| Latin-1 | 3 | 140 | 134 | ISO-8859-1 |
+| Latin-1 | 1 | 140 | 134 | ISO-8859-1 |
 | UCS-2 <br>UTF-16 | 8 | 70 | 67 | Unicode (verschilt per telefoon) |
 
 ## SMPP-parameters voor externe account {#SMPP-parameters-external}
@@ -812,7 +810,7 @@ Het proces van SMS controleert volledige lijnen elke minuut, dan verwerkt hen as
 
 Elk kind MTA leidt tot een configureerbare hoeveelheid verbindingen, zo beperkend het aantal kind MTA zal het aantal verbindingen beperken. Omdat de correlatie tussen MTA kindprocessen en verkeer gecorreleerd is, kan dit enigszins gecontroleerd maar nog een beetje onvoorspelbaar zijn.
 
-## Voordat u live {#checklist} gaat
+## Voordat u live gaat {#checklist}
 
 Deze checklist bevat een lijst met dingen die u moet controleren voordat u live gaat. Een onvolledige opstelling kan tot vele kwesties leiden.
 
@@ -825,9 +823,9 @@ Als u meerdere accounts op dezelfde Adobe Campaign-instantie hebt die verbinding
 ### Brede SMPP-sporen inschakelen tijdens controles {#enable-verbose}
 
 U zou uitgebreide sporen SMPP tijdens controles altijd moeten toelaten.
-Zelfs als u de logbestanden niet zelf kunt controleren, is het voor [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) eenvoudiger om u te helpen.
+Zelfs als u de logbestanden niet zelf kunt controleren, is het voor [Adobe Customer Care](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) eenvoudiger om u te helpen.
 
-### Uw SMS {#test} testen
+### Je SMS testen {#test}
 
 * **Verzend SMS met allerlei**
 tekens. Als u SMS met niet-GSM- of niet-ASCII-tekens moet verzenden, probeer dan berichten met zoveel mogelijk verschillende tekens te verzenden. Als u een aangepaste tekentoewijzingstabel instelt, moet u minstens één SMS verzenden voor alles wat mogelijk is 
