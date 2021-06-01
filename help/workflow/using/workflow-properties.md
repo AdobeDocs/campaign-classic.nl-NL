@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Workfloweigenschappen
 description: Meer informatie over de eigenschappen van de Campagneworkflow
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: c7bff902-4f5d-4783-aec4-13561fa7d242
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 1%
 
 ---
-
 
 # Workfloweigenschappen{#workflow-properties}
 
@@ -35,7 +33,7 @@ Deze sectie wordt alleen weergegeven in workflows voor campagnes.
 
    Met deze optie wordt het begin van de workflow uitgesteld tot een minder drukke periode. Sommige workflows kunnen kostbaar zijn in termen van resources voor de database-engine. We raden aan uitvoering te plannen in een tijd van lage activiteit (bijvoorbeeld &#39;s nachts). Lage activiteitsperiodes worden gedefinieerd in de technische workflow **[!UICONTROL Processes on campaigns]**.
 
-### Uitvoering {#execution}
+### Execution {#execution}
 
 * **[!UICONTROL Default affinity]**
 
@@ -83,4 +81,3 @@ Deze sectie wordt alleen weergegeven in workflows voor campagnes.
    Het **[!UICONTROL Notification to a workflow supervisor]** standaardmalplaatje omvat een verbinding voor de toegang tot van de console van Adobe Campaign via het Web zodat de ontvanger aan de kwestie kan werken zodra zij het programma worden geopend.
 
    Ga naar **[!UICONTROL Administration>Campaign management>Technical deliveries and templates]** om een gepersonaliseerde sjabloon te maken.
-
