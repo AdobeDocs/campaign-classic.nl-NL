@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een rapport verwerken
 description: Een rapport verwerken
 audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: d133efec-33e1-4711-a90f-e40385059386
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 2%
 
 ---
-
 
 # Een analyserapport gebruiken{#processing-a-report}
 
@@ -152,4 +150,3 @@ Voer de volgende stappen uit om een historie te maken:
 1. Met de knop Archieftoegang geeft u vorige analyses weer.
 
    ![](assets/reporting_descriptive_historize_access.png)
-
