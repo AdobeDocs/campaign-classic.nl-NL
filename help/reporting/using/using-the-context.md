@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: De context gebruiken
 description: De context gebruiken
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 2%
 
 ---
-
 
 # De context gebruiken{#using-the-context}
 
@@ -88,4 +86,3 @@ De gegevenslocatie wordt automatisch afgeleid. Indien nodig kunt u het gegevensp
 Wanneer u de gegevens selecteert waarop de statistieken betrekking hebben, komen de beschikbare velden overeen met de gegevens die in de query zijn opgegeven.
 
 ![](assets/s_ncs_advuser_report_datasource_1.png)
-
