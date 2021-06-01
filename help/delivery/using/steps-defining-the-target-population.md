@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: De doelpopulatie definiëren
 description: De doelpopulatie definiëren
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
-source-git-commit: 8e0c6951be9d2f9fb0e58af213cb8db4079f2225
+exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 2%
 
 ---
-
 
 # De doelpopulatie definiëren {#defining-the-target-population}
 
@@ -228,7 +226,7 @@ U kunt de definitie van een specifiek proefdrukdoel en het gebruik van zaadadres
 Zie ook:
 
 * [Het proefdrukdoel selecteren](#selecting-the-proof-target)
-* [Seed-adressen](../../delivery/using/about-seed-addresses.md)
+* [Seedadressen](../../delivery/using/about-seed-addresses.md)
 * [Gebruiksscenario: seed-adressen selecteren op criteria](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
 
 ## Video over zelfstudie {#seeds-and-proofs-video}
