@@ -1,20 +1,18 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Adobe Experience Platform-segmenten in campagne plaatsen
 description: Leer hoe u Adobe Experience Platform-publiek inneemt in Campaign Classic.
 audience: integrations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: 9b3254c16eed784846db87d27f9f5de009dafdc3
+exl-id: 6db8a653-b649-402c-8814-24826edadba7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
 
 ---
 
-
-# Adobe Experience Platform-segmenten opnemen in campagne {#destinations}
+# Adobe Experience Platform-segmenten in campagne plaatsen {#destinations}
 
 Als u Adobe Experience Platform wilt opnemen in Campagne en deze wilt gebruiken in uw workflows, moet u eerst Adobe Campaign verbinden als een Adobe Experience Platform **Doel** en deze configureren met het te exporteren segment.
 
