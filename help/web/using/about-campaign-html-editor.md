@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Aan de slag met de HTML-editor voor campagnes
 description: Aan de slag met campagne-DCE
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: tm+mt
-source-git-commit: f6099fa9c8d1df7bc82dd9be0b575ca7f20b6645
+exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
 
 ---
-
 
 # Aan de slag met de HTML-editor voor campagnes{#about-campaign-html-editor}
 
