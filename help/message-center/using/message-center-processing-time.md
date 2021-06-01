@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: c797fd94-0c8d-480b-b22a-1489ac331e77
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 3%
@@ -34,4 +34,4 @@ De indicatoren die in de **[!UICONTROL Indicators over the period]** sectie word
 
 >[!NOTE]
 >
->De drempelwaarden voor de waarschuwings- (oranje) en waarschuwingsindicator (rood) kunnen worden geconfigureerd in de implementatiewizard van Adobe Campaign. Zie [Monitoringdrempels](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+>De drempelwaarden voor de waarschuwings- (oranje) en waarschuwingsindicator (rood) kunnen worden geconfigureerd in de implementatiewizard van Adobe Campaign. Raadpleeg [Monitordrempels](../../message-center/using/additional-configurations.md#monitoring-thresholds).
