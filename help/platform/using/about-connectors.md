@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Connectoren
 description: Connectoren
-feature: Overview
+feature: Overzicht
 role: Business Practitioner, Data Architect
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '198'
 ht-degree: 8%
 
 ---
-
 
 # Aan de slag met connectors{#about-connectors}
 
@@ -34,4 +32,3 @@ U kunt Campagne met veelvoudige andere systemen, zoals ook integreren:
 >[!NOTE]
 >
 >De beschikbaarheid van deze modules en hun gebruik kunnen van het type van plaatsing van uw installatie afhangen. Raadpleeg [Campagne op locatie - matrix met gehoste mogelijkheden](../../installation/using/capability-matrix.md).
-
