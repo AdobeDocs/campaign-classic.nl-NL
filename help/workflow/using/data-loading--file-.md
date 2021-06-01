@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Data laden (bestand)
+title: Gegevens laden (bestand)
 description: Meer informatie over de activiteiten in de workflow voor het laden van gegevens (bestanden)
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 15%
 
 ---
 
+# Gegevens laden (bestand){#data-loading-file}
 
-# Data laden (bestand){#data-loading-file}
-
-## {#use} gebruiken
+## Gebruiken {#use}
 
 Met de activiteit **[!UICONTROL Data loading (File)]** hebt u rechtstreeks toegang tot een bron met externe gegevens en kunt u deze gebruiken in Adobe Campaign. Alle gegevens die vereist zijn voor bewerkingen met het doel als doel, worden niet altijd gevonden in de Adobe Campaign-database: het kan in externe dossiers ter beschikking worden gesteld.
 
@@ -132,4 +130,3 @@ In het volgende voorbeeld kunt u elke dag een bestand op de server verzamelen, d
 1. Geef vervolgens aan welke processen voor elk type bevolking moeten worden uitgevoerd. In ons voorbeeld gaan we naar **[!UICONTROL Update the data]** in de database. Om dit te doen, plaats een **[!UICONTROL Update data]** activiteit aan het eind van elke uitgaande overgang van de gespleten activiteit.
 
    De **[!UICONTROL Update data]** activiteit is gedetailleerd in [Gegevens bijwerken](../../workflow/using/update-data.md) sectie.
-
