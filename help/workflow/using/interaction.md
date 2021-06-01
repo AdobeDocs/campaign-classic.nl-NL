@@ -1,13 +1,11 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Interaction
 description: Interactie
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-translation-type: tm+mt
-source-git-commit: affc541c480ad7e618120fe90270841add06b711
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 3%
@@ -15,7 +13,7 @@ ht-degree: 3%
 ---
 
 
-# Interaction{#interaction}
+# Interactie{#interaction}
 
 De hieronder beschreven workflows worden geïnstalleerd met de **Aanbiedingsmotor (Interactie)** module door gebrek. Voor meer op deze module, verwijs naar dit [sectie](../../interaction/using/interaction-and-offer-management.md).
 
