@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Test
 description: Meer informatie over de activiteit van de testworkflow
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 6f246d56-01c8-43f5-b12b-c40d258b93c8
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 5%
 
 ---
 
-
-# Test{#test}
+# Testen{#test}
 
 Een **Test** type activiteit activeert de eerste overgang die aan de voorwaarde verbonden aan het voldoet. Als aan geen voorwaarde wordt voldaan en als de optie **[!UICONTROL Use the default fork]** wordt geactiveerd, zal de standaardovergang worden geactiveerd.
 
