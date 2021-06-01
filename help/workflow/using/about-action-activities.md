@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Actieactiviteiten
 description: Actieactiviteiten
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 8758601b-c4bd-4179-8816-305d1a68d499
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 2%
 
 ---
-
 
 # Actieactiviteiten{#about-action-activities}
 
@@ -32,5 +30,5 @@ ht-degree: 2%
 * **SQL-gegevensbeheer**: Hiermee kunt u uw eigen SQL-query&#39;s schrijven om werktabellen te maken en te vullen. Raadpleeg [SQL-gegevensbeheer](../../workflow/using/sql-data-management.md).
 * **nlserver-module**: start een nlserver module met de argumenten ervan. Zie [Nlserver module](../../workflow/using/nlserver-module.md).
 * **Importeren en exporteren (compatibel met v4)**: Met import- en exportactiviteiten (v4-compatibiliteit) kunt u gegevens importeren en exporteren met de sjabloon (importeren of exporteren) die is opgegeven in de activiteit.
-* **Microsoft CRM, Salesforce, Oracle CRM On Demand**: Hiermee kunt u Adobe Campaign specifiek verbinden met een van de vooraf geconfigureerde CRM&#39;s. Deze activiteiten zijn gelijkaardig aan de schakelaar van CRM die in [deze sectie](../../workflow/using/crm-connector.md) wordt voorgesteld, met specifiekere opties. U kunt met name het type campagne kiezen dat u wilt uitvoeren voor de synchronisatie.
+* **Microsoft CRM, Salesforce, Oracle CRM op bestelling**: Hiermee kunt u Adobe Campaign specifiek verbinden met een van de vooraf geconfigureerde CRM&#39;s. Deze activiteiten zijn gelijkaardig aan de schakelaar van CRM die in [deze sectie](../../workflow/using/crm-connector.md) wordt voorgesteld, met specifiekere opties. U kunt met name het type campagne kiezen dat u wilt uitvoeren voor de synchronisatie.
 * **Samenvoegen** bijwerken: Hiermee kunt u de geaggregeerde updatemodus (volledig of gedeeltelijk) selecteren. Zie [Samenvoegen](../../workflow/using/update-aggregate.md) bijwerken.
