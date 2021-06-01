@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: IMS implementeren
 description: IMS implementeren
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 58552d6e-fbed-4944-85c4-9c14bf60d823
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '51'
 ht-degree: 0%
 
 ---
-
 
 # IMS{#implementing-ims} implementeren
 
@@ -32,4 +30,3 @@ ht-degree: 0%
 Als u verbinding via de Adobe ID wilt uitschakelen, verbreekt u de verbinding, klikt u op **[!UICONTROL File > Connections]** en schakelt u **[!UICONTROL Connect with an Adobe ID]** uit.
 
 ![](assets/ims_4.png)
-
