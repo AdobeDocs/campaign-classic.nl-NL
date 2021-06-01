@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Marketingcampagnes ontwerpen en uitvoeren
 description: Marketingcampagnes definiëren, optimaliseren, uitvoeren en analyseren.
 audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 7%
 
 ---
-
 
 # Marketingcampagnes ontwerpen en uitvoeren{#designing-marketing-campaigns}
 
@@ -64,7 +62,7 @@ De volgende concepten moeten bekend zijn in het kader van de campagne:
 
    Raadpleeg [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline) voor meer informatie.
 
-## Zelfstudie {#video}
+## Tutorial {#video}
 
 In deze video worden de belangrijkste concepten van marketingcampagnes gepresenteerd.
 
