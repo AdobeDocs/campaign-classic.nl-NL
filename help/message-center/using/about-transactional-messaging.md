@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 6%
@@ -40,7 +40,7 @@ Transactionele berichtenmogelijkheden worden ontworpen om scalability te steunen
 
 De module van het Overseinen van Adobe Campaign Transactional integreert in een informatiesysteem dat gebeurtenissen terugkeert die in gepersonaliseerde transactionele berichten moeten worden veranderd. Deze berichten kunnen individueel of in partijen via e-mail, SMS of push-berichten worden verzonden.
 
-Deze eigenschap baseert zich op een specifieke architectuur, waar **uitvoeringsinstantie** van **control instantie** wordt gescheiden. Deze distributie zorgt voor een hogere beschikbaarheid en een beter beheer van de belasting. Voor meer op dit, zie [Transactionele overseineninstanties](../../message-center/using/transactional-messaging-architecture.md).
+Deze eigenschap baseert zich op een specifieke architectuur, waar **uitvoeringsinstantie** van **control instantie** wordt gescheiden. Deze distributie zorgt voor een hogere beschikbaarheid en een beter beheer van de belasting. Voor meer op dit, zie [Transactionele overseinenarchitectuur](../../message-center/using/transactional-messaging-architecture.md).
 
 >[!NOTE]
 >
@@ -81,8 +81,8 @@ Op **control instance**, moet u de volgende acties uitvoeren:
 
 Zodra u het transactionele berichtmalplaatje ontwierp en publiceerde, als een overeenkomstige gebeurtenis wordt teweeggebracht, worden de belangrijkste hieronder stappen uitgevoerd op **uitvoeringsinstantie**:
 
-1. Wanneer de gebeurtenis door het externe informatiesysteem wordt geproduceerd, worden de relevante gegevens verzonden naar Campagne via **PushEvent** en **PushEvents** methodes. Zie [Gebeurtenisverzameling](#event-collection).
-1. De gebeurtenis is gekoppeld aan de juiste berichtsjabloon. Zie [Verpletterend naar een malplaatje](#routing-towards-a-template).
+1. Wanneer de gebeurtenis door het externe informatiesysteem wordt geproduceerd, worden de relevante gegevens verzonden naar Campagne via **PushEvent** en **PushEvents** methodes. Zie [Gebeurtenisverzameling](../../message-center/using/about-event-processing.md#event-collection).
+1. De gebeurtenis is gekoppeld aan de juiste berichtsjabloon. Zie [Verpletterend naar een malplaatje](../../message-center/using/about-event-processing.md#routing-towards-a-template).
 1. Zodra het verrijkingsstadium volledig is, wordt de levering verzonden. Zie [Uitvoering van levering](../../message-center/using/delivery-execution.md). Elke beoogde ontvanger ontvangt een gepersonaliseerd bericht.
 
 ## Verwante onderwerpen {#related-topics}
@@ -90,4 +90,4 @@ Zodra u het transactionele berichtmalplaatje ontwierp en publiceerde, als een ov
 * [Aan de slag met communicatiekanalen](../../delivery/using/communication-channels.md)
 * [Belangrijkste stappen bij het maken van de levering](../../delivery/using/steps-about-delivery-creation-steps.md)
 * [Architectuur van transactionele berichten](../../message-center/using/transactional-messaging-architecture.md)
-* [Rapporten voor transactionele berichten](../../message-center/using/about-transactional-messaging-reports.md)
+* [Toegang tot transactiemeldingsrapporten](../../message-center/using/about-transactional-messaging-reports.md)
