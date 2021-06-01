@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Definiëren van de uiteindelijke levering
+title: De uiteindelijke verzending definiëren
 description: Leer hoe u een A/B-test uitvoert met een speciale praktijkcase.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
-source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
+exl-id: bc23a444-a872-48fb-8bba-64b301541089
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '111'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
-
-# Definiëren van de uiteindelijke levering {#step-6--defining-the-final-delivery}
+# De uiteindelijke verzending definiëren {#step-6--defining-the-final-delivery}
 
 Wanneer het script is gemaakt om de testwinnaar A/B te selecteren, kunt u de parameters van de uiteindelijke levering definiëren.
 
