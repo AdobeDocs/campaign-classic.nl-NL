@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Applicatieserver
 description: Applicatieserver
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 1%
 
 ---
-
 
 # Applicatieserver{#application-server}
 
@@ -25,7 +23,7 @@ De dynamische generator van de Web-pagina gebruikt JSP 1.2 technologie. Hiervoor
 
 U moet eerst een JDK installeren op de computers waarop u de Adobe Campaign-toepassingsserver wilt uitvoeren (**nlserver web** proces) omdat het een servletcontainer bevat, Apache Tomcat, die wordt gebruikt om dynamische webpagina&#39;s te genereren (rapporten, webformulieren, enz.).
 
-De toepassing is goedgekeurd voor de Java Development Kit (JDK) die is ontwikkeld door Oracle en voor **OpenJDK**.
+De toepassing is goedgekeurd voor de Java Development Kit (JDK) die door Oracle is ontwikkeld en voor **OpenJDK**.
 
 De ondersteunde versies zijn gedetailleerd in de campagne [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
 
