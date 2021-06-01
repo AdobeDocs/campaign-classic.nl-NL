@@ -124,7 +124,7 @@ Het veld **@name** verwijst naar de naam van de functie en &quot;args&quot; is d
 * **@** minArgsand en  **** maxArgsdesignates het aantal parameters (minimum en maximum) voor een parameter. Voor een functie met 2 parameters zijn minArgs en maxArgs bijvoorbeeld 2 en 2. Voor drie parameters, plus 1 optioneel, zijn deze respectievelijk 3 en 4.
 * Tot slot verstrekt het **providerPart** element de functie implementatie.
 
-   * Het **provider** attribuut is verplicht, specificeert het de gegevensbestandsystemen waarvoor de implementatie wordt verstrekt. Zoals getoond in het voorbeeld, wanneer de uitdrukkingssyntaxis of onderliggende functies verschillen, kunnen de alternatieve implementaties volgens het gegevensbestand worden verstrekt.
+   * Het **provider** attribuut is verplicht, specificeert het de gegevensbestandsystemen waarvoor de implementatie wordt verstrekt. Zoals getoond in het voorbeeld, wanneer de uitdrukkingssyntaxis of de onderliggende functies verschillen, kunnen de alternatieve implementaties volgens het gegevensbestand worden verstrekt.
    * Het **@body** attribuut bevat de functie implementatie. Opmerking: deze implementatie moet een expressie zijn in de databasetaal (niet een codeblok). Afhankelijk van de databases kunnen expressies subquery&#39;s zijn (&quot;(selecteer kolom in de tabel waarin...)&quot;) die slechts één waarde retourneren. Dit is bijvoorbeeld het geval in Oracle (de query moet tussen haakjes worden geschreven).
 
    >[!NOTE]
