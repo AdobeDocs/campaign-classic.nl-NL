@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een doeltoewijzing selecteren
 description: Een doeltoewijzing selecteren
 audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 8%
 
 ---
-
 
 # Een doeltoewijzing selecteren{#selecting-a-target-mapping}
 
@@ -26,7 +24,7 @@ Deze toewijzingen zijn als volgt:
 | Naam | Gebruiken | Standaardschema |
 |---|---|---|
 | Ontvangers | Leveren aan ontvangers van de Adobe Campaign-database | nms:ontvanger |
-| Bezoekers | Leveren aan bezoekers van wie de profielen zijn verzameld via verwijzing (virale marketing) of via sociale netwerken (Facebook, Twitter) bijvoorbeeld. | mns:bezoeker |
+| Bezoekers | Leveren aan bezoekers van wie de profielen via verwijzing (virale marketing) of via sociale netwerken (Facebook, Twitter) bijvoorbeeld zijn verzameld. | mns:bezoeker |
 | Abonnementen | Leveren aan ontvangers die zijn geabonneerd op een informatiedienst zoals een nieuwsbrief | nms:abonnement |
 | Abonnementen van bezoekers | Leveren aan bezoekers die zijn geabonneerd op een informatiedienst | nms:bezoekerSub |
 | Service | Publiceren naar een Twitter-account of een Facebook-pagina | nms:service |
