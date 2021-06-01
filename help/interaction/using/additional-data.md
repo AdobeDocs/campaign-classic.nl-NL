@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Aanvullende data
-description: Aanvullende data
+title: Aanvullende gegevens
+description: Aanvullende gegevens
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
 
 ---
 
-
-# Aanvullende data{#additional-data}
+# Aanvullende gegevens{#additional-data}
 
 Tijdens een oproep aan de interactiemotor kunt u contextafhankelijke aanvullende informatie overbrengen. Deze gegevens kunnen afkomstig zijn van de doelgegevens die zijn opgeslagen in de werkentabel van een workflow (uitgaand kanaal) of de vraaggegevens die door de website worden verzonden tijdens de aanroep (binnenkomend kanaal). U kunt deze aanvullende gegevens gebruiken in de toelatingsregels, in het aanbieden van personalisatie, en u kunt het ook opslaan in een propositietabel.
 
@@ -123,4 +121,3 @@ Selecteer in de kolom **[!UICONTROL Storage path]** het opslagveld in de tabel m
 U kunt vraaggegevens terugwinnen wanneer het voorstel wordt geproduceerd of wanneer het wordt goedgekeurd (wanneer de persoon op de aanbieding klikt).
 
 ![](assets/ita_calldata_storage.png)
-
