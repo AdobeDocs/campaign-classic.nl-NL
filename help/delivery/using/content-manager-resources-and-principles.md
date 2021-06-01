@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Resources en beginselen voor contentmanagement
-description: Resources en beginselen voor contentmanagement
+title: Bronnen en beginselen voor contentmanagement
+description: Bronnen en beginselen voor contentmanagement
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: ade3f1d1-2235-4148-9b6f-721d3f521a15
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 6%
 
 ---
 
-
-# Resources en beginselen voor contentmanagement{#content-manager-resources-and-principles}
+# Bronnen en beginselen voor contentmanagement{#content-manager-resources-and-principles}
 
 U moet een publicatiesjabloon definiëren dat transformatiesjablonen voor elke inhoud bevat.
 
