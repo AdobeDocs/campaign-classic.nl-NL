@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Anonieme interacties
 description: Anonieme interacties
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
-translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+exl-id: a8face46-a933-4f2c-8299-ccb66f05967d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%
 
 ---
-
 
 # Anonieme interacties{#anonymous-interactions}
 
@@ -60,4 +58,3 @@ Als er geen element is dat u toestaat om een contact te identificeren, of als u 
 Om dit te doen, controleer **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]**, dan specificeer het milieu gewijd aan deze niet geïdentificeerde bezoekers in **[!UICONTROL Linked anonymous space]** wanneer het specificeren van een aanbiedingsruimte.
 
 ![](assets/anonymous_to_anonymous_environment.png)
-
