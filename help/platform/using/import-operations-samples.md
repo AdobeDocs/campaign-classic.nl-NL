@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Voorbeelden van algemene importactiviteiten
 description: Meer informatie over generieke importbewerkingen die u kunt uitvoeren met importtaken.
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: 37cc6cd8b71ec82cd4e6a910d6664a51ed5c091e
+exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 1%
 
 ---
-
 
 # Voorbeelden van algemene importactiviteiten {#import-operations-samples}
 
