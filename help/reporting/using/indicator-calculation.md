@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Indicatoren berekenen
 description: Indicatoren berekenen
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2972'
 ht-degree: 1%
 
 ---
-
 
 # Indicatoren berekenen {#indicator-calculation}
 
@@ -371,8 +369,8 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** (nms:delivery), **[!UIC
   <tr> 
    <td> Aandelen<br /> </td> 
    <td> @shared<br /> </td> 
-   <td> URL-categorie opgenomen in 'email', 'facebook', 'twitter', 'delicious', 'digg', 'google' , 'linkedin'<br /> Aantal alle @totalClicks met een URL-categorie die gelijk is aan 'email', 'facebook', 'twitter', 'delicious', 'digg', 'google' of 'linkedin'.1/&gt;<br /> </td> 
-   <td> count (Iif([url/@category] IN (email', 'facebook' , 'twitter' , 'delicious' , 'digg' , 'google' , 'linkedin'), @totalClicks, 0))<br /> </td> 
+   <td> URL-categorie opgenomen in 'email', 'facebook', 'twitter', 'delicious', 'digg', 'google', 'linkedin'<br /> Aantal van alle @totalClicks met een URL-categorie die gelijk is aan 'email', 'facebook', 'twitter', 'delicious', 'digg', 'google' of 'linkedin'.<br /> </td> 
+   <td> count (Iif([url/@category] IN (email', 'facebook', 'twitter', 'delicious', 'digg', 'google', 'linkedin'), @totalClicks, 0))<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -655,13 +653,13 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery and tracking statistics]**
   <tr> 
    <td> Facebook<br /> </td> 
    <td> @facebook<br /> </td> 
-   <td> Som van alle @totalClicks met een categorie URL die "facebook".<br /> evenaart </td> 
+   <td> Som van alle @totalClicks met een categorie URL die "facebook" evenaart.<br /> </td> 
    <td> Sum(iIf([url/@category]='facebook',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Twitter<br /> </td> 
    <td> @twitter<br /> </td> 
-   <td> De som van alle @totalClicks met een categorie URL die gelijk is aan "twitter".<br /> </td> 
+   <td> Som van alle @totalClicks met een categorie URL die "twitter" evenaart.<br /> </td> 
    <td> Sum(iIf([url/@category]='twitter',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
@@ -797,7 +795,7 @@ Dit rapport is gebaseerd op de tabellen Delivery(nms:delivery) en **[!UICONTROL 
 
 Dit rapport toont de berichtinhoud (HTML en/of tekst) met, op elke verbinding, het percentage klikt op verbindingen. De belemmeringen van de verpersoonlijking unsubscription verbindingen en de verbindingen van de spiegelpagina worden in de totale gecumuleerde kliks in aanmerking genomen maar niet getoond in het rapport.
 
-## Statistiekenbijhouden {#tracking-statistics-1}
+## Statistieken {#tracking-statistics-1} bijhouden
 
 Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** lijst (nms:levering).
 
