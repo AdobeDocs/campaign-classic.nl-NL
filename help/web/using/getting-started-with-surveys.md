@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Belangrijke stappen bij het maken van een enquête
 description: Uw eerste enquête maken met Campagne
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
+exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 1%
 
 ---
-
 
 # Belangrijke stappen bij het maken van een enquête{#getting-started-with-surveys}
 
@@ -152,4 +150,3 @@ Vervolgens kunt u de antwoorden van gebruikers controleren via rapporten en logb
 >De openbare URL bevat de interne naam van de enquête. Wanneer de interne naam wordt gewijzigd, wordt de URL automatisch bijgewerkt: alle links naar de enquête moeten eveneens worden bijgewerkt .
 >
 >Als er al leveringen met de koppeling naar het formulier zijn verzonden, werkt deze koppeling niet meer.
-
