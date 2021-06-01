@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Samenvoegen
 description: Meer informatie over de workflowactiviteiten van de Unie
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 1cda3146-c333-4743-a871-c44583b6e5b2
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 1%
 
 ---
-
 
 # Samenvoegen{#union}
 
@@ -38,7 +36,7 @@ In het volgende voorbeeld zijn de resultaten van twee query&#39;s gecombineerd o
    Specificeer dit definitieve aantal door het maximumaantal ontvangers in te gaan en door de vraag te selecteren waarvan de bevolking prioriteit zal nemen.
 
 1. Goedkeuren van de samenvoegingsactiviteit en configureren vervolgens de update-activiteit van de lijst (zie [Update van lijst](../../workflow/using/list-update.md)).
-1. Start de workflow. Het aantal resultaten wordt weergegeven en de lijst die is gedefinieerd in de updateactiviteit van de lijst, wordt gemaakt of bijgewerkt. Deze lijst bevat de reeks ontvangers voor beide query&#39;s of, indien van toepassing, het nummer dat bij de vorige stap is gedefinieerd.
+1. De workflow starten. Het aantal resultaten wordt weergegeven en de lijst die is gedefinieerd in de updateactiviteit van de lijst, wordt gemaakt of bijgewerkt. Deze lijst bevat de reeks ontvangers voor beide query&#39;s of, indien van toepassing, het nummer dat bij de vorige stap is gedefinieerd.
 
    ![](assets/union_example.png)
 
