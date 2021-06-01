@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Voorbeelden van Facebook-apps
 description: Voorbeelden van Facebook-apps
 audience: social
 content-type: reference
 topic-tags: annexes
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3b8c7db4-9c55-42f6-8e09-e5ab781efe8f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1981'
 ht-degree: 1%
 
 ---
 
-
 # Voorbeelden van Facebook-apps{#examples-of-facebook-apps}
 
-Wanneer een gebruiker op de tab van een Facebook-toepassing klikt, wordt deze weergegeven in een ruimte van 810 pixels breed. Adobe Campaign gebruikt een webtoepassing van het type Facebook waarmee u de inhoud die in de Facebook-toepassing wordt weergegeven, kunt definiëren en aanpassen, zodat het eenvoudiger wordt profielen aan te schaffen.
+Wanneer een gebruiker op de tab van een Facebook-toepassing klikt, wordt deze weergegeven in een ruimte van 810 pixels breed. Adobe Campaign gebruikt een Facebook-webtoepassing waarmee u de inhoud die in de Facebook-toepassing wordt weergegeven, kunt definiëren en aanpassen, zodat het gemakkelijker wordt om profielen aan te schaffen.
 
 >[!NOTE]
 >
->Het is ook mogelijk om Adobe Campaign te integreren met een Facebook-toepassing die door een partner is ontwikkeld. In dit geval is het niet nodig om de Adobe Campaign-webtoepassing te gebruiken voor het aanschaffen van Facebook-profielen. Voor meer op dit, verwijs naar [Het vormen van externe rekeningen](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+>Het is ook mogelijk om Adobe Campaign te integreren met een Facebook-toepassing die door een partner is ontwikkeld. In dit geval hoeft u de Adobe Campaign-webtoepassing niet te gebruiken voor het aanschaffen van Facebook-profielen. Voor meer op dit, verwijs naar [Het vormen van externe rekeningen](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
 ![](assets/social_webapp_fb_000.png)
 
@@ -33,26 +31,26 @@ Wanneer een gebruiker op de tab van een Facebook-toepassing klikt, wordt deze we
 >
 >In deze sectie worden de elementen beschreven die zijn gekoppeld aan webtoepassingen van het type Facebook. Alle elementen die worden gedeeld met standaardwebtoepassingen worden beschreven in [deze sectie](../../web/using/about-web-applications.md).
 
-Hier worden de volgende voorbeelden gegeven van webtoepassingen van het type Facebook:
+Hier worden de volgende voorbeelden gegeven van Facebook-webtoepassingen:
 
-* Hoe maakt u in 7 stappen een Facebook-toepassing. Raadpleeg [Snel starten: het maken van een Facebook-toepassing in 7 stappen](#quick-start--creating-a-facebook-application-in-7-steps).
+* Een Facebook-toepassing maken in 7 stappen. Raadpleeg [Snel starten: het creëren van een toepassing van Facebook in 7 stappen](#quick-start--creating-a-facebook-application-in-7-steps).
 * Instellingen doorsturen naar een Facebook-toepassing. Zie [Hoe kan ik instellingen doorsturen naar een Facebook-toepassing?](#how-to-forward-settings-to-a-facebook-application-).
 * Hoe verkrijgt u ventilatorgegevens. Raadpleeg [Hoe verkrijgt u ventilatorgegevens?](#how-to-acquire-fan-data-).
 
 >[!IMPORTANT]
 >
->Deze eenvoudige gebruiksgevallen worden gegeven als voorbeelden om de functionaliteit van Facebook-webtoepassingen te illustreren.
+>Deze eenvoudige gebruiksgevallen worden als voorbeelden gegeven om de functionaliteit van webtoepassingen van het type Facebook te illustreren.
 
 ## Aanbevelingen {#recommendations}
 
-De volgende beperkingen zijn rechtstreeks gekoppeld aan Facebook:
+De volgende beperkingen houden rechtstreeks verband met Facebook:
 
 * U moet al uw webtoepassingen maken in HTTPS.
-* Een Facebook-toepassing die via een tabblad wordt weergegeven, heeft een breedte van 810 pixels.
+* Een Facebook-toepassing die via een tab wordt weergegeven, heeft een breedte van 810 pixels.
 
-## Snel starten: een Facebook-toepassing maken in 7 stappen {#quick-start--creating-a-facebook-application-in-7-steps}
+## Snel starten: facebook-toepassingen maken in 7 stappen {#quick-start--creating-a-facebook-application-in-7-steps}
 
-In dit voorbeeld wordt stapsgewijs uitgelegd hoe u een Adobe Campaign-toepassing die op Facebook is gebouwd, kunt weergeven. In dit geval, willen wij een toepassing tot stand brengen die u het **Welkome** bericht laat tonen wanneer de gebruiker het toepassingslusje (**App01**) klikt.
+In dit voorbeeld wordt stapsgewijs uitgelegd hoe u een Adobe Campaign-toepassing die in Facebook is gemaakt, kunt weergeven. In dit geval, willen wij een toepassing tot stand brengen die u het **Welkome** bericht laat tonen wanneer de gebruiker het toepassingslusje (**App01**) klikt.
 
 Voer de volgende stappen uit om deze toepassing te maken:
 
@@ -64,11 +62,11 @@ Voer de volgende stappen uit om deze toepassing te maken:
 
    ![](assets/social_quick_start_2.png)
 
-1. Voer de **[!UICONTROL Terms of service]**- en **[!UICONTROL Privacy policy]**-koppelingen in die moeten worden weergegeven op het scherm voor het aanvragen van bevoegdheden op Facebook. Raadpleeg voor meer informatie: [De koppelingen voor service- en privacybeleid invoeren](../../social/using/creating-a-facebook-application.md#entering-the-terms-of-service-and-privacy-policy-links).
+1. Voer de **[!UICONTROL Terms of service]**- en **[!UICONTROL Privacy policy]**-koppelingen in die moeten worden weergegeven op het scherm voor Facebook-machtigingsaanvragen. Raadpleeg voor meer informatie: [De koppelingen voor service- en privacybeleid invoeren](../../social/using/creating-a-facebook-application.md#entering-the-terms-of-service-and-privacy-policy-links).
 
    ![](assets/social_quick_start_1.png)
 
-1. Maak een Facebook-webtoepassing in Adobe Campaign. Raadpleeg voor meer informatie: [Een webtoepassing van het type Facebook maken](../../social/using/creating-a-facebook-application.md#creating-a-facebook-type-web-application).
+1. Maak een Facebook-webtoepassing in Adobe Campaign. Raadpleeg voor meer informatie: [Een Facebook-webtoepassing maken](../../social/using/creating-a-facebook-application.md#creating-a-facebook-type-web-application).
 
    ![](assets/social_webapp_005.png)
 
@@ -80,7 +78,7 @@ Voer de volgende stappen uit om deze toepassing te maken:
 
    ![](assets/social_webapp_004.png)
 
-1. Configureer uw Facebook-toepassing zodat deze als een tabblad op uw Facebook-pagina wordt weergegeven. Raadpleeg voor meer informatie: [Facebook-tabs configureren](../../social/using/creating-a-facebook-application.md#configuring-facebook-tabs).
+1. Configureer uw Facebook-toepassing zodat deze als een tab op uw Facebook-pagina wordt weergegeven. Raadpleeg voor meer informatie: [Facebook-tabbladen configureren](../../social/using/creating-a-facebook-application.md#configuring-facebook-tabs).
 
    ![](assets/social_quick_start_5.png)
 
@@ -94,18 +92,18 @@ Controleer of het tabblad van de toepassing **App01** wordt weergegeven op uw Fa
 
 >[!IMPORTANT]
 >
->Volg de configuratiestappen die in [Een Facebook-toepassing](../../social/using/creating-a-facebook-application.md) worden beschreven.
+>Voldoe aan de configuratiestappen die in [Een Facebook-toepassing](../../social/using/creating-a-facebook-application.md) worden beschreven.
 
 In voorbeeld 1 hebben we de weergave van de Facebook-pagina aangepast aan de waarde in het veld **[!UICONTROL Fan of the page]**. Het is ook mogelijk het veld **[!UICONTROL Application settings]** te verwerken. Met dit veld kunt u gegevens herstellen die zijn opgeslagen in een koppeling die door Adobe Campaign via Facebook is gegenereerd.
 
-Laten we het voorbeeld nemen van een bedrijf dat besluit een e-mailcampagne te verzenden. Tijdens de levering wijst een koppeling naar de Facebook-toepassing. Deze koppeling is gepersonaliseerd dankzij de parameter **[!UICONTROL app_data]** die aan het einde van de URL is toegevoegd. De waarde van deze parameter zou een indicator kunnen zijn die op klantenbelangrijkheid wijst. In ons voorbeeld zijn de waarden van de parameter **[!UICONTROL app_data]** **[!UICONTROL big]** (significante klant) en **[!UICONTROL small]** (minder belangrijke klant).
+Laten we het voorbeeld nemen van een bedrijf dat besluit een e-mailcampagne te verzenden. Bij de levering wijst een koppeling naar de Facebook-toepassing. Deze koppeling is gepersonaliseerd dankzij de parameter **[!UICONTROL app_data]** die aan het einde van de URL is toegevoegd. De waarde van deze parameter zou een indicator kunnen zijn die op klantenbelangrijkheid wijst. In ons voorbeeld zijn de waarden van de parameter **[!UICONTROL app_data]** **[!UICONTROL big]** (significante klant) en **[!UICONTROL small]** (minder belangrijke klant).
 
 Zodra het wordt gepersonaliseerd, kijkt URL als dit:
 
 * `http://<path of the Facebook application>&app_data=big` (voor een belangrijke klant)
 * `http://<path of the Facebook application>&app_data=small` (voor een minder belangrijke klant)
 
-Onder de anonieme gegevens die door Facebook naar Adobe Campaign worden doorgestuurd, wordt de waarde van het veld **[!UICONTROL Application parameters]** verzameld, zodat Adobe Campaign de weergave van de toepassing op basis van deze parameter kan aanpassen.
+Onder de anonieme gegevens die door Facebook naar Adobe Campaign worden doorgestuurd, wordt de waarde van het veld **[!UICONTROL Application parameters]** verzameld, waardoor Adobe Campaign de weergave van de toepassing op basis van deze parameter kan aanpassen.
 
 Als de gebruiker een belangrijke klant is (de waarde van de parameter **[!UICONTROL app_data]** is **[!UICONTROL big]**), wordt het volgende beeld getoond:
 
@@ -126,7 +124,7 @@ Voor het opnieuw maken van dit gebruiksgeval hebben we een webtoepassing gemaakt
 
 >[!IMPORTANT]
 >
->Volg de configuratiestappen die in [Een Facebook-toepassing](../../social/using/creating-a-facebook-application.md) worden beschreven.
+>Voldoe aan de configuratiestappen die in [Een Facebook-toepassing](../../social/using/creating-a-facebook-application.md) worden beschreven.
 
 In dit voorbeeld ziet u hoe u contact opneemt met Facebook-gebruikers en hen aanbiedt hun profielgegevens te delen. Laten we het voorbeeld nemen van een bedrijf dat vooruitzichten wil verwerven en een wedstrijd organiseert op zijn Facebook-pagina om ze aan te trekken.
 
@@ -161,7 +159,7 @@ De **[!UICONTROL Test]** activiteit is gebaseerd op **[!UICONTROL ID]** en **[!U
 
 Het bestaat uit drie bijkantoren:
 
-* **[!UICONTROL identifier (UID) is empty]** : De identificatiecode wordt alleen door Facebook doorgestuurd als de gebruiker al heeft ingestemd met het delen van zijn gegevens. Met de eerste vertakking van de activiteit **[!UICONTROL Test]** kunt u de concurrentie alleen beschikbaar maken voor gebruikers die nog nooit zijn ingegaan, dat wil zeggen gebruikers met een lege id.
+* **[!UICONTROL identifier (UID) is empty]** : de identificatiecode wordt alleen door Facebook doorgestuurd als de gebruiker al heeft ingestemd met het delen van zijn gegevens. Met de eerste vertakking van de activiteit **[!UICONTROL Test]** kunt u de concurrentie alleen beschikbaar maken voor gebruikers die nog nooit zijn ingegaan, dat wil zeggen gebruikers met een lege id.
 * **[!UICONTROL application parameter equals 'thanks']** : Als u een weergavefout wilt toevoegen die is gekoppeld aan Facebook, wijst de eindpagina van de webtoepassing naar de URL van de Facebook-toepassing die met de  **[!UICONTROL app_data]** parameter wordt toegevoegd aan het gebruik van de  **[!UICONTROL thanks]** waarde (zie voor meer informatie:  [Eindactiviteit](#end-activity)). De tweede tak laat u weten of de gebruiker uit de **[!UICONTROL End]** activiteit van de eerste tak (en is enkel ingegaan op de concurrentie) komt om een dankwoord te tonen. Raadpleeg voor meer informatie over het gebruik van aanvullende URL-parameters: [Hoe kan ik instellingen doorsturen naar een Facebook-toepassing?](#how-to-forward-settings-to-a-facebook-application-).
 * **[!UICONTROL Default branch]** : als de gebruiker reeds op een vorige datum (toepassingsparameter verschillend van) de concurrentie (reeds ingegaan identiteitskaart) is ingegaan, zullen wij een pagina tonen die zegt dat zij reeds zijn ingegaan.  **[!UICONTROL thanks]**
 
@@ -173,9 +171,9 @@ Als u de aan Facebook gekoppelde weergavefout wilt negeren, moet u **[!UICONTROL
 
 ### Activiteit van toegangsbeheer {#access-control-activity}
 
-Met de activiteit **[!UICONTROL Access control]** kunt u de pagina voor aanvragen van Facebook-machtigingen weergeven wanneer de gebruiker de wedstrijd opent. Als zij ermee instemmen hun informatie te delen, wordt deze tijdens het vooraf laden teruggewonnen. Raadpleeg voor meer informatie: [Voorladingsactiviteit](#pre-loading-activity).
+Met de activiteit **[!UICONTROL Access control]** kunt u de pagina voor Facebook-machtigingsaanvragen weergeven wanneer de gebruiker de wedstrijd ingaat. Als zij ermee instemmen hun informatie te delen, wordt deze tijdens het vooraf laden teruggewonnen. Raadpleeg voor meer informatie: [Voorladingsactiviteit](#pre-loading-activity).
 
-Als u eerder het externe account hebt ingevoerd bij het maken van de webtoepassing (zie [Een webtoepassing van het type Facebook maken](../../social/using/creating-a-facebook-application.md#creating-a-facebook-type-web-application)), hoeft u de activiteit niet te bewerken. Als dat niet het geval is, gaat u naar het veld **[!UICONTROL Application]** en selecteert u de externe account die is gekoppeld aan de Facebook-toepassing.
+Als u eerder het externe account hebt ingevoerd bij het maken van de webtoepassing (zie [Een Facebook-webtoepassing maken](../../social/using/creating-a-facebook-application.md#creating-a-facebook-type-web-application)), hoeft u de activiteit niet te bewerken. Als dat niet het geval is, gaat u naar het veld **[!UICONTROL Application]** en selecteert u de externe account die is gekoppeld aan de Facebook-toepassing.
 
 ![](assets/social_webapp_024.png)
 
@@ -184,7 +182,7 @@ Als u eerder het externe account hebt ingevoerd bij het maken van de webtoepassi
 Selecteer de gegevensbron die moet worden gebruikt voor het vooraf laden:
 
 * **[!UICONTROL Marketing database]** : Met deze optie kunt u gegevens vooraf laden via de Adobe Campaign-database.
-* **[!UICONTROL Facebook]** : Met deze optie kunt u gegevens vooraf laden via Facebook.
+* **[!UICONTROL Facebook]** : Met deze optie kunt u gegevens vooraf laden met Facebook.
 
 ![](assets/social_webapp_029.png)
 
@@ -200,7 +198,7 @@ Met deze optie kunt u de gegevens herstellen van een profiel dat bestaat in de t
 
 **Facebook**
 
-Met deze optie kunt u de Facebook-profielgegevens definiëren die u wilt verzamelen, onder de informatie die de gebruiker heeft willen delen, om deze op te slaan.
+Met deze optie kunt u de Facebook-profielgegevens definiëren die u wilt verzamelen, met inbegrip van de gegevens die de gebruiker heeft willen delen, om deze op te slaan.
 
 ![](assets/social_webapp_025.png)
 
@@ -208,7 +206,7 @@ Met de optie **[!UICONTROL Database information]** kunt u de volgende gegevens v
 
 * **[!UICONTROL External ID]**: gebruikersnaam
 * **[!UICONTROL Gender]**: geslacht van de gebruiker
-* **[!UICONTROL Verified]** : in dit veld wordt aangegeven of de gebruiker een geverifieerd Facebook-account heeft.
+* **[!UICONTROL Verified]** : in dit veld wordt aangegeven of de gebruiker een geverifieerde Facebook-account heeft.
 * **[!UICONTROL Full name]**: volledige naam van gebruiker
 * **[!UICONTROL First name]**: voornaam van gebruiker
 * **[!UICONTROL Last name]**: achternaam van gebruiker
@@ -220,11 +218,11 @@ Controleer het vakje **[!UICONTROL I agree to comply with Facebook conditions of
 
 >[!NOTE]
 >
->Als u een of meer vakjes in de **[!UICONTROL Private information]** sectie controleert, zal het Facebook toestemmingsverzoekscherm automatisch het toegangsverzoek voor deze gegevens tonen.
+>Als u een of meer vakjes in de **[!UICONTROL Private information]** sectie controleert, zal het scherm van het de toestemmingsverzoek van Facebook automatisch het toegangsverzoek voor deze gegevens tonen.
 >
 >Als u de geselecteerde gegevens wilt verzamelen, moet de gebruiker ermee instemmen deze te delen.
 >
->Als u beide typen voorladen wilt gebruiken (via Adobe Campaign en via Facebook), voegt u twee vooraf geladen vakken achter elkaar toe.
+>Als u beide typen voorladen (via Adobe Campaign en via Facebook) wilt gebruiken, voegt u twee vooraf geladen vakken achter elkaar toe.
 
 ### Activiteiten opslaan {#save-activity}
 
@@ -263,7 +261,7 @@ In ons voorbeeld wordt **bedankt** gebruikt.
 
 Net als voor Twitter-volgers (zie: [Operationeel principe](../../social/using/publishing-on-twitter.md#operating-principle)), herstelde Facebook-profielen worden opgeslagen in de tabel met bezoekers. Ga naar het knooppunt **[!UICONTROL Profiles and Targets > Visitors]** om de lijst met bezoekers weer te geven.
 
-Elk Facebook-perspectief dat ermee instemt hun profielgegevens te delen, wordt toegevoegd aan de lijst met bezoekers. Als de **[!UICONTROL Friends]** doos in **[!UICONTROL Pre-load]** activiteit wordt gecontroleerd (verwijs naar: [Vooraf laden activiteit](#pre-loading-activity)), worden ook vrienden toegevoegd.
+Elk perspectief van Facebook dat ermee instemt om hun profielinformatie te delen, wordt toegevoegd aan de lijst van bezoekers. Als de **[!UICONTROL Friends]** doos in **[!UICONTROL Pre-load]** activiteit wordt gecontroleerd (verwijs naar: [Vooraf laden activiteit](#pre-loading-activity)), worden ook vrienden toegevoegd.
 
 ![](assets/social_webapp_037.png)
 
@@ -307,5 +305,4 @@ Met de toepassing **[!UICONTROL Social Marketing]** kunt u ook een knop aan een 
 
 >[!NOTE]
 >
->Voordat u deze functie gaat gebruiken, moet u een Facebook-toepassing maken en een externe account van het type **[!UICONTROL Facebook Connect]**. Voor meer op dit, verwijs naar [Het vormen van externe rekeningen](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
-
+>Voordat u deze functie gaat gebruiken, moet u eerst een Facebook-toepassing en een externe account van het type **[!UICONTROL Facebook Connect]** maken. Voor meer op dit, verwijs naar [Het vormen van externe rekeningen](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
