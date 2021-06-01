@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Het oplossen van problemen de Schakelaar ACS
 description: Het oplossen van problemen de Schakelaar ACS
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
 
 ---
-
 
 # Het oplossen van problemen de Schakelaar ACS{#troubleshooting-the-acs-connector}
 
@@ -112,4 +110,3 @@ Afhankelijk van uw implementatie kunt u met meerdere veelvoorkomende problemen w
 * **Ik kan een profiel, een publiek of een openingspagina niet bewerken in Campaign Standard. Wat betekent het?**
 
    De middelen die van Campagne v7 worden gesynchroniseerd zijn op read-only wijze in Campaign Standard, om gegevensconsistentie te verzekeren. Als u één van deze elementen moet uitgeven, kunt u het in Campagne v7 doen en dan de verandering in Campaign Standard herhalen.
-
