@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: SpamAssassin configureren
 description: SpamAssassin configureren
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-translation-type: tm+mt
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
+exl-id: 1f1004e2-dcd2-4ec5-98ec-720c205646d5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 1%
 
 ---
-
 
 # SpamAssassin configureren{#configuring-spamassassin}
 
@@ -194,4 +192,3 @@ Als u de prestaties in Linux wilt verbeteren, bewerkt u het bestand **/etc/spama
 ```
 dns_available no
 ```
-
