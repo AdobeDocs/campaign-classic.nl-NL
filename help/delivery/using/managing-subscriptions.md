@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Lidmaatschappen beheren
 description: Lidmaatschappen beheren
 audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 2%
 
 ---
-
 
 # Abonnementen beheren{#managing-subscriptions}
 
