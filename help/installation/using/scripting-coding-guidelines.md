@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Richtlijnen voor scripts en codering
+title: Richtlijnen voor scripting en versleuteling
 description: Meer informatie over de richtlijnen die moeten worden gevolgd bij het ontwikkelen in Adobe Campaign (workflows, Javascript, JSSP, enz.).
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
-
-# Richtlijnen voor scripts en codering {#scripting-coding-guidelines}
+# Richtlijnen voor scripting en versleuteling {#scripting-coding-guidelines}
 
 ## Scripts
 
