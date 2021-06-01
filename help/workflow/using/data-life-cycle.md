@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Levenscyclus van data
+title: Levenscyclus van gegevens
 description: Meer informatie over de levenscyclus van gegevens in workflows
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 4%
 
 ---
 
-
-# Levenscyclus van data {#data-life-cycle}
+# Levenscyclus van gegevens {#data-life-cycle}
 
 ## Werktabel {#work-table}
 
@@ -47,7 +45,7 @@ Wij raden u echter aan deze optie niet te activeren als er grote hoeveelheden ge
 
 ![](assets/wf-purge-data-option.png)
 
-## Doelgegevens {#target-data}
+## Targetgegevens {#target-data}
 
 De gegevens die in de werktabel van de workflow zijn opgeslagen, zijn toegankelijk in de velden voor personalisatie.
 
