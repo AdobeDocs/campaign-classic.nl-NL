@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Terugdraaien naar de vorige versie
 description: Leer hoe u terugkeert naar de vorige versie
 audience: migration
 content-type: reference
 topic-tags: rollback
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 5120a7c4-3760-48d9-94da-d587d333e8d8
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 0%
 
 ---
-
 
 # Terugdraaien naar vorige versie{#about-rollback}
 
