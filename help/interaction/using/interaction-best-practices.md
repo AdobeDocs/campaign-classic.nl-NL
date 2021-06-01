@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Aanbevolen procedures voor Adobe Campaign Classic-interactie
 description: In deze sectie wordt de aanbevolen aanpak beschreven voor het beheer van de Interactiemodule in Adobe Campaign Classic.
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 98413cde-50c9-416c-8316-85837f724c27
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 0%
 
 ---
-
 
 # Best practices voor Interaction{#interaction-best-practices}
 
