@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Belangrijkste punten bij het beheren van de leverbaarbaarheid in Adobe Campaign Classic
 description: Wat zijn de belangrijkste punten om te controleren wanneer het beheren van leverbaarheid in Adobe Campaign Classic?
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
-source-git-commit: 5d1a653a9a164c34bb70efcc86ff2d7bdf1130a2
+exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '657'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # Probleemoplossing voor levering{#deliverability-faq}
 
@@ -42,7 +40,7 @@ Als u altijd het zelfde foutenbericht voor ISP krijgt, kan uw e-mail of IP als g
 * Werk uw abonnementsformulieren bij om fouten in de ingevoerde domeinnamen op te sporen (bijvoorbeeld: gmaul.com of yaho.com).
 * Als u fouten opmerkt die verklaren dat uw berichten als spam worden verklaard, of dat uw berichten constant worden geblokkeerd, probeer exclusief de ontvangers die niet in één van uw berichten in de laatste 12 maanden van het doel hebben geopend of geklikt.
 
-Als het probleem aanhoudt, neemt u contact op met de service voor commercieel gebruik of voor levering, [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Als het probleem aanhoudt, neemt u contact op met de service voor commercieel gebruik of voor levering, [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Lijst van gewezen personen versus quarantaine {#denylist-versus-quarantine}
 
