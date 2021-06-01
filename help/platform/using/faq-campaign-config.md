@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Veelgestelde vragen over Campaign-instellingen
 description: Veelgestelde vragen over Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
-
 
 # Veelgestelde vragen over Campaign-instellingen {#settings-faq}
 
@@ -41,7 +39,7 @@ Als ervaren gebruiker kunt u trackingmogelijkheden configureren op uw instantie 
 
 ## Hoe kan ik e-mailleverbaarheid configureren? {#how-to-configure-email-deliverability-}
 
-Naast de [Handleiding van de Beste praktijken van de Leverbaarheid van de Adobe ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html), lees de leverbaarheid technische aanbevelingen om te begrijpen hoe te om uw instantie te vormen om Campagne te maximaliseren leverend mogelijkheden.
+Naast de [Handleiding van de Beste praktijken van de Leverbaarheid van de Adobe ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl), lees de leverbaarheid technische aanbevelingen om te begrijpen hoe te om uw instantie te vormen om Campagne te maximaliseren leverend mogelijkheden.
 
 [Klik hier voor meer informatie](../../delivery/using/about-deliverability.md).
 
