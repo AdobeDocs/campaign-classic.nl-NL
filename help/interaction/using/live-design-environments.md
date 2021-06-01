@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Live/Design-omgevingen
 description: Live/Design-omgevingen
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
 
 ---
-
 
 # Live/Design-omgevingen{#live-design-environments}
 
@@ -67,4 +65,3 @@ Door gebrek, komt de Interactie met een vooraf gevormd milieu om de ontvankelijk
 >[!NOTE]
 >
 >Voor meer informatie over anonieme interacties op een binnenkomend kanaal, verwijs naar [Anonieme interacties](../../interaction/using/anonymous-interactions.md).
-
