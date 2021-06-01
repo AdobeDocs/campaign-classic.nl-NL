@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Data verrijken
 description: Meer informatie over de activiteit van de verrijkingsworkflow
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 1%
 
 ---
-
 
 # Data verrijken{#enriching-data}
 
@@ -35,7 +33,7 @@ Een contactpersoon in de tabel **[!UICONTROL Recipients]** kan aan meerdere rege
 
 ![](assets/uc1_enrich_2.png)
 
-Het doel van dit gebruik is om persoonlijke leveringen te sturen naar mensen die aan de meest recente wedstrijd hebben deelgenomen, afhankelijk van hun hoogste scores. De ontvanger met de hoogste score krijgt de eerste prijs, de ontvanger met de op één na hoogste score krijgt een troostprijs en alle anderen krijgen een boodschap die hen de volgende keer meer geluk wil wensen.
+Het doel van dit gebruik is om persoonlijke leveringen te sturen naar mensen die, afhankelijk van hun hoogste scores, aan de meest recente wedstrijd hebben deelgenomen. De ontvanger met de hoogste score krijgt de eerste prijs, de ontvanger met de op één na hoogste score krijgt een troostprijs en alle anderen krijgen een boodschap die hen de volgende keer meer geluk wil wensen.
 
 Voor het instellen van dit gebruiksgeval hebben we de volgende workflow voor doelversie gemaakt:
 
@@ -125,4 +123,3 @@ Om de ontvangers te sorteren op hun scores, wordt een **[!UICONTROL Split]** act
 1. Voeg een **[!UICONTROL Delivery]** typeactiviteit voor elke ondergroep toe, gebruikend een verschillend leveringsmalplaatje voor elk.
 
    ![](assets/uc1_enrich_20.png)
-
