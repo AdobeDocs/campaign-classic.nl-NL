@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Acties inzake rapporten
-description: Acties inzake rapporten
+title: Acties voor rapporten
+description: Acties voor rapporten
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 1%
 
 ---
 
-
-# Acties inzake rapporten{#actions-on-reports}
+# Acties voor rapporten{#actions-on-reports}
 
 Wanneer u een rapport weergeeft, kunt u op de werkbalk een bepaald aantal handelingen uitvoeren. Deze worden hieronder beschreven.
 
@@ -111,4 +109,3 @@ De archiefdatums worden weergegeven onder het pictogram voor tonen/verbergen. Kl
 Het is mogelijk om een rapportarchief te schrappen. Ga hiertoe naar het Adobe Campaign-knooppunt waar uw rapporten zijn opgeslagen. Klik op de tab **[!UICONTROL Archives]**, selecteer de tab die u wilt verwijderen en klik op **[!UICONTROL Delete]**.
 
 ![](assets/s_ncs_advuser_report_history_01.png)
-
