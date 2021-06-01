@@ -74,7 +74,7 @@ De cookienaam is **acoptout**. De gemeenschappelijke waarden zijn:
 
 * 0: gebruiker heeft Web tracking toegestaan (standaardwaarde)
 * 1: gebruiker heeft webtracking verboden
-* null: de gebruiker heeft niet gekozen maar Web het volgen wordt toegestaan aangezien het de standaardwaarde is
+* null: gebruiker heeft niet gekozen maar Web tracking is toegestaan omdat dit de standaardwaarde is
 
 De beschikbare client-side API&#39;s om de banner aan te passen zijn:
 
