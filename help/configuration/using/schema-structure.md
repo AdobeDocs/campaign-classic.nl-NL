@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Schemastructuur
 description: Schemastructuur
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
+exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 1%
 
 ---
-
 
 # Schemastructuur{#schema-structure}
 
@@ -374,7 +372,7 @@ Deze waarden worden weergegeven in een vervolgkeuzelijst van het invoerformulier
 >
 >In de Adobe Campaign-clientconsole wordt het knooppunt **[!UICONTROL Administration > Enumerations]** gebruikt om opsommingen te beheren.
 
-#### Opsomminginstellen {#set-enumeration}
+#### Opsomming {#set-enumeration} instellen
 
 Met de eigenschap **enum** kunt u een vaste opsomming definiëren die wordt gebruikt wanneer de lijst met mogelijke waarden van tevoren bekend is.
 
@@ -486,6 +484,7 @@ Elementen worden aangeduid met hun naam en kenmerken worden aangeduid met de naa
 >
 >* **location/@** cityis not valid; gebruiken  **`[location/@city]`**
 >* **`[@email]`** en  **@** e-mailequivalent
+
 >
 
 
@@ -529,4 +528,3 @@ Resultaat van de berekende tekenreeks voor een ontvanger: **Doe John (john.doe@a
 >[!NOTE]
 >
 >Als het schema geen Compute koord bevat, wordt een Compute koord bevolkt door gebrek met de waarden van de primaire sleutel van het schema.
-
