@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Bezig met configureren van populatiemonsters
+title: Populatievoorbeelden configureren
 description: Leer hoe u een A/B-test uitvoert met een speciale praktijkcase.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
-source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
+exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '174'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
-
-# Bezig met configureren van populatiemonsters {#step-2--configuring-population-samples}
+# Populatievoorbeelden configureren {#step-2--configuring-population-samples}
 
 ## Het vormen van de activiteit van de Vraag {#configuring-the-query-activity}
 
