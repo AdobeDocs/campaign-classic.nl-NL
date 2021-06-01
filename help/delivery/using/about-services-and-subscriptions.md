@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Services en lidmaatschappen
 description: Services en lidmaatschappen
 audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 8%
 
 ---
-
 
 # Services en lidmaatschappen{#about-services-and-subscriptions}
 
@@ -23,4 +21,4 @@ U kunt uw leveringsontvangers ook toelaten om hen met leden van hun sociaal of p
 
 >[!NOTE]
 >
->Deze functionaliteit wordt standaard geleverd bij Adobe Campaign. Met de optionele toepassing, Social Marketing, kunt u contact opnemen met uw klanten en vooruitzichten via Facebook en Twitter.
+>Deze functionaliteit wordt standaard geleverd bij Adobe Campaign. Met de optionele toepassing, Social Marketing, kunt u via Facebook en Twitter contact opnemen met uw klanten en vooruitzichten.
