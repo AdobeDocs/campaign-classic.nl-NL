@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Stacktracering in Linux
 description: Stacktracering in Linux
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 11%
 
 ---
-
 
 # Stacktracering in Linux{#stack-trace-in-linux}
 
@@ -23,6 +21,7 @@ Een **stackspoor** vertegenwoordigt een spoor in een **core** typedossier. Dit b
 >
 >* Een **core**-bestand krijgt de naam **core.`<num>`**.
 >* **gdb - De GNU-** foutopsporing moet op de computer zijn geïnstalleerd.
+
 >
 
 
@@ -67,4 +66,3 @@ Bijvoorbeeld:
 ```
 gdb nlserver.1823 <coreFile>
 ```
-
