@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Tijdelijke bestanden
 description: Tijdelijke bestanden
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
+exl-id: e77800f5-c0ae-446d-8ff3-bc8a18c97dbd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 4%
 
 ---
-
 
 # Tijdelijke bestanden{#temporary-files}
 
