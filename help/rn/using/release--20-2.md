@@ -3,15 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: Release 20.2
 description: Release 20.2
-feature: Overview
+feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-translation-type: tm+mt
-source-git-commit: 1c59afc7021af604559184cd0c21129af3759a8c
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
 source-wordcount: '2970'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -21,13 +20,13 @@ ht-degree: 87%
 
 _15 april 2021_
 
-* Oplossing voor een regressie van de clientconsole die tot permanente foutberichten op het IMS-verbindingsscherm leidde. (NEO-34821)
+* Er is een probleem met een regressie van de clientconsole opgelost die tot permanente foutberichten op het IMS-verbindingsscherm leidde. (NEO-34821)
 
 **Alleen de console-upgrade is verplicht. Er is geen serverupgrade vereist.**
 
 >[!NOTE]
 >
-> Maak verbinding met [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/nl/campaign.html) om de nieuwe versie te downloaden. [Op deze pagina ](../../installation/using/client-console-availability-for-windows.md) leert u hoe u de console-update aan alle eindgebruikers kunt voorstellen.
+> Maak verbinding met [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) om de nieuwe versie te downloaden. [Op deze pagina ](../../installation/using/client-console-availability-for-windows.md) leert u hoe u de console-update aan alle eindgebruikers kunt voorstellen.
 
 _31 maart 2021_
 
@@ -50,7 +49,7 @@ _31 maart 2021_
 
 _15 april 2021_
 
-* Oplossing voor een regressie van de clientconsole die tot permanente foutberichten op het IMS-verbindingsscherm leidde. (NEO-34821)
+* Er is een probleem met een regressie van de clientconsole opgelost die tot permanente foutberichten op het IMS-verbindingsscherm leidde. (NEO-34821)
 * Er is een regressie opgelost die verhinderde dat bepaalde onderdelen van de console konden worden gebruikt, zoals de datumkiezer en afbeeldingsbeheer in verzendingen. (NEO-31453, NEO-31454)
 
 **Alleen de console-upgrade is verplicht. Er is geen serverupgrade vereist.**
@@ -202,7 +201,7 @@ Kom meer te weten in de [Campaign-compatibiliteitsmatrix](https://helpx.adobe.co
 
 **Verbeteringen**
 
-* Transactionele berichten zijn verbeterd voor een betere gebruikerservaring. U kunt nu de publicatie van een transactionele berichtsjabloon ongedaan maken, waardoor deze uit de uitvoeringsinstanties wordt verwijderd. [Meer informatie](../../message-center/using/template-unpublication.md).
+* Transactionele berichten zijn verbeterd voor een betere gebruikerservaring. U kunt nu de publicatie van een transactionele berichtsjabloon ongedaan maken, waardoor deze uit de uitvoeringsinstanties wordt verwijderd. [Meer informatie](../../message-center/using/publishing-message-templates.md#template-unpublication).
 
 * Er zijn nieuwe opties beschikbaar om beperkingen in te stellen bij het verzenden van e-mails die afbeeldingen of bijlagen bevatten. Deze beveiligingen kunnen prestatieproblemen vermijden, wat in het bijzonder nuttig is bij transactionele berichten. [Meer informatie](../../installation/using/configuring-campaign-options.md#delivery)
 
