@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Hypothesesjablonen
 description: Hypothesesjablonen
 audience: campaign
 content-type: reference
 topic-tags: response-manager
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 0%
 
 ---
-
 
 # Hypothesesjablonen{#hypothesis-templates}
 
@@ -235,4 +233,3 @@ In dit voorbeeld, gaan wij een hypothesemalplaatje op een direct-mailtype leveri
    Met de gemaakte sjabloon kunt u dus hypothesen uitvoeren op de producten of artikelen in de aankooptabel.
 
 1. Klik **[!UICONTROL Save]** om uw malplaatje te registreren.
-
