@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Marketingscampagnes maken
 description: Meer informatie over het maken en uitvoeren van marketingcampagnes
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 2%
 
 ---
-
 
 # Aan de slag met marketingcampagnes{#setting-up-marketing-campaigns}
 
@@ -31,7 +29,7 @@ Een marketingcampagne maken:
 
 1. Leveringen goedkeuren. [Meer informatie](../../campaign/using/marketing-campaign-approval.md).
 
-1. Leveringen controleren. [Meer informatie](../../campaign/using/marketing-campaign-monitoring.md).
+1. Verzendingen controleren. [Meer informatie](../../campaign/using/marketing-campaign-monitoring.md).
 
 1. Plan campagnes en bijbehorende kosten. [Meer informatie](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
