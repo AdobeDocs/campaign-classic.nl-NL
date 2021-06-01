@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Lijst met rapporten
 description: Lijst met rapporten
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 1%
 
 ---
-
 
 # Lijst met rapporten{#list-of-reports}
 
@@ -361,7 +359,7 @@ De volgende rapporten worden ook ingebouwd verstrekt. Raadpleeg voor meer inform
   </tr> 
   <tr> 
    <td> Geschiedenis van overnames van sociale vooruitzichten (socialVisitorStatistics)<br /> </td> 
-   <td> De geschiedenis van Twitter- en Facebook-perspectiefaankopen is afhankelijk van de sociale marketinginvoegtoepassing.<br /> </td> 
+   <td> De geschiedenis van de het perspectiefverwervingen van Twitter en van Facebook, hangt van de Sociale marketing toe:voegen-on af.<br /> </td> 
    <td> nms:bezoeker<br /> </td> 
   </tr> 
   <tr> 
@@ -371,4 +369,3 @@ De volgende rapporten worden ook ingebouwd verstrekt. Raadpleeg voor meer inform
   </tr> 
  </tbody> 
 </table>
-
