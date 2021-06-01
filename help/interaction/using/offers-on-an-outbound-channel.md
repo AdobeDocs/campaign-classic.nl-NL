@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Aanbiedingen op een uitgaand kanaal
-description: Aanbiedingen op een uitgaand kanaal
+title: Aanbiedingen op een outbound-kanaal
+description: Aanbiedingen op een outbound-kanaal
 audience: interaction
 content-type: reference
 topic-tags: case-study
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 77fee343-09d1-4d60-be43-efe02953a70c
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 3%
 
 ---
 
-
-# Aanbiedingen op een uitgaand kanaal{#offers-on-an-outbound-channel}
+# Aanbiedingen op een outbound-kanaal{#offers-on-an-outbound-channel}
 
 ## Aanbieding via e-mail {#email-offer-delivery}
 
@@ -126,4 +124,3 @@ In onze database is er een categorie reisaanbiedingen voor Afrika. De geschikthe
 1. Om de simulatiegegevens te bewaren, gebruik de geschiedenis of de uitvoerfuncties beschikbaar in het rapport.
 
    ![](assets/offer_simulation_example_013.png)
-
