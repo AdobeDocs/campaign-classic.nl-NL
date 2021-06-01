@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Campagne - de Schakelaar van CRM van de Dynamica van Microsoft
 description: Connect-campagne en Microsoft Dynamics
@@ -7,11 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-translation-type: tm+mt
-source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '947'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -131,7 +129,7 @@ De gebruiker van de app is de gebruiker die de hierboven geregistreerde toepassi
 1. Wijs **Toepassings-id** toe voor [de toepassing die u eerder hebt gemaakt](#get-client-id-microsoft).
 1. Klik op **Rollen beheren** en kies de rol **Systeembeheerder** aan de gebruiker.
 
-## Campagne {#configure-acc-for-microsoft} configureren
+## Campaign configureren {#configure-acc-for-microsoft}
 
 Om de Dynamiek 365 van Microsoft en Campagne te verbinden, moet u een specifieke Externe Rekening in Campagne creëren en vormen.
 
