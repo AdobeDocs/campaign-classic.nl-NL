@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: De levering configureren en verzenden
 description: De levering configureren en verzenden
@@ -7,8 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 5%
@@ -61,7 +59,7 @@ Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Ra
 
 * [Een levering controleren](../../delivery/using/about-delivery-monitoring.md)
 * [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
-* [Berichttracering](../../delivery/using/about-message-tracking.md)
+* [Berichttracking](../../delivery/using/about-message-tracking.md)
 
 ## Het plannen van de levering verzendend {#scheduling-the-delivery-sending}
 
