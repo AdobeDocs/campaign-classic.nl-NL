@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een aanbieding integreren via de wizard
 description: Een aanbieding integreren via de wizard
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 2%
 
 ---
-
 
 # Een aanbieding integreren via de wizard{#integrating-an-offer-via-the-wizard}
 
@@ -117,4 +115,3 @@ Voor meer informatie over leveringsoverzichten, verwijs naar [Campagne - MRM](..
    >[!NOTE]
    >
    >Informatie over de rankings- en gewichten van de aanbieding wordt alleen in de tabel met voorstellen opgeslagen als de aanbiedingen rechtstreeks in de levering worden gegenereerd.
-
