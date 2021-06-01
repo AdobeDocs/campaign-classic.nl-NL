@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Opmerkingen bij de release Campagne 20.3
 description: Opmerkingen bij de release voor campagne 20.3
-feature: Overview
+feature: Overzicht
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
+exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '1952'
-ht-degree: 95%
+source-wordcount: '1949'
+ht-degree: 98%
 
 ---
-
 
 # Release 20.3{#release-20-3}
 
@@ -30,9 +28,9 @@ _27 oktober 2020_
 
 >[!CAUTION]
 >
-> * Deze versie wordt geleverd met een nieuw verbindingsprotocol: Als u verbinding maakt met Campagne via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **30 juni 2021**.
+> * Deze release wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **30 juni 2021** verbinding te kunnen maken met Campaign.
 > * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
-> * Als u de Experience Cloud Triggers integratie door authentificatie Auth gebruikt, moet u naar Adobe I/O gaan zoals [in deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde Auth authentificatiemodus met Campagne zal op **30 November, 2021** worden gepensioneerd.
+> * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overstappen op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde oAuth-verificatiemodus voor Campaign wordt op **30 november 2021** buiten gebruik gesteld.
 
 
 **Nieuwe functies**
