@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een enquête ontwerpen
 description: Een enquête ontwerpen
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
+exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 1%
 
 ---
-
 
 # Een enquête ontwerpen{#building-a-survey}
 
@@ -137,4 +135,3 @@ Wanneer de pagina wordt vernieuwd, zijn de weergegeven vragen anders.
 >[!CAUTION]
 >
 >Wanneer u een vraag willekeurig weergeeft (**[!UICONTROL Display randomly]** optie ingeschakeld op de pagina), moet u ervoor zorgen dat u geen meerkeuzevragen gebruikt waarvoor een of meer selecties verplicht zijn.
-
