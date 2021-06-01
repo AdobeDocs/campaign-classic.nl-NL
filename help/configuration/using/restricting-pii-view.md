@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: PII-weergave beperken
 description: PII-weergave beperken
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 2%
 
 ---
-
 
 # PI-weergave beperken{#restricting-pii-view}
 
@@ -92,4 +90,3 @@ Hieronder ziet u een voorbeeld van de extensie van een logtabel voor het impleme
 >[!NOTE]
 >
 >Deze beperking geldt voor niet-technische gebruikers: een technische gebruiker , met de bijbehorende machtigingen , zal gegevens kunnen ophalen . Deze methode is dus niet 100% veilig.
-
