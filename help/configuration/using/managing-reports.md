@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Rapporten beheren
 description: Rapporten beheren
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 68908664-3cf6-4a6c-a327-c7f059c27aa3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 4%
 
 ---
-
 
 # Rapporten beheren{#managing-reports}
 
@@ -32,4 +30,3 @@ De volgende verslagen hebben betrekking op:
 * **[!UICONTROL Offer analysis]** (offerteanalyse): analyse per datum en kanaal aanbieden.
 * **[!UICONTROL Reactivity rate]** (mobileAppDistribution): reactiviteitsgraad voor de meest recente leveringen.
 * **[!UICONTROL Breakdown of subscriptions]** (mobileAppDistribution): uitsplitsing van actieve abonnementen per mobiele toepassing.
-
