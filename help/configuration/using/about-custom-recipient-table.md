@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Aangepaste tabel voor ontvangers
 description: Aangepaste tabel voor ontvangers
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 5871674ee26766cf08439768df3fb07ea0f99e7b
+exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 2%
 
 ---
-
 
 # Een aangepaste tabel voor ontvangers gebruiken{#about-custom-recipient-table}
 
@@ -23,7 +21,7 @@ Adobe Campaign biedt standaard een standaard ontvangende tabel aan waaraan funct
 
 Als deze extensiemethode voldoende flexibiliteit biedt om een tabel uit te breiden, is het niet mogelijk het aantal velden of koppelingen in de tabel te beperken. Het gebruiken van een niet-standaardlijst, of &quot;externe ontvankelijke lijst&quot;, staat voor een grotere flexibiliteit toe maar vereist bepaalde voorzorgsmaatregelen wanneer het uitvoeren van het.
 
-## Voorschriften {#precisions}
+## Voorzorgsmaatregelen {#precisions}
 
 Met deze functionaliteit kan Adobe Campaign gegevens uit een externe database verwerken: deze gegevens worden gebruikt als een reeks profielen voor leveringen . Bij de implementatie van dit proces zijn verschillende definities nodig die relevant kunnen zijn voor de behoeften van de klant. Bijvoorbeeld:
 
@@ -77,4 +75,3 @@ Bijvoorbeeld:
 * Het standaard **[!UICONTROL Unsubscription link]** verpersoonlijkingsblok moet worden aangepast.
 * De doelafbeelding van de standaardleveringsmalplaatjes moet worden gewijzigd.
 * V4-formulieren zijn niet compatibel met een tabel met externe ontvangers: u moet webtoepassingen gebruiken.
-
