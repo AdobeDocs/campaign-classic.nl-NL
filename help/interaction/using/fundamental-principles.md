@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Grondbeginselen
 description: Grondbeginselen
 audience: interaction
 content-type: reference
 topic-tags: general-operation
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b13ecfc9-1723-42b2-ab30-d5637cc3d0dd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 1%
 
 ---
-
 
 # Grondbeginselen{#fundamental-principles}
 
@@ -42,4 +40,3 @@ Deze twee soorten interactie kunnen worden uitgevoerd in monitaire modus (het aa
 Zodra een aanbieding kan of moet worden ingediend (volgens de uitgevoerde configuraties), speelt de aanbiedingsmotor de intermediaire rol: het berekent automatisch de best mogelijke aanbieding voor een contact tussen beschikbare die door ontvangen gegevens over het contact en de verschillende regels te combineren die kunnen worden toegepast zoals gespecificeerd in de toepassing.
 
 ![](assets/architecture_interaction2.png)
-
