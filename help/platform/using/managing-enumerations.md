@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Opsommingen beheren
 description: Opsommingen beheren
 audience: platform
 content-type: reference
 topic-tags: administration-basics
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
 
 ---
-
 
 # Opsommingen beheren{#managing-enumerations}
 
@@ -161,4 +159,3 @@ Met de **Alias-reinigingsmethode**-workflow worden opsommingswaarden gewist. Sta
 Het wordt betreden via de **[!UICONTROL Administration > Production > Technical workflows]** knoop.
 
 ![](assets/s_ncs_user_itemized_list_alias_wf.png)
-
