@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Omgevingen dupliceren
 description: Omgevingen dupliceren
 audience: production
 content-type: reference
 topic-tags: data-processing
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 1%
 
 ---
-
 
 # Omgevingen dupliceren{#duplicating-environments}
 
@@ -49,7 +47,7 @@ Hiervoor voert u de volgende stappen uit:
    >Eén omgeving kan meerdere instanties bevatten. Elke Adobe Campaign-instantie is onderworpen aan een licentieovereenkomst. Controleer uw licentieovereenkomst om te zien hoeveel omgevingen u kunt hebben.\
    >Met de onderstaande procedure kunt u een omgeving overbrengen zonder dat dit invloed heeft op het aantal omgevingen en instanties dat u hebt geïnstalleerd.
 
-### Voordat ustart {#before-you-start}
+### Voordat u {#before-you-start} start
 
 >[!IMPORTANT]
 >
@@ -69,6 +67,7 @@ De volgende stappen moeten met grote zorg worden uitgevoerd: sommige processen z
 >
 >* De volgende procedure is geldig in de taal PostgreSQL. Als de SQL-taal anders is (bijvoorbeeld Oracle), moeten de SQL-query&#39;s worden aangepast.
 >* De onderstaande opdrachten zijn van toepassing binnen de context van een **prod**-instantie en een **dev**-instantie onder PostgreSQL.
+
 >
 
 
@@ -85,7 +84,7 @@ Onder PostgreSQL, is het bevel:
 pg_dump mydatabase > mydatabase.sql
 ```
 
-### Stap 2 - de configuratie van het doelmilieu (dev)uitvoeren {#step-2---export-the-target-environment-configuration--dev-}
+### Stap 2 - de configuratie van het doelmilieu (dev) {#step-2---export-the-target-environment-configuration--dev-} uitvoeren
 
 De meeste configuratieelementen zijn verschillend voor elke milieu: externe accounts (midsourcing, routering, enz.), technische opties (platformnaam, database-id, e-mailadressen en standaard-URL&#39;s, enz.).
 
@@ -186,7 +185,7 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
    SELECT iStatus, count(*) FROM neolane.xtkworkflow GROUP BY iStatus;
    ```
 
-### Stap 7 - begin het proces van het Web van het doelmilieu (dev)opnieuw {#step-7---restart-the-target-environment-web-process--dev-}
+### Stap 7 - begin het proces van het Web van het doelmilieu (dev) {#step-7---restart-the-target-environment-web-process--dev-} opnieuw
 
 Start in de doelomgeving de Adobe Campaign-processen voor alle servers opnieuw.
 
