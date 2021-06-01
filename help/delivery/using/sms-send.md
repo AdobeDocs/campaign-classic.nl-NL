@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: SMS verzenden, controleren en volgen
 description: Meer informatie over het verzenden, controleren en volgen van SMS in Campagne
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '958'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
-
 
 # Verzenden, controleren en bijhouden van SMS-leveringen{#sms-properties}
 
@@ -62,9 +60,9 @@ De volgende opties zijn beschikbaar:
 
 Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Raadpleeg deze secties voor meer informatie hierover:
 
-* [Een levering controleren](../../delivery/using/about-delivery-monitoring.md)
-* [Uitvoeren van fouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
-* [Berichttracering](../../delivery/using/about-message-tracking.md)
+* [Een verzending controleren](../../delivery/using/about-delivery-monitoring.md)
+* [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
+* [Berichttracking](../../delivery/using/about-message-tracking.md)
 
 ## Binnenkomende berichten verwerken {#processing-inbound-messages}
 
