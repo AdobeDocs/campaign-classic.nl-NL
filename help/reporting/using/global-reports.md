@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Algemene rapporten
 description: Algemene rapporten
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 1%
 
 ---
-
 
 # Algemene rapporten {#global-reports}
 
@@ -195,7 +193,7 @@ Deze sectie omvat twee grafieken die de indeling van de deelactiviteiten vertege
 
 ## Statistieken over het delen van activiteiten {#statistics-on-sharing-activities}
 
-Dit rapport laat de evolutie zien van aandelen in sociale netwerken (Facebook, Twitter, e-mail, enz.) op tijd.
+Dit verslag laat de ontwikkeling zien van aandelen in sociale netwerken (Facebook, Twitter, e-mail, enz.) op tijd.
 
 Zie [deze sectie](../../delivery/using/viral-and-social-marketing.md) voor meer informatie over virale marketing.
 
