@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Social marketing
 description: Leer hoe u via Campagne communiceert met klanten via Facebook en Twitter.
 audience: social
 content-type: reference
 topic-tags: introduction
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: c8fd5f75-9386-42dd-bfb6-8086a86aa324
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 4%
 
 ---
-
 
 # Social marketing{#about-social-marketing}
 
@@ -23,12 +21,12 @@ Met de toepassing **Sociale netwerken beheren** (Sociale marketing) die is ontwo
 
    Met Social Marketing kunt u berichten verzenden op Facebook en Twitter.
 
-   * Met Adobe Campaign kunt u berichten rechtstreeks op uw Facebook-pagina en op uw Twitter-account plaatsen.
-   * U kunt ook directe berichten sturen naar al uw Twitter-volgers.
+   * Met Adobe Campaign kun je berichten rechtstreeks op het prikbord van Facebook en op je twitter-account plaatsen.
+   * Je kunt ook directe berichten sturen naar al je Twitter-volgers.
 
 1. **Het verkrijgen van nieuwe contacten**
 
-   Met Adobe Campaign Social Marketing kunt u ook eenvoudig nieuwe contactpersonen aanschaffen via Facebook: Neem contact op met gebruikers en vraag hen of zij hun profielgegevens willen delen. Als ze het accepteren, herstelt Adobe Campaign automatisch de gegevens, waarmee u doelgerichte campagnes kunt voeren en waar mogelijk kanaalstrategieën kunt implementeren.
+   Met Adobe Campaign Social Marketing kunt u ook eenvoudig nieuwe contacten aanknopen via Facebook: Neem contact op met gebruikers en vraag hen of zij hun profielgegevens willen delen. Als ze het accepteren, herstelt Adobe Campaign automatisch de gegevens, waarmee u doelgerichte campagnes kunt voeren en waar mogelijk kanaalstrategieën kunt implementeren.
 
 >[!IMPORTANT]
 >
