@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Tracking van tests
 description: Tracking van tests
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 16ad36b7-c13e-4b77-86ca-41c9ef174172
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 3%
 
 ---
-
 
 # Tracking van tests{#testing-tracking}
 
@@ -39,4 +37,3 @@ U kunt het bijhouden van wijzigingen testen op spiegelpagina&#39;s, e-maillogboe
    Als u het bijhouden van e-maillogbestanden wilt controleren, zoekt u de waarden **Open** en **[!UICONTROL Email click]** in de kolom **Type**.
 
    Als de open logboeken niet verschijnen, ga naar de levering en open zijn **Eigenschappen** om ervoor te zorgen dat zowel **het volgen** als **[!UICONTROL Opens tracking]** opties wordt gecontroleerd.
-
