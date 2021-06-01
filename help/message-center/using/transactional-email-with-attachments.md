@@ -1,27 +1,26 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Bijlagen toevoegen aan transactieberichten met Adobe Campaign Classic
-description: Leer hoe je transactie-e-mails kunt verzenden met individuele en/of gepersonaliseerde bijlagen met Adobe Campaign Classic
+title: Transactionele e-mails verzenden met bijlagen
+description: Leer hoe je transactie-e-mails kunt verzenden met individuele en/of gepersonaliseerde bijlagen met Adobe Campaign Classic.
 audience: message-center
 content-type: reference
 topic-tags: use-case
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 1%
+source-wordcount: '625'
+ht-degree: 2%
 
 ---
 
-
-# Hoofdlettergebruik: Transactiee-mails verzenden met bijlagen{#transactional-email-with-attachments}
+# Hoofdlettergebruik: Transactiee-mails verzenden met bijlagen {#transactional-email-with-attachments}
 
 Het doel van dit gebruiksgeval is het toevoegen van e-mailbijlagen tijdens de vlucht aan uitgaande verzendingen.
 
-## Belangrijke stappen {#key-steps}
+## Belangrijkste stappen {#key-steps}
 
-In dit scenario leert u hoe u transactie-e-mails met individuele en/of gepersonaliseerde bijlagen kunt verzenden. De bijlagen worden niet vooraf geüpload naar de Transactieberichten-server: in plaats daarvan worden ze tijdens de vlucht gegenereerd .
+In dit scenario leert u hoe u transactie-e-mails met individuele en/of gepersonaliseerde bijlagen kunt verzenden. De bijlagen worden niet vooraf geüpload op de Transactionele berichtenserver: in plaats daarvan worden ze tijdens de vlucht gegenereerd .
 
 Wanneer u interactie of details van klanten vastlegt, moet u deze informatie mogelijk aan het einde van het proces terugsturen naar de klant, bijvoorbeeld in een PDF-bestand dat aan een e-mail is gekoppeld.
 
@@ -47,9 +46,9 @@ In dit scenario worden de bijlagen niet vooraf gemaakt, maar direct toegevoegd a
 
 Lees de onderstaande richtlijnen zorgvuldig door voordat u dit scenario implementeert:
 
-* De instanties van het Overseinen van de Transactie zouden niet moeten worden gebruikt om, dossiers of gegevens op te slaan uit te voeren of te uploaden. Ze kunnen alleen worden gebruikt voor gebeurtenisgegevens en gerelateerde informatie. Ze moeten niet worden beschouwd als een bestandsopslagsysteem.
-* Aangezien er geen directe toegang tot de instanties of servers van het Overseinen van de Transactie buiten Adobe is, is er geen standaardmanier om dergelijke dossiers op deze servers (geen toegang van FTP) te duwen.
-* Het is contractueel niet correct om de schijfruimte op de instanties van het Overseinen van de Transactie te gebruiken om dossiers van om het even welke soort op te slaan, zelfs niet voor gehechtheid.
+* De instanties van het Transactionele overseinen zouden niet moeten worden gebruikt om, dossiers of gegevens op te slaan uit te voeren of te uploaden. Ze kunnen alleen worden gebruikt voor gebeurtenisgegevens en gerelateerde informatie. Ze moeten niet worden beschouwd als een bestandsopslagsysteem.
+* Aangezien er geen directe toegang tot de Transactionele overseineninstanties of servers buiten Adobe is, is er geen standaardmanier om dergelijke dossiers op deze servers (geen toegang van FTP) te duwen.
+* Het is contractueel niet correct om de schijfruimte op de Transactionele overseineninstanties te gebruiken om dossiers van om het even welke soort op te slaan, zelfs niet voor gehechtheid.
 * U moet een ander online schijfsysteem gebruiken om deze bestanden te hosten. U hebt FTP-toegang tot dit systeem nodig en u moet bestanden kunnen schrijven en verwijderen.
 
 >[!NOTE]
