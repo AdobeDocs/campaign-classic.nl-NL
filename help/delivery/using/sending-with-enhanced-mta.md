@@ -6,14 +6,13 @@ description: Meer informatie over de reikwijdte en de specifieke kenmerken van h
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: tm+mt
-source-git-commit: 6eb29742d5884096f2d06b763823aede48f5dcb3
+exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
+source-git-commit: 54d503e97a4374927c4ebe3ba4e0ec05e51d47db
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 3%
 
 ---
-
 
 # Verzenden met de Enhanced MTA {#sending-with-enhanced-mta}
 
@@ -98,7 +97,7 @@ Voor klanten die de functionaliteit van het de transactieoverseinen van Adobe Ca
 
 ### Verbeterde MTA-headers
 
-De recentste instanties van de Campaign Classic omvatten code die de vereiste Verbeterde kopballen MTA aan elk bericht toevoegt. Als u Adobe Campaign 19.1 (build 9032) of hoger gebruikt en dit niet het geval is, moet u [Adobe Klantzorg ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) verzoeken om de parameter &quot;useMomentum=true&quot; toe te voegen aan de configuratie van de uitvoeringsinstantie (in het bestand [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta)), wat uw marketinginstantie kan zijn, [-sourcing instantie](../../installation/using/mid-sourcing-server.md), of [instantie voor het uitvoeren van transactieberichten](../../message-center/using/creating-a-shared-connection.md#execution-instance), afhankelijk van uw configuratie.
+De recentste instanties van de Campaign Classic omvatten code die de vereiste Verbeterde kopballen MTA aan elk bericht toevoegt. Als u Adobe Campaign 19.1 (build 9032) of hoger gebruikt en dit niet het geval is, moet u [Adobe Klantzorg ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) verzoeken om de parameter &quot;useMomentum=true&quot; toe te voegen aan de configuratie van de uitvoeringsinstantie (in het bestand [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta)), wat uw marketinginstantie kan zijn, [-sourcing instantie](../../installation/using/mid-sourcing-server.md), of [instantie voor het uitvoeren van transactieberichten](../../message-center/using/configuring-instances.md#execution-instance), afhankelijk van uw configuratie.
 
 Nochtans, als u een oudere instantie gebruikt die deze code niet omvat, moet een nieuwe typologieregel genoemd **[!UICONTROL Typology Rule for Enhanced MTAs]** aan alle bestaande typologieën in uw instantie van de Campagne worden toegevoegd.
 Deze regel wordt toegevoegd door een **[!UICONTROL Typology]** pakket dat als deel van de verbetering aan Verbeterde MTA wordt geïnstalleerd.
