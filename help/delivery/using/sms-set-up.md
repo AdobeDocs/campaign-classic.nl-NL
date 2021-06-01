@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: SMS-kanaal voor campagne instellen
 description: Leer hoe te om het kanaal van SMS in Campagne te vormen
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-translation-type: tm+mt
-source-git-commit: 5a084ebe5295d19de24cf92c721d4692f0f5deb8
+exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1677'
 ht-degree: 34%
 
 ---
 
-
-# SMS-kanaal {#setting-up-sms-channel} configureren
+# Sms-kanaal configureren {#setting-up-sms-channel}
 
 Als u naar een mobiele telefoon wilt verzenden, hebt u het volgende nodig:
 
@@ -125,7 +123,7 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
    <td> £ </td> 
    <td> _ </td> 
    <td> ! </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> A </td> 
    <td> Q </td> 
    <td> a </td> 
