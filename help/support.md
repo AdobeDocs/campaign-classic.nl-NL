@@ -1,11 +1,10 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 'Help- en ondersteuningsopties voor Campaign Classic '
 description: Hebt u ondersteuning voor Campaign Classic nodig? U bent op de juiste plaats.
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 57%
@@ -56,7 +55,7 @@ Hoe te aan een nieuwe bouwstijl te bevorderen? hoe kan de uitvoering van de work
         <li><a href="workflow/using/workflow-best-practices.md">Workflowprestaties optimaliseren</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Problemen met workflowuitvoering oplossen</a></li>
         <li><a href="platform/using/sftp-server-usage.md">SFTP-servergebruik</a></li>
-        <li><a href="delivery/using/understanding-delivery-failures.md">Verzendingsfouten begrijpen</a></li>
+        <li><a href="delivery/using/understanding-delivery-failures.md">Leveringsfouten begrijpen</a></li>
         </ul>
     </td>
    <td valign="top">
