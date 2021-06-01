@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Binnenkomende kanalen
-description: Binnenkomende kanalen
+title: Inbound-kanalen
+description: Inbound-kanalen
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
-translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+exl-id: 33247728-b865-4dfd-814f-2900965a7187
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 4%
 
 ---
 
-
-# Binnenkomende kanalen{#about-inbound-channels}
+# Inbound-kanalen{#about-inbound-channels}
 
 De aanbiedingen kunnen op diverse aanbiedingsruimten worden voorgesteld gebruikend een binnenkomend of uitgaand kanaal. In dit hoofdstuk worden enkele specifieke functies voor binnenkomende kanalen beschreven.
 
