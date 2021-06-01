@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Profielen exporteren en importeren
 description: Profielen exporteren en importeren
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: fd0f7b6e-84e1-442d-ae88-817fb6758d64
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 15%
+ht-degree: 18%
 
 ---
 
-
-# Profielen{#exporting-and-importing-profiles} importeren en exporteren
+# Profielen importeren en exporteren{#exporting-and-importing-profiles}
 
 U kunt [workflows gebruiken](#use-workflows) om ontvangersprofielen te importeren of te exporteren naar een Adobe Campaign-database, of u kunt [generieke import- of exporttaken](#create-jobs) instellen.
 
