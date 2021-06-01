@@ -1,16 +1,14 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: TechNote
 description: TechNote
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-translation-type: tm+mt
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1107'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
@@ -26,14 +24,14 @@ Om veiligheidsredenen moet u nu een upgrade uitvoeren naar een van de onderstaan
 
 >[!NOTE]
 >
->Voor vragen over deze wijzigingen neemt u contact op met [Adobe Customer Care](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Voor vragen over deze wijzigingen neemt u contact op met de [Adobe-klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## Beveiligingsupdates {#acc-security-updates}
 
 De recentste versies van de Campagne komen met een veiligheidsmoeilijke situatie die bescherming tegen de kwesties van het Verzoek van de Server van de Zijde (SSRF) versterkt. Meer informatie [op deze pagina](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html).
 
-**Heb je invloed op?**
+**Heeft dit gevolgen voor u?**
 
 Als uw omgeving zich op een lagere build bevindt dan de hieronder vermelde, heeft dit gevolgen voor u:
 
@@ -77,7 +75,7 @@ Adobe Identity Service (IMS) biedt geen ondersteuning meer voor oude Internet Ex
 
 Een upgrade van de Campagne Client Console is vereist om compatibiliteit met Adobe IMS te garanderen.
 
-**Heb je invloed op?**
+**Heeft dit gevolgen voor u?**
 
 Als u via een Adobe ID](../integrations/using/about-adobe-id.md) via Adobe Identity Management Service (IMS) verbinding maakt met Campagne, is een upgrade naar een van de onderstaande nieuwe versies verplicht:[
 
@@ -109,7 +107,7 @@ Zodra alle instanties worden bevorderd, moet de Console van de Cliënt ook aan d
 
 De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt. De de integratieauthentificatie van trekkers, oorspronkelijk gebaseerd op de authentificatie van AUTH om tot pijpleiding toegang te hebben, is bewogen aan Adobe I/O. Deze wordt op **30 november 2021** ingetrokken. [Meer informatie](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
-**Heb je invloed op?**
+**Heeft dit gevolgen voor u?**
 
 Als uw instanties op een **oudere versie dan Campagne 19.1.8, 20.2.4, Gouden Standaard 11** lopen, dan gebruikt u een oudere versie van de integratie van Triggers door authentificatie Auth: **u moet een upgrade uitvoeren naar een nieuwere versie en overschakelen naar Adobe I/O**.
 
@@ -154,7 +152,7 @@ Op 29 maart 2021 heeft een APN-infrastructuurupdate (Apple Push Notification ser
 
 Meer informatie over APNs verandert [op deze pagina](https://developer.apple.com/news/?id=7gx0a2lp).
 
-**Heb je invloed op?**
+**Heeft dit gevolgen voor u?**
 
 Als u via Campagne pushmeldingen verzendt op iOS-apparaten, heeft dit gevolgen voor u.
 
@@ -170,5 +168,5 @@ Als klant op locatie/hybride dient u uw configuratie bij te werken voor een naad
 
 * [Upgrade uw omgeving](../production/using/build-upgrade.md)
 * [Veelgestelde vragen over buildupgrades](../platform/using/faq-build-upgrade.md)
-* [Campaign Classic-build downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/nl/campaign.html)
+* [Campaign Classic-build downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [De nieuwe clientconsole beschikbaar maken voor gebruikers](../installation/using/client-console-availability-for-windows.md)
