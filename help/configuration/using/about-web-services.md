@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Webservices
 description: Webservices
 audience: configuration
 content-type: reference
 topic-tags: api
-translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 4%
 
 ---
-
 
 # Webservices{#about-web-services}
 
