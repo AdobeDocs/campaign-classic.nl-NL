@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Deduplicatie
 description: Meer informatie over de deduplicatieworkflowactiviteit
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 55e2297c5c60a48be230d06a3c1880d79b8ea5f2
+exl-id: 38add4fe-6238-45de-863e-895ebca189b7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 10%
 
 ---
-
 
 # Deduplicatie{#deduplication}
 
@@ -109,7 +107,7 @@ Als u een deduplicatie wilt configureren, voert u het label, de methode en de cr
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
-## Voorbeeld: Duid de duplicaten vóór een leveringaan {#example--identify-the-duplicates-before-a-delivery}
+## Voorbeeld: Duid de duplicaten vóór een levering {#example--identify-the-duplicates-before-a-delivery} aan
 
 In het volgende voorbeeld betreft de deduplicatie de samenvoeging van drie vragen.
 
