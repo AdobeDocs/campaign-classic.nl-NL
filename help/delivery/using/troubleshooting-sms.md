@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Problemen met sms oplossen
 description: Meer informatie over het oplossen van problemen met SMS-kanalen
 audience: delivery
 content-type: reference
 topic-tags: configuring-channels
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2744'
 ht-degree: 0%
 
 ---
-
 
 # SMS-probleemoplossing {#troubleshooting-sms}
 
@@ -203,7 +201,7 @@ Met hexadecimaal kunt u het verschil zien tussen vergelijkbare tekens. Een L in 
 
 Om unicode in hexadecimaal om te zetten, kunt u online hulpmiddelen zoals [de code van Unicode converter](https://r12a.github.io/app-conversion/) website gebruiken. Typ uw tekst, controleer of er geen PII zoals telefoonnummers is en klik op **Omzetten**. De hexadecimale waarden worden onderaan weergegeven (UTF-32-zone).
 
-Wanneer het openen van kaartjes over coderingsproblemen, of met de leverancier of [Adobe de Zorg van de Klant ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), altijd een hexadecimale versie omvat van wat u typt en wat u ziet.
+Wanneer het openen van kaartjes over coderingsproblemen, of met de leverancier of [Adobe de Zorg van de Klant ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), altijd een hexadecimale versie omvat van wat u typt en wat u ziet.
 
 **Stap 3: Weet wat u moet verzenden**
 
