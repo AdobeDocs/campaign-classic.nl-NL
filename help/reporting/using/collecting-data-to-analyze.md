@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Data verzamelen om te analyseren
 description: Data verzamelen om te analyseren
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 3%
 
 ---
-
 
 # Data verzamelen om te analyseren{#collecting-data-to-analyze}
 
@@ -81,4 +79,3 @@ Vorm het aantal verslagen dat via de vraag moet worden gehaald gebruikend de res
 
 * **[!UICONTROL Limit to first record]** om één resultaat te extraheren,
 * **[!UICONTROL Size]** om een ingesteld aantal records te extraheren.
-
