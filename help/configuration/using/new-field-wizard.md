@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Wizard Nieuw veld
 description: Wizard Nieuw veld
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 2350a531-7a26-4f26-90fe-8dac0cc26605
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 4%
 
 ---
-
 
 # Wizard Nieuw veld{#new-field-wizard}
 
@@ -50,4 +48,3 @@ In ons voorbeeld wordt automatisch een extensiebestand met de naam &#39;cus:rece
 >[!NOTE]
 >
 >Standaard worden de toegevoegde velden gedeclareerd met de eigenschap **user** (met de waarde &quot;true&quot;). Hiermee kunt u het veld in de invoervorm van het uitgebreide schema weergeven en bewerken met behulp van een &quot;treeEdit&quot;-type besturingselement (zie Invoerformulier).
-
