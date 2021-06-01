@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een e-maillevering maken
 description: Een e-maillevering maken
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 7f44e732-4257-4d2a-800c-bde847e20f52
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 21%
 
 ---
-
 
 # Een e-maillevering maken{#creating-an-email-delivery}
 
