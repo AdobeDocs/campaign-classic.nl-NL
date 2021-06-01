@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 54d503e97a4374927c4ebe3ba4e0ec05e51d47db
 workflow-type: tm+mt
 source-wordcount: '1541'
 ht-degree: 8%
@@ -112,7 +112,7 @@ Als u een opgesplitste architectuur hebt, moet u de uitvoeringsinstanties specif
 
    Wachtwoord van de account zoals gedefinieerd in de map met operatoren.
 
-Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../message-center/using/creating-a-shared-connection.md#control-instance).
+Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../message-center/using/configuring-instances.md#control-instance).
 
 
 ## Toegang tot externe systeemrekeningen
