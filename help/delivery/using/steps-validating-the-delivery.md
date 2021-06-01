@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: De levering valideren
 description: De levering valideren
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
-source-git-commit: ba50892f7b9578cface142184a287d95c0e11370
+exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1663'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
-
-# De levering {#validating-the-delivery} valideren
+# De levering valideren {#validating-the-delivery}
 
 Wanneer een levering is gecreeerd en gevormd, moet u het bevestigen alvorens het naar het belangrijkste doel te verzenden.
 
@@ -127,7 +125,7 @@ Als een levering te groot is, is het beter om een lage prioriteit aan het toe te
 >
 >Om ervoor te zorgen dat de grotere leveringsanalyses de vooruitgang van uw werkschema&#39;s niet vertragen, kunt u hun uitvoeringen plannen door **[!UICONTROL Schedule execution for a time of low activity]** te tikken.
 
-## Een proefdruk {#sending-a-proof} verzenden
+## Een proef verzenden {#sending-a-proof}
 
 Adobe raadt u ten zeerste aan een cyclus voor leveringsvalidatie in te stellen om mogelijke fouten in de berichtconfiguratie op te sporen. Zorg ervoor dat de content zo vaak als nodig wordt goedgekeurd door proeven naar testontvangers te verzenden. Telkens wanneer een wijziging wordt aangebracht, moet voor de goedkeuring van de content een proef worden verzonden.
 
