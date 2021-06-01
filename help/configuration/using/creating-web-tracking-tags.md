@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Tags voor webtracering maken
-description: Tags voor webtracering maken
+title: Tags voor webtracking maken
+description: Tags voor webtracking maken
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 160df6e1-43e5-4eb9-ad2f-5db444e314ea
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 4%
 
 ---
 
-
-# Tags voor webtracering maken{#creating-web-tracking-tags}
+# Tags voor webtracking maken{#creating-web-tracking-tags}
 
 Op elke pagina van de site die u wilt bijhouden, moet in uw Adobe Campaign-platform worden verwezen. Deze verwijzing kan op twee manieren worden uitgevoerd:
 
