@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Aanvullende parameters voor webtracking
 description: Meer informatie over parameters voor webtracking
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 1%
 
 ---
-
 
 # Aanvullende parameters{#additional-parameters}
 
@@ -112,4 +110,3 @@ adobe@selma:~$ systemctl start apache2
 >[!NOTE]
 >
 >Voor Linux, als u de grootte van **webTrackingParamSize** of **maxSharedLogs** parameters verhoogt, kunt u de grootte van het gedeelde geheugen (SHM) moeten verhogen.
-
