@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Simulatiebereik
 description: Simulatiebereik
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 4f6b3de2-3fdf-441d-925d-476e20e75c6f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 2%
 
 ---
-
 
 # Simulatiebereik{#simulation-scope}
 
@@ -51,4 +49,3 @@ U kunt de simulatieanalyse verbeteren door rapportassen op het doel of de aanbie
 Om dit te doen, klik **[!UICONTROL Add]** knoop en kies de aangewezen gebieden. De assen zullen voor de berekening van de simulatie worden gebruikt en worden getoond in het analyseverslag. Raadpleeg [Simulatie bijhouden](../../interaction/using/simulation-tracking.md) voor meer informatie hierover.
 
 ![](assets/offer_simulation_011.png)
-
