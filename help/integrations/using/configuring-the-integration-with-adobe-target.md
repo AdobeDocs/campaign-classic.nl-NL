@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Integratie met Adobe Target configureren
 description: Integratie met Adobe Target configureren
 audience: integrations
 content-type: reference
 topic-tags: adobe-target
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
 
 ---
-
 
 # De integratie configureren met Adobe Target{#configuring-the-integration-with-adobe-target}
 
@@ -34,6 +32,4 @@ Adobe Campaign configureren:
 
    * **[!UICONTROL TNT_EdgeServer]** : Adobe Target-server gebruikt voor integratie. Deze optie is standaard al geselecteerd. Deze waarde komt overeen met de Adobe Target **[!UICONTROL Domain Server]**, gevolgd door de waarde **/m2**. Bijvoorbeeld: **tt.omtrdc.net/m2**.
    * **[!UICONTROL TNT_TenantName]** : Naam van Adobe Target-organisatie. Deze waarde komt overeen met de naam van de Adobe Target **[!UICONTROL Client]**.
-
    ![](assets/tar_options.png)
-
