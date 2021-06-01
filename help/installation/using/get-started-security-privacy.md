@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Aan de slag met beveiliging en privacy
 description: Meer informatie over de belangrijkste elementen die gecontroleerd moeten worden met betrekking tot beveiliging en privacy.
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: 922603492d2c98d751683d3aa481e9ab19bca70c
+exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 3%
+ht-degree: 8%
 
 ---
-
 
 # Aan de slag met beveiliging en privacy {#get-started-security-privacy}
 
@@ -44,7 +42,7 @@ Toegangsbeheer is een belangrijk onderdeel van de beveiliging. Hier volgen enkel
 
 [Meer informatie](../../installation/using/access-management.md)
 
-## Richtlijnen voor scripts en codering
+## Richtlijnen voor scripting en versleuteling
 
 <img src="assets/do-not-localize/icon_scripting.svg" width="60px">
 
