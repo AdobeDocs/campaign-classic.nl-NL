@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 'De mobiele applicatie configureren in Adobe Campaign '
 description: Leer hoe u begint met de configuratie van de mobiele toepassing
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
-source-git-commit: 965aee2e310dd7e35d7a65bf9a1bda5dc8eb0959
+exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
-
-# Aan de slag met de app-configuratie
+# Aan de slag met de appconfiguratie
 
 U kunt in deze sectie een configuratiemonster vinden die op een bedrijf wordt gebaseerd dat online vakantiepakketten verkoopt. Zijn mobiele toepassing (Neotrips) is beschikbaar aan zijn klanten in twee versies: Neotrips voor Android en Neotrips voor iOS.
 
@@ -35,7 +33,7 @@ Als u pushberichten wilt verzenden in Adobe Campaign, moet u:
 
 ![](assets/do-not-localize/how-to-video.png) [Leer hoe u het pakket voor de mobiele app in video installeert](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
 
-Als hybride/gehoste klant neemt u contact op met het team van [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om toegang te krijgen tot het pushmeldingskanaal in Campagne.
+Als hybride/gehoste klant neemt u contact op met het team van [Adobe Customer Care](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om toegang te krijgen tot het pushmeldingskanaal in Campagne.
 
 Als klant op locatie moet u een ingebouwd pakket installeren.
 
