@@ -1,13 +1,11 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Campaign
 description: Campagne
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 3%
@@ -15,7 +13,7 @@ ht-degree: 3%
 ---
 
 
-# Campaign{#campaign}
+# Campagne{#campaign}
 
 De hieronder beschreven workflows worden standaard geïnstalleerd met de **Campagne**-module. Voor meer op deze module, verwijs naar dit [sectie](../../campaign/using/designing-marketing-campaigns.md).
 
