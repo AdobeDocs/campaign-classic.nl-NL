@@ -1,32 +1,30 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Toegang tot Netezza configureren
-description: Leer hoe u toegang tot Netezza kunt configureren in FDA
+description: Leer hoe te om toegang tot Netezza in FDA te vormen
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b148d34b-4060-4c54-9cb2-9e712a7c17d7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%
 
 ---
 
-
 # Toegang tot Netezza {#configure-access-to-netezza} configureren
 
 Gebruik de optie Campagne [Federated Data Access](../../installation/using/about-fda.md) (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Netezza te configureren.
 
-1. [Netezza-stuurprogramma&#39;s installeren en configureren](#netezza-config)
-1. Netezza [externe account](#netezza-external) configureren in campagne
+1. [Drivers voor Netezza&#39;s installeren en configureren](#netezza-config)
+1. De Netezza [externe account](#netezza-external) configureren in campagne
 
-## Netezza-configuratie {#netezza-config}
+## Configuratie van netezza {#netezza-config}
 
-Als u verbinding maakt met een externe Netezza-database in FDA, hebt u hieronder aanvullende configuraties op de Adobe Campaign-server nodig:
+Als u verbinding maakt met een externe database van een Netezza in FDA, hebt u hieronder aanvullende configuraties op de Adobe Campaign-server nodig:
 
-1. Installeer de ODBC-stuurprogramma&#39;s voor Netezza volgens het besturingssysteem dat u gebruikt:
+1. Installeer de ODBC-stuurprogramma&#39;s voor Netezza, afhankelijk van het besturingssysteem dat u gebruikt:
 
    * **nz-linuxclient-v7.2.0.0.tar.** gzfor Linux. Selecteer de map die overeenkomt met uw besturingssysteem (linux of linux64) en start de opdracht Uitpakken. U kunt de installatie laten uitvoeren in de opslagplaats die standaard wordt voorgesteld: &quot;/usr/local/nz&quot;.
    * **nz-winclient-v7.2.0.0.** zipfor Windows. Pak het bestand uit en start het uitvoerbare script dat overeenkomt met uw besturingssysteem: nzodbcsetup.exe of nzodbcsetup64.exe. Volg de aanwijzingen van de wizard om de installatie van de stuurprogramma&#39;s te voltooien.
@@ -67,11 +65,11 @@ Als u verbinding maakt met een externe Netezza-database in FDA, hebt u hieronder
 
    * **LD_LIBRARY_PATH**: /usr/local/nz/lib en /usr/local/nz/lib64. &quot;/usr/local/nz&quot; komt overeen met de standaardopslagplaats voor de installatie van de stuurprogramma&#39;s. Hier moet u de opslagplaats specificeren die u voor de installatie hebt geselecteerd.
    * **ODBCINI**: locatie van het bestand odbc.ini (bijvoorbeeld /etc/odbc.ini).
-   * **NZ_ODBC_INI_PATH**: locatie van het bestand odbc.ini. Netezza heeft deze tweede variabele ook nodig voor het gebruik van het bestand odbc.ini.
+   * **NZ_ODBC_INI_PATH**: locatie van het bestand odbc.ini. Netezza vereist ook deze tweede variabele voor het gebruiken van het odbc.ini- dossier.
 
-## Netezza externe account {#netezza-external}
+## Externe rekening van netezza {#netezza-external}
 
-Met de externe Netezza-account kunt u uw Campagne-instantie verbinden met uw externe Netezza-database.
+Met de externe account van de Netezza kunt u uw Campagne-instantie verbinden met uw Netezza externe database.
 
 1. Klik in Campagne **[!UICONTROL Explorer]** op **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
@@ -81,7 +79,7 @@ Met de externe Netezza-account kunt u uw Campagne-instantie verbinden met uw ext
 
    * **[!UICONTROL Type]**: Netezza
 
-   * **[!UICONTROL Server]**: URL van de Netezza-server
+   * **[!UICONTROL Server]**: URL van de server van de Netezza
 
    * **[!UICONTROL Account]**: Naam van de gebruiker
 
