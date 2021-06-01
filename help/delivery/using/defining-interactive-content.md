@@ -7,8 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-translation-type: tm+mt
-source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
+source-git-commit: 54d503e97a4374927c4ebe3ba4e0ec05e51d47db
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 3%
@@ -29,7 +28,7 @@ Deze functie is beschikbaar via een speciaal pakket in Adobe Campaign. Dit pakke
 
 >[!NOTE]
 >
-> Voor hybride en gehoste architecturen moet het pakket op alle servers worden geïnstalleerd, inclusief de [mid-sourcing server](../../installation/using/mid-sourcing-server.md) en de [uitvoeringsinstantie](../../message-center/using/creating-a-shared-connection.md#execution-instance). Neem contact op met uw accountmanager.
+> Voor hybride en gehoste architecturen moet het pakket op alle servers worden geïnstalleerd, inclusief de [mid-sourcing server](../../installation/using/mid-sourcing-server.md) en de [uitvoeringsinstantie](../../message-center/using/configuring-instances.md#execution-instance). Neem contact op met uw accountmanager.
 
 ## Informatie over AMP voor e-mail {#about-amp-for-email}
 
