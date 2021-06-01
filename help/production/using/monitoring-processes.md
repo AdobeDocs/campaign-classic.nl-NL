@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 214838cabeaec082080b3378f7eba837b8af89ad
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
 source-wordcount: '3606'
 ht-degree: 0%
@@ -44,7 +44,8 @@ Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven
 
 #### Windows {#in-windows}
 
-* **[!UICONTROL Pending events queued]** : specifieke indicator voor het Centrum van het  **Bericht**. Zie [deze sectie](../../message-center/using/monitoring-thresholds.md) voor meer informatie.
+* **[!UICONTROL Pending events queued]** : specifieke indicator voor het Centrum van het  **Bericht**. Zie [deze sectie](../../message-center/using/additional-configurations.md#monitoring-thresholds) voor meer informatie.
+
 * **[!UICONTROL Memory]** : informatie over het fysieke geheugen (RAM).
 
    **[!UICONTROL Current value]** : daadwerkelijk geheugenverbruik.
@@ -101,7 +102,8 @@ Met de lijst met systeemindicatoren kunt u informatie over de computer weergeven
 
 ![](assets/production_system_indicators_linux_001.png)
 
-* **[!UICONTROL Pending events queued]** : specifieke indicator voor het Centrum van het  **Bericht**. Zie [deze sectie](../../message-center/using/monitoring-thresholds.md) voor meer informatie.
+* **[!UICONTROL Pending events queued]** : specifieke indicator voor het Centrum van het  **Bericht**. Zie [deze sectie](../../message-center/using/additional-configurations.md#monitoring-thresholds) voor meer informatie.
+
 * **[!UICONTROL Load average (1/5/15 minutes)]** : informatie over de belasting, d.w.z. de gebruikssnelheid van de verwerker door de processen die gedurende de laatste minuut, vijf minuten of vijftien minuten op de machine worden uitgevoerd
 
    **[!UICONTROL Current value]** : werkelijke lading van de machine.
