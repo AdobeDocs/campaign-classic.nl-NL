@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Een webformulier vertalen
 description: Een webformulier vertalen
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
+exl-id: 72959141-ca18-4512-80c7-239efd31f711
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 1%
 
 ---
-
 
 # Een webformulier vertalen{#translating-a-web-form}
 
@@ -477,4 +475,3 @@ Als u webtoepassingen wilt vertalen in andere talen dan de standaardtalen (zie [
 1. Klik op de knop **[!UICONTROL Add]** en voer vervolgens de **[!UICONTROL Internal name]**, **[!UICONTROL Label]** en id van de afbeelding (markering) in. Neem contact op met de beheerder als u een nieuwe afbeelding wilt toevoegen.
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_2.png)
-
