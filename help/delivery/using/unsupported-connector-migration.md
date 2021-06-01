@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Niet-ondersteunde migratie van SMS-connector
 description: Niet-ondersteunde SMS-connector migreren naar de uitgebreide algemene SMPP-connector
@@ -7,14 +6,13 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 hidefromtoc: true
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 1%
 
 ---
-
 
 # Niet-ondersteunde SMS-aansluiting migreren naar de uitgebreide algemene SMPP-connector{#unsupported-connector-migration}
 
