@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Workflows beheren
 description: Workflows beheren
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 617b0050-6b04-4c68-9f63-511baae99f41
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 4%
 
 ---
-
 
 # Workflows beheren{#managing-workflows}
 
@@ -28,4 +26,3 @@ Alle activiteiten die in uw werkschema worden gebruikt zullen zo uw douanetabel 
 Raadpleeg [deze sectie](../../workflow/using/about-workflows.md) voor meer informatie over workflows.
 
 ![](assets/cfg_external_table_workflow.png)
-
