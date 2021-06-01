@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Data laden (RDBMS)
+title: Gegevens laden (RDBMS)
 description: Meer informatie over de activiteit van de workflow voor het laden van gegevens (RDBMS)
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 6e24d5fe-4830-49b4-a0fe-624c5644c920
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 3%
 
 ---
 
-
-# Data laden (RDBMS){#data-loading-rdbms}
+# Gegevens laden (RDBMS){#data-loading-rdbms}
 
 Met de **[!UICONTROL Data loading (RDBMS)]**-activiteit hebt u rechtstreeks toegang tot deze externe database en kunt u alleen de gegevens verzamelen die vereist zijn voor de doelindeling.
 
@@ -38,4 +36,3 @@ De bewerking is als volgt:
 1. U kunt een filter voor deze gegevens definiëren. Klik op de koppeling **[!UICONTROL Edit query....]** om dit te doen.
 
    De op deze manier verzamelde gegevens kunnen gedurende de gehele levenscyclus van de workflow worden gebruikt.
-
