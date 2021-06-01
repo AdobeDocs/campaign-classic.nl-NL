@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Start- en Einde-activiteiten
+title: Start en einde
 description: Meer informatie over workflowactiviteiten starten en beëindigen
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 56dfbaf3-93de-4ade-b4ad-9b54d239c7a5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 4%
 
 ---
-
 
 # Start- en Einde-activiteiten{#start-and-end}
 
@@ -34,4 +32,3 @@ Met de activiteiten **[!UICONTROL Start]** en **[!UICONTROL End]** kunt u het be
    De gegevens in de werktabel worden automatisch verwijderd wanneer de eindactiviteit is ingeschakeld. Als dit niet nodig is en om onnodige belasting te voorkomen, kunt u de overgang uitschakelen bij de laatste uitgevoerde activiteit. Schakel bijvoorbeeld bij een leveringsuitvoer, als er geen proces is gepland, de relevante optie uit zoals hieronder wordt weergegeven:
 
    ![](assets/s_advuser_delivery_option_no_output.png)
-
