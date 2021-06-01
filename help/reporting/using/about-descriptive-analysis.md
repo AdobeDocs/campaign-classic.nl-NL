@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Beschrijvende analyse
 description: Beschrijvende analyse
 audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 4%
 
 ---
-
 
 # Beschrijvende analyse{#about-descriptive-analysis}
 
@@ -46,4 +44,3 @@ De beschrijvende analysetovenaars zijn niet zo krachtig zoals de rapporten van A
 >[!CAUTION]
 >
 >Met een beschrijvende analyse kunt u geen grote gegevensvolumes verkennen.
-
