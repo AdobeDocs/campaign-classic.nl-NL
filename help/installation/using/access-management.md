@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Toegangscontrole
 description: Meer informatie over best practices voor toegangsbeheer.
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+exl-id: af88e4e7-0ee3-48b4-9db4-7dd390d9d46a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 5%
 
 ---
-
 
 # Toegangscontrole {#access-management}
 
