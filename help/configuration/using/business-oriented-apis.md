@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Bedrijfsgerichte API’s
 description: Bedrijfsgerichte API’s
 audience: configuration
 content-type: reference
 topic-tags: api
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e6638870-3141-4f12-b904-db436127c0d1
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 3%
 
 ---
-
 
 # Bedrijfsgerichte API’s{#business-oriented-apis}
 
@@ -85,7 +83,7 @@ De ontvanger en het abonnement bijwerken.
 
 ### Voorbeeld van SOAP-berichten {#example-of-soap-messages}
 
-* Queryactiviteit:
+* Query:
 
    ```
    <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -148,7 +146,7 @@ Deze aanroep retourneert geen gegevens, behalve fouten.
 
 ### Voorbeeld van SOAP-berichten {#example-of-soap-messages-1}
 
-Queryactiviteit:
+Query:
 
 ```
 <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -237,4 +235,3 @@ Als u geen leveringsmalplaatje hebt, kunt u het volgende voorbeeld gebruiken:
   </targets> 
 </delivery> 
 ```
-
