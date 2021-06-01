@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Upgraden naar een nieuwe build
 description: Leer technische stappen om aan een nieuwe bouwstijl te bevorderen
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-translation-type: tm+mt
-source-git-commit: cb24bc78b5cc09307ca470470464f204d9f41278
+exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1149'
 ht-degree: 2%
 
 ---
-
 
 # Upgraden naar een nieuwe build (on-premise){#upgrading}
 
@@ -269,4 +267,3 @@ De volgende keer dat clientconsoles worden aangesloten, wordt gebruikers in een 
 >[!NOTE]
 >
 >Zorg ervoor dat de Apache-gebruiker de juiste leesrechten heeft voor dit installatiebestand en raadpleeg de [installatiehandleiding](../../installation/using/general-architecture.md) voor meer informatie.
-
