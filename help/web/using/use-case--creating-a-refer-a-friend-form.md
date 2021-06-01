@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: '"Gebruiksscenario: een formulier voor de verwijzing van een vriend maken"'
 description: '"Gebruiksscenario: een formulier voor de verwijzing van een vriend maken"'
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-
-# Hoofdlettergebruik: een verwijzingsformulier maken{#use-case-creating-a-refer-a-friend-form}
+# Gebruiksscenario: een referralformulier maken{#use-case-creating-a-refer-a-friend-form}
 
 In dit voorbeeld willen we een wedstrijd aanbieden aan de ontvangers in de database. Het webformulier bevat een sectie waarin u antwoorden kunt invoeren en een andere sectie waarin u een vriend kunt verwijzen door zijn e-mailadres in te voeren.
 
@@ -126,4 +124,3 @@ Om het verwijzingsblok te vormen en tot stand te brengen, pas de volgende stappe
    ![](assets/s_ncs_admin_survey_viral_sample_9.png)
 
    Hun profiel bevat de informatie die door hun referentie is ingevoerd. Deze wordt opgeslagen op basis van de configuraties die zijn ingevoerd in het formulierscript. Als ze besluiten zich te abonneren op de nieuwsbrief, worden ze opgeslagen in de tabel voor ontvangers.
-
