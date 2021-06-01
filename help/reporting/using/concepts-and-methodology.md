@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Concepten en methodologie
 description: Concepten en methodologie
 audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 1%
 
 ---
-
 
 # Aanbevolen werkwijzen voor kubussen{#concepts-and-methodology}
 
@@ -273,4 +271,3 @@ Als u een lijn, kolom of cel wilt selecteren, klikt u er met de linkermuisknop o
 Het filter wordt automatisch toegepast en aan de filterstreek boven het rapport toegevoegd.
 
 ![](assets/neolap_create_filter_display.png)
-
