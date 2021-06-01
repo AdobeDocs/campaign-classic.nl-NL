@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Stroombeheeractiviteiten
-description: Stroombeheeractiviteiten
+title: Flowbeheeractiviteiten
+description: Flowbeheeractiviteiten
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3810cbd0-159c-4161-b568-1f61dcea0300
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 7%
 
 ---
 
-
-# Stroombeheeractiviteiten{#about-flow-control-activities}
+# Flowbeheeractiviteiten{#about-flow-control-activities}
 
 De volgende activiteiten zijn databaseactiviteiten: Hun belangrijkste taak is de coördinatie van de andere activiteiten.
 
@@ -32,4 +30,3 @@ De volgende activiteiten zijn databaseactiviteiten: Hun belangrijkste taak is de
 * **Goedkeuring**: Hiermee kunt u een e-mail naar een operator of groep operatoren verzenden en wachten tot de goedkeuring is voltooid. Raadpleeg de sectie [Goedkeuring](../../workflow/using/approval.md).
 * **Waarschuwing**: Hiermee kunt u een waarschuwing naar een operator of groep operatoren sturen. Raadpleeg de sectie [Waarschuwing](../../workflow/using/alert.md).
 * **Taak**: Hiermee kunt u de uitvoering van taken configureren. Raadpleeg de sectie [Taak](../../workflow/using/task.md).
-
