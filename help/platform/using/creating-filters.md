@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Filters maken
 description: Filters maken
 audience: platform
 content-type: reference
 topic-tags: filtering-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1963'
 ht-degree: 0%
 
 ---
-
 
 # Filters maken{#creating-filters}
 
@@ -377,4 +375,3 @@ Klik op het tabblad **[!UICONTROL Settings]** voor toegang tot de volgende optie
    Deze optie is ingeschakeld voor de filters &quot;Ontvangers van een levering&quot; en &quot;Ontvangers van leveringen die tot een map behoren&quot; die in de wizard voor levering worden aangeboden en die niet kunnen worden overgeladen.
 
    ![](assets/s_ncs_user_filter_advanced_param.png)
-
