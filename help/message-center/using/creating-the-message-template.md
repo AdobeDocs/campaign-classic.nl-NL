@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Om ervoor te zorgen dat elke gebeurtenis in een gepersonaliseerd bericht kan wor
 >
 >Gebeurtenistypen moeten vooraf worden gemaakt. Raadpleeg [Gebeurtenistypen maken](../../message-center/using/creating-event-types.md) voor meer informatie.
 
-De transactionele berichtmalplaatjes bevatten de noodzakelijke informatie voor het personaliseren van het transactionele bericht. U kunt malplaatjes ook gebruiken om de berichtvoorproef te testen en proeven te verzenden gebruikend zaadadressen alvorens aan het definitieve doel te leveren. Zie [Transactieberichtsjablonen testen](../../message-center/using/testing-message-templates.md) voor meer informatie.
+De transactionele berichtmalplaatjes bevatten de noodzakelijke informatie voor het personaliseren van het transactionele bericht. U kunt malplaatjes ook gebruiken om de berichtvoorproef te testen en proeven te verzenden gebruikend zaadadressen alvorens aan het definitieve doel te leveren. Voor meer op dit, zie [Transactieberichtmalplaatjes](../../message-center/using/testing-message-templates.md) van de Test.
 
 ## De berichtsjabloon maken {#creating-message-template}
 
@@ -47,13 +47,13 @@ De transactionele berichtmalplaatjes bevatten de noodzakelijke informatie voor h
    >
    >Een gebeurtenistype kan niet aan meer dan één malplaatje worden verbonden.
 
-1. Ga een aard en een beschrijving in, dan klik **[!UICONTROL Continue]** om het berichtlichaam tot stand te brengen (verwijs naar [Creërend de berichtinhoud](#creating-message-content)).
+1. Voer een aard en een beschrijving in en klik vervolgens op **[!UICONTROL Continue]** om de berichttekst te maken (verwijs naar [De berichtinhoud maken](#creating-message-content)).
 
    ![](assets/messagecenter_create_model_004.png)
 
 ## Maak de berichtinhoud {#creating-message-content}
 
-De definitie van de inhoud van het transactiebericht is gelijk aan die voor normale leveringen in Adobe Campaign. U kunt bijvoorbeeld voor een e-maillevering inhoud in HTML- of tekstindeling maken, bijlagen toevoegen of het bezorgingsobject aanpassen. Raadpleeg voor meer informatie het hoofdstuk over [E-maillevering](../../delivery/using/about-email-channel.md).
+De definitie van de inhoud van het transactiebericht is gelijk aan die voor normale leveringen in Adobe Campaign. U kunt bijvoorbeeld voor een e-maillevering inhoud in HTML- of tekstindeling maken, bijlagen toevoegen of het bezorgingsobject aanpassen. Raadpleeg voor meer informatie het hoofdstuk [E-maillevering](../../delivery/using/about-email-channel.md).
 
 >[!IMPORTANT]
 >
