@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Adobe Analytics-dataconnector
-description: Adobe Analytics-dataconnector
-feature: Overview
+title: Adobe Analytics-gegevensconnector
+description: Adobe Analytics-gegevensconnector
+feature: Overzicht
 role: Business Practitioner, Administrator
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1658'
 ht-degree: 1%
 
 ---
 
-
-# Adobe Analytics-dataconnector{#adobe-analytics-data-connector}
+# Adobe Analytics-gegevensconnector{#adobe-analytics-data-connector}
 
 ## Info over integratie van gegevensconnector {#about-data-connector-integration}
 
@@ -282,4 +280,3 @@ Adobe Campaign biedt persoonlijke leveringssjablonen die u kunt gebruiken of zel
 Het **[!UICONTROL Re-marketing efficiency]** rapport wordt betreden via de globale rapportpagina. Het laat u het aantal geconverteerde contacten (d.w.z. het hebben van iets gekocht) met betrekking tot het aantal kartverlaten na de Adobe Campaign hermarketing campagne bekijken. De conversiesnelheid wordt berekend per week, maand of sinds het begin van de synchronisatie tussen Adobe Campaign- en Web-analyseprogramma&#39;s.
 
 ![](assets/webanalytics_reporting.png)
-
