@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Samenvoeging bijwerken
 description: Meer informatie over de activiteit van de geaggregeerde workflow bijwerken
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 4%
 
 ---
-
 
 # Samenvoeging bijwerken{#update-aggregate}
 
@@ -30,4 +28,3 @@ Standaard wordt bij elke berekening een volledige update uitgevoerd. Als u een g
 **Goede praktijken**: een  **[!UICONTROL Scheduler]** activiteit kan worden gebruikt om de frequentie van de actualiseringen van de berekeningen te specificeren .
 
 ![](assets/s_advuser_cube_agregate_04.png)
-
