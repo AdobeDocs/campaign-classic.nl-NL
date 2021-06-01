@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: De lijst met leveringen openen
 description: Leer hoe u toegang krijgt tot de lijst met gemaakte leveringen.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
-source-git-commit: f2a126d0aa471831f84d4c8457cfd6f0fae7b14f
+exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 10%
 
 ---
-
 
 # De lijst met leveringen openen {#list-of-deliveries}
 
@@ -34,4 +32,4 @@ Standaard bevat de lijst met leveringen de namen en statussen van de leveringen 
 **Verwante onderwerpen:**
 
 * [Leveringsdashboard](../../delivery/using/delivery-dashboard.md)
-* [Leveringsstatus](../../delivery/using/delivery-statuses.md)
+* [Leveringsstatussen](../../delivery/using/delivery-statuses.md)
