@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1092'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ Het is mogelijk om een uitvoeringscluster onder verscheidene controleinstanties 
 
 >[!NOTE]
 >
->Voor meer op de noodzakelijke configuratie, verwijs naar [Gebruikend verscheidene controleinstanties](../../message-center/using/configuring-instances.md#using-several-control-instances).
+>Voor meer op de noodzakelijke configuratie, verwijs naar [Gebruik verscheidene controleinstanties](../../message-center/using/configuring-instances.md#using-several-control-instances).
 
 ## Uitvoeringsinstantie {#execution-instance}
 
@@ -181,7 +181,7 @@ Als u de module Transactiebericht met LINE wilt gebruiken, zijn de volgende elem
 
 * Installeer het **[!UICONTROL LINE Connect]**-pakket op beide instanties.
 * Installeer het **[!UICONTROL Transactional message control]**-pakket op uw marketinginstantie en het **[!UICONTROL Transactional message execution]**-pakket op de uitvoeringsinstantie.
-* Maak een LINE **externe account** en **service** op beide instanties met identieke naamgeving, zodat deze kunnen worden gesynchroniseerd. Raadpleeg deze [pagina](../../delivery/using/line-channel.md#creating-a-line-account-and-an-external-account-) voor meer informatie over het maken van een externe LINE-account en -service.
+* Maak een LINE **externe account** en **service** op beide instanties met identieke naamgeving, zodat deze kunnen worden gesynchroniseerd. Raadpleeg [deze sectie](../../delivery/using/line-channel.md#setting-up-line-channel) voor meer informatie over het maken van een externe LINE-account en -service.
 
 Vervolgens moet u in **[!UICONTROL Explorer]** in **[!UICONTROL Platform]** > **[!UICONTROL External account]** verschillende externe accounts configureren in beide gevallen:
 
@@ -248,4 +248,4 @@ Vervolgens moet u in **[!UICONTROL Explorer]** in **[!UICONTROL Platform]** > **
 
 
 
-1. U kunt nu transactiemeldingen maken. Raadpleeg [deze pagina](../../message-center/using/creating-the-message-template.md) voor meer informatie.
+1. U kunt nu [transactionele berichten maken](../../message-center/using/creating-the-message-template.md).
