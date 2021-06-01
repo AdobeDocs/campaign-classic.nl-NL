@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Formulieren bewerken
 description: Formulieren bewerken
 audience: configuration
 content-type: reference
 topic-tags: input-forms
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 13%
 
 ---
-
 
 # Formulieren bewerken{#editing-forms}
 
@@ -28,4 +26,3 @@ In de bewerkingszone kunt u de XML-inhoud van het invoerformulier invoeren:
 In het voorbeeld wordt een weergave van het invoerformulier gegenereerd:
 
 ![](assets/d_ncs_integration_form_preview.png)
-
