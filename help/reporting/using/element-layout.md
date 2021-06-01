@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Indeling van element
-description: Indeling van element
+title: Lay-out van element
+description: Lay-out van element
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 1%
 
 ---
 
-
-# Indeling van element{#element-layout}
+# Lay-out van element{#element-layout}
 
 Naast de verschillende hier beschreven grafieken: [Grafiektypen en -varianten](../../reporting/using/creating-a-chart.md#chart-types-and-variants), kunt u de weergave aanpassen en elementen toevoegen aan de rapportpagina(&#39;s).
 
