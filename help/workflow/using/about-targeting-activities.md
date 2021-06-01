@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Targetingactiviteiten
 description: Targetingactiviteiten
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 4%
 
 ---
-
 
 # Targetingactiviteiten{#about-targeting-activities}
 
@@ -39,4 +37,3 @@ Met deze activiteiten kunt u een of meer doelen maken door sets te definiëren e
 * **Lijstupdate**: registreert het resultaat van binnenkomende activiteiten in een lijst. Raadpleeg de sectie [List update](../../workflow/using/list-update.md).
 * **Gegevens** bijwerken: Hiermee kunt u de gegevens in de database ingrijpend bijwerken. Raadpleeg de sectie [Gegevens bijwerken](../../workflow/using/update-data.md).
 * **CRM-connector**: Hiermee kunt u de synchronisatie tussen Adobe Campaign en een CRM configureren. Raadpleeg de sectie [CRM-aansluiting](../../workflow/using/crm-connector.md).
-
