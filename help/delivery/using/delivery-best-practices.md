@@ -1,20 +1,18 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Aanbevolen werkwijzen voor het leveren van campagnes
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 24%
 
 ---
 
-
-# Best practices voor levering {#delivery-best-practices}
+# Best practices voor leveringen {#delivery-best-practices}
 
 Leer beste praktijken met betrekking tot leveringsontwerp en verzendend met Adobe Campaign. Gebruik de onderstaande koppelingen om door onderwerpen te navigeren en hulp te zoeken.
 
