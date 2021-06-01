@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Taken maken en beheren
 description: Taken maken en beheren
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '3732'
 ht-degree: 0%
 
 ---
-
 
 # Taken maken en beheren{#creating-and-managing-tasks}
 
@@ -97,7 +95,7 @@ Wanneer een Adobe Campaign-operator een taak maakt, wordt deze standaard automat
 >
 >Operator management wordt gepresenteerd in [deze sectie](../../platform/using/access-management.md).
 
-U kunt aangeven welke operatoren bij de uitvoering van de taak betrokken zijn. Deze operatoren zijn niet geautoriseerd om de taak te sluiten. Zij kunnen alleen de hun toegewezen taak goedkeuren.
+U kunt aangeven welke operatoren bij de uitvoering van de taak betrokken zijn. Deze operatoren zijn niet geautoriseerd om de taak te sluiten. Zij mogen alleen de hun toegewezen taak goedkeuren.
 
 Ze worden geselecteerd met het pictogram **[!UICONTROL Resources]** op de taakwerkbalk. Klik **[!UICONTROL Add]** en selecteer de betrokken exploitanten.
 
@@ -511,4 +509,3 @@ Hieronder staan de fasen van een volledige taaklevenscyclus waarvoor de verantwo
    >[!NOTE]
    >
    >Als een taak is voltooid, kan de levenscyclus ervan opnieuw worden geïnitialiseerd door de verantwoordelijke persoon. U doet dit door de taak te openen en op de koppeling **[!UICONTROL Reset task to execute it again...]** onder aan het dashboard te klikken.
-
