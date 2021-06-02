@@ -95,7 +95,7 @@ Wanneer een Adobe Campaign-operator een taak maakt, wordt deze standaard automat
 >
 >Operator management wordt gepresenteerd in [deze sectie](../../platform/using/access-management.md).
 
-U kunt aangeven welke operatoren bij de uitvoering van de taak betrokken zijn. Deze operatoren zijn niet geautoriseerd om de taak te sluiten. Zij kunnen alleen de hun toegewezen taak goedkeuren.
+U kunt aangeven welke operatoren bij de uitvoering van de taak betrokken zijn. Deze operatoren zijn niet geautoriseerd om de taak te sluiten. Zij mogen alleen de hun toegewezen taak goedkeuren.
 
 Ze worden geselecteerd met het pictogram **[!UICONTROL Resources]** op de taakwerkbalk. Klik **[!UICONTROL Add]** en selecteer de betrokken exploitanten.
 
