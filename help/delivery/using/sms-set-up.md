@@ -143,7 +143,7 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
    <td> ¥ </td> 
    <td> <img height="21px" src="assets/gamma.png" /> </td> 
    <td> Aantal </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> C </td> 
    <td> S </td> 
    <td> c </td> 
