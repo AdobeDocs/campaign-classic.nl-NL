@@ -75,7 +75,7 @@ Openen wordt toegewezen aan een ontvanger: Marie. Adobe Campaign voegt daarom ee
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
-| Tussentotaal | 0 | 0 | 3 |
+| Tussentotaal | 0 | 0 | 1 |
 
 ## Stap 3: Florian {#step-3--florian}
 
@@ -120,7 +120,7 @@ De volgende logboeken vallen samen met de open en twee klikken die worden uitgev
 | Marie | - | - | +1 |
 | Florian | +1 | +1 | +1 |
 | Onbekende persoon | - | +1 | - |
-| Tussentotaal | 3 | 2 | 2 |
+| Tussentotaal | 1 | 2 | 2 |
 
 ## Stap 4: Henry {#step-4--henry}
 
@@ -145,7 +145,7 @@ De open en 4 klikken die door Henry worden uitgevoerd verschijnen in de volgende
 | Florian | +1 | +1 | +1 |
 | Onbekende persoon | - | +1 | - |
 | Henry | +1 | +4 | +1 |
-| Tussentotaal | 2 | 6 | 3 |
+| Tussentotaal | 2 | 6 | 1 |
 
 ## Samenvatting {#summary}
 
@@ -155,7 +155,7 @@ Op het niveau van levering, hebben wij de volgende resultaten:
 
 * **[!UICONTROL Clicks]** (ontvangers die hebben geklikt): 2
 * **[!UICONTROL Distinct clicks for the population reached]** (personen die hebben geklikt): 6
-* **[!UICONTROL Distinct opens for the population reached]** (ontvangers die opende): 3
+* **[!UICONTROL Distinct opens for the population reached]** (ontvangers die opende): 1
 
 De ruwe reactiviteit en de raming van de forwards worden als volgt berekend:
 
