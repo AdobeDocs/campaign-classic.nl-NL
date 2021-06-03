@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 8d535439923d6753777b7edd7fb768f685ec5522
 workflow-type: tm+mt
 source-wordcount: '4396'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -25,19 +25,19 @@ De sectie **Transactioneel Overseinen** is gereorganiseerd en met een nieuwe Get
 
 ## Mei 2021 {#may-2021}
 
-De documentatie van het workflowrapport is bijgewerkt en verbeterd. [Meer informatie](../../workflow/using/heatmap.md)
+De documentatie voor het workflowheatmaprapport is bijgewerkt en verbeterd. [Meer informatie](../../workflow/using/heatmap.md)
 
-De vereisten voor de Campagne Client Console zijn bijgewerkt in de compatibiliteitsmatrix. [Meer informatie](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
+De vereisten voor de Campaign-clientconsole zijn bijgewerkt in de compatibiliteitsmatrix. [Meer informatie](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 
-De installatie van de Campagne-clientconsole voor stappen is verbeterd en verduidelijkt. [Meer informatie](../../installation/using/installing-the-client-console.md)
+De installatiestappen voor de Campaign-clientconsole zijn verbeterd en verduidelijkt. [Meer informatie](../../installation/using/installing-the-client-console.md)
 
-Er is een nieuw technologie gemaakt voor het handtekeningprobleem met de tracked URL&#39;s. [Meer informatie](../../technotes/tracked-urls.md)
+Er is een nieuwe technische opmerking gemaakt over het handtekeningprobleem van de bijgehouden URL&#39;s. [Meer informatie](../../technotes/tracked-urls.md)
 
 ## April 2021 {#april-2021}
 
 Er is een nieuwe sectie toegevoegd over hoe u bronnen en bestemmingen van het Adobe Experience Platform kunt gebruiken om gegevens te delen tussen Campaign Classic en het Adobe Real-time Customer Data Platform (RTCDP). [Meer informatie](../../integrations/using/get-started-sources-destinations.md)
 
-Een nieuw technologie is gecreeerd om te leren hoe te om stuiterkwalificatie na een ISP stroomonderbreking bij te werken. [Meer informatie](../../delivery/using/update-bounce-qualification.md)
+Er is een nieuwe technische opmerking gemaakt waarin wordt uitgelegd hoe u de bouncekwalificatie kunt bijwerken na een ISP-uitval. [Meer informatie](../../delivery/using/update-bounce-qualification.md)
 
 ## Maart 2021 {#march-2021}
 
@@ -444,7 +444,7 @@ De sectie voor toegangscontrole is bijgewerkt met **rechten voor privacydata**. 
 
 Er is informatie toegevoegd om aan te geven dat de content van personalisatievelden niet langer mag zijn dan 1024 tekens. [Meer informatie](../../delivery/using/personalization-fields.md)
 
-De documentatie voor het Configuratiescherm is geïntegreerd in de nieuwe collaboratieve documentatieset. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+De documentatie voor het Configuratiescherm is geïntegreerd in de nieuwe collaboratieve documentatieset. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl)
 
 De handleiding om aan de slag te gaan met best practices voor levering is bijgewerkt. [Meer informatie](../../delivery/using/delivery-best-practices.md)
 
