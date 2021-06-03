@@ -6,10 +6,10 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 8d535439923d6753777b7edd7fb768f685ec5522
 workflow-type: tm+mt
-source-wordcount: '4367'
-ht-degree: 98%
+source-wordcount: '4396'
+ht-degree: 97%
 
 ---
 
@@ -18,6 +18,10 @@ ht-degree: 98%
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates per maand en per Campaign-release.
 
 Raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/using/latest-release.md) voor aan de release gerelateerde updates.
+
+## Juni 2021 {#june-2021}
+
+De sectie **Transactioneel Overseinen** is gereorganiseerd en met een nieuwe Get begonnen sectie, met inbegrip van een [verbeterd schema](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) voor een beter inzicht in het proces verduidelijkt. [Meer informatie](../../message-center/using/about-transactional-messaging.md)
 
 ## Mei 2021 {#may-2021}
 
