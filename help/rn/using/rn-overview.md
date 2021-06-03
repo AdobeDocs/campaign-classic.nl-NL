@@ -9,7 +9,7 @@ exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -61,8 +61,8 @@ Als gehoste [!DNL Gold Standard]-gebruiker profiteert u automatisch van de [!DNL
 ## Ondersteuning en andere handige koppelingen{#support}
 
 * [Help en ondersteuning](../../support.md)
-* [Configuratiescherm-releases](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html)
+* [Configuratiescherm-releases](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=nl)
 * [Nieuwste documentatie-updates](../../rn/using/documentation-updates.md)
 * [Verouderde en verwijderde functies](../../rn/using/deprecated-features.md)
 
-Als u op de hoogte wilt worden gebracht van nieuwe Experience Cloud-releases, meld u dan aan voor de [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html).
+Als u op de hoogte wilt worden gebracht van nieuwe Experience Cloud-releases, meld u dan aan voor de [Adobe Priority Product Update](https://www.adobe.com/nl/subscription/priority-product-update.html).
