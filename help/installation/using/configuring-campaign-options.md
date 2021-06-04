@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: b99de2a47bac08578d6e660595eb14c0858bf9fd
 workflow-type: tm+mt
-source-wordcount: '3941'
+source-wordcount: '3961'
 ht-degree: 1%
 
 ---
@@ -51,6 +51,10 @@ Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Ad
    <td> <span class="uicontrol">DmRendering_SeedTargets</span> <br /> </td> 
    <td> Lijst van schema's waarvoor u testadressen voor het Teruggeven Inbox wilt gebruiken. (elementnamen worden met komma's van elkaar gescheiden), bijvoorbeeld: custom_nms_receiving.<br /> </td> 
   </tr> 
+  <tr> 
+   <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
+   <td> BCC e-mailadres waarnaar de verbeterde MTA een onbewerkte kopie van de verzonden e-mails verzendt. <br /> </td> 
+  </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
    <td><p> Hiermee kunt u toestaan dat de exploitant die verantwoordelijk is voor de levering de verzending bevestigt, als een specifieke exploitant of groep exploitanten is aangewezen voor het starten van een levering in de eigendommen van de levering.</p><p> Hiervoor activeert u de optie door "1" als waarde in te voeren. Voer 0 in om deze optie te deactiveren.</p><p> Het proces voor bevestiging verzenden werkt dan als standaard: alleen de exploitant of groep van exploitanten die voor de verzending zijn aangewezen in de leveringseigenschappen (of een beheerder) kan de verzending bevestigen en uitvoeren. Zie <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">deze sectie</a>.</p> </td> 
