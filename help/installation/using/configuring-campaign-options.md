@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: c095d7ddde4b4ac23467ebd0fa8ee2fb613aacdc
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '3941'
+source-wordcount: '3972'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 1%
 # Lijst met Campaign Classic-opties{#configuring-campaign-options}
 
 Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-opties configureren. Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kunnen handmatig worden toegevoegd wanneer dat nodig is. Welke opties beschikbaar zijn, is afhankelijk van de pakketten die bij de instantie worden geïnstalleerd.
+
 
 >[!CAUTION]
 >
@@ -399,6 +400,14 @@ Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Ad
   </tr> 
  </thead> 
  <tbody> 
+  <tr> 
+   <td> <span class="uicontrol">RestrictieEditingOOTBSchema</span> <br /> </td> 
+   <td> (vanaf versie 21.1.3) Als 1 is geselecteerd (standaardwaarde), schakelt deze optie de editie van ingebouwde schema's uit.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">RestrictieEditingOOTBJavascript</span> <br /> </td> 
+   <td> (vanaf versie 21.1.3) Als 1 is geselecteerd (standaardwaarde), schakelt deze optie de uitgave van ingebouwde javascript-codes uit.<br /> </td> 
+  </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkAcceptOldPasswords</span> <br /> </td> 
    <td> (Compatibiliteitsmodus installeren: build&gt;6000) Als deze optie is geactiveerd (waarde "1"), kunt u oude wachtwoorden die in de database zijn opgeslagen, gebruiken voor de verbinding met externe accounts of met de instantie.<br /> </td> 
