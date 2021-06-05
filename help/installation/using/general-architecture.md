@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '1336'
+source-wordcount: '1340'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Het behandelt ook periodiek uitgevoerde technische werkschema&#39;s, die omvatte
 
 * Tekstspatiëring: Trackinglogboeken herstellen en consolideren. Het laat u de logboeken van de omleidingsserver terugwinnen en de gezamenlijke indicatoren creëren die door de rapporteringsmodule worden gebruikt.
 * Overbodig verwijderen: Database reinigen. Wordt gebruikt om oude records leeg te maken en te voorkomen dat de database exponentieel groeit.
-* Facturering: Automatisch verzenden van een activiteitenverslag voor het platform (databasegrootte, aantal marketingacties, enz.).
+* Facturering: Automatisch verzenden van een activiteitenrapport voor het platform (databasegrootte, aantal marketingacties, aantal actieve profielen, enz.).
 
 **Leveringsserver**  (nlserver-mta)
 
