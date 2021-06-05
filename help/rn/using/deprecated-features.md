@@ -6,10 +6,10 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: da699fbba527a44a048d5562a8311e70c00f74fd
 workflow-type: tm+mt
-source-wordcount: '1713'
-ht-degree: 100%
+source-wordcount: '1629'
+ht-degree: 95%
 
 ---
 
@@ -42,6 +42,13 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    <td><strong>Vervanging</strong></td>
   </tr>
     <tr>
+  <td>Adobe Analytics-gegevensconnector<br></td>
+   <td><p>Vanaf de release van Campagne 21.1 is de Adobe Analytics Data Connector verouderd.</p>
+   <p>Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../platform/using/adobe-analytics-connector.md">Meer informatie</a></p>
+  <p><em>Doeldatum voor verwijdering: 2022</em></p>
+  </td>
+ </tr>
+    <tr>
   <td>Rapport over de technische afleveringscontrole<br></td>
    <td><p>Met ingang van de 21.1-release van Campaign is het rapport over de technische afleveringscontrole afgeschaft.</p>
    <p>U kunt dit rapport desgewenst dagelijks per e-mail ontvangen tot de datum waarop de functie wordt verwijderd. Open een <a href="https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">ondersteuningskwestie</a> om hiervoor een verzoek in te dienen. Geef de naam op van de instantie en de e-mailadressen die het rapport moeten ontvangen.</p> 
@@ -50,60 +57,12 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
   </td>
  </tr>
   <tr>
-  <td>CRM-connectoren<br></td>
-   <td><p>Met ingang van release 20.3 van Campaign zijn de volgende CRM-connectoren voor Campaign afgeschaft:</p>
-   <ul>
-   <li>Soap-API - On-premise: 2007, 2015, 2016</li>
-   <li>Soap-API - Online: 2015, 2016</li>
-   <li>Web-API – Microsoft Dynamics CRM on-premise: 2016, 2016 Update 1</li>
-   <li>Web-API – Microsoft Dynamics CRM online: 2016, 2016 Update 1</li>
-   <li>Oracle On-demand-API</li>
-   </ul>
-  <p><em>Doeldatum voor verwijdering: mei 2021</em></p>
-  </td>
- </tr>
-  <tr>
-  <td>Verouderd binair iOS<br></td>
-  <td><p>Vanaf Campaign versie 20.3 is de verouderde binaire iOS-connector van iOS afgeschaft.<p>
-  <p> Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen.
-  <a href="https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html">Meer informatie</a></p>
-  <p><em>Doeldatum voor verwijdering: mei 2021</em></p>
-  </td>
- </tr>
-   <tr>
-  <td>Demdex-domein<br></td>
-  <td><p> Vanaf Campaign versie 20.3 is het demdex-domein afgeschaft. Dit werd gebruikt voor het importeren en exporteren van doelgroepen naar Adobe Experience Cloud.<p>
-  <p>Als u het demdex-domein voor uw externe import/export-accounts gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Meer informatie</a></p> 
-  <p><em>Doeldatum voor verwijdering: mei 2021</em></p>
-  </td>
-  <tr>
   <td>OAuth-verificatie (OAuth en JWT)<br></td>
   <td><p> Vanaf Campaign versie 20.3 is de Triggers-integratieverificatie die oorspronkelijk was gebaseerd op de oAUTH-verificatieset-up voor toegang tot de pipeline gewijzigd en verplaatst naar Adobe I/O. <p>
   <p>Als u Triggers-integratie gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../integrations/using/configuring-adobe-io.md">Meer informatie</a></p> 
   <p>Raadpleeg deze <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina</a> voor meer informatie over de afschaffing van OAuth-verificatie.</p> 
   <p><em>Doeldatum voor verwijdering: november 2021</em></p>
   </td>
-  </tr>
-  <td>Sms-connectoren<br></td>
-  <td><p> Vanaf Campaign-release 20.2 worden de volgende sms-connectoren afgeschaft.<p>
-   <ul>
-   <li>Generic SMPP (SMPP versie 3.4 die de binaire modus ondersteunt)</li>
-   <li>Sybase365 (SAP SMS 365)</li>
-   <li>CLX Communications</li>
-   <li>Tele2</li>
-   <li>O2</li>
-   <li>iOS</li>
-   </ul>
-  <p>Als u één van deze connectoren gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../delivery/using/sms-channel.md">Meer informatie</a></p> 
-  <p>Ontdek in <a href="../../delivery/using/unsupported-connector-migration.md">deze technische opmerking</a> hoe u verouderde connectoren kunt migreren.</p>
-  <p><em>Doeldatum voor verwijdering: mei 2021</em></p>
-  </td> 
- </tr>
-  <tr>  
-   <td>Faxkanaal<br></td>
-   <td><p>Vanaf Campaign 20.2-release is het faxkanaal afgeschaft.</p> 
-   <p>Als u dit kanaal gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Ontdek meer</a> over Campaign-kanalen.</p>
-   <p><em>Doeldatum voor verwijdering: mei 2021</em></p></td>
   </tr>
  </tbody> 
 </table>
@@ -113,11 +72,20 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
 Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Classic zijn verwijderd.
 
 <table> 
- <tbody> 
+ <tbody>
   <tr> 
    <td><strong>Gebied - functie</strong></td>
    <td><strong>Vervanging</strong></td> 
-  </tr> 
+  </tr>
+  <tr>  
+   <td>Faxkanaal<br></td>
+   <td><p>Vanaf de release van Campagne 21.1.3 is het faxkanaal niet meer beschikbaar. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Meer informatie</a></p>
+  <tr>
+  <td>Demdex-domein<br></td>
+  <td><p> Vanaf de release van Campagne 21.1.3 is het demdex-domein dat wordt gebruikt voor het importeren en exporteren van soorten publiek naar de Adobe Experience Cloud, niet meer beschikbaar. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Meer informatie</a></p> 
+  </td>
+  </td>
+  </tr>
    <tr> 
    <td>Windows NT-verificatie<br></td>
    <td><p>Vanaf Campaign versie 20.3 is de Windows NT-verificatie verwijderd uit de beschikbare verificatiemethodes bij het configureren van een nieuwe database met een Microsoft SQL Server. <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">Meer informatie</a></p></td>
@@ -158,7 +126,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
    <tr> 
    <td>Mobiel kanaal - LINE v1</td>
    <td>Vanaf de release van Campaign 18.4 is het pakket LINE Connect niet meer beschikbaar. Adobe raadt u aan het nieuwe LINE-kanaalpakket te gebruiken als vervanging. <a href="../../delivery/using/line-channel.md">Meer informatie</a></td>
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
@@ -186,8 +154,9 @@ De Adobe Campaign Classic-clientconsole kan niet meer worden uitgevoerd op de vo
 >[!NOTE]
 >Vanaf de release van Campaign 20.1 is de 32-bits Campaign Classic-clientconsole niet meer compatibel met de nieuwste versies van Campaign. U moet de 64-bits clientconsole gebruiken.
 
-
 ### Besturingssystemen {#o-s-eol}
+
+Vanaf release 21.1.3 is de ondersteuning voor Debian 8 afgekeurd.
 
 Vanaf release 19.1 is Adobe Campaign niet meer compatibel met de volgende besturingssystemen.
 
@@ -209,7 +178,7 @@ Vanaf de lenterelease 19.1 is Adobe Campaign niet meer compatibel met de volgend
 Vanaf de lenterelease 19.1 is Adobe Campaign niet meer compatibel met de volgende tools.
 
 * Java JDK 7. [Meer informatie](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
-* Libre Office 3.5/4.3/5.x, behalve wanneer dit is ingesloten in een andere tool. [Meer informatie](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
+* Libre Office 3.5 / 4.3 / 5.x, behalve wanneer ingesloten in een ander gereedschap. [Meer informatie](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
 ### Database-engines {#dbe-eol}
 
@@ -243,6 +212,11 @@ Campaign Classic is niet compatibel met de volgende servers in FDA (Federated Da
 * AsterData 5.0. AsterData heeft het einde van de levensduur bereikt. [Meer informatie](https://en.wikipedia.org/wiki/Aster_Data_Systems)
 * Sybase IQ 15.2, 15.4, 15.5 en Sybase ASE 15.0. Recentere versies van Sybase worden ondersteund via FDA (Federated Data Access). [Meer informatie](https://sites.google.com/site/dbatipsandtricks/time-tracker)
 * Hadoop via HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. Adobe Campaign Classic biedt nog steeds ondersteuning voor de vermelde versies van Hadoop via HiveSQL via FDA (Federated Data Access), maar deze versies zijn samengevoegd met: HortonWorks (HDP 2.4.x, 2.5.x, 2.6.x) en HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
+* Soap-API - On-premise: 2007, 2015, 2016
+* Soap-API - Online: 2015, 2016
+* Web-API – Microsoft Dynamics CRM on-premise: 2016, 2016 Update 1
+* Web-API – Microsoft Dynamics CRM online: 2016, 2016 Update 1
+* Oracle On-demand-API&lt;
 
 **RDBMS SERVER**
 
@@ -252,3 +226,14 @@ Adobe Campaign is niet compatibel met de volgende RDBMS-servers:
 * SQL Server 2005
 * MySQL 5.1
 * DB2 UDB 9.7
+
+### Sms-connectoren {#sms-eol}
+
+Adobe Campaign is niet compatibel met de volgende SMS-connectors:
+
+* Generic SMPP (SMPP versie 3.4 die de binaire modus ondersteunt)
+* Sybase365 (SAP SMS 365)
+* CLX Communications
+* Tele2
+* O2
+* iOS
