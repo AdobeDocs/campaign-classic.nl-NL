@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;populaire onderwerpen
 product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 28083eb0271c8c148955fa33978479dc3683eaed
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 49%
+source-wordcount: '250'
+ht-degree: 56%
 
 ---
 
@@ -16,17 +16,15 @@ ht-degree: 49%
 
 ## Nieuwe functies
 
+* **[Release van juni is live!](rn/using/latest-release.md)**<br/> Ontdek nieuwe mogelijkheden, verbeteringen en correcties in de opmerkingen bij de release
+
 * **[Onjuiste harde ](delivery/using/update-bounce-qualification.md)**<br/> grenzen verwijderenLeer hoe u onjuiste harde grenzen kunt bijwerken na een Apple-storing
 
-* **[Werk uw APNs-](technotes/ios-certificate-update.md)**<br/> certificaat bijOp 29 maart 2021 heeft een APNs-update gevolgen voor het iOS-kanaal van de campagne. U moet uw configuratie bijwerken om uitval van iOS-pushkanalen te voorkomen.
+* **[Verbinding maken via IMS/Adobe ID? Upgrade naar de nieuwste builds](integrations/using/about-adobe-id.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne na** 30 juni 2021 **
 
-* **[Verbinding maken via IMS/Adobe ID? Voer een upgrade uit naar de nieuwste builds](integrations/using/about-adobe-id.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne na** 30 juni 2021 **.
-
-* **[Beveilig uw Campagne ](technotes/acc-config-updates.md)**<br/> instancesUpdate aan recentste bouwt om uw platform van de Campagne te beveiligen.
+* **[Beveilig uw Campagne ](technotes/acc-config-updates.md)**<br/> instancesUpdate aan recentste bouwt om uw platform van de Campagne te beveiligen
 
 * **[Werk uw Adobe Experience Cloud Triggers-](integrations/using/configuring-adobe-io.md)**<br/> integratie bij. De verouderde Auth-verificatieservice heeft het einde van de levensduur bereikt. Leer hoe u naar Adobe I/O migreert.
-
-* **[Ga naar de op HTTP/2 gebaseerde APNs-provider ](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)**<br/> APILearn om te migreren van het oude binaire protocol naar de op HTTP/2 gebaseerde API voor de APNs-provider
 
 * **[Ondersteuning krijgen](support.md)**<br/>
 Krijg toegang tot veelgestelde vragen, best practices en Help-resources en vraag hulp
@@ -88,4 +86,4 @@ Krijg toegang tot veelgestelde vragen, best practices en Help-resources en vraag
 | [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md) | [Campaign-JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [[!DNL Gold Standard] -upgrade](rn/using/gs-overview.md) | [Handleiding voor tracking](https://helpx.adobe.com/nl/campaign/kb/acc-tracking.html) |
 | [Verouderde functies](rn/using/deprecated-features.md) | [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html) |
-| [Campaign-configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html) | [Bewakingsrichtlijnen](production/using/monitoring-guidelines.md) |
+| [Campaign-configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl) | [Bewakingsrichtlijnen](production/using/monitoring-guidelines.md) |
