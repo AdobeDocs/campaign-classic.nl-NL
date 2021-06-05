@@ -5,7 +5,7 @@ description: Meer informatie over het pakket Webanalyse
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Web Analytics{#web-analytics}
 
-De hieronder beschreven workflows worden geïnstalleerd met de **module Web Analytics** standaard. Voor meer op deze module, verwijs naar dit [sectie](../../platform/using/adobe-analytics-data-connector.md).
+De hieronder beschreven workflows worden geïnstalleerd met de **module Web Analytics** standaard. Voor meer op deze module, verwijs naar dit [sectie](../../platform/using/adobe-analytics-connector.md).
 
 <table> 
  <tbody> 
@@ -27,12 +27,12 @@ De hieronder beschreven workflows worden geïnstalleerd met de **module Web Anal
   <tr> 
    <td> <span class="uicontrol">Verzending van indicatoren en campagnerekenmerken</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsSendMetrics</span> <br /> </td> 
-   <td> Met deze workflow kunt u e-mailcampagne-indicatoren verzenden van Adobe Campaign naar Adobe Experience Cloud Suite via de Adobe® Genesis-connector. De betrokken indicatoren zijn als volgt: <strong>Verzonden</strong> (Verzonden), <strong>Totaal aantal geopende bestanden</strong> (iTotalRecipientOpen), <strong>Totaal aantal ontvangers waarop</strong> (iTotalRecipientClick), <strong>Fouten</strong> (iError), <strong>t-Out</strong> (opt-out) (iOptOut).<br /> </td> 
+   <td> Met deze workflow kunt u e-mailcampagneindicatoren van Adobe Campaign naar Adobe Experience Cloud Suite verzenden via de Adobe® Analytics-connector. De betrokken indicatoren zijn als volgt: <strong>Verzonden</strong> (Verzonden), <strong>Totaal aantal geopende bestanden</strong> (iTotalRecipientOpen), <strong>Totaal aantal ontvangers waarop</strong> (iTotalRecipientClick), <strong>Fouten</strong> (iError), <strong>t-Out</strong> (opt-out) (iOptOut).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Identificatie van omgezette contactpersonen</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsFindConverted</span> <br /> </td> 
-   <td> Deze workflow indexeert bezoekers van de site die hun aankoop hebben voltooid na een campagne voor het opnieuw op de markt brengen van producten. De gegevens die door deze workflow worden hersteld, zijn toegankelijk via het <span class="uicontrol">Efficiëntierapport voor hermarketing</span> (zie deze <a href="../../platform/using/adobe-analytics-data-connector.md#creating-a-re-marketing-campaign"> pagina</a>). <br /> </td> 
+   <td> Deze workflow indexeert bezoekers van de site die hun aankoop hebben voltooid na een campagne voor het opnieuw op de markt brengen van producten. De gegevens die door deze workflow worden hersteld, zijn toegankelijk via het <span class="uicontrol">Efficiëntierapport voor hermarketing</span> (zie deze <a href="../../platform/using/adobe-analytics-connector.md#creating-a-re-marketing-campaign"> pagina</a>). <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Gebeurtenis leegmaken</span> <br /> </td> 
