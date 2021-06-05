@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 5%
+source-wordcount: '1700'
+ht-degree: 3%
 
 ---
 
@@ -60,7 +60,6 @@ Raadpleeg de [specifieke sectie](../../workflow/using/monitoring-technical-workf
 | **Midden-sourcing (leveringstellers)** (defaultMidSourcingDlv) | Overdracht naar midsourcing | Deze workflow verzamelt tellingsinformatie voor leveringen op de server voor midsourcing. De telgegevens omvatten algemene leveringsindicatoren zoals het aantal verzonden leveringen, enz. Trackinggegevens zoals die worden geopend, worden niet opgenomen. Deze wordt standaard om de tien minuten geactiveerd. |
 | **Midden-sourcing (leveringslogboeken)** (defaultMidSourcingLog) | Overdracht naar midsourcing | Deze workflow verzamelt leveringslogboeken op de server voor midsourcing. Deze wordt standaard elke uur geactiveerd. |
 | **NMAC-opt-out-beheer** (mobileAppOptOutMgt) | Kanaal voor mobiele apps | Met deze workflow worden afmeldingsopties op mobiele apparaten bijgewerkt. Het wordt teweeggebracht om de 6 uur tussen 1am en middernacht. Raadpleeg [deze sectie](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines) voor meer informatie. |
-| **Aantal actieve factureringsprofielen**  (billingActiveContactCount) | Levering | Deze workflow telt het aantal actieve profielen. Het wordt elke nacht teweeggebracht om 1 uur door gebrek. ‘Profiel’ betreft een datarecord (bijv. een record in de nmsRecipient-tabel of een externe tabel met een cookie-id, klant-id, mobiele id of andere informatie die relevant is voor een bepaald kanaal) die een eindklant, prospect of lead vertegenwoordigt. Facturering heeft alleen betrekking op profielen die &quot;actief&quot; zijn. Een profiel wordt als &quot;actief&quot; beschouwd als het profiel in de afgelopen twaalf maanden via een kanaal is geactiveerd of gecommuniceerd. Er wordt geen rekening gehouden met de kanalen Facebook en Twitter. U kunt een overzicht van het Aantal actieve profielen van het Beleid > het Beheer van de Campagne > het menu van de Metriek van de Klant hebben. |
 | **Melding**  van voorstel (aanbiedingsbeheer) | Levering | Deze workflow implementeert goedgekeurde aanbiedingen in de onlineomgeving en in elke categorie in de aanbiedingencatalogus. |
 | **Opschonen van gepauzeerde workflows**  (schoonmaakbeurtenGepauzeerdeWorkflows) | Levering | In deze workflow worden gepauzeerde workflows geanalyseerd waarvoor de ernst is ingesteld op Normaal en worden waarschuwingen en meldingen geactiveerd wanneer deze al te lang zijn gepauzeerd. Na een maand worden gepauzeerde technische workflows onvoorwaardelijk gestopt. Standaard wordt de activering elke maandag om 17.00 uur gestart. Raadpleeg [Handling van gepauzeerde workflows](../../workflow/using/monitoring-workflow-execution.md#handling-of-paused-workflows) voor meer informatie. |
 | **Correctie**  van privacyverzoek (CleupPrivacyRequests) | Verordening inzake bescherming van privacydata | Deze workflow wist de bestanden met toegangsverzoeken die ouder zijn dan 90 dagen. |
@@ -69,7 +68,7 @@ Raadpleeg de [specifieke sectie](../../workflow/using/monitoring-technical-workf
 | **Propositiesynchronisatie** (propositionSynch) | Besturing van de aanbiedingsengine met uitvoeringsinstantie | Deze workflow synchroniseert voorstellingen tussen de marketinginstantie en de uitvoeringsinstantie die voor interacties wordt gebruikt. |
 | **Herstel van webgebeurtenissen**  (webAnalyticsGetWebEvents) | Webanalytische connectors | Elk uur downloadt deze workflow segmenten op het gedrag van internetgebruikers op een bepaalde site, plaatst deze in de Adobe Campaign-database en start de workflow voor het opnieuw in de handel brengen. |
 | **Rapporterende aggregaten**  (reportingAggregates) | Levering | Deze workflow werkt aggregaten bij die worden gebruikt in rapporten. Het wordt teweeggebracht elke dag om 2 uur door gebrek. |
-| **Verzenden van indicatoren en campagnerekenmerken**  (webAnalyticsSendMetrics) | Webanalytische connectors | Met deze workflow kunt u e-mailcampagne-indicatoren verzenden van Adobe Campaign naar Adobe Experience Cloud Suite via de Adobe® Genesis-connector. De betrokken indicatoren zijn als volgt: Verzonden (Verzonden), Totaal aantal van opent (iTotalRecipientOpen), Totaal aantal ontvangers die klikte (iTotalRecipientClick), Fouten (iError), Opt-Out (opt-out) (iOptOut). |
+| **Verzenden van indicatoren en campagnerekenmerken**  (webAnalyticsSendMetrics) | Webanalytische connectors | Met deze workflow kunt u e-mailcampagneindicatoren van Adobe Campaign naar Adobe Experience Cloud Suite verzenden via de Adobe® Analytics-connector. De betrokken indicatoren zijn als volgt: Verzonden (Verzonden), Totaal aantal van opent (iTotalRecipientOpen), Totaal aantal ontvangers die klikte (iTotalRecipientClick), Fouten (iError), Opt-Out (opt-out) (iOptOut). |
 | **Voorraad: Bestellingen en waarschuwingen**  (stockMgt) | Marketingcampagnes (Campagne) | Deze workflow start voorraadberekening op de orderregels en beheert drempelwaarden voor waarschuwingen. |
 | **Facebook-ventilatoren**  synchroniseren (FacebookFans synchroniseren) | Sociale netwerken (sociale marketing) | Deze workflow importeert elke dag om 7.00 uur Facebook-fans naar Adobe Campaign. |
 | **Facebook-pagina** &#39;s synchroniseren (Facebook synchroniseren) | Sociale netwerken (sociale marketing) | Deze workflow synchroniseert elke dag om 7.00 uur Facebook-pagina&#39;s met Adobe Campaign. |
