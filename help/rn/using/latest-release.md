@@ -6,10 +6,10 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 100%
+source-wordcount: '1951'
+ht-degree: 52%
 
 ---
 
@@ -21,7 +21,144 @@ Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden 
 >
 >Campaign **General Availability (GA)-builds** zijn: de [[!DNL Gold Standard] 11-release](../../rn/using/gold-standard.md#gs-11) en de [Campaign 20.2.5-release](../../rn/using/release--20-2.md).
 
-## ![](assets/do-not-localize/blue_2.png) Release 21.1.2 - build 9282 {#release-21-1-2-build-9282}
+## ![](assets/do-not-localize/blue_2.png) Release 21.1.3 - build 9330 {#release-21-1-3-build-9330}
+
+_4 juni 2021_
+
+**Nieuwe functies**
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey Orchestration-integratie</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>De integratie tussen Journey Orchestration en Adobe Campaign Classic is nu GA. Journey Orchestration kan e-mails, pushberichten en SMS verzenden met de Adobe Campaign Classic Transaction Messaging-mogelijkheden.</p>
+<p>De verbinding tussen de instanties van de Journey Orchestration en van de Campaign Classic is opstelling door Adobe bij leveringstijd.</p>
+<p>Raadpleeg de <a href="https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html">Journey Orchestration-documentatie</a> voor meer informatie. In deze <a href="https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html">sectie</a> wordt een stapsgewijs gebruiksgeval weergegeven</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Verbetering lijnkanaal</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>De volgende verbeteringen zijn toegevoegd aan het lijnkanaal:
+</p>
+<ul> 
+<li><p>Ondersteuning voor LINE-videoberichttype</p></li>
+<li><p>Ondersteuning voor LINE Partner Registration API</p></li>
+<li><p>Ondersteuning voor het opnieuw verzenden van berichten in geval van een fout aan de serverzijde of time-out van het netwerk</p></li>
+</ul>
+<p>Raadpleeg de <a href="../../delivery/using/line-channel.md">gedetailleerde documentatie</a> voor meer informatie.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Vertica FDA-connector</strong><br/> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>U kunt nu uw Adobe Campaign Classic-instantie verbinden met uw externe Vertica-database. Deze verbinding wordt beheerd via een nieuw extern account.</p>
+<p>Raadpleeg de <a href="../../installation/using/configure-fda-vertica.md">gedetailleerde documentatie</a> voor meer informatie.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Google Big Query FDA-connector</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>U kunt nu uw Adobe Campaign Classic-instantie verbinden met uw externe Google Big Query-database. Deze verbinding wordt beheerd via een nieuw extern account.
+</p>
+<p>Raadpleeg de <a href="../../installation/using/configure-fda-google-big-query.md">gedetailleerde documentatie</a> voor meer informatie.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**Verbeterde beveiliging**
+
+* De toegang tot de **xtk:session#GetCnxInfo** API-methode die de volledige gegevens van de databaseverbinding retourneert, is nu beperkt tot alleen beheerders. (NEO-27779)
+* De vervangen decryptString-functie is vervangen door decryptPassword in CRM-gerelateerde JavaScript-bestanden.
+* De functie Handtekening bijhouden is verbeterd en beperkt het risico dat omleidingsfouten worden bijgehouden wanneer hulpmiddelen van derden (e-mailclients, internetbrowsers, beveiligingsprogramma&#39;s voor koppelingen) de bijgehouden koppeling wijzigen.
+* Probleem verholpen waardoor bijgehouden URL&#39;s niet meer werken als deze hoofdletters bevatten. Ondertekeningsmechanisme van bijgehouden URL&#39;s is nu hoofdlettergevoelig. (NEO-28414)
+
+**Compatibiliteitsupdates**
+
+De volgende systemen worden nu ondersteund met Campaign:
+* Google Big Query FDA-connector
+* Vertica FDA-connector
+* PostgreSQL 13
+
+Ontdek meer in de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md).
+
+**Verouderde functies**
+
+* Vanaf de release van Campagne 21.1 is de Adobe Analytics Data Connector verouderd. Als u deze schakelaar gebruikt, moet u uw implementatie aanpassen dienovereenkomstig met de nieuwe schakelaar van Adobe Analytics.
+Raadpleeg de [gedetailleerde documentatie](../../platform/using/adobe-analytics-connector.md) voor meer informatie.
+* De ondersteuning voor Debian 8 is nu afgekeurd.
+* Na de afschrijving van Oracle CRM in 20.3 is de gerelateerde externe rekening uit de interface verwijderd.
+
+Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](../../rn/using/deprecated-features.md).
+
+**Verbeteringen**
+
+* Er zijn extra controles toegevoegd bij het opslaan van een workflow om ervoor te zorgen dat de namen van activiteiten uniek zijn en dat overgangen altijd worden gevolgd door een activiteit.
+* De technische workflow **Facturering (facturering)** bevat nu de taken die oorspronkelijk zijn uitgevoerd door de workflow **Aantal actieve factureringsprofielen** (billingActiveContactCount), die is verwijderd. Het e-mailrapport dat elke maand door de workflow wordt verzonden, bevat nu informatie over het aantal actieve profielen voor de instantie. [Meer informatie](../../workflow/using/about-technical-workflows.md).
+* Het nieuwe **_keyOnMData** attribuut is toegevoegd om een sleutel voor verrichtingen op memogegevens te kunnen gebruiken.
+
+**Overige wijzigingen**
+
+* De openssl-derde voor Windows is bijgewerkt naar versie 1.1.1h.
+* In de beschrijving van het Debian-pakket is NLServer gewijzigd in Adobe Campaign Classic-server.
+
+**Patches**
+
+* Probleem verholpen tijdens het bewerken van de sessietime-out voor het afmelden van gebruikers na een bepaalde tijd waarin gebruikers zich zelfs na de ingestelde tijd bleven aanmelden.
+* Probleem verholpen waarbij leveringen als alleen-lezen werden weergegeven, maar nog wel konden worden bewerkt in de eigenschappen van de leveringen.
+* Correctie van een fout die ervoor zorgde dat de werkbalk voor bewerken verdween bij het ontwerpen van een webtoepassing.
+* Probleem verholpen waarbij de tekstversie van een e-mailbericht met Adobe Campaign Classic-kopteksten werd weergegeven wanneer een koppeling naar een e-mailbericht werd toegevoegd. (NEO-29211
+* Bij gebruik van FDA via HTTP-verbinding, bleef de **Mid-sourcing (leveringslogboeken)** (defaultMidSourcingLog)-workflow vast in het tijdframe dat is ingesteld door de optie **NmsMidSourcing_LogsPeriodHour**. Hierdoor wordt voorkomen dat records worden bijgewerkt met gegevens die na dit ingestelde tijdpad zijn opgetreden. (NEO-30833)
+* Probleem verholpen die optrad na het uitvoeren van de synchronisatieworkflow van het berichtcentrum. Telkens wanneer een omslag van leveringsvoorwerpen aan een douanemap werd bewogen, zou het werkschema de leveringen terug naar generische **Transactionele berichtgeschiedenis** omslag bewegen. (NEO-27445)
+* Probleem verholpen waarbij een foutbericht werd weergegeven tijdens een poging om de **Cijfers voor uitzending**, **Tracking-indicatoren** en **Statistieken van de delende activiteiten**-rapporten weer te geven.
+* De **Oracle On Demand** werkschemaactiviteit is verwijderd uit de interface na de afleiding van de Oracle CRM-connector.
+* Probleem verholpen waarbij de uitvoering van verwerkingsworkflows werd gestopt na het dagelijks opnieuw opstarten van de wfserver-module (workflowserver). (NEO-30047)
+* Probleem verholpen waardoor het MX-beheerdocument niet kon worden bijgewerkt, wat negatieve gevolgen zou kunnen hebben voor de IP-reputatie. (NEO-29897)
+* Probleem verholpen waarbij het webproces vastliep bij het ontvangen van een SOAP-aanroep. (NEO-28796) (NEO-29600)
+* Probleem opgelost waarbij het maken van de FDA-index van het SAP HANA mislukte. (NEO-29664)
+* Probleem verholpen waarbij transactieberichten in de status **Wachten** konden worden bewaard wanneer SOAP-aanroepen met een header werden uitgevoerd. (NEO-28737)
+* Probleem verholpen die optrad bij gebruik van de Teradata FDA-connector: alle tijdelijke tabellen werden gemaakt op slechts één knooppunt van het cluster, waardoor de hele spoolruimte zou kunnen worden ingenomen en Teradata vastliep. De tijdelijke tabellen worden nu op veel knooppunten gegenereerd. (NEO-28230)
+* Probleem verholpen bij het gebruik van webtoepassingen die ervoor zorgden dat trackinglabels onjuiste primaire sleutels naar het schema **nms leidden:trackingURL**. (NEO-27931)
+* De compatibiliteit met ODBC 3.x is verbeterd om foutberichten accuraat te maken.
+* Probleem verholpen waarbij de console vastloopt als sjablonen voor aangepaste inhoud werden gebruikt in e-mailleveringen. (NEO-31547)
+* Probleem verholpen waarbij Tomcat geen geldige reacties kon verzenden vanwege een langzame verbinding of een grote reactiegrootte.
+* Probleem verholpen die kon optreden bij het lezen van UUID vanuit een PostgreSQL-database.
+* Probleem verholpen dat tot prestatieproblemen kan leiden bij het zoeken naar propositiegegevens met betrekking tot aanbiedingen. (NEO-27554)
+* Probleem opgelost waarbij het webproces niet reageerde wanneer de IMS-service was geactiveerd maar niet reageerde.
+* Probleem verholpen waarbij u geen levering kon verzenden met een groep proefdrukken vanwege een specifiek samenvoegingsmechanisme dat de levering niet kon aanpassen. (NEO-14391)
+* Probleem verholpen waarbij geen waarschuwing met de waarschuwingsactiviteit werd verzonden als een query en een verrijkingsactiviteit de leveringstabel als doel hadden. (NEO-25157)
+
+## ![](assets/do-not-localize/red_2.png) Release 21.1.2 - build 9282 {#release-21-1-2-build-9282}
 
 _15 april 2021_
 
