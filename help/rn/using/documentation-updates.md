@@ -6,10 +6,10 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 8d535439923d6753777b7edd7fb768f685ec5522
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '4396'
-ht-degree: 99%
+source-wordcount: '4421'
+ht-degree: 98%
 
 ---
 
@@ -32,6 +32,10 @@ De vereisten voor de Campaign-clientconsole zijn bijgewerkt in de compatibilitei
 De installatiestappen voor de Campaign-clientconsole zijn verbeterd en verduidelijkt. [Meer informatie](../../installation/using/installing-the-client-console.md)
 
 Er is een nieuwe technische opmerking gemaakt over het handtekeningprobleem van de bijgehouden URL&#39;s. [Meer informatie](../../technotes/tracked-urls.md)
+
+**Documentatie-updates die bij de 21.1.3-release worden geleverd**
+
+De technische werkstroombeschrijving &quot;Facturering (facturering)&quot; bevat nu de taken die oorspronkelijk zijn uitgevoerd door het &quot;Aantal actieve factureringsprofielen (billingActiveContactCount)&quot;. [Meer informatie](../../workflow/using/about-technical-workflows.md)
 
 ## April 2021 {#april-2021}
 
@@ -456,7 +460,7 @@ De handleiding om aan de slag te gaan met de AVG is verbeterd en verrijkt. Het i
 
 Er is een nieuwe pagina voor probleemoplossing toegevoegd voor tracking in Campaign Classic. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/classic-tracking-troubleshooting.html).
 
-Er is een nieuwe pagina toegevoegd met best practices voor de Adobe Analytics-dataconnector. [Meer informatie over de Adobe Analytics-dataconnector](../../platform/using/adobe-analytics-data-connector.md)
+Er is een nieuwe pagina met best practices voor Adobe Analytics Connector toegevoegd. [Meer informatie over Adobe Analytics Connector](../../platform/using/adobe-analytics-connector.md)
 
 De handleiding om aan de slag te gaan met best practices voor levering is verplaatst en bijgewerkt. [Meer informatie](../../delivery/using/delivery-best-practices.md)
 
@@ -534,8 +538,8 @@ Er zijn twee nieuwe opties toegevoegd aan de lijst met Campaign-opties: XtkSecur
 Er is informatie toegevoegd over de verschillende externe accounts die beschikbaar zijn in Campaign Classic en hoe u deze kunt configureren.
 [Meer informatie](../../installation/using/external-accounts.md)
 
-De sectie over de Analytics-dataconnector is bijgewerkt om interfacewijzigingen te weerspiegelen.
-[Meer informatie](../../platform/using/adobe-analytics-data-connector.md)
+Bijgewerkte sectie van de Schakelaar van Analytics om interfaceveranderingen te weerspiegelen.
+[Meer informatie](../../platform/using/adobe-analytics-connector.md)
 
 Er is informatie toegevoegd over het factureringsrapport.
 [Meer informatie](../../production/using/monitoring-processes.md)
