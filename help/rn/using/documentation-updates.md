@@ -6,10 +6,10 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: fc40dae282c045dd73547e34ea307297f64c66fa
 workflow-type: tm+mt
-source-wordcount: '4421'
-ht-degree: 98%
+source-wordcount: '4470'
+ht-degree: 97%
 
 ---
 
@@ -23,6 +23,18 @@ Raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/us
 
 De sectie **Transactioneel Overseinen** is gereorganiseerd en met een nieuwe Get begonnen sectie, met inbegrip van een [verbeterd schema](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) voor een beter inzicht in het proces verduidelijkt. [Meer informatie](../../message-center/using/about-transactional-messaging.md)
 
+**Documentatie-updates die bij de 21.1.3-release worden geleverd**
+
+Integratie met Adobe Journey Orchestration - [Meer informatie](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html). Er wordt een stapsgewijs gebruiksgeval weergegeven op [deze pagina](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html)
+
+Verbeteringen voor lijnkanalen - [Meer informatie](../../delivery/using/line-channel.md)
+
+Nieuwe Vertica FDA-connector - [Meer informatie](../../installation/using/configure-fda-vertica.md)
+
+Nieuwe Google Big Query FDA-connector - [Meer informatie](../../installation/using/configure-fda-google-big-query.md)
+
+De technische werkstroombeschrijving &quot;Facturering (facturering)&quot; bevat nu de taken die oorspronkelijk zijn uitgevoerd door het &quot;Aantal actieve factureringsprofielen (billingActiveContactCount)&quot;. [Meer informatie](../../workflow/using/about-technical-workflows.md)
+
 ## Mei 2021 {#may-2021}
 
 De documentatie voor het workflowheatmaprapport is bijgewerkt en verbeterd. [Meer informatie](../../workflow/using/heatmap.md)
@@ -32,10 +44,6 @@ De vereisten voor de Campaign-clientconsole zijn bijgewerkt in de compatibilitei
 De installatiestappen voor de Campaign-clientconsole zijn verbeterd en verduidelijkt. [Meer informatie](../../installation/using/installing-the-client-console.md)
 
 Er is een nieuwe technische opmerking gemaakt over het handtekeningprobleem van de bijgehouden URL&#39;s. [Meer informatie](../../technotes/tracked-urls.md)
-
-**Documentatie-updates die bij de 21.1.3-release worden geleverd**
-
-De technische werkstroombeschrijving &quot;Facturering (facturering)&quot; bevat nu de taken die oorspronkelijk zijn uitgevoerd door het &quot;Aantal actieve factureringsprofielen (billingActiveContactCount)&quot;. [Meer informatie](../../workflow/using/about-technical-workflows.md)
 
 ## April 2021 {#april-2021}
 
