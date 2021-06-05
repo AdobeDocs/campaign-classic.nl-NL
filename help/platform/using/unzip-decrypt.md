@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6f5e91a719553fbeb97811d30ce6318f857bec80
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '722'
 ht-degree: 11%
 
 ---
@@ -19,7 +19,7 @@ Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden importeren. Voo
 
 Om dit te kunnen doen:
 
-1. Gebruik [Controlebord](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) om een openbaar/privé zeer belangrijk paar te produceren.
+1. Gebruik [Controlebord](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) om een openbaar/privé zeer belangrijk paar te produceren.
 
    >[!NOTE]
    >
@@ -54,7 +54,7 @@ In dit geval, zullen wij een werkschema bouwen om gegevens in te voeren die in e
 
 De volgende stappen worden uitgevoerd:
 
-1. Gebruik het Configuratiescherm om een sleutelpaar (openbaar/privé) te genereren. Gedetailleerde stappen zijn beschikbaar in [documentatie van het Configuratiescherm](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
+1. Gebruik het Configuratiescherm om een sleutelpaar (openbaar/privé) te genereren. Gedetailleerde stappen zijn beschikbaar in [documentatie van het Configuratiescherm](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
 
    * De openbare sleutel zal met het externe systeem worden gedeeld, dat het zal gebruiken om de gegevens te coderen om naar Campagne te verzenden.
    * De persoonlijke sleutel wordt door Campaign Classic gebruikt om de inkomende gecodeerde gegevens te decoderen.
