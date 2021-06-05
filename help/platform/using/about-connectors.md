@@ -6,9 +6,9 @@ feature: Overzicht
 role: Business Practitioner, Data Architect
 level: Beginner
 exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '194'
 ht-degree: 8%
 
 ---
@@ -21,7 +21,7 @@ Beschikbare connectors worden hieronder vermeld:
 
 * De Schakelaar FDA (**Federated Data Access**) laat u toe om Campagne met één of meerdere externe gegevensbestanden aan te sluiten en informatie te verwerken die in hen wordt opgeslagen zonder uw gegevens van de Campagne te beïnvloeden. [Meer informatie](../../installation/using/about-fda.md).
 * CRM-connectors maken het mogelijk gegevens uit te wisselen tussen Adobe Campaign en uw CRM-oplossing met behulp van speciale workflowactiviteiten. [Meer informatie](../../platform/using/crm-connectors.md).
-* Met Analytics Data Connectors (was **Adobe Genesis**) kunt u gegevens delen tussen Adobe Campaign en Adobe Analytics. [Meer informatie](../../platform/using/adobe-analytics-data-connector.md).
+* Met Analytics Connectors kunt u gegevens delen tussen Adobe Campaign en Adobe Analytics. [Meer informatie](../../platform/using/adobe-analytics-connector.md).
 
 U kunt Campagne met veelvoudige andere systemen, zoals ook integreren:
 
