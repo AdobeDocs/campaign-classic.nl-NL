@@ -7,10 +7,10 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: U kunt cross-channel marketingcampagnes ontwerpen, plannen, uitvoeren, beheren en optimaliseren voor een hoog rendement op marketinginvesteringen.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '2477'
-ht-degree: 99%
+source-wordcount: '2485'
+ht-degree: 98%
 
 ---
 
@@ -115,7 +115,8 @@ ht-degree: 99%
          + [Verbinding maken met Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Verbinding maken met Salesforce.com](platform/using/crm-sfdc.md)
          + [Gegevens synchroniseren met CRM](platform/using/crm-data-sync.md)
-      + [Adobe Analytics-gegevensconnector](platform/using/adobe-analytics-data-connector.md)
+      + [Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
+      + [Adobe Analytics-gegevensconnector](platform/using/adobe-analytics-data-connector-legacy.md)
    + [Help- en ondersteuningsopties](support.md)
 + Berichten maken en verzenden {#sending-messages}
    + [Aan de slag met berichten](delivery/using/communication-channels.md)
@@ -670,7 +671,9 @@ ht-degree: 99%
          + [Best practices en beperkingen](installation/using/fda-best-practices.md)
          + Configuratierichtlijnen {#config-databases}
             + [Configuratiestappen](installation/using/configure-fda.md)
+            + [Vertica configureren](installation/using/configure-fda-vertica.md)
             + [Snowflake configureren](installation/using/configure-fda-snowflake.md)
+            + [Google BigQuery configureren](installation/using/configure-fda-google-big-query.md)
             + [Azure Synapse configureren](installation/using/configure-fda-synapse.md)
             + [Hadoop configureren](installation/using/configure-fda-hadoop.md)
             + [Oracle configureren](installation/using/configure-fda-oracle.md)
