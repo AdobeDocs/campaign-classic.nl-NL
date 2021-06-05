@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '381'
 ht-degree: 7%
 
 ---
@@ -74,18 +74,13 @@ Een gegevensschema wordt geïdentificeerd door zijn naam en zijn namespace.
 
 Met een naamruimte kunt u een set schema&#39;s groeperen op interessegebied. De naamruimte **cus** wordt bijvoorbeeld gebruikt voor klantspecifieke configuratie (**klanten**).
 
+De identificatiesleutel van een schema is een tekenreeks die is opgebouwd met behulp van de naamruimte en de naam gescheiden door een dubbele punt. bijvoorbeeld: **cus:ontvanger**.
+
 >[!IMPORTANT]
 >
->Standaard moet de naam van de naamruimte beknopt zijn en alleen toegestane tekens bevatten, in overeenstemming met XML-naamgevingsregels.
+>De naam van de naamruimte moet beknopt zijn en mag alleen toegestane tekens bevatten in overeenstemming met de XML-naamgevingsregels.
 >
 >Id&#39;s mogen niet beginnen met numerieke tekens.
+>
+>De volgende naamruimten zijn gereserveerd voor beschrijvingen van de systeementiteiten die vereist zijn voor de werking van de Adobe Campaign-toepassing en mogen niet worden gebruikt: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm&lt;a1 3/>,** xxl **.**
 
-Bepaalde naamruimten zijn gereserveerd voor beschrijvingen van de systeementiteiten die vereist zijn voor de werking van de Adobe Campaign-toepassing:
-
-* **xtk**: met betrekking tot platformsysteemgegevens,
-* **nl**: betreffende het algemene gebruik van de aanvraag,
-* **nms**: wat de levering betreft (ontvanger, levering, tracking, enz.),
-* **ncm**: met betrekking tot inhoudsbeheer,
-* **temp**: gereserveerd voor tijdelijke regelingen.
-
-De identificatiesleutel van een schema is een tekenreeks die is opgebouwd met behulp van de naamruimte en de naam gescheiden door een dubbele punt. bijvoorbeeld: **cus:ontvanger**.
