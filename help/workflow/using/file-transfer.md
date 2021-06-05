@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '543'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ De configuratie is afhankelijk van de geselecteerde actie.
 
    ![](assets/file_transfert_edit.png)
 
-   Schakel **[!UICONTROL Use an external account]** in om een account te selecteren uit de S3-, FTP- of SFTP-accounts die zijn geconfigureerd in de **[!UICONTROL Administration > Platform > External accounts]**-node van de boomstructuur. Geef vervolgens op welke map op de server de te downloaden bestanden bevat.
+   Schakel **[!UICONTROL Use an external account]** in om een account te selecteren in de Azure Blob-opslag, S3-, FTP- of SFTP-accounts die zijn geconfigureerd in het **[!UICONTROL Administration > Platform > External accounts]**-knooppunt van de boomstructuur. Geef vervolgens op welke map op de server de te downloaden bestanden bevat.
 
    ![](assets/file_transfert_edit_external.png)
 
@@ -87,7 +87,7 @@ Met de koppeling **[!UICONTROL Advanced parameters...]** hebt u toegang tot de v
 
 * **[!UICONTROL Display the session logs]**
 
-   Hiermee kunt u de logboeken van de S3-, FTP- of SFTP-overdracht herstellen en opnemen in de logboeken van de workflow.
+   Hiermee kunt u de logs van de Azure Blob-opslag, de S3-, FTP- of SFTP-overdracht herstellen en opnemen in de workflowlogboeken.
 
 * **[!UICONTROL Disable passive mode]**
 
