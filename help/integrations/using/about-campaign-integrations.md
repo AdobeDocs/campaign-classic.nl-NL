@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '757'
 ht-degree: 7%
 
 ---
@@ -89,8 +89,8 @@ De volgende lijst verleent toegang tot beschikbare documentatie van de Experienc
    <td> Dankzij de integratie tussen <strong>Triggers core service</strong> en Adobe Campaign kunt u persoonlijke e-mails naar uw klanten sturen als reactie op specifieke gedragingen die door Adobe Analytics op uw website worden bijgehouden.<br /> <p><a href="https://helpx.adobe.com/nl/campaign/kb/triggers-and-campaign.html">Meer weten </a> over Adobe Campaign - Experience Cloud activeert integratie.</p><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Adobe Analytics - Gegevensconnectors</strong><br /> </td> 
-   <td> <strong>Via gegevensconnectors</strong>  (voorheen Adobe Genesis genoemd) kunnen Adobe Campaign en Adobe Analytics op verschillende gebieden communiceren over het gebruikersgedrag na een e-mailcampagne. Omgekeerd verzendt het indicatoren en attributen van e-mailcampagnes die door Adobe Campaign aan Adobe Analytics worden geleverd - de schakelaar van Gegevens.<br /> <p><a href="../../platform/using/adobe-analytics-data-connector.md">Meer </a> informatie over campagne - integratie van gegevensconnectors.</p><br /> </td> 
+   <td> <strong>Adobe Analytics Connector</strong><br /> </td> 
+   <td> <strong>Adobe Analytics </strong> Connectorallows Adobe Campaign en Adobe Analytics communiceren via segmenten over gebruikersgedrag na een e-mailcampagne. Omgekeerd verzendt het indicatoren en attributen van e-mailcampagnes die door Adobe Campaign aan Adobe Analytics worden geleverd.<br /> <p><a href="../../platform/using/adobe-analytics-connector.md">Meer </a> informatie over de integratie van Analytics Connectors.</p><br /> </td> 
   </tr> 
  </tbody> 
 </table>
