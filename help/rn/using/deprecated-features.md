@@ -6,10 +6,10 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: da699fbba527a44a048d5562a8311e70c00f74fd
+source-git-commit: 778f0a9436f26c10b266019f761b499ab7547be1
 workflow-type: tm+mt
-source-wordcount: '1629'
-ht-degree: 95%
+source-wordcount: '1633'
+ht-degree: 94%
 
 ---
 
@@ -220,7 +220,8 @@ Campaign Classic is niet compatibel met de volgende servers in FDA (Federated Da
 
 **RDBMS SERVER**
 
-Adobe Campaign is niet compatibel met de volgende RDBMS-servers:
+Adobe Campaign is vanaf de 19.1-lenteversie niet meer compatibel met de volgende RDBMS-servers:
+
 * Oracle 10GR2
 * PostgreSQL 9.0 tot 9.3
 * SQL Server 2005
