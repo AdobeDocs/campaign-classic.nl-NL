@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f,f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: bdc19e80744643097463e4e721b05a2ac8e51a2e
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '442'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ Voor optimale navigatie en bruikbaarheid raadt Adobe u aan een minimale schermre
 
 >[!CAUTION]
 >
->Resoluties van minder dan 1600 x 900 pixels worden door Adobe Campaign ondersteund.
+>Resoluties van minder dan 1600 x 900 pixels worden niet ondersteund door Adobe Campaign.
 
 Als in de **[!UICONTROL Explorer]** werkruimte sommige delen van de **[!UICONTROL Details]** streek lijken te zijn afgekapt, breidt u deze uit met de pijl boven de zone of klikt u op de **[!UICONTROL Enlarge]** knop.
 
