@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 11de485a97d112b308c145775537d9b6255f124f
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '331'
 ht-degree: 5%
 
 ---
@@ -40,6 +40,10 @@ Zodra het gegevensschema wordt gecreeerd, kunnen de gegevens in de werkschema&#3
 Afhankelijk van de externe databases die u vanuit Adobe Campaign wilt kunnen openen, moet u bepaalde specifieke configuraties uitvoeren. Deze configuraties omvatten hoofdzakelijk het installeren van bestuurders en het verklaren van milieuvariabelen die tot elke RDBMS op de server van Adobe Campaign behoren, en het vormen van de externe rekening.
 
 Volg de onderstaande koppelingen voor meer informatie:
+
+* Campagne verbinden en [Vertica](../../installation/using/configure-fda-vertica.md)
+
+* Campagne voor Connect en [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
 
 * Campagne verbinden en [Azure synapse](../../installation/using/configure-fda-synapse.md)
 
