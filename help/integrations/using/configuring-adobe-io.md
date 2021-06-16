@@ -8,9 +8,9 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 934964b31c4f8f869253759eaf49961fa5589bff
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '673'
 ht-degree: 4%
 
 ---
@@ -30,23 +30,24 @@ Deze integratie is alleen van toepassing vanaf **Campaign Classic 20.3, 20.2.4, 
 Controleer voordat u met deze implementatie begint of:
 
 * een geldige **Organisatie-id**: de identificatiecode van de Identity Management System (IMS)-organisatie is de unieke identificatie binnen de Adobe Experience Cloud, die bijvoorbeeld wordt gebruikt voor de VisitorID-service en de IMS Single-Sign On (SSO). [Meer informatie](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
-* a **Toegang voor ontwikkelaars** tot uw organisatie.  Als u om de voorrechten van de Beheerder van het Systeem van IMS Org moet verzoeken, volg de procedure [op deze pagina](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) om deze toegang voor alle Profielen van het Product te verlenen.
+* a **Toegang voor ontwikkelaars** tot uw organisatie. De systeembeheerder van IMS Org moet **ontwikkelaars aan één enkel productprofiel toevoegen** volgen
+procedure [op deze pagina](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) wordt beschreven om ontwikkelaars toegang te verlenen tot het `Analytics - {tenantID}` Profiel van het Product van Adobe Analytics verbonden aan Trekkers.
 
 ## Stap 1: Adobe I/O-project maken/bijwerken {#creating-adobe-io-project}
 
-1. Open [!DNL Adobe I/O] en meld u aan met het beheerdersrecht van het Systeem voor de IMS-organisatie.
+1. Open [!DNL Adobe I/O] en meld u aan met de ontwikkelaarstoegang van de IMS-organisatie.
 
    >[!NOTE]
    >
    > Zorg ervoor u in het correcte portaal van de Organisatie wordt geregistreerd.
 
-1. Extraheer de bestaande id van de integratieclient (client-id) uit het Instance Configuration-bestand ims/authIMSTAClientId. Niet bestaand of leeg kenmerk geeft aan dat de client-id niet is geconfigureerd.
+1. Extraheer de bestaande id van de integratieclient (Cliënt ID) van het dossier van de instantieconfiguratie ims/authIMSTAClientId. Niet-bestaand of leeg kenmerk geeft aan dat de id van de client niet is geconfigureerd.
 
    >[!NOTE]
    >
    >Als uw client-id leeg is, kunt u direct **[!UICONTROL Create a New project]** in Adobe I/O.
 
-1. Identificeer het bestaande project gebruikend het gehaalde cliëntherkenningsteken. Zoek naar bestaande projecten met het zelfde cliëntherkenningsteken zoals die in vorige stap wordt gehaald.
+1. Identificeer het bestaande project gebruikend het gehaalde cliëntherkenningsteken. Zoek naar bestaande projecten met het zelfde herkenningsteken van de Cliënt zoals die in vorige stap wordt gehaald.
 
    ![](assets/do-not-localize/adobe_io_8.png)
 
@@ -65,6 +66,10 @@ Controleer voordat u met deze implementatie begint of:
 1. Als uw client-id leeg was, selecteert u **[!UICONTROL Generate a key pair]** om een combinatie van openbare en persoonlijke sleutels te maken.
 
    De sleutels zullen dan automatisch met een standaardvervaldatum van 365 dagen worden gedownload. Zodra verlopen, zult u een nieuw zeer belangrijk paar moeten creëren en de integratie in het configuratiedossier bijwerken. Met Optie 2 kunt u ervoor kiezen om uw **[!UICONTROL Public key]** handmatig te maken en te uploaden met een langere vervaldatum.
+
+   >[!CAUTION]
+   >
+   >Sla het bestand config.zip op wanneer de downloadprompt verschijnt, omdat u deze niet opnieuw kunt downloaden.
 
    ![](assets/do-not-localize/adobe_io_4.png)
 
@@ -93,28 +98,38 @@ Controleer voordat u met deze implementatie begint of:
 
 ## Stap 2: Voeg de projectgeloofsbrieven in Adobe Campaign {#add-credentials-campaign} toe
 
-Om de projectgeloofsbrieven in Adobe Campaign toe te voegen, stel het volgende bevel als &quot;neolane&quot;gebruiker op alle containers van de instantie van Adobe Campaign in werking om **[!UICONTROL Technical Account]** geloofsbrieven in het dossier van de instantieconfiguratie op te nemen.
-
-```
-nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
-```
+>[!NOTE]
+>
+>Deze stap is niet vereist als uw client-id niet leeg was in [Stap 1: Adobe I/O-project maken/bijwerken](#creating-adobe-io-project).
 
 De persoonlijke sleutel moet in base64 UTF-8-indeling worden gecodeerd. Dit doet u als volgt:
 
 1. Gebruik de persoonlijke sleutel die in [Stap 1 wordt geproduceerd: Sectie Adobe I/O-project maken/bijwerken](#creating-adobe-io-project). De persoonlijke sleutel moet dezelfde zijn als die waarmee de integratie is gemaakt.
 
-1. Codeer de persoonlijke sleutel met behulp van de volgende opdracht: ```base64 ./private.key```.
+1. Codeer de persoonlijke sleutel met behulp van de volgende opdracht: `base64 ./private.key > private.key.base64`. Hierdoor wordt de base64-inhoud opgeslagen in een nieuw bestand `private.key.base64`.
 
    >[!NOTE]
    >
    >Soms kunnen extra regels automatisch worden toegevoegd wanneer u de persoonlijke sleutel kopieert/plakt. Vergeet niet deze te verwijderen voordat u uw persoonlijke sleutel gaat coderen.
 
-1. Gebruik de zojuist gegenereerde persoonlijke sleutel die is gecodeerd in de indeling base64 UTF-8 om de bovenstaande opdracht uit te voeren.
+1. Kopieer de inhoud uit het bestand `private.key.base64`.
+
+1. Meld u via SSH aan bij elke container waarin de Adobe Campaign-instantie is geïnstalleerd en voeg de projectgegevens in Adobe Campaign toe door de volgende opdracht als `neolane`-gebruiker uit te voeren. Hiermee worden de **[!UICONTROL Technical Account]**-referenties ingevoegd in het configuratiebestand van de instantie.
+
+   ```
+   nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
+   ```
 
 ## Stap 3: Door buizen uitgelijnde tag {#update-pipelined-tag} bijwerken
+
+>[!NOTE]
+>
+>Deze stap is niet vereist als uw client-id niet leeg was in [Stap 1: Adobe I/O-project maken/bijwerken](#creating-adobe-io-project).
 
 Als u [!DNL pipelined]-tag wilt bijwerken, moet u het verificatietype bijwerken naar een Adobe I/O-project in het configuratiebestand **config-&lt; instance-name >.xml** als volgt:
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
 ```
+
+Voer vervolgens een `config -reload` en een nieuwe start van [!DNL pipelined] uit om de wijzigingen in overweging te nemen.
