@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 11%
+source-wordcount: '290'
+ht-degree: 10%
 
 ---
 
@@ -21,7 +21,7 @@ Als u pushberichten wilt verzenden in Adobe Campaign, moet u:
 
 * Maak een **[!UICONTROL Mobile application]**-tekstinformatieservice voor de mobiele toepassing Neotrips. Zie [deze sectie voor iOS](../../delivery/using/configuring-the-mobile-application.md#configuring-ios-service). en [deze sectie voor Android](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service).
 * Voeg de iOS- en Android-versies van de toepassing toe aan deze service.
-* Maak een levering voor zowel iOS als Android. [Zie deze pagina](../../delivery/using/creating-notifications.md).
+* Een levering maken voor [iOS](create-notifications-ios.md) en [Android](create-notifications-android.md).
 
 ![](assets/nmac_service_diagram.png)
 
