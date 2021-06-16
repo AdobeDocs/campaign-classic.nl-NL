@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
@@ -59,7 +59,7 @@ Deze gegevens staan in het tekstbestand &quot;Purchases.txt&quot;.
 
    Met de activiteit **Gegevens laden(bestand)** kunt u de werktabel van de workflow verrijken met de verzamelde gegevens.
 
-   Raadpleeg [Gegevens laden uit een bestand](../../platform/using/import-export-workflows.md#loading-data-from-a-file) voor meer informatie over deze activiteit.
+   Raadpleeg [Gegevens laden van een bestand](../../platform/using/import-export-workflows.md#loading-data-from-a-file) voor meer informatie over deze activiteit.
 
 1. Configureer de **Bestandsverzamelaar** activiteit om tekstbestanden (*.txt) te verzamelen uit de geselecteerde map.
 
@@ -134,7 +134,7 @@ In **Gegevens bijwerken** activiteit, is de volgende configuratie nodig:
 
 ![](assets/uc2_enrich_miseajour.png)
 
-## Stap 3: &#39;Contactgegevens&#39; opheffen {#step-3--enriching--contact--data-}
+## Stap 3: &#39;Contactgegevens&#39; verrijken {#step-3--enriching--contact--data-}
 
 Het schema &quot;Contacten&quot; is fysiek gekoppeld aan het schema &quot;Aankopen&quot;. Dit betekent dat u een andere optie van de optie &quot;Verrijking&quot;kunt gebruiken: gegevens toevoegen die zijn gekoppeld aan de filterdimensie.
 
