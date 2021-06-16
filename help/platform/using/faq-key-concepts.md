@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 99%
@@ -90,7 +90,7 @@ Ontdek [in deze sectie](../../delivery/using/sms-channel.md) hoe u uw platform c
 
 ## Hoe kan ik pushmeldingen verzenden? {#how-to-send-push-notifications-}
 
-Leer hoe u met Adobe Campaign [een persoonlijke pushmelding](../../delivery/using/creating-notifications.md) naar iOS en Android-apparaten kunt verzenden via apps.
+Leer hoe u met Adobe Campaign [een persoonlijke pushmelding](../../delivery/using/create-notifications-ios.md) naar iOS en Android-apparaten kunt verzenden via apps.
 
 ## Hoe kan ik een online enquête ontwerpen en delen? {#how-to-design-and-share-an-online-survey-}
 
