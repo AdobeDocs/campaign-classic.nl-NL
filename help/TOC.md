@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Met Adobe Campaign kunt u rijke klantgegevens gebruiken om dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a4fc52e68cbca861e1b942e0c7e41f3d5dc3df54
+source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2512'
 ht-degree: 97%
 
 ---
@@ -161,7 +161,9 @@ ht-degree: 97%
          + [Aan de slag met de appconfiguratie](delivery/using/get-started-app-config.md)
          + [Configuratiestappen voor iOS](delivery/using/configuring-the-mobile-application.md)
          + [Configuratiestappen voor Android](delivery/using/configuring-the-mobile-application-android.md)
-      + [Meldingen maken](delivery/using/creating-notifications.md)
+      + Een pushmelding maken{#create-a-push-msg}
+         + [Een pushbericht maken voor iOS](delivery/using/create-notifications-ios.md)
+         + [Een pushbericht maken voor Android](delivery/using/create-notifications-android.md)
       + [Problemen oplossen](delivery/using/troubleshooting.md)
    + Direct mail verzenden {#sending-direct-mail}
       + [Kanaal voor direct mail](delivery/using/about-direct-mail-channel.md)
