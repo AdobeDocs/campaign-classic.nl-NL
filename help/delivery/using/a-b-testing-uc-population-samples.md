@@ -6,16 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 6%
+source-wordcount: '170'
+ht-degree: 7%
 
 ---
 
 # Populatievoorbeelden configureren {#step-2--configuring-population-samples}
 
-## Het vormen van de activiteit van de Vraag {#configuring-the-query-activity}
+## Vorm de activiteit van de Vraag {#configuring-the-query-activity}
 
 * Dubbelklik op de activiteit **[!UICONTROL Query]**.
 
@@ -79,4 +79,4 @@ Met deze activiteit kunt u verschillende populaties maken: degene die levering A
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
 
-U kunt de twee leveringsmalplaatjes nu tot stand brengen (zie [Stap 3: Maak twee leveringssjablonen (a1/>).](../../delivery/using/a-b-testing-uc-delivery-templates.md)
+U kunt nu de twee leveringssjablonen maken. [Meer informatie](a-b-testing-uc-delivery-templates.md)).
