@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;populaire onderwerpen
 product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: a4fc52e68cbca861e1b942e0c7e41f3d5dc3df54
+source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 55%
@@ -62,11 +62,11 @@ Krijg toegang tot veelgestelde vragen, best practices en Help-resources en vraag
     <p>
   </td>
   <td>
-    <a href="delivery/using/creating-notifications.md">
+    <a href="delivery/using/create-notifications-ios.md">
        <img alt="Pushmeldingen" src="platform/using/assets/push.png" />
     </a>
     <div>
-       <a href="delivery/using/creating-notifications.md">
+       <a href="delivery/using/create-notifications-ios.md">
     <strong>Pushmeldingen verzenden</strong>
     </a>
     </div>
