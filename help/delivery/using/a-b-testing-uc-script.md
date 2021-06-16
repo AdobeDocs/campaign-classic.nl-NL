@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 1%
+source-wordcount: '330'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +19,7 @@ De keus van de leveringsinhoud die voor de resterende bevolking wordt bestemd wo
 
 ## Voorbeeld van een script {#example-of-a-script}
 
-Het volgende script kan worden gebruikt zoals in de doelworkflow. Raadpleeg [Implementatie](#implementation) voor meer informatie hierover.
+Het volgende script kan worden gebruikt zoals in de doelworkflow. Raadpleeg [deze sectie](#implementation) voor meer informatie.
 
 ```
  // query the database to find the winner (best open rate)
@@ -65,7 +65,7 @@ Het volgende script kan worden gebruikt zoals in de doelworkflow. Raadpleeg [Imp
    vars.deliveryId = delivery.id
 ```
 
-Raadpleeg [Details van het script](#details-of-the-script) voor een gedetailleerde uitleg van het script.
+Raadpleeg [deze sectie](#details-of-the-script) voor een gedetailleerde uitleg van het script.
 
 ## Implementatie {#implementation}
 
@@ -168,4 +168,4 @@ In het bovenstaande voorbeeld kunt u de inhoud van een levering selecteren op ba
 * Laagste abonnement: `[indicators/@optOutRatio]`,
 * Transactiebedrag: `[indicators/@amount]`.
 
-U kunt nu de uiteindelijke levering definiëren (zie [Stap 6: Bepaal de definitieve levering](../../delivery/using/a-b-testing-uc-final-delivery.md)).
+U kunt nu de uiteindelijke levering definiëren. [Meer informatie](a-b-testing-uc-final-delivery.md).
