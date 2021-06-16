@@ -6,18 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 7%
+source-wordcount: '284'
+ht-degree: 8%
 
 ---
 
 # Cross-channel leveringen{#cross-channel-deliveries}
 
 Kanaaloverschrijdende leveringen zijn beschikbaar op het tabblad **[!UICONTROL Deliveries]** van workflowactiviteiten voor campagnes.
-
-Hiermee kunt u een levering maken die specifiek is voor een bepaald kanaal. U kunt het malplaatje specificeren waarop u uw levering evenals zijn inhoud wilt baseren, op de zelfde manier zoals met een klassieke leveringstovenaar.
 
 De verschillende beschikbare kanalen zijn:
 
@@ -26,12 +24,14 @@ De verschillende beschikbare kanalen zijn:
 * [Mobiel](../../delivery/using/sms-channel.md)
 * [Twitter](../../social/using/publishing-on-twitter.md)
 * [Facebook](../../social/using/publishing-on-facebook.md)
-* [iOS](../../delivery/using/creating-notifications.md#sending-notifications-on-ios)
-* [Android](../../delivery/using/creating-notifications.md#sending-notifications-on-android)
+* [iOS](../../delivery/using/create-notifications-ios.md)
+* [Android](../../delivery/using/create-notifications-android.md)
+
+Selecteer de sjabloon waarop u de levering wilt baseren en definieer de inhoud ervan.
 
 U kunt een doel voor uw levering vóór het werkschema specificeren gebruikend de verschillende het richten activiteiten.
 
-Hier maken we bijvoorbeeld een workflow voor het verzenden van een e-mail of een SMS voor gebruikers met pushberichten en een week later een pushmelding. Dit doet u als volgt:
+In het onderstaande voorbeeld maken we een workflow voor het verzenden van een e-mail of een SMS voor gebruikers met pushberichten en een week later een pushmelding. Dit doet u als volgt:
 
 1. Een campagne maken.
 1. Voeg op het tabblad **[!UICONTROL Targeting and workflows]** van uw campagne een **[!UICONTROL Query]** toe aan uw workflow.
@@ -39,7 +39,7 @@ Hier maken we bijvoorbeeld een workflow voor het verzenden van een e-mail of een
 
    >[!NOTE]
    >
-   >Voor de dupberichten, herinner eraan om **abonneetoepassingen** doelafmeting te gebruiken.
+   >Voor de dupberichten, gebruik **abonneetoepassingen** doelafmeting.
 
    ![](assets/cross_channel_delivery_1.png)
 
