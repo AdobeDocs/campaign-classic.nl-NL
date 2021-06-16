@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Contentmanagement{#about-content-management}
 
-De Adobe Campaign Content Manager-module is een specifiek Campaign Classic [standaardpakket](../../installation/using/installing-campaign-standard-packages.md) dat u kunt installeren om terugkerende nieuwsbrieven of websites te maken. Het kan u helpen om uw berichten tot stand te brengen, te bevestigen en te publiceren.
+De Adobe Campaign Content Manager-module is een specifiek ingebouwd Campaign Classic [pakket](../../installation/using/installing-campaign-standard-packages.md) dat u kunt installeren om terugkerende nieuwsbrieven of websites te maken. Het kan u helpen om uw berichten tot stand te brengen, te bevestigen en te publiceren.
 
 >[!NOTE]
 >
