@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 4%
+source-wordcount: '656'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,16 @@ Nadat het pakket is geïnstalleerd, kunt u de iOS-toepassingsinstellingen defini
 
 >[!NOTE]
 >
->Raadpleeg deze [sectie](../../delivery/using/configuring-the-mobile-application-android.md) voor informatie over het configureren van uw app voor Android en het maken van een levering voor Android.
+>Raadpleeg deze [sectie](configuring-the-mobile-application-android.md) voor informatie over het configureren van uw app voor Android en het maken van een levering voor Android.
+
+De belangrijkste stappen zijn:
+
+1. [De externe iOS-account configureren](#configuring-external-account-ios)
+1. [De iOS-service configureren](#configuring-ios-service)
+1. [De mobiele app van iOS integreren in de campagne](#creating-ios-app)
+
+Vervolgens kunt u [een pushmelding maken voor iOS-apparaten](create-notifications-ios.md).
+
 
 ## Externe iOS-account {#configuring-external-account-ios} configureren
 
@@ -64,9 +73,9 @@ Uw iOS-connector is nu geconfigureerd. U kunt uw service gaan maken.
 
 1. Maak uw iOS-ontwikkelings- en -productieprogramma&#39;s. Raadpleeg deze [sectie](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app) voor meer informatie.
 
-## Mobiele iOS-toepassing {#creating-ios-app} maken
+## Mobiele app voor iOS maken {#creating-ios-app}
 
-Nadat u de service hebt gemaakt, moet u nu uw iOS-toepassing maken:
+Nadat u de service hebt gemaakt, maakt u uw iOS-toepassing in Campagne. Volg de onderstaande stappen:
 
 1. Klik op de knop **[!UICONTROL Add]** van de zojuist gemaakte service om het toepassingstype te selecteren.
 
@@ -118,40 +127,3 @@ In het volgende voorbeeld voegen we **mediaURl** en **mediaExt** toe om een rijk
 1. Klik op **[!UICONTROL Finish]**.
 
 Uw iOS-toepassing kan nu worden gebruikt in Campaign Classic.
-
-## Een rijke melding voor iOS maken {#creating-ios-delivery}
-
-Met iOS 10 of hoger is het mogelijk om rijke meldingen te genereren. Adobe Campaign kan meldingen verzenden met behulp van variabelen waarmee het apparaat een uitgebreide melding kan weergeven.
-
-U moet nu een nieuwe levering maken en deze koppelen aan de mobiele toepassing die u hebt gemaakt.
-
-1. Ga naar **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
-
-1. Klik op **[!UICONTROL New]**.
-
-   ![](assets/nmac_android_3.png)
-
-1. Selecteer **[!UICONTROL Deliver on iOS (ios)]** in **[!UICONTROL Delivery template]** drop-down. Voeg een **[!UICONTROL Label]** aan uw levering toe.
-
-1. Klik op **[!UICONTROL To]** om de doelpopulatie te definiëren. Standaard wordt de **[!UICONTROL Subscriber application]**-doeltoewijzing toegepast. Klik **[!UICONTROL Add]** om onze eerder gecreeerde dienst te selecteren.
-
-   ![](assets/nmac_ios_9.png)
-
-1. Selecteer **[!UICONTROL Target type]** in het venster **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** en klik **[!UICONTROL Next]**.
-
-1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Service]** de eerder gemaakte service, selecteer vervolgens de toepassing die u als doel wilt instellen en klik op **[!UICONTROL Finish]**.
-**[!UICONTROL Application variables]** worden automatisch toegevoegd afhankelijk van wat tijdens de configuratiestappen werd toegevoegd.
-
-   ![](assets/nmac_ios_6.png)
-
-1. Bewerk uw uitgebreide melding.
-
-   ![](assets/nmac_ios_7.png)
-
-1. Schakel het vakje **[!UICONTROL Mutable content]** in het meldingsvenster Bewerken in zodat de mobiele toepassing media-inhoud kan downloaden.
-
-1. Klik **[!UICONTROL Save]** en verzend uw levering.
-
-De afbeelding en webpagina moeten in de pushmelding worden weergegeven wanneer deze worden ontvangen op de mobiele iOS-apparaten van de abonnees.
-
-![](assets/nmac_ios_8.png)
