@@ -5,9 +5,9 @@ description: De integratie configureren
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 45a84e1bf43678bbc31d8bac15a7e6520204fdc2
+source-git-commit: 9a126d16b394333163b974ad9690f7c93fb3034a
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ De parameter @authPrivateKey van het instance config-bestand is onjuist.
 
 1. Controleer of de authPrivateKey is ingesteld.
 1. Controleer of de authPrivateKey: begint met @, eindigt met = en is ongeveer 4000 tekens lang.
-1. Zoek de originele sleutel en controleer of deze: in formaat RSA, 4096 beetjes lang, en begint met —BEGIN RSA PRIVATE KEY—.
+1. Zoek de originele sleutel en controleer of deze: in RSA formaat, 4096 beetjes lang, en begint met `-----BEGIN RSA PRIVATE KEY-----`.
    <br> Maak de sleutel zo nodig opnieuw en registreer deze op Adobe Analytics.
 1. Controleer of de sleutel is gecodeerd binnen dezelfde instantie als [!DNL pipelined]. <br>Voer zo nodig de codering opnieuw uit met behulp van het voorbeeld JavaScript of de workflow.
 
@@ -51,6 +51,21 @@ De persoonlijke sleutel heeft een ongeldige indeling.
 1. Voer de stappen voor sleutelversleuteling op deze pagina uit.
 1. Controleer of de sleutel op dezelfde instantie is versleuteld.
 1. Controleer of de authPrivateKey in het configuratiebestand overeenkomt met de gegenereerde sleutel. <br>Gebruik OpenSSL om het sleutelpaar te genereren. PuttyGen bijvoorbeeld genereert niet de juiste indeling.
+
+**De pijplijns ontbreekt met &quot;is niet meer toegestaan toegangstoken te krijgen&quot;**
+
+De logboeken moeten als volgt zijn:
+
+```
+2021-05-31T08:42:18.124Z        66462   66501   1       error   log     Listener: JWT Token is empty. (iRc=16384)
+2021-05-31T08:42:18.210Z        66462   66501   1       error   log     Unknown authentication mode: 'Bearer realm="Adobe Analytics"'. (iRc=-55)
+2021-05-31T08:42:18.210Z        66462   66501   1       error   log     BAS-010007 Function not implemented (iRc=-55)
+2021-05-31T08:42:48.582Z        66462   66501   1       warning log     Connection seems to have been lost. Attempting to reconnect.
+2021-05-31T08:43:09.156Z        66462   66501   1       error   log     INT-150012 The HTTP query returned a 'Forbidden' type error (403) (iRc=-53)
+2021-05-31T08:43:09.160Z        66462   66501   1       error   log     Error while authenticating: '{"error":"This client: df73c224e5-triggers-test is no longer allowed to get access token."}' (iRc=16384)
+```
+
+Dit foutbericht geeft aan dat de verificatie is geconfigureerd met de Omniture base OAuth. Raadpleeg de [Adobe I/O configureren voor Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md)-documentatie om uw verificatie bij te werken.
 
 **Er worden geen triggers opgehaald**
 
