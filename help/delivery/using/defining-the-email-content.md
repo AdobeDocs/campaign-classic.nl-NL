@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1990'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Klik op de koppeling **[!UICONTROL From]** om de naam en het adres van de afzend
 
 In dit venster kunt u alle gegevens invoeren die nodig zijn om de e-mailberichtkoppen te maken. Deze informatie kan worden aangepast. Hiervoor gebruikt u de knoppen rechts van de invoervelden om aanpassingsvelden in te voegen.
 
-Om te weten te komen hoe te om verpersoonlijkingsgebieden op te nemen en te gebruiken, verwijs naar [Ongeveer verpersoonlijking](../../delivery/using/about-personalization.md) sectie.
+Om te weten te komen hoe te om verpersoonlijkingsgebieden op te nemen en te gebruiken, verwijs naar [Ongeveer verpersoonlijking](about-personalization.md) sectie.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Om te weten te komen hoe te om verpersoonlijkingsgebieden op te nemen en te gebr
 >
 >In het kader van de controles die door de Leveranciers van de Toegang van Internet (ISPs) worden uitgevoerd om ongevraagde e-mail (spam) te bestrijden, adviseert Adobe het creëren van e-mailrekeningen die aan de adressen beantwoorden die voor leveringen en antwoorden worden gespecificeerd. Vraag de beheerder van het berichtensysteem om advies.
 
-## Onderwerp van bericht {#message-subject}
+## Berichtonderwerp {#message-subject}
 
 Het onderwerp van het bericht wordt gevormd op het overeenkomstige gebied. U kunt het in het gebied direct ingaan of **[!UICONTROL Subject]** klikken om een manuscript in te gaan. Met de koppeling voor personalisatie kunt u databasevelden in het onderwerp invoegen.
 
@@ -53,7 +53,7 @@ In het bovenstaande bericht is het onderwerp van het bericht bijvoorbeeld gepers
 
 >[!NOTE]
 >
->Het gebruik van verpersoonlijkingsgebieden wordt voorgesteld in [Info verpersoonlijking](../../delivery/using/about-personalization.md).
+>Het gebruik van verpersoonlijkingsgebieden wordt voorgesteld in [Info verpersoonlijking](about-personalization.md).
 
 U kunt ook emoticons invoegen in uw onderwerpregel met het pop-upvenster **[!UICONTROL Insert emoticon]**.
 
@@ -91,7 +91,7 @@ Berichten worden standaard in HTML- of tekstindeling verzonden, afhankelijk van 
 
    >[!NOTE]
    >
-   >Het gebruik van verpersoonlijkingsgebieden wordt voorgesteld in [Info verpersoonlijking](../../delivery/using/about-personalization.md).
+   >Het gebruik van verpersoonlijkingsgebieden wordt voorgesteld in [Info verpersoonlijking](about-personalization.md).
 
    Met de tabbladen onder aan de pagina kunt u de HTML-code weergeven van de pagina die wordt gemaakt en kunt u de weergave van het bericht met de personalisatie bekijken. Als u deze weergave wilt starten, klikt u op **[!UICONTROL Preview]** en selecteert u een ontvanger met de knop **[!UICONTROL Test personalization]** op de werkbalk. U kunt een ontvanger selecteren bij de gedefinieerde doelgroep(en) of een andere ontvanger kiezen.
 
@@ -137,9 +137,9 @@ Select the format of the email in the lower section of the window:
 
 Met Adobe Campaign kunt u de nieuwe interactieve [AMP voor e-mail](https://amp.dev/about/email/)-indeling uitproberen, waarmee u onder bepaalde omstandigheden dynamische e-mailberichten kunt verzenden.
 
-Zie [deze sectie](../../delivery/using/defining-interactive-content.md)voor meer informatie.
+Zie [deze sectie](defining-interactive-content.md)voor meer informatie.
 
-## Inhoudsbeheer {#using-content-management} gebruiken
+## Inhoudsbeheer gebruiken {#using-content-management}
 
 U kunt de inhoud van de levering bepalen gebruikend de vormen van het inhoudsbeheer, direct in de leveringstovenaar. Hiervoor moet u verwijzen naar de publicatiesjabloon van het inhoudsbeheer dat moet worden gebruikt, op het tabblad **[!UICONTROL Advanced]** van de leveringseigenschappen.
 
@@ -151,9 +151,9 @@ Met een extra tabblad kunt u inhoud invoeren die automatisch wordt geïntegreerd
 
 >[!NOTE]
 >
->Zie [deze sectie](../../delivery/using/about-content-management.md) voor meer informatie over contentbeheer in Adobe Campaign.
+>Zie [deze sectie](about-content-management.md) voor meer informatie over contentbeheer in Adobe Campaign.
 
-## emoticons {#inserting-emoticons} invoegen
+## emoticons invoegen {#inserting-emoticons}
 
 U kunt emoticons invoegen in uw e-mailinhoud.
 
@@ -164,9 +164,9 @@ U kunt emoticons invoegen in uw e-mailinhoud.
 
 1. Klik op de knop **[!UICONTROL Close]** als u klaar bent.
 
-Als u de lijst met emoticonen wilt aanpassen, raadpleegt u deze [pagina](../../delivery/using/customizing-emoticon-list.md).
+Als u de lijst met emoticonen wilt aanpassen, raadpleegt u deze [pagina](customizing-emoticon-list.md).
 
-## Afbeeldingen {#adding-images} toevoegen
+## Afbeeldingen toevoegen {#adding-images}
 
 E-mailleveringen in HTML-indeling kunnen afbeeldingen bevatten. Vanuit de wizard voor levering kunt u een HTML-pagina met afbeeldingen importeren of afbeeldingen rechtstreeks invoegen met de HTML-editor via het pictogram **[!UICONTROL Image]**.
 
@@ -215,7 +215,7 @@ Wanneer u HTML-inhoud met opgenomen afbeeldingen opent in de wizard voor leverin
 
 >[!NOTE]
 >
->Om prestatieproblemen te voorkomen, moet elke afbeeldingsgrootte standaard niet groter zijn dan 100.000 bytes als u direct gedownloade afbeeldingen opneemt van een gepersonaliseerde URL als [bijlage](../../delivery/using/attaching-files.md). Deze geadviseerde drempel kan van [de lijst van Campaign Classic opties](../../installation/using/configuring-campaign-options.md#delivery) worden gevormd.
+>Om prestatieproblemen te voorkomen, moet elke afbeeldingsgrootte standaard niet groter zijn dan 100.000 bytes als u direct gedownloade afbeeldingen opneemt van een gepersonaliseerde URL als [bijlage](attaching-files.md). Deze geadviseerde drempel kan van [de lijst van Campaign Classic opties](../../installation/using/configuring-campaign-options.md#delivery) worden gevormd.
 
 Hier volgt een voorbeeld van een levering met vier afbeeldingen:
 
