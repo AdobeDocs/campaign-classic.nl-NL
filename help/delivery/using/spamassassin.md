@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 6%
@@ -33,11 +33,11 @@ SpamAssassin maakt gebruik van diverse spamdetectietechnieken, waaronder:
 >
 >De regels die bepalen of een element al dan niet spam is worden beheerd via SpamAssassin en kunnen door een beheerder met voorrechten worden uitgegeven.
 
-## SpamAssassin {#using-spamassassin} gebruiken
+## SpamAssassin gebruiken {#using-spamassassin}
 
 Nadat u de e-maillevering hebt gemaakt en de inhoud ervan hebt gedefinieerd, volgt u de onderstaande stappen om de risico&#39;s te evalueren.
 
-Raadpleeg [deze sectie](../../delivery/using/about-email-channel.md) voor meer informatie over het maken en ontwerpen van een levering.
+Raadpleeg [deze sectie](about-email-channel.md) voor meer informatie over het maken en ontwerpen van een levering.
 
 1. Ga naar het tabblad **[!UICONTROL Preview]**. 
 1. Selecteer een ontvanger om een voorvertoning van uw levering weer te geven.
