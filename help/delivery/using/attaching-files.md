@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 1%
@@ -30,9 +30,9 @@ Er zijn twee mogelijke gevallen:
 
 >[!NOTE]
 >
->Dit type van configuratie wordt over het algemeen uitgevoerd in de leveringsmalplaatjes. Raadpleeg [Informatie over sjablonen](../../delivery/using/about-templates.md) voor meer informatie.
+>Dit type van configuratie wordt over het algemeen uitgevoerd in de leveringsmalplaatjes. Raadpleeg [Informatie over sjablonen](about-templates.md) voor meer informatie.
 
-## Lokaal bestand {#attaching-a-local-file} bijvoegen
+## Een lokaal bestand bijvoegen {#attaching-a-local-file}
 
 Volg onderstaande stappen om een lokaal bestand aan een levering te koppelen.
 
@@ -54,7 +54,7 @@ Als het bestand is geselecteerd, wordt het direct naar de server geüpload om be
 
 ![](assets/s_ncs_user_wizard_email_attachement_e.png)
 
-## Een berekende bijlage {#creating-a-calculated-attachment} maken
+## Een berekende bijlage maken {#creating-a-calculated-attachment}
 
 Wanneer u een berekende gehechtheid creeert, kan de naam van de gehechtheid tijdens analyse of levering van elk bericht worden berekend en kan van de ontvanger afhangen. Het kan ook worden gepersonaliseerd en naar PDF worden geconverteerd.
 
@@ -75,7 +75,7 @@ De volgende opties zijn beschikbaar:
 * **De bestandsnaam wordt berekend tijdens de leveringsanalyse (deze kan niet afhankelijk zijn van het ontvangende profiel)**
 * **De bestandsnaam wordt berekend op het moment van levering voor elke ontvanger (deze kan afhankelijk zijn van de ontvanger)**
 
-### Een lokaal bestand {#attach-a-local-file} bijvoegen
+### Een lokaal bestand bijvoegen {#attach-a-local-file}
 
 Als de bijlage een lokaal bestand is, selecteert u de optie: **[!UICONTROL File name is specified when creating the delivery template]**. Het bestand wordt lokaal geselecteerd en geüpload naar de server. Volg de onderstaande stappen:
 
@@ -90,7 +90,7 @@ Als de bijlage een lokaal bestand is, selecteert u de optie: **[!UICONTROL File 
 
 Het bestand is vervolgens beschikbaar op de server die moet worden gekoppeld aan de verschillende leveringen die op basis van deze sjabloon zijn gemaakt.
 
-### Een gepersonaliseerd bericht {#attach-a-personalized-message} bijvoegen
+### Een gepersonaliseerd bericht bijvoegen {#attach-a-personalized-message}
 
 Met de optie **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** kunt u een bestand met verpersoonlijkingsvelden selecteren, zoals de achternaam en voornaam van de bedoelde ontvanger.
 
@@ -115,7 +115,7 @@ Voor dit type van gehechtheid, pas de volgende configuratiestappen toe:
 >
 >Om prestatieproblemen te voorkomen moet elke afbeeldingsgrootte standaard niet groter zijn dan 100.000 bytes als u direct gedownloade afbeeldingen van een gepersonaliseerde URL opneemt als bijlage. Deze geadviseerde drempel kan van [de lijst van Campaign Classic opties](../../installation/using/configuring-campaign-options.md#delivery) worden gevormd.
 
-### Een berekend bestand {#attach-a-calculated-file} bijvoegen
+### Een berekend bestand bijvoegen {#attach-a-calculated-file}
 
 U kunt de naam van de bijlage berekenen tijdens de voorbereiding van de levering. Selecteer de optie **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]** om dit te doen.
 
@@ -138,7 +138,7 @@ U kunt de naam van de bijlage berekenen tijdens de voorbereiding van de levering
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_05.png)
 
-### Een gepersonaliseerd bestand {#attach-a-personalized-file} bijvoegen
+### Een gepersonaliseerd bestand bijvoegen {#attach-a-personalized-file}
 
 Als u de bijlage selecteert, kunt u de optie **[!UICONTROL The file name is calculated during delivery for each recipient (it can depend on the recipient)]** kiezen. Vervolgens kunt u persoonlijke gegevens van ontvangers toewijzen met de naam van het bestand dat u wilt verzenden.
 
