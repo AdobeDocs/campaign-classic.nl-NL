@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 94e609f3df94c553e2ec84ee427887a767b9af21
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1574'
 ht-degree: 3%
 
 ---
@@ -27,11 +27,12 @@ Deze functie is beschikbaar via een speciaal pakket in Adobe Campaign. Dit pakke
 
 >[!NOTE]
 >
-> Voor hybride en gehoste architecturen moet het pakket op alle servers worden geïnstalleerd, inclusief de [mid-sourcing server](../../installation/using/mid-sourcing-server.md) en de [uitvoeringsinstantie](../../message-center/using/configuring-instances.md#execution-instance). Neem contact op met uw accountmanager.
+> Voor hybride en gehoste architecturen moet het pakket op alle servers worden geïnstalleerd, inclusief de [mid-sourcing server](../../installation/using/mid-sourcing-server.md) en de [uitvoeringsinstantie](../../message-center/using/configuring-instances.md#execution-instance).
+
 
 ## Informatie over AMP voor e-mail {#about-amp-for-email}
 
-Met de nieuwe indeling **AMP for Email** kunt u AMP-componenten opnemen in berichten om de e-mailervaring te verbeteren met rijke en activeerbare inhoud. Met de moderne applicatiefunctionaliteit die direct beschikbaar is in e-mails, kunnen ontvangers dynamisch communiceren met de content van het bericht zelf.
+Met de nieuwe indeling **AMP for Email** kunt u AMP-componenten opnemen in berichten om de e-mailervaring te verbeteren met rijke en activeerbare inhoud. Met moderne appfunctionaliteit die direct beschikbaar is in e-mails, kunnen ontvangers dynamisch communiceren met de content van het bericht zelf.
 
 Bijvoorbeeld:
 * E-mails die met AMP zijn geschreven, kunnen interactieve elementen bevatten, zoals afbeeldingscarrousels.
@@ -58,7 +59,7 @@ Volg onderstaande stappen om een AMP-e-mail met Adobe Campaign te testen en te v
 
 1. Verzend uw e-mail zoals u gewoonlijk zou doen. Zie [Een AMP-e-mail verzenden](#sending-amp-email).
 
-## AMP-e-mailinhoud maken in Adobe Campaign {#build-amp-email-content}
+## AMP-e-mailinhoud samenstellen in Adobe Campaign {#build-amp-email-content}
 
 Voer de onderstaande stappen uit om een e-mailbericht te maken in de AMP-indeling.
 
@@ -141,7 +142,7 @@ Met name moet aan de volgende eisen worden voldaan:
 
 U kunt ook de [Tips en bekende beperkingen voor Gmail](https://developers.google.com/gmail/ampemail/tips) en de [AMP beste praktijken voor Vooruitzichten](https://docs.microsoft.com/en-gb/outlook/amphtml/best-practices) raadplegen.
 
-## Een AMP-e-mail {#targeting-amp-email} voorbereiden
+## Een AMP-e-mail als doel instellen {#targeting-amp-email}
 
 U kunt momenteel in twee stappen experimenteren met het verzenden van een AMP-e-mail:
 
@@ -149,7 +150,7 @@ U kunt momenteel in twee stappen experimenteren met het verzenden van een AMP-e-
 
 1. Nadat u de test hebt uitgevoerd, kunt u een levering of een campagne verzenden als onderdeel van het AMP for Email-programma door u te registreren bij de desbetreffende e-mailprovider(s) om uw senderdomein toe te voegen aan de lijst van gewenste personen. Zie [AMP-e-mails leveren door u te registreren bij een e-mailprovider](#delivering-amp-emails-by-registering).
 
-### Het testen van AMP e-maillevering voor geselecteerde adressen {#testing-amp-delivery-for-selected-addresses}
+### AMP-e-maillevering testen voor geselecteerde adressen {#testing-amp-delivery-for-selected-addresses}
 
 U kunt testen hoe dynamische berichten van Adobe Campaign naar geselecteerde e-mailadressen worden verzonden.
 
@@ -181,7 +182,7 @@ Als u eenmaal met een paar adressen bent getest, kunt u AMP-e-mails naar elk Gma
 
 Als u AMP-e-mails naar Mail.ru-adressen wilt verzenden, volgt u de vereisten en stappen in de [Mail.ru-ontwikkelaarsdocumentatie](https://postmaster.mail.ru/amp/?lang=en#howto) (**Als u een E-mailafzender**-sectie bent).
 
-## Een AMP-e-mail {#sending-amp-email} verzenden
+## Een AMP-e-mail verzenden {#sending-amp-email}
 
 Zodra uw AMP-inhoud en -fallback klaar zijn en u een compatibel doel hebt gedefinieerd, kunt u de e-mail verzenden zoals u dat gewoonlijk doet.
 
