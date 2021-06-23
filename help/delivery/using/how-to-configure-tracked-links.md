@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 0e0912c68d132919eeac9b91b93960e70011153e
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 13%
+source-wordcount: '582'
+ht-degree: 10%
 
 ---
 
@@ -21,10 +21,17 @@ Het volgen is op berichten van toepassing, maar het Web volgen laat u controlere
 
 >[!NOTE]
 >
->De koppelingen in e-mailinhoud die personalisatie bevatten, moeten specifiek worden gesynchroniseerd om te worden bijgehouden. Raadpleeg [deze sectie](../../delivery/using/tracking-personalized-links.md) voor meer informatie over het toevoegen van koppelingen in e-mailberichten die kunnen worden aangepast en die ondersteuning bieden voor bijhouden.
+>De koppelingen in e-mailinhoud die personalisatie bevatten, moeten specifiek worden gesynchroniseerd om te worden bijgehouden. Raadpleeg [deze sectie](tracking-personalized-links.md) voor meer informatie over het toevoegen van koppelingen in e-mailberichten die kunnen worden aangepast en die ondersteuning bieden voor bijhouden.
 
+We raden u ten zeerste aan URL&#39;s op te nemen in scheidingstekens op het tabblad **[!UICONTROL Text content]** voordat u de volgende formule toepast. De URL-scheidingstekens die u op dit tabblad invoert, worden door Adobe Campaign gebruikt om URL&#39;s binnen tekenreeksen te identificeren. U kunt deze paren scheidingstekens gebruiken:
+* Haakjes ( )
+* Haakjes [ ]
+* Accolades { }
 
-
+In dit voorbeeld wordt de URL https://www.adobe.com gevolgd door een puntkomma (;). De puntkomma kan door geadresseerde-e-mailclients worden geïnterpreteerd als onderdeel van de URL. Hierdoor kan de koppeling worden verbroken. U kunt dit probleem voorkomen door de URL op een van de volgende manieren in te sluiten in scheidingstekens:
+* (https://www.adobe.com);
+* [https://www.adobe.com];
+* {https://www.adobe.com};
 
 Berichten bijhouden is standaard ingeschakeld. Volg onderstaande stappen om de manier waarop URL&#39;s worden bijgehouden aan te passen:
 
