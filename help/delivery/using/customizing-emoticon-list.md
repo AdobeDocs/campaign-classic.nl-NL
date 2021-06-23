@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 De emoticonlijst die in pop-up wordt getoond wordt bepaald door een opsomming die u toestaat om waarden in een lijst te tonen om de keuzen te beperken die de gebruiker voor een bepaald gebied heeft.
 U kunt de volgorde van de emoticonlijst aanpassen en u kunt ook andere emoticons aan uw lijst toevoegen.
-De moticons zijn beschikbaar voor e-mail en duw voor meer op dit verwijs naar [pagina](../../delivery/using/defining-the-email-content.md#inserting-emoticons).
+De moticons zijn beschikbaar voor e-mail en duw voor meer op dit verwijs naar [pagina](defining-the-email-content.md#inserting-emoticons).
 
 ## Een nieuw emoticon toevoegen {#add-new-emoticon}
 
@@ -61,7 +61,7 @@ Uw nieuwe emoticon wordt automatisch in de winkel geplaatst.
 
 1. Als u rekening wilt houden met uw wijzigingen, verbreekt u de verbinding en maakt u opnieuw verbinding met Adobe Campaign Classic. Als uw nieuwe emoticon nog steeds niet in **[!UICONTROL Insert emoticon]** pop-up venster verschijnt, zou u uw geheime voorgeheugen kunnen moeten ontruimen. Raadpleeg deze [sectie](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear) voor meer informatie.
 
-1. Uw nieuwe emoticon kan nu in uw leveringen in **[!UICONTROL Insert emoticon]** pop-up venster in de 61ste positie zoals gevormd in de vorige stappen worden gevonden. Voor meer informatie over hoe te om emoticons in uw leveringen te gebruiken, verwijs naar dit [pagina](../../delivery/using/defining-the-email-content.md#inserting-emoticons).
+1. Uw nieuwe emoticon kan nu in uw leveringen in **[!UICONTROL Insert emoticon]** pop-up venster in de 61ste positie zoals gevormd in de vorige stappen worden gevonden. Voor meer informatie over hoe te om emoticons in uw leveringen te gebruiken, verwijs naar dit [pagina](defining-the-email-content.md#inserting-emoticons).
 
    ![](assets/emoticon_4.png)
 
