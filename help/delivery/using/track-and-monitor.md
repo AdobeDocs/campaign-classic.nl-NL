@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 3%
@@ -16,12 +16,12 @@ ht-degree: 3%
 
 U klikte **Send** knoop? Laten we eens kijken wat er gebeurt. Zodra de levering wordt verzonden, laat Adobe Campaign u toe om spoor van de verzonden berichten te houden en te ontdekken hoe uw ontvangers op uw levering reageren. Op deze manier kunt u uw volgende campagnes beter verzenden en optimaliseren.
 
-## Leveringen controleren{#monitoring-deliveries}
+## Leveringen controleren {#monitoring-deliveries}
 
 Om uw campagnes te controleren, moet u ervoor zorgen dat het bericht inderdaad aan uw ontvangers is geleverd.
 
 Van het dashboard van de levering van de Campagne, kunt u de verwerkte berichten en de logboeken van de leveringscontrole controleren.
-U kunt de status van de berichten in de leveringslogboeken ook controleren. [Meer informatie](../../delivery/using/about-delivery-monitoring.md).
+U kunt de status van de berichten in de leveringslogboeken ook controleren. [Meer informatie](about-delivery-monitoring.md).
 
 Wat als de leveringen niet worden verzonden en hun status **Pending** blijft?
 
@@ -41,7 +41,7 @@ Om het gedrag van uw ontvangers beter te kennen, kunt u volgen hoe zij op een le
 
 **Tip**: Berichten bijhouden is standaard ingeschakeld. Als u URL&#39;s wilt configureren, selecteert u de optie URL&#39;s weergeven in de onderste sectie van de wizard voor levering. Voor elke URL van het bericht kunt u kiezen of u reeksspatiëring wilt activeren.
 
-Raadpleeg voor meer informatie de sectie [Tracking](../../delivery/using/how-to-configure-tracked-links.md) configureren en de beschrijving [Tracking-indicatoren](../../reporting/using/delivery-reports.md#tracking-indicators).
+Raadpleeg voor meer informatie de sectie [Tracking](how-to-configure-tracked-links.md) configureren en de beschrijving [Tracking-indicatoren](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 ## Leveringsprestaties {#delivery-performances}
 
@@ -55,7 +55,7 @@ Om de snelheid te meten waarbij de berichten worden geleverd, kunt u de levering
 
 * Probeer geen grote leveringen samen te plannen. Houd er rekening mee dat het 5 tot 10 minuten kan duren voordat de laadbewerking gelijkmatig over het systeem is verspreid.
 
-## Problemen met levering oplossen {#delivery-troubleshooting}
+## Problemen met een levering oplossen {#delivery-troubleshooting}
 
 Specifieke acties kunnen worden uitgevoerd wanneer problemen met leveringen optreden:
 
@@ -63,6 +63,6 @@ Specifieke acties kunnen worden uitgevoerd wanneer problemen met leveringen optr
 
 * [Problemen met weergave van afbeeldingen](../../production/using/image-display-issues.md)
 
-* [Leveringsprestaties](../../delivery/using/delivery-performances.md)
+* [Leveringsprestaties](delivery-performances.md)
 
 * [Uitgave van tijdelijke bestanden](../../production/using/temporary-files.md)  - alleen  *klanten op locatie*
