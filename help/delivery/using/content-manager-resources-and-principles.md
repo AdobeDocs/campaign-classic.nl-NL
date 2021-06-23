@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: ade3f1d1-2235-4148-9b6f-721d3f521a15
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 6%
@@ -25,11 +25,11 @@ Wanneer u het XML-document en de XSL- of JavaScript-sjabloonopmaakmodellen combi
 
 De volgende middelen worden vereist voor inhoudsconfiguratie:
 
-* Gegevensschema&#39;s: beschrijving van de XML-inhoudsstructuur. Voor meer op dit, verwijs naar [Gegevensschema&#39;s](../../delivery/using/data-schemas.md).
-* Formulieren voor gegevensinvoer: bouw van gegevensinvoerschermen. Raadpleeg [Invoerformulieren](../../delivery/using/input-forms.md) voor meer informatie.
-* Afbeeldingen: afbeeldingen die worden gebruikt in formulieren voor gegevensinvoer. Raadpleeg [Afbeeldingsbeheer](../../delivery/using/formatting.md#image-management) voor meer informatie.
-* Stylesheets: opmaak van uitvoerdocumenten met XSLT-taal. Raadpleeg [Opmaak](../../delivery/using/formatting.md) voor meer informatie hierover.
-* JavaScript-sjablonen: opmaak van uitvoerdocumenten met gebruik van JavaScript-taal. Raadpleeg [Publicatiesjablonen](../../delivery/using/publication-templates.md) voor meer informatie.
-* JavaScript-codes: JavaScript-codes voor gegevensaggregatie. Raadpleeg [Samenvoegtoepassing](../../delivery/using/publication-templates.md#aggregator) voor meer informatie hierover.
-* Publicatiesjablonen: definitie van publicatiesjablonen. Raadpleeg [Publicatiesjablonen](../../delivery/using/publication-templates.md) voor meer informatie.
-* Inhoud: te maken en te publiceren inhoudsinstanties. Voor meer op dit, verwijs naar [Gebruikend een inhoudsmalplaatje](../../delivery/using/using-a-content-template.md).
+* Gegevensschema&#39;s: beschrijving van de XML-inhoudsstructuur. Voor meer op dit, verwijs naar [Gegevensschema&#39;s](data-schemas.md).
+* Formulieren voor gegevensinvoer: bouw van gegevensinvoerschermen. Raadpleeg [Invoerformulieren](input-forms.md) voor meer informatie.
+* Afbeeldingen: afbeeldingen die worden gebruikt in formulieren voor gegevensinvoer. Raadpleeg [Afbeeldingsbeheer](formatting.md#image-management) voor meer informatie.
+* Stylesheets: opmaak van uitvoerdocumenten met XSLT-taal. Raadpleeg [Opmaak](formatting.md) voor meer informatie hierover.
+* JavaScript-sjablonen: opmaak van uitvoerdocumenten met gebruik van JavaScript-taal. Raadpleeg [Publicatiesjablonen](publication-templates.md) voor meer informatie.
+* JavaScript-codes: JavaScript-codes voor gegevensaggregatie. Raadpleeg [Samenvoegtoepassing](publication-templates.md#aggregator) voor meer informatie hierover.
+* Publicatiesjablonen: definitie van publicatiesjablonen. Raadpleeg [Publicatiesjablonen](publication-templates.md) voor meer informatie.
+* Inhoud: te maken en te publiceren inhoudsinstanties. Voor meer op dit, verwijs naar [Gebruikend een inhoudsmalplaatje](using-a-content-template.md).
