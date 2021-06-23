@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 7%
+ht-degree: 11%
 
 ---
 
@@ -29,7 +29,7 @@ Met deze actie maakt u een leveringssjabloon op basis van de geselecteerde lever
 
 ![](assets/s_ncs_user_campaign_save_as_scenario_a.png)
 
-Voor meer informatie over de configuratiewijze, verwijs naar [Linking van het malplaatje aan een levering](../../delivery/using/creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery).
+Voor meer informatie over de configuratiewijze, verwijs naar [Linking van het malplaatje aan een levering](creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery).
 
 ## Een nieuwe sjabloon maken {#creating-a-new-template}
 
@@ -70,7 +70,7 @@ Voer de volgende stappen uit om een leveringssjabloon te configureren:
 
 ### Hoe te om een leveringsmalplaatje te vormen
 
-In de volgende video ziet u hoe u een sjabloon voor een ad-hoclevering configureert.
+De volgende video toont hoe u een sjabloon voor een ad-hoclevering kunt configureren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
 
