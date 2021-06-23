@@ -6,36 +6,36 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 1%
 
 ---
 
-# Bezig met verzenden van probleemoplossing {#delivery-troubleshooting}
+# Problemen met verzenden van levering {#delivery-troubleshooting}
 
 Deze sectie maakt een lijst van gemeenschappelijke kwesties u kunt ontmoeten wanneer het verzenden van leveringen, en hoe te om hen problemen op te lossen.
 
-Bovendien, zorg ervoor u de beste praktijken en controlelijst volgt die in [deze pagina](../../delivery/using/delivery-performances.md) wordt gedetailleerd om uw leveringen te verzekeren goed presteren.
+Bovendien, zorg ervoor u de beste praktijken en controlelijst volgt die in [deze pagina](delivery-performances.md) wordt gedetailleerd om uw leveringen te verzekeren goed presteren.
 
 **Verwante onderwerpen:**
 
-* [Leveringsstatussen](../../delivery/using/delivery-statuses.md)
-* [Leveringsdashboard](../../delivery/using/delivery-dashboard.md)
-* [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
+* [Leveringsstatussen](delivery-statuses.md)
+* [Leveringsdashboard](delivery-dashboard.md)
+* [Leveringsfouten begrijpen](understanding-delivery-failures.md)
 
 ## Trage leveringen {#slow-deliveries}
 
 Nadat u op de knop **[!UICONTROL Send]** hebt geklikt, lijkt het langer te duren voordat de levering is uitgevoerd. Dit kan worden veroorzaakt door verschillende elementen:
 
-* Sommige e-mailproviders hebben mogelijk uw IP-adressen aan een lijst van gewezen personen toegevoegd. In dit geval, controleer uw uitzendingen en raadpleeg [deze sectie](../../delivery/using/about-deliverability.md).
+* Sommige e-mailproviders hebben mogelijk uw IP-adressen aan een lijst van gewezen personen toegevoegd. In dit geval, controleer uw uitzendingen en raadpleeg [deze sectie](about-deliverability.md).
 
-* Uw levering is mogelijk te groot om snel te worden verwerkt, dit kan gebeuren met een hoge mate van personalisatie in JavaScript of als uw levering meer dan 60 kbytes weegt. Raadpleeg de Adobe Campaign [Best practices voor levering](../../delivery/using/delivery-best-practices.md) voor meer informatie over richtlijnen voor inhoud.
+* Uw levering is mogelijk te groot om snel te worden verwerkt, dit kan gebeuren met een hoge mate van personalisatie in JavaScript of als uw levering meer dan 60 kbytes weegt. Raadpleeg de Adobe Campaign [Best practices voor levering](delivery-best-practices.md) voor meer informatie over richtlijnen voor inhoud.
 
 * Throttling zou binnen Adobe Campaign MTA kunnen voorgekomen zijn. Dit wordt veroorzaakt door:
 
-   * Gebeëindigde berichten (**[!UICONTROL quotas met]** bericht): er is voldaan aan de quota die zijn aangegeven in de declaratieve MX-regels die in de campagne zijn vastgesteld. Raadpleeg [deze pagina](../../delivery/using/deliverability-faq.md) voor meer informatie over dit bericht. Meer over MX regels leren, verwijs naar [deze sectie](../../installation/using/email-deliverability.md#about-mx-rules).
+   * Gebeëindigde berichten (**[!UICONTROL quotas met]** bericht): er is voldaan aan de quota die zijn aangegeven in de declaratieve MX-regels die in de campagne zijn vastgesteld. Raadpleeg [deze pagina](deliverability-faq.md) voor meer informatie over dit bericht. Meer over MX regels leren, verwijs naar [deze sectie](../../installation/using/email-deliverability.md#about-mx-rules).
 
    * Gebeëindigde berichten (**[!UICONTROL dynamic flow control]** bericht): Campagne MTA heeft fouten ontmoet wanneer het proberen om berichten voor bepaalde ISP te leveren die een vertraging veroorzaakt om te grote van een foutendichtheid te vermijden en zo potentiële lijst van gewezen personen onder ogen te zien.
 
@@ -47,7 +47,7 @@ Als de leveringen niet op nauwkeurige geplande datum uitvoeren, kan het met een 
 
 Als de instantie van de midsourcing zich bijvoorbeeld in de tijdzone van Brisbane bevindt en de productie-instantie zich in de tijdzone van Darwin bevindt, zijn beide tijdzones een half uur van elkaar verwijderd, dan zou u in het auditlogboek duidelijk zien dat als de levering gepland is voor productie om 11:56, de zelfde levering gepland voor midden om 12:26 zou zijn die een verschil van een half uur heeft.
 
-## Status {#failed-status} is mislukt
+## Mislukte status {#failed-status}
 
 Als de status van een e-maillevering **[!UICONTROL Failed]** is, kan het met een kwestie met verpersoonlijkingsblokken worden verbonden. De blokken van de verpersoonlijking in een levering kunnen fouten produceren wanneer de schema&#39;s niet de leveringsafbeelding aanpassen, bijvoorbeeld.
 
