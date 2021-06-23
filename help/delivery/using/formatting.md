@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1447'
 ht-degree: 0%
 
 ---
@@ -155,7 +155,7 @@ Voorbeelden:
    <%= recipient.@lastName %>
    ```
 
-### Een JavaScript-sjabloon {#including-a-javascript-template} opnemen
+### Een JavaScript-sjabloon opnemen {#including-a-javascript-template}
 
 U kunt een bibliotheek van functies of variabelen voor later gebruik vormen. Hiertoe importeert u de JavaScript-sjabloon met de functie **eval**. Hiermee kunt u contexten verrijken met extra functies die zijn gedeclareerd in andere JavaScript-sjablonen.
 
@@ -364,15 +364,15 @@ In dit voorbeeld worden de volgende stappen uitgevoerd:
 
 1. U kunt deze inhoudssjabloon dan gebruiken in uw leveringen.
 
-   Voor meer op dit, verwijs naar [Gebruikend een inhoudsmalplaatje](../../delivery/using/using-a-content-template.md).
+   Voor meer op dit, verwijs naar [Gebruikend een inhoudsmalplaatje](using-a-content-template.md).
 
-## XSL-stijlbladen {#xsl-stylesheets}
+## XSL Stylesheets {#xsl-stylesheets}
 
 Met de XSLT-taal kunt u een XML-document wijzigen in een uitvoerdocument. Afhankelijk van de uitvoermethode van de stijlpagina kan het resulterende document worden gegenereerd in HTML, platte tekst of een andere XML-structuur.
 
 Deze transformatie wordt op zijn beurt in XML in een document gedetaillerd dat als stylesheet wordt bekend.
 
-### Een stijlblad {#identifying-a-stylesheet} identificeren
+### Een stijlpagina identificeren {#identifying-a-stylesheet}
 
 Een stijlpagina wordt geïdentificeerd door zijn naam en namespace, enkel als schema&#39;s en vormen. Het wordt echter aanbevolen de extensie **.xsl** toe te voegen aan de naam van de stijlpagina.
 
@@ -450,7 +450,7 @@ In ons voorbeeld wordt een HTML-pagina gegenereerd vanuit het schema &quot;cus:b
 >
 >Raadpleeg een XSLT-referentiedocument voor meer informatie over de XSLT-taal.
 
-### HTML/XML {#displaying-html-xml} weergeven
+### HTML/XML weergeven {#displaying-html-xml}
 
 Als u een **html**-veld wilt weergeven, gebruikt u de optie **disable-output-escape=&quot;yes&quot;** uit de **`<xsl:value-of>`**-instructie. Zo voorkomt u dat tekens door hun XML-entiteit worden vervangen (bijvoorbeeld &lt; met &lt;).
 
@@ -513,7 +513,7 @@ Als u een voorvertoning van het uitvoerdocument wilt genereren, selecteert u een
 
 ## Afbeeldingsbeheer {#image-management}
 
-### Afbeelding met verwijzing naar {#image-referencing}
+### Verwijzing naar afbeelding {#image-referencing}
 
 Naar de afbeeldingen die u opgeeft in het HTML-uitvoerdocument, kan worden verwezen met absolute of relatieve verwijzingen.
 
@@ -538,7 +538,7 @@ Voorbeeld van het gebruik van de plaatsingsoptie voor afbeeldingen en het gebrui
 >
 >We raden u aan een variabele te declareren die de referentie bevat van de server waar de afbeeldingen zijn opgeslagen (&quot;resPath&quot; in ons voorbeeld).
 
-### Openbare bronnen gebruiken {#using-public-resources}
+### Overheidsmiddelen gebruiken {#using-public-resources}
 
 U kunt **[!UICONTROL Public resources]** ook gebruiken om beelden te verklaren en hen te uploaden op de server afhankelijk van de instantie montages ingegaan in de plaatsingstovenaar.
 
@@ -568,7 +568,7 @@ In het XML-invoerdocument worden de datums opgeslagen in de interne XML-indeling
 
 Adobe Campaign biedt functies voor datumnotatie voor de JavaScript-sjablonen en XSL-opmaakmodellen die hieronder worden beschreven.
 
-### JavaScript-datumnotatie {#javascript-date-formatting}
+### JavaScript-datumopmaak {#javascript-date-formatting}
 
 Als u een datum in de gewenste notatie wilt weergeven, biedt Adobe Campaign de functie **formatDate** die als invoer de inhoud van de datum gebruikt en een tekenreeks die de uitvoerindeling opgeeft, met de volgende syntaxis: **%4Y/%2M/%2D %2H%2N%2S**
 
@@ -599,7 +599,7 @@ Voorbeelden:
    <%= displayDate(content.@date) %>
    ```
 
-### XSL-datumnotatie {#xsl-date-formatting}
+### XSL-datumopmaak {#xsl-date-formatting}
 
 Er is geen standaardfunctie voor datumbeheer in XSLT-syntaxis. Adobe Campaign biedt de externe functie **date-format** om een datum in de gewenste notatie weer te geven. Deze functie neemt als input de inhoud van de datum en een koord die het outputformaat met de volgende syntaxis specificeren: **%4Y/%2M/%2D %2H%2N%2S**
 
