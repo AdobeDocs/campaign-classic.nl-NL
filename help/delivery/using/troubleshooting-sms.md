@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '2744'
 ht-degree: 0%
@@ -45,7 +45,7 @@ U moet contact opnemen met de provider om mogelijke conflicten aan de zijkant va
    * Sommige externe accounts hebben dezelfde combinatie van aanmelding/wachtwoord.
 De provider heeft geen manier om te bepalen van welke externe account de `BIND PDU` afkomstig is, zodat ze alle verbindingen van de meerdere accounts als één enkele beschouwen. Ze hadden MO en SR mogelijk willekeurig rond de twee accounts gerouteerd, wat problemen veroorzaakte.
 Als de leverancier veelvoudige korte codes voor de zelfde login/wachtwoordcombinatie steunt, zult u hen moeten vragen waar te om die korte code in `BIND PDU` te zetten. Merk op dat dit stuk informatie binnen `BIND PDU`, en niet in `SUBMIT_SM` moet worden gezet, aangezien `BIND PDU` de enige plaats is die het verpletteren van MOs correct zal toestaan.
-Zie [Informatie in elk type PDU](../../delivery/using/sms-protocol.md#information-pdu) sectie hierboven om te weten welk gebied in `BIND PDU` beschikbaar is, gewoonlijk voegt u de korte code in `address_range` toe, maar dat speciale steun van de leverancier vereist. Contacteer hen om te weten hoe zij verwachten om veelvoudige korte codes onafhankelijk te leiden.
+Zie [Informatie in elk type PDU](sms-protocol.md#information-pdu) sectie hierboven om te weten welk gebied in `BIND PDU` beschikbaar is, gewoonlijk voegt u de korte code in `address_range` toe, maar dat speciale steun van de leverancier vereist. Contacteer hen om te weten hoe zij verwachten om veelvoudige korte codes onafhankelijk te leiden.
 Adobe Campaign biedt ondersteuning voor het verwerken van meerdere korte codes op dezelfde externe account.
 
 ## Uitgifte met externe rekening in het algemeen {#external-account-issues}
@@ -83,7 +83,7 @@ Adobe Campaign biedt ondersteuning voor het verwerken van meerdere korte codes o
 
 * Controleer **Externe account** instellingen. Vraag de provider de waarde van de velden.
 
-* Als de verbinding succesvol maar onstabiel is, controleer [Kwestie met instabiele verbindingen](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection) sectie.
+* Als de verbinding succesvol maar onstabiel is, controleer [Kwestie met instabiele verbindingen](troubleshooting-sms.md#issues-unstable-connection) sectie.
 
 * Als verbindingsproblemen moeilijk te diagnosticeren zijn, kan een netwerk vangen informatie verstrekken. Zorg ervoor dat het netwerk vangt gelijktijdig loopt terwijl het probleem voor het efficiënt kan worden geanalyseerd. Let ook op het exacte tijdstip waarop het probleem verschijnt.
 
@@ -115,9 +115,9 @@ Verbindingsstabiliteitsproblemen oplossen:
 
 ## Probleem bij het verzenden van een MT (regelmatig naar een eindgebruiker verzonden SMS){#issue-MT}
 
-* Controleer of de verbinding stabiel is. Een verbinding SMPP zou omhoog minstens 1 uur ononderbroken behalve zenders op Adobe Campaign Classic moeten blijven. Zie de sectie [Probleem met instabiele verbindingen](../../delivery/using/sms-protocol.md#issues-unstable-connection).
+* Controleer of de verbinding stabiel is. Een verbinding SMPP zou omhoog minstens 1 uur ononderbroken behalve zenders op Adobe Campaign Classic moeten blijven. Zie de sectie [Probleem met instabiele verbindingen](sms-protocol.md#issues-unstable-connection).
 
-* Als het opnieuw opstarten van de MTA het verzenden van MT opnieuw voor een kleine periode maakt, hebt u waarschijnlijk vertraging toe te schrijven aan een instabiele verbinding. Zie de sectie [Probleem met instabiele verbindingen](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection).
+* Als het opnieuw opstarten van de MTA het verzenden van MT opnieuw voor een kleine periode maakt, hebt u waarschijnlijk vertraging toe te schrijven aan een instabiele verbinding. Zie de sectie [Probleem met instabiele verbindingen](troubleshooting-sms.md#issues-unstable-connection).
 
 * Controleer of het brede logboek aanwezig is en in de juiste status met de juiste datums. Als het niet is, zou dit een levering of leveringsvoorbereidingskwestie kunnen zijn.
 
@@ -139,13 +139,13 @@ Duplicaten worden vaak veroorzaakt door nieuwe pogingen. Het is normaal om dupli
 
 * Als u duplicaten ziet die precies 60 seconden van elkaar zijn verzonden, is het waarschijnlijk een probleem aan de kant van de provider, dan sturen ze niet snel genoeg een `SUBMIT_SM_RESP`.
 
-* Als u veel `BIND/UNBIND` ziet, hebt u een instabiele verbinding. Zie [Probleem met instabiele verbindingen](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection) sectie voor oplossingen alvorens te proberen om dubbele berichtkwesties op te lossen.
+* Als u veel `BIND/UNBIND` ziet, hebt u een instabiele verbinding. Zie [Probleem met instabiele verbindingen](troubleshooting-sms.md#issues-unstable-connection) sectie voor oplossingen alvorens te proberen om dubbele berichtkwesties op te lossen.
 
 Het verminderen van de hoeveelheid duplicaten wanneer er opnieuw wordt geprobeerd:
 
 * Verlaag het verzendende venster. Het verzendende venster zou groot genoeg moeten zijn om voor `SUBMIT_SM_RESP` latentie te behandelen. De waarde ervan vertegenwoordigt het maximum aantal berichten dat kan worden gedupliceerd als een fout optreedt terwijl het venster vol is.
 
-## Probleem bij verwerking SR (ontvangstbewijzen) {#issue-process-SR}
+## Uitgave bij verwerking van SR (ontvangstbewijzen) {#issue-process-SR}
 
 * U hebt SMPP-sporen nodig die zijn ingeschakeld voor het uitvoeren van elk type SR-probleemoplossing.
 
@@ -159,11 +159,11 @@ Als `DELIVER_SM PDU` niet met succes wordt erkend, dan zou u het volgende moeten
 
 * Controleer of de fouten correct zijn opgenomen in de tabel `broadLogMsg`.
 
-Als de `DELIVER_SM PDU` door de Adobe Campaign Classic uitgebreide schakelaar SMPP is erkend maar het wideLog niet behoorlijk wordt bijgewerkt, controleer het proces van de aanpassing van identiteitskaart dat in de sectie [Matching MT, SR en uitzendingangen ](../../delivery/using/sms-protocol.md#matching-mt) wordt beschreven.
+Als de `DELIVER_SM PDU` door de Adobe Campaign Classic uitgebreide schakelaar SMPP is erkend maar het wideLog niet behoorlijk wordt bijgewerkt, controleer het proces van de aanpassing van identiteitskaart dat in de sectie [Matching MT, SR en uitzendingangen ](sms-protocol.md#matching-mt) wordt beschreven.
 
 Als u alles hebt gecorrigeerd, maar sommige ongeldige SR nog steeds in de buffers van de provider staan, kunt u deze overslaan met de optie &quot;Ongeldige id bevestigt telling&quot;. Dit dient met voorzichtigheid te worden gebruikt en zo snel mogelijk na het schoonmaken van de buffers op 0 te worden ingesteld.
 
-## Probleem bij verwerking MO (en zwarte lijst/automatische reactie){#issue-process-MO}
+## Probleem bij verwerking MO (en zwarte lijst/automatisch antwoord){#issue-process-MO}
 
 * SMPP-sporen inschakelen tijdens tests. Als u TLS niet toelaat, zou u een netwerk moeten doen vangt wanneer het oplossen van problemenMO om te controleren dat PDUs de correcte informatie bevatten en behoorlijk geformatteerd zijn.
 
@@ -177,9 +177,9 @@ Als u alles hebt gecorrigeerd, maar sommige ongeldige SR nog steeds in de buffer
 
 * Als de `SUBMIT_SM MT PDU` met het antwoord in de sporen wordt gevonden maar SMS niet aan de mobiele telefoon aankomt, zult u voor hulp bij het oplossen van problemen contact met de leverancier moeten opnemen.
 
-## Uitgave tijdens de voorbereiding van de levering zonder uitzondering van in quarantaine geplaatste ontvangers (in quarantaine geplaatst door de functie voor automatische reactie) {#issue-delivery-preparation}
+## Uitgave tijdens de voorbereiding van de levering, exclusief in quarantaine geplaatste ontvangers (in quarantaine geplaatst door de functie voor automatisch antwoord) {#issue-delivery-preparation}
 
-* Controleer dat het formaat van het telefoonaantal precies het zelfde in de quarantainelijst en in het leveringslogboek is. Als het niet is, verwijs naar dit [sectie](../../delivery/using/sms-protocol.md#automatic-reply) als u kwesties met het plus voorvoegsel van het internationale formaat van het telefoonaantal hebt.
+* Controleer dat het formaat van het telefoonaantal precies het zelfde in de quarantainelijst en in het leveringslogboek is. Als het niet is, verwijs naar dit [sectie](sms-protocol.md#automatic-reply) als u kwesties met het plus voorvoegsel van het internationale formaat van het telefoonaantal hebt.
 
 * Controleer korte codes. Uitsluitingen kunnen optreden als de korte code van de ontvanger gelijk is aan de code die in de externe account is gedefinieerd of als deze leeg is (leeg = enige snelcode). Als slechts één korte code voor de volledige instantie van Adobe Campaign wordt gebruikt, is het gemakkelijker om alle **korte code** gebieden leeg te verlaten.
 
@@ -213,7 +213,7 @@ U zult zuivert output van de schakelaar nodig hebben om precies te zien welke by
 
 Verschillende soorten speciale tekens verzenden tijdens het testen. GSM7-codering bevat bijvoorbeeld uitgebreide tekens die sterk van elkaar verschillen in hun hexadecimale vorm. Ze zijn gemakkelijk te vinden omdat ze niet in andere codering worden weergegeven.
 
-## Elementen die moeten worden opgenomen wanneer wordt gecommuniceerd over een SMS-probleem {#element-include}
+## Elementen die moeten worden opgenomen bij communicatie over een SMS-probleem {#element-include}
 
 Wanneer u om hulp over een kwestie van SMS, of het een steunkaartje aan Adobe Campaign, aan de leverancier van SMS, of om het even welk soort mededeling over de kwestie opent, zult u de volgende informatie moeten omvatten om ervoor te zorgen dat het behoorlijk gekwalificeerd zal zijn. Goed gekwalificeerde problemen zijn essentieel om problemen sneller op te lossen.
 
@@ -237,7 +237,7 @@ Wanneer u om hulp over een kwestie van SMS, of het een steunkaartje aan Adobe Ca
 
 * Omvat om het even welke verandering of tweaks die op het platform worden aangebracht. Neem ook alle wijzigingen op die de provider aan hun zijde heeft aangebracht.
 
-### Netwerkopname {#network-capture}
+### Netwerkvastlegging {#network-capture}
 
 Een netwerk vangt is niet altijd nodig, gewoonlijk zijn de uitgebreide SMPP- berichten genoeg. Hier zijn sommige richtlijnen die u zullen helpen bepalen als een netwerk vangt nodig is:
 
@@ -267,7 +267,7 @@ In sommige gevallen is het vastleggen van netwerkverkeer niet nodig. Hier volgen
 
 * Fouten waarbij geen daadwerkelijk SMPP-verkeer is betrokken: Voorbereiding van levering, problemen met de Berichtencentrum-API, workflowproblemen, enz.
 
-## SMPP-sporen inschakelen {#enabling-smpp-traces}
+## SMP-sporen inschakelen {#enabling-smpp-traces}
 
 De nieuwe schakelaar steunt uitgebreide het registreren door sporen: SMPP. De sporen zijn output in het MTA logboek, niet op de standaardoutput.
 
@@ -289,7 +289,7 @@ Stel in het bestand `config-instance.xml` de volgende parameters in:
 <sms args="-tracefilter:SMPP"/>
 ```
 
-## Het aantal open verbindingen op een container {#open-connections} controleren
+## Het aantal open verbindingen op een container controleren {#open-connections}
 
 Als u het aantal open verbindingen op een container wilt controleren, kunt u de volgende opdracht gebruiken:
 
