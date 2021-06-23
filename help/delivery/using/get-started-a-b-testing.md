@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: ae046ef6-d850-4222-b82c-8ef5b3da7037
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 3%
@@ -23,7 +23,7 @@ In het onderstaande voorbeeld is de leveringsdoelstelling opgesplitst in twee gr
 
 ![](assets/a-b-testing-schema.png)
 
-Met Campaign Classic, A/B wordt het testen uitgevoerd door werkschema&#39;s, waar u de bevolking om evenals de groepen specificeert te richten die elke variant zullen ontvangen (zie [Vormend a/b het testen](../../delivery/using/configuring-a-b-testing.md)).
+Met Campaign Classic, A/B wordt het testen uitgevoerd door werkschema&#39;s, waar u de bevolking om evenals de groepen specificeert te richten die elke variant zullen ontvangen (zie [Vormend a/b het testen](configuring-a-b-testing.md)).
 
 De belangrijkste stappen zijn:
 
@@ -37,4 +37,4 @@ De belangrijkste stappen zijn:
 
 >[!NOTE]
 >
->Met workflows kunt u ook uw processen automatiseren door automatisch de variant te identificeren die beter presteerde en deze vervolgens naar de resterende populatie te verzenden. Raadpleeg voor meer informatie deze [use case](../../delivery/using/a-b-testing-use-case.md).
+>Met workflows kunt u ook uw processen automatiseren door automatisch de variant te identificeren die beter presteerde en deze vervolgens naar de resterende populatie te verzenden. Raadpleeg voor meer informatie deze [use case](a-b-testing-use-case.md).
