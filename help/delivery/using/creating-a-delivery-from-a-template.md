@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 10%
@@ -29,7 +29,7 @@ Selecteer de gewenste directory in het veld **[!UICONTROL Folder]** of klik op h
 
 Selecteer de leveringssjabloon die u wilt gebruiken en klik op **[!UICONTROL Ok]**.
 
-## Sjabloon {#executing-the-template} uitvoeren
+## De sjabloon uitvoeren {#executing-the-template}
 
 U kunt de uitvoering van een sjabloon rechtstreeks vanuit de sjabloonlijst starten zonder eerst een levering te maken. Selecteer hiertoe de sjabloon die u wilt uitvoeren en klik met de rechtermuisknop. Selecteer **[!UICONTROL Actions>Execute the delivery template...]**.
 
@@ -43,4 +43,4 @@ Met deze handeling wordt een levering gegenereerd in de map die aan de sjabloon 
 
 >[!NOTE]
 >
->Zie [De e-mailinhoud definiëren](../../delivery/using/defining-the-email-content.md) voor meer informatie over het configureren van een levering.
+>Zie [De e-mailinhoud definiëren](defining-the-email-content.md) voor meer informatie over het configureren van een levering.
