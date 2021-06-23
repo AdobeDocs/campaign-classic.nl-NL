@@ -12,18 +12,17 @@ discoiquuid: 4113c3fe-a279-4fe1-be89-ea43c96edc34
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
-source-git-commit: 32a14eb99847dc04a582623204bc856c29fa4359
+exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
+source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
 workflow-type: tm+mt
 source-wordcount: '550'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
+# De samenvoegfunctionaliteit van de deduplicatieactiviteit gebruiken {#deduplication-merge}
 
-# De samenvoegfunctionaliteit {#deduplication-merge} van de deduplicatieactiviteit gebruiken
-
-## Over dit gebruiksgeval {#about-this-use-case}
+## Over dit gebruiksscenario {#about-this-use-case}
 
 In dit geval wordt beschreven hoe de **[!UICONTROL Merge]**-functionaliteit in de **[!UICONTROL Deduplication]**-activiteit moet worden gebruikt.
 
@@ -39,7 +38,7 @@ De activiteit **[!UICONTROL Deduplication]** wordt gebruikt voor het verwijderen
 
 Met de **[!UICONTROL Merge]**-fonctionaliteit van de deduplicatieactiviteit kunt u een set regels voor de deduplicatie configureren om een groep velden te definiëren die moeten worden samengevoegd in één resulterend gegevensrecord. Met een set dubbele records kunt u bijvoorbeeld het oudste telefoonnummer of de meest recente naam behouden.
 
-## De functie Samenvoegen {#activating-merge} activeren
+## De functie Samenvoegen activeren {#activating-merge}
 
 
 Om de samenvoegfunctionaliteit toe te laten, moet u eerst **[!UICONTROL Deduplication]** activiteit vormen. Ga als volgt te werk om dit te doen:
@@ -56,7 +55,7 @@ Om de samenvoegfunctionaliteit toe te laten, moet u eerst **[!UICONTROL Deduplic
 
 1. Het tabblad **[!UICONTROL Merge]** wordt toegevoegd aan het configuratiescherm **[!UICONTROL Deduplication]**. Dit tabblad wordt gebruikt om de gegevens op te geven die moeten worden samengevoegd bij het uitvoeren van deduplicatie.
 
-## De velden configureren om {#configuring-rules} samen te voegen
+## Samenvoegen van velden configureren {#configuring-rules}
 
 Hier volgen de regels die we willen gebruiken om de gegevens samen te voegen tot één record:
 
@@ -100,7 +99,7 @@ Om deze regels te vormen, volg deze stappen:
 Na het vormen van deze regels, worden de volgende gegevens ontvangen aan het eind van **[!UICONTROL Deduplication]** activiteit.
 
 | Wijzigingsdatum | Voornaam | Achternaam | E-mail | Mobiele telefoon | Telefoon |
------|------------|-----------|-------|--------------|------|
+|-----|------------|-----------|-------|--------------|------|
 | 19-05-2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
 | 22-07-2020 | Bobby | Tisner | bob@mycompany.com |  | 777-777-7777 |
 | 03-10-2020 | Bob |  | bob@mycompany.com |  | 888-888-888 |
