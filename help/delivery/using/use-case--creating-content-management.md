@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 2%
@@ -58,7 +58,7 @@ Een gegevensschema is een XML-document dat is gekoppeld aan inhoud. Hierin wordt
 >
 >Raadpleeg [deze sectie](../../configuration/using/about-schema-edition.md) voor meer informatie over het maken en configureren van gegevensschema&#39;s in Adobe Campaign.
 >
->De elementen van de configuratie specifiek voor inhoudsbeheer zijn gedetailleerd in [Gegevensschema&#39;s](../../delivery/using/data-schemas.md).
+>De elementen van de configuratie specifiek voor inhoudsbeheer zijn gedetailleerd in [Gegevensschema&#39;s](data-schemas.md).
 
 Voer de volgende stappen uit om een gegevensschema te maken:
 
@@ -82,7 +82,7 @@ Voer de volgende stappen uit om een gegevensschema te maken:
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   Raadpleeg [Schema&#39;s bewerken](../../delivery/using/data-schemas.md#editing-schemas) voor meer informatie.
+   Raadpleeg [Schema&#39;s bewerken](data-schemas.md#editing-schemas) voor meer informatie.
 
    Voor elk element waarnaar in de inhoud wordt verwezen, moet u een overeenkomend type selecteren.
 
@@ -160,7 +160,7 @@ Het schema bevat de volgende informatie:
 
 1. Klik **[!UICONTROL Save]** om het gegevensschema tot stand te brengen.
 
-## Stap 3 - Het creëren van de inputvorm {#step-3---creating-the-input-form}
+## Stap 3 - Het invoerformulier maken {#step-3---creating-the-input-form}
 
 Met het invoerformulier kunt u een inhoudsinstantie bewerken via een invoerinterface vanuit de Adobe Campaign-clientconsole.
 
@@ -170,7 +170,7 @@ De beschrijving van een formulier is een gestructureerd XML-document waarin de g
 >
 >Raadpleeg [deze sectie](../../configuration/using/identifying-a-form.md) voor meer informatie over het maken en configureren van formulieren in Adobe Campaign.
 >
->De configuratieelementen specifiek voor inhoudsbeheer worden beschreven in [Invoerformulieren](../../delivery/using/input-forms.md).
+>De configuratieelementen specifiek voor inhoudsbeheer worden beschreven in [Invoerformulieren](input-forms.md).
 
 Voer de volgende stappen uit om een invoerformulier te maken voor inhoudsbeheer:
 
@@ -220,7 +220,7 @@ In dit voorbeeld willen we een JavaScript-sjabloon gebruiken om de gegevensconst
 
 >[!NOTE]
 >
->Restricties die zijn gekoppeld aan documentopbouw (JavaScript- of XSL-sjabloon) worden beschreven in [Opmaak](../../delivery/using/formatting.md).
+>Restricties die zijn gekoppeld aan documentopbouw (JavaScript- of XSL-sjabloon) worden beschreven in [Opmaak](formatting.md).
 
 Als u een JavaScript-sjabloon wilt gebruiken in Adobe Campaign, voert u de volgende stappen uit:
 
@@ -231,7 +231,7 @@ Als u een JavaScript-sjabloon wilt gebruiken in Adobe Campaign, voert u de volge
 1. Voer een sjabloonnaam in en selecteer het schema dat u voor inhoudsbeheer hebt gemaakt.
 1. Importeer de setinhoud die u in het bericht wilt weergeven.
 
-   Voeg de elementen van de variabele toe met inachtneming van de syntaxis in [JavaScript-sjablonen](../../delivery/using/formatting.md#javascript-templates).
+   Voeg de elementen van de variabele toe met inachtneming van de syntaxis in [JavaScript-sjablonen](formatting.md#javascript-templates).
 
    Als u de inhoud wilt weergeven die in ons voorbeeld wordt weergegeven, moet de JavaScript-sjabloon de volgende elementen bevatten:
 
@@ -324,7 +324,7 @@ Als u een JavaScript-sjabloon wilt gebruiken in Adobe Campaign, voert u de volge
    </html>
    ```
 
-   Als u een functie oproept aan het begin van een sjabloon, kunt u een aanroep instellen naar verpersoonlijkingsgegevens uit de Adobe Campaign-database (in dit geval: receiving.firstName en receiving.lastName), zodat het kan worden geïnterpreteerd wanneer gebruikt in een levering. Raadpleeg [Including a JavaScript template](../../delivery/using/formatting.md#including-a-javascript-template) voor meer informatie.
+   Als u een functie oproept aan het begin van een sjabloon, kunt u een aanroep instellen naar verpersoonlijkingsgegevens uit de Adobe Campaign-database (in dit geval: receiving.firstName en receiving.lastName), zodat het kan worden geïnterpreteerd wanneer gebruikt in een levering. Raadpleeg [Including a JavaScript template](formatting.md#including-a-javascript-template) voor meer informatie.
 
    In dit voorbeeld bevat de functie de volgende code:
 
@@ -347,13 +347,13 @@ Als u een JavaScript-sjabloon wilt gebruiken in Adobe Campaign, voert u de volge
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
-## Stap 5 - het Creëren van het publicatiemalplaatje {#step-5---creating-the-publication-template}
+## Stap 5 - Het creëren van het publicatiemalplaatje {#step-5---creating-the-publication-template}
 
 De volgende stap bestaat uit het maken van een publicatiesjabloon voor inhoud om het schema, het formulier en de constructiesjabloon voor inhoud te koppelen. Deze publicatiesjabloon kan verschillende uitvoerindelingen hebben.
 
 >[!NOTE]
 >
->Raadpleeg [Publicatiesjablonen](../../delivery/using/publication-templates.md) voor meer informatie over publicatiesjablonen voor inhoud.
+>Raadpleeg [Publicatiesjablonen](publication-templates.md) voor meer informatie over publicatiesjablonen voor inhoud.
 
 In dit voorbeeld zijn de stappen als volgt:
 
@@ -379,9 +379,9 @@ U kunt nu inhoud maken op basis van deze publicatiesjabloon.
 
 >[!NOTE]
 >
->Raadpleeg [Een inhoudssjabloon gebruiken](../../delivery/using/using-a-content-template.md) voor meer informatie over het maken van inhoud.
+>Raadpleeg [Een inhoudssjabloon gebruiken](using-a-content-template.md) voor meer informatie over het maken van inhoud.
 
-### Inhoud maken in de wizard {#creating-content-in-the-delivery-wizard}
+### Inhoud maken in de wizard voor levering {#creating-content-in-the-delivery-wizard}
 
 Voer de volgende stappen uit om inhoud rechtstreeks in de leveringen te maken:
 
