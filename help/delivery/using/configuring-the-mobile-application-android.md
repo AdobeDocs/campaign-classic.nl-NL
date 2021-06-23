@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 4%
@@ -33,7 +33,7 @@ De belangrijkste stappen zijn:
 
 Vervolgens kunt u [een uitgebreide Android-melding maken](create-notifications-android.md).
 
-## Externe Android-account {#configuring-external-account-android} configureren
+## Externe Android-account configureren {#configuring-external-account-android}
 
 Voor Android zijn twee connectors beschikbaar:
 
@@ -58,7 +58,7 @@ Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
    * **maxGCMConnectPerChild**: Maximale limiet van parallelle HTTP-aanvragen voor de FCM die door elke onderliggende server worden geïnitieerd (standaard 8).
 
-## Een Android-service {#configuring-android-service} configureren
+## Een Android-service configureren {#configuring-android-service}
 
 ![](assets/do-not-localize/how-to-video.png) [Leer hoe u een Android-service configureert in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=en#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign)
 
@@ -79,9 +79,9 @@ Voer de volgende stappen uit om te kiezen welke aansluiting u wilt gebruiken:
 
    ![](assets/nmac_service_2.png)
 
-1. Maak uw Android-toepassing. Raadpleeg [deze sectie](../../delivery/using/configuring-the-mobile-application-android.md#creating-android-app) voor meer informatie.
+1. Maak uw Android-toepassing. Raadpleeg [deze sectie](configuring-the-mobile-application-android.md#creating-android-app) voor meer informatie.
 
-## De mobiele Android-toepassing {#creating-android-app} maken
+## De mobiele Android-toepassing maken {#creating-android-app}
 
 Nadat u de service hebt gemaakt, moet u nu uw Android-toepassing maken:
 
@@ -93,7 +93,7 @@ Nadat u de service hebt gemaakt, moet u nu uw Android-toepassing maken:
 
    ![](assets/nmac_android.png)
 
-1. Zorg ervoor dat **[!UICONTROL Integration key]** in Adobe Campaign en in de toepassingscode via de SDK wordt gedefinieerd. Raadpleeg [deze sectie](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) voor meer informatie.
+1. Zorg ervoor dat **[!UICONTROL Integration key]** in Adobe Campaign en in de toepassingscode via de SDK wordt gedefinieerd. Raadpleeg [deze sectie](integrating-campaign-sdk-into-the-mobile-application.md) voor meer informatie.
 
    >[!NOTE]
    >
@@ -111,10 +111,10 @@ Standaard slaat Adobe Campaign een toets op in het veld **[!UICONTROL User ident
 
 Nadat u de service en een nieuwe mobiele toepassing hebt gemaakt, moet u de mobiele toepassing configureren, afhankelijk van de gekozen API-versie.
 
-* **De HTTP v1** configuratie is gedetailleerd in  [deze sectie](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
-* **De (erfenis)** configuratie van HTTP is gedetailleerd in  [deze sectie](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
+* **De HTTP v1** configuratie is gedetailleerd in  [deze sectie](configuring-the-mobile-application-android.md#android-service-httpv1).
+* **De (erfenis)** configuratie van HTTP is gedetailleerd in  [deze sectie](configuring-the-mobile-application-android.md#android-service-http).
 
-#### HTTP v1 API{#android-service-httpv1} configureren
+#### HTTP v1-API configureren{#android-service-httpv1}
 
 Voer de volgende stappen uit om de HTTP v1 API-versie te configureren:
 
@@ -176,7 +176,7 @@ Hieronder vindt u de namen van FCM-ladingen om uw pushmelding verder aan te pass
 
 <br>
 
-## Het schema appsubscriptionRcp {#extend-subscription-schema} uitbreiden
+## Het schema appsubscriptionRcp uitbreiden {#extend-subscription-schema}
 
 ![](assets/do-not-localize/how-to-video.png) [Leer hoe u het schema appsubscriptionRcp in video kunt uitbreiden](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=en#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
@@ -188,4 +188,4 @@ U moet **appsubscriptionRcp** uitbreiden om nieuwe extra gebieden te bepalen om 
 
    >[!CAUTION]
    >
-   >Zorg ervoor dat de configuratienamen op het tabblad **[!UICONTROL Subscription parameters]** gelijk zijn aan die in de code van de mobiele toepassing. Zie [deze sectie](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
+   >Zorg ervoor dat de configuratienamen op het tabblad **[!UICONTROL Subscription parameters]** gelijk zijn aan die in de code van de mobiele toepassing. Zie [deze sectie](integrating-campaign-sdk-into-the-mobile-application.md).
