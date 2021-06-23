@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 3%
@@ -15,20 +15,20 @@ ht-degree: 3%
 
 # Een sms-levering maken {#creating-a-sms-delivery}
 
-## Selecteer het leveringskanaal {#selecting-the-delivery-channel}
+## Het leveringskanaal selecteren {#selecting-the-delivery-channel}
 
 Volg onderstaande stappen om een nieuwe SMS-levering te maken:
 
 >[!NOTE]
 >
->Algemene concepten voor het maken van leveringen worden weergegeven in [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Algemene concepten voor het maken van leveringen worden weergegeven in [deze sectie](steps-about-delivery-creation-steps.md).
 
 1. Maak een nieuwe levering, bijvoorbeeld via het dashboard Levering.
 1. Selecteer de leveringsmalplaatje **Verzonden aan mobiles (SMPP)** die u vroeger creeerde. Voor meer op dit, verwijs naar [Verander de leveringsmalplaatje](sms-set-up.md#changing-the-delivery-template) sectie.
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. Identificeer uw levering met een etiket, code, en beschrijving. Raadpleeg [deze sectie](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery) voor meer informatie.
+1. Identificeer uw levering met een etiket, code, en beschrijving. Raadpleeg [deze sectie](steps-create-and-identify-the-delivery.md#identifying-the-delivery) voor meer informatie.
 1. Klik **[!UICONTROL Continue]** om deze informatie te bevestigen en het venster van de berichtconfiguratie te tonen.
 
 ## Definieer de content van de sms {#defining-the-sms-content}
@@ -39,7 +39,7 @@ Voer de volgende stappen uit om de inhoud van het SMS te maken:
 
    ![](assets/s_ncs_user_wizard_sms01_138.png)
 
-   Het gebruik van verpersoonlijkingsgebieden wordt voorgesteld in [Info verpersoonlijking](../../delivery/using/about-personalization.md) sectie.
+   Het gebruik van verpersoonlijkingsgebieden wordt voorgesteld in [Info verpersoonlijking](about-personalization.md) sectie.
 
 1. Klik **[!UICONTROL Preview]** bij de bodem van de pagina om het teruggeven van het bericht met zijn verpersoonlijking te bekijken. Als u de voorvertoning wilt starten, selecteert u een ontvanger met de knop **[!UICONTROL Test personalization]** op de werkbalk. U kunt een ontvanger selecteren uit de gedefinieerde doelen of een andere ontvanger kiezen.
 
@@ -65,8 +65,8 @@ Voer de volgende stappen uit om de inhoud van het SMS te maken:
 
 ## Doelpopulatie selecteren {#selecting-the-target-population}
 
-Het gedetailleerde proces wanneer het selecteren van de doelpopulatie van een levering wordt voorgesteld in [deze sectie](../../delivery/using/steps-defining-the-target-population.md).
+Het gedetailleerde proces wanneer het selecteren van de doelpopulatie van een levering wordt voorgesteld in [deze sectie](steps-defining-the-target-population.md).
 
-Raadpleeg [deze sectie](../../delivery/using/about-personalization.md) voor meer informatie over het gebruik van verpersoonlijkingsvelden.
+Raadpleeg [deze sectie](about-personalization.md) voor meer informatie over het gebruik van verpersoonlijkingsvelden.
 
-Raadpleeg [deze pagina](../../delivery/using/about-seed-addresses.md) voor meer informatie over het opnemen van een zaadlijst.
+Raadpleeg [deze pagina](about-seed-addresses.md) voor meer informatie over het opnemen van een zaadlijst.
