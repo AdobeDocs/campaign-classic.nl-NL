@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '857'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ U hebt de mogelijkheid om nieuwe blokken te definiëren waarmee u uw leveringen 
 >
 >De blokken van de aanpassing zijn ook beschikbaar bij **[!UICONTROL Digital Content Editor (DCE)]**. Raadpleeg [deze pagina](../../web/using/editing-content.md#inserting-a-personalization-block) voor meer informatie.
 
-## Bezig met het invoegen van aanpassingsblokken {#inserting-personalization-blocks}
+## Aanmaakblokken invoegen {#inserting-personalization-blocks}
 
 Volg onderstaande stappen om een verpersoonlijkingsblok in te voegen in een bericht:
 
@@ -68,7 +68,7 @@ Om dit te doen, moeten wij de volgende verpersoonlijkingsblokken opnemen:
 
 >[!NOTE]
 >
->Raadpleeg [De spiegelpagina genereren](../../delivery/using/sending-messages.md#generating-the-mirror-page) voor meer informatie over het genereren van de spiegelpagina.
+>Raadpleeg [De spiegelpagina genereren](sending-messages.md#generating-the-mirror-page) voor meer informatie over het genereren van de spiegelpagina.
 
 1. Maak een nieuwe levering of open een bestaande e-maillevering.
 1. Klik in de wizard voor aflevering op **[!UICONTROL Subject]** om het onderwerp van het bericht te bewerken en een onderwerp in te voeren.
@@ -83,7 +83,7 @@ Om dit te doen, moeten wij de volgende verpersoonlijkingsblokken opnemen:
 
 1. Controleer of de inhoud van het blok correct wordt weergegeven.
 
-## Verpersoonlijkingsblokken {#out-of-the-box-personalization-blocks}
+## Buiten-de-doos verpersoonlijkingsblokken {#out-of-the-box-personalization-blocks}
 
 Een lijst van verpersoonlijkingsblokken is beschikbaar door gebrek om u te helpen de inhoud van uw bericht personaliseren.
 
@@ -100,24 +100,12 @@ Een lijst van verpersoonlijkingsblokken is beschikbaar door gebrek om u te helpe
 
    >[!NOTE]
    >
-   >Raadpleeg [De spiegelpagina genereren](../../delivery/using/sending-messages.md#generating-the-mirror-page) voor meer informatie over het genereren van de spiegelpagina.
+   >Raadpleeg [De spiegelpagina genereren](sending-messages.md#generating-the-mirror-page) voor meer informatie over het genereren van de spiegelpagina.
 
 * **[!UICONTROL Link to mirror page]** : voegt een koppeling naar de spiegelpagina in: &quot;Klik hier als je dit bericht niet juist kunt weergeven.&quot;
 * **[!UICONTROL Unsubscription link]** : voegt een koppeling in waarmee u zich kunt afmelden bij alle leveringen (lijst van gewezen personen).
-* **[!UICONTROL Formatting function for proper nouns]** : Hiermee wordt de functie  **[!UICONTROL toSmartCase]** JavaScript gegenereerd. De eerste letter van elk woord wordt in hoofdletters gewijzigd. Dit blok moet in de broncode van de levering, in **`<script>...</script>`** markeringen worden opgenomen.
-
-   In het onderstaande voorbeeld wordt de functie gebruikt om het element &quot;Mijn koptekst&quot; te vervangen door &quot;Mijn nieuwe koptekst&quot; door hoofdletters bij elk woord:
-
-   ```
-   <h1 id="sample">My header</h1>
-   <script><%@ include view='toSmartCase'%>;
-   document.getElementById("sample").innerHTML = toSmartCase("My new header");
-   </script>
-   ```
-
-   ![](assets/s_ncs_user_personalized_block_uppercasefunction.png)
-
-* **[!UICONTROL Registration page URL]** : voegt een abonnement-URL in (zie  [Informatie over services en abonnementen](../../delivery/using/about-services-and-subscriptions.md)).
+* **[!UICONTROL Formatting function for proper nouns]** : Hiermee wordt de functie  **[!UICONTROL toSmartCase]** JavaScript gegenereerd. De eerste letter van elk woord wordt in hoofdletters gewijzigd.
+* **[!UICONTROL Registration page URL]** : voegt een abonnement-URL in (zie  [Informatie over services en abonnementen](about-services-and-subscriptions.md)).
 * **[!UICONTROL Registration link]** : voegt een abonnementkoppeling in. die is gedefinieerd tijdens het configureren van de instantie.
 * **[!UICONTROL Registration link (with referrer)]** : voegt een abonnementkoppeling in, waarmee de bezoeker en de levering kunnen worden geïdentificeerd. De koppeling is gedefinieerd tijdens het configureren van de instantie.
 
@@ -126,11 +114,11 @@ Een lijst van verpersoonlijkingsblokken is beschikbaar door gebrek om u te helpe
    >Dit blok kan alleen worden gebruikt bij leveringen voor bezoekers.
 
 * **[!UICONTROL Registration confirmation]** : voegt een koppeling in waarmee u het abonnement kunt bevestigen.
-* **[!UICONTROL Social network sharing links]** : voegt knopen in die de ontvanger toelaten om een verbinding aan de inhoud van de spiegelpagina met de e-mailcliënt, Facebook, Twitter, en LinkedIn te delen (zie  [Viral marketing: door naar een vriend](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
+* **[!UICONTROL Social network sharing links]** : voegt knopen in die de ontvanger toelaten om een verbinding aan de inhoud van de spiegelpagina met de e-mailcliënt, Facebook, Twitter, en LinkedIn te delen (zie  [Viral marketing: door naar een vriend](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
 * **[!UICONTROL Style of content emails]** en  **[!UICONTROL Notification style]** : genereren code waarmee een e-mailbericht wordt opgemaakt met vooraf gedefinieerde HTML-stijlen. Deze blokken moeten in de broncode van de levering, in **[!UICONTROL ...]** sectie, in **`<style>...</style>`** markeringen worden opgenomen.
 * **[!UICONTROL Offer acceptance URL in unitary mode]** : voegt een URL in waarmee een interactieaanbieding kan worden ingesteld op  **[!UICONTROL Accepted]** (zie  [deze sectie](../../interaction/using/offer-analysis-report.md)).
 
-## Aangepaste aanpassingsblokken {#defining-custom-personalization-blocks} definiëren
+## Aangepaste aanpassingsblokken definiëren {#defining-custom-personalization-blocks}
 
 U kunt nieuwe verpersoonlijkingsgebieden bepalen die van het gepersonaliseerde gebiedspictogram via het **[!UICONTROL Include...]** menu moeten worden opgenomen. Deze gebieden worden bepaald in verpersoonlijkingsblokken.
 
