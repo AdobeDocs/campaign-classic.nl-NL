@@ -7,22 +7,26 @@ feature: Overzicht
 role: Business Practitioner, Administrator
 level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
-source-git-commit: 46e5cac1df419de933d96a3f35f7ac491a1defa5
+source-git-commit: c612b47463427751eff27d6092e371c918c87d93
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1551'
 ht-degree: 0%
 
 ---
 
 # Adobe Analytics Connector{#adobe-analytics-connector}
 
-## Info over integratie van Adobe Analytics Connector {#about-analytics-connector-integration}
+## Over integratie met Adobe Analytics Connector {#about-analytics-connector-integration}
+
+Met Adobe Analytics Connector kunnen Adobe Campaign en Adobe Analytics communiceren via het **[!UICONTROL Web Analytics connectors]**-pakket. Het stuurt gegevens door naar Adobe Campaign in de vorm van segmenten met betrekking tot gebruikersgedrag na een e-mailcampagne. Omgekeerd verzendt het programma indicatoren en kenmerken van e-mailcampagnes die door Adobe Campaign aan Adobe Analytics worden geleverd.
 
 >[!CAUTION]
 >
->Adobe Analytics Connector is niet compatibel met Transaction messaging (Message Center).
+>* Adobe Analytics Connector is niet compatibel met Transaction messaging (Message Center).
+   >
+   >
+* Voordat u begint, moet u controleren of het Adobe Identity Management System (IMS) is geïmplementeerd in Campagne. [Meer weten op deze pagina](../../integrations/using/about-adobe-id.md)?
 
-Met Adobe Analytics Connector kunnen Adobe Campaign en Adobe Analytics communiceren via het **[!UICONTROL Web Analytics connectors]**-pakket. Het stuurt gegevens door naar Adobe Campaign in de vorm van segmenten met betrekking tot gebruikersgedrag na een e-mailcampagne. Omgekeerd verzendt het programma indicatoren en kenmerken van e-mailcampagnes die door Adobe Campaign aan Adobe Analytics worden geleverd.
 
 Met Adobe Analytics Connector kan Adobe Campaign het internetpubliek meten (Web Analytics). Dankzij deze integratie kan Adobe Campaign na een marketingcampagne gegevens over het gedrag van bezoekers van een of meer sites herstellen en (na analyse) hermarketingcampagnes voeren om deze in kopers om te zetten. Omgekeerd, laten de analytische hulpmiddelen van het Web Adobe Campaign toe om indicatoren en campagneattributen aan hun platforms door te sturen.
 
@@ -79,7 +83,7 @@ Als u de integratie tussen Adobe Analytics en Adobe Campaign Classic wilt instel
 
 1. Wanneer gevormd, klik **[!UICONTROL Create report suite]**.
 
-### Configureer uw conversievariabelen en Succesgebeurtenissen {#configure-conversion-success}
+### Conversievariabelen en Succesgebeurtenissen configureren {#configure-conversion-success}
 
 Nadat u uw **[!UICONTROL Report suite]** hebt gemaakt, moet u de **[!UICONTROL Conversion variables]** en **[!UICONTROL Success events]** als volgt configureren:
 
