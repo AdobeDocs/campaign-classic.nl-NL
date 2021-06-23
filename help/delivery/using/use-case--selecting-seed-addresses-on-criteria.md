@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 3%
@@ -28,19 +28,19 @@ Als u de dynamische voorwaarde wilt gebruiken, moet u beschikken over:
 * een levering klaar om te worden verzonden,
 * zaadadressen die een gemeenschappelijke waarde hebben. Deze waarde kan een veld zijn dat al bestaat in Adobe Campaign. In dit voorbeeld hebben de zaadadressen dezelfde waarde als &quot;Aanschaffen&quot; in het veld &quot;Afdeling&quot;, die standaard niet in de toepassing aanwezig is.
 
-## Stap 1 - Het creëren van een levering {#step-1---creating-a-delivery}
+## Stap 1 - Een levering maken {#step-1---creating-a-delivery}
 
-De stappen voor het maken van een levering worden beschreven in de sectie [Een e-maillevering maken](../../delivery/using/creating-an-email-delivery.md).
+De stappen voor het maken van een levering worden beschreven in de sectie [Een e-maillevering maken](creating-an-email-delivery.md).
 
 In dit voorbeeld heeft de leveringsmanager de nieuwsbrief gemaakt en de ontvangers geselecteerd.
 
 ![](assets/dlv_seeds_usecase_01.png)
 
-## Stap 2 - het Creëren van een gemeenschappelijke waarde {#step-2---creating-a-common-value}
+## Stap 2 - Een gemeenschappelijke waarde maken {#step-2---creating-a-common-value}
 
 Als u een gemeenschappelijke waarde wilt maken zoals in ons voorbeeld (afdeling Aanschaffen), moet u eerst het **gegevensschema** van uw zaadadressen uitbreiden en het bijbehorende invoerformulier bewerken.
 
-### Het gegevensschema {#extending-the-data-schema} uitbreiden
+### Het gegevensschema uitbreiden {#extending-the-data-schema}
 
 Voor meer details op schemauitbreidingen, verwijs naar [de gids van de Configuratie](../../configuration/using/data-schemas.md).
 
@@ -131,7 +131,7 @@ De gebruiker kan dan uit **stap 5** van de sectie volgen, en **[!UICONTROL Input
 
 Raadpleeg de sectie [Invoerformulier bijwerken](#updating-the-input-form).
 
-#### Invoerformulier {#updating-the-input-form} bijwerken
+#### Het invoerformulier bijwerken {#updating-the-input-form}
 
 1. In **[!UICONTROL Administration > Configuration > Input forms]** knoop, vind de zaadadressen inputvorm.
 
@@ -152,7 +152,7 @@ Raadpleeg de sectie [Invoerformulier bijwerken](#updating-the-input-form).
 
 1. Bewerk de zaadadressen die u voor de levering wilt gebruiken en typ **Aanschaf** als waarde in het veld **[!UICONTROL Department]**.
 
-## Stap 3 - De voorwaarde {#step-3---defining-the-condition} bepalen
+## Stap 3 - De voorwaarde definiëren {#step-3---defining-the-condition}
 
 U kunt nu de dynamische voorwaarde van de zaadadressen voor de levering specificeren. Dit doet u als volgt:
 
