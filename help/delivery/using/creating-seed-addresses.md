@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
@@ -21,7 +21,7 @@ U kunt submappen maken om de zaadadressen te ordenen. Klik hiertoe met de rechte
 
 Met Adobe Campaign kunt u ook zaadadressjablonen maken die worden geïmporteerd in leveringen of campagnes en die worden aangepast aan de specifieke behoeften van de desbetreffende leveringen en campagnes. Zie [Sloopadadesjablonen maken](#creating-seed-address-templates).
 
-## Adressen {#defining-addresses} definiëren
+## Adressen definiëren {#defining-addresses}
 
 Voer de volgende stappen uit om zaadadressen te maken:
 
@@ -58,4 +58,4 @@ Als u een sjabloonmap wilt definiëren, past u het volgende proces toe:
 
    ![](assets/s_ncs_user_seedlist_folder_is_model.png)
 
-   Adressen die in deze map zijn opgeslagen, kunnen nu worden gebruikt als adressjablonen. U kunt ze importeren in leveringen of campagnes en ze aanpassen op basis van de specifieke behoeften van de betrokken leveringen en campagnes (zie [Adding zaadadressen toevoegen](../../delivery/using/adding-seed-addresses.md)).
+   Adressen die in deze map zijn opgeslagen, kunnen nu worden gebruikt als adressjablonen. U kunt ze importeren in leveringen of campagnes en ze aanpassen op basis van de specifieke behoeften van de betrokken leveringen en campagnes (zie [Adding zaadadressen toevoegen](adding-seed-addresses.md)).
