@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 1%
@@ -53,9 +53,9 @@ U kunt het toepassingsgedrag bepalen voor wanneer de gebruiker het bericht activ
 
 Met de **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt)-workflow worden abonnementen op mobiele apparaten bijgewerkt. Raadpleeg de [lijst met technische workflows](../../workflow/using/about-technical-workflows.md) voor meer informatie over deze workflow.
 
-Adobe Campaign is compatibel met HTTP/2 APNs. Voor meer details over de configuratiestappen, verwijs naar [deze sectie](../../delivery/using/configuring-the-mobile-application.md) sectie.
+Adobe Campaign is compatibel met HTTP/2 APNs. Voor meer details over de configuratiestappen, verwijs naar [deze sectie](configuring-the-mobile-application.md) sectie.
 
-Voor globale informatie over hoe te om een levering tot stand te brengen, verwijs naar [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md).
+Voor globale informatie over hoe te om een levering tot stand te brengen, verwijs naar [deze sectie](steps-about-delivery-creation-steps.md).
 
 ## Gegevenspad {#data-path}
 
@@ -73,7 +73,7 @@ De mobiele toepassing wordt door de gebruiker gedownload van de App Store of van
 
 ![](assets/nmac_register_view.png)
 
-### Stap 2: Levering {#step-2--delivery}
+### Stap 2: Aflevering {#step-2--delivery}
 
 Marketers richten zich op toepassingsabonnees. Het leveringsproces verzendt de verbindingsmontages naar de berichtdienst (iOS certificaat en projectsleutel voor Android), bericht identiteitskaart (duw identiteitskaart) en de inhoud van het bericht. De kennisgevingsdienst stuurt meldingen naar de beoogde terminals.
 
