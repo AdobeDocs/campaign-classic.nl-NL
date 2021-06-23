@@ -7,10 +7,10 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Met Adobe Campaign kunt u rijke klantgegevens gebruiken om dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: 9febe6bc68c8bc31714a74455fa70ef83920ded9
 workflow-type: tm+mt
-source-wordcount: '2512'
-ht-degree: 97%
+source-wordcount: '2518'
+ht-degree: 96%
 
 ---
 
@@ -38,9 +38,11 @@ ht-degree: 97%
    + [Afgeschafte functies](rn/using/deprecated-features.md)
    + [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md)
    + [Technische opmerkingen](technotes/technote.md)
+   + [Veelgestelde vragen over Adobe Analytics Connector](technotes/aa-connector-migration.md)
    + [Update van iOS-certificaat](technotes/ios-certificate-update.md)
    + [Configuratie-updates voor Campaign](technotes/acc-config-updates.md)
    + [Bijgehouden URL&#39;s bijwerken](technotes/tracked-urls.md)
+   + [IMS-updates](technotes/ims-updates.md)
 + Aan de slag {#getting-started}
    + Starten met Adobe Campaign {#starting-with-adobe-campaign}
       + [Aan de slag met Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
