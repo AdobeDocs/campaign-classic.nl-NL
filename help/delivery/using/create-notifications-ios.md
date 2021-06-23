@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Meldingen maken voor iOS{#create-notifications-ios}
 
-In deze sectie worden de elementen beschreven die specifiek zijn voor de levering van iOS-berichten. Algemene concepten voor het maken van leveringen worden weergegeven in [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md).
+In deze sectie worden de elementen beschreven die specifiek zijn voor de levering van iOS-berichten. Algemene concepten voor het maken van leveringen worden weergegeven in [deze sectie](steps-about-delivery-creation-steps.md).
 
 Begin door een nieuwe levering te maken.
 
@@ -37,7 +37,7 @@ Volg onderstaande stappen om een pushmelding voor iOS-apparaten te maken:
    >
    >Raadpleeg [deze sectie](about-personalization.md) voor meer informatie over het gebruik van verpersoonlijkingsvelden.
    >
-   >Voor meer op de opneming van een zaadlijst, verwijs naar [Ongeveer zaadadressen](../../delivery/using/about-seed-addresses.md).
+   >Voor meer op de opneming van een zaadlijst, verwijs naar [Ongeveer zaadadressen](about-seed-addresses.md).
 
 1. Selecteer **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**, selecteer de service die relevant is voor uw mobiele toepassing (in dit geval Neotrips) en selecteer vervolgens de iOS-versie van de toepassing.
 
@@ -63,7 +63,7 @@ Volg onderstaande stappen om een pushmelding voor iOS-apparaten te maken:
    >
    >**[!UICONTROL Badge]** en  **[!UICONTROL Alert and badge]** typedeclaraties kunt u de waarde van de badge wijzigen (het nummer boven het logo van de mobiele toepassing). Als u de badge wilt vernieuwen, hoeft u alleen 0 als waarde in te voeren. Als het veld leeg is, verandert de waarde van de badge niet.
 
-1. Klik op het pictogram **[!UICONTROL Insert emoticon]** om emoticons in te voegen bij uw pushmelding. Als u de lijst met emoticonen wilt aanpassen, raadpleegt u [deze sectie](../../delivery/using/customizing-emoticon-list.md)
+1. Klik op het pictogram **[!UICONTROL Insert emoticon]** om emoticons in te voegen bij uw pushmelding. Als u de lijst met emoticonen wilt aanpassen, raadpleegt u [deze sectie](customizing-emoticon-list.md)
 
 1. Met **[!UICONTROL Action button]** kunt u een label definiëren voor de actieknop die wordt weergegeven in de waarschuwingsberichten (**action_loc_key** veld van de payload). Als uw iOS-toepassing landinstellbare tekenreeksen beheert (**Localizable.strings**), voert u de bijbehorende sleutel in dit veld in. Als uw toepassing geen landinstellbare tekst beheert, voert u het label in dat u wilt zien op de actieknop. Raadpleeg de [documentatie van Apple](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) voor meer informatie over landinstellbare tekenreeksen.
 1. Selecteer in het veld **[!UICONTROL Play a sound]** het geluid dat door de mobiele terminal moet worden afgespeeld wanneer het bericht wordt ontvangen.
@@ -92,9 +92,9 @@ Als u een bewijs wilt verzenden en de uiteindelijke levering wilt verzenden, geb
 
 Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Raadpleeg deze secties voor meer informatie hierover:
 
-* [Push notification quarantines](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
-* [Een levering controleren](../../delivery/using/about-delivery-monitoring.md)
-* [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
+* [Push notification quarantines](understanding-quarantine-management.md#push-notification-quarantines)
+* [Een levering controleren](about-delivery-monitoring.md)
+* [Leveringsfouten begrijpen](understanding-delivery-failures.md)
 
 
 ## Een rijke melding voor iOS maken {#creating-ios-delivery}
