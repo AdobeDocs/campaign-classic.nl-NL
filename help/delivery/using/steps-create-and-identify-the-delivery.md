@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 11%
@@ -30,9 +30,9 @@ Voor elk kanaal dat u hebt geïnstalleerd, is een standaardsjabloon beschikbaar:
 >
 >Welke kanalen in de lijst worden aangeboden, is afhankelijk van uw licentieovereenkomst.
 
-U kunt nieuwe leveringsmalplaatjes tot stand brengen om specifieke parameters vooraf te vormen om uw behoeften aan te passen. Zie [deze sectie](../../delivery/using/about-templates.md) voor meer informatie over sjablonen.
+U kunt nieuwe leveringsmalplaatjes tot stand brengen om specifieke parameters vooraf te vormen om uw behoeften aan te passen. Zie [deze sectie](about-templates.md) voor meer informatie over sjablonen.
 
-## De levering {#identifying-the-delivery} identificeren
+## Identificatie van de levering {#identifying-the-delivery}
 
 U moet parameters voltooien om de levering te identificeren. Dit doet u als volgt:
 
@@ -49,7 +49,7 @@ U moet parameters voltooien om de levering te identificeren. Dit doet u als volg
 
 De leveringsinhoud is klaar om te worden gevormd. De definitie van de inhoud van de levering is specifiek voor elk kanaal. Raadpleeg de desbetreffende sectie voor meer informatie hierover:
 
-* [De e-mailcontent definiëren](../../delivery/using/defining-the-email-content.md)
-* [De SMS-inhoud definiëren](../../delivery/using/sms-create.md#defining-the-sms-content)
-* [De content voor direct mail definiëren](../../delivery/using/defining-the-direct-mail-content.md)
-* [Pushmeldingen](../../delivery/using/about-mobile-app-channel.md)
+* [De e-mailcontent definiëren](defining-the-email-content.md)
+* [De SMS-inhoud definiëren](sms-create.md#defining-the-sms-content)
+* [De content voor direct mail definiëren](defining-the-direct-mail-content.md)
+* [Pushmeldingen](about-mobile-app-channel.md)
