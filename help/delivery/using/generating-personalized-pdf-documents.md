@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 2%
@@ -23,7 +23,7 @@ De volgende extensies worden ondersteund: &quot;.docx&quot;, &quot;.doc&quot; en
 
 Voor het aanpassen van uw documenten zijn dezelfde JavaScript-functies beschikbaar als voor het aanpassen van e-mails.
 
-U moet de optie **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]** activeren. Deze optie is toegankelijk wanneer u het bestand bijvoegt bij de e-mail voor levering. Raadpleeg de sectie [Bestanden koppelen](../../delivery/using/attaching-files.md) voor meer informatie over het koppelen van een berekend bestand.
+U moet de optie **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]** activeren. Deze optie is toegankelijk wanneer u het bestand bijvoegt bij de e-mail voor levering. Raadpleeg de sectie [Bestanden koppelen](attaching-files.md) voor meer informatie over het koppelen van een berekend bestand.
 
 Voorbeeld van een personalisatie van de factuurheader:
 
@@ -31,7 +31,7 @@ Voorbeeld van een personalisatie van de factuurheader:
 
 Als u dynamische tabellen wilt genereren of afbeeldingen wilt opnemen via een URL, moet u een specifiek proces volgen.
 
-## Dynamische tabellen {#generating-dynamic-tables} genereren
+## Dynamische tabellen genereren {#generating-dynamic-tables}
 
 De procedure voor het genereren van dynamische tabellen is als volgt:
 
@@ -45,7 +45,7 @@ De procedure voor het genereren van dynamische tabellen is als volgt:
 
    ![](assets/s_ncs_pdf_table.png)
 
-## Externe afbeeldingen {#inserting-external-images} invoegen
+## Externe afbeeldingen invoegen {#inserting-external-images}
 
 Het invoegen van externe afbeeldingen is handig als u bijvoorbeeld een document wilt personaliseren met een afbeelding waarvan de URL is ingevoerd in een veld van de ontvanger.
 
