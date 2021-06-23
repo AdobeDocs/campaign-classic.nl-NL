@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 12%
@@ -19,7 +19,7 @@ Geavanceerde instellingen voor het bijhouden van berichten zijn toegankelijk via
 
 >[!NOTE]
 >
->Het beheer van afbeeldingen in e-mailberichten wordt ook in dit venster geconfigureerd. Zie [Afbeeldingen toevoegen](../../delivery/using/defining-the-email-content.md#adding-images).
+>Het beheer van afbeeldingen in e-mailberichten wordt ook in dit venster geconfigureerd. Zie [Afbeeldingen toevoegen](defining-the-email-content.md#adding-images).
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 
@@ -37,7 +37,7 @@ U kunt de volgende opties configureren:
 
 De bijgehouden URL&#39;s worden in boomvorm weergegeven in het centrale venster.
 
-U kunt het bijhouden van gegevens voor elke URL van het bericht afzonderlijk activeren of deactiveren. Raadpleeg [deze sectie](../../delivery/using/how-to-configure-tracked-links.md) voor meer informatie.
+U kunt het bijhouden van gegevens voor elke URL van het bericht afzonderlijk activeren of deactiveren. Raadpleeg [deze sectie](how-to-configure-tracked-links.md) voor meer informatie.
 
 Met het tabblad **[!UICONTROL Advanced]** kunt u de berekeningsformules van de bijgehouden URL&#39;s en de openings-URL aanpassen.
 
