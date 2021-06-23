@@ -6,20 +6,20 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 0e0912c68d132919eeac9b91b93960e70011153e
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1179'
 ht-degree: 1%
 
 ---
 
 # RDBMS - Specifieke aanbevelingen{#rdbms-specific-recommendations}
 
-Om u te helpen bij het instellen van onderhoudsplannen, worden in deze sectie enkele aanbevelingen/aanbevolen procedures weergegeven die zijn aangepast aan de verschillende RDBMS-engines die Adobe Campaign ondersteunt. Dit zijn echter slechts aanbevelingen. Het is aan u om deze aan uw behoeften aan te passen, overeenkomstig uw interne procedure en beperkingen. Uw gegevensbestandbeheerder heeft de verantwoordelijkheid om deze plannen te bouwen en uit te voeren.
+Om u te helpen bij het instellen van onderhoudsplannen, geeft deze sectie een overzicht van een aantal aanbevelingen en aanbevolen procedures die zijn aangepast aan de verschillende RDBMS-engines die Adobe Campaign ondersteunt. Dit zijn echter slechts aanbevelingen. Het is aan u om deze aan uw behoeften aan te passen, overeenkomstig uw interne procedure en beperkingen. Uw gegevensbestandbeheerder heeft de verantwoordelijkheid om deze plannen te bouwen en uit te voeren.
 
 ## PostgreSQL {#postgresql}
 
-### Grote tabellen {#detecting-large-tables} detecteren
+### Grote tabellen detecteren {#detecting-large-tables}
 
 1. U kunt de volgende weergave aan uw database toevoegen:
 
@@ -36,74 +36,132 @@ Om u te helpen bij het instellen van onderhoudsplannen, worden in deze sectie en
     ORDER BY 3 DESC, 1, 2 DESC;
    ```
 
-1. Als u de volgende opdracht uitvoert, kunt u grote tabellen en indexen tekenen:
+1. U kunt deze query uitvoeren om grote tabellen en indexen te zoeken:
 
    ```
-   select * from uvSpace;
+   SELECT * FROM uvSpace;
+   ```
+
+   Alternatief, kunt u deze vraag in werking stellen, bijvoorbeeld om alle indexgrootte collectief te zien:
+
+   ```
+   SELECT
+      tablename,
+      sum(size_mbytes) AS "sizeMB_all",
+      (
+         SELECT sum(size_mbytes)
+         FROM uvspace
+         AS uv2
+         WHERE
+            INDEXNAME IS NULL
+            AND uv1.tablename = uv2.tablename
+      ) AS "sizeMB_data",
+      (
+         SELECT sum(size_mbytes)
+         FROM uvspace 
+         AS uv2 
+         WHERE
+            INDEXNAME IS NOT NULL
+            AND uv1.tablename = uv2.tablename
+      ) AS "sizeMB_index",
+      (
+         SELECT ROW_COUNT
+         FROM uvspace
+         AS uv2
+         WHERE
+            INDEXNAME IS NULL
+            AND uv1.tablename = uv2.tablename
+      ) AS ROWS FROM uvspace AS uv1
+      GROUP BY tablename
+      ORDER BY 2 DESC
    ```
 
 ### Eenvoudig onderhoud {#simple-maintenance}
 
-Onder PostgreSQL, zijn de typische bevelen u kunt gebruiken **vacuum volledig** en **herdex**.
+In PostgreSQL, kunt u deze typische sleutelwoorden gebruiken:
 
-Hier volgt een typisch voorbeeld van een SQL-onderhoudsplan dat regelmatig moet worden uitgevoerd met behulp van deze twee opdrachten:
+* VACUUM (VOLLEDIG, ANALYSEREN, VERBODEN)
+* REINDEX
+
+U kunt de VACUUM-bewerking uitvoeren en analyseren en er tijd aan toewijzen door deze syntaxis te gebruiken:
 
 ```
-vacuum full nmsdelivery;
- reindex table nmsdelivery;
- 
- vacuum full nmsdeliverystat;
- reindex table nmsdeliverystat;
- 
- vacuum full xtkworkflow;
- reindex table xtkworkflow;
- 
- vacuum full xtkworkflowevent;
- reindex table xtkworkflowevent;
- 
- vacuum full xtkworkflowjob;
- reindex table xtkworkflowjob;
- 
- vacuum full xtkworkflowlog;
- reindex table xtkworkflowlog;
- 
- vacuum full xtkworkflowtask;
- reindex table xtkworkflowtask;
- 
- vacuum full xtkjoblog;
- reindex table xtkjoblog;
- 
- vacuum full xtkjob;
- reindex table xtkjob;
- 
- vacuum full nmsaddress;
- reindex table nmsaddress;
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) <table>;
+```
 
- vacuum full nmsdeliverypart;
- reindex table nmsdeliverypart;
- 
- vacuum full nmsmirrorpageinfo;
- reindex table nmsmirrorpageinfo;
+We raden u aan de ANALYZE-instructie niet weg te laten. Anders wordt de vacuümtabel zonder statistieken weergegeven. De reden is dat er een nieuwe tabel wordt gemaakt en dat de oude tabel wordt verwijderd. Het resultaat is dat de object-id (OID) van de tabel verandert, maar dat er geen statistieken worden berekend. Dit betekent dat u meteen prestatieproblemen zult ondervinden.
+
+Hier volgt een typisch voorbeeld van een SQL-onderhoudsplan dat regelmatig moet worden uitgevoerd:
+
+```
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) nmsdelivery;
+REINDEX TABLE nmsdelivery;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) nmsdeliverystat;
+REINDEX TABLE nmsdeliverystat;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflow;
+REINDEX TABLE xtkworkflow;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowevent;
+REINDEX TABLE xtkworkflowevent;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowjob;
+REINDEX TABLE xtkworkflowjob;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowlog;
+REINDEX TABLE xtkworkflowlog;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowtask;
+REINDEX TABLE xtkworkflowtask;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkjoblog;
+REINDEX TABLE xtkjoblog;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) xtkjob;
+REINDEX TABLE xtkjob;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) nmsaddress;
+REINDEX TABLE nmsaddress;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) nmsdeliverypart;
+REINDEX TABLE nmsdeliverypart;
+
+\timing on
+VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
+REINDEX TABLE nmsmirrorpageinfo;
 ```
 
 >[!NOTE]
 >
 >* Adobe raadt u aan kleinere tabellen te gebruiken: als het proces op grote tabellen mislukt ( waarbij het risico van mislukking het grootst is ) , is ten minste een deel van het onderhoud voltooid .
 >* Adobe raadt u aan de tabellen toe te voegen die specifiek zijn voor uw gegevensmodel en die kunnen worden bijgewerkt. Dit kan het geval voor **NmsRecipient** zijn als u grote dagelijkse stromen van de gegevensreplicatie hebt.
->* De **vacuum** en **re-index** bevelen zullen de lijst sluiten, die sommige processen pauzeert terwijl het onderhoud wordt uitgevoerd.
->* Voor zeer grote tabellen (meestal boven 5 Gb) kan **vacuüm vol** behoorlijk inefficiënt worden en erg lang duren. Adobe raadt u niet aan deze te gebruiken voor de tabel **YyyNmsBroadLogXxx**.
->* Deze onderhoudsbewerking kan worden geïmplementeerd door een Adobe Campaign-workflow met een **[!UICONTROL SQL]**-activiteit (zie [deze sectie](../../workflow/using/architecture.md) voor meer informatie). Zorg ervoor dat u onderhoud plant voor een lage activiteitstijd die niet in strijd is met uw back-upvenster.
+>* De instructies VACUUM en REINDEX vergrendelen de tabel, die sommige processen onderbreekt terwijl het onderhoud wordt uitgevoerd.
+>* Voor zeer grote tabellen (doorgaans boven 5 GB) kan de VACUUM FULL-instructie tamelijk inefficiënt worden en erg lang duren. Adobe raadt u niet aan deze te gebruiken voor de tabel **YyyNmsBroadLogXxx**.
+>* Deze onderhoudsbewerking kan worden geïmplementeerd door een Adobe Campaign-workflow met een **[!UICONTROL SQL]**-activiteit. Raadpleeg [deze sectie](../../workflow/using/architecture.md) voor meer informatie. Zorg ervoor dat u onderhoud plant voor een lage activiteitstijd die niet in strijd is met uw back-upvenster.
 
 >
 
 
 
-### Database {#rebuilding-a-database} opnieuw samenstellen
+### Database opnieuw samenstellen {#rebuilding-a-database}
 
-PostgreSQL biedt geen eenvoudige manier om een online tabelreconstructie uit te voeren, aangezien **vacuum full** de tabel vergrendelt en zo een normale productie voorkomt. Dit betekent dat onderhoud moet worden uitgevoerd wanneer de tabel niet wordt gebruikt. U kunt:
+PostgreSQL biedt geen eenvoudige manier om een online tabel opnieuw samen te stellen, aangezien de VACUUM FULL-instructie de tabel vergrendelt, waardoor normale productie wordt voorkomen. Dit betekent dat onderhoud moet worden uitgevoerd wanneer de tabel niet wordt gebruikt. U kunt:
 
 * onderhoud uitvoeren wanneer het Adobe Campaign-platform wordt gestopt;
-* de verschillende Adobe Campaign-subservices stoppen die waarschijnlijk in de tabel zullen schrijven die opnieuw wordt samengesteld (**nlserver stop wfserver instance_name** om het workflowproces te stoppen).
+* Stop de diverse subservices van Adobe Campaign die waarschijnlijk in de tabel zullen schrijven die opnieuw wordt samengesteld (**nlserver stop wfserver instance_name** om het werkschemaproces te stoppen).
 
 Hier is een voorbeeld van lijstdefragmentatie gebruikend specifieke functies om noodzakelijke DDL te produceren. Met de volgende SQL kunt u twee nieuwe functies maken: **GenRebuildTablePart1** en **GenRebuildTablePart2**, die kunnen worden gebruikt om de noodzakelijke DDL te produceren om een lijst te ontspannen.
 
@@ -367,7 +425,7 @@ Neem contact op met de databasebeheerder voor meer informatie over de procedures
 Het onderstaande voorbeeld heeft betrekking op Microsoft SQL Server 2005. Als u een andere versie gebruikt, neemt u contact op met uw databasebeheerder voor informatie over onderhoudsprocedures.
 
 1. Eerst, verbind met de Studio van het Beheer van de Server van Microsoft SQL, met login met beheerderrechten.
-1. Ga naar de **[!UICONTROL Management > Maintenance Plans]** omslag, klik op het met de rechtermuisknop en kies **[!UICONTROL Maintenance Plan Wizard]**
+1. Ga naar **[!UICONTROL Management > Maintenance Plans]** omslag, klik op het met de rechtermuisknop aan en kies **[!UICONTROL Maintenance Plan Wizard]**.
 1. Klik **[!UICONTROL Next]** wanneer de eerste pagina omhoog komt.
 1. Selecteer het type onderhoudsplan dat u wilt maken (afzonderlijke schema&#39;s voor elke taak of één schema voor het hele abonnement) en klik op de knop **[!UICONTROL Change...]**.
 1. Selecteer in het venster **[!UICONTROL Job schedule properties]** de gewenste uitvoeringsinstellingen en klik op **[!UICONTROL OK]** en vervolgens op **[!UICONTROL Next]**.
@@ -377,7 +435,7 @@ Het onderstaande voorbeeld heeft betrekking op Microsoft SQL Server 2005. Als u 
    >
    >We raden u aan ten minste de hieronder weergegeven onderhoudstaken uit te voeren. U kunt ook de statistische updatetaak selecteren, hoewel deze al wordt uitgevoerd door de workflow voor het opschonen van databases.
 
-1. Selecteer in de vervolgkeuzelijst de database waarop u de **[!UICONTROL Database Check Integrity]**-taak wilt uitvoeren.
+1. Selecteer in de vervolgkeuzelijst de database waarop u de taak **[!UICONTROL Database Check Integrity]** wilt uitvoeren.
 1. Selecteer de database en klik op **[!UICONTROL OK]** en vervolgens op **[!UICONTROL Next]**.
 1. Vorm de maximumgrootte die aan uw gegevensbestand wordt toegewezen, dan klik **[!UICONTROL Next]**.
 
@@ -397,18 +455,18 @@ Het onderstaande voorbeeld heeft betrekking op Microsoft SQL Server 2005. Als u 
 
    * Als het indexfragmentatietempo hoger is dan 40%, wordt een heropbouw aanbevolen.
 
-      Selecteer de opties u op de indexherbouwingstaak wilt toepassen, dan klik **[!UICONTROL Next]**.
+      Selecteer de opties u op de index wilt toepassen herbouwt taak, dan klik **[!UICONTROL Next]**.
 
       >[!NOTE]
       >
-      >Het rebuild-indexproces is beperkter in termen van processorgebruik en vergrendelt de databasebronnen. Klik op de optie **[!UICONTROL Keep index online while reindexing]** als u wilt dat de index beschikbaar is tijdens het opnieuw samenstellen.
+      >Het rebuild-indexproces is beperkter in termen van processorgebruik en vergrendelt de databasebronnen. Selecteer de optie **[!UICONTROL Keep index online while reindexing]** als u wilt dat de index beschikbaar is tijdens het opnieuw samenstellen.
 
-1. Selecteer de opties die u in het activiteitenrapport wilt weergeven en klik op **[!UICONTROL Next]**.
+1. Selecteer de opties u in het activiteitenrapport wilt tonen, dan klik **[!UICONTROL Next]**.
 1. Controleer de lijst van taken die voor het onderhoudsplan worden gevormd, dan klik **[!UICONTROL Finish]**.
 
    Er wordt een samenvatting van het onderhoudsplan en de status van de verschillende stappen weergegeven.
 
-1. Wanneer het onderhoudsplan is voltooid, klikt u op **[!UICONTROL Close]**.
+1. Als het onderhoudsplan is voltooid, klikt u op **[!UICONTROL Close]**.
 1. Dubbelklik in de Microsoft SQL Server-verkenner op de map **[!UICONTROL Management > Maintenance Plans]**.
 1. Selecteer het Adobe Campaign-onderhoudsplan: de verschillende stappen worden beschreven in een workflow .
 
@@ -426,8 +484,8 @@ Het onderstaande voorbeeld heeft betrekking op Microsoft SQL Server 2005. Als u 
 
 Met de optie **WdbcOptions_TempDbName** kunt u een aparte database configureren voor het werken van tabellen op Microsoft SQL Server. Hierdoor worden back-ups en replicatie geoptimaliseerd.
 
-Deze optie kan worden gebruikt als u wilt dat werktabellen (bijvoorbeeld de tabellen die tijdens de uitvoering van een workflow worden gemaakt) op een andere database worden gemaakt.
+Deze optie kan worden gebruikt als u de het werk lijsten (bijvoorbeeld, de lijsten die tijdens de uitvoering van een werkschema worden gecreeerd) op een andere gegevensbestand wilt worden gecreeerd.
 
-Wanneer u de optie op &quot;tempdb.dbo.&quot;plaatst, zullen de werkende lijsten op het gebrek tijdelijke gegevensbestand van de Server van Microsoft worden gecreeerd SQL. De gegevensbestandbeheerder moet schrijftoegang tot het tempdb- gegevensbestand toestaan.
+Wanneer u de optie op &quot;tempdb.dbo.&quot;plaatst, worden de het werk lijsten gecreeerd op het gebrek tijdelijke gegevensbestand van de Server van Microsoft SQL. De gegevensbestandbeheerder moet schrijftoegang tot het tempdb- gegevensbestand toestaan.
 
-Als de optie wordt geplaatst, zal het op alle gegevensbestanden van de Server van Microsoft worden gebruikt SQL die in Adobe Campaign (belangrijkste gegevensbestand en externe rekeningen) worden gevormd. Als twee externe accounts dezelfde server delen, kunnen er conflicten optreden (omdat tempdb uniek is). Op dezelfde manier, als twee instanties van de Campagne de zelfde server MSSQL gebruiken, zouden er conflicten kunnen zijn als zij de zelfde tempdb gebruiken.
+Als de optie wordt geplaatst, wordt het gebruikt op alle gegevensbestanden van de Server van Microsoft SQL die in Adobe Campaign (belangrijkste gegevensbestand en externe rekeningen) worden gevormd. Let op: als twee externe accounts dezelfde server delen, kunnen er conflicten optreden (omdat tempdb uniek is). Op dezelfde manier, als twee instanties van de Campagne de zelfde server MSSQL gebruiken, kunnen er conflicten zijn als zij de zelfde tempdb gebruiken.
