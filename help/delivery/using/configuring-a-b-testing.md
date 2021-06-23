@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 6adf2e75-63b1-44ad-8925-03beb3bc0bdd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 3%
@@ -37,4 +37,4 @@ In deze sectie wordt beschreven hoe u een workflow bouwt om A/B-tests uit te voe
 
 U kunt de workflow nu starten. Zodra de leveringen zijn verzonden, zult u het gedrag van de drie ondergroepen in de leveringslogboeken kunnen volgen, om te zien welk onderwerp het meest succesvol is geweest.
 
-Met workflows kunt u ook uw processen automatiseren door automatisch de variant te identificeren die beter presteerde en deze vervolgens naar de resterende populatie te verzenden. Raadpleeg voor meer informatie deze [use case](../../delivery/using/a-b-testing-use-case.md).
+Met workflows kunt u ook uw processen automatiseren door automatisch de variant te identificeren die beter presteerde en deze vervolgens naar de resterende populatie te verzenden. Raadpleeg voor meer informatie deze [use case](a-b-testing-use-case.md).
