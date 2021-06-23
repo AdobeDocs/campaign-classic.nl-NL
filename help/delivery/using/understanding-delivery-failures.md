@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
@@ -31,13 +31,13 @@ De berichten kunnen ook tijdens de leveringsvoorbereiding worden uitgesloten als
 
 **Verwante onderwerpen:**
 
-* [Leveringslogboeken en geschiedenis](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)
-* [Mislukte status](../../delivery/using/delivery-performances.md#failed-status)
+* [Leveringslogboeken en geschiedenis](delivery-dashboard.md#delivery-logs-and-history)
+* [Mislukte status](delivery-performances.md#failed-status)
 * [Typen leveringsfouten en redenen](#delivery-failure-types-and-reasons)
 
 ## Typen leveringsfouten en redenen {#delivery-failure-types-and-reasons}
 
-Er zijn drie typen fouten wanneer een bericht mislukt. Elk fouttype bepaalt of een adres naar quarantines wordt verzonden. Voor meer op dit, verwijs naar [Voorwaarden om een adres naar quarantaine](../../delivery/using/understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine) te verzenden
+Er zijn drie typen fouten wanneer een bericht mislukt. Elk fouttype bepaalt of een adres naar quarantines wordt verzonden. Voor meer op dit, verwijs naar [Voorwaarden om een adres naar quarantaine](understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine) te verzenden
 
 * **Hard**: Een ‘harde’ of permanente fout wijst op een ongeldig adres. Dit omvat een foutbericht waarin expliciet wordt aangegeven dat het adres ongeldig is, zoals een onbekende gebruiker.
 * **Soft**: Dit kan een tijdelijke fout zijn of een fout die niet kan worden gecategoriseerd, zoals een ongeldig domein of een vol postvak.
@@ -164,13 +164,13 @@ De mogelijke redenen van een leveringsfout zijn:
   <tr> 
    <td> Onbereikbaar </td> 
    <td> Zacht/Hard </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> Er is een fout opgetreden in de berichtleveringsketen. Het zou een incident op het relais SMTP, een domein kunnen zijn dat tijdelijk onbereikbaar is, etc. Volgens de fout, zal het adres opnieuw worden geprobeerd tot de foutenteller 5 bereikt, of het zal direct naar quarantines worden verzonden.<br /> </td> 
   </tr> 
   <tr> 
    <td> Gebruiker onbekend </td> 
    <td> Hard </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> Het adres bestaat niet. Voor dit profiel worden geen verdere leveringen uitgevoerd.<br /> </td> 
   </tr> 
  </tbody> 
@@ -186,11 +186,11 @@ Als een bericht ontbreekt toe te schrijven aan een **Zachte** of **Genegeerde** 
 
 >[!IMPORTANT]
 >
->Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, worden de heruitzettingsmontages in de levering niet meer gebruikt door Campagne. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
+>Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](sending-with-enhanced-mta.md) hebt bevorderd, worden de heruitzettingsmontages in de levering niet meer gebruikt door Campagne. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
 
-Voor installaties op locatie en gehoste/hybride installaties die de oude Campagne MTA gebruiken, om de duur van een levering te wijzigen, ga naar de geavanceerde parameters van het leveringsmalplaatje en specificeer de gewenste duur op het overeenkomstige gebied. Zie [Geldigheidsperiode definiëren](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period).
+Voor installaties op locatie en gehoste/hybride installaties die de oude Campagne MTA gebruiken, om de duur van een levering te wijzigen, ga naar de geavanceerde parameters van het leveringsmalplaatje en specificeer de gewenste duur op het overeenkomstige gebied. Zie [Geldigheidsperiode definiëren](steps-sending-the-delivery.md#defining-validity-period).
 
-De standaardconfiguratie staat vijf herpogingen toe met intervallen van één uur, die door één herpoging per dag gedurende vier dagen worden gevolgd. Het aantal pogingen kan globaal worden veranderd (contacteer uw Adobe technische beheerder) of voor elke levering of leveringsmalplaatje (zie [het Vormen herpogingen](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)).
+De standaardconfiguratie staat vijf herpogingen toe met intervallen van één uur, die door één herpoging per dag gedurende vier dagen worden gevolgd. Het aantal pogingen kan globaal worden veranderd (contacteer uw Adobe technische beheerder) of voor elke levering of leveringsmalplaatje (zie [het Vormen herpogingen](steps-sending-the-delivery.md#configuring-retries)).
 
 ## Synchrone en asynchrone fouten {#synchronous-and-asynchronous-errors}
 
@@ -207,7 +207,7 @@ Een bericht kan onmiddellijk (synchrone fout), of later op ontbreken, nadat het 
 
    >[!NOTE]
    >
-   >Het klachtenbeheer wordt beschreven in de sectie [Leveringsbeheer](../../delivery/using/about-deliverability.md).
+   >Het klachtenbeheer wordt beschreven in de sectie [Leveringsbeheer](about-deliverability.md).
 
 ## Bounce mail management {#bounce-mail-management}
 
@@ -219,13 +219,13 @@ Voor installaties op locatie en gehoste/hybride installaties die gebruikmaken va
 
 >[!IMPORTANT]
 >
->Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, worden de meeste regels van het e-mailbeheer niet meer gebruikt. Zie [deze sectie](#email-management-rules)voor meer informatie.
+>Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](sending-with-enhanced-mta.md) hebt bevorderd, worden de meeste regels van het e-mailbeheer niet meer gebruikt. Zie [deze sectie](#email-management-rules)voor meer informatie.
 
 ### Kwalificatie van niet-bezorgde e-mails {#bounce-mail-qualification}
 
 >[!IMPORTANT]
 >
->Voor gehoste of hybride installaties, als u tot [Verbeterde MTA](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd:
+>Voor gehoste of hybride installaties, als u tot [Verbeterde MTA](sending-with-enhanced-mta.md) hebt bevorderd:
 >
 >* De stuiterende kwalificaties in de **[!UICONTROL Delivery log qualification]** lijst worden niet meer gebruikt voor **synchrone** de foutenmeldingen van de leveringsmislukking. Verbeterde MTA bepaalt het stuittype en de kwalificatie, en stuurt die informatie terug naar Campagne.
    >
@@ -264,13 +264,13 @@ Stuitberichten kunnen de volgende kwalificatiestatus hebben:
 
 >[!NOTE]
 >
->In het geval van een stroomonderbreking van ISP, zullen de e-mails die door Campaign worden verzonden verkeerd als stegels worden gemerkt. U moet de stuiterkwalificatie bijwerken om dit te corrigeren. Ga voor meer informatie naar [deze pagina](../../delivery/using/update-bounce-qualification.md).
+>In het geval van een stroomonderbreking van ISP, zullen de e-mails die door Campaign worden verzonden verkeerd als stegels worden gemerkt. U moet de stuiterkwalificatie bijwerken om dit te corrigeren. Ga voor meer informatie naar [deze pagina](update-bounce-qualification.md).
 
 ### E-mailbeheerregels {#email-management-rules}
 
 >[!IMPORTANT]
 >
->Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, worden de meeste regels van het e-mailbeheer niet meer gebruikt. Zie de volgende secties voor meer informatie.
+>Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](sending-with-enhanced-mta.md) hebt bevorderd, worden de meeste regels van het e-mailbeheer niet meer gebruikt. Zie de volgende secties voor meer informatie.
 
 De regels van de post worden betreden via de **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** knoop. De regels voor e-mailbeheer worden weergegeven in het onderste gedeelte van het venster.
 
@@ -292,7 +292,7 @@ De standaardregels zijn als volgt.
 
 >[!IMPORTANT]
 >
->Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, en als uw instantie **Webhooks/EFS** functionaliteit heeft, worden de **[!UICONTROL Inbound email]** regels niet meer gebruikt voor synchrone de foutenmeldingen van de leveringsmislukking. Zie [deze sectie](#bounce-mail-qualification)voor meer informatie.
+>Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](sending-with-enhanced-mta.md) hebt bevorderd, en als uw instantie **Webhooks/EFS** functionaliteit heeft, worden de **[!UICONTROL Inbound email]** regels niet meer gebruikt voor synchrone de foutenmeldingen van de leveringsmislukking. Zie [deze sectie](#bounce-mail-qualification)voor meer informatie.
 
 Voor on-premise installaties en ontvangen/hybride installaties die de erfenis MTA van de Campagne gebruiken, bevatten deze regels de lijst van karakterkoorden die door verre servers kunnen worden teruggekeerd en die u de fout (**Hard**, **Zacht** of **Genegeerde**) laten kwalificeren.
 
@@ -308,7 +308,7 @@ Zie [deze sectie](#bounce-mail-qualification) voor meer informatie over stuitere
 
 >[!IMPORTANT]
 >
->Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, worden de **[!UICONTROL Domain management]** regels niet meer gebruikt. **DKIM (DomainKeys Identified Mail)**-e-mailverificatie wordt ondertekend door de Enhanced MTA voor alle berichten met alle domeinen. Deze ondertekent niet met **Afzender-id**, **DomainKeys** of **S/MIME**, tenzij anderszins opgegeven op Enhanced MTA-niveau.
+>Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](sending-with-enhanced-mta.md) hebt bevorderd, worden de **[!UICONTROL Domain management]** regels niet meer gebruikt. **DKIM (DomainKeys Identified Mail)**-e-mailverificatie wordt ondertekend door de Enhanced MTA voor alle berichten met alle domeinen. Deze ondertekent niet met **Afzender-id**, **DomainKeys** of **S/MIME**, tenzij anderszins opgegeven op Enhanced MTA-niveau.
 
 Voor on-premise installaties en ontvangen/hybride installaties die de erfenis MTA van de Campagne gebruiken, past de het overseinenserver van Adobe Campaign één enkele **regel van het Domeinbeheer** op alle domeinen toe.
 
@@ -323,7 +323,7 @@ Als uw berichten in Vooruitzichten met **[!UICONTROL on behalf of]** in het afze
 
 >[!IMPORTANT]
 >
->Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, worden de **[!UICONTROL MX management]** leveringsproductieregels niet meer gebruikt. Verbeterde MTA gebruikt zijn eigen MX regels die het toestaan om uw productie door domein aan te passen die op uw eigen historische e-mailreputatie wordt gebaseerd, en op real time terugkoppelen die uit de domeinen komt waar u e-mails verzendt.
+>Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](sending-with-enhanced-mta.md) hebt bevorderd, worden de **[!UICONTROL MX management]** leveringsproductieregels niet meer gebruikt. Verbeterde MTA gebruikt zijn eigen MX regels die het toestaan om uw productie door domein aan te passen die op uw eigen historische e-mailreputatie wordt gebaseerd, en op real time terugkoppelen die uit de domeinen komt waar u e-mails verzendt.
 
 Voor installaties op locatie en gehoste/hybride installaties die gebruikmaken van de oude Campagne MTA:
 
