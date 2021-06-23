@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 5%
 
 ---
 
-# De levering {#configuring-and-sending-the-delivery} configureren en verzenden
+# De levering configureren en verzenden {#configuring-and-sending-the-delivery}
 
 >[!NOTE]
 >
@@ -41,13 +41,13 @@ Alvorens de levering te verzenden, kunt u de verzendende parameters in de leveri
    >
    >Het wordt niet aangeraden deze optie te gebruiken wanneer u medio-sourcing gebruikt om mta niet aan te roepen. Voor meer bij het vormen van een server SMTP, verwijs [naar deze sectie](../../installation/using/configure-delivery-settings.md).
 
-* **[!UICONTROL Email BCC]**: Met deze optie kunt u e-mailberichten op een extern systeem opslaan via BCC door eenvoudig een BCC-e-mailadres toe te voegen aan uw berichtdoel. Raadpleeg [deze sectie](../../delivery/using/sending-messages.md#archiving-emails) voor meer informatie.
+* **[!UICONTROL Email BCC]**: Met deze optie kunt u e-mailberichten op een extern systeem opslaan via BCC door eenvoudig een BCC-e-mailadres toe te voegen aan uw berichtdoel. Raadpleeg [deze sectie](sending-messages.md#archiving-emails) voor meer informatie.
 
-## Levering {#confirming-delivery} bevestigen
+## Levering bevestigen {#confirming-delivery}
 
 Wanneer de levering wordt gevormd en klaar om worden verzonden, zorg ervoor u de leveringsanalyse in werking hebt gesteld.
 
-Om dit te doen, klik **[!UICONTROL Send]**, selecteer de gewenste actie en klik **[!UICONTROL Analyze]**. Zie [De analyse starten](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery) voor meer informatie.
+Om dit te doen, klik **[!UICONTROL Send]**, selecteer de gewenste actie en klik **[!UICONTROL Analyze]**. Zie [De analyse starten](steps-validating-the-delivery.md#analyzing-the-delivery) voor meer informatie.
 
 ![](assets/s_ncs_user_email_del_send.png)
 
@@ -57,11 +57,11 @@ U kunt de leveringstovenaar dan sluiten en de uitvoering van de levering van het
 
 Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Raadpleeg deze secties voor meer informatie hierover:
 
-* [Een levering controleren](../../delivery/using/about-delivery-monitoring.md)
-* [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
-* [Berichttracking](../../delivery/using/about-message-tracking.md)
+* [Een levering controleren](about-delivery-monitoring.md)
+* [Leveringsfouten begrijpen](understanding-delivery-failures.md)
+* [Berichttracking](about-message-tracking.md)
 
-## Het plannen van de levering verzendend {#scheduling-the-delivery-sending}
+## De verzending van de levering plannen {#scheduling-the-delivery-sending}
 
 U kunt de levering van berichten uitstellen om de levering te plannen of om de salesdruk te beheren en te voorkomen dat een populatie overbevraagd wordt.
 
@@ -131,15 +131,15 @@ Als u de lading in evenwicht wilt brengen, kunt u leveringen in verscheidene par
       In het volgende voorbeeld vertegenwoordigt de eerste golf 25% van het totale aantal berichten inbegrepen in de levering en zal onmiddellijk beginnen. De volgende twee golven voltooien de levering en zijn geplaatst om met intervallen van zes uur te beginnen.
 
       ![](assets/s_ncs_user_wizard_waves_create.png)
-   Een specifieke typologieregel, **[!UICONTROL Wave scheduling check]**, zorgt ervoor dat de laatste golf vóór de grens van de leveringsgeldigheid wordt gepland. De typologieën van de campagne en hun regels, die op het **[!UICONTROL Typology]** lusje van de leveringseigenschappen worden gevormd, worden voorgesteld in [Validatieproces met typologieën](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+   Een specifieke typologieregel, **[!UICONTROL Wave scheduling check]**, zorgt ervoor dat de laatste golf vóór de grens van de leveringsgeldigheid wordt gepland. De typologieën van de campagne en hun regels, die op het **[!UICONTROL Typology]** lusje van de leveringseigenschappen worden gevormd, worden voorgesteld in [Validatieproces met typologieën](steps-validating-the-delivery.md#validation-process-with-typologies).
 
    >[!IMPORTANT]
    >
    >Zorg ervoor de laatste golven niet de leveringsdeadline overschrijden, die in **[!UICONTROL Validity]** tabel wordt bepaald. Anders kunnen sommige berichten niet worden verzonden.
    >
-   >U moet ook genoeg tijd voor pogingen toestaan wanneer het vormen van de laatste golven. Zie [deze sectie](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
+   >U moet ook genoeg tijd voor pogingen toestaan wanneer het vormen van de laatste golven. Zie [deze sectie](steps-sending-the-delivery.md#configuring-retries).
 
-1. Ga naar de leveringslogboeken om uw verzendingen te controleren. Zie [deze pagina](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
+1. Ga naar de leveringslogboeken om uw verzendingen te controleren. Zie [deze pagina](delivery-dashboard.md#delivery-logs-and-history).
 
    U kunt de leveringen zien die reeds in de verwerkte golven (**[!UICONTROL Sent]** status) werden verzonden en de leveringen die in de resterende golven (**[!UICONTROL Pending]** status) moeten worden verzonden.
 
@@ -165,13 +165,13 @@ De twee onderstaande voorbeelden zijn de meest gebruikte voorbeelden voor het ge
 
    ![](assets/s_ncs_user_wizard_waves_call_center.png)
 
-## Opnieuw proberen {#configuring-retries} configureren
+## Opnieuw proberen configureren {#configuring-retries}
 
-Tijdelijk niet-geleverde berichten als gevolg van een fout **Soft** of **Genegeerde** worden automatisch opnieuw geprobeerd. De types en de redenen van de leveringsmislukking worden voorgesteld in dit [sectie](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Tijdelijk niet-geleverde berichten als gevolg van een fout **Soft** of **Genegeerde** worden automatisch opnieuw geprobeerd. De types en de redenen van de leveringsmislukking worden voorgesteld in dit [sectie](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 >[!IMPORTANT]
 >
->Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, worden de heruitzettingsmontages in de levering niet meer gebruikt door Campagne. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
+>Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](sending-with-enhanced-mta.md) hebt bevorderd, worden de heruitzettingsmontages in de levering niet meer gebruikt door Campagne. De zachte stuitpogingen en de tijdsduur tussen hen worden bepaald door Verbeterde MTA gebaseerd op het type en de strengheid van de stuiteringsreacties die van het e-maildomein van het bericht terugkomen.
 
 Voor installaties op locatie en gehoste/hybride installaties die gebruikmaken van de oude Campagne MTA, geeft het centrale gedeelte van het tabblad **[!UICONTROL Delivery]** voor leveringsparameters aan hoeveel pogingen de dag na de levering moeten worden uitgevoerd en hoeveel vertraging er minimaal is tussen pogingen.
 
@@ -179,7 +179,7 @@ Voor installaties op locatie en gehoste/hybride installaties die gebruikmaken va
 
 Door gebrek, zijn vijf herpogingen gepland voor de eerste dag van de levering met een minimuminterval van één uur uitgespreid over de 24 uren van de dag. Elke dag opnieuw proberen wordt geprogrammeerd na dat en tot de leveringsdeadline, die in **[!UICONTROL Validity]** tabel (zie [Geldigheidsperiode bepalen](#defining-validity-period)) wordt bepaald.
 
-## Geldigheidsperiode {#defining-validity-period} definiëren
+## Geldigheidsduur definiëren {#defining-validity-period}
 
 Wanneer de levering is gestart, kunnen de berichten (en eventuele nieuwe pogingen) worden verzonden tot de leveringstermijn. Dit wordt vermeld in de leveringseigenschappen, via **[!UICONTROL Validity]** tabel.
 
@@ -191,7 +191,7 @@ Wanneer de levering is gestart, kunnen de berichten (en eventuele nieuwe poginge
 
    >[!IMPORTANT]
    >
-   >Als u voor gehoste of hybride installaties een upgrade hebt uitgevoerd naar [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md), wordt de **[!UICONTROL Delivery duration]**-instelling in uw e-mailleveringen voor campagne alleen gebruikt als deze is ingesteld op **3,5 dagen of minder**. Als u een waarde definieert die hoger is dan 3,5 dagen, wordt hiermee geen rekening gehouden.
+   >Als u voor gehoste of hybride installaties een upgrade hebt uitgevoerd naar [Enhanced MTA](sending-with-enhanced-mta.md), wordt de **[!UICONTROL Delivery duration]**-instelling in uw e-mailleveringen voor campagne alleen gebruikt als deze is ingesteld op **3,5 dagen of minder**. Als u een waarde definieert die hoger is dan 3,5 dagen, wordt hiermee geen rekening gehouden.
 
 * **Geldigheidslimiet van middelen**: Het  **[!UICONTROL Validity limit]** veld wordt gebruikt voor geüploade bronnen, voornamelijk voor de spiegelpagina en afbeeldingen. De bronnen op deze pagina zijn gedurende een beperkte tijd geldig (om schijfruimte te besparen).
 
