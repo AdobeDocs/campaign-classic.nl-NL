@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 2%
@@ -49,13 +49,13 @@ Als het probleem aanhoudt, neemt u contact op met de service voor commercieel ge
    * De status **[!UICONTROL Denylisted]** is een resultaat van een feedbacklus (wanneer een persoon een bericht rapporteert als spam).
 
    * De status **[!UICONTROL Quarantined]** is het resultaat van een zachte of harde stuit.
-   Zie [deze sectie](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist)voor meer informatie.
+   Zie [deze sectie](understanding-quarantine-management.md#quarantine-vs-denylist)voor meer informatie.
 
 * **Wat betekenen de verschillende redenen voor quarantainefouten?**
 
    Hier volgen tien mogelijke redenen: niet bepaald, gebruiker onbekend, ongeldig domein, op lijst van gewezen personen, geweigerd, fout genegeerd, onbereikbaar, rekening gehandicapt, brievenbus volledig, niet verbonden.
 
-   Voor meer op dit, zie [Het begrip quarantainebeheer](../../delivery/using/understanding-quarantine-management.md).
+   Voor meer op dit, zie [Het begrip quarantainebeheer](understanding-quarantine-management.md).
 
 ## Verwijderen uit lijst van gewezen personen {#remove-from-denylist}
 
