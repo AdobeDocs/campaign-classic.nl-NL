@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 3%
 
 ---
 
-# Verzenden, controleren en bijhouden van SMS-leveringen{#sms-properties}
+# SMS-leveringen verzenden, controleren en volgen{#sms-properties}
 
 ## SMS-berichten verzenden {#sending-sms-messages}
 
@@ -21,8 +21,8 @@ Om uw bericht goed te keuren en het naar de ontvangers van de levering te verzen
 
 Het gedetailleerde proces voor het valideren en verzenden van een levering wordt in de volgende secties weergegeven:
 
-* [De levering valideren](../../delivery/using/steps-validating-the-delivery.md)
-* [De levering verzenden](../../delivery/using/steps-sending-the-delivery.md)
+* [De levering valideren](steps-validating-the-delivery.md)
+* [De levering verzenden](steps-sending-the-delivery.md)
 
 ## Geavanceerde parameters {#advanced-parameters}
 
@@ -56,13 +56,13 @@ De volgende opties zijn beschikbaar:
 
 * **Maximum aantal SMS per bericht**: Met deze optie kunt u het aantal SMS instellen dat moet worden gebruikt om een bericht te verzenden. Als het aantal aan 0 wordt geplaatst, kunt u SMS gebruiken om uw bericht te leveren. Als het aantal SMS bijvoorbeeld op 1 of 2 wordt geplaatst, en het bericht deze drempel overschrijdt, zal het niet worden verzonden.
 
-## SMS {#monitoring-and-tracking-sms-deliveries} volgen
+## SMS controleren en volgen {#monitoring-and-tracking-sms-deliveries}
 
 Nadat u berichten hebt verzonden, kunt u de leveringen controleren en volgen. Raadpleeg deze secties voor meer informatie hierover:
 
-* [Een verzending controleren](../../delivery/using/about-delivery-monitoring.md)
-* [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
-* [Berichttracking](../../delivery/using/about-message-tracking.md)
+* [Een verzending controleren](about-delivery-monitoring.md)
+* [Leveringsfouten begrijpen](understanding-delivery-failures.md)
+* [Berichttracking](about-message-tracking.md)
 
 ## Binnenkomende berichten verwerken {#processing-inbound-messages}
 
@@ -108,7 +108,7 @@ Het InSMS-schema bevat relevante informatie over inkomende SMS. Een beschrijving
 * **operatorCode**: netcode van de exploitant.
 * **linkedSmsId**: Adobe Campaign-id (broadlogId) gekoppeld aan uitgaande SMS, waarbij dit SMS het antwoord is.
 
-## Automatische reacties beheren (Amerikaanse regelgeving) {#managing-automatic-replies--american-regulation-}
+## Automatische antwoorden beheren (Amerikaanse regelgeving) {#managing-automatic-replies--american-regulation-}
 
 Wanneer de abonnees op een bericht van SMS antwoorden dat werd verzonden naar hen via Adobe Campaign, en zij gebruiken een sleutelwoord zoals STOP, HELP, of JA, is het noodzakelijk, op de markt van de V.S., om berichten te vormen die automatisch zijn teruggekeerd.
 
@@ -165,6 +165,6 @@ De afzendernaam voor dit type van bericht is een korte code gewoonlijk wordt geb
 
 >[!IMPORTANT]
 >
->Dit soort automatische berichten houden geen geschiedenis bij. Daarom worden ze niet weergegeven in het leveringsdashboard. [Meer informatie](../../delivery/using/delivery-dashboard.md).
+>Dit soort automatische berichten houden geen geschiedenis bij. Daarom worden ze niet weergegeven in het leveringsdashboard. [Meer informatie](delivery-dashboard.md).
 >
 >Met deze berichten wordt in de regels inzake commerciële druk geen rekening gehouden. [Meer informatie](../../campaign/using/pressure-rules.md).
