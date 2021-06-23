@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 4%
 
 ---
 
-# De inhoud van uw bericht besturen{#control-message-content}
+# De inhoud van uw bericht beheren{#control-message-content}
 
 Om ervoor te zorgen dat je e-mailberichten bij je ontvangers terechtkomen en je e-mailsnelheid verbeteren, moeten ze een aantal regels in acht nemen. Anders, kan de inhoud van bepaalde berichten als spam worden ontdekt. Adobe Campaign biedt u verschillende gereedschappen om ervoor te zorgen dat uw inhoud aan deze regels voldoet.
 
@@ -29,7 +29,7 @@ Raadpleeg de [Handleiding voor beste praktijken voor Adobe-levering](https://exp
 
 >[!NOTE]
 >
->Zie [De e-mailinhoud definiëren](../../delivery/using/defining-the-email-content.md) en [Aangepaste inhoud maken](../../delivery/using/design-and-personalize.md) voor meer informatie over het bewerken van e-mailinhoud.
+>Zie [De e-mailinhoud definiëren](defining-the-email-content.md) en [Aangepaste inhoud maken](design-and-personalize.md) voor meer informatie over het bewerken van e-mailinhoud.
 
 ## Adres van afzender {#sender-address}
 
@@ -37,23 +37,23 @@ Bepaalde ISPs controleren de geldigheid van het afzenderadres (**[!UICONTROL Fro
 
 U moet ervoor zorgen dat een correct adres op instantieniveau (menu **[!UICONTROL Tools > Advanced > Deployment wizard...]**) of in de het vaakst gebruikte scenario&#39;s wordt gegeven.
 
-Voor meer op dit, zie [Bepalend de afzender](../../delivery/using/defining-the-email-content.md).
+Voor meer op dit, zie [Bepalend de afzender](defining-the-email-content.md).
 
 ## Personalisatie {#personalization}
 
 Om de ervaring van uw ontvangers te verbeteren en hen open uw e-mail te maken, laat Adobe Campaign u toe om uw berichten aan te passen.
 
-Zie [deze sectie](../../delivery/using/personalization-fields.md) voor meer informatie over het gebruik van verpersoonlijkingsvelden in Adobe Campaign.
+Zie [deze sectie](personalization-fields.md) voor meer informatie over het gebruik van verpersoonlijkingsvelden in Adobe Campaign.
 
-Sommige uiteinden om verpersoonlijking te optimaliseren wanneer het bouwen van uw inhoud worden voorgesteld in [deze sectie](../../delivery/using/design-and-personalize.md#optimize-personalization).
+Sommige uiteinden om verpersoonlijking te optimaliseren wanneer het bouwen van uw inhoud worden voorgesteld in [deze sectie](design-and-personalize.md#optimize-personalization).
 
-## Koppeling en formulier {#opt-out} uitschakelen
+## Koppeling en formulier uitschakelen {#opt-out}
 
-Wanneer het bericht wordt geanalyseerd, controleert standaard een [typologieregel](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) of een opt-out-koppeling is opgenomen en wordt een waarschuwing gegenereerd als deze ontbreekt. U kunt deze regel zodanig wijzigen dat er een fout optreedt in plaats van een eenvoudige waarschuwing en dat een levering wordt gestopt zonder deze koppeling.
+Wanneer het bericht wordt geanalyseerd, controleert standaard een [typologieregel](steps-validating-the-delivery.md#validation-process-with-typologies) of een opt-out-koppeling is opgenomen en wordt een waarschuwing gegenereerd als deze ontbreekt. U kunt deze regel zodanig wijzigen dat er een fout optreedt in plaats van een eenvoudige waarschuwing en dat een levering wordt gestopt zonder deze koppeling.
 
 U moet controleren of de koppeling om te weigeren correct werkt voordat u de koppeling verzendt. Wanneer u bijvoorbeeld de proefdruk verzendt, moet u controleren of de koppeling geldig is, of het formulier online is en of bij validatie de waarde van het veld **[!UICONTROL No longer contact this recipient]** wordt gewijzigd in **[!UICONTROL Yes]**. Deze controle moet u systematisch uitvoeren, omdat een menselijke fout altijd mogelijk is bij het invoeren van de koppeling of bij het wijzigen van het formulier.
 
-Leer hoe te om een opt-out verbinding [in deze sectie ](../../delivery/using/personalization-blocks.md#personalization-blocks-example) op te nemen.
+Leer hoe te om een opt-out verbinding [in deze sectie ](personalization-blocks.md#personalization-blocks-example) op te nemen.
 
 Als er een probleem wordt vastgesteld met betrekking tot het opzeggen van een abonnement nadat de levering is gestart, is het nog steeds mogelijk om handmatig een abonnement op te zeggen (met behulp van bijvoorbeeld de functie voor het bijwerken van de massa) voor de ontvangers die op de koppeling om te weigeren klikken, zelfs als zij hun keuze niet konden bevestigen.
 
@@ -67,7 +67,7 @@ Voordat u uw bericht verzendt, kunt u de reactiesnelheid van uw bericht testen d
 
 Om dit mogelijk te maken, legt Adobe Campaign de weergave vast en stelt deze beschikbaar in een specifiek rapport. Op deze manier kunt u het voorbeeld van het verzonden bericht bekijken in de verschillende contexten waarin het bericht mogelijk wordt ontvangen.
 
-Zie [Inbox rendering](../../delivery/using/inbox-rendering.md) voor meer informatie.
+Zie [Inbox rendering](inbox-rendering.md) voor meer informatie.
 
 ## SpamAssassin {#spamassassin}
 
@@ -75,4 +75,4 @@ Adobe Campaign kan worden gevormd om met SpamAssassin te werken. Dit maakt het m
 
 Voordat u met de levering begint, kunt u op het tabblad **[!UICONTROL Preview]** de risico&#39;s evalueren. Het resultaat van de test wordt aangegeven met een waarschuwingsbericht.
 
-Meer informatie vindt u in deze [sectie](../../delivery/using/spamassassin.md).
+Meer informatie vindt u in deze [sectie](spamassassin.md).
