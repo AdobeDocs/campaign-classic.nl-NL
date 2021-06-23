@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 3958fff140cc9bf6c371f0c4207cafc9a27bb725
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '971'
 ht-degree: 2%
 
 ---
@@ -101,13 +101,16 @@ Hiervoor voert u de volgende stappen uit:
 
    ![](assets/s_ncs_install_iis7_parameters_step9.png)
 
-### De webserver starten en de configuratie testen {#launching-the-web-server-and-testing-the-configuration}
+### De server van het Web lanceren en de configuratie testen {#launching-the-web-server-and-testing-the-configuration}
 
 U moet nu testen of de configuratie correct is.
 
 Hiervoor volgt u de volgende procedure:
 
 1. Start de IIS-server opnieuw met de opdrachtregel **isreset**.
+
+1. Start de Adobe Campaign-service en controleer of deze actief is.
+
 1. Test de volgende module door volgende URL in browser van het Web op te nemen:
 
    ```
@@ -144,7 +147,7 @@ Hiervoor voert u de volgende stappen uit:
 
 ## Aanvullende configuraties {#additional-configurations}
 
-### De maximale grootte van het uploadbestand wijzigen {#changing-the-upload-file-size-limit}
+### De maximale bestandsgrootte voor uploaden wijzigen {#changing-the-upload-file-size-limit}
 
 Wanneer het vormen van de server van het Web IIS, is een grens van ongeveer 28 MB automatisch voor vastgestelde dossiers die aan de server worden geupload.
 
