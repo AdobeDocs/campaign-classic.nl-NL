@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: df494786-5950-4646-aa9c-4dde45845057
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 17%
@@ -27,4 +27,4 @@ Het is ook toegankelijk via het **[!UICONTROL Tracking]** lusje van de levering.
 
 >[!NOTE]
 >
->Als u het **[!UICONTROL Tracking]** lusje van een levering niet kunt zien, betekent het dat het volgen niet is geactiveerd. Zie [deze sectie](../../delivery/using/how-to-configure-tracked-links.md).
+>Als u het **[!UICONTROL Tracking]** lusje van een levering niet kunt zien, betekent het dat het volgen niet is geactiveerd. Zie [deze sectie](how-to-configure-tracked-links.md).
