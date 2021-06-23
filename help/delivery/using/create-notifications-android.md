@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Meldingen maken voor Android{#create-notificaations-android}
 
-Gebruik Adobe Campaign om pushmeldingen te verzenden op Android-apparaten. Algemene concepten voor het maken van leveringen worden weergegeven in [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md).
+Gebruik Adobe Campaign om pushmeldingen te verzenden op Android-apparaten. Algemene concepten voor het maken van leveringen worden weergegeven in [deze sectie](steps-about-delivery-creation-steps.md).
 
 Begin door een nieuwe levering te maken.
 
@@ -31,7 +31,7 @@ Met Firebase Cloud Messaging kunt u kiezen uit twee typen berichten:
 
 Raadpleeg [FCM-documentatie](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages) voor meer informatie over de berichttypen in Firebase Cloud Messaging.
 
-## Gegevensbericht {#creating-data-message} maken
+## Een gegevensbericht maken {#creating-data-message}
 
 1. Ga naar **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
@@ -70,7 +70,7 @@ De afbeelding en webpagina moeten worden weergegeven in het pushbericht wanneer 
 
 >[!NOTE]
 >
->Aanvullende opties voor berichten zijn alleen beschikbaar bij de HTTP v1 API-configuratie. Raadpleeg deze [sectie](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1) voor meer informatie.
+>Aanvullende opties voor berichten zijn alleen beschikbaar bij de HTTP v1 API-configuratie. Raadpleeg deze [sectie](configuring-the-mobile-application-android.md#android-service-httpv1) voor meer informatie.
 
 ![](assets/do-not-localize/how-to-video.png) [Leer hoe u een Android-pushmelding maakt in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=en#additional-resources)
 
