@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 10%
@@ -40,7 +40,7 @@ Complementeren:
 | 19-05-2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 | 22-07-2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
-## Aanbevolen procedures {#best-practices}
+## Best practices {#best-practices}
 
 Tijdens deduplicatie worden inkomende stromen afzonderlijk verwerkt. Als bijvoorbeeld ontvanger A in het resultaat van vraag 1 evenals in het resultaat van vraag 2 wordt gevonden, zullen zij niet worden gededupliceerd.
 
@@ -107,7 +107,7 @@ Als u een deduplicatie wilt configureren, voert u het label, de methode en de cr
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
-## Voorbeeld: Duid de duplicaten vóór een levering {#example--identify-the-duplicates-before-a-delivery} aan
+## Voorbeeld: De duplicaten identificeren vóór levering {#example--identify-the-duplicates-before-a-delivery}
 
 In het volgende voorbeeld betreft de deduplicatie de samenvoeging van drie vragen.
 
