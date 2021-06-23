@@ -6,14 +6,14 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 9703e9d5cf0dba91d3f38d265756bdae69267c28
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '514'
+ht-degree: 97%
 
 ---
 
-# [!DNL Gold Standard]-compatibiliteitsmatrix{#compatibility-matrix-gs}
+# [!DNL Gold Standard] Compatibiliteitsmatrix{#compatibility-matrix-gs}
 
 Dit document bevat een lijst met alle systemen en onderdelen die worden ondersteund voor **Adobe Campaign Classic[!DNL Gold Standard]** 19.1-builds. Producten en versies die geen deel uitmaken van deze lijst, zijn niet compatibel met deze versie van Adobe Campaign.
 
@@ -176,11 +176,6 @@ Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagi
 <p>API-versie 15</p>
 </td>
 </tr>
-<tr><td>Oracle On-demand-API</td>
-<td>
-<p>Web Services v1.0-API</p>
-</td>
-</tr>
 <tr>
 <td>Microsoft Dynamics</td>
 <td>
@@ -271,7 +266,7 @@ Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagi
 
 ## Clientconsole {#ClientConsoleoperatingsystems}
 
-:waarschuwing: de volgende besturingssystemen en browsers zijn vereist om de Campaign-clientconsole te gebruiken.
+:warning: De volgende besturingssystemen en browsers zijn vereist voor het gebruik van de Campagne Client Console.
 
 ### Besturingssystemen
 
