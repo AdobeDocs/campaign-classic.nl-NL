@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;populaire onderwerpen
 product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
+source-git-commit: a9120e2db43fcb035e9760819e9c53148979da4f
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 55%
+source-wordcount: '262'
+ht-degree: 48%
 
 ---
 
@@ -14,9 +14,11 @@ ht-degree: 55%
 
 ![](platform/using/assets/do-not-localize/banner_acc_doc.jpg)
 
-## Wat is nieuw?
+## Nieuwe functies
 
 * **[Release van juni is live!](rn/using/latest-release.md)**<br/> Ontdek nieuwe mogelijkheden, verbeteringen en correcties in de opmerkingen bij de release
+
+* **[Veelgestelde vragen over de bescherming van Apple Mail Privacy ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/apple-mail-privacy-faq.html)**<br/> Veelgestelde vragenAanvankelijke instructies zoeken in reactie op de aankondiging van Apple met betrekking tot iOS 15
 
 * **[Onjuiste harde ](delivery/using/update-bounce-qualification.md)**<br/> grenzen verwijderenLeer hoe u onjuiste harde grenzen kunt bijwerken na een Apple-storing
 
@@ -25,9 +27,6 @@ ht-degree: 55%
 * **[Beveilig uw Campagne ](technotes/acc-config-updates.md)**<br/> instancesUpdate aan recentste bouwt om uw platform van de Campagne te beveiligen
 
 * **[Werk uw Adobe Experience Cloud Triggers-](integrations/using/configuring-adobe-io.md)**<br/> integratie bij. De verouderde Auth-verificatieservice heeft het einde van de levensduur bereikt. Leer hoe u naar Adobe I/O migreert.
-
-* **[Ondersteuning krijgen](support.md)**<br/>
-Krijg toegang tot veelgestelde vragen, best practices en Help-resources en vraag hulp
 
 [Meer updates](/help/rn/using/documentation-updates.md)
 
