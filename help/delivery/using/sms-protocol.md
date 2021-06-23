@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '8433'
 ht-degree: 0%
@@ -38,7 +38,7 @@ SMPP-aanbieders kunnen soms afwijken van de officiële specificaties, maar de SM
 >
 >De vestiging een verbinding aan een nieuwe leverancier kan sommige technische vaardigheden, kennis van TCP, binaire, hexadecimale vertegenwoordiging en tekstcoderingen vereisen. Het zal ook actieve samenwerking met de leverancier vereisen.
 
-### SMS-typen {#sms-types}
+### Typen SMS {#sms-types}
 
 Wanneer u SMS-berichten verzendt via een SMS-provider, worden er drie verschillende soorten SMS-berichten weergegeven:
 
@@ -52,11 +52,11 @@ U moet tussen erkenningen (RESP PDU, een deel van het protocol SMPP) en SR onder
 
 Zowel erkenningen als SR kunnen fouten teweegbrengen, die tussen twee onderscheiden zal helpen het oplossen van problemen.
 
-### Door een SMS verzonden informatie{#information-sms}
+### Informatie die via een SMS wordt verzonden {#information-sms}
 
 Een SMS bevat meer informatie dan tekst. Hier een lijst van wat u in SMS kunt verwachten te vinden:
 
-* De tekst, die is beperkt tot 140 bytes, wat betekent tussen 70 en 160 karakters afhankelijk van de codering. Zie [SMS-tekstcodering](../../delivery/using/sms-protocol.md#sms-text-encoding) hieronder voor details en beperkingen.
+* De tekst, die is beperkt tot 140 bytes, wat betekent tussen 70 en 160 karakters afhankelijk van de codering. Zie [SMS-tekstcodering](sms-protocol.md#sms-text-encoding) hieronder voor details en beperkingen.
 
 * Een ontvankelijk adres, soms genoemd `ADC` of `MSISDN`. Dat is het nummer van de mobiele telefoon die het SMS zal ontvangen.
 
@@ -152,7 +152,7 @@ Deze PDU moet door het systeem worden verzonden alvorens los te maken van. Het m
 
 Als u SMSC in overeenstemming acht, mag de verbinding niet worden gesloten, wordt de TCP-verbinding bestuurd door de Adobe Campaign-connector.
 
-#### SUBMIT_SM {#submit-sm}
+#### VERZENDEN_SM {#submit-sm}
 
 Deze PDU verzendt een MT naar SMSC. Zijn reactie PDU geeft identiteitskaart van MT.
 
@@ -176,7 +176,7 @@ Notable gebieden in een `SUBMIT_SM` PDU:
 
 * **registered_delivery**: geeft aan of een SR is aangevraagd of niet. Adobe Campaign stelt deze markering altijd in, behalve voor automatische reacties. Bij multipart-berichten wordt de markering alleen ingesteld voor het eerste deel. Alle versies hebben hetzelfde gedrag.
 
-* **data_coding**: Hiermee wordt de codering aangegeven die in het tekstveld wordt gebruikt. Zie de sectie [SMS-tekstcodering](../../delivery/using/sms-protocol.md#sms-text-encoding) voor meer informatie.
+* **data_coding**: Hiermee wordt de codering aangegeven die in het tekstveld wordt gebruikt. Zie de sectie [SMS-tekstcodering](sms-protocol.md#sms-text-encoding) voor meer informatie.
 
 * **short_message**: de tekst van het bericht. Als UDH wordt gebruikt, bevat dit ook de UHD-header.
 
@@ -208,7 +208,7 @@ De meeste velden hebben dezelfde betekenis als hun `SUBMIT_SM`-tegenhanger. Hier
 
 * **esm_class**: gebruikt om te bepalen of PDU een MO of een SR is.
 
-* **short_message**: tekst van het bericht. Voor SR bevat dit de gegevens die worden beschreven in aanhangsel B van de specificatie van het SMPP-protocol. Zie [SR-foutbeheer](../../delivery/using/sms-protocol.md#sr-error-management) voor meer informatie.
+* **short_message**: tekst van het bericht. Voor SR bevat dit de gegevens die worden beschreven in aanhangsel B van de specificatie van het SMPP-protocol. Zie [SR-foutbeheer](sms-protocol.md#sr-error-management) voor meer informatie.
 
 Adobe Campaign kan bericht-id lezen in het optionele veld `receipted_message_id` met een bepaalde configuratie.
 
@@ -230,7 +230,7 @@ Deze PDU erkent dat de verbinding levend is.
 
 ### Multipart SMS (lang SMS) {#multipart}
 
-Multipart SMS, of lange SMS, zijn SMS die in veelvoudige delen worden verzonden. Vanwege technische beperkingen in het mobiele netwerkprotocol kan een SMS niet groter zijn dan 140 bytes of moet het worden gesplitst. Zie [SMS-tekstcodering](../../delivery/using/sms-protocol.md#sms-text-encoding) voor meer informatie over het aantal tekens dat in een SMS kan worden gebruikt.
+Multipart SMS, of lange SMS, zijn SMS die in veelvoudige delen worden verzonden. Vanwege technische beperkingen in het mobiele netwerkprotocol kan een SMS niet groter zijn dan 140 bytes of moet het worden gesplitst. Zie [SMS-tekstcodering](sms-protocol.md#sms-text-encoding) voor meer informatie over het aantal tekens dat in een SMS kan worden gebruikt.
 
 Elk deel van een lang bericht is een individueel SMS. Deze onderdelen reizen onafhankelijk op het netwerk en worden door de ontvangende mobiele telefoon gemonteerd. Om herpogingen en connectiviteitsproblemen te behandelen, verzendt Adobe Campaign deze delen in omgekeerde orde en verzoekt slechts om SR op het eerste deel van het bericht, het laatst verzonden. Aangezien de mobiele telefoon alleen een bericht weergeeft wanneer het eerste deel ervan is ontvangen, worden bij nieuwe pogingen op extra onderdelen geen duplicaten op de mobiele telefoon gegenereerd.
 
@@ -242,15 +242,15 @@ Er zijn twee manieren om lange SMS te verzenden:
 
 * **message_payload**: de manier om de hele lange boodschap in één keer te verzenden  `SUBMIT_SM PDU`. De aanbieder moet het opsplitsen, wat betekent dat het voor Adobe Campaign onmogelijk is precies te weten hoeveel onderdelen zijn verzonden. Sommige providers vereisen deze modus, maar we raden u aan deze alleen te gebruiken als ze UDH niet ondersteunen.
 
-Zie de beschrijving van `esm_class`, `short_message` en `message_payload` gebieden van [SUBMIT_SM PDU](../../delivery/using/sms-protocol.md#information-pdu) voor meer details over het protocol en formaten.
+Zie de beschrijving van `esm_class`, `short_message` en `message_payload` gebieden van [SUBMIT_SM PDU](sms-protocol.md#information-pdu) voor meer details over het protocol en formaten.
 
-### Omtrekkader en venster {#throughput-capping}
+### Vastzetten en ramen van doorvoer {#throughput-capping}
 
-De meeste leveranciers vereisen een productielimiet voor elke verbinding SMPP. Dit kan worden bereikt door een aantal SMS in te stellen in de externe account. Merk op dat de productiesnelheid per verbinding gebeurt, is de totale efficiënte productie de grens per verbinding vermenigvuldigd met het totale aantal verbindingen. Dit wordt beschreven in de [sectie Gelijktijdige verbindingen](../../delivery/using/sms-protocol.md#connection-settings).
+De meeste leveranciers vereisen een productielimiet voor elke verbinding SMPP. Dit kan worden bereikt door een aantal SMS in te stellen in de externe account. Merk op dat de productiesnelheid per verbinding gebeurt, is de totale efficiënte productie de grens per verbinding vermenigvuldigd met het totale aantal verbindingen. Dit wordt beschreven in de [sectie Gelijktijdige verbindingen](sms-protocol.md#connection-settings).
 
-Om maximum mogelijke productie te bereiken, zult u het maximum verzendende venster moeten verfijnen. Het verzendende venster is het aantal `SUBMIT_SM PDU`s dat zonder het wachten op `SUBMIT_SM_RESP` kan worden verzonden. Zie de sectie [Venster verzenden als instelling](../../delivery/using/sms-protocol.md#throughput-timeouts) voor meer informatie.
+Om maximum mogelijke productie te bereiken, zult u het maximum verzendende venster moeten verfijnen. Het verzendende venster is het aantal `SUBMIT_SM PDU`s dat zonder het wachten op `SUBMIT_SM_RESP` kan worden verzonden. Zie de sectie [Venster verzenden als instelling](sms-protocol.md#throughput-timeouts) voor meer informatie.
 
-### SR en foutenbeheer (&quot;Bijlage B&quot;) {#sr-error-management}
+### SR- en foutbeheer (&quot;Bijlage B&quot;) {#sr-error-management}
 
 Het protocol SMPP bepaalt standaard synchrone fouten in `RESP PDU`s, maar het bepaalt geen foutencodes voor SR. Elke provider gebruikt zijn eigen foutcodes met hun betekenis.
 
@@ -267,7 +267,7 @@ Wanneer een SR wordt ontvangen, kunnen de status en de fout in zijn `short_messa
 
 Adobe Campaign Classic-connectors (met uitzondering van Extended SMPP) gebruiken een gehard gedrag dat afhankelijk is van de geselecteerde provider. Algemene SMPP maakt alleen onderscheid tussen succes en fout, zonder detail. Het leveringslogboek kan bepaalde informatie bevatten die niet gegarandeerd is.
 
-#### Indeling van SR-tekstveld {#sr-text-field-format}
+#### Indeling van tekstveld SR {#sr-text-field-format}
 
 De specificatie raadt u aan deze indeling te gebruiken voor het tekstveld SR. Het is een lijst van subvelden, spaties gescheiden met een dubbele punt om de veldnaam en de waarde ervan te scheiden. Veldnamen zijn niet hoofdlettergevoelig.
 
@@ -354,10 +354,10 @@ De maximumgrootte van een bericht hangt van zijn codering af. In deze tabel word
 | Codering | Gebruikelijke gegevens_codering | Berichtgrootte (tekens) | Onderdeelformaat voor SMS met meerdere onderdelen | Beschikbare tekens |
 |:-:|:-:|:-:|:-:|:-:|
 | GSM7 | 0 | 160 | 152 | GSM7 basis tekenset + extensie (uitgebreide tekens nemen 2 tekens in beslag) |
-| Latin-1 | 3 | 140 | 134 | ISO-8859-1 |
+| Latin-1 | 1 | 140 | 134 | ISO-8859-1 |
 | UCS-2 <br>UTF-16 | 8 | 70 | 67 | Unicode (verschilt per telefoon) |
 
-## SMPP-parameters voor externe account {#SMPP-parameters-external}
+## SMPP-parameters voor externe accounts {#SMPP-parameters-external}
 
 Elke implementatie van het protocol SMPP heeft vele variaties. Om de compatibiliteit en het aanpassingsvermogen te verbeteren, zijn er veel instellingen beschikbaar om het gedrag van de SMPP-connector te wijzigen. Deze sectie beschrijft elke parameter en zijn gevolgen op de schakelaar.
 
@@ -367,7 +367,7 @@ Elke implementatie van het protocol SMPP heeft vele variaties. Om de compatibili
 
 Het is mogelijk om een grens aan het aantal MTA instanties te plaatsen die met de leverancier SMPP mogen verbinden. Wanneer gecontroleerd, kunt u specificeren hoeveel MTAs maximaal kan worden gebruikt.
 
-Met deze optie kunt u het aantal verbindingen nauwkeuriger bepalen. Zie [Gelijktijdige verbindingen](../../delivery/using/sms-protocol.md#connection-settings).
+Met deze optie kunt u het aantal verbindingen nauwkeuriger bepalen. Zie [Gelijktijdige verbindingen](sms-protocol.md#connection-settings).
 
 Als u een waarde hoger dan het aantal lopende MTAs plaatst, zullen alle MTAs normaal lopen: deze optie is slechts een limiet en kan geen extra MTA&#39;s kweken.
 
@@ -375,9 +375,9 @@ Als u het aantal verbindingen, b.v. leveranciersvereiste moet nauwkeurig control
 
 ### Verbindingsinstellingen {#connection-settings}
 
-#### SMSC-implementatienaam {#smsc-implementation-name}
+#### Naam SMSC-implementatie {#smsc-implementation-name}
 
-Hier geeft u de naam van de SMSC-implementatie op. U moet de naam van de provider instellen. Neem contact op met de beheerder of het leveringsteam om te weten wat u in dit veld wilt toevoegen. De rol van dit gebied wordt beschreven in [SR foutenbeheer](../../delivery/using/sms-protocol.md#sr-error-management) sectie.
+Hier geeft u de naam van de SMSC-implementatie op. U moet de naam van de provider instellen. Neem contact op met de beheerder of het leveringsteam om te weten wat u in dit veld wilt toevoegen. De rol van dit gebied wordt beschreven in [SR foutenbeheer](sms-protocol.md#sr-error-management) sectie.
 
 #### Server {#server}
 
@@ -399,7 +399,7 @@ Wachtwoord van de SMPP-verbinding. Wordt doorgegeven in het wachtwoordveld van d
 
 Waarde die in het `system_id` gebied van de BIND PDU wordt overgegaan. Sommige providers hebben hier een specifieke waarde nodig.
 
-#### Aantal onderliggende MTA-verbindingen {#number-mta-child}
+#### Aantal MTA kindverbindingen {#number-mta-child}
 
 In Adobe Campaign Classic wordt het aantal verbindingen per MTA-onderliggend item gedefinieerd.
 
@@ -419,7 +419,7 @@ Als u opstelling automatische antwoorden, zal het proces van SMS zenders/ontvang
 
 Gebruik TLS om verbinding te maken met de provider. De verbinding wordt versleuteld. De TLS-verbinding wordt beheerd door de OpenSSL-bibliotheek en alles wat op OpenSSL van toepassing is, geldt voor deze verbinding.
 
-#### Brede SMPP-sporen inschakelen in logbestand {#enable-verbose-log-file}
+#### Brede SMPP-sporen inschakelen in het logbestand {#enable-verbose-log-file}
 
 Deze instelling dumpt al SMPP-verkeer in logbestanden. Het wordt vaak vereist om parameters tijdens aanvankelijke opstelling aan te passen. Dit moet worden toegelaten wanneer het oplossen van problemen de schakelaar en vergeleken met het verkeer dat door de leverancier wordt gezien.
 
@@ -441,7 +441,7 @@ Deze instellingen zijn van toepassing op de ontvanger in de modus zender+ontvang
 
 ### SMPP-kanaalinstellingen {#smpp-channel-settings}
 
-#### Tekentransliteratie {#allow-character-transliteration} toestaan
+#### Tekentransliteratie toestaan {#allow-character-transliteration}
 
 Transliteratie is het zoeken naar tekens die equivalent zijn aan ontbrekende tekens. Het Franse &quot;ê&quot;-teken (e met omstreeks accent) ontbreekt bijvoorbeeld in GSM-codering, maar kan worden vervangen door &quot;e&quot; zonder dat dit de leesbaarheid nadelig beïnvloedt.
 
@@ -449,7 +449,7 @@ Als dit selectievakje is uitgeschakeld, mislukt de tekstcodering als de tekenree
 
 Als dit selectievakje is ingeschakeld, probeert de tekstcodering de tekenreeks om te zetten in een versie die bij benadering overeenkomt in plaats van te mislukken. Als sommige tekens geen equivalent hebben in de doelcodering, mislukt de tekstcodering.
 
-Zie [Een specifieke toewijzing van coderingsinstellingen definiëren](../../delivery/using/sms-protocol.md#SMSC-specifics) voor een meer algemene uitleg van het coderingsproces.
+Zie [Een specifieke toewijzing van coderingsinstellingen definiëren](sms-protocol.md#SMSC-specifics) voor een meer algemene uitleg van het coderingsproces.
 
 #### Inkomende MO opslaan in de database {#incoming-mo-storing}
 
@@ -483,7 +483,7 @@ Het opgeven van korte code is handig voor twee functies:
 
 * De lijst van gewezen personen die van de auto antwoordeigenschap plaatst verzendt slechts naar quarantaine de gebruiker voor een specifieke korte code.
 
-#### Bron TON/NPI, TON/NPI bestemming {#ton-npi}
+#### TON/NPI-bron, TON/NPI bestemming {#ton-npi}
 
 TON (Type van Aantal) en NPI (de Indicator van het Nummeringsplan) worden beschreven in sectie 5.2.5 van [SMPP 3.4 specificatie](https://smpp.org/SMPP_v3_4_Issue1_2.pdf) (pagina 117). Deze waarden moeten op de behoeften van de leverancier worden ingesteld.
 
@@ -497,7 +497,7 @@ Dit veld wordt &#39;as-is&#39; verzonden in het veld `service_type` van `SUBMIT_
 
 Deze montages controleren alle timingsaspecten van het kanaal SMPP. Sommige leveranciers vereisen zeer nauwkeurige controle van het berichttarief, venster en retry timings. Deze instellingen moeten worden ingesteld op waarden die overeenkomen met de capaciteit van de aanbieder en de voorwaarden die in het contract zijn vermeld.
 
-#### Venster {#sending-window} verzenden
+#### Venster verzenden {#sending-window}
 
 Het venster is het aantal `SUBMIT_SM PDU`s dat kan worden verzonden zonder te wachten op een overeenkomst `SUBMIT_SM_RESP`.
 
@@ -527,7 +527,7 @@ Om de totale productielimiet te kennen, vermenigvuldig dit aantal met het totale
 
 Over het algemeen wordt aanbevolen deze instelling onder de 1000 te houden, aangezien het onmogelijk is een exacte doorvoer boven dit aantal te garanderen, tenzij deze op de uiteindelijke architectuur is gebaseerd en specifiek om een SMPP-leverancier is verzocht. Het kan beter zijn om het aantal verbindingen te verhogen om boven 1000 MT/s te gaan.
 
-#### Tijd voor opnieuw verbinden {#time-reconnection}
+#### Tijd vóór opnieuw verbinden {#time-reconnection}
 
 Wanneer de verbinding van TCP wordt verloren, zal de schakelaar dit aantal seconden wachten alvorens te proberen om een verbinding te maken.
 
@@ -549,7 +549,7 @@ Deze instellingen zijn geavanceerde instellingen die de Adobe Campaign-aansluiti
 
 **Een specifieke toewijzing van coderingen definiëren**
 
-Zie de sectie [SMS-tekstcodering](../../delivery/using/sms-protocol.md#sms-text-encoding) voor meer informatie over tekstcodering.
+Zie de sectie [SMS-tekstcodering](sms-protocol.md#sms-text-encoding) voor meer informatie over tekstcodering.
 
 Met deze instelling kunt u een aangepaste coderingstoewijzing definiëren die afwijkt van de specificatie. U kunt een lijst met coderingen declareren, samen met de waarde `data_coding`.
 
@@ -572,15 +572,15 @@ Dit betekent dat de MTA zal proberen de boodschap in GSM te coderen. Als het sla
 
 Als het bericht niet in GSM kan worden gecodeerd, zal het in UCS-2 worden gecodeerd en zal `data_coding` aan 8 plaatsen.
 
-#### message_payload {#enable-message-payload} inschakelen
+#### message_payload inschakelen {#enable-message-payload}
 
 Als deze optie is uitgeschakeld, wordt lange SMS gesplitst door de MTA en verzonden in meerdere `SUBMIT_SM PDU`s met UDH. Het bericht wordt opnieuw samengesteld door de mobiele telefoon na UDH-gegevens.
 
-Wanneer gecontroleerd, lange SMS zal in één SUBMIT_SM PDU worden verzonden, die de tekst in het bericht_payload facultatieve gebied zetten. Zie de [SMPP specificatie](../../delivery/using/sms-protocol.md#ACS-SMPP-connector) voor details over dit.
+Wanneer gecontroleerd, lange SMS zal in één SUBMIT_SM PDU worden verzonden, die de tekst in het bericht_payload facultatieve gebied zetten. Zie de [SMPP specificatie](sms-protocol.md#ACS-SMPP-connector) voor details over dit.
 
 Als deze functie is ingeschakeld, kan Adobe Campaign de SMS-onderdelen niet afzonderlijk tellen: alle berichten worden als verzonden in één deel geteld .
 
-#### Verzend het volledige telefoonaantal {#send-full-phone-number}
+#### Het volledige telefoonnummer verzenden {#send-full-phone-number}
 
 Als dit selectievakje niet is ingeschakeld, worden alleen cijfers van het telefoonnummer verzonden naar de provider (`destination_addr` veld van het veld `SUBMIT_SM`). Dit is het standaardgedrag aangezien de internationale aantalindicator, gewoonlijk a + prefix, door TON en NPI gebieden in SMPP wordt vervangen.
 
@@ -588,7 +588,7 @@ Als het selectievakje is ingeschakeld, wordt het telefoonnummer ongewijzigd verz
 
 Deze functie heeft ook een effect op het gedrag van de functie lijst van gewezen personen voor automatisch reageren: wanneer checkbox niet wordt gecontroleerd, zal a + prefix aan telefoonaantallen worden toegevoegd die in de quarantainelijst worden opgenomen om te compenseren + prefix die van het telefoonaantal door het protocol SMPP zelf wordt verwijderd.
 
-#### Controle van TLS-certificaat overslaan {#skip-tls}
+#### TLS-certificaatcontrole overslaan {#skip-tls}
 
 Wanneer TLS is ingeschakeld, slaat u alle certificaatcontroles over.
 
@@ -602,7 +602,7 @@ U kunt kiezen uit drie verschillende waarden voor de certificaatvalidatie:
 * De verificatie van de hostnaam overslaan.
 * Sla de verificatie van het certificaat over.
 
-#### Bind TON/NPI {#bind-ton-npi}
+#### Binden TON/NPI {#bind-ton-npi}
 
 TON (Type van Aantal) en NPI (Indicator van het Nummeringsplan) beschreven in paragraaf 5.2.5 van de [SMPP 3.4 specificatie](https://smpp.org/SMPP_v3_4_Issue1_2.pdf) (pagina 117). Deze waarden moeten worden ingesteld op wat de provider nodig heeft.
 
@@ -612,7 +612,7 @@ Zij worden overgebracht zoals-is in `addr_ton` en `addr_npi` gebieden van BIND P
 
 Verzonden as-is op het address_range gebied van BIND PDU. Deze waarde moet worden ingesteld op wat de provider nodig heeft.
 
-#### Aantal ongeldige id-erkenning {#invalid-id}
+#### Aantal voor ongeldige id-erkenning {#invalid-id}
 
 Beperkt het aantal **Bericht ID ongeldig** `DELIVER_SM_RESP` dat voor één enkele SR kan worden verzonden.
 
@@ -640,7 +640,7 @@ Als u dit veld instelt op 1, reageert de connector altijd op OK, zelfs als de id
 
 #### Extractieregex van de id in de SR {#regex-extraction}
 
-SR-indeling wordt niet strikt afgedwongen door de specificatie van het SMPP-protocol. Dit is slechts een aanbeveling die wordt beschreven in [Aanhangsel B](../../delivery/using/sms-protocol.md#sr-error-management) (pagina 167) van het productdossier. Sommige implementatoren van SMPP formatteren dit gebied verschillend, zodat heeft Adobe Campaign een manier nodig om het correcte gebied te halen.
+SR-indeling wordt niet strikt afgedwongen door de specificatie van het SMPP-protocol. Dit is slechts een aanbeveling die wordt beschreven in [Aanhangsel B](sms-protocol.md#sr-error-management) (pagina 167) van het productdossier. Sommige implementatoren van SMPP formatteren dit gebied verschillend, zodat heeft Adobe Campaign een manier nodig om het correcte gebied te halen.
 
 Standaard worden maximaal 10 alfanumerieke tekens na `id:` vastgelegd.
 
@@ -650,13 +650,13 @@ Wanneer u deze instelling aanpast, moet u zoveel mogelijk context opnemen om onj
 
 Als u niet genoeg context in de regex opneemt, kan er een klein veiligheidsprobleem ontstaan: de feitelijke inhoud van het bericht kan in de SR worden opgenomen. Als u alleen een specifieke id-indeling aanpast zonder context, bijvoorbeeld een UUID, wordt de werkelijke tekstinhoud mogelijk geparseerd, bijvoorbeeld een UUID die is ingesloten in het tekstveld, in plaats van de ID.
 
-#### Regex toegepast om succesvolle/foutenstatus {#regex-applied} te bepalen
+#### Regex is toegepast om de status van geslaagd/fout te bepalen {#regex-applied}
 
 Wanneer berichten met een onbekende stat/err gebiedscombinatie worden ontmoet, worden deze regex toegepast op het staatsgebied om te bepalen of SR een succes of een fout was. SR met statuswaarden die niet overeenkomen met een van deze regexes wordt genegeerd.
 
-Stelt standaard waarden in die met `DELIV` beginnen, bijvoorbeeld `DELIVRD` in [Bijlage B](../../delivery/using/sms-protocol.md#sr-error-management) wordt beschouwd als succesvol afgeleverd en alle statuswaarden die overeenkomen met fouten, bijvoorbeeld `REJECTED`, `UNDELIV`, worden beschouwd als fouten.
+Stelt standaard waarden in die met `DELIV` beginnen, bijvoorbeeld `DELIVRD` in [Bijlage B](sms-protocol.md#sr-error-management) wordt beschouwd als succesvol afgeleverd en alle statuswaarden die overeenkomen met fouten, bijvoorbeeld `REJECTED`, `UNDELIV`, worden beschouwd als fouten.
 
-#### Id-indeling in MT-bevestiging {#id-format-mt}
+#### ID-indeling in MT-bevestiging {#id-format-mt}
 
 Dit geeft de indeling van de id aan die wordt geretourneerd in het veld `message_id` van `SUBMIT_SM_RESP PDU`.
 
@@ -734,7 +734,7 @@ De **Aanvullende actie** kolom verstrekt een extra actie wanneer zowel **Trefwoo
 
 Alle items in de tabel worden in de opgegeven volgorde verwerkt, totdat één regel overeenkomt. Als de veelvoudige regels een MO aanpassen, slechts zal de hoogste regel worden toegepast.
 
-## Sjabloonparameters voor SMS-verzending {#sms-delivery-template-parameters}
+## Sjabloonparameters voor verzending via SMS {#sms-delivery-template-parameters}
 
 Sommige parameters kunnen per leveringsmalplaatje worden geplaatst.
 
@@ -774,7 +774,7 @@ Deze instelling wordt verzonden in het optionele veld `dest_addr_subunit` in `SU
 
 De geldigheidsperiode wordt doorgegeven in het veld `validity_period` van `SUBMIT_SM PDU`. De datum wordt altijd opgemaakt als een absolute UTC-tijdnotatie. Het datumveld eindigt met &quot;00+&quot;.
 
-## Uitgebreide algemene SMPP-aansluiting {#acc-extended-connector}
+## Uitgebreide algemene SMPP-connector {#acc-extended-connector}
 
 ![](assets/do-not-localize/sms_protocol_4.png)
 
@@ -784,7 +784,7 @@ Wanneer het verzenden van leveringsdelen, paait MTA kinderen MTA. Het aantal MTA
 
 Het proces van SMS verwerkt slechts SR, het verbindt met de leverancier en verlaat de verbinding open. Het proces verbindt opnieuw om de 10 minuten om nieuwe montages opnieuw te laden, dit is normale verrichting.
 
-### Overeenkomende MT-, SR- en Broadlog-items {#matching-mt}
+### Overeenkomende MT-, SR- en Broadlog-vermeldingen {#matching-mt}
 
 Een tussenliggende tabel `nmsProviderMsgId` wordt gebruikt om MT- en SR-gegevens tijdelijk op te slaan voordat deze asynchroon worden toegewezen aan de broadlog.
 
@@ -820,7 +820,7 @@ Controleer of je geen oude externe SMS-accounts hebt. Als u de testaccount uitsc
 
 Als u meerdere accounts op dezelfde Adobe Campaign-instantie hebt die verbinding maken met dezelfde provider, neemt u contact op met de provider om ervoor te zorgen dat ze daadwerkelijk een onderscheid maken tussen deze accounts. Voor meerdere accounts met dezelfde aanmelding is een extra configuratie vereist.
 
-### Brede SMPP-sporen inschakelen tijdens controles {#enable-verbose}
+### Brede SMPP-sporen tijdens controles inschakelen {#enable-verbose}
 
 U zou uitgebreide sporen SMPP tijdens controles altijd moeten toelaten.
 Zelfs als u de logbestanden niet zelf kunt controleren, is het voor [Adobe Customer Care](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) eenvoudiger om u te helpen.
@@ -842,7 +842,7 @@ verwerktAls u MO moet verwerken (automatische reacties, MO-opslag in de database
 Controleer in het logbestand dat Adobe Campaign met succes heeft beantwoord 
 `DELIVER_SM_RESP` (command_status=0).
 
-### PDU&#39;s {#check-pdus} controleren
+### PDU&#39;s controleren {#check-pdus}
 
 Zelfs als de berichten succesvol kijken, is het belangrijk om te controleren dat PDUs behoorlijk geformatteerd is.
 
@@ -852,7 +852,7 @@ Deze stap is nodig wanneer u verbinding maakt met een provider die nog niet eerd
 
 Controleer of `BIND_* PDUs` correct is verzonden. Het belangrijkste te controleren ding is dat de leverancier altijd succesvol `BIND_*_RESP PDUs` (command_status = 0) terugkeert.
 
-Controleer of er niet te veel `BIND_* PDU`s zijn. Als er te veel zijn, zou het erop kunnen wijzen dat de verbinding instabiel is. Zie [Problemen met instabiele verbindingen](../../delivery/using/sms-protocol.md#issues-unstable-connection) voor meer informatie.
+Controleer of er niet te veel `BIND_* PDU`s zijn. Als er te veel zijn, zou het erop kunnen wijzen dat de verbinding instabiel is. Zie [Problemen met instabiele verbindingen](sms-protocol.md#issues-unstable-connection) voor meer informatie.
 
 #### INQUIRE_LINK {#enquire-link-pdus}
 
