@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 0%
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 De malplaatjes van de levering staan voor verhoogde efficiency toe door kant-en-klare scenario&#39;s voor de meeste gemeenschappelijke soorten activiteiten te verstrekken. Met malplaatjes, kunnen de marketers nieuwe campagnes met minimale aanpassing in een kortere hoeveelheid tijd opstellen.
 
-Meer informatie over leveringssjablonen vindt u in [deze sectie](../../delivery/using/creating-a-delivery-template.md).
+Meer informatie over leveringssjablonen vindt u in [deze sectie](creating-a-delivery-template.md).
 
 ## Aan de slag met leveringssjablonen {#gs-templates}
 
-Met een [leveringssjabloon](../../delivery/using/creating-a-delivery-template.md) kunt u één keer een set technische en functionele eigenschappen definiëren die aan uw behoeften voldoen en die opnieuw kunnen worden gebruikt voor toekomstige leveringen. U kunt dan tijd besparen en leveringen standaardiseren wanneer dat nodig is.
+Met een [leveringssjabloon](creating-a-delivery-template.md) kunt u één keer een set technische en functionele eigenschappen definiëren die aan uw behoeften voldoen en die opnieuw kunnen worden gebruikt voor toekomstige leveringen. U kunt dan tijd besparen en leveringen standaardiseren wanneer dat nodig is.
 
 Als u meerdere merken beheert in Adobe Campaign, raadt Adobe aan één subdomein per merk te hebben. Een bank kan bijvoorbeeld verschillende subdomeinen hebben die overeenkomen met elk van haar regionale agentschappen. Als een bank eigenaar is van het domein bluebank.com, kunnen de subdomeinen @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com, enz. zijn. Als u één leveringssjabloon per subdomein hebt, kunt u altijd de juiste vooraf geconfigureerde parameters voor elk merk gebruiken. Hierdoor worden fouten voorkomen en bespaart u tijd.
 
@@ -40,7 +40,7 @@ Als u meerdere merken beheert in Adobe Campaign, raadt Adobe aan één subdomein
 
 Voer de onderstaande stappen uit om adressen in de Campagne-interface te configureren:
 
-1. Klik in de [leveringssjabloon](../../delivery/using/creating-a-delivery-template.md) op de koppeling **[!UICONTROL From]**. Vul in het venster **[!UICONTROL Email header parameters]** de volgende velden in:
+1. Klik in de [leveringssjabloon](creating-a-delivery-template.md) op de koppeling **[!UICONTROL From]**. Vul in het venster **[!UICONTROL Email header parameters]** de volgende velden in:
 
    ![](assets/d_best_practices_email_header.png)
 
