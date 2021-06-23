@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 3%
@@ -19,7 +19,7 @@ De Adobe Campaign Content Manager-module is een specifiek ingebouwd Campaign Cla
 
 >[!NOTE]
 >
->In deze sectie wordt verwezen naar de module Inhoudsbeheer. Raadpleeg [deze sectie](../../delivery/using/defining-the-email-content.md) voor meer informatie over het ontwerpen van inhoud voor e-mailleveringen.
+>In deze sectie wordt verwezen naar de module Inhoudsbeheer. Raadpleeg [deze sectie](defining-the-email-content.md) voor meer informatie over het ontwerpen van inhoud voor e-mailleveringen.
 
 De module Inhoudsbeheer bevat de functionaliteit voor werkgroepen, werkstromen en aggregatie van inhoud. Hierdoor kan een bericht automatisch worden opgemaakt: e-mail, post, SMS, web, enz.
 
