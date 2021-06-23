@@ -5,14 +5,14 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 24%
 
 ---
 
-# Best practices voor leveringen {#delivery-best-practices}
+# Best practices voor verzending {#delivery-best-practices}
 
 Leer beste praktijken met betrekking tot leveringsontwerp en verzendend met Adobe Campaign. Gebruik de onderstaande koppelingen om door onderwerpen te navigeren en hulp te zoeken.
 
@@ -103,8 +103,8 @@ Leer beste praktijken met betrekking tot leveringsontwerp en verzendend met Adob
 
 Zie ook:
 
-* [Aan de slag met de prestaties](../../delivery/using/about-deliverability.md)
+* [Aan de slag met de prestaties](about-deliverability.md)
 
-* [Stappen voor het maken van leveringen](../../delivery/using/steps-about-delivery-creation-steps.md)
+* [Stappen voor het maken van leveringen](steps-about-delivery-creation-steps.md)
 
 * [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html)
