@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 3%
@@ -92,7 +92,7 @@ Alle leveringen die waren voorbereid voordat uw instantie werd geüpgraded om de
 
 Voor klanten die de functionaliteit van het de transactieoverseinen van Adobe Campaign gebruiken, zullen om het even welke API vraag om een e-mail teweeg te brengen tijdens de zeer korte verbeteringsonderbreking in de rij worden geplaatst en zullen na voltooiing van de verbetering worden geprobeerd.
 
-## Verbeterde specifieke kenmerken voor MTA {#enhanced-mta-impacts}
+## Verbeterde specifieke kenmerken van MTA {#enhanced-mta-impacts}
 
 ### Verbeterde MTA-headers
 
@@ -129,7 +129,7 @@ De stuiterkwalificaties in de tabel Campagne **[!UICONTROL Delivery log qualific
 >
 >Verbeterde MTA kwalificeert de stuit SMTP en verzendt die kwalificatie terug naar Campagne in de vorm van een stuitercode die aan een de stuiteringsreden en kwalificatie van de Campagne in kaart wordt gebracht.
 
-Zie [deze sectie](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) voor meer informatie over stuitkwalificatie.
+Zie [deze sectie](understanding-delivery-failures.md#bounce-mail-qualification) voor meer informatie over stuitkwalificatie.
 
 ### Leveringsdoorvoer
 
@@ -145,7 +145,7 @@ Bijvoorbeeld, als de geldigheidsperiode aan de standaardwaarde van 5 dagen in Ca
 
 Wanneer een bericht gedurende 3,5 dagen in de wachtrij van de Enhanced MTA heeft gestaan en niet is geleverd, treedt er een time-out op en zal de status van het bericht worden bijgewerkt van **[!UICONTROL Sent]** naar **[!UICONTROL Failed]** in de leveringslogboeken.
 
-Zie [deze sectie](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period) voor meer informatie over de geldigheidsperiode.
+Zie [deze sectie](steps-sending-the-delivery.md#defining-validity-period) voor meer informatie over de geldigheidsperiode.
 
 ### DKIM-ondertekening
 
@@ -154,13 +154,13 @@ Voor meer op DKIM, zie [de Gids van de Beste praktijken van de Levering van de A
 
 ### Leveringssuccesrapportage
 
-In **[!UICONTROL Summary]** mening van een e-maillevering [dashboard](../../delivery/using/delivery-dashboard.md), begint **[!UICONTROL Success]** percentage bij 100% en gaat dan geleidelijk door de levering [geldigheidsperiode ](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period), aangezien de zachte en harde grenzen van Verbeterde MTA aan Campagne worden gemeld.
+In **[!UICONTROL Summary]** mening van een e-maillevering [dashboard](delivery-dashboard.md), begint **[!UICONTROL Success]** percentage bij 100% en gaat dan geleidelijk door de levering [geldigheidsperiode ](steps-sending-the-delivery.md#defining-validity-period), aangezien de zachte en harde grenzen van Verbeterde MTA aan Campagne worden gemeld.
 
-Alle berichten worden namelijk als **[!UICONTROL Sent]** weergegeven in de [verzendende logbestanden](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) zodra deze zijn afgespeeld vanuit Campagne naar de Enhanced MTA. Zij blijven in die status tenzij of tot een [bounce](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) voor dat bericht wordt meegedeeld terug van Verbeterde MTA aan Campagne.
+Alle berichten worden namelijk als **[!UICONTROL Sent]** weergegeven in de [verzendende logbestanden](delivery-dashboard.md#delivery-logs-and-history) zodra deze zijn afgespeeld vanuit Campagne naar de Enhanced MTA. Zij blijven in die status tenzij of tot een [bounce](understanding-delivery-failures.md#delivery-failure-types-and-reasons) voor dat bericht wordt meegedeeld terug van Verbeterde MTA aan Campagne.
 
 Wanneer hard-bouncing berichten van Verbeterde MTA worden gemeld, verandert hun status van **[!UICONTROL Sent]** in **[!UICONTROL Failed]** en **[!UICONTROL Success]** percentage dienovereenkomstig wordt verminderd.
 
-Wanneer de soft-bouncing berichten terug van Verbeterde MTA worden gemeld, tonen zij nog als **[!UICONTROL Sent]** en **[!UICONTROL Success]** percentage wordt nog niet bijgewerkt. Zachte berichten worden dan [opnieuw geprobeerd](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) door de periode van de leveringsgeldigheid:
+Wanneer de soft-bouncing berichten terug van Verbeterde MTA worden gemeld, tonen zij nog als **[!UICONTROL Sent]** en **[!UICONTROL Success]** percentage wordt nog niet bijgewerkt. Zachte berichten worden dan [opnieuw geprobeerd](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) door de periode van de leveringsgeldigheid:
 
 * Als een nieuwe poging voor het eind van de geldigheidsperiode succesvol is, blijft de berichtstatus zoals **[!UICONTROL Sent]** en **[!UICONTROL Success]** percentage blijft onveranderd.
 
@@ -192,7 +192,7 @@ Wanneer het bericht eigenlijk aan de gerichte profielen wordt geleverd en zodra 
 
 Wanneer hard-stuiterende berichten van Verbeterde MTA worden gemeld, verandert hun logboekstatus van **[!UICONTROL Taken into account by the service provider]** in **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
-Wanneer de zachte die berichten terug van Verbeterde MTA worden gemeld, blijft hun logboekstatus onveranderd (**[!UICONTROL Taken into account by the service provider]**): alleen de [error reason](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) wordt bijgewerkt<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. Het percentage **[!UICONTROL Success]** blijft ongewijzigd. Zachte berichten worden dan opnieuw geprobeerd door de levering [geldigheidsperiode](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period):
+Wanneer de zachte die berichten terug van Verbeterde MTA worden gemeld, blijft hun logboekstatus onveranderd (**[!UICONTROL Taken into account by the service provider]**): alleen de [error reason](understanding-delivery-failures.md#delivery-failure-types-and-reasons) wordt bijgewerkt<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. Het percentage **[!UICONTROL Success]** blijft ongewijzigd. Zachte berichten worden dan opnieuw geprobeerd door de levering [geldigheidsperiode](steps-sending-the-delivery.md#defining-validity-period):
 
 * Als een nieuwe poging vóór het eind van de geldigheidsperiode succesvol is, verandert de berichtstatus in **[!UICONTROL Sent]** en **[!UICONTROL Success]** percentage wordt dienovereenkomstig verhoogd.
 
@@ -200,9 +200,9 @@ Wanneer de zachte die berichten terug van Verbeterde MTA worden gemeld, blijft h
 
 >[!NOTE]
 >
->Zie [deze sectie](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) voor meer informatie over harde en zachte grenzen.
+>Zie [deze sectie](understanding-delivery-failures.md#delivery-failure-types-and-reasons) voor meer informatie over harde en zachte grenzen.
 >
->Zie [deze sectie](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) voor meer informatie over pogingen na een tijdelijke leveringsfout.
+>Zie [deze sectie](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) voor meer informatie over pogingen na een tijdelijke leveringsfout.
 
 
 De lijsten hieronder tonen de veranderingen in KPIs en het verzenden van logboekstatussen die door het vermogen EFS worden geïntroduceerd.
