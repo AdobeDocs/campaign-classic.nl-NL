@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 7%
@@ -14,18 +14,18 @@ ht-degree: 7%
 
 # Gepersonaliseerde content maken {#build-personalized-content}
 
-Probeer bij het ontwerpen van de inhoud van uw bericht algemene problemen te vermijden die ertoe kunnen leiden dat u de levering niet kunt uitvoeren. Meestal hebben mogelijke fouten betrekking op [personalisatie](../../delivery/using/about-personalization.md), [formatteren](../../delivery/using/defining-the-email-content.md#message-content) en [afbeeldingen](../../delivery/using/defining-the-email-content.md#adding-images).
+Probeer bij het ontwerpen van de inhoud van uw bericht algemene problemen te vermijden die ertoe kunnen leiden dat u de levering niet kunt uitvoeren. Meestal hebben mogelijke fouten betrekking op [personalisatie](about-personalization.md), [formatteren](defining-the-email-content.md#message-content) en [afbeeldingen](defining-the-email-content.md#adding-images).
 
 ## Aanpassing optimaliseren {#optimize-personalization}
 
 Om veelvoorkomende problemen te voorkomen die ertoe kunnen leiden dat u uw levering niet kunt uitvoeren en om de ervaring van uw ontvangers te verbeteren, kunt u uw berichten aan uw persoonlijke voorkeur aanpassen.
 
 U kunt de gegevens van ontvangers gebruiken die in de Adobe Campaign-database zijn opgeslagen, of die worden verzameld via tracking, landing pages, subscriptions, etc.
-De grondbeginselen van de aanpassing worden voorgesteld in [deze sectie](../../delivery/using/personalization-fields.md).
+De grondbeginselen van de aanpassing worden voorgesteld in [deze sectie](personalization-fields.md).
 
 Zorg ervoor dat de inhoud van uw bericht goed is ontworpen om fouten te voorkomen die over het algemeen te maken hebben met personalisatie.
 
-**Tips**: In verpersoonlijkingsgebieden die uit externe dossiers komen die door derdeverkopers worden verstrekt, kan de externe inhoud van HTML verkeerd zijn. Om dit te voorkomen, controleert u de syntaxis, het gebruik van tags, tekens, enzovoort. Een Adobe Campaign-personalisatie-tag heeft bijvoorbeeld altijd de volgende vorm: &lt;%=table.field%>. Zie [deze sectie](../../delivery/using/about-personalization.md)voor meer informatie.
+**Tips**: In verpersoonlijkingsgebieden die uit externe dossiers komen die door derdeverkopers worden verstrekt, kan de externe inhoud van HTML verkeerd zijn. Om dit te voorkomen, controleert u de syntaxis, het gebruik van tags, tekens, enzovoort. Een Adobe Campaign-personalisatie-tag heeft bijvoorbeeld altijd de volgende vorm: &lt;%=table.field%>. Zie [deze sectie](about-personalization.md)voor meer informatie.
 
 Het onjuiste gebruik van parameters in verpersoonlijkingsblokken kan een kwestie zijn. Variabelen in JavaScript moeten bijvoorbeeld als volgt worden gebruikt:
 
@@ -35,9 +35,9 @@ Het onjuiste gebruik van parameters in verpersoonlijkingsblokken kan een kwestie
 
     
     
-Voor meer op verpersoonlijkingsblokken, verwijs naar [deze sectie](../../delivery/using/personalization-blocks.md).
+Voor meer op verpersoonlijkingsblokken, verwijs naar [deze sectie](personalization-blocks.md).
 
-U kunt aanpassingsgegevens voorbereiden in een workflow om de voorbereiding van de levering te verbeteren. Dit moet speciaal worden gebruikt als de personalisatiegegevens afkomstig zijn van een externe tabel via Federated Data Access (FDA). Deze optie wordt beschreven in deze [deze sectie](../../delivery/using/personalization-fields.md#optimizing-personalization)
+U kunt aanpassingsgegevens voorbereiden in een workflow om de voorbereiding van de levering te verbeteren. Dit moet speciaal worden gebruikt als de personalisatiegegevens afkomstig zijn van een externe tabel via Federated Data Access (FDA). Deze optie wordt beschreven in deze [deze sectie](personalization-fields.md#optimizing-personalization)
 
 ## Geoptimaliseerde inhoud maken {#optimize-content}
 
@@ -55,7 +55,7 @@ Houd rekening met de onderstaande algemene tips bij het samenstellen van e-mails
 
 ### Onderwerpregel
 
-Werk aan [onderwerpregel](../../delivery/using/defining-the-email-content.md#message-content) om open snelheden te verbeteren:
+Werk aan [onderwerpregel](defining-the-email-content.md#message-content) om open snelheden te verbeteren:
 
 * Vermijd personen die te lang zijn. Gebruik maximaal 50 tekens
 
@@ -65,15 +65,15 @@ Werk aan [onderwerpregel](../../delivery/using/defining-the-email-content.md#mes
 
 ### Pagina spiegelen
 
-Neem altijd een koppeling naar een spiegelpagina op. De voorkeurspositie boven aan het e-mailbericht. [Meer informatie](../../delivery/using/sending-messages.md#generating-the-mirror-page)
+Neem altijd een koppeling naar een spiegelpagina op. De voorkeurspositie boven aan het e-mailbericht. [Meer informatie](sending-messages.md#generating-the-mirror-page)
 
 ### Unsubscription link
 
-De koppeling om uw abonnement op te zeggen is essentieel. Het formulier moet zichtbaar en geldig zijn en moet functioneel zijn. Wanneer het bericht wordt geanalyseerd, controleert standaard een [typologieregel](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) of een opt-out-koppeling is opgenomen en wordt een waarschuwing gegenereerd als deze ontbreekt.
+De koppeling om uw abonnement op te zeggen is essentieel. Het formulier moet zichtbaar en geldig zijn en moet functioneel zijn. Wanneer het bericht wordt geanalyseerd, controleert standaard een [typologieregel](steps-validating-the-delivery.md#validation-process-with-typologies) of een opt-out-koppeling is opgenomen en wordt een waarschuwing gegenereerd als deze ontbreekt.
 
 **Tip**: Omdat menselijke fout altijd mogelijk is, controleer dat de opt-out verbinding correct vóór elke keer werkt u verzendt. Als u bijvoorbeeld de proefdruk verzendt, controleert u of de koppeling geldig is, of het formulier online is en of het veld Geen contact meer opnemen met deze ontvanger is gewijzigd in Ja.
 
-Leer hoe te om een opt-out verbinding [in deze sectie ](../../delivery/using/personalization-blocks.md#personalization-blocks-example) op te nemen.
+Leer hoe te om een opt-out verbinding [in deze sectie ](personalization-blocks.md#personalization-blocks-example) op te nemen.
 
 ### E-mailformaat
 
@@ -94,7 +94,7 @@ Zorg ervoor dat u wijzigingen test voordat u de definitieve verzending uitvoert
 Standaard voldoet het aantal tekens in een sms aan de gsm-standaarden (Global System for Mobile Communications). Sms-berichten met gsm-codering mogen maximaal 160 tekens bevatten of 153 tekens per sms voor berichten die in meerdere delen worden verzonden.
 
 Transliteratie houdt in dat een teken van een sms door een ander teken wordt vervangen wanneer dat teken niet in aanmerking wordt genomen door de gsm-standaard. Als u personalisatievelden in de inhoud van uw SMS-bericht invoegt, kunnen er tekens worden ingevoerd waarmee de GSM-codering geen rekening houdt. U kunt tekentransliteratie toestaan door het corresponderende vak te selecteren op het tabblad met SMPP-kanaalinstellingen van het corresponderende **[!UICONTROL External account]**.
-Meer informatie [in deze sectie](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+Meer informatie [in deze sectie](sms-set-up.md#creating-an-smpp-external-account).
 
 **Tips**:
 
@@ -102,13 +102,13 @@ Meer informatie [in deze sectie](../../delivery/using/sms-set-up.md#creating-an-
 
 * Als uw SMS-berichten echter veel tekens bevatten waarmee de GSM-standaard geen rekening houdt, kunt u met transliteratie de verzendkosten van uw berichten beperken.
 
-Meer informatie [in deze sectie](../../delivery/using/sms-set-up.md#about-character-transliteration).
+Meer informatie [in deze sectie](sms-set-up.md#about-character-transliteration).
 
 ## Werken met opmaak {#formatting}
 
 Controleer de volgende elementen om algemene opmaakfouten te voorkomen:
 
-* Corrigeer **datumopmaak**: Adobe Campaign biedt functies voor datumopmaak voor de JavaScript-sjablonen en XSL-opmaakmodellen. [Meer informatie](../../delivery/using/formatting.md#date-display)
+* Corrigeer **datumopmaak**: Adobe Campaign biedt functies voor datumopmaak voor de JavaScript-sjablonen en XSL-opmaakmodellen. [Meer informatie](formatting.md#date-display)
 
 * Gebruik van **geoorloofde tekens** in e-mails: De lijst met geldige tekens voor e-mailadressen wordt gedefinieerd in de optie &quot;XtkEmail_Characters&quot;. Leer hoe te om tot de opties [in deze sectie ](../../installation/using/configuring-campaign-options.md) toegang te hebben. Adobe Campaign moet in Unicode zijn geïnstalleerd om speciale tekens correct te kunnen verwerken.
 
@@ -148,14 +148,14 @@ Om van buitenaf toegankelijk te zijn, moeten de beelden die in e-mail en openbar
 
 * U kunt controleren als de instantieconfiguratie openbaar middelbeheer toelaat. [Meer informatie](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* Vanuit de wizard voor levering kunt u een HTML-pagina met afbeeldingen importeren of afbeeldingen rechtstreeks invoegen met de HTML-editor via het pictogram **[!UICONTROL Image]**. [Meer informatie](../../delivery/using/defining-the-email-content.md#adding-images)
+* Vanuit de wizard voor levering kunt u een HTML-pagina met afbeeldingen importeren of afbeeldingen rechtstreeks invoegen met de HTML-editor via het pictogram **[!UICONTROL Image]**. [Meer informatie](defining-the-email-content.md#adding-images)
 
 * Als afbeeldingen niet worden weergegeven, controleert u of de afbeeldingen beschikbaar zijn op de server. Klik hiertoe op het tabblad Bron van uw levering. Zoek uw afbeeldingen en kopieer en plak de URL van elke afbeelding in een webbrowser. Als de afbeeldingen niet worden weergegeven, neemt u contact op met uw IT-beheerder of de externe leverancier die uw leveringsinhoud levert.
 
-## Een voorbeeld bekijken van uw bericht {#preview-msg}
+## Een voorbeeld van uw bericht bekijken {#preview-msg}
 
 Adobe raadt u aan een voorbeeld van uw bericht te bekijken om na te gaan wat de personalisatie is en hoe de ontvangers uw bericht zullen bekijken.
 
-* In de leveringstovenaar, laat **[!UICONTROL Preview]** subtab u de teruggave van elke inhoud voor een ontvanger bekijken. De verpersoonlijkingsgebieden en de voorwaardelijke elementen van inhoud worden vervangen met de overeenkomstige informatie voor het geselecteerde profiel. [Meer informatie](../../delivery/using/defining-the-email-content.md#message-content)
+* In de leveringstovenaar, laat **[!UICONTROL Preview]** subtab u de teruggave van elke inhoud voor een ontvanger bekijken. De verpersoonlijkingsgebieden en de voorwaardelijke elementen van inhoud worden vervangen met de overeenkomstige informatie voor het geselecteerde profiel. [Meer informatie](defining-the-email-content.md#message-content)
 
-* Tijdens elke voorvertoning wordt een automatische controle op anti-spam uitgevoerd. Schakel in het subtabblad **[!UICONTROL Preview]** de spamscoring [SpamAssassin](../../delivery/using/spamassassin.md) in.  Klik **[!UICONTROL More...]** om meer over de waarschuwing te weten te komen.  Controleer voordat u dit doet of SpamAssassin op de juiste wijze is geïnstalleerd en geconfigureerd op de Adobe Campaign-toepassingsserver. [Meer informatie](../../installation/using/configuring-spamassassin.md)
+* Tijdens elke voorvertoning wordt een automatische controle op anti-spam uitgevoerd. Schakel in het subtabblad **[!UICONTROL Preview]** de spamscoring [SpamAssassin](spamassassin.md) in.  Klik **[!UICONTROL More...]** om meer over de waarschuwing te weten te komen.  Controleer voordat u dit doet of SpamAssassin op de juiste wijze is geïnstalleerd en geconfigureerd op de Adobe Campaign-toepassingsserver. [Meer informatie](../../installation/using/configuring-spamassassin.md)
