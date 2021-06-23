@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Bouncekwalificatie bijwerken na een ISP-uitval
+title: Kwalificatie van niet-bezorging bijwerken na een ISP-uitval
 description: Leer hoe te om stuitkwalificatie na een ISP stroomonderbreking bij te werken.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -45,18 +45,18 @@ Gebaseerd op het tijdkader van het incident, hieronder zijn de geadviseerde rich
 * Voor de instanties van de Campagne met SMTP stuitert reactieinformatie op het **[!UICONTROL Error text]** gebied van de quarantainelijst:
 
    * **De tekst van de fout (quarantainetekst)** bevat &quot;het succes van de gebruikersraadpleging maar geen gevonden gebruikersverslag&quot;en de tekst van de  **Fout (quarantainetekst)**  bevat &quot;support.apple.com&quot;
-   * **Status bijwerken (@lastModified)** op of na 26-4-2021 07:00:00
+   * **Status bijwerken (@lastModified)** op of na 26-04-2021 07:00:00
    * **Status bijwerken (@lastModified)** op of vóór 26-4-2021 01:00:00 PM
 
 * Voor campagneinstanties met de binnenkomende informatie van de E-mailregel in het **[!UICONTROL Error text]** gebied van de quarantainelijst:
 
    * **Fouttekst (quarantainetekst)** bevat &quot;Momen_Code10_InvalidRecipient&quot;
    * **E-maildomein (@domein)** gelijk aan icloud.com OR  **Email domein (@domein)** gelijk aan me.com OF  **E-maildomein (@domein)** gelijk aan mac.com
-   * **Status bijwerken (@lastModified)** op of na 26-4-2021 07:00:00
+   * **Status bijwerken (@lastModified)** op of na 26-04-2021 07:00:00
    * **Status bijwerken (@lastModified)** op of vóór 26-4-2021 01:00:00 PM
 
 Zodra u de lijst van beïnvloede ontvangers hebt, kunt u of hen plaatsen aan een status van **[!UICONTROL Valid]** zodat zullen zij uit de quarantainelijst door **[!UICONTROL Database cleanup]** werkschema worden verwijderd, of enkel hen schrappen van de lijst.
 
 **Verwante onderwerpen:**
-* [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
-* [Kwalificatie van niet-bezorgde e-mails](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)
+* [Leveringsfouten begrijpen](understanding-delivery-failures.md)
+* [Kwalificatie van niet-bezorgde e-mails](understanding-delivery-failures.md#bounce-mail-qualification)
