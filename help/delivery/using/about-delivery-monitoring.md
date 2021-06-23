@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 16%
@@ -27,8 +27,8 @@ Met de lijst met leveringen kunt u alle gemaakte leveringen op één locatie bek
 
 Voor elke levering is een speciaal dashboard beschikbaar. Het staat u toe om uiteindelijke kwesties te controleren die tijdens het verzenden worden ontmoet evenals diverse soorten informatie betreffende de levering: rapporten, spiegelpagina&#39;s, uitsluitingen, logboeken bijhouden, renderen, enz.
 
-* [De lijst met leveringen openen](../../delivery/using/list-of-deliveries.md)
-* [Leveringsdashboard](../../delivery/using/delivery-dashboard.md)
+* [De lijst met leveringen openen](list-of-deliveries.md)
+* [Leveringsdashboard](delivery-dashboard.md)
 
 <img src="assets/do-not-localize/icon_guidelines.svg" width="60px">
 
@@ -36,8 +36,8 @@ Voor elke levering is een speciaal dashboard beschikbaar. Het staat u toe om uit
 
 Er moeten verschillende richtlijnen worden gevolgd om ervoor te zorgen dat uw leveringen goed functioneren. Gemeenschappelijke problemen die u kunt tegenkomen bij het verzenden van leveringen zijn ook beschikbaar om u te helpen leveringen efficiënt te verzenden.
 
-* [Leveringsprestaties en beste praktijken](../../delivery/using/delivery-performances.md)
-* [Problemen met verzenden van levering](../../delivery/using/delivery-troubleshooting.md)
+* [Leveringsprestaties en beste praktijken](delivery-performances.md)
+* [Problemen met verzenden van levering](delivery-troubleshooting.md)
 
 <img src="assets/do-not-localize/icon_failure.svg" width="60px">
 
@@ -45,7 +45,7 @@ Er moeten verschillende richtlijnen worden gevolgd om ervoor te zorgen dat uw le
 
 Wanneer een bericht niet naar een profiel kan worden verzonden, verzendt de externe server automatisch een foutbericht dat door het Adobe Campaign-platform wordt opgehaald en dat is gekwalificeerd om te bepalen of het e-mailadres of telefoonnummer al dan niet in quarantaine moet worden geplaatst.
 
-[Kennis van ](../../delivery/using/understanding-delivery-failures.md) leveringsfouten is een belangrijke stap om u te helpen uw marketingcampagnes te verbeteren.
+[Kennis van ](understanding-delivery-failures.md) leveringsfouten is een belangrijke stap om u te helpen uw marketingcampagnes te verbeteren.
 
 <img src="assets/do-not-localize/icon_quarantine.svg" width="60px">
 
@@ -53,4 +53,4 @@ Wanneer een bericht niet naar een profiel kan worden verzonden, verzendt de exte
 
 Adobe Campaign beheert een lijst met in quarantaine geplaatste adressen. Ontvangers van wie het adres in quarantaine is geplaatst, worden standaard tijdens de leveringsanalyse uitgesloten, en zullen niet doelgericht worden benaderd.
 
-In [deze sectie](../../delivery/using/understanding-quarantine-management.md), zult u informatie over vinden om quarantined adressen te identificeren en te beheren, en meer over de voorwaarden te leren om een adres naar quarantaine te verzenden.
+In [deze sectie](understanding-quarantine-management.md), zult u informatie over vinden om quarantined adressen te identificeren en te beheren, en meer over de voorwaarden te leren om een adres naar quarantaine te verzenden.
