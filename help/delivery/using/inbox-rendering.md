@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 8%
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 # Inboxrendering{#inbox-rendering}
 
-## Over het renderen in Postvak {#about-inbox-rendering}
+## Inbox-rendering {#about-inbox-rendering}
 
 Voordat u op de knop **Verzenden** drukt, moet u ervoor zorgen dat uw bericht op een optimale manier aan de ontvangers wordt weergegeven op verschillende webclients, webmails en apparaten.
 
@@ -27,9 +27,9 @@ De mobiele clients, berichten en webmailclients die beschikbaar zijn voor **Inbo
 
 >[!NOTE]
 >
->Rendering in doos is niet nodig om personalisatie in leveringen te testen. Personalisatie kan worden gecontroleerd met Adobe Campaign-gereedschappen zoals **[!UICONTROL Preview]** en [Proofs](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+>Rendering in doos is niet nodig om personalisatie in leveringen te testen. Personalisatie kan worden gecontroleerd met Adobe Campaign-gereedschappen zoals **[!UICONTROL Preview]** en [Proofs](steps-validating-the-delivery.md#sending-a-proof).
 
-## Inbox-rendering activeren {#activating-inbox-rendering}
+## Inbox-rendering activeren {#activating-inbox-rendering}
 
 Voor gehoste en hybride clients wordt de InBox-rendering op uw exemplaar geconfigureerd door technische ondersteuning van Adobe en consultants. Neem voor meer informatie contact op met de manager van uw Adobe-account.
 
@@ -93,18 +93,18 @@ Het aantal resterende beschikbare tokens wordt weergegeven in het **[!UICONTROL 
 
 Doorgaans wordt de renderfunctie Inbox gebruikt om het HTML-framework van een nieuw ontworpen e-mail te testen. Voor elke rendering zijn ongeveer 70 tokens nodig (afhankelijk van het aantal omgevingen dat doorgaans wordt getest). In sommige gevallen hebt u echter meerdere renderingrapporten in postvak nodig om de levering volledig te testen. Het zou dus meer tokens kunnen vergen om meerdere controles te voltooien.
 
-## Toegang tot het inbox-renderrapport {#accessing-the-inbox-rendering-report}
+## Toegang tot het renderrapport in Postvak IN {#accessing-the-inbox-rendering-report}
 
 Voer onderstaande stappen uit als u de e-maillevering hebt gemaakt en de content en de doelpopulatie ervan hebt bepaald.
 
-Raadpleeg [deze sectie](../../delivery/using/about-email-channel.md) voor meer informatie over het maken, ontwerpen en richten van een levering.
+Raadpleeg [deze sectie](about-email-channel.md) voor meer informatie over het maken, ontwerpen en richten van een levering.
 
 1. Klik op de bovenste balk van de levering op de knop **[!UICONTROL Inbox rendering]**.
 1. Selecteer **[!UICONTROL Analyze]** om het vastlegproces te starten.
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Er wordt een bewijs verzonden. De renderingminiaturen zijn enkele minuten na het verzenden van de e-mails toegankelijk in die proefdruk. Raadpleeg [deze sectie](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) voor meer informatie over het verzenden van proefdrukken.
+   Er wordt een bewijs verzonden. De renderingminiaturen zijn enkele minuten na het verzenden van de e-mails toegankelijk in die proefdruk. Raadpleeg [deze sectie](steps-validating-the-delivery.md#sending-a-proof) voor meer informatie over het verzenden van proefdrukken.
 
 1. Na verzending wordt de proefdruk weergegeven in de leveringslijst. Dubbelklik erop.
 
@@ -116,7 +116,7 @@ Raadpleeg [deze sectie](../../delivery/using/about-email-channel.md) voor meer i
 
    Het renderrapport Inbox wordt weergegeven.
 
-## Rapport {#inbox-rendering-report} voor renderen in vak
+## Inbox rendering report {#inbox-rendering-report}
 
 In dit rapport worden de inbox-weergaven weergegeven zoals deze aan de ontvanger worden weergegeven. De renderingen kunnen afwijken, afhankelijk van de manier waarop de ontvanger de e-maillevering opent: in een browser, op een mobiel apparaat of via een e-mailtoepassing.
 
