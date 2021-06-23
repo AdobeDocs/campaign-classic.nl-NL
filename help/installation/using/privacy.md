@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: f31591949bb033ff250cf4b33eddcc2c1d31cc6c
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 5%
+source-wordcount: '889'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Campaign biedt een reeks tools om u te helpen de privacyvereisten voor AVG
 
 Raadpleeg [deze pagina](../../platform/using/privacy-management.md) voor algemene informatie over wat het Privacybeheer is en de implementatiestappen in Adobe Campaign. U zult ook beste praktijken en een overzicht van het gebruikersproces en persona&#39;s vinden.
 
-## URL-aanpassing {#url-personalization}
+## URL-personalisatie {#url-personalization}
 
 Wanneer u persoonlijke koppelingen toevoegt aan uw inhoud, moet u altijd geen persoonlijke instellingen opgeven in het gedeelte hostnaam van de URL om mogelijke hiaten in de beveiliging te voorkomen. De volgende voorbeelden mogen nooit worden gebruikt in alle URL-kenmerken &lt;`a href="">` of `<img src="">`:
 
@@ -47,27 +47,35 @@ Voorbeeld:
 
 <img src="assets/privacy-query-dynamic-url.png">
 
-### Handtekeningmechanisme
+### URL-handtekening
 
-Om de veiligheid te verbeteren, is een nieuw handtekeningmechanisme voor het volgen van verbindingen in e-mails geïntroduceerd in Versie 19.1.4 (9032@3a9dc9c), en is beschikbaar in Bouwstijl 19.1.4 (9032@3a9dc9c) en Campagne 20.2. Deze optie is standaard ingeschakeld voor alle klanten.
+Om de veiligheid te verbeteren, is een handtekeningmechanisme geïntroduceerd voor het bijhouden van koppelingen in e-mails. Het is beschikbaar in Versie 19.1.4 (9032@3a9dc9c) en Campagne 20.2. Deze functie is standaard ingeschakeld.
 
 >[!NOTE]
 >
->Wanneer op een onjuist ondertekende URL wordt geklikt, wordt de volgende fout geretourneerd: &quot;Aangevraagde URL &#39;...&#39; is niet gevonden.&quot;
+>Wanneer op een onjuist ondertekende URL wordt geklikt, wordt deze fout geretourneerd: &quot;Gevraagde URL &#39;...&#39; is niet gevonden.&quot;
 
-Bovendien kunnen gehoste en hybride klanten met de startversie van Campagne 20.2 en [!DNL Gold Standard] een verbetering gebruiken om URL&#39;s uit eerdere builds uit te schakelen. Deze optie is standaard uitgeschakeld. U kunt [Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) bereiken om deze functie in te schakelen.
+Bovendien kunt u sinds Campagne 20.2 en de [!DNL Gold Standard] versie, een verhoging gebruiken om URLs onbruikbaar te maken die in vorige bouwstijlen worden geproduceerd. Deze functie is standaard uitgeschakeld. U kunt [Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) bereiken om deze functie in te schakelen.
 
-Om dit nieuwe mechanisme te activeren, moeten on-premise klanten deze stappen op alle servers van de Campagne volgen:
+Als u [!DNL Gold Standard] 19.1.4 uitvoert, kunt u problemen ervaren met de levering van pushberichten via koppelingen voor reeksspatiëring of met ankerlabels. Als dat het geval is, raden we u aan de URL-handtekening uit te schakelen.
+
+Of u campagne op gebouw of in een hybride architectuur in werking stelt, moet u tot [de Zorg van de Klant ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) richten om de handtekening van URL onbruikbaar te maken.
+
+Als u Campagne in een hybride architectuur in werking stelt, alvorens u URL handtekening toelaat, zorg ervoor dat de ontvangen mid-sourcing instantie als volgt is bevorderd:
+* Voorafgaand aan de marketinginstantie ter plaatse
+* Naar dezelfde versie als de marketinginstantie op locatie of naar een iets hogere versie
+
+Anders kunnen sommige van deze problemen zich voordoen:
+* Voordat de mid-sourcing-instantie wordt bijgewerkt, worden URL&#39;s zonder handtekening verzonden via deze instantie.
+* Nadat de mid-sourcing-instantie is bijgewerkt en de URL-handtekening op beide instanties is ingeschakeld, worden de URL&#39;s die eerder zonder handtekening waren verzonden, afgewezen. De reden is dat een handtekening wordt aangevraagd door de volgende bestanden die door het marketingexemplaar zijn opgegeven.
+
+Als u URL&#39;s wilt uitschakelen die zijn gegenereerd in eerdere builds, voert u de volgende stappen uit op alle Campagneservers tegelijk:
 
 1. Wijzig **blockRedirectForUnsignedTrackingLink** in **true** in het serverconfiguratiebestand (serverConf.xml).
 1. Start de **nlserver**-service opnieuw.
 1. Start de webserver op de trackingserver opnieuw (apache2 op Debian, httpd op CentOS/RedHat, IIS op Windows).
 
-Klanten die op [!DNL Gold Standard] 19.1.4 worden uitgevoerd, kunnen problemen ondervinden met de levering van pushberichten via een koppeling voor bijhouden of leveringen met behulp van ankerlabels. In dat geval raadt Adobe aan het nieuwe handtekeningmechanisme voor het bijhouden van koppelingen uit te schakelen:
-
-**Gehoste en hybride** klanten moeten contact opnemen met  [Customer ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) Cares om dit mechanisme uit te schakelen.
-
-**Op locatie kunnen** klanten de onderstaande stap volgen:
+Als u URL-ondertekening wilt inschakelen, voert u de volgende stappen uit op alle campagnemeservers tegelijk:
 
 1. Wijzig **signEmailLinks** in **false** in het serverconfiguratiebestand (serverConf.xml).
 1. Start de **nlserver**-service opnieuw.
