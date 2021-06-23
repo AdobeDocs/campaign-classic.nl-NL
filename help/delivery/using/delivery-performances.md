@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 6%
@@ -19,9 +19,9 @@ We raden u aan de onderstaande richtlijnen te volgen om ervoor te zorgen dat uw 
 
 **Verwante onderwerpen:**
 
-* [Leveringsdashboard](../../delivery/using/delivery-dashboard.md)
-* [Problemen met een levering oplossen](../../delivery/using/delivery-troubleshooting.md)
-* [Leverbaarheid](../../delivery/using/about-deliverability.md)
+* [Leveringsdashboard](delivery-dashboard.md)
+* [Problemen met een levering oplossen](delivery-troubleshooting.md)
+* [Informatie over leverbaarheid](about-deliverability.md)
 
 ## Aanbevolen werkwijzen voor prestaties {#best-practices-performance}
 
@@ -45,12 +45,12 @@ We raden u aan de onderstaande richtlijnen te volgen om ervoor te zorgen dat uw 
 >
 >ISPs zou adressen na een periode van inactiviteit deactiveren. De berichten van de vlag worden verzonden naar afzenders om hen over deze nieuwe status te informeren.
 
-## Controlelijst voor prestatieproblemen {#performance-issues}
+## Checklist voor prestatieproblemen {#performance-issues}
 
 Als de leveringsprestaties slecht zijn, kunt u controleren:
 
 * **De omvang van de levering**: Het voltooien van grote leveringen kan langer duren. De kinderen MTA worden gevormd om een standaardpartijgrootte te behandelen, die voor de meeste instanties werkt, maar moet worden gecontroleerd wanneer de leveringen constant langzaam zijn.
 * **Het doel van de levering**: Het verbod op leveringsprestaties wordt beïnvloed door zachte stuiterfouten, die worden afgehandeld volgens de configuratie voor opnieuw proberen. Hoe groter het aantal fouten, hoe meer pogingen nodig zijn.
-* **De totale platformbelasting**: Wanneer meerdere grote leveringen worden verzonden, kan dit gevolgen hebben voor het hele platform. U kunt IP reputatie en leveringsproblemen ook controleren. Raadpleeg [deze sectie](../../delivery/using/about-deliverability.md) en de [Handleiding voor beste praktijken voor Adobe-levering](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl) voor meer informatie.
+* **De totale platformbelasting**: Wanneer meerdere grote leveringen worden verzonden, kan dit gevolgen hebben voor het hele platform. U kunt IP reputatie en leveringsproblemen ook controleren. Raadpleeg [deze sectie](about-deliverability.md) en de [Handleiding voor beste praktijken voor Adobe-levering](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl) voor meer informatie.
 
 Platform- en databaseonderhoud kan ook van invloed zijn op de verzendingsprestaties van de levering. Raadpleeg [deze pagina](../../production/using/database-performances.md) voor meer informatie.
