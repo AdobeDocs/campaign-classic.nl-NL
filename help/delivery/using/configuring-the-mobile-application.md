@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 5%
@@ -30,7 +30,7 @@ De belangrijkste stappen zijn:
 Vervolgens kunt u [een pushmelding maken voor iOS-apparaten](create-notifications-ios.md).
 
 
-## Externe iOS-account {#configuring-external-account-ios} configureren
+## Externe iOS-account configureren {#configuring-external-account-ios}
 
 Voor iOS verzendt de iOS HTTP/2-connector meldingen naar de HTTP/2 APNs.
 
@@ -46,7 +46,7 @@ Om deze schakelaar te vormen, volg deze stappen:
 
 Uw iOS-connector is nu geconfigureerd. U kunt uw service gaan maken.
 
-## iOS-service {#configuring-ios-service} configureren
+## iOS-service configureren {#configuring-ios-service}
 
 >[!CAUTION]
 >
@@ -71,9 +71,9 @@ Uw iOS-connector is nu geconfigureerd. U kunt uw service gaan maken.
 
    ![](assets/nmac_service_2.png)
 
-1. Maak uw iOS-ontwikkelings- en -productieprogramma&#39;s. Raadpleeg deze [sectie](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app) voor meer informatie.
+1. Maak uw iOS-ontwikkelings- en -productieprogramma&#39;s. Raadpleeg deze [sectie](configuring-the-mobile-application.md#creating-ios-app) voor meer informatie.
 
-## Mobiele app voor iOS maken {#creating-ios-app}
+## Mobiele iOS-app maken {#creating-ios-app}
 
 Nadat u de service hebt gemaakt, maakt u uw iOS-toepassing in Campagne. Volg de onderstaande stappen:
 
@@ -100,7 +100,7 @@ In het volgende voorbeeld voegen we **mediaURl** en **mediaExt** toe om een rijk
 
 1. Klik **[!UICONTROL Next]** beginnen de ontwikkelingstoepassing te vormen.
 
-1. Zorg ervoor dat **[!UICONTROL Integration key]** in Adobe Campaign en in de toepassingscode via de SDK wordt gedefinieerd. Raadpleeg voor meer informatie: [De campagne-SDK integreren in de mobiele toepassing](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md). Met deze integratietoets, die specifiek is voor elke toepassing, kunt u de mobiele toepassing koppelen aan het Adobe Campaign-platform.
+1. Zorg ervoor dat **[!UICONTROL Integration key]** in Adobe Campaign en in de toepassingscode via de SDK wordt gedefinieerd. Raadpleeg voor meer informatie: [De campagne-SDK integreren in de mobiele toepassing](integrating-campaign-sdk-into-the-mobile-application.md). Met deze integratietoets, die specifiek is voor elke toepassing, kunt u de mobiele toepassing koppelen aan het Adobe Campaign-platform.
 
    >[!NOTE]
    >
