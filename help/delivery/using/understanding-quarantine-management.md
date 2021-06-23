@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '2613'
 ht-degree: 14%
@@ -29,9 +29,9 @@ De profielen waarvan de e-mailadressen of telefoonnummers in quarantaine zijn ge
 
 Sommige internetproviders beschouwen e-mails automatisch als spam als het aantal ongeldige adressen te hoog is. Met quarantaine kunt u dus voorkomen dat u door deze providers aan de lijst van gewezen personen wordt toegevoegd.
 
-Bovendien zijn de verzendkosten voor sms-berichten lager doordat onjuiste telefoonnummers van de levering worden uitgesloten. Raadpleeg [deze pagina](../../delivery/using/delivery-best-practices.md) voor meer informatie over de best practices voor het beveiligen en optimaliseren van uw leveringen .
+Bovendien zijn de verzendkosten voor sms-berichten lager doordat onjuiste telefoonnummers van de levering worden uitgesloten. Raadpleeg [deze pagina](delivery-best-practices.md) voor meer informatie over de best practices voor het beveiligen en optimaliseren van uw leveringen .
 
-### Quarantaine versus lijst van gewezen personen {#quarantine-vs-denylist}
+### Quarantine versus lijst van gewezen personen {#quarantine-vs-denylist}
 
 **Quarantaine** is alleen van toepassing op een adres, niet op het profiel zelf. Wanneer twee profielen hetzelfde e-mailadres hebben, worden ze dus allebei beïnvloed als het adres in quarantaine wordt geplaatst.
 
@@ -49,7 +49,7 @@ Adressen kunnen in quarantaine worden geplaatst voor een specifieke levering of 
 
 ### In quarantaine geplaatste adressen voor een levering identificeren {#identifying-quarantined-addresses-for-a-delivery}
 
-Gegarandeerde adressen voor een specifieke levering zijn vermeld tijdens de leveringsvoorbereidingsfase, in de leveringslogboeken van het leveringsdashboard (zie [leveringslogboeken en geschiedenis](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)).
+Gegarandeerde adressen voor een specifieke levering zijn vermeld tijdens de leveringsvoorbereidingsfase, in de leveringslogboeken van het leveringsdashboard (zie [leveringslogboeken en geschiedenis](delivery-dashboard.md#delivery-logs-and-history)).
 
 ### In quarantaine geplaatste adressen voor het volledige platform identificeren {#identifying-quarantined-addresses-for-the-entire-platform}
 
@@ -117,7 +117,7 @@ U kunt het aantal fouten en de periode tussen twee fouten wijzigen. Om dit te do
 
 ## Voorwaarden voor het in quarantaine plaatsen van een adres {#conditions-for-sending-an-address-to-quarantine}
 
-Adobe Campaign beheert quarantaine volgens het type van de leveringsmislukking en de reden die tijdens de kwalificatie van foutenmeldingen wordt toegewezen (zie [Bounce postkwalificatie](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)) en [De types en redenen van de leveringsmislukking ](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Adobe Campaign beheert quarantaine volgens het type van de leveringsmislukking en de reden die tijdens de kwalificatie van foutenmeldingen wordt toegewezen (zie [Bounce postkwalificatie](understanding-delivery-failures.md#bounce-mail-qualification)) en [De types en redenen van de leveringsmislukking ](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 * **Genegeerde fout**: bij genegeerde fouten wordt een adres niet in quarantaine geplaatst.
 * **Harde fout**: het desbetreffende e-mailadres wordt onmiddellijk in quarantaine geplaatst.
@@ -135,7 +135,7 @@ In tegenstelling tot harde fouten, verzenden de zachte fouten onmiddellijk geen 
 
 * Wanneer de foutenteller de grensdrempel bereikt, dan gaat het adres in quarantaine.
 * In de standaardconfiguratie is de drempel ingesteld op vijf fouten, waarbij twee fouten significant worden bij een tussenliggende periode van minstens 24 uur. Het adres wordt bij de vijfde fout in quarantaine geplaatst.
-* De drempelwaarde voor de foutenteller kan worden gewijzigd. Voor meer op dit, verwijs naar [Opnieuw na een levering tijdelijke mislukking](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+* De drempelwaarde voor de foutenteller kan worden gewijzigd. Voor meer op dit, verwijs naar [Opnieuw na een levering tijdelijke mislukking](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 De foutenteller wordt opnieuw geïnitialiseerd als de laatste significante fout meer dan 10 dagen geleden voorkwam. De adresstatus verandert dan in **Geldig** en het wordt geschrapt uit de lijst van quarantines door **Opschonen van het Gegevensbestand** werkschema.
 
@@ -525,14 +525,14 @@ De tabel **[!UICONTROL Delivery log qualification]** is niet van toepassing op d
 
 **Voor de Uitgebreide generische schakelaar SMPP**
 
-Wanneer het gebruiken van het protocol SMPP om de berichten van SMS te verzenden, wordt het foutenbeheer verschillend behandeld. Voor meer informatie over de Uitgebreide generische schakelaar SMPP, verwijs naar [deze pagina](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+Wanneer het gebruiken van het protocol SMPP om de berichten van SMS te verzenden, wordt het foutenbeheer verschillend behandeld. Voor meer informatie over de Uitgebreide generische schakelaar SMPP, verwijs naar [deze pagina](sms-set-up.md#creating-an-smpp-external-account).
 
 De schakelaar SMPP wint gegevens van het bericht van SR (Status Report) terug dat gebruikend regelmatige uitdrukkingen (regexes) is teruggekeerd om zijn inhoud te filtreren. Deze gegevens worden vervolgens vergeleken met de informatie in de tabel **[!UICONTROL Delivery log qualification]** (beschikbaar via het menu **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]**).
 
 Voordat een nieuw type fout wordt gekwalificeerd, is de reden van de fout altijd ingesteld op **Geweigerd** standaard.
 
 >[!NOTE]
-De fouttypen en -redenen zijn gelijk aan die voor e-mailberichten. Zie [Typen leveringsfouten en redenen](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+De fouttypen en -redenen zijn gelijk aan die voor e-mailberichten. Zie [Typen leveringsfouten en redenen](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 Vraag uw leverancier om een lijst van status en foutencodes om juiste mislukkingstypes en redenen voor mislukking in de de kwalificatielijst van het Logboek van de Levering te plaatsen.
 
 Voorbeeld van een gegenereerd bericht:
@@ -542,13 +542,13 @@ SR Generic DELIVRD 000|#MESSAGE#
 ```
 
 * Alle foutberichten beginnen met **SR** om SMS-foutcodes te onderscheiden van e-mailfoutcodes.
-* Het tweede deel (**Generic** in dit voorbeeld) van het foutbericht verwijst naar de naam van de SMSC-implementatie zoals gedefinieerd in het veld **[!UICONTROL SMSC implementation name]** van de externe SMS-account. Zie [deze pagina](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+* Het tweede deel (**Generic** in dit voorbeeld) van het foutbericht verwijst naar de naam van de SMSC-implementatie zoals gedefinieerd in het veld **[!UICONTROL SMSC implementation name]** van de externe SMS-account. Zie [deze pagina](sms-set-up.md#creating-an-smpp-external-account).
 
    Omdat dezelfde foutcode voor elke provider een andere betekenis kan hebben, kunt u in dit veld weten welke provider de foutcode heeft gegenereerd. U kunt de fout dan vinden in de relevante documentatie van de leverancier.
 
 * Het derde deel (**DELIVRD** in dit voorbeeld) van het foutbericht komt overeen met de statuscode die wordt opgehaald uit de SR met behulp van het statusextractieoverzicht dat is gedefinieerd in de externe SMS-account.
 
-   Deze regex wordt opgegeven op het tabblad **[!UICONTROL SMSC specificities]** van de externe account. Zie [deze pagina](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+   Deze regex wordt opgegeven op het tabblad **[!UICONTROL SMSC specificities]** van de externe account. Zie [deze pagina](sms-set-up.md#creating-an-smpp-external-account).
 
    ![](assets/tech_quarant_error_regex.png)
 
@@ -556,10 +556,10 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * Het vierde deel (**000** in dit voorbeeld) van het foutbericht komt overeen met de foutcode die uit de SR is geëxtraheerd met behulp van het extractieoverzicht van de foutcode dat in de externe SMS-account is gedefinieerd.
 
-   Deze regex wordt opgegeven op het tabblad **[!UICONTROL SMSC specificities]** van de externe account. Zie [deze pagina](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+   Deze regex wordt opgegeven op het tabblad **[!UICONTROL SMSC specificities]** van de externe account. Zie [deze pagina](sms-set-up.md#creating-an-smpp-external-account).
 
    Standaard extraheert de regex het veld **err:** zoals gedefinieerd in de sectie **Bijlage B** van de **SMPP 3.4-specificatie**.
 
-* Alles wat na het pijpsymbool (|) komt wordt slechts getoond in **[!UICONTROL First text]** kolom van **[!UICONTROL Delivery log qualification]** lijst. Deze inhoud wordt altijd vervangen door **#MESSAGE#** nadat het bericht is genormaliseerd. Dit proces voorkomt het hebben van veelvoudige ingangen voor gelijkaardige fouten en is het zelfde als voor e-mail. Zie [Bounce mailkwalificatie](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) voor meer informatie.
+* Alles wat na het pijpsymbool (|) komt wordt slechts getoond in **[!UICONTROL First text]** kolom van **[!UICONTROL Delivery log qualification]** lijst. Deze inhoud wordt altijd vervangen door **#MESSAGE#** nadat het bericht is genormaliseerd. Dit proces voorkomt het hebben van veelvoudige ingangen voor gelijkaardige fouten en is het zelfde als voor e-mail. Zie [Bounce mailkwalificatie](understanding-delivery-failures.md#bounce-mail-qualification) voor meer informatie.
 
 De uitgebreide generische schakelaar SMPP past heuristisch toe om verstandige standaardwaarden te vinden: als de status met **DELIV** begint, wordt het beschouwd als een succes omdat het de gemeenschappelijke status **DELIVRD** of **DELIVERED** aanpast die door de meeste leveranciers wordt gebruikt. Elke andere status leidt tot een harde fout.
