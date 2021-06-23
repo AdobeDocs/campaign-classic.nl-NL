@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 8%
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 In deze sectie worden de opties en parameters beschreven die specifiek zijn voor e-maillevering.
 
-## E-mailBCC {#email-bcc}
+## BCC e-mailen {#email-bcc}
 
 Met Adobe Campaign kunt u e-mailberichten op een extern systeem opslaan via BCC door eenvoudig een BCC-e-mailadres toe te voegen aan uw berichtdoel.
 
@@ -71,13 +71,13 @@ Selecteer de indeling van de e-mail in de onderste sectie van het venster:
 
 >[!NOTE]
 >
->Zie [deze sectie](../../delivery/using/defining-the-email-content.md) voor meer informatie over het definiëren van de e-mailinhoud.
+>Zie [deze sectie](defining-the-email-content.md) voor meer informatie over het definiëren van de e-mailinhoud.
 
-## De spiegelpagina {#generating-mirror-page} genereren
+## De spiegelpagina genereren {#generating-mirror-page}
 
 De spiegelpagina is een HTML-pagina die online toegankelijk is via een webbrowser. De inhoud is identiek aan de e-mail.
 
-Standaard wordt de spiegelpagina gegenereerd als de koppeling wordt ingevoegd in de inhoud van de e-mail. Voor meer op verpersoonlijkingsblokkeringen toevoeging, verwijs naar [Personaliseringsblokken](../../delivery/using/personalization-blocks.md).
+Standaard wordt de spiegelpagina gegenereerd als de koppeling wordt ingevoegd in de inhoud van de e-mail. Voor meer op verpersoonlijkingsblokkeringen toevoeging, verwijs naar [Personaliseringsblokken](personalization-blocks.md).
 
 In de leveringseigenschappen, laat het **[!UICONTROL Mode]** gebied van **[!UICONTROL Validity]** lusje u de generatiemodus voor deze pagina wijzigen.
 
@@ -107,7 +107,7 @@ Hiervoor selecteert u de optie **[!UICONTROL Force the encoding used for message
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab_encoding.png)
 
-## Bounce-e-mailberichten beheren {#managing-bounce-emails}
+## Bounce-e-mails beheren {#managing-bounce-emails}
 
 Met het tabblad **[!UICONTROL SMTP]** van de leveringsparameters kunt u het beheer van stuiterende mails configureren.
 
@@ -117,9 +117,9 @@ U kunt ook een specifiek adres vanuit dit scherm definiëren om de redenen voor 
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
 
-Zie [deze sectie](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management) voor meer informatie over stuiterend mailbeheer.
+Zie [deze sectie](understanding-delivery-failures.md#bounce-mail-management) voor meer informatie over stuiterend mailbeheer.
 
-## SMTP-koppen {#adding-smtp-headers} toevoegen
+## SMTP-koppen toevoegen {#adding-smtp-headers}
 
 Het is mogelijk om kopballen SMTP aan uw leveringen toe te voegen. Hiervoor gebruikt u de desbetreffende sectie van het tabblad **[!UICONTROL SMTP]** in de levering.
 
