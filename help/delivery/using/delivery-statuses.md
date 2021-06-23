@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 4%
@@ -23,13 +23,13 @@ Zodra een levering is verzonden, toont het leveringsdashboard een status die u t
 
 ![](assets/delivery-status.png)
 
-Raadpleeg [deze pagina](../../delivery/using/understanding-delivery-failures.md) voor meer informatie over de verschillende leveringsfouten die u kunt tegenkomen en hoe u deze kunt oplossen.
+Raadpleeg [deze pagina](understanding-delivery-failures.md) voor meer informatie over de verschillende leveringsfouten die u kunt tegenkomen en hoe u deze kunt oplossen.
 
 **Verwante onderwerpen:**
 
-* [Leveringsdashboard](../../delivery/using/delivery-dashboard.md)
-* [Problemen met een levering oplossen](../../delivery/using/delivery-troubleshooting.md)
-* [Leverbaarheid](../../delivery/using/about-deliverability.md)
+* [Leveringsdashboard](delivery-dashboard.md)
+* [Problemen met een levering oplossen](delivery-troubleshooting.md)
+* [Informatie over leverbaarheid](about-deliverability.md)
 
 ## Lijst van leveringsstatussen {#list-delivery-statuses}
 
@@ -51,7 +51,7 @@ Raadpleeg [deze pagina](../../delivery/using/understanding-delivery-failures.md)
   </tr> 
   <tr> 
    <td> Mislukt<br /> </td> 
-   <td> De levering kan de ontvanger bijvoorbeeld niet bereiken vanwege een ongeldig adres of een volledig postvak. Het kan ook met een kwestie met verpersoonlijkingsblokken worden verbonden aangezien zij fouten kunnen produceren wanneer de schema's niet de leveringsafbeelding aanpassen. Zie <a href="../../delivery/using/understanding-delivery-failures.md" target="_blank">Werken met leveringsfouten</a><br /> </td> 
+   <td> De levering kan de ontvanger bijvoorbeeld niet bereiken vanwege een ongeldig adres of een volledig postvak. Het kan ook met een kwestie met verpersoonlijkingsblokken worden verbonden aangezien zij fouten kunnen produceren wanneer de schema's niet de leveringsafbeelding aanpassen. Zie <a href="understanding-delivery-failures.md" target="_blank">Werken met leveringsfouten</a><br /> </td> 
   </tr>
   <tr> 
    <td> In behandeling<br /> </td> 
@@ -67,7 +67,7 @@ Raadpleeg [deze pagina](../../delivery/using/understanding-delivery-failures.md)
   </tr> 
   <tr> 
    <td> In aanmerking genomen door de dienstverlener<br /> </td> 
-   <td> De SMS-serviceprovider heeft de levering ontvangen.<br /> Voor ontvangen of hybride installaties, als u aan  <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">Verbeterde MTA</a> hebt bevorderd, werd het bericht met succes van Campagne aan Verbeterde MTA afgelost.</td> 
+   <td> De SMS-serviceprovider heeft de levering ontvangen.<br /> Voor ontvangen of hybride installaties, als u aan  <a href="sending-with-enhanced-mta.md" target="_blank">Verbeterde MTA</a> hebt bevorderd, werd het bericht met succes van Campagne aan Verbeterde MTA afgelost.</td> 
   </tr> 
   <tr> 
    <td> Ontvangen op mobiel<br /> </td> 
@@ -85,13 +85,13 @@ Raadpleeg [deze pagina](../../delivery/using/understanding-delivery-failures.md)
  </tbody> 
 </table>
 
-Raadpleeg [deze sectie](../../delivery/using/about-deliverability.md) voor meer informatie over het optimaliseren van de leverbaarheid van uw Adobe Campaign-e-mails. Raadpleeg de [Handleiding best practices](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl) voor de aflevering van Adobe voor een dieper inzicht in de aflevering.
+Raadpleeg [deze sectie](about-deliverability.md) voor meer informatie over het optimaliseren van de leverbaarheid van uw Adobe Campaign-e-mails. Raadpleeg de [Handleiding best practices](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl) voor de aflevering van Adobe voor een dieper inzicht in de aflevering.
 
-## Status {#pending-status} in behandeling
+## Status in behandeling {#pending-status}
 
 Na het bevestigen van uw levering, kunt u zien dat de status van uw levering **[!UICONTROL Pending]** is. Deze status houdt in dat het uitvoeringsproces wacht op de beschikbaarheid van bepaalde bronnen.
 
-De status **[!UICONTROL Pending]** kan eerst betekenen dat uw levering gepland is en tot de bepaalde datum in behandeling is. Voor meer op dit, verwijs naar [Het plannen van de Levering](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending) sectie.
+De status **[!UICONTROL Pending]** kan eerst betekenen dat uw levering gepland is en tot de bepaalde datum in behandeling is. Voor meer op dit, verwijs naar [Het plannen van de Levering](steps-sending-the-delivery.md#scheduling-the-delivery-sending) sectie.
 
 Als uw levering niet wordt verzonden en zijn status **[!UICONTROL Pending]** blijft, kan het het resultaat van zijn:
 
@@ -137,5 +137,5 @@ Als uw levering niet wordt verzonden en zijn status **[!UICONTROL Pending]** bli
 **Verwante onderwerpen:**
 
 * [Leveringslogboeken en geschiedenis](#delivery-logs-and-history)
-* [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
-* [Typen leveringsfouten en redenen](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)
+* [Leveringsfouten begrijpen](understanding-delivery-failures.md)
+* [Typen leveringsfouten en redenen](understanding-delivery-failures.md#delivery-failure-types-and-reasons)
