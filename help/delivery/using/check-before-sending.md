@@ -5,26 +5,26 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 4%
 
 ---
 
-# Alle controles uitvoeren voordat {#perform-all-checks} wordt verzonden
+# Alle controles uitvoeren voordat ze worden verzonden {#perform-all-checks}
 
 Zodra uw bericht klaar is, zorg ervoor zijn inhoud correct, op alle apparaten wordt getoond, en bevat geen fouten zoals verkeerde verpersoonlijking of gebroken verbindingen.
 
 Alvorens uw bericht te verzenden, zorg ook dat de parameters en de configuratie met de levering verenigbaar zijn.
 
-## Waarom validatie belangrijk is {#validation-is-key}
+## Waarom validatie de sleutel is {#validation-is-key}
 
 Alvorens een levering te verzenden, moet u ervoor zorgen dat uw ontvangers het bericht zullen ontvangen dat u echt hen wilt verzenden. Hiervoor moet u de inhoud en de leveringsparameters van het bericht valideren.
 
 Met deze stap kunt u mogelijke fouten detecteren en corrigeren voordat u deze aan uw hoofddoel kunt leveren.
 
-De stappen voor het valideren van een levering worden [weergegeven in deze sectie](../../delivery/using/steps-validating-the-delivery.md).
+De stappen voor het valideren van een levering worden [weergegeven in deze sectie](steps-validating-the-delivery.md).
 
 ## Inboxrendering {#inbox-and-email-rendering}
 
@@ -36,13 +36,13 @@ Met Postvak-rendering kunt u uw berichten voorvertonen bij belangrijke e-mailcli
 
 * Rendermogelijkheden in postvakken zijn van cruciaal belang om te bepalen of uw e-mailcampagnes erin slagen het voorbij de filters van belangrijke ISP&#39;s (Internet Service Providers) en webmailservices te maken. Dergelijke hulpmiddelen verzenden een pre-vlucht exemplaar van een e-mail naar een netwerk van testinboxes, zodat kunt u zien hoe het bericht, over deze diensten zal tonen of teruggeven. Ze kunnen ook rapporten en opties voor codecorrectie bevatten die u helpen snel oplossingen te vinden en te maken die de leesbaarheid verbeteren.
 
-Meer informatie [in deze sectie](../../delivery/using/inbox-rendering.md).
+Meer informatie [in deze sectie](inbox-rendering.md).
 
 ## Proefberichten {#proof-messages}
 
 Door proefdrukken te verzenden, kunt u de koppeling om te weigeren controleren, de pagina spiegelen en andere koppelingen controleren, het bericht valideren, controleren of afbeeldingen worden weergegeven, mogelijke fouten opsporen, enz. Mogelijk wilt u ook uw ontwerp en rendering op verschillende apparaten controleren.
 
-Meer informatie [in deze sectie](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+Meer informatie [in deze sectie](steps-validating-the-delivery.md#sending-a-proof).
 
 ## A/B-testleveringen instellen {#a-b-testing-deliveries}
 
@@ -54,9 +54,9 @@ Als u meerdere inhoud voor een e-maillevering hebt, kunt u A/B-tests gebruiken o
 
 * Selecteer het bestand met de hoogste successnelheid en stuur het naar de rest van het doel
 
-Meer informatie [in deze sectie](../../delivery/using/get-started-a-b-testing.md).
+Meer informatie [in deze sectie](get-started-a-b-testing.md).
 
-## Zorg ervoor dat uw bericht {#make-sure-your-message-is-delivered} wordt geleverd
+## Controleer of je bericht is bezorgd {#make-sure-your-message-is-delivered}
 
 Als laatste stap maximaliseert u uw kansen en gebruikt u de kracht van Adobe Campaign Classic om ervoor te zorgen dat uw bericht ook daadwerkelijk aan de relevante ontvangers wordt bezorgd.
 
@@ -66,7 +66,7 @@ U kunt een volledig validatieproces definiëren, waarbij Adobe Campaign-operator
 
 ### Golven gebruiken
 
-U kunt het verzonden volume progressief verhogen gebruikend golven. Zo voorkomt u dat uw berichten als spam worden gemarkeerd of dat u het aantal berichten per dag wilt beperken. Met golven kunt u leveringen in verschillende batches verdelen in plaats van tegelijkertijd grote volumes berichten te verzenden. Meer informatie [in deze sectie](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
+U kunt het verzonden volume progressief verhogen gebruikend golven. Zo voorkomt u dat uw berichten als spam worden gemarkeerd of dat u het aantal berichten per dag wilt beperken. Met golven kunt u leveringen in verschillende batches verdelen in plaats van tegelijkertijd grote volumes berichten te verzenden. Meer informatie [in deze sectie](steps-sending-the-delivery.md#sending-using-multiple-waves).
 
 ### Prioriteitsberichten
 
