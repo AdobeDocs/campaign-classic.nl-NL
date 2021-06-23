@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 6c48cfea-6d20-4462-a485-71e1575a08a7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 6%
+source-wordcount: '128'
+ht-degree: 7%
 
 ---
 
@@ -27,6 +27,6 @@ U kunt de structuur van het gegenereerde schema vervolgens controleren op de tab
 >
 >Als u het opnieuw genereren van alle schema&#39;s moet forceren, bijvoorbeeld om bepaalde afhankelijkheidsproblemen in de omgekeerde koppelingen op te lossen, kunt u de volgende opdracht starten vanaf de Adobe Campaign-toepassingsserver:
 >
->**nlserver config -postupgrade -instance:&quot;&lt;instance_name>&#39; -force**
+> `nlserver config -postupgrade -instance:`&lt;instance_name>` -force`
 >
 >Vervolgens moet u de Adobe Campaign-toepassingsserver opnieuw starten en de verbinding met de clientconsole verbreken of opnieuw tot stand brengen.
