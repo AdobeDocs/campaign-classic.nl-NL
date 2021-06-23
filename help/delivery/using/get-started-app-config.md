@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 10%
@@ -19,7 +19,7 @@ U kunt in deze sectie een configuratiemonster vinden die op een bedrijf wordt ge
 
 Als u pushberichten wilt verzenden in Adobe Campaign, moet u:
 
-* Maak een **[!UICONTROL Mobile application]**-tekstinformatieservice voor de mobiele toepassing Neotrips. Zie [deze sectie voor iOS](../../delivery/using/configuring-the-mobile-application.md#configuring-ios-service). en [deze sectie voor Android](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service).
+* Maak een **[!UICONTROL Mobile application]**-tekstinformatieservice voor de mobiele toepassing Neotrips. Zie [deze sectie voor iOS](configuring-the-mobile-application.md#configuring-ios-service). en [deze sectie voor Android](configuring-the-mobile-application-android.md#configuring-android-service).
 * Voeg de iOS- en Android-versies van de toepassing toe aan deze service.
 * Een levering maken voor [iOS](create-notifications-ios.md) en [Android](create-notifications-android.md).
 
@@ -29,7 +29,7 @@ Als u pushberichten wilt verzenden in Adobe Campaign, moet u:
 >
 >Ga naar het tabblad **[!UICONTROL Subscriptions]** van de service om de lijst met abonnees van de service weer te geven, d.w.z. alle personen die de toepassing op hun mobiele telefoon hebben geïnstalleerd en ermee hebben ingestemd meldingen te ontvangen.
 
-## Het pakket {#installing-package-ios} installeren
+## Het pakket installeren {#installing-package-ios}
 
 ![](assets/do-not-localize/how-to-video.png) [Leer hoe u het pakket voor de mobiele app in video installeert](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
 
@@ -64,6 +64,6 @@ Installatiestappen zijn:
 Zodra deze stap is uitgevoerd, kunt u uw Android- en iOS-toepassingen configureren.
 Raadpleeg de volgende secties:
 
-* [Configuratiestappen voor iOS](../../delivery/using/configuring-the-mobile-application.md)
+* [Configuratiestappen voor iOS](configuring-the-mobile-application.md)
 
-* [Configuratiestappen voor Android](../../delivery/using/configuring-the-mobile-application-android.md)
+* [Configuratiestappen voor Android](configuring-the-mobile-application-android.md)
