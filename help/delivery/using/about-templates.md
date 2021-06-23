@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 2%
@@ -33,4 +33,4 @@ Er zijn twee typen sjablonen:
 
 >[!NOTE]
 >
->De beschikbare malplaatjes hangen van uw toegangsrechten, van uw instantieconfiguratie, en van de context af. Wanneer u bijvoorbeeld een informatiedienst maakt, kunt u een leveringssjabloon koppelen voor bevestigingsberichten: u kunt dan slechts tot de malplaatjes toegang hebben waarvan doelafbeelding de abonnementstoewijzing is. Raadpleeg [Selecteer een doeltoewijzing](../../delivery/using/selecting-a-target-mapping.md) en [Informatie over services en abonnementen](../../delivery/using/about-services-and-subscriptions.md) voor meer informatie.
+>De beschikbare malplaatjes hangen van uw toegangsrechten, van uw instantieconfiguratie, en van de context af. Wanneer u bijvoorbeeld een informatiedienst maakt, kunt u een leveringssjabloon koppelen voor bevestigingsberichten: u kunt dan slechts tot de malplaatjes toegang hebben waarvan doelafbeelding de abonnementstoewijzing is. Raadpleeg [Selecteer een doeltoewijzing](selecting-a-target-mapping.md) en [Informatie over services en abonnementen](about-services-and-subscriptions.md) voor meer informatie.
