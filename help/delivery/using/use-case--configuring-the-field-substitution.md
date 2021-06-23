@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 4%
@@ -30,15 +30,15 @@ Als u een willekeurige veldvervanging wilt gebruiken, moet u beschikken over:
 * een levering met één of meerdere verpersoonlijkingsgebieden,
 * zaadadressen de waarvan **gegevensschema** volgens de verpersoonlijkingsgebieden wordt gewijzigd die in de levering worden gebruikt.
 
-## Een levering {#step-1---creating-a-delivery} maken
+## Een levering maken {#step-1---creating-a-delivery}
 
-De stappen voor het maken van een levering worden beschreven in de sectie [Een e-maillevering maken](../../delivery/using/creating-an-email-delivery.md).
+De stappen voor het maken van een levering worden beschreven in de sectie [Een e-maillevering maken](creating-an-email-delivery.md).
 
 In dit voorbeeld heeft de leveringsmanager de nieuwsbrief gemaakt.
 
 ![](assets/dlv_seeds_usecase_24.png)
 
-## Het zaadadresgegevensschema {#editing-the-seed-addresses-data-schema} bewerken
+## Het gegevensschema van de zaadadressen bewerken {#editing-the-seed-addresses-data-schema}
 
 De instructies over hoe te om een gegevensschema te wijzigen zijn gedetailleerd in de sectie.
 
@@ -51,7 +51,7 @@ In dit voorbeeld, neemt het gegevensschema van zaadadressen een waarde die van h
 
 Deze opsomming laat de gebruiker het favoriete literaire genre van hun cliënten specificeren.
 
-Als u wilt dat deze wijziging van het gegevensschema kan worden weergegeven in de beginadressen **Invoerformulier**, moet u het bijwerken. Raadpleeg de sectie [Invoerformulier bijwerken](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form).
+Als u wilt dat deze wijziging van het gegevensschema kan worden weergegeven in de beginadressen **Invoerformulier**, moet u het bijwerken. Raadpleeg de sectie [Invoerformulier bijwerken](use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form).
 
 ## Aanpassing configureren {#configuring-personalization}
 
@@ -61,7 +61,7 @@ Als u wilt dat deze wijziging van het gegevensschema kan worden weergegeven in d
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. Vorm uw leveringslijst en uw zaadadressen. Zie [Doelpopulaties identificeren](../../delivery/using/steps-defining-the-target-population.md).
+1. Vorm uw leveringslijst en uw zaadadressen. Zie [Doelpopulaties identificeren](steps-defining-the-target-population.md).
 
    In dit voorbeeld selecteert de gebruiker gebruikers van wie **Favoriete literaire genre** Sci-Fi als belangrijkste doelpopulatie is.
 
@@ -73,7 +73,7 @@ Als u wilt dat deze wijziging van het gegevensschema kan worden weergegeven in d
 
    >[!NOTE]
    >
-   >Raadpleeg [Hoofdlettergebruik voor meer informatie over de **[!UICONTROL Edit the dynamic condition...]**-koppeling: het selecteren van zaadadressen op criteria](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
+   >Raadpleeg [Hoofdlettergebruik voor meer informatie over de **[!UICONTROL Edit the dynamic condition...]**-koppeling: het selecteren van zaadadressen op criteria](use-case--selecting-seed-addresses-on-criteria.md).
 
 1. Klik op het tabblad **[!UICONTROL Preview]** en selecteer vervolgens een beginadres om de personalisatie te testen.
 
