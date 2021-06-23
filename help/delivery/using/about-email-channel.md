@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 12%
@@ -25,10 +25,10 @@ Voordat u begint met het verzenden van e-mails:
 
 De belangrijkste stappen voor het verzenden van een e-mail zijn:
 
-* [Een e-maillevering maken](../../delivery/using/creating-an-email-delivery.md)
-* [Doelpopulatie definiëren](../../delivery/using/steps-defining-the-target-population.md)
-* [De e-mailcontent opgeven](../../delivery/using/defining-the-email-content.md)
-* [E-mail verzenden](../../delivery/using/sending-messages.md)
-* [De levering controleren](../../delivery/using/about-delivery-monitoring.md)
+* [Een e-maillevering maken](creating-an-email-delivery.md)
+* [Doelpopulatie definiëren](steps-defining-the-target-population.md)
+* [De e-mailcontent opgeven](defining-the-email-content.md)
+* [E-mail verzenden](sending-messages.md)
+* [De levering controleren](about-delivery-monitoring.md)
 
 In de onderstaande secties vindt u specifieke informatie over het e-mailkanaal. Voor globale informatie over hoe te om een levering tot stand te brengen, verwijs naar [deze sectie](steps-about-delivery-creation-steps.md).
