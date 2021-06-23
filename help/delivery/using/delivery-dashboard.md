@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 4%
@@ -32,10 +32,10 @@ Hier volgt de informatie die u kunt controleren met de verschillende tabbladen d
 
 **Verwante onderwerpen:**
 
-* [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
-* [Werken met quarantainebeheer](../../delivery/using/understanding-quarantine-management.md)
-* [Best practices voor verzending](../../delivery/using/delivery-best-practices.md)
-* [Leverbaarheid beheren](../../delivery/using/about-deliverability.md)
+* [Leveringsfouten begrijpen](understanding-delivery-failures.md)
+* [Werken met quarantainebeheer](understanding-quarantine-management.md)
+* [Best practices voor verzending](delivery-best-practices.md)
+* [Leverbaarheid beheren](about-deliverability.md)
 
 ## Leveringsoverzicht {#delivery-summary}
 
@@ -49,11 +49,11 @@ De inhoud van dit lusje kan volgens uw vereisten worden gevormd. Raadpleeg [deze
 
 ![](assets/delivery-report.png)
 
-## Leveringslogboeken, geschiedenis en uitsluitingen {#delivery-logs-and-history}
+## Afleveringsregisters, geschiedenis en uitsluitingen {#delivery-logs-and-history}
 
 Het tabblad **[!UICONTROL Delivery]** geeft een geschiedenis van de gebeurtenissen in deze levering. Het bevat de leveringslogboeken, d.w.z. de lijst van verzonden berichten en hun status en de bijbehorende berichten.
 
-Voor een levering kunt u (bijvoorbeeld) alleen ontvangers met een mislukte levering of een adres in quarantaine weergeven. Om dit te doen, klik **[!UICONTROL Filters]** knoop en selecteer **[!UICONTROL By state]**. Selecteer vervolgens het frame in de vervolgkeuzelijst. Verschillende statussen worden vermeld in [deze pagina](../../delivery/using/delivery-statuses.md).
+Voor een levering kunt u (bijvoorbeeld) alleen ontvangers met een mislukte levering of een adres in quarantaine weergeven. Om dit te doen, klik **[!UICONTROL Filters]** knoop en selecteer **[!UICONTROL By state]**. Selecteer vervolgens het frame in de vervolgkeuzelijst. Verschillende statussen worden vermeld in [deze pagina](delivery-statuses.md).
 
 >[!NOTE]
 >
@@ -63,11 +63,11 @@ Voor een levering kunt u (bijvoorbeeld) alleen ontvangers met een mislukte lever
 
 Met de koppeling **[!UICONTROL Display the mirror page for this message...]** kunt u de spiegelpagina weergeven voor de inhoud van de levering die is geselecteerd in de lijst in een nieuw venster.
 
-De spiegelpagina is alleen beschikbaar voor leveringen waarvoor HTML-inhoud is gedefinieerd. Voor meer op dit, verwijs naar [Generating the mirror page](../../delivery/using/sending-messages.md#generating-the-mirror-page).
+De spiegelpagina is alleen beschikbaar voor leveringen waarvoor HTML-inhoud is gedefinieerd. Voor meer op dit, verwijs naar [Generating the mirror page](sending-messages.md#generating-the-mirror-page).
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
-## Logbestanden voor het bijhouden van de levering en geschiedenis {#tracking-logs}
+## Logbestanden en geschiedenis voor het bijhouden van leveringen {#tracking-logs}
 
 Op het tabblad **[!UICONTROL Tracking]** wordt de geschiedenis van het bijhouden van gegevens voor deze levering weergegeven. Op dit tabblad worden volggegevens weergegeven voor de verzonden berichten, d.w.z. alle URL&#39;s die door Adobe Campaign moeten worden gevolgd. De volgende gegevens worden per uur bijgewerkt.
 
@@ -75,7 +75,7 @@ Op het tabblad **[!UICONTROL Tracking]** wordt de geschiedenis van het bijhouden
 >
 >Als &#39;tracking&#39; niet is ingeschakeld voor levering, wordt dit tabblad niet weergegeven.
 
-De volgende configuratie wordt uitgevoerd in het aangewezen stadium in de leveringstovenaar. Zie [Hoe te om gevolgde verbindingen](../../delivery/using/how-to-configure-tracked-links.md) te vormen.
+De volgende configuratie wordt uitgevoerd in het aangewezen stadium in de leveringstovenaar. Zie [Hoe te om gevolgde verbindingen](how-to-configure-tracked-links.md) te vormen.
 
 **[!UICONTROL Tracking]** gegevens worden geïnterpreteerd in de leveringsrapporten. Zie [deze sectie](../../reporting/using/delivery-reports.md).
 
@@ -87,7 +87,7 @@ Op het tabblad **[!UICONTROL Inbox rendering]** kunt u een voorvertoning van het
 
 Op deze manier kunt u ervoor zorgen dat uw bericht optimaal aan de ontvangers wordt weergegeven op verschillende webclients, webmails en apparaten.
 
-Raadpleeg [deze pagina](../../delivery/using/inbox-rendering.md) voor meer informatie over het renderen in de Postvak IN.
+Raadpleeg [deze pagina](inbox-rendering.md) voor meer informatie over het renderen in de Postvak IN.
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
@@ -97,7 +97,7 @@ Het tabblad **[!UICONTROL Audit]** bevat het leveringslogboek en alle berichten 
 
 Met de knop **[!UICONTROL Refresh]** kunt u de gegevens bijwerken. Gebruik de knop **[!UICONTROL Filters]** om een filter op de gegevens te definiëren.
 
-Met speciale pictogrammen kunt u fouten of waarschuwingen herkennen. Zie [De levering analyseren](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+Met speciale pictogrammen kunt u fouten of waarschuwingen herkennen. Zie [De levering analyseren](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 Met het subtabblad **[!UICONTROL Proofs]** kunt u de lijst met proefdrukken weergeven die zijn verzonden.
 
@@ -105,7 +105,7 @@ Met het subtabblad **[!UICONTROL Proofs]** kunt u de lijst met proefdrukken weer
 
 U kunt de informatie wijzigen die in dit venster wordt weergegeven (en die van de tabbladen **[!UICONTROL Delivery]** en **[!UICONTROL Tracking]**) door de kolommen te selecteren die moeten worden weergegeven. Klik hiertoe op het pictogram **[!UICONTROL Configure list]** in de rechterbenedenhoek. Raadpleeg [deze sectie](../../platform/using/adobe-campaign-workspace.md#configuring-lists) voor meer informatie over het configureren van de lijstweergave.
 
-## Synchronisatie van dashboard {#delivery-dashboard-synchronization} leveren
+## Synchronisatie van het dashboard voor levering {#delivery-dashboard-synchronization}
 
 Van uw leveringsdashboard, wilt u de verwerkte berichten en leveringslogboeken controleren om ervoor te zorgen dat uw levering met succes werd verzonden.
 
