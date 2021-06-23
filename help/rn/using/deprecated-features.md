@@ -6,9 +6,9 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 778f0a9436f26c10b266019f761b499ab7547be1
+source-git-commit: c612b47463427751eff27d6092e371c918c87d93
 workflow-type: tm+mt
-source-wordcount: '1633'
+source-wordcount: '1634'
 ht-degree: 94%
 
 ---
@@ -27,7 +27,7 @@ Dit proces biedt klanten minstens één releasecyclus om hun implementatie aan e
 >[!NOTE]
 >Adobe Campaign-releases en nieuwe mogelijkheden worden vermeld in de [release-opmerkingen](../../rn/using/latest-release.md).
 
-## Verouderde functies {#deprecated-features}
+## Afgeschafte functies {#deprecated-features}
 
 Deze sectie bevat een lijst met functies en mogelijkheden die zijn gemarkeerd als verouderd in de nieuwste Campaign Classic-releases.
 
@@ -43,9 +43,9 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
   </tr>
     <tr>
   <td>Adobe Analytics-gegevensconnector<br></td>
-   <td><p>Vanaf de release van Campagne 21.1 is de Adobe Analytics Data Connector verouderd.</p>
+   <td><p>Vanaf de release van Campagne 21.1.3 is de Adobe Analytics Data Connector verouderd.</p>
    <p>Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../platform/using/adobe-analytics-connector.md">Meer informatie</a></p>
-  <p><em>Doeldatum voor verwijdering: 2022</em></p>
+  <p><em>Doeldatum verwijdering: 1 maart 2022</em></p>
   </td>
  </tr>
     <tr>
