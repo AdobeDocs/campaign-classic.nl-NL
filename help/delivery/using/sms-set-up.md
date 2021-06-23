@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1677'
 ht-degree: 34%
@@ -26,7 +26,7 @@ Als u naar een mobiele telefoon wilt verzenden, hebt u het volgende nodig:
 ## Een SMPP-externe account maken {#creating-an-smpp-external-account}
 
 Als u SMS naar een mobiele telefoon wilt verzenden, moet u eerst uw SMPP-externe account maken.
-Voor meer informatie over het protocol en de montages van SMS, verwijs naar deze [pagina](../../delivery/using/sms-protocol.md).
+Voor meer informatie over het protocol en de montages van SMS, verwijs naar deze [pagina](sms-protocol.md).
 
 Volg de onderstaande stappen om dit te doen:
 
@@ -42,7 +42,7 @@ Volg de onderstaande stappen om dit te doen:
 
    >[!CAUTION]
    >
-   > Vanaf versie 20.2 zijn verouderde connectors vervangen en niet ondersteund. Wij adviseren gebruikend de **[!UICONTROL Extended generic SMPP]** schakelaar. Voor meer informatie over hoe te om aan de geadviseerde schakelaar te migreren, verwijs naar deze [pagina](../../delivery/using/unsupported-connector-migration.md).
+   > Vanaf versie 20.2 zijn verouderde connectors vervangen en niet ondersteund. Wij adviseren gebruikend de **[!UICONTROL Extended generic SMPP]** schakelaar. Voor meer informatie over hoe te om aan de geadviseerde schakelaar te migreren, verwijs naar deze [pagina](unsupported-connector-migration.md).
 
 1. Met de optie **[!UICONTROL Enable verbose SMPP traces in the log file]** kunt u al het SMPP-verkeer in logbestanden dumpen. Deze optie moet zijn ingeschakeld om problemen met de connector op te lossen en om vergelijkingen te maken met het verkeer dat door de provider wordt waargenomen.
 
@@ -80,7 +80,7 @@ Volg de onderstaande stappen om dit te doen:
 
    Aangezien bepaalde providers het gebruik van het voorvoegsel &#39;+&#39; vereisen, wordt u echter geadviseerd contact op te nemen met uw provider en wordt u aangeraden deze optie indien nodig in te schakelen.
 
-   Met het selectievakje **[!UICONTROL Enable TLS over SMPP]** kunt u SMPP-verkeer coderen. Raadpleeg [deze pagina](../../delivery/using/sms-protocol.md) voor meer informatie.
+   Met het selectievakje **[!UICONTROL Enable TLS over SMPP]** kunt u SMPP-verkeer coderen. Raadpleeg [deze pagina](sms-protocol.md) voor meer informatie.
 
 1. Als u een **[!UICONTROL Extended generic SMPP]** schakelaar vormt, kunt u opstelling automatische antwoorden.
 
@@ -123,7 +123,7 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
    <td> £ </td> 
    <td> _ </td> 
    <td> ! </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> A </td> 
    <td> Q </td> 
    <td> a </td> 
@@ -143,7 +143,7 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
    <td> ¥ </td> 
    <td> <img height="21px" src="assets/gamma.png" /> </td> 
    <td> Aantal </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> C </td> 
    <td> S </td> 
    <td> c </td> 
@@ -309,7 +309,7 @@ U kunt **data_codings** verklaren en zonodig het coderen dwingen: Hiervoor geeft
 >
 >Declareer alleen de coderingen die u wilt gebruiken. Als sommige coderingen die door het SMSC worden verstrekt niet met uw doel van gebruik zouden moeten beantwoorden, verklaar hen niet in de lijst.
 
-## Automatisch antwoord {#automatic-reply}
+## Automatische reactie {#automatic-reply}
 
 Wanneer vestiging een uitgebreide generische schakelaar SMPP, kunt u automatische antwoorden vormen.
 
@@ -345,7 +345,7 @@ De stappen voor het instellen van een externe account met behulp van de uitgebre
 
 ## De leveringssjabloon wijzigen {#changing-the-delivery-template}
 
-Adobe Campaign biedt u een sjabloon voor levering aan mobiele apparaten. Deze sjabloon is beschikbaar in het knooppunt **[!UICONTROL Resources > Templates > Delivery templates]**. Raadpleeg voor meer informatie de sectie [Informatie over sjablonen](../../delivery/using/about-templates.md).
+Adobe Campaign biedt u een sjabloon voor levering aan mobiele apparaten. Deze sjabloon is beschikbaar in het knooppunt **[!UICONTROL Resources > Templates > Delivery templates]**. Raadpleeg voor meer informatie de sectie [Informatie over sjablonen](about-templates.md).
 
 Om via het kanaal van SMS te leveren, moet u een malplaatje tot stand brengen waarin de kanaalschakelaar van verwijzingen wordt voorzien.
 
