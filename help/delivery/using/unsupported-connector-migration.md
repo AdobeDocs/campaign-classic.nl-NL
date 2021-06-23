@@ -7,14 +7,14 @@ content-type: reference
 topic-tags: sending-messages-on-mobiles
 hidefromtoc: true
 exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 1%
 
 ---
 
-# Niet-ondersteunde SMS-aansluiting migreren naar de uitgebreide algemene SMPP-connector{#unsupported-connector-migration}
+# Niet-ondersteunde SMS-connector migreren naar de uitgebreide algemene SMPP-connector{#unsupported-connector-migration}
 
 Vanaf versie 20.2, zijn de erfenisschakelaars verouderd. Dit document zal u helpen schakelaars migreren die op het oude systeem nog lopen aan de geadviseerde schakelaar SMPP.
 
@@ -43,9 +43,9 @@ De oude schakelaars van SMS gebruiken de schakelaar van SMS van Java die het Web
 
 >[!CAUTION]
 >
->Zelfs als u de parameters kunt omzetten, vereist het vormen van de **[!UICONTROL Extended Generic SMPP]** schakelaar u om met uw leverancier te spreken die u de informatie nodig zal geven om de rest parameters in te vullen. Raadpleeg [deze pagina](../../delivery/using/sms-protocol.md) voor meer informatie.
+>Zelfs als u de parameters kunt omzetten, vereist het vormen van de **[!UICONTROL Extended Generic SMPP]** schakelaar u om met uw leverancier te spreken die u de informatie nodig zal geven om de rest parameters in te vullen. Raadpleeg [deze pagina](sms-protocol.md) voor meer informatie.
 
-Eerst, zult u een nieuwe **[!UICONTROL Extended Generic SMPP]** externe rekening moeten creëren en dan zou u sommige parameters kunnen omzetten. U kunt de gedetailleerde stappen in deze [pagina](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account) vinden.
+Eerst, zult u een nieuwe **[!UICONTROL Extended Generic SMPP]** externe rekening moeten creëren en dan zou u sommige parameters kunnen omzetten. U kunt de gedetailleerde stappen in deze [pagina](sms-set-up.md#creating-an-smpp-external-account) vinden.
 
 U moet nu de parameters van het **[!UICONTROL Mobile]** lusje van uw onlangs gecreeerd **[!UICONTROL Extended Generic SMPP]** externe rekening, afhankelijk van uw vorige schakelaar invullen.
 
@@ -97,7 +97,7 @@ Op het tabblad **[!UICONTROL SMSC specificities]**:
 * **[!UICONTROL Coding when sending]** komt overeen met  **[!UICONTROL ID Format in MT acknowledgement]**
 * **[!UICONTROL Coding when receiving]** komt overeen met  **[!UICONTROL ID Format in the SR]**
 
-### Van de Sybase365 schakelaar {#from-sybase}
+### Van de Sybase365-connector {#from-sybase}
 
 Vanuit uw **[!UICONTROL Sybase365]**-connector kunt u de nieuwe **[!UICONTROL Extended SMPP]**-account omzetten:
 
@@ -134,7 +134,7 @@ Op het tabblad **[!UICONTROL SMSC specificities]**:
 * **[!UICONTROL Coding when sending]** komt overeen met  **[!UICONTROL ID Format in MT acknowledgement]**
 * **[!UICONTROL Coding when receiving]** komt overeen met  **[!UICONTROL ID Format in the SR]**
 
-### Vanaf de Tele2-connector {#from-tele2}
+### Van de Tele2-connector {#from-tele2}
 
 Vanuit uw **[!UICONTROL Tele2]**-connector kunt u de nieuwe **[!UICONTROL Extended SMPP]**-account omzetten:
 
