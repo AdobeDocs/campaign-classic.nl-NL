@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 9%
@@ -21,7 +21,7 @@ Meer bepaald, verwijst de e-maillevering naar de reeks eigenschappen die de capa
 
 Raadpleeg de [Handleiding best practice](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl) voor een dieper inzicht in wat de leverbaarbaarheid is en voor meer informatie over de belangrijkste leverbare termen, concepten en benaderingen.
 
-## Hoe te om leverbaarheid {#deliverability-key-points} te verbeteren
+## Hoe te om leverbaarheid te verbeteren {#deliverability-key-points}
 
 De leveringsproblemen houden gewoonlijk verband met maatregelen van bescherming tegen spam die door Internet dienstverleners en de beheerders van de postserver worden uitgevoerd.
 
@@ -40,15 +40,15 @@ Het leverbaarheidspercentage is het aantal berichten dat de inboxes van de ontva
 Bij Adobe Campaign hangt het leverbrengingscijfer af van een groot aantal factoren, met name:
 
 * Correcte configuratie van uw instanties: Neem contact op met uw Adobe-vertegenwoordiger voor hulp.
-* Legitieme netwerkconfiguratie: zie [deze sectie](../../delivery/using/optimize-delivery.md#network-config) en [Domeininstelling en -strategie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy).
+* Legitieme netwerkconfiguratie: zie [deze sectie](optimize-delivery.md#network-config) en [Domeininstelling en -strategie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy).
 * Uw IP adresreputatie: zie [IP strategie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy).
-* Kwaliteit van de beoogde adressen: zie [Quarantainebeheer](../../delivery/using/optimize-delivery.md#quarantine-management).
+* Kwaliteit van de beoogde adressen: zie [Quarantainebeheer](optimize-delivery.md#quarantine-management).
 * Lage [aantal klachten](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html) en [harde stuit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html#hard-bounces).
-* Uw berichtinhoud: zie [E-mailinhoud beheren](../../delivery/using/control-message-content.md).
+* Uw berichtinhoud: zie [E-mailinhoud beheren](control-message-content.md).
 * Berichtverificatie (SPF, DKIM, DMARC): zie [deze sectie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 * Afkorting van afzender: om te leren hoe de belangrijkste ISPs een afzenderreputatie evalueert, zie [deze sectie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html).
 
-## Gereedschappen voor het leveren van campagnes {#deliverability-tools}
+## Hulpprogramma&#39;s voor het leveren van campagnes {#deliverability-tools}
 
 <!--Adobe Campaign provides a number of tools designed to ensure optimal deliverability.-->
 Adobe Campaign biedt verschillende tools om de prestaties van uw platform bij te houden en te verbeteren. Op deze pagina worden ook de belangrijkste beginselen gemarkeerd die u in gedachten moet houden om de prestaties te optimaliseren wanneer u campagne gebruikt.
@@ -57,10 +57,10 @@ Adobe Campaign biedt verschillende tools om de prestaties van uw platform bij te
 
 Wanneer het vormen van, het ontwerpen van, en het testen van uw bericht, zorg ervoor u de beste praktijken volgt die in de hieronder vermelde secties worden vermeld. Door gebruik te maken van alle functies die Adobe Campaign biedt, kunt u de leverbaarheid verbeteren.
 
-* [Best practices voor verzending](../../delivery/using/delivery-best-practices.md)
-* [E-mailcontent beheren](../../delivery/using/control-message-content.md)
-* [Inboxrendering](../../delivery/using/inbox-rendering.md)
-* [Een proef verzenden](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)
+* [Best practices voor verzending](delivery-best-practices.md)
+* [E-mailcontent controleren](control-message-content.md)
+* [Inboxrendering](inbox-rendering.md)
+* [Een proef verzenden](steps-validating-the-delivery.md#sending-a-proof)
 
 ### Verifieer toestemming door dubbele opt-in {#double-opt-in}
 
@@ -80,9 +80,9 @@ Sommige internetproviders beschouwen e-mails automatisch als spam als het aantal
 
 Raadpleeg de volgende secties voor meer informatie hierover:
 
-* [Leveringsfouten begrijpen](../../delivery/using/understanding-delivery-failures.md)
-* [Werken met quarantainebeheer](../../delivery/using/understanding-quarantine-management.md)
-* [Quarantine versus lijst van gewezen personen](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist)
+* [Leveringsfouten begrijpen](understanding-delivery-failures.md)
+* [Werken met quarantainebeheer](understanding-quarantine-management.md)
+* [Quarantine versus lijst van gewezen personen](understanding-quarantine-management.md#quarantine-vs-denylist)
 
 ### Gereedschappen voor bewaking en rapportage gebruiken
 
@@ -92,8 +92,8 @@ Met Adobe Campaign kunt u controleren hoe uw leveringen presteren aan de hand va
 
 Raadpleeg de volgende secties voor meer informatie hierover:
 
-* [Afleverbaarheid controleren](../../delivery/using/monitoring-deliverability.md)
-* [Informatie over leveringscontrole](../../delivery/using/about-delivery-monitoring.md)
+* [Leverbaarheid controleren](monitoring-deliverability.md)
+* [Informatie over leveringscontrole](about-delivery-monitoring.md)
 * [Ingebouwde Campaign-rapporten](../../reporting/using/about-campaign-built-in-reports.md)
 
 <!--TO REMOVE
