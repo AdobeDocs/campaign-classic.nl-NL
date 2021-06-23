@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 exl-id: 6474cf2e-c4db-4430-b001-18bf4911b0ea
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 9%
@@ -22,4 +22,4 @@ Met Adobe Campaign kunt u bestanden maken die op grote schaal persoonlijke lette
 >Postadressen zijn berekende velden. Een adres kan maximaal zes lijnen door gebrek bevatten: de eerste regel bevat de voornaam en achternaam, de volgende regels bevatten het postadres (weg enz.) en de laatste regel bevat de postcode en de stad of plaats.\
 >Een adres wordt als volledig beschouwd als de naam, het gebied van de code van ZIP/Postal, en stad/stad gebieden niet leeg zijn.
 
-In de onderstaande secties vindt u informatie die specifiek is voor het directe-mailkanaal. Voor globale informatie over om een levering tot stand te brengen en te verzenden, verwijs naar [deze sectie](../../delivery/using/steps-about-delivery-creation-steps.md).
+In de onderstaande secties vindt u informatie die specifiek is voor het directe-mailkanaal. Voor globale informatie over om een levering tot stand te brengen en te verzenden, verwijs naar [deze sectie](steps-about-delivery-creation-steps.md).
