@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Een contentsjabloon gebruiken{#using-a-content-template}
 
-## Informatie over inhoudssjablonen {#about-content-templates}
+## Over inhoudssjablonen {#about-content-templates}
 
 Er kan rechtstreeks naar inhoudssjablonen worden verwezen en deze kunnen worden gebruikt in leveringen. Zie [Levering maken via contentbeheer](#creating-a-delivery-via-content-management)
 
@@ -31,9 +31,9 @@ De lay-out wordt automatisch toegepast op basis van de geselecteerde instellinge
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-Raadpleeg het voorbeeld van de volledige implementatie voor meer informatie hierover: [Inhoud maken in de leveringstovenaar](../../delivery/using/use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
+Raadpleeg het voorbeeld van de volledige implementatie voor meer informatie hierover: [Inhoud maken in de leveringstovenaar](use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
 
-## Inhoudsinstanties {#creating-a-content-instance} maken
+## Inhoudsinstanties maken {#creating-a-content-instance}
 
 U kunt inhoud direct in de boom van Adobe Campaign tot stand brengen die in werkschema&#39;s wordt gebruikt, wordt uitgevoerd, of direct in nieuwe leveringen wordt geïnjecteerd.
 
@@ -69,13 +69,13 @@ Voer de volgende stappen uit:
 
    >[!NOTE]
    >
-   >U kunt het genereren van niet-goedgekeurde inhoud toestaan. Om dit te doen, verander de relevante optie in het publicatiemalplaatje. Voor meer op dit, verwijs naar [Creërend en vormend het malplaatje](../../delivery/using/publication-templates.md#creating-and-configuring-the-template).
+   >U kunt het genereren van niet-goedgekeurde inhoud toestaan. Om dit te doen, verander de relevante optie in het publicatiemalplaatje. Voor meer op dit, verwijs naar [Creërend en vormend het malplaatje](publication-templates.md#creating-and-configuring-the-template).
 
    De inhoud van HTML en van de Tekst wordt geproduceerd door gebrek in **publishing** omslag van de instantie van Adobe Campaign. U kunt de publicatiemap wijzigen met de optie **NcmPublishingDir**.
 
-## Een inhoudsinstantie {#delivering-a-content-instance} leveren
+## Inhoudsinstantie leveren {#delivering-a-content-instance}
 
-Als u een inhoudsinstantie wilt maken en leveren, moet een leveringssjabloon worden gekoppeld aan de publicatiesjabloon die wordt gebruikt om deze inhoud te genereren. Raadpleeg [Delivery](../../delivery/using/publication-templates.md#delivery) voor meer informatie hierover.
+Als u een inhoudsinstantie wilt maken en leveren, moet een leveringssjabloon worden gekoppeld aan de publicatiesjabloon die wordt gebruikt om deze inhoud te genereren. Raadpleeg [Delivery](publication-templates.md#delivery) voor meer informatie hierover.
 
 Bovendien moet de opslagmap voor inhoud worden toegewezen aan inhoud die is ontleend aan deze publicatiesjabloon (wanneer u met een inhoudsmap meerdere typen inhoud kunt genereren, kunnen leveringen niet automatisch worden gemaakt).
 
