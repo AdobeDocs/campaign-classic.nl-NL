@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '880'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
@@ -44,7 +44,7 @@ Als u verpersoonlijkingsvelden wilt invoegen, klikt u op het vervolgkeuzepictogr
 
 Na de selectie van een gegevensbron (ontvangende velden of bestandsveld) neemt deze invoeging de vorm aan van een opdracht die wordt geïnterpreteerd door Adobe Campaign en wordt vervangen door de waarde van het veld voor een bepaalde ontvanger. De fysieke vervanging kan dan op **[!UICONTROL Preview]** tabel worden bekeken.
 
-## Voorbeeld van aanpassingsvelden {#personalization-fields-example}
+## Voorbeeld van personalisatievelden {#personalization-fields-example}
 
 We maken een e-mail waarin we eerst de naam van de ontvanger invoegen en vervolgens de aanmaakdatum van het profiel in de hoofdtekst van het bericht toevoegen. Dit doet u als volgt:
 
@@ -75,7 +75,7 @@ We maken een e-mail waarin we eerst de naam van de ontvanger invoegen en vervolg
 
 ## Aanpassing optimaliseren {#optimizing-personalization}
 
-U kunt personalisatie optimaliseren met behulp van een speciale optie: **[!UICONTROL Prepare the personalization data with a workflow]**, beschikbaar op het **[!UICONTROL Analysis]** lusje van de leveringseigenschappen. Zie [deze sectie](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery) voor meer informatie over het analyseren van de aflevering.
+U kunt personalisatie optimaliseren met behulp van een speciale optie: **[!UICONTROL Prepare the personalization data with a workflow]**, beschikbaar op het **[!UICONTROL Analysis]** lusje van de leveringseigenschappen. Zie [deze sectie](steps-validating-the-delivery.md#analyzing-the-delivery) voor meer informatie over het analyseren van de aflevering.
 
 Tijdens de leveringsanalyse, leidt deze optie automatisch tot en voert een werkschema uit dat alle gegevens met betrekking tot het doel in een tijdelijke lijst, met inbegrip van gegevens van lijsten verbonden in FDA opslaat.
 
@@ -102,7 +102,7 @@ Wanneer de analyse is voltooid, gaat u naar de workflow **[!UICONTROL Properties
 
 ![](assets/perso_optimization_temp_table.png)
 
-## Timing out personalization phase {#timing-out-personalization}
+## Timing uit verpersoonlijkingsfase {#timing-out-personalization}
 
 Om leveringsbescherming te verbeteren, kunt u een onderbreking voor de verpersoonlijkingsfase plaatsen.
 
@@ -118,7 +118,7 @@ Als u deze optie instelt op 0, is er geen tijdslimiet voor de verpersoonlijkings
 
 ## Video over zelfstudie {#personalization-fields-video}
 
-Leer hoe u een verpersoonlijkingsveld toevoegt aan de onderwerpregel en de inhoud van een e-maillevering.
+Leer hoe u een personalisatieveld toevoegt aan de onderwerpregel en de content van een e-maillevering.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
