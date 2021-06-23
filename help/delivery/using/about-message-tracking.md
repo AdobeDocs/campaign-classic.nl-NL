@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 9%
@@ -19,13 +19,13 @@ Dankzij de trackingfuncties van Adobe Campaign kunt u de verzonden berichten tra
 
 Deze informatie wordt teruggewonnen in **[!UICONTROL Tracking]** lusje van het profiel van elke ontvanger van de levering. Dit tabblad bevat alle URL-koppelingen die worden bijgehouden en waarop de ontvanger heeft geklikt en die in de lijst zijn geselecteerd. Dit is de accumulatie van alle URLs die in de leveringen worden gevolgd die nog in het leveringsscherm aanwezig zijn. De lijst kan worden gevormd en zal typisch bevatten: de URL waarop is geklikt, de datum en tijd van de klik en het document waarin de URL is gevonden. Raadpleeg [deze sectie](../../platform/using/editing-a-profile.md#tracking-tab) voor meer informatie.
 
-Het **leveringsdashboard** is ook van belang om uw leveringen en eventuele problemen te controleren die tijdens het verzenden van berichten worden ondervonden. Zie [deze sectie](../../delivery/using/delivery-dashboard.md) voor meer informatie hierover.
+Het **leveringsdashboard** is ook van belang om uw leveringen en eventuele problemen te controleren die tijdens het verzenden van berichten worden ondervonden. Zie [deze sectie](delivery-dashboard.md) voor meer informatie hierover.
 
 Het volgende diagram toont de stadia van de dialoog tussen de gebruiker en de diverse servers.
 
 ![](assets/tracking-diagram.png)
 
-## Tekstspatiëring {#configure-tracking} configureren
+## Tracking configureren {#configure-tracking}
 
 <img src="assets/do-not-localize/icon-configure.svg" width="60px">
 
@@ -47,23 +47,23 @@ Zodra het volgen wordt gevormd en uw URLs bevolkt, moet de volgende server worde
 
 **Bijgehouden koppelingen**
 
-U kunt de ontvangst van berichten en de activering van de verbindingen volgen die in de berichtinhoud worden opgenomen om het gedrag van ontvangers beter te begrijpen. [Meer informatie](../../delivery/using/how-to-configure-tracked-links.md)
+U kunt de ontvangst van berichten en de activering van de verbindingen volgen die in de berichtinhoud worden opgenomen om het gedrag van ontvangers beter te begrijpen. [Meer informatie](how-to-configure-tracked-links.md)
 
 **URL-tracking**
 
-Traceringsopties kunnen worden geconfigureerd door bijgehouden URL&#39;s te activeren of deactiveren. [Meer informatie](../../delivery/using/personalizing-url-tracking.md)
+Traceringsopties kunnen worden geconfigureerd door bijgehouden URL&#39;s te activeren of deactiveren. [Meer informatie](personalizing-url-tracking.md)
 
 **Aanpassing van koppelingen**
 
-Met de mogelijkheden voor het bijhouden van Campaign Classic kunt u koppelingen toevoegen in e-mailberichten die kunnen worden aangepast en die het bijhouden van wijzigingen ondersteunen. [Meer informatie](../../delivery/using/tracking-personalized-links.md)
+Met de mogelijkheden voor het bijhouden van Campaign Classic kunt u koppelingen toevoegen in e-mailberichten die kunnen worden aangepast en die het bijhouden van wijzigingen ondersteunen. [Meer informatie](tracking-personalized-links.md)
 
 **Logboeken bijhouden**
 
-Met de technische workflow voor bijhouden worden de gegevens voor bijhouden opgehaald nadat de levering is verzonden en de tekstspatiëring is geactiveerd. Deze gegevens vindt u op het tabblad Bijhouden van de levering. [Meer informatie](../../delivery/using/accessing-the-tracking-logs.md)
+Met de technische workflow voor bijhouden worden de gegevens voor bijhouden opgehaald nadat de levering is verzonden en de tekstspatiëring is geactiveerd. Deze gegevens vindt u op het tabblad Bijhouden van de levering. [Meer informatie](accessing-the-tracking-logs.md)
 
 **Tracking van tests**
 
-Voordat u de berichten verzendt met het bijhouden van de berichten, kunt u het bijhouden van de berichten testen op de spiegel-, e-maillogboeken en koppelingen. [Meer informatie](../../delivery/using/testing-tracking.md)
+Voordat u de berichten verzendt met het bijhouden van de berichten, kunt u het bijhouden van de berichten testen op de spiegel-, e-maillogboeken en koppelingen. [Meer informatie](testing-tracking.md)
 
 ## Webtoepassing bijhouden {#web-application-tracking}
 
@@ -105,7 +105,7 @@ De verschillende tabellen geven u de lijst van indicatoren die in de verschillen
 
 <img src="assets/do-not-localize/icon-troubleshooting.svg" width="60px">
 
-De volgende tips voor het oplossen van problemen helpen u de meest voorkomende problemen op te lossen die zich voordoen bij het gebruik van tracking in Adobe Campaign Classic. Raadpleeg [deze sectie](../../delivery/using/tracking-troubleshooting.md) voor een geavanceerdere probleemoplossing.
+De volgende tips voor het oplossen van problemen helpen u de meest voorkomende problemen op te lossen die zich voordoen bij het gebruik van tracking in Adobe Campaign Classic. Raadpleeg [deze sectie](tracking-troubleshooting.md) voor een geavanceerdere probleemoplossing.
 
 * Controleren of het trackinglogproces wordt uitgevoerd
 
