@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Publicatiesjablonen{#publication-templates}
 
-## Informatie over publicatiesjablonen {#about-publication-templates}
+## Publicatiesjablonen {#about-publication-templates}
 
 De publicatiesjabloon is de identiteitskaart van de te publiceren inhoud. Zij verwijst naar de middelen die in het publicatieproces worden gebruikt, d.w.z.:
 
@@ -33,7 +33,7 @@ De identificatiesleutel van een stijlpagina is een tekenreeks die bestaat uit de
 >
 >In de praktijk wordt het aanbevolen dezelfde sleutel te gebruiken voor het schema, het formulier en de publicatiesjabloon.
 
-## De sjabloon {#creating-and-configuring-the-template} maken en configureren
+## De sjabloon maken en configureren {#creating-and-configuring-the-template}
 
 Publicatiesjablonen worden standaard opgeslagen in het knooppunt **[!UICONTROL Administration > Configuration > Publication templates]**. Als u een nieuwe sjabloon wilt maken, klikt u op de knop **[!UICONTROL New]** boven de lijst met sjablonen.
 
@@ -85,7 +85,7 @@ De volgende publicatieopties zijn beschikbaar:
 
    >[!NOTE]
    >
-   >Raadpleeg [Een inhoudsinstantie maken](../../delivery/using/using-a-content-template.md#creating-a-content-instance) voor meer informatie over het genereren van inhoud.
+   >Raadpleeg [Een inhoudsinstantie maken](using-a-content-template.md#creating-a-content-instance) voor meer informatie over het genereren van inhoud.
 
 ### Levering {#delivery}
 
@@ -95,13 +95,13 @@ Op dit tabblad kunt u een scenario selecteren om een levering rechtstreeks op de
 
 >[!NOTE]
 >
->Raadpleeg [Inhoudsinstantie leveren](../../delivery/using/using-a-content-template.md#delivering-a-content-instance) voor een voorbeeld van het maken van een levering op basis van inhoud.
+>Raadpleeg [Inhoudsinstantie leveren](using-a-content-template.md#delivering-a-content-instance) voor een voorbeeld van het maken van een levering op basis van inhoud.
 
 ### aggregator {#aggregator}
 
 Door de gegevens uit een script of querylijst te bundelen, kunt u het XML-document verrijken met de inhoudsgegevens. Het doel is bepaalde informatie waarnaar wordt verwezen door links aan te vullen of elementen uit de database toe te voegen.
 
-### Genereren van meerdere bestanden {#multi-file-generation}
+### Meerdere bestanden genereren {#multi-file-generation}
 
 Als u meerdere bestanden wilt genereren, selecteert u de optie **[!UICONTROL Multi-file generation]** in het publicatiemodel. Met deze optie kunt u scheidingsmarkeringen opgeven in de stijlpagina voor het begin van elke pagina van het uitvoerdocument. Het genereren van de inhoud levert een bestand op voor elke partitioneringstag die wordt aangetroffen.
 
