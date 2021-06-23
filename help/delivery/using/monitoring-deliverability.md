@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '531'
 ht-degree: 2%
 
 ---
 
-# Afleverbaarheid controleren{#monitoring-deliverability}
+# Leverbaarheid controleren{#monitoring-deliverability}
 
 Hieronder vindt u meer informatie over de verschillende bewakingstools van Adobe Campaign en enkele aanvullende richtlijnen voor het benutten van de functies die Adobe Campaign biedt om de prestaties van uw platform te controleren.
 
@@ -28,10 +28,10 @@ In Adobe Campaign Classic wordt **Deliverability monitoring** beheerd door de **
 
 Met het leveringspakket hebt u toegang tot:
 
-* Met het [Inbox-renderrapport](../../delivery/using/inbox-rendering.md) kunt u uw berichten voorvertonen op belangrijke e-mailclients om inhoud en reputatie te scannen.
+* Met het [Inbox-renderrapport](inbox-rendering.md) kunt u uw berichten voorvertonen op belangrijke e-mailclients om inhoud en reputatie te scannen.
 * Overzicht van berichtkwaliteit (inbox, spam).
 
-## Monitoringtools {#monitoring-tools}
+## Monitoringinstrumenten {#monitoring-tools}
 
 U kunt ook de volgende gereedschappen gebruiken:
 
@@ -41,22 +41,22 @@ U kunt ook de volgende gereedschappen gebruiken:
    * **[!UICONTROL Soft bounces]** duidt op reputatie. Dit aantal zou niet hoger moeten zijn dan 10% voor om het even welke bepaalde ISP.
 
    Zie de sectie [Leveringsstatistieken](../../reporting/using/global-reports.md#delivery-statistics) voor meer informatie.
-* Meer in het algemeen biedt het [bezorgdashboard](../../delivery/using/about-delivery-monitoring.md) u toegang tot:
-   * het [leveringsoverzicht](../../delivery/using/delivery-dashboard.md#delivery-summary), dat de details van het verzenden en het aantal berichten toont om te verzenden, te verwerken en met succes te verzenden;
-   * de [leveringslogboeken en de geschiedenis](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history), waaruit blijkt welk doel is uitgesloten en waarom;
-   * de [trackinglogboeken](../../delivery/using/delivery-dashboard.md#tracking-logs), die het volgen informatie zoals opent tonen en klikt.
+* Meer in het algemeen biedt het [bezorgdashboard](about-delivery-monitoring.md) u toegang tot:
+   * het [leveringsoverzicht](delivery-dashboard.md#delivery-summary), dat de details van het verzenden en het aantal berichten toont om te verzenden, te verwerken en met succes te verzenden;
+   * de [leveringslogboeken en de geschiedenis](delivery-dashboard.md#delivery-logs-and-history), waaruit blijkt welk doel is uitgesloten en waarom;
+   * de [trackinglogboeken](delivery-dashboard.md#tracking-logs), die het volgen informatie zoals opent tonen en klikt.
 
-## Bewakingsrichtlijnen {#monitoring-guidelines}
+## Controlerichtlijnen {#monitoring-guidelines}
 
 Hier volgen enkele aanvullende richtlijnen voor het controleren van de leverbaarheid:
 
 * Controleer regelmatig de [leveringdoorvoer](../../reporting/using/global-reports.md#delivery-throughput) voor het hele platform om te controleren of deze overeenkomt met de oorspronkelijke installatie.
-* Controleer of [retry](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) correct is ingesteld (30 minuten voor herbestellingsperiode en meer dan 20 pogingen) in leveringssjablonen.
-* Verifieer regelmatig dat [bounce](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management) brievenbus toegankelijk is en dat de rekening niet op het punt staat te verlopen.
-* Controleer elke leveringstijd, die van [leveringsdashboard](../../delivery/using/delivery-dashboard.md) toegankelijk is, om ervoor te zorgen dat het met de geldigheid van de leveringsinhoud (b.v. &#39;Flash-verkoop&#39; moet in minuten worden geleverd, niet in dagen).
-* Wanneer het gebruiken van [golven](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves), verifieer dat elke golf genoeg tijd heeft om te beëindigen alvorens volgende wordt teweeggebracht.
-* Controleer of het aantal fouten en het aantal nieuwe [quarantines](../../delivery/using/understanding-quarantine-management.md) consistent zijn met andere leveringen.
-* Raadpleeg de [leveringslogboeken](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) zorgvuldig om het soort fouten te controleren die worden benadrukt (lijsten van gewezen personen, DNS kwesties, anti-spamregels, enz.).
+* Controleer of [retry](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) correct is ingesteld (30 minuten voor herbestellingsperiode en meer dan 20 pogingen) in leveringssjablonen.
+* Verifieer regelmatig dat [bounce](understanding-delivery-failures.md#bounce-mail-management) brievenbus toegankelijk is en dat de rekening niet op het punt staat te verlopen.
+* Controleer elke leveringstijd, die van [leveringsdashboard](delivery-dashboard.md) toegankelijk is, om ervoor te zorgen dat het met de geldigheid van de leveringsinhoud (b.v. &#39;Flash-verkoop&#39; moet in minuten worden geleverd, niet in dagen).
+* Wanneer het gebruiken van [golven](steps-sending-the-delivery.md#sending-using-multiple-waves), verifieer dat elke golf genoeg tijd heeft om te beëindigen alvorens volgende wordt teweeggebracht.
+* Controleer of het aantal fouten en het aantal nieuwe [quarantines](understanding-quarantine-management.md) consistent zijn met andere leveringen.
+* Raadpleeg de [leveringslogboeken](delivery-dashboard.md#delivery-logs-and-history) zorgvuldig om het soort fouten te controleren die worden benadrukt (lijsten van gewezen personen, DNS kwesties, anti-spamregels, enz.).
 
 <!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
 
