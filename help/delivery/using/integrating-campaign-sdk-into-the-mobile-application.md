@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: sending-push-notifications
 version: Classic v7
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: a4fc52e68cbca861e1b942e0c7e41f3d5dc3df54
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Het doel van de SDK is de integratie van een mobiele toepassing in het Adobe Cam
 
 Raadpleeg de [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#MobileSDK) voor meer informatie over de verschillende ondersteunde Android- en iOS-versies.
 
-## Campagne SDK {#loading-campaign-sdk} laden
+## Campagne SDK laden {#loading-campaign-sdk}
 
 * **In Android**: moet  **neolane_sdk-release.** aarfile met het project worden verbonden.
 
@@ -54,7 +54,7 @@ Raadpleeg de [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#Mob
    >
    >Voor versie 1.0.25 van de SDK zijn de vier architecturen beschikbaar in het bestand **Neolane_SDK.h**.
 
-## Integratie-instellingen {#declaring-integration-settings} declareren
+## Integratie-instellingen declareren {#declaring-integration-settings}
 
 Als u de campagne-SDK wilt integreren in de mobiele toepassing, moet de functionele beheerder de ontwikkelaar de volgende informatie geven:
 
@@ -62,7 +62,7 @@ Als u de campagne-SDK wilt integreren in de mobiele toepassing, moet de function
 
    >[!NOTE]
    >
-   >Deze integratietoets wordt ingevoerd in de Adobe Campaign-console, op het tabblad **[!UICONTROL Information]** van de service die is toegewezen aan de mobiele toepassing. Zie [Een mobiele toepassing configureren in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+   >Deze integratietoets wordt ingevoerd in de Adobe Campaign-console, op het tabblad **[!UICONTROL Information]** van de service die is toegewezen aan de mobiele toepassing. Zie [Een mobiele toepassing configureren in Adobe Campaign](configuring-the-mobile-application.md).
 
 * **Een URL** voor bijhouden: die overeenkomt met het adres van de Adobe Campaign-trackingserver.
 * **Een marketing-URL**: om de inzameling van abonnementen toe te laten.
@@ -290,9 +290,9 @@ Met de registratiefunctie kunt u:
 
    >[!NOTE]
    >
-   >Van versie 7.0, zodra de **application:didReceiveRemoteNotification:fetchCompletionHandler** functie wordt uitgevoerd, roept het werkende systeem slechts deze functie. De functie **application:didReceiveRemoteNotification** wordt daarom niet aangeroepen.
+   >Vanaf versie 7.0, zodra de functie **application:didReceiveRemoteNotification:fetchCompletionHandler** is geïmplementeerd, roept het besturingssysteem deze functie alleen aan. De functie **application:didReceiveRemoteNotification** wordt daarom niet aangeroepen.
 
-## Stil bericht bijhouden {#silent-notification-tracking}
+## Beheer van stille meldingen {#silent-notification-tracking}
 
 Met iOS kunt u geen meldingen verzenden, een melding of gegevens die rechtstreeks naar een mobiele toepassing worden verzonden zonder deze weer te geven. Met Adobe Campaign kun je ze volgen.
 
@@ -332,7 +332,7 @@ Volg het onderstaande voorbeeld om je melding op te volgen:
 }
 ```
 
-### RegisterDeviceStatus gedelegeerde {#registerdevicestatus-delegate}
+### RegisterDeviceStatus-gedelegeerde {#registerdevicestatus-delegate}
 
 >[!NOTE]
 >
@@ -530,7 +530,7 @@ Ga als volgt te werk om **registerDeviceStatus**-gedelegeerde te implementeren:
 
 ## Variabelen {#variables}
 
-Met de variabelen kunt u het gedrag van mobiele toepassingen definiëren nadat u een melding hebt ontvangen. Deze variabelen moeten worden gedefinieerd in de code voor mobiele toepassingen en in de Adobe Campaign-console, op het tabblad **[!UICONTROL Variables]** in de toegewijde service voor mobiele toepassingen (zie [Een mobiele toepassing configureren in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md)). Hier is een voorbeeld van een code waarmee een mobiele toepassing toegevoegde variabelen in een melding kan verzamelen. In ons voorbeeld gebruiken we de variabele &quot;VAR&quot;.
+Met de variabelen kunt u het gedrag van mobiele toepassingen definiëren nadat u een melding hebt ontvangen. Deze variabelen moeten worden gedefinieerd in de code voor mobiele toepassingen en in de Adobe Campaign-console, op het tabblad **[!UICONTROL Variables]** in de toegewijde service voor mobiele toepassingen (zie [Een mobiele toepassing configureren in Adobe Campaign](configuring-the-mobile-application.md)). Hier is een voorbeeld van een code waarmee een mobiele toepassing toegevoegde variabelen in een melding kan verzamelen. In ons voorbeeld gebruiken we de variabele &quot;VAR&quot;.
 
 * **In Android**:
 
@@ -576,7 +576,7 @@ Met de variabelen kunt u het gedrag van mobiele toepassingen definiëren nadat u
 >
 >Adobe raadt u aan korte variabelenamen te kiezen, omdat de berichtgrootte voor iOS en Android beperkt is tot 4 kB.
 
-## Uitbreiding meldingsservice {#notification-service-extension}
+## Meldingsservice-extensie {#notification-service-extension}
 
 **Voor iOS**
 
