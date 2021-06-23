@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Door coupons toe te voegen aan uw leveringen kunnen uw ontvangers meer waarde kr
 >
 >Coupongegevens kunnen worden geïmporteerd en geëxporteerd in CSV- en XML-indeling. Raadpleeg [deze sectie](../../platform/using/get-started-data-import-export.md) voor meer informatie over importeren en exporteren.
 
-## Een coupon {#creating-a-coupon} maken
+## Een coupon maken {#creating-a-coupon}
 
 In de module coupon kunt u twee opties instellen voor het maken van coupons:
 
@@ -58,7 +58,7 @@ Voordat u de onderstaande stappen uitvoert, moet u weten welk type coupon u wilt
    >
    >Individuele coupons kunnen bulksgewijs worden ingevoerd. Raadpleeg [deze sectie](../../platform/using/get-started-data-import-export.md) voor meer informatie over importeren en exporteren.
 
-### Afzonderlijke coupons {#configuring-individual-coupons} configureren
+### Afzonderlijke coupons configureren {#configuring-individual-coupons}
 
 ![](assets/deliv_coup_03.png)
 
@@ -73,7 +73,7 @@ De waarden voor **[!UICONTROL status]**, **[!UICONTROL channel]**, en **[!UICONT
 
 ## Een coupon invoegen in een e-maillevering {#inserting-a-coupon-into-an-email-delivery}
 
-In het onderstaande voorbeeld wordt de levering gemaakt op de startpagina. Voor gedetailleerde instructies op hoe te om een levering tot stand te brengen, verwijs naar [deze sectie](../../delivery/using/about-email-channel.md). U kunt ook een coupon toevoegen aan een levering in een workflow.
+In het onderstaande voorbeeld wordt de levering gemaakt op de startpagina. Voor gedetailleerde instructies op hoe te om een levering tot stand te brengen, verwijs naar [deze sectie](about-email-channel.md). U kunt ook een coupon toevoegen aan een levering in een workflow.
 
 1. Ga naar **[!UICONTROL Campaigns]** en kies **[!UICONTROL Deliveries]**.
 1. Klik op **[!UICONTROL Create]**.
