@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 0a80912aae4cab58b6f06918a673aaca3883fbdf
 workflow-type: tm+mt
 source-wordcount: '2415'
 ht-degree: 100%
@@ -165,7 +165,7 @@ De informatie is 90 dagen beschikbaar in de database. Zodra het verzoek door de 
 
 Hier volgt een voorbeeld van het gegevensbestand van een betrokkene:
 
-![](assets/privacy-access-file.png)
+![](assets/do-not-localize/privacy-access-file.png)
 
 Gegevenscontrollers kunnen eenvoudig een webapplicatie maken, inclusief de bijbehorende JSSP-URL, om het gegevensbestand van de betrokkene beschikbaar te maken via een webpagina.
 
@@ -257,7 +257,7 @@ Allereerst moet u de verificatie uitvoeren via de API:
 
 1. Gebruik de methode &#39;Logon&#39; en voer een gebruikersnaam en wachtwoord in als parameters voor het verzoek. U krijgt een antwoord met een sessietoken. Hier volgt een voorbeeld van het gebruik van SoapUI.
 
-   ![](assets/privacy-api.png)
+   ![](assets/do-not-localize/privacy-api.png)
 
 1. Gebruik de geretourneerde sessietoken als verificatie voor alle verdere API-aanroepen. Deze vervalt na 24 uur.
 
@@ -269,7 +269,7 @@ Roep vervolgens de Privacy-API aan:
 
    Hier volgt een voorbeeld met de **[!UICONTROL CreateRequestByName]**. Bekijk hoe we de hierboven gegenereerde sessietoken gebruiken als verificatie. Het antwoord is de id van het gemaakte verzoek.
 
-   ![](assets/privacy-api-2.png)
+   ![](assets/do-not-localize/privacy-api-2.png)
 
    Houd rekening met het volgende als u bovenstaande stappen uitvoert:
 
