@@ -6,18 +6,18 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 100%
+source-wordcount: '1060'
+ht-degree: 99%
 
 ---
 
-# Aanvullende informatie over[!DNL Gold Standard]{#gold-standard}
+# Aanvullende informatie over [!DNL Gold Standard]{#gold-standard}
 
 Deze pagina bevat een lijst met [!DNL Gold Standard]-releases. U vindt meer informatie over Campaign [!DNL Gold Standard] [op deze pagina](gs-overview.md).
 
-## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] 11-release{#gs-11}
+## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] 11 release{#gs-11}
 
 _14 april 2021_
 
@@ -43,11 +43,13 @@ _22 december 2020_
 
 >[!CAUTION]
 >
-> * Deze release wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **30 juni 2021** verbinding te kunnen maken met Campaign.
+> * Deze release wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **30 juni 2021** verbinding te kunnen maken met Campaign. [Meer informatie](../../technotes/ims-updates.md)
 > * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
 > * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overstappen op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde oAuth-verificatiemodus voor Campaign wordt op **30 november 2021** buiten gebruik gesteld.
+
 >
->Meer informatie vindt u in de veelgestelde vragen over de [[!DNL Gold Standard] 11-upgrade](https://helpx.adobe.com/nl/campaign/kb/gold-standard-upgrade.html).
+>
+Meer informatie vindt u in de veelgestelde vragen over de [[!DNL Gold Standard] 11-upgrade](https://helpx.adobe.com/nl/campaign/kb/gold-standard-upgrade.html).
 
 De build 9032@d3b452f bevat de volgende verbeteringen en oplossingen:
 
@@ -61,7 +63,7 @@ De build 9032@d3b452f bevat de volgende verbeteringen en oplossingen:
 
 * Probleem verholpen waarbij workflows konden mislukken wanneer een activiteit **Verrijking** werd uitgevoerd. (NEO-17338)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 10-release{#gs-10}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 10 release{#gs-10}
 
 _7 juli 2020_
 
@@ -73,7 +75,7 @@ Er is een probleem verholpen waarbij tracking niet werkte als de handtekeningfun
 >
 >Wij adviseren u de clientconsole bij te werken met de beschikbare console in deze release. Zie [deze pagina](../../installation/using/installing-the-client-console.md)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 9-release{#gs-9}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 9 release{#gs-9}
 
 _22 juni 2020_
 
@@ -89,7 +91,7 @@ De volgende correcties betreffen het beveiligingsmechanisme voor koppelingen bij
 * Er is een probleem verholpen met de antiphishingservice. (NEO-25283)
 * Er is een probleem verholpen met tracking bij gebruik van specifieke aangepaste trackingformules. (NEO-25277)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 8-release{#gs-8}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 8 release{#gs-8}
 
 _29 april 2020_
 
@@ -114,7 +116,7 @@ De build 9032@3a9dc9c bevat de volgende oplossingen:
 * Oplossing voor een regressie die ertoe leidde dat de opschoningsworkflow vastliep.
 * Oplossing voor een kleine regressie in de logboeken van de opschoningsworkflow.
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 6-release{#gs-6}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 6 release{#gs-6}
 
 _9 maart 2020_
 
@@ -122,7 +124,7 @@ De build 9032@19f73c5 bevat de volgende oplossing:
 
 * Probleem met externe accounts met FTP via SSL opgelost. (NEO-20498)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 5-release{#gs-5}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 5 release{#gs-5}
 
 _17 december 2019_
 
@@ -130,7 +132,7 @@ De build 9032@d6b8062 bevat de volgende oplossing:
 
 * Er is een trackingprobleem verholpen op de volgende communicatiekanalen: mobiel (sms, mms), push (iOS, Android) en sociale netwerken (Facebook, Twitter). (NEO-19595)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 4-release{#gs-4}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 4 release{#gs-4}
 
 _11 december 2019_
 
@@ -138,7 +140,7 @@ De build 9032@bc4a935 bevat de volgende oplossing:
 
 * Er is een prestatieprobleem verholpen met het verzenden van berichten met een MSSQL-database. (NEO-17558)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 3-release{#gs-3}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 3 release{#gs-3}
 
 _20 november 2019_
 
@@ -148,7 +150,7 @@ De build 9032@3468c7b bevat de volgende oplossingen:
 * Er is een probleem verholpen met het weergeven van cumulatieve rapporten over meerdere leveringen. (NEO-18165)
 * Er is een probleem verholpen waarbij de webserver geblokkeerd kon raken of vastlopen.
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 2-release{#gs-2}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 2 release{#gs-2}
 
 _19 september 2019_
 
