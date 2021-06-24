@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;populaire onderwerpen
 product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: a9120e2db43fcb035e9760819e9c53148979da4f
+source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 48%
@@ -20,9 +20,9 @@ ht-degree: 48%
 
 * **[Veelgestelde vragen over de bescherming van Apple Mail Privacy ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/apple-mail-privacy-faq.html)**<br/> Veelgestelde vragenAanvankelijke instructies zoeken in reactie op de aankondiging van Apple met betrekking tot iOS 15
 
-* **[Onjuiste harde ](delivery/using/update-bounce-qualification.md)**<br/> grenzen verwijderenLeer hoe u onjuiste harde grenzen kunt bijwerken na een Apple-storing
+* **[Verbinding maken via IMS/Adobe ID? Upgrade naar de nieuwste builds](technotes/ims-updates.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne na** 30 juni 2021 **
 
-* **[Verbinding maken via IMS/Adobe ID? Upgrade naar de nieuwste builds](integrations/using/about-adobe-id.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne na** 30 juni 2021 **
+* **[Onjuiste harde ](delivery/using/update-bounce-qualification.md)**<br/> grenzen verwijderenLeer hoe u onjuiste harde grenzen kunt bijwerken na een Apple-storing
 
 * **[Beveilig uw Campagne ](technotes/acc-config-updates.md)**<br/> instancesUpdate aan recentste bouwt om uw platform van de Campagne te beveiligen
 
