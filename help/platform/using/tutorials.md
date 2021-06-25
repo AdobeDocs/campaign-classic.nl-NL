@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '394'
 ht-degree: 7%
 
 ---
@@ -21,7 +21,7 @@ Ga aan de slag met Adobe Campaign door onze intuïtieve stapsgewijze handleiding
 
 * [E-mailinhoud bewerken met Adobe Experience Manager](https://helpx.adobe.com/campaign/kb/acc-aem.html): Leer over de grondbeginselen om met de integratie tussen Adobe Campaign en Experience Manager te beginnen.
 * [Privacybeheer](https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html): Ontdek wat Adobe Campaign Classic biedt om u te helpen bij het naleven van uw privacy wanneer u onze service gebruikt.
-* [Dynamische inhoud in een e-mail](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html) integreren: ontdekken de grondbeginselen om met de integratie tussen Campaign Classic en de Norm van het Doel te beginnen.
+* [Dynamische inhoud in een e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html) integreren: ontdekken de grondbeginselen om met de integratie tussen Campaign Classic en de Norm van het Doel te beginnen.
 * [Te leveren items beheren](../../delivery/using/about-deliverability.md): Meer informatie over de concepten en beste praktijken met betrekking tot leverbaarheid evenals de hulpmiddelen die door Adobe Campaign Classic worden aangeboden om het verzenden van uw leveringen te optimaliseren.
 * [Aanbevolen werkwijzen](../../delivery/using/delivery-best-practices.md) voor levering: Meer informatie over de beste praktijken met betrekking tot leveringsontwerp en verzendend met Adobe Campaign Classic.
 * [Een upgrade](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) voor build uitvoeren: deze gids stelt u de belangrijkste stappen en beste praktijken voor om een bouwstijlverbetering met Campaign Classic uit te voeren.
@@ -41,12 +41,12 @@ Naast de productdocumentatie, kunt u tot Zelfhulp van de Campagne toegang hebben
 
 ### Tutorialvideo’s
 
-Belangrijkste functies van Adobe Campaign in video ontdekken. [Meer informatie](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/overview.html)
+Belangrijkste functies van Adobe Campaign in video ontdekken. [Meer informatie](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl)
 
 ### Trainingssessies en video&#39;s
 
 Naast deze korte en gedetailleerde video&#39;s vindt u [trainingscursussen](https://learning.adobe.com/catalog.html) en bekijkt u de functie [presentatievideo&#39;s](https://www.adobe.com/training/video.html) op Adobe.com.
 
-### Experience League-cursussen
+### Cursussen Experience League
 
 U kunt ook de [Aanbevolen cursussen](https://experienceleague.adobe.com/?lang=en#dashboard/learning) voor Adobe Campaign Classic bezoeken: cursussen zijn deskundig beheerde verzamelingen van lessen die u helpen snel vaardigheden en kennis te verwerven.
