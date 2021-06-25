@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 0e0912c68d132919eeac9b91b93960e70011153e
+source-git-commit: 98bbbb36c9f8156cc34e826a024ff6e6e3f3fee3
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 10%
@@ -28,7 +28,7 @@ We raden u ten zeerste aan URL&#39;s op te nemen in scheidingstekens op het tabb
 * Haakjes [ ]
 * Accolades { }
 
-In dit voorbeeld wordt de URL https://www.adobe.com gevolgd door een puntkomma (;). De puntkomma kan door geadresseerde-e-mailclients worden geïnterpreteerd als onderdeel van de URL. Hierdoor kan de koppeling worden verbroken. U kunt dit probleem voorkomen door de URL op een van de volgende manieren in te sluiten in scheidingstekens:
+In dit voorbeeld wordt de URL https://www.adobe.com gevolgd door een puntkomma. De puntkomma kan door ontvangers e-mailcliënten als deel van URL worden geïnterpreteerd. Hierdoor kan de koppeling worden verbroken. U kunt dit probleem voorkomen door de URL op een van de volgende manieren in te sluiten in scheidingstekens:
 * (https://www.adobe.com);
 * [https://www.adobe.com];
 * {https://www.adobe.com};
