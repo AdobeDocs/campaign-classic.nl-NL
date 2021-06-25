@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 99%
+source-wordcount: '881'
+ht-degree: 97%
 
 ---
 
@@ -60,7 +60,7 @@ Raadpleeg [dit document](https://helpx.adobe.com/nl/campaign/kb/campaign-privacy
 
 Lees [deze sectie](../../platform/using/adobe-campaign-workspace.md) voor meer informatie over de basisbeginselen van de Adobe Campaign-werkruimte.
 
-![](assets/do-not-localize/how-to-video.png) [Campaign-werkruimte ontdekken in video](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png) [Campaign-werkruimte ontdekken in video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 ## Hoe kan ik de doelgroep van mijn berichten selecteren? {#how-can-i-select-the-target-population-of-my-messages-}
 
@@ -128,6 +128,6 @@ Adobe evalueert voortdurend de mogelijkheden in het product en is van plan om in
 
 ## Zijn er nieuwe documentatie-updates en Help-materialen vrijgegeven? {#are-there-new-documentation-updates-and-help-materials-released-}
 
-De meest recente Campaign Classic-documentatie-updates worden weergegeven [op deze pagina](https://docs.adobe.com/content/help/nl-NL/campaign-classic/using/documentation-updates.html).
+De meest recente Campaign Classic-documentatie-updates worden weergegeven [op deze pagina](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html).
 
 U kunt ook de meest recente technische opmerkingen [op deze pagina](https://helpx.adobe.com/nl/campaign/kb/article-list.html) raadplegen.
