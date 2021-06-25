@@ -6,9 +6,9 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
+source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
 workflow-type: tm+mt
-source-wordcount: '2972'
+source-wordcount: '2968'
 ht-degree: 88%
 
 ---
@@ -81,7 +81,7 @@ _22 december 2020_
 * Correctie van problemen die ertoe kunnen leiden dat het webproces vastloopt bij het voorbereiden van leveringen of bij terugkerende voorvertoning van levering. (NEO-27790, NEO-27517)
 * Probleem verholpen waarbij leveringen of het verzenden van bewijzen mislukten wanneer deze door een niet-beheerder werden geactiveerd. (NEO-28597)
 
-![](assets/do-not-localize/cp-icon.png) **Release van nieuw Configuratiescherm in oktober** met domeinconfiguratie met CNAME-records en nieuwe mogelijkheden voor databasecontrole. [Meer informatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Release van nieuw Configuratiescherm in oktober** met domeinconfiguratie met CNAME-records en nieuwe mogelijkheden voor databasecontrole. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=nl).
 
 ## ![](assets/do-not-localize/red_2.png) Release 20.2.3 - build 9182 {#release-20-2-3-build-9182}
 
@@ -119,7 +119,7 @@ _woensdag 22 juli 2020_
 * Na de overstap naar het [nieuwe ID-mechanisme voor reeksen](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) worden alle webapplicaties waarmee de tabel met ontvangers worden bijgewerkt, opnieuw gepubliceerd tijdens de post-upgrade.
 * Een mogelijke XSS-kwetsbaarheid in de leveringscontent is verholpen. (NEO-17987, NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **Release van nieuw configuratiescherm in juni** met controle van actieve profielen, controle van de leverbaarheid van subdomeinen en beheer van GPG-sleutels. [Meer informatie](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Release van nieuw configuratiescherm in juni** met controle van actieve profielen, controle van de leverbaarheid van subdomeinen en beheer van GPG-sleutels. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/red_2.png) Release 20.2.1 - build 9178 {#release-20-2-1-build-9178}
 
