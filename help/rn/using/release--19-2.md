@@ -6,9 +6,9 @@ feature: null
 role: null
 level: null
 exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
-source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
+source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1542'
 ht-degree: 21%
 
 ---
@@ -108,7 +108,7 @@ _2 december 2019_
   <tr> 
 <td> <p>Met Adobe Campaign kunt u de nieuwe interactieve <a href="https://amp.dev/about/email/">AMP for Email</a>-indeling uitproberen. Hiermee kunnen marketers AMP-componenten in berichten opnemen om de e-mailbeleving te verbeteren met rijke, dynamische en interactieve inhoud, die rechtstreeks in het bericht zelf kan worden geactiveerd.</p>
    <p>Dit vermogen wordt vrijgegeven als openbare bèta.</p>
-   <p>Raadpleeg de <a href="../../delivery/using/defining-interactive-content.md">gedetailleerde documentatie</a> en de <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">videotutorial</a>voor meer informatie.</p><br /></td> 
+   <p>Raadpleeg de <a href="../../delivery/using/defining-interactive-content.md">gedetailleerde documentatie</a> en de <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">videotutorial</a>voor meer informatie.</p><br /></td> 
   </tr> 
  </tbody> 
 </table>
