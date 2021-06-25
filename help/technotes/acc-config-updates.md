@@ -5,9 +5,9 @@ description: TechNote
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 037e56040bd63edfdfee5ab6bf73b45d3a138072
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1099'
 ht-degree: 11%
 
 ---
@@ -37,7 +37,6 @@ Als uw omgeving zich op een lagere build bevindt dan de hieronder vermelde, heef
 
 * Gold Standard 11. [Meer informatie](../rn/using/gold-standard.md)
 * Release van campagne 21.1.1. [Meer informatie](../rn/using/latest-release.md)
-* Release van campagne 20.3.3. [Meer informatie](../rn/using/release--20-3.md)
 * Release van campagne 20.2.4. [Meer informatie](../rn/using/release--20-2.md)
 * Release van campagne 20.1.4. [Meer informatie](../rn/using/release--20-1.md)
 * Release van campagne 19.2.4. [Meer informatie](../rn/using/release--19-2.md)
@@ -60,7 +59,7 @@ U moet een upgrade uitvoeren naar een van de nieuwere builds die hierboven worde
 >Als u niet binnen de aanbevolen periode kunt upgraden, **dient u contact op te nemen met het team van de klantenservice van Adobe om een handmatige beveiligingsoplossing voor de korte termijn toe te passen op uw exemplaar**.
 
 
-## Campaign Classic Client Console-update {#acc-cc-updates}
+## Campaign Classic Client Console-update  {#acc-cc-updates}
 
 De **nu beschikbare** consoleversies hieronder zouden moeten worden geïnstalleerd om een onlangs geïdentificeerde regressie op te lossen. Door deze regressie konden sommige componenten van de clientconsole niet worden gebruikt, zoals de datumkiezer en het beheer van afbeeldingen in leveringen. **Upgrade van console** is verplicht.
 
@@ -81,7 +80,6 @@ Als u via een Adobe ID](../integrations/using/about-adobe-id.md) via Adobe Ident
 
 * Gold Standard 11. [Meer informatie](../rn/using/gold-standard.md)
 * Release van campagne 21.1.1. [Meer informatie](../rn/using/latest-release.md)
-* Release van campagne 20.3.3. [Meer informatie](../rn/using/release--20-3.md)
 * Release van campagne 20.2.4. [Meer informatie](../rn/using/release--20-2.md)
 * Release van campagne 20.1.4. [Meer informatie](../rn/using/release--20-1.md)
 * Release van campagne 19.2.4. [Meer informatie](../rn/using/release--19-2.md)
@@ -103,7 +101,7 @@ Zodra alle instanties worden bevorderd, moet de Console van de Cliënt ook aan d
 
 * [Leer hoe u de Campagne Client Console](../installation/using/installing-the-client-console.md) installeert.
 
-## Integratie met Experience Cloud-triggers {#acc-triggers-updates}
+## Integratie met Experience Cloud Triggers {#acc-triggers-updates}
 
 De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt. De de integratieauthentificatie van trekkers, oorspronkelijk gebaseerd op de authentificatie van AUTH om tot pijpleiding toegang te hebben, is bewogen aan Adobe I/O. Deze wordt op **30 november 2021** ingetrokken. [Meer informatie](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
