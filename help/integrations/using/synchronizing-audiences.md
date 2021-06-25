@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1129'
 ht-degree: 1%
 
 ---
@@ -108,7 +108,7 @@ Zodra de doelpopulatie wordt bepaald, kunt u het met ACS door een **[!UICONTROL 
 
 Als een fout op **[!UICONTROL List update]** activiteit voorkomt, betekent het dat de synchronisatie met Campaign Standard kan ontbroken hebben. Als u meer details wilt zien over wat er fout is gegaan, gaat u naar **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. Deze map bevat synchronisatieworkflows die worden geactiveerd door de uitvoering van de **[!UICONTROL List update]**-activiteit. Raadpleeg de sectie [Problemen met de ACS-connector](../../integrations/using/troubleshooting-the-acs-connector.md) oplossen.
 
-## Haal de gegevens op in Campaign Standard en gebruik deze in een levering {#retrieve-the-data-in-campaign-standard-and-use-it-in-a-delivery}
+## Haal de gegevens op in Campaign Standard en gebruik deze bij levering {#retrieve-the-data-in-campaign-standard-and-use-it-in-a-delivery}
 
 Zodra het richten werkschema in Campagne v7 wordt uitgevoerd, kunt u het lijstpubliek op read-only wijze van het **[!UICONTROL Audiences]** menu van Campaign Standard vinden.
 
@@ -121,7 +121,7 @@ Door een leveringswerkschema in Campaign Standard te creëren, is het dan mogeli
 
    Deze activiteit wordt gebruikt om de gegevens van het geselecteerde publiek terug te winnen. U kunt desgewenst ook een extra **[!UICONTROL Source Filtering]** toepassen door het tabblad Gebaseerd van deze activiteit te gebruiken.
 
-1. Voeg een **[!UICONTROL Email delivery]** activiteit toe en vorm het zoals een andere [e-mailleveringsactiviteit](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
+1. Voeg een **[!UICONTROL Email delivery]** activiteit toe en vorm het zoals een andere [e-mailleveringsactiviteit](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
 1. Open de leveringsinhoud.
 1. Een personalisatieveld toevoegen. Van popup, bepaal de plaats van de **[!UICONTROL Additional data (targetData)]** knoop. Dit knooppunt bevat de aanvullende gegevens van het publiek die zijn berekend in de initiële doelworkflow. U kunt ze als elk ander verpersoonlijkingsveld gebruiken.
 
@@ -135,7 +135,7 @@ Door een leveringswerkschema in Campaign Standard te creëren, is het dan mogeli
 
    ![](assets/acs_connect_deliveryworkflow_ready.png)
 
-## Uw levering {#send-and-monitor-your-delivery} verzenden en controleren
+## Uw levering verzenden en controleren {#send-and-monitor-your-delivery}
 
 Zodra de levering en zijn inhoud klaar zijn, verzend de levering:
 
