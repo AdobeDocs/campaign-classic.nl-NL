@@ -6,9 +6,9 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: fc40dae282c045dd73547e34ea307297f64c66fa
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '4470'
+source-wordcount: '4466'
 ht-degree: 97%
 
 ---
@@ -408,7 +408,7 @@ De handleiding over rapportage is bijgewerkt en opnieuw geordend. [Meer informat
 
 Er is een voorbeeld toegevoegd over het gebruik van een instantievariabele in een workflow. [Meer informatie](../../workflow/using/javascript-scripts-and-templates.md)
 
-## December 2019 {#december-2019}
+## december 2019 {#december-2019}
 
 De optie WdbcOptions_TempDbName is toegevoegd aan de lijst met Campaign-opties. [Meer informatie](../../installation/using/configuring-campaign-options.md)
 
@@ -492,7 +492,7 @@ De best practices voor prestatiesverbeteringen van workflows en leveringen zijn 
 
 **Nieuwe mogelijkheden in de 19.1-release**
 
-Configuratiescherm - [Meer informatie](https://docs.adobe.com/content/help/nl-NL/control-panel/using/control-panel-home.html)
+Configuratiescherm - [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 
 Audittrail - [Meer informatie](../../production/using/audit-trail.md)
 
@@ -599,4 +599,4 @@ De sectie over workflowcontrole is bijgewerkt met een opmerking voor builds tuss
 
 Er is een gebruiksscenario toegevoegd voor het verzenden van een e-mail met aangepaste datavelden met behulp van de activiteit Verrijking in een workflow. [Meer informatie](../../workflow/using/email-enrichment-with-custom-date-fields.md)
 
-Video’s over functies zijn [hier](https://docs.adobe.com/content/help/nl-NL/campaign-classic-learn/tutorials/overview.html) geplaatst.
+Video’s over functies zijn [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) geplaatst.
