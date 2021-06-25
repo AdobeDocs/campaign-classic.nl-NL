@@ -6,16 +6,16 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '626'
 ht-degree: 4%
 
 ---
 
 # Doelgroepen importeren en exporteren{#importing-and-exporting-audiences}
 
-## Een publiek {#importing-an-audience} importeren
+## Een publiek importeren {#importing-an-audience}
 
 U kunt soorten publiek/segmenten vanuit Audience Manager of People core-service importeren in Adobe Campaign via de lijst met ontvangers.
 
@@ -49,7 +49,7 @@ Het importproces duurt 24-36 uur om te synchroniseren, wanneer de segmenten dire
 
 De publieksgegevens worden volledig vervangen telkens als het wordt gesynchroniseerd. Alleen segmenten kunnen worden geïmporteerd. De korrelige gegevens met inbegrip van zeer belangrijk-waardeparen, eigenschappen en regels worden niet gesteund.
 
-## Een publiek {#exporting-an-audience} exporteren
+## Een publiek exporteren {#exporting-an-audience}
 
 U kunt een publiek van Adobe Campaign naar Audience Manager of de de kerndienst van Mensen uitvoeren gebruikend een werkschema. De processen voor het maken en gebruiken van een werkstroom worden beschreven in [dit document](../../workflow/using/building-a-workflow.md). Het geëxporteerde publiek wordt opgeslagen als segmenten in de hoofdservice Personen:
 
@@ -75,7 +75,7 @@ U kunt een publiek van Adobe Campaign naar Audience Manager of de de kerndienst 
 
 Het publiek wordt vervolgens geëxporteerd. Het sparen publieksactiviteit heeft twee uitgaande overgangen. De hoofdovergang bevat de ontvangers die zijn geëxporteerd. De aanvullende overgang bevat de ontvangers die niet met een bezoekersidentiteitskaart of gedeclareerde identiteitskaart konden in kaart worden gebracht.
 
-De synchronisatie tussen Adobe Campaign en de kerndienst van Mensen vergt 24-36 uur. Na deze periode, zult u uw nieuw publiek in de de kerndienst van Mensen kunnen vinden en het in andere oplossingen van Adobe Experience Cloud hergebruiken. Raadpleeg de volgende [documentatie](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-audience-create.html) voor meer informatie over het gebruik van een Adobe Campaign-gedeeld publiek in de kernservice Adobe Personen.
+De synchronisatie tussen Adobe Campaign en de kerndienst van Mensen vergt 24-36 uur. Na deze periode, zult u uw nieuw publiek in de de kerndienst van Mensen kunnen vinden en het in andere oplossingen van Adobe Experience Cloud hergebruiken. Raadpleeg de volgende [documentatie](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-audience-create.html) voor meer informatie over het gebruik van een Adobe Campaign-gedeeld publiek in de kernservice Adobe Personen.
 
 >[!NOTE]
 >
