@@ -6,14 +6,14 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '846'
 ht-degree: 2%
 
 ---
 
-# Dynamische doelinhoud {#inserting-a-dynamic-image} invoegen
+# Dynamische doelinhoud invoegen {#inserting-a-dynamic-image}
 
 In deze handleiding presenteren we hoe we een dynamisch aanbod van Target kunnen integreren in een e-mailbericht in Adobe Campaign.
 
@@ -35,7 +35,7 @@ Hiervoor moeten de volgende stappen worden uitgevoerd in Adobe Campaign en Targe
 1. [Een ervaring maken die gericht is op activiteiten](../../integrations/using/inserting-a-dynamic-image.md#creating-targeting-activity)
 1. [Een voorbeeld weergeven en de e-mail verzenden](../../integrations/using/inserting-a-dynamic-image.md#preview-send-email)
 
-## De dynamische aanbieding invoegen in een e-mail {#inserting-dynamic-offer}
+## De dynamische aanbieding in een e-mail invoegen {#inserting-dynamic-offer}
 
 Als u in Adobe Campaign klaar bent met het definiëren van het doel en de inhoud van uw e-mail, kunt u een dynamische afbeelding invoegen vanuit Target.
 
@@ -51,7 +51,7 @@ In Adobe Campaign kunt u op twee manieren een dynamische afbeelding van Target i
 
    ![](assets/target_12.png)
 
-### De afbeeldingsparameters {#defining-image-parameters} definiëren
+### De afbeeldingsparameters definiëren {#defining-image-parameters}
 
 * De URL van **[!UICONTROL Default image]**: De afbeelding die wordt weergegeven wanneer aan geen van de voorwaarden is voldaan. U kunt ook een afbeelding selecteren in de middelenbibliotheek.
 * De **[!UICONTROL Target location]**: Voer een naam in voor de locatie van uw dynamische aanbieding. U moet deze locatie selecteren in uw doelactiviteit.
@@ -62,7 +62,7 @@ Als u Enterprise-machtigingen gebruikt in uw instellingen in Adobe Target, voegt
 
 ![](assets/target_13.png)
 
-## Omleidingsaanbiedingen maken {#create-redirect-offers}
+## Omleidingsvoorstellen maken {#create-redirect-offers}
 
 In Target kunt u verschillende versies van uw aanbieding maken. Afhankelijk van elke gebruikerservaring kan een omleidingsaanbod worden gemaakt en kunt u opgeven welke afbeelding wordt weergegeven.
 
@@ -78,7 +78,7 @@ In ons geval hebben we twee doorgifteaanbiedingen nodig, de derde (de standaard)
 
    ![](assets/target_6.png)
 
-1. Volg dezelfde procedure voor het resterende doorleidingsaanbod. Raadpleeg [deze pagina](https://docs.adobe.com/help/en/target/using/experiences/offers/offer-redirect.html) voor meer informatie.
+1. Volg dezelfde procedure voor het resterende doorleidingsaanbod. Raadpleeg [deze pagina](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html) voor meer informatie.
 
 ## Doelgroepen maken {#audiences-target}
 
@@ -96,11 +96,11 @@ In Target moet u de twee soorten publiek maken waarin de personen die uw aanbied
 
 1. Volg dezelfde procedure voor het resterende publiek.
 
-## Een ervaring maken die gericht is op activiteit {#creating-targeting-activity}
+## Een ervaring maken die gericht is op activiteiten {#creating-targeting-activity}
 
 In Doel, moeten wij een Ervaring creëren richtend activiteit, de verschillende ervaringen bepalen, en hen associëren met de overeenkomstige aanbiedingen.
 
-### Het publiek {#defining-the-audience} definiëren
+### Het publiek definiëren {#defining-the-audience}
 
 1. Als u een Experience Targeting-activiteit wilt maken, klikt u op **[!UICONTROL Activities]** en **[!UICONTROL Experience Targeting]** op het tabblad **[!UICONTROL Create Activity]**.
 
@@ -136,7 +136,7 @@ Voeg inhoud toe voor elk publiek:
 
 1. Voer dezelfde stappen uit voor de tweede ervaring.
 
-### De activiteit {#defining-activity} definiëren
+### De activiteit definiëren {#defining-activity}
 
 In het venster **[!UICONTROL Target]** wordt uw activiteit samengevat. Indien nodig kunt u andere ervaringen toevoegen.
 
