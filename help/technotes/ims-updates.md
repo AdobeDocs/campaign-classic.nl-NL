@@ -4,7 +4,7 @@ title: Uw omgeving bijwerken om verbinding te maken met Adobe Campaign met IMS
 description: Campagne - IMS-updates
 hide: true
 hidefromtoc: true
-source-git-commit: b8f3ba60e34f6c5429c63ed934083ebae180cf43
+source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 8%
@@ -38,13 +38,13 @@ Als u al een upgrade hebt uitgevoerd maar een oude versie van Microsoft Internet
    U moet een upgrade uitvoeren naar een van de nieuwe versies die hieronder worden vermeld.
 
    * Gold Standard 11. [Meer informatie](../rn/using/gold-standard.md)
-   * Release van campagne 20.3.3. [Meer informatie](../rn/using/release--20-3.md)
+   * Release van campagne 21.1.3. [Meer informatie](../rn/using/latest-release.md)
    * Release van campagne 20.2.4. [Meer informatie](../rn/using/release--20-2.md)
    * Release van campagne 20.1.4. [Meer informatie](../rn/using/release--20-1.md)
    * Release van campagne 19.2.4. [Meer informatie](../rn/using/release--19-2.md)
    * Release van campagne 19.1.8. [Meer informatie](../rn/using/release--19-1.md)
 
-Deze versies worden geleverd met een nieuw verbindingsprotocol. Upgrade is verplicht voor zowel de campagneserver als de clientconsole: zodra alle instanties worden bevorderd, moet de Console van de Cliënt aan deze versie evenals aan Campagne kunnen worden bevorderd na **30 Juni, 2021**.
+   Deze versies worden geleverd met een nieuw verbindingsprotocol. Upgrade is verplicht voor zowel de campagneserver als de clientconsole: zodra alle instanties worden bevorderd, moet de Console van de Cliënt aan deze versie evenals aan Campagne kunnen worden bevorderd na **30 Juni, 2021**.
 
 Zorg er bovendien voor dat de nieuwste update van uw [Windows-versie](../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), met ingebouwde **Internet Explorer 11**, op de computer van elke gebruiker is geïnstalleerd.
 
