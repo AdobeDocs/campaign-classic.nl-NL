@@ -8,9 +8,9 @@ level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 hidefromtoc: true
 hide: true
-source-git-commit: 6059693522850c13569b2c8f33137531276a3bd0
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1682'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 >
 >Adobe Analytics Data Connector is nu afgekeurd. Verouderde mogelijkheden zijn nog steeds beschikbaar, maar deze worden niet verder verbeterd en worden niet ondersteund. Meer informatie [op deze pagina](../../rn/using/deprecated-features.md).
 
-## Info over integratie van gegevensconnector {#about-data-connector-integration}
+## Over de integratie van gegevensconnectors {#about-data-connector-integration}
 
 >[!IMPORTANT]
 >
@@ -54,7 +54,7 @@ Als u de gegevensconnector wilt instellen, moet u verbinding maken met uw Adobe 
 * [Stap 2: Externe account maken in campagne](#step-2--create-the-external-account-in-campaign)
 * [Stap 3: Adobe Campaign en Adobe Analytics synchroniseren](#step-3--synchronize-adobe-campaign-and-adobe-analytics)
 
-### Stap 1: Integratie in Analytics {#step-1--configure-integration-in-analytics} configureren
+### Stap 1: Integratie in Analytics configureren {#step-1--configure-integration-in-analytics}
 
 In de volgende stappen wordt de configuratie van de gegevensconnector beschreven met een wizard.
 
@@ -68,7 +68,7 @@ In de volgende stappen wordt de configuratie van de gegevensconnector beschreven
 
 1. Selecteer **[!UICONTROL Data Connectors]** op het tabblad **[!UICONTROL Admin]**.
 
-   U moet de volgende de hulpmiddelentoestemmingen van Analytics hebben om tot **[!UICONTROL Data Connectors]** menu toegang te hebben. Raadpleeg [deze pagina](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/analytics-tools.html) voor meer informatie
+   U moet de volgende de hulpmiddelentoestemmingen van Analytics hebben om tot **[!UICONTROL Data Connectors]** menu toegang te hebben. Raadpleeg [deze pagina](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html) voor meer informatie
    * Integraties (maken)
    * Integraties (update)
    * Integraties (verwijderen)
@@ -155,7 +155,7 @@ De integratie van Adobe Campaign in de analyseplatforms vindt plaats via een con
 >
 >Als u verschillende publiekmeetgereedschappen gebruikt, kunt u **[!UICONTROL Other]** in de vervolgkeuzelijst **[!UICONTROL Partners]** selecteren wanneer u de externe account maakt. U mag slechts naar één externe account verwijzen in de leveringseigenschappen: u moet daarom de formule van bijgehouden URL&#39;s aanpassen door de parameters toe te voegen die door de Adobe en alle andere gebruikte meetinstrumenten worden verwacht.
 
-### Stap 3: Adobe Campaign en Adobe Analytics {#step-3--synchronize-adobe-campaign-and-adobe-analytics} synchroniseren
+### Stap 3: Adobe Campaign en Adobe Analytics synchroniseren {#step-3--synchronize-adobe-campaign-and-adobe-analytics}
 
 Nadat u de externe account hebt gemaakt, moet u beide toepassingen synchroniseren.
 
