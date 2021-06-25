@@ -6,10 +6,10 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 1d25bdaf0d118ec5788d467c48c3c40c5891e46d
+source-git-commit: 1caacff8b10c8593945b872d045fdaab3f26190c
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 99%
+source-wordcount: '549'
+ht-degree: 95%
 
 ---
 
@@ -155,7 +155,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 en SP2</p>
-<p>Waarschuwing: Microsoft SQL Server wordt niet als de primaire database ondersteund wanneer de Campaign-server op Linux wordt uitgevoerd. <a href="https://docs.adobe.com/content/help/nl-NL/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Meer informatie</a>.</p>
+<p>Waarschuwing: Microsoft SQL Server wordt niet als de primaire database ondersteund wanneer de Campaign-server op Linux wordt uitgevoerd. [Meer informatie](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).</p>
 </td>
 </tr>
 </tbody>
@@ -284,7 +284,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 
 ## Clientconsole {#ClientConsoleoperatingsystems}
 
-:waarschuwing: de volgende besturingssystemen en browsers zijn vereist om de Campaign-clientconsole te gebruiken.
+:warning: De volgende besturingssystemen en browsers zijn vereist voor het gebruik van de Campagne Client Console.
 
 ### Besturingssystemen
 
