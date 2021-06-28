@@ -6,9 +6,9 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1046'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Het **[!UICONTROL Browsing]** blok van **[!UICONTROL Campaigns]** lusje biedt di
 * **Campagnekalender**: tijdschema van de plannen, marketingprogramma&#39;s, leveringen en campagnes. Raadpleeg [Campagne-kalender](#campaign-calendar).
 * **Campagnes**: toegang tot de campagnes in alle marketingprogramma&#39;s.
 * **Leveringen**: toegang tot de met de campagnes verband houdende leveringen.
-* **Webtoepassingen**: toegang tot webtoepassingen (formulieren, enquêtes, enz.).
+* **Webtoepassingen**: toegang tot webtoepassingen (formulieren, bestemmingspagina&#39;s, enz.).
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Met de pictogrammen die aan elk item zijn gekoppeld, kunt u de status ervan beki
 
 Met campagnes kunt u een reeks programma&#39;s beheren die uit verschillende marketingcampagnes bestaan. Elke campagne bevat leveringen en de bijbehorende processen en middelen.
 
-#### Door een programma {#browsing-a-program} bladeren
+#### Door een programma bladeren {#browsing-a-program}
 
 Wanneer u een programma bewerkt, gebruikt u de onderstaande tabbladen om door het programma te bladeren en het te configureren.
 
@@ -80,7 +80,7 @@ Wanneer u een programma bewerkt, gebruikt u de onderstaande tabbladen om door he
 
    ![](assets/s_ncs_user_interface_campaign05.png)
 
-#### Bladeren door campagnes {#browsing-campaigns}
+#### Browsercampagnes {#browsing-campaigns}
 
 Campagnes zijn toegankelijk via de campagnecalender, het tabblad **[!UICONTROL Schedule]** van het programma of de lijst met campagnes.
 
@@ -125,7 +125,7 @@ Een campagne centraliseert een reeks leveringen. Voor elke campagne, biedt het p
 
 Voor elke campagne kunnen exploitanten berichten uitwisselen via een speciaal forum.
 
-Raadpleeg [Discussieforums](../../campaign/using/discussion-forums.md) voor meer informatie hierover.
+Raadpleeg [Discussieforums](../../mrm/using/discussion-forums.md) voor meer informatie hierover.
 
 #### Rapporten {#reports}
 
@@ -151,7 +151,7 @@ Campagnes worden gemaakt via campagnemalplaatjes. U kunt herbruikbare sjablonen 
 >
 >Om tot de campagneconfiguraties toegang te hebben en veranderingen in hen aan te brengen, klik **[!UICONTROL Advanced campaign parameters...]** verbinding in **[!UICONTROL Edit]** tabel. Voor meer informatie bij het plaatsen van parameters op campagneniveau zodat erven de leveringen automatisch waarden, zie [onze TechNote](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Setparametersatthecampaignlevelsodeliveriesinheritvaluesautomatically).
 
-## De webinterface {#using-the-web-interface-} gebruiken
+## De webinterface gebruiken {#using-the-web-interface-}
 
 U kunt de Adobe Campaign-consoleschermen openen via een internetbrowser om alle campagnes en leveringen, alsmede rapporten en informatie over de profielen in uw database weer te geven. Met deze toegang kunt u geen records maken. Afhankelijk van de rechten van de operator kunt u de gegevens in de database bekijken en/of bewerken. U kunt bijvoorbeeld de inhoud van de campagne goedkeuren, een levering opnieuw starten of stoppen, enzovoort.
 
