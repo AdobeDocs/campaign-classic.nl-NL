@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '3058'
+source-wordcount: '3048'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ Geef de volgende parameters op:
 
 Bovendien kunt u **masks** specificeren voor het afzenderadres en het foutenadres. Indien nodig, kunnen deze maskers met komma&#39;s worden gescheiden. Deze configuratie is optioneel. Wanneer de gebieden zijn ingegaan, controleert Adobe Campaign op het tijdstip van levering (tijdens analyse, als het adres geen variabelen omvat) dat de adressen geldig zijn. Deze werkende wijze zorgt ervoor dat geen adressen worden gebruikt die leveringskwesties konden teweegbrengen. De adressen van de levering moeten op de leveringsserver worden gevormd.
 
-### Tekens geoorloofd in adressen {#characters-authorized-in-addresses}
+### Tekens geautoriseerd in adressen {#characters-authorized-in-addresses}
 
 <!--This window enables you to define, for all email campaigns, the delivery and address-quality management options.-->
 
@@ -109,18 +109,18 @@ De volgende opties zijn beschikbaar:
 * **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Als deze optie is ingeschakeld, wordt bij lijsten van gewezen personen geen contact opgenomen met de ontvangers van de
 * **[!UICONTROL Automatically ignore doubles]** : Als deze optie is geselecteerd, wordt de levering niet uitgevoerd naar dubbele adressen.
 
-### Parameters {#retry-parameters} opnieuw proberen
+### Parameters opnieuw proberen {#retry-parameters}
 
 De informatie over terugvorderingen wordt gegeven in de velden **Herstelperioden** en **Aantal terugvorderingen**: wanneer een ontvanger onbereikbaar is, bijvoorbeeld als hun inbox volledig is, door gebrek zal het programma proberen contacterend hen vijf keer, met een interval van één uur tussen elke poging (tijdens de maximumleveringstijd). U kunt deze waarden naar wens wijzigen.
 
-### Quarantaineparameters {#quarantine-parameters}
+### Quarantaine-parameters {#quarantine-parameters}
 
 De configuratieopties voor quarantines zijn als volgt:
 
 * **[!UICONTROL Duration between two significant errors]** : Voer standaard een waarde in (&quot;1d&quot;): 1 dag) om de tijd te bepalen die de toepassing wacht alvorens de foutenteller in het geval van mislukking te verhogen,
 * **[!UICONTROL Maximum number of errors before quarantine]** : zodra deze waarde is bereikt, wordt het e-mailadres in quarantaine geplaatst (standaard &quot;5&quot;: het adres zal in quarantined op de zesde fout) zijn. Dit betekent dat het contact automatisch van volgende bezorgingen wordt uitgesloten.
 
-## Beknopte e-mailberichten beheren {#managing-bounced-emails}
+## Beknopte e-mails beheren {#managing-bounced-emails}
 
 Bounce mail is uiterst belangrijk om leveringsfouten te kwalificeren. Deze fouten worden gecategoriseerd in NP@I zodra de regels hun oorzaak hebben bepaald.
 
@@ -130,7 +130,7 @@ In dit werkgebied kunt u instellingen definiëren voor het beheer van stuiterend
 
 ![](assets/s_ncs_install_deployment_wiz_06.png)
 
-### POP-account gebruikt om inkomende mails {#pop-account-used-to-retrieve-incoming-mails} op te halen
+### POP-account gebruikt om inkomende mails op te halen {#pop-account-used-to-retrieve-incoming-mails}
 
 Geef de parameters op waarmee u verbinding wilt maken met de account voor het ophalen van inkomende e-mails.
 
@@ -157,7 +157,7 @@ Onverwerkte grenzen worden niet weergegeven in de Adobe Campaign-interface. Zij 
 >
 >Als u onverwerkte e-mails met bounce wilt doorsturen, raadt Adobe u aan alleen het veld **[!UICONTROL Address for errors]** in te vullen. Nochtans, zorg ervoor het adres dat wordt gebruikt regelmatig wordt gecontroleerd, aangezien dit een zware lading op uw postserver kon zetten. Neem contact op met uw accountmanager voor meer informatie.
 
-## Configuratie {#tracking-configuration} bijhouden
+## Configuratie bijhouden {#tracking-configuration}
 
 In de volgende stap kunt u tracering voor de instantie configureren. De instantie moet worden gedeclareerd en geregistreerd bij de volgende server(s).
 
@@ -181,7 +181,7 @@ Wanneer u tracking op een instantie activeert, worden de URL&#39;s in de leverin
 
    Raadpleeg [Tracking opslaan](#saving-tracking) voor meer informatie.
 
-### Volgserver {#tracking-server}
+### Trackingserver {#tracking-server}
 
 ![](assets/s_ncs_install_deployment_wiz_08.png)
 
@@ -258,7 +258,7 @@ Terug in het vorige venster, bevestigt een bericht de registratie op het volgend
 
 De parameters verbonden aan URL onderzoeken **moeten niet** voor een standaardinstallatie worden gewijzigd. Neem voor alle andere parameters contact op met Adobe.
 
-## Parameters voor mobiele kanalen {#mobile-channel-parameters}
+## Parameters van mobiele kanalen {#mobile-channel-parameters}
 
 In de volgende stap kunt u de standaardinstellingen definiëren voor leveringen aan mobiele apparaten (SMS en WAP Push).
 
@@ -313,7 +313,7 @@ U moet hier ook de publicatieopties aangeven die aan webformulieren zijn gekoppe
 
 ![](assets/s_ncs_install_deployment_wiz_15.png)
 
-### Servers die op het Web {#servers-exposed-on-the-web} worden blootgesteld
+### Servers die op het Web worden blootgesteld {#servers-exposed-on-the-web}
 
 Gebruik deze pagina om de server-URL&#39;s te vullen met:
 
@@ -325,7 +325,7 @@ Gebruik deze pagina om de server-URL&#39;s te vullen met:
 
 Met Adobe Campaign kunt u deze drie URL&#39;s onderscheiden om de laadbewerking over meerdere platforms te spreiden.
 
-## Openbare bronnen beheren {#managing-public-resources}
+## Openbare middelen beheren {#managing-public-resources}
 
 >[!IMPORTANT]
 >
@@ -345,7 +345,7 @@ De openbare middelen zijn toegankelijk via **Beheer > Middelen > Online > Openba
 
 ![](assets/install_pub_resources_view.png)
 
-### URL voor publieke bronnen {#public-resources-url}
+### URL van openbare bronnen {#public-resources-url}
 
 In het eerste veld kunt u het begin opgeven van de URL die wordt gebruikt voor de bronnen nadat deze zijn geüpload. Wanneer de bronnen zijn geüpload, zijn ze toegankelijk via deze nieuwe URL.
 
@@ -357,7 +357,7 @@ In een levering, kunt u beelden gebruiken die in de openbare middelbibliotheek o
 
 * Voor openbare middelen, is URL **https://** server **/res/** instance ****waar **instance**de naam van het volgende geval is.
 
-### Afbeeldingsdetectie {#delivery-image-detection} leveren
+### Afbeeldingsdetectie leveren {#delivery-image-detection}
 
 In een levering, kunt u beelden gebruiken die in de openbare middelbibliotheek of een ander lokaal beeld of beeld worden opgeslagen op een server worden opgeslagen.
 
@@ -372,7 +372,7 @@ U kunt meerdere URL-maskers opgeven door een komma te gebruiken om ze van elkaar
 
 ### Publicatiemodi {#publication-modes}
 
-In het onderste gedeelte van de wizard kunt u de publicatieopties van openbare bronnen en afbeeldingen selecteren. Deze opties zijn ook beschikbaar voor webformulieren en enquêtes.
+In het onderste gedeelte van de wizard kunt u de publicatieopties van openbare bronnen en afbeeldingen selecteren.
 
 De volgende publicatiemodi zijn beschikbaar:
 
@@ -485,7 +485,7 @@ startRedirection="true" startRedirectionInModule="true" trackWebVisitors="false"
  </relay>
 ```
 
-## Gegevens {#purging-data} wissen
+## Gegevens wissen {#purging-data}
 
 Het laatste stadium van de plaatsingstovenaar laat u het automatische zuiveren van verouderde gegevens vormen. De waarden worden uitgedrukt in dagen.
 
