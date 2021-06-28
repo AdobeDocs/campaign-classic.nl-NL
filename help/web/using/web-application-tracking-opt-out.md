@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Als een eindgebruiker via cookies of webbakens de functie voor het bijhouden van
 >
 >Wanneer het scripting altijd de richtlijnen volgt die in [checklist van de Veiligheid en van de Privacy worden beschreven](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
 
-## De banner {#configuring-the-banner-} configureren
+## De banner configureren {#configuring-the-banner-}
 
 Om binnen de toepassingen van het Web of het Landing pagina&#39;s te worden getoond, moet de banner worden gevormd.
 
@@ -33,7 +33,7 @@ Adobe Campaign wordt geleverd met een voorbeeldbanner die u aan uw behoeften moe
 >
 >Als u uw eigen banner wilt maken, moet u de uit-van-de-box banner personaliseren.
 
-Om de banner te activeren, moet u de de toepassingseigenschappen van het Web vormen. Raadpleeg de sectie [Een webtoepassing ontwerpen](../../web/using/designing-a-web-application.md).
+Om de banner te activeren, moet u de de toepassingseigenschappen van het Web vormen. Raadpleeg de sectie [Een webtoepassing ontwerpen](designing-a-web-application.md).
 
 Als Web het volgen wordt geactiveerd, kunt u of hebben:
 
@@ -64,9 +64,9 @@ De standaardbanner heeft de volgende structuur:
 
 U moet **Gelieve te nemen uw bericht hier** met het blok vervangen dat uw het volgen informatie bevat. Deze vervanging zou in uw nieuw personaliseringsblok met betrekking tot de uit opt-banner moeten worden uitgevoerd.
 
-De banner wordt geleverd met een specifieke CSS. U kunt de stijlen echter overschrijven bij het maken en configureren van een webpagina. Zie [deze pagina](../../web/using/content-editor-interface.md).
+De banner wordt geleverd met een specifieke CSS. U kunt de stijlen echter overschrijven bij het maken en configureren van een webpagina. Zie [deze pagina](content-editor-interface.md).
 
-## Het uitschakelcookie instellen met API {#setting-the-opt-out-cookie-using-api}
+## De uitschakelcookie instellen met API {#setting-the-opt-out-cookie-using-api}
 
 Adobe Campaign wordt geleverd met API&#39;s waarmee u de cookiewaarde kunt beheren en gebruikersvoorkeuren kunt ophalen.
 
