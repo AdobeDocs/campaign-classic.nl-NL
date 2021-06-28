@@ -7,7 +7,7 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Met Adobe Campaign kunt u rijke klantgegevens gebruiken om dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 9febe6bc68c8bc31714a74455fa70ef83920ded9
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
 source-wordcount: '2518'
 ht-degree: 96%
@@ -261,12 +261,6 @@ ht-degree: 96%
       + [Goedkeuringen instellen en beheren](campaign/using/marketing-campaign-approval.md)
       + [Uw campagnes controleren](campaign/using/marketing-campaign-monitoring.md)
       + [Providers, voorraden en budgetten](campaign/using/providers--stocks-and-budgets.md)
-   + Taken, bronnen en budgetten {#tasks--resources-and-budgets}
-      + [Marketingbronnen beheren](campaign/using/about-marketing-resource-management.md)
-      + [Taken maken en beheren](campaign/using/creating-and-managing-tasks.md)
-      + [Kosten beheersen](campaign/using/controlling-costs.md)
-      + [Marketingbronnen beheren](campaign/using/managing-marketing-resources.md)
-      + [Discussieforums](campaign/using/discussion-forums.md)
    + Campagneoptimalisatie {#campaign-optimization}
       + [Campagnetypologieën](campaign/using/about-campaign-typologies.md)
       + [Drukregels](campaign/using/pressure-rules.md)
@@ -275,20 +269,26 @@ ht-degree: 96%
       + [Filterregels](campaign/using/filtering-rules.md)
       + [Regels toepassen](campaign/using/applying-rules.md)
       + [Campagnesimulaties](campaign/using/campaign-simulations.md)
-   + Gedistribueerde marketing {#distributed-marketing}
-      + [Gedistribueerde marketing](campaign/using/about-distributed-marketing.md)
-      + [Een lokale campagne maken](campaign/using/creating-a-local-campaign.md)
-      + [Een collaboratieve campagne maken](campaign/using/creating-a-collaborative-campaign.md)
-      + [Het campagnepakket publiceren](campaign/using/publishing-the-campaign-package.md)
-      + [Campagnes openen](campaign/using/accessing-campaigns.md)
-      + [Een campagne bijhouden](campaign/using/tracking-a-campaign.md)
-      + [Gebruiksscenario’s](campaign/using/examples.md)
-   + Response Manager {#response-manager}
-      + [Aan de slag met Response Manager](campaign/using/about-response-manager.md)
-      + [Configuratie](campaign/using/configuration.md)
-      + [Hypothesesjablonen](campaign/using/hypothesis-templates.md)
-      + [Hypothesen maken](campaign/using/creating-hypotheses.md)
-      + [Tracking van hypothesen](campaign/using/hypothesis-tracking.md)
++ Marketing Resource Management {#mrm}
+   + [Marketingbronnen beheren](mrm/using/about-marketing-resource-management.md)
+   + [Taken maken en beheren](mrm/using/creating-and-managing-tasks.md)
+   + [Kosten beheersen](mrm/using/controlling-costs.md)
+   + [Marketingbronnen beheren](mrm/using/managing-marketing-resources.md)
+   + [Discussieforums](mrm/using/discussion-forums.md)
++ Gedistribueerde marketing {#distributed-marketing}
+   + [Gedistribueerde marketing](campaign/using/about-distributed-marketing.md)
+   + [Een lokale campagne maken](campaign/using/creating-a-local-campaign.md)
+   + [Een collaboratieve campagne maken](campaign/using/creating-a-collaborative-campaign.md)
+   + [Het campagnepakket publiceren](campaign/using/publishing-the-campaign-package.md)
+   + [Campagnes openen](campaign/using/accessing-campaigns.md)
+   + [Een campagne bijhouden](campaign/using/tracking-a-campaign.md)
+   + [Gebruiksscenario’s](campaign/using/examples.md)
++ Response Manager {#response-manager}
+   + [Aan de slag met Response Manager](campaign/using/about-response-manager.md)
+   + [Configuratie](campaign/using/configuration.md)
+   + [Hypothesesjablonen](campaign/using/hypothesis-templates.md)
+   + [Hypothesen maken](campaign/using/creating-hypotheses.md)
+   + [Tracking van hypothesen](campaign/using/hypothesis-tracking.md)
 + Rapporten ontwerpen en delen {#reporting}
    + Aan de slag met rapportages {#reporting-in-adobe-campaign}
       + [Rapportagetools](reporting/using/about-adobe-campaign-reporting-tools.md)
@@ -326,7 +326,6 @@ ht-degree: 96%
       + [Indicatoren maken](reporting/using/creating-indicators.md)
       + [Kubussen gebruiken om data gegevens te verkennen](reporting/using/using-cubes-to-explore-data.md)
       + [Concepten en methodologie](reporting/using/concepts-and-methodology.md)
-      + [Gebruiksscenario: een rapport weergeven over antwoorden op een online enquête](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + Webcontent ontwerpen {#designing-content}
    + Webapplicaties {#web-applications}
       + [Aan de slag met webapplicaties](web/using/about-web-applications.md)
@@ -357,14 +356,15 @@ ht-degree: 96%
       + [Eigenschappen voor webformulieren definiëren](web/using/defining-web-forms-properties.md)
       + [Een webformulier vertalen](web/using/translating-a-web-form.md)
       + [Gebruiksscenario: webformulieren](web/using/use-cases--web-forms.md)
-   + Online enquêtes {#online-surveys}
-      + [Aan de slag met enquêtes ](web/using/about-surveys.md)
-      + [Belangrijke stappen bij het maken van een enquête](web/using/getting-started-with-surveys.md)
-      + [Een enquête ontwerpen](web/using/building-a-survey.md)
-      + [Antwoorden beheren](web/using/managing-answers.md)
-      + [Verzamelde data gegevens publiceren, bijhouden en gebruiken](web/using/publish--track-and-use-collected-data.md)
-      + [Enquêtes configureren](web/using/configuring-surveys.md)
-      + [Gebruiksscenario: een referralformulier maken](web/using/use-case--creating-a-refer-a-friend-form.md)
++ Online enquêtes maken {#online-surveys}
+   + [Aan de slag met enquêtes ](surveys/using/about-surveys.md)
+   + [Belangrijke stappen bij het maken van een enquête](surveys/using/getting-started-with-surveys.md)
+   + [Een enquête ontwerpen](surveys/using/building-a-survey.md)
+   + [Antwoorden beheren](surveys/using/managing-answers.md)
+   + [Verzamelde data gegevens publiceren, bijhouden en gebruiken](surveys/using/publish--track-and-use-collected-data.md)
+   + [Enquêtes configureren](surveys/using/configuring-surveys.md)
+   + [Gebruiksscenario: een referralformulier maken](surveys/using/use-case--creating-a-refer-a-friend-form.md)
+   + [Gebruiksscenario: een rapport weergeven over antwoorden op een online enquête](surveys/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + Integreren met Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Campaign-integraties](integrations/using/about-campaign-integrations.md)
    + Doelgroepen delen {#audience-sharing}
