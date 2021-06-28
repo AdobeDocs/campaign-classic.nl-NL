@@ -6,9 +6,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '2457'
+source-wordcount: '2371'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ De volgende veldtypen zijn beschikbaar:
 * Knop Downloaden. [Een bestand](#uploading-a-file) uploaden.
 * De constante Verborgen. Zie [Een verborgen constante invoegen](#inserting-a-hidden-constant).
 
-Geef de opslagmodus voor reacties op: een veld in de database bijwerken (alleen de laatst opgeslagen waarde wordt opgeslagen) of in een variabele opslaan (het antwoord wordt niet opgeslagen). Voor meer op dit, verwijs naar [De opslaggebieden van de Reactie](../../web/using/web-forms-answers.md#response-storage-fields).
+Geef de opslagmodus voor reacties op: een veld in de database bijwerken (alleen de laatst opgeslagen waarde wordt opgeslagen) of in een variabele opslaan (het antwoord wordt niet opgeslagen). Voor meer op dit, verwijs naar [De opslaggebieden van de Reactie](web-forms-answers.md#response-storage-fields).
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Klik **[!UICONTROL Finish]** om het geselecteerde gebied in de pagina op te neme
 
 ![](assets/s_ncs_admin_webform_wz_insert_field.png)
 
-## Invoervelden {#adding-input-fields} toevoegen
+## Invoervelden toevoegen {#adding-input-fields}
 
 Als u een invoerveld wilt toevoegen, klikt u op de knop **[!UICONTROL Input control]** en kiest u het type veld dat u wilt toevoegen.
 
@@ -74,7 +74,7 @@ U kunt vijf verschillende typen tekstvelden invoegen in een formulierpagina:
 
 * **Getal**: Hiermee kan de gebruiker een getal op één regel invoeren. Raadpleeg [Getallen toevoegen](#adding-numbers) voor meer informatie hierover.
 
-   Wanneer de pagina is goedgekeurd, wordt de inhoud van het veld gecontroleerd om te controleren of de ingevoerde waarde compatibel is met het veld. Raadpleeg [Besturingsinstellingen definiëren](../../web/using/form-rendering.md#defining-control-settings) voor meer informatie hierover.
+   Wanneer de pagina is goedgekeurd, wordt de inhoud van het veld gecontroleerd om te controleren of de ingevoerde waarde compatibel is met het veld. Raadpleeg [Besturingsinstellingen definiëren](form-rendering.md#defining-control-settings) voor meer informatie hierover.
 
 * **Wachtwoord**: Hiermee kan de gebruiker tekst op één regel invoeren. Tijdens tekstinvoer worden de tekens vervangen door punten:
 
@@ -90,9 +90,7 @@ U kunt vijf verschillende typen tekstvelden invoegen in een formulierpagina:
 
    >[!CAUTION]
    >
-   >Tekstvelden met meerdere regels zijn specifieke velden die regeleinden kunnen bevatten. Hun opslagruimte moet worden gekoppeld aan een veld dat is toegewezen aan een XML-element, niet aan een XML-kenmerk. Raadpleeg het hoofdstuk &quot;Schemaverwijzing&quot; in [deze sectie](../../configuration/using/about-schema-reference.md) voor meer informatie over de typen gegevens in schema&#39;s.
-   >   
-   >Als u de **Module van het Onderzoek** gebruikt, kunt u dit type van gebied in een gearchiveerd gebied opslaan dat automatisch aan het formaat zal aanpassen. Raadpleeg [deze sectie](../../web/using/about-surveys.md) voor meer informatie.
+   >Tekstvelden met meerdere regels zijn specifieke velden die regeleinden kunnen bevatten. Hun opslagruimte moet worden gekoppeld aan een veld dat is toegewezen aan een XML-element, niet aan een XML-kenmerk.
 
 * **Verrijkte tekst** met meerdere regels: Hiermee kan de gebruiker tekst invoeren met een lay-out die wordt opgeslagen in HTML-indeling.
 
@@ -106,7 +104,7 @@ U kunt vijf verschillende typen tekstvelden invoegen in een formulierpagina:
 
    ![](assets/webapp_enrich_text_max.png)
 
-### Invoervelden {#configure-input-fields} configureren
+### Invoervelden configureren {#configure-input-fields}
 
 Invoervelden worden allemaal geconfigureerd op basis van dezelfde modus, waarbij de volgende opties worden gebruikt:
 
@@ -118,11 +116,11 @@ De antwoordopslagmodus kan worden gewijzigd via de koppeling **[!UICONTROL Edit 
 
 >[!NOTE]
 >
->Opslagmodi worden beschreven in [Opslagvelden voor reacties](../../web/using/web-forms-answers.md#response-storage-fields)
+>Opslagmodi worden beschreven in [Opslagvelden voor reacties](web-forms-answers.md#response-storage-fields)
 
-Op het tabblad **[!UICONTROL Advanced]** kunt u weergaveparameters voor het veld definiëren (positie van labels, uitlijning, enzovoort). Zie [Opmaak van webformulieren definiëren](../../web/using/defining-web-forms-layout.md).
+Op het tabblad **[!UICONTROL Advanced]** kunt u weergaveparameters voor het veld definiëren (positie van labels, uitlijning, enzovoort). Zie [Opmaak van webformulieren definiëren](defining-web-forms-layout.md).
 
-## Vervolgkeuzelijsten {#adding-drop-down-lists} toevoegen
+## Vervolgkeuzelijsten toevoegen {#adding-drop-down-lists}
 
 U kunt een vervolgkeuzelijst invoegen in een enquêtepagina. Hiermee kan de gebruiker een waarde selecteren uit de beschikbare waarden in een vervolgkeuzemenu.
 
@@ -154,7 +152,7 @@ Klik vervolgens op de koppeling **[!UICONTROL Load]** om de waarden op te halen:
 >
 >Herhaal deze bewerking telkens wanneer de lijst wordt bijgewerkt om de aangeboden waarden te vernieuwen.
 
-## Selectievakjes {#adding-checkboxes} toevoegen
+## Selectievakjes toevoegen {#adding-checkboxes}
 
 Als de gebruiker een optie kan selecteren, moet u een selectievakje gebruiken.
 
@@ -174,7 +172,7 @@ Als het opslagveld (of de variabele) Booleaans is, wordt de waarde die moet word
 
 ![](assets/s_ncs_admin_survey_check_box_enum.png)
 
-## Voorbeeld: Een waarde toewijzen aan een veld als een selectievakje {#example--assign-a-value-to-a-field-if-a-box-is-checked} is ingeschakeld
+## Voorbeeld: Een waarde toewijzen aan een veld als een vak is ingeschakeld {#example--assign-a-value-to-a-field-if-a-box-is-checked}
 
 We willen een selectievakje in een formulier invoegen om een onderhoudsaanvraag te verzenden, zoals hieronder wordt weergegeven:
 
@@ -188,7 +186,7 @@ Als het selectievakje &quot;Onderhoud vereist&quot; is ingeschakeld, bevat de ko
 
 ![](assets/s_ncs_admin_survey_check_box_ex_edit.png)
 
-## Keuzerondjes {#adding-radio-buttons} toevoegen
+## Keuzerondjes toevoegen {#adding-radio-buttons}
 
 Met keuzerondjes kunt u de gebruiker een aantal exclusieve opties bieden waaruit u kunt kiezen. Dit zijn verschillende waarden voor hetzelfde veld.
 
@@ -206,9 +204,9 @@ Als u een keuzerondje aan een formulierpagina wilt toevoegen, gaat u naar het me
 
 ![](assets/s_ncs_admin_survey_radio_button_sample.png)
 
-Keuzerondjes worden op dezelfde manier geconfigureerd als selectievakjes (zie [Selectievakjes toevoegen](#adding-checkboxes)). Er wordt echter geen waarde toegewezen als de optie niet is geselecteerd. Als u wilt dat verschillende knoppen onderling afhankelijk zijn, de andere automatisch deselecteert, moeten ze in hetzelfde veld worden opgeslagen. Als zij niet in het gegevensbestand worden opgeslagen, moet de zelfde lokale variabele voor tijdelijke opslag worden gebruikt. Zie [Opslagvelden voor reacties](../../web/using/web-forms-answers.md#response-storage-fields).
+Keuzerondjes worden op dezelfde manier geconfigureerd als selectievakjes (zie [Selectievakjes toevoegen](#adding-checkboxes)). Er wordt echter geen waarde toegewezen als de optie niet is geselecteerd. Als u wilt dat verschillende knoppen onderling afhankelijk zijn, de andere automatisch deselecteert, moeten ze in hetzelfde veld worden opgeslagen. Als zij niet in het gegevensbestand worden opgeslagen, moet de zelfde lokale variabele voor tijdelijke opslag worden gebruikt. Zie [Opslagvelden voor reacties](web-forms-answers.md#response-storage-fields).
 
-### Een lijst met knoppen {#add-a-list-of-buttons} toevoegen
+### Een lijst met knoppen toevoegen {#add-a-list-of-buttons}
 
 Als u keuzerondjes wilt toevoegen via een lijst, gaat u naar het menu **[!UICONTROL Selection controls>Multiple choice]** op de werkbalk van de pagina-editor.
 
@@ -218,10 +216,10 @@ Voeg zoveel keuzerondjes toe als er labels zijn. Het voordeel van deze functie i
 
 >[!NOTE]
 >
->Webformulieren staan de selectie van verschillende waarden niet toe. Meerdere selecties kunnen alleen worden geactiveerd voor formulieren van het type **Beoordeling**. Raadpleeg [deze sectie](../../web/using/about-surveys.md) voor meer informatie.\
->Het is echter mogelijk om een **[!UICONTROL Multiple choice]** typeveld in een toepassing van het Web op te nemen; maar zonder toestemming voor de keuze van verschillende waarden: u kunt de aangeboden opties selecteren met behulp van keuzerondjes.
+>U kunt multi-selectie in een Webtoepassing niet toelaten.
+>Het is echter mogelijk om een tekstveld **[!UICONTROL Multiple choice]** in een webtoepassing in te voegen, maar hierdoor kan de gebruiker niet meerdere waarden selecteren.
 
-## Rasters {#adding-grids} toevoegen
+## Rasters toevoegen {#adding-grids}
 
 Rasters worden gebruikt om stempagina&#39;s te ontwerpen in de toepassingen van het Web. Hier kunt u lijsten met keuzerondjes aanbieden voor het beantwoorden van enquêtes of het beoordelingstype Webformulieren, zoals hieronder wordt getoond:
 
@@ -239,13 +237,13 @@ Per rasterlijn kan slechts één optie worden geselecteerd.
 
 >[!NOTE]
 >
->In ons voorbeeld is het label van het raster verborgen. Hiervoor gaat u naar het tabblad **[!UICONTROL Advanced]** en wordt de weergave **[!UICONTROL Label position]** gedefinieerd als **[!UICONTROL Hidden]**. Zie [De positie van labels definiëren](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels).
+>In ons voorbeeld is het label van het raster verborgen. Hiervoor gaat u naar het tabblad **[!UICONTROL Advanced]** en wordt de weergave **[!UICONTROL Label position]** gedefinieerd als **[!UICONTROL Hidden]**. Zie [De positie van labels definiëren](defining-web-forms-layout.md#defining-the-position-of-labels).
 
-## Datums en getallen {#adding-dates-and-numbers} toevoegen
+## Datums en nummers toevoegen {#adding-dates-and-numbers}
 
 De inhoud van de formuliervelden kan worden opgemaakt op basis van de gegevens die in de database zijn opgeslagen of om aan een bepaalde eis te voldoen. U kunt geschikte velden maken voor het invoeren van getallen en datums.
 
-### Datums {#adding-dates} toevoegen
+### Datums worden toegevoegd {#adding-dates}
 
 ![](assets/s_ncs_admin_survey_date_calendar.png)
 
@@ -265,7 +263,7 @@ Datums kunnen worden geselecteerd via een kalender of een vervolgkeuzelijst. U k
 
 >[!NOTE]
 >
->De datums die in formulieren worden gebruikt, worden standaard ingevoerd via een kalender. Controleer voor meertalige formulieren of de kalenders beschikbaar zijn in alle gebruikte talen. Zie [Een webformulier vertalen](../../web/using/translating-a-web-form.md).
+>De datums die in formulieren worden gebruikt, worden standaard ingevoerd via een kalender. Controleer voor meertalige formulieren of de kalenders beschikbaar zijn in alle gebruikte talen. Zie [Een webformulier vertalen](translating-a-web-form.md).
 
 In sommige gevallen (bijvoorbeeld bij het invoeren van geboortedata) kan het echter gemakkelijker zijn om vervolgkeuzelijsten te gebruiken.
 
@@ -279,7 +277,7 @@ Vervolgens kunt u limieten instellen voor de waarden die worden aangeboden in de
 
 ![](assets/s_ncs_admin_survey_date_first_last_y.png)
 
-### Getallen {#adding-numbers} toevoegen
+### Getallen toevoegen {#adding-numbers}
 
 U kunt geschikte velden maken voor het invoeren van getallen.
 
@@ -323,9 +321,7 @@ De gebruiker abonneert zich op de dienst door de relevante optie te controleren.
 >
 >Als de gebruiker al is geabonneerd op een informatieservice en het vak dat aan deze service is gekoppeld, niet is ingeschakeld wanneer hij of zij het formulier goedkeurt, wordt het abonnement opgezegd.
 
-Voorbeelden van abonnementen en verwijzingen zijn beschikbaar in [deze sectie](../../web/using/about-surveys.md).
-
-## Een captcha {#inserting-a-captcha} invoegen
+## Een captcha invoegen {#inserting-a-captcha}
 
 Het doel van **captcha** tests is frauduleus gebruik van uw vormen van het Web te verhinderen.
 
@@ -361,7 +357,7 @@ U kunt een foutbericht maken om weer te geven. Hiervoor gebruikt u de koppeling 
 >
 >Hoofdletters zijn altijd 8 tekens lang. U kunt deze waarde niet wijzigen.
 
-## Een bestand {#uploading-a-file} uploaden
+## Een bestand uploaden {#uploading-a-file}
 
 U kunt een uploadveld toevoegen aan een pagina. Deze functionaliteit kan bijvoorbeeld nuttig zijn voor het delen van intranetbestanden.
 
@@ -384,7 +380,7 @@ U kunt de koppeling naar deze bestanden opslaan in een lokale variabele of in ee
 
 
 
-## Een verborgen constante {#inserting-a-hidden-constant} invoegen
+## Een verborgen constante invoegen {#inserting-a-hidden-constant}
 
 Wanneer de gebruiker een van de pagina&#39;s van het formulier valideert, kunt u een specifieke waarde instellen op een veld van zijn profiel of op een variabele.
 
