@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 2%
@@ -29,7 +29,7 @@ Als u een levering wilt maken die is gekoppeld aan een campagne, klikt u op de k
 
 De voorgestelde configuraties zijn geschikt voor de verschillende typen levering: direct mail, e-mail, mobiele kanalen. [Meer informatie](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-## Starten van levering {#starting-a-delivery}
+## Levering starten {#starting-a-delivery}
 
 Zodra alle goedkeuringen zijn verleend, is de levering klaar om te worden begonnen. De leveringsprocedure is dan afhankelijk van het soort levering. Zie [Een online levering starten](#starting-an-online-delivery) voor e-mail- of mobiele-kanaalleveringen en [Een offlinelevering starten](#starting-an-offline-delivery) voor directe mailleveringen.
 
@@ -51,7 +51,7 @@ De informatie verschijnt ook op het campagnedashboard. Met de koppeling **[!UICO
 
 Met een bevestigingsbericht kunt u deze handeling beveiligen.
 
-### Offline levering {#starting-an-offline-delivery} starten
+### Offline levering starten {#starting-an-offline-delivery}
 
 Zodra alle goedkeuringen zijn verleend, verandert de leveringsstatus in **[!UICONTROL Pending extraction]**. De extractiebestanden worden gemaakt met behulp van een speciale workflow die in de standaardconfiguratie automatisch wordt gestart wanneer een directe-maillevering in behandeling is voor extractie. Wanneer een proces bezig is, wordt het getoond in het dashboard en kan via zijn verbinding worden uitgegeven.
 
@@ -98,7 +98,7 @@ Raadpleeg [Een extractiebestand goedkeuren](../../campaign/using/marketing-campa
 
 * Het extractiedossier wordt verzonden naar de router en de levering wordt gebeëindigd.
 
-### Berekening van kosten en voorraden {#calculation-of-costs-and-stocks}
+### Berekening van de kosten en voorraden {#calculation-of-costs-and-stocks}
 
 Met de uitname van het bestand worden twee bewerkingen gestart: begrotingsberekening en voorraadberekening. De begrotingsonderdelen worden bijgewerkt.
 
@@ -114,7 +114,7 @@ Met de uitname van het bestand worden twee bewerkingen gestart: begrotingsbereke
 >
 >Zie [Leveranciers, voorraden en budgetten](../../campaign/using/providers--stocks-and-budgets.md) voor meer informatie over kostenberekeningen en voorraadbeheer.
 
-## Gekoppelde documenten {#managing-associated-documents} beheren
+## Gekoppelde documenten beheren {#managing-associated-documents}
 
 U kunt verschillende documenten aan een campagne koppelen: rapport, foto, webpagina, diagram, enz. Deze documenten kunnen elke gewenste indeling hebben (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, enzovoort). Leer hoe u documenten koppelt aan een campagne [in deze sectie](../../campaign/using/marketing-campaign-assets.md).
 
@@ -126,9 +126,9 @@ In een campagne kunt u ook andere objecten bekijken, zoals promotiecoupons, spec
 
 >[!NOTE]
 >
->Als u MRM gebruikt, kunt u een bibliotheek van marketing middelen ook beheren die voor verscheidene deelnemers voor samenwerkingswerk beschikbaar zijn. Zie [Marketing resources beheren](../../campaign/using/managing-marketing-resources.md).
+>Als u MRM gebruikt, kunt u een bibliotheek van marketing middelen ook beheren die voor verscheidene deelnemers voor samenwerkingswerk beschikbaar zijn. Zie [Marketing resources beheren](../../mrm/using/managing-marketing-resources.md).
 
-### Documenten {#adding-documents} toevoegen
+### Documenten toevoegen {#adding-documents}
 
 Documenten kunnen worden gekoppeld op campagneniveau (contextuele documenten) of op programmaniveau (algemene documenten).
 
@@ -203,7 +203,7 @@ Een overzicht kan punten en verpersoonlijkingsgebieden, middelen en aanbiedingen
 
    >[!NOTE]
    >
-   >Raadpleeg [Marketing resources beheren](../../campaign/using/managing-marketing-resources.md) voor meer informatie over marketingbronnen.
+   >Raadpleeg [Marketing resources beheren](../../mrm/using/managing-marketing-resources.md) voor meer informatie over marketingbronnen.
 
 #### Een omtrek selecteren {#selecting-an-outline}
 
