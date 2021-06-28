@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 1%
@@ -25,9 +25,9 @@ In een campagne kunt u ook andere objecten bekijken, zoals promotiecoupons, spec
 
 >[!NOTE]
 >
->Als u de module van het Beheer van het Middel van de Marketing van de Campagne gebruikt, kunt u een bibliotheek van marketing middelen ook beheren die voor verscheidene gebruikers voor samenwerkingswerk beschikbaar zijn. [Meer informatie](../../campaign/using/managing-marketing-resources.md).
+>Als u de module van het Beheer van het Middel van de Marketing van de Campagne gebruikt, kunt u een bibliotheek van marketing middelen ook beheren die voor verscheidene gebruikers voor samenwerkingswerk beschikbaar zijn. [Meer informatie](../../mrm/using/managing-marketing-resources.md).
 
-## Documenten {#adding-documents} toevoegen
+## Documenten toevoegen {#adding-documents}
 
 Documenten kunnen worden gekoppeld op campagneniveau (contextuele documenten) of op programmaniveau (algemene documenten).
 
@@ -102,7 +102,7 @@ Een overzicht kan punten en verpersoonlijkingsgebieden, middelen en aanbiedingen
 
    >[!NOTE]
    >
-   >Raadpleeg [deze sectie](../../campaign/using/managing-marketing-resources.md) voor meer informatie over marketingbronnen.
+   >Raadpleeg [deze sectie](../../mrm/using/managing-marketing-resources.md) voor meer informatie over marketingbronnen.
 
 ### Een omtrek selecteren {#selecting-an-outline}
 
