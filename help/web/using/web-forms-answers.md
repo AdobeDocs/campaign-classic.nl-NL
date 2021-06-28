@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 1%
@@ -81,7 +81,7 @@ Dit betekent dat als de gebruiker een bedrijfsvoertuig selecteert, het formulier
 
 ![](assets/s_ncs_admin_survey_no_storage_condb.png)
 
-## Informatie gebruiken {#using-collected-information}
+## Gezamelde gegevens gebruiken {#using-collected-information}
 
 Voor elk formulier kunnen de gegeven antwoorden opnieuw worden gebruikt in de velden of de labels. De volgende syntaxis moet worden gebruikt:
 
@@ -107,7 +107,7 @@ Voor elk formulier kunnen de gegeven antwoorden opnieuw worden gebruikt in de ve
    >
    >In tegenstelling tot de andere velden waarvoor `<%=`-tekens worden vervangen door escape-tekens, wordt de HTML-inhoud op dezelfde manier opgeslagen met de syntaxis `<%==`.
 
-## Bezig met opslaan van webformulierantwoorden {#saving-web-forms-answers}
+## Webformulieren opslaan {#saving-web-forms-answers}
 
 Als u de informatie wilt opslaan die op de pagina&#39;s van een formulier wordt verzameld, moet u een opslagvak in het diagram plaatsen.
 
@@ -115,9 +115,9 @@ Als u de informatie wilt opslaan die op de pagina&#39;s van een formulier wordt 
 
 U kunt dit vak op twee manieren gebruiken:
 
-* Als het formulier Web wordt geopend via een koppeling die in een e-mail wordt verzonden en als de gebruiker die toegang heeft tot de toepassing zich al in de database bevindt, kunt u de optie **[!UICONTROL Update the preloaded record]** controleren. Raadpleeg [Formulieren verzenden via e-mail](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email) voor meer informatie.
+* Als het formulier Web wordt geopend via een koppeling die in een e-mail wordt verzonden en als de gebruiker die toegang heeft tot de toepassing zich al in de database bevindt, kunt u de optie **[!UICONTROL Update the preloaded record]** controleren. Raadpleeg [Formulieren verzenden via e-mail](publishing-a-web-form.md#delivering-a-form-via-email) voor meer informatie.
 
-   In dit geval gebruikt Adobe Campaign de gecodeerde primaire sleutel van het gebruikersprofiel, een unieke id die aan elk profiel is toegewezen door Adobe Campaign. U moet de informatie vormen om via de preloaddoos vooraf te laden. Zie [De formuliergegevens vooraf laden](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data) voor meer informatie.
+   In dit geval gebruikt Adobe Campaign de gecodeerde primaire sleutel van het gebruikersprofiel, een unieke id die aan elk profiel is toegewezen door Adobe Campaign. U moet de informatie vormen om via de preloaddoos vooraf te laden. Zie [De formuliergegevens vooraf laden](publishing-a-web-form.md#pre-loading-the-form-data) voor meer informatie.
 
    >[!CAUTION]
    >
