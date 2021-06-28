@@ -6,14 +6,14 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 2%
 
 ---
 
-# Marketingscampagnes {#monitoring-marketing-campaigns} controleren
+# Marketingscampagnes volgen {#monitoring-marketing-campaigns}
 
 ## Een campagne bijhouden {#tracking-a-campaign}
 
@@ -27,7 +27,7 @@ Voor elke campagne, laat het **[!UICONTROL Tracking]** lusje u alle banen en hun
 
    ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
 
-* In het subtabblad **[!UICONTROL Tasks]** worden alle taken gegroepeerd die aan de campagne zijn gekoppeld. In deze weergave kunt u ze bewerken of verwijderen. De taken zijn beschikbaar met de toepassing MRM. Deze worden beschreven in [deze sectie](../../campaign/using/creating-and-managing-tasks.md).
+* In het subtabblad **[!UICONTROL Tasks]** worden alle taken gegroepeerd die aan de campagne zijn gekoppeld. In deze weergave kunt u ze bewerken of verwijderen. De taken zijn beschikbaar met de toepassing MRM. Deze worden beschreven in [deze sectie](../../mrm/using/creating-and-managing-tasks.md).
 
    ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
@@ -35,7 +35,7 @@ Voor elke campagne, laat het **[!UICONTROL Tracking]** lusje u alle banen en hun
 
    ![](assets/s_ncs_user_op_edit_exe_tab_d.png)
 
-## Aflevering bijhouden {#delivery-tracking}
+## Aflevering volgen {#delivery-tracking}
 
 De lijst met leveringen is beschikbaar via de koppeling **[!UICONTROL Deliveries]** van het knooppunt Campagne.
 
@@ -49,7 +49,7 @@ Als u de status van een levering wilt controleren, bewerkt u deze en bekijkt u h
 >
 >Informatie over leveringsdetails is beschikbaar in [deze sectie](../../delivery/using/about-message-tracking.md) sectie.
 
-## Reeksspatiëring {#execution-tracking}
+## Uitvoering bijhouden {#execution-tracking}
 
 U kunt de status van leveringen opzoeken door op de **[!UICONTROL Deliveries]** te klikken, die toegankelijk is via de Adobe Campaign-startpagina. Zie [Aflevering bijhouden](#delivery-tracking).
 
