@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 2%
@@ -17,15 +17,15 @@ ht-degree: 2%
 
 Het formulier kan een of meer pagina&#39;s bevatten. Het wordt gebouwd door een diagram dat u opeenvolgende pagina&#39;s, het testen, manuscriptuitvoering, paginakijl en opnamestappen laat. De globale wijze van het diagramontwerp is het zelfde als voor een werkschema van de Campagne.
 
-## Informatie over vorige en volgende pagina {#about-previous-page-and-next-page}
+## Vorige pagina en volgende pagina {#about-previous-page-and-next-page}
 
 Voor elke pagina kunt u de knoppen **[!UICONTROL Next]** of **[!UICONTROL Previous]** verwijderen. Selecteer hiertoe de betrokken pagina en selecteer de optie **[!UICONTROL Disable next page]** of **[!UICONTROL Disallow returning to the previous page]**.
 
 ![](assets/s_ncs_admin_survey_no_next_page.png)
 
-U kunt deze knoppen vervangen door koppelingen. Zie [HTML-inhoud invoegen](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
+U kunt deze knoppen vervangen door koppelingen. Zie [HTML-inhoud invoegen](static-elements-in-a-web-form.md#inserting-html-content).
 
-## Een sprong {#inserting-a-jump} invoegen
+## Een sprong invoegen {#inserting-a-jump}
 
 Met het object **[!UICONTROL Jump]** hebt u toegang tot een andere pagina of een ander formulier wanneer de gebruiker op **[!UICONTROL Next]** klikt.
 
@@ -47,7 +47,7 @@ De bestemming kan zijn:
 
    ![](assets/s_ncs_admin_survey_jump_comment.png)
 
-## Voorbeeld: een ander formulier openen volgens een parameter van de URL {#example--accessing-another-form-according-to-a-parameter-of-the-url}
+## Voorbeeld: toegang krijgen tot een ander formulier volgens een parameter van de URL {#example--accessing-another-form-according-to-a-parameter-of-the-url}
 
 In het volgende voorbeeld, willen wij een vorm van het Web vormen die, wanneer goedgekeurd, een andere vorm zal tonen die door een parameter van URL wordt aangewezen. Hiervoor voert u de volgende stappen uit:
 
@@ -55,7 +55,7 @@ In het volgende voorbeeld, willen wij een vorm van het Web vormen die, wanneer g
 
    ![](assets/s_ncs_admin_survey_jump_sample1.png)
 
-1. Voeg in de formuliereigenschappen een parameter (**next**) toe die is opgeslagen in een lokale variabele (**next**). Lokale variabelen worden beschreven in [Gegevens opslaan in een lokale variabele](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable).
+1. Voeg in de formuliereigenschappen een parameter (**next**) toe die is opgeslagen in een lokale variabele (**next**). Lokale variabelen worden beschreven in [Gegevens opslaan in een lokale variabele](web-forms-answers.md#storing-data-in-a-local-variable).
 
    ![](assets/s_ncs_admin_survey_jump_sample2.png)
 
@@ -71,9 +71,9 @@ In het volgende voorbeeld, willen wij een vorm van het Web vormen die, wanneer g
 
    Wanneer de gebruiker **[!UICONTROL Approve]** knoop klikt, vorm **APP22** wordt getoond.
 
-## Een koppeling invoegen naar een andere pagina van het formulier {#inserting-a-link-to-another-page-of-the-form}
+## Een koppeling naar een andere pagina van het formulier invoegen {#inserting-a-link-to-another-page-of-the-form}
 
-U kunt koppelingen naar andere pagina&#39;s van het formulier invoegen. Om dit te doen, voeg een **[!UICONTROL Link]** type statisch element aan de pagina toe. Raadpleeg [Een koppeling invoegen](../../web/using/static-elements-in-a-web-form.md#inserting-a-link) voor meer informatie.
+U kunt koppelingen naar andere pagina&#39;s van het formulier invoegen. Om dit te doen, voeg een **[!UICONTROL Link]** type statisch element aan de pagina toe. Raadpleeg [Een koppeling invoegen](static-elements-in-a-web-form.md#inserting-a-link) voor meer informatie.
 
 ## Voorwaardelijke paginaweergave {#conditional-page-display}
 
@@ -89,7 +89,7 @@ U kunt deze informatie opslaan in een veld van de database of een lokale variabe
 
 >[!NOTE]
 >
->De opslagmodi worden beschreven in [Opslagvelden voor reacties](../../web/using/web-forms-answers.md#response-storage-fields).
+>De opslagmodi worden beschreven in [Opslagvelden voor reacties](web-forms-answers.md#response-storage-fields).
 
 In ons voorbeeld, willen wij een variabele gebruiken:
 
@@ -107,13 +107,13 @@ Definieer vervolgens de volgorde van de pagina wanneer een van de voorwaarden wa
 
 ### Weergeven op basis van parameters {#display-based-on-parameters}
 
-U kunt de pagina ook personaliseren die volgens de initialisatieparameters van de vorm van het Web of volgens de waarden in het gegevensbestand wordt opgeslagen. Zie [Formulier-URL-parameters](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+U kunt de pagina ook personaliseren die volgens de initialisatieparameters van de vorm van het Web of volgens de waarden in het gegevensbestand wordt opgeslagen. Zie [Formulier-URL-parameters](defining-web-forms-properties.md#form-url-parameters).
 
-## Scripts {#adding-scripts} toevoegen
+## Scripts toevoegen {#adding-scripts}
 
 Met het object **[!UICONTROL Script]** kunt u een JavaScript-script rechtstreeks invoeren, bijvoorbeeld om de waarde van een veld te wijzigen, gegevens op te halen uit de database of een Adobe Campaign API aan te roepen.
 
-## De eindpagina {#personalizing-the-end-page} aanpassen
+## De eindpagina aanpassen {#personalizing-the-end-page}
 
 U moet een eindpagina aan het eind van het diagram plaatsen. De eindpagina wordt weergegeven wanneer de gebruiker op de knop **[!UICONTROL Approve]** in het webformulier klikt.
 
