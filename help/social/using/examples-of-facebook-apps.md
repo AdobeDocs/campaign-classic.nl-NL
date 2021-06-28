@@ -6,9 +6,9 @@ audience: social
 content-type: reference
 topic-tags: annexes
 exl-id: 3b8c7db4-9c55-42f6-8e09-e5ab781efe8f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '2222'
 ht-degree: 1%
 
 ---
@@ -169,7 +169,7 @@ Als u de aan Facebook gekoppelde weergavefout wilt negeren, moet u **[!UICONTROL
 
 ![](assets/social_webapp_028.png)
 
-### Activiteit van toegangsbeheer {#access-control-activity}
+### Toegangscontroleactiviteit {#access-control-activity}
 
 Met de activiteit **[!UICONTROL Access control]** kunt u de pagina voor Facebook-machtigingsaanvragen weergeven wanneer de gebruiker de wedstrijd ingaat. Als zij ermee instemmen hun informatie te delen, wordt deze tijdens het vooraf laden teruggewonnen. Raadpleeg voor meer informatie: [Voorladingsactiviteit](#pre-loading-activity).
 
@@ -177,7 +177,7 @@ Als u eerder het externe account hebt ingevoerd bij het maken van de webtoepassi
 
 ![](assets/social_webapp_024.png)
 
-### Activiteiten {#pre-loading-activity} vooraf laden
+### Voorladen {#pre-loading-activity}
 
 Selecteer de gegevensbron die moet worden gebruikt voor het vooraf laden:
 
@@ -224,7 +224,7 @@ Controleer het vakje **[!UICONTROL I agree to comply with Facebook conditions of
 >
 >Als u beide typen voorladen (via Adobe Campaign en via Facebook) wilt gebruiken, voegt u twee vooraf geladen vakken achter elkaar toe.
 
-### Activiteiten opslaan {#save-activity}
+### Activiteit opslaan {#save-activity}
 
 Met de activiteit **[!UICONTROL Save]** kunt u de informatie opslaan die tijdens de vorige fasen in de bezoekerslijst is verzameld.
 
@@ -297,7 +297,7 @@ Het scherm **[!UICONTROL Activities]** van de detailpagina van een bezoeker beva
    >
    >Als u wilt dat Adobe Campaign de insteekmodules van een ventilator verzamelt, moet u op de knop **[!UICONTROL Subscribe]** op het serviceconfiguratiescherm klikken. Voor meer op dit, verwijs naar [Het vormen van externe rekeningen](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
-## De velden van een formulier vooraf laden met Facebook-profielgegevens {#how-to-pre-load-the-fields-of-a-form-using-facebook-profile-data}
+## Een formulier vooraf laden met Facebook-profielgegevens {#how-to-pre-load-the-fields-of-a-form-using-facebook-profile-data}
 
 Met de toepassing **[!UICONTROL Social Marketing]** kunt u ook een knop aan een formulier toevoegen, zodat u velden vooraf kunt laden met Facebook-profielgegevens. Deze optie, die beschikbaar is in alle malplaatjes van de Webtoepassing (**[!UICONTROL Page]** typeactiviteiten) wordt gedetailleerd in [deze sectie](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
 
@@ -306,3 +306,55 @@ Met de toepassing **[!UICONTROL Social Marketing]** kunt u ook een knop aan een 
 >[!NOTE]
 >
 >Voordat u deze functie gaat gebruiken, moet u eerst een Facebook-toepassing en een externe account van het type **[!UICONTROL Facebook Connect]** maken. Voor meer op dit, verwijs naar [Het vormen van externe rekeningen](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+
+**De velden van het formulier vooraf laden met gegevens uit het Facebook-profiel**
+
+U maakt een webformulier en neemt elementen op waarmee de gebruiker geen interactie heeft op de pagina&#39;s van het formulier. Dit zijn statische elementen, zoals afbeeldingen, HTML-inhoud, een horizontale balk of een hypertekstkoppeling. Meer informatie over statische elementen in een webformulier vindt u op [deze pagina](../../web/using/static-elements-in-a-web-form.md).
+
+Als u een statisch element invoegt, kunt u met de optie **[!UICONTROL Preload with Facebook]** een knop in een formulier invoegen om velden vooraf te laden met Facebook-profielgegevens.
+
+![](assets/web_social_webapp_037.png)
+
+Wanneer een gebruiker op de knop **[!UICONTROL Fill in automatically]** klikt, wordt het Facebook-aanvraagvenster voor machtigingen geopend.
+
+![](assets/web_social_webapp_029.png)
+
+>[!NOTE]
+>
+>U kunt de lijst met uitgebreide rechten wijzigen wanneer u de externe account configureert. Als er geen uitgebreide rechten zijn geconfigureerd, stuurt Facebook de basisprofielgegevens standaard door.\
+>Raadpleeg de documentatie bij Facebook](https://developers.facebook.com/docs/reference/api/permissions) voor een overzicht van uitgebreide rechten en de bijbehorende syntaxis.[
+
+Als de gebruiker ermee instemt om zijn gegevens te delen, worden de velden van het formulier vooraf geladen.
+
+![](assets/web_social_webapp_030.png)
+
+Voor dit gebruiksgeval, hebben wij een toepassing van het Web gecreeerd die uit de volgende elementen wordt samengesteld:
+
+* een pagina met het formulier
+* een **[!UICONTROL Record]**-activiteit
+* een **[!UICONTROL End]** activiteit
+
+![](assets/social_webapp_031.png)
+
+Voer de volgende stappen uit om een knop voor vooraf laden toe te voegen:
+
+1. Maak een formulier.
+
+   ![](assets/social_webapp_032.png)
+
+1. Ga naar hetzelfde niveau als de velden in het formulier en voeg een koppeling toe.
+
+   ![](assets/social_webapp_033.png)
+
+1. Voer het label in en selecteer het type **[!UICONTROL Button]**.
+
+   ![](assets/social_webapp_034.png)
+
+1. Ga naar het **[!UICONTROL Action]** gebied en selecteer **[!UICONTROL Preload with Facebook]**.
+
+   ![](assets/social_webapp_035.png)
+
+1. Ga naar het **[!UICONTROL Application]** gebied en selecteer **[!UICONTROL Facebook Connect]** type externe rekening eerder gecreeerd. Raadpleeg [deze pagina](../../social/using/creating-a-facebook-application.md#configuring-external-accounts) voor meer informatie.
+
+   ![](assets/social_webapp_036.png)
+
