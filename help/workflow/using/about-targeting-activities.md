@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 4%
@@ -26,7 +26,7 @@ Met deze activiteiten kunt u een of meer doelen maken door sets te definiëren e
 * **Splitsen**: Hiermee kunt u een doel opsplitsen in verschillende subsets. Raadpleeg de sectie [Splitsen](../../workflow/using/split.md).
 * **Cellen**: biedt een weergave van de verschillende subsets in de vorm van gegevenskolommen en vereenvoudigt het manipuleren van deze subsets wanneer er veel zijn. Raadpleeg voor meer informatie de sectie [Cellen](../../workflow/using/cells.md).
 * **Aanbiedingen per cel**: Hiermee kunt u verschillende aanbiedingen koppelen aan elke subset van een populatie. Raadpleeg de sectie [Aanbiedingen per cel](../../workflow/using/offers-by-cell.md).
-* **Antwoorden** enquête: Hiermee kunt u tijdens een enquête verzamelde informatie herstellen. Raadpleeg deze [sectie](../../web/using/getting-started-with-surveys.md) voor meer informatie.
+* **Antwoorden** enquête: Hiermee kunt u tijdens een enquête verzamelde informatie herstellen. Raadpleeg deze [sectie](../../surveys/using/getting-started-with-surveys.md) voor meer informatie.
 * **Overzicht** van levering: Hiermee kunt u een overzicht van de levering toevoegen. Raadpleeg de sectie [Overzicht van levering](../../workflow/using/delivery-outline.md).
 * **Verrijking**: Hiermee kunt u kolommen toevoegen aan een werktabel of workflow. Raadpleeg de sectie [Verrijking](../../workflow/using/enrichment.md).
 * **Schema** bewerken: Hiermee kunt u gegevens transformeren, standaardiseren en indien nodig verrijken. Voor meer op dit, verwijs naar [geef schema](../../workflow/using/edit-schema.md) sectie uit.
