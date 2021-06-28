@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Met Adobe Campaign kunt u serviceproviders definiëren die betrokken zijn bij de taken die in de campagnes worden uitgevoerd. Informatie over de dienstverleners en de bijbehorende kostenstructuren wordt door de Adobe Campaign-beheerder in hoofdlijnen gedefinieerd. Van de levering wordt naar de dienstverlener verwezen en de kostenstructuur ervan maakt het mogelijk de kosten van deze levering te berekenen en het betrokken bestand te beheren.
 
-## Serviceproviders maken en hun kostenstructuur {#creating-service-providers-and-their-cost-structures}
+## Dienstverleners en hun kostenstructuren creëren {#creating-service-providers-and-their-cost-structures}
 
 Elke serviceprovider wordt opgeslagen in een bestand met contactgegevens, servicesjablonen en verwante taken.
 
@@ -41,9 +41,9 @@ De taken die tijdens de leveringen worden uitgevoerd, worden door de dienstverle
 
    Zie [Een service koppelen aan een campagne](#associating-a-service-with-a-campaign).
 
-### Een serviceprovider en de bijbehorende kostencategorieën maken {#creating-a-service-provider-and-its-cost-categories}
+### Het creëren van een dienstverlener en zijn kostencategorieën {#creating-a-service-provider-and-its-cost-categories}
 
-#### Een serviceprovider {#adding-a-service-provider} toevoegen
+#### Een serviceprovider toevoegen {#adding-a-service-provider}
 
 U kunt zoveel serviceproviders maken als nodig zijn voor uw leveringen. De procedure voor de toevoeging van een dienstverlener is als volgt:
 
@@ -91,7 +91,7 @@ Pas de volgende stappen toe om een servicesjabloon te maken en de inhoud ervan t
 
    ![](assets/s_ncs_user_supplier_default_cost.png)
 
-### De kostenstructuur {#defining-the-cost-structure} definiëren
+### De kostenstructuur definiëren {#defining-the-cost-structure}
 
 Voor elk type kosten worden in een kostenstructuur de toe te passen berekeningsregels vermeld.
 
@@ -121,7 +121,7 @@ Als dit bedrag op een partij berichten van toepassing is, specificeer het aantal
 
 ![](assets/s_ncs_user_supplier_cost_structure_calc_02.png)
 
-#### Lineaire structuur op drempel {#linear-structure-by-threshold}
+#### Lineaire structuur volgens drempel {#linear-structure-by-threshold}
 
 Als het bedrag door drempel voor elk bericht van toepassing is, moet u een **[!UICONTROL Linear by threshold]** berekeningsstructuur bepalen. In dit type van kostenstructuur, zal elk bericht 0.13 kosten, bijvoorbeeld, als het totale aantal berichten tussen 1 en 100 is, en 0.12 van 100 tot 1000 verzonden berichten zal kosten, of 0.11 voorbij 1000 berichten.
 
@@ -137,7 +137,7 @@ Tot slot kunt u een kostenberekening op het totale aantal berichten vormen. Sele
 
 ![](assets/s_ncs_user_supplier_cost_structure_calc_04.png)
 
-### Aan een service gekoppelde processen configureren {#configuring-processes-associated-with-a-service}
+### Het vormen processen verbonden aan de dienst {#configuring-processes-associated-with-a-service}
 
 U kunt informatie over de processen associëren verbonden aan de dienst via **[!UICONTROL Processes]** tabel.
 
@@ -180,7 +180,7 @@ U kunt verplichte selectie van een kostentype tijdens de definitie van kostencat
 
 ![](assets/s_ncs_user_supplier_cost_structure_select.png)
 
-## Beheer van aandelen en orders {#stock-and-order-management}
+## Beheer van voorraden en orders {#stock-and-order-management}
 
 De types van kosten kunnen met voorraadlijnen worden geassocieerd om alarm, spoorlevering, en lanceringsorden te behandelen.
 
@@ -202,13 +202,13 @@ De procedure voor het opzetten van het beheer van de voorraden en de orders in A
 
    Zie [Orders](#orders).
 
-### Bestandsbeheer {#stock-management}
+### Voorraadbeheer {#stock-management}
 
 Adobe Campaign kan een groep operatoren waarschuwen als het bestand is uitgeput of een minimumdrempel heeft bereikt. De voorraadniveaus zijn toegankelijk via de verbinding **[!UICONTROL Stocks]** van het **[!UICONTROL Campaigns]** lusje via **[!UICONTROL Other choices]** verbinding van het navigatiegebied.
 
 ![](assets/s_ncs_user_stocks_view.png)
 
-#### Een bestand {#creating-a-stock} maken
+#### Een voorraad maken {#creating-a-stock}
 
 Pas de volgende stappen toe om een nieuwe voorraad te maken:
 
@@ -221,7 +221,7 @@ Pas de volgende stappen toe om een nieuwe voorraad te maken:
    >
    >Raadpleeg [Serviceproviders en hun kostenstructuren maken](#creating-service-providers-and-their-cost-structures) voor meer informatie.
 
-#### Stamlijnen {#adding-stock-lines} toevoegen
+#### Stamlijnen toevoegen {#adding-stock-lines}
 
 Een voorraad omvat verschillende voorraadlijnen. Een voorraadlijn bevat een initiële hoeveelheid middelen die door leveringen zal worden verbruikt. Elke voorraadlijn geeft de verbruikte hoeveelheid, de voorraad en de bestelde hoeveelheid aan.
 
@@ -247,7 +247,7 @@ Voor een bepaalde dienstverlener, in een dienst, kan een voorraadlijn door één
 
 ![](assets/s_ncs_user_stocks_select_from_supplier.png)
 
-### Stock tracking {#stock-tracking}
+### Tracking van materiaal {#stock-tracking}
 
 #### Waarschuwingsoperatoren {#alerting-operators}
 
@@ -275,7 +275,7 @@ Het tabblad **[!UICONTROL Consumptions]** bevat het volume dat per campagne word
 
 ![](assets/s_ncs_user_stocks_edit_from_board_consumed.png)
 
-## Begroting {#calculating-budgets}
+## Begroting berekenen {#calculating-budgets}
 
 ### Beginsel {#principle}
 
@@ -285,8 +285,8 @@ De kosten voor de uitvoering van een campagne worden geconsolideerd op het nivea
 
 ### Implementatie {#implementation}
 
-Als u in een campagne het budget selecteert, moet u het oorspronkelijke bedrag invoeren. De berekende kosten worden automatisch bijgewerkt op basis van het niveau van de aangegane verplichtingen (gemaakte, verwachte, gereserveerde, vastgelegde kosten). Zie [Hoeveelheden berekenen](../../campaign/using/controlling-costs.md#calculating-amounts).
+Als u in een campagne het budget selecteert, moet u het oorspronkelijke bedrag invoeren. De berekende kosten worden automatisch bijgewerkt op basis van het niveau van de aangegane verplichtingen (gemaakte, verwachte, gereserveerde, vastgelegde kosten). Zie [Hoeveelheden berekenen](../../mrm/using/controlling-costs.md#calculating-amounts).
 
 >[!NOTE]
 >
->De procedure voor het maken van budgetten wordt weergegeven in [Een budget maken](../../campaign/using/controlling-costs.md#creating-a-budget).
+>De procedure voor het maken van budgetten wordt weergegeven in [Een budget maken](../../mrm/using/controlling-costs.md#creating-a-budget).
