@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 6%
@@ -68,7 +68,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr> 
   <tr> 
    <td> Marketingbronnen (MRM)<br /> </td> 
-   <td> Controls marketing actions op een samenwerkingswijze door beheer en het volgen van de taken, de begrotingen en de marketing middelen te verstrekken. <a href="../../campaign/using/about-marketing-resource-management.md">Meer informatie</a> <br /> </td> 
+   <td> Controls marketing actions op een samenwerkingswijze door beheer en het volgen van de taken, de begrotingen en de marketing middelen te verstrekken. <a href="../../mrm/using/about-marketing-resource-management.md">Meer informatie</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
@@ -139,7 +139,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr> 
   <tr> 
    <td> Online enquêtes (Beoordelingsmanager)<br /> </td> 
-   <td> Hiermee maakt en beheert u onlineformulieren voor het toevoegen of wijzigen van profielgegevens, voor het abonneren, voor het opzeggen van abonnementen of voor het invoeren van wedstrijden. Optioneel. <a href="../../web/using/about-surveys.md">Meer informatie</a> <br /> </td> 
+   <td> Hiermee maakt en beheert u onlineformulieren voor het toevoegen of wijzigen van profielgegevens, voor het abonneren, voor het opzeggen van abonnementen of voor het invoeren van wedstrijden. Optioneel. <a href="../../surveys/using/about-surveys.md">Meer informatie</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
