@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 5%
@@ -207,7 +207,7 @@ Het tabblad **[!UICONTROL Rule]** bevat een lijst met typologische regels die mo
 
 >[!NOTE]
 >
->**[!UICONTROL Arbitration]** typologieën van het type worden gebruikt in het kader van het beheer van de verkoopdruk . Raadpleeg [deze sectie](../../campaign/using/about-marketing-resource-management.md) voor meer informatie.
+>**[!UICONTROL Arbitration]** typologieën van het type worden gebruikt in het kader van het beheer van de verkoopdruk . Raadpleeg [deze sectie](../../mrm/using/about-marketing-resource-management.md) voor meer informatie.
 
 ## De goedkeuringsmodus wijzigen {#changing-the-approval-mode}
 
