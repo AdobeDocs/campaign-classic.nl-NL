@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Content bewerken{#editing-content}
 
-## Een zichtbaarheidsvoorwaarde {#defining-a-visibility-condition} definiëren
+## Een zichtbaarheidsvoorwaarde definiëren {#defining-a-visibility-condition}
 
 U kunt een zichtbaarheidsvoorwaarde opgeven voor een webpagina-element: dit element is alleen zichtbaar als aan de voorwaarde wordt voldaan .
 
@@ -35,7 +35,7 @@ Deze voorwaarden passen de syntaxis van de XTK-expressie toe (bijvoorbeeld **ctx
 >
 >Niet-zichtbare dynamische blokken, zoals vervolgkeuzemenu&#39;s, kunnen niet worden bewerkt.
 
-## Rand en achtergrond {#adding-a-border-and-background} toevoegen
+## Rand en achtergrond toevoegen {#adding-a-border-and-background}
 
 U kunt een **border** aan een geselecteerd blok toevoegen. De randen worden gedefinieerd met behulp van drie opties: stijl, grootte en kleur.
 
@@ -79,7 +79,7 @@ Dit doet u als volgt:
 
    ![](assets/dce_sidebar_completeoptionradio.png)
 
-### Formuliervelden {#modifying-form-fields} wijzigen
+### Formuliervelden wijzigen {#modifying-form-fields}
 
 Formuliervelden zoals keuzerondjes, invoerzones, vervolgkeuzelijsten, enz. kan worden gewijzigd op basis van de werkbalken.
 
@@ -91,7 +91,7 @@ Dit betekent dat u:
 
    ![](assets/dce_toolbar_formblock_edition.png)
 
-## Een handeling toevoegen aan een knop {#adding-an-action-to-a-button}
+## Een handeling aan een knop toevoegen {#adding-an-action-to-a-button}
 
 Wanneer de gebruiker op een knop klikt, kunt u een bijbehorende actie definiëren. Selecteer hiertoe de uit te voeren actie in de vervolgkeuzelijst.
 
@@ -109,7 +109,7 @@ De beschikbare acties zijn als volgt:
 
 U kunt het label dat aan de knop is gekoppeld, wijzigen in het desbetreffende veld.
 
-## Een koppeling {#adding-a-link} toevoegen
+## Een koppeling toevoegen {#adding-a-link}
 
 U kunt een koppeling invoegen in elk pagina-element: afbeelding, woord, groep woorden, tekstblok, enz.
 
@@ -148,7 +148,7 @@ Met de optie **Koppeling naar een externe URL** kunt u elke URL vanuit de bronin
 
 Voer het koppelingsadres in kwestie in het veld **URL** in. Het veld URL moet worden ingevoerd als: **https://www.myURL.com**.
 
-### Koppeling maken naar een webtoepassing {#link-to-a-web-application}
+### Koppelen naar een webtoepassing {#link-to-a-web-application}
 
 Met de optie **Koppeling naar een webtoepassing** hebt u toegang tot een Adobe Campaign-webtoepassing.
 
@@ -168,7 +168,7 @@ De **Verbinding die een actie** optie bepaalt laat u een actie vormen wanneer he
 >
 >Beschikbare acties worden beschreven in de sectie [Een handeling toevoegen aan een knop](#adding-an-action-to-a-button).
 
-### Een koppeling {#delete-a-link} verwijderen
+### Een koppeling verwijderen {#delete-a-link}
 
 Wanneer een koppeling is ingevoegd, bevat de werkbalk twee nieuwe pictogrammen: **Koppeling bewerken** en **De koppeling** verbreken, zodat u kunt communiceren met de gemaakte koppeling.
 
@@ -214,7 +214,7 @@ Met de Digital Content Editor kunt u aan **elk type afbeelding** werken dat comp
 >
 >U mag externe bestanden niet oproepen in een **script**-tag van de HTML-pagina. Deze bestanden worden niet geïmporteerd op de Adobe Campaign-server.
 
-### Een afbeelding {#adding---deleting---duplicating-an-image} toevoegen/verwijderen/dupliceren
+### Een afbeelding toevoegen, verwijderen of dupliceren {#adding---deleting---duplicating-an-image}
 
 Als u een afbeelding wilt invoegen, selecteert u een blok Afbeeldingstype en klikt u op het pictogram **Afbeelding**.
 
@@ -232,7 +232,7 @@ Met het pictogram **Dupliceren** worden de tag ![]() en de inhoud ervan geduplic
 >
 >Wanneer u een afbeelding dupliceert, worden de id&#39;s voor de nieuwe afbeelding verwijderd.
 
-### Afbeeldingseigenschappen {#editing-image-properties} bewerken
+### Afbeeldingseigenschappen bewerken {#editing-image-properties}
 
 Wanneer u een blok selecteert dat een afbeelding bevat, hebt u toegang tot de volgende eigenschappen:
 
@@ -253,9 +253,9 @@ Standaard zijn de velden die worden aangeboden afkomstig uit de tabel **[!UICONT
 
 De veldnaam wordt in de editor weergegeven en geel gemarkeerd. Deze wordt vervangen door het profiel van de beoogde ontvanger wanneer de personalisatie wordt gegenereerd (bijvoorbeeld wanneer een voorvertoning van een landingspagina wordt weergegeven).
 
-Een voorbeeld wordt voorgesteld in [Het opnemen van een verpersoonlijkingsgebied](../../web/using/creating-a-landing-page.md#inserting-a-personalization-field) sectie.
+Een voorbeeld wordt voorgesteld in [Het opnemen van een verpersoonlijkingsgebied](creating-a-landing-page.md#inserting-a-personalization-field) sectie.
 
-### Een aanpassingsblok {#inserting-a-personalization-block} invoegen
+### Een aanpassingsblok invoegen {#inserting-a-personalization-block}
 
 Met de optie **Personaliseringsblok** kunt u dynamische en gepersonaliseerde blokken in de inhoud invoegen. U kunt bijvoorbeeld een logo of een begroetingsbericht toevoegen. Deze optie is niet beschikbaar voor tekstblokken.
 
