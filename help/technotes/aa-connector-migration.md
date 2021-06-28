@@ -4,9 +4,9 @@ title: Migreren naar de Adobe Analytics-connector
 description: Campagne - Veelgestelde vragen over Analytics Connector
 hide: true
 hidefromtoc: true
-source-git-commit: 248bd7774c01adb44ce33d0499c2b01d013e75bd
+source-git-commit: cde4ed65abb2458fc40639b92314f8d56b18b78c
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '840'
 ht-degree: 5%
 
 ---
@@ -22,12 +22,12 @@ U moet aan de nieuwe integratie van de Verbinding van Adobe Analytics op de Uitw
 
 >[!NOTE]
 >
->Voor vragen over deze wijzigingen neemt u contact op met de [Adobe-klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Voor alle vragen over deze wijzigingen leest u de [Veelgestelde vragen](#faq-aa). Neem voor meer informatie contact op met de [klantenservice van Adobe](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## Wat is er veranderd?
 
-Er is nu een nieuwe integratie tussen Campaign Classic en Adobe Analytics beschikbaar. Belangrijke wijzigingen worden hieronder weergegeven.
+Er is nu een nieuwe integratie tussen Campaign Classic v7 en Adobe Analytics beschikbaar. Belangrijke wijzigingen worden hieronder weergegeven.
 
 * De integratie tussen Adobe Campaign Classic en Adobe Analytics-verificatie is van gebruiker/wachtwoord naar Adobe Identity Management Service (IMS) verplaatst. Dientengevolge, moet u Adobe IMS uitvoeren, en met Campagne [via een Adobe ID ](../integrations/using/about-adobe-id.md) verbinden, alvorens de implementatie van de Verbinding van Analytics te beginnen.
 
@@ -58,7 +58,7 @@ Als klant op locatie/hybride klant moet u een upgrade uitvoeren naar een van de 
 Zodra alle instanties worden bevorderd, zult u de nieuwe integratie [aan de Schakelaar van Adobe Analytics kunnen uitvoeren, en een naadloze overgang verzekeren.](../platform/using/adobe-analytics-connector.md)
 
 
-## Veelgestelde vragen
+## Veelgestelde vragen{#faq-aa}
 
 **Hoe krijg ik logboeken?**
 
@@ -71,17 +71,21 @@ Als gebruiker op locatie kunt u de breedtelodus als volgt implementeren:
 * Om uitgebreide wijze voor het gebruikersinterface toe te laten: voert het `web` proces in uitgebreide wijze opnieuw in.
 * Om uitgebreide wijze voor de **webAnalytics** werkschema&#39;s toe te laten: Selecteer de optie **Uitvoeren in de engine** uit de workfloweigenschappen en `wfserver` opnieuw uitvoeren in de uitgebreide modus.
 
-**Integratie-eigenaar niet-beheerder**
+**Wat betekent de fout &#39;Integratie-eigenaar niet-beheerder&#39;?**
 
 Meer informatie over de fout &#39;Integratie-eigenaar niet-beheerder&#39; van gegevensconnectors vindt u op [deze pagina](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error).
 
-**Bestaande gebeurtenissen/gebeurtenissen/reportsuite aanwezig in analyses die niet zichtbaar zijn in campagne**
+**Wat gebeurt er met oude gegevens en rapportreeksen als de migratie naar de nieuwe connector is voltooid?**
+
+Na migratie wordt een nieuwe aansluiting (gemigreerd van de oude connector) gebruikt om gegevens naar dezelfde rapportsuite te verplaatsen en worden bestaande gegevens niet beïnvloed: het zal aan de bestaande gegevens toevoegen.
+
+**Sommige bestaande gebeurtenissen/gebeurtenissen/rapportsuites in Analytics zijn niet zichtbaar in Campagne. Wat moet ik doen?**
 
 Integratie is afhankelijk van gegevens over Technical Account Token voor dagelijkse werking. Als er geen toestemming aan een dimensie/metrisch/rapportreeks van het productprofiel verbonden aan de Gebruiker van de Technische Rekening is, zullen APIs die wij gebruiken eenvoudig voor die verzoeken vastlopen.
 
 Als wij voor details van een component Analytics (zoals metriek/afmetingen/segmenten/rapportreeksen) lezen, zal API deze componenten in het resultaat niet terugkeren (die als iets kunnen kijken geschrapt op de zijde van Analytics of niet aanwezig is). De API voor Analytics zal deze aanvragen en foutmeldingen negeren.
 
-De oplossing is om het Profiel van het Product in de Context van de Gebruiker van de Analyse van de Token van de Technische Gebruiker met de pas gecreëerde/ontbrekende componenten bij te werken door deze componenten in [Adobe Admin Console](https://adminconsole.adobe.com/) toe te voegen.
+De oplossing is het **Productprofiel** in Analytics User Context of Technical User Token met de nieuw gecreëerde/ontbrekende componenten bij te werken door deze componenten in [Adobe Admin Console](https://adminconsole.adobe.com/) toe te voegen. Neem voor meer hulp contact op met [Adobe Klantenservice](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Nuttige koppelingen
 
