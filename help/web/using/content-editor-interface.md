@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: cb76f3dc-7f3a-49de-89cb-c106865ecb17
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 3%
@@ -15,15 +15,15 @@ ht-degree: 3%
 
 # Interface van de contenteditor{#content-editor-interface}
 
-## Venster {#editing-window} bewerken
+## Venster bewerken {#editing-window}
 
 Het DCE-bewerkingsvenster is onderverdeeld in drie verschillende secties. Hiermee kunt u de status van de inhoud weergeven, wijzigen en controleren.
 
 ![](assets/dce_decoupe_window_nb.png)
 
-1. De **top** sectie is een vertoningsgebied voor berichten aan de gebruiker. Deze berichten wijzen op het statuut van de de toepassingsstatus van het Web of de levering die evenals waarschuwingen en foutenmeldingen met betrekking tot de inhoud wordt gecreeerd. Raadpleeg [HTML-inhoudsstatussen](../../web/using/content-editing-best-practices.md#html-content-statuses) voor meer informatie.
-1. De sectie aan **left** van het venster is het gebied voor het uitgeven van inhoud. Vanuit dit gebied kan de gebruiker rechtstreeks met de inhoud communiceren via de pop-upwerkbalk: voegt een koppeling in een afbeelding in, wijzigt het lettertype, verwijdert een veld, enzovoort. Zie [Formulieren bewerken](../../web/using/editing-content.md#editing-forms) voor meer informatie.
-1. De sectie aan **right** van het venster is het gebied van het controlepaneel. In dit gebied worden de verschillende opties voor de editor gegroepeerd, met name de opties voor het configureren van de paginakop en de algemene opties voor een blok: Voeg een rand toe, verbind een gegevensbestandgebied met een inputstreek, toegang Web-pagina eigenschappen, enz. Raadpleeg voor meer informatie de secties [Algemene opties](#global-options) en [Inhoud bewerken](../../web/using/editing-content.md).
+1. De **top** sectie is een vertoningsgebied voor berichten aan de gebruiker. Deze berichten wijzen op het statuut van de de toepassingsstatus van het Web of de levering die evenals waarschuwingen en foutenmeldingen met betrekking tot de inhoud wordt gecreeerd. Raadpleeg [HTML-inhoudsstatussen](content-editing-best-practices.md#html-content-statuses) voor meer informatie.
+1. De sectie aan **left** van het venster is het gebied voor het uitgeven van inhoud. Vanuit dit gebied kan de gebruiker rechtstreeks met de inhoud communiceren via de pop-upwerkbalk: voegt een koppeling in een afbeelding in, wijzigt het lettertype, verwijdert een veld, enzovoort. Zie [Formulieren bewerken](editing-content.md#editing-forms) voor meer informatie.
+1. De sectie aan **right** van het venster is het gebied van het controlepaneel. In dit gebied worden de verschillende opties voor de editor gegroepeerd, met name de opties voor het configureren van de paginakop en de algemene opties voor een blok: Voeg een rand toe, verbind een gegevensbestandgebied met een inputstreek, toegang Web-pagina eigenschappen, enz. Raadpleeg voor meer informatie de secties [Algemene opties](#global-options) en [Inhoud bewerken](editing-content.md).
 
 ## Algemene opties {#global-options}
 
@@ -71,14 +71,14 @@ In de sectie rechts van de editor worden de belangrijkste opties gegroepeerd waa
 
 U kunt:
 
-* Bepaal de weergave voor een of meerdere blokken. Raadpleeg [Een zichtbaarheidsvoorwaarde definiëren](../../web/using/editing-content.md#defining-a-visibility-condition).
-* Definieer de randen en frames. Raadpleeg [Een rand en achtergrond toevoegen](../../web/using/editing-content.md#adding-a-border-and-background).
-* Afbeeldingskenmerken definiëren (grootte, bijschrift). Zie [Afbeeldingseigenschappen bewerken](../../web/using/editing-content.md#editing-image-properties).
-* Koppel de database aan een formulierelement (invoerzone, selectievakje). Raadpleeg [De gegevenseigenschappen voor een formulier wijzigen](../../web/using/editing-content.md#changing-the-data-properties-for-a-form).
-* Als u een deel van een formulier verplicht wilt maken, raadpleegt u [De gegevenseigenschappen wijzigen voor een formulier](../../web/using/editing-content.md#changing-the-data-properties-for-a-form).
-* Definieer een handeling voor een knop. Raadpleeg [Een handeling aan een knop toevoegen](../../web/using/editing-content.md#adding-an-action-to-a-button).
+* Bepaal de weergave voor een of meerdere blokken. Raadpleeg [Een zichtbaarheidsvoorwaarde definiëren](editing-content.md#defining-a-visibility-condition).
+* Definieer de randen en frames. Raadpleeg [Een rand en achtergrond toevoegen](editing-content.md#adding-a-border-and-background).
+* Afbeeldingskenmerken definiëren (grootte, bijschrift). Zie [Afbeeldingseigenschappen bewerken](editing-content.md#editing-image-properties).
+* Koppel de database aan een formulierelement (invoerzone, selectievakje). Raadpleeg [De gegevenseigenschappen voor een formulier wijzigen](editing-content.md#changing-the-data-properties-for-a-form).
+* Als u een deel van een formulier verplicht wilt maken, raadpleegt u [De gegevenseigenschappen wijzigen voor een formulier](editing-content.md#changing-the-data-properties-for-a-form).
+* Definieer een handeling voor een knop. Raadpleeg [Een handeling aan een knop toevoegen](editing-content.md#adding-an-action-to-a-button).
 
-## Inhoudwerkbalk {#content-toolbar}
+## Inhoud, werkbalk {#content-toolbar}
 
 De toolbar is een **pop-up element** van de interface DCE die verschillende functies volgens het geselecteerde blok voorstelt.
 
