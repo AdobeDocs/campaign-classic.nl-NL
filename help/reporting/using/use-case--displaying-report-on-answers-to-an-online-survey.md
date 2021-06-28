@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 5%
@@ -35,7 +35,7 @@ Voordat u met dit gebruiksgeval begint, hebt u toegang nodig tot een enquête en
 
 Voer de volgende stappen uit om de antwoorden op de enquête te verzamelen:
 
-1. Maak een workflow en plaats een **[!UICONTROL Answers to a survey]**-activiteit. Raadpleeg [deze sectie](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data) voor meer informatie over het gebruik van deze activiteit.
+1. Maak een workflow en plaats een **[!UICONTROL Answers to a survey]**-activiteit. Raadpleeg [deze sectie](../../surveys/using/publish--track-and-use-collected-data.md#using-the-collected-data) voor meer informatie over het gebruik van deze activiteit.
 1. Bewerk de activiteit en selecteer de enquête waarvan u de antwoorden wilt analyseren.
 1. Schakel de optie **[!UICONTROL Select all the answer data]** in om alle informatie te verzamelen.
 
@@ -63,7 +63,7 @@ Voer de volgende stappen uit om de antwoorden op de enquête te verzamelen:
 
    De **[!UICONTROL List update]**- en **[!UICONTROL Scheduler]**-activiteiten worden beschreven in .
 
-## Stap 2 - Het creëren van de kubus, zijn maatregelen en zijn indicatoren {#step-2---creating-the-cube--its-measures-and-its-indicators}
+## Stap 2 - De kubus, de maatregelen en de indicatoren ervan maken {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
 U kunt dan de kubus tot stand brengen en zijn maatregelen vormen: zij zullen worden gebruikt om de indicatoren te creëren die in het verslag zullen worden getoond . Raadpleeg [Informatie over kubussen](../../reporting/using/about-cubes.md) voor meer informatie over het maken en configureren van kubussen.
 
