@@ -6,16 +6,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 2%
+source-wordcount: '965'
+ht-degree: 1%
 
 ---
 
 # Een webformulier publiceren{#publishing-a-web-form}
 
-## De formuliergegevens {#pre-loading-the-form-data} vooraf laden
+## De formuliergegevens vooraf laden {#pre-loading-the-form-data}
 
 Als u de profielen wilt bijwerken die in het gegevensbestand via een vorm van het Web worden opgeslagen, kunt u een preloading doos gebruiken. In het vak Voorladen kunt u aangeven hoe de record moet worden gevonden die in de database moet worden bijgewerkt.
 
@@ -39,7 +39,7 @@ De volgende identificatiemethoden zijn mogelijk:
 
    ![](assets/s_ncs_admin_survey_preload_methods_002.png)
 
-   U kunt velden toevoegen aan de formuliereigenschappen via het tabblad **[!UICONTROL Parameters]** (zie [Parameters toevoegen](../../web/using/defining-web-forms-properties.md#adding-parameters)). Ze worden in de formulier-URL of invoerzones geplaatst.
+   U kunt velden toevoegen aan de formuliereigenschappen via het tabblad **[!UICONTROL Parameters]** (zie [Parameters toevoegen](defining-web-forms-properties.md#adding-parameters)). Ze worden in de formulier-URL of invoerzones geplaatst.
 
    >[!CAUTION]
    >
@@ -81,7 +81,7 @@ Er zijn drie fasen in de levenscyclus van een formulier:
 
 1. **Formulier wordt bewerkt**
 
-   Dit is de eerste ontwerpfase. Wanneer een nieuw formulier wordt gemaakt, bevindt het zich in de bewerkingsfase. Toegang tot het formulier alleen voor testdoeleinden vereist dat de parameter **[!UICONTROL __uuid]** in de URL wordt gebruikt. Deze URL is toegankelijk op het subtabblad **[!UICONTROL Preview]**. Zie [Formulier-URL-parameters](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+   Dit is de eerste ontwerpfase. Wanneer een nieuw formulier wordt gemaakt, bevindt het zich in de bewerkingsfase. Toegang tot het formulier alleen voor testdoeleinden vereist dat de parameter **[!UICONTROL __uuid]** in de URL wordt gebruikt. Deze URL is toegankelijk op het subtabblad **[!UICONTROL Preview]**. Zie [Formulier-URL-parameters](defining-web-forms-properties.md#form-url-parameters).
 
    >[!CAUTION]
    >
@@ -107,7 +107,7 @@ De publicatiestatus van een formulier wordt weergegeven in de lijst met formulie
 
 ![](assets/s_ncs_admin_survey_status.png)
 
-### Een formulier {#publishing-a-form} publiceren
+### Een formulier publiceren {#publishing-a-form}
 
 Als u de status van een formulier wilt wijzigen, moet u het publiceren. Klik hiertoe op de knop **[!UICONTROL Publication]** boven de lijst met webformulieren en selecteer de status in de vervolgkeuzelijst.
 
@@ -123,9 +123,9 @@ Om door gebruikers te kunnen worden geraadpleegd, moet het formulier in producti
 
 * Klik op de koppeling **[!UICONTROL Personalize the message displayed if the form is closed...]** om het foutbericht te definiëren dat moet worden weergegeven als de gebruiker toegang probeert te krijgen tot het formulier terwijl het niet geldig is.
 
-   Zie [Toegankelijkheid van het formulier](../../web/using/defining-web-forms-properties.md#accessibility-of-the-form).
+   Zie [Toegankelijkheid van het formulier](defining-web-forms-properties.md#accessibility-of-the-form).
 
-### Een formulier verzenden via e-mail {#delivering-a-form-via-email}
+### Een formulier via e-mail verzenden {#delivering-a-form-via-email}
 
 Wanneer u een uitnodiging via e-mail verzendt, kunt u de optie **[!UICONTROL Adobe Campaign Encryption]** gebruiken voor het afstemmen van gegevens. Hiervoor gaat u naar de wizard voor levering en past u de koppeling naar het formulier aan door de volgende parameter toe te voegen:
 
@@ -135,11 +135,11 @@ Wanneer u een uitnodiging via e-mail verzendt, kunt u de optie **[!UICONTROL Ado
 
 In dit geval moet de compatibiliteitssleutel voor gegevensopslag de gecodeerde id van de ontvanger zijn. Zie [De formuliergegevens vooraf laden](#pre-loading-the-form-data) voor meer informatie.
 
-In dit geval moet u de optie **[!UICONTROL Update the preloaded record]** in het recordvak controleren. Voor meer op dit, verwijs naar [Het Opslaan van Web vormt antwoorden](../../web/using/web-forms-answers.md#saving-web-forms-answers).
+In dit geval moet u de optie **[!UICONTROL Update the preloaded record]** in het recordvak controleren. Voor meer op dit, verwijs naar [Het Opslaan van Web vormt antwoorden](web-forms-answers.md#saving-web-forms-answers).
 
 ![](assets/s_ncs_admin_survey_save_box_option.png)
 
-### Logreacties {#log-responses}
+### Antwoorden in logboek {#log-responses}
 
 Het volgen van de reactie kan in een specifiek lusje worden geactiveerd om het effect van uw vorm van het Web te controleren. Klik hiertoe op de koppeling **[!UICONTROL Advanced parameters...]** in het venster met formuliereigenschappen en selecteer de optie **[!UICONTROL Log responses]**.
 
@@ -154,7 +154,3 @@ Selecteer een ontvanger en klik op de knop **[!UICONTROL Detail...]** om de gege
 ![](assets/s_ncs_admin_survey_trace_edit.png)
 
 U kunt de antwoordlogboeken verwerken die in vragen worden verstrekt, bijvoorbeeld om slechts niet-geënquêteerden te richten wanneer het verzenden van herinneringen, of specifieke mededelingen aan slechts geënquêteerden aan te bieden.
-
->[!NOTE]
->
->Voor een volledig volgen van de verstrekte reacties, voer de reacties uit en bekijk of creeer specifieke rapporten, gebruik de facultatieve **Enquête** module. Raadpleeg [deze sectie](../../web/using/about-surveys.md) voor meer informatie.
