@@ -4,9 +4,9 @@ title: Migreren naar de Adobe Analytics-connector
 description: Campagne - Veelgestelde vragen over Analytics Connector
 hide: true
 hidefromtoc: true
-source-git-commit: cde4ed65abb2458fc40639b92314f8d56b18b78c
+source-git-commit: 41478c656ffd4e113788149e6cca9ed00602789e
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '836'
 ht-degree: 5%
 
 ---
@@ -73,7 +73,7 @@ Als gebruiker op locatie kunt u de breedtelodus als volgt implementeren:
 
 **Wat betekent de fout &#39;Integratie-eigenaar niet-beheerder&#39;?**
 
-Meer informatie over de fout &#39;Integratie-eigenaar niet-beheerder&#39; van gegevensconnectors vindt u op [deze pagina](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error).
+Meer informatie over de fout `Integration Owner Not Admin` Gegevensconnectors in [deze pagina](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error).
 
 **Wat gebeurt er met oude gegevens en rapportreeksen als de migratie naar de nieuwe connector is voltooid?**
 
