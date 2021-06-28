@@ -6,14 +6,14 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '980'
 ht-degree: 4%
 
 ---
 
-# Begin met het gegevensmodel van de Campagne{#about-data-model}
+# Aan de slag met het gegevensmodel van de campagne{#about-data-model}
 
 Het conceptuele datamodel van de Adobe Campaign-database bestaat uit een reeks ingebouwde tabellen en hun interactie. De belangrijkste lijsten en de concepten worden vermeld in deze pagina.
 
@@ -21,13 +21,13 @@ Het conceptuele datamodel van de Adobe Campaign-database bestaat uit een reeks i
 
 Adobe Campaign vertrouwt op een relationele database die tabellen bevat die aan elkaar zijn gekoppeld. De basisstructuur van het Adobe Campaign-gegevensmodel kan als volgt worden beschreven.
 
-### Ontvangingstabel {#recipient-table}
+### Ontvangertabel {#recipient-table}
 
 Het gegevensmodel baseert zich op een hoofdlijst die door gebrek de Ontvangende lijst (**NmsRecipient**) is. In deze tabel kunt u alle marketingprofielen opslaan.
 
 Zie [deze sectie](#default-recipient-table) voor meer informatie over de tabel Ontvanger.
 
-### Leveringstabel {#delivery-table}
+### Afleveringstabel {#delivery-table}
 
 Het gegevensmodel bevat ook een deel dat is gewijd aan de opslag van alle marketingactiviteiten. Meestal is dit de afleveringstabel (**NmsDelivery**). Elke record in deze tabel vertegenwoordigt een leveringsactie of een leveringssjabloon. Het bevat alle parameters die nodig zijn voor het uitvoeren van leveringen, zoals doel, inhoud, enz.
 
@@ -43,13 +43,13 @@ Logbestanden voor aflevering en tracering worden na een bepaalde periode verwijd
 
 Tot slot bestaat een deel van het gegevensmodel uit technische gegevens die worden gebruikt voor het toepassingsproces, inclusief operatoren en gebruikersrechten (**NmsGroup**), mappen (**XtkFolder**).
 
-## De standaardtabel Ontvanger {#default-recipient-table} gebruiken
+## De ingebouwde tabel Ontvanger gebruiken {#default-recipient-table}
 
-De out-of-the-box Ontvangerlijst in Adobe Campaign biedt een goed uitgangspunt voor het samenstellen van uw gegevensmodel. Het heeft een aantal vooraf bepaalde gebieden en lijstverbindingen die gemakkelijk kunnen worden uitgebreid. Dit is met name nuttig wanneer u zich vooral richt op ontvangers, omdat het een eenvoudig ontvanger-centric gegevensmodel past.
+De ingebouwde Ontvanger lijst in Adobe Campaign verstrekt een goed uitgangspunt voor de bouw van uw gegevensmodel. Het heeft een aantal vooraf bepaalde gebieden en lijstverbindingen die gemakkelijk kunnen worden uitgebreid. Dit is met name nuttig wanneer u zich vooral richt op ontvangers, omdat het een eenvoudig ontvanger-centric gegevensmodel past.
 
-De standaardtabel met ontvangers biedt de volgende voordelen:
+De voordelen van de ingebouwde tabel Ontvanger zijn als volgt:
 
-* Uitgebreide functionaliteit met functies zoals abonnementen, zaadlijsten, enquêtes, sociale functies enzovoort.
+* Ingebouwd werken met functies zoals abonnementen, zaadlijsten, en meer.
 * Het verstrekken van een marketing gegevensbestand van een ontvanger-centric gegevensmodel.
 * Snellere implementatie.
 * Gemakkelijk onderhoud door steun en partners.
