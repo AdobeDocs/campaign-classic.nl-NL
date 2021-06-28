@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 2%
@@ -57,9 +57,9 @@ Met de velden **[!UICONTROL Position]** kunt u de positie van elementen in de pa
 >Rendersjablonen worden opgeslagen in het knooppunt **[!UICONTROL Administration > Configuration > Form rendering]**.\
 >Raadpleeg [Formulierweergave aanpassen](#customizing-form-rendering) voor meer informatie
 
-## Rendering van formulier {#customizing-form-rendering} aanpassen
+## Rendering van formulieren aanpassen {#customizing-form-rendering}
 
-### De layout van elementen wijzigen {#changing-the-layout-of-elements}
+### De lay-out van elementen wijzigen {#changing-the-layout-of-elements}
 
 U kunt de stijlpagina voor elk element van het formulier (invoervelden, afbeeldingen, keuzerondjes, enz.) overladen.
 
@@ -69,9 +69,9 @@ Hiervoor gebruikt u het tabblad **[!UICONTROL Advanced]**.
 
 Hiermee kunt u de volgende eigenschappen definiëren:
 
-* **[!UICONTROL Label position]**: zie  [De positie van labels](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels) definiëren.
+* **[!UICONTROL Label position]**: zie  [De positie van labels](defining-web-forms-layout.md#defining-the-position-of-labels) definiëren.
 * **[!UICONTROL Label format]**: Tekstomloop of Geen tekstomloop
-* **[!UICONTROL Number of cells]** : zie De velden  [op de pagina](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page) positioneren.
+* **[!UICONTROL Number of cells]** : zie De velden  [op de pagina](defining-web-forms-layout.md#positioning-the-fields-on-the-page) positioneren.
 * **[!UICONTROL Horizontal alignment]** (Links, Rechts, Gecentreerd) en  **[!UICONTROL Vertical alignment]** (Hoog, Laag, Midden),
 * **[!UICONTROL Width]** van het gebied: dit kan worden uitgedrukt als een percentage of in ems, punten of pixels (standaardwaarde);
 * Maximum **[!UICONTROL Length]**: Maximum aantal tekens toegestaan (voor besturingselementen voor tekst, aantal en wachtwoordtype),
@@ -80,7 +80,7 @@ Hiermee kunt u de volgende eigenschappen definiëren:
 
    ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
 
-### Kop- en voetteksten {#defining-headers-and-footers} definiëren
+### Kop- en voetteksten definiëren {#defining-headers-and-footers}
 
 Velden worden gerangschikt in een boomstructuur waarvan het basisniveau dezelfde naam heeft als de pagina. Selecteer het om de naam te wijzigen.
 
@@ -96,11 +96,11 @@ Zo kunt u verwijzen naar een pictogram dat bijvoorbeeld op de titelbalk van de p
 
 ![](assets/webform_header_page_tab.png)
 
-## Besturingsinstellingen {#defining-control-settings} definiëren
+## Besturingsinstellingen definiëren {#defining-control-settings}
 
 Wanneer de gebruiker het formulier invult, wordt automatisch een controle uitgevoerd op bepaalde velden, afhankelijk van de indeling of configuratie. Hiermee kunt u bepaalde velden verplicht maken (zie [Verplichte velden definiëren](#defining-mandatory-fields)) of de indeling van de ingevoerde gegevens controleren (zie [Gegevensindeling controleren](#checking-data-format)). Controles worden uitgevoerd tijdens paginaconclusie (door een verbinding of een knoop te klikken die een outputovergang toelaat).
 
-### Verplichte velden {#defining-mandatory-fields} definiëren
+### Verplichte velden definiëren {#defining-mandatory-fields}
 
 Als u bepaalde velden verplicht wilt maken, selecteert u deze optie bij het maken van het veld.
 
@@ -118,7 +118,7 @@ Als de gebruiker deze pagina goedkeurt zonder het veld in te voeren, wordt het v
 
 ![](assets/s_ncs_admin_survey_required_custom_msg2.png)
 
-### Gegevensindeling {#checking-data-format} controleren
+### Gegevensindeling controleren {#checking-data-format}
 
 Voor formuliercontroles waarvan de waarden zijn opgeslagen in een bestaand veld van de database, worden de regels voor het opslagveld toegepast.
 
@@ -146,19 +146,19 @@ In het venster van de gebiedsselectie, kunt u van de volgende gegevens kiezen:
 
 * De hoofdstructuur bevat de parameters van de formuliercontext. De standaardparameters zijn de id (die overeenkomt met de gecodeerde id van de ontvanger), de taal en de oorsprong.
 
-   Raadpleeg [deze pagina](../../web/using/defining-web-forms-properties.md#form-url-parameters) voor meer informatie.
+   Raadpleeg [deze pagina](defining-web-forms-properties.md#form-url-parameters) voor meer informatie.
 
 * De substructuur **[!UICONTROL Recipients]** bevat de invoervelden die in het formulier zijn ingevoegd en in de database zijn opgeslagen.
 
-   Raadpleeg [Gegevens opslaan in de database](../../web/using/web-forms-answers.md#storing-data-in-the-database) voor meer informatie.
+   Raadpleeg [Gegevens opslaan in de database](web-forms-answers.md#storing-data-in-the-database) voor meer informatie.
 
-* De substructuur **[!UICONTROL Variables]** bevat de beschikbare variabelen voor dit formulier. Raadpleeg [Gegevens opslaan in een lokale variabele](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable) voor meer informatie.
+* De substructuur **[!UICONTROL Variables]** bevat de beschikbare variabelen voor dit formulier. Raadpleeg [Gegevens opslaan in een lokale variabele](web-forms-answers.md#storing-data-in-a-local-variable) voor meer informatie.
 
-Raadpleeg de volgende gebruiksscenario&#39;s voor meer informatie: [Verschillende opties weergeven, afhankelijk van de geselecteerde waarden](../../web/using/use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
+Raadpleeg de volgende gebruiksscenario&#39;s voor meer informatie: [Verschillende opties weergeven, afhankelijk van de geselecteerde waarden](use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
 
-U kunt ook de weergave van formulierpagina&#39;s bepalen met behulp van het object **[!UICONTROL Test]**. Raadpleeg [deze pagina](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display) voor meer informatie.
+U kunt ook de weergave van formulierpagina&#39;s bepalen met behulp van het object **[!UICONTROL Test]**. Raadpleeg [deze pagina](defining-web-forms-page-sequencing.md#conditional-page-display) voor meer informatie.
 
-## Elementen importeren uit een bestaand formulier {#importing-elements-from-an-existing-form}
+## Elementen uit een bestaand formulier importeren {#importing-elements-from-an-existing-form}
 
 Het is mogelijk om gebieden of containers van andere vormen van het Web in te voeren. Hiermee kunt u een bibliotheek maken met herbruikbare blokken die in formulieren worden ingevoegd, zoals het adresblok, het abonnementsgebied voor nieuwsbrieven, enzovoort.
 
