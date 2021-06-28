@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 82c5c610-8161-4686-aa79-1b690e763765
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 5%
@@ -21,7 +21,7 @@ Als u via het tabblad **[!UICONTROL Localization]** in **[!UICONTROL Properties]
 
 Met deze optie kunt u aangeven of de blokinhoud moet worden vertaald of niet.
 
-Tekenreeksen die moeten worden vertaald, worden op dezelfde manier verzameld als de andere tekenreeksen van de webtoepassing, via het tabblad **[!UICONTROL Translations]** van de toepassing. Raadpleeg [deze pagina](../../web/using/translating-a-web-form.md) voor meer informatie.
+Tekenreeksen die moeten worden vertaald, worden op dezelfde manier verzameld als de andere tekenreeksen van de webtoepassing, via het tabblad **[!UICONTROL Translations]** van de toepassing. Raadpleeg [deze pagina](translating-a-web-form.md) voor meer informatie.
 
 De tekenreeksen markeren die moeten worden vertaald:
 
