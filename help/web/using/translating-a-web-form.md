@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 1%
@@ -51,7 +51,7 @@ Op het tabblad **[!UICONTROL Translations]** kunt u vertalingen invoeren voor de
 
 De eerste keer dat u dit tabblad opent, bevat dit tabblad geen gegevens. Klik op de koppeling **[!UICONTROL Collect the strings to translate]** om de tekenreeksen in de webtoepassing bij te werken.
 
-Adobe Campaign verzamelt labels van velden en tekenreeksen die zijn gedefinieerd op de tabbladen **[!UICONTROL Texts]** van alle statische elementen: HTML-blokken, JavaScript, enz. Statische elementen worden beschreven in [Statische elementen in een webformulier](../../web/using/static-elements-in-a-web-form.md).
+Adobe Campaign verzamelt labels van velden en tekenreeksen die zijn gedefinieerd op de tabbladen **[!UICONTROL Texts]** van alle statische elementen: HTML-blokken, JavaScript, enz. Statische elementen worden beschreven in [Statische elementen in een webformulier](static-elements-in-a-web-form.md).
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
@@ -77,7 +77,7 @@ Ga naar **[!UICONTROL Language]** drop-down doos om de vertaaltaal te selecteren
 
 Als u alleen onvertaalde tekenreeksen wilt weergeven, selecteert u **[!UICONTROL To translate]** in de vervolgkeuzelijst **[!UICONTROL Status]**. U kunt ook alleen vertaalde of goedgekeurde tekenreeksen weergeven.
 
-### Tekenreeksen {#translating-strings} omzetten
+### Tekenreeksen omzetten {#translating-strings}
 
 1. Als u een woord wilt vertalen, dubbelklikt u op de desbetreffende regel in de lijst met tekenreeksen.
 
@@ -93,7 +93,7 @@ Als u alleen onvertaalde tekenreeksen wilt weergeven, selecteert u **[!UICONTROL
 
    Niet-goedgekeurde vertalingen worden weergegeven als **[!UICONTROL Translated]**. Goedgekeurde vertalingen worden weergegeven als **[!UICONTROL Approved]**.
 
-## Bezig met extern maken van vertaling {#externalizing-translation}
+## Externe vertaling {#externalizing-translation}
 
 Het is mogelijk tekenreeksen te exporteren en te importeren om deze te vertalen met een ander gereedschap dan Adobe Campaign.
 
@@ -101,7 +101,7 @@ Het is mogelijk tekenreeksen te exporteren en te importeren om deze te vertalen 
 >
 >Nadat u de tekenreeksen hebt geëxporteerd, hoeft u geen vertalingen meer uit te voeren met het geïntegreerde gereedschap. Dit zou tot een conflict leiden wanneer u de vertalingen opnieuw invoert en deze zullen verloren gaan.
 
-### Bestanden {#exporting-files} exporteren
+### Bestanden exporteren {#exporting-files}
 
 1. Selecteer de webtoepassing(en) waarvan u de tekenreeksen wilt exporteren, klik met de rechtermuisknop en selecteer **[!UICONTROL Actions > Export strings for translation...]**
 
@@ -134,7 +134,7 @@ Het is mogelijk tekenreeksen te exporteren en te importeren om deze te vertalen 
 
 Wanneer u bestanden in **CSV-indeling** exporteert, wordt elke taal gekoppeld aan een status en goedkeuringsstatus. De **goedkeuren?** kunt u een vertaling goedkeuren. Deze kolom kan de waarden **Yes** of **No** bevatten. Net als voor de geïntegreerde editor (zie [Vertalingen beheren in de editor](#managing-translations-in-the-editor)) is het goedkeuren van vertalingen optioneel en blokkeert het proces niet.
 
-### Bestanden {#importing-files} importeren
+### Bestanden importeren {#importing-files}
 
 Nadat de externe vertaling is voltooid, kunt u de vertaalde bestanden importeren.
 
@@ -437,7 +437,7 @@ U kunt **toevoegen?lang=es** of **?lang=de** om het in Spaans of Duits te tonen.
 >
 >Deze sectie is alleen bedoeld voor ervaren gebruikers.
 
-### De systeemtekenreeksen {#translating-the-system-strings} omzetten
+### De systeemtekenreeksen omzetten {#translating-the-system-strings}
 
 De koorden van het systeem zijn uit-van-de-doos karakterkoorden die door alle toepassingen van het Web worden gebruikt. Bijvoorbeeld: **[!UICONTROL Next]**, **[!UICONTROL Previous]**, **[!UICONTROL Approve]** knoppen, **[!UICONTROL Loading]** berichten, enz. Standaard bevatten sommige talen een woordenboek met vertalingen voor deze tekenreeksen. De lijst met talen wordt beschreven in [Weergavetaal van formulieren wijzigen](#changing-forms-display-language).
 
@@ -464,7 +464,7 @@ Voer de volgende stappen uit om een taal toe te voegen:
 >
 >Verwijder niet de uit-van-de-doos systeemkoorden.
 
-### Een vertaaltaal {#adding-a-translation-language} toevoegen
+### Een vertaaltaal toevoegen {#adding-a-translation-language}
 
 Als u webtoepassingen wilt vertalen in andere talen dan de standaardtalen (zie [Weergavetaal van formulieren wijzigen](#changing-forms-display-language)), moet u een nieuwe vertaaltaal toevoegen.
 
