@@ -6,7 +6,7 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 95%
@@ -33,7 +33,7 @@ De marketingcampagnecyclus in Adobe Campaign illustreert de belangrijkste aspect
 
 ![](assets/d_ncs_user_emarketing.png)
 
-### Integrated Customer Profile {#integrated-customer-profile}
+### Geïntegreerd klantprofiel {#integrated-customer-profile}
 
 Profielen (klanten, prospects, leden van nieuwsbrieven, enzovoort) zijn gecentraliseerd in de Adobe Campaign-database. Er zijn vele mogelijke mechanismen om profielen te verwerven en deze database op te bouwen: online verzameling via webformulieren, handmatig of automatisch importeren van tekstbestanden, replicatie met bedrijfsdatabases of andere informatiesystemen. Met Adobe Campaign kunt u de marketinggeschiedenis, aankoopdata, voorkeuren, CRM-data en alle relevante PII-data in een geconsolideerde weergave opnemen om te analyseren en actie te ondernemen.
 
@@ -53,7 +53,7 @@ Met Adobe Campaign kunt u doelgerichte en gepersonaliseerde campagnes ontwerpen 
 
 ### Personalisatie en realtime-interactie {#personalization-and-real-time-interaction}
 
-Trek de aandacht van uw klanten en verbeter responspercentages dankzij de geavanceerde personalisatie van berichtcontent en kopteksten op basis van klantprofielen en -voorkeuren. Raadpleeg [deze pagina](../../delivery/using/about-personalization.md) voor meer informatie over beheer en personalisatie van berichtcontent. Het collaboratieve beheer van content, meldingen en goedkeuringscircuits wordt gedetailleerd in [deze sectie](../../campaign/using/about-marketing-resource-management.md).
+Trek de aandacht van uw klanten en verbeter responspercentages dankzij de geavanceerde personalisatie van berichtcontent en kopteksten op basis van klantprofielen en -voorkeuren. Raadpleeg [deze pagina](../../delivery/using/about-personalization.md) voor meer informatie over beheer en personalisatie van berichtcontent. Het collaboratieve beheer van content, meldingen en goedkeuringscircuits wordt gedetailleerd in [deze sectie](../../mrm/using/about-marketing-resource-management.md).
 
 ### Analyse en rapportage {#analysis-and-reporting}
 
@@ -71,13 +71,13 @@ De volgende mogelijkheden zijn beschikbaar. Afhankelijk van uw licentieovereenko
 
 * [Kanalen](../../delivery/using/steps-about-delivery-creation-steps.md) - ontwerpen en verzenden van leveringen op verschillende kanalen: e-mail, sms, Line, mobiele app, direct mail,
 * [Campagne](../../campaign/using/designing-marketing-campaigns.md) - organiseren van campagnes over meerdere kanalen,
-* [MRM](../../campaign/using/about-marketing-resource-management.md) - beheren van marketingresources en -budgetten,
+* [MRM](../../mrm/using/about-marketing-resource-management.md) - beheren van marketingresources en -budgetten,
 * [Interactie](../../interaction/using/interaction-and-offer-management.md) - beheren van aanbiedingen met Campaign,
 * [Berichtencentrum](../../message-center/using/about-transactional-messaging.md) - verzenden van transactionele berichten via e-mail, sms of mobiele app,
 * [Social marketing](../../social/using/about-social-marketing.md) - communiceren op sociale media: Facebook, Twitter,
 * [Workflow](../../workflow/using/about-workflows.md)/data management - automatiseren van processen en beheren van data met workflows,
 * [Webapplicaties](../../web/using/about-web-applications.md) - maken van webpagina’s en formulieren,
-* [Enquêtebeheer](../../web/using/about-surveys.md) - maken van online enquêtes en opiniepeilingen,
+* [Enquêtebeheer](../../surveys/using/about-surveys.md) - maken van online enquêtes en opiniepeilingen,
 * [Content Manager](../../delivery/using/about-content-management.md) - e-mailcontent beheren,
 * [Gedistribueerde marketing](../../campaign/using/about-distributed-marketing.md) - coördineren van campagnes voor centrale/lokale agentschappen;
 * [Responsbeheer](../../campaign/using/about-response-manager.md) - beheren van de reacties van klanten,
