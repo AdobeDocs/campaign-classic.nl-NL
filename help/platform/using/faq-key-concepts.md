@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 97%
@@ -94,7 +94,7 @@ Leer hoe u met Adobe Campaign [een persoonlijke pushmelding](../../delivery/usin
 
 ## Hoe kan ik een online enquête ontwerpen en delen? {#how-to-design-and-share-an-online-survey-}
 
-Ontdek hoe u [een online enquête kunt maken](../../web/using/getting-started-with-surveys.md) met de belangrijkste stappen voor het ontwerpen en publiceren van deze enquête met Campaign Classic.
+Ontdek hoe u [een online enquête kunt maken](../../surveys/using/getting-started-with-surveys.md) met de belangrijkste stappen voor het ontwerpen en publiceren van deze enquête met Campaign Classic.
 
 ## Hoe kan ik een landingspagina maken? {#how-to-create-landing-page-}
 
