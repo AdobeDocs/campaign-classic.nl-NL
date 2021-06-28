@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 0%
@@ -28,9 +28,9 @@ Ons uiteindelijke doel is om een levering te maken met een gepersonaliseerde sja
 >
 >Voordat u begint, moet u minstens één **HTML-sjabloon** hebben geconfigureerd om de inhoud van toekomstige leveringen te hosten.
 >
->Zorg er bij levering **[!UICONTROL Properties]** voor dat **[!UICONTROL Content editing mode]** (op het tabblad **[!UICONTROL Advanced]**) is ingesteld op **[!UICONTROL DCE]**. Om de optimale verrichting van de redacteur te verzekeren, verwijs naar [Inhoud het uitgeven beste praktijken](../../web/using/content-editing-best-practices.md).
+>Zorg er bij levering **[!UICONTROL Properties]** voor dat **[!UICONTROL Content editing mode]** (op het tabblad **[!UICONTROL Advanced]**) is ingesteld op **[!UICONTROL DCE]**. Om de optimale verrichting van de redacteur te verzekeren, verwijs naar [Inhoud het uitgeven beste praktijken](content-editing-best-practices.md).
 
-## Stap 1 - Het creëren van een levering {#step-1---creating-a-delivery}
+## Stap 1 - Een levering maken {#step-1---creating-a-delivery}
 
 Als u een nieuwe levering wilt maken, plaatst u de cursor in het tabblad **Campagnes** en klikt u op **Leveringen**. Klik vervolgens op de knop **Maken** boven de lijst met bestaande leveringen. Raadpleeg [deze pagina](../../delivery/using/about-email-channel.md) voor meer informatie over het maken van leveringen.
 
@@ -54,7 +54,7 @@ U kunt ook HTML-inhoud die buiten Adobe Campaign is gemaakt, importeren door **[
 
 ![](assets/dce_select_from_file_template.png)
 
-U kunt deze inhoud opslaan als een sjabloon voor toekomstig gebruik. Nadat u een gepersonaliseerde inhoudssjabloon hebt gemaakt, kunt u deze voorvertonen in de lijst met sjablonen. Raadpleeg [Sjabloonbeheer](../../web/using/template-management.md) voor meer informatie hierover.
+U kunt deze inhoud opslaan als een sjabloon voor toekomstig gebruik. Nadat u een gepersonaliseerde inhoudssjabloon hebt gemaakt, kunt u deze voorvertonen in de lijst met sjablonen. Raadpleeg [Sjabloonbeheer](template-management.md) voor meer informatie hierover.
 
 >[!CAUTION]
 >
@@ -70,7 +70,7 @@ U kunt deze inhoud opslaan als een sjabloon voor toekomstig gebruik. Nadat u een
 
 * Een koppeling invoegen in een afbeelding
 
-   Als u ontvangers voor levering via een afbeelding naar een extern adres wilt sturen, klikt u op de desbetreffende afbeelding om de pop-upwerkbalk weer te geven. Plaats de cursor op het eerste pictogram en klik vervolgens op **[!UICONTROL Link to an external URL]**. Voor meer op dit, verwijs naar [Toevoegend een verbinding](../../web/using/editing-content.md#adding-a-link).
+   Als u ontvangers voor levering via een afbeelding naar een extern adres wilt sturen, klikt u op de desbetreffende afbeelding om de pop-upwerkbalk weer te geven. Plaats de cursor op het eerste pictogram en klik vervolgens op **[!UICONTROL Link to an external URL]**. Voor meer op dit, verwijs naar [Toevoegend een verbinding](editing-content.md#adding-a-link).
 
    ![](assets/dce_externalpage.png)
 
@@ -80,7 +80,7 @@ U kunt deze inhoud opslaan als een sjabloon voor toekomstig gebruik. Nadat u een
 
 * Koppelingen in tekst invoegen
 
-   Als u een externe koppeling wilt integreren in de tekst in uw bestelling, selecteert u een stuk tekst of een blok tekst en klikt u op het eerste pictogram in de pop-upwerkbalk. Klik **[!UICONTROL Link to an external URL]**, ga het verbindingsadres in **[!UICONTROL URL]** gebied in. Voor meer op dit, verwijs naar [Toevoegend een verbinding](../../web/using/editing-content.md#adding-a-link).
+   Als u een externe koppeling wilt integreren in de tekst in uw bestelling, selecteert u een stuk tekst of een blok tekst en klikt u op het eerste pictogram in de pop-upwerkbalk. Klik **[!UICONTROL Link to an external URL]**, ga het verbindingsadres in **[!UICONTROL URL]** gebied in. Voor meer op dit, verwijs naar [Toevoegend een verbinding](editing-content.md#adding-a-link).
 
    U kunt de koppeling op elk gewenst moment wijzigen met de sectie rechts van het venster.
 
@@ -102,7 +102,7 @@ U kunt deze inhoud opslaan als een sjabloon voor toekomstig gebruik. Nadat u een
 
 * Een koppeling naar een webtoepassing integreren
 
-   Met de Digital Content Editor kunt u koppelingen naar webtoepassingen integreren vanuit uw Adobe Campaign-console, zoals een openingspagina of een formulierpagina. Voor meer op dit, verwijs naar [Verbinding aan een toepassing van het Web](../../web/using/editing-content.md#link-to-a-web-application).
+   Met de Digital Content Editor kunt u koppelingen naar webtoepassingen integreren vanuit uw Adobe Campaign-console, zoals een openingspagina of een formulierpagina. Voor meer op dit, verwijs naar [Verbinding aan een toepassing van het Web](editing-content.md#link-to-a-web-application).
 
    Selecteer een tekstveld voor de koppeling naar een webtoepassing en klik op het eerste pictogram. Kies **[!UICONTROL Link to a Web application]**, dan selecteer de gewenste toepassing door het pictogram aan het eind van **Web Application** te klikken gebied.
 
@@ -114,6 +114,6 @@ U kunt deze inhoud opslaan als een sjabloon voor toekomstig gebruik. Nadat u een
    >
    >Voor deze stap moet u ten minste één webtoepassing opslaan. Deze vindt u op het tabblad **[!UICONTROL Campaigns > Web applications]** van uw console.
 
-## Stap 5 - Besparing de levering {#step-5---saving-the-delivery}
+## Stap 5 - de levering bewaren {#step-5---saving-the-delivery}
 
 Wanneer de inhoud is geïntegreerd, slaat u de levering op door op **Opslaan** te klikken. Het wordt nu weergegeven in de lijst met leveringen op het tabblad **[!UICONTROL Campaigns > Deliveries]**.
