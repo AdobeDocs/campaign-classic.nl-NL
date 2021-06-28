@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 4%
+source-wordcount: '1034'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ De volgende veldtypen zijn beschikbaar:
    >
    >Aan de serverzijde kan het script de functies gebruiken die zijn gedefinieerd in [Campagne JSAPI-documentatie](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
-## HTML-inhoud {#inserting-html-content} invoegen
+## HTML-inhoud invoegen {#inserting-html-content}
 
 U kunt HTML-inhoud opnemen in een formulierpagina: hypertextkoppelingen, afbeeldingen, opgemaakte alinea&#39;s, video&#39;s, enzovoort.
 
@@ -46,9 +46,9 @@ Om een gegevensbestandgebied op te nemen, gebruik de verpersoonlijkingsknoop.
 
 >[!NOTE]
 >
->De tekenreeksen die in de HTML-editor zijn ingevoerd, worden alleen vertaald als ze op het subtabblad **[!UICONTROL Texts]** zijn gedefinieerd. Anders worden ze niet verzameld. Raadpleeg [Een webformulier vertalen](../../web/using/translating-a-web-form.md) voor meer informatie.
+>De tekenreeksen die in de HTML-editor zijn ingevoerd, worden alleen vertaald als ze op het subtabblad **[!UICONTROL Texts]** zijn gedefinieerd. Anders worden ze niet verzameld. Raadpleeg [Een webformulier vertalen](translating-a-web-form.md) voor meer informatie.
 
-### Een koppeling {#inserting-a-link} invoegen
+### Een koppeling invoegen {#inserting-a-link}
 
 Vul de velden in het bewerkingsvenster in, zoals in het volgende voorbeeld wordt getoond:
 
@@ -85,7 +85,7 @@ U kunt andere acties voor de koppeling definiëren, zodat de gebruiker op de kop
 
    ![](assets/s_ncs_admin_survey_link_next.png)
 
-   U kunt de **[!UICONTROL Next]** en/of **[!UICONTROL Back]** knopen verbergen als zij door een verbinding moeten worden vervangen. Zie deze [pagina](../../web/using/defining-web-forms-page-sequencing.md).
+   U kunt de **[!UICONTROL Next]** en/of **[!UICONTROL Back]** knopen verbergen als zij door een verbinding moeten worden vervangen. Zie deze [pagina](defining-web-forms-page-sequencing.md).
 
    De koppeling vervangt de **[!UICONTROL Next]**-knop die standaard wordt gebruikt.
 
@@ -107,60 +107,7 @@ U kunt andere acties voor de koppeling definiëren, zodat de gebruiker op de kop
 
    >[!NOTE]
    >
-   >Voor meer op pagina die in een vorm van het Web in volgorde plaatsen, verwijs naar [het bepalen van Web form pagina het rangschikken](../../web/using/defining-web-forms-page-sequencing.md).
-
-* De velden van het formulier vooraf laden met gegevens uit het Facebook-profiel
-
-   >[!CAUTION]
-   >
-   >Deze functie is alleen beschikbaar als u de toepassing **[!UICONTROL Social Marketing]** hebt geïnstalleerd. Als u deze optie wilt gebruiken, moet u een Facebook-toepassing maken samen met een externe account van het type **[!UICONTROL Facebook Connect]**. Raadpleeg [deze pagina](../../social/using/creating-a-facebook-application.md#configuring-external-accounts) voor meer informatie.
-
-   Met de optie **[!UICONTROL Preload with Facebook]** kunt u een knop in een formulier invoegen om velden vooraf te laden met Facebook-profielgegevens.
-
-   ![](assets/web_social_webapp_037.png)
-
-   Wanneer een gebruiker op de knop **[!UICONTROL Fill in automatically]** klikt, wordt het Facebook-aanvraagvenster voor machtigingen geopend.
-
-   ![](assets/web_social_webapp_029.png)
-
-   >[!NOTE]
-   >
-   >Het is mogelijk om de lijst met uitgebreide rechten te wijzigen wanneer u de externe account configureert. Als u geen uitgebreide rechten opgeeft, stuurt Facebook standaard de basisprofielgegevens door.\
-   >Klik hier als u de lijst met uitgebreide rechten en de bijbehorende syntaxis wilt weergeven: [https://developers.facebook.com/docs/reference/api/permissions/](https://developers.facebook.com/docs/reference/api/permissions/)
-
-   Als de gebruiker ermee instemt om zijn gegevens te delen, worden de velden van het formulier vooraf geladen.
-
-   ![](assets/web_social_webapp_030.png)
-
-Voor dit gebruiksgeval, hebben wij een toepassing van het Web gecreeerd die uit de volgende elementen wordt samengesteld:
-
-* een pagina met het formulier
-* een **[!UICONTROL Record]**-activiteit
-* een **[!UICONTROL End]** activiteit
-
-![](assets/social_webapp_031.png)
-
-Voer de volgende stappen uit om een knop voor vooraf laden toe te voegen:
-
-1. Maak een formulier.
-
-   ![](assets/social_webapp_032.png)
-
-1. Ga naar hetzelfde niveau als de velden in het formulier en voeg een koppeling toe.
-
-   ![](assets/social_webapp_033.png)
-
-1. Voer het label in en selecteer het type **[!UICONTROL Button]**.
-
-   ![](assets/social_webapp_034.png)
-
-1. Ga naar het **[!UICONTROL Action]** gebied en selecteer **[!UICONTROL Preload with Facebook]**.
-
-   ![](assets/social_webapp_035.png)
-
-1. Ga naar het **[!UICONTROL Application]** gebied en selecteer **[!UICONTROL Facebook Connect]** type externe rekening eerder gecreeerd. Raadpleeg [deze pagina](../../social/using/creating-a-facebook-application.md#configuring-external-accounts) voor meer informatie.
-
-   ![](assets/social_webapp_036.png)
+   >Voor meer op pagina die in een vorm van het Web in volgorde plaatsen, verwijs naar [het bepalen van Web form pagina het rangschikken](defining-web-forms-page-sequencing.md).
 
 ### HTML-inhoud aanpassen {#personalizing-html-content}
 
@@ -168,7 +115,7 @@ U kunt de HTML-inhoud van een formulierpagina aanpassen met gegevens die op een 
 
 ![](assets/s_ncs_admin_survey_tag_ctx_1.png)
 
-Gebruik personalisatievelden om de gebruikersnaam en het geselecteerde merk opnieuw op de volgende pagina te injecteren. De syntaxis die moet worden gebruikt, is afhankelijk van de gegevensopslagmodus. Voor meer op dit, verwijs naar [Gebruikend verzamelde informatie](../../web/using/web-forms-answers.md#using-collected-information).
+Gebruik personalisatievelden om de gebruikersnaam en het geselecteerde merk opnieuw op de volgende pagina te injecteren. De syntaxis die moet worden gebruikt, is afhankelijk van de gegevensopslagmodus. Voor meer op dit, verwijs naar [Gebruikend verzamelde informatie](web-forms-answers.md#using-collected-information).
 
 >[!NOTE]
 >
@@ -187,11 +134,11 @@ Dit levert het volgende resultaat op:
 
 ![](assets/s_ncs_admin_survey_tag_ctx_2.png)
 
-### Tekstvariabelen {#using-text-variables} gebruiken
+### Tekstvariabelen gebruiken {#using-text-variables}
 
 Op het tabblad **[!UICONTROL Text]** kunt u met de volgende syntaxis variabele velden maken die in de HTML tussen de tekens &lt;%= en %> kunnen worden gebruikt: **$(IDENTIFIER)**.
 
-Gebruik deze methode om uw tekenreeksen eenvoudig te lokaliseren. Zie [Een webformulier vertalen](../../web/using/translating-a-web-form.md)
+Gebruik deze methode om uw tekenreeksen eenvoudig te lokaliseren. Zie [Een webformulier vertalen](translating-a-web-form.md)
 
 U kunt bijvoorbeeld een veld **Contact** maken waarmee u de tekenreeks &quot;Date of last contact:&quot; kunt weergeven voor de HTML-inhoud. Volg de onderstaande stappen om dit te doen:
 
@@ -214,9 +161,9 @@ U kunt bijvoorbeeld een veld **Contact** maken waarmee u de tekenreeks &quot;Dat
 
    ![](assets/s_ncs_admin_survey_html_content_preview.png)
 
-In deze modus kunt u de tekst van webformulieren slechts eenmaal definiëren en vertalingen beheren met het geïntegreerde vertaalgereedschap. Raadpleeg [Een webformulier vertalen](../../web/using/translating-a-web-form.md) voor meer informatie.
+In deze modus kunt u de tekst van webformulieren slechts eenmaal definiëren en vertalingen beheren met het geïntegreerde vertaalgereedschap. Raadpleeg [Een webformulier vertalen](translating-a-web-form.md) voor meer informatie.
 
-## Afbeeldingen {#inserting-images} invoegen
+## Afbeeldingen invoegen {#inserting-images}
 
 Afbeeldingen die u in formulieren wilt opnemen, moeten worden opgeslagen op een server die van buitenaf toegankelijk is.
 
