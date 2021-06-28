@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 5%
@@ -57,22 +57,22 @@ Om de configuratie en de inhoud van de vorm van het Web te bepalen, pas de volge
 
 * Hiermee definieert u de volgorde van pagina&#39;s en bepaalt u de weergave.
 
-   Deze stap wordt beschreven in [Paginagereeks voor webformulieren definiëren](../../web/using/defining-web-forms-page-sequencing.md).
+   Deze stap wordt beschreven in [Paginagereeks voor webformulieren definiëren](defining-web-forms-page-sequencing.md).
 
 * Vertaal indien nodig de inhoud.
 
-   Deze stap wordt beschreven in [Een webformulier vertalen](../../web/using/translating-a-web-form.md).
+   Deze stap wordt beschreven in [Een webformulier vertalen](translating-a-web-form.md).
 
-## Informatie over het ontwerpen van webformulieren {#about-web-forms-designing}
+## Webformulieren ontwerpen {#about-web-forms-designing}
 
-De pagina&#39;s van het formulier worden gemaakt met een specifieke editor waarmee u invoerzones (tekst), selectievelden (lijsten, selectievakjes, enz.) kunt definiëren en configureren. en statische elementen (afbeeldingen, HTML-inhoud, enz.). Ze kunnen worden gegroepeerd in containers en hun lay-out kan worden aangepast aan uw behoeften (zie [Containers maken](../../web/using/defining-web-forms-layout.md#creating-containers) voor meer informatie).
+De pagina&#39;s van het formulier worden gemaakt met een specifieke editor waarmee u invoerzones (tekst), selectievelden (lijsten, selectievakjes, enz.) kunt definiëren en configureren. en statische elementen (afbeeldingen, HTML-inhoud, enz.). Ze kunnen worden gegroepeerd in containers en hun lay-out kan worden aangepast aan uw behoeften (zie [Containers maken](defining-web-forms-layout.md#creating-containers) voor meer informatie).
 
 In de volgende secties wordt beschreven hoe u inhoud en indeling voor formulierschermen definieert:
 
-* [Velden toevoegen aan een webformulier](../../web/using/adding-fields-to-a-web-form.md),
-* [HTML-inhoud](../../web/using/static-elements-in-a-web-form.md#inserting-html-content) invoegen,
-* [Statische elementen in een webformulier](../../web/using/static-elements-in-a-web-form.md),
-* [De opmaak van webformulieren definiëren](../../web/using/defining-web-forms-layout.md).
+* [Velden toevoegen aan een webformulier](adding-fields-to-a-web-form.md),
+* [HTML-inhoud](static-elements-in-a-web-form.md#inserting-html-content) invoegen,
+* [Statische elementen in een webformulier](static-elements-in-a-web-form.md),
+* [De opmaak van webformulieren definiëren](defining-web-forms-layout.md).
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ In de volgende secties wordt beschreven hoe u inhoud en indeling voor formuliers
 
 
 
-### De pictogrammen op de werkbalk gebruiken {#using-the-icons-in-the-toolbar}
+### De pictogrammen in de werkbalk gebruiken {#using-the-icons-in-the-toolbar}
 
 U kunt ook de pictogrammen in de werkbalk gebruiken of met de rechtermuisknop klikken om een invoerzone in te voegen.
 
