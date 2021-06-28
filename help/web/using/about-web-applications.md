@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 20%
@@ -37,50 +37,50 @@ Dit hoofdstuk verstrekt een overzicht van hoe te om de toepassingen van het Web 
 
 Webtoepassingen in Adobe Campaign bieden toegang tot de volgende mogelijkheden:
 
-* Formulier maken met meerdere pagina&#39;s. Raadpleeg [deze pagina](../../web/using/about-web-forms.md) voor meer informatie.
-* Meertalig enquêtebeheer met een geïntegreerd vertaalhulpmiddel. Raadpleeg [deze pagina](../../web/using/translating-a-web-application.md) voor meer informatie.
-* Grafische paginabeheerinterface, paginalay-out met meerdere kolommen. Raadpleeg [deze pagina](../../web/using/designing-a-web-application.md) voor meer informatie.
-* Renderen van personalisatie en veldpositie. Raadpleeg [deze pagina](../../web/using/editing-content.md#adding-personalization-content) voor meer informatie.
-* Voorwaardelijke weergave van enquêtevelden volgens antwoorden. Raadpleeg [deze pagina](../../web/using/form-rendering.md#defining-fields-conditional-display) voor meer informatie.
-* Willekeurige weergave van vragen. Raadpleeg [deze pagina](../../web/using/building-a-survey.md#adding-questions) voor meer informatie.
-* Voorwaardelijke paginaweergave. Raadpleeg [deze pagina](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display) voor meer informatie.
-* Informatiecontrole vóór validatie afhankelijk van het verwachte gegevenstype (nummer, e-mailadres, datum, enz.) en de verplichte velden. Raadpleeg [deze pagina](../../web/using/form-rendering.md#defining-control-settings) voor meer informatie.
-* Uitnodigingen of meldingen via e-mail verzenden. Raadpleeg [deze pagina](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email) voor meer informatie.
-* Aanpassing van fout- en eindberichten. Raadpleeg [deze pagina](../../web/using/defining-web-forms-properties.md#setting-up-an-error-page) voor meer informatie.
-* Gebruik van afbeeldingen, video&#39;s, hypertextkoppelingen, captcha, enzovoort. Raadpleeg [deze pagina](../../web/using/editing-content.md) voor meer informatie.
-* Monitoring van reacties in real time. Raadpleeg [deze pagina](../../web/using/publish--track-and-use-collected-data.md#response-tracking) voor meer informatie.
+* Formulier maken met meerdere pagina&#39;s. Raadpleeg [deze pagina](about-web-forms.md) voor meer informatie.
+* Meertalig enquêtebeheer met een geïntegreerd vertaalhulpmiddel. Raadpleeg [deze pagina](translating-a-web-application.md) voor meer informatie.
+* Grafische paginabeheerinterface, paginalay-out met meerdere kolommen. Raadpleeg [deze pagina](designing-a-web-application.md) voor meer informatie.
+* Renderen van personalisatie en veldpositie. Raadpleeg [deze pagina](editing-content.md#adding-personalization-content) voor meer informatie.
+* Voorwaardelijke weergave van enquêtevelden volgens antwoorden. Raadpleeg [deze pagina](form-rendering.md#defining-fields-conditional-display) voor meer informatie.
+* Willekeurige weergave van vragen. Raadpleeg [deze pagina](../../surveys/using/building-a-survey.md#adding-questions) voor meer informatie.
+* Voorwaardelijke paginaweergave. Raadpleeg [deze pagina](defining-web-forms-page-sequencing.md#conditional-page-display) voor meer informatie.
+* Informatiecontrole vóór validatie afhankelijk van het verwachte gegevenstype (nummer, e-mailadres, datum, enz.) en de verplichte velden. Raadpleeg [deze pagina](form-rendering.md#defining-control-settings) voor meer informatie.
+* Uitnodigingen of meldingen via e-mail verzenden. Raadpleeg [deze pagina](publishing-a-web-form.md#delivering-a-form-via-email) voor meer informatie.
+* Aanpassing van fout- en eindberichten. Raadpleeg [deze pagina](defining-web-forms-properties.md#setting-up-an-error-page) voor meer informatie.
+* Gebruik van afbeeldingen, video&#39;s, hypertextkoppelingen, captcha, enzovoort. Raadpleeg [deze pagina](editing-content.md) voor meer informatie.
+* Monitoring van reacties in real time. Raadpleeg [deze pagina](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking) voor meer informatie.
 
 De optionele **Beoordelingsmodule** aanmaakmodule biedt de volgende aanvullende functies:
 
-* Dynamische extensie van de database: het maken van reacties die niet in de oorspronkelijke gegevenssjabloon zijn opgenomen. Raadpleeg [deze pagina](../../web/using/managing-answers.md#storing-collected-answers) voor meer informatie.
-* Speciale rapporten genereren. Raadpleeg [deze pagina](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys) voor meer informatie.
+* Dynamische extensie van de database: het maken van reacties die niet in de oorspronkelijke gegevenssjabloon zijn opgenomen. Raadpleeg [deze pagina](../../surveys/using/managing-answers.md#storing-collected-answers) voor meer informatie.
+* Speciale rapporten genereren. Raadpleeg [deze pagina](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys) voor meer informatie.
 
 Vergeleken met de toepassingen van het Web, hebben de onderzoeken een vereenvoudigde grafische interface met een verminderd aantal het uitgeven controles.
 
 >[!NOTE]
 >
->Enquêtes worden beschreven in [deze sectie](../../web/using/about-surveys.md).
+>Enquêtes worden beschreven in [deze sectie](../../surveys/using/about-surveys.md).
 >
->De algemene functies van webformulieren in Adobe Campaign worden beschreven in [deze sectie](../../web/using/about-web-forms.md).
+>De algemene functies van webformulieren in Adobe Campaign worden beschreven in [deze sectie](about-web-forms.md).
 
-## Implementatie van webtoepassing {#web-application-implementation}
+## Implementatie van webtoepassingen {#web-application-implementation}
 
 Om een toepassing van het Web tot stand te brengen en te posten, moet u:
 
 1. Maak de inhoud (velden, lijsten, tabellen, grafieken, enz.).
 
-   U kunt ook de sectie weergeven waarin de beschikbare velden voor formulieren worden weergegeven: al deze gebieden zijn ook beschikbaar voor de toepassingen van het Web. Deze informatie is beschikbaar in [deze pagina](../../web/using/adding-fields-to-a-web-form.md).
+   U kunt ook de sectie weergeven waarin de beschikbare velden voor formulieren worden weergegeven: al deze gebieden zijn ook beschikbaar voor de toepassingen van het Web. Deze informatie is beschikbaar in [deze pagina](adding-fields-to-a-web-form.md).
 
 1. Zoals vereist, kunt u het vooraf laden toevoegen, testen, en besparingsstappen, en het toegangsbeheersysteem (hoofdzakelijk binnen het kader van een Extranetpublicatie) vormen.
 1. Het publiceren van de toepassing van het Web om het op een Extranet of in Adobe Campaign ter beschikking te stellen.
 
-## Aanvankelijke configuratie van webtoepassing {#web-application-initial-configuration}
+## Aanvankelijke configuratie webtoepassing {#web-application-initial-configuration}
 
 De toepassing van het Web wordt gecreeerd via de **[!UICONTROL Web Applications]** verbinding in **[!UICONTROL Campaigns]** en **[!UICONTROL Profiles and targets]** lusjes.
 
 Webtoepassingen worden opgeslagen in het knooppunt **[!UICONTROL Resources > Online > Web Applications]** van de Adobe Campaign-structuur. Configuraties worden uitgesplitst in de volgende mappen:
 
-* **[!UICONTROL Administration > Configuration > Form renderings]**: bevat de renderingsjablonen voor de webformulierpresentatie (toepassingen en enquêtes). Met de sjabloon kunt u het formulier genereren. Er wordt ook een CSS-stijlpagina gebruikt. Deze stijlpagina kan op sjabloonniveau worden overgeladen. Raadpleeg [deze pagina](../../web/using/form-rendering.md#selecting-the-form-rendering-template) voor meer informatie.
+* **[!UICONTROL Administration > Configuration > Form renderings]**: bevat de renderingsjablonen voor de webformulierpresentatie (toepassingen en enquêtes). Met de sjabloon kunt u het formulier genereren. Er wordt ook een CSS-stijlpagina gebruikt. Deze stijlpagina kan op sjabloonniveau worden overgeladen. Raadpleeg [deze pagina](form-rendering.md#selecting-the-form-rendering-template) voor meer informatie.
 * **[!UICONTROL Resources > Templates > Web application templates]**: bevat formuliersjablonen. Als u een formulier of een webtoepassing wilt maken, moet u beginnen met een sjabloon.
 
 ## Webtoepassingssjablonen {#web-application-templates}
