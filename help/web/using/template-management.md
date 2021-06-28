@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 69805e60-8fc6-45d1-9087-5f7d949cc76a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 5%
@@ -21,7 +21,7 @@ Wanneer het leiden van tot een Landing van het typeWeb van Pagina toepassing, ka
 
 ![](assets/dce_popup_templatechoice.png)
 
-Als u een sjabloon wilt toevoegen, raadpleegt u [Algemene opties](../../web/using/content-editor-interface.md#global-options).
+Als u een sjabloon wilt toevoegen, raadpleegt u [Algemene opties](content-editor-interface.md#global-options).
 
 ## Een levering opslaan als een sjabloon {#saving-a-delivery-as-a-template}
 
