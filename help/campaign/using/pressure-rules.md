@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '3253'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # Drukregels{#pressure-rules}
 
-## Informatie over moeheid bij het op de markt brengen {#about-marketing-fatigue}
+## Over vermoeidheid bij het op de markt brengen {#about-marketing-fatigue}
 
 Door het beheer van de verkoopdruk te implementeren, kunt u voorkomen dat de populatie in de database te veel wordt gevraagd, ook wel &#39;marketingmoeheid&#39; genoemd. Om dit te doen, kunt u een maximumaantal berichten per ontvanger bepalen. Ook kunt u arbitrageregels tussen campagnes toepassen, zodat de beste boodschap naar het doelpubliek wordt gestuurd.
 
@@ -37,7 +37,7 @@ De arbitrageregel voor het definiëren van in aanmerking komende berichten wordt
 
 Anders is de ontvanger **[!UICONTROL Excluded by arbitration]**. Raadpleeg [Uitsluiting na arbitrage](#exclusion-after-arbitration) voor meer informatie hierover.
 
-## Een drukregel {#creating-a-pressure-rule} maken
+## Een drukregel maken {#creating-a-pressure-rule}
 
 Als u arbitrage wilt instellen tussen campagnes die gebruikmaken van Adobe Campaign, begint u met het maken van typologieën voor campagnes en het definiëren van gekoppelde typologische regels (**Regels voor druk**).
 
@@ -91,7 +91,7 @@ Voer de volgende stappen uit om een typologieregel **[!UICONTROL Pressure]** te 
 
 1. Het **[!UICONTROL Typologies]** lusje laat u de campagnetypologieën bekijken die deze regel toepassen of de regel verbinden aan één of meerdere bestaande typologieën. Voor meer op dit, verwijs naar [Toepassend typologies](../../campaign/using/about-campaign-typologies.md#applying-typologies).
 
-## Drempelwaarden en gewichten {#defining-thresholds-and-weights} definiëren
+## Definitie van drempels en gewichten {#defining-thresholds-and-weights}
 
 ### Maximum aantal berichten {#maximum-number-of-messages}
 
@@ -111,7 +111,7 @@ U kunt het aantal geoorloofde berichten volgens het segment indexeren waartot de
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-Als u de drempel wilt definiëren, kunt u een dimensie gebruiken die is gekoppeld aan de doeldimensie: Als u bijvoorbeeld berichten wilt opnemen die worden geleverd aan de ontvangende profielen die zijn opgeslagen in de bezoekerstabel (voor meer informatie over de bezoekerslijst, raadpleegt u [deze sectie](../../web/using/use-case--creating-a-refer-a-friend-form.md)) of om te voorkomen dat meer dan één bericht per week naar hetzelfde huishouden wordt verzonden (dat kan verwijzen naar meerdere e-mailadressen) die zijn geïdentificeerd in een dimensie die gekoppeld is aan die van de ontvangers.
+Als u de drempel wilt definiëren, kunt u een dimensie gebruiken die is gekoppeld aan de doeldimensie: Als u bijvoorbeeld berichten wilt opnemen die worden geleverd aan de ontvangende profielen die zijn opgeslagen in de bezoekerstabel (voor meer informatie over de bezoekerslijst, raadpleegt u [deze sectie](../../surveys/using/use-case--creating-a-refer-a-friend-form.md)) of om te voorkomen dat meer dan één bericht per week naar hetzelfde huishouden wordt verzonden (dat kan verwijzen naar meerdere e-mailadressen) die zijn geïdentificeerd in een dimensie die gekoppeld is aan die van de ontvangers.
 
 Selecteer hiertoe de optie **[!UICONTROL Count messages on a linked dimension]** en selecteer vervolgens de bezoeker of de tabel met contactpersonen.
 
@@ -137,7 +137,7 @@ In het volgende voorbeeld willen we het gewicht van nieuwsbrieven op muziek kopp
 
 1. Pas deze regel op berichten met het volgende onderwerp toe: nieuwsbrieven, speciale aanbiedingen, enz. Het gewicht van deze leveringen, en dus het prioriteitsniveau ervan, zal afhangen van de geschiktheidsscore van elke ontvanger.
 
-## Periode {#setting-the-period} instellen
+## Vaststelling van de periode {#setting-the-period}
 
 De drukregels worden bepaald in **n**-dag rolperiodes.
 
@@ -214,7 +214,7 @@ Als dit aantal de drempel overschrijdt, worden de arbitrageregels toegepast die 
 >
 >Als meerdere leveringen dezelfde scores hebben, wordt de campagne die voor de vroegste datum is gepland, verzonden.
 
-## Gebruik gevallen van drukregels {#use-cases-on-pressure-rules}
+## Gevallen gebruiken voor drukregels {#use-cases-on-pressure-rules}
 
 ### Aanpassing van de drempel op basis van criterium {#adapting-the-threshold-based-on-criterion}
 
@@ -312,7 +312,7 @@ Pas de volgende configuratiestappen toe:
 1. Klik **[!UICONTROL Finish]** om deze regel op te slaan.
 1. Koppel de regel aan een campagnetypologie en verwijs deze typologie in een levering om het goed te keuren.
 
-### Alleen de hoogst gewogen berichten {#sending-only-the-highest-weighted-messages} verzenden
+### Alleen de hoogst gewogen berichten verzenden {#sending-only-the-highest-weighted-messages}
 
 U wilt niet meer dan 2 berichten binnen de zelfde week, met een grens van 2 berichten per dag, naar elk van uw ontvangers verzenden, en u wilt slechts de berichten met hogere gewichten om worden geleverd.
 
