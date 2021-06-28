@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Een landingspagina maken{#creating-a-landing-page}
 
-## Informatie over het maken van bestemmingspagina&#39;s {#about-landing-pages-creation}
+## Over het maken van bestemmingspagina&#39;s {#about-landing-pages-creation}
 
 In dit geval kunt u het gebruik van de Digital Editor voor het maken van een bestemmingspagina op de Adobe Campaign-console bekijken.
 
@@ -23,7 +23,7 @@ Voordat u de bestemmingspagina in Adobe Campaign gaat configureren, moet u **een
 
 Het hoofddoel van dit gebruiksgeval is om de formuliervelden van de landingspagina te laten overeenstemmen met de interne velden in Adobe Campaign met behulp van de functies in de DCE.
 
-## De openingspagina {#creating-the-landing-page} maken
+## De openingspagina maken {#creating-the-landing-page}
 
 Als u een nieuwe webtoepassing van het type Landing Page wilt maken, gaat u als volgt te werk:
 
@@ -47,7 +47,7 @@ U krijgt dan de volgende opeenvolging:
 
 >[!NOTE]
 >
->Voor meer bij het creëren van een toepassing van het Web, verwijs naar [deze sectie](../../web/using/creating-a-new-web-application.md).
+>Voor meer bij het creëren van een toepassing van het Web, verwijs naar [deze sectie](creating-a-new-web-application.md).
 
 ## Stap 1 - Sjablonen selecteren en laden {#step-1---selecting-and-loading-templates}
 
@@ -90,13 +90,13 @@ Pas deze stappen voor elke pagina toe die in de toepassing van het Web wordt opg
 >
 >**De DCE voert de JavaScript-code voor de geladen HTML-pagina uit.** JavaScript-fouten in de HTML-sjabloon die kunnen voorkomen in de Adobe Campaign-interface. Deze fouten hebben geen betrekking op de editor. Als u wilt controleren of de geïmporteerde bestanden geen fouten bevatten, raden we u aan deze bestanden in een browser (Internet Explorer/Firefox/Chrome) te testen voordat u de bestanden in de DCE importeert.
 
-## Stap 2 - het Vormen van de inhoud {#step-2---configuring-the-content}
+## Stap 2 - De inhoud configureren {#step-2---configuring-the-content}
 
 In deze sectie gaan we geïmporteerde inhoud aanpassen en de velden van de database koppelen aan de vorm van de webpagina. De eerder gemaakte webtoepassing is:
 
 ![](assets/dce_uc1_lp_enchainement.png)
 
-### Inhoud {#modifying-content} wijzigen
+### Inhoud wijzigen {#modifying-content}
 
 Laten we beginnen met het wijzigen van de kleuren van de pagina. Dit doet u als volgt:
 
@@ -112,7 +112,7 @@ Laten we beginnen met het wijzigen van de kleuren van de pagina. Dit doet u als 
 
    ![](assets/dce_uc1_finalcolor.png)
 
-### Formuliervelden {#linking-form-fields} koppelen
+### Formuliervelden koppelen {#linking-form-fields}
 
 We gaan de velden op de pagina koppelen aan de velden in de database om de verstrekte informatie op te slaan.
 
