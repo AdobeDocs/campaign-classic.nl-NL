@@ -6,30 +6,24 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 3%
+source-wordcount: '256'
+ht-degree: 4%
 
 ---
 
 # Een webapplicatie ontwerpen{#designing-a-web-application}
 
-Webtoepassingen worden volgens hetzelfde principe gemaakt en beheerd als [online enquêtes](../../web/using/about-surveys.md).
-
-De functionele verschillen zijn echter als volgt:
-
-* Webtoepassingen gebruiken geen gearchiveerde velden. Gegevens kunnen daarom alleen in databasevelden of lokale variabelen worden opgeslagen.
-* Er zijn geen ingebouwde rapporten over de toepassingen van het Web.
-* Er worden extra velden aangeboden, vooral voor het maken van tabellen en grafieken.
+Webtoepassingen worden volgens hetzelfde principe gemaakt en beheerd als [webformulieren](about-web-forms.md).
 
 >[!CAUTION]
 >
->Het wordt hoogst geadviseerd dat de toegepaste configuraties voortdurend worden gecontroleerd om het even welke fouten vroeg in het de toepassingsbouwproces van het Web te ontdekken. Als u de rendering van een wijziging wilt controleren, slaat u de toepassing op en klikt u op het subtabblad **[!UICONTROL Preview]**.
+>Gebruik het subtabblad **[!UICONTROL Preview]** om fouten tijdens het ontwerpen van webtoepassingen te controleren.
 >
->Totdat de toepassing van het Web wordt gepubliceerd, kunnen de veranderingen niet door het eind worden gezien - gebruiker.
+>Totdat de toepassing van het Web wordt gepubliceerd, worden de veranderingen niet blootgesteld aan eind - gebruikers.
 
-## Het opnemen van grafieken in een toepassing {#inserting-charts-in-a-web-application}
+## Het opnemen van grafieken in een toepassing van het Web {#inserting-charts-in-a-web-application}
 
 U kunt grafieken in de toepassingen van het Web omvatten. Hiervoor selecteert u met de vervolgkeuzelijst met grafieken in de taakbalk het type diagram dat u wilt invoegen.
 
@@ -70,4 +64,3 @@ De toepassingen van het formulierWeb voor een extranet bewerken worden gekenmerk
 
    Terwijl de &quot;overzicht&quot;-typeToepassingen van het Web allen één enkele pagina hebben, geef vormen een opeenvolging van pagina&#39;s uit die op specifieke criteria (tests, selecties, profiel van verbonden exploitant, enz.) worden gebaseerd.
 
-De verrichting van dit type van de toepassing van het Web is gelijkaardig aan **Enquêtes**, maar zonder geschiedenisbeheer of gebiedsarchivering. Gebruikers krijgen meestal toegang via een aanmeldingspagina waar zij zich moeten identificeren.
