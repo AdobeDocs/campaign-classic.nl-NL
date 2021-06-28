@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 7%
@@ -17,7 +17,7 @@ ht-degree: 7%
 
 Met Adobe Campaign kunt u communicatie- en marketingcampagnes definiëren, optimaliseren, uitvoeren en analyseren. Adobe Campaign fungeert als een gemeenschappelijk centrum voor bestellingen en uitvoering voor marketingstrategieën. Raadpleeg [Toegangscampagnes](../../campaign/using/accessing-campaigns.md) en [Marketingcampagnes maken](../../campaign/using/setting-up-marketing-campaigns.md) voor meer informatie.
 
-Daarnaast kunt u met de module **Marketing Resource Management (MRM)** marketingacties in een samenwerkingsmodus beheren door volledig beheer en realtime tracering van de betrokken taken, budgetten en marketingbronnen te bieden. Met het beheer van marketingbronnen kunt u het beheer van interne en externe processen, bronnen en marketingcampagnes optimaliseren en reguleren, evenals de relaties van derden (agentschappen, printers, enz.). Raadpleeg [deze sectie](../../campaign/using/about-marketing-resource-management.md) voor meer informatie.
+Daarnaast kunt u met de module **Marketing Resource Management (MRM)** marketingacties in een samenwerkingsmodus beheren door volledig beheer en realtime tracering van de betrokken taken, budgetten en marketingbronnen te bieden. Met het beheer van marketingbronnen kunt u het beheer van interne en externe processen, bronnen en marketingcampagnes optimaliseren en reguleren, evenals de relaties van derden (agentschappen, printers, enz.). Raadpleeg [deze sectie](../../mrm/using/about-marketing-resource-management.md) voor meer informatie.
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ Daarnaast kunt u met de module **Marketing Resource Management (MRM)** marketing
 
 ![](assets/do-not-localize/how-to-video.png) [Concepten van marketingcampagnes ontdekken in video](#video)
 
-## Kernconcepten {#core-concepts}
+## Basisbegrippen {#core-concepts}
 
 De volgende concepten moeten bekend zijn in het kader van de campagne:
 
