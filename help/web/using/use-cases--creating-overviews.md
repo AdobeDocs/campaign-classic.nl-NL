@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 0%
@@ -80,7 +80,7 @@ In een overzicht kunt u naar keuze toegang krijgen tot gegevens, afhankelijk van
    >
    >In dit stadium, is de toepassing van het Web niet binnen zijn toepassingscontext, kan het filter daarom niet op de omslag worden getest.
 
-## Een knop toevoegen om een nieuwe webtoepassing {#adding-a-button-to-configure-a-new-web-application} te configureren
+## Een knop toevoegen om een nieuwe webtoepassing te configureren {#adding-a-button-to-configure-a-new-web-application}
 
 1. Plaats uw curseur op **[!UICONTROL Page]** element en voeg een verbinding (**[!UICONTROL Static elements > Link]**) toe.
 1. Wijzig het koppelingsetiket aangezien het op de knoop in het overzicht zal verschijnen.
@@ -158,7 +158,7 @@ Wanneer u een lijst in uw overzicht vormt, kunt u verkiezen om extra details voo
 >
 >JavaScript-bibliotheken vernieuwen zich vijf minuten op de server. U kunt de server opnieuw starten om te voorkomen dat er op deze vertraging wordt gewacht.
 
-## De lijst {#filtering-and-updating-the-list} filteren en bijwerken
+## De lijst filteren en bijwerken {#filtering-and-updating-the-list}
 
 In deze sectie, zult u een filter voor het tonen van het overzicht van de toepassingen creëren van het Web die door een specifieke exploitant worden gecreeerd. Dit filter wordt gemaakt met een koppelingseditor. Nadat u een operator hebt geselecteerd, vernieuwt u de lijst om het filter toe te passen. hiervoor moet een koppeling Vernieuwen worden gemaakt.
 
@@ -169,7 +169,7 @@ Deze twee elementen worden in dezelfde container gegroepeerd om in het overzicht
 
    ![](assets/s_ncs_configuration_webapp_container.png)
 
-   Voor informatie over elementlay-out, verwijs naar [deze sectie](../../web/using/about-web-forms.md).
+   Voor informatie over elementlay-out, verwijs naar [deze sectie](about-web-forms.md).
 
 1. Pas **dottedFilter** toe.
 
@@ -205,7 +205,7 @@ Deze twee elementen worden in dezelfde container gegroepeerd om in het overzicht
 >
 >De gebruiker van de toepassing van het Web moet een geïdentificeerde exploitant met de aangewezen rechten van Adobe Campaign zijn om tot de informatie toegang te hebben. Dit type van configuratie zal niet voor de anonieme toepassingen van het Web werken.
 
-### Vernieuwingskoppelingen maken {#creating-a-refresh-link}
+### Een koppeling voor vernieuwen maken {#creating-a-refresh-link}
 
 1. Plaats de cursor op de container en voeg een **[!UICONTROL Link]** in via het menu **[!UICONTROL Static elements]**.
 1. Wijzig het label.
