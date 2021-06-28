@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Op het tabblad **[!UICONTROL General]** van het eigenschappenvenster kunt u de *
 
 ![](assets/s_ncs_admin_survey_properties_general_tab.png)
 
-De formuliersjabloon wordt gekozen tijdens het maken van het formulier. Deze kan later niet worden gewijzigd. Raadpleeg [Een webformuliersjabloon gebruiken](../../web/using/using-a-web-form-template.md) voor meer informatie over het maken en beheren van formuliersjablonen.
+De formuliersjabloon wordt gekozen tijdens het maken van het formulier. Deze kan later niet worden gewijzigd. Raadpleeg [Een webformuliersjabloon gebruiken](using-a-web-form-template.md) voor meer informatie over het maken en beheren van formuliersjablonen.
 
 ## Opslag van formuliergegevens {#form-data-storage}
 
@@ -53,9 +53,9 @@ De inhoud van de weergegeven tekenreeksen wordt gedefinieerd op het tabblad **[!
 
 Op het tabblad **[!UICONTROL Localization]** kunt u de ontwerp- en weergavetalen voor het webformulier selecteren.
 
-Zie [Een webformulier vertalen](../../web/using/translating-a-web-form.md).
+Zie [Een webformulier vertalen](translating-a-web-form.md).
 
-## Door formulieren bladeren en weergeven {#form-browsing-and-rendering}
+## Bladeren en weergeven van formulieren {#form-browsing-and-rendering}
 
 Met het tabblad **[!UICONTROL Rendering]** kunt u het type bladeren tussen pagina&#39;s van het webformulier en de gebruikte renderingsjabloon definiëren.
 
@@ -77,7 +77,7 @@ Deze elementen worden onder aan elke pagina weergegeven. Hun standpunten kunnen 
 
 In het veld **[!UICONTROL Template]** van het tabblad **[!UICONTROL Rendering]** kunt u een thema selecteren uit de beschikbare thema&#39;s.
 
-Thema&#39;s worden opgeslagen in het knooppunt **[!UICONTROL Administration>Configuration>Form rendering]** van de boomstructuur. Zie [De rendersjabloon van het formulier selecteren](../../web/using/form-rendering.md#selecting-the-form-rendering-template)
+Thema&#39;s worden opgeslagen in het knooppunt **[!UICONTROL Administration>Configuration>Form rendering]** van de boomstructuur. Zie [De rendersjabloon van het formulier selecteren](form-rendering.md#selecting-the-form-rendering-template)
 
 In het onderste gedeelte van het eigenschappenvenster wordt een voorbeeld van rendering weergegeven. Met het pictogram **[!UICONTROL Edit link]** kunt u de configuratie voor het geselecteerde thema weergeven.
 
@@ -85,13 +85,13 @@ In het onderste gedeelte van het eigenschappenvenster wordt een voorbeeld van re
 
 ## Teksten in de vorm {#texts-in-the-form}
 
-Op het tabblad **[!UICONTROL Page]** kunt u de inhoud van de kop- en voettekst van het formulier definiëren. Zie [Kop- en voetteksten definiëren](../../web/using/form-rendering.md#defining-headers-and-footers).
+Op het tabblad **[!UICONTROL Page]** kunt u de inhoud van de kop- en voettekst van het formulier definiëren. Zie [Kop- en voetteksten definiëren](form-rendering.md#defining-headers-and-footers).
 
-U kunt hiermee ook vertalingen beheren. Zie [Een webformulier vertalen](../../web/using/translating-a-web-form.md).
+U kunt hiermee ook vertalingen beheren. Zie [Een webformulier vertalen](translating-a-web-form.md).
 
 ## Toegankelijkheid van het formulier {#accessibility-of-the-form}
 
-Een webformulier is toegankelijk voor gebruikers als het **[!UICONTROL Online]** is en als de huidige datum binnen de geldigheidsperiode valt. De status van het formulier wordt gewijzigd tijdens de publicatiefase (zie [Een formulier publiceren](../../web/using/publishing-a-web-form.md#publishing-a-form)). De status wordt weergegeven in de sectie **Project** van het tabblad **[!UICONTROL General]** van het eigenschappenvenster.
+Een webformulier is toegankelijk voor gebruikers als het **[!UICONTROL Online]** is en als de huidige datum binnen de geldigheidsperiode valt. De status van het formulier wordt gewijzigd tijdens de publicatiefase (zie [Een formulier publiceren](publishing-a-web-form.md#publishing-a-form)). De status wordt weergegeven in de sectie **Project** van het tabblad **[!UICONTROL General]** van het eigenschappenvenster.
 
 De geldigheidsperiode loopt van **[!UICONTROL Start]** datum tot **[!UICONTROL End date]**. Als er in deze velden geen datums zijn opgegeven, is het formulier blijvend geldig.
 
@@ -144,13 +144,13 @@ De volgende parameters zijn standaard beschikbaar:
    >
    >Wanneer het formulier via een URL wordt weergegeven met de parameter **_uuid**, wordt de waarde van de parameter **[!UICONTROL origin]** gedwongen naar **Adobe Campaign**.
 
-## Parameters {#adding-parameters} toevoegen
+## Parameters toevoegen {#adding-parameters}
 
 Parameters kunnen worden toegevoegd via het tabblad **[!UICONTROL Parameters...]** in het venster Eigenschappen van het formulier. Zij kunnen verplicht worden gesteld, zoals hieronder wordt getoond:
 
 ![](assets/s_ncs_admin_survey_properties_param.png)
 
-U moet een opslagplaats specificeren waarvan de waarde van de parameter zal worden teruggewonnen. Hiervoor selecteert u een van de opslagopties en klikt u op het tabblad **[!UICONTROL Storage]** om het betreffende veld of de betreffende variabele te selecteren. De opslagopties worden beschreven in [Opslagvelden van de Reactie](../../web/using/web-forms-answers.md#response-storage-fields).
+U moet een opslagplaats specificeren waarvan de waarde van de parameter zal worden teruggewonnen. Hiervoor selecteert u een van de opslagopties en klikt u op het tabblad **[!UICONTROL Storage]** om het betreffende veld of de betreffende variabele te selecteren. De opslagopties worden beschreven in [Opslagvelden van de Reactie](web-forms-answers.md#response-storage-fields).
 
 De status van de geënquêteerde (0, 1 of een andere waarde) kan vervolgens aan de URL worden toegevoegd om het formulier te openen. Deze informatie kan opnieuw worden gebruikt op de pagina&#39;s van het formulier of in een testvak. De weergegeven pagina&#39;s kunnen worden geconditioneerd op basis van de waarde van de context, zoals hieronder wordt weergegeven:
 
