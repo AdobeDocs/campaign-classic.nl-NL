@@ -6,16 +6,16 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '397'
 ht-degree: 3%
 
 ---
 
 # Bezoeken aan een webapplicatie bijhouden{#tracking-a-web-application}
 
-Met Adobe Campaign kunt u bezoeken op webtoepassingspagina&#39;s bijhouden en meten door trackingtags in te voegen. Deze functionaliteit kan voor alle toepassingstypen van het Web (vormen, online onderzoeken, Web-pagina&#39;s worden gebruikt die gebruikend DCE worden gecreeerd, etc.).
+Met Adobe Campaign kunt u bezoeken op webtoepassingspagina&#39;s bijhouden en meten door trackingtags in te voegen. Deze functionaliteit kan voor alle toepassingstypes van het Web (vormen, Web-pagina&#39;s, enz.) worden gebruikt.
 
 U kunt dus verschillende navigatiepaden definiëren en het succes ervan beoordelen. De teruggekregen gegevens zijn dan beschikbaar in de rapporten van elke toepassing.
 
@@ -38,7 +38,7 @@ De belangrijkste verbeteringen in deze versie zijn:
 
    Bovendien toont een **Sectordiagram** de populatie volgens zijn bron.
 
-## De verkeersbron {#identifying-the-traffic-source} identificeren
+## Identificerend de verkeersbron {#identifying-the-traffic-source}
 
 Twee verschillende wijzen kunnen worden gebruikt om te identificeren waar de bezoeker van komt wanneer het toegang tot van een toepassing van het Web:
 
@@ -55,13 +55,11 @@ Om de verkeersbron in een toepassing van het Web te identificeren, zoekt Adobe C
 
 >[!NOTE]
 >
->Herinner dat het anonieme volgen slechts mogelijk is als de overeenkomstige optie in de plaatsingstovenaar is geactiveerd.
->
->Raadpleeg voor meer informatie de [Installatiegids](../../installation/using/deploying-an-instance.md).
+>Het anonieme volgen is slechts beschikbaar als de optie in de plaatsingstovenaar toen het installeren van Campagne is geactiveerd.
 
 ## Webtoepassingen die zijn ontworpen met Digital Content Editor (DCE) {#web-applications-designed-with-digital-content-editor--dce-}
 
-Als een webtoepassing wordt gemaakt met de HTML-inhoudeditor - **Digital Content Editor (DCE)** - worden trackingtags ingevoegd op het tabblad **[!UICONTROL Properties]** van de editor. Raadpleeg [deze sectie](../../web/using/about-campaign-html-editor.md) voor meer informatie over de Digital Content Editor (DCE).
+Als een webtoepassing wordt gemaakt met de HTML-inhoudeditor - **Digital Content Editor (DCE)** - worden trackingtags ingevoegd op het tabblad **[!UICONTROL Properties]** van de editor. Raadpleeg [deze sectie](about-campaign-html-editor.md) voor meer informatie over de Digital Content Editor (DCE).
 
 ![](assets/trackers_2.png)
 
