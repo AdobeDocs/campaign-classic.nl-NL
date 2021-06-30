@@ -10,7 +10,7 @@ type: Documentation
 source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
 source-wordcount: '2518'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -117,7 +117,7 @@ ht-degree: 96%
          + [Verbinding maken met Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Verbinding maken met Salesforce.com](platform/using/crm-sfdc.md)
          + [Gegevens synchroniseren met CRM](platform/using/crm-data-sync.md)
-      + [Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
+      + [Adobe Analytics-connector](platform/using/adobe-analytics-connector.md)
       + [Adobe Analytics-gegevensconnector](platform/using/adobe-analytics-data-connector-legacy.md)
    + [Help- en ondersteuningsopties](support.md)
 + Berichten maken en verzenden {#sending-messages}
@@ -241,7 +241,7 @@ ht-degree: 96%
       + [Contentmanagement](delivery/using/about-content-management.md)
       + [Bronnen en beginselen voor contentmanagement](delivery/using/content-manager-resources-and-principles.md)
       + [Gebruiksscenario: contentmanagement maken](delivery/using/use-case--creating-content-management.md)
-      + [Dataschema’s](delivery/using/data-schemas.md)
+      + [Gegevensschema’s](delivery/using/data-schemas.md)
       + [Invoerformulieren](delivery/using/input-forms.md)
       + [Opmaak](delivery/using/formatting.md)
       + [Publicatiesjablonen](delivery/using/publication-templates.md)
@@ -378,7 +378,7 @@ ht-degree: 96%
       + [Toegang tot [!DNL Assets] configureren](integrations/using/configuring-access-to-assets.md)
       + [Een gedeelde asset invoegen](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
-      + [ [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
+      + [Over [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [De integratie configureren](integrations/using/configuring-the-integration.md)
       + [Een [!DNL Experience Manager] -nieuwsbrief maken](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
@@ -570,23 +570,23 @@ ht-degree: 96%
       + [Presentatieregels](interaction/using/presentation-rules.md)
       + [Aanbiedingen op een inbound-kanaal](interaction/using/offers-on-an-inbound-channel.md)
       + [Aanbiedingen op een outbound-kanaal](interaction/using/offers-on-an-outbound-channel.md)
-+ Transactionele berichten {#transactional-messaging}
++ Transactional Messaging {#transactional-messaging}
    + [Aan de slag met transactionele berichten](message-center/using/about-transactional-messaging.md)
-   + Transactieberichten {#configure-transactional-messaging} configureren
+   + Transactionele berichten {#configure-transactional-messaging} configureren
       + [Architectuur van transactionele berichten](message-center/using/transactional-messaging-architecture.md)
       + [Instanties configureren](message-center/using/configuring-instances.md)
       + [Aanvullende configuraties](message-center/using/additional-configurations.md)
    + Berichtensjablonen {#message-templates}
       + [Gebeurtenistypen maken](message-center/using/creating-event-types.md)
-      + [Ontwerpberichtsjablonen](message-center/using/creating-the-message-template.md)
-      + [Sjablonen voor testberichten](message-center/using/testing-message-templates.md)
+      + [Berichtsjablonen ontwerpen](message-center/using/creating-the-message-template.md)
+      + [Berichtsjablonen testen](message-center/using/testing-message-templates.md)
       + [Berichtensjablonen publiceren](message-center/using/publishing-message-templates.md)
    + Transactionele gebeurtenisverwerking {#processing}
-      + [Beschrijving van gebeurtenis](message-center/using/event-description.md)
+      + [Beschrijving van een gebeurtenis](message-center/using/event-description.md)
       + [Gebeurtenisverwerking](message-center/using/about-event-processing.md)
       + [Uitvoering van levering](message-center/using/delivery-execution.md)
    + Rapporten {#reports}
-      + [Toegang tot transactiemeldingsrapporten](message-center/using/about-transactional-messaging-reports.md)
+      + [Rapporten van transactionele berichten openen ](message-center/using/about-transactional-messaging-reports.md)
       + [Geschiedenis van gebeurtenissen in het Berichtencentrum](message-center/using/history-of-message-center-events.md)
       + [Serviceniveau van het Berichtencentrum](message-center/using/message-center-service-level.md)
       + [Verwerkingstijd van het Berichtencentrum](message-center/using/message-center-processing-time.md)
