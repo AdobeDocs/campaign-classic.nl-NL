@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: c612b47463427751eff27d6092e371c918c87d93
 workflow-type: tm+mt
 source-wordcount: '1634'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -43,7 +43,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
   </tr>
     <tr>
   <td>Adobe Analytics-gegevensconnector<br></td>
-   <td><p>Vanaf de release van Campagne 21.1.3 is de Adobe Analytics Data Connector verouderd.</p>
+   <td><p>Vanaf Campaign 21.1.3 is de Adobe Analytics-gegevensconnector afgeschaft.</p>
    <p>Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../platform/using/adobe-analytics-connector.md">Meer informatie</a></p>
   <p><em>Doeldatum verwijdering: 1 maart 2022</em></p>
   </td>
@@ -79,10 +79,10 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
   </tr>
   <tr>  
    <td>Faxkanaal<br></td>
-   <td><p>Vanaf de release van Campagne 21.1.3 is het faxkanaal niet meer beschikbaar. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Meer informatie</a></p>
+   <td><p>Vanaf Campaign 21.1.3 is het faxkanaal niet meer beschikbaar. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Meer informatie</a></p>
   <tr>
   <td>Demdex-domein<br></td>
-  <td><p> Vanaf de release van Campagne 21.1.3 is het demdex-domein dat wordt gebruikt voor het importeren en exporteren van soorten publiek naar de Adobe Experience Cloud, niet meer beschikbaar. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Meer informatie</a></p> 
+  <td><p> Vanaf Campaign 21.1.3 is het demdex-domein afgeschaft. Dit werd gebruikt voor het importeren en exporteren van doelgroepen naar Adobe Experience Cloud. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Meer informatie</a></p> 
   </td>
   </td>
   </tr>
@@ -156,7 +156,7 @@ De Adobe Campaign Classic-clientconsole kan niet meer worden uitgevoerd op de vo
 
 ### Besturingssystemen {#o-s-eol}
 
-Vanaf release 21.1.3 is de ondersteuning voor Debian 8 afgekeurd.
+Vanaf release 21.1.3 is de ondersteuning voor Debian 8 afgeschaft.
 
 Vanaf release 19.1 is Adobe Campaign niet meer compatibel met de volgende besturingssystemen.
 
@@ -178,7 +178,7 @@ Vanaf de lenterelease 19.1 is Adobe Campaign niet meer compatibel met de volgend
 Vanaf de lenterelease 19.1 is Adobe Campaign niet meer compatibel met de volgende tools.
 
 * Java JDK 7. [Meer informatie](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
-* Libre Office 3.5 / 4.3 / 5.x, behalve wanneer ingesloten in een ander gereedschap. [Meer informatie](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
+* Libre Office 3.5/4.3/5.x, behalve wanneer het is ingesloten in een andere tool. [Meer informatie](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
 ### Database-engines {#dbe-eol}
 
@@ -216,11 +216,11 @@ Campaign Classic is niet compatibel met de volgende servers in FDA (Federated Da
 * Soap-API - Online: 2015, 2016
 * Web-API – Microsoft Dynamics CRM on-premise: 2016, 2016 Update 1
 * Web-API – Microsoft Dynamics CRM online: 2016, 2016 Update 1
-* Oracle On-demand-API&lt;
+* Oracle On Demand-API&lt;
 
 **RDBMS SERVER**
 
-Adobe Campaign is vanaf de 19.1-lenteversie niet meer compatibel met de volgende RDBMS-servers:
+Vanaf de lenterelease 19.1 is Adobe Campaign niet meer compatibel met de volgende FDA-servers:
 
 * Oracle 10GR2
 * PostgreSQL 9.0 tot 9.3
@@ -230,7 +230,7 @@ Adobe Campaign is vanaf de 19.1-lenteversie niet meer compatibel met de volgende
 
 ### Sms-connectoren {#sms-eol}
 
-Adobe Campaign is niet compatibel met de volgende SMS-connectors:
+Adobe Campaign is niet compatibel met de volgende SMS-connectoren:
 
 * Generic SMPP (SMPP versie 3.4 die de binaire modus ondersteunt)
 * Sybase365 (SAP SMS 365)
