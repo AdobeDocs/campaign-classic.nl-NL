@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
 source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2038'
 ht-degree: 100%
 
@@ -129,7 +129,7 @@ Adobe Campaign biedt u verschillende functiesets voor privacybeheer:
 * Verzoeken om toegang tot persoonsgegevens (toegangsrecht en recht om te worden vergeten). Zie [deze sectie](#privacy-requests).
 * Opt-out voor de verkoop van persoonsgegevens (CCPA-specifiek). Zie [deze sectie](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
 
-De belangrijkste privacymogelijkheden in Campaign en een voorbeeld van de betrokken persona’s worden weergegeven in [deze sectie](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/faq/privacy-faq.html#getting-started).
+De belangrijkste privacymogelijkheden in Campaign en een voorbeeld van de betrokken persona’s worden weergegeven in [deze sectie](https://helpx.adobe.com/nl/campaign/kb/campaign-privacy-more.html#gdprpersonasandflow).
 
 ### Toestemming, retentie en rollen {#consent}
 
