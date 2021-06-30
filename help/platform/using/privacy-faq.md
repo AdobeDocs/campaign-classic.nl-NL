@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ce2c90cd-46d9-4365-8013-5c1273b6c176
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '797'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Dit zijn een paar veelgestelde vragen over privacy en toestemming bij het gebrui
 
 De onderstaande items zijn gekoppeld aan de belangrijkste termen en begrippen in verband met privacy en toestemming in Adobe Campaign:
 
-* [Regels voor privacybeheer](../../platform/using/privacy-management.md#privacy-management-regulations)
+* [Voorschriften voor privacybeheer](../../platform/using/privacy-management.md#privacy-management-regulations)
 * [Persoonsgegevens en persona&#39;s](../../platform/using/privacy-and-recommendations.md#personal-data)
 * [Toegangsrecht en recht om te worden vergeten](../../platform/using/privacy-management.md#right-access-forgotten)
 * [Toestemming, retentie en rollen](../../platform/using/privacy-management.md#consent-retention-roles)
