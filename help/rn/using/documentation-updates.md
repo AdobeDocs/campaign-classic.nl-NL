@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
 source-wordcount: '4466'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -21,19 +21,19 @@ Raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/us
 
 ## Juni 2021 {#june-2021}
 
-De sectie **Transactioneel Overseinen** is gereorganiseerd en met een nieuwe Get begonnen sectie, met inbegrip van een [verbeterd schema](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) voor een beter inzicht in het proces verduidelijkt. [Meer informatie](../../message-center/using/about-transactional-messaging.md)
+De sectie **Transactional Messaging** is gereorganiseerd en verduidelijkt met een nieuwe sectie Aan de slag, met inbegrip van een [verbeterd schema](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) voor een beter inzicht in het proces. [Meer informatie](../../message-center/using/about-transactional-messaging.md)
 
 **Documentatie-updates die bij de 21.1.3-release worden geleverd**
 
-Integratie met Adobe Journey Orchestration - [Meer informatie](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html). Er wordt een stapsgewijs gebruiksgeval weergegeven op [deze pagina](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html)
+Integratie met Adobe Journey Orchestration - [Meer informatie](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=nl). Een stapsgewijs gebruiksscenario wordt weergegeven op [deze pagina](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html?lang=nl)
 
-Verbeteringen voor lijnkanalen - [Meer informatie](../../delivery/using/line-channel.md)
+Verbeteringen voor lijnkanaal - [Meer informatie](../../delivery/using/line-channel.md)
 
 Nieuwe Vertica FDA-connector - [Meer informatie](../../installation/using/configure-fda-vertica.md)
 
 Nieuwe Google Big Query FDA-connector - [Meer informatie](../../installation/using/configure-fda-google-big-query.md)
 
-De technische werkstroombeschrijving &quot;Facturering (facturering)&quot; bevat nu de taken die oorspronkelijk zijn uitgevoerd door het &quot;Aantal actieve factureringsprofielen (billingActiveContactCount)&quot;. [Meer informatie](../../workflow/using/about-technical-workflows.md)
+De technische workflowbeschrijving &quot;Facturering (facturering)&quot; bevat nu de taken die oorspronkelijk werden uitgevoerd door het &quot;Aantal actieve factureringsprofielen (billingActiveContactCount)&quot;. [Meer informatie](../../workflow/using/about-technical-workflows.md)
 
 ## Mei 2021 {#may-2021}
 
@@ -187,7 +187,7 @@ De sectie voor geavanceerde rapportagemogelijkheden in Campaign is verbeterd met
 
 De pagina met rapporteigenschappen is opnieuw ingedeeld en verrijkt om de configuratie te vergemakkelijken. [Meer informatie](../../reporting/using/properties-of-the-report.md)
 
-Er is een nieuwe technische notitie geschreven met details over de migratie van het oude binaire protocol naar de op HTTP/2 gebaseerde APNs-provider-API. [Meer informatie](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
+Er is een nieuwe technische notitie geschreven met details over de migratie van het oude binaire protocol naar de op HTTP/2 gebaseerde APNs-provider-API. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/migrate-to-apns-http2.html)
 
 ## September 2020 {#september-2020}
 
@@ -468,7 +468,7 @@ De handleiding om aan de slag te gaan met de AVG is verbeterd en verrijkt. Het i
 
 Er is een nieuwe pagina voor probleemoplossing toegevoegd voor tracking in Campaign Classic. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/classic-tracking-troubleshooting.html).
 
-Er is een nieuwe pagina met best practices voor Adobe Analytics Connector toegevoegd. [Meer informatie over Adobe Analytics Connector](../../platform/using/adobe-analytics-connector.md)
+Er is een nieuwe pagina toegevoegd met best practices voor de Adobe Analytics-connector. [Meer informatie over de Adobe Analytics-connector](../../platform/using/adobe-analytics-connector.md)
 
 De handleiding om aan de slag te gaan met best practices voor levering is verplaatst en bijgewerkt. [Meer informatie](../../delivery/using/delivery-best-practices.md)
 
@@ -546,7 +546,7 @@ Er zijn twee nieuwe opties toegevoegd aan de lijst met Campaign-opties: XtkSecur
 Er is informatie toegevoegd over de verschillende externe accounts die beschikbaar zijn in Campaign Classic en hoe u deze kunt configureren.
 [Meer informatie](../../installation/using/external-accounts.md)
 
-Bijgewerkte sectie van de Schakelaar van Analytics om interfaceveranderingen te weerspiegelen.
+De sectie over de Analytics-connector is bijgewerkt met interfacewijzigingen.
 [Meer informatie](../../platform/using/adobe-analytics-connector.md)
 
 Er is informatie toegevoegd over het factureringsrapport.
