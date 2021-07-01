@@ -6,9 +6,9 @@ feature: Overzicht
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 8a0535180640c63201d1a59539eac8c91a53cb8b
 workflow-type: tm+mt
-source-wordcount: '4466'
+source-wordcount: '4456'
 ht-degree: 99%
 
 ---
@@ -462,7 +462,7 @@ De handleiding om aan de slag te gaan met best practices voor levering is bijgew
 
 ## Oktober 2019 {#october-2019}
 
-De lijst met foutberichten voor Campaign is bijgewerkt. [Meer informatie](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
+De lijst met foutberichten voor Campaign is bijgewerkt. [Meer informatie](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
 De handleiding om aan de slag te gaan met de AVG is verbeterd en verrijkt. Het is nu een documentatie over privacybeheer, waaronder AVG en CCPA. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/campaign-privacy.html)
 
@@ -516,7 +516,7 @@ De beschrijving van de optie van de workflow voor voorverwerking is bijgewerkt o
 
 De technische opmerking over Marketing Cloud-triggers is bijgewerkt. [Meer informatie](../../integrations/using/about-triggers.md)
 
-De lijst met foutberichten is bijgewerkt. [Meer informatie](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
+De lijst met foutberichten is bijgewerkt. [Meer informatie](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
 Er is meer informatie over SOAP-verificatiemethoden voor transactionele berichten toegevoegd. [Meer informatie](../../message-center/using/event-description.md)
 
