@@ -6,14 +6,14 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 939552f127207f258448b2a82bb8c4c000371694
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 1%
+source-wordcount: '612'
+ht-degree: 0%
 
 ---
 
-# Bestands- en resourcebeheer{#file-and-resmanagement}
+# Bestands- en bronbeheer{#file-and-resmanagement}
 
 ## Bestandsindeling voor uploaden beperken {#limiting-uploadable-files}
 
@@ -103,9 +103,22 @@ Als u interne verbindingen hebt die door de volmacht zouden moeten gaan, voeg he
 
 Als u de proxyverbinding tijdelijk wilt uitschakelen, stelt u de ingeschakelde parameter in op &quot;false&quot; of &quot;0&quot;.
 
-## Overheidsbronnen beheren {#managing-public-resources}
+Als u de iOS HTTP/2-connector via een proxy moet gebruiken, worden de volgende HTTP-proxymodi ondersteund:
 
-Om voor het publiek toegankelijk te zijn, moeten de beelden die in e-mail en openbare middelen verbonden aan campagnes worden gebruikt op een extern toegankelijke server aanwezig zijn. Ze kunnen vervolgens beschikbaar zijn voor externe ontvangers of operatoren. [Meer informatie](../../installation/using/deploying-an-instance.md#managing-public-resources).
+* HTTP zonder verificatie
+* HTTP-basisverificatie
+
+U kunt de proxymodus alleen activeren als het bestand `serverconf.xml` de volgende wijziging bevat:
+
+```
+<nmac useHTTPProxy="true">
+```
+
+Raadpleeg deze [pagina](../../delivery/using/about-mobile-app-channel.md) voor meer informatie over deze iOS HTTP/2-connector.
+
+## Overheidsmiddelen beheren {#managing-public-resources}
+
+Om voor het publiek toegankelijk te zijn, moeten de beelden die in e-mail en openbare middelen verbonden aan campagnes worden gebruikt op een extern toegankelijke server aanwezig zijn. Ze kunnen vervolgens beschikbaar zijn voor externe ontvangers of operatoren. [Meer info](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
 Openbare bronnen worden opgeslagen in de map **/var/res/instance** van de installatiemap van Adobe Campaign.
 
