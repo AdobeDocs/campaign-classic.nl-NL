@@ -3,10 +3,10 @@ product: campaign
 title: Opgegeven rechten gebruiken om machtigingen in te stellen
 description: Leer hoe u benoemde rechten kunt gebruiken om machtigingen in te stellen
 feature: Toegangsbeheer
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 6%
@@ -65,7 +65,7 @@ Deze rechten zijn als volgt:
 >
 >Deze lijst kan verschillen, afhankelijk van de invoegtoepassingen die op het platform zijn geïnstalleerd.
 
-## Matrix met toegangsrechten {#access-rights-matrix}
+## Matrix toegangsrechten {#access-rights-matrix}
 
 Met standaardgroepen en benoemde rechten hebben operatoren toegang tot bepaalde mappen in de navigatiehiërarchie en kunnen ze lees-, schrijf- en verwijdermachtigingen verlenen.
 
