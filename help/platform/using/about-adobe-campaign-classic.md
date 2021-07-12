@@ -3,10 +3,10 @@ product: campaign
 title: Adobe Campaign Classic
 description: Leer meer over belangrijke functies, de gebruikersinterface en algemene richtlijnen.
 feature: Overzicht
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 95%
