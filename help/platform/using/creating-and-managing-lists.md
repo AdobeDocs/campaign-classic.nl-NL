@@ -3,10 +3,10 @@ product: campaign
 title: Lijsten maken en beheren
 description: Leer lijsten maken en beheren
 feature: Profielen
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 9%
@@ -35,7 +35,7 @@ Er zijn twee typen lijsten beschikbaar in Adobe Campaign:
 
 ![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](#create-list-video)
 
-## Een profiellijst maken op basis van een groep {#creating-a-profile-list-from-a-group}
+## Een profiellijst maken van een groep {#creating-a-profile-list-from-a-group}
 
 **[!UICONTROL Group]** typelijsten die via de  **[!UICONTROL Profiles and targets]** koppeling worden gemaakt, moeten zijn gebaseerd op de standaard Adobe Campaign-profieltabel (nms:ontvanger).
 
@@ -104,7 +104,7 @@ U kunt de lijst ook bewerken via de homepage van Adobe Campaign: Klik op het men
 
 ![](assets/s_ncs_user_add_selection_to_group_5.png)
 
-## Een profiel verwijderen uit een lijst {#removing-a-profile-from-a-list}
+## Een profiel uit een lijst verwijderen {#removing-a-profile-from-a-list}
 
 Als u een profiel uit een lijst wilt verwijderen, kunt u:
 
@@ -116,7 +116,7 @@ Als u een profiel uit een lijst wilt verwijderen, kunt u:
 
    ![](assets/recipient_remove_a_list.png)
 
-## Een lijst met profielen {#deleting-a-list-of-profiles} verwijderen
+## Een lijst met profielen verwijderen {#deleting-a-list-of-profiles}
 
 U kunt een of meer lijsten verwijderen uit de lijst met groepen in de Adobe Campaign-structuur. Om dit te doen, geef de boom via de **[!UICONTROL Advanced > Explorer]** verbinding in de homepage van Adobe Campaign uit. Selecteer de desbetreffende groep(en) en klik met de rechtermuisknop. Selecteer **[!UICONTROL Delete]**. U wordt in een waarschuwingsbericht gevraagd de verwijdering te bevestigen.
 
@@ -134,7 +134,7 @@ Leer hoe te om een publiek tot stand te brengen door een lijst van ontvangers va
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-### Hoe gebruik een werkschema om een lijst van ontvangers {#create-list-in-a-wf-video} tot stand te brengen
+### Een workflow gebruiken om een lijst met ontvangers te maken {#create-list-in-a-wf-video}
 
 Leer hoe u een workflow maakt om ontvangers als doel in te stellen en hoe u deze terugkeert voordat u de lijst in een e-maildoel gebruikt.
 
