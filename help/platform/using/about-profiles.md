@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Profielen
-description: Profielen
+title: Over profielen
+description: Over profielen
 feature: Profielen, doelgroepen
-role: Business Practitioner, Data Architect
+role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '899'
-ht-degree: 12%
+ht-degree: 14%
 
 ---
 
@@ -31,7 +31,7 @@ Elk profiel komt overeen met een database-item. Zij bevatten alle informatie die
 
 Profielen kunnen worden geïdentificeerd op basis van opslagruimte. Dit betekent dat een profiel kan overeenkomen met: een ontvanger, een bezoeker, een exploitant, een abonnee, een vooruitzicht, enz.
 
-## Ontvangersprofielen {#recipient-profiles}
+## Ontvangerprofielen {#recipient-profiles}
 
 Ontvangers van de levering worden in de database opgeslagen als profielen die de aan hen gekoppelde informatie bevatten: achternaam, voornaam, adres, abonnementen, leveringen, enz. Wanneer u campagnes creeert, kunt u het doel van de leveringen aan een selectie van de profielen in de basis volgens eenvoudige of geavanceerde criteria bepalen.
 
