@@ -3,10 +3,10 @@ product: campaign
 title: Aan de slag met campagneoperatoren
 description: Meer informatie over het maken en beheren van campagnegebruikers
 feature: Toegangsbeheer
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Operatoren maken en beheren {#operators}
 
-## Aan de slag met campagneoperatoren {#about-operators}
+## Aan de slag met campagneoperatoren  {#about-operators}
 
 Een operator is een Adobe Campaign-gebruiker die gemachtigd is om zich aan te melden en handelingen uit te voeren.
 
@@ -35,7 +35,7 @@ Raadpleeg [deze pagina](../../installation/using/connecting-through-ldap.md) voo
 
 Gebruikers kunnen ook rechtstreeks verbinding maken met Adobe Campaign via hun Adobe ID. Raadpleeg [deze pagina](../../integrations/using/about-adobe-id.md) voor meer informatie.
 
-## Een operator {#creating-an-operator} maken
+## Een operator maken {#creating-an-operator}
 
 Voer de volgende stappen uit om een nieuwe operator te maken en machtigingen te verlenen:
 
@@ -75,7 +75,7 @@ Nadat het profiel van de operator is gemaakt, kunt u de gegevens ervan toevoegen
 >
 >Met het veld **[!UICONTROL Session timeout]** kunt u de vertraging vóór de FDA-sessietime-out aanpassen. Raadpleeg [Informatie over Federated Data Access](../../installation/using/about-fda.md) voor meer informatie.
 
-## De tijdzone van de operator {#time-zone-of-the-operator} definiëren
+## De tijdzone van de operator definiëren {#time-zone-of-the-operator}
 
 Op het tabblad **[!UICONTROL General]** kunt u de tijdzone van de operator selecteren. Operatoren werken standaard in de tijdzone van de server. Het is echter mogelijk een andere tijdzone te selecteren met de vervolgkeuzelijst.
 
@@ -125,7 +125,7 @@ Met de koppeling **[!UICONTROL Edit the access parameters...]** hebt u toegang t
    >
    >Dit is een zeer strenge beperking en het moet met voorzichtigheid worden gebruikt. Een exploitant die met dit type van rechten het programma wordt geopend kan slechts de inhoud van de gespecificeerde omslag zien, en heeft geen toegang tot een andere knoop van de boom via de ontdekkingsreiziger. Afhankelijk van de functies waartoe hij toegang heeft (bijvoorbeeld: werkstromen), kan hij gegevens tonen die gewoonlijk in knopen worden opgeslagen die hij niet kan zien.
 
-### Instellingen {#check-settings} controleren
+### Instellingen controleren {#check-settings}
 
 Op het tabblad **[!UICONTROL Audit]** kunt u informatie met betrekking tot de operator weergeven. De verschillende tabbladen worden automatisch toegevoegd op basis van de instellingen die zijn gedefinieerd in het interventiegebied van de operator.
 
