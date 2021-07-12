@@ -3,10 +3,10 @@ product: campaign
 title: Aan de slag met machtigingen
 description: Leer hoe u toegang kunt verlenen tot campagnecapaciteiten
 feature: Toegangsbeheer
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 5%
