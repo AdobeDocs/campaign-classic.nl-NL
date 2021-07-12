@@ -3,12 +3,12 @@ product: campaign
 title: Opmerkingen bij de release van campagne 18.10
 description: Opmerkingen bij de release voor campagne 18.10
 feature: Overzicht
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2370'
 ht-degree: 7%
 
 ---
@@ -138,7 +138,7 @@ ht-degree: 7%
 
 * Oplossing voor een beveiligingsprobleem dat tot kwetsbaarheden voor SSRF-aanvallen (Server Side Request Modiery) en DoS-aanvallen (Denial of Service) zou kunnen leiden. (NEO-11453)
 * Inhoud (doorsturen, spiegelen, enquêtes, enz.) Wordt nu aangeboden door Campagne met de X-Robots-Tag: nocache header. Zo voorkomt u dat deze inhoud wordt geïndexeerd door internetzoekprogramma&#39;s. (NEO-11101)
-* Probleem met XTK-injectie verholpen in de API voor abonnementen (nms:subscription:Unsubscribe en nms:subscription:Subscribe).
+* Probleem met XTK-injectie verholpen in abonnement-API (nms:subscription:Abonnement opzeggen en nms:subscription:Abonneren).
 * Probleem met XTK-injectie verholpen in de webtoepassing zonder abonnement.
 * Verwijderde wachtwoorden die onveilig in sommige logboeken van SMS werden getoond.
 
