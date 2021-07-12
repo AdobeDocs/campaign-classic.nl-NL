@@ -3,10 +3,10 @@ product: campaign
 title: Toegang tot campagnemappen beheren
 description: Leer hoe u toegang kunt verlenen tot campagnemappen en weergaven kunt maken
 feature: Applicatie-instellingen
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Elke omslag van de boomstructuur van de Ontdekkingsreiziger heeft gelezen, schri
 
 ## Mappen en weergaven {#folders-and-views}
 
-### Wat is een map {#about-folders}
+### Wat is een map? {#about-folders}
 
 Mappen zijn knooppunten in Adobe Campaign-structuur. Deze knooppunten worden gemaakt door met de rechtermuisknop op de structuur te klikken via het menu **[!UICONTROL Add new folder]**. Standaard kunt u in het eerste menu de map toevoegen die overeenkomt met de huidige context.
 
@@ -78,7 +78,7 @@ De volgende leveringen worden weergegeven in de weergave:
 
 ## Machtigingen voor een map
 
-### Machtigingen bewerken voor een map {#edit-permissions-on-a-folder}
+### Machtigingen bewerken in een map {#edit-permissions-on-a-folder}
 
 Voer de volgende stappen uit als u machtigingen voor een specifieke map in de structuur wilt bewerken:
 
@@ -104,7 +104,7 @@ Als u machtigingen wilt wijzigen, kunt u:
 
    ![](assets/s_ncs_user_folder_properties_security03.png)
 
-### Machtigingen {#propagate-permissions} doorgeven
+### Machtigingen voor doorgeven {#propagate-permissions}
 
 U kunt machtigingen en toegangsrechten doorgeven. Selecteer hiertoe de optie **[!UICONTROL Propagate]** in de mapeigenschappen.
 
@@ -114,7 +114,7 @@ De in dit venster gedefinieerde autorisaties worden vervolgens toegepast op alle
 >
 >Als u deze optie voor een map wist, wordt deze niet automatisch gewist voor de submappen. U moet dit expliciet wissen voor elk van de submappen.
 
-### Toegang verlenen aan alle operatoren {#grant-access-to-all-operators}
+### Toegang verlenen aan alle marktdeelnemers {#grant-access-to-all-operators}
 
 Als op het tabblad **[!UICONTROL Security]** de optie **[!UICONTROL System folder]** is geselecteerd, hebben alle operatoren toegang tot deze gegevens, ongeacht hun rechten. Als deze optie wordt ontruimd, moet u de exploitant (of hun groep) aan de lijst van toestemmingen uitdrukkelijk toevoegen om hen toegang te hebben.
 
