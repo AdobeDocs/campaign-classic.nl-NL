@@ -6,9 +6,9 @@ feature: Overzicht
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: c5e1b10b82c8ea1cf8bcb617ee48fe13e16fbfd9
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1066'
 ht-degree: 95%
 
 ---
@@ -24,19 +24,19 @@ _14 april 2021_
 De build 9032@d030c36 bevat de volgende oplossing:
 
 * Er is een probleem met een regressie van de clientconsole opgelost die tot permanente foutberichten op het IMS-verbindingsscherm leidde. (NEO-34821)
+* Deze console-build is vereist om [IMS-toegang](../../technotes/ims-updates.md) te behouden.
 
 **Alleen de console-upgrade is verplicht. Er is geen serverupgrade vereist.**
 
 >[!CAUTION]
 >
-> * Als u verbinding maakt met Campagne met uw Adobe ID, via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **30 juni 2021**. [Meer informatie](../../technotes/ims-updates.md)
+> * Als u verbinding maakt met Campagne met uw Adobe ID, via Adobe Identity Management Service (IMS), is een upgrade verplicht voor zowel de campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **30 juni 2021**. [Meer informatie](../../technotes/ims-updates.md)
 > * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
 > * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overstappen op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde oAuth-verificatiemodus voor Campaign wordt op **30 november 2021** buiten gebruik gesteld.
 
 >
 >
 Meer informatie vindt u in de veelgestelde vragen over de [[!DNL Gold Standard] 11-upgrade](https://helpx.adobe.com/nl/campaign/kb/gold-standard-upgrade.html)
-
 
 _2 maart 2021_
 
