@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Adobe Campaign Classic-documentatie-updates
+title: Updates documentatie Adobe Campaign Classic
 description: Deze pagina bevat een overzicht van alle nieuwe functies en updates in de documentatie van Adobe Campaign Classic
 feature: Overzicht
 role: User
@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '4456'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -408,7 +408,7 @@ De handleiding over rapportage is bijgewerkt en opnieuw geordend. [Meer informat
 
 Er is een voorbeeld toegevoegd over het gebruik van een instantievariabele in een workflow. [Meer informatie](../../workflow/using/javascript-scripts-and-templates.md)
 
-## december 2019 {#december-2019}
+## December 2019 {#december-2019}
 
 De optie WdbcOptions_TempDbName is toegevoegd aan de lijst met Campaign-opties. [Meer informatie](../../installation/using/configuring-campaign-options.md)
 
@@ -462,7 +462,7 @@ De handleiding om aan de slag te gaan met best practices voor levering is bijgew
 
 ## Oktober 2019 {#october-2019}
 
-De lijst met foutberichten voor Campaign is bijgewerkt. [Meer informatie](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+De lijst met foutberichten voor Campaign is bijgewerkt. [Meer informatie](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=nl)
 
 De handleiding om aan de slag te gaan met de AVG is verbeterd en verrijkt. Het is nu een documentatie over privacybeheer, waaronder AVG en CCPA. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/campaign-privacy.html)
 
