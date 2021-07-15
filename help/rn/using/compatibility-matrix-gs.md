@@ -9,13 +9,13 @@ exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # [!DNL Gold Standard] Compatibiliteitsmatrix{#compatibility-matrix-gs}
 
-Dit document bevat een lijst met alle systemen en onderdelen die worden ondersteund voor **Adobe Campaign Classic[!DNL Gold Standard]** 19.1-builds. Producten en versies die geen deel uitmaken van deze lijst, zijn niet compatibel met deze versie van Adobe Campaign.
+Dit document bevat een lijst met alle systemen en onderdelen die worden ondersteund voor **Adobe Campaign Classic[!DNL Gold Standard]** 19.1-builds. Producten en versies die niet in deze  lijst staan, zijn niet compatibel met deze versie van Adobe Campaign.
 
 ## Belangrijke opmerkingen{#important-notes-gs}
 
@@ -266,7 +266,7 @@ Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagi
 
 ## Clientconsole {#ClientConsoleoperatingsystems}
 
-:warning: De volgende besturingssystemen en browsers zijn vereist voor het gebruik van de Campagne Client Console.
+:warning: De volgende besturingssystemen en browser zijn vereist om de Campaign Client Console te gebruiken.
 
 ### Besturingssystemen
 
