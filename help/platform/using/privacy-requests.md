@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 source-git-commit: 0a80912aae4cab58b6f06918a673aaca3883fbdf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2415'
 ht-degree: 100%
 
 ---
 
-# Beheer van verzoeken om toegang tot persoonsgegevens {#privacy-requests}
+# Privacyverzoeken beheren {#privacy-requests}
 
 Raadpleeg [deze sectie](../../platform/using/privacy-management.md) voor een algemene uitleg van privacybeheer.
 
@@ -23,7 +23,7 @@ De opt-out voor de verkoop van persoonsgegevens, die specifiek is voor de CCPA, 
 
 <!--Installation procedures described in this document are applicable starting Campaign Classic 18.4 (build 8931+). If you are running on a previous version, refer to this [technote](https://helpx.adobe.com/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html).-->
 
-## Verzoeken om toegang tot persoonsgegevens {#about-privacy-requests}
+## Privacyverzoeken {#about-privacy-requests}
 
 Doordat u in Adobe Campaign verzoeken voor toegang en verwijdering kunt afhandelen, kunt u zich gemakkelijker houden aan de privacyregels. Het **toegangsrecht** en het **recht om te worden vergeten** (verwijderingsverzoek) worden in [deze sectie](../../platform/using/privacy-management.md#right-access-forgotten) beschreven.
 
@@ -75,7 +75,7 @@ Voordat u privacyverzoeken maakt, moet u de naamruimte definiëren die u wilt ge
 
 Drie naamruimten zijn standaard beschikbaar: e-mail, telefoon en mobiele telefoon. Als u een andere naamruimte nodig hebt (bijvoorbeeld een aangepast veld voor ontvangers), kunt u een nieuwe naamruimte maken via **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**.
 
-## Een verzoek om toegang tot persoonsgegevens maken {#create-privacy-request-ui}
+## Een privacyverzoek maken {#create-privacy-request-ui}
 
 In de **Adobe Campaign-interface** kunt u uw verzoeken om toegang tot persoonsgegevens maken en de ontwikkeling ervan volgen. Volg deze instructies om een nieuw verzoek om toegang tot persoonsgegevens te maken:
 
@@ -125,7 +125,7 @@ Als u aangepaste tabellen hebt gemaakt met een koppeling naar de ontvangsttabel 
 >* Adobe raadt u aan een ETL-workflow te maken waarmee de regels die u wilt verwijderen, worden toegevoegd aan de tabel Privacy Access en de **[!UICONTROL Delete privacy requests data]**-workflow de verwijdering te laten uitvoeren. We raden u aan om maximaal 200 profielen per dag te verwijderen voor optimale prestaties.
 
 
-### Status van verzoeken om toegang tot persoonsgegevens {#privacy-request-statuses}
+### Statussen van privacyverzoeken {#privacy-request-statuses}
 
 Dit zijn de verschillende statussen voor verzoeken om toegang tot persoonsgegevens:
 
@@ -209,7 +209,7 @@ Hier volgt een codefragment dat u als voorbeeld kunt gebruiken voor de **[!UICON
 
 Aangezien de toegang tot het gegevensbestand van de betrokkene beperkt is, moet anonieme toegang tot de webpagina worden uitgeschakeld. Alleen een operator met het opgegeven recht **[!UICONTROL Privacy Data Right]** kan zich aanmelden bij de pagina en de gegevens downloaden.
 
-## Automatisch proces voor verzoeken om toegang tot persoonsgegevens {#automatic-privacy-request-api}
+## Automatisch proces voor privacyverzoeken {#automatic-privacy-request-api}
 
 Adobe Campaign biedt een **API** waarmee u een automatisch proces voor verzoeken om toegang tot persoonsgegevens kunt instellen.
 
@@ -390,7 +390,7 @@ Dit werkt alleen als u de tabel met profielen uitbreidt en een veld **[!UICONTRO
 >
 >Het is uw verantwoordelijkheid als gegevenscontroller om het verzoek van de betrokkene te ontvangen en de verzoekdatums voor de CCPA bij te houden. Als technologieleverancier bieden wij alleen een methode voor opt-out. Raadpleeg [Persoonsgegevens en persona&#39;s](../../platform/using/privacy-and-recommendations.md#personal-data) voor meer informatie over uw rol als gegevenscontroller.
 
-### Vereiste {#ccpa-prerequisite}
+### Voorwaarde {#ccpa-prerequisite}
 
 Als u deze informatie wilt gebruiken, moet u dit veld in Adobe Campaign Classic maken. Hiervoor voegt u een booleaans veld toe aan de tabel **[!UICONTROL Recipient]**. Wanneer een nieuw veld wordt gemaakt, wordt dit automatisch ondersteund door de Campaign-API.
 
