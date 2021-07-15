@@ -13,11 +13,11 @@ ht-degree: 95%
 
 ---
 
-# Aanvullende informatie over [!DNL Gold Standard]{#gold-standard}
+# [!DNL Gold Standard] - aanvullende informatie{#gold-standard}
 
 Deze pagina bevat een lijst met [!DNL Gold Standard]-releases. U vindt meer informatie over Campaign [!DNL Gold Standard] [op deze pagina](gs-overview.md).
 
-## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] 11 release{#gs-11}
+## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] release 11{#gs-11}
 
 _14 april 2021_
 
@@ -85,7 +85,7 @@ Er is een probleem verholpen waarbij tracking niet werkte als de handtekeningfun
 >
 >Wij adviseren u de clientconsole bij te werken met de beschikbare console in deze release. Zie [deze pagina](../../installation/using/installing-the-client-console.md)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 9 release{#gs-9}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] release 9{#gs-9}
 
 _22 juni 2020_
 
@@ -101,7 +101,7 @@ De volgende correcties betreffen het beveiligingsmechanisme voor koppelingen bij
 * Er is een probleem verholpen met de antiphishingservice. (NEO-25283)
 * Er is een probleem verholpen met tracking bij gebruik van specifieke aangepaste trackingformules. (NEO-25277)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 8 release{#gs-8}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] release 8{#gs-8}
 
 _29 april 2020_
 
@@ -126,7 +126,7 @@ De build 9032@3a9dc9c bevat de volgende oplossingen:
 * Oplossing voor een regressie die ertoe leidde dat de opschoningsworkflow vastliep.
 * Oplossing voor een kleine regressie in de logboeken van de opschoningsworkflow.
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 6 release{#gs-6}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] release 6{#gs-6}
 
 _9 maart 2020_
 
@@ -134,7 +134,7 @@ De build 9032@19f73c5 bevat de volgende oplossing:
 
 * Probleem met externe accounts met FTP via SSL opgelost. (NEO-20498)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 5 release{#gs-5}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] release 5{#gs-5}
 
 _17 december 2019_
 
@@ -142,7 +142,7 @@ De build 9032@d6b8062 bevat de volgende oplossing:
 
 * Er is een trackingprobleem verholpen op de volgende communicatiekanalen: mobiel (sms, mms), push (iOS, Android) en sociale netwerken (Facebook, Twitter). (NEO-19595)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 4 release{#gs-4}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] release 4{#gs-4}
 
 _11 december 2019_
 
@@ -150,7 +150,7 @@ De build 9032@bc4a935 bevat de volgende oplossing:
 
 * Er is een prestatieprobleem verholpen met het verzenden van berichten met een MSSQL-database. (NEO-17558)
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 3 release{#gs-3}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] release 3{#gs-3}
 
 _20 november 2019_
 
@@ -160,7 +160,7 @@ De build 9032@3468c7b bevat de volgende oplossingen:
 * Er is een probleem verholpen met het weergeven van cumulatieve rapporten over meerdere leveringen. (NEO-18165)
 * Er is een probleem verholpen waarbij de webserver geblokkeerd kon raken of vastlopen.
 
-## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 2 release{#gs-2}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] release 2{#gs-2}
 
 _19 september 2019_
 
@@ -169,7 +169,7 @@ De build 9032@cee805c bevat de volgende oplossingen:
 * Er is een probleem verholpen met het gebruik van de CRM-connector voor Salesforce. (NEO-17712)
 * Er is een indexprobleem verholpen dat prestatieproblemen kon veroorzaken bij het verzenden van transactieberichten.
 
-## ![](assets/do-not-localize/red_2.png) Release 19.1.4 - build 9032{#release-19-1-4-build-9032}
+## ![](assets/do-not-localize/red_2.png) Release 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
 _13 augustus 2019_
 
