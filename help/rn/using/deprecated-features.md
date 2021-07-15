@@ -9,11 +9,11 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1634'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Verouderde en verwijderde functies {#deprecated-and-removed-features}
+# Afgeschafte en verwijderde functies {#deprecated-and-removed-features}
 
 Adobe evalueert voortdurend de productmogelijkheden om oudere functies te identificeren die door modernere alternatieven zouden moeten worden vervangen om de algehele klantwaarde te verbeteren. Hierbij wordt altijd zorgvuldig rekening gehouden met achterwaartse compatibiliteit. Aangezien Adobe Campaign Classic met tools van derden werkt, wordt de compatibiliteit regelmatig bijgewerkt, zodat alleen ondersteunde versies kunnen worden geïmplementeerd. Versies die niet meer compatibel zijn met Adobe Campaign Classic, worden hieronder en in de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) vermeld.
 
@@ -43,7 +43,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
   </tr>
     <tr>
   <td>Adobe Analytics-gegevensconnector<br></td>
-   <td><p>Vanaf Campaign 21.1.3 is de Adobe Analytics-gegevensconnector afgeschaft.</p>
+   <td><p>Vanaf Campaign 21.1.3 is de Adobe Analytics Data Connector afgeschaft.</p>
    <p>Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../platform/using/adobe-analytics-connector.md">Meer informatie</a></p>
   <p><em>Doeldatum verwijdering: 1 maart 2022</em></p>
   </td>
@@ -130,7 +130,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
  </tbody> 
 </table>
 
-## Verouderde compatibiliteit {#deprecated-compatibility}
+## Afgeschafte compatibiliteit {#deprecated-compatibility}
 
 De volgende systemen zijn afgeschaft voor Campaign Classic. Raadpleeg de [compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) om een upgrade naar een nieuwere versie uit te voeren of naar een nieuw systeem over te schakelen voordat de compatibiliteit wordt beëindigd.
 
@@ -168,7 +168,7 @@ Vanaf release 19.1 is Adobe Campaign niet meer compatibel met de volgende bestur
 
 ### Webservers {#web-server-eol}
 
-Vanaf de lenterelease 19.1 is Adobe Campaign niet meer compatibel met de volgende webserver.
+Vanaf lenterelease 19.1 is Adobe Campaign niet meer compatibel met de volgende webserver.
 
 * Apache 2.2. [Meer informatie](https://httpd.apache.org/)
 * Microsoft IIS 7. [Meer informatie](https://support.microsoft.com/nl-nl/lifecycle/search/810)
