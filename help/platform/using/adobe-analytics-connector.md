@@ -10,11 +10,11 @@ exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1551'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Adobe Analytics-connector{#adobe-analytics-connector}
+# Adobe Analytics Connector{#adobe-analytics-connector}
 
 ## De integratie van Adobe Analytics Connector {#about-analytics-connector-integration}
 
@@ -25,7 +25,7 @@ Met Adobe Analytics Connector kunnen Adobe Campaign en Adobe Analytics communice
 >* Adobe Analytics Connector is niet compatibel met Transactional Messaging (Message Center).
    >
    >
-* Voordat u begint, moet u controleren of het Adobe Identity Management System (IMS) is geïmplementeerd in Campagne. [Meer informatie vindt u op deze pagina](../../integrations/using/about-adobe-id.md).
+* Voordat u begint, moet u controleren of het Adobe Identity Management System (IMS) is geïmplementeerd in Campaign. [Meer informatie vindt u op deze pagina](../../integrations/using/about-adobe-id.md).
 
 
 Met Adobe Analytics Connector kan Adobe Campaign de internetdoelgroep meten (Web Analytics). Dankzij deze integratie kan Adobe Campaign na een marketingcampagne gegevens over het gedrag van bezoekers van een of meer sites herstellen en (na analyse) remarketingcampagnes uitvoeren om deze in kopers om te zetten. Omgekeerd kan Adobe Campaign dankzij de webanalyticstools indicatoren en campagneattributen aan hun platforms doorsturen.
@@ -51,7 +51,7 @@ Als u de Data Connector wilt instellen, moet u verbinding maken met uw Adobe Cam
 1. [Conversievariabelen en succesgebeurtenissen configureren](#configure-conversion-success)
 1. [Uw externe account configureren in Adobe Campaign Classic](#external-account-classic)
 
-### Uw rapportsuite maken in Adobe Analytics {#report-suite-analytics}
+### Rapportsuite maken in Adobe Analytics {#report-suite-analytics}
 
 Als u de integratie tussen Adobe Analytics en Adobe Campaign Classic wilt instellen, moet u verbinding maken met uw [!DNL Adobe Analytics]-instantie en de volgende bewerkingen uitvoeren:
 
@@ -126,7 +126,7 @@ Nadat u uw **[!UICONTROL Report suite]** hebt gemaakt, moet u de **[!UICONTROL C
 
 Wanneer uw rapportsuite is geconfigureerd, zult u **[!UICONTROL External accounts]** in Adobe Campaign Classic moeten configureren.
 
-### Uw externe account configureren in Adobe Campaign Classic {#external-account-classic}
+### Externe account configureren in Adobe Campaign Classic {#external-account-classic}
 
 >[!IMPORTANT]
 >
