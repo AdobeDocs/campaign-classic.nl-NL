@@ -11,17 +11,17 @@ hide: true
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1682'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Adobe Analytics-gegevensconnector{#adobe-analytics-data-connector-legacy}
+# Adobe Analytics Data Connector{#adobe-analytics-data-connector-legacy}
 
 >[!IMPORTANT]
 >
 >Adobe Analytics-gegevensconnector is nu afgeschaft. Afgeschafte mogelijkheden zijn nog steeds beschikbaar, maar ze zullen niet verder worden verbeterd of ondersteund. Meer informatie vindt u [op deze pagina](../../rn/using/deprecated-features.md).
 
-## Data Connector-integratie {#about-data-connector-integration}
+## Integratie Data Connector {#about-data-connector-integration}
 
 >[!IMPORTANT]
 >
@@ -31,7 +31,7 @@ Data Connector (voorheen Adobe Genesis) maakt interactie tussen Adobe Campaign e
 
 Met Data Connector biedt Adobe Campaign een manier om de internetdoelgroep te meten (Web Analytics). Dankzij deze integratie kan Adobe Campaign na een marketingcampagne gegevens over het gedrag van bezoekers van een of meer sites herstellen en (na analyse) remarketingcampagnes uitvoeren om deze in kopers om te zetten. Omgekeerd kan Adobe Campaign dankzij de webanalyticstools indicatoren en campagneattributen aan hun platforms doorsturen.
 
-Raadpleeg de volgende [documentatie](https://helpx.adobe.com/nl/marketing-cloud/how-to/analytics-ac.html) voor meer informatie over de implementatie van de integratie van Adobe Analytics met Adobe Campaign.
+Raadpleeg de volgende [documentatie](https://helpx.adobe.com/marketing-cloud/how-to/analytics-ac.html?lang=nl) voor meer informatie over de implementatie van de integratie van Adobe Analytics met Adobe Campaign.
 
 De actievelden voor elke tool zijn als volgt:
 
@@ -68,7 +68,7 @@ In de volgende stappen wordt de configuratie van Data Connector beschreven met b
 
 1. Selecteer op het tabblad **[!UICONTROL Admin]** de optie **[!UICONTROL Data Connectors]**.
 
-   U hebt de volgende de Analytics-tooltoestemmingen nodig voor toegang tot het menu **[!UICONTROL Data Connectors]**. Raadpleeg deze [pagina](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html) voor meer informatie
+   U hebt de volgende de Analytics-tooltoestemmingen nodig voor toegang tot het menu **[!UICONTROL Data Connectors]**. Raadpleeg deze [pagina](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=nl) voor meer informatie
    * Integraties (maken)
    * Integraties (bijwerken)
    * Integraties (verwijderen)
