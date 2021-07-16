@@ -23,9 +23,8 @@ Met Adobe Analytics Connector kunnen Adobe Campaign en Adobe Analytics communice
 >[!CAUTION]
 >
 >* Adobe Analytics Connector is niet compatibel met Transactional Messaging (Message Center).
-   >
-   >
-* Voordat u begint, moet u controleren of het Adobe Identity Management System (IMS) is geïmplementeerd in Campaign. [Meer informatie vindt u op deze pagina](../../integrations/using/about-adobe-id.md).
+>
+>* Voordat u begint, moet u controleren of het Adobe Identity Management System (IMS) is geïmplementeerd in Campaign. [Meer informatie vindt u op deze pagina](../../integrations/using/about-adobe-id.md).
 
 
 Met Adobe Analytics Connector kan Adobe Campaign de internetdoelgroep meten (Web Analytics). Dankzij deze integratie kan Adobe Campaign na een marketingcampagne gegevens over het gedrag van bezoekers van een of meer sites herstellen en (na analyse) remarketingcampagnes uitvoeren om deze in kopers om te zetten. Omgekeerd kan Adobe Campaign dankzij de webanalyticstools indicatoren en campagneattributen aan hun platforms doorsturen.
