@@ -6,7 +6,7 @@ feature: Overzicht
 role: User
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 92ec5df08d188b6786158d85103ed858d34c6106
 workflow-type: tm+mt
 source-wordcount: '2968'
 ht-degree: 88%
@@ -15,7 +15,7 @@ ht-degree: 88%
 
 # Release 20.2{#release-20-2}
 
-## ![](assets/do-not-localize/green_2.png) Release 20.2.5 - build 9188 {#release-20-2-5-build-9188}
+## ![](assets/do-not-localize/limited_2.png) Release 20.2.5 - Build 9188 {#release-20-2-5-build-9188}
 
 _15 april 2021_
 
@@ -44,7 +44,7 @@ _31 maart 2021_
 * Probleem opgelost waarbij de factureringsworkflow mogelijk mislukte bij het gebruik van een aangepaste doeltoewijzing. De primaire sleutel van het aangepaste schema wordt opgeslagen in de kolom &quot;sourceId&quot;, die alleen gehele getallen toestaat. Het staat nu geheel zowel als koordwaarden toe. (NEO-25914, NEO-28146)
 * Er is een regressie opgelost die verhinderde dat bepaalde onderdelen van de console konden worden gebruikt, zoals de datumkiezer en afbeeldingsbeheer in verzendingen. (NEO-31453)
 
-## ![](assets/do-not-localize/red_2.png) Release 20.2.4 - build 9187 {#release-20-2-4-build-9187}
+## ![](assets/do-not-localize/red_2.png) Release 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
 
 _15 april 2021_
 
@@ -83,7 +83,7 @@ _22 december 2020_
 
 ![](assets/do-not-localize/cp-icon.png) **Release van nieuw Configuratiescherm in oktober** met domeinconfiguratie met CNAME-records en nieuwe mogelijkheden voor databasecontrole. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=nl).
 
-## ![](assets/do-not-localize/red_2.png) Release 20.2.3 - build 9182 {#release-20-2-3-build-9182}
+## ![](assets/do-not-localize/red_2.png) Release 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
 
 _11 september 2020_
 
@@ -96,7 +96,7 @@ _11 september 2020_
 * Oplossing voor een regressie tijdens een post-upgrade die een onjuiste start van nlserver (foutenlogboeken) veroorzaakte.
 * Het updatebeheer voor gedeeld geheugen is verbeterd. De extra stappen die zijn vereist in 20.2, zijn niet meer nodig.
 
-## ![](assets/do-not-localize/red_2.png) Release 20.2.2 - build 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/red_2.png) Release 20.2.2 - Build 9180 {#release-20-2-2-build-9180}
 
 _woensdag 22 juli 2020_
 
@@ -121,7 +121,7 @@ _woensdag 22 juli 2020_
 
 ![](assets/do-not-localize/cp-icon.png) **Release van nieuw configuratiescherm in juni** met controle van actieve profielen, controle van de leverbaarheid van subdomeinen en beheer van GPG-sleutels. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/red_2.png) Release 20.2.1 - build 9178 {#release-20-2-1-build-9178}
+## ![](assets/do-not-localize/red_2.png) Release 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
 
 _8 juni 2020_
 
