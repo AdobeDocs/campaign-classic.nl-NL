@@ -4,10 +4,10 @@ title: 'Help- en ondersteuningsopties voor Campaign Classic '
 description: Hebt u ondersteuning voor Campaign Classic nodig? U bent op de juiste plaats.
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 57%
+ht-degree: 58%
 
 ---
 
@@ -99,7 +99,7 @@ Met het Configuratiescherm kunt u de efficiëntie van uw werk als productbeheerd
 >
 >Het configuratiescherm is toegankelijk voor alle beheerders. De stappen om beheerderstoegang aan een gebruiker te verlenen worden gedetailleerd beschreven in [dit gedeelte](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
 >
->Merk op dat uw instantie op AWS moet worden gehost en moet worden geüpgraded met de nieuwste [Gold Standard](rn/using/gs-overview.md)-build of de [nieuwste GA-build (21.1)](rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>Merk op dat uw instantie op AWS moet worden gehost en moet worden geüpgraded met de nieuwste [Gold Standard](rn/using/gs-overview.md)-build of de [nieuwste GA-build (21.1.3)](rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
 ### Hoe kan ik het configuratiescherm openen?
 
@@ -116,7 +116,7 @@ In het configuratiescherm kunt u werken met alle SFTP-servers die verbonden zijn
 ### Subdomeinen en certificaten
 
 U kunt de subdomeinen en de bijbehorende certificaten controleren. Meer informatie vindt u op de volgende pagina&#39;s:
-* [Branding van subdomein](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html)
+* [Branding van subdomein](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html?lang=nl)
 * [Een nieuw subdomein instellen](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html)
 * [SSL-certificaten controleren](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html)
 
