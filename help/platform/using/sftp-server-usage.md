@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
 source-wordcount: '1156'
 ht-degree: 14%
@@ -45,7 +45,7 @@ Om dergelijke problemen te voorkomen, raadt Adobe aan de onderstaande beste prak
 >
 >Het configuratiescherm is toegankelijk voor alle gebruikers met beheerdersrechten. De stappen om toegang met beheerdersrechten aan een gebruiker te verlenen worden gedetailleerd beschreven op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
 >
->Merk op dat uw instantie moet worden geüpgraded met de nieuwste [Gold Standard](../../rn/using/gs-overview.md)-build of de [nieuwste GA-build (21.1)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>Merk op dat uw instantie moet worden geüpgraded met de nieuwste [Gold Standard](../../rn/using/gs-overview.md)-build of de [nieuwste GA-build (21.1.3)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 * De mogelijkheden voor servergrootte variëren afhankelijk van uw licentie. In elk geval moet u de minimale gegevens mogelijk houden en de gegevens slechts zo lang bewaren als nodig is (15 dagen is de maximale termijn).
 
