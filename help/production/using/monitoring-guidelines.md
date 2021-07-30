@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Bewakingsrichtlijnen
+title: Controlerichtlijnen
 description: Ontdek richtlijnen en beste praktijken om de instantie en processen van de Campagne te controleren.
 audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
-# Bewakingsrichtlijnen {#monitoring-guidelines}
+# Controlerichtlijnen {#monitoring-guidelines}
 
 ## Instance Monitoring dashboard {#instance-monitoring-dashboard}
 
@@ -36,7 +36,7 @@ Gedetailleerde informatie is [hier](../../production/using/monitoring-processes.
 
 Er zijn aanvullende manieren beschikbaar om de verschillende campagneprocessen te controleren. Zij verstrekken verscheidene manieren om uw instanties te controleren om ervoor te zorgen dat uw systeem gezond is en uiteindelijk problemen problemen op te lossen die zich kunnen voordoen wanneer vestiging werkschema&#39;s, verzendende leveringen, enz.
 
-### Uw instantie {#monitoring-instance} controleren
+### Uw exemplaar controleren {#monitoring-instance}
 
 <img src="assets/do-not-localize/icon_system.svg" width="60px">
 
@@ -50,13 +50,13 @@ Met het audittrail kunt u de volledige geschiedenis van wijzigingen met betrekki
 
 **Configuratiescherm**
 
-In het Configuratiescherm kunt u verschillende instellingen van uw exemplaar beheren: beheer URL toestemmingen, controleer uw instantiedetails zoals de bouwstijlversies van uw servers, enz. Hiermee kunt u ook de beschikbare ruimte op de SFTP-servers controleren die met uw instantie zijn verbonden. [Klik hier](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html) voor meer informatie.
+In het Configuratiescherm kunt u verschillende instellingen van uw exemplaar beheren: beheer URL toestemmingen, controleer uw instantiedetails zoals de bouwstijlversies van uw servers, enz. Hiermee kunt u ook de beschikbare ruimte op de SFTP-servers controleren die met uw instantie zijn verbonden. [Klik hier](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl) voor meer informatie.
 
 >[!NOTE]
 >
 >Het configuratiescherm is toegankelijk voor alle gebruikers met beheerdersrechten. De stappen om toegang met beheerdersrechten aan een gebruiker te verlenen worden gedetailleerd beschreven op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=nl#discover-control-panel).
 >
->Merk op dat uw instantie op AWS moet worden gehost en moet worden geüpgraded met de nieuwste [Gold Standard](../../rn/using/gs-overview.md)-build of de [nieuwste GA-build (21.1)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>Merk op dat uw instantie op AWS moet worden gehost en moet worden geüpgraded met de nieuwste [Gold Standard](../../rn/using/gs-overview.md)-build of de [nieuwste GA-build (21.1.3)](../../rn/using/latest-release.md). Leer hoe u uw versie kunt controleren in [dit gedeelte](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Controleer of uw versie wordt gehost op AWS door de volgende stappen te volgen op [deze pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
 ### Workflows controleren {#monitoring-workflows}
 
@@ -84,7 +84,7 @@ De volgende richtlijnen en beste praktijken wanneer het gebruiken van werkschema
 * [Tips en trucs bij het gebruik van workflows](../../workflow/using/workflow-best-practices.md)
 * [Workflowuitvoering controleren](../../workflow/using/monitoring-workflow-execution.md)
 
-### Leveringen controleren{#monitoring-deliveries}
+### Leveringen controleren {#monitoring-deliveries}
 
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
@@ -103,7 +103,7 @@ oplossen van problemen van de leveringSpecifieke acties kunnen worden uitgevoerd
 * [Leveringsprestaties](../../delivery/using/delivery-performances.md)
 * [Uitgave](../../production/using/temporary-files.md)  van tijdelijke bestanden - alleen  *op locatie voor hostingmodellen*
 
-### De database {#monitoring-database} controleren
+### Toezicht op de database {#monitoring-database}
 
 <img src="assets/do-not-localize/icon_database.svg" width="60px">
 
