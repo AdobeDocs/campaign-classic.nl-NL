@@ -6,22 +6,22 @@ feature: Overzicht
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: f2fae5954fbbab4b8a4f9444404316ff1576d5e4
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 100%
+source-wordcount: '1951'
+ht-degree: 99%
 
 ---
 
 # Laatste release{#latest-release}
 
-Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd met de **nieuwste versie van de Campaign Classic-releasekandidaat**.
+Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd bij de **nieuwste Campaign Classic Release**.
 
 >[!NOTE]
 >
->Campaign **General Availability (GA)-builds** zijn: de [[!DNL Gold Standard] 11-release](../../rn/using/gold-standard.md#gs-11) en de [Campaign 20.2.5-release](../../rn/using/release--20-2.md).
+>Campaign **General Availability (GA)-builds** zijn: de [[!DNL Gold Standard] 11-release](../../rn/using/gold-standard.md#gs-11) en de [Campaign 21.1.3-release](../../rn/using/latest-release.md#release-21-1-3-build-9330).
 
-## ![](assets/do-not-localize/blue_2.png) Release 21.1.3 - build 9330 {#release-21-1-3-build-9330}
+## ![](assets/do-not-localize/green_2.png) Release 21.1.3 - Build 9330 {#release-21-1-3-build-9330}
 
 _5 juni 2021_
 
@@ -158,14 +158,14 @@ Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](../..
 * Er is een probleem opgelost waarbij u geen levering kon verzenden met een groep proeven vanwege een specifiek samenvoegingsmechanisme dat de personalisatie van de levering niet kon uitvoeren. (NEO-14391)
 * Er is een probleem opgelost waarbij geen waarschuwing met de waarschuwingsactiviteit werd verzonden als een query en een verrijkingsactiviteit de leveringstabel als doel hadden. (NEO-25157)
 
-## ![](assets/do-not-localize/red_2.png) Release 21.1.2 - build 9282 {#release-21-1-2-build-9282}
+## ![](assets/do-not-localize/red_2.png) Release 21.1.2 - Build 9282 {#release-21-1-2-build-9282}
 
 _15 april 2021_
 
 * Wachtwoordbeheer is verbeterd om de beveiliging te optimaliseren.
 * Er is een probleem opgelost waarbij MTA soms vastliep.
 
-## ![](assets/do-not-localize/red_2.png) Release 21.1.1 - build 9277 {#release-21-1-1-build-9277}
+## ![](assets/do-not-localize/red_2.png) Release 21.1.1 - Build 9277 {#release-21-1-1-build-9277}
 
 _22 februari 2021_
 
