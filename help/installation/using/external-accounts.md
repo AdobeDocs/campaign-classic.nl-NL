@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 11de485a97d112b308c145775537d9b6255f124f
+source-git-commit: 94664ec56d269afef926663c52b84ccaaab02480
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 8%
+source-wordcount: '1636'
+ht-degree: 7%
 
 ---
 
@@ -93,7 +93,7 @@ De volgende kanalen kunnen worden gevormd:
 * [Android-kanaal](../../delivery/using/configuring-the-mobile-application-android.md)
 
 
-### Uitvoeringsinstantie {#execution-instance-external-account}
+### Uitvoeringsinstantie  {#execution-instance-external-account}
 
 Als u een opgesplitste architectuur hebt, moet u de uitvoeringsinstanties specificeren verbonden aan de controleinstantie en hen verbinden. Transactieberichtsjablonen worden geïmplementeerd in de uitvoeringsinstantie
 
@@ -288,19 +288,17 @@ Met de externe account **[!UICONTROL AEM (AEM instance)]** kunt u de inhoud van 
 
 Raadpleeg deze [sectie](../../integrations/using/about-adobe-experience-manager.md) voor meer informatie.
 
-
-
 ## Externe CRM-connectorrekeningen
 
 ### Microsoft Dynamics CRM {#microsoft-dynamics-crm-external-account}
 
+>[!NOTE]
+>
+> **[!UICONTROL On-premise]** en de  **[!UICONTROL Office 365]** plaatsingstypes zijn nu verouderd. [Meer info](../../rn/using/deprecated-features.md).
+
 Met de externe account **[!UICONTROL Microsoft Dynamics CRM]** kunt u Microsoft Dynamics-gegevens importeren en exporteren naar Adobe Campaign.
 
 Meer informatie over Campagne - de schakelaar van CRM van de Dynamica van Microsoft in deze [pagina](../../platform/using/crm-ms-dynamics.md).
-
->[!NOTE]
->
-> **[!UICONTROL On-premise]** en de  **[!UICONTROL Office 365]** plaatsingstypes zijn nu verouderd. [Meer informatie](../../rn/using/deprecated-features.md).
 
 Met **[!UICONTROL Web API]** plaatsingstype en **[!UICONTROL Password credentials]** authentificatie, moet u de volgende details verstrekken:
 
@@ -314,13 +312,15 @@ Met **[!UICONTROL Web API]** plaatsingstype en **[!UICONTROL Password credential
 
    URL van uw Microsoft CRM-server.
 
+   Als u uw Microsoft CRM **[!UICONTROL Server URL]** wilt zoeken, opent u uw Microsoft Dynamics CRM-account en klikt u op **Dynamics 365** en selecteert u uw app. U kunt uw **[!UICONTROL Server URL]** in de adresbar van uw browser dan vinden, b.v. `https://myserver.crm.dynamics.com/`.
+
 * **[!UICONTROL Client identifier]**
 
    Client-id die u kunt vinden op de Microsoft Azure-beheerportal in het veld **[!UICONTROL Update your code]**.**[!UICONTROL Client ID]**
 
 * **[!UICONTROL CRM version]**
 
-   Versie van de CRM tussen **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** of **[!UICONTROL Dynamics CRM 2016]**.
+   Kies **[!UICONTROL Dynamics CRM 365]** versie van CRM.
 
 Met **[!UICONTROL Web API]** plaatsingstype en **[!UICONTROL Certificate]** authentificatie, moet u de volgende details verstrekken:
 
@@ -330,9 +330,13 @@ Met **[!UICONTROL Web API]** plaatsingstype en **[!UICONTROL Certificate]** auth
 
    URL van uw Microsoft CRM-server.
 
+   Als u uw Microsoft CRM **[!UICONTROL Server URL]** wilt zoeken, opent u uw Microsoft Dynamics CRM-account en klikt u op **Dynamics 365** en selecteert u uw app. U kunt uw **[!UICONTROL Server URL]** in de adresbar van uw browser dan vinden, b.v. `https://myserver.crm.dynamics.com/`.
+
 * **[!UICONTROL Private Key (Base64 encoded)]**
 
-   Persoonlijke sleutel die aan Base64 wordt gecodeerd
+   Merk op dat de Privé sleutel aan Base64 moet worden gecodeerd.
+
+   Om dit te doen, kunt u de hulp van een Codeur gebruiken Base64 of de bevellijn `base64 -w0 private.key` voor Linux gebruiken.
 
 * **[!UICONTROL Custom Key identifier]**
 
@@ -348,7 +352,7 @@ Met **[!UICONTROL Web API]** plaatsingstype en **[!UICONTROL Certificate]** auth
 
 Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../platform/using/crm-connectors.md).
 
-### Salesforce.com CRM {#salesforce-crm-external-account}
+### Salesforce.com CRM  {#salesforce-crm-external-account}
 
 Met de externe account **[!UICONTROL Salesforce CRM]** kunt u Salesforce-gegevens importeren en exporteren naar Adobe Campaign.
 
