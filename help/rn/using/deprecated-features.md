@@ -6,10 +6,10 @@ feature: Overzicht
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 4420aab0067048d1fb47b184ede579235dcd9819
+source-git-commit: 9c73d13fe3d062ce69c948dba7d57dad573f6856
 workflow-type: tm+mt
-source-wordcount: '1649'
-ht-degree: 99%
+source-wordcount: '1646'
+ht-degree: 98%
 
 ---
 
@@ -240,6 +240,6 @@ De volgende CRM-connectors zijn vanaf Campagne 21.1 niet meer compatibel met Cam
 
 * Soap-API - On-premise: 2007, 2015, 2016
 * Soap-API - Online: 2015, 2016
-* Web-API – Microsoft Dynamics CRM on-premise: 2016, 2016 Update 1
-* Web-API – Microsoft Dynamics CRM online: 2016, 2016 Update 1
+* Web API - Microsoft Dynamics CRM 2016
+* Web API - Microsoft Dynamics CRM 2016 Update 1
 * Oracle On-demand-API
