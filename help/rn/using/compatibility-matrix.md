@@ -6,10 +6,10 @@ feature: Overzicht
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 571dd96d1f3bff5c3dab05dce5319f913f29a670
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 96%
+source-wordcount: '545'
+ht-degree: 99%
 
 ---
 
@@ -178,7 +178,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <tr>
 <td>Microsoft Dynamics-connector</td>
 <td>
-<p>Web-API: Dynamics 365 on-premise en online</p>
+<p>Web-API</p>
 </td>
 </tr>
 </tbody>
@@ -284,7 +284,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 
 ## Clientconsole {#ClientConsoleoperatingsystems}
 
-:warning: De volgende besturingssystemen en browsers zijn vereist voor het gebruik van de Campagne Client Console.
+:warning: De volgende besturingssystemen en browser zijn vereist om de Campaign Client Console te gebruiken.
 
 ### Besturingssystemen
 
