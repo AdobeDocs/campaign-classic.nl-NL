@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 9fb5b1a256a7c77e64a449aea9a4489de1f9123a
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '1049'
 ht-degree: 1%
 
 ---
@@ -17,13 +17,9 @@ ht-degree: 1%
 
 In deze pagina, zult u leren hoe te om Campaign Classic met **de Dynamica CRM 365** van Microsoft te verbinden.
 
-Mogelijke implementaties zijn:
+De mogelijke plaatsing is via **Web API** (geadviseerd). Verwijs naar [de sectie onder](#microsoft-dynamics-implementation-step) om stappen te leren aan opstelling de verbinding met de Dynamica van Microsoft.
 
-* via **Web API** (aanbevolen). Verwijs naar [de sectie onder](#microsoft-dynamics-implementation-step) om stappen te leren aan opstelling de verbinding met de Dynamica van Microsoft.
-* met **Office 365**. Raadpleeg [deze video](#microsoft-dynamics-office-365) om belangrijke stappen te leren om deze integratie in te stellen.
-* voor een **On-premise** plaatsing, pas Bureau 365 belangrijkste stappen toe.
-
-Gegevenssynchronisatie wordt uitgevoerd via een specifieke werkstroomactiviteit. [Meer informatie](../../platform/using/crm-data-sync.md).
+Gegevenssynchronisatie wordt uitgevoerd via een specifieke werkstroomactiviteit. [Meer info](../../platform/using/crm-data-sync.md).
 
 ## Implementatiestappen{#microsoft-dynamics-implementation-steps}
 
@@ -52,15 +48,12 @@ In Campaign Classic:
 > * Plug-ins installeren die het gedrag van CRM kunnen wijzigen en compatibiliteitsproblemen met Adobe Campaign kunnen veroorzaken
 > * Meerdere opsommingen selecteren
 
->
 
-
-
-## Microsoft Dynamics CRM {#config-crm-microsoft} configureren
+## Microsoft Dynamics CRM configureren {#config-crm-microsoft}
 
 Als u het toegangstoken en de sleutels voor het instellen van de account wilt genereren, moet u zich aanmelden bij [Microsoft Azure Directory](https://portal.azure.com) met behulp van een **Global Administrator**-referenties. Voer vervolgens de hieronder beschreven stappen uit.
 
-### Client-id voor Microsoft Dynamics {#get-client-id-microsoft} ophalen
+### Client-id voor Microsoft Dynamics ophalen {#get-client-id-microsoft}
 
 Om identiteitskaart van de Cliënt te krijgen, moet u een App in Azure Actieve Folder registreren. Client ID is hetzelfde als Application ID.
 
@@ -73,7 +66,7 @@ Zodra u sparen, krijgt u **toepassings identiteitskaart** die het Herkenningstek
 
 Meer informatie vindt u op [deze pagina](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
 
-### Microsoft Dynamics Client Secret {#config-client-secret-microsoft} genereren
+### Microsoft Dynamics Client Secret genereren {#config-client-secret-microsoft}
 
 Het clientgeheim is de sleutel die uniek is voor de client-id. Volg onderstaande stappen om de id van de certificaatsleutel op te halen:
 
@@ -88,18 +81,43 @@ Het clientgeheim is de sleutel die uniek is voor de client-id. Volg onderstaande
    - openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout '<'private key name'>' -out '<'public certificate name'>
    ```
 
-1. Klik op de koppeling **manifest** om de **certificaatsleutel-id** en de **sleutel-id** op te halen.
+   >[!NOTE]
+   >
+   >U kunt het aantal dagen, hier `-days 365`, in de codesteekproef voor een langere periode van de certificaatgeldigheid veranderen.
 
-### Machtigingen {#config-permissions-microsoft} configureren
+1. U zult dan het in base64 moeten coderen. Om dit te doen, kunt u de hulp van een Codeur gebruiken Base64 of de bevellijn `base64 -w0 private.key` voor Linux gebruiken.
 
-U moet de **Vereiste toestemmingen** voor app vormen die werd gecreeerd.
+1. Klik op de **Manifest**-koppeling om de **Certificaat sleutelid (customKeyIdentifier)** en **Sleutel ID (keyId)** te krijgen.
+
+### Machtigingen configureren {#config-permissions-microsoft}
+
+**Stap 1**: Configureer de  **vereiste** machtigingen voor de app die is gemaakt.
 
 1. Navigeer naar **Azure Active Directory > App Registrations** en selecteer de toepassing die eerder is gemaakt.
 1. Klik op **Instellingen** linksboven.
 1. Klik op **Vereiste machtigingen** op **Toevoegen** en **Selecteer een API > Dynamische CRM online**.
-1. Klik vervolgens op **Select**, schakel **Access Dynamics 365 as organisation users** in en klik op **Select**.
+1. Klik **Selecteer**, schakel **Access Dynamics 365 in als gebruikers van de organisatie** en klik op **Select**.
+1. Selecteer vervolgens in uw app **Manifest** onder het menu **Beheren**.
 
-### Creeer een Gebruiker {#create-app-user-microsoft}
+1. Stel in de **Manifest**-editor de `allowPublicClient`-eigenschap in van `null` naar `true` en klik op **Save**.
+
+**Stap 2**: Toelating beheerder
+
+1. Navigeer naar **Azure Active Directory > Enterprise applications**.
+
+1. Selecteer de toepassing waaraan u admin toestemming voor de gehele huurder wilt verlenen.
+
+1. Selecteer **Machtigingen** onder **Beveiliging** in het menu van het linkerdeelvenster.
+
+1. Klik **Beheertoestemming verlenen**.
+
+Raadpleeg [Azure-documentatie](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal) voor meer informatie hierover.
+
+### Een App-gebruiker maken {#create-app-user-microsoft}
+
+>[!NOTE]
+>
+> Deze stap is optioneel met **[!UICONTROL Password credentials]**-verificatie.
 
 De gebruiker van de app is de gebruiker die de hierboven geregistreerde toepassing zal gebruiken. Alle wijzigingen die met de hierboven geregistreerde toepassing zijn aangebracht in Microsoft Dynamics worden doorgevoerd via deze gebruiker.
 
@@ -131,25 +149,25 @@ De gebruiker van de app is de gebruiker die de hierboven geregistreerde toepassi
 
 ## Campaign configureren {#configure-acc-for-microsoft}
 
-Om de Dynamiek 365 van Microsoft en Campagne te verbinden, moet u een specifieke Externe Rekening in Campagne creëren en vormen.
+>[!NOTE]
+>
+> Post de buitenbedrijfstelling van [RDS van Microsoft](https://docs.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/dn281891(v=crm.8)?redirectedfrom=MSDN#microsoft-dynamics-crm-2011-endpoint), de On-premise en Bureau 365 types van de plaatsingen van CRM zijn niet meer compatibel met Campagne. Adobe Campaign ondersteunt nu alleen Web API-implementatie voor de CRM-versie **Dynamic CRM 365**. [Meer info](../../rn/using/deprecated-features.md#crm-connectors).
+
+Om de Dynamiek 365 van Microsoft en Campagne te verbinden, moet u een specifieke **[!UICONTROL External Account]** in Campagne creëren en vormen.
 
 1. Ga naar **[!UICONTROL Administration > Platform > External accounts]**.
 
-1. Maak een nieuwe externe account en selecteer het type **[!UICONTROL Microsoft Dynamics CRM]** en de optie **[!UICONTROL Enable]**.
+1. Selecteer de externe account **[!UICONTROL Microsoft Dynamics CRM]**. Schakel de optie **[!UICONTROL Enabled]** in.
 
-1. Selecteer het implementatietype **[!UICONTROL Web API]**:
-
-   Adobe Campaign Classic steunt de Dynamica 365 REST interface met protocol OAuth voor authentificatie met **[!UICONTROL Certificate]** of **[!UICONTROL Password Credentials]**.
-
-   Gebruik de instellingen [die eerder zijn gedefinieerd](#get-client-id-microsoft) in Azure Directory om de externe account te configureren.
-
-   ![](assets/crm-ms-dynamics-ext-account.png)
+1. Vul de informatie in die wordt vereist om de Dynamica 365 van Microsoft en Campagne te verbinden.
 
    >[!NOTE]
    >
-   >De Externe rekeningsconfiguratie van CRM van de Dynamica van Microsoft is gedetailleerd [in deze sectie](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account).
+   >De Externe rekeningsconfiguratie van CRM van de Dynamica van Microsoft van CRM met elke **[!UICONTROL CRM O-Auth type]** is gedetailleerd [in deze sectie](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account).
 
-1. Klik op de koppeling **[!UICONTROL Microsoft CRM configuration wizard...]**: Adobe Campaign ontdekt automatisch de lijsten van het de gegevensmalplaatje van de Dynamica van Microsoft.
+   ![](assets/crm-ms-dynamics-ext-account.png)
+
+1. Klik op de koppeling **[!UICONTROL Microsoft CRM configuration wizard...]**. Adobe Campaign ontdekt automatisch de lijsten van het de gegevensmalplaatje van de Dynamica van Microsoft.
 
    ![](assets/crm_connectors_msdynamics_02.png)
 
@@ -174,13 +192,6 @@ Om de Dynamiek 365 van Microsoft en Campagne te verbinden, moet u een specifieke
    ![](assets/crm_connectors_msdynamics_06.png)
 
 Campagne en de Dynamica van Microsoft zijn nu verbonden. U kunt gegevenssynchronisatie tussen de twee systemen instellen. Meer informatie vindt u in de sectie [Gegevenssynchronisatie](../../platform/using/crm-data-sync.md).
-
-## Integratie van Microsoft Dynamics CRM Office 365{#microsoft-dynamics-office-365} configureren
-
-Bekijk deze video om te leren hoe u Dynamics 365 met Adobe Campaign Classic kunt integreren, in de context van een Office 365-implementatie.
-
->[!VIDEO](https://video.tv.adobe.com/v/23837?quality=12)
-
 
 ## Ondersteunde veldgegevenstypen {#ms-dyn-supported-types}
 
