@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 571dd96d1f3bff5c3dab05dce5319f913f29a670
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '701'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ Met verschillende opties kunt u de impact van een migratie meten en de mogelijke
 >
 >U moet de **-instantie:`<instanceame>`** optie gebruiken. We raden u niet aan de optie **-allinstances** te gebruiken.
 
-### -showCustomEntities and -showDeletteEntities options {#showcustomentities-and--showdeletedentities-options}
+### -showCustomEntities en -showDeletteEntities options {#showcustomentities-and--showdeletedentities-options}
 
 * Met de optie **-showCustomEntities** wordt de lijst met alle niet-standaardobjecten weergegeven:
 
@@ -156,14 +156,20 @@ De volgende expressies worden gezocht (hoofdlettergevoelig):
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
    <td> Fout<br /> </td> 
-   <td> Dit type fout leidt tot een migratiefout. Zie <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Raadpleeg <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Webtoepassingen</a>.<br /> als u foutlogbestanden van webtoepassingen met een overzicht-type krijgt (migratie vanuit v6.02). </td> 
+   <td> Dit type fout leidt tot een migratiefout. Zie <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Raadpleeg <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Campagne configureren</a>.<br /> als u foutlogboeken voor webtoepassingen met een overzicht krijgt (migratie vanaf v6.02). </td> 
+  </tr>
+  <tr> 
+   <td> crmDeploymentType="onpremise"<br /> </td> 
+   <td> PU-0007<br /> </td> 
+   <td> Fout<br /> </td> 
+   <td> Dit type implementatie wordt niet meer ondersteund. Office 365 en het On-premise type van de schakelaarplaatsing van Microsoft CRM zijn nu afgekeurd</a>. Als u wilt overschakelen op een Web API-implementatie, raadpleegt u <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webtoepassingen</a>.<br /> </td>
   </tr> 
  </tbody> 
 </table>
 
 Er wordt ook een coherentiecontrole van de database en het schema uitgevoerd.
 
-### Hersteloptie {#restoration-option}
+### Herstellen, optie {#restoration-option}
 
 Met deze optie kunt u objecten uit de doos herstellen als ze waren gewijzigd. Voor elk hersteld object wordt een back-up van de wijzigingen opgeslagen in de geselecteerde map:
 
@@ -175,6 +181,6 @@ nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<insta
 >
 >We raden u ten zeerste aan absolute mappaden te gebruiken en de structuur van de mappenstructuur te behouden. Bijvoorbeeld: backupFolder\nms\srcSchema\billing.xml.
 
-### Migratie {#resuming-migration} hervatten
+### Hervatten van migratie {#resuming-migration}
 
 Als u na een migratiemislukking opnieuw begint, hervat het van de zelfde plaats het werd tegengehouden.
