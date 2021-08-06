@@ -7,10 +7,10 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
-workflow-type: ht
-source-wordcount: '2518'
-ht-degree: 100%
+source-git-commit: a54a6f9b8afedf8a200b80b027f908163faebeaa
+workflow-type: tm+mt
+source-wordcount: '2525'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,6 @@ ht-degree: 100%
    + [Afgeschafte functies](rn/using/deprecated-features.md)
    + [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md)
    + [Technische opmerkingen](technotes/technote.md)
-   + [Veelgestelde vragen over Adobe Analytics Connector](technotes/aa-connector-migration.md)
    + [Update van iOS-certificaat](technotes/ios-certificate-update.md)
    + [Configuratie-updates voor Campaign](technotes/acc-config-updates.md)
    + [Bijgehouden URL&#39;s bijwerken](technotes/tracked-urls.md)
@@ -117,8 +116,10 @@ ht-degree: 100%
          + [Verbinding maken met Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Verbinding maken met Salesforce.com](platform/using/crm-sfdc.md)
          + [Gegevens synchroniseren met CRM](platform/using/crm-data-sync.md)
-      + [Adobe Analytics-connector](platform/using/adobe-analytics-connector.md)
-      + [Adobe Analytics-gegevensconnector](platform/using/adobe-analytics-data-connector-legacy.md)
+      + Adobe Analytics Connector{#analytics-connector}
+         + [Integratie van Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
+         + [Migreren naar Adobe Analytics Connector](technotes/aa-connector-migration.md)
+         + [Adobe Analytics-gegevensconnector](platform/using/adobe-analytics-data-connector-legacy.md)
    + [Help- en ondersteuningsopties](support.md)
 + Berichten maken en verzenden {#sending-messages}
    + [Aan de slag met berichten](delivery/using/communication-channels.md)
@@ -378,7 +379,7 @@ ht-degree: 100%
       + [Toegang tot [!DNL Assets] configureren](integrations/using/configuring-access-to-assets.md)
       + [Een gedeelde asset invoegen](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
-      + [ [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
+      + [Over [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [De integratie configureren](integrations/using/configuring-the-integration.md)
       + [Een [!DNL Experience Manager] -nieuwsbrief maken](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
@@ -663,7 +664,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Info [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
