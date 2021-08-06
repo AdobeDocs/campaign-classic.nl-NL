@@ -6,10 +6,10 @@ feature: Overzicht
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 8a14afd25b03cea38cbfc2277fc9e51cf08658db
+source-git-commit: c59529a0a4d72ecb795569591d62a68f030a0ac7
 workflow-type: tm+mt
-source-wordcount: '1959'
-ht-degree: 98%
+source-wordcount: '1951'
+ht-degree: 99%
 
 ---
 
@@ -115,7 +115,7 @@ Ontdek meer in de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility
 **Verouderde functies**
 
 * Vanaf Campaign 21.1 is de Adobe Analytics-gegevensconnector afgeschaft. Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen met de nieuwe connector Adobe Analytics Connector.
-Raadpleeg de [gedetailleerde documentatie](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/adobe-analytics-connector.html) voor meer informatie.
+Raadpleeg de [gedetailleerde documentatie](../../technotes/aa-connector-migration.md) voor meer informatie.
 * De ondersteuning voor Debian 8 is nu afgeschaft.
 * Na het afschaffen van Oracle CRM in 20.3 is het verbonden externe account uit de interface verwijderd.
 
