@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 9fb5b1a256a7c77e64a449aea9a4489de1f9123a
+source-git-commit: 7adde72f615e7c697fa2284235e180c29bc6d470
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1097'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Als u Microsoft Dynamics 365 wilt verbinden om te werken met Adobe Campaign via 
 
 In Microsoft Dynamics CRM:
 1. Client-id voor Microsoft Dynamics ophalen
-1. Microsoft Dynamics Client Secret genereren
+1. Sleutel-id voor certificaat en sleutel-id voor Microsoft Dynamics genereren
 1. Machtigingen configureren
 1. Een App-gebruiker maken
 1. De persoonlijke sleutel coderen
@@ -66,9 +66,9 @@ Zodra u sparen, krijgt u **toepassings identiteitskaart** die het Herkenningstek
 
 Meer informatie vindt u op [deze pagina](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
 
-### Microsoft Dynamics Client Secret genereren {#config-client-secret-microsoft}
+### Sleutel-id voor certificaat en sleutel-id voor Microsoft Dynamics genereren {#config-certificate-key-id}
 
-Het clientgeheim is de sleutel die uniek is voor de client-id. Volg onderstaande stappen om de id van de certificaatsleutel op te halen:
+Voer de volgende stappen uit om de **Certificaatsleutel-id (customKeyIdentifier)** en de **Sleutel-id (keyId)** op te halen:
 
 1. Navigeer naar **Azure Active Directory > App Registrations** en selecteer de toepassing die eerder is gemaakt.
 1. Klik op **Certificaten en Geheim**.
@@ -88,6 +88,8 @@ Het clientgeheim is de sleutel die uniek is voor de client-id. Volg onderstaande
 1. U zult dan het in base64 moeten coderen. Om dit te doen, kunt u de hulp van een Codeur gebruiken Base64 of de bevellijn `base64 -w0 private.key` voor Linux gebruiken.
 
 1. Klik op de **Manifest**-koppeling om de **Certificaat sleutelid (customKeyIdentifier)** en **Sleutel ID (keyId)** te krijgen.
+
+**Certificaat zeer belangrijke herkenningsteken (customKeyIdentifier)** en **Zeer belangrijke identiteitskaart (keyId)** zullen later worden vereist om uw externe rekening van CRM van de Dynamica van Microsoft te vormen gebruikend het Certificaat **[!UICONTROL CRM O-Auth type]**.
 
 ### Machtigingen configureren {#config-permissions-microsoft}
 
@@ -192,6 +194,10 @@ Om de Dynamiek 365 van Microsoft en Campagne te verbinden, moet u een specifieke
    ![](assets/crm_connectors_msdynamics_06.png)
 
 Campagne en de Dynamica van Microsoft zijn nu verbonden. U kunt gegevenssynchronisatie tussen de twee systemen instellen. Meer informatie vindt u in de sectie [Gegevenssynchronisatie](../../platform/using/crm-data-sync.md).
+
+>[!NOTE]
+>
+> U moet ervoor zorgen om aan de lijst van gewenste personen twee URLs toe te voegen: de server-URL en `login.microsoftonline.com` in de serverconfiguratie.
 
 ## Ondersteunde veldgegevenstypen {#ms-dyn-supported-types}
 
