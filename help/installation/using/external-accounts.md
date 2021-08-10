@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 94664ec56d269afef926663c52b84ccaaab02480
+source-git-commit: 7adde72f615e7c697fa2284235e180c29bc6d470
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 7%
@@ -92,7 +92,6 @@ De volgende kanalen kunnen worden gevormd:
 * [iOS-kanaal](../../delivery/using/configuring-the-mobile-application.md)
 * [Android-kanaal](../../delivery/using/configuring-the-mobile-application-android.md)
 
-
 ### Uitvoeringsinstantie  {#execution-instance-external-account}
 
 Als u een opgesplitste architectuur hebt, moet u de uitvoeringsinstanties specificeren verbonden aan de controleinstantie en hen verbinden. Transactieberichtsjablonen worden geïmplementeerd in de uitvoeringsinstantie
@@ -112,7 +111,6 @@ Als u een opgesplitste architectuur hebt, moet u de uitvoeringsinstanties specif
    Wachtwoord van de account zoals gedefinieerd in de map met operatoren.
 
 Voor meer informatie over deze configuratie, verwijs naar deze [pagina](../../message-center/using/configuring-instances.md#control-instance).
-
 
 ## Toegang tot externe systeemrekeningen
 
