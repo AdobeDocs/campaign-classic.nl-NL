@@ -4,7 +4,7 @@ title: Uw omgeving bijwerken om verbinding te maken met Adobe Campaign met IMS
 description: Campagne - IMS-updates
 hide: true
 hidefromtoc: true
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 8%
@@ -17,7 +17,7 @@ Op 30 juni worden 2021 wijzigingen aangebracht in de aanmeldmogelijkheden van [A
 
 ## Wat is er veranderd?
 
-Adobe Identity Management Service (IMS) biedt geen ondersteuning meer voor oude Internet Explorer-versies vanaf **30 juni 2021**. [Meer informatie](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
+Adobe Identity Management Service (IMS) biedt geen ondersteuning meer voor oude Internet Explorer-versies vanaf **30 juni 2021**. [Meer info](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
 Adobe wil de IMS-functionaliteit behouden voor alle klanten van 30 juni 2021. IMS maakt deel uit van het beveiligingskader dat gebruikers toestaat zich aan te melden bij de clientconsole, dus Adobe Campaign.
 
@@ -39,7 +39,7 @@ Als u al een upgrade hebt uitgevoerd maar een oude versie van Microsoft Internet
 
    * Gold Standard 11. [Meer informatie](../rn/using/gold-standard.md)
    * Release van campagne 21.1.3. [Meer informatie](../rn/using/latest-release.md)
-   * Release van campagne 20.2.4. [Meer informatie](../rn/using/release--20-2.md)
+   * Release van campagne 20.2.5. [Meer informatie](../rn/using/release--20-2.md)
    * Release van campagne 20.1.4. [Meer informatie](../rn/using/release--20-1.md)
    * Release van campagne 19.2.4. [Meer informatie](../rn/using/release--19-2.md)
    * Release van campagne 19.1.8. [Meer informatie](../rn/using/release--19-1.md)
