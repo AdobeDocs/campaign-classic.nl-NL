@@ -5,9 +5,9 @@ description: Leer hoe te om de pijpleiding te vormen
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: cf102a5e669ffe136e6ec2429343725ec6c3722e
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '915'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Voordat u deze configuratie start, moet u controleren of u deze configuratie geb
 
 * Minimaal een van de volgende Adobe Campaign-builds:
    * 19.1.8.9039
-   * 19.1.4.9032.GS.11
+   * 19.1.4.9032 - Gold Standard 11
    * 20.2.4.9187
    * 20.3.1.
 * Adobe Analytics Standard-versie
@@ -46,13 +46,13 @@ De authentificatie wordt vereist aangezien de pijpleiding in Adobe Experience Cl
 Het gebruikt een paar openbare en privé sleutels. Dit proces heeft dezelfde functie als een gebruiker/wachtwoord, maar is veiliger.
 Verificatie wordt ondersteund voor de Marketing Cloud via Adobe I/O Project.
 
-## Stap 1: Adobe I/O-project {#creating-adobe-io-project} maken/bijwerken
+## Stap 1: Adobe I/O-project maken/bijwerken {#creating-adobe-io-project}
 
 Voor Gehoste klanten, kunt u een kaartje van de klantenzorg tot stand brengen om uw organisatie met de Tokens van de Technische Rekening van Adobe I/O voor de integratie van Triggers toe te laten.
 
 Raadpleeg voor klanten op locatie de pagina [Adobe I/O configureren voor Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md). Merk op dat u **[!UICONTROL Adobe Analytics]** moet selecteren terwijl het toevoegen van API aan de referentie van de Adobe I/O.
 
-## Stap 2: NmsPipeline_Config pijpleidingsoptie {#configuring-nmspipeline} configureren
+## Stap 2: De pijplijnoptie NmsPipeline_Config configureren {#configuring-nmspipeline}
 
 Zodra de authentificatie wordt geplaatst, zal de pijpleiding de gebeurtenissen terugwinnen. Het zal slechts trekkers verwerken die in Adobe Campaign worden gevormd. De trekker moet van Adobe Analytics zijn geproduceerd en aan de pijpleiding geduwd die slechts trekkers zal verwerken die in Adobe Campaign worden gevormd.
 De optie kan ook met een vervanging worden gevormd om alle trekkers ongeacht de naam te vangen.
@@ -110,7 +110,7 @@ De **Consumer** parameter identificeert de instantie als één van deze consumen
 
 De pijpleidingsdienst houdt spoor van de berichten die door elke consument worden teruggewonnen. Door verschillende consumenten voor verschillende instanties te gebruiken, kunt u ervoor zorgen dat elk bericht naar elke instantie wordt verzonden.
 
-### Aanbevelingen voor optie Pipet {#pipeline-option-recommendation}
+### Aanbevelingen voor de optie Pipet {#pipeline-option-recommendation}
 
 Om de optie van de Pijl te vormen, zou u deze aanbevelingen moeten volgen:
 
@@ -129,7 +129,7 @@ De lijst met optionele parameters is hieronder te vinden:
 
 | Option | Beschrijving |
 |:-:|:-:|
-| appName(Legacy) | AppID van de OAuth-toepassing die is geregistreerd in de Legacy Oath-toepassing waar de openbare sleutel is geüpload. Raadpleeg [deze pagina](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md.) voor meer informatie |
+| appName(Legacy) | AppID van de OAuth-toepassing die is geregistreerd in de Legacy Oath-toepassing waar de openbare sleutel is geüpload. Raadpleeg deze [pagina](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md.) voor meer informatie |
 | authGatewayEndpoint(Legacy) | URL om gatewaytokens te krijgen. Standaard: ```https://api.omniture.com``` |
 | authPrivateKey(Verouderd) | De persoonlijke sleutel, het openbare deel dat in de Oudere Oath-toepassing wordt geüpload, AES gecodeerd met de optie XtkKey: ```cryptString("PRIVATE_KEY")``` |
 | disableAuth(Legacy) | Schakel authentificatie uit, verbindend zonder gatewaytokens slechts door sommige eindpunten van de ontwikkelingsPijpleiding zal worden goedgekeurd. |
@@ -154,7 +154,7 @@ Voor dit, plaats het &lt; pijpleiding > element in het config dossier aan autost
  <pipelined autoStart="true" ... "/>
 ```
 
-### Start van pijplijnproces {#pipelined-process-restart}
+### Opnieuw opstarten van het pijlproces {#pipelined-process-restart}
 
 De wijzigingen worden pas van kracht als u de toepassing opnieuw start:
 
