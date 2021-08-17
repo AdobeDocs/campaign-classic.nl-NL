@@ -5,7 +5,7 @@ description: TechNote
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 037e56040bd63edfdfee5ab6bf73b45d3a138072
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 11%
@@ -29,7 +29,7 @@ Om veiligheidsredenen moet u nu een upgrade uitvoeren naar een van de onderstaan
 
 ## Beveiligingsupdates {#acc-security-updates}
 
-De recentste versies van de Campagne komen met een veiligheidsmoeilijke situatie die bescherming tegen de kwesties van het Verzoek van de Server van de Zijde (SSRF) versterkt. Meer informatie [op deze pagina](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html).
+De recentste versies van de Campagne komen met een veiligheidsmoeilijke situatie die bescherming tegen de kwesties van het Verzoek van de Server van de Zijde (SSRF) versterkt. Meer informatie vindt u [op deze pagina](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html).
 
 **Heeft dit gevolgen voor u?**
 
@@ -70,7 +70,7 @@ De **nu beschikbare** consoleversies hieronder zouden moeten worden geïnstallee
 
 ## Adobe Identity Management System (IMS)-update
 
-Adobe Identity Service (IMS) biedt geen ondersteuning meer voor oude Internet Explorer-versies vanaf **30 juni 2021**. [Meer informatie](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
+Adobe Identity Service (IMS) biedt geen ondersteuning meer voor oude Internet Explorer-versies vanaf **30 juni 2021**. [Meer info](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
 Een upgrade van de Campagne Client Console is vereist om compatibiliteit met Adobe IMS te garanderen.
 
@@ -80,7 +80,7 @@ Als u via een Adobe ID](../integrations/using/about-adobe-id.md) via Adobe Ident
 
 * Gold Standard 11. [Meer informatie](../rn/using/gold-standard.md)
 * Release van campagne 21.1.1. [Meer informatie](../rn/using/latest-release.md)
-* Release van campagne 20.2.4. [Meer informatie](../rn/using/release--20-2.md)
+* Release van campagne 20.2.5. [Meer informatie](../rn/using/release--20-2.md)
 * Release van campagne 20.1.4. [Meer informatie](../rn/using/release--20-1.md)
 * Release van campagne 19.2.4. [Meer informatie](../rn/using/release--19-2.md)
 * Release van campagne 19.1.8. [Meer informatie](../rn/using/release--19-1.md)
@@ -103,7 +103,7 @@ Zodra alle instanties worden bevorderd, moet de Console van de Cliënt ook aan d
 
 ## Integratie met Experience Cloud Triggers {#acc-triggers-updates}
 
-De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt. De de integratieauthentificatie van trekkers, oorspronkelijk gebaseerd op de authentificatie van AUTH om tot pijpleiding toegang te hebben, is bewogen aan Adobe I/O. Deze wordt op **30 november 2021** ingetrokken. [Meer informatie](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
+De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt. De de integratieauthentificatie van trekkers, oorspronkelijk gebaseerd op de authentificatie van AUTH om tot pijpleiding toegang te hebben, is bewogen aan Adobe I/O. Deze wordt op **30 november 2021** ingetrokken. [Meer info](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
 **Heeft dit gevolgen voor u?**
 
@@ -122,7 +122,7 @@ Leer hoe u uw versie [in deze sectie ](../platform/using/launching-adobe-campaig
 
 Als de exemplaren zijn bijgewerkt naar een nieuwere versie, moeten alle klanten de [procedure volgen en overschakelen naar de nieuwe verificatiemodus](../integrations/using/configuring-adobe-io.md). Dit vereist u om het nieuwe teken van Adobe I/O te produceren en het in de implementatie te gebruiken.  
 
-Bovendien moeten klanten voor hybride omgevingen ervoor zorgen dat de pijpleiding wordt geconfigureerd op een mid-sourcing-instantie. [Meer informatie](../integrations/using/configuring-pipeline.md).
+Bovendien moeten klanten voor hybride omgevingen ervoor zorgen dat de pijpleiding wordt geconfigureerd op een mid-sourcing-instantie. [Meer info](../integrations/using/configuring-pipeline.md).
 
 [Leer hoe u naar Adobe I/O](../integrations/using/configuring-adobe-io.md) migreert.
 
@@ -142,7 +142,7 @@ Leer hoe u uw versie [in deze sectie ](../platform/using/launching-adobe-campaig
 
 Als gehoste klant, als u aan de nieuwe bouwstijl hebt bevorderd, heeft Adobe reeds uw instantie(s) aan op HTTP/2-Gebaseerde API bijgewerkt.
 
-Als klant op locatie/hybride klant moet u de configuratie bijwerken. [Leer hoe u naar HTTP/2 kunt migreren](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
+Als klant op locatie/hybride klant moet u de configuratie bijwerken. [Leer hoe u naar HTTP/2 kunt migreren](https://helpx.adobe.com/nl/campaign/kb/migrate-to-apns-http2.html)
 
 ### Updates van APNs-basiscertificaten
 
