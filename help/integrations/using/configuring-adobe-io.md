@@ -8,7 +8,7 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 934964b31c4f8f869253759eaf49961fa5589bff
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 4%
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 ## Vereisten {#adobe-io-prerequisites}
 
-Deze integratie is alleen van toepassing vanaf **Campaign Classic 20.3, 20.2.4, 19.1.8 en [!DNL Gold Standard] 11 releases**.
+Deze integratie is alleen van toepassing vanaf **Campaign Classic 20.3, 19.1.8 en [!DNL Gold Standard] 11 releases**.
 
 Controleer voordat u met deze implementatie begint of:
 
@@ -96,7 +96,7 @@ procedure [op deze pagina](https://helpx.adobe.com/enterprise/admin-guide.html/e
 >
 >Adobe I/O certificaat verloopt na twaalf maanden. Je moet elk jaar een nieuw sleutelpaar genereren.
 
-## Stap 2: Voeg de projectgeloofsbrieven in Adobe Campaign {#add-credentials-campaign} toe
+## Stap 2: De referenties van het project toevoegen in Adobe Campaign {#add-credentials-campaign}
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ De persoonlijke sleutel moet in base64 UTF-8-indeling worden gecodeerd. Dit doet
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
 
-## Stap 3: Door buizen uitgelijnde tag {#update-pipelined-tag} bijwerken
+## Stap 3: Label voor pijplijnen bijwerken {#update-pipelined-tag}
 
 >[!NOTE]
 >
