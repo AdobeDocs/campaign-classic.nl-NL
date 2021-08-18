@@ -6,16 +6,16 @@ feature: null
 role: null
 level: null
 exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: f4c6e416353d6b921cefced830b3380996f10751
 workflow-type: tm+mt
-source-wordcount: '3252'
-ht-degree: 26%
+source-wordcount: '3263'
+ht-degree: 25%
 
 ---
 
 # Release 19.1{#release-19-1}
 
-## ![](assets/do-not-localize/limited_2.png) Release 19.1.8 - build 9039 {#release-19-1-8-build-9039}
+## ![](assets/do-not-localize/limited_2.png) Release 19.1.8 - Build 9039 {#release-19-1-8-build-9039}
 
 _15 april 2021_
 
@@ -43,7 +43,7 @@ _16 december 2020_
 >
 > * Deze release wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **30 juni 2021** verbinding te kunnen maken met Campaign. [Meer informatie](../../technotes/ims-updates.md)
 > * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
-> * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overstappen op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde oAuth-verificatiemodus voor Campaign wordt op **30 november 2021** buiten gebruik gesteld.
+> * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overstappen op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde Auth authentificatiemodus met Campagne zal op **18 Augustus, 2021** voor hybride en op-gebouw milieu&#39;s, en op **30 November, 2021** voor ontvangen milieu&#39;s worden gepensioneerd.
 
 
 
@@ -71,7 +71,7 @@ Tomcat is bijgewerkt van versie 7 (7.0.103) naar versie 8 (8.5.57). De map `tomc
 
 In Linux gebruikt het opstarten van de netwerkservice nu een systeemeenheid in plaats van het script /etc/init.d/nlserver6. De migratie naar het nieuwe opstartschema wordt automatisch uitgevoerd wanneer u het 19.1.8-pakket installeert. /etc/init.d/nlserver6 wordt nog verstrekt maar voor het in wisselwerking staan met de nlserver dienst (begin, nieuw begin, einde, enz.), adviseren wij dat u het systeembevel direct gebruikt.
 
-## ![](assets/do-not-localize/red_2.png) Release 19.1.7 - build 9036 {#release-19-1-7-build-9036}
+## ![](assets/do-not-localize/red_2.png) Release 19.1.7 - Build 9036 {#release-19-1-7-build-9036}
 
 _15 september 2020_
 
@@ -94,14 +94,14 @@ _15 september 2020_
 * Tijdens de opschoningsworkflow worden nu verlopen lijsten in batches van 100 verwijderd in plaats van één voor één.
 * Na de overstap naar het [nieuwe ID-mechanisme voor reeksen](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) worden alle webapplicaties waarmee de tabel met ontvangers worden bijgewerkt, opnieuw gepubliceerd tijdens de post-upgrade.
 * Probleem verholpen waarbij e-mailberichten niet konden worden verzonden als er JavaScript-code buiten de HTML-inhoudstag stond. (NEO-18628)
-* Probleem verholpen waardoor de trackingindicatoren voor transactionele berichten niet konden worden bijgewerkt in de workflow voor bijhouden. (NEO-17770)
+* Probleem verholpen waardoor de traceringsindicatoren voor transactionele berichten niet konden worden bijgewerkt door de workflow voor bijhouden. (NEO-17770)
 * Verbeterde prestaties van de wizard Database bijwerken om minder SQL-instructies te maken en zo de responstijd te optimaliseren.
 * Oplossing voor een probleem met een crash van de console dat zich zou kunnen voordoen wanneer bijgehouden URL&#39;s in een e-mail werden uitgeschakeld, op het tabblad **Tekstinhoud** vanwege een niet-geïnitialiseerde variabele. (NEO-13545)
 * Probleem verholpen waardoor u bestanden niet kon uploaden in een bestandsoverdrachtactiviteit met een externe account van de Azure Blob Storage vanwege een niet-geïnitialiseerde variabele (m_pCurlReader). (NEO-13717)
 * Probleem verholpen met een post-upgrade waarbij Apache en de webserver werden uitgeschakeld voordat de webapplicatie opnieuw werd gepubliceerd. (NEO-27155)
 * Oplossing voor een regressie die ertoe leidde dat een onjuiste tijdzone werd gekozen wanneer het plaatsen van tijd in een **Planner** werkschemaactiviteit.
 
-## ![](assets/do-not-localize/red_2.png) Release 19.1.6 - build 9035 {#release-19-1-6-build-9035}
+## ![](assets/do-not-localize/red_2.png) Release 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
@@ -117,7 +117,7 @@ _3 oktober 2019_
 * Probleem verholpen dat ertoe kon leiden dat bepaalde berichten niet werden verwerkt door de server voor middeluitgaven. (NEO-12395)
 * Probleem verholpen waardoor de SQL-gegevensbeheeractiviteit niet volledig kon worden gebruikt (het genoemde recht SQL-gegevensbeheer ontbreekt).
 
-## ![](assets/do-not-localize/red_2.png) Release 19.1.5 - build 9033{#release-19-1-5-build-9033}
+## ![](assets/do-not-localize/red_2.png) Release 19.1.5 - Build 9033{#release-19-1-5-build-9033}
 
 _13 augustus 2019_
 
@@ -132,14 +132,14 @@ _13 augustus 2019_
 * Oplossing voor een regressie op het Oracle waardoor sommige functies na de upgrade als ongeldig werden beschouwd. (NEO-12759)
 * Oplossing voor een regressie die leidde tot een onjuiste tijdzone die werd gekozen wanneer het plaatsen van de tijd in een de werkschemaactiviteit van de Planner.
 
-## ![](assets/do-not-localize/green_2.png) Release 19.1.4 - build 9032{#release-19-1-4-build-9032}
+## ![](assets/do-not-localize/green_2.png) Release 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
 >[!NOTE]
 >
 >19.1.4 [!DNL Gold Standard]-releases worden vermeld op deze [pagina](../../rn/using/gold-standard.md).
 
 
-## ![](assets/do-not-localize/red_2.png) Release 19.1.2 - build 9029{#release-19-1-2-build-9029}
+## ![](assets/do-not-localize/red_2.png) Release 19.1.2 - Build 9029{#release-19-1-2-build-9029}
 
 _21 juni 2019_
 
@@ -155,7 +155,7 @@ _21 juni 2019_
 * Wij staan nu de schrapping van dummy verslagen toe die in de Dynamica van Microsoft tijdens het invoeren werkschema worden gecreeerd.
 * Verbeterde machtigingen om het pakket met de beveiligingszone uit te voeren wanneer u een interne account gebruikt.
 
-## ![](assets/do-not-localize/red_2.png) Release 19.1 - build 9026{#release-19-1-build-9026}
+## ![](assets/do-not-localize/red_2.png) Release 19.1 - Build 9026{#release-19-1-build-9026}
 
 _30 mei 2019_
 
@@ -224,7 +224,7 @@ _30 mei 2019_
 * Hulplijnen voor handelingen van de operator: er zijn diverse instructies ingevoerd om te voorkomen dat exploitanten acties uitvoeren die de integriteit van het platform kunnen aantasten . De ingebouwde schema&#39;s kunnen niet meer door de interface worden geschrapt. De XML van de workflowbron kan ook niet meer worden bewerkt door gebruikers die geen beheerder zijn.
 * Er zijn twee nieuwe opties beschikbaar gesteld: **XtkSecurity_Restrict_EditXML** (staat u toe om de uitgave van de code van XML van leveringen&#39; onbruikbaar te maken) en **NmsOperation_OperationMgtDebug** (staat u toe om de technische werkschemauitvoering te controleren operationMgt). [Meer informatie](../../installation/using/configuring-campaign-options.md)
 
-**Overige wijzigingen**
+**Andere wijzigingen**
 
 * Pushmeldingen: ondersteunen we nu de optie Thread ID voor iOS-push.
 * Verbeterde het beheer van lange naamindexen die postupgrade-problemen kunnen veroorzaken.
