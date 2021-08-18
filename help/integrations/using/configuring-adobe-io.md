@@ -8,10 +8,10 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 8e18a3633e6b806a971678d985c55c123854438e
+source-git-commit: 601cc3883d7fa8abaa86161365c4230cbe30765c
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 4%
+source-wordcount: '682'
+ht-degree: 3%
 
 ---
 
@@ -19,9 +19,11 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->Als u een oudere versie van de integratie van Trekkers door authentificatie Auth gebruikt, **moet u naar Adobe I/O bewegen zoals hieronder beschreven**. De de authentificatiemodus van de Oudere Auth met Campagne met Campagne zal op 30 november 2021 worden gepensioneerd. [Meer informatie](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
->
+>Als u een oudere versie van de integratie van Trekkers door authentificatie Auth gebruikt, **moet u naar Adobe I/O bewegen zoals hieronder beschreven**.
 >Tijdens deze overgang naar [!DNL Adobe I/O] kunnen sommige inkomende triggers verloren gaan.
+>
+>De verouderde Auth authentificatiemodus met Campagne zal op **18 Augustus, 2021** voor hybride en op-gebouw milieu&#39;s, en op **30 November, 2021** voor ontvangen milieu&#39;s worden gepensioneerd. [Meer informatie](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+
 
 ## Vereisten {#adobe-io-prerequisites}
 
