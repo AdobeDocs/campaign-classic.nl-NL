@@ -5,9 +5,9 @@ description: TechNote
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 8e18a3633e6b806a971678d985c55c123854438e
+source-git-commit: 601cc3883d7fa8abaa86161365c4230cbe30765c
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1110'
 ht-degree: 11%
 
 ---
@@ -103,7 +103,7 @@ Zodra alle instanties worden bevorderd, moet de Console van de Cliënt ook aan d
 
 ## Integratie met Experience Cloud Triggers {#acc-triggers-updates}
 
-De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt. De de integratieauthentificatie van trekkers, oorspronkelijk gebaseerd op de authentificatie van AUTH om tot pijpleiding toegang te hebben, is bewogen aan Adobe I/O. Deze wordt op **30 november 2021** ingetrokken. [Meer info](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
+De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt. De de integratieauthentificatie van trekkers, oorspronkelijk gebaseerd op de authentificatie van AUTH om tot pijpleiding toegang te hebben, is bewogen aan Adobe I/O. Het zal op **18 Augustus 2021** voor hybride en op-gebouw milieu&#39;s, en op **30 November, 2021** voor ontvangen milieu&#39;s worden gepensioneerd. [Meer info](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
 **Heeft dit gevolgen voor u?**
 
