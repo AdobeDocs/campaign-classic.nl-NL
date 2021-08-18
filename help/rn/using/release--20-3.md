@@ -6,23 +6,23 @@ feature: Overzicht
 role: User
 level: Beginner
 exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: f4c6e416353d6b921cefced830b3380996f10751
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 98%
+source-wordcount: '1962'
+ht-degree: 97%
 
 ---
 
 # Release 20.3{#release-20-3}
 
-## ![](assets/do-not-localize/red_2.png) Release 20.3.3 - build 9234 {#release-20-3-3-build-9234}
+## ![](assets/do-not-localize/red_2.png) Release 20.3.3 - Build 9234 {#release-20-3-3-build-9234}
 
 _11 januari 2021_
 
 * Er is een beveiligingsprobleem opgelost ter versterking van de bescherming tegen SSRF-aanvallen (Server Side Request Forgery). (NEO-27777)
 * Oplossing van een regressieprobleem bij het genereren van de broadlog waarbij het MTA-proces kon crashen.
 
-## ![](assets/do-not-localize/red_2.png) Release 20.3.1 - build 9228 {#release-20-3-1-build-9228}
+## ![](assets/do-not-localize/red_2.png) Release 20.3.1 - Build 9228 {#release-20-3-1-build-9228}
 
 _27 oktober 2020_
 
@@ -30,7 +30,7 @@ _27 oktober 2020_
 >
 > * Deze release wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **30 juni 2021** verbinding te kunnen maken met Campaign. [Meer informatie](../../technotes/ims-updates.md)
 > * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
-> * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overstappen op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde oAuth-verificatiemodus voor Campaign wordt op **30 november 2021** buiten gebruik gesteld.
+> * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overstappen op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde Auth authentificatiemodus met Campagne zal op **18 Augustus, 2021** voor hybride en op-gebouw milieu&#39;s, en op **30 November, 2021** voor ontvangen milieu&#39;s worden gepensioneerd.
 
 
 **Nieuwe functies**
