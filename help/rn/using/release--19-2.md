@@ -2,11 +2,8 @@
 product: campaign
 title: Release 19.2
 description: Opmerkingen bij de release voor campagne 19.2
-feature: null
-role: null
-level: null
 exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: 2a92cfc705e27332cfdf8c7357a6a03c84dc6c9f
 workflow-type: tm+mt
 source-wordcount: '1542'
 ht-degree: 21%
@@ -15,7 +12,7 @@ ht-degree: 21%
 
 # Release 19.2{#release-19-2}
 
-## ![](assets/do-not-localize/limited_2.png) Release 19.2.4 - build 9082 {#release-19-2-4-build-9082}
+## ![](assets/do-not-localize/limited_2.png) Release 19.2.4 - Build 9082 {#release-19-2-4-build-9082}
 
 _15 april 2021_
 
@@ -51,7 +48,7 @@ _23 december 2020_
 * Het verbindingsprotocol is bijgewerkt en aangepast aan het nieuwe IMS-verificatiemechanisme.
 * Er is een beveiligingsprobleem opgelost ter versterking van de bescherming tegen SSRF-aanvallen (Server Side Request Forgery). (NEO-27777)
 
-## ![](assets/do-not-localize/red_2.png) Release 19.2.3 - build 9081 {#release-19-2-3-build-9081}
+## ![](assets/do-not-localize/red_2.png) Release 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
 
 _7 februari 2020_
 
@@ -60,7 +57,7 @@ _7 februari 2020_
 * Probleem met regressie verholpen als gevolg van de implementatie van SSL-certificering, waardoor de gebruikersverbinding op de Windows-server is mislukt. (NEO-20629)
 * Probleem verholpen waarbij een onjuist versietnummer werd weergegeven in het menu **Info**.
 
-## ![](assets/do-not-localize/red_2.png) Release 19.2 - build 9080 {#release-19-2-build-9080}
+## ![](assets/do-not-localize/red_2.png) Release 19.2 - Build 9080 {#release-19-2-build-9080}
 
 _2 december 2019_
 
