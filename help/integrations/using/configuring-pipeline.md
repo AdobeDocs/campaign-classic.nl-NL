@@ -5,9 +5,9 @@ description: Leer hoe te om de pijpleiding te vormen
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
+source-git-commit: b6aa797133e6f916bf085794aeb99d61a8f7bc40
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '902'
 ht-degree: 1%
 
 ---
@@ -17,10 +17,6 @@ ht-degree: 1%
 De parameters van de authentificatie zoals klantenidentiteitskaart, de privé sleutel, en het authentificatieeindpunt worden gevormd in de dossiers van de instantieconfiguratie.
 De lijst met triggers die moeten worden verwerkt, is geconfigureerd in een optie in JSON-indeling.
 De triggers worden gebruikt voor het activeren van een campagneworkflow die e-mails verzendt. De campagne is opgezet zodat een klant die beide triggergebeurtenissen heeft een e-mail ontvangt.
-
->[!CAUTION]
->
->In het geval van Hybride plaatsing, zorg ervoor dat de pijpleiding op een halverwege instantie wordt gevormd.
 
 ## Vereisten {#prerequisites}
 
