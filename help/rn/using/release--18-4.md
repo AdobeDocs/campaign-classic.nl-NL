@@ -2,11 +2,8 @@
 product: campaign
 title: Opmerkingen bij de release Campagne 18.4
 description: Opmerkingen bij de release voor campagne 18.4
-feature: null
-role: null
-level: null
 exl-id: bbad81ba-a09f-4d67-9309-628ea7a08c9b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 2a92cfc705e27332cfdf8c7357a6a03c84dc6c9f
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 7%
@@ -15,7 +12,7 @@ ht-degree: 7%
 
 # Release 18.4{#release-18-4}
 
-## Release 18.4.5 - build 8937{#release-18-4-5-build-8937}
+## Release 18.4.5 - Build 8937{#release-18-4-5-build-8937}
 
 21 november 2018
 
@@ -42,7 +39,7 @@ ht-degree: 7%
 * Verbeterde beschikbare tijd voor gedeeld geheugen tijdens dood verwerken van kinderen (MTA).
 * Oplossing voor een mogelijke impasse in Apache (tracking).
 
-## Release 18.4.4 - build 8936{#release-18-4-4-build-8936}
+## Release 18.4.4 - Build 8936{#release-18-4-4-build-8936}
 
 1 augustus 2018
 
@@ -59,7 +56,7 @@ ht-degree: 7%
 * Probleem verholpen waarbij nutteloze fouten in het postupgradelogboek werden weergegeven wanneer een **[!UICONTROL Survey answers]**-workflowactiviteit niet volledig was geconfigureerd.
 * FDA-Teradata: Probleem verholpen met automatisch verhoogde velden en indexen in SQL-tabellen.
 
-## Release 18.4.3 - build 8935{#release-18-4-3-build-8935}
+## Release 18.4.3 - Build 8935{#release-18-4-3-build-8935}
 
 22 juni 2018
 
@@ -73,7 +70,7 @@ ht-degree: 7%
 * Probleem verholpen bij het synchroniseren van aanbiedingsruimten van de marketinginstantie naar de interactie-instantie. (NEO-11162)
 * Verbeterd beheer van lange naamindexen tijdens postupgrade
 
-## Release 18.4.2 - build 8932{#release-18-4-2-build-8932}
+## Release 18.4.2 - Build 8932{#release-18-4-2-build-8932}
 
 22 mei 2018
 
@@ -84,7 +81,7 @@ ht-degree: 7%
 * Oplossing voor een prestatieprobleem dat met het InMail-proces kon optreden bij het gebruik van een stuiterende mailserver. (NEO-10641)
 * Oplossing voor een probleem met een databaseupgrade dat zich kon voordoen wanneer u meer dan 1000 schema&#39;s bijwerkte.
 
-## Release 18.4 - build 8931{#release-18-4-build-8931}
+## Release 18.4 - Build 8931{#release-18-4-build-8931}
 
 24 apr. 2018
 
@@ -104,7 +101,7 @@ ht-degree: 7%
     <ul> 
      <li> <p>Recht op toegang: staat de betrokkene toe een kopie te ontvangen van zijn/haar persoonsgegevens die door de gegevensverwerkingsverantwoordelijken zijn vastgelegd, met inbegrip van gegevens die in Adobe Campaign zijn opgeslagen.</p> </li> 
      <li> <p>Rechts om te verwijderen: geeft de betrokkene het recht om zijn/haar persoonsgegevens die door gegevensverwerkingsverantwoordelijken zijn vastgelegd, te laten wissen, eventueel met inbegrip van gegevens die in Adobe Campaign zijn opgeslagen.</p> </li> 
-    </ul> Raadpleeg de <a href="https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html">gedetailleerde documentatie</a> voor meer informatie.<br /> </td> 
+    </ul> Raadpleeg de <a href="https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html">gedetailleerde documentatie</a>.<br /> voor meer informatie. </td> 
   </tr> 
   <tr> 
    <td> Actieve profielen<br /> </td> 
@@ -129,7 +126,7 @@ ht-degree: 7%
 * **LINE-kanaal - architectuurverbetering**: Net als bij alle andere kanalen in Adobe Campaign wordt het LINE-kanaal nu ondersteund voor alle implementatietypen: gehost, hybride en op locatie.
 * **Volgorde automatisch genereren**: Het mechanisme voor het genereren van id&#39;s is verbeterd en vergroot de levensduur van campagneinstanties met grote volumes objecten. Raadpleeg dit [technote](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html) voor meer informatie.
 
-**Overige wijzigingen**
+**Andere wijzigingen**
 
 * Er is een nieuwe modus beschikbaar voor het importeren van pakketten via de opdrachtregel, zodat ronde afhankelijkheden mogelijk zijn (niet aanbevolen voor grote pakketten). Zie de sectie &#39;Technische ontwikkelingen&#39; voor meer informatie. (NEO-8979)
 * De betere prestaties voor grote hoeveelheid gegevens die in Teradata worden geladen en verholpen een kwestie die verhinderde de juiste waarde van gegevens te tonen die in het logboek worden verwerkt. (NEO-10429)
@@ -196,7 +193,7 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 * Probleem verholpen na upgrade waarbij het Hive-pakket automatisch werd geïnstalleerd (nodig voor Hadoop) als het FDA-pakket is geïnstalleerd. (NEO-10592)
 * Probleem verholpen waarbij ongeldige domeinen werden behandeld als een **Niet gedefinieerd** fout. (NEO-10248)
 * Probleem verholpen waarbij logboekbestanden in de tabel deliveryLogStats werden gedupliceerd bij het verzenden van Anroid-pushleveringen. (NEO-10234)
-* Probleem verholpen waarbij bepaalde streepjescode-indelingen niet leesbaar werden door streepjescodescanners. (NEO-10125)
+* Probleem verholpen waarbij bepaalde streepjescode-indelingen mogelijk niet leesbaar werden door streepjescodescanners. (NEO-10125)
 * Probleem verholpen met de JavaScript-functie urlEncode wanneer niet-ASCII-tekens werden gebruikt. Zie de sectie &#39;Technische ontwikkelingen&#39; voor meer informatie. (NEO-10123)
 * Probleem verholpen bij het uitvoeren van een query, waaronder sha256-functies op Teradata-databases. (NEO-10119)
 * De fouten van het werkschemamegeheugen die in de activiteit SalesForce konden voorkomen wanneer het gebruiken van zeer grote lijsten SalesForce. (NEO-9900)
