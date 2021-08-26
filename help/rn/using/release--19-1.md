@@ -3,20 +3,23 @@ product: campaign
 title: Opmerkingen bij de release Campagne 19.1
 description: Opmerkingen bij de release voor campagne 19.1
 exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
-source-git-commit: 2a92cfc705e27332cfdf8c7357a6a03c84dc6c9f
+source-git-commit: 01f91abe127629e2d3d0889172969f2f4ba09f46
 workflow-type: tm+mt
-source-wordcount: '3292'
+source-wordcount: '3308'
 ht-degree: 25%
 
 ---
 
 # Release 19.1{#release-19-1}
 
+![](../../assets/v7-only.svg)
+
 ## ![](assets/do-not-localize/limited_2.png) Release 19.1.8 - Build 9039 {#release-19-1-8-build-9039}
 
 _15 april 2021_
 
 * Er is een probleem met een regressie van de clientconsole opgelost die tot permanente foutberichten op het IMS-verbindingsscherm leidde. (NEO-34821)
+* Oplossing voor een regressie die de export van workflowgegevens naar een FDA-database (Teradate, Snowflake) kon blokkeren.
 
 **Alleen de console-upgrade is verplicht. Er is geen serverupgrade vereist.**
 
@@ -38,7 +41,7 @@ _16 december 2020_
 
 >[!CAUTION]
 >
-> * Deze release wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **30 juni 2021** verbinding te kunnen maken met Campaign. [Meer informatie](../../technotes/ims-updates.md)
+> * Deze release wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **30 juni 2021** verbinding te kunnen maken met Campaign. [Meer informatie](../../technotes/using/ims-updates.md)
 > * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
 > * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overstappen op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde Auth authentificatiemodus met Campagne [is gepensioneerd](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) op **18 Augustus 2021**. De ontvangen milieu&#39;s profiteren van een uitbreiding tot **30 November, 2021**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot 30 november 2021. U moet [AppID van de toepassing OAuth ](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) aan Adobe verstrekken.
 
