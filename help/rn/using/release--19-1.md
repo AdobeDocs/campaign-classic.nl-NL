@@ -3,7 +3,7 @@ product: campaign
 title: Opmerkingen bij de release Campagne 19.1
 description: Opmerkingen bij de release voor campagne 19.1
 exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
-source-git-commit: 01f91abe127629e2d3d0889172969f2f4ba09f46
+source-git-commit: d5585f0130611db399811536e80e76b61c998b9c
 workflow-type: tm+mt
 source-wordcount: '3308'
 ht-degree: 25%
@@ -19,7 +19,7 @@ ht-degree: 25%
 _15 april 2021_
 
 * Er is een probleem met een regressie van de clientconsole opgelost die tot permanente foutberichten op het IMS-verbindingsscherm leidde. (NEO-34821)
-* Oplossing voor een regressie die de export van workflowgegevens naar een FDA-database (Teradate, Snowflake) kon blokkeren.
+* Oplossing voor een regressie die de export van workflowgegevens naar een FDA-database kon blokkeren (Teradata, Snowflake).
 
 **Alleen de console-upgrade is verplicht. Er is geen serverupgrade vereist.**
 

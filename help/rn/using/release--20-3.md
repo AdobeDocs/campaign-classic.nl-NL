@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
-source-git-commit: 01f91abe127629e2d3d0889172969f2f4ba09f46
+source-git-commit: d5585f0130611db399811536e80e76b61c998b9c
 workflow-type: tm+mt
 source-wordcount: '2006'
 ht-degree: 95%
@@ -169,4 +169,4 @@ In Linux is _apache_neolane.conf_ nu geïnstalleerd in de map `conf`.
 * Er is een probleem verholpen waarbij de server vastliep bij het weergeven van de doeldata van de rest van een **Splitsen**-activiteit in een workflow.
 * Er is een probleem verholpen waarbij de server vastliep door geheugenbeschadiging te voorkomen tijdens het opschonen van de expressieparser. (NEO-26856)
 * Er is een probleem verholpen in de verrijkingsactiviteit waarbij niet-beheerders instantievariabelen definieerden. (NEO-25653)
-* Oplossing voor een regressie die de export van workflowgegevens naar een FDA-database (Teradate, Snowflake) kon blokkeren.
+* Oplossing voor een regressie die de export van workflowgegevens naar een FDA-database kon blokkeren (Teradata, Snowflake).
