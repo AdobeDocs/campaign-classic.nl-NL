@@ -6,7 +6,7 @@ description: Leer hoe u toegang tot Vertica configureert in FDA
 audience: platform
 content-type: reference
 topic-tags: connectors
-source-git-commit: a7c080fe4db72f659659c7cac8f2c02031822e04
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 4%
@@ -14,7 +14,9 @@ ht-degree: 4%
 ---
 
 
-# Toegang tot Vertica {#configure-fda-vertica} configureren
+# Toegang tot Vertica configureren {#configure-fda-vertica}
+
+![](../../assets/v7-only.svg)
 
 De Campagne van het gebruik **Federated Data Access** (FDA) optie om informatie te verwerken die in een extern gegevensbestand wordt opgeslagen. Voer de onderstaande stappen uit om toegang tot [!DNL Vertica] te configureren.
 
@@ -82,7 +84,7 @@ Volg onderstaande stappen om [!DNL Vertica] op CentOS te configureren:
 
 1. In Adobe Campaign kunt u vervolgens uw [!DNL Vertica] externe account configureren. Raadpleeg [deze sectie](#vertica-external) voor meer informatie over het configureren van uw externe account.
 
-## Vertica op Windows {#vertica-windows}
+## Vertica in Windows {#vertica-windows}
 
 1. Download het [ODBC-stuurprogramma voor Windows](https://www.vertica.com/download/vertica/client-drivers/). Om de bestuurder voor Vensters te installeren, zult u .NET Kader 3.5 moeten toelaten of de installatietovenaar zal proberen om het automatisch toe te laten en te downloaden.
 
@@ -144,7 +146,7 @@ Volg onderstaande stappen om [!DNL Vertica] op CentOS te configureren:
 
 1. In Adobe Campaign kunt u vervolgens uw [!DNL Vertica] externe account configureren. Raadpleeg [deze sectie](#vertica-external) voor meer informatie over het configureren van uw externe account.
 
-## Verticale externe account {#vertica-external}
+## Externe rekening Vertica {#vertica-external}
 
 U moet een [!DNL Vertica] externe rekening tot stand brengen om uw instantie van de Campagne met uw [!DNL Vertica] externe gegevensbestand te verbinden.
 

@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: general-operation
 exl-id: 82b88ab7-6a95-4bb3-b8b3-abea0fdd4ca0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 3%
@@ -15,7 +15,9 @@ ht-degree: 3%
 
 # Implementatiestappen{#implementation-steps}
 
-## Interactie {#configuring-interaction} configureren
+![](../../assets/v7-only.svg)
+
+## Interactie configureren {#configuring-interaction}
 
 >[!NOTE]
 >
@@ -38,7 +40,7 @@ ht-degree: 3%
    >
    >Wanneer een ruimte op het binnenkomende kanaal van het Web wordt gecreeerd, is een configuratie ook noodzakelijk op de plaats waarop de aanbieding zal worden getoond.
 
-## De aanbiedingscatalogus beheren {#managing-the-offer-catalog-}
+## De aanbiedingencatalogus beheren {#managing-the-offer-catalog-}
 
 >[!NOTE]
 >
@@ -48,7 +50,7 @@ ht-degree: 3%
 1. Aanbiedingen maken in ontwerpomgevingen. Raadpleeg [Een aanbieding maken](../../interaction/using/creating-an-offer.md) voor meer informatie.
 1. Aanbiedingen goedkeuren en publiceren op één of meerdere ruimten om deze beschikbaar te maken in live omgevingen voor de leveringsmanager. Raadpleeg [Een aanbieding goedkeuren en activeren](../../interaction/using/approving-and-activating-an-offer.md) voor meer informatie.
 
-## De aanbiedingscatalogus {#using-the-offer-catalog-} gebruiken
+## De aanbiedingencatalogus gebruiken {#using-the-offer-catalog-}
 
 >[!NOTE]
 >

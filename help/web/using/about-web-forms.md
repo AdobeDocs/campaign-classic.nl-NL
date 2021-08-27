@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Aan de slag met webformulieren{#about-web-forms}
+
+![](../../assets/common.svg)
 
 Adobe Campaign integreert een grafische module voor het definiëren en publiceren van webformulieren om pagina&#39;s te maken die invoer- en selectievelden bevatten en die mogelijk gegevens in de database bevatten. Zo kunt u webpagina&#39;s ontwerpen en plaatsen die gebruikers kunnen openen om informatie weer te geven of in te voeren.
 
@@ -80,7 +82,6 @@ In de volgende secties wordt beschreven hoe u inhoud en indeling voor formuliers
 >* Om ervoor te zorgen dat de paginavertoning en de informatieopslag in de aangewezen opeenvolging voorkomen, laat zuiveringswijze in de vorm van het Web toe. Hiervoor gaat u naar de **[!UICONTROL Preview]**-subtab en schakelt u het selectievakje **[!UICONTROL Enable debug mode]** in: alle verzamelde informatie en mogelijke uitvoeringsfouten worden onder aan elke pagina weergegeven .
 
 >
-
 
 
 ### De pictogrammen in de werkbalk gebruiken {#using-the-icons-in-the-toolbar}

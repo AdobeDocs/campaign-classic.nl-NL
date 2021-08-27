@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 2%
 
 ---
 
-# Abonnementsservices{#subscription-services}
+# Lidmaatschapsservices{#subscription-services}
+
+![](../../assets/common.svg)
 
 Met een activiteit van het type **Subscription Services** kunt u een abonnement op een informatieservice maken of verwijderen voor de bevolking die in de overgang is opgegeven.
 
@@ -31,7 +33,7 @@ Om het te vormen, geef de activiteit uit en ga zijn etiket in, dan selecteer de 
 
    De inhoud van dit bericht wordt gespecificeerd in een leveringsmalplaatje met betrekking tot de informatiedienst. Raadpleeg deze [sectie](../../delivery/using/managing-subscriptions.md) voor meer informatie.
 
-## Voorbeeld: Abonneren op een lijst met ontvangers voor een nieuwsbrief {#example--subscribe-a-list-of-recipients-to-a-newsletter}
+## Voorbeeld: Een lijst met ontvangers abonneren op een nieuwsbrief {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 
 In één enkele operatie is de volgende workflow bedoeld om een lijst op te stellen van ontvangers die in aanmerking komen voor een nieuwsbrief, gericht op werkende mensen die in Parijs wonen, om hen te laten inschrijven.
 

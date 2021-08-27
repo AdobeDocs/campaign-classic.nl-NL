@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Lijsten beheren en aanpassen{#manage-and-customize-lists}
+
+![](../../assets/common.svg)
 
 U kunt tot de lijsten van verslagen in het gegevensbestand van de Campagne toegang hebben gebruikend de Ontdekkingsreiziger. U kunt deze lijsten filteren, zoekopdrachten uitvoeren, informatie toevoegen, filteren en sorteren.
 
@@ -27,7 +29,7 @@ In het onderste rechtergedeelte van het lijstscherm, toont **[!UICONTROL counter
 
 Als een &quot;**?**&quot; wordt weergegeven in plaats van het nummer aan de rechterkant, klikt u op de teller om de berekening te starten.
 
-### Meer records {#loading-more-records} laden
+### Meer records laden {#loading-more-records}
 
 Als u aanvullende records (standaard 200 regels) wilt laden (en dus wilt weergeven), klikt u op **[!UICONTROL Continue loading]**.
 
@@ -49,9 +51,9 @@ Klik in het lijstconfiguratievenster op **[!UICONTROL Advanced parameters]** (li
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
-## Lijsten {#configuring-lists} configureren
+## Lijsten configureren {#configuring-lists}
 
-### Kolommen {#add-columns} toevoegen
+### Kolommen toevoegen {#add-columns}
 
 Er zijn twee manieren om een kolom in een lijst toe te voegen.
 
@@ -82,7 +84,7 @@ Een andere manier om kolommen toe te voegen, bijvoorbeeld als u gegevens wilt to
    >
    >Gebruik het veld **Zoeken** om een zoekopdracht uit te voeren in de beschikbare velden. Zie [deze sectie](#sorting-a-list) voor meer informatie.
    >
-   >Velden worden aangegeven met specifieke pictogrammen: SQL-velden, gekoppelde tabellen, berekende velden, enzovoort. Voor elk geselecteerd veld wordt de beschrijving weergegeven onder de lijst met beschikbare velden. [Meer informatie](#configuring-lists).
+   >Velden worden aangegeven met specifieke pictogrammen: SQL-velden, gekoppelde tabellen, berekende velden, enzovoort. Voor elk geselecteerd veld wordt de beschrijving weergegeven onder de lijst met beschikbare velden. [Meer info](#configuring-lists).
    >
    >U kunt gegevens ook sorteren en filteren. Zie [deze sectie](../../platform/using/filtering-options.md).
 
@@ -97,14 +99,14 @@ Een andere manier om kolommen toe te voegen, bijvoorbeeld als u gegevens wilt to
 
 1. Klik **[!UICONTROL OK]** om de configuratie te bevestigen en het resultaat te tonen.
 
-### Nieuwe kolom maken {#create-a-new-column}
+### Een nieuwe kolom maken {#create-a-new-column}
 
 U kunt nieuwe kolommen maken om extra velden in de lijst weer te geven. Dit doet u als volgt:
 
 1. Klik op **[!UICONTROL Configure the list]** hieronder en rechts van de lijst.
 1. Klik **[!UICONTROL Add]** om een nieuw gebied in de lijst te tonen.
 
-### Een kolom {#remove-a-column} verwijderen
+### Een kolom verwijderen {#remove-a-column}
 
 U kunt een of meer kolommen in een lijst met records maskeren met behulp van **[!UICONTROL Configure list]** die zich onder en rechts van de lijst bevindt.
 
@@ -116,7 +118,7 @@ Selecteer in het lijstconfiguratievenster de kolom die u wilt maskeren in de zon
 
 Herhaal deze bewerking voor elke kolom die u wilt maskeren. Klik **[!UICONTROL OK]** om de configuratie te bevestigen en het resultaat te tonen.
 
-### Kolombreedte {#adjust-column-width} aanpassen
+### Kolombreedte aanpassen {#adjust-column-width}
 
 Wanneer een lijst actief is, d.w.z. minstens één lijn wordt geselecteerd, kunt u F9 gebruiken om de breedte van de kolommen aan te passen zodat alle kolommen op het scherm kunnen worden getoond.
 
@@ -161,7 +163,7 @@ Klik **[!UICONTROL Save]** in het venster van omslageigenschappen. De lijstweerg
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
-## Een lijst {#exporting-a-list} exporteren
+## Een lijst exporteren {#exporting-a-list}
 
 Als u gegevens uit een lijst wilt exporteren, moet u een wizard voor exporteren gebruiken. Als u deze wilt openen, selecteert u de elementen die u wilt exporteren in de lijst, klikt u met de rechtermuisknop en selecteert u **[!UICONTROL Export...]**.
 
@@ -171,7 +173,7 @@ Het gebruik van de invoer- en uitvoerfuncties wordt uitgelegd in [Algemene invoe
 >
 >Elementen uit een lijst mogen niet worden geëxporteerd met de functie Kopiëren/Plakken.
 
-## Een lijst {#sorting-a-list} sorteren
+## Een lijst sorteren {#sorting-a-list}
 
 Lijsten kunnen een grote hoeveelheid gegevens bevatten. U kunt deze gegevens sorteren of eenvoudige of geavanceerde filters toepassen. Door te sorteren kunt u gegevens in oplopende of aflopende volgorde weergeven. Met filters kunt u alleen geselecteerde gegevens definiëren en combineren.
 
@@ -202,4 +204,4 @@ U kunt een onderzoek van de beschikbare gebieden in een redacteur in werking ste
 
 >[!NOTE]
 >
->U kunt filters maken om slechts enkele gegevens in een lijst weer te geven. [Meer informatie](../../platform/using/creating-filters.md).
+>U kunt filters maken om slechts enkele gegevens in een lijst weer te geven. [Meer info](../../platform/using/creating-filters.md).

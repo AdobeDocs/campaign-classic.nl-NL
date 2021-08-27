@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 6%
 
 ---
 
-# Een bestand {#zipping-or-encrypting-a-file} comprimeren of versleutelen
+# Een bestand comprimeren of versleutelen {#zipping-or-encrypting-a-file}
+
+![](../../assets/common.svg)
 
 Met Adobe Campaign kunt u gecomprimeerde of gecodeerde bestanden exporteren. Wanneer u een exportbewerking definieert aan de hand van een **[!UICONTROL Data extraction (file)]**-activiteit, kunt u een nabewerkingsbewerking definiëren als ZIP-bestand of het bestand versleutelen.
 

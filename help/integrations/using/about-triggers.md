@@ -5,7 +5,7 @@ description: Aan de slag met Adobe Experience Cloud Triggers-implementatie
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 16%
@@ -13,6 +13,8 @@ ht-degree: 16%
 ---
 
 # Aan de slag met Adobe Experience Cloud Triggers{#about-adobe-experience-triggers}
+
+![](../../assets/common.svg)
 
 [!DNL Triggers] is een integratie tussen Adobe Campaign en Adobe Analytics die de pijpleiding gebruikt. De pijplijn haalt gebruikersacties of trekkers van uw website terug. Een achterlating van een winkelwagen is een voorbeeld van een trigger. Triggers worden in Adobe Campaign verwerkt om e-mails in bijna real-time te verzenden.
 
@@ -25,7 +27,7 @@ ht-degree: 16%
 Het staat voor meer flexibele integratie toe aangezien de configuratie minimaal is en een derde niet betrokken is.
 Ook wordt steun verleend aan grote verkeersvolumes zonder dat dit van invloed is op de prestaties van marketingactiviteiten. De integratie kan bijvoorbeeld een miljoen triggers per uur verwerken.
 
-## [!DNL Triggers] architectuur  {#triggers-architecture}
+## [!DNL Triggers] architectuur {#triggers-architecture}
 
 Het [!DNL pipelined]-proces wordt altijd uitgevoerd op de Adobe Campaign-marketingserver. Het verbindt met de pijpleiding, wint de gebeurtenissen terug, en verwerkt hen onmiddellijk.
 

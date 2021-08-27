@@ -6,14 +6,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 3c793dc1-9654-4289-a3d2-30c3078fd848
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '376'
 ht-degree: 4%
 
 ---
 
 # Mislukte verbinding{#failure-to-connect}
+
+![](../../assets/v7-only.svg)
 
 De redenen voor een verbindingsprobleem kunnen meerdere zijn en zijn afhankelijk van verschillende contexten.
 
@@ -43,7 +45,7 @@ U kunt de volgende tests proberen en als de verbindingsmislukking voortduurt, ge
 </tr>
 <tr> 
 <td>Is Adobe Campaign correct geïntegreerd?</td> 
-<td>Aanmelden bij: <b>http(s)://&lt;urlserver&gt;/r/test</b> URL. De server moet het volgende berichttype retourneren: &lt;redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;
+<td>Aanmelden bij: <b>http(s)://&lt;urlserver&gt;/r/test</b> URL. De server moet het volgende berichttype retourneren: &lt;redir status='OK' date='YYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;
 Als u dit resultaat niet verkrijgt, controleer in uw de serverconfiguratie van het Web dat de integratie in acht wordt genomen.</td>
 </tr>
 <tr> 

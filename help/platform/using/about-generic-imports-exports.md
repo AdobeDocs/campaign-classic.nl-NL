@@ -2,18 +2,20 @@
 product: campaign
 title: Over de invoer en uitvoer van generieke producten
 description: Meer informatie over generieke import en export.
-feature: Overzicht
+feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 9ac13db3-552f-43cc-ab67-3aea82e0519e
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 5%
+source-wordcount: '117'
+ht-degree: 4%
 
 ---
 
 # Aan de slag met import- en exporttaken {#about-generic-imports-exports}
+
+![](../../assets/common.svg)
 
 Adobe Campaign Classic levert generieke import en export. Zij staan u toe, bijvoorbeeld, om een lijst van klanten of vooruitzichten te halen die dan deel van een doelbevolking zullen worden, of uw gegevensbestand van gegevens van externe dossiers te voorzien.
 

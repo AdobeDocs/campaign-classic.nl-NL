@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 2%
@@ -15,11 +15,13 @@ ht-degree: 2%
 
 # Een diagram maken{#creating-a-chart}
 
+![](../../assets/common.svg)
+
 De gegevens in het gegevensbestand kunnen ook in een grafiek worden verzameld en worden getoond. Adobe Campaign biedt een aantal grafische voorstellingen. Hun configuratie wordt hieronder gedetailleerd beschreven.
 
 grafieken worden rechtstreeks in een rapportpagina ingevoegd via het snelmenu of de werkbalk.
 
-## Stappen {#creation-steps} maken
+## Aanmaakstappen {#creation-steps}
 
 Pas de volgende stappen toe om een grafiek in een rapport te maken:
 
@@ -61,7 +63,7 @@ Het kan ook worden gewijzigd via de sectie **[!UICONTROL Chart type]** van het t
 
 Varianten zijn afhankelijk van het geselecteerde diagramtype. Ze worden geselecteerd via de koppeling **[!UICONTROL Variants...]**.
 
-### Indeling: schijfgrafieken {#breakdown--pie-charts}
+### Indeling: cirkeldiagrammen {#breakdown--pie-charts}
 
 Met dit type grafische weergave kunt u een overzicht van de gemeten elementen weergeven.
 
@@ -117,7 +119,7 @@ Indien nodig kunt u de weergavevolgorde van waarden omkeren. Selecteer de optie 
 
 Dit type van grafiek laat u het gesprekstarief van gemeten elementen volgen.
 
-### Voortgang: omgrenzing {#progress--gauge}
+### Voortgang: profiel {#progress--gauge}
 
 Met dit diagramtype kunt u de voortgang van een waarde ten opzichte van een gedefinieerd doel weergeven. In het onderstaande voorbeeld toont de zwarte wijzerplaat het aantal met succes verzonden leveringen (76) van een doel van 100 leveringen. Het omgrenzingsprofiel is verdeeld in drie bereiken die overeenkomen met specifieke statussen.
 
@@ -151,7 +153,7 @@ Mogelijke interactietypen en hun configuraties worden beschreven in [deze sectie
 
 ![](assets/s_ncs_advuser_report_wizard_017.png)
 
-## Statistieken {#calculating-statistics} berekenen
+## Berekening van statistieken {#calculating-statistics}
 
 Met grafieken kunt u statistieken weergeven over de verzamelde gegevens.
 

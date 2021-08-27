@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # Persoon/personen en ontvangers {#person-people-and-recipients}
+
+![](../../assets/common.svg)
 
 Dit voorbeeld helpt u het verschil te begrijpen tussen een persoon/persoon en een ontvanger in Adobe Campaign. Wij zullen een levering naar verscheidene mensen verzenden om het verschil tussen mensen en ontvangers te benadrukken terwijl het detailleren van de berekeningsmethode voor de volgende indicatoren:
 
@@ -98,7 +100,7 @@ Personen: Aangezien de browser van deze ontvanger cookies accepteert, kunnen we 
 | John | - | - | - |
 | Marie | - | - | +1 |
 | Florian | +1 | +1 | +1 |
-| Tussentotaal | 1 | 3 | 2 |
+| Tussentotaal | 1 | 1 | 2 |
 
 De volgende logboeken vallen samen met de open en twee klikken die worden uitgevoerd door de persoon die Florian de e-mail heeft doorgestuurd naar:
 
@@ -120,7 +122,7 @@ De volgende logboeken vallen samen met de open en twee klikken die worden uitgev
 | Marie | - | - | +1 |
 | Florian | +1 | +1 | +1 |
 | Onbekende persoon | - | +1 | - |
-| Tussentotaal | 1 | 2 | 2 |
+| Tussentotaal | 3 | 2 | 2 |
 
 ## Stap 4: Henry {#step-4--henry}
 
@@ -155,7 +157,7 @@ Op het niveau van levering, hebben wij de volgende resultaten:
 
 * **[!UICONTROL Clicks]** (ontvangers die hebben geklikt): 2
 * **[!UICONTROL Distinct clicks for the population reached]** (personen die hebben geklikt): 6
-* **[!UICONTROL Distinct opens for the population reached]** (ontvangers die opende): 1
+* **[!UICONTROL Distinct opens for the population reached]** (ontvangers die opende): 3
 
 De ruwe reactiviteit en de raming van de forwards worden als volgt berekend:
 

@@ -6,7 +6,7 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: a104d8ce-1c28-4da9-bcbf-c17adb1c85c1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # Workflows starten{#starting-workflows}
+
+![](../../assets/v7-only.svg)
 
 Met de **[!UICONTROL Managing social networks]**-workflows die via het knooppunt **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** kunnen worden geopend, kunt u Adobe Campaign synchroniseren met Twitter en Facebook.
 

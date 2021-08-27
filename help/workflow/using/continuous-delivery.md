@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 6%
+ht-degree: 10%
 
 ---
 
 # Doorlopende levering{#continuous-delivery}
+
+![](../../assets/common.svg)
 
 Met een actie van het type **Continue levering** kunt u nieuwe ontvangers toevoegen aan een bestaande levering. Met dit leveringstype hoeft u niet telkens een nieuwe levering te maken: Deze modus is vaak efficiënter, met name voor kleine waarschuwingen of meldingen die zo nodig worden verzonden.
 
@@ -56,11 +58,11 @@ Met de **doorlopende levering** kunt u nieuwe ontvangers toevoegen aan een besta
 
 Een ononderbroken levering zal tot één enkele levering en leveringslogboeken (wideLog) leiden en het volgen logboeken die erop wijzen dat één levering wordt toegevoegd telkens als het uitvoert.
 
-![Doorlopende levering](assets/delivery_continuous.jpg)
+![Ononderbroken levering](assets/delivery_continuous.jpg)
 
 ## Video over zelfstudie {#continuous-delivery-video}
 
-Deze video toont hoe te om een ononderbroken levering met een stijgende vraag te vormen.
+Deze video laat zien hoe u een doorlopende levering configureert met een stapsgewijze query.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 

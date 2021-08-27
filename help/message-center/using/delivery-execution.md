@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 6%
@@ -15,7 +15,9 @@ ht-degree: 6%
 
 # Uitvoering van levering {#delivery-execution}
 
-## Transactiebericht {#transactional-message-send} verzenden
+![](../../assets/v7-only.svg)
+
+## Transactiebericht verzenden {#transactional-message-send}
 
 Op de uitvoeringsinstantie wordt de levering verzonden zodra het verrijkingsstadium is voltooid en een leveringssjabloon aan de gebeurtenis is gekoppeld.
 
@@ -35,7 +37,7 @@ Standaard worden ze in submappen gesorteerd op leveringsmaand. Deze soort kan in
 >
 >Voor gehoste of hybride installaties, als u aan [Verbeterde MTA](../../delivery/using/sending-with-enhanced-mta.md) hebt bevorderd, kunnen alle transactionele berichten ook met Adobe Campaign Verbeterde MTA voor betere leverability, productie, en stuitbehandeling worden verzonden. Alle effecten zijn hetzelfde als bij standaardmarketingberichten.
 
-## Controle van het transactiebericht {#transactional-message-monitoring}
+## Transactionele berichtbewaking {#transactional-message-monitoring}
 
 Om uw transactieberichten te controleren, controleer [leveringslogboeken](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 

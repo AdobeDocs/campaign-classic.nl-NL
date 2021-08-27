@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 23ca17f8-de1a-4f9c-8357-3965dc3329b1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # De opmaak van webformulieren definiëren{#defining-web-forms-layout}
 
-## Containers {#creating-containers} maken
+![](../../assets/common.svg)
+
+## Containers maken {#creating-containers}
 
 Met containers kunt u de velden van een pagina combineren en de lay-out ervan configureren. om de elementen op de pagina in te delen.
 
@@ -35,7 +37,7 @@ In het bovenstaande voorbeeld ziet de rendering er als volgt uit:
 
 ![](assets/s_ncs_admin_survey_containers_std_ex.png)
 
-## De velden op de pagina {#positioning-the-fields-on-the-page} plaatsen
+## De velden op de pagina plaatsen {#positioning-the-fields-on-the-page}
 
 De indeling van het webformulier wordt per pagina gedefinieerd in elke container en kan zo nodig worden overgeladen.
 

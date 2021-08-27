@@ -6,7 +6,7 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: 263e5ffe-9302-4823-a814-fdc955e3f90a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Overzicht{#overview}
+
+![](../../assets/v7-only.svg)
 
 Met Social Marketing kunt u leveringen verzenden naar uw verschillende Facebook-pagina&#39;s en Twitter-accounts, in tegenstelling tot profielen voor ontvangers. Op Facebook wordt de inhoud van de levering weergegeven in de vorm van publicaties op paginamuren en wordt deze ook weergegeven in de nieuwsfeed van alle fans. In Twitter wordt de inhoud van de levering weergegeven als tweets en wordt deze weergegeven op de homepage van de volgers van de account. U kunt ook directe berichten verzenden naar de accounthandlers die u verzamelt.
 

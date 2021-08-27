@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Workflowuitvoering{#workflow-execution}
+
+![](../../assets/v7-only.svg)
 
 In de onderstaande sectie vindt u informatie over algemene problemen met betrekking tot de uitvoering van workflows en hoe u deze problemen kunt oplossen.
 
@@ -77,7 +79,7 @@ Dit probleem kan verschillende oorzaken hebben: volg de onderstaande stappen om 
 
 Raadpleeg [deze sectie](../../workflow/using/monitoring-workflow-execution.md) voor meer informatie over hoe u workflows kunt controleren.
 
-## Bezig met starten {#start-in-progress}
+## Beginnen in uitvoering {#start-in-progress}
 
 Als de werkschema&#39;s niet worden uitgevoerd en hun status **Begin lopend** is, zou dit kunnen betekenen dat de werkschemamodule niet wordt gelanceerd.
 
@@ -110,7 +112,7 @@ Voer de volgende stappen uit om dit te controleren en de module indien nodig te 
 
    Raadpleeg [deze sectie](../../production/using/usual-commands.md#module-launch-commands) voor meer informatie over het opnieuw opstarten van modules.
 
-## Mislukte werkstroom {#failed-workflow}
+## Mislukte workflow {#failed-workflow}
 
 Als een werkstroom mislukt, voert u de volgende stappen uit:
 

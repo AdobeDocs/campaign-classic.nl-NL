@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Problemen met prestaties en doorvoer{#performance-and-throughput-issues}
+
+![](../../assets/v7-only.svg)
 
 Eerst en vooral, zou u moeten controleren dat u de recentste bouwstijl hebt geïnstalleerd. Dit zorgt ervoor dat u de recentste eigenschappen en insectenmoeilijke situaties hebt.
 
@@ -52,7 +54,7 @@ Hier volgt een lijst met artikelen die betrekking hebben op de aanbevolen werkwi
 * TLS-configuratie: het wereldwijd inschakelen van TLS wordt afgeraden omdat dit de doorvoer kan verminderen. In plaats daarvan moeten de TLS-instellingen per domein, beheerd door het leveringsteam, worden afgestemd op de behoeften. Raadpleeg deze [pagina](../../installation/using/email-deliverability.md#mx-configuration) voor meer informatie.
 * DKIM: Om het veiligheidsniveau van DKIM te verzekeren, is 1024b de beste praktijken geadviseerde encryptiegrootte. De lagere sleutels DKIM zullen niet als geldig door de meerderheid van toegangsleveranciers worden beschouwd. Zie [deze pagina](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
-## Problemen met de aflevering {#deliverability-issues}
+## Leverbaarheidsproblemen {#deliverability-issues}
 
 Hier volgt een lijst met best practices en artikelen met betrekking tot de te leveren items:
 

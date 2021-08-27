@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: d7d1e427-12e0-4f07-9e01-d184dbe2ebf1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 2%
@@ -15,11 +15,13 @@ ht-degree: 2%
 
 # indexelement {#dbindex--element}
 
+![](../../../assets/v7-only.svg)
+
 ## Inhoudsmodel {#content-model-3}
 
 index:==keyfield
 
-## Kenmerken {#attributes-3}
+## Attributen {#attributes-3}
 
 * @_operation (tekenreeks)
 * @applicableIf (tekenreeks)
@@ -47,7 +49,7 @@ De volgorde van de `<keyfield>`-elementen die in een `<dbindex>` zijn gedefiniee
 
 De naam van de index in de database wordt berekend door de naam van de tabel en de naam van de index samen te voegen. Bijvoorbeeld: Tabelnaam &quot;Voorbeeld&quot;, Namespace &quot;Cus&quot;, indexnaam &quot;MyIndex&quot;-> naam van het indexveld tijdens het opvragen van indexitems: &quot;CusSample_myIndex&quot;.
 
-## Kenmerkbeschrijving {#attribute-description-3}
+## Beschrijving van kenmerk {#attribute-description-3}
 
 * **_operation (string)**: definieert het type schrijven in de database.
 

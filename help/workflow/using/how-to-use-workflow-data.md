@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # Workflowdata gebruiken{#how-to-use-workflow-data}
 
-## De database {#updating-the-database} bijwerken
+![](../../assets/common.svg)
+
+## De database bijwerken {#updating-the-database}
 
 Alle verzamelde gegevens kunnen worden gebruikt om de database bij te werken, of in leveringen. U kunt bijvoorbeeld de personalisatiemogelijkheden voor berichtinhoud verrijken (het aantal contracten in het bericht opnemen, het gemiddelde winkelwagentje van het afgelopen jaar opgeven, enzovoort) of een gedetailleerde bevolkingsgerichtheid (verzend een bericht aan contractmedehouders, richt de 1.000 beste abonnees aan online diensten, enz.). Deze gegevens kunnen ook worden geëxporteerd of gearchiveerd in een lijst.
 
@@ -29,23 +31,23 @@ De gegevens van de Adobe Campaign-databank en de bestaande lijsten kunnen worden
 
    ![](assets/s_user_create_list.png)
 
-   Zie [Lijstupdate](../../workflow/using/list-update.md).
+   Zie [Lijstupdate](list-update.md).
 
 * De **[!UICONTROL Update data]** activiteit voert een massa update van de gebieden in het gegevensbestand uit.
 
-   Raadpleeg [Gegevens bijwerken](../../workflow/using/update-data.md) voor meer informatie hierover.
+   Raadpleeg [Gegevens bijwerken](update-data.md) voor meer informatie hierover.
 
-### Abonnementsbeheer/-beheer {#subscription-unsubscription-management}
+### Abonnementsbeheer/Abonnementsbeheer {#subscription-unsubscription-management}
 
-Raadpleeg [Abonnementsservices](../../workflow/using/subscription-services.md) voor informatie over het abonneren en het opzeggen van ontvangers voor een informatieservice via een workflow.
+Raadpleeg [Abonnementsservices](subscription-services.md) voor informatie over het abonneren en het opzeggen van ontvangers voor een informatieservice via een workflow.
 
 ## Verzenden via een workflow {#sending-via-a-workflow}
 
 ### Leveringsactiviteit {#delivery-activity}
 
-De leveringsactiviteit wordt gedetailleerd in [Levering](../../workflow/using/delivery.md).
+De leveringsactiviteit wordt gedetailleerd in [Levering](delivery.md).
 
-### Verrijken en richten van leveringen {#enriching-and-targeting-deliveries}
+### Verrijking en gerichtheid van leveringen {#enriching-and-targeting-deliveries}
 
 Leveringen kunnen gegevens uit workflows verwerken om de inhoud aan te passen of binnen het kader van de selectie van doelgroepen.
 
@@ -57,7 +59,7 @@ Naast de gebruikelijke verpersoonlijkingsgebieden, kunt u verpersoonlijkingsgebi
 
 ![](assets/s_advuser_using_additional_data.png)
 
-De gegevens in de workflowtabel worden aangeduid met de naam: het wordt altijd samengesteld uit **targetData** verbinding. Raadpleeg [Doelgegevens](../../workflow/using/data-life-cycle.md#target-data) voor meer informatie hierover.
+De gegevens in de workflowtabel worden aangeduid met de naam: het wordt altijd samengesteld uit **targetData** verbinding. Raadpleeg [Doelgegevens](data-life-cycle.md#target-data) voor meer informatie hierover.
 
 In het kader van de e-maillevering kunnen personaliseringsgebieden ook gegevens gebruiken van doeluitbreiding die in de het richten werkschemasfases wordt uitgevoerd, zoals aangetoond in het hieronder voorbeeld:
 

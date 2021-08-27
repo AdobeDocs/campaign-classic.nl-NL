@@ -6,16 +6,18 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '917'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Levering{#delivery}
 
-Met een activiteit van het type **Delivery** kunt u een leveringsactie maken. Het kan worden geconstrueerd met behulp van inputelementen.
+![](../../assets/common.svg)
+
+Met een activiteit van het type **Delivery** kunt u een leveringsactie maken. Deze kan worden samengesteld uit invoerelementen.
 
 Om het te vormen, geef de activiteit uit en ga de leveringsopties in.
 
@@ -81,7 +83,7 @@ Om het te vormen, geef de activiteit uit en ga de leveringsopties in.
    * **[!UICONTROL Send a proof]**: met deze optie kunt u een bewijs van levering verzenden. Deze actie is het equivalent van het klikken van de **[!UICONTROL Send a proof]** knoop in de toolbar van een levering met **Levering**
    * **[!UICONTROL Prepare and start]**: met deze optie wordt het volledige analyseproces gestart ( doelberekening en inhoudsvoorbereiding ) en wordt de levering verzonden . Deze actie is het equivalent van het klikken **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]**, en **[!UICONTROL Confirm delivery]** optie wanneer het verzenden van een levering naar het belangrijkste doel met **Levering**.
 
-   Met de **[!UICONTROL Act on a delivery]** activiteit die verder in de workflow wordt gebruikt, kunt u alle resterende stappen starten die vereist zijn voor het starten van de levering (doelberekening, inhoudsvoorbereiding, levering). Voor meer op dit, verwijs naar [Leveringscontrole](../../workflow/using/delivery-control.md).
+   Met de **[!UICONTROL Act on a delivery]** activiteit die verder in de workflow wordt gebruikt, kunt u alle resterende stappen starten die vereist zijn voor het starten van de levering (doelberekening, inhoudsvoorbereiding, levering). Voor meer op dit, verwijs naar [Leveringscontrole](delivery-control.md).
 
    De volgende opties zijn ook beschikbaar:
 
@@ -95,7 +97,7 @@ Om het te vormen, geef de activiteit uit en ga de leveringsopties in.
 
    * **[!UICONTROL Processing errors]**
 
-      Zie [Leveringscontrole](../../workflow/using/delivery-control.md).
+      Zie [Leveringscontrole](delivery-control.md).
    Met het tabblad **Script** kunt u de leveringsparameters wijzigen.
 
    ![](assets/edit_diffusion_fil_script.png)
@@ -125,11 +127,11 @@ Open de activiteit **Approval** en definieer de eigenschappen als volgt:
    Do you wish to approve delivery (<%= vars.recCount %> recipient(s))?
    ```
 
-   Dit is een bericht dat een expressie bevat die in JavaScript is geschreven: **[!UICONTROL vars.recCount]** vertegenwoordigt het aantal ontvangers gericht door de levering van de voorafgaande taak. Raadpleeg [JavaScript-scripts en -sjablonen](../../workflow/using/javascript-scripts-and-templates.md) voor meer informatie over JavaScript-expressies.
+   Dit is een bericht dat een expressie bevat die in JavaScript is geschreven: **[!UICONTROL vars.recCount]** vertegenwoordigt het aantal ontvangers gericht door de levering van de voorafgaande taak. Raadpleeg [JavaScript-scripts en -sjablonen](javascript-scripts-and-templates.md) voor meer informatie over JavaScript-expressies.
 
    ![](assets/new-workflow-param-validation.png)
 
-   De goedkeuringstaak wordt gedetailleerd in [Goedkeuring](../../workflow/using/approval.md).
+   De goedkeuringstaak wordt gedetailleerd in [Goedkeuring](approval.md).
 
 ## Invoerparameters {#input-parameters}
 

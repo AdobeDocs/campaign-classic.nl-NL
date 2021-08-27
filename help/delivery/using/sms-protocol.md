@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '8433'
 ht-degree: 0%
@@ -15,10 +15,11 @@ ht-degree: 0%
 
 # Protocol en instellingen voor sms-connector {#sms-connector-protocol}
 
+![](../../assets/common.svg)
+
 >[!NOTE]
 >
 >In dit document verwijzen alle verwijzingen naar details over het protocol, veldnamen en waarden naar de [SMPP 3.4-specificatie](https://smpp.org/SMPP_v3_4_Issue1_2.pdf).
-
 
 ## Overzicht {#overview}
 
@@ -354,7 +355,7 @@ De maximumgrootte van een bericht hangt van zijn codering af. In deze tabel word
 | Codering | Gebruikelijke gegevens_codering | Berichtgrootte (tekens) | Onderdeelformaat voor SMS met meerdere onderdelen | Beschikbare tekens |
 |:-:|:-:|:-:|:-:|:-:|
 | GSM7 | 0 | 160 | 152 | GSM7 basis tekenset + extensie (uitgebreide tekens nemen 2 tekens in beslag) |
-| Latin-1 | 1 | 140 | 134 | ISO-8859-1 |
+| Latin-1 | 3 | 140 | 134 | ISO-8859-1 |
 | UCS-2 <br>UTF-16 | 8 | 70 | 67 | Unicode (verschilt per telefoon) |
 
 ## SMPP-parameters voor externe accounts {#SMPP-parameters-external}

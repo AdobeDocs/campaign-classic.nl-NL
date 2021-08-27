@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 240d7e11-da3a-4d64-8986-1f1c8ebcea3c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '643'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Verbinding maken met de database {#connecting-to-the-database}
+
+![](../../assets/v7-only.svg)
 
 Als u een verbinding met de externe database wilt inschakelen, moet u de verbindingsparameters aangeven, dat wil zeggen de doelgegevensbron en de naam van de tabel met gegevens die moeten worden geladen.
 
@@ -44,7 +46,7 @@ Als u een verbinding met een gedeelde externe database wilt inschakelen, zolang 
 
 U kunt specifieke werktabelruimten definiëren voor de tabellen en voor de index op het tabblad **[!UICONTROL Parameters]**.
 
-## Tijdelijke verbinding {#creating-a-temporary-connection} maken
+## Tijdelijke verbinding maken {#creating-a-temporary-connection}
 
 U kunt rechtstreeks vanuit workflowactiviteiten een verbinding met een externe database definiëren. In dit geval bevindt het bestand zich in een lokale externe database die is gereserveerd voor gebruik in een huidige workflow: het wordt niet opgeslagen op de externe accounts. Dit type punctuele verbinding kan op verschillende activiteiten van het werkschema worden tot stand gebracht, met name **[!UICONTROL Query]**, **[!UICONTROL Data loading (RDBMS)]**, **[!UICONTROL Enrichment]** activiteit of **[!UICONTROL Split]** activiteit.
 

@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: fd0f7b6e-84e1-442d-ae88-817fb6758d64
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 18%
@@ -14,6 +14,8 @@ ht-degree: 18%
 ---
 
 # Profielen importeren en exporteren{#exporting-and-importing-profiles}
+
+![](../../assets/common.svg)
 
 U kunt [workflows gebruiken](#use-workflows) om ontvangersprofielen te importeren of te exporteren naar een Adobe Campaign-database, of u kunt [generieke import- of exporttaken](#create-jobs) instellen.
 

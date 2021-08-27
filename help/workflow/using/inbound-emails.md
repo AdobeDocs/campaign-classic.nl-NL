@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Binnenkomende e-mails{#inbound-emails}
+
+![](../../assets/common.svg)
 
 Met de activiteit **Binnenkomende e-mails** kunt u e-mailberichten downloaden en verwerken vanaf een POP3-mailserver.
 
@@ -68,7 +70,7 @@ Het eerste lusje van **Binnenkomende E-mail** activiteit laat u de parameters va
 
    Als u een schema voor de activiteit wilt definiëren, klikt u op het tabblad **[!UICONTROL Scheduling]** en schakelt u **[!UICONTROL Plan execution]** in. Klik **[!UICONTROL Change]** knoop om het programma te vormen.
 
-   De configuratie van het programma is het zelfde als voor de het plannen activiteit. Zie [Planner](../../workflow/using/scheduler.md).
+   De configuratie van het programma is het zelfde als voor de het plannen activiteit. Zie [Planner](scheduler.md).
 
 1. **[!UICONTROL Expiration]**
 
@@ -76,4 +78,4 @@ Het eerste lusje van **Binnenkomende E-mail** activiteit laat u de parameters va
 
    ![](assets/email_rec_edit_3.png)
 
-   De configuratie is het zelfde als voor de het plannen activiteit. Zie [Verlopen](../../workflow/using/defining-approvals.md).
+   De configuratie is het zelfde als voor de het plannen activiteit. Zie [Verlopen](defining-approvals.md).

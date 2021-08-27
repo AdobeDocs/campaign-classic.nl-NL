@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Geavanceerde parameters{#advanced-parameters}
+
+![](../../assets/common.svg)
 
 Het eigenschappenscherm van een activiteit heeft een **[!UICONTROL Advanced]** lusje dat u een gedrag in het geval van fouten, de uitvoeringsperiode voor de activiteit laat bepalen; en kunt u een initialisatiescript invoeren. Er zijn twee versies van dit tabblad:
 
@@ -33,7 +35,7 @@ Dit veld bevat de interne naam van de activiteit.
 
 ## Afbeelding {#image}
 
-In dit veld kunt u de afbeelding wijzigen die aan een activiteit is gekoppeld. Raadpleeg voor meer informatie: [Activiteitenafbeeldingen beheren](../../workflow/using/managing-activity-images.md).
+In dit veld kunt u de afbeelding wijzigen die aan een activiteit is gekoppeld. Raadpleeg voor meer informatie: [Activiteitenafbeeldingen beheren](managing-activity-images.md).
 
 ## Execution {#execution}
 
@@ -65,7 +67,7 @@ In dit veld kunt u het gedrag definiëren dat moet worden toegepast bij het gebr
 
 ## Tijdzone {#time-zone}
 
-In dit veld kunt u de tijdzone van de activiteit selecteren. Voor meer informatie hierover: [Tijdzones beheren](../../workflow/using/managing-time-zones.md).
+In dit veld kunt u de tijdzone van de activiteit selecteren. Voor meer informatie hierover: [Tijdzones beheren](managing-time-zones.md).
 
 ## Bij fouten {#in-case-of-errors}
 
@@ -76,7 +78,7 @@ In dit veld kunt u de actie definiëren die moet worden uitgevoerd wanneer de ac
 
 ## Initialisatiescript {#initialization-script}
 
-In dit veld kunt u variabelen initialiseren of eigenschappen van activiteit wijzigen. Raadpleeg voor meer informatie: [JavaScript-scripts en -sjablonen](../../workflow/using/javascript-scripts-and-templates.md).
+In dit veld kunt u variabelen initialiseren of eigenschappen van activiteit wijzigen. Raadpleeg voor meer informatie: [JavaScript-scripts en -sjablonen](javascript-scripts-and-templates.md).
 
 ## Opmerking {#comment}
 

@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 4%
@@ -15,20 +15,21 @@ ht-degree: 4%
 
 # Aan de slag met enquêtes {#about-surveys}
 
+![](../../assets/v7-only.svg)
+
 Adobe Campaign bevat een grafische module voor het definiëren en publiceren van webtoepassingen. Hiermee maakt u pagina&#39;s, zoals een bewerkingsformulier op een extranet, of meldingsformulieren, inclusief gegevens uit de database met tabellen, grafieken, invoerformulieren, enz. Met deze functie kunt u webpagina&#39;s ontwerpen en plaatsen waarin gebruikers gegevens kunnen opzoeken of invoeren.
 
 Met de optionele **Survey** add-on kunt u een nieuw type webtoepassing maken en beheren voor het maken en beheren van online vragenlijsten, zoals formulieren voor het toevoegen of wijzigen van profielgegevens, voor het abonneren op of het opzeggen van een informatieservice of een formulier voor mededingingsgegevens. Zodra de antwoorden zijn verzameld, worden zij opgeslagen in het gegevensbestand of in lokale variabelen. Het gegevensmodel kan dynamisch worden uitgebreid via de antwoorden op vragenlijsten. U kunt de resultaten in real time bekijken, de reacties filtreren, en hen analyseren gebruikend specifieke grafieken.
 
 In dit hoofdstuk wordt beschreven hoe u **Enquêtes**, veld- en paginabeheer, opslagmodi en records kunt maken en beheren.
 
-[!DNL :bulb:] Leer hoe u uw eerste enquête maakt op  [deze pagina](getting-started-with-surveys.md).
+Leer hoe u uw eerste enquête maakt op [deze pagina](getting-started-with-surveys.md).
 
 >[!NOTE]
 >
 >* De gedetailleerde stappen voor het creëren van een standaardvorm van het Web zijn beschikbaar in [dit document](../../web/using/about-web-forms.md).
-   >
-   >
-* Webtoepassingsbeheer wordt beschreven in [dit document](../../web/using/about-web-applications.md). Raadpleeg dit hoofdstuk voor meer informatie.
+>
+>* Webtoepassingsbeheer wordt beschreven in [dit document](../../web/using/about-web-applications.md). Raadpleeg dit hoofdstuk voor meer informatie.
 
 
 ## Functiebereik {#campaign-surveys-scope}
@@ -48,11 +49,11 @@ In Adobe Campaign, gebruik [de toepassingen van het Web](../../web/using/about-w
 
 De optionele module voor het maken van enquêtes biedt een gebruikersvriendelijke gebruikersinterface en de volgende aanvullende functies:
 
-* Dynamische extensie van de database: het creëren van antwoorden die geen deel van het aanvankelijke gegevensmodel uitmaken. [Meer informatie](../../surveys/using/managing-answers.md#storing-collected-answers).
-* Score-beheer. [Meer informatie](../../surveys/using/managing-answers.md#score-management).
-* Willekeurige weergave van vragen. [Meer informatie](../../surveys/using/building-a-survey.md#adding-questions).
-* Real time tracking van antwoorden. [Meer informatie](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking).
-* Speciale rapporten genereren. [Meer informatie](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys).
+* Dynamische extensie van de database: het creëren van antwoorden die geen deel van het aanvankelijke gegevensmodel uitmaken. [Meer info](../../surveys/using/managing-answers.md#storing-collected-answers).
+* Score-beheer. [Meer info](../../surveys/using/managing-answers.md#score-management).
+* Willekeurige weergave van vragen. [Meer info](../../surveys/using/building-a-survey.md#adding-questions).
+* Real time tracking van antwoorden. [Meer info](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking).
+* Speciale rapporten genereren. [Meer info](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys).
 
 
 ## Implementatiestappen {#surveys-implementation-steps}

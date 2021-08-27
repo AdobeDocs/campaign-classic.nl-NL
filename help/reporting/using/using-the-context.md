@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 2%
@@ -15,11 +15,13 @@ ht-degree: 2%
 
 # De context gebruiken{#using-the-context}
 
+![](../../assets/common.svg)
+
 Wanneer u gegevens in de vorm van **[!UICONTROL tables]** of **[!UICONTROL charts]** wilt vertegenwoordigen, kan het uit twee bronnen worden genomen: een nieuwe query (zie [Een direct filter definiëren op gegevens](#defining-a-direct-filter-on-data)) of de rapportcontext (zie [Contextgegevens gebruiken](#using-context-data)).
 
-## Een direct filter definiëren voor gegevens {#defining-a-direct-filter-on-data}
+## Een rechtstreeks filter op gegevens definiëren {#defining-a-direct-filter-on-data}
 
-### Data filteren {#filtering-data}
+### Gegevens filteren {#filtering-data}
 
 Het gebruiken van **[!UICONTROL Query]** typeactiviteit is niet verplicht wanneer het bouwen van een rapport. De gegevens kunnen direct in de lijsten en grafieken worden gefiltreerd die omhoog het rapport maken.
 
@@ -45,7 +47,7 @@ De rendering ziet er als volgt uit:
 
 ![](assets/reporting_graph_with_2vars_preview.png)
 
-### Voorbeeld: een filter gebruiken in een draaientabel {#example--use-a-filter-in-a-pivot-table}
+### Voorbeeld: een filter in een draaientabel gebruiken {#example--use-a-filter-in-a-pivot-table}
 
 In dit voorbeeld kunt u met het filter alleen niet-Parisiaanse klanten in de draaitabel weergeven, zonder dat u daarvoor een andere query hoeft te gebruiken.
 
@@ -62,7 +64,7 @@ Slechts zullen de ontvangers die de het filtreren criteria voldoen in het rappor
 
 ![](assets/s_ncs_advuser_report_display_04.png)
 
-## Contextgegevens {#using-context-data} gebruiken
+## Contextgegevens gebruiken {#using-context-data}
 
 Om gegevens in de vorm van **[!UICONTROL table]** of **[!UICONTROL chart]** te vertegenwoordigen, kunnen de gegevens uit de rapportcontext komen.
 

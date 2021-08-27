@@ -6,7 +6,7 @@ description: Leer hoe u toegang tot Google BigQuery configureert in FDA
 audience: platform
 content-type: reference
 topic-tags: connectors
-source-git-commit: 911302475b5ece96d527575148ee611fdb839753
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 2%
@@ -14,7 +14,9 @@ ht-degree: 2%
 ---
 
 
-# Toegang tot Google BigQuery {#configure-fda-google-big-query} configureren
+# Toegang tot Google BigQuery configureren {#configure-fda-google-big-query}
+
+![](../../assets/v7-only.svg)
 
 Gebruik de optie Adobe Campaign Classic **Federated Data Access** (FDA) om informatie te verwerken die is opgeslagen in een externe database. Voer de onderstaande stappen uit om toegang tot [!DNL Google BigQuery] te configureren.
 
@@ -224,7 +226,7 @@ Met het hulpprogramma Bulk Load kunt u sneller overdragen, wat wordt bereikt met
 
 1. Start Adobe Campaign Classic opnieuw om rekening te houden met de wijzigingen.
 
-## Externe Google BigQuery-account {#google-external}
+## Externe account voor Google BigQuery {#google-external}
 
 U moet een [!DNL Google BigQuery] externe rekening tot stand brengen om uw instantie van Adobe Campaign Classic met uw [!DNL Google BigQuery] externe gegevensbestand te verbinden.
 

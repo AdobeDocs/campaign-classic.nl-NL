@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 555082a2-1b62-4aa4-b80c-77b1a1ef9491
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 40%
@@ -14,6 +14,8 @@ ht-degree: 40%
 ---
 
 # Aan de slag met personalisatie{#about-personalization}
+
+![](../../assets/common.svg)
 
 Berichten die door Adobe Campaign worden geleverd, kunnen op verschillende manieren worden gepersonaliseerd, met betrekking tot de content of de weergave van berichten. Deze methoden kunnen worden gecombineerd aan de hand van criteria die met name uit de profielen van de ontvangers zijn afgeleid. Voor e-mailleveringen kunt u de elementen en voorwaarden voor de personalisatie van een levering rechtstreeks in JavaScript definiëren via het tabblad **[!UICONTROL Source]** van het bericht. In het algemeen kunt u met Adobe Campaign:
 

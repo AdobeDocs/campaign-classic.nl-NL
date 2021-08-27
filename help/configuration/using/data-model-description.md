@@ -6,14 +6,16 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 1%
 
 ---
 
-# Beschrijving van cameragegevensmodel{#data-model-description}
+# Beschrijving van gegevensmodel campagne{#data-model-description}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign bevat een vooraf gedefinieerd datamodel. In deze sectie vindt u enkele details over de ingebouwde tabellen van het Adobe Campaign-gegevensmodel en de interactie ervan.
 
@@ -127,9 +129,9 @@ Deze reeks lijsten is verbonden met **Marketing campagnes** module, die toestaat
 * **NmsTask**: Deze tabel komt overeen met de  **nms:** taakschema. Het bevat de definitie van een marketingtaak.
 * **NmsAsset**: Deze tabel komt overeen met de  **nms:** assetschema. Het bevat de definitie van een marketingmiddel.
 
-## Communicatie consistentie {#communication-consistency}
+## Communicatieconsistentie {#communication-consistency}
 
-Deze reeks lijsten is verbonden met **de module van de Optimalisering van de Campagne**, die toestaat om het verzenden van leveringen te controleren, te filtreren en te controleren. Voor meer op dit, zie [Ongeveer campagnetypologies](../../campaign/using/about-campaign-typologies.md).
+Deze reeks lijsten is verbonden met **de module van de Optimalisering van de Campagne**, die toestaat om het verzenden van leveringen te controleren, te filtreren en te controleren. Voor meer op dit, zie [Ongeveer campagnetypologies](../../campaign-opt/using/about-campaign-typologies.md).
 
 ![](assets/data-model_typology.png)
 
@@ -141,7 +143,7 @@ Deze reeks lijsten is verbonden met **de module van de Optimalisering van de Cam
 
 ## Responsbeheer {#response-management}
 
-Deze reeks lijsten is verbonden met **de module van de Manager van de Reactie**, die toestaat om het succes en de rentabiliteit van marketing campagnes te meten of voorstellen voor alle communicatie kanalen aan te bieden. Zie [Informatie over responsmanager](../../campaign/using/about-response-manager.md) voor meer informatie.
+Deze reeks lijsten is verbonden met **de module van de Manager van de Reactie**, die toestaat om het succes en de rentabiliteit van marketing campagnes te meten of voorstellen voor alle communicatie kanalen aan te bieden. Zie [Informatie over responsmanager](../../response/using/about-response-manager.md) voor meer informatie.
 
 ![](assets/data-model_response.png)
 
@@ -221,7 +223,7 @@ Deze reeks lijsten is verbonden met de **Interactie** module, die toestaat om in
 * **NmsOfferCategory**: Deze tabel komt overeen met de  **nms:offerCategory**. Het bevat de aanbiedingrubrieken.
 * **NmsOfferEnv**: Deze tabel komt overeen met de  **nms:offerEnv**. Het bevat de aanbiedingsomgevingen.
 
-## Berichtmiddelmodule {#message-center-module}
+## Module Berichtencentrum {#message-center-module}
 
 De volgende reeks lijsten is verbonden met **Transactioneel overseinen** (het Centrum van het Bericht) module, die toestaat om individuele en unieke die mededelingen te beheren aan een gebruiker worden verzonden en van gebeurtenissen worden geproduceerd die van informatiesystemen worden teweeggebracht. Voor meer op dit, zie [Ongeveer transactioneel overseinen](../../message-center/using/about-transactional-messaging.md).
 

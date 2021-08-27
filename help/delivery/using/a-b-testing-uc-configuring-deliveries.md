@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 809de30b-7d08-40de-bf3e-dc80d62eae80
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # De leveringen in de workflow configureren {#step-4--configuring-the-deliveries-in-the-workflow}
+
+![](../../assets/common.svg)
 
 Zodra [populaties worden gecreeerd](a-b-testing-uc-population-samples.md), kunt u de leveringen vormen. In dit geval, laten de eerste twee leveringen u toe om verschillende inhoud naar populatie A en B te verzenden. De derde levering is de levering die terugvalt: het wordt verzonden naar de ontvangers die niet tot A of B behoren. De inhoud ervan wordt berekend met behulp van een script en is gelijk aan A of B, afhankelijk van welke score de hoogste open snelheid heeft behaald. We moeten een wachtperiode configureren voor de derde levering, om het resultaat van de leveringen A en B te achterhalen. Dit is waarom de derde levering een **[!UICONTROL Wait]** activiteit omvat.
 
@@ -50,4 +52,4 @@ Zodra [populaties worden gecreeerd](a-b-testing-uc-population-samples.md), kunt 
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
 
-U kunt nu het script maken. [Meer informatie](a-b-testing-uc-script.md).
+U kunt nu het script maken. [Meer info](a-b-testing-uc-script.md).

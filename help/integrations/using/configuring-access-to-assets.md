@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
-source-git-commit: 7bcd80a9b89982542ae6944ae0c96c02d83cd198
+source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Toegang tot elementen configureren{#configuring-access-to-assets}
+
+![](../../assets/common.svg)
 
 In deze sectie worden de benodigde configuratiestappen in Adobe Campaign beschreven voor het gebruik van de integratiefuncties met de Assets Core-service of Adobe Experience Manager Assets (AEM Assets)-bibliotheek.
 
@@ -33,7 +35,7 @@ In deze sectie worden de benodigde configuratiestappen in Adobe Campaign beschre
 Als u de integratie tussen Adobe Campaign en Experience Cloud Assets wilt gebruiken, moet u beschikken over:
 
 * Een Adobe Experience Cloud-organisatie
-* De verificatiemodus Adobe IMS ingeschakeld
+* De verificatiemodus van Adobe IMS is ingeschakeld
 
 Als u de verbinding tussen Adobe Campaign en Adobe Experience Cloud wilt inschakelen, configureert u de verbinding via IMS (Adobe ID-verbindingsservice). Deze configuratie wordt gedetailleerd beschreven in [Verbinding maken via een Adobe ID](../../integrations/using/about-adobe-id.md)-document. Het gaat om:
 

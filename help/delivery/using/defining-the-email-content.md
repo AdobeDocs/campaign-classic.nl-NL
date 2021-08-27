@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: f2300b265fa97e5b208519ab2446927d14f5f91c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1992'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # De e-mailcontent definiëren {#defining-the-email-content}
+
+![](../../assets/common.svg)
 
 ## Afzender {#sender}
 
@@ -187,9 +189,8 @@ Wanneer u HTML-inhoud met opgenomen afbeeldingen opent in de wizard voor leverin
 >[!IMPORTANT]
 >
 >* De toegangspaden voor afbeeldingen worden gewijzigd tijdens het handmatig uploaden of tijdens het verzenden van berichten.
-   > 
-   >
-* Om prestatieproblemen te voorkomen, moet elke afbeeldingsgrootte standaard niet groter zijn dan 100.000 bytes als u direct gedownloade afbeeldingen van een gepersonaliseerde URL opneemt als [bijlage](attaching-files.md). Deze geadviseerde drempel kan van [de lijst van Campaign Classic opties](../../installation/using/configuring-campaign-options.md#delivery) worden gevormd.
+> 
+>* Om prestatieproblemen te voorkomen, moet elke afbeeldingsgrootte standaard niet groter zijn dan 100.000 bytes als u direct gedownloade afbeeldingen opneemt van een gepersonaliseerde URL als [bijlage](attaching-files.md). Deze geadviseerde drempel kan van [de lijst van Campaign Classic opties](../../installation/using/configuring-campaign-options.md#delivery) worden gevormd.
 
 
 **Hoofdlettergebruik: een bericht met afbeeldingen verzenden**

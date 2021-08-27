@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Best practices voor Interaction{#interaction-best-practices}
+
+![](../../assets/v7-only.svg)
 
 ## Algemene aanbevelingen {#general-recommendations}
 
@@ -44,7 +46,7 @@ Hieronder staan enkele beste praktijken met betrekking tot subsidiabiliteitsrege
 * Aanbevolen wordt een beperkt aantal aanbiedingen per aanbiedingsruimte te hebben. Hierdoor worden aanbiedingen in een bepaalde ruimte sneller opgehaald.
 * Gebruik indexen, vooral bij veelgebruikte opzoekkolommen.
 
-### Propositietabel {#proposition-table}
+### Provisietabel {#proposition-table}
 
 Hieronder staan enkele aanbevolen procedures voor de tabel met voorstellen.
 
@@ -84,7 +86,7 @@ Wanneer u meerdere aanbiedingsruimten opneemt in één e-mailbestelling en sommi
 
 Daarom wordt u aangeraden voor alle aanbiedingsruimten een HTML-renderfunctie te definiëren, zelfs als uw aanbiedingsruimte alleen HTML-inhoud vereist.
 
-### De positie instellen in de tabel in het propositielogbestand {#rank-proposition-log-table}
+### De positie in de tabel in het propositielogboek instellen {#rank-proposition-log-table}
 
 De ruimten van de aanbieding hebben de capaciteit om gegevens in de propositietabel op te slaan wanneer de voorstellen worden geproduceerd of goedgekeurd:
 
@@ -118,7 +120,7 @@ Wanneer de gebruiker Interactie gebruikt en manueel aanbiedingen selecteert, kan
 
 ![](assets/Interaction-best-practices-manual-offer-combined.png)
 
-### Nms&#39;en uitbreiden:aanbiedingsschema {#extending-nms-offer-schema}
+### NMS uitbreiden:aanbiedingsschema {#extending-nms-offer-schema}
 
 Wanneer het uitbreiden van nms:aanbiedingsschema, zorg ervoor u de uit-van-de-doosstructuur reeds opstelling volgt:
 * Definieer een nieuw veld voor de opslag van inhoud onder `<element name="view">`.

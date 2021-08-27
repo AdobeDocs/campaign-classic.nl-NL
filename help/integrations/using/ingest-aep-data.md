@@ -5,7 +5,7 @@ description: Leer hoe u Adobe Experience Platform-publiek inneemt in Campaign Cl
 audience: integrations
 content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # Adobe Experience Platform-segmenten in campagne plaatsen {#destinations}
+
+![](../../assets/common.svg)
 
 Als u Adobe Experience Platform wilt opnemen in Campagne en deze wilt gebruiken in uw workflows, moet u eerst Adobe Campaign verbinden als een Adobe Experience Platform **Doel** en deze configureren met het te exporteren segment.
 

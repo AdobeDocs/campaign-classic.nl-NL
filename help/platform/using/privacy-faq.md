@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ce2c90cd-46d9-4365-8013-5c1273b6c176
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 100%
 
 ---
 
 # Veelgestelde vragen over privacy {#privacy-faq}
+
+![](../../assets/common.svg)
 
 Dit zijn een paar veelgestelde vragen over privacy en toestemming bij het gebruik van Adobe Campaign.
 
@@ -28,7 +30,7 @@ De onderstaande items zijn gekoppeld aan de belangrijkste termen en begrippen in
 * [Toegangsrecht en recht om te worden vergeten](../../platform/using/privacy-management.md#right-access-forgotten)
 * [Toestemming, retentie en rollen](../../platform/using/privacy-management.md#consent-retention-roles)
 
-## Gereedheid voor privacywetgeving {#privacy-regulations-readiness}
+## Gereedheid privacywetgeving {#privacy-regulations-readiness}
 
 ### Wat stelt Adobe Campaign voor om te voldoen aan de nieuwste privacyregels?
 

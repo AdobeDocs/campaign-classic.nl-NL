@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # Voorbeelden van schemabewerking{#examples-of-schemas-edition}
 
-## Een tabel {#extending-a-table} uitbreiden
+![](../../assets/v7-only.svg)
+
+## Een tabel uitbreiden {#extending-a-table}
 
 Pas de volgende procedure toe om de **nms:receiving** schema ontvankelijke lijst uit te breiden:
 

@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 0%
 
 ---
 
-# Hoofdlettergebruik: toezicht op uw workflows{#supervising-workflows}
+# Hoofdlettergebruik: toezicht houden op uw workflows{#supervising-workflows}
+
+![](../../assets/common.svg)
 
 In dit geval wordt het maken van een workflow beschreven waarmee u de status kunt controleren van een set werkstromen die worden gepauzeerd, gestopt of met fouten.
 
@@ -31,11 +33,11 @@ Als u de status van een set workflows wilt controleren, moet u de volgende stapp
 
 >[!NOTE]
 >
->Naast het werkschema, staat de Campagne **WerkstroomHeatmap** u toe om in details de werkschema&#39;s te analyseren die momenteel lopen. Raadpleeg voor meer informatie de [toegewezen sectie](../../workflow/using/heatmap.md).
+>Naast het werkschema, staat de Campagne **WerkstroomHeatmap** u toe om in details de werkschema&#39;s te analyseren die momenteel lopen. Raadpleeg voor meer informatie de [toegewezen sectie](heatmap.md).
 >
->Raadpleeg [deze sectie](../../workflow/using/monitoring-workflow-execution.md) voor meer informatie over hoe u de uitvoering van uw workflows kunt controleren.****
+>Raadpleeg [deze sectie](monitoring-workflow-execution.md) voor meer informatie over hoe u de uitvoering van uw workflows kunt controleren.****
 
-## Stap 1: De bewakingsworkflow {#step-1--creating-the-monitoring-workflow} maken
+## Stap 1: De controleworkflow maken {#step-1--creating-the-monitoring-workflow}
 
 De werkschemamap die wij gaan controleren is **&quot;CustomWorkflows&quot;** omslag die in **Beleid > Productie > Technische werkschema&#39;s** knoop wordt opgeslagen. Deze map bevat een set bedrijfsworkflows.
 
@@ -53,7 +55,7 @@ Deze workflow bestaat uit:
 * a **&quot;Levering&quot;** activiteit verantwoordelijk voor berichtlay-out.
 * a **&quot;Wacht&quot;** activiteit die de loodtijden tussen werkschemariteraties controleert.
 
-## Stap 2: Het schrijven van JavaScript {#step-2--writing-the-javascript}
+## Stap 2: JavaScript schrijven {#step-2--writing-the-javascript}
 
 Het eerste deel van de JavaScript-code valt samen met een **query (queryDef)** waarmee u de workflows kunt identificeren met de status &quot;pause&quot; (@state == 13), &quot;error&quot; (@failed == 1) of &quot;stopped&quot; (@state == 20).
 
@@ -115,7 +117,7 @@ vars.strWorkflowPaused = strPaused;
 vars.strWorkflowStop = strStop;
 ```
 
-## Stap 3: De &#39;Test&#39;-activiteit {#step-3--creating-the--test--activity} maken
+## Stap 3: De &#39;Test&#39;-activiteit maken {#step-3--creating-the--test--activity}
 
 De &quot;Test&quot;activiteit laat u bepalen of een levering moet worden verzonden of of het controlewerkschema een andere die cyclus moet in werking stellen op de &quot;Wacht&quot;activiteit wordt gebaseerd.
 
@@ -127,7 +129,7 @@ De activiteit &quot;wacht&quot;kan worden gevormd om het controlewerkschema met 
 
 ![](assets/uc_monitoring_workflow_attente.png)
 
-## Stap 4: De levering {#step-4--preparing-the-delivery} voorbereiden
+## Stap 4: De levering voorbereiden {#step-4--preparing-the-delivery}
 
 De activiteit &quot;van de Levering&quot;is gebaseerd op een **leveringsmalplaatje** dat in **Middelen > Malplaatjes > de malplaatjes van de Levering** knoop wordt opgeslagen.
 

@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 5c11bd0f-2df7-4c7f-b682-955fedf8e664
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Een Facebook-applicatie maken{#creating-a-facebook-application}
+
+![](../../assets/v7-only.svg)
 
 Dankzij webtoepassingen kunt u met Social Marketing gepersonaliseerde inhoud weergeven in uw Facebook-toepassingen, waardoor het eenvoudiger wordt om vooruitzichten te krijgen via dit sociale netwerk. Raadpleeg [Voorbeelden van Facebook-toepassingen](../../social/using/examples-of-facebook-apps.md) voor meer voorbeelden van Facebook-webtoepassingen.
 
@@ -103,7 +105,7 @@ De configuratiestadia zijn als volgt:
 
    ![](assets/social_fb_terms_of_services.png)
 
-## Een Facebook-webtoepassing {#creating-a-facebook-type-web-application} maken
+## Een Facebook-webtoepassing maken {#creating-a-facebook-type-web-application}
 
 Met de Adobe Campaign Facebook-toepassing kunt u persoonlijke inhoud weergeven in uw Facebook-toepassing. Voor elke Facebook-toepassing moet u een webtoepassing maken in Adobe Campaign. Ga als volgt te werk om een Facebook-webtoepassing te maken:
 
@@ -137,7 +139,7 @@ Met de Adobe Campaign Facebook-toepassing kunt u persoonlijke inhoud weergeven i
 
    ![](assets/social_webapp_004.png)
 
-## Facebook-tabbladen {#configuring-facebook-tabs} configureren
+## Facebook-tabbladen configureren {#configuring-facebook-tabs}
 
 U kunt uw Facebook-toepassingen configureren om als tabbladen op uw Facebook-pagina te worden weergegeven. Hiervoor voert u de volgende stappen uit:
 

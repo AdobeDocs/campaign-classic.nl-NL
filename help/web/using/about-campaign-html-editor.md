@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
-source-git-commit: cbfaf6a2c187ad62f7b6c9042b69f5e522fcfd02
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -15,13 +15,15 @@ ht-degree: 0%
 
 # Aan de slag met de HTML-editor voor campagnes{#about-campaign-html-editor}
 
+![](../../assets/common.svg)
+
 De **Digital Content Editor (DCE)** is een HTML-inhoudeditor waarmee u in Adobe Campaign eenvoudig inhoud en sjablonen in HTML-indeling kunt maken.
 
 Met de Digital Content Editor kunt u pagina-elementen invoegen en opmaken en databasevelden toewijzen met elementen van een HTML-pagina. Deze editor is beschikbaar wanneer u een pagina voor een webtoepassing maakt of wanneer u leveringen maakt op basis van een DCE-sjabloon.
 
 >[!NOTE]
 >
->Als u JavaScript-code aan de serverzijde wilt toevoegen, gebruikt u verpersoonlijkingsblokken. [Meer informatie](../../delivery/using/personalization-blocks.md).
+>Als u JavaScript-code aan de serverzijde wilt toevoegen, gebruikt u verpersoonlijkingsblokken. [Meer info](../../delivery/using/personalization-blocks.md).
 
 >[!CAUTION]
 >

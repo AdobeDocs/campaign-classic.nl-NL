@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # Een doeltoewijzing selecteren{#selecting-a-target-mapping}
+
+![](../../assets/common.svg)
 
 Standaard richten leveringssjablonen zich op **[!UICONTROL Recipients]**. Hun doelafbeelding gebruikt daarom de gebieden van **nms:ontvanger** lijst. Adobe Campaign biedt andere doeltoewijzingen voor uw leveringen, die op basis van uw behoeften worden gebruikt.
 
@@ -25,7 +27,7 @@ Deze toewijzingen zijn als volgt:
 |---|---|---|
 | Ontvangers | Leveren aan ontvangers van de Adobe Campaign-database | nms:ontvanger |
 | Bezoekers | Leveren aan bezoekers van wie de profielen via verwijzing (virale marketing) of via sociale netwerken (Facebook, Twitter) bijvoorbeeld zijn verzameld. | mns:bezoeker |
-| Abonnementen | Leveren aan ontvangers die zijn geabonneerd op een informatiedienst zoals een nieuwsbrief | nms:abonnement |
+| Lidmaatschappen | Leveren aan ontvangers die zijn geabonneerd op een informatiedienst zoals een nieuwsbrief | nms:abonnement |
 | Abonnementen van bezoekers | Leveren aan bezoekers die zijn geabonneerd op een informatiedienst | nms:bezoekerSub |
 | Service | Publiceren naar een Twitter-account of een Facebook-pagina | nms:service |
 | Operatoren | Leveren aan Adobe Campaign-operatoren | nms:operator |

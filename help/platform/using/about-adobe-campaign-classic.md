@@ -2,26 +2,31 @@
 product: campaign
 title: Adobe Campaign Classic
 description: Leer meer over belangrijke functies, de gebruikersinterface en algemene richtlijnen.
-feature: Overzicht
+feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 95%
+source-wordcount: '923'
+ht-degree: 92%
 
 ---
 
 # Aan de slag met Campaign Classic{#about-adobe-campaign-classic}
 
+![](../../assets/v7-only.svg)
+
 Om een hoge mate van klantbetrokkenheid en fantastische ervaringen te bieden moeten merken consistente klantreizen op alle contactpunten tot stand brengen. Marketeers kunnen nu efficiënt marketingcampagnes op alle kanalen ontwerpen, plannen, uitvoeren, beheren en optimaliseren die een hoog rendement op marketinginvesteringen opleveren en loyaliteit stimuleren.
 
 Met Adobe Campaign kunt u het maken van conversationele marketingcampagnes coördineren. Adobe Campaign beschikt over innovatieve functies voor het modelleren, stroomlijnen en automatiseren van marketing- en klantcommunicatieprocessen.
 
->[!NOTE]
+>[!AVAILABILITY]
 >
->Adobe Campaign Classic is beschikbaar in v6.11 en v7. Behalve wanneer vermeld, zijn de hulpmaterialen op beide versies, in [recentste bouwstijl](../../rn/using/latest-release.md) van toepassing. Schermafbeeldingen geven de gebruikersinterface van Campaign Classic v7 weer.
+>* De materialen van de hulp in deze inzameling zijn op Campaign Classic v7 in zijn [recentste bouwstijl](../../rn/using/latest-release.md) van toepassing. Er is een specifieke badge beschikbaar wanneer een sectie ook van toepassing is op Campagne v8.
+>
+>* Adobe Campaign v8-documentatie is [hier](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html) beschikbaar.
+
 
 ![](assets/do-not-localize/how-to-video.png) [Belangrijkste kenmerken en mogelijkheden in video ontdekken](#video)
 
@@ -79,8 +84,8 @@ De volgende mogelijkheden zijn beschikbaar. Afhankelijk van uw licentieovereenko
 * [Webapplicaties](../../web/using/about-web-applications.md) - maken van webpagina’s en formulieren,
 * [Enquêtebeheer](../../surveys/using/about-surveys.md) - maken van online enquêtes en opiniepeilingen,
 * [Content Manager](../../delivery/using/about-content-management.md) - e-mailcontent beheren,
-* [Gedistribueerde marketing](../../campaign/using/about-distributed-marketing.md) - coördineren van campagnes voor centrale/lokale agentschappen;
-* [Responsbeheer](../../campaign/using/about-response-manager.md) - beheren van de reacties van klanten,
+* [Gedistribueerde marketing](../../distributed/using/about-distributed-marketing.md) - coördineren van campagnes voor centrale/lokale agentschappen;
+* [Responsbeheer](../../response/using/about-response-manager.md) - beheren van de reacties van klanten,
 * [Connectoren](../../platform/using/about-connectors.md) - gebruiken van connectoren om met externe oplossingen en database-engines te communiceren,
 * [Webservices](../../configuration/using/about-web-services.md) - gebruiken van Campaign via API’s/webservices,
 * [Rapportage](../../reporting/using/about-adobe-campaign-reporting-tools.md) - toegang krijgen tot ingebouwde rapporten, analyseren van data en ontwerpen van uw eigen rapporten.

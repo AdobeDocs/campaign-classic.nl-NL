@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Vertakking{#fork}
+
+![](../../assets/common.svg)
 
 Met de activiteit **[!UICONTROL Fork]** kunt u meerdere uitgaande overgangen maken, zodat u verschillende activiteiten onafhankelijk binnen dezelfde workflow kunt uitvoeren.
 
@@ -32,4 +34,4 @@ Om de **[!UICONTROL Fork]** activiteit te vormen, open het het aantal en het eti
 
 ![](assets/s_user_segmentation_fork.png)
 
-U kunt elke uitgaande overgangen dan vormen, dan hen samenvoegen gebruikend een [AND-join](../../workflow/using/and-join.md) activiteit, indien nodig. Op deze manier wordt de rest van de workflow alleen uitgevoerd als de uitgaande overgangen van de activiteit **[!UICONTROL Fork]** zijn voltooid.
+U kunt elke uitgaande overgangen dan vormen, dan hen samenvoegen gebruikend een [AND-join](and-join.md) activiteit, indien nodig. Op deze manier wordt de rest van de workflow alleen uitgevoerd als de uitgaande overgangen van de activiteit **[!UICONTROL Fork]** zijn voltooid.

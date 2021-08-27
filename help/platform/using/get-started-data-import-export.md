@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d6055d97-75fc-4ed7-89bd-8336157454eb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 12%
@@ -14,6 +14,8 @@ ht-degree: 12%
 ---
 
 # Aan de slag met gegevens importeren en exporteren {#get-started-data-import-export}
+
+![](../../assets/common.svg)
 
 Adobe Campaign Classic biedt mogelijkheden voor gegevensbeheer waarmee u gegevens kunt importeren en exporteren. Deze bewerkingen kunnen worden uitgevoerd met behulp van workflows of generieke import en export.
 
@@ -44,7 +46,7 @@ Raadpleeg [deze sectie](../../platform/using/about-generic-imports-exports.md) v
 >[!IMPORTANT]
 >Algemene invoer en uitvoer mogen alleen voor incidentele transacties worden gebruikt. Om de consistentie van de gegevens te waarborgen en de efficiëntie te verbeteren, wordt aangeraden de import- en exportbewerkingen uit te voeren met behulp van workflows.
 
-## Gegevenscodering en -compressie {#data-encryption-compression}
+## Gegevensversleuteling en -compressie {#data-encryption-compression}
 
 <img src="assets/do-not-localize/icon_encrypt.svg" width="60px">
 

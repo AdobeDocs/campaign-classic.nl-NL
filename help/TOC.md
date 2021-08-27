@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a54a6f9b8afedf8a200b80b027f908163faebeaa
+source-git-commit: a066eedd2ba7848f6dcefcb1476a0b834cb1d49a
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2522'
 ht-degree: 99%
 
 ---
@@ -37,11 +37,11 @@ ht-degree: 99%
       + [Release 18.4](rn/using/release--18-4.md)
    + [Afgeschafte functies](rn/using/deprecated-features.md)
    + [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md)
-   + [Technische opmerkingen](technotes/technote.md)
-   + [Update van iOS-certificaat](technotes/ios-certificate-update.md)
-   + [Configuratie-updates voor Campaign](technotes/acc-config-updates.md)
-   + [Bijgehouden URL&#39;s bijwerken](technotes/tracked-urls.md)
-   + [IMS-updates](technotes/ims-updates.md)
+   + [Technische opmerkingen](technotes/using/technote.md)
+   + [Update van iOS-certificaat](technotes/using/ios-certificate-update.md)
+   + [Configuratie-updates voor Campaign](technotes/using/acc-config-updates.md)
+   + [Bijgehouden URL&#39;s bijwerken](technotes/using/tracked-urls.md)
+   + [IMS-updates](technotes/using/ims-updates.md)
 + Aan de slag {#getting-started}
    + Starten met Adobe Campaign {#starting-with-adobe-campaign}
       + [Aan de slag met Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
@@ -118,7 +118,7 @@ ht-degree: 99%
          + [Gegevens synchroniseren met CRM](platform/using/crm-data-sync.md)
       + Adobe Analytics Connector{#analytics-connector}
          + [Integratie van Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
-         + [Migreren naar Adobe Analytics Connector](technotes/aa-connector-migration.md)
+         + [Migreren naar Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
          + [Adobe Analytics-gegevensconnector](platform/using/adobe-analytics-data-connector-legacy.md)
    + [Help- en ondersteuningsopties](support.md)
 + Berichten maken en verzenden {#sending-messages}
@@ -263,13 +263,13 @@ ht-degree: 99%
       + [Uw campagnes controleren](campaign/using/marketing-campaign-monitoring.md)
       + [Providers, voorraden en budgetten](campaign/using/providers--stocks-and-budgets.md)
    + Campagneoptimalisatie {#campaign-optimization}
-      + [Campagnetypologieën](campaign/using/about-campaign-typologies.md)
-      + [Drukregels](campaign/using/pressure-rules.md)
-      + [Consistentieregels](campaign/using/consistency-rules.md)
-      + [Controleregels](campaign/using/control-rules.md)
-      + [Filterregels](campaign/using/filtering-rules.md)
-      + [Regels toepassen](campaign/using/applying-rules.md)
-      + [Campagnesimulaties](campaign/using/campaign-simulations.md)
+      + [Campagnetypologieën](campaign-opt/using/about-campaign-typologies.md)
+      + [Drukregels](campaign-opt/using/pressure-rules.md)
+      + [Consistentieregels](campaign-opt/using/consistency-rules.md)
+      + [Controleregels](campaign-opt/using/control-rules.md)
+      + [Filterregels](campaign-opt/using/filtering-rules.md)
+      + [Regels toepassen](campaign-opt/using/applying-rules.md)
+      + [Campagnesimulaties](campaign-opt/using/campaign-simulations.md)
 + Marketing Resource Management {#mrm}
    + [Marketingbronnen beheren](mrm/using/about-marketing-resource-management.md)
    + [Taken maken en beheren](mrm/using/creating-and-managing-tasks.md)
@@ -277,19 +277,19 @@ ht-degree: 99%
    + [Marketingbronnen beheren](mrm/using/managing-marketing-resources.md)
    + [Discussieforums](mrm/using/discussion-forums.md)
 + Gedistribueerde marketing {#distributed-marketing}
-   + [Gedistribueerde marketing](campaign/using/about-distributed-marketing.md)
-   + [Een lokale campagne maken](campaign/using/creating-a-local-campaign.md)
-   + [Een collaboratieve campagne maken](campaign/using/creating-a-collaborative-campaign.md)
-   + [Het campagnepakket publiceren](campaign/using/publishing-the-campaign-package.md)
-   + [Campagnes openen](campaign/using/accessing-campaigns.md)
-   + [Een campagne bijhouden](campaign/using/tracking-a-campaign.md)
-   + [Gebruiksscenario’s](campaign/using/examples.md)
+   + [Gedistribueerde marketing](distributed/using/about-distributed-marketing.md)
+   + [Een lokale campagne maken](distributed/using/creating-a-local-campaign.md)
+   + [Een collaboratieve campagne maken](distributed/using/creating-a-collaborative-campaign.md)
+   + [Het campagnepakket publiceren](distributed/using/publishing-the-campaign-package.md)
+   + [Campagnes openen](distributed/using/accessing-campaigns.md)
+   + [Een campagne bijhouden](distributed/using/tracking-a-campaign.md)
+   + [Gebruiksscenario’s](distributed/using/examples.md)
 + Response Manager {#response-manager}
-   + [Aan de slag met Response Manager](campaign/using/about-response-manager.md)
-   + [Configuratie](campaign/using/configuration.md)
-   + [Hypothesesjablonen](campaign/using/hypothesis-templates.md)
-   + [Hypothesen maken](campaign/using/creating-hypotheses.md)
-   + [Tracking van hypothesen](campaign/using/hypothesis-tracking.md)
+   + [Aan de slag met Response Manager](response/using/about-response-manager.md)
+   + [Configuratie](response/using/configuration.md)
+   + [Hypothesesjablonen](response/using/hypothesis-templates.md)
+   + [Hypothesen maken](response/using/creating-hypotheses.md)
+   + [Tracking van hypothesen](response/using/hypothesis-tracking.md)
 + Rapporten ontwerpen en delen {#reporting}
    + Aan de slag met rapportages {#reporting-in-adobe-campaign}
       + [Rapportagetools](reporting/using/about-adobe-campaign-reporting-tools.md)

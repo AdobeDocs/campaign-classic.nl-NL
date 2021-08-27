@@ -6,14 +6,16 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 2%
 
 ---
 
-# Transactieberichtsjablonen {#testing-message-templates} testen
+# Transactieberichtsjablonen testen {#testing-message-templates}
+
+![](../../assets/v7-only.svg)
 
 Nadat uw [berichtsjabloon](../../message-center/using/creating-the-message-template.md) gereed is, volgt u de onderstaande stappen om deze voor te vertonen en te testen.
 
@@ -75,7 +77,7 @@ Deze informatie laat u toe om berichtinhoud te personaliseren gebruikend verpers
 
 1. Klik op **[!UICONTROL Save]**.
 
-## Voorvertoning van transactionele berichten {#transactional-message-preview}
+## Voorvertoning van transactionele berichten  {#transactional-message-preview}
 
 Zodra u één of meerdere zaadadressen en het berichtlichaam hebt gecreeerd, kunt u voorproef het bericht en zijn verpersoonlijking controleren.
 

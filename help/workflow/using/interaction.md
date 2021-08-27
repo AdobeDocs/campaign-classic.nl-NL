@@ -5,17 +5,26 @@ description: Interactie
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 3%
+source-wordcount: '171'
+ht-degree: 6%
 
 ---
 
 
 # Interactie{#interaction}
 
-De hieronder beschreven workflows worden geïnstalleerd met de **Aanbiedingsmotor (Interactie)** module door gebrek. Voor meer op deze module, verwijs naar dit [sectie](../../interaction/using/interaction-and-offer-management.md).
+![](../../assets/common.svg)
+
+De hieronder beschreven workflows worden standaard geïnstalleerd met de **Aanbiedingsengine (Interaction)**-invoegtoepassing.
+
+Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagneversie:
+
+![](assets/do-not-localize/v7.jpeg)[  Documentatie voor Campaign v7](../../interaction/using/interaction-and-offer-management.md)
+
+![](assets/do-not-localize/v8.png)[  Documentatie voor Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
+
 
 <table> 
  <tbody> 

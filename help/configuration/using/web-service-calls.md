@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Webserviceaanroepen{#web-service-calls}
+
+![](../../assets/v7-only.svg)
 
 ## Algemene informatie {#general-information}
 
@@ -71,7 +73,7 @@ De invoerparameter van deze methode is een XML-document in de indeling van het s
 
 Een WSDL-bestand (Web Service Description Library) is beschikbaar voor elke service. In dit XML-bestand wordt een metaal gebruikt om de service te beschrijven en de beschikbare methoden, parameters en server op te geven waarmee contact moet worden opgenomen voor het uitvoeren van de service.
 
-### WSDL-bestand genereren {#wsdl-file-generation}
+### WSDL-bestanden genereren {#wsdl-file-generation}
 
 Als u een WSDL-bestand wilt genereren, moet u de volgende URL vanuit een webbrowser invoeren:
 
@@ -196,7 +198,7 @@ of
 
 * **via Adobe Campaign login +** wachtwoord dat tot een zittingsteken leidt. Het sessietoken verloopt automatisch na een ingestelde periode. Deze modus wordt niet aanbevolen en vereist dat de beveiligingsinstellingen van de toepassing voor bepaalde zone-instellingen worden verminderd (allowUserPassword=&quot;true&quot; en sessionTokenOnly=&quot;true&quot;).
 
-### Kenmerken van sessietoken {#session-token-characteristics}
+### Sessietekenmerken {#session-token-characteristics}
 
 Het zittingsteken heeft de volgende kenmerken:
 
@@ -207,7 +209,7 @@ Het zittingsteken heeft de volgende kenmerken:
    * het sessietoken wordt een permanent token, het wordt niet vernietigd wanneer de browser wordt gesloten
    * het wordt geplaatst in een HTTP-ONLY koekje (de koekjes moeten voor exploitanten worden geactiveerd)
 
-### Kenmerken van beveiligingstoken {#security-token-characteristics}
+### Kenmerken beveiligingstoken {#security-token-characteristics}
 
 Het beveiligingstoken heeft de volgende kenmerken:
 
@@ -220,7 +222,7 @@ Het beveiligingstoken heeft de volgende kenmerken:
    * de pagina-URL&#39;s worden bijgewerkt om het beveiligingstoken bij te werken
    * de formulieren worden ook bijgewerkt via een verborgen veld dat de token bevat
 
-#### Beweging van beveiligingstoken {#security-token-movement}
+#### Beveiliging van tokens {#security-token-movement}
 
 Wanneer deze via de console wordt benaderd, is de volgende code beschikbaar:
 
@@ -236,7 +238,7 @@ Van een SOAP-aanroep:
 
 * het wordt toegevoegd aan vraagkopballen
 
-### Voorbeelden van oproepen {#call-examples}
+### Voorbeelden bellen {#call-examples}
 
 * Met **HttpSoapConnection/SoapService**:
 

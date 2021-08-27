@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 exl-id: 6474cf2e-c4db-4430-b001-18bf4911b0ea
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 9%
@@ -14,6 +14,8 @@ ht-degree: 9%
 ---
 
 # Kanaal voor direct mail{#about-direct-mail-channel}
+
+![](../../assets/common.svg)
 
 Met Adobe Campaign kunt u bestanden maken die op grote schaal persoonlijke letters leveren. De profielen van ontvangers moeten ten minste hun naam en postadres bevatten.
 

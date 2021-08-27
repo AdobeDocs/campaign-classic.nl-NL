@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: a7ca0300-d250-429c-8ae1-2ae7dee82cf5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 3%
@@ -15,11 +15,13 @@ ht-degree: 3%
 
 # join-element {#join--element}
 
+![](../../../assets/v7-only.svg)
+
 ## Inhoudsmodel {#content-model-7}
 
 join:==EMPTY
 
-## Kenmerken {#attributes-7}
+## Attributen {#attributes-7}
 
 * @dstFilterExpr (tekenreeks)
 * @xpath-dst (tekenreeks)
@@ -47,7 +49,7 @@ Door overeenkomst, worden de verbindingen bepaald aan het eind van het schema.
 
 Als het `<join>` element niet wordt gespecificeerd wanneer het element van het verbindingstype wordt bepaald, zal de verbinding automatisch op de primaire sleutels van beide lijsten worden geplaatst.
 
-## Kenmerkbeschrijving {#attribute-description-7}
+## Beschrijving van kenmerk {#attribute-description-7}
 
 * **dstFilterExpr (tekenreeks)**: Met dit kenmerk kunt u het aantal waarden in de externe tabel beperken.
 * **xpath-dst (tekenreeks)**: this attribute receive an Xpath (@name attribute of the remote table).

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
@@ -15,21 +15,23 @@ ht-degree: 0%
 
 # Doorsnede{#intersection}
 
+![](../../assets/common.svg)
+
 Een **Intersection**-type activiteit leidt tot een doel van de doorsnede van de ontvangen doelstellingen.
 
 Met een doorsnede kunt u alleen de populatie extraheren die algemeen geldt voor alle resultaten van de binnenkomende activiteit. Het doel wordt gemaakt met alle ontvangen resultaten: alle eerdere activiteiten moeten daarom worden beëindigd voordat de doorsnede kan worden uitgevoerd. Om deze activiteit te vormen, moet u een etiket voor het evenals de opties betreffende het resultaat ingaan.
 
 ![](assets/s_user_segmentation_inter.png)
 
-Voor meer bij het vormen van en het gebruiken van de intersectieactiviteit, verwijs naar [het Uithalen van gezamenlijke gegevens (Doorsnede)](../../workflow/using/targeting-data.md#extracting-joint-data--intersection-).
+Voor meer bij het vormen van en het gebruiken van de intersectieactiviteit, verwijs naar [het Uithalen van gezamenlijke gegevens (Doorsnede)](targeting-data.md#extracting-joint-data--intersection-).
 
 Schakel de optie **[!UICONTROL Generate complement]** in als u de resterende populatie wilt verwerken. Het complement zal de samenvoeging bevatten van de resultaten van alle binnenkomende activiteiten min de doorsnede. Een extra uitgaande overgang zal dan aan de activiteit worden toegevoegd, als volgt:
 
 ![](assets/s_user_segmentation_inter_compl.png)
 
-## Voorbeeld van doorsnede {#intersection-example}
+## Voorbeeld van intersectie {#intersection-example}
 
-In het volgende voorbeeld is het doel van de doorsnede het berekenen van de ontvangers gemeenschappelijk aan drie eenvoudige vragen om een lijst tot stand te brengen.
+In het volgende voorbeeld is het doel van de doorsnede het berekenen van de ontvangers gemeenschappelijk aan drie eenvoudige vragen om een lijst te creëren.
 
 1. Na drie eenvoudige vragen, neem **[!UICONTROL Intersection]** - type activiteit op.
 

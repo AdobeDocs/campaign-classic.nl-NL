@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # Een workflow starten {#starting-a-workflow}
 
-Een workflow wordt altijd handmatig gestart. Wanneer begonnen, kan het echter inactief afhankelijk van de informatie blijven die via een planner wordt gespecificeerd (zie [Planner](../../workflow/using/scheduler.md)) of activiteit het plannen.
+![](../../assets/common.svg)
+
+Een workflow wordt altijd handmatig gestart. Wanneer begonnen, kan het echter inactief afhankelijk van de informatie blijven die via een planner wordt gespecificeerd (zie [Planner](scheduler.md)) of activiteit het plannen.
 
 Acties die betrekking hebben op het uitvoeren van de workflow (starten, stoppen, pauzeren, enz.) zijn **asynchrone** processen: de bestelling wordt opgenomen en is van kracht zodra de server beschikbaar is om deze toe te passen.
 
@@ -25,7 +27,7 @@ De lijst met opties die beschikbaar zijn in het menu **[!UICONTROL Actions]** en
 
 >[!IMPORTANT]
 >
->Houd er rekening mee dat wanneer een operator een handeling uitvoert op een werkstroom (starten, stoppen, pauzeren, enz.), de handeling niet direct wordt uitgevoerd, maar in plaats daarvan in een wachtrij wordt geplaatst om te worden verwerkt door de [workflowmodule](../../workflow/using/architecture.md).
+>Houd er rekening mee dat wanneer een operator een handeling uitvoert op een werkstroom (starten, stoppen, pauzeren, enz.), de handeling niet direct wordt uitgevoerd, maar in plaats daarvan in een wachtrij wordt geplaatst om te worden verwerkt door de [workflowmodule](architecture.md).
 
 ## Werkbalk Handelingen {#actions-toolbar}
 
@@ -57,7 +59,7 @@ De werkbalkknoppen worden beschreven in deze [sectie](../../campaign/using/marke
 
 * **[!UICONTROL Purge history]**
 
-   Met deze handeling kunt u de historie van de workflow wissen. Raadpleeg [Logbestanden leegmaken](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs) voor meer informatie.
+   Met deze handeling kunt u de historie van de workflow wissen. Raadpleeg [Logbestanden leegmaken](monitoring-workflow-execution.md#purging-the-logs) voor meer informatie.
 
 * **[!UICONTROL Start in simulation mode]**
 
@@ -81,7 +83,7 @@ De werkbalkknoppen worden beschreven in deze [sectie](../../campaign/using/marke
 
    De opties **[!UICONTROL Mass update of selected lines]** en **[!UICONTROL Merge selected lines]** zijn algemene platformopties beschikbaar in alle **[!UICONTROL Actions]** menu&#39;s. Raadpleeg deze [sectie](../../platform/using/updating-data.md) voor meer informatie.
 
-## Klikken met rechtermuisknop op menu {#right-click-menu}
+## Klikken met rechtermuisknop {#right-click-menu}
 
 Wanneer een of meer workflowactiviteiten zijn geselecteerd, kunt u met de rechtermuisknop klikken om op uw selectie te reageren.
 
@@ -91,7 +93,7 @@ De volgende opties zijn beschikbaar in het klikmenu met de rechtermuisknop:
 
 **[!UICONTROL Open]**: met deze optie hebt u toegang tot de eigenschappen van de activiteit.
 
-**[!UICONTROL Display logs:]** met deze optie kunt u het logboek voor taakuitvoering weergeven voor de geselecteerde activiteit. Zie [Logbestanden weergeven](../../workflow/using/monitoring-workflow-execution.md#displaying-logs).
+**[!UICONTROL Display logs:]** met deze optie kunt u het logboek voor taakuitvoering weergeven voor de geselecteerde activiteit. Zie [Logbestanden weergeven](monitoring-workflow-execution.md#displaying-logs).
 
 **[!UICONTROL Execute pending task(s) now:]** met deze actie kunt u taken die in behandeling zijn zo snel mogelijk starten.
 
@@ -101,7 +103,7 @@ De volgende opties zijn beschikbaar in het klikmenu met de rechtermuisknop:
 
 **[!UICONTROL Copy as bitmap:]** met deze optie kunt u een screenshot maken van alle activiteiten.
 
-**[!UICONTROL Normal execution / Enable but do not execute / Do not enable:]** deze opties zijn ook beschikbaar op het  **[!UICONTROL Advanced]** tabblad van de eigenschappen activity . Deze worden beschreven in [Execution](../../workflow/using/advanced-parameters.md#execution).
+**[!UICONTROL Normal execution / Enable but do not execute / Do not enable:]** deze opties zijn ook beschikbaar op het  **[!UICONTROL Advanced]** tabblad van de eigenschappen activity . Deze worden beschreven in [Execution](advanced-parameters.md#execution).
 
 **[!UICONTROL Save / Cancel:]** Hiermee kunt u de wijzigingen in een workflow opslaan of annuleren.
 

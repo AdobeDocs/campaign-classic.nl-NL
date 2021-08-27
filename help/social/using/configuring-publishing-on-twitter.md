@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2d2a6e32-587d-4a7b-ba1c-d9140da53f64
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '710'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # Publiceren op Twitter configureren{#configuring-publishing-on-twitter}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign kan alleen tweets verzenden naar uw Twitter-accounts als u voor deze accounts schrijfrechten naar Adobe Campaign wilt delegeren. Hiervoor past u de volgende configuratiestappen toe:
 

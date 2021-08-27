@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Eigenschappen van het rapport{#properties-of-the-report}
+
+![](../../assets/common.svg)
 
 U kunt volledig uw rapport personaliseren en vormen om uw behoeften aan te passen. Hiervoor bewerkt u de eigenschappen. De eigenschappen van het rapport worden betreden via de **[!UICONTROL Properties]** knoop boven de grafiek van de activiteitenopeenvolging.
 
@@ -35,7 +37,7 @@ Op het tabblad **[!UICONTROL General]** van de rapporteigenschappen kunt u de on
 
 * De **Toegangsbeheer** parameters. Deze instellingen worden hieronder beschreven.
 
-## Toegang tot rapport {#report-accessibility} beheren
+## Toegang tot het rapport beheren {#report-accessibility}
 
 Een rapport kan in de console van Adobe Campaign of met Webbrowser worden betreden. In dit geval, kan het noodzakelijk zijn om het controle van de rapporttoegang zoals hieronder getoond te vormen.
 
@@ -50,7 +52,7 @@ Mogelijke opties zijn:
 * **[!UICONTROL Access control]**: met deze optie kunnen Adobe Campaign-operatoren de toepassing openen nadat ze zijn aangemeld.
 * **[!UICONTROL Specific account]**: met deze optie kunt u het rapport uitvoeren met de rechten van de operator die in het  **[!UICONTROL Operator]** veld is geselecteerd.
 
-## Rapportlokalisatie beheren {#managing-report-localization}
+## De lokalisatie van rapporten beheren {#managing-report-localization}
 
 U kunt de talen vormen waarin u het rapport wilt worden vertaald. Klik hiertoe op het tabblad **[!UICONTROL Localization]**.
 
@@ -75,7 +77,7 @@ Op het tabblad **[!UICONTROL Rendering]** kunt u de weergavemodus voor de pagina
 
 ![](assets/s_ncs_advuser_report_properties_08.png)
 
-## De foutpagina {#personalizing-the-error-page} aanpassen
+## De foutpagina aanpassen {#personalizing-the-error-page}
 
 Het **[!UICONTROL Error page]** lusje laat u het bericht vormen dat omhoog in het geval van een fout in de rapportvertoning zal komen.
 

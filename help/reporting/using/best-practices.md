@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: reporting-in-adobe-campaign
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Beste werkwijzen rapporteren{#best-practices-reporting}
+
+![](../../assets/common.svg)
 
 ## De behoeften analyseren{#analyzing-needs}
 
@@ -60,7 +62,7 @@ Om de creatie, het gebruik en de duurzaamheid van een rapport te optimaliseren, 
 
    De kwesties die verband houden met gegevensvolumes en updates moeten zorgvuldig worden bestudeerd om weergaveproblemen, met name in termen van tijd, te vermijden. Daarom raden we u aan aggregaten te maken om bepaalde gegevens buiten het rapport vooraf te berekenen. Tabellen die de tracerings- en leveringslogboeken bevatten, kunnen miljoenen records bevatten: dit betekent dat de gegevens moeten worden samengevoegd via een werkstroom die in een rapport moet worden gebruikt .
 
-## Het optimaliseren van rapportverwezenlijking{#optimizing-report-creation}
+## Rapport maken optimaliseren{#optimizing-report-creation}
 
 ### Gegevensvolume {#data-volume}
 

@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2955'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Importtaken configureren {#executing-import-jobs}
+
+![](../../assets/common.svg)
 
 Met Adobe Campaign kunt u gegevens uit een of meer bestanden in tekst-, CSV-, TAB- of XML-indeling importeren in de database. Deze bestanden zijn gekoppeld aan een tabel (hoofd of gekoppeld) en elk veld van het bronbestand of de bronbestanden is gekoppeld aan een veld van de database.
 
@@ -33,7 +35,7 @@ De wizard Importeren wordt weergegeven nadat een nieuwe importtaak is gemaakt (z
 
 In het bronbestand valt elke regel samen met een record. De gegevens in records worden gescheiden door scheidingstekens (spatie, tab, teken enz.). Dit betekent dat de gegevens in de vorm van kolommen worden teruggewonnen, en elke kolom wordt geassocieerd met een gebied van het gegevensbestand.
 
-## Stap 1 - kies het invoermalplaatje {#step-1---choosing-the-import-template}
+## Stap 1 - Kies de importsjabloon {#step-1---choosing-the-import-template}
 
 Wanneer u de wizard Importeren start, moet u eerst een sjabloon selecteren. Als voorbeeld, om de invoer van ontvangers te vormen die een nieuwsbrief ontvingen, volg de stappen hieronder:
 
@@ -113,7 +115,7 @@ Gebruik de opties boven deze weergave om het importeren te configureren. De para
 * **[!UICONTROL Auto-detect format]** wordt gebruikt om het formaat van de gegevensbron opnieuw te initialiseren. Met deze optie kunt u de oorspronkelijke indelingen opnieuw toepassen op gegevens die zijn opgemaakt met de optie **[!UICONTROL Click here to change the file format...]**.
 * Met de koppeling **[!UICONTROL Advanced parameters]** kunt u de brongegevens filteren en geavanceerde opties gebruiken. Vanuit dit scherm kunt u ervoor kiezen om slechts een deel van het bestand te importeren. U kunt ook een filter definiëren, bijvoorbeeld om alleen gebruikers van het type Prospect of Klant te importeren, op basis van de waarde van de corresponderende regel. Deze opties mogen alleen worden gebruikt door deskundige JavaScript-gebruikers.
 
-### De bestandsindeling {#changing-the-file-format} wijzigen
+### De bestandsindeling wijzigen {#changing-the-file-format}
 
 Met de optie **[!UICONTROL Click here to change the file format...]** kunt u de gegevens van het bronbestand opmaken, en met name het kolomscheidingsteken en het type gegevens voor elk veld opgeven. Deze configuratie wordt uitgevoerd via het volgende venster:
 
@@ -125,7 +127,7 @@ U kunt het resultaat van de configuratie weergeven in de voorvertoningszone in h
 
 Klik **[!UICONTROL OK]** om het formatteren te bewaren, dan klik **[!UICONTROL Next]** om de volgende stap te tonen.
 
-## Stap 3 - Veld toewijzen {#step-3---field-mapping}
+## Stap 3 - Veldtoewijzing {#step-3---field-mapping}
 
 U moet dan het bestemmingsschema selecteren en de gegevens van elke kolom op gebieden in het gegevensbestand in kaart brengen.
 
@@ -169,7 +171,7 @@ Er zijn vier typen berekende velden:
 
    ![](assets/s_ncs_user_import_wizard03_4.png)
 
-## Stap 4 - Afstemming {#step-4---reconciliation}
+## Stap 4 - Verzoening {#step-4---reconciliation}
 
 Met de afstemmingsstap van de importwizard kunt u de modus definiëren waarmee de gegevens uit het bestand worden afgestemd op de bestaande gegevens in de database en kunt u de prioriteitsregels instellen tussen de bestandsgegevens en de databasegegevens. Het configuratievenster ziet er als volgt uit:
 
@@ -242,7 +244,7 @@ Deduplicatie heeft betrekking op een record die zowel in het bronbestand als in 
 
 De opties **[!UICONTROL Reject]** en **[!UICONTROL Ignore]** werken zoals hierboven beschreven.
 
-### Bij fout {#behavior-in-the-event-of-an-error}
+### In geval van een fout {#behavior-in-the-event-of-an-error}
 
 De meeste gegevensoverdrachtsbewerkingen genereren verschillende soorten fouten (incoherente regelindeling, ongeldig e-mailadres, enz.). Alle fouten en waarschuwingen die door de importengine worden gegenereerd, worden opgeslagen en gekoppeld aan het importexemplaar.
 

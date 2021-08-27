@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Opt-out voor tracking van een webapplicatie{#web-application-tracking-opt-out}
+
+![](../../assets/common.svg)
 
 Met Adobe Campaign kunt u het webgedrag niet meer volgen van eindgebruikers die zich afmelden voor het volgen van gedrag via cookies of webbakens. De functie omvat de mogelijkheid om een banner weer te geven om de eindgebruiker die optie te bieden; U kunt deze banners toevoegen aan webtoepassingen of landingspagina&#39;s.
 
@@ -74,7 +76,7 @@ De cookienaam is **acoptout**. De gemeenschappelijke waarden zijn:
 
 * 0: gebruiker heeft Web tracking toegestaan (standaardwaarde)
 * 1: gebruiker heeft webtracking verboden
-* null: gebruiker heeft niet gekozen maar Web tracking is toegestaan omdat dit de standaardwaarde is
+* null: de gebruiker heeft niet gekozen maar Web het volgen wordt toegestaan aangezien het de standaardwaarde is
 
 De beschikbare client-side API&#39;s om de banner aan te passen zijn:
 

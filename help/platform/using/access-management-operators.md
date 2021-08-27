@@ -2,18 +2,20 @@
 product: campaign
 title: Aan de slag met campagneoperatoren
 description: Meer informatie over het maken en beheren van campagnegebruikers
-feature: Toegangsbeheer
+feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1146'
 ht-degree: 2%
 
 ---
 
 # Operatoren maken en beheren {#operators}
+
+![](../../assets/common.svg)
 
 ## Aan de slag met campagneoperatoren  {#about-operators}
 
@@ -45,7 +47,7 @@ Voer de volgende stappen uit om een nieuwe operator te maken en machtigingen te 
 
 1. Geef de **[!UICONTROL Identification parameters]** van de gebruiker op: zijn aanmelding, wachtwoord en naam. De aanmeldingsnaam en het wachtwoord worden door de operator gebruikt om u aan te melden bij Adobe Campaign. Zodra de gebruiker het programma wordt geopend, kunnen zij hun wachtwoord via het **[!UICONTROL Tools > Change password]** menu veranderen. Het e-mailadres van de exploitant is essentieel omdat het de exploitant in staat stelt meldingen te ontvangen, bijvoorbeeld bij de verwerking van goedkeuringen.
 
-   In deze sectie kunt u ook een operator koppelen aan een organisatie-entiteit. Raadpleeg voor meer informatie de [deze pagina](../../campaign/using/about-distributed-marketing.md).
+   In deze sectie kunt u ook een operator koppelen aan een organisatie-entiteit. Raadpleeg voor meer informatie de [deze pagina](../../distributed/using/about-distributed-marketing.md).
 
 1. Selecteer de toestemmingen die aan de exploitant in **[!UICONTROL Operator access rights]** sectie worden verleend.
 

@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Marketingscampagnes volgen {#monitoring-marketing-campaigns}
+
+![](../../assets/common.svg)
 
 ## Een campagne bijhouden {#tracking-a-campaign}
 
@@ -53,4 +55,4 @@ Als u de status van een levering wilt controleren, bewerkt u deze en bekijkt u h
 
 U kunt de status van leveringen opzoeken door op de **[!UICONTROL Deliveries]** te klikken, die toegankelijk is via de Adobe Campaign-startpagina. Zie [Aflevering bijhouden](#delivery-tracking).
 
-Informatie over de processen die in een campagne worden uitgevoerd, wordt verzameld op het tabblad **[!UICONTROL Edit > Audit]** van de campagne. Daar kunt u de lijst met leveringen weergeven in de campagne. [Meer informatie](#tracking-a-campaign).
+Informatie over de processen die in een campagne worden uitgevoerd, wordt verzameld op het tabblad **[!UICONTROL Edit > Audit]** van de campagne. Daar kunt u de lijst met leveringen weergeven in de campagne. [Meer info](#tracking-a-campaign).

@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Profielen beheren{#managing-profiles}
+
+![](../../assets/common.svg)
 
 ## Ontvangerstructuur {#recipient-tree}
 
@@ -27,15 +29,15 @@ Elk knooppunt valt samen met een map. De gegevens van elke omslag moeten worden 
 >
 >Als u de lijst met alle ontvangers in de database wilt weergeven, moet u een weergave maken. Meer informatie vindt u in [Mappen en weergaven](../../platform/using/access-management-folders.md).
 
-## Ontvangers {#moving-recipients} verplaatsen
+## Ontvangers verplaatsen {#moving-recipients}
 
 U kunt een of meer ontvangers selecteren, deze uit de lijst met ontvangers slepen en neerzetten in de gewenste map. U wordt in een waarschuwingsbericht gevraagd deze actie te bevestigen.
 
-## Kopieer een ontvanger {#copying-a-recipient}
+## Een ontvanger kopiëren {#copying-a-recipient}
 
 U kunt een ontvanger in de zelfde omslag kopiëren door de gewenste ontvanger met de rechtermuisknop aan te klikken en **[!UICONTROL Copy]** te selecteren.
 
-## Ontvangers {#deleting-recipients} verwijderen
+## Ontvangers verwijderen {#deleting-recipients}
 
 Als u ontvangers wilt verwijderen, verplaatst u ze naar een specifieke map en wist u de inhoud van deze map. Het wordt sterk geadviseerd **om** de **[!UICONTROL Delete]** optie in dit geval niet te gebruiken.
 

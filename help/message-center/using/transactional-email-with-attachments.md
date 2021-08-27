@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: use-case
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 7f4bbf3e79d6cdaf17987b9307ebf12801abad22
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Hoofdlettergebruik: Transactiee-mails verzenden met bijlagen {#transactional-email-with-attachments}
+
+![](../../assets/v7-only.svg)
 
 Het doel van dit gebruiksgeval is het toevoegen van e-mailbijlagen tijdens de vlucht aan uitgaande verzendingen.
 
@@ -75,7 +77,7 @@ Voer de onderstaande stappen uit om een e-mailbijlage direct toe te voegen aan e
 1. Voer in het scherm **[!UICONTROL Attachment definition]** de parameter SOAP-bijlage in:
 
    ```
-   <%= rtEvent.ctx.attachementUrl %>
+   <%= rtEvent.ctx.attachmentUrl %>
    ```
 
 1. Wanneer het bericht wordt verwerkt, krijgt het systeem het bestand van de externe locatie (externe server) en voegt het bestand bij het individuele bericht.

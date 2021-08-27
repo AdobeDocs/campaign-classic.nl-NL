@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 10%
 
 ---
 
-# Toegang tot Snowflake {#configure-access-to-snowflake} configureren
+# Toegang tot Snowflake configureren {#configure-access-to-snowflake}
+
+![](../../assets/v7-only.svg)
 
 De Campagne van het gebruik **Federated Data Access** (FDA) optie om informatie te verwerken die in een extern gegevensbestand wordt opgeslagen. Voer de onderstaande stappen uit om toegang tot [!DNL Snowflake] te configureren.
 
@@ -76,7 +78,7 @@ Volg onderstaande stappen om [!DNL Snowflake] op CentOS te configureren:
 
 1. In Campagne, kunt u uw [!DNL Snowflake] externe rekening dan vormen. Raadpleeg [deze sectie](#snowflake-external) voor meer informatie over het configureren van uw externe account.
 
-## Snowflake externe account {#snowflake-external}
+## Snowflake externe rekening {#snowflake-external}
 
 U moet een [!DNL Snowflake] externe rekening tot stand brengen om uw instantie van de Campagne met uw [!DNL Snowflake] externe gegevensbestand te verbinden.
 

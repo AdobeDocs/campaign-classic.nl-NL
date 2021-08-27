@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 12b173e9-5068-4d45-9e1e-2aecc9866e9c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 2%
@@ -15,20 +15,22 @@ ht-degree: 2%
 
 # Werken met samenvoegingen{#using-aggregates}
 
+![](../../assets/common.svg)
+
 In dit geval wordt beschreven hoe de laatste ontvangers die aan de database zijn toegevoegd, automatisch kunnen worden geïdentificeerd.
 
 Met behulp van het volgende proces wordt de aanmaakdatum van ontvangers in de database vergeleken met de laatst bekende datum waarop een ontvanger is gemaakt met een aggregaat. Alle ontvangers die op dezelfde dag zijn gemaakt, worden ook geselecteerd.
 
 Als u een **Aanmaakdatum = max (Aanmaakdatum)**-typefilter op de ontvangers wilt uitvoeren, moet u een workflow uitvoeren om de volgende stappen uit te voeren:
 
-1. Haal de ontvangers van een database op met behulp van een standaardquery. Voor meer op deze stap, verwijs naar [Creërend een vraag](../../workflow/using/query.md#creating-a-query).
+1. Haal de ontvangers van een database op met behulp van een standaardquery. Voor meer op deze stap, verwijs naar [Creërend een vraag](query.md#creating-a-query).
 1. Bereken de laatst bekende datum een ontvanger werd gecreeerd gebruikend het resultaat dat van **max (de datum van de Verwezenlijking)** samenvoegingsfunctie wordt geproduceerd.
 1. Elke ontvanger aan de samenvoegingsfunctie verbinden resulteert in het zelfde schema.
 1. Ontvangers filteren met het aggregaat via het bewerkte schema.
 
 ![](assets/datamanagement_usecase_1.png)
 
-## Stap 1: Het geaggregeerde resultaat berekenen {#step-1--calculating-the-aggregate-result}
+## Stap 1: Het totale resultaat berekenen {#step-1--calculating-the-aggregate-result}
 
 1. Maak een query. Hier, is het doel om de laatste bekende aanmaakdatum uit alle ontvangers in het gegevensbestand te berekenen. De query bevat daarom geen filter.
 1. Selecteer **[!UICONTROL Add data]**.
@@ -43,7 +45,7 @@ Als u een **Aanmaakdatum = max (Aanmaakdatum)**-typefilter op de ontvangers wilt
 
    Laat de optie **[!UICONTROL Remove duplicate rows (DISTINCT)]** ingeschakeld.
 
-## Stap 2: Het verbinden van de ontvangers en het resultaat van de samenvoegingsfunctie {#step-2--linking-the-recipients-and-the-aggregation-function-result}
+## Stap 2: De ontvangers koppelen en het resultaat van de aggregatiefunctie {#step-2--linking-the-recipients-and-the-aggregation-function-result}
 
 Om de vraag te verbinden die ontvangers behandelt aan de vraag die de berekening van de samenvoegingsfunctie uitvoert, moet u schema gebruiken uitgeeft activiteit.
 

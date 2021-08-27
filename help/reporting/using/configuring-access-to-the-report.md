@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 1%
@@ -15,11 +15,13 @@ ht-degree: 1%
 
 # Toegang tot het rapport configureren{#configuring-access-to-the-report}
 
-## Weergavecontext {#report-display-context} rapporteren
+![](../../assets/common.svg)
+
+## Weergavecontext rapporteren {#report-display-context}
 
 Bepaal de vertoningscontext van het rapport in het platform van Adobe Campaign gebruikend **[!UICONTROL Display]** tabel. De toegang tot een rapport hangt van zijn selectietype, vertoningsvoorwaarden en toegangsvergunningen af.
 
-### Selectietype {#selection-type}
+### Type selectie {#selection-type}
 
 De toegang tot het rapport kan worden beperkt tot een specifieke context of ruimte bieden, bijvoorbeeld een levering, een ontvanger, een selectie van ontvangers, enz. Deze toegang wordt gevormd in de **[!UICONTROL Selection type]** sectie van **[!UICONTROL Display]** tabel.
 
@@ -49,7 +51,7 @@ In het volgende voorbeeld wordt het rapport weergegeven als het hoofdcampagnekan
 
 Dit betekent dat als het hoofdkanaal van de campagne direct mail is, het rapport niet beschikbaar zal zijn in de campagnerapporten.
 
-### Toegangsmachtiging {#access-authorization}
+### Toegangsvergunning {#access-authorization}
 
 Het rapport kan met andere exploitanten worden gedeeld.
 
@@ -59,7 +61,7 @@ Het rapport kan ook worden gedeeld met specifieke operatoren of groepen operator
 
 ![](assets/s_ncs_advuser_report_visibility_8.png)
 
-### Filteropties {#defining-the-filtering-options} definiëren
+### Filteropties definiëren {#defining-the-filtering-options}
 
 Op het tabblad **[!UICONTROL Reports]** worden alle beschikbare rapporten in het platform weergegeven waarvoor de verbonden operator een toegangsrecht heeft.
 
@@ -75,7 +77,7 @@ Om de categorie van een rapport te bepalen, selecteer het via **[!UICONTROL Disp
 
 Je kunt hier een nieuwe rubriek invoeren en deze toevoegen aan de lijst met beschikbare rubrieken. De overeenkomstige opsomming wordt automatisch bijgewerkt.
 
-## Een koppeling maken naar een rapport {#creating-a-link-to-a-report-}
+## Een koppeling naar een rapport maken {#creating-a-link-to-a-report-}
 
 Het is mogelijk om een rapport toegankelijk te maken via een specifiek knooppunt van de boom, zoals een lijst, een ontvanger, een levering, enz. Hiertoe maakt u gewoon een koppeling naar het betreffende rapport en geeft u de entiteit op waar u het wilt aanbieden.
 
@@ -105,7 +107,7 @@ Als voorbeeld zullen wij een verbinding aan een rapport creëren om het via een 
 
    ![](assets/s_ncs_advuser_report_wizard_link_05.png)
 
-## Voorvertoning van het rapport {#preview-of-the-report}
+## Voorbeeld van het rapport {#preview-of-the-report}
 
 Alvorens uw rapport te publiceren, zorg ervoor het correct op **[!UICONTROL Preview]** tabel wordt getoond.
 
@@ -121,7 +123,7 @@ Met specifieke instellingen kunt u fouten beheren. De instelling **_uuid** vindt
 
 Meer informatie over deze instellingen vindt u in de sectie **Eigenschappen van webformulieren definiëren** van het hoofdstuk [Webformulieren](../../web/using/about-web-forms.md).
 
-## Het rapport {#publishing-the-report} publiceren
+## Het rapport publiceren {#publishing-the-report}
 
 Het publiceren van het rapport is verplicht om hen met andere exploitanten te delen en hen te tonen in de lijst van beschikbare rapporten (verwijs ook naar [de vertoningscontext van het Rapport](#report-display-context)). Deze operatie moet telkens opnieuw worden uitgevoerd wanneer het verslag wordt gewijzigd.
 

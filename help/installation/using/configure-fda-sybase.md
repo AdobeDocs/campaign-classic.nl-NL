@@ -6,21 +6,23 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0fdf8259-5cab-4a9d-adb3-6c55ec5c8851
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
 
 ---
 
-# Toegang tot Sybase IQ configureren {#configure-access-to-sybase-iq}
+# Toegang tot Sybases IQ configureren {#configure-access-to-sybase-iq}
+
+![](../../assets/v7-only.svg)
 
 Gebruik de optie Campagne **Federated Data Access** (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Sybase IQ te configureren.
 
 1. [Sybase IQ database](#configuring-sybase) configureren
 1. De Sybases IQ [externe account](#sybase-external) configureren in campagne
 
-## Configuratie van sybase IQ {#configuring-sybase}
+## Configuratie sybase IQ {#configuring-sybase}
 
 Voor verbinding met een externe database van Sybase IQ in FDA zijn hieronder aanvullende configuraties op de Adobe Campaign-server vereist.
 

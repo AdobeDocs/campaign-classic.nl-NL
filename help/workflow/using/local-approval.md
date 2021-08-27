@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 2d9cbfc8-1f99-4b38-8460-77c7c986e9ca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Lokale goedkeuring{#local-approval}
+
+![](../../assets/common.svg)
 
 Wanneer geïntegreerd in een het richten werkschema, laat de **[!UICONTROL Local approval]** activiteit u opstelling een ontvankelijke goedkeuringsproces alvorens de levering wordt verzonden.
 
@@ -23,7 +25,7 @@ Wanneer geïntegreerd in een het richten werkschema, laat de **[!UICONTROL Local
 >
 >Om deze activiteit te gebruiken, moet u de Verdeelde module van de Marketing hebben gekocht, die een optie van de Campagne is. Controleer hiervoor uw licentieovereenkomst.
 
-Voor een voorbeeld van de **[!UICONTROL Local approval]** activiteit met een distributiemalplaatje, verwijs naar [Het gebruiken van de lokale goedkeuringsactiviteit](../../workflow/using/using-the-local-approval-activity.md).
+Voor een voorbeeld van de **[!UICONTROL Local approval]** activiteit met een distributiemalplaatje, verwijs naar [Het gebruiken van de lokale goedkeuringsactiviteit](using-the-local-approval-activity.md).
 
 Voer eerst een label in voor de activiteit en het veld **[!UICONTROL Action to execute]**:
 
@@ -33,11 +35,11 @@ Voer eerst een label in voor de activiteit en het veld **[!UICONTROL Action to e
 
    ![](assets/local_validation_intro_2.png)
 
-* **Incrementele query**: laat u een vraag uitvoeren en zijn uitvoering plannen. Raadpleeg de sectie [Incrementele query](../../workflow/using/incremental-query.md).
+* **Incrementele query**: laat u een vraag uitvoeren en zijn uitvoering plannen. Raadpleeg de sectie [Incrementele query](incremental-query.md).
 
    ![](assets/local_validation_intro_3.png)
 
-## Doelgoedkeuringskennisgeving {#target-approval-notification}
+## Doelgoedkeuring {#target-approval-notification}
 
 In dit geval wordt de **[!UICONTROL Local approval]** activiteit geplaatst tussen upstream het richten en de levering:
 
@@ -49,7 +51,7 @@ De velden die moeten worden ingevuld in het geval van een kennisgeving voor goed
 
 * **[!UICONTROL Distribution context]**: Selecteer de  **[!UICONTROL Specified in the transition]** optie als u een  **[!UICONTROL Split]** type activiteit gebruikt om de doelpopulatie te beperken. In dit geval wordt de distributiesjabloon in de splitsingsactiviteit ingevoerd. Als u de beoogde populatie niet beperkt, selecteert u hier de optie **[!UICONTROL Explicit]** en voert u de distributiesjabloon in het veld **[!UICONTROL Data distribution]** in.
 
-   Raadpleeg [Het aantal subsetrecords per gegevensdistributie beperken](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution) voor meer informatie over het maken van een sjabloon voor gegevensdistributie.
+   Raadpleeg [Het aantal subsetrecords per gegevensdistributie beperken](split.md#limiting-the-number-of-subset-records-per-data-distribution) voor meer informatie over het maken van een sjabloon voor gegevensdistributie.
 
 * **[!UICONTROL Approval management]**
 
@@ -68,7 +70,7 @@ De velden die moeten worden ingevuld in het geval van een kennisgeving voor goed
    >
    >Deze optie is standaard uitgeschakeld.
 
-## Feedbackrapport {#delivery-feedback-report} leveren
+## Feedbackrapport leveren {#delivery-feedback-report}
 
 In dit geval wordt de **[!UICONTROL Local approval]** activiteit na de levering geplaatst:
 
@@ -81,9 +83,9 @@ In het geval van een feedbackrapport voor levering moeten de volgende velden wor
 * Selecteer de optie **[!UICONTROL Specified in the transition]** als de levering tijdens een vorige activiteit was ingegaan. Selecteer **[!UICONTROL Explicit]** om de levering in de lokale goedkeuringsactiviteit te specificeren.
 * Selecteer de leveringssjabloon en het object van het e-mailbericht. Er is een standaardsjabloon: **[!UICONTROL Local approval notification]**.
 
-## Voorbeeld: Een workflowlevering {#example--approving-a-workflow-delivery} goedkeuren
+## Voorbeeld: Workflowlevering goedkeuren {#example--approving-a-workflow-delivery}
 
-In dit voorbeeld wordt getoond hoe u een goedkeuringsproces voor workflowlevering instelt. Raadpleeg [Voorbeeld voor meer informatie over het maken van workflows voor levering: leveringswerkstroom](../../workflow/using/delivery.md#example--delivery-workflow) sectie.
+In dit voorbeeld wordt getoond hoe u een goedkeuringsproces voor workflowlevering instelt. Raadpleeg [Voorbeeld voor meer informatie over het maken van workflows voor levering: leveringswerkstroom](delivery.md#example--delivery-workflow) sectie.
 
 Een exploitant kan een levering op één van twee manieren goedkeuren: het gebruiken van de Web-pagina verbonden in het e-mailbericht, of via de console.
 

@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: e458f6cb-f6d1-4688-9f6d-2a27a2f90829
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Aanbevelingen{#recommendations}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign is een zeer transactioneel systeem (OLTP-database). Dit betekent dat de onderliggende database vaak wordt bijgewerkt, wat resulteert in een verslechtering van de prestaties in de loop der tijd. Om dit soort uitgifte te voorkomen, is regelmatig onderhoud van de database nodig.
 

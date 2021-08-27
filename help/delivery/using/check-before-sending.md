@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 4%
@@ -13,6 +13,8 @@ ht-degree: 4%
 ---
 
 # Alle controles uitvoeren voordat ze worden verzonden {#perform-all-checks}
+
+![](../../assets/common.svg)
 
 Zodra uw bericht klaar is, zorg ervoor zijn inhoud correct, op alle apparaten wordt getoond, en bevat geen fouten zoals verkeerde verpersoonlijking of gebroken verbindingen.
 
@@ -90,7 +92,7 @@ U kunt:
 
 * Voor elk element IPAffinity, verklaar de IP adressen die kunnen worden gebruikt. [Meer informatie](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* In [typologie](../../campaign/using/about-campaign-typologies.md) van uw keus, gebruik **[!UICONTROL Managing affinities with IP addresses]** gebied om leveringen aan de leveringsserver (MTA) te verbinden die bovengenoemde affiniteit beheert. [Meer informatie](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic).
+* In [typologie](../../campaign-opt/using/about-campaign-typologies.md) van uw keus, gebruik **[!UICONTROL Managing affinities with IP addresses]** gebied om leveringen aan de leveringsserver (MTA) te verbinden die bovengenoemde affiniteit beheert. [Meer info](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
 
 * Zodra e-mail wordt verzonden, controleer de kopbal om te verifiëren welk IP adres de levering van werd verzonden. De e-mailbeheerder moet u helpen de koptekstgegevens op te halen.
 
@@ -100,7 +102,7 @@ U kunt:
 
 ### Typologieën gebruiken
 
-U kunt typologische regels gebruiken om een deel van het doel uit te sluiten op basis van specifieke criteria. Dit garandeert dat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid inzake bedrijfscommunicatie. U kunt bijvoorbeeld de ontvangers die jonger zijn, filteren van het doel van de nieuwsbrief. Meer [in dit voorbeeld](../../campaign/using/filtering-rules.md) leren.
+U kunt typologische regels gebruiken om een deel van het doel uit te sluiten op basis van specifieke criteria. Dit garandeert dat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid inzake bedrijfscommunicatie. U kunt bijvoorbeeld de ontvangers die jonger zijn, filteren van het doel van de nieuwsbrief. Meer [in dit voorbeeld](../../campaign-opt/using/filtering-rules.md) leren.
 
 ### Bijlagen voorkomen
 

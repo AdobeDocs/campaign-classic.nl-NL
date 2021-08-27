@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Geavanceerde mogelijkheden{#advanced-functionalities}
+
+![](../../assets/common.svg)
 
 Als technische gebruiker, naast [algemene eigenschappen](../../reporting/using/properties-of-the-report.md), kunt u geavanceerde mogelijkheden gebruiken om uw rapporten te vormen, zoals:
 
@@ -29,7 +31,7 @@ Als technische gebruiker, naast [algemene eigenschappen](../../reporting/using/p
 
 ## Werken met scripts {#adding-a-script}
 
-### Verwijzing naar externe scripts {#external-script}
+### Externe scripts {#external-script}
 
 U kunt verwijzen naar JavaScript-codes die aan de client- en/of serverzijde worden uitgevoerd wanneer de rapportpagina wordt opgevraagd.
 
@@ -45,7 +47,7 @@ Dit doet u als volgt:
 
 Voor een normale uitvoering op de client moeten de scripts waarnaar wordt verwezen, in JavaScript zijn geschreven en compatibel zijn met algemene browsers. Raadpleeg [deze sectie](../../web/using/web-forms-answers.md) voor meer informatie.
 
-### Een scriptactiviteit {#script-activity} toevoegen
+### Een scriptactiviteit toevoegen {#script-activity}
 
 Wanneer [het ontwerpen van uw rapport](../../reporting/using/creating-a-new-report.md#modelizing-the-chart), gebruik **[!UICONTROL Script]** activiteit om gegevens te verwerken en gemakkelijk complexe vragen tot stand te brengen die SQL taal niet toelaten. U kunt uw query rechtstreeks invoeren in het scriptvenster.
 
@@ -63,7 +65,7 @@ if( ctx.@_historyId.toString().length == 0 )
 
 Anders worden alleen de huidige gegevens weergegeven.
 
-## Een URL-parameter {#defining-additional-settings} toevoegen
+## Een URL-parameter toevoegen {#defining-additional-settings}
 
 Met het tabblad **[!UICONTROL Parameters]** van de [rapporteigenschappen](../../reporting/using/properties-of-the-report.md) kunt u aanvullende instellingen voor het rapport definiëren: deze montages zullen in URL tijdens de vraag worden overgegaan.
 
@@ -97,7 +99,7 @@ Met **[!UICONTROL Response HTTP headers]** kunt u klikaanvallen voorkomen wannee
 
 ![](assets/s_ncs_advuser_report_properties_09c.png)
 
-## Variabelen {#adding-variables} toevoegen
+## Variabelen toevoegen {#adding-variables}
 
 Het **[!UICONTROL Variables]** lusje bevat de lijst van variabelen die in het rapport worden gevormd. Deze variabelen worden in de context van het verslag weergegeven en kunnen in berekeningen worden gebruikt.
 

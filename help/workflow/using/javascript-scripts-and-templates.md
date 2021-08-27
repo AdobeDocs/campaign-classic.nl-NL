@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1234'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # JavaScript-scripts en -sjablonen{#javascript-scripts-and-templates}
+
+![](../../assets/common.svg)
 
 Met scripts kunt u waarden berekenen, gegevens uitwisselen tussen verschillende taken in het proces en specifieke bewerkingen uitvoeren met SOAP-aanroepen.
 
@@ -26,7 +28,7 @@ Scripts zijn alomtegenwoordig in een workflowdiagram:
 
    ![](assets/script-button.png)
 
-## Onbelichte objecten {#objects-exposed}
+## Objecten blootgesteld {#objects-exposed}
 
 JavaScripts die in de context van een werkstroom worden uitgevoerd, hebben toegang tot een reeks extra globale objecten.
 
@@ -79,17 +81,17 @@ De gebeurtenisvariabelen (**[!UICONTROL vars.xxx]**) laten de uitwisseling van g
 
 >[!CAUTION]
 >
->In het geval van [AND-join](../../workflow/using/and-join.md) type activiteiten, worden de variabelen samengevoegd maar als een zelfde variabele tweemaal wordt bepaald, is er een conflict en de waarde blijft onbepaald.
+>In het geval van [AND-join](and-join.md) type activiteiten, worden de variabelen samengevoegd maar als een zelfde variabele tweemaal wordt bepaald, is er een conflict en de waarde blijft onbepaald.
 
 Gebeurtenissen zijn de meest gebruikte variabelen en moeten bij voorkeur worden gebruikt in plaats van instantievariabelen.
 
-Bepaalde gebeurtenisvariabelen worden door de verschillende activiteiten gewijzigd of gelezen. Dit zijn allemaal tekenreeksvariabelen. Met een exportbewerking wordt bijvoorbeeld de variabele **[!UICONTROL vars.filename]** ingesteld met de volledige naam van het bestand dat zojuist is geëxporteerd. Al deze gelezen of gewijzigde variabelen worden gedocumenteerd in [Informatie over activiteiten](../../workflow/using/about-activities.md), in de secties **Invoerparameters** en **Uitvoerparameters** van de activiteiten.
+Bepaalde gebeurtenisvariabelen worden door de verschillende activiteiten gewijzigd of gelezen. Dit zijn allemaal tekenreeksvariabelen. Met een exportbewerking wordt bijvoorbeeld de variabele **[!UICONTROL vars.filename]** ingesteld met de volledige naam van het bestand dat zojuist is geëxporteerd. Al deze gelezen of gewijzigde variabelen worden gedocumenteerd in [Informatie over activiteiten](about-activities.md), in de secties **Invoerparameters** en **Uitvoerparameters** van de activiteiten.
 
 ### Gebruiksscenario’s {#example}
 
 >[!NOTE]
 >
->Er zijn extra gevallen van werkloos gebruik beschikbaar in [deze sectie](../../workflow/using/about-workflow-use-cases.md).
+>Er zijn extra gevallen van werkloos gebruik beschikbaar in [deze sectie](about-workflow-use-cases.md).
 
 **Voorbeeld 1**
 

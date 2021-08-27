@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Een profiel bewerken{#editing-a-profile}
+
+![](../../assets/common.svg)
 
 Klik op de naam van een profiel in de lijst met profielen om informatie over een profiel weer te geven.
 
@@ -31,7 +33,7 @@ De tabbladen en hun inhoud zijn afhankelijk van uw configuratie en geïnstalleer
 >
 >Zie [deze pagina](../../configuration/using/about-schema-edition.md) voor meer informatie.
 
-## Algemeen tabblad {#general-tab}
+## Tabblad Algemeen {#general-tab}
 
 Dit scherm bevat alle algemene gegevens over het geselecteerde profiel. Het bevat met name de achternaam, voornaam, e-mailadres, e-mailontvangstnotatie, enz. Het ziet er zo uit:
 
@@ -59,7 +61,7 @@ Dit scherm bevat door de gebruiker gedefinieerde velden die op basis van vereist
 >
 >Raadpleeg [deze pagina](../../configuration/using/new-field-wizard.md) voor meer informatie over veldeigenschappen en het toevoegen van velden.
 
-## Lijsten, tabblad {#lists-tab}
+## Tabblad Lijsten {#lists-tab}
 
 In dit scherm worden de groep(en) weergegeven waartoe het geselecteerde profiel behoort. Klik op **[!UICONTROL Add]** om het profiel in te schrijven op een lijst. Klik op **[!UICONTROL Detail]** om de beschrijving en de lijst met profielen in de geselecteerde lijst weer te geven.
 
@@ -83,7 +85,7 @@ In dit scherm worden de leveringslogboeken voor het geselecteerde profiel weerge
 
 ![](assets/s_ncs_user_profile_delivery_tab.png)
 
-## Tabblad {#tracking-tab} bijhouden
+## Tabblad Tekstspatiëring {#tracking-tab}
 
 In dit scherm kunt u de trackinglogboeken voor het geselecteerde profiel weergeven. Deze informatie wordt gebruikt om profielgedrag na leveringen te volgen.
 

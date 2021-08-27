@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # Best practices voor het bewerken van content{#content-editing-best-practices}
+
+![](../../assets/common.svg)
 
 Om de optimale werking van de redacteur te verzekeren, adviseren wij het naleven van de volgende richtlijnen:
 
@@ -40,7 +42,7 @@ Om de optimale werking van de redacteur te verzekeren, adviseren wij het naleven
 * Zorg ervoor dat de pagina slechts één `<body> </body>` bevat.
 * Wanneer een CSS- of JS-bestand wordt geüpload, worden de afbeeldingen in het .zip-bestand niet geüpload. De verwijzingen naar deze afbeeldingen in de CSS worden daarom niet bijgewerkt.
 
-## Ondersteunde indelingen voor inhoudseditor {#content-editor-supported-formats}
+## Ondersteunde indelingen voor de inhoudseditor {#content-editor-supported-formats}
 
 De Digital Content Editor ondersteunt de HTML-indeling: u kunt op elk ogenblik op **bron** wijze schakelen.
 
@@ -69,7 +71,7 @@ De Editor voor digitale inhoud werkt ook met de volgende ondersteunde codepagina
 >
 >De HTML-codepagina moet worden gedefinieerd in een metatag (HTML 4 of HTML 5) of in de BOM. Als er geen codepagina beschikbaar is, opent u het bestand in latin1.
 
-## HTML-inhoudsstatus {#html-content-statuses}
+## HTML-inhoudsstatussen {#html-content-statuses}
 
 In het bovenste gedeelte van de editor worden berichten weergegeven die betrekking hebben op de status van de inhoud. De kleurcodes voor de berichten zijn als volgt:
 

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2613'
 ht-degree: 14%
@@ -14,6 +14,8 @@ ht-degree: 14%
 ---
 
 # Werken met quarantainebeheer{#understanding-quarantine-management}
+
+![](../../assets/common.svg)
 
 ## Quarantaine {#about-quarantines}
 
@@ -255,7 +257,6 @@ Voor klanten die de schakelaar Baidu gebruiken, zijn hier de verschillende soort
 * Verbindingsprobleem aan het begin van de levering: type fout **[!UICONTROL Undefined]**, reden van mislukking **[!UICONTROL Unreachable]**, wordt opnieuw uitgevoerd.
 * Verbinding verloren tijdens een levering: soft error, failure reason **[!UICONTROL Refused]**, re try wordt uitgevoerd.
 * Synchrone fout die door Baidu tijdens het verzenden is geretourneerd: harde fout, mislukkingsreden **[!UICONTROL Refused]**, wordt niet opnieuw uitgevoerd.
-
 Adobe Campaign neemt om de 10 minuten contact op met de Baidu-server om de status van het verzonden bericht op te halen en werkt de weblogs bij. Als een bericht zoals verzonden wordt verklaard, wordt het statuut van het bericht in de uitzendingen geplaatst aan **[!UICONTROL Received]**. Als Baidu een fout declareert, wordt de status ingesteld op **[!UICONTROL Failed]**.
 
 **Voor Android V2**

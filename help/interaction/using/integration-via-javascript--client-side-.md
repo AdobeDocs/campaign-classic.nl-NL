@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a9842e59-120c-4a35-abdf-6540a0bbdd6d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Integratie via JavaScript (clientzijde){#integration-via-javascript-client-side}
+
+![](../../assets/v7-only.svg)
 
 Als u de interactie-engine op een webpagina wilt aanroepen, voegt u een aanroep van een JavaScript-code rechtstreeks in op de pagina. Deze vraag keert de aanbiedingsinhoud in gerichte terug
 
@@ -35,7 +37,7 @@ In de volgende gebruiksgevallen worden de mogelijke opties beschreven voor het i
 
 ## HTML-modus {#html-mode}
 
-### Een anonieme aanbieding {#presenting-an-anonymous-offer} presenteren
+### Een anonieme aanbieding presenteren {#presenting-an-anonymous-offer}
 
 1. **De interactie-engine voorbereiden**
 
@@ -98,7 +100,7 @@ element op interactie.
    </div>
    ```
 
-### Een geïdentificeerde aanbieding {#presenting-an-identified-offer} presenteren
+### Een geïdentificeerd aanbod presenteren {#presenting-an-identified-offer}
 
 Om een aanbieding aan een geïdentificeerde contact voor te stellen, is het proces gelijkaardig zoals hier beschreven: [Een anonieme aanbieding presenteren](#presenting-an-anonymous-offer). In de inhoud van de webpagina moet u het volgende script toevoegen waarmee de contactpersoon tijdens de aanroep naar de engine wordt geïdentificeerd:
 
@@ -124,7 +126,7 @@ Om een aanbieding aan een geïdentificeerde contact voor te stellen, is het proc
    </script>
    ```
 
-### Een HTML-renderfunctie {#using-an-html-rendering-function} gebruiken
+### Een HTML-renderfunctie gebruiken {#using-an-html-rendering-function}
 
 Als u de representatie van de HTML-aanbieding automatisch wilt genereren, kunt u een renderfunctie gebruiken.
 
@@ -138,7 +140,7 @@ Als u de representatie van de HTML-aanbieding automatisch wilt genereren, kunt u
 
 ## XML-modus {#xml-mode}
 
-### Een aanbieding {#presenting-an-offer} presenteren
+### Een voorstel presenteren {#presenting-an-offer}
 
 De interactie laat u een knoop van XML aan de HTML- pagina terugkeren die omhoog de aanbiedingsmotor roept. Dit XML-knooppunt kan worden verwerkt door functies die aan de kant van de klant moeten worden ontwikkeld.
 
@@ -307,7 +309,7 @@ In het volgende gebruiksgeval worden de configuraties beschreven die in Adobe Ca
    </propositions>
    ```
 
-### Een renderfunctie {#using-a-rendering-function-} gebruiken
+### Een renderfunctie gebruiken {#using-a-rendering-function-}
 
 Het is mogelijk een XML-renderfunctie te gebruiken om een aanbiedingspresentatie te maken. Deze functie wijzigt het XML-knooppunt dat tijdens de aanroep naar de engine wordt geretourneerd naar de HTML-pagina.
 

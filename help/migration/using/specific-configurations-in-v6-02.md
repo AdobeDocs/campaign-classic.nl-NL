@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7e8f8488-f3ef-4b64-9981-335d67caf372
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Specifieke configuraties in v6.02{#specific-configurations-in-v6-02}
+
+![](../../assets/v7-only.svg)
 
 In de volgende sectie wordt beschreven welke aanvullende configuratie is vereist voor het migreren van versie 6.02. U zou ook de montages moeten vormen die in [Algemene configuraties](../../migration/using/general-configurations.md) sectie worden gedetailleerd.
 
@@ -37,7 +39,7 @@ Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/
 
 Als u deze webtoepassingen hebt gewijzigd en deze wilt blijven gebruiken in v7, moet u de optie **allowSQLInjection** in uw verschillende beveiligingszones activeren en de postupgrade opnieuw starten. Raadpleeg de sectie [SQLData](../../migration/using/general-configurations.md#sqldata) voor meer informatie hierover.
 
-## Gebruikersvriendelijkheid: Startpagina en navigatie {#user-friendliness--home-page-and-navigation}
+## Gebruikersvriendelijkheid: Homepage en navigatie {#user-friendliness--home-page-and-navigation}
 
 >[!IMPORTANT]
 >
@@ -73,7 +75,7 @@ Als u een ander overzicht wilt toevoegen dat is geconfigureerd in v6.02, moet u 
 >
 >Vergeet niet de verbinding te verbreken en vervolgens de console opnieuw te verbinden om de wijzigingen te registreren.
 
-## Berichtmidden {#message-center}
+## Berichtencentrum {#message-center}
 
 Na een migratie van de controleinstantie van het Centrum van het Bericht, moet u de transactionele berichtmalplaatjes voor hen opnieuw publiceren om te werken.
 

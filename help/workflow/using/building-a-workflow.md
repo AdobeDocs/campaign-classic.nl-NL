@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Een workflow maken {#building-a-workflow}
+
+![](../../assets/common.svg)
 
 In deze sectie worden de belangrijkste beginselen en aanbevolen procedures beschreven voor het maken van een workflow in Campagne.
 
@@ -55,10 +57,10 @@ U moet nu de verschillende activiteiten definiëren en deze koppelen in het diag
 
 De activiteiten worden gegroepeerd op categorie in de verschillende tabbladen van het palet. De beschikbare tabbladen en activiteiten kunnen variëren afhankelijk van het type workflow (technisch, doelgericht of campagneworkflow).
 
-* Het eerste tabblad bevat bewerkingen voor het activeren van doelen en gegevens. Deze activiteiten worden beschreven in [Doelactiviteiten](../../workflow/using/about-targeting-activities.md).
-* Het tweede tabblad bevat de planningsactiviteiten, die hoofdzakelijk worden gebruikt voor de coördinatie van andere activiteiten. Deze activiteiten worden beschreven in [Stroombeheeractiviteiten](../../workflow/using/about-flow-control-activities.md).
-* Het derde tabblad bevat gereedschappen en handelingen die in de workflow kunnen worden gebruikt. Deze activiteiten worden beschreven in [Handelingsactiviteiten](../../workflow/using/about-action-activities.md).
-* Het vierde tabblad bevat activiteiten die afhankelijk zijn van een bepaalde gebeurtenis, zoals de ontvangst van een e-mail of de aankomst van een bestand op een server. Deze activiteiten worden beschreven in [Gebeurtenisactiviteiten](../../workflow/using/about-event-activities.md).
+* Het eerste tabblad bevat bewerkingen voor het activeren van doelen en gegevens. Deze activiteiten worden beschreven in [Doelactiviteiten](about-targeting-activities.md).
+* Het tweede tabblad bevat de planningsactiviteiten, die hoofdzakelijk worden gebruikt voor de coördinatie van andere activiteiten. Deze activiteiten worden beschreven in [Stroombeheeractiviteiten](about-flow-control-activities.md).
+* Het derde tabblad bevat gereedschappen en handelingen die in de workflow kunnen worden gebruikt. Deze activiteiten worden beschreven in [Handelingsactiviteiten](about-action-activities.md).
+* Het vierde tabblad bevat activiteiten die afhankelijk zijn van een bepaalde gebeurtenis, zoals de ontvangst van een e-mail of de aankomst van een bestand op een server. Deze activiteiten worden beschreven in [Gebeurtenisactiviteiten](about-event-activities.md).
 
 Het diagram maken
 
@@ -104,7 +106,7 @@ U kunt de weergave en lay-out van het diagram wijzigen met de volgende elementen
 
 * **Afbeeldingsbeheer**
 
-   U kunt het achtergrondbeeld van het diagram evenals die aanpassen met betrekking tot de diverse activiteiten. Zie [Activiteitenafbeeldingen beheren](../../workflow/using/managing-activity-images.md).
+   U kunt het achtergrondbeeld van het diagram evenals die aanpassen met betrekking tot de diverse activiteiten. Zie [Activiteitenafbeeldingen beheren](managing-activity-images.md).
 
 ## Activiteiten configureren {#configuring-activities}
 
@@ -112,7 +114,7 @@ Dubbelklik op een activiteit om deze te configureren of klik met de rechtermuisk
 
 >[!NOTE]
 >
->De activiteiten van de campagneworkflow worden beschreven in [deze sectie](../../workflow/using/about-activities.md).
+>De activiteiten van de campagneworkflow worden beschreven in [deze sectie](about-activities.md).
 
 Het eerste lusje bevat de basisconfiguratie. Het tabblad **[!UICONTROL Advanced]** bevat de aanvullende parameters die met name worden gebruikt voor het definiëren van gedrag wanneer een fout wordt aangetroffen, het opgeven van de uitvoeringsduur voor een activiteit en het invoeren van een initialisatiescript.
 
@@ -120,17 +122,17 @@ Voor een beter begrip van de activiteiten en een betere leesbaarheid van de work
 
 ![](assets/example1-comment.png)
 
-## Doelwerkstromen {#targeting-workflows}
+## Workflows voorbereiden {#targeting-workflows}
 
 Met doelgerichte workflows kunt u verschillende leveringsdoelen maken. U kunt query&#39;s maken, samenvoegingen of uitsluitingen definiëren op basis van specifieke criteria, planning toevoegen dankzij workflowactiviteiten. Het resultaat van deze gerichte actie kan automatisch worden overgedragen naar een lijst die als doel van leveringsacties kan dienen
 
-Naast deze activiteiten kunt u met de opties voor gegevensbeheer gegevens manipuleren en geavanceerde functies gebruiken om complexe doelproblemen op te lossen. Raadpleeg [Gegevensbeheer](../../workflow/using/targeting-data.md#data-management) voor meer informatie hierover.
+Naast deze activiteiten kunt u met de opties voor gegevensbeheer gegevens manipuleren en geavanceerde functies gebruiken om complexe doelproblemen op te lossen. Raadpleeg [Gegevensbeheer](targeting-data.md#data-management) voor meer informatie hierover.
 
 Al deze activiteiten vindt u op het eerste tabblad van de workflow.
 
 >[!NOTE]
 >
->Doelactiviteiten worden beschreven in [deze sectie](../../workflow/using/about-activities.md).
+>Doelactiviteiten worden beschreven in [deze sectie](about-activities.md).
 
 Doelworkflows kunnen worden gemaakt en bewerkt via het knooppunt **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** van de Adobe Campaign-structuur of via het menu **[!UICONTROL Profiles and Targets > Targeting workflows]** van de startpagina.
 
@@ -138,15 +140,15 @@ Doelworkflows kunnen worden gemaakt en bewerkt via het knooppunt **[!UICONTROL P
 
 Het richten van werkschema&#39;s binnen het kader van een campagne wordt opgeslagen met alle campagnewerkschema&#39;s.
 
-### Belangrijke stappen voor het maken van een doelworkflow {#implementation-steps-}
+### Belangrijke stappen om een doelworkflow te maken {#implementation-steps-}
 
 De stappen voor het maken van een doelworkflow worden in de volgende secties beschreven:
 
-1. **Gegevens** identificeren in de database - Zie Vragen  [maken](../../workflow/using/targeting-data.md#creating-queries)
-1. **Voorbereid** gegevens om aan leveringsbehoeften te voldoen - zie het  [Verrijken en het wijzigen van gegevens](../../workflow/using/targeting-data.md#enriching-and-modifying-data)
-1. **Gebruikte gegevens** om updates of levering uit te voeren - Zie De database  [bijwerken](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)
+1. **Gegevens** identificeren in de database - Zie Vragen  [maken](targeting-data.md#creating-queries)
+1. **Voorbereid** gegevens om aan leveringsbehoeften te voldoen - zie het  [Verrijken en het wijzigen van gegevens](targeting-data.md#enriching-and-modifying-data)
+1. **Gebruikte gegevens** om updates of levering uit te voeren - Zie De database  [bijwerken](how-to-use-workflow-data.md#updating-the-database)
 
-De resultaten van alle verrijkingen en alle handgrepen die tijdens het richten worden uitgevoerd worden opgeslagen en toegankelijk op verpersoonlijkingsgebieden, met name voor gebruik wanneer het creëren van gepersonaliseerde berichten. Raadpleeg [Doelgegevens](../../workflow/using/data-life-cycle.md#target-data) voor meer informatie hierover
+De resultaten van alle verrijkingen en alle handgrepen die tijdens het richten worden uitgevoerd worden opgeslagen en toegankelijk op verpersoonlijkingsgebieden, met name voor gebruik wanneer het creëren van gepersonaliseerde berichten. Raadpleeg [Doelgegevens](data-life-cycle.md#target-data) voor meer informatie hierover
 
 ### Afmetingen gericht en filteren {#targeting-and-filtering-dimensions}
 
@@ -194,7 +196,7 @@ De submap **[!UICONTROL Campaign process]** centraliseert de workflows die nodig
 
 >[!NOTE]
 >
->De lijst van technische werkschema&#39;s die met elke module worden geïnstalleerd is beschikbaar in [specifieke sectie](../../workflow/using/about-technical-workflows.md).
+>De lijst van technische werkschema&#39;s die met elke module worden geïnstalleerd is beschikbaar in [specifieke sectie](about-technical-workflows.md).
 
 U kunt andere technische werkschema&#39;s in de **[!UICONTROL Administration > Production > Technical workflows]** knoop van de boomstructuur tot stand brengen. Dit proces is echter voorbehouden aan professionele gebruikers.
 

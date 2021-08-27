@@ -2,18 +2,20 @@
 product: campaign
 title: Toegang tot campagnemappen beheren
 description: Leer hoe u toegang kunt verlenen tot campagnemappen en weergaven kunt maken
-feature: Applicatie-instellingen
+feature: Application Settings
 role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '751'
 ht-degree: 1%
 
 ---
 
 # Toegang tot mappen beheren{#folder-access-management}
+
+![](../../assets/common.svg)
 
 Elke omslag van de boomstructuur van de Ontdekkingsreiziger heeft gelezen, schrijft, en schrapt toegangsrechten verbonden aan het. Om toegang te krijgen tot een bestand, moet een operator of groep operatoren ten minste lees-toegang hebben.
 

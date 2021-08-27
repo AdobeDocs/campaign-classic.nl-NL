@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Gegevensschema’s{#data-schemas}
+
+![](../../assets/common.svg)
 
 Hieronder volgen enkele algemene beginselen betreffende het gebruik van gegevensschema&#39;s in Adobe Campaign.
 
@@ -122,7 +124,7 @@ In ons voorbeeld zijn de elementen **`<chapter>`** en **`<page>`** verzamelingse
 >
 >Met de aanwezigheid van het **ordered=&quot;true&quot;**-kenmerk kunt u de ingevoegde verzamelingselementen ordenen.
 
-## Element dat verwijst naar {#element-referencing}
+## Element verwijzen {#element-referencing}
 
 Element dat verwijst wordt veel gebruikt in inhoudsschema&#39;s. Het laat u toe om de definitie van een **`<element>`** element te factoriseren zodat het op andere elementen met de zelfde structuur kan worden van verwijzingen voorzien.
 

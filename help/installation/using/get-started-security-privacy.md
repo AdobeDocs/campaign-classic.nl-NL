@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # Aan de slag met beveiliging en privacy {#get-started-security-privacy}
+
+![](../../assets/v7-only.svg)
 
 Deze sectie zal u aan de belangrijkste elementen introduceren om betreffende veiligheid en privacy te controleren. Sommige configuraties kunnen slechts door on-premise klanten worden uitgevoerd.
 
@@ -30,7 +32,7 @@ De configuratie van de privacy en het verharden is een zeer belangrijk element v
 
 [Meer informatie](../../installation/using/privacy.md)
 
-## Toegangscontrole
+## Toegangsbeheer
 
 <img src="assets/do-not-localize/icon_access.svg" width="60px">
 

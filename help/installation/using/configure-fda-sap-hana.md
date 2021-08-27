@@ -6,21 +6,23 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 39bfe775-e182-4a0b-ad3c-b7a901297c90
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%
 
 ---
 
-# Toegang tot SAP HANA {#configure-access-to-sap-hana} configureren
+# Toegang tot SAP HANA configureren {#configure-access-to-sap-hana}
+
+![](../../assets/v7-only.svg)
 
 Gebruik de optie Campagne [Federated Data Access](../../installation/using/about-fda.md) (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot SAP HANA te configureren.
 
 1. [SAP HANA database](#sap-config) configureren
 1. Het SAP HANA [externe account](#sap-external) configureren in Campagne
 
-## Stuurprogramma&#39;s voor SAPPEN HANA {#sap-config}
+## SAPPEN HANA {#sap-config}
 
 Voor verbinding met een externe database van een SAP HANA in FDA zijn bepaalde aanvullende configuraties op de Adobe Campaign-server vereist:
 
@@ -58,7 +60,7 @@ Voor verbinding met een externe database van een SAP HANA in FDA zijn bepaalde a
    * **LD_LIBRARY_PATH**: Het zou de verbinding aan uw cliënt van SAP Hana (/usr/sap/hdbclient/libodbcHDB.so) door gebrek moeten omvatten.
    * **ODBCINI**: locatie van het bestand odbc.ini (bijvoorbeeld /etc/odbc.ini).
 
-## Externe account van SAP HANA{#sap-external}
+## Externe rekening van SAP HANA{#sap-external}
 
 Met de externe account van het SAP HANA kunt u uw Campagne-instantie verbinden met uw externe database van het SAP HANA.
 

@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Transactieberichtsjablonen ontwerpen {#creating-the-message-template}
+
+![](../../assets/v7-only.svg)
 
 Om ervoor te zorgen dat elke gebeurtenis in een gepersonaliseerd bericht kan worden veranderd, moet u een berichtmalplaatje creëren om elk gebeurtenistype aan te passen.
 
@@ -51,7 +53,7 @@ De transactionele berichtmalplaatjes bevatten de noodzakelijke informatie voor h
 
    ![](assets/messagecenter_create_model_004.png)
 
-## Maak de berichtinhoud {#creating-message-content}
+## Berichtinhoud maken {#creating-message-content}
 
 De definitie van de inhoud van het transactiebericht is gelijk aan die voor normale leveringen in Adobe Campaign. U kunt bijvoorbeeld voor een e-maillevering inhoud in HTML- of tekstindeling maken, bijlagen toevoegen of het bezorgingsobject aanpassen. Raadpleeg voor meer informatie het hoofdstuk [E-maillevering](../../delivery/using/about-email-channel.md).
 

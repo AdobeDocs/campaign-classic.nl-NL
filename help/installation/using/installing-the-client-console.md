@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '973'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # De clientconsole van de campagne installeren en bijwerken{#installing-the-client-console}
+
+![](../../assets/v7-only.svg)
 
 De Console van de Cliënt van de campagne is een rijke cliënt die u toelaat om met uw de toepassingsserver(s) van de Campagne te verbinden.
 
@@ -32,7 +34,7 @@ Controleer de onderstaande details om te begrijpen wat nodig is voor uw implemen
 >
 >De console van de Cliënt van de campagne en de toepassingsserver van de Campagne moeten **op de zelfde productversie** in werking stellen. Adobe raadt ook ten zeerste aan om de **zelfde productbuild** te gebruiken. Leer hoe te om uw versies van de Cliënt en van de Server van de Campagne in [deze sectie](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) te controleren.
 
-## Adobe gehoste implementaties {#hosted-customers}
+## Adobe Gehoste implementaties {#hosted-customers}
 
 Voor een gehoste klant hebt u twee opties om uw clientconsole(s) te installeren of bij te werken:
 
@@ -42,7 +44,7 @@ Voor een gehoste klant hebt u twee opties om uw clientconsole(s) te installeren 
 
    **Gebruikers hebben beheerdersrechten nodig om de update te voltooien. Als de gebruikers geen beheerdersrechten hebben, moet een systeembeheerder implementeren op alle clientconsoles**
 
-## Implementaties {#hybrid-onprem-customers} op locatie
+## Hybride en op locatie uitgevoerde implementaties {#hybrid-onprem-customers}
 
 Adobe Campaign-gebruikers kunnen zich alleen aanmelden bij de instantie die u hebt gemaakt en geconfigureerd, als ze de clientconsole gebruiken.
 
@@ -81,7 +83,7 @@ Als **[!UICONTROL No longer ask this question]** is geselecteerd, kunt u deze he
 >
 >Als u een bijgewerkte console op een bestaande implementatie toepast, zullen de gebruikers automatisch een herinnering ontvangen om hun cliëntconsole bij te werken. Als u Campagne voor het eerst uitvoert, zullen de gebruikers de console moeten downloaden. Zie hieronder voor meer informatie over beide opties
 
-### Werk de console voor bestaande implementatie bij{#update-the-client-console}
+### De console bijwerken voor een bestaande implementatie{#update-the-client-console}
 
 Zodra de console in de de serveromslag van de Campagne beschikbaar is, zullen de gebruikers worden ertoe aangezet om de recentste versie van de cliëntconsole in een pop-up venster te downloaden.
 
@@ -106,7 +108,7 @@ Gebruikers moeten de console nu downloaden en installeren door de onderstaande s
 1. Download en sla het instellingenbestand van de client op.
 1. Het gedownloade bestand uitvoeren op een computer in Windows: De installatie wordt gestart. Het standaardinstallatiepad van de clientconsole is **$PROGRAFinnLES$/Adobe/Adobe Campaign Classic vX Client**, waarbij &#39;X&#39; &#39;6&#39; of &#39;7&#39; is, volgens uw Adobe Campaign-versie.
 
-### Maak de verbinding - alleen eerste gebruikers{#create-the-connection}
+### Verbinding maken - alleen eerste gebruikers{#create-the-connection}
 
 Nadat de clientconsole is geïnstalleerd, voert u de onderstaande stappen uit om de verbinding met de toepassingsserver tot stand te brengen:
 
@@ -124,7 +126,7 @@ Nadat de clientconsole is geïnstalleerd, voert u de onderstaande stappen uit om
 
    U kunt bijvoorbeeld de URL van het type [`https://<machine>.<domain>.com`](https://myserver.adobe.com) gebruiken.
 
-1. Als Adobe IMS voor uw organisatie wordt gevormd, controleer de optie **[!UICONTROL Connect with an Adobe ID]**
+1. Als Adobe IMS is geconfigureerd voor uw organisatie, controleert u de optie **[!UICONTROL Connect with an Adobe ID]**
 
 1. Klik **[!UICONTROL Ok]** om uw montages te bewaren.
 

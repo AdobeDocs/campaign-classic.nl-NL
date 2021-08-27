@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Algemene rapporten {#global-reports}
+
+![](../../assets/common.svg)
 
 Deze rapporten hebben betrekking op de activiteit van de gegevens in de gehele database. Ga naar het tabblad **[!UICONTROL Reports]** om het dashboard met rapporten weer te geven.
 
@@ -191,7 +193,7 @@ In de **[!UICONTROL Opens]** kolom, hebben wij de volgende indicatoren:
 
 Deze sectie omvat twee grafieken die de indeling van de deelactiviteiten vertegenwoordigen en per sociaal netwerk worden geopend.
 
-## Statistieken over het delen van activiteiten {#statistics-on-sharing-activities}
+## Statistieken over de activiteiten voor het delen van diensten {#statistics-on-sharing-activities}
 
 Dit verslag laat de ontwikkeling zien van aandelen in sociale netwerken (Facebook, Twitter, e-mail, enz.) op tijd.
 
@@ -244,7 +246,7 @@ In de waardetabel worden de volgende indicatoren gebruikt:
 * **[!UICONTROL Global rate]** : Dit percentage geeft de uitsplitsing van bezoekers (per versie) weer in verhouding tot het totale aantal bezoekers in de besturingssystemen.
 * **[!UICONTROL Relative rate]** : Dit percentage geeft de uitsplitsing van bezoekers (per versie) weer in verhouding tot het totale aantal bezoekers voor dit besturingssysteem.
 
-## Abonnementsbeheer {#subscription-tracking}
+## Abonnement bijhouden {#subscription-tracking}
 
 Met dit rapport kunt u abonnementen op informatieservices controleren. Er worden abonnementen en afkortingen weergegeven.
 
@@ -291,7 +293,7 @@ De volgende indicatoren worden gebruikt:
 * **[!UICONTROL Clicks]** : percentage van het aantal mensen die in een levering ten minste eenmaal klikte in vergelijking met het aantal berichten dat met succes is verwerkt.
 * **[!UICONTROL Unsubscription]** : percentage van het aantal klikken op een koppeling voor het opzeggen van een abonnement in verhouding tot het aantal berichten dat met succes is verwerkt.
 
-## Uitsplitsing van openen {#breakdown-of-opens}
+## Indeling van openen {#breakdown-of-opens}
 
 In dit rapport wordt de uitsplitsing van de openingen per besturingssysteem, apparaat en browser voor de betrokken periode weergegeven. Voor elke categorie worden twee grafieken gebruikt. De eerste toont statistieken betreffende opent op een computer en mobiele apparaten. In het tweede voorbeeld worden alleen statistieken weergegeven over het openen op mobiele apparaten.
 

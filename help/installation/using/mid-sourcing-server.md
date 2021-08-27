@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Midsourcingserver{#mid-sourcing-server}
+
+![](../../assets/v7-only.svg)
 
 In deze sectie worden de installatie en configuratie van een server voor midsourcing beschreven, evenals de implementatie van een instantie die derden in staat stelt berichten te verzenden in de modus **mid-sourcing**.
 
@@ -25,9 +27,9 @@ Voor de installatie van een server voor midsourcing wordt hetzelfde proces gevol
 >
 >Nadat de server voor midsourcing is ingesteld en de [synchronisatieworkflows](../../workflow/using/about-technical-workflows.md) voor het eerst zijn uitgevoerd, moet u de interne naam van de externe accounts voor midsourcing niet bijwerken.
 
-## Stappen voor het installeren en configureren van een exemplaar {#steps-for-installing-and-configuring-an-instance}
+## Stappen voor het installeren en configureren van een instantie {#steps-for-installing-and-configuring-an-instance}
 
-### Vereisten voor het installeren en configureren van een exemplaar {#prerequisites-for-installing-and-configuring-an-instance}
+### Vereisten voor het installeren en configureren van een instantie {#prerequisites-for-installing-and-configuring-an-instance}
 
 * JDK op de toepassingsserver.
 * Toegang tot een databaseserver op de toepassingsserver.
@@ -70,7 +72,7 @@ U moet echter het volgende toepassen:
    >
    >Het standaardverpletteren van technische leveringen wordt automatisch vervangen met e-mailverpletteren via Midden-sourcing.
 
-### De server {#installing-and-configuring-the-mid-sourcing-server} voor midsourcing installeren en configureren
+### De server voor midsourcing installeren en configureren {#installing-and-configuring-the-mid-sourcing-server}
 
 Zoek vanuit de clientconsole de **e-mailroutering via midsourcing** mid-sourcing-account (in de map **/Administration/External accounts/**). Vul de instellingen **URL van server**, **account**, **password** en **Pagina-URL** spiegelen met de informatie die is opgegeven door de serverprovider die als host fungeert voor de server voor midsourcing. Test de verbinding.
 
@@ -78,7 +80,7 @@ Zoek vanuit de clientconsole de **e-mailroutering via midsourcing** mid-sourcing
 >
 >Met de optie **mid-sourcingEmitter** maakt u twee **mid-sourcing**-workflows. Het is een proces dat door gebrek om de 1 uur en 20 minuten loopt en leveringsinformatie over de midsourcingserver verzamelt.
 
-## Een server {#deploying-a-mid-sourcing-server} voor midsourcing implementeren
+## Een server voor midsourcing implementeren {#deploying-a-mid-sourcing-server}
 
 1. De toepassingsserver installeren:
 
@@ -96,7 +98,7 @@ Zoek vanuit de clientconsole de **e-mailroutering via midsourcing** mid-sourcing
 
    Met de optie **Middelsourcingsplatform** worden de standaardmappen gemaakt voor het opslaan van de verzonden leveringen en de standaardoperator die de verzonden gegevens uitvoert.
 
-## Multiplexing van de medio-sourcingserver {#multiplexing-the-mid-sourcing-server}
+## Multiplexing van de server voor midsourcing {#multiplexing-the-mid-sourcing-server}
 
 >[!CAUTION]
 >

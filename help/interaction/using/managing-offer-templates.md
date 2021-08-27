@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: e4a6cc22-05bd-4b8a-984d-d0706fc210e1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Aanbiedingssjablonen beheren{#managing-offer-templates}
+
+![](../../assets/v7-only.svg)
 
 Aanbiedingssjablonen worden in Adobe Campaign offline geleverd. U kunt ze gebruiken nadat u uw aanbiedingen hebt gemaakt, gedupliceerd of de configuratie ervan hebt aangepast aan uw behoeften. U kunt ook uw eigen sjablonen maken. Sjabloonaanbiedingen worden opgeslagen in de map **Bronnen** > **Sjablonen** > **Sjablonen aanbieden**.
 

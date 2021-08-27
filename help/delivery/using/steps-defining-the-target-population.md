@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1599'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # De doelpopulatie definiëren {#defining-the-target-population}
+
+![](../../assets/common.svg)
 
 ## Over doelpopulaties {#about-target-populations}
 
@@ -22,7 +24,7 @@ Voor elke levering kunt u verschillende typen doelpopulaties definiëren:
 * **Hoofdpubliek**: profielen die berichten ontvangen. [Meer informatie](steps-defining-the-target-population.md#selecting-the-main-target)
 * **Proef**: ontvangers van bewijsberichten, betrokken bij de bevestigingscyclus. [Meer informatie](steps-defining-the-target-population.md#defining-a-specific-proof-target)
 * **Zaadadressen**: ontvangers die buiten het leveringsdoel vallen, maar de levering zullen ontvangen (alleen in het kader van een marketingcampagne). [Meer informatie](about-seed-addresses.md)
-* **Controlegroepen**: bevolking die de levering niet zal ontvangen, gebruikt om het gedrag en de gevolgen van de campagne te volgen (alleen in het kader van een marketingcampagne). [Meer informatie](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
+* **Controlegroepen**: bevolking die de levering niet zal ontvangen, gebruikt om het gedrag en de gevolgen van de campagne te volgen (alleen in het kader van een marketingcampagne). [Meer info](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 
 ## De belangrijkste ontvangers van de levering selecteren {#selecting-the-main-target}
 

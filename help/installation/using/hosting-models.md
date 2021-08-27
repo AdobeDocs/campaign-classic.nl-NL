@@ -2,18 +2,20 @@
 product: campaign
 title: Hostmodellen
 description: Campagne-hostmodellen ontdekken
-feature: Overzicht
+feature: Overview
 role: Architect
 level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '623'
 ht-degree: 2%
 
 ---
 
 # Hostmodellen{#hosting-models}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign biedt een keuze uit drie hostingmodellen, die flexibiliteit en vrijheid bieden om het beste model te kiezen of modellen die aan de zakelijke behoeften voldoen.
 
@@ -46,7 +48,7 @@ Als klant op locatie, alvorens te beginnen met het implementeren van Campaign Cl
 * Lees de [Compatibility matrix](../../rn/using/compatibility-matrix.md) die alle versies van de systemen en componenten bevat die voor Adobe Campaign worden ondersteund.
 * Afhankelijk van uw milieu, lees uit [eerste vereisten voor Vensters ](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) en [eerste vereisten voor Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md).
 * Leer aanbevelingen met betrekking tot gegevensbestandmotoren [in deze sectie](../../installation/using/database.md).
-* Controleer of de vereiste databasetoegangslagen op de server zijn geïnstalleerd en toegankelijk zijn vanaf de Adobe Campaign-account. [Meer informatie](../../installation/using/application-server.md).
+* Controleer of de vereiste databasetoegangslagen op de server zijn geïnstalleerd en toegankelijk zijn vanaf de Adobe Campaign-account. [Meer info](../../installation/using/application-server.md).
 * Vorm uw netwerken aangezien sommige processen met anderen moeten communiceren of tot LAN en Internet toegang hebben. Dit betekent dat sommige havens van TCP voor deze processen open moeten zijn. [Leer ](../../installation/using/network-configuration.md) meer over de configuratievereisten van het Netwerk.
 * Lees [Controlelijst voor beveiliging en privacy van campagne](https://helpx.adobe.com/nl/campaign/kb/acc-security.html).
 * Raadpleeg de algemene richtlijnen voor het schatten van de hardwarevereisten voor on-premise implementatie [in dit artikel](https://helpx.adobe.com/nl/campaign/kb/hardware-sizing-guide.html).

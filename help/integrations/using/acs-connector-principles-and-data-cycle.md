@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '1988'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # ACS-verbindingsbeginselen en gegevenscyclus{#acs-connector-principles-and-data-cycle}
+
+![](../../assets/v7-only.svg)
 
 ## Inleiding {#introduction}
 
@@ -46,14 +48,14 @@ Dit document stelt de mogelijkheden ACS-Connector voor. In de volgende secties v
 
 ## Proces {#process}
 
-### Gegevensreplicatie {#data-replication}
+### Datareplicatie {#data-replication}
 
 ![](assets/acs_connect_flows_01.png)
 
 De Schakelaar ACS herhaalt periodiek de volgende punten van Campagne v7 aan Campaign Standard:
 
 * **Ontvangers**
-* **Abonnementen**
+* **Lidmaatschappen**
 * **Services**
 * **Landingspagina’s**
 
@@ -85,7 +87,7 @@ De Schakelaar ACS synchroniseert quarantines tussen Campagne v7 en Campaign Stan
 
 Een profiel dat is gerepliceerd van Campagne v7 naar Campaign Standard, bevat bijvoorbeeld een e-mailadres. Als het e-mailadres door Campaign Standard in quarantined is, worden de gegevens overgegaan tot Campagne v7 tijdens de volgende synchronisatie. Voor meer informatie over quarantines, zie [Quarantinebeheer](../../delivery/using/understanding-quarantine-management.md) en [Campaign Standard Quarantines](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
 
-### Gepliceerde profielen {#using-replicated-profiles} gebruiken
+### Gepliceerde profielen gebruiken {#using-replicated-profiles}
 
 Campaign Standard en Campagne v7 kunnen herhaalde profielen gebruiken voor het maken van doelgerichte workflows in marketingcampagnes.
 
@@ -120,7 +122,7 @@ Met de **basisimplementatie** kunt u ontvangers (velden buiten de verpakking), s
 
 Met de **geavanceerde implementatie** kunt u complexere gebruiksgevallen uitvoeren, bijvoorbeeld als u extra ontvangende velden of aangepaste ontvangende tabellen hebt (bijvoorbeeld een transactietabel). Zie [Geavanceerde implementatie](#advanced-implementation).
 
-### Het pakket {#installing-the-package} installeren
+### Het pakket installeren {#installing-the-package}
 
 Als u het onderdeel wilt gebruiken, moet het **[!UICONTROL ACS Connector]**-pakket zijn geïnstalleerd. Dit wordt altijd uitgevoerd door de technische beheerder of consultant van Adobe.
 
@@ -151,7 +153,7 @@ De volgende replicatiewerkschema&#39;s zijn beschikbaar als &quot;klaar om&quot;
 * **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication): deze incrementele workflow bevat een kopie van bezorgings-id&#39;s, e-mailbrede logboeken en e-mailtrackinglogboeken van Campaign Standard naar Campaign v7. Er wordt alleen rekening gehouden met leveringen die door Campaign Standard zijn verzonden naar profielen die onderdeel zijn van de tabel nms:ontvangers in Campagne v7.
 * **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication): deze incrementele workflow bevat een kopie van bezorgings-id&#39;s, e-mailbrede logboeken en e-mailtrackinglogboeken van Campaign Standard naar Campaign v7. Er wordt alleen rekening gehouden met leveringen die van Campaign Standard naar profielen worden verzonden die deel uitmaken van een specifieke tabel (om te definiëren, anders dan nms:ontvangers) van Campagne v7.
 
-### Standaardontvangervelden {#default-recipient-fields}
+### Standaardvelden voor ontvangers {#default-recipient-fields}
 
 Als u extra velden of aangepaste tabellen hebt (bijvoorbeeld een tabel met transacties), worden deze niet standaard gerepliceerd. Geavanceerde configuratie moet worden uitgevoerd. Zie [Geavanceerde implementatie](#advanced-implementation).
 

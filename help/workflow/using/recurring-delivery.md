@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 11%
+ht-degree: 21%
 
 ---
 
 # Terugkerende levering{#recurring-delivery}
+
+![](../../assets/common.svg)
 
 Met een activiteit **[!UICONTROL Recurring delivery]** kunt u een exemplaar van een leveringssjabloon configureren dat specifiek is voor een campagne.
 
@@ -31,13 +33,13 @@ Dit doet u als volgt:
 
 Het configuratieproces voor deze activiteit is gelijkaardig aan dat van het creëren van een leveringsmalplaatje in termen van de beschikbare opties. Raadpleeg deze [sectie](../../delivery/using/about-templates.md) voor meer informatie.
 
-Voor een voorbeeld van deze activiteit die wordt gebruikt, verwijs naar dit [sectie](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
+Voor een voorbeeld van deze activiteit die wordt gebruikt, verwijs naar dit [sectie](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
 ## Hoe te opstelling terugkomende levering
 
 Een **terugkerende levering** zal tot een nieuwe leveringsinstantie leiden telkens als het uitvoert. Als de workflow bijvoorbeeld eenmaal per week wordt uitgevoerd, levert dat na één jaar 52 leveringen op. Dit betekent ook dat het brede logboek en het volgen logboeken door elke leveringsinstantie zullen worden gescheiden.
 
-![Terugkerende aflevering](assets/delivery_recurring.jpg)
+![Terugkerende levering](assets/delivery_recurring.jpg)
 
 >[!NOTE]
 >

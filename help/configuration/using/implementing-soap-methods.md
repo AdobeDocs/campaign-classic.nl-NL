@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 4%
@@ -15,13 +15,15 @@ ht-degree: 4%
 
 # SOAP-methoden implementeren{#implementing-soap-methods}
 
+![](../../assets/v7-only.svg)
+
 ## Inleiding {#introduction}
 
 Het is mogelijk om SOAP-methoden te maken in JavaScript. Deze functie laat eenvoudig toepassingsprocessen toe, kan het het ontwikkelen van JSPs en hun het roepen in de vormen vermijden.
 
 Deze SOAP-methoden gedragen zich op dezelfde manier als de methoden die native in de toepassing worden gedefinieerd. Dezelfde kenmerken worden ondersteund: statisch, alleen sleutel en const.
 
-## Een methodebibliotheek {#defining-a-method-library} definiëren
+## Een methodebibliotheek definiëren {#defining-a-method-library}
 
 Het maken van een methodebibliotheek bestaat uit twee fasen:
 

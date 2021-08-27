@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Extra SQL-functies toevoegen{#adding-additional-sql-functions}
+
+![](../../assets/v7-only.svg)
 
 ## Inleiding {#introduction}
 
@@ -37,7 +39,7 @@ Als u de toepassing vanuit de console wilt installeren, selecteert u de opties *
 >
 >Waarschuwing: zelfs als de lijst met geïmporteerde functies direct in de functie-editor wordt weergegeven, zijn ze pas bruikbaar als Adobe Campaign opnieuw is gestart.
 
-## Algemene structuur van te importeren pakket {#general-structure-of-package-to-import}
+## Algemene structuur van het te importeren pakket {#general-structure-of-package-to-import}
 
 De toe te voegen functie(s) vindt u in het **&quot;package&quot; bestand** in XML-indeling. Hier volgt een voorbeeld:
 
@@ -131,7 +133,7 @@ Het veld **@name** verwijst naar de naam van de functie en &quot;args&quot; is d
    >
    >Als slechts één of twee gegevensbestanden waarschijnlijk door de bepaalde functie worden gevraagd, kunnen wij altijd slechts de definities verstrekken die aan deze gegevensbestanden beantwoorden.
 
-## Functiebeschrijving &#39;doorgeven&#39; {#pass-through--function-descriptor}
+## Functiebeschrijving &#39;Pass-through&#39; {#pass-through--function-descriptor}
 
 Een speciale functiebeschrijver is het **&quot;pass-through&quot;** blok, met een niet gespecificeerd &quot;leverancier&quot;gegevensbestandsysteem. In dit geval kan de implementatie van de &#39;body&#39; slechts één functieaanroep bevatten met een syntaxis die niet afhankelijk is van de gebruikte database. Ondertussen is het blok &quot;ProviderPart&quot; uniek.
 

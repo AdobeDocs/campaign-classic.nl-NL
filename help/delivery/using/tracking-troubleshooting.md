@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 1%
@@ -15,9 +15,11 @@ ht-degree: 1%
 
 # Problemen met tracking oplossen {#tracking-troubleshooting}
 
+![](../../assets/common.svg)
+
 In deze sectie vindt u algemene vragen over het bijhouden van configuratie en implementatie in Adobe Campaign Classic.
 
-## De volgende workflow mislukt {#tracking-workflow-failing}
+## De workflow voor bijhouden mislukt {#tracking-workflow-failing}
 
 Mijn traceringsworkflow mislukt. Hoe kan ik de beschadigde regels in het trackingbestand detecteren?
 
@@ -79,7 +81,7 @@ $ grep -Rn 50x000000000FD7EC86
 
 Vervolgens kunt u de workflow voor het bijhouden van wijzigingen stoppen, de beschadigde regel(s) verwijderen en de workflow opnieuw starten.
 
-## Koppelingen bijhouden mislukt periodiek {#tracking-links-fail-intermittently}
+## Koppelingen bijhouden mislukt soms {#tracking-links-fail-intermittently}
 
 Wanneer u probeert toegang te krijgen tot de trackingkoppelingen, wordt het volgende bericht weergegeven:
 
@@ -211,7 +213,7 @@ Met een optie in het bestand serverConf.xml kunt u het aantal logbestanden inste
 
 De standaardwaarde van logCountPerRequest die 1000 is, kan het in sommige gevallen te klein blijken te zijn. De toegestane waarden moeten tussen 0 en 10.000 liggen.
 
-## Logbestanden voor bijhouden kunnen niet worden gekoppeld aan ontvangers {#link-recipients}
+## Logboeken bijhouden kan niet worden gekoppeld aan ontvangers {#link-recipients}
 
 In Adobe Campaign Classic, wordt een doelafbeelding verondersteld uniek in termen van ontvangend schema tegenover de schema&#39;s van het broadlog/trackinglogschema&#39;s te zijn.
 

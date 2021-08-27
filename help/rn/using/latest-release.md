@@ -2,18 +2,20 @@
 product: campaign
 title: Laatste release
 description: Nieuwste opmerkingen bij de release van Campaign Classic
-feature: Overzicht
+feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: c59529a0a4d72ecb795569591d62a68f030a0ac7
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1950'
 ht-degree: 99%
 
 ---
 
 # Laatste release{#latest-release}
+
+![](../../assets/v7-only.svg)
 
 Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd bij de **nieuwste Campaign Classic Release**.
 
@@ -115,7 +117,7 @@ Ontdek meer in de [Campaign-compatibiliteitsmatrix](../../rn/using/compatibility
 **Verouderde functies**
 
 * Vanaf Campaign 21.1 is de Adobe Analytics-gegevensconnector afgeschaft. Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen met de nieuwe connector Adobe Analytics Connector.
-Raadpleeg de [gedetailleerde documentatie](../../technotes/aa-connector-migration.md) voor meer informatie.
+Raadpleeg de [gedetailleerde documentatie](../../technotes/using/aa-connector-migration.md) voor meer informatie.
 * De ondersteuning voor Debian 8 is nu afgeschaft.
 * Na het afschaffen van Oracle CRM in 20.3 is het verbonden externe account uit de interface verwijderd.
 

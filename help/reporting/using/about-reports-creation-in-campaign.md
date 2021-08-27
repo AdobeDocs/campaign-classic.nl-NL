@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Belangrijke stappen om een rapport te maken{#about-reports-creation-in-campaign}
+
+![](../../assets/common.svg)
 
 Om statistieken over de gegevens in uw gegevensbestand van de Campagne te produceren, kunt u rapporten creëren en hun inhoud en lay-out aanpassen die op uw behoeften worden gebaseerd. Deze rapporten kunnen met andere exploitanten worden gedeeld.
 

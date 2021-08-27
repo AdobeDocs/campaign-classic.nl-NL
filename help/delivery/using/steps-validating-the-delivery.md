@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 5%
@@ -15,11 +15,13 @@ ht-degree: 5%
 
 # De levering valideren {#validating-the-delivery}
 
+![](../../assets/common.svg)
+
 Wanneer een levering is gecreeerd en gevormd, moet u het bevestigen alvorens het naar het belangrijkste doel te verzenden.
 
 Dit doet u als volgt:
 
-1. **De levering** analyseren: met deze stap kunt u de te leveren berichten voorbereiden. [Meer informatie](#analyzing-the-delivery).
+1. **De levering** analyseren: met deze stap kunt u de te leveren berichten voorbereiden. [Meer info](#analyzing-the-delivery).
 
    De regels die tijdens de analyse worden toegepast, worden vermeld in [deze sectie](#validation-process-with-typologies). De beschikbare validatiemodi worden beschreven in de sectie [De goedkeuringsmodus wijzigen](#changing-the-approval-mode).
 
@@ -137,7 +139,6 @@ Adobe raadt u ten zeerste aan een cyclus voor leveringsvalidatie in te stellen o
 >
 
 
-
 Volg onderstaande stappen om een proefdruk te verzenden:
 
 1. Zorg ervoor dat het proefdrukdoel is geconfigureerd zoals beschreven in [Definieer een specifiek proefdrukdoel](steps-defining-the-target-population.md#defining-a-specific-proof-target).
@@ -195,7 +196,7 @@ U kunt de goedkeuringsregels, hun inhoud, hun orde van uitvoering, en hun volled
 
 U kunt nieuwe regels tot stand brengen en nieuwe typologieën van deze knoop bepalen. Deze taken zijn echter voorbehouden aan ervaren gebruikers die JavaScript kennen.
 
-Raadpleeg [deze pagina](../../campaign/using/about-campaign-typologies.md) voor meer informatie over typologische regels.
+Raadpleeg [deze pagina](../../campaign-opt/using/about-campaign-typologies.md) voor meer informatie over typologische regels.
 
 Als u de huidige typologie wilt bewerken, klikt u op het pictogram **[!UICONTROL Edit link]** rechts van het veld **[!UICONTROL Typology]**.
 

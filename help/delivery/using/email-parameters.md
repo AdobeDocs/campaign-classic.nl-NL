@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '905'
 ht-degree: 8%
 
 ---
 
 # E-mailparameters {#email-parameters}
+
+![](../../assets/common.svg)
 
 In deze sectie worden de opties en parameters beschreven die specifiek zijn voor e-maillevering.
 
@@ -30,6 +32,10 @@ Raadpleeg [deze sectie](../../installation/using/email-archiving.md) voor meer i
 >E-mail BCC is een optionele mogelijkheid. Controleer uw licentieovereenkomst en neem contact op met uw accountmanager om deze te activeren.
 
 Bij het maken van een nieuwe bezorgings- of leveringssjabloon is E-mail BCC niet standaard ingeschakeld. U moet het manueel op het niveau van de e-maillevering of leveringsmalplaatje toelaten.
+
+>[!NOTE]
+>
+>Als u BCC via e-mail gebruikt met Enhanced MTA, wordt deze optie automatisch ingeschakeld voor alle leveringen.
 
 Voer de onderstaande stappen uit om e-mailblokcode in te schakelen voor een sjabloon voor e-maillevering:
 

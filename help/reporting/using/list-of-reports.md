@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Lijst met rapporten{#list-of-reports}
+
+![](../../assets/common.svg)
 
 ## Rapporten over leveringen {#reports-on-deliveries}
 
@@ -116,7 +118,7 @@ Raadpleeg [deze sectie](../../reporting/using/delivery-reports.md) voor meer inf
  </tbody> 
 </table>
 
-## Rapporten over campagnes {#reports-on-campaigns}
+## Verslagen over campagnes {#reports-on-campaigns}
 
 Rapporten over campagnes betreffen de gegevens in de **nms:operation** tabel.
 
@@ -177,7 +179,7 @@ Raadpleeg [deze sectie](../../campaign/using/designing-marketing-campaigns.md) v
  </tbody> 
 </table>
 
-## Rapporten over services {#reports-on-services}
+## Rapporten over diensten {#reports-on-services}
 
 Rapporten over services hebben betrekking op de gegevens in de tabel **nms:service**.
 
@@ -214,7 +216,7 @@ Raadpleeg de desbetreffende handleidingen voor meer informatie over de inhoud va
  </tbody> 
 </table>
 
-## Begrotingsrapporten {#budget-reports}
+## Begrotingsverslagen {#budget-reports}
 
 De ingebouwde rapporten van Adobe Campaign zijn te vinden in de onderstaande tabel.
 
@@ -307,7 +309,7 @@ Raadpleeg de desbetreffende handleidingen voor meer informatie over de inhoud va
  </tbody> 
 </table>
 
-## Rapporten over de toepassingen {#reports-on-web-applications} van het Web
+## Rapporten over webtoepassingen {#reports-on-web-applications}
 
 Rapporten over de toepassingen van het Web betreffen de gegevens in **nms:WebApp** lijst.
 

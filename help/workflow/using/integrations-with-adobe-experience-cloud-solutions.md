@@ -5,7 +5,7 @@ description: Meer informatie over workflows voor integratie met Adobe Experience
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 
 
 # Integraties met Adobe Experience Cloud-oplossingen{#integrations-with-adobe-experience-cloud-solutions}
+
+![](../../assets/common.svg)
 
 De hieronder beschreven workflows worden standaard geïnstalleerd met de **integratie met de Adobe Experience Cloud**-module. Voor meer op deze module, verwijs naar dit [sectie](../../integrations/using/configuring-ims.md#installing-the-package).
 

@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Standaardimplementatie{#standard-deployment}
+
+![](../../assets/v7-only.svg)
 
 Voor deze configuratie zijn drie computers vereist:
 
@@ -54,7 +56,7 @@ Dit type van configuratie kan een groot aantal ontvangers (500.000 tot 1.000.000
 
 * Firewall geconfigureerd voor het openen van STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 voor Oracle, 5432 voor PostgreSQL, enz.) poorten. Voor meer informatie, verwijs naar sectie [Toegang van het Gegevensbestand](../../installation/using/network-configuration.md#database-access).
 
-### De toepassingsserver {#installing-the-application-server} installeren
+### De toepassingsserver installeren {#installing-the-application-server}
 
 Voer de stappen uit om een zelfstandige instantie van de Adobe Campaign-toepassingsserver te installeren tot de database is gemaakt (stap 12). Zie [Installeren en configureren (enkele machine)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 

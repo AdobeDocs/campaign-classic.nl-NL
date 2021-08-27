@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Integratie van gedeelde soorten publiek configureren in Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
+
+![](../../assets/common.svg)
 
 Zodra u dit verzoek hebt voorgelegd, zal Adobe aan de levering van de integratie voor u te werk gaan en u contacteren om details en informatie te verstrekken die u de configuratie moet voltooien:
 
@@ -26,7 +28,7 @@ Zodra u dit verzoek hebt voorgelegd, zal Adobe aan de levering van de integratie
 >
 >Als u het demdex-domein gebruikt en de syntaxis **ftp-out.demdex.com** voor de externe account van de import en **ftp-in.demdex.com** voor de externe account van de export volgt, moet u uw implementatie dienovereenkomstig aanpassen en overschakelen naar de connector van de Amazon Simple Storage Service (S3) om gegevens te importeren of exporteren. Voor meer informatie over hoe te om uw externe rekeningen met Amazon S3 te vormen, verwijs naar dit [sectie](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign).
 
-## Stap 1: Externe accounts in Adobe Campaign configureren of controleren{#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
+## Stap 1: Externe accounts in Adobe Campaign configureren of controleren {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
 
 Ten eerste moeten we de externe accounts in Adobe Campaign als volgt configureren of controleren:
 
@@ -65,7 +67,7 @@ Raadpleeg deze  [pagina](https://aws.amazon.com/about-aws/global-infrastructure/
 
 Uw externe accounts zijn nu geconfigureerd.
 
-## Stap 2: De gegevensbron {#step-2--configure-the-data-source} configureren
+## Stap 2: De gegevensbron configureren {#step-2--configure-the-data-source}
 
 De **Ontvanger - Bezoeker ID** wordt binnen de Audience Manager gemaakt. Dit is een uit-van-de-doos gegevensbron die door gebrek voor identiteitskaart van de Bezoeker wordt gevormd. Segmenten die zijn gemaakt op basis van campagne maken deel uit van deze gegevensbron.
 
@@ -77,13 +79,13 @@ De **[!UICONTROL Recipient - Visitor ID]**-gegevensbron configureren:
 
    ![](assets/aam_config_3.png)
 
-## Stap 3: Campagne bijhouden-server {#step-3--configure-campaign-tracking-server} configureren
+## Stap 3: Campagne bijhouden-server configureren {#step-3--configure-campaign-tracking-server}
 
 Voor de configuratie van de integratie met de dienst van de Kern van Mensen of de manager van het Publiek, moeten wij ook de server van het Volgen van de Campagne vormen.
 
 U moet ervoor zorgen de het Volgen van de Campagne Server op het domein (CNAME) wordt geregistreerd. Meer informatie over domeinnaamdelegatie vindt u in [dit artikel](https://helpx.adobe.com/nl/campaign/kb/domain-name-delegation.html).
 
-## Stap 4: De Bezoeker-id-service {#step-4--configure-the-visitor-id-service} configureren
+## Stap 4: De service voor de bezoekersidentiteitskaart configureren {#step-4--configure-the-visitor-id-service}
 
 Als uw bezoeker-id-service nog nooit is geconfigureerd op uw wegeigenschappen of websites, raadpleegt u het volgende [document](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html) om te leren hoe u uw service of de volgende [video](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two) kunt configureren.
 

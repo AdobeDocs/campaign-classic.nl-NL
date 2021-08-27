@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 7aa4646d-1325-47c2-b553-6fe375c48973
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # Gebruiksscenario: webformulieren{#use-cases-web-forms}
 
-## Abonnementsformulier maken met dubbele aanmelding {#create-a-subscription--form-with-double-opt-in}
+![](../../assets/common.svg)
+
+## Abonnementsformulieren met dubbele aanmelding maken {#create-a-subscription--form-with-double-opt-in}
 
 Wanneer u de informatiediensten aanbiedt, moeten de ontvangers intekenen om alle verbonden mededelingen te ontvangen. Om onjuiste mededelingen te vermijden en ervoor te zorgen de ontvanger opzettelijk wordt ingetekend, adviseren wij het verzenden van een verzoek van de abonnementsbevestiging om tot een dubbele opt-in te leiden. Het abonnement wordt pas van kracht nadat de gebruiker op de koppeling klikt die in het bevestigingsbericht is opgenomen.
 
@@ -24,7 +26,7 @@ Dit voorbeeld is gebaseerd op het volgende scenario:
 1. Een abonnementsformulier voor nieuwsbrieven maken op een website die een selectievakje bevat voor het abonneren op een tijdelijke service. Met deze service kunt u berichten voor abonnementsbevestiging verzenden.
 1. Het creëren van de levering van de abonnementsbevestiging met een leveringsmalplaatje verbonden aan de vorm van het Web. Het bevat de bevestigingskoppeling die het formulier oproept voor een abonnement op een nieuwsbrief en een goedkeuringsbericht voor een abonnement weergeeft.
 
-### Stap 1 - Informatieservices maken {#step-1---creating-information-services}
+### Stap 1 - Informatiediensten maken {#step-1---creating-information-services}
 
 1. Maak de service voor abonnementen op nieuwsbrieven die aan uw ontvangers moet worden aangeboden. Raadpleeg [deze sectie](../../delivery/using/about-services-and-subscriptions.md) voor meer informatie over het maken van een nieuwsbrief.
 
@@ -68,7 +70,7 @@ De berichten van de bevestiging worden verzonden via een specifiek leveringsmalp
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_3c.png)
 
-### Stap 3 - het creëren van de abonnementsvorm {#step-3---creating-the-subscription-form}
+### Stap 3 - Het abonnementsformulier maken {#step-3---creating-the-subscription-form}
 
 In het webformulier zijn zowel een abonnement als een bevestiging van een abonnement voor de ontvanger ingeschakeld.
 

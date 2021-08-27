@@ -6,20 +6,22 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3d0ef574-27a3-40f2-91a0-70e9583d9980
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 2%
 
 ---
 
-# hoofdelement {#key--element}
+# sleutelelement {#key--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Inhoudsmodel {#content-model-8}
 
 key:==keyfield
 
-## Kenmerken {#attributes-8}
+## Attributen {#attributes-8}
 
 * @allowEmptyPart (boolean)
 * @applicableIf (tekenreeks)
@@ -52,7 +54,7 @@ Als het hoofdelement van het schema het kenmerk &quot;@autopk=true&quot; bevat, 
 
 De eerste 1000 id&#39;s zijn gereserveerd, dus als een reeks waarden moet worden gedefinieerd voor toetsen, begint u bij 1000.
 
-## Kenmerkbeschrijving {#attribute-description-8}
+## Beschrijving van kenmerk {#attribute-description-8}
 
 * **allowEmptyPart (boolean)**: in het geval van een samengestelde sleutel, als dit attribuut wordt geactiveerd, wordt zij als geldig beschouwd als minstens één van zijn sleutels niet leeg is. Als dit het geval is, is de lege nodewaarde &quot;0&quot;(boolean of voor alle soorten numerieke gegevens). Standaard moeten alle toetsen waaruit een samengestelde sleutel bestaat, worden ingevoerd.
 * **applyIf (string)**: Met dit kenmerk kunt u de sleutel optioneel maken. In deze code wordt de voorwaarde gedefinieerd op basis waarvan de sleuteldefinitie wordt toegepast. Dit kenmerk ontvangt een XTK-expressie.

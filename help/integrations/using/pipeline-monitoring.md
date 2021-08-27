@@ -5,7 +5,7 @@ description: De integratie configureren
 audience: integrations
 content-type: reference
 exl-id: 84399496-33fd-4936-85e7-32de8503740f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 1%
@@ -13,6 +13,8 @@ ht-degree: 1%
 ---
 
 # Pijplijncontrole {#pipeline-monitoring}
+
+![](../../assets/common.svg)
 
 De [!DNL pipelined] status webservice geeft informatie over de status van het [!DNL pipelined] proces.
 
@@ -69,7 +71,7 @@ Deze stats worden weergegeven per verwerkingsthread.
    * hertry-validity-duration-ms: duur van de tijdverwerking wordt opnieuw geprobeerd tot het bericht wordt verworpen.
    * Rapport pijpleidingberichten
 
-## Rapport {#pipeline-report} Pijpleidingberichten
+## Pijplijnberichten {#pipeline-report}
 
 Dit rapport geeft het aantal berichten per uur in de afgelopen vijf dagen weer.
 

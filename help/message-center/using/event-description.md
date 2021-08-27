@@ -1,21 +1,23 @@
 ---
 product: campaign
-title: Beschrijving van gebeurtenis
+title: Beschrijving van een gebeurtenis
 description: Leer hoe de transactionele overseinengebeurtenissen in Adobe Campaign Classic gebruikend de methodes van de ZEEP worden beheerd.
 audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '751'
 ht-degree: 0%
 
 ---
 
-# Beschrijving van gebeurtenis {#event-description}
+# Beschrijving van een gebeurtenis {#event-description}
 
-## Transactioneel gegevensmodel voor berichtenverkeer {#about-transactional-messaging-datamodel}
+![](../../assets/v7-only.svg)
+
+## Transactioneel berichtengegevensmodel {#about-transactional-messaging-datamodel}
 
 Transactioneel overseinen baseert zich op het de gegevensmodel van Adobe Campaign, en gebruikt twee extra afzonderlijke lijsten. Deze [tabellen](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** en **NmsBatchEvent** bevatten dezelfde velden en u kunt realtime-gebeurtenissen aan de ene kant beheren, en batch-gebeurtenissen aan de andere kant.
 

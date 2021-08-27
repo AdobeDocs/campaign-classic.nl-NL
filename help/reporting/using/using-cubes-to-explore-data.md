@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Kubussen gebruiken om data te verkennen{#using-cubes-to-explore-data}
+
+![](../../assets/common.svg)
 
 Met Marketing Analytics kunt u gemakkelijker rapporten maken en gegevens in de database identificeren en selecteren via kubussen. Hierdoor kunt u:
 
@@ -25,15 +27,15 @@ Met Marketing Analytics kunt u gemakkelijker rapporten maken en gegevens in de d
 >
 >Marketing Analytics is nodig om kubussen te maken of te wijzigen. Voor meer op dit, verwijs naar [Ongeveer kubussen](../../reporting/using/about-cubes.md).
 
-## De gegevens in een rapport {#exploring-the-data-in-a-report} verkennen
+## De gegevens in een rapport verkennen {#exploring-the-data-in-a-report}
 
-### Stap 1 - het Creëren van een rapport dat op een kubus {#step-1---creating-a-report-based-on-a-cube} wordt gebaseerd
+### Stap 1 - het Creëren van een rapport dat op een kubus wordt gebaseerd {#step-1---creating-a-report-based-on-a-cube}
 
 Als u een rapport wilt maken op basis van een kubus, klikt u op de knop **[!UICONTROL Create]** op het tabblad **[!UICONTROL Reports]** en selecteert u de kubus die u wilt gebruiken.
 
 Het proces wordt hier nader beschreven: [Een rapport maken op basis van een kubus](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
 
-### Stap 2 - Het selecteren van lijnen en kolommen {#step-2---selecting-lines-and-columns}
+### Stap 2 - Lijnen en kolommen selecteren {#step-2---selecting-lines-and-columns}
 
 In de standaardweergave worden de eerste twee afmetingen van de kubus (in dit geval leeftijd en stad) weergegeven.
 
@@ -72,7 +74,7 @@ Met de **[!UICONTROL Add]** knoppen op elke as kunt u afmetingen toevoegen.
 
    ![](assets/s_advuser_cube_in_report_04c.png)
 
-### Stap 3 - Vormend de maatregelen om {#step-3---configuring-the-measures-to-display} te tonen
+### Stap 3 - Het vormen van de maatregelen om te tonen {#step-3---configuring-the-measures-to-display}
 
 Wanneer de lijnen en kolommen op hun plaats zijn, wijs op de maatregelen u evenals hun vertoningswijze wilt tonen.
 
@@ -118,7 +120,7 @@ Standaard wordt slechts één maat weergegeven. Om maatregelen toe te voegen of 
 
    Klik vervolgens op **[!UICONTROL Edit the dynamic measure]** om het instellingenmenu te openen.
 
-## Een doelpopulatie opbouwen {#building-a-target-population}
+## Bouwen aan een doelpopulatie {#building-a-target-population}
 
 De rapporten bouwen gebruikend kubussen laten u toe om gegevens van de lijst te verzamelen en het te bewaren in een lijst.
 

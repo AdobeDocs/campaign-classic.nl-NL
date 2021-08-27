@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # In Campaign Classic ingebouwde pakketten installeren{#installing-campaign-standard-packages}
+
+![](../../assets/v7-only.svg)
 
 ## Ingebouwde pakketten {#campaign-standard-packages}
 
@@ -149,7 +151,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr> 
   <tr> 
    <td> Responsbeheer<br /> </td> 
-   <td> Hiermee wordt het succes en de winstgevendheid van marketingcampagnes gemeten of worden voorstellen voor alle communicatiekanalen aangeboden.  Optioneel. <a href="../../campaign/using/about-response-manager.md">Meer informatie</a> <br /> </td> 
+   <td> Hiermee wordt het succes en de winstgevendheid van marketingcampagnes gemeten of worden voorstellen voor alle communicatiekanalen aangeboden.  Optioneel. <a href="../../response/using/about-response-manager.md">Meer informatie</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -159,7 +161,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr> 
   <tr> 
    <td> Campagnes optimaliseren<br /> </td> 
-   <td> Controles, filters en controleren het verzenden van leveringen zodat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid van het bedrijfs communicatie. Optioneel. <a href="../../campaign/using/about-campaign-typologies.md">Meer informatie</a> <br /> </td> 
+   <td> Controles, filters en controleren het verzenden van leveringen zodat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid van het bedrijfs communicatie. Optioneel. <a href="../../campaign-opt/using/about-campaign-typologies.md">Meer informatie</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -179,7 +181,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
   </tr> 
   <tr> 
    <td> Centrale/lokale Marketing (Distributed Marketing)<br /> </td> 
-   <td> Voert samenwerkingscampagnes uit tussen centrale entiteiten (hoofdkantoor, marketingafdelingen, enz.) en lokale entiteiten (verkooppunten, regionale agentschappen, enz.). Optioneel. <a href="../../campaign/using/about-distributed-marketing.md">Meer informatie</a><br /> </td> 
+   <td> Voert samenwerkingscampagnes uit tussen centrale entiteiten (hoofdkantoor, marketingafdelingen, enz.) en lokale entiteiten (verkooppunten, regionale agentschappen, enz.). Optioneel. <a href="../../distributed/using/about-distributed-marketing.md">Meer informatie</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 

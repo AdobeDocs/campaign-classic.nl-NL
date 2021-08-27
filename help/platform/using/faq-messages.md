@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Berichten valideren, verzenden en opvolgen {#validate-send-track}
+
+![](../../assets/common.svg)
 
 ## Testen en valideren {#test-and-validate-before-sending}
 
@@ -52,7 +54,7 @@ Adobe raadt u ten zeerste aan een cyclus voor leveringsvalidatie in te stellen o
 
 Om conflicten tussen campagnes te vermijden kan Adobe Campaign diverse combinaties testen door specifieke beperkingsregels toe te passen. Dit garandeert dat de verzonden berichten het best aan de behoeften en de verwachtingen van klanten voldoen, in overeenstemming met het beleid inzake bedrijfscommunicatie.
 
-[Klik hier voor meer informatie](../../campaign/using/about-campaign-typologies.md).
+[Klik hier voor meer informatie](../../campaign-opt/using/about-campaign-typologies.md).
 
 ## Uw berichten verzenden {#send-your-messages}
 

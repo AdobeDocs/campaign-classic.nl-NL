@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: 490ebbea-9bdc-453e-8a02-c02b095e55e9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # Simulatietracking{#simulation-tracking}
+
+![](../../assets/v7-only.svg)
 
 Zodra de simulatie wordt gebeëindigd, kunt u zijn resultaat analyseren via het **[!UICONTROL Results]** lusje dat aan het simulatievenster en **[!UICONTROL Breakdown of offers by rank]** rapport wordt toegevoegd, beschikbaar via in het simulatiedashboard.
 

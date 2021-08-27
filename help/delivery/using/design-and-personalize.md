@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 7%
@@ -13,6 +13,8 @@ ht-degree: 7%
 ---
 
 # Gepersonaliseerde content maken {#build-personalized-content}
+
+![](../../assets/common.svg)
 
 Probeer bij het ontwerpen van de inhoud van uw bericht algemene problemen te vermijden die ertoe kunnen leiden dat u de levering niet kunt uitvoeren. Meestal hebben mogelijke fouten betrekking op [personalisatie](about-personalization.md), [formatteren](defining-the-email-content.md#message-content) en [afbeeldingen](defining-the-email-content.md#adding-images).
 

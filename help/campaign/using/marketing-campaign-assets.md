@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Gekoppelde documenten beheren {#managing-associated-documents}
+
+![](../../assets/common.svg)
 
 U kunt verschillende documenten aan een campagne koppelen: rapporten, foto&#39;s, webpagina&#39;s, diagrammen, enz. Deze documenten kunnen elke gewenste indeling hebben (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, enzovoort).
 
@@ -25,7 +27,7 @@ In een campagne kunt u ook andere objecten bekijken, zoals promotiecoupons, spec
 
 >[!NOTE]
 >
->Als u de module van het Beheer van het Middel van de Marketing van de Campagne gebruikt, kunt u een bibliotheek van marketing middelen ook beheren die voor verscheidene gebruikers voor samenwerkingswerk beschikbaar zijn. [Meer informatie](../../mrm/using/managing-marketing-resources.md).
+>Als u de module van het Beheer van het Middel van de Marketing van de Campagne gebruikt, kunt u een bibliotheek van marketing middelen ook beheren die voor verscheidene gebruikers voor samenwerkingswerk beschikbaar zijn. [Meer info](../../mrm/using/managing-marketing-resources.md).
 
 ## Documenten toevoegen {#adding-documents}
 

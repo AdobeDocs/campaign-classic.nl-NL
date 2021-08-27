@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Tag voor webtracking: definitie{#web-tracking-tag-definition}
+
+![](../../assets/v7-only.svg)
 
 Een tag voor webtracering is een URL die is samengesteld met de juiste parameters en die via een HTTP-query naar de omleidingsserver wordt verzonden.
 
@@ -125,7 +127,7 @@ De volgende tabel bevat een lijst met speciale parameters die door de omleidings
 >
 >Alle waarden die via URL-parameters naar de omleidingsserver worden verzonden, moeten URL-gecodeerd zijn. In de gegeven voorbeelden worden de tekens &#39;=&#39; en &#39;|&#39; gecodeerd als respectievelijk &#39;%3D&#39; en &#39;%7C&#39;.
 
-## Gegevensoverdrachtmethoden {#data-transmission-methods}
+## Methoden voor gegevensoverdracht {#data-transmission-methods}
 
 De volgende methoden zijn mogelijk:
 

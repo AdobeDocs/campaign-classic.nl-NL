@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 3b87eb3c-3b50-4ed4-80b1-4333261ffe0b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # Nieuwe instanties maken{#creating-new-instances}
+
+![](../../assets/v7-only.svg)
 
 Nadat Adobe Campaign is geïnstalleerd en de instantie is gemaakt, kunt u een nieuwe instantie vanuit de console toevoegen. In deze modus kunt u instanties voor reeksspatiëring maken zonder toegang tot de console.
 

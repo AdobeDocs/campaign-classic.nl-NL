@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Aanbevolen werkwijzen voor kubussen{#concepts-and-methodology}
+
+![](../../assets/common.svg)
 
 ## Gegevensbinding {#data-binning}
 
@@ -33,7 +35,7 @@ U kunt mappen handmatig maken of ze koppelen aan een bestaande opsomming.
 
 Adobe Campaign biedt ook een assistent voor automatisch binden: Waarden kunnen worden opgesplitst in N-groepen of worden gegroepeerd op basis van de meest voorkomende waarden in de database.
 
-### Elke bin {#defining-each-bin} definiëren
+### Elke bin definiëren {#defining-each-bin}
 
 Als u elke bin afzonderlijk wilt maken, selecteert u de optie **[!UICONTROL Define each bin]** en gebruikt u de tabel om de verschillende vakken te maken.
 
@@ -53,7 +55,7 @@ In het onderstaande voorbeeld worden alle e-maildomeinen weergegeven die beginne
 
 ![](assets/s_advuser_cube_class_03b.png)
 
-### Dynamisch beheren van bins {#dynamically-managing-bins}
+### Banden dynamisch beheren {#dynamically-managing-bins}
 
 Waarden kunnen dynamisch worden beheerd via opsommingen. Dit betekent dat alleen de waarden in de opsomming worden weergegeven. Wanneer de opsommingswaarden worden gewijzigd, wordt de inhoud van de kubus automatisch aangepast.
 
@@ -66,7 +68,7 @@ Voer de volgende stappen uit om dit type waardenbinding te maken:
 
    Wanneer de opsommingswaarden worden bijgewerkt, worden de overeenkomstige bakken automatisch aangepast.
 
-### Waardebereiken {#creating-value-ranges} maken
+### Waardebereiken maken {#creating-value-ranges}
 
 U kunt de waarden op basis van een gewenst interval groeperen in bereiken.
 
@@ -156,7 +158,7 @@ Voer de volgende stappen uit om een nieuw aggregaat te maken:
 
       ![](assets/s_advuser_cube_agregate_05.png)
 
-## Bepalende maatregelen {#defining-measures}
+## Vaststelling van maatregelen {#defining-measures}
 
 De typen metingen worden gedefinieerd op het tabblad **[!UICONTROL Measures]** van de kubus. U kunt sommen, gemiddelden, afwijkingen, enz. berekenen.
 
@@ -180,7 +182,7 @@ Voer de volgende stappen uit om een nieuwe maatregel te definiëren:
 
 1. Voer het label van de maatregel in en voeg een beschrijving toe. Klik vervolgens op **[!UICONTROL Finish]** om deze te maken.
 
-## Maatregelen {#displaying-measures} weergeven
+## Weergavemaatregelen {#displaying-measures}
 
 U kunt de weergave van maatregelen in de tabel configureren, afhankelijk van uw behoeften:
 
@@ -196,7 +198,7 @@ Verplaats de lijnen om de weergavereeks te wijzigen. In het volgende voorbeeld w
 
 ![](assets/s_advuser_cube_in_report_config_04.png)
 
-### De weergave {#configuring-the-display} configureren
+### De weergave configureren {#configuring-the-display}
 
 De opstelling van maatregelen, lijnen en kolommen kan voor elke maatregel afzonderlijk of in zijn geheel worden uitgevoerd. Met een specifiek pictogram hebt u toegang tot het selectievenster voor de weergavemodus.
 
@@ -210,7 +212,7 @@ Met de kleuropties kunt u belangrijke waarden markeren, zodat u deze eenvoudig k
 
 ![](assets/s_advuser_cube_in_report_config_06.png)
 
-### Het weergegeven type maat wijzigen {#changing-the-type-of-measure-displayed}
+### Het weergegeven type maatregel wijzigen {#changing-the-type-of-measure-displayed}
 
 Binnen elke meting kunt u de toe te passen eenheid en opmaak definiëren.
 

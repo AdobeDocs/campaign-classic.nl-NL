@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Webapplicaties synchroniseren{#synchronizing-web-applications}
+
+![](../../assets/v7-only.svg)
 
 In dit geval, zullen wij een mededeling, gebruikend Campaign Standard, verzenden die een verbinding aan een Webtoepassing van de Campagne v7 omvat. Wanneer de ontvanger op de koppeling in de e-mail klikt, geeft de webtoepassing een formulier weer dat verschillende velden bevat die zijn voorgeladen met de gegevens van de ontvanger en een abonnementkoppeling naar een nieuwsbrief. De ontvanger kan zijn gegevens bijwerken evenals aan de dienst intekenen. Zijn profiel zal in Campaign v7 worden bijgewerkt en de informatie zal in Campaign Standard worden herhaald.
 
@@ -27,7 +29,7 @@ Hiervoor hebt u het volgende nodig:
 * een service en een webtoepassing die zijn gemaakt en gepubliceerd in Campaign v7.
 * de webtoepassing moet een **[!UICONTROL Pre-loading]** activiteit bevatten met behulp van de identificatiemethode **[!UICONTROL Adobe Campaign encryption]**.
 
-## De webtoepassing en service {#creating-the-web-application-and-service} maken
+## De webtoepassing en -service maken {#creating-the-web-application-and-service}
 
 In Campagne v7, kunt u Webtoepassingen tot stand brengen die ontvangers toestaan om aan de dienst in te tekenen. De webtoepassing en -service zijn ontworpen en opgeslagen in Campagne v7 en u kunt deze service bijwerken via een Campaign Standard-communicatie. Raadpleeg [deze sectie](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes) voor meer informatie over webtoepassingen in Campagne v7.
 
@@ -56,7 +58,7 @@ In Campaign v7 zijn de volgende objecten gemaakt:
 
    ![](assets/acs_connect_lp_6.png)
 
-## Gegevens {#replicating-the-data} repliceren
+## De gegevens repliceren {#replicating-the-data}
 
 Voor het repliceren van de benodigde gegevens tussen Campagne v7 en Campaign Standard, zijn er verschillende sjablonen voor de replicatiewerkstroom beschikbaar. De **[!UICONTROL Profiles replication]** werkstroom herhaalt automatisch alle ontvangers van de Campagne v7 aan Campaign Standard. Zie [Technische en replicatieworkflows](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). Met de **[!UICONTROL Landing pages replication]**-workflow kunt u de webtoepassingen die u in Campaign Standard wilt gebruiken, repliceren.
 
@@ -80,7 +82,7 @@ Voer de volgende stappen uit in Campaign Standard om te controleren of de gegeve
 
    ![](assets/acs_connect_lp_10.png)
 
-## E-mail {#designing-and-sending-the-email} ontwerpen en verzenden
+## De e-mail ontwerpen en verzenden {#designing-and-sending-the-email}
 
 In dit deel, zullen wij zien hoe te om een verbinding, in een e-mail van de Campaign Standard, aan de landingspagina te omvatten die van een de Webtoepassing van de Campagne v7 wordt herhaald.
 
@@ -104,7 +106,7 @@ De stappen voor het maken, ontwerpen en verzenden van de e-mail zijn dezelfde al
 
    ![](assets/acs_connect_lp_15.png)
 
-## De bijgewerkte informatie {#retrieving-the-updated-information} ophalen
+## De bijgewerkte gegevens ophalen {#retrieving-the-updated-information}
 
 Wanneer de ontvanger zijn gegevens bijwerkt via de webtoepassing, haalt Adobe Campaign v7 synchroon de bijgewerkte informatie op. Het wordt vervolgens gerepliceerd van Campaign v7 naar Campaign Standard.
 

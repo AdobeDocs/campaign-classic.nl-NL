@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 18%
@@ -14,6 +14,8 @@ ht-degree: 18%
 ---
 
 # Probleemoplossing voor productie{#troubleshooting}
+
+![](../../assets/v7-only.svg)
 
 Dit gedeelte bevat procedures voor het oplossen van problemen met betrekking tot algemene Adobe Campaign-productieproblemen, zoals levering en workflowuitvoering, bewaking, databaseonderhoud, verbinding, enzovoort.
 
@@ -24,7 +26,7 @@ Dit gedeelte bevat procedures voor het oplossen van problemen met betrekking tot
 * Deze [pagina](../../production/using/lost-password.md) details om een verloren wachtwoord te veranderen of terug te krijgen.
 * Deze [pagina](../../production/using/console-update.md) details hoe te om het verzoek van de consoleupdate opnieuw te activeren als u de overeenkomstige optie onbruikbaar maakt.
 
-## Problemen met levering oplossen {#delivery-troubleshooting}
+## Problemen met een levering oplossen {#delivery-troubleshooting}
 
 Specifieke acties kunnen worden uitgevoerd bij problemen met leveringen:
 * [Leverbaarheidsproblemen](../../production/using/performance-and-throughput-issues.md#deliverability_issues)

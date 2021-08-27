@@ -2,18 +2,20 @@
 product: campaign
 title: Adobe Campaign-werkruimte
 description: Leer de werkruimte Campagne gebruiken en aanpassen
-feature: Overzicht
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '825'
 ht-degree: 4%
 
 ---
 
 # Adobe Campaign-werkruimte{#adobe-campaign-workspace}
+
+![](../../assets/common.svg)
 
 ## De Adobe Campaign-interface verkennen {#about-adobe-campaign-interface}
 
@@ -31,7 +33,7 @@ Vanuit het centrale gedeelte van de homepage kunt u koppelingen gebruiken om toe
 >
 >Voordat u een module of invoegtoepassing kunt installeren, moet u de licentieovereenkomst controleren of contact opnemen met de Adobe-accountmanager.
 
-### Console- en webtoegang {#console-and-web-access}
+### Console en webtoegang {#console-and-web-access}
 
 Het Adobe Campaign-platform is toegankelijk via een console of via een internetbrowser.
 
@@ -83,7 +85,7 @@ De lijsten zijn beschikbaar via de **[!UICONTROL Lists]** verbinding in de linke
 
 ![](assets/recipient_list_overview.png)
 
-### Tabs {#using-tabs} gebruiken
+### Tabs gebruiken {#using-tabs}
 
 * Wanneer u op een kernfunctie of een koppeling klikt, wordt de huidige pagina vervangen door de relevante pagina. Als u wilt teruggaan naar de vorige pagina, klikt u op de knop **[!UICONTROL Back]** op de werkbalk. Als u wilt terugkeren naar de startpagina, klikt u op de knop **[!UICONTROL Home]**.
 
@@ -104,7 +106,7 @@ Gebruik bijvoorbeeld op de leveringspagina de knop **[!UICONTROL Create]** om ee
 ![](assets/d_ncs_user_interface_tab_add_del.png)
 
 
-## Opmaak en eenheden {#formats-and-units}
+## Indelingen en eenheden {#formats-and-units}
 
 ### Datum en tijd {#date-and-time}
 
@@ -136,12 +138,12 @@ De belangrijkste verschillen tussen het Engels van de VS en het Engels van het V
   <tr> 
    <td> Korte datum met tijd<br /> </td> 
    <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>ex: 25-09-2018 10:47:25 PM</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>ex: 25/09/2018 22:47:25</strong></p> </td> 
+   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>ex: 25-09-2018 22:47:25</strong></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Waarden toevoegen in een opsomming {#add-values-in-an-enumeration}
+### Waarden toevoegen aan een opsomming {#add-values-in-an-enumeration}
 
 Met de invoervelden in een vervolgkeuzelijst kunt u een opsommingswaarde invoeren die u kunt opslaan en vervolgens als optie kunt aanbieden in de vervolgkeuzelijst. In het veld **[!UICONTROL City]** van het tabblad **[!UICONTROL General]** van een ontvankelijk profiel kunt u bijvoorbeeld Londen invoeren. Wanneer u op Enter drukt om deze waarde te bevestigen, wordt u gevraagd of u deze waarde wilt opslaan voor de opsomming die aan het veld is gekoppeld.
 

@@ -6,14 +6,16 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Indicatoren maken{#creating-indicators}
+
+![](../../assets/common.svg)
 
 Om een kubus functioneel te maken, moet u de relevante afmetingen en de maatregelen identificeren en hen creëren in de kubus.
 
@@ -44,7 +46,7 @@ Klik op de koppeling **[!UICONTROL Filter the source data...]** om de berekening
 
 ![](assets/s_advuser_cube_wz_03.png)
 
-## Afmetingen {#defining-dimensions} definiëren
+## Afmetingen definiëren {#defining-dimensions}
 
 Dimension vallen samen met analysegassen die voor elke kubus zijn gedefinieerd op basis van het bijbehorende feitenschema. Dit zijn de dimensies die in de analyse worden onderzocht, zoals tijd (jaar, maand, datum...), een classificatie van producten of contracten (familie, referentie, enz.), een bevolkingssegment (per stad, leeftijdsgroep, status, enz.).
 

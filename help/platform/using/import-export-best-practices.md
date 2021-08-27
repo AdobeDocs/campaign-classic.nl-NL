@@ -6,14 +6,16 @@ audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 exl-id: 03d35202-d221-4136-aad4-00704aabb356
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '511'
 ht-degree: 2%
 
 ---
 
 # Best practices voor importeren en exporteren {#import-export-best-practices}
+
+![](../../assets/common.svg)
 
 Voorzichtig zijn en het volgen van de weinige hieronder gedetailleerde eenvoudige regels zullen veel helpen om gegevensconsistentie binnen het gegevensbestand te verzekeren en gemeenschappelijke fouten tijdens gegevensbestandupdate of gegevensuitvoer te vermijden.
 
@@ -29,7 +31,7 @@ Ga niet uit van de veronderstelling dat de inkomende gegevens consistent en corr
 
 Een voorbeeld van een generiek werkschemamalplaatje dat voor het invoeren van gegevens wordt ontworpen is beschikbaar in [Voorbeeld: Workflowsjabloon voor het importeren van gegevens](../../platform/using/creating-import-export-templates.md)-sectie.
 
-## Samengevoegde bestandsindelingen {#using-flat-file-formats} gebruiken
+## Vlakke bestandsindelingen gebruiken {#using-flat-file-formats}
 
 De meest efficiënte indeling voor importeren is platte bestanden. Vlakke bestanden kunnen in de bulkmodus op databaseniveau worden geïmporteerd.
 
@@ -50,7 +52,7 @@ Smith;Clara;08/02/1989;hayden.smith@example.com;124567
 Durance;Allison;15/12/1978;allison.durance@example.com;120987
 ```
 
-## Compressie {#using-compression} gebruiken
+## Compressie gebruiken {#using-compression}
 
 Gebruik indien mogelijk gecomprimeerde bestanden voor importeren en exporteren. GZIP wordt standaard ondersteund. U kunt voorbewerking toevoegen bij het importeren van bestanden of naverwerking bij het extraheren van gegevens, respectievelijk in de **[!UICONTROL Load file]**- en **[!UICONTROL Extract file]**-workflowactiviteiten.
 
@@ -59,13 +61,13 @@ Gebruik indien mogelijk gecomprimeerde bestanden voor importeren en exporteren. 
 * [Activiteit bij laden van gegevens (bestand)](../../workflow/using/data-loading--file-.md)
 * [Activiteit voor gegevensextractie (bestand)](../../workflow/using/extraction--file-.md)
 
-## Importeren in Delta-modus {#importing-in-delta-mode}
+## Importeren in de Delta-modus {#importing-in-delta-mode}
 
 Regelmatige invoer moet plaatsvinden in de deltamodus. Dit betekent dat alleen gewijzigde of nieuwe gegevens telkens naar Adobe Campaign worden verzonden in plaats van naar de hele tabel.
 
 Volledige invoer mag alleen voor eerste lading worden gebruikt.
 
-## Consistentie {#maintaining-consistency} behouden
+## Consistentie behouden {#maintaining-consistency}
 
 Om de consistentie van de gegevens in de Adobe Campaign-database te waarborgen, volgt u de volgende beginselen:
 

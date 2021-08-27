@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 0%
@@ -15,19 +15,21 @@ ht-degree: 0%
 
 # Splitsen{#split}
 
+![](../../assets/common.svg)
+
 Met een activiteit van het type **Splitsen** kunt u een doel splitsen in verschillende subsets. Het doel wordt geconstrueerd met alle ontvangen resultaten: alle voorgaande activiteiten moeten dus zijn voltooid om deze activiteit te kunnen uitvoeren .
 
 Deze activiteit leidt niet tot een unie van binnenkomende populaties. Als verscheidene overgangen in één gespleten activiteit landen, adviseren wij het opnemen van een **[!UICONTROL Union]** activiteit voor het.
 
-Voor een voorbeeld van de splitsingsactiviteit die wordt gebruikt, verwijs naar [Subsets maken gebruikend de Gesplitste activiteit](../../workflow/using/targeting-data.md#creating-subsets-using-the-split-activity).
+Voor een voorbeeld van de splitsingsactiviteit die wordt gebruikt, verwijs naar [Subsets maken gebruikend de Gesplitste activiteit](targeting-data.md#creating-subsets-using-the-split-activity).
 
-Een voorbeeld dat illustreert hoe te om de Gesplitste activiteit te gebruiken om het doel in verschillende populaties te segmenteren gebruikend het filtreren voorwaarden wordt beschreven in [deze sectie](../../workflow/using/cross-channel-delivery-workflow.md).
+Een voorbeeld dat illustreert hoe te om de Gesplitste activiteit te gebruiken om het doel in verschillende populaties te segmenteren gebruikend het filtreren voorwaarden wordt beschreven in [deze sectie](cross-channel-delivery-workflow.md).
 
-Een voorbeeld dat toont hoe te om een instantievariabele in een Gesplitste activiteit te gebruiken is beschikbaar in [deze sectie](../../workflow/using/javascript-scripts-and-templates.md).
+Een voorbeeld dat toont hoe te om een instantievariabele in een Gesplitste activiteit te gebruiken is beschikbaar in [deze sectie](javascript-scripts-and-templates.md).
 
 Als u deze activiteit wilt configureren, definieert u de inhoud en het label van de subset op het tabblad **[!UICONTROL Subsets]** en kiest u vervolgens de doeldimensie op het tabblad **[!UICONTROL General]**.
 
-## Subsets {#creating-subsets} maken
+## Subsets maken {#creating-subsets}
 
 Een subset maken:
 
@@ -64,7 +66,7 @@ Een subset maken:
 
    Als het wordt voltooid, wordt de segmentcode van elke subset automatisch opgeslagen in een extra kolom. Deze kolom zal in de verpersoonlijkingsgebieden op leveringsniveau toegankelijk zijn.
 
-## Het aantal subsetrecords {#limiting-the-number-of-subset-records} beperken
+## Het aantal subsetrecords beperken {#limiting-the-number-of-subset-records}
 
 Als u niet de gehele populatie wilt gebruiken die zich in een subset bevindt, kunt u het aantal records beperken dat deze bevat.
 
@@ -124,7 +126,7 @@ Als u bijvoorbeeld het veld **[!UICONTROL Language]** selecteert als een groepsv
 
 Als uw groeperingsvelden een te groot aantal waarden bevatten of als u wilt voorkomen dat waarden opnieuw worden ingesteld voor elke nieuwe gesplitste activiteit, kunt u met Adobe Campaign een beperking per gegevensdistributie maken. Als u gegevensbeperkingswaarden selecteert (zie de sectie [Subsets maken](#creating-subsets) voor meer informatie), selecteert u de optie **[!UICONTROL By data distribution]** en selecteert u een sjabloon in het keuzemenu. Hieronder ziet u hoe u een sjabloon voor gegevensdistributie maakt.
 
-Voor een voorbeeld van de **[!UICONTROL Local approval]** activiteit met een distributiemalplaatje, verwijs naar [Het gebruiken van de lokale goedkeuringsactiviteit](../../workflow/using/using-the-local-approval-activity.md).
+Voor een voorbeeld van de **[!UICONTROL Local approval]** activiteit met een distributiemalplaatje, verwijs naar [Het gebruiken van de lokale goedkeuringsactiviteit](using-the-local-approval-activity.md).
 
 ![](assets/s_user_segmentation_partage_wz6.png)
 
@@ -148,12 +150,12 @@ Met de sjabloon voor gegevensdistributie kunt u het aantal records beperken aan 
    * **[!UICONTROL Targeting dimension]**: Voer de doeldimensie in waarop de gegevensverspreiding zal worden toegepast,  **[!UICONTROL Recipient]** bijvoorbeeld. Dit schema moet altijd compatibel zijn met de gegevens die worden gebruikt in de doelworkflow.
    * **[!UICONTROL Distribution field]**: Selecteer een veld via de doeldimensie. Als u bijvoorbeeld het veld **[!UICONTROL Email domain]** selecteert, wordt de lijst met ontvangers uitgesplitst naar domein.
    * **[!UICONTROL Distribution type]**: Selecteer op het  **[!UICONTROL Distribution]** tabblad de manier waarop de beperkingswaarde van het doel wordt opgesplitst:  **[!UICONTROL Percentage]** of  **[!UICONTROL Set]**.
-   * **[!UICONTROL Assignment type]**: Selecteer het gegevenstype voor de toewijzing van de gegevensdistributie. U kunt kiezen tussen toewijzen per groep of operator of toewijzen door lokale entiteit. Toewijzing door lokale entiteit wordt gebruikt in **Distributed Marketing**. Zie deze [sectie](../../campaign/using/about-distributed-marketing.md) voor meer informatie.
-   * **[!UICONTROL Approval storage]**: als u een  **[!UICONTROL Local approval]** activiteit in uw het richten werkschema (verwijs naar  [Lokale goedkeuring](../../workflow/using/local-approval.md)) gebruikt, ga het schema in waarin de goedkeuringsresultaten zullen worden opgeslagen. U moet één opslagschema per het richten schema specificeren. Als u **[!UICONTROL Recipients]** richtend schema gebruikt, ga het standaard **[!UICONTROL Local approval of recipients]** opslagschema in.
+   * **[!UICONTROL Assignment type]**: Selecteer het gegevenstype voor de toewijzing van de gegevensdistributie. U kunt kiezen tussen toewijzen per groep of operator of toewijzen door lokale entiteit. Toewijzing door lokale entiteit wordt gebruikt in **Distributed Marketing**. Zie deze [sectie](../../distributed/using/about-distributed-marketing.md) voor meer informatie.
+   * **[!UICONTROL Approval storage]**: als u een  **[!UICONTROL Local approval]** activiteit in uw het richten werkschema (verwijs naar  [Lokale goedkeuring](local-approval.md)) gebruikt, ga het schema in waarin de goedkeuringsresultaten zullen worden opgeslagen. U moet één opslagschema per het richten schema specificeren. Als u **[!UICONTROL Recipients]** richtend schema gebruikt, ga het standaard **[!UICONTROL Local approval of recipients]** opslagschema in.
 
       In het geval van een eenvoudige beperking door gegevensgroepering zonder lokale goedkeuring, te hoeven u niet om het **[!UICONTROL Approvals storage]** gebied in te gaan.
 
-1. Als u een **[!UICONTROL Local approval]** activiteit (verwijs naar [Lokale goedkeuring](../../workflow/using/local-approval.md)) gebruikt, ga **[!UICONTROL Advanced settings]** voor het distributiemalplaatje in:
+1. Als u een **[!UICONTROL Local approval]** activiteit (verwijs naar [Lokale goedkeuring](local-approval.md)) gebruikt, ga **[!UICONTROL Advanced settings]** voor het distributiemalplaatje in:
 
    ![](assets/local_validation_data_distribution_3.png)
 
@@ -189,7 +191,7 @@ Met de sjabloon voor gegevensdistributie kunt u het aantal records beperken aan 
       Deze kolom wordt gedefinieerd door het veld **[!UICONTROL Distribution type]** op het tabblad **[!UICONTROL General]**.
 
    * **[!UICONTROL Label]**: Voer het label in dat aan elke waarde is gekoppeld.
-   * **[!UICONTROL Group or operator]**: als u een  **[!UICONTROL Local approval]** activiteit gebruikt (zie  [Lokale goedkeuring](../../workflow/using/local-approval.md)), selecteer de exploitant of de groep exploitanten die aan elke verdelingswaarde worden toegewezen.
+   * **[!UICONTROL Group or operator]**: als u een  **[!UICONTROL Local approval]** activiteit gebruikt (zie  [Lokale goedkeuring](local-approval.md)), selecteer de exploitant of de groep exploitanten die aan elke verdelingswaarde worden toegewezen.
 
       In het geval van een eenvoudige beperking door gegevensgroepering zonder lokale goedkeuring, te hoeven u niet om het **[!UICONTROL Group or operator]** gebied in te gaan.
 
@@ -197,9 +199,9 @@ Met de sjabloon voor gegevensdistributie kunt u het aantal records beperken aan 
       >
       >Controleer of de juiste rechten aan de exploitanten zijn toegekend.
 
-   * **[!UICONTROL Local entity]**: Selecteer de lokale entiteit die aan elke distributiewaarde is toegewezen. Lokale entiteiten worden gebruikt in **Distributed Marketing**. Zie deze [sectie](../../campaign/using/about-distributed-marketing.md) voor meer informatie.
+   * **[!UICONTROL Local entity]**: Selecteer de lokale entiteit die aan elke distributiewaarde is toegewezen. Lokale entiteiten worden gebruikt in **Distributed Marketing**. Zie deze [sectie](../../distributed/using/about-distributed-marketing.md) voor meer informatie.
 
-## Parameters {#filtering-parameters} filteren
+## Parameters filteren {#filtering-parameters}
 
 Klik op het tabblad **[!UICONTROL General]** om het activiteitlabel in te voeren. Selecteer de doel- en filterafmetingen voor deze splitsing. Indien nodig kunt u deze afmetingen voor een bepaalde subset wijzigen.
 

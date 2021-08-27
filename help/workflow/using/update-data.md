@@ -6,18 +6,20 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 2%
 
 ---
 
-# Data bijwerken{#update-data}
+# Gegevens bijwerken{#update-data}
+
+![](../../assets/common.svg)
 
 Met een activiteit van het type **Gegevens bijwerken** worden de velden in de database op grote schaal bijgewerkt.
 
-## Type handeling {#operation-type}
+## Type bewerking {#operation-type}
 
 In het veld **[!UICONTROL Operation type]** kunt u het proces kiezen dat moet worden uitgevoerd op de gegevens in de database:
 
@@ -31,7 +33,7 @@ In het veld **[!UICONTROL Operation type]** kunt u het proces kiezen dat moet wo
 
 In het veld **[!UICONTROL Batch size]** kunt u het aantal inkomende overgangselementen selecteren dat moet worden bijgewerkt. Als u bijvoorbeeld 500 opgeeft, worden de eerste 500 records die worden afgehandeld, bijgewerkt.
 
-## Identificatie record {#record-identification}
+## Registeridentificatie {#record-identification}
 
 Geef op hoe de records in de database moeten worden geïdentificeerd:
 
@@ -82,7 +84,7 @@ Creeert een uitgaande overgang die aan het eind van uitvoering zal worden geacti
 
 Hiermee maakt u een uitgaande overgang met records die na de update niet correct zijn verwerkt (bijvoorbeeld als er een duplicaat is). De update markeert doorgaans het einde van een doelworkflow en daarom wordt de optie niet standaard geactiveerd.
 
-## Verzamelingen {#updating-and-merging-collections} bijwerken en samenvoegen
+## Verzamelingen bijwerken en samenvoegen {#updating-and-merging-collections}
 
 Door gegevens bij te werken en verzamelingen samen te voegen, kunt u de gegevens in een record bijwerken met behulp van gegevens uit een of meer secundaire records, zodat u desgewenst slechts één record kunt bijhouden. Deze updates worden beheerd door een set regels.
 
@@ -116,7 +118,7 @@ Gegevens voor secundaire records worden gekoppeld aan het hoofdrecord als de ged
 
 ## Voorbeeld: Gegevens bijwerken na verrijking {#example--update-data-following-an-enrichment}
 
-De [Stap 2: Het schrijven van verrijkte gegevens naar de lijst van &quot;Aankopen&quot;](../../workflow/using/creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) sectie van het gebruiksgeval dat de details die tot een recaplijst leiden een voorbeeld van een gegevensupdate na een verrijkingsactiviteit aanbieden.
+De [Stap 2: Het schrijven van verrijkte gegevens naar de lijst van &quot;Aankopen&quot;](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) sectie van het gebruiksgeval dat de details die tot een recaplijst leiden een voorbeeld van een gegevensupdate na een verrijkingsactiviteit aanbieden.
 
 ## Invoerparameters {#input-parameters}
 

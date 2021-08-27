@@ -3,14 +3,14 @@ keywords: Campaign Classic;home;populaire onderwerpen
 product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 8a0535180640c63201d1a59539eac8c91a53cb8b
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 54%
+source-wordcount: '258'
+ht-degree: 55%
 
 ---
 
-# Campaign Classic v7-documentatie {#campaign-classic-documentation}
+# Documentatie voor Campaign Classic v7 {#campaign-classic-documentation}
 
 ![](platform/using/assets/do-not-localize/banner_acc_doc.jpg)
 
@@ -18,13 +18,13 @@ ht-degree: 54%
 
 * **[Release van juni is live!](rn/using/latest-release.md)**<br/> Ontdek nieuwe mogelijkheden, verbeteringen en correcties in de opmerkingen bij de release
 
-* **[Veelgestelde vragen over Apple Mail Privacy Protection](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/apple-mail-privacy-faq.html?lang=nl)**<br/> Vind de eerste richtlijnen in reactie op de aankondiging van Apple met betrekking tot iOS 15
+* **[Veelgestelde vragen over Apple Mail Privacy Protection](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/using/apple-mail-privacy-faq.html)**<br/> Vind de eerste richtlijnen in reactie op de aankondiging van Apple met betrekking tot iOS 15
 
-* **[Verbinding maken via IMS/Adobe ID? Upgrade naar de nieuwste builds](technotes/ims-updates.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne na** 30 juni 2021 **
+* **[Verbinding maken via IMS/Adobe ID? Upgrade naar de nieuwste builds](technotes/using/ims-updates.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne na** 30 juni 2021 **
 
 * **[Onjuiste harde ](delivery/using/update-bounce-qualification.md)**<br/> grenzen verwijderenLeer hoe u onjuiste harde grenzen kunt bijwerken na een Apple-storing
 
-* **[Beveilig uw Campagne ](technotes/acc-config-updates.md)**<br/> instancesUpdate aan recentste bouwt om uw platform van de Campagne te beveiligen
+* **[Beveilig uw Campagne ](technotes/using/acc-config-updates.md)**<br/> instancesUpdate aan recentste bouwt om uw platform van de Campagne te beveiligen
 
 * **[Werk uw Adobe Experience Cloud Triggers-](integrations/using/configuring-adobe-io.md)**<br/> integratie bij. De verouderde Auth-verificatieservice heeft het einde van de levensduur bereikt. Leer hoe u naar Adobe I/O migreert.
 
@@ -80,7 +80,7 @@ ht-degree: 54%
 
 | Nuttige pagina’s | Resources voor ontwikkelaars |
 |---|---|
-| [Release-opmerkingen](/help/rn/using/latest-release.md) | [Lijst met foutberichten](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html) |
+| [Release-opmerkingen](/help/rn/using/latest-release.md) | [Lijst met foutberichten](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=nl) |
 | [Instructievideo’s](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) | [Campaign-datamodel](configuration/using/about-data-model.md) |
 | [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md) | [Campaign-JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [[!DNL Gold Standard] -upgrade](rn/using/gs-overview.md) | [Handleiding voor tracking](https://helpx.adobe.com/nl/campaign/kb/acc-tracking.html) |

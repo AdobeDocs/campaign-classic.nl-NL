@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # Automatiseren met workflows{#automating-via-workflows}
 
-## Inhoudsbeheeractiviteit {#content-management-activity}
+![](../../assets/common.svg)
+
+## Inhoudsbeheeractiviteiten {#content-management-activity}
 
 Het maken, bewerken en publiceren van inhoud kan worden geautomatiseerd met behulp van een workflow die via de Adobe Campaign-clientinterface is geconfigureerd.
 
@@ -48,7 +50,7 @@ Activiteiteneigenschappen worden in vier stappen onderverdeeld:
 
    Hiermee maakt u nieuwe inhoud via een publicatiesjabloon. De instantie content wordt opgeslagen in de gevulde map &quot;String&quot;.
 
-### De inhoud {#update-the-content} bijwerken
+### De inhoud bijwerken {#update-the-content}
 
 * **Onderwerp**
 
@@ -212,7 +214,7 @@ De inhoud van de levering wordt via de binnenkomende gebeurtenis gevuld.
 
 De laatste actie van de activiteit is het voorbereiden en lanceren van de levering.
 
-### Inhoud importeren uit FTP {#importing-content-from-ftp}
+### Inhoud importeren vanuit FTP {#importing-content-from-ftp}
 
 Als uw leveringsinhoud beschikbaar is in een HTML-bestand dat zich op FTP- of SFTP-servers bevindt, kunt u deze inhoud gemakkelijk laden in Adobe Campaign-leveringen. Zie [dit voorbeeld](../../workflow/using/loading-delivery-content.md).
 

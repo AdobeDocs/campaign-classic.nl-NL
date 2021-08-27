@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: fcc51131-15d0-4d39-95cb-371d7044373b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Lijstupdate{#list-update}
+
+![](../../assets/common.svg)
 
 In een **List-update**-activiteit wordt de populatie die in de overgang is opgegeven, opgeslagen in een lijst met ontvangers.
 
@@ -35,13 +37,13 @@ Over het algemeen betekent het opslaan van een doel in een lijst het einde van e
 
 ![](assets/do-not-localize/how-to-video.png) [Ontdek hoe u in video een lijst met ontvangers van de Verkenner kunt maken](#video)
 
-## Voorbeeld: Update {#example--list-update} weergeven
+## Voorbeeld: Lijstupdate {#example--list-update}
 
 In het volgende voorbeeld volgt de activiteit van de lijstupdate een vraag die mannen meer dan 30 richt die in Frankrijk wonen. De lijst wordt eerst gemaakt op basis van de resultaten van de query. Het zal dan worden bijgewerkt telkens als het van het werkschema wordt gelanceerd. Het kan bijvoorbeeld regelmatig worden gebruikt voor gerichte promotieaanbiedingen voor campagnes.
 
 1. Voeg een **[!UICONTROL list update activity]** direct na een vraag toe dan open het om het uit te geven.
 
-   Voor meer bij het creëren van een vraag in een werkschema, verwijs naar [Vraag](../../workflow/using/query.md).
+   Voor meer bij het creëren van een vraag in een werkschema, verwijs naar [Vraag](query.md).
 
 1. U kunt een label voor de activiteit selecteren.
 1. Selecteer de optie **[!UICONTROL Create the list if necessary (Calculated name)]** om te tonen dat de lijst zal worden gecreeerd zodra het eerste werkschema is uitgevoerd, dan bijgewerkt met de volgende uitvoeringen.

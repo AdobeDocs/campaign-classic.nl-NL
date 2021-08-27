@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: fceb5752-dc73-4386-8c18-c4f3e6110ca5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Levenscyclus van workflow {#workflow-life-cycle}
+
+![](../../assets/common.svg)
 
 De workflowcyclus bestaat uit drie hoofdstappen.
 
@@ -41,4 +43,4 @@ De werkstroom is begonnen en wacht op een exploitant die tot de groep behoort di
 
 Operator management is gedetailleerd in deze [sectie](../../platform/using/access-management.md).
 
-Raadpleeg [deze sectie](../../workflow/using/monitoring-workflow-execution.md) voor meer informatie over hoe u workflows kunt controleren.
+Raadpleeg [deze sectie](monitoring-workflow-execution.md) voor meer informatie over hoe u workflows kunt controleren.

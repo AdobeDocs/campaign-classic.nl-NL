@@ -6,20 +6,22 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: f45e32ce-6534-4df2-ac7c-ba1134f0ffc8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '40'
 ht-degree: 20%
 
 ---
 
-# Methodelement {#methods--element}
+# method, element {#methods--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Inhoudsmodel {#content-model-11}
 
 methoden:==method
 
-## Kenmerken {#attributes-11}
+## Attributen {#attributes-11}
 
 Geen
 
@@ -35,7 +37,7 @@ methode
 
 Met dit element kunt u een element `<method>` definiëren. Het is verplicht een methode te declareren.
 
-## Kenmerkbeschrijving {#attribute-description-11}
+## Beschrijving van kenmerk {#attribute-description-11}
 
 Dit element heeft geen kenmerken.
 

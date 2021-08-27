@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # Deduplicatie{#deduplication}
+
+![](../../assets/common.svg)
 
 Deduplicatie verwijdert duplicaten van de resultaten van binnenkomende activiteiten. U kunt deduplicatie uitvoeren op het e-mailadres, telefoonnummer of een ander veld.
 
@@ -139,7 +141,7 @@ Met de functie **[!UICONTROL Merge]** kunt u een set regels voor deduplicatie co
 
 Met een set dubbele records kunt u bijvoorbeeld het oudste telefoonnummer of de meest recente naam behouden.
 
-In [deze sectie](../../workflow/using/deduplication-merge.md) vindt u een gebruiksscenario waarin deze functie wordt gebruikt.
+In [deze sectie](deduplication-merge.md) vindt u een gebruiksscenario waarin deze functie wordt gebruikt.
 
 Ga als volgt te werk om dit te doen:
 
@@ -155,7 +157,7 @@ Ga als volgt te werk om dit te doen:
 
 1. Na het activeren van de functionaliteit wordt een **[!UICONTROL Merge]** tabblad toegevoegd aan de **[!UICONTROL Deduplication]** activiteit. Hiermee kunt u groepen velden definiëren die moeten worden samengevoegd en de bijbehorende regels.
 
-   Voor meer op dit, verwijs naar het specifieke gebruiksgeval beschikbaar in [deze sectie](../../workflow/using/deduplication-merge.md).
+   Voor meer op dit, verwijs naar het specifieke gebruiksgeval beschikbaar in [deze sectie](deduplication-merge.md).
 
    ![](assets/dedup3.png)
 

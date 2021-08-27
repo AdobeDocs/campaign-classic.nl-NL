@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Verzamelde data gegevens publiceren, bijhouden en gebruiken{#publish-track-and-use-collected-data}
+
+![](../../assets/v7-only.svg)
 
 Nadat het formulier is gemaakt, geconfigureerd en gepubliceerd, kunt u de koppeling delen met uw publiek en de reacties volgen.
 
@@ -23,7 +25,7 @@ Nadat het formulier is gemaakt, geconfigureerd en gepubliceerd, kunt u de koppel
 
 ## Beoordelingsdashboard {#survey-dashboard}
 
-Elk onderzoek heeft zijn eigen dashboard dat u zijn status, beschrijving, openbare URL en beschikbaarheidsprogramma laat bekijken. U kunt ook de beschikbare rapporten weergeven. [Meer informatie](#reports-on-surveys).
+Elk onderzoek heeft zijn eigen dashboard dat u zijn status, beschrijving, openbare URL en beschikbaarheidsprogramma laat bekijken. U kunt ook de beschikbare rapporten weergeven. [Meer info](#reports-on-surveys).
 
 De openbare URL van de enquête wordt weergegeven op het dashboard:
 

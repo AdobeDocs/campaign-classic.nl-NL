@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # De server installeren{#installing-the-server}
 
-## Installatieprogramma {#executing-the-installation-program} uitvoeren
+![](../../assets/v7-only.svg)
+
+## Het installatieprogramma uitvoeren {#executing-the-installation-program}
 
 Installeer Adobe Campaign 32-bits voor een Windows 32-bits platform. Installeer Adobe Campaign 64-bits voor een Windows 64-bits platform.
 
@@ -62,7 +64,7 @@ De installatiestappen voor de Adobe Campaign-server zijn als volgt:
 
    Als de installatie is voltooid, start u Adobe Campaign om de configuratiebestanden te maken. Zie [Eerste start van de server](#first-start-up-of-the-server).
 
-## Samenvattende installatietest {#summary-installation-testing}
+## Samenvattende installatietests {#summary-installation-testing}
 
 U kunt de eerste installatie testen met de volgende opdracht:
 
@@ -139,7 +141,7 @@ De Adobe Campaign-server definieert een technische aanmelding met de naam **inte
 
 Meer informatie vindt u in [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
-## Adobe Campaign-services {#starting-adobe-campaign-services} starten
+## Adobe Campaign-services starten {#starting-adobe-campaign-services}
 
 Om de diensten van Adobe Campaign te beginnen, kunt u de de dienstmanager gebruiken of het volgende bij de bevellijn (met de aangewezen rechten) ingaan:
 
@@ -153,7 +155,7 @@ Als u de processen van Adobe Campaign later moet tegenhouden, gebruik het bevel:
 net stop nlserver6
 ```
 
-## LibreOffice {#installing-libreoffice} installeren
+## LibreOffice installeren {#installing-libreoffice}
 
 Download LibreOffice, bijvoorbeeld via [https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/) en volg de gebruikelijke installatiestappen.
 

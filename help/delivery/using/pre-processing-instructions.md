@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Voorverwerkingsinstructies {#pre-processing-instructions}
+
+![](../../assets/common.svg)
 
 U kunt een specifieke syntaxis in de bezorginhoud gebruiken om instructies toe te voegen en de URL van het bijgehouden e-mailbericht te scripten. De &lt;%@-instructies zijn geen JavaScript: Deze syntaxis is specifiek voor Adobe Campaign.
 
@@ -113,7 +115,7 @@ Gebruik de volgende syntaxis voor leverparameters/variabelen (met behulp van het
 <%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>
 ```
 
-### [!DNL value] in een JavaScript-sectie  {#value-in-javascript}
+### [!DNL value] in een JavaScript-sectie {#value-in-javascript}
 
 Als u het gebruik van &lt;%@-waarde in JavaScript-secties wilt toestaan, worden twee speciale objecten vervangen door &lt;% en %>:
 

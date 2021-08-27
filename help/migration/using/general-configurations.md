@@ -6,14 +6,16 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '2786'
+source-wordcount: '2784'
 ht-degree: 0%
 
 ---
 
 # Algemene configuraties{#general-configurations}
+
+![](../../assets/v7-only.svg)
 
 In deze sectie wordt de configuratie beschreven die in Adobe Campaign v7 moet worden uitgevoerd als u van versie 5.11 of v6.02 migreert.
 
@@ -112,7 +114,7 @@ nlserver config -internalpassword
 
 * Tekstspatiëring werkt niet meer als het wachtwoord leeg is. Als dit het geval is, zal een foutenmelding u op de hoogte brengen en u vragen om het aan te passen.
 * Gebruikerswachtwoorden worden niet meer opgeslagen in het schema **xtk:sessionInfo**.
-* Beheermachtigingen zijn nu nodig om de functies **xtk:builder:EvaluateJavaScript** en **xtk:builder:EvaluateJavaScriptTemplate** te gebruiken.
+* Beheermachtigingen zijn nu nodig om de functies **xtk:builder:EvaluateJavaScript** en **xtk:builder:EvaluateJavaScriptTemplate** te kunnen gebruiken.
 
 Bepaalde out-of-the-box schema&#39;s zijn gewijzigd en zijn nu standaard alleen toegankelijk met schrijftoegang voor operatoren met de machtiging **admin**:
 
@@ -147,7 +149,7 @@ Bepaalde out-of-the-box schema&#39;s zijn gewijzigd en zijn nu standaard alleen 
 * xtk:tekenreeksen
 * xtk:xslt
 
-### Sessiontoken-parameter {#sessiontoken-parameter}
+### Sessiontoken, parameter {#sessiontoken-parameter}
 
 In v5 werkte de parameter **sessiontoken** aan beide clientzijde (lijst met overzichtstypeschermen, koppelingseditor, enz.) en server (webtoepassingen, rapporten, jsp, jssp, enz.). In versie 7 werkt deze alleen aan de serverzijde. Als u wilt terugkeren naar de volledige functionaliteit zoals in versie 5, moet u de koppelingen wijzigen met deze parameter en via de verbindingspagina doorgeven:
 
@@ -419,7 +421,7 @@ De migratie wordt uitgevoerd via een postupgrade en conflicten kunnen optreden i
 
 Na de middelsynchronisatie, laat **postupgrade** bevel u ontdekken als de synchronisatie fouten of waarschuwingen produceert.
 
-### Het synchronisatieresultaat {#view-the-synchronization-result} weergeven
+### Het synchronisatieresultaat weergeven {#view-the-synchronization-result}
 
 Het synchronisatieresultaat kan op twee manieren worden weergegeven:
 
@@ -438,7 +440,7 @@ Het synchronisatieresultaat kan op twee manieren worden weergegeven:
 
 * Het **postupgrade_`<server version number>`_time van postupgrade`>`.log** dossier bevat het synchronisatieresultaat. Deze is standaard beschikbaar in de volgende map: **installatiemap/var/`<instance>`postupgrade**. Fouten en waarschuwingen worden aangegeven met de kenmerken **error** en **warning**.
 
-### Een conflict {#resolve-a-conflict} oplossen
+### Een conflict oplossen {#resolve-a-conflict}
 
 Conflicten oplossen moet alleen worden uitgevoerd door gevorderde operatoren en gebruikers aan wie beheerdersrechten zijn verleend.
 
@@ -495,7 +497,7 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 * nms:mobileOfferView
 * nms:paperOfferView
 
-### Inhoud {#offer-content} aanbieden
+### Inhoud aanbieden {#offer-content}
 
 In v7 is de inhoud van het aanbod verplaatst. In v6.02 bevond de inhoud zich in elk representatieschema (**nms:emailOfferView**). In v7 bevindt de inhoud zich nu in het aanbiedingsschema. Na de postupgrade is de inhoud daarom niet zichtbaar in de interface. Na postupgrade moet u de aanbiedingsinhoud opnieuw maken of een script ontwikkelen dat de inhoud automatisch van het presentatieschema naar het aanbiedingsschema verplaatst.
 
@@ -612,7 +614,7 @@ Hier volgt de procedure nadat u de inhoud van het aanbod hebt verplaatst als u s
 
 Alle standaardrapporten maken momenteel gebruik van de renderingengine v6.x. Als u JavaScript in deze rapporten had toegevoegd, zouden bepaalde elementen niet meer kunnen werken. De oude versie van JavaScript is namelijk niet compatibel met de v6.x-renderingengine. U moet daarom de JavaScript-code controleren en deze later aanpassen. U moet elk rapport testen, met name de exportfunctie.
 
-### Speciale rapporten {#personalized-reports}
+### Persoonlijke rapporten {#personalized-reports}
 
 <!--If you want to have the blue banner from v7 (allowing you access to the tabs), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
@@ -667,7 +669,7 @@ Als u problemen ondervindt, publiceert u de webtoepassing opnieuw. Als het probl
 >[!NOTE]
 De stappen voor het selecteren van de renderingengine zijn gelijk aan die voor het selecteren van rapporten. Zie [Persoonlijke rapporten](#personalized-reports).
 
-## Rood-hoed {#red-hat}
+## Rood-Hoed {#red-hat}
 
 Als de out-of-the-box schema&#39;s in v6.02 of v5.11 zijn geschrapt, kunt u uw schema&#39;s na de postupgrade misschien niet meer uitgeven. Als dit gebeurt, voert u de opdracht uit:
 

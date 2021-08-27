@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Een analyserapport gebruiken{#processing-a-report}
+
+![](../../assets/common.svg)
 
 ## Een analyserapport opslaan {#saving-an-analysis-report}
 
@@ -33,7 +35,7 @@ Zodra het is bewaard, kan dit rapport worden opnieuw gebruikt om andere analyser
 
 Als u wijzigingen in dit rapport wilt aanbrengen, bewerkt u het knooppunt **[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]** van de Adobe Campaign-structuur (of de eerste map van het type &#39;Reports&#39; waarvoor de operator bewerkingsrechten heeft). Voor meer op dit, verwijs naar [Vormend de lay-out van een beschrijvend analyserapport](#configuring-the-layout-of-a-descriptive-analysis-report).
 
-## Extra instellingen voor analyserapport {#analysis-report-additional-settings}
+## Aanvullende instellingen voor analyserapport {#analysis-report-additional-settings}
 
 Nadat u een beschrijvend analyserapport hebt opgeslagen, kunt u de eigenschappen ervan bewerken en aanvullende opties openen.
 
@@ -41,7 +43,7 @@ Nadat u een beschrijvend analyserapport hebt opgeslagen, kunt u de eigenschappen
 
 Deze opties zijn het zelfde als standaardrapporten en zijn gedetailleerd in [deze pagina](../../reporting/using/properties-of-the-report.md).
 
-## Het vormen van de lay-out van een beschrijvend analyserapport {#configuring-the-layout-of-a-descriptive-analysis-report}
+## De lay-out van een beschrijvend analyserapport configureren {#configuring-the-layout-of-a-descriptive-analysis-report}
 
 U kunt de weergave en lay-out van uw gegevens aanpassen in de grafieken en tabellen van de beschrijvende analyse. Alle opties zijn toegankelijk via de Adobe Campaign-structuur, op het tabblad **[!UICONTROL Edit]** van elk rapport.
 
@@ -55,7 +57,7 @@ Om het schema van het rapport te veranderen, klik **[!UICONTROL Select the link]
 
 ![](assets/s_ncs_advuser_report_display_02.png)
 
-### Weergave-instellingen {#analysis-report-display-settings} van analyserapport
+### Weergaveinstellingen van analyserapport {#analysis-report-display-settings}
 
 Het is mogelijk om statistieken en subtotalen te verbergen of te tonen evenals de richtlijn van uw statistieken te kiezen.
 
@@ -96,7 +98,7 @@ U kunt de gegevenslay-out rechtstreeks in de beschrijvende analystabel aanpassen
 
 Als u wilt terugkeren naar de oorspronkelijke weergave, vernieuwt u de weergave.
 
-### Opties {#analysis-report-chart-options} in het analyserapport
+### Opties in het diagram met analyserapporten {#analysis-report-chart-options}
 
 Het is mogelijk om de weergave van gegevens in het diagram aan te passen. Om dit te doen, klik **[!UICONTROL Variables...]** verbinding beschikbaar tijdens het de selectiestadium van het grafiektype.
 
@@ -123,7 +125,7 @@ Als u gegevens uit een analyserapport wilt exporteren, klikt u op de vervolgkeuz
 
 Raadpleeg [deze pagina](../../reporting/using/actions-on-reports.md) voor meer informatie.
 
-## Bestaande rapporten en analyses opnieuw gebruiken {#re-using-existing-reports-and-analyses}
+## Hergebruik van bestaande rapporten en analyses {#re-using-existing-reports-and-analyses}
 
 U kunt beschrijvende analyserapporten over gegevens maken met bestaande rapporten die al in Adobe Campaign zijn opgeslagen. Deze modus is mogelijk wanneer analyses zijn opgeslagen of wanneer rapporten zijn gemaakt en geconfigureerd voor toegang via de wizard voor beschrijvende analyse.
 
@@ -136,7 +138,7 @@ Als u beschrijvende analyserapporten wilt maken, moet de wizard voor beschrijven
 
    ![](assets/s_ncs_user_report_wizard_01.png)
 
-## Analyserapporten voor archivering {#archiving-analysis-reports}
+## Analyserapporten archiveren {#archiving-analysis-reports}
 
 Wanneer u een beschrijvende analyse creeert die op een bestaande analyse wordt gebaseerd, kunt u archieven tot stand brengen om gegevens op te slaan en rapportresultaten te vergelijken.
 

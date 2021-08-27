@@ -5,7 +5,7 @@ description: Campagne
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 
 
 # Campagne{#campaign}
+
+![](../../assets/common.svg)
 
 De hieronder beschreven workflows worden standaard geïnstalleerd met de **Campagne**-module. Voor meer op deze module, verwijs naar dit [sectie](../../campaign/using/designing-marketing-campaigns.md).
 

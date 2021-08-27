@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 3%
+source-wordcount: '418'
+ht-degree: 4%
 
 ---
 
-# SQL Data Management{#sql-data-management}
+# SQL-gegevensbeheer{#sql-data-management}
+
+![](../../assets/common.svg)
 
 Met de activiteit **SQL-gegevensbeheer** kunt u uw eigen SQL-scripts schrijven om werktabellen te maken en te vullen.
 
@@ -21,11 +23,18 @@ Met de activiteit **SQL-gegevensbeheer** kunt u uw eigen SQL-scripts schrijven o
 
 Voordat u de activiteit configureert, moet u controleren of aan de volgende voorwaarden is voldaan:
 
-* De activiteit is beschikbaar voor verre slechts gegevensbronnen. Het **[!UICONTROL FDA]** (Federated Data Access)-pakket moet daarom op uw instantie worden geïnstalleerd. [Meer informatie](../../installation/using/about-fda.md).
-* Het uitgaande schema moet in het gegevensbestand bestaan en met een gegevensbestand FDA worden verbonden. [Meer informatie](../../configuration/using/about-schema-reference.md).
-* De exploitant die het werkschema uitvoert moet **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** genoemd hebben recht. [Meer informatie](../../platform/using/access-management-named-rights.md).
+* De activiteit is beschikbaar voor verre slechts gegevensbronnen. Het **[!UICONTROL FDA]** (Federated Data Access)-pakket moet daarom op uw instantie worden geïnstalleerd. [Meer info](../../installation/using/about-fda.md).
 
-## De SQL-gegevensbeheeractiviteit {#configuring-the-sql-data-management-activity} configureren
+   Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagneversie:
+
+   ![](assets/do-not-localize/v7.jpeg)[  Documentatie voor Campaign v7](../../installation/using/about-fda.md)
+
+   ![](assets/do-not-localize/v8.png)[  Documentatie voor Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+
+* Het uitgaande schema moet in het gegevensbestand bestaan en met een gegevensbestand FDA worden verbonden.
+* De exploitant die het werkschema uitvoert moet **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** genoemd hebben recht. [Meer info](../../platform/using/access-management-named-rights.md).
+
+## De SQL-gegevensbeheeractiviteit configureren {#configuring-the-sql-data-management-activity}
 
 1. Geef de activiteit **[!UICONTROL Label]** op.
 1. Selecteer **[!UICONTROL External account]** aan gebruik, dan selecteren **[!UICONTROL Outbound schema]** verbonden aan deze externe rekening.

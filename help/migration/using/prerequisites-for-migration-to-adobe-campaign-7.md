@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 exl-id: 747d8a2c-b13a-4852-a9b5-0d37b236a36f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 22%
@@ -14,6 +14,8 @@ ht-degree: 22%
 ---
 
 # Vereisten voor migratie naar Adobe Campaign 7{#prerequisites-for-migration-to-adobe-campaign}
+
+![](../../assets/v7-only.svg)
 
 Voordat u een migratie uitvoert, raadpleegt u de secties [Voordat u de migratie start](../../migration/using/before-starting-migration.md) en [Uw platform configureren](../../migration/using/configuring-your-platform.md).
 

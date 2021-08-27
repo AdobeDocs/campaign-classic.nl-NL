@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 3%
@@ -15,7 +15,9 @@ ht-degree: 3%
 
 # Een aanbieding maken{#creating-an-offer}
 
-## De aanbieding {#creating-the-offer} maken
+![](../../assets/v7-only.svg)
+
+## De aanbieding maken {#creating-the-offer}
 
 Voer de volgende stappen uit om een aanbieding te maken:
 
@@ -39,7 +41,7 @@ Voer de volgende stappen uit om een aanbieding te maken:
 
    ![](assets/offer_create_004.png)
 
-## Aanbiedingsgeschiktheid configureren {#configuring-offer-eligibility}
+## Geschiktheid van aanbieding configureren {#configuring-offer-eligibility}
 
 Definieer op het tabblad **[!UICONTROL Eligibility]** voor welke periode de aanbieding geldig is en kan worden weergegeven, welke filters op het doel en het aanbiedingsgewicht moeten worden toegepast.
 
@@ -109,7 +111,7 @@ Voer de volgende stappen uit om een dikte in een aanbieding te maken:
    >
    >Als een doel in aanmerking komt voor meerdere gewichten voor een geselecteerde aanbieding, behoudt de motor het beste (hoogste) gewicht. Bij het oproepen van de aanbiedingsmotor, wordt een aanbieding een maximum van eens per contact geselecteerd.
 
-### Overzicht van de regels voor het in aanmerking komen voor aanbiedingen {#a-summary-of-offer-eligibility-rules}
+### Samenvatting van de regels inzake de subsidiabiliteit van aanbiedingen {#a-summary-of-offer-eligibility-rules}
 
 Zodra de configuratie is voltooid, zal een samenvatting van de subsidiabiliteitsregels beschikbaar zijn op het biederdashboard.
 
@@ -117,7 +119,7 @@ Klik op de koppeling **[!UICONTROL Schedule and eligibility rules]** om deze wee
 
 ![](assets/offer_eligibility_create_005.png)
 
-## Aanbiedingsinhoud maken {#creating-the-offer-content}
+## De inhoud van de aanbieding maken {#creating-the-offer-content}
 
 1. Klik op de tab **[!UICONTROL Edit]** en klik vervolgens op de tab **[!UICONTROL Content]**.
 
@@ -155,7 +157,7 @@ Klik op de koppeling **[!UICONTROL Schedule and eligibility rules]** om deze wee
 
    In dit voorbeeld moet de aanbieding een titel, een afbeelding, HTML-inhoud en een doel-URL bevatten.
 
-## Voorvertoning van de aanbieding {#previewing-the-offer}
+## Voorbeeld van de aanbieding bekijken {#previewing-the-offer}
 
 Zodra de inhoud van uw voorstel is geconfigureerd, kunt u een voorbeeld van het voorstel bekijken zoals het voor de ontvanger wordt weergegeven. Dit doet u als volgt:
 
@@ -171,7 +173,7 @@ Zodra de inhoud van uw voorstel is geconfigureerd, kunt u een voorbeeld van het 
 
    ![](assets/offer_preview_create_003.png)
 
-## Een hypothese maken over een aanbieding {#creating-a-hypothesis-on-an-offer}
+## Het creëren van een hypothese over een aanbieding {#creating-a-hypothesis-on-an-offer}
 
 Je kunt hypothesen maken voor je voorstellen. Hiermee kunt u de gevolgen van uw aanbiedingen voor de aankopen van het betrokken product bepalen.
 
@@ -181,6 +183,6 @@ Je kunt hypothesen maken voor je voorstellen. Hiermee kunt u de gevolgen van uw 
 
 Op het tabblad **[!UICONTROL Measure]** wordt verwezen naar hypothesen die zijn uitgevoerd op een aanbiedingsvoorstel.
 
-Het maken van hypothesen wordt beschreven in [deze pagina](../../campaign/using/about-response-manager.md).
+Het maken van hypothesen wordt beschreven in [deze pagina](../../response/using/about-response-manager.md).
 
 ![](assets/offer_hypothesis_001.png)

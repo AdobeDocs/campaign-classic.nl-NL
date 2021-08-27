@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # Interaction- en aanbiedingenbeheer{#interaction-and-offer-management}
+
+![](../../assets/v7-only.svg)
 
 De interactie laat u in echt - tijd tijdens een interactie met een bepaald contact (een klant of een doel) antwoorden door hen één of verscheidene aangepaste aanbiedingen te maken. Dit kunnen bijvoorbeeld eenvoudige communicatieberichten, speciale aanbiedingen voor een of meerdere producten of een service zijn.
 

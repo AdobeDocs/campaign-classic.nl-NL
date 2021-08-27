@@ -5,7 +5,7 @@ description: Een streepjescode invoegen in een e-mail
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 
 
 # Een streepjescode invoegen in een e-mail{#inserting-a-barcode-in-an-email}
+
+![](../../assets/common.svg)
 
 Met de module voor het genereren van streepjescodes kunt u verschillende typen streepjescodes maken die voldoen aan veel gangbare normen, waaronder 2D-streepjescodes.
 

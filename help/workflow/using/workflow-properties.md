@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: c7bff902-4f5d-4783-aec4-13561fa7d242
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '551'
 ht-degree: 1%
 
 ---
 
 # Workfloweigenschappen{#workflow-properties}
+
+![](../../assets/common.svg)
 
 ## Tabblad Uitvoering {#execution-tab}
 
@@ -39,7 +41,7 @@ Deze sectie wordt alleen weergegeven in workflows voor campagnes.
 
    Als uw installatie meerdere workflowservers bevat, gebruikt u dit veld om de computer te kiezen waarop de workflow wordt uitgevoerd. Als de waarde die in dit veld wordt gedefinieerd, op geen enkele server bestaat, blijft de workflow in behandeling.
 
-   Zie deze [sectie](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
+   Raadpleeg deze [Campaign Classic v7-installatiehandleiding](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
 
 * **[!UICONTROL History in days]**
 

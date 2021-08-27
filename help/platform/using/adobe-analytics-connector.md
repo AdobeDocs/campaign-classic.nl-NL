@@ -3,18 +3,20 @@ solution: Campaign Classic
 product: campaign
 title: Adobe Analytics Connector
 description: Meer informatie over Adobe Analytics Connector
-feature: Overzicht
+feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1550'
 ht-degree: 100%
 
 ---
 
 # Adobe Analytics Connector{#adobe-analytics-connector}
+
+![](../../assets/common.svg)
 
 ## De integratie van Adobe Analytics Connector {#about-analytics-connector-integration}
 
@@ -243,7 +245,6 @@ Ze zijn beschikbaar in de Adobe Campaign-structuur, onder de map **[!UICONTROL A
    * **[!UICONTROL Tag 2]** (webAnalytics/@tag2)
    * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
    * **[!UICONTROL Contact date]** (scheduling/@contactDate)
-
 
 
 ## Leveringen bijhouden in Adobe Campaign {#tracking-deliveries-in-adobe-campaign}

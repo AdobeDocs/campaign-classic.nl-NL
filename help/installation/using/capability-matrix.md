@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
-# Capability matrix per model{#capability-matrix-per-model}
+# Capaciteitsmatrix per model{#capability-matrix-per-model}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign Classic wordt geleverd met een reeks modules en opties. De beschikbaarheid van deze modules en hun gebruik kunnen van het type van plaatsing van uw installatie afhangen. In dit artikel worden enkele details weergegeven over de belangrijkste verschillen tussen volledig gehoste (Managed Services) en on-premise implementaties voor bepaalde functies.
 
@@ -39,7 +41,7 @@ De verschillende ontvangende modellen worden geïntroduceerd [in deze sectie](..
 | LDAP-verificatie configureren | Niet beschikbaar | Beschikbaar | Beschikbaar | [Meer informatie](../../installation/using/connecting-through-ldap.md) |
 
 
-## Federale gegevenstoegang{#fda}
+## Federated Data Access{#fda}
 
 Adobe Campaign biedt de optie **Federated Data Access** (FDA) om informatie te verwerken die is opgeslagen in een of meer externe databases: u hebt toegang tot externe gegevens zonder de structuur van Adobe Campaign-gegevens te wijzigen. [Meer informatie](../../installation/using/about-fda.md)
 
@@ -53,6 +55,6 @@ Adobe Campaign biedt de optie **Federated Data Access** (FDA) om informatie te v
 * [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md)
 * [Release-opmerkingen](../../rn/using/latest-release.md)
 * [Campaign Classic upgrades](../../rn/using/rn-overview.md)
-* [Verouderde en verwijderde functies](../../rn/using/deprecated-features.md)
+* [Afgeschafte en verwijderde functies](../../rn/using/deprecated-features.md)
 * [[!DNL Gold Standard]-releases ](../../rn/using/gold-standard.md)
 * [[!DNL Gold Standard] programma](../../rn/using/gs-overview.md)

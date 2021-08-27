@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 3%
@@ -15,6 +15,8 @@ ht-degree: 3%
 
 # Een aanbieding integreren via een workflow{#integrating-an-offer-via-a-workflow}
 
+![](../../assets/v7-only.svg)
+
 Buiten de leveringsactiviteit zelf, staan verscheidene werkschemaactiviteiten u toe om de manier te bepalen de aanbiedingen worden voorgesteld:
 
 * Overzicht van levering
@@ -22,7 +24,7 @@ Buiten de leveringsactiviteit zelf, staan verscheidene werkschemaactiviteiten u 
 * Aanbiedingsengine
 * Aanbiedingen per cel
 
-## Overzicht van levering  {#delivery-outline}
+## Overzicht van levering {#delivery-outline}
 
 Met de overzichtsactiviteit van de levering, die beschikbaar is in de workflows van de campagne, kunt u aanbiedingen presenteren waarnaar wordt verwezen in een leveringsoverzicht van de lopende campagne.
 
@@ -62,7 +64,7 @@ Er zijn twee methoden om voorstellen voor aanbiedingen op te geven.
 * Het specificeren van een aanbieding of een vraag van de aanbiedingsmotor.
 * Verwijzen naar een koppeling naar een aanbieding.
 
-### Een aanbieding of een vraag aan de aanbiedingsmotor {#specifying-an-offer-or-a-call-to-the-offer-engine} specificeren
+### Het specificeren van een aanbieding of een vraag aan de aanbiedingsmotor {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
 Na het vormen van uw vraag (verwijs naar [de gids van Werkschema](../../workflow/using/query.md)):
 
@@ -111,7 +113,7 @@ Hiervoor gebruikt u het volgende proces:
    >
    >Het aantal voorvertoningen dat beschikbaar is voor de voorvertoning, is afhankelijk van de configuratie die in de levering wordt uitgevoerd.
 
-### Opslag aanbiedingsclassificaties en gewichten {#storing-offer-rankings-and-weights}
+### Opslaan van rankings- en gewichten voor aanbiedingen {#storing-offer-rankings-and-weights}
 
 Wanneer een **verrijking**-activiteit wordt gebruikt om aanbiedingen te leveren, worden de rangschikking en het gewicht van de aanbiedingen niet in de tabel met voorstellen opgeslagen.
 

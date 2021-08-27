@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: fb4798d7-0a2c-455b-86b6-3dcb5fd25c82
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 4%
@@ -15,9 +15,11 @@ ht-degree: 4%
 
 # Applicatieobjecten{#application-objects}
 
+![](../../assets/v7-only.svg)
+
 Ingebouwde objecten moeten worden gecontroleerd en voorkomen dat ze te veel groeien is belangrijk.
 
-## Reeks id&#39;s {#sequence-of-ids}
+## Volgorde van id&#39;s {#sequence-of-ids}
 
 Adobe Campaign gebruikt een id-reeks die dienovereenkomstig moet worden gebruikt: **xtkNewId**. Als de reeks zeer snel wordt verbruikt (d.w.z. van 100.000 per dag), moet u verifiëren dat het met uw bedrijfsvereisten, zoals het verzenden van miljoenen e-mails per dag verenigbaar is. Het is mogelijk om een specifieke opeenvolging voor bepaalde lijsten te bepalen. U kunt een workflow instellen om het gebruik van de id te controleren.
 
@@ -49,7 +51,7 @@ De werkschema&#39;s van de invoer leiden tot dossiers en veroorzaken daarom schi
 
 Als een werkstroom bestanden importeert en geen gebruik maakt van de standaardfuncties, moet deze worden leeggemaakt om schijfruimte tot een minimum te beperken.
 
-## Transactiegegevens en -logbestanden {#transactional-data-and-logs}
+## Transactionele gegevens en logboeken {#transactional-data-and-logs}
 
 Elke [werkstroom](../../workflow/using/data-life-cycle.md#work-table) die gegevens in Adobe Campaign invoert veroorzaakt de grootte van het gegevensbestand om te groeien.
 

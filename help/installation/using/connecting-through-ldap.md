@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # Verbinding maken via LDAP{#connecting-through-ldap}
 
-## Campagne en LDAP {#configuring-campaign-and-ldap} configureren
+![](../../assets/v7-only.svg)
+
+## Campagne en LDAP configureren {#configuring-campaign-and-ldap}
 
 >[!NOTE]
 >
@@ -92,7 +94,7 @@ Welke systemen compatibel zijn, is afhankelijk van het geselecteerde verificatie
  </tbody> 
 </table>
 
-## Berekening van opgegeven naam {#distinguished-name-calculation}
+## Berekening van Distinguished Name {#distinguished-name-calculation}
 
 Als u wenst om de Distinguished Name (DN) herkenningstekens gegevens te verwerken, laat de volgende stap van de plaatsingstovenaar u de berekeningswijze vormen.
 
@@ -137,7 +139,7 @@ Als u verkiest om naar een herkenningsteken te zoeken, laat de plaatsingstovenaa
 
 * Met het veld **[!UICONTROL Filter]** kunt u een element opgeven om het bereik van de zoekopdracht te verfijnen.
 
-## LDAP-machtigingen {#configuring-ldap-authorizations} configureren
+## LDAP-machtigingen configureren {#configuring-ldap-authorizations}
 
 Dit venster wordt weergegeven wanneer u de optie **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** selecteert.
 
@@ -159,7 +161,7 @@ U moet verschillende parameters opgeven om de groep of groepen te vinden waartoe
 
 Klik **[!UICONTROL Save]** om het configureren van de instantie te voltooien.
 
-## Operatoren {#managing-operators} beheren
+## Operatoren beheren {#managing-operators}
 
 Nadat u de configuratie hebt bevestigd, moet u bepalen welke Adobe Campaign-operatoren via de LDAP-directory worden beheerd.
 

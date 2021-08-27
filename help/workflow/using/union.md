@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 1cda3146-c333-4743-a871-c44583b6e5b2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 1%
@@ -15,15 +15,17 @@ ht-degree: 1%
 
 # Samenvoegen{#union}
 
+![](../../assets/common.svg)
+
 Een vereniging groepeert het resultaat van verscheidene binnenkomende activiteiten in één enkel doel. Het doel wordt gemaakt met alle ontvangen resultaten: alle eerdere activiteiten moeten derhalve worden voltooid voordat de unie kan worden uitgevoerd .
 
 ![](assets/s_user_segmentation_union.png)
 
 >[!NOTE]
 >
->Raadpleeg [Verschillende doelen combineren (Union)](../../workflow/using/targeting-data.md#combining-several-targets--union-) voor meer informatie over het configureren en gebruiken van de samenvoegingsactiviteit.
+>Raadpleeg [Verschillende doelen combineren (Union)](targeting-data.md#combining-several-targets--union-) voor meer informatie over het configureren en gebruiken van de samenvoegingsactiviteit.
 
-## Voorbeeld van verenigen {#union-example}
+## Voorbeeld van Vereniging {#union-example}
 
 In het volgende voorbeeld zijn de resultaten van twee query&#39;s gecombineerd om de lijst bij te werken. De twee vragen richten zich op de ontvangers. De resultaten zijn derhalve gebaseerd op dezelfde tabel.
 
@@ -35,7 +37,7 @@ In het volgende voorbeeld zijn de resultaten van twee query&#39;s gecombineerd o
 
    Specificeer dit definitieve aantal door het maximumaantal ontvangers in te gaan en door de vraag te selecteren waarvan de bevolking prioriteit zal nemen.
 
-1. Goedkeuren van de samenvoegingsactiviteit en configureren vervolgens de update-activiteit van de lijst (zie [Update van lijst](../../workflow/using/list-update.md)).
+1. Goedkeuren van de samenvoegingsactiviteit en configureren vervolgens de update-activiteit van de lijst (zie [Update van lijst](list-update.md)).
 1. De workflow starten. Het aantal resultaten wordt weergegeven en de lijst die is gedefinieerd in de updateactiviteit van de lijst, wordt gemaakt of bijgewerkt. Deze lijst bevat de reeks ontvangers voor beide query&#39;s of, indien van toepassing, het nummer dat bij de vorige stap is gedefinieerd.
 
    ![](assets/union_example.png)

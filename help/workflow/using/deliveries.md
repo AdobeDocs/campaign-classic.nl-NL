@@ -5,7 +5,7 @@ description: Meer informatie over standaardleveringsworkflows
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 
 
 # Leveringen{#deliveries}
+
+![](../../assets/common.svg)
 
 De hieronder beschreven workflows worden geïnstalleerd met de **Deliveries** module door gebrek.
 
@@ -57,7 +59,7 @@ De hieronder beschreven workflows worden geïnstalleerd met de **Deliveries** mo
   <tr> 
    <td> <span class="uicontrol">Opschonen van gepauzeerde workflows</span> <br /> </td> 
    <td> <span class="uicontrol">cleanPausedWorkflows</span> <br /> </td> 
-   <td> <p>In deze workflow worden gepauzeerde workflows geanalyseerd waarvoor de ernst is ingesteld op Normaal en worden waarschuwingen en meldingen geactiveerd wanneer deze al te lang zijn gepauzeerd. Na een maand worden gepauzeerde technische workflows onvoorwaardelijk gestopt. Standaard wordt de activering elke maandag om 17.00 uur gestart.</p> <p>Raadpleeg <a href="../../workflow/using/monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">Handling van gepauzeerde workflows</a> voor meer informatie.</p></td> 
+   <td> <p>In deze workflow worden gepauzeerde workflows geanalyseerd waarvoor de ernst is ingesteld op Normaal en worden waarschuwingen en meldingen geactiveerd wanneer deze al te lang zijn gepauzeerd. Na een maand worden gepauzeerde technische workflows onvoorwaardelijk gestopt. Standaard wordt de activering elke maandag om 17.00 uur gestart.</p> <p>Raadpleeg <a href="monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">Handling van gepauzeerde workflows</a> voor meer informatie.</p></td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Melding voorstel</span> <br /> </td> 

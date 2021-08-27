@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # De database maken en configureren{#creating-and-configuring-the-database}
+
+![](../../assets/v7-only.svg)
 
 Als u een database maakt, biedt Adobe Campaign twee verschillende opties:
 
@@ -28,7 +30,7 @@ De configuratiestappen worden hieronder beschreven.
 >
 >Alleen de **internal**-id kan deze bewerkingen uitvoeren. Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#internal-identifier) voor meer informatie.
 
-## Zaak 1: Database {#case-1--creating-recycling-a-database} maken/recyclen
+## Zaak 1: Een database maken/recyclen {#case-1--creating-recycling-a-database}
 
 De stappen voor het creëren van een database of het recyclen van een bestaande basis worden hieronder beschreven. Sommige configuraties zijn afhankelijk van de gebruikte database-engine:
 
@@ -135,7 +137,7 @@ In het venster **[!UICONTROL Creation steps]** kunt u het SQL-script weergeven e
 
    We raden u aan om voor beveiligingsdoeleinden een Adobe Campaign-beheerderswachtwoord te definiëren.
 
-### Stap 6 - Het creëren van het gegevensbestand {#step-6---creating-the-database}
+### Stap 6 - De database maken {#step-6---creating-the-database}
 
 In het laatste werkgebied van de wizard kunt u de database maken. Klik **[!UICONTROL Start]** om te bevestigen.
 
@@ -153,7 +155,7 @@ Voorbeeld van een configuratie van de Server van Microsoft SQL op base61 gegeven
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
 ```
 
-## Zaak 2: Bestaande database {#case-2--using-an-existing-database} gebruiken
+## Zaak 2: Bestaande databases gebruiken {#case-2--using-an-existing-database}
 
 Het gegevensbestand, evenals de gebruiker, moet door de gegevensbestandbeheerder en de correct gevormde toegangsrechten zijn gecreeerd.
 
@@ -226,7 +228,7 @@ In het venster **[!UICONTROL Creation steps]** kunt u het SQL-script weergeven e
 
    We raden u aan om voor beveiligingsdoeleinden een Adobe Campaign-beheerderswachtwoord te definiëren.
 
-### Stap 5 - het Creëren van het gegevensbestand {#step-5---creating-the-database}
+### Stap 5 - De database maken {#step-5---creating-the-database}
 
 In het laatste werkgebied van de wizard kunt u de database maken. Klik **[!UICONTROL Start]** om te bevestigen.
 

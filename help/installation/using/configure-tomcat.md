@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf,b4a422b4-4b8b-4883-8d74-0dccda4a5ef3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
 
 ---
 
-# Apache Tomcat {#configuring-tomcat} configureren
+# Apache Tomcat configureren {#configuring-tomcat}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign gebruikt een **ingesloten webserver met de naam Apache Tomcat** om HTTP/HTTPS-aanvragen tussen de toepassing en elke externe interface te verwerken (zoals Client Console, bijgehouden URL-koppelingen, SOAP-aanroepen en andere). Er is vaak een externe webserver (meestal IIS of Apache) voor deze server voor naar buiten gerichte Adobe Campaign-instanties.
 
@@ -22,7 +24,6 @@ Meer informatie over Tomcat in Campaign en hoe u uw Tomcat-versie kunt vinden op
 >[!NOTE]
 >
 >Deze procedure is beperkt tot **on-premise** plaatsingen.
-
 
 ## Standaardpoort voor Apache Tomcat {#default-port-for-tomcat}
 

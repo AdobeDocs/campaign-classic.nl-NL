@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '3972'
+source-wordcount: '3991'
 ht-degree: 1%
 
 ---
 
 # Lijst met Campaign Classic-opties{#configuring-campaign-options}
+
+![](../../assets/v7-only.svg)
 
 Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Adobe Campaign-opties configureren. Sommige hiervan zijn ingebouwd tijdens de installatie van Campagne en andere kunnen handmatig worden toegevoegd wanneer dat nodig is. Welke opties beschikbaar zijn, is afhankelijk van de pakketten die bij de instantie worden geïnstalleerd.
 
@@ -21,9 +23,8 @@ Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Ad
 >[!CAUTION]
 >
 >* De opties die niet in deze pagina worden vermeld, zijn alleen intern en **mag niet worden gewijzigd**.
-   >
-   >
-* U kunt Adobe Campaign-opties alleen wijzigen of bijwerken door experts.
+>
+>* U kunt Adobe Campaign-opties alleen wijzigen of bijwerken door experts.
 
 
 ## Levering {#delivery}
@@ -52,6 +53,10 @@ Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Ad
    <td> <span class="uicontrol">DmRendering_SeedTargets</span> <br /> </td> 
    <td> Lijst van schema's waarvoor u testadressen voor het Teruggeven Inbox wilt gebruiken. (elementnamen worden met komma's van elkaar gescheiden), bijvoorbeeld: custom_nms_receiving.<br /> </td> 
   </tr> 
+  <tr> 
+   <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
+   <td> BCC e-mailadres waarnaar de verbeterde MTA een onbewerkte kopie van de verzonden e-mails verzendt. <br /> </td> 
+  </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
    <td><p> Hiermee kunt u toestaan dat de exploitant die verantwoordelijk is voor de levering de verzending bevestigt, als een specifieke exploitant of groep exploitanten is aangewezen voor het starten van een levering in de eigendommen van de levering.</p><p> Hiervoor activeert u de optie door "1" als waarde in te voeren. Voer 0 in om deze optie te deactiveren.</p><p> Het proces voor bevestiging verzenden werkt dan als standaard: alleen de exploitant of groep van exploitanten die voor de verzending zijn aangewezen in de leveringseigenschappen (of een beheerder) kan de verzending bevestigen en uitvoeren. Zie <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">deze sectie</a>.</p> </td> 
@@ -443,7 +448,7 @@ Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Ad
  </tbody> 
 </table>
 
-## Berichtmidden {#message-center}
+## Berichtencentrum {#message-center}
 
 <table> 
  <thead> 
@@ -732,7 +737,7 @@ Met het knooppunt **[!UICONTROL Administration / Platform / Options]** kunt u Ad
    <td> Deze optie wordt gebruikt wanneer het invoeren van gegevens van een derdesysteem door een schakelaar van CRM. Als u de optie inschakelt, kunt u alleen objecten verzamelen die zijn gewijzigd sinds de laatste importbewerking. Deze optie moet handmatig worden gemaakt en als volgt worden ingevuld: 
     <ul> 
      <li> <p> <span class="uicontrol">Interne naam</span> : LASTIMPORT_&lt;&gt;_&lt;&gt;</p> </li> 
-     <li> <p> <span class="uicontrol">Waarde (veld)</span> : datum van de laatste invoer, met de notatie jjjj/MM/dd uu:mm:ss. </p> </li> 
+     <li> <p> <span class="uicontrol">Waarde (veld)</span> : datum van de laatste invoer, met de notatie jjjj/MM/dd :mm:hss. </p> </li> 
     </ul><br /> </td> 
   </tr> 
   <tr> 

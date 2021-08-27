@@ -6,21 +6,23 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
 # Voorwaardelijke content{#conditional-content}
+
+![](../../assets/common.svg)
 
 Door voorwaardelijke inhoudsgebieden te vormen, kunt u dynamische verpersoonlijking tot stand brengen die op het profiel van de ontvanger bijvoorbeeld wordt gebaseerd. Tekstblokken en/of afbeeldingen worden vervangen wanneer aan een bepaalde voorwaarde wordt voldaan.
 
 ![](assets/do-not-localize/how-to-video.png) [Ontdek deze functie in video](#conditionnal-content-video)
 
 
-## Voorwaarden gebruiken in een e-mail {#using-conditions-in-an-email}
+## Voorwaarden in een e-mail gebruiken {#using-conditions-in-an-email}
 
 In het onderstaande voorbeeld leert u hoe u een boodschap kunt maken die dynamisch is gepersonaliseerd op basis van het geslacht en de belangen van de ontvanger.
 
@@ -75,7 +77,7 @@ Klik op **[!UICONTROL Preview]** en selecteer een ontvanger om de voorwaardelijk
 
 ![](assets/s_ncs_user_conditional_content08.png)
 
-## Meertalige e-mail {#creating-multilingual-email} maken
+## Meertalige e-mail maken {#creating-multilingual-email}
 
 In het onderstaande voorbeeld leert u hoe u een meertalige e-mail kunt maken. De inhoud wordt in de ene of de andere taal weergegeven, afhankelijk van de voorkeurstaal van de ontvanger.
 
@@ -109,7 +111,7 @@ In het onderstaande voorbeeld leert u hoe u een meertalige e-mail kunt maken. De
 
 ## Video over zelfstudie {#conditionnal-content-video}
 
-Leer hoe u voorwaardelijke inhoud aan een levering kunt toevoegen op het voorbeeld van een meertalige nieuwsbrief.
+Deze video laat zien hoe u voorwaardelijke content aan een levering kunt toevoegen, bijvoorbeeld aan een meertalige nieuwsbrief.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 

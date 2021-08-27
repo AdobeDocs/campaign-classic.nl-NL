@@ -2,18 +2,20 @@
 product: campaign
 title: Query’s in Campaign
 description: Query’s in Campaign
-feature: Query-editor
+feature: Query Editor
 role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 83%
+source-wordcount: '177'
+ht-degree: 84%
 
 ---
 
 # Aan de slag met query&#39;s{#about-queries-in-campaign}
+
+![](../../assets/common.svg)
 
 U vindt de Adobe Campaign-querytool op meerdere niveaus van de software: om een doelpopulatie te maken, klanten te segmenteren, trackinglogboeken te extraheren en filteren, filters te bouwen, enzovoort.
 

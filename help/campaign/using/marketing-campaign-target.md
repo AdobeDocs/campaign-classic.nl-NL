@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # De doelgroep van uw campagnes selecteren {#marketing-campaign-deliveries}
+
+![](../../assets/common.svg)
 
 In een marketingcampagne kunt u voor elke levering het volgende definiëren:
 
@@ -39,7 +41,7 @@ U kunt een populatie in een lijst importeren en deze lijst vervolgens als doel i
 
 ![](assets/s_user_target_group_next.png)
 
-## Het publiek opbouwen in een campagneworkflow {#building-the-main-target-in-a-workflow}
+## Het publiek samenstellen in een campagneworkflow {#building-the-main-target-in-a-workflow}
 
 Het hoofddoel van een levering kan ook in de campagnewerkstroom worden bepaald: in deze grafische omgeving kunt u een doel maken met behulp van query&#39;s, tests en operatoren: verenigen, dedupliceren, delen, enz.
 
@@ -47,7 +49,7 @@ Het hoofddoel van een levering kan ook in de campagnewerkstroom worden bepaald: 
 >
 >U mag niet meer dan 28 workflows toevoegen aan een campagne. Buiten deze limiet zijn extra workflows niet zichtbaar in de interface en kunnen fouten genereren.
 
-### De workflow {#creating-a-targeting-workflow} maken
+### De workflow maken {#creating-a-targeting-workflow}
 
 Het richten kan door een combinatie filtervoorwaarden in een grafische opeenvolging in een werkschema worden tot stand gebracht. U kunt populaties en subpopulaties maken die op basis van uw vereisten worden aangepast. Als u de werkstroomeditor wilt weergeven, klikt u op het tabblad **[!UICONTROL Targeting and workflows]** in het campagnedashboard.
 
@@ -167,13 +169,13 @@ Met de werkbalkpictogrammen kunt u actie ondernemen met betrekking tot de uitvoe
 
    ![](assets/s_user_segmentation_stop_unconditional.png)
 
-## Een besturingsgroep {#defining-a-control-group} toevoegen
+## Een controlegroep toevoegen {#defining-a-control-group}
 
 Een controlegroep is een populatie die de levering niet zal ontvangen; het wordt gebruikt om het gedrag en de impact van de campagne na de levering te volgen door een vergelijking te maken met het gedrag van de doelpopulatie, die de levering heeft ontvangen.
 
 De controlegroep kan uit het belangrijkste doel worden gehaald en/of uit een specifieke groep of een vraag komen.
 
-### De besturingsgroep voor een campagne activeren {#activating-the-control-group-for-a-campaign}
+### De controlegroep voor een campagne activeren {#activating-the-control-group-for-a-campaign}
 
 U kunt een controlegroep op campagneniveau bepalen, waarbij de controlegroep op elke levering van de betrokken campagne zal worden toegepast.
 
@@ -189,7 +191,7 @@ U kunt een controlegroep op campagneniveau bepalen, waarbij de controlegroep op 
 
 De configuratieprocedure wordt voorgesteld in [Het halen van de controlegroep van het belangrijkste doel](#extracting-the-control-group-from-the-main-target) en [het toevoegen van een controlegroep](#adding-a-population).
 
-### Activeer de controlegroep voor een levering {#activating-the-control-group-for-a-delivery}
+### De controlegroep voor een levering activeren {#activating-the-control-group-for-a-delivery}
 
 U kunt een controlegroep op leveringsniveau bepalen, in welk geval de controlegroep op elke levering van de betrokken campagne zal worden toegepast.
 
@@ -208,7 +210,7 @@ Door gebrek, is de configuratie van de controlegroep die op het campagneniveau w
 
 De configuratieprocedure wordt voorgesteld in [Het halen van de controlegroep van het belangrijkste doel](#extracting-the-control-group-from-the-main-target) en [het toevoegen van een controlegroep](#adding-a-population).
 
-### Extraheer de controlegroep van het belangrijkste doel {#extracting-the-control-group-from-the-main-target}
+### Extraheer de controlegroep uit het hoofddoel {#extracting-the-control-group-from-the-main-target}
 
 U kunt ontvangers extraheren uit het hoofddoel van de levering. In dit geval, zullen de ontvangers van het doel van leveringsacties worden genomen die door deze configuratie worden beïnvloed. Deze extractie kan willekeurig zijn of het resultaat zijn van het sorteren van de ontvangers.
 

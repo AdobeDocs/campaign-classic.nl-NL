@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2468'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Kosten beheersen{#controlling-costs}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign laat u geplande, geëngageerde en gefactureerde marketing kosten controleren en om hen door categorie te verdelen gebruikend de module van het Beheer van het Middel van de Marketing.
 

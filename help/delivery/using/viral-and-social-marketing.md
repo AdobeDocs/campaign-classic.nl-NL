@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # Viral en social marketing{#viral-and-social-marketing}
 
-## Informatie over virale marketing {#about-viral-marketing}
+![](../../assets/common.svg)
+
+## Virtuele marketing {#about-viral-marketing}
 
 Met Adobe Campaign kunt u gereedschappen instellen om het op de markt brengen van virussen aan te moedigen.
 
@@ -27,7 +29,7 @@ Hierdoor kunnen ontvangers van de levering of websitebezoekers gegevens delen me
 >
 >Voor het correct functioneren van toegevoegde verbindingen, moet de passende spiegelpagina beschikbaar zijn. Hiervoor neemt u de koppeling naar de spiegelpagina op in de levering.
 
-## Sociale netwerken: delen, een koppeling {#social-networks--sharing-a-link}
+## Sociale netwerken: delen, koppeling {#social-networks--sharing-a-link}
 
 Om leveringsontvangers toe te laten om de inhoud van berichten met leden van hun netwerk te delen, moet u het passende verpersoonlijkingsblok omvatten.
 

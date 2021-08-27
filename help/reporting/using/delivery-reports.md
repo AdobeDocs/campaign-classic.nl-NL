@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Leveringsrapporten {#delivery-reports}
+
+![](../../assets/common.svg)
 
 U kunt de uitvoering van leveringen bijhouden via verschillende rapporten die toegankelijk zijn vanuit het leveringsoverzicht. Pas de volgende procedure toe om rapporten weer te geven:
 
@@ -182,7 +184,7 @@ Dit rapport toont de berichtinhoud (HTML en/of tekst) met, op elke verbinding, h
 
 ![](assets/s_ncs_user_clic_report.png)
 
-## Statistieken {#tracking-statistics} bijhouden
+## Trackingstatistieken {#tracking-statistics}
 
 Dit rapport bevat statistieken over openen, klikken en transacties.
 

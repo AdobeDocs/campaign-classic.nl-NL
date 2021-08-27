@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 0%
 
 ---
 
-# Toegang tot Teradata {#configure-access-to-teradata} configureren
+# Toegang tot Teradata configureren {#configure-access-to-teradata}
+
+![](../../assets/v7-only.svg)
 
 Gebruik de optie Campagne [Federated Data Access](../../installation/using/about-fda.md) (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Teradata te configureren.
 
@@ -21,7 +23,7 @@ Gebruik de optie Campagne [Federated Data Access](../../installation/using/about
 1. De Teradata [externe account](#teradata-external) configureren in campagne
 1. [extra configuratie](#teradata-additional-configurations) instellen voor Teradata- en Campagneserver
 
-## Teradata configuratie {#teradata-config}
+## Configuratie van teradata {#teradata-config}
 
 U moet stuurprogramma&#39;s installeren voordat Teradata verbinding kan maken met de campagne.
 
@@ -66,10 +68,9 @@ U moet stuurprogramma&#39;s installeren voordat Teradata verbinding kan maken me
 
 >[!NOTE]
 >
->Als u verbinding maakt met een externe Teradata-database in FDA, hebt u aanvullende configuratiestappen nodig op de Adobe Campaign-server. [Meer informatie](#teradata-additional-configurations).
+>Als u verbinding maakt met een externe Teradata-database in FDA, hebt u aanvullende configuratiestappen nodig op de Adobe Campaign-server. [Meer info](#teradata-additional-configurations).
 
-
-## Externe account voor teradata{#teradata-external}
+## Externe rekening teradata{#teradata-external}
 
 Met de externe account van Teradata kunt u uw Campagne-instantie verbinden met uw externe database van Teradata.
 
@@ -230,7 +231,7 @@ U installeert als volgt udf_utf16to8:
    SELECT CAST(Char2HexInt(UDF_UTF16to8(_UNICODE'004100000042'XC)) AS VARCHAR(100));
    ```
 
-## Configuratie van campagneserver voor Linux {#campaign-server-linux}
+## Configuratie van de campagnereserver voor Linux {#campaign-server-linux}
 
 Voor de installatie van het stuurprogramma is het volgende vereist:
 
@@ -282,7 +283,7 @@ Gereedschappen installeren:
 
 1. Een bestand libtelapi.so moet beschikbaar zijn in /opt/teradata/client/16.20/lib64.
 
-## Configuratie campagneserver voor Windows {#campaign-server-windows}
+## Configuratie van de campagneserver voor Windows {#campaign-server-windows}
 
 U moet eerst Teradata Tools en Hulpprogramma&#39;s voor Vensters downloaden. U kunt het van deze [pagina](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-windows-installation-package) downloaden
 

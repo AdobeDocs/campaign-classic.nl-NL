@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 8b6d5c03-e104-4cf0-82ab-a08467e3e478
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # AND-join{#and-join}
+
+![](../../assets/common.svg)
 
 Verbinden teweegbrengt zijn uitgaande overgang slechts teweeg wanneer alle binnenkomende overgangen worden geactiveerd, d.w.z. wanneer alle vroegere activiteiten worden gebeëindigd. Op deze manier kunt u ervoor zorgen dat bepaalde activiteiten zijn voltooid voordat u doorgaat met het uitvoeren van de workflow.
 
@@ -31,4 +33,4 @@ De uitgaande overgang kan slechts één van de binnenkomende overgangspopulaties
 
 >[!CAUTION]
 >
->In het geval van **AND-join** type activiteiten, worden de gebeurtenisvariabelen samengevoegd maar als één variabele tweemaal wordt bepaald, is er een conflict en de waarde blijft onbepaald. Raadpleeg [deze sectie](../../workflow/using/javascript-scripts-and-templates.md#event-variables) voor meer informatie.
+>In het geval van **AND-join** type activiteiten, worden de gebeurtenisvariabelen samengevoegd maar als één variabele tweemaal wordt bepaald, is er een conflict en de waarde blijft onbepaald. Raadpleeg [deze sectie](javascript-scripts-and-templates.md#event-variables) voor meer informatie.

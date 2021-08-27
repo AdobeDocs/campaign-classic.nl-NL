@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Goedkeuring{#approval}
+
+![](../../assets/common.svg)
 
 Een **Goedkeuring** taak vereist de participatie van een exploitant. De operator krijgt een taak toegewezen en kan per e-mail reageren met de webpagina die is gekoppeld in het e-mailbericht of via de console.
 
@@ -63,7 +65,7 @@ Klik op de koppeling **[!UICONTROL Advanced parameters...]** om de leveringssjab
 
 Deze sjabloon kan worden gewijzigd om de berichtlay-out aan te passen, maar u kunt het beste een kopie maken. Het doelmechanisme (extern bestand, doeltoewijzing) mag niet worden gewijzigd omdat meldingen correct moeten werken.
 
-Een goedkeuringsvoorbeeld wordt getoond in [Bepalend goedkeuringen](../../workflow/using/defining-approvals.md).
+Een goedkeuringsvoorbeeld wordt getoond in [Bepalend goedkeuringen](defining-approvals.md).
 
 ## Uitvoerparameters {#output-parameters}
 

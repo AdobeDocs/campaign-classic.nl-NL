@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 1f1004e2-dcd2-4ec5-98ec-720c205646d5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # SpamAssassin configureren{#configuring-spamassassin}
+
+![](../../assets/v7-only.svg)
 
 >[!NOTE]
 >
@@ -44,7 +46,7 @@ Voer de volgende stappen uit om SpamAssassin in Windows te installeren en te con
 1. SpamAssassin installeren
 1. SpamAssassin integreren in Adobe Campaign
 
-### SpamAssassin {#installing-spamassassin} installeren
+### SpamAssassin installeren {#installing-spamassassin}
 
 1. Verbind met [de portal van de softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) gebruikend uw gebruikersgeloofsbrieven. Meer informatie over softwaredistributie vindt u op [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 1. Download het bestand **Neolane Spam Assassin (Windows-installatie) (2.0)** (neolane_spammurin.2.0.zip).
@@ -134,7 +136,7 @@ Voer de volgende stappen uit om SpamAssassin in Windows te installeren en te con
    sa-update --no-gpg
    ```
 
-## Installatie op een Linux-computer {#installing-on-a-linux-machine}
+## Installeren op een Linux-computer {#installing-on-a-linux-machine}
 
 ### Installatiestappen in Debian {#installation-steps-in-debian}
 
@@ -165,7 +167,7 @@ cpan XML::Writer
 cpan Mail::SpamAssassin
 ```
 
-### Filterregels {#updating-filter-rules} bijwerken
+### Filterregels bijwerken {#updating-filter-rules}
 
 Filterregels kunnen automatisch worden bijgewerkt met het gereedschap **sa-update**. Raadpleeg de officiële SpamAssassin-website [http://spamassassin.apache.org/](http://spamassassin.apache.org/) voor meer informatie.
 
@@ -185,7 +187,7 @@ Voeg dit script in **crontab** in met de volgende opdracht:
 crontab-e
 ```
 
-### Prestaties optimaliseren {#performance-optimization}
+### Optimalisatie van prestaties {#performance-optimization}
 
 Als u de prestaties in Linux wilt verbeteren, bewerkt u het bestand **/etc/spamassassin/local.cf** en voegt u de volgende regel toe aan het einde van het bestand:
 

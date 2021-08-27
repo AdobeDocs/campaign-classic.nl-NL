@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: f9dd9ad6-48da-4a80-9405-109a433a1ed5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # Presentatieregels{#presentation-rules}
 
-## Presentatieregel {#creating-a-presentation-rule} maken
+![](../../assets/v7-only.svg)
+
+## Presentatieregel maken {#creating-a-presentation-rule}
 
 In onze databank staan verschillende reisaanbiedingen voor Europa, Afrika, de Verenigde Staten en Canada. We willen voorstellen verzenden voor een reis naar Canada, maar als de ontvanger dit soort aanbiedingen weigert, willen we ze niet meer sturen
 
@@ -76,7 +78,7 @@ We gaan onze regels zodanig configureren dat de reis naar Canada slechts één k
 
    ![](assets/offer_typology_example_014.png)
 
-## De presentatieregel {#applying-the-presentation-rule} toepassen
+## De presentatieregel toepassen {#applying-the-presentation-rule}
 
 Hier volgt een voorbeeld van de eerder gemaakte typologieregel.
 

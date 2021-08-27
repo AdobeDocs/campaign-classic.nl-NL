@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: cc554d0d-bbab-4f72-b870-5fef5a2fda9d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Alle bezoeken verzamelen{#collecting-all-visits}
+
+![](../../assets/v7-only.svg)
 
 Met de webvolgmodule die door Adobe Campaign wordt geleverd, kunt u de bezoeken aan bepaalde pagina&#39;s van de site verzamelen die door een ontvanger worden uitgevoerd in de context van het bijhouden van sites nadat u een klik in een bericht hebt geplaatst.
 
@@ -29,7 +31,7 @@ Een gebruiker die aan het platform wordt bekend is een ontvanger die reeds door 
 
 De servers worden gevormd door bepaalde elementen van het **serverConf.xml** dossier te overbelasten. Deze bestanden worden opgeslagen in de submap **conf** van de installatiemap van Adobe Campaign.
 
-### Omleidingsserver {#redirection-server}
+### Redirection-server {#redirection-server}
 
 Voor de omleidingsserver, plaats **trackWebVisitors** attributen van **redirection** element aan **true**.
 
@@ -40,7 +42,7 @@ startRedirection="true" startRedirectionInModule="true" trackWebVisitors="true"
 trackingPassword=""
 ```
 
-## Een standaardaanpassingscampagne {#configuring-a-default-matching-campaign} configureren
+## Een standaard overeenkomende campagne configureren {#configuring-a-default-matching-campaign}
 
 Als u de trackinggegevens via uw clientconsole wilt weergeven, moet u:
 

@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 1%
 
 ---
 
-# Toegang tot Azure synapse {#configure-access-to-azure-synapse} configureren
+# Toegang tot Azure synapse configureren {#configure-access-to-azure-synapse}
+
+![](../../assets/v7-only.svg)
 
 Gebruik de optie Campagne [Federated Data Access](../../installation/using/about-fda.md) (FDA) om informatie te verwerken die is opgeslagen in externe databases. Volg de onderstaande stappen om toegang tot de Analytics van de Azure synapse van Microsoft te vormen.
 
@@ -126,7 +128,7 @@ Azure synapse in Windows configureren:
 
 1. Aangezien de Analytics van de Azure synapse door de haven van TCP 1433 meedeelt, moet u deze haven op de Firewall van de Verdediger van Vensters openen. Raadpleeg [Windows-documentatie](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule) voor meer informatie.
 
-## azure synapse op Debian {#azure-debian}
+## azure synapse over Debian {#azure-debian}
 
 **Vereisten:**
 
@@ -190,7 +192,7 @@ Om Azure synapse op Debian te vormen:
    >Om mededeling van de kant van de Analyse van de Azure synapse toe te staan zou u uw openbare IP aan de lijst van gewenste personen kunnen moeten toevoegen. Raadpleeg [Azure-documentatie](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules) om dit te doen.
 
 
-## Externe rekening {#azure-external} azure synapsen
+## Externe rekening azure synapse {#azure-external}
 
 Met de externe [!DNL Azure Synapse]-account kunt u uw Campagne-instantie verbinden met uw externe database van de Azure synapse.
 

@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Omgevingen dupliceren{#duplicating-environments}
+
+![](../../assets/v7-only.svg)
 
 ## Inleiding {#introduction}
 
@@ -47,7 +49,7 @@ Hiervoor voert u de volgende stappen uit:
    >Eén omgeving kan meerdere instanties bevatten. Elke Adobe Campaign-instantie is onderworpen aan een licentieovereenkomst. Controleer uw licentieovereenkomst om te zien hoeveel omgevingen u kunt hebben.\
    >Met de onderstaande procedure kunt u een omgeving overbrengen zonder dat dit invloed heeft op het aantal omgevingen en instanties dat u hebt geïnstalleerd.
 
-### Voordat u {#before-you-start} start
+### Voordat u begint {#before-you-start}
 
 >[!IMPORTANT]
 >
@@ -71,7 +73,6 @@ De volgende stappen moeten met grote zorg worden uitgevoerd: sommige processen z
 >
 
 
-
 ### Stap 1 - Maak een steun van de bronmilieu (prod) gegevens {#step-1---make-a-backup-of-the-source-environment--prod--data}
 
 De databases kopiëren
@@ -84,7 +85,7 @@ Onder PostgreSQL, is het bevel:
 pg_dump mydatabase > mydatabase.sql
 ```
 
-### Stap 2 - de configuratie van het doelmilieu (dev) {#step-2---export-the-target-environment-configuration--dev-} uitvoeren
+### Stap 2 - de configuratie van het doelmilieu (dev) uitvoeren {#step-2---export-the-target-environment-configuration--dev-}
 
 De meeste configuratieelementen zijn verschillend voor elke milieu: externe accounts (midsourcing, routering, enz.), technische opties (platformnaam, database-id, e-mailadressen en standaard-URL&#39;s, enz.).
 
@@ -146,7 +147,7 @@ Hiervoor gebruikt u het volgende proces:
 * In Windows: Open **Taakmanager** en controleer dat er geen **nlserver.exe** processen zijn.
 * In Linux: **ps aux uitvoeren | grep nlserver** opdracht en controleer of er geen **nlserver** processen zijn.
 
-### Stap 4 - herstel de gegevensbestanden in het doelmilieu (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
+### Stap 4 - Herstel de gegevensbestanden in het doelmilieu (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
 Om de brongegevensbestanden in het doelmilieu te herstellen, gebruik het volgende bevel:
 
@@ -164,7 +165,7 @@ Voer hiertoe de volgende opdracht uit:
 nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
 ```
 
-### Stap 6 - Controleren op sturing {#step-6---check-cauterization}
+### Stap 6 - Controle van de opwarming {#step-6---check-cauterization}
 
 1. Controleer of het enige leveringsgedeelte het gedeelte is waarvan de id is ingesteld op 0:
 
@@ -185,7 +186,7 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
    SELECT iStatus, count(*) FROM neolane.xtkworkflow GROUP BY iStatus;
    ```
 
-### Stap 7 - begin het proces van het Web van het doelmilieu (dev) {#step-7---restart-the-target-environment-web-process--dev-} opnieuw
+### Stap 7 - begin het proces van het Web van het doelmilieu (dev) opnieuw {#step-7---restart-the-target-environment-web-process--dev-}
 
 Start in de doelomgeving de Adobe Campaign-processen voor alle servers opnieuw.
 

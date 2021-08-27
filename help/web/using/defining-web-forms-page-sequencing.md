@@ -6,14 +6,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # De volgorde van webformulierpagina’s definiëren{#defining-web-forms-page-sequencing}
+
+![](../../assets/common.svg)
 
 Het formulier kan een of meer pagina&#39;s bevatten. Het wordt gebouwd door een diagram dat u opeenvolgende pagina&#39;s, het testen, manuscriptuitvoering, paginakijl en opnamestappen laat. De globale wijze van het diagramontwerp is het zelfde als voor een werkschema van de Campagne.
 

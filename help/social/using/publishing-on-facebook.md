@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: 84d6cb2e-c7f9-43d7-a98c-22613d456193
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1148'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # Publiceren op Facebook{#publishing-on-facebook}
+
+![](../../assets/v7-only.svg)
 
 Als de configuratie is voltooid, kunt u via Social Marketing publicaties op de muren van uw Facebook-pagina&#39;s plaatsen.
 
@@ -50,7 +52,7 @@ U moet de pagina(&#39;s) selecteren waarop u uw publicatie wilt plaatsen.
 
    ![](assets/social_facebook_delivery_013.png)
 
-## Proofingdoel {#selecting-the-proof-target} selecteren
+## Het proefdrukdoel selecteren {#selecting-the-proof-target}
 
 Op het tabblad **[!UICONTROL Target of the proofs]** kunt u de Facebook-pagina definiëren die u wilt gebruiken voor het testen van leveringen voordat u deze verzendt. We raden u aan hiervoor een speciale persoonlijke Facebook-pagina te maken. Raadpleeg [Een Facebook-testpagina maken](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page) voor meer informatie over het maken van een Facebook-privépagina. Als u het proefdrukdoel wilt selecteren, voert u dezelfde stappen uit als voor het hoofddoel: [Het hoofddoel selecteren](#selecting-the-main-target).
 
@@ -60,7 +62,7 @@ Op het tabblad **[!UICONTROL Target of the proofs]** kunt u de Facebook-pagina d
 >
 >Als u dezelfde Facebook-testpagina voor alle leveringen gebruikt, kunt u het proefdrukdoel opslaan in de leveringssjabloon **[!UICONTROL Publish to a brand page]**, die toegankelijk is via het knooppunt **[!UICONTROL Resources > Templates > Delivery templates]**. Het proefdrukdoel wordt standaard ingevoerd voor elke nieuwe levering.
 
-## Het publiek {#defining-the-audience} definiëren
+## Het publiek definiëren {#defining-the-audience}
 
 Als u lokale segmenten wilt gebruiken om het type openbaar te verfijnen dat is geautoriseerd om de publicatie te bekijken, raden we u aan één Facebook-pagina per segment te maken (bijvoorbeeld: Adobe Campaign Paris, Adobe Campaign London, enz.).
 
@@ -77,7 +79,7 @@ Het is echter ook mogelijk om de publieksfilters te gebruiken die door Facebook 
 >
 >Facebook kan de lijst met publieksfilters en de bijbehorende waarden wijzigen.
 
-## Inhoud van bericht {#defining-message-content} definiëren
+## Berichtinhoud definiëren {#defining-message-content}
 
 Selecteer het type publicatie in de vervolgkeuzelijst **[!UICONTROL Content type]**.
 
@@ -90,7 +92,7 @@ De volgende typen leveringen zijn beschikbaar:
 * a **[!UICONTROL Status with a YouTube link]**
 * a **[!UICONTROL Photo album]**
 
-### Een status {#publishing-a-status} publiceren
+### Een status publiceren {#publishing-a-status}
 
 Een levering van een statustype kan alleen tekst bevatten, zoals in het onderstaande voorbeeld:
 
@@ -100,7 +102,7 @@ Voer de publicatiestatus in de invoerzone in.
 
 ![](assets/social_facebook_delivery_015.png)
 
-### Een status publiceren met een koppeling {#publishing-a-status-with-a-link}
+### Een status met een koppeling publiceren {#publishing-a-status-with-a-link}
 
 Een levering van het statustype met een koppeling kan tekst, afbeeldingen en een koppeling bevatten. In de volgende sectie wordt de symmetrie beschreven tussen de velden van het bewerkingsscherm en de laatste publicatie op Facebook:
 
@@ -158,7 +160,7 @@ Voer de verschillende velden in:
 
 ![](assets/social_facebook_delivery_youtube.png)
 
-### Een fotoalbum {#publishing-a-photo-album} publiceren
+### Een fotoalbum publiceren {#publishing-a-photo-album}
 
 Met dit type inhoud kunt u een fotoalbum publiceren. U kunt voor elke foto een naam en een beschrijving voor het album en een bijschrift toevoegen. De symmetrieën tussen de velden van het bewerkingsscherm van de levering en de definitieve publicatie op Facebook worden hieronder beschreven:
 
@@ -188,7 +190,7 @@ Met het tabblad **[!UICONTROL Preview]** kunt u de rendering van de publicatie w
 >
 >De voorvertoning kan iets afwijken van de uiteindelijke Facebook-publicatie. We raden u aan vóór de definitieve levering een bewijs te verzenden voor een exacte weergave van de publicatie. Zie [De proefdruk verzenden](#sending-the-proof).
 
-## Reeksspatiëring {#configuring-tracking} configureren
+## Tekstspatiëring configureren {#configuring-tracking}
 
 Het volgen kan in de leveringsrapporten en op **[!UICONTROL Edit > Tracking]** lusje van de levering en de dienst worden bekeken.
 
@@ -200,13 +202,13 @@ De volgende configuratie is het zelfde als voor een e-maillevering. Raadpleeg [d
 >
 >In het **[!UICONTROL Publish to a brand page]** leveringsmalplaatje, wordt het volgen toegelaten door gebrek.
 
-## De proefdruk {#sending-the-proof} verzenden
+## De proefdruk verzenden {#sending-the-proof}
 
 We raden u aan een bewijs van uw publicatie vóór de uiteindelijke levering te verzenden om de exacte weergave van de publicatie op een persoonlijke Facebook-testpagina te bekijken. Raadpleeg [Een Facebook-testpagina voor tests maken](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page) voor meer informatie over het maken van een persoonlijke Facebook-testpagina. De stappen voor het selecteren van de doelproef worden in [Het proefdrukdoel selecteren](#selecting-the-proof-target) in detail beschreven.
 
 Bewijs van levering is identiek aan e-mailleveringen. Zie [deze sectie](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-## Het bericht {#sending-the-message} verzenden
+## Het bericht verzenden {#sending-the-message}
 
 1. Wanneer de inhoud is goedgekeurd, klikt u op de knop **[!UICONTROL Send]**.
 1. Selecteer **[!UICONTROL Deliver as soon as possible]** en klik **[!UICONTROL Analyze]** knoop.

@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2910'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Workflow voor het opschonen van databases{#database-cleanup-workflow}
+
+![](../../assets/v7-only.svg)
 
 ## Inleiding {#introduction}
 
@@ -88,7 +90,7 @@ Op de datum en de tijd die in de werkschemaplanner worden bepaald (verwijs naar 
 >
 >De secties hieronder die de taken beschrijven die door het opschoonwerkschema van het Gegevensbestand worden uitgevoerd zijn gereserveerd voor gegevensbestandbeheerders of gebruikers vertrouwd met SQL taal.
 
-### Lijsten om opschoonbewerking {#lists-to-delete-cleanup} te verwijderen
+### Lijsten om opschoonbewerking te verwijderen {#lists-to-delete-cleanup}
 
 De eerste taak die door **[!UICONTROL Database cleanup]** werkschema wordt uitgevoerd schrapt alle groepen met **deleteStatus!= 0** attribuut van **NmsGroup**. De verslagen verbonden aan deze groepen en die in andere lijsten bestaan worden ook geschrapt.
 
@@ -120,7 +122,7 @@ De eerste taak die door **[!UICONTROL Database cleanup]** werkschema wordt uitge
 
    waarbij **$(l)** de lijst-id is
 
-### Opschonen van te verwijderen of te recyclen leveringen {#cleanup-of-deliveries-to-be-deleted-or-recycled}
+### Reiniging van te verwijderen of te recyclen leveringen {#cleanup-of-deliveries-to-be-deleted-or-recycled}
 
 Met deze taak worden alle leveringen verwijderd of gerecycleerd.
 
@@ -170,7 +172,7 @@ Met deze taak worden alle leveringen verwijderd of gerecycleerd.
 
    waarbij **$(l)** de id van de levering is.
 
-#### Leveringen met behulp van midsourcing {#deliveries-using-mid-sourcing}
+#### Leveringen met behulp van mid-sourcing {#deliveries-using-mid-sourcing}
 
 De **[!UICONTROL Database cleanup]**-workflow verwijdert ook leveringen op de server(s) voor midsourcing.
 
@@ -240,7 +242,7 @@ Met deze taak worden leveringen gestopt waarvan de geldigheidsperiode is verlope
 
    waarbij **leveringsstatus 95** overeenkomt met de status **[!UICONTROL Finished]**, **leveringsstatus 85** overeenkomt met de status **[!UICONTROL Stopped]** en **$(curDate)** is de huidige serverdatum.
 
-### Opschonen van spiegelpagina&#39;s {#cleanup-of-mirror-pages}
+### Overbodig verwijderen van spiegelpagina&#39;s {#cleanup-of-mirror-pages}
 
 Met deze taak verwijdert u de webbronnen (spiegel-pagina&#39;s) die door leveringen worden gebruikt.
 
@@ -297,7 +299,7 @@ Deze taak verwijdert uit de database, alle werktabellen die overeenkomen met lev
    DROP TABLE wkDlv_15487_1;
    ```
 
-### Opschonen van door invoer gegenereerde afkappen {#cleanup-of-rejects-generated-by-imports-}
+### Reiniging van door invoer gegenereerde afwijzingen {#cleanup-of-rejects-generated-by-imports-}
 
 Met deze stap kunt u records verwijderen waarvoor niet alle gegevens tijdens het importeren zijn verwerkt.
 
@@ -420,7 +422,7 @@ Met deze taak worden alle abonnementen verwijderd die de gebruiker heeft verwijd
 DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 ```
 
-### Opschonen van logbestanden voor bijhouden {#cleanup-of-tracking-logs}
+### Opschonen van trackinglogboeken {#cleanup-of-tracking-logs}
 
 Met deze taak verwijdert u overbodige records uit de logtabellen voor bijhouden en webtracking. Verouderde records zijn de records die eerder zijn dan de bewaarperiode die is gedefinieerd in de implementatiewizard (zie [Implementatiewizard](#deployment-wizard)).
 
@@ -553,7 +555,7 @@ DELETE FROM NmsPropositionXxx WHERE iPropositionId IN (SELECT iPropositionId FRO
 
 waarbij **$(option)** de datum is die is gedefinieerd voor de optie **NmsCleanup_PropositionPurgeDelay** (zie [Implementatiewizard](#deployment-wizard)).
 
-### Opruimen van simulatietabellen {#cleanup-of-simulation-tables}
+### Opschonen van simulatietabellen {#cleanup-of-simulation-tables}
 
 Deze taak zuivert wezen simulatietabellen (die niet meer aan een aanbiedingssimulatie of een leveringssimulatie verbonden zijn).
 
@@ -569,7 +571,7 @@ Deze taak zuivert wezen simulatietabellen (die niet meer aan een aanbiedingssimu
    DROP TABLE wkSimu_456831_aggr
    ```
 
-### Opschonen van audittrail {#cleanup-of-audit-trail}
+### Reiniging van audittrail {#cleanup-of-audit-trail}
 
 De volgende query wordt gebruikt:
 
@@ -613,7 +615,7 @@ De taak herstelt dan de namen van de lijsten verbonden aan **appSubscription** v
 
 Deze opschoningsworkflow verwijdert ook alle items waarvoor de optie = 1 is uitgeschakeld en die niet zijn bijgewerkt sinds de tijd die is ingesteld in de optie **NmsCleanup_AppSubscriptionRcpPurgeDelay**.
 
-### Sessiegegevens {#cleansing-session-information} wissen
+### Sessiegegevens wissen {#cleansing-session-information}
 
 Deze taak schoont informatie van de **sessionInfo** lijst, wordt de volgende vraag gebruikt:
 
@@ -621,10 +623,10 @@ Deze taak schoont informatie van de **sessionInfo** lijst, wordt de volgende vra
  DELETE FROM XtkSessionInfo WHERE tsexpiration < $(curdate) 
 ```
 
-### Bezig met opschonen van verlopen gebeurtenissen {#cleansing-expired-events}
+### Verlopen gebeurtenissen wissen {#cleansing-expired-events}
 
 Deze taak schoonmaakt de gebeurtenissen die op de uitvoeringsinstanties en de gebeurtenissen worden ontvangen en worden opgeslagen die op een controleinstantie worden gearchiveerd.
 
-### Reacties reinigen {#cleansing-reactions}
+### Reacties {#cleansing-reactions}
 
 Met deze taak worden de reacties (tabel **NmsRemaMatchRcp**) gewist waarin de hypothesen zelf zijn verwijderd.

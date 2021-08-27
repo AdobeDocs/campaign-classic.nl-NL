@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Schemastructuur{#schema-structure}
+
+![](../../assets/v7-only.svg)
 
 De basisstructuur van een `<srcschema>` is als volgt:
 
@@ -372,7 +374,7 @@ Deze waarden worden weergegeven in een vervolgkeuzelijst van het invoerformulier
 >
 >In de Adobe Campaign-clientconsole wordt het knooppunt **[!UICONTROL Administration > Enumerations]** gebruikt om opsommingen te beheren.
 
-#### Opsomming {#set-enumeration} instellen
+#### Opsomming instellen {#set-enumeration}
 
 Met de eigenschap **enum** kunt u een vaste opsomming definiëren die wordt gebruikt wanneer de lijst met mogelijke waarden van tevoren bekend is.
 
@@ -406,7 +408,7 @@ De opsommingswaarden worden gedeclareerd in het element **`<value>`** met de vol
 * **naam**: naam van de intern opgeslagen waarde;
 * **label**: label dat via de grafische interface wordt weergegeven.
 
-#### dbenumopsomming {#dbenum-enumeration}
+#### dbenum-opsomming {#dbenum-enumeration}
 
 * Met de eigenschap **dbenum** kunt u een opsomming definiëren waarvan de eigenschappen overeenkomen met die van de eigenschap **enum**.
 
@@ -475,7 +477,7 @@ Elementen worden aangeduid met hun naam en kenmerken worden aangeduid met de naa
 * **@email**: selecteert de e-mail;
 * **location/@city**: selecteert het kenmerk &quot;city&quot; onder het  **`<location>`** element
 * **../@email**: selecteert het e-mailadres in het bovenliggende element van het huidige element
-* **groep`[1]/@label`**: selecteert het kenmerk &quot;label&quot; dat het onderliggende element van het eerste  **`<group>`** verzamelingselement is
+* **groep`[1]/@label`**: selecteert het kenmerk &quot;label&quot; dat het onderliggende element is van het eerste  **`<group>`** verzamelingselement
 * **groep`[@label='test1']`**: selecteert het kenmerk &quot;label&quot; dat het onderliggende element van het  **`<group>`** element is en de waarde &quot;test1&quot; bevat
 
 >[!NOTE]
@@ -486,7 +488,6 @@ Elementen worden aangeduid met hun naam en kenmerken worden aangeduid met de naa
 >* **`[@email]`** en  **@** e-mailequivalent
 
 >
-
 
 
 Het is ook mogelijk complexe expressies te definiëren, zoals de volgende rekenkundige bewerkingen:
@@ -506,7 +507,7 @@ U hebt toegang tot de lijst met beschikbare functies via een expressie-editor in
 * **Jaar (@gemaakt)**: retourneert het jaar van de datum in het kenmerk &quot;created&quot;.
 * **GetEmailDomain(@email)**: retourneert het domein van het e-mailadres.
 
-## Een tekenreeks maken via de compute tekenreeks {#building-a-string-via-the-compute-string}
+## Een tekenreeks samenstellen via de compute string {#building-a-string-via-the-compute-string}
 
 Een **Berekende tekenreeks** is een XPath-expressie die wordt gebruikt om een tekenreeks samen te stellen die een record vertegenwoordigt in een tabel die is gekoppeld aan het schema. **Compute** stringt wordt vooral gebruikt in de grafische interface om het label van een geselecteerde record weer te geven.
 

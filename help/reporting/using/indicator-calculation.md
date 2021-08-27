@@ -6,14 +6,16 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2972'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Indicatoren berekenen {#indicator-calculation}
+
+![](../../assets/common.svg)
 
 ## Gebruikersactiviteiten {#user-activities-1}
 
@@ -340,7 +342,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** (nms:delivery), **[!UIC
  </tbody> 
 </table>
 
-## Statistieken over het delen van activiteiten {#statistics-on-sharing-activities-1}
+## Statistieken over de activiteiten voor het delen van diensten {#statistics-on-sharing-activities-1}
 
 Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** (nms:delivery), **[!UICONTROL Consolidated tracking]** (nms:trackingStats) en **[!UICONTROL Web tracking]** (nms:webTrackingLog) tabellen.
 
@@ -445,7 +447,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Internet Browser Statistics]** lijs
  </tbody> 
 </table>
 
-## Abonnementsbeheer {#subscription-tracking-1}
+## Abonnement bijhouden {#subscription-tracking-1}
 
 Dit rapport is gebaseerd op de **[!UICONTROL Services]** lijst (nms:dienst).
 
@@ -466,7 +468,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Services]** lijst (nms:dienst).
    <td> sum(Iif(@created &lt; addDays(getDate(), (-1)), 1, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Abonnementen<br /> </td> 
+   <td> Lidmaatschappen<br /> </td> 
    <td> @_subscription<br /> </td> 
    <td> Aantal abonnementen (@action = 1) op de vorige dag.<br /> </td> 
    <td> sum(Iif(@action = 1 en @date &gt; addDays(getDate(), (-1)), 1, 0))<br /> </td> 
@@ -562,13 +564,13 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery and tracking statistics]**
   </tr> 
   <tr> 
    <td> Geopende items<br /> </td> 
-   <td> @receivingOpen<br /> </td> 
+   <td> @recipientOpen<br /> </td> 
    <td> Aantal alle @wideLog-ids in alle volgende logboeken.<br /> </td> 
    <td> Countdifferent ([@wideLog-id])<br /> </td> 
   </tr> 
   <tr> 
    <td> Klikken<br /> </td> 
-   <td> @receivingClick<br /> </td> 
+   <td> @recipientClick<br /> </td> 
    <td> Afzonderlijke telling van @wideLog-ids met een type URL gelijk aan "E-mail klik". <br /> </td> 
    <td> Countdifferent(Iif([url/@type]=1, @wideLog-id, 0))<br /> </td> 
   </tr> 
@@ -795,7 +797,7 @@ Dit rapport is gebaseerd op de tabellen Delivery(nms:delivery) en **[!UICONTROL 
 
 Dit rapport toont de berichtinhoud (HTML en/of tekst) met, op elke verbinding, het percentage klikt op verbindingen. De belemmeringen van de verpersoonlijking unsubscription verbindingen en de verbindingen van de spiegelpagina worden in de totale gecumuleerde kliks in aanmerking genomen maar niet getoond in het rapport.
 
-## Statistieken {#tracking-statistics-1} bijhouden
+## Trackingstatistieken {#tracking-statistics-1}
 
 Dit rapport is gebaseerd op de **[!UICONTROL Delivery]** lijst (nms:levering).
 
@@ -846,7 +848,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery and tracking statistics]**
  <tbody> 
   <tr> 
    <td> Verwerkte e-mails<br /> </td> 
-   <td> @processing<br /> </td> 
+   <td> @processed<br /> </td> 
    <td> Het totale aantal berichten met een status die "Klaar", "Verzonden"of "Ontbroken"evenaart.<br /> </td> 
    <td> @prepare + @error + @success<br /> </td> 
   </tr> 
@@ -889,7 +891,7 @@ Dit rapport is gebaseerd op de **[!UICONTROL Delivery and tracking statistics]**
  </tbody> 
 </table>
 
-## Uitsplitsing van openen {#breakdown-of-opens-1}
+## Indeling van openen {#breakdown-of-opens-1}
 
 Dit rapport is gebaseerd op **Deliveries** (nms:delivery) en **Tracking logs** (nms:trackingLogRcp) tabellen.
 
@@ -926,7 +928,7 @@ Als u desynchronisatie of inconsistentie voor bepaalde indicatoren ervaart, sele
 
 Als Adobe Campaign het bericht pas kan detecteren nadat het is geopend, moet de ontvanger de afbeeldingen in de e-mail downloaden. HTML en Multipart/Alternative e-mails bevatten een afbeelding van 0 pixels, waarmee u berichten kunt detecteren die zijn geopend. Aangezien berichten in tekstopmaak geen afbeeldingen bevatten, is het onmogelijk om te bepalen of ze zijn geopend of niet. Waarden die worden berekend op basis van het bericht dat wordt geopend, zijn altijd schattingen vanwege de foutmarge die is gekoppeld aan de beeldweergave.
 
-## Doelpersonen / ontvangers {#targeted-persons---recipients}
+## Gerichte personen/ontvangers {#targeted-persons---recipients}
 
 In sommige rapporten maakt Adobe Campaign onderscheid tussen doelpersonen en doelgroepen.
 

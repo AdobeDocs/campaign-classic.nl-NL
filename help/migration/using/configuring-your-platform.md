@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Uw platform configureren{#configuring-your-platform}
+
+![](../../assets/v7-only.svg)
 
 Bepaalde belangrijke wijzigingen in Adobe Campaign v7 vereisen een configuratie om ervoor te zorgen dat deze effectief werkt. Deze parameters kunnen nodig zijn voor of na het migreren. De betrokken veranderingen en hun configuratiewijze worden voorgesteld in deze sectie.
 

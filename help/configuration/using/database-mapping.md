@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1974'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Databasetoewijzing{#database-mapping}
+
+![](../../assets/v7-only.svg)
 
 De SQL-toewijzing van ons voorbeeldschema geeft het volgende XML-document:
 
@@ -287,7 +289,7 @@ Toetsen houden zich aan de volgende regels:
    </schema>
    ```
 
-### Automatische incrementele sleutel {#auto-incremental-key}
+### Automatische incrementele toets {#auto-incremental-key}
 
 De primaire sleutel van de meeste Adobe Campaign-tabellen is een 32-bits lang geheel getal dat automatisch wordt gegenereerd door de database-engine. De berekening van de sleutelwaarde hangt van een opeenvolging (door gebrek, **XtkNewId** SQL functie) af die een aantal produceert dat in het volledige gegevensbestand uniek is. De inhoud van de toets wordt automatisch ingevoerd bij het invoegen van de record.
 
@@ -494,7 +496,7 @@ In dit voorbeeld, zullen wij een verbinding naar de &quot;nms:adres&quot;schemal
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
-### Voorbeeld 5 {#example-4}
+### Voorbeeld 4 {#example-4}
 
 Koppeling naar een map (&quot;xtk:folder&quot;-schema):
 

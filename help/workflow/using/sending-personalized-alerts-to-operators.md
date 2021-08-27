@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Gepersonaliseerde waarschuwingen verzenden naar operatoren{#sending-personalized-alerts-to-operators}
+
+![](../../assets/common.svg)
 
 In dit voorbeeld willen wij een alarm naar een exploitant verzenden die de naam van profielen zal bevatten die een nieuwsbrief opende maar niet de verbinding klikte het bevat.
 
@@ -65,7 +67,7 @@ Volg onderstaande stappen om deze gegevens op te halen:
 
    ![](assets/uc_operator_6.png)
 
-## Het aantal populaties testen {#testing-the-population-count}
+## Het aantal inwoners testen {#testing-the-population-count}
 
 Voeg de code hieronder in **[!UICONTROL Test]** activiteit toe om te controleren of bevat de gerichte bevolking minstens 1 profiel.
 
@@ -75,7 +77,7 @@ var.recCount>0
 
 ![](assets/uc_operator_7.png)
 
-## De waarschuwing {#setting-up-the-alert} instellen
+## De waarschuwing instellen {#setting-up-the-alert}
 
 Nu de populatie aan de instantievariabele met de gewenste gebieden is toegevoegd, kunt u deze informatie in **[!UICONTROL Alert]** activiteit toevoegen.
 

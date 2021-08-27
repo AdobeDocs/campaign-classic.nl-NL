@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Exporttaken configureren {#executing-export-jobs}
+
+![](../../assets/common.svg)
 
 Met de exporttaken hebt u toegang tot gegevens in de database en kunt u deze extraheren: contacten, cliënten, lijsten, segmenten, enz.
 
@@ -23,7 +25,7 @@ Met de wizard Exporteren kunt u een exportbewerking configureren, de opties erva
 
 De wizard Exporteren wordt weergegeven nadat een nieuwe exporttaak is gemaakt (zie [Import- en exporttaken maken](../../platform/using/creating-import-export-jobs.md).
 
-## Stap 1 - kies het uitvoermalplaatje {#step-1---choosing-the-export-template}
+## Stap 1 - Kies de exportsjabloon {#step-1---choosing-the-export-template}
 
 Wanneer u de wizard Exporteren start, moet u eerst een sjabloon selecteren. Als voorbeeld, om de uitvoer van ontvangers te vormen die onlangs registreerden, volg de stappen hieronder:
 
@@ -39,7 +41,7 @@ Wanneer u de wizard Exporteren start, moet u eerst een sjabloon selecteren. Als 
 1. Voer in het veld **[!UICONTROL Label]** een naam voor het exporteren in. U kunt een beschrijving toevoegen.
 1. Selecteer het exporttype. Er zijn twee mogelijke exporttypen: **[!UICONTROL Simple export]** om slechts één dossier uit te voeren, en **[!UICONTROL Multiple export]** om verscheidene dossiers in één enkele uitvoering, van één of meerdere types van brondocument uit te voeren.
 
-## Stap 2 - Type bestand dat {#step-2---type-of-file-to-export} moet worden geëxporteerd
+## Stap 2 - Type bestand dat moet worden geëxporteerd {#step-2---type-of-file-to-export}
 
 Selecteer het type document dat u wilt exporteren, dat wil zeggen het schema van de gegevens die u wilt exporteren.
 
@@ -61,7 +63,7 @@ Wanneer het exporteren wordt gestart vanuit het knooppunt **[!UICONTROL Jobs]**,
 
    U moet de datum van de laatste wijziging invoeren. Deze kan worden opgehaald uit een veld of berekend.
 
-## Stap 3 - Bepaal het outputformaat {#step-3---defining-the-output-format}
+## Stap 3 - Bepaal de outputformaat {#step-3---defining-the-output-format}
 
 Selecteer een uitvoerindeling voor het exportbestand. De volgende indelingen kunnen worden gebruikt: tekst, tekst in vaste kolommen, CSV en XML.
 
@@ -72,7 +74,7 @@ Selecteer een uitvoerindeling voor het exportbestand. De volgende indelingen kun
 * Geef de datumnotatie en getalnotatie op. Om dit te doen, klik **[!UICONTROL Edit]** knoop voor het betrokken gebied en gebruik de redacteur.
 * Voor velden met opsommingswaarden kunt u **[!UICONTROL Export labels instead of internal values of enumerations]** selecteren. De titel kan bijvoorbeeld worden opgeslagen in de notatie **1=Mr.**,  **2=mevrouw**,  **3=mevrouw**. Als deze optie is geselecteerd, worden **Mr**, **juffrouw** en **Mevrouw** geëxporteerd.
 
-## Stap 4 - Gegevensselectie {#step-4---data-selection}
+## Stap 4 - Selectie van gegevens {#step-4---data-selection}
 
 Selecteer de velden die u wilt exporteren. Dit doet u als volgt:
 
@@ -115,7 +117,7 @@ Als u een verzameling elementen exporteert (bijvoorbeeld abonnementen van ontvan
 
 ![](assets/s_ncs_user_export_wizard06_c.png)
 
-## Stap 8 - Gegevensvoorbeeld {#step-8---data-preview}
+## Stap 8 - Voorvertoning van gegevens {#step-8---data-preview}
 
 Klik op **[!UICONTROL Start the preview of the data]** voor een voorvertoning van het exportresultaat. Standaard worden de eerste 200 regels weergegeven. Als u deze waarde wilt wijzigen, klikt u op de pijlen rechts van het veld **[!UICONTROL Lines to display]**.
 
@@ -123,7 +125,7 @@ Klik op **[!UICONTROL Start the preview of the data]** voor een voorvertoning va
 
 Klik op de tabbladen onder aan de wizard om te schakelen van de voorvertoning van de resultaten in kolommen naar de resultaten in XML. U kunt de gegenereerde SQL-query&#39;s ook weergeven.
 
-## Stap 9 - De export {#step-9---launching-the-export} starten
+## Stap 9 - Het exporteren starten {#step-9---launching-the-export}
 
 Klik **[!UICONTROL Start]** om gegevensexport te starten.
 

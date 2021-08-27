@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 71e98d45-3660-4d86-a5ca-8e55ae5896eb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 8%
@@ -15,11 +15,13 @@ ht-degree: 8%
 
 # voorwaarde-element {#condition--element}
 
+![](../../../assets/v7-only.svg)
+
 ## Inhoudsmodel {#content-model-2}
 
 condition:==EMPTY
 
-## Kenmerken {#attributes-2}
+## Attributen {#attributes-2}
 
 * @boolOperator (tekenreeks)
 * @enabledIf (string)
@@ -41,7 +43,7 @@ Met dit element kunt u een filtervoorwaarde definiëren.
 
 Één `<sysfiler>` element kan verscheidene het filtreren voorwaarden bevatten.
 
-## Kenmerkbeschrijving {#attribute-description-2}
+## Beschrijving van kenmerk {#attribute-description-2}
 
 * **boolOperator (tekenreeks)**: als er meerdere  `<conditions>` zijn gedefinieerd binnen hetzelfde   `<sysfilter>` element, kunt u deze combineren met dit kenmerk. Door gebrek, is de logische verbinding tussen `<condition>` elementen &quot;EN&quot;. Met het kenmerk &quot;@boolOperator&quot; kunt u koppelingen van het type &quot;OR&quot; en &quot;AND&quot; combineren.
 * **enabledIf (string)**: activeringstest voorwaarde.

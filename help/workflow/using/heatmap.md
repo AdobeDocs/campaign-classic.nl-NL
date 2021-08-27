@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 3%
@@ -15,11 +15,13 @@ ht-degree: 3%
 
 # Workflowheatmap {#workflow-heatmap}
 
+![](../../assets/common.svg)
+
 De werkstroom HeatMap van de campagne bestaat uit een kleur-gecodeerde grafische vertegenwoordiging van alle werkschema&#39;s die momenteel lopen. Deze is alleen beschikbaar voor **Campagnebeheerders**.
 
 Ontdek extra manieren om Campagne processen in [deze pagina](../../production/using/monitoring-guidelines.md) te controleren.
 
-## Aan de slag met de Workflowwarmtekaart {#about-the-workflow-heatmap}
+## Aan de slag met de workflow HeatMap {#about-the-workflow-heatmap}
 
 Door een snel overzicht te geven van het aantal gelijktijdige workflows, stelt de Workflow HeatMap de beheerders van het Adobe Campaign-platform in staat de belasting op de instantie te controleren en de workflows dienovereenkomstig te plannen.
 
@@ -29,16 +31,16 @@ Meer bepaald, helpt het de platformbeheerders om:
 * Workflows filteren op duur om te zien in welke workflows problemen kunnen optreden
 * Filteren van activiteiten op duur om te zien welke activiteiten problemen kunnen tegenkomen
 * Gemakkelijk individuele workflows en alle verwante activiteiten (met hun duur) vinden
-* Filteren op workflowtype: [technische workflows](../../workflow/using/building-a-workflow.md#technical-workflows) of [campagneworkflows](../../workflow/using/building-a-workflow.md#campaign-workflows)
+* Filteren op workflowtype: [technische workflows](building-a-workflow.md#technical-workflows) of [campagneworkflows](building-a-workflow.md#campaign-workflows)
 * Zoeken naar een specifieke workflow die moet worden geanalyseerd
 
 >[!NOTE]
 >
->Naast **Workflow Heatmap**, kunt u een werkschema tot stand brengen dat u de status van een reeks werkschema&#39;s zal laten controleren en terugkomende berichten naar supervisors zal verzenden. Raadpleeg voor meer informatie de [toegewezen sectie](../../workflow/using/supervising-workflows.md).
+>Naast **Workflow Heatmap**, kunt u een werkschema tot stand brengen dat u de status van een reeks werkschema&#39;s zal laten controleren en terugkomende berichten naar supervisors zal verzenden. Raadpleeg voor meer informatie de [toegewezen sectie](supervising-workflows.md).
 
-Het gebruiken van het Werkschema HeatMap vereist om een goed inzicht in de volgende concepten te hebben: [Workflows](../../workflow/using/about-workflows.md), [Activiteiten](../../workflow/using/about-activities.md) en [Best practices voor workflow](../../workflow/using/workflow-best-practices.md).
+Het gebruiken van het Werkschema HeatMap vereist om een goed inzicht in de volgende concepten te hebben: [Workflows](about-workflows.md), [Activiteiten](about-activities.md) en [Best practices voor workflow](workflow-best-practices.md).
 
-## Pas de Workflow HeatMap {#using-the-heatmap} aan
+## De workflow HeatMap aanpassen {#using-the-heatmap}
 
 >[!NOTE]
 >
@@ -75,8 +77,8 @@ Het gebruiken van het Werkschema HeatMap vereist om een goed inzicht in de volge
 
 1. U kunt ook filteren op **[!UICONTROL Workflow type]**:
 
-   * **[!UICONTROL Technical]** : Alleen  [out-of-the-box-technische ](../../workflow/using/building-a-workflow.md#technical-workflows) workflows en  [gegevensbeheerworkflows ](../../workflow/using/targeting-data.md#data-management) worden weergegeven.
-   * **[!UICONTROL Marketing]** : Alleen workflows die zijn gekoppeld aan een marketingcampagne, ook wel  [campagneworkflows](../../workflow/using/building-a-workflow.md#campaign-workflows) genoemd, worden weergegeven.
+   * **[!UICONTROL Technical]** : Alleen  [out-of-the-box-technische ](building-a-workflow.md#technical-workflows) workflows en  [gegevensbeheerworkflows ](targeting-data.md#data-management) worden weergegeven.
+   * **[!UICONTROL Marketing]** : Alleen workflows die zijn gekoppeld aan een marketingcampagne, ook wel  [campagneworkflows](building-a-workflow.md#campaign-workflows) genoemd, worden weergegeven.
 
 1. Als u een specifieke workflow op naam wilt doorzoeken, kunt u ook het veld **[!UICONTROL Workflow name filter]** gebruiken.
 
@@ -110,11 +112,11 @@ In het onderstaande voorbeeld worden tussen 8.00 uur en 8.05 uur drie workflows 
 1. Klik op de werkstroom-id of naam om een werkstroom rechtstreeks te openen.
 1. Klik op de knop **[!UICONTROL Home]** om terug te gaan naar de weergave **[!UICONTROL Campaign Workflow HeatMap]**.
 
-## Gebruik hoofdletters/kleine letters: HeatMap gebruiken om handelingen {#use-cases--using-the-heatmap-to-take-actions} uit te voeren
+## Gebruik hoofdletters/kleine letters: HeatMap gebruiken om handelingen uit te voeren {#use-cases--using-the-heatmap-to-take-actions}
 
 Er zijn twee belangrijke gevallen waar het de werkschema HeatMap van de Campagne nuttig kan zijn.
 
-### Het aantal gelijktijdige workflows reduceren {#reducing-the-number-of-concurrent-workflows}
+### Het aantal gelijktijdige workflows verminderen {#reducing-the-number-of-concurrent-workflows}
 
 Als beheerder van de Campagne, kan het Werkschema HeatMap u helpen om de lading op de instantie te begrijpen en bestaande of nieuwe werkschema&#39;s op aangewezen tijden te plannen.
 
@@ -145,7 +147,7 @@ Als Campagnebeheerder, helpt het Werkschema HeatMap u om de langste werkschema&#
    * Adviseer marketinggebruikers om de langste workflows te splitsen om de verwerkingstijd te verminderen.
    * Start een diepgaande analyse van specifieke workflows en specifieke activiteiten (zoals JavaScript, importeren, exporteren, enzovoort) om de problemen te isoleren en eenvoudiger op te lossen.
 
-## Gebruik HeatMap om de werkstroomplanning te verbeteren {#example--using-the-heatmap-to-improve-workflow-planning}
+## Met HeatMap kunt u de planning van de workflow verbeteren {#example--using-the-heatmap-to-improve-workflow-planning}
 
 In het onderstaande voorbeeld ziet u hoe planning efficiënter kan zijn en hoe de prestaties kunnen worden verbeterd bij gebruik van de Adobe Campaign Workflow HeatMap.
 

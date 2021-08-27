@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migration-overview
 exl-id: 3050238d-6f77-4ffa-9aef-677ab8009388
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Migreren naar Campaign Classic{#about-migration}
+
+![](../../assets/v7-only.svg)
 
 In dit document worden de voorwaarden voor een migratie beschreven, evenals de stappen voor een migratie naar Adobe Campaign Classic (v7) en de aanvullende, noodzakelijke en optionele instellingen, afhankelijk van uw configuratie.
 

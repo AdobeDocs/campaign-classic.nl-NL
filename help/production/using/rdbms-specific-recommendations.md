@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 0e0912c68d132919eeac9b91b93960e70011153e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # RDBMS - Specifieke aanbevelingen{#rdbms-specific-recommendations}
+
+![](../../assets/v7-only.svg)
 
 Om u te helpen bij het instellen van onderhoudsplannen, geeft deze sectie een overzicht van een aantal aanbevelingen en aanbevolen procedures die zijn aangepast aan de verschillende RDBMS-engines die Adobe Campaign ondersteunt. Dit zijn echter slechts aanbevelingen. Het is aan u om deze aan uw behoeften aan te passen, overeenkomstig uw interne procedure en beperkingen. Uw gegevensbestandbeheerder heeft de verantwoordelijkheid om deze plannen te bouwen en uit te voeren.
 
@@ -153,7 +155,6 @@ REINDEX TABLE nmsmirrorpageinfo;
 >* Deze onderhoudsbewerking kan worden geïmplementeerd door een Adobe Campaign-workflow met een **[!UICONTROL SQL]**-activiteit. Raadpleeg [deze sectie](../../workflow/using/architecture.md) voor meer informatie. Zorg ervoor dat u onderhoud plant voor een lage activiteitstijd die niet in strijd is met uw back-upvenster.
 
 >
-
 
 
 ### Database opnieuw samenstellen {#rebuilding-a-database}

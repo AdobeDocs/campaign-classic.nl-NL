@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 5ccf5a21-48aa-4c0d-8cc8-457eb07d9f74
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 19%
@@ -14,6 +14,8 @@ ht-degree: 19%
 ---
 
 # Een nieuwe webapplicatie maken{#creating-a-new-web-application}
+
+![](../../assets/common.svg)
 
 Toepassingstypen voor het web worden tijdens het maken geselecteerd.
 

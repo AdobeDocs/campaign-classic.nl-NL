@@ -2,18 +2,20 @@
 product: campaign
 title: Aan de slag met machtigingen
 description: Leer hoe u toegang kunt verlenen tot campagnecapaciteiten
-feature: Toegangsbeheer
+feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '253'
 ht-degree: 5%
 
 ---
 
 # Aan de slag met machtigingen{#access-management}
+
+![](../../assets/common.svg)
 
 Met Adobe Campaign kunt u de rechten definiëren en beheren die aan de verschillende operatoren zijn toegewezen. Dit zijn een reeks rechten en beperkingen die autoriseren of weigeren:
 
@@ -51,7 +53,7 @@ Leer hoe te om toegang en opstellingstoestemmingen in deze secties te verlenen:
 Zie ook:
 
 * [Machtigingen voor workflows beheren](../../workflow/using/managing-rights.md)
-* [Rechten voor gedistribueerde marketing beheren](../../campaign/using/about-distributed-marketing.md#operators-and-entities)
+* [Rechten voor gedistribueerde marketing beheren](../../distributed/using/about-distributed-marketing.md#operators-and-entities)
 * [Rechten voor de interactiemodule beheren](../../interaction/using/operator-profiles.md)
 * [Toegang tot schema&#39;s filteren](../../configuration/using/filtering-schemas.md)
 * [Weergave PI beperken](../../configuration/using/restricting-pii-view.md)

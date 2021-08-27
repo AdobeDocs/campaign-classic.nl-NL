@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Voorbeelden van algemene importactiviteiten {#import-operations-samples}
+
+![](../../assets/common.svg)
 
 ## Importeren uit een lijst met ontvangers {#example--import-from-a-list-of-recipients}
 
@@ -42,7 +44,7 @@ Voer de volgende stappen uit om een lijst met ontvangers te maken en op te geven
 
    ![](assets/s_ncs_user_import_example00_03.png)
 
-## Nieuwe records importeren uit een tekstbestand {#example--import-new-records-from-a-text-file-}
+## Nieuwe records uit een tekstbestand importeren {#example--import-new-records-from-a-text-file-}
 
 Voer de volgende stappen uit om nieuwe, in een tekstbestand opgeslagen ontvangerprofielen te importeren in de Adobe Campaign-database:
 
@@ -98,7 +100,7 @@ Voer de volgende stappen uit om nieuwe, in een tekstbestand opgeslagen ontvanger
 
          ![](assets/s_ncs_user_import_example07_02.png)
 
-## Ontvangers {#example--update-and-insert-recipients} bijwerken en invoegen
+## Ontvangers bijwerken en invoegen {#example--update-and-insert-recipients}
 
 We willen bestaande records in de database bijwerken en nieuwe records maken vanuit een tekstbestand. Hier volgt een voorbeeld van de procedure:
 
@@ -138,7 +140,7 @@ We willen bestaande records in de database bijwerken en nieuwe records maken van
 
       ![](assets/s_ncs_user_import_example06_03.png)
 
-## Verrijk de waarden met die van een extern dossier {#example--enrich-the-values-with-those-of-an-external-file}
+## De waarden uitbreiden met die van een extern bestand {#example--enrich-the-values-with-those-of-an-external-file}
 
 Wij willen bepaalde gebieden in een gegevensbestandlijst van een tekstdossier wijzigen, die aan de waarden in het gegevensbestand voorrang geven.
 

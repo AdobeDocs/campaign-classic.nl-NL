@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Opsommingen beheren{#managing-enumerations}
+
+![](../../assets/common.svg)
 
 Een opsomming (ook wel &#39;gespecificeerde lijst&#39; genoemd) is een lijst met waarden die door het systeem worden voorgesteld om bepaalde velden te vullen. Met opsommingen kunt u de waarden van deze velden standaardiseren en informatie invoeren of gebruiken binnen query&#39;s.
 
@@ -42,9 +44,9 @@ De waarden voor dit type veld worden gedefinieerd en het algemene beheer van dez
 
 * Als de optie **[!UICONTROL Closed]** is geselecteerd, kunnen gebruikers geen nieuwe waarden maken, maar alleen een keuze maken uit de beschikbare waarden.
 
-## Gegevens {#standardizing-data} standaardiseren
+## Gegevens standaardiseren {#standardizing-data}
 
-### Informatie over het opschonen van alias {#about-alias-cleansing}
+### Informatie over het opschonen van aliassen {#about-alias-cleansing}
 
 In de gespecificeerde lijstgebieden, kunt u waarden buiten opsommingswaarden ingaan. Deze kunnen worden opgeslagen zoals ze zijn of worden gereinigd.
 
@@ -62,7 +64,7 @@ De ingevoerde waarde is dan:
    >
    >Als u mogelijkheden voor gegevenszuivering moet gebruiken, selecteert u de optie **[!UICONTROL Alias cleansing]** in de gespecificeerde lijst.
 
-### Aliassen {#using-aliases} gebruiken
+### Aliassen gebruiken {#using-aliases}
 
 Met de optie **[!UICONTROL Alias cleansing]** kunt u aliassen gebruiken voor de geselecteerde gespecificeerde lijst. Als deze optie is geselecteerd, wordt de tab **[!UICONTROL Alias]** onder in het venster weergegeven.
 
@@ -108,7 +110,7 @@ Zodra de uitvoering is voltooid, wordt de alias toegevoegd aan de lijst met alia
 
 ![](assets/s_ncs_user_itemized_list_alias_detail2.png)
 
-#### Aliashits {#retrieving-alias-hits} ophalen
+#### Aliashits ophalen {#retrieving-alias-hits}
 
 De waarden die door de gebruikers worden ingevoerd, kunnen in aliassen worden omgezet. Als de gebruiker een waarde invoert die niet is opgenomen in de gespecificeerde lijst, wordt de waarde opgeslagen op het tabblad **[!UICONTROL Alias]**.
 
@@ -116,7 +118,7 @@ De **technische workflow voor Alias-zuivering** herstelt deze waarden elke avond
 
 Indien nodig kan in de kolom **[!UICONTROL Hits]** het aantal keren worden weergegeven dat deze waarde is ingevoerd. Het berekenen van deze waarde kan tijd en geheugen vergen. Raadpleeg [Invoerinstanties berekenen](#calculating-entry-occurrences) voor meer informatie hierover.
 
-### Gegevens opschonen {#running-data-cleansing} uitvoeren
+### Gegevens wissen {#running-data-cleansing}
 
 De gegevens worden schoongemaakt door het **[!UICONTROL Alias cleansing]** technische werkschema. De configuraties die voor opsommingen worden gedefinieerd, worden tijdens de uitvoering toegepast. Raadpleeg [Workflow voor Aliasreiniging](#alias-cleansing-workflow).
 

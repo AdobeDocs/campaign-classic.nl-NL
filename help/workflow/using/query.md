@@ -6,19 +6,21 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1629'
 ht-degree: 0%
 
 ---
 
 # Query{#query}
 
-## Een query {#creating-a-query} maken
+![](../../assets/common.svg)
+
+## Een query maken {#creating-a-query}
 
 Met een query kunt u een doel selecteren op basis van criteria. U kunt een segmentcode aan het vraagresultaat associëren en extra gegevens opnemen in het.
-Voor meer informatie over vraagsteekproeven, verwijs naar dit [deze sectie](../../workflow/using/querying-recipient-table.md).
+Voor meer informatie over vraagsteekproeven, verwijs naar dit [deze sectie](querying-recipient-table.md).
 
 >[!NOTE]
 >
@@ -36,7 +38,7 @@ Met de koppeling **[!UICONTROL Edit query...]** kunt u het doeltype, de beperkin
 
    De filterdimensie maakt het mogelijk deze elementen te verzamelen, bijvoorbeeld informatie over de doelpersoon (contracten, volledige en definitieve schikkingen, enz.).
 
-   Voor meer op dit, verwijs naar [Het richten en het filtreren dimensies](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
+   Voor meer op dit, verwijs naar [Het richten en het filtreren dimensies](building-a-workflow.md#targeting-and-filtering-dimensions).
 
    ![](assets/s_user_segmentation_query_edit.png)
 
@@ -52,7 +54,7 @@ Met de koppeling **[!UICONTROL Edit query...]** kunt u het doeltype, de beperkin
 
 1. Als u **[!UICONTROL Filtering conditions]** in stap 1 hebt geselecteerd of de optie **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]** hebt gebruikt, moet u later handmatig filtercriteria toevoegen.
 
-   U kunt ook voorwaarden voor gegevensgroepering toevoegen door het desbetreffende vak in te schakelen. Om dit te doen, moet de het filtreren afmeting aan de het richten van vraag afmeting verschillend zijn. Voor meer informatie bij groepering, verwijs naar dit [sectie](../../workflow/using/querying-using-grouping-management.md).
+   U kunt ook voorwaarden voor gegevensgroepering toevoegen door het desbetreffende vak in te schakelen. Om dit te doen, moet de het filtreren afmeting aan de het richten van vraag afmeting verschillend zijn. Voor meer informatie bij groepering, verwijs naar dit [sectie](querying-using-grouping-management.md).
 
    U kunt meer criteria ook toevoegen door de bouwer van de Uitdrukking te gebruiken en het te combineren met de logische opties EN, OF, en BEHALVE. U kunt dan een voorbeeld van de combinatie **[!UICONTROL Corresponding SQL query...]** voor uw criteria bekijken. Voor meer op dit verwijs naar [sectie](../../platform/using/defining-filter-conditions.md#building-expressions).
 
@@ -60,7 +62,7 @@ Met de koppeling **[!UICONTROL Edit query...]** kunt u het doeltype, de beperkin
 
    ![](assets/s_user_segmentation_query_advanced.png)
 
-## Gegevens {#adding-data} toevoegen
+## Gegevens toevoegen {#adding-data}
 
 In de aanvullende kolommen kunt u aanvullende informatie over de doelpopulatie verzamelen, bijvoorbeeld contractnummers, abonnementen op nieuwsbrieven of oorsprong. Deze gegevens kunnen worden opgeslagen in de Adobe Campaign-database of in een externe database.
 
@@ -73,7 +75,7 @@ Selecteer eerst het type gegevens dat u wilt toevoegen:
 ![](assets/wf_add_data_1st_option.png)
 
 * Selecteer **[!UICONTROL Data linked to the filtering dimension]** om de gegevens in de Adobe Campaign-database te selecteren.
-* Selecteer **[!UICONTROL External data]** om gegevens uit een externe database toe te voegen. Deze optie is alleen beschikbaar als u de optie **Federated Data Access** hebt aangeschaft. Raadpleeg [Toegang tot een externe database (FDA)](../../workflow/using/accessing-an-external-database--fda-.md) voor meer informatie hierover.
+* Selecteer **[!UICONTROL External data]** om gegevens uit een externe database toe te voegen. Deze optie is alleen beschikbaar als u de optie **Federated Data Access** hebt aangeschaft. Raadpleeg [Toegang tot een externe database (FDA)](accessing-an-external-database--fda-.md) voor meer informatie hierover.
 * Selecteer de optie **[!UICONTROL An offer proposition]** om een set kolommen toe te voegen waarmee u de beste propositie kunt opslaan die door de aanbiedingsengine wordt gegenereerd. Deze optie is alleen beschikbaar als u de module **Interaction** hebt aangeschaft.
 
 Als er geen optionele module op het platform is geïnstalleerd, wordt dit werkgebied niet weergegeven. U wordt rechtstreeks naar de volgende fase geleid.
@@ -90,10 +92,10 @@ Gegevens toevoegen uit de Adobe Campaign-database:
 
    U kunt toevoegen:
 
-   * Een veld dat wordt berekend op basis van gegevens van de doelpopulatie of een geaggregeerd (aantal lopende aankopen in de laatste maand, gemiddeld bedrag van een ontvangstbewijs enz.). Bij een voorbeeld gaat u naar [Gegevens selecteren](../../workflow/using/targeting-data.md#selecting-data).
+   * Een veld dat wordt berekend op basis van gegevens van de doelpopulatie of een geaggregeerd (aantal lopende aankopen in de laatste maand, gemiddeld bedrag van een ontvangstbewijs enz.). Bij een voorbeeld gaat u naar [Gegevens selecteren](targeting-data.md#selecting-data).
    * Een nieuw veld, gemaakt met de knop **[!UICONTROL Add]** rechts van de lijst met uitvoerkolommen.
 
-      U kunt ook een verzameling gegevens toevoegen, zoals een lijst met contracten, de laatste vijf leveringen, enzovoort. Verzamelingen komen overeen met velden die meerdere waarden kunnen hebben voor hetzelfde profiel (1-N relatie). Raadpleeg [Extra gegevens bewerken](../../workflow/using/targeting-data.md#editing-additional-data) voor meer informatie.
+      U kunt ook een verzameling gegevens toevoegen, zoals een lijst met contracten, de laatste vijf leveringen, enzovoort. Verzamelingen komen overeen met velden die meerdere waarden kunnen hebben voor hetzelfde profiel (1-N relatie). Raadpleeg [Extra gegevens bewerken](targeting-data.md#editing-additional-data) voor meer informatie.
 
 Een verzameling gegevens toevoegen die verband houden met een doelgroep:
 
@@ -129,7 +131,7 @@ In het volgende voorbeeld probeert de query mannen tussen 18 en 30 jaar te ident
 
 >[!NOTE]
 >
->Extra vraagsteekproeven worden voorgesteld in [deze sectie](../../workflow/using/querying-recipient-table.md).
+>Extra vraagsteekproeven worden voorgesteld in [deze sectie](querying-recipient-table.md).
 
 1. Noem uw vraag dan selecteren **[!UICONTROL Edit query...]** verbinding.
 1. Selecteer **[!UICONTROL Filtering conditions]** in de lijst van beschikbare types van filter.
@@ -169,7 +171,7 @@ Deze waarde is het schema van de het werklijst. Deze parameter is geldig voor al
 
 In de onderstaande sectie vindt u tips en trucs voor het optimaliseren van query&#39;s die op Adobe Campaign worden uitgevoerd om de werkbelasting van de database te beperken en de gebruikerservaring te verbeteren.
 
-### Verbindt en indexeert {#joins-and-indexes}
+### Verbindingen en indexen {#joins-and-indexes}
 
 * De efficiënte vragen baseren zich op indexen.
 * Gebruik een index voor alle verbindingen.
@@ -184,7 +186,11 @@ In de onderstaande sectie vindt u tips en trucs voor het optimaliseren van query
 
    Zorg ervoor u weet wat het uitvoeringsplan van uw vraag zal zijn. Vermijd volledig lijstaftasten, vooral voor vragen in real time of dichtbij vragen in real time die elke minuut lopen.
 
-Voor meer op dit, verwijs naar [de modelbeste praktijken van Gegevens](https://helpx.adobe.com/nl/campaign/kb/acc-data-model-best-practices.html) en [de secties van de Afbeelding van het Gegevensbestand](../../configuration/using/database-mapping.md).
+   Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagneversie:
+
+   ![](assets/do-not-localize/v7.jpeg)[  Documentatie voor Campaign v7](../../configuration/using/database-mapping.md)
+
+   ![](assets/do-not-localize/v8.png)[  Documentatie voor Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### Functies {#functions}
 
@@ -193,7 +199,7 @@ Voor meer op dit, verwijs naar [de modelbeste praktijken van Gegevens](https://h
 
    Zie [deze sectie](../../platform/using/defining-filter-conditions.md#list-of-functions) voor meer informatie over functies.
 
-### Afmetingen {#filtering-dimensions} filteren
+### Afmetingen filteren {#filtering-dimensions}
 
 Gebruik de het filtreren dimensie van de vraag in plaats van het gebruiken van &quot;bestaat zoals&quot;exploitant.
 
@@ -211,7 +217,7 @@ Het equivalent van de het filtreren afmeting in SQL is de binnenpartij:
 
 `select iRecipientId from nmsRecipient INNER JOIN nmsBroadLog ON (...)`
 
-Raadpleeg [deze sectie](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions) voor meer informatie over filterafmetingen.
+Raadpleeg [deze sectie](building-a-workflow.md#targeting-and-filtering-dimensions) voor meer informatie over filterafmetingen.
 
 ### Architectuur {#architecture}
 

@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Een nieuw rapport maken{#creating-a-new-report}
+
+![](../../assets/common.svg)
 
 Voer de volgende stappen uit om een rapport te maken:
 
@@ -37,7 +39,7 @@ Voer de volgende stappen uit om een rapport te maken:
 
 1. Sla dit rapport op.
 
-## Het diagram {#modelizing-the-chart} modelleren
+## Het diagram modelleren {#modelizing-the-chart}
 
 Nadat u uw rapport hebt opgeslagen, moet dit worden weergegeven. U kunt nu het diagram van uw rapport maken.
 
@@ -87,7 +89,7 @@ U kunt echter verschillende vertakkingen plaatsen. Slechts één van hen zal wor
 
 ![](assets/reporting_graph_sample_ok.png)
 
-## Een pagina {#creating-a-page} maken
+## Een pagina maken {#creating-a-page}
 
 De inhoud wordt gevormd via de activiteiten die in de grafiek worden geplaatst. Voor meer op dit, verwijs naar [Modelizing de grafiek](#modelizing-the-chart).
 

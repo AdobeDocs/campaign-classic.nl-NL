@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2135a836-245f-406e-b351-c27d38e0f9fd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # Publiceren op Facebook-walls{#publishing-on-facebook-walls}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign kan alleen publicaties naar Facebook walls verzenden als u de schrijftoegang voor deze pagina&#39;s aan Adobe Campaign delegeert. Dit omvat de volgende configuratiestappen:
 
@@ -33,7 +35,7 @@ Begin door een Facebook-account en meerdere pagina&#39;s te maken: deze zullen w
 
    ![](assets/social_diagram_fb_external_account.png)
 
-## Een Facebook-testpagina {#creating-a-test-facebook-page} maken
+## Een Facebook-testpagina maken {#creating-a-test-facebook-page}
 
 We raden u aan een persoonlijke Facebook-pagina te maken voor het afleveren van proefdrukken (zie [De proefdruk verzenden](../../social/using/publishing-on-facebook.md#sending-the-proof) voor meer informatie.
 
@@ -143,7 +145,7 @@ Voor deze stap hebt u zowel toegang tot uw Adobe Campaign-console als tot een in
 
 Met de **[!UICONTROL Synchronization of Facebook pages]**-workflow worden alle pagina&#39;s gesynchroniseerd die door de Facebook-account worden beheerd, zodat u rechtstreeks via Adobe Campaign op de muur kunt plaatsen. Raadpleeg [Facebook-pagina&#39;s synchroniseren](#synchronizing-facebook-pages) voor meer informatie.
 
-## Facebook-pagina&#39;s {#synchronizing-facebook-pages} synchroniseren
+## Facebook-pagina&#39;s synchroniseren {#synchronizing-facebook-pages}
 
 Met de **[!UICONTROL Synchronization of Facebook pages]**-workflow, die toegankelijk is via het **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]**-knooppunt, kunt u (in Adobe Campaign) de pagina&#39;s van de Facebook-account synchroniseren die eerder zijn geconfigureerd. Door gebrek, wordt dit werkschema gevormd om één keer per dag te lopen of wanneer een beheerder de **[!UICONTROL Request an authorization from the application]** verbinding in het scherm van de de dienstconfiguratie klikt (verwijs naar [Delend schrijf toegang aan Adobe Campaign](#delegating-write-access-to-adobe-campaign)).
 

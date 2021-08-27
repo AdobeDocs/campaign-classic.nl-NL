@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 
 # Bijhouden en bewaken {#track-and-monitor}
 
+![](../../assets/common.svg)
+
 U klikte **Send** knoop? Laten we eens kijken wat er gebeurt. Zodra de levering wordt verzonden, laat Adobe Campaign u toe om spoor van de verzonden berichten te houden en te ontdekken hoe uw ontvangers op uw levering reageren. Op deze manier kunt u uw volgende campagnes beter verzenden en optimaliseren.
 
 ## Leveringen controleren {#monitoring-deliveries}
@@ -21,12 +23,12 @@ U klikte **Send** knoop? Laten we eens kijken wat er gebeurt. Zodra de levering 
 Om uw campagnes te controleren, moet u ervoor zorgen dat het bericht inderdaad aan uw ontvangers is geleverd.
 
 Van het dashboard van de levering van de Campagne, kunt u de verwerkte berichten en de logboeken van de leveringscontrole controleren.
-U kunt de status van de berichten in de leveringslogboeken ook controleren. [Meer informatie](about-delivery-monitoring.md).
+U kunt de status van de berichten in de leveringslogboeken ook controleren. [Meer info](about-delivery-monitoring.md).
 
 Wat als de leveringen niet worden verzonden en hun status **Pending** blijft?
 
 * Het uitvoeringsproces wacht op de beschikbaarheid van sommige bronnen. De MTA is mogelijk niet gestart.
-Controleer of uw modules mta@instance op uw servers MTA worden gelanceerd en begin indien nodig de module MTA. [Meer informatie](../../production/using/administration.md).
+Controleer of uw modules mta@instance op uw servers MTA worden gelanceerd en begin indien nodig de module MTA. [Meer info](../../production/using/administration.md).
 
 * De levering kan een affiniteit gebruiken die niet op de verzendende instantie is gevormd.
 Tip: Controleer de configuratie van verkeersbeheer (IP affiniteit). Voor meer op dit, zie het uitgaande verkeer SMTP van de Controle.

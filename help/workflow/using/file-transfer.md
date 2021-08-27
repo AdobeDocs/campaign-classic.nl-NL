@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: 8c47027099559549320abf68016386cc85dcda5a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Bestandsoverdracht{#file-transfer}
+
+![](../../assets/common.svg)
 
 Met de activiteit **Bestandsoverdracht** kunt u bestanden ontvangen of verzenden, testen of bestanden aanwezig zijn op een server of bestanden in een lijst weergeven. Het gebruikte protocol is Azure Blob Storage, Amazon Simple Storage Service (S3), FTP of SFTP.
 Met de S3-, Azure Blob Storage- of SFTP-verbinding kunt u ook gesegmenteerde gegevens importeren naar Adobe Campaign met het Adobe Real-Time Customer Data-platform. Raadpleeg voor meer informatie deze [documentatie](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
@@ -48,7 +50,7 @@ De configuratie is afhankelijk van de geselecteerde actie.
 
    ![](assets/file_transfert_edit_send.png)
 
-   Dit kan ook een of meer andere bestanden betreffen. Als u deze wilt selecteren, schakelt u de optie uit en klikt u op **[!UICONTROL Insert]**. Geef het toegangspad op van het bestand dat u wilt verzenden. Als u nog een bestand wilt toevoegen, klikt u nogmaals op **[!UICONTROL Insert]**. De bestanden hebben nu elk een eigen tabblad.
+   Dit kan ook een of meer andere bestanden betreffen. Als u deze wilt selecteren, schakelt u de optie uit en klikt u op **[!UICONTROL Insert]**. Geef het toegangspad op van het bestand dat moet worden verzonden. Als u nog een bestand wilt toevoegen, klikt u nogmaals op **[!UICONTROL Insert]**. De bestanden hebben nu elk een eigen tabblad.
 
    ![](assets/file_transfert_source.png)
 
@@ -71,7 +73,7 @@ De configuratie is afhankelijk van de geselecteerde actie.
 Er zijn twee mogelijke opties voor alle opties voor bestandsoverdracht:
 
 * Met de optie **[!UICONTROL Process missing file]** voegt u een overgang toe die wordt geactiveerd wanneer er geen bestand in de opgegeven map wordt gevonden.
-* De optie **[!UICONTROL Process errors]** wordt beschreven in [Fouten verwerken](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+* De optie **[!UICONTROL Process errors]** wordt beschreven in [Fouten verwerken](monitoring-workflow-execution.md#processing-errors).
 
 Met de koppeling **[!UICONTROL Advanced parameters...]** hebt u toegang tot de volgende opties:
 
@@ -93,7 +95,7 @@ Met de koppeling **[!UICONTROL Advanced parameters...]** hebt u toegang tot de v
 
    Hiermee kunt u de verbindingshaven opgeven die voor gegevensoverdracht moet worden gebruikt.
 
-Met de koppeling **[!UICONTROL File historization settings...]** hebt u toegang tot de opties die worden beschreven in [Webdownload](../../workflow/using/web-download.md) (**[!UICONTROL File historization]** stap).
+Met de koppeling **[!UICONTROL File historization settings...]** hebt u toegang tot de opties die worden beschreven in [Webdownload](web-download.md) (**[!UICONTROL File historization]** stap).
 
 ## Invoerparameters {#input-parameters}
 

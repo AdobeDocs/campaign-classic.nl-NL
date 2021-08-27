@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 7%
@@ -15,7 +15,9 @@ ht-degree: 7%
 
 # Marketingcampagnes ontwerpen en uitvoeren{#designing-marketing-campaigns}
 
-Met Adobe Campaign kunt u communicatie- en marketingcampagnes definiëren, optimaliseren, uitvoeren en analyseren. Adobe Campaign fungeert als een gemeenschappelijk centrum voor bestellingen en uitvoering voor marketingstrategieën. Raadpleeg [Toegangscampagnes](../../campaign/using/accessing-campaigns.md) en [Marketingcampagnes maken](../../campaign/using/setting-up-marketing-campaigns.md) voor meer informatie.
+![](../../assets/common.svg)
+
+Met Adobe Campaign kunt u communicatie- en marketingcampagnes definiëren, optimaliseren, uitvoeren en analyseren. Adobe Campaign fungeert als een gemeenschappelijk centrum voor bestellingen en uitvoering voor marketingstrategieën. Raadpleeg [Toegangscampagnes](../../distributed/using/accessing-campaigns.md) en [Marketingcampagnes maken](../../campaign/using/setting-up-marketing-campaigns.md) voor meer informatie.
 
 Daarnaast kunt u met de module **Marketing Resource Management (MRM)** marketingacties in een samenwerkingsmodus beheren door volledig beheer en realtime tracering van de betrokken taken, budgetten en marketingbronnen te bieden. Met het beheer van marketingbronnen kunt u het beheer van interne en externe processen, bronnen en marketingcampagnes optimaliseren en reguleren, evenals de relaties van derden (agentschappen, printers, enz.). Raadpleeg [deze sectie](../../mrm/using/about-marketing-resource-management.md) voor meer informatie.
 

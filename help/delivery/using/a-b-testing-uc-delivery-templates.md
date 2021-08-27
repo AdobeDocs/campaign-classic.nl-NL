@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 20%
@@ -14,6 +14,8 @@ ht-degree: 20%
 ---
 
 # De leveringssjablonen maken {#step-3--creating-two-delivery-templates}
+
+![](../../assets/common.svg)
 
 We willen nu twee leveringssjablonen maken. Naar elke sjabloon wordt verwezen in een **[!UICONTROL Email delivery]**-activiteit die is gekoppeld aan de **[!UICONTROL Split]**-activiteit. Raadpleeg [deze sectie](about-templates.md) voor meer informatie.
 
@@ -30,4 +32,4 @@ We willen nu twee leveringssjablonen maken. Naar elke sjabloon wordt verwezen in
 
    ![](assets/use_case_abtesting_deliverymodel_003.png)
 
-U kunt de leveringen nu configureren in de workflow. [Meer informatie](a-b-testing-uc-configuring-deliveries.md).
+U kunt de leveringen nu configureren in de workflow. [Meer info](a-b-testing-uc-configuring-deliveries.md).

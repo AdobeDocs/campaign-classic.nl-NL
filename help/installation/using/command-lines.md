@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 5cd4abb0-2bd2-4b23-902c-41b08a1d2f7a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 4%
@@ -15,9 +15,11 @@ ht-degree: 4%
 
 # Opdrachtregels{#command-lines}
 
+![](../../assets/v7-only.svg)
+
 De volgende opdrachtregels vereisen toegang tot de toepassingsserver. Voor plaatsingen die door Adobe worden ontvangen, kunnen deze bevelen slechts door Adobe worden uitgevoerd.
 
-## Een instantie {#creating-an-instance} maken
+## Een instantie maken {#creating-an-instance}
 
 Het maken van instanties kan worden uitgevoerd met behulp van opdrachtregels, met de syntaxis:
 
@@ -29,7 +31,7 @@ nlserver config -addinstance:instance/masques DNS[/lang]
 
 Met de opdracht **nlserver config -addinstance:instance1/demo*/eng** kunt u een instantie maken met de naam **instance1** in het Engels met de DNS-maskerdemo*.
 
-## Een database {#declaring-a-database} declareren
+## Een database declareren {#declaring-a-database}
 
 U kunt een bestaande database aan een instantie koppelen via de opdrachtregel door de volgende syntaxis te gebruiken:
 

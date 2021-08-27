@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Content bewerken{#editing-content}
+
+![](../../assets/common.svg)
 
 ## Een zichtbaarheidsvoorwaarde definiëren {#defining-a-visibility-condition}
 
@@ -139,7 +141,6 @@ U kunt alleen aanpassingsblokken en velden invoegen in tekstblokken.
 >
 
 
-
 ### Koppeling maken naar een URL {#link-to-a-url}
 
 Met de optie **Koppeling naar een externe URL** kunt u elke URL vanuit de broninhoud openen.
@@ -201,9 +202,8 @@ De beschikbare opties zijn als volgt:
 >[!NOTE]
 >
 >* **Pictogram** Verwijderen: Hiermee verwijdert u het blok en alle inhoud ervan.
-   >
-   >
-* **Pictogram** Dupliceren: dupliceert het blok evenals alle stijlen met betrekking tot het blok.
+>
+>* **Pictogram** Dupliceren: dupliceert het blok evenals alle stijlen met betrekking tot het blok.
 
 
 ## Afbeeldingen en animaties beheren {#managing-images-and-animations}

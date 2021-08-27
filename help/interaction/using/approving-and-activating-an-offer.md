@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: cf7649fe-f62a-4dfa-a19e-9c1ca545e3e3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 2%
@@ -15,13 +15,15 @@ ht-degree: 2%
 
 # Een aanbieding goedkeuren en activeren{#approving-and-activating-an-offer}
 
+![](../../assets/v7-only.svg)
+
 Zodra de inhoud van het aanbod volledig is, moet u het goedkeuren voor het worden gedupliceerd in het levende milieu en worden geleverd. Goedkeuring heeft betrekking op de inhoud van het aanbod en de geschiktheid ervan.
 
 De banner op het aanbiedingsdashboard vertelt u of de aanbieding de goedkeuringscyclus moet of niet.
 
 ![](assets/offer_validate_001.png)
 
-## Aanbiedingsinhoud {#approving-offer-content} goedkeuren
+## Aanbiedingsinhoud goedkeuren {#approving-offer-content}
 
 Als u inhoud van het aanbod goedkeurt, selecteert u de representatie(s) die u in de live omgeving beschikbaar wilt maken.
 
@@ -51,7 +53,7 @@ Voer de volgende stappen uit om de inhoud van de aanbieding goed te keuren:
    >
    >De **[!UICONTROL Content approved]**-vermelding betekent niet dat alle aanbiedingsrepresentaties zijn ingeschakeld en goedgekeurd. Hiermee wordt aangegeven dat het goedkeuringsproces voor inhoud is voltooid, ongeacht of alle aanbiedingen zijn ingeschakeld/goedgekeurd of niet.
 
-## Aanbiedingsgeschiktheid {#approving-offer-eligibility} goedkeuren
+## Aanbiedingsgeschiktheid voor goedkeuring {#approving-offer-eligibility}
 
 Goedkeuring van de aanbieding betekent aanvaarding of afwijzing van de aanbiedingsgewichten en de toelatingsregels die ook in de aanbieding zijn geconfigureerd of die zijn overgenomen van de regels die in de bovenliggende categorie zijn gemaakt.
 
@@ -83,7 +85,7 @@ Goedkeuring van de aanbieding betekent aanvaarding of afwijzing van de aanbiedin
 
    ![](assets/offer_validate_010.png)
 
-## Goedkeuring {#approval-tracking}
+## Goedkeuring bijhouden {#approval-tracking}
 
 Goedkeuring kan worden gevolgd op het dashboard van de aanbieding. Klik **[!UICONTROL Hide/display logs]** om tot het toegang te hebben.
 
@@ -93,7 +95,7 @@ Goedkeuring kan worden gevolgd op het dashboard van de aanbieding. Klik **[!UICO
 >
 >Tracking is ook beschikbaar op het tabblad **[!UICONTROL Audit]** van de aanbieding, met details over de opmerkingen van de revisoren.
 
-## Goedkeuring {#restart-the-approval} opnieuw starten
+## De goedkeuring opnieuw starten {#restart-the-approval}
 
 Nadat de goedkeuring is gestart, kan deze opnieuw worden gestart. Volg deze instructies om dit te doen:
 
@@ -103,7 +105,7 @@ Nadat de goedkeuring is gestart, kan deze opnieuw worden gestart. Volg deze inst
 
 ![](assets/offer_validate_013.png)
 
-## De aanbieding {#publishing-the-offer} publiceren
+## De aanbieding publiceren {#publishing-the-offer}
 
 Zodra de inhoud en de geschiktheid van een aanbieding allebei zijn goedgekeurd, wordt de aanbieding gepubliceerd door een werkschema dat automatisch voor elke aanbieding loopt de goedkeuringscyclus is gebeëindigd. De **[!UICONTROL Offer notification]** workflow wordt ook elke uur uitgevoerd om (indien nodig) de ruimten en categorieën in de aanbiedingscatalogus te synchroniseren van de ontwerpomgeving naar de live omgeving.
 
@@ -115,7 +117,7 @@ Klik op het aanbiedingslabel om het aanbod weer te geven dat beschikbaar is in d
 
 ![](assets/offer_golive_002.png)
 
-## Een aanbieding {#disabling-an-offer} uitschakelen
+## Een aanbieding uitschakelen {#disabling-an-offer}
 
 Zodra de aanbieding wordt goedgekeurd, kunt u het onbruikbaar maken.
 

@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Pakketten installeren met Linux{#installing-packages-with-linux}
+
+![](../../assets/v7-only.svg)
 
 Installeer Adobe Campaign 32-bits voor een Linux 32-bits platform. Installeer Adobe Campaign 64-bits voor een Linux 64-bits platform.
 
@@ -126,7 +128,7 @@ Houd rekening met het volgende wanneer u Adobe Campaign op een Debian 8/9-bestur
    aptitude install openjdk-7-jdk (Debian 9)
    ```
 
-## Parameters {#personalizing-parameters} aanpassen
+## Parameters aanpassen {#personalizing-parameters}
 
 Sommige parameters kunnen worden gepersonaliseerd via het bestand **customer.sh**
 
@@ -250,7 +252,7 @@ systemctl stop nlserver
 systemctl start nlserver
 ```
 
-### Oracle-client in Linux {#oracle-client-in-linux}
+### Oracle Client in Linux {#oracle-client-in-linux}
 
 Als u Oracle gebruikt met Adobe Campaign, moet u de clientlagen van het Oracle configureren in Linux.
 

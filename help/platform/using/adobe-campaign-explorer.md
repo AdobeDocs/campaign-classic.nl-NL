@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f,f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: bdc19e80744643097463e4e721b05a2ac8e51a2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 1%
 
 ---
 
-# Adobe Campaign-verkenner {#using-adobe-campaign-explorer} gebruiken
+# Adobe Campaign-verkenner gebruiken {#using-adobe-campaign-explorer}
+
+![](../../assets/common.svg)
 
 De Adobe Campaign-verkenner is toegankelijk via het werkbalkpictogram. Hiermee hebt u toegang tot de Adobe Campaign, alle Adobe Campaign-mogelijkheden, configuratieschermen en een gedetailleerdere weergave van enkele platformelementen.
 
@@ -23,11 +25,11 @@ De werkruimte **[!UICONTROL Explorer]** is verdeeld in drie zones:
 
 **1 - Boom**: U kunt de inhoud van de structuur aanpassen (knooppunten toevoegen, verplaatsen of verwijderen). Deze procedure is alleen bedoeld voor professionele gebruikers. Raadpleeg [deze sectie](#about-navigation-hierarchy).) voor meer informatie.
 
-**2 - Lijst**: u kunt deze lijst filteren, zoekopdrachten uitvoeren, informatie toevoegen of gegevens sorteren. [Meer informatie](adobe-campaign-ui-lists.md).
+**2 - Lijst**: u kunt deze lijst filteren, zoekopdrachten uitvoeren, informatie toevoegen of gegevens sorteren. [Meer info](adobe-campaign-ui-lists.md).
 
 **3 - Details**: u kunt de details van het geselecteerde element weergeven. Met het pictogram in de rechterbovensectie kunt u deze informatie op volledig scherm weergeven.
 
-## Mappen en boomstructuur{#about-navigation-hierarchy}
+## Mappen en navigatiestructuur{#about-navigation-hierarchy}
 
 De navigatiestructuur werkt als een bestandsbrowser (bijvoorbeeld Windows Verkenner). Mappen kunnen submappen bevatten. Als u een knooppunt selecteert, wordt de weergave weergegeven die overeenkomt met het knooppunt.
 

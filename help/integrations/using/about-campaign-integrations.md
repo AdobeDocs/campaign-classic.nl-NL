@@ -6,14 +6,16 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 7%
+ht-degree: 10%
 
 ---
 
 # Aan de slag met Adobe Campaign-integratie {#about-campaign-integrations}
+
+![](../../assets/common.svg)
 
 Adobe Experience Cloud is een uitgebreide reeks van best-in-klasse, geïntegreerde oplossingen die op een gemeenschappelijk gegevensplatform met een gemeenschappelijke reeks krachtige kerndiensten worden voortgebouwd.
 
@@ -25,8 +27,7 @@ De volledige lijst van Adobe oplossingen en kerndiensten die met Adobe Campaign 
 
 >[!CAUTION]
 >
->De meeste van deze integraties vereisen om het Systeem van Adobe Identity Management (IMS) uit te voeren, aan login via een Adobe ID. [Meer weten op deze pagina](../../integrations/using/about-adobe-id.md)?
-
+>De meeste van deze integraties vereisen om het Systeem van Adobe Identity Management (IMS) uit te voeren, aan login via een Adobe ID. [Meer informatie vindt u op deze pagina](../../integrations/using/about-adobe-id.md).
 
 ## Uw oplossingen koppelen {#working-with-experience-cloud-solutions}
 
@@ -90,7 +91,7 @@ De volgende lijst verleent toegang tot beschikbare documentatie van de Experienc
   </tr> 
   <tr> 
    <td> <strong>Adobe Analytics Connector</strong><br /> </td> 
-   <td> <strong>Adobe Analytics </strong> Connectorallows Adobe Campaign en Adobe Analytics communiceren via segmenten over gebruikersgedrag na een e-mailcampagne. Omgekeerd verzendt het indicatoren en attributen van e-mailcampagnes die door Adobe Campaign aan Adobe Analytics worden geleverd.<br /> <p><a href="../../platform/using/adobe-analytics-connector.md">Meer </a> informatie over de integratie van Analytics Connectors.</p><br /> </td> 
+   <td> <strong>Adobe Analytics </strong> Connectorallows Adobe Campaign en Adobe Analytics communiceren via segmenten over gebruikersgedrag na een e-mailcampagne. Omgekeerd verzendt het programma indicatoren en kenmerken van e-mailcampagnes die door Adobe Campaign aan Adobe Analytics worden geleverd.<br /> <p><a href="../../platform/using/adobe-analytics-connector.md">Meer </a> informatie over de integratie van Analytics Connectors.</p><br /> </td> 
   </tr> 
  </tbody> 
 </table>

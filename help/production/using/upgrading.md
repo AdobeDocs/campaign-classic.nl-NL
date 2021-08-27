@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1149'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Upgraden naar een nieuwe build (on-premise){#upgrading}
+
+![](../../assets/v7-only.svg)
 
 Voordat u het upgradeproces start, bepaalt en bevestigt u welke versie van Adobe Campaign moet worden bijgewerkt naar en raadpleegt u de [Opmerkingen bij de release](../../rn/using/latest-release.md).
 
@@ -24,7 +26,6 @@ Voordat u het upgradeproces start, bepaalt en bevestigt u welke versie van Adobe
 >* Lees [deze sectie](../../installation/using/general-architecture.md) en [bouwt verbetering](https://helpx.adobe.com/nl/campaign/kb/acc-build-upgrade.html) hoofdstuk alvorens te beginnen.
 
 >
-
 
 
 ## Windows {#in-windows}
@@ -38,7 +39,7 @@ Voor een Windows-omgeving voert u de onderstaande stappen uit om Adobe Campaign 
 
 Zie [deze sectie](../../installation/using/client-console-availability-for-windows.md) voor informatie over het bijwerken van de clientconsole.
 
-### Afsluitservices {#shut-down-services}
+### Afsluiten van services {#shut-down-services}
 
 Als u alle bestanden wilt vervangen door de nieuwe versie, moet u alle instanties van de NLSereservice afsluiten.
 
@@ -63,7 +64,7 @@ Als u alle bestanden wilt vervangen door de nieuwe versie, moet u alle instantie
 
    U kunt de Manager van de Taak van Vensters gebruiken om ervoor te zorgen alle processen worden tegengehouden.
 
-### Een upgrade uitvoeren van de Adobe Campaign-servertoepassing {#upgrade-the-adobe-campaign-server-application}
+### De Adobe Campaign-servertoepassing upgraden {#upgrade-the-adobe-campaign-server-application}
 
 Voer de volgende stappen uit om het upgradebestand uit te voeren:
 
@@ -79,7 +80,7 @@ Voer de volgende stappen uit om het upgradebestand uit te voeren:
 
 1. Wanneer de bewerking is voltooid, klikt u op **[!UICONTROL Finish]**.
 
-### Bronnen {#synchronize-resources} synchroniseren
+### Bronnen synchroniseren {#synchronize-resources}
 
 Gebruik de volgende opdrachtregel:
 
@@ -97,7 +98,7 @@ Op deze manier kunt u de volgende bewerkingen uitvoeren:
 
 Controleer vervolgens of de synchronisatie fouten of waarschuwingen heeft gegenereerd. Voor meer op dit, verwijs naar [Het oplossen van verbeteringsconflicten](#resolving-upgrade-conflicts).
 
-### Services {#restart-services} opnieuw starten
+### Herstartservices {#restart-services}
 
 De volgende diensten moeten opnieuw worden opgestart:
 
@@ -121,7 +122,7 @@ Voor een Linux-omgeving voert u de onderstaande stappen uit om Adobe Campaign bi
 >
 >Vanaf build 8757 is de bibliotheek van derden niet meer nodig.
 
-### Updates ophalen {#obtain-updated-packages}
+### Bijgewerkte pakketten ophalen {#obtain-updated-packages}
 
 Begin door beide bijgewerkte pakketten van Adobe Campaign te herstellen: Maak verbinding met de [portal Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) met behulp van uw gebruikersgegevens. Meer informatie over softwaredistributie vindt u op [deze pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
@@ -157,7 +158,7 @@ Het bestand is **nlserver6-v7-XXX.rpm**
 >
 >De volledige installatieprocedures worden beschreven in [deze sectie](../../installation/using/installing-campaign-standard-packages.md). De middelen worden automatisch gesynchroniseerd, nochtans moet u ervoor zorgen geen fouten voorkwamen. Raadpleeg [Verbeteringsconflicten oplossen](#resolving-upgrade-conflicts) voor meer informatie hierover.
 
-### De webserver {#reboot-the-web-server} opnieuw opstarten
+### De webserver opnieuw opstarten {#reboot-the-web-server}
 
 U moet Apache afsluiten voordat de nieuwe bibliotheek van toepassing wordt.
 
@@ -173,8 +174,7 @@ Hiervoor voert u de volgende opdracht uit:
 >* U MOET dit bevel uitvoeren tot u het volgende antwoord verkrijgt:
 
    >
-   >   
-   Deze bewerking is vereist om Apache de nieuwe bibliotheek te laten toepassen.
+   >   Deze bewerking is vereist om Apache de nieuwe bibliotheek te laten toepassen.
 
 
 Start vervolgens Apache opnieuw:
@@ -187,7 +187,7 @@ Start vervolgens Apache opnieuw:
 
 Tijdens middelsynchronisatie, laat **postupgrade** bevel u toe om te ontdekken of de synchronisatie fouten of waarschuwingen heeft geproduceerd.
 
-### Het synchronisatieresultaat {#view-the-synchronization-result} weergeven
+### Het synchronisatieresultaat weergeven {#view-the-synchronization-result}
 
 Er zijn twee manieren om het synchronisatieresultaat weer te geven:
 
@@ -236,13 +236,13 @@ Ga als volgt te werk als u het conflict handmatig wilt oplossen:
 1. Ga naar het conflict dat u hebt opgelost. Klik op het pictogram **[!UICONTROL Actions]** en selecteer **[!UICONTROL Declare as resolved]**.
 1. Sla uw wijzigingen op: het conflict is nu opgelost .
 
-### Aanbevolen procedures {#best-practices}
+### Best practices {#best-practices}
 
 Er kan een updatefout worden gekoppeld aan de databaseconfiguratie. Zorg ervoor de configuraties die door de technische beheerder en de gegevensbestandbeheerder worden uitgevoerd compatibel zijn.
 
 Een unicode-database mag bijvoorbeeld niet alleen de opslag van LATIN1-gegevens, enzovoort, toestaan.
 
-## Waarschuwen op de clientconsoles van de beschikbare update {#warn-the-client-consoles-of-the-available-update}
+## Waarschuwen als de clientconsoles van de beschikbare update {#warn-the-client-consoles-of-the-available-update}
 
 ### Windows {#in-windows-1}
 

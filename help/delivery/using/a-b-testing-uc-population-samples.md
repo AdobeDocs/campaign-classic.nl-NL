@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 7%
@@ -14,6 +14,8 @@ ht-degree: 7%
 ---
 
 # Populatievoorbeelden configureren {#step-2--configuring-population-samples}
+
+![](../../assets/common.svg)
 
 ## Vorm de activiteit van de Vraag {#configuring-the-query-activity}
 
@@ -29,7 +31,7 @@ ht-degree: 7%
 
    ![](assets/use_case_abtesting_createrecipients_003.png)
 
-## De splitsingsactiviteit {#configuring-the-split-activity} configureren
+## De activiteit Splitsen configureren {#configuring-the-split-activity}
 
 Met deze activiteit kunt u verschillende populaties maken: degene die levering A ontvangt, degene die levering B ontvangt, en de resterende populatie. Door willekeurige selectie te gebruiken, kunt u zich richten op slechts een deel van de populatie van elke levering.
 

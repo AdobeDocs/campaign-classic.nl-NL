@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Acties voor rapporten{#actions-on-reports}
+
+![](../../assets/common.svg)
 
 Wanneer u een rapport weergeeft, kunt u op de werkbalk een bepaald aantal handelingen uitvoeren. Deze worden hieronder beschreven.
 
@@ -23,7 +25,7 @@ Met de werkbalk kunt u het rapport bijvoorbeeld exporteren, afdrukken, archivere
 
 ![](assets/s_ncs_advuser_report_wizard_04.png)
 
-## Een rapport {#exporting-a-report} exporteren
+## Een rapport exporteren {#exporting-a-report}
 
 Selecteer de indeling waarin u het rapport wilt exporteren in de vervolgkeuzelijst. (.xls, .pdf of .ods).
 
@@ -56,7 +58,7 @@ Voor **[!UICONTROL List with group]** typerapporten die bestemd zijn om naar Exc
 * Als een rapport meerdere tabellen, grafieken enzovoort bevat. typeelementen, zullen zij onder andere worden uitgevoerd.
 * U kunt de regelterugloop in cellen forceren: deze configuratie zal in Excel worden gehouden. Voor meer op dit, verwijs naar [Bepalend celformaat](../../reporting/using/creating-a-table.md#defining-cell-format).
 
-### Exporteren {#postpone-the-export} uitstellen
+### Exporteren uitstellen {#postpone-the-export}
 
 U kunt het uitvoeren van een rapport uitstellen, bijvoorbeeld om op asynchrone vraag te wachten. Hiervoor voert u de volgende parameter in het initialisatiescript van de pagina in:
 
@@ -82,7 +84,7 @@ Raadpleeg [deze sectie](../../production/using/configuration-principle.md) voor 
 
 Raadpleeg [deze sectie](../../production/using/administration.md) voor meer informatie over de **nlserver** service.
 
-## Een rapport {#printing-a-report} afdrukken
+## Een rapport afdrukken {#printing-a-report}
 
 U kunt uw rapport afdrukken: Klik hiertoe op het printerpictogram: hiermee wordt het dialoogvenster geopend.
 

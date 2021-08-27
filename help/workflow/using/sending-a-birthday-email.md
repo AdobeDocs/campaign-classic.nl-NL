@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Een verjaardags-e-mail verzenden{#sending-a-birthday-email}
+
+![](../../assets/common.svg)
 
 ## Inleiding {#introduction}
 
@@ -31,14 +33,14 @@ Hiertoe maakt u een campagne en klikt u op het tabblad **[!UICONTROL Targeting a
 
 Voer vervolgens de volgende stappen uit:
 
-## Het verzenden {#configuring-the-scheduler} plannen
+## Het plannen van het verzenden {#configuring-the-scheduler}
 
 1. Voeg eerst een **Planner** toe om het verzenden van de levering elke dag te activeren. In het onderstaande voorbeeld wordt de levering elke dag om 18.00 uur gemaakt.
 
    ![](assets/recur_delivery2.png)
 
 
-## Ontvangers identificeren waarvan de verjaardag {#identifying-recipients-whose-birthday-it-is} is
+## Ontvangers identificeren van wie de verjaardag het is {#identifying-recipients-whose-birthday-it-is}
 
 Na het vormen van **[!UICONTROL Scheduler]** activiteit zodat het werkschema elke dag begint, identificeer alle ontvangers de waarvan geboortedatum de huidige datum evenaart.
 
@@ -112,7 +114,7 @@ Voor het instellen van dit gebruiksgeval hebben we de volgende workflow voor doe
 
 Als het huidige jaar **geen schrikkeljaar is** en de werkstroom op 1 Maart wordt in werking gesteld, moeten wij alle ontvangers selecteren die hun verjaardag gisteren (29 februari) zouden hebben gehad en hen toevoegen aan de lijst van ontvangers. In alle andere gevallen is geen aanvullende actie vereist.
 
-### Stap 1: Ontvangers selecteren {#step-1--selecting-the-recipients}
+### Stap 1: De ontvangers selecteren {#step-1--selecting-the-recipients}
 
 Na het vormen van **[!UICONTROL Scheduler]** activiteit zodat het werkschema elke dag begint, identificeer alle ontvangers de waarvan verjaardag de huidige dag is.
 
@@ -184,7 +186,7 @@ vars.currentIsALeapYear == 0 && vars.firstOfMarch == 1
 
 ![](assets/birthday-workflow_usecase_4.png)
 
-### Stap 3: Selecteer ontvangers die op 29 februari {#step-3--select-any-recipients-born-on-february-29th} zijn geboren
+### Stap 3: Selecteer de ontvangers die op 29 februari zijn geboren {#step-3--select-any-recipients-born-on-february-29th}
 
 Maak een **[!UICONTROL Fork]**-activiteit en koppel een van de uitgaande overgangen aan een **[!UICONTROL Query]**-activiteit.
 
@@ -196,13 +198,13 @@ Combineer de resultaten met een **[!UICONTROL Union]** activiteit.
 
 Koppel de resultaten van de twee **[!UICONTROL Test]** activiteitsvertakkingen aan een **[!UICONTROL Email delivery]** activiteit om een e-mail naar de lijst van al uw ontvangers op hun verjaardag te verzenden, zelfs aan die op 29 februari tijdens een niet-schrikkeljaar geboren.
 
-## Een terugkerende levering {#creating-a-recurring-delivery-in-a-targeting-workflow} maken
+## Een terugkerende levering maken {#creating-a-recurring-delivery-in-a-targeting-workflow}
 
 Voeg een **Terugkerende levering** activiteit toe die op het malplaatje wordt gebaseerd van verjaardags e-mail dat u wilt verzenden.
 
 >[!CAUTION]
 >
->Om de workflows uit te voeren, moeten de technische workflows met betrekking tot het campagnepakket worden gestart. Raadpleeg voor meer informatie de sectie [Lijst met technische workflows](../../workflow/using/about-technical-workflows.md).
+>Om de workflows uit te voeren, moeten de technische workflows met betrekking tot het campagnepakket worden gestart. Raadpleeg voor meer informatie de sectie [Lijst met technische workflows](about-technical-workflows.md).
 >
 >Als de goedkeuringsstappen voor de campagne zijn ingeschakeld, worden de leveringen pas verzonden nadat deze stappen zijn bevestigd. Raadpleeg voor meer informatie de sectie [De processen kiezen die moeten worden goedgekeurd](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved).
 

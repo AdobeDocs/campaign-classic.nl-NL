@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2442'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Werken met gegevenspakketten{#working-with-data-packages}
+
+![](../../assets/common.svg)
 
 ## Over gegevenspakketten {#about-data-packages}
 
@@ -93,7 +95,7 @@ Pakketten kunnen op drie verschillende manieren worden geëxporteerd:
 
 Nadat een pakket is geëxporteerd, kunt u het pakket en alle toegevoegde entiteiten importeren in een andere Campagne-instantie.
 
-### Een set objecten exporteren in een pakket {#exporting-a-set-of-objects-in-a-package}
+### Een set objecten in een pakket exporteren {#exporting-a-set-of-objects-in-a-package}
 
 De wizard Pakket exporteren is toegankelijk via het menu **[!UICONTROL Tools > Advanced > Export package...]** van de Adobe Campaign-clientconsole.
 
@@ -267,7 +269,7 @@ Entiteiten kunnen rechtstreeks vanaf hun locatie in de instantie aan een pakketd
 
    ![](assets/packagedefinition_entityadded.png)
 
-### Genereren van pakketdefinities {#configuring-package-definitions-generation} configureren
+### Genereren van pakketdefinities configureren {#configuring-package-definitions-generation}
 
 De productie van het pakket kan van de pakketdefinitie **[!UICONTROL Content]** tabel worden gevormd. Klik op de koppeling **[!UICONTROL Generation parameters]** om dit te doen.
 
@@ -287,7 +289,7 @@ De productie van het pakket kan van de pakketdefinitie **[!UICONTROL Content]** 
    >
    >In dat geval voorkomt u dat versies worden samengevoegd door de optie **[!UICONTROL Include default values]** te selecteren, aangezien alle kenmerken van de eerste instantie samen met het pakket worden geëxporteerd.
 
-### Pakketten exporteren uit een pakketdefinitie {#exporting-packages-from-a-package-definition}
+### Pakketten uit een pakketdefinitie exporteren {#exporting-packages-from-a-package-definition}
 
 Voer de volgende stappen uit om een pakket uit een pakketdefinitie te exporteren:
 
@@ -297,7 +299,7 @@ Voer de volgende stappen uit om een pakket uit een pakketdefinitie te exporteren
 
    ![](assets/packagedefinition_packageexport.png)
 
-## Pakketten {#importing-packages} importeren
+## Pakketten importeren {#importing-packages}
 
 De wizard voor het importeren van pakketten is toegankelijk via het hoofdmenu **[!UICONTROL Tools > Advanced > Package import...]** van de Adobe Campaign-clientconsole.
 
@@ -305,7 +307,7 @@ U kunt een pakket importeren uit een eerder uitgevoerde exportbewerking, bijvoor
 
 ![](assets/ncs_datapackage_import.png)
 
-### Een pakket installeren vanuit een bestand {#installing-a-package-from-a-file}
+### Een pakket uit een bestand installeren {#installing-a-package-from-a-file}
 
 Als u een bestaand gegevenspakket wilt importeren, selecteert u het XML-bestand en klikt u op **[!UICONTROL Open]**.
 
@@ -317,7 +319,7 @@ Klik op **[!UICONTROL Next]** en **[!UICONTROL Start]** om het importeren te sta
 
 ![](assets/ncs_datapackage_import_2.png)
 
-### Een ingebouwd pakket {#installing-a-standard-package} installeren
+### Een ingebouwd pakket installeren {#installing-a-standard-package}
 
 Standaardpakketten zijn ingebouwde pakketten die worden geïnstalleerd wanneer de Adobe Campaign wordt geconfigureerd. Afhankelijk van uw toestemmingen en uw plaatsingsmodel, kunt u nieuwe standaardpakketten invoeren als u nieuwe opties of toe:voegen-ons verwerft, of als u aan een nieuwe aanbieding bevordert.
 
@@ -325,7 +327,7 @@ Raadpleeg de licentieovereenkomst om te controleren welke pakketten u kunt insta
 
 Raadpleeg [deze pagina](../../installation/using/installing-campaign-standard-packages.md) voor meer informatie over ingebouwde pakketten.
 
-## Beste werkwijzen voor gegevenspakketten {#data-package-best-practices}
+## Aanbevolen werkwijzen voor gegevenspakketten {#data-package-best-practices}
 
 In deze sectie wordt beschreven hoe u gegevenspakketten op consistente wijze kunt ordenen gedurende de levensduur van het project.
 
@@ -405,7 +407,7 @@ Nu er typen zijn gedefinieerd, moeten we een naamgevingsconventie opgeven. Adobe
 >
 >Het is beter regels op te stellen voor het bepalen van het juiste aantal pakketten.
 
-#### Volgorde {#entity-packages-order} voor entiteitspakketten
+#### Volgorde van pakketten voor entiteiten {#entity-packages-order}
 
 Om het importeren te vergemakkelijken, moeten eenheidspakketten worden geordend op het moment dat ze worden geïmporteerd. Bijvoorbeeld:
 * 001 - Schema
@@ -421,7 +423,7 @@ Om het importeren te vergemakkelijken, moeten eenheidspakketten worden geordend 
 
 Pakketnummer &quot;200&quot; mag niet worden gebruikt voor een specifieke campagne: dit nummer zal worden gebruikt om iets bij te werken dat alle campagnes aangaat .
 
-#### Pakket {#update-package} bijwerken
+#### Pakket bijwerken {#update-package}
 
 Het laatste punt betreft de nummering van updatepakketten. Het is uw pakketnummer (entiteit, functie of campagne) met het voorvoegsel &quot;5&quot;. Bijvoorbeeld:
 * 5001 om één schema bij te werken
@@ -440,7 +442,7 @@ Het updatepakket mag slechts één specifieke entiteit bevatten, zodat het gemak
    * Parallel hieraan wordt het 101-pakket bijgewerkt en toegevoegd aan de externe account, maar het wordt niet geïmplementeerd.
       ![](assets/ncs_datapackage_best-practices-1.png)
 
-#### Documentatie {#package-documentation} verpakken
+#### Pakketdocumentatie {#package-documentation}
 
 Wanneer u een pakket bijwerkt, moet u altijd een opmerking in het beschrijvingsveld plaatsen om eventuele wijzigingen en redenen (bijvoorbeeld &quot;voeg een nieuw schema toe&quot; of &quot;repareer een fout&quot;) nader toe te lichten.
 

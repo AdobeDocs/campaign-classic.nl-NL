@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3022'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Technische e-mailconfiguraties{#email-deliverability}
+
+![](../../assets/v7-only.svg)
 
 ## Overzicht {#overview}
 
@@ -75,7 +77,7 @@ De statistieken van de levering worden gehouden voor elke doel MX en voor elke b
 
 Het bronIP adres past het openbare IP adres, d.w.z. het adres aan zoals het door de verre e-mailserver wordt gezien. Dit IP adres kan van het adres van de machine verschillend zijn die gastheren **mta**, als een NATIONAAL router wordt verstrekt. Dit is waarom de statistiekserver een herkenningsteken gebruikt dat openbare IP (**publicId**) aanpast. De koppeling tussen het lokale adres en deze id wordt gedeclareerd in het configuratiebestand **serverConf.xml**. Alle parameters die beschikbaar zijn in **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
-## Uitvoerregeling van levering {#delivery-output-controlling}
+## Uitvoercontrole van levering {#delivery-output-controlling}
 
 Voor het verzenden van berichten naar e-mailservers vraagt de component **Email Traffic Shaper** om een verbinding van de statistische server. Nadat het verzoek is geaccepteerd, wordt de verbinding geopend.
 
@@ -97,7 +99,7 @@ Wanneer een bericht wordt verzonden, zijn er 3 mogelijke resultaten:
    >
    >Een **pad** is een verbinding tussen de Adobe Campaign **mta** en het doel **mta**. De Adobe Campaign **mta** kan van verscheidene beginIPs en verscheidene doeldomeinIPs kiezen.
 
-### Afmelden van bericht {#message-abandonment}
+### Berichten verlaten {#message-abandonment}
 
 Verlaten berichten zijn teruggekeerd aan **mta** en niet meer beheerd door **mtachild**.
 
@@ -109,7 +111,7 @@ Een bericht wordt toegevoegd wanneer het in de actieve rij aankomt en er geen be
 
 Een pad wordt doorgaans als niet beschikbaar gemarkeerd voor een variabele hoeveelheid tijd na een verbindingsfout. De periode van onbeschikbaarheid is afhankelijk van de frequentie en leeftijd van fouten.
 
-## Configuratie Statistische server {#statistics-server-configuration}
+## Configuratie van de Statistieken-server {#statistics-server-configuration}
 
 De statistische server kan door verscheidene instanties worden gebruikt: het moet onafhankelijk van de instanties worden gevormd die het zullen gebruiken.
 
@@ -119,7 +121,7 @@ Begin door het gegevensbestand te bepalen van Adobe Campaign dat de configuratie
 
 Standaard wordt de **stat** module gestart voor elke instantie. Wanneer de instanties op de zelfde machine worden mutualiseerd, of wanneer de instanties het zelfde IP adres delen, wordt één enkele statistiekenserver gebruikt: de andere moeten worden uitgeschakeld .
 
-### Definitie van serverpoort {#definition-of-the-server-port}
+### Definitie van de serverpoort {#definition-of-the-server-port}
 
 Door gebrek, luistert de statistiekserver op haven 7777. Deze poort kan worden gewijzigd in het bestand **serverConf.xml**. Alle parameters die beschikbaar zijn in **serverConf.xml** worden vermeld in deze [sectie](../../installation/using/the-server-configuration-file.md).
 
@@ -229,7 +231,7 @@ Om de configuratie opnieuw te laden zonder de statistiekenserver opnieuw te begi
 >
 >Deze opdrachtregel heeft de voorkeur boven **Nlserver opnieuw opstarten**. Zo wordt voorkomen dat statistische gegevens die zijn verzameld voordat het opnieuw opstarten verloren gaat en worden pieken in gebruik voorkomen die in strijd kunnen zijn met de quota die in de MX-regels zijn vastgelegd.
 
-### Het vormen MX regels {#configuring-mx-rules}
+### MX-regels configureren {#configuring-mx-rules}
 
 In het **[!UICONTROL MX management]**-document worden alle domeinen weergegeven die aan een MX-regel zijn gekoppeld.
 
@@ -335,11 +337,11 @@ Deze optie wordt met name gebruikt door de Japanse markt voor **Deco-mail**, **D
 
 ## Configuratie van de leveringsserver {#delivery-server-configuration}
 
-### Synchronisatie van klok {#clock-synchronization}
+### Synchronisatie vergrendelen {#clock-synchronization}
 
 De klokken van alle servers die het Adobe Campaign-platform (inclusief de database) vormen, moeten worden gesynchroniseerd en hun systemen moeten op dezelfde tijdzone worden ingesteld.
 
-### Coördinaten van de statistische server {#coordinates-of-the-statistics-server}
+### Coördinaten van de statistiekserver {#coordinates-of-the-statistics-server}
 
 Het adres van de statistische server moet worden opgegeven in **mta**.
 
@@ -361,7 +363,7 @@ Als u de statistische server op dezelfde computer wilt gebruiken, moet u ten min
 >
 >Als dit veld niet is ingevuld, wordt **mta** niet gestart.
 
-### Lijst met IP-adressen die {#list-of-ip-addresses-to-use} moeten worden gebruikt
+### Lijst met IP-adressen die moeten worden gebruikt {#list-of-ip-addresses-to-use}
 
 De configuratie betreffende verkeersbeheer wordt gevestigd in **mta/child/smtp** element van het configuratiedossier.
 
@@ -408,11 +410,11 @@ Als, bijvoorbeeld, het eerste adres niet voor een bepaalde MX kan worden gebruik
 
    ![](assets/s_ncs_install_mta_ips.png)
 
-## Optimalisatie voor verzenden van e-mail {#email-sending-optimization}
+## Optimalisatie van e-mailverzending {#email-sending-optimization}
 
 De interne architectuur van de Adobe Campaign **mta** heeft een effect op de configuratie voor het optimaliseren van e-maillevering. Hier volgen enkele tips voor het verbeteren van uw leveringen.
 
-### Pas de parameter maxWaitingMessages {#adjust-the-maxwaitingmessages-parameter} aan
+### De parameter maxWaitingMessages aanpassen {#adjust-the-maxwaitingmessages-parameter}
 
 De **maxWaitingMessages** parameter wijst op het hoogste aantal berichten die vooraf door **mtachild** worden voorbereid. Berichten worden pas uit deze lijst verwijderd nadat ze zijn verzonden of verlaten.
 
@@ -422,6 +424,6 @@ Zodra de **maxWorkingSetMb** (256) drempel wordt bereikt, houdt de leveringsserv
 
 De **maxWorkingSetMb** parameter wordt berekend empirisch door het maximumaantal berichten met de gemiddelde berichtgrootte te vermenigvuldigen en het resultaat met 2.5 te vermenigvuldigen. Als een bericht bijvoorbeeld een gemiddelde grootte heeft van 50 kB en de parameter **maxWaitingMessages** 1.000 is, wordt gemiddeld 125 MB gebruikt.
 
-### Het aantal onderliggende elementen aanpassen {#adjust-the-number-of-mtachild}
+### Het aantal onderliggende items aanpassen {#adjust-the-number-of-mtachild}
 
 Het aantal kinderen mag niet groter zijn dan het aantal processoren in de machine (ongeveer 1000 sessies). Wij adviseren dat u 8 **mtachild** niet overschrijdt. U kunt dan het aantal berichten per **child** (**maxMsgPerChild**) verhogen om een voldoende levensduur-spanwijdte te bereiken.

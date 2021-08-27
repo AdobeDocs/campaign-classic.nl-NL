@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Profielen synchroniseren{#synchronizing-profiles}
+
+![](../../assets/v7-only.svg)
 
 ACS Connector repliceert gegevens van Campaign v7 aan Campaign Standard. De gegevens die van Campagne v7 worden ontvangen kunnen in Campaign Standard worden gebruikt om leveringen tot stand te brengen. U kunt zien hoe profielen worden gesynchroniseerd door de hieronder vermelde bewerkingen uit te voeren.
 
@@ -67,7 +69,7 @@ De stappen hieronder voor het veranderen van één enkel punt van gegevens biede
 
 ## Een workflow maken {#creating-a-workflow}
 
-Profielen en services die zijn gerepliceerd vanuit Campaign v7, zijn beschikbaar voor digitale marketers om de rijke gegevens in Campaign Standard te benutten. In de onderstaande instructies ziet u hoe u een query toevoegt aan een Campaign Standard-workflow en deze vervolgens gebruikt met de gerepliceerde database.
+De profielen en de diensten die van Campaign v7 worden herhaald zijn beschikbaar aan digitale marktleiders om de rijke gegevens in Campaign Standard te gebruiken. In de onderstaande instructies ziet u hoe u een query toevoegt aan een Campaign Standard-workflow en deze vervolgens gebruikt met de gerepliceerde database.
 
 Zie [Workflows](../../workflow/using/about-workflows.md) voor meer informatie en volledige instructies met betrekking tot Campaign Standard-workflows.
 

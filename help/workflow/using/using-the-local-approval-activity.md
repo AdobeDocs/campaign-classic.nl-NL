@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # De lokale goedkeuringsactiviteit gebruiken{#using-the-local-approval-activity}
+
+![](../../assets/common.svg)
 
 Met de **[!UICONTROL Local approval]**-activiteit die is geïntegreerd in een doelworkflow kunt u een goedkeuringsproces voor ontvangers instellen voordat de levering wordt verzonden.
 
@@ -47,11 +49,11 @@ De belangrijkste stappen in het lokale goedkeuringsproces zijn:
 
    ![](assets/local_validation_intro_5.png)
 
-## Stap 1: Het creëren van het malplaatje van de gegevensdistributie {#step-1--creating-the-data-distribution-template-}
+## Stap 1: De sjabloon voor gegevensdistributie maken {#step-1--creating-the-data-distribution-template-}
 
 Met de sjabloon voor gegevensdistributie kunt u de populatie beperken die het resultaat is van het richten op basis van gegevensgroepering, terwijl u elke waarde kunt toewijzen aan een lokale toezichthouder. In dit voorbeeld hebben we het veld **[!UICONTROL Email address domain]** gedefinieerd als een distributieveld en een domein toegewezen aan elke lokale toezichthouder
 
-Raadpleeg [Het aantal subsetrecords per gegevensdistributie beperken](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution) voor meer informatie over het maken van een sjabloon voor gegevensdistributie.
+Raadpleeg [Het aantal subsetrecords per gegevensdistributie beperken](split.md#limiting-the-number-of-subset-records-per-data-distribution) voor meer informatie over het maken van een sjabloon voor gegevensdistributie.
 
 1. Als u de sjabloon voor gegevensdistributie wilt maken, gaat u naar het knooppunt **[!UICONTROL Resources > Campaign management > Data distribution]** en klikt u op **[!UICONTROL New]**.
 
@@ -85,7 +87,7 @@ Raadpleeg [Het aantal subsetrecords per gegevensdistributie beperken](../../work
       >
       >Controleer of de juiste rechten aan de exploitanten zijn toegekend.
 
-## Stap 2: De doelworkflow {#step-2--creating-the-targeting-workflow} maken
+## Stap 2: De doelworkflow maken {#step-2--creating-the-targeting-workflow}
 
 Voor het instellen van dit gebruiksgeval hebben we de volgende workflow voor doelversie gemaakt:
 
@@ -106,7 +108,7 @@ De volgende activiteiten zijn toegevoegd:
 
 Het stroomopwaartse richten bestaat uit twee vragen, één doorsnede en één spleet. De populatie die het gevolg is van het richten kan worden beperkt gebruikend een **[!UICONTROL Split]** activiteit gebruikend een malplaatje van de gegevensdistributie.
 
-Raadpleeg [Splitsen](../../workflow/using/split.md) voor meer informatie over het configureren van een gesplitste activiteit. Het maken van een sjabloon voor gegevensdistributie wordt beschreven in [Het aantal subsetrecords per gegevensdistributie beperken](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution).
+Raadpleeg [Splitsen](split.md) voor meer informatie over het configureren van een gesplitste activiteit. Het maken van een sjabloon voor gegevensdistributie wordt beschreven in [Het aantal subsetrecords per gegevensdistributie beperken](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
 Als u niet de populatie van de vraag wilt beperken, moet u niet **[!UICONTROL Query]**, **[!UICONTROL Intersection]**, en **[!UICONTROL Split]** activiteiten gebruiken. In dit geval voert u de sjabloon voor gegevensdistributie in de eerste **[!UICONTROL Local approval]**-activiteit in.
 
@@ -134,7 +136,7 @@ In het distributiemalplaatje, hebben wij ervoor gekozen om de bevolking tot 10% 
 
 De **[!UICONTROL Local approval]** activiteit laat u een bericht naar elke lokale supervisor verzenden.
 
-Raadpleeg [Lokale goedkeuring](../../workflow/using/local-approval.md) voor meer informatie over het configureren van de **[!UICONTROL Local approval]**-activiteit.
+Raadpleeg [Lokale goedkeuring](local-approval.md) voor meer informatie over het configureren van de **[!UICONTROL Local approval]**-activiteit.
 
 ![](assets/local_validation_workflow_2.png)
 

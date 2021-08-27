@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
 
 ---
 
-# E-mails verzenden naar Japanse mobiele apparaten {#sending-emails-on-japanese-mobiles}
+# E-mails verzenden naar Japanse mobiele telefoons {#sending-emails-on-japanese-mobiles}
+
+![](../../assets/common.svg)
 
 ## E-mailindelingen voor Japanse mobiele apparaten {#email-formats-for-japanese-mobiles}
 
@@ -50,7 +52,7 @@ Daarom moet u:
 
 ## E-mailinhoud testen {#testing-the-email-content}
 
-### Een voorbeeld weergeven van het bericht {#previewing-the-message}
+### Een voorbeeld van het bericht bekijken {#previewing-the-message}
 
 Met Adobe Campaign kunt u controleren of de berichtindeling is aangepast voor verzending naar een Japanse mobiele telefoon.
 
@@ -64,7 +66,7 @@ Als u op het tabblad **[!UICONTROL Preview]** van het venster voor het bewerken 
 
    ![](assets/deco-mail_06.png)
 
-### Typologieregel {#running-typology-rule} uitvoeren
+### Typologieregel uitvoeren {#running-typology-rule}
 
 Naast de diagnose van de voorvertoning wordt een tweede controle uitgevoerd bij de verzending van een bewijs of een levering: een specifieke typologieregel, **[!UICONTROL Deco-mail check]**, wordt tijdens de analyse gestart.
 

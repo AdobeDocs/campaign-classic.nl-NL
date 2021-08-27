@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 12a255fe-66f9-40ce-b19e-c24322c2e009
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Beheer{#administration}
+
+![](../../assets/v7-only.svg)
 
 Automatisch opstarten van de Adobe Campaign-modules (**web**, **mta**, **wfserver**, enz.) wordt geleverd door de **nlserver**-server.
 
@@ -80,17 +82,13 @@ Hier volgt een lijst met de gebruikelijke beheeropdrachten die in Linux toeganke
    >* Gebruik de optie **-verbose** om aanvullende informatie over proceshandelingen weer te geven.
 
       >
-      >   
-      Voorbeeld:
+      >   Voorbeeld:
       >
-      >   
-      **webbreedbeeldscherm opnieuw starten**
+      >   **webbreedbeeldscherm opnieuw starten**
       >
-      >   
-      **nlserver start mta@myinstance -verbose**
+      >   **nlserver start mta@myinstance -verbose**
       >
-      >   
-      Met deze optie voegt u aanvullende logbestanden toe. We raden u aan om de processen opnieuw te starten zonder de optie **-verbose** als u de gewenste informatie hebt gevonden, om overbelasting van logbestanden te voorkomen.
+      >   Met deze optie voegt u aanvullende logbestanden toe. We raden u aan om de processen opnieuw te starten zonder de optie **-verbose** als u de gewenste informatie hebt gevonden, om overbelasting van logbestanden te voorkomen.
 
 
 * Start alle Adobe Campaign-processen op (gelijk aan het starten van de **nlserver6**-service):

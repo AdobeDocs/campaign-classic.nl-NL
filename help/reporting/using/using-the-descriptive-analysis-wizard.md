@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 1%
@@ -15,9 +15,11 @@ ht-degree: 1%
 
 # De wizard voor beschrijvende analyse gebruiken{#using-the-descriptive-analysis-wizard}
 
+![](../../assets/common.svg)
+
 Als u een beschrijvend analyserapport wilt maken, gebruikt u de toegewezen wizard. De configuratie is afhankelijk van de te analyseren gegevens en van de gewenste rendering.
 
-## Gegevens in de database {#analyzing-data-in-the-database} analyseren
+## Gegevens in de database analyseren {#analyzing-data-in-the-database}
 
 De beschrijvende analysewizard kan worden gestart via het menu **[!UICONTROL Tools > Descriptive analysis]**: in dit geval heeft de analyse standaard betrekking op ontvangers (**nms:ontvanger**). Het is van toepassing op alle gegevens in de Adobe Campaign-database.
 
@@ -33,7 +35,7 @@ Als u statistieken over een deel van de gegevens wilt produceren, kunt u een fil
 
 De analyse zal alleen betrekking hebben op ontvangers van databanken van 16 jaar en ouder die in Londen wonen.
 
-## Een gegevensset {#analyzing-a-set-of-data} analyseren
+## Een set gegevens analyseren {#analyzing-a-set-of-data}
 
 U kunt de beschrijvende analysewizard gebruiken via een andere context: een lijst, een workflowovergang, een of meer leveringen, een selectie van ontvangers, enz.
 
@@ -57,7 +59,7 @@ Open de beschrijvende analysewizard door items te selecteren en met de rechtermu
 
    Hier worden voorbeelden gegeven van beschrijvende analyses voor leveringen: [Een populatie analyseren](../../reporting/using/use-cases.md#analyzing-a-population) en hier: [Logbestanden voor het bijhouden van ontvangers analyseren](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
 
-## Het vormen van het kwalitatieve verdelingsmalplaatje {#configuring-the-qualitative-distribution-template}
+## De kwalitatieve distributiesjabloon configureren {#configuring-the-qualitative-distribution-template}
 
 Met de sjabloon **[!UICONTROL Qualitative distribution]** kunt u statistieken maken over alle typen gegevens (bijvoorbeeld bedrijfsnaam, e-maildomein).
 
@@ -106,7 +108,7 @@ De opties zijn afhankelijk van de inhoud van het veld:
 
    ![](assets/reporting_descriptive_initialize_modulo_result.png)
 
-### Gegevens in de tabel {#displaying-data-in-the-table} weergeven
+### Gegevens in de tabel weergeven {#displaying-data-in-the-table}
 
 Gebruik de werkbalk om de weergave van variabelen in de tabel aan te passen: Verwijder een kolom, geef gegevens in lijnen eerder dan kolommen weer, verplaats een kolom naar links of rechts, bekijk of wijzig de waardeberekening.
 
@@ -116,7 +118,7 @@ In het bovenste gedeelte van het venster kunt u de weergave-instellingen selecte
 
 U kunt de naam van de statistieken en de subtotalen weergeven of verbergen en de richting van de statistieken kiezen. Voor meer op dit, verwijs naar [de montages van de het rapportvertoning van de Analyse](../../reporting/using/processing-a-report.md#analysis-report-display-settings).
 
-### Gegevens weergeven in het diagram {#displaying-data-in-the-chart}
+### Gegevens in het diagram weergeven {#displaying-data-in-the-chart}
 
 In de eerste stap van de wizard voor beschrijvende analyse kunt u ervoor kiezen de gegevens alleen in diagramvorm weer te geven, zonder een tabel. In dit geval moet variabele selectie plaatsvinden tijdens het configureren van de afbeelding. U moet eerst het aantal variabelen selecteren dat u wilt weergeven en de velden in de desbetreffende database selecteren.
 
@@ -180,7 +182,7 @@ De volgende bewerkingen zijn mogelijk:
 
       ![](assets/report_compute_data_sample4.png)
 
-### Het rapport {#displaying-the-report} weergeven
+### Het rapport weergeven {#displaying-the-report}
 
 De laatste stap van de tovenaar laat u het rapport, d.w.z. de lijst of de grafiek tonen aangezien zij zijn gevormd.
 
@@ -196,7 +198,7 @@ Wanneer het rapport een grafiek omvat, laten de etiketten van de legenda u de ge
 
 ![](assets/report_display_data_in_graph.png)
 
-## De kwantitatieve distributiesjabloon {#configuring-the-quantitative-distribution-template} configureren
+## De kwantitatieve distributiesjabloon configureren {#configuring-the-quantitative-distribution-template}
 
 Om een beschrijvende analyse te produceren zelf, selecteer **Nieuwe beschrijvende analyse van een malplaatje** optie als het niet door gebrek wordt geplaatst.
 

@@ -2,20 +2,22 @@
 product: campaign
 title: Opmerkingen bij de release van campagne 18.10
 description: Opmerkingen bij de release voor campagne 18.10
-feature: Overzicht
+feature: Overview
 role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '2370'
+source-wordcount: '2369'
 ht-degree: 7%
 
 ---
 
 # Release 18.10{#release-18-10}
 
-## Release 18.10.6 - build 8985{#release-18-10-6-build-8985}
+![](../../assets/v7-only.svg)
+
+## Release 18.10.6 - Build 8985{#release-18-10-6-build-8985}
 
 12 juli 2019
 
@@ -27,7 +29,7 @@ ht-degree: 7%
 * Verbeterde machtigingen om het pakket met de beveiligingszone uit te voeren wanneer u een interne account gebruikt.
 * Probleem verholpen waarbij fouten in de onderliggende logboeken konden optreden. (NEO-8978)
 
-## Release 18.10.5 - build 8984{#release-18-10-5-build-8984}
+## Release 18.10.5 - Build 8984{#release-18-10-5-build-8984}
 
 23 april 2019
 
@@ -37,7 +39,7 @@ ht-degree: 7%
 * Verwijderd de recordlimiet van 10.000 in WorkflowHeatmap om een probleem met ontbrekende gegevens op te lossen. (NEO-12329)
 * Probleem verholpen bij het gebruik van de optie &quot;Alle aanvullende gegevens uit de hoofdset behouden&quot; in een verrijkingswerkstroom. (NEO-13291)
 
-## Release 18.10.4 - build 8983{#release-18-10-4-build-8983}
+## Release 18.10.4 - Build 8983{#release-18-10-4-build-8983}
 
 15 april 2019
 
@@ -50,7 +52,7 @@ ht-degree: 7%
 * In de integratie Analytics is het nu toegestaan AAM segmentgegevens op te halen met het teken %. (NEO-12025)
 * Probleem verholpen waarbij Tomcat vastliep tijdens het verzenden van pushberichten via HTTP2. (NEO-12701)
 
-## Release 18.10.3 - build 8981{#release-18-10-3-build-8981}
+## Release 18.10.3 - Build 8981{#release-18-10-3-build-8981}
 
 29 januari 2019
 
@@ -74,7 +76,7 @@ ht-degree: 7%
 * Probleem verholpen waarbij een fout met tekens werd gegenereerd bij het verzenden van pushberichten op een mobiele toepassing.
 * Probleem verholpen waarbij werd voorkomen dat in een externe account van het type Midden-sourcing werd overgeschakeld van de FDA naar de SOAP-synchronisatiemethode.
 
-## Release 18.10.2 - build 8978{#release-18-10-2-build-8978}
+## Release 18.10.2 - Build 8978{#release-18-10-2-build-8978}
 
 6 december 2018
 
@@ -96,7 +98,7 @@ ht-degree: 7%
 * Probleem opgelost met de berekening van de werkstroomduur in Workflow HeatMap.
 
 
-## Release 18.10 - build 8977{#release-18-10-build-8977}
+## Release 18.10 - Build 8977{#release-18-10-build-8977}
 
 5 nov. 2018
 

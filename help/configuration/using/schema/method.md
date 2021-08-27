@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 0fb74318-fe09-473c-8e33-1f3afd66b4cc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 3%
@@ -15,11 +15,13 @@ ht-degree: 3%
 
 # methode-element {#method--element}
 
+![](../../../assets/v7-only.svg)
+
 ## Inhoudsmodel {#content-model-10}
 
 methode:==( help: | Parameters)
 
-## Kenmerken {#attributes-10}
+## Attributen {#attributes-10}
 
 * @_operation (tekenreeks)
 * @access (tekenreeks)
@@ -50,7 +52,7 @@ SOAP-methoden maken toepassingsprocessen mogelijk.
 
 De &quot;@bibliotheek&quot; is nodig voor het declareren van een nieuwe methode (niet-native): de naamruimte en de naam die voor de bibliotheek worden gebruikt, zijn onafhankelijk van de naamruimte en naam van het schema waarin de declaratie zich bevindt.
 
-## Kenmerkbeschrijving {#attribute-description-10}
+## Beschrijving van kenmerk {#attribute-description-10}
 
 * **toegang (tekenreeks)**: this attribute define access control for using the method. Als dit kenmerk ontbreekt, is identificatie verplicht. Beschikbare waarden zijn: &#39;anoniem&#39;, &#39;admin&#39; en &#39;sql&#39;.
 * **const (Boolean)**: als deze eigenschap is geactiveerd, betekent dit dat de gedeclareerde methode de entiteit wijzigt

@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Gebruiksscenario’s{#use-cases}
+
+![](../../assets/common.svg)
 
 ## Een populatie analyseren {#analyzing-a-population}
 
@@ -37,7 +39,7 @@ In dit voorbeeld selecteert u de sjabloon **[!UICONTROL Qualitative distribution
 
 ![](assets/reporting_descriptive_quickstart_step_1.png)
 
-### Variabelen selecteren om {#selecting-the-variables-to-display} weer te geven
+### Variabelen selecteren voor weergave {#selecting-the-variables-to-display}
 
 In de volgende stap kunt u de gegevens selecteren die in de tabel moeten worden weergegeven.
 
@@ -57,7 +59,7 @@ Nadat de lijnen en kolommen zijn gedefinieerd, kunt u deze wijzigen, verplaatsen
 
 ![](assets/reporting_descriptive_quickstart_step_2b.png)
 
-### De weergave-indeling {#defining-the-display-format} definiëren
+### De weergave-indeling definiëren {#defining-the-display-format}
 
 In de volgende stap van de wizard kunt u het type diagram selecteren dat u wilt genereren.
 
@@ -67,7 +69,7 @@ Kies in dit geval het histogram.
 
 Mogelijke configuraties van de verschillende grafiek worden gedetailleerd in [de sectie van het het rapportdiagram van de Analyse opties](../../reporting/using/processing-a-report.md#analysis-report-chart-options).
 
-### De statistiek configureren om {#configuring-the-statistic-to-calculate} te berekenen
+### De te berekenen statistiek configureren {#configuring-the-statistic-to-calculate}
 
 Geef vervolgens de berekeningen op die op de verzamelde gegevens moeten worden toegepast. Standaard worden de waarden door de wizard Omschrijvende analyse een eenvoudige telling uitgevoerd.
 
@@ -77,7 +79,7 @@ In dit venster kunt u de lijst met statistieken definiëren die moeten worden be
 
 Als u een nieuwe statistiek wilt maken, klikt u op de knop **[!UICONTROL Add]**. Raadpleeg [Berekening van statistieken](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation) voor meer informatie hierover.
 
-### Het rapport {#viewing-and-using-the-report} weergeven en gebruiken
+### Het bekijken van en het gebruiken van het rapport {#viewing-and-using-the-report}
 
 De laatste stap van de tovenaar toont de lijst en de grafiek.
 
@@ -207,7 +209,7 @@ De analyse van een populatie in een workflow vereist dat de populatie nog steeds
 >De optie **[!UICONTROL Keep the result of interim populations between two executions]** mag alleen worden gebruikt in ontwikkelingsfasen, maar nooit voor een productieomgeving.\
 >De tussentijdse populaties worden automatisch leeggemaakt zodra de bewaartermijn is bereikt. Deze deadline wordt opgegeven in de eigenschappen van de workflow **[!UICONTROL Execution]** tabblad.
 
-## Logbestanden voor het bijhouden van ontvangers analyseren {#analyzing-recipient-tracking-logs}
+## Logbestanden voor bijhouden ontvangers analyseren {#analyzing-recipient-tracking-logs}
 
 De beschrijvende analysetovenaar kan rapporten over andere het werklijsten produceren. Dit betekent dat u leveringslogboeken kunt analyseren door een specifiek rapport te creëren.
 
@@ -269,7 +271,7 @@ Hiervoor voert u de volgende stappen uit:
 
    ![](assets/reporting_descriptive_sample_tracking_9.png)
 
-## Logboeken van leveringsuitsluitingen analyseren {#analyzing-delivery-exclusion-logs}
+## Logboeken voor leveringsuitsluitingen analyseren {#analyzing-delivery-exclusion-logs}
 
 Als de analyse betrekking heeft op een levering, kunt u de uitgesloten populatie analyseren. Selecteer hiertoe de te analyseren leveringen en klik met de rechtermuisknop om het menu **[!UICONTROL Action > Explore exclusions]** te openen.
 

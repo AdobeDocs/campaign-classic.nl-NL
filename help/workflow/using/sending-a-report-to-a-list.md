@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Een rapport naar een lijst verzenden{#sending-a-report-to-a-list}
+
+![](../../assets/common.svg)
 
 In dit geval wordt beschreven hoe u een maandelijks rapport in PDF-indeling buiten het vak kunt genereren en hoe u het rapport naar een lijst met ontvangers kunt verzenden.**[!UICONTROL Tracking indicators]**
 
@@ -33,7 +35,7 @@ Ga naar het **[!UICONTROL Profiles and targets]** lusje, klik **[!UICONTROL List
 
 Voor meer bij het creëren van lijsten, verwijs naar dit [sectie](../../platform/using/creating-and-managing-lists.md).
 
-## Stap 2: Het creëren van het leveringsmalplaatje {#step-2--creating-the-delivery-template}
+## Stap 2: De leveringssjabloon maken {#step-2--creating-the-delivery-template}
 
 1. Ga naar de **[!UICONTROL Resources > Templates > Delivery templates]** knoop van de ontdekkingsreiziger van Adobe Campaign en dupliceer **[!UICONTROL Email delivery]** out-of-the-box malplaatje.
 
@@ -71,7 +73,7 @@ Voor meer bij het creëren van lijsten, verwijs naar dit [sectie](../../platform
 
       ![](assets/use_case_report_6bis.png)
 
-## Stap 3: De workflow {#step-3--creating-the-workflow} maken
+## Stap 3: De workflow maken {#step-3--creating-the-workflow}
 
 De volgende workflow is gemaakt voor dit gebruik. Het heeft drie activiteiten:
 
@@ -89,7 +91,7 @@ De volgende workflow is gemaakt voor dit gebruik. Het heeft drie activiteiten:
 
    ![](assets/use_case_report_9.png)
 
-   Voor meer bij het vormen van de planner, verwijs naar [Planner](../../workflow/using/scheduler.md).
+   Voor meer bij het vormen van de planner, verwijs naar [Planner](scheduler.md).
 
 1. Voeg vervolgens een **[!UICONTROL JavaScript code]**-tekstactiviteit toe.
 

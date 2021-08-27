@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 6%
@@ -15,6 +15,8 @@ ht-degree: 6%
 
 
 # Aan de slag met transactionele berichten {#about-transactional-messaging}
+
+![](../../assets/v7-only.svg)
 
 ## Overzicht {#overview}
 
@@ -90,4 +92,4 @@ Zodra u het transactionele berichtmalplaatje ontwierp en publiceerde, als een ov
 * [Aan de slag met communicatiekanalen](../../delivery/using/communication-channels.md)
 * [Belangrijkste stappen bij het maken van de levering](../../delivery/using/steps-about-delivery-creation-steps.md)
 * [Architectuur van transactionele berichten](../../message-center/using/transactional-messaging-architecture.md)
-* [Toegang tot transactiemeldingsrapporten](../../message-center/using/about-transactional-messaging-reports.md)
+* [Rapporten van transactionele berichten openen ](../../message-center/using/about-transactional-messaging-reports.md)

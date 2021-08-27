@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 8a4d7ef1-de5b-4aee-a527-1b74d987ba61
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Midsourcingimplementatie{#mid-sourcing-deployment}
+
+![](../../assets/v7-only.svg)
 
 Deze configuratie is een optimale middenoplossing tussen een ontvangen (ASP) configuratie en internalisering. De naar buiten gerichte uitvoeringscomponenten worden uitgevoerd op een &quot;mid-sourcing&quot;-server die wordt gehost op Adobe Campaign.
 
@@ -60,6 +62,6 @@ De algemene communicatie tussen servers en processen wordt uitgevoerd volgens he
 * Toegang tot een databaseserver op de toepassingsserver.
 * Firewall geconfigureerd voor het openen van HTTP- (80) of HTTPS-poorten (443) naar de server voor midsourcing.
 
-### Installeren en configureren (mid-sourcingimplementatie) {#installing-and-configuring--mid-sourcing-deployment-}
+### Installeren en configureren (implementatie van midsourcing) {#installing-and-configuring--mid-sourcing-deployment-}
 
 Zie [Midden-sourcingserver](../../installation/using/mid-sourcing-server.md).

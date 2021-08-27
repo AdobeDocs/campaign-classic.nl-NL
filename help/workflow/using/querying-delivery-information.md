@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Query’s uitvoeren op leveringsgegevens {#querying-delivery-information}
+
+![](../../assets/common.svg)
 
 ## Aantal klikken voor een specifieke levering {#number-of-clicks-for-a-specific-delivery}
 
@@ -114,7 +116,7 @@ Voer de volgende stappen uit om dit voorbeeld uit te voeren:
 
    Het hoogste aantal logboeken voor een gebruiker is 6 voor deze levering. Vijf verschillende gebruikers hebben het bezorgingsbericht geopend of op een van de koppelingen in het e-mailbericht geklikt.
 
-## Ontvangers die geen levering {#recipients-who-did-not-open-any-delivery} hebben geopend
+## Ontvangers die geen levering hebben geopend {#recipients-who-did-not-open-any-delivery}
 
 In dit voorbeeld willen we ontvangers filteren die de afgelopen 7 dagen geen e-mail hebben geopend.
 
@@ -151,7 +153,7 @@ Als u daarentegen ontvangers wilt filteren die ten minste één e-mail hebben ge
 
 ![](assets/query_open_5.png)
 
-## Ontvangers die een levering {#recipients-who-have-opened-a-delivery} hebben geopend
+## Ontvangers die een levering hebben geopend {#recipients-who-have-opened-a-delivery}
 
 In het volgende voorbeeld ziet u hoe u zich kunt richten op profielen die de levering in de afgelopen twee weken hebben geopend:
 
@@ -177,7 +179,7 @@ In het volgende voorbeeld ziet u hoe u zich kunt richten op profielen die de lev
 
    ![](assets/s_advuser_query_sample1.6.png)
 
-## Gedrag van ontvangers filteren na levering {#filtering-recipients--behavior-folllowing-a-delivery}
+## Het gedrag van ontvangers filteren na levering {#filtering-recipients--behavior-folllowing-a-delivery}
 
 In een werkstroom kunt u met de vakken **[!UICONTROL Query]** en **[!UICONTROL Split]** een gedrag na een vorige levering selecteren. Deze selectie wordt uitgevoerd via het filter **[!UICONTROL Delivery recipient]**.
 
@@ -187,7 +189,7 @@ In een werkstroom kunt u met de vakken **[!UICONTROL Query]** en **[!UICONTROL S
 
 * Context
 
-   Er wordt een aanbod voor de zomersport verzonden. Vier dagen na de levering worden twee andere leveringen verzonden. Een daarvan is &quot;watersportaanbod&quot;, het andere is een follow-up van het eerste aanbod voor de zomersport.
+   Er wordt een aanbod voor de zomersport verzonden. Vier dagen na de levering worden twee andere leveringen verzonden. Een daarvan is &quot;watersportaanbod&quot;, de andere is een follow-up van de eerste &quot;Zomersportaanbieding&quot;.
 
    De levering &quot;Watersportaanbod&quot; wordt verzonden naar ontvangers die bij de eerste levering op de link &quot;Watersport&quot; hebben geklikt. Deze kliks tonen aan dat de ontvanger in het onderwerp geinteresseerd is. Het heeft zin om ze naar soortgelijke aanbiedingen te sturen. Ontvangers die niet op het zomersportaanbod hebben geklikt, krijgen echter weer dezelfde inhoud.
 

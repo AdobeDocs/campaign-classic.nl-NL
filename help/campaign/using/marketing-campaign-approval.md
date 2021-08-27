@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2434'
 ht-degree: 0%
@@ -15,16 +15,18 @@ ht-degree: 0%
 
 # Het goedkeuringsproces instellen en beheren {#approving-marketing-campaigns}
 
+![](../../assets/common.svg)
+
 Elke leveringsstap kan worden goedgekeurd om volledige controle en controle op de verschillende processen van de campagne te waarborgen: het richten, inhoud, begroting, extractie, en het verzenden van een bewijs.
 
-De berichten van het bericht worden verzonden naar de exploitanten van Adobe Campaign die aangewezen recensenten zijn om hen van een goedkeuringsverzoek op de hoogte te brengen. Controleer of de controleurs over de **juiste machtigingen** voor goedkeuring beschikken en of hun beveiligingszone correct is gedefinieerd. [Meer informatie](#selecting-reviewers).
+De berichten van het bericht worden verzonden naar de exploitanten van Adobe Campaign die aangewezen recensenten zijn om hen van een goedkeuringsverzoek op de hoogte te brengen. Controleer of de controleurs over de **juiste machtigingen** voor goedkeuring beschikken en of hun beveiligingszone correct is gedefinieerd. [Meer info](#selecting-reviewers).
 
 De goedkeuringsprocedure wordt beschreven in [dit punt](#checking-and-approving-deliveries).
 
 >[!NOTE]
 >
 >Alleen de eigenaar van de levering kan een levering starten. Als een andere operator (of operatorgroep) een levering wil starten, moet u deze als controleurs toevoegen in het veld **[!UICONTROL Delivery start:]**.\
->[Meer informatie](#selecting-reviewers).
+>[Meer info](#selecting-reviewers).
 
 ## Werkwijze {#operating-principle-}
 
@@ -101,7 +103,7 @@ Klik op **[!UICONTROL Validate]**.
 >
 >Als tijdens het proces waarschuwingen zijn weergegeven, wordt een waarschuwing weergegeven in het bericht.
 
-### Goedkeuring {#approval-tracking}
+### Goedkeuring bijhouden {#approval-tracking}
 
 De informatie is op verschillende plaatsen beschikbaar:
 
@@ -151,7 +153,7 @@ Meldingen zijn specifieke e-mailberichten die naar revisoren worden verzonden om
 
 De inhoud van e-mailberichten voor meldingen kan worden aangepast. Zie [Notification content](#notification-content).
 
-### Melding {#enabling-disabling-notification} inschakelen/uitschakelen
+### Melding in-/uitschakelen {#enabling-disabling-notification}
 
 Door gebrek, worden de berichtberichten verzonden als de goedkeuring van de verwante baan in het campagnemalplaatje, de campagne, of de levering wordt toegelaten. Meldingen kunnen echter alleen via de console worden uitgeschakeld.
 
@@ -159,11 +161,11 @@ Hiervoor bewerkt u het goedkeuringsvenster van de campagne- of campagnemalplaatj
 
 ![](assets/s_user_validation_notif_desactivate.png)
 
-### Inhoud {#notification-content}
+### Inhoud voor meldingen {#notification-content}
 
 De inhoud van het bericht wordt bepaald in een specifiek malplaatje: **[!UICONTROL Notification of validations for the marketing campaign]**. Deze sjabloon wordt opgeslagen in de map **[!UICONTROL Administration > Campaign management > Technical delivery templates]** van de Adobe Campaign-structuur.
 
-## Leveringen {#checking-and-approving-deliveries} controleren en goedkeuren
+## Leveringen controleren en goedkeuren {#checking-and-approving-deliveries}
 
 Met Adobe Campaign kunt u goedkeuringsprocessen instellen voor de belangrijkste fasen van de marketingcampagne in de samenwerkingsmodus.
 
@@ -171,9 +173,9 @@ Voor directe postleveringen, kunnen de exploitanten van Adobe Campaign het extra
 
 Voor elke campagne kunt u het leveringsdoel, de inhoud (zie [Inhoud goedkeuren](#approving-content)) en de kosten goedkeuren. Adobe Campaign-operatoren die met de goedkeuring zijn belast, kunnen via e-mail op de hoogte worden gesteld en kunnen goedkeuring van de console of via een webverbinding accepteren of afwijzen. Zie [Stappen om een levering goed te keuren](#approving-processes).
 
-Wanneer deze validatiefasen zijn voltooid, kan de levering worden gestart. [Meer informatie](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery).
+Wanneer deze validatiefasen zijn voltooid, kan de levering worden gestart. [Meer info](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery).
 
-### Stappen om een levering {#approving-processes} goed te keuren
+### Stappen om een levering goed te keuren {#approving-processes}
 
 De stadia die goedkeuring vereisen verschijnen op het campagnesdashboard (via de console van de Webinterface). Zij verschijnen ook in de levering volgende lijst en op het leveringsdashboard.
 
@@ -182,7 +184,6 @@ Op dit punt, is de status van de campagne **[!UICONTROL To validate]**.
 >[!NOTE]
 >
 >Om de processen te selecteren die een goedkeuring vereisen, wijzig het campagnemalplaatje. Voor meer op dit, verwijs naar [De malplaatjes van de Campagne](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
-
 
 ![](assets/s_ncs_user_edit_del_to_validate.png)
 
@@ -228,7 +229,7 @@ Voor elke levering in de campagne, kunt u de volgende processen goedkeuren:
 
    ![](assets/s_ncs_user_task_valid_associate.png)
 
-### Goedkeuring van processen {#choosing-the-processes-to-be-approved} selecteren
+### Goedkeuren van processen selecteren {#choosing-the-processes-to-be-approved}
 
 De goedkeuringsfasen worden bepaald met het malplaatje verbonden aan de campagne. U moet de goed te keuren onderdelen selecteren in het model en de Adobe Campaign-operatoren specificeren die verantwoordelijk zijn voor deze goedkeuringen. Voor meer op campagnemalplaatjes, verwijs naar [deze sectie](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
@@ -255,7 +256,6 @@ Als u een lijst met operatoren wilt selecteren, klikt u op de koppeling **[!UICO
 >
 
 
-
 ![](assets/s_ncs_user_edit_op_valid_calendar.png)
 
 Klik voor elke levering op de knop **[!UICONTROL Audit]** en op het tabblad **[!UICONTROL Approvals]** om goedkeuringsdatums en automatische herinneringen weer te geven en te bewerken.
@@ -266,7 +266,7 @@ Klik voor elke levering op de knop **[!UICONTROL Audit]** en op het tabblad **[!
 >
 >Dit tabblad is beschikbaar nadat het goedkeuringsproces voor inhoud is gestart.
 
-### Inhoud {#approving-content} goedkeuren
+### Inhoud goedkeuren {#approving-content}
 
 >[!CAUTION]
 >
@@ -365,7 +365,7 @@ Met deze optie kunt u een externe operator definiëren die verantwoordelijk is v
 
    ![](assets/s_user_validation_external_content.png)
 
-### Een extractiebestand {#approving-an-extraction-file} goedkeuren
+### Een extractiebestand goedkeuren {#approving-an-extraction-file}
 
 Voor off-line leveringen, produceert Adobe Campaign een extractiedossier dat, afhankelijk van hoe het opstelling is, naar de router wordt verzonden. De inhoud ervan is afhankelijk van de gebruikte exportsjabloon.
 

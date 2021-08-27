@@ -6,14 +6,16 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 3%
 
 ---
 
-# Audit trail{#audit-trail}
+# Audittrail{#audit-trail}
+
+![](../../assets/v7-only.svg)
 
 In Adobe Campaign biedt de **[!UICONTROL Audit trail]** u toegang tot de volledige geschiedenis van wijzigingen die in uw instantie zijn aangebracht.
 
@@ -49,7 +51,7 @@ Audittrail bestaat uit drie onderdelen:
 
    Raadpleeg deze [pagina](../../installation/using/configuring-campaign-options.md) voor meer informatie over opties.
 
-## Audittrail {#accessing-audit-trail} openen
+## Audittrail openen {#accessing-audit-trail}
 
 Om toegang te krijgen tot **[!UICONTROL Audit trail]** van uw instantie:
 
@@ -80,7 +82,7 @@ Om toegang te krijgen tot **[!UICONTROL Audit trail]** van uw instantie:
 >
 >De bewaarperiode wordt standaard ingesteld op 180 dagen voor **[!UICONTROL Audit logs]**. Raadpleeg deze [pagina](../../production/using/database-cleanup-workflow.md#deployment-wizard) voor meer informatie over het wijzigen van de retentieperiode.
 
-## Audittrail {#enable-disable-audit-trail} inschakelen/uitschakelen
+## Audittrail in-/uitschakelen {#enable-disable-audit-trail}
 
 Het audittrail kan gemakkelijk voor een specifieke activiteit worden geactiveerd of worden gedeactiveerd als, bijvoorbeeld, u wat ruimte op het gegevensbestand wilt bewaren.
 

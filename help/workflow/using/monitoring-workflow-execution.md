@@ -6,24 +6,26 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '2000'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
 
 # Workflowuitvoering controleren {#monitoring-workflow-execution}
 
+![](../../assets/common.svg)
+
 Deze sectie geeft informatie over hoe te om de uitvoering van uw werkschema&#39;s te controleren.
 
-Een gebruiksgeval op hoe te om een werkschema tot stand te brengen dat u de status van een reeks werkschema&#39;s laat controleren die &quot;gepauzeerd&quot;zijn, &quot;tegengehouden&quot;of &quot;met fouten&quot;is ook beschikbaar in [deze sectie](../../workflow/using/supervising-workflows.md#supervising-workflows).
+Een gebruiksgeval op hoe te om een werkschema tot stand te brengen dat u de status van een reeks werkschema&#39;s laat controleren die &quot;gepauzeerd&quot;zijn, &quot;tegengehouden&quot;of &quot;met fouten&quot;is ook beschikbaar in [deze sectie](supervising-workflows.md#supervising-workflows).
 
-Bovendien kunnen beheerders van de instantie **Audittrail** gebruiken om activiteiten en laatste wijzigingen te controleren die aan werkschema&#39;s, de staat van uw werkschema&#39;s worden gedaan. Raadpleeg voor meer informatie de [toegewezen sectie](../../production/using/audit-trail.md).
+Bovendien kunnen beheerders van de instantie **Audittrail** gebruiken om activiteiten en laatste wijzigingen te controleren die aan werkschema&#39;s, de staat van uw werkschema&#39;s worden gedaan. Raadpleeg [Campaign Classic v7 Production Guide](../../production/using/audit-trail.md) voor meer informatie.
 
-Aanvullende manieren om de verschillende campagneprocessen te controleren worden weergegeven op [deze pagina](../../production/using/monitoring-guidelines.md).
+Aanvullende manieren om de verschillende campagneprocessen te controleren worden beschreven in [Campaign Classic v7 Production Guide](../../production/using/monitoring-guidelines.md).
 
-## Voortgang {#displaying-progress} weergeven
+## Voortgang weergeven {#displaying-progress}
 
 U kunt de uitvoering controleren door de voortgang weer te geven met het juiste pictogram op de werkbalk.
 
@@ -35,7 +37,7 @@ Als deze optie is geselecteerd, worden uitgevoerde activiteiten in blauw weergeg
 
 ![](assets/s_user_segmentation_results.png)
 
-## Logbestanden {#displaying-logs} weergeven
+## Logboeken weergeven {#displaying-logs}
 
 Het logbestand bevat de geschiedenis of audittrail van de workflow. Hiermee worden alle gebruikersacties, alle uitgevoerde bewerkingen en aangetroffen fouten geregistreerd. U kunt:
 
@@ -93,21 +95,21 @@ Het logboek toont de chronologische lijst van uitvoeringsberichten met betrekkin
 
       Het logboek wordt getoond in een afzonderlijk venster.
 
-## De logbestanden {#purging-the-logs} leegmaken
+## De logbestanden leegmaken {#purging-the-logs}
 
-Workflowgeschiedenis wordt niet automatisch gewist: alle berichten worden standaard gehouden. De geschiedenis kan worden gewist via het **[!UICONTROL File > Actions]** menu of door de **[!UICONTROL Actions]** knoop te klikken die in de toolbar boven de lijst wordt gevestigd. Selecteer **[!UICONTROL Purge history]**. De opties die beschikbaar zijn in het menu **[!UICONTROL Actions]** worden beschreven in het gedeelte [Handelingen werkbalk](../../workflow/using/starting-a-workflow.md).
+Workflowgeschiedenis wordt niet automatisch gewist: alle berichten worden standaard gehouden. De geschiedenis kan worden gewist via het **[!UICONTROL File > Actions]** menu of door de **[!UICONTROL Actions]** knoop te klikken die in de toolbar boven de lijst wordt gevestigd. Selecteer **[!UICONTROL Purge history]**. De opties die beschikbaar zijn in het menu **[!UICONTROL Actions]** worden beschreven in het gedeelte [Handelingen werkbalk](starting-a-workflow.md).
 
 ![](assets/purge_historique.png)
 
-## Werktabellen en workflowschema {#worktables-and-workflow-schema}
+## Worktables and workflow schema {#worktables-and-workflow-schema}
 
 De workflow geeft worktables weer die via bepaalde activiteiten kunnen worden gemanipuleerd. Met Adobe Campaign kunt u via gegevensbeheeractiviteiten de kolommen van workflows aanpassen, hernoemen en verrijken, bijvoorbeeld om ze aan te passen aan de nomenclatuur afhankelijk van de behoeften van de klant, om aanvullende informatie te verzamelen over de co-begunstigde van een contract, enz.
 
 Het is ook mogelijk om verbindingen tussen diverse het werkdimensies tot stand te brengen en afmetingsveranderingen te bepalen. Voor elk contract dat bijvoorbeeld in de database is opgenomen, richt u zich tot de hoofdhouder en gebruikt u de gegevens van de medehouder in de aanvullende informatie.
 
-De werktabellen van de workflow worden automatisch verwijderd wanneer de workflow wordt gepassiveerd. Als u een werktabel wilt behouden, slaat u deze op in een lijst via de activiteit **[!UICONTROL List update]** (zie [Lijstupdate](../../workflow/using/list-update.md)).
+De werktabellen van de workflow worden automatisch verwijderd wanneer de workflow wordt gepassiveerd. Als u een werktabel wilt behouden, slaat u deze op in een lijst via de activiteit **[!UICONTROL List update]** (zie [Lijstupdate](list-update.md)).
 
-## Fouten {#managing-errors} beheren
+## Fouten beheren {#managing-errors}
 
 Wanneer een fout optreedt, wordt de werkstroom gepauzeerd en wordt de activiteit uitgevoerd wanneer de fout optrad met rood. In het werkschemaoverzicht, onder **[!UICONTROL Monitoring]** tabel - **[!UICONTROL Workflows]** verbinding, kunt u werkschema&#39;s met slechts fouten tonen, zoals hieronder getoond.
 
@@ -141,9 +143,9 @@ In dit geval wordt de fouttaak afgebroken. Deze modus is vooral geschikt voor wo
 >
 >U kunt deze configuratie afzonderlijk toepassen voor elke activiteit. Hiervoor bewerkt u de eigenschappen van de activiteit en selecteert u de modus voor foutbeheer op het tabblad **[!UICONTROL Advanced]**.
 
-Raadpleeg de [toegewezen sectie](../../production/using/workflow-execution.md) voor meer informatie over het oplossen van problemen bij de uitvoering van workflows.
+Raadpleeg [Campaign Classic v7 Production Guide](../../production/using/workflow-execution.md) voor meer informatie over het oplossen van problemen bij de uitvoering van workflows.
 
-## Fouten verwerken {#processing-errors}
+## Verwerkingsfouten {#processing-errors}
 
 Met betrekking tot activiteiten wordt met de optie **[!UICONTROL Process errors]** een specifieke overgang weergegeven die wordt ingeschakeld als een fout wordt gegenereerd. In dit geval gaat de workflow niet naar de foutmodus en gaat de uitvoering verder.
 
@@ -163,7 +165,7 @@ Als u gepauzeerde activiteiten wijzigt, kunnen de wijzigingen niet correct worde
 
 Indien mogelijk raden we u aan de workflow opnieuw te starten nadat u wijzigingen hebt aangebracht.
 
-## Instantietoezicht {#instance-supervision}
+## Instantie controleren {#instance-supervision}
 
 Op de pagina **[!UICONTROL Instance supervision]** kunt u de Adobe Campaign-serveractiviteit weergeven en een lijst met workflows en leveringen met fouten weergeven.
 
@@ -228,29 +230,29 @@ Let op:
    logInfo("Workflow already running, parallel execution not allowed.");
    ```
 
-In deze rubriek wordt een gebruiksgeval weergegeven: [Gegevensupdates coördineren](../../workflow/using/coordinating-data-updates.md).
+In deze rubriek wordt een gebruiksgeval weergegeven: [Gegevensupdates coördineren](coordinating-data-updates.md).
 
 ## Databaseonderhoud {#database-maintenance}
 
 Workflows gebruiken veel werktabellen die ruimte verbruiken en het hele platform vertragen als het niet wordt onderhouden. Raadpleeg voor meer informatie over databaseonderhoud deze [sectie](../../production/using/tables-to-maintain.md).
 
-Met de **Database opschonen**-workflow die toegankelijk is via het knooppunt **Beheer > Productie > Technische workflows** kunt u verouderde gegevens verwijderen om exponentiële groei van de database te voorkomen. De workflow wordt automatisch geactiveerd zonder tussenkomst van de gebruiker. Zie deze [sectie](../../production/using/database-cleanup-workflow.md).
+Met de **Database opschonen**-workflow die toegankelijk is via het knooppunt **Beheer > Productie > Technische workflows** kunt u verouderde gegevens verwijderen om exponentiële groei van de database te voorkomen. De workflow wordt automatisch geactiveerd zonder tussenkomst van de gebruiker. Raadpleeg [Campaign Classic v7 Production Guide](../../production/using/database-cleanup-workflow.md).
 
-U kunt ook specifieke technische workflows maken om overbodige gegevensverbruikende ruimte te wissen. Zie deze [sectie](../../production/using/application-objects.md) en deze [pagina](#purging-the-logs).
+U kunt ook specifieke technische workflows maken om overbodige gegevensverbruikende ruimte te wissen. Zie [Campaign Classic v7 Production Guide](../../production/using/application-objects.md) en deze [sectie](#purging-the-logs).
 
 ## Afhandeling van gepauzeerde workflows {#handling-of-paused-workflows}
 
 Als een werkstroom wordt gepauzeerd, worden de werktabellen standaard niet gewist. Vanaf build 8880 worden workflows die al te lang in een pauzestatus zijn gepauzeerd, automatisch gestopt en worden hun werktabellen gewist. Dit gedrag wordt als volgt geactiveerd:
 
 * De werkschema&#39;s die sinds meer dan 7 dagen zijn gepauzeerd verschijnen als waarschuwing in het controledashboard (en controle API) en een bericht wordt verzonden naar de supervisorgroep.
-* Dit gebeurt elke week wanneer de technische workflow **[!UICONTROL cleanupPausedWorkflows]** wordt geactiveerd. Raadpleeg [deze sectie](../../workflow/using/delivery.md) voor meer informatie over de workflow.
+* Dit gebeurt elke week wanneer de technische workflow **[!UICONTROL cleanupPausedWorkflows]** wordt geactiveerd. Raadpleeg [deze sectie](delivery.md) voor meer informatie over de workflow.
 * Na 4 meldingen (dat wil zeggen een maand in de pauzestatus) wordt de workflow onvoorwaardelijk beëindigd. Er wordt een logboek weergegeven in de workflow nadat het is gestopt. De tabellen worden gewist bij de volgende uitvoeringsworkflow **[!UICONTROL cleanup]**
 
 Deze periodes kunnen via de optie NmsServer_PausedWorkflowPeriod worden gevormd.
 
 Workflowtoezichthouders worden op de hoogte gesteld. De maker en laatste gebruiker die de workflow heeft gewijzigd, wordt ook op de hoogte gesteld. Beheerders ontvangen de meldingen niet.
 
-## Workflows filteren op basis van hun status {#filtering-workflows-status}
+## Workflows filteren op basis van hun status {#filtering-workflows-status}
 
 Met de Campaign Classic-interface kunt u de uitvoeringsstatus van alle workflows op uw instantie controleren met behulp van vooraf gedefinieerde **views**. Als u deze weergaven wilt openen, opent u het knooppunt **[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]**.
 
@@ -259,7 +261,7 @@ De volgende weergaven zijn beschikbaar:
 * **[!UICONTROL Running]**: geeft een overzicht van alle actieve workflows.
 * **[!UICONTROL Paused]**: geeft een overzicht van alle gepauzeerde workflows.
 * **[!UICONTROL Failed]**: geeft alle mislukte workflows weer.
-* **[!UICONTROL Start Pending]**: maakt een lijst van alle werkschema&#39;s die wachten om door het operationMgt proces te worden begonnen. Deze weergave is alleen beschikbaar bij het pakket **Marketingcampagnes** (zie [Ingebouwde pakketten voor campagnes installeren](../../installation/using/installing-campaign-standard-packages.md)).
+* **[!UICONTROL Start Pending]**: maakt een lijst van alle werkschema&#39;s die wachten om door het operationMgt proces te worden begonnen. Deze weergave is alleen beschikbaar bij het pakket **Marketingcampagnes**. Meer informatie vindt u in [Campaign Classic v7-installatiegids](../../installation/using/installing-campaign-standard-packages.md)).
 
 ![](assets/workflow-monitoring-views.png)
 

@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Simulatie van aanbiedingen{#about-offers-simulation}
+
+![](../../assets/v7-only.svg)
 
 Met de module **Simulatie** kunt u de distributie testen van aanbiedingen die tot een categorie of een omgeving behoren voordat u uw voorstel naar ontvangers verzendt.
 
@@ -23,7 +25,7 @@ Lees de onderstaande stappen voor meer informatie over het simuleren van een aan
 
 ![](assets/do-not-localize/how-to-video.png)[ U kunt ook deze video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com) bekijken.
 
-## Belangrijkste stappen voor het maken van een simulatie {#main-steps-for-creating-a-simulation}
+## Belangrijkste stappen voor het creëren van een simulatie {#main-steps-for-creating-a-simulation}
 
 Voer de volgende stappen uit om een simulatie van uw aanbiedingen uit te voeren:
 

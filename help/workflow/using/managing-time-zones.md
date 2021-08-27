@@ -6,24 +6,26 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: c2f6033c-30cd-4eb4-adf1-ab2de7510220
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '282'
 ht-degree: 3%
 
 ---
 
 # Tijdzones beheren{#managing-time-zones}
 
+![](../../assets/common.svg)
+
 Met Adobe Campaign kunt u de tijd tussen verschillende landen beheren die bij hetzelfde geval betrokken zijn. De toegepaste configuratie wordt gevormd tijdens instantieverwezenlijking.
 
-Raadpleeg deze [sectie](../../installation/using/time-zone-management.md) voor meer informatie over het configureren van tijdzones in Adobe Campaign.
+Raadpleeg [Installatiegids ](../../installation/using/time-zone-management.md) voor meer informatie over het configureren van tijdzones in Adobe Campaign.
 
 In een werkschema, kunt u de programma&#39;s van de activiteitenuitvoering aanpassen en een specifieke tijdzone verbinden met een activiteit of met het volledige werkschema. Deze configuratie kan nuttig zijn wanneer het invoeren van het dossier, of binnen het kader van levering het plannen.
 
 ## Uitvoerings planning {#execution-scheduling}
 
-U kunt de uitvoering van taken plannen gebruikend de planner (verwijs naar [Planner](../../workflow/using/scheduler.md)). U kunt ook de planningsopties gebruiken die beschikbaar zijn in de activiteiten die deze functionaliteit aanbieden. Deze activiteiten bieden een **[!UICONTROL Schedule]** tabel aan: **[!UICONTROL File collector]**, **[!UICONTROL File transfer]**, **[!UICONTROL Web download]**, **[!UICONTROL Email reception]** &amp; **[!UICONTROL SMS]**, enz.
+U kunt de uitvoering van taken plannen gebruikend de planner (verwijs naar [Planner](scheduler.md)). U kunt ook de planningsopties gebruiken die beschikbaar zijn in de activiteiten die deze functionaliteit aanbieden. Deze activiteiten bieden een **[!UICONTROL Schedule]** tabel aan: **[!UICONTROL File collector]**, **[!UICONTROL File transfer]**, **[!UICONTROL Web download]**, **[!UICONTROL Email reception]** &amp; **[!UICONTROL SMS]**, enz.
 
 Voor alle geplande taken, d.w.z. alle activiteiten met het plannen opties, kunt u de tijdzone selecteren om toe te passen. De tijdzone wordt geselecteerd via het tabblad **[!UICONTROL Advanced]** van de betreffende activiteit:
 

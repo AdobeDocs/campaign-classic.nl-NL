@@ -6,23 +6,24 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 7%
+source-wordcount: '532'
+ht-degree: 8%
 
 ---
 
 # Adobe Campaign starten{#launching-adobe-campaign}
 
-De console van de Cliënt van de campagne is een rijke cliënt die u toelaat om met uw de toepassingsserver(s) van de Campagne te verbinden. Leer hoe u de clientconsole downloadt en configureert in [deze pagina](../../installation/using/installing-the-client-console.md).
+![](../../assets/v7-only.svg)
 
+Campagne Client Console is
 
 >[!CAUTION]
 >
 >Controleer de compatibiliteit van uw systeem en tools met de Adobe Campaign Client Console in de [Compatibility matrix](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 
-## Adobe Campaign {#starting-adobe-campaign} starten
+## Adobe Campaign starten {#starting-adobe-campaign}
 
 U kunt Adobe Campaign starten door **[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]** te selecteren.
 
@@ -30,7 +31,7 @@ In het verbindingsvenster van de clientconsole kunt u bestaande databases select
 
 ![](assets/acc-logon.png)
 
-## Verbinden met Adobe Campaign {#connecting-to-adobe-campaign}
+## Verbinding maken met Adobe Campaign {#connecting-to-adobe-campaign}
 
 U kunt verbinding maken met Adobe Campaign via uw Adobe ID. Raadpleeg [deze pagina](../../integrations/using/about-adobe-id.md) voor meer informatie.
 
@@ -53,7 +54,7 @@ Sommige sneltoetsen zijn beschikbaar op **[!UICONTROL Sign in screen]**:
 * Als u de verbinding wilt starten, drukt u ook op **Enter**.
 * Met de **Escape**-toets kunt u de velden **[!UICONTROL Login]** en **[!UICONTROL Password]** opnieuw instellen op de laatst succesvolle verbindingswaarden.
 
-## Verbindingen {#setting-up-connections} instellen
+## Verbindingen instellen {#setting-up-connections}
 
 U hebt toegang tot de instellingen voor de serververbinding via de koppeling boven de invoerzone.
 
@@ -87,7 +88,7 @@ Als u de verbinding met Adobe Campaign wilt verbreken, gebruikt u het eerste pic
 >
 >U kunt de toepassing ook sluiten zonder u eerst af te melden.
 
-## Uw Adobe Campaign-versie ophalen {#getting-your-campaign-version}
+## Adobe Campaign-versie ophalen {#getting-your-campaign-version}
 
 Met het menu **[!UICONTROL Help > About...]** hebt u toegang tot de volgende informatie:
 

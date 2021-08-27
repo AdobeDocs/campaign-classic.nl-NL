@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2384'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Formulierstructuur{#form-structure}
+
+![](../../assets/v7-only.svg)
 
 De beschrijving van een formulier is een gestructureerd XML-document waarin de grammatica van het formulierschema **xtk:form** wordt gevolgd.
 
@@ -235,7 +237,7 @@ Voorbeelden van syntaxis van voorwaarde:
 * **visibleIf=&quot;@gender >= 1 en @gender != 2&quot;**: voorwaarde op een numerieke waarde.
 * **visibleIf=&quot;@boolean1=true of @boolean2=false&quot;**: testen op Booleaanse velden.
 
-#### Container {#enabling-container} inschakelen
+#### Container inschakelen {#enabling-container}
 
 Met deze container kunt u een set gegevens in- of uitschakelen vanuit een dynamische voorwaarde. Als u een besturingselement uitschakelt, wordt het niet bewerkt. In het volgende voorbeeld wordt getoond hoe besturingselementen kunnen worden ingeschakeld met behulp van de waarde van het veld &quot;Geslacht&quot;:
 
@@ -250,7 +252,7 @@ Met deze container kunt u een set gegevens in- of uitschakelen vanuit een dynami
 
 Een toelatende container wordt bepaald door het **type=&quot;enabledGroup&quot;** attribuut. Het **enabledIf** attribuut bevat de activeringsvoorwaarde.
 
-## Een koppeling {#editing-a-link} bewerken
+## Een koppeling bewerken {#editing-a-link}
 
 Vergeet niet dat een koppeling als volgt in het gegevensschema wordt gedeclareerd:
 
@@ -392,7 +394,7 @@ Met het kenmerk **xpathChoiceTarget** kunt u een selectievorm starten vanuit de 
 >
 >Met het kenmerk **xpathEditTarget** kunt u het bewerken van de geselecteerde regel op de ingevoerde koppeling forceren.
 
-### Lijsteigenschappen {#list-properties}
+### Eigenschappen van List {#list-properties}
 
 * **noToolbar**: verbergt de werkbalk (met de waarde &quot;true&quot;)
 * **toolbarCaption**: Hiermee wordt het werkbalklabel overbelast
@@ -403,7 +405,7 @@ Met het kenmerk **xpathChoiceTarget** kunt u een selectievorm starten vanuit de 
 * **xpathEditTarget**: sets die de ingevoerde koppeling bewerken
 * **xpathChoiceTarget**: start bovendien het selectievorm op de ingevoerde koppeling
 
-## Besturingselementen voor geheugenlijsten {#memory-list-controls}
+## Besturingselementen geheugenlijst {#memory-list-controls}
 
 Met geheugenlijsten kunt u de verzamelingselementen bewerken door de lijstelementen vooraf te laden. Deze lijst kan niet worden gefilterd of worden gevormd.
 
@@ -443,7 +445,7 @@ De werkbalkknoppen kunnen horizontaal worden uitgelijnd:
 
 Het **toolbarCaption** attribuut dwingt de horizontale groepering van de toolbar af en gaat de titel boven de lijst in.
 
-#### Een lijst inzoomen {#zoom-in-a-list}
+#### Inzoomen op een lijst {#zoom-in-a-list}
 
 U kunt de gegevens in een lijst invoegen en bewerken in een afzonderlijk bewerkingsformulier.
 
@@ -467,7 +469,7 @@ Het bewerkingsformulier wordt ingevuld vanuit het element `<form>` onder lijstde
 >
 >Als u het kenmerk **zoomOnAdd=&quot;true&quot;** toevoegt, moet het bewerkingsformulier worden opgevraagd wanneer een lijstelement wordt ingevoegd.
 
-### Lijsteigenschappen {#list-properties-1}
+### Eigenschappen van List {#list-properties-1}
 
 * **noToolbar**: verbergt de werkbalk (met de waarde &quot;true&quot;)
 * **toolbarCaption**: Hiermee wordt het werkbalklabel overbelast
@@ -516,7 +518,7 @@ Een selectievakje geeft een Booleaanse status weer (geselecteerd of niet). Dit b
 
 ![](assets/d_ncs_integration_form_exemple20.png)
 
-## Bewerken van {#navigation-hierarchy-edit} in navigatiehiërarchie
+## Navigatiehiërarchie bewerken {#navigation-hierarchy-edit}
 
 Deze controle bouwt een boom op een reeks gebieden om uit te geven.
 
@@ -551,7 +553,7 @@ Een expressieveld werkt een veld dynamisch bij vanuit een expressie. De **`<inpu
 
 Door het uitvoeren van een invoerformulier wordt een XML-document geïnitialiseerd dat de gegevens bevat van de entiteit die wordt bewerkt. Dit document vertegenwoordigt de context van het formulier en kan als werkruimte worden gebruikt.
 
-### De context {#updating-the-context} bijwerken
+### De context bijwerken {#updating-the-context}
 
 Als u de context van het formulier wilt wijzigen, gebruikt u de tag `<set expr="<value>" xpath="<field>"/>`, waarbij `<field>` het doelveld is en `<value>` de update-expressie of -waarde.
 

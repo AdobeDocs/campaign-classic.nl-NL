@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '7969'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Het serverconfiguratiebestand{#the-server-configuration-file}
+
+![](../../assets/v7-only.svg)
 
 De algemene configuratie van Adobe Campaign wordt gedefinieerd in het bestand **serverConf.xml** in de map **conf** van de installatiemap. In deze sectie worden alle verschillende knooppunten en parameters van het bestand **serverConf.xml** weergegeven.
 
@@ -1160,7 +1162,7 @@ Raadpleeg [E-mailarchivering activeren (op locatie)](../../installation/using/em
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00" <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeArchivesDelay<br /> </td> 
@@ -1321,7 +1323,7 @@ Hier zijn de verschillende parameters van de **inMail** knoop. Dit is de configu
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00" <br /> </td> 
   </tr> 
   <tr> 
    <td> reloadPeriodSec<br /> </td> 
@@ -1435,7 +1437,7 @@ Voor extra informatie, verwijs naar [Interactie - de buffer van Gegevens](../../
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00" <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -1572,7 +1574,7 @@ Hier zijn de verschillende parameters van de **mta** knoop. Dit is de configurat
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00" <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeDataLogDelay<br /> </td> 
@@ -2129,7 +2131,7 @@ Hier zijn de verschillende parameters van **pipelined** knoop. Dit is de configu
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00" <br /> </td> 
   </tr> 
   <tr> 
    <td> processingJSThreads<br /> </td> 
@@ -2400,7 +2402,7 @@ Hier zijn de verschillende parameters van de **sms** knoop. Dit is de configurat
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00" <br /> </td> 
   </tr> 
   <tr> 
    <td> reloadPeriod<br /> </td> 
@@ -2506,7 +2508,7 @@ Hier zijn de verschillende parameters van **stat** knoop. Dit is de configuratie
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00" <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2577,7 +2579,7 @@ Hier zijn de verschillende parameters van **syslogd** knoop. Dit is de configura
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00" <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2690,7 +2692,7 @@ Hier zijn de verschillende parameters van **tracking** knoop. Dit is de configur
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00" <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2785,7 +2787,7 @@ Hier zijn de verschillende parameters van de **trackinglogd** knoop. Dit is de c
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00" <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeLogsPeriod<br /> </td> 
@@ -2900,7 +2902,7 @@ Voor extra informatie, verwijs naar dit [sectie](configuring-campaign-server.md#
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00" <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -3474,7 +3476,7 @@ Raadpleeg [Workflows met hoge beschikbaarheid en affiniteiten](../../installatio
    <td> processRestartTime<br /> </td> 
    <td> Tijdstip van de dag waarop het proces automatisch opnieuw wordt gestart. Zie <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatisch opnieuw starten van proces</a>.<br /> </td> 
    <td> Tekenreeks<br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00" <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 

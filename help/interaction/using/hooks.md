@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: e1d7d7c2-61e7-40d6-a8ce-69bc976f8c73
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Hooks{#hooks}
+
+![](../../assets/v7-only.svg)
 
 Met Hooks in Interaction kunt u het standaardmotorgedrag **wijzigen.**
 
@@ -25,7 +27,7 @@ De **[!UICONTROL Dynamic offer]** haak wordt gevormd met het aanbiedingsgewicht 
 
 ![](assets/interaction_hooks_2.png)
 
-## Doelladen {#target-loading}
+## Doel laden {#target-loading}
 
 Deze haak laat u het profiel van het contact (dat door uit-van-de-doosvraag) met extra gegevens van een extern systeem werd geladen verrijken.
 

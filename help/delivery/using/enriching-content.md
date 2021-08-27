@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Content verrijken{#enriching-content}
+
+![](../../assets/common.svg)
 
 Met aggregators kunt u de inhoud verrijken met externe gegevens. Dit gegeven komt uit generische vragen of verbonden lijsten.
 
@@ -37,7 +39,7 @@ Voorbeeld van terugkeer van een vraag op het ontvankelijke schema (**nms:ontvang
 
 Het element **`<collection-recipient>`** vertegenwoordigt het inputelement van het document resulterend uit een vraag. De opgehaalde gegevens worden onder dit element geretourneerd. in ons voorbeeld, een ontvankelijke lijst.
 
-### Een query {#adding-a-query} toevoegen
+### Een query toevoegen {#adding-a-query}
 
 De queryparameters worden bewerkt met een wizard.
 
@@ -70,7 +72,7 @@ Er zijn twee typen gekoppelde gegevens:
 * Koppelingen naar inhoud: dit is de native modus voor inhoudsbeheer. De inhoud van de koppeling wordt automatisch in het XML-uitvoerdocument geïntegreerd.
 * Koppelingen naar externe tabellen geven toegang tot alle andere tabellen in de database met als beperking het ophalen van de gegevens van de geselecteerde koppeling met een aggregator.
 
-### Koppelen naar een inhoudsschema {#link-to-a-content-schema}
+### Koppeling maken naar een inhoudsschema {#link-to-a-content-schema}
 
 Een inhoudskoppeling wordt als volgt gedeclareerd in het gegevensschema:
 
@@ -102,7 +104,7 @@ In het invoerformulier wordt het bewerkingsbeheer van de koppeling als volgt ged
 
 Met het pictogram **[!UICONTROL Magnifier]** kunt u het bewerkingsformulier van het gekoppelde element openen.
 
-#### Koppelingsverzameling {#link-collection}
+#### Verzameling koppelen {#link-collection}
 
 Als u een verzameling koppelingen wilt vullen, voegt u het **unbound=&quot;true&quot;**-kenmerk toe aan de definitie van het koppelingselement in het gegevensschema:
 
@@ -171,7 +173,7 @@ U kunt de keuze van doelelementen beperken door het element **`<sysfilter>`** to
 >
 >Deze beperking geldt ook voor inhoudskoppelingen.
 
-#### Koppelingsverzameling {#link-collection-1}
+#### Verzameling koppelen {#link-collection-1}
 
 De definitie van de verzameling is identiek aan de definitie van een lijst met verzamelingselementen:
 

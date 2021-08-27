@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 1%
@@ -15,11 +15,13 @@ ht-degree: 1%
 
 # Data verrijken{#enriching-data}
 
+![](../../assets/common.svg)
+
 ## Informatie over het verrijken van gegevens {#about-enriching-data}
 
-In dit geval worden mogelijke toepassingen van de **[!UICONTROL Enrichment]**-activiteit in een doelworkflow beschreven. Raadpleeg voor meer informatie over het gebruik van de **[!UICONTROL Enrichment]**-activiteit: [Verrijking](../../workflow/using/enrichment.md).
+In dit geval worden mogelijke toepassingen van de **[!UICONTROL Enrichment]**-activiteit in een doelworkflow beschreven. Raadpleeg voor meer informatie over het gebruik van de **[!UICONTROL Enrichment]**-activiteit: [Verrijking](enrichment.md).
 
-Een gebruiksgeval op hoe te om een e-maillevering met douanedata te verrijken is ook beschikbaar in [deze sectie](../../workflow/using/email-enrichment-with-custom-date-fields.md).
+Een gebruiksgeval op hoe te om een e-maillevering met douanedata te verrijken is ook beschikbaar in [deze sectie](email-enrichment-with-custom-date-fields.md).
 
 De contactpersonen in de marketingdatabase worden via een webtoepassing uitgenodigd deel te nemen aan een wedstrijd. De resultaten van de wedstrijd worden teruggevonden in de tabel **[!UICONTROL Competition results]**. Deze lijst is verbonden met de contactlijst (**[!UICONTROL Recipients]**). De tabel **[!UICONTROL Competition results]** bevat de volgende velden:
 

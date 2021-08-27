@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: reporting-in-adobe-campaign
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 13%
@@ -14,6 +14,8 @@ ht-degree: 13%
 ---
 
 # Aan de slag met rapportages {#about-adobe-campaign-reporting-tools}
+
+![](../../assets/common.svg)
 
 Naast [ingebouwde rapporten](../../reporting/using/about-campaign-built-in-reports.md), laat Adobe Campaign u rapporten in diverse contexten produceren en om aan verschillende behoeften te voldoen. In dit document worden beginselen van gebruik en uitvoeringsmodi uiteengezet.
 

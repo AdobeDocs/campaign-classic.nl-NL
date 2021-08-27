@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Bestandsophaler{#file-collector}
+
+![](../../assets/common.svg)
 
 De **Bestandsverzamelaar** bewaakt de aankomst van een of meer bestanden in een map en activeert de overgang ervan voor elk ontvangen bestand. Voor elke gebeurtenis, bevat een **[!UICONTROL filename]** variabele de volledige naam van het ontvangen dossier. De verzamelde bestanden worden naar een andere map verplaatst voor archiveringsdoeleinden en om ervoor te zorgen dat ze maar één keer worden geteld.
 
@@ -23,7 +25,7 @@ De bestanden moeten zich op de server bevinden waarop de wfserver-module die voo
 
 ## Properties {#properties}
 
-Op het eerste tabblad van de activiteit **[!UICONTROL File collector]** kunt u de bronmap selecteren en, indien nodig, de verzamelde bestanden filteren. De andere tabbladen worden beschreven in [Binnenkomende e-mails](../../workflow/using/inbound-emails.md) (**[!UICONTROL Schedule]** en **[!UICONTROL Expiry]** tabs).
+Op het eerste tabblad van de activiteit **[!UICONTROL File collector]** kunt u de bronmap selecteren en, indien nodig, de verzamelde bestanden filteren. De andere tabbladen worden beschreven in [Binnenkomende e-mails](inbound-emails.md) (**[!UICONTROL Schedule]** en **[!UICONTROL Expiry]** tabs).
 
 ![](assets/file_collect_edit.png)
 
@@ -67,7 +69,7 @@ Op het eerste tabblad van de activiteit **[!UICONTROL File collector]** kunt u d
 
 1. **Historiatie**
 
-   Raadpleeg de onderstaande stap **[!UICONTROL File historization]**: [Webdownload](../../workflow/using/web-download.md).
+   Raadpleeg de onderstaande stap **[!UICONTROL File historization]**: [Webdownload](web-download.md).
 
 De volgorde van de bestandsverwerking kan niet worden bepaald. Als u een set bestanden opeenvolgend wilt verwerken, gebruikt u de optie **[!UICONTROL Stop as soon as a file has been processed]** en maakt u een lus. In dit geval worden de bestanden in alfabetische volgorde verwerkt. Met de optie **[!UICONTROL Process file nonexistence]** kunt u de herhaling voltooien.
 

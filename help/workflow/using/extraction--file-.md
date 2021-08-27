@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 06eafedd-6386-498f-a80d-7f57ddcccad6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Gegevensextractie (bestand){#extraction-file}
+
+![](../../assets/common.svg)
 
 U kunt gegevens uit een werkschematabel in een extern dossier halen gebruikend **[!UICONTROL Data extraction (file)]** activiteit.
 
@@ -48,7 +50,7 @@ Voer de volgende stappen uit om gegevensextractie te configureren:
 
 U kunt een postproces bepalen dat tijdens de gegevensextractie wordt uitgevoerd, toestaand u om de dossiers te zip of te coderen. Hiervoor moet de gewenste opdracht worden toegevoegd op het tabblad **[!UICONTROL Script]** van de activiteit.
 
-Raadpleeg voor meer informatie deze sectie: [Een bestand uitzetten of versleutelen](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
+Raadpleeg voor meer informatie deze sectie: [Een bestand uitzetten of versleutelen](how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ![](assets/postprocessing_dataextraction.png)
 

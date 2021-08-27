@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # Aan de slag met kubussen{#about-cubes}
+
+![](../../assets/common.svg)
 
 De exploratie van gegevens in het gegevensbestand wordt aangeboden via **de Analytics van de Marketing** module. Het laat u toe om gegevens te analyseren en te meten, statistieken te berekenen, en rapportverwezenlijking en berekening te vereenvoudigen en te optimaliseren. Daarnaast kunt u met Marketing Analytics rapporten maken en doelpopulaties maken. Zodra deze worden geïdentificeerd, worden zij opgeslagen in lijsten die in Adobe Campaign (gericht, segmentatie, enz.) kunnen worden gebruikt.
 
@@ -79,7 +81,7 @@ Wanneer het werken met kubussen, moeten de volgende concepten gekend zijn:
 
    De maatregelen kunnen worden berekend: zo is het aanvaardingspercentage van een aanbieding bijvoorbeeld de verhouding tussen het aantal ingediende aanbiedingen en het aantal aanvaarde inschrijvingen .
 
-## Kubus-werkruimte {#cube-workspace}
+## De werkruimte Kubus {#cube-workspace}
 
 De kubussen worden opgeslagen in de **[!UICONTROL Administration > Configuration > Cubes]** knoop.
 

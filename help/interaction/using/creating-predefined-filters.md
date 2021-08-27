@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 399e9468-bf70-425d-af0b-72c29636b513
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # Vooraf gedefinieerde filters maken{#creating-predefined-filters}
+
+![](../../assets/v7-only.svg)
 
 Met vooraf gedefinieerde filters kunt u geschiktheidsregels voor de doelpopulatie maken die eenvoudig opnieuw kunnen worden gebruikt tijdens het maken van aanbiedingen. Zij zijn specifiek voor elke milieu en houden rekening met de aanbiedingsparameters.
 

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # kenmerkelement {#attribute--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Inhoudsmodel {#content-model}
 
@@ -41,7 +43,7 @@ _operation (string), advanced (boolean), applyIf (string), autoIncrement (boolea
 
 De opeenvolging waarin `<attribute>` elementen in `<srcschema>` worden bepaald beïnvloedt niet de opeenvolging van de gebiedsverwezenlijking in het gegevensbestand. De aanmaakvolgorde is alfabetisch.
 
-## Kenmerkbeschrijving {#attribute-description}
+## Beschrijving van kenmerk {#attribute-description}
 
 * **_operation (string)**: definieert het type schrijven in de database.
 

@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: general-operation
 exl-id: b13ecfc9-1723-42b2-ab30-d5637cc3d0dd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # Grondbeginselen{#fundamental-principles}
 
-## Omgevingen {#deploying-environments} implementeren
+![](../../assets/v7-only.svg)
+
+## Omgevingen implementeren {#deploying-environments}
 
 Er zijn twee milieu&#39;s voor elke het richten dimensie die wordt gebruikt wanneer het beheren van aanbiedingen:
 

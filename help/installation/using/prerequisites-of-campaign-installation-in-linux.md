@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Vereisten om Campagne op Linux te installeren{#prerequisites-of-campaign-installation-in-linux}
+
+![](../../assets/v7-only.svg)
 
 ## Softwarevereisten {#software-prerequisites}
 
@@ -128,7 +130,7 @@ Voeg de opdracht in Rode hoed toe:
 yum install ipa-gothic-fonts ipa-mincho-fonts
 ```
 
-### LibreOffice voor Debian {#installing-libreoffice-for-debian} installeren
+### LibreOffice voor Debian installeren {#installing-libreoffice-for-debian}
 
 Voor Debian zijn de volgende configuraties vereist:
 
@@ -144,7 +146,7 @@ Voor Debian zijn de volgende configuraties vereist:
    apt-get install fonts-ipafont
    ```
 
-### LibreOffice installeren voor CentOS {#installing-libreoffice-for-centos}
+### LibreOffice voor CentOS installeren {#installing-libreoffice-for-centos}
 
 De volgende configuraties zijn nodig met CentOS:
 

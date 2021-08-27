@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1963'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Filters maken{#creating-filters}
+
+![](../../assets/common.svg)
 
 Wanneer u in de boom van Adobe Campaign (van **[!UICONTROL Explorer]** menu in de homepage) navigeert, worden de gegevens in het gegevensbestand getoond in lijsten. Deze lijsten kunnen worden gevormd om slechts de gegevens te tonen die door de exploitant worden vereist. De acties kunnen dan op de gefiltreerde gegevens worden gelanceerd. Met filterconfiguratie kunt u gegevens selecteren in een lijst **[!UICONTROL dynamically]**. Als de gegevens worden gewijzigd, worden de gefilterde gegevens bijgewerkt.
 
@@ -69,7 +71,7 @@ U kunt het standaardfilter van een lijst veranderen. Voor meer op dit, verwijs n
 
    De **[!UICONTROL Filters]** knoop die boven de lijsten wordt gevestigd biedt een reeks toepassingsfilters aan die kunnen worden gecombineerd om het filtreren te raffineren. De methode voor het maken van deze filters wordt weergegeven in [Een filter opslaan](#saving-a-filter).
 
-## Het standaardfilter {#altering-the-default-filter} wijzigen
+## Het standaardfilter wijzigen {#altering-the-default-filter}
 
 Als u het standaardfilter voor een lijst met ontvangers wilt wijzigen, klikt u op het knooppunt **[!UICONTROL Profiles and Targets > Pre-defined filters]** van de structuur.
 
@@ -168,7 +170,7 @@ Als u dit filter wilt annuleren, klikt u op het pictogram **[!UICONTROL Remove t
 
 U kunt een geavanceerd filter opslaan om het voor toekomstig gebruik te houden. Zie [Een filter opslaan](#saving-a-filter) voor meer informatie over dit type filter.
 
-### Een geavanceerd filter maken met functies {#creating-an-advanced-filter-with-functions}
+### Een geavanceerd filter met functies maken {#creating-an-advanced-filter-with-functions}
 
 Geavanceerde filters kunnen functies gebruiken; **filters met functies** worden gecreeerd via een uitdrukkingsredacteur die u formules laat tot stand brengen gebruikend de gegevensbestandgegevens en de geavanceerde functies. Als u een filter met functies wilt maken, herhaalt u de stappen 1, 2 en 3 voor het maken van geavanceerde filters en gaat u als volgt te werk:
 
@@ -218,7 +220,7 @@ U kunt filters combineren door op de knop **[!UICONTROL Filters]** te klikken en
 
 ![](assets/s_ncs_user_filter_combination.png)
 
-## Ontvangers {#filtering-recipients} filteren
+## Ontvangers filteren {#filtering-recipients}
 
 Met vooraf gedefinieerde filters (zie [Een filter opslaan](#saving-a-filter)) kunt u de profielen van ontvangers in de database filteren. U kunt filters van de **[!UICONTROL Profiles and Targets > Predefined filters]** knoop van de boom uitgeven. De filters worden weergegeven in de bovenste sectie van de werkruimte via de knop **[!UICONTROL Filters]**.
 

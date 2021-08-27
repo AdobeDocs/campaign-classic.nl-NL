@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 1%
@@ -15,11 +15,13 @@ ht-degree: 1%
 
 # Een tabel maken{#creating-a-table}
 
+![](../../assets/common.svg)
+
 U kunt een lijst aan een rapport toevoegen om gegevens te tonen. Dit kan een draaitabel zijn die is gemaakt op basis van kubutemetingen, een lijst met groepen of een tabel met een uitsplitsing van waarden.
 
 ![](assets/s_advuser_report_page_activity_05.png)
 
-## Een lijst maken met groep {#creating-a-list-with-group}
+## Een lijst met groepen maken {#creating-a-list-with-group}
 
 Met een typetabel **[!UICONTROL List with group]** kunt u gegevens in de tabel groeperen en er statistieken over produceren. U kunt bijvoorbeeld totalen en subtotalen maken voor de gegevens. Elke groep heeft zijn eigen kop-, detail- en voettekstregel.
 
@@ -54,7 +56,7 @@ Houd rekening met de volgende stappen om een tabel van het type &#39;Lijst met g
 1. De tabel en de inhoud ervan maken.
 1. Geef het voltooide rapport weer op het tabblad **[!UICONTROL Preview]**. Vervolgens kunt u het rapport publiceren en het indien nodig exporteren naar een andere indeling. Voor meer op dit, verwijs naar [Exporting a report](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
-### Lijnen en kolommen {#adding-lines-and-columns} toevoegen
+### Lijnen en kolommen toevoegen {#adding-lines-and-columns}
 
 Standaard bevat een tabel van het type **[!UICONTROL List with group]** een koptekst, een detailregel en een voettekstregel.
 
@@ -116,7 +118,7 @@ Gebruik de **[!UICONTROL Expression]** menuingang om de waarden te selecteren aa
 
    ![](assets/s_advuser_ergo_listgroup_008.png)
 
-### Celindeling {#defining-cell-format} definiëren
+### Celindeling definiëren {#defining-cell-format}
 
 ![](assets/s_advuser_ergo_listgroup_017.png)
 
@@ -195,13 +197,13 @@ Met het tabblad **Extra** kunt u een visuele koppeling maken naar uw gegevens, z
 
 ![](assets/s_advuser_ergo_listgroup_016.png)
 
-## Hoofdlettergebruik: Een rapport maken met een groeplijst {#use-case--create-a-report-with-a-group-list}
+## Hoofdlettergebruik: Een rapport maken met een groepslijst {#use-case--create-a-report-with-a-group-list}
 
 In dit voorbeeld gaan we een rapport van twee pagina&#39;s maken: de eerste pagina bevat de lijst en het totale aantal leveringen per campagne , alsmede het aantal verzonden berichten . De namen van de levering zullen klikbare verbindingen zijn en zullen u toelaten om naar de tweede pagina van het rapport te gaan om de uitsplitsing van leveringen per e-maildomein voor de geselecteerde levering met een lijst en een grafiek te bekijken. Op de tweede pagina fungeert de tabel als een legenda voor het diagram.
 
 ![](assets/reporting_quick_start_report-final.png)
 
-### Stap 1 - creeer een rapport {#step-1---create-a-report}
+### Stap 1 - Een rapport maken {#step-1---create-a-report}
 
 Creeer een nieuw rapport dat het campagneschema, **[!UICONTROL Campaigns (nms)]** behandelt.
 
@@ -257,7 +259,7 @@ Dubbelklik op de eerste query om deze te bewerken en pas vervolgens de volgende 
 
 1. Klik **[!UICONTROL Finish]** om deze voorwaarden te bewaren, dan klik **[!UICONTROL Ok]** om de vraagredacteur te sluiten.
 
-### Stap 3: De eerste pagina {#step-3--create-the-first-page} maken
+### Stap 3: De eerste pagina maken {#step-3--create-the-first-page}
 
 In deze stap, gaan wij de eerste pagina van het rapport vormen. Voer de volgende stappen uit om het te configureren:
 
@@ -357,7 +359,7 @@ In deze stap, gaan wij de eerste pagina van het rapport vormen. Voer de volgende
    >
    >We raden u aan te wachten tot uw rapport is samengesteld voordat u cellen samenvoegt, aangezien samenvoegen onomkeerbaar is.
 
-### Stap 4 - creeer de tweede vraag {#step-4---create-the-second-query}
+### Stap 4 - Maak de tweede query {#step-4---create-the-second-query}
 
 Wij willen een tweede vraag en een tweede pagina toevoegen om de details van een levering te tonen wanneer de gebruiker van het rapport op het klikt. Alvorens de vraag toe te voegen, geef de pagina uit u hebt gecreeerd en laat de uitgaande overgang toe zodat het aan de vraag kan worden verbonden.
 
@@ -446,7 +448,7 @@ Wij willen een tweede vraag en een tweede pagina toevoegen om de details van een
 
    Uw pagina is nu geconfigureerd.
 
-### Stap 6 - het bekijken van het rapport {#step-6---viewing-the-report}
+### Stap 6 - Het rapport bekijken {#step-6---viewing-the-report}
 
 Als u het resultaat van deze configuratie wilt weergeven, klikt u op het tabblad **[!UICONTROL Preview]** en selecteert u de optie **[!UICONTROL Global]**.
 
@@ -458,7 +460,7 @@ Als u op de koppeling van een van deze leveringen klikt, wordt in het diagram de
 
 ![](assets/s_advuser_report_listgroup_022.png)
 
-## Een splitsings- of draaitabel {#creating-a-breakdown-or-pivot-table} maken
+## Een splitsings- of draaitabel maken {#creating-a-breakdown-or-pivot-table}
 
 Dit type van lijst laat u statistieken tonen die op de gegevens in het gegevensbestand worden berekend.
 

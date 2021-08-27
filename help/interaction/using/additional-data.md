@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Aanvullende gegevens{#additional-data}
+
+![](../../assets/v7-only.svg)
 
 Tijdens een oproep aan de interactiemotor kunt u contextafhankelijke aanvullende informatie overbrengen. Deze gegevens kunnen afkomstig zijn van de doelgegevens die zijn opgeslagen in de werkentabel van een workflow (uitgaand kanaal) of de vraaggegevens die door de website worden verzonden tijdens de aanroep (binnenkomend kanaal). U kunt deze aanvullende gegevens gebruiken in de toelatingsregels, in het aanbieden van personalisatie, en u kunt het ook opslaan in een propositietabel.
 
@@ -74,7 +76,7 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 U moet een doelworkflow maken waarin aanvullende gegevens in de werktabel worden geladen door dezelfde XML-structuur en dezelfde interne namen als in het schema **nms:interaction** te respecteren. Zie: [Aanvullende gegevensconfiguratie](#additional-data-configuration).
 
-## Extra gegevens {#using-additional-data} gebruiken
+## Extra gegevens gebruiken {#using-additional-data}
 
 ### Subsidiabiliteitsregels {#eligibility-rules}
 

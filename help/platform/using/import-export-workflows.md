@@ -6,16 +6,18 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 5%
 
 ---
 
-# Gegevens importeren en exporteren met behulp van workflows {#import-export-workflows}
+# Gegevens importeren en exporteren met workflows {#import-export-workflows}
 
-## Gegevens {#collecting-data-workflows} verzamelen
+![](../../assets/common.svg)
+
+## Gegevens verzamelen {#collecting-data-workflows}
 
 Workflows kunnen handig zijn om een aantal importprocessen te automatiseren. Of u nu gegevens uit een lokaal bestand of uit een SFTP importeert, u kunt workflows gebruiken om de procedures voor gegevensbeheer te standaardiseren.
 
@@ -27,7 +29,7 @@ Deze lijst is mogelijk rechtstreeks gemaakt in Adobe Campaign of geïmporteerd d
 
 Raadpleeg [deze pagina](../../workflow/using/read-list.md) voor meer informatie over het gebruik van de activiteit in de leeslijst in een workflow.
 
-### Gegevens laden uit een bestand {#loading-data-from-a-file}
+### Gegevens uit een bestand laden {#loading-data-from-a-file}
 
 De gegevens die in een werkstroom worden verwerkt, kunnen uit een gestructureerd bestand worden geëxtraheerd, zodat het bestand in Adobe Campaign kan worden geïmporteerd.
 

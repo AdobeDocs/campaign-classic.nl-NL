@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: f4fe97d9-6571-4aa5-8022-b0af9d5a6a13
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Uitsluiting{#exclusion}
+
+![](../../assets/common.svg)
 
 Een **Uitsluiting**-type activiteit leidt tot een doel dat op een hoofddoel wordt gebaseerd waarvan één of meerdere andere doelstellingen worden gehaald.
 
@@ -23,7 +25,7 @@ Om deze activiteit te vormen, ga zijn etiket in en selecteer de belangrijkste on
 
 >[!NOTE]
 >
->Raadpleeg [Een populatie uitsluiten (Uitsluiting)](../../workflow/using/targeting-data.md#excluding-a-population--exclusion-) voor meer informatie over het configureren en gebruiken van de uitsluitingsactiviteit.
+>Raadpleeg [Een populatie uitsluiten (Uitsluiting)](targeting-data.md#excluding-a-population--exclusion-) voor meer informatie over het configureren en gebruiken van de uitsluitingsactiviteit.
 
 Schakel de optie **[!UICONTROL Generate complement]** in als u de resterende populatie wilt benutten. De aanvulling zal de belangrijkste inkomende bevolking min de uitgaande bevolking bevatten. Vervolgens wordt als volgt een extra uitvoerovergang aan de activiteit toegevoegd:
 

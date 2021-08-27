@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Webservices{#about-web-services}
+
+![](../../assets/v7-only.svg)
 
 ## Definitie van Adobe Campaign API&#39;s {#definition-of-adobe-campaign-apis}
 
@@ -34,7 +36,7 @@ Voordat u de Adobe Campaign API&#39;s kunt gebruiken, moet u vertrouwd zijn met 
 * SOAP-protocol
 * Adobe Campaign datamodel
 
-## Adobe Campaign API&#39;s {#using-adobe-campaign-apis} gebruiken
+## Adobe Campaign API&#39;s gebruiken {#using-adobe-campaign-apis}
 
 Adobe Campaign gebruikt twee typen API&#39;s:
 
@@ -56,7 +58,7 @@ De structuur van een SOAP-bericht is als volgt:
 * een instantie die de informatie over de oproep en de reactie bevat;
 * foutbeheer dat de foutvoorwaarde definieert.
 
-## Bronnen en uitwisselingen {#resources-and-exchanges}
+## Middelen en uitwisselingen {#resources-and-exchanges}
 
 In het volgende schema ziet u de verschillende bronnen die betrokken zijn bij het gebruik van Adobe Campaign API&#39;s:
 
@@ -167,7 +169,7 @@ catch (SoapException e)
 }
 ```
 
-## URL van webserviceserver (of EndPoint) {#url-of-web-service-server--or-endpoint-}
+## URL van de de dienstserver van het Web (of EndPoint) {#url-of-web-service-server--or-endpoint-}
 
 Om de dienst van het Web voor te leggen, moet de server van Adobe Campaign die de overeenkomstige de dienstmethode uitvoert worden gecontacteerd.
 

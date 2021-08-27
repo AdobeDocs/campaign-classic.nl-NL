@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '2038'
 ht-degree: 100%
 
 ---
 
 # Privacy en toestemming{#privacy-and-recommendations}
+
+![](../../assets/common.svg)
 
 ## Algemene aanbevelingen {#general-recommendations}
 
@@ -25,7 +27,7 @@ Adobe Campaign is een krachtige tool voor het verzamelen en verwerken van zeer g
 
 Neem de tijd om de [Controlelijst voor beveiliging en privacy](../../installation/using/get-started-security-privacy.md) door te nemen om de belangrijkste elementen over de controle van beveiliging en privacy te leren.
 
-### Privacywetgeving{#privacy-regulations}
+### Privacywetgeving {#privacy-regulations}
 
 Werk binnen de wetgeving die geldt voor de regio(’s) waar u actief bent om privacy en persoonsgegevens correct te behandelen en te beheren. Het gaat bijvoorbeeld om de volgende wetgevingen:
 * [AVG](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) (Algemene verordening gegevensbescherming)
@@ -141,7 +143,7 @@ Oorspronkelijk biedt Adobe Campaign belangrijke functies die essentieel zijn voo
 
 Zie [deze sectie](../../platform/using/privacy-management.md#consent-retention-roles) voor meer informatie over deze functies en hoe u ze kunt beheren in Adobe Campaign.
 
-### Verzoeken om toegang tot persoonsgegevens {#privacy-requests}
+### Privacyverzoeken {#privacy-requests}
 
 Adobe Campaign biedt extra mogelijkheden om uw taak als gegevenscontroller voor bepaalde verzoeken om toegang tot persoonsgegevens te vergemakkelijken:
 

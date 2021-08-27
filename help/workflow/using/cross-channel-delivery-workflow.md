@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 3%
@@ -15,7 +15,9 @@ ht-degree: 3%
 
 # Cross-channel leveringsworkflow{#cross-channel-delivery-workflow}
 
-In dit geval wordt een voorbeeld weergegeven met een workflow voor levering over meerdere kanalen. Het algemene concept van kanaalleveringen wordt gepresenteerd in [deze sectie](../../workflow/using/cross-channel-deliveries.md).
+![](../../assets/common.svg)
+
+In dit geval wordt een voorbeeld weergegeven met een workflow voor levering over meerdere kanalen. Het algemene concept van kanaalleveringen wordt gepresenteerd in [deze sectie](cross-channel-deliveries.md).
 
 Het doel is een publiek van de ontvangers van uw gegevensbestand in verschillende groepen te segmenteren met als doel een e-mail naar een groep en een SMS-bericht naar een andere groep te verzenden.
 
@@ -31,12 +33,12 @@ De belangrijkste stappen voor de implementatie van dit gebruiksgeval zijn als vo
 
 ![](assets/wkf_cross-channel_7.png)
 
-## Stap 1: Doelgroep {#step-1--targeting-the-audience}
+## Stap 1: Het doelpubliek {#step-1--targeting-the-audience}
 
 Om uw doel te bepalen, creeer een vraag om de ontvangers te identificeren.
 
 1. Een campagne maken. Raadpleeg [deze sectie](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign) voor meer informatie.
-1. Voeg op het tabblad **[!UICONTROL Targeting and workflows]** van uw campagne een **Query**-activiteit toe aan uw workflow. Raadpleeg [deze sectie](../../workflow/using/query.md) voor meer informatie over het gebruik van deze activiteit.
+1. Voeg op het tabblad **[!UICONTROL Targeting and workflows]** van uw campagne een **Query**-activiteit toe aan uw workflow. Raadpleeg [deze sectie](query.md) voor meer informatie over het gebruik van deze activiteit.
 1. Bepaal de ontvangers die uw leveringen zullen ontvangen. Selecteer bijvoorbeeld &#39;Gold&#39;-leden als doeldimensie.
 1. Voeg filtervoorwaarden aan uw vraag toe. Selecteer in dit voorbeeld ontvangers met een e-mailadres en een mobiel nummer.
 
@@ -65,11 +67,11 @@ Om uw doel te bepalen, creeer een vraag om de ontvangers te identificeren.
 
    ![](assets/wkf_cross-channel_4.png)
 
-## Stap 3: Het resulterende publiek {#step-3--segmenting-the-resulting-audience} segmenteren
+## Stap 3: Het resulterende publiek segmenteren {#step-3--segmenting-the-resulting-audience}
 
 Zodra uw doel wordt geïdentificeerd en uw eerste levering gecreeerd, moet u het doel in verschillende populaties segmenteren gebruikend het filtreren voorwaarden.
 
-1. Voeg een **Gesplitste** activiteit aan het werkschema toe en open het. Raadpleeg [deze sectie](../../workflow/using/split.md) voor meer informatie over het gebruik van deze activiteit.
+1. Voeg een **Gesplitste** activiteit aan het werkschema toe en open het. Raadpleeg [deze sectie](split.md) voor meer informatie over het gebruik van deze activiteit.
 1. Creeer drie segmenten van de bevolking die stroomopwaarts in de vraag wordt berekend.
 
    ![](assets/wkf_cross-channel_6.png)

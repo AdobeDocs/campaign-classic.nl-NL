@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 2%
@@ -15,23 +15,25 @@ ht-degree: 2%
 
 # Aan de slag met marketingcampagnes{#setting-up-marketing-campaigns}
 
+![](../../assets/common.svg)
+
 De campagnes omvatten acties (leveringen) en processen (het invoeren of het halen van dossiers), evenals middelen (marketing documenten, leveringsoverzichten). Ze worden gebruikt in marketingcampagnes. Campagnes maken deel uit van een programma en programma&#39;s zijn opgenomen in een campagneplan.
 
 ![](assets/do-not-localize/how-to-video.png) Ontdek hoe u een marketingplan, programma&#39;s en campagnes kunt maken  [in video](#video)
 
 Een marketingcampagne maken:
 
-1. Een campagne maken: campagnes en hun kenmerken te ontdekken : label, type, begin- en einddatum, begroting, bijbehorende middelen, manager(s) en deelnemers. [Meer informatie](#creating-a-campaign).
+1. Een campagne maken: campagnes en hun kenmerken te ontdekken : label, type, begin- en einddatum, begroting, bijbehorende middelen, manager(s) en deelnemers. [Meer info](#creating-a-campaign).
 
-1. Doelpopulatie(s) definiëren: Maak een workflow met query&#39;s als doel. [Meer informatie](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
+1. Doelpopulatie(s) definiëren: Maak een workflow met query&#39;s als doel. [Meer info](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
 
-1. Leveringen maken: selecteert u kanalen en definieert u de inhoud die u wilt verzenden. [Meer informatie](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
+1. Leveringen maken: selecteert u kanalen en definieert u de inhoud die u wilt verzenden. [Meer info](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
 
-1. Leveringen goedkeuren. [Meer informatie](../../campaign/using/marketing-campaign-approval.md).
+1. Leveringen goedkeuren. [Meer info](../../campaign/using/marketing-campaign-approval.md).
 
-1. Verzendingen controleren. [Meer informatie](../../campaign/using/marketing-campaign-monitoring.md).
+1. Verzendingen controleren. [Meer info](../../campaign/using/marketing-campaign-monitoring.md).
 
-1. Plan campagnes en bijbehorende kosten. [Meer informatie](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+1. Plan campagnes en bijbehorende kosten. [Meer info](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
 Wanneer deze stappen zijn voltooid, kunt u de leveringen starten (zie [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), de gegevens, processen en informatie met betrekking tot de leveringen controleren en, indien nodig, de bijbehorende documenten beheren (zie [deze sectie](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). U kunt ook de uitvoering van de verwerkingsfasen van campagnes en leveringen volgen (zie [deze sectie](../../campaign/using/marketing-campaign-monitoring.md)).
 
@@ -95,7 +97,7 @@ Om een campagne te openen en te vormen, selecteer het van het programma en klik 
 
 Hiermee gaat u naar het campagnedashboard.
 
-## Terugkerende en periodieke campagnes {#recurring-and-periodic-campaigns}
+## Herhalings- en periodieke campagnes {#recurring-and-periodic-campaigns}
 
 Een terugkomende campagne is een campagne die op een specifiek malplaatje wordt gebaseerd, de waarvan werkschema&#39;s worden gevormd om volgens een bijbehorend programma worden uitgevoerd. De workflows zullen daarom terugkeren in een campagne. Het richten wordt gedupliceerd op elke uitvoering en de diverse processen en doelpopulaties worden gevolgd. Het is ook mogelijk toekomstige streefcijfers vooraf uit te voeren, via de dekkingsperiode tijdens het automatisch maken van werkstromen, om simulaties met doelramingen te starten.
 
@@ -140,7 +142,7 @@ De configuratiewijze van het uitvoeringsprogramma valt samen met het **[!UICONTR
 
    ![](assets/s_ncs_user_op_template_recur_wf_option.png)
 
-#### Maak de terugkerende campagne {#create-the-recurring-campaign}
+#### De terugkerende campagne maken {#create-the-recurring-campaign}
 
 Pas de volgende procedure toe om de terugkerende campagne te maken en de workflows uit te voeren volgens het schema dat in de sjabloon is gedefinieerd:
 
@@ -183,7 +185,7 @@ Pas de volgende procedure toe om de terugkerende campagne te maken en de workflo
 
 Een periodieke campagne is een campagne die op een specifiek malplaatje wordt gebaseerd dat u campagneinstanties laat tot stand brengen die op een uitvoeringsprogramma worden gebaseerd. Campagneinstanties worden automatisch gemaakt op basis van een periodiek campagnemalplaatje, afhankelijk van de frequentie die in het sjabloonprogramma is gedefinieerd.
 
-#### De campagnemalplaatje {#creating-the-campaign-template-1} maken
+#### De sjabloon voor de campagne maken {#creating-the-campaign-template-1}
 
 1. Creeer een **[!UICONTROL Periodic]** campagnemalplaatje, bij voorkeur door een bestaand campagnemalplaatje te dupliceren.
 

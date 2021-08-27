@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: bc23a444-a872-48fb-8bba-64b301541089
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 9%
@@ -14,6 +14,8 @@ ht-degree: 9%
 ---
 
 # De uiteindelijke levering definiëren {#step-6--defining-the-final-delivery}
+
+![](../../assets/common.svg)
 
 Wanneer het script is gemaakt om de testwinnaar A/B te selecteren, kunt u de parameters van de uiteindelijke levering definiëren.
 
@@ -26,4 +28,4 @@ Wanneer het script is gemaakt om de testwinnaar A/B te selecteren, kunt u de par
 
 Door de levering voor te bereiden die is opgegeven in de overgang (gedefinieerd via de **[!UICONTROL Javascript Code]**-activiteit), kunt u deze goedkeuren en het verzenden starten, zoals beschreven in de volgende stap.
 
-U kunt de workflow nu starten. [Meer informatie](a-b-testing-uc-start-workflow.md).
+U kunt de workflow nu starten. [Meer info](a-b-testing-uc-start-workflow.md).

@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: dccf72b200cad9ba160a496cdd13ba39c5599008
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 2%
+source-wordcount: '1305'
+ht-degree: 3%
 
 ---
 
-# E-mailBCC {#email-archiving}
+# Bcc van e-mail configureren {#email-archiving}
+
+![](../../assets/v7-only.svg)
 
 U kunt Adobe Campaign zo configureren dat een kopie van de e-mails die u van uw platform hebt ontvangen, bewaard blijft.
 
@@ -31,7 +33,7 @@ Hiervoor worden .eml-bestanden die overeenkomen met de verzonden e-mails, overge
 * Er wordt alleen rekening gehouden met e-mailberichten die zijn verzonden, maar met bedragen.
 * Het e-mailarchiveringssysteem is gewijzigd met Adobe Campaign 17.2 (build 8795). Als u al gebruikmaakte van e-mailarchivering, moet u handmatig upgraden naar het nieuwe BCC-systeem voor e-mail. Zie [Verplaatsen naar de nieuwe sectie BCC](#updated-email-archiving-system--bcc-) voor meer informatie.
 
-## E-mail BCC activeren (op locatie) {#activating-email-archiving--on-premise-}
+## BCC via e-mail activeren (op locatie) {#activating-email-archiving--on-premise-}
 
 Volg onderstaande stappen om BCC e-mailarchivering te activeren wanneer Adobe Campaign op locatie is geïnstalleerd.
 
@@ -98,7 +100,7 @@ Nadat het lokale mappad is gedefinieerd, voegt u de volgende elementen toe en be
 
 Zorg ervoor u deze parameters volgens de e-mailverzendende productie aanpast. Bijvoorbeeld, in een configuratie waar MTA 30.000 e-mail per uur verzendt, kunt u **pollDelay** parameter aan 600 plaatsen, **verwervingLimit** parameter aan 5000 en **smtpNbConnection** parameter aan 2. Het betekent dat met 2 verbindingen SMTP, 5.000 e-mails naar het adres BCC om de 10 minuten zullen worden verzonden.
 
-## Het BCC e-mailadres (op gebouw) {#configuring-the-bcc-email-address--on-premise-} vormen
+## Het BCC-e-mailadres configureren (op locatie) {#configuring-the-bcc-email-address--on-premise-}
 
 >[!IMPORTANT]
 >
@@ -121,7 +123,7 @@ In **config-`<instance name>.xml`** dossier, gebruik de volgende parameters om d
 >
 >Bovendien wijst het relais een **[!UICONTROL Sent]** status aan alle e-mails toe, met inbegrip van die die niet worden verzonden. Daarom worden alle berichten gearchiveerd.
 
-## Naar de nieuwe e-mail-BCC {#updated-email-archiving-system--bcc-} gaan
+## Naar de nieuwe e-mail-BCC gaan {#updated-email-archiving-system--bcc-}
 
 >[!IMPORTANT]
 >
@@ -135,7 +137,7 @@ Hiervoor brengt u de volgende wijzigingen aan in het **`config-<instance>.xml`**
 
 Zodra e-mail BCC wordt gevormd, zorg ervoor u **[!UICONTROL Email BCC]** optie in het leveringsmalplaatje of de levering selecteert. Zie [deze sectie](../../delivery/using/sending-messages.md#archiving-emails)voor meer informatie.
 
-## Beste werkwijzen voor BCC via e-mail {#best-practices}
+## BCC-tips e-mailen {#best-practices}
 
 * **Postvak** BCC-adres: ervoor te zorgen dat het voldoende opvangcapaciteit heeft om alle e-mails die door de MTA worden verzonden, te archiveren.
 * **MTA-mutualisatie**: de archiveringsfunctie van BCC werkt op MTA-niveau. Hiermee kunt u elke e-mail dupliceren die door de MTA is verzonden. Aangezien MTA over verscheidene instanties (bijvoorbeeld dev, test, of prod) of zelfs over verscheidene cliënten (in een midsourcingomgeving) kan worden gemutualiseerd, beïnvloedt het opzetten van deze eigenschap veiligheid:
@@ -145,3 +147,31 @@ Zodra e-mail BCC wordt gevormd, zorg ervoor u **[!UICONTROL Email BCC]** optie i
 
 * **E-mails per verbinding**: BCC e-mailarchivering werkt door een verbinding te openen en alle e-mails via die verbinding te verzenden. Adobe raadt u aan om met uw interne technische contactpersoon te controleren hoeveel e-mails worden geaccepteerd voor een bepaalde verbinding. Het verhogen van dit aantal kan een grote invloed op de productie BCC hebben.
 * **BCC die IPs** verzendt: BCC-e-mailberichten worden momenteel niet verzonden via de normale MTA-proxy&#39;s. In plaats daarvan is een directe verbinding geopend van de MTA-server naar de e-mailserver van het doel. Dit betekent dat u extra IPs aan de lijst van gewenste personen op uw netwerk, afhankelijk van uw configuratie van de e-mailserver kunt moeten toevoegen.
+
+<!--## Email BCC with Enhanced MTA {#email-bcc-with-enhanced-mta}
+
+For **hosted and hybrid architectures**, if you have the latest instance of Adobe Campaign, or if you have upgraded to the Enhanced MTA and using Adobe Campaign 19.2 or later, you can use Email BCC with Enhanced MTA, which is more reliable, efficient, and has lower latency.
+
+### Activating Email BCC with Enhanced MTA
+
+To activate this feature, you must contact your account executive to communicate the BCC email address to be used for archiving.
+
+>[!NOTE]
+>
+>If you were already using BCC email archiving, you can provide the same address as you were using before or use a new one. If you keep the same, you still have to contact your account executive to set it up for you.
+
+### Specificities and recommendations
+
+Email BCC with Enhanced MTA is not activated at the delivery level: once this feature is enabled, **all sent deliveries** are sent to the BCC email address. There is no need to select the **[!UICONTROL Email BCC]** option in the delivery template or in the delivery.
+
+If you were already using BCC and if you keep the same address, you could see a significant increase in the volumes sent to the BCC address.
+
+Consequently, make sure:
+* The BCC address has enough reception capacity to archive all the emails that are sent.
+* You have the required MTA infrastructure capacity to receive 100% of your email volume delivered to a single address.
+
+### Limitations
+
+* Email BCC with Enhanced MTA delivers to the BCC email address before delivering to the recipients, which can result in BCC messages being sent even though the original deliveries may have bounced. For more on bounces, see [Understanding delivery failures](../../delivery/using/understanding-delivery-failures.md).
+
+* There is no reporting available on the delivery status of the emails sent to the BCC email address.-->

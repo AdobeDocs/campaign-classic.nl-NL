@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 6e24d5fe-4830-49b4-a0fe-624c5644c920
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 3%
@@ -15,9 +15,11 @@ ht-degree: 3%
 
 # Gegevens laden (RDBMS){#data-loading-rdbms}
 
+![](../../assets/common.svg)
+
 Met de **[!UICONTROL Data loading (RDBMS)]**-activiteit hebt u rechtstreeks toegang tot deze externe database en kunt u alleen de gegevens verzamelen die vereist zijn voor de doelindeling.
 
-Om prestaties te verbeteren, adviseren wij gebruikend de vraagactiviteit (waar de gegevens van een extern gegevensbestand kunnen worden gebruikt). Raadpleeg [Toegang tot een externe database (FDA)](../../workflow/using/accessing-an-external-database--fda-.md) voor meer informatie hierover.
+Om prestaties te verbeteren, adviseren wij gebruikend de vraagactiviteit (waar de gegevens van een extern gegevensbestand kunnen worden gebruikt). Raadpleeg [Toegang tot een externe database (FDA)](accessing-an-external-database--fda-.md) voor meer informatie hierover.
 
 De bewerking is als volgt:
 

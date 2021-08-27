@@ -5,7 +5,7 @@ description: In deze sectie wordt de technische workflow beschreven die met het 
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 
 
 # Inbox rendering (IR){#inbox-rendering}
+
+![](../../assets/common.svg)
 
 De hieronder beschreven workflow wordt standaard geïnstalleerd met de **Inbox rendering (IR)** module. Voor meer op Inbox het teruggeven, verwijs naar dit [sectie](../../delivery/using/inbox-rendering.md).
 

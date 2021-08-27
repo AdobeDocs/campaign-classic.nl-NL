@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1528'
 ht-degree: 0%
 
 ---
 
-# Gegevens synchroniseren tussen Campagne en CRM {#data-synchronization}
+# Gegevens tussen Campagne en CRM synchroniseren {#data-synchronization}
+
+![](../../assets/common.svg)
 
 Gegevenssynchronisatie tussen Adobe Campaign en de CRM wordt uitgevoerd via een specifieke workflowactiviteit: [CRM-connector](../../workflow/using/crm-connector.md).
 
@@ -42,7 +44,7 @@ Selecteer de externe rekening die CRM aanpast dat u synchronisatie met wilt vorm
 
 De configuratie van deze activiteit hangt af van het uit te voeren proces. Hieronder worden verschillende configuraties beschreven.
 
-## Importeren uit de CRM {#importing-from-the-crm}
+## Invoer uit de BCR {#importing-from-the-crm}
 
 Om gegevens via CRM in Adobe Campaign te importeren, moet u het volgende type workflow maken:
 
@@ -80,7 +82,7 @@ Voor een importactiviteit, zijn de **[!UICONTROL CRM Connector]** stappen van de
 
    Raadpleeg [Variabel beheer](#variable-management) voor meer informatie.
 
-### Variabelen {#variable-management} beheren
+### Variabelen beheren {#variable-management}
 
 Schakel de optie **[!UICONTROL Automatic index]** in om alleen objecten te verzamelen die zijn gewijzigd sinds de laatste import.
 
@@ -141,7 +143,7 @@ De volgorde van de kolommen in de lijst is de sorteervolgorde:
 
 ![](assets/crm_import_order.png)
 
-### Identificatie record {#record-identification}
+### Registeridentificatie {#record-identification}
 
 In plaats van elementen te importeren die in de CRM zijn opgenomen (en mogelijk zijn gefilterd), kunt u een populatie gebruiken die vooraf in de workflow is berekend.
 
@@ -240,7 +242,7 @@ Hiervoor voert u de volgende stappen uit:
    >
    >De periode voor het verwijderen van elementen moet samenvallen met de specifieke beperkingen van de BCR. Dit betekent dat voor Salesforce.com bijvoorbeeld elementen die meer dan 30 dagen geleden zijn verwijderd, niet kunnen worden hersteld.
 
-## Objecten verwijderen in de CRM {#deleting-objects-in-the-crm}
+## Objecten verwijderen in de CRM-toepassing {#deleting-objects-in-the-crm}
 
 Om voorwerpen op de kant van CRM te schrappen, moet u de primaire sleutel van de verre te schrappen elementen specificeren.
 
@@ -251,4 +253,3 @@ Met het tabblad **[!UICONTROL Behavior]** kunt u de verwerking van afwijzingen i
 >[!NOTE]
 >
 >Zelfs wanneer de optie **[!UICONTROL Process rejects]** is uitgeschakeld, wordt een waarschuwing gegenereerd voor elke geweigerde kolom.
-

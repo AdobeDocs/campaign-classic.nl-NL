@@ -1,12 +1,12 @@
 ---
 product: campaign
 title: Adobe ID gebruiken in campagne
-description: Meer informatie over Adobe IMS-integratie
+description: Meer informatie over de integratie met Adobe IMS
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 23%
@@ -14,6 +14,8 @@ ht-degree: 23%
 ---
 
 # Informatie over Adobe ID{#about-adobe-id}
+
+![](../../assets/common.svg)
 
 Met Adobe Identity Management System (IMS) kunnen beheerders de toegang van gebruikers tot toepassingen en services maken en beheren. Raadpleeg [deze pagina](https://helpx.adobe.com/enterprise/using/identity.html) voor meer informatie over de verschillende typen Adobe-id&#39;s.
 
@@ -30,14 +32,14 @@ Campagnegebruikers kunnen via hun Adobe ID verbinding maken met de Adobe Campaig
 >Als u met Campagne door de Dienst van de Identiteit van de Adobe (IMS) verbindt, moet u aan de recentste bouwstijl bevorderen om met Campagne na **30 Juni, 2021** te kunnen verbinden. Deze upgrade is verplicht voor zowel de campagneserver als de clientconsole. Afhankelijk van uw huidige versie, moet u aan één van de volgende versies bevorderen:
 >
 > * [Campagne [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
-* [Campagne 21.1.3](../../rn/using/latest-release.md)
-* [Campagne 20.2.5](../../rn/using/release--20-2.md)
-* [Campagne 20.1.4](../../rn/using/release--20-1.md)
-* [Campagne 19.2.4](../../rn/using/release--19-2.md)
-* [Campagne 19.1.8](../../rn/using/release--19-1.md)
+> * [Campagne 21.1.3](../../rn/using/latest-release.md)
+> * [Campagne 20.2.5](../../rn/using/release--20-2.md)
+> * [Campagne 20.1.4](../../rn/using/release--20-1.md)
+> * [Campagne 19.2.4](../../rn/using/release--19-2.md)
+> * [Campagne 19.1.8](../../rn/using/release--19-1.md)
 
-[!DNL :bulb:] [Meer informatie over IMS-updates](../../technotes/ims-updates.md)
-
+>
+> [!DNL :bulb:] [Meer informatie over IMS-updates](../../technotes/using/ims-updates.md)
 
 ## Meer bronnen
 

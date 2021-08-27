@@ -6,7 +6,7 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: e030c029-d1ee-4749-94e3-6bdfc8d89a34
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 5%
@@ -15,7 +15,9 @@ ht-degree: 5%
 
 # Publiceren op Twitter{#publishing-on-twitter}
 
-## {#publishing-on-your-twitter-accounts} publiceren op uw Twitter-accounts
+![](../../assets/v7-only.svg)
+
+## Publiceren op je Twitter-accounts {#publishing-on-your-twitter-accounts}
 
 Als de configuratie is voltooid, kunt u met Social Marketing tweets verzenden naar uw Twitter-accounts.
 
@@ -52,7 +54,7 @@ Selecteer de account(s) waarnaar u tweets wilt verzenden.
 
    ![](assets/social_twitter_delivery_011.png)
 
-### Doel van proefdruk {#selecting-the-target-of-the-proof} selecteren
+### Het doel van de proefdruk selecteren {#selecting-the-target-of-the-proof}
 
 Op het tabblad **[!UICONTROL Target of the proofs]** kunt u de Twitter-account definiëren die voor testleveringen moet worden gebruikt voordat de uiteindelijke levering plaatsvindt. Daarom raden we u aan een persoonlijke Twitter-account te maken die gewijd is aan het verzenden van proefdrukken. Raadpleeg [Een testaccount maken op Twitter](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter) voor meer informatie over het maken van een particuliere Twitter-account. De stappen voor het selecteren van het proefdrukdoel zijn hetzelfde als voor het selecteren van het hoofddoel. Zie [Een testaccount maken op Twitter](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter).
 
@@ -62,13 +64,13 @@ Op het tabblad **[!UICONTROL Target of the proofs]** kunt u de Twitter-account d
 >
 >Als u voor al uw leveringen dezelfde Twitter-testaccount gebruikt, kunt u het proefdrukdoel opslaan in de **[!UICONTROL Tweet]**-leveringssjabloon, geopend via het knooppunt **[!UICONTROL Resources > Templates > Delivery templates]**. Het proefdrukdoel wordt dan standaard ingevoerd voor elke nieuwe levering.
 
-### De berichtinhoud definiëren {#defining-the-message-content}
+### De inhoud van het bericht definiëren {#defining-the-message-content}
 
 Typ de inhoud van de tweet op het tabblad **[!UICONTROL Content]**.
 
 ![](assets/social_twitter_delivery_005.png)
 
-### De voorvertoning {#viewing-the-preview} weergeven
+### De voorvertoning weergeven {#viewing-the-preview}
 
 Op het tabblad **[!UICONTROL Preview]** kunt u een rendering van de tweet weergeven.
 
@@ -83,7 +85,7 @@ Op het tabblad **[!UICONTROL Preview]** kunt u een rendering van de tweet weerge
 >
 >De voorvertoning kan iets afwijken van de uiteindelijke tweet. We raden u aan een proefdruk vóór de uiteindelijke aflevering te verzenden om een exacte weergave van de tweet te bekijken. Zie [De proefdruk verzenden](#sending-the-proof).
 
-### Reeksspatiëring {#configuring-tracking} configureren
+### Tekstspatiëring configureren {#configuring-tracking}
 
 Het volgen kan in de leveringsrapporten en op **[!UICONTROL Edit > Tracking]** lusje van de levering en de dienst worden bekeken.
 
@@ -97,13 +99,13 @@ De volgende configuratie is het zelfde als voor een e-maillevering. Raadpleeg [d
 >
 >We kunnen het verschil niet zien tussen robots die tweets analyseren en gebruikers die klikken.
 
-### De proefdruk {#sending-the-proof} verzenden
+### De proefdruk verzenden {#sending-the-proof}
 
 We raden u aan een bewijs van uw publicatie vóór de uiteindelijke levering te verzenden om een exacte weergave van de publicatie op een persoonlijke Twitter-testpagina te verkrijgen. Raadpleeg [Een testaccount maken op Twitter](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter) voor meer informatie over het maken van een particuliere Twitter-account. De stappen voor het selecteren van het proefdrukdoel worden beschreven in [Het doel van de proefdruk selecteren](#selecting-the-target-of-the-proof).
 
 Bewijs van levering is identiek aan e-mailleveringen. Zie [deze sectie](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-### Het bericht {#sending-the-message} verzenden
+### Het bericht verzenden {#sending-the-message}
 
 1. Wanneer de inhoud is goedgekeurd, klikt u op de knop **[!UICONTROL Send]**.
 1. Selecteer **[!UICONTROL Deliver as soon as possible]** en klik **[!UICONTROL Analyze]** knoop.
@@ -182,7 +184,7 @@ Selecteer de volgers aan wie u uw directe bericht wilt verzenden.
 
       ![](assets/social_twitter_delivery_018.png)
 
-### Doel van proefdruk {#selecting-the-target-of-the-proof-1} selecteren
+### Het doel van de proefdruk selecteren {#selecting-the-target-of-the-proof-1}
 
 Op het tabblad **[!UICONTROL Target of the proofs]** kunt u de volgende persoon selecteren die de proefdruk van uw directe bericht ontvangt. Het selectieproces is hetzelfde als voor het hoofddoel. Zie [Het hoofddoel selecteren](#selecting-the-main-target).
 
@@ -192,7 +194,7 @@ Op het tabblad **[!UICONTROL Target of the proofs]** kunt u de volgende persoon 
 >
 >Als u al uw directe berichtproeven naar de zelfde Twitter volgende wilt verzenden, kunt u het proefdrukdoel in **[!UICONTROL Tweet (Direct Message)]** leveringsmalplaatje opslaan, dat via **[!UICONTROL Resources > Templates > Delivery templates]** knoop wordt betreden. Het proefdrukdoel wordt dan standaard ingevoerd voor elke nieuwe levering.
 
-### Inhoud van bericht {#defining-message-content-} definiëren
+### Berichtinhoud definiëren {#defining-message-content-}
 
 Typ de inhoud van de tweet op het tabblad **[!UICONTROL Content]**.
 

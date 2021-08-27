@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3229'
 ht-degree: 37%
@@ -15,7 +15,9 @@ ht-degree: 37%
 
 # Filtervoorwaarden definiëren{#defining-filter-conditions}
 
-## Kies de operator {#choosing-the-operator}
+![](../../assets/common.svg)
+
+## De operator kiezen {#choosing-the-operator}
 
 Binnen het filtreren voorwaarden, moet u twee waarden verbinden samen gebruikend een exploitant.
 
@@ -115,7 +117,7 @@ Hieronder volgt een lijst met de beschikbare operatoren:
  </tbody> 
 </table>
 
-## EN, OF, BEHALEN {#using-and--or--except}
+## GEBRUIK EN, OF, BEHALVE {#using-and--or--except}
 
 Voor vragen die verscheidene het filtreren voorwaarden gebruiken, moet u verbindingen tussen de voorwaarden bepalen. Er zijn drie mogelijke koppelingen:
 
@@ -144,7 +146,7 @@ In dit voorbeeld ziet u een filter waarmee u het volgende kunt weergeven: ontvan
 
 ![](assets/query_editor_nveau_31.png)
 
-## Voorwaarden {#prioritizing-conditions} prioriteren
+## Prioriteitsvoorwaarden {#prioritizing-conditions}
 
 In deze sectie wordt uitgelegd hoe u voorwaarden kunt prioriteren dankzij de blauwe pijlen op de werkbalk.
 
@@ -163,7 +165,7 @@ Plaats de cursor op de filtervoorwaarde **[!UICONTROL Gender (@gender) equal to 
 
 De voorwaarde **[!UICONTROL Gender (@gender) equal to Male]** is uit zijn haakje genomen. Het is op hetzelfde niveau gegaan als de voorwaarde &quot;Stad is gelijk aan Londen&quot;. Deze voorwaarden zijn met elkaar verbonden (**[!UICONTROL And]**).
 
-## Gegevens selecteren om {#selecting-data-to-extract} te extraheren
+## Gegevens selecteren om te extraheren {#selecting-data-to-extract}
 
 De beschikbare velden verschillen per tabel. Alle velden worden opgeslagen in een hoofdknooppunt dat **[!UICONTROL Main element]** wordt genoemd. In het volgende voorbeeld bevinden de beschikbare velden zich in de ontvangende tabel. Velden worden altijd in alfabetische volgorde weergegeven.
 
@@ -263,7 +265,7 @@ Koppeling maken naar een tabel en verzamelingselement:
 >* De **[!UICONTROL Distribution of values]** dient als een manier om de verdeling van de waarden van het geselecteerde veld te bekijken (bijvoorbeeld de distributies die gekoppeld zijn aan de ontvangende steden, de ontvangende talen, enz.).
 
 
-## Berekende velden {#creating-calculated-fields} maken
+## Berekende velden maken {#creating-calculated-fields}
 
 Voeg zo nodig een kolom toe tijdens het opmaken van gegevens. Een berekend veld voegt een kolom toe aan de sectie met de voorvertoning van gegevens. Klik op **[!UICONTROL Add a calculated field]**.
 
@@ -304,7 +306,7 @@ Klik op het kruisje **[!UICONTROL Remove the calculated field]** om dit berekend
 
 ![](assets/query_editor_nveau_58.png)
 
-## Expressies {#building-expressions} maken
+## Expressies maken {#building-expressions}
 
 Met het gereedschap voor het bewerken van expressies kunt u aggregaten berekenen, functies genereren of een formule bewerken met behulp van een expressie.
 

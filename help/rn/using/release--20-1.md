@@ -2,20 +2,22 @@
 product: campaign
 title: Release 20.1
 description: Release 20.1
-feature: Overzicht
+feature: Overview
 role: User
 level: Beginner
 exl-id: 7e4234c9-3d8f-4014-a870-75e91cfad725
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 20%
+source-wordcount: '1559'
+ht-degree: 19%
 
 ---
 
 # Release 20.1{#release-20-1}
 
-## ![](assets/do-not-localize/limited_2.png) Release 20.1.4 - build 9126 {#release-20-1-4-build-9126}
+![](../../assets/v7-only.svg)
+
+## ![](assets/do-not-localize/limited_2.png) Release 20.1.4 - Build 9126 {#release-20-1-4-build-9126}
 
 _15 april 2021_
 
@@ -41,28 +43,27 @@ _23 december 2020_
 
 >[!CAUTION]
 >
-> * Deze release wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **30 juni 2021** verbinding te kunnen maken met Campaign. [Meer informatie](../../technotes/ims-updates.md)
-   >
-   > 
-* Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
+> * Deze release wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **30 juni 2021** verbinding te kunnen maken met Campaign. [Meer informatie](../../technotes/using/ims-updates.md)
+>
+> * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
 
 
 * Het verbindingsprotocol is bijgewerkt en aangepast aan het nieuwe IMS-verificatiemechanisme.
 * Er is een beveiligingsprobleem opgelost ter versterking van de bescherming tegen SSRF-aanvallen (Server Side Request Forgery). (NEO-27777)
 
-## ![](assets/do-not-localize/red_2.png) Release 20.1.3 - build 9124{#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/red_2.png) Release 20.1.3 - Build 9124{#release-20-1-3-build-9124}
 
 _6 mei 2020_
 
 * Probleem verholpen met de activiteit **Bestand overdragen** waardoor verificatie op basis van SFTP-sleutels niet kon werken op Debian 9. (NEO-23183)
 
-## ![](assets/do-not-localize/red_2.png) Release 20.1.2 - build 9123{#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/red_2.png) Release 20.1.2 - Build 9123{#release-20-1-2-build-9123}
 
 _13 maart 2020_
 
 * Probleem verholpen waarbij implementatie van versies op Red Hat 7-servers werd voorkomen. (NEO-23332)
 
-## ![](assets/do-not-localize/red_2.png) Release 20.1 - build 9122{#release-20-1-build-9122}
+## ![](assets/do-not-localize/red_2.png) Release 20.1 - Build 9122{#release-20-1-build-9122}
 
 _17 februari 2020_
 

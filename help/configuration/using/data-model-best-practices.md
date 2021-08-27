@@ -1,19 +1,21 @@
 ---
 product: campaign
-title: Best practices voor het datamodel
+title: Best practices voor het gegevensmodel
 description: Leer hoe u met het gegevensmodel Campaign Classic werkt
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 1%
 
 ---
 
-# Best practices voor het datamodel{#data-model-best-practices}
+# Best practices voor het gegevensmodel{#data-model-best-practices}
+
+![](../../assets/v7-only.svg)
 
 Dit document bevat belangrijke aanbevelingen bij het ontwerpen van uw Adobe Campaign-gegevensmodel.
 
@@ -27,11 +29,11 @@ Het Adobe Campaign-systeem is uiterst flexibel en kan verder worden uitgebreid d
 
 Dit document bevat veelgebruikte praktijkvoorbeelden en aanbevolen procedures voor het op de juiste wijze archiveren van uw Adobe Campaign-programma.
 
-## Architectuur van gegevensmodellen {#data-model-architecture}
+## Gegevensmodelarchitectuur {#data-model-architecture}
 
 Adobe Campaign is een krachtig campagnebeheersysteem voor meerdere kanalen waarmee u uw online- en offlinestrategieën kunt uitlijnen en persoonlijke ervaringen voor klanten kunt creëren.
 
-### Klantgerichte benadering {#customer-centric-approach}
+### klantgerichte benadering {#customer-centric-approach}
 
 Hoewel de meeste e-mailserviceproviders via een lijstgerichte aanpak communiceren met klanten, vertrouwt Adobe Campaign op een relationele database om een bredere visie op de klanten en hun kenmerken te kunnen gebruiken.
 
@@ -80,7 +82,7 @@ Een veld moet in een tabel worden opgeslagen als het een doel of een doel voor p
 
 Voor hybride en op-gebouw instanties, behandelt FDA (Federated Data Access, een facultatieve eigenschap die om tot externe gegevens) toegang te hebben de behoefte om een gebied &quot;op-de&quot;tijdens een campagneproces toe te voegen. U hoeft niet alles te importeren als u FDA hebt. Zie [Informatie over Federated Data Access](../../installation/using/about-fda.md) voor meer informatie.
 
-### Keuze van toetsen {#choice-of-keys}
+### Keuze van sleutels {#choice-of-keys}
 
 Naast **automatische controles** die door gebrek in de meeste lijsten worden bepaald, zou u moeten overwegen wat logische of bedrijfssleutels (rekeningsaantal, cliëntaantal, etc.) toe te voegen. Het kan later worden gebruikt voor invoer/verzoening of gegevenspakketten. Zie [Identifiers](#identifiers) voor meer informatie.
 
@@ -240,7 +242,7 @@ Als de omgekeerde verbinding niet aan de gebruiker zichtbaar zou moeten zijn, ku
 
 Koppelingen die een externe verbinding (1-0..1) uitvoeren, moeten met de nodige voorzichtigheid worden gebruikt omdat dit van invloed is op de systeemprestaties.
 
-## Bewaren van gegevens - opschonen en verwijderen {#data-retention}
+## Bewaren van gegevens - opschonen en wissen {#data-retention}
 
 Adobe Campaign is geen data-entrepot of rapportageinstrument. Om goede prestaties van de oplossing van Adobe Campaign te verzekeren, zou de gegevensbestandgroei daarom onder controle moeten blijven. Om dit te bereiken, kan het volgen van een aantal van de onderstaande beste praktijken helpen.
 

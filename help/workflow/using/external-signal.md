@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: da84d3ff-1e64-45ef-bef0-da4a24d93461
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Extern signaal{#external-signal}
+
+![](../../assets/common.svg)
 
 Met de activiteit **Extern signaal** kunt u de uitvoering van een set taken in een werkstroom in een planning activeren.
 
@@ -25,9 +27,9 @@ U kunt deze activiteit vormen om gebeurtenissen te bepalen als geen signaal word
 
 ![](assets/edit_signal.png)
 
-De configuratie van verlopen wordt gedetailleerd in [Verlopen](../../workflow/using/defining-approvals.md).
+De configuratie van verlopen wordt gedetailleerd in [Verlopen](defining-approvals.md).
 
-Met het veld **Vertraging** kunt u een vervalvertraging opgeven in de gewenste eenheden. Zie [Wacht](../../workflow/using/wait.md).
+Met het veld **Vertraging** kunt u een vervalvertraging opgeven in de gewenste eenheden. Zie [Wacht](wait.md).
 
 Elke regel vertegenwoordigt een type vervaldatum en valt samen met een overgang.
 

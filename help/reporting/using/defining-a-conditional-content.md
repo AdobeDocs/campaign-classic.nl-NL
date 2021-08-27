@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: efee50f7-d917-4c71-add2-116c4b8f7013
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 8%
@@ -15,13 +15,15 @@ ht-degree: 8%
 
 # Voorwaardelijke content definiëren{#defining-a-conditional-content}
 
+![](../../assets/common.svg)
+
 U kunt de weergave van specifieke rapportitems of pagina&#39;s voorschrijven.
 
 Pas de zichtbaarheidsinstellingen van bepaalde items aan om deze voorwaardelijk te maken. Voor meer op dit, verwijs naar [Conditioning puntvertoning](#conditioning-item-display).
 
 Als u de weergave van een of meer pagina&#39;s voorwaardelijk wilt maken, gebruikt u een **[!UICONTROL Test]**-tekstactiviteit. Raadpleeg [Paginaweergave conditioneren](#conditioning-page-display) voor meer informatie.
 
-## Weergave van item {#conditioning-item-display} conditioneren
+## Weergave van items conditioneren {#conditioning-item-display}
 
 Om de vertoning van een deel van een rapport voorwaardelijk te maken, moet u zijn zichtbaarheidsvoorwaarden bepalen: als deze niet worden ontmoet, zullen de punten niet worden getoond.
 
@@ -33,7 +35,7 @@ In het volgende voorbeeld hangt de weergavevoorwaarde af van de taal:
 
 ![](assets/reporting_display_condition.png)
 
-## Weergave van pagina {#conditioning-page-display} conditioneren
+## Paginaweergave van conditionering {#conditioning-page-display}
 
 In de grafiek van een rapport, laat de **[!UICONTROL Test]** activiteit u de opeenvolging van pagina&#39;s afhankelijk van één of meerdere voorwaarden veranderen.
 

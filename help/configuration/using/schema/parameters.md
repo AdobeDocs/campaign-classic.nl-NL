@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 54538c3e-3232-4bf7-a09c-dacf0f072be5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 17%
@@ -15,11 +15,13 @@ ht-degree: 17%
 
 # parameterelement {#parameters--element}
 
+![](../../../assets/v7-only.svg)
+
 ## Inhoudsmodel {#content-model-13}
 
 parameters:==param
 
-## Kenmerken {#attributes-13}
+## Attributen {#attributes-13}
 
 Geen
 
@@ -39,7 +41,7 @@ This element define a group of `<parameter>` elements.
 
 Dit element is verplicht, zelfs voor één enkel `<param>` kindelement van het `<method>` element.
 
-## Kenmerkbeschrijving {#attribute-description-13}
+## Beschrijving van kenmerk {#attribute-description-13}
 
 Geen
 

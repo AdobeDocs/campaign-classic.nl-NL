@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Architectuur van transactionele berichten {#transactional-messaging-architecture}
+
+![](../../assets/v7-only.svg)
 
 Transactioneel overseinen baseert zich op een specifieke architectuur, die uit verscheidene gevallen bestaat:
 
@@ -27,7 +29,7 @@ Transactioneel overseinen baseert zich op een specifieke architectuur, die uit v
 |--- |--- |
 | Adobe Campaign-gebruikers melden zich aan bij de besturingsinstantie om: <ul><li>Transactieberichtsjablonen maken</li><li>De voorvertoning van een bericht genereren met behulp van een zaadlijst</li><li>Rapporten weergeven</li><li>De uitvoeringsinstanties controleren</li></ul> | Uitvoeringsinstanties zijn hier: <ul><li>Gebeurtenissen ontvangen</li><li>Koppel ze aan transactiemalplaatjes</li><li>Verzend een gepersonaliseerd bericht naar elke ontvanger</li></ul> |
 
-## Instanties {#installing-instances} installeren
+## Instanties installeren {#installing-instances}
 
 Er zijn verscheidene voorzorgsmaatregelen om te nemen wanneer het installeren van de Transactieberichtpakketten. Adobe raadt u aan in een testomgeving te werken voordat u de productie start. U hebt ook een compatibele Adobe Campaign-licentie nodig. Neem voor meer informatie contact op met de manager van uw Adobe-account.
 
@@ -45,7 +47,7 @@ Als u de besturingsinstantie op uw computer wilt installeren, selecteert u het *
 
 De gedetailleerde stappen om de controleinstantie te vormen worden voorgesteld in [deze sectie](../../message-center/using/configuring-instances.md#control-instance).
 
-### Verschillende besturingsinstanties {#supporting-several-control-instances} ondersteunen
+### Verschillende besturingsinstanties ondersteunen {#supporting-several-control-instances}
 
 >[!IMPORTANT]
 >
@@ -75,7 +77,7 @@ Het e-mailkanaal is standaard beschikbaar. Als u uw transactieberichten op meerd
 >
 >Een leveringskanaal toevoegen (mobiel kanaal, Mobile App-kanaal, enz.) moet worden uitgevoerd voordat het Transactiebericht-pakket wordt geïnstalleerd.
 
-### Een leveringskanaal {#adding-a-delivery-channel} toevoegen
+### Een leveringskanaal toevoegen {#adding-a-delivery-channel}
 
 Adobe raadt u aan het pakket voor het leveringskanaal altijd toe te voegen **voordat u het Transaction message-pakket** installeert.
 

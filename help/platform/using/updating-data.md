@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 2%
 
 ---
 
-# Data bijwerken{#updating-data}
+# Gegevens bijwerken{#updating-data}
+
+![](../../assets/common.svg)
 
 De gegevens die aan het profiel van een ontvanger zijn gekoppeld, kunnen handmatig of automatisch worden bijgewerkt.
 
@@ -21,7 +23,7 @@ De gegevens die aan het profiel van een ontvanger zijn gekoppeld, kunnen handmat
 
 Een automatische update kan worden geconfigureerd via een workflow. Raadpleeg [deze sectie](../../workflow/using/update-data.md) voor meer informatie.
 
-## Een massa-update uitvoeren {#performing-a-mass-update}
+## Een massaupdate uitvoeren {#performing-a-mass-update}
 
 Als u handmatige updates wilt uitvoeren, klikt u met de rechtermuisknop op de geselecteerde ontvanger(s) om het snelmenu **[!UICONTROL Actions]** te gebruiken of gebruikt u het pictogram **[!UICONTROL Actions]**.
 
@@ -63,7 +65,7 @@ Informatie over het uitvoeren van updates wordt weergegeven in de bovenste secti
 
 Met **[!UICONTROL Stop]** kunt u de update annuleren, maar bepaalde records zijn mogelijk bijgewerkt. Als u het proces stopt, worden deze updates niet geannuleerd. Op de voortgangsbalk ziet u hoe ver de bewerking is gevorderd.
 
-### Gegevens {#merge-data} samenvoegen
+### Gegevens samenvoegen {#merge-data}
 
 Selecteer **[!UICONTROL Merge selected lines...]** om het samenvoegen van twee ontvangende profielen te starten. De profielen die moeten worden samengevoegd, moeten worden geselecteerd voordat u de optie selecteert. De samenvoeging wordt geconfigureerd en gestart met een wizard.
 

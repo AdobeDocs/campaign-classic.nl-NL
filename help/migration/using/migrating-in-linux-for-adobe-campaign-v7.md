@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 exl-id: 9dc0699c-0fbf-4f8e-81f7-8ca3d7e98798
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1890'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Migreren in Linux voor Adobe Campaign v7{#migrating-in-linux-for-adobe-campaign-v}
+
+![](../../assets/v7-only.svg)
 
 ## Algemene procedure {#general-procedure}
 
@@ -157,7 +159,7 @@ De procedure is afhankelijk van de vorige versie van Adobe Campaign.
    >
    >Als voorzorgsmaatregel, adviseren wij dat u **nl6.back** omslag wegrijpt en het aan een veilige plaats buiten de server bewaart.
 
-## Verwijderen van vorige Adobe Campaign-versiepakketten {#uninstalling-adobe-campaign-previous-version-packages}
+## Oude Adobe Campaign-versiepakketten verwijderen {#uninstalling-adobe-campaign-previous-version-packages}
 
 De procedure is afhankelijk van de vorige versie van Adobe Campaign.
 
@@ -239,7 +241,7 @@ In deze sectie wordt getoond hoe u Adobe Campaign v6.02- of v6.1-pakketten kunt 
       rprm -ev nlserver6 nlthirdparty6
       ```
 
-## Adobe Campaign v7 {#deploying-adobe-campaign-v7} implementeren
+## Adobe Campaign v7 implementeren {#deploying-adobe-campaign-v7}
 
 De procedure is afhankelijk van de vorige versie van Adobe Campaign.
 
@@ -512,7 +514,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
    nlserver config -postupgrade -instance:<instance name>
    ```
 
-## De omleidingsserver (Apache) {#migrating-the-redirection-server--apache-} migreren
+## De omleidingsserver (Apache) migreren {#migrating-the-redirection-server--apache-}
 
 >[!NOTE]
 >
@@ -574,7 +576,7 @@ In dit stadium moet Apache worden stopgezet. Zie: [Servicestop](#service-stop).
 
 Als u vanaf v6.02 of eerder migreert, moet u uw veiligheidsstreken vormen alvorens de diensten te beginnen. Raadpleeg [Security](../../migration/using/general-configurations.md#security) voor meer informatie.
 
-## Services {#re-starting-services} opnieuw starten
+## Herstart {#re-starting-services}
 
 De procedure is afhankelijk van de vorige versie van Adobe Campaign.
 
@@ -650,7 +652,7 @@ Start Apache- en Adobe Campaign-services op elk van de volgende servers:
 
 Test de nieuwe installatie volledig, controleer dat het niet regres en zorg ervoor dat alles correct werkt door alle aanbevelingen in [Algemene configuraties](../../migration/using/general-configurations.md) sectie te volgen.
 
-## Adobe Campaign v5 {#deleting-and-cleansing-adobe-campaign-v5} verwijderen en opschonen
+## Adobe Campaign v5 verwijderen en opschonen {#deleting-and-cleansing-adobe-campaign-v5}
 
 >[!NOTE]
 >

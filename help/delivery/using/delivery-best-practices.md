@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 24%
@@ -13,6 +13,8 @@ ht-degree: 24%
 ---
 
 # Best practices voor verzending {#delivery-best-practices}
+
+![](../../assets/common.svg)
 
 Leer beste praktijken met betrekking tot leveringsontwerp en verzendend met Adobe Campaign. Gebruik de onderstaande koppelingen om door onderwerpen te navigeren en hulp te zoeken.
 

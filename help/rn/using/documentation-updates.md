@@ -2,18 +2,20 @@
 product: campaign
 title: Updates documentatie Adobe Campaign Classic
 description: Deze pagina bevat een overzicht van alle nieuwe functies en updates in de documentatie van Adobe Campaign Classic
-feature: Overzicht
+feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
-source-wordcount: '4465'
+source-wordcount: '4464'
 ht-degree: 100%
 
 ---
 
 # Documentatie-updates{#documentation-updates}
+
+![](../../assets/v7-only.svg)
 
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates per maand en per Campaign-release.
 
@@ -48,7 +50,7 @@ De vereisten voor de Campaign-clientconsole zijn bijgewerkt in de compatibilitei
 
 De installatiestappen voor de Campaign-clientconsole zijn verbeterd en verduidelijkt. [Meer informatie](../../installation/using/installing-the-client-console.md)
 
-Er is een nieuwe technische opmerking gemaakt over het handtekeningprobleem van de bijgehouden URL&#39;s. [Meer informatie](../../technotes/tracked-urls.md)
+Er is een nieuwe technische opmerking gemaakt over het handtekeningprobleem van de bijgehouden URL&#39;s. [Meer informatie](../../technotes/using/tracked-urls.md)
 
 ## April 2021 {#april-2021}
 
@@ -210,7 +212,7 @@ De landingspagina met best practices voor leverbaarheid is verbeterd om de toega
 
 Er zijn nu instructievideo’s beschikbaar over de volgende onderwerpen:
 
-* [Vermoeidheidsbeheer instellen met behulp van typologieregels en vooraf gedefinieerde filters](../../campaign/using/about-campaign-typologies.md)
+* [Vermoeidheidsbeheer instellen met behulp van typologieregels en vooraf gedefinieerde filters](../../campaign-opt/using/about-campaign-typologies.md)
 
 * [Een e-mail maken in een campagne](../../campaign/using/marketing-campaign-deliveries.md)
 

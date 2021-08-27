@@ -6,14 +6,16 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '407'
 ht-degree: 3%
 
 ---
 
 # Gebruikelijke opdrachten{#usual-commands}
+
+![](../../assets/v7-only.svg)
 
 In deze sectie worden de gebruikelijke opdrachten in Adobe Campaign weergegeven.
 
@@ -29,7 +31,6 @@ De parameter **`<command>`** beantwoordt aan de module.
 >* Omgekeerd, kunt u het argument **-verbose** toevoegen om meer informatie te tonen.
 
 >
-
 
 
 ## Bewaking, opdrachten {#monitoring-commands-}
@@ -90,7 +91,7 @@ nlserver stop <module>@<INSTANCE>
 >
 >**`<instance>`** komt overeen met de naam van de instantie zoals die is ingevoerd in de configuratiebestanden of  **** standaardinstellingen voor monoinstantiemodules.
 
-## Afsluitservices {#shut-down-services}
+## Afsluiten van services {#shut-down-services}
 
 Als u de Adobe Campaign-services wilt stoppen, gebruikt u een van de volgende opdrachten:
 
@@ -118,7 +119,7 @@ Als u de Adobe Campaign-services wilt stoppen, gebruikt u een van de volgende op
    nlserver shutdown 
    ```
 
-## Services {#restart-services} opnieuw starten
+## Herstartservices {#restart-services}
 
 Op dezelfde manier kunt u een van de volgende opdrachten gebruiken om Adobe Campaign opnieuw te starten:
 
@@ -161,8 +162,5 @@ Het **internal** wachtwoord wijzigen: **nlserver config -internalpassword**
 >* In het algemeen, in plaats van het wijzigen van de configuratiedossiers door hand, kunt u **config** bevel gebruiken
 >* Om de lijst van parameters te krijgen, gebruik **-?** parameter:  **nlserver config -?**
 >* In het geval van een gegevensbestand van het Oracle, moet u niet de rekening specificeren. De syntaxis ziet er als volgt uit:
-
 >
->  
-nlserver config -setdblogin:Oracle:test6@dbserver
-
+>  nlserver config -setdblogin:Oracle:test6@dbserver

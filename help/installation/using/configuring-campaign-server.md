@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 1%
@@ -15,17 +15,19 @@ ht-degree: 1%
 
 # Ga aan de slag met de configuratie van de Campagneserver{#gs-campaign-server-config}
 
+![](../../assets/v7-only.svg)
+
 In dit hoofdstuk worden configuraties aan de serverzijde beschreven die kunnen worden uitgevoerd om aan uw behoeften en uw specifieke omgeving te voldoen.
 
 ## Beperkingen
 
 Deze procedures zijn beperkt tot **on-premise**/**hybride** plaatsingen en vereisen de toestemmingen van het Beleid.
 
-Voor **gehoste**-implementaties kunnen instellingen aan de serverzijde alleen door Adobe worden geconfigureerd. Nochtans, kunnen sommige montages opstelling binnen [het Controlebord van de Campagne](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html), zoals IP het beheer van de lijst van gewenste personen of toestemmingen URL zijn. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
+Voor **gehoste**-implementaties kunnen instellingen aan de serverzijde alleen door Adobe worden geconfigureerd. Nochtans, kunnen sommige montages opstelling binnen [het Controlebord van de Campagne](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html), zoals IP het beheer van de lijst van gewenste personen of toestemmingen URL zijn. [Meer info](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
 
 Raadpleeg de volgende secties voor meer informatie:
 
-* [Configuratiescherm-documentatie](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+* [Configuratiescherm-documentatie](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl)
 * [Hostmodellen](../../installation/using/hosting-models.md)
 * [Campaign Classic On-premisse en gehoste capaciteitmatrix](../../installation/using/capability-matrix.md)
 
@@ -81,7 +83,7 @@ Confirmation: XXXX
 17:34:02 >   Password successfully changed for account 'internal' (authentication mode 'nl')
 ```
 
-## Processen {#enabling-processes} inschakelen
+## Processen inschakelen {#enabling-processes}
 
 Adobe Campaign-processen op de server worden ingeschakeld (en uitgeschakeld) via de bestanden **config-default.xml** en **`config-<instance>.xml`**.
 
@@ -136,7 +138,7 @@ U kunt de opslagdirectory (**var** directory) van Adobe Campaign-gegevens (logbe
    Raadpleeg [Parameters aanpassen](../../installation/using/installing-packages-with-linux.md#personalizing-parameters) voor meer informatie.
 
 
-## Dynamische paginabeveiliging en -relays {#dynamic-page-security-and-relays}
+## Dynamische paginabeveiliging en -bedekkingen {#dynamic-page-security-and-relays}
 
 Door gebrek, zijn alle dynamische pagina&#39;s automatisch verwant aan **local** de server van de Tomcat van de machine de waarvan module van het Web is begonnen. Deze configuratie is ingegaan in de **`<url>`** sectie van de configuratie van het vraagrelais voor het **ServerConf.xml** dossier.
 
@@ -188,7 +190,7 @@ In dit voorbeeld, valt de **`<IP_addresses>`** waarde met de lijst van IP adress
 >
 >De waarden zullen worden aangepast volgens uw configuratie en uw netwerkbeperkingen, vooral als specifieke configuraties voor uw installatie zijn ontwikkeld.
 
-### HTTP-headers {#managing-http-headers} beheren
+### HTTP-headers beheren {#managing-http-headers}
 
 Standaard worden niet alle HTTP-headers weergegeven. U kunt specifieke kopballen in de antwoorden toevoegen die door relais worden verzonden. Dit doet u als volgt:
 
@@ -274,7 +276,7 @@ Voer de volgende opdracht uit om de hostnaam van de computer op te halen: **host
 
 
 
-## Workflows en affiniteiten voor hoge beschikbaarheid {#high-availability-workflows-and-affinities}
+## Workflows en affiniteiten met hoge beschikbaarheid {#high-availability-workflows-and-affinities}
 
 U kunt verschillende workflowservers (wfserver) configureren en deze op twee of meer computers distribueren. Als u dit type architectuur kiest, configureert u de verbindingsmodus van de taakverdelingsmechanisme op basis van de Adobe Campaign-toegang.
 

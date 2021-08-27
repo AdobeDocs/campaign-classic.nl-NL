@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Een overzichtslijst maken{#creating-a-summary-list}
+
+![](../../assets/common.svg)
 
 In dit geval wordt beschreven hoe u een workflow maakt waarin u na het verzamelen van bestanden en na verschillende verbeteringen een overzichtslijst kunt maken. Het voorbeeld is gebaseerd op een lijst van contacten die aankopen in een opslag maakten.
 
@@ -92,7 +94,7 @@ Voeg de verrijkingsactiviteit toe en configureer deze als volgt:
 
    ![](assets/uc2_enrich_enrich3.png)
 
-Raadpleeg [Gegevens verrijken en wijzigen](../../workflow/using/targeting-data.md#enriching-and-modifying-data) voor meer informatie over de verschillende typen koppelingen.
+Raadpleeg [Gegevens verrijken en wijzigen](targeting-data.md#enriching-and-modifying-data) voor meer informatie over de verschillende typen koppelingen.
 
 In het volgende venster, moet u tot stand brengen zich aansluit bij voorwaarde door het brongebied (in de belangrijkste reeks) en het doelgebied (die tot het schema van &quot;Sporen&quot;behoren) te selecteren om gegevensverenigbaarheid te vormen.
 
@@ -110,7 +112,7 @@ De gegevens in de werktabel na deze verrijking zijn als volgt:
 
 ![](assets/uc2_enrich_population1.png)
 
-## Stap 2: Verrijkte gegevens naar de tabel &#39;Aankopen&#39; {#step-2--writing-enriched-data-to-the--purchases--table} schrijven
+## Stap 2: Verrijkte gegevens naar de tabel &#39;Aankopen&#39; schrijven {#step-2--writing-enriched-data-to-the--purchases--table}
 
 In deze stap wordt beschreven hoe u de geïmporteerde en verrijkte gegevens naar de tabel &quot;Aankopen&quot; schrijft. Hiervoor moeten we een **Update data** activiteit gebruiken.
 
@@ -134,7 +136,7 @@ In **Gegevens bijwerken** activiteit, is de volgende configuratie nodig:
 
 ![](assets/uc2_enrich_miseajour.png)
 
-## Stap 3: &#39;Contactgegevens&#39; verrijken {#step-3--enriching--contact--data-}
+## Stap 3: &#39;Contactgegevens&#39; vergroten {#step-3--enriching--contact--data-}
 
 Het schema &quot;Contacten&quot; is fysiek gekoppeld aan het schema &quot;Aankopen&quot;. Dit betekent dat u een andere optie van de optie &quot;Verrijking&quot;kunt gebruiken: gegevens toevoegen die zijn gekoppeld aan de filterdimensie.
 

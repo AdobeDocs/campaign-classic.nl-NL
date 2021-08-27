@@ -6,20 +6,22 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2024'
 ht-degree: 5%
 
 ---
 
-# Veelgestelde vragen over upgrades maken {#build-upgrade-faq}
+# Veelgestelde vragen over upgrade maken {#build-upgrade-faq}
+
+![](../../assets/common.svg)
 
 Adobe Campaign wordt regelmatig bijgewerkt. Als u bekend bent met onze gepubliceerde [Opmerkingen bij de release](../../rn/using/rn-overview.md), bent u zich waarschijnlijk bewust van het feit dat gemiddeld 2/3 kleine versies met nieuwe functies, verbeteringen en oplossingen elk jaar worden uitgebracht. Bovendien brengen wij periodiek versies uit met uitsluitend cumulatieve oplossingen. Deze regelmatige afwezigheid van updates is erop gericht om de nieuwste en grootste in uw handen te krijgen, uw omgeving volledig veilig te houden en duidelijk uw ervaring met ons product te verbeteren.
 
 Het is essentieel dat onze klanten de meest recente versie van Adobe Campaign uitvoeren. Het staat ook Adobe toe om veel efficiënter te helpen in het geval u op kwesties loopt - het identificeren van, het reproduceren van en het bevestigen van een kwestie op een oude bouwstijl typisch meer tijd vergt, om niet te vermelden dat sommige kwesties u zou kunnen ontmoeten reeds zeer goed in een recente bouwstijl zijn opgelost.
 
-[!DNL Gold Standard] is de ondersteuningsrelease van Campaign Classic voor de lange termijn. Als gehoste [!DNL Gold Standard]-gebruiker profiteert u automatisch van de [!DNL Gold Standard]-upgrade met de nieuwste stabiele versie zonder actie te hoeven ondernemen. On-premise- en hybride klanten kunnen ook profiteren van [!DNL Gold Standard]-releases. Als u van een oude build migreert, adviseren wij u eerst bij te werken naar deze versie. [Meer informatie](../../rn/using/gs-overview.md).
+[!DNL Gold Standard] is de ondersteuningsrelease van Campaign Classic voor de lange termijn. Als gehoste [!DNL Gold Standard]-gebruiker profiteert u automatisch van de [!DNL Gold Standard]-upgrade met de nieuwste stabiele versie zonder actie te hoeven ondernemen. On-premise- en hybride klanten kunnen ook profiteren van [!DNL Gold Standard]-releases. Als u van een oude build migreert, adviseren wij u eerst bij te werken naar deze versie. [Meer info](../../rn/using/gs-overview.md).
 
 ## Wat is een bouwstijlverbetering?
 
@@ -168,7 +170,7 @@ Als u problemen ondervindt na een upgrade van de build, neemt u contact op met [
 
 Meer informatie over de Help- en ondersteuningsopties voor Campaign Classic](../../support.md)[
 
-## Controlelijst voor upgrades maken {#check-list}
+## Controlelijst voor upgrades samenstellen {#check-list}
 
 ### Checklist voor post-upgrade van de cloudberichtenserver
 

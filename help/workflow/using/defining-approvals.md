@@ -1,21 +1,23 @@
 ---
 product: campaign
 title: Goedkeuringen definiëren
-description: Met goedkeuringen kunnen operatoren beslissingen nemen over een workflow of de voortzetting van de uitvoering ervan bevestigen
+description: Met goedkeuringen kunnen operators beslissingen nemen over een workflow of de voortzetting van de uitvoering bevestigen
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '840'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 # Goedkeuringen definiëren {#defining-approvals}
 
-Met goedkeuringen kunnen operatoren beslissingen nemen over een workflow of de voortzetting van de uitvoering ervan bevestigen.
+![](../../assets/common.svg)
+
+Met goedkeuringen kunnen operators beslissingen nemen over een workflow of de voortzetting van de uitvoering bevestigen.
 
 Een bericht wordt verzonden naar een groep exploitanten en het werkschema wacht op een reactie alvorens te hervatten. De workflow wordt niet gestopt en andere bewerkingen kunnen plaatsvinden. Er kunnen bijvoorbeeld meerdere gelijktijdige goedkeuringen in behandeling zijn.
 

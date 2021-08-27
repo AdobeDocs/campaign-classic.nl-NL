@@ -6,20 +6,22 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
 
 # Presentatie van aanbieding beheren{#managing-offer-presentation}
 
+![](../../assets/v7-only.svg)
+
 ## Overzicht van presentatieregels {#presentation-rules-overview}
 
 De interactie laat u de stroom van aanbiedingsvoorstellen controleren gebruikend presentatieregels. Deze regels, die specifiek zijn voor interactie, zijn typologische regels. Hiermee kunt u aanbiedingen uitsluiten op basis van de geschiedenis van voorstellen die al aan een ontvanger zijn gedaan. Er wordt naar verwezen in de omgeving
 
-## Een aanbiedingspresentatieregel maken en ernaar verwijzen {#creating-and-referencing-an-offer-presentation-rule}
+## Een presentatieregel voor aanbiedingen maken en ernaar verwijzen {#creating-and-referencing-an-offer-presentation-rule}
 
 1. Ga naar **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** knoop.
 1. Maak een typologieregel en kies het type **[!UICONTROL Offer presentation]**.
@@ -59,7 +61,7 @@ Met de toepassingscriteria op het tabblad **[!UICONTROL General]** kunt u de aan
 
    ![](assets/offer_typology_008.png)
 
-### Afmetingen van aanbieding {#offer-dimensions}
+### Afmetingen voorstel {#offer-dimensions}
 
 Op **[!UICONTROL Offer presentation]** lusje, moet u de zelfde afmetingen voor de presentatieregel specificeren zoals die in het milieu worden gevormd.
 
@@ -96,7 +98,7 @@ Gebruik de pijlen om het aantal aanbiedingsvoorstellen te veranderen.
 
 In de sectie **[!UICONTROL Propositions to count]** kunt u zowel de ontvangers als de voorstellingen opgeven die leiden tot uitsluiting van de aanbiedingen die zijn gedefinieerd op het tabblad **[!UICONTROL General]** als deze een bepaald aantal keren voorkomen in de geschiedenis van de voorstellen.
 
-### Profielen {#filtering-propositions} filteren
+### Profielen filteren {#filtering-propositions}
 
 U kunt filtercriteria selecteren om voorstellen uit te sluiten die op het kanaal, de betrokken aanbiedingen of de status van eerder toegewezen voorstellen worden gebaseerd.
 
@@ -142,13 +144,13 @@ Deze criteria zijn de meest voorkomende toepassingen van de presentatieregels. A
 
    **[!UICONTROL Rejected propositions]** : Hiermee sluit u eerder aangeboden voorstellen uit die zijn afgewezen.
 
-### Ontvangers {#defining-recipients} definiëren
+### Ontvangers definiëren {#defining-recipients}
 
 Om de ontvangers te specificeren, klik **[!UICONTROL Edit the query from the targeting dimension...]** verbinding en selecteer de ontvangers betrokken bij de regel.
 
 ![](assets/offer_typology_012.png)
 
-### Een query maken op voorstellen {#creating-a-query-on-propositions}
+### Query maken op voorvertoningen {#creating-a-query-on-propositions}
 
 Als u de voorstellen wilt opgeven die via een query moeten worden geteld, klikt u op de koppeling **[!UICONTROL Limit propositions...]** en geeft u de criteria op waarmee rekening moet worden gehouden.
 

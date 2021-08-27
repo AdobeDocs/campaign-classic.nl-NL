@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 1%
@@ -14,7 +14,9 @@ ht-degree: 1%
 ---
 
 
-# Instanties {#creating-a-shared-connection} configureren
+# Instanties configureren {#creating-a-shared-connection}
+
+![](../../assets/v7-only.svg)
 
 Om de mogelijkheden van het transactionele overseinen te gebruiken, moet u de controle en uitvoeringsinstanties vormen. U kunt beide gebruiken:
 * [Één controle ](#control-instance) instantie verbonden aan één of verscheidene uitvoeringsinstanties
@@ -32,7 +34,7 @@ Alle stappen nodig om de controle en uitvoeringsinstanties te vormen en aan te s
 >
 >De bedieningsinstantie en de uitvoeringsinstantie(s) moeten op verschillende computers zijn geïnstalleerd. Ze kunnen niet dezelfde Campagne-instantie delen.
 
-## De besturingsinstantie {#control-instance} configureren
+## Vorm de controleinstantie {#control-instance}
 
 Om de controleinstantie en de uitvoeringsinstanties te verbinden, moet u eerst een **[!UICONTROL Execution instance]** type externe rekening **op de controleinstantie** creëren en vormen. Daarom kunnen zodra [published](../../message-center/using/publishing-message-templates.md#template-publication), transactionele berichtmalplaatjes aan de uitvoeringsinstanties worden opgesteld.
 
@@ -117,7 +119,7 @@ De id kan ook **automatisch** worden toegewezen. Om dit te doen, ga naar **contr
 
 ![](assets/messagecenter_create_extaccount_006bis.png)
 
-## De uitvoerinstantie(s) {#execution-instance} configureren
+## De uitvoeringsinstantie(s) configureren {#execution-instance}
 
 >[!NOTE]
 >
@@ -156,7 +158,7 @@ Stel dat uw bedrijf bijvoorbeeld twee merken beheert, elk met een eigen bedienin
 
 Maak in de boomstructuur van alle uitvoeringsinstanties één map per operator (**Folder 1** en **Folder 2**) en beperk de gegevenstoegang van elke operator tot de bijbehorende map.
 
-### Controleinstanties {#configuring-control-instances} configureren
+### Controleinstanties configureren {#configuring-control-instances}
 
 >[!NOTE]
 >
@@ -174,7 +176,7 @@ Maak in de boomstructuur van alle uitvoeringsinstanties één map per operator (
    >
    >Voor meer bij het vormen van een controleinstantie, zie [deze sectie](#control-instance).
 
-### Uitvoeringsinstanties {#configuring-execution-instances} configureren
+### Uitvoeringsinstanties configureren {#configuring-execution-instances}
 
 >[!NOTE]
 >

@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Live/Design-omgevingen{#live-design-environments}
+
+![](../../assets/v7-only.svg)
 
 ## Werkwijze {#operating-principle}
 
@@ -36,7 +38,7 @@ Door gebrek, komt de Interactie met een **[!UICONTROL Design]** milieu en een **
 
 De managers van de aanbieding en de leveringsmanagers hebben toegang tot verschillende meningen van het milieu. Leveringsmanagers kunnen de **[!UICONTROL Live]** aanbiedingsomgeving en gebruiksaanbiedingen alleen bekijken om deze te leveren. De managers van de aanbieding kunnen het **[!UICONTROL Design]** milieu bekijken en veranderen en het **[!UICONTROL Live]** milieu bekijken. Raadpleeg [Operator-profielen](../../interaction/using/operator-profiles.md) voor meer informatie.
 
-## Aanbiedingsomgeving {#creating-an-offer-environment} maken
+## Een aanbiedingsomgeving maken {#creating-an-offer-environment}
 
 Door gebrek, komt de Interactie met een vooraf gevormd milieu om de ontvankelijke lijst (geïdentificeerde aanbiedingen) te richten. Als u een andere tabel (bezoekerstabel voor anonieme aanbiedingen of een specifieke tabel voor ontvangers) als doel wilt instellen, moet u de volgende configuraties toepassen:
 

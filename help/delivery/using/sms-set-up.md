@@ -6,20 +6,22 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1677'
-ht-degree: 34%
+ht-degree: 35%
 
 ---
 
 # Sms-kanaal configureren {#setting-up-sms-channel}
 
+![](../../assets/common.svg)
+
 Als u naar een mobiele telefoon wilt verzenden, hebt u het volgende nodig:
 
 1. Een externe account die een connector en type bericht opgeeft.
 
-   Merk op dat de erfenisschakelaars nu verouderd zijn. Verouderde mogelijkheden zijn nog steeds beschikbaar, maar deze worden niet verder verbeterd en worden niet ondersteund. Meer informatie [op deze pagina](../../rn/using/deprecated-features.md).
+   Merk op dat de erfenisschakelaars nu verouderd zijn. Afgeschafte mogelijkheden zijn nog steeds beschikbaar, maar ze zullen niet verder worden verbeterd of ondersteund. Meer informatie vindt u [op deze pagina](../../rn/using/deprecated-features.md).
 
 1. Een leveringssjabloon waarin naar deze externe account wordt verwezen.
 
@@ -123,7 +125,7 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
    <td> £ </td> 
    <td> _ </td> 
    <td> ! </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> A </td> 
    <td> Q </td> 
    <td> a </td> 
@@ -143,7 +145,7 @@ In de volgende tabel worden de tekens weergegeven waarmee de GSM-standaard reken
    <td> ¥ </td> 
    <td> <img height="21px" src="assets/gamma.png" /> </td> 
    <td> Aantal </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> C </td> 
    <td> S </td> 
    <td> c </td> 

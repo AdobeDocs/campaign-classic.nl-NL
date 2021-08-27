@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Aanbiedingsplaatsingen maken{#creating-offer-spaces}
+
+![](../../assets/v7-only.svg)
 
 De ruimteverwezenlijking van de aanbieding kan slechts door een **technische beheerder** met toegang tot de sub-omslag van de aanbiedingsruimte worden uitgevoerd. De ruimten van de aanbieding kunnen slechts in het ontwerpmilieu worden gecreeerd, en automatisch in het levende milieu tijdens aanbiedingsgoedkeuring worden gedupliceerd.
 
@@ -69,7 +71,7 @@ Pas het volgende proces toe om een nieuwe aanbiedingsruimte te maken:
 
 Indien nodig, kunt u de XML-renderfuncties voor binnenkomende interacties te veel laden. U kunt ook HTML- en tekstrenderfuncties overladen voor uitgaande interacties. Voor meer op dit, verwijs naar [Ongeveer binnenkomende kanalen](../../interaction/using/about-inbound-channels.md).
 
-## De status van de aanbieding {#offer-proposition-statuses}
+## Voorzettingsstatussen voorstellen {#offer-proposition-statuses}
 
 Een aanbiedingsvoorstel kan verschillende statussen hebben afhankelijk van de interactie met de doelpopulatie. De interactie komt met een reeks waarden die op het aanbiedingsvoorstel tijdens zijn levenscyclus kunnen worden toegepast. Nochtans, zult u het platform moeten vormen zodat de status verandert wanneer het aanbiedingsvoorstel wordt gecreeerd en wordt goedgekeurd.
 
@@ -148,7 +150,7 @@ In het geval van een uitgaande interactie, kunt u **[!UICONTROL Interested]** st
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>
 ```
 
-## Voorvertoning per spatie {#offer-preview-per-space}
+## Voorvertoning aanbod per ruimte {#offer-preview-per-space}
 
 Op dit tabblad kunt u de aanbiedingen bekijken waarvoor de ontvanger in aanmerking komt via een gekozen methode. In het onderstaande voorbeeld komt de begunstigde in aanmerking voor drie voorstellen per post.
 

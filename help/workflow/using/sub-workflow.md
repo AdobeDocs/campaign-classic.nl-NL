@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: bc64ca11-2c50-4896-b6c6-ae42c0315924
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 0%
@@ -15,11 +15,13 @@ ht-degree: 0%
 
 # Subworkflow{#sub-workflow}
 
+![](../../assets/common.svg)
+
 Met de activiteit **[!UICONTROL Sub-workflow]** kunt u de uitvoering van een andere workflow starten en het resultaat herstellen. Met deze activiteit kunt u complexe workflows gebruiken terwijl u een vereenvoudigde interface gebruikt.
 
 U kunt meerdere subworkflows aanroepen in één workflow. Subworkflows worden synchroon uitgevoerd.
 
-In het onderstaande voorbeeld roept een primaire workflow een subworkflow aan met behulp van sprongen. Zie [deze sectie](../../workflow/using/jump--start-point-and-end-point-.md) voor meer informatie over grafische objecten van het sprongtype.
+In het onderstaande voorbeeld roept een primaire workflow een subworkflow aan met behulp van sprongen. Zie [deze sectie](jump--start-point-and-end-point-.md) voor meer informatie over grafische objecten van het sprongtype.
 
 1. Maak een workflow die u als een subworkflow in een andere workflow wilt gebruiken.
 1. Voeg een **[!UICONTROL Jump (end point)]** activiteit met een prioriteit van 1 aan het begin van het werkschema in. Als u meerdere sprongen van het type &quot;eindpunt&quot; hebt, gebruikt Adobe Campaign de sprongen &quot;eindpunt&quot; met het laagste getal.

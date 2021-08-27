@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: aa21fa33-aef9-484a-b454-0cd5a6868a98
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # Een targetingworkflow maken {#step-1--creating-a-targeting-workflow}
+
+![](../../assets/common.svg)
 
 U moet uw workflow maken op het tabblad **[!UICONTROL Targeting and Workflows]** van een campagne. Het bestaat uit een **[!UICONTROL Query]** activiteit, een **[!UICONTROL Split]** activiteit verbonden met twee **[!UICONTROL Email delivery]** activiteiten, een **[!UICONTROL Wait]** activiteit, een **[!UICONTROL JavaScript code]** activiteit, en een **[!UICONTROL Delivery]** activiteit.
 
@@ -33,4 +35,4 @@ U moet uw workflow maken op het tabblad **[!UICONTROL Targeting and Workflows]**
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
 
-U kunt nu de bevolkingssteekproeven vormen. [Meer informatie](a-b-testing-uc-population-samples.md).
+U kunt nu de bevolkingssteekproeven vormen. [Meer info](a-b-testing-uc-population-samples.md).

@@ -1,19 +1,21 @@
 ---
 product: campaign
-title: Toegang tot transactiemeldingsrapporten
+title: 'Rapporten van transactionele berichten openen '
 description: Leer hoe u Adobe Campaign Classic-rapporten over transactieberichten kunt openen.
 audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: 42d43d67-7660-4d81-9280-10f030aa8f0e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '51'
-ht-degree: 0%
+ht-degree: 15%
 
 ---
 
-# Open transactiemeldingsrapporten {#about-transactional-messaging-reports}
+# Rapporten van transactionele berichten openen  {#about-transactional-messaging-reports}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign biedt verschillende rapporten waarmee u de activiteit en het vloeiend functioneren van uitvoeringsinstanties kunt beheren.
 

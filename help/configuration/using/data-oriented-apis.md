@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1881'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Gegevensgerichte API’s{#data-oriented-apis}
+
+![](../../assets/v7-only.svg)
 
 Met gegevensgeoriënteerde API&#39;s kunt u het volledige datamodel beheren.
 
@@ -79,7 +81,7 @@ Definitie van de methode &quot;ExecuteQuery&quot; in het schema &quot;xtk:queryD
 >
 >Dit is een const-methode. De invoerparameters worden in een XML-document opgenomen in de indeling van het schema &quot;xtk:queryDef&quot;.
 
-### Opmaak van het XML-document van de invoerquery {#format-of-the-xml-document-of-the-input-query}
+### Indeling van het XML-document van de invoerquery {#format-of-the-xml-document-of-the-input-query}
 
 De structuur van het XML-document van de query wordt beschreven in het schema &quot;xtk:queryDef&quot;. In dit document worden de clausules van een SQL-query beschreven: &quot;select&quot;, &quot;where&quot;, &quot;order by&quot;, &quot;group by&quot;, &quot;have&quot;.
 
@@ -142,7 +144,7 @@ Het gewenste type bewerking wordt ingevoerd in het **operation**-kenmerk en beva
 
 De syntaxis **XPath** wordt gebruikt om van gegevens de plaats te bepalen die op het inputschema worden gebaseerd. Raadpleeg [Gegevensschema&#39;s](../../configuration/using/data-schemas.md) voor meer informatie over XPath.
 
-#### Voorbeeld met de &#39;get&#39;-bewerking {#example-with-the--get--operation}
+#### Voorbeeld met de bewerking &#39;get&#39; {#example-with-the--get--operation}
 
 Haalt de achternaam en voornaam van een ontvanger (&quot;nms:ontvanger&quot;-schema) op met een filter op de e-mail.
 
@@ -161,7 +163,7 @@ Haalt de achternaam en voornaam van een ontvanger (&quot;nms:ontvanger&quot;-sch
 </queryDef>
 ```
 
-#### Voorbeeld met de &#39;select&#39;-bewerking {#example-with-the--select--operation}
+#### Voorbeeld met de bewerking &#39;select&#39; {#example-with-the--select--operation}
 
 Retourneert de lijst met ontvangers die zijn gefilterd in een map en het e-maildomein met een sortering in aflopende volgorde op de geboortedatum.
 
@@ -257,7 +259,7 @@ De query kan worden vereenvoudigd door het kenmerk **groupBy** rechtstreeks toe 
 >
 >Het is niet langer nodig om het element `<groupby>` te vullen.
 
-#### Accoleren in omstandigheden {#bracketing-in-conditions}
+#### Bracketing in omstandigheden {#bracketing-in-conditions}
 
 Hier volgen twee voorbeelden van haakjes op dezelfde voorwaarde.
 
@@ -368,7 +370,7 @@ Deze syntaxis vereenvoudigt de query wanneer meer dan twee gegevens in de voorwa
    </queryDef>
    ```
 
-#### De parameters binden van de componenten &#39;where&#39; en &#39;select&#39; van de component {#binding-the-parameters-of-the--where--and--select--clause}
+#### De parameters van de component &#39;where&#39; en &#39;select&#39; binden {#binding-the-parameters-of-the--where--and--select--clause}
 
 Door de binding van parameters kan de engine de waarden instellen van de parameters die in de query worden gebruikt. Dit is zeer nuttig, aangezien de motor voor het ontsnappen van waarden verantwoordelijk is, en er het extra voordeel van een geheime voorgeheugen voor de parameters is die moeten worden teruggewonnen.
 
@@ -405,7 +407,7 @@ Om met de syntaxis van een vraag te helpen, kunt u de vraag schrijven gebruikend
 
    ![](assets/s_ncs_integration_webservices_queyr3.png)
 
-### Documentindeling {#output-document-format} uitvoeren
+### Documentindeling uitvoeren {#output-document-format}
 
 De retourparameter is een XML-document in de indeling van het schema dat aan de query is gekoppeld.
 
@@ -567,7 +569,7 @@ Een ontvanger verwijderen:
 >
 >Voor een verwijderingsbewerking moet het invoerdocument alleen de velden bevatten waaruit de afstemmingssleutel bestaat.
 
-### Voorbeeld met de methode &#39;WriteCollection&#39; {#example-with-the--writecollection--method}
+### Voorbeeld met de methode WriteCollection {#example-with-the--writecollection--method}
 
 Bijwerken of invoegen voor verschillende ontvangers:
 

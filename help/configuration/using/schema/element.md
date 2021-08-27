@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '2012'
 ht-degree: 0%
@@ -15,11 +15,13 @@ ht-degree: 0%
 
 # element {#element--element}
 
+![](../../../assets/v7-only.svg)
+
 ## Inhoudsmodel {#content-model-4}
 
 element:==(attribute | compute string | debindex | Standaard | element | Help | Verbinden | Sleutel | sysFilter | vertaaldStandaard)
 
-## Kenmerken {#attributes-4}
+## Attributen {#attributes-4}
 
 _operation (string), advanced (boolean), aggregaat (string), applyIf (string), automatische schakeling (boolean), behoortTo (string), convDate (string), dataPolicy (string), dataSource (string), dbEnum (string), defOnDuplicate (boolean), default (string), desc (string), displayAsField (boolean) lean), doesNotSupportDiff (boolean), edit (string), emptyKeyValue (string), enum (string), enumImage (string), expandSchemaTarget (string), expr (string), externalJoin (boolean), feature (string), featureDate (boolean), filterPath (string), folderLink (model) string), folderProcess (string), fullLoad (boolean), hiërarchical (boolean), hiërarchicalPath (string), img (string), inout (string), integriteit (string), label (string), labelSingular (string), length (string), localizable (boolean), name (MNTOKEN), noDbIndex (boolean), noKey boolean), ordered (boolean), overflowtable (boolean), pkSequence (string), pkgStatus (string), ref (string), required (boolean), revAdvanced (boolean), revCardinality (string), revDesc (string), revExternalJoin (boolean), revIntegrity (string) Label (string), revLink (string), revTarget (string), revVisibleIf (string), sql (boolean), sqlname (string), sqltable (string), tableSpace (string), tableSpaceIndex (string), target (MNTOKEN), template (string), temporaryTable (boolean), translateDefault (string), translateExpr (tekenreeks), type (MNTOKEN), unbound (Boolean), gebruiker (Boolean), userEnum (tekenreeks), visibleIf (tekenreeks), xml (Boolean), xmlChildren (Boolean)
 
@@ -51,7 +53,7 @@ Er zijn vier typen `<element>` elementen in Adobe Campaign:
 * Koppeling `<element>`: definieert een koppeling. Deze elementen moeten het kenmerk &quot;@type=link&quot; bevatten.
 * XML `<element>`: definieert een veld van het teksttype &quot;mData&quot;. Dit element moet het kenmerk &quot;@type=xml&quot; bevatten.
 
-## Kenmerkbeschrijving {#attribute-description-4}
+## Beschrijving van kenmerk {#attribute-description-4}
 
 * **_operation (string)**: definieert het type schrijven in de database.
 

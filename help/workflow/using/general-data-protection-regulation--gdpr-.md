@@ -5,7 +5,7 @@ description: Meer informatie over de workflows van de privacygegevensbescherming
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 
 
 # Verordening inzake bescherming van privacydata{#general-data-protection-regulation-gdpr}
+
+![](../../assets/common.svg)
 
 De hieronder beschreven workflows worden standaard geïnstalleerd met de **Privacy Data Protection Regulation**-module. Voor meer op deze module, verwijs naar dit [artikel](https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html).
 

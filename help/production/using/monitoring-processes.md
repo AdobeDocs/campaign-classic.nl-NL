@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3606'
 ht-degree: 0%
@@ -15,9 +15,11 @@ ht-degree: 0%
 
 # Processen opvolgen{#monitoring-processes}
 
+![](../../assets/v7-only.svg)
+
 De toepassingsserver en de omleidingsserver (**tracking**) kunnen handmatig of automatisch worden gecontroleerd.
 
-## Handmatige bewaking {#manual-monitoring}
+## Handmatige controle {#manual-monitoring}
 
 Ga naar **[!UICONTROL Monitoring]** en klik op de koppeling **[!UICONTROL Overview]** om de pagina voor procesbewaking van Adobe Campaign weer te geven.
 
@@ -259,8 +261,7 @@ Deze worden gegroepeerd onder **Monitoring** > &#39;SMTP-bewaking&#39;.
 >
 
 
-
-### SMTP die statistieken {#smtp-sending-statistics} verzenden
+### SMTP-verzendende statistieken {#smtp-sending-statistics}
 
 Met het **[!UICONTROL SMTP sending statistics]**-rapport kunt u de serveractiviteit beheren. Er wordt een synthese van elk van de overeenkomende elementen weergegeven.
 
@@ -428,7 +429,7 @@ De exploitant en hun login moeten eerder in de de cliëntconsole van Adobe Campa
 
 Dit **jsp** vertegenwoordigt het punt van ingang van Adobe Campaign toepassing APIs. Zij kan daarom een gedetailleerd toezicht op de aanvraag uitvoeren. Het kan ook worden gebruikt om de Webdiensten van Adobe Campaign te controleren. Het wordt gebruikt in onze toezichtmanuscripten, maar merk op dat het voor machtsgebruikers slechts is.
 
-### Monitoring op basis van implementatietypen {#monitoring-based-on-deployment-types}
+### Controle op basis van implementatietypen {#monitoring-based-on-deployment-types}
 
 Adobe Campaign schakelt verschillende implementatieconfiguraties in (zie [deze sectie](../../installation/using/hosting-models.md) voor meer informatie). In deze sectie worden de verschillende automatische bewakingstechnieken beschreven die moeten worden toegepast, afhankelijk van het type installatie.
 
@@ -436,7 +437,7 @@ Adobe Campaign schakelt verschillende implementatieconfiguraties in (zie [deze s
  <thead> 
   <tr> 
    <th> Type implementatie </th> 
-   <th> Controle </th> 
+   <th> Controleren </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -547,7 +548,7 @@ Hier volgt een configuratievoorbeeld:
 >
 >De **monitoring** operator werkt alleen als de machine waarop het netreport wordt uitgevoerd zich in een beveiligingszone bevindt die zich in de modus **sessionTokenOnly** bevindt. Als er voor deze operator geen vertrouwd IP-masker is opgegeven, moet de beveiligingszone zich ook in de modus **allowEmptyPassword** en **allowUserPassword** bevinden.
 
-#### element &#39;Properties&#39; {#properties--element}
+#### Element &#39;Eigenschappen&#39; {#properties--element}
 
 Dit element wordt gebruikt om de configuratie van e-mailberichten te vullen, dat wil zeggen
 
@@ -585,7 +586,7 @@ instance name="instanceName" recipientList="mail@mail.com,mail2@mail.com">
 * **naam**: instantienaam die in het eerste deel van de e-mail zal verschijnen.
 * **receivingList**  (optioneel): Hiermee kunt u via e-mail een monitoringrapport over een bepaald exemplaar verzenden.
 
-#### Hostelement {#host--element}
+#### Element &#39;Host&#39; {#host--element}
 
 Dit element vormt de controle van een bepaalde server op de gastheer, d.w.z.
 
@@ -617,15 +618,15 @@ In elk geval, kunnen bepaalde knopen in sub-elementen worden overbelast (b.v., d
 
 In **ncs**, **redir** en **http** subelements, kunt u **isSecure** (facultatief) toevoegen om te kiezen of om het HTTPS protocol (&quot;waar&quot;of &quot;vals&quot;waarden) al dan niet te gebruiken. Als dit kenmerk niet wordt opgegeven, wordt het http-protocol gebruikt.
 
-### Het vormen van het netreport.bat of netreport.sh dossier {#configuring-the-netreport-bat-or-netreport-sh--file}
+### Het vormen van het netreport.bat of netreport.sh- dossier {#configuring-the-netreport-bat-or-netreport-sh--file}
 
 Om het te vormen, geef dit dossier uit en wijs op welke folder JRE of JDK geïnstalleerd is.
 
-### Bewaking {#launching-monitoring} starten
+### Bewaking starten {#launching-monitoring}
 
 Om controle te lanceren, voer **netreport.bat** of **netreport.sh** dossier met regelmatige intervallen via een manuscript uit. Een rapport wordt verzonden na de eerste uitvoering, en dan slechts in het geval van een verandering van status.
 
-### Bezig met testen van {#testing-monitoring}
+### Bewaking van tests {#testing-monitoring}
 
 Als u de controle wilt testen, voert u het bestand **netreport.bat** of **netreport.sh** uit.
 

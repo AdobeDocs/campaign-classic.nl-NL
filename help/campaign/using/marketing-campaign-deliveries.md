@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Leveringen voor marketingcampagnes {#marketing-campaign-deliveries}
+
+![](../../assets/common.svg)
 
 Leveringen kunnen worden gemaakt via het campagnedashboard, een campagneworkflow of rechtstreeks via het overzicht van leveringen.
 
@@ -27,7 +29,7 @@ Als u een levering wilt maken die is gekoppeld aan een campagne, klikt u op de k
 
 ![](assets/campaign_op_add_delivery.png)
 
-De voorgestelde configuraties zijn geschikt voor de verschillende typen levering: direct mail, e-mail, mobiele kanalen. [Meer informatie](../../delivery/using/steps-about-delivery-creation-steps.md).
+De voorgestelde configuraties zijn geschikt voor de verschillende typen levering: direct mail, e-mail, mobiele kanalen. [Meer info](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ## Levering starten {#starting-a-delivery}
 
@@ -122,7 +124,7 @@ U kunt verschillende documenten aan een campagne koppelen: rapport, foto, webpag
 >
 >Deze modus is gereserveerd voor kleine documenten.
 
-In een campagne kunt u ook andere objecten bekijken, zoals promotiecoupons, speciale aanbiedingen voor een specifieke winkel of filiaal, enzovoort. Wanneer deze elementen in een overzicht worden opgenomen, kunnen zij met een directe postlevering worden geassocieerd. [Meer informatie](#associating-and-structuring-resources-linked-via-a-delivery-outline).
+In een campagne kunt u ook andere objecten bekijken, zoals promotiecoupons, speciale aanbiedingen voor een specifieke winkel of filiaal, enzovoort. Wanneer deze elementen in een overzicht worden opgenomen, kunnen zij met een directe postlevering worden geassocieerd. [Meer info](#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 >[!NOTE]
 >

@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: ed97a1b5-c870-4b67-98b6-16adc316fd46
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Categorieën voor aanbiedingen maken{#creating-offer-categories}
+
+![](../../assets/v7-only.svg)
 
 Het creëren van aanbiedingscategorieën kan slechts in het **[!UICONTROL Design]** milieu plaatsvinden. Ze worden automatisch geïmplementeerd in de **[!UICONTROL Live]**-omgeving (d.w.z. beschikbaar gesteld) wanneer de gemaakte/gewijzigde aanbieding(en) die ze bevatten, worden goedgekeurd. Standaard bevat de **[!UICONTROL Design]**-omgeving een categorie voor het ontvangen van alle aanbiedingen. U kunt subcategorieën maken om een hiërarchie toe te voegen aan de catalogusaanbiedingen.
 

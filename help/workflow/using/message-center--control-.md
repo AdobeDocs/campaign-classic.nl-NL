@@ -5,19 +5,27 @@ description: Berichtencentrum (controle)
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 7%
+source-wordcount: '155'
+ht-degree: 10%
 
 ---
 
 
 # Berichtencentrum (controle){#message-center-control}
 
-De hieronder beschreven workflow wordt elk uur uitgevoerd. Het wordt geïnstalleerd met **Centrum van het Bericht - Control** module door gebrek. Voor meer op deze module, verwijs naar dit [sectie](../../message-center/using/about-transactional-messaging.md).
+![](../../assets/common.svg)
 
-Meer over hoe te om technische werkschema&#39;s met betrekking tot de module van het Centrum van het Bericht te vormen, verwijs naar [deze pagina](../../message-center/using/technical-workflows.md).
+De hieronder beschreven workflow wordt elk uur uitgevoerd. Het wordt geïnstalleerd met **Centrum van het Bericht - Control** module door gebrek.
+
+
+Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagneversie:
+
+![](assets/do-not-localize/v7.jpeg)[  Documentatie voor Campaign v7](../../message-center/using/about-transactional-messaging.md)
+
+![](assets/do-not-localize/v8.png)[  Documentatie voor Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
+
 
 <table> 
  <tbody> 

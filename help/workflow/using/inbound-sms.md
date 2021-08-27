@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: 94a9d50b-4ead-4815-8d12-942fa78b4e8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Binnenkomende sms{#inbound-sms}
+
+![](../../assets/common.svg)
 
 Met de activiteit **Inbound SMS** kunt u tekstberichten downloaden en verwerken van een externe account.
 
@@ -31,4 +33,4 @@ Het eerste lusje van **Binnenkomende SMS** activiteit laat u de verpletterende p
 
 1. **[!UICONTROL Expiration]**
 
-De tabbladen **[!UICONTROL Script]**, **[!UICONTROL Schedule]** en **[!UICONTROL Expiry]** worden beschreven in [Binnenkomende e-mails](../../workflow/using/inbound-emails.md).
+De tabbladen **[!UICONTROL Script]**, **[!UICONTROL Schedule]** en **[!UICONTROL Expiry]** worden beschreven in [Binnenkomende e-mails](inbound-emails.md).

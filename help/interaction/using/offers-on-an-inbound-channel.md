@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2088'
 ht-degree: 0%
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 # Aanbiedingen op een inbound-kanaal{#offers-on-an-inbound-channel}
 
-## Een aanbieding aan een anonieme bezoeker {#presenting-an-offer-to-an-anonymous-visitor} presenteren
+![](../../assets/v7-only.svg)
+
+## Een voorstel aan een anonieme bezoeker presenteren {#presenting-an-offer-to-an-anonymous-visitor}
 
 De Neobank-site wil op zijn website een aanbieding weergeven die gericht is op onbekende bezoekers die door de pagina bladeren.
 
@@ -27,7 +29,7 @@ Om deze interactie op te zetten, gaan we:
 1. [Anonieme voorstellen maken.](#creating-anonymous-offers)
 1. [Webaanbiedingsruimten op de website configureren](#configure-the-web-offer-space-on-the-website)
 
-### Een anonieme omgeving {#creating-an-anonymous-environment} maken
+### Een anonieme omgeving maken {#creating-an-anonymous-environment}
 
 Volg de procedure in [Creërend een aanbiedingsmilieu](../../interaction/using/live-design-environments.md#creating-an-offer-environment) om uw anonieme milieu tot stand te brengen die op **Bezoekers**&#39; dimensies wordt gebaseerd.
 
@@ -91,7 +93,7 @@ U krijgt een boomstructuur met uw nieuwe omgeving:
 
    ![](assets/offer_inbound_anonymous_example_023.png)
 
-### Anonieme aanbiedingen {#creating-anonymous-offers} maken
+### Anonieme aanbiedingen maken {#creating-anonymous-offers}
 
 1. Ga naar de rubriek die je zojuist hebt gemaakt.
 1. Klik op **[!UICONTROL New]**.
@@ -147,7 +149,7 @@ Wanneer een bezoeker toegang krijgt tot de homepage van de website, worden de aa
 
 Een gebruiker die de pagina meerdere keren bezoekt, ziet een van beide aanbiedingen in de categorie omdat aan beide hetzelfde gewicht is toegewezen.
 
-## Overschakelen naar een anonieme omgeving in het geval van niet-geïdentificeerde contactpersonen {#switching-to-an-anonymous-environment-in-case-of-unidentified-contacts}
+## Overschakelen op een anonieme omgeving in het geval van niet-geïdentificeerde contacten {#switching-to-an-anonymous-environment-in-case-of-unidentified-contacts}
 
 Het Neobank-bedrijf wil marketingaanbiedingen voor twee verschillende doelen maken. Het wil algemene aanbiedingen voor zijn anonieme websitebrowsers tonen. Als één van deze gebruikers een klant met herkenningstekens blijkt te zijn die door Neobank worden verstrekt, zou het bedrijf hen willen om gepersonaliseerde aanbiedingen te ontvangen zodra zij login.
 
@@ -191,7 +193,7 @@ Voer de volgende stappen uit:
    1. [Aanbiedingsruimten op de webpagina configureren](#configuring-offer-spaces-on-the-web-page)
    1. [De geavanceerde instellingen van de opgegeven aanbiedingsruimten opgeven](#specifying-the-advanced-settings-of-the-identified-offer-spaces)
 
-### Een omgeving maken voor anonieme contactpersonen {#creating-an-environment-for-anonymous-contacts}
+### Een omgeving voor anonieme contactpersonen maken {#creating-an-environment-for-anonymous-contacts}
 
 1. Creeer een aanbiedingsmilieu voor anonieme binnenkomende interacties via de tovenaar van de leveringsafbeelding (**Visitor** afbeelding). Voor meer op dit, verwijs naar [Creërend een aanbiedingsmilieu](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
@@ -361,7 +363,7 @@ We willen voor elke categorie twee persoonlijke aanbiedingen maken, dat wil zegg
 1. Ga naar het tabblad **[!UICONTROL Eligibility]** en pas het gewicht toe dat u op de eerste aanbieding in deze categorie hebt toegepast, zodat de aanbiedingen achtereenvolgens op de website worden weergegeven.
 1. Voer de goedkeuringscyclus voor elke aanbieding uit om deze bij te werken. Tijdens inhoudsgoedkeuring, activeer **Partner** of **Beste Aanbieding** aanbiedingsruimten.
 
-### Aanbiedingsruimten configureren op de webpagina {#configuring-offer-spaces-on-the-web-page}
+### Aanbiedingsruimten op de webpagina configureren {#configuring-offer-spaces-on-the-web-page}
 
 Op de website van Neobank vindt u drie mogelijkheden: twee voor aan bank gerelateerde aanbiedingen uit de categorie **Beste voorstel** en één voor aanbiedingen uit de categorie **Partner**.
 

@@ -5,7 +5,7 @@ description: Leer hoe te om campagne-AEM integratie te vormen
 audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 4%
@@ -13,6 +13,8 @@ ht-degree: 4%
 ---
 
 # De integratie configureren{#configuring-the-integration}
+
+![](../../assets/common.svg)
 
 ## Configureren in Adobe Campaign {#configuring-in-adobe-campaign}
 
@@ -42,7 +44,7 @@ U moet eerst het **[!UICONTROL AEM integration]** pakket installeren.
 
 1. Klik in het volgende venster op de knop **[!UICONTROL Start]** om de installatie van het pakket te starten. Sluit het venster als de installatie is voltooid.
 
-### De beveiligingszone voor AEM operator {#configure-the-security-zone-for-aem-operator} configureren
+### De beveiligingszone voor AEM operator configureren {#configure-the-security-zone-for-aem-operator}
 
 Met het pakket **[!UICONTROL AEM integration]** wordt de operator **[!UICONTROL aemserver]** in Campagne ingesteld. Deze operator wordt gebruikt om de Adobe Experience Manager-server te verbinden met Adobe Campaign.
 
@@ -59,7 +61,7 @@ Als uw instantie van de Campagne door Adobe wordt ontvangen, contacteer [Adobe k
 
    Hierdoor kan Adobe Experience Manager verbinding maken met Adobe Campaign via aanmelding/wachtwoord.
 
-### De externe account {#configure-the-external-account} configureren
+### De externe account configureren {#configure-the-external-account}
 
 Met het **[!UICONTROL AEM integration]**-pakket is de externe account voor Adobe Experience Cloud gemaakt. U moet het nu configureren om verbinding te maken met uw Adobe Experience Manager-instantie.
 
@@ -86,7 +88,7 @@ Voer de volgende stappen uit om de AEM externe account te configureren:
 1. Schakel het selectievakje **[!UICONTROL Enabled]** in.
 1. Klik op de knop **[!UICONTROL Save]**.
 
-### Filteren van AEM bronnen {#configure-aem-resources-filtering} configureren
+### Filteren van AEM configureren {#configure-aem-resources-filtering}
 
 De optie **AEMResourceTypeFilter** wordt gebruikt om typen bronnen van de Experience Manager te filteren die in Adobe Campaign kunnen worden gebruikt. Op deze manier kan Adobe Campaign inhoud van Experience Managers ophalen die specifiek is ontworpen voor gebruik in alleen Adobe Campaign.
 

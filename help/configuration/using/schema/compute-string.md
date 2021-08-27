@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 8a079bb8-3f53-4144-a065-5bd402649cc7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 8%
@@ -15,11 +15,13 @@ ht-degree: 8%
 
 # compute-string element {#compute-string--element}
 
+![](../../../assets/v7-only.svg)
+
 ## Inhoudsmodel {#content-model-1}
 
 compute-string:==EMPTY
 
-## Kenmerken {#attributes-1}
+## Attributen {#attributes-1}
 
 @expr
 
@@ -39,7 +41,7 @@ Met het element `<compute-string>` kunt u een tekenreeks genereren op basis van 
 
 Wanneer geen `<compute-string>` wordt bepaald, is een `<compute-string>` element ingegaan door gebrek met de waarden van de primaire sleutel in het schema.
 
-## Kenmerkbeschrijving {#attribute-description-1}
+## Beschrijving van kenmerk {#attribute-description-1}
 
 * **expr (tekenreeks)**: XTK en/of Xpath-expressie
 

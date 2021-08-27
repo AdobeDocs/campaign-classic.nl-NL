@@ -4,7 +4,7 @@ title: De integratie configureren
 description: De integratie configureren
 audience: integrations
 content-type: reference
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 2%
@@ -13,6 +13,8 @@ ht-degree: 2%
 
 
 # Pipelineoptie NmsPipeline_Config {#nmspipeline_config}
+
+![](../../assets/common.svg)
 
 Zodra de authentificatie werkt, [!DNL pipelined] kan de gebeurtenissen terugwinnen en hen verwerken. Het verwerkt slechts trekkers die in Adobe Campaign worden gevormd, die anderen negeren. De trigger moet van Analytics zijn gegenereerd en vooraf naar de pijplijn zijn geduwd.
 De optie kan ook met een vervanging worden gevormd om alle trekkers ongeacht naam te vangen.
@@ -66,13 +68,13 @@ In dit tweede voorbeeld worden alle triggers afgevangen.
 >
 >De waarde [!DNL Trigger] UID aan een specifieke trekkernaam in de interface van Analytics kan als deel van de URL querystring parameters in de interface van Triggers worden gevonden. De triggerType UID wordt overgegaan in de stroom van pijpleidingsgegevens en de code kan in pipe.JS worden geschreven om trekkerUID aan een gebruikersvriendelijk etiket in kaart te brengen dat in een kolom van de Naam van de Trekker in het pijpleidingsschemaEvents kan worden opgeslagen.
 
-## De parameter voor consumenten {#consumer-parameter}
+## De parameter voor de consument {#consumer-parameter}
 
 De pijpleiding werkt met een &quot;leverancier en consument&quot;-model. Er kunnen veel consumenten op dezelfde rij staan. Berichten worden alleen voor een individuele consument &quot;verbruikt&quot;. Elke consument krijgt zijn eigen &quot;exemplaar&quot;van de berichten.
 
 De parameter &quot;consument&quot; identificeert het geval als een van deze consumenten. Het is de identiteit van de instantie die de pijpleiding roept. U kunt deze vullen met de instantienaam. De pijpleidingsdienst houdt spoor van de berichten die door elke consument worden teruggewonnen. Het gebruiken van verschillende consumenten voor verschillende instanties zorgt ervoor dat elk bericht wordt verzonden naar elke instantie.
 
-## Hoe te om de optie van de Pijpleiding {#configure-pipeline-option} te vormen
+## Hoe te om de optie van de Pijpleiding te vormen {#configure-pipeline-option}
 
 Experience Cloud-triggers toevoegen of bewerken onder de &quot;triggers&quot;-array; de rest niet bewerken.
 Zorg ervoor dat de JSON geldig is met behulp van deze [website](http://jsonlint.com/).

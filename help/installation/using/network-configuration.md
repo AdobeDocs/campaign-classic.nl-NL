@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Netwerkconfiguratie{#network-configuration}
+
+![](../../assets/v7-only.svg)
 
 ## Communicatie tussen processen {#communication-between-processes}
 
@@ -138,7 +140,7 @@ Voor de rijke cliënt van Adobe Campaign (**nlclient**), moeten de volgende have
  </tbody> 
 </table>
 
-## Databasetoegang {#database-access}
+## Toegang tot database {#database-access}
 
 Alle componenten die de database gebruiken, moeten er verbinding mee kunnen maken. Dit is het geval voor de meeste componenten, met uitzondering van de redirection server, die alleen kan werken, en de dunne cliënt van Win32, die HTTP (of HTTPS) slechts gebruikt om met de toepassingsserver te communiceren.
 
@@ -175,7 +177,7 @@ De standaardhavens zijn het volgende:
 
 Bovendien moeten bepaalde componenten toegankelijk zijn via het openbare internet, zodat direct vanuit Adobe Campaign uitgevoerde e-mailcampagnes kunnen worden bekeken. Dit betekent dat sommige havens voor componenten open moeten zijn.
 
-### Omleidingsserver {#redirection-server}
+### Redirection-server {#redirection-server}
 
 <table> 
  <tbody> 
@@ -207,7 +209,7 @@ Deze servergastherenWeb vormen, spiegelpagina&#39;s, enz. De volgende poorten mo
  </tbody> 
 </table>
 
-### Interne toepassingsserver (Web) {#internal-application-server--web-}
+### Interne toepassingsserver (web) {#internal-application-server--web-}
 
 <table> 
  <tbody> 

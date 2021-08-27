@@ -6,20 +6,22 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 6%
 
 ---
 
-# param-element {#param--element}
+# param, element {#param--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Inhoudsmodel {#content-model-12}
 
 param:==help
 
-## Kenmerken {#attributes-12}
+## Attributen {#attributes-12}
 
 * @_operation (tekenreeks)
 * @desc (tekenreeks)
@@ -43,7 +45,7 @@ param:==help
 
 Met dit element kunt u een parameter definiëren voor het aanroepen van een SOAP-methode.
 
-## Kenmerkbeschrijving {#attribute-description-12}
+## Beschrijving van kenmerk {#attribute-description-12}
 
 * **desc (tekenreeks)**: beschrijving die betrekking heeft op het  `<param>` element.
 * **inout (tekenreeks)**: this attribute define whether or not the parameter is at the input (in) or output (out) of the SOAP call. Als dit kenmerk niet wordt opgegeven, wordt de standaardparameter invoer (&quot;@inout=in&quot;).

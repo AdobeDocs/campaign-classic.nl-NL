@@ -5,7 +5,7 @@ description: Leer hoe u gebeurtenissen configureert voor een aangepaste implemen
 audience: integrations
 content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # Gebeurtenissen configureren voor aangepaste implementatie {#events}
+
+![](../../assets/common.svg)
 
 De delen van deze configuratie zijn een douaneontwikkeling en vereisen het volgende:
 
@@ -32,7 +34,7 @@ Het wordt gevormd in de **[!UICONTROL NmsPipeline_Config]** optie onder het attr
 
 Het Javascript-voorbeeldbestand is cus:triggers.js.
 
-### JavaScript-functie {#function-js}
+### JavaScript, functie {#function-js}
 
 Javascript [!DNL pipelined] moet met een specifieke functie beginnen.
 
@@ -50,7 +52,7 @@ Het moet terugkeren zoals
 
 Nadat u het JavaScript-bestand hebt bewerkt, moet u [!DNL pipelined] opnieuw starten.
 
-### Gegevensindeling {#trigger-format} activeren
+### Gegevensindeling activeren {#trigger-format}
 
 De [!DNL trigger] gegevens worden overgegaan tot de functie JS in het formaat van XML.
 
@@ -68,7 +70,7 @@ Voorbeeld:
  </trigger>
 ```
 
-### Verrijking van gegevensindeling {#enrichment-format}
+### Verrijking gegevensindeling {#enrichment-format}
 
 >[!NOTE]
 >
@@ -124,7 +126,7 @@ Foutberichten worden verschillende keren opnieuw geprobeerd in de duur die is in
 
 Voor foutopsporing en bewaking worden de volledige triggergegevens in XML-indeling naar de triggertabel in het veld &quot;data&quot; geschreven. U kunt ook een logInfo() met de triggergegevens gebruiken voor hetzelfde doel.
 
-### Gegevens {#data-parsing} parseren
+### De gegevens parseren {#data-parsing}
 
 Deze voorbeeldcode voor JavaScript parseert de eVar01 in de verrijkingen.
 
@@ -148,7 +150,7 @@ function processPipelineMessage(xmlTrigger)
 Wees voorzichtig bij het parseren om fouten te voorkomen.
 Aangezien deze code voor alle triggers wordt gebruikt, zijn de meeste gegevens niet vereist. Daarom kan het leeg worden gelaten wanneer niet aanwezig.
 
-### De trigger {#storing-triggers-js} opslaan
+### De trigger opslaan {#storing-triggers-js}
 
 >[!NOTE]
 >
@@ -190,7 +192,7 @@ Om snellere verwerking toe te laten, worden verscheidene draden van dit manuscri
 >
 >Het is een specifiek voorbeeld van verschillende mogelijke implementaties.
 
-### Tijdlijngebeurtenisschema {#pipeline-event-schema}
+### Gebeurtenisschema van Pipeline {#pipeline-event-schema}
 
 Gebeurtenissen worden opgeslagen in een databasetabel. Het wordt gebruikt door marketing campagnes om klanten te richten en e-mails te verrijken gebruikend trekkers.
 Hoewel elke trigger een afzonderlijke gegevensstructuur kan hebben, kunnen alle triggers in één tabel worden gehouden.
@@ -209,7 +211,7 @@ Hier volgt een voorbeeldschemacode voor deze tabel:
 | lastModified | Datumtijd | Laatst gewijzigd | De laatste keer dat de gebeurtenis werd gewijzigd in Adobe. |
 | timeGMT | Datumtijd | Tijdstempel | De tijd waarop de gebeurtenis in Analytics is gegenereerd. |
 
-### Gebeurtenissen {#display-events} weergeven
+### Gebeurtenissen weergeven {#display-events}
 
 De gebeurtenissen kunnen worden weergegeven met een eenvoudig formulier dat is gebaseerd op het gebeurtenissenschema.
 
@@ -219,9 +221,9 @@ De gebeurtenissen kunnen worden weergegeven met een eenvoudig formulier dat is g
 
 ![](assets/triggers_7.png)
 
-## Gebeurtenissen {#processing-the-events} verwerken
+## Gebeurtenissen verwerken {#processing-the-events}
 
-### Afstemmingsworkflow {#reconciliation-workflow}
+### Verzoeningsworkflow {#reconciliation-workflow}
 
 Verzoening is het proces waarbij de klant van Adobe Analytics in de Adobe Campaign-database wordt opgenomen. De criteria voor overeenkomsten kunnen bijvoorbeeld de shopper_id zijn.
 
@@ -234,7 +236,7 @@ Het is mogelijk om de verzoeningsvraag voor elke trekker in JavaScript in werkin
 
 Het kan moeilijk zijn om uit te voeren als geen index op shopper_id wordt geplaatst. Als de criteria op een afzonderlijke gegevensbestandserver dan de marketing server zijn, gebruikt het een gegevensbestandverbinding, die slechte prestaties heeft.
 
-### Workflow {#purge-workflow} wissen
+### Werkstroom leegmaken {#purge-workflow}
 
 Triggers worden binnen een uur verwerkt. Het volume kan ongeveer 1 miljoen triggers per uur zijn. Er wordt uitgelegd waarom er een zuiveringsworkflow moet worden opgezet. De purge wordt eenmaal per dag uitgevoerd en verwijdert alle triggers die ouder zijn dan drie dagen.
 

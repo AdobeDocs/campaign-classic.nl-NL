@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2353'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Een build-upgrade uitvoeren{#performing-a-build-upgrade}
+
+![](../../assets/v7-only.svg)
 
 Deze sectie zal u van een diepgaande analyse op het verbeteringsproces en de stappen voorzien om conflicten te identificeren en op te lossen.
 
@@ -82,7 +84,7 @@ Alvorens de bouwstijlverbetering te beginnen, moeten de klanten op-gebouw de vol
 
 1. Krijg de recentste versie van uw [dossier van de serverconfiguratie](../../installation/using/the-server-configuration-file.md).
 
-1. [Download de nieuwste build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). [Meer informatie](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+1. [Download de nieuwste build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). [Meer info](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 U moet ook alle [nuttige bevellijnen ](../../installation/using/command-lines.md) kennen alvorens een bouwstijlverbetering te beginnen:
 
@@ -255,7 +257,6 @@ In de context van een omgeving voor midsourcing moet u de volgende aanvullende s
 >
 >De server voor middensegment moet altijd dezelfde versie (of recenter) gebruiken als voor de marketingservers.
 
-
 ## In geval van conflicten
 
 ### Conflicten identificeren
@@ -343,8 +344,7 @@ Er zijn drie opties om conflicten op te lossen: **Accepteer de nieuwe versie**, 
 >[!IMPORTANT]
 >Het wordt ten zeerste aanbevolen conflicten op te lossen.
 
-
-### Samenvoegen{#perform-a-merge} uitvoeren
+### Samenvoegen uitvoeren{#perform-a-merge}
 
 Er zijn verschillende soorten samenvoegingen:
 
@@ -406,7 +406,6 @@ Hier volgen de stappen voor het uitvoeren van een complexe samenvoeging:
 
 >[!IMPORTANT]
 >De ontwikkelingsvaardigheden worden vereist om complexe fusies uit te voeren.
-
 
 **Verwante onderwerpen**
 

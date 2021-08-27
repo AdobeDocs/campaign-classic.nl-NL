@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Dimensie wijzigen{#change-dimension}
+
+![](../../assets/common.svg)
 
 De activiteit van de veranderingsdimensie laat u de het richten dimensie tijdens de cyclus van de doelbouw veranderen. Axisverschuiving is afhankelijk van de gegevenssjabloon en de invoerdimensie. Dit laat u van de &quot;contracten&quot;afmeting aan de &quot;cliënten&quot;afmeting schakelen, bijvoorbeeld.
 
@@ -55,7 +57,7 @@ Om de activiteit van de veranderingsdimensie te vormen, pas de volgende stappen 
 
       >[!NOTE]
       >
-      >Raadpleeg [Gegevens toevoegen](../../workflow/using/query.md#adding-data) voor informatie over het maken en beheren van extra kolommen.
+      >Raadpleeg [Gegevens toevoegen](query.md#adding-data) voor informatie over het maken en beheren van extra kolommen.
 
    * Selecteer de vorige het richten dimensie (vóór asschakelaar) en selecteer **[!UICONTROL Zip Code]** in de **[!UICONTROL Location]** subboom van de ontvanger, dan klik **[!UICONTROL Edit expression]**.
 

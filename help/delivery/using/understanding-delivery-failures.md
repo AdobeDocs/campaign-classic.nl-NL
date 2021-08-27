@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
@@ -14,6 +14,8 @@ ht-degree: 14%
 ---
 
 # Leveringsfouten begrijpen{#understanding-delivery-failures}
+
+![](../../assets/common.svg)
 
 ## Leveringsfouten {#about-delivery-failures}
 
@@ -170,7 +172,7 @@ De mogelijke redenen van een leveringsfout zijn:
   <tr> 
    <td> Gebruiker onbekend </td> 
    <td> Hard </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> Het adres bestaat niet. Voor dit profiel worden geen verdere leveringen uitgevoerd.<br /> </td> 
   </tr> 
  </tbody> 
@@ -228,12 +230,10 @@ Voor installaties op locatie en gehoste/hybride installaties die gebruikmaken va
 >Voor gehoste of hybride installaties, als u tot [Verbeterde MTA](sending-with-enhanced-mta.md) hebt bevorderd:
 >
 >* De stuiterende kwalificaties in de **[!UICONTROL Delivery log qualification]** lijst worden niet meer gebruikt voor **synchrone** de foutenmeldingen van de leveringsmislukking. Verbeterde MTA bepaalt het stuittype en de kwalificatie, en stuurt die informatie terug naar Campagne.
-   >
-   >
-* **** Asynchrone niet-bezorgingen worden nog steeds gekwalificeerd door het inMail-proces aan de hand van de regels voor **[!UICONTROL Inbound email]**. Zie [Regels voor e-mailbeheer](#email-management-rules) voor meer informatie.
-   >
-   >
-* Voor instanties die de verbeterde MTA **zonder Webhooks/EFS** gebruiken, zullen de **[!UICONTROL Inbound email]** regels ook worden gebruikt om de synchrone stuiterende e-mails te verwerken die uit Verbeterde MTA komen, gebruikend het zelfde e-mailadres zoals voor asynchrone stuiterende e-mails.
+>
+>* **** Asynchrone niet-bezorgingen worden nog steeds gekwalificeerd door het inMail-proces aan de hand van de regels voor **[!UICONTROL Inbound email]**. Zie [Regels voor e-mailbeheer](#email-management-rules) voor meer informatie.
+>
+>* Voor instanties die de verbeterde MTA **zonder Webhooks/EFS** gebruiken, zullen de **[!UICONTROL Inbound email]** regels ook worden gebruikt om de synchrone stuiterende e-mails te verwerken die uit Verbeterde MTA komen, gebruikend het zelfde e-mailadres zoals voor asynchrone stuiterende e-mails.
 
 
 Voor installaties op locatie en de gehoste/hybride installaties die de oude Campagne MTA gebruiken, wanneer de levering van een e-mail ontbreekt, ontvangt de de leveringsserver van Adobe Campaign een foutenmelding van de overseinenserver of de verre DNS server. De lijst met fouten bestaat uit tekenreeksen in het bericht dat door de externe server wordt geretourneerd. De types en de redenen van mislukkingen worden toegewezen aan elk foutenbericht.

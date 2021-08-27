@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 15%
@@ -14,6 +14,8 @@ ht-degree: 15%
 ---
 
 # Gegevens laden (bestand){#data-loading-file}
+
+![](../../assets/common.svg)
 
 ## Gebruiken {#use}
 
@@ -35,7 +37,7 @@ U kunt een vooraf uitgevoerd proces definiëren tijdens het importeren van besta
 
 Raadpleeg voor meer informatie deze sectie: [Een bestand decoderen of decoderen voordat het wordt verwerkt](../../platform/using/unzip-decrypt.md).
 
-## Bestandsindeling {#defining-the-file-format} definiëren
+## De bestandsindeling definiëren {#defining-the-file-format}
 
 Wanneer u een bestand laadt, wordt de kolomindeling automatisch gedetecteerd met de standaardparameters voor elk gegevenstype. U kunt deze standaardparameters wijzigen om de specifieke processen op te geven die op uw data moeten worden toegepast, in het bijzonder wanneer er een fout of een lege waarde is.
 
@@ -88,7 +90,7 @@ In het volgende voorbeeld kunt u elke dag een bestand op de server verzamelen, d
 
    Het tabblad **[!UICONTROL Directory]** bevat informatie over de bestanden die moeten worden hersteld. In ons voorbeeld worden alle bestanden in tekstopmaak waarvan de namen het woord &#39;klanten&#39; bevatten en die zijn opgeslagen in de map tmp/Adobe/Data/files van de server, hersteld.
 
-   Het gebruik van **[!UICONTROL File collector]** wordt gedetailleerd beschreven in de sectie [Bestandscollector](../../workflow/using/file-collector.md).
+   Het gebruik van **[!UICONTROL File collector]** wordt gedetailleerd beschreven in de sectie [Bestandscollector](file-collector.md).
 
    ![](assets/s_advuser_load_file_sample_1.png)
 
@@ -100,7 +102,7 @@ In het volgende voorbeeld kunt u elke dag een bestand op de server verzamelen, d
 
    Om dit te doen, klik **[!UICONTROL Change...]** knoop die in de lagere juiste sectie van het het uitgeven hulpmiddel wordt gevestigd en vorm het programma.
 
-   Raadpleeg [Planner](../../workflow/using/scheduler.md) voor meer informatie hierover.
+   Raadpleeg [Planner](scheduler.md) voor meer informatie hierover.
 
 1. Configureer vervolgens de activiteit voor het laden van gegevens (bestand) om aan te geven hoe de verzamelde bestanden moeten worden gelezen. Selecteer hiertoe een voorbeeldbestand met dezelfde structuur als de bestanden die u wilt laden.
 
@@ -129,4 +131,4 @@ In het volgende voorbeeld kunt u elke dag een bestand op de server verzamelen, d
 
 1. Geef vervolgens aan welke processen voor elk type bevolking moeten worden uitgevoerd. In ons voorbeeld gaan we naar **[!UICONTROL Update the data]** in de database. Om dit te doen, plaats een **[!UICONTROL Update data]** activiteit aan het eind van elke uitgaande overgang van de gespleten activiteit.
 
-   De **[!UICONTROL Update data]** activiteit is gedetailleerd in [Gegevens bijwerken](../../workflow/using/update-data.md) sectie.
+   De **[!UICONTROL Update data]** activiteit is gedetailleerd in [Gegevens bijwerken](update-data.md) sectie.

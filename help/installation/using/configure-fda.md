@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 11de485a97d112b308c145775537d9b6255f124f
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 5%
@@ -15,6 +15,8 @@ ht-degree: 5%
 
 # FDA-connectoren configureren {#specific-configurations-by-database-type}
 
+![](../../assets/v7-only.svg)
+
 Afhankelijk van de externe databases die u vanuit Adobe Campaign wilt kunnen openen, moet u bepaalde specifieke configuraties uitvoeren. Bij deze configuraties worden vooral stuurprogramma&#39;s geïnstalleerd en worden omgevingsvariabelen opgegeven die bij elke RDBMS op de Adobe Campaign-server horen.
 
 Als algemene regel geldt dat u de corresponderende clientlaag op de externe database op de Adobe Campaign-server moet installeren.
@@ -22,7 +24,6 @@ Als algemene regel geldt dat u de corresponderende clientlaag op de externe data
 >[!NOTE]
 >
 >De compatibele versies zijn vermeld in [Matrix van de Verenigbaarheid van de Campagne](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
-
 
 ## Configuratiestappen {#fda-configuration-steps}
 

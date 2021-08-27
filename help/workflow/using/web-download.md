@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Webdownload{#web-download}
+
+![](../../assets/common.svg)
 
 Met de activiteit **Webdownload** wordt het downloaden van een bestand op een expliciete URL, een externe account of een Adobe Campaign-instantie gestart. Het HTTP-protocol wordt gebruikt. Dit kan een download van de GET of van de POST zijn.
 
@@ -61,7 +63,7 @@ Met de activiteit **Webdownload** wordt het downloaden van een bestand op een ex
 
    ![](assets/download_web_edit_advanced.png)
 
-   De optie **[!UICONTROL Process errors]** wordt beschreven in [Fouten verwerken](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+   De optie **[!UICONTROL Process errors]** wordt beschreven in [Fouten verwerken](monitoring-workflow-execution.md#processing-errors).
 
 ## Uitvoerparameters {#output-parameters}
 

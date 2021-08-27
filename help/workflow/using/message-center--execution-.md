@@ -5,19 +5,25 @@ description: Berichtencentrum (uitvoering)
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 6%
+source-wordcount: '229'
+ht-degree: 9%
 
 ---
 
 
 # Berichtencentrum (uitvoering){#message-center-execution}
 
-De hieronder beschreven workflows worden geïnstalleerd met **Message Center - Execution** module door gebrek. Voor meer op deze module, verwijs naar dit [sectie](../../message-center/using/about-transactional-messaging.md).
+![](../../assets/common.svg)
 
-Meer over hoe te om technische werkschema&#39;s met betrekking tot de module van het Centrum van het Bericht te vormen, verwijs naar [deze pagina](../../message-center/using/technical-workflows.md).
+De hieronder beschreven workflows worden geïnstalleerd met **Berichtcentrum - Uitvoering** toe:voegen-aan door gebrek.
+
+Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw campagneversie:
+
+![](assets/do-not-localize/v7.jpeg)[  Documentatie voor Campaign v7](../../message-center/using/about-transactional-messaging.md)
+
+![](assets/do-not-localize/v8.png)[  Documentatie voor Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
 
 <table> 
  <tbody> 

@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 1%
+source-wordcount: '1291'
+ht-degree: 2%
 
 ---
 
 # Verrijking{#enrichment}
+
+![](../../assets/common.svg)
 
 Met de activiteit **[!UICONTROL Enrichment]** kunt u informatie toevoegen aan een profiellijst en koppelingen maken naar een bestaande tabel (een nieuwe samenvoeging maken). Er kunnen ook afstemmingscriteria worden gedefinieerd met profielen in de database.
 
@@ -50,15 +52,15 @@ Er zijn vier typen koppelingen:
 
 In de volgende secties zijn ook gebruiksgevallen te vinden waarin de activiteiten van verrijkingsactiviteiten in hun context worden beschreven:
 
-* [E-mailverrijking met aangepaste datumvelden](../../workflow/using/email-enrichment-with-custom-date-fields.md).
-* [Data verrijken](../../workflow/using/enriching-data.md)
-* [Een overzichtslijst maken](../../workflow/using/creating-a-summary-list.md)
+* [E-mailverrijking met aangepaste datumvelden](email-enrichment-with-custom-date-fields.md).
+* [Data verrijken](enriching-data.md)
+* [Een overzichtslijst maken](creating-a-summary-list.md)
 
-## Informatie {#adding-information} toevoegen
+## Informatie toevoegen {#adding-information}
 
 Gebruik de **[!UICONTROL Enrichment]** activiteit om kolommen aan een het werklijst toe te voegen: deze activiteit kan als aanvulling op een vraagactiviteit worden gebruikt.
 
-De configuratie van extra kolommen wordt gedetailleerd in [Gegevens toevoegen](../../workflow/using/query.md#adding-data).
+De configuratie van extra kolommen wordt gedetailleerd in [Gegevens toevoegen](query.md#adding-data).
 
 In het veld **[!UICONTROL Primary set]** kunt u de binnenkomende overgang selecteren: de gegevens van de werktafel van deze activiteit zullen worden verrijkt.
 
@@ -135,7 +137,7 @@ Bij de output van deze verrijkingsactiviteit, zal het tijdelijke schema de verbi
 
 ![](assets/enrichment_external_link_schema.png)
 
-## Afstemming van gegevens {#data-reconciliation}
+## Gegevensafstemming {#data-reconciliation}
 
 De verrijkingsactiviteit kan worden gebruikt om gegevensverzoening te vormen, met inbegrip van zodra de gegevens in het gegevensbestand zijn geladen. In dit geval kunt u met het tabblad **[!UICONTROL Reconciliation]** de koppeling definiëren tussen de gegevens in de Adobe Campaign-database en de gegevens in de werktabel.
 
@@ -147,17 +149,17 @@ U kunt een of meer verzoeningscriteria gebruiken.
 
 Als er meerdere samenvoegvoorwaarden zijn opgegeven, moeten deze ALLES worden geverifieerd zodat de gegevens kunnen worden gekoppeld.
 
-## Een aanbiedingsvoorstel invoegen {#inserting-an-offer-proposition}
+## Een voorstel invoegen {#inserting-an-offer-proposition}
 
 Met de verrijkingsactiviteit kunt u aanbiedingen of koppelingen naar aanbiedingen voor ontvangers van de levering toevoegen.
 
-Voor meer informatie over de verrijkingsactiviteit, verwijs naar dit [sectie](../../workflow/using/enrichment.md).
+Voor meer informatie over de verrijkingsactiviteit, verwijs naar dit [sectie](enrichment.md).
 
 Bijvoorbeeld, kunt u de gegevens voor een ontvankelijke vraag vóór een levering verrijken.
 
 ![](assets/int_enrichment_offer1.png)
 
-Na het vormen van uw vraag (verwijs naar dit [sectie](../../workflow/using/query.md)):
+Na het vormen van uw vraag (verwijs naar dit [sectie](query.md)):
 
 1. Voeg een verrijkingsactiviteit toe en open deze.
 1. Selecteer op het tabblad **[!UICONTROL Enrichment]** de optie **[!UICONTROL Add data]**.
@@ -176,7 +178,7 @@ Na het vormen van uw vraag (verwijs naar dit [sectie](../../workflow/using/query
 
       ![](assets/int_enrichment_offer4.png)
 
-1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Zie [Kanaaloverschrijvingen](../../workflow/using/cross-channel-deliveries.md).
+1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Zie [Kanaaloverschrijvingen](cross-channel-deliveries.md).
 
    Het aantal voorstellen dat beschikbaar is voor de voorvertoning is afhankelijk van de configuratie die wordt uitgevoerd in de verrijkingsactiviteit in plaats van een mogelijke configuratie die rechtstreeks in de levering wordt uitgevoerd.
 
@@ -198,13 +200,13 @@ Dit doet u als volgt:
 
    ![](assets/int_enrichment_link2.png)
 
-1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Zie [Kanaaloverschrijvingen](../../workflow/using/cross-channel-deliveries.md).
+1. Dan vorm een leveringsactiviteit die aan uw gekozen kanaal beantwoordt. Zie [Kanaaloverschrijvingen](cross-channel-deliveries.md).
 
    >[!NOTE]
    >
    >Het aantal voorvertoningen dat beschikbaar is voor de voorvertoning, is afhankelijk van de configuratie die in de levering wordt uitgevoerd.
 
-## Opslag aanbiedingsclassificaties en gewichten {#storing-offer-rankings-and-weights}
+## Opslaan van rankings- en gewichten voor aanbiedingen {#storing-offer-rankings-and-weights}
 
 Wanneer een **verrijking**-activiteit wordt gebruikt om aanbiedingen te leveren, worden de rangschikking en het gewicht van de aanbiedingen niet in de tabel met voorstellen opgeslagen.
 
@@ -212,7 +214,7 @@ In de activiteit **[!UICONTROL Offer engine]** wordt deze informatie standaard o
 
 U kunt deze gegevens echter als volgt opslaan:
 
-1. Creeer een vraag aan de aanbiedingsmotor in een verrijkingsactiviteit die na een vraag en vóór een leveringsactiviteit wordt geplaatst. Zie deze [sectie](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine).
+1. Creeer een vraag aan de aanbiedingsmotor in een verrijkingsactiviteit die na een vraag en vóór een leveringsactiviteit wordt geplaatst.
 1. Selecteer **[!UICONTROL Edit additional data...]** in het hoofdvenster van de activiteit.
 
    ![](assets/ita_enrichment_rankweight_1.png)

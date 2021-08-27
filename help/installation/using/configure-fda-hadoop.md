@@ -6,21 +6,23 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 1%
 
 ---
 
-# Toegang tot Hadoop {#configure-access-to-hadoop} configureren
+# Toegang tot Hadoop configureren {#configure-access-to-hadoop}
+
+![](../../assets/v7-only.svg)
 
 Gebruik de optie Campagne **Federated Data Access** (FDA) om informatie te verwerken die is opgeslagen in externe databases. Voer de onderstaande stappen uit om toegang tot Hadoop te configureren.
 
 1. [Hadoop database](#configuring-hadoop) configureren
 1. De Hadoop [externe account](#hadoop-external) configureren in campagne
 
-## Hadoop 3.0 {#configuring-hadoop} configureren
+## Hadoop 3.0 configureren {#configuring-hadoop}
 
 Voor het verbinden met een externe database van een Hadoop in FDA zijn de volgende configuraties op de Adobe Campaign-server vereist. Deze configuratie is zowel voor Windows als voor Linux beschikbaar.
 
@@ -80,7 +82,7 @@ De aansluiting ondersteunt ook de volgende opties voor Hive:
 | fileFormat | PARQUET | Standaardbestandsindeling voor werktabellen. |
 
 
-## Het vormen Hadoop 2.1 {#configure-access-hadoop-2}
+## Hadoop 2.1 configureren {#configure-access-hadoop-2}
 
 Als u verbinding moet maken met Hadoop 2.1, voert u de onderstaande stappen uit voor [Windows](#for-windows) of [Linux](#for-linux).
 

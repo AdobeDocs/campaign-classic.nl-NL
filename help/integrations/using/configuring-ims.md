@@ -6,18 +6,20 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 2%
 
 ---
 
-# IMS{#configuring-ims} configureren
+# IMS configureren{#configuring-ims}
+
+![](../../assets/common.svg)
 
 >[!IMPORTANT]
 >
->De Adobe IMS-implementatie is strikt voorbehouden aan de technische Adobe-beheerders. Neem contact op met de Adobe-manager om het implementatieproces te starten.
+>De implementatie van Adobe IMS is uitsluitend voorbehouden aan de technische beheerders van de Adobe. Neem contact op met de Adobe-manager om het implementatieproces te starten.
 
 ## Vereisten {#prerequisites}
 
@@ -30,17 +32,17 @@ De integratie met de IMS gebruiken:
 >
 >Controleer of uw gebruikers zijn gekoppeld aan de Adobe Experience Cloud-groepen die worden gesynchroniseerd met Adobe Campaign. Zie [De externe account configureren](#configuring-the-external-account).
 
-## De console {#updating-the-console} bijwerken
+## De console bijwerken {#updating-the-console}
 
 Om deze functionaliteit te gebruiken, is het noodzakelijk dat u de recentste versie van de console installeert.
 
-## Het pakket {#installing-the-package} installeren
+## Het pakket installeren {#installing-the-package}
 
 U moet het **[!UICONTROL Integration with the Adobe Experience Cloud]** pakket installeren. Het installeren van een integratiepakket is hetzelfde als het installeren van een standaardpakket, dat wordt beschreven in [deze pagina](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/ims_6.png)
 
-## De externe account {#configuring-the-external-account} configureren
+## De externe account configureren {#configuring-the-external-account}
 
 Configureer de **Adobe Experience Cloud** externe account in **[!UICONTROL Administration > Platform > External accounts]**.
 

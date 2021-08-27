@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Migreren in Windows voor Adobe Campaign 7{#migrating-in-windows-for-adobe-campaign}
+
+![](../../assets/v7-only.svg)
 
 ## Algemene procedure {#general-procedure}
 
@@ -81,7 +83,7 @@ In de eerste plaats moeten alle processen met toegang tot de database op alle be
    taskkill /F /IM nlserver* /T
    ```
 
-## Back-up maken van de database en de huidige installatie {#back-up-the-database-and-the-current-installation}
+## Maak een back-up van de database en de huidige installatie {#back-up-the-database-and-the-current-installation}
 
 De procedure is afhankelijk van de vorige versie van Adobe Campaign.
 
@@ -184,7 +186,7 @@ De procedure is afhankelijk van de vorige versie van Adobe Campaign.
    sc config nlserver6 start= disabled
    ```
 
-## Adobe Campaign v7 {#deploying-adobe-campaign-v7} implementeren
+## Adobe Campaign v7 implementeren {#deploying-adobe-campaign-v7}
 
 Bij het implementeren van Adobe Campaign worden twee stappen uitgevoerd:
 
@@ -265,7 +267,7 @@ Voer de volgende stappen uit om Adobe Campaign te implementeren:
 >
 >Start nog geen Adobe Campaign-services: op IIS moeten enkele wijzigingen worden aangebracht.
 
-## De omleidingsserver (IIS) {#migrating-the-redirection-server--iis-} migreren
+## De omleidingsserver (IIS) migreren {#migrating-the-redirection-server--iis-}
 
 In dit stadium, moet de server IIS worden tegengehouden. Raadpleeg [Servicetak](#service-stop).
 

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Incrementele query{#incremental-query}
+
+![](../../assets/common.svg)
 
 Met een incrementele query kunt u periodiek een doel selecteren op basis van een criterium, terwijl de personen die al voor dit criterium zijn aangewezen, worden uitgesloten.
 
@@ -23,8 +25,8 @@ De vraag wordt bepaald op de zelfde manier zoals voor standaardvragen, maar zijn
 
 **Verwante onderwerpen:**
 
-* [Hoofdlettergebruik: Driemaandelijkse lijstupdate die een stijgende vraag gebruikt](../../workflow/using/quarterly-list-update.md)
-* [Een query maken](../../workflow/using/query.md#creating-a-query)
+* [Hoofdlettergebruik: Driemaandelijkse lijstupdate die een stijgende vraag gebruikt](quarterly-list-update.md)
+* [Een query maken](query.md#creating-a-query)
 
 >[!CAUTION]
 >

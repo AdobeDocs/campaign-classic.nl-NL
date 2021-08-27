@@ -2,18 +2,20 @@
 product: campaign
 title: Opgegeven rechten gebruiken om machtigingen in te stellen
 description: Leer hoe u benoemde rechten kunt gebruiken om machtigingen in te stellen
-feature: Toegangsbeheer
+feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '503'
 ht-degree: 6%
 
 ---
 
 # Opgegeven rechten gebruiken om machtigingen in te stellen{#named-rights}
+
+![](../../assets/common.svg)
 
 Adobe Campaign stelt standaard een reeks benoemde rechten voor waarmee u de machtigingen kunt definiëren die aan operatoren en groepen operatoren zijn toegewezen. Deze rechten kunnen worden bewerkt vanaf het knooppunt **[!UICONTROL Administration > Access management > Named rights]** van de boomstructuur.
 

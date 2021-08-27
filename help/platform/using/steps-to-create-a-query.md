@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Stappen om een query te maken{#steps-to-create-a-query}
+
+![](../../assets/common.svg)
 
 De stappen voor het bouwen van een vraag in Adobe Campaign zijn als volgt:
 
@@ -29,13 +31,13 @@ De stappen voor het bouwen van een vraag in Adobe Campaign zijn als volgt:
 >Al deze stappen zijn beschikbaar in de generische vraagredacteur. Wanneer een query in een andere context wordt gemaakt, kunnen sommige stappen worden weggelaten.\
 >De activiteit van de Vraag wordt voorgesteld in [deze sectie](../../workflow/using/query.md).
 
-## Stap 1 - kies een lijst {#step-1---choose-a-table}
+## Stap 1 - Kies een tabel {#step-1---choose-a-table}
 
 Selecteer de lijst die de gegevens bevat u in het **[!UICONTROL Document type]** venster wilt vragen. Indien nodig, filtert u de gegevens met het filterveld of met de knop **[!UICONTROL Filters]**.
 
 ![](assets/query_editor_nveau_21.png)
 
-## Stap 2 - kies gegevens om {#step-2---choose-data-to-extract} uit te pakken
+## Stap 2 - Kies de gegevens die u wilt extraheren {#step-2---choose-data-to-extract}
 
 Selecteer in het venster **[!UICONTROL Data to extract]** de gegevens die u wilt weergeven: deze velden vormen de uitvoerkolommen .
 
@@ -125,7 +127,7 @@ Met de kolom **[!UICONTROL Transformation]** kunt u een kolomlabel wijzigen in h
 
 ![](assets/query_editor_nveau_42.png)
 
-## Stap 6 - Voorvertoningsgegevens {#step-6---preview-data}
+## Stap 6 - Voorbeeldgegevens {#step-6---preview-data}
 
 Het **[!UICONTROL Data preview]** venster is het laatste stadium. Klik **[!UICONTROL Start the preview of the data]** om uw vraagresultaat te krijgen. Deze optie is beschikbaar in kolommen of in XML-indeling. Klik op het tabblad **[!UICONTROL Generated SQL queries]** om de query in SQL-indeling weer te geven.
 
