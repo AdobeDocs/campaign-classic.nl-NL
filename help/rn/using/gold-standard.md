@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 2c548465a73bcd817c6d2b18853f4f074ed6adfa
 workflow-type: tm+mt
-source-wordcount: '1105'
-ht-degree: 91%
+source-wordcount: '1160'
+ht-degree: 87%
 
 ---
 
@@ -18,6 +18,15 @@ ht-degree: 91%
 ![](../../assets/v7-only.svg)
 
 Deze pagina bevat een lijst met [!DNL Gold Standard]-releases. U vindt meer informatie over Campaign [!DNL Gold Standard] [op deze pagina](gs-overview.md).
+
+## ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] release 12{#gs-12}
+
+_27 augustus 2021_
+
+De build 9032@99a3894 bevat de volgende oplossingen:
+
+* De functie Handtekening bijhouden is verbeterd om fouten te voorkomen die samenhangen met de manier waarop hulpmiddelen van derden (e-mailclients, internetbrowsers, enz.) speciale tekens gebruiken. URL-parameters zijn nu gecodeerd.
+* Probleem verholpen met datumkiezers die ertoe konden leiden dat een console een foutbericht over een blokkeringsblokkering weergeeft. (NEO-36345)
 
 ## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] release 11{#gs-11}
 
