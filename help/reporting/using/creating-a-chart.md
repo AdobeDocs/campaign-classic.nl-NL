@@ -6,10 +6,10 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 2%
+source-wordcount: '522'
+ht-degree: 3%
 
 ---
 
@@ -41,7 +41,7 @@ Pas de volgende stappen toe om een grafiek in een rapport te maken:
 
       ![](assets/reporting_graph_add_filter.png)
 
-   * Als u contextafhankelijke gegevens wilt gebruiken, selecteert u deze optie en klikt u op de koppeling **[!UICONTROL Advanced settings...]**. Selecteer vervolgens de gegevens waarop de statistieken betrekking hebben.
+   * Als u contextuele gegevens wilt gebruiken, selecteert u **[!UICONTROL Context data]** in de vervolgkeuzelijst **[!UICONTROL Source]** en klikt u op de koppeling **[!UICONTROL Advanced settings...]**. Selecteer vervolgens de gegevens waarop de statistieken betrekking hebben.
 
       ![](assets/reporting_graph_from_context.png)
 
@@ -118,32 +118,6 @@ Indien nodig kunt u de weergavevolgorde van waarden omkeren. Selecteer de optie 
 ### Conversie: trechter {#conversion--funnel}
 
 Dit type van grafiek laat u het gesprekstarief van gemeten elementen volgen.
-
-### Voortgang: profiel {#progress--gauge}
-
-Met dit diagramtype kunt u de voortgang van een waarde ten opzichte van een gedefinieerd doel weergeven. In het onderstaande voorbeeld toont de zwarte wijzerplaat het aantal met succes verzonden leveringen (76) van een doel van 100 leveringen. Het omgrenzingsprofiel is verdeeld in drie bereiken die overeenkomen met specifieke statussen.
-
-![](assets/reporting_graph_type_gauge.png)
-
-Deze elementen worden bepaald wanneer het vormen van de grafiek.
-
-![](assets/reporting_graph_type_gauge1.png)
-
-* Het **[!UICONTROL Value]** gebied wordt vertegenwoordigd door een zwarte wijzerplaat in de grafiek. Het vertegenwoordigt het element waarvan vooruitgang u zou willen berekenen. De waarde die moet worden weergegeven, moet al zijn opgeslagen om te kunnen worden gebruikt.
-* Het veld **[!UICONTROL Goal]** vertegenwoordigt de maximale waarde die moet worden bereikt.
-* Met het veld **[!UICONTROL Other mark]** kunt u een tweede indicator aan het diagram toevoegen.
-* In de velden **[!UICONTROL Display range]** kunt u de waarden opgeven waartussen het rapport wordt berekend.
-* In het veld **[!UICONTROL Value ranges]** kunt u statussen (Geen, Slecht, Aanvaardbaar, Goed) toewijzen aan een set waarden om de voortgang beter te illustreren.
-
-In **[!UICONTROL Display settings]** sectie, **[!UICONTROL Change appearance...]** laat u vormen de manier de grafiek wordt getoond.
-
-![](assets/reporting_graph_type_gauge2.png)
-
-Met de optie **[!UICONTROL Display the value below the gauge]** kunt u de voortgang van de waarde onder het diagram weergeven.
-
-Het **[!UICONTROL Aperture ratio]** gebied, dat tussen 0 en 1 moet zijn, laat u de opening van het rapport in een meer of minder volledige cirkel uitgeven. In het bovenstaande voorbeeld komt de waarde 0,50 overeen met een halve cirkel.
-
-In het veld **[!UICONTROL Width]** kunt u de diagramgrootte bewerken.
 
 ## Interactie met de grafiek {#interaction-with-the-chart}
 

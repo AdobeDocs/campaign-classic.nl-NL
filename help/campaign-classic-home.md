@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;populaire onderwerpen
 product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 661a53b19e0fd8c6038c0957dbe2656152b0814c
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 55%
@@ -16,7 +16,7 @@ ht-degree: 55%
 
 ## Nieuwe functies
 
-* **[Release van juni is live!](rn/using/latest-release.md)**<br/> Ontdek nieuwe mogelijkheden, verbeteringen en correcties in de opmerkingen bij de release
+* **[Release september is live!](rn/using/latest-release.md)**<br/> Ontdek nieuwe mogelijkheden, verbeteringen en correcties in de opmerkingen bij de release
 
 * **[Veelgestelde vragen over Apple Mail Privacy Protection](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/using/apple-mail-privacy-faq.html)**<br/> Vind de eerste richtlijnen in reactie op de aankondiging van Apple met betrekking tot iOS 15
 

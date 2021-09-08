@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '1645'
-ht-degree: 98%
+source-wordcount: '1664'
+ht-degree: 97%
 
 ---
 
@@ -80,12 +80,16 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
    <td><strong>Vervanging</strong></td> 
   </tr>
   <tr>  
+   <td>Rapportage<br></td>
+   <td><p>Na Adobe Flash Player EOL zijn de Gage report and Chart rendering engine niet meer beschikbaar. <a href="../../reporting/using/creating-a-new-report.md">Meer informatie</a></p>
+  </tr>
+  <tr>  
    <td>Faxkanaal<br></td>
    <td><p>Vanaf Campaign 21.1.3 is het faxkanaal niet meer beschikbaar. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Meer informatie</a></p>
+  </tr>
   <tr>
   <td>Demdex-domein<br></td>
   <td><p> Vanaf Campaign 21.1.3 is het demdex-domein afgeschaft. Dit werd gebruikt voor het importeren en exporteren van doelgroepen naar Adobe Experience Cloud. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Meer informatie</a></p> 
-  </td>
   </td>
   </tr>
    <tr> 

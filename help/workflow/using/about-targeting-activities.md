@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 4%
+source-wordcount: '437'
+ht-degree: 3%
 
 ---
 
@@ -29,13 +29,14 @@ Met deze activiteiten kunt u een of meer doelen maken door sets te definiëren e
 * **Cellen**: biedt een weergave van de verschillende subsets in de vorm van gegevenskolommen en vereenvoudigt het manipuleren van deze subsets wanneer er veel zijn. Raadpleeg voor meer informatie de sectie [Cellen](cells.md).
 * **Aanbiedingen per cel**: Hiermee kunt u verschillende aanbiedingen koppelen aan elke subset van een populatie. Raadpleeg de sectie [Aanbiedingen per cel](offers-by-cell.md).
 * **Antwoorden** enquête: Hiermee kunt u tijdens een enquête verzamelde informatie herstellen. Raadpleeg deze [sectie](../../surveys/using/getting-started-with-surveys.md) voor meer informatie.
-* **Overzicht** van levering: Hiermee kunt u een overzicht van de levering toevoegen. Raadpleeg de sectie [Overzicht van levering](delivery-outline.md).
-* **Verrijking**: Hiermee kunt u kolommen toevoegen aan een werktabel of workflow. Raadpleeg de sectie [Verrijking](enrichment.md).
-* **Schema** bewerken: Hiermee kunt u gegevens transformeren, standaardiseren en indien nodig verrijken. Voor meer op dit, verwijs naar [geef schema](edit-schema.md) sectie uit.
-* **Aanbiedingsengine**: Hiermee kunt u de engine voor de interactieaanbieding in een workflow aanroepen. Raadpleeg de sectie [Aanbiedingsengine](offer-engine.md).
-* **Deduplicatie**: Hiermee kunt u duplicaten verwijderen uit binnenkomende activiteiten. Raadpleeg de sectie [Deduplicatie](deduplication.md).
-* **Dimensie** wijzigen: Hiermee kunt u de doeldimensie wijzigen tijdens de bouwcyclus van de workflow. Raadpleeg de sectie [Dimensie wijzigen](change-dimension.md).
-* **Abonnementsservices**: Hiermee kunt u abonnementen en abonnementen op een informatieservice beheren. Raadpleeg de sectie [Subscription Services](subscription-services.md).
-* **Lijstupdate**: registreert het resultaat van binnenkomende activiteiten in een lijst. Raadpleeg de sectie [List update](list-update.md).
-* **Gegevens** bijwerken: Hiermee kunt u de gegevens in de database ingrijpend bijwerken. Raadpleeg de sectie [Gegevens bijwerken](update-data.md).
-* **CRM-connector**: Hiermee kunt u de synchronisatie tussen Adobe Campaign en een CRM configureren. Raadpleeg de sectie [CRM-aansluiting](crm-connector.md).
+* **Overzicht** van levering: Hiermee kunt u een overzicht van de levering toevoegen. Raadpleeg de sectie [Overzicht van levering](../../workflow/using/delivery-outline.md).
+* **Verrijking**: Hiermee kunt u kolommen toevoegen aan een werktabel of workflow. Raadpleeg de sectie [Verrijking](../../workflow/using/enrichment.md).
+* **Schema** bewerken: Hiermee kunt u gegevens transformeren, standaardiseren en indien nodig verrijken. Voor meer op dit, verwijs naar [geef schema](../../workflow/using/edit-schema.md) sectie uit.
+* **Aanbiedingsengine**: Hiermee kunt u de engine voor de interactieaanbieding in een workflow aanroepen. Raadpleeg de sectie [Aanbiedingsengine](../../workflow/using/offer-engine.md).
+* **Deduplicatie**: Hiermee kunt u duplicaten verwijderen uit binnenkomende activiteiten. Raadpleeg de sectie [Deduplicatie](../../workflow/using/deduplication.md).
+* **Dimensie** wijzigen: Hiermee kunt u de doeldimensie wijzigen tijdens de bouwcyclus van de workflow. Raadpleeg de sectie [Dimensie wijzigen](../../workflow/using/change-dimension.md).
+* **Abonnementsservices**: Hiermee kunt u abonnementen en abonnementen op een informatieservice beheren. Raadpleeg de sectie [Subscription Services](../../workflow/using/subscription-services.md).
+* **Lijstupdate**: registreert het resultaat van binnenkomende activiteiten in een lijst. Raadpleeg de sectie [List update](../../workflow/using/list-update.md).
+* **Gegevens** bijwerken: Hiermee kunt u de gegevens in de database ingrijpend bijwerken. Raadpleeg de sectie [Gegevens bijwerken](../../workflow/using/update-data.md).
+* **CRM-connector**: Hiermee kunt u de synchronisatie tussen Adobe Campaign en een CRM configureren. Raadpleeg de sectie [CRM-aansluiting](../../workflow/using/crm-connector.md).
+* **[!UICONTROL Change data source]**: Hiermee kunt u de gegevensbron van een workflow wijzigen  **[!UICONTROL Working table]**. Dit biedt meer flexibiliteit voor het beheer van gegevens in verschillende gegevensbronnen, zoals FDA, FFDA en de lokale database. Raadpleeg de sectie [CRM-aansluiting](../../workflow/using/change-data-source.md).

@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 2c548465a73bcd817c6d2b18853f4f074ed6adfa
+source-git-commit: a64cf63916c4e4f220ac00f3d44d0e5e747815f4
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 87%
+source-wordcount: '1191'
+ht-degree: 84%
 
 ---
 
@@ -20,6 +20,12 @@ ht-degree: 87%
 Deze pagina bevat een lijst met [!DNL Gold Standard]-releases. U vindt meer informatie over Campaign [!DNL Gold Standard] [op deze pagina](gs-overview.md).
 
 ## ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] release 12{#gs-12}
+
+_7 september 2021_
+
+De build 9032@554dbcd bevat de volgende oplossing:
+
+* Probleem verholpen waarbij een fout van 500 optrad wanneer de koppeling naar een webtoepassing werd geopend in de vorm van een levering via de regel waarbij tracering is ingeschakeld.
 
 _27 augustus 2021_
 

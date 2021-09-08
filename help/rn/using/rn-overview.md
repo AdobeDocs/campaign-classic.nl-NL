@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5b1c59c450aaedbd8dbf6df8685817e4a7e02056
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 100%
@@ -29,7 +29,7 @@ Aan elke build wordt een status gekoppeld. Hieronder vindt u een lijst met statu
 
 ![](assets/do-not-localize/green3.png) **Algemene beschikbaarheid** (GA) - Gevalideerd in productie en aanbevolen door Adobe.
 
-De **nieuwste GA-builds** zijn: de [[!DNL Gold Standard]  11-release](../../rn/using/gold-standard.md) en de [Campaign 21.1.3-release](../../rn/using/latest-release.md#release-21-1-3-build-9330).
+De **nieuwste GA-builds** zijn: de [[!DNL Gold Standard]  12-release](../../rn/using/gold-standard.md) en de [Campaign 21.1.4-release](../../rn/using/latest-release.md#release-21-1-4-build-9340).
 
 ![](assets/do-not-localize/limited3.png) **Beperkte beschikbaarheid** (LA) - Alleen on-demand implementatie.
 
@@ -55,7 +55,7 @@ Als on-premise gebruiker kunt u de upgrade zelf uitvoeren. Hiervoor moet u de [n
 
 ### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
-Als gehoste [!DNL Gold Standard]-gebruiker profiteert u automatisch van de [!DNL Gold Standard]-upgrade met de [nieuwste GA [!DNL Gold Standard] -build](../../rn/using/gold-standard.md#gs-11) zonder actie te hoeven ondernemen. [Meer informatie](../../rn/using/gs-overview.md).
+Als gehoste [!DNL Gold Standard]-gebruiker profiteert u automatisch van de [!DNL Gold Standard]-upgrade met de [nieuwste GA [!DNL Gold Standard] -build](../../rn/using/gold-standard.md#gs-12) zonder actie te hoeven ondernemen. [Meer informatie](../../rn/using/gs-overview.md).
 
 >[!NOTE]
 >De compatibiliteitsmatrix voor [!DNL Gold Standard] is beschikbaar in de [GA-compatibiliteitsmatrix](../../rn/using/compatibility-matrix-gs.md).

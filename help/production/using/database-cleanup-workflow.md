@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f232588b981d262ef67ff8b7a6f39ff3ea2505d3
 workflow-type: tm+mt
 source-wordcount: '2910'
 ht-degree: 0%
@@ -435,7 +435,7 @@ Met deze taak verwijdert u overbodige records uit de logtabellen voor bijhouden 
 1. Massa-schrapping wordt gebruikt om alle lijsten in de lijst van eerder teruggekregen lijsten te zuiveren. De volgende query wordt gebruikt:
 
    ```
-   DELETE FROM XtkTrackingLogRcp WHERE iTrackingLogId IN (SELECT iTrackingLogId FROM XtkTrackingLogRcp WHERE tsLog < $(tsDate) LIMIT 5000) 
+   DELETE FROM NmsTrackingLogRcp WHERE iTrackingLogId IN (SELECT iTrackingLogId FROM NmsTrackingLogRcp WHERE tsLog < $(tsDate) LIMIT 5000) 
    ```
 
    waarbij **$(tsDate)** de huidige serverdatum is waarvan we de periode aftrekken die is gedefinieerd voor de optie **NmsCleanup_TrackingLogPurgeDelay**.

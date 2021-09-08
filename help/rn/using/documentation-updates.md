@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 877ac37102a09a40ea59ef073afa00b9d9bd7dde
 workflow-type: tm+mt
-source-wordcount: '4464'
-ht-degree: 100%
+source-wordcount: '4542'
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,19 @@ ht-degree: 100%
 Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates per maand en per Campaign-release.
 
 Raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/using/latest-release.md) voor aan de release gerelateerde updates.
+
+## Augustus 2021{#aug-2021}
+
+Toegevoegde nieuwe workflowactiviteit: Gegevensbron wijzigen - [Meer informatie](../../workflow/using/change-data-source.md)
+
+Toepassingsbadges zijn toegevoegd aan de documentatiepagina&#39;s: **Is alleen van toepassing op v7** voor Campaign Classic v7-mogelijkheden, en **is van toepassing op v7 &amp; v8** voor algemene mogelijkheden.
+
+Er is een opmerking toegevoegd over de integratie tussen Campaign en AEM Assets, die vanaf Adobe Experience Manager 6.4 is ontmanteld. [Meer informatie](../../integrations/using/configuring-access-to-assets.md)
+
+Screenshots en parameters van rapporten en webtoepassingen zijn bijgewerkt na het verwijderen van Adobe Flash.
+
+Het diagramtype **Gage** is verwijderd.
+
 
 ## Juli 2021 {#july-2021}
 

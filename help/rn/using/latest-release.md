@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 66533711a67950626c1e6681f88f2aaaea1ebd95
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 99%
+source-wordcount: '2403'
+ht-degree: 81%
 
 ---
 
@@ -19,15 +19,65 @@ ht-degree: 99%
 
 Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd bij de **nieuwste Campaign Classic Release**.
 
->[!NOTE]
->
->Campaign **General Availability (GA)-builds** zijn: de [[!DNL Gold Standard] 11-release](../../rn/using/gold-standard.md#gs-11) en de [Campaign 21.1.3-release](../../rn/using/latest-release.md#release-21-1-3-build-9330).
+Begrijp de campagne bouwt statussen in [deze pagina](rn-overview.md).
 
-## ![](assets/do-not-localize/green_2.png) Release 21.1.3 - Build 9330 {#release-21-1-3-build-9330}
+## ![](assets/do-not-localize/green_2.png) Release 21.1.4 - Build 9342 {#release-21-1-4-build-9342}
+
+_7 september 2021_
+
+**Verbeterde beveiliging**
+
+* Oplossing voor een beveiligingsprobleem ter versterking van de bescherming tegen aanvallen via directory traversal. (NEO-28547)
+
+**Verbeteringen**
+
+* Na zijn levenseinde is Flash verwijderd uit alle verwante campagnefuncties en -componenten en vervangen door HTML5. Het diagramtype **Gage** is verwijderd. (NEO-30330) [Meer informatie](../../reporting/using/creating-a-chart.md)
+* Wanneer u de clientconsole in Windows installeert, controleert het installatieprogramma nu of er een bovenliggend registerknooppunt is en wordt er een gemaakt als dit knooppunt ontbreekt. Hiermee voorkomt u potentiële problemen wanneer u de console start. (NEO-34854)
+* De functie Handtekening bijhouden is verbeterd om fouten te voorkomen die samenhangen met de manier waarop hulpmiddelen van derden (e-mailclients, internetbrowsers, enz.) speciale tekens gebruiken. URL-parameters zijn nu gecodeerd.
+
+**Andere wijzigingen**
+
+* Eerder vervangen de schakelaars van Microsoft CRM (Bureau 365 en On-premise plaatsingen) zijn verwijderd uit de interface. [Meer informatie](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
+* Na de migratie aan Tomcat 8, is het IIS opstellingsmanuscript bijgewerkt om IIS integratiekwesties te bevestigen. (NEO-31019)
+* Er is een hulplijn toegevoegd waarmee alleen de technische workflow [factureren](../../production/using/monitoring-processes.md#billing-report) op de marketinginstantie kan worden uitgevoerd.
+* De identificatie van de gegevensbron is verbeterd op de tabbladen voor gegevens en schema&#39;s van het venster **Volgpopulatie weergeven**.
+* Ontbrekende database-indexen zijn toegevoegd aan de volgende schema&#39;s om problemen met databaseupdates te voorkomen: xtk:rights, nms:dlvExclusion, nms:zaadMember, nms:trackingUrl
+
+**Patches**
+
+* Probleem verholpen waardoor het Hot kliks-rapport niet werkte toen er voorstellen waren die verband hielden met de levering. (NEO-26295)
+* Probleem verholpen met de **Sub-worklow** activiteit toen de uitvoering geen outputlijst produceerde. (NEO-36242)
+* Verschillende problemen verholpen bij het exporteren van het **rapport Beschrijvende analyse** naar PDF. (NEO-25847)
+* Probleem verholpen waarbij leveringen mislukten wanneer een externe postbestelling werd gebruikt. (NEO-37435)
+* Probleem verholpen wanneer verbinding werd gemaakt met Microsoft CRM via web-API. Het foutbericht is verwijderd omdat dit geen invloed had op de functies.
+* Probleem met logdeduplicatie bijhouden verholpen waarbij de medio-server werd ingesteld als een relais tussen tracking- en marketingservers. (NEO-36285)
+* Oplossing voor een regressie waardoor Vault niet kon worden gebruikt als een specifieke codeopslag.
+* Probleem verholpen waarbij u geen variabelen kon gebruiken in een **Verrijking**-workflowactiviteit toen de inkomende overgang afkomstig was van een FDA-gegevensbron.
+* Probleem verholpen dat tot verbroken URL&#39;s in e-mailberichten kon leiden.
+
+## ![](assets/do-not-localize/red_2.png) Release 21.1.3 - Build 9330 {#release-21-1-3-build-9330}
 
 _5 juni 2021_
 
 **Nieuwe functies**
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Nieuwe workflowactiviteit: Gegevensbron wijzigen</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Met de nieuwe <b>Gegevensbron wijzigen</b>-workflowactiviteit kunt u de gegevensbron van de werktabel van een workflow wijzigen. Dit biedt meer flexibiliteit bij het beheer van gegevens in verschillende gegevensbronnen (FDA en lokale database).</p>
+<p>In Adobe Campaign-workflows worden de gegevens beheerd met behulp van tijdelijke (of werkende) tabellen. Tijdens het uitvoeren van de workflow delen werktabellen gegevens over de verschillende workflowactiviteiten. Door gebrek, worden het werken lijsten gecreeerd op het zelfde gegevensbestand zoals de bron van de gegevens wij waarvragen.</p>
+<p>Raadpleeg de <a href="../../workflow/using/change-data-source.md">gedetailleerde documentatie</a> voor meer informatie.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
