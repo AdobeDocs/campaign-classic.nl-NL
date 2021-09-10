@@ -8,7 +8,7 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 0399bca5b452533f171076aa87be8d1e8d9ad1ed
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 3%
@@ -24,7 +24,7 @@ ht-degree: 3%
 >Als u een oudere versie van de integratie van Trekkers door authentificatie Auth gebruikt, **moet u naar Adobe I/O bewegen zoals hieronder beschreven**.
 >Tijdens deze overgang naar [!DNL Adobe I/O] kunnen sommige inkomende triggers verloren gaan.
 >
->De verouderde Auth authentificatiemodus met Campagne [is gepensioneerd](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) op **18 Augustus 2021**. De ontvangen milieu&#39;s profiteren van een uitbreiding tot **30 November, 2021**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot 30 november 2021. U moet [AppID van de toepassing OAuth ](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) aan Adobe verstrekken.
+>De verouderde Auth authentificatiemodus met Campagne [is gepensioneerd](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) op **18 Augustus 2021**. De ontvangen milieu&#39;s profiteren van een uitbreiding tot **30 November, 2021**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot 30 november 2021. U moet [AppID van OAuth application](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) aan Adobe verstrekken.
 
 ## Vereisten {#adobe-io-prerequisites}
 
@@ -33,8 +33,7 @@ Deze integratie is alleen van toepassing vanaf **Campaign Classic 20.3, 20.2.4, 
 Controleer voordat u met deze implementatie begint of:
 
 * een geldige **Organisatie-id**: de identificatiecode van de Identity Management System (IMS)-organisatie is de unieke identificatie binnen de Adobe Experience Cloud, die bijvoorbeeld wordt gebruikt voor de VisitorID-service en de IMS Single-Sign On (SSO). [Meer informatie](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
-* a **Toegang voor ontwikkelaars** tot uw organisatie. De systeembeheerder van IMS Org moet **ontwikkelaars aan één enkel productprofiel toevoegen** volgen
-procedure [op deze pagina](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) wordt beschreven om ontwikkelaars toegang te verlenen tot het `Analytics - {tenantID}` Profiel van het Product van Adobe Analytics verbonden aan Trekkers.
+* a **Toegang voor ontwikkelaars** tot uw organisatie. De systeembeheerder van de IMS-organisatie moet de **procedure voor het toevoegen van ontwikkelaars aan één enkel productprofiel** in deze pagina[volgen om ontwikkelaarstoegang voor het `Analytics - {tenantID}` Profiel van het Product van Adobe Analytics te verlenen verbonden aan Trekkers.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)
 
 ## Stap 1: Adobe I/O-project maken/bijwerken {#creating-adobe-io-project}
 
