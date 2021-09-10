@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 5b1c59c450aaedbd8dbf6df8685817e4a7e02056
+source-git-commit: 21c985d628f672f3c3864fff1a14ab71a24ccfc7
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 100%
+source-wordcount: '422'
+ht-degree: 95%
 
 ---
 
@@ -35,9 +35,9 @@ De **nieuwste GA-builds** zijn: de [[!DNL Gold Standard]  12-release](../../rn/u
 
 ![](assets/do-not-localize/blue3.png) **Releasekandidaat** (RC) - recentste versie met nieuwe mogelijkheden.
 
-De **laatste RC-build** is de [Campaign Classic 21.1-release](../../rn/using/latest-release.md)
+![](assets/do-not-localize/orange3.png) **Niet meer beschikbaar**  - Geen implementatie. Geen opgeloste problemen. Bijwerken naar een nieuwere build wordt aanbevolen.
 
-![](assets/do-not-localize/red3.png) **Afgeschaft** - Geen implementatie. Bestaande implementaties moeten worden opgewaardeerd.
+![](assets/do-not-localize/red3.png) **Afgeschaft** - Geen implementatie. Geen opgeloste problemen. Bestaande implementaties moeten worden opgewaardeerd.
 
 ## Aanbevelingen{#recommendations}
 

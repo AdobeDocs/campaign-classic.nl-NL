@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 66533711a67950626c1e6681f88f2aaaea1ebd95
+source-git-commit: 12b191ffe3d407f1a69393278a7678a14e53d23e
 workflow-type: tm+mt
 source-wordcount: '2403'
 ht-degree: 81%
@@ -55,7 +55,7 @@ _7 september 2021_
 * Probleem verholpen waarbij u geen variabelen kon gebruiken in een **Verrijking**-workflowactiviteit toen de inkomende overgang afkomstig was van een FDA-gegevensbron.
 * Probleem verholpen dat tot verbroken URL&#39;s in e-mailberichten kon leiden.
 
-## ![](assets/do-not-localize/red_2.png) Release 21.1.3 - Build 9330 {#release-21-1-3-build-9330}
+## ![](assets/do-not-localize/orange_2.png) Release 21.1.3 - Build 9330 {#release-21-1-3-build-9330}
 
 _5 juni 2021_
 
