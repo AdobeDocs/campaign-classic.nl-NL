@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 21c985d628f672f3c3864fff1a14ab71a24ccfc7
+source-git-commit: 0c6e328087135fd9b35ca6cf0669090be0c93957
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 95%
@@ -35,9 +35,9 @@ De **nieuwste GA-builds** zijn: de [[!DNL Gold Standard]  12-release](../../rn/u
 
 ![](assets/do-not-localize/blue3.png) **Releasekandidaat** (RC) - recentste versie met nieuwe mogelijkheden.
 
-![](assets/do-not-localize/orange3.png) **Niet meer beschikbaar**  - Geen implementatie. Geen opgeloste problemen. Bijwerken naar een nieuwere build wordt aanbevolen.
+![](assets/do-not-localize/orange3.png) **Niet meer beschikbaar**  - Geen implementatie. Geen foutopsporing. Bijwerken naar een nieuwere build wordt aanbevolen.
 
-![](assets/do-not-localize/red3.png) **Afgeschaft** - Geen implementatie. Geen opgeloste problemen. Bestaande implementaties moeten worden opgewaardeerd.
+![](assets/do-not-localize/red3.png) **Afgeschaft** - Geen implementatie. Geen foutopsporing. Bestaande implementaties moeten worden opgewaardeerd.
 
 ## Aanbevelingen{#recommendations}
 
