@@ -1,18 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Toegang tot Google BigQuery configureren
 description: Leer hoe u toegang tot Google BigQuery configureert in FDA
 audience: platform
 content-type: reference
 topic-tags: connectors
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
+source-git-commit: 0cfe8439007b56014eba497c511904c4f11b39ce
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 2%
 
 ---
-
 
 # Toegang tot Google BigQuery configureren {#configure-fda-google-big-query}
 
