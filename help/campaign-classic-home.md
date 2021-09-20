@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;populaire onderwerpen
 product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 12b191ffe3d407f1a69393278a7678a14e53d23e
+source-git-commit: 1d662f2f6d4b664e1cc2977cd3207d1b71983b04
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 57%
+source-wordcount: '260'
+ht-degree: 48%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 57%
 
 * **[Release september is live!](rn/using/latest-release.md)**<br/> Ontdek nieuwe mogelijkheden, verbeteringen en correcties in de opmerkingen bij de release
 
-* **[Veelgestelde vragen over Apple Mail Privacy Protection](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/apple-mail-privacy-faq.html?lang=nl)**<br/> Vind de eerste richtlijnen in reactie op de aankondiging van Apple met betrekking tot iOS 15
+* **[Apple Mail Privacy Protection - ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)** Veelgestelde vragen en  **[](technotes/using/apple-mail-app-privacy-protection.md)**<br/> technologieEerste handleiding zoeken in reactie op de aankondiging van Apple met betrekking tot iOS 15
 
 * **[Verbinding maken via IMS/Adobe ID? Upgrade naar de nieuwste builds](technotes/using/ims-updates.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne na** 30 juni 2021 **
 

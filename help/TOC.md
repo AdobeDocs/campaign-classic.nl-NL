@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2531'
 ht-degree: 99%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 99%
    + [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md)
    + [Technische opmerkingen](technotes/using/technote.md)
    + [Update van iOS-certificaat](technotes/using/ios-certificate-update.md)
+   + [Bescherming van e-mailprivacy op Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
    + [Configuratie-updates voor Campaign](technotes/using/acc-config-updates.md)
    + [Bijgehouden URL&#39;s bijwerken](technotes/using/tracked-urls.md)
    + [IMS-updates](technotes/using/ims-updates.md)
