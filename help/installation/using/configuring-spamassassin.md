@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 1f1004e2-dcd2-4ec5-98ec-720c205646d5
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 1%
@@ -169,7 +169,7 @@ cpan Mail::SpamAssassin
 
 ### Filterregels bijwerken {#updating-filter-rules}
 
-Filterregels kunnen automatisch worden bijgewerkt met het gereedschap **sa-update**. Raadpleeg de officiële SpamAssassin-website [http://spamassassin.apache.org/](http://spamassassin.apache.org/) voor meer informatie.
+Filterregels kunnen automatisch worden bijgewerkt met het gereedschap **sa-update**. Raadpleeg de officiële SpamAssassin-website [https://spamassassin.apache.org/](https://spamassassin.apache.org/) voor meer informatie.
 
 In Debian vinden updates elke dag automatisch plaats.
 

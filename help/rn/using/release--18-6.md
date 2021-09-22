@@ -9,9 +9,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a849ce10-0972-4c42-b10e-67a81c79bc65
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '794'
 ht-degree: 7%
 
 ---
@@ -109,7 +109,7 @@ Raadpleeg de volgende artikelen voor meer informatie over querybinding:
 
 decryptString
 
-De functie **decryptString** is afgekeurd. Verwijs naar [Vervangen en Verwijderde Eigenschappen](https://helpx.adobe.com/nl/campaign/kb/deprecated-and-removed-features.html) artikel.
+De functie **decryptString** is afgekeurd. Verwijs naar [Vervangen en Verwijderde Eigenschappen](deprecated-features.md) artikel.
 
 Voor nieuwe klanten, wordt deze functie nu slechts gebruikt om crypt identiteitskaart van de ontvanger in het landen pagina&#39;s te decoderen. Om wachtwoorden te decrypteren die in een externe rekening worden opgeslagen, gebruik de nieuwe **decryptPassword** functie.
 

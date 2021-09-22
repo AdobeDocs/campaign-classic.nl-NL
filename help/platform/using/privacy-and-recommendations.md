@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2033'
 ht-degree: 100%
 
 ---
@@ -124,7 +124,7 @@ Met Adobe Campaign kunt u gegevens verzamelen, waaronder persoonlijke en gevoeli
 
 ## Privacybeheer {#privacy-management}
 
-Privacybeheer verwijst naar alle processen en tools die u kunnen helpen te voldoen aan de privacywetgeving (AVG, CCPA, enz.). Bekijk een overzicht van privacybeheer op [deze pagina](https://helpx.adobe.com/nl/campaign/kb/campaign-privacy-overview.html).
+Privacybeheer verwijst naar alle processen en tools die u kunnen helpen te voldoen aan de privacywetgeving (AVG, CCPA, enz.). Bekijk een overzicht van privacybeheer op [deze pagina](privacy-and-recommendations.md).
 
 Adobe Campaign biedt u verschillende functiesets voor privacybeheer:
 * toestemmingsbeheer, dataretentie en gebruikersrollen. Zie [deze sectie](#consent).

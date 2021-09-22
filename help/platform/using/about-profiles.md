@@ -6,10 +6,10 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: ed43a632a962747c9402ff8d5f0ce442c2cc6490
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 14%
+source-wordcount: '836'
+ht-degree: 15%
 
 ---
 
@@ -93,13 +93,11 @@ Actieve profielen zijn de profielen die voor factureringsdoeleinden worden getel
 
 Facturering heeft alleen betrekking op profielen die **actief** zijn. Een profiel wordt als actief beschouwd als het profiel de afgelopen twaalf maanden via een kanaal als doel is aangewezen of met het profiel is gecommuniceerd.
 
-Er wordt geen rekening gehouden met de profielen die tijdens de voorbereiding van de levering zijn uitgesloten (typologische regels, quarantaine). Een profiel dat voor meerdere leveringen is bestemd, wordt slechts eenmaal meegeteld.
+Een profiel dat voor meerdere leveringen is bedoeld, wordt slechts eenmaal geteld.
 
 >[!NOTE]
 >
 >Er wordt geen rekening gehouden met de kanalen Facebook en Twitter.
-
-Blader vanuit Campagneverkenner naar **[!UICONTROL Administration > Campaign Management > Customer metrics]** voor een overzicht van het aantal actieve profielen. Het werkelijke aantal wordt uitgevoerd door de **[!UICONTROL Number of active billing profiles]** ([!UICONTROL billingActiveContactCount]) [technische workflow](../../workflow/using/about-technical-workflows.md). Deze werkstroom loopt elke dag en voegt de nieuwe gegevens aan het bestaande rapport voor de huidige periode in **[!UICONTROL Customer metrics]** omslag toe.
 
 Het aantal actieve profielen is alleen beschikbaar voor **Marketing instances**. Het is niet beschikbaar voor instanties van de Uitvoering, betekenend MID (midsourcing) en RT (het Centrum van het Bericht / Real-time overseinen) instanties.
 

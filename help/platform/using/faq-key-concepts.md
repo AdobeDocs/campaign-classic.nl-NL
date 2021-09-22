@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '866'
 ht-degree: 97%
 
 ---
@@ -56,7 +56,7 @@ Dit zijn een reeks rechten en beperkingen waarbij wordt toegestaan of geweigerd 
 
 Adobe Campaign biedt een reeks tools om u te helpen de privacyvereisten voor AVG en CCPA na te leven.
 
-Raadpleeg [dit document](https://helpx.adobe.com/nl/campaign/kb/campaign-privacy-overview.html) voor meer informatie over de tools en functies die Adobe Campaign biedt en over best practices om u te helpen met de naleving van de AVG wanneer u onze service gebruikt. Implementatiestappen voor Campaign Classic worden beschreven in [dit artikel](https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html).
+Raadpleeg [dit document](privacy-and-recommendations.md) voor meer informatie over de tools en functies die Adobe Campaign biedt en over best practices om u te helpen met de naleving van de AVG wanneer u onze service gebruikt. Implementatiestappen voor Campaign Classic worden beschreven in [dit artikel](https://helpx.adobe.com/nl/campaign/kb/acc-privacy.html).
 
 ## Wat zijn de concepten van de Campaign-gebruikersinterface die ik zou moeten weten? {#what-are-campaign-user-interface-concepts-i-should-know-}
 
@@ -126,7 +126,7 @@ Ontdek hoe u [een webformulier maakt](../../web/using/about-web-forms.md): een w
 
 Adobe evalueert voortdurend de mogelijkheden in het product en is van plan om in de loop der tijd de mogelijkheden te vervangen door krachtigere versies, of besluit om bepaalde onderdelen opnieuw te implementeren om beter voorbereid te zijn op toekomstige verwachtingen of uitbreidingen. Aangezien Campaign met tools van derden werkt, wordt de compatibiliteit regelmatig bijgewerkt om alleen ondersteunde versies te implementeren.
 
-[Klik hier voor meer informatie](https://helpx.adobe.com/nl/campaign/kb/deprecated-and-removed-features.html).
+[Klik hier voor meer informatie](../../rn/using/deprecated-features.md).
 
 ## Zijn er nieuwe documentatie-updates en Help-materialen vrijgegeven? {#are-there-new-documentation-updates-and-help-materials-released-}
 

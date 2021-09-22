@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1092'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ Om identiteitskaart van de Cliënt te krijgen, moet u een App in Azure Actieve F
 
 Zodra u sparen, krijgt u **toepassings identiteitskaart** die het Herkenningsteken van de Cliënt voor Campagne is.
 
-Meer informatie vindt u op [deze pagina](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
+Meer informatie vindt u op [deze pagina](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
 
 ### Sleutel-id voor certificaat en sleutel-id voor Microsoft Dynamics genereren {#config-certificate-key-id}
 
@@ -115,7 +115,7 @@ Voer de volgende stappen uit om de **Certificaatsleutel-id (customKeyIdentifier)
 
 1. Klik **Beheertoestemming verlenen**.
 
-Raadpleeg [Azure-documentatie](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal) voor meer informatie hierover.
+Raadpleeg [Azure-documentatie](https://docs.microsoft.com/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal) voor meer informatie hierover.
 
 ### Een App-gebruiker maken {#create-app-user-microsoft}
 
@@ -155,7 +155,7 @@ De gebruiker van de app is de gebruiker die de hierboven geregistreerde toepassi
 
 >[!NOTE]
 >
-> Post de buitenbedrijfstelling van [RDS van Microsoft](https://docs.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/dn281891(v=crm.8)?redirectedfrom=MSDN#microsoft-dynamics-crm-2011-endpoint), de On-premise en Bureau 365 types van de plaatsingen van CRM zijn niet meer compatibel met Campagne. Adobe Campaign ondersteunt nu alleen Web API-implementatie voor de CRM-versie **Dynamic CRM 365**. [Meer info](../../rn/using/deprecated-features.md#crm-connectors).
+> Post de buitenbedrijfstelling van [RDS van Microsoft](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint), de On-premise en Bureau 365 types van de plaatsingen van CRM zijn niet meer compatibel met Campagne. Adobe Campaign ondersteunt nu alleen Web API-implementatie voor de CRM-versie **Dynamic CRM 365**. [Meer info](../../rn/using/deprecated-features.md#crm-connectors).
 
 Om de Dynamiek 365 van Microsoft en Campagne te verbinden, moet u een specifieke **[!UICONTROL External Account]** in Campagne creëren en vormen.
 

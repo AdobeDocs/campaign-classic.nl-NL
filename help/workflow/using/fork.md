@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1113afb573bad958ec7cc2cf008f71c8e751e8f9
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '413'
 ht-degree: 1%
 
 ---
@@ -17,21 +17,69 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-Met de activiteit **[!UICONTROL Fork]** kunt u meerdere uitgaande overgangen maken, zodat u verschillende activiteiten onafhankelijk binnen dezelfde workflow kunt uitvoeren.
-
-U kunt bijvoorbeeld de activiteit na een query gebruiken om twee acties parallel uit te voeren:
-
-* Sla het resultaat van de query op in een publiek,
-* Voer een segmentatie op het resultaat uit om veelvoudige leveringen te verzenden.
-
-U kunt de activiteit ook gebruiken in de context van het creëren van inhoud en levering verzendend automatisering, om de doelberekening en de verwezenlijking van inhoud parallel te lanceren. Er is een speciaal geval voor gebruik beschikbaar in [deze sectie](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content).
+U kunt de **[!UICONTROL Fork]** activiteit gebruiken om veelvoudige uitgaande overgangen tot stand te brengen en verscheidene activiteiten onafhankelijk binnen het zelfde werkschema in werking te stellen.
 
 >[!IMPORTANT]
 >
->Uitgaande overgangen die worden toegevoegd na een **[!UICONTROL Fork]** activiteit **zullen niet** gelijktijdig uitvoeren. Dit gedrag kan van invloed zijn op de prestaties van de workflow. Gebruik deze activiteit als u verscheidene activiteiten onafhankelijk moet uitvoeren, en uiteindelijk samen hen alvorens de rest van de werkstroom uit te voeren.
+>De uitgaande overgangen die u na een **[!UICONTROL Fork]** activiteit toevoegt lopen niet gelijktijdig. Dit gedrag kan van invloed zijn op de workflowprestaties. Gebruik de **[!UICONTROL Fork]** activiteit als u verscheidene activiteiten onafhankelijk moet in werking stellen. Naar keuze, kunt u zich bij de uitgaande activiteiten vóór het verdere deel van het werkschema aansluiten.
 
-Om de **[!UICONTROL Fork]** activiteit te vormen, open het het aantal en het etiket van de uitgaande overgangen bepaalt.
+Voer de volgende stappen uit om een **[!UICONTROL Fork]**-activiteit en de bijbehorende activiteiten te configureren:
 
-![](assets/s_user_segmentation_fork.png)
+1. Open de activiteit **[!UICONTROL Fork]** en bepaal de naam en het etiket van de uitgaande overgangen.
+
+   ![](assets/s_user_segmentation_fork.png)
+
+1. Open elke uitgaande overgang en vorm het.
+1. Naar keuze, om zich bij uitgaande overgangen aan te sluiten, voeg een EN-lid activiteit toe. [Meer info](and-join.md).
+
+   Het volgende gedeelte van de workflow wordt alleen uitgevoerd na voltooiing van de gecombineerde uitgaande overgangen.
+
+## Voorbeeld: segmentatie
+
+In dit voorbeeld worden verschillende e-mails verzonden naar verschillende bevolkingsgroepen. Een **[!UICONTROL Fork]** activiteit wordt gebruikt na een vraag, om twee acties parallel uit te voeren:
+
+* Het queryresultaat opslaan
+* Segmenteer het resultaat om meerdere leveringen te verzenden
+
+   ![De vorkactiviteit volgt de doorsnede van twee vragen en voorafgaat een activiteit van de lijstupdate en een gespleten activiteit.](assets/wkf_fork_example.png)
+
+De workflow omvat de volgende activiteiten:
+
+1. **[!UICONTROL Query]** activiteit
+
+   Er worden twee populatiegroepen geselecteerd: Vrouwen en Parisiërs.
+
+1. **[!UICONTROL Intersection]** activiteit
+
+   De doorsnede van de zoekresultaten, dat wil zeggen, Parisiaanse vrouwen, wordt geselecteerd.
+
+1. **[!UICONTROL Fork]** activiteit
+
+   De berekende populatie wordt bespaard en parallel verdeeld in twee groepen:
+
+   1. Parisiaanse vrouwen tussen de 18 en 40 jaar
+   1. Parisiaanse vrouwen ouder dan 40
+
+1. **[!UICONTROL Delivery]** activiteit
+
+   Er wordt een ander e-mailbericht verzonden naar elke bevolkingsgroep.
+
+## Hoofdlettergebruik: een verjaardagsbericht verzenden
+
+Een terugkerende e-mail wordt verzonden naar een lijst met ontvangers op hun verjaardag. Een **[!UICONTROL Fork]** activiteit wordt gebruikt om ontvangers te omvatten die op 29 februari op een schrikkeljaar werden geboren. [Meer weten ](sending-a-birthday-email.md) over deze kwestie?
+
+![De vorkactiviteit volgt een testactiviteit en voorafgaat twee vraagactiviteiten.](assets/birthday-workflow_usecase_1.png)
+
+## Hoofdlettergebruik: inhoud automatiseren met een workflow
+
+Het maken en leveren van een inhoudsblok wordt geautomatiseerd. Een **[!UICONTROL Fork]** activiteit wordt gebruikt om het doel te berekenen en, parallel, om de inhoud tot stand te brengen. [Meer weten ](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content) over deze kwestie?
+
+![De vorkactiviteit volgt een leveringsactiviteit en voorafgaat een vraagactiviteit en een activiteit van het inhoudsbeheer, die allebei door een EN-sluit zich aan bij activiteit worden aangesloten.](../../delivery/using/assets/d_ncs_content_workflow10.png)
 
 U kunt elke uitgaande overgangen dan vormen, dan hen samenvoegen gebruikend een [AND-join](and-join.md) activiteit, indien nodig. Op deze manier wordt de rest van de workflow alleen uitgevoerd als de uitgaande overgangen van de activiteit **[!UICONTROL Fork]** zijn voltooid.
+
+## Verwante onderwerpen
+
+* [AND-join-activiteit](and-join.md)
+* [Hoofdlettergebruik: verjaardagsbericht](sending-a-birthday-email.md)
+* [Hoofdlettergebruik: inhoud maken en leveren](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)

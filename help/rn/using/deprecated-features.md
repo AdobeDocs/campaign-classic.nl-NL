@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '1664'
-ht-degree: 97%
+source-wordcount: '1657'
+ht-degree: 95%
 
 ---
 
@@ -114,7 +114,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
   </tr> 
   <tr> 
    <td>Webapplicaties - microsites</td>
-   <td>Vanaf de release van Campaign 18.10 zijn microsites niet meer beschikbaar. U kunt de veiligheid verbeteren door de toegang tot alleen specifieke domeinen op Adobe Campaign-configuratiebestanden te beperken, en gepersonaliseerde URL’s in Campaign te gebruiken door DNS-aliassen te gebruiken. <a href="https://helpx.adobe.com/nl/campaign/kb/domain-name-delegation.html">Meer informatie</a></td>
+   <td>Vanaf de release van Campaign 18.10 zijn microsites niet meer beschikbaar. U kunt de veiligheid verbeteren door de toegang tot alleen specifieke domeinen op Adobe Campaign-configuratiebestanden te beperken, en gepersonaliseerde URL’s in Campaign te gebruiken door DNS-aliassen te gebruiken.</td>
   </tr> 
   <tr> 
    <td>Pushmeldingen - iOS Binary Connector</td>
@@ -183,7 +183,7 @@ Vanaf lenterelease 19.1 is Adobe Campaign niet meer compatibel met de volgende w
 
 Vanaf de lenterelease 19.1 is Adobe Campaign niet meer compatibel met de volgende tools.
 
-* Java JDK 7. [Meer informatie](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
+* Java JDK 7. [Meer informatie](https://www.oracle.com/technetwork/java/javase/eol-135779.html)
 * Libre Office 3.5/4.3/5.x, behalve wanneer het is ingesloten in een andere tool. [Meer informatie](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
 ### Database-engines {#dbe-eol}
@@ -201,14 +201,14 @@ Vanaf release 20.2 is Adobe Campaign niet meer compatibel met de volgende FDA-se
 Vanaf de lenterelease 19.1 is Adobe Campaign niet meer compatibel met de volgende FDA-servers:
 
 * PostgreSQL 9.3. [Meer informatie](https://www.postgresql.org/support/versioning)
-* MySQL 5.5. [Meer informatie](http://www.fromdual.com/support-for-mysql-from-oracle)
-* DB2 9.5. [Meer informatie](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
+* MySQL 5.5. [Meer informatie](https://www.fromdual.com/support-for-mysql-from-oracle)
+* DB2 9.5. [Meer informatie](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
 * Teradata 14 - 14.1. [Meer informatie](https://community.teradata.com/t5/Database/Teradata-Database-Product-Life-Cycle/td-p/35068)
 
 Campaign Classic is niet compatibel met de volgende servers in FDA (Federated Data Access).
 
-* DB2 UDB 9.5, 9.7. Een recentere versie van DB2 wordt ondersteund via FDA (Federated Data Access). [Meer informatie](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
-* Oracle 9i, 10G R2. Recentere versies van Oracle worden ondersteund via FDA (Federated Data Access). [Meer informatie](http://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
+* DB2 UDB 9.5, 9.7. Een recentere versie van DB2 wordt ondersteund via FDA (Federated Data Access). [Meer informatie](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
+* Oracle 9i, 10G R2. Recentere versies van Oracle worden ondersteund via FDA (Federated Data Access). [Meer informatie](https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
 * PostgreSQL 8.3, 8.4, 9.0, 9.1, 9.2. Recentere versies van PostgreSQL worden ondersteund via FDA (Federated Data Access). [Meer informatie](https://www.postgresql.org/support/versioning)
 * MSSQL 2000, 2005, 2008 R2. Recentere versies van SQL Server worden ondersteund via FDA (Federated Data Access). [Meer informatie](https://support.microsoft.com/nl-nl/lifecycle/search/1044)
 * MySQL 5.1. Recentere versies van MySQL worden ondersteund via FDA (Federated Data Access). [Meer informatie](https://en.wikipedia.org/wiki/InfiniDB)

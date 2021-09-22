@@ -5,10 +5,10 @@ description: Meer informatie over standaardleveringsworkflows
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 794be3d196ea8292699bbf29c8a7038177763e31
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 6%
+source-wordcount: '323'
+ht-degree: 5%
 
 ---
 
@@ -35,11 +35,6 @@ De hieronder beschreven workflows worden geïnstalleerd met de **Deliveries** mo
    <td> <span class="uicontrol">Facturering</span> <br /> </td> 
    <td> <span class="uicontrol">billing</span> <br /> </td> 
    <td> Deze workflow stuurt het systeemactiviteitenrapport per e-mail naar de 'factureringsoperator'. Deze wordt standaard op de 25e van elke maand geactiveerd.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">Facturering (actieve profielen)</span> <br /> </td> 
-   <td> <span class="uicontrol">billingActiveContactCount</span> <br /> </td> 
-   <td> <p>Deze workflow telt het aantal actieve profielen. Het wordt elke nacht teweeggebracht om 1 uur door gebrek.</p> <p>"<strong>Profiel</strong>" betekent een record met informatie (bijvoorbeeld: een record in de nmsRecipient-tabel of een externe tabel met een cookie-id, de klant-id, de mobiele id of andere informatie die relevant is voor een bepaald kanaal) die een eindklant, perspectief of lead vertegenwoordigt. Facturering heeft alleen betrekking op profielen die "actief" zijn. Een profiel wordt als "actief" beschouwd als het profiel in de afgelopen twaalf maanden via een kanaal is geactiveerd of gecommuniceerd.</p> <p>Er wordt geen rekening gehouden met de kanalen Facebook en Twitter.</p> <p>U kunt een overzicht van <span class="uicontrol">Aantal actieve profielen</span> van <span class="uicontrol">Beheer</span> &gt; <span class="uicontrol">Campagnebeheer</span> &gt; <span class="uicontrol">Metriek van de Klant</span> menu hebben.</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Aliasreiniging</span> <br /> </td> 

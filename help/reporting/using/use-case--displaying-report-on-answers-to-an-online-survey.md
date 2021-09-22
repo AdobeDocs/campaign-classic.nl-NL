@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 5%
@@ -41,23 +41,23 @@ Voer de volgende stappen uit om de antwoorden op de enquête te verzamelen:
 1. Bewerk de activiteit en selecteer de enquête waarvan u de antwoorden wilt analyseren.
 1. Schakel de optie **[!UICONTROL Select all the answer data]** in om alle informatie te verzamelen.
 
-   ![](assets/reporting_usecase_1_01.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_01.png)
 
 1. Selecteer de kolommen die u wilt extraheren (in dit geval: selecteren: alle gearchiveerde velden. Dit zijn de velden die de antwoorden bevatten.
 
-   ![](assets/reporting_usecase_1_02.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_02.png)
 
 1. Zodra het vakje van de antwoordinzameling wordt gevormd, plaats **[!UICONTROL List update]** typeactiviteit om de gegevens te bewaren.
 
-   ![](assets/reporting_usecase_1_04.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_04.png)
 
    Geef in deze activiteit de lijst op die moet worden bijgewerkt en schakel de optie **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]** uit: antwoorden worden toegevoegd aan de bestaande tabel. Met deze optie kunt u verwijzen naar de lijst in een kubus. Het schema dat aan de lijst wordt gekoppeld, wordt niet opnieuw gegenereerd voor elke update. Dit garandeert de integriteit van de kubus die deze lijst gebruikt.
 
-   ![](assets/reporting_usecase_1_03.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_03.png)
 
 1. Start de workflow om de configuratie ervan te bevestigen.
 
-   ![](assets/reporting_usecase_1_05.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_05.png)
 
    De gespecificeerde lijst wordt gecreeerd en omvat het schema van de antwoorden aan het onderzoek.
 
@@ -71,11 +71,11 @@ U kunt dan de kubus tot stand brengen en zijn maatregelen vormen: zij zullen wor
 
 In dit voorbeeld is de kubus gebaseerd op de gegevens in de lijst die worden gevoed door de eerder gemaakte workflow.
 
-![](assets/reporting_usecase_2_01.png)
+![](../../surveys/using/assets/reporting_usecase_2_01.png)
 
 Definieer de afmetingen en de maatregelen die in het rapport moeten worden weergegeven. Hier willen we de contractdatum en het land van de geënquêteerde weergeven.
 
-![](assets/reporting_usecase_2_02.png)
+![](../../surveys/using/assets/reporting_usecase_2_02.png)
 
 Met het tabblad **[!UICONTROL Preview]** kunt u de rendering van het rapport beheren.
 
@@ -83,8 +83,8 @@ Met het tabblad **[!UICONTROL Preview]** kunt u de rendering van het rapport beh
 
 U kunt dan een rapport creëren dat op deze kubus wordt gebaseerd en de gegevens en de informatie verwerken.
 
-![](assets/reporting_usecase_3_01.png)
+![](../../surveys/using/assets/reporting_usecase_3_01.png)
 
 Pas de informatie aan om weer te geven op basis van uw behoeften.
 
-![](assets/reporting_usecase_3_02.png)
+![](../../surveys/using/assets/reporting_usecase_3_02.png)

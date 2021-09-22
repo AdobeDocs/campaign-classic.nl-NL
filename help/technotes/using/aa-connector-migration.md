@@ -2,14 +2,15 @@
 product: campaign
 title: Migreren naar de Adobe Analytics-connector
 description: Campagne - Veelgestelde vragen over Analytics Connector
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
+source-git-commit: 4b6fc31aefd12b3667501503fc5e10d5f1f0738f
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 5%
+source-wordcount: '850'
+ht-degree: 4%
 
 ---
 
-# Migreren naar Adobe Analytics Connector {#acc-aa-faq}
+# Bestaande Genesis-integratie migreren naar Adobe Analytics Connector {#acc-aa-faq}
 
 ![](../../assets/v7-only.svg)
 
@@ -27,7 +28,7 @@ U moet aan de nieuwe integratie van de Verbinding van Adobe Analytics op de Uitw
 
 Er is nu een nieuwe integratie tussen Campaign Classic v7 en Adobe Analytics beschikbaar. Belangrijke wijzigingen worden hieronder weergegeven.
 
-* De integratie tussen Adobe Campaign Classic en Adobe Analytics-verificatie is van gebruiker/wachtwoord naar Adobe Identity Management Service (IMS) verplaatst. Dientengevolge, moet u Adobe IMS uitvoeren, en met Campagne [via een Adobe ID ](../../integrations/using/about-adobe-id.md) verbinden, alvorens de implementatie van de Verbinding van Analytics te beginnen.
+* De integratie tussen Adobe Campaign Classic en Adobe Analytics-verificatie is van gebruiker/wachtwoord naar Adobe Identity Management Service (IMS) verplaatst. Daarom moet u Adobe IMS implementeren en verbinding maken met Campagne [via een Adobe ID](../../integrations/using/about-adobe-id.md), voordat u de implementatie van de Analytics Connector start.
 
 * De **Contactdatum**-classificatie, die als datumnotatie wordt gebruikt, is vervangen door Adobe Analytics. Voor gemigreerde integratie zal het van hetzelfde type blijven. Voor elke **Contactdatum** die door Campagne wordt gemaakt, is het type **String**.
 
@@ -49,12 +50,10 @@ Leer hoe u uw versie [in deze sectie ](../../platform/using/launching-adobe-camp
 
 U moet aan Campagne 21.1.3 (of meer) **vóór 1 Maart, 2022** bevorderen.
 
-Als gehoste klant werkt Adobe samen met u om uw exemplaar(s) te upgraden naar de nieuwere versie.
+Als gehoste klant werkt Adobe samen met u om uw exemplaar(s) te upgraden naar de nieuwere versie. Vervolgens kunt u [Adobe Analytics-connector](../../platform/using/adobe-analytics-connector.md) gebruiken.
 
 Als klant op locatie/hybride klant moet u een upgrade uitvoeren naar een van de nieuwere versies om van de nieuwe integratie te kunnen profiteren.
-
-Zodra alle instanties worden bevorderd, zult u de nieuwe integratie [aan de Schakelaar van Adobe Analytics kunnen uitvoeren, en een naadloze overgang verzekeren.](../../platform/using/adobe-analytics-connector.md)
-
+Zodra alle instanties worden bevorderd, zult u de nieuwe integratie [aan de Schakelaar van Adobe Analytics kunnen uitvoeren, en een naadloze overgang verzekeren.](../../platform/using/adobe-analytics-provisioning.md)
 
 ## Veelgestelde vragen{#faq-aa}
 

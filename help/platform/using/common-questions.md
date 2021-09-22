@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 97%
+source-wordcount: '512'
+ht-degree: 96%
 
 ---
 
@@ -74,4 +74,4 @@ U vindt de recentste Campaign Classic-release-opmerkingen [op deze pagina](../..
 Een subdomein is een afdeling van uw domein dat kan worden gebruikt om uw merken of diverse typen van traffic (transactionele berichten, marketinginformatie, enzovoort) te isoleren.
 Adobe houdt rekening met het DNS (Domain Name System) voor e-maillevering, dat een klant toestaat om zijn merkimago te behouden door een DNS-alias met zijn domeinnamen te gebruiken, en Adobe om autonoom alle technische best practices uit te voeren die het toestaan om de leverbaarheid tijdens het e-mailen te optimaliseren.
 
-[Klik hier voor meer informatie](https://helpx.adobe.com/nl/campaign/kb/domain-name-delegation.html).
+[Klik hier voor meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html).

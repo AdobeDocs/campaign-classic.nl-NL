@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
+source-git-commit: 1f6846f29c44719fdbd334327466619ed265452a
 workflow-type: tm+mt
-source-wordcount: '2531'
+source-wordcount: '2535'
 ht-degree: 99%
 
 ---
@@ -118,6 +118,7 @@ ht-degree: 99%
          + [Verbinding maken met Salesforce.com](platform/using/crm-sfdc.md)
          + [Gegevens synchroniseren met CRM](platform/using/crm-data-sync.md)
       + Adobe Analytics Connector{#analytics-connector}
+         + [Adobe Analytics Connector-provisioning](platform/using/adobe-analytics-provisioning.md)
          + [Integratie van Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
          + [Migreren naar Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
          + [Adobe Analytics-gegevensconnector](platform/using/adobe-analytics-data-connector-legacy.md)

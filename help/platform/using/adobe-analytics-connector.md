@@ -5,11 +5,11 @@ description: Meer informatie over Adobe Analytics Connector
 feature: Overview
 role: User, Admin
 level: Beginner
-exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
-source-git-commit: 0cfe8439007b56014eba497c511904c4f11b39ce
+exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
+source-git-commit: 1f6846f29c44719fdbd334327466619ed265452a
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 100%
+source-wordcount: '1515'
+ht-degree: 93%
 
 ---
 
@@ -45,33 +45,37 @@ De actievelden voor elke tool zijn als volgt:
 
 ## Integratie instellen {#setting-up-the-integration}
 
+>[!IMPORTANT]
+>
+> Voor Hybride en op-Premise implementaties, zorg ervoor om de leveringsstappen te volgen die in dit [pagina](../../platform/using/adobe-analytics-provisioning.md) worden gedetailleerd.
+
 Als u de Data Connector wilt instellen, moet u verbinding maken met uw Adobe Campaign-instantie en de volgende bewerkingen uitvoeren:
 
-1. [Uw rapportsuite maken in Adobe Analytics](#report-suite-analytics)
 1. [Conversievariabelen en succesgebeurtenissen configureren](#configure-conversion-success)
 1. [Uw externe account configureren in Adobe Campaign Classic](#external-account-classic)
 
-### Rapportsuite maken in Adobe Analytics {#report-suite-analytics}
+<!--
+### Create your Report suite in Adobe Analytics {#report-suite-analytics}
 
-Als u de integratie tussen Adobe Analytics en Adobe Campaign Classic wilt instellen, moet u verbinding maken met uw [!DNL Adobe Analytics]-instantie en de volgende bewerkingen uitvoeren:
+To set up the Adobe Analytics/Adobe Campaign Classic integration, you must connect to your [!DNL Adobe Analytics] instance and perform the following operations:
 
-1. Selecteer vanuit [!DNL Adobe Analytics] het **[!UICONTROL Admin tab]** en klik vervolgens op **[!UICONTROL All admin]**.
+1. From [!DNL Adobe Analytics], select the **[!UICONTROL Admin tab]** then click **[!UICONTROL All admin]**.
 
    ![](assets/analytics_connnector_1.png)
 
-1. Klik op **[!UICONTROL Report suites]**.
+1. Click **[!UICONTROL Report suites]**.
 
    ![](assets/analytics_connnector_2.png)
 
-1. Klik op de pagina **[!UICONTROL Report suite manager]** op **[!UICONTROL Create new]** en vervolgens op **[!UICONTROL Report suite]**.
+1. From the **[!UICONTROL Report suite manager]** page, click **[!UICONTROL Create new]** then **[!UICONTROL Report suite]**.
 
-   Raadpleeg voor de gedetailleerde procedure over het maken van **[!UICONTROL Report suite]** deze [sectie](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=nl#prerequisites).
+   For the detailed procedure on **[!UICONTROL Report suite]** creation, refer to this [section](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en#prerequisites).
 
    ![](assets/analytics_connnector_3.png)
 
-1. Selecteer een sjabloon.
+1. Select a template. 
 
-1. Configureer uw nieuwe rapportsuite met de volgende informatie:
+1. Configure your new report suite with the following information:
 
    * **[!UICONTROL Report Suite ID]**
    * **[!UICONTROL Site Title]**
@@ -81,13 +85,14 @@ Als u de integratie tussen Adobe Analytics en Adobe Campaign Classic wilt instel
 
    ![](assets/analytics_connnector_4.png)
 
-1. Klik na de configuratie op **[!UICONTROL Create report suite]**.
+1. When configured, click **[!UICONTROL Create report suite]**.
+-->
 
 ### Conversievariabelen en succesgebeurtenissen configureren {#configure-conversion-success}
 
-Nadat u uw **[!UICONTROL Report suite]** hebt gemaakt, moet u de **[!UICONTROL Conversion variables]** en **[!UICONTROL Success events]** als volgt configureren:
+U moet uw **[!UICONTROL Conversion variables]** en **[!UICONTROL Success events]** als volgt vormen:
 
-1. Selecteer de eerder geconfigureerde **[!UICONTROL Report suite]**.
+1. Selecteer **[!UICONTROL Report suite]** u met Adobe Campaign wilt verbinden.
 
 1. Selecteer via de knop **[!UICONTROL Edit settings]** de optie  **[!UICONTROL Conversion]** >  **[!UICONTROL Conversion variables]**.
 
@@ -118,13 +123,19 @@ Nadat u uw **[!UICONTROL Report suite]** hebt gemaakt, moet u de **[!UICONTROL C
    * **[!UICONTROL Unique Opens]**
    * **[!UICONTROL Unsubscribed]**
 
-   Voor meer informatie over de configuratie van **[!UICONTROL Success events]** raadpleegt u deze [sectie](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html?lang=nl#admin-tools)
+   Voor meer informatie over de configuratie van **[!UICONTROL Success events]** raadpleegt u deze [sectie](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html?lang=nl#admin-tools).
+
+   >[!NOTE]
+   >
+   > Alleen **[!UICONTROL Success events]** van numerieke type wordt ondersteund.
 
    ![](assets/analytics_connnector_8.png)
 
-1. Klik op **[!UICONTROL Save]** wanneer u klaar bent.
+1. Klik op **[!UICONTROL Save]** wanneer u klaar bent met de configuratie.
 
-Wanneer uw rapportsuite is geconfigureerd, zult u **[!UICONTROL External accounts]** in Adobe Campaign Classic moeten configureren.
+Nadat u de **[!UICONTROL Conversion variables]** en **[!UICONTROL Success events]** hebt geconfigureerd, controleert u of de variabelen zijn opgenomen in de **[!UICONTROL Product Profile]** die voor de Analytics Connector is gemaakt. Raadpleeg [Adobe Analytics-productprofiel maken](../../platform/using/adobe-analytics-provisioning.md#analytics-product-profile) voor meer informatie.
+
+U zult dan **[!UICONTROL External accounts]** in Adobe Campaign Classic moeten vormen.
 
 ### Externe account configureren in Adobe Campaign Classic {#external-account-classic}
 
@@ -150,7 +161,7 @@ Raadpleeg voor meer informatie hierover de pagina [Productprofielen voor Adobe A
 
 1. Klik op **[!UICONTROL Configure]** naast de vervolgkeuzelijst **[!UICONTROL Integration]**.
 
-1. Wijs in het venster **[!UICONTROL Configure Analytics integration]** uw externe account toe met de eerder gemaakte rapportsuite en geef de volgende informatie op:
+1. Wijs in het venster **[!UICONTROL Configure Analytics integration]** uw externe account toe met de rapportsuite die de volgende informatie bevat:
 
    * **[!UICONTROL E-Mail]**
    * **[!UICONTROL IMS Org]**

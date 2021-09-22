@@ -5,7 +5,7 @@ description: Leer hoe te om de pijpleiding te vormen
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -113,7 +113,7 @@ De pijpleidingsdienst houdt spoor van de berichten die door elke consument worde
 Om de optie van de Pijl te vormen, zou u deze aanbevelingen moeten volgen:
 
 * Voeg of geef trekkers onder **[!UICONTROL Triggers]** uit, zou u niet de rest moeten uitgeven.
-* Controleer of de JSON geldig is. U kunt een JSON-validatie gebruiken. Raadpleeg bijvoorbeeld deze [website](http://jsonlint.com/).
+* Controleer of de JSON geldig is. U kunt een JSON-validatie gebruiken. Raadpleeg bijvoorbeeld deze [website](https://jsonlint.com/).
 * &quot;name&quot; komt overeen met de trigger-id. Met jokerteken &quot;*&quot; worden alle triggers afgevangen.
 * &quot;Consumenten&quot; komt overeen met de naam van de oproepende instantie of toepassing.
 * Pijpleidingen ondersteunen ook het onderwerp &quot;aliassen&quot;.

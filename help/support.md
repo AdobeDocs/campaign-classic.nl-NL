@@ -4,10 +4,10 @@ title: 'Help- en ondersteuningsopties voor Campaign Classic '
 description: Hebt u ondersteuning voor Campaign Classic nodig? U bent op de juiste plaats.
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 5b1c59c450aaedbd8dbf6df8685817e4a7e02056
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 60%
+source-wordcount: '801'
+ht-degree: 61%
 
 ---
 
@@ -136,7 +136,7 @@ Het nieuwe ticketing-systeem is gestart via [Adobe Admin Console](https://adminc
 
 ### Vraag het de experts.
 
-Word lid van de Campaign Classic-community: zoek naar antwoorden in bestaande vragen of stel uw vraag aan de community. [Deelnemen aan het gesprek](https://experienceleaguecommunities.adobe.cadobe-campaign-classic/ct-p/adobe-campaign-classic-community)
+Word lid van de Campaign Classic-community: zoek naar antwoorden in bestaande vragen of stel uw vraag aan de community. [Deelnemen aan het gesprek](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
 
 ### Downloadcentrum voor campagne openen
 

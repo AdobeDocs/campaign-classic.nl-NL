@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 877ac37102a09a40ea59ef073afa00b9d9bd7dde
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '4542'
+source-wordcount: '4513'
 ht-degree: 98%
 
 ---
@@ -268,7 +268,7 @@ De sectie Privacy en instemming is verbeterd met meer gedetailleerde informatie 
 
 De pagina Privacybeheer in Campaign Classic is bijgewerkt met informatie over het veld Regulation, dat nu beschikbaar is wanneer de API wordt gebruikt waarmee het automatische proces voor het verzoek om toegang tot persoonsgegevens kan worden ingesteld. [Meer informatie](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
-De overzichtspagina van privacybeheer is bijgewerkt met informatie over de Thaise wet inzake de bescherming van persoonsgegevens (PDPA) en de Braziliaanse Lei Geral de Proteção de Dados (LGPD). [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
+De overzichtspagina van privacybeheer is bijgewerkt met informatie over de Thaise wet inzake de bescherming van persoonsgegevens (PDPA) en de Braziliaanse Lei Geral de Proteção de Dados (LGPD). [Meer informatie](../../platform/using/privacy-and-recommendations.md)
 
 Er is informatie toegevoegd aan de logboeken van subworkflows en aan het gedrag in geval van fouten. [Meer informatie](../../workflow/using/sub-workflow.md)
 
@@ -520,9 +520,9 @@ Audittrail - [Meer informatie](../../production/using/audit-trail.md)
 
 Er is een nieuwe lijst met veelgestelde vragen voor een buildupgrade gemaakt. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/build-upgrade-faq.html)
 
-De [compatibiliteitsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) is bijgewerkt. De lijst met ondersteunde databasesystemen is bijgewerkt, evenals Android/iOS-versies en verwante SDK’s. De [19.0-compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix-19-0.html) is gearchiveerd.
+De [compatibiliteitsmatrix](compatibility-matrix.md) is bijgewerkt. De lijst met ondersteunde databasesystemen is bijgewerkt, evenals Android/iOS-versies en verwante SDK’s. De 19.0-compatibiliteitsmatrix is gearchiveerd.
 
-De pagina met verouderde en verwijderde functies in Campaign Classic is bijgewerkt. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/deprecated-and-removed-features.html)
+De pagina met verouderde en verwijderde functies in Campaign Classic is bijgewerkt. [Meer informatie](deprecated-features.md)
 
 De beschrijving van het serverconfiguratiebestand is toegevoegd aan de installatiehandleiding. [Meer informatie](../../installation/using/the-server-configuration-file.md)
 
@@ -579,7 +579,7 @@ De volgende technische opmerkingen zijn bijgewerkt: [Protocol en instellingen va
 
 De sectie over technische workflows is bijgewerkt. [Meer informatie](../../workflow/using/about-technical-workflows.md)
 
-De procedure voor Domain Name Setup van Campaign is verbeterd en bijgewerkt. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/domain-name-delegation.html)
+De procedure voor Domain Name Setup van Campaign is verbeterd en bijgewerkt.
 
 De migratieprocedure voor Android-apps van Google Cloud Messaging (GCM) naar Firebase Cloud Messaging (FCM) is bijgewerkt. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/migrate-to-fcm.html)
 

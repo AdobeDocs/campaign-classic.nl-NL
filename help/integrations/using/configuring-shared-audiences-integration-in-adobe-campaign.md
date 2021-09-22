@@ -6,10 +6,10 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 830c4146d72cd5a744d026a499cfe8613a255da7
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 2%
+source-wordcount: '484'
+ht-degree: 1%
 
 ---
 
@@ -83,10 +83,10 @@ De **[!UICONTROL Recipient - Visitor ID]**-gegevensbron configureren:
 
 Voor de configuratie van de integratie met de dienst van de Kern van Mensen of de manager van het Publiek, moeten wij ook de server van het Volgen van de Campagne vormen.
 
-U moet ervoor zorgen de het Volgen van de Campagne Server op het domein (CNAME) wordt geregistreerd. Meer informatie over domeinnaamdelegatie vindt u in [dit artikel](https://helpx.adobe.com/nl/campaign/kb/domain-name-delegation.html).
+U moet ervoor zorgen de het Volgen van de Campagne Server op het domein (CNAME) wordt geregistreerd. Meer informatie over domeinnaamdelegatie vindt u in [dit artikel](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html).
 
 ## Stap 4: De service voor de bezoekersidentiteitskaart configureren {#step-4--configure-the-visitor-id-service}
 
-Als uw bezoeker-id-service nog nooit is geconfigureerd op uw wegeigenschappen of websites, raadpleegt u het volgende [document](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html) om te leren hoe u uw service of de volgende [video](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two) kunt configureren.
+Als uw bezoeker-id-service nooit is geconfigureerd op uw wegeigenschappen of websites, raadpleegt u het volgende [document](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html) om te leren hoe u uw service of de volgende [video](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two) kunt configureren.
 
 Uw configuratie en levering worden voltooid, kan de integratie nu worden gebruikt om publiek of segmenten in te voeren en uit te voeren.

@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;populaire onderwerpen
 product: campaign
 title: Adobe Campaign Classic v7-productdocumentatie
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 1d662f2f6d4b664e1cc2977cd3207d1b71983b04
+source-git-commit: acb2c4e90c4ce349ea9c1ad53d703c13195872e1
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 48%
@@ -28,7 +28,7 @@ ht-degree: 48%
 
 * **[Werk uw Adobe Experience Cloud Triggers-](integrations/using/configuring-adobe-io.md)**<br/> integratie bij. De service voor verificatie van de oudere versie van Auth is bijna voltooid: u moet migreren naar Adobe I/O.
 
-[Meer updates](/help/rn/using/documentation-updates.md)
+[Meer updates](rn/using/documentation-updates.md)
 
 ## Bovenste pagina’s
 
@@ -80,7 +80,7 @@ ht-degree: 48%
 
 | Nuttige pagina’s | Resources voor ontwikkelaars |
 |---|---|
-| [Release-opmerkingen](/help/rn/using/latest-release.md) | [Lijst met foutberichten](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=nl) |
+| [Release-opmerkingen](rn/using/latest-release.md) | [Lijst met foutberichten](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=nl) |
 | [Instructievideo’s](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=nl) | [Campaign-datamodel](configuration/using/about-data-model.md) |
 | [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md) | [Campaign-JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [[!DNL Gold Standard] -upgrade](rn/using/gs-overview.md) | [Handleiding voor tracking](https://helpx.adobe.com/nl/campaign/kb/acc-tracking.html) |
