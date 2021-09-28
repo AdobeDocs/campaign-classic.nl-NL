@@ -3,9 +3,9 @@ product: campaign
 title: Migreren naar de Adobe Analytics-connector
 description: Campagne - Veelgestelde vragen over Analytics Connector
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 4b6fc31aefd12b3667501503fc5e10d5f1f0738f
+source-git-commit: 6d3e21fa00771a47d846d502e2d4d5971aa39b29
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '855'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ Vanaf de release van Campaign Classic v7 21.1.3 is de Adobe Analytics Data Conne
 
 Op 1 augustus 2021 is Adobe Campaign Classic verwijderd uit de bestaande interface voor gegevensverbindingen, maar de bestaande integratie van de campagne zal tot 1 maart 2022 gegevens verzamelen en doorgeven aan Adobe Analytics. Na deze datum zal de integratie ophouden gegevens te verzamelen en door te geven aan Adobe Analytics.
 
-U moet aan de nieuwe integratie van de Verbinding van Adobe Analytics op de Uitwisseling van Adobe migreren die de integratie van de Verbindingen van erfenisGegevens vervangt, zoals die in [deze pagina](../../platform/using/adobe-analytics-connector.md) wordt beschreven.
+U **moet** de nieuwe integratie van de Verbinding van Adobe Analytics op de Uitwisseling van Adobe uitvoeren die de integratie van de Verbindingen van erfenisGegevens vervangt. Raadpleeg [deze pagina](../../platform/using/adobe-analytics-connector.md) voor meer informatie over de Adobe Analytics-connector.
 
 >[!NOTE]
 >
