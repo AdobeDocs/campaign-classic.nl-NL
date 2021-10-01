@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ce2c90cd-46d9-4365-8013-5c1273b6c176
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '797'
 ht-degree: 100%
 
@@ -106,7 +106,7 @@ Rapporten in Adobe Campaign zijn gebaseerd op indicatoren die worden berekend aa
 
 In Adobe Campaign worden records vaak geüpload vanuit een externe gegevensbron.
 
-Als gegevenscontroller moet u ervoor zorgen dat u, wanneer u een verwijderingsverzoek ontvangt, alle noodzakelijke gegevens over de betrokkene van al uw systemen verwijdert.
+Als datacontroller moet u ervoor zorgen dat u, wanneer u een verwijderingsverzoek ontvangt, alle noodzakelijke data over de betrokkene van al uw systemen verwijdert.
 
 ## Opnieuw aanmelden {#opt-in-again}
 
