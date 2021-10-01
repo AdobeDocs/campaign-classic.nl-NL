@@ -7,7 +7,7 @@ role: User
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '513'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Dit document bevat een lijst met alle systemen en onderdelen die worden ondersteund voor **Adobe Campaign Classic[!DNL Gold Standard]** 19.1-builds. Producten en versies die niet in deze  lijst staan, zijn niet compatibel met deze versie van Adobe Campaign.
+Dit document bevat een lijst met alle systemen en onderdelen die worden ondersteund voor **Adobe Campaign Classic[!DNL Gold Standard]** 19.1-builds. Producten en versies die niet in deze lijst staan, zijn niet compatibel met deze versie van Adobe Campaign.
 
 ## Belangrijke opmerkingen{#important-notes-gs}
 
@@ -201,7 +201,7 @@ Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagi
 <tr>
 <td>Oracle</td>
 <td>
-<p>12 quater</p>
+<p>12c</p>
 <p>11g</p>
 </td>
 </tr>
@@ -210,8 +210,8 @@ Adobe Campaign Classic is compatibel met alle systemen en tools die op deze pagi
 <td>
 <p>11.x</p>
 <p>10.x</p>
-<p>9,6 x</p>
-<p>9,4 x</p>
+<p>9.6.x</p>
+<p>9.4.x</p>
 </td>
 </tr>
 <tr><td>SQL Server</td>
