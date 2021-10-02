@@ -5,11 +5,10 @@ description: Leer hoe u URL-machtigingen configureert
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814,6fe8da3b-57b9-4a69-8602-a03993630b27
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: dab18d24f5471034a2169dd674e6f7000de30cac
 workflow-type: tm+mt
 source-wordcount: '338'
-ht-degree: 26%
+ht-degree: 28%
 
 ---
 
@@ -25,7 +24,7 @@ Instanties mogen standaard geen verbinding maken met externe URL’s. Het is ech
 >
 >Deze procedure is beperkt tot **on-premise** plaatsingen.
 >
->Als **gehoste** klant, als u tot [Controlebord van de Campagne](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl) kunt toegang hebben, kunt u de de toestemmingen gebruiken zelfinstellings interface van URL. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
+>Als **gehoste** klant, als u tot [Controlebord van de Campagne](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=nl) kunt toegang hebben, kunt u de de toestemmingen gebruiken zelfinstellings interface van URL. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=nl)
 >
 >Andere **hybride/gehoste** klanten moeten zich tot het ondersteuningsteam van Adobe richten om IP aan de lijst van gewenste personen toe te voegen.
 

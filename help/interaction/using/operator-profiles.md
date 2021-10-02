@@ -6,9 +6,9 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '385'
 ht-degree: 5%
 
 ---
@@ -52,15 +52,15 @@ De aan de aanbiedingsmanager toegewezen rechten stellen hen in staat de volgende
 
    ![](assets/offer_operators_create_002.png)
 
-De aan de leveringsmanager toegewezen rechten zijn/laten hen toe om de volgende taken uit te voeren:
+De aan de leveringsmanagers toegekende rechten stellen hen in staat de volgende taken uit te voeren:
 
 * Geef **[!UICONTROL Live]** omgevingen weer.
 * Categorieën voorstellen weergeven en wijzigen.
-* Aanbiedingen goedkeuren als s/he is opgegeven als een van de controleurs.
+* Aanbiedingen goedkeuren als deze leveringsmanager is opgegeven als een van de controleurs.
 
    >[!NOTE]
    >
-   >De leveringsmanager kan een aanbieding slechts goedkeuren als hij als recensent tijdens de aanbiedingsconfiguratie is bepaald.
+   >Leveringsmanagers kunnen een aanbieding alleen goedkeuren als ze tijdens de aanbiedingsconfiguratie zijn gedefinieerd als een controleur.
 
 ## Reparatie van rechten volgens exploitant {#recap-of-rights-according-to-operator}
 

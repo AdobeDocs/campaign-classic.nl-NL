@@ -6,9 +6,9 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '3730'
+source-wordcount: '3729'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Wanneer een Adobe Campaign-operator een taak maakt, wordt deze standaard automat
 >
 >Operator management wordt gepresenteerd in [deze sectie](../../platform/using/access-management.md).
 
-U kunt aangeven welke operatoren bij de uitvoering van de taak betrokken zijn. Deze operatoren zijn niet geautoriseerd om de taak te sluiten. Zij kunnen alleen de hun toegewezen taak goedkeuren.
+U kunt aangeven welke operatoren bij de uitvoering van de taak betrokken zijn. Deze operatoren zijn niet geautoriseerd om de taak te sluiten. Zij mogen alleen de hun toegewezen taak goedkeuren.
 
 Ze worden geselecteerd met het pictogram **[!UICONTROL Resources]** op de taakwerkbalk. Klik **[!UICONTROL Add]** en selecteer de betrokken exploitanten.
 
@@ -247,7 +247,7 @@ Een taak maken die rechtstreeks aan een programma is gekoppeld:
 
 ### Beschikbaarheid van bedieners {#operator-availability}
 
-In het taakdashboard, wijst een pictogram naast de naam van de exploitant erop dat zij reeds aan een andere taak of een gebeurtenis tijdens de periode werken die door de taak wordt behandeld. (Taak die de exploitant belast is met of betrokken is bij: Hij verschijnt in **[!UICONTROL Assigned to]** gebied of in de taak **[!UICONTROL Resources]** doos).
+In het taakdashboard, wijst een pictogram naast de naam van de exploitant erop dat zij reeds aan een andere taak of een gebeurtenis tijdens de periode werken die door de taak wordt behandeld. De taak die de exploitant van of betrokken bij is verschijnt op **[!UICONTROL Assigned to]** gebied of in de taak **[!UICONTROL Resources]** doos.
 
 ![](assets/mrm_task_alert_operator_busy.png)
 

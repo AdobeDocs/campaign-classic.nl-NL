@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '274'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ Er zijn twee typen sjablonen:
 
 1. Vooraf gedefinieerde leveringssjablonen
 
-   De Adobe Campaign-beheerder kan nieuwe leveringssjablonen maken. Ze kunnen opnieuw worden gebruikt door operatoren (die met geschikte toegangsrechten) of automatisch door serverprocessen. Bijvoorbeeld, kunt u een malplaatje van de e-maillevering vormen, en wanneer de gebruiker een levering gebruikend dit malplaatje creeert, moet hij eenvoudig de tekst of de inhoud van HTML ingaan en dan het leveren; de overige keuzen zijn al door de beheerder gedefinieerd.
+   De Adobe Campaign-beheerder kan nieuwe leveringssjablonen maken. Ze kunnen opnieuw worden gebruikt door operatoren (die met geschikte toegangsrechten) of automatisch door serverprocessen. Bijvoorbeeld, kunt u een malplaatje van de e-maillevering vormen, en wanneer de gebruikers tot levering gebruikend dit malplaatje leiden, moeten zij eenvoudig de tekst of de inhoud van HTML ingaan en dan het leveren; de overige keuzen zijn al door de beheerder gedefinieerd.
 
 >[!NOTE]
 >

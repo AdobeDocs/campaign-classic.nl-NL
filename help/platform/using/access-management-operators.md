@@ -6,9 +6,9 @@ feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1149'
 ht-degree: 2%
 
 ---
@@ -99,7 +99,7 @@ Gebruik het tabblad **[!UICONTROL Access rights]** om de groepen en benoemde rec
 
 Met de koppeling **[!UICONTROL Edit the access parameters...]** hebt u toegang tot de volgende opties:
 
-* Met de optie **[!UICONTROL Disable account]** kunt u de account van de operator uitschakelen: Hij heeft geen toegang meer tot Adobe Campaign.
+* Met de optie **[!UICONTROL Disable account]** kunt u de account van de operator uitschakelen: deze gebruiker heeft geen toegang meer tot Adobe Campaign.
 
    >[!NOTE]
    >
@@ -125,7 +125,7 @@ Met de koppeling **[!UICONTROL Edit the access parameters...]** hebt u toegang t
 
    >[!IMPORTANT]
    >
-   >Dit is een zeer strenge beperking en het moet met voorzichtigheid worden gebruikt. Een exploitant die met dit type van rechten het programma wordt geopend kan slechts de inhoud van de gespecificeerde omslag zien, en heeft geen toegang tot een andere knoop van de boom via de ontdekkingsreiziger. Afhankelijk van de functies waartoe hij toegang heeft (bijvoorbeeld: werkstromen), kan hij gegevens tonen die gewoonlijk in knopen worden opgeslagen die hij niet kan zien.
+   >Dit is een zeer strenge beperking en het moet met voorzichtigheid worden gebruikt. Een exploitant die met dit type van rechten het programma wordt geopend kan slechts de inhoud van de gespecificeerde omslag zien, en heeft geen toegang tot een andere knoop van de boom via de ontdekkingsreiziger. Afhankelijk van de functies waartoe deze operator toegang heeft (bijvoorbeeld: (workflows), kan de gebruiker gegevens weergeven die doorgaans zijn opgeslagen in knooppunten die niet toegankelijk zijn.
 
 ### Instellingen controleren {#check-settings}
 

@@ -6,9 +6,9 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a8face46-a933-4f2c-8299-ccb66f05967d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '429'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ Als u categorieën en spaties wilt maken, past u hetzelfde proces toe als voor b
 
 Wanneer anonieme bezoekers verbinding maken, kunnen ze een cookie-identificatieproces ondergaan. Deze impliciete herkenning is gebaseerd op de browsergeschiedenis van de bezoeker.
 
-Tijdens deze stap, wordt een vergelijking gemaakt tussen de gegevens die door de koekjes en die in uw gegevensbestand worden teruggekregen. In sommige gevallen wordt de bezoeker erkend (hij wordt dan impliciet geïdentificeerd), in andere gevallen wordt hij niet erkend (en blijft dus anoniem).
+Tijdens deze stap, wordt een vergelijking gemaakt tussen de gegevens die door de koekjes en die in uw gegevensbestand worden teruggekregen. In sommige gevallen worden bezoekers erkend (ze worden dan impliciet geïdentificeerd), in andere gevallen worden ze niet herkend (en blijven dus anoniem).
 
 Om deze analyse, voor de aanbiedingsruimte in werking te stellen, controleer de **[!UICONTROL Implicitly identify the individual based on their browser history]** optie.
 

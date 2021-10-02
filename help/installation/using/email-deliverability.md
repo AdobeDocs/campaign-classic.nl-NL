@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '3022'
+source-wordcount: '3023'
 ht-degree: 0%
 
 ---
@@ -174,7 +174,7 @@ user:~ user$ host -t a mta5.am0.yahoodns.net
                 mta5.am0.yahoodns.net has address 98.138.112.35
 ```
 
-Voor deze record kan de gebruiker contact opnemen met 8 peer-IP-adressen. Aangezien hij 2 openbaar IP adres heeft geeft dit hem 8 * 2 = 16 combinaties om de yahoo.com postservers te bereiken. Elk van deze combinaties wordt een pad genoemd.
+Voor deze record kan de gebruiker contact opnemen met 8 peer-IP-adressen. Aangezien de gebruiker 2 openbaar IP adres heeft geeft dit hem 8 * 2 = 16 combinaties om de yahoo.com postservers te bereiken. Elk van deze combinaties wordt een pad genoemd.
 
 De tweede MX-record wordt weergegeven als:
 

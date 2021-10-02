@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '663'
 ht-degree: 2%
 
 ---
@@ -327,7 +327,7 @@ In om het even welke lijst die deze verwijzingstabel gebruikt, bepaal een verbin
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
 ```
 
-In de gebruikersinterface wordt geen koppeling maar een veld weergegeven. Wanneer de gebruiker dat veld kiest, kan hij een waarde in de referentietabel selecteren of de functie voor automatisch aanvullen gebruiken.
+In de gebruikersinterface wordt geen koppeling maar een veld weergegeven. Wanneer gebruikers dat veld selecteren, kunnen ze een waarde in de referentietabel selecteren of de functie voor automatisch aanvullen gebruiken.
 
 ![](assets/schema-edition-ex.png)
 

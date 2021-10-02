@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '794'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ In Campaign v7 zijn de volgende objecten gemaakt:
 
    ![](assets/acs_connect_lp_5.png)
 
-1. Ga naar **[!UICONTROL Profiles and Targets > Recipient]** en selecteer een ontvanger. U kunt zien dat hij nog niet aan de dienst heeft geabonneerd.
+1. Ga naar **[!UICONTROL Profiles and Targets > Recipient]** en selecteer een ontvanger. U ziet dat dit profiel nog niet op de service is geabonneerd.
 
    ![](assets/acs_connect_lp_6.png)
 
@@ -70,7 +70,7 @@ Voer de volgende stappen uit in Campaign Standard om te controleren of de gegeve
 
    ![](assets/acs_connect_lp_7.png)
 
-1. Zoek naar uw Ontvanger van de Campagne v7 en controleer dat hij in Campaign Standard verschijnt.
+1. Zoek naar uw Ontvanger van de Campagne v7 en controleer dat deze ontvanger in Campaign Standard verschijnt.
 
    ![](assets/acs_connect_lp_8.png)
 
@@ -102,7 +102,7 @@ De stappen voor het maken, ontwerpen en verzenden van de e-mail zijn dezelfde al
 
    ![](assets/acs_connect_lp_14.png)
 
-1. Hij voegt een telefoonnummer toe en controleert het abonnementsvak voor nieuwsbrieven.
+1. Deze ontvanger voegt een telefoonnummer toe en schakelt het abonnementsvak voor de nieuwsbrief in.
 
    ![](assets/acs_connect_lp_15.png)
 
@@ -118,7 +118,7 @@ Wanneer de ontvanger zijn gegevens bijwerkt via de webtoepassing, haalt Adobe Ca
 
    ![](assets/acs_connect_lp_17.png)
 
-1. Op het tabblad **[!UICONTROL Subscriptions]** kunnen we ook zien dat hij zich heeft geabonneerd op de nieuwsbrieven-service.
+1. Op het tabblad **[!UICONTROL Subscriptions]** kunnen we ook zien dat deze ontvanger zich heeft geabonneerd op de nieuwsbrieven-service.
 
    ![](assets/acs_connect_lp_18.png)
 

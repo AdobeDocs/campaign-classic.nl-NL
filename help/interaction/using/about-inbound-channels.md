@@ -6,9 +6,9 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 33247728-b865-4dfd-814f-2900965a7187
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '207'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ De aanbiedingen kunnen op diverse aanbiedingsruimten worden voorgesteld gebruike
 
 Voor een aanbieding die door de aanbiedingsmotor moet worden geselecteerd, moet het worden goedgekeurd en in een levende milieu beschikbaar zijn Voor meer op dit, verwijs naar [Goedkeuring en het activeren van een aanbieding](../../interaction/using/approving-and-activating-an-offer.md).
 
-Wanneer een contact binnenkomend is, zijn er twee mogelijke resultaten. Het eerste is dat de gebruiker niet wordt geïdentificeerd door de site waarop hij bladert en het tweede is dat hij wordt geïdentificeerd. De aanbiedingsengine biedt verschillende aanbiedingen, afhankelijk van of de gebruiker al dan niet is geïdentificeerd.
+Wanneer een contact binnenkomend is, zijn er twee mogelijke resultaten: de gebruiker die pagina&#39;s bladert, kan door de website worden geïdentificeerd of niet. De aanbiedingsengine biedt verschillende aanbiedingen, afhankelijk van of de gebruiker al dan niet is geïdentificeerd.
 
 Alvorens aanbiedingen op een binnenkomend kanaal te kunnen voorstellen, moet u de vraag van de aanbiedingsmotor vormen waar u de aanbiedingen wilt worden voorgesteld. In de meeste gevallen voor een binnenkomende interactie, is dit de Web-pagina.
 
