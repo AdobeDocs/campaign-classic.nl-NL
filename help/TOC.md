@@ -3,11 +3,10 @@ audience: end-user
 breadcrumb-title: Documentatie voor Campaign Classic v7
 product: campaign
 title: Gids voor Campaign Classic v7
-breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 37115de5871d773dc7b97c5150ef1eab583e3104
+source-git-commit: 089ade04a7324f8052738f18b34c09b429275c00
 workflow-type: tm+mt
 source-wordcount: '2567'
 ht-degree: 98%
