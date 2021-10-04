@@ -172,7 +172,7 @@ In verordeningen zoals de Algemene verordening gegevensbescherming (AVG) wordt b
 * U moet gebruikers laten weten dat uw sites zijn uitgerust met webtrackingtools via een verzoek om toestemming (bijvoorbeeld op de pagina) met een selectievakje voor het autoriseren van het gebruik van cookies, of u moet een banner toevoegen boven aan de eerste pagina waarop ze landen, enzovoort.
 * Pop-upvensters moeten worden vermeden omdat ze vaak worden geblokkeerd door browsers.
 
-### Tracking van berichten {#message-tracking}
+### Berichten tracken {#message-tracking}
 
 Met Adobe Campaign kunt u de verzonden e-mails en het gedrag van de ontvangers van de verzending bijhouden: het openen, het klikken op koppelingen, afmeldingen, enzovoort. Zie [Tracking van berichten](../../delivery/using/about-message-tracking.md) voor meer informatie.
 

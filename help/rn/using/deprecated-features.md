@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '1657'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
   </tr>
   <tr>  
    <td>Rapportage<br></td>
-   <td><p>Na Adobe Flash Player EOL zijn de Gage report and Chart rendering engine niet meer beschikbaar. <a href="../../reporting/using/creating-a-new-report.md">Meer informatie</a></p>
+   <td><p>Na Adobe Flash Player EOL zijn het Gauge-rapport en de Chart-rendering-engine niet meer beschikbaar. <a href="../../reporting/using/creating-a-new-report.md">Meer informatie</a></p>
   </tr>
   <tr>  
    <td>Faxkanaal<br></td>
@@ -242,10 +242,10 @@ Adobe Campaign is niet compatibel met de volgende SMS-connectoren:
 
 ### CRM-connectoren {#crm-connectors}
 
-De volgende CRM-connectors zijn vanaf Campagne 21.1 niet meer compatibel met Campagne:
+Met ingang van release 21.1 van Campaign zijn de volgende CRM-connectoren niet langer compatibel met Campaign:
 
 * Soap-API - On-premise: 2007, 2015, 2016
 * Soap-API - Online: 2015, 2016
-* Web API - Microsoft Dynamics CRM 2016
-* Web API - Microsoft Dynamics CRM 2016 Update 1
-* Oracle On-demand-API
+* Web-API – Microsoft Dynamics CRM 2016
+* Web-API – Microsoft Dynamics CRM 2016 Update 1
+* Oracle on demand-API

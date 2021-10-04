@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: a64cf63916c4e4f220ac00f3d44d0e5e747815f4
+source-git-commit: 86eb9814fae42992b5ca0ce233f88ad90086007d
 workflow-type: tm+mt
 source-wordcount: '1191'
-ht-degree: 84%
+ht-degree: 97%
 
 ---
 
@@ -23,16 +23,16 @@ Deze pagina bevat een lijst met [!DNL Gold Standard]-releases. U vindt meer info
 
 _7 september 2021_
 
-De build 9032@554dbcd bevat de volgende oplossing:
+Versie 9032@554dbcd bevat de volgende oplossing:
 
-* Probleem verholpen waarbij een fout van 500 optrad wanneer de koppeling naar een webtoepassing werd geopend in de vorm van een levering via de regel waarbij tracering is ingeschakeld.
+* Probleem verholpen waarbij een fout 500 optrad wanneer de koppeling naar een webapplicatie werd geopend in de vorm van een levering in een lijn waarbij tracking was ingeschakeld.
 
 _27 augustus 2021_
 
-De build 9032@99a3894 bevat de volgende oplossingen:
+Versie 9032@99a3894 bevat de volgende oplossingen:
 
-* De functie Handtekening bijhouden is verbeterd om fouten te voorkomen die samenhangen met de manier waarop hulpmiddelen van derden (e-mailclients, internetbrowsers, enz.) speciale tekens gebruiken. URL-parameters zijn nu gecodeerd.
-* Probleem verholpen met datumkiezers die ertoe konden leiden dat een console een foutbericht over een blokkeringsblokkering weergeeft. (NEO-36345)
+* De functie voor het bijhouden van handtekeningen is verbeterd om fouten te voorkomen die gekoppeld zijn aan tools van derden (klant-e-mail, internetbrowsers, enz.) speciale tekens gebruiken. URL-parameters zijn nu gecodeerd.
+* Probleem verholpen met datumpickers waardoor een console een foutbericht over een blokkering weergaf. (NEO-36345)
 
 ## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] release 11{#gs-11}
 
@@ -41,18 +41,18 @@ _14 april 2021_
 De build 9032@d030c36 bevat de volgende oplossing:
 
 * Er is een probleem met een regressie van de clientconsole opgelost die tot permanente foutberichten op het IMS-verbindingsscherm leidde. (NEO-34821)
-* Deze console-build is vereist om [IMS-toegang](../../technotes/using/ims-updates.md) te behouden.
+* Deze consoleversie is vereist om [IMS-toegang](../../technotes/using/ims-updates.md) te behouden.
 
 **Alleen de console-upgrade is verplicht. Er is geen serverupgrade vereist.**
 
 >[!CAUTION]
 >
-> * Als u verbinding maakt met Campagne met uw Adobe ID, via Adobe Identity Management Service (IMS), is een upgrade verplicht voor zowel de campagneserver als de clientconsole om verbinding te kunnen maken met Campagne na **30 juni 2021**. [Meer informatie](../../technotes/using/ims-updates.md)
+> * Als u verbinding maakt met Campaign met uw Adobe ID, via Adobe Identity Management Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de klantconsole om verbinding te kunnen maken met Campaign na **30 juni 2021**. [Meer informatie](../../technotes/using/ims-updates.md)
 > * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
-> * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overstappen op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde Auth authentificatiemodus met Campagne [is gepensioneerd](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) op **18 Augustus 2021**. De ontvangen milieu&#39;s profiteren van een uitbreiding tot **30 November, 2021**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot 30 november 2021. U moet [AppID van de toepassing OAuth ](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) aan Adobe verstrekken.
+> * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overstappen op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde Auth authentificatiemodus met Campagne [is gepensioneerd](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) op **September 2021**. De ontvangen milieu&#39;s profiteren van een uitbreiding tot **23 Febuary, 2022**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot februari 2022. U moet de [AppID van de OAuth-applicatie](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) aan Adobe verstrekken.
 
 >
->Meer informatie vindt u in de veelgestelde vragen over de [[!DNL Gold Standard] 11-upgrade](https://helpx.adobe.com/nl/campaign/kb/gold-standard-upgrade.html)
+>Meer informatie vindt u in de [[!DNL Gold Standard] veelgestelde vragen van de upgrade naar 11](https://helpx.adobe.com/nl/campaign/kb/gold-standard-upgrade.html)
 
 _2 maart 2021_
 
@@ -68,15 +68,6 @@ De build 9032@10c2709 bevat de volgende oplossing:
 
 _22 december 2020_
 
-<!--
->[!CAUTION]
->
-> * This release comes with a new connection protocol: if you are connecting to Campaign through Adobe Identity Service (IMS), upgrade is mandatory for both Campaign server and client console to be able to connect to Campaign after **June 30, 2021**. [Learn more](../../technotes/using/ims-updates.md)
-> * This release comes with a [security fix](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): upgrade is mandatory to reinforce your environment security. 
-> * If you are using the Experience Cloud Triggers integration through oAuth authentication, you need to move to Adobe I/O as described [in this page](../../integrations/using/configuring-adobe-io.md). Legacy oAuth authentication mode with Campaign will be retired on **November 30, 2021**.
->
->Learn more in the [[!DNL Gold Standard] 11 upgrade FAQ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html).
--->
 De build 9032@d3b452f bevat de volgende verbeteringen en oplossingen:
 
 * Het verbindingsprotocol is bijgewerkt en aangepast aan het nieuwe IMS-verificatiemechanisme.

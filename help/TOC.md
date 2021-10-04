@@ -9,8 +9,8 @@ sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: aac596caf559b25ba3fff94aca410a66ecc08b27
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2546'
+ht-degree: 99%
 
 ---
 
@@ -118,7 +118,7 @@ ht-degree: 0%
          + [Gegevens synchroniseren met CRM](platform/using/crm-data-sync.md)
       + Adobe Analytics Connector{#analytics-connector}
          + [Adobe Analytics Connector-provisioning](platform/using/adobe-analytics-provisioning.md)
-         + [Integratie van Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
+         + [De integratie van Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
          + [Migreren naar Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
          + [Adobe Analytics-gegevensconnector](platform/using/adobe-analytics-data-connector-legacy.md)
    + [Help- en ondersteuningsopties](support.md)
@@ -439,7 +439,7 @@ ht-degree: 0%
       + [Lidmaatschapsservices](workflow/using/subscription-services.md)
       + [Gegevens bijwerken](workflow/using/update-data.md)
       + [CRM-connector](workflow/using/crm-connector.md)
-      + [Gegevensbron wijzigen](workflow/using/change-data-source.md)
+      + [Databron wijzigen](workflow/using/change-data-source.md)
    + Stroombeheeractiviteiten {#flow-control-activities}
       + [Flowbeheeractiviteiten](workflow/using/about-flow-control-activities.md)
       + [Start en einde](workflow/using/start-and-end.md)

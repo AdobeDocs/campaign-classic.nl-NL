@@ -29,7 +29,7 @@ Aan elke build wordt een status gekoppeld. Hieronder vindt u een lijst met statu
 
 ![](assets/do-not-localize/green3.png) **Algemene beschikbaarheid** (GA) - Gevalideerd in productie en aanbevolen door Adobe.
 
-De **nieuwste GA-builds** zijn: de [[!DNL Gold Standard]  11-release](../../rn/using/gold-standard.md#gs-11) en de [Campaign 21.1.4-release](../../rn/using/latest-release.md#release-21-1-4-build-9340).
+De **nieuwste GA-builds** zijn: de [[!DNL Gold Standard] release 11](../../rn/using/gold-standard.md#gs-11) en de [release Campaign 21.1.4](../../rn/using/latest-release.md#release-21-1-4-build-9340).
 
 ![](assets/do-not-localize/limited3.png) **Beperkte beschikbaarheid** (LA) - Alleen on-demand implementatie.
 
@@ -47,7 +47,7 @@ Bovendien moet de clientconsole op dezelfde build worden uitgevoerd als de serve
 
 Houd uw implementatie up-to-date door de pagina’s [Verouderde en verwijderde functies](../../rn/using/deprecated-features.md) en [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md) te lezen bij elke nieuwe release.
 
-## Proces voor upgrade{#process-upgrade}
+## Upgradeproces{#process-upgrade}
 
 Als gehoste klant (Managed Service of hybride) moet u contact opnemen met het klantenserviceteam om uw omgeving te laten upgraden.
 

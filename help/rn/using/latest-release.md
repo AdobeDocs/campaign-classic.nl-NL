@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 12b191ffe3d407f1a69393278a7678a14e53d23e
 workflow-type: tm+mt
 source-wordcount: '2403'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 81%
 
 ![](../../assets/v7-only.svg)
 
-Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd bij de **nieuwste Campaign Classic Release**.
+Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden geleverd met de **nieuwste versie van Campaign Classic**.
 
-Begrijp de campagne bouwt statussen in [deze pagina](rn-overview.md).
+Krijg inzicht in de Campaign-versiestatussen op [deze pagina](rn-overview.md).
 
-## ![](assets/do-not-localize/green_2.png) Release 21.1.4 - Build 9342 {#release-21-1-4-build-9342}
+## ![](assets/do-not-localize/green_2.png) Release 21.1.4 - versie 9342 {#release-21-1-4-build-9342}
 
 _7 september 2021_
 
@@ -31,31 +31,31 @@ _7 september 2021_
 
 **Verbeteringen**
 
-* Na zijn levenseinde is Flash verwijderd uit alle verwante campagnefuncties en -componenten en vervangen door HTML5. Het diagramtype **Gage** is verwijderd. (NEO-30330) [Meer informatie](../../reporting/using/creating-a-chart.md)
-* Wanneer u de clientconsole in Windows installeert, controleert het installatieprogramma nu of er een bovenliggend registerknooppunt is en wordt er een gemaakt als dit knooppunt ontbreekt. Hiermee voorkomt u potentiële problemen wanneer u de console start. (NEO-34854)
-* De functie Handtekening bijhouden is verbeterd om fouten te voorkomen die samenhangen met de manier waarop hulpmiddelen van derden (e-mailclients, internetbrowsers, enz.) speciale tekens gebruiken. URL-parameters zijn nu gecodeerd.
+* Na het eind van zijn gebruiksduur is Flash verwijderd uit alle verwante Campaign-functies en onderdelen, en vervangen door HTML5. Het diagramtype **Gauge** is verwijderd. (NEO-30330) [Meer informatie](../../reporting/using/creating-a-chart.md)
+* Wanneer u de clientconsole in Windows installeert, controleert het installatieprogramma nu of er een bovenliggend registerknooppunt is, en zo niet, dan wordt er een gemaakt. Hiermee voorkomt u potentiële problemen wanneer u de console start. (NEO-34854)
+* De functie voor het bijhouden van handtekeningen is verbeterd om fouten te voorkomen die gekoppeld zijn aan tools van derden (klant-e-mail, internetbrowsers, enz.) speciale tekens gebruiken. URL-parameters zijn nu gecodeerd.
 
 **Andere wijzigingen**
 
-* Eerder vervangen de schakelaars van Microsoft CRM (Bureau 365 en On-premise plaatsingen) zijn verwijderd uit de interface. [Meer informatie](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
-* Na de migratie aan Tomcat 8, is het IIS opstellingsmanuscript bijgewerkt om IIS integratiekwesties te bevestigen. (NEO-31019)
-* Er is een hulplijn toegevoegd waarmee alleen de technische workflow [factureren](../../production/using/monitoring-processes.md#billing-report) op de marketinginstantie kan worden uitgevoerd.
-* De identificatie van de gegevensbron is verbeterd op de tabbladen voor gegevens en schema&#39;s van het venster **Volgpopulatie weergeven**.
-* Ontbrekende database-indexen zijn toegevoegd aan de volgende schema&#39;s om problemen met databaseupdates te voorkomen: xtk:rights, nms:dlvExclusion, nms:zaadMember, nms:trackingUrl
+* Eerder vervangen connectoren van Microsoft CRM (Bureau 365 en On-premise-implementaties) zijn uit de interface verwijderd. [Meer informatie](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
+* Na de migratie aan Tomcat 8 is het IIS-instellingenscript bijgewerkt om IIS-integratiekwesties te bevestigen. (NEO-31019)
+* Er is een veiligheidsbarrière toegevoegd waarmee alleen de [technische workflow voor facturering](../../production/using/monitoring-processes.md#billing-report) op de marketingversie kan worden uitgevoerd.
+* De identificatie van de databron is verbeterd in de gegevens- en schematabbladen van het venster **Populatie weergeven** van de workflowtransities.
+* Ontbrekende database-indexen zijn toegevoegd aan de volgende schema&#39;s om problemen met database-updates te voorkomen: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
 
 **Patches**
 
-* Probleem verholpen waardoor het Hot kliks-rapport niet werkte toen er voorstellen waren die verband hielden met de levering. (NEO-26295)
-* Probleem verholpen met de **Sub-worklow** activiteit toen de uitvoering geen outputlijst produceerde. (NEO-36242)
-* Verschillende problemen verholpen bij het exporteren van het **rapport Beschrijvende analyse** naar PDF. (NEO-25847)
-* Probleem verholpen waarbij leveringen mislukten wanneer een externe postbestelling werd gebruikt. (NEO-37435)
-* Probleem verholpen wanneer verbinding werd gemaakt met Microsoft CRM via web-API. Het foutbericht is verwijderd omdat dit geen invloed had op de functies.
-* Probleem met logdeduplicatie bijhouden verholpen waarbij de medio-server werd ingesteld als een relais tussen tracking- en marketingservers. (NEO-36285)
-* Oplossing voor een regressie waardoor Vault niet kon worden gebruikt als een specifieke codeopslag.
-* Probleem verholpen waarbij u geen variabelen kon gebruiken in een **Verrijking**-workflowactiviteit toen de inkomende overgang afkomstig was van een FDA-gegevensbron.
-* Probleem verholpen dat tot verbroken URL&#39;s in e-mailberichten kon leiden.
+* Probleem verholpen waardoor het Hot clicks-rapport niet werkte als er aanbiedingen aan de levering gekoppeld waren. (NEO-26295)
+* Probleem verholpen met de activiteit **Sub-worklow** waarbij de uitvoering geen outputtabel produceerde. (NEO-36242)
+* Verschillende problemen verholpen bij het exporteren van het rapport **Beschrijvende analyse** naar PDF. (NEO-25847)
+* Probleem verholpen waarbij leveringen soms mislukten wanneer een externe maillevering werd gebruikt. (NEO-37435)
+* Probleem verholpen bij de verbinding met Microsoft CRM via web-API. Het foutbericht is verwijderd omdat dit geen invloed had op de functies.
+* Probleem met logdeduplicatietracking verholpen waarbij de middenserver was ingesteld als een relais tussen tracking- en marketingservers. (NEO-36285)
+* Oplossing voor een regressie waardoor Vault niet als een specifieke codeopslag kon worden gebruikt.
+* Probleem verholpen waardoor u geen variabelen kon gebruiken in een workflowactiviteit **Verrijkings** als de binnenkomende transitie afkomstig was van een FDA-databron.
+* Probleem verholpen dat kon leiden tot verbroken URL&#39;s in e-mailberichten.
 
-## ![](assets/do-not-localize/orange_2.png) Release 21.1.3 - Build 9330 {#release-21-1-3-build-9330}
+## ![](assets/do-not-localize/orange_2.png) Release 21.1.3 - versie 9330 {#release-21-1-3-build-9330}
 
 _5 juni 2021_
 
@@ -65,14 +65,14 @@ _5 juni 2021_
 <table>
 <thead>
 <tr>
-<th><strong>Nieuwe workflowactiviteit: Gegevensbron wijzigen</strong><br/></th>
+<th><strong>Nieuwe workflowactiviteit: Databron wijzigen</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Met de nieuwe <b>Gegevensbron wijzigen</b>-workflowactiviteit kunt u de gegevensbron van de werktabel van een workflow wijzigen. Dit biedt meer flexibiliteit bij het beheer van gegevens in verschillende gegevensbronnen (FDA en lokale database).</p>
-<p>In Adobe Campaign-workflows worden de gegevens beheerd met behulp van tijdelijke (of werkende) tabellen. Tijdens het uitvoeren van de workflow delen werktabellen gegevens over de verschillende workflowactiviteiten. Door gebrek, worden het werken lijsten gecreeerd op het zelfde gegevensbestand zoals de bron van de gegevens wij waarvragen.</p>
+<p>Met de nieuwe workflowactiviteit <b>Databron wijzigen</b> kunt u de databron van de werktabel van een workflow wijzigen. Dit biedt meer flexibiliteit bij het beheer van gegevens in verschillende databronnen (FDA en lokale database).</p>
+<p>In Adobe Campaign-workflows worden gegevens beheerd met behulp van werkende (of tijdelijke) tabellen. Tijdens het uitvoeren van de workflow delen werktabellen gegevens over de verschillende workflowactiviteiten. Standaard worden werktabellen gemaakt in dezelfde database als de bron van de gegevens waarop we query's uitvoeren.</p>
 <p>Raadpleeg de <a href="../../workflow/using/change-data-source.md">gedetailleerde documentatie</a> voor meer informatie.</p>
 </td>
 </tr>
@@ -210,14 +210,14 @@ Meer informatie vindt u op de pagina [Afgeschafte en verwijderde functies](../..
 * Er is een probleem opgelost waarbij u geen levering kon verzenden met een groep proeven vanwege een specifiek samenvoegingsmechanisme dat de personalisatie van de levering niet kon uitvoeren. (NEO-14391)
 * Er is een probleem opgelost waarbij geen waarschuwing met de waarschuwingsactiviteit werd verzonden als een query en een verrijkingsactiviteit de leveringstabel als doel hadden. (NEO-25157)
 
-## ![](assets/do-not-localize/red_2.png) Release 21.1.2 - Build 9282 {#release-21-1-2-build-9282}
+## ![](assets/do-not-localize/red_2.png) Release 21.1.2 - versie 9282 {#release-21-1-2-build-9282}
 
 _15 april 2021_
 
 * Wachtwoordbeheer is verbeterd om de beveiliging te optimaliseren.
 * Er is een probleem opgelost waarbij MTA soms vastliep.
 
-## ![](assets/do-not-localize/red_2.png) Release 21.1.1 - Build 9277 {#release-21-1-1-build-9277}
+## ![](assets/do-not-localize/red_2.png) Release 21.1.1 - versie 9277 {#release-21-1-1-build-9277}
 
 _22 februari 2021_
 

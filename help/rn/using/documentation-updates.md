@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '4513'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,15 +23,15 @@ Raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/us
 
 ## Augustus 2021{#aug-2021}
 
-Toegevoegde nieuwe workflowactiviteit: Gegevensbron wijzigen - [Meer informatie](../../workflow/using/change-data-source.md)
+Nieuwe workflowactiviteit toegevoegd: Databron wijzigen - [Meer informatie](../../workflow/using/change-data-source.md)
 
-Toepassingsbadges zijn toegevoegd aan de documentatiepagina&#39;s: **Is alleen van toepassing op v7** voor Campaign Classic v7-mogelijkheden, en **is van toepassing op v7 &amp; v8** voor algemene mogelijkheden.
+Toepassingsbadges zijn toegevoegd aan de documentatiepagina&#39;s: **Is alleen van toepassing op v7** voor Campaign Classic v7-mogelijkheden, en **is van toepassing op v7 en v8** voor algemene mogelijkheden.
 
-Er is een opmerking toegevoegd over de integratie tussen Campaign en AEM Assets, die vanaf Adobe Experience Manager 6.4 is ontmanteld. [Meer informatie](../../integrations/using/configuring-access-to-assets.md)
+Er is een opmerking toegevoegd over de integratie tussen Campaign en AEM Assets, die vanaf Adobe Experience Manager 6.4 is buiten gebruik is gesteld. [Meer informatie](../../integrations/using/configuring-access-to-assets.md)
 
-Screenshots en parameters van rapporten en webtoepassingen zijn bijgewerkt na het verwijderen van Adobe Flash.
+Screenshots en parameters van rapporten en webapplicaties zijn bijgewerkt na het verwijderen van Adobe Flash.
 
-Het diagramtype **Gage** is verwijderd.
+Het diagramtype **Gauge** is verwijderd.
 
 
 ## Juli 2021 {#july-2021}
