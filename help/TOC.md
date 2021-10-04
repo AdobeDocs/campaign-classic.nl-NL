@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 77c7f1edc531509580c76f55dcb2809c18a04133
+source-git-commit: 37115de5871d773dc7b97c5150ef1eab583e3104
 workflow-type: tm+mt
-source-wordcount: '2569'
+source-wordcount: '2567'
 ht-degree: 98%
 
 ---
@@ -617,7 +617,7 @@ ht-degree: 98%
       + [Midsourcingimplementatie](installation/using/mid-sourcing-deployment.md)
       + [Power Booster en Power Cluster](installation/using/power-booster-and-power-cluster.md)
    + Beveiligings- en privacyinstellingen {#security-privacy}
-      + [Aan de slag met beveiliging en privacy](installation/using/get-started-security-privacy.md)
+      + [Controlelijst voor beveiliging en privacy](installation/using/get-started-security-privacy.md)
       + [Personalisatie en privacy](installation/using/privacy.md)
       + [Veilige-toegangscontrole](installation/using/access-management.md)
       + [Richtlijnen voor scripting en versleuteling](installation/using/scripting-coding-guidelines.md)
