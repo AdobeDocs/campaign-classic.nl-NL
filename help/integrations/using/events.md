@@ -5,7 +5,7 @@ description: Leer hoe u gebeurtenissen configureert voor een aangepaste implemen
 audience: integrations
 content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Aangezien voor het bewerken van de Javascript-code technische vaardigheden verei
 
 Pipeline gebruikt een functie JavaScript om elk bericht te verwerken. Deze functie is door de gebruiker gedefinieerd.
 
-Het wordt gevormd in de **[!UICONTROL NmsPipeline_Config]** optie onder het attribuut &quot;JSConnector&quot;. Deze javascript wordt geroepen telkens als een gebeurtenis wordt ontvangen. Het wordt in werking gesteld door het [!DNL pipelined] proces.
+Het wordt gevormd in de **[!UICONTROL NmsPipeline_Config]** optie onder het attribuut &quot;JSConnector&quot;. Dit JavaScript wordt aangeroepen telkens wanneer een gebeurtenis wordt ontvangen. Het wordt in werking gesteld door het [!DNL pipelined] proces.
 
 Het Javascript-voorbeeldbestand is cus:triggers.js.
 

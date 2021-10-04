@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Aan de slag met beveiliging en privacy
+title: Controlelijst voor beveiliging en privacy
 description: Meer informatie over de belangrijkste elementen die gecontroleerd moeten worden met betrekking tot beveiliging en privacy.
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 8%
+source-wordcount: '487'
+ht-degree: 6%
 
 ---
 
-# Aan de slag met beveiliging en privacy {#get-started-security-privacy}
+# Controlelijst voor beveiliging en privacy{#get-started-security-privacy}
 
 ![](../../assets/v7-only.svg)
 
@@ -50,7 +50,7 @@ Toegangsbeheer is een belangrijk onderdeel van de beveiliging. Hier volgen enkel
 
 Volg bij het ontwikkelen in Adobe Campaign (workflows, Javascript, JSSP, enz.) altijd de volgende richtlijnen:
 
-* **Scripting**: Probeer SQL-instructies te vermijden, gebruik parameterized functies in plaats van tekenreekssamenvoeging en vermijd SQL-injectie door de SQL-functies toe te voegen die u aan de lijst van gewenste personen wilt gebruiken.
+* **Scripting**: probeer SQL verklaringen te vermijden, gebruik geparameterized functies in plaats van koordaaneenschakeling, vermijd SQL injectie door de SQL functies toe te voegen aan de lijst van gewenste personen te gebruiken.
 
 * **Beveilig het gegevensmodel**: gebruik genoemde rechten om exploitatoracties te beperken, systeemfilters toe te voegen (sysFilter)
 
@@ -67,6 +67,10 @@ Een zeer belangrijk ding om te controleren wanneer het opstellen van een on-prem
 Het is ook noodzakelijk dat u de beveiliging van de database-engine volgt.
 
 [Meer informatie](../../installation/using/network-database.md)
+
+>[!CAUTION]
+>
+>Vanaf 14 juli 2021 verliezen alle clientsystemen die het TLS 1.2-protocol niet ondersteunen, de toegang tot alle Adobe-producten en -services. Zorg ervoor dat alle gebruikers- en clientsystemen vóór deze datum compatibel zijn met TLS 1.2. [Meer informatie](https://helpx.adobe.com/in/x-productkb/multi/eol-tls-support.html)
 
 ## Serverconfiguratie
 

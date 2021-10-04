@@ -4,10 +4,10 @@ title: 'Help- en ondersteuningsopties voor Campaign Classic '
 description: Hebt u ondersteuning voor Campaign Classic nodig? U bent op de juiste plaats.
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 61%
+source-wordcount: '799'
+ht-degree: 59%
 
 ---
 
@@ -111,7 +111,7 @@ U kunt het configuratiescherm rechtstreeks openen vanuit Adobe Experience Cloud.
 
 ### SFTP-beheer
 
-In het configuratiescherm kunt u werken met alle SFTP-servers die verbonden zijn met Campaign-instanties waar u toegang toe hebt. U kunt de opslagcapaciteit controleren, IP-adressen op de lijst van gewenste personen beheren en openbare SSH-sleutels beheren. [Klik hier](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html) voor meer informatie.
+In het configuratiescherm kunt u werken met alle SFTP-servers die verbonden zijn met Campaign-instanties waar u toegang toe hebt. U kunt hun opslagcapaciteit controleren, IP adressen op de lijst van gewenste personen, en openbare sleutels van SSH beheren. [Klik hier](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html) voor meer informatie.
 
 ### Subdomeinen en certificaten
 
@@ -123,7 +123,7 @@ U kunt de subdomeinen en de bijbehorende certificaten controleren. Meer informat
 ### Versie-instellingen
 
 Leer hoe u de instellingen voor Campaign Classic-instanties in het regelpaneel beheert. Meer informatie vindt u op de volgende pagina&#39;s:
-* [Voeg IPs op toe staat ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) lijst toe om tot uw instantie(s) van de Campagne toegang te hebben
+* [Voeg IPs op toe ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) staat om tot uw instantie(s) van de Campagne toegang te hebben
 * [URL-machtigingen beheren](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
 * [Instantiedetails openen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
 * [De GPG-sleutels voor gegevenscodering beheren](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html)

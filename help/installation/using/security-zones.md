@@ -5,9 +5,9 @@ description: Leer hoe u beveiligingszones kunt configureren
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-source-git-commit: dab18d24f5471034a2169dd674e6f7000de30cac
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1460'
 ht-degree: 0%
 
 ---
@@ -225,7 +225,7 @@ Zodra de streken worden bepaald en de **[!UICONTROL Security zone]** opsomming w
 * Gebruik sessionTokenOnly=&quot;true&quot; minimaliseren:
 
    * Waarschuwing: Als dit attribuut aan waar wordt geplaatst, kan de exploitant aan een **CRSF aanval** worden blootgesteld.
-   * Bovendien wordt het sessionToken koekje niet geplaatst met een markering httpOnly, zodat kan sommige cliënt-kant javascript code het lezen.
+   * Bovendien wordt het sessionToken cookie niet ingesteld met een httpOnly-markering, zodat sommige JavaScript-code aan de clientzijde deze kan lezen.
    * Nochtans vereist het Centrum van het Bericht op veelvoudige uitvoeringscellen sessionTokenOnly: creeer een nieuwe veiligheidsstreek met sessionTokenOnly die aan &quot;waar&quot;wordt geplaatst en voeg **slechts noodzakelijke IP(s)** in deze streek toe.
 
 * Indien mogelijk, plaats allen allowHTTP, showErrors om vals (niet voor localhost) te zijn en hen te controleren.

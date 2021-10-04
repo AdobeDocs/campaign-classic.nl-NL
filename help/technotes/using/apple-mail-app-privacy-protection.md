@@ -2,9 +2,8 @@
 product: campaign
 title: Privacy-beveiliging per post in de e-mailtoepassing van Apple
 description: Meer informatie over de invloed van de functie om e-mailprivacy van Apple op uw campagnes te beschermen
-hide: true
-hidefromtoc: true
-source-git-commit: f73cda08183e27a222e0aa8e179ef013777435e8
+exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
+source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
 workflow-type: tm+mt
 source-wordcount: '2100'
 ht-degree: 0%

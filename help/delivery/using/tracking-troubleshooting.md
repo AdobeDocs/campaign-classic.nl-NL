@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 1%
@@ -132,7 +132,7 @@ Voer de volgende stappen uit wanneer u de optie NmsTracking_Pointer bijwerkt:
 
 U kunt de formule voor het bijhouden van klikken aanpassen en een aangepaste formule voor het bijhouden van Adobe Analytics opgeven.
 
-Dat soort aanpassing moet met voorzichtigheid worden gedaan om extra linefeed karakters te vermijden. Alle regelvoeders die zich buiten de JavaScript-expressie bevinden, worden in de uiteindelijke formule gebruikt.
+Dat soort aanpassing moet met voorzichtigheid worden gedaan om extra linefeed karakters te vermijden. Alle regelafstandtekens die zich buiten de JavaScript-expressie bevinden, worden in de uiteindelijke formule gebruikt.
 
 Dit soort extra linefeed-teken in de URL voor bijhouden leidt tot publicatie in bepaalde webMail (AOL, GMail, enz.).
 
@@ -159,7 +159,7 @@ Dit soort extra linefeed-teken in de URL voor bijhouden leidt tot publicatie in 
    %>&cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
    ```
 
-Om te begrijpen waar de extra linefeed is kunt u de uitdrukking javascript door een vaste koordTEKENREEKS vervangen.
+Om te begrijpen waar de extra linefeed is kunt u de uitdrukking van JavaScript door een vaste koordSTRING vervangen.
 
 ```
 // Incorrect
@@ -195,7 +195,7 @@ STRING1&cid=STRING2&bid=STRING3
    %>
    ```
 
-Om te begrijpen waar de extra linefeed is kunt u de uitdrukking javascript door een vaste koordTEKENREEKS vervangen.
+Om te begrijpen waar de extra linefeed is kunt u de uitdrukking van JavaScript door een vaste koordSTRING vervangen.
 
 ```
 // Incorrect

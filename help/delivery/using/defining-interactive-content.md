@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1572'
 ht-degree: 3%
 
 ---
@@ -174,7 +174,7 @@ Als u het verzenden van een AMP-e-mail naar een Mail.ru-adres wilt testen, voert
 
 ### E-mails met AMP leveren door zich te registreren bij een e-mailprovider {#delivering-amp-emails-by-registering}
 
-U kunt experimenteren met het leveren van dynamische e-mailberichten door u te registreren bij de ondersteunde e-mailproviders, zodat uw senderdomein aan de lijst van gewenste personen wordt toegevoegd.
+U kunt experimenteren met het leveren van dynamische e-mailberichten door u te registreren bij de ondersteunde e-mailproviders, zodat uw senderdomein wordt toegevoegd aan de lijst van gewenste personen.
 
 >[!NOTE]
 >
@@ -206,7 +206,7 @@ Bijvoorbeeld, als u een productlijst in uw e-mail opnam, wanneer het uitgeven va
 
 ## Video over zelfstudie {#amp-email-video}
 
-In de onderstaande video wordt uitgelegd hoe u AMP kunt activeren in Adobe Campaign en wordt u het gebruik ervan voorgesteld.
+In de onderstaande video wordt uitgelegd hoe u AMP in Adobe Campaign kunt activeren en krijgt u een voorbeeld van het gebruik.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
 

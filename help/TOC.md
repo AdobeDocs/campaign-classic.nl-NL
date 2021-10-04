@@ -7,12 +7,13 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: aac596caf559b25ba3fff94aca410a66ecc08b27
+source-git-commit: 77c7f1edc531509580c76f55dcb2809c18a04133
 workflow-type: tm+mt
-source-wordcount: '2546'
-ht-degree: 99%
+source-wordcount: '2569'
+ht-degree: 98%
 
 ---
+
 
 # Documentatie voor Adobe Campaign Classic v7 {#using}
 
@@ -36,12 +37,6 @@ ht-degree: 99%
       + [Release 18.4](rn/using/release--18-4.md)
    + [Afgeschafte functies](rn/using/deprecated-features.md)
    + [Compatibiliteitsmatrix](rn/using/compatibility-matrix.md)
-   + [Technische opmerkingen](technotes/using/technote.md)
-   + [Update van iOS-certificaat](technotes/using/ios-certificate-update.md)
-   + [Bescherming van e-mailprivacy op Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
-   + [Configuratie-updates voor Campaign](technotes/using/acc-config-updates.md)
-   + [Bijgehouden URL&#39;s bijwerken](technotes/using/tracked-urls.md)
-   + [IMS-updates](technotes/using/ims-updates.md)
 + Aan de slag {#getting-started}
    + Starten met Adobe Campaign {#starting-with-adobe-campaign}
       + [Aan de slag met Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
@@ -850,6 +845,16 @@ ht-degree: 99%
       + [Specifieke configuraties in v6.10](migration/using/specific-configurations-in-v6-10.md)
    + [Terugdraaiprocedure](migration/using/about-rollback.md)
 + Technische opmerkingen {#technotes}
+   + [Aanbevelingen voor hardwareaanpassing](technotes/using/hardware-sizing.md)
+   + Upgrades en migraties{#technote-migration}
+      + [Technische opmerkingen](technotes/using/technote.md)
+      + [Configuratie-updates voor Campaign](technotes/using/acc-config-updates.md)
+      + [IMS-updates](technotes/using/ims-updates.md)
+   + E-mails en pushberichten{#technotes-email}
+      + [Bescherming van e-mailprivacy op Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
+      + [Veelgestelde vragen over de privacybescherming van Apple](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
+      + [Update van iOS-certificaat](technotes/using/ios-certificate-update.md)
+      + [Bijgehouden URL&#39;s bijwerken](technotes/using/tracked-urls.md)
    + Migratie naar door Adobe beheerde services{#dc-migration}
       + [Migratie naar openbare cloud](technotes/using/dc-migration.md)
       + [Veelgestelde vragen](technotes/using/dc-migration-faq.md)

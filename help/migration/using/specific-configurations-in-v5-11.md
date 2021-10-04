@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 978e1249-f79b-4f5f-9a94-3bb2510785de
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 3%
@@ -24,7 +24,7 @@ In deze sectie wordt beschreven welke aanvullende configuratie is vereist voor h
 De volgende waarschuwing wordt automatisch weergegeven tijdens de migratie:
 
 ```
-The webApp ids have been modified during the migration process. Please make sure to check your scripts/css for broken compatibility (any client side javascript or css dealing directly with another element through its id is impacted). See file 'c:\svn\602\nl\build\ncs\var\upgrade/postupgrade/webAppsMigration_*************.txt' for details about the references that were automatically updated, if any.
+The webApp ids have been modified during the migration process. Please make sure to check your scripts/css for broken compatibility (any client side JavaScript or css dealing directly with another element through its id is impacted). See file 'c:\svn\602\nl\build\ncs\var\upgrade/postupgrade/webAppsMigration_*************.txt' for details about the references that were automatically updated, if any.
 ```
 
 Sommige componenten van webtoepassingen, bijvoorbeeld de verschillende formulevelden, hebben @id-kenmerken. Deze worden gebruikt in de XML-code van webtoepassingen en worden niet meer op dezelfde manier gegenereerd. Ze zijn niet zichtbaar in de interface en u moet ze normaal niet gebruiken. In sommige gevallen kunnen @id-kenmerken echter zijn gebruikt om de weergave van webtoepassingen aan te passen, bijvoorbeeld via een stijlpagina of met JavaScript-code.
