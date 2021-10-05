@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 134f248fbcd456573365d5b32831b75dac4b73de
+source-git-commit: f6f1feffbd328f9756c9cd71c4186ba7cd674d76
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 86%
+source-wordcount: '596'
+ht-degree: 85%
 
 ---
 
@@ -121,10 +121,6 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 
 ## RDBMS-servers{#RDBMSservers}
 
->[!NOTE]
->
->Het RDBMS-stuurprogramma moet overeenkomen met de RDBMS-serverversie.
-
 <table>
 <tbody>
 <tr>
@@ -137,7 +133,10 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 </td>
 </tr>
 <tr>
-<td>PostgreSQL</td>
+<td>
+<p>PostgreSQL</p>
+<p>Standaarddatabaseserver voor gehoste omgevingen</p>
+</td>
 <td>
 <p>13.x</p>
 <p>12.x</p>
@@ -165,7 +164,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 
 >[!NOTE]
 >
->PostgreSQL is de standaard databaseserver voor gehoste omgevingen.
+>Het RDBMS-stuurprogramma moet overeenkomen met de RDBMS-serverversie.
 
 ## CRM-connectoren{#CRMconnectors}
 
@@ -315,7 +314,6 @@ De volgende besturingssystemen en browsers zijn **vereist** om [Campagne Client 
 
 ### Browser
 
-[]
 <table>
 <tbody>
 <tr>
