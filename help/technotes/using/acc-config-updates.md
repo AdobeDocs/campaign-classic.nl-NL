@@ -1,14 +1,12 @@
 ---
 product: campaign
-title: TechNote
-description: TechNote
-hide: true
-hidefromtoc: true
+title: TechNote - Adobe Campaign-configuratieupdates
+description: Adobe Campaign-configuratieupdates
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: b458ac67733a2f0e508df729add37d9a78dbcbd8
+source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 11%
+source-wordcount: '1137'
+ht-degree: 12%
 
 ---
 
@@ -103,7 +101,7 @@ Zodra alle instanties worden bevorderd, moet de Console van de Cliënt ook aan d
 
 ## Integratie met Experience Cloud Triggers {#acc-triggers-updates}
 
-De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt. De de integratieauthentificatie van trekkers, oorspronkelijk gebaseerd op de authentificatie van AUTH om tot pijpleiding toegang te hebben, is bewogen aan Adobe I/O. De verouderde Auth authentificatiemodus met Campagne [is gepensioneerd](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) op **18 Augustus 2021**. De ontvangen milieu&#39;s profiteren van een uitbreiding tot **30 November, 2021**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot 30 november 2021. U moet [AppID van de toepassing OAuth ](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) aan Adobe verstrekken.
+De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt. De de integratieauthentificatie van trekkers, oorspronkelijk gebaseerd op de authentificatie van AUTH om tot pijpleiding toegang te hebben, is bewogen aan Adobe I/O. De verouderde Auth authentificatiemodus met Campagne [is gepensioneerd](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) op **September 2021**. De ontvangen milieu&#39;s profiteren van een uitbreiding tot **23 Febuary, 2022**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot februari 2022. U moet de [AppID van de OAuth-applicatie](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) aan Adobe verstrekken.
 
 **Heeft dit gevolgen voor u?**
 

@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d6055d97-75fc-4ed7-89bd-8336157454eb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 12%
+source-wordcount: '326'
+ht-degree: 11%
 
 ---
 
@@ -63,6 +63,6 @@ Raadpleeg deze secties voor meer informatie hierover:
 
 <img src="assets/do-not-localize/icon_bestpractices.svg" width="60px">
 
-Bij het uitvoeren van import- en exportbewerkingen moeten diverse [aanbevolen procedures worden gevolgd om de consistentie van gegevens binnen de database te waarborgen en om een veel voorkomende fout tijdens het bijwerken of exporteren te voorkomen.](../../platform/using/import-export-best-practices.md)
+Bij het uitvoeren van import- en exportbewerkingen dient u verschillende [aanbevolen procedures](../../platform/using/import-export-best-practices.md) te volgen om de consistentie van de gegevens in de database te waarborgen en algemene fouten tijdens update- of exportbewerkingen te voorkomen.
 
 Daarnaast zijn aanbevelingen en algemene problemen met betrekking tot het gebruik van SFTP-servers beschikbaar in [deze sectie](../../platform/using/sftp-server-usage.md).

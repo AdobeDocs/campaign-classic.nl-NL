@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 10%
@@ -49,7 +49,7 @@ Berichten bijhouden is standaard ingeschakeld. Volg onderstaande stappen om de m
 
    >[!IMPORTANT]
    >
-   >Wanneer de URL van de koppeling als een label wordt gebruikt, wordt aangeraden het bijhouden van gegevens te desactiveren om het risico van afwijzing door phishing te voorkomen.
+   >Wanneer de URL van de koppeling als een label wordt gebruikt, wordt aangeraden de tracering te deactiveren om het risico van afkeuring door phishing te voorkomen.
    >
    >Als bijvoorbeeld de URL www.adobe.com in het bericht wordt ingevoegd en de URL wordt gevolgd, wordt de inhoud van de hypertekstkoppeling gewijzigd in https://nlt.adobe.net/r/?id=xxxxxx. Dit betekent dat het als frauduleus kan worden beschouwd door ontvangers van berichten.
 

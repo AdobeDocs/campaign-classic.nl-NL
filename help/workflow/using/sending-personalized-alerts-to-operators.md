@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 2%
@@ -55,7 +55,7 @@ Zorg ervoor dat de Javascript-code overeenkomt met uw workflowgegevens:
 
 Volg onderstaande stappen om deze gegevens op te halen:
 
-1. Klik met de rechtermuisknop op de uitgaande overgang van de activiteit **[!UICONTROL Query]** en selecteer **[!UICONTROL Display the target]**.
+1. Klik met de rechtermuisknop op de uitgaande overgang van de **[!UICONTROL Query]**-activiteit en selecteer **[!UICONTROL Display the target]**.
 
    ![](assets/uc_operator_4.png)
 

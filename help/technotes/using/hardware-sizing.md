@@ -2,14 +2,14 @@
 product: campaign
 title: Aanbevelingen voor hardwareaanpassing voor Campaign Classic v7
 description: Aanbevelingen voor hardwareaanpassing voor Campaign Classic v7
-source-git-commit: 3912874210ab16a132e51d9bb71508c8d244fe22
+source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
 workflow-type: tm+mt
-source-wordcount: '2513'
+source-wordcount: '2512'
 ht-degree: 1%
 
 ---
 
-# Aanbevelingen voor hardwareaanpassing voor Campaign Classic v7 {#hardware-sizing-reco}
+# Aanbevelingen voor hardwareaanpassing{#hardware-sizing-reco}
 
 ![](../../assets/v7-only.svg)
 
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->Deze handleiding is alleen bedoeld als algemene voorbeeldgids. U moet contact opnemen met uw Adobe Campaign Customer Success Manager om de exacte grootte van uw implementatie te meten voordat u uw Campagne-project start. **Schaf** geen infrastructuur of hardware aan of implementeer deze.
+>Dit artikel is alleen bedoeld als algemene voorbeeldgids. U moet contact opnemen met uw Adobe Campaign Customer Success Manager om de exacte grootte van uw implementatie te meten voordat u uw Campagne-project start. **Schaf** geen infrastructuur of hardware aan of implementeer deze.
 
-Dit document bevat algemene richtlijnen voor Adobe Campaign Classic v7-implementatie in uw on-premise datacenter of gevirtualiseerde cloud-omgeving. Dit soort plaatsing, die als **hybride** of **midsourcing** wordt bedoeld, plaatst de de marketing van de Campagne instantie en het marketing gegevensbestand onder uw operationele controle, terwijl het gebruiken van de Diensten van het Overseinen van de Wolk van Adobe om e-mail, SMS of SMPP berichten te verzenden, en e-mail open te verzamelen, stuitend, en het volgen gegevens te klikken.
+Dit document bevat algemene aanbevelingen voor Adobe Campaign Classic v7-implementatie in uw on-premise datacenter of gevirtualiseerde cloud-omgeving. Dit soort plaatsing, die als **hybride** of **midsourcing** wordt bedoeld, plaatst de de marketing van de Campagne instantie en het marketing gegevensbestand onder uw operationele controle, terwijl het gebruiken van de Diensten van het Overseinen van de Wolk van Adobe om e-mail, SMS of SMPP berichten te verzenden, en e-mail open te verzamelen, stuitend, en het volgen gegevens te klikken.
 
 De marketinginstantie is het deel van de Adobe Campaign-architectuur dat alle marketingactiviteiten stuurt en alle gegevens van de ontvanger en de analytische gegevens opslaat die door campagnes worden geretourneerd. De marketinginstantie is een set on-premise servers waarop Adobe Campaign-services worden uitgevoerd, en een relationele database.
 
@@ -258,5 +258,6 @@ Adobe raadt aan om voor elke gevirtualiseerde implementatie van Adobe Campaign p
 ## Verwante onderwerpen
 
 * [Campagne-bewakingsprocessen](../../production/using/monitoring-processes.md)
+* [Algemene architectuur van campagne](../../installation/using/general-architecture.md)
 * [Prestaties en productieproblemen](../../production/using/performance-and-throughput-issues.md)
 * [Controlelijst voor beveiliging en privacy](../../installation/using/get-started-security-privacy.md)

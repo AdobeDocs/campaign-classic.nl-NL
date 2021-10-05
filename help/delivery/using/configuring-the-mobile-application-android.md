@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 4%
@@ -120,7 +120,7 @@ Voer de volgende stappen uit om de HTTP v1 API-versie te configureren:
 
 1. Selecteer **[!UICONTROL HTTPV1]** in de vervolgkeuzelijst **[!UICONTROL API version]** in het venster **[!UICONTROL Mobile application creation wizard]**.
 
-1. Klik **[!UICONTROL Load project json file to extract projet details...]** om uw JSON-sleutelbestand rechtstreeks te laden. Raadpleeg [deze pagina](https://firebase.google.com/docs/admin/setup#initialize-sdk) voor meer informatie over het uitpakken van uw JSON-bestand.
+1. Klik **[!UICONTROL Load project json file to extract project details...]** om uw JSON-sleutelbestand rechtstreeks te laden. Raadpleeg [deze pagina](https://firebase.google.com/docs/admin/setup#initialize-sdk) voor meer informatie over het uitpakken van uw JSON-bestand.
 
    U kunt ook handmatig de volgende gegevens invoeren:
    * **[!UICONTROL Project Id]**

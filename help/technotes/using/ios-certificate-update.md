@@ -1,13 +1,11 @@
 ---
 product: campaign
-title: TechNote
-description: TechNote
-hide: false
-hidefromtoc: true
+title: TechNote - Certificaat van de Apple Push Notification-service
+description: Update voor servercertificaat van Apple Push Notification-service
 exl-id: 263fb4b5-ca62-4b92-a82d-8820ee998296
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
@@ -16,7 +14,7 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Op 29 maart 2021 is een APN-infrastructuurupdate (Apple Push Notification service) van invloed op het Adobe Campaign Classic iOS-kanaal. Een wijziging in de configuratie van het besturingssysteem is **verplicht** om uitval van het iOS-pushkanaal te voorkomen.
+Op 29 maart 2021 heeft een APN-infrastructuurupdate (Apple Push Notification service) invloed op het Adobe Campaign Classic iOS-kanaal. Een wijziging in de configuratie van het besturingssysteem is **verplicht** om uitval van het iOS-pushkanaal te voorkomen.
 
 Meer informatie over APNs verandert [op deze pagina](https://developer.apple.com/news/?id=7gx0a2lp).
 

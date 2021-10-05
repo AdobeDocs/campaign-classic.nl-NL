@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 089ade04a7324f8052738f18b34c09b429275c00
+source-git-commit: 23c5892189c59008f82ec453c97d24efe82fd2ae
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 98%
+source-wordcount: '2566'
+ht-degree: 97%
 
 ---
 
@@ -213,7 +213,6 @@ ht-degree: 98%
       + [Problemen met een levering oplossen](delivery/using/delivery-troubleshooting.md)
       + [Leveringsstatussen](delivery/using/delivery-statuses.md)
       + [Leveringsfouten begrijpen](delivery/using/understanding-delivery-failures.md)
-      + [Bouncekwalificatie bijwerken na een ISP-uitval](delivery/using/update-bounce-qualification.md)
       + [Quarantainebeheer begrijpen](delivery/using/understanding-quarantine-management.md)
    + Berichten bijhouden {#tracking-messages}
       + [Berichttracking](delivery/using/about-message-tracking.md)
@@ -852,6 +851,7 @@ ht-degree: 98%
    + E-mails en pushberichten{#technotes-email}
       + [Bescherming van e-mailprivacy op Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
       + [Veelgestelde vragen over de privacybescherming van Apple](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
+      + [Onjuiste harde grenzen bijwerken](delivery/using/update-bounce-qualification.md)
       + [Update van iOS-certificaat](technotes/using/ios-certificate-update.md)
       + [Bijgehouden URL&#39;s bijwerken](technotes/using/tracked-urls.md)
    + Migratie naar door Adobe beheerde services{#dc-migration}

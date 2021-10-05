@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: Uw omgeving bijwerken om verbinding te maken met Adobe Campaign met IMS
+title: TechNote - Werk uw omgeving bij om verbinding te maken met Adobe Campaign met IMS
 description: Campagne - IMS-updates
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
+source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '591'
 ht-degree: 8%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 8%
 
 ![](../../assets/v7-only.svg)
 
-Op 30 juni worden 2021 wijzigingen aangebracht in de aanmeldmogelijkheden van [Adobe Identity Management System](https://helpx.adobe.com/enterprise/using/identity.html) (IMS) die van invloed kunnen zijn op uw vermogen om Adobe Campaign te blijven gebruiken. Leer hoe u ervoor kunt zorgen dat u Adobe Campaign Classic v7 zonder onderbreking blijft gebruiken.
+Op 30 juni zijn 2021 wijzigingen aangebracht in de [Adobe Identity Management System](https://helpx.adobe.com/enterprise/using/identity.html) (IMS) aanmeldingsmogelijkheden die van invloed kunnen zijn op uw vermogen om Adobe Campaign te blijven gebruiken. Leer hoe u ervoor kunt zorgen dat u Adobe Campaign Classic v7 zonder onderbreking blijft gebruiken.
 
 ## Wat is er veranderd?
 
-Adobe Identity Management Service (IMS) biedt geen ondersteuning meer voor oude Internet Explorer-versies vanaf **30 juni 2021**. [Meer info](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
+Adobe Identity Management Service (IMS) biedt geen ondersteuning voor oude Internet Explorer-versies op **30 juni 2021**. [Meer info](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
 Adobe wil de IMS-functionaliteit behouden voor alle klanten van 30 juni 2021. IMS maakt deel uit van het beveiligingskader dat gebruikers toestaat zich aan te melden bij de clientconsole, dus Adobe Campaign.
 
@@ -78,7 +78,7 @@ De volgende waarschuwing is zichtbaar voor gebruikers als zij hun Console van de
 
 Als u een dergelijke waarschuwing ziet, moet u de nieuwste updates van het besturingssysteem installeren dat u gebruikt. [Meer informatie](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
 
-**Na 30 juni 2021** wordt het volgende bericht weergegeven en kunt u geen verbinding meer maken met Adobe Campaign:
+Als u de Internet Explorer-versie niet hebt bijgewerkt, wordt het volgende bericht weergegeven en kunt u geen verbinding meer maken met Adobe Campaign:
 
 ![](../../integrations/using/assets/do-not-localize/errorUpdateReq.png)
 

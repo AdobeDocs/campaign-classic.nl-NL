@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1974'
 ht-degree: 0%
@@ -305,7 +305,7 @@ Van ACC 18.10, **XtkNewId** is niet meer de standaardwaarde voor de opeenvolging
 
 >[!NOTE]
 >
->Een opeenvolging die in een schema van Adobe Campaign (**NmsTrackingLogId** bijvoorbeeld) van verwijzingen wordt voorzien moet aan een SQL functie worden geassocieerd die het aantal identiteitskaart in de parameters terugkeert, die door komma&#39;s wordt gescheiden. Deze functie moet **GetNew** XXX **Ids** worden genoemd, waarbij **XXX** de naam van de opeenvolging is (**GetNewNmsTrackingLogIds** bijvoorbeeld). Bekijk de **postgres-nms.sql**-, **mssql-nms.sql**- of **oracle-nms.sql**-bestanden die bij de toepassing worden geleverd in de map **datakit/nms/eng/sql/** om het voorbeeld te herstellen van het maken van een &#39;NmsTrackingLogId&#39;-reeks voor elke database-engine.
+>Een opeenvolging die in een schema van Adobe Campaign (**NmsTrackingLogId** bijvoorbeeld) van verwijzingen wordt voorzien moet met een SQL functie worden geassocieerd die het aantal IDs in de parameters terugkeert, die door komma&#39;s wordt gescheiden. Deze functie moet **GetNew** XXX **Ids** worden genoemd, waarbij **XXX** de naam van de opeenvolging is (**GetNewNmsTrackingLogIds** bijvoorbeeld). Bekijk de **postgres-nms.sql**-, **mssql-nms.sql**- of **oracle-nms.sql**-bestanden die bij de toepassing worden geleverd in de map **datakit/nms/eng/sql/** om het voorbeeld te herstellen een opeenvolgingsverwezenlijking &quot;NmsTrackingLogId&quot;voor elke gegevensbestandmotor.
 
 Om een unieke sleutel te verklaren, bevolk **automatisch** attribuut (met waarde &quot;waar&quot;) op het belangrijkste element van het gegevensschema.
 

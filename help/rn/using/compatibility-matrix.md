@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 987434c2b6b92fbb6f24924f92795cb282b61cd4
-workflow-type: ht
-source-wordcount: '545'
-ht-degree: 100%
+source-git-commit: 134f248fbcd456573365d5b32831b75dac4b73de
+workflow-type: tm+mt
+source-wordcount: '599'
+ht-degree: 86%
 
 ---
 
@@ -169,6 +169,8 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 
 ## CRM-connectoren{#CRMconnectors}
 
+Hieronder vindt u CRM-systemen (Customer Relationship Management) die compatibel zijn met Adobe Campaign. [Leer ](../../platform/using/crm-connectors.md) meer over de schakelaars van CRM van de Campagne.
+
 <table>
 <tbody>
 <tr>
@@ -187,6 +189,8 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 </table>
 
 ## Federated Data Access (FDA){#FederatedDataAccessFDA}
+
+Externe databases die compatibel zijn met Adobe Campaign [Federated Data Access module](../../installation/using/about-fda.md) worden hieronder weergegeven.
 
 <table>
 <tbody>
@@ -210,9 +214,9 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <tr>
 <td>Oracle</td>
 <td>
-<p>19c</p>
-<p>18c</p>
-<p>12c</p>
+<p>19 quater</p>
+<p>18 quater</p>
+<p>12 quater</p>
 <p>11g</p>
 </td>
 </tr>
@@ -223,9 +227,9 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <p>12.x</p>
 <p>11.x</p>
 <p>10.x</p>
-<p>9.6.x</p>
-<p>9.5.x</p>
-<p>9.4.x</p>
+<p>9,6 x</p>
+<p>9,5 x</p>
+<p>9,4 x</p>
 </td>
 </tr>
 <tr><td>SQL Server</td>
@@ -286,7 +290,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 
 ## Clientconsole {#ClientConsoleoperatingsystems}
 
-:warning: De volgende besturingssystemen en browser zijn vereist om de Campaign Client Console te gebruiken.
+De volgende besturingssystemen en browsers zijn **vereist** om [Campagne Client Console](../../installation/using/installing-the-client-console.md) te gebruiken.
 
 ### Besturingssystemen
 
@@ -311,6 +315,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 
 ### Browser
 
+[]
 <table>
 <tbody>
 <tr>
@@ -326,6 +331,8 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 
 
 ## Mobiele SDK{#MobileSDK}
+
+U kunt Campagne gebruiken om [pushmeldingen](../../delivery/using/about-mobile-app-channel.md) te verzenden op de hieronder vermelde besturingssystemen met de bijbehorende [mobiele SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
 
 <table>
 <tbody>
@@ -348,7 +355,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 
 ## Browsers{#Browsers}
 
-De volgende browsers zijn compatibel met Campaign voor toegang tot internet.
+De volgende browsers zijn compatibel met Campagne voor [Toegang van het Web](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 <table>
 <tbody>
@@ -399,6 +406,7 @@ De volgende browsers zijn compatibel met Campaign voor toegang tot internet.
 ## Wellicht ook interessant{#Morelikethis}
 
 * [Aanvullende informatie over Campaign Classic ](../../rn/using/latest-release.md)
-* [Installatiehandleiding](../../installation/using/general-architecture.md)
+* [Campagne-algemene architectuur](../../installation/using/general-architecture.md)
+* [Aanbevelingen voor hardwareaanpassing](../../technotes/using/hardware-sizing.md)
 * [Verouderde functies en systemen](../../rn/using/deprecated-features.md)
 * [Upgradeprocedure opstellen](../../production/using/build-upgrade.md)

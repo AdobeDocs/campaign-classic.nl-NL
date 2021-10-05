@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 4%
@@ -40,7 +40,7 @@ Voordat u de Adobe Campaign API&#39;s kunt gebruiken, moet u vertrouwd zijn met 
 
 Adobe Campaign gebruikt twee typen API&#39;s:
 
-* Algemene gegevens krijgen toegang tot API&#39;s voor het opvragen van gegevens in het datamodel. Zie [Gegevensgeoriënteerde API&#39;s](../../configuration/using/data-oriented-apis.md).
+* Algemene API&#39;s voor gegevenstoegang voor het opvragen van gegevens in het datamodel. Zie [Gegevensgeoriënteerde API&#39;s](../../configuration/using/data-oriented-apis.md).
 * Bedrijfs specifieke APIs die u op elk voorwerp laten handelen: leveringen, workflows, abonnementen, enz. Raadpleeg [Zakelijke georiënteerde API&#39;s](../../configuration/using/business-oriented-apis.md).
 
 Om APIs te ontwikkelen en met Adobe Campaign in wisselwerking te staan, moet u met uw datamodel vertrouwd zijn. Met Adobe Campaign kunt u een volledige beschrijving van de basis genereren. Zie [Beschrijving van het model](../../configuration/using/data-oriented-apis.md#description-of-the-model).

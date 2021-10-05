@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: dccf72b200cad9ba160a496cdd13ba39c5599008
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1305'
 ht-degree: 3%
@@ -140,7 +140,7 @@ Zodra e-mail BCC wordt gevormd, zorg ervoor u **[!UICONTROL Email BCC]** optie i
 ## BCC-tips e-mailen {#best-practices}
 
 * **Postvak** BCC-adres: ervoor te zorgen dat het voldoende opvangcapaciteit heeft om alle e-mails die door de MTA worden verzonden, te archiveren.
-* **MTA-mutualisatie**: de archiveringsfunctie van BCC werkt op MTA-niveau. Hiermee kunt u elke e-mail dupliceren die door de MTA is verzonden. Aangezien MTA over verscheidene instanties (bijvoorbeeld dev, test, of prod) of zelfs over verscheidene cliënten (in een midsourcingomgeving) kan worden gemutualiseerd, beïnvloedt het opzetten van deze eigenschap veiligheid:
+* **MTA-pooling**: de archiveringsfunctie van BCC werkt op MTA-niveau. Hiermee kunt u elke e-mail dupliceren die door de MTA is verzonden. Aangezien MTA over verscheidene instanties (bijvoorbeeld dev, test, of prod) of zelfs over verscheidene cliënten (in een midsourcingomgeving) kan worden samengebracht, beïnvloedt het opzetten van deze eigenschap veiligheid:
 
    * Als u een MTA met veelvoudige cliënten deelt en één van hen heeft deze optie geactiveerd, zal deze cliënt tot alle e-mails van de andere cliënten toegang hebben die de zelfde MTA delen. Om een dergelijke situatie te vermijden, gebruikt u een andere MTA voor elke cliënt.
    * Als u zelfde MTA over veelvoudige instanties (ontwikkeling, test, staaf) voor één enkele cliënt gebruikt, zullen de berichten die van alle drie instanties worden verzonden door de dataLogPath optie worden gedupliceerd.

@@ -5,7 +5,7 @@ description: Leer hoe te om campagne-AEM integratie te vormen
 audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 4%
@@ -65,7 +65,7 @@ Als uw instantie van de Campagne door Adobe wordt ontvangen, contacteer [Adobe k
 
 Met het **[!UICONTROL AEM integration]**-pakket is de externe account voor Adobe Experience Cloud gemaakt. U moet het nu configureren om verbinding te maken met uw Adobe Experience Manager-instantie.
 
-Voer de volgende stappen uit om de AEM externe account te configureren:
+Volg onderstaande stappen om de AEM externe account te configureren:
 
 1. Klik op de knop **[!UICONTROL Explorer]**.
 

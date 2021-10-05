@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
 workflow-type: tm+mt
 source-wordcount: '3023'
 ht-degree: 0%
@@ -119,7 +119,7 @@ Begin door het gegevensbestand te bepalen van Adobe Campaign dat de configuratie
 
 ### Configuratie starten {#start-configuration}
 
-Standaard wordt de **stat** module gestart voor elke instantie. Wanneer de instanties op de zelfde machine worden mutualiseerd, of wanneer de instanties het zelfde IP adres delen, wordt één enkele statistiekenserver gebruikt: de andere moeten worden uitgeschakeld .
+Standaard wordt de **stat** module gestart voor elke instantie. Wanneer de instanties op de zelfde machine worden samengevoegd, of wanneer de instanties het zelfde IP adres delen, wordt één enkele statistiekserver gebruikt: de andere moeten worden uitgeschakeld .
 
 ### Definitie van de serverpoort {#definition-of-the-server-port}
 

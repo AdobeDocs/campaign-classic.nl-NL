@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Updates documentatie Adobe Campaign Classic
+title: Updates van Adobe Campaign Classic v7-documentatie
 description: Deze pagina bevat een overzicht van alle nieuwe functies en updates in de documentatie van Adobe Campaign Classic
 feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: cee019432c64eaaefac86a27b731355242fd1555
 workflow-type: tm+mt
-source-wordcount: '4513'
-ht-degree: 100%
+source-wordcount: '4560'
+ht-degree: 98%
 
 ---
 
@@ -21,6 +21,22 @@ Deze pagina bevat een overzicht van alle nieuwe functies en documentatie-updates
 
 Raadpleeg de [Opmerkingen bij de release van Adobe Campaign Classic](../../rn/using/latest-release.md) voor aan de release gerelateerde updates.
 
+## Oktober 2021{#oct-2021}
+
+Bestaande technologieën zijn gegroepeerd in de nieuwe sectie **TechNote**.
+
+De **pagina voor het aanpassen van de hardwaregrootte** is bijgewerkt en toegevoegd aan de sectie **TechNotes**. [Meer informatie](../../technotes/using/hardware-sizing.md)
+
+## September 2021{#sept-2021}
+
+**Documentatie-updates die bij de 21.1.4-release worden geleverd**
+
+Het diagramtype **Gauge** is verwijderd.
+
+Screenshots en parameters van rapporten en webapplicaties zijn bijgewerkt na het verwijderen van Adobe Flash.
+
+De [beschrijving van de technische workflow voor facturering](../../production/using/monitoring-processes.md#billing-report) is bijgewerkt met een nieuwe hulplijn.
+
 ## Augustus 2021{#aug-2021}
 
 Nieuwe workflowactiviteit toegevoegd: Databron wijzigen - [Meer informatie](../../workflow/using/change-data-source.md)
@@ -28,10 +44,6 @@ Nieuwe workflowactiviteit toegevoegd: Databron wijzigen - [Meer informatie](../.
 Toepassingsbadges zijn toegevoegd aan de documentatiepagina&#39;s: **Is alleen van toepassing op v7** voor Campaign Classic v7-mogelijkheden, en **is van toepassing op v7 en v8** voor algemene mogelijkheden.
 
 Er is een opmerking toegevoegd over de integratie tussen Campaign en AEM Assets, die vanaf Adobe Experience Manager 6.4 is buiten gebruik is gesteld. [Meer informatie](../../integrations/using/configuring-access-to-assets.md)
-
-Screenshots en parameters van rapporten en webapplicaties zijn bijgewerkt na het verwijderen van Adobe Flash.
-
-Het diagramtype **Gauge** is verwijderd.
 
 
 ## Juli 2021 {#july-2021}
@@ -270,7 +282,7 @@ De pagina Privacybeheer in Campaign Classic is bijgewerkt met informatie over he
 
 De overzichtspagina van privacybeheer is bijgewerkt met informatie over de Thaise wet inzake de bescherming van persoonsgegevens (PDPA) en de Braziliaanse Lei Geral de Proteção de Dados (LGPD). [Meer informatie](../../platform/using/privacy-and-recommendations.md)
 
-Er is informatie toegevoegd aan de logboeken van subworkflows en aan het gedrag in geval van fouten. [Meer informatie](../../workflow/using/sub-workflow.md)
+Er is informatie toegevoegd aan de logboeken van subworkflows en aan het gedrag in geval van een fout. [Meer informatie](../../workflow/using/sub-workflow.md)
 
 Er zijn best practices toegevoegd in de **[!UICONTROL Scheduler]**-activiteitensectie. [Meer informatie](../../workflow/using/scheduler.md)
 
@@ -380,7 +392,7 @@ Verbeteringen voor de Hadoop FDA-connector - [Meer informatie](../../installatio
 
 De handleidingen inzake [installatie](../../installation/using/general-architecture.md), [productie](../../production/using/foreword.md) en [configuratie](../../configuration/using/additional-parameters.md) zijn bijgewerkt met de nieuwe systeemeenheid die door het opstarten van de service nlserver wordt gebruikt. U kunt /etc/init.d/nlserver6 nog steeds gebruiken, maar Adobe raadt u aan de opdracht systemctl nu te gebruiken voor interactie met de service nlserver.
 
-De installatiehandleiding is bijgewerkt en gesynchroniseerd met de nieuwste versie van de compatibiliteitsmatrix. Er zijn nieuwe ondersteunde systemen toegevoegd. Informatie over verouderde en niet-ondersteunde systemen is verwijderd. [Meer informatie](../../installation/using/general-architecture.md)
+De installatiehandleiding is bijgewerkt en gesynchroniseerd met de nieuwste versie van de compatibiliteitsmatrix. Er zijn nieuwe ondersteunde systemen toegevoegd. Voorvallen van verouderde en niet-ondersteunde systemen zijn verwijderd. [Meer informatie](../../installation/using/general-architecture.md)
 
 De compatibiliteitsmatrix is bijgewerkt met de Hadoop 3.0- en Snowflake FDA-connectoren. [Meer informatie](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 

@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 0cfe8439007b56014eba497c511904c4f11b39ce
+source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 2%
@@ -69,7 +69,7 @@ Met het hulpprogramma Bulk Load kunt u sneller overdragen, wat wordt bereikt met
 
 1. Download Windows 64-bits archief (x86_64) van deze [pagina](https://cloud.google.com/sdk/docs/downloads-versioned-archives) en extraheer het archief naar de corresponderende directory.
 
-1. Voer het script `google-cloud-sdk\install.sh` uit. U moet de instelling van een padvariabele accepteren.
+1. Voer het script `google-cloud-sdk\install.sh` uit. U moet het plaatsen van wegvariabele goedkeuren.
 
 1. Controleer na de installatie of de padvariabele `...\google-cloud-sdk\bin` is ingesteld. Als dat niet het geval is, voegt u het handmatig toe.
 

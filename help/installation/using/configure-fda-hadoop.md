@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 1%
@@ -84,12 +84,12 @@ De aansluiting ondersteunt ook de volgende opties voor Hive:
 
 ## Hadoop 2.1 configureren {#configure-access-hadoop-2}
 
-Als u verbinding moet maken met Hadoop 2.1, voert u de onderstaande stappen uit voor [Windows](#for-windows) of [Linux](#for-linux).
+Als u verbinding moet maken met Hadoop 2.1, voert u de hieronder beschreven stappen uit voor [Windows](#for-windows) of [Linux](#for-linux).
 
 ### Hadoop 2.1 voor Windows {#for-windows}
 
 1. Installeer ODBC- en [Azure HD Insight](https://www.microsoft.com/en-us/download/details.aspx?id=40886)-stuurprogramma&#39;s voor Windows.
-1. Creeer DSN (de Naam van de Gegevensbron) door het hulpmiddel van de Beheerder van ODBC DataSource in werking te stellen. Een steekproef van DSN van het Systeem voor Hive wordt verstrekt voor u om te wijzigen.
+1. Creeer DSN (de Naam van de Gegevensbron) door het hulpmiddel van de Beheerder van de Gegevensbron in werking te stellen ODBC. Een steekproef van DSN van het Systeem voor Hive wordt verstrekt voor u om te wijzigen.
 
    ```
    Description: vorac (or any name you like)

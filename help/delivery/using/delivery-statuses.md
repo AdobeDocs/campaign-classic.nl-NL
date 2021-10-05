@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '630'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 ajouter screenshot -->
 
-Zodra een levering is verzonden, toont het leveringsdashboard een status die u toestaat om te controleren als het verzenden met succes is geweest. Mogelijke statussen worden beschreven in de onderstaande sectie.
+Zodra een levering is verzonden, toont het leveringsdashboard een status die u toestaat om te controleren als het verzenden succesvol was. Mogelijke statussen worden beschreven in de onderstaande sectie.
 
 ![](assets/delivery-status.png)
 
@@ -97,7 +97,7 @@ De status **[!UICONTROL Pending]** kan eerst betekenen dat uw levering gepland i
 
 Als uw levering niet wordt verzonden en zijn status **[!UICONTROL Pending]** blijft, kan het het resultaat van zijn:
 
-* MTA (de Agent van de Transfert van het Bericht), die modules en processen op de leveringsserver in werking stelt en die e-mail het verzenden beheert, kan niet zijn begonnen, of moet opnieuw worden begonnen.
+* MTA (de Agent van de Overdracht van het Bericht), die modules en processen op de leveringsserver in werking stelt en die e-mail het verzenden beheert, kan niet zijn begonnen, of kan moeten opnieuw worden begonnen.
 
    Voer de volgende stappen uit om dit te controleren en de module indien nodig te starten:
 

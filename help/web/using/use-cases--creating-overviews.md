@@ -6,9 +6,9 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -175,7 +175,7 @@ Deze twee elementen worden in dezelfde container gegroepeerd om in het overzicht
 
 1. Pas **dottedFilter** toe.
 
-   Deze stijl wordt vermeld in **[!UICONTROL Single-page Web applicatio]** eerder geselecteerde malplaatje.
+   Deze stijl wordt vermeld in **[!UICONTROL Single-page Web application]** eerder geselecteerde malplaatje.
 
    ![](assets/s_ncs_configuration_webapp_container002.png)
 

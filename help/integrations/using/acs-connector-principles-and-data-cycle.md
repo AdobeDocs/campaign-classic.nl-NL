@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1988'
 ht-degree: 0%
@@ -149,7 +149,7 @@ De volgende replicatiewerkschema&#39;s zijn beschikbaar als &quot;klaar om&quot;
 * **[!UICONTROL `[ACS] Service replication`]** (newServiceReplication): deze incrementele werkstroom repliceert de gekozen services naar Campaign Standard. Zie het gebruiksgeval [Webtoepassingen synchroniseren](../../integrations/using/synchronizing-web-applications.md).
 * **[!UICONTROL `[ACS] Landing pages replication`]** (newLandingPageReplication): deze incrementele workflow repliceert de gekozen webtoepassingen naar Campaign Standard. De Campagne v7-webtoepassingen worden weergegeven als bestemmingspagina&#39;s in Campaign Standard. Zie het gebruiksgeval [Webtoepassingen synchroniseren](../../integrations/using/synchronizing-web-applications.md).
 * **[!UICONTROL `[ACS] New replication`]** (newReplication): deze incrementele workflow is een voorbeeld dat kan worden gebruikt om een aangepaste tabel te repliceren. Zie [Geavanceerde implementatie](#advanced-implementation).
-* **[!UICONTROL `[ACS] Delivery-mesage replication`]** (newDlvMsgQualification): deze incrementele workflow repliceert leveringsberichten van Campaign Standard naar Campaign v7.
+* **[!UICONTROL `[ACS] Delivery-message replication`]** (newDlvMsgQualification): deze incrementele workflow repliceert leveringsberichten van Campaign Standard naar Campaign v7.
 * **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication): deze incrementele workflow bevat een kopie van bezorgings-id&#39;s, e-mailbrede logboeken en e-mailtrackinglogboeken van Campaign Standard naar Campaign v7. Er wordt alleen rekening gehouden met leveringen die door Campaign Standard zijn verzonden naar profielen die onderdeel zijn van de tabel nms:ontvangers in Campagne v7.
 * **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication): deze incrementele workflow bevat een kopie van bezorgings-id&#39;s, e-mailbrede logboeken en e-mailtrackinglogboeken van Campaign Standard naar Campaign v7. Er wordt alleen rekening gehouden met leveringen die van Campaign Standard naar profielen worden verzonden die deel uitmaken van een specifieke tabel (om te definiëren, anders dan nms:ontvangers) van Campagne v7.
 

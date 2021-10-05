@@ -8,23 +8,23 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 5eea976f86b62987c38c0fcd893bf3532a2cf301
+source-git-commit: ca2349abce07c890e9d87d07e26dbca4f13d2fb6
 workflow-type: tm+mt
 source-wordcount: '707'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # Adobe I/O configureren voor Adobe Experience Cloud Triggers {#configuring-adobe-io}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 >[!CAUTION]
 >
 >Als u een oudere versie van de integratie van Trekkers door authentificatie Auth gebruikt, **moet u naar Adobe I/O bewegen zoals hieronder beschreven**.
 >Tijdens deze overgang naar [!DNL Adobe I/O] kunnen sommige inkomende triggers verloren gaan.
 >
->De verouderde Auth authentificatiemodus met Campagne [is gepensioneerd](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) op **18 Augustus 2021**. De ontvangen milieu&#39;s profiteren van een uitbreiding tot **30 November, 2021**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot 30 november 2021. U moet [AppID van OAuth application](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) aan Adobe verstrekken.
+>De verouderde Auth authentificatiemodus met Campagne [is gepensioneerd](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) op **Oktober 20, 2021**. De ontvangen milieu&#39;s profiteren van een uitbreiding tot **23 Febuary, 2022**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot februari 2022. U moet [AppID van OAuth application](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) aan Adobe verstrekken.
 
 ## Vereisten {#adobe-io-prerequisites}
 

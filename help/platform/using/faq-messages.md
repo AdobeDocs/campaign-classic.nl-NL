@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -96,7 +96,7 @@ Voor elke URL van het bericht kunt u kiezen of u bijvoorbeeld het bijhouden wilt
 
 ### Waar heb ik toegang tot leverings- en trackinglogboeken? {#where-can-i-access-delivery-and-tracking-logs-}
 
-Ontdek hoe u uw leveringen kunt bijhouden en het gedrag van de ontvangers kunt begrijpen [op deze pagina](../../delivery/using/delivery-dashboard.md).
+Leer hoe u uw leveringen kunt bijhouden en het gedrag van de ontvangers [op deze pagina](../../delivery/using/delivery-dashboard.md) kunt begrijpen.
 
 ### Waar kan ik leveringsrapporten krijgen? {#where-can-i-get-delivery-reports-}
 

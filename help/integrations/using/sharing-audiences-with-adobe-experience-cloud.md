@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 4%
@@ -34,8 +34,8 @@ Met Adobe Campaign kunt u soorten publiek en segmenten delen met Adobe Experienc
 
 Deze integratie ondersteunt twee typen Adobe Experience Cloud-id&#39;s:
 
-* **Bezoeker-id**: dit type identificator maakt Adobe Experience Cloud-bezoekers in overeenstemming met Adobe Campaign-ontvangers.
-* **Opgegeven ID**: dit type id vergelijkt alle soorten gegevens met elementen uit de Adobe Campaign-database. Het wordt in Adobe Campaign vertegenwoordigd als een vooraf gedefinieerde afstemmingssleutel.
+* **Bezoeker-id**: dit type id zorgt ervoor dat Adobe Experience Cloud-bezoekers zich kunnen verzoenen met Adobe Campaign-ontvangers.
+* **Opgegeven ID**: dit type id zorgt ervoor dat alle typen gegevens overeenkomen met elementen uit de Adobe Campaign-database. Het wordt in Adobe Campaign vertegenwoordigd als een vooraf gedefinieerde afstemmingssleutel.
 
    >[!NOTE]
    >

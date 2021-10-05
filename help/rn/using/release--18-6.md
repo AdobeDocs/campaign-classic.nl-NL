@@ -9,7 +9,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a849ce10-0972-4c42-b10e-67a81c79bc65
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: c281d437907efb4d514bec7cacc698c383f3fe53
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 7%
@@ -20,7 +20,7 @@ ht-degree: 7%
 
 ![](../../assets/v7-only.svg)
 
-## Release 18.6.2 - Build 8949{#release-18-6-3-build-8949}
+## Release 18.6.2 - versie 8949{#release-18-6-3-build-8949}
 
 22 augustus 2018
 
@@ -76,7 +76,7 @@ Raadpleeg de volgende artikelen voor meer informatie over querybinding:
 * [https://docs.teradata.com/reader/cY5~BoeEUFWjgN2kBnH3Vw/a5G1~izve68yTMa24kVjVw](https://docs.teradata.com/reader/cY5B%7EoeEUFWjgN2kBnH3Vw/a5G1iz%7Eve68yTMa24kVjVw)
 * [https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/qVNfdszBssrZ7ttrE7AtmQ)
 
-## Release 18.6 - Build 8947{#release-18-6-build-8947}
+## Release 18.6 - versie 8947{#release-18-6-build-8947}
 
 25 juni 2018
 

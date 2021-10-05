@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 5%
@@ -28,7 +28,7 @@ ht-degree: 5%
 
 In dit geval wordt beschreven hoe de **[!UICONTROL Merge]**-functionaliteit in de **[!UICONTROL Deduplication]**-activiteit moet worden gebruikt.
 
-Raadpleeg [deze sectie](deduplication.md#merging-fields-into-single-record) voor meer informatie over deze lettertypen.
+Raadpleeg [deze sectie](deduplication.md#merging-fields-into-single-record) voor meer informatie over deze functionaliteit.
 
 De activiteit **[!UICONTROL Deduplication]** wordt gebruikt voor het verwijderen van dubbele rijen uit een gegevensreeks. In dit geval worden de hieronder weergegeven gegevens gedupliceerd op basis van het veld E-mail.
 

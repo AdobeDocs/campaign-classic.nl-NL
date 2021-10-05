@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 0%
@@ -246,7 +246,7 @@ Als een werkstroom wordt gepauzeerd, worden de werktabellen standaard niet gewis
 
 * De werkschema&#39;s die sinds meer dan 7 dagen zijn gepauzeerd verschijnen als waarschuwing in het controledashboard (en controle API) en een bericht wordt verzonden naar de supervisorgroep.
 * Dit gebeurt elke week wanneer de technische workflow **[!UICONTROL cleanupPausedWorkflows]** wordt geactiveerd. Raadpleeg [deze sectie](delivery.md) voor meer informatie over de workflow.
-* Na 4 meldingen (dat wil zeggen een maand in de pauzestatus) wordt de workflow onvoorwaardelijk beëindigd. Er wordt een logboek weergegeven in de workflow nadat het is gestopt. De tabellen worden gewist bij de volgende uitvoeringsworkflow **[!UICONTROL cleanup]**
+* Na 4 meldingen (dat wil zeggen een maand in de pauzestatus) wordt de workflow onvoorwaardelijk gestopt. Er wordt een logboek weergegeven in de workflow nadat het is gestopt. De tabellen worden gewist bij de volgende uitvoeringsworkflow **[!UICONTROL cleanup]**
 
 Deze periodes kunnen via de optie NmsServer_PausedWorkflowPeriod worden gevormd.
 

@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '2369'
 ht-degree: 7%
@@ -17,7 +17,7 @@ ht-degree: 7%
 
 ![](../../assets/v7-only.svg)
 
-## Release 18.10.6 - Build 8985{#release-18-10-6-build-8985}
+## Release 18.10.6 - versie 8985{#release-18-10-6-build-8985}
 
 12 juli 2019
 
@@ -29,7 +29,7 @@ ht-degree: 7%
 * Verbeterde machtigingen om het pakket met de beveiligingszone uit te voeren wanneer u een interne account gebruikt.
 * Probleem verholpen waarbij fouten in de onderliggende logboeken konden optreden. (NEO-8978)
 
-## Release 18.10.5 - Build 8984{#release-18-10-5-build-8984}
+## Release 18.10.5 - versie 8984{#release-18-10-5-build-8984}
 
 23 april 2019
 
@@ -39,7 +39,7 @@ ht-degree: 7%
 * Verwijderd de recordlimiet van 10.000 in WorkflowHeatmap om een probleem met ontbrekende gegevens op te lossen. (NEO-12329)
 * Probleem verholpen bij het gebruik van de optie &quot;Alle aanvullende gegevens uit de hoofdset behouden&quot; in een verrijkingswerkstroom. (NEO-13291)
 
-## Release 18.10.4 - Build 8983{#release-18-10-4-build-8983}
+## Release 18.10.4 - versie 8983{#release-18-10-4-build-8983}
 
 15 april 2019
 
@@ -52,7 +52,7 @@ ht-degree: 7%
 * In de integratie Analytics is het nu toegestaan AAM segmentgegevens op te halen met het teken %. (NEO-12025)
 * Probleem verholpen waarbij Tomcat vastliep tijdens het verzenden van pushberichten via HTTP2. (NEO-12701)
 
-## Release 18.10.3 - Build 8981{#release-18-10-3-build-8981}
+## Release 18.10.3 - versie 8981{#release-18-10-3-build-8981}
 
 29 januari 2019
 
@@ -76,7 +76,7 @@ ht-degree: 7%
 * Probleem verholpen waarbij een fout met tekens werd gegenereerd bij het verzenden van pushberichten op een mobiele toepassing.
 * Probleem verholpen waarbij werd voorkomen dat in een externe account van het type Midden-sourcing werd overgeschakeld van de FDA naar de SOAP-synchronisatiemethode.
 
-## Release 18.10.2 - Build 8978{#release-18-10-2-build-8978}
+## Release 18.10.2 - versie 8978{#release-18-10-2-build-8978}
 
 6 december 2018
 
@@ -91,14 +91,14 @@ ht-degree: 7%
 * Probleem verholpen met uitputting van id&#39;s bij gebruik van zaadadressen in een levering. (NEO-11842)
 * Oplossing voor een probleem met de blokkering van clients dat zich kon voordoen bij het gebruik van complexe workflows. (NEO-11847)
 * Oplossing voor een weergaveprobleem bij het gebruik van een verdeling van waarden met een 1:N-koppeling. (NEO-11820)
-* Probleem verholpen met een Oracle-fout in Workflow Heatmap.
+* Probleem verholpen met een Oracle-fout in WorkflowHeatmap.
 * Probleem opgelost bij het toevoegen van een voorstel in een verrijkingsactiviteit.
 * Probleem verholpen met een verbinding voor SQL-gegevensbeheer.
 * Probleem verholpen met het genereren van tabelnamen voor tijdelijke werkstromen in het geval van negatieve id&#39;s.
 * Probleem opgelost met de berekening van de werkstroomduur in Workflow HeatMap.
 
 
-## Release 18.10 - Build 8977{#release-18-10-build-8977}
+## Release 18.10 - versie 8977{#release-18-10-build-8977}
 
 5 nov. 2018
 
@@ -211,7 +211,7 @@ Deze indexveranderingen kunnen tot een toename van de tijd leiden die wordt vere
 * Probleem verholpen waarbij sommige trackinglogboeken werden gekoppeld aan de verkeerde levering. (NEO-11412)
 * Probleem verholpen waarbij sommige delen van de leveringslogs langer dan verwacht in behandeling zouden kunnen blijven. (NEO-11336)
 * Oplossing voor een fout die optrad bij het bewerken van een query om een coupon aan een levering toe te voegen. (NEO-11037)
-* Probleem verholpen in rapporten die ervoor zorgden dat de grafieken altijd de som van de waarden berekenden, ongeacht welke geaggregeerde operator werd geselecteerd. (NEO-10913)
+* Probleem verholpen in rapporten die ervoor zorgden dat de grafieken altijd de som van de waarden berekenden, ongeacht de geaggregeerde operator die werd geselecteerd. (NEO-10913)
 * Aangezien de &quot;request.scheme&quot;functie wordt afgekeurd, is het verwijderd uit de documentatie JSAPI. (NEO-10828)
 * Probleem verholpen waardoor sommige gebruikers met specifieke configuraties voor tijdzones zich niet konden aanmelden bij Adobe Campaign. (NEO-10712)
 * Probleem verholpen die optrad bij het instellen van een externe account voor een mobiel kanaal met behulp van de uitgebreide algemene SMPP-connector: als u het gebruiken van verschillende parameters voor de ontvanger specificeerde, zou de zender die parameters verkeerd gebruiken in plaats van zijn eigen parameters.

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Deze filters zijn ingegaan op het belangrijkste **element** niveau van de schema
    </sysFilter>
    ```
 
-* Lezen- en schrijfmachtigingen beperken:
+* Rechten voor LEZEN EN SCHRIJVEN beperken:
 
    Hier, wordt de filter gebruikt om zowel LEZEN als SCHRIJVEN toestemmingen op het schema voor alle exploitanten toe te staan. Alleen de **internal**-account, vertegenwoordigd door de expressie &quot;$(loginId)!=0&quot;, heeft deze toestemmingen.
 

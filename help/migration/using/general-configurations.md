@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: eef2a12738ce299686857720c3dc8456ffdd0c80
 workflow-type: tm+mt
-source-wordcount: '2784'
+source-wordcount: '2664'
 ht-degree: 0%
 
 ---
@@ -620,7 +620,7 @@ Alle standaardrapporten maken momenteel gebruik van de renderingengine v6.x. Als
 
 ![](assets/migration_reports_1.png)
 -->
-Als u van de nieuwe rapportfuncties wilt profiteren, moet u rapporten opnieuw publiceren. Hiervoor bewerkt u het rapport **[!UICONTROL Properties]**, klikt u op **[!UICONTROL Rendering]** en selecteert u de v.6.x-renderingengine. Controleer in dit geval al uw scripts en wijzig deze zo nodig. Als u een specifiek script voor Open Office hebt toegevoegd voor het exporteren van PDF-bestanden, werkt dit niet meer met de nieuwe PDF-exportengine (PhantomJS).
+Als u van de nieuwe rapportfuncties wilt profiteren, moet u rapporten opnieuw publiceren. Controleer in dit geval al uw scripts en wijzig deze zo nodig. Als u een specifiek script voor Open Office hebt toegevoegd voor het exporteren van PDF-bestanden, werkt dit niet meer met de nieuwe PDF-exportengine (PhantomJS).
 
 ## Webapplicaties {#web-applications}
 
@@ -631,10 +631,7 @@ Er zijn twee families voor webtoepassingen:
 
 ### Geïdentificeerde webtoepassingen {#identified-web-applications}
 
-Enkel zoals voor rapporten ([leer meer](#reports)), als u JavaScript had toegevoegd, moet u controleren en aanpassen indien nodig. Als u wilt profiteren van de blauwe banner v7 (met de blauwe tabbladen), moet u de webtoepassing opnieuw publiceren. Als uw JavaScript-code werkt, kunt u de v6.x-renderingengine selecteren. Als dit niet het geval is, kunt u de v6.0-renderingengine gebruiken terwijl u uw code aanpast en vervolgens de v6.x-renderingengine gebruiken.
-
->[!NOTE]
-De stappen voor het selecteren van de renderingengine zijn gelijk aan die voor het selecteren van rapporten. Zie [Persoonlijke rapporten](#personalized-reports).
+Enkel zoals voor rapporten ([leer meer](#reports)), als u JavaScript had toegevoegd, moet u controleren en aanpassen indien nodig. Als u wilt profiteren van de blauwe banner v7 (met de blauwe tabbladen), moet u de webtoepassing opnieuw publiceren.
 
 Verbindingsmethoden voor webtoepassingen zijn gewijzigd in v7. Als u verbindingsproblemen tegenkomt in uw geïdentificeerde webtoepassingen, moet u tijdelijk de **allowUserPassword** en **sessionTokenOnly** opties in het **serverConf.xml** dossier activeren. Na de postupgrade wijzigt u de volgende waarden voor opties:
 
@@ -664,10 +661,7 @@ sessionTokenOnly="false"
 
 ### Anonieme webtoepassingen {#anonymous-web-applications}
 
-Als u problemen ondervindt, publiceert u de webtoepassing opnieuw. Als het probleem zich blijft voordoen, kunt u de v6.0-renderingengine selecteren. Als u JavaScript niet hebt toegevoegd, kunt u de v6.x-renderingengine selecteren en profiteren van de nieuwe functies.
-
->[!NOTE]
-De stappen voor het selecteren van de renderingengine zijn gelijk aan die voor het selecteren van rapporten. Zie [Persoonlijke rapporten](#personalized-reports).
+Als u problemen ondervindt, publiceert u de webtoepassing opnieuw.
 
 ## Rood-Hoed {#red-hat}
 

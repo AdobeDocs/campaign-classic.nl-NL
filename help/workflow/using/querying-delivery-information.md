@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 1%
@@ -149,7 +149,7 @@ U kunt dit voorbeeld maken door de volgende stappen toe te passen:
 
 De uitgaande overgang bevat ontvangers die de afgelopen 7 dagen geen e-mail hebben geopend.
 
-Als u daarentegen ontvangers wilt filteren die ten minste één e-mail hebben geopend, moet uw query er als volgt uitzien. Houd er rekening mee dat in dit geval de **[!UICONTROL Filtering dimension]** moet worden ingesteld op **[!UICONTROL Tracking logs (Recipients)]**.
+Als u daarentegen ontvangers wilt filteren die ten minste één e-mail hebben geopend, moet uw query er als volgt uitzien. Houd er rekening mee dat in dit geval **[!UICONTROL Filtering dimension]** moet worden ingesteld op **[!UICONTROL Tracking logs (Recipients)]**.
 
 ![](assets/query_open_5.png)
 
@@ -179,7 +179,7 @@ In het volgende voorbeeld ziet u hoe u zich kunt richten op profielen die de lev
 
    ![](assets/s_advuser_query_sample1.6.png)
 
-## Het gedrag van ontvangers filteren na levering {#filtering-recipients--behavior-folllowing-a-delivery}
+## Gedrag van ontvangers filteren na levering {#filtering-recipients--behavior-folllowing-a-delivery}
 
 In een werkstroom kunt u met de vakken **[!UICONTROL Query]** en **[!UICONTROL Split]** een gedrag na een vorige levering selecteren. Deze selectie wordt uitgevoerd via het filter **[!UICONTROL Delivery recipient]**.
 

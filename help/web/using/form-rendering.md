@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9b914099f6755d6ae83f98697a3a38f8cfa625e1
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## De renderingsjabloon van het formulier selecteren {#selecting-the-form-rendering-template}
 
-Met de formulierinstellingen kunt u de sjabloon selecteren waarmee de pagina&#39;s worden gegenereerd. Klik op de knop **[!UICONTROL Settings]** op de werkbalk met formulierdetails en selecteer het tabblad **[!UICONTROL Rendering]** om deze weer te geven. Er is standaard een aantal sjablonen (stijlpagina&#39;s) beschikbaar.
+Met de formulierinstellingen kunt u de sjabloon selecteren waarmee de pagina&#39;s worden gegenereerd. Klik op de knop **[!UICONTROL Properties]** op de werkbalk met formulierdetails en selecteer het tabblad **[!UICONTROL Rendering]** om deze weer te geven. Er is standaard een aantal sjablonen (stijlpagina&#39;s) beschikbaar.
 
 ![](assets/s_ncs_admin_survey_rendering_select.png)
 

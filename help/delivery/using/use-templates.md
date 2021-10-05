@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Voer de onderstaande stappen uit om adressen in de Campagne-interface te configu
 
 1. Gebruik in het veld **[!UICONTROL From]** een naam die gemakkelijk kan worden herkend door de ontvangers, zoals de naam van uw merk, om de openingsfrequentie van uw leveringen te verhogen. Om de ervaring van de ontvanger verder te verbeteren, kunt u de naam van een persoon toevoegen, bijvoorbeeld &quot;Emma van Megastore&quot;.
 
-1. In de **[!UICONTROL Reply address text]** dossiers, wordt het adres van de afzender gebruikt door gebrek voor antwoorden. Adobe raadt echter aan een bestaand reëel adres te gebruiken, zoals de klantenservice van uw merk. In dit geval, als een ontvanger een antwoord verzendt, zal de klantenzorg het kunnen behandelen.
+1. In de **[!UICONTROL Reply address text]** gebieden, wordt het adres van de afzender gebruikt door gebrek voor antwoorden. Adobe raadt echter aan een bestaand reëel adres te gebruiken, zoals de klantenservice van uw merk. In dit geval, als een ontvanger een antwoord verzendt, zal de klantenzorg het kunnen behandelen.
 
 ### Een controlegroep instellen
 

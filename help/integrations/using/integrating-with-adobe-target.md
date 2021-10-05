@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 2e29d090-b87b-4cff-a703-58e1da082f04
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: 0996cc313be93300bce2f094c97e45a794cd459e
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '171'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,6 @@ Dankzij de integratie tussen Adobe Campaign en Adobe Target (Classic en Standard
 
 Het operationele beginsel is als volgt: wanneer een ontvanger een e-mailbericht opent dat via Adobe Campaign is verzonden, kunt u met een aanroep naar Adobe Target een dynamische versie van de inhoud weergeven. Deze dynamische versie wordt berekend op basis van de regels die vooraf zijn opgegeven bij het maken van de e-mail.
 
-Meer informatie over de integratie van Adobe Campaign en Adobe Target met [deze vier tips en trucs](https://business.adobe.com/content/dam/dx/us/en/products/campaign/pdfs/Adobe_Campaign_for_Target_Tips_and_Tricks.pdf).
 >[!NOTE]
 >
 >De integratie ondersteunt alleen statische afbeeldingen. De rest van de inhoud kan niet worden gepersonaliseerd.
@@ -30,7 +29,7 @@ Adobe Target kan verschillende typen gegevens gebruiken:
 
 * Gegevens uit de Adobe Campaign datamart
 * Segmenten die zijn gekoppeld aan de bezoekersidentiteitskaart in Adobe Target, indien voor de gebruikte gegevens geen wettelijke beperkingen gelden
-* Adobe Target-gegevens: gebruikersagent, IP-adres, geolocalisatiegegevens
+* Adobe Target-gegevens: gebruikersagent, IP-adres, geolocatiegegevens
 
 >[!NOTE]
 >

@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
 workflow-type: tm+mt
 source-wordcount: '3007'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 87%
 
 ![](../../assets/v7-only.svg)
 
-## ![](assets/do-not-localize/limited_2.png) Release 20.2.5 - Build 9188 {#release-20-2-5-build-9188}
+## ![](assets/do-not-localize/limited_2.png) Release 20.2.5 - versie 9188 {#release-20-2-5-build-9188}
 
 _15 april 2021_
 
@@ -46,7 +46,7 @@ _31 maart 2021_
 * Probleem opgelost waarbij de factureringsworkflow mogelijk mislukte bij het gebruik van een aangepaste doeltoewijzing. De primaire sleutel van het aangepaste schema wordt opgeslagen in de kolom &quot;sourceId&quot;, die alleen gehele getallen toestaat. Het staat nu geheel zowel als koordwaarden toe. (NEO-25914, NEO-28146)
 * Er is een regressie opgelost die verhinderde dat bepaalde onderdelen van de console konden worden gebruikt, zoals de datumkiezer en afbeeldingsbeheer in verzendingen. (NEO-31453)
 
-## ![](assets/do-not-localize/red_2.png) Release 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
+## ![](assets/do-not-localize/red_2.png) Release 20.2.4 - versie 9187 {#release-20-2-4-build-9187}
 
 _15 april 2021_
 
@@ -65,7 +65,7 @@ _22 december 2020_
 >
 > * Deze release wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **30 juni 2021** verbinding te kunnen maken met Campaign.  [Meer informatie](../../technotes/using/ims-updates.md)
 > * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
-> * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overstappen op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde Auth authentificatiemodus met Campagne [is gepensioneerd](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) op **18 Augustus 2021**. De ontvangen milieu&#39;s profiteren van een uitbreiding tot **30 November, 2021**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot 30 november 2021. U moet [AppID van de toepassing OAuth ](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) aan Adobe verstrekken.
+> * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overstappen op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde Auth authentificatiemodus met Campagne [is gepensioneerd](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) op **September 2021**. De ontvangen milieu&#39;s profiteren van een uitbreiding tot **23 Febuary, 2022**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot februari 2022. U moet de [AppID van de OAuth-applicatie](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) aan Adobe verstrekken.
 
 
 **Verbeteringen**
@@ -85,20 +85,20 @@ _22 december 2020_
 
 ![](assets/do-not-localize/cp-icon.png) **Release van nieuw Configuratiescherm in oktober** met domeinconfiguratie met CNAME-records en nieuwe mogelijkheden voor databasecontrole. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=nl).
 
-## ![](assets/do-not-localize/red_2.png) Release 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
+## ![](assets/do-not-localize/red_2.png) Release 20.2.3 - versie 9182 {#release-20-2-3-build-9182}
 
 _11 september 2020_
 
 * Oplossing voor een regressie die ertoe leidde dat een leveringsvoorbereiding werd geblokkeerd als gevolg van één foutieve functie in het leveringsonderdeel, wat tot geheugenoverbelasting leidde. (NEO-27346)
 * Probleem verholpen met een post-upgrade waarbij Apache en de webserver werden uitgeschakeld voordat de webapplicatie opnieuw werd gepubliceerd. (NEO-27155)
-* Oplossing voor een regressie bij HTML-sjabloonbeheer die ertoe leidde dat tracking-URL&#39;s zichtbaar werden vanwege een foute interpretatie van tabs. (NEO-25909)
+* Oplossing voor een regressie in HTML-sjabloonbeheer die ertoe leidde dat URL&#39;s werden bijgehouden omdat tabs onjuist werden geïnterpreteerd. (NEO-25909)
 * Probleem verholpen met de opschoningsworkflow voor databases die zou kunnen mislukken als gevolg van een niet-beheerde gegevensbron. (NEO-23160, NEO-23364)
 * Tijdens de opschoningsworkflow worden nu verlopen lijsten in batches van 100 verwijderd in plaats van één voor één.
 * Oplossing voor een regressie waardoor u niet de interne naam van een extern account kon wijzigen. (NEO-27323)
 * Oplossing voor een regressie tijdens een post-upgrade die een onjuiste start van nlserver (foutenlogboeken) veroorzaakte.
 * Het updatebeheer voor gedeeld geheugen is verbeterd. De extra stappen die zijn vereist in 20.2, zijn niet meer nodig.
 
-## ![](assets/do-not-localize/red_2.png) Release 20.2.2 - Build 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/red_2.png) Release 20.2.2 - versie 9180 {#release-20-2-2-build-9180}
 
 _woensdag 22 juli 2020_
 
@@ -123,7 +123,7 @@ _woensdag 22 juli 2020_
 
 ![](assets/do-not-localize/cp-icon.png) **Release van nieuw configuratiescherm in juni** met controle van actieve profielen, controle van de leverbaarheid van subdomeinen en beheer van GPG-sleutels. [Meer informatie](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/red_2.png) Release 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
+## ![](assets/do-not-localize/red_2.png) Release 20.2.1 - versie 9178 {#release-20-2-1-build-9178}
 
 _8 juni 2020_
 
@@ -321,7 +321,7 @@ Een voorbeeld voor Linux is beschikbaar op deze [pagina](../../configuration/usi
 * Oplossing voor een regressie die ertoe leidde dat de opschoningsworkflow vastliep.
 * Probleem verholpen dat kon optreden wanneer een sjabloon op een uitvoeringsinstantie werd gepubliceerd.
 * Probleem verholpen waardoor de technische workflow van collectPrivacyRequests niet kon worden uitgevoerd. (NEO-20513, NEO-25169)
-* Problemen verholpen die konden optreden wanneer werd geprobeerd verbinding te maken met Audience Manager na een upgrade naar build 9080. (NEO-20511, NEO-25167)
+* Problemen verholpen die zich konden voordoen wanneer werd geprobeerd verbinding te maken met Audience Manager na de upgrade naar 9080. (NEO-20511, NEO-25167)
 * Problemen verholpen die konden optreden bij het exporteren van rapporten in PDF- of XLS-indeling. (NEO-20982, NEO-23493, NEO-23348)
 * Probleem verholpen waarbij een levering twee keer in de leveringslijst kon worden weergegeven nadat deze was verzonden.
 * Probleem met de leveringsvoorbereiding verholpen dat kon optreden wanneer de routeringsconfiguratie was ingesteld om de levering via midsourcing te verzenden.
