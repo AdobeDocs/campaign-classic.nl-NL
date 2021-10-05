@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: f6f1feffbd328f9756c9cd71c4186ba7cd674d76
+source-git-commit: 235e8abcaed2659d745ebfeca24dc2f0278a6e5a
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 85%
+source-wordcount: '600'
+ht-degree: 79%
 
 ---
 
@@ -119,7 +119,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 </tbody>
 </table>
 
-## RDBMS-servers{#RDBMSservers}
+## Relation Database Management Systems (RDBMS){#RDBMSservers}
 
 <table>
 <tbody>
@@ -133,10 +133,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 </td>
 </tr>
 <tr>
-<td>
-<p>PostgreSQL</p>
-<p>Standaarddatabaseserver voor gehoste omgevingen</p>
-</td>
+<td>PostgreSQL</td>
 <td>
 <p>13.x</p>
 <p>12.x</p>
@@ -145,7 +142,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <p>9.6.x</p>
 <p>9.5.x</p>
 <p>9.4.x</p>
-<p>Opmerking: u kunt ook Amazon RDS voor PostgreSQL gebruiken met de hierboven vermelde versies.</p>
+<p><strong>Opmerking:</strong> u kunt ook Amazon RDS voor PostgreSQL gebruiken met de hierboven vermelde versies.</p>
 </td>
 </tr>
 <tr>
@@ -156,7 +153,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 en SP2</p>
-<p>Waarschuwing: Microsoft SQL Server wordt niet als de primaire database ondersteund wanneer de Campaign-server op Linux wordt uitgevoerd. [Meer informatie](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).</p>
+<p><strong>Belangrijk:</strong> Microsoft SQL Server wordt niet ondersteund als de primaire database wanneer de Campagneserver op Linux wordt uitgevoerd. [Meer informatie](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).</p>
 </td>
 </tr>
 </tbody>
@@ -164,7 +161,10 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 
 >[!NOTE]
 >
->Het RDBMS-stuurprogramma moet overeenkomen met de RDBMS-serverversie.
+>* Het RDBMS-stuurprogramma moet overeenkomen met de RDBMS-serverversie.
+>
+>* PostgreSQL is RDBMS voor Gehoste milieu&#39;s.
+
 
 ## CRM-connectoren{#CRMconnectors}
 
