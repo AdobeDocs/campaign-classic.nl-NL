@@ -5,7 +5,7 @@ description: Leer hoe te om de pijpleiding te vormen
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: b8f74c290106d57630c5d486c04b8424132e3297
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -127,7 +127,7 @@ De lijst met optionele parameters is hieronder te vinden:
 
 | Option | Beschrijving |
 |:-:|:-:|
-| appName(Legacy) | AppID van de OAuth-toepassing die is geregistreerd in de Legacy Oath-toepassing waar de openbare sleutel is geüpload. Raadpleeg deze [pagina](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md.) voor meer informatie |
+| appName(Legacy) | AppID van de OAuth-toepassing die is geregistreerd in de Legacy Oath-toepassing waar de openbare sleutel is geüpload. Raadpleeg deze [pagina](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) voor meer informatie |
 | authGatewayEndpoint(Legacy) | URL om gatewaytokens te krijgen. Standaard: ```https://api.omniture.com``` |
 | authPrivateKey(Verouderd) | De persoonlijke sleutel, het openbare deel dat in de Oudere Oath-toepassing wordt geüpload, AES gecodeerd met de optie XtkKey: ```cryptString("PRIVATE_KEY")``` |
 | disableAuth(Legacy) | Schakel authentificatie uit, verbindend zonder gatewaytokens slechts door sommige eindpunten van de ontwikkelingsPijpleiding zal worden goedgekeurd. |
