@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 12b191ffe3d407f1a69393278a7678a14e53d23e
+source-git-commit: 31ff1863623c088d28d9e4d15337bbc7a9843171
 workflow-type: tm+mt
-source-wordcount: '2403'
-ht-degree: 100%
+source-wordcount: '2457'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,19 @@ Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden 
 
 Krijg inzicht in de Campaign-versiestatussen op [deze pagina](rn-overview.md).
 
-## ![](assets/do-not-localize/green_2.png) Release 21.1.4 - versie 9342 {#release-21-1-4-build-9342}
+
+## ![](assets/do-not-localize/green_2.png) Release 21.1.4 - versie 9343 {#release-21-1-4-build-9343}
+
+_8 oktober 2021_
+
+**Patches**
+
+* Probleem verholpen waarbij kon worden voorkomen dat aanbiedingsvoorstellingen worden opgeslagen wanneer de **Interactie** module met de optie [Power Booster](../../installation/using/power-booster-and-power-cluster.md) wordt gebruikt. (NEO-39263)
+
+* Probleem verholpen waarbij &#39;&#39;The ipaffinity xxx is not found on mid server xxx&#39;&#39; werd aangetroffen. Dit kan gebeuren als er meer dan één IP-affiniteit wordt gebruikt op de mid-sourcing-instantie. (NEO-37514)
+
+
+## ![](assets/do-not-localize/orange_2.png) Release 21.1.4 - versie 9342 {#release-21-1-4-build-9342}
 
 _7 september 2021_
 
