@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 31ff1863623c088d28d9e4d15337bbc7a9843171
+source-git-commit: ebd5b04c30c54142433056904a5d80f5a8744ded
 workflow-type: tm+mt
-source-wordcount: '2457'
-ht-degree: 98%
+source-wordcount: '2459'
+ht-degree: 97%
 
 ---
 
@@ -28,9 +28,9 @@ _8 oktober 2021_
 
 **Patches**
 
-* Probleem verholpen waarbij kon worden voorkomen dat aanbiedingsvoorstellingen worden opgeslagen wanneer de **Interactie** module met de optie [Power Booster](../../installation/using/power-booster-and-power-cluster.md) wordt gebruikt. (NEO-39263)
+* Probleem verholpen waarbij een correct aanbiedingsbeheer kon worden voorkomen bij gebruik van de **Interactie** module met de optie [Power Booster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
 
-* Probleem verholpen waarbij &#39;&#39;The ipaffinity xxx is not found on mid server xxx&#39;&#39; werd aangetroffen. Dit kan gebeuren als er meer dan één IP-affiniteit wordt gebruikt op de mid-sourcing-instantie. (NEO-37514)
+* Probleem verholpen: &#39;The ipaffinity xxx is not found on mid server xxx&#39;, wat kan gebeuren bij het verzenden van de levering wanneer er meer dan één IP-affiniteit wordt gebruikt op een multi mid-sourcing-instantie. (NEO-37514)
 
 
 ## ![](assets/do-not-localize/orange_2.png) Release 21.1.4 - versie 9342 {#release-21-1-4-build-9342}
