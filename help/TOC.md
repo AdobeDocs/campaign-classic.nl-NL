@@ -7,9 +7,9 @@ user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebr
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 23c5892189c59008f82ec453c97d24efe82fd2ae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2566'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -109,9 +109,9 @@ ht-degree: 97%
          + [Aan de slag met CRM-connectoren](platform/using/crm-connectors.md)
          + [Verbinding maken met Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Verbinding maken met Salesforce.com](platform/using/crm-sfdc.md)
-         + [Gegevens synchroniseren met CRM](platform/using/crm-data-sync.md)
-      + Adobe Analytics Connector{#analytics-connector}
-         + [Adobe Analytics Connector-provisioning](platform/using/adobe-analytics-provisioning.md)
+         + [Data synchroniseren met CRM](platform/using/crm-data-sync.md)
+      + Adobe Analytics-connector{#analytics-connector}
+         + [Adobe Analytics-connector provisioning](platform/using/adobe-analytics-provisioning.md)
          + [De integratie van Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
          + [Migreren naar Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
          + [Adobe Analytics-gegevensconnector](platform/using/adobe-analytics-data-connector-legacy.md)
@@ -373,7 +373,7 @@ ht-degree: 97%
       + [Toegang tot [!DNL Assets] configureren](integrations/using/configuring-access-to-assets.md)
       + [Een gedeelde asset invoegen](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
-      + [Over [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
+      + [ [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [De integratie configureren](integrations/using/configuring-the-integration.md)
       + [Een [!DNL Experience Manager] -nieuwsbrief maken](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
@@ -659,7 +659,7 @@ ht-degree: 97%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [Info [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)
@@ -850,10 +850,10 @@ ht-degree: 97%
       + [IMS-updates](technotes/using/ims-updates.md)
    + E-mails en pushberichten{#technotes-email}
       + [Bescherming van e-mailprivacy op Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
-      + [Veelgestelde vragen over de privacybescherming van Apple](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
-      + [Onjuiste harde grenzen bijwerken](delivery/using/update-bounce-qualification.md)
+      + [Veelgestelde vragen over de beveiliging van Apple Mail Privacy](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=nl)
+      + [Onjuiste harde bounces  bijwerken](delivery/using/update-bounce-qualification.md)
       + [Update van iOS-certificaat](technotes/using/ios-certificate-update.md)
       + [Bijgehouden URL&#39;s bijwerken](technotes/using/tracked-urls.md)
-   + Migratie naar door Adobe beheerde services{#dc-migration}
-      + [Migratie naar openbare cloud](technotes/using/dc-migration.md)
+   + Migratie naar Adobe Managed Services{#dc-migration}
+      + [Migratie naar Public Cloud](technotes/using/dc-migration.md)
       + [Veelgestelde vragen](technotes/using/dc-migration-faq.md)
