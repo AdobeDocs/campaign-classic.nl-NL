@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2413'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -384,7 +384,7 @@ De configuratie en het gebruik van verzoeken om toegang en verwijdering zijn het
 
 Naast de tools voor [toestemmingsbeheer](../../platform/using/privacy-management.md#consent-management) die Adobe Campaign biedt, kunt u ook nagaan of een consument ervoor heeft gekozen om zich af te melden voor de verkoop van persoonsgegevens.
 
-Contactpersonen kunnen via uw systeem besluiten dat zij niet toestaan dat hun persoonlijke gegevens aan derden worden verkocht. In Adobe Campaign kunt u deze gegevens opslaan en volgen.
+Contactpersonen kunnen via uw systeem besluiten dat hun persoonlijke gegevens niet aan derden mogen worden verkocht. In Adobe Campaign kunt u deze gegevens opslaan en volgen.
 
 Dit werkt alleen als u de tabel met profielen uitbreidt en een veld **[!UICONTROL Opt-Out for CCPA]** toevoegt.
 
