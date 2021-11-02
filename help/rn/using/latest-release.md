@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: ebd5b04c30c54142433056904a5d80f5a8744ded
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2459'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,15 +22,15 @@ Deze pagina bevat nieuwe mogelijkheden, verbeteringen en oplossingen die worden 
 Krijg inzicht in de Campaign-versiestatussen op [deze pagina](rn-overview.md).
 
 
-## ![](assets/do-not-localize/green_2.png) Release 21.1.4 - versie 9343 {#release-21-1-4-build-9343}
+## ![](assets/do-not-localize/green_2.png) Release 21.1.4 - build 9343 {#release-21-1-4-build-9343}
 
 _8 oktober 2021_
 
 **Patches**
 
-* Probleem verholpen waarbij een correct aanbiedingsbeheer kon worden voorkomen bij gebruik van de **Interactie** module met de optie [Power Booster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
+* Probleem verholpen waarbij een correcte Offer Decisioning kon worden voorkomen bij gebruik van de **Interactie**-module met de optie [Power Booster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
 
-* Probleem verholpen: &#39;The ipaffinity xxx is not found on mid server xxx&#39;, wat kan gebeuren bij het verzenden van de levering wanneer er meer dan één IP-affiniteit wordt gebruikt op een multi mid-sourcing-instantie. (NEO-37514)
+* Probleem verholpen: &#39;De ipaffinity xxx is niet gevonden op middenserver xxx&#39;, wat kan gebeuren bij het verzenden van de levering wanneer er meer dan één IP-affiniteit wordt gebruikt op een multimid-sourcingversie. (NEO-37514)
 
 
 ## ![](assets/do-not-localize/orange_2.png) Release 21.1.4 - versie 9342 {#release-21-1-4-build-9342}
