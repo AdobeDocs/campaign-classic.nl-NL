@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 235e8abcaed2659d745ebfeca24dc2f0278a6e5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '600'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -153,7 +153,7 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 en SP2</p>
-<p><strong>Belangrijk:</strong> Microsoft SQL Server wordt niet ondersteund als de primaire database wanneer de Campagneserver op Linux wordt uitgevoerd. [Meer informatie](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).</p>
+<p><strong>Belangrijk:</strong> Microsoft SQL Server wordt niet als de primaire database ondersteund wanneer de Campaign-server op Linux wordt uitgevoerd. [Meer informatie](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).</p>
 </td>
 </tr>
 </tbody>
@@ -163,12 +163,12 @@ Ga naar [deze pagina](../../rn/using/deprecated-features.md) voor meer informati
 >
 >* Het RDBMS-stuurprogramma moet overeenkomen met de RDBMS-serverversie.
 >
->* PostgreSQL is RDBMS voor Gehoste milieu&#39;s.
+>* PostgreSQL is de RDBMS voor gehoste omgevingen.
 
 
 ## CRM-connectoren{#CRMconnectors}
 
-Hieronder vindt u CRM-systemen (Customer Relationship Management) die compatibel zijn met Adobe Campaign. [Leer ](../../platform/using/crm-connectors.md) meer over de schakelaars van CRM van de Campagne.
+Hieronder vindt u de Customer Relationship Management-systemen (CRM) die compatibel zijn met Adobe Campaign. [Leer meer](../../platform/using/crm-connectors.md) over de Campaign CRM-connectoren.
 
 <table>
 <tbody>
@@ -189,7 +189,7 @@ Hieronder vindt u CRM-systemen (Customer Relationship Management) die compatibel
 
 ## Federated Data Access (FDA){#FederatedDataAccessFDA}
 
-Externe databases die compatibel zijn met Adobe Campaign [Federated Data Access module](../../installation/using/about-fda.md) worden hieronder weergegeven.
+Hieronder vindt u externe databases die compatibel zijn met Adobe Campaign [Federated Data Access-module](../../installation/using/about-fda.md).
 
 <table>
 <tbody>
@@ -213,9 +213,9 @@ Externe databases die compatibel zijn met Adobe Campaign [Federated Data Access 
 <tr>
 <td>Oracle</td>
 <td>
-<p>19 quater</p>
-<p>18 quater</p>
-<p>12 quater</p>
+<p>19c</p>
+<p>18c</p>
+<p>12c</p>
 <p>11g</p>
 </td>
 </tr>
@@ -226,9 +226,9 @@ Externe databases die compatibel zijn met Adobe Campaign [Federated Data Access 
 <p>12.x</p>
 <p>11.x</p>
 <p>10.x</p>
-<p>9,6 x</p>
-<p>9,5 x</p>
-<p>9,4 x</p>
+<p>9.6.x</p>
+<p>9.5.x</p>
+<p>9.4.x</p>
 </td>
 </tr>
 <tr><td>SQL Server</td>
@@ -289,7 +289,7 @@ Externe databases die compatibel zijn met Adobe Campaign [Federated Data Access 
 
 ## Clientconsole {#ClientConsoleoperatingsystems}
 
-De volgende besturingssystemen en browsers zijn **vereist** om [Campagne Client Console](../../installation/using/installing-the-client-console.md) te gebruiken.
+De volgende besturingssystemen en browsers zijn **vereist** om de [Campaign-clientconsole](../../installation/using/installing-the-client-console.md) te gebruiken.
 
 ### Besturingssystemen
 
@@ -330,7 +330,7 @@ De volgende besturingssystemen en browsers zijn **vereist** om [Campagne Client 
 
 ## Mobiele SDK{#MobileSDK}
 
-U kunt Campagne gebruiken om [pushmeldingen](../../delivery/using/about-mobile-app-channel.md) te verzenden op de hieronder vermelde besturingssystemen met de bijbehorende [mobiele SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
+U kunt Campaign gebruiken om [pushmeldingen](../../delivery/using/about-mobile-app-channel.md) te verzenden op de hieronder vermelde besturingssystemen met de bijbehorende [mobiele SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
 
 <table>
 <tbody>
@@ -353,7 +353,7 @@ U kunt Campagne gebruiken om [pushmeldingen](../../delivery/using/about-mobile-a
 
 ## Browsers{#Browsers}
 
-De volgende browsers zijn compatibel met Campagne voor [Toegang van het Web](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
+De volgende browsers zijn compatibel met Campaign voor [toegang tot internet](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 <table>
 <tbody>
@@ -404,7 +404,7 @@ De volgende browsers zijn compatibel met Campagne voor [Toegang van het Web](../
 ## Wellicht ook interessant{#Morelikethis}
 
 * [Aanvullende informatie over Campaign Classic ](../../rn/using/latest-release.md)
-* [Campagne-algemene architectuur](../../installation/using/general-architecture.md)
+* [Algemene Campaign-architectuur](../../installation/using/general-architecture.md)
 * [Aanbevelingen voor hardwareaanpassing](../../technotes/using/hardware-sizing.md)
 * [Verouderde functies en systemen](../../rn/using/deprecated-features.md)
 * [Upgradeprocedure opstellen](../../production/using/build-upgrade.md)
