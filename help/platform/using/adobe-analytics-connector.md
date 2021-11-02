@@ -7,9 +7,9 @@ role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
 source-git-commit: 1f6846f29c44719fdbd334327466619ed265452a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1515'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -47,9 +47,9 @@ De actievelden voor elke tool zijn als volgt:
 
 >[!IMPORTANT]
 >
-> Voor Hybride en op-Premise implementaties, zorg ervoor om de leveringsstappen te volgen die in dit [pagina](../../platform/using/adobe-analytics-provisioning.md) worden gedetailleerd.
+> Zorg er bij Hybride en On-Premise-implementaties voor om de leveringsstappen te volgen die op deze [pagina](../../platform/using/adobe-analytics-provisioning.md) nader worden uitgelegd.
 
-Als u de Data Connector wilt instellen, moet u verbinding maken met uw Adobe Campaign-instantie en de volgende bewerkingen uitvoeren:
+Als u de gegevensconnector wilt instellen, moet u verbinding maken met uw Adobe Campaign-versie en de volgende bewerkingen uitvoeren:
 
 1. [Conversievariabelen en succesgebeurtenissen configureren](#configure-conversion-success)
 1. [Uw externe account configureren in Adobe Campaign Classic](#external-account-classic)
@@ -90,9 +90,9 @@ To set up the Adobe Analytics/Adobe Campaign Classic integration, you must conne
 
 ### Conversievariabelen en succesgebeurtenissen configureren {#configure-conversion-success}
 
-U moet uw **[!UICONTROL Conversion variables]** en **[!UICONTROL Success events]** als volgt vormen:
+U moet uw **[!UICONTROL Conversion variables]** en **[!UICONTROL Success events]** als volgt configureren:
 
-1. Selecteer **[!UICONTROL Report suite]** u met Adobe Campaign wilt verbinden.
+1. Selecteer **[!UICONTROL Report suite]** die u aan Adobe Campaign wilt koppelen.
 
 1. Selecteer via de knop **[!UICONTROL Edit settings]** de optie  **[!UICONTROL Conversion]** >  **[!UICONTROL Conversion variables]**.
 
@@ -127,7 +127,7 @@ U moet uw **[!UICONTROL Conversion variables]** en **[!UICONTROL Success events]
 
    >[!NOTE]
    >
-   > Alleen **[!UICONTROL Success events]** van numerieke type wordt ondersteund.
+   > Alleen **[!UICONTROL Success events]** van het numerieke type wordt ondersteund.
 
    ![](assets/analytics_connnector_8.png)
 
@@ -135,7 +135,7 @@ U moet uw **[!UICONTROL Conversion variables]** en **[!UICONTROL Success events]
 
 Nadat u de **[!UICONTROL Conversion variables]** en **[!UICONTROL Success events]** hebt geconfigureerd, controleert u of de variabelen zijn opgenomen in de **[!UICONTROL Product Profile]** die voor de Analytics Connector is gemaakt. Raadpleeg [Adobe Analytics-productprofiel maken](../../platform/using/adobe-analytics-provisioning.md#analytics-product-profile) voor meer informatie.
 
-U zult dan **[!UICONTROL External accounts]** in Adobe Campaign Classic moeten vormen.
+U zult dan **[!UICONTROL External accounts]** in Adobe Campaign Classic moeten configureren.
 
 ### Externe account configureren in Adobe Campaign Classic {#external-account-classic}
 
@@ -161,7 +161,7 @@ Raadpleeg voor meer informatie hierover de pagina [Productprofielen voor Adobe A
 
 1. Klik op **[!UICONTROL Configure]** naast de vervolgkeuzelijst **[!UICONTROL Integration]**.
 
-1. Wijs in het venster **[!UICONTROL Configure Analytics integration]** uw externe account toe met de rapportsuite die de volgende informatie bevat:
+1. Wijs in het venster **[!UICONTROL Configure Analytics integration]** uw externe account toe met de eerder gemaakte rapportsuite en geef de volgende informatie op:
 
    * **[!UICONTROL E-Mail]**
    * **[!UICONTROL IMS Org]**
