@@ -7,7 +7,7 @@ user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebr
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 23c5892189c59008f82ec453c97d24efe82fd2ae
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2566'
 ht-degree: 100%
 
@@ -373,7 +373,7 @@ ht-degree: 100%
       + [Toegang tot [!DNL Assets] configureren](integrations/using/configuring-access-to-assets.md)
       + [Een gedeelde asset invoegen](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
-      + [ [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
+      + [Over [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [De integratie configureren](integrations/using/configuring-the-integration.md)
       + [Een [!DNL Experience Manager] -nieuwsbrief maken](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
@@ -659,7 +659,7 @@ ht-degree: 100%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [ [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Info [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)

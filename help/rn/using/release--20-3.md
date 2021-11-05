@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
-source-git-commit: d5585f0130611db399811536e80e76b61c998b9c
+source-git-commit: 9d019109e51f4c579ef775e17ccbb10f7e30a2e2
 workflow-type: tm+mt
 source-wordcount: '2006'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 95%
 
 ![](../../assets/v7-only.svg)
 
-## ![](assets/do-not-localize/red_2.png) Release 20.3.3 - Build 9234 {#release-20-3-3-build-9234}
+## ![](assets/do-not-localize/red_2.png) Release 20.3.3 - build 9234 {#release-20-3-3-build-9234}
 
 _11 januari 2021_
 
 * Er is een beveiligingsprobleem opgelost ter versterking van de bescherming tegen SSRF-aanvallen (Server Side Request Forgery). (NEO-27777)
 * Oplossing van een regressieprobleem bij het genereren van de broadlog waarbij het MTA-proces kon crashen.
 
-## ![](assets/do-not-localize/red_2.png) Release 20.3.1 - Build 9228 {#release-20-3-1-build-9228}
+## ![](assets/do-not-localize/red_2.png) Release 20.3.1 - build 9228 {#release-20-3-1-build-9228}
 
 _27 oktober 2020_
 
@@ -32,7 +32,7 @@ _27 oktober 2020_
 >
 > * Deze release wordt geleverd met een nieuw verbindingsprotocol: als u verbinding maakt met Campaign via de Adobe Identity Service (IMS), is een upgrade verplicht voor zowel de Campaign-server als de clientconsole om na **30 juni 2021** verbinding te kunnen maken met Campaign. [Meer informatie](../../technotes/using/ims-updates.md)
 > * Deze release wordt geleverd met een [oplossing voor een beveiligingsprobleem](https://helpx.adobe.com/nl/security/products/campaign/apsb21-04.html): een upgrade is verplicht om de beveiliging van uw IT-omgeving te versterken.
-> * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overstappen op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. De verouderde Auth authentificatiemodus met Campagne [is gepensioneerd](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) op **18 Augustus 2021**. De ontvangen milieu&#39;s profiteren van een uitbreiding tot **30 November, 2021**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot 30 november 2021. U moet [AppID van de toepassing OAuth ](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) aan Adobe verstrekken.
+> * Als u via oAuth-verificatie de Experience Cloug Triggers-integratie gebruikt, moet u overstappen op Adobe I/O zoals [op deze pagina](../../integrations/using/configuring-adobe-io.md) wordt beschreven. Verouderde verificatiemodus voor auteur met campagne [is met pensioen gegaan](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) op **september 2021**. Gehoste omgevingen profiteren van een verlenging tot  **23 februari 2022**. Als klant op locatie of hybride klant neemt u contact op met de klantenservice van Adobe om de ondersteuning uit te breiden tot februari 2022. U moet de [AppID van de OAuth-applicatie](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) aan Adobe verstrekken.
 
 
 **Nieuwe functies**

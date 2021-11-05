@@ -6,7 +6,7 @@ exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: acb2c4e90c4ce349ea9c1ad53d703c13195872e1
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 48%
+ht-degree: 51%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 48%
 
 * **[Release september is live!](rn/using/latest-release.md)**<br/> Ontdek nieuwe mogelijkheden, verbeteringen en correcties in de opmerkingen bij de release
 
-* **[Apple Mail Privacy Protection - ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)** Veelgestelde vragen en  **[](technotes/using/apple-mail-app-privacy-protection.md)**<br/> technologieEerste handleiding zoeken in reactie op de aankondiging van Apple met betrekking tot iOS 15
+* **[Veelgestelde vragen over Apple Mail Privacy Protection](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=nl)** en **[technote](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Aanvankelijke aanwijzingen vinden in reactie op de aankondiging van Apple met betrekking tot iOS 15
 
-* **[Verbinding maken via IMS/Adobe ID? Upgrade naar de nieuwste builds](technotes/using/ims-updates.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne na** 30 juni 2021 **
+* **[Verbinding maken via IMS/Adobe ID? Upgrade naar de nieuwste builds](technotes/using/ims-updates.md)**<br/> Als u IMS gebruikt om verbinding te maken met Campagne, moet u een upgrade uitvoeren om verbinding te kunnen maken met Campagne nadat** 30 juni 2021 **
 
-* **[Onjuiste harde ](delivery/using/update-bounce-qualification.md)**<br/> grenzen verwijderenLeer hoe u onjuiste harde grenzen kunt bijwerken na een Apple-storing
+* **[Onjuiste harde grenzen verwijderen](delivery/using/update-bounce-qualification.md)**<br/> Meer informatie over het bijwerken van onjuiste harde grenzen na Apple-storing
 
-* **[Beveilig uw Campagne ](technotes/using/acc-config-updates.md)**<br/> instancesUpdate aan recentste bouwt om uw platform van de Campagne te beveiligen
+* **[Beveilig uw instanties van de Campagne](technotes/using/acc-config-updates.md)**<br/> Update naar de nieuwste builds om uw campagneplatform te beveiligen
 
-* **[Werk uw Adobe Experience Cloud Triggers-](integrations/using/configuring-adobe-io.md)**<br/> integratie bij. De service voor verificatie van de oudere versie van Auth is bijna voltooid: u moet migreren naar Adobe I/O.
+* **[Adobe Experience Cloud Triggers-integratie bijwerken](integrations/using/configuring-adobe-io.md)**<br/> De erfenis Auth authentificatiedienst heeft eind-van-leven bereikt: u moet migreren naar Adobe I/O.
 
 [Meer updates](rn/using/documentation-updates.md)
 

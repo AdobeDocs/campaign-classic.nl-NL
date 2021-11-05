@@ -17,7 +17,7 @@ ht-degree: 19%
 
 ![](../../assets/v7-only.svg)
 
-## ![](assets/do-not-localize/limited_2.png) Release 20.1.4 - versie 9126 {#release-20-1-4-build-9126}
+## ![](assets/do-not-localize/limited_2.png) Release 20.1.4 - build 9126 {#release-20-1-4-build-9126}
 
 _15 april 2021_
 
@@ -51,19 +51,19 @@ _23 december 2020_
 * Het verbindingsprotocol is bijgewerkt en aangepast aan het nieuwe IMS-verificatiemechanisme.
 * Er is een beveiligingsprobleem opgelost ter versterking van de bescherming tegen SSRF-aanvallen (Server Side Request Forgery). (NEO-27777)
 
-## ![](assets/do-not-localize/red_2.png) Release 20.1.3 - versie 9124{#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/red_2.png) Release 20.1.3 - build 9124{#release-20-1-3-build-9124}
 
 _6 mei 2020_
 
 * Probleem verholpen met de activiteit **Bestand overdragen** waardoor verificatie op basis van SFTP-sleutels niet kon werken op Debian 9. (NEO-23183)
 
-## ![](assets/do-not-localize/red_2.png) Release 20.1.2 - versie 9123{#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/red_2.png) Release 20.1.2 - build 9123{#release-20-1-2-build-9123}
 
 _13 maart 2020_
 
 * Probleem verholpen waarbij implementatie van versies op Red Hat 7-servers werd voorkomen. (NEO-23332)
 
-## ![](assets/do-not-localize/red_2.png) Release 20.1 - versie 9122{#release-20-1-build-9122}
+## ![](assets/do-not-localize/red_2.png) Release 20.1 - build 9122{#release-20-1-build-9122}
 
 _17 februari 2020_
 
@@ -117,21 +117,21 @@ _17 februari 2020_
 
 * iOS 13 wordt nu ondersteund door de HTTP2-connector.
 
-* Verbeterd quarantainebeheer en opschoning van de tabellen die worden gebruikt door de functie voor pushmeldingen (nms:address en nms:appSubscriptionRcp). Voor iOS (alleen HTTP2-connector) worden uitgeschakelde tokens nu op dezelfde manier verwerkt als voor Android. De markering voor uitschakelen is nu ingesteld in de tabel NmsAppSubscriptionRcp. [Meer informatie](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
+* Verbeterd quarantainebeheer en opschoning van de tabellen die worden gebruikt door de functie voor pushmeldingen (nms:address en nms:appSubscriptionRcp). Voor iOS (alleen HTTP2-connector) worden uitgeschakelde tokens nu op dezelfde manier afgehandeld als voor Android. De markering voor uitschakelen is nu ingesteld in de tabel NmsAppSubscriptionRcp. [Meer informatie](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-* Er is een nieuwe optie toegevoegd aan de workflowactiviteiten **JavaScript code** en **Geavanceerde JavaScript-code** om een time-outperiode te definiëren. Hierdoor wordt voorkomen dat de uitvoeringsfase van JavaScript te lang wordt uitgevoerd. Als de time-outperiode verstreken is, wordt de workflow gestopt. De standaardtime-out is 1 uur. [Meer informatie](../../workflow/using/sql-code-and-javascript-code.md)
+* Er is een nieuwe optie toegevoegd aan het dialoogvenster **JavaScript-code** en **Geavanceerde JavaScript-code** workflowactiviteiten om een time-outperiode te definiëren. Hierdoor wordt voorkomen dat de uitvoeringsfase van JavaScript te lang wordt uitgevoerd. Als de time-outperiode verstreken is, wordt de workflow gestopt. De standaardtime-out is 1 uur. [Meer informatie](../../workflow/using/sql-code-and-javascript-code.md)
 
 * De leveringsanalyse wordt nu gestopt wanneer geen passende affiniteit op de midsourcingserver wordt gevonden, met het overeenkomstige foutenmelding die wordt getoond.
 
 * Database-failover voor Postgres wordt nu ondersteund: Wanneer de databaseserver vastloopt en opnieuw wordt opgestart, maakt Campagne nu automatisch opnieuw verbinding met de server.
 
-* De weergave **In behandeling starten** is toegevoegd aan het knooppunt Beheer > Audit > Workflows Status. Dit staat u toe om alle werkschema&#39;s op uw instantie te controleren die om door het **operationMgt** proces wachten te zijn begonnen. Deze weergave wordt geleverd met het marketingpakket. [Meer informatie](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+* De **Begin in behandeling** De weergave is toegevoegd aan het knooppunt Beheer > Audit > Workflows Status. Hierdoor kunt u alle workflows op uw instantie controleren die wachten om te worden gestart door de **operationMgt** proces. Deze weergave wordt geleverd met het marketingpakket. [Meer informatie](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
 **Andere wijzigingen**
 
 * In Linux gebruikt het opstarten van de netwerkservice nu een systeemeenheid in plaats van het script /etc/init.d/nlserver6. De migratie naar het nieuwe opstartschema wordt automatisch uitgevoerd wanneer u het 20.1-pakket installeert. /etc/init.d/nlserver6 wordt nog verstrekt maar voor het in wisselwerking staan met de nlserver dienst (begin, nieuw begin, einde, enz.), adviseren wij dat u het systeembevel direct gebruikt.
 
-* De meest verbruikende douanetabellen zijn bewogen van **xtkNewId** opeenvolging aan specifieke opeenvolgingen. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* De meest verbruikende aangepaste tabellen zijn verplaatst van de **xtkNewId** reeks naar toegewezen reeksen. [Meer informatie](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 
 * Verbeterde queryprestaties die kunnen worden beïnvloed door onnodige databaseverbindingen.
 
@@ -159,7 +159,7 @@ _17 februari 2020_
 
 * Probleem met codering verholpen bij het uitvoeren van query&#39;s via de Netezza FDA-connector. (NEO-19594)
 
-* Probleem verholpen dat tot een fout leidde wanneer het gebruiken van de methode van de POST in **Web Download** de activiteit van de werkschemagebeurtenis.
+* Probleem verholpen dat tot een fout leidde bij het gebruik van de methode POST in het dialoogvenster **Webdownload** workflowgebeurtenisactiviteit.
 
 * Probleem opgelost met het genereren van voorstellen. (NEO-18176)
 
@@ -167,25 +167,25 @@ _17 februari 2020_
 
 * Probleem verholpen bij het parseren van de URL&#39;s in de inhoud van doorlopende leveringen die ertoe konden leiden dat ze vastliepen. (NEO-16910)
 
-* Probleem verholpen waarbij de velden **Start** en **End** niet werden berekend tijdens het maken van een nieuwe campagne.
+* Probleem verholpen met de **Start** en **Einde** velden die niet worden berekend tijdens het maken van een nieuwe campagne.
 
-* Probleem verholpen met de **activiteit van het downloaden van bestanden** bij het gebruik van een URL.
+* Probleem verholpen met de **Bestand downloaden** workflowactiviteit bij gebruik van een URL.
 
 * Probleem verholpen bij het voorvertonen van een geïmporteerde lijst in een queryactiviteit van een rapport. (NEO-13119)
 
-* Probleem verholpen waarbij een verouderde afbeelding werd weergegeven wanneer het personaliseringsblok **Powered by Campaign** in de e-maileditor werd geselecteerd.
+* Probleem verholpen waarbij een verouderde afbeelding werd weergegeven wanneer u het dialoogvenster **Aangedreven door campagne** personaliseringsblok in de e-maileditor.
 
 * De netwerkcommunicatie tussen de client en de server is verbeterd.
 
 * Probleem verholpen waarbij te veel workflows in dezelfde campagne werden gemaakt. U kunt nu niet meer dan 28 workflows maken. Er wordt een waarschuwing weergegeven.
 
-* Probleem verholpen bij het gebruik van de **Selectie van kolommen**-afstemmingsoptie in een **Union**-werkstroomactiviteit.
+* Probleem verholpen tijdens het gebruik van de **Een selectie van kolommen** afstemmingsoptie in een **Unie** workflowactiviteit.
 
 * Probleem verholpen waarbij de console vastloopt die kan optreden wanneer een beschadigde verrijkingslijst in een workflow wordt gebruikt. (NEO-18096)
 
 * Oplossing voor diverse problemen met het vastlopen van de console die in workflows konden optreden (NEO-18010, NEO-18032)
 
-* Probleem verholpen waarbij een **Externe signaalactiviteit** kon worden uitgevoerd, zelfs als deze was uitgeschakeld. (NEO-17524)
+* Probleem verholpen waarbij de uitvoering van een **Extern signaal** workflowactiviteit, zelfs wanneer deze was uitgeschakeld. (NEO-17524)
 
 * Probleem verholpen bij het maken van een nieuw schema.
 
@@ -203,29 +203,29 @@ _17 februari 2020_
 
 * Probleem verholpen waarbij gegevens niet konden worden geüpload naar openbare bronnen als de uploadmap een externe gedeelde locatie was. (NEO-19361)
 
-* Probleem verholpen waarbij het **Importeerpubliek uit de technische workflow van Adobe Experience Cloud** voortdurend faalde. (NEO-18463)
+* Het probleem dat de oorzaak was van de **Publiek importeren uit de Adobe Experience Cloud** technische werkstroom tp blijft mislukken. (NEO-18463)
 
 * Probleem verholpen waardoor leveringen niet konden worden verzonden bij gebruik van sjablonen die uit Experience Manager zijn geïmporteerd. (NEO-17540)
 
 * Probleem verholpen dat optrad na de upgrade naar versie 9032 en waardoor de instantie geen verbinding kon maken met de FTP-server via het SSL-protocol. (NEO-20498)
 
-* Oplossing van een probleem dat optrad bij het verwijderen, invoegen of bijwerken van een grote hoeveelheid gegevens met de **activiteit Gegevens bijwerken** in een workflow met een FDA-schema als doeldimensie. (NEO-13280)
+* Oplossing voor een probleem dat optrad bij het verwijderen, invoegen of bijwerken van een grote hoeveelheid gegevens met de **Gegevens bijwerken** activiteit in een werkschema gebruikend een schema FDA als het richten dimensie. (NEO-13280)
 
 * Probleem verholpen waarbij e-mailberichten niet konden worden verzonden als er JavaScript-code buiten de HTML-inhoudstag stond. (NEO-18628)
 
 * Probleem verholpen die optrad tijdens het weergeven van de spiegelpagina vanuit de leveringslogboeken van een verzonden bericht. (NEO-17976)
 
-* Probleem verholpen waardoor het **Koppelen naar spiegel**-aanpassingsblok niet kon worden weergegeven op het tabblad **Tekstinhoud** nadat was geklikt op **HTML importeren** in een levering. (NEO-17568)
+* Het probleem dat ervoor zorgde dat de **Koppelen aan spiegelpagina** het verpersoonlijkingsblok wordt getoond in **Tekstinhoud** tabblad nadat u hebt geklikt **HTML importeren** in een levering. (NEO-17568)
 
 * Het foutbericht dat wordt weergegeven wanneer u op een koppeling naar een verlopen spiegelpagina klikt, is verduidelijkt. (NEO-17340)
 
-* Probleem verholpen waardoor sommige knoppen niet konden worden gebruikt in het aanmaakscherm **Gegevensdistributie**.
+* Probleem verholpen waardoor sommige knoppen niet konden worden gebruikt in het dialoogvenster **Gegevensverspreiding** aanmaakscherm.
 
 * Probleem verholpen dat optrad bij het plannen van een leveringsactiviteit in een instantie met Asia/Kolkata als tijdzone. (NEO-20001)
 
 * Er wordt nu een fout weergegeven wanneer een levering een probleem met de affiniteitsconfiguratie heeft.
 
-* Probleem verholpen waarbij een onjuist versietnummer werd weergegeven in het menu **Info**.
+* Probleem verholpen waarbij een onjuist versietnummer werd weergegeven in het dialoogvenster **Info** -menu.
 
 * Probleem verholpen die optrad tijdens het bijwerken van de verpletterende account vanuit de eigenschappen van een terugkerende levering in een workflow. (NEO-18684)
 

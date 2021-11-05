@@ -14,7 +14,7 @@ ht-degree: 7%
 
 ![](../../assets/v7-only.svg)
 
-## Release 18.4.5 - versie 8937{#release-18-4-5-build-8937}
+## Release 18.4.5 - build 8937{#release-18-4-5-build-8937}
 
 21 november 2018
 
@@ -41,7 +41,7 @@ ht-degree: 7%
 * Verbeterde beschikbare tijd voor gedeeld geheugen tijdens dood verwerken van kinderen (MTA).
 * Oplossing voor een mogelijke impasse in Apache (tracking).
 
-## Release 18.4.4 - versie 8936{#release-18-4-4-build-8936}
+## Release 18.4.4 - build 8936{#release-18-4-4-build-8936}
 
 1 augustus 2018
 
@@ -50,15 +50,15 @@ ht-degree: 7%
 * Logbestanden voor e-mailarchivering zijn verbeterd, waardoor het eenvoudiger en duidelijker wordt om te controleren welke e-mails met succes zijn geleverd of niet zijn gearchiveerd via BCC-archivering. (NEO-10675)
 * Probleem verholpen dat leidde tot de weergave van IP&#39;s van het taakverdelingsmechanisme in plaats van IP&#39;s van de klant in de weblogs voor het bijhouden van berichten. (NEO-11295)
 * Oplossing voor een fout met LATIN1-codering bij gebruik van een FDA-verbinding met een PostSQL-database. (NEO-11299)
-* Probleem verholpen die optrad bij gebruik van de leveringsoptie **[!UICONTROL Prepare the personalization data with a workflow]**. (NEO-11047, NEO-11301)
+* Probleem verholpen dat optrad tijdens het gebruik van het dialoogvenster **[!UICONTROL Prepare the personalization data with a workflow]** leveringsoptie. (NEO-11047, NEO-11301)
 * Probleem verholpen waarbij een willekeurig probleem werd opgelost waardoor de eigenschappen van een levering onjuist werden overschreven. (NEO-11015)
-* Probleem verholpen bij het gebruik van berekende velden in een **[!UICONTROL Survey answers]**-workflowactiviteit. (NEO-11382)
-* Probleem verholpen bij het gebruik van gegevens die zijn opgeslagen in XML in een **[!UICONTROL Survey answers]**-workflowactiviteit. (NEO-10816)
+* Probleem verholpen bij het gebruik van berekende velden in een **[!UICONTROL Survey answers]** workflowactiviteit. (NEO-11382)
+* Probleem verholpen bij het gebruik van gegevens die zijn opgeslagen in XML in een **[!UICONTROL Survey answers]** workflowactiviteit. (NEO-10816)
 * Probleem verholpen bij het uitvoeren van de serverupgrade met build 8935.
-* Probleem verholpen waarbij nutteloze fouten in het postupgradelogboek werden weergegeven wanneer een **[!UICONTROL Survey answers]**-workflowactiviteit niet volledig was geconfigureerd.
+* Probleem verholpen waarbij nutteloze fouten in het postupgradelogboek werden weergegeven als een **[!UICONTROL Survey answers]** workflowactiviteit is niet volledig geconfigureerd.
 * FDA-Teradata: Probleem verholpen met automatisch verhoogde velden en indexen in SQL-tabellen.
 
-## Release 18.4.3 - versie 8935{#release-18-4-3-build-8935}
+## Release 18.4.3 - build 8935{#release-18-4-3-build-8935}
 
 22 juni 2018
 
@@ -68,22 +68,22 @@ ht-degree: 7%
 * Probleem verholpen met aanpassen van afbeeldingskoppelingen in lijnleveringen. (NEO-11077)
 * Probleem verholpen waardoor het genereren van de id-reeks niet correct werkte. (NEO-11115)
 * Probleem verholpen waarbij privacyverzoeken (GDPR) niet werkten bij het gebruik van een aangepaste naamruimte met een combinatietoets. (NEO-11123)
-* Oplossing voor een fout die kan optreden wanneer de optie **[!UICONTROL Distribution of values]** wordt gebruikt in workflowactiviteiten **[!UICONTROL Query]**. (NEO-10958)
+* Oplossing voor een fout die kan optreden bij het gebruik van de **[!UICONTROL Distribution of values]** optie in **[!UICONTROL Query]** workflowactiviteiten. (NEO-10958)
 * Probleem verholpen bij het synchroniseren van aanbiedingsruimten van de marketinginstantie naar de interactie-instantie. (NEO-11162)
 * Verbeterd beheer van lange naamindexen tijdens postupgrade
 
-## Release 18.4.2 - versie 8932{#release-18-4-2-build-8932}
+## Release 18.4.2 - build 8932{#release-18-4-2-build-8932}
 
 22 mei 2018
 
 **Verbeteringen**
 
 * Probleem verholpen waarbij de Windows Server-update niet correct werkte.
-* Probleem verholpen in de **[!UICONTROL Survey Result]**-activiteit bij het gebruik van gegevens die zijn opgeslagen in XML. Het rapport is onjuist weergegeven. (NEO-10816)
+* Probleem opgelost in het dialoogvenster **[!UICONTROL Survey Result]** activiteit wanneer het gebruiken van gegevens die in XML worden opgeslagen. Het rapport is onjuist weergegeven. (NEO-10816)
 * Oplossing voor een prestatieprobleem dat met het InMail-proces kon optreden bij het gebruik van een stuiterende mailserver. (NEO-10641)
 * Oplossing voor een probleem met een databaseupgrade dat zich kon voordoen wanneer u meer dan 1000 schema&#39;s bijwerkte.
 
-## Release 18.4 - versie 8931{#release-18-4-build-8931}
+## Release 18.4 - build 8931{#release-18-4-build-8931}
 
 24 apr. 2018
 
@@ -98,7 +98,7 @@ ht-degree: 7%
  </thead> 
  <tbody> 
   <tr> 
-   <td> EU-verordening inzake algemene gegevensbescherming (GDPR)<br /> </td> 
+   <td> Algemene EU-verordening inzake gegevensbescherming (GDPR)<br /> </td> 
    <td> <p>GDPR is de nieuwe privacywet van de Europese Unie (EU) die de vereisten inzake gegevensbescherming harmoniseert en moderniseert en op 25 mei 2018 van kracht wordt. AVG is van toepassing op Adobe Campaign-klanten die data bewaren voor in de EU wonende betrokken personen.</p> <p>Naast de privacy mogelijkheden reeds beschikbaar in Adobe Campaign (met inbegrip van toestemmingsbeheer, montages van het gegevensbehoud, en gebruikersrollen), nemen wij deze kans in onze rol als Bewerker van Gegevens om extra mogelijkheden te omvatten, om uw bereidheid als Datacontrole voor bepaalde GDPR verzoeken te helpen vergemakkelijken:</p> 
     <ul> 
      <li> <p>Recht op toegang: staat de betrokkene toe een kopie te ontvangen van zijn/haar persoonsgegevens die door de gegevensverwerkingsverantwoordelijken zijn vastgelegd, met inbegrip van gegevens die in Adobe Campaign zijn opgeslagen.</p> </li> 
@@ -126,7 +126,7 @@ ht-degree: 7%
 **Verbeteringen**
 
 * **LINE-kanaal - architectuurverbetering**: Net als bij alle andere kanalen in Adobe Campaign wordt het LINE-kanaal nu ondersteund voor alle implementatietypen: gehost, hybride en op locatie.
-* **Volgorde automatisch genereren**: Het mechanisme voor het genereren van id&#39;s is verbeterd en vergroot de levensduur van campagneinstanties met grote volumes objecten. Raadpleeg dit [technote](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html) voor meer informatie.
+* **Volgorde automatisch genereren**: Het mechanisme voor het genereren van id&#39;s is verbeterd en vergroot de levensduur van campagneinstanties met grote volumes objecten. Raadpleeg deze voor meer informatie [technote](https://helpx.adobe.com/nl/campaign/kb/sequence_auto_generation.html).
 
 **Andere wijzigingen**
 
@@ -138,10 +138,10 @@ ht-degree: 7%
 * Afgedwongen toegangsbeperkingen voor de SOAP-aanroep van de implementatiewizard (xtk:serverOptions#SaveOptions).
 * De verouderde bibliotheek weka.jar is verwijderd en de OpenSSL-bibliotheek is bijgewerkt voor optimalisatie van de beveiliging.
 * Verbeterde technische workflow voor facturering om uitvoeringen van instanties te beveiligen.
-* De mogelijkheid voor beheerders om het wachtwoord van een operator in te stellen of opnieuw in te stellen, is hersteld. Klik hiertoe met de rechtermuisknop op een operator, selecteer **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** en stel het nieuwe wachtwoord van de operator in. We raden operatoren aan hun wachtwoord te wijzigen wanneer ze opnieuw verbinden. Raadpleeg de [gedetailleerde documentatie](../../production/using/lost-password.md) voor meer informatie.
+* De mogelijkheid voor beheerders om het wachtwoord van een operator in te stellen of opnieuw in te stellen, is hersteld. Klik hiertoe met de rechtermuisknop op een operator en selecteer **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** en stelt u het nieuwe wachtwoord van de operator in. We raden operatoren aan hun wachtwoord te wijzigen wanneer ze opnieuw verbinden. Raadpleeg de [gedetailleerde documentatie](../../production/using/lost-password.md) voor meer informatie.
 * Ter ondersteuning van de nieuwe functie voor meervoud in Adobe Target kan nu een nieuwe parameter &quot;at_property&quot; aan URL&#39;s worden toegevoegd wanneer u opties en externe accounts voor de integratie met Target configureert. De waarde die voor deze parameter moet worden gebruikt, is te vinden in Adobe Target en wordt door Campagne gebruikt bij het uitvoeren van aanroepen naar Doel. Raadpleeg de [gedetailleerde documentatie](../../integrations/using/inserting-a-dynamic-image.md) voor meer informatie.
 * U kunt nu een standaard openingspagina opgeven die moet worden geopend wanneer u klikt op een afbeelding die wordt geleverd door Adobe Target. Als u voorheen op die afbeelding klikte, werd de standaardafbeeldingsset gebruikt bij het maken van de e-mail. Raadpleeg de [gedetailleerde documentatie](../../integrations/using/inserting-a-dynamic-image.md) voor meer informatie.
-* Het selectievakje **SMPP-sporen inschakelen** in de externe account is toegevoegd om de uitvoer te forceren. Raadpleeg de [gedetailleerde documentatie](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account) voor meer informatie.
+* Toegevoegd **SMPP-sporen inschakelen** Schakel het selectievakje in de externe account in om de uitvoer te forceren. Raadpleeg de [gedetailleerde documentatie](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account) voor meer informatie.
 
 **Technische ontwikkelingen**
 
@@ -182,7 +182,7 @@ De JavaScript-functie urlEncode werkt niet correct voor niet-ASCII-tekens. Deze 
 
 Nieuwe modus voor importeren pakket
 
-Er is een nieuwe modus beschikbaar voor het importeren van pakketten via de opdrachtregel, zodat ronde afhankelijkheden mogelijk zijn (niet aanbevolen voor grote pakketten). De bestaande functionaliteit blijft behouden. Voor dergelijke pakketten met kringafhankelijkheden is een nieuwe markering **-usejs** toegevoegd aan de import van het opdrachtregelpakket. Wanneer uitgevoerd, zal het JSEngine als gebruiken wanneer de pakketinvoer van de interface wordt uitgevoerd.
+Er is een nieuwe modus beschikbaar voor het importeren van pakketten via de opdrachtregel, zodat ronde afhankelijkheden mogelijk zijn (niet aanbevolen voor grote pakketten). De bestaande functionaliteit blijft behouden. Voor dergelijke pakketten met circulaire afhankelijkheden, een nieuwe markering **-usejs** is toegevoegd aan het importeren van opdrachtregelpakketten. Wanneer uitgevoerd, zal het JSEngine als gebruiken wanneer de pakketinvoer van de interface wordt uitgevoerd.
 
 ```
 nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
@@ -193,14 +193,14 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 * Probleem met synchronisatie verholpen bij het repliceren van bezorgings- en trackinglogboeken van Adobe Campaign Standard naar Adobe Campaign Classic. (NEO-10023)
 * Probleem verholpen met de afhandeling van Error- en Log-tabellen in Teradata toen een ETL-workflow werd hervat na een fout bij een snelle laadbewerking. De tabellen Error en Log worden nu op de juiste wijze verwijderd telkens wanneer de workflow wordt hervat. (NEO-10672)
 * Probleem verholpen na upgrade waarbij het Hive-pakket automatisch werd geïnstalleerd (nodig voor Hadoop) als het FDA-pakket is geïnstalleerd. (NEO-10592)
-* Probleem verholpen waarbij ongeldige domeinen werden behandeld als een **Niet gedefinieerd** fout. (NEO-10248)
+* Oplossing voor een fout die ongeldige domeinen als een **Niet gedefinieerd** fout. (NEO-10248)
 * Probleem verholpen waarbij logboekbestanden in de tabel deliveryLogStats werden gedupliceerd bij het verzenden van Anroid-pushleveringen. (NEO-10234)
 * Probleem verholpen waarbij bepaalde streepjescode-indelingen niet leesbaar werden door streepjescodescanners. (NEO-10125)
 * Probleem verholpen met de JavaScript-functie urlEncode wanneer niet-ASCII-tekens werden gebruikt. Zie de sectie &#39;Technische ontwikkelingen&#39; voor meer informatie. (NEO-10123)
 * Probleem verholpen bij het uitvoeren van een query, waaronder sha256-functies op Teradata-databases. (NEO-10119)
 * De fouten van het werkschemamegeheugen die in de activiteit SalesForce konden voorkomen wanneer het gebruiken van zeer grote lijsten SalesForce. (NEO-9900)
-* Probleem verholpen met de optie **complement** genereren bij het opgeven van workflowactiviteiten bij gebruik van FDA. (NEO-9878)
-* Probleem verholpen waarbij de meetgegevens **Verwerkt** en **Success** niet werden bijgewerkt op de marketinginstantie bij gebruik van midsourcing. (NEO-9454)
+* Probleem verholpen met de **Complement genereren** optie bij het toewijzen van workflowactiviteiten bij gebruik van FDA. (NEO-9878)
+* Het probleem dat tot **Verwerkt** en **Succes** metriek die niet op de marketinginstantie wordt bijgewerkt bij gebruik van mid-sourcing. (NEO-9454)
 * Regels inzake vaste interactienon-repropositie wanneer in het platform in totaal meer dan 10.000 aanbiedingen worden gedaan (NEO-9352)
 * Probleem verholpen waarbij het doel van een levering niet kon worden opgegeven bij gebruik van een extern XML-bestand. (NEO-9312)
 * Probleem verholpen dat tot workflowfouten kon leiden wanneer een hypothese over een aanbieding werd uitgevoerd en de status van het voorstel werd bijgewerkt. (NEO-9304)
