@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: 5a5f26f6-38da-4488-aadb-81fcb5359331
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Controleregels{#control-rules}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 ## Regels inzake analyse en arbitrage {#analysis-and-arbitration-control-rules}
 
@@ -30,11 +30,11 @@ Met een set regels voor verduistering kunt u gebruikelijke controles uitvoeren. 
 * **[!UICONTROL Validity period check]** (e-mail): controleert of de geldigheidsperiode van de levering lang genoeg is om alle berichten te verzenden.
 * **[!UICONTROL Proof size check]** (alle kanalen): genereert een foutbericht als de proefdoelpopulatie groter is dan 100 ontvangers.
 * **[!UICONTROL Wave scheduling check]** (e-mail): controleert of de laatste leveringsgolf volgens de planning vóór het einde van de geldigheidsperiode zal beginnen, als de levering in verschillende golven is opgesplitst.
-* **[!UICONTROL Unsubscription link approval]** (e-mail): controleert op de aanwezigheid van ten minste één niet-abonnements-URL (opt-out) in elke inhoud (HTML en Tekst).
+* **[!UICONTROL Unsubscription link approval]** (e-mail): controleert of er ten minste één niet-abonnements-URL (opt-out) in elke inhoud (HTML en Tekst) aanwezig is.
 
 ## Een besturingsregel maken {#creating-a-control-rule}
 
-Het is mogelijk om nieuwe controleregels tot stand te brengen om uw behoeften aan te passen. Om dit te doen, creeer een **[!UICONTROL Control]** typologieregel en ga de controleformule in SQL op **[!UICONTROL Code]** tabel in.
+Het is mogelijk om nieuwe controleregels tot stand te brengen om uw behoeften aan te passen. Hiertoe maakt u een **[!UICONTROL Control]** typologieregel en voer de besturingsformule in SQL in de **[!UICONTROL Code]** tab.
 
 **Voorbeeld:**
 
@@ -42,11 +42,11 @@ In het volgende voorbeeld, gaan wij een regel tot stand brengen om een aanbiedin
 
 Voer de volgende stappen uit:
 
-1. Maak een **[!UICONTROL Control]**-typologieregel. Selecteer een **[!UICONTROL Warning]** alarmniveau.
+1. Een **[!UICONTROL Control]** typologieregel. Selecteer een **[!UICONTROL Warning]** alarmniveau.
 
    ![](assets/campaign_opt_create_control_01.png)
 
-1. Voer op het tabblad **[!UICONTROL Code]** het script in om de gewenste drempelwaarde toe te passen, zoals hieronder wordt weergegeven:
+1. In de **[!UICONTROL Code]** voert u het script in om de gewenste drempelwaarde toe te passen, zoals hieronder wordt weergegeven:
 
    ![](assets/campaign_opt_create_control_02.png)
 
@@ -70,6 +70,6 @@ Voer de volgende stappen uit:
 
    ![](assets/campaign_opt_create_control_05.png)
 
-   Aan het einde van de analyse is de knop **[!UICONTROL Confirm delivery]** niet beschikbaar.
+   Aan het einde van de analyse **[!UICONTROL Confirm delivery]** is niet beschikbaar.
 
    ![](assets/campaign_opt_create_control_06.png)

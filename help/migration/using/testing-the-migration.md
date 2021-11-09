@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9ba2199eabf91381e87661f30c9af8aa0ce4cc26
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '729'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ U moet over een test-/ontwikkelomgeving beschikken om migratietests uit te voere
 1. Maak een steun van het gegevensbestand van de ontwikkelomgeving.
 1. Stop alle Adobe Campaign-processen op de ontwikkelingsinstantie.
 1. Maak een back-up van de database van de productieomgeving en herstel deze als ontwikkelomgeving.
-1. Alvorens de diensten van Adobe Campaign te beginnen, stel **vriesinstance.js** voorzichtigheidsmanuscript in werking dat u het gegevensbestand van om het even welke voorwerpen laat ontruimen die toen de steun werd begonnen in werking.
+1. Voordat u de Adobe Campaign-services start, voert u de **vriesinstantie.js** het waarschuwings manuscript dat u het gegevensbestand van om het even welke voorwerpen laat ontruimen die toen de steun werd begonnen in werking gesteld.
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -35,12 +35,12 @@ U moet over een test-/ontwikkelomgeving beschikken om migratietests uit te voere
 
    >[!NOTE]
    >
-   >Het bevel lanceert door gebrek op **dry** wijze, en maakt een lijst van alle verzoeken die door dat bevel werden uitgevoerd, zonder hen te lanceren. Als u waarschuwingen wilt uitvoeren, gebruikt u **run** in de opdracht.
+   >De opdracht wordt standaard gestart **drogen** en geeft een overzicht van alle aanvragen die door die opdracht zijn uitgevoerd, zonder deze te starten. Gebruik **run** in de opdracht.
 
 1. Zorg ervoor dat uw back-ups correct zijn door ze te herstellen. Zorg ervoor dat u toegang hebt tot uw database, tabellen, gegevens, enzovoort.
 1. Test de migratieprocedure in de ontwikkelomgeving.
 
-   De volledige procedures worden beschreven in de sectie [Voorwaarden voor migratie naar Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md).
+   De volledige procedures worden in de [Vereisten voor migratie naar Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) sectie.
 
 1. Als de migratie van de ontwikkelomgeving succesvol is, kunt u de productieomgeving migreren.
 
@@ -50,13 +50,13 @@ U moet over een test-/ontwikkelomgeving beschikken om migratietests uit te voere
 
 >[!NOTE]
 >
->Met de Adobe Campaign-updateopdracht (**postupgrade**) kunt u bronnen synchroniseren en schema&#39;s en de database bijwerken. Deze bewerking kan slechts eenmaal en alleen op de toepassingsserver worden uitgevoerd. Na het synchroniseren van middelen, laat **postupgrade** bevel u ontdekken of de synchronisatie om het even welke fouten of waarschuwingen produceert.
+>De opdracht Adobe Campaign-update (**postupgrade**) kunt u bronnen synchroniseren en schema&#39;s en de database bijwerken. Deze bewerking kan slechts eenmaal en alleen op de toepassingsserver worden uitgevoerd. Na het synchroniseren van bronnen, **postupgrade** laat u ontdekken of de synchronisatie om het even welke fouten of waarschuwingen produceert.
 
 ## Migratiehulpmiddelen {#migration-tools}
 
 Met verschillende opties kunt u de impact van een migratie meten en de mogelijke problemen identificeren. Deze opties moeten worden uitgevoerd:
 
-* in het **config** bevel:
+* in de **config** opdracht:
 
    ```
    nlserver.exe config <option> -instance:<instanceName>
@@ -70,11 +70,11 @@ Met verschillende opties kunt u de impact van een migratie meten en de mogelijke
 
 >[!NOTE]
 >
->U moet de **-instantie:`<instanceame>`** optie gebruiken. We raden u niet aan de optie **-allinstances** te gebruiken.
+>U moet de opdracht **-instance:`<instanceame>`** optie. We raden u niet aan het **-allinstances** optie.
 
 ### -showCustomEntities en -showDeletteEntities options {#showcustomentities-and--showdeletedentities-options}
 
-* Met de optie **-showCustomEntities** wordt de lijst met alle niet-standaardobjecten weergegeven:
+* De **-showCustomEntities** geeft de lijst met alle niet-standaardobjecten weer:
 
    ```
    nlserver.exe config -showCustomEntities -instance:<instanceName>
@@ -86,7 +86,7 @@ Met verschillende opties kunt u de impact van een migratie meten en de mogelijke
    xtk_migration:opsecurity2 xtk:entity
    ```
 
-* Met de optie **-showDeletteEntities** wordt de lijst weergegeven met alle standaardobjecten die ontbreken in de database of het bestandssysteem. Voor elk ontbrekend object wordt het pad opgegeven.
+* De **-showDeletteEntities** geeft de lijst weer van alle standaardobjecten die ontbreken in de database of het bestandssysteem. Voor elk ontbrekend object wordt het pad opgegeven.
 
    ```
    nlserver.exe config -showDeletedEntities -instance:<instanceName>
@@ -117,9 +117,9 @@ De volgende expressies worden gezocht (hoofdlettergevoelig):
 <table> 
  <thead> 
   <tr> 
-   <th> Expressie<br /> </th> 
+   <th> Uitdrukking<br /> </th> 
    <th> Foutcode<br /> </th> 
-   <th> Logtype<br /> </th> 
+   <th> Het type Log<br /> </th> 
    <th> Opmerkingen<br /> </th> 
   </tr> 
  </thead> 
@@ -128,7 +128,7 @@ De volgende expressies worden gezocht (hoofdlettergevoelig):
    <td> .@<br /> </td> 
    <td> PU-0001<br /> </td> 
    <td> Waarschuwing<br /> </td> 
-   <td> Dit type syntaxis wordt niet meer ondersteund in de personalisatie van de levering. Zie <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. Anders, controleer dat het waardetype correct is.<br /> </td> 
+   <td> Dit type syntaxis wordt niet meer ondersteund in de personalisatie van de levering. Zie <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. Anders moet u controleren of het waardetype correct is.<br /> </td> 
   </tr> 
   <tr> 
    <td> common.js<br /> </td> 
@@ -140,13 +140,13 @@ De volgende expressies worden gezocht (hoofdlettergevoelig):
    <td> aanmelden(<br /> </td> 
    <td> PU-0003<br /> </td> 
    <td> Waarschuwing<br /> </td> 
-   <td> Deze verbindingsmethode mag niet meer worden gebruikt. Zie <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">Identified web applications</a>.<br /> </td> 
+   <td> Deze verbindingsmethode mag niet meer worden gebruikt. Zie <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">Geïdentificeerde webtoepassingen</a>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> new SoapMethodCall(<br /> </td> 
+   <td> new SoapMethodCall()<br /> </td> 
    <td> PU-0004<br /> </td> 
    <td> Waarschuwing<br /> </td> 
-   <td> Deze functie wordt alleen ondersteund wanneer deze wordt gebruikt in JavaScript-code die wordt uitgevoerd vanuit een beveiligingszone in de modus <strong>sessionTokenOnly</strong>.<br /> </td> 
+   <td> Deze functie wordt alleen ondersteund wanneer deze wordt gebruikt in JavaScript-code die wordt uitgevoerd vanuit een beveiligingszone die zich in <strong>sessionTokenOnly</strong> in.<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
@@ -158,13 +158,15 @@ De volgende expressies worden gezocht (hoofdlettergevoelig):
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
    <td> Fout<br /> </td> 
-   <td> Dit type fout leidt tot een migratiefout. Zie <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Raadpleeg <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Campagne configureren</a>.<br /> als u foutlogboeken voor webtoepassingen met een overzicht krijgt (migratie vanaf v6.02). </td> 
+   <td> Dit type fout leidt tot een migratiefout. Zie <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Als u foutlogbestanden voor webtoepassingen met een overzichtstype krijgt (migratie vanuit v6.02), raadpleegt u <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Campagne configureren</a>.<br /> </td> 
   </tr>
   <tr> 
    <td> crmDeploymentType="onpremise"<br /> </td> 
    <td> PU-0007<br /> </td> 
    <td> Fout<br /> </td> 
-   <td> Dit type implementatie wordt niet meer ondersteund. Office 365 en het On-premise type van de schakelaarplaatsing van Microsoft CRM zijn nu afgekeurd</a>. Als u wilt overschakelen op een Web API-implementatie, raadpleegt u <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webtoepassingen</a>.<br /> </td>
+   <td> Dit type implementatie wordt niet meer ondersteund. Office 365 en On-premise Microsoft CRM de schakelaarplaatsingstype zijn nu afgekeurd. 
+   </br>Als u een van deze verouderde implementatietypen gebruikt in een externe account, moet deze externe account worden verwijderd en moet u vervolgens het volgende uitvoeren <b>postupgrade</b> gebruiken. 
+   </br>Als u wilt overschakelen op de webAPI-implementatie, raadpleegt u <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webtoepassingen</a>.<br /> </td>
   </tr> 
  </tbody> 
 </table>
