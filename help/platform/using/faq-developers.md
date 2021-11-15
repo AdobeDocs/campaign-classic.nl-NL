@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 100%
+source-wordcount: '523'
+ht-degree: 98%
 
 ---
 
@@ -65,4 +65,4 @@ Het principe van datapakketten is een dataconfiguratie te exporteren en deze in 
 
 ## Waar vind ik de lijst met Campaign Classic-API’s? {#where-can-i-find-the-list-of-campaign-classic-apis}
 
-Alle Campaign-API’s, inclusief de volledige beschrijving, zijn beschikbaar in deze [specifieke documentatie](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
+Alle Campaign-API’s, inclusief de volledige beschrijving, zijn beschikbaar in deze [specifieke documentatie](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).

@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: sending-push-notifications
 version: Classic v7
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: c58daacb76f90478e218fe97008f3e263d8c76a1
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 0%
+source-wordcount: '1016'
+ht-degree: 1%
 
 ---
 
@@ -18,19 +18,25 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-Campagne-SDK&#39;s voor iOS en Android zijn een van de onderdelen van de module Mobile App Channel.
+Campagne-SDK&#39;s voor iOS en Android zijn een van de componenten van de Mobile App Channel-module.
 
 >[!NOTE]
 >
->Neem contact op met de [klantenservice van Adobe](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) om de Campagne SDK (voorheen bekend als Neolane SDK) op te halen.
+>Neem contact op met de [Adobe Klantenservice](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
 
 Het doel van de SDK is de integratie van een mobiele toepassing in het Adobe Campaign-platform te vergemakkelijken.
 
-Raadpleeg de [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#MobileSDK) voor meer informatie over de verschillende ondersteunde Android- en iOS-versies.
+Raadpleeg voor meer informatie over de verschillende ondersteunde Android- en iOS-versies de [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#MobileSDK).
+
+>[!NOTE]
+>
+>U kunt de Adobe Experience Platform mobile SDK ook gebruiken door de Adobe Campaign-extensie te configureren in Adobe Launch. [Meer informatie in de documentatie van Adobe Experience Platform](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic){target=&quot;_blank&quot;}.
+>
+>Leer hoe u de Adobe Experience Platform Mobile SDK configureert en installeert [in deze video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/configure-push-using-aep-mobile-sdk.html?lang=en){target=&quot;_blank&quot;}.
 
 ## Campagne SDK laden {#loading-campaign-sdk}
 
-* **In Android**: moet  **neolane_sdk-release.** aarfile met het project worden verbonden.
+* **In Android**: de **neolane_sdk-release.aar** bestand moet aan het project zijn gekoppeld.
 
    Met de volgende machtiging krijgt u toegang tot de Adobe Campaign-server:
 
@@ -50,11 +56,11 @@ Raadpleeg de [Compatibiliteitsmatrix](../../rn/using/compatibility-matrix.md#Mob
 
    Vanaf versie 1.0.26 van de SDK wordt deze machtiging niet meer gebruikt.
 
-* **In iOS**: de  **libNeolaneSDK.** and  **Neolane_SDK.** hfiles moeten aan het project worden gekoppeld. Vanaf versie 1.0.24 van de SDK wordt de optie **ENABLE_BITCODE** geactiveerd.
+* **In iOS**: de **libNeolaneSDK.a** en **Neolane_SDK.h** bestanden moeten aan het project zijn gekoppeld. Vanaf versie 1.0.24 van de SDK is de optie **ENABLE_BITCODE** is geactiveerd.
 
    >[!NOTE]
    >
-   >Voor versie 1.0.25 van de SDK zijn de vier architecturen beschikbaar in het bestand **Neolane_SDK.h**.
+   >Voor versie 1.0.25 van de SDK zijn de vier architecturen beschikbaar in de **Neolane_SDK.h** bestand.
 
 ## Integratie-instellingen declareren {#declaring-integration-settings}
 
@@ -64,9 +70,9 @@ Als u de campagne-SDK wilt integreren in de mobiele toepassing, moet de function
 
    >[!NOTE]
    >
-   >Deze integratietoets wordt ingevoerd in de Adobe Campaign-console, op het tabblad **[!UICONTROL Information]** van de service die is toegewezen aan de mobiele toepassing. Zie [Een mobiele toepassing configureren in Adobe Campaign](configuring-the-mobile-application.md).
+   >Deze integratiesleutel wordt ingevoerd in de Adobe Campaign-console, in de **[!UICONTROL Information]** servicetabblad voor de mobiele toepassing. Zie [Een mobiele toepassing configureren in Adobe Campaign](configuring-the-mobile-application.md).
 
-* **Een URL** voor bijhouden: die overeenkomt met het adres van de Adobe Campaign-trackingserver.
+* **Een URL voor bijhouden**: die overeenkomt met het adres van de Adobe Campaign-trackingserver.
 * **Een marketing-URL**: om de inzameling van abonnementen toe te laten.
 
 * **In Android**:
@@ -108,7 +114,7 @@ Met de registratiefunctie kunt u:
    }
    ```
 
-   Als u FCM (Firebase Cloud Messaging) gebruikt, raden we u aan de functie **registerDevice** te gebruiken wanneer u de functie **onTokenRefresh** aanroept om Adobe Campaign op de hoogte te brengen van de wijziging in het token voor mobiele apparaten van de gebruiker.
+   Als u FCM (Firebase Cloud Messaging) gebruikt, raden we u aan de **registerDevice** functie wanneer het roepen van **onTokenRefresh** om Adobe Campaign op de hoogte te brengen van de wijziging in het token voor mobiele apparaten van de gebruiker.
 
    ```
    public class NeoTripFirebaseInstanceIDService extends FirebaseInstanceIdService {
@@ -148,7 +154,7 @@ Met de registratiefunctie kunt u:
 
    Met de trackingfuncties kunt u berichtactities (geopend) en berichtweergaven (screenshot) bijhouden.
 
-   Volg de onderstaande implementatie om de berichtweergave te volgen (uitgevoerd door de functie **notifyReceive** van de SDK aan te roepen). Als u FCM (Firebase Cloud Messaging) gebruikt, raden we u aan de functie **notifyReceive** te gebruiken wanneer de functie **onMessageReceived** door het Android-systeem wordt aangeroepen.
+   Om de berichtvertoning te volgen (door te roepen wordt gedaan **notifyReceive** (functie van de SDK) volgt u de implementatie hieronder. Als u FCM (Firebase Cloud Messaging) gebruikt, raden we u aan de **notifyReceive** wanneer de **onMessageReceived** wordt aangeroepen door het Android-systeem.
 
    ```
    package com.android.YourApplication;
@@ -244,7 +250,7 @@ Met de registratiefunctie kunt u:
    }
    ```
 
-   Hier volgt een implementatievoorbeeld voor het bijhouden van een bericht dat is geopend (uitgevoerd door het aanroepen van de functie **notifyOpening** van de SDK). De **NotificationActivity**-klasse komt overeen met de klasse die wordt gebruikt om het **notifIntent**-object in het vorige voorbeeld te maken.
+   Hier volgt een implementatievoorbeeld voor het bijhouden van een bericht dat is geopend (uitgevoerd door het aanroepen van de **notifyOpening** functie van de SDK). De **NotificationActivity** De klasse komt overeen met de klasse die is gebruikt om de **notifIntent** in het vorige voorbeeld.
 
    ```
    public class NotificationActivity extends Activity {
@@ -292,11 +298,11 @@ Met de registratiefunctie kunt u:
 
    >[!NOTE]
    >
-   >Vanaf versie 7.0, zodra de functie **application:didReceiveRemoteNotification:fetchCompletionHandler** is geïmplementeerd, roept het besturingssysteem deze functie alleen aan. De functie **application:didReceiveRemoteNotification** wordt daarom niet aangeroepen.
+   >Vanaf versie 7.0 **toepassing:didReceiveRemoteNotification:fetchCompletionHandler** -functie wordt geïmplementeerd, roept het besturingssysteem alleen deze functie aan. De **application:didReceiveRemoteNotification** functie wordt daarom niet aangeroepen.
 
 ## Beheer van stille meldingen {#silent-notification-tracking}
 
-Met iOS kunt u geen meldingen verzenden, een melding of gegevens die rechtstreeks naar een mobiele toepassing worden verzonden zonder deze weer te geven. Met Adobe Campaign kun je ze volgen.
+Met iOS kunt u meldingen op de achtergrond verzenden, een melding of gegevens die rechtstreeks naar een mobiele toepassing worden verzonden zonder deze weer te geven. Met Adobe Campaign kun je ze volgen.
 
 Volg het onderstaande voorbeeld om je melding op te volgen:
 
@@ -340,17 +346,17 @@ Volg het onderstaande voorbeeld om je melding op te volgen:
 >
 >Dit is exclusief voor iOS.
 
-In iOS, staat het afgevaardigde protocol u toe om het resultaat van **registerDevice** vraag te krijgen en kan worden gebruikt om te weten of een fout tijdens registratie voorkwam.
+In iOS, staat het afgevaardigde protocol u toe om het resultaat van te krijgen **registerDevice** aanroep en kan worden gebruikt om te weten of er een fout is opgetreden tijdens de registratie.
 
-Het prototype **registerDeviceStatus** is:
+De **registerDeviceStatus** prototype is:
 
 ```
 - (void) registerDeviceStatus: (ACCRegisterDeviceStatus) status:(NSString *) errorReason;
 ```
 
-**Met** Status kunt u weten of een registratie is geslaagd of dat er een fout is opgetreden.
+**Status** Hiermee kunt u zien of een registratie is geslaagd of een fout is opgetreden.
 
-**** ErrorReasonBiedt u meer informatie over de fouten die voorkwamen. Raadpleeg de onderstaande tabel voor meer informatie over beschikbare fouten en beschrijvingen.
+**ErrorReason** biedt u meer informatie over de fouten die zijn opgetreden. Raadpleeg de onderstaande tabel voor meer informatie over beschikbare fouten en beschrijvingen.
 
 <table> 
  <thead>
@@ -363,38 +369,38 @@ Het prototype **registerDeviceStatus** is:
  <tbody>
   <tr>
    <td> ACCRegisterDeviceStatusSuccess <br /> </td>
-   <td> Registratie geslaagd<br /> </td>
-   <td> EMPTY<br /> </td>
+   <td> Registratie voltooid<br /> </td>
+   <td> LEEG<br /> </td>
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailedMarketingServerHostnameEmpty <br /> </td>
    <td> De hostnaam van de ACC-marketingserver is leeg of niet ingesteld.<br /> </td>
-   <td> EMPTY<br /> </td>
+   <td> LEEG<br /> </td>
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailedIntegrationKeyEmpty <br /> </td>
-   <td> De integratiesleutel is leeg of niet ingesteld.<br /> </td>
-   <td> EMPTY<br /> </td>
+   <td> De integratietoets is leeg of niet ingesteld.<br /> </td>
+   <td> LEEG<br /> </td>
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailedConnectionIssue<br /> </td>
    <td> Verbindingsprobleem met ACC<br /> </td>
-   <td> Meer informatie (in de huidige taal van het besturingssysteem)<br /> </td>
+   <td> Meer informatie (in huidige taal van besturingssysteem)<br /> </td>
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailedUnknownUID<br /> </td>
    <td> De opgegeven UUID (integratiesleutel) is onbekend.<br /> </td>
-   <td> EMPTY<br /> </td>
+   <td> LEEG<br /> </td>
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailedUnexpectedError<br /> </td>
-   <td> Onverwachte fout geretourneerd naar ACC-server.<br /> </td>
-   <td> Het foutbericht dat wordt geretourneerd aan ACC.<br /> </td>
+   <td> Onverwachte fout die aan server ACC is teruggekeerd.<br /> </td>
+   <td> The error message returned to ACC.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-**De definitie van Neolane_** SDKDelegateprotocol en  **** registerDeviceStatusdelegate ziet er als volgt uit:
+**Neolane_SDKDelegate** protocol en **registerDeviceStatus** gedelegeerde definitie is als volgt:
 
 ```
 //  Neolane_SDK.h
@@ -426,9 +432,9 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 @end
 ```
 
-Ga als volgt te werk om **registerDeviceStatus**-gedelegeerde te implementeren:
+Om **registerDeviceStatus** afgevaardigde, volg deze stappen:
 
-1. Implementeer **setDelegate** tijdens de SDK-initialisatie.
+1. Implementeer de **setDelegate** tijdens de SDK-initialisatie.
 
    ```
    // AppDelegate.m
@@ -457,7 +463,7 @@ Ga als volgt te werk om **registerDeviceStatus**-gedelegeerde te implementeren:
    }
    ```
 
-1. Voeg het protocol in **@interface** van uw klasse toe.
+1. Voeg het protocol in toe **@interface** van uw klas.
 
    ```
    //  AppDelegate.h
@@ -479,7 +485,7 @@ Ga als volgt te werk om **registerDeviceStatus**-gedelegeerde te implementeren:
    }
    ```
 
-1. Voer de afgevaardigde in **AppDelegate** uit.
+1. Voer de afgevaardigde in uit **AppDelegate**.
 
    ```
    //  AppDelegate.m
@@ -532,7 +538,7 @@ Ga als volgt te werk om **registerDeviceStatus**-gedelegeerde te implementeren:
 
 ## Variabelen {#variables}
 
-Met de variabelen kunt u het gedrag van mobiele toepassingen definiëren nadat u een melding hebt ontvangen. Deze variabelen moeten worden gedefinieerd in de code voor mobiele toepassingen en in de Adobe Campaign-console, op het tabblad **[!UICONTROL Variables]** in de toegewijde service voor mobiele toepassingen (zie [Een mobiele toepassing configureren in Adobe Campaign](configuring-the-mobile-application.md)). Hier is een voorbeeld van een code waarmee een mobiele toepassing toegevoegde variabelen in een melding kan verzamelen. In ons voorbeeld gebruiken we de variabele &quot;VAR&quot;.
+Met de variabelen kunt u het gedrag van mobiele toepassingen definiëren nadat u een melding hebt ontvangen. Deze variabelen moeten worden gedefinieerd in de mobiele toepassingscode en in de Adobe Campaign-console, in het **[!UICONTROL Variables]** in de toegewijde mobiele toepassingsservice (zie [Een mobiele toepassing configureren in Adobe Campaign](configuring-the-mobile-application.md)). Hier is een voorbeeld van een code waarmee een mobiele toepassing toegevoegde variabelen in een melding kan verzamelen. In ons voorbeeld gebruiken we de variabele &quot;VAR&quot;.
 
 * **In Android**:
 
@@ -620,7 +626,7 @@ Op dit niveau moet u:
 
 * Wijs de extensie van de inhoud toe aan de categorie die door Adobe Campaign is verzonden:
 
-   Als u wilt dat uw mobiele toepassing een afbeelding weergeeft, kunt u de categoriewaarde instellen op &quot;image&quot; in Adobe Campaign en in uw mobiele toepassing, maakt u een meldingsextensie met de parameter **UNNotificationExtensionCategory** ingesteld op &quot;image&quot;. Wanneer het pushbericht op het apparaat wordt ontvangen, wordt de extensie aangeroepen op basis van de gedefinieerde categoriewaarde.
+   Als u een afbeelding wilt weergeven in uw mobiele toepassing, kunt u de categoriewaarde instellen op &quot;image&quot; in Adobe Campaign en in uw mobiele toepassing, maakt u een meldingsextensie met de optie **UNNotificationExtensionCategory** parameter ingesteld op &quot;image&quot;. Wanneer het pushbericht op het apparaat wordt ontvangen, wordt de extensie aangeroepen op basis van de gedefinieerde categoriewaarde.
 
 * De lay-out voor uw melding definiëren
 

@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 4%
+source-wordcount: '655'
+ht-degree: 3%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 4%
 
 De Adobe Campaign-toepassingsserver is ontworpen voor openheid en eenvoudige integratie met steeds meer uiteenlopende en complexe bedrijfsinformatiesystemen.
 
-Adobe Campaign API&#39;s worden gebruikt in JavaScript binnen de toepassing en in SOAP daarbuiten. Ze vormen een bibliotheek van algemene functies die kunnen worden verrijkt. Raadpleeg [SOAP-methoden implementeren](../../configuration/using/implementing-soap-methods.md) voor meer informatie.
+Adobe Campaign API&#39;s worden gebruikt in JavaScript binnen de toepassing en in SOAP daarbuiten. Ze vormen een bibliotheek van algemene functies die kunnen worden verrijkt. Zie voor meer informatie [SOAP-methoden implementeren](../../configuration/using/implementing-soap-methods.md).
 
 >[!IMPORTANT]
 >
 >Het aantal geoorloofde Vraag van de Motor varieert per dag op uw vergunningscontract. Raadpleeg [deze pagina](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html) voor meer informatie.\
->Een lijst van alle APIs met hun volledige beschrijving is beschikbaar in [deze specifieke documentatie](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
+>Een lijst met alle API&#39;s, inclusief de volledige beschrijving ervan, is beschikbaar in [deze speciale documentatie](https://experienceleague.adobe.com/developer/campaign-api/api/index.html.
 
 ## Vereisten {#prerequisites}
 
@@ -41,7 +41,7 @@ Voordat u de Adobe Campaign API&#39;s kunt gebruiken, moet u vertrouwd zijn met 
 Adobe Campaign gebruikt twee typen API&#39;s:
 
 * Algemene API&#39;s voor gegevenstoegang voor het opvragen van gegevens in het datamodel. Zie [Gegevensgeoriënteerde API&#39;s](../../configuration/using/data-oriented-apis.md).
-* Bedrijfs specifieke APIs die u op elk voorwerp laten handelen: leveringen, workflows, abonnementen, enz. Raadpleeg [Zakelijke georiënteerde API&#39;s](../../configuration/using/business-oriented-apis.md).
+* Bedrijfs specifieke APIs die u op elk voorwerp laten handelen: leveringen, workflows, abonnementen, enz. Zie [Bedrijfs-georiënteerde APIs](../../configuration/using/business-oriented-apis.md).
 
 Om APIs te ontwikkelen en met Adobe Campaign in wisselwerking te staan, moet u met uw datamodel vertrouwd zijn. Met Adobe Campaign kunt u een volledige beschrijving van de basis genereren. Zie [Beschrijving van het model](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
@@ -68,7 +68,7 @@ In het volgende schema ziet u de verschillende bronnen die betrokken zijn bij he
 
 In dit voorbeeld, roept een vraag van de ZEEP de &quot;ExecuteQuery&quot;methode aan, die een karakterkoord als parameter voor authentificatie (zittingsteken) en een inhoud van XML voor de beschrijving van de uit te voeren vraag neemt.
 
-Raadpleeg [ExecuteQuery (xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-) voor meer informatie.
+Zie voor meer informatie [ExecuteQuery (xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-).
 
 >[!NOTE]
 >
@@ -92,13 +92,13 @@ Raadpleeg [ExecuteQuery (xtk:queryDef)](../../configuration/using/data-oriented-
 </SOAP-ENV:Envelope>
 ```
 
-Het element `<soap-env:envelope>` is het eerste element van het bericht dat de envelop van de ZEEP vertegenwoordigt.
+De `<soap-env:envelope>` element is het eerste element van het bericht dat de envelop van de ZEEP vertegenwoordigt.
 
-Het `<soap-env:body>` element is het eerste kindelement van de envelop. Het bevat de beschrijving van het bericht, d.w.z. de inhoud van de vraag of de reactie.
+De `<soap-env:body>` element is het eerste onderliggende element van de envelop. Het bevat de beschrijving van het bericht, d.w.z. de inhoud van de vraag of de reactie.
 
-De aan te roepen methode is ingegaan in het `<executequery>` element van het lichaam van het bericht van de ZEEP.
+De methode die moet worden aangeroepen, wordt ingevoerd in het `<executequery>` -element uit de hoofdtekst van het SOAP-bericht.
 
-In SOAP worden de parameters op volgorde van weergave herkend. De eerste parameter, `<__sessiontoken>`, neemt de authentificatieketen, de tweede parameter is de beschrijving van XML van de vraag van het `<querydef>` element.
+In SOAP worden de parameters op volgorde van weergave herkend. De eerste parameter, `<__sessiontoken>`, neemt de authentificatieketen, is de tweede parameter de beschrijving van XML van de vraag van `<querydef>` element.
 
 ### SOAP-reactie {#soap-response}
 
@@ -115,7 +115,7 @@ In SOAP worden de parameters op volgorde van weergave herkend. De eerste paramet
 </SOAP-ENV:Envelope>
 ```
 
-Het resultaat van de query wordt ingevoerd vanuit het element `<pdomoutput>`.
+Het resultaat van de query wordt ingevoerd vanuit het `<pdomoutput>` element.
 
 ## Foutbeheer {#error-management}
 
@@ -135,7 +135,7 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 </SOAP-ENV:Envelope>
 ```
 
-Het element `<soap-env:fault>` in de hoofdtekst van het SOAP-bericht wordt gebruikt om de foutsignalen over te brengen die optreden tijdens de verwerking van de webservice. Dit bestaat uit de volgende subelementen:
+De `<soap-env:fault>` -element in de hoofdtekst van het SOAP-bericht wordt gebruikt om de foutsignalen over te brengen die optreden tijdens de verwerking van de webservice. Dit bestaat uit de volgende subelementen:
 
 * `<faultcode>` : Hiermee wordt het type fout aangegeven. De fouttypen zijn:
 
@@ -147,7 +147,7 @@ Het element `<soap-env:fault>` in de hoofdtekst van het SOAP-bericht wordt gebru
 * `<faultstring>` : bericht waarin de fout wordt beschreven
 * `<detail>` : lang foutbericht
 
-Het succes of de mislukking van de de dienstaanroeping wordt geïdentificeerd wanneer het `<faultcode>` element wordt geverifieerd.
+Het succes of de mislukking van de de dienstaanroeping wordt geïdentificeerd wanneer `<faultcode>` element is geverifieerd.
 
 >[!IMPORTANT]
 >
@@ -177,4 +177,4 @@ De server-URL is als volgt:
 
 https://serverName/nl/jsp/soaprouter.jsp
 
-Met **`<server>`** de Adobe Campaign-toepassingsserver (**nlserver web**).
+Met **`<server>`** de Adobe Campaign-toepassingsserver (**nlserver-web**).

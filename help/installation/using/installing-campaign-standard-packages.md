@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
+source-git-commit: 6c23dadb5b6523e17e242de43a908ca86ed7cc23
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1188'
 ht-degree: 6%
 
 ---
@@ -28,18 +28,20 @@ De ingebouwde pakketten bevatten een reeks eigenschappen die volgens uw behoefte
 >Het installeren van een nieuw pakket kan al uw platform beïnvloeden: het moet worden getest en gevalideerd vóór de definitieve implementatie.
 >
 >Nadat een pakket is geïnstalleerd, kunt u het niet verwijderen.
+>
+>Neem als gehoste of hybride klant contact op met Adobe om een nieuw ingebouwd pakket te implementeren.
 
 Een ingebouwd pakket installeren:
 
-1. Open de wizard voor het importeren van pakketten vanuit **[!UICONTROL Tools > Advanced > Import package]** in de Adobe Campaign-clientconsole.
+1. De wizard Pakket importeren openen vanuit **[!UICONTROL Tools > Advanced > Import package]** in de Adobe Campaign-clientconsole.
 1. Selecteer **[!UICONTROL Install a standard package]**.
 1. Controleer in de pakketlijst de pakketten die u wilt installeren.
    >[!NOTE]
    >
    >Wanneer een pakket grijs wordt weergegeven, betekent dit dat het al is geïnstalleerd of niet compatibel is met uw instantie. De compatibiliteit wordt in de onderstaande tabel beschreven.
-1. Klik **[!UICONTROL Next]**, dan **[!UICONTROL Start]** om de pakketinstallatie te beginnen.
+1. Klikken **[!UICONTROL Next]** vervolgens **[!UICONTROL Start]** om de pakketinstallatie te starten.
 
-   Zodra de pakketten worden geïnstalleerd, toont de vooruitgangsbar **100%** en u kunt het volgende bericht in de installatielogboeken zien: **[!UICONTROL Installation of packages successful]**.
+   Nadat de pakketten zijn geïnstalleerd, wordt op de voortgangsbalk weergegeven **100%** en u kunt het volgende bericht in de installatielogboeken zien: **[!UICONTROL Installation of packages successful]**.
 
 1. **[!UICONTROL Close]** het installatievenster.
 
@@ -69,7 +71,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
    <td> Marketing</td>
   </tr> 
   <tr> 
-   <td> Marketingbronnen (MRM)<br /> </td> 
+   <td> Marketing resources (MRM)<br /> </td> 
    <td> Controls marketing actions op een samenwerkingswijze door beheer en het volgen van de taken, de begrotingen en de marketing middelen te verstrekken. <a href="../../mrm/using/about-marketing-resource-management.md">Meer informatie</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
@@ -100,12 +102,12 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
    <td> Alles</td> 
   </tr> 
   <tr> 
-   <td> Transactieberichtencontrole (Berichtcentrum - Besturing)<br /> </td> 
+   <td> Transactionaal berichtenbeheer (Berichtcentrum - Controle)<br /> </td> 
    <td> Beheert triggerberichten die worden gegenereerd door gebeurtenissen die worden geactiveerd door informatiesystemen. Optioneel. <a href="../../message-center/using/about-transactional-messaging.md">Meer informatie</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Transactiebericht-uitvoering (Berichtcentrum - Uitvoering) <br /> </td> 
+   <td> Transactiebericht uitvoeren (Berichtcentrum - Uitvoering) <br /> </td> 
    <td> Zorgt voor hogere beschikbaarheid en beter beheer van de belasting. Optioneel. <a href="../../message-center/using/about-transactional-messaging.md">Meer informatie</a><br /> </td> 
    <td> Uitvoering<br /> </td>
   </tr> 
@@ -140,7 +142,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
    <td> </td>
   </tr> 
   <tr> 
-   <td> Online enquêtes (Beoordelingsmanager)<br /> </td> 
+   <td> Online enquêtes (Enquêtemanager)<br /> </td> 
    <td> Hiermee maakt en beheert u onlineformulieren voor het toevoegen of wijzigen van profielgegevens, voor het abonneren, voor het opzeggen van abonnementen of voor het invoeren van wedstrijden. Optioneel. <a href="../../surveys/using/about-surveys.md">Meer informatie</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
@@ -165,7 +167,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Bewaking van de aflevering (e-maillevering)<br /> </td> 
+   <td> Leverbaarheidscontrole (e-maillevering)<br /> </td> 
    <td> Meet het succes van uw campagnes die uw ontvangers' inbox zonder stuitend bereiken, of als spam worden gemerkt. Optioneel. <a href="../../delivery/using/about-deliverability.md">Meer informatie</a> <br /> </td> 
    <td> Alles </td> 
   </tr> 
@@ -190,7 +192,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Web Analytics-connectors<br /> </td> 
+   <td> Webanalytische connectors<br /> </td> 
    <td> Hiermee staat u Adobe Campaign en Adobe Analytics toe om te communiceren via het connectorpakket Web Analytics. Niet compatibel met Transactioneel overseinen (het pakket van het Centrum van het Bericht). <a href="../../platform/using/adobe-analytics-connector.md">Meer informatie</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
@@ -200,7 +202,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Adobe Experience Cloud-integratie van gedeelde soorten publiek<br /> </td> 
+   <td> Integratie van Adobe Experience Cloud-publiek<br /> </td> 
    <td> Hiermee kunt u soorten publiek/segmenten uitwisselen en delen met Adobe Experience Cloud-oplossingen en kernservices. Vereist IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Meer informatie</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
@@ -215,7 +217,7 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
    <td> Alles</td> 
   </tr> 
   <tr> 
-   <td> Overdracht naar middelste bron <br /> </td> 
+   <td> Overschakelen naar middelmatig bronnen <br /> </td> 
    <td> Geeft details over de installatie en configuratie van een server voor midsourcing, alsook over de implementatie van een instantie die derden in staat stelt berichten te verzenden in de modus voor midsourcing. Optioneel. <a href="../../installation/using/mid-sourcing-server.md">Meer informatie</a> <br /> </td> 
    <td> Marketing </td> 
   </tr> 
@@ -241,14 +243,14 @@ In de volgende tabel worden alle ingebouwde pakketten voor campagnes weergegeven
 
 U moet leveringskanalen installeren (E-mail, Mobiel kanaal, Mobiel App-kanaal, enz.) voordat u het Transactiebericht installeert (Message Center-pakket). Als u een project van het Centrum van het Bericht van het e-mail-enige bent begonnen, en een nieuw kanaal daarna moet toevoegen, moet u deze stappen volgen:
 
-1. Installeer het nieuwe kanaal, bijvoorbeeld het **Mobiel kanaal**, met de wizard Pakket importeren ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
-1. Importeer het bestand ( **[!UICONTROL Tools > Advanced > Import package > File]**) en selecteer:
+1. Installeer het nieuwe kanaal, bijvoorbeeld **Mobiel kanaal**, met de wizard Pakket importeren ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
+1. Het bestand importeren ( **[!UICONTROL Tools > Advanced > Import package > File]**) en selecteer:
 
    ```
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. Bewaar in **[!UICONTROL XML data content to import]** alleen de leveringssjabloon van het Berichtencentrum die overeenkomt met het gerelateerde kanaal. Als u bijvoorbeeld het **Mobiel kanaal** hebt toegevoegd, houdt u alleen het **entities**-element dat overeenkomt met de **[!UICONTROL Mobile transactional message]** (smsTriggerMessage)-sjabloon. Als u de **Mobile App Channel** hebt toegevoegd, bewaart u alleen het **iOS-transactiebericht**-sjablonen (iosTriggerMessage) en **Transactiebericht voor Android** (androidTriggerMessage).
+1. In de **[!UICONTROL XML data content to import]**, slechts het leveringsmalplaatje houden van het Centrum van het Bericht dat aan het verwante kanaal beantwoordt. Als u bijvoorbeeld de opdracht **Mobiel kanaal**, alleen de **entiteiten** element dat overeenkomt met het **[!UICONTROL Mobile transactional message]** (smsTriggerMessage) sjabloon. Als u de **Mobiel App-kanaal**, alleen de **Transactiebericht van iOS** sjablonen (iosTriggerMessage) en **Transactiebericht van Android** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
 

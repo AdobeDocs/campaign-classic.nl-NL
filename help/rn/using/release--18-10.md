@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '2369'
+source-wordcount: '2366'
 ht-degree: 7%
 
 ---
@@ -146,7 +146,7 @@ ht-degree: 7%
 
 **Verbeteringen**
 
-* Campaign Classic API’s zijn nu beschikbaar op een [speciale pagina](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html). Als u het bestand jsapi.chm gebruikte, moet u nu naar de nieuwe onlineversie verwijzen.
+* Campaign Classic API’s zijn nu beschikbaar op een [speciale pagina](https://experienceleague.adobe.com/developer/campaign-api/api/index.html). Als u het bestand jsapi.chm gebruikte, moet u nu naar de nieuwe onlineversie verwijzen.
 * PostgreSQL 10, Debian 9 en Teradata 16.20 worden nu ondersteund. Raadpleeg de [compatibiliteitsmatrix](https://helpx.adobe.com/nl/campaign/kb/compatibility-matrix.html).
 * Wanneer u een SFTP-verbinding maakt, kunt u nu proxyverificatie gebruiken. Raadpleeg voor meer informatie de [gedetailleerde documentatie](../../installation/using/file-res-management.md) (NEO-9868)
 * De **Datumberekeningsformule** Deze optie is nu beschikbaar in de leveringseigenschappen wanneer u één levering maakt met behulp van de sjabloon voor directe verzending. (NEO-9792)
@@ -211,7 +211,7 @@ Deze indexveranderingen kunnen tot een toename van de tijd leiden die wordt vere
 * Probleem verholpen waarbij sommige trackinglogboeken werden gekoppeld aan de verkeerde levering. (NEO-11412)
 * Probleem verholpen waarbij sommige delen van de leveringslogs langer dan verwacht in behandeling zouden kunnen blijven. (NEO-11336)
 * Oplossing voor een fout die optrad bij het bewerken van een query om een coupon aan een levering toe te voegen. (NEO-11037)
-* Probleem verholpen in rapporten die ervoor zorgden dat de grafieken altijd de som van de waarden berekenden, ongeacht welke geaggregeerde operator werd geselecteerd. (NEO-10913)
+* Probleem verholpen in rapporten die ervoor zorgden dat de grafieken altijd de som van de waarden berekenden, ongeacht de geaggregeerde operator die werd geselecteerd. (NEO-10913)
 * Aangezien de &quot;request.scheme&quot;functie wordt afgekeurd, is het verwijderd uit de documentatie JSAPI. (NEO-10828)
 * Probleem verholpen waardoor sommige gebruikers met specifieke configuraties voor tijdzones zich niet konden aanmelden bij Adobe Campaign. (NEO-10712)
 * Probleem verholpen die optrad bij het instellen van een externe account voor een mobiel kanaal met behulp van de uitgebreide algemene SMPP-connector: als u het gebruiken van verschillende parameters voor de ontvanger specificeerde, zou de zender die parameters verkeerd gebruiken in plaats van zijn eigen parameters.

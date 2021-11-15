@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 89494165a59c0ba6119f37d41893fd0e8733f47d
-workflow-type: ht
-source-wordcount: '1657'
-ht-degree: 100%
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+workflow-type: tm+mt
+source-wordcount: '1651'
+ht-degree: 99%
 
 ---
 
@@ -106,7 +106,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
    </tr>
    <tr>
    <td>Documentatie van Campaign-API’s - jsapi.chm-bestand</td>
-   <td>Vanaf de release van Campaign 19.1 zijn Campaign Classic-API’s beschikbaar op een specifieke pagina. Als u het verouderde bestand jsapi.chm gebruikte, moet u nu naar <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">de nieuwe onlineversie</a> verwijzen.</td>
+   <td>Vanaf de release van Campaign 19.1 zijn Campaign Classic-API’s beschikbaar op een specifieke pagina. Als u het verouderde bestand jsapi.chm gebruikte, moet u nu naar <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html">de nieuwe onlineversie</a> verwijzen.</td>
   </tr> 
   <tr> 
    <td>Campaign-orkestrering - predictive marketing</td>
@@ -123,7 +123,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die uit Campaign Class
   <tr> 
    <td>decryptString API</td>
    <td><p>Vanaf de release van Campaign 18.6 is de <em>decryptString</em> API om veiligheidsredenen standaard niet meer beschikbaar voor nieuwe installaties.</p> 
-   <p>Na een upgrade naar 18.6 (en hoger) wordt deze API niet meer geactiveerd en is deze vervangen door de functie <em>decryptPassword</em>. <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/f-decryptPassword.html?hl=decrypt">Meer informatie</a></p></td>
+   <p>Na een upgrade naar 18.6 (en hoger) wordt deze API niet meer geactiveerd en is deze vervangen door de functie <em>decryptPassword</em>. <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?hl=decrypt">Meer informatie</a></p></td>
   </tr> 
    <tr> 
    <td>Mobiel kanaal - MMS- en WAP-pushberichten</td>

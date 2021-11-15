@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 6f246d56-01c8-43f5-b12b-c40d258b93c8
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 5%
+source-wordcount: '192'
+ht-degree: 1%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 5%
 
 ![](../../assets/common.svg)
 
-Een **Test** type activiteit activeert de eerste overgang die aan de voorwaarde verbonden aan het voldoet. Als aan geen voorwaarde wordt voldaan en als de optie **[!UICONTROL Use the default fork]** wordt geactiveerd, zal de standaardovergang worden geactiveerd.
+A **Testen** type activity activeert de eerste overgang die voldoet aan de bijbehorende voorwaarde. Indien aan geen voorwaarde is voldaan en indien de **[!UICONTROL Use the default fork]** wordt geactiveerd, wordt de standaardovergang geactiveerd.
 
 Een voorwaarde is een JavaScript-expressie die moet worden geëvalueerd op &#39;true&#39; of &#39;false&#39;. Als u de expressie wilt invoeren, klikt u op het pictogram rechts van de naam van de voorwaarde en selecteert u **[!UICONTROL Edit...]**.
 
 ![](assets/edit_test.png)
 
-Raadpleeg [JSAPI-documentatie](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) voor meer informatie over alle extra JavaScript-functies en SOAP-methoden van de toepassingsserver die toegankelijk zijn via workflow JavaScript.
+Raadpleeg voor meer informatie over alle extra JavaScript-functies en SOAP-methoden van de toepassingsserver die toegankelijk zijn via workflow JavaScript de volgende bronnen: [JSAPI-documentatie](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
 
-U kunt variabelen ook rechtstreeks vanuit deze editor invoegen. Raadpleeg [deze sectie](javascript-scripts-and-templates.md#variables) voor meer informatie over het werken met variabelen.
+U kunt variabelen ook rechtstreeks vanuit deze editor invoegen. Raadpleeg voor meer informatie over het werken met variabelen [deze sectie](javascript-scripts-and-templates.md#variables).
 
 Voorwaarden kunnen worden toegevoegd, verwijderd of geordend in het bewerkingsvenster van de eigenschap activity, maar kunnen ook worden gewijzigd vanuit de overgang.
 

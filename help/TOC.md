@@ -6,10 +6,10 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 23c5892189c59008f82ec453c97d24efe82fd2ae
+source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
 workflow-type: tm+mt
 source-wordcount: '2566'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -166,7 +166,7 @@ ht-degree: 100%
    + Direct mail verzenden {#sending-direct-mail}
       + [Kanaal voor direct mail](delivery/using/about-direct-mail-channel.md)
       + [Een levering voor direct mail maken](delivery/using/creating-a-direct-mail-delivery.md)
-      + [De content voor direct mail definiëren](delivery/using/defining-the-direct-mail-content.md)
+      + [Definieer de content van de direct mail](delivery/using/defining-the-direct-mail-content.md)
       + [Valideren](delivery/using/validating.md)
    + Leveringssjablonen gebruiken {#using-delivery-templates}
       + [Sjablonen](delivery/using/about-templates.md)

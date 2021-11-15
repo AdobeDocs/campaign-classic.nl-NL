@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 3%
+source-wordcount: '632'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ Bedrijfs-API is specifiek voor elk type object. Zij hebben een effect op:
 
 * Leveringen:
 
-   * Creërend een leveringsactie, verwijs naar [SubmitDelivery (nms:levering)](#submitdelivery--nms-delivery-),
+   * Een leveringsactie maken. Raadpleeg [VerzendenAflevering (nms:aflevering)](#submitdelivery--nms-delivery-),
    * het verzenden van een campagne (starten, pauzeren, stoppen, verzenden van bewijzen);
    * leveringslogboeken herstellen.
 
@@ -40,7 +40,7 @@ In deze sectie wordt het gebruik van de services &quot;Abonneren&quot;, &quot;Un
 
 >[!IMPORTANT]
 >
->[De ](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) documentatie van JSAPI van de campagne bevat extra informatie over de vraag van de ZEEP en het gebruiken van Javascript in Adobe Campaign, evenals een volledige verwijzing naar alle methodes en functies die in de toepassing worden gebruikt.
+>[JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html) bevat aanvullende informatie over SOAP-aanroepen en het gebruik van Javascript in Adobe Campaign, evenals een volledige verwijzing naar alle methoden en functies die in de toepassing worden gebruikt.
 
 ## Abonneren (nms:abonnement) {#subscribe--nms-subscription-}
 
@@ -65,7 +65,7 @@ Beschrijving van de methode &quot;subscribe&quot; in het schema &quot;nms:subscr
 </method>
 ```
 
-De definitie van de afstemmingssleutel moet worden ingevoerd via het kenmerk _**key** op het element `<recipient>` van het XML-document. De inhoud van dit kenmerk is een XPath-lijst met komma&#39;s als scheidingsteken.
+De definitie van de afstemmingssleutel moet worden ingevoerd via de _**key** kenmerk op de `<recipient>` -element van het XML-document. De inhoud van dit kenmerk is een XPath-lijst met komma&#39;s als scheidingsteken.
 
 Deze aanroep retourneert geen gegevens, behalve fouten.
 
@@ -136,7 +136,7 @@ Beschrijving van de methode &quot;Unsubscribe&quot; in het schema &quot;nms:subs
 </method>
 ```
 
-De definitie van de afstemmingssleutel moet worden ingevoerd via het _key-kenmerk op het `<recipient>`-element van het XML-document. De inhoud van dit kenmerk is een XPath-lijst met komma&#39;s als scheidingsteken.
+De definitie van de afstemmingssleutel moet worden ingevoerd via het _key-kenmerk op het tabblad `<recipient>` -element van het XML-document. De inhoud van dit kenmerk is een XPath-lijst met komma&#39;s als scheidingsteken.
 
 Als de ontvanger niet aanwezig in het gegevensbestand is of niet aan de betrokken informatiedienst geabonneerd, voert de dienst geen actie uit en produceert geen fout.
 

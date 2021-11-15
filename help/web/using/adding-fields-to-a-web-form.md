@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '2371'
-ht-degree: 1%
+source-wordcount: '2368'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 In een webformulier kunnen gebruikers in velden informatie invoeren en opties selecteren. Webformulieren kunnen invoervelden, selectievelden, statische en geavanceerde inhoud (bijschriften, abonnementen, enz.) bieden.
 
-Wanneer u velden toevoegt met de wizard, wordt het veldtype automatisch gedetecteerd op basis van het geselecteerde veld of de opslagvariabele. U kunt het uitgeven gebruikend **[!UICONTROL Type]** drop-down doos op **[!UICONTROL General]** tabel.
+Wanneer u velden toevoegt met de wizard, wordt het veldtype automatisch gedetecteerd op basis van het geselecteerde veld of de opslagvariabele. U kunt het bewerken met de opdracht **[!UICONTROL Type]** vervolgkeuzelijst in het dialoogvenster **[!UICONTROL General]** tab.
 
 ![](assets/s_ncs_admin_webform_change_type.png)
 
@@ -32,13 +32,13 @@ De volgende veldtypen zijn beschikbaar:
 * Meerdere keuzen via selectievakjes. Zie [Selectievakjes toevoegen](#adding-checkboxes).
 * Exclusieve selectie via keuzerondjes. Zie [Keuzerondjes toevoegen](#adding-radio-buttons).
 * Stem in een optieraster. Zie [Rasters toevoegen](#adding-grids).
-* Getallen en datums. Zie [Datums en getallen toevoegen](#adding-dates-and-numbers).
+* Getallen en datums. Zie [Datums en nummers toevoegen](#adding-dates-and-numbers).
 * Abonnement/abonnement op een informatieservice. Zie [Selectievakjes voor abonnement](#subscription-checkboxes).
 * Captcha-validatie. Zie [Een captcha invoegen](#inserting-a-captcha).
-* Knop Downloaden. [Een bestand](#uploading-a-file) uploaden.
+* Knop Downloaden. [Een bestand uploaden](#uploading-a-file).
 * De constante Verborgen. Zie [Een verborgen constante invoegen](#inserting-a-hidden-constant).
 
-Geef de opslagmodus voor reacties op: een veld in de database bijwerken (alleen de laatst opgeslagen waarde wordt opgeslagen) of in een variabele opslaan (het antwoord wordt niet opgeslagen). Voor meer op dit, verwijs naar [De opslaggebieden van de Reactie](web-forms-answers.md#response-storage-fields).
+Geef de opslagmodus voor reacties op: een veld in de database bijwerken (alleen de laatst opgeslagen waarde wordt opgeslagen) of in een variabele opslaan (het antwoord wordt niet opgeslagen). Raadpleeg voor meer informatie hierover [Responsopslagvelden](web-forms-answers.md#response-storage-fields).
 
 >[!NOTE]
 >
@@ -46,17 +46,17 @@ Geef de opslagmodus voor reacties op: een veld in de database bijwerken (alleen 
 
 ## Wizard Veld maken {#field-creation-wizard}
 
-Voor elke pagina van het formulier kunt u een veld toevoegen met de eerste knop op de werkbalk. Ga hiertoe naar het menu **[!UICONTROL Add using the wizard]**.
+Voor elke pagina van het formulier kunt u een veld toevoegen met de eerste knop op de werkbalk. Ga om dit te doen naar de **[!UICONTROL Add using the wizard]** -menu.
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
 Selecteer het type veld dat u wilt maken: U kunt een veld toevoegen aan de database of een variabele of een groep velden importeren die in een ander formulier zijn gemaakt en in een container zijn verzameld.
 
-Klik **[!UICONTROL Next]** en selecteer het opslaggebied of de variabele, of de container u wilt invoeren.
+Klikken **[!UICONTROL Next]** en selecteert u het opslagveld of de variabele of de container die u wilt importeren.
 
 ![](assets/s_ncs_admin_webform_wz_confirm_db.png)
 
-Klik **[!UICONTROL Finish]** om het geselecteerde gebied in de pagina op te nemen.
+Klikken **[!UICONTROL Finish]** om het geselecteerde veld in te voegen op de pagina.
 
 ![](assets/s_ncs_admin_webform_wz_insert_field.png)
 
@@ -74,9 +74,9 @@ U kunt vijf verschillende typen tekstvelden invoegen in een formulierpagina:
 
    ![](assets/s_ncs_admin_survey_txt_ex.png)
 
-* **Getal**: Hiermee kan de gebruiker een getal op één regel invoeren. Raadpleeg [Getallen toevoegen](#adding-numbers) voor meer informatie hierover.
+* **Getal**: Hiermee kan de gebruiker een getal op één regel invoeren. zie voor meer informatie : [Getallen toevoegen](#adding-numbers).
 
-   Wanneer de pagina is goedgekeurd, wordt de inhoud van het veld gecontroleerd om te controleren of de ingevoerde waarde compatibel is met het veld. Raadpleeg [Besturingsinstellingen definiëren](form-rendering.md#defining-control-settings) voor meer informatie hierover.
+   Nadat de pagina is goedgekeurd, wordt de inhoud van het veld gecontroleerd om te controleren of de ingevoerde waarde compatibel is met het veld. Raadpleeg voor meer informatie hierover [Besturingsinstellingen definiëren](form-rendering.md#defining-control-settings).
 
 * **Wachtwoord**: Hiermee kan de gebruiker tekst op één regel invoeren. Tijdens tekstinvoer worden de tekens vervangen door punten:
 
@@ -86,7 +86,7 @@ U kunt vijf verschillende typen tekstvelden invoegen in een formulierpagina:
    >
    >Wachtwoorden worden niet-gecodeerd opgeslagen in de database.
 
-* **Tekst** met meerdere regels: Hiermee kan de gebruiker tekst op meerdere regels invoeren.
+* **Tekst met meerdere regels**: Hiermee kan de gebruiker tekst op meerdere regels invoeren.
 
    ![](assets/s_ncs_admin_survey_txtmulti_ex.png)
 
@@ -94,15 +94,15 @@ U kunt vijf verschillende typen tekstvelden invoegen in een formulierpagina:
    >
    >Tekstvelden met meerdere regels zijn specifieke velden die regeleinden kunnen bevatten. Hun opslagruimte moet worden gekoppeld aan een veld dat is toegewezen aan een XML-element, niet aan een XML-kenmerk.
 
-* **Verrijkte tekst** met meerdere regels: Hiermee kan de gebruiker tekst invoeren met een lay-out die wordt opgeslagen in HTML-indeling.
+* **Verrijkte tekst met meerdere regels**: Hiermee kan de gebruiker tekst invoeren met een lay-out die wordt opgeslagen in de indeling HTML.
 
    ![](assets/s_ncs_admin_survey_txthtmli_ex.png)
 
-   U kunt het type editor selecteren dat gebruikers wordt aangeboden. Hiervoor gebruikt u de vervolgkeuzelijst van het veld **[!UICONTROL HTML editor]** op het tabblad **[!UICONTROL Advanced]**.
+   U kunt het type editor selecteren dat gebruikers wordt aangeboden. Hiervoor gebruikt u de vervolgkeuzelijst van het dialoogvenster **[!UICONTROL HTML editor]** in het **[!UICONTROL Advanced]** tab.
 
    ![](assets/webapp_enrich_text_type.png)
 
-   Het aantal weergegeven pictogrammen is afhankelijk van het type editor. Voor een **[!UICONTROL Advanced]** redacteur, zal het teruggeven als volgt zijn:
+   Het aantal weergegeven pictogrammen is afhankelijk van het type editor. Voor een **[!UICONTROL Advanced]** editor is de rendering als volgt:
 
    ![](assets/webapp_enrich_text_max.png)
 
@@ -112,15 +112,15 @@ Invoervelden worden allemaal geconfigureerd op basis van dezelfde modus, waarbij
 
 ![](assets/s_ncs_admin_survey_txt_param.png)
 
-Op het tabblad **[!UICONTROL General]** kunt u de naam van het veld invoeren en er indien nodig een standaardwaarde aan toewijzen.
+De **[!UICONTROL General]** kunt u de naam van het veld invoeren en er indien nodig een standaardwaarde aan toewijzen.
 
-De antwoordopslagmodus kan worden gewijzigd via de koppeling **[!UICONTROL Edit storage...]**. Waarden kunnen worden opgeslagen in een bestaand veld van de database; of u kunt ervoor kiezen geen informatie in de database op te slaan (gebruik een lokale variabele).
+De antwoordopslagmodus kan worden gewijzigd via de **[!UICONTROL Edit storage...]** koppeling. Waarden kunnen worden opgeslagen in een bestaand veld van de database; of u kunt ervoor kiezen geen informatie in de database op te slaan (gebruik een lokale variabele).
 
 >[!NOTE]
 >
->Opslagmodi worden beschreven in [Opslagvelden voor reacties](web-forms-answers.md#response-storage-fields)
+>Opslagmodi worden in detail beschreven in [Responsopslagvelden](web-forms-answers.md#response-storage-fields)
 
-Op het tabblad **[!UICONTROL Advanced]** kunt u weergaveparameters voor het veld definiëren (positie van labels, uitlijning, enzovoort). Zie [Opmaak van webformulieren definiëren](defining-web-forms-layout.md).
+De **[!UICONTROL Advanced]** kunt u weergaveparameters voor het veld definiëren (positie van labels, uitlijning, enz.). Zie [Opmaak van webformulieren definiëren](defining-web-forms-layout.md).
 
 ## Vervolgkeuzelijsten toevoegen {#adding-drop-down-lists}
 
@@ -128,13 +128,13 @@ U kunt een vervolgkeuzelijst invoegen in een enquêtepagina. Hiermee kan de gebr
 
 ![](assets/s_ncs_admin_survey_dropdown_sample.png)
 
-Als u een vervolgkeuzelijst aan een formulierpagina wilt toevoegen, klikt u op de knop **[!UICONTROL Selection controls > Drop-down list]** op de werkbalk van de pagina-editor.
+Als u een vervolgkeuzelijst wilt toevoegen aan een formulierpagina, klikt u op de knop **[!UICONTROL Selection controls > Drop-down list]** in de werkbalk van de pagina-editor.
 
 ![](assets/s_ncs_admin_survey_create_dropdown.png)
 
 Selecteer de antwoordopslagmodus en bevestig uw keuze.
 
-Definieer de labels en waarden van de lijst in de onderste sectie van het tabblad **[!UICONTROL General]**. Als de informatie in een bestaand gebied van het gegevensbestand wordt opgeslagen en het een opsommingsgebied is, kunt u de waarden automatisch invullen door **[!UICONTROL Initialize the list of values from the database]**, zoals hieronder getoond te klikken:
+Definieer de labels en waarden van de lijst in de onderste sectie van het dialoogvenster **[!UICONTROL General]** tab. Als de informatie in een bestaand gebied van het gegevensbestand wordt opgeslagen en het een opsommingsgebied is, kunt u de waarden automatisch invullen door te klikken **[!UICONTROL Initialize the list of values from the database]** , zoals hieronder weergegeven:
 
 ![](assets/s_ncs_admin_survey_database_values.png)
 
@@ -146,7 +146,7 @@ Als de gegevens worden opgeslagen in een gekoppelde tabel, kunt u het veld selec
 
 ![](assets/s_ncs_admin_survey_preload_values.png)
 
-Klik vervolgens op de koppeling **[!UICONTROL Load]** om de waarden op te halen:
+Klik op de knop **[!UICONTROL Load]** koppeling om de waarden op te halen:
 
 ![](assets/s_ncs_admin_survey_load_button.png)
 
@@ -160,17 +160,17 @@ Als de gebruiker een optie kan selecteren, moet u een selectievakje gebruiken.
 
 ![](assets/s_ncs_admin_survey_check_box.png)
 
-Als u een selectievakje aan een formulier wilt toevoegen, klikt u op het pictogram **[!UICONTROL Selection controls > Checkbox...]** op de werkbalk van de pagina-editor.
+Als u een selectievakje aan een formulier wilt toevoegen, klikt u op de knop **[!UICONTROL Selection controls > Checkbox...]** in de werkbalk van de pagina-editor.
 
 Selecteer de antwoordopslagmodus en bevestig uw keuze.
 
-Typ het label van het vak in het veld **[!UICONTROL Label]** van het tabblad **[!UICONTROL General]**.
+Voer het label van het vak in het dialoogvenster **[!UICONTROL Label]** van het **[!UICONTROL General]** tab.
 
 ![](assets/s_ncs_admin_survey_check_box_edit.png)
 
-Met een selectievakje kunt u een waarde aan het opslagveld (of de waarde) toewijzen, afhankelijk van het feit of het vak is ingeschakeld. In de sectie **[!UICONTROL Values]** kunt u de waarde invoeren die moet worden toegewezen als het vak is ingeschakeld (in het veld **[!UICONTROL Value]**) en de waarde die moet worden toegewezen als dit niet is ingeschakeld (in het veld **[!UICONTROL Empty value]**). Deze waarden zijn afhankelijk van de indeling voor gegevensopslag.
+Met een selectievakje kunt u een waarde aan het opslagveld (of de waarde) toewijzen, afhankelijk van het feit of het vak is ingeschakeld. De **[!UICONTROL Values]** kunt u de waarde invoeren die u wilt toewijzen als het vak is ingeschakeld (in het gedeelte **[!UICONTROL Value]** veld) en de waarde die moet worden toegewezen als deze niet is ingeschakeld (in het veld **[!UICONTROL Empty value]** veld). Deze waarden zijn afhankelijk van de indeling voor gegevensopslag.
 
-Als het opslagveld (of de variabele) Booleaans is, wordt de waarde die moet worden toegewezen als het vak niet is ingeschakeld, automatisch afgetrokken. In dit geval wordt alleen het veld **[!UICONTROL Value if checked]** aangeboden, zoals hieronder wordt getoond:
+Als het opslagveld (of de variabele) Booleaans is, wordt de waarde die moet worden toegewezen als het vak niet is ingeschakeld, automatisch afgetrokken. In dit geval worden alleen de **[!UICONTROL Value if checked]** het veld wordt aangeboden, zoals hieronder wordt getoond:
 
 ![](assets/s_ncs_admin_survey_check_box_enum.png)
 
@@ -180,11 +180,11 @@ We willen een selectievakje in een formulier invoegen om een onderhoudsaanvraag 
 
 ![](assets/s_ncs_admin_survey_check_box_ex.png)
 
-De informatie wordt geüpload naar de database en naar een bestaand veld (in dit geval het veld **[!UICONTROL Comment]**):
+De informatie wordt geüpload naar de database en naar een bestaand veld (in dit geval de **[!UICONTROL Comment]** veld):
 
 ![](assets/s_ncs_admin_survey_check_box_ex_list.png)
 
-Als het selectievakje &quot;Onderhoud vereist&quot; is ingeschakeld, bevat de kolom **[!UICONTROL Comment]** &quot;Onderhoud vereist&quot;. Als de doos niet wordt gecontroleerd, zal de kolom &quot;Onderhoud niet vereist&quot;tonen. U bereikt dit resultaat door de volgende configuratie toe te passen op het selectievakje op de formulierpagina:
+Als het vakje &quot;Onderhoud vereist&quot; is ingeschakeld, wordt de **[!UICONTROL Comment]** De kolom bevat &quot;Onderhoud vereist&quot;. Als de doos niet wordt gecontroleerd, zal de kolom &quot;Onderhoud niet vereist&quot;tonen. U bereikt dit resultaat door de volgende configuratie toe te passen op het selectievakje op de formulierpagina:
 
 ![](assets/s_ncs_admin_survey_check_box_ex_edit.png)
 
@@ -202,15 +202,15 @@ U kunt keuzerondjes afzonderlijk maken (eenheidsknoppen) of via een keuzelijst m
 
 ### Enkele knoppen toevoegen {#add-single-buttons}
 
-Als u een keuzerondje aan een formulierpagina wilt toevoegen, gaat u naar het menu **[!UICONTROL Selection controls > Radio button]** op de werkbalk van de pagina-editor en kiest u een opslagmodus.
+Als u een keuzerondje wilt toevoegen aan een formulierpagina, gaat u naar de **[!UICONTROL Selection controls > Radio button]** in de werkbalk van de pagina-editor en kies een opslagmodus.
 
 ![](assets/s_ncs_admin_survey_radio_button_sample.png)
 
-Keuzerondjes worden op dezelfde manier geconfigureerd als selectievakjes (zie [Selectievakjes toevoegen](#adding-checkboxes)). Er wordt echter geen waarde toegewezen als de optie niet is geselecteerd. Als u wilt dat verschillende knoppen onderling afhankelijk zijn, de andere automatisch deselecteert, moeten ze in hetzelfde veld worden opgeslagen. Als zij niet in het gegevensbestand worden opgeslagen, moet de zelfde lokale variabele voor tijdelijke opslag worden gebruikt. Zie [Opslagvelden voor reacties](web-forms-answers.md#response-storage-fields).
+Keuzerondjes zijn op dezelfde manier geconfigureerd als selectievakjes (zie [Selectievakjes toevoegen](#adding-checkboxes)). Er wordt echter geen waarde toegewezen als de optie niet is geselecteerd. Als u wilt dat verschillende knoppen onderling afhankelijk zijn, de andere automatisch deselecteert, moeten ze in hetzelfde veld worden opgeslagen. Als zij niet in het gegevensbestand worden opgeslagen, moet de zelfde lokale variabele voor tijdelijke opslag worden gebruikt. Zie [Responsopslagvelden](web-forms-answers.md#response-storage-fields).
 
 ### Een lijst met knoppen toevoegen {#add-a-list-of-buttons}
 
-Als u keuzerondjes wilt toevoegen via een lijst, gaat u naar het menu **[!UICONTROL Selection controls>Multiple choice]** op de werkbalk van de pagina-editor.
+Als u keuzerondjes wilt toevoegen via een lijst, gaat u naar **[!UICONTROL Selection controls>Multiple choice]** op de werkbalk van de pagina-editor.
 
 ![](assets/s_ncs_admin_survey_radio_button_sample2.png)
 
@@ -219,7 +219,7 @@ Voeg zoveel keuzerondjes toe als er labels zijn. Het voordeel van deze functie i
 >[!NOTE]
 >
 >U kunt multi-selectie in een Webtoepassing niet toelaten.
->Het is echter mogelijk om een tekstveld **[!UICONTROL Multiple choice]** in een webtoepassing in te voegen, maar hierdoor kan de gebruiker niet meerdere waarden selecteren.
+>Het is echter mogelijk een **[!UICONTROL Multiple choice]** typt gebied in een toepassing van het Web maar dit zal niet de gebruiker toelaten om verscheidene waarden te selecteren.
 
 ## Rasters toevoegen {#adding-grids}
 
@@ -239,7 +239,7 @@ Per rasterlijn kan slechts één optie worden geselecteerd.
 
 >[!NOTE]
 >
->In ons voorbeeld is het label van het raster verborgen. Hiervoor gaat u naar het tabblad **[!UICONTROL Advanced]** en wordt de weergave **[!UICONTROL Label position]** gedefinieerd als **[!UICONTROL Hidden]**. Zie [De positie van labels definiëren](defining-web-forms-layout.md#defining-the-position-of-labels).
+>In ons voorbeeld is het label van het raster verborgen. Ga om dit te doen naar de **[!UICONTROL Advanced]** de **[!UICONTROL Label position]** display wordt gedefinieerd als **[!UICONTROL Hidden]** . Zie [De positie van labels definiëren](defining-web-forms-layout.md#defining-the-position-of-labels).
 
 ## Datums en nummers toevoegen {#adding-dates-and-numbers}
 
@@ -271,7 +271,7 @@ In sommige gevallen (bijvoorbeeld bij het invoeren van geboortedata) kan het ech
 
 ![](assets/s_ncs_admin_survey_date_list_select.png)
 
-Klik hiertoe op de tab **[!UICONTROL Advanced]** en kies de invoermodus met **[!UICONTROL Drop-down lists]**.
+Om dit te doen, klik **[!UICONTROL Advanced]** en kiest u de invoermodus met **[!UICONTROL Drop-down lists]**.
 
 ![](assets/s_ncs_admin_survey_date_selection.png)
 
@@ -293,7 +293,7 @@ Afhankelijk van het veld waarin gegevens in de database worden opgeslagen, kunne
 
 De standaardwaarde is de waarde die in het veld wordt weergegeven wanneer het formulier wordt gepubliceerd. Deze kan door de gebruiker worden gecorrigeerd.
 
-U kunt een voor- en/of achtervoegsel toevoegen aan het numerieke veld via het tabblad **[!UICONTROL Advanced]**, zoals hieronder wordt weergegeven:
+U kunt een voor- en/of achtervoegsel toevoegen aan het numerieke veld via het menu **[!UICONTROL Advanced]** tab, zoals hieronder wordt getoond:
 
 ![](assets/s_ncs_admin_survey_number_ex_conf.png)
 
@@ -309,13 +309,13 @@ Als u een selectievakje voor een abonnement wilt maken, klikt u op **[!UICONTROL
 
 ![](assets/s_ncs_admin_survey_subscription_edit.png)
 
-Geef het label voor het selectievakje op en selecteer de desbetreffende informatieservice in het vervolgkeuzemenu **[!UICONTROL Service]**.
+Vermeld het label voor het selectievakje en selecteer de betrokken informatiedienst met behulp van de **[!UICONTROL Service]** vervolgkeuzelijst.
 
 >[!NOTE]
 >
->De diensten van de informatie zijn gedetailleerd in [deze pagina](../../delivery/using/managing-subscriptions.md).
+>De informatiediensten worden nader beschreven in [deze pagina](../../delivery/using/managing-subscriptions.md).
 
-De gebruiker abonneert zich op de dienst door de relevante optie te controleren.
+De gebruiker abonneert zich op de service door de relevante optie te controleren.
 
 ![](assets/s_ncs_admin_survey_subscribe.png)
 
@@ -325,7 +325,7 @@ De gebruiker abonneert zich op de dienst door de relevante optie te controleren.
 
 ## Een captcha invoegen {#inserting-a-captcha}
 
-Het doel van **captcha** tests is frauduleus gebruik van uw vormen van het Web te verhinderen.
+Het doel van **captcha** tests moeten frauduleus gebruik van uw vormen van het Web verhinderen.
 
 >[!CAUTION]
 >
@@ -335,13 +335,13 @@ Als u een Captcha in een formulier wilt invoegen, klikt u op de eerste knop op d
 
 ![](assets/s_ncs_admin_survey_add_captcha.png)
 
-Voer het label van het veld in. Dit label wordt vóór het weergavegebied van Captcha weergegeven. U kunt de positie van dit label wijzigen op het tabblad **[!UICONTROL Advanced]**.
+Voer het label van het veld in. Dit label wordt vóór het weergavegebied van Captcha weergegeven. U kunt de positie van dit label wijzigen in het dialoogvenster **[!UICONTROL Advanced]** tab.
 
 ![](assets/s_ncs_admin_survey_captcha_adv.png)
 
 >[!NOTE]
 >
->Voor **[!UICONTROL captcha]** typecontroles, is er geen behoefte om een opslaggebied of een variabele te wijzen.
+>Voor **[!UICONTROL captcha]** type controles, is er geen behoefte om op een opslaggebied of een variabele te wijzen.
 
 Captcha wordt opgenomen in de pagina met een inputgebied dat onder visueel wordt geplaatst. Deze twee elementen zijn onscheidbaar en worden voor de paginalay-out als één item beschouwd (ze nemen één cel in beslag).
 
@@ -351,7 +351,7 @@ Wanneer de pagina wordt bevestigd, wordt het invoerveld rood weergegeven als de 
 
 ![](assets/s_ncs_admin_survey_captcha_error.png)
 
-U kunt een foutbericht maken om weer te geven. Hiervoor gebruikt u de koppeling **[!UICONTROL Personalize the message]** op het tabblad **[!UICONTROL General]**.
+U kunt een foutbericht maken om weer te geven. Om dat te doen, gebruik **[!UICONTROL Personalize the message]** in de **[!UICONTROL General]** tab.
 
 ![](assets/s_ncs_admin_survey_captcha_error_msg.png)
 
@@ -365,16 +365,16 @@ U kunt een uploadveld toevoegen aan een pagina. Deze functionaliteit kan bijvoor
 
 ![](assets/s_ncs_admin_survey_download_file.png)
 
-Als u een uploadveld wilt invoegen in een formulierpagina, selecteert u het menu **[!UICONTROL Advanced controls > File...]** op de werkbalk van de pagina-editor.
+Als u een uploadveld wilt invoegen in een formulierpagina, selecteert u de optie **[!UICONTROL Advanced controls > File...]** op de werkbalk van de pagina-editor.
 
-Standaard worden de geüploade bestanden opgeslagen in bronbestanden die toegankelijk zijn via het menu **[!UICONTROL Resources > Online > Public resources]**. U kunt een script gebruiken om dit gedrag te wijzigen. Dit script kan de functies gebruiken die zijn gedefinieerd in [Campagne JSAPI-documentatie](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html), inclusief functies die betrekking hebben op bestandsmanipulatie.
+De geüploade bestanden worden standaard opgeslagen in bronbestanden die toegankelijk zijn via de **[!UICONTROL Resources > Online > Public resources]** -menu. U kunt een script gebruiken om dit gedrag te wijzigen. Dit script kan de functies gebruiken die zijn gedefinieerd in [JSAPI-documentatie voor campagne](https://experienceleague.adobe.com/developer/campaign-api/api/index.html), met inbegrip van die welke betrekking hebben op bestandmanipulatie.
 
 U kunt de koppeling naar deze bestanden opslaan in een lokale variabele of in een databaseveld. U kunt bijvoorbeeld het ontvangende schema uitbreiden om een koppeling naar op een bestand gebaseerde bronnen toe te voegen.
 
 >[!CAUTION]
 >
 >* Dit type bestand moet worden gereserveerd voor formulieren met beveiligde toegang (met referenties).
->* Adobe Campaign bepaalt niet de grootte of het type geüploade bron: daarom adviseren wij hoogst gebruikend upload gebieden voor de veilige plaatsen van het typeIntranet slechts.
+>* Adobe Campaign bepaalt niet de grootte of het type geüploade bron: daarom adviseren wij hoogst gebruikend upload gebieden voor veilige de plaatsen van het typeIntranet slechts.
 >* Als verscheidene servers met de instantie (lading het in evenwicht brengen architectuur) worden verbonden, moet u ervoor zorgen vraag aan de vorm van het Web op de zelfde server aankomt.
 >* Deze implementaties vereisen de hulp van het Adobe Campaign Consulting-team.
 
@@ -387,8 +387,8 @@ Wanneer de gebruiker een van de pagina&#39;s van het formulier valideert, kunt u
 
 Dit veld is niet zichtbaar voor de gebruiker, maar kan worden gebruikt om de gegevens in het gebruikersprofiel te verrijken.
 
-Hiervoor plaatst u een **constante** op de pagina en geeft u de waarde en de opslaglocatie op.
+Om dit te doen, plaats a **constante** op de pagina en geef de waarde en opslaglocatie op.
 
-In het volgende voorbeeld wordt het veld **origin** van het ontvangende profiel automatisch ingevuld wanneer een gebruiker deze pagina goedkeurt. De constante wordt niet weergegeven op de pagina.
+In het volgende voorbeeld wordt **oorsprong** wordt automatisch ingevuld wanneer een gebruiker deze pagina goedkeurt. De constante wordt niet weergegeven op de pagina.
 
 ![](assets/s_ncs_admin_survey_constante.png)
