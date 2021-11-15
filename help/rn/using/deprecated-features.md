@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 89494165a59c0ba6119f37d41893fd0e8733f47d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1657'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
   <td>Adobe Analytics-gegevensconnector<br></td>
    <td><p>Vanaf Campaign 21.1.3 is de Adobe Analytics Data Connector afgeschaft.</p>
    <p>Als u deze connector gebruikt, moet u uw implementatie dienovereenkomstig aanpassen. <a href="../../platform/using/adobe-analytics-connector.md">Meer informatie</a></p>
-  <p><em>Doeldatum verwijdering: augustus 2022</em></p>
+  <p><em>Streefdatum voor verwijdering: augustus 2022</em></p>
   </td>
  </tr>
     <tr>
