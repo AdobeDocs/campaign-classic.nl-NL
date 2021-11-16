@@ -5,14 +5,14 @@ description: Aan de slag met Adobe Experience Cloud Triggers-implementatie
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 16%
 
 ---
 
-# Aan de slag met Adobe Experience Cloud Triggers{#about-adobe-experience-triggers}
+# Werken met campagne- en Experience Cloud-triggers{#about-adobe-experience-triggers}
 
 ![](../../assets/common.svg)
 
@@ -29,10 +29,10 @@ Ook wordt steun verleend aan grote verkeersvolumes zonder dat dit van invloed is
 
 ## [!DNL Triggers] architectuur {#triggers-architecture}
 
-Het [!DNL pipelined]-proces wordt altijd uitgevoerd op de Adobe Campaign-marketingserver. Het verbindt met de pijpleiding, wint de gebeurtenissen terug, en verwerkt hen onmiddellijk.
+De [!DNL pipelined] -proces wordt altijd uitgevoerd op de Adobe Campaign-marketingserver. Het verbindt met de pijpleiding, wint de gebeurtenissen terug, en verwerkt hen onmiddellijk.
 
 ![](assets/triggers_2.png)
 
-Het [!DNL pipelined] proces meldt zich aan bij de Experience Cloud gebruikend de authentificatieservice en verzendt een privé sleutel. De verificatieservice retourneert een token. Het token wordt gebruikt voor verificatie bij het ophalen van de gebeurtenissen.
+De [!DNL pipelined] proces meldt zich aan bij de Experience Cloud gebruikend de authentificatiedienst en verzendt een privé sleutel. De verificatieservice retourneert een token. Het token wordt gebruikt voor verificatie bij het ophalen van de gebeurtenissen.
 
-Raadpleeg deze [pagina](../../integrations/using/configuring-adobe-io.md) voor meer informatie over verificatie.
+Voor meer informatie over authentificatie, verwijs naar dit [page](../../integrations/using/configuring-adobe-io.md).

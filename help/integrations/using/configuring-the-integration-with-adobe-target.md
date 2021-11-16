@@ -6,32 +6,28 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
-source-git-commit: b6e24c63ece12f25b7dafe3fede9e38b3aab2427
+source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '192'
 ht-degree: 2%
 
 ---
 
 # Integratie met Adobe Target configureren{#configuring-the-integration-with-adobe-target}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 
 >[!CAUTION]
 >
 > Neem als gehoste of hybride klant contact op met uw Adobe-medewerker om deze integratie te configureren. De onderstaande stappen zijn alleen van toepassing op on-premise klanten.
 
-## Vereisten {#prerequisites}
-
-Om de integratie tussen Adobe Campaign en Adobe Target te kunnen gebruiken, moet u beschikken over:
+Deze integratie vereist:
 
 * Adobe Experience Cloud- en Adobe Target-organisaties
 * Een Adobe Target-vak opgegeven voor het tot stand brengen van de verbinding met Adobe Campaign
 
-## Adobe Campaign configureren {#configuring-adobe-campaign}
-
-Adobe Campaign configureren:
+Volg onderstaande stappen om deze integratie in Adobe Campaign te configureren:
 
 1. Installeer de **[!UICONTROL Integration with the Adobe Experience Cloud]** ingebouwd pakket. [Meer informatie](../../platform/using/working-with-data-packages.md#importing-packages)
 

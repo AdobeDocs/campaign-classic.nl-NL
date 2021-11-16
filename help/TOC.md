@@ -6,9 +6,9 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
+source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2565'
 ht-degree: 99%
 
 ---
@@ -373,11 +373,11 @@ ht-degree: 99%
       + [Toegang tot [!DNL Assets] configureren](integrations/using/configuring-access-to-assets.md)
       + [Een gedeelde asset invoegen](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
-      + [Over [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
+      + [Werken met [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [De integratie configureren](integrations/using/configuring-the-integration.md)
       + [Een [!DNL Experience Manager] -nieuwsbrief maken](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
-      + [Integreren met [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
+      + [Werken met [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [De integratie met [!DNL Adobe Target] configureren](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Een dynamische afbeelding invoegen](integrations/using/inserting-a-dynamic-image.md)
    + ACS Connector {#acs-connector}
@@ -387,14 +387,14 @@ ht-degree: 99%
       + [Webapplicaties synchroniseren](integrations/using/synchronizing-web-applications.md)
       + [Problemen met de [!DNL ACS Connector] oplossen](integrations/using/troubleshooting-the-acs-connector.md)
    + Adobe Experience Cloud-triggers {#experience-triggers}
-      + [Aan de slag met [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
+      + [Werken met [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Pijplijn configureren](integrations/using/configuring-pipeline.md)
       + [Adobe I/O configureren voor [!DNL Experience Cloud Triggers]](integrations/using/configuring-adobe-io.md)
       + [Gebeurtenissen configureren voor aangepaste implementatie](integrations/using/events.md)
       + [Pijplijncontrole](integrations/using/pipeline-monitoring.md)
       + [Problemen met de pijplijn oplossen](integrations/using/pipeline-troubleshooting.md)
    + Bronnen en bestemmingen van het Adobe Experience Platform {#aep-sources-destinations}
-      + [Aan de slag met bronnen en bestemmingen](integrations/using/get-started-sources-destinations.md)
+      + [Werken met bronnen en doelen](integrations/using/get-started-sources-destinations.md)
       + [Adobe Experience Platform-doelgroepen opnemen in Campaign](integrations/using/ingest-aep-data.md)
       + [Gegevens exporteren van Campaign naar Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + Automatiseren met workflows {#automating-with-workflows}
@@ -659,7 +659,7 @@ ht-degree: 99%
    + Verbinding maken met Campaign{#connect-to-campaign}
       + [De clientconsole installeren](installation/using/installing-the-client-console.md)
       + Verbinding maken via een Adobe ID {#connecting-via-an-adobe-id}
-         + [Info [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Over [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Adobe configureren [!DNL IMS]](integrations/using/configuring-ims.md)
          + [Adobe implementeren [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Problemen met IMS oplossen](integrations/using/ims-troubleshooting.md)

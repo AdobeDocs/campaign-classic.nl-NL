@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Integreren met Adobe Target
-description: Integreren met Adobe Target
+title: Werken met Adobe Campaign en Adobe Target
+description: Leer hoe u Adobe Campaign kunt integreren met Adobe Target
 audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 2e29d090-b87b-4cff-a703-58e1da082f04
-source-git-commit: b6e24c63ece12f25b7dafe3fede9e38b3aab2427
+source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
 
-# Integreren met Adobe Target{#integrating-with-adobe-target}
+# Werken met campagne en doel{#integrating-with-adobe-target}
 
 ![](../../assets/common.svg)
 
