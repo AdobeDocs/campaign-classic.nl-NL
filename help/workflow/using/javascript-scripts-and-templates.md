@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 8e6ebec9af0b7865616cf3904c8d400094567bdb
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1242'
 ht-degree: 2%
 
 ---
@@ -32,10 +32,10 @@ Scripts zijn alomtegenwoordig in een workflowdiagram:
 
 JavaScripts die in de context van een werkstroom worden uitgevoerd, hebben toegang tot een reeks extra globale objecten.
 
-* **instantie**: Vertegenwoordigt de workflow die wordt uitgevoerd. Het schema van dit object is **xtk:workflow**.
+* **instance**: Vertegenwoordigt de workflow die wordt uitgevoerd. Het schema van dit object is **xtk:workflow**.
 * **taak**: Vertegenwoordigt de taken die worden uitgevoerd. Het schema van dit object is **xtk:workflowTask**.
-* **gebeurtenis**: Vertegenwoordigt de gebeurtenissen die de uit te voeren taak activeerden. Het schema van dit object is **xtk:workflowEvent**. Dit object wordt niet geïnitialiseerd voor **AND-join**-type-activiteiten die zijn geactiveerd vanuit meerdere overgangen.
-* **gebeurtenissen**: Vertegenwoordigt de lijst met gebeurtenissen die de huidige taak hebben geactiveerd. Het schema van dit object is **xtk:workflowEvent**. Deze lijst bevat gewoonlijk één element maar kan verscheidene voor **AND-join** typeactiviteiten bevatten die op verscheidene overgangen gebaseerd zijn geactiveerd.
+* **event**: Vertegenwoordigt de gebeurtenissen die de uit te voeren taak activeerden. Het schema van dit object is **xtk:workflowEvent**. Dit object is niet geïnitialiseerd voor **AND-join** type activiteiten die zijn geactiveerd via meerdere overgangen.
+* **gebeurtenissen**: Vertegenwoordigt de lijst met gebeurtenissen die de huidige taak hebben geactiveerd. Het schema van dit object is **xtk:workflowEvent**. Deze tabel bevat gewoonlijk één element maar kan meerdere elementen bevatten voor **AND-join** type activiteiten die op basis van verschillende overgangen zijn geactiveerd.
 * **activiteit**: Vertegenwoordigt het model van de taak die wordt uitgevoerd. Het schema van dit object is afhankelijk van het type activiteit. Dit object kan worden gewijzigd door het initialisatiescript, in andere scripts kunnen wijzigingen met onbepaalbare effecten worden toegepast.
 
 De eigenschappen die voor deze objecten beschikbaar zijn, kunnen in een vervolgkeuzelijst worden weergegeven door op de knop rechts van de scriptwerkbalk te klikken.
@@ -48,28 +48,28 @@ De eigenschappen die voor deze objecten beschikbaar zijn, kunnen in een vervolgk
 
 **Voorbeeld**
 
-In dit voorbeeld, en in de volgende voorbeelden, creeer een werkschema dat **code JavaScript** activiteit en **End** activiteit zoals aangetoond in het volgende diagram omvat.
+In dit voorbeeld en in de volgende voorbeelden maakt u een workflow die een **JavaScript-code** en **Einde** activiteit zoals weergegeven in het volgende diagram.
 
 ![](assets/script-1.png)
 
-Dubbelklik op de activiteit **JavaScript code** en voeg het volgende script in:
+Dubbelklik op de knop **JavaScript-code** activiteit en voeg het volgende manuscript in:
 
 ```
 logInfo("Label: " + instance.label)
 logInfo("Start date: " + task.creationDate)
 ```
 
-De functie **[!UICONTROL logInfo(message)]** voegt een bericht in het logboek in.
+De **[!UICONTROL logInfo(message)]** de functie neemt een bericht in het logboek op.
 
-Klik **[!UICONTROL OK]** om de aanmaakwizard te sluiten en start de workflow met de actieknoppen in de rechterbovenhoek van de lijst met workflows. Raadpleeg het logbestand aan het einde van de uitvoering. Er moeten twee berichten worden weergegeven die overeenkomen met het script: de ene geeft het label van de workflow weer, de andere geeft de datum weer waarop het script is geactiveerd.
+Klikken **[!UICONTROL OK]** als u de wizard Maken wilt sluiten, start u de workflow met de actieknoppen rechtsboven in de lijst met workflows. Raadpleeg het logbestand aan het einde van de uitvoering. Er moeten twee berichten worden weergegeven die overeenkomen met het script: de ene geeft het label van de workflow weer, de andere geeft de datum weer waarop het script is geactiveerd.
 
 ## Variabelen {#variables}
 
-De variabelen zijn de gratis eigenschappen van de objecten **[!UICONTROL instance]**, **[!UICONTROL task]** en **[!UICONTROL event]**. De typen JavaScript die voor deze variabelen worden geoorloofd zijn **[!UICONTROL string]**, **[!UICONTROL number]** en **[!UICONTROL Date]**.
+De variabelen zijn de vrije eigenschappen van de **[!UICONTROL instance]**, **[!UICONTROL task]** en **[!UICONTROL event]** objecten. De JavaScript-typen die voor deze variabelen zijn geautoriseerd, zijn: **[!UICONTROL string]**, **[!UICONTROL number]** en **[!UICONTROL Date]**.
 
 ### Instantievariabelen {#instance-variables}
 
-De instantievariabelen (**[!UICONTROL instance.vars.xxx]**) zijn vergelijkbaar met globale variabelen. Ze worden door alle activiteiten gedeeld.
+De instantievariabelen (**[!UICONTROL instance.vars.xxx]**) zijn vergelijkbaar met algemene variabelen. Ze worden door alle activiteiten gedeeld.
 
 ### Taakvariabelen {#task-variables}
 
@@ -77,7 +77,7 @@ De taakvariabelen (**[!UICONTROL task.vars.xxx]**) zijn vergelijkbaar met lokale
 
 ### Gebeurtenisvariabelen {#event-variables}
 
-De gebeurtenisvariabelen (**[!UICONTROL vars.xxx]**) laten de uitwisseling van gegevens tussen de elementaire taken van een werkschemaproces toe. Deze variabelen worden doorgegeven door de taak die de actieve taak heeft geactiveerd. Het is mogelijk deze te wijzigen en nieuwe te definiëren. Deze worden vervolgens doorgegeven aan de volgende activiteiten.
+De gebeurtenisvariabelen (**[!UICONTROL vars.xxx]**) de uitwisseling van gegevens mogelijk maken tussen de elementaire taken van een werkstroomproces. Deze variabelen worden doorgegeven door de taak die de actieve taak heeft geactiveerd. Het is mogelijk deze te wijzigen en nieuwe te definiëren. Deze worden vervolgens doorgegeven aan de volgende activiteiten.
 
 >[!CAUTION]
 >
@@ -85,13 +85,13 @@ De gebeurtenisvariabelen (**[!UICONTROL vars.xxx]**) laten de uitwisseling van g
 
 Gebeurtenissen zijn de meest gebruikte variabelen en moeten bij voorkeur worden gebruikt in plaats van instantievariabelen.
 
-Bepaalde gebeurtenisvariabelen worden door de verschillende activiteiten gewijzigd of gelezen. Dit zijn allemaal tekenreeksvariabelen. Met een exportbewerking wordt bijvoorbeeld de variabele **[!UICONTROL vars.filename]** ingesteld met de volledige naam van het bestand dat zojuist is geëxporteerd. Al deze gelezen of gewijzigde variabelen worden gedocumenteerd in [Informatie over activiteiten](about-activities.md), in de secties **Invoerparameters** en **Uitvoerparameters** van de activiteiten.
+Bepaalde gebeurtenisvariabelen worden door de verschillende activiteiten gewijzigd of gelezen. Dit zijn allemaal tekenreeksvariabelen. Met een exportbewerking stelt u bijvoorbeeld de **[!UICONTROL vars.filename]** variabele met de volledige naam van het bestand dat zojuist is geëxporteerd. Al deze gelezen of gewijzigde variabelen worden beschreven in [Informatie over activiteiten](about-activities.md)in de afdelingen **Invoerparameters** en **Uitvoerparameters** van de activiteiten.
 
 ### Gebruiksscenario’s {#example}
 
 >[!NOTE]
 >
->Er zijn extra gevallen van workflowgebruik beschikbaar in [deze sectie](about-workflow-use-cases.md).
+>Er zijn meer gevallen van workflowgebruik beschikbaar in [deze sectie](about-workflow-use-cases.md).
 
 **Voorbeeld 1**
 
@@ -129,7 +129,7 @@ In dit voorbeeld wordt een instantievariabele gebruikt om dynamisch het gesplits
 
 **Voorbeeld 2**
 
-1. Neem het werkschema van het voorafgaande voorbeeld en vervang het manuscript van **JavaScript Code** activiteit met het volgende manuscript:
+1. Haal de workflow uit het vorige voorbeeld en vervang het script van het dialoogvenster **JavaScript-code** activiteit met het volgende manuscript:
 
    ```
    instance.vars.foo = "bar1"
@@ -137,7 +137,7 @@ In dit voorbeeld wordt een instantievariabele gebruikt om dynamisch het gesplits
    task.vars.foo = "bar3"
    ```
 
-1. Voeg het volgende manuscript aan het initialiseringsmanuscript van **End** activiteit toe:
+1. Voeg het volgende script toe aan het initialisatiescript van het dialoogvenster **Einde** activiteit:
 
    ```
    logInfo("instance.vars.foo = " + instance.vars.foo)
@@ -155,17 +155,17 @@ In dit voorbeeld wordt een instantievariabele gebruikt om dynamisch het gesplits
    Starting workflow (operator 'admin')
    ```
 
-In dit voorbeeld wordt getoond dat de activiteit die volgt op **JavaScript Code** toegang heeft tot de instantievariabelen en gebeurtenisvariabelen, maar de taakvariabelen zijn niet toegankelijk van buitenaf (&#39;undefined&#39;).
+In dit voorbeeld wordt getoond dat de volgende activiteit **JavaScript-code** Hiermee krijgt u toegang tot instantievariabelen en gebeurtenisvariabelen, maar de taakvariabelen zijn niet van buitenaf toegankelijk (&#39;undefined&#39;).
 
 ### Een instantievariabele in een query aanroepen {#calling-an-instance-variable-in-a-query}
 
 Nadat u een instantievariabele hebt opgegeven in een activiteit, kunt u deze opnieuw gebruiken in een workflowquery.
 
-Om een variabele **instance.vars.xxx = &quot;yyy&quot;** in een filter aan te roepen, voert u **$(instance/vars/xxx)** in.
+Zo, om een variabele te roepen **instance.vars.xxx = &quot;yyy&quot;** in een filter typt u **$(instance/vars/xxx)**.
 
 Bijvoorbeeld:
 
-1. Creeer een instantievariabele die de interne naam van een levering via **[!UICONTROL JavaScript code]** bepaalt: **instance.vars.deliveryIN = &quot;DM42&quot;**.
+1. Maak een instantievariabele die de interne naam van een levering definieert via de **[!UICONTROL JavaScript code]**: **instance.vars.deliveryIN = &quot;DM42&quot;**.
 
    ![](assets/wkf_js_activity_1.png)
 
@@ -173,7 +173,7 @@ Bijvoorbeeld:
 
    Ter herinnering, deze informatie wordt opgeslagen in de leveringslogboeken.
 
-   Als u in de kolom **[!UICONTROL Value]** naar de instantievariabele wilt verwijzen, voert u **$(instance/vars/@deliveryIN)** in.
+   Als u naar de instantievariabele in het dialoogvenster **[!UICONTROL Value]** kolom, Enter **$(instance/vars/@deliveryIN)**.
 
    Het werkschema zal de ontvangers van de levering terugkeren DM42.
 
@@ -195,4 +195,7 @@ Onder bepaalde voorwaarden kunt u een eigenschap van een activiteit wijzigen op 
 
 De meeste eigenschappen van activiteiten kunnen dynamisch worden berekend met behulp van een JavaScript-sjabloon of omdat de workfloweigenschappen expliciet toestaan dat de waarde door een script wordt berekend.
 
-Voor andere eigenschappen moet u het initialisatiescript echter gebruiken. Dit script wordt geëvalueerd voordat de taak wordt uitgevoerd. De variabele **[!UICONTROL activity]** verwijst naar de activiteit die overeenkomt met de taak. De eigenschappen van deze activiteit kunnen worden gewijzigd en zullen slechts deze taak beïnvloeden.
+Voor andere eigenschappen moet u het initialisatiescript echter gebruiken. Dit script wordt geëvalueerd voordat de taak wordt uitgevoerd. De **[!UICONTROL activity]** variabele verwijst naar de activiteit die overeenkomt met de taak. De eigenschappen van deze activiteit kunnen worden gewijzigd en zullen slechts deze taak beïnvloeden.
+
+**Verwante onderwerpen**
+[Voorbeelden van JavaScript-code in workflows](javascript-in-workflows.md)

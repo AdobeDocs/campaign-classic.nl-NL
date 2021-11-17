@@ -6,9 +6,9 @@ title: Gids voor Campaign Classic v7
 user-guide-description: Met Adobe Campaign kunt u uitgebreide klantgegevens gebruiken om de dynamische campagnes te maken, te coördineren en te leveren die klanten eigenlijk willen — via e-mail, mobiel, offlinekanalen en nog veel meer.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
+source-git-commit: 93fcb0b2b12b581dadbe4358e72bb883384fbbe6
 workflow-type: tm+mt
-source-wordcount: '2565'
+source-wordcount: '2571'
 ht-degree: 99%
 
 ---
@@ -510,6 +510,7 @@ ht-degree: 99%
       + [Workfloweigenschappen](workflow/using/workflow-properties.md)
       + [Geavanceerde parameters](workflow/using/advanced-parameters.md)
       + [JavaScript-scripts en -sjablonen](workflow/using/javascript-scripts-and-templates.md)
+      + [Voorbeelden van JavaScript-code in workflows](workflow/using/javascript-in-workflows.md)
       + [Een externe database openen](workflow/using/accessing-an-external-database--fda-.md)
       + [Machtigingen beheren](workflow/using/managing-rights.md)
       + [Activiteitenafbeeldingen beheren](workflow/using/managing-activity-images.md)
