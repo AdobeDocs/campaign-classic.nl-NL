@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: cc554d0d-bbab-4f72-b870-5fef5a2fda9d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%
@@ -29,11 +29,11 @@ Een gebruiker die aan het platform wordt bekend is een ontvanger die reeds door 
 
 ## Serverconfiguratie {#server-configuration}
 
-De servers worden gevormd door bepaalde elementen van het **serverConf.xml** dossier te overbelasten. Deze bestanden worden opgeslagen in de submap **conf** van de installatiemap van Adobe Campaign.
+De servers worden gevormd door bepaalde elementen van te laden **serverConf.xml** bestand. Deze bestanden worden opgeslagen in de **conf** subdirectory van de installatiemap van Adobe Campaign.
 
 ### Redirection-server {#redirection-server}
 
-Voor de omleidingsserver, plaats **trackWebVisitors** attributen van **redirection** element aan **true**.
+Voor de omleidingsserver stelt u de **trackWebVisitors** kenmerk van de **omleiding** element naar **true**.
 
 ```
 <redirection P3PCompactPolicy="CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"
@@ -46,7 +46,7 @@ trackingPassword=""
 
 Als u de trackinggegevens via uw clientconsole wilt weergeven, moet u:
 
-* een **dummylevering** maken (de leveringstoewijzing moet identiek zijn aan de toewijzing van het doelschema);
-* Voer de **interne naam** van deze levering in de optie **NmsTracking_WebTrackingDelivery** in.
+* Een **dummylevering** (de leveringstoewijzing moet identiek zijn aan de toewijzing van het doelschema),
+* Voer de **interne naam** van deze levering in de **NmsTracking_WebTrackingDelivery** optie.
 
-Alle informatie over het bijhouden van de site die niet direct na een klik in een e-mail wordt weergegeven, kunt u bekijken in de gemaakte dummylevering.
+Alle informatie over het bijhouden van de site die niet direct na een klik in een e-mailbericht wordt weergegeven, kunt u bekijken in de gemaakte dummylevering.

@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -41,13 +41,13 @@ Als ervaren gebruiker kunt u trackingmogelijkheden configureren op uw instantie 
 
 ## Hoe kan ik e-mailleverbaarheid configureren? {#how-to-configure-email-deliverability-}
 
-Naast de [Handleiding van de Beste praktijken van de Leverbaarheid van de Adobe ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl), lees de leverbaarheid technische aanbevelingen om te begrijpen hoe te om uw instantie te vormen om Campagne te maximaliseren leverend mogelijkheden.
+Naast de [Adobe Handleiding voor beste praktijken voor aflevering](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=nl)Lees de technische aanbevelingen voor de leverbaarheid voor meer informatie over het configureren van uw exemplaar om de capaciteit van de campagne te maximaliseren.
 
 [Klik hier voor meer informatie](../../delivery/using/about-deliverability.md).
 
 ## Hoe kan ik contentgoedkeuring implementeren? {#how-can-i-implement-content-approval-}
 
-Met Campaign kunt u goedkeuringsprocessen instellen voor de belangrijkste stappen van de marketingcampagne in de collaboratieve modus. Voor elke campagne kunt u het leveringsdoel, de content en de kosten goedkeuren. Adobe Campaign-operatoren die met de goedkeuring zijn belast, kunnen via e-mail op de hoogte worden gesteld en kunnen goedkeuring via de console of via een webverbinding accepteren of afwijzen.
+Met Campaign kunt u goedkeuringsprocessen instellen voor de belangrijkste stappen van de marketingcampagne in de collaboratieve modus. Voor elke campagne kunt u het leveringsdoel, de content en de kosten goedkeuren. Adobe Campaign-operatoren die met de goedkeuring zijn belast, kunnen via e-mail op de hoogte worden gesteld en kunnen goedkeuring van de console of via een webverbinding accepteren of afwijzen.
 
 [Klik hier voor meer informatie](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries) en ontdek de stappen om goedkeuring van de leveringscontent in Campaign uit te voeren.
 

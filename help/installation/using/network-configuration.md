@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 2%
@@ -25,7 +25,7 @@ Gebruik de ingesloten Apache Tomcat-poort als prioriteit (standaard is dit 8080)
 
 ### Leveringsserver {#delivery-server}
 
-Voor de leveringsserver (**nlserver mta**), moeten de volgende havens open zijn:
+Voor de leveringsserver (**nlserver-mta**), moeten de volgende havens open zijn:
 
 <table> 
  <tbody> 
@@ -47,12 +47,12 @@ Voor de leveringsserver (**nlserver mta**), moeten de volgende havens open zijn:
   <tr> 
    <td> 38000/tcp (standaardpoort)<br /> </td> 
    <td> SMS-gateway<br /> </td> 
-   <td> Wordt gebruikt om SMS-verkeer naar de NetSize-sms-router [option] te verzenden.<br /> </td> 
+   <td> Wordt gebruikt om SMS-verkeer naar de NetSize-sms-router [optie] te verzenden.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 7777/udp<br /> </td> 
+   <td> 7777/bbp<br /> </td> 
    <td> Statistische server<br /> </td> 
-   <td> Toegang tot de statistische server.<br /> </td> 
+   <td> Toegang tot de statistiekserver.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -71,7 +71,7 @@ Voor het binnenkomende proces van de postterugwinning (**nlserver inMail**), moe
   <tr> 
    <td> 110/tcp (pop3)<br /> </td> 
    <td> Interne mailserver<br /> </td> 
-   <td> POP3-verkeer voor het ophalen van stuiterberichten.<br /> </td> 
+   <td> POP3 verkeer om stuitberichten op te nemen.<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
@@ -83,7 +83,7 @@ Voor het binnenkomende proces van de postterugwinning (**nlserver inMail**), moe
 
 ### Applicatieserver {#application-server}
 
-Voor de toepassingsserver (**nlserver web**), moeten de volgende havens open zijn:
+Voor de toepassingsserver (**nlserver-web**), moeten de volgende havens open zijn:
 
 <table> 
  <tbody> 
@@ -104,7 +104,7 @@ Wanneer meerdere toepassingsservers van een Adobe Campaign-platform met elkaar m
 
 ### Status van SMS-verzending {#sms-delivery-status}
 
-Om de leveringen van SMS (**nlserver sms**) te volgen, moet de volgende haven open zijn:
+SMS-leveringen volgen (**nlserver-sms**), moet de volgende poort open zijn:
 
 <table> 
  <tbody> 
@@ -123,7 +123,7 @@ Om de leveringen van SMS (**nlserver sms**) te volgen, moet de volgende haven op
 
 ### Rijke client {#rich-client}
 
-Voor de rijke cliënt van Adobe Campaign (**nlclient**), moeten de volgende havens open zijn:
+Voor de rijke Adobe Campaign-client (**nlclient**), moeten de volgende havens open zijn:
 
 <table> 
  <tbody> 
@@ -135,7 +135,7 @@ Voor de rijke cliënt van Adobe Campaign (**nlclient**), moeten de volgende have
   <tr> 
    <td><p> 80/tcp (http)</p><p>443/tcp (https)</p><br /> </td> 
    <td> Applicatieserver<br /> </td> 
-   <td> ZEEP-verkeer (HTTP).<br /> </td> 
+   <td> SOAP-verkeer (HTTP).<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -149,7 +149,7 @@ De standaardhavens zijn het volgende:
 <table> 
  <tbody> 
   <tr> 
-   <td> Databasetype<br /> </td> 
+   <td> Type database<br /> </td> 
    <td> Poort (standaard)<br /> </td> 
    <td> Doel<br /> </td> 
   </tr> 
@@ -226,7 +226,7 @@ Deze servergastherenWeb vormen, spiegelpagina&#39;s, enz. De volgende poorten mo
 
 ## Integratie met Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-De integratie tussen Adobe Campaign en Adobe Experience Manager vereist het openen van verscheidene havens als de installatie &quot;op-gebouw&quot;is. Raadpleeg de [gedetailleerde documentatie](../../integrations/using/about-adobe-experience-manager.md) voor meer informatie over het configureren van deze integratie.
+De integratie tussen Adobe Campaign en Adobe Experience Manager vereist het openen van verscheidene havens als de installatie &quot;op-gebouw&quot;is. Voor meer informatie bij het vormen van deze integratie, verwijs naar [gedetailleerde documentatie](../../integrations/using/about-adobe-experience-manager.md).
 
 <table> 
  <tbody> 
@@ -236,11 +236,11 @@ De integratie tussen Adobe Campaign en Adobe Experience Manager vereist het open
   </tr> 
   <tr> 
    <td> 80<br /> </td> 
-   <td> Verbinding AEM met Adobe Campaign<br /> </td> 
+   <td> AEM verbinding met Adobe Campaign<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 
-   <td> Adobe Campaign-verbinding met AEM 'authoring'- en 'publishing'-instanties. De te openen havens kunnen van de standaardhavens, afhankelijk van uw AEM configuratie verschillend zijn.<br /> </td> 
+   <td> Adobe Campaign-verbinding met AEM 'authoring'- en 'publishing'-instanties. Afhankelijk van uw AEM configuratie kunnen de poorten die u wilt openen afwijken van de standaardpoorten.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

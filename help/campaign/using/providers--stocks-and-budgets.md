@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Met Adobe Campaign kunt u serviceproviders definiëren die betrokken zijn bij de
 
 Elke serviceprovider wordt opgeslagen in een bestand met contactgegevens, servicesjablonen en verwante taken.
 
-Serviceproviders worden geconfigureerd in het knooppunt **[!UICONTROL Administration > Campaign management]** van de structuur.
+De dienstverleners worden gevormd in **[!UICONTROL Administration > Campaign management]** knooppunt van de structuur.
 
 De taken die tijdens de leveringen worden uitgevoerd, worden door de dienstverleners verricht, met name voor direct mail en mobiele kanalen. Deze serviceproviders kunnen bijvoorbeeld betrokken zijn bij het afdrukken of verspreiden van berichten. Deze taken omvatten configuraties en kosten die specifiek zijn voor elke dienstverlener. De configuratie van dienstverleners omvat vier fasen:
 
@@ -33,11 +33,11 @@ De taken die tijdens de leveringen worden uitgevoerd, worden door de dienstverle
 
 1. Bepalend kostencategorieën en structuren van bijbehorende de dienstmalplaatjes
 
-   Zie [kostencategorieën definiëren](#defining-cost-categories) en [De kostenstructuur definiëren](#defining-the-cost-structure).
+   Zie [Definiëren van kostencategorieën](#defining-cost-categories) en [De kostenstructuur definiëren](#defining-the-cost-structure).
 
 1. Configuratie van processen
 
-   Zie [Processen configureren die zijn gekoppeld aan een service](#configuring-processes-associated-with-a-service).
+   Zie [Het vormen processen verbonden aan de dienst](#configuring-processes-associated-with-a-service).
 
 1. Verwijzen naar de dienstverlener op campagneniveau
 
@@ -49,7 +49,7 @@ De taken die tijdens de leveringen worden uitgevoerd, worden door de dienstverle
 
 U kunt zoveel serviceproviders maken als nodig zijn voor uw leveringen. De procedure voor de toevoeging van een dienstverlener is als volgt:
 
-1. Klik met de rechtermuisknop op de lijst met serviceproviders en selecteer **[!UICONTROL New]** of klik op de knop **[!UICONTROL New]** boven de lijst met serviceproviders.
+1. Klik met de rechtermuisknop op de lijst met serviceproviders en selecteer **[!UICONTROL New]** of klik op de knop **[!UICONTROL New]** boven de lijst met dienstverleners.
 1. Geef in de onderste sectie van het venster de naam en contactgegevens van de serviceprovider op.
 
    ![](assets/s_ncs_user_supplier_node_01.png)
@@ -62,30 +62,30 @@ U moet de dienstmalplaatjes met elke dienstverlener associëren. In deze templat
 
 >[!NOTE]
 >
->Raadpleeg [De kostenstructuur definiëren](#defining-the-cost-structure) voor meer informatie.
+>Raadpleeg voor meer informatie hierover [De kostenstructuur definiëren](#defining-the-cost-structure).
 
 Een kostencategorie is een entiteit die een reeks kosten bevat die in aanmerking komen voor een bepaalde soort levering (e-mail, direct mail, enz.) of voor een taak. De categorieën van kosten worden gegroepeerd in de malplaatjes van de diensten verbonden aan de dienstverleners. Elke dienstverlener kan één of meerdere de dienstmalplaatjes van verwijzingen voorzien.
 
 Pas de volgende stappen toe om een servicesjabloon te maken en de inhoud ervan te definiëren:
 
-1. Klik op het tabblad **[!UICONTROL Services]** van het servicebureau op de knop **[!UICONTROL Add]** en geef een naam op voor de servicesjabloon.
+1. In de **[!UICONTROL Services]** tabblad van het prepress-bureau klikt u op de knop **[!UICONTROL Add]** en geef de servicesjabloon een naam.
 
    ![](assets/s_ncs_user_supplier_node_create_template.png)
 
-1. Maak de kostencategorieën voor elk type proces (levering per direct mail/e-mail/enz.). of taak). Om dit te doen, klik **[!UICONTROL Cost categories]** tabel en dan **[!UICONTROL Add]** knoop, en ga de parameters van elke kostencategorie in.
+1. Maak de kostencategorieën voor elk type proces (levering per direct mail/e-mail/etc.). of taak). Om dit te doen, klik **[!UICONTROL Cost categories]** en vervolgens de **[!UICONTROL Add]** en voert u de parameters van elke kostencategorie in.
 
    ![](assets/s_ncs_user_supplier_node_03.png)
 
-   * Voer een label in voor deze kostencategorie en selecteer het type proces in kwestie: Levering door **[!UICONTROL Direct mail]**, **[!UICONTROL E-mail]**, **[!UICONTROL Mobile]**, **[!UICONTROL Telephone]** of **[!UICONTROL Task]**.
-   * Klik op de knop **[!UICONTROL Add]** om de typen kosten te definiëren die aan deze categorie zijn gekoppeld.
+   * Voer een label in voor deze kostencategorie en selecteer het type proces in kwestie: Aflevering door **[!UICONTROL Direct mail]**, **[!UICONTROL Email]**, **[!UICONTROL Mobile]**, **[!UICONTROL Telephone]** of **[!UICONTROL Task]**.
+   * Klik op de knop **[!UICONTROL Add]** om de soorten kosten te bepalen verbonden aan deze categorie.
    * Indien nodig wordt een voorraadlijn gekoppeld aan elk type kosten, zodat de gebruikte hoeveelheden automatisch aan de bestaande voorraden worden gerelateerd.
 
       >[!NOTE]
       >
-      >De voorraadlijnen worden bepaald in **[!UICONTROL Stock management]** knoop.\
-      >Raadpleeg [Stock- en orderbeheer](#stock-and-order-management) voor meer informatie hierover.
+      >De voorraadlijnen worden gedefinieerd in de **[!UICONTROL Stock management]** knooppunt.\
+      >Raadpleeg voor meer informatie hierover [Beheer van voorraden en orders](#stock-and-order-management).
 
-1. U kunt een waarde voor deze kostencategorie vooraf selecteren, die standaard wordt aangeboden in de kostencategorieën van de serviceprovider (in plaats van een leeg vak). Selecteer hiertoe de optie in de kolom **[!UICONTROL Selected]** voor het betrokken type categorie:
+1. U kunt een waarde voor deze kostencategorie vooraf selecteren, die standaard wordt aangeboden in de kostencategorieën van de serviceprovider (in plaats van een leeg vak). Selecteer hiertoe de optie in het dialoogvenster **[!UICONTROL Selected]** kolom voor de betrokken categorie:
 
    ![](assets/s_ncs_user_supplier_cost_structure_defaut.png)
 
@@ -97,35 +97,35 @@ Pas de volgende stappen toe om een servicesjabloon te maken en de inhoud ervan t
 
 Voor elk type kosten worden in een kostenstructuur de toe te passen berekeningsregels vermeld.
 
-Klik op het tabblad **[!UICONTROL Cost structure]** om de kostenberekening voor elke kostencategorie en elk type te configureren. Klik op **[!UICONTROL Add]** en voer de kostenstructuur in.
+Klik op de knop **[!UICONTROL Cost structure]** om de kostenberekening voor elke kostencategorie en type te vormen. Klikken **[!UICONTROL Add]** en voert de kostenstructuur in.
 
 ![](assets/s_ncs_user_supplier_node_04.png)
 
-* Om de kostenstructuur tot stand te brengen, selecteer het type van bericht en de betreffende kostencategorie van de drop-down lijsten, evenals het type van kosten waarop de berekeningsregel zal van toepassing zijn. De inhoud van deze vervolgkeuzelijsten is afkomstig van de gegevens die zijn ingevoerd via het tabblad **[!UICONTROL Cost categories]**.
+* Om de kostenstructuur tot stand te brengen, selecteer het type van bericht en de betreffende kostencategorie van de drop-down lijsten, evenals het type van kosten waarop de berekeningsregel zal van toepassing zijn. De inhoud van deze vervolgkeuzelijsten is afkomstig van de gegevens die zijn ingevoerd via de **[!UICONTROL Cost categories]** tab.
 
    U moet een label toewijzen aan de kostenstructuur. Standaard heeft deze de volgende leveringsomtrek: **Kostencategorie - Soort kosten**.
 
-   U kunt de naam echter wijzigen: Voer de gewenste waarde rechtstreeks in het veld **[!UICONTROL Label]** in.
+   U kunt de naam echter wijzigen: Voer de gewenste waarde rechtstreeks in het dialoogvenster **[!UICONTROL Label]** veld.
 
 * De kostenberekeningsformule wordt gedefinieerd in de onderste sectie van het venster.
 
    Deze formule kan worden vastgesteld (voor om het even welk aantal berichten) of berekend volgens het aantal berichten.
 
-   Wanneer deze afhankelijk is van het aantal berichten, kan de kostenberekeningsstructuur **[!UICONTROL Linear]**, **[!UICONTROL Linear by threshold]**, of **[!UICONTROL Constant by threshold]** zijn.
+   Wanneer het van het aantal berichten afhangt, kan de structuur van de kostenberekening zijn **[!UICONTROL Linear]**, **[!UICONTROL Linear by threshold]**, of **[!UICONTROL Constant by threshold]**.
 
 #### Lineaire structuur {#linear-structure}
 
-Als het bedrag altijd het zelfde voor een bericht (of een partij van berichten) ongeacht het totale aantal berichten is, uitgezocht **[!UICONTROL Linear]** en ga de kosten van elk bericht in.
+Als de hoeveelheid altijd gelijk is voor een bericht (of een partij berichten) ongeacht het totale aantal berichten, selecteert u **[!UICONTROL Linear]** en voer de kosten van elk bericht in.
 
 ![](assets/s_ncs_user_supplier_cost_structure_calc_01.png)
 
-Als dit bedrag op een partij berichten van toepassing is, specificeer het aantal berichten betrokken op **[!UICONTROL for]** gebied.
+Als dit bedrag op een partij berichten van toepassing is, specificeer het aantal berichten betrokken in **[!UICONTROL for]** veld.
 
 ![](assets/s_ncs_user_supplier_cost_structure_calc_02.png)
 
 #### Lineaire structuur volgens drempel {#linear-structure-by-threshold}
 
-Als het bedrag door drempel voor elk bericht van toepassing is, moet u een **[!UICONTROL Linear by threshold]** berekeningsstructuur bepalen. In dit type van kostenstructuur, zal elk bericht 0.13 kosten, bijvoorbeeld, als het totale aantal berichten tussen 1 en 100 is, en 0.12 van 100 tot 1000 verzonden berichten zal kosten, of 0.11 voorbij 1000 berichten.
+Als het bedrag per drempel voor elk bericht van toepassing is, moet u een **[!UICONTROL Linear by threshold]** berekeningsstructuur. In dit type van kostenstructuur, zal elk bericht 0.13 kosten, bijvoorbeeld, als het totale aantal berichten tussen 1 en 100 is, en 0.12 van 100 tot 1000 verzonden berichten zal kosten, of 0.11 voorbij 1000 berichten.
 
 De configuratie is als volgt:
 
@@ -135,27 +135,27 @@ Als u een drempelwaarde wilt toevoegen, klikt u op de knop **[!UICONTROL Add]** 
 
 #### Constante structuur op drempel {#constant-structure-by-threshold}
 
-Tot slot kunt u een kostenberekening op het totale aantal berichten vormen. Selecteer hiertoe een **[!UICONTROL Constant by threshold]**-berekeningsstructuur. Bijvoorbeeld, zullen de kosten aan een vast bedrag van 12.00 voor 1 tot 100 berichten, en bij 100.00 voor een levering van 101 tot 1000 berichten, en 500.00 voor om het even welke levering meer dan 1000 berichten, ongeacht het totale aantal worden geplaatst.
+Tot slot kunt u een kostenberekening op het totale aantal berichten vormen. Selecteer een **[!UICONTROL Constant by threshold]** berekeningsstructuur. Bijvoorbeeld, zullen de kosten aan een vast bedrag van 12.00 voor 1 tot 100 berichten, en bij 100.00 voor een levering van 101 tot 1000 berichten, en 500.00 voor om het even welke levering meer dan 1000 berichten, ongeacht het totale aantal worden geplaatst.
 
 ![](assets/s_ncs_user_supplier_cost_structure_calc_04.png)
 
 ### Het vormen processen verbonden aan de dienst {#configuring-processes-associated-with-a-service}
 
-U kunt informatie over de processen associëren verbonden aan de dienst via **[!UICONTROL Processes]** tabel.
+U kunt informatie over de processen associëren verbonden aan de dienst via **[!UICONTROL Processes]** tab.
 
 Om dit te doen, klik **[!UICONTROL Processes]** lusje om het verzenden van informatie aan de router te vormen.
 
 ![](assets/s_ncs_user_supplier_node_02.png)
 
-* De sectie **[!UICONTROL File extraction]** geeft de exportsjabloon aan die wordt gebruikt voor levering wanneer deze service is geselecteerd. U kunt de naam van het uitvoerbestand aangeven in het veld **[!UICONTROL Extraction file]**. Met de knop rechts van het veld kunt u variabelen invoegen.
+* De **[!UICONTROL File extraction]** in dit gedeelte wordt de exportsjabloon aangegeven die voor levering wordt gebruikt wanneer deze service is geselecteerd. U kunt de naam van het uitvoerbestand aangeven in het dialoogvenster **[!UICONTROL Extraction file]** veld. Met de knop rechts van het veld kunt u variabelen invoegen.
 
    ![](assets/s_ncs_user_supplier_node_02a.png)
 
-* In de sectie **[!UICONTROL Notification e-mail]** kunt u de sjabloon opgeven om serviceproviders op de hoogte te stellen nadat bestanden zijn verzonden. Selecteer de sjabloon die wordt gebruikt om het waarschuwingsbericht en de groep ontvangers te maken.
+* De **[!UICONTROL Notification email]** kunt u de sjabloon opgeven om serviceproviders op de hoogte te stellen nadat bestanden zijn verzonden. Selecteer de sjabloon die wordt gebruikt om het waarschuwingsbericht en de groep ontvangers te maken.
 
-   Standaard worden leveringssjablonen voor berichtberichten opgeslagen in het knooppunt **[!UICONTROL Administration > Campaign management > Technical delivery templates]**, dat toegankelijk is vanuit de algemene weergave.
+   Standaard worden leveringssjablonen voor berichtberichten opgeslagen in de **[!UICONTROL Administration > Campaign management > Technical delivery templates]** knooppunt, dat toegankelijk is vanuit de algemene weergave.
 
-* In de sectie **[!UICONTROL Post-processing]** kunt u de workflow selecteren die u wilt starten nadat de levering is goedgekeurd. Als een werkstroomsjabloon wordt ingevoerd, wordt automatisch een werkstroominstantie gemaakt en gestart zodra de goedkeuring van kracht wordt. Deze workflow kan het extractiebestand bijvoorbeeld naar een externe serviceprovider sturen voor verwerking.
+* De **[!UICONTROL Post-processing]** kunt u de workflow selecteren die u wilt starten nadat de levering is goedgekeurd. Als een werkstroomsjabloon wordt ingevoerd, wordt automatisch een werkstroominstantie gemaakt en gestart zodra de goedkeuring van kracht wordt. Deze workflow kan het extractiebestand bijvoorbeeld naar een externe serviceprovider sturen voor verwerking.
 
 ### Een service koppelen aan een campagne {#associating-a-service-with-a-campaign}
 
@@ -165,20 +165,20 @@ Wanneer een dienst wordt geselecteerd, de kostencategorieën die met het type va
 
 >[!NOTE]
 >
->Als geen kostencategorie wordt getoond wanneer de dienst wordt geselecteerd, betekent het dat geen kostencategorie voor dit type van proces werd bepaald. Als er bijvoorbeeld geen kostencategorie voor het type **[!UICONTROL E-mail]** is gedefinieerd voor het verzenden van e-mail, wordt geen categorie weergegeven en heeft het selecteren van de service geen effect.
+>Als geen kostencategorie wordt getoond wanneer de dienst wordt geselecteerd, betekent het dat geen kostencategorie voor dit type van proces werd bepaald. Bijvoorbeeld voor een e-maillevering, als er geen is **[!UICONTROL Email]** type kostencategorie is gedefinieerd, geen categorie wordt weergegeven en het selecteren van de service heeft geen effect.
 
 * Voor een directe postlevering, kunt u de dienst van het configuratievenster selecteren.
 
    ![](assets/s_ncs_user_supplier_mail_delivery_select.png)
 
 * Voor levering op mobiele kanalen of telefoon geldt dezelfde selectiemodus.
-* Voor een e-maillevering wordt de service geselecteerd op het tabblad **[!UICONTROL Advanced]** in de leveringseigenschappen, zoals in het volgende voorbeeld:
+* Voor een e-maillevering wordt de service geselecteerd in het menu **[!UICONTROL Advanced]** in de leveringseigenschappen, zoals in het volgende voorbeeld:
 
    ![](assets/s_ncs_user_supplier_email_delivery_select.png)
 
-In de kolom **[!UICONTROL Amount to surcharge]** kunt u kosten voor deze categorie toevoegen in de context van de desbetreffende levering of taak.
+De **[!UICONTROL Amount to surcharge]** in de kolom kunt u kosten voor deze categorie toevoegen in de context van de desbetreffende levering of taak.
 
-U kunt verplichte selectie van een kostentype tijdens de definitie van kostencategorieën voor een levering opleggen. Selecteer **[!UICONTROL A cost type must be selected]** om dit te doen.
+U kunt verplichte selectie van een kostentype tijdens de definitie van kostencategorieën voor een levering opleggen. Selecteer **[!UICONTROL A cost type must be selected]**.
 
 ![](assets/s_ncs_user_supplier_cost_structure_select.png)
 
@@ -190,7 +190,7 @@ De procedure voor het opzetten van het beheer van de voorraden en de orders in A
 
 1. Aanmaak van voorraden en referentie van verbonden dienstverleners
 
-   Zie [Een bestand maken](#creating-a-stock).
+   Zie [Een voorraad maken](#creating-a-stock).
 
 1. Stamlijnen toevoegen
 
@@ -206,7 +206,7 @@ De procedure voor het opzetten van het beheer van de voorraden en de orders in A
 
 ### Voorraadbeheer {#stock-management}
 
-Adobe Campaign kan een groep operatoren waarschuwen als het bestand is uitgeput of een minimumdrempel heeft bereikt. De voorraadniveaus zijn toegankelijk via de verbinding **[!UICONTROL Stocks]** van het **[!UICONTROL Campaigns]** lusje via **[!UICONTROL Other choices]** verbinding van het navigatiegebied.
+Adobe Campaign kan een groep operatoren waarschuwen als het bestand is uitgeput of een minimumdrempel heeft bereikt. De voorraadniveaus zijn toegankelijk via de **[!UICONTROL Stocks]** koppeling van de **[!UICONTROL Campaigns]** via de **[!UICONTROL Other choices]** koppeling van het navigatiegebied.
 
 ![](assets/s_ncs_user_stocks_view.png)
 
@@ -214,34 +214,34 @@ Adobe Campaign kan een groep operatoren waarschuwen als het bestand is uitgeput 
 
 Pas de volgende stappen toe om een nieuwe voorraad te maken:
 
-1. Klik op de knop **[!UICONTROL Create]** boven de lijst met bestanden.
+1. Klik op de knop **[!UICONTROL Create]** boven de lijst van voorraden.
 1. Voer het label van de voorraad in en selecteer in de vervolgkeuzelijst de serviceprovider waaraan deze is gekoppeld.
 
    ![](assets/s_ncs_user_stocks_add.png)
 
    >[!NOTE]
    >
-   >Raadpleeg [Serviceproviders en hun kostenstructuren maken](#creating-service-providers-and-their-cost-structures) voor meer informatie.
+   >Raadpleeg voor meer informatie hierover [Dienstverleners en hun kostenstructuren creëren](#creating-service-providers-and-their-cost-structures).
 
 #### Stamlijnen toevoegen {#adding-stock-lines}
 
 Een voorraad omvat verschillende voorraadlijnen. Een voorraadlijn bevat een initiële hoeveelheid middelen die door leveringen zal worden verbruikt. Elke voorraadlijn geeft de verbruikte hoeveelheid, de voorraad en de bestelde hoeveelheid aan.
 
-Wanneer u een voorraad maakt, klikt u op het tabblad **[!UICONTROL Stock lines]** om nieuwe regels toe te voegen.
+Wanneer u een voorraad maakt, klikt u op de knop **[!UICONTROL Stock lines]** om nieuwe regels toe te voegen.
 
 ![](assets/s_ncs_user_stocks_display_line.png)
 
 Nadat de voorraad is gemaakt, klikt u erop om deze te bewerken en gebruikt u het dashboard om aandelenlijnen te maken en weer te geven.
 
-Klik op de knop **[!UICONTROL Create]** om de voorraadparameters te definiëren.
+Klik op de knop **[!UICONTROL Create]** om de voorraadparameters te bepalen.
 
 ![](assets/s_ncs_user_stocks_new_line.png)
 
-* Vermeld de oorspronkelijk in voorraad zijnde hoeveelheid in het veld **[!UICONTROL Initial stock]**. De velden **[!UICONTROL Consumed]** en **[!UICONTROL In stock]** worden automatisch berekend en bijgewerkt naarmate de campagnes vorderen.
+* Vermeld de aanvankelijk in voorraad zijnde hoeveelheid in het **[!UICONTROL Initial stock]** veld. De **[!UICONTROL Consumed]** en **[!UICONTROL In stock]** de velden worden automatisch berekend en bijgewerkt naarmate de campagnes vorderen.
 
    ![](assets/s_ncs_user_stocks_create_line.png)
 
-* Vermeld de drempel waarvanaf exploitanten moeten worden gewaarschuwd voor het bestellen van voorraden in het veld **[!UICONTROL Alert level]**. Wanneer het alarmniveau wordt bereikt, wordt een waarschuwingsbericht getoond in het goedkeuringsvenster van leveringen die deze voorraad gebruiken.
+* Vermeld de drempel waaraf exploitanten moeten worden gewaarschuwd voor de aanschaf van een ordervoorraad in het **[!UICONTROL Alert level]** veld. Wanneer het alarmniveau wordt bereikt, wordt een waarschuwingsbericht getoond in het goedkeuringsvenster van leveringen die deze voorraad gebruiken.
 
 #### Een aandeel koppelen aan kostencategorieën {#associating-a-stock-with-cost-categories}
 
@@ -259,21 +259,21 @@ Er wordt een waarschuwing weergegeven wanneer een voorraad waarnaar in een lever
 
 #### Orders {#orders}
 
-Met het subtabblad **[!UICONTROL Orders]** kunt u de huidige bestellingen weergeven en nieuwe bestellingen opslaan.
+De **[!UICONTROL Orders]** Met de subtab kunt u de huidige bestellingen weergeven en nieuwe bestellingen opslaan.
 
 ![](assets/s_ncs_user_stocks_edit_from_board.png)
 
-Als u een bestelling wilt opslaan, bewerkt u de doelvoorraadlijn, klikt u op de knop **[!UICONTROL Add]** en geeft u de leveringsdatum en de bestelde hoeveelheid op.
+Als u een bestelling wilt opslaan, bewerkt u de doelvoorraadregel. Klik op de knop **[!UICONTROL Add]** en geeft de leveringsdatum en de bestelde hoeveelheid aan.
 
 ![](assets/s_ncs_user_stocks_node_06.png)
 
 >[!NOTE]
 >
->Zodra de leveringsdatum wordt bereikt, verdwijnt de geordende voorraadlijn automatisch en de hoeveelheid ingegaan op **[!UICONTROL Volume on order]** gebied wordt toegevoegd aan **[!UICONTROL Tracking]** tabel. Deze hoeveelheid wordt automatisch toegevoegd aan het voorraadvolume.
+>Zodra de leveringsdatum is bereikt, verdwijnt de bestelde voorraadlijn automatisch en wordt de in de **[!UICONTROL Volume on order]** veld wordt toegevoegd aan de **[!UICONTROL Tracking]** tab. Deze hoeveelheid wordt automatisch toegevoegd aan het voorraadvolume.
 
 ![](assets/s_ncs_user_stocks_node_08.png)
 
-Het tabblad **[!UICONTROL Consumptions]** bevat het volume dat per campagne wordt verbruikt. De gegevens op dit tabblad worden automatisch ingevoerd op basis van de uitgevoerde leveringen. Klik op de knop **[!UICONTROL Edit]** om de betreffende campagne te openen.
+De **[!UICONTROL Consumptions]** bevat het volume dat per campagne wordt verbruikt. De gegevens op dit tabblad worden automatisch ingevoerd op basis van de uitgevoerde leveringen. Klik op de knop **[!UICONTROL Edit]** om de betrokken campagne te openen.
 
 ![](assets/s_ncs_user_stocks_edit_from_board_consumed.png)
 
@@ -287,8 +287,8 @@ De kosten voor de uitvoering van een campagne worden geconsolideerd op het nivea
 
 ### Implementatie {#implementation}
 
-Als u in een campagne het budget selecteert, moet u het oorspronkelijke bedrag invoeren. De berekende kosten worden automatisch bijgewerkt op basis van het niveau van de aangegane verplichtingen (gemaakte, verwachte, gereserveerde, vastgelegde kosten). Zie [Hoeveelheden berekenen](../../mrm/using/controlling-costs.md#calculating-amounts).
+Als u in een campagne het budget selecteert, moet u het oorspronkelijke bedrag invoeren. De berekende kosten worden automatisch bijgewerkt op basis van het niveau van de aangegane verplichtingen (gemaakte, verwachte, gereserveerde, vastgelegde kosten). Zie [Berekening van bedragen](../../mrm/using/controlling-costs.md#calculating-amounts).
 
 >[!NOTE]
 >
->De procedure voor het maken van budgetten wordt weergegeven in [Een budget maken](../../mrm/using/controlling-costs.md#creating-a-budget).
+>De procedure voor het opstellen van de begrotingen wordt uiteengezet in [Een begroting maken](../../mrm/using/controlling-costs.md#creating-a-budget).

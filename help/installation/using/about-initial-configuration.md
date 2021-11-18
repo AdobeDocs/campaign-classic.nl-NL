@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f77ba178-0dfb-4a2e-b33b-971765d42298
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 8%
@@ -19,11 +19,11 @@ ht-degree: 8%
 
 Zodra de installatie van Adobe Campaign volledig is, moet u het vormen om ervoor te zorgen het efficiënt met uw beperkingen en technische architectuur werkt. De stappen voor het configureren van een Adobe Campaign-instantie worden in dit hoofdstuk in de volgende volgorde beschreven:
 
-1. Creeer de instantie en de verwante verbinding, verwijs naar [Creërend een instantie en het programma openen](../../installation/using/creating-an-instance-and-logging-on.md).
-1. Creeer en vorm het gegevensbestand, verwijs naar [Creërend en vormend het gegevensbestand](../../installation/using/creating-and-configuring-the-database.md).
-1. Configureer de Adobe Campaign-server. Raadpleeg [Configuratie campagneserver](../../installation/using/configuring-campaign-server.md).
-1. Implementeer de instantie. Raadpleeg [Instantie](../../installation/using/deploying-an-instance.md) implementeren.
+1. Maak het exemplaar en de bijbehorende verbinding. Raadpleeg [Een instantie maken en aanmelden](../../installation/using/creating-an-instance-and-logging-on.md).
+1. Creeer en vorm het gegevensbestand, verwijs naar [De database maken en configureren](../../installation/using/creating-and-configuring-the-database.md).
+1. Adobe Campaign-server configureren, raadpleeg [Configuratie van campagneserver](../../installation/using/configuring-campaign-server.md).
+1. Implementeer de instantie, raadpleeg [Een instantie implementeren](../../installation/using/deploying-an-instance.md).
 
-Het configureren van de instantie betekent dat processen moeten worden ingeschakeld (web, mta, wfserver, enz.) om op de server te beginnen en modules te vormen voor het verzenden van e-mail, voor het volgen, enz. Voor elke instantie worden Adobe Campaign-processen geactiveerd op de server. Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#enabling-processes) voor meer informatie.
+Het configureren van de instantie betekent dat processen moeten worden ingeschakeld (web, mta, wfserver, enz.) die op de server moet worden begonnen en modules vormen voor het verzenden van e-mail, voor het volgen, enz. Voor elke instantie worden Adobe Campaign-processen geactiveerd op de server. Raadpleeg [deze sectie](../../installation/using/configuring-campaign-server.md#enabling-processes) voor meer informatie.
 
 Afhankelijk van de gebruikte modules, uw architectuur en uw behoeften, kunnen voor elke instantie aanvullende configuraties nodig zijn om de Adobe Campaign-werking te optimaliseren.

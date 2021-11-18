@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 1%
@@ -23,12 +23,12 @@ Voer de volgende stappen uit om een lijst met ontvangers te maken en op te geven
 
 1. De lijst maken
 
-   * Klik op de koppeling **[!UICONTROL Lists]** in het menu **[!UICONTROL Profiles and targets]** van de startpagina van Adobe Campaign.
-   * Klik op **[!UICONTROL Create]** en vervolgens op de knop **[!UICONTROL Import a list]**.
+   * Klik op de knop **[!UICONTROL Lists]** in de **[!UICONTROL Profiles and targets]** menu van de startpagina van Adobe Campaign.
+   * Klik op de knop **[!UICONTROL Create]** en vervolgens de **[!UICONTROL Import a list]** knop.
 
 1. Het te importeren bestand selecteren
 
-   Klik op de map rechts van het veld **[!UICONTROL Local file]** en selecteer het bestand met de lijst die u wilt importeren.
+   Klik op de map rechts van het dialoogvenster **[!UICONTROL Local file]** en selecteert u het bestand dat de lijst bevat die u wilt importeren.
 
    ![](assets/s_ncs_user_import_example00_01.png)
 
@@ -40,7 +40,7 @@ Voer de volgende stappen uit om een lijst met ontvangers te maken en op te geven
 
 1. Het importeren starten
 
-   Klik op **[!UICONTROL Next]** en **[!UICONTROL Start]** om de lijst te importeren.
+   Klikken **[!UICONTROL Next]** en vervolgens **[!UICONTROL Start]** om te beginnen met het importeren van de lijst.
 
    ![](assets/s_ncs_user_import_example00_03.png)
 
@@ -50,29 +50,29 @@ Voer de volgende stappen uit om nieuwe, in een tekstbestand opgeslagen ontvanger
 
 1. Een sjabloon kiezen
 
-   * Van de homepage van Adobe Campaign, klik **[!UICONTROL Profiles and targets]** verbinding, dan **[!UICONTROL Jobs]**. Klik boven de lijst met taken op **[!UICONTROL New import]**.
-   * Laat de sjabloon **[!UICONTROL New text import]** standaard geselecteerd.
+   * Klik op de startpagina van Adobe Campaign op de knop **[!UICONTROL Profiles and targets]** koppeling, dan **[!UICONTROL Jobs]**. Klik boven de lijst met taken op **[!UICONTROL New import]**.
+   * De **[!UICONTROL New text import]** sjabloon standaard geselecteerd.
    * Wijzig het label en de beschrijving.
    * Selecteer **[!UICONTROL Simple import]**.
    * De standaardtaakmap behouden.
-   * Klik **[!UICONTROL Advanced parameters]** en selecteer **[!UICONTROL Tracking mode]** optie om de details van uw invoer tijdens uitvoering te bekijken.
+   * Klikken **[!UICONTROL Advanced parameters]** en selecteert u de **[!UICONTROL Tracking mode]** om de details van uw import tijdens de uitvoering weer te geven.
 
 1. Het te importeren bestand selecteren
 
-   Klik op de map rechts van het veld **[!UICONTROL Local file]** en selecteer het bestand dat u wilt importeren.
+   Klik op de map rechts van het dialoogvenster **[!UICONTROL Local file]** en selecteer het bestand dat u wilt importeren.
 
    ![](assets/s_ncs_user_import_example01_01.png)
 
 1. Velden koppelen
 
-   Klik op het pictogram **[!UICONTROL Guess the destination fields]** om de bron- en doelschema&#39;s automatisch toe te wijzen. Controleer de informatie in dit venster voordat u op **[!UICONTROL Next]** klikt.
+   Klik op de knop **[!UICONTROL Guess the destination fields]** pictogram om de bron- en doelschema&#39;s automatisch toe te wijzen. Controleer de informatie in dit venster voordat u op **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_user_import_example03_01.png)
 
 1. Afstemming
 
-   * Ga naar **Ontvangers (nms:ontvanger)** lijst.
-   * Selecteer de bewerking **[!UICONTROL Insertion]** en laat de standaardwaarden in de andere velden staan.
+   * Ga naar de **Ontvangers (nms:ontvanger)** tabel.
+   * Selecteer **[!UICONTROL Insertion]** en laat de standaardwaarden in de andere velden staan.
 
       ![](assets/s_ncs_user_import_example04_01.png)
 
@@ -90,7 +90,7 @@ Voer de volgende stappen uit om nieuwe, in een tekstbestand opgeslagen ontvanger
 
       ![](assets/s_ncs_user_import_example06_01.png)
 
-      In de modus **[!UICONTROL Tracking]** kunt u de details van de import bijhouden voor elke record in het bronbestand. Om dit te doen, van de homepage klik **[!UICONTROL Profiles and Targets]** dan **[!UICONTROL Processes]**, selecteer de relevante invoer, en kijk omhoog **[!UICONTROL General]**, **[!UICONTROL Journal]** en **[!UICONTROL Rejects]** lusjes.
+      De **[!UICONTROL Tracking]** in de modus kunt u de details van de import bijhouden voor elke record in het bronbestand. Om dit te doen, van de homepage klik **[!UICONTROL Profiles and Targets]** dan **[!UICONTROL Processes]**, selecteert u de desbetreffende importbewerking en zoekt u de **[!UICONTROL General]**, **[!UICONTROL Journal]** en **[!UICONTROL Rejects]** tabs.
 
       * Voortgang van importeren controleren
 
@@ -122,9 +122,9 @@ We willen bestaande records in de database bijwerken en nieuwe records maken van
 
 1. Afstemming
 
-   * Laat **[!UICONTROL Update or insert]** standaard ingeschakeld.
-   * Houd de optie **[!UICONTROL Management of duplicates]** in de modus **[!UICONTROL Update]**, zodat bestaande records in de database worden gewijzigd met gegevens uit het tekstbestand.
-   * Selecteer de velden **[!UICONTROL Birth date]**, **[!UICONTROL Name]** en **[!UICONTROL Company]** en wijs er een afstemmingssleutel aan toe.
+   * Behouden **[!UICONTROL Update or insert]** standaard geselecteerd.
+   * De optie behouden **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** -modus, zodat bestaande records in de database worden gewijzigd met gegevens uit het tekstbestand.
+   * Selecteer de velden **[!UICONTROL Birth date]**, **[!UICONTROL Name]** en **[!UICONTROL Company]** en een verzoeningssleutel aan hen toewijzen.
 
       ![](assets/s_ncs_user_import_example04_02.png)
 
@@ -172,12 +172,12 @@ Voer de volgende stappen uit:
 
 1. Afstemming
 
-   * Ga naar de lijst en selecteer **[!UICONTROL Update]** verrichting.
-   * Selecteer de optie **[!UICONTROL Reject entity]** voor het **[!UICONTROL Management of doubles]** gebied.
-   * Houd de optie **[!UICONTROL Management of duplicates]** in de modus **[!UICONTROL Update]**, zodat bestaande records in de database worden gewijzigd met gegevens uit het tekstbestand.
-   * Plaats de cursor op het knooppunt **[!UICONTROL Last name (@lastName)]** en selecteer de optie **[!UICONTROL Update only if destination is empty]**.
-   * Herhaal deze bewerking voor het knooppunt **[!UICONTROL Company (@company)]**.
-   * Wijs een afstemmingssleutel aan de gebieden **[!UICONTROL Birth date]**, **[!UICONTROL E-mail]** en **[!UICONTROL First name]** toe.
+   * Ga naar de tabel en selecteer de **[!UICONTROL Update]** bewerking.
+   * Selecteer de optie **[!UICONTROL Reject entity]** voor de **[!UICONTROL Management of doubles]** veld.
+   * De optie behouden **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** -modus, zodat bestaande records in de database worden gewijzigd met gegevens uit het tekstbestand.
+   * Plaats de cursor op de **[!UICONTROL Last name (@lastName)]** en selecteer de **[!UICONTROL Update only if destination is empty]** optie.
+   * Deze bewerking herhalen voor de **[!UICONTROL Company (@company)]** knooppunt.
+   * Een afstemmingssleutel toewijzen aan de velden **[!UICONTROL Birth date]**, **[!UICONTROL Email]** en **[!UICONTROL First name]**.
 
       ![](assets/s_ncs_user_import_example04_03.png)
 
@@ -222,10 +222,10 @@ In dit voorbeeld ziet u dat bepaalde velden in het tekstbestand een lege waarde 
 1. Afstemming
 
    * Ga naar de tabel en selecteer **[!UICONTROL Update]**.
-   * Selecteer de optie **[!UICONTROL Reject entity]** voor het **[!UICONTROL Management of doubles]** gebied.
-   * Laat de optie **[!UICONTROL Management of duplicates]** in de modus **[!UICONTROL Update]** staan, zodat bestaande records in de database kunnen worden gewijzigd met gegevens uit het tekstbestand.
-   * Plaats de curseur op **[!UICONTROL Account number (@account)]** knoop en selecteer de optie **[!UICONTROL Take empty values into account]**.
-   * Selecteer de velden **[!UICONTROL Birth date]**, **[!UICONTROL E-mail]** en **[!UICONTROL First name]** en wijs er een afstemmingssleutel aan toe.
+   * Selecteer de optie **[!UICONTROL Reject entity]** voor de **[!UICONTROL Management of doubles]** veld.
+   * De optie behouden **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** voor bestaande records in de database te wijzigen met gegevens uit het tekstbestand.
+   * Plaats de cursor op de **[!UICONTROL Account number (@account)]** en selecteer de optie **[!UICONTROL Take empty values into account]**.
+   * Selecteer de velden **[!UICONTROL Birth date]**, **[!UICONTROL Email]** en **[!UICONTROL First name]** en een verzoeningssleutel aan hen toewijzen.
 
       ![](assets/s_ncs_user_import_example04_04.png)
 
@@ -236,4 +236,4 @@ In dit voorbeeld ziet u dat bepaalde velden in het tekstbestand een lege waarde 
 
       ![](assets/s_ncs_user_import_example06_06.png)
 
-      De waarden van het tekstbestand die leeg waren, hebben de waarden in de database overschreven. De bestaande waarden in de database zijn bijgewerkt met de waarden in het importbestand. Hierbij is de optie **[!UICONTROL Update]** geselecteerd voor duplicaten in stap 4.
+      De waarden van het tekstbestand die leeg waren, hebben de waarden in de database overschreven. De bestaande waarden in de database zijn bijgewerkt met die in het importbestand overeenkomstig de **[!UICONTROL Update]** geselecteerd voor duplicaten in stap 4.

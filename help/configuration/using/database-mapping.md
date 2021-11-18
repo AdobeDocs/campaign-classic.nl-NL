@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '1974'
 ht-degree: 0%
@@ -28,7 +28,7 @@ De SQL-toewijzing van ons voorbeeldschema geeft het volgende XML-document:
   </enumeration>  
 
   <element name="recipient" sqltable="CusRecipient">    
-    <attribute desc="Recipient e-mail address" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
+    <attribute desc="Recipient email address" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
     <attribute default="GetDate()" label="Date of creation" name="created" sqlname="tsCreated" type="datetime"/>    
     <attribute enum="gender" label="Gender" name="gender" sqlname="iGender" type="byte"/>    
     <element label="Location" name="location">      
@@ -50,7 +50,7 @@ De SQL-naamgevingsregels zijn als volgt:
 
 * tabel: samenvoeging van de naamruimte en naam van het schema
 
-   In ons voorbeeld, is de naam van de lijst ingegaan via het belangrijkste element van het schema in **sqltable** attribuut:
+   In ons voorbeeld wordt de naam van de tabel ingevoerd via het hoofdelement van het schema in het dialoogvenster **sqltable** kenmerk:
 
    ```
    <element name="recipient" sqltable="CusRecipient">
@@ -58,10 +58,10 @@ De SQL-naamgevingsregels zijn als volgt:
 
 * veld: naam van het element, voorafgegaan door een voorvoegsel dat is gedefinieerd volgens het type (&#39;i&#39; voor geheel getal, &#39;d&#39; voor dubbel, &#39;s&#39; voor tekenreeks, &#39;ts&#39; voor datums, enz.)
 
-   De veldnaam wordt ingevoerd via het **sqlname**-attribuut voor elk getypt **`<attribute>`** en **`<element>`**:
+   De veldnaam wordt ingevoerd via het dialoogvenster **sqlname** kenmerk voor elk type **`<attribute>`** en **`<element>`**:
 
    ```
-   <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
+   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
    ```
 
 >[!NOTE]
@@ -85,9 +85,9 @@ De beperkingen voor het SQL-veld zijn als volgt:
 
 ## XML-velden {#xml-fields}
 
-Standaard worden getypte **`<attribute>`**- en **`<element>`**-elementen toegewezen aan een SQL-veld van de tabel met het gegevensschema. U kunt echter naar dit veld verwijzen in XML in plaats van naar SQL, wat betekent dat de gegevens worden opgeslagen in een geheugenveld (&quot;mData&quot;) van de tabel dat de waarden van alle XML-velden bevat. De opslag van deze gegevens is een XML-document dat de schemastructuur in acht neemt.
+Standaard worden alle getypte **`<attribute>`** en **`<element>`** element wordt in kaart gebracht op een SQL gebied van de lijst van het gegevensschema. U kunt echter naar dit veld verwijzen in XML in plaats van naar SQL, wat betekent dat de gegevens worden opgeslagen in een geheugenveld (&quot;mData&quot;) van de tabel dat de waarden van alle XML-velden bevat. De opslag van deze gegevens is een XML-document dat de schemastructuur in acht neemt.
 
-Als u een veld in XML wilt vullen, moet u het **xml**-kenmerk met de waarde &quot;true&quot; toevoegen aan het desbetreffende element.
+Als u een veld in XML wilt vullen, voegt u de opdracht **xml** kenmerk met de waarde &quot;true&quot; aan het betrokken element.
 
 **Voorbeeld**: Hier volgen twee voorbeelden van het gebruik van XML-velden.
 
@@ -97,13 +97,13 @@ Als u een veld in XML wilt vullen, moet u het **xml**-kenmerk met de waarde &quo
    <element name="comment" xml="true" type="memo" label="Comment"/>
    ```
 
-* Beschrijving van gegevens in HTML-indeling:
+* Beschrijving van de gegevens in HTML-formaat:
 
    ```
    <element name="description" xml="true" type="html" label="Description"/>
    ```
 
-   Met het type &quot;html&quot; kunt u de HTML-inhoud opslaan in een CDATA-tag en een speciale HTML-bewerkingscontrole weergeven in de Adobe Campaign-clientinterface.
+   Met het type &quot;html&quot; kunt u de HTML-inhoud opslaan in een CDATA-tag en een speciale controle voor het bewerken van HTML weergeven in de Adobe Campaign-clientinterface.
 
 Met XML-velden kunt u velden toevoegen zonder dat u de fysieke structuur van de database hoeft te wijzigen. Een ander voordeel is dat u minder bronnen gebruikt (grootte die is toegewezen aan SQL-velden, beperking van het aantal velden per tabel, enzovoort).
 
@@ -126,7 +126,7 @@ Een index wordt gedeclareerd vanuit het hoofdelement van het gegevensschema.
 Indexen houden zich aan de volgende regels:
 
 * Een index kan verwijzen naar een of meer velden in de tabel.
-* Een index kan uniek zijn (om dubbele waarden te voorkomen) in alle velden als het **unique**-kenmerk de waarde &quot;true&quot; bevat.
+* Een index kan uniek zijn (om dubbele waarden te voorkomen) in alle velden als de **uniek** bevat de waarde &quot;true&quot;.
 * De SQL-naam van de index wordt bepaald door de SQL-naam van de tabel en de naam van de index.
 
 >[!NOTE]
@@ -149,7 +149,7 @@ Indexen houden zich aan de volgende regels:
          <keyfield xpath="location/@city"/> 
        </dbindex>
    
-       <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
+       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
        <element name="location" label="Location">
          <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
        </element>
@@ -171,7 +171,7 @@ Indexen houden zich aan de volgende regels:
        </dbindex>
    
        <attribute name="id" type="long" label="Identifier"/>
-       <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
+       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
      </element>
    </srcSchema>
    ```
@@ -193,8 +193,8 @@ Een sleutel wordt verklaard van het belangrijkste element van het gegevensschema
 Toetsen houden zich aan de volgende regels:
 
 * Een toets kan naar een of meer velden in de tabel verwijzen.
-* Een sleutel is gekend als &quot;primair&quot;(of &quot;prioriteit&quot;) wanneer het eerste in het te vullen schema is of als het **internal** attribuut met de waarde &quot;waar&quot; bevat.
-* Een unieke index wordt impliciet gedeclareerd voor elke sleuteldefinitie. Het maken van een index op de toets kan worden voorkomen door het kenmerk **noDbIndex** met de waarde &quot;true&quot; toe te voegen.
+* Een sleutel wordt &#39;primair&#39; (of &#39;prioriteit&#39;) genoemd wanneer deze de eerste sleutel in het schema is die moet worden ingevuld of wanneer deze de **internal** kenmerk met de waarde &quot;true&quot;.
+* Een unieke index wordt impliciet gedeclareerd voor elke sleuteldefinitie. Het maken van een index op de toets kan worden voorkomen door het toevoegen van de **noDbIndex** kenmerk met de waarde &quot;true&quot;.
 
 >[!NOTE]
 >
@@ -216,7 +216,7 @@ Toetsen houden zich aan de volgende regels:
          <keyfield xpath="location/@city"/> 
        </key>
    
-       <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
+       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
        <element name="location" label="Location">
          <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
        </element>
@@ -239,7 +239,7 @@ Toetsen houden zich aan de volgende regels:
        <keyfield xpath="location/@city"/>    
       </key>    
    
-      <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
+      <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
       <element label="Location" name="location">      
         <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
       </element>  
@@ -261,7 +261,7 @@ Toetsen houden zich aan de volgende regels:
        </key>
    
        <attribute name="id" type="long" label="Identifier"/>
-       <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
+       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
      </element>
    </srcSchema>
    ```
@@ -284,20 +284,20 @@ Toetsen houden zich aan de volgende regels:
        </key>    
    
        <attribute label="Identifier" name="id" sqlname="iRecipientId" type="long"/>    
-       <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>  
+       <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>  
      </element>
    </schema>
    ```
 
 ### Automatische incrementele toets {#auto-incremental-key}
 
-De primaire sleutel van de meeste Adobe Campaign-tabellen is een 32-bits lang geheel getal dat automatisch wordt gegenereerd door de database-engine. De berekening van de sleutelwaarde hangt van een opeenvolging (door gebrek, **XtkNewId** SQL functie) af die een aantal produceert dat in het volledige gegevensbestand uniek is. De inhoud van de toets wordt automatisch ingevoerd bij het invoegen van de record.
+De primaire sleutel van de meeste Adobe Campaign-tabellen is een 32-bits lang geheel getal dat automatisch wordt gegenereerd door de database-engine. De berekening van de sleutelwaarde hangt van een opeenvolging (door gebrek, af **XtkNewId** SQL functie) die een aantal produceren dat in het volledige gegevensbestand uniek is. De inhoud van de toets wordt automatisch ingevoerd bij het invoegen van de record.
 
 Het voordeel van een stijgende sleutel is dat het een niet wijzigbare technische sleutel voor de verbindingen tussen lijsten verstrekt. Bovendien neemt deze sleutel niet veel geheugen in beslag omdat er een dubbel-byte geheel getal wordt gebruikt.
 
-U kunt in het bronschema de naam van de opeenvolging specificeren die met **pkSequence** attributen moet worden gebruikt. Als dit attribuut niet in het bronschema wordt gegeven, zal **XtkNewId** standaardopeenvolging worden gebruikt. De toepassing gebruikt specifieke reeksen voor de schema&#39;s **nms:wideLog** en **nms:trackingLog** (**NmsBroadLogId** en **NmsTrackingLogId** respectievelijk) omdat deze tabellen de meeste records bevatten.
+U kunt in het bronschema de naam opgeven van de reeks die moet worden gebruikt voor de **pkSequence** kenmerk. Als dit kenmerk niet wordt opgegeven in het bronschema, wordt het **XtkNewId** de standaardreeks wordt gebruikt. De toepassing gebruikt specifieke reeksen voor de **nms:wideLog** en **nms:trackingLog** schema&#39;s (**NmsBroadLogId** en **NmsTrackingLogId** respectievelijk) omdat dit de lijsten zijn die de meeste verslagen bevatten.
 
-Van ACC 18.10, **XtkNewId** is niet meer de standaardwaarde voor de opeenvolging in de uit-van-de-doosschema&#39;s. U kunt nu schema bouwen of bestaand schema met een specifieke opeenvolging uitbreiden.
+Vanaf ACC 18.10 **XtkNewId** is niet meer de standaardwaarde voor de opeenvolging in uit-van-de-doosschema&#39;s. U kunt nu schema bouwen of bestaand schema met een specifieke opeenvolging uitbreiden.
 
 >[!IMPORTANT]
 >
@@ -305,9 +305,9 @@ Van ACC 18.10, **XtkNewId** is niet meer de standaardwaarde voor de opeenvolging
 
 >[!NOTE]
 >
->Een opeenvolging die in een schema van Adobe Campaign (**NmsTrackingLogId** bijvoorbeeld) van verwijzingen wordt voorzien moet met een SQL functie worden geassocieerd die het aantal IDs in de parameters terugkeert, die door komma&#39;s wordt gescheiden. Deze functie moet **GetNew** XXX **Ids** worden genoemd, waarbij **XXX** de naam van de opeenvolging is (**GetNewNmsTrackingLogIds** bijvoorbeeld). Bekijk de **postgres-nms.sql**-, **mssql-nms.sql**- of **oracle-nms.sql**-bestanden die bij de toepassing worden geleverd in de map **datakit/nms/eng/sql/** om het voorbeeld te herstellen een opeenvolgingsverwezenlijking &quot;NmsTrackingLogId&quot;voor elke gegevensbestandmotor.
+>Een reeks waarnaar in een Adobe Campaign-schema wordt verwezen (**NmsTrackingLogId** moet bijvoorbeeld) worden gekoppeld aan een SQL-functie die het aantal id&#39;s in de parameters retourneert, gescheiden door komma&#39;s. Deze functie moet worden aangeroepen **GetNew** XXX **ID**, waarbij **XXX** is de naam van de reeks (**GetNewNmsTrackingLogIds** bijvoorbeeld). De weergave van **postgres-nms.sql**, **mssql-nms.sql** of **oracle-nms.sql** bestanden die bij de toepassing worden geleverd in het dialoogvenster **datakit/nms/eng/sql/** directory om het voorbeeld van het maken van een &#39;NmsTrackingLogId&#39;-reeks voor elke database-engine te herstellen.
 
-Om een unieke sleutel te verklaren, bevolk **automatisch** attribuut (met waarde &quot;waar&quot;) op het belangrijkste element van het gegevensschema.
+Als u een unieke sleutel wilt declareren, vult u de **automatische** kenmerk (met waarde &quot;true&quot;) op het hoofdelement van het gegevensschema.
 
 **Voorbeeld**:
 
@@ -368,7 +368,7 @@ Voor join-relaties met gebruik van Federated Database Access:
 * ![](assets/join_fda_11.png) : Kardinaliteit 1-1
 * ![](assets/join_fda_1m.png) : Kardinaliteit 1-N
 
-Raadpleeg [Toegang tot een externe database](../../installation/using/about-fda.md) voor meer informatie over FDA-tabellen.
+Raadpleeg voor meer informatie over FDA-tabellen [Een externe database openen](../../installation/using/about-fda.md).
 
 Een koppeling moet worden gedeclareerd in het schema met de externe sleutel van de tabel die is gekoppeld via het hoofdelement:
 
@@ -384,27 +384,27 @@ Koppelingen voldoen aan de volgende regels:
 
 * De definitie van een koppeling wordt ingevoerd op een **link**-type **`<element>`** met de volgende kenmerken:
 
-   * **naam**: naam van de koppeling uit de brontabel;
-   * **doel**: naam van het doelschema;
+   * **name**: naam van de koppeling uit de brontabel;
+   * **target**: naam van het doelschema;
    * **label**: koppelingslabel,
-   * **revLink**  (optioneel): naam van de omgekeerde koppeling van het doelschema (standaard automatisch afgetrokken);
-   * **integriteit**  (optioneel): de referentiële integriteit van het voorkomen van de bronlijst aan het voorkomen van de doellijst. Mogelijke waarden zijn:
+   * **revLink** (optioneel): naam van de omgekeerde koppeling van het doelschema (standaard automatisch afgetrokken);
+   * **integriteit** (optioneel): de referentiële integriteit van het voorkomen van de bronlijst aan het voorkomen van de doellijst. Mogelijke waarden zijn:
 
       * **definiëren**: het is mogelijk om de bron-instantie te verwijderen als er niet langer naar wordt verwezen door een doelinstantie;
       * **normaal**: als u de broninstantie verwijdert, worden de sleutels van de koppeling naar de doelinstantie (standaardmodus) geïnitialiseerd, worden met dit type integriteit alle externe toetsen geïnitialiseerd.
       * **eigen**: het verwijderen van de broninstantie leidt tot het verwijderen van de doelinstantie;
-      * **kopie**: hetzelfde als  **eigen**  (in geval van verwijdering) of een duplicaat van de voorvallen (in geval van duplicatie);
+      * **owncopy**: dezelfde **eigen** (in geval van verwijdering) of dupliceert de voorvallen (in geval van duplicatie),
       * **neutraal**: doet niets.
-   * **revIntegrity**  (optioneel): integriteit in het doelschema (optioneel, standaard &quot;normaal&quot;);
-   * **revCardinality**  (optioneel): met waarde &quot;single&quot; wordt kardinaliteit gevuld met type 1-1 (standaard 1-N).
-   * **externalJoin**  (optioneel): forceert de buitenste verbinding
-   * **revExternalJoin**  (optioneel): Hiermee wordt de buitenste verbinding op de omgekeerde koppeling gedwongen
+   * **revIntegrity** (optioneel): integriteit in het doelschema (optioneel, standaard &quot;normaal&quot;);
+   * **revCardinality** (optioneel): met waarde &quot;single&quot; wordt kardinaliteit gevuld met type 1-1 (standaard 1-N).
+   * **externalJoin** (optioneel): forceert de buitenste verbinding
+   * **revExternalJoin** (optioneel): Hiermee wordt de buitenste verbinding op de omgekeerde koppeling gedwongen
 
 
-* Een koppeling verwijst naar een of meer velden van de brontabel naar de doeltabel. De velden waaruit de samenvoeging bestaat ( `<join>` element) hoeven niet te worden gevuld omdat ze standaard automatisch worden afgetrokken met de interne sleutel van het doelschema.
+* Een koppeling verwijst naar een of meer velden van de brontabel naar de doeltabel. De velden waaruit de verbinding bestaat ( `<join>`  -element) hoeft niet te worden gevuld omdat deze automatisch worden afgetrokken met de interne sleutel van het doelschema.
 * Er wordt automatisch een index toegevoegd aan de externe sleutel van de koppeling in het uitgebreide schema.
 * Een verbinding bestaat uit twee half-verbindingen, waar het eerste van het bronschema wordt verklaard en het tweede automatisch in het uitgebreide schema van het doelschema wordt gecreeerd.
-* Een samenvoeging kan een buitenste samenvoeging zijn als het **externalJoin** attribuut wordt toegevoegd, met de waarde &quot;true&quot; (ondersteund in PostSQL).
+* Een samenvoeging kan een buitenste samenvoeging zijn als de **externalJoin** wordt toegevoegd, met de waarde &quot;true&quot; (wordt ondersteund in PostSQL).
 
 >[!NOTE]
 >
@@ -467,15 +467,15 @@ Uitgebreid schema van het doel (&quot;cus:company&quot;):
 
 Er is een omgekeerde koppeling naar de tabel &quot;cus:receiving&quot; toegevoegd met de volgende parameters:
 
-* **naam**: automatisch afgetrokken van de naam van het bronschema (kan met het &quot;revLink&quot;attribuut in de verbindingsdefinitie op het bronschema worden gedwongen)
+* **name**: automatisch afgetrokken van de naam van het bronschema (kan met het &quot;revLink&quot;attribuut in de verbindingsdefinitie op het bronschema worden gedwongen)
 * **revLink**: naam van de omgekeerde koppeling
-* **doel**: sleutel van gekoppeld schema (&quot;focus:ontvanger&quot;-schema)
-* **niet geconsolideerd**: de koppeling wordt gedeclareerd als een verzamelingselement voor een kardinaliteit van 1 N (standaard)
+* **target**: sleutel van gekoppeld schema (&quot;focus:ontvanger&quot;-schema)
+* **ongebonden**: de koppeling wordt gedeclareerd als een verzamelingselement voor een kardinaliteit van 1 N (standaard)
 * **integriteit**: &quot;define&quot;door gebrek (kan met het &quot;revIntegrity&quot;attribuut in de verbindingsdefinitie op het bronschema worden gedwongen).
 
 ### Voorbeeld 2 {#example-2}
 
-In dit voorbeeld, zullen wij een verbinding naar de &quot;nms:adres&quot;schemalijst verklaren. De join is een buitenste verbinding en wordt expliciet gevuld met het e-mailadres van de ontvanger en het veld &quot;@address&quot; van de gekoppelde tabel (&quot;nms:address&quot;).
+In dit voorbeeld, zullen wij een verbinding naar de &quot;nms:adres&quot;schemalijst verklaren. De join is een outer join en wordt expliciet gevuld met het e-mailadres van de ontvanger en het veld &quot;@address&quot; van de gekoppelde tabel (&quot;nms:address&quot;).
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -508,7 +508,7 @@ De standaardwaarde retourneert de id van het eerste toepasselijke parametertype-
 
 ### Voorbeeld 5 {#example-5}
 
-In dit voorbeeld willen wij een sleutel op een verbinding (&quot;bedrijf&quot;aan &quot;focus:bedrijf&quot;schema) met het **xlink** attribuut en een gebied van de (&quot;e-mail&quot;) lijst tot stand brengen:
+In dit voorbeeld willen we een sleutel maken op een koppeling (&quot;bedrijf&quot; naar het schema &quot;cus:bedrijf&quot;) met het **xlink** -kenmerk en een veld in de tabel (&quot;email&quot;):
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -543,7 +543,7 @@ Het gegenereerde schema:
       <keyfield xpath="@company-id"/>    
     </key>
 
-    <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>
+    <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>
     <element label="Company" name="company" revLink="recipient" target="sfa:company" type="link">      
       <join xpath-dst="@id" xpath-src="@company-id"/>    
     </element>    

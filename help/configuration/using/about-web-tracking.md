@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: 91c31703-75e6-47a4-a877-35682dd687a9
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 4%
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 Naast de standaardtracering die het gedrag van een internetgebruiker die op een koppeling in een e-mailbericht klikt, toont, kunt u met het Adobe Campaign-platform informatie verzamelen over hoe internetgebruikers door uw website bladeren. Deze gegevensverzameling wordt uitgevoerd door de module Webtracering.
 
-Wanneer een internetgebruiker op een bijgehouden koppeling in een e-mail van een bepaalde levering klikt, slaat de omleidingsserver contact op met een sessiecookie die de identificatie voor de uitzending (broadlogId) en de identificatie voor de levering (deliveryId) bevat.
+Wanneer een internetgebruiker op een bijgehouden koppeling in een e-mailbericht van een bepaalde levering klikt, slaat de omleidingsserver contact op met een sessiecookie met de identificatie voor de uitzending (broadlogId) en de identificatie voor de levering (deliveryId).
 
 De webclient verzendt dit cookie vervolgens naar de server wanneer de gebruiker een pagina bezoekt met een tag voor webtracering. Dit gaat tijdens de hele sessie door, dus totdat de webclient wordt gesloten.
 

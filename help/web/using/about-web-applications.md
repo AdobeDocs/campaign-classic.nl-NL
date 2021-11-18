@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 20%
@@ -29,7 +29,7 @@ Dit hoofdstuk verstrekt een overzicht van hoe te om de toepassingen van het Web 
 
 >[!NOTE]
 >
->Raadpleeg [Controlelijst Beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html) voor informatie over het optimaliseren van beveiliging voor webtoepassingen.
+>Zie de [Controlelijst voor beveiliging en privacy](https://helpx.adobe.com/nl/campaign/kb/acc-security.html) voor informatie over het optimaliseren van beveiliging voor webtoepassingen.
 
 >[!CAUTION]
 >
@@ -52,7 +52,7 @@ Webtoepassingen in Adobe Campaign bieden toegang tot de volgende mogelijkheden:
 * Gebruik van afbeeldingen, video&#39;s, hypertextkoppelingen, captcha, enzovoort. Raadpleeg [deze pagina](editing-content.md) voor meer informatie.
 * Monitoring van reacties in real time. Raadpleeg [deze pagina](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking) voor meer informatie.
 
-De optionele **Beoordelingsmodule** aanmaakmodule biedt de volgende aanvullende functies:
+De optionele **Enquête** de aanmaakmodule biedt de volgende aanvullende functies:
 
 * Dynamische extensie van de database: het maken van reacties die niet in de oorspronkelijke gegevenssjabloon zijn opgenomen. Raadpleeg [deze pagina](../../surveys/using/managing-answers.md#storing-collected-answers) voor meer informatie.
 * Speciale rapporten genereren. Raadpleeg [deze pagina](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys) voor meer informatie.
@@ -61,7 +61,7 @@ Vergeleken met de toepassingen van het Web, hebben de onderzoeken een vereenvoud
 
 >[!NOTE]
 >
->Enquêtes worden beschreven in [deze sectie](../../surveys/using/about-surveys.md).
+>Enquêtes worden gedetailleerd weergegeven in [deze sectie](../../surveys/using/about-surveys.md).
 >
 >De algemene functies van webformulieren in Adobe Campaign worden beschreven in [deze sectie](about-web-forms.md).
 
@@ -78,9 +78,9 @@ Om een toepassing van het Web tot stand te brengen en te posten, moet u:
 
 ## Aanvankelijke configuratie webtoepassing {#web-application-initial-configuration}
 
-De toepassing van het Web wordt gecreeerd via de **[!UICONTROL Web Applications]** verbinding in **[!UICONTROL Campaigns]** en **[!UICONTROL Profiles and targets]** lusjes.
+Webtoepassing wordt gemaakt via de **[!UICONTROL Web Applications]** in de **[!UICONTROL Campaigns]** en **[!UICONTROL Profiles and targets]** tabs.
 
-Webtoepassingen worden opgeslagen in het knooppunt **[!UICONTROL Resources > Online > Web Applications]** van de Adobe Campaign-structuur. Configuraties worden uitgesplitst in de volgende mappen:
+De toepassingen van het Web worden opgeslagen in **[!UICONTROL Resources > Online > Web Applications]** knooppunt van de boomstructuur Adobe Campaign. Configuraties worden uitgesplitst in de volgende mappen:
 
 * **[!UICONTROL Administration > Configuration > Form renderings]**: bevat de renderingsjablonen voor de webformulierpresentatie (toepassingen en enquêtes). Met de sjabloon kunt u het formulier genereren. Er wordt ook een CSS-stijlpagina gebruikt. Deze stijlpagina kan op sjabloonniveau worden overgeladen. Raadpleeg [deze pagina](form-rendering.md#selecting-the-form-rendering-template) voor meer informatie.
 * **[!UICONTROL Resources > Templates > Web application templates]**: bevat formuliersjablonen. Als u een formulier of een webtoepassing wilt maken, moet u beginnen met een sjabloon.
@@ -93,7 +93,7 @@ Adobe Campaign biedt standaard één sjabloon per beschikbare webtoepassing.
 >
 >U kunt een bestaande toepassing van het Web in een malplaatje omzetten. Selecteer hiertoe het formulier en klik met de rechtermuisknop. Selecteer **[!UICONTROL Actions > Save as template...]**.
 
-U kunt nieuwe sjablonen maken via het knooppunt **[!UICONTROL Resources > Templates > Web Application templates]** van de Adobe Campaign-structuur.
+U kunt nieuwe sjablonen maken via het dialoogvenster **[!UICONTROL Resources > Templates > Web Application templates]** knooppunt van de boomstructuur Adobe Campaign.
 
 Met de wizard Maken kunt u de opties selecteren die u wilt inschakelen, zoals hieronder wordt weergegeven.
 

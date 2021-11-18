@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: ed43a632a962747c9402ff8d5f0ce442c2cc6490
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 2%
@@ -32,9 +32,9 @@ Hiervoor voert u de volgende stappen uit:
 
 1. Maak een nieuw gegevensschema waarin de velden van de aangepaste tabel die u wilt gebruiken, zijn geïntegreerd.
 
-   Zie [Schemaverwijzing (xtk:srcSchema)](../../configuration/using/about-schema-reference.md) voor meer informatie.
+   Zie voor meer informatie [Schemaverwijzing (xtk:srcSchema)](../../configuration/using/about-schema-reference.md).
 
-   In ons voorbeeld, zullen wij een klantenschema, een zeer eenvoudige lijst tot stand brengen die de volgende gebieden bevat: ID, voornaam, achternaam, e-mailadres, mobiele-telefoonnummer. Het doel is om e-mail- of SMS-berichten te kunnen verzenden naar de personen die in deze tabel zijn opgeslagen.
+   In ons voorbeeld, zullen wij een klantenschema, een zeer eenvoudige lijst tot stand brengen die de volgende gebieden bevat: ID, voornaam, achternaam, e-mailadres, mobiele-telefoonnummer. Het doel is om e-mail- of sms-berichten te kunnen verzenden naar de personen die in deze tabel zijn opgeslagen.
 
    Voorbeeldschema (cus:individual)
 
@@ -82,31 +82,31 @@ Hiervoor voert u de volgende stappen uit:
       </element>
    ```
 
-1. Klik op het knooppunt **[!UICONTROL Administration > Campaign management > Target mappings]**.
+1. Klik op de knop **[!UICONTROL Administration > Campaign management > Target mappings]** knooppunt.
 1. Klik op de knop **Nieuw** om de wizard Doeltoewijzing maken te openen.
-1. Voer het veld **Label** in en selecteer het schema dat u zojuist hebt gemaakt in het veld **Doeldimensie**.
+1. Voer de **Label** en selecteer het schema dat u zojuist hebt gemaakt in het dialoogvenster **Doeldimensie** veld.
 
    ![](assets/mapping_diffusion_wizard_1.png)
 
-1. Selecteer in het venster **Adresformulieren bewerken** de velden van het schema die overeenkomen met de verschillende leveringsadressen. Hier, kunnen wij **@email** en **@mobile** gebieden in kaart brengen.
+1. In de **Adresformulieren bewerken** selecteert u de velden van het schema die overeenkomen met de verschillende leveringsadressen. Hier kunnen we de **@email** en **@mobile** velden.
 
    ![](assets/mapping_diffusion_wizard_2.png)
 
-1. In het volgende **Storage** venster, ga **Achtervoegsel van de uitbreidingsschema&#39;s** gebied in om de nieuwe schema&#39;s van de uit-van-de-doosschema&#39;s te onderscheiden die door Adobe Campaign worden verstrekt.
+1. In het volgende **Opslag** venster, voert u de **Achtervoegsel van de extensieschema&#39;s** veld om de nieuwe schema&#39;s te onderscheiden van de out-of-the-box schema&#39;s van Adobe Campaign.
 
-   Klik **[!UICONTROL Define new additional fields]** om de dimensie te selecteren u in uw levering wilt richten.
+   Klikken **[!UICONTROL Define new additional fields]** om de dimensie te selecteren u in uw levering wilt richten.
 
    Standaard wordt uitsluitingsbeheer opgeslagen in dezelfde tabel als berichten.
 
-   Controleer **Genereer een opslagschema voor het volgen** doos als u opslag voor het volgen verbonden aan uw doelafbeelding wilt vormen.
+   Controleer de **Een opslagschema voor tracering genereren** als u opslag voor het volgen wilt vormen verbonden aan uw doelafbeelding.
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
    >[!IMPORTANT]
    >
-   >Adobe Campaign steunt geen veelvoudige ontvankelijke schema&#39;s, weet als het richten van schema&#39;s, verbonden aan de zelfde brede en/of trackinglogschema&#39;s. Dit kan anders leiden tot anomalieën in de afstemming van gegevens achteraf. Raadpleeg de pagina [Aanbeveling en beperkingen](../../configuration/using/about-custom-recipient-table.md) voor meer informatie hierover.
+   >Adobe Campaign steunt geen veelvoudige ontvankelijke schema&#39;s, weet als het richten van schema&#39;s, verbonden aan de zelfde brede en/of trackinglogschema&#39;s. Dit kan anders leiden tot anomalieën in de afstemming van gegevens achteraf. Raadpleeg voor meer informatie hierover de [Aanbeveling en beperkingen](../../configuration/using/about-custom-recipient-table.md) pagina.
 
-1. Selecteer in het venster **Extensies** de optionele schema&#39;s die u wilt genereren (de lijst met beschikbare schema&#39;s is afhankelijk van de modules die op het Adobe Campaign-platform zijn geïnstalleerd).
+1. In de **Extensies** selecteert u de optionele schema&#39;s die u wilt genereren (de lijst met beschikbare schema&#39;s is afhankelijk van de modules die op het Adobe Campaign-platform zijn geïnstalleerd).
 
    ![](assets/mapping_diffusion_wizard_4.png)
 

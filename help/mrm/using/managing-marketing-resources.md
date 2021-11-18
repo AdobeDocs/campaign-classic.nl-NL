@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '1386'
 ht-degree: 0%
@@ -23,32 +23,32 @@ Voor elke marketingbron die via Adobe Campaign wordt beheerd, kunt u de status e
 
 ## Een marketingbron toevoegen {#adding-a-marketing-resource}
 
-Marketingbronnen zijn toegankelijk via het tabblad **[!UICONTROL Campaigns]**.
+Marketingbronnen zijn toegankelijk via de **[!UICONTROL Campaigns]** tab.
 
-Om een middel toe te voegen, klik **[!UICONTROL Create]** knoop.
+Als u een bron wilt toevoegen, klikt u op de knop **[!UICONTROL Create]** knop.
 
 ![](assets/s_ncs_user_mkg_resource_add.png)
 
-Als u een resource beschikbaar wilt maken op de Adobe Campaign-server, moet u de gewenste resource toevoegen door deze in het midden van de editor te slepen. U kunt ook op de koppeling **[!UICONTROL Upload file to server...]** klikken.
+Als u een resource beschikbaar wilt maken op de Adobe Campaign-server, moet u de gewenste resource toevoegen door deze in het midden van de editor te slepen. U kunt ook op de knop **[!UICONTROL Upload file to server...]** koppeling.
 
 ![](assets/s_ncs_user_mkg_resource_file.png)
 
 Met een bevestigingsbericht kunt u het uploaden starten.
 
-Wanneer het uploaden is voltooid, wordt de bron toegevoegd aan de lijst met beschikbare bronnen. Het is toegankelijk voor Adobe Campaign-operatoren. Ze kunnen het bestand weergeven (via het tabblad **[!UICONTROL Preview]**), een kopie maken om het te wijzigen of het bestand op de server bijwerken (met het tabblad **[!UICONTROL Edit]**).
+Wanneer het uploaden is voltooid, wordt de bron toegevoegd aan de lijst met beschikbare bronnen. Het is toegankelijk voor Adobe Campaign-operatoren. Zij kunnen het bekijken (via **[!UICONTROL Preview]** ), een kopie maken om het te wijzigen of het bestand op de server bijwerken (met de opdracht **[!UICONTROL Edit]** ).
 
 ![](assets/s_ncs_user_mkg_resource_extract.png)
 
-Klik op het tabblad **[!UICONTROL General]** om de operatoren of groepen operatoren te selecteren die verantwoordelijk zijn voor het controleren, bijhouden en goedkeuren van deze resource. De controleur wordt geselecteerd via de koppeling **[!UICONTROL Advanced parameters]**.
+Klik op de knop **[!UICONTROL General]** om de operatoren of groepen operatoren te selecteren die verantwoordelijk zijn voor het controleren, bijhouden en goedkeuren van deze resource. De revisor selecteren wordt uitgevoerd via het dialoogvenster **[!UICONTROL Advanced parameters]** koppeling.
 
 * De exploitant aan wie de bron wordt toegewezen is verantwoordelijk voor het volgen van het.
 * De goedkeuringsexploitant is verantwoordelijk voor de goedkeuring van de marketingbron. Ze worden op de hoogte gesteld wanneer het validatieproces van de bron wordt gestart.
 
-   Als er geen controleur is geselecteerd, moet de bron **[!UICONTROL cannot be]** worden goedgekeurd.
+   Als er geen controleur is geselecteerd, wordt de bron **[!UICONTROL cannot be]** onder voorbehoud van goedkeuring.
 
 * Indien nodig kunt u ook een proxy opgeven.
 
-U kunt een (indicatieve) beschikbaarheidsdatum voor het middel specificeren. Na deze datum wordt de status **[!UICONTROL Late]** weergegeven.
+U kunt een (indicatieve) beschikbaarheidsdatum voor het middel specificeren. Na deze datum wordt het weergegeven met **[!UICONTROL Late]** status.
 
 ## Samenwerken aan bronnen {#collaborative-work-on-resources}
 
@@ -60,7 +60,7 @@ U kunt een marketingbron wijzigen en bijwerken en, indien nodig, andere Adobe Ca
 
 >[!NOTE]
 >
->Het tabblad **[!UICONTROL History]** bevat het download- en updatelogbestand voor de bron. Met de knop **[!UICONTROL Details]** kunt u de geselecteerde versie weergeven:
+>De **[!UICONTROL History]** bevat het download- en updatelogboek voor de bron. De **[!UICONTROL Details]** Hiermee kunt u de geselecteerde versie weergeven.
 
 ### Een bron vergrendelen/ontgrendelen {#locking-unlocking-a-resource}
 
@@ -72,15 +72,15 @@ Een speciaal bericht geeft een melding aan alle operatoren die toegang proberen 
 
 ![](assets/s_ncs_user_mkg_resource_locked.png)
 
-Het tabblad **[!UICONTROL Tracking]** geeft de naam aan van de operator die de bron heeft vergrendeld en de geplande updatedatum.
+De **[!UICONTROL Tracking]** tab geeft de naam aan van de operator die de resource heeft vergrendeld en de geplande updatedatum.
 
 ![](assets/s_ncs_user_mkg_resource_locked_date.png)
 
-Om een middel te sluiten, moet u het middel klikken dat door **[!UICONTROL Lock]** knoop in het middeldashboard wordt gevolgd.
+Als u een bron wilt vergrendelen, moet u op de bron klikken die wordt gevolgd door de **[!UICONTROL Lock]** in het brondashboard.
 
 ![](assets/s_ncs_user_mkg_resource_lock.png)
 
-U kunt op het tabblad **[!UICONTROL Tracking]** van de bron de geplande retourdatum aangeven.
+U kunt de geplande retourdatum aangeven in het dialoogvenster **[!UICONTROL Tracking]** tabblad van de bron.
 
 ![](assets/s_ncs_user_mkg_resource_lock_date.png)
 
@@ -96,33 +96,33 @@ Indien nodig, kunt u het van het dashboard ook manueel ontgrendelen.
 
 ### Discussieforums {#discussion-forums}
 
-Voor elke bron, laat het **[!UICONTROL Forum]** lusje deelnemers informatie ruilen.
+Voor elke bron wordt de **[!UICONTROL Forum]** op dit tabblad kunnen deelnemers informatie uitwisselen.
 
-[In ](../../mrm/using/discussion-forums.md) discussieforums wordt uitgelegd hoe discussieforums in Adobe Campaign werken.
+[Discussieforums](../../mrm/using/discussion-forums.md) legt uit hoe discussieforums werken in Adobe Campaign.
 
 ## Levenscyclus van een marketingmiddel {#life-cycle-of-a-marketing-resource}
 
 Wanneer de bron wordt gemaakt, worden Adobe Campaign-operatoren aangesteld om de bron te ontwerpen, te controleren, goed te keuren en te publiceren. Voor deze campagnes kan een duur worden bepaald.
 
-Op het tabblad **[!UICONTROL Tracking]** kunt u alle handelingen controleren die op de bron worden uitgevoerd: goedkeuringen, weigeringen van goedkeuring, hiermee verband houdende opmerkingen of publicaties.
+De **[!UICONTROL Tracking]** kunt u elke actie controleren die op de bron wordt uitgevoerd: goedkeuringen, weigeringen van goedkeuring, hiermee verband houdende opmerkingen of publicaties.
 
-Op het tabblad **[!UICONTROL History]** worden bestandsoverdrachten weergegeven die zijn uitgevoerd voor deze bron.
+De **[!UICONTROL History]** tabblad geeft de bestandsoverdrachten weer die zijn uitgevoerd voor deze bron.
 
 ### Goedkeuringsproces {#approval-process}
 
-De verwachte beschikbaarheidsdatum wordt getoond in de middeldetails, als het in **[!UICONTROL Tracking]** tabel werd gespecificeerd. Zodra deze datum wordt bereikt, kunt u het goedkeuringsproces uitvoeren gebruikend de **[!UICONTROL Submit for approval]** knoop in het middeldashboard. De middelstatus verandert dan in **[!UICONTROL Approval in progress]**.
+De verwachte beschikbaarheidsdatum wordt getoond in de middeldetails, als het in **[!UICONTROL Tracking]** tab. Als deze datum is bereikt, kunt u het goedkeuringsproces uitvoeren met de opdracht **[!UICONTROL Submit for approval]** in het brondashboard. De middelstatus verandert dan in **[!UICONTROL Approval in progress]**.
 
-Een bron kan worden goedgekeurd via de knop **[!UICONTROL Approve resource]** op het dashboard.
+Een bron kan worden goedgekeurd via de **[!UICONTROL Approve resource]** op het dashboard.
 
 ![](assets/s_ncs_user_task_valid_date.png)
 
-Geautoriseerde marktdeelnemers kunnen vervolgens de goedkeuring accepteren of afwijzen. Deze actie is mogelijk: via het verzonden e-mailbericht (door op de koppeling in het meldingsbericht te klikken) of via de console (door op de knop **[!UICONTROL Approve]** te klikken).
+Geautoriseerde marktdeelnemers kunnen vervolgens de goedkeuring accepteren of afwijzen. Deze actie is mogelijk: via het verzonden e-mailbericht (door op de koppeling in het meldingsbericht te klikken) of via de console (door op de knop **[!UICONTROL Approve]** ).
 
 In het goedkeuringsvenster kunt u een opmerking invoeren.
 
 ![](assets/s_ncs_user_mkg_resource_valid_ok.png)
 
-Met de tab **[!UICONTROL Tracking]** kunnen alle operatoren de verschillende fasen van het goedkeuringsproces volgen.
+De **[!UICONTROL Tracking]** met tabbladen kunnen alle operatoren de verschillende fasen van het goedkeuringsproces volgen.
 
 ![](assets/s_ncs_user_mkg_resource_log.png)
 
@@ -134,7 +134,7 @@ Met de tab **[!UICONTROL Tracking]** kunnen alle operatoren de verschillende fas
 
 Wanneer deze is goedgekeurd, moet de marketingbron worden gepubliceerd. Het publicatieproces moet afhankelijk worden gesteld van een specifieke tenuitvoerlegging overeenkomstig de eisen van de onderneming. Dit betekent dat de middelen op een Extranet of een andere server kunnen worden gepubliceerd, kan de specifieke informatie naar een externe dienstverlener, enz. worden verzonden.
 
-Als u een resource wilt publiceren, klikt u op de knop **[!UICONTROL Publish]** in de bewerkingszone van het dashboard voor marketingbronnen.
+Als u een bron wilt publiceren, klikt u op de knop **[!UICONTROL Publish]** in de bewerkingszone van het dashboard voor marketingbronnen.
 
 ![](assets/s_ncs_user_mkg_resource_available.png)
 
@@ -142,16 +142,16 @@ U kunt het publiceren van een bron ook automatiseren via een workflow.
 
 Het publiceren van een middel betekent het ter beschikking stellen voor gebruik (door een andere taak, bijvoorbeeld). Publicatie als zodanig is afhankelijk van de aard van de bron: voor een flyer kan publiceren betekenen dat het bestand naar een printer wordt gestuurd , voor een webbureau , dat het naar een website wordt gepubliceerd , enzovoort .
 
-Adobe Campaign kan alleen publiceren als u een geschikte workflow maakt en deze aan de bron koppelt. Om dit te doen, open **[!UICONTROL Advanced settings]** doos van het middel, dan selecteer het gewenste werkschema op **[!UICONTROL Post-processing]** gebied.
+Adobe Campaign kan alleen publiceren als u een geschikte workflow maakt en deze aan de bron koppelt. Om dit te doen, open **[!UICONTROL Advanced settings]** van de bron en selecteer vervolgens de gewenste workflow in het dialoogvenster **[!UICONTROL Post-processing]** veld.
 
 ![](assets/mrm_asset_postprocessing_workflow.png)
 
 De workflow wordt uitgevoerd:
 
-* Wanneer de controleur op de koppeling **[!UICONTROL Publish resource]** klikt (of, als er geen controleur is gedefinieerd, de persoon die de bron beheert).
-* Als de bron wordt beheerd via een marketingtaak voor het maken van resources, wordt deze uitgevoerd wanneer de taak is ingesteld op **[!UICONTROL Finished]**, zolang het vak **[!UICONTROL Publish the marketing resource]** in de taak is ingeschakeld (Zie [Taak voor het maken van marketingbronnen](../../mrm/using/creating-and-managing-tasks.md#marketing-resource-creation-task))
+* Wanneer de controleur op de knop **[!UICONTROL Publish resource]** koppeling (of, als er geen controleur is gedefinieerd, de persoon die verantwoordelijk is voor de bron).
+* Als het middel via een marketing middelaanmaaktaak wordt beheerd, zal het worden uitgevoerd wanneer de taak wordt geplaatst aan **[!UICONTROL Finished]**, zolang de **[!UICONTROL Publish the marketing resource]** is ingeschakeld in de taak (Zie [Taak voor het maken van marketingmiddelen](../../mrm/using/creating-and-managing-tasks.md#marketing-resource-creation-task))
 
-Als een werkstroom niet onmiddellijk is gestart (als de werkstroom bijvoorbeeld is gestopt), verandert de status van de bron in **[!UICONTROL Pending publication]**. Nadat de workflow is gestart, verandert de status van de resource in **[!UICONTROL Published]**. Deze status houdt geen rekening met mogelijke fouten in het publicatieproces. Controleer de status van uw workflow om er zeker van te zijn dat deze correct is uitgevoerd.
+Als een werkstroom niet onmiddellijk wordt gestart (als de werkstroom bijvoorbeeld wordt gestopt), verandert de status van de bron in **[!UICONTROL Pending publication]**. Zodra de werkstroom is gestart, verandert de status van de bron in **[!UICONTROL Published]**. Deze status houdt geen rekening met mogelijke fouten in het publicatieproces. Controleer de status van uw workflow om er zeker van te zijn dat deze correct is uitgevoerd.
 
 ## Een bron koppelen aan een campagne {#linking-a-resource-to-a-campaign}
 
@@ -161,9 +161,9 @@ Marketingbronnen kunnen aan campagnes worden gekoppeld, op voorwaarde dat deze f
 
 >[!NOTE]
 >
->Voor details op om campagnemalplaatjes tot stand te brengen en te vormen, verwijs naar [de malplaatjes van de Campagne](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>Voor details op om campagnemalplaatjes tot stand te brengen en te vormen, verwijs naar [Campagnersjablonen](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
-Klik op het tabblad **[!UICONTROL Documents > Resources]** in het campagnedashboard en klik vervolgens op **[!UICONTROL Add]** om de betrokken bron te selecteren.
+Klik op de knop **[!UICONTROL Documents > Resources]** tabblad in het campagnecdashboard en klik vervolgens op **[!UICONTROL Add]** om de betrokken bron te selecteren.
 
 ![](assets/s_ncs_user_mkg_resource_ref.png)
 
@@ -171,9 +171,9 @@ U kunt bronnen filteren op status, aard of type of een gepersonaliseerd filter t
 
 ![](assets/s_ncs_user_mkg_resource_ref_filter.png)
 
-Klik **[!UICONTROL OK]** om het middel aan de lijst van marketing middelen toe te voegen waarnaar voor deze campagne wordt verwezen.
+Klikken **[!UICONTROL OK]** om de bron toe te voegen aan de lijst met marketingbronnen waarnaar voor deze campagne wordt verwezen.
 
-Met de knop **[!UICONTROL Details]** kunt u deze bewerken en weergeven.
+De **[!UICONTROL Details]** kunt u deze bewerken en weergeven.
 
 De toegevoegde bronnen worden weergegeven in het dashboard. Ze kunnen daar ook worden bewerkt.
 
@@ -185,7 +185,7 @@ Marketingbronnen kunnen worden gekoppeld aan leveringen via leveringscontouren.
 
 >[!NOTE]
 >
->Raadpleeg [Bronnen koppelen en structureren via een leveringsoverzicht](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline) voor meer informatie over leveringscontouren.
+>Raadpleeg voor meer informatie over leveringscontouren [Middelen koppelen en structureren via een leveringsoverzicht](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 ## Voorraadbeheer {#stock-management}
 
@@ -193,13 +193,13 @@ U kunt een marketingbron koppelen aan een of meer voorraden om uw voorraad te be
 
 >[!NOTE]
 >
->Raadpleeg [Bestandsbeheer](../../campaign/using/providers--stocks-and-budgets.md#stock-management) voor meer informatie over voorraadbeheer in Adobe Campaign.
+>Voor meer informatie over voorraadbeheer in Adobe Campaign raadpleegt u [Voorraadbeheer](../../campaign/using/providers--stocks-and-budgets.md#stock-management).
 
 Als u een marketingbron aan een voorraad wilt koppelen, bewerkt u de aandelenkaart en bewerkt of maakt u een voorraad. Voeg een voorraadlijn toe en selecteer de overeenkomstige marketing middel.
 
 ![](assets/s_ncs_user_task_in_a_stock.png)
 
-Indien nodig, kunt u de geselecteerde bron bewerken via het **[!UICONTROL Edit the link]**-pictogram (vergrootglas) rechts van de bron nadat deze is geselecteerd.
+Indien nodig kunt u de geselecteerde bron bewerken via de **[!UICONTROL Edit the link]** pictogram (vergrootglas) rechts van de bron als deze is geselecteerd.
 
 Geef de eerste voorraad en het waarschuwingsbestand op en sla deze op.
 
@@ -211,9 +211,9 @@ Wanneer het bestand ontoereikend is, wordt een waarschuwing aan de betrokken mar
 
 ## Geavanceerde functies {#advanced-functions}
 
-Met het dashboard met marketingbronnen kunt u de gebruikelijke typen bewerkingen uitvoeren: toevoegen, bewerken, vergrendelen/ontgrendelen, goedkeuren, publiceren. Via de Adobe Campaign-structuur kunt u andere typen marketingbronnen maken en toegang krijgen tot geavanceerde functionaliteit. Om dit te doen, klik **[!UICONTROL Explorer]** in de homepage van Adobe Campaign.
+Met het dashboard met marketingbronnen kunt u de gebruikelijke typen bewerkingen uitvoeren: toevoegen, bewerken, vergrendelen/ontgrendelen, goedkeuren, publiceren. Via de Adobe Campaign-structuur kunt u andere typen marketingbronnen maken en toegang krijgen tot geavanceerde functionaliteit. Klik op **[!UICONTROL Explorer]** op de startpagina van Adobe Campaign.
 
-Door gebrek, worden de marketing middelen opgeslagen in de **[!UICONTROL MRM > Marketing resources]** knoop van de boom.
+Door gebrek, worden de marketing middelen opgeslagen in **[!UICONTROL MRM > Marketing resources]** knooppunt van de structuur.
 
 ![](assets/s_ncs_user_mkg_resource_create_from_list.png)
 

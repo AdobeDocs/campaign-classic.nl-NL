@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '2468'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Voor de uitvoering van het begrotingsbeheer met behulp van MRM moeten de volgend
 
 1. Vaststelling van de begroting
 
-   Raadpleeg [Een budget maken](#creating-a-budget) voor meer informatie.
+   Raadpleeg voor meer informatie hierover [Een budget maken](#creating-a-budget).
 
 1. Vaststelling van de kostprijsberekeningsmethode
 
@@ -37,25 +37,25 @@ Voor de uitvoering van het begrotingsbeheer met behulp van MRM moeten de volgend
 
 1. Campagnekosten definiëren (leveringen/taken)
 
-   De kosten van de leveringen en taken worden individueel of globaal voor het campagnemalplaatje ingevoerd. Zie [Berekening van kosten en standen](../../campaign/using/marketing-campaign-deliveries.md#calculation-of-costs-and-stocks).
+   De kosten van de leveringen en taken worden individueel of globaal voor het campagnemalplaatje ingevoerd. Zie [Berekening van de kosten en voorraden](../../campaign/using/marketing-campaign-deliveries.md#calculation-of-costs-and-stocks).
 
 1. Consolidatie
 
    Afhankelijk van de stand van de uitvoering van de taken, leveringen en campagne zullen de kosten worden berekend en aan de desbetreffende begroting worden doorberekend.
 
-   Wanneer de campagne voldoende gevorderd is, kan de voortgang van de campagnebegroting worden gewijzigd in **[!UICONTROL Specified]**. De berekende kosten van het programma worden dan automatisch geboekt met de kosten die op de campagne zijn berekend. Zie [Kostenverplichting, berekening en aanrekening](#cost-commitment--calculation-and-charging).
+   Wanneer de campagne voldoende gevorderd is, kan de stand van de uitvoering van de begroting voor de campagne worden gewijzigd in **[!UICONTROL Specified]**. De berekende kosten van het programma worden dan automatisch geboekt met de kosten die op de campagne zijn berekend. Zie [Vastleggingsverplichting, berekening en toerekening van kosten](#cost-commitment--calculation-and-charging).
 
 ## Een budget maken {#creating-a-budget}
 
-Begrotingen worden gemaakt op de kaart, via het knooppunt **[!UICONTROL Campaign management > Budgets]**. Met de knop **[!UICONTROL New]** op de werkbalk kunt u een budget maken.
+Op de kaart worden budgetten gecreëerd via de **[!UICONTROL Campaign management > Budgets]** knooppunt. De **[!UICONTROL New]** in de werkbalk kunt u een budget maken.
 
 * Nieuwe begroting toevoegen
 
-   Klik op het pictogram **[!UICONTROL New]**, geef een naam en sla het budget op.
+   Klik op de knop **[!UICONTROL New]** en sla het budget op.
 
 * Invoering van het oorspronkelijke bedrag
 
-   Vermeld het toegewezen bedrag in het desbetreffende veld. De andere bedragen worden automatisch ingevoerd. Zie [Hoeveelheden berekenen](#calculating-amounts).
+   Vermeld het toegewezen bedrag in het desbetreffende veld. De andere bedragen worden automatisch ingevoerd. Zie [Bedragen berekenen](#calculating-amounts).
 
 * Vaststelling van de geldigheidsperiode
 
@@ -63,7 +63,7 @@ Begrotingen worden gemaakt op de kaart, via het knooppunt **[!UICONTROL Campaign
 
 * Uitgaven
 
-   Maak de uitgavencategorieën waarin de kosten van deze begroting voor campagnes, taken, enz. zijn ondergebracht. kan worden gekoppeld. Zie [Uitgaven categorieën](#expense-categories).
+   Maak de uitgavencategorieën waarin de kosten van deze begroting voor campagnes, taken, enz. zijn ondergebracht. kan worden gekoppeld. Zie [Categorieën kosten](#expense-categories).
 
    ![](assets/s_ncs_user_budget_create_and_save.png)
 
@@ -71,7 +71,7 @@ Begrotingen worden gemaakt op de kaart, via het knooppunt **[!UICONTROL Campaign
 >
 >U kunt een gerelateerd budget selecteren.
 >
->Raadpleeg [Een budget koppelen aan een ander](#linking-a-budget-to-another) voor meer informatie.
+>Raadpleeg voor meer informatie hierover [Een begroting koppelen aan een andere begroting](#linking-a-budget-to-another).
 
 ### Bedragen berekenen {#calculating-amounts}
 
@@ -79,7 +79,7 @@ Elke begroting wordt bepaald door een aanvangsbedrag dat wordt afgetrokken van d
 
 >[!NOTE]
 >
->De voor de categorieën ingevoerde bedragen moeten overeenkomen met de begrotingsmiddelen die in het veld **[!UICONTROL Allocated]** zijn gedefinieerd.
+>De voor de categorieën opgenomen bedragen moeten overeenkomen met de in de **[!UICONTROL Allocated]** veld.
 
 Voor campagnes kunnen, afhankelijk van het niveau van de verbintenis, kosten worden gepland, vastgelegd of gereserveerd voor een toekomstige actie.
 
@@ -87,28 +87,28 @@ Voor campagnes kunnen, afhankelijk van het niveau van de verbintenis, kosten wor
 
 >[!CAUTION]
 >
->Wanneer een campagne wordt gecreeerd, moet de vooruitgangsstatus in **[!UICONTROL Budget]** worden geplaatst aan **[!UICONTROL Defined]** om de kosten in rekening te brengen die op uitvoering moeten worden genomen. Als de status **[!UICONTROL Being edited]** is, worden de kosten niet geconsolideerd.
+>Wanneer een campagne wordt gemaakt, wordt de status van de voortgang in **[!UICONTROL Budget]** moet worden ingesteld op **[!UICONTROL Defined]** de kosten die bij de uitvoering in aanmerking moeten worden genomen. Als de status **[!UICONTROL Being edited]** De kosten worden niet geconsolideerd.
 >   
->De optie **[!UICONTROL Commitment level]** is een projectie van de kosten in de toekomst voordat ze op de begroting worden afgeschreven. Afhankelijk van de voortgang van een campagne, taak of levering, kunt u besluiten een hoger of lager verbintenisniveau toe te wijzen (1). Geplant, 2. Gereserveerd, 3. Toegewezen) gebruikend de combodoos.
+>De optie **[!UICONTROL Commitment level]** staat voor een kostenprognose in de toekomst voordat deze ten laste van de begroting komen . Afhankelijk van de voortgang van een campagne, taak of levering, kunt u besluiten een hoger of lager verbintenisniveau toe te wijzen (1). Geplant, 2. Gereserveerd, 3. Toegewezen) gebruikend de combodoos.
 
 De geraamde kosten van een webcampagne bedragen bijvoorbeeld 45.000 euro.
 
 ![](assets/s_user_edit_budget_node_impact_0.png)
 
-Wanneer voor de campagne de status van begrotingsschepping op **[!UICONTROL Defined]** is ingesteld, worden de werkelijke kosten van de campagne (of, indien dit niet het geval is, de berekende kosten) in de begrotingstotalen opgenomen.
+Voor de campagne, wanneer de status van begrotingscreatie is ingesteld op **[!UICONTROL Defined]** De werkelijke kosten van de campagne (of, indien geen, de berekende kosten) worden in de begrotingstotalen opgenomen.
 
 ![](assets/s_user_budget_in_op_a.png)
 
-Afhankelijk van de mate van vastlegging van de campagnebegroting wordt het bedrag in het veld **[!UICONTROL Planned]**, **[!UICONTROL Reserved]** of **[!UICONTROL Committed]** opgenomen.
+Afhankelijk van het niveau van de vastlegging van de campagnebegroting wordt het bedrag in de **[!UICONTROL Planned]**, **[!UICONTROL Reserved]** of **[!UICONTROL Committed]** veld.
 
 Het niveau van de verbintenis kan worden gewijzigd:
 
-* in **campagne** niveau, in **[!UICONTROL Budget]** venster, dat in **[!UICONTROL Edit]** tabel wordt gevonden. Dit is waar begrotingen, kosten en uitgaven worden gevormd.
-* in **tasks** niveau, in **[!UICONTROL Expenses and revenues]** venster.
+* in de **campagne** in de **[!UICONTROL Budget]** venster, gevonden in het **[!UICONTROL Edit]** tab. Dit is waar begrotingen, kosten en uitgaven worden gevormd.
+* in de **taken** in de **[!UICONTROL Expenses and revenues]** venster.
 
 ![](assets/s_user_op_engagement_level_costs.png)
 
-Wanneer het budget **[!UICONTROL Reserved]** is, wordt de update automatisch uitgevoerd voor het aangerekende budget.
+Wanneer de begroting **[!UICONTROL Reserved]**, wordt de update automatisch uitgevoerd voor het aangerekende budget.
 
 ![](assets/s_user_edit_budget_node_impact_2.png)
 
@@ -116,11 +116,11 @@ De procedure is op taakniveau hetzelfde.
 
 ![](assets/s_user_edit_budget_node_impact_task.png)
 
-Wanneer een uitgave aanleiding geeft tot een factuur en de factuur wordt betaald, wordt het bedrag ervan in het veld **[!UICONTROL Invoiced]** vermeld.
+Wanneer een uitgave aanleiding geeft tot een factuur en de factuur wordt betaald, wordt het bedrag ervan in de **[!UICONTROL Invoiced]** veld.
 
 ### Categorieën kosten {#expense-categories}
 
-De bedragen kunnen in verschillende uitgavencategorieën worden verdeeld voor een betere leesbaarheid van de gegevens en voor een gedetailleerdere rapportage van marketinginvesteringen. De uitgavencategorieën worden bepaald tijdens begrotingsverwezenlijking, via **[!UICONTROL Budgets]** knoop van de boom.
+De bedragen kunnen in verschillende uitgavencategorieën worden verdeeld voor een betere leesbaarheid van de gegevens en voor een gedetailleerdere rapportage van marketinginvesteringen. De kostencategorieën worden tijdens het creëren van de begroting gedefinieerd via de **[!UICONTROL Budgets]** knooppunt van de structuur.
 
 Als u een categorie wilt toevoegen, klikt u op de knop **[!UICONTROL Add]** in de onderste sectie van het venster.
 
@@ -130,7 +130,7 @@ U kunt een categorie uit de bestaande categorie selecteren of een nieuwe categor
 
 ### Een budget koppelen aan een ander budget {#linking-a-budget-to-another}
 
-U kunt een begroting koppelen aan een hoofdbegroting. Hiervoor selecteert u het hoofdbudget op het gebied **[!UICONTROL related budget]** van de secundaire begrotingen.
+U kunt een begroting koppelen aan een hoofdbegroting. Selecteer hiertoe het hoofdbudget in het dialoogvenster **[!UICONTROL related budget]** van de secundaire begrotingen.
 
 ![](assets/budget_link.png)
 
@@ -156,7 +156,7 @@ Elke uitgavenpost bevat daarom de volgende informatie:
 * De corresponderende factuurlijn (alleen MRM)
 * Lijst van kosten berekend per kostencategorie (indien er een kostenstructuur bestaat)
 
-In het bovenstaande voorbeeld bevat de bewerkte uitgavenlijn de kosten die zijn berekend voor de **New cards** levering voor de **Loyalty Spring Pack** campagne. Wanneer de levering wordt uitgegeven, laat het **[!UICONTROL Direct Mail]** lusje u zien hoe de uitgavenlijn wordt berekend.
+In het bovenstaande voorbeeld bevat de bewerkte uitgavenlijn de kosten die zijn berekend voor de **Nieuwe kaarten** levering voor de **Loyalty Spring Pack** campagne. Wanneer de levering wordt bewerkt, **[!UICONTROL Direct Mail]** kunt u zien hoe de onkostenregel wordt berekend.
 
 De kostenberekening voor deze levering is gebaseerd op de kostencategorieën die voor de betrokken dienstverlener zijn geselecteerd:
 
@@ -180,9 +180,9 @@ De kosten zijn in drie categorieën onderverdeeld:
 
 1. Geraamde voorlopige kosten
 
-   De geraamde voorlopige kosten zijn een raming van de kosten voor het verloop van de campagne. Zolang deze wordt bewerkt, worden de ingevoerde bedragen niet geconsolideerd. Het moet **[!UICONTROL Specified]** status hebben om de bedragen in te brengen om in de berekeningen in aanmerking te worden genomen.
+   De geraamde voorlopige kosten zijn een raming van de kosten voor het verloop van de campagne. Zolang deze wordt bewerkt, worden de ingevoerde bedragen niet geconsolideerd. Het moet **[!UICONTROL Specified]** status van de bij de berekeningen in aanmerking te nemen bedragen.
 
-   Dit bedrag wordt handmatig ingevoerd en kan worden uitgesplitst in verschillende uitgavencategorieën. Als u de kosten omlaag wilt brengen, klikt u op de koppeling **[!UICONTROL Breakdown...]** en vervolgens op de knop **[!UICONTROL Add]** om een nieuw bedrag te definiëren.
+   Dit bedrag wordt handmatig ingevoerd en kan worden uitgesplitst in verschillende uitgavencategorieën. Klik op de knop **[!UICONTROL Breakdown...]** en vervolgens de **[!UICONTROL Add]** om een nieuwe hoeveelheid te definiëren.
 
    ![](assets/s_user_edit_budget_tab_ventil.png)
 
@@ -201,7 +201,7 @@ De kosten zijn in drie categorieën onderverdeeld:
 
    >[!NOTE]
    >
-   >Met de koppeling **[!UICONTROL Breakdown]** kunt u de details van de berekening en de laatste berekeningsdatum bekijken.
+   >De **[!UICONTROL Breakdown]** met de koppeling kunt u de details van de berekening en de laatste berekeningsdatum bekijken.
 
 1. Reële kosten
 
@@ -223,17 +223,17 @@ We gaan een campagne opzetten met:
 
 #### Stap 1 - Maak de begroting {#step-1---creating-the-budget}
 
-1. Maak een nieuw budget via het knooppunt **[!UICONTROL Campaign management > Budgets]**.
+1. Maak een nieuwe begroting via de **[!UICONTROL Campaign management > Budgets]** knooppunt.
 
-1. Definieer een budget van 10.000 EUR in het veld **[!UICONTROL Allocated]** van de sectie **[!UICONTROL Amounts]**. Voeg twee uitgavencategorieën in de onderste sectie van het venster toe:
+1. Definieer een begroting van 10.000 euro in de **[!UICONTROL Allocated]** van het **[!UICONTROL Amounts]** sectie. Voeg twee uitgavencategorieën in de onderste sectie van het venster toe:
 
 ![](assets/s_user_cost_mgmt_sample_1.png)
 
 #### Stap 2 - vorm de dienstverlener en bepaal de kostenstructuren {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-1. Creeer een dienstverlener en een de dienstmalplaatje met zijn kostenstructuur van de **[!UICONTROL Administration > Campaigns]** knoop. Raadpleeg [Een serviceprovider en de bijbehorende kostencategorieën maken](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories) voor meer informatie.
+1. Creeer een dienstverlener en een de dienstmalplaatje met zijn kostenstructuur van **[!UICONTROL Administration > Campaigns]** knooppunt. Raadpleeg voor meer informatie hierover [Een serviceprovider en de bijbehorende kostencategorieën maken](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
-   Maak voor direct mailverkeer kostencategorieën **[!UICONTROL Envelopes]** (typen 114x229 en 162x229), **[!UICONTROL Postage]** en **[!UICONTROL Print]** (typen A3 en A4). En creeer dan de volgende kostenstructuren:
+   Maak kostencategorieën voor directe mailleveringen **[!UICONTROL Envelopes]** (typen 114x229 en 162x229), **[!UICONTROL Postage]** en **[!UICONTROL Print]** (typen A3 en A4). En creeer dan de volgende kostenstructuren:
 
    ![](assets/s_user_cost_mgmt_sample_2.png)
 
@@ -243,11 +243,11 @@ We gaan een campagne opzetten met:
 
    Voor taken maakt u de volgende twee kostencategorieën:
 
-   * **[!UICONTROL Room reservation]** (Kleine kamer en Grote kamer), met een vaste  **** kostenstructuur van 300 en 500 euro:
+   * **[!UICONTROL Room reservation]** (Kleine kamer en Grote kamer), met een **vast** kostenstructuur ten bedrage van 300 en 500 EUR:
 
    ![](assets/s_user_cost_mgmt_sample_6.png)
 
-   * **[!UICONTROL Creation]** (**Inhoudsmodel** type), met een  **** dagelijkse kostenstructuur van 300 euro:
+   * **[!UICONTROL Creation]** (**Inhoudssjabloon** tekst), met een **dagelijks** kostenstructuur van 300 EUR:
 
    ![](assets/s_user_cost_mgmt_sample_7.png)
 
@@ -265,7 +265,7 @@ We gaan een campagne opzetten met:
 
    ![](assets/s_user_cost_mgmt_sample_9.png)
 
-1. Klik **[!UICONTROL Ok]** en dan **[!UICONTROL Save]** om deze informatie te bevestigen. De berekende kosten van de campagne worden vervolgens bijgewerkt met de geraamde voorlopige kosten.
+1. Klikken **[!UICONTROL Ok]** en vervolgens **[!UICONTROL Save]** om deze informatie te bevestigen. De berekende kosten van de campagne worden vervolgens bijgewerkt met de geraamde voorlopige kosten.
 
 #### Stap 4 - de directe postlevering creëren {#step-4---creating-the-direct-mail-delivery}
 
@@ -289,7 +289,7 @@ We gaan een campagne opzetten met:
 
    ![](assets/s_user_cost_mgmt_sample_10b.png)
 
-De uitgavenlijn betreffende de levering wordt toegevoegd op **[!UICONTROL Edit > Budget]** lusje van de campagne. Bewerk de tabel om de details van de berekening weer te geven.
+De uitgavenpost voor de levering wordt toegevoegd aan de **[!UICONTROL Edit > Budget]** tabblad van de campagne. Bewerk de tabel om de details van de berekening weer te geven.
 
 ![](assets/s_user_cost_mgmt_sample_11.png)
 
@@ -301,21 +301,21 @@ Wanneer u de berekende kosten bewerkt, kunt u de uitsplitsing van de kosten en d
 
 #### Stap 5 - Taken maken {#step-5---creating-tasks}
 
-Aan deze campagne, zullen wij de twee taken toevoegen waarvoor de kostenstructuren vroeger werden gecreeerd (zie [Stap 2 - vorm de dienstverlener en bepaal de kostenstructuren](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)). Klik hiertoe op de knop **[!UICONTROL Add a task]** in het campagnemdashboard. Geef de taak een naam en klik op **[!UICONTROL Save]**.
+Aan deze campagne zullen wij de twee taken toevoegen waarvoor de kostenstructuren eerder zijn gecreëerd (zie [Stap 2 - vorm de dienstverlener en bepaal de kostenstructuren](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)). Klik hiertoe op het campagnemarkeerteken op de knop **[!UICONTROL Add a task]** knop. Geef een naam op voor de taak en klik op **[!UICONTROL Save]**.
 
 1. De taak wordt vervolgens toegevoegd aan de takenlijst. U moet het uitgeven om het te vormen.
 
-1. Selecteer op het tabblad **[!UICONTROL Properties]** de service en de bijbehorende kostencategorie:
+1. In de **[!UICONTROL Properties]** selecteert u de service en de bijbehorende kostencategorie:
 
    ![](assets/s_user_cost_mgmt_sample_14.png)
 
-1. Klik vervolgens op het pictogram **[!UICONTROL Expenses and revenue]** van de taak en geef de geschatte voorlopige kosten op.
+1. Klik op de knop **[!UICONTROL Expenses and revenue]** pictogram van de taak en vermelding van de geraamde voorlopige kosten.
 
    ![](assets/s_user_cost_mgmt_sample_15.png)
 
    Wanneer de taak is gered, worden de berekende kosten gespecificeerd met de waarde die voor de geschatte voorlopige kosten wordt ingevoerd.
 
-   Wanneer de taak is voltooid (status **[!UICONTROL Finished]**), worden de berekende kosten automatisch bijgewerkt met de kosten van de Grote Ruimte zoals die in zijn kostenstructuur zijn ingegaan. Deze kosten worden ook in deze categorie in de uitsplitsing weergegeven.
+   Wanneer de taak is voltooid (status **[!UICONTROL Finished]** ), worden de berekende kosten automatisch bijgewerkt met de kosten van de Grote Ruimte zoals die in zijn kostenstructuur zijn vermeld. Deze kosten worden ook in deze categorie in de uitsplitsing weergegeven.
 
 1. Vervolgens maakt u een tweede taak volgens dezelfde procedure. die langer dan vijf dagen zijn gepland en betrekking hebben op de eerder gemaakte kostenstructuur.
 
@@ -337,7 +337,7 @@ Wanneer goedkeuring wordt geactiveerd, kunt u een speciale koppeling gebruiken o
 
 ![](assets/s_user_cost_mgmt_sample_19.png)
 
-Vervolgens kunt u op de koppeling klikken om goedkeuring te verlenen of af te wijzen, of de koppeling gebruiken in de e-mail met de kennisgeving als er voor deze campagne een melding is geactiveerd.
+U kunt dan op de koppeling klikken om goedkeuring te verlenen of af te wijzen, of de koppeling gebruiken in de e-mail met kennisgeving als er een melding is geactiveerd voor deze campagne.
 
 Wanneer de begroting is goedgekeurd en de levering is voltooid, worden de kosten automatisch geüpload via een speciale technische workflow.
 
@@ -347,7 +347,7 @@ In de context van MRM, kunt u orden bij een dienstverlener bewaren en facturen u
 
 ### Maken van bestellingen {#order-creation}
 
-Als u een nieuwe bestelling wilt opslaan bij een serviceprovider, klikt u op het knooppunt **[!UICONTROL MRM > Orders]** van de structuur en vervolgens op de knop **[!UICONTROL New]**.
+Als u een nieuwe bestelling wilt opslaan bij een serviceprovider, klikt u op de knop **[!UICONTROL MRM > Orders]** knoop van de boom, en klik dan **[!UICONTROL New]** knop.
 
 Vermeld het ordernummer, de betrokken dienstverlener en het totale bedrag van de order.
 
@@ -357,18 +357,18 @@ Vermeld het ordernummer, de betrokken dienstverlener en het totale bedrag van de
 
 Voor elke dienstverlener, kunt u facturen bewaren en hun status en het in rekening gebrachte budget bepalen.
 
-Facturen worden gemaakt en opgeslagen in het knooppunt **[!UICONTROL MRM > Invoices]** van de Adobe Campaign-structuur.
+Facturen worden gemaakt en opgeslagen in de **[!UICONTROL MRM > Invoices]** knooppunt van de boomstructuur Adobe Campaign.
 
 ![](assets/s_user_cost_create_invoice.png)
 
-Een factuur bestaat uit factuurlijnen waarvan het totaal automatisch het bedrag kan berekenen. Deze regels worden handmatig gemaakt op het tabblad **[!UICONTROL Invoice lines]**. Zij kunnen met een orde worden geassocieerd om de informatie aan de orden te uploaden.
+Een factuur bestaat uit factuurlijnen waarvan het totaal automatisch het bedrag kan berekenen. Deze regels worden handmatig gemaakt op basis van de **[!UICONTROL Invoice lines]** tab. Zij kunnen met een orde worden geassocieerd om de informatie aan de orden te uploaden.
 
 ![](assets/s_user_cost_invoice_add_line.png)
 
-De facturen van elke serviceprovider worden weergegeven op het tabblad **[!UICONTROL Invoices]** van het profiel:
+De facturen van elke dienstverlener worden weergegeven in de **[!UICONTROL Invoices]** tabblad van het profiel:
 
 ![](assets/s_ncs_user_invoice_from_supplier.png)
 
-Op het tabblad **[!UICONTROL Details]** kunt u de inhoud van de factuur weergeven.
+De **[!UICONTROL Details]** kunt u de inhoud van de factuur weergeven.
 
-Klik op **[!UICONTROL Add]** om een nieuwe factuur te maken.
+Klikken **[!UICONTROL Add]** om een nieuwe factuur te maken.

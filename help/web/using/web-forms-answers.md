@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Responsopslagvelden {#response-storage-fields}
 
-Antwoorden op formulieren kunnen worden opgeslagen in een veld van de database of tijdelijk in een lokale variabele. De opslagmodus voor antwoorden wordt gekozen tijdens het maken van velden. Het kan via de **[!UICONTROL Edit storage...]** verbinding worden uitgegeven.
+Antwoorden op formulieren kunnen worden opgeslagen in een veld van de database of tijdelijk in een lokale variabele. De opslagmodus voor antwoorden wordt gekozen tijdens het maken van velden. Het kan worden bewerkt via het dialoogvenster **[!UICONTROL Edit storage...]** koppeling.
 
 Voor elk invoerveld in een formulier zijn de volgende opslagopties beschikbaar:
 
@@ -35,13 +35,13 @@ Voor elk invoerveld in een formulier zijn de volgende opslagopties beschikbaar:
 
 ### Gegevens opslaan in de database {#storing-data-in-the-database}
 
-Als u de gegevens in een bestaand veld van de database wilt opslaan, klikt u op het pictogram **[!UICONTROL Edit expression]** en selecteert u deze in de lijst met beschikbare velden.
+Als u de gegevens in een bestaand veld van de database wilt opslaan, klikt u op de knop **[!UICONTROL Edit expression]** en selecteert u deze in de lijst met beschikbare velden.
 
 ![](assets/s_ncs_admin_survey_storage_type1.png)
 
 >[!NOTE]
 >
->Het standaardreferentiedocument is het schema **nms:receiver**. Als u het formulier wilt weergeven of een nieuw formulier wilt kiezen, selecteert u het in de lijst en klikt u op de knop **[!UICONTROL Properties]**.
+>Het standaardreferentiedocument is het **nms:ontvanger** schema. Als u het formulier wilt weergeven of een nieuw formulier wilt kiezen, selecteert u het in de lijst en klikt u op de knop **[!UICONTROL Properties]** knop.
 
 ### Gegevens opslaan in een lokale variabele {#storing-data-in-a-local-variable}
 
@@ -51,11 +51,11 @@ Dit betekent dat u de waarde van een niet-opgeslagen veld kunt gebruiken om de w
 
 ![](assets/s_ncs_admin_survey_no_storage_variable.png)
 
-Het wordt opgeslagen in een variabele die moet worden geselecteerd wanneer de drop-down doos wordt gecreeerd, of via de **[!UICONTROL Edit storage...]** verbinding.
+Het wordt opgeslagen in een variabele die moet worden geselecteerd wanneer de drop-down doos wordt gecreeerd, of via **[!UICONTROL Edit storage...]** koppeling.
 
 ![](assets/s_ncs_admin_survey_no_storage_variable2.png)
 
-U kunt bestaande variabelen weergeven en nieuwe maken via de koppeling **[!UICONTROL Edit variables...]**. Klik op de knop **[!UICONTROL Add]** om een nieuwe variabele te maken.
+U kunt bestaande variabelen weergeven en nieuwe variabelen maken via het dialoogvenster **[!UICONTROL Edit variables...]** koppeling. Klik op de knop **[!UICONTROL Add]** om een nieuwe variabele te maken.
 
 ![](assets/s_ncs_admin_survey_add_a_variable.png)
 
@@ -63,11 +63,11 @@ De toegevoegde variabele is beschikbaar in de lijst met lokale variabelen wannee
 
 >[!NOTE]
 >
->Voor elk formulier kunt u variabelen upstream maken. Selecteer het formulier en klik op de knop **[!UICONTROL Properties]** om dit te doen. Het tabblad **[!UICONTROL Variables]** bevat de lokale variabelen voor het formulier.
+>Voor elk formulier kunt u variabelen upstream maken. Selecteer hiertoe het formulier en klik op de knop **[!UICONTROL Properties]** knop. De **[!UICONTROL Variables]** bevat de lokale variabelen voor het formulier.
 
 **Voorbeeld van lokale opslag met conditionering**
 
-In het bovenstaande voorbeeld wordt de container met gegevens over privévoertuigen alleen weergegeven als de optie **[!UICONTROL Private]** is geselecteerd in de vervolgkeuzelijst, zoals aangegeven in de zichtbaarheidsvoorwaarde:
+In het bovenstaande voorbeeld wordt de container met gegevens over particuliere voertuigen alleen weergegeven als de **[!UICONTROL Private]** Deze optie is geselecteerd in de vervolgkeuzelijst, zoals aangegeven in de zichtbaarheidsvoorwaarde:
 
 ![](assets/s_ncs_admin_survey_add_a_condition.png)
 
@@ -99,7 +99,7 @@ Voor elk formulier kunnen de gegeven antwoorden opnieuw worden gebruikt in de ve
    <%= ctx.vars.variable name %
    ```
 
-* Voor inhoud die is opgeslagen in een HTML-tekstveld:
+* Voor inhoud die is opgeslagen in een tekstveld HTML:
 
    ```
    <%== HTML field name %
@@ -107,7 +107,7 @@ Voor elk formulier kunnen de gegeven antwoorden opnieuw worden gebruikt in de ve
 
    >[!NOTE]
    >
-   >In tegenstelling tot de andere velden waarvoor `<%=`-tekens worden vervangen door escape-tekens, wordt de HTML-inhoud op dezelfde manier opgeslagen met de syntaxis `<%==`.
+   >In tegenstelling tot andere velden waarvoor `<%=` tekens worden vervangen door escape-tekens; de HTML-inhoud wordt opgeslagen als &#39;is&#39; door de `<%==` syntaxis.
 
 ## Webformulieren opslaan {#saving-web-forms-answers}
 
@@ -117,9 +117,9 @@ Als u de informatie wilt opslaan die op de pagina&#39;s van een formulier wordt 
 
 U kunt dit vak op twee manieren gebruiken:
 
-* Als het formulier Web wordt geopend via een koppeling die in een e-mail wordt verzonden en als de gebruiker die toegang heeft tot de toepassing zich al in de database bevindt, kunt u de optie **[!UICONTROL Update the preloaded record]** controleren. Raadpleeg [Formulieren verzenden via e-mail](publishing-a-web-form.md#delivering-a-form-via-email) voor meer informatie.
+* Als het webformulier wordt geopend via een koppeling die in een e-mail wordt verzonden en als de gebruiker die de toepassing opent al in de database aanwezig is, kunt u het volgende controleren: **[!UICONTROL Update the preloaded record]** optie. Raadpleeg voor meer informatie hierover [Een formulier via e-mail verzenden](publishing-a-web-form.md#delivering-a-form-via-email).
 
-   In dit geval gebruikt Adobe Campaign de gecodeerde primaire sleutel van het gebruikersprofiel, een unieke id die aan elk profiel is toegewezen door Adobe Campaign. U moet de informatie vormen om via de preloaddoos vooraf te laden. Zie [De formuliergegevens vooraf laden](publishing-a-web-form.md#pre-loading-the-form-data) voor meer informatie.
+   In dit geval gebruikt Adobe Campaign de gecodeerde primaire sleutel van het gebruikersprofiel, een unieke id die aan elk profiel is toegewezen door Adobe Campaign. U moet de informatie vormen om via de preloaddoos vooraf te laden. Raadpleeg voor meer informatie hierover [De formuliergegevens vooraf laden](publishing-a-web-form.md#pre-loading-the-form-data).
 
    >[!CAUTION]
    >
@@ -129,7 +129,7 @@ U kunt dit vak op twee manieren gebruiken:
 
    ![](assets/s_ncs_admin_survey_save_box_edit.png)
 
-Standaard worden de gegevens in de database geïmporteerd door een bewerking **[!UICONTROL Update or insertion]**: als het element in de database aanwezig is, wordt het element bijgewerkt (bijvoorbeeld de geselecteerde nieuwsbrief of het ingevoerde e-mailadres). Als deze niet bestaat, wordt de informatie toegevoegd.
+Standaard worden de gegevens in de database geïmporteerd via een **[!UICONTROL Update or insertion]** bewerking: als het element in de database aanwezig is, wordt het element bijgewerkt (bijvoorbeeld de geselecteerde nieuwsbrief of het ingevoerde e-mailadres). Als deze niet bestaat, wordt de informatie toegevoegd.
 
 U kunt dit gedrag echter wijzigen. Selecteer hiertoe de basis van het element en selecteer de uit te voeren bewerking in de vervolgkeuzelijst:
 

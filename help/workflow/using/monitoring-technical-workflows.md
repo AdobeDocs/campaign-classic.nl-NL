@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 8%
@@ -19,11 +19,11 @@ ht-degree: 8%
 
 De technische werkstromen moeten worden bewaakt en er moeten maatregelen worden genomen wanneer ze mislukken.
 
-Aanvullende manieren om de verschillende campagneprocessen te controleren worden weergegeven op [deze pagina](../../production/using/monitoring-guidelines.md).
+Aanvullende manieren om de verschillende campagneprocessen te bewaken worden weergegeven in [deze pagina](../../production/using/monitoring-guidelines.md).
 
 ## Instance Monitoring dashboard {#instance-monitoring-dashboard}
 
-Het dashboard voor instance-controle is toegankelijk via het tabblad **[!UICONTROL Monitoring]**.
+Het dashboard voor instance-controle is toegankelijk via de **[!UICONTROL Monitoring]** tab.
 
 ![](assets/monitoring_technical_workflows1.png)
 
@@ -37,15 +37,15 @@ Controleer onder Systeemindicatoren en kernbestanden of er geen rode indicatoren
 
 Technische workflows zijn beschikbaar via **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
-Afhankelijk van de technische workflow voert u de onderstaande stappen uit om ervoor te zorgen dat alles werkt zoals u had verwacht.
+Afhankelijk van de technische werkstroom, volg de hieronder beschreven stappen om ervoor te zorgen dat alles zoals verwacht werkt.
 
 Om beter te begrijpen wat elke technische werkstroom wordt verondersteld te doen, verwijs naar dit [sectie](about-technical-workflows.md).
 
 Voor **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. Controleer of de **[!UICONTROL Database Cleanup]**-workflow elke dag wordt uitgevoerd en voltooid. Raadpleeg [deze pagina](delivery.md) voor meer informatie.
+1. Controleer of de **[!UICONTROL Database Cleanup]** de workflow wordt elke dag uitgevoerd en voltooid. Raadpleeg [deze pagina](delivery.md) voor meer informatie.
 1. Bekijk het dagboek om te verifiëren dat de verstreken tijd in tijd vrij constant is en zich niet in andere werkschema&#39;s mengt.
-1. Voor meer informatie, controleer dit [pagina](../../production/using/database-cleanup-workflow.md).
+1. Voor meer informatie, controleer dit [page](../../production/using/database-cleanup-workflow.md).
 
 Voor **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
@@ -53,17 +53,17 @@ Controleer of de workflow voor bijhouden volgens schema wordt uitgevoerd (standa
 
 Voor **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
 
-1. Controleer of de **[!UICONTROL Deliverability update]**-workflow elke dag wordt uitgevoerd en voltooid. Raadpleeg [deze pagina](delivery.md) voor meer informatie.
+1. Controleer of de **[!UICONTROL Deliverability update]** de workflow wordt elke dag uitgevoerd en voltooid. Raadpleeg [deze pagina](delivery.md) voor meer informatie.
 1. Verifieer in het dagboek dat de regels regelmatig worden bijgewerkt.
 
 Voor **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
-1. Bekijk alle workflows onder de map **[!UICONTROL Campaign process]**. Raadpleeg [deze pagina](about-technical-workflows.md) voor meer informatie.
+1. Bekijk alle workflows onder de **[!UICONTROL Campaign process]** map. Raadpleeg [deze pagina](about-technical-workflows.md) voor meer informatie.
 1. Controleer of de workflows worden uitgevoerd zoals gepland en of het dagboek geen terugkerende fouten markeert.
 
 ## Workflowcontrole {#workflow-supervision}
 
-De groep **[!UICONTROL Workflow supervisors]** moet operatoren bevatten die op de hoogte moeten worden gehouden van fouten en die tijdig actie kunnen ondernemen.
+De **[!UICONTROL Workflow supervisors]** de groep moet exploitanten omvatten die op de hoogte moeten worden gehouden van tekortkomingen en die tijdig kunnen optreden.
 
 ![](assets/monitoring_technical_workflows3.png)
 
@@ -93,7 +93,7 @@ Door workflows in mappen in te stellen die worden genoemd door terugkerende en g
 
 De automatisering van controle vermindert middelenoverheadkosten en zorgt ervoor dat de taken bij de aangewezen frequentie worden gepland.
 
-U kunt een controlewerkschema bouwen om een e-mail te verzenden wanneer bepaalde taken ontbreken of wanneer een kritieke lijst te groot wordt.
+U kunt een controlewerkstroom bouwen om een e-mail te verzenden wanneer bepaalde taken ontbreken of wanneer een kritieke lijst te groot wordt.
 
 U kunt een weergave maken zodat alle werkstromen in een functioneel gebied of in het hele systeem kunnen worden gecontroleerd.
 
