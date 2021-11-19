@@ -80,15 +80,14 @@ Hier volgt een lijst met de gebruikelijke beheeropdrachten die in Linux toeganke
    >* In het geval van een noodsituatie, gebruik **-direct** optie om een directe stilstand aan het proces (gelijkwaardig aan het bevel van Unix **te dwingen - 9**).
    >* Gebruik de optie **-noconsole** om ervoor te zorgen dat de gestarte module niets op de console zal tonen. Zijn logboeken zullen aan de schijf via **syslogd** module worden geschreven.
    >* Gebruik de optie **-verbose** om aanvullende informatie over proceshandelingen weer te geven.
-
-      >
-      >   Voorbeeld:
-      >
-      >   **webbreedbeeldscherm opnieuw starten**
-      >
-      >   **nlserver start mta@myinstance -verbose**
-      >
-      >   Met deze optie voegt u aanvullende logbestanden toe. We raden u aan om de processen opnieuw te starten zonder de optie **-verbose** als u de gewenste informatie hebt gevonden, om overbelasting van logbestanden te voorkomen.
+   >
+   >   Voorbeeld:
+   >
+   >   **webbreedbeeldscherm opnieuw starten**
+   >
+   >   **nlserver start mta@myinstance -verbose**
+   >
+   >   Met deze optie voegt u aanvullende logbestanden toe. We raden u aan om de processen opnieuw te starten zonder de optie **-verbose** als u de gewenste informatie hebt gevonden, om overbelasting van logbestanden te voorkomen.
 
 
 * Start alle Adobe Campaign-processen op (gelijk aan het starten van de **nlserver6**-service):
